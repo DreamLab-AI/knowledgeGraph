@@ -16003,7 +16003,7 @@
     },
     {
       "id": "111",
-      "type": "rdfs:subClassOf",
+      "type": "rdfs:SubClassOf",
       "domain": "23",
       "range": "984"
     }
