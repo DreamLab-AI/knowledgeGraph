@@ -7096,7 +7096,7 @@
         "en": "Property Registry"
       },
       "comment": {
-        "en": "A component of the blockchain ecosystem."
+        "en": "Blockchain-based land title recording systems employing immutable distributed ledgers, cryptographic signatures, and timestamp verification to create tamper-proof property ownership records, reduce fr"
       }
     },
     {
@@ -7162,7 +7162,7 @@
         "en": "Real Estate Tokenization"
       },
       "comment": {
-        "en": "A component of the blockchain ecosystem."
+        "en": "Blockchain-based systems employing security tokens (ERC-3643, ERC-1400, ERC-20 standards) to represent fractional ownership interests in real estate properties, enabling automated dividend distributio"
       }
     },
     {
@@ -7327,7 +7327,7 @@
         "en": "Voting Systems"
       },
       "comment": {
-        "en": "A component of the blockchain ecosystem."
+        "en": "Blockchain-based electoral systems employing cryptographic verification, end-to-end verifiability, and distributed ledger technology to enable secure voting whilst facing critical security challenges "
       }
     },
     {
