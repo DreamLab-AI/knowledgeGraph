@@ -54,7 +54,7 @@ webvowl =
 	var webvowl = {};
 	webvowl.graph = __webpack_require__(57);
 	webvowl.options = __webpack_require__(64);
-	webvowl.version = "1.1.7";
+	webvowl.version = "1.1.6";
 
 	webvowl.util = {};
 	webvowl.util.constants = __webpack_require__(12);
@@ -3384,7 +3384,7 @@ webvowl =
 	      if ( that.cardinality() ) {
 	        return that.cardinality();
 	      } else if ( that.minCardinality() || that.maxCardinality() ) {
-	        var minBoundary = that.minCardinality() || "0";
+	        var minBoundary = that.minCardinality() || "*";
 	        var maxBoundary = that.maxCardinality() || "*";
 	        return minBoundary + ".." + maxBoundary;
 	      }
@@ -6017,36 +6017,6 @@ webvowl =
 	    eN = unfilteredData.nodes.length + 1;
 	    eP = unfilteredData.properties.length + 1;
 	    
-	    
-	    // using the ids of elements if to ensure that loaded elements will not get the same id;
-	    for ( var p = 0; p < unfilteredData.properties.length; p++ ) {
-	      var currentId = unfilteredData.properties[p].id();
-	      if ( currentId.indexOf('objectProperty') !== -1 ) {
-	        // could be ours;
-	        var idStr = currentId.split('objectProperty');
-	        if ( idStr[0].length === 0 ) {
-	          var idInt = parseInt(idStr[1]);
-	          if ( eP < idInt ) {
-	            eP = idInt + 1;
-	          }
-	        }
-	      }
-	    }
-	    // using the ids of elements if to ensure that loaded elements will not get the same id;
-	    for ( var n = 0; n < unfilteredData.nodes.length; n++ ) {
-	      var currentId_Nodes = unfilteredData.nodes[n].id();
-	      if ( currentId_Nodes.indexOf('Class') !== -1 ) {
-	        // could be ours;
-	        var idStr_Nodes = currentId_Nodes.split('Class');
-	        if ( idStr_Nodes[0].length === 0 ) {
-	          var idInt_Nodes = parseInt(idStr_Nodes[1]);
-	          if ( eN < idInt_Nodes ) {
-	            eN = idInt_Nodes + 1;
-	          }
-	        }
-	      }
-	    }
-	    
 	    initialLoad = true;
 	    graph.options().warningModule().closeFilterHint();
 	    
@@ -7884,9 +7854,9 @@ webvowl =
 	      remId = unfilteredData.nodes.indexOf(property.range());
 	      if ( remId !== -1 )
 	        unfilteredData.nodes.splice(remId, 1);
-	      remId = classNodes.indexOf(property.range());
 	      if ( remId !== -1 )
-	        classNodes.splice(remId, 1);
+	        remId = classNodes.indexOf(property.range());
+	      classNodes.splice(remId, 1);
 	      datatype = null;
 	    }
 	    remId = unfilteredData.properties.indexOf(property);

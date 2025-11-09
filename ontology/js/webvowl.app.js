@@ -1180,10 +1180,10 @@ webvowl.app =
 	  function exportTurtle(){
 	    var success = exportTTLModule.requestExport();
 	    var result = exportTTLModule.resultingTTL_Content();
-	    var ontoTitle = "NewOntology";
 	    console.log("Exporter was successful: " + success);
 	    if ( success ) {
 	      // console.log("The result is : " + result);
+	      var ontoTitle = "NewOntology";
 	      // var ontoTitle=graph.options().getGeneralMetaObjectProperty('title');
 	      // if (ontoTitle===undefined || ontoTitle.length===0)
 	      // 	ontoTitle="NewOntology";
@@ -1209,6 +1209,8 @@ webvowl.app =
 	      console.log("Stay on the page! " + window.location.href);
 	      exportTurtleButton.attr("href", window.location.href);
 	      d3.event.preventDefault(); // prevent the href to be called ( reloads the page otherwise )
+	      
+	      
 	    }
 	  }
 	  
@@ -1515,7 +1517,7 @@ webvowl.app =
 	    var i, j, k; // an index variable for the for-loops
 	    
 	    /** get data for exporter **/
-	      if (!graph.options().data()) {return {};} // return an empty json object
+	      
 	      // extract onotology information;
 	    var unfilteredData = graph.getUnfilteredData();
 	    var ontologyComment = graph.options().data()._comment;
@@ -1766,10 +1768,10 @@ webvowl.app =
 	    
 	    /** modify comment **/
 	    var comment = exportText._comment;
-	    var additionalString = " [Additional Information added by WebVOWL Exporter Version: " + "1.1.7" + "]";
+	    var additionalString = " [Additional Information added by WebVOWL Exporter Version: " + "1.1.6" + "]";
 	    // adding new string to comment only if it does not exist
 	    if ( comment.indexOf(additionalString) === -1 ) {
-	      exportText._comment = comment + " [Additional Information added by WebVOWL Exporter Version: " + "1.1.7" + "]";
+	      exportText._comment = comment + " [Additional Information added by WebVOWL Exporter Version: " + "1.1.6" + "]";
 	    }
 	    
 	    var classAttribute = exportText.classAttribute;
@@ -3031,7 +3033,7 @@ webvowl.app =
 	  
 	  function prepareHeader(){
 	    resultingTTLContent += "#################################################################\r\n";
-	    resultingTTLContent += "###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7) " +
+	    resultingTTLContent += "###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.3) " +
 	      " http://visualdataweb.de/webvowl/   ###\r\n";
 	    resultingTTLContent += "#################################################################\r\n\r\n";
 	    
@@ -8710,12 +8712,11 @@ webvowl.app =
 	  function loadPresetOntology( ontology ){
 	    // check if already cached in ontology menu?
 	    var f2r;
-	    var loadingNewOntologyForEditor=false;
 	    if ( ontology.indexOf("new_ontology") !== -1 ) {
 	      loadingModule.hideLoadingIndicator();
 	      graph.showEditorHintIfNeeded();
 	      f2r = "./data/new_ontology.json";
-	      loadingNewOntologyForEditor=true;
+	      
 	    }
 	    
 	    loadingWasSuccessFul = false;
@@ -8741,58 +8742,11 @@ webvowl.app =
 	          ontologyContent = request.responseText;
 	          parseOntologyContent(ontologyContent);
 	        } else {
-
-	          if (loadingNewOntologyForEditor){
-	            ontologyContent = '{\n' +
-	              '  "_comment": "Empty ontology for WebVOWL Editor",\n' +
-	              '  "header": {\n' +
-	              '    "languages": [\n' +
-	              '      "en"\n' +
-	              '    ],\n' +
-	              '    "baseIris": [\n' +
-	              '      "http://www.w3.org/2000/01/rdf-schema"\n' +
-	              '    ],\n' +
-	              '    "iri": "http://visualdataweb.org/newOntology/",\n' +
-	              '    "title": {\n' +
-	              '      "en": "New ontology"\n' +
-	              '    },\n' +
-	              '    "description": {\n' +
-	              '      "en": "New ontology description"\n' +
-	              '    }\n' +
-	              '  },\n' +
-	              '  "namespace": [],\n' +
-	              '  "metrics": {\n' +
-	              '    "classCount": 0,\n' +
-	              '    "datatypeCount": 0,\n' +
-	              '    "objectPropertyCount": 0,\n' +
-	              '    "datatypePropertyCount": 0,\n' +
-	              '    "propertyCount": 0,\n' +
-	              '    "nodeCount": 0,\n' +
-	              '    "individualCount": 0\n' +
-	              '  }\n' +
-	              '}\n';
-	            parseOntologyContent(ontologyContent);
-	          }else{
 	          // some error occurred
 	          ontologyMenu.append_bulletPoint("Failed to load: " + ontology);
-	          if (error.status===0){ // assumption this is CORS error when running locally (error status == 0)
-	            ontologyMenu.append_message_toLastBulletPoint(" <span style='color: red'>ERROR STATUS:</span> " + error.status);
-	            if (window.location.toString().startsWith("file:/")){
-	              ontologyMenu.append_message_toLastBulletPoint("<br><p>WebVOWL runs in a local instance.</p>");
-	              ontologyMenu.append_message_toLastBulletPoint("<p>CORS prevents to automatically load files on host system.</p>");
-	              ontologyMenu.append_message_toLastBulletPoint("<p>You can load preprocessed ontologies (i.e. VOWL-JSON files) using the upload feature in the ontology menu or by dragging the files and dropping them on the canvas.</p>");
-	              ontologyMenu.append_message_toLastBulletPoint("<p><i>Hint: </i>Note that the conversion of ontologies into the VOWL-JSON format is not part of WebVOWL but requires an additional converter such as OWL2VOWL.</p>");
-	              ontologyMenu.append_message_toLastBulletPoint("<p>Ontologies can be created using the editor mode (i.e. activate editing mode in <b>Modes</b> menu and create a new ontology using the <b>Ontology</b> menu.</p>");
-	            }
-	          }else {
-	            ontologyMenu.append_message_toLastBulletPoint(" <span style='color: red'>ERROR STATUS:</span> " + error.status);
-	          }
-
-
-
+	          ontologyMenu.append_message_toLastBulletPoint(" <span style='color: red'>ERROR STATUS:</span> " + error.status);
 	          graph.handleOnLoadingError();
 	          loadingModule.setErrorMode();
-	          }
 	        }
 	      });
 	    }
@@ -9131,11 +9085,6 @@ webvowl.app =
 	    var id = warningModule.addMessageBox();
 	    warningModule.createMessageContext(id);
 	  };
-
-	  warningModule.showExporterWarning=function (){
-	    warningModule.showWarning("Can not export ontology", "Detected unsupported ontology axioms, (e.g. owl:Union)", "Ontology is not exported", 1, false);
-	  };
-
 	  
 	  
 	  warningModule.responseWarning = function ( header, reason, action, callback, parameterArray, forcedWarning ){
