@@ -16033,152 +16033,242 @@
     {
       "id": "1",
       "iri": "http://disruption.org/ontology/artificial-intelligence#evaluatedByFairnessMetric",
-      "baseIri": "http://disruption.org/ontology/artificial-intelligence"
+      "baseIri": "http://disruption.org/ontology/artificial-intelligence",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "2",
       "iri": "http://disruption.org/ontology/artificial-intelligence#hasApplicationDomain",
-      "baseIri": "http://disruption.org/ontology/artificial-intelligence"
+      "baseIri": "http://disruption.org/ontology/artificial-intelligence",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "3",
       "iri": "http://disruption.org/ontology/artificial-intelligence#preventsDiscriminationAgainst",
-      "baseIri": "http://disruption.org/ontology/artificial-intelligence"
+      "baseIri": "http://disruption.org/ontology/artificial-intelligence",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "4",
       "iri": "http://disruption.org/ontology/artificial-intelligence#traversesTerrain",
-      "baseIri": "http://disruption.org/ontology/artificial-intelligence"
+      "baseIri": "http://disruption.org/ontology/artificial-intelligence",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "5",
       "iri": "http://disruption.org/ontology/disruptive-technologies#causedBy",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "6",
       "iri": "http://disruption.org/ontology/disruptive-technologies#disclosesInformationTo",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "7",
       "iri": "http://disruption.org/ontology/disruptive-technologies#enablesVerificationBy",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "8",
       "iri": "http://disruption.org/ontology/disruptive-technologies#exhibitsBias",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "9",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasDimension",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "10",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasDocumentation",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "11",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasJoint",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "12",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasMatrixCell",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "13",
       "iri": "http://disruption.org/ontology/disruptive-technologies#involvesTradeOff",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "14",
       "iri": "http://disruption.org/ontology/disruptive-technologies#measuredBy",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "15",
       "iri": "http://disruption.org/ontology/disruptive-technologies#mitigatedBy",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "16",
       "iri": "http://disruption.org/ontology/disruptive-technologies#plotsMetric",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "17",
       "iri": "http://disruption.org/ontology/disruptive-technologies#protectsAttribute",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "18",
       "iri": "http://disruption.org/ontology/metaverse#hasBodyPart",
-      "baseIri": "http://disruption.org/ontology/metaverse"
+      "baseIri": "http://disruption.org/ontology/metaverse",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "19",
       "iri": "http://disruption.org/ontology/metaverse#providesTransparencyFor",
-      "baseIri": "http://disruption.org/ontology/metaverse"
+      "baseIri": "http://disruption.org/ontology/metaverse",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "20",
       "iri": "http://disruption.org/ontology/robotics#harmonises",
-      "baseIri": "http://disruption.org/ontology/robotics"
+      "baseIri": "http://disruption.org/ontology/robotics",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "21",
       "iri": "http://disruption.org/ontology/artificial-intelligence#hasKinematicChain",
-      "baseIri": "http://disruption.org/ontology/artificial-intelligence"
+      "baseIri": "http://disruption.org/ontology/artificial-intelligence",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "22",
       "iri": "http://disruption.org/ontology/blockchain#definesWorkspace",
-      "baseIri": "http://disruption.org/ontology/blockchain"
+      "baseIri": "http://disruption.org/ontology/blockchain",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "23",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasControlSystem",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "24",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasEndEffector",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "25",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasLocomotionSystem",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "26",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasNavigationCapability",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "27",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasSensingCapability",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "28",
       "iri": "http://disruption.org/ontology/artificial-intelligence#pairedWith",
-      "baseIri": "http://disruption.org/ontology/artificial-intelligence"
+      "baseIri": "http://disruption.org/ontology/artificial-intelligence",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "29",
       "iri": "http://disruption.org/ontology/disruptive-technologies#affectedBy",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "30",
       "iri": "http://disruption.org/ontology/disruptive-technologies#bridges-to",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ],
       "label": {
         "en": "bridges to"
       }
@@ -16186,67 +16276,106 @@
     {
       "id": "31",
       "iri": "http://disruption.org/ontology/disruptive-technologies#complementOf",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "32",
       "iri": "http://disruption.org/ontology/disruptive-technologies#equivalentTo",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "33",
       "iri": "http://disruption.org/ontology/disruptive-technologies#greaterThanOrEqualTo",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "34",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasKeyPoint",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "35",
       "iri": "http://disruption.org/ontology/disruptive-technologies#lessSensitiveToOutliersThan",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "36",
       "iri": "http://disruption.org/ontology/disruptive-technologies#requiresContinuous",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "37",
       "iri": "http://disruption.org/ontology/disruptive-technologies#requiresInput",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "38",
       "iri": "http://disruption.org/ontology/disruptive-technologies#shouldInclude",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "39",
       "iri": "http://disruption.org/ontology/disruptive-technologies#subjectToRegulation",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "40",
       "iri": "http://disruption.org/ontology/metaverse#areaUnderCurve",
-      "baseIri": "http://disruption.org/ontology/metaverse"
+      "baseIri": "http://disruption.org/ontology/metaverse",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "41",
       "iri": "http://disruption.org/ontology/metaverse#hasAreaUnderCurve",
-      "baseIri": "http://disruption.org/ontology/metaverse"
+      "baseIri": "http://disruption.org/ontology/metaverse",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "42",
       "iri": "http://disruption.org/ontology/metaverse#squareRootOf",
-      "baseIri": "http://disruption.org/ontology/metaverse"
+      "baseIri": "http://disruption.org/ontology/metaverse",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "43",
       "iri": "http://disruption.org/ontology/disruptive-technologies#influenced-by",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ],
       "label": {
         "en": "influenced by"
       }
@@ -16254,47 +16383,74 @@
     {
       "id": "44",
       "iri": "http://disruption.org/ontology/disruptive-technologies#criticalFor",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "45",
       "iri": "http://disruption.org/ontology/disruptive-technologies#dependsOn",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "46",
       "iri": "http://disruption.org/ontology/disruptive-technologies#optimisedBy",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "47",
       "iri": "http://disruption.org/ontology/disruptive-technologies#performsTask",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "48",
       "iri": "http://disruption.org/ontology/disruptive-technologies#appropriateFor",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "49",
       "iri": "http://disruption.org/ontology/disruptive-technologies#leadsTo",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "50",
       "iri": "http://disruption.org/ontology/disruptive-technologies#supports",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "51",
       "iri": "http://disruption.org/ontology/metaverse#hasCharacteristic",
-      "baseIri": "http://disruption.org/ontology/metaverse"
+      "baseIri": "http://disruption.org/ontology/metaverse",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "52",
       "iri": "http://disruption.org/ontology/disruptive-technologies#implemented-by",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ],
       "label": {
         "en": "implemented by"
       }
@@ -16302,12 +16458,18 @@
     {
       "id": "53",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasCapability",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "54",
       "iri": "http://disruption.org/ontology/disruptive-technologies#binds-to",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ],
       "label": {
         "en": "binds to"
       }
@@ -16315,12 +16477,18 @@
     {
       "id": "55",
       "iri": "http://disruption.org/ontology/disruptive-technologies#produces",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "56",
       "iri": "http://disruption.org/ontology/disruptive-technologies#categorizes",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ],
       "label": {
         "en": "categorizes"
       }
@@ -16329,6 +16497,9 @@
       "id": "57",
       "iri": "http://disruption.org/ontology/disruptive-technologies#implements",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ],
       "label": {
         "en": "implements"
       }
@@ -16337,6 +16508,9 @@
       "id": "58",
       "iri": "http://disruption.org/ontology/disruptive-technologies#is-enabled-by",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ],
       "label": {
         "en": "is enabled by"
       }
@@ -16345,6 +16519,9 @@
       "id": "59",
       "iri": "http://disruption.org/ontology/disruptive-technologies#is-dependency-of",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ],
       "label": {
         "en": "is dependency of"
       }
@@ -16353,6 +16530,9 @@
       "id": "60",
       "iri": "http://disruption.org/ontology/disruptive-technologies#is-required-by",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ],
       "label": {
         "en": "is required by"
       }
@@ -16361,6 +16541,9 @@
       "id": "61",
       "iri": "http://disruption.org/ontology/disruptive-technologies#is-subclass-of",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ],
       "label": {
         "en": "is subclass of"
       }
@@ -16368,12 +16551,18 @@
     {
       "id": "62",
       "iri": "http://disruption.org/ontology/disruptive-technologies#relatedTo",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ]
     },
     {
       "id": "63",
       "iri": "http://disruption.org/ontology/disruptive-technologies#is-part-of",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ],
       "label": {
         "en": "is part of"
       }
@@ -16382,6 +16571,9 @@
       "id": "64",
       "iri": "http://disruption.org/ontology/disruptive-technologies#depends-on",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ],
       "label": {
         "en": "depends on"
       }
@@ -16390,6 +16582,9 @@
       "id": "65",
       "iri": "http://disruption.org/ontology/disruptive-technologies#requires",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ],
       "label": {
         "en": "requires"
       }
@@ -16398,6 +16593,9 @@
       "id": "66",
       "iri": "http://disruption.org/ontology/disruptive-technologies#enables",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ],
       "label": {
         "en": "enables"
       }
@@ -16406,6 +16604,9 @@
       "id": "67",
       "iri": "http://disruption.org/ontology/disruptive-technologies#has-part",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ],
       "label": {
         "en": "has part"
       }
@@ -16413,222 +16614,354 @@
     {
       "id": "68",
       "iri": "http://disruption.org/ontology/artificial-intelligence#fairnessScore",
-      "baseIri": "http://disruption.org/ontology/artificial-intelligence"
+      "baseIri": "http://disruption.org/ontology/artificial-intelligence",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "69",
       "iri": "http://disruption.org/ontology/disruptive-technologies#autonomyLevel",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "70",
       "iri": "http://disruption.org/ontology/disruptive-technologies#biasScore",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "71",
       "iri": "http://disruption.org/ontology/disruptive-technologies#curveInterpretation",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "72",
       "iri": "http://disruption.org/ontology/disruptive-technologies#cycleTime",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "73",
       "iri": "http://disruption.org/ontology/disruptive-technologies#documentationCompleteness",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "74",
       "iri": "http://disruption.org/ontology/disruptive-technologies#equalizedOddsDifference",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "75",
       "iri": "http://disruption.org/ontology/disruptive-technologies#falseNegativeCount",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "76",
       "iri": "http://disruption.org/ontology/disruptive-technologies#falsePositiveCount",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "77",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasAUCValue",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "78",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasAccuracyValue",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "79",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasBiasMitigation",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "80",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasF1Value",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "81",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasFalseNegatives",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "82",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasFalsePositives",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "83",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasLegalBasis",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "84",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasMAEValue",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "85",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasPerformanceLevel",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "86",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasPrecisionValue",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "87",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasRMSEValue",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "88",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasReach",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "89",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasRecallValue",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "90",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasRegulatoryScope",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "91",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasTrueNegatives",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "92",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasTruePositives",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "93",
       "iri": "http://disruption.org/ontology/disruptive-technologies#heightMeters",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "94",
       "iri": "http://disruption.org/ontology/disruptive-technologies#maximumSpeed",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "95",
       "iri": "http://disruption.org/ontology/disruptive-technologies#measurementUnits",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "96",
       "iri": "http://disruption.org/ontology/disruptive-technologies#minimumAxes",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "97",
       "iri": "http://disruption.org/ontology/disruptive-technologies#mobilityEnvelope",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "98",
       "iri": "http://disruption.org/ontology/disruptive-technologies#mtbf",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "99",
       "iri": "http://disruption.org/ontology/disruptive-technologies#numberOfClasses",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "100",
       "iri": "http://disruption.org/ontology/disruptive-technologies#payloadCapacity",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "101",
       "iri": "http://disruption.org/ontology/disruptive-technologies#regulatoryImportance",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "102",
       "iri": "http://disruption.org/ontology/disruptive-technologies#repeatability",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "103",
       "iri": "http://disruption.org/ontology/disruptive-technologies#trueNegativeCount",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "104",
       "iri": "http://disruption.org/ontology/disruptive-technologies#truePositiveCount",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "105",
       "iri": "http://disruption.org/ontology/disruptive-technologies#xAxisMetric",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "106",
       "iri": "http://disruption.org/ontology/disruptive-technologies#yAxisMetric",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies"
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "107",
       "iri": "http://disruption.org/ontology/metaverse#demographicParityDifference",
-      "baseIri": "http://disruption.org/ontology/metaverse"
+      "baseIri": "http://disruption.org/ontology/metaverse",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "108",
       "iri": "http://disruption.org/ontology/metaverse#disparateImpact",
-      "baseIri": "http://disruption.org/ontology/metaverse"
+      "baseIri": "http://disruption.org/ontology/metaverse",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "109",
       "iri": "http://disruption.org/ontology/metaverse#hasBetaParameter",
-      "baseIri": "http://disruption.org/ontology/metaverse"
+      "baseIri": "http://disruption.org/ontology/metaverse",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "110",
       "iri": "http://disruption.org/ontology/metaverse#learningApproach",
-      "baseIri": "http://disruption.org/ontology/metaverse"
+      "baseIri": "http://disruption.org/ontology/metaverse",
+      "attributes": [
+        "datatype"
+      ]
     },
     {
       "id": "111",
       "iri": "http://disruption.org/ontology/metaverse#transparencyScore",
-      "baseIri": "http://disruption.org/ontology/metaverse"
+      "baseIri": "http://disruption.org/ontology/metaverse",
+      "attributes": [
+        "datatype"
+      ]
     }
   ]
 }
