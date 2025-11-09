@@ -1,40 +1,46 @@
-// Directly load ontology JSON into WebVOWL without localStorage
+// Auto-load ontology by simulating file upload
 (function() {
-  var loaded = false;
+  console.log('WebVOWL autoload script started');
 
-  function attemptLoad() {
-    if (typeof webvowl === 'undefined' || !webvowl.app) {
-      setTimeout(attemptLoad, 100);
+  function waitForFileInput() {
+    var fileInput = document.getElementById('file-converter-input');
+    if (!fileInput) {
+      console.log('Waiting for file input...');
+      setTimeout(waitForFileInput, 200);
       return;
     }
 
-    if (loaded) return;
-    loaded = true;
+    console.log('File input found, loading ontology...');
 
-    var app = webvowl.app();
+    // Fetch the ontology JSON
+    fetch('data/narrativegoldmine-ontology.json')
+      .then(function(response) { return response.blob(); })
+      .then(function(blob) {
+        // Create a File object from the blob
+        var file = new File([blob], 'narrativegoldmine-ontology.json', { type: 'application/json' });
 
-    setTimeout(function() {
-      fetch('data/narrativegoldmine-ontology.json')
-        .then(function(res) { return res.json(); })
-        .then(function(data) {
-          var graph = app.graph ? app.graph() : window.graph;
+        // Create a DataTransfer to hold our file
+        var dataTransfer = new DataTransfer();
+        dataTransfer.items.add(file);
 
-          if (graph && typeof graph.load === 'function') {
-            console.log('Loading ontology with', data.class.length, 'classes');
-            graph.load(data);
-          } else {
-            console.error('Graph not available');
-          }
-        })
-        .catch(function(err) {
-          console.error('Failed to load ontology:', err);
-        });
-    }, 1000);
+        // Assign to the file input
+        fileInput.files = dataTransfer.files;
+
+        // Trigger the change event
+        var event = new Event('change', { bubbles: true });
+        fileInput.dispatchEvent(event);
+
+        console.log('Ontology file loaded via file input');
+      })
+      .catch(function(err) {
+        console.error('Failed to load ontology:', err);
+      });
   }
 
+  // Wait for DOM to be ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', attemptLoad);
+    document.addEventListener('DOMContentLoaded', waitForFileInput);
   } else {
-    attemptLoad();
+    waitForFileInput();
   }
 })();
