@@ -4149,6 +4149,14 @@
     {
       "id": "1000",
       "type": "owl:Class"
+    },
+    {
+      "id": "1001",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1002",
+      "type": "owl:Class"
     }
   ],
   "classAttribute": [
@@ -11590,6 +11598,17 @@
     },
     {
       "id": "677",
+      "iri": "http://disruption.org/ontology/artificial-intelligence#MachineLearning",
+      "baseIri": "http://disruption.org/ontology/artificial-intelligence",
+      "label": {
+        "en": "Machine Learning"
+      },
+      "comment": {
+        "en": "### Primary Definition"
+      }
+    },
+    {
+      "id": "678",
       "iri": "http://disruption.org/ontology/artificial-intelligence#MotionPlanning",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -11600,7 +11619,7 @@
       }
     },
     {
-      "id": "678",
+      "id": "679",
       "iri": "http://disruption.org/ontology/artificial-intelligence#ParameterEfficientFineTuning",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -11611,7 +11630,7 @@
       }
     },
     {
-      "id": "679",
+      "id": "680",
       "iri": "http://disruption.org/ontology/artificial-intelligence#PostHocExplanation",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -11622,7 +11641,7 @@
       }
     },
     {
-      "id": "680",
+      "id": "681",
       "iri": "http://disruption.org/ontology/artificial-intelligence#Precision",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -11633,7 +11652,7 @@
       }
     },
     {
-      "id": "681",
+      "id": "682",
       "iri": "http://disruption.org/ontology/artificial-intelligence#PreferenceLearning",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -11644,7 +11663,7 @@
       }
     },
     {
-      "id": "682",
+      "id": "683",
       "iri": "http://disruption.org/ontology/artificial-intelligence#PrefixTuning",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -11655,7 +11674,7 @@
       }
     },
     {
-      "id": "683",
+      "id": "684",
       "iri": "http://disruption.org/ontology/artificial-intelligence#PromptTuning",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -11666,7 +11685,7 @@
       }
     },
     {
-      "id": "684",
+      "id": "685",
       "iri": "http://disruption.org/ontology/artificial-intelligence#RiskMitigation",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -11677,7 +11696,7 @@
       }
     },
     {
-      "id": "685",
+      "id": "686",
       "iri": "http://disruption.org/ontology/artificial-intelligence#SentimentAnalysis",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -11688,7 +11707,7 @@
       }
     },
     {
-      "id": "686",
+      "id": "687",
       "iri": "http://disruption.org/ontology/artificial-intelligence#SupervisedFineTuning",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -11699,7 +11718,7 @@
       }
     },
     {
-      "id": "687",
+      "id": "688",
       "iri": "http://disruption.org/ontology/artificial-intelligence#Training",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -11710,7 +11729,7 @@
       }
     },
     {
-      "id": "688",
+      "id": "689",
       "iri": "http://disruption.org/ontology/artificial-intelligence#TransformerArchitecture",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -11721,7 +11740,7 @@
       }
     },
     {
-      "id": "689",
+      "id": "690",
       "iri": "http://disruption.org/ontology/blockchain#CensorshipResistance",
       "baseIri": "http://disruption.org/ontology/blockchain",
       "label": {
@@ -11732,7 +11751,7 @@
       }
     },
     {
-      "id": "690",
+      "id": "691",
       "iri": "http://disruption.org/ontology/blockchain#Transaction",
       "baseIri": "http://disruption.org/ontology/blockchain",
       "label": {
@@ -11743,7 +11762,7 @@
       }
     },
     {
-      "id": "691",
+      "id": "692",
       "iri": "http://disruption.org/ontology/blockchain#VerifiableCredentials",
       "baseIri": "http://disruption.org/ontology/blockchain",
       "label": {
@@ -11754,7 +11773,7 @@
       }
     },
     {
-      "id": "692",
+      "id": "693",
       "iri": "http://disruption.org/ontology/disruptive-technologies#AccessibilityAuditTool",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11765,7 +11784,18 @@
       }
     },
     {
-      "id": "693",
+      "id": "694",
+      "iri": "http://disruption.org/ontology/disruptive-technologies#BehaviouralFeedbackLoop",
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "label": {
+        "en": "Behavioural Feedback Loop"
+      },
+      "comment": {
+        "en": "Recurring cycle where user actions influence environment responses which in turn modify subsequent user behavior through adaptive learning and reinforcement mechanisms."
+      }
+    },
+    {
+      "id": "695",
       "iri": "http://disruption.org/ontology/disruptive-technologies#BiometricBindingMechanism",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11776,7 +11806,7 @@
       }
     },
     {
-      "id": "694",
+      "id": "696",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalCurationPlatform",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11787,7 +11817,7 @@
       }
     },
     {
-      "id": "695",
+      "id": "697",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalTaxonomyRegistry",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11798,7 +11828,7 @@
       }
     },
     {
-      "id": "696",
+      "id": "698",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalTwinSynchronisationBus",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11809,7 +11839,7 @@
       }
     },
     {
-      "id": "697",
+      "id": "699",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DisplayMetrology",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11820,7 +11850,7 @@
       }
     },
     {
-      "id": "698",
+      "id": "700",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DistributedProtocol",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11831,7 +11861,7 @@
       }
     },
     {
-      "id": "699",
+      "id": "701",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EdgeOrchestration",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11842,7 +11872,7 @@
       }
     },
     {
-      "id": "700",
+      "id": "702",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EtsiDomainAiDataMgmt",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11853,7 +11883,7 @@
       }
     },
     {
-      "id": "701",
+      "id": "703",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EtsiDomainApplicationTourism",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11864,7 +11894,7 @@
       }
     },
     {
-      "id": "702",
+      "id": "704",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EtsiDomainCreativeMedia",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11875,7 +11905,7 @@
       }
     },
     {
-      "id": "703",
+      "id": "705",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EtsiDomainData",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11886,7 +11916,7 @@
       }
     },
     {
-      "id": "704",
+      "id": "706",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EtsiDomainImmersiveRealityCaptureCrossover",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11897,7 +11927,7 @@
       }
     },
     {
-      "id": "705",
+      "id": "707",
       "iri": "http://disruption.org/ontology/disruptive-technologies#Gltf3dFileFormat",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11908,7 +11938,7 @@
       }
     },
     {
-      "id": "706",
+      "id": "708",
       "iri": "http://disruption.org/ontology/disruptive-technologies#HardwareAbstractionLayerHal",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11919,7 +11949,7 @@
       }
     },
     {
-      "id": "707",
+      "id": "709",
       "iri": "http://disruption.org/ontology/disruptive-technologies#HumanInterfaceDevice",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11930,7 +11960,7 @@
       }
     },
     {
-      "id": "708",
+      "id": "710",
       "iri": "http://disruption.org/ontology/disruptive-technologies#HumanInterfaceLayerHil",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11941,7 +11971,7 @@
       }
     },
     {
-      "id": "709",
+      "id": "711",
       "iri": "http://disruption.org/ontology/disruptive-technologies#HumanityAttestation",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11952,7 +11982,7 @@
       }
     },
     {
-      "id": "710",
+      "id": "712",
       "iri": "http://disruption.org/ontology/disruptive-technologies#IdentityProviderIdp",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11963,7 +11993,7 @@
       }
     },
     {
-      "id": "711",
+      "id": "713",
       "iri": "http://disruption.org/ontology/disruptive-technologies#Immersion",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11974,7 +12004,7 @@
       }
     },
     {
-      "id": "712",
+      "id": "714",
       "iri": "http://disruption.org/ontology/disruptive-technologies#Latency",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11985,7 +12015,7 @@
       }
     },
     {
-      "id": "713",
+      "id": "715",
       "iri": "http://disruption.org/ontology/disruptive-technologies#MetadataStandard",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -11996,7 +12026,7 @@
       }
     },
     {
-      "id": "714",
+      "id": "716",
       "iri": "http://disruption.org/ontology/disruptive-technologies#PlatformLayer",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -12007,7 +12037,7 @@
       }
     },
     {
-      "id": "715",
+      "id": "717",
       "iri": "http://disruption.org/ontology/disruptive-technologies#UniversalManifest",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -12018,7 +12048,7 @@
       }
     },
     {
-      "id": "716",
+      "id": "718",
       "iri": "http://disruption.org/ontology/disruptive-technologies#ValidationProcess",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -12029,7 +12059,7 @@
       }
     },
     {
-      "id": "717",
+      "id": "719",
       "iri": "http://disruption.org/ontology/disruptive-technologies#VirtualProductionVp",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -12040,7 +12070,7 @@
       }
     },
     {
-      "id": "718",
+      "id": "720",
       "iri": "http://disruption.org/ontology/disruptive-technologies#ZeroTrustArchitectureZta",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -12051,7 +12081,7 @@
       }
     },
     {
-      "id": "719",
+      "id": "721",
       "iri": "http://disruption.org/ontology/artificial-intelligence#AdapterModules",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12062,7 +12092,7 @@
       }
     },
     {
-      "id": "720",
+      "id": "722",
       "iri": "http://disruption.org/ontology/artificial-intelligence#Adas",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12073,7 +12103,7 @@
       }
     },
     {
-      "id": "721",
+      "id": "723",
       "iri": "http://disruption.org/ontology/artificial-intelligence#AdversarialTesting",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12084,7 +12114,7 @@
       }
     },
     {
-      "id": "722",
+      "id": "724",
       "iri": "http://disruption.org/ontology/artificial-intelligence#AiOperator",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12095,18 +12125,7 @@
       }
     },
     {
-      "id": "723",
-      "iri": "http://disruption.org/ontology/artificial-intelligence#ArtificialIntelligence",
-      "baseIri": "http://disruption.org/ontology/artificial-intelligence",
-      "label": {
-        "en": "Artificial Intelligence"
-      },
-      "comment": {
-        "en": "### Primary Definition"
-      }
-    },
-    {
-      "id": "724",
+      "id": "725",
       "iri": "http://disruption.org/ontology/artificial-intelligence#AttentionHead",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12117,7 +12136,7 @@
       }
     },
     {
-      "id": "725",
+      "id": "726",
       "iri": "http://disruption.org/ontology/artificial-intelligence#AutonomousVehicle",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12128,7 +12147,7 @@
       }
     },
     {
-      "id": "726",
+      "id": "727",
       "iri": "http://disruption.org/ontology/artificial-intelligence#CausalAttention",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12139,7 +12158,7 @@
       }
     },
     {
-      "id": "727",
+      "id": "728",
       "iri": "http://disruption.org/ontology/artificial-intelligence#CurriculumLearning",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12150,7 +12169,7 @@
       }
     },
     {
-      "id": "728",
+      "id": "729",
       "iri": "http://disruption.org/ontology/artificial-intelligence#DirectPreferenceOptimisation",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12161,7 +12180,7 @@
       }
     },
     {
-      "id": "729",
+      "id": "730",
       "iri": "http://disruption.org/ontology/artificial-intelligence#Encoder",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12172,7 +12191,7 @@
       }
     },
     {
-      "id": "730",
+      "id": "731",
       "iri": "http://disruption.org/ontology/artificial-intelligence#Explainability",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12183,7 +12202,7 @@
       }
     },
     {
-      "id": "731",
+      "id": "732",
       "iri": "http://disruption.org/ontology/artificial-intelligence#FeedForwardNetwork",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12194,7 +12213,7 @@
       }
     },
     {
-      "id": "732",
+      "id": "733",
       "iri": "http://disruption.org/ontology/artificial-intelligence#HumanFeedback",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12205,7 +12224,7 @@
       }
     },
     {
-      "id": "733",
+      "id": "734",
       "iri": "http://disruption.org/ontology/artificial-intelligence#InstructionTuning",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12216,7 +12235,7 @@
       }
     },
     {
-      "id": "734",
+      "id": "735",
       "iri": "http://disruption.org/ontology/artificial-intelligence#LayerNormalisation",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12227,7 +12246,7 @@
       }
     },
     {
-      "id": "735",
+      "id": "736",
       "iri": "http://disruption.org/ontology/artificial-intelligence#LocalExplanation",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12238,7 +12257,7 @@
       }
     },
     {
-      "id": "736",
+      "id": "737",
       "iri": "http://disruption.org/ontology/artificial-intelligence#MultiTaskLearning",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12249,7 +12268,7 @@
       }
     },
     {
-      "id": "737",
+      "id": "738",
       "iri": "http://disruption.org/ontology/artificial-intelligence#PerceptionSystem",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12260,7 +12279,7 @@
       }
     },
     {
-      "id": "738",
+      "id": "739",
       "iri": "http://disruption.org/ontology/artificial-intelligence#PreTraining",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12271,7 +12290,7 @@
       }
     },
     {
-      "id": "739",
+      "id": "740",
       "iri": "http://disruption.org/ontology/artificial-intelligence#Recall",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12282,7 +12301,7 @@
       }
     },
     {
-      "id": "740",
+      "id": "741",
       "iri": "http://disruption.org/ontology/artificial-intelligence#RewardModel",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12293,7 +12312,7 @@
       }
     },
     {
-      "id": "741",
+      "id": "742",
       "iri": "http://disruption.org/ontology/artificial-intelligence#RootMeanSquareError",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12304,7 +12323,7 @@
       }
     },
     {
-      "id": "742",
+      "id": "743",
       "iri": "http://disruption.org/ontology/blockchain#Cryptography",
       "baseIri": "http://disruption.org/ontology/blockchain",
       "label": {
@@ -12315,7 +12334,7 @@
       }
     },
     {
-      "id": "743",
+      "id": "744",
       "iri": "http://disruption.org/ontology/blockchain#DecentralizedAutonomousOrganization",
       "baseIri": "http://disruption.org/ontology/blockchain",
       "label": {
@@ -12326,7 +12345,7 @@
       }
     },
     {
-      "id": "744",
+      "id": "745",
       "iri": "http://disruption.org/ontology/blockchain#PeerToPeerNetwork",
       "baseIri": "http://disruption.org/ontology/blockchain",
       "label": {
@@ -12337,7 +12356,7 @@
       }
     },
     {
-      "id": "745",
+      "id": "746",
       "iri": "http://disruption.org/ontology/blockchain#Timestamp",
       "baseIri": "http://disruption.org/ontology/blockchain",
       "label": {
@@ -12348,7 +12367,7 @@
       }
     },
     {
-      "id": "746",
+      "id": "747",
       "iri": "http://disruption.org/ontology/blockchain#TransactionPool",
       "baseIri": "http://disruption.org/ontology/blockchain",
       "label": {
@@ -12359,7 +12378,7 @@
       }
     },
     {
-      "id": "747",
+      "id": "748",
       "iri": "http://disruption.org/ontology/disruptive-technologies#AccessibilityStandard",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -12370,7 +12389,7 @@
       }
     },
     {
-      "id": "748",
+      "id": "749",
       "iri": "http://disruption.org/ontology/disruptive-technologies#AiGovernancePrinciple",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -12381,7 +12400,7 @@
       }
     },
     {
-      "id": "749",
+      "id": "750",
       "iri": "http://disruption.org/ontology/disruptive-technologies#AvatarInteroperability",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -12389,17 +12408,6 @@
       },
       "comment": {
         "en": "Capability enabling an avatar's identity, appearance, and behaviors to function seamlessly across multiple metaverse platforms and virtual environments."
-      }
-    },
-    {
-      "id": "750",
-      "iri": "http://disruption.org/ontology/disruptive-technologies#BehaviouralFeedbackLoop",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
-      "label": {
-        "en": "Behavioural Feedback Loop"
-      },
-      "comment": {
-        "en": "Recurring cycle where user actions influence environment responses which in turn modify subsequent user behavior through adaptive learning and reinforcement mechanisms."
       }
     },
     {
@@ -12756,6 +12764,17 @@
     },
     {
       "id": "783",
+      "iri": "http://disruption.org/ontology/artificial-intelligence#ArtificialIntelligence",
+      "baseIri": "http://disruption.org/ontology/artificial-intelligence",
+      "label": {
+        "en": "Artificial Intelligence"
+      },
+      "comment": {
+        "en": "### Primary Definition"
+      }
+    },
+    {
+      "id": "784",
       "iri": "http://disruption.org/ontology/artificial-intelligence#AttentionMask",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12766,7 +12785,7 @@
       }
     },
     {
-      "id": "784",
+      "id": "785",
       "iri": "http://disruption.org/ontology/artificial-intelligence#AttentionMechanism",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12777,7 +12796,7 @@
       }
     },
     {
-      "id": "785",
+      "id": "786",
       "iri": "http://disruption.org/ontology/artificial-intelligence#Decoder",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12788,7 +12807,7 @@
       }
     },
     {
-      "id": "786",
+      "id": "787",
       "iri": "http://disruption.org/ontology/artificial-intelligence#DialogueSystem",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12799,7 +12818,7 @@
       }
     },
     {
-      "id": "787",
+      "id": "788",
       "iri": "http://disruption.org/ontology/artificial-intelligence#DifferentialPrivacy",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12810,7 +12829,7 @@
       }
     },
     {
-      "id": "788",
+      "id": "789",
       "iri": "http://disruption.org/ontology/artificial-intelligence#EncoderDecoderArchitecture",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12821,7 +12840,7 @@
       }
     },
     {
-      "id": "789",
+      "id": "790",
       "iri": "http://disruption.org/ontology/artificial-intelligence#EthicalAi",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12832,7 +12851,7 @@
       }
     },
     {
-      "id": "790",
+      "id": "791",
       "iri": "http://disruption.org/ontology/artificial-intelligence#InstanceSegmentation",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12843,7 +12862,7 @@
       }
     },
     {
-      "id": "791",
+      "id": "792",
       "iri": "http://disruption.org/ontology/artificial-intelligence#InterpretableAi",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12854,7 +12873,7 @@
       }
     },
     {
-      "id": "792",
+      "id": "793",
       "iri": "http://disruption.org/ontology/artificial-intelligence#RiskAssessment",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12865,7 +12884,7 @@
       }
     },
     {
-      "id": "793",
+      "id": "794",
       "iri": "http://disruption.org/ontology/artificial-intelligence#SelfAttention",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12876,7 +12895,7 @@
       }
     },
     {
-      "id": "794",
+      "id": "795",
       "iri": "http://disruption.org/ontology/artificial-intelligence#SensorFusion",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -12887,7 +12906,7 @@
       }
     },
     {
-      "id": "795",
+      "id": "796",
       "iri": "http://disruption.org/ontology/blockchain#ComplianceMonitoring",
       "baseIri": "http://disruption.org/ontology/blockchain",
       "label": {
@@ -12898,7 +12917,7 @@
       }
     },
     {
-      "id": "796",
+      "id": "797",
       "iri": "http://disruption.org/ontology/disruptive-technologies#AutonomousAgent",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -12909,7 +12928,7 @@
       }
     },
     {
-      "id": "797",
+      "id": "798",
       "iri": "http://disruption.org/ontology/disruptive-technologies#BlockchainEntity",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -12920,7 +12939,7 @@
       }
     },
     {
-      "id": "798",
+      "id": "799",
       "iri": "http://disruption.org/ontology/disruptive-technologies#CognitiveFeedbackInterface",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -12931,7 +12950,7 @@
       }
     },
     {
-      "id": "799",
+      "id": "800",
       "iri": "http://disruption.org/ontology/disruptive-technologies#CompatibilityProcess",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -12942,7 +12961,7 @@
       }
     },
     {
-      "id": "800",
+      "id": "801",
       "iri": "http://disruption.org/ontology/disruptive-technologies#CulturalProvenanceRecord",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -12953,7 +12972,7 @@
       }
     },
     {
-      "id": "801",
+      "id": "802",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DataProvenance",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -12964,7 +12983,7 @@
       }
     },
     {
-      "id": "802",
+      "id": "803",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalAssetWorkflow",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -12975,7 +12994,7 @@
       }
     },
     {
-      "id": "803",
+      "id": "804",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalGoodsRegistry",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -12986,7 +13005,7 @@
       }
     },
     {
-      "id": "804",
+      "id": "805",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalOntologyRepository",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -12997,7 +13016,7 @@
       }
     },
     {
-      "id": "805",
+      "id": "806",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalPerformanceCapture",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13008,7 +13027,7 @@
       }
     },
     {
-      "id": "806",
+      "id": "807",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalRightsManagementExtended",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13019,7 +13038,7 @@
       }
     },
     {
-      "id": "807",
+      "id": "808",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalTwinInteropProtocol",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13030,7 +13049,7 @@
       }
     },
     {
-      "id": "808",
+      "id": "809",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalWellBeingIndex",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13041,7 +13060,7 @@
       }
     },
     {
-      "id": "809",
+      "id": "810",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EtsiDomainApplicationIndustry",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13052,7 +13071,7 @@
       }
     },
     {
-      "id": "810",
+      "id": "811",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EtsiDomainGovernanceCompliance",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13063,7 +13082,7 @@
       }
     },
     {
-      "id": "811",
+      "id": "812",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EtsiDomainGovernanceEthics",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13074,7 +13093,18 @@
       }
     },
     {
-      "id": "812",
+      "id": "813",
+      "iri": "http://disruption.org/ontology/disruptive-technologies#FeedbackMechanism",
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "label": {
+        "en": "Feedback Mechanism"
+      },
+      "comment": {
+        "en": "Method providing sensory response to user actions through haptic, audio, and visual channels to enhance interaction fidelity and user experience in immersive environments."
+      }
+    },
+    {
+      "id": "814",
       "iri": "http://disruption.org/ontology/disruptive-technologies#LoyaltyToken",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13085,7 +13115,7 @@
       }
     },
     {
-      "id": "813",
+      "id": "815",
       "iri": "http://disruption.org/ontology/disruptive-technologies#MetaverseArchitectureStack",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13096,7 +13126,7 @@
       }
     },
     {
-      "id": "814",
+      "id": "816",
       "iri": "http://disruption.org/ontology/disruptive-technologies#Money",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13107,7 +13137,7 @@
       }
     },
     {
-      "id": "815",
+      "id": "817",
       "iri": "http://disruption.org/ontology/disruptive-technologies#PolicyEngine",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13118,7 +13148,7 @@
       }
     },
     {
-      "id": "816",
+      "id": "818",
       "iri": "http://disruption.org/ontology/disruptive-technologies#PrivacyImpactAssessmentPia",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13129,7 +13159,7 @@
       }
     },
     {
-      "id": "817",
+      "id": "819",
       "iri": "http://disruption.org/ontology/disruptive-technologies#Slam",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13140,7 +13170,7 @@
       }
     },
     {
-      "id": "818",
+      "id": "820",
       "iri": "http://disruption.org/ontology/disruptive-technologies#SmartRoyaltyContract",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13151,7 +13181,7 @@
       }
     },
     {
-      "id": "819",
+      "id": "821",
       "iri": "http://disruption.org/ontology/disruptive-technologies#SpatialComputingLayer",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13162,7 +13192,7 @@
       }
     },
     {
-      "id": "820",
+      "id": "822",
       "iri": "http://disruption.org/ontology/disruptive-technologies#ThreatSurfaceMap",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13173,7 +13203,7 @@
       }
     },
     {
-      "id": "821",
+      "id": "823",
       "iri": "http://disruption.org/ontology/disruptive-technologies#TokenBondingCurve",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13184,7 +13214,7 @@
       }
     },
     {
-      "id": "822",
+      "id": "824",
       "iri": "http://disruption.org/ontology/disruptive-technologies#TrustScoreMetric",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13195,7 +13225,7 @@
       }
     },
     {
-      "id": "823",
+      "id": "825",
       "iri": "http://disruption.org/ontology/disruptive-technologies#VirtualPropertyRight",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13206,7 +13236,7 @@
       }
     },
     {
-      "id": "824",
+      "id": "826",
       "iri": "http://disruption.org/ontology/disruptive-technologies#VirtualSecuritiesOfferingVso",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13217,7 +13247,7 @@
       }
     },
     {
-      "id": "825",
+      "id": "827",
       "iri": "http://disruption.org/ontology/artificial-intelligence#Accuracy",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -13228,7 +13258,7 @@
       }
     },
     {
-      "id": "826",
+      "id": "828",
       "iri": "http://disruption.org/ontology/artificial-intelligence#AiGovernanceFramework",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -13239,7 +13269,7 @@
       }
     },
     {
-      "id": "827",
+      "id": "829",
       "iri": "http://disruption.org/ontology/artificial-intelligence#BytePairEncoding",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -13250,7 +13280,7 @@
       }
     },
     {
-      "id": "828",
+      "id": "830",
       "iri": "http://disruption.org/ontology/artificial-intelligence#ContrastiveLearning",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -13261,7 +13291,7 @@
       }
     },
     {
-      "id": "829",
+      "id": "831",
       "iri": "http://disruption.org/ontology/artificial-intelligence#FeatureImportance",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -13272,7 +13302,7 @@
       }
     },
     {
-      "id": "830",
+      "id": "832",
       "iri": "http://disruption.org/ontology/artificial-intelligence#MeanAbsoluteError",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -13283,7 +13313,7 @@
       }
     },
     {
-      "id": "831",
+      "id": "833",
       "iri": "http://disruption.org/ontology/artificial-intelligence#ResidualConnection",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -13294,7 +13324,7 @@
       }
     },
     {
-      "id": "832",
+      "id": "834",
       "iri": "http://disruption.org/ontology/blockchain#ConsensusMechanism",
       "baseIri": "http://disruption.org/ontology/blockchain",
       "label": {
@@ -13305,7 +13335,7 @@
       }
     },
     {
-      "id": "833",
+      "id": "835",
       "iri": "http://disruption.org/ontology/blockchain#NetworkTopology",
       "baseIri": "http://disruption.org/ontology/blockchain",
       "label": {
@@ -13316,7 +13346,7 @@
       }
     },
     {
-      "id": "834",
+      "id": "836",
       "iri": "http://disruption.org/ontology/disruptive-technologies#AiGeneratedContentDisclosure",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13327,18 +13357,7 @@
       }
     },
     {
-      "id": "835",
-      "iri": "http://disruption.org/ontology/disruptive-technologies#AiGovernanceFramework",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
-      "label": {
-        "en": "AI Governance Framework"
-      },
-      "comment": {
-        "en": "Set of policies and procedures ensuring responsible development and operation of AI components in the metaverse."
-      }
-    },
-    {
-      "id": "836",
+      "id": "837",
       "iri": "http://disruption.org/ontology/disruptive-technologies#BiosensingInterface",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13349,7 +13368,7 @@
       }
     },
     {
-      "id": "837",
+      "id": "838",
       "iri": "http://disruption.org/ontology/disruptive-technologies#CreatorRoyaltyToken",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13360,7 +13379,7 @@
       }
     },
     {
-      "id": "838",
+      "id": "839",
       "iri": "http://disruption.org/ontology/disruptive-technologies#CrossBorderDataTransferRule",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13371,7 +13390,7 @@
       }
     },
     {
-      "id": "839",
+      "id": "840",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DataAnonymizationPipeline",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13382,7 +13401,7 @@
       }
     },
     {
-      "id": "840",
+      "id": "841",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DataFabricArchitecture",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13393,7 +13412,7 @@
       }
     },
     {
-      "id": "841",
+      "id": "842",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DataProtection",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13404,7 +13423,7 @@
       }
     },
     {
-      "id": "842",
+      "id": "843",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DecentralizationLayer",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13415,7 +13434,7 @@
       }
     },
     {
-      "id": "843",
+      "id": "844",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalTaxComplianceNode",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13426,7 +13445,7 @@
       }
     },
     {
-      "id": "844",
+      "id": "845",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EdgeComputingNode",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13437,7 +13456,7 @@
       }
     },
     {
-      "id": "845",
+      "id": "846",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EnvironmentalImpactMetric",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13448,7 +13467,7 @@
       }
     },
     {
-      "id": "846",
+      "id": "847",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EtsiDomainApplicationEducation",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13459,7 +13478,7 @@
       }
     },
     {
-      "id": "847",
+      "id": "848",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EtsiDomainEthicsLaw",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13467,17 +13486,6 @@
       },
       "comment": {
         "en": "Domain marker for ETSI metaverse categorization covering ethical frameworks, legal compliance, regulatory requirements, and responsible governance structures for virtual environments."
-      }
-    },
-    {
-      "id": "848",
-      "iri": "http://disruption.org/ontology/disruptive-technologies#FeedbackMechanism",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
-      "label": {
-        "en": "Feedback Mechanism"
-      },
-      "comment": {
-        "en": "Method providing sensory response to user actions through haptic, audio, and visual channels to enhance interaction fidelity and user experience in immersive environments."
       }
     },
     {
@@ -13713,6 +13721,17 @@
     },
     {
       "id": "870",
+      "iri": "http://disruption.org/ontology/disruptive-technologies#AiGovernanceFramework",
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "label": {
+        "en": "AI Governance Framework"
+      },
+      "comment": {
+        "en": "Set of policies and procedures ensuring responsible development and operation of AI components in the metaverse."
+      }
+    },
+    {
+      "id": "871",
       "iri": "http://disruption.org/ontology/disruptive-technologies#CentralBankDigitalCurrencyCbdc",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13723,7 +13742,7 @@
       }
     },
     {
-      "id": "871",
+      "id": "872",
       "iri": "http://disruption.org/ontology/disruptive-technologies#ConsensusMechanism",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13734,7 +13753,7 @@
       }
     },
     {
-      "id": "872",
+      "id": "873",
       "iri": "http://disruption.org/ontology/disruptive-technologies#ContentModeration",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13745,7 +13764,7 @@
       }
     },
     {
-      "id": "873",
+      "id": "874",
       "iri": "http://disruption.org/ontology/disruptive-technologies#ContextAwareness",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13756,7 +13775,7 @@
       }
     },
     {
-      "id": "874",
+      "id": "875",
       "iri": "http://disruption.org/ontology/disruptive-technologies#CulturalHeritageXrExperience",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13767,7 +13786,7 @@
       }
     },
     {
-      "id": "875",
+      "id": "876",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DataStorageLayer",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13778,7 +13797,7 @@
       }
     },
     {
-      "id": "876",
+      "id": "877",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalCitizensAssembly",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13789,7 +13808,7 @@
       }
     },
     {
-      "id": "877",
+      "id": "878",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalGoods",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13800,7 +13819,7 @@
       }
     },
     {
-      "id": "878",
+      "id": "879",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalIdentityFramework",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13811,7 +13830,7 @@
       }
     },
     {
-      "id": "879",
+      "id": "880",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EnvironmentalSustainabilityLabel",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13822,7 +13841,7 @@
       }
     },
     {
-      "id": "880",
+      "id": "881",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EtsiDomainAiGovernance",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13833,7 +13852,7 @@
       }
     },
     {
-      "id": "881",
+      "id": "882",
       "iri": "http://disruption.org/ontology/disruptive-technologies#ExperienceLayer",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13844,7 +13863,7 @@
       }
     },
     {
-      "id": "882",
+      "id": "883",
       "iri": "http://disruption.org/ontology/disruptive-technologies#ExplainableAiXai",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13855,7 +13874,7 @@
       }
     },
     {
-      "id": "883",
+      "id": "884",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EyeTracking",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13866,7 +13885,7 @@
       }
     },
     {
-      "id": "884",
+      "id": "885",
       "iri": "http://disruption.org/ontology/disruptive-technologies#GenerativeDesignTool",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13877,7 +13896,7 @@
       }
     },
     {
-      "id": "885",
+      "id": "886",
       "iri": "http://disruption.org/ontology/disruptive-technologies#GlossaryIndex",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13888,7 +13907,7 @@
       }
     },
     {
-      "id": "886",
+      "id": "887",
       "iri": "http://disruption.org/ontology/disruptive-technologies#HealthMetaverseApplication",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13899,7 +13918,7 @@
       }
     },
     {
-      "id": "887",
+      "id": "888",
       "iri": "http://disruption.org/ontology/disruptive-technologies#Marketplace",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13910,7 +13929,7 @@
       }
     },
     {
-      "id": "888",
+      "id": "889",
       "iri": "http://disruption.org/ontology/disruptive-technologies#MetaverseOntologySchema",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13921,7 +13940,7 @@
       }
     },
     {
-      "id": "889",
+      "id": "890",
       "iri": "http://disruption.org/ontology/disruptive-technologies#MetaversePsychologyProfile",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13932,7 +13951,7 @@
       }
     },
     {
-      "id": "890",
+      "id": "891",
       "iri": "http://disruption.org/ontology/disruptive-technologies#NarrativeDesignOntology",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13943,7 +13962,7 @@
       }
     },
     {
-      "id": "891",
+      "id": "892",
       "iri": "http://disruption.org/ontology/disruptive-technologies#NetworkingLayer",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13954,7 +13973,7 @@
       }
     },
     {
-      "id": "892",
+      "id": "893",
       "iri": "http://disruption.org/ontology/disruptive-technologies#RightToBeForgotten",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13965,7 +13984,7 @@
       }
     },
     {
-      "id": "893",
+      "id": "894",
       "iri": "http://disruption.org/ontology/disruptive-technologies#Stablecoin",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13976,7 +13995,7 @@
       }
     },
     {
-      "id": "894",
+      "id": "895",
       "iri": "http://disruption.org/ontology/disruptive-technologies#ValueTransfer",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13987,7 +14006,7 @@
       }
     },
     {
-      "id": "895",
+      "id": "896",
       "iri": "http://disruption.org/ontology/disruptive-technologies#VerifiableCredentialVc",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -13998,7 +14017,7 @@
       }
     },
     {
-      "id": "896",
+      "id": "897",
       "iri": "http://disruption.org/ontology/disruptive-technologies#VirtualPerformanceSpace",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14009,7 +14028,7 @@
       }
     },
     {
-      "id": "897",
+      "id": "898",
       "iri": "http://disruption.org/ontology/disruptive-technologies#VirtualRealityVr",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14020,7 +14039,7 @@
       }
     },
     {
-      "id": "898",
+      "id": "899",
       "iri": "http://disruption.org/ontology/disruptive-technologies#ZeroKnowledgeProofZkp",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14031,7 +14050,7 @@
       }
     },
     {
-      "id": "899",
+      "id": "900",
       "iri": "http://disruption.org/ontology/robotics#Manipulator",
       "baseIri": "http://disruption.org/ontology/robotics",
       "label": {
@@ -14042,7 +14061,7 @@
       }
     },
     {
-      "id": "900",
+      "id": "901",
       "iri": "http://disruption.org/ontology/robotics#MobileRobot",
       "baseIri": "http://disruption.org/ontology/robotics",
       "label": {
@@ -14053,7 +14072,7 @@
       }
     },
     {
-      "id": "901",
+      "id": "902",
       "iri": "http://disruption.org/ontology/artificial-intelligence#Claude",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -14064,7 +14083,7 @@
       }
     },
     {
-      "id": "902",
+      "id": "903",
       "iri": "http://disruption.org/ontology/artificial-intelligence#FineTuning",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -14075,7 +14094,18 @@
       }
     },
     {
-      "id": "903",
+      "id": "904",
+      "iri": "http://disruption.org/ontology/artificial-intelligence#Gemini",
+      "baseIri": "http://disruption.org/ontology/artificial-intelligence",
+      "label": {
+        "en": "Gemini"
+      },
+      "comment": {
+        "en": "A family of multimodal AI models developed by Google DeepMind that natively process text, images, audio, and video, designed for efficiency across different scales from mobile devices to data centres."
+      }
+    },
+    {
+      "id": "905",
       "iri": "http://disruption.org/ontology/artificial-intelligence#ScaledDotProductAttention",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -14086,18 +14116,7 @@
       }
     },
     {
-      "id": "904",
-      "iri": "http://disruption.org/ontology/disruptive-technologies#AiEthicsChecklist",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
-      "label": {
-        "en": "AI Ethics Checklist"
-      },
-      "comment": {
-        "en": "Structured verification process evaluating fairness, accountability, transparency, and ethical compliance of AI systems against established governance frameworks."
-      }
-    },
-    {
-      "id": "905",
+      "id": "906",
       "iri": "http://disruption.org/ontology/disruptive-technologies#ApplicationLayer",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14108,7 +14127,7 @@
       }
     },
     {
-      "id": "906",
+      "id": "907",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DecentralizedIdentityDid",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14119,7 +14138,7 @@
       }
     },
     {
-      "id": "907",
+      "id": "908",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalJurisdiction",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14130,7 +14149,7 @@
       }
     },
     {
-      "id": "908",
+      "id": "909",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalRitual",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14141,7 +14160,7 @@
       }
     },
     {
-      "id": "909",
+      "id": "910",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalTwinOfSocietyDtos",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14152,7 +14171,7 @@
       }
     },
     {
-      "id": "910",
+      "id": "911",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DisputeResolutionMechanism",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14163,7 +14182,7 @@
       }
     },
     {
-      "id": "911",
+      "id": "912",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EthicsLawLayer",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14174,7 +14193,7 @@
       }
     },
     {
-      "id": "912",
+      "id": "913",
       "iri": "http://disruption.org/ontology/disruptive-technologies#HumanCaptureRecognition",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14185,7 +14204,7 @@
       }
     },
     {
-      "id": "913",
+      "id": "914",
       "iri": "http://disruption.org/ontology/disruptive-technologies#NetworkInfrastructure",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14196,7 +14215,7 @@
       }
     },
     {
-      "id": "914",
+      "id": "915",
       "iri": "http://disruption.org/ontology/disruptive-technologies#NonFungibleTokenNft",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14207,7 +14226,7 @@
       }
     },
     {
-      "id": "915",
+      "id": "916",
       "iri": "http://disruption.org/ontology/disruptive-technologies#PlayToEarnP2e",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14218,7 +14237,7 @@
       }
     },
     {
-      "id": "916",
+      "id": "917",
       "iri": "http://disruption.org/ontology/disruptive-technologies#PostQuantumCryptography",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14229,7 +14248,7 @@
       }
     },
     {
-      "id": "917",
+      "id": "918",
       "iri": "http://disruption.org/ontology/disruptive-technologies#PrivacyEnhancingComputationPec",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14240,7 +14259,7 @@
       }
     },
     {
-      "id": "918",
+      "id": "919",
       "iri": "http://disruption.org/ontology/disruptive-technologies#RealityCaptureSystem",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14251,7 +14270,7 @@
       }
     },
     {
-      "id": "919",
+      "id": "920",
       "iri": "http://disruption.org/ontology/disruptive-technologies#SocialTokenEconomy",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14262,7 +14281,7 @@
       }
     },
     {
-      "id": "920",
+      "id": "921",
       "iri": "http://disruption.org/ontology/disruptive-technologies#TourismMetaverse",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14273,7 +14292,7 @@
       }
     },
     {
-      "id": "921",
+      "id": "922",
       "iri": "http://disruption.org/ontology/disruptive-technologies#VirtualNotaryService",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14284,7 +14303,7 @@
       }
     },
     {
-      "id": "922",
+      "id": "923",
       "iri": "http://disruption.org/ontology/robotics#Robot",
       "baseIri": "http://disruption.org/ontology/robotics",
       "label": {
@@ -14295,7 +14314,7 @@
       }
     },
     {
-      "id": "923",
+      "id": "924",
       "iri": "http://disruption.org/ontology/artificial-intelligence#Fairness",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -14306,7 +14325,7 @@
       }
     },
     {
-      "id": "924",
+      "id": "925",
       "iri": "http://disruption.org/ontology/artificial-intelligence#PositionalEncoding",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -14317,7 +14336,7 @@
       }
     },
     {
-      "id": "925",
+      "id": "926",
       "iri": "http://disruption.org/ontology/artificial-intelligence#T5",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -14328,7 +14347,7 @@
       }
     },
     {
-      "id": "926",
+      "id": "927",
       "iri": "http://disruption.org/ontology/blockchain#DistributedLedger",
       "baseIri": "http://disruption.org/ontology/blockchain",
       "label": {
@@ -14339,7 +14358,18 @@
       }
     },
     {
-      "id": "927",
+      "id": "928",
+      "iri": "http://disruption.org/ontology/disruptive-technologies#AiEthicsChecklist",
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "label": {
+        "en": "AI Ethics Checklist"
+      },
+      "comment": {
+        "en": "Structured verification process evaluating fairness, accountability, transparency, and ethical compliance of AI systems against established governance frameworks."
+      }
+    },
+    {
+      "id": "929",
       "iri": "http://disruption.org/ontology/disruptive-technologies#ConstructionDigitalTwin",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14350,7 +14380,7 @@
       }
     },
     {
-      "id": "928",
+      "id": "930",
       "iri": "http://disruption.org/ontology/disruptive-technologies#Deepfakes",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14361,7 +14391,7 @@
       }
     },
     {
-      "id": "929",
+      "id": "931",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalCitizenship",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14372,7 +14402,7 @@
       }
     },
     {
-      "id": "930",
+      "id": "932",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalConstitution",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14383,7 +14413,7 @@
       }
     },
     {
-      "id": "931",
+      "id": "933",
       "iri": "http://disruption.org/ontology/disruptive-technologies#FractionalizedNft",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14394,7 +14424,7 @@
       }
     },
     {
-      "id": "932",
+      "id": "934",
       "iri": "http://disruption.org/ontology/disruptive-technologies#InteroperabilityFramework",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14405,7 +14435,7 @@
       }
     },
     {
-      "id": "933",
+      "id": "935",
       "iri": "http://disruption.org/ontology/disruptive-technologies#NftRenting",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14416,7 +14446,7 @@
       }
     },
     {
-      "id": "934",
+      "id": "936",
       "iri": "http://disruption.org/ontology/disruptive-technologies#Photogrammetry",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14427,7 +14457,7 @@
       }
     },
     {
-      "id": "935",
+      "id": "937",
       "iri": "http://disruption.org/ontology/disruptive-technologies#ProvenanceOntologyProvO",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14438,7 +14468,7 @@
       }
     },
     {
-      "id": "936",
+      "id": "938",
       "iri": "http://disruption.org/ontology/disruptive-technologies#ProvenanceVerification",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14449,7 +14479,7 @@
       }
     },
     {
-      "id": "937",
+      "id": "939",
       "iri": "http://disruption.org/ontology/disruptive-technologies#SceneGraph",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14460,7 +14490,7 @@
       }
     },
     {
-      "id": "938",
+      "id": "940",
       "iri": "http://disruption.org/ontology/disruptive-technologies#Tokenization",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14471,7 +14501,7 @@
       }
     },
     {
-      "id": "939",
+      "id": "941",
       "iri": "http://disruption.org/ontology/disruptive-technologies#UserConsentToken",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14482,7 +14512,7 @@
       }
     },
     {
-      "id": "940",
+      "id": "942",
       "iri": "http://disruption.org/ontology/artificial-intelligence#AiLifecycle",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -14493,7 +14523,7 @@
       }
     },
     {
-      "id": "941",
+      "id": "943",
       "iri": "http://disruption.org/ontology/artificial-intelligence#CrossAttention",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -14504,7 +14534,7 @@
       }
     },
     {
-      "id": "942",
+      "id": "944",
       "iri": "http://disruption.org/ontology/artificial-intelligence#F1Score",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -14515,7 +14545,7 @@
       }
     },
     {
-      "id": "943",
+      "id": "945",
       "iri": "http://disruption.org/ontology/disruptive-technologies#CollectiveIntelligenceSystem",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14526,7 +14556,7 @@
       }
     },
     {
-      "id": "944",
+      "id": "946",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DecentralizedAutonomousOrganizationDao",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14537,7 +14567,7 @@
       }
     },
     {
-      "id": "945",
+      "id": "947",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DecentralizedExchangeDex",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14548,7 +14578,7 @@
       }
     },
     {
-      "id": "946",
+      "id": "948",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DistributedArchitecture",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14559,7 +14589,7 @@
       }
     },
     {
-      "id": "947",
+      "id": "949",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EContractArbitration",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14570,7 +14600,7 @@
       }
     },
     {
-      "id": "948",
+      "id": "950",
       "iri": "http://disruption.org/ontology/disruptive-technologies#InfrastructureLayer",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14581,7 +14611,7 @@
       }
     },
     {
-      "id": "949",
+      "id": "951",
       "iri": "http://disruption.org/ontology/disruptive-technologies#MixedRealityMr",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14592,7 +14622,7 @@
       }
     },
     {
-      "id": "950",
+      "id": "952",
       "iri": "http://disruption.org/ontology/disruptive-technologies#MotionCaptureRig",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14603,7 +14633,7 @@
       }
     },
     {
-      "id": "951",
+      "id": "953",
       "iri": "http://disruption.org/ontology/disruptive-technologies#NftWrapping",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14614,7 +14644,7 @@
       }
     },
     {
-      "id": "952",
+      "id": "954",
       "iri": "http://disruption.org/ontology/disruptive-technologies#PhysicsEngine",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14625,7 +14655,7 @@
       }
     },
     {
-      "id": "953",
+      "id": "955",
       "iri": "http://disruption.org/ontology/disruptive-technologies#SpatialComputing",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14636,7 +14666,7 @@
       }
     },
     {
-      "id": "954",
+      "id": "956",
       "iri": "http://disruption.org/ontology/disruptive-technologies#SyntheticDataGenerator",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14647,7 +14677,7 @@
       }
     },
     {
-      "id": "955",
+      "id": "957",
       "iri": "http://disruption.org/ontology/artificial-intelligence#AiGovernance",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -14658,7 +14688,7 @@
       }
     },
     {
-      "id": "956",
+      "id": "958",
       "iri": "http://disruption.org/ontology/artificial-intelligence#ConvolutionalNeuralNetwork",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -14669,7 +14699,7 @@
       }
     },
     {
-      "id": "957",
+      "id": "959",
       "iri": "http://disruption.org/ontology/artificial-intelligence#ModelPerformance",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -14680,7 +14710,7 @@
       }
     },
     {
-      "id": "958",
+      "id": "960",
       "iri": "http://disruption.org/ontology/disruptive-technologies#AlgorithmicTransparencyIndex",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14691,7 +14721,7 @@
       }
     },
     {
-      "id": "959",
+      "id": "961",
       "iri": "http://disruption.org/ontology/disruptive-technologies#ConsentManagement",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14702,7 +14732,7 @@
       }
     },
     {
-      "id": "960",
+      "id": "962",
       "iri": "http://disruption.org/ontology/disruptive-technologies#IndustrialMetaverse",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14713,7 +14743,7 @@
       }
     },
     {
-      "id": "961",
+      "id": "963",
       "iri": "http://disruption.org/ontology/disruptive-technologies#ProceduralContentGeneration",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14724,7 +14754,7 @@
       }
     },
     {
-      "id": "962",
+      "id": "964",
       "iri": "http://disruption.org/ontology/disruptive-technologies#RegulatoryCompliance",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14735,7 +14765,7 @@
       }
     },
     {
-      "id": "963",
+      "id": "965",
       "iri": "http://disruption.org/ontology/artificial-intelligence#ConfusionMatrix",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -14746,7 +14776,7 @@
       }
     },
     {
-      "id": "964",
+      "id": "966",
       "iri": "http://disruption.org/ontology/artificial-intelligence#NaturalLanguageProcessing",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -14757,7 +14787,7 @@
       }
     },
     {
-      "id": "965",
+      "id": "967",
       "iri": "http://disruption.org/ontology/artificial-intelligence#Neural3dGeneration",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -14768,7 +14798,7 @@
       }
     },
     {
-      "id": "966",
+      "id": "968",
       "iri": "http://disruption.org/ontology/disruptive-technologies#AiModelCard",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14779,7 +14809,7 @@
       }
     },
     {
-      "id": "967",
+      "id": "969",
       "iri": "http://disruption.org/ontology/disruptive-technologies#AuditTrail",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14790,7 +14820,7 @@
       }
     },
     {
-      "id": "968",
+      "id": "970",
       "iri": "http://disruption.org/ontology/disruptive-technologies#AugmentedRealityAr",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14801,7 +14831,7 @@
       }
     },
     {
-      "id": "969",
+      "id": "971",
       "iri": "http://disruption.org/ontology/disruptive-technologies#CarbonCreditToken",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14812,7 +14842,7 @@
       }
     },
     {
-      "id": "970",
+      "id": "972",
       "iri": "http://disruption.org/ontology/disruptive-technologies#ComputeLayer",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14823,7 +14853,7 @@
       }
     },
     {
-      "id": "971",
+      "id": "973",
       "iri": "http://disruption.org/ontology/disruptive-technologies#Cryptocurrency",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14834,7 +14864,7 @@
       }
     },
     {
-      "id": "972",
+      "id": "974",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EducationMetaverse",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14845,7 +14875,7 @@
       }
     },
     {
-      "id": "973",
+      "id": "975",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EmotionalAnalyticsEngine",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14856,7 +14886,7 @@
       }
     },
     {
-      "id": "974",
+      "id": "976",
       "iri": "http://disruption.org/ontology/disruptive-technologies#LiquidityPool",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14867,7 +14897,7 @@
       }
     },
     {
-      "id": "975",
+      "id": "977",
       "iri": "http://disruption.org/ontology/disruptive-technologies#Multiverse",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14878,7 +14908,7 @@
       }
     },
     {
-      "id": "976",
+      "id": "978",
       "iri": "http://disruption.org/ontology/artificial-intelligence#Bias",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -14889,7 +14919,7 @@
       }
     },
     {
-      "id": "977",
+      "id": "979",
       "iri": "http://disruption.org/ontology/disruptive-technologies#CommunityGovernanceModel",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14900,7 +14930,7 @@
       }
     },
     {
-      "id": "978",
+      "id": "980",
       "iri": "http://disruption.org/ontology/disruptive-technologies#CryptoToken",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14911,7 +14941,7 @@
       }
     },
     {
-      "id": "979",
+      "id": "981",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalRealEstate",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14922,7 +14952,7 @@
       }
     },
     {
-      "id": "980",
+      "id": "982",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalTwin",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14933,7 +14963,7 @@
       }
     },
     {
-      "id": "981",
+      "id": "983",
       "iri": "http://disruption.org/ontology/disruptive-technologies#IntelligentVirtualEntity",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14944,7 +14974,7 @@
       }
     },
     {
-      "id": "982",
+      "id": "984",
       "iri": "http://disruption.org/ontology/disruptive-technologies#Metaverse",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14955,7 +14985,7 @@
       }
     },
     {
-      "id": "983",
+      "id": "985",
       "iri": "http://disruption.org/ontology/artificial-intelligence#AiImpactAssessment",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -14966,7 +14996,7 @@
       }
     },
     {
-      "id": "984",
+      "id": "986",
       "iri": "http://disruption.org/ontology/artificial-intelligence#ResponsibleAi",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -14977,7 +15007,7 @@
       }
     },
     {
-      "id": "985",
+      "id": "987",
       "iri": "http://disruption.org/ontology/artificial-intelligence#AiGameAgent",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -14988,7 +15018,7 @@
       }
     },
     {
-      "id": "986",
+      "id": "988",
       "iri": "http://disruption.org/ontology/disruptive-technologies#ExtendedRealityXr",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -14999,7 +15029,7 @@
       }
     },
     {
-      "id": "987",
+      "id": "989",
       "iri": "http://disruption.org/ontology/artificial-intelligence#Accountability",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -15010,7 +15040,7 @@
       }
     },
     {
-      "id": "988",
+      "id": "990",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DigitalAsset",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -15021,7 +15051,7 @@
       }
     },
     {
-      "id": "989",
+      "id": "991",
       "iri": "http://disruption.org/ontology/disruptive-technologies#GameEngine",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -15032,7 +15062,7 @@
       }
     },
     {
-      "id": "990",
+      "id": "992",
       "iri": "http://disruption.org/ontology/artificial-intelligence#AiAgentSystem",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -15043,7 +15073,7 @@
       }
     },
     {
-      "id": "991",
+      "id": "993",
       "iri": "http://disruption.org/ontology/disruptive-technologies#EtsiDomainAi",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -15054,7 +15084,7 @@
       }
     },
     {
-      "id": "992",
+      "id": "994",
       "iri": "http://disruption.org/ontology/disruptive-technologies#CreatorEconomy",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -15065,7 +15095,7 @@
       }
     },
     {
-      "id": "993",
+      "id": "995",
       "iri": "http://disruption.org/ontology/disruptive-technologies#DistributedLedgerTechnologyDlt",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -15076,7 +15106,7 @@
       }
     },
     {
-      "id": "994",
+      "id": "996",
       "iri": "http://disruption.org/ontology/blockchain#DigitalSignature",
       "baseIri": "http://disruption.org/ontology/blockchain",
       "label": {
@@ -15087,7 +15117,7 @@
       }
     },
     {
-      "id": "995",
+      "id": "997",
       "iri": "http://disruption.org/ontology/disruptive-technologies#SmartContract",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -15098,7 +15128,7 @@
       }
     },
     {
-      "id": "996",
+      "id": "998",
       "iri": "http://disruption.org/ontology/disruptive-technologies#Blockchain",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "label": {
@@ -15109,7 +15139,7 @@
       }
     },
     {
-      "id": "997",
+      "id": "999",
       "iri": "http://disruption.org/ontology/blockchain#BlockchainNetwork",
       "baseIri": "http://disruption.org/ontology/blockchain",
       "label": {
@@ -15120,7 +15150,7 @@
       }
     },
     {
-      "id": "998",
+      "id": "1000",
       "iri": "http://disruption.org/ontology/blockchain#IdentityVerification",
       "baseIri": "http://disruption.org/ontology/blockchain",
       "label": {
@@ -15131,7 +15161,7 @@
       }
     },
     {
-      "id": "999",
+      "id": "1001",
       "iri": "http://disruption.org/ontology/artificial-intelligence#ComputerVision",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "label": {
@@ -15142,7 +15172,7 @@
       }
     },
     {
-      "id": "1000",
+      "id": "1002",
       "iri": "http://disruption.org/ontology/blockchain#SmartContract",
       "baseIri": "http://disruption.org/ontology/blockchain",
       "label": {
@@ -15155,14 +15185,6 @@
   ],
   "property": [
     {
-      "id": "1001",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1002",
-      "type": "owl:objectProperty"
-    },
-    {
       "id": "1003",
       "type": "owl:objectProperty"
     },
@@ -15424,15 +15446,15 @@
     },
     {
       "id": "1068",
-      "type": "owl:datatypeProperty"
+      "type": "owl:objectProperty"
     },
     {
       "id": "1069",
-      "type": "owl:datatypeProperty"
+      "type": "owl:objectProperty"
     },
     {
       "id": "1070",
-      "type": "owl:datatypeProperty"
+      "type": "owl:objectProperty"
     },
     {
       "id": "1071",
@@ -15596,19 +15618,19 @@
     },
     {
       "id": "1111",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:datatypeProperty"
     },
     {
       "id": "1112",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:datatypeProperty"
     },
     {
       "id": "1113",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:datatypeProperty"
     },
     {
       "id": "1114",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:datatypeProperty"
     },
     {
       "id": "1115",
@@ -15717,11 +15739,31 @@
     {
       "id": "1141",
       "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "1142",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "1143",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "1144",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "1145",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "1146",
+      "type": "rdfs:SubClassOf"
     }
   ],
   "propertyAttribute": [
     {
-      "id": "1001",
+      "id": "1003",
       "iri": "http://disruption.org/ontology/artificial-intelligence#evaluatedByFairnessMetric",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "attributes": [
@@ -15731,17 +15773,17 @@
       "range": "1"
     },
     {
-      "id": "1002",
+      "id": "1004",
       "iri": "http://disruption.org/ontology/artificial-intelligence#exhibitsBias",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "attributes": [
         "object"
       ],
       "domain": "1",
-      "range": "976"
+      "range": "978"
     },
     {
-      "id": "1003",
+      "id": "1005",
       "iri": "http://disruption.org/ontology/artificial-intelligence#hasApplicationDomain",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "attributes": [
@@ -15751,7 +15793,7 @@
       "range": "1"
     },
     {
-      "id": "1004",
+      "id": "1006",
       "iri": "http://disruption.org/ontology/artificial-intelligence#preventsDiscriminationAgainst",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "attributes": [
@@ -15761,27 +15803,27 @@
       "range": "1"
     },
     {
-      "id": "1005",
+      "id": "1007",
       "iri": "http://disruption.org/ontology/artificial-intelligence#traversesTerrain",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "attributes": [
         "object"
       ],
-      "domain": "900",
+      "domain": "901",
       "range": "1"
     },
     {
-      "id": "1006",
+      "id": "1008",
       "iri": "http://disruption.org/ontology/disruptive-technologies#causedBy",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
         "object"
       ],
-      "domain": "976",
+      "domain": "978",
       "range": "1"
     },
     {
-      "id": "1007",
+      "id": "1009",
       "iri": "http://disruption.org/ontology/disruptive-technologies#disclosesInformationTo",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -15791,7 +15833,7 @@
       "range": "588"
     },
     {
-      "id": "1008",
+      "id": "1010",
       "iri": "http://disruption.org/ontology/disruptive-technologies#enablesVerificationBy",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -15801,7 +15843,7 @@
       "range": "1"
     },
     {
-      "id": "1009",
+      "id": "1011",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasDimension",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -15811,7 +15853,7 @@
       "range": "1"
     },
     {
-      "id": "1010",
+      "id": "1012",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasDocumentation",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -15821,17 +15863,17 @@
       "range": "1"
     },
     {
-      "id": "1011",
+      "id": "1013",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasJoint",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
         "object"
       ],
-      "domain": "899",
+      "domain": "900",
       "range": "1"
     },
     {
-      "id": "1012",
+      "id": "1014",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasMatrixCell",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -15841,7 +15883,7 @@
       "range": "1"
     },
     {
-      "id": "1013",
+      "id": "1015",
       "iri": "http://disruption.org/ontology/disruptive-technologies#involvesTradeOff",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -15851,7 +15893,7 @@
       "range": "1"
     },
     {
-      "id": "1014",
+      "id": "1016",
       "iri": "http://disruption.org/ontology/disruptive-technologies#measuredBy",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -15861,17 +15903,17 @@
       "range": "1"
     },
     {
-      "id": "1015",
+      "id": "1017",
       "iri": "http://disruption.org/ontology/disruptive-technologies#mitigatedBy",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
         "object"
       ],
-      "domain": "976",
+      "domain": "978",
       "range": "1"
     },
     {
-      "id": "1016",
+      "id": "1018",
       "iri": "http://disruption.org/ontology/disruptive-technologies#plotsMetric",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -15881,7 +15923,7 @@
       "range": "1"
     },
     {
-      "id": "1017",
+      "id": "1019",
       "iri": "http://disruption.org/ontology/disruptive-technologies#protectsAttribute",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -15891,7 +15933,7 @@
       "range": "1"
     },
     {
-      "id": "1018",
+      "id": "1020",
       "iri": "http://disruption.org/ontology/metaverse#hasBodyPart",
       "baseIri": "http://disruption.org/ontology/metaverse",
       "attributes": [
@@ -15901,7 +15943,7 @@
       "range": "1"
     },
     {
-      "id": "1019",
+      "id": "1021",
       "iri": "http://disruption.org/ontology/metaverse#providesTransparencyFor",
       "baseIri": "http://disruption.org/ontology/metaverse",
       "attributes": [
@@ -15911,7 +15953,7 @@
       "range": "1"
     },
     {
-      "id": "1020",
+      "id": "1022",
       "iri": "http://disruption.org/ontology/robotics#harmonises",
       "baseIri": "http://disruption.org/ontology/robotics",
       "attributes": [
@@ -15921,7 +15963,7 @@
       "range": "1"
     },
     {
-      "id": "1021",
+      "id": "1023",
       "iri": "http://disruption.org/ontology/disruptive-technologies#equivalentTo",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -15931,7 +15973,7 @@
       "range": "1"
     },
     {
-      "id": "1022",
+      "id": "1024",
       "iri": "http://disruption.org/ontology/disruptive-technologies#greaterThanOrEqualTo",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -15941,17 +15983,17 @@
       "range": "1"
     },
     {
-      "id": "1023",
+      "id": "1025",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasControlSystem",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
         "object"
       ],
-      "domain": "922",
+      "domain": "923",
       "range": "1"
     },
     {
-      "id": "1024",
+      "id": "1026",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasKeyPoint",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -15961,17 +16003,17 @@
       "range": "1"
     },
     {
-      "id": "1025",
+      "id": "1027",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasSensingCapability",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
         "object"
       ],
-      "domain": "922",
+      "domain": "923",
       "range": "1"
     },
     {
-      "id": "1026",
+      "id": "1028",
       "iri": "http://disruption.org/ontology/disruptive-technologies#requiresContinuous",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -15981,7 +16023,17 @@
       "range": "1"
     },
     {
-      "id": "1027",
+      "id": "1029",
+      "iri": "http://disruption.org/ontology/disruptive-technologies#requiresInput",
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ],
+      "domain": "677",
+      "range": "1"
+    },
+    {
+      "id": "1030",
       "iri": "http://disruption.org/ontology/disruptive-technologies#subjectToRegulation",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -15991,7 +16043,7 @@
       "range": "1"
     },
     {
-      "id": "1028",
+      "id": "1031",
       "iri": "http://disruption.org/ontology/metaverse#areaUnderCurve",
       "baseIri": "http://disruption.org/ontology/metaverse",
       "attributes": [
@@ -16001,7 +16053,7 @@
       "range": "1"
     },
     {
-      "id": "1029",
+      "id": "1032",
       "iri": "http://disruption.org/ontology/metaverse#hasAreaUnderCurve",
       "baseIri": "http://disruption.org/ontology/metaverse",
       "attributes": [
@@ -16011,17 +16063,17 @@
       "range": "1"
     },
     {
-      "id": "1030",
+      "id": "1033",
       "iri": "http://disruption.org/ontology/artificial-intelligence#hasKinematicChain",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "attributes": [
         "object"
       ],
-      "domain": "899",
+      "domain": "900",
       "range": "1"
     },
     {
-      "id": "1031",
+      "id": "1034",
       "iri": "http://disruption.org/ontology/artificial-intelligence#pairedWith",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "attributes": [
@@ -16031,17 +16083,17 @@
       "range": "1"
     },
     {
-      "id": "1032",
+      "id": "1035",
       "iri": "http://disruption.org/ontology/blockchain#definesWorkspace",
       "baseIri": "http://disruption.org/ontology/blockchain",
       "attributes": [
         "object"
       ],
-      "domain": "899",
+      "domain": "900",
       "range": "1"
     },
     {
-      "id": "1033",
+      "id": "1036",
       "iri": "http://disruption.org/ontology/disruptive-technologies#affectedBy",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16051,7 +16103,7 @@
       "range": "1"
     },
     {
-      "id": "1034",
+      "id": "1037",
       "iri": "http://disruption.org/ontology/disruptive-technologies#complementOf",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16061,37 +16113,37 @@
       "range": "1"
     },
     {
-      "id": "1035",
+      "id": "1038",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasEndEffector",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
         "object"
       ],
-      "domain": "899",
+      "domain": "900",
       "range": "1"
     },
     {
-      "id": "1036",
+      "id": "1039",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasLocomotionSystem",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
         "object"
       ],
-      "domain": "900",
+      "domain": "901",
       "range": "1"
     },
     {
-      "id": "1037",
+      "id": "1040",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasNavigationCapability",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
         "object"
       ],
-      "domain": "900",
+      "domain": "901",
       "range": "1"
     },
     {
-      "id": "1038",
+      "id": "1041",
       "iri": "http://disruption.org/ontology/disruptive-technologies#lessSensitiveToOutliersThan",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16101,17 +16153,17 @@
       "range": "1"
     },
     {
-      "id": "1039",
+      "id": "1042",
       "iri": "http://disruption.org/ontology/disruptive-technologies#performsTask",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
         "object"
       ],
-      "domain": "922",
+      "domain": "923",
       "range": "1"
     },
     {
-      "id": "1040",
+      "id": "1043",
       "iri": "http://disruption.org/ontology/disruptive-technologies#shouldInclude",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16121,7 +16173,7 @@
       "range": "1"
     },
     {
-      "id": "1041",
+      "id": "1044",
       "iri": "http://disruption.org/ontology/metaverse#squareRootOf",
       "baseIri": "http://disruption.org/ontology/metaverse",
       "attributes": [
@@ -16131,7 +16183,7 @@
       "range": "1"
     },
     {
-      "id": "1042",
+      "id": "1045",
       "iri": "http://disruption.org/ontology/disruptive-technologies#criticalFor",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16141,7 +16193,7 @@
       "range": "1"
     },
     {
-      "id": "1043",
+      "id": "1046",
       "iri": "http://disruption.org/ontology/disruptive-technologies#influenced-by",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16154,17 +16206,7 @@
       }
     },
     {
-      "id": "1044",
-      "iri": "http://disruption.org/ontology/disruptive-technologies#supports",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
-      "attributes": [
-        "object"
-      ],
-      "domain": "1",
-      "range": "1"
-    },
-    {
-      "id": "1045",
+      "id": "1047",
       "iri": "http://disruption.org/ontology/disruptive-technologies#bridges-to",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16177,7 +16219,7 @@
       }
     },
     {
-      "id": "1046",
+      "id": "1048",
       "iri": "http://disruption.org/ontology/disruptive-technologies#dependsOn",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16187,7 +16229,7 @@
       "range": "1"
     },
     {
-      "id": "1047",
+      "id": "1049",
       "iri": "http://disruption.org/ontology/disruptive-technologies#optimisedBy",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16197,7 +16239,17 @@
       "range": "1"
     },
     {
-      "id": "1048",
+      "id": "1050",
+      "iri": "http://disruption.org/ontology/disruptive-technologies#supports",
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ],
+      "domain": "1",
+      "range": "1"
+    },
+    {
+      "id": "1051",
       "iri": "http://disruption.org/ontology/disruptive-technologies#appropriateFor",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16207,17 +16259,17 @@
       "range": "1"
     },
     {
-      "id": "1049",
+      "id": "1052",
       "iri": "http://disruption.org/ontology/disruptive-technologies#leadsTo",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
         "object"
       ],
-      "domain": "976",
+      "domain": "978",
       "range": "1"
     },
     {
-      "id": "1050",
+      "id": "1053",
       "iri": "http://disruption.org/ontology/metaverse#hasCharacteristic",
       "baseIri": "http://disruption.org/ontology/metaverse",
       "attributes": [
@@ -16227,30 +16279,7 @@
       "range": "1"
     },
     {
-      "id": "1051",
-      "iri": "http://disruption.org/ontology/disruptive-technologies#implemented-by",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
-      "attributes": [
-        "object"
-      ],
-      "domain": "1",
-      "range": "1",
-      "label": {
-        "en": "implemented by"
-      }
-    },
-    {
-      "id": "1052",
-      "iri": "http://disruption.org/ontology/disruptive-technologies#hasCapability",
-      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
-      "attributes": [
-        "object"
-      ],
-      "domain": "723",
-      "range": "1"
-    },
-    {
-      "id": "1053",
+      "id": "1054",
       "iri": "http://disruption.org/ontology/disruptive-technologies#related-to",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16263,17 +16292,40 @@
       }
     },
     {
-      "id": "1054",
+      "id": "1055",
+      "iri": "http://disruption.org/ontology/disruptive-technologies#implemented-by",
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ],
+      "domain": "1",
+      "range": "1",
+      "label": {
+        "en": "implemented by"
+      }
+    },
+    {
+      "id": "1056",
+      "iri": "http://disruption.org/ontology/disruptive-technologies#hasCapability",
+      "baseIri": "http://disruption.org/ontology/disruptive-technologies",
+      "attributes": [
+        "object"
+      ],
+      "domain": "783",
+      "range": "1"
+    },
+    {
+      "id": "1057",
       "iri": "http://disruption.org/ontology/disruptive-technologies#produces",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
         "object"
       ],
-      "domain": "723",
+      "domain": "783",
       "range": "1"
     },
     {
-      "id": "1055",
+      "id": "1058",
       "iri": "http://disruption.org/ontology/disruptive-technologies#binds-to",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16286,7 +16338,7 @@
       }
     },
     {
-      "id": "1056",
+      "id": "1059",
       "iri": "http://disruption.org/ontology/disruptive-technologies#implements",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16299,7 +16351,7 @@
       }
     },
     {
-      "id": "1057",
+      "id": "1060",
       "iri": "http://disruption.org/ontology/disruptive-technologies#categorizes",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16312,7 +16364,7 @@
       }
     },
     {
-      "id": "1058",
+      "id": "1061",
       "iri": "http://disruption.org/ontology/disruptive-technologies#is-enabled-by",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16325,7 +16377,7 @@
       }
     },
     {
-      "id": "1059",
+      "id": "1062",
       "iri": "http://disruption.org/ontology/disruptive-technologies#is-dependency-of",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16338,7 +16390,7 @@
       }
     },
     {
-      "id": "1060",
+      "id": "1063",
       "iri": "http://disruption.org/ontology/disruptive-technologies#is-required-by",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16351,7 +16403,7 @@
       }
     },
     {
-      "id": "1061",
+      "id": "1064",
       "iri": "http://disruption.org/ontology/disruptive-technologies#is-subclass-of",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16364,7 +16416,7 @@
       }
     },
     {
-      "id": "1062",
+      "id": "1065",
       "iri": "http://disruption.org/ontology/disruptive-technologies#relatedTo",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16374,7 +16426,7 @@
       "range": "1"
     },
     {
-      "id": "1063",
+      "id": "1066",
       "iri": "http://disruption.org/ontology/disruptive-technologies#is-part-of",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16387,7 +16439,7 @@
       }
     },
     {
-      "id": "1064",
+      "id": "1067",
       "iri": "http://disruption.org/ontology/disruptive-technologies#depends-on",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16400,7 +16452,7 @@
       }
     },
     {
-      "id": "1065",
+      "id": "1068",
       "iri": "http://disruption.org/ontology/disruptive-technologies#requires",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16413,7 +16465,7 @@
       }
     },
     {
-      "id": "1066",
+      "id": "1069",
       "iri": "http://disruption.org/ontology/disruptive-technologies#enables",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16426,7 +16478,7 @@
       }
     },
     {
-      "id": "1067",
+      "id": "1070",
       "iri": "http://disruption.org/ontology/disruptive-technologies#has-part",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16439,7 +16491,7 @@
       }
     },
     {
-      "id": "1068",
+      "id": "1071",
       "iri": "http://disruption.org/ontology/artificial-intelligence#biasScore",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "attributes": [
@@ -16448,7 +16500,7 @@
       "domain": "1"
     },
     {
-      "id": "1069",
+      "id": "1072",
       "iri": "http://disruption.org/ontology/artificial-intelligence#fairnessScore",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "attributes": [
@@ -16457,7 +16509,7 @@
       "domain": "1"
     },
     {
-      "id": "1070",
+      "id": "1073",
       "iri": "http://disruption.org/ontology/artificial-intelligence#hasBiasMitigation",
       "baseIri": "http://disruption.org/ontology/artificial-intelligence",
       "attributes": [
@@ -16466,7 +16518,7 @@
       "domain": "1"
     },
     {
-      "id": "1071",
+      "id": "1074",
       "iri": "http://disruption.org/ontology/disruptive-technologies#autonomyLevel",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16475,7 +16527,7 @@
       "domain": "1"
     },
     {
-      "id": "1072",
+      "id": "1075",
       "iri": "http://disruption.org/ontology/disruptive-technologies#curveInterpretation",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16484,7 +16536,7 @@
       "domain": "1"
     },
     {
-      "id": "1073",
+      "id": "1076",
       "iri": "http://disruption.org/ontology/disruptive-technologies#cycleTime",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16493,7 +16545,7 @@
       "domain": "1"
     },
     {
-      "id": "1074",
+      "id": "1077",
       "iri": "http://disruption.org/ontology/disruptive-technologies#documentationCompleteness",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16502,7 +16554,7 @@
       "domain": "1"
     },
     {
-      "id": "1075",
+      "id": "1078",
       "iri": "http://disruption.org/ontology/disruptive-technologies#equalizedOddsDifference",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16511,7 +16563,7 @@
       "domain": "1"
     },
     {
-      "id": "1076",
+      "id": "1079",
       "iri": "http://disruption.org/ontology/disruptive-technologies#falseNegativeCount",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16520,7 +16572,7 @@
       "domain": "1"
     },
     {
-      "id": "1077",
+      "id": "1080",
       "iri": "http://disruption.org/ontology/disruptive-technologies#falsePositiveCount",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16529,7 +16581,7 @@
       "domain": "1"
     },
     {
-      "id": "1078",
+      "id": "1081",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasAUCValue",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16538,7 +16590,7 @@
       "domain": "1"
     },
     {
-      "id": "1079",
+      "id": "1082",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasAccuracyValue",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16547,7 +16599,7 @@
       "domain": "1"
     },
     {
-      "id": "1080",
+      "id": "1083",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasF1Value",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16556,7 +16608,7 @@
       "domain": "1"
     },
     {
-      "id": "1081",
+      "id": "1084",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasFalseNegatives",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16565,7 +16617,7 @@
       "domain": "1"
     },
     {
-      "id": "1082",
+      "id": "1085",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasFalsePositives",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16574,7 +16626,7 @@
       "domain": "1"
     },
     {
-      "id": "1083",
+      "id": "1086",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasLegalBasis",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16583,7 +16635,7 @@
       "domain": "1"
     },
     {
-      "id": "1084",
+      "id": "1087",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasMAEValue",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16592,7 +16644,7 @@
       "domain": "1"
     },
     {
-      "id": "1085",
+      "id": "1088",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasPerformanceLevel",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16601,7 +16653,7 @@
       "domain": "1"
     },
     {
-      "id": "1086",
+      "id": "1089",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasPrecisionValue",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16610,7 +16662,7 @@
       "domain": "1"
     },
     {
-      "id": "1087",
+      "id": "1090",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasRMSEValue",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16619,7 +16671,7 @@
       "domain": "1"
     },
     {
-      "id": "1088",
+      "id": "1091",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasReach",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16628,7 +16680,7 @@
       "domain": "1"
     },
     {
-      "id": "1089",
+      "id": "1092",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasRecallValue",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16637,7 +16689,7 @@
       "domain": "1"
     },
     {
-      "id": "1090",
+      "id": "1093",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasRegulatoryScope",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16646,7 +16698,7 @@
       "domain": "1"
     },
     {
-      "id": "1091",
+      "id": "1094",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasTrueNegatives",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16655,7 +16707,7 @@
       "domain": "1"
     },
     {
-      "id": "1092",
+      "id": "1095",
       "iri": "http://disruption.org/ontology/disruptive-technologies#hasTruePositives",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16664,7 +16716,7 @@
       "domain": "1"
     },
     {
-      "id": "1093",
+      "id": "1096",
       "iri": "http://disruption.org/ontology/disruptive-technologies#heightMeters",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16673,7 +16725,7 @@
       "domain": "1"
     },
     {
-      "id": "1094",
+      "id": "1097",
       "iri": "http://disruption.org/ontology/disruptive-technologies#maximumSpeed",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16682,7 +16734,7 @@
       "domain": "1"
     },
     {
-      "id": "1095",
+      "id": "1098",
       "iri": "http://disruption.org/ontology/disruptive-technologies#measurementUnits",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16691,7 +16743,7 @@
       "domain": "1"
     },
     {
-      "id": "1096",
+      "id": "1099",
       "iri": "http://disruption.org/ontology/disruptive-technologies#minimumAxes",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16700,7 +16752,7 @@
       "domain": "1"
     },
     {
-      "id": "1097",
+      "id": "1100",
       "iri": "http://disruption.org/ontology/disruptive-technologies#mobilityEnvelope",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16709,7 +16761,7 @@
       "domain": "1"
     },
     {
-      "id": "1098",
+      "id": "1101",
       "iri": "http://disruption.org/ontology/disruptive-technologies#mtbf",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16718,7 +16770,7 @@
       "domain": "1"
     },
     {
-      "id": "1099",
+      "id": "1102",
       "iri": "http://disruption.org/ontology/disruptive-technologies#numberOfClasses",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16727,7 +16779,7 @@
       "domain": "1"
     },
     {
-      "id": "1100",
+      "id": "1103",
       "iri": "http://disruption.org/ontology/disruptive-technologies#payloadCapacity",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16736,7 +16788,7 @@
       "domain": "1"
     },
     {
-      "id": "1101",
+      "id": "1104",
       "iri": "http://disruption.org/ontology/disruptive-technologies#regulatoryImportance",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16745,7 +16797,7 @@
       "domain": "1"
     },
     {
-      "id": "1102",
+      "id": "1105",
       "iri": "http://disruption.org/ontology/disruptive-technologies#repeatability",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16754,7 +16806,7 @@
       "domain": "1"
     },
     {
-      "id": "1103",
+      "id": "1106",
       "iri": "http://disruption.org/ontology/disruptive-technologies#trueNegativeCount",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16763,7 +16815,7 @@
       "domain": "1"
     },
     {
-      "id": "1104",
+      "id": "1107",
       "iri": "http://disruption.org/ontology/disruptive-technologies#truePositiveCount",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16772,7 +16824,7 @@
       "domain": "1"
     },
     {
-      "id": "1105",
+      "id": "1108",
       "iri": "http://disruption.org/ontology/disruptive-technologies#xAxisMetric",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16781,7 +16833,7 @@
       "domain": "1"
     },
     {
-      "id": "1106",
+      "id": "1109",
       "iri": "http://disruption.org/ontology/disruptive-technologies#yAxisMetric",
       "baseIri": "http://disruption.org/ontology/disruptive-technologies",
       "attributes": [
@@ -16790,7 +16842,7 @@
       "domain": "1"
     },
     {
-      "id": "1107",
+      "id": "1110",
       "iri": "http://disruption.org/ontology/metaverse#demographicParityDifference",
       "baseIri": "http://disruption.org/ontology/metaverse",
       "attributes": [
@@ -16799,7 +16851,7 @@
       "domain": "1"
     },
     {
-      "id": "1108",
+      "id": "1111",
       "iri": "http://disruption.org/ontology/metaverse#disparateImpact",
       "baseIri": "http://disruption.org/ontology/metaverse",
       "attributes": [
@@ -16808,7 +16860,7 @@
       "domain": "1"
     },
     {
-      "id": "1109",
+      "id": "1112",
       "iri": "http://disruption.org/ontology/metaverse#hasBetaParameter",
       "baseIri": "http://disruption.org/ontology/metaverse",
       "attributes": [
@@ -16817,7 +16869,16 @@
       "domain": "1"
     },
     {
-      "id": "1110",
+      "id": "1113",
+      "iri": "http://disruption.org/ontology/metaverse#learningApproach",
+      "baseIri": "http://disruption.org/ontology/metaverse",
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "1"
+    },
+    {
+      "id": "1114",
       "iri": "http://disruption.org/ontology/metaverse#transparencyScore",
       "baseIri": "http://disruption.org/ontology/metaverse",
       "attributes": [
@@ -16826,45 +16887,9 @@
       "domain": "1"
     },
     {
-      "id": "1111",
-      "domain": "14",
-      "range": "976",
-      "attributes": [
-        "anonymous",
-        "object"
-      ]
-    },
-    {
-      "id": "1112",
-      "domain": "134",
-      "range": "999",
-      "attributes": [
-        "anonymous",
-        "object"
-      ]
-    },
-    {
-      "id": "1113",
-      "domain": "577",
-      "range": "999",
-      "attributes": [
-        "anonymous",
-        "object"
-      ]
-    },
-    {
-      "id": "1114",
-      "domain": "579",
-      "range": "999",
-      "attributes": [
-        "anonymous",
-        "object"
-      ]
-    },
-    {
       "id": "1115",
-      "domain": "640",
-      "range": "999",
+      "domain": "14",
+      "range": "978",
       "attributes": [
         "anonymous",
         "object"
@@ -16872,8 +16897,8 @@
     },
     {
       "id": "1116",
-      "domain": "674",
-      "range": "999",
+      "domain": "134",
+      "range": "1001",
       "attributes": [
         "anonymous",
         "object"
@@ -16881,8 +16906,8 @@
     },
     {
       "id": "1117",
-      "domain": "790",
-      "range": "999",
+      "domain": "577",
+      "range": "1001",
       "attributes": [
         "anonymous",
         "object"
@@ -16890,8 +16915,8 @@
     },
     {
       "id": "1118",
-      "domain": "148",
-      "range": "964",
+      "domain": "579",
+      "range": "1001",
       "attributes": [
         "anonymous",
         "object"
@@ -16899,8 +16924,8 @@
     },
     {
       "id": "1119",
-      "domain": "584",
-      "range": "964",
+      "domain": "640",
+      "range": "1001",
       "attributes": [
         "anonymous",
         "object"
@@ -16908,8 +16933,8 @@
     },
     {
       "id": "1120",
-      "domain": "590",
-      "range": "964",
+      "domain": "674",
+      "range": "1001",
       "attributes": [
         "anonymous",
         "object"
@@ -16917,8 +16942,8 @@
     },
     {
       "id": "1121",
-      "domain": "685",
-      "range": "964",
+      "domain": "791",
+      "range": "1001",
       "attributes": [
         "anonymous",
         "object"
@@ -16926,8 +16951,8 @@
     },
     {
       "id": "1122",
-      "domain": "925",
-      "range": "788",
+      "domain": "148",
+      "range": "966",
       "attributes": [
         "anonymous",
         "object"
@@ -16935,8 +16960,8 @@
     },
     {
       "id": "1123",
-      "domain": "616",
-      "range": "905",
+      "domain": "584",
+      "range": "966",
       "attributes": [
         "anonymous",
         "object"
@@ -16944,8 +16969,8 @@
     },
     {
       "id": "1124",
-      "domain": "628",
-      "range": "900",
+      "domain": "590",
+      "range": "966",
       "attributes": [
         "anonymous",
         "object"
@@ -16953,8 +16978,8 @@
     },
     {
       "id": "1125",
-      "domain": "628",
-      "range": "922",
+      "domain": "686",
+      "range": "966",
       "attributes": [
         "anonymous",
         "object"
@@ -16962,8 +16987,8 @@
     },
     {
       "id": "1126",
-      "domain": "899",
-      "range": "922",
+      "domain": "926",
+      "range": "789",
       "attributes": [
         "anonymous",
         "object"
@@ -16971,8 +16996,8 @@
     },
     {
       "id": "1127",
-      "domain": "900",
-      "range": "922",
+      "domain": "616",
+      "range": "906",
       "attributes": [
         "anonymous",
         "object"
@@ -16980,8 +17005,8 @@
     },
     {
       "id": "1128",
-      "domain": "629",
-      "range": "899",
+      "domain": "628",
+      "range": "901",
       "attributes": [
         "anonymous",
         "object"
@@ -16989,8 +17014,8 @@
     },
     {
       "id": "1129",
-      "domain": "633",
-      "range": "902",
+      "domain": "628",
+      "range": "923",
       "attributes": [
         "anonymous",
         "object"
@@ -16998,8 +17023,8 @@
     },
     {
       "id": "1130",
-      "domain": "686",
-      "range": "902",
+      "domain": "900",
+      "range": "923",
       "attributes": [
         "anonymous",
         "object"
@@ -17007,8 +17032,8 @@
     },
     {
       "id": "1131",
-      "domain": "733",
-      "range": "902",
+      "domain": "901",
+      "range": "923",
       "attributes": [
         "anonymous",
         "object"
@@ -17016,8 +17041,8 @@
     },
     {
       "id": "1132",
-      "domain": "682",
-      "range": "678",
+      "domain": "629",
+      "range": "900",
       "attributes": [
         "anonymous",
         "object"
@@ -17025,8 +17050,8 @@
     },
     {
       "id": "1133",
-      "domain": "683",
-      "range": "678",
+      "domain": "633",
+      "range": "903",
       "attributes": [
         "anonymous",
         "object"
@@ -17034,8 +17059,8 @@
     },
     {
       "id": "1134",
-      "domain": "726",
-      "range": "784",
+      "domain": "687",
+      "range": "903",
       "attributes": [
         "anonymous",
         "object"
@@ -17043,8 +17068,8 @@
     },
     {
       "id": "1135",
-      "domain": "793",
-      "range": "784",
+      "domain": "734",
+      "range": "903",
       "attributes": [
         "anonymous",
         "object"
@@ -17052,8 +17077,8 @@
     },
     {
       "id": "1136",
-      "domain": "867",
-      "range": "784",
+      "domain": "677",
+      "range": "783",
       "attributes": [
         "anonymous",
         "object"
@@ -17061,8 +17086,8 @@
     },
     {
       "id": "1137",
-      "domain": "903",
-      "range": "784",
+      "domain": "683",
+      "range": "679",
       "attributes": [
         "anonymous",
         "object"
@@ -17070,8 +17095,8 @@
     },
     {
       "id": "1138",
-      "domain": "941",
-      "range": "784",
+      "domain": "684",
+      "range": "679",
       "attributes": [
         "anonymous",
         "object"
@@ -17079,8 +17104,8 @@
     },
     {
       "id": "1139",
-      "domain": "925",
-      "range": "688",
+      "domain": "727",
+      "range": "785",
       "attributes": [
         "anonymous",
         "object"
@@ -17088,8 +17113,8 @@
     },
     {
       "id": "1140",
-      "domain": "849",
-      "range": "948",
+      "domain": "794",
+      "range": "785",
       "attributes": [
         "anonymous",
         "object"
@@ -17097,8 +17122,53 @@
     },
     {
       "id": "1141",
-      "domain": "922",
-      "range": "796",
+      "domain": "867",
+      "range": "785",
+      "attributes": [
+        "anonymous",
+        "object"
+      ]
+    },
+    {
+      "id": "1142",
+      "domain": "905",
+      "range": "785",
+      "attributes": [
+        "anonymous",
+        "object"
+      ]
+    },
+    {
+      "id": "1143",
+      "domain": "943",
+      "range": "785",
+      "attributes": [
+        "anonymous",
+        "object"
+      ]
+    },
+    {
+      "id": "1144",
+      "domain": "926",
+      "range": "689",
+      "attributes": [
+        "anonymous",
+        "object"
+      ]
+    },
+    {
+      "id": "1145",
+      "domain": "849",
+      "range": "950",
+      "attributes": [
+        "anonymous",
+        "object"
+      ]
+    },
+    {
+      "id": "1146",
+      "domain": "923",
+      "range": "797",
       "attributes": [
         "anonymous",
         "object"
