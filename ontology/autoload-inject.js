@@ -2,15 +2,18 @@
 (function() {
   console.log('WebVOWL autoload script started');
 
-  function waitForFileInput() {
+  function waitForWebVOWL() {
+    // Wait for WebVOWL to be fully initialized
     var fileInput = document.getElementById('file-converter-input');
-    if (!fileInput) {
-      console.log('Waiting for file input...');
-      setTimeout(waitForFileInput, 200);
+    var graph = window.graph;
+
+    if (!fileInput || !graph) {
+      console.log('Waiting for WebVOWL initialization...');
+      setTimeout(waitForWebVOWL, 500);
       return;
     }
 
-    console.log('File input found, loading ontology...');
+    console.log('WebVOWL initialized, loading ontology...');
 
     // Fetch the ontology JSON
     fetch('data/narrativegoldmine-ontology.json')
@@ -26,21 +29,24 @@
         // Assign to the file input
         fileInput.files = dataTransfer.files;
 
-        // Trigger the change event
-        var event = new Event('change', { bubbles: true });
-        fileInput.dispatchEvent(event);
-
-        console.log('Ontology file loaded via file input');
+        // Trigger the change event with a slight delay to ensure handlers are attached
+        setTimeout(function() {
+          var event = new Event('change', { bubbles: true });
+          fileInput.dispatchEvent(event);
+          console.log('Ontology file loaded via file input');
+        }, 100);
       })
       .catch(function(err) {
         console.error('Failed to load ontology:', err);
       });
   }
 
-  // Wait for DOM to be ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', waitForFileInput);
+  // Wait for window load to ensure all scripts are loaded
+  if (document.readyState === 'complete') {
+    setTimeout(waitForWebVOWL, 1000);
   } else {
-    waitForFileInput();
+    window.addEventListener('load', function() {
+      setTimeout(waitForWebVOWL, 1000);
+    });
   }
 })();
