@@ -1,9 +1,0 @@
-[
-  {
-    "id": "narrativegoldmine",
-    "title": "Narrative Goldmine Ontology",
-    "description": "Multi-domain ontology spanning AI, Blockchain, Metaverse, and Robotics",
-    "version": "1.0.0",
-    "file": "data/narrativegoldmine-ontology.ttl"
-  }
-]
