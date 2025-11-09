@@ -85,6 +85,10 @@ def ttl_to_webvowl(ttl_file, output_file):
 
     print(f"Extracted {len(classes)} classes", file=sys.stderr)
 
+    # Start property IDs AFTER all class IDs to avoid overlap
+    # This is critical - WebVOWL gets confused if class and property IDs overlap
+    prop_id = class_id  # Start property IDs after last class ID
+
     # Extract object properties
     for prop in g.subjects(RDF.type, OWL.ObjectProperty):
         if isinstance(prop, str) or str(prop).startswith('http'):
