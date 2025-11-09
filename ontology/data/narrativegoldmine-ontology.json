@@ -6458,7 +6458,7 @@
         "en": "Conflict Mineral Tracking"
       },
       "comment": {
-        "en": "A component of the blockchain ecosystem."
+        "en": "Blockchain applications addressing ethical sourcing challenges for 3TG minerals (tin, tantalum, tungsten, gold) used in electronics, ensuring minerals don't finance armed conflict or human rights abus"
       }
     },
     {
@@ -6744,7 +6744,7 @@
         "en": "Food Safety Blockchain"
       },
       "comment": {
-        "en": "A component of the blockchain ecosystem."
+        "en": "Blockchain applications addressing critical food safety challenges through immutable farm-to-fork audit trails, enabling rapid contamination source identification (2.2 seconds vs 6+ days traditional t"
       }
     },
     {
@@ -6887,7 +6887,7 @@
         "en": "Luxury Goods Authentication"
       },
       "comment": {
-        "en": "A component of the blockchain ecosystem."
+        "en": "Blockchain technology addressing the global counterfeit luxury market through immutable digital certificates of authenticity, NFC-enabled provenance records, and cryptographic verification."
       }
     },
     {
@@ -7019,7 +7019,7 @@
         "en": "Pharmaceutical Traceability"
       },
       "comment": {
-        "en": "A component of the blockchain ecosystem."
+        "en": "Blockchain-based pharmaceutical supply chain systems employing unit-level serialization, immutable audit trails, and automated verification to combat counterfeit medicine markets, enable DSCSA and EU "
       }
     },
     {
@@ -10880,7 +10880,7 @@
         "en": "Provenance Tracking"
       },
       "comment": {
-        "en": "A component of the blockchain ecosystem."
+        "en": "Blockchain-based systems employing immutable distributed ledgers, IoT sensors, and smart contracts to create comprehensive audit trails tracking product journeys from origin to consumer, enabling 99.9"
       }
     },
     {
