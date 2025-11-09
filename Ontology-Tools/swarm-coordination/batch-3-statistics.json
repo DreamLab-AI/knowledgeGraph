@@ -1,0 +1,14 @@
+{
+  "batch": 3,
+  "domain": "blockchain",
+  "term_range": "BC-0101 to BC-0200",
+  "date": "2025-10-29T12:51:14.204425",
+  "duration_seconds": 0.003772,
+  "total_files": 100,
+  "successful": 100,
+  "failed": 0,
+  "already_format_a": 100,
+  "newly_converted": 0,
+  "conversion_rate_per_file": 3.7720000000000005e-05,
+  "failed_files": []
+}

@@ -1,0 +1,187 @@
+3D and 4D.md
+AI Companies.md
+AI Risks.md
+AI Scrapers.md
+AI Video.md
+AI privacy at the 2024 Olympics.md
+AICafev6.md
+Accessibility.md
+Adoption of Convergent Technologies.md
+Agentic Alliance.md
+Agentic Internet.md
+Agentic Metaverse for Global Creatives.md
+Agentic Mycelia.md
+Agentic Workshop.md
+Agents.md
+Ai in Games.md
+Algorithmic Bias and Variance.md
+AnimateDiff.md
+Anthropic Claude.md
+Apple.md
+Artificial Intelligence.md
+Automated Podcasting.md
+BTC Layer 3.md
+Bias in Large Language Models.md
+Bitcoin As Money.md
+Bitcoin ETF.md
+Bitcoin Technical Overview.md
+Bitcoin Value Proposition.md
+Bitcoin.md
+Blender.md
+Blockchain.md
+Calculating Empires.md
+California AI bill.md
+Call Centres.md
+Cashu.md
+ChatGPT.md
+Client side DCO.md
+Coding support.md
+Comfy UI for Fashion and Brands.md
+ComfyUI.md
+Comparison of GPT4 and Gemini Ultra.md
+Comparison of SDXL and Midjourney v6.md
+Competition in AI.md
+Conspiracies.md
+Consumer Tools for SMEs.md
+Context Engineering.md
+Controlnet and similar.md
+Convergence.md
+Courses and Training.md
+Cyber Security and Military.md
+Cyber security and Cryptography.md
+Death of the Internet.md
+Debug Test Page.md
+Decentralised Web.md
+Deep Learning.md
+Deepfakes and fraudulent content.md
+Deepmind.md
+Definitions and frameworks for Metaverse.md
+Depth Estimation.md
+Diagrams as Code.md
+Diffusion Models.md
+Digital Asset Risks.md
+Digital Objects.md
+Digital Society Harms.md
+Digital Society Surveillance.md
+Distributed Identity.md
+EU AI Act.md
+Education and AI.md
+Energy and Power.md
+Ethereum.md
+Evaluation benchmarks and leaderboards.md
+Facebook Meta.md
+Financialised Agentic Memetics.md
+Flux.md
+Foundation Models.md
+Future Bernard.md
+GANs.md
+Gaussian splatting and Similar.md
+Gemini.md
+Geopolitical hot takes.md
+Global Inequality.md
+Gold.md
+Hardware and Edge.md
+Human tracking and SLAM capture.md
+Human vs AI.md
+Humans, Avatars , Character.md
+Hyper personalisation.md
+IPAdapter.md
+Inpainting.md
+Interfaces.md
+Introduction to me.md
+Jailbreaking.md
+Knowhere.md
+Knowledge Graphing.md
+Landscape.md
+Large language models.md
+Layoff tracker and threatened roles.md
+Lead Poisoning Hypothesis.md
+Leopold Aschenbrenner.md
+Llama.md
+LoRA DoRA etc.md
+Machine Learning.md
+Medical AI.md
+Metaverse Ontology.md
+Metaverse and Spatial Risks.md
+Metaverse as Markets.md
+Micropayments.md
+Microsoft CoPilot.md
+Microsoft Work Trends Impact 2024.md
+Mixed reality.md
+Model Control Protocols like MCP.md
+Model Optimisation and Performance.md
+Money.md
+Multi Agent RAG scrapbook.md
+Music and audio.md
+NVIDIA Omniverse.md
+National Industrial Centre for Virtual Environments.md
+Norbert Wiener.md
+Nostr protocol.md
+Octave Multi Model Laboratory.md
+Open Generative AI tools.md
+OpenAI.md
+Overview of Machine Learning Techniques.md
+Papers Of Note.md
+Parametric.md
+Politics, Law, Privacy.md
+Privacy, Trust and Safety.md
+Procedural and Hybrid 4D.md
+Product Design.md
+Product and Risk Management.md
+Project Automated Podcast.md
+Project BroBots.md
+Prompt Engineering.md
+Proprietary AI Video.md
+Proprietary Image Generation.md
+Proprietary Large Language Models.md
+Proprietary Video.md
+RGB and Client Side Validation.md
+Reasoning.md
+Recent Projects.md
+Research Tools.md
+Revision List.md
+Robin Hanson.md
+Robotics.md
+Runes and Glyphs.md
+Rust.md
+SLAM.md
+Safety and alignment.md
+Sam Hammond.md
+Scene Capture and Reconstruction.md
+Segmentation and Identification.md
+Semantic Web.md
+Singularity.md
+Social contract and jobs.md
+Soon-Next-Later (AI futurology).md
+Speech and voice.md
+Stable Coins.md
+Stable Diffusion.md
+State Space and Other Approaches.md
+State of the art in AI.md
+Suggested Reading Order.md
+Tim Reutermann.md
+Time Series Forecasting.md
+Tokenisation.md
+Training and fine tuning.md
+Training for Design Practitioners.md
+Transformers.md
+Upscaling.md
+VP robotics project.md
+Vesuvian Scrolls.md
+Virtual Production.md
+Vision Pro.md
+VisionFlow and Junkie Jarvis.md
+artificial superintelligence.md
+collaborative.md
+cypherpunk.md
+debug linked node.md
+ecash.md
+flossverse.md
+infrastructure.md
+latent space.md
+legacy media.md
+license.md
+multimodal.md
+ollama.md
+p(doom).md
+relighting.md

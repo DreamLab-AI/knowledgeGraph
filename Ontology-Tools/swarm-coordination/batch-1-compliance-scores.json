@@ -1,0 +1,686 @@
+{
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0376-algorithmic-accountability.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 6 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "IEEE P2863",
+      "AIEthicsDomain",
+      "ConceptualLayer",
+      "AIGovernancePrinciple",
+      "EthicalFramework",
+      "RegulatoryCompliance"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0377-fairness-metrics.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0378-algorithmic-bias.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0379-bias-detection-methods.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0380-bias-mitigation-techniques.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0381-disparate-impact.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0382-fairness-constraints.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0383-group-vs-individual-fairness.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0384-intersectional-fairness.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0385-fairness-accuracy-tradeoffs.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0386-fairness-auditing-tools.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0387-ai-governance-framework.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0388-ai-ethics-board.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0389-responsible-ai-principles.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0390-ai-impact-assessment.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0391-stakeholder-engagement-ai.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0392-ai-documentation-standards.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0393-ethical-review-process.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0394-ai-risk-register.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0395-algorithmic-transparency-reports.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0396-ai-governance-maturity-model.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0407-TrustworthyAIFramework.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0408-AITrustworthinessDimensions.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0409-HumanAgencyOversight.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0410-TechnicalRobustnessSafety.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0411-PrivacyDataGovernance.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0412-TransparencyExplainability.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0413-DiversityNonDiscriminationFairness.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0414-SocietalEnvironmentalWellbeing.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0415-IEEE7000SeriesStandards.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0416-Differential-Privacy.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0417-Federated-Learning.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0418-Homomorphic-Encryption-ML.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0419-Secure-Multi-Party-Computation.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0420-Privacy-Budget-Management.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0421-k-Anonymity-Datasets.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0422-synthetic-data-generation.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0423-privacy-preserving-data-mining.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0424-confidential-computing.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0425-privacy-impact-assessment.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0426-data-minimisation.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0427-pseudonymisation.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0428-privacy-by-design.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0429-gdpr-article-22-compliance.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0430-privacy-utility-tradeoffs.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0431-edge-ai-system.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0432-tinyml.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0433-on-device-learning.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0434-model-compression-edge.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0435-neural-network-quantization.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0436-edge-cloud-collaboration.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0437-federated-edge-learning.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0438-iot-ai-integration.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0439-real-time-inference-edge.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0440-power-efficient-ai.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0441-edge-ai-accelerators.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0442-model-pruning-edge.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0443-knowledge-distillation-edge.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0444-embedded-ai-frameworks.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0445-edge-ai-security.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0446-latency-aware-edge-ai.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0447-edge-ai-smart-cities.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-0448-UNESCORecommendationEthicsAI.md": {
+    "compliance_score": 92.3076923076923,
+    "issues": [
+      "Found 2 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "AIEthicsDomain",
+      "ConceptualLayer"
+    ]
+  },
+  "/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI-Generated Content Disclosure.md": {
+    "compliance_score": 53.84615384615385,
+    "issues": [
+      "Missing ontology:: property",
+      "Missing source-domain:: property",
+      "Missing status:: field",
+      "Missing or malformed term-id:: (expected AI-####)",
+      "Found 38 broken WikiLinks"
+    ],
+    "broken_wikilinks": [
+      "EU AI Act",
+      "IEEE 7001",
+      "TrustAndGovernanceDomain",
+      "MiddlewareLayer",
+      "Content Labeling Metadata",
+      "AI Origin Declaration",
+      "Disclosure Enforcement Mechanism",
+      "Transparency Notice",
+      "AI Transparency Framework",
+      "Content Authentication",
+      "Metadata Standards",
+      "Provenance Tracking",
+      "EU AI Act",
+      "IEEE 7001",
+      "C2PA Standard",
+      "User Awareness",
+      "Regulatory Compliance",
+      "Trust Building",
+      "Informed Consent",
+      "Content Labeling Metadata",
+      "AI Origin Declaration",
+      "Disclosure Enforcement Mechanism",
+      "Transparency Notice",
+      "Provenance Tracking",
+      "C2PA Credentials",
+      "Content Authentication Protocol",
+      "EU AI Act",
+      "IEEE 7001",
+      "C2PA Standard",
+      "OECD AI Principles",
+      "ISO/IEC 23894",
+      "W3C Verifiable Credentials",
+      "AI Transparency Framework",
+      "Content Authentication",
+      "Digital Provenance",
+      "Synthetic Media Detection",
+      "Informed Consent",
+      "VirtualProcess"
+    ]
+  }
+}

@@ -1,0 +1,4540 @@
+{
+  "relationships": [
+    {
+      "source": "Medical Diagnosis AI",
+      "target": "Medical AI",
+      "source_domain": "metaverse",
+      "source_file": "Medical Diagnosis AI"
+    },
+    {
+      "source": "Medical Diagnosis AI",
+      "target": "Clinical Decision Support",
+      "source_domain": "metaverse",
+      "source_file": "Medical Diagnosis AI"
+    },
+    {
+      "source": "Medical Diagnosis AI",
+      "target": "Treatment Planning AI",
+      "source_domain": "metaverse",
+      "source_file": "Medical Diagnosis AI"
+    },
+    {
+      "source": "Hardware Abstraction Layer (HAL)",
+      "target": "Human Interface Layer (HIL)",
+      "source_domain": "metaverse",
+      "source_file": "Hardware Abstraction Layer (HAL)"
+    },
+    {
+      "source": "Hardware Abstraction Layer (HAL)",
+      "target": "Operating System",
+      "source_domain": "metaverse",
+      "source_file": "Hardware Abstraction Layer (HAL)"
+    },
+    {
+      "source": "Hardware Abstraction Layer (HAL)",
+      "target": "Device Driver",
+      "source_domain": "metaverse",
+      "source_file": "Hardware Abstraction Layer (HAL)"
+    },
+    {
+      "source": "Infrastructure Layer",
+      "target": "Hardware Abstraction Layer (HAL)",
+      "source_domain": "metaverse",
+      "source_file": "Infrastructure Layer"
+    },
+    {
+      "source": "Infrastructure Layer",
+      "target": "Network Layer",
+      "source_domain": "metaverse",
+      "source_file": "Infrastructure Layer"
+    },
+    {
+      "source": "Infrastructure Layer",
+      "target": "Compute Resources",
+      "source_domain": "metaverse",
+      "source_file": "Infrastructure Layer"
+    },
+    {
+      "source": "Computer Vision",
+      "target": "Image Classification",
+      "source_domain": "metaverse",
+      "source_file": "Computer Vision"
+    },
+    {
+      "source": "Computer Vision",
+      "target": "Object Detection",
+      "source_domain": "metaverse",
+      "source_file": "Computer Vision"
+    },
+    {
+      "source": "Computer Vision",
+      "target": "Semantic Segmentation",
+      "source_domain": "metaverse",
+      "source_file": "Computer Vision"
+    },
+    {
+      "source": "Computer Vision",
+      "target": "Convolutional Neural Network",
+      "source_domain": "metaverse",
+      "source_file": "Computer Vision"
+    },
+    {
+      "source": "Central Bank Digital Currency (CBDC)",
+      "target": "Digital Asset",
+      "source_domain": "metaverse",
+      "source_file": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "source": "Central Bank Digital Currency (CBDC)",
+      "target": "Cryptocurrency",
+      "source_domain": "metaverse",
+      "source_file": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "source": "Central Bank Digital Currency (CBDC)",
+      "target": "Stablecoin",
+      "source_domain": "metaverse",
+      "source_file": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "source": "Central Bank Digital Currency (CBDC)",
+      "target": "Payment System",
+      "source_domain": "metaverse",
+      "source_file": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "source": "Central Bank Digital Currency (CBDC)",
+      "target": "Digital Wallet",
+      "source_domain": "metaverse",
+      "source_file": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "source": "Discovery Layer",
+      "target": "Interoperability Framework",
+      "source_domain": "metaverse",
+      "source_file": "Discovery Layer"
+    },
+    {
+      "source": "Discovery Layer",
+      "target": "Metadata Standards",
+      "source_domain": "metaverse",
+      "source_file": "Discovery Layer"
+    },
+    {
+      "source": "Discovery Layer",
+      "target": "User Interface",
+      "source_domain": "metaverse",
+      "source_file": "Discovery Layer"
+    },
+    {
+      "source": "BC 0429 permissioned blockchain",
+      "target": "BC-0001-blockchain",
+      "source_domain": "metaverse",
+      "source_file": "BC-0429-permissioned-blockchain"
+    },
+    {
+      "source": "BC 0429 permissioned blockchain",
+      "target": "BC-0120-consensus-mechanism",
+      "source_domain": "metaverse",
+      "source_file": "BC-0429-permissioned-blockchain"
+    },
+    {
+      "source": "BC 0429 permissioned blockchain",
+      "target": "BC-0245-proof-of-authority",
+      "source_domain": "metaverse",
+      "source_file": "BC-0429-permissioned-blockchain"
+    },
+    {
+      "source": "AUC",
+      "target": "Model Performance",
+      "source_domain": "metaverse",
+      "source_file": "AUC"
+    },
+    {
+      "source": "AUC",
+      "target": "ROC Curve",
+      "source_domain": "metaverse",
+      "source_file": "AUC"
+    },
+    {
+      "source": "AUC",
+      "target": "True Positive Rate",
+      "source_domain": "metaverse",
+      "source_file": "AUC"
+    },
+    {
+      "source": "AUC",
+      "target": "False Positive Rate",
+      "source_domain": "metaverse",
+      "source_file": "AUC"
+    },
+    {
+      "source": "AUC",
+      "target": "Precision-Recall Curve",
+      "source_domain": "metaverse",
+      "source_file": "AUC"
+    },
+    {
+      "source": "AUC",
+      "target": "Model Comparison",
+      "source_domain": "metaverse",
+      "source_file": "AUC"
+    },
+    {
+      "source": "AUC",
+      "target": "Threshold Selection",
+      "source_domain": "metaverse",
+      "source_file": "AUC"
+    },
+    {
+      "source": "AUC",
+      "target": "Classification",
+      "source_domain": "metaverse",
+      "source_file": "AUC"
+    },
+    {
+      "source": "AUC",
+      "target": "Ranking Metric",
+      "source_domain": "metaverse",
+      "source_file": "AUC"
+    },
+    {
+      "source": "Image to Image Translation",
+      "target": "Image Generation",
+      "source_domain": "metaverse",
+      "source_file": "Image-to-Image Translation"
+    },
+    {
+      "source": "Image to Image Translation",
+      "target": "Style Transfer",
+      "source_domain": "metaverse",
+      "source_file": "Image-to-Image Translation"
+    },
+    {
+      "source": "Image to Image Translation",
+      "target": "Generative Adversarial Network",
+      "source_domain": "metaverse",
+      "source_file": "Image-to-Image Translation"
+    },
+    {
+      "source": "AI Provider",
+      "target": "AI Operator",
+      "source_domain": "metaverse",
+      "source_file": "AI Provider"
+    },
+    {
+      "source": "AI Provider",
+      "target": "AI User",
+      "source_domain": "metaverse",
+      "source_file": "AI Provider"
+    },
+    {
+      "source": "AI Provider",
+      "target": "AI Governance",
+      "source_domain": "metaverse",
+      "source_file": "AI Provider"
+    },
+    {
+      "source": "AI Provider",
+      "target": "AI Lifecycle",
+      "source_domain": "metaverse",
+      "source_file": "AI Provider"
+    },
+    {
+      "source": "AI Provider",
+      "target": "AI Development",
+      "source_domain": "metaverse",
+      "source_file": "AI Provider"
+    },
+    {
+      "source": "AI Provider",
+      "target": "AI Impact Assessment",
+      "source_domain": "metaverse",
+      "source_file": "AI Provider"
+    },
+    {
+      "source": "AI Provider",
+      "target": "AI Audit",
+      "source_domain": "metaverse",
+      "source_file": "AI Provider"
+    },
+    {
+      "source": "AI Provider",
+      "target": "Accountability",
+      "source_domain": "metaverse",
+      "source_file": "AI Provider"
+    },
+    {
+      "source": "AI Provider",
+      "target": "Risk Management",
+      "source_domain": "metaverse",
+      "source_file": "AI Provider"
+    },
+    {
+      "source": "AI Provider",
+      "target": "Conformity Assessment",
+      "source_domain": "metaverse",
+      "source_file": "AI Provider"
+    },
+    {
+      "source": "BC 0446 supply chain traceability",
+      "target": "BC-0142-smart-contract",
+      "source_domain": "metaverse",
+      "source_file": "BC-0446-supply-chain-traceability"
+    },
+    {
+      "source": "BC 0446 supply chain traceability",
+      "target": "BC-0245-internet-of-things",
+      "source_domain": "metaverse",
+      "source_file": "BC-0446-supply-chain-traceability"
+    },
+    {
+      "source": "Decentralization Layer",
+      "target": "Security Layer",
+      "source_domain": "metaverse",
+      "source_file": "Decentralization Layer"
+    },
+    {
+      "source": "Decentralization Layer",
+      "target": "Trust Framework",
+      "source_domain": "metaverse",
+      "source_file": "Decentralization Layer"
+    },
+    {
+      "source": "Decentralization Layer",
+      "target": "Governance Model",
+      "source_domain": "metaverse",
+      "source_file": "Decentralization Layer"
+    },
+    {
+      "source": "6G Network Slice",
+      "target": "Network Slice",
+      "source_domain": "metaverse",
+      "source_file": "6G Network Slice"
+    },
+    {
+      "source": "6G Network Slice",
+      "target": "5G Network Slice",
+      "source_domain": "metaverse",
+      "source_file": "6G Network Slice"
+    },
+    {
+      "source": "6G Network Slice",
+      "target": "Virtual Network",
+      "source_domain": "metaverse",
+      "source_file": "6G Network Slice"
+    },
+    {
+      "source": "6G Network Slice",
+      "target": "Network Function Virtualization",
+      "source_domain": "metaverse",
+      "source_file": "6G Network Slice"
+    },
+    {
+      "source": "Digital Curation Platform",
+      "target": "Digital Library",
+      "source_domain": "metaverse",
+      "source_file": "Digital Curation Platform"
+    },
+    {
+      "source": "Digital Curation Platform",
+      "target": "Museum Information System",
+      "source_domain": "metaverse",
+      "source_file": "Digital Curation Platform"
+    },
+    {
+      "source": "Digital Curation Platform",
+      "target": "Archive Management System",
+      "source_domain": "metaverse",
+      "source_file": "Digital Curation Platform"
+    },
+    {
+      "source": "Digital Curation Platform",
+      "target": "Content Management System",
+      "source_domain": "metaverse",
+      "source_file": "Digital Curation Platform"
+    },
+    {
+      "source": "Behavioural Feedback Loop",
+      "target": "Feedback Mechanism",
+      "source_domain": "metaverse",
+      "source_file": "Behavioural Feedback Loop"
+    },
+    {
+      "source": "Behavioural Feedback Loop",
+      "target": "Reinforcement Learning",
+      "source_domain": "metaverse",
+      "source_file": "Behavioural Feedback Loop"
+    },
+    {
+      "source": "Behavioural Feedback Loop",
+      "target": "User Engagement",
+      "source_domain": "metaverse",
+      "source_file": "Behavioural Feedback Loop"
+    },
+    {
+      "source": "Chatbot",
+      "target": "Dialogue System",
+      "source_domain": "metaverse",
+      "source_file": "Chatbot"
+    },
+    {
+      "source": "Chatbot",
+      "target": "Natural Language Processing",
+      "source_domain": "metaverse",
+      "source_file": "Chatbot"
+    },
+    {
+      "source": "Chatbot",
+      "target": "Virtual Assistant",
+      "source_domain": "metaverse",
+      "source_file": "Chatbot"
+    },
+    {
+      "source": "Immersion",
+      "target": "Telepresence",
+      "source_domain": "metaverse",
+      "source_file": "Immersion"
+    },
+    {
+      "source": "Immersion",
+      "target": "Suspension of Disbelief",
+      "source_domain": "metaverse",
+      "source_file": "Immersion"
+    },
+    {
+      "source": "Immersion",
+      "target": "Virtual Reality",
+      "source_domain": "metaverse",
+      "source_file": "Immersion"
+    },
+    {
+      "source": "Avatar Interoperability",
+      "target": "Avatar",
+      "source_domain": "metaverse",
+      "source_file": "Avatar Interoperability"
+    },
+    {
+      "source": "Avatar Interoperability",
+      "target": "Digital Identity",
+      "source_domain": "metaverse",
+      "source_file": "Avatar Interoperability"
+    },
+    {
+      "source": "Avatar Interoperability",
+      "target": "Virtual Persona",
+      "source_domain": "metaverse",
+      "source_file": "Avatar Interoperability"
+    },
+    {
+      "source": "Super Resolution",
+      "target": "Image Generation",
+      "source_domain": "metaverse",
+      "source_file": "Super-Resolution"
+    },
+    {
+      "source": "Super Resolution",
+      "target": "Convolutional Neural Network",
+      "source_domain": "metaverse",
+      "source_file": "Super-Resolution"
+    },
+    {
+      "source": "Super Resolution",
+      "target": "Computer Vision",
+      "source_domain": "metaverse",
+      "source_file": "Super-Resolution"
+    },
+    {
+      "source": "Healthcare Analytics",
+      "target": "Medical AI",
+      "source_domain": "metaverse",
+      "source_file": "Healthcare Analytics"
+    },
+    {
+      "source": "Healthcare Analytics",
+      "target": "Data Analytics",
+      "source_domain": "metaverse",
+      "source_file": "Healthcare Analytics"
+    },
+    {
+      "source": "Healthcare Analytics",
+      "target": "Population Health",
+      "source_domain": "metaverse",
+      "source_file": "Healthcare Analytics"
+    },
+    {
+      "source": "Model Performance",
+      "target": "Accuracy",
+      "source_domain": "metaverse",
+      "source_file": "Model Performance"
+    },
+    {
+      "source": "Model Performance",
+      "target": "Precision",
+      "source_domain": "metaverse",
+      "source_file": "Model Performance"
+    },
+    {
+      "source": "Model Performance",
+      "target": "Recall",
+      "source_domain": "metaverse",
+      "source_file": "Model Performance"
+    },
+    {
+      "source": "Model Performance",
+      "target": "F1 Score",
+      "source_domain": "metaverse",
+      "source_file": "Model Performance"
+    },
+    {
+      "source": "Model Performance",
+      "target": "Confusion Matrix",
+      "source_domain": "metaverse",
+      "source_file": "Model Performance"
+    },
+    {
+      "source": "Model Performance",
+      "target": "ROC Curve",
+      "source_domain": "metaverse",
+      "source_file": "Model Performance"
+    },
+    {
+      "source": "Model Performance",
+      "target": "AI Monitoring",
+      "source_domain": "metaverse",
+      "source_file": "Model Performance"
+    },
+    {
+      "source": "Model Performance",
+      "target": "Model Evaluation",
+      "source_domain": "metaverse",
+      "source_file": "Model Performance"
+    },
+    {
+      "source": "Model Performance",
+      "target": "Fairness",
+      "source_domain": "metaverse",
+      "source_file": "Model Performance"
+    },
+    {
+      "source": "Model Performance",
+      "target": "Data Drift",
+      "source_domain": "metaverse",
+      "source_file": "Model Performance"
+    },
+    {
+      "source": "Scene Graph",
+      "target": "Scene Description",
+      "source_domain": "metaverse",
+      "source_file": "Scene Graph"
+    },
+    {
+      "source": "Scene Graph",
+      "target": "glTF",
+      "source_domain": "metaverse",
+      "source_file": "Scene Graph"
+    },
+    {
+      "source": "Scene Graph",
+      "target": "USD",
+      "source_domain": "metaverse",
+      "source_file": "Scene Graph"
+    },
+    {
+      "source": "Scene Graph",
+      "target": "X3D",
+      "source_domain": "metaverse",
+      "source_file": "Scene Graph"
+    },
+    {
+      "source": "Scene Graph",
+      "target": "Three.js Scene",
+      "source_domain": "metaverse",
+      "source_file": "Scene Graph"
+    },
+    {
+      "source": "Content Delivery Network (CDN)",
+      "target": "Edge Computing",
+      "source_domain": "metaverse",
+      "source_file": "Content Delivery Network (CDN)"
+    },
+    {
+      "source": "Content Delivery Network (CDN)",
+      "target": "Network Optimization",
+      "source_domain": "metaverse",
+      "source_file": "Content Delivery Network (CDN)"
+    },
+    {
+      "source": "Content Delivery Network (CDN)",
+      "target": "Distributed System",
+      "source_domain": "metaverse",
+      "source_file": "Content Delivery Network (CDN)"
+    },
+    {
+      "source": "Content Delivery Network (CDN)",
+      "target": "Content Caching",
+      "source_domain": "metaverse",
+      "source_file": "Content Delivery Network (CDN)"
+    },
+    {
+      "source": "Data Integration Interface",
+      "target": "API Interface",
+      "source_domain": "metaverse",
+      "source_file": "Data Integration Interface"
+    },
+    {
+      "source": "Data Integration Interface",
+      "target": "Data Connector",
+      "source_domain": "metaverse",
+      "source_file": "Data Integration Interface"
+    },
+    {
+      "source": "Data Integration Interface",
+      "target": "Integration Bus",
+      "source_domain": "metaverse",
+      "source_file": "Data Integration Interface"
+    },
+    {
+      "source": "Data Integration Interface",
+      "target": "ETL Pipeline",
+      "source_domain": "metaverse",
+      "source_file": "Data Integration Interface"
+    },
+    {
+      "source": "Instance Segmentation",
+      "target": "Object Detection",
+      "source_domain": "metaverse",
+      "source_file": "Instance Segmentation"
+    },
+    {
+      "source": "Instance Segmentation",
+      "target": "Semantic Segmentation",
+      "source_domain": "metaverse",
+      "source_file": "Instance Segmentation"
+    },
+    {
+      "source": "Instance Segmentation",
+      "target": "Panoptic Segmentation",
+      "source_domain": "metaverse",
+      "source_file": "Instance Segmentation"
+    },
+    {
+      "source": "Image Classification",
+      "target": "Computer Vision",
+      "source_domain": "metaverse",
+      "source_file": "Image Classification"
+    },
+    {
+      "source": "Image Classification",
+      "target": "Convolutional Neural Network",
+      "source_domain": "metaverse",
+      "source_file": "Image Classification"
+    },
+    {
+      "source": "Image Classification",
+      "target": "Transfer Learning",
+      "source_domain": "metaverse",
+      "source_file": "Image Classification"
+    },
+    {
+      "source": "Creator Royalty Token",
+      "target": "Digital Asset",
+      "source_domain": "metaverse",
+      "source_file": "Creator Royalty Token"
+    },
+    {
+      "source": "Creator Royalty Token",
+      "target": "NFT",
+      "source_domain": "metaverse",
+      "source_file": "Creator Royalty Token"
+    },
+    {
+      "source": "Creator Royalty Token",
+      "target": "Smart Contract",
+      "source_domain": "metaverse",
+      "source_file": "Creator Royalty Token"
+    },
+    {
+      "source": "Creator Royalty Token",
+      "target": "Intellectual Property",
+      "source_domain": "metaverse",
+      "source_file": "Creator Royalty Token"
+    },
+    {
+      "source": "Creator Royalty Token",
+      "target": "Revenue Stream",
+      "source_domain": "metaverse",
+      "source_file": "Creator Royalty Token"
+    },
+    {
+      "source": "Creator Royalty Token",
+      "target": "Creator Token",
+      "source_domain": "metaverse",
+      "source_file": "Creator Royalty Token"
+    },
+    {
+      "source": "BC 0426 hyperledger fabric",
+      "target": "BC-0120-consensus-mechanism",
+      "source_domain": "metaverse",
+      "source_file": "BC-0426-hyperledger-fabric"
+    },
+    {
+      "source": "BC 0426 hyperledger fabric",
+      "target": "BC-0142-smart-contract",
+      "source_domain": "metaverse",
+      "source_file": "BC-0426-hyperledger-fabric"
+    },
+    {
+      "source": "BC 0426 hyperledger fabric",
+      "target": "BC-0315-zero-knowledge-proof",
+      "source_domain": "metaverse",
+      "source_file": "BC-0426-hyperledger-fabric"
+    },
+    {
+      "source": "Authoring Tool",
+      "target": "Game Engine",
+      "source_domain": "metaverse",
+      "source_file": "Authoring Tool"
+    },
+    {
+      "source": "Authoring Tool",
+      "target": "3D Modeling Software",
+      "source_domain": "metaverse",
+      "source_file": "Authoring Tool"
+    },
+    {
+      "source": "Authoring Tool",
+      "target": "Content Creation Tool",
+      "source_domain": "metaverse",
+      "source_file": "Authoring Tool"
+    },
+    {
+      "source": "Transaction Standard",
+      "target": "Payment Protocol",
+      "source_domain": "metaverse",
+      "source_file": "Transaction Standard"
+    },
+    {
+      "source": "Transaction Standard",
+      "target": "Financial Messaging Standard",
+      "source_domain": "metaverse",
+      "source_file": "Transaction Standard"
+    },
+    {
+      "source": "Transaction Standard",
+      "target": "Blockchain Protocol",
+      "source_domain": "metaverse",
+      "source_file": "Transaction Standard"
+    },
+    {
+      "source": "Transaction Standard",
+      "target": "Digital Currency",
+      "source_domain": "metaverse",
+      "source_file": "Transaction Standard"
+    },
+    {
+      "source": "Stakeholder",
+      "target": "AI Provider",
+      "source_domain": "metaverse",
+      "source_file": "Stakeholder"
+    },
+    {
+      "source": "Stakeholder",
+      "target": "AI Operator",
+      "source_domain": "metaverse",
+      "source_file": "Stakeholder"
+    },
+    {
+      "source": "Stakeholder",
+      "target": "AI User",
+      "source_domain": "metaverse",
+      "source_file": "Stakeholder"
+    },
+    {
+      "source": "Stakeholder",
+      "target": "AI Governance",
+      "source_domain": "metaverse",
+      "source_file": "Stakeholder"
+    },
+    {
+      "source": "Stakeholder",
+      "target": "AI Impact Assessment",
+      "source_domain": "metaverse",
+      "source_file": "Stakeholder"
+    },
+    {
+      "source": "Stakeholder",
+      "target": "Accountability",
+      "source_domain": "metaverse",
+      "source_file": "Stakeholder"
+    },
+    {
+      "source": "Stakeholder",
+      "target": "Fairness",
+      "source_domain": "metaverse",
+      "source_file": "Stakeholder"
+    },
+    {
+      "source": "Stakeholder",
+      "target": "Transparency",
+      "source_domain": "metaverse",
+      "source_file": "Stakeholder"
+    },
+    {
+      "source": "Stakeholder",
+      "target": "Participation",
+      "source_domain": "metaverse",
+      "source_file": "Stakeholder"
+    },
+    {
+      "source": "Stakeholder",
+      "target": "Civil Society",
+      "source_domain": "metaverse",
+      "source_file": "Stakeholder"
+    },
+    {
+      "source": "Conversion Pipeline",
+      "target": "Data Processing",
+      "source_domain": "metaverse",
+      "source_file": "Conversion Pipeline"
+    },
+    {
+      "source": "Conversion Pipeline",
+      "target": "Asset Pipeline",
+      "source_domain": "metaverse",
+      "source_file": "Conversion Pipeline"
+    },
+    {
+      "source": "Conversion Pipeline",
+      "target": "Interoperability Framework",
+      "source_domain": "metaverse",
+      "source_file": "Conversion Pipeline"
+    },
+    {
+      "source": "Conversion Pipeline",
+      "target": "ETL Pipeline",
+      "source_domain": "metaverse",
+      "source_file": "Conversion Pipeline"
+    },
+    {
+      "source": "BC 0427 hyperledger besu",
+      "target": "BC-0001-blockchain",
+      "source_domain": "metaverse",
+      "source_file": "BC-0427-hyperledger-besu"
+    },
+    {
+      "source": "BC 0427 hyperledger besu",
+      "target": "BC-0142-smart-contract",
+      "source_domain": "metaverse",
+      "source_file": "BC-0427-hyperledger-besu"
+    },
+    {
+      "source": "BC 0427 hyperledger besu",
+      "target": "BC-0315-zero-knowledge-proof",
+      "source_domain": "metaverse",
+      "source_file": "BC-0427-hyperledger-besu"
+    },
+    {
+      "source": "Cloud Rendering Service",
+      "target": "Reality Modelling",
+      "source_domain": "metaverse",
+      "source_file": "Cloud Rendering Service"
+    },
+    {
+      "source": "Cloud Rendering Service",
+      "target": "3D Visualisation",
+      "source_domain": "metaverse",
+      "source_file": "Cloud Rendering Service"
+    },
+    {
+      "source": "Cloud Rendering Service",
+      "target": "Pixel Streaming",
+      "source_domain": "metaverse",
+      "source_file": "Cloud Rendering Service"
+    },
+    {
+      "source": "Accuracy",
+      "target": "Model Performance",
+      "source_domain": "metaverse",
+      "source_file": "Accuracy"
+    },
+    {
+      "source": "Accuracy",
+      "target": "Precision",
+      "source_domain": "metaverse",
+      "source_file": "Accuracy"
+    },
+    {
+      "source": "Accuracy",
+      "target": "Recall",
+      "source_domain": "metaverse",
+      "source_file": "Accuracy"
+    },
+    {
+      "source": "Accuracy",
+      "target": "F1 Score",
+      "source_domain": "metaverse",
+      "source_file": "Accuracy"
+    },
+    {
+      "source": "Accuracy",
+      "target": "Confusion Matrix",
+      "source_domain": "metaverse",
+      "source_file": "Accuracy"
+    },
+    {
+      "source": "Accuracy",
+      "target": "ROC Curve",
+      "source_domain": "metaverse",
+      "source_file": "Accuracy"
+    },
+    {
+      "source": "Accuracy",
+      "target": "Balanced Accuracy",
+      "source_domain": "metaverse",
+      "source_file": "Accuracy"
+    },
+    {
+      "source": "Accuracy",
+      "target": "Sensitivity",
+      "source_domain": "metaverse",
+      "source_file": "Accuracy"
+    },
+    {
+      "source": "Accuracy",
+      "target": "Specificity",
+      "source_domain": "metaverse",
+      "source_file": "Accuracy"
+    },
+    {
+      "source": "Network Infrastructure",
+      "target": "Quantum Network Node",
+      "source_domain": "metaverse",
+      "source_file": "Network Infrastructure"
+    },
+    {
+      "source": "Network Infrastructure",
+      "target": "5G Network",
+      "source_domain": "metaverse",
+      "source_file": "Network Infrastructure"
+    },
+    {
+      "source": "Network Infrastructure",
+      "target": "Edge Computing Infrastructure",
+      "source_domain": "metaverse",
+      "source_file": "Network Infrastructure"
+    },
+    {
+      "source": "Network Infrastructure",
+      "target": "Cloud Infrastructure",
+      "source_domain": "metaverse",
+      "source_file": "Network Infrastructure"
+    },
+    {
+      "source": "Object Detection",
+      "target": "Computer Vision",
+      "source_domain": "metaverse",
+      "source_file": "Object Detection"
+    },
+    {
+      "source": "Object Detection",
+      "target": "Image Classification",
+      "source_domain": "metaverse",
+      "source_file": "Object Detection"
+    },
+    {
+      "source": "Object Detection",
+      "target": "Instance Segmentation",
+      "source_domain": "metaverse",
+      "source_file": "Object Detection"
+    },
+    {
+      "source": "Pathology AI",
+      "target": "Medical Imaging AI",
+      "source_domain": "metaverse",
+      "source_file": "Pathology AI"
+    },
+    {
+      "source": "Pathology AI",
+      "target": "Radiology AI",
+      "source_domain": "metaverse",
+      "source_file": "Pathology AI"
+    },
+    {
+      "source": "Pathology AI",
+      "target": "Computer Vision",
+      "source_domain": "metaverse",
+      "source_file": "Pathology AI"
+    },
+    {
+      "source": "Edge Mesh Network",
+      "target": "Edge Network",
+      "source_domain": "metaverse",
+      "source_file": "Edge Mesh Network"
+    },
+    {
+      "source": "Edge Mesh Network",
+      "target": "Distributed System",
+      "source_domain": "metaverse",
+      "source_file": "Edge Mesh Network"
+    },
+    {
+      "source": "Edge Mesh Network",
+      "target": "Peer-to-Peer Network",
+      "source_domain": "metaverse",
+      "source_file": "Edge Mesh Network"
+    },
+    {
+      "source": "Edge Mesh Network",
+      "target": "Content Delivery Network",
+      "source_domain": "metaverse",
+      "source_file": "Edge Mesh Network"
+    },
+    {
+      "source": "Digital Asset",
+      "target": "NFT",
+      "source_domain": "metaverse",
+      "source_file": "Digital Asset"
+    },
+    {
+      "source": "Digital Asset",
+      "target": "Cryptocurrency",
+      "source_domain": "metaverse",
+      "source_file": "Digital Asset"
+    },
+    {
+      "source": "Digital Asset",
+      "target": "Virtual Property",
+      "source_domain": "metaverse",
+      "source_file": "Digital Asset"
+    },
+    {
+      "source": "Digital Asset",
+      "target": "Intellectual Property",
+      "source_domain": "metaverse",
+      "source_file": "Digital Asset"
+    },
+    {
+      "source": "Latency",
+      "target": "Jitter",
+      "source_domain": "metaverse",
+      "source_file": "Latency"
+    },
+    {
+      "source": "Latency",
+      "target": "Packet Loss",
+      "source_domain": "metaverse",
+      "source_file": "Latency"
+    },
+    {
+      "source": "Latency",
+      "target": "Throughput",
+      "source_domain": "metaverse",
+      "source_file": "Latency"
+    },
+    {
+      "source": "Latency",
+      "target": "Motion-to-Photon Latency",
+      "source_domain": "metaverse",
+      "source_file": "Latency"
+    },
+    {
+      "source": "Latency",
+      "target": "Round-Trip Time",
+      "source_domain": "metaverse",
+      "source_file": "Latency"
+    },
+    {
+      "source": "Image Generation",
+      "target": "Generative Adversarial Network",
+      "source_domain": "metaverse",
+      "source_file": "Image Generation"
+    },
+    {
+      "source": "Image Generation",
+      "target": "Diffusion Model",
+      "source_domain": "metaverse",
+      "source_file": "Image Generation"
+    },
+    {
+      "source": "Image Generation",
+      "target": "Text-to-Image",
+      "source_domain": "metaverse",
+      "source_file": "Image Generation"
+    },
+    {
+      "source": "Scene Understanding",
+      "target": "Semantic Segmentation",
+      "source_domain": "metaverse",
+      "source_file": "Scene Understanding"
+    },
+    {
+      "source": "Scene Understanding",
+      "target": "Perception System",
+      "source_domain": "metaverse",
+      "source_file": "Scene Understanding"
+    },
+    {
+      "source": "Scene Understanding",
+      "target": "Computer Vision",
+      "source_domain": "metaverse",
+      "source_file": "Scene Understanding"
+    },
+    {
+      "source": "Value Transfer",
+      "target": "Cryptocurrency",
+      "source_domain": "cross-domain",
+      "source_file": "Value Transfer"
+    },
+    {
+      "source": "Value Transfer",
+      "target": "Virtual Economy",
+      "source_domain": "cross-domain",
+      "source_file": "Value Transfer"
+    },
+    {
+      "source": "Value Transfer",
+      "target": "Blockchain",
+      "source_domain": "cross-domain",
+      "source_file": "Value Transfer"
+    },
+    {
+      "source": "Value Transfer",
+      "target": "Decentralized Finance",
+      "source_domain": "cross-domain",
+      "source_file": "Value Transfer"
+    },
+    {
+      "source": "Machine Translation",
+      "target": "Natural Language Processing",
+      "source_domain": "metaverse",
+      "source_file": "Machine Translation"
+    },
+    {
+      "source": "Machine Translation",
+      "target": "Transformer",
+      "source_domain": "metaverse",
+      "source_file": "Machine Translation"
+    },
+    {
+      "source": "Machine Translation",
+      "target": "Sequence-to-Sequence Model",
+      "source_domain": "metaverse",
+      "source_file": "Machine Translation"
+    },
+    {
+      "source": "Edge Computing Node",
+      "target": "Cloud Server",
+      "source_domain": "metaverse",
+      "source_file": "Edge Computing Node"
+    },
+    {
+      "source": "Edge Computing Node",
+      "target": "Edge Server",
+      "source_domain": "metaverse",
+      "source_file": "Edge Computing Node"
+    },
+    {
+      "source": "Edge Computing Node",
+      "target": "Fog Computing Node",
+      "source_domain": "metaverse",
+      "source_file": "Edge Computing Node"
+    },
+    {
+      "source": "Edge Computing Node",
+      "target": "MEC Host",
+      "source_domain": "metaverse",
+      "source_file": "Edge Computing Node"
+    },
+    {
+      "source": "Cognitive Feedback Interface",
+      "target": "Brain-Computer Interface",
+      "source_domain": "metaverse",
+      "source_file": "Cognitive Feedback Interface"
+    },
+    {
+      "source": "Cognitive Feedback Interface",
+      "target": "Adaptive Interface",
+      "source_domain": "metaverse",
+      "source_file": "Cognitive Feedback Interface"
+    },
+    {
+      "source": "Cognitive Feedback Interface",
+      "target": "User Experience",
+      "source_domain": "metaverse",
+      "source_file": "Cognitive Feedback Interface"
+    },
+    {
+      "source": "AI Deployment",
+      "target": "AI Lifecycle",
+      "source_domain": "metaverse",
+      "source_file": "AI Deployment"
+    },
+    {
+      "source": "AI Deployment",
+      "target": "AI Development",
+      "source_domain": "metaverse",
+      "source_file": "AI Deployment"
+    },
+    {
+      "source": "AI Deployment",
+      "target": "AI Monitoring",
+      "source_domain": "metaverse",
+      "source_file": "AI Deployment"
+    },
+    {
+      "source": "AI Deployment",
+      "target": "AI Operator",
+      "source_domain": "metaverse",
+      "source_file": "AI Deployment"
+    },
+    {
+      "source": "AI Deployment",
+      "target": "AI User",
+      "source_domain": "metaverse",
+      "source_file": "AI Deployment"
+    },
+    {
+      "source": "AI Deployment",
+      "target": "AI Provider",
+      "source_domain": "metaverse",
+      "source_file": "AI Deployment"
+    },
+    {
+      "source": "AI Deployment",
+      "target": "Model Performance",
+      "source_domain": "metaverse",
+      "source_file": "AI Deployment"
+    },
+    {
+      "source": "AI Deployment",
+      "target": "Human Oversight",
+      "source_domain": "metaverse",
+      "source_file": "AI Deployment"
+    },
+    {
+      "source": "AI Deployment",
+      "target": "Risk Management",
+      "source_domain": "metaverse",
+      "source_file": "AI Deployment"
+    },
+    {
+      "source": "Cognitive Load Metric",
+      "target": "Usability Metric",
+      "source_domain": "metaverse",
+      "source_file": "Cognitive Load Metric"
+    },
+    {
+      "source": "Cognitive Load Metric",
+      "target": "Mental Workload Assessment",
+      "source_domain": "metaverse",
+      "source_file": "Cognitive Load Metric"
+    },
+    {
+      "source": "Cognitive Load Metric",
+      "target": "NASA-TLX",
+      "source_domain": "metaverse",
+      "source_file": "Cognitive Load Metric"
+    },
+    {
+      "source": "Digital Identity Wallet",
+      "target": "Digital Identity",
+      "source_domain": "metaverse",
+      "source_file": "Digital Identity Wallet"
+    },
+    {
+      "source": "Digital Identity Wallet",
+      "target": "Blockchain Identity",
+      "source_domain": "metaverse",
+      "source_file": "Digital Identity Wallet"
+    },
+    {
+      "source": "Digital Identity Wallet",
+      "target": "Verifiable Credentials",
+      "source_domain": "metaverse",
+      "source_file": "Digital Identity Wallet"
+    },
+    {
+      "source": "Digital Identity Wallet",
+      "target": "Public Key Infrastructure",
+      "source_domain": "metaverse",
+      "source_file": "Digital Identity Wallet"
+    },
+    {
+      "source": "Digital Identity Wallet",
+      "target": "Identity Provider",
+      "source_domain": "metaverse",
+      "source_file": "Digital Identity Wallet"
+    },
+    {
+      "source": "Digital Identity Wallet",
+      "target": "Digital Signature",
+      "source_domain": "metaverse",
+      "source_file": "Digital Identity Wallet"
+    },
+    {
+      "source": "Digital Identity Framework",
+      "target": "Self-Sovereign Identity",
+      "source_domain": "metaverse",
+      "source_file": "Digital Identity Framework"
+    },
+    {
+      "source": "Digital Identity Framework",
+      "target": "Decentralized Identity",
+      "source_domain": "metaverse",
+      "source_file": "Digital Identity Framework"
+    },
+    {
+      "source": "Digital Identity Framework",
+      "target": "Verifiable Credentials",
+      "source_domain": "metaverse",
+      "source_file": "Digital Identity Framework"
+    },
+    {
+      "source": "ADAS",
+      "target": "Autonomous Vehicle",
+      "source_domain": "metaverse",
+      "source_file": "ADAS"
+    },
+    {
+      "source": "ADAS",
+      "target": "Perception System",
+      "source_domain": "metaverse",
+      "source_file": "ADAS"
+    },
+    {
+      "source": "ADAS",
+      "target": "Sensor Fusion",
+      "source_domain": "metaverse",
+      "source_file": "ADAS"
+    },
+    {
+      "source": "Explainable AI",
+      "target": "Interpretable AI",
+      "source_domain": "metaverse",
+      "source_file": "Explainable AI"
+    },
+    {
+      "source": "Explainable AI",
+      "target": "Model Interpretability",
+      "source_domain": "metaverse",
+      "source_file": "Explainable AI"
+    },
+    {
+      "source": "Explainable AI",
+      "target": "SHAP",
+      "source_domain": "metaverse",
+      "source_file": "Explainable AI"
+    },
+    {
+      "source": "Explainable AI",
+      "target": "LIME",
+      "source_domain": "metaverse",
+      "source_file": "Explainable AI"
+    },
+    {
+      "source": "Explainable AI",
+      "target": "Algorithmic Transparency",
+      "source_domain": "metaverse",
+      "source_file": "Explainable AI"
+    },
+    {
+      "source": "Explainable AI",
+      "target": "IEEE P2976 (XAI)",
+      "source_domain": "metaverse",
+      "source_file": "Explainable AI"
+    },
+    {
+      "source": "Sensor Fusion",
+      "target": "Perception System",
+      "source_domain": "metaverse",
+      "source_file": "Sensor Fusion"
+    },
+    {
+      "source": "Sensor Fusion",
+      "target": "Object Detection",
+      "source_domain": "metaverse",
+      "source_file": "Sensor Fusion"
+    },
+    {
+      "source": "Sensor Fusion",
+      "target": "Localisation",
+      "source_domain": "metaverse",
+      "source_file": "Sensor Fusion"
+    },
+    {
+      "source": "Human in the Loop",
+      "target": "Human Oversight",
+      "source_domain": "metaverse",
+      "source_file": "Human-in-the-Loop"
+    },
+    {
+      "source": "Human in the Loop",
+      "target": "Human-on-the-Loop",
+      "source_domain": "metaverse",
+      "source_file": "Human-in-the-Loop"
+    },
+    {
+      "source": "Human in the Loop",
+      "target": "AI Operator",
+      "source_domain": "metaverse",
+      "source_file": "Human-in-the-Loop"
+    },
+    {
+      "source": "Human in the Loop",
+      "target": "Explainability",
+      "source_domain": "metaverse",
+      "source_file": "Human-in-the-Loop"
+    },
+    {
+      "source": "Human in the Loop",
+      "target": "Accountability",
+      "source_domain": "metaverse",
+      "source_file": "Human-in-the-Loop"
+    },
+    {
+      "source": "Human in the Loop",
+      "target": "Automation Bias",
+      "source_domain": "metaverse",
+      "source_file": "Human-in-the-Loop"
+    },
+    {
+      "source": "Human in the Loop",
+      "target": "AI Governance",
+      "source_domain": "metaverse",
+      "source_file": "Human-in-the-Loop"
+    },
+    {
+      "source": "Human in the Loop",
+      "target": "Risk Management",
+      "source_domain": "metaverse",
+      "source_file": "Human-in-the-Loop"
+    },
+    {
+      "source": "Human in the Loop",
+      "target": "Decision Support",
+      "source_domain": "metaverse",
+      "source_file": "Human-in-the-Loop"
+    },
+    {
+      "source": "Data Anonymization Pipeline",
+      "target": "K-Anonymity",
+      "source_domain": "metaverse",
+      "source_file": "Data Anonymization Pipeline"
+    },
+    {
+      "source": "Data Anonymization Pipeline",
+      "target": "Data Masking",
+      "source_domain": "metaverse",
+      "source_file": "Data Anonymization Pipeline"
+    },
+    {
+      "source": "Data Anonymization Pipeline",
+      "target": "Pseudonymization",
+      "source_domain": "metaverse",
+      "source_file": "Data Anonymization Pipeline"
+    },
+    {
+      "source": "Data Anonymization Pipeline",
+      "target": "Synthetic Data Generation",
+      "source_domain": "metaverse",
+      "source_file": "Data Anonymization Pipeline"
+    },
+    {
+      "source": "Data Anonymization Pipeline",
+      "target": "Data Provenance",
+      "source_domain": "metaverse",
+      "source_file": "Data Anonymization Pipeline"
+    },
+    {
+      "source": "Metaverse Safety Protocol",
+      "target": "Accessibility Standard",
+      "source_domain": "metaverse",
+      "source_file": "Metaverse Safety Protocol"
+    },
+    {
+      "source": "Metaverse Safety Protocol",
+      "target": "Privacy Protocol",
+      "source_domain": "metaverse",
+      "source_file": "Metaverse Safety Protocol"
+    },
+    {
+      "source": "Metaverse Safety Protocol",
+      "target": "Content Moderation System",
+      "source_domain": "metaverse",
+      "source_file": "Metaverse Safety Protocol"
+    },
+    {
+      "source": "Metaverse Safety Protocol",
+      "target": "User Safety",
+      "source_domain": "metaverse",
+      "source_file": "Metaverse Safety Protocol"
+    },
+    {
+      "source": "Language Modeling",
+      "target": "Natural Language Processing",
+      "source_domain": "metaverse",
+      "source_file": "Language Modeling"
+    },
+    {
+      "source": "Language Modeling",
+      "target": "Large Language Model",
+      "source_domain": "metaverse",
+      "source_file": "Language Modeling"
+    },
+    {
+      "source": "Language Modeling",
+      "target": "Transformer",
+      "source_domain": "metaverse",
+      "source_file": "Language Modeling"
+    },
+    {
+      "source": "Language Modeling",
+      "target": "Text Generation",
+      "source_domain": "metaverse",
+      "source_file": "Language Modeling"
+    },
+    {
+      "source": "Language Modeling",
+      "target": "GPT",
+      "source_domain": "metaverse",
+      "source_file": "Language Modeling"
+    },
+    {
+      "source": "Language Modeling",
+      "target": "BERT",
+      "source_domain": "metaverse",
+      "source_file": "Language Modeling"
+    },
+    {
+      "source": "Language Modeling",
+      "target": "Self-Attention",
+      "source_domain": "metaverse",
+      "source_file": "Language Modeling"
+    },
+    {
+      "source": "Interpretable AI",
+      "target": "Explainable AI",
+      "source_domain": "metaverse",
+      "source_file": "Interpretable AI"
+    },
+    {
+      "source": "Interpretable AI",
+      "target": "Model Interpretability",
+      "source_domain": "metaverse",
+      "source_file": "Interpretable AI"
+    },
+    {
+      "source": "Interpretable AI",
+      "target": "Black Box Model",
+      "source_domain": "metaverse",
+      "source_file": "Interpretable AI"
+    },
+    {
+      "source": "Interpretable AI",
+      "target": "Decision Tree Approximation",
+      "source_domain": "metaverse",
+      "source_file": "Interpretable AI"
+    },
+    {
+      "source": "Interpretable AI",
+      "target": "Intrinsic Interpretability",
+      "source_domain": "metaverse",
+      "source_file": "Interpretable AI"
+    },
+    {
+      "source": "Interpretable AI",
+      "target": "Model Transparency",
+      "source_domain": "metaverse",
+      "source_file": "Interpretable AI"
+    },
+    {
+      "source": "Recall",
+      "target": "Model Performance",
+      "source_domain": "metaverse",
+      "source_file": "Recall"
+    },
+    {
+      "source": "Recall",
+      "target": "Precision",
+      "source_domain": "metaverse",
+      "source_file": "Recall"
+    },
+    {
+      "source": "Recall",
+      "target": "F1 Score",
+      "source_domain": "metaverse",
+      "source_file": "Recall"
+    },
+    {
+      "source": "Recall",
+      "target": "Accuracy",
+      "source_domain": "metaverse",
+      "source_file": "Recall"
+    },
+    {
+      "source": "Recall",
+      "target": "Confusion Matrix",
+      "source_domain": "metaverse",
+      "source_file": "Recall"
+    },
+    {
+      "source": "Recall",
+      "target": "Precision-Recall Curve",
+      "source_domain": "metaverse",
+      "source_file": "Recall"
+    },
+    {
+      "source": "Recall",
+      "target": "ROC Curve",
+      "source_domain": "metaverse",
+      "source_file": "Recall"
+    },
+    {
+      "source": "Recall",
+      "target": "Sensitivity",
+      "source_domain": "metaverse",
+      "source_file": "Recall"
+    },
+    {
+      "source": "Recall",
+      "target": "Specificity",
+      "source_domain": "metaverse",
+      "source_file": "Recall"
+    },
+    {
+      "source": "Recall",
+      "target": "True Positive Rate",
+      "source_domain": "metaverse",
+      "source_file": "Recall"
+    },
+    {
+      "source": "Question Answering",
+      "target": "Natural Language Processing",
+      "source_domain": "metaverse",
+      "source_file": "Question Answering"
+    },
+    {
+      "source": "Question Answering",
+      "target": "Information Retrieval",
+      "source_domain": "metaverse",
+      "source_file": "Question Answering"
+    },
+    {
+      "source": "Question Answering",
+      "target": "Dialogue System",
+      "source_domain": "metaverse",
+      "source_file": "Question Answering"
+    },
+    {
+      "source": "Precision Medicine",
+      "target": "Medical AI",
+      "source_domain": "metaverse",
+      "source_file": "Precision Medicine"
+    },
+    {
+      "source": "Precision Medicine",
+      "target": "Drug Discovery AI",
+      "source_domain": "metaverse",
+      "source_file": "Precision Medicine"
+    },
+    {
+      "source": "Precision Medicine",
+      "target": "Genomics",
+      "source_domain": "metaverse",
+      "source_file": "Precision Medicine"
+    },
+    {
+      "source": "Text Generation",
+      "target": "Natural Language Processing",
+      "source_domain": "metaverse",
+      "source_file": "Text Generation"
+    },
+    {
+      "source": "Text Generation",
+      "target": "Language Modeling",
+      "source_domain": "metaverse",
+      "source_file": "Text Generation"
+    },
+    {
+      "source": "Text Generation",
+      "target": "Large Language Model",
+      "source_domain": "metaverse",
+      "source_file": "Text Generation"
+    },
+    {
+      "source": "Text Generation",
+      "target": "GPT",
+      "source_domain": "metaverse",
+      "source_file": "Text Generation"
+    },
+    {
+      "source": "Local Explanation",
+      "target": "Global Explanation",
+      "source_domain": "metaverse",
+      "source_file": "Local Explanation"
+    },
+    {
+      "source": "Local Explanation",
+      "target": "SHAP",
+      "source_domain": "metaverse",
+      "source_file": "Local Explanation"
+    },
+    {
+      "source": "Local Explanation",
+      "target": "LIME",
+      "source_domain": "metaverse",
+      "source_file": "Local Explanation"
+    },
+    {
+      "source": "Local Explanation",
+      "target": "Counterfactual Explanation",
+      "source_domain": "metaverse",
+      "source_file": "Local Explanation"
+    },
+    {
+      "source": "Local Explanation",
+      "target": "Feature Attribution",
+      "source_domain": "metaverse",
+      "source_file": "Local Explanation"
+    },
+    {
+      "source": "Local Explanation",
+      "target": "Integrated Gradients",
+      "source_domain": "metaverse",
+      "source_file": "Local Explanation"
+    },
+    {
+      "source": "Stablecoin",
+      "target": "Fiat Currency",
+      "source_domain": "metaverse",
+      "source_file": "Stablecoin"
+    },
+    {
+      "source": "Stablecoin",
+      "target": "Central Bank Digital Currency",
+      "source_domain": "metaverse",
+      "source_file": "Stablecoin"
+    },
+    {
+      "source": "Stablecoin",
+      "target": "Payment System",
+      "source_domain": "metaverse",
+      "source_file": "Stablecoin"
+    },
+    {
+      "source": "Stablecoin",
+      "target": "Liquidity Pool",
+      "source_domain": "metaverse",
+      "source_file": "Stablecoin"
+    },
+    {
+      "source": "Neural 3D Generation",
+      "target": "Generative Design Tool",
+      "source_domain": "ai-grounded",
+      "source_file": "Neural 3D Generation"
+    },
+    {
+      "source": "Neural 3D Generation",
+      "target": "Procedural Content Generation",
+      "source_domain": "ai-grounded",
+      "source_file": "Neural 3D Generation"
+    },
+    {
+      "source": "Neural 3D Generation",
+      "target": "Image Generation",
+      "source_domain": "ai-grounded",
+      "source_file": "Neural 3D Generation"
+    },
+    {
+      "source": "Neural 3D Generation",
+      "target": "Computer Vision",
+      "source_domain": "ai-grounded",
+      "source_file": "Neural 3D Generation"
+    },
+    {
+      "source": "Radiology AI",
+      "target": "Medical Imaging AI",
+      "source_domain": "metaverse",
+      "source_file": "Radiology AI"
+    },
+    {
+      "source": "Radiology AI",
+      "target": "Pathology AI",
+      "source_domain": "metaverse",
+      "source_file": "Radiology AI"
+    },
+    {
+      "source": "Radiology AI",
+      "target": "DICOM",
+      "source_domain": "metaverse",
+      "source_file": "Radiology AI"
+    },
+    {
+      "source": "Loyalty Token",
+      "target": "Points System",
+      "source_domain": "metaverse",
+      "source_file": "Loyalty Token"
+    },
+    {
+      "source": "Loyalty Token",
+      "target": "Reward Token",
+      "source_domain": "metaverse",
+      "source_file": "Loyalty Token"
+    },
+    {
+      "source": "Loyalty Token",
+      "target": "Utility Token",
+      "source_domain": "metaverse",
+      "source_file": "Loyalty Token"
+    },
+    {
+      "source": "Loyalty Token",
+      "target": "Virtual Currency",
+      "source_domain": "metaverse",
+      "source_file": "Loyalty Token"
+    },
+    {
+      "source": "Model Interpretability",
+      "target": "Explainable AI",
+      "source_domain": "metaverse",
+      "source_file": "Model Interpretability"
+    },
+    {
+      "source": "Model Interpretability",
+      "target": "Interpretable AI",
+      "source_domain": "metaverse",
+      "source_file": "Model Interpretability"
+    },
+    {
+      "source": "Model Interpretability",
+      "target": "Local Explanation",
+      "source_domain": "metaverse",
+      "source_file": "Model Interpretability"
+    },
+    {
+      "source": "Model Interpretability",
+      "target": "Global Explanation",
+      "source_domain": "metaverse",
+      "source_file": "Model Interpretability"
+    },
+    {
+      "source": "Model Interpretability",
+      "target": "Feature Importance",
+      "source_domain": "metaverse",
+      "source_file": "Model Interpretability"
+    },
+    {
+      "source": "Model Interpretability",
+      "target": "SHAP",
+      "source_domain": "metaverse",
+      "source_file": "Model Interpretability"
+    },
+    {
+      "source": "Model Interpretability",
+      "target": "LIME",
+      "source_domain": "metaverse",
+      "source_file": "Model Interpretability"
+    },
+    {
+      "source": "XR Accessibility Guideline",
+      "target": "Accessibility Standard",
+      "source_domain": "metaverse",
+      "source_file": "XR Accessibility Guideline"
+    },
+    {
+      "source": "XR Accessibility Guideline",
+      "target": "User Interface",
+      "source_domain": "metaverse",
+      "source_file": "XR Accessibility Guideline"
+    },
+    {
+      "source": "XR Accessibility Guideline",
+      "target": "Avatar",
+      "source_domain": "metaverse",
+      "source_file": "XR Accessibility Guideline"
+    },
+    {
+      "source": "XR Accessibility Guideline",
+      "target": "Spatial Audio",
+      "source_domain": "metaverse",
+      "source_file": "XR Accessibility Guideline"
+    },
+    {
+      "source": "Data Fabric Architecture",
+      "target": "Data Mesh",
+      "source_domain": "metaverse",
+      "source_file": "Data Fabric Architecture"
+    },
+    {
+      "source": "Data Fabric Architecture",
+      "target": "Data Lake",
+      "source_domain": "metaverse",
+      "source_file": "Data Fabric Architecture"
+    },
+    {
+      "source": "Data Fabric Architecture",
+      "target": "Data Warehouse",
+      "source_domain": "metaverse",
+      "source_file": "Data Fabric Architecture"
+    },
+    {
+      "source": "Data Fabric Architecture",
+      "target": "Knowledge Graph",
+      "source_domain": "metaverse",
+      "source_file": "Data Fabric Architecture"
+    },
+    {
+      "source": "Data Fabric Architecture",
+      "target": "Semantic Web",
+      "source_domain": "metaverse",
+      "source_file": "Data Fabric Architecture"
+    },
+    {
+      "source": "Generative Design Tool",
+      "target": "AI Assistant",
+      "source_domain": "metaverse",
+      "source_file": "Generative Design Tool"
+    },
+    {
+      "source": "Generative Design Tool",
+      "target": "3D Modeling Software",
+      "source_domain": "metaverse",
+      "source_file": "Generative Design Tool"
+    },
+    {
+      "source": "Generative Design Tool",
+      "target": "CAD System",
+      "source_domain": "metaverse",
+      "source_file": "Generative Design Tool"
+    },
+    {
+      "source": "Generative Design Tool",
+      "target": "Computational Design",
+      "source_domain": "metaverse",
+      "source_file": "Generative Design Tool"
+    },
+    {
+      "source": "Perception System",
+      "target": "Sensor Fusion",
+      "source_domain": "metaverse",
+      "source_file": "Perception System"
+    },
+    {
+      "source": "Perception System",
+      "target": "Object Detection",
+      "source_domain": "metaverse",
+      "source_file": "Perception System"
+    },
+    {
+      "source": "Perception System",
+      "target": "Computer Vision",
+      "source_domain": "metaverse",
+      "source_file": "Perception System"
+    },
+    {
+      "source": "Data Protection",
+      "target": "Data Anonymization Pipeline",
+      "source_domain": "metaverse",
+      "source_file": "Data Protection"
+    },
+    {
+      "source": "Data Protection",
+      "target": "Pseudonymization",
+      "source_domain": "metaverse",
+      "source_file": "Data Protection"
+    },
+    {
+      "source": "Data Protection",
+      "target": "Consent Management",
+      "source_domain": "metaverse",
+      "source_file": "Data Protection"
+    },
+    {
+      "source": "Data Protection",
+      "target": "Data Provenance",
+      "source_domain": "metaverse",
+      "source_file": "Data Protection"
+    },
+    {
+      "source": "Root Mean Square Error",
+      "target": "Model Performance",
+      "source_domain": "metaverse",
+      "source_file": "Root Mean Square Error"
+    },
+    {
+      "source": "Root Mean Square Error",
+      "target": "Mean Absolute Error",
+      "source_domain": "metaverse",
+      "source_file": "Root Mean Square Error"
+    },
+    {
+      "source": "Root Mean Square Error",
+      "target": "Mean Squared Error",
+      "source_domain": "metaverse",
+      "source_file": "Root Mean Square Error"
+    },
+    {
+      "source": "Root Mean Square Error",
+      "target": "Regression",
+      "source_domain": "metaverse",
+      "source_file": "Root Mean Square Error"
+    },
+    {
+      "source": "Root Mean Square Error",
+      "target": "Model Evaluation",
+      "source_domain": "metaverse",
+      "source_file": "Root Mean Square Error"
+    },
+    {
+      "source": "Root Mean Square Error",
+      "target": "Error Analysis",
+      "source_domain": "metaverse",
+      "source_file": "Root Mean Square Error"
+    },
+    {
+      "source": "Root Mean Square Error",
+      "target": "Standard Deviation",
+      "source_domain": "metaverse",
+      "source_file": "Root Mean Square Error"
+    },
+    {
+      "source": "Root Mean Square Error",
+      "target": "Bias-Variance Trade-off",
+      "source_domain": "metaverse",
+      "source_file": "Root Mean Square Error"
+    },
+    {
+      "source": "Root Mean Square Error",
+      "target": "RMSLE",
+      "source_domain": "metaverse",
+      "source_file": "Root Mean Square Error"
+    },
+    {
+      "source": "Motion Planning",
+      "target": "Path Planning",
+      "source_domain": "metaverse",
+      "source_file": "Motion Planning"
+    },
+    {
+      "source": "Motion Planning",
+      "target": "Trajectory Optimisation",
+      "source_domain": "metaverse",
+      "source_file": "Motion Planning"
+    },
+    {
+      "source": "Motion Planning",
+      "target": "Control Theory",
+      "source_domain": "metaverse",
+      "source_file": "Motion Planning"
+    },
+    {
+      "source": "F1 Score",
+      "target": "Model Performance",
+      "source_domain": "metaverse",
+      "source_file": "F1 Score"
+    },
+    {
+      "source": "F1 Score",
+      "target": "Precision",
+      "source_domain": "metaverse",
+      "source_file": "F1 Score"
+    },
+    {
+      "source": "F1 Score",
+      "target": "Recall",
+      "source_domain": "metaverse",
+      "source_file": "F1 Score"
+    },
+    {
+      "source": "F1 Score",
+      "target": "Accuracy",
+      "source_domain": "metaverse",
+      "source_file": "F1 Score"
+    },
+    {
+      "source": "F1 Score",
+      "target": "Confusion Matrix",
+      "source_domain": "metaverse",
+      "source_file": "F1 Score"
+    },
+    {
+      "source": "F1 Score",
+      "target": "F-beta Score",
+      "source_domain": "metaverse",
+      "source_file": "F1 Score"
+    },
+    {
+      "source": "F1 Score",
+      "target": "Precision-Recall Curve",
+      "source_domain": "metaverse",
+      "source_file": "F1 Score"
+    },
+    {
+      "source": "F1 Score",
+      "target": "ROC-AUC",
+      "source_domain": "metaverse",
+      "source_file": "F1 Score"
+    },
+    {
+      "source": "F1 Score",
+      "target": "Macro F1",
+      "source_domain": "metaverse",
+      "source_file": "F1 Score"
+    },
+    {
+      "source": "F1 Score",
+      "target": "Micro F1",
+      "source_domain": "metaverse",
+      "source_file": "F1 Score"
+    },
+    {
+      "source": "glTF (3D File Format)",
+      "target": "USD",
+      "source_domain": "metaverse",
+      "source_file": "glTF (3D File Format)"
+    },
+    {
+      "source": "glTF (3D File Format)",
+      "target": "FBX",
+      "source_domain": "metaverse",
+      "source_file": "glTF (3D File Format)"
+    },
+    {
+      "source": "glTF (3D File Format)",
+      "target": "OBJ",
+      "source_domain": "metaverse",
+      "source_file": "glTF (3D File Format)"
+    },
+    {
+      "source": "glTF (3D File Format)",
+      "target": "Collada",
+      "source_domain": "metaverse",
+      "source_file": "glTF (3D File Format)"
+    },
+    {
+      "source": "glTF (3D File Format)",
+      "target": "WebXR",
+      "source_domain": "metaverse",
+      "source_file": "glTF (3D File Format)"
+    },
+    {
+      "source": "glTF (3D File Format)",
+      "target": "Three.js",
+      "source_domain": "metaverse",
+      "source_file": "glTF (3D File Format)"
+    },
+    {
+      "source": "glTF (3D File Format)",
+      "target": "Babylon.js",
+      "source_domain": "metaverse",
+      "source_file": "glTF (3D File Format)"
+    },
+    {
+      "source": "BC 0461 decentralized autonomous organization",
+      "target": "BC-0142-smart-contract",
+      "source_domain": "metaverse",
+      "source_file": "BC-0461-decentralized-autonomous-organization"
+    },
+    {
+      "source": "BC 0461 decentralized autonomous organization",
+      "target": "BC-0201-decentralization",
+      "source_domain": "metaverse",
+      "source_file": "BC-0461-decentralized-autonomous-organization"
+    },
+    {
+      "source": "Carbon Credit Token",
+      "target": "Digital Asset",
+      "source_domain": "metaverse",
+      "source_file": "Carbon Credit Token"
+    },
+    {
+      "source": "Carbon Credit Token",
+      "target": "NFT",
+      "source_domain": "metaverse",
+      "source_file": "Carbon Credit Token"
+    },
+    {
+      "source": "Carbon Credit Token",
+      "target": "Cryptocurrency",
+      "source_domain": "metaverse",
+      "source_file": "Carbon Credit Token"
+    },
+    {
+      "source": "Carbon Credit Token",
+      "target": "Environmental Token",
+      "source_domain": "metaverse",
+      "source_file": "Carbon Credit Token"
+    },
+    {
+      "source": "Carbon Credit Token",
+      "target": "Sustainability Metric",
+      "source_domain": "metaverse",
+      "source_file": "Carbon Credit Token"
+    },
+    {
+      "source": "Digital Goods Registry",
+      "target": "NFT Marketplace",
+      "source_domain": "metaverse",
+      "source_file": "Digital Goods Registry"
+    },
+    {
+      "source": "Digital Goods Registry",
+      "target": "Digital Asset Management",
+      "source_domain": "metaverse",
+      "source_file": "Digital Goods Registry"
+    },
+    {
+      "source": "Digital Goods Registry",
+      "target": "Intellectual Property Registry",
+      "source_domain": "metaverse",
+      "source_file": "Digital Goods Registry"
+    },
+    {
+      "source": "Digital Goods Registry",
+      "target": "Product Catalog",
+      "source_domain": "metaverse",
+      "source_file": "Digital Goods Registry"
+    },
+    {
+      "source": "Deepfakes",
+      "target": "Synthetic Media",
+      "source_domain": "metaverse",
+      "source_file": "Deepfakes"
+    },
+    {
+      "source": "Deepfakes",
+      "target": "Generative AI",
+      "source_domain": "metaverse",
+      "source_file": "Deepfakes"
+    },
+    {
+      "source": "Deepfakes",
+      "target": "Neural Rendering",
+      "source_domain": "metaverse",
+      "source_file": "Deepfakes"
+    },
+    {
+      "source": "Deepfakes",
+      "target": "Digital Identity",
+      "source_domain": "metaverse",
+      "source_file": "Deepfakes"
+    },
+    {
+      "source": "Deepfakes",
+      "target": "Media Authentication",
+      "source_domain": "metaverse",
+      "source_file": "Deepfakes"
+    },
+    {
+      "source": "Feature Importance",
+      "target": "Permutation Importance",
+      "source_domain": "metaverse",
+      "source_file": "Feature Importance"
+    },
+    {
+      "source": "Feature Importance",
+      "target": "SHAP",
+      "source_domain": "metaverse",
+      "source_file": "Feature Importance"
+    },
+    {
+      "source": "Feature Importance",
+      "target": "Feature Attribution",
+      "source_domain": "metaverse",
+      "source_file": "Feature Importance"
+    },
+    {
+      "source": "Feature Importance",
+      "target": "Global Explanation",
+      "source_domain": "metaverse",
+      "source_file": "Feature Importance"
+    },
+    {
+      "source": "Feature Importance",
+      "target": "Feature Selection",
+      "source_domain": "metaverse",
+      "source_file": "Feature Importance"
+    },
+    {
+      "source": "Feature Importance",
+      "target": "Partial Dependence Plot",
+      "source_domain": "metaverse",
+      "source_file": "Feature Importance"
+    },
+    {
+      "source": "Sentiment Analysis",
+      "target": "Natural Language Processing",
+      "source_domain": "metaverse",
+      "source_file": "Sentiment Analysis"
+    },
+    {
+      "source": "Sentiment Analysis",
+      "target": "Text Classification",
+      "source_domain": "metaverse",
+      "source_file": "Sentiment Analysis"
+    },
+    {
+      "source": "Sentiment Analysis",
+      "target": "Opinion Mining",
+      "source_domain": "metaverse",
+      "source_file": "Sentiment Analysis"
+    },
+    {
+      "source": "Edge Network",
+      "target": "Edge Mesh Network",
+      "source_domain": "metaverse",
+      "source_file": "Edge Network"
+    },
+    {
+      "source": "Edge Network",
+      "target": "Cloud Network",
+      "source_domain": "metaverse",
+      "source_file": "Edge Network"
+    },
+    {
+      "source": "Edge Network",
+      "target": "Content Delivery Network",
+      "source_domain": "metaverse",
+      "source_file": "Edge Network"
+    },
+    {
+      "source": "Edge Network",
+      "target": "Multi-access Edge Computing",
+      "source_domain": "metaverse",
+      "source_file": "Edge Network"
+    },
+    {
+      "source": "Responsible AI",
+      "target": "Ethical AI",
+      "source_domain": "metaverse",
+      "source_file": "Responsible AI"
+    },
+    {
+      "source": "Responsible AI",
+      "target": "Trustworthy AI",
+      "source_domain": "metaverse",
+      "source_file": "Responsible AI"
+    },
+    {
+      "source": "Responsible AI",
+      "target": "AI Governance",
+      "source_domain": "metaverse",
+      "source_file": "Responsible AI"
+    },
+    {
+      "source": "Responsible AI",
+      "target": "Accountability",
+      "source_domain": "metaverse",
+      "source_file": "Responsible AI"
+    },
+    {
+      "source": "Responsible AI",
+      "target": "AI Risk Management",
+      "source_domain": "metaverse",
+      "source_file": "Responsible AI"
+    },
+    {
+      "source": "Responsible AI",
+      "target": "Fairness",
+      "source_domain": "metaverse",
+      "source_file": "Responsible AI"
+    },
+    {
+      "source": "Responsible AI",
+      "target": "Transparency",
+      "source_domain": "metaverse",
+      "source_file": "Responsible AI"
+    },
+    {
+      "source": "Responsible AI",
+      "target": "Human Oversight",
+      "source_domain": "metaverse",
+      "source_file": "Responsible AI"
+    },
+    {
+      "source": "Responsible AI",
+      "target": "AI Impact Assessment",
+      "source_domain": "metaverse",
+      "source_file": "Responsible AI"
+    },
+    {
+      "source": "Responsible AI",
+      "target": "AI Audit",
+      "source_domain": "metaverse",
+      "source_file": "Responsible AI"
+    },
+    {
+      "source": "Physics Engine",
+      "target": "Simulation Engine",
+      "source_domain": "metaverse",
+      "source_file": "Physics Engine"
+    },
+    {
+      "source": "Physics Engine",
+      "target": "Real-Time Renderer",
+      "source_domain": "metaverse",
+      "source_file": "Physics Engine"
+    },
+    {
+      "source": "Physics Engine",
+      "target": "Animation System",
+      "source_domain": "metaverse",
+      "source_file": "Physics Engine"
+    },
+    {
+      "source": "Digital Taxonomy Registry",
+      "target": "Taxonomy",
+      "source_domain": "metaverse",
+      "source_file": "Digital Taxonomy Registry"
+    },
+    {
+      "source": "Digital Taxonomy Registry",
+      "target": "Classification System",
+      "source_domain": "metaverse",
+      "source_file": "Digital Taxonomy Registry"
+    },
+    {
+      "source": "Digital Taxonomy Registry",
+      "target": "Controlled Vocabulary",
+      "source_domain": "metaverse",
+      "source_file": "Digital Taxonomy Registry"
+    },
+    {
+      "source": "Digital Taxonomy Registry",
+      "target": "Digital Asset",
+      "source_domain": "metaverse",
+      "source_file": "Digital Taxonomy Registry"
+    },
+    {
+      "source": "Digital Taxonomy Registry",
+      "target": "Metadata Standard",
+      "source_domain": "metaverse",
+      "source_file": "Digital Taxonomy Registry"
+    },
+    {
+      "source": "Digital Taxonomy Registry",
+      "target": "Data Governance",
+      "source_domain": "metaverse",
+      "source_file": "Digital Taxonomy Registry"
+    },
+    {
+      "source": "Digital Taxonomy Registry",
+      "target": "Compliance Framework",
+      "source_domain": "metaverse",
+      "source_file": "Digital Taxonomy Registry"
+    },
+    {
+      "source": "AI Agent System",
+      "target": "Intelligent Virtual Entity",
+      "source_domain": "ai-grounded",
+      "source_file": "AI Agent System"
+    },
+    {
+      "source": "AI Agent System",
+      "target": "Autonomous Robot",
+      "source_domain": "ai-grounded",
+      "source_file": "AI Agent System"
+    },
+    {
+      "source": "AI Agent System",
+      "target": "AI Assistant",
+      "source_domain": "ai-grounded",
+      "source_file": "AI Agent System"
+    },
+    {
+      "source": "AI Agent System",
+      "target": "Game AI",
+      "source_domain": "ai-grounded",
+      "source_file": "AI Agent System"
+    },
+    {
+      "source": "Precision",
+      "target": "Model Performance",
+      "source_domain": "metaverse",
+      "source_file": "Precision"
+    },
+    {
+      "source": "Precision",
+      "target": "Recall",
+      "source_domain": "metaverse",
+      "source_file": "Precision"
+    },
+    {
+      "source": "Precision",
+      "target": "F1 Score",
+      "source_domain": "metaverse",
+      "source_file": "Precision"
+    },
+    {
+      "source": "Precision",
+      "target": "Accuracy",
+      "source_domain": "metaverse",
+      "source_file": "Precision"
+    },
+    {
+      "source": "Precision",
+      "target": "Confusion Matrix",
+      "source_domain": "metaverse",
+      "source_file": "Precision"
+    },
+    {
+      "source": "Precision",
+      "target": "Precision-Recall Curve",
+      "source_domain": "metaverse",
+      "source_file": "Precision"
+    },
+    {
+      "source": "Precision",
+      "target": "True Positive",
+      "source_domain": "metaverse",
+      "source_file": "Precision"
+    },
+    {
+      "source": "Precision",
+      "target": "False Positive",
+      "source_domain": "metaverse",
+      "source_file": "Precision"
+    },
+    {
+      "source": "Precision",
+      "target": "Specificity",
+      "source_domain": "metaverse",
+      "source_file": "Precision"
+    },
+    {
+      "source": "Emotional Immersion",
+      "target": "Presence",
+      "source_domain": "metaverse",
+      "source_file": "Emotional Immersion"
+    },
+    {
+      "source": "Emotional Immersion",
+      "target": "Flow State",
+      "source_domain": "metaverse",
+      "source_file": "Emotional Immersion"
+    },
+    {
+      "source": "Emotional Immersion",
+      "target": "Affective Computing",
+      "source_domain": "metaverse",
+      "source_file": "Emotional Immersion"
+    },
+    {
+      "source": "Path Planning",
+      "target": "Motion Planning",
+      "source_domain": "metaverse",
+      "source_file": "Path Planning"
+    },
+    {
+      "source": "Path Planning",
+      "target": "Autonomous Navigation",
+      "source_domain": "metaverse",
+      "source_file": "Path Planning"
+    },
+    {
+      "source": "Path Planning",
+      "target": "Trajectory Optimisation",
+      "source_domain": "metaverse",
+      "source_file": "Path Planning"
+    },
+    {
+      "source": "Technology Adoption",
+      "target": "AI Adoption",
+      "source_domain": "cross-domain",
+      "source_file": "Technology Adoption"
+    },
+    {
+      "source": "Technology Adoption",
+      "target": "Blockchain Adoption",
+      "source_domain": "cross-domain",
+      "source_file": "Technology Adoption"
+    },
+    {
+      "source": "Technology Adoption",
+      "target": "Metaverse Adoption",
+      "source_domain": "cross-domain",
+      "source_file": "Technology Adoption"
+    },
+    {
+      "source": "Technology Adoption",
+      "target": "Robotics Integration",
+      "source_domain": "cross-domain",
+      "source_file": "Technology Adoption"
+    },
+    {
+      "source": "Mean Absolute Error",
+      "target": "Model Performance",
+      "source_domain": "metaverse",
+      "source_file": "Mean Absolute Error"
+    },
+    {
+      "source": "Mean Absolute Error",
+      "target": "Root Mean Square Error",
+      "source_domain": "metaverse",
+      "source_file": "Mean Absolute Error"
+    },
+    {
+      "source": "Mean Absolute Error",
+      "target": "Mean Squared Error",
+      "source_domain": "metaverse",
+      "source_file": "Mean Absolute Error"
+    },
+    {
+      "source": "Mean Absolute Error",
+      "target": "MAPE",
+      "source_domain": "metaverse",
+      "source_file": "Mean Absolute Error"
+    },
+    {
+      "source": "Mean Absolute Error",
+      "target": "Regression",
+      "source_domain": "metaverse",
+      "source_file": "Mean Absolute Error"
+    },
+    {
+      "source": "Mean Absolute Error",
+      "target": "Model Evaluation",
+      "source_domain": "metaverse",
+      "source_file": "Mean Absolute Error"
+    },
+    {
+      "source": "Mean Absolute Error",
+      "target": "Error Analysis",
+      "source_domain": "metaverse",
+      "source_file": "Mean Absolute Error"
+    },
+    {
+      "source": "Mean Absolute Error",
+      "target": "Median Absolute Error",
+      "source_domain": "metaverse",
+      "source_file": "Mean Absolute Error"
+    },
+    {
+      "source": "Middleware",
+      "target": "API",
+      "source_domain": "metaverse",
+      "source_file": "Middleware"
+    },
+    {
+      "source": "Middleware",
+      "target": "Message Broker",
+      "source_domain": "metaverse",
+      "source_file": "Middleware"
+    },
+    {
+      "source": "Middleware",
+      "target": "Service Mesh",
+      "source_domain": "metaverse",
+      "source_file": "Middleware"
+    },
+    {
+      "source": "Middleware",
+      "target": "Enterprise Service Bus",
+      "source_domain": "metaverse",
+      "source_file": "Middleware"
+    },
+    {
+      "source": "Game Engine",
+      "target": "Physics Engine",
+      "source_domain": "metaverse",
+      "source_file": "Game Engine"
+    },
+    {
+      "source": "Game Engine",
+      "target": "Rendering Pipeline",
+      "source_domain": "metaverse",
+      "source_file": "Game Engine"
+    },
+    {
+      "source": "Game Engine",
+      "target": "Authoring Tool",
+      "source_domain": "metaverse",
+      "source_file": "Game Engine"
+    },
+    {
+      "source": "Game Engine",
+      "target": "Virtual World",
+      "source_domain": "metaverse",
+      "source_file": "Game Engine"
+    },
+    {
+      "source": "Game Engine",
+      "target": "3D Model",
+      "source_domain": "metaverse",
+      "source_file": "Game Engine"
+    },
+    {
+      "source": "Medical Imaging AI",
+      "target": "Medical AI",
+      "source_domain": "metaverse",
+      "source_file": "Medical Imaging AI"
+    },
+    {
+      "source": "Medical Imaging AI",
+      "target": "Radiology AI",
+      "source_domain": "metaverse",
+      "source_file": "Medical Imaging AI"
+    },
+    {
+      "source": "Medical Imaging AI",
+      "target": "Pathology AI",
+      "source_domain": "metaverse",
+      "source_file": "Medical Imaging AI"
+    },
+    {
+      "source": "Medical Imaging AI",
+      "target": "Computer Vision",
+      "source_domain": "metaverse",
+      "source_file": "Medical Imaging AI"
+    },
+    {
+      "source": "Medical Imaging AI",
+      "target": "Convolutional Neural Network",
+      "source_domain": "metaverse",
+      "source_file": "Medical Imaging AI"
+    },
+    {
+      "source": "AI Lifecycle",
+      "target": "AI Governance",
+      "source_domain": "metaverse",
+      "source_file": "AI Lifecycle"
+    },
+    {
+      "source": "AI Lifecycle",
+      "target": "AI Development",
+      "source_domain": "metaverse",
+      "source_file": "AI Lifecycle"
+    },
+    {
+      "source": "AI Lifecycle",
+      "target": "AI Deployment",
+      "source_domain": "metaverse",
+      "source_file": "AI Lifecycle"
+    },
+    {
+      "source": "AI Lifecycle",
+      "target": "AI Monitoring",
+      "source_domain": "metaverse",
+      "source_file": "AI Lifecycle"
+    },
+    {
+      "source": "AI Lifecycle",
+      "target": "Human Oversight",
+      "source_domain": "metaverse",
+      "source_file": "AI Lifecycle"
+    },
+    {
+      "source": "AI Lifecycle",
+      "target": "AI Impact Assessment",
+      "source_domain": "metaverse",
+      "source_file": "AI Lifecycle"
+    },
+    {
+      "source": "AI Lifecycle",
+      "target": "Model Performance",
+      "source_domain": "metaverse",
+      "source_file": "AI Lifecycle"
+    },
+    {
+      "source": "AI Lifecycle",
+      "target": "Risk Management",
+      "source_domain": "metaverse",
+      "source_file": "AI Lifecycle"
+    },
+    {
+      "source": "AI User",
+      "target": "AI Provider",
+      "source_domain": "metaverse",
+      "source_file": "AI User"
+    },
+    {
+      "source": "AI User",
+      "target": "AI Operator",
+      "source_domain": "metaverse",
+      "source_file": "AI User"
+    },
+    {
+      "source": "AI User",
+      "target": "Human Oversight",
+      "source_domain": "metaverse",
+      "source_file": "AI User"
+    },
+    {
+      "source": "AI User",
+      "target": "Stakeholder",
+      "source_domain": "metaverse",
+      "source_file": "AI User"
+    },
+    {
+      "source": "AI User",
+      "target": "Transparency",
+      "source_domain": "metaverse",
+      "source_file": "AI User"
+    },
+    {
+      "source": "AI User",
+      "target": "Explainability",
+      "source_domain": "metaverse",
+      "source_file": "AI User"
+    },
+    {
+      "source": "AI User",
+      "target": "Fairness",
+      "source_domain": "metaverse",
+      "source_file": "AI User"
+    },
+    {
+      "source": "AI User",
+      "target": "Accessibility",
+      "source_domain": "metaverse",
+      "source_file": "AI User"
+    },
+    {
+      "source": "AI User",
+      "target": "User Experience",
+      "source_domain": "metaverse",
+      "source_file": "AI User"
+    },
+    {
+      "source": "AI User",
+      "target": "Informed Consent",
+      "source_domain": "metaverse",
+      "source_file": "AI User"
+    },
+    {
+      "source": "AI Game Agent",
+      "target": "Non-Player Character",
+      "source_domain": "ai-grounded",
+      "source_file": "AI Game Agent"
+    },
+    {
+      "source": "AI Game Agent",
+      "target": "Game AI",
+      "source_domain": "ai-grounded",
+      "source_file": "AI Game Agent"
+    },
+    {
+      "source": "AI Game Agent",
+      "target": "Virtual World",
+      "source_domain": "ai-grounded",
+      "source_file": "AI Game Agent"
+    },
+    {
+      "source": "Ethical AI",
+      "target": "Responsible AI",
+      "source_domain": "metaverse",
+      "source_file": "Ethical AI"
+    },
+    {
+      "source": "Ethical AI",
+      "target": "Trustworthy AI",
+      "source_domain": "metaverse",
+      "source_file": "Ethical AI"
+    },
+    {
+      "source": "Ethical AI",
+      "target": "AI Governance",
+      "source_domain": "metaverse",
+      "source_file": "Ethical AI"
+    },
+    {
+      "source": "Ethical AI",
+      "target": "Fairness",
+      "source_domain": "metaverse",
+      "source_file": "Ethical AI"
+    },
+    {
+      "source": "Ethical AI",
+      "target": "Transparency",
+      "source_domain": "metaverse",
+      "source_file": "Ethical AI"
+    },
+    {
+      "source": "Ethical AI",
+      "target": "Accountability",
+      "source_domain": "metaverse",
+      "source_file": "Ethical AI"
+    },
+    {
+      "source": "Ethical AI",
+      "target": "Privacy",
+      "source_domain": "metaverse",
+      "source_file": "Ethical AI"
+    },
+    {
+      "source": "Ethical AI",
+      "target": "Human Rights",
+      "source_domain": "metaverse",
+      "source_file": "Ethical AI"
+    },
+    {
+      "source": "Ethical AI",
+      "target": "AI Impact Assessment",
+      "source_domain": "metaverse",
+      "source_file": "Ethical AI"
+    },
+    {
+      "source": "Ethical AI",
+      "target": "Ethics by Design",
+      "source_domain": "metaverse",
+      "source_file": "Ethical AI"
+    },
+    {
+      "source": "AI Development",
+      "target": "AI Lifecycle",
+      "source_domain": "metaverse",
+      "source_file": "AI Development"
+    },
+    {
+      "source": "AI Development",
+      "target": "Training Data",
+      "source_domain": "metaverse",
+      "source_file": "AI Development"
+    },
+    {
+      "source": "AI Development",
+      "target": "AI Model",
+      "source_domain": "metaverse",
+      "source_file": "AI Development"
+    },
+    {
+      "source": "AI Development",
+      "target": "Machine Learning",
+      "source_domain": "metaverse",
+      "source_file": "AI Development"
+    },
+    {
+      "source": "AI Development",
+      "target": "Model Performance",
+      "source_domain": "metaverse",
+      "source_file": "AI Development"
+    },
+    {
+      "source": "AI Development",
+      "target": "AI Deployment",
+      "source_domain": "metaverse",
+      "source_file": "AI Development"
+    },
+    {
+      "source": "AI Development",
+      "target": "Bias",
+      "source_domain": "metaverse",
+      "source_file": "AI Development"
+    },
+    {
+      "source": "AI Development",
+      "target": "Fairness",
+      "source_domain": "metaverse",
+      "source_file": "AI Development"
+    },
+    {
+      "source": "AI Development",
+      "target": "Explainability",
+      "source_domain": "metaverse",
+      "source_file": "AI Development"
+    },
+    {
+      "source": "API Standard",
+      "target": "Integration API",
+      "source_domain": "metaverse",
+      "source_file": "API Standard"
+    },
+    {
+      "source": "API Standard",
+      "target": "Communication Interface",
+      "source_domain": "metaverse",
+      "source_file": "API Standard"
+    },
+    {
+      "source": "API Standard",
+      "target": "Interoperability",
+      "source_domain": "metaverse",
+      "source_file": "API Standard"
+    },
+    {
+      "source": "Consent Management",
+      "target": "Personal Data Store",
+      "source_domain": "metaverse",
+      "source_file": "Consent Management"
+    },
+    {
+      "source": "Consent Management",
+      "target": "Privacy Dashboard",
+      "source_domain": "metaverse",
+      "source_file": "Consent Management"
+    },
+    {
+      "source": "Consent Management",
+      "target": "Data Subject Rights",
+      "source_domain": "metaverse",
+      "source_file": "Consent Management"
+    },
+    {
+      "source": "Consent Management",
+      "target": "Cookie Management",
+      "source_domain": "metaverse",
+      "source_file": "Consent Management"
+    },
+    {
+      "source": "Confusion Matrix",
+      "target": "Model Performance",
+      "source_domain": "metaverse",
+      "source_file": "Confusion Matrix"
+    },
+    {
+      "source": "Confusion Matrix",
+      "target": "Accuracy",
+      "source_domain": "metaverse",
+      "source_file": "Confusion Matrix"
+    },
+    {
+      "source": "Confusion Matrix",
+      "target": "Precision",
+      "source_domain": "metaverse",
+      "source_file": "Confusion Matrix"
+    },
+    {
+      "source": "Confusion Matrix",
+      "target": "Recall",
+      "source_domain": "metaverse",
+      "source_file": "Confusion Matrix"
+    },
+    {
+      "source": "Confusion Matrix",
+      "target": "F1 Score",
+      "source_domain": "metaverse",
+      "source_file": "Confusion Matrix"
+    },
+    {
+      "source": "Confusion Matrix",
+      "target": "True Positive",
+      "source_domain": "metaverse",
+      "source_file": "Confusion Matrix"
+    },
+    {
+      "source": "Confusion Matrix",
+      "target": "False Positive",
+      "source_domain": "metaverse",
+      "source_file": "Confusion Matrix"
+    },
+    {
+      "source": "Confusion Matrix",
+      "target": "True Negative",
+      "source_domain": "metaverse",
+      "source_file": "Confusion Matrix"
+    },
+    {
+      "source": "Confusion Matrix",
+      "target": "False Negative",
+      "source_domain": "metaverse",
+      "source_file": "Confusion Matrix"
+    },
+    {
+      "source": "Confusion Matrix",
+      "target": "Sensitivity",
+      "source_domain": "metaverse",
+      "source_file": "Confusion Matrix"
+    },
+    {
+      "source": "Confusion Matrix",
+      "target": "Specificity",
+      "source_domain": "metaverse",
+      "source_file": "Confusion Matrix"
+    },
+    {
+      "source": "Natural Language Processing",
+      "target": "Machine Translation",
+      "source_domain": "metaverse",
+      "source_file": "Natural Language Processing"
+    },
+    {
+      "source": "Natural Language Processing",
+      "target": "Named Entity Recognition",
+      "source_domain": "metaverse",
+      "source_file": "Natural Language Processing"
+    },
+    {
+      "source": "Natural Language Processing",
+      "target": "Sentiment Analysis",
+      "source_domain": "metaverse",
+      "source_file": "Natural Language Processing"
+    },
+    {
+      "source": "Natural Language Processing",
+      "target": "Text Generation",
+      "source_domain": "metaverse",
+      "source_file": "Natural Language Processing"
+    },
+    {
+      "source": "Natural Language Processing",
+      "target": "Large Language Model",
+      "source_domain": "metaverse",
+      "source_file": "Natural Language Processing"
+    },
+    {
+      "source": "Natural Language Processing",
+      "target": "Transformer",
+      "source_domain": "metaverse",
+      "source_file": "Natural Language Processing"
+    },
+    {
+      "source": "Autonomous Navigation",
+      "target": "Path Planning",
+      "source_domain": "metaverse",
+      "source_file": "Autonomous Navigation"
+    },
+    {
+      "source": "Autonomous Navigation",
+      "target": "SLAM",
+      "source_domain": "metaverse",
+      "source_file": "Autonomous Navigation"
+    },
+    {
+      "source": "Autonomous Navigation",
+      "target": "Localisation",
+      "source_domain": "metaverse",
+      "source_file": "Autonomous Navigation"
+    },
+    {
+      "source": "Drug Discovery AI",
+      "target": "Medical AI",
+      "source_domain": "metaverse",
+      "source_file": "Drug Discovery AI"
+    },
+    {
+      "source": "Drug Discovery AI",
+      "target": "Molecular Design",
+      "source_domain": "metaverse",
+      "source_file": "Drug Discovery AI"
+    },
+    {
+      "source": "Drug Discovery AI",
+      "target": "Generative Models",
+      "source_domain": "metaverse",
+      "source_file": "Drug Discovery AI"
+    },
+    {
+      "source": "Drug Discovery AI",
+      "target": "Graph Neural Network",
+      "source_domain": "metaverse",
+      "source_file": "Drug Discovery AI"
+    },
+    {
+      "source": "Autonomous Vehicle",
+      "target": "Self-Driving Car",
+      "source_domain": "metaverse",
+      "source_file": "Autonomous Vehicle"
+    },
+    {
+      "source": "Autonomous Vehicle",
+      "target": "ADAS",
+      "source_domain": "metaverse",
+      "source_file": "Autonomous Vehicle"
+    },
+    {
+      "source": "Autonomous Vehicle",
+      "target": "Perception System",
+      "source_domain": "metaverse",
+      "source_file": "Autonomous Vehicle"
+    },
+    {
+      "source": "Autonomous Vehicle",
+      "target": "Sensor Fusion",
+      "source_domain": "metaverse",
+      "source_file": "Autonomous Vehicle"
+    },
+    {
+      "source": "Autonomous Vehicle",
+      "target": "Path Planning",
+      "source_domain": "metaverse",
+      "source_file": "Autonomous Vehicle"
+    },
+    {
+      "source": "Self Driving Car",
+      "target": "Autonomous Vehicle",
+      "source_domain": "metaverse",
+      "source_file": "Self-Driving Car"
+    },
+    {
+      "source": "Self Driving Car",
+      "target": "ADAS",
+      "source_domain": "metaverse",
+      "source_file": "Self-Driving Car"
+    },
+    {
+      "source": "Self Driving Car",
+      "target": "Perception System",
+      "source_domain": "metaverse",
+      "source_file": "Self-Driving Car"
+    },
+    {
+      "source": "Dialogue System",
+      "target": "Natural Language Processing",
+      "source_domain": "metaverse",
+      "source_file": "Dialogue System"
+    },
+    {
+      "source": "Dialogue System",
+      "target": "Chatbot",
+      "source_domain": "metaverse",
+      "source_file": "Dialogue System"
+    },
+    {
+      "source": "Dialogue System",
+      "target": "Question Answering",
+      "source_domain": "metaverse",
+      "source_file": "Dialogue System"
+    },
+    {
+      "source": "AI Governance",
+      "target": "AI Lifecycle",
+      "source_domain": "metaverse",
+      "source_file": "AI Governance"
+    },
+    {
+      "source": "AI Governance",
+      "target": "Human Oversight",
+      "source_domain": "metaverse",
+      "source_file": "AI Governance"
+    },
+    {
+      "source": "AI Governance",
+      "target": "AI Impact Assessment",
+      "source_domain": "metaverse",
+      "source_file": "AI Governance"
+    },
+    {
+      "source": "AI Governance",
+      "target": "Ethical AI",
+      "source_domain": "metaverse",
+      "source_file": "AI Governance"
+    },
+    {
+      "source": "AI Governance",
+      "target": "Responsible AI",
+      "source_domain": "metaverse",
+      "source_file": "AI Governance"
+    },
+    {
+      "source": "AI Governance",
+      "target": "AI Audit",
+      "source_domain": "metaverse",
+      "source_file": "AI Governance"
+    },
+    {
+      "source": "AI Governance",
+      "target": "Accountability",
+      "source_domain": "metaverse",
+      "source_file": "AI Governance"
+    },
+    {
+      "source": "AI Governance",
+      "target": "Risk Management",
+      "source_domain": "metaverse",
+      "source_file": "AI Governance"
+    },
+    {
+      "source": "Medical AI",
+      "target": "Clinical Decision Support",
+      "source_domain": "metaverse",
+      "source_file": "Medical AI"
+    },
+    {
+      "source": "Medical AI",
+      "target": "Medical Imaging AI",
+      "source_domain": "metaverse",
+      "source_file": "Medical AI"
+    },
+    {
+      "source": "Medical AI",
+      "target": "Drug Discovery AI",
+      "source_domain": "metaverse",
+      "source_file": "Medical AI"
+    },
+    {
+      "source": "Medical AI",
+      "target": "Precision Medicine",
+      "source_domain": "metaverse",
+      "source_file": "Medical AI"
+    },
+    {
+      "source": "Medical AI",
+      "target": "Healthcare Analytics",
+      "source_domain": "metaverse",
+      "source_file": "Medical AI"
+    },
+    {
+      "source": "Medical AI",
+      "target": "Medical Diagnosis AI",
+      "source_domain": "metaverse",
+      "source_file": "Medical AI"
+    },
+    {
+      "source": "Medical AI",
+      "target": "Explainable AI",
+      "source_domain": "metaverse",
+      "source_file": "Medical AI"
+    },
+    {
+      "source": "Medical AI",
+      "target": "Federated Learning",
+      "source_domain": "metaverse",
+      "source_file": "Medical AI"
+    },
+    {
+      "source": "Medical AI",
+      "target": "Uncertainty Quantification",
+      "source_domain": "metaverse",
+      "source_file": "Medical AI"
+    },
+    {
+      "source": "Post Hoc Explanation",
+      "target": "Intrinsic Interpretability",
+      "source_domain": "metaverse",
+      "source_file": "Post-Hoc Explanation"
+    },
+    {
+      "source": "Post Hoc Explanation",
+      "target": "SHAP",
+      "source_domain": "metaverse",
+      "source_file": "Post-Hoc Explanation"
+    },
+    {
+      "source": "Post Hoc Explanation",
+      "target": "LIME",
+      "source_domain": "metaverse",
+      "source_file": "Post-Hoc Explanation"
+    },
+    {
+      "source": "Post Hoc Explanation",
+      "target": "Grad-CAM",
+      "source_domain": "metaverse",
+      "source_file": "Post-Hoc Explanation"
+    },
+    {
+      "source": "Post Hoc Explanation",
+      "target": "Counterfactual Explanation",
+      "source_domain": "metaverse",
+      "source_file": "Post-Hoc Explanation"
+    },
+    {
+      "source": "Post Hoc Explanation",
+      "target": "Feature Attribution",
+      "source_domain": "metaverse",
+      "source_file": "Post-Hoc Explanation"
+    },
+    {
+      "source": "Post Hoc Explanation",
+      "target": "Saliency Map",
+      "source_domain": "metaverse",
+      "source_file": "Post-Hoc Explanation"
+    },
+    {
+      "source": "Text Summarisation",
+      "target": "Natural Language Processing",
+      "source_domain": "metaverse",
+      "source_file": "Text Summarisation"
+    },
+    {
+      "source": "Text Summarisation",
+      "target": "Text Generation",
+      "source_domain": "metaverse",
+      "source_file": "Text Summarisation"
+    },
+    {
+      "source": "Text Summarisation",
+      "target": "BART",
+      "source_domain": "metaverse",
+      "source_file": "Text Summarisation"
+    },
+    {
+      "source": "AI Impact Assessment",
+      "target": "Risk Management",
+      "source_domain": "metaverse",
+      "source_file": "AI Impact Assessment"
+    },
+    {
+      "source": "AI Impact Assessment",
+      "target": "AI Governance",
+      "source_domain": "metaverse",
+      "source_file": "AI Impact Assessment"
+    },
+    {
+      "source": "AI Impact Assessment",
+      "target": "Stakeholder",
+      "source_domain": "metaverse",
+      "source_file": "AI Impact Assessment"
+    },
+    {
+      "source": "AI Impact Assessment",
+      "target": "Human Rights",
+      "source_domain": "metaverse",
+      "source_file": "AI Impact Assessment"
+    },
+    {
+      "source": "AI Impact Assessment",
+      "target": "Fairness",
+      "source_domain": "metaverse",
+      "source_file": "AI Impact Assessment"
+    },
+    {
+      "source": "AI Impact Assessment",
+      "target": "Transparency",
+      "source_domain": "metaverse",
+      "source_file": "AI Impact Assessment"
+    },
+    {
+      "source": "AI Impact Assessment",
+      "target": "Accountability",
+      "source_domain": "metaverse",
+      "source_file": "AI Impact Assessment"
+    },
+    {
+      "source": "AI Impact Assessment",
+      "target": "AI Lifecycle",
+      "source_domain": "metaverse",
+      "source_file": "AI Impact Assessment"
+    },
+    {
+      "source": "AI Impact Assessment",
+      "target": "AI Audit",
+      "source_domain": "metaverse",
+      "source_file": "AI Impact Assessment"
+    },
+    {
+      "source": "AI Impact Assessment",
+      "target": "DPIA",
+      "source_domain": "metaverse",
+      "source_file": "AI Impact Assessment"
+    },
+    {
+      "source": "Money",
+      "target": "Bitcoin",
+      "source_domain": "cross-domain",
+      "source_file": "Money"
+    },
+    {
+      "source": "Money",
+      "target": "Token",
+      "source_domain": "cross-domain",
+      "source_file": "Money"
+    },
+    {
+      "source": "Money",
+      "target": "Payment System",
+      "source_domain": "cross-domain",
+      "source_file": "Money"
+    },
+    {
+      "source": "Money",
+      "target": "Banking System",
+      "source_domain": "cross-domain",
+      "source_file": "Money"
+    },
+    {
+      "source": "Interoperability Framework",
+      "target": "Reference Architecture",
+      "source_domain": "metaverse",
+      "source_file": "Interoperability Framework"
+    },
+    {
+      "source": "Interoperability Framework",
+      "target": "ISO/IEC 23247",
+      "source_domain": "metaverse",
+      "source_file": "Interoperability Framework"
+    },
+    {
+      "source": "Interoperability Framework",
+      "target": "ETSI ARF",
+      "source_domain": "metaverse",
+      "source_file": "Interoperability Framework"
+    },
+    {
+      "source": "Universal Manifest",
+      "target": "Digital Twin Descriptor",
+      "source_domain": "metaverse",
+      "source_file": "Universal Manifest"
+    },
+    {
+      "source": "Universal Manifest",
+      "target": "Linked Data Document",
+      "source_domain": "metaverse",
+      "source_file": "Universal Manifest"
+    },
+    {
+      "source": "Universal Manifest",
+      "target": "Portable Profile",
+      "source_domain": "metaverse",
+      "source_file": "Universal Manifest"
+    },
+    {
+      "source": "Universal Manifest",
+      "target": "Asset Inventory",
+      "source_domain": "metaverse",
+      "source_file": "Universal Manifest"
+    },
+    {
+      "source": "Intrinsic Interpretability",
+      "target": "Interpretable AI",
+      "source_domain": "metaverse",
+      "source_file": "Intrinsic Interpretability"
+    },
+    {
+      "source": "Intrinsic Interpretability",
+      "target": "Post-Hoc Explanation",
+      "source_domain": "metaverse",
+      "source_file": "Intrinsic Interpretability"
+    },
+    {
+      "source": "Intrinsic Interpretability",
+      "target": "Model Interpretability",
+      "source_domain": "metaverse",
+      "source_file": "Intrinsic Interpretability"
+    },
+    {
+      "source": "Intrinsic Interpretability",
+      "target": "Decision Tree Approximation",
+      "source_domain": "metaverse",
+      "source_file": "Intrinsic Interpretability"
+    },
+    {
+      "source": "Intrinsic Interpretability",
+      "target": "Black Box Model",
+      "source_domain": "metaverse",
+      "source_file": "Intrinsic Interpretability"
+    },
+    {
+      "source": "Intrinsic Interpretability",
+      "target": "Rule Extraction",
+      "source_domain": "metaverse",
+      "source_file": "Intrinsic Interpretability"
+    },
+    {
+      "source": "Accessibility Standard",
+      "target": "XR Accessibility Guideline",
+      "source_domain": "metaverse",
+      "source_file": "Accessibility Standard"
+    },
+    {
+      "source": "Accessibility Standard",
+      "target": "Assistive Technology",
+      "source_domain": "metaverse",
+      "source_file": "Accessibility Standard"
+    },
+    {
+      "source": "Accessibility Standard",
+      "target": "User Interface",
+      "source_domain": "metaverse",
+      "source_file": "Accessibility Standard"
+    },
+    {
+      "source": "Style Transfer",
+      "target": "Image Generation",
+      "source_domain": "metaverse",
+      "source_file": "Style Transfer"
+    },
+    {
+      "source": "Style Transfer",
+      "target": "Image-to-Image Translation",
+      "source_domain": "metaverse",
+      "source_file": "Style Transfer"
+    },
+    {
+      "source": "Style Transfer",
+      "target": "Convolutional Neural Network",
+      "source_domain": "metaverse",
+      "source_file": "Style Transfer"
+    },
+    {
+      "source": "BC 0430 private channels",
+      "target": "BC-0315-zero-knowledge-proof",
+      "source_domain": "metaverse",
+      "source_file": "BC-0430-private-channels"
+    },
+    {
+      "source": "BC 0430 private channels",
+      "target": "BC-0316-secure-multi-party-computation",
+      "source_domain": "metaverse",
+      "source_file": "BC-0430-private-channels"
+    },
+    {
+      "source": "AI Operator",
+      "target": "AI Provider",
+      "source_domain": "metaverse",
+      "source_file": "AI Operator"
+    },
+    {
+      "source": "AI Operator",
+      "target": "AI User",
+      "source_domain": "metaverse",
+      "source_file": "AI Operator"
+    },
+    {
+      "source": "AI Operator",
+      "target": "Human Oversight",
+      "source_domain": "metaverse",
+      "source_file": "AI Operator"
+    },
+    {
+      "source": "AI Operator",
+      "target": "Human-in-the-Loop",
+      "source_domain": "metaverse",
+      "source_file": "AI Operator"
+    },
+    {
+      "source": "AI Operator",
+      "target": "AI Governance",
+      "source_domain": "metaverse",
+      "source_file": "AI Operator"
+    },
+    {
+      "source": "AI Operator",
+      "target": "AI Monitoring",
+      "source_domain": "metaverse",
+      "source_file": "AI Operator"
+    },
+    {
+      "source": "AI Operator",
+      "target": "AI Deployment",
+      "source_domain": "metaverse",
+      "source_file": "AI Operator"
+    },
+    {
+      "source": "AI Operator",
+      "target": "Accountability",
+      "source_domain": "metaverse",
+      "source_file": "AI Operator"
+    },
+    {
+      "source": "AI Operator",
+      "target": "Competence",
+      "source_domain": "metaverse",
+      "source_file": "AI Operator"
+    },
+    {
+      "source": "Treatment Planning AI",
+      "target": "Medical AI",
+      "source_domain": "metaverse",
+      "source_file": "Treatment Planning AI"
+    },
+    {
+      "source": "Treatment Planning AI",
+      "target": "Medical Diagnosis AI",
+      "source_domain": "metaverse",
+      "source_file": "Treatment Planning AI"
+    },
+    {
+      "source": "Treatment Planning AI",
+      "target": "Radiation Therapy",
+      "source_domain": "metaverse",
+      "source_file": "Treatment Planning AI"
+    },
+    {
+      "source": "Quantum Network Node",
+      "target": "Quantum Encryption",
+      "source_domain": "metaverse",
+      "source_file": "Quantum Network Node"
+    },
+    {
+      "source": "Quantum Network Node",
+      "target": "Network Security",
+      "source_domain": "metaverse",
+      "source_file": "Quantum Network Node"
+    },
+    {
+      "source": "Quantum Network Node",
+      "target": "Cryptographic Protocol",
+      "source_domain": "metaverse",
+      "source_file": "Quantum Network Node"
+    },
+    {
+      "source": "Quantum Network Node",
+      "target": "Secure Channel",
+      "source_domain": "metaverse",
+      "source_file": "Quantum Network Node"
+    },
+    {
+      "source": "Non-Fungible Token (NFT)",
+      "target": "Digital Collectible",
+      "source_domain": "metaverse",
+      "source_file": "Non-Fungible Token (NFT)"
+    },
+    {
+      "source": "Non-Fungible Token (NFT)",
+      "target": "Virtual Land",
+      "source_domain": "metaverse",
+      "source_file": "Non-Fungible Token (NFT)"
+    },
+    {
+      "source": "Non-Fungible Token (NFT)",
+      "target": "Avatar Accessory",
+      "source_domain": "metaverse",
+      "source_file": "Non-Fungible Token (NFT)"
+    },
+    {
+      "source": "Non-Fungible Token (NFT)",
+      "target": "3D Model",
+      "source_domain": "metaverse",
+      "source_file": "Non-Fungible Token (NFT)"
+    },
+    {
+      "source": "Non-Fungible Token (NFT)",
+      "target": "Artwork",
+      "source_domain": "metaverse",
+      "source_file": "Non-Fungible Token (NFT)"
+    },
+    {
+      "source": "Context Awareness",
+      "target": "Spatial Computing",
+      "source_domain": "metaverse",
+      "source_file": "Context Awareness"
+    },
+    {
+      "source": "Context Awareness",
+      "target": "Location-Based Services",
+      "source_domain": "metaverse",
+      "source_file": "Context Awareness"
+    },
+    {
+      "source": "Context Awareness",
+      "target": "Activity Recognition",
+      "source_domain": "metaverse",
+      "source_file": "Context Awareness"
+    },
+    {
+      "source": "Context Awareness",
+      "target": "User Modeling",
+      "source_domain": "metaverse",
+      "source_file": "Context Awareness"
+    },
+    {
+      "source": "Context Awareness",
+      "target": "Ambient Intelligence",
+      "source_domain": "metaverse",
+      "source_file": "Context Awareness"
+    },
+    {
+      "source": "Panoptic Segmentation",
+      "target": "Semantic Segmentation",
+      "source_domain": "metaverse",
+      "source_file": "Panoptic Segmentation"
+    },
+    {
+      "source": "Panoptic Segmentation",
+      "target": "Instance Segmentation",
+      "source_domain": "metaverse",
+      "source_file": "Panoptic Segmentation"
+    },
+    {
+      "source": "Panoptic Segmentation",
+      "target": "Scene Understanding",
+      "source_domain": "metaverse",
+      "source_file": "Panoptic Segmentation"
+    },
+    {
+      "source": "AI Monitoring",
+      "target": "AI Lifecycle",
+      "source_domain": "metaverse",
+      "source_file": "AI Monitoring"
+    },
+    {
+      "source": "AI Monitoring",
+      "target": "AI Deployment",
+      "source_domain": "metaverse",
+      "source_file": "AI Monitoring"
+    },
+    {
+      "source": "AI Monitoring",
+      "target": "AI Operator",
+      "source_domain": "metaverse",
+      "source_file": "AI Monitoring"
+    },
+    {
+      "source": "AI Monitoring",
+      "target": "Model Performance",
+      "source_domain": "metaverse",
+      "source_file": "AI Monitoring"
+    },
+    {
+      "source": "AI Monitoring",
+      "target": "Human Oversight",
+      "source_domain": "metaverse",
+      "source_file": "AI Monitoring"
+    },
+    {
+      "source": "AI Monitoring",
+      "target": "AI Audit",
+      "source_domain": "metaverse",
+      "source_file": "AI Monitoring"
+    },
+    {
+      "source": "AI Monitoring",
+      "target": "Risk Management",
+      "source_domain": "metaverse",
+      "source_file": "AI Monitoring"
+    },
+    {
+      "source": "AI Monitoring",
+      "target": "Fairness",
+      "source_domain": "metaverse",
+      "source_file": "AI Monitoring"
+    },
+    {
+      "source": "AI Monitoring",
+      "target": "Bias",
+      "source_domain": "metaverse",
+      "source_file": "AI Monitoring"
+    },
+    {
+      "source": "AI Monitoring",
+      "target": "Data Drift",
+      "source_domain": "metaverse",
+      "source_file": "AI Monitoring"
+    },
+    {
+      "source": "Object Detection and Tracking",
+      "target": "Object Detection",
+      "source_domain": "metaverse",
+      "source_file": "Object Detection and Tracking"
+    },
+    {
+      "source": "Object Detection and Tracking",
+      "target": "Computer Vision",
+      "source_domain": "metaverse",
+      "source_file": "Object Detection and Tracking"
+    },
+    {
+      "source": "Object Detection and Tracking",
+      "target": "Perception System",
+      "source_domain": "metaverse",
+      "source_file": "Object Detection and Tracking"
+    },
+    {
+      "source": "BC 0428 enterprise blockchain architecture",
+      "target": "BC-0001-blockchain",
+      "source_domain": "metaverse",
+      "source_file": "BC-0428-enterprise-blockchain-architecture"
+    },
+    {
+      "source": "BC 0428 enterprise blockchain architecture",
+      "target": "BC-0120-consensus-mechanism",
+      "source_domain": "metaverse",
+      "source_file": "BC-0428-enterprise-blockchain-architecture"
+    },
+    {
+      "source": "BC 0428 enterprise blockchain architecture",
+      "target": "BC-0142-smart-contract",
+      "source_domain": "metaverse",
+      "source_file": "BC-0428-enterprise-blockchain-architecture"
+    },
+    {
+      "source": "Named Entity Recognition",
+      "target": "Natural Language Processing",
+      "source_domain": "metaverse",
+      "source_file": "Named Entity Recognition"
+    },
+    {
+      "source": "Named Entity Recognition",
+      "target": "Information Extraction",
+      "source_domain": "metaverse",
+      "source_file": "Named Entity Recognition"
+    },
+    {
+      "source": "Named Entity Recognition",
+      "target": "BERT",
+      "source_domain": "metaverse",
+      "source_file": "Named Entity Recognition"
+    },
+    {
+      "source": "Bitcoin",
+      "target": "Cryptocurrency",
+      "source_domain": "blockchain",
+      "source_file": "Bitcoin"
+    },
+    {
+      "source": "Bitcoin",
+      "target": "Blockchain Network",
+      "source_domain": "blockchain",
+      "source_file": "Bitcoin"
+    },
+    {
+      "source": "Bitcoin",
+      "target": "Mining",
+      "source_domain": "blockchain",
+      "source_file": "Bitcoin"
+    },
+    {
+      "source": "Bitcoin",
+      "target": "Node",
+      "source_domain": "blockchain",
+      "source_file": "Bitcoin"
+    },
+    {
+      "source": "Bitcoin",
+      "target": "Wallet",
+      "source_domain": "blockchain",
+      "source_file": "Bitcoin"
+    },
+    {
+      "source": "AI Audit",
+      "target": "AI Governance",
+      "source_domain": "metaverse",
+      "source_file": "AI Audit"
+    },
+    {
+      "source": "AI Audit",
+      "target": "Accountability",
+      "source_domain": "metaverse",
+      "source_file": "AI Audit"
+    },
+    {
+      "source": "AI Audit",
+      "target": "Transparency",
+      "source_domain": "metaverse",
+      "source_file": "AI Audit"
+    },
+    {
+      "source": "AI Audit",
+      "target": "AI Monitoring",
+      "source_domain": "metaverse",
+      "source_file": "AI Audit"
+    },
+    {
+      "source": "AI Audit",
+      "target": "Conformity Assessment",
+      "source_domain": "metaverse",
+      "source_file": "AI Audit"
+    },
+    {
+      "source": "AI Audit",
+      "target": "AI Impact Assessment",
+      "source_domain": "metaverse",
+      "source_file": "AI Audit"
+    },
+    {
+      "source": "AI Audit",
+      "target": "Risk Management",
+      "source_domain": "metaverse",
+      "source_file": "AI Audit"
+    },
+    {
+      "source": "AI Audit",
+      "target": "Quality Assurance",
+      "source_domain": "metaverse",
+      "source_file": "AI Audit"
+    },
+    {
+      "source": "AI Audit",
+      "target": "Third-Party Certification",
+      "source_domain": "metaverse",
+      "source_file": "AI Audit"
+    },
+    {
+      "source": "AI Audit",
+      "target": "Internal Audit",
+      "source_domain": "metaverse",
+      "source_file": "AI Audit"
+    },
+    {
+      "source": "Clinical Decision Support",
+      "target": "Medical AI",
+      "source_domain": "metaverse",
+      "source_file": "Clinical Decision Support"
+    },
+    {
+      "source": "Clinical Decision Support",
+      "target": "Medical Diagnosis AI",
+      "source_domain": "metaverse",
+      "source_file": "Clinical Decision Support"
+    },
+    {
+      "source": "Clinical Decision Support",
+      "target": "Treatment Planning AI",
+      "source_domain": "metaverse",
+      "source_file": "Clinical Decision Support"
+    },
+    {
+      "source": "Clinical Decision Support",
+      "target": "Healthcare Analytics",
+      "source_domain": "metaverse",
+      "source_file": "Clinical Decision Support"
+    },
+    {
+      "source": "Digital Ontology Repository",
+      "target": "Knowledge Graph",
+      "source_domain": "metaverse",
+      "source_file": "Digital Ontology Repository"
+    },
+    {
+      "source": "Digital Ontology Repository",
+      "target": "Semantic Web",
+      "source_domain": "metaverse",
+      "source_file": "Digital Ontology Repository"
+    },
+    {
+      "source": "Digital Ontology Repository",
+      "target": "Linked Data",
+      "source_domain": "metaverse",
+      "source_file": "Digital Ontology Repository"
+    },
+    {
+      "source": "Digital Ontology Repository",
+      "target": "Data Dictionary",
+      "source_domain": "metaverse",
+      "source_file": "Digital Ontology Repository"
+    },
+    {
+      "source": "Digital Ontology Repository",
+      "target": "Schema Registry",
+      "source_domain": "metaverse",
+      "source_file": "Digital Ontology Repository"
+    },
+    {
+      "source": "Digital Ontology Repository",
+      "target": "Metadata Repository",
+      "source_domain": "metaverse",
+      "source_file": "Digital Ontology Repository"
+    },
+    {
+      "source": "Digital Ontology Repository",
+      "target": "Taxonomy Management",
+      "source_domain": "metaverse",
+      "source_file": "Digital Ontology Repository"
+    },
+    {
+      "source": "ROC Curve",
+      "target": "Model Performance",
+      "source_domain": "metaverse",
+      "source_file": "ROC Curve"
+    },
+    {
+      "source": "ROC Curve",
+      "target": "AUC",
+      "source_domain": "metaverse",
+      "source_file": "ROC Curve"
+    },
+    {
+      "source": "ROC Curve",
+      "target": "True Positive Rate",
+      "source_domain": "metaverse",
+      "source_file": "ROC Curve"
+    },
+    {
+      "source": "ROC Curve",
+      "target": "False Positive Rate",
+      "source_domain": "metaverse",
+      "source_file": "ROC Curve"
+    },
+    {
+      "source": "ROC Curve",
+      "target": "Precision-Recall Curve",
+      "source_domain": "metaverse",
+      "source_file": "ROC Curve"
+    },
+    {
+      "source": "ROC Curve",
+      "target": "Confusion Matrix",
+      "source_domain": "metaverse",
+      "source_file": "ROC Curve"
+    },
+    {
+      "source": "ROC Curve",
+      "target": "Sensitivity",
+      "source_domain": "metaverse",
+      "source_file": "ROC Curve"
+    },
+    {
+      "source": "ROC Curve",
+      "target": "Specificity",
+      "source_domain": "metaverse",
+      "source_file": "ROC Curve"
+    },
+    {
+      "source": "ROC Curve",
+      "target": "Threshold Selection",
+      "source_domain": "metaverse",
+      "source_file": "ROC Curve"
+    },
+    {
+      "source": "ROC Curve",
+      "target": "Model Comparison",
+      "source_domain": "metaverse",
+      "source_file": "ROC Curve"
+    },
+    {
+      "source": "Metadata Standard",
+      "target": "Dublin Core",
+      "source_domain": "metaverse",
+      "source_file": "Metadata Standard"
+    },
+    {
+      "source": "Metadata Standard",
+      "target": "Schema.org",
+      "source_domain": "metaverse",
+      "source_file": "Metadata Standard"
+    },
+    {
+      "source": "Metadata Standard",
+      "target": "DCAT",
+      "source_domain": "metaverse",
+      "source_file": "Metadata Standard"
+    },
+    {
+      "source": "Metadata Standard",
+      "target": "ISO 19115",
+      "source_domain": "metaverse",
+      "source_file": "Metadata Standard"
+    },
+    {
+      "source": "Metadata Standard",
+      "target": "PREMIS",
+      "source_domain": "metaverse",
+      "source_file": "Metadata Standard"
+    },
+    {
+      "source": "Global Explanation",
+      "target": "Local Explanation",
+      "source_domain": "metaverse",
+      "source_file": "Global Explanation"
+    },
+    {
+      "source": "Global Explanation",
+      "target": "Feature Importance",
+      "source_domain": "metaverse",
+      "source_file": "Global Explanation"
+    },
+    {
+      "source": "Global Explanation",
+      "target": "Partial Dependence Plot",
+      "source_domain": "metaverse",
+      "source_file": "Global Explanation"
+    },
+    {
+      "source": "Global Explanation",
+      "target": "Permutation Importance",
+      "source_domain": "metaverse",
+      "source_file": "Global Explanation"
+    },
+    {
+      "source": "Global Explanation",
+      "target": "Individual Conditional Expectation",
+      "source_domain": "metaverse",
+      "source_file": "Global Explanation"
+    },
+    {
+      "source": "Global Explanation",
+      "target": "SHAP",
+      "source_domain": "metaverse",
+      "source_file": "Global Explanation"
+    },
+    {
+      "source": "Human Interface Layer (HIL)",
+      "target": "Avatar",
+      "source_domain": "metaverse",
+      "source_file": "Human Interface Layer (HIL)"
+    },
+    {
+      "source": "Human Interface Layer (HIL)",
+      "target": "User Experience",
+      "source_domain": "metaverse",
+      "source_file": "Human Interface Layer (HIL)"
+    },
+    {
+      "source": "Human Interface Layer (HIL)",
+      "target": "Interface Design",
+      "source_domain": "metaverse",
+      "source_file": "Human Interface Layer (HIL)"
+    },
+    {
+      "source": "Human Interface Layer (HIL)",
+      "target": "Accessibility",
+      "source_domain": "metaverse",
+      "source_file": "Human Interface Layer (HIL)"
+    },
+    {
+      "source": "Human Oversight",
+      "target": "AI Governance",
+      "source_domain": "metaverse",
+      "source_file": "Human Oversight"
+    },
+    {
+      "source": "Human Oversight",
+      "target": "Human-in-the-Loop",
+      "source_domain": "metaverse",
+      "source_file": "Human Oversight"
+    },
+    {
+      "source": "Human Oversight",
+      "target": "AI Operator",
+      "source_domain": "metaverse",
+      "source_file": "Human Oversight"
+    },
+    {
+      "source": "Human Oversight",
+      "target": "Accountability",
+      "source_domain": "metaverse",
+      "source_file": "Human Oversight"
+    },
+    {
+      "source": "Human Oversight",
+      "target": "Explainability",
+      "source_domain": "metaverse",
+      "source_file": "Human Oversight"
+    },
+    {
+      "source": "Human Oversight",
+      "target": "Transparency",
+      "source_domain": "metaverse",
+      "source_file": "Human Oversight"
+    },
+    {
+      "source": "Human Oversight",
+      "target": "Responsible AI",
+      "source_domain": "metaverse",
+      "source_file": "Human Oversight"
+    },
+    {
+      "source": "Human Oversight",
+      "target": "AI Audit",
+      "source_domain": "metaverse",
+      "source_file": "Human Oversight"
+    },
+    {
+      "source": "Human Oversight",
+      "target": "Risk Management",
+      "source_domain": "metaverse",
+      "source_file": "Human Oversight"
+    },
+    {
+      "source": "Human Oversight",
+      "target": "Automation Bias",
+      "source_domain": "metaverse",
+      "source_file": "Human Oversight"
+    },
+    {
+      "source": "Semantic Segmentation",
+      "target": "Computer Vision",
+      "source_domain": "metaverse",
+      "source_file": "Semantic Segmentation"
+    },
+    {
+      "source": "Semantic Segmentation",
+      "target": "Instance Segmentation",
+      "source_domain": "metaverse",
+      "source_file": "Semantic Segmentation"
+    },
+    {
+      "source": "Semantic Segmentation",
+      "target": "Panoptic Segmentation",
+      "source_domain": "metaverse",
+      "source_file": "Semantic Segmentation"
+    },
+    {
+      "source": "Data Provenance",
+      "target": "Cultural Provenance Record",
+      "source_domain": "metaverse",
+      "source_file": "Data Provenance"
+    },
+    {
+      "source": "Data Provenance",
+      "target": "Chain of Custody",
+      "source_domain": "metaverse",
+      "source_file": "Data Provenance"
+    },
+    {
+      "source": "Data Provenance",
+      "target": "Data Lineage",
+      "source_domain": "metaverse",
+      "source_file": "Data Provenance"
+    },
+    {
+      "source": "Data Provenance",
+      "target": "Data Protection",
+      "source_domain": "metaverse",
+      "source_file": "Data Provenance"
+    },
+    {
+      "source": "Data Provenance",
+      "target": "Audit System",
+      "source_domain": "metaverse",
+      "source_file": "Data Provenance"
+    },
+    {
+      "source": "Spatial Audio Scene Description",
+      "target": "Audio Format",
+      "source_domain": "metaverse",
+      "source_file": "Spatial Audio Scene Description"
+    },
+    {
+      "source": "Spatial Audio Scene Description",
+      "target": "Spatial Computing",
+      "source_domain": "metaverse",
+      "source_file": "Spatial Audio Scene Description"
+    },
+    {
+      "source": "Spatial Audio Scene Description",
+      "target": "Virtual Acoustics",
+      "source_domain": "metaverse",
+      "source_file": "Spatial Audio Scene Description"
+    },
+    {
+      "source": "Spatial Audio Scene Description",
+      "target": "3D Scene Description",
+      "source_domain": "metaverse",
+      "source_file": "Spatial Audio Scene Description"
+    }
+  ],
+  "analysis": {
+    "total_relationships": 714,
+    "unique_sources": 145,
+    "unique_targets": 410,
+    "bidirectional_count": 714,
+    "bidirectional_examples": [
+      {
+        "source": "Medical Diagnosis AI",
+        "target": "Medical AI"
+      },
+      {
+        "source": "Medical Diagnosis AI",
+        "target": "Clinical Decision Support"
+      },
+      {
+        "source": "Medical Diagnosis AI",
+        "target": "Treatment Planning AI"
+      },
+      {
+        "source": "Hardware Abstraction Layer (HAL)",
+        "target": "Human Interface Layer (HIL)"
+      },
+      {
+        "source": "Hardware Abstraction Layer (HAL)",
+        "target": "Operating System"
+      },
+      {
+        "source": "Hardware Abstraction Layer (HAL)",
+        "target": "Device Driver"
+      },
+      {
+        "source": "Infrastructure Layer",
+        "target": "Hardware Abstraction Layer (HAL)"
+      },
+      {
+        "source": "Infrastructure Layer",
+        "target": "Network Layer"
+      },
+      {
+        "source": "Infrastructure Layer",
+        "target": "Compute Resources"
+      },
+      {
+        "source": "Computer Vision",
+        "target": "Image Classification"
+      },
+      {
+        "source": "Computer Vision",
+        "target": "Object Detection"
+      },
+      {
+        "source": "Computer Vision",
+        "target": "Semantic Segmentation"
+      },
+      {
+        "source": "Computer Vision",
+        "target": "Convolutional Neural Network"
+      },
+      {
+        "source": "Central Bank Digital Currency (CBDC)",
+        "target": "Digital Asset"
+      },
+      {
+        "source": "Central Bank Digital Currency (CBDC)",
+        "target": "Cryptocurrency"
+      },
+      {
+        "source": "Central Bank Digital Currency (CBDC)",
+        "target": "Stablecoin"
+      },
+      {
+        "source": "Central Bank Digital Currency (CBDC)",
+        "target": "Payment System"
+      },
+      {
+        "source": "Central Bank Digital Currency (CBDC)",
+        "target": "Digital Wallet"
+      },
+      {
+        "source": "Discovery Layer",
+        "target": "Interoperability Framework"
+      },
+      {
+        "source": "Discovery Layer",
+        "target": "Metadata Standards"
+      }
+    ],
+    "high_degree_sources": [
+      [
+        "Confusion Matrix",
+        11
+      ],
+      [
+        "AI Provider",
+        10
+      ],
+      [
+        "Model Performance",
+        10
+      ],
+      [
+        "Stakeholder",
+        10
+      ],
+      [
+        "Recall",
+        10
+      ],
+      [
+        "F1 Score",
+        10
+      ],
+      [
+        "Responsible AI",
+        10
+      ],
+      [
+        "AI User",
+        10
+      ],
+      [
+        "Ethical AI",
+        10
+      ],
+      [
+        "AI Impact Assessment",
+        10
+      ],
+      [
+        "AI Monitoring",
+        10
+      ],
+      [
+        "AI Audit",
+        10
+      ],
+      [
+        "ROC Curve",
+        10
+      ],
+      [
+        "Human Oversight",
+        10
+      ],
+      [
+        "AUC",
+        9
+      ],
+      [
+        "Accuracy",
+        9
+      ],
+      [
+        "AI Deployment",
+        9
+      ],
+      [
+        "Human in the Loop",
+        9
+      ],
+      [
+        "Root Mean Square Error",
+        9
+      ],
+      [
+        "Precision",
+        9
+      ]
+    ],
+    "high_degree_targets": [
+      [
+        "Model Performance",
+        13
+      ],
+      [
+        "AI Governance",
+        10
+      ],
+      [
+        "Accountability",
+        10
+      ],
+      [
+        "Computer Vision",
+        10
+      ],
+      [
+        "Risk Management",
+        9
+      ],
+      [
+        "Natural Language Processing",
+        9
+      ],
+      [
+        "Fairness",
+        8
+      ],
+      [
+        "Human Oversight",
+        8
+      ],
+      [
+        "Medical AI",
+        7
+      ],
+      [
+        "AI Operator",
+        7
+      ],
+      [
+        "AI Impact Assessment",
+        7
+      ],
+      [
+        "Transparency",
+        7
+      ],
+      [
+        "AI Lifecycle",
+        6
+      ],
+      [
+        "AI Audit",
+        6
+      ],
+      [
+        "Confusion Matrix",
+        6
+      ],
+      [
+        "Perception System",
+        6
+      ],
+      [
+        "SHAP",
+        6
+      ],
+      [
+        "Object Detection",
+        5
+      ],
+      [
+        "Convolutional Neural Network",
+        5
+      ],
+      [
+        "Cryptocurrency",
+        5
+      ]
+    ]
+  }
+}

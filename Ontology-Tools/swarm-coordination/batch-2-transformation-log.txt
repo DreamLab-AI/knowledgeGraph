@@ -1,0 +1,317 @@
+BATCH 2 TRANSFORMATION LOG
+Blockchain Domain: BC-0001 to BC-0100
+================================================================================
+
+Date: 2025-10-29 12:45:05
+Duration: 0.0 seconds
+Conversion Rate: 0.00s per file
+
+Total Files:        100
+Successful:         100
+Failed:             0
+Already Format A:   0
+Newly Converted:    100
+
+DETAILED RESULTS:
+================================================================================
+
+✅ SUCCESS: BC-0001  | Blockchain
+  File: BC-0001-blockchain.md
+
+✅ SUCCESS: BC-0002  | Distributed Ledger
+  File: BC-0002-distributed-ledger.md
+
+✅ SUCCESS: BC-0003  | Block
+  File: BC-0003-block.md
+
+✅ SUCCESS: BC-0004  | Block Header
+  File: BC-0004-block-header.md
+
+✅ SUCCESS: BC-0005  | Genesis Block
+  File: BC-0005-genesis-block.md
+
+✅ SUCCESS: BC-0006  | Transaction
+  File: BC-0006-transaction.md
+
+✅ SUCCESS: BC-0007  | UTXO Model
+  File: BC-0007-utxo-model.md
+
+✅ SUCCESS: BC-0008  | Account Model
+  File: BC-0008-account-model.md
+
+✅ SUCCESS: BC-0009  | Smart Contract
+  File: BC-0009-smart-contract.md
+
+✅ SUCCESS: BC-0010  | Decentralization
+  File: BC-0010-decentralization.md
+
+✅ SUCCESS: BC-0011  | Block Height
+  File: BC-0011-block-height.md
+
+✅ SUCCESS: BC-0012  | Block Reward
+  File: BC-0012-block-reward.md
+
+✅ SUCCESS: BC-0013  | Block Size
+  File: BC-0013-block-size.md
+
+✅ SUCCESS: BC-0014  | Block Time
+  File: BC-0014-block-time.md
+
+✅ SUCCESS: BC-0015  | Chain Reorganization
+  File: BC-0015-chain-reorganization.md
+
+✅ SUCCESS: BC-0016  | Orphan Block
+  File: BC-0016-orphan-block.md
+
+✅ SUCCESS: BC-0017  | Timestamp
+  File: BC-0017-timestamp.md
+
+✅ SUCCESS: BC-0018  | Transaction Pool
+  File: BC-0018-transaction-pool.md
+
+✅ SUCCESS: BC-0019  | Mempool
+  File: BC-0019-mempool.md
+
+✅ SUCCESS: BC-0020  | Transaction Confirmation
+  File: BC-0020-transaction-confirmation.md
+
+✅ SUCCESS: BC-0021  | Input
+  File: BC-0021-input.md
+
+✅ SUCCESS: BC-0022  | Output
+  File: BC-0022-output.md
+
+✅ SUCCESS: BC-0023  | Script
+  File: BC-0023-script.md
+
+✅ SUCCESS: BC-0024  | Opcodes
+  File: BC-0024-opcodes.md
+
+✅ SUCCESS: BC-0025  | Chain State
+  File: BC-0025-chain-state.md
+
+✅ SUCCESS: BC-0026  | Cryptography
+  File: BC-0026-cryptography.md
+
+✅ SUCCESS: BC-0027  | Hash Function
+  File: BC-0027-hash-function.md
+
+✅ SUCCESS: BC-0028  | SHA-256
+  File: BC-0028-sha-256.md
+
+✅ SUCCESS: BC-0029  | Merkle Tree
+  File: BC-0029-merkle-tree.md
+
+✅ SUCCESS: BC-0030  | Digital Signature
+  File: BC-0030-digital-signature.md
+
+✅ SUCCESS: BC-0031  | Public-Key Cryptography
+  File: BC-0031-public-key-cryptography.md
+
+✅ SUCCESS: BC-0032  | Elliptic Curve Cryptography
+  File: BC-0032-elliptic-curve-cryptography.md
+
+✅ SUCCESS: BC-0033  | Zero-Knowledge Proof
+  File: BC-0033-zero-knowledge-proof.md
+
+✅ SUCCESS: BC-0034  | Nonce
+  File: BC-0034-nonce.md
+
+✅ SUCCESS: BC-0035  | Difficulty
+  File: BC-0035-difficulty.md
+
+✅ SUCCESS: BC-0036  | Private Key
+  File: BC-0036-private-key.md
+
+✅ SUCCESS: BC-0037  | Public Key
+  File: BC-0037-public-key.md
+
+✅ SUCCESS: BC-0038  | Address
+  File: BC-0038-address.md
+
+✅ SUCCESS: BC-0039  | Signature Scheme
+  File: BC-0039-signature-scheme.md
+
+✅ SUCCESS: BC-0040  | ECDSA
+  File: BC-0040-ecdsa.md
+
+✅ SUCCESS: BC-0041  | Schnorr Signature
+  File: BC-0041-schnorr-signature.md
+
+✅ SUCCESS: BC-0042  | Keccak-256
+  File: BC-0042-keccak-256.md
+
+✅ SUCCESS: BC-0043  | BLAKE2
+  File: BC-0043-blake2.md
+
+✅ SUCCESS: BC-0044  | Merkle Root
+  File: BC-0044-merkle-root.md
+
+✅ SUCCESS: BC-0045  | Merkle Proof
+  File: BC-0045-merkle-proof.md
+
+✅ SUCCESS: BC-0046  | Hash Collision
+  File: BC-0046-hash-collision.md
+
+✅ SUCCESS: BC-0047  | Preimage Resistance
+  File: BC-0047-preimage-resistance.md
+
+✅ SUCCESS: BC-0048  | Collision Resistance
+  File: BC-0048-collision-resistance.md
+
+✅ SUCCESS: BC-0049  | Salt
+  File: BC-0049-salt.md
+
+✅ SUCCESS: BC-0050  | Cryptographic Commitment
+  File: BC-0050-cryptographic-commitment.md
+
+✅ SUCCESS: BC-0051  | Consensus Mechanism
+  File: BC-0051-consensus-mechanism.md
+
+✅ SUCCESS: BC-0052  | Proof of Work
+  File: BC-0052-proof-of-work.md
+
+✅ SUCCESS: BC-0053  | Mining
+  File: BC-0053-mining.md
+
+✅ SUCCESS: BC-0054  | Miner
+  File: BC-0054-miner.md
+
+✅ SUCCESS: BC-0055  | Block Reward
+  File: BC-0055-block-reward.md
+
+✅ SUCCESS: BC-0056  | Difficulty Adjustment
+  File: BC-0056-difficulty-adjustment.md
+
+✅ SUCCESS: BC-0057  | Network Synchronization
+  File: BC-0057-network-synchronization.md
+
+✅ SUCCESS: BC-0058  | Consensus Rule
+  File: BC-0058-consensus-rule.md
+
+✅ SUCCESS: BC-0059  | Longest Chain Rule
+  File: BC-0059-longest-chain-rule.md
+
+✅ SUCCESS: BC-0060  | Fork Choice Rule
+  File: BC-0060-fork-choice-rule.md
+
+✅ SUCCESS: BC-0061  | Nakamoto Consensus
+  File: BC-0061-nakamoto-consensus.md
+
+✅ SUCCESS: BC-0062  | Block Propagation
+  File: BC-0062-block-propagation.md
+
+✅ SUCCESS: BC-0063  | Network Hash Rate
+  File: BC-0063-network-hash-rate.md
+
+✅ SUCCESS: BC-0064  | Mining Pool
+  File: BC-0064-mining-pool.md
+
+✅ SUCCESS: BC-0065  | Solo Mining
+  File: BC-0065-solo-mining.md
+
+✅ SUCCESS: BC-0066  | Pool Share
+  File: BC-0066-pool-share.md
+
+✅ SUCCESS: BC-0067  | Difficulty Target
+  File: BC-0067-difficulty-target.md
+
+✅ SUCCESS: BC-0068  | Coinbase Transaction
+  File: BC-0068-coinbase-transaction.md
+
+✅ SUCCESS: BC-0069  | Mining Reward
+  File: BC-0069-mining-reward.md
+
+✅ SUCCESS: BC-0070  | Halving
+  File: BC-0070-halving.md
+
+✅ SUCCESS: BC-0071  | Blockchain Network
+  File: BC-0071-blockchain-network.md
+
+✅ SUCCESS: BC-0072  | Node
+  File: BC-0072-node.md
+
+✅ SUCCESS: BC-0073  | Full Node
+  File: BC-0073-full-node.md
+
+✅ SUCCESS: BC-0074  | Light Node
+  File: BC-0074-light-node.md
+
+✅ SUCCESS: BC-0075  | Peer-to-Peer Network
+  File: BC-0075-peer-to-peer-network.md
+
+✅ SUCCESS: BC-0076  | Double Spending
+  File: BC-0076-double-spending.md
+
+✅ SUCCESS: BC-0077  | 51% Attack
+  File: BC-0077-51%-attack.md
+
+✅ SUCCESS: BC-0078  | Sybil Attack
+  File: BC-0078-sybil-attack.md
+
+✅ SUCCESS: BC-0079  | Immutability
+  File: BC-0079-immutability.md
+
+✅ SUCCESS: BC-0080  | Finality
+  File: BC-0080-finality.md
+
+✅ SUCCESS: BC-0081  | Network Latency
+  File: BC-0081-network-latency.md
+
+✅ SUCCESS: BC-0082  | Block Propagation Time
+  File: BC-0082-block-propagation-time.md
+
+✅ SUCCESS: BC-0083  | Eclipse Attack
+  File: BC-0083-eclipse-attack.md
+
+✅ SUCCESS: BC-0084  | Partition Attack
+  File: BC-0084-partition-attack.md
+
+✅ SUCCESS: BC-0085  | Selfish Mining
+  File: BC-0085-selfish-mining.md
+
+✅ SUCCESS: BC-0086  | Censorship Resistance
+  File: BC-0086-censorship-resistance.md
+
+✅ SUCCESS: BC-0087  | Network Topology
+  File: BC-0087-network-topology.md
+
+✅ SUCCESS: BC-0088  | Gossip Protocol
+  File: BC-0088-gossip-protocol.md
+
+✅ SUCCESS: BC-0089  | Peer Discovery
+  File: BC-0089-peer-discovery.md
+
+✅ SUCCESS: BC-0090  | Permissionless Network
+  File: BC-0090-permissionless-network.md
+
+✅ SUCCESS: BC-0091  | Permissioned Network
+  File: BC-0091-permissioned-network.md
+
+✅ SUCCESS: BC-0092  | Validator Node
+  File: BC-0092-validator-node.md
+
+✅ SUCCESS: BC-0093  | Archival Node
+  File: BC-0093-archival-node.md
+
+✅ SUCCESS: BC-0094  | Pruned Node
+  File: BC-0094-pruned-node.md
+
+✅ SUCCESS: BC-0095  | Bootstrap Node
+  File: BC-0095-bootstrap-node.md
+
+✅ SUCCESS: BC-0096  | Token
+  File: BC-0096-token.md
+
+✅ SUCCESS: BC-0097  | Cryptocurrency
+  File: BC-0097-cryptocurrency.md
+
+✅ SUCCESS: BC-0098  | Coin
+  File: BC-0098-coin.md
+
+✅ SUCCESS: BC-0099  | Native Token
+  File: BC-0099-native-token.md
+
+✅ SUCCESS: BC-0100  | Gas
+  File: BC-0100-gas.md
+

@@ -1,0 +1,1008 @@
+=== BATCH 5-6: METAVERSE FILE CONVERSION LOG ===
+Started: 2025-10-29T12:50:47.824Z
+
+Total files to process: 993
+
+✓ SKIP: AI-0376-algorithmic-accountability.md - Already Format A with all fields
+✓ SKIP: AI-0377-fairness-metrics.md - Already Format A with all fields
+✓ SKIP: AI-0378-algorithmic-bias.md - Already Format A with all fields
+✓ SKIP: AI-0379-bias-detection-methods.md - Already Format A with all fields
+✓ SKIP: AI-0380-bias-mitigation-techniques.md - Already Format A with all fields
+✓ SKIP: AI-0381-disparate-impact.md - Already Format A with all fields
+✓ SKIP: AI-0382-fairness-constraints.md - Already Format A with all fields
+✓ SKIP: AI-0383-group-vs-individual-fairness.md - Already Format A with all fields
+✓ SKIP: AI-0384-intersectional-fairness.md - Already Format A with all fields
+✓ SKIP: AI-0385-fairness-accuracy-tradeoffs.md - Already Format A with all fields
+✓ SKIP: AI-0386-fairness-auditing-tools.md - Already Format A with all fields
+✓ SKIP: AI-0387-ai-governance-framework.md - Already Format A with all fields
+✓ SKIP: AI-0388-ai-ethics-board.md - Already Format A with all fields
+✓ SKIP: AI-0390-ai-impact-assessment.md - Already Format A with all fields
+✓ SKIP: AI-0391-stakeholder-engagement-ai.md - Already Format A with all fields
+✓ SKIP: AI-0389-responsible-ai-principles.md - Already Format A with all fields
+✓ SKIP: AI-0392-ai-documentation-standards.md - Already Format A with all fields
+✓ SKIP: AI-0393-ethical-review-process.md - Already Format A with all fields
+✓ SKIP: AI-0394-ai-risk-register.md - Already Format A with all fields
+✓ SKIP: AI-0396-ai-governance-maturity-model.md - Already Format A with all fields
+✓ SKIP: AI-0407-TrustworthyAIFramework.md - Already Format A with all fields
+✓ SKIP: AI-0395-algorithmic-transparency-reports.md - Already Format A with all fields
+✓ SKIP: AI-0408-AITrustworthinessDimensions.md - Already Format A with all fields
+✓ SKIP: AI-0409-HumanAgencyOversight.md - Already Format A with all fields
+✓ SKIP: AI-0411-PrivacyDataGovernance.md - Already Format A with all fields
+✓ SKIP: AI-0412-TransparencyExplainability.md - Already Format A with all fields
+✓ SKIP: AI-0410-TechnicalRobustnessSafety.md - Already Format A with all fields
+⚠ CONVERT: 3D Scene Exchange Protocol (SXP).md - Unknown format → Format A (best effort)
+✓ UPDATE: 6G Network Slice.md - Added missing fields to Format A
+✓ CONVERT: AI Alignment.md - Format B → Format A
+✓ CONVERT: ADAS.md - Format B → Format A
+✓ CONVERT: AI Audit.md - Format B → Format A
+✓ CONVERT: AI Development.md - Format B → Format A
+✓ CONVERT: AI Deployment.md - Format B → Format A
+⚠ CONVERT: AI Board.md - Unknown format → Format A (best effort)
+✓ UPDATE: AI Ethics Checklist.md - Added missing fields to Format A
+✓ UPDATE: AI Governance Framework.md - Added missing fields to Format A
+✓ CONVERT: AI Governance.md - Format B → Format A
+✓ CONVERT: AI Incident.md - Format B → Format A
+✓ CONVERT: AI Impact Assessment.md - Format B → Format A
+✓ CONVERT: AI Lifecycle.md - Format B → Format A
+✓ UPDATE: AI Model Card.md - Added missing fields to Format A
+✓ CONVERT: AI Monitoring.md - Format B → Format A
+⚠ CONVERT: AI Office.md - Unknown format → Format A (best effort)
+✓ CONVERT: AI Operator.md - Format B → Format A
+✓ CONVERT: AI Provider.md - Format B → Format A
+✓ CONVERT: AI Risk.md - Format B → Format A
+⚠ CONVERT: AI System (EU Definition).md - Unknown format → Format A (best effort)
+✓ CONVERT: AI Trustworthiness.md - Format B → Format A
+✓ CONVERT: AI User.md - Format B → Format A
+✓ SKIP: AI-0413-DiversityNonDiscriminationFairness.md - Already Format A with all fields
+✓ SKIP: AI-0414-SocietalEnvironmentalWellbeing.md - Already Format A with all fields
+✓ SKIP: AI-0415-IEEE7000SeriesStandards.md - Already Format A with all fields
+✓ SKIP: AI-0416-Differential-Privacy.md - Already Format A with all fields
+✓ SKIP: AI-0417-Federated-Learning.md - Already Format A with all fields
+✓ SKIP: AI-0418-Homomorphic-Encryption-ML.md - Already Format A with all fields
+✓ SKIP: AI-0419-Secure-Multi-Party-Computation.md - Already Format A with all fields
+✓ SKIP: AI-0420-Privacy-Budget-Management.md - Already Format A with all fields
+✓ SKIP: AI-0421-k-Anonymity-Datasets.md - Already Format A with all fields
+✓ SKIP: AI-0422-synthetic-data-generation.md - Already Format A with all fields
+✓ SKIP: AI-0423-privacy-preserving-data-mining.md - Already Format A with all fields
+✓ SKIP: AI-0424-confidential-computing.md - Already Format A with all fields
+✓ SKIP: AI-0425-privacy-impact-assessment.md - Already Format A with all fields
+✓ SKIP: AI-0426-data-minimisation.md - Already Format A with all fields
+✓ SKIP: AI-0427-pseudonymisation.md - Already Format A with all fields
+✓ SKIP: AI-0428-privacy-by-design.md - Already Format A with all fields
+✓ SKIP: AI-0429-gdpr-article-22-compliance.md - Already Format A with all fields
+✓ SKIP: AI-0430-privacy-utility-tradeoffs.md - Already Format A with all fields
+✓ SKIP: AI-0431-edge-ai-system.md - Already Format A with all fields
+✓ SKIP: AI-0432-tinyml.md - Already Format A with all fields
+✓ SKIP: AI-0433-on-device-learning.md - Already Format A with all fields
+✓ SKIP: AI-0434-model-compression-edge.md - Already Format A with all fields
+✓ SKIP: AI-0435-neural-network-quantization.md - Already Format A with all fields
+✓ SKIP: AI-0436-edge-cloud-collaboration.md - Already Format A with all fields
+✓ SKIP: AI-0437-federated-edge-learning.md - Already Format A with all fields
+✓ SKIP: AI-0438-iot-ai-integration.md - Already Format A with all fields
+✓ SKIP: AI-0439-real-time-inference-edge.md - Already Format A with all fields
+✓ SKIP: AI-0440-power-efficient-ai.md - Already Format A with all fields
+✓ SKIP: AI-0441-edge-ai-accelerators.md - Already Format A with all fields
+✓ SKIP: AI-0442-model-pruning-edge.md - Already Format A with all fields
+✓ SKIP: AI-0443-knowledge-distillation-edge.md - Already Format A with all fields
+✓ SKIP: AI-0444-embedded-ai-frameworks.md - Already Format A with all fields
+✓ SKIP: AI-0445-edge-ai-security.md - Already Format A with all fields
+✓ SKIP: AI-0446-latency-aware-edge-ai.md - Already Format A with all fields
+✓ SKIP: AI-0447-edge-ai-smart-cities.md - Already Format A with all fields
+✓ SKIP: AI-0448-UNESCORecommendationEthicsAI.md - Already Format A with all fields
+✓ UPDATE: AI-Generated Content Disclosure.md - Added missing fields to Format A
+⚠ CONVERT: AIEthics.md - Unknown format → Format A (best effort)
+⚠ CONVERT: AIGovernance.md - Unknown format → Format A (best effort)
+⚠ CONVERT: AISystem.md - Unknown format → Format A (best effort)
+✓ CONVERT: ALBERT.md - Format B → Format A
+✓ UPDATE: API Standard.md - Added missing fields to Format A
+✓ UPDATE: Accessibility Audit Tool.md - Added missing fields to Format A
+✓ CONVERT: AUC.md - Format B → Format A
+✓ UPDATE: Accessibility Standard.md - Added missing fields to Format A
+✓ CONVERT: Accountability (OECD).md - Format B → Format A
+✓ CONVERT: Activation Function.md - Format B → Format A
+✓ CONVERT: Accuracy.md - Format B → Format A
+✓ CONVERT: Adapter Modules.md - Format B → Format A
+✓ CONVERT: Accountability.md - Format B → Format A
+✓ SKIP: BC-0001-blockchain.md - Already Format A with all fields
+✓ SKIP: BC-0002-distributed-ledger.md - Already Format A with all fields
+✓ SKIP: BC-0003-block.md - Already Format A with all fields
+✓ SKIP: BC-0004-block-header.md - Already Format A with all fields
+✓ SKIP: BC-0005-genesis-block.md - Already Format A with all fields
+✓ SKIP: BC-0006-transaction.md - Already Format A with all fields
+✓ SKIP: BC-0007-utxo-model.md - Already Format A with all fields
+✓ SKIP: BC-0008-account-model.md - Already Format A with all fields
+✓ SKIP: BC-0009-smart-contract.md - Already Format A with all fields
+✓ SKIP: BC-0010-decentralization.md - Already Format A with all fields
+✓ SKIP: BC-0011-block-height.md - Already Format A with all fields
+✓ SKIP: BC-0012-block-reward.md - Already Format A with all fields
+✓ SKIP: BC-0013-block-size.md - Already Format A with all fields
+✓ SKIP: BC-0014-block-time.md - Already Format A with all fields
+✓ SKIP: BC-0015-chain-reorganization.md - Already Format A with all fields
+✓ SKIP: BC-0016-orphan-block.md - Already Format A with all fields
+✓ SKIP: BC-0017-timestamp.md - Already Format A with all fields
+✓ SKIP: BC-0018-transaction-pool.md - Already Format A with all fields
+✓ SKIP: BC-0019-mempool.md - Already Format A with all fields
+✓ SKIP: BC-0020-transaction-confirmation.md - Already Format A with all fields
+✓ SKIP: BC-0021-input.md - Already Format A with all fields
+✓ SKIP: BC-0022-output.md - Already Format A with all fields
+✓ SKIP: BC-0023-script.md - Already Format A with all fields
+✓ SKIP: BC-0024-opcodes.md - Already Format A with all fields
+✓ SKIP: BC-0025-chain-state.md - Already Format A with all fields
+✓ SKIP: BC-0026-cryptography.md - Already Format A with all fields
+✓ SKIP: BC-0027-hash-function.md - Already Format A with all fields
+✓ SKIP: BC-0028-sha-256.md - Already Format A with all fields
+✓ CONVERT: Adversarial Attack.md - Format B → Format A
+✓ CONVERT: Adversarial Robustness.md - Format B → Format A
+✓ CONVERT: Adversarial Testing.md - Format B → Format A
+✓ UPDATE: Algorithmic Transparency Index.md - Added missing fields to Format A
+✓ UPDATE: Application Layer.md - Added missing fields to Format A
+✓ CONVERT: Attention Head.md - Format B → Format A
+✓ CONVERT: Attention Mask.md - Format B → Format A
+✓ CONVERT: Attention Mechanism.md - Format B → Format A
+✓ UPDATE: Audit Trail.md - Added missing fields to Format A
+⚠ CONVERT: AugmentedReality.md - Unknown format → Format A (best effort)
+✓ UPDATE: Augmented Reality (AR).md - Added missing fields to Format A
+✓ UPDATE: Authoring Tool.md - Added missing fields to Format A
+✓ CONVERT: Autoencoder.md - Format B → Format A
+⚠ CONVERT: Authorised Representative.md - Unknown format → Format A (best effort)
+✓ CONVERT: Artificial Intelligence.md - Format B → Format A
+✓ UPDATE: Autonomous Agent.md - Added missing fields to Format A
+✓ CONVERT: Autonomous Navigation.md - Format B → Format A
+⚠ CONVERT: AutonomousRobot.md - Unknown format → Format A (best effort)
+✓ UPDATE: Avatar Interoperability.md - Added missing fields to Format A
+✓ CONVERT: Autonomous Vehicle.md - Format B → Format A
+✓ UPDATE: Avatar.md - Added missing fields to Format A
+✓ CONVERT: BART.md - Format B → Format A
+✓ SKIP: BC-0029-merkle-tree.md - Already Format A with all fields
+✓ SKIP: BC-0030-digital-signature.md - Already Format A with all fields
+✓ SKIP: BC-0031-public-key-cryptography.md - Already Format A with all fields
+✓ SKIP: BC-0032-elliptic-curve-cryptography.md - Already Format A with all fields
+✓ SKIP: BC-0033-zero-knowledge-proof.md - Already Format A with all fields
+✓ SKIP: BC-0034-nonce.md - Already Format A with all fields
+✓ SKIP: BC-0035-difficulty.md - Already Format A with all fields
+✓ SKIP: BC-0036-private-key.md - Already Format A with all fields
+✓ SKIP: BC-0037-public-key.md - Already Format A with all fields
+✓ SKIP: BC-0038-address.md - Already Format A with all fields
+✓ SKIP: BC-0039-signature-scheme.md - Already Format A with all fields
+✓ SKIP: BC-0040-ecdsa.md - Already Format A with all fields
+✓ SKIP: BC-0041-schnorr-signature.md - Already Format A with all fields
+✓ SKIP: BC-0042-keccak-256.md - Already Format A with all fields
+✓ SKIP: BC-0043-blake2.md - Already Format A with all fields
+✓ SKIP: BC-0044-merkle-root.md - Already Format A with all fields
+✓ SKIP: BC-0045-merkle-proof.md - Already Format A with all fields
+✓ SKIP: BC-0046-hash-collision.md - Already Format A with all fields
+✓ SKIP: BC-0047-preimage-resistance.md - Already Format A with all fields
+✓ SKIP: BC-0048-collision-resistance.md - Already Format A with all fields
+✓ SKIP: BC-0049-salt.md - Already Format A with all fields
+✓ SKIP: BC-0050-cryptographic-commitment.md - Already Format A with all fields
+✓ SKIP: BC-0051-consensus-mechanism.md - Already Format A with all fields
+✓ SKIP: BC-0052-proof-of-work.md - Already Format A with all fields
+✓ SKIP: BC-0053-mining.md - Already Format A with all fields
+✓ SKIP: BC-0054-miner.md - Already Format A with all fields
+✓ SKIP: BC-0055-block-reward.md - Already Format A with all fields
+✓ SKIP: BC-0056-difficulty-adjustment.md - Already Format A with all fields
+✓ SKIP: BC-0057-network-synchronization.md - Already Format A with all fields
+✓ SKIP: BC-0058-consensus-rule.md - Already Format A with all fields
+✓ SKIP: BC-0059-longest-chain-rule.md - Already Format A with all fields
+✓ SKIP: BC-0060-fork-choice-rule.md - Already Format A with all fields
+✓ SKIP: BC-0061-nakamoto-consensus.md - Already Format A with all fields
+✓ SKIP: BC-0062-block-propagation.md - Already Format A with all fields
+✓ SKIP: BC-0063-network-hash-rate.md - Already Format A with all fields
+✓ SKIP: BC-0064-mining-pool.md - Already Format A with all fields
+✓ SKIP: BC-0065-solo-mining.md - Already Format A with all fields
+✓ SKIP: BC-0066-pool-share.md - Already Format A with all fields
+✓ SKIP: BC-0067-difficulty-target.md - Already Format A with all fields
+✓ SKIP: BC-0068-coinbase-transaction.md - Already Format A with all fields
+✓ SKIP: BC-0069-mining-reward.md - Already Format A with all fields
+✓ SKIP: BC-0070-halving.md - Already Format A with all fields
+✓ SKIP: BC-0071-blockchain-network.md - Already Format A with all fields
+✓ SKIP: BC-0072-node.md - Already Format A with all fields
+✓ SKIP: BC-0073-full-node.md - Already Format A with all fields
+✓ SKIP: BC-0074-light-node.md - Already Format A with all fields
+✓ SKIP: BC-0075-peer-to-peer-network.md - Already Format A with all fields
+✓ SKIP: BC-0076-double-spending.md - Already Format A with all fields
+✓ SKIP: BC-0077-51%-attack.md - Already Format A with all fields
+✓ SKIP: BC-0078-sybil-attack.md - Already Format A with all fields
+✓ SKIP: BC-0079-immutability.md - Already Format A with all fields
+✓ SKIP: BC-0080-finality.md - Already Format A with all fields
+✓ SKIP: BC-0081-network-latency.md - Already Format A with all fields
+✓ SKIP: BC-0082-block-propagation-time.md - Already Format A with all fields
+✓ SKIP: BC-0083-eclipse-attack.md - Already Format A with all fields
+✓ SKIP: BC-0084-partition-attack.md - Already Format A with all fields
+✓ SKIP: BC-0085-selfish-mining.md - Already Format A with all fields
+✓ SKIP: BC-0086-censorship-resistance.md - Already Format A with all fields
+✓ SKIP: BC-0087-network-topology.md - Already Format A with all fields
+✓ SKIP: BC-0088-gossip-protocol.md - Already Format A with all fields
+✓ SKIP: BC-0089-peer-discovery.md - Already Format A with all fields
+✓ SKIP: BC-0090-permissionless-network.md - Already Format A with all fields
+✓ SKIP: BC-0091-permissioned-network.md - Already Format A with all fields
+✓ SKIP: BC-0092-validator-node.md - Already Format A with all fields
+✓ SKIP: BC-0093-archival-node.md - Already Format A with all fields
+✓ SKIP: BC-0094-pruned-node.md - Already Format A with all fields
+✓ SKIP: BC-0095-bootstrap-node.md - Already Format A with all fields
+✓ SKIP: BC-0096-token.md - Already Format A with all fields
+✓ SKIP: BC-0097-cryptocurrency.md - Already Format A with all fields
+✓ SKIP: BC-0098-coin.md - Already Format A with all fields
+✓ SKIP: BC-0099-native-token.md - Already Format A with all fields
+✓ SKIP: BC-0100-gas.md - Already Format A with all fields
+✓ CONVERT: BC-0101-transaction-fee.md - Format B → Format A
+✓ CONVERT: BC-0102-inflation.md - Format B → Format A
+✓ CONVERT: BC-0103-halving.md - Format B → Format A
+✓ CONVERT: BC-0104-supply-cap.md - Format B → Format A
+✓ CONVERT: BC-0105-tokenomics.md - Format B → Format A
+✓ CONVERT: BC-0106-gas-price.md - Format B → Format A
+✓ CONVERT: BC-0107-gas-limit.md - Format B → Format A
+✓ CONVERT: BC-0108-base-fee.md - Format B → Format A
+✓ CONVERT: BC-0109-priority-fee.md - Format B → Format A
+✓ CONVERT: BC-0110-fee-market.md - Format B → Format A
+✓ CONVERT: BC-0111-deflationary-token.md - Format B → Format A
+✓ CONVERT: BC-0112-inflationary-token.md - Format B → Format A
+✓ CONVERT: BC-0113-emission-schedule.md - Format B → Format A
+✓ CONVERT: BC-0114-burning-mechanism.md - Format B → Format A
+✓ CONVERT: BC-0115-minting.md - Format B → Format A
+✓ CONVERT: BC-0116-total-supply.md - Format B → Format A
+✓ CONVERT: BC-0117-circulating-supply.md - Format B → Format A
+✓ CONVERT: BC-0118-market-capitalization.md - Format B → Format A
+✓ CONVERT: BC-0119-economic-security.md - Format B → Format A
+✓ CONVERT: BC-0120-incentive-alignment.md - Format B → Format A
+⚠ CONVERT: BC-0426-hyperledger-fabric.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0429-permissioned-blockchain.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0427-hyperledger-besu.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0428-enterprise-blockchain-architecture.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0430-private-channels.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0431-privacy-preserving-blockchain.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0432-consortium-blockchain.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0433-enterprise-token-standards.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0434-blockchain-as-a-service.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0435-hyperledger-indy.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0436-hyperledger-iroha.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0437-r3-corda.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0438-quorum-blockchain.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0439-enterprise-smart-contracts.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0440-blockchain-interoperability.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0441-provenance-tracking.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0443-food-safety-blockchain.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0442-pharmaceutical-traceability.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0444-luxury-goods-authentication.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0445-conflict-mineral-tracking.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0446-supply-chain-traceability.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0447-anti-counterfeiting.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0448-cold-chain-monitoring.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0449-circular-economy.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0450-carbon-credit-tracking.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0451-logistics-optimization.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0452-customs-trade-facilitation.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0453-ethical-sourcing.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0454-waste-management.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0455-product-recall-management.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0456-self-sovereign-identity.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0457-decentralized-identifiers.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0458-verifiable-credentials.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0459-digital-identity-wallet.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0460-identity-verification.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0461-decentralized-autonomous-organization.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0462-on-chain-voting.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0464-treasury-management.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0465-proposal-system.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0463-governance-token.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0466-quadratic-voting.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0467-conviction-voting.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0468-multi-sig-governance.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0469-snapshot-voting.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0470-dao-legal-structures.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0471-tokenomics-governance.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0472-dao-tooling.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0473-delegate-democracy.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0474-grant-programs.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0475-dao-analytics.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0476-aml-kyc-compliance.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0477-travel-rule.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0478-securities-regulation.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0480-cbdc-frameworks.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0481-fatf-recommendations.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0479-stablecoin-regulation.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0482-eu-mica-regulation.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0483-us-regulatory-framework.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0484-asia-pacific-regulation.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0485-tax-treatment-crypto.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0486-regulatory-reporting.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0487-compliance-monitoring.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0488-licensing-requirements.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0489-consumer-protection.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0490-cross-border-compliance.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0491-healthcare-records.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0492-clinical-trials.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0493-real-estate-tokenization.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0494-property-registry.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0495-voting-systems.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0496-energy-consumption-blockchain.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0497-proof-of-stake-sustainability.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0498-carbon-footprint-measurement.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0499-green-blockchain-initiatives.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0500-renewable-energy-certificates.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0501-esg-reporting.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0503-sustainable-consensus.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0504-environmental-impact-assessment.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0502-climate-action-dao.md - Unknown format → Format A (best effort)
+⚠ CONVERT: BC-0505-carbon-neutral-blockchain.md - Unknown format → Format A (best effort)
+✓ CONVERT: BERT.md - Format B → Format A
+✓ CONVERT: Backdoor Attack.md - Format B → Format A
+✓ CONVERT: Backpropagation.md - Format B → Format A
+✓ CONVERT: Batch Normalisation.md - Format B → Format A
+✓ CONVERT: Batch Size.md - Format B → Format A
+✓ UPDATE: Behavioural Feedback Loop.md - Added missing fields to Format A
+✓ UPDATE: Biometric Binding Mechanism.md - Added missing fields to Format A
+✓ UPDATE: Biosensing Interface.md - Added missing fields to Format A
+✓ CONVERT: Bias.md - Format B → Format A
+⚠ CONVERT: Blockchain.md - Unknown format → Format A (best effort)
+⚠ CONVERT: COMPLETE-ONTOLOGY-INDEX.md - Unknown format → Format A (best effort)
+✓ CONVERT: Byte-Pair Encoding.md - Format B → Format A
+⚠ CONVERT: COMPLETE_HRI_TERMS_REFERENCE.md - Unknown format → Format A (best effort)
+⚠ CONVERT: COMPLETION_REPORT.md - Unknown format → Format A (best effort)
+✓ UPDATE: Carbon Credit Token.md - Added missing fields to Format A
+✓ CONVERT: Causal Attention.md - Format B → Format A
+✓ UPDATE: Central Bank Digital Currency (CBDC).md - Added missing fields to Format A
+✓ CONVERT: Chatbot.md - Format B → Format A
+✓ CONVERT: Claude.md - Format B → Format A
+✓ UPDATE: Cloud Rendering Service.md - Added missing fields to Format A
+✓ CONVERT: Co-Training.md - Format B → Format A
+✓ CONVERT: Clinical Decision Support.md - Format B → Format A
+✓ UPDATE: Cognitive Feedback Interface.md - Added missing fields to Format A
+✓ UPDATE: Cognitive Load Metric.md - Added missing fields to Format A
+✓ UPDATE: Collective Intelligence System.md - Added missing fields to Format A
+✓ UPDATE: Collective Memory Archive.md - Added missing fields to Format A
+✓ UPDATE: Compatibility Process.md - Added missing fields to Format A
+✓ UPDATE: Community Governance Model.md - Added missing fields to Format A
+✓ UPDATE: Compliance Audit Trail.md - Added missing fields to Format A
+✓ UPDATE: Compute Layer.md - Added missing fields to Format A
+✓ CONVERT: Computer Vision.md - Format B → Format A
+⚠ CONVERT: ConsensusMechanism.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ConsensusAlgorithm.md - Unknown format → Format A (best effort)
+✓ UPDATE: Consent Management.md - Added missing fields to Format A
+✓ CONVERT: Confusion Matrix.md - Format B → Format A
+✓ CONVERT: Constitutional AI.md - Format B → Format A
+✓ UPDATE: Construction Digital Twin.md - Added missing fields to Format A
+✓ UPDATE: Content Moderation.md - Added missing fields to Format A
+✓ UPDATE: Context Awareness.md - Added missing fields to Format A
+✓ CONVERT: Context Window.md - Format B → Format A
+✓ CONVERT: Continued Pre-Training.md - Format B → Format A
+✓ UPDATE: Conversion Pipeline.md - Added missing fields to Format A
+✓ CONVERT: Contrastive Learning.md - Format B → Format A
+✓ UPDATE: Content Delivery Network (CDN).md - Added missing fields to Format A
+✓ UPDATE: Creator Economy.md - Added missing fields to Format A
+✓ UPDATE: Creator Royalty Token.md - Added missing fields to Format A
+✓ CONVERT: Convolutional Neural Network.md - Format B → Format A
+✓ CONVERT: Cross-Attention.md - Format B → Format A
+✓ UPDATE: Cross-Border Data Transfer Rule.md - Added missing fields to Format A
+✓ UPDATE: Cross-Platform Compliance Hub.md - Added missing fields to Format A
+⚠ CONVERT: CrossChainBridge.md - Unknown format → Format A (best effort)
+✓ UPDATE: Crypto Token.md - Added missing fields to Format A
+✓ UPDATE: Cryptocurrency.md - Added missing fields to Format A
+⚠ CONVERT: CryptographicHash.md - Unknown format → Format A (best effort)
+✓ UPDATE: Cultural Provenance Record.md - Added missing fields to Format A
+✓ CONVERT: Curriculum Learning.md - Format B → Format A
+✓ UPDATE: Cultural Heritage XR Experience.md - Added missing fields to Format A
+✓ CONVERT: CutMix.md - Format B → Format A
+⚠ CONVERT: DAO.md - Unknown format → Format A (best effort)
+⚠ CONVERT: DELIVERY-MANIFEST.md - Unknown format → Format A (best effort)
+✓ UPDATE: Data Anonymization Pipeline.md - Added missing fields to Format A
+✓ CONVERT: Data Augmentation Strategies.md - Format B → Format A
+✓ UPDATE: Data Fabric Architecture.md - Added missing fields to Format A
+✓ UPDATE: Data Integration Interface.md - Added missing fields to Format A
+✓ UPDATE: Data Protection.md - Added missing fields to Format A
+✓ CONVERT: Data Poisoning.md - Format B → Format A
+✓ UPDATE: Data Provenance.md - Added missing fields to Format A
+✓ UPDATE: Data Storage Layer.md - Added missing fields to Format A
+⚠ CONVERT: DataPipeline.md - Unknown format → Format A (best effort)
+✓ CONVERT: DeBERTa.md - Format B → Format A
+⚠ CONVERT: DeFiProtocol.md - Unknown format → Format A (best effort)
+✓ UPDATE: Decentralization Layer.md - Added missing fields to Format A
+✓ UPDATE: Decentralized Exchange (DEX).md - Added missing fields to Format A
+✓ UPDATE: Decentralized Autonomous Organization (DAO).md - Added missing fields to Format A
+✓ UPDATE: Decentralized Identity (DID).md - Added missing fields to Format A
+⚠ CONVERT: DecentralizedStorage.md - Unknown format → Format A (best effort)
+✓ CONVERT: Decoder.md - Format B → Format A
+✓ UPDATE: Deepfakes.md - Added missing fields to Format A
+✓ CONVERT: Democratic Values.md - Format B → Format A
+✓ CONVERT: Dialogue System.md - Format B → Format A
+⚠ CONVERT: Deployer.md - Unknown format → Format A (best effort)
+✓ UPDATE: Digital Asset.md - Added missing fields to Format A
+✓ UPDATE: Digital Asset Workflow.md - Added missing fields to Format A
+✓ UPDATE: Digital Citizenship.md - Added missing fields to Format A
+✓ UPDATE: Digital Citizens' Assembly.md - Added missing fields to Format A
+✓ UPDATE: Digital Constitution.md - Added missing fields to Format A
+⚠ CONVERT: Digital Citizens’ Assembly.md - Unknown format → Format A (best effort)
+✓ UPDATE: Digital Evidence Chain of Custody.md - Added missing fields to Format A
+✓ UPDATE: Digital Curation Platform.md - Added missing fields to Format A
+✓ UPDATE: Digital Goods Registry.md - Added missing fields to Format A
+✓ UPDATE: Digital Goods.md - Added missing fields to Format A
+✓ UPDATE: Digital Identity Framework.md - Added missing fields to Format A
+✓ UPDATE: Digital Identity Wallet.md - Added missing fields to Format A
+✓ UPDATE: Digital Jurisdiction.md - Added missing fields to Format A
+✓ UPDATE: Digital Ontology Repository.md - Added missing fields to Format A
+✓ UPDATE: Digital Performance Capture.md - Added missing fields to Format A
+✓ UPDATE: Digital Real Estate.md - Added missing fields to Format A
+✓ UPDATE: Digital Rights Management (Extended).md - Added missing fields to Format A
+✓ UPDATE: Digital Ritual.md - Added missing fields to Format A
+✓ UPDATE: Digital Taxonomy Registry.md - Added missing fields to Format A
+✓ UPDATE: Digital Tax Compliance Node.md - Added missing fields to Format A
+✓ UPDATE: Digital Twin Interop Protocol.md - Added missing fields to Format A
+✓ UPDATE: Digital Twin Synchronisation Bus.md - Added missing fields to Format A
+✓ UPDATE: Digital Twin of Society (DToS).md - Added missing fields to Format A
+✓ UPDATE: Digital Twin.md - Added missing fields to Format A
+✓ UPDATE: Digital Well-Being Index.md - Added missing fields to Format A
+⚠ CONVERT: DigitalAvatar.md - Unknown format → Format A (best effort)
+✓ UPDATE: DigitalTwin.md - Added missing fields to Format A
+✓ CONVERT: Direct Preference Optimisation.md - Format B → Format A
+✓ UPDATE: Discovery Layer.md - Added missing fields to Format A
+✓ UPDATE: Display Metrology.md - Added missing fields to Format A
+✓ UPDATE: Dispute Resolution Mechanism.md - Added missing fields to Format A
+✓ UPDATE: Distributed Architecture.md - Added missing fields to Format A
+✓ UPDATE: Distributed Ledger Technology (DLT).md - Added missing fields to Format A
+⚠ CONVERT: Distributor.md - Unknown format → Format A (best effort)
+✓ CONVERT: Dropout.md - Format B → Format A
+✓ CONVERT: Drug Discovery AI.md - Format B → Format A
+✓ UPDATE: E-Contract Arbitration.md - Added missing fields to Format A
+✓ CONVERT: ELECTRA.md - Format B → Format A
+⚠ CONVERT: ERC721.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ERC20.md - Unknown format → Format A (best effort)
+✓ UPDATE: ETSI_Domain_AI.md - Added missing fields to Format A
+⚠ CONVERT: ETSIDomainClassification.md - Unknown format → Format A (best effort)
+✓ UPDATE: ETSI_Domain_AI___Creative_Media.md - Added missing fields to Format A
+✓ UPDATE: ETSI_Domain_AI___Data_Mgmt.md - Added missing fields to Format A
+✓ UPDATE: ETSI_Domain_AI___Governance.md - Added missing fields to Format A
+✓ UPDATE: ETSI_Domain_AI___Human_Interface.md - Added missing fields to Format A
+✓ UPDATE: ETSI_Domain_Application___Creative.md - Added missing fields to Format A
+✓ UPDATE: ETSI_Domain_Application___Education.md - Added missing fields to Format A
+✓ UPDATE: ETSI_Domain_Application___Health.md - Added missing fields to Format A
+✓ UPDATE: ETSI_Domain_Application___Industry.md - Added missing fields to Format A
+✓ UPDATE: ETSI_Domain_Application___Tourism.md - Added missing fields to Format A
+✓ UPDATE: ETSI_Domain_Creative_Media.md - Added missing fields to Format A
+✓ UPDATE: ETSI_Domain_Data_Management.md - Added missing fields to Format A
+✓ UPDATE: ETSI_Domain_Data.md - Added missing fields to Format A
+✓ UPDATE: ETSI_Domain_Data_Management___Creative.md - Added missing fields to Format A
+✓ UPDATE: ETSI_Domain_Data_Management___Culture.md - Added missing fields to Format A
+✓ UPDATE: ETSI_Domain_Data_Management___Ethics.md - Added missing fields to Format A
+✓ UPDATE: ETSI_Domain_Data_Mgmt___AI.md - Added missing fields to Format A
+✓ UPDATE: ETSI_Domain_Governance_&_Compliance.md - Added missing fields to Format A
+✓ UPDATE: ETSI_Domain_Data_Mgmt___Security.md - Added missing fields to Format A
+✓ UPDATE: ETSI_Domain_Ethics_&_Law.md - Added missing fields to Format A
+⚠ CONVERT: ETSI_Domain_Governance_Security.md - Unknown format → Format A (best effort)
+✓ UPDATE: ETSI_Domain_Governance_&_Ethics.md - Added missing fields to Format A
+⚠ CONVERT: ETSI_Domain_Governance_Compliance.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Governance___Economy.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Governance___Ethics.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Governance___Society.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Human_Interface.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Human_Interface___Governance.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Human_Interface___UX.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Identity_&_Trust.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Immersive_Experiences.md - Unknown format → Format A (best effort)
+✓ UPDATE: ETSI_Domain_Immersive___Reality_Capture.md - Added missing fields to Format A
+⚠ CONVERT: ETSI_Domain_Infrastructure.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Infrastructure_Data.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Infrastructure___Governance.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Infrastructure___Immersive.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Infrastructure___Interop.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Infrastructure___Security.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Interoperability.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Interoperability___Creative.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Reality_Capture.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Reality_Capture___Creative.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Security_&_Privacy.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Virtual_Economy.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ETSI_Domain_Virtual_Society.md - Unknown format → Format A (best effort)
+✓ CONVERT: Early Stopping.md - Format B → Format A
+✓ UPDATE: Edge Computing Node.md - Added missing fields to Format A
+✓ UPDATE: Edge Mesh Network.md - Added missing fields to Format A
+✓ UPDATE: Edge Network.md - Added missing fields to Format A
+✓ UPDATE: Edge Orchestration.md - Added missing fields to Format A
+✓ UPDATE: Education Metaverse.md - Added missing fields to Format A
+✓ UPDATE: Emotional Analytics Engine.md - Added missing fields to Format A
+✓ UPDATE: Emotional Immersion.md - Added missing fields to Format A
+✓ CONVERT: Encoder-Decoder Architecture.md - Format B → Format A
+✓ CONVERT: Encoder.md - Format B → Format A
+✓ UPDATE: Environmental Impact Metric.md - Added missing fields to Format A
+✓ UPDATE: Environmental Sustainability Label.md - Added missing fields to Format A
+✓ CONVERT: Environmental Sustainability.md - Format B → Format A
+✓ CONVERT: Epoch.md - Format B → Format A
+✓ UPDATE: Ethical Framework.md - Added missing fields to Format A
+✓ CONVERT: Ethical AI.md - Format B → Format A
+✓ UPDATE: Ethics & Law Layer.md - Added missing fields to Format A
+✓ UPDATE: Experience Layer.md - Added missing fields to Format A
+✓ CONVERT: Explainability (OECD).md - Format B → Format A
+✓ UPDATE: Explainable AI (XAI).md - Added missing fields to Format A
+✓ CONVERT: Explainability.md - Format B → Format A
+⚠ CONVERT: ExplainableAI.md - Unknown format → Format A (best effort)
+✓ CONVERT: Explainable AI.md - Format B → Format A
+✓ UPDATE: Extended Reality (XR).md - Added missing fields to Format A
+✓ UPDATE: Eye Tracking.md - Added missing fields to Format A
+⚠ CONVERT: FILE-LISTING.md - Unknown format → Format A (best effort)
+✓ CONVERT: F1 Score.md - Format B → Format A
+✓ CONVERT: Fairness (OECD).md - Format B → Format A
+✓ CONVERT: Feature Extraction.md - Format B → Format A
+✓ CONVERT: Fairness.md - Format B → Format A
+✓ UPDATE: Federated Credential Exchange.md - Added missing fields to Format A
+⚠ CONVERT: FederatedLearning.md - Unknown format → Format A (best effort)
+✓ CONVERT: Feature Importance.md - Format B → Format A
+✓ CONVERT: Feed-Forward Network.md - Format B → Format A
+✓ UPDATE: Feedback Mechanism.md - Added missing fields to Format A
+✓ CONVERT: Feedforward Neural Network.md - Format B → Format A
+✓ CONVERT: Fine-Tuning.md - Format B → Format A
+✓ UPDATE: Fractionalized NFT.md - Added missing fields to Format A
+✓ CONVERT: Full Fine-Tuning.md - Format B → Format A
+✓ CONVERT: GPT-2.md - Format B → Format A
+✓ CONVERT: GPT-3.md - Format B → Format A
+✓ CONVERT: GPT-4.md - Format B → Format A
+✓ CONVERT: GPT.md - Format B → Format A
+✓ UPDATE: Game Engine.md - Added missing fields to Format A
+✓ CONVERT: Gemini.md - Format B → Format A
+⚠ CONVERT: General-Purpose AI Model.md - Unknown format → Format A (best effort)
+✓ CONVERT: Generative Adversarial Network.md - Format B → Format A
+✓ UPDATE: Generative Design Tool.md - Added missing fields to Format A
+⚠ CONVERT: GenerativeModel.md - Unknown format → Format A (best effort)
+✓ UPDATE: Glossary Index.md - Added missing fields to Format A
+✓ CONVERT: Global Explanation.md - Format B → Format A
+⚠ CONVERT: Glossary_Index.md - Unknown format → Format A (best effort)
+✓ UPDATE: Governance Model.md - Added missing fields to Format A
+✓ CONVERT: Gradient Clipping.md - Format B → Format A
+✓ CONVERT: Gradient Descent.md - Format B → Format A
+✓ CONVERT: Graph Neural Network.md - Format B → Format A
+⚠ CONVERT: HRI_SAFETY_TERMS_SUMMARY.md - Unknown format → Format A (best effort)
+⚠ CONVERT: HapticFeedback.md - Unknown format → Format A (best effort)
+✓ UPDATE: Haptics.md - Added missing fields to Format A
+✓ UPDATE: Hardware Abstraction Layer (HAL).md - Added missing fields to Format A
+✓ CONVERT: Hardware-Platform-Agnostic.md - Format B → Format A
+⚠ CONVERT: Hardware-_Platform-Agnostic.md - Unknown format → Format A (best effort)
+✓ CONVERT: Harmful Bias.md - Format B → Format A
+✓ CONVERT: Harmlessness.md - Format B → Format A
+✓ CONVERT: Healthcare Analytics.md - Format B → Format A
+✓ UPDATE: Health Metaverse Application.md - Added missing fields to Format A
+✓ CONVERT: Helpfulness.md - Format B → Format A
+✓ CONVERT: Hidden Dimension.md - Format B → Format A
+✓ CONVERT: Hidden State.md - Format B → Format A
+✓ CONVERT: High-Risk AI System.md - Format B → Format A
+✓ CONVERT: Honesty.md - Format B → Format A
+✓ UPDATE: Human Capture & Recognition.md - Added missing fields to Format A
+✓ CONVERT: Human Feedback.md - Format B → Format A
+✓ UPDATE: Human Interface Device.md - Added missing fields to Format A
+✓ UPDATE: Human Interface Layer (HIL).md - Added missing fields to Format A
+✓ CONVERT: Human Oversight.md - Format B → Format A
+✓ CONVERT: Human Rights.md - Format B → Format A
+⚠ CONVERT: HumanRobotInteraction.md - Unknown format → Format A (best effort)
+✓ UPDATE: Humanity Attestation.md - Added missing fields to Format A
+✓ CONVERT: Human-in-the-Loop.md - Format B → Format A
+✓ CONVERT: Hyperparameter.md - Format B → Format A
+⚠ CONVERT: INDEX.md - Unknown format → Format A (best effort)
+⚠ CONVERT: IMPLEMENTATION-SUMMARY.md - Unknown format → Format A (best effort)
+✓ CONVERT: Human-Centred Values.md - Format B → Format A
+✓ UPDATE: Identity Federation.md - Added missing fields to Format A
+✓ UPDATE: Identity Graph.md - Added missing fields to Format A
+✓ UPDATE: Identity Provider (IdP).md - Added missing fields to Format A
+✓ CONVERT: Image Classification.md - Format B → Format A
+✓ CONVERT: Image Generation.md - Format B → Format A
+✓ CONVERT: Image-to-Image Translation.md - Format B → Format A
+✓ UPDATE: Immersion.md - Added missing fields to Format A
+✓ CONVERT: Immersive Experience.md - Format B → Format A
+⚠ CONVERT: Importer.md - Unknown format → Format A (best effort)
+✓ CONVERT: Inclusive Growth.md - Format B → Format A
+✓ UPDATE: Industrial Metaverse.md - Added missing fields to Format A
+✓ CONVERT: Inference.md - Format B → Format A
+✓ UPDATE: Infrastructure Layer.md - Added missing fields to Format A
+✓ CONVERT: Instance Segmentation.md - Format B → Format A
+✓ CONVERT: Instruction Tuning.md - Format B → Format A
+✓ UPDATE: Intelligent Virtual Entity.md - Added missing fields to Format A
+✓ UPDATE: Interoperability Framework.md - Added missing fields to Format A
+✓ CONVERT: Interpretability.md - Format B → Format A
+✓ CONVERT: Interoperability.md - Format B → Format A
+✓ CONVERT: Knowledge Distillation.md - Format B → Format A
+✓ CONVERT: Interpretable AI.md - Format B → Format A
+✓ CONVERT: Intrinsic Interpretability.md - Format B → Format A
+✓ UPDATE: Knowledge Graph.md - Added missing fields to Format A
+✓ CONVERT: LLaMA.md - Format B → Format A
+✓ CONVERT: Label Smoothing.md - Format B → Format A
+✓ CONVERT: Language Modeling.md - Format B → Format A
+✓ UPDATE: Latency Management Protocol.md - Added missing fields to Format A
+✓ UPDATE: Latency.md - Added missing fields to Format A
+⚠ CONVERT: Layer2.md - Unknown format → Format A (best effort)
+✓ CONVERT: Layer Normalisation.md - Format B → Format A
+⚠ CONVERT: Layer2Scaling.md - Unknown format → Format A (best effort)
+✓ CONVERT: Learning Rate Schedule.md - Format B → Format A
+✓ UPDATE: Liquidity Pool.md - Added missing fields to Format A
+⚠ CONVERT: Limited Risk AI.md - Unknown format → Format A (best effort)
+✓ CONVERT: LoRA.md - Format B → Format A
+✓ CONVERT: Long Short-Term Memory.md - Format B → Format A
+✓ CONVERT: Loss Function.md - Format B → Format A
+✓ CONVERT: Local Explanation.md - Format B → Format A
+✓ UPDATE: Loyalty Token.md - Added missing fields to Format A
+✓ CONVERT: Machine Translation.md - Format B → Format A
+✓ CONVERT: Machine Learning.md - Format B → Format A
+⚠ CONVERT: MachineLearning.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ManipulatorArm.md - Unknown format → Format A (best effort)
+⚠ CONVERT: Making Available.md - Unknown format → Format A (best effort)
+✓ UPDATE: Marketplace.md - Added missing fields to Format A
+⚠ CONVERT: Market Surveillance Authority.md - Unknown format → Format A (best effort)
+✓ CONVERT: Medical Diagnosis AI.md - Format B → Format A
+✓ CONVERT: Membership Inference.md - Format B → Format A
+✓ CONVERT: Maximum Sequence Length.md - Format B → Format A
+✓ CONVERT: Mean Absolute Error.md - Format B → Format A
+✓ CONVERT: Medical Imaging AI.md - Format B → Format A
+✓ UPDATE: Metadata Standard.md - Added missing fields to Format A
+✓ UPDATE: Metaverse Architecture Stack.md - Added missing fields to Format A
+✓ UPDATE: Metaverse Content Pipeline.md - Added missing fields to Format A
+✓ UPDATE: Metaverse Liability Model.md - Added missing fields to Format A
+✓ UPDATE: Metaverse Ontology Schema.md - Added missing fields to Format A
+✓ CONVERT: Medical AI.md - Format B → Format A
+✓ UPDATE: Metaverse Safety Protocol.md - Added missing fields to Format A
+✓ UPDATE: Metaverse.md - Added missing fields to Format A
+✓ UPDATE: Metaverse Psychology Profile.md - Added missing fields to Format A
+⚠ CONVERT: Metaverse_Ontology_Schema.md - Unknown format → Format A (best effort)
+✓ UPDATE: Micropayment.md - Added missing fields to Format A
+✓ UPDATE: Middleware.md - Added missing fields to Format A
+✓ CONVERT: Mistral.md - Format B → Format A
+⚠ CONVERT: Minimal Risk AI.md - Unknown format → Format A (best effort)
+✓ CONVERT: Mixed Precision Training.md - Format B → Format A
+✓ UPDATE: Mixed Reality (MR).md - Added missing fields to Format A
+✓ CONVERT: Mixtral.md - Format B → Format A
+✓ CONVERT: Mixup.md - Format B → Format A
+✓ CONVERT: Mixture of Experts.md - Format B → Format A
+✓ CONVERT: Model Capacity.md - Format B → Format A
+✓ CONVERT: Model Depth.md - Format B → Format A
+✓ CONVERT: Model Ensembling.md - Format B → Format A
+✓ CONVERT: Model Extraction.md - Format B → Format A
+✓ CONVERT: Model Interpretability.md - Format B → Format A
+✓ CONVERT: Model Inversion.md - Format B → Format A
+✓ CONVERT: Model Parameters.md - Format B → Format A
+✓ CONVERT: Model Robustness.md - Format B → Format A
+✓ CONVERT: Model Weights.md - Format B → Format A
+✓ CONVERT: Model Performance.md - Format B → Format A
+✓ CONVERT: Model Width.md - Format B → Format A
+✓ CONVERT: Momentum Contrast.md - Format B → Format A
+✓ UPDATE: Motion Capture Rig.md - Added missing fields to Format A
+✓ CONVERT: Motion Planning.md - Format B → Format A
+✓ CONVERT: Multi-Head Attention.md - Format B → Format A
+✓ CONVERT: Multi-Task Learning.md - Format B → Format A
+✓ UPDATE: Multiverse.md - Added missing fields to Format A
+✓ UPDATE: NFT Renting.md - Added missing fields to Format A
+✓ UPDATE: NFT Swapping.md - Added missing fields to Format A
+✓ UPDATE: NFT Wrapping.md - Added missing fields to Format A
+⚠ CONVERT: NFT.md - Unknown format → Format A (best effort)
+✓ CONVERT: Named Entity Recognition.md - Format B → Format A
+✓ UPDATE: Narrative Design Ontology.md - Added missing fields to Format A
+✓ CONVERT: Natural Language Processing.md - Format B → Format A
+⚠ CONVERT: National Competent Authority.md - Unknown format → Format A (best effort)
+✓ UPDATE: Network Infrastructure.md - Added missing fields to Format A
+✓ UPDATE: Networking Layer.md - Added missing fields to Format A
+⚠ CONVERT: NeuralNetwork.md - Unknown format → Format A (best effort)
+✓ UPDATE: Non-Fungible Token (NFT).md - Added missing fields to Format A
+⚠ CONVERT: Notified Body.md - Unknown format → Format A (best effort)
+✓ CONVERT: Object Detection and Tracking.md - Format B → Format A
+✓ CONVERT: Object Detection.md - Format B → Format A
+⚠ CONVERT: OntologyDefinition.md - Unknown format → Format A (best effort)
+✓ UPDATE: Open World.md - Added missing fields to Format A
+✓ CONVERT: Optimiser.md - Format B → Format A
+⚠ CONVERT: Oracle.md - Unknown format → Format A (best effort)
+✓ CONVERT: Overfitting.md - Format B → Format A
+⚠ CONVERT: Ownership & Freedom (distributed).md - Unknown format → Format A (best effort)
+✓ CONVERT: PEGASUS.md - Format B → Format A
+✓ CONVERT: Panoptic Segmentation.md - Format B → Format A
+✓ CONVERT: Parameter Count.md - Format B → Format A
+✓ CONVERT: Ownership-Freedom-distributed.md - Format B → Format A
+✓ CONVERT: Parameter-Efficient Fine-Tuning.md - Format B → Format A
+⚠ CONVERT: PathPlanning.md - Unknown format → Format A (best effort)
+✓ CONVERT: Pathology AI.md - Format B → Format A
+✓ CONVERT: Perception System.md - Format B → Format A
+✓ CONVERT: Path Planning.md - Format B → Format A
+⚠ CONVERT: Persistence.md - Unknown format → Format A (best effort)
+✓ UPDATE: Photogrammetry.md - Added missing fields to Format A
+✓ UPDATE: Physics Engine.md - Added missing fields to Format A
+✓ UPDATE: Physics-Based Animation.md - Added missing fields to Format A
+⚠ CONVERT: Placing on the Market.md - Unknown format → Format A (best effort)
+✓ UPDATE: Platform Layer.md - Added missing fields to Format A
+✓ UPDATE: Play-to-Earn (P2E).md - Added missing fields to Format A
+⚠ CONVERT: Policy Engine.md - Unknown format → Format A (best effort)
+⚠ CONVERT: Portability.md - Unknown format → Format A (best effort)
+✓ CONVERT: Positional Encoding.md - Format B → Format A
+✓ UPDATE: Post-Quantum Cryptography.md - Added missing fields to Format A
+✓ CONVERT: Pre-Training.md - Format B → Format A
+✓ CONVERT: Post-Hoc Explanation.md - Format B → Format A
+✓ CONVERT: Precision.md - Format B → Format A
+✓ CONVERT: Precision Medicine.md - Format B → Format A
+✓ CONVERT: Preference Learning.md - Format B → Format A
+✓ UPDATE: Presence.md - Added missing fields to Format A
+✓ UPDATE: Privacy Impact Assessment (PIA).md - Added missing fields to Format A
+✓ CONVERT: Prefix Tuning.md - Format B → Format A
+✓ UPDATE: Privacy-Enhancing Computation (PEC).md - Added missing fields to Format A
+⚠ CONVERT: PrivateBlockchain.md - Unknown format → Format A (best effort)
+✓ UPDATE: Procedural Audio Generator.md - Added missing fields to Format A
+✓ CONVERT: Privacy.md - Format B → Format A
+✓ UPDATE: Procedural Content Generation.md - Added missing fields to Format A
+✓ UPDATE: Procedural Texture.md - Added missing fields to Format A
+⚠ CONVERT: Prohibited AI Practice.md - Unknown format → Format A (best effort)
+✓ CONVERT: Prompt Tuning.md - Format B → Format A
+⚠ CONVERT: ProofOfStake.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ProofOfWork.md - Unknown format → Format A (best effort)
+✓ UPDATE: Provenance Ontology (PROV-O).md - Added missing fields to Format A
+✓ UPDATE: Provenance Verification.md - Added missing fields to Format A
+⚠ CONVERT: Provider.md - Unknown format → Format A (best effort)
+✓ CONVERT: Proximal Policy Optimisation.md - Format B → Format A
+✓ CONVERT: QLoRA.md - Format B → Format A
+⚠ CONVERT: PublicBlockchain.md - Unknown format → Format A (best effort)
+✓ CONVERT: Query Key Value.md - Format B → Format A
+✓ CONVERT: Question Answering.md - Format B → Format A
+✓ UPDATE: Quantum Network Node.md - Added missing fields to Format A
+✓ CONVERT: RB-0001-robot.md - Format B → Format A
+✓ CONVERT: RB-0002-mobile-robot.md - Format B → Format A
+✓ CONVERT: RB-0003-manipulator.md - Format B → Format A
+✓ CONVERT: RB-0005-industrial-robot.md - Format B → Format A
+⚠ CONVERT: RESEARCH_SUMMARY.md - Unknown format → Format A (best effort)
+✓ CONVERT: Radiology AI.md - Format B → Format A
+✓ CONVERT: RB-0004-humanoid-robot.md - Format B → Format A
+✓ CONVERT: ROC Curve.md - Format B → Format A
+✓ UPDATE: Real-Time Rendering Pipeline.md - Added missing fields to Format A
+✓ UPDATE: Reality Capture System.md - Added missing fields to Format A
+✓ CONVERT: Recurrent Neural Network.md - Format B → Format A
+✓ CONVERT: Recall.md - Format B → Format A
+✓ CONVERT: Red Teaming.md - Format B → Format A
+✓ CONVERT: Regularisation.md - Format B → Format A
+⚠ CONVERT: ReinforcementLearning.md - Unknown format → Format A (best effort)
+✓ CONVERT: Reinforcement Learning from Human Feedback.md - Format B → Format A
+✓ UPDATE: Reputation Data.md - Added missing fields to Format A
+✓ CONVERT: Reliability.md - Format B → Format A
+✓ UPDATE: Reputation Scoring Model.md - Added missing fields to Format A
+✓ CONVERT: Residual Connection.md - Format B → Format A
+✓ CONVERT: Residual Network.md - Format B → Format A
+⚠ CONVERT: Resilience Metric.md - Unknown format → Format A (best effort)
+✓ CONVERT: Responsible AI.md - Format B → Format A
+✓ UPDATE: Right to Be Forgotten.md - Added missing fields to Format A
+✓ CONVERT: Risk Assessment.md - Format B → Format A
+✓ CONVERT: Risk Management.md - Format B → Format A
+✓ CONVERT: Risk Mitigation.md - Format B → Format A
+✓ CONVERT: Risk Treatment.md - Format B → Format A
+✓ CONVERT: Reward Model.md - Format B → Format A
+✓ CONVERT: RoBERTa.md - Format B → Format A
+⚠ CONVERT: RobotLearning.md - Unknown format → Format A (best effort)
+✓ CONVERT: Robustness (OECD).md - Format B → Format A
+✓ UPDATE: Royalty Mechanism.md - Added missing fields to Format A
+✓ CONVERT: Robustness.md - Format B → Format A
+✓ CONVERT: Root Mean Square Error.md - Format B → Format A
+⚠ CONVERT: SLAM.md - Unknown format → Format A (best effort)
+✓ CONVERT: Rule of Law.md - Format B → Format A
+⚠ CONVERT: SPARQL-EXAMPLES.md - Unknown format → Format A (best effort)
+⚠ CONVERT: SUMMARY.md - Unknown format → Format A (best effort)
+✓ CONVERT: Safety Fine-Tuning.md - Format B → Format A
+✓ CONVERT: Scaled Dot-Product Attention.md - Format B → Format A
+✓ CONVERT: Safety.md - Format B → Format A
+✓ UPDATE: Scene Graph.md - Added missing fields to Format A
+✓ CONVERT: Scene Understanding.md - Format B → Format A
+✓ CONVERT: Safety (OECD).md - Format B → Format A
+✓ UPDATE: Security Layer.md - Added missing fields to Format A
+✓ CONVERT: Self-Attention.md - Format B → Format A
+✓ CONVERT: Security.md - Format B → Format A
+✓ CONVERT: Self-Driving Car.md - Format B → Format A
+✓ UPDATE: Self-Sovereign Identity (SSI).md - Added missing fields to Format A
+✓ CONVERT: Self-Training.md - Format B → Format A
+✓ UPDATE: Semantic Metadata Registry.md - Added missing fields to Format A
+✓ CONVERT: Sensor Fusion.md - Format B → Format A
+⚠ CONVERT: SensorFusion.md - Unknown format → Format A (best effort)
+✓ CONVERT: Semantic Segmentation.md - Format B → Format A
+✓ CONVERT: SentencePiece.md - Format B → Format A
+✓ CONVERT: Sentiment Analysis.md - Format B → Format A
+⚠ CONVERT: Serious Incident.md - Unknown format → Format A (best effort)
+✓ UPDATE: Service Layer.md - Added missing fields to Format A
+✓ CONVERT: SimCLR.md - Format B → Format A
+✓ UPDATE: Smart Royalties Ledger.md - Added missing fields to Format A
+✓ UPDATE: Smart Contract.md - Added missing fields to Format A
+✓ UPDATE: Smart Royalty Contract.md - Added missing fields to Format A
+⚠ CONVERT: SmartContract.md - Unknown format → Format A (best effort)
+✓ UPDATE: Social Impact Assessment (SIA).md - Added missing fields to Format A
+✓ CONVERT: Social Impact.md - Format B → Format A
+✓ UPDATE: Social Token Economy.md - Added missing fields to Format A
+⚠ CONVERT: SocialVR.md - Unknown format → Format A (best effort)
+⚠ CONVERT: SoftRobotics.md - Unknown format → Format A (best effort)
+✓ CONVERT: Sparse Mixture of Experts.md - Format B → Format A
+✓ UPDATE: Spatial Anchor.md - Added missing fields to Format A
+✓ UPDATE: Spatial Audio Scene Description.md - Added missing fields to Format A
+✓ UPDATE: Spatial Computing Layer.md - Added missing fields to Format A
+✓ UPDATE: Spatial Computing.md - Added missing fields to Format A
+✓ UPDATE: Spatial Index.md - Added missing fields to Format A
+✓ UPDATE: Stablecoin.md - Added missing fields to Format A
+✓ UPDATE: State Synchronization.md - Added missing fields to Format A
+✓ CONVERT: Stakeholder.md - Format B → Format A
+✓ CONVERT: Stochastic Gradient Descent.md - Format B → Format A
+⚠ CONVERT: SpatialComputing.md - Unknown format → Format A (best effort)
+✓ UPDATE: Storage Layer.md - Added missing fields to Format A
+✓ CONVERT: Style Transfer.md - Format B → Format A
+✓ CONVERT: Super-Resolution.md - Format B → Format A
+✓ CONVERT: Subword Tokenisation.md - Format B → Format A
+✓ CONVERT: Supervised Fine-Tuning.md - Format B → Format A
+✓ CONVERT: Sustainable Development.md - Format B → Format A
+⚠ CONVERT: SwarmRobotics.md - Unknown format → Format A (best effort)
+✓ UPDATE: Synthetic Data Generator.md - Added missing fields to Format A
+⚠ CONVERT: Systemic Risk.md - Unknown format → Format A (best effort)
+✓ CONVERT: T5.md - Format B → Format A
+⚠ CONVERT: TERM_INDEX.md - Unknown format → Format A (best effort)
+⚠ CONVERT: TERM-INDEX.md - Unknown format → Format A (best effort)
+✓ CONVERT: Task-Specific Head.md - Format B → Format A
+✓ CONVERT: Teacher-Student Training.md - Format B → Format A
+✓ UPDATE: Telemetry & Analytics.md - Added missing fields to Format A
+⚠ CONVERT: Teleoperation.md - Unknown format → Format A (best effort)
+✓ UPDATE: Testing Process.md - Added missing fields to Format A
+✓ CONVERT: Text Generation.md - Format B → Format A
+✓ CONVERT: Text Summarisation.md - Format B → Format A
+✓ UPDATE: Threat Surface Map.md - Added missing fields to Format A
+✓ UPDATE: Token Bonding Curve.md - Added missing fields to Format A
+✓ UPDATE: Token Custody Service.md - Added missing fields to Format A
+⚠ CONVERT: Token.md - Unknown format → Format A (best effort)
+✓ CONVERT: Token Embedding.md - Format B → Format A
+✓ CONVERT: Tokenisation.md - Format B → Format A
+✓ UPDATE: Tokenization.md - Added missing fields to Format A
+✓ UPDATE: Tourism Metaverse.md - Added missing fields to Format A
+✓ CONVERT: Training.md - Format B → Format A
+✓ UPDATE: Transaction Standard.md - Added missing fields to Format A
+✓ CONVERT: Transformer Architecture.md - Format B → Format A
+✓ CONVERT: Transformer.md - Format B → Format A
+✓ CONVERT: Transparency (OECD).md - Format B → Format A
+✓ CONVERT: Treatment Planning AI.md - Format B → Format A
+✓ CONVERT: Trojan Attack.md - Format B → Format A
+✓ UPDATE: Trust Framework Policy.md - Added missing fields to Format A
+✓ CONVERT: Transparency.md - Format B → Format A
+✓ UPDATE: Trust Score Metric.md - Added missing fields to Format A
+✓ CONVERT: Underfitting.md - Format B → Format A
+✓ UPDATE: User Agreement Compliance.md - Added missing fields to Format A
+✓ UPDATE: User Consent Token.md - Added missing fields to Format A
+⚠ CONVERT: VALIDATION_REPORT.md - Unknown format → Format A (best effort)
+✓ UPDATE: Universal Manifest.md - Added missing fields to Format A
+⚠ CONVERT: VERIFICATION-REPORT.md - Unknown format → Format A (best effort)
+⚠ CONVERT: VERIFICATION.md - Unknown format → Format A (best effort)
+✓ UPDATE: Validation Process.md - Added missing fields to Format A
+✓ CONVERT: Value Alignment.md - Format B → Format A
+✓ UPDATE: Verifiable Credential (VC).md - Added missing fields to Format A
+✓ UPDATE: Virtual Lighting Model.md - Added missing fields to Format A
+✓ UPDATE: Virtual Notary Service.md - Added missing fields to Format A
+✓ UPDATE: Virtual Performance Space.md - Added missing fields to Format A
+✓ UPDATE: Virtual Production (VP).md - Added missing fields to Format A
+✓ UPDATE: Virtual Production Volume.md - Added missing fields to Format A
+✓ UPDATE: Virtual Property Right.md - Added missing fields to Format A
+✓ UPDATE: Virtual Reality (VR).md - Added missing fields to Format A
+✓ UPDATE: Virtual Securities Offering (VSO).md - Added missing fields to Format A
+⚠ CONVERT: VirtualAsset.md - Unknown format → Format A (best effort)
+✓ UPDATE: Virtual World.md - Added missing fields to Format A
+⚠ CONVERT: VirtualEconomy.md - Unknown format → Format A (best effort)
+⚠ CONVERT: VirtualMachine.md - Unknown format → Format A (best effort)
+⚠ CONVERT: VirtualWorld.md - Unknown format → Format A (best effort)
+⚠ CONVERT: VisioningLab-Property-Crosswalk.md - Unknown format → Format A (best effort)
+✓ UPDATE: Visualization Layer.md - Added missing fields to Format A
+✓ CONVERT: Vocabulary.md - Format B → Format A
+✓ UPDATE: Voice Interaction.md - Added missing fields to Format A
+⚠ CONVERT: Wallet.md - Unknown format → Format A (best effort)
+✓ CONVERT: Warmup.md - Format B → Format A
+⚠ CONVERT: WebXR API.md - Unknown format → Format A (best effort)
+✓ CONVERT: Weight Decay.md - Format B → Format A
+✓ CONVERT: Well-Being.md - Format B → Format A
+✓ CONVERT: WordPiece.md - Format B → Format A
+✓ CONVERT: World Instance.md - Format B → Format A
+✓ CONVERT: XLNet.md - Format B → Format A
+✓ UPDATE: XR Accessibility Guideline.md - Added missing fields to Format A
+✓ UPDATE: Zero-Knowledge Proof (ZKP).md - Added missing fields to Format A
+✓ UPDATE: Zero-Trust Architecture (ZTA).md - Added missing fields to Format A
+⚠ CONVERT: ZeroKnowledge.md - Unknown format → Format A (best effort)
+⚠ CONVERT: ai-core-concepts.md - Unknown format → Format A (best effort)
+⚠ CONVERT: blockchain-core-concepts.md - Unknown format → Format A (best effort)
+✓ UPDATE: glTF (3D File Format).md - Added missing fields to Format A
+⚠ CONVERT: implementation-examples.md - Unknown format → Format A (best effort)
+✓ CONVERT: mBERT.md - Format B → Format A
+✓ CONVERT: mT5.md - Format B → Format A
+⚠ CONVERT: metaverse-core-concepts.md - Unknown format → Format A (best effort)
+✓ CONVERT: rb-0006-service-robot.md - Format B → Format A
+✓ CONVERT: rb-0007-collaborative-robot.md - Format B → Format A
+✓ CONVERT: rb-0008-autonomous-robot.md - Format B → Format A
+✓ CONVERT: rb-0009-teleoperated-robot.md - Format B → Format A
+✓ CONVERT: rb-0010-aerial-robot.md - Format B → Format A
+✓ CONVERT: rb-0011-underwater-robot.md - Format B → Format A
+✓ CONVERT: rb-0012-wheeled-mobile-robot.md - Format B → Format A
+✓ CONVERT: rb-0013-legged-robot.md - Format B → Format A
+✓ CONVERT: rb-0014-surgical-robot.md - Format B → Format A
+✓ CONVERT: rb-0015-agricultural-robot.md - Format B → Format A
+✓ CONVERT: rb-0016-medical-robot.md - Format B → Format A
+✓ CONVERT: rb-0017-rescue-robot.md - Format B → Format A
+✓ CONVERT: rb-0018-inspection-robot.md - Format B → Format A
+✓ CONVERT: rb-0019-exoskeleton-robot.md - Format B → Format A
+✓ CONVERT: rb-0020-swarm-robot.md - Format B → Format A
+✓ CONVERT: rb-0021-robot-kinematics.md - Format B → Format A
+✓ CONVERT: rb-0022-robot-dynamics.md - Format B → Format A
+✓ CONVERT: rb-0023-degrees-of-freedom.md - Format B → Format A
+✓ CONVERT: rb-0025-end-effector.md - Format B → Format A
+✓ CONVERT: rb-0024-workspace.md - Format B → Format A
+✓ CONVERT: rb-0026-robot-joint.md - Format B → Format A
+✓ CONVERT: rb-0027-robot-link.md - Format B → Format A
+✓ CONVERT: rb-0028-forward-kinematics.md - Format B → Format A
+✓ CONVERT: rb-0029-inverse-kinematics.md - Format B → Format A
+✓ CONVERT: rb-0030-jacobian-matrix.md - Format B → Format A
+✓ CONVERT: rb-0031-singularity.md - Format B → Format A
+✓ CONVERT: rb-0032-manipulability.md - Format B → Format A
+✓ CONVERT: rb-0033-payload.md - Format B → Format A
+✓ CONVERT: rb-0034-repeatability.md - Format B → Format A
+✓ CONVERT: rb-0035-accuracy.md - Format B → Format A
+✓ CONVERT: rb-0036-resolution.md - Format B → Format A
+✓ CONVERT: rb-0037-dexterity.md - Format B → Format A
+✓ CONVERT: rb-0038-compliance.md - Format B → Format A
+✓ CONVERT: rb-0040-backlash.md - Format B → Format A
+✓ CONVERT: rb-0039-stiffness.md - Format B → Format A
+✓ CONVERT: rb-0041-inertia.md - Format B → Format A
+✓ CONVERT: rb-0042-friction.md - Format B → Format A
+✓ CONVERT: rb-0043-torque.md - Format B → Format A
+✓ CONVERT: rb-0045-acceleration.md - Format B → Format A
+✓ CONVERT: rb-0046-robot-control.md - Format B → Format A
+✓ CONVERT: rb-0048-pid-controller.md - Format B → Format A
+✓ CONVERT: rb-0047-feedback-control.md - Format B → Format A
+✓ CONVERT: rb-0044-velocity.md - Format B → Format A
+✓ CONVERT: rb-0049-motion-planning.md - Format B → Format A
+✓ CONVERT: rb-0050-path-planning.md - Format B → Format A
+✓ CONVERT: rb-0051-trajectory-planning.md - Format B → Format A
+✓ CONVERT: rb-0052-collision-avoidance.md - Format B → Format A
+✓ CONVERT: rb-0053-force-control.md - Format B → Format A
+✓ CONVERT: rb-0054-position-control.md - Format B → Format A
+✓ CONVERT: rb-0055-velocity-control.md - Format B → Format A
+✓ CONVERT: rb-0056-impedance-control.md - Format B → Format A
+✓ CONVERT: rb-0057-admittance-control.md - Format B → Format A
+✓ CONVERT: rb-0058-adaptive-control.md - Format B → Format A
+✓ CONVERT: rb-0059-robust-control.md - Format B → Format A
+✓ CONVERT: rb-0060-optimal-control.md - Format B → Format A
+✓ CONVERT: rb-0062-model-predictive-control.md - Format B → Format A
+✓ CONVERT: rb-0061-nonlinear-control.md - Format B → Format A
+✓ CONVERT: rb-0063-sliding-mode-control.md - Format B → Format A
+✓ CONVERT: rb-0064-computed-torque-control.md - Format B → Format A
+✓ CONVERT: rb-0065-visual-servoing.md - Format B → Format A
+✓ CONVERT: rb-0066-robot-sensor.md - Format B → Format A
+✓ CONVERT: rb-0067-force-torque-sensor.md - Format B → Format A
+✓ CONVERT: rb-0069-lidar.md - Format B → Format A
+✓ CONVERT: rb-0070-tactile-sensing.md - Format B → Format A
+✓ CONVERT: rb-0068-vision-system.md - Format B → Format A
+✓ CONVERT: rb-0071-proximity-sensor.md - Format B → Format A
+✓ CONVERT: rb-0072-encoder.md - Format B → Format A
+✓ CONVERT: rb-0073-imu.md - Format B → Format A
+✓ CONVERT: rb-0074-gps.md - Format B → Format A
+✓ CONVERT: rb-0075-range-finder.md - Format B → Format A
+✓ CONVERT: rb-0076-camera.md - Format B → Format A
+✓ CONVERT: rb-0077-depth-camera.md - Format B → Format A
+✓ CONVERT: rb-0078-infrared-sensor.md - Format B → Format A
+✓ CONVERT: rb-0079-ultrasonic-sensor.md - Format B → Format A
+✓ CONVERT: rb-0080-radar.md - Format B → Format A
+✓ CONVERT: rb-0081-gyroscope.md - Format B → Format A
+✓ CONVERT: rb-0082-accelerometer.md - Format B → Format A
+✓ CONVERT: rb-0083-current-sensor.md - Format B → Format A
+✓ CONVERT: rb-0084-temperature-sensor.md - Format B → Format A
+✓ CONVERT: rb-0085-pressure-sensor.md - Format B → Format A
+✓ CONVERT: rb-0087-safety-standard.md - Format B → Format A
+✓ CONVERT: rb-0086-robot-safety.md - Format B → Format A
+✓ CONVERT: rb-0088-iso-13482-compliance.md - Format B → Format A
+✓ CONVERT: rb-0089-risk-assessment.md - Format B → Format A
+✓ CONVERT: rb-0090-emergency-stop.md - Format B → Format A
+✓ CONVERT: rb-0091-safety-rated-monitored-stop.md - Format B → Format A
+✓ CONVERT: rb-0092-protective-stop.md - Format B → Format A
+✓ CONVERT: rb-0093-speed-limitation.md - Format B → Format A
+✓ CONVERT: rb-0094-power-and-force-limiting.md - Format B → Format A
+✓ CONVERT: rb-0095-safety-zone.md - Format B → Format A
+✓ CONVERT: rb-0096-safeguarding.md - Format B → Format A
+✓ CONVERT: rb-0097-light-curtain.md - Format B → Format A
+✓ CONVERT: rb-0098-safety-laser-scanner.md - Format B → Format A
+✓ CONVERT: rb-0099-safety-plc.md - Format B → Format A
+✓ CONVERT: rb-0100-safety-integrity-level.md - Format B → Format A
+✓ CONVERT: rb-0101-performance-level.md - Format B → Format A
+✓ CONVERT: rb-0102-functional-safety.md - Format B → Format A
+✓ CONVERT: rb-0103-collaborative-operation.md - Format B → Format A
+✓ CONVERT: rb-0104-hand-guiding.md - Format B → Format A
+✓ CONVERT: rb-0105-speed-and-separation-monitoring.md - Format B → Format A
+⚠ CONVERT: robotics-core-concepts.md - Unknown format → Format A (best effort)
+⚠ CONVERT: security-audit-guide.md - Unknown format → Format A (best effort)
+
+=== SUMMARY ===
+Total files: 993
+Skipped (already complete): 163
+Updated (fields added): 242
+Converted (Format B→A): 379
+Converted (unknown format): 209
+Errors: 0
+
+Completed: 2025-10-29T12:50:47.992Z

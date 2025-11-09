@@ -1,0 +1,5 @@
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/RB-0001-robot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/RB-0002-mobile-robot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/RB-0003-manipulator.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/RB-0004-humanoid-robot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/RB-0005-industrial-robot.md

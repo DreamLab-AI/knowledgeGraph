@@ -1,0 +1,724 @@
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/3D Scene Exchange Protocol (SXP).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/6G Network Slice.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ADAS.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI Alignment.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI Audit.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI Board.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI Deployment.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI Development.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI Ethics Checklist.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI Governance Framework.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI Governance.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI Impact Assessment.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI Incident.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI Lifecycle.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI Model Card.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI Monitoring.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI Office.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI Operator.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI Provider.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI Risk.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI System (EU Definition).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI Trustworthiness.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AI User.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AIEthics.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AIGovernance.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AISystem.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ALBERT.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/API Standard.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AUC.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Accessibility Audit Tool.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Accessibility Standard.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Accountability (OECD).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Accountability.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Accuracy.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Activation Function.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Adapter Modules.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Adversarial Attack.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Adversarial Robustness.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Adversarial Testing.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Algorithmic Transparency Index.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Application Layer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Artificial Intelligence.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Attention Head.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Attention Mask.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Attention Mechanism.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Audit Trail.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Augmented Reality (AR).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AugmentedReality.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Authoring Tool.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Authorised Representative.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Autoencoder.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Autonomous Agent.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Autonomous Navigation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Autonomous Vehicle.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/AutonomousRobot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Avatar Interoperability.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Avatar.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/BART.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/BERT.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Backdoor Attack.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Backpropagation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Batch Normalisation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Batch Size.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Behavioural Feedback Loop.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Bias.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Biometric Binding Mechanism.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Biosensing Interface.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Blockchain.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Byte-Pair Encoding.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/COMPLETE-ONTOLOGY-INDEX.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/COMPLETE_HRI_TERMS_REFERENCE.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/COMPLETION_REPORT.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Carbon Credit Token.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Causal Attention.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Central Bank Digital Currency (CBDC).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Chatbot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Claude.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Clinical Decision Support.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Cloud Rendering Service.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Co-Training.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Cognitive Feedback Interface.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Cognitive Load Metric.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Collective Intelligence System.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Collective Memory Archive.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Community Governance Model.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Compatibility Process.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Compliance Audit Trail.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Compute Layer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Computer Vision.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Confusion Matrix.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ConsensusAlgorithm.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ConsensusMechanism.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Consent Management.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Constitutional AI.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Construction Digital Twin.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Content Delivery Network (CDN).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Content Moderation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Context Awareness.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Context Window.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Continued Pre-Training.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Contrastive Learning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Conversion Pipeline.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Convolutional Neural Network.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Creator Economy.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Creator Royalty Token.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Cross-Attention.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Cross-Border Data Transfer Rule.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Cross-Platform Compliance Hub.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/CrossChainBridge.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Crypto Token.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Cryptocurrency.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/CryptographicHash.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Cultural Heritage XR Experience.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Cultural Provenance Record.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Curriculum Learning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/CutMix.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/DAO.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/DELIVERY-MANIFEST.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Data Anonymization Pipeline.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Data Augmentation Strategies.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Data Fabric Architecture.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Data Integration Interface.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Data Poisoning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Data Protection.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Data Provenance.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Data Storage Layer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/DataPipeline.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/DeBERTa.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/DeFiProtocol.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Decentralization Layer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Decentralized Autonomous Organization (DAO).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Decentralized Exchange (DEX).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Decentralized Identity (DID).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/DecentralizedStorage.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Decoder.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Deepfakes.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Democratic Values.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Deployer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Dialogue System.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Asset Workflow.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Asset.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Citizens' Assembly.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Citizenship.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Citizens’ Assembly.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Constitution.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Curation Platform.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Evidence Chain of Custody.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Goods Registry.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Goods.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Identity Framework.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Identity Wallet.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Jurisdiction.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Ontology Repository.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Performance Capture.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Real Estate.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Rights Management (Extended).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Ritual.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Tax Compliance Node.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Taxonomy Registry.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Twin Interop Protocol.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Twin Synchronisation Bus.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Twin of Society (DToS).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Twin.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Digital Well-Being Index.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/DigitalAvatar.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/DigitalTwin.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Direct Preference Optimisation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Discovery Layer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Display Metrology.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Dispute Resolution Mechanism.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Distributed Architecture.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Distributed Ledger Technology (DLT).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Distributor.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Dropout.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Drug Discovery AI.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/E-Contract Arbitration.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ELECTRA.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ERC20.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ERC721.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSIDomainClassification.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_AI.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_AI___Creative_Media.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_AI___Data_Mgmt.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_AI___Governance.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_AI___Human_Interface.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Application___Creative.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Application___Education.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Application___Health.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Application___Industry.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Application___Tourism.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Creative_Media.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Data.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Data_Management.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Data_Management___Creative.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Data_Management___Culture.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Data_Management___Ethics.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Data_Mgmt___AI.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Data_Mgmt___Security.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Ethics_&_Law.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Governance_&_Compliance.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Governance_&_Ethics.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Governance_Compliance.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Governance_Security.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Governance___Economy.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Governance___Ethics.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Governance___Society.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Human_Interface.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Human_Interface___Governance.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Human_Interface___UX.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Identity_&_Trust.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Immersive_Experiences.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Immersive___Reality_Capture.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Infrastructure.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Infrastructure_Data.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Infrastructure___Governance.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Infrastructure___Immersive.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Infrastructure___Interop.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Infrastructure___Security.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Interoperability.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Interoperability___Creative.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Reality_Capture.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Reality_Capture___Creative.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Security_&_Privacy.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Virtual_Economy.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ETSI_Domain_Virtual_Society.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Early Stopping.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Edge Computing Node.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Edge Mesh Network.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Edge Network.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Edge Orchestration.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Education Metaverse.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Emotional Analytics Engine.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Emotional Immersion.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Encoder-Decoder Architecture.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Encoder.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Environmental Impact Metric.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Environmental Sustainability Label.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Environmental Sustainability.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Epoch.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Ethical AI.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Ethical Framework.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Ethics & Law Layer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Experience Layer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Explainability (OECD).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Explainability.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Explainable AI (XAI).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Explainable AI.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ExplainableAI.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Extended Reality (XR).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Eye Tracking.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/F1 Score.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/FILE-LISTING.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Fairness (OECD).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Fairness.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Feature Extraction.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Feature Importance.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Federated Credential Exchange.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/FederatedLearning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Feed-Forward Network.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Feedback Mechanism.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Feedforward Neural Network.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Fine-Tuning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Fractionalized NFT.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Full Fine-Tuning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/GPT-2.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/GPT-3.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/GPT-4.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/GPT.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Game Engine.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Gemini.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/General-Purpose AI Model.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Generative Adversarial Network.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Generative Design Tool.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/GenerativeModel.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Global Explanation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Glossary Index.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Glossary_Index.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Governance Model.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Gradient Clipping.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Gradient Descent.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Graph Neural Network.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/HRI_SAFETY_TERMS_SUMMARY.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/HapticFeedback.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Haptics.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Hardware Abstraction Layer (HAL).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Hardware-Platform-Agnostic.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Hardware-_Platform-Agnostic.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Harmful Bias.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Harmlessness.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Health Metaverse Application.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Healthcare Analytics.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Helpfulness.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Hidden Dimension.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Hidden State.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/High-Risk AI System.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Honesty.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Human Capture & Recognition.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Human Feedback.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Human Interface Device.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Human Interface Layer (HIL).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Human Oversight.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Human Rights.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Human-Centred Values.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Human-in-the-Loop.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/HumanRobotInteraction.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Humanity Attestation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Hyperparameter.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/IMPLEMENTATION-SUMMARY.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/INDEX.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Identity Federation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Identity Graph.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Identity Provider (IdP).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Image Classification.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Image Generation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Image-to-Image Translation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Immersion.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Immersive Experience.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Importer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Inclusive Growth.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Industrial Metaverse.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Inference.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Infrastructure Layer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Instance Segmentation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Instruction Tuning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Intelligent Virtual Entity.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Interoperability Framework.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Interoperability.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Interpretability.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Interpretable AI.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Intrinsic Interpretability.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Knowledge Distillation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Knowledge Graph.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/LLaMA.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Label Smoothing.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Language Modeling.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Latency Management Protocol.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Latency.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Layer Normalisation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Layer2.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Layer2Scaling.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Learning Rate Schedule.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Limited Risk AI.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Liquidity Pool.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/LoRA.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Local Explanation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Long Short-Term Memory.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Loss Function.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Loyalty Token.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Machine Learning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Machine Translation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/MachineLearning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Making Available.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ManipulatorArm.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Market Surveillance Authority.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Marketplace.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Maximum Sequence Length.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Mean Absolute Error.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Medical AI.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Medical Diagnosis AI.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Medical Imaging AI.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Membership Inference.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Metadata Standard.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Metaverse Architecture Stack.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Metaverse Content Pipeline.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Metaverse Liability Model.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Metaverse Ontology Schema.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Metaverse Psychology Profile.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Metaverse Safety Protocol.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Metaverse.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Metaverse_Ontology_Schema.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Micropayment.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Middleware.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Minimal Risk AI.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Mistral.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Mixed Precision Training.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Mixed Reality (MR).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Mixtral.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Mixture of Experts.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Mixup.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Model Capacity.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Model Depth.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Model Ensembling.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Model Extraction.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Model Interpretability.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Model Inversion.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Model Parameters.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Model Performance.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Model Robustness.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Model Weights.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Model Width.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Momentum Contrast.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Motion Capture Rig.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Motion Planning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Multi-Head Attention.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Multi-Task Learning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Multiverse.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/NFT Renting.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/NFT Swapping.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/NFT Wrapping.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/NFT.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Named Entity Recognition.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Narrative Design Ontology.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/National Competent Authority.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Natural Language Processing.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Network Infrastructure.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Networking Layer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/NeuralNetwork.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Non-Fungible Token (NFT).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Notified Body.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Object Detection and Tracking.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Object Detection.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/OntologyDefinition.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Open World.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Optimiser.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Oracle.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Overfitting.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Ownership & Freedom (distributed).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Ownership-Freedom-distributed.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/PEGASUS.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Panoptic Segmentation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Parameter Count.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Parameter-Efficient Fine-Tuning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Path Planning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/PathPlanning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Pathology AI.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Perception System.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Persistence.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Photogrammetry.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Physics Engine.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Physics-Based Animation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Placing on the Market.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Platform Layer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Play-to-Earn (P2E).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Policy Engine.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Portability.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Positional Encoding.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Post-Hoc Explanation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Post-Quantum Cryptography.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Pre-Training.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Precision Medicine.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Precision.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Preference Learning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Prefix Tuning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Presence.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Privacy Impact Assessment (PIA).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Privacy-Enhancing Computation (PEC).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Privacy.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/PrivateBlockchain.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Procedural Audio Generator.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Procedural Content Generation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Procedural Texture.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Prohibited AI Practice.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Prompt Tuning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ProofOfStake.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ProofOfWork.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Provenance Ontology (PROV-O).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Provenance Verification.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Provider.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Proximal Policy Optimisation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/PublicBlockchain.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/QLoRA.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Quantum Network Node.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Query Key Value.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Question Answering.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/RESEARCH_SUMMARY.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ROC Curve.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Radiology AI.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Real-Time Rendering Pipeline.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Reality Capture System.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Recall.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Recurrent Neural Network.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Red Teaming.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Regularisation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Reinforcement Learning from Human Feedback.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ReinforcementLearning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Reliability.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Reputation Data.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Reputation Scoring Model.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Residual Connection.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Residual Network.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Resilience Metric.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Responsible AI.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Reward Model.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Right to Be Forgotten.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Risk Assessment.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Risk Management.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Risk Mitigation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Risk Treatment.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/RoBERTa.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/RobotLearning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Robustness (OECD).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Robustness.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Root Mean Square Error.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Royalty Mechanism.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Rule of Law.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/SLAM.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/SPARQL-EXAMPLES.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/SUMMARY.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Safety (OECD).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Safety Fine-Tuning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Safety.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Scaled Dot-Product Attention.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Scene Graph.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Scene Understanding.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Security Layer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Security.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Self-Attention.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Self-Driving Car.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Self-Sovereign Identity (SSI).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Self-Training.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Semantic Metadata Registry.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Semantic Segmentation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Sensor Fusion.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/SensorFusion.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/SentencePiece.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Sentiment Analysis.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Serious Incident.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Service Layer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/SimCLR.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Smart Contract.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Smart Royalties Ledger.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Smart Royalty Contract.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/SmartContract.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Social Impact Assessment (SIA).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Social Impact.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Social Token Economy.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/SocialVR.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/SoftRobotics.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Sparse Mixture of Experts.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Spatial Anchor.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Spatial Audio Scene Description.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Spatial Computing Layer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Spatial Computing.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Spatial Index.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/SpatialComputing.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Stablecoin.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Stakeholder.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/State Synchronization.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Stochastic Gradient Descent.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Storage Layer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Style Transfer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Subword Tokenisation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Super-Resolution.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Supervised Fine-Tuning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Sustainable Development.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/SwarmRobotics.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Synthetic Data Generator.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Systemic Risk.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/T5.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/TERM-INDEX.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/TERM_INDEX.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Task-Specific Head.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Teacher-Student Training.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Telemetry & Analytics.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Teleoperation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Testing Process.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Text Generation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Text Summarisation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Threat Surface Map.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Token Bonding Curve.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Token Custody Service.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Token Embedding.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Token.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Tokenisation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Tokenization.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Tourism Metaverse.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Training.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Transaction Standard.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Transformer Architecture.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Transformer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Transparency (OECD).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Transparency.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Treatment Planning AI.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Trojan Attack.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Trust Framework Policy.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Trust Score Metric.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Underfitting.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Universal Manifest.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/User Agreement Compliance.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/User Consent Token.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/VALIDATION_REPORT.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/VERIFICATION-REPORT.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/VERIFICATION.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Validation Process.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Value Alignment.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Verifiable Credential (VC).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Virtual Lighting Model.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Virtual Notary Service.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Virtual Performance Space.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Virtual Production (VP).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Virtual Production Volume.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Virtual Property Right.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Virtual Reality (VR).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Virtual Securities Offering (VSO).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Virtual World.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/VirtualAsset.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/VirtualEconomy.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/VirtualMachine.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/VirtualWorld.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/VisioningLab-Property-Crosswalk.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Visualization Layer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Vocabulary.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Voice Interaction.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Wallet.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Warmup.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/WebXR API.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Weight Decay.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Well-Being.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/WordPiece.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/World Instance.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/XLNet.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/XR Accessibility Guideline.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Zero-Knowledge Proof (ZKP).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/Zero-Trust Architecture (ZTA).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ZeroKnowledge.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/ai-core-concepts.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/blockchain-core-concepts.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/glTF (3D File Format).md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/implementation-examples.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/mBERT.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/mT5.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/metaverse-core-concepts.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0006-service-robot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0007-collaborative-robot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0008-autonomous-robot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0009-teleoperated-robot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0010-aerial-robot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0011-underwater-robot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0012-wheeled-mobile-robot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0013-legged-robot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0014-surgical-robot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0015-agricultural-robot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0016-medical-robot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0017-rescue-robot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0018-inspection-robot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0019-exoskeleton-robot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0020-swarm-robot.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0021-robot-kinematics.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0022-robot-dynamics.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0023-degrees-of-freedom.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0024-workspace.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0025-end-effector.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0026-robot-joint.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0027-robot-link.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0028-forward-kinematics.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0029-inverse-kinematics.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0030-jacobian-matrix.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0031-singularity.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0032-manipulability.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0033-payload.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0034-repeatability.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0035-accuracy.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0036-resolution.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0037-dexterity.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0038-compliance.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0039-stiffness.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0040-backlash.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0041-inertia.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0042-friction.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0043-torque.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0044-velocity.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0045-acceleration.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0046-robot-control.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0047-feedback-control.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0048-pid-controller.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0049-motion-planning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0050-path-planning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0051-trajectory-planning.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0052-collision-avoidance.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0053-force-control.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0054-position-control.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0055-velocity-control.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0056-impedance-control.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0057-admittance-control.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0058-adaptive-control.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0059-robust-control.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0060-optimal-control.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0061-nonlinear-control.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0062-model-predictive-control.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0063-sliding-mode-control.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0064-computed-torque-control.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0065-visual-servoing.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0066-robot-sensor.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0067-force-torque-sensor.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0068-vision-system.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0069-lidar.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0070-tactile-sensing.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0071-proximity-sensor.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0072-encoder.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0073-imu.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0074-gps.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0075-range-finder.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0076-camera.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0077-depth-camera.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0078-infrared-sensor.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0079-ultrasonic-sensor.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0080-radar.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0081-gyroscope.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0082-accelerometer.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0083-current-sensor.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0084-temperature-sensor.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0085-pressure-sensor.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0086-robot-safety.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0087-safety-standard.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0088-iso-13482-compliance.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0089-risk-assessment.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0090-emergency-stop.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0091-safety-rated-monitored-stop.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0092-protective-stop.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0093-speed-limitation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0094-power-and-force-limiting.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0095-safety-zone.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0096-safeguarding.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0097-light-curtain.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0098-safety-laser-scanner.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0099-safety-plc.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0100-safety-integrity-level.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0101-performance-level.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0102-functional-safety.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0103-collaborative-operation.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0104-hand-guiding.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/rb-0105-speed-and-separation-monitoring.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/robotics-core-concepts.md
+/home/devuser/workspace/project/Metaverse-Ontology/logseq/pages/security-audit-guide.md

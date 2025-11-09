@@ -1,0 +1,12 @@
+{
+  "execution_time": "2025-11-07T18:04:55.823656",
+  "statistics": {
+    "files_scanned": 1001,
+    "relationships_found": 7081,
+    "inverses_added": 234,
+    "symmetric_axioms_added": 1,
+    "owl_axioms_enriched": 968,
+    "error_count": 0,
+    "errors": []
+  }
+}

@@ -1,0 +1,344 @@
+@prefix dt: <http://purl.org/disruptive-tech/bridges#> .
+@prefix meta: <http://purl.org/disruptive-tech/meta#> .
+@prefix aigo: <http://purl.org/ai-ontology#> .
+@prefix bc: <http://purl.org/blockchain-ontology#> .
+@prefix mv: <http://purl.org/metaverse-ontology#> .
+@prefix rb: <http://purl.org/robotics-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# ============================================================================
+# RECOVERED CROSS-DOMAIN BRIDGES - SAMPLE COLLECTION
+# Source: Git commit a0eaafca73c (2025-10-29)
+# File: disruptive-technologies-meta-ontology-v1.0.0.ttl (DELETED)
+# Total Bridges: 201 (this file contains representative samples)
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# AI → ROBOTICS BRIDGES (40 total in original)
+# ----------------------------------------------------------------------------
+
+rb:HumanoidRobot dt:implements aigo:ReinforcementLearning ;
+    meta:crossDomainBridge "ai→robotics" ;
+    meta:bridgeType "implementation" ;
+    rdfs:comment "Humanoid robots use reinforcement learning for adaptive behavior and task learning" .
+
+rb:AutonomousRobot dt:implements aigo:DeepLearning ;
+    meta:crossDomainBridge "ai→robotics" ;
+    meta:bridgeType "implementation" ;
+    rdfs:comment "Autonomous robots leverage deep learning for perception and decision-making" .
+
+rb:RobotVision dt:uses aigo:ComputerVision ;
+    meta:crossDomainBridge "ai→robotics" ;
+    meta:bridgeType "component" ;
+    rdfs:comment "Robot vision systems utilize computer vision algorithms for scene understanding" .
+
+rb:PathPlanning dt:implements aigo:MachineLearning ;
+    meta:crossDomainBridge "ai→robotics" ;
+    meta:bridgeType "algorithm" ;
+    rdfs:comment "Path planning algorithms implement machine learning for optimal route generation" .
+
+rb:GraspPlanning dt:uses aigo:NeuralNetwork ;
+    meta:crossDomainBridge "ai→robotics" ;
+    meta:bridgeType "component" ;
+    rdfs:comment "Grasp planning uses neural networks to predict optimal grip configurations" .
+
+rb:RobotControl dt:implements aigo:ControlTheory ;
+    meta:crossDomainBridge "ai→robotics" ;
+    meta:bridgeType "implementation" ;
+    rdfs:comment "Robot control systems implement control theory for precise motion" .
+
+rb:SensorFusion dt:uses aigo:DataFusion ;
+    meta:crossDomainBridge "ai→robotics" ;
+    meta:bridgeType "technique" ;
+    rdfs:comment "Sensor fusion uses data fusion techniques to combine multiple sensor inputs" .
+
+rb:ObstacleAvoidance dt:implements aigo:PathOptimization ;
+    meta:crossDomainBridge "ai→robotics" ;
+    meta:bridgeType "algorithm" ;
+    rdfs:comment "Obstacle avoidance implements path optimization for collision-free navigation" .
+
+rb:TaskPlanning dt:uses aigo:PlanningAlgorithm ;
+    meta:crossDomainBridge "ai→robotics" ;
+    meta:bridgeType "component" ;
+    rdfs:comment "Task planning uses AI planning algorithms for goal-oriented behavior" .
+
+rb:VoiceControl dt:implements aigo:NaturalLanguageProcessing ;
+    meta:crossDomainBridge "ai→robotics" ;
+    meta:bridgeType "interface" ;
+    rdfs:comment "Voice control implements NLP for human-robot natural language interaction" .
+
+# ----------------------------------------------------------------------------
+# BLOCKCHAIN → METAVERSE BRIDGES (40 total in original)
+# ----------------------------------------------------------------------------
+
+mv:DigitalAsset dt:securedBy bc:SmartContract ;
+    meta:crossDomainBridge "blockchain→metaverse" ;
+    meta:bridgeType "security" ;
+    rdfs:comment "Digital assets are secured by smart contracts for ownership verification" .
+
+mv:NonFungibleToken dt:implements bc:TokenStandard ;
+    meta:crossDomainBridge "blockchain→metaverse" ;
+    meta:bridgeType "implementation" ;
+    rdfs:comment "NFTs implement blockchain token standards (ERC-721, ERC-1155)" .
+
+mv:Avatar dt:authenticatedBy bc:DecentralizedIdentity ;
+    meta:crossDomainBridge "blockchain→metaverse" ;
+    meta:bridgeType "identity" ;
+    rdfs:comment "Avatars are authenticated using decentralized identity protocols (DID)" .
+
+mv:VirtualWorld dt:governedBy bc:DAO ;
+    meta:crossDomainBridge "blockchain→metaverse" ;
+    meta:bridgeType "governance" ;
+    rdfs:comment "Virtual worlds are governed by decentralized autonomous organizations" .
+
+mv:DigitalCurrency dt:implements bc:Cryptocurrency ;
+    meta:crossDomainBridge "blockchain→metaverse" ;
+    meta:bridgeType "payment" ;
+    rdfs:comment "Digital currencies implement cryptocurrency protocols for in-world payments" .
+
+mv:Marketplace dt:securedBy bc:DistributedLedger ;
+    meta:crossDomainBridge "blockchain→metaverse" ;
+    meta:bridgeType "security" ;
+    rdfs:comment "Marketplaces are secured by distributed ledger technology for transparent transactions" .
+
+mv:VerifiableCredential dt:storedOn bc:Blockchain ;
+    meta:crossDomainBridge "blockchain→metaverse" ;
+    meta:bridgeType "storage" ;
+    rdfs:comment "Verifiable credentials are stored on blockchain for tamper-proof verification" .
+
+mv:SmartRoyaltyContract dt:executedBy bc:SmartContract ;
+    meta:crossDomainBridge "blockchain→metaverse" ;
+    meta:bridgeType "automation" ;
+    rdfs:comment "Smart royalty contracts are executed automatically by blockchain smart contracts" .
+
+mv:DecentralizedExchange dt:implements bc:TradingProtocol ;
+    meta:crossDomainBridge "blockchain→metaverse" ;
+    meta:bridgeType "trading" ;
+    rdfs:comment "Decentralized exchanges implement blockchain trading protocols (AMM, order book)" .
+
+mv:TokenBondingCurve dt:uses bc:PricingMechanism ;
+    meta:crossDomainBridge "blockchain→metaverse" ;
+    meta:bridgeType "economics" ;
+    rdfs:comment "Token bonding curves use blockchain pricing mechanisms for dynamic pricing" .
+
+# ----------------------------------------------------------------------------
+# AI → METAVERSE BRIDGES (40 total in original)
+# ----------------------------------------------------------------------------
+
+mv:AutonomousAgent dt:implements aigo:AIAgent ;
+    meta:crossDomainBridge "ai→metaverse" ;
+    meta:bridgeType "implementation" ;
+    rdfs:comment "Autonomous agents in metaverse implement AI agent architectures for intelligent behavior" .
+
+mv:IntelligentVirtualEntity dt:uses aigo:NeuralNetwork ;
+    meta:crossDomainBridge "ai→metaverse" ;
+    meta:bridgeType "cognition" ;
+    rdfs:comment "Intelligent virtual entities use neural networks for cognitive capabilities" .
+
+mv:ProceduralContentGeneration dt:implements aigo:GenerativeAI ;
+    meta:crossDomainBridge "ai→metaverse" ;
+    meta:bridgeType "creation" ;
+    rdfs:comment "Procedural content generation implements generative AI (GANs, VAEs, diffusion models)" .
+
+mv:Avatar dt:animatedBy aigo:MotionSynthesis ;
+    meta:crossDomainBridge "ai→metaverse" ;
+    meta:bridgeType "animation" ;
+    rdfs:comment "Avatars are animated using AI motion synthesis for realistic movement" .
+
+mv:VoiceInteraction dt:uses aigo:SpeechRecognition ;
+    meta:crossDomainBridge "ai→metaverse" ;
+    meta:bridgeType "interface" ;
+    rdfs:comment "Voice interaction uses speech recognition for natural communication" .
+
+mv:ContentModeration dt:implements aigo:ContentFiltering ;
+    meta:crossDomainBridge "ai→metaverse" ;
+    meta:bridgeType "moderation" ;
+    rdfs:comment "Content moderation implements AI content filtering for safety and compliance" .
+
+mv:RecommendationSystem dt:uses aigo:MachineLearning ;
+    meta:crossDomainBridge "ai→metaverse" ;
+    meta:bridgeType "personalization" ;
+    rdfs:comment "Recommendation systems use machine learning for personalized content delivery" .
+
+mv:EmotionalAnalytics dt:implements aigo:SentimentAnalysis ;
+    meta:crossDomainBridge "ai→metaverse" ;
+    meta:bridgeType "analytics" ;
+    rdfs:comment "Emotional analytics implements sentiment analysis for user engagement tracking" .
+
+mv:BehaviorPrediction dt:uses aigo:PredictiveModel ;
+    meta:crossDomainBridge "ai→metaverse" ;
+    meta:bridgeType "prediction" ;
+    rdfs:comment "Behavior prediction uses predictive models for user intent forecasting" .
+
+mv:AdaptiveEnvironment dt:implements aigo:ReinforcementLearning ;
+    meta:crossDomainBridge "ai→metaverse" ;
+    meta:bridgeType "adaptation" ;
+    rdfs:comment "Adaptive environments implement reinforcement learning for dynamic world changes" .
+
+# ----------------------------------------------------------------------------
+# BLOCKCHAIN → ROBOTICS BRIDGES (30 total in original)
+# ----------------------------------------------------------------------------
+
+rb:RobotIdentity dt:authenticatedBy bc:DecentralizedIdentity ;
+    meta:crossDomainBridge "blockchain→robotics" ;
+    meta:bridgeType "identity" ;
+    rdfs:comment "Robot identities are authenticated using decentralized identity for trust" .
+
+rb:MaintenanceRecord dt:storedOn bc:Blockchain ;
+    meta:crossDomainBridge "blockchain→robotics" ;
+    meta:bridgeType "storage" ;
+    rdfs:comment "Maintenance records are stored on blockchain for tamper-proof history" .
+
+rb:RobotData dt:securedBy bc:Encryption ;
+    meta:crossDomainBridge "blockchain→robotics" ;
+    meta:bridgeType "security" ;
+    rdfs:comment "Robot data is secured using blockchain encryption for privacy" .
+
+rb:CollaborativeTask dt:governedBy bc:ConsensusProtocol ;
+    meta:crossDomainBridge "blockchain→robotics" ;
+    meta:bridgeType "coordination" ;
+    rdfs:comment "Collaborative tasks are governed by consensus protocols for multi-robot coordination" .
+
+# ----------------------------------------------------------------------------
+# AI → BLOCKCHAIN BRIDGES (20 total in original)
+# ----------------------------------------------------------------------------
+
+bc:SmartContract dt:optimizedBy aigo:MachineLearning ;
+    meta:crossDomainBridge "ai→blockchain" ;
+    meta:bridgeType "optimization" ;
+    rdfs:comment "Smart contracts are optimized using machine learning for gas efficiency" .
+
+bc:FraudDetection dt:implements aigo:AnomalyDetection ;
+    meta:crossDomainBridge "ai→blockchain" ;
+    meta:bridgeType "security" ;
+    rdfs:comment "Fraud detection implements anomaly detection for transaction security" .
+
+bc:TransactionPrediction dt:uses aigo:PredictiveAnalytics ;
+    meta:crossDomainBridge "ai→blockchain" ;
+    meta:bridgeType "prediction" ;
+    rdfs:comment "Transaction prediction uses predictive analytics for network optimization" .
+
+bc:RiskAssessment dt:implements aigo:RiskModel ;
+    meta:crossDomainBridge "ai→blockchain" ;
+    meta:bridgeType "security" ;
+    rdfs:comment "Risk assessment implements AI risk models for security evaluation" .
+
+bc:MarketMaking dt:uses aigo:TradingAlgorithm ;
+    meta:crossDomainBridge "ai→blockchain" ;
+    meta:bridgeType "trading" ;
+    rdfs:comment "Market making uses AI trading algorithms for liquidity provision" .
+
+bc:NetworkOptimization dt:uses aigo:GraphNeuralNetwork ;
+    meta:crossDomainBridge "ai→blockchain" ;
+    meta:bridgeType "optimization" ;
+    rdfs:comment "Network optimization uses graph neural networks for routing efficiency" .
+
+# ----------------------------------------------------------------------------
+# METAVERSE → ROBOTICS BRIDGES (10 total in original)
+# ----------------------------------------------------------------------------
+
+mv:VirtualReality dt:controls rb:RobotArm ;
+    meta:crossDomainBridge "metaverse→robotics" ;
+    meta:bridgeType "control" ;
+    rdfs:comment "Virtual reality controls robot arms for teleoperation" .
+
+mv:VirtualTraining dt:trains rb:IndustrialRobot ;
+    meta:crossDomainBridge "metaverse→robotics" ;
+    meta:bridgeType "training" ;
+    rdfs:comment "Virtual training environments train industrial robots safely" .
+
+mv:RemoteCollaboration dt:enables rb:TeleoperatedRobot ;
+    meta:crossDomainBridge "metaverse→robotics" ;
+    meta:bridgeType "interface" ;
+    rdfs:comment "Remote collaboration enables teleoperated robot control from metaverse" .
+
+mv:DigitalTwin dt:monitors rb:RobotStatus ;
+    meta:crossDomainBridge "metaverse→robotics" ;
+    meta:bridgeType "monitoring" ;
+    rdfs:comment "Digital twins monitor robot status in real-time for predictive maintenance" .
+
+mv:PredictiveMaintenance dt:predicts rb:RobotFailure ;
+    meta:crossDomainBridge "metaverse→robotics" ;
+    meta:bridgeType "prediction" ;
+    rdfs:comment "Predictive maintenance predicts robot failures before they occur" .
+
+# ----------------------------------------------------------------------------
+# ROBOTICS → METAVERSE BRIDGES (10 total in original)
+# ----------------------------------------------------------------------------
+
+rb:HumanoidRobot dt:representedBy mv:Avatar ;
+    meta:crossDomainBridge "robotics→metaverse" ;
+    meta:bridgeType "representation" ;
+    rdfs:comment "Humanoid robots are represented by avatars in metaverse for remote presence" .
+
+rb:HapticFeedback dt:enhances mv:Haptics ;
+    meta:crossDomainBridge "robotics→metaverse" ;
+    meta:bridgeType "enhancement" ;
+    rdfs:comment "Haptic feedback from robots enhances metaverse haptic experiences" .
+
+rb:RobotNavigation dt:uses mv:SpatialIndex ;
+    meta:crossDomainBridge "robotics→metaverse" ;
+    meta:bridgeType "navigation" ;
+    rdfs:comment "Robot navigation uses metaverse spatial indexes for environment mapping" .
+
+# ----------------------------------------------------------------------------
+# BLOCKCHAIN → AI BRIDGES (10 total in original)
+# ----------------------------------------------------------------------------
+
+aigo:AIModel dt:versionedBy bc:VersionControl ;
+    meta:crossDomainBridge "blockchain→ai" ;
+    meta:bridgeType "versioning" ;
+    rdfs:comment "AI models are versioned using blockchain for reproducibility" .
+
+aigo:TrainingData dt:provenanceTrackedBy bc:DataProvenance ;
+    meta:crossDomainBridge "blockchain→ai" ;
+    meta:bridgeType "provenance" ;
+    rdfs:comment "Training data provenance is tracked on blockchain for transparency" .
+
+aigo:ModelRegistry dt:securedBy bc:AccessControl ;
+    meta:crossDomainBridge "blockchain→ai" ;
+    meta:bridgeType "security" ;
+    rdfs:comment "Model registries are secured using blockchain access control" .
+
+aigo:FederatedLearning dt:coordinatedBy bc:ConsensusProtocol ;
+    meta:crossDomainBridge "blockchain→ai" ;
+    meta:bridgeType "coordination" ;
+    rdfs:comment "Federated learning is coordinated using blockchain consensus protocols" .
+
+aigo:AIMarketplace dt:implements bc:SmartContract ;
+    meta:crossDomainBridge "blockchain→ai" ;
+    meta:bridgeType "marketplace" ;
+    rdfs:comment "AI marketplaces implement smart contracts for model trading" .
+
+aigo:ModelOwnership dt:provenBy bc:NFT ;
+    meta:crossDomainBridge "blockchain→ai" ;
+    meta:bridgeType "ownership" ;
+    rdfs:comment "Model ownership is proven using NFTs for IP protection" .
+
+aigo:DataLicense dt:enforcedBy bc:SmartContract ;
+    meta:crossDomainBridge "blockchain→ai" ;
+    meta:bridgeType "licensing" ;
+    rdfs:comment "Data licenses are enforced by smart contracts automatically" .
+
+aigo:ComputeResource dt:tokenizedBy bc:UtilityToken ;
+    meta:crossDomainBridge "blockchain→ai" ;
+    meta:bridgeType "tokenization" ;
+    rdfs:comment "Compute resources are tokenized for decentralized AI training markets" .
+
+aigo:ModelAudit dt:recordedOn bc:ImmutableLedger ;
+    meta:crossDomainBridge "blockchain→ai" ;
+    meta:bridgeType "audit" ;
+    rdfs:comment "Model audits are recorded on immutable ledger for compliance" .
+
+aigo:AIGovernance dt:implementedBy bc:DAO ;
+    meta:crossDomainBridge "blockchain→ai" ;
+    meta:bridgeType "governance" ;
+    rdfs:comment "AI governance is implemented by DAOs for decentralized decision-making" .
+
+# ============================================================================
+# END OF SAMPLE BRIDGES
+# Note: This file contains ~60 representative bridges from the 201 total
+# Source: disruptive-technologies-meta-ontology-v1.0.0.ttl (deleted 2025-10-29)
+# Recovery method: Git history analysis of commit a0eaafca73c
+# ============================================================================
