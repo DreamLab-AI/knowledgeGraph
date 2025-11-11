@@ -357,8 +357,8 @@
     function Od() {
         return KS || (KS = 1, l_.exports = gC()), l_.exports;
     }
-    var qe = Od();
-    const Sm = rb(qe);
+    var je = Od();
+    const Sm = rb(je);
     var c_ = {
         exports: {}
     }, om = {}, u_ = {
@@ -6342,7 +6342,7 @@ Error generating stack: ` + g.message + `
                         case 2:
                         case 9:
                             if (P0(A)) {
-                                Pt = 0, dn = null, je(o);
+                                Pt = 0, dn = null, qe(o);
                                 break;
                             }
                             o = function() {
@@ -6356,7 +6356,7 @@ Error generating stack: ` + g.message + `
                             Pt = 5;
                             break e;
                         case 7:
-                            P0(A) ? (Pt = 0, dn = null, je(o)) : (Pt = 0, dn = null, ht(a, o, A, 7));
+                            P0(A) ? (Pt = 0, dn = null, qe(o)) : (Pt = 0, dn = null, ht(a, o, A, 7));
                             break;
                         case 5:
                             var P = null;
@@ -6404,7 +6404,7 @@ Error generating stack: ` + g.message + `
             var o = Dh(a.alternate, a, Ai);
             a.memoizedProps = a.pendingProps, o === null ? Lt(a) : en = o;
         }
-        function je(a) {
+        function qe(a) {
             var o = a, d = o.alternate;
             switch(o.tag){
                 case 15:
@@ -34634,10 +34634,10 @@ Error generating stack: ` + v.message + `
                 function mn(c) {
                     function f(He, Te) {
                         if (c) {
-                            var je = He.deletions;
-                            je === null ? (He.deletions = [
+                            var qe = He.deletions;
+                            qe === null ? (He.deletions = [
                                 Te
-                            ], He.flags |= 16) : je.push(Te);
+                            ], He.flags |= 16) : qe.push(Te);
                         }
                     }
                     function v(He, Te) {
@@ -34652,105 +34652,105 @@ Error generating stack: ` + v.message + `
                     function w(He, Te) {
                         return He = da(He, Te), He.index = 0, He.sibling = null, He;
                     }
-                    function N(He, Te, je) {
-                        return He.index = je, c ? (je = He.alternate, je !== null ? (je = je.index, je < Te ? (He.flags |= 33554434, Te) : je) : (He.flags |= 33554434, Te)) : (He.flags |= 1048576, Te);
+                    function N(He, Te, qe) {
+                        return He.index = qe, c ? (qe = He.alternate, qe !== null ? (qe = qe.index, qe < Te ? (He.flags |= 33554434, Te) : qe) : (He.flags |= 33554434, Te)) : (He.flags |= 1048576, Te);
                     }
                     function K(He) {
                         return c && He.alternate === null && (He.flags |= 33554434), He;
                     }
-                    function pe(He, Te, je, ht) {
-                        return Te === null || Te.tag !== 6 ? (Te = Yo(je, He.mode, ht), Te.return = He, Te) : (Te = w(Te, je), Te.return = He, Te);
+                    function pe(He, Te, qe, ht) {
+                        return Te === null || Te.tag !== 6 ? (Te = Yo(qe, He.mode, ht), Te.return = He, Te) : (Te = w(Te, qe), Te.return = He, Te);
                     }
-                    function Ce(He, Te, je, ht) {
-                        var Lt = je.type;
-                        return Lt === Ic ? gt(He, Te, je.props.children, ht, je.key) : Te !== null && (Te.elementType === Lt || typeof Lt == "object" && Lt !== null && Lt.$$typeof === ur && rn(Lt) === Te.type) ? (Te = w(Te, je.props), yt(Te, je), Te.return = He, Te) : (Te = Ps(je.type, je.key, je.props, null, He.mode, ht), yt(Te, je), Te.return = He, Te);
+                    function Ce(He, Te, qe, ht) {
+                        var Lt = qe.type;
+                        return Lt === Ic ? gt(He, Te, qe.props.children, ht, qe.key) : Te !== null && (Te.elementType === Lt || typeof Lt == "object" && Lt !== null && Lt.$$typeof === ur && rn(Lt) === Te.type) ? (Te = w(Te, qe.props), yt(Te, qe), Te.return = He, Te) : (Te = Ps(qe.type, qe.key, qe.props, null, He.mode, ht), yt(Te, qe), Te.return = He, Te);
                     }
-                    function it(He, Te, je, ht) {
-                        return Te === null || Te.tag !== 4 || Te.stateNode.containerInfo !== je.containerInfo || Te.stateNode.implementation !== je.implementation ? (Te = Pc(je, He.mode, ht), Te.return = He, Te) : (Te = w(Te, je.children || []), Te.return = He, Te);
+                    function it(He, Te, qe, ht) {
+                        return Te === null || Te.tag !== 4 || Te.stateNode.containerInfo !== qe.containerInfo || Te.stateNode.implementation !== qe.implementation ? (Te = Pc(qe, He.mode, ht), Te.return = He, Te) : (Te = w(Te, qe.children || []), Te.return = He, Te);
                     }
-                    function gt(He, Te, je, ht, Lt) {
-                        return Te === null || Te.tag !== 7 ? (Te = oo(je, He.mode, ht, Lt), Te.return = He, Te) : (Te = w(Te, je), Te.return = He, Te);
+                    function gt(He, Te, qe, ht, Lt) {
+                        return Te === null || Te.tag !== 7 ? (Te = oo(qe, He.mode, ht, Lt), Te.return = He, Te) : (Te = w(Te, qe), Te.return = He, Te);
                     }
-                    function St(He, Te, je) {
-                        if (typeof Te == "string" && Te !== "" || typeof Te == "number" || typeof Te == "bigint") return Te = Yo("" + Te, He.mode, je), Te.return = He, Te;
+                    function St(He, Te, qe) {
+                        if (typeof Te == "string" && Te !== "" || typeof Te == "number" || typeof Te == "bigint") return Te = Yo("" + Te, He.mode, qe), Te.return = He, Te;
                         if (typeof Te == "object" && Te !== null) {
                             switch(Te.$$typeof){
                                 case lo:
-                                    return je = Ps(Te.type, Te.key, Te.props, null, He.mode, je), yt(je, Te), je.return = He, je;
+                                    return qe = Ps(Te.type, Te.key, Te.props, null, He.mode, qe), yt(qe, Te), qe.return = He, qe;
                                 case cr:
-                                    return Te = Pc(Te, He.mode, je), Te.return = He, Te;
+                                    return Te = Pc(Te, He.mode, qe), Te.return = He, Te;
                                 case ur:
                                     var ht = Te._init;
-                                    return Te = ht(Te._payload), St(He, Te, je);
+                                    return Te = ht(Te._payload), St(He, Te, qe);
                             }
-                            if (Qo(Te) || s(Te)) return Te = oo(Te, He.mode, je, null), Te.return = He, Te;
-                            if (typeof Te.then == "function") return St(He, xt(Te), je);
-                            if (Te.$$typeof === Or) return St(He, Du(He, Te), je);
+                            if (Qo(Te) || s(Te)) return Te = oo(Te, He.mode, qe, null), Te.return = He, Te;
+                            if (typeof Te.then == "function") return St(He, xt(Te), qe);
+                            if (Te.$$typeof === Or) return St(He, Du(He, Te), qe);
                             Ct(He, Te);
                         }
                         return null;
                     }
-                    function At(He, Te, je, ht) {
+                    function At(He, Te, qe, ht) {
                         var Lt = Te !== null ? Te.key : null;
-                        if (typeof je == "string" && je !== "" || typeof je == "number" || typeof je == "bigint") return Lt !== null ? null : pe(He, Te, "" + je, ht);
-                        if (typeof je == "object" && je !== null) {
-                            switch(je.$$typeof){
+                        if (typeof qe == "string" && qe !== "" || typeof qe == "number" || typeof qe == "bigint") return Lt !== null ? null : pe(He, Te, "" + qe, ht);
+                        if (typeof qe == "object" && qe !== null) {
+                            switch(qe.$$typeof){
                                 case lo:
-                                    return je.key === Lt ? Ce(He, Te, je, ht) : null;
+                                    return qe.key === Lt ? Ce(He, Te, qe, ht) : null;
                                 case cr:
-                                    return je.key === Lt ? it(He, Te, je, ht) : null;
+                                    return qe.key === Lt ? it(He, Te, qe, ht) : null;
                                 case ur:
-                                    return Lt = je._init, je = Lt(je._payload), At(He, Te, je, ht);
+                                    return Lt = qe._init, qe = Lt(qe._payload), At(He, Te, qe, ht);
                             }
-                            if (Qo(je) || s(je)) return Lt !== null ? null : gt(He, Te, je, ht, null);
-                            if (typeof je.then == "function") return At(He, Te, xt(je), ht);
-                            if (je.$$typeof === Or) return At(He, Te, Du(He, je), ht);
-                            Ct(He, je);
+                            if (Qo(qe) || s(qe)) return Lt !== null ? null : gt(He, Te, qe, ht, null);
+                            if (typeof qe.then == "function") return At(He, Te, xt(qe), ht);
+                            if (qe.$$typeof === Or) return At(He, Te, Du(He, qe), ht);
+                            Ct(He, qe);
                         }
                         return null;
                     }
-                    function Wt(He, Te, je, ht, Lt) {
-                        if (typeof ht == "string" && ht !== "" || typeof ht == "number" || typeof ht == "bigint") return He = He.get(je) || null, pe(Te, He, "" + ht, Lt);
+                    function Wt(He, Te, qe, ht, Lt) {
+                        if (typeof ht == "string" && ht !== "" || typeof ht == "number" || typeof ht == "bigint") return He = He.get(qe) || null, pe(Te, He, "" + ht, Lt);
                         if (typeof ht == "object" && ht !== null) {
                             switch(ht.$$typeof){
                                 case lo:
-                                    return He = He.get(ht.key === null ? je : ht.key) || null, Ce(Te, He, ht, Lt);
+                                    return He = He.get(ht.key === null ? qe : ht.key) || null, Ce(Te, He, ht, Lt);
                                 case cr:
-                                    return He = He.get(ht.key === null ? je : ht.key) || null, it(Te, He, ht, Lt);
+                                    return He = He.get(ht.key === null ? qe : ht.key) || null, it(Te, He, ht, Lt);
                                 case ur:
                                     var Kn = ht._init;
-                                    return ht = Kn(ht._payload), Wt(He, Te, je, ht, Lt);
+                                    return ht = Kn(ht._payload), Wt(He, Te, qe, ht, Lt);
                             }
-                            if (Qo(ht) || s(ht)) return He = He.get(je) || null, gt(Te, He, ht, Lt, null);
-                            if (typeof ht.then == "function") return Wt(He, Te, je, xt(ht), Lt);
-                            if (ht.$$typeof === Or) return Wt(He, Te, je, Du(Te, ht), Lt);
+                            if (Qo(ht) || s(ht)) return He = He.get(qe) || null, gt(Te, He, ht, Lt, null);
+                            if (typeof ht.then == "function") return Wt(He, Te, qe, xt(ht), Lt);
+                            if (ht.$$typeof === Or) return Wt(He, Te, qe, Du(Te, ht), Lt);
                             Ct(Te, ht);
                         }
                         return null;
                     }
-                    function Za(He, Te, je, ht) {
-                        for(var Lt = null, Kn = null, Xt = Te, Cn = Te = 0, Vi = null; Xt !== null && Cn < je.length; Cn++){
+                    function Za(He, Te, qe, ht) {
+                        for(var Lt = null, Kn = null, Xt = Te, Cn = Te = 0, Vi = null; Xt !== null && Cn < qe.length; Cn++){
                             Xt.index > Cn ? (Vi = Xt, Xt = null) : Vi = Xt.sibling;
-                            var wn = At(He, Xt, je[Cn], ht);
+                            var wn = At(He, Xt, qe[Cn], ht);
                             if (wn === null) {
                                 Xt === null && (Xt = Vi);
                                 break;
                             }
                             c && Xt && wn.alternate === null && f(He, Xt), Te = N(wn, Te, Cn), Kn === null ? Lt = wn : Kn.sibling = wn, Kn = wn, Xt = Vi;
                         }
-                        if (Cn === je.length) return v(He, Xt), Tn && re(He, Cn), Lt;
+                        if (Cn === qe.length) return v(He, Xt), Tn && re(He, Cn), Lt;
                         if (Xt === null) {
-                            for(; Cn < je.length; Cn++)Xt = St(He, je[Cn], ht), Xt !== null && (Te = N(Xt, Te, Cn), Kn === null ? Lt = Xt : Kn.sibling = Xt, Kn = Xt);
+                            for(; Cn < qe.length; Cn++)Xt = St(He, qe[Cn], ht), Xt !== null && (Te = N(Xt, Te, Cn), Kn === null ? Lt = Xt : Kn.sibling = Xt, Kn = Xt);
                             return Tn && re(He, Cn), Lt;
                         }
-                        for(Xt = S(Xt); Cn < je.length; Cn++)Vi = Wt(Xt, He, Cn, je[Cn], ht), Vi !== null && (c && Vi.alternate !== null && Xt.delete(Vi.key === null ? Cn : Vi.key), Te = N(Vi, Te, Cn), Kn === null ? Lt = Vi : Kn.sibling = Vi, Kn = Vi);
+                        for(Xt = S(Xt); Cn < qe.length; Cn++)Vi = Wt(Xt, He, Cn, qe[Cn], ht), Vi !== null && (c && Vi.alternate !== null && Xt.delete(Vi.key === null ? Cn : Vi.key), Te = N(Vi, Te, Cn), Kn === null ? Lt = Vi : Kn.sibling = Vi, Kn = Vi);
                         return c && Xt.forEach(function(bo) {
                             return f(He, bo);
                         }), Tn && re(He, Cn), Lt;
                     }
-                    function uf(He, Te, je, ht) {
-                        if (je == null) throw Error(i(151));
-                        for(var Lt = null, Kn = null, Xt = Te, Cn = Te = 0, Vi = null, wn = je.next(); Xt !== null && !wn.done; Cn++, wn = je.next()){
+                    function uf(He, Te, qe, ht) {
+                        if (qe == null) throw Error(i(151));
+                        for(var Lt = null, Kn = null, Xt = Te, Cn = Te = 0, Vi = null, wn = qe.next(); Xt !== null && !wn.done; Cn++, wn = qe.next()){
                             Xt.index > Cn ? (Vi = Xt, Xt = null) : Vi = Xt.sibling;
                             var bo = At(He, Xt, wn.value, ht);
                             if (bo === null) {
@@ -34761,28 +34761,28 @@ Error generating stack: ` + v.message + `
                         }
                         if (wn.done) return v(He, Xt), Tn && re(He, Cn), Lt;
                         if (Xt === null) {
-                            for(; !wn.done; Cn++, wn = je.next())wn = St(He, wn.value, ht), wn !== null && (Te = N(wn, Te, Cn), Kn === null ? Lt = wn : Kn.sibling = wn, Kn = wn);
+                            for(; !wn.done; Cn++, wn = qe.next())wn = St(He, wn.value, ht), wn !== null && (Te = N(wn, Te, Cn), Kn === null ? Lt = wn : Kn.sibling = wn, Kn = wn);
                             return Tn && re(He, Cn), Lt;
                         }
-                        for(Xt = S(Xt); !wn.done; Cn++, wn = je.next())wn = Wt(Xt, He, Cn, wn.value, ht), wn !== null && (c && wn.alternate !== null && Xt.delete(wn.key === null ? Cn : wn.key), Te = N(wn, Te, Cn), Kn === null ? Lt = wn : Kn.sibling = wn, Kn = wn);
+                        for(Xt = S(Xt); !wn.done; Cn++, wn = qe.next())wn = Wt(Xt, He, Cn, wn.value, ht), wn !== null && (c && wn.alternate !== null && Xt.delete(wn.key === null ? Cn : wn.key), Te = N(wn, Te, Cn), Kn === null ? Lt = wn : Kn.sibling = wn, Kn = wn);
                         return c && Xt.forEach(function(Fh) {
                             return f(He, Fh);
                         }), Tn && re(He, Cn), Lt;
                     }
-                    function tc(He, Te, je, ht) {
-                        if (typeof je == "object" && je !== null && je.type === Ic && je.key === null && (je = je.props.children), typeof je == "object" && je !== null) {
-                            switch(je.$$typeof){
+                    function tc(He, Te, qe, ht) {
+                        if (typeof qe == "object" && qe !== null && qe.type === Ic && qe.key === null && (qe = qe.props.children), typeof qe == "object" && qe !== null) {
+                            switch(qe.$$typeof){
                                 case lo:
                                     e: {
-                                        for(var Lt = je.key; Te !== null;){
+                                        for(var Lt = qe.key; Te !== null;){
                                             if (Te.key === Lt) {
-                                                if (Lt = je.type, Lt === Ic) {
+                                                if (Lt = qe.type, Lt === Ic) {
                                                     if (Te.tag === 7) {
-                                                        v(He, Te.sibling), ht = w(Te, je.props.children), ht.return = He, He = ht;
+                                                        v(He, Te.sibling), ht = w(Te, qe.props.children), ht.return = He, He = ht;
                                                         break e;
                                                     }
                                                 } else if (Te.elementType === Lt || typeof Lt == "object" && Lt !== null && Lt.$$typeof === ur && rn(Lt) === Te.type) {
-                                                    v(He, Te.sibling), ht = w(Te, je.props), yt(ht, je), ht.return = He, He = ht;
+                                                    v(He, Te.sibling), ht = w(Te, qe.props), yt(ht, qe), ht.return = He, He = ht;
                                                     break e;
                                                 }
                                                 v(He, Te);
@@ -34790,14 +34790,14 @@ Error generating stack: ` + v.message + `
                                             } else f(He, Te);
                                             Te = Te.sibling;
                                         }
-                                        je.type === Ic ? (ht = oo(je.props.children, He.mode, ht, je.key), ht.return = He, He = ht) : (ht = Ps(je.type, je.key, je.props, null, He.mode, ht), yt(ht, je), ht.return = He, He = ht);
+                                        qe.type === Ic ? (ht = oo(qe.props.children, He.mode, ht, qe.key), ht.return = He, He = ht) : (ht = Ps(qe.type, qe.key, qe.props, null, He.mode, ht), yt(ht, qe), ht.return = He, He = ht);
                                     }
                                     return K(He);
                                 case cr:
                                     e: {
-                                        for(Lt = je.key; Te !== null;){
-                                            if (Te.key === Lt) if (Te.tag === 4 && Te.stateNode.containerInfo === je.containerInfo && Te.stateNode.implementation === je.implementation) {
-                                                v(He, Te.sibling), ht = w(Te, je.children || []), ht.return = He, He = ht;
+                                        for(Lt = qe.key; Te !== null;){
+                                            if (Te.key === Lt) if (Te.tag === 4 && Te.stateNode.containerInfo === qe.containerInfo && Te.stateNode.implementation === qe.implementation) {
+                                                v(He, Te.sibling), ht = w(Te, qe.children || []), ht.return = He, He = ht;
                                                 break e;
                                             } else {
                                                 v(He, Te);
@@ -34806,27 +34806,27 @@ Error generating stack: ` + v.message + `
                                             else f(He, Te);
                                             Te = Te.sibling;
                                         }
-                                        ht = Pc(je, He.mode, ht), ht.return = He, He = ht;
+                                        ht = Pc(qe, He.mode, ht), ht.return = He, He = ht;
                                     }
                                     return K(He);
                                 case ur:
-                                    return Lt = je._init, je = Lt(je._payload), tc(He, Te, je, ht);
+                                    return Lt = qe._init, qe = Lt(qe._payload), tc(He, Te, qe, ht);
                             }
-                            if (Qo(je)) return Za(He, Te, je, ht);
-                            if (s(je)) {
-                                if (Lt = s(je), typeof Lt != "function") throw Error(i(150));
-                                return je = Lt.call(je), uf(He, Te, je, ht);
+                            if (Qo(qe)) return Za(He, Te, qe, ht);
+                            if (s(qe)) {
+                                if (Lt = s(qe), typeof Lt != "function") throw Error(i(150));
+                                return qe = Lt.call(qe), uf(He, Te, qe, ht);
                             }
-                            if (typeof je.then == "function") return tc(He, Te, xt(je), ht);
-                            if (je.$$typeof === Or) return tc(He, Te, Du(He, je), ht);
-                            Ct(He, je);
+                            if (typeof qe.then == "function") return tc(He, Te, xt(qe), ht);
+                            if (qe.$$typeof === Or) return tc(He, Te, Du(He, qe), ht);
+                            Ct(He, qe);
                         }
-                        return typeof je == "string" && je !== "" || typeof je == "number" || typeof je == "bigint" ? (je = "" + je, Te !== null && Te.tag === 6 ? (v(He, Te.sibling), ht = w(Te, je), ht.return = He, He = ht) : (v(He, Te), ht = Yo(je, He.mode, ht), ht.return = He, He = ht), K(He)) : v(He, Te);
+                        return typeof qe == "string" && qe !== "" || typeof qe == "number" || typeof qe == "bigint" ? (qe = "" + qe, Te !== null && Te.tag === 6 ? (v(He, Te.sibling), ht = w(Te, qe), ht.return = He, He = ht) : (v(He, Te), ht = Yo(qe, He.mode, ht), ht.return = He, He = ht), K(He)) : v(He, Te);
                     }
-                    return function(He, Te, je, ht) {
+                    return function(He, Te, qe, ht) {
                         try {
                             Gs = 0;
-                            var Lt = tc(He, Te, je, ht);
+                            var Lt = tc(He, Te, qe, ht);
                             return Fr = null, Lt;
                         } catch (Xt) {
                             if (Xt === Hn) throw Xt;
@@ -38593,19 +38593,19 @@ No matching component was found for:
             return r;
         }
     }
-    const Yb = LT(qe.createContext(null));
-    class zT extends qe.Component {
+    const Yb = LT(je.createContext(null));
+    class zT extends je.Component {
         render() {
-            return qe.createElement(Yb.Provider, {
+            return je.createElement(Yb.Provider, {
                 value: this._reactInternals
             }, this.props.children);
         }
     }
     function BT() {
-        const r = qe.useContext(Yb);
+        const r = je.useContext(Yb);
         if (r === null) throw new Error("its-fine: useFiber must be called within a <FiberProvider />!");
-        const e = qe.useId();
-        return qe.useMemo(()=>{
+        const e = je.useId();
+        return je.useMemo(()=>{
             for (const t of [
                 r,
                 r?.alternate
@@ -38627,21 +38627,21 @@ No matching component was found for:
     }
     const fz = Symbol.for("react.context"), hz = (r)=>r !== null && typeof r == "object" && "$$typeof" in r && r.$$typeof === fz;
     function dz() {
-        const r = BT(), [e] = qe.useState(()=>new Map);
+        const r = BT(), [e] = je.useState(()=>new Map);
         e.clear();
         let t = r;
         for(; t;){
             const n = t.type;
-            hz(n) && n !== Yb && !e.has(n) && e.set(n, qe.use(LT(n))), t = t.return;
+            hz(n) && n !== Yb && !e.has(n) && e.set(n, je.use(LT(n))), t = t.return;
         }
         return e;
     }
     function pz() {
         const r = dz();
-        return qe.useMemo(()=>Array.from(r.keys()).reduce((e, t)=>(n)=>qe.createElement(e, null, qe.createElement(t.Provider, {
+        return je.useMemo(()=>Array.from(r.keys()).reduce((e, t)=>(n)=>je.createElement(e, null, je.createElement(t.Provider, {
                         ...n,
                         value: r.get(t)
-                    })), (e)=>qe.createElement(zT, {
+                    })), (e)=>je.createElement(zT, {
                     ...e
                 })), [
             r
@@ -38652,17 +38652,17 @@ No matching component was found for:
         for(; e.getState().previousRoot;)e = e.getState().previousRoot;
         return e;
     }
-    const IT = (r)=>r && r.isOrthographicCamera, mz = (r)=>r && r.hasOwnProperty("current"), gz = (r)=>r != null && (typeof r == "string" || typeof r == "number" || r.isColor), v0 = ((r, e)=>typeof window < "u" && (((r = window.document) == null ? void 0 : r.createElement) || ((e = window.navigator) == null ? void 0 : e.product) === "ReactNative"))() ? qe.useLayoutEffect : qe.useEffect;
+    const IT = (r)=>r && r.isOrthographicCamera, mz = (r)=>r && r.hasOwnProperty("current"), gz = (r)=>r != null && (typeof r == "string" || typeof r == "number" || r.isColor), v0 = ((r, e)=>typeof window < "u" && (((r = window.document) == null ? void 0 : r.createElement) || ((e = window.navigator) == null ? void 0 : e.product) === "ReactNative"))() ? je.useLayoutEffect : je.useEffect;
     function FT(r) {
-        const e = qe.useRef(r);
+        const e = je.useRef(r);
         return v0(()=>void (e.current = r), [
             r
         ]), e;
     }
     function vz() {
         const r = BT(), e = pz();
-        return qe.useMemo(()=>({ children: t })=>{
-                const i = !!qb(r, !0, (s)=>s.type === qe.StrictMode) ? qe.StrictMode : qe.Fragment;
+        return je.useMemo(()=>({ children: t })=>{
+                const i = !!qb(r, !0, (s)=>s.type === je.StrictMode) ? je.StrictMode : je.Fragment;
                 return fe.jsx(i, {
                     children: fe.jsx(e, {
                         children: t
@@ -38678,7 +38678,7 @@ No matching component was found for:
             r
         ]), null;
     }
-    const yz = ((r)=>(r = class extends qe.Component {
+    const yz = ((r)=>(r = class extends je.Component {
             constructor(...t){
                 super(...t), this.state = {
                     error: !1
@@ -39103,7 +39103,7 @@ No matching component was found for:
             handlePointer: u
         };
     }
-    const YM = (r)=>!!(r != null && r.render), kT = qe.createContext(null), Rz = (r, e)=>{
+    const YM = (r)=>!!(r != null && r.render), kT = je.createContext(null), Rz = (r, e)=>{
         const t = tz((u, h)=>{
             const p = new $, m = new $, x = new $;
             function y(M = h().camera, R = m, D = h().size) {
@@ -39240,7 +39240,7 @@ No matching component was found for:
                     ],
                     initialHits: [],
                     capturedMap: new Map,
-                    lastEvent: qe.createRef(),
+                    lastEvent: je.createRef(),
                     active: !1,
                     frames: 0,
                     priority: 0,
@@ -39275,7 +39275,7 @@ No matching component was found for:
         }), t.subscribe((u)=>r(u)), t;
     };
     function XT() {
-        const r = qe.useContext(kT);
+        const r = je.useContext(kT);
         if (!r) throw new Error("R3F: Hooks can only be used within the Canvas component!");
         return r;
     }
@@ -39295,7 +39295,7 @@ No matching component was found for:
         return e.injectIntoDevTools({
             bundleType: 0,
             rendererPackageName: "@react-three/fiber",
-            version: qe.version
+            version: je.version
         }), e;
     }
     const jT = 0, Ud = {}, Uz = /^three(?=[A-Z])/, by = (r)=>`${r[0].toUpperCase()}${r.slice(1)}`;
@@ -39502,7 +39502,7 @@ No matching component was found for:
         suspendInstance () {},
         waitForCommitToBeReady: ()=>null,
         NotPendingTransition: null,
-        HostTransitionContext: qe.createContext(null),
+        HostTransitionContext: je.createContext(null),
         setCurrentUpdatePriority (r) {
             Mv = r;
         },
@@ -39859,7 +39859,7 @@ No matching component was found for:
         const i = t || (typeof window > "u" ? class {
         } : window.ResizeObserver);
         if (!i) throw new Error("This browser does not support ResizeObserver out of the box. See: https://github.com/react-spring/react-use-measure/#resize-observer-polyfills");
-        const [s, l] = qe.useState({
+        const [s, l] = je.useState({
             left: 0,
             top: 0,
             width: 0,
@@ -39868,15 +39868,15 @@ No matching component was found for:
             right: 0,
             x: 0,
             y: 0
-        }), u = qe.useRef({
+        }), u = je.useRef({
             element: null,
             scrollContainers: null,
             resizeObserver: null,
             lastBounds: s,
             orientationHandler: null
-        }), h = r ? typeof r == "number" ? r : r.scroll : null, p = r ? typeof r == "number" ? r : r.resize : null, m = qe.useRef(!1);
-        qe.useEffect(()=>(m.current = !0, ()=>void (m.current = !1)));
-        const [x, y, _] = qe.useMemo(()=>{
+        }), h = r ? typeof r == "number" ? r : r.scroll : null, p = r ? typeof r == "number" ? r : r.resize : null, m = je.useRef(!1);
+        je.useEffect(()=>(m.current = !0, ()=>void (m.current = !1)));
+        const [x, y, _] = je.useMemo(()=>{
             const M = ()=>{
                 if (!u.current.element) return;
                 const { left: R, top: D, width: U, height: B, bottom: O, right: F, x: G, y: z } = u.current.element.getBoundingClientRect(), L = {
@@ -39916,20 +39916,20 @@ No matching component was found for:
         const T = (M)=>{
             !M || M === u.current.element || (E(), u.current.element = M, u.current.scrollContainers = JT(M), C());
         };
-        return Zz(_, !!e), Wz(y), qe.useEffect(()=>{
+        return Zz(_, !!e), Wz(y), je.useEffect(()=>{
             E(), C();
         }, [
             e,
             _,
             y
-        ]), qe.useEffect(()=>E, []), [
+        ]), je.useEffect(()=>E, []), [
             T,
             s,
             x
         ];
     }
     function Wz(r) {
-        qe.useEffect(()=>{
+        je.useEffect(()=>{
             const e = r;
             return window.addEventListener("resize", e), ()=>void window.removeEventListener("resize", e);
         }, [
@@ -39937,7 +39937,7 @@ No matching component was found for:
         ]);
     }
     function Zz(r, e) {
-        qe.useEffect(()=>{
+        je.useEffect(()=>{
             if (e) {
                 const t = r;
                 return window.addEventListener("scroll", t, {
@@ -39974,7 +39974,7 @@ No matching component was found for:
         "height"
     ], Qz = (r, e)=>Kz.every((t)=>r[t] === e[t]);
     function Jz({ ref: r, children: e, fallback: t, resize: n, style: i, gl: s, events: l = qz, eventSource: u, eventPrefix: h, shadows: p, linear: m, flat: x, legacy: y, orthographic: _, frameloop: E, dpr: C, performance: T, raycaster: M, camera: R, scene: D, onPointerMissed: U, onCreated: B, ...O }) {
-        qe.useMemo(()=>qT(jL), []);
+        je.useMemo(()=>qT(jL), []);
         const F = vz(), [G, z] = Yz({
             scroll: !0,
             debounce: {
@@ -39982,12 +39982,12 @@ No matching component was found for:
                 resize: 0
             },
             ...n
-        }), L = qe.useRef(null), j = qe.useRef(null);
-        qe.useImperativeHandle(r, ()=>L.current);
-        const X = FT(U), [Q, ee] = qe.useState(!1), [le, V] = qe.useState(!1);
+        }), L = je.useRef(null), j = je.useRef(null);
+        je.useImperativeHandle(r, ()=>L.current);
+        const X = FT(U), [Q, ee] = je.useState(!1), [le, V] = je.useState(!1);
         if (Q) throw Q;
         if (le) throw le;
-        const J = qe.useRef(null);
+        const J = je.useRef(null);
         v0(()=>{
             const se = L.current;
             if (z.width > 0 && z.height > 0 && se) {
@@ -40020,7 +40020,7 @@ No matching component was found for:
                     }), J.current.render(fe.jsx(F, {
                         children: fe.jsx(yz, {
                             set: V,
-                            children: fe.jsx(qe.Suspense, {
+                            children: fe.jsx(je.Suspense, {
                                 fallback: fe.jsx(xz, {
                                     set: ee
                                 }),
@@ -40031,7 +40031,7 @@ No matching component was found for:
                 }
                 re();
             }
-        }), qe.useEffect(()=>{
+        }), je.useEffect(()=>{
             const se = L.current;
             if (se) return ()=>KT(se);
         }, []);
@@ -40160,22 +40160,22 @@ No matching component was found for:
     function l5(r) {
         return r && typeof r == "object" && "current" in r;
     }
-    const e3 = qe.forwardRef(({ children: r, eps: e = .001, style: t, className: n, prepend: i, center: s, fullscreen: l, portal: u, distanceFactor: h, sprite: p = !1, transform: m = !1, occlude: x, onOcclude: y, castShadow: _, receiveShadow: E, material: C, geometry: T, zIndexRange: M = [
+    const e3 = je.forwardRef(({ children: r, eps: e = .001, style: t, className: n, prepend: i, center: s, fullscreen: l, portal: u, distanceFactor: h, sprite: p = !1, transform: m = !1, occlude: x, onOcclude: y, castShadow: _, receiveShadow: E, material: C, geometry: T, zIndexRange: M = [
         16777271,
         0
     ], calculatePosition: R = t5, as: D = "div", wrapperClass: U, pointerEvents: B = "auto", ...O }, F)=>{
-        const { gl: G, camera: z, scene: L, size: j, raycaster: X, events: Q, viewport: ee } = es(), [le] = qe.useState(()=>document.createElement(D)), V = qe.useRef(null), J = qe.useRef(null), te = qe.useRef(0), se = qe.useRef([
+        const { gl: G, camera: z, scene: L, size: j, raycaster: X, events: Q, viewport: ee } = es(), [le] = je.useState(()=>document.createElement(D)), V = je.useRef(null), J = je.useRef(null), te = je.useRef(0), se = je.useRef([
             0,
             0
-        ]), re = qe.useRef(null), I = qe.useRef(null), Z = u?.current || Q.connected || G.domElement.parentNode, ne = qe.useRef(null), ce = qe.useRef(!1), de = qe.useMemo(()=>x && x !== "blending" || Array.isArray(x) && x.length && l5(x[0]), [
+        ]), re = je.useRef(null), I = je.useRef(null), Z = u?.current || Q.connected || G.domElement.parentNode, ne = je.useRef(null), ce = je.useRef(!1), de = je.useMemo(()=>x && x !== "blending" || Array.isArray(x) && x.length && l5(x[0]), [
             x
         ]);
-        qe.useLayoutEffect(()=>{
+        je.useLayoutEffect(()=>{
             const Ze = G.domElement;
             x && x === "blending" ? (Ze.style.zIndex = `${Math.floor(M[0] / 2)}`, Ze.style.position = "absolute", Ze.style.pointerEvents = "none") : (Ze.style.zIndex = null, Ze.style.position = null, Ze.style.pointerEvents = null);
         }, [
             x
-        ]), qe.useLayoutEffect(()=>{
+        ]), je.useLayoutEffect(()=>{
             if (J.current) {
                 const Ze = V.current = O3.createRoot(le);
                 if (L.updateMatrixWorld(), m) le.style.cssText = "position:absolute;top:0;left:0;pointer-events:none;overflow:hidden;";
@@ -40190,12 +40190,12 @@ No matching component was found for:
         }, [
             Z,
             m
-        ]), qe.useLayoutEffect(()=>{
+        ]), je.useLayoutEffect(()=>{
             U && (le.className = U);
         }, [
             U
         ]);
-        const oe = qe.useMemo(()=>m ? {
+        const oe = je.useMemo(()=>m ? {
                 position: "absolute",
                 top: 0,
                 left: 0,
@@ -40219,22 +40219,22 @@ No matching component was found for:
             l,
             j,
             m
-        ]), ue = qe.useMemo(()=>({
+        ]), ue = je.useMemo(()=>({
                 position: "absolute",
                 pointerEvents: B
             }), [
             B
         ]);
-        qe.useLayoutEffect(()=>{
+        je.useLayoutEffect(()=>{
             if (ce.current = !1, m) {
                 var Ze;
-                (Ze = V.current) == null || Ze.render(qe.createElement("div", {
+                (Ze = V.current) == null || Ze.render(je.createElement("div", {
                     ref: re,
                     style: oe
-                }, qe.createElement("div", {
+                }, je.createElement("div", {
                     ref: I,
                     style: ue
-                }, qe.createElement("div", {
+                }, je.createElement("div", {
                     ref: F,
                     className: n,
                     style: t,
@@ -40242,7 +40242,7 @@ No matching component was found for:
                 }))));
             } else {
                 var Pe;
-                (Pe = V.current) == null || Pe.render(qe.createElement("div", {
+                (Pe = V.current) == null || Pe.render(je.createElement("div", {
                     ref: F,
                     style: oe,
                     className: n,
@@ -40250,7 +40250,7 @@ No matching component was found for:
                 }));
             }
         });
-        const ye = qe.useRef(!0);
+        const ye = je.useRef(!0);
         Fd((Ze)=>{
             if (J.current) {
                 z.updateMatrixWorld(), J.current.updateWorldMatrix(!0, !1);
@@ -40310,7 +40310,7 @@ No matching component was found for:
                 ne.current.lookAt(Ze.camera.position);
             }
         });
-        const ke = qe.useMemo(()=>({
+        const ke = je.useMemo(()=>({
                 vertexShader: m ? void 0 : `
           /*
             This shader is from the THREE's SpriteMaterial.
@@ -40353,13 +40353,13 @@ No matching component was found for:
             }), [
             m
         ]);
-        return qe.createElement("group", Do({}, O, {
+        return je.createElement("group", Do({}, O, {
             ref: J
-        }), x && !de && qe.createElement("mesh", {
+        }), x && !de && je.createElement("mesh", {
             castShadow: _,
             receiveShadow: E,
             ref: ne
-        }, T || qe.createElement("planeGeometry", null), C || qe.createElement("shaderMaterial", {
+        }, T || je.createElement("planeGeometry", null), C || je.createElement("shaderMaterial", {
             side: ws,
             vertexShader: ke.vertexShader,
             fragmentShader: ke.fragmentShader
@@ -41604,11 +41604,11 @@ No matching component was found for:
             super(e, t), this.isLine2 = !0, this.type = "Line2";
         }
     }
-    const c3 = qe.forwardRef(function({ points: e, color: t = 16777215, vertexColors: n, linewidth: i, lineWidth: s, segments: l, dashed: u, ...h }, p) {
+    const c3 = je.forwardRef(function({ points: e, color: t = 16777215, vertexColors: n, linewidth: i, lineWidth: s, segments: l, dashed: u, ...h }, p) {
         var m, x;
-        const y = es((M)=>M.size), _ = qe.useMemo(()=>l ? new aA : new b5, [
+        const y = es((M)=>M.size), _ = je.useMemo(()=>l ? new aA : new b5, [
             l
-        ]), [E] = qe.useState(()=>new Qb), C = (n == null || (m = n[0]) == null ? void 0 : m.length) === 4 ? 4 : 3, T = qe.useMemo(()=>{
+        ]), [E] = je.useState(()=>new Qb), C = (n == null || (m = n[0]) == null ? void 0 : m.length) === 4 ? 4 : 3, T = je.useMemo(()=>{
             const M = l ? new Kb : new iA, R = e.map((D)=>{
                 const U = Array.isArray(D);
                 return D instanceof $ || D instanceof un ? [
@@ -41641,27 +41641,27 @@ No matching component was found for:
             n,
             C
         ]);
-        return qe.useLayoutEffect(()=>{
+        return je.useLayoutEffect(()=>{
             _.computeLineDistances();
         }, [
             e,
             _
-        ]), qe.useLayoutEffect(()=>{
+        ]), je.useLayoutEffect(()=>{
             u ? E.defines.USE_DASH = "" : delete E.defines.USE_DASH, E.needsUpdate = !0;
         }, [
             u,
             E
-        ]), qe.useEffect(()=>()=>{
+        ]), je.useEffect(()=>()=>{
                 T.dispose(), E.dispose();
             }, [
             T
-        ]), qe.createElement("primitive", Do({
+        ]), je.createElement("primitive", Do({
             object: _,
             ref: p
-        }, h), qe.createElement("primitive", {
+        }, h), je.createElement("primitive", {
             object: T,
             attach: "geometry"
-        }), qe.createElement("primitive", Do({
+        }), je.createElement("primitive", Do({
             object: E,
             attach: "material",
             color: t,
@@ -46211,11 +46211,11 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
     });
     new Xi;
     new bt;
-    const eb = qe.forwardRef(({ sdfGlyphSize: r = 64, anchorX: e = "center", anchorY: t = "middle", font: n, fontSize: i = 1, children: s, characters: l, onSync: u, ...h }, p)=>{
-        const m = es(({ invalidate: E })=>E), [x] = qe.useState(()=>new gA), [y, _] = qe.useMemo(()=>{
+    const eb = je.forwardRef(({ sdfGlyphSize: r = 64, anchorX: e = "center", anchorY: t = "middle", font: n, fontSize: i = 1, children: s, characters: l, onSync: u, ...h }, p)=>{
+        const m = es(({ invalidate: E })=>E), [x] = je.useState(()=>new gA), [y, _] = je.useMemo(()=>{
             const E = [];
             let C = "";
-            return qe.Children.forEach(s, (T)=>{
+            return je.Children.forEach(s, (T)=>{
                 typeof T == "string" || typeof T == "number" ? C += T : E.push(T);
             }), [
                 E,
@@ -46231,11 +46231,11 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
             "troika-text",
             n,
             l
-        ]), qe.useLayoutEffect(()=>void x.sync(()=>{
+        ]), je.useLayoutEffect(()=>void x.sync(()=>{
                 m(), u && u(x);
-            })), qe.useEffect(()=>()=>x.dispose(), [
+            })), je.useEffect(()=>()=>x.dispose(), [
             x
-        ]), qe.createElement("primitive", Do({
+        ]), je.createElement("primitive", Do({
             object: x,
             ref: p,
             font: n,
@@ -46269,7 +46269,7 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
     }
     const xB = ()=>parseInt(Ld.replace(/\D+/g, "")), yB = xB();
     function _B(r, e, t) {
-        const n = es((_)=>_.size), i = es((_)=>_.viewport), s = typeof r == "number" ? r : n.width * i.dpr, l = n.height * i.dpr, u = (typeof r == "number" ? t : r) || {}, { samples: h = 0, depth: p, ...m } = u, x = p ?? u.depthBuffer, y = qe.useMemo(()=>{
+        const n = es((_)=>_.size), i = es((_)=>_.viewport), s = typeof r == "number" ? r : n.width * i.dpr, l = n.height * i.dpr, u = (typeof r == "number" ? t : r) || {}, { samples: h = 0, depth: p, ...m } = u, x = p ?? u.depthBuffer, y = je.useMemo(()=>{
             const _ = new Ro(s, l, {
                 minFilter: di,
                 magFilter: di,
@@ -46278,32 +46278,32 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
             });
             return x && (_.depthTexture = new ey(s, l, Ds)), _.samples = h, _;
         }, []);
-        return qe.useLayoutEffect(()=>{
+        return je.useLayoutEffect(()=>{
             y.setSize(s, l), h && (y.samples = h);
         }, [
             h,
             y,
             s,
             l
-        ]), qe.useEffect(()=>()=>y.dispose(), []), y;
+        ]), je.useEffect(()=>()=>y.dispose(), []), y;
     }
-    const bB = (r)=>typeof r == "function", SB = qe.forwardRef(({ envMap: r, resolution: e = 256, frames: t = 1 / 0, makeDefault: n, children: i, ...s }, l)=>{
-        const u = es(({ set: T })=>T), h = es(({ camera: T })=>T), p = es(({ size: T })=>T), m = qe.useRef(null);
-        qe.useImperativeHandle(l, ()=>m.current, []);
-        const x = qe.useRef(null), y = _B(e);
-        qe.useLayoutEffect(()=>{
+    const bB = (r)=>typeof r == "function", SB = je.forwardRef(({ envMap: r, resolution: e = 256, frames: t = 1 / 0, makeDefault: n, children: i, ...s }, l)=>{
+        const u = es(({ set: T })=>T), h = es(({ camera: T })=>T), p = es(({ size: T })=>T), m = je.useRef(null);
+        je.useImperativeHandle(l, ()=>m.current, []);
+        const x = je.useRef(null), y = _B(e);
+        je.useLayoutEffect(()=>{
             s.manual || (m.current.aspect = p.width / p.height);
         }, [
             p,
             s
-        ]), qe.useLayoutEffect(()=>{
+        ]), je.useLayoutEffect(()=>{
             m.current.updateProjectionMatrix();
         });
         let _ = 0, E = null;
         const C = bB(i);
         return Fd((T)=>{
             C && (t === 1 / 0 || _ < t) && (x.current.visible = !1, T.gl.setRenderTarget(y), E = T.scene.background, r && (T.scene.background = r), T.gl.render(T.scene, m.current), T.scene.background = E, T.gl.setRenderTarget(null), x.current.visible = !0, _++);
-        }), qe.useLayoutEffect(()=>{
+        }), je.useLayoutEffect(()=>{
             if (n) {
                 const T = h;
                 return u(()=>({
@@ -46316,24 +46316,24 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
             m,
             n,
             u
-        ]), qe.createElement(qe.Fragment, null, qe.createElement("perspectiveCamera", Do({
+        ]), je.createElement(je.Fragment, null, je.createElement("perspectiveCamera", Do({
             ref: m
-        }, s), !C && i), qe.createElement("group", {
+        }, s), !C && i), je.createElement("group", {
             ref: x
         }, C && i(y.texture)));
-    }), MB = qe.forwardRef(({ makeDefault: r, camera: e, regress: t, domElement: n, enableDamping: i = !0, keyEvents: s = !1, onChange: l, onStart: u, onEnd: h, ...p }, m)=>{
-        const x = es((O)=>O.invalidate), y = es((O)=>O.camera), _ = es((O)=>O.gl), E = es((O)=>O.events), C = es((O)=>O.setEvents), T = es((O)=>O.set), M = es((O)=>O.get), R = es((O)=>O.performance), D = e || y, U = n || E.connected || _.domElement, B = qe.useMemo(()=>new x5(D), [
+    }), MB = je.forwardRef(({ makeDefault: r, camera: e, regress: t, domElement: n, enableDamping: i = !0, keyEvents: s = !1, onChange: l, onStart: u, onEnd: h, ...p }, m)=>{
+        const x = es((O)=>O.invalidate), y = es((O)=>O.camera), _ = es((O)=>O.gl), E = es((O)=>O.events), C = es((O)=>O.setEvents), T = es((O)=>O.set), M = es((O)=>O.get), R = es((O)=>O.performance), D = e || y, U = n || E.connected || _.domElement, B = je.useMemo(()=>new x5(D), [
             D
         ]);
         return Fd(()=>{
             B.enabled && B.update();
-        }, -1), qe.useEffect(()=>(s && B.connect(s === !0 ? U : s), B.connect(U), ()=>void B.dispose()), [
+        }, -1), je.useEffect(()=>(s && B.connect(s === !0 ? U : s), B.connect(U), ()=>void B.dispose()), [
             s,
             U,
             t,
             B,
             x
-        ]), qe.useEffect(()=>{
+        ]), je.useEffect(()=>{
             const O = (z)=>{
                 x(), t && R.regress(), l && l(z);
             }, F = (z)=>{
@@ -46351,7 +46351,7 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
             B,
             x,
             C
-        ]), qe.useEffect(()=>{
+        ]), je.useEffect(()=>{
             if (r) {
                 const O = M().controls;
                 return T({
@@ -46363,7 +46363,7 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
         }, [
             r,
             B
-        ]), qe.createElement("primitive", Do({
+        ]), je.createElement("primitive", Do({
             ref: m,
             object: B,
             enableDamping: i
@@ -46442,12 +46442,12 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
       #include <tonemapping_fragment>
       #include <${yB >= 154 ? "colorspace_fragment" : "encodings_fragment"}>
     }
-  `), TB = qe.forwardRef(({ args: r, cellColor: e = "#000000", sectionColor: t = "#2080ff", cellSize: n = .5, sectionSize: i = 1, followCamera: s = !1, infiniteGrid: l = !1, fadeDistance: u = 100, fadeStrength: h = 1, fadeFrom: p = 1, cellThickness: m = .5, sectionThickness: x = 1, side: y = is, ..._ }, E)=>{
+  `), TB = je.forwardRef(({ args: r, cellColor: e = "#000000", sectionColor: t = "#2080ff", cellSize: n = .5, sectionSize: i = 1, followCamera: s = !1, infiniteGrid: l = !1, fadeDistance: u = 100, fadeStrength: h = 1, fadeFrom: p = 1, cellThickness: m = .5, sectionThickness: x = 1, side: y = is, ..._ }, E)=>{
         qT({
             GridMaterial: EB
         });
-        const C = qe.useRef(null);
-        qe.useImperativeHandle(E, ()=>C.current, []);
+        const C = je.useRef(null);
+        je.useImperativeHandle(E, ()=>C.current, []);
         const T = new dl, M = new $(0, 1, 0), R = new $(0, 0, 0);
         Fd((B)=>{
             T.setFromNormalAndCoplanarPoint(M, R).applyMatrix4(C.current.matrixWorld);
@@ -46468,14 +46468,14 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
             infiniteGrid: l,
             followCamera: s
         };
-        return qe.createElement("mesh", Do({
+        return je.createElement("mesh", Do({
             ref: C,
             frustumCulled: !1
-        }, _), qe.createElement("gridMaterial", Do({
+        }, _), je.createElement("gridMaterial", Do({
             transparent: !0,
             "extensions-derivatives": !0,
             side: y
-        }, D, U)), qe.createElement("planeGeometry", {
+        }, D, U)), je.createElement("planeGeometry", {
             args: r
         }));
     }), AB = "modulepreload", CB = function(r) {
@@ -46519,11 +46519,11 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
     };
     function RB(r, e) {
         const t = r + "Geometry";
-        return qe.forwardRef(({ args: n, children: i, ...s }, l)=>{
-            const u = qe.useRef(null);
-            return qe.useImperativeHandle(l, ()=>u.current), qe.useLayoutEffect(()=>void e?.(u.current)), qe.createElement("mesh", Do({
+        return je.forwardRef(({ args: n, children: i, ...s }, l)=>{
+            const u = je.useRef(null);
+            return je.useImperativeHandle(l, ()=>u.current), je.useLayoutEffect(()=>void e?.(u.current)), je.createElement("mesh", Do({
                 ref: u
-            }, s), qe.createElement(t, {
+            }, s), je.createElement(t, {
                 attach: "geometry",
                 args: n
             }), i);
@@ -47339,8 +47339,8 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
                 })
         }));
     function jB(r = {}) {
-        const { autoStart: e = !0, iterations: t } = r, n = qe.useRef(null), [i, s] = qe.useState(!1), [l, u] = qe.useState(!1), [h, p] = qe.useState(1), { nodes: m, edges: x, updateNodePosition: y } = _c(), { settings: _ } = Ws();
-        return qe.useEffect(()=>{
+        const { autoStart: e = !0, iterations: t } = r, n = je.useRef(null), [i, s] = je.useState(!1), [l, u] = je.useState(!1), [h, p] = je.useState(1), { nodes: m, edges: x, updateNodePosition: y } = _c(), { settings: _ } = Ws();
+        return je.useEffect(()=>{
             let R = !0;
             async function D() {
                 try {
@@ -47354,7 +47354,7 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
             return D(), ()=>{
                 R = !1, n.current && (n.current = null);
             };
-        }, []), qe.useEffect(()=>{
+        }, []), je.useEffect(()=>{
             if (!n.current || !i || m.size === 0) return;
             const R = {
                 header: {
@@ -47372,9 +47372,9 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
                         label: {
                             en: D.label
                         },
-                        iri: D.iri || `http://example.org/${D.id}`
+                        iri: D.iri
                     })),
-                property: Array.from(x.values()).map((D)=>({
+                property: Array.from(x.values()).filter((D)=>D.source && D.target).map((D)=>({
                         id: D.id,
                         type: D.type === "objectProperty" ? "owl:ObjectProperty" : "owl:DatatypeProperty"
                     })),
@@ -47403,7 +47403,7 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
             i,
             e,
             t
-        ]), qe.useEffect(()=>{
+        ]), je.useEffect(()=>{
             n.current && (n.current.setLinkDistance(_.linkDistance), n.current.setChargeStrength(_.chargeStrength));
         }, [
             _.linkDistance,
@@ -47458,24 +47458,38 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
         };
     }
     function qB({ node: r }) {
-        const e = qe.useRef(null), [t, n] = qe.useState(!1), { selectNode: i, hoverNode: s, selectedNode: l } = _c(), { settings: u } = Ws(), h = l === r.id, p = r.properties?.instances || 0, m = 1.6, y = (p > 0 ? Math.sqrt(p) * .1 + m : m) * u.nodeScale, _ = ()=>h ? "#67bc0f" : t ? "#8cd0f0" : "#aaccee", E = (M)=>{
-            M.stopPropagation(), i(h ? null : r.id);
-        }, C = (M)=>{
-            M.stopPropagation(), n(!0), s(r.id), document.body.style.cursor = "pointer";
-        }, T = ()=>{
-            n(!1), s(null), document.body.style.cursor = "auto";
+        const e = je.useRef(null), [t, n] = je.useState(!1), [i, s] = je.useState(null), { selectNode: l, hoverNode: u, selectedNode: h } = _c(), { settings: p } = Ws(), m = h === r.id, x = r.properties?.instances || 0, y = 1.6, E = (x > 0 ? Math.sqrt(x) * .1 + y : y) * p.nodeScale, C = ()=>m ? "#67bc0f" : t ? "#8cd0f0" : "#aaccee", T = (U)=>{
+            s({
+                x: U.clientX,
+                y: U.clientY
+            });
+        }, M = (U)=>{
+            if (U.stopPropagation(), i && Math.sqrt(Math.pow(U.clientX - i.x, 2) + Math.pow(U.clientY - i.y, 2)) > 5) {
+                s(null);
+                return;
+            }
+            if (s(null), U.detail === 2 || U.metaKey || U.ctrlKey) {
+                const O = `https://narrativegoldmine.com/#/page/${encodeURIComponent(r.label.toLowerCase())}`;
+                window.open(O, "_blank");
+            } else l(m ? null : r.id);
+        }, R = (U)=>{
+            U.stopPropagation(), n(!0), u(r.id), document.body.style.cursor = "pointer", U.object && U.object.el && (U.object.el.title = `${r.label}
+
+Double-click or Ctrl+Click to open page`);
+        }, D = ()=>{
+            n(!1), u(null), document.body.style.cursor = "auto";
         };
         return Fd(()=>{
             if (e.current && !r.pinned) {
-                const M = new $(r.position.x, r.position.y, r.position.z);
-                e.current.position.lerp(M, .1);
+                const U = new $(r.position.x, r.position.y, r.position.z);
+                e.current.position.lerp(U, .1);
             }
         }), fe.jsxs("group", {
             children: [
                 fe.jsx(Dv, {
                     ref: e,
                     args: [
-                        y,
+                        E,
                         32
                     ],
                     position: [
@@ -47483,18 +47497,19 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
                         r.position.y,
                         r.position.z
                     ],
-                    onClick: E,
-                    onPointerOver: C,
-                    onPointerOut: T,
+                    onPointerDown: T,
+                    onClick: M,
+                    onPointerOver: R,
+                    onPointerOut: D,
                     children: fe.jsx("meshBasicMaterial", {
-                        color: _(),
+                        color: C(),
                         transparent: !0,
                         opacity: r.opacity || 1
                     })
                 }),
                 fe.jsx(Dv, {
                     args: [
-                        y + 2,
+                        E + 2,
                         32
                     ],
                     position: [
@@ -47503,27 +47518,27 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
                         r.position.z - .1
                     ],
                     children: fe.jsx("meshBasicMaterial", {
-                        color: h ? "#67bc0f" : "#333",
+                        color: m ? "#67bc0f" : "#333",
                         transparent: !0,
-                        opacity: h ? .5 : .2,
+                        opacity: m ? .5 : .2,
                         side: ws
                     })
                 }),
-                u.showLabels && fe.jsx(eb, {
+                p.showLabels && fe.jsx(eb, {
                     position: [
                         r.position.x,
-                        r.position.y - y - 3,
+                        r.position.y - E - 3,
                         r.position.z + 1
                     ],
                     fontSize: 1.4,
                     color: "#333",
                     anchorX: "center",
                     anchorY: "middle",
-                    maxWidth: y * 4,
+                    maxWidth: E * 4,
                     textAlign: "center",
                     children: r.label
                 }),
-                u.showNodeDetails && p > 0 && fe.jsx(eb, {
+                p.showNodeDetails && x > 0 && fe.jsx(eb, {
                     position: [
                         r.position.x,
                         r.position.y,
@@ -47533,11 +47548,11 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
                     color: "#666",
                     anchorX: "center",
                     anchorY: "middle",
-                    children: p
+                    children: x
                 }),
-                h && fe.jsx(Dv, {
+                m && fe.jsx(Dv, {
                     args: [
-                        y + 8,
+                        E + 8,
                         32
                     ],
                     position: [
@@ -47552,9 +47567,9 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
                         side: ws
                     })
                 }),
-                t && !h && fe.jsx(Dv, {
+                t && !m && fe.jsx(Dv, {
                     args: [
-                        y + 5,
+                        E + 5,
                         32
                     ],
                     position: [
@@ -47573,7 +47588,7 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
         });
     }
     function YB({ edge: r }) {
-        const { nodes: e, selectedEdge: t } = _c(), { settings: n } = Ws(), i = t === r.id, s = e.get(r.source), l = e.get(r.target), u = qe.useMemo(()=>!s || !l ? null : [
+        const { nodes: e, selectedEdge: t } = _c(), { settings: n } = Ws(), i = t === r.id, s = e.get(r.source), l = e.get(r.target), u = je.useMemo(()=>!s || !l ? null : [
                 new $(s.position.x, s.position.y, s.position.z),
                 new $(l.position.x, l.position.y, l.position.z)
             ], [
@@ -47605,9 +47620,9 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
                 default:
                     return;
             }
-        }, x = qe.useMemo(()=>new $((u[0].x + u[1].x) / 2, (u[0].y + u[1].y) / 2, (u[0].z + u[1].z) / 2 + 1), [
+        }, x = je.useMemo(()=>new $((u[0].x + u[1].x) / 2, (u[0].y + u[1].y) / 2, (u[0].z + u[1].z) / 2 + 1), [
             u
-        ]), y = qe.useMemo(()=>new $().subVectors(u[1], u[0]).normalize(), [
+        ]), y = je.useMemo(()=>new $().subVectors(u[1], u[0]).normalize(), [
             u
         ]);
         return fe.jsxs("group", {
@@ -47811,7 +47826,7 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
         });
     }
     function KB({ onFileLoaded: r }) {
-        const [e, t] = qe.useState(!1), [n, i] = qe.useState(!1), [s, l] = qe.useState(null), u = _c((T)=>T.loadOntology), h = Ws((T)=>T.addNotification), p = qe.useCallback((T)=>{
+        const [e, t] = je.useState(!1), [n, i] = je.useState(!1), [s, l] = je.useState(null), u = _c((T)=>T.loadOntology), h = Ws((T)=>T.addNotification), p = je.useCallback((T)=>{
             try {
                 if (!T.class || !Array.isArray(T.class)) throw new Error("Invalid ontology format: missing class array");
                 return {
@@ -47826,7 +47841,7 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
             } catch (M) {
                 return console.error("Ontology parsing error:", M), null;
             }
-        }, []), m = qe.useCallback(async (T)=>{
+        }, []), m = je.useCallback(async (T)=>{
             i(!0), l(null);
             try {
                 if (!T.name.endsWith(".json")) throw new Error("Only JSON files are currently supported");
@@ -47852,22 +47867,22 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
             p,
             h,
             r
-        ]), x = qe.useCallback((T)=>{
+        ]), x = je.useCallback((T)=>{
             T.preventDefault(), t(!0);
-        }, []), y = qe.useCallback((T)=>{
+        }, []), y = je.useCallback((T)=>{
             T.preventDefault(), t(!1);
-        }, []), _ = qe.useCallback((T)=>{
+        }, []), _ = je.useCallback((T)=>{
             T.preventDefault(), t(!1);
             const M = Array.from(T.dataTransfer.files);
             M.length > 0 && m(M[0]);
         }, [
             m
-        ]), E = qe.useCallback((T)=>{
+        ]), E = je.useCallback((T)=>{
             const M = T.target.files;
             M && M.length > 0 && m(M[0]);
         }, [
             m
-        ]), C = qe.useCallback(async (T)=>{
+        ]), C = je.useCallback(async (T)=>{
             i(!0), l(null);
             try {
                 const M = await fetch(`/ontologies/${T}`);
@@ -48918,8 +48933,8 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
         });
     }
     function sP() {
-        const [r, e] = qe.useState(!1), [t, n] = qe.useState(!0), i = _c((p)=>p.nodes.size), s = _c((p)=>p.loadOntology), l = Ws((p)=>p.addNotification);
-        qe.useEffect(()=>{
+        const [r, e] = je.useState(!1), [t, n] = je.useState(!0), i = _c((p)=>p.nodes.size), s = _c((p)=>p.loadOntology), l = Ws((p)=>p.addNotification);
+        je.useEffect(()=>{
             (async ()=>{
                 try {
                     const m = await fetch("./data/ontology.json");
@@ -48999,7 +49014,7 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
             ]
         });
     }
-    O3.createRoot(document.getElementById("root")).render(fe.jsx(qe.StrictMode, {
+    O3.createRoot(document.getElementById("root")).render(fe.jsx(je.StrictMode, {
         children: fe.jsx(sP, {})
     }));
 })();
