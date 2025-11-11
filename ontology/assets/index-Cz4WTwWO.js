@@ -47357,20 +47357,38 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
         }, []), qe.useEffect(()=>{
             if (!n.current || !i || m.size === 0) return;
             const R = {
-                nodes: Array.from(m.values()).map((D)=>({
+                header: {
+                    title: {
+                        en: "Ontology Graph"
+                    }
+                },
+                namespace: [],
+                class: Array.from(m.values()).map((D)=>({
                         id: D.id,
-                        type: D.type,
-                        label: D.label
-                    })),
-                edges: Array.from(x.values()).map((D)=>({
-                        id: D.id,
-                        source: D.source,
-                        target: D.target,
                         type: D.type
+                    })),
+                classAttribute: Array.from(m.values()).map((D)=>({
+                        id: D.id,
+                        label: {
+                            en: D.label
+                        },
+                        iri: D.iri
+                    })),
+                property: Array.from(x.values()).map((D)=>({
+                        id: D.id,
+                        type: D.type
+                    })),
+                propertyAttribute: Array.from(x.values()).map((D)=>({
+                        id: D.id,
+                        domain: D.source,
+                        range: D.target,
+                        label: {
+                            en: D.label
+                        }
                     }))
             };
             try {
-                console.log(`[useWasmSimulation] Loading ${R.nodes.length} nodes, ${R.edges.length} edges into WASM`), n.current.loadOntology(JSON.stringify(R)), n.current.initSimulation(), e && (t ? (n.current.runSimulation(t), u(!1)) : (u(!0), console.log("[useWasmSimulation] Simulation started")));
+                console.log(`[useWasmSimulation] Loading ${R.class.length} nodes, ${R.property.length} edges into WASM`), n.current.loadOntology(JSON.stringify(R)), n.current.initSimulation(), e && (t ? (n.current.runSimulation(t), u(!1)) : (u(!0), console.log("[useWasmSimulation] Simulation started")));
             } catch (D) {
                 console.error("Failed to load ontology into WASM:", D);
             }
