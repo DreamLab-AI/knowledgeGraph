@@ -47091,12 +47091,12 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
                 n.propertyAttribute?.forEach((s)=>{
                     i.set(s.id, s);
                 }), r((s)=>{
-                    s.nodes.clear(), s.edges.clear(), s.filteredNodes.clear(), s.filteredEdges.clear(), n.class?.forEach((l)=>{
-                        const u = {
-                            id: l.id,
+                    s.nodes.clear(), s.edges.clear(), s.filteredNodes.clear(), s.filteredEdges.clear(), n.class?.forEach((u)=>{
+                        const h = {
+                            id: u.id,
                             type: "class",
-                            label: l.label?.en || l.label?.default || l.id,
-                            iri: l.iri,
+                            label: u.label?.en || u.label?.default || u.id,
+                            iri: u.iri,
                             position: {
                                 x: 0,
                                 y: 0,
@@ -47108,25 +47108,27 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
                                 z: 0
                             },
                             properties: {
-                                instances: l.instances || 0,
-                                attributes: l.attributes || []
+                                instances: u.instances || 0,
+                                attributes: u.attributes || []
                             }
                         };
-                        s.nodes.set(u.id, u), s.filteredNodes.add(u.id);
-                    }), n.property?.forEach((l)=>{
-                        const u = i.get(l.id) || {}, h = l.domain || u.domain, p = l.range || u.range, m = Array.isArray(h) ? h[0] : h, x = Array.isArray(p) ? p[0] : p, y = {
-                            id: l.id,
-                            source: m || "",
-                            target: x || "",
-                            type: l.type === "owl:ObjectProperty" ? "objectProperty" : "datatypeProperty",
-                            label: u.label?.en || u.label?.default || l.label?.en || l.label?.default || l.id,
-                            properties: {
-                                functional: l.functional || u.functional || !1,
-                                inverse: l.inverse || u.inverse
-                            }
-                        };
-                        y.source && y.target && (s.edges.set(y.id, y), s.filteredEdges.add(y.id));
+                        s.nodes.set(h.id, h), s.filteredNodes.add(h.id);
                     });
+                    let l = 0;
+                    n.property?.forEach((u)=>{
+                        const h = i.get(u.id) || {}, p = u.domain || h.domain, m = u.range || h.range, x = Array.isArray(p) ? p[0] : p, y = Array.isArray(m) ? m[0] : m, _ = {
+                            id: u.id,
+                            source: x || "",
+                            target: y || "",
+                            type: u.type === "owl:ObjectProperty" ? "objectProperty" : "datatypeProperty",
+                            label: h.label?.en || h.label?.default || u.label?.en || u.label?.default || u.id,
+                            properties: {
+                                functional: u.functional || h.functional || !1,
+                                inverse: u.inverse || h.inverse
+                            }
+                        };
+                        _.source && _.target && (s.edges.set(_.id, _), s.filteredEdges.add(_.id), l++);
+                    }), console.log(`[useGraphStore] Loaded ${s.nodes.size} nodes, ${l} edges from ${n.property?.length || 0} properties`);
                 }), e().updateStatistics();
             },
             clear: ()=>r((t)=>{
