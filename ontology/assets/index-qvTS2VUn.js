@@ -47092,14 +47092,14 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
                     i.set(s.id, s);
                 }), r((s)=>{
                     s.nodes.clear(), s.edges.clear(), s.filteredNodes.clear(), s.filteredEdges.clear(), n.class?.forEach((u)=>{
-                        const h = {
+                        const p = Math.random() * Math.PI * 2, m = Math.random() * 200, x = {
                             id: u.id,
                             type: "class",
                             label: u.label?.en || u.label?.default || u.id,
                             iri: u.iri,
                             position: {
-                                x: 0,
-                                y: 0,
+                                x: Math.cos(p) * m,
+                                y: Math.sin(p) * m,
                                 z: 0
                             },
                             velocity: {
@@ -47112,7 +47112,7 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
                                 attributes: u.attributes || []
                             }
                         };
-                        s.nodes.set(h.id, h), s.filteredNodes.add(h.id);
+                        s.nodes.set(x.id, x), s.filteredNodes.add(x.id);
                     });
                     let l = 0;
                     n.property?.forEach((u)=>{
