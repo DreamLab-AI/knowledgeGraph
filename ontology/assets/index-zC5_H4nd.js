@@ -47372,19 +47372,24 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
                         label: {
                             en: D.label
                         },
-                        iri: D.iri
+                        iri: D.iri || `http://example.org/${D.id}`
                     })),
                 property: Array.from(x.values()).map((D)=>({
                         id: D.id,
-                        type: D.type
+                        type: D.type === "objectProperty" ? "owl:ObjectProperty" : "owl:DatatypeProperty"
                     })),
-                propertyAttribute: Array.from(x.values()).map((D)=>({
+                propertyAttribute: Array.from(x.values()).filter((D)=>D.source && D.target).map((D)=>({
                         id: D.id,
-                        domain: D.source,
-                        range: D.target,
+                        domain: [
+                            D.source
+                        ],
+                        range: [
+                            D.target
+                        ],
                         label: {
-                            en: D.label
-                        }
+                            en: D.label || D.id
+                        },
+                        iri: `http://example.org/${D.id}`
                     }))
             };
             try {
