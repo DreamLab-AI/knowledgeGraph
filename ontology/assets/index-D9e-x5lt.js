@@ -48710,7 +48710,7 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
         qe.useEffect(()=>{
             (async ()=>{
                 try {
-                    const g = await fetch("/data/ontology.json");
+                    const g = await fetch("./data/ontology.json");
                     if (!g.ok) throw new Error("Default ontology not found");
                     const x = await g.json();
                     if (!x.class || !Array.isArray(x.class)) throw new Error("Invalid ontology format");
