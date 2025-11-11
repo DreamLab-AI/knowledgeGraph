@@ -47096,7 +47096,7 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
                     s.set(l.id, l);
                 }), r((l)=>{
                     l.nodes.clear(), l.edges.clear(), l.filteredNodes.clear(), l.filteredEdges.clear(), n.class?.forEach((p)=>{
-                        const m = i.get(p.id) || {}, x = 1e4, y = Math.random() * Math.PI * 2, _ = Math.random() * x, E = {
+                        const m = i.get(p.id) || {}, x = 500, y = Math.random() * Math.PI * 2, _ = Math.random() * x, E = {
                             id: p.id,
                             type: "class",
                             label: m.label?.en || m.label?.default || p.label?.en || p.label?.default || p.id,
@@ -47242,9 +47242,9 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
         showNodeDetails: !0,
         nodeScale: 1,
         edgeWidth: 2,
-        linkDistance: 100,
-        chargeStrength: -300,
-        gravity: .1,
+        linkDistance: 150,
+        chargeStrength: -500,
+        gravity: .05,
         friction: .9,
         maxFPS: 60,
         lodEnabled: !0,
@@ -47370,7 +47370,7 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
                     }))
             };
             try {
-                n.current.loadOntology(JSON.stringify(R)), n.current.initSimulation(), e && (t ? (n.current.runSimulation(t), u(!1)) : u(!0));
+                console.log(`[useWasmSimulation] Loading ${R.nodes.length} nodes, ${R.edges.length} edges into WASM`), n.current.loadOntology(JSON.stringify(R)), n.current.initSimulation(), e && (t ? (n.current.runSimulation(t), u(!1)) : (u(!0), console.log("[useWasmSimulation] Simulation started")));
             } catch (D) {
                 console.error("Failed to load ontology into WASM:", D);
             }
