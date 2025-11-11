@@ -47088,18 +47088,22 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
             statistics: null,
             loadOntology: (t)=>{
                 const n = JSON.parse(JSON.stringify(t)), i = new Map;
-                n.propertyAttribute?.forEach((s)=>{
-                    i.set(s.id, s);
-                }), r((s)=>{
-                    s.nodes.clear(), s.edges.clear(), s.filteredNodes.clear(), s.filteredEdges.clear(), n.class?.forEach((u)=>{
-                        const p = Math.random() * Math.PI * 2, m = Math.random() * 200, x = {
-                            id: u.id,
+                n.classAttribute?.forEach((l)=>{
+                    i.set(l.id, l);
+                });
+                const s = new Map;
+                n.propertyAttribute?.forEach((l)=>{
+                    s.set(l.id, l);
+                }), r((l)=>{
+                    l.nodes.clear(), l.edges.clear(), l.filteredNodes.clear(), l.filteredEdges.clear(), n.class?.forEach((p)=>{
+                        const m = i.get(p.id) || {}, x = 200, y = Math.random() * Math.PI * 2, _ = Math.random() * x, E = {
+                            id: p.id,
                             type: "class",
-                            label: u.label?.en || u.label?.default || u.id,
-                            iri: u.iri,
+                            label: m.label?.en || m.label?.default || p.label?.en || p.label?.default || p.id,
+                            iri: m.iri || p.iri,
                             position: {
-                                x: Math.cos(p) * m,
-                                y: Math.sin(p) * m,
+                                x: Math.cos(y) * _,
+                                y: Math.sin(y) * _,
                                 z: 0
                             },
                             velocity: {
@@ -47108,27 +47112,32 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
                                 z: 0
                             },
                             properties: {
-                                instances: u.instances || 0,
-                                attributes: u.attributes || []
+                                instances: p.instances || 0,
+                                attributes: p.attributes || []
                             }
                         };
-                        s.nodes.set(x.id, x), s.filteredNodes.add(x.id);
+                        l.nodes.set(E.id, E), l.filteredNodes.add(E.id);
                     });
-                    let l = 0;
-                    n.property?.forEach((u)=>{
-                        const h = i.get(u.id) || {}, p = u.domain || h.domain, m = u.range || h.range, x = Array.isArray(p) ? p[0] : p, y = Array.isArray(m) ? m[0] : m, _ = {
-                            id: u.id,
-                            source: x || "",
-                            target: y || "",
-                            type: u.type === "owl:ObjectProperty" ? "objectProperty" : "datatypeProperty",
-                            label: h.label?.en || h.label?.default || u.label?.en || u.label?.default || u.id,
+                    let u = 0;
+                    n.property?.forEach((p)=>{
+                        const m = s.get(p.id) || {}, x = p.domain || m.domain, y = p.range || m.range, _ = Array.isArray(x) ? x[0] : x, E = Array.isArray(y) ? y[0] : y, C = {
+                            id: p.id,
+                            source: _ || "",
+                            target: E || "",
+                            type: p.type === "owl:ObjectProperty" ? "objectProperty" : "datatypeProperty",
+                            label: m.label?.en || m.label?.default || p.label?.en || p.label?.default || p.id,
                             properties: {
-                                functional: u.functional || h.functional || !1,
-                                inverse: u.inverse || h.inverse
+                                functional: p.functional || m.functional || !1,
+                                inverse: p.inverse || m.inverse
                             }
                         };
-                        _.source && _.target && (s.edges.set(_.id, _), s.filteredEdges.add(_.id), l++);
-                    }), console.log(`[useGraphStore] Loaded ${s.nodes.size} nodes, ${l} edges from ${n.property?.length || 0} properties`);
+                        C.source && C.target && (l.edges.set(C.id, C), l.filteredEdges.add(C.id), u++);
+                    });
+                    const h = Array.from(l.nodes.values()).slice(0, 3);
+                    console.log(`[useGraphStore] Loaded ${l.nodes.size} nodes, ${u} edges from ${n.property?.length || 0} properties`), console.log("[useGraphStore] Sample nodes:", h.map((p)=>({
+                            id: p.id,
+                            label: p.label
+                        })));
                 }), e().updateStatistics();
             },
             clear: ()=>r((t)=>{
@@ -47426,7 +47435,7 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
         };
     }
     function qB({ node: r }) {
-        const e = qe.useRef(null), [t, n] = qe.useState(!1), { selectNode: i, hoverNode: s, selectedNode: l } = _c(), { settings: u } = Ws(), h = l === r.id, p = r.properties?.instances || 0, m = 20, y = (p > 0 ? Math.sqrt(p) * 2 + m : m) * u.nodeScale, _ = ()=>h ? "#67bc0f" : t ? "#8cd0f0" : "#aaccee", E = (M)=>{
+        const e = qe.useRef(null), [t, n] = qe.useState(!1), { selectNode: i, hoverNode: s, selectedNode: l } = _c(), { settings: u } = Ws(), h = l === r.id, p = r.properties?.instances || 0, m = 8, y = (p > 0 ? Math.sqrt(p) * .5 + m : m) * u.nodeScale, _ = ()=>h ? "#67bc0f" : t ? "#8cd0f0" : "#aaccee", E = (M)=>{
             M.stopPropagation(), i(h ? null : r.id);
         }, C = (M)=>{
             M.stopPropagation(), n(!0), s(r.id), document.body.style.cursor = "pointer";
