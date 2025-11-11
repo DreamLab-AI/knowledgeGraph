@@ -47096,7 +47096,7 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
                     s.set(l.id, l);
                 }), r((l)=>{
                     l.nodes.clear(), l.edges.clear(), l.filteredNodes.clear(), l.filteredEdges.clear(), n.class?.forEach((p)=>{
-                        const m = i.get(p.id) || {}, x = 200, y = Math.random() * Math.PI * 2, _ = Math.random() * x, E = {
+                        const m = i.get(p.id) || {}, x = 1e4, y = Math.random() * Math.PI * 2, _ = Math.random() * x, E = {
                             id: p.id,
                             type: "class",
                             label: m.label?.en || m.label?.default || p.label?.en || p.label?.default || p.id,
@@ -47435,7 +47435,7 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
         };
     }
     function qB({ node: r }) {
-        const e = qe.useRef(null), [t, n] = qe.useState(!1), { selectNode: i, hoverNode: s, selectedNode: l } = _c(), { settings: u } = Ws(), h = l === r.id, p = r.properties?.instances || 0, m = 8, y = (p > 0 ? Math.sqrt(p) * .5 + m : m) * u.nodeScale, _ = ()=>h ? "#67bc0f" : t ? "#8cd0f0" : "#aaccee", E = (M)=>{
+        const e = qe.useRef(null), [t, n] = qe.useState(!1), { selectNode: i, hoverNode: s, selectedNode: l } = _c(), { settings: u } = Ws(), h = l === r.id, p = r.properties?.instances || 0, m = 1.6, y = (p > 0 ? Math.sqrt(p) * .1 + m : m) * u.nodeScale, _ = ()=>h ? "#67bc0f" : t ? "#8cd0f0" : "#aaccee", E = (M)=>{
             M.stopPropagation(), i(h ? null : r.id);
         }, C = (M)=>{
             M.stopPropagation(), n(!0), s(r.id), document.body.style.cursor = "pointer";
@@ -47489,10 +47489,10 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
                 u.showLabels && fe.jsx(eb, {
                     position: [
                         r.position.x,
-                        r.position.y - y - 15,
+                        r.position.y - y - 3,
                         r.position.z + 1
                     ],
-                    fontSize: 14,
+                    fontSize: 1.4,
                     color: "#333",
                     anchorX: "center",
                     anchorY: "middle",
@@ -47506,7 +47506,7 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
                         r.position.y,
                         r.position.z + 2
                     ],
-                    fontSize: 10,
+                    fontSize: 1,
                     color: "#666",
                     anchorX: "center",
                     anchorY: "middle",
