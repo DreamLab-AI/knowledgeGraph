@@ -1,5 +1,6 @@
 # 🧠 Narrative Goldmine Knowledge Graph
 
+
 > **A comprehensive, ontology-driven knowledge management system covering AI, blockchain, robotics, and emerging technologies**
 
 [![Live Site](https://img.shields.io/badge/live-narrativegoldmine.com-blue)](https://narrativegoldmine.com)
