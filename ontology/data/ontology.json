@@ -4157,6 +4157,110 @@
     {
       "id": "1002",
       "type": "owl:Class"
+    },
+    {
+      "id": "1003",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1004",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1005",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1006",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1007",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1008",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1009",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1010",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1011",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1012",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1013",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1014",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1015",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1016",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1017",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1018",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1019",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1020",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1021",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1022",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1023",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1024",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1025",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1026",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1027",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1028",
+      "type": "owl:Class"
     }
   ],
   "classAttribute": [
@@ -8617,6 +8721,17 @@
     },
     {
       "id": "406",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AiAugmentedSoftwareEngineering",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "AI-Augmented Software Engineering"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "407",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AiBoard",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8627,7 +8742,7 @@
       }
     },
     {
-      "id": "407",
+      "id": "408",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AiCoreConcepts",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8638,7 +8753,7 @@
       }
     },
     {
-      "id": "408",
+      "id": "409",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AiOffice",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8649,7 +8764,7 @@
       }
     },
     {
-      "id": "409",
+      "id": "410",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AiSystemEuDefinition",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8660,7 +8775,29 @@
       }
     },
     {
-      "id": "410",
+      "id": "411",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AiTrism",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "AI TRiSM"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "412",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AiTrustRiskAndSecurityManagement",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "AI Trust Risk and Security Management"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "413",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Aiethics",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8671,7 +8808,7 @@
       }
     },
     {
-      "id": "411",
+      "id": "414",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Aigovernance",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8682,7 +8819,7 @@
       }
     },
     {
-      "id": "412",
+      "id": "415",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Aisystem",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8693,7 +8830,7 @@
       }
     },
     {
-      "id": "413",
+      "id": "416",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ApiStandard",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8704,7 +8841,18 @@
       }
     },
     {
-      "id": "414",
+      "id": "417",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AugmentedConnectedWorkforce",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Augmented Connected Workforce"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "418",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Augmentedreality",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8715,7 +8863,7 @@
       }
     },
     {
-      "id": "415",
+      "id": "419",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AuthorisedRepresentative",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8726,7 +8874,18 @@
       }
     },
     {
-      "id": "416",
+      "id": "420",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AutonomousAiAgents",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Autonomous AI Agents"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "421",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Autonomousrobot",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8737,7 +8896,7 @@
       }
     },
     {
-      "id": "417",
+      "id": "422",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#BlockchainCoreConcepts",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8748,7 +8907,18 @@
       }
     },
     {
-      "id": "418",
+      "id": "423",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CloudNativeApplications",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Cloud-Native Applications"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "424",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CognitiveLoadMetric",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8759,7 +8929,7 @@
       }
     },
     {
-      "id": "419",
+      "id": "425",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CompleteHriTermsReference",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8770,7 +8940,7 @@
       }
     },
     {
-      "id": "420",
+      "id": "426",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CompleteOntologyIndex",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8781,7 +8951,7 @@
       }
     },
     {
-      "id": "421",
+      "id": "427",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CompletionReport",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8792,7 +8962,18 @@
       }
     },
     {
-      "id": "422",
+      "id": "428",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CompositeAi",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Composite AI"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "429",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Consensusalgorithm",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8803,7 +8984,7 @@
       }
     },
     {
-      "id": "423",
+      "id": "430",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Consensusmechanism",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8814,7 +8995,7 @@
       }
     },
     {
-      "id": "424",
+      "id": "431",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Crosschainbridge",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8825,7 +9006,7 @@
       }
     },
     {
-      "id": "425",
+      "id": "432",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CryptographicSystem",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8836,7 +9017,7 @@
       }
     },
     {
-      "id": "426",
+      "id": "433",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Cryptographichash",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8847,7 +9028,7 @@
       }
     },
     {
-      "id": "427",
+      "id": "434",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Dao",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8858,7 +9039,7 @@
       }
     },
     {
-      "id": "428",
+      "id": "435",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Datapipeline",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8869,7 +9050,7 @@
       }
     },
     {
-      "id": "429",
+      "id": "436",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Decentralizedstorage",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8880,7 +9061,7 @@
       }
     },
     {
-      "id": "430",
+      "id": "437",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Defiprotocol",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8891,7 +9072,7 @@
       }
     },
     {
-      "id": "431",
+      "id": "438",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DeliveryManifest",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8902,7 +9083,7 @@
       }
     },
     {
-      "id": "432",
+      "id": "439",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Deployer",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8913,7 +9094,29 @@
       }
     },
     {
-      "id": "433",
+      "id": "440",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalHumans",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Digital Humans"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "441",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalTwinOfTheCustomer",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Digital Twin of the Customer"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "442",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Digitalavatar",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8924,7 +9127,7 @@
       }
     },
     {
-      "id": "434",
+      "id": "443",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Distributor",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8935,7 +9138,7 @@
       }
     },
     {
-      "id": "435",
+      "id": "444",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EconomicMechanism",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8946,7 +9149,7 @@
       }
     },
     {
-      "id": "436",
+      "id": "445",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainGovernanceEconomy",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8957,7 +9160,7 @@
       }
     },
     {
-      "id": "437",
+      "id": "446",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainGovernanceSecurity",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8968,7 +9171,7 @@
       }
     },
     {
-      "id": "438",
+      "id": "447",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainGovernanceSociety",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8979,7 +9182,7 @@
       }
     },
     {
-      "id": "439",
+      "id": "448",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainHumanInterface",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -8990,7 +9193,7 @@
       }
     },
     {
-      "id": "440",
+      "id": "449",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainHumanInterfaceGovernance",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9001,7 +9204,7 @@
       }
     },
     {
-      "id": "441",
+      "id": "450",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainHumanInterfaceUx",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9012,7 +9215,7 @@
       }
     },
     {
-      "id": "442",
+      "id": "451",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainIdentityTrust",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9023,7 +9226,7 @@
       }
     },
     {
-      "id": "443",
+      "id": "452",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainImmersiveExperiences",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9034,7 +9237,7 @@
       }
     },
     {
-      "id": "444",
+      "id": "453",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainInfrastructure",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9045,7 +9248,7 @@
       }
     },
     {
-      "id": "445",
+      "id": "454",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainInfrastructureData",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9056,7 +9259,7 @@
       }
     },
     {
-      "id": "446",
+      "id": "455",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainInfrastructureGovernance",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9067,7 +9270,7 @@
       }
     },
     {
-      "id": "447",
+      "id": "456",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainInfrastructureImmersive",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9078,7 +9281,7 @@
       }
     },
     {
-      "id": "448",
+      "id": "457",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainInfrastructureInterop",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9089,7 +9292,7 @@
       }
     },
     {
-      "id": "449",
+      "id": "458",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainInfrastructureSecurity",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9100,7 +9303,7 @@
       }
     },
     {
-      "id": "450",
+      "id": "459",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainInteroperability",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9111,7 +9314,7 @@
       }
     },
     {
-      "id": "451",
+      "id": "460",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainInteroperabilityCreative",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9122,7 +9325,7 @@
       }
     },
     {
-      "id": "452",
+      "id": "461",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainRealityCapture",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9133,7 +9336,7 @@
       }
     },
     {
-      "id": "453",
+      "id": "462",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainRealityCaptureCreative",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9144,7 +9347,7 @@
       }
     },
     {
-      "id": "454",
+      "id": "463",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainSecurityPrivacy",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9155,7 +9358,7 @@
       }
     },
     {
-      "id": "455",
+      "id": "464",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainVirtualEconomy",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9166,7 +9369,7 @@
       }
     },
     {
-      "id": "456",
+      "id": "465",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainVirtualSociety",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9177,7 +9380,7 @@
       }
     },
     {
-      "id": "457",
+      "id": "466",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Etsidomainclassification",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9188,7 +9391,7 @@
       }
     },
     {
-      "id": "458",
+      "id": "467",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Explainableai",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9199,7 +9402,7 @@
       }
     },
     {
-      "id": "459",
+      "id": "468",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Federatedlearning",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9210,7 +9413,7 @@
       }
     },
     {
-      "id": "460",
+      "id": "469",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#FileListing",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9221,7 +9424,7 @@
       }
     },
     {
-      "id": "461",
+      "id": "470",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#GeneralPurposeAiModel",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9232,7 +9435,18 @@
       }
     },
     {
-      "id": "462",
+      "id": "471",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#GenerativeAiEngineering",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Generative AI Engineering"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "472",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Generativemodel",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9243,7 +9457,7 @@
       }
     },
     {
-      "id": "463",
+      "id": "473",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Hapticfeedback",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9254,7 +9468,7 @@
       }
     },
     {
-      "id": "464",
+      "id": "474",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#HardwarePlatformAgnostic",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9265,7 +9479,7 @@
       }
     },
     {
-      "id": "465",
+      "id": "475",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#HriSafetyTermsSummary",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9276,7 +9490,7 @@
       }
     },
     {
-      "id": "466",
+      "id": "476",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Humanrobotinteraction",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9287,7 +9501,18 @@
       }
     },
     {
-      "id": "467",
+      "id": "477",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ImmersiveWorkspaces",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Immersive Workspaces"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "478",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ImplementationExamples",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9298,7 +9523,7 @@
       }
     },
     {
-      "id": "468",
+      "id": "479",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ImplementationSummary",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9309,7 +9534,7 @@
       }
     },
     {
-      "id": "469",
+      "id": "480",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Importer",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9320,7 +9545,7 @@
       }
     },
     {
-      "id": "470",
+      "id": "481",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Index",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9331,7 +9556,18 @@
       }
     },
     {
-      "id": "471",
+      "id": "482",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#IndustryCloudPlatforms",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Industry Cloud Platforms"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "483",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Layer2",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9342,7 +9578,7 @@
       }
     },
     {
-      "id": "472",
+      "id": "484",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Layer2scaling",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9353,7 +9589,18 @@
       }
     },
     {
-      "id": "473",
+      "id": "485",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#LeedsDigitalHub",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Leeds Digital Hub"
+      },
+      "comment": {
+        "en": "Leeds' digital technology sector focusing on health technology innovation, financial services technology, and digital creative industries."
+      }
+    },
+    {
+      "id": "486",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#LimitedRiskAi",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9364,7 +9611,18 @@
       }
     },
     {
-      "id": "474",
+      "id": "487",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#LiverpoolSmartCities",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Liverpool Smart Cities"
+      },
+      "comment": {
+        "en": "Liverpool's smart cities initiative and technology sector focusing on Internet of Things, urban technology, and digital infrastructure."
+      }
+    },
+    {
+      "id": "488",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Machinelearning",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9375,7 +9633,7 @@
       }
     },
     {
-      "id": "475",
+      "id": "489",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#MakingAvailable",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9386,7 +9644,18 @@
       }
     },
     {
-      "id": "476",
+      "id": "490",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ManchesterTechCluster",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Manchester Tech Cluster"
+      },
+      "comment": {
+        "en": "Manchester's thriving technology ecosystem centred on MediaCityUK, including AI, digital innovation, and financial technology sectors."
+      }
+    },
+    {
+      "id": "491",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Manipulatorarm",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9397,7 +9666,7 @@
       }
     },
     {
-      "id": "477",
+      "id": "492",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#MarketSurveillanceAuthority",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9408,7 +9677,7 @@
       }
     },
     {
-      "id": "478",
+      "id": "493",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#MetaverseCoreConcepts",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9419,7 +9688,18 @@
       }
     },
     {
-      "id": "479",
+      "id": "494",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#MetaverseNavigationSystems",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Metaverse Navigation Systems"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "495",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#MinimalRiskAi",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9430,7 +9710,18 @@
       }
     },
     {
-      "id": "480",
+      "id": "496",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#MultimodalAi",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Multimodal AI"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "497",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#NationalCompetentAuthority",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9441,7 +9732,7 @@
       }
     },
     {
-      "id": "481",
+      "id": "498",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Neuralnetwork",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9452,7 +9743,40 @@
       }
     },
     {
-      "id": "482",
+      "id": "499",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#NeuromorphicComputing",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Neuromorphic Computing"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "500",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#NewcastleAiHealthInnovation",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Newcastle AI & Health Innovation"
+      },
+      "comment": {
+        "en": "Newcastle's technology ecosystem centred on artificial intelligence and health innovation, anchored by research institutions and the Great North Snowdome."
+      }
+    },
+    {
+      "id": "501",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#NorthEnglandInnovationCorridor",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "North England Innovation Corridor"
+      },
+      "comment": {
+        "en": "The collaborative innovation corridor spanning Manchester, Leeds, Liverpool, Sheffield, and Newcastle, forming the Northern Powerhouse technology ecosystem."
+      }
+    },
+    {
+      "id": "502",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#NotifiedBody",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9463,7 +9787,7 @@
       }
     },
     {
-      "id": "483",
+      "id": "503",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#OntologyPropertyDefinitions",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9474,7 +9798,7 @@
       }
     },
     {
-      "id": "484",
+      "id": "504",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Ontologydefinition",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9485,7 +9809,7 @@
       }
     },
     {
-      "id": "485",
+      "id": "505",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#OwnershipFreedomDistributed",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9496,7 +9820,7 @@
       }
     },
     {
-      "id": "486",
+      "id": "506",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Pathplanning",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9507,7 +9831,7 @@
       }
     },
     {
-      "id": "487",
+      "id": "507",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Persistence",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9518,7 +9842,7 @@
       }
     },
     {
-      "id": "488",
+      "id": "508",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#PlacingOnTheMarket",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9529,7 +9853,18 @@
       }
     },
     {
-      "id": "489",
+      "id": "509",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#PlatformEngineering",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Platform Engineering"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "510",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Portability",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9540,7 +9875,18 @@
       }
     },
     {
-      "id": "490",
+      "id": "511",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#PostquantumCryptography",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Postquantum Cryptography"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "512",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Privateblockchain",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9551,7 +9897,7 @@
       }
     },
     {
-      "id": "491",
+      "id": "513",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ProhibitedAiPractice",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9562,7 +9908,7 @@
       }
     },
     {
-      "id": "492",
+      "id": "514",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Proofofstake",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9573,7 +9919,7 @@
       }
     },
     {
-      "id": "493",
+      "id": "515",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Proofofwork",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9584,7 +9930,7 @@
       }
     },
     {
-      "id": "494",
+      "id": "516",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Provider",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9595,7 +9941,7 @@
       }
     },
     {
-      "id": "495",
+      "id": "517",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Publicblockchain",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9606,7 +9952,18 @@
       }
     },
     {
-      "id": "496",
+      "id": "518",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#QuantumAi",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Quantum AI"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "519",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#RedressProcedure",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9617,7 +9974,7 @@
       }
     },
     {
-      "id": "497",
+      "id": "520",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Reinforcementlearning",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9628,7 +9985,7 @@
       }
     },
     {
-      "id": "498",
+      "id": "521",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ResearchSummary",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9639,7 +9996,7 @@
       }
     },
     {
-      "id": "499",
+      "id": "522",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ResilienceMetric",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9650,7 +10007,7 @@
       }
     },
     {
-      "id": "500",
+      "id": "523",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#RoboticsCoreConcepts",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9661,7 +10018,7 @@
       }
     },
     {
-      "id": "501",
+      "id": "524",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Robotlearning",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9672,7 +10029,7 @@
       }
     },
     {
-      "id": "502",
+      "id": "525",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SecurityAuditGuide",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9683,7 +10040,7 @@
       }
     },
     {
-      "id": "503",
+      "id": "526",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Sensorfusion",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9694,7 +10051,7 @@
       }
     },
     {
-      "id": "504",
+      "id": "527",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SeriousIncident",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9705,7 +10062,18 @@
       }
     },
     {
-      "id": "505",
+      "id": "528",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SheffieldAdvancedManufacturing",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Sheffield Advanced Manufacturing"
+      },
+      "comment": {
+        "en": "Sheffield's advanced manufacturing hub specialising in materials science, robotics, and Industry 4.0 technologies."
+      }
+    },
+    {
+      "id": "529",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Smartcontract",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9716,7 +10084,7 @@
       }
     },
     {
-      "id": "506",
+      "id": "530",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Socialvr",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9727,7 +10095,7 @@
       }
     },
     {
-      "id": "507",
+      "id": "531",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Softrobotics",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9738,7 +10106,7 @@
       }
     },
     {
-      "id": "508",
+      "id": "532",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SparqlExamples",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9749,7 +10117,7 @@
       }
     },
     {
-      "id": "509",
+      "id": "533",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Spatialcomputing",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9760,7 +10128,7 @@
       }
     },
     {
-      "id": "510",
+      "id": "534",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Summary",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9771,7 +10139,18 @@
       }
     },
     {
-      "id": "511",
+      "id": "535",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SustainableTechnology",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Sustainable Technology"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "536",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Swarmrobotics",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9782,7 +10161,7 @@
       }
     },
     {
-      "id": "512",
+      "id": "537",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SystemicRisk",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9793,7 +10172,7 @@
       }
     },
     {
-      "id": "513",
+      "id": "538",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Teleoperation",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9804,7 +10183,7 @@
       }
     },
     {
-      "id": "514",
+      "id": "539",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#TermIndex",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9815,7 +10194,7 @@
       }
     },
     {
-      "id": "515",
+      "id": "540",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#TraceabilityMechanism",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9826,7 +10205,7 @@
       }
     },
     {
-      "id": "516",
+      "id": "541",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ValidationReport",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9837,7 +10216,7 @@
       }
     },
     {
-      "id": "517",
+      "id": "542",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Verification",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9848,7 +10227,7 @@
       }
     },
     {
-      "id": "518",
+      "id": "543",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#VerificationReport",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9859,7 +10238,7 @@
       }
     },
     {
-      "id": "519",
+      "id": "544",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Virtualasset",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9870,7 +10249,7 @@
       }
     },
     {
-      "id": "520",
+      "id": "545",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Virtualeconomy",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9881,7 +10260,7 @@
       }
     },
     {
-      "id": "521",
+      "id": "546",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Virtualmachine",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9892,7 +10271,7 @@
       }
     },
     {
-      "id": "522",
+      "id": "547",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Virtualworld",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9903,7 +10282,7 @@
       }
     },
     {
-      "id": "523",
+      "id": "548",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#VisioninglabPropertyCrosswalk",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9914,7 +10293,7 @@
       }
     },
     {
-      "id": "524",
+      "id": "549",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#WebxrApi",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9925,7 +10304,18 @@
       }
     },
     {
-      "id": "525",
+      "id": "550",
+      "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#WirelessValueRealization",
+      "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
+      "label": {
+        "en": "Wireless Value Realization"
+      },
+      "comment": {
+        "en": "[Generated from Gartner emerging tech analysis]"
+      }
+    },
+    {
+      "id": "551",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#WorldInstance",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9936,7 +10326,7 @@
       }
     },
     {
-      "id": "526",
+      "id": "552",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Zeroknowledge",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9947,7 +10337,7 @@
       }
     },
     {
-      "id": "527",
+      "id": "553",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#dSceneExchangeProtocolSxp",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -9958,7 +10348,7 @@
       }
     },
     {
-      "id": "528",
+      "id": "554",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0006ServiceRobot",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -9969,7 +10359,7 @@
       }
     },
     {
-      "id": "529",
+      "id": "555",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0007CollaborativeRobot",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -9980,7 +10370,7 @@
       }
     },
     {
-      "id": "530",
+      "id": "556",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0008AutonomousRobot",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -9991,7 +10381,7 @@
       }
     },
     {
-      "id": "531",
+      "id": "557",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0009TeleoperatedRobot",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10002,7 +10392,7 @@
       }
     },
     {
-      "id": "532",
+      "id": "558",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0010AerialRobot",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10013,7 +10403,7 @@
       }
     },
     {
-      "id": "533",
+      "id": "559",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0011UnderwaterRobot",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10024,7 +10414,7 @@
       }
     },
     {
-      "id": "534",
+      "id": "560",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0012WheeledMobileRobot",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10035,7 +10425,7 @@
       }
     },
     {
-      "id": "535",
+      "id": "561",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0013LeggedRobot",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10046,7 +10436,7 @@
       }
     },
     {
-      "id": "536",
+      "id": "562",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0014SurgicalRobot",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10057,7 +10447,7 @@
       }
     },
     {
-      "id": "537",
+      "id": "563",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0015AgriculturalRobot",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10068,7 +10458,7 @@
       }
     },
     {
-      "id": "538",
+      "id": "564",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0016MedicalRobot",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10079,7 +10469,7 @@
       }
     },
     {
-      "id": "539",
+      "id": "565",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0017RescueRobot",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10090,7 +10480,7 @@
       }
     },
     {
-      "id": "540",
+      "id": "566",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0018InspectionRobot",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10101,7 +10491,7 @@
       }
     },
     {
-      "id": "541",
+      "id": "567",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0019ExoskeletonRobot",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10112,7 +10502,7 @@
       }
     },
     {
-      "id": "542",
+      "id": "568",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0020SwarmRobot",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10123,7 +10513,7 @@
       }
     },
     {
-      "id": "543",
+      "id": "569",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0021RobotKinematics",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10134,7 +10524,7 @@
       }
     },
     {
-      "id": "544",
+      "id": "570",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0022RobotDynamics",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10145,7 +10535,7 @@
       }
     },
     {
-      "id": "545",
+      "id": "571",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0023DegreesOfFreedom",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10156,7 +10546,7 @@
       }
     },
     {
-      "id": "546",
+      "id": "572",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0024Workspace",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10167,7 +10557,7 @@
       }
     },
     {
-      "id": "547",
+      "id": "573",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0025EndEffector",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10178,7 +10568,7 @@
       }
     },
     {
-      "id": "548",
+      "id": "574",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0026RobotJoint",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10189,7 +10579,7 @@
       }
     },
     {
-      "id": "549",
+      "id": "575",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0027RobotLink",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10200,7 +10590,7 @@
       }
     },
     {
-      "id": "550",
+      "id": "576",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0028ForwardKinematics",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10211,7 +10601,7 @@
       }
     },
     {
-      "id": "551",
+      "id": "577",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0029InverseKinematics",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10222,7 +10612,7 @@
       }
     },
     {
-      "id": "552",
+      "id": "578",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0030JacobianMatrix",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10233,7 +10623,7 @@
       }
     },
     {
-      "id": "553",
+      "id": "579",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0031Singularity",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10244,7 +10634,7 @@
       }
     },
     {
-      "id": "554",
+      "id": "580",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0032Manipulability",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10255,7 +10645,7 @@
       }
     },
     {
-      "id": "555",
+      "id": "581",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0033Payload",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10266,7 +10656,7 @@
       }
     },
     {
-      "id": "556",
+      "id": "582",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0034Repeatability",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10277,7 +10667,7 @@
       }
     },
     {
-      "id": "557",
+      "id": "583",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0035Accuracy",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10288,7 +10678,7 @@
       }
     },
     {
-      "id": "558",
+      "id": "584",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0036Resolution",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10299,7 +10689,7 @@
       }
     },
     {
-      "id": "559",
+      "id": "585",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0037Dexterity",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10310,7 +10700,7 @@
       }
     },
     {
-      "id": "560",
+      "id": "586",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0038Compliance",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10321,7 +10711,7 @@
       }
     },
     {
-      "id": "561",
+      "id": "587",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0039Stiffness",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10332,7 +10722,7 @@
       }
     },
     {
-      "id": "562",
+      "id": "588",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0040Backlash",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10343,7 +10733,7 @@
       }
     },
     {
-      "id": "563",
+      "id": "589",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0041Inertia",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10354,7 +10744,7 @@
       }
     },
     {
-      "id": "564",
+      "id": "590",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0042Friction",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10365,7 +10755,7 @@
       }
     },
     {
-      "id": "565",
+      "id": "591",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0043Torque",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10376,7 +10766,7 @@
       }
     },
     {
-      "id": "566",
+      "id": "592",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0044Velocity",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10387,7 +10777,7 @@
       }
     },
     {
-      "id": "567",
+      "id": "593",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0045Acceleration",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10398,7 +10788,7 @@
       }
     },
     {
-      "id": "568",
+      "id": "594",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0046RobotControl",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10409,7 +10799,7 @@
       }
     },
     {
-      "id": "569",
+      "id": "595",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0047FeedbackControl",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10420,7 +10810,7 @@
       }
     },
     {
-      "id": "570",
+      "id": "596",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0048PidController",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10431,7 +10821,7 @@
       }
     },
     {
-      "id": "571",
+      "id": "597",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0049MotionPlanning",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10442,7 +10832,7 @@
       }
     },
     {
-      "id": "572",
+      "id": "598",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0050PathPlanning",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10453,7 +10843,7 @@
       }
     },
     {
-      "id": "573",
+      "id": "599",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0051TrajectoryPlanning",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10464,7 +10854,7 @@
       }
     },
     {
-      "id": "574",
+      "id": "600",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0052CollisionAvoidance",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10475,7 +10865,7 @@
       }
     },
     {
-      "id": "575",
+      "id": "601",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0053ForceControl",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10486,7 +10876,7 @@
       }
     },
     {
-      "id": "576",
+      "id": "602",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0054PositionControl",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10497,7 +10887,7 @@
       }
     },
     {
-      "id": "577",
+      "id": "603",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0055VelocityControl",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10508,7 +10898,7 @@
       }
     },
     {
-      "id": "578",
+      "id": "604",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0056ImpedanceControl",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10519,7 +10909,7 @@
       }
     },
     {
-      "id": "579",
+      "id": "605",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0057AdmittanceControl",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10530,7 +10920,7 @@
       }
     },
     {
-      "id": "580",
+      "id": "606",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0058AdaptiveControl",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10541,7 +10931,7 @@
       }
     },
     {
-      "id": "581",
+      "id": "607",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0059RobustControl",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10552,7 +10942,7 @@
       }
     },
     {
-      "id": "582",
+      "id": "608",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0060OptimalControl",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10563,7 +10953,7 @@
       }
     },
     {
-      "id": "583",
+      "id": "609",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0061NonlinearControl",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10574,7 +10964,7 @@
       }
     },
     {
-      "id": "584",
+      "id": "610",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0062ModelPredictiveControl",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10585,7 +10975,7 @@
       }
     },
     {
-      "id": "585",
+      "id": "611",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0063SlidingModeControl",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10596,7 +10986,7 @@
       }
     },
     {
-      "id": "586",
+      "id": "612",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0064ComputedTorqueControl",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10607,7 +10997,7 @@
       }
     },
     {
-      "id": "587",
+      "id": "613",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0065VisualServoing",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10618,7 +11008,7 @@
       }
     },
     {
-      "id": "588",
+      "id": "614",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0066RobotSensor",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10629,7 +11019,7 @@
       }
     },
     {
-      "id": "589",
+      "id": "615",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0067ForceTorqueSensor",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10640,7 +11030,7 @@
       }
     },
     {
-      "id": "590",
+      "id": "616",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0068VisionSystem",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10651,7 +11041,7 @@
       }
     },
     {
-      "id": "591",
+      "id": "617",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0069Lidar",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10662,7 +11052,7 @@
       }
     },
     {
-      "id": "592",
+      "id": "618",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0070TactileSensing",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10673,7 +11063,7 @@
       }
     },
     {
-      "id": "593",
+      "id": "619",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0071ProximitySensor",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10684,7 +11074,7 @@
       }
     },
     {
-      "id": "594",
+      "id": "620",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0072Encoder",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10695,7 +11085,7 @@
       }
     },
     {
-      "id": "595",
+      "id": "621",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0073Imu",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10706,7 +11096,7 @@
       }
     },
     {
-      "id": "596",
+      "id": "622",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0074Gps",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10717,7 +11107,7 @@
       }
     },
     {
-      "id": "597",
+      "id": "623",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0075RangeFinder",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10728,7 +11118,7 @@
       }
     },
     {
-      "id": "598",
+      "id": "624",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0076Camera",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10739,7 +11129,7 @@
       }
     },
     {
-      "id": "599",
+      "id": "625",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0077DepthCamera",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10750,7 +11140,7 @@
       }
     },
     {
-      "id": "600",
+      "id": "626",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0078InfraredSensor",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10761,7 +11151,7 @@
       }
     },
     {
-      "id": "601",
+      "id": "627",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0079UltrasonicSensor",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10772,7 +11162,7 @@
       }
     },
     {
-      "id": "602",
+      "id": "628",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0080Radar",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10783,7 +11173,7 @@
       }
     },
     {
-      "id": "603",
+      "id": "629",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0081Gyroscope",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10794,7 +11184,7 @@
       }
     },
     {
-      "id": "604",
+      "id": "630",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0082Accelerometer",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10805,7 +11195,7 @@
       }
     },
     {
-      "id": "605",
+      "id": "631",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0083CurrentSensor",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10816,7 +11206,7 @@
       }
     },
     {
-      "id": "606",
+      "id": "632",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0084TemperatureSensor",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10827,7 +11217,7 @@
       }
     },
     {
-      "id": "607",
+      "id": "633",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0085PressureSensor",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10838,7 +11228,7 @@
       }
     },
     {
-      "id": "608",
+      "id": "634",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0086RobotSafety",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10849,7 +11239,7 @@
       }
     },
     {
-      "id": "609",
+      "id": "635",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0087SafetyStandard",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10860,7 +11250,7 @@
       }
     },
     {
-      "id": "610",
+      "id": "636",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0088Iso13482Compliance",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10871,7 +11261,7 @@
       }
     },
     {
-      "id": "611",
+      "id": "637",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0089RiskAssessment",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10882,7 +11272,7 @@
       }
     },
     {
-      "id": "612",
+      "id": "638",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0090EmergencyStop",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10893,7 +11283,7 @@
       }
     },
     {
-      "id": "613",
+      "id": "639",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0091SafetyRatedMonitoredStop",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10904,7 +11294,7 @@
       }
     },
     {
-      "id": "614",
+      "id": "640",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0092ProtectiveStop",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10915,7 +11305,7 @@
       }
     },
     {
-      "id": "615",
+      "id": "641",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0093SpeedLimitation",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10926,7 +11316,7 @@
       }
     },
     {
-      "id": "616",
+      "id": "642",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0094PowerAndForceLimiting",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10937,7 +11327,7 @@
       }
     },
     {
-      "id": "617",
+      "id": "643",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0095SafetyZone",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10948,7 +11338,7 @@
       }
     },
     {
-      "id": "618",
+      "id": "644",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0096Safeguarding",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10959,7 +11349,7 @@
       }
     },
     {
-      "id": "619",
+      "id": "645",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0097LightCurtain",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10970,7 +11360,7 @@
       }
     },
     {
-      "id": "620",
+      "id": "646",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0098SafetyLaserScanner",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10981,7 +11371,7 @@
       }
     },
     {
-      "id": "621",
+      "id": "647",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0099SafetyPlc",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -10992,7 +11382,7 @@
       }
     },
     {
-      "id": "622",
+      "id": "648",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0100SafetyIntegrityLevel",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -11003,7 +11393,7 @@
       }
     },
     {
-      "id": "623",
+      "id": "649",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0101PerformanceLevel",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -11014,7 +11404,7 @@
       }
     },
     {
-      "id": "624",
+      "id": "650",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0102FunctionalSafety",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -11025,7 +11415,7 @@
       }
     },
     {
-      "id": "625",
+      "id": "651",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0103CollaborativeOperation",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -11036,7 +11426,7 @@
       }
     },
     {
-      "id": "626",
+      "id": "652",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0104HandGuiding",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -11047,7 +11437,7 @@
       }
     },
     {
-      "id": "627",
+      "id": "653",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Rb0105SpeedAndSeparationMonitoring",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -11058,7 +11448,7 @@
       }
     },
     {
-      "id": "628",
+      "id": "654",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#ClinicalDecisionSupport",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11069,7 +11459,7 @@
       }
     },
     {
-      "id": "629",
+      "id": "655",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#Explainability",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11080,7 +11470,7 @@
       }
     },
     {
-      "id": "630",
+      "id": "656",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#HumanOversight",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11091,7 +11481,7 @@
       }
     },
     {
-      "id": "631",
+      "id": "657",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#MedicalAi",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11102,7 +11492,7 @@
       }
     },
     {
-      "id": "632",
+      "id": "658",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#MembershipInference",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11113,7 +11503,7 @@
       }
     },
     {
-      "id": "633",
+      "id": "659",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#ModelExtraction",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11124,7 +11514,7 @@
       }
     },
     {
-      "id": "634",
+      "id": "660",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#ModelInversion",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11135,7 +11525,7 @@
       }
     },
     {
-      "id": "635",
+      "id": "661",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#ObjectDetection",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11146,7 +11536,7 @@
       }
     },
     {
-      "id": "636",
+      "id": "662",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#TreatmentPlanningAi",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11157,7 +11547,7 @@
       }
     },
     {
-      "id": "637",
+      "id": "663",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#AccountModel",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11168,7 +11558,7 @@
       }
     },
     {
-      "id": "638",
+      "id": "664",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#ArchivalNode",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11179,7 +11569,7 @@
       }
     },
     {
-      "id": "639",
+      "id": "665",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Attack",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11190,7 +11580,7 @@
       }
     },
     {
-      "id": "640",
+      "id": "666",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#BlockHeader",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11201,7 +11591,7 @@
       }
     },
     {
-      "id": "641",
+      "id": "667",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#BlockHeight",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11212,7 +11602,7 @@
       }
     },
     {
-      "id": "642",
+      "id": "668",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#BlockPropagationTime",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11223,7 +11613,7 @@
       }
     },
     {
-      "id": "643",
+      "id": "669",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#BlockSize",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11234,7 +11624,7 @@
       }
     },
     {
-      "id": "644",
+      "id": "670",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#BlockTime",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11245,7 +11635,7 @@
       }
     },
     {
-      "id": "645",
+      "id": "671",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#BootstrapNode",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11256,7 +11646,7 @@
       }
     },
     {
-      "id": "646",
+      "id": "672",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#ChainReorganization",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11267,7 +11657,7 @@
       }
     },
     {
-      "id": "647",
+      "id": "673",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#ChainState",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11278,7 +11668,7 @@
       }
     },
     {
-      "id": "648",
+      "id": "674",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Coin",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11289,7 +11679,7 @@
       }
     },
     {
-      "id": "649",
+      "id": "675",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#DifficultyAdjustment",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11300,7 +11690,7 @@
       }
     },
     {
-      "id": "650",
+      "id": "676",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#DoubleSpending",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11311,7 +11701,7 @@
       }
     },
     {
-      "id": "651",
+      "id": "677",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#EclipseAttack",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11322,7 +11712,7 @@
       }
     },
     {
-      "id": "652",
+      "id": "678",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Finality",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11333,7 +11723,7 @@
       }
     },
     {
-      "id": "653",
+      "id": "679",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#FullNode",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11344,7 +11734,7 @@
       }
     },
     {
-      "id": "654",
+      "id": "680",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Gas",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11355,7 +11745,7 @@
       }
     },
     {
-      "id": "655",
+      "id": "681",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#GenesisBlock",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11366,7 +11756,7 @@
       }
     },
     {
-      "id": "656",
+      "id": "682",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#GossipProtocol",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11377,7 +11767,7 @@
       }
     },
     {
-      "id": "657",
+      "id": "683",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Halving",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11388,7 +11778,7 @@
       }
     },
     {
-      "id": "658",
+      "id": "684",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Immutability",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11399,7 +11789,7 @@
       }
     },
     {
-      "id": "659",
+      "id": "685",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Input",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11410,7 +11800,7 @@
       }
     },
     {
-      "id": "660",
+      "id": "686",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#NativeToken",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11421,7 +11811,7 @@
       }
     },
     {
-      "id": "661",
+      "id": "687",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Node",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11432,7 +11822,7 @@
       }
     },
     {
-      "id": "662",
+      "id": "688",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Opcodes",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11443,7 +11833,7 @@
       }
     },
     {
-      "id": "663",
+      "id": "689",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#OrphanBlock",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11454,7 +11844,7 @@
       }
     },
     {
-      "id": "664",
+      "id": "690",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Output",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11465,7 +11855,7 @@
       }
     },
     {
-      "id": "665",
+      "id": "691",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#PartitionAttack",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11476,7 +11866,7 @@
       }
     },
     {
-      "id": "666",
+      "id": "692",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#PeerDiscovery",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11487,7 +11877,7 @@
       }
     },
     {
-      "id": "667",
+      "id": "693",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#PermissionedNetwork",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11498,7 +11888,7 @@
       }
     },
     {
-      "id": "668",
+      "id": "694",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#PermissionlessNetwork",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11509,7 +11899,7 @@
       }
     },
     {
-      "id": "669",
+      "id": "695",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#ProofOfWork",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11520,7 +11910,7 @@
       }
     },
     {
-      "id": "670",
+      "id": "696",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#PrunedNode",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11531,7 +11921,7 @@
       }
     },
     {
-      "id": "671",
+      "id": "697",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#SelfishMining",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11542,7 +11932,7 @@
       }
     },
     {
-      "id": "672",
+      "id": "698",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#SybilAttack",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11553,7 +11943,7 @@
       }
     },
     {
-      "id": "673",
+      "id": "699",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Term",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11564,7 +11954,7 @@
       }
     },
     {
-      "id": "674",
+      "id": "700",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#TransactionConfirmation",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11575,7 +11965,7 @@
       }
     },
     {
-      "id": "675",
+      "id": "701",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#ValidatorNode",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11586,7 +11976,7 @@
       }
     },
     {
-      "id": "676",
+      "id": "702",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CloudRenderingService",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -11597,7 +11987,7 @@
       }
     },
     {
-      "id": "677",
+      "id": "703",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainDataManagement",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -11608,7 +11998,7 @@
       }
     },
     {
-      "id": "678",
+      "id": "704",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ImmersiveExperience",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -11619,7 +12009,7 @@
       }
     },
     {
-      "id": "679",
+      "id": "705",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Nft",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -11630,7 +12020,7 @@
       }
     },
     {
-      "id": "680",
+      "id": "706",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Oracle",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -11641,7 +12031,7 @@
       }
     },
     {
-      "id": "681",
+      "id": "707",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Term",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -11652,7 +12042,7 @@
       }
     },
     {
-      "id": "682",
+      "id": "708",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Token",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -11663,7 +12053,7 @@
       }
     },
     {
-      "id": "683",
+      "id": "709",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#AlgorithmicAccountability",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11674,7 +12064,7 @@
       }
     },
     {
-      "id": "684",
+      "id": "710",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#ConfidentialComputing",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11685,7 +12075,7 @@
       }
     },
     {
-      "id": "685",
+      "id": "711",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#DialogueSystem",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11696,7 +12086,7 @@
       }
     },
     {
-      "id": "686",
+      "id": "712",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#ExplainableAi",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11707,7 +12097,7 @@
       }
     },
     {
-      "id": "687",
+      "id": "713",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#GenerativeAdversarialNetwork",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11718,7 +12108,7 @@
       }
     },
     {
-      "id": "688",
+      "id": "714",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#PerceptionSystem",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11729,7 +12119,7 @@
       }
     },
     {
-      "id": "689",
+      "id": "715",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#PrivacyByDesign",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11740,7 +12130,7 @@
       }
     },
     {
-      "id": "690",
+      "id": "716",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#PrivacyImpactAssessment",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11751,7 +12141,7 @@
       }
     },
     {
-      "id": "691",
+      "id": "717",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#SecureMultiPartyComputation",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11762,7 +12152,7 @@
       }
     },
     {
-      "id": "692",
+      "id": "718",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#SensorFusion",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11773,7 +12163,7 @@
       }
     },
     {
-      "id": "693",
+      "id": "719",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#Training",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -11784,7 +12174,7 @@
       }
     },
     {
-      "id": "694",
+      "id": "720",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Block",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11795,7 +12185,7 @@
       }
     },
     {
-      "id": "695",
+      "id": "721",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#BlockReward",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11806,7 +12196,7 @@
       }
     },
     {
-      "id": "696",
+      "id": "722",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Blockchain",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11817,7 +12207,7 @@
       }
     },
     {
-      "id": "697",
+      "id": "723",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Cryptocurrency",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11828,7 +12218,7 @@
       }
     },
     {
-      "id": "698",
+      "id": "724",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Mempool",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11839,7 +12229,7 @@
       }
     },
     {
-      "id": "699",
+      "id": "725",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#MerkleTree",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11850,7 +12240,7 @@
       }
     },
     {
-      "id": "700",
+      "id": "726",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Mining",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11861,7 +12251,7 @@
       }
     },
     {
-      "id": "701",
+      "id": "727",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#ProposalSystem",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11872,7 +12262,7 @@
       }
     },
     {
-      "id": "702",
+      "id": "728",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#ProvenanceTracking",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11883,7 +12273,7 @@
       }
     },
     {
-      "id": "703",
+      "id": "729",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#RegulatoryReporting",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11894,7 +12284,7 @@
       }
     },
     {
-      "id": "704",
+      "id": "730",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Script",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11905,7 +12295,7 @@
       }
     },
     {
-      "id": "705",
+      "id": "731",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#SelfSovereignIdentity",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11916,7 +12306,7 @@
       }
     },
     {
-      "id": "706",
+      "id": "732",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Token",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11927,7 +12317,7 @@
       }
     },
     {
-      "id": "707",
+      "id": "733",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#TreasuryManagement",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11938,7 +12328,7 @@
       }
     },
     {
-      "id": "708",
+      "id": "734",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#UtxoModel",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11949,7 +12339,7 @@
       }
     },
     {
-      "id": "709",
+      "id": "735",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#ZeroKnowledgeProof",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -11960,7 +12350,7 @@
       }
     },
     {
-      "id": "710",
+      "id": "736",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AuthoringTool",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -11971,7 +12361,7 @@
       }
     },
     {
-      "id": "711",
+      "id": "737",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Avatar",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -11982,7 +12372,7 @@
       }
     },
     {
-      "id": "712",
+      "id": "738",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DiscoveryLayer",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -11993,7 +12383,7 @@
       }
     },
     {
-      "id": "713",
+      "id": "739",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DistributedDataStructure",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12004,7 +12394,7 @@
       }
     },
     {
-      "id": "714",
+      "id": "740",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EdgeNetwork",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12015,7 +12405,7 @@
       }
     },
     {
-      "id": "715",
+      "id": "741",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EthicalFramework",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12026,7 +12416,7 @@
       }
     },
     {
-      "id": "716",
+      "id": "742",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainDataManagementCreativeMedia",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12037,7 +12427,7 @@
       }
     },
     {
-      "id": "717",
+      "id": "743",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Interoperability",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12048,7 +12438,7 @@
       }
     },
     {
-      "id": "718",
+      "id": "744",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ProceduralTexture",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12059,7 +12449,7 @@
       }
     },
     {
-      "id": "719",
+      "id": "745",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#QuantumNetworkNode",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12070,7 +12460,7 @@
       }
     },
     {
-      "id": "720",
+      "id": "746",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#TelemetryAnalytics",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12081,7 +12471,7 @@
       }
     },
     {
-      "id": "721",
+      "id": "747",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#TestingProcess",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12092,7 +12482,7 @@
       }
     },
     {
-      "id": "722",
+      "id": "748",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#TrustFrameworkPolicy",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12103,7 +12493,7 @@
       }
     },
     {
-      "id": "723",
+      "id": "749",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#VirtualLightingModel",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12114,7 +12504,7 @@
       }
     },
     {
-      "id": "724",
+      "id": "750",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#VirtualProductionVolume",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12125,7 +12515,7 @@
       }
     },
     {
-      "id": "725",
+      "id": "751",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#VisualizationLayer",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12136,7 +12526,7 @@
       }
     },
     {
-      "id": "726",
+      "id": "752",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#VoiceInteraction",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12147,7 +12537,7 @@
       }
     },
     {
-      "id": "727",
+      "id": "753",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Wallet",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12158,7 +12548,7 @@
       }
     },
     {
-      "id": "728",
+      "id": "754",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#XrAccessibilityGuideline",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12169,7 +12559,7 @@
       }
     },
     {
-      "id": "729",
+      "id": "755",
       "iri": "https://narrativegoldmine.com/ontology/robotics#HumanoidRobot",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -12180,7 +12570,7 @@
       }
     },
     {
-      "id": "730",
+      "id": "756",
       "iri": "https://narrativegoldmine.com/ontology/robotics#IndustrialRobot",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -12191,7 +12581,7 @@
       }
     },
     {
-      "id": "731",
+      "id": "757",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#HumanInTheLoop",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -12202,7 +12592,7 @@
       }
     },
     {
-      "id": "732",
+      "id": "758",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#InstanceSegmentation",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -12213,7 +12603,7 @@
       }
     },
     {
-      "id": "733",
+      "id": "759",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Decentralization",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -12224,7 +12614,7 @@
       }
     },
     {
-      "id": "734",
+      "id": "760",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#EllipticCurveCryptography",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -12235,7 +12625,7 @@
       }
     },
     {
-      "id": "735",
+      "id": "761",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#LightNode",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -12246,7 +12636,7 @@
       }
     },
     {
-      "id": "736",
+      "id": "762",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#NetworkLatency",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -12257,7 +12647,7 @@
       }
     },
     {
-      "id": "737",
+      "id": "763",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AgreementProtocol",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12268,7 +12658,7 @@
       }
     },
     {
-      "id": "738",
+      "id": "764",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CollectiveMemoryArchive",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12279,7 +12669,7 @@
       }
     },
     {
-      "id": "739",
+      "id": "765",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ConversionPipeline",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12290,7 +12680,7 @@
       }
     },
     {
-      "id": "740",
+      "id": "766",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DataIntegrationInterface",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12301,7 +12691,7 @@
       }
     },
     {
-      "id": "741",
+      "id": "767",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DistributedLedger",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12312,7 +12702,7 @@
       }
     },
     {
-      "id": "742",
+      "id": "768",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EdgeMeshNetwork",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12323,7 +12713,7 @@
       }
     },
     {
-      "id": "743",
+      "id": "769",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EmotionalImmersion",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12334,7 +12724,7 @@
       }
     },
     {
-      "id": "744",
+      "id": "770",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainDataManagementCulturalHeritage",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12345,7 +12735,7 @@
       }
     },
     {
-      "id": "745",
+      "id": "771",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainDataManagementSecurity",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12356,7 +12746,7 @@
       }
     },
     {
-      "id": "746",
+      "id": "772",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#FaultToleranceSystem",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12367,7 +12757,7 @@
       }
     },
     {
-      "id": "747",
+      "id": "773",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#IdentityGraph",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12378,7 +12768,7 @@
       }
     },
     {
-      "id": "748",
+      "id": "774",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#MetaverseSafetyProtocol",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12389,7 +12779,7 @@
       }
     },
     {
-      "id": "749",
+      "id": "775",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Middleware",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12400,7 +12790,7 @@
       }
     },
     {
-      "id": "750",
+      "id": "776",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ServiceLayer",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12411,7 +12801,7 @@
       }
     },
     {
-      "id": "751",
+      "id": "777",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SocialImpactAssessmentSia",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12422,7 +12812,7 @@
       }
     },
     {
-      "id": "752",
+      "id": "778",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#StorageLayer",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12433,7 +12823,7 @@
       }
     },
     {
-      "id": "753",
+      "id": "779",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#UserAgreementCompliance",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12444,7 +12834,7 @@
       }
     },
     {
-      "id": "754",
+      "id": "780",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#RiskMitigation",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -12455,7 +12845,7 @@
       }
     },
     {
-      "id": "755",
+      "id": "781",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#CensorshipResistance",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -12466,7 +12856,7 @@
       }
     },
     {
-      "id": "756",
+      "id": "782",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#DecentralizedAutonomousOrganization",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -12477,7 +12867,7 @@
       }
     },
     {
-      "id": "757",
+      "id": "783",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Transaction",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -12488,7 +12878,7 @@
       }
     },
     {
-      "id": "758",
+      "id": "784",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#VerifiableCredentials",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -12499,7 +12889,7 @@
       }
     },
     {
-      "id": "759",
+      "id": "785",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AccessibilityAuditTool",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12510,7 +12900,7 @@
       }
     },
     {
-      "id": "760",
+      "id": "786",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#BehaviouralFeedbackLoop",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12521,7 +12911,7 @@
       }
     },
     {
-      "id": "761",
+      "id": "787",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#BiometricBindingMechanism",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12532,7 +12922,7 @@
       }
     },
     {
-      "id": "762",
+      "id": "788",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalCurationPlatform",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12543,7 +12933,7 @@
       }
     },
     {
-      "id": "763",
+      "id": "789",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalTaxonomyRegistry",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12554,7 +12944,7 @@
       }
     },
     {
-      "id": "764",
+      "id": "790",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalTwinSynchronisationBus",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12565,7 +12955,7 @@
       }
     },
     {
-      "id": "765",
+      "id": "791",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DisplayMetrology",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12576,7 +12966,7 @@
       }
     },
     {
-      "id": "766",
+      "id": "792",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DistributedProtocol",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12587,7 +12977,7 @@
       }
     },
     {
-      "id": "767",
+      "id": "793",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EdgeOrchestration",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12598,7 +12988,7 @@
       }
     },
     {
-      "id": "768",
+      "id": "794",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainAiDataMgmt",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12609,7 +12999,7 @@
       }
     },
     {
-      "id": "769",
+      "id": "795",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainApplicationTourism",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12620,7 +13010,7 @@
       }
     },
     {
-      "id": "770",
+      "id": "796",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainCreativeMedia",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12631,7 +13021,7 @@
       }
     },
     {
-      "id": "771",
+      "id": "797",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainData",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12642,7 +13032,7 @@
       }
     },
     {
-      "id": "772",
+      "id": "798",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainImmersiveRealityCaptureCrossover",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12653,7 +13043,7 @@
       }
     },
     {
-      "id": "773",
+      "id": "799",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Gltf3dFileFormat",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12664,7 +13054,7 @@
       }
     },
     {
-      "id": "774",
+      "id": "800",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#HardwareAbstractionLayerHal",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12675,7 +13065,7 @@
       }
     },
     {
-      "id": "775",
+      "id": "801",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#HumanInterfaceDevice",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12686,7 +13076,7 @@
       }
     },
     {
-      "id": "776",
+      "id": "802",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#HumanInterfaceLayerHil",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12697,7 +13087,7 @@
       }
     },
     {
-      "id": "777",
+      "id": "803",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#HumanityAttestation",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12708,7 +13098,7 @@
       }
     },
     {
-      "id": "778",
+      "id": "804",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#IdentityProviderIdp",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12719,7 +13109,7 @@
       }
     },
     {
-      "id": "779",
+      "id": "805",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Immersion",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12730,7 +13120,7 @@
       }
     },
     {
-      "id": "780",
+      "id": "806",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Latency",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12741,7 +13131,7 @@
       }
     },
     {
-      "id": "781",
+      "id": "807",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#MetadataStandard",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12752,7 +13142,7 @@
       }
     },
     {
-      "id": "782",
+      "id": "808",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#PlatformLayer",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12763,7 +13153,7 @@
       }
     },
     {
-      "id": "783",
+      "id": "809",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Slam",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12774,7 +13164,7 @@
       }
     },
     {
-      "id": "784",
+      "id": "810",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#UniversalManifest",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12785,7 +13175,7 @@
       }
     },
     {
-      "id": "785",
+      "id": "811",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ValidationProcess",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12796,7 +13186,7 @@
       }
     },
     {
-      "id": "786",
+      "id": "812",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#VirtualProductionVp",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12807,7 +13197,7 @@
       }
     },
     {
-      "id": "787",
+      "id": "813",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ZeroTrustArchitectureZta",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12818,7 +13208,7 @@
       }
     },
     {
-      "id": "788",
+      "id": "814",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Cryptography",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -12829,7 +13219,7 @@
       }
     },
     {
-      "id": "789",
+      "id": "815",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#PeerToPeerNetwork",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -12840,7 +13230,7 @@
       }
     },
     {
-      "id": "790",
+      "id": "816",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Timestamp",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -12851,7 +13241,7 @@
       }
     },
     {
-      "id": "791",
+      "id": "817",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#TransactionPool",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -12862,7 +13252,7 @@
       }
     },
     {
-      "id": "792",
+      "id": "818",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AccessibilityStandard",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12873,7 +13263,7 @@
       }
     },
     {
-      "id": "793",
+      "id": "819",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AiGovernancePrinciple",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12884,7 +13274,7 @@
       }
     },
     {
-      "id": "794",
+      "id": "820",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AvatarInteroperability",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12895,7 +13285,7 @@
       }
     },
     {
-      "id": "795",
+      "id": "821",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ComplianceAuditTrail",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12906,7 +13296,7 @@
       }
     },
     {
-      "id": "796",
+      "id": "822",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ContentDeliveryNetworkCdn",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12917,7 +13307,7 @@
       }
     },
     {
-      "id": "797",
+      "id": "823",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CrossPlatformComplianceHub",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12928,7 +13318,7 @@
       }
     },
     {
-      "id": "798",
+      "id": "824",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalEvidenceChainOfCustody",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12939,7 +13329,7 @@
       }
     },
     {
-      "id": "799",
+      "id": "825",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalIdentityWallet",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12950,7 +13340,7 @@
       }
     },
     {
-      "id": "800",
+      "id": "826",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainAiCreativeMedia",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12961,7 +13351,7 @@
       }
     },
     {
-      "id": "801",
+      "id": "827",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainAiHumanInterface",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12972,7 +13362,7 @@
       }
     },
     {
-      "id": "802",
+      "id": "828",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainApplicationCreative",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12983,7 +13373,7 @@
       }
     },
     {
-      "id": "803",
+      "id": "829",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainApplicationHealth",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -12994,7 +13384,7 @@
       }
     },
     {
-      "id": "804",
+      "id": "830",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainDataManagementAi",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13005,7 +13395,7 @@
       }
     },
     {
-      "id": "805",
+      "id": "831",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainDataManagementEthics",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13016,7 +13406,7 @@
       }
     },
     {
-      "id": "806",
+      "id": "832",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainEthicsLaw",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13027,7 +13417,7 @@
       }
     },
     {
-      "id": "807",
+      "id": "833",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#FederatedCredentialExchange",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13038,7 +13428,7 @@
       }
     },
     {
-      "id": "808",
+      "id": "834",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#GovernanceModel",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13049,7 +13439,7 @@
       }
     },
     {
-      "id": "809",
+      "id": "835",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Haptics",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13060,7 +13450,7 @@
       }
     },
     {
-      "id": "810",
+      "id": "836",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#KnowledgeGraph",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13071,7 +13461,7 @@
       }
     },
     {
-      "id": "811",
+      "id": "837",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#MetaverseContentPipeline",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13082,7 +13472,7 @@
       }
     },
     {
-      "id": "812",
+      "id": "838",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#OpenWorld",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13093,7 +13483,7 @@
       }
     },
     {
-      "id": "813",
+      "id": "839",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#PhysicsBasedAnimation",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13104,7 +13494,7 @@
       }
     },
     {
-      "id": "814",
+      "id": "840",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ProceduralAudioGenerator",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13115,7 +13505,7 @@
       }
     },
     {
-      "id": "815",
+      "id": "841",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#RealTimeRenderingPipeline",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13126,7 +13516,7 @@
       }
     },
     {
-      "id": "816",
+      "id": "842",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ReputationData",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13137,7 +13527,7 @@
       }
     },
     {
-      "id": "817",
+      "id": "843",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ReputationScoringModel",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13148,7 +13538,7 @@
       }
     },
     {
-      "id": "818",
+      "id": "844",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#RoyaltyMechanism",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13159,7 +13549,7 @@
       }
     },
     {
-      "id": "819",
+      "id": "845",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SecurityLayer",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13170,7 +13560,7 @@
       }
     },
     {
-      "id": "820",
+      "id": "846",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SelfSovereignIdentitySsi",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13181,7 +13571,7 @@
       }
     },
     {
-      "id": "821",
+      "id": "847",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SemanticMetadataRegistry",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13192,7 +13582,7 @@
       }
     },
     {
-      "id": "822",
+      "id": "848",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SmartRoyaltiesLedger",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13203,7 +13593,7 @@
       }
     },
     {
-      "id": "823",
+      "id": "849",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SpatialAudioSceneDescription",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13214,7 +13604,7 @@
       }
     },
     {
-      "id": "824",
+      "id": "850",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#TechnologyAdoption",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13225,7 +13615,7 @@
       }
     },
     {
-      "id": "825",
+      "id": "851",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#TokenCustodyService",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13236,7 +13626,7 @@
       }
     },
     {
-      "id": "826",
+      "id": "852",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#VirtualWorld",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13247,7 +13637,7 @@
       }
     },
     {
-      "id": "827",
+      "id": "853",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#Accountability",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -13258,7 +13648,7 @@
       }
     },
     {
-      "id": "828",
+      "id": "854",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#AiGovernanceFramework",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -13269,7 +13659,7 @@
       }
     },
     {
-      "id": "829",
+      "id": "855",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#DifferentialPrivacy",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -13280,7 +13670,7 @@
       }
     },
     {
-      "id": "830",
+      "id": "856",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#ResponsibleAi",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -13291,7 +13681,7 @@
       }
     },
     {
-      "id": "831",
+      "id": "857",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#RiskAssessment",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -13302,7 +13692,7 @@
       }
     },
     {
-      "id": "832",
+      "id": "858",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#ComplianceMonitoring",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -13313,7 +13703,7 @@
       }
     },
     {
-      "id": "833",
+      "id": "859",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AutonomousAgent",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13324,7 +13714,7 @@
       }
     },
     {
-      "id": "834",
+      "id": "860",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#BlockchainEntity",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13335,7 +13725,7 @@
       }
     },
     {
-      "id": "835",
+      "id": "861",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CognitiveFeedbackInterface",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13346,7 +13736,7 @@
       }
     },
     {
-      "id": "836",
+      "id": "862",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CompatibilityProcess",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13357,7 +13747,7 @@
       }
     },
     {
-      "id": "837",
+      "id": "863",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ContextAwareness",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13368,7 +13758,7 @@
       }
     },
     {
-      "id": "838",
+      "id": "864",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CulturalProvenanceRecord",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13379,7 +13769,7 @@
       }
     },
     {
-      "id": "839",
+      "id": "865",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DataProvenance",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13390,7 +13780,7 @@
       }
     },
     {
-      "id": "840",
+      "id": "866",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalAssetWorkflow",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13401,7 +13791,7 @@
       }
     },
     {
-      "id": "841",
+      "id": "867",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalGoodsRegistry",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13412,7 +13802,7 @@
       }
     },
     {
-      "id": "842",
+      "id": "868",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalOntologyRepository",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13423,7 +13813,7 @@
       }
     },
     {
-      "id": "843",
+      "id": "869",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalPerformanceCapture",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13434,7 +13824,7 @@
       }
     },
     {
-      "id": "844",
+      "id": "870",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalRightsManagementExtended",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13445,7 +13835,7 @@
       }
     },
     {
-      "id": "845",
+      "id": "871",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalTwinInteropProtocol",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13456,7 +13846,7 @@
       }
     },
     {
-      "id": "846",
+      "id": "872",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalWellBeingIndex",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13467,7 +13857,7 @@
       }
     },
     {
-      "id": "847",
+      "id": "873",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainApplicationIndustry",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13478,7 +13868,7 @@
       }
     },
     {
-      "id": "848",
+      "id": "874",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainGovernanceCompliance",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13489,7 +13879,7 @@
       }
     },
     {
-      "id": "849",
+      "id": "875",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainGovernanceEthics",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13500,7 +13890,7 @@
       }
     },
     {
-      "id": "850",
+      "id": "876",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#FeedbackMechanism",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13511,7 +13901,7 @@
       }
     },
     {
-      "id": "851",
+      "id": "877",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#LoyaltyToken",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13522,7 +13912,7 @@
       }
     },
     {
-      "id": "852",
+      "id": "878",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#MetaverseArchitectureStack",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13533,7 +13923,7 @@
       }
     },
     {
-      "id": "853",
+      "id": "879",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#MetaversePsychologyProfile",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13544,7 +13934,7 @@
       }
     },
     {
-      "id": "854",
+      "id": "880",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Money",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13555,7 +13945,7 @@
       }
     },
     {
-      "id": "855",
+      "id": "881",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#NarrativeDesignOntology",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13566,7 +13956,7 @@
       }
     },
     {
-      "id": "856",
+      "id": "882",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#PolicyEngine",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13577,7 +13967,7 @@
       }
     },
     {
-      "id": "857",
+      "id": "883",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#PrivacyImpactAssessmentPia",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13588,7 +13978,7 @@
       }
     },
     {
-      "id": "858",
+      "id": "884",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SmartRoyaltyContract",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13599,7 +13989,7 @@
       }
     },
     {
-      "id": "859",
+      "id": "885",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SpatialComputingLayer",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13610,7 +14000,7 @@
       }
     },
     {
-      "id": "860",
+      "id": "886",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ThreatSurfaceMap",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13621,7 +14011,7 @@
       }
     },
     {
-      "id": "861",
+      "id": "887",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#TokenBondingCurve",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13632,7 +14022,7 @@
       }
     },
     {
-      "id": "862",
+      "id": "888",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#TrustScoreMetric",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13643,7 +14033,7 @@
       }
     },
     {
-      "id": "863",
+      "id": "889",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#VirtualPropertyRight",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13654,7 +14044,7 @@
       }
     },
     {
-      "id": "864",
+      "id": "890",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#VirtualSecuritiesOfferingVso",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13665,7 +14055,7 @@
       }
     },
     {
-      "id": "865",
+      "id": "891",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#ConsensusMechanism",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -13676,7 +14066,7 @@
       }
     },
     {
-      "id": "866",
+      "id": "892",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#NetworkTopology",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -13687,7 +14077,7 @@
       }
     },
     {
-      "id": "867",
+      "id": "893",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AiGeneratedContentDisclosure",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13698,7 +14088,7 @@
       }
     },
     {
-      "id": "868",
+      "id": "894",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#BiosensingInterface",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13709,7 +14099,7 @@
       }
     },
     {
-      "id": "869",
+      "id": "895",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CreatorRoyaltyToken",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13720,7 +14110,7 @@
       }
     },
     {
-      "id": "870",
+      "id": "896",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CrossBorderDataTransferRule",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13731,7 +14121,7 @@
       }
     },
     {
-      "id": "871",
+      "id": "897",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DataAnonymizationPipeline",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13742,7 +14132,7 @@
       }
     },
     {
-      "id": "872",
+      "id": "898",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DataFabricArchitecture",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13753,7 +14143,7 @@
       }
     },
     {
-      "id": "873",
+      "id": "899",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DataProtection",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13764,7 +14154,7 @@
       }
     },
     {
-      "id": "874",
+      "id": "900",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DecentralizationLayer",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13775,7 +14165,7 @@
       }
     },
     {
-      "id": "875",
+      "id": "901",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalTaxComplianceNode",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13786,7 +14176,7 @@
       }
     },
     {
-      "id": "876",
+      "id": "902",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EdgeComputingNode",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13797,7 +14187,7 @@
       }
     },
     {
-      "id": "877",
+      "id": "903",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EnvironmentalImpactMetric",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13808,7 +14198,7 @@
       }
     },
     {
-      "id": "878",
+      "id": "904",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EthicsLawLayer",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13819,7 +14209,7 @@
       }
     },
     {
-      "id": "879",
+      "id": "905",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainApplicationEducation",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13830,7 +14220,7 @@
       }
     },
     {
-      "id": "880",
+      "id": "906",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#HumanCaptureRecognition",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13841,7 +14231,7 @@
       }
     },
     {
-      "id": "881",
+      "id": "907",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#IdentityFederation",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13852,7 +14242,7 @@
       }
     },
     {
-      "id": "882",
+      "id": "908",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#LatencyManagementProtocol",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13863,7 +14253,7 @@
       }
     },
     {
-      "id": "883",
+      "id": "909",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#MetaverseLiabilityModel",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13874,7 +14264,7 @@
       }
     },
     {
-      "id": "884",
+      "id": "910",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Micropayment",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13885,7 +14275,7 @@
       }
     },
     {
-      "id": "885",
+      "id": "911",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#NftSwapping",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13896,7 +14286,7 @@
       }
     },
     {
-      "id": "886",
+      "id": "912",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Presence",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13907,7 +14297,7 @@
       }
     },
     {
-      "id": "887",
+      "id": "913",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SpatialAnchor",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13918,7 +14308,7 @@
       }
     },
     {
-      "id": "888",
+      "id": "914",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SpatialIndex",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13929,7 +14319,7 @@
       }
     },
     {
-      "id": "889",
+      "id": "915",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#StateSynchronization",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13940,7 +14330,7 @@
       }
     },
     {
-      "id": "890",
+      "id": "916",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#TransactionStandard",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13951,7 +14341,7 @@
       }
     },
     {
-      "id": "891",
+      "id": "917",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#gNetworkSlice",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13962,7 +14352,7 @@
       }
     },
     {
-      "id": "892",
+      "id": "918",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#Bitcoin",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -13973,7 +14363,7 @@
       }
     },
     {
-      "id": "893",
+      "id": "919",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#GovernanceToken",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -13984,7 +14374,7 @@
       }
     },
     {
-      "id": "894",
+      "id": "920",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AiGovernanceFramework",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -13995,7 +14385,7 @@
       }
     },
     {
-      "id": "895",
+      "id": "921",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ApplicationLayer",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14006,7 +14396,7 @@
       }
     },
     {
-      "id": "896",
+      "id": "922",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CentralBankDigitalCurrencyCbdc",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14017,7 +14407,7 @@
       }
     },
     {
-      "id": "897",
+      "id": "923",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ConsensusMechanism",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14028,7 +14418,7 @@
       }
     },
     {
-      "id": "898",
+      "id": "924",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ContentModeration",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14039,7 +14429,7 @@
       }
     },
     {
-      "id": "899",
+      "id": "925",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CulturalHeritageXrExperience",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14050,7 +14440,7 @@
       }
     },
     {
-      "id": "900",
+      "id": "926",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DataStorageLayer",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14061,7 +14451,7 @@
       }
     },
     {
-      "id": "901",
+      "id": "927",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalCitizensAssembly",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14072,7 +14462,7 @@
       }
     },
     {
-      "id": "902",
+      "id": "928",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalGoods",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14083,7 +14473,7 @@
       }
     },
     {
-      "id": "903",
+      "id": "929",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalIdentityFramework",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14094,7 +14484,7 @@
       }
     },
     {
-      "id": "904",
+      "id": "930",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EnvironmentalSustainabilityLabel",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14105,7 +14495,7 @@
       }
     },
     {
-      "id": "905",
+      "id": "931",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainAiGovernance",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14116,7 +14506,7 @@
       }
     },
     {
-      "id": "906",
+      "id": "932",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ExperienceLayer",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14127,7 +14517,7 @@
       }
     },
     {
-      "id": "907",
+      "id": "933",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ExplainableAiXai",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14138,7 +14528,7 @@
       }
     },
     {
-      "id": "908",
+      "id": "934",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EyeTracking",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14149,7 +14539,7 @@
       }
     },
     {
-      "id": "909",
+      "id": "935",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#GenerativeDesignTool",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14160,7 +14550,7 @@
       }
     },
     {
-      "id": "910",
+      "id": "936",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#GlossaryIndex",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14171,7 +14561,7 @@
       }
     },
     {
-      "id": "911",
+      "id": "937",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#HealthMetaverseApplication",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14182,7 +14572,7 @@
       }
     },
     {
-      "id": "912",
+      "id": "938",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Marketplace",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14193,7 +14583,7 @@
       }
     },
     {
-      "id": "913",
+      "id": "939",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#MetaverseOntologySchema",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14204,7 +14594,7 @@
       }
     },
     {
-      "id": "914",
+      "id": "940",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#NetworkingLayer",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14215,7 +14605,7 @@
       }
     },
     {
-      "id": "915",
+      "id": "941",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#RightToBeForgotten",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14226,7 +14616,7 @@
       }
     },
     {
-      "id": "916",
+      "id": "942",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Stablecoin",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14237,7 +14627,7 @@
       }
     },
     {
-      "id": "917",
+      "id": "943",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ValueTransfer",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14248,7 +14638,7 @@
       }
     },
     {
-      "id": "918",
+      "id": "944",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#VerifiableCredentialVc",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14259,7 +14649,7 @@
       }
     },
     {
-      "id": "919",
+      "id": "945",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#VirtualPerformanceSpace",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14270,7 +14660,7 @@
       }
     },
     {
-      "id": "920",
+      "id": "946",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#VirtualRealityVr",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14281,7 +14671,7 @@
       }
     },
     {
-      "id": "921",
+      "id": "947",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ZeroKnowledgeProofZkp",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14292,7 +14682,7 @@
       }
     },
     {
-      "id": "922",
+      "id": "948",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Manipulator",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -14303,7 +14693,7 @@
       }
     },
     {
-      "id": "923",
+      "id": "949",
       "iri": "https://narrativegoldmine.com/ontology/robotics#MobileRobot",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -14314,7 +14704,7 @@
       }
     },
     {
-      "id": "924",
+      "id": "950",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DecentralizedIdentityDid",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14325,7 +14715,7 @@
       }
     },
     {
-      "id": "925",
+      "id": "951",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalJurisdiction",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14336,7 +14726,7 @@
       }
     },
     {
-      "id": "926",
+      "id": "952",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalRitual",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14347,7 +14737,7 @@
       }
     },
     {
-      "id": "927",
+      "id": "953",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalTwinOfSocietyDtos",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14358,7 +14748,7 @@
       }
     },
     {
-      "id": "928",
+      "id": "954",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DisputeResolutionMechanism",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14369,7 +14759,7 @@
       }
     },
     {
-      "id": "929",
+      "id": "955",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EmotionalAnalyticsEngine",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14380,7 +14770,7 @@
       }
     },
     {
-      "id": "930",
+      "id": "956",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#MixedRealityMr",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14391,7 +14781,7 @@
       }
     },
     {
-      "id": "931",
+      "id": "957",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#MotionCaptureRig",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14402,7 +14792,7 @@
       }
     },
     {
-      "id": "932",
+      "id": "958",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#NetworkInfrastructure",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14413,7 +14803,7 @@
       }
     },
     {
-      "id": "933",
+      "id": "959",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#NonFungibleTokenNft",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14424,7 +14814,7 @@
       }
     },
     {
-      "id": "934",
+      "id": "960",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#PlayToEarnP2e",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14435,7 +14825,7 @@
       }
     },
     {
-      "id": "935",
+      "id": "961",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#PostQuantumCryptography",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14446,7 +14836,7 @@
       }
     },
     {
-      "id": "936",
+      "id": "962",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#PrivacyEnhancingComputationPec",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14457,7 +14847,7 @@
       }
     },
     {
-      "id": "937",
+      "id": "963",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#RealityCaptureSystem",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14468,7 +14858,7 @@
       }
     },
     {
-      "id": "938",
+      "id": "964",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SocialTokenEconomy",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14479,7 +14869,7 @@
       }
     },
     {
-      "id": "939",
+      "id": "965",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#TourismMetaverse",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14490,7 +14880,7 @@
       }
     },
     {
-      "id": "940",
+      "id": "966",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#VirtualNotaryService",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14501,7 +14891,7 @@
       }
     },
     {
-      "id": "941",
+      "id": "967",
       "iri": "https://narrativegoldmine.com/ontology/robotics#Robot",
       "baseIri": "https://narrativegoldmine.com/ontology/robotics",
       "label": {
@@ -14512,7 +14902,7 @@
       }
     },
     {
-      "id": "942",
+      "id": "968",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#DistributedLedger",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -14523,7 +14913,7 @@
       }
     },
     {
-      "id": "943",
+      "id": "969",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AiEthicsChecklist",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14534,7 +14924,7 @@
       }
     },
     {
-      "id": "944",
+      "id": "970",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ConsentManagement",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14545,7 +14935,7 @@
       }
     },
     {
-      "id": "945",
+      "id": "971",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ConstructionDigitalTwin",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14556,7 +14946,7 @@
       }
     },
     {
-      "id": "946",
+      "id": "972",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Deepfakes",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14567,7 +14957,7 @@
       }
     },
     {
-      "id": "947",
+      "id": "973",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalCitizenship",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14578,7 +14968,7 @@
       }
     },
     {
-      "id": "948",
+      "id": "974",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalConstitution",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14589,7 +14979,7 @@
       }
     },
     {
-      "id": "949",
+      "id": "975",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#FractionalizedNft",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14600,7 +14990,7 @@
       }
     },
     {
-      "id": "950",
+      "id": "976",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#InfrastructureLayer",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14611,7 +15001,7 @@
       }
     },
     {
-      "id": "951",
+      "id": "977",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#InteroperabilityFramework",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14622,7 +15012,7 @@
       }
     },
     {
-      "id": "952",
+      "id": "978",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#NftRenting",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14633,7 +15023,7 @@
       }
     },
     {
-      "id": "953",
+      "id": "979",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Photogrammetry",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14644,7 +15034,7 @@
       }
     },
     {
-      "id": "954",
+      "id": "980",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ProvenanceOntologyProvO",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14655,7 +15045,7 @@
       }
     },
     {
-      "id": "955",
+      "id": "981",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ProvenanceVerification",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14666,7 +15056,7 @@
       }
     },
     {
-      "id": "956",
+      "id": "982",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SceneGraph",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14677,7 +15067,7 @@
       }
     },
     {
-      "id": "957",
+      "id": "983",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Tokenization",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14688,7 +15078,7 @@
       }
     },
     {
-      "id": "958",
+      "id": "984",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#UserConsentToken",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14699,7 +15089,7 @@
       }
     },
     {
-      "id": "959",
+      "id": "985",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AugmentedRealityAr",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14710,7 +15100,7 @@
       }
     },
     {
-      "id": "960",
+      "id": "986",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CollectiveIntelligenceSystem",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14721,7 +15111,7 @@
       }
     },
     {
-      "id": "961",
+      "id": "987",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DecentralizedAutonomousOrganizationDao",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14732,7 +15122,7 @@
       }
     },
     {
-      "id": "962",
+      "id": "988",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DecentralizedExchangeDex",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14743,7 +15133,7 @@
       }
     },
     {
-      "id": "963",
+      "id": "989",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DistributedArchitecture",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14754,7 +15144,7 @@
       }
     },
     {
-      "id": "964",
+      "id": "990",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EContractArbitration",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14765,7 +15155,7 @@
       }
     },
     {
-      "id": "965",
+      "id": "991",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#NftWrapping",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14776,7 +15166,7 @@
       }
     },
     {
-      "id": "966",
+      "id": "992",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#PhysicsEngine",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14787,7 +15177,7 @@
       }
     },
     {
-      "id": "967",
+      "id": "993",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SpatialComputing",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14798,7 +15188,7 @@
       }
     },
     {
-      "id": "968",
+      "id": "994",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SyntheticDataGenerator",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14809,7 +15199,7 @@
       }
     },
     {
-      "id": "969",
+      "id": "995",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AlgorithmicTransparencyIndex",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14820,7 +15210,7 @@
       }
     },
     {
-      "id": "970",
+      "id": "996",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#IndustrialMetaverse",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14831,7 +15221,7 @@
       }
     },
     {
-      "id": "971",
+      "id": "997",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#IntelligentVirtualEntity",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14842,7 +15232,7 @@
       }
     },
     {
-      "id": "972",
+      "id": "998",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ProceduralContentGeneration",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14853,7 +15243,7 @@
       }
     },
     {
-      "id": "973",
+      "id": "999",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#RegulatoryCompliance",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14864,7 +15254,7 @@
       }
     },
     {
-      "id": "974",
+      "id": "1000",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#Neural3dGeneration",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -14875,7 +15265,7 @@
       }
     },
     {
-      "id": "975",
+      "id": "1001",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AiModelCard",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14886,7 +15276,7 @@
       }
     },
     {
-      "id": "976",
+      "id": "1002",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#AuditTrail",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14897,7 +15287,7 @@
       }
     },
     {
-      "id": "977",
+      "id": "1003",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CarbonCreditToken",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14908,7 +15298,7 @@
       }
     },
     {
-      "id": "978",
+      "id": "1004",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ComputeLayer",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14919,7 +15309,7 @@
       }
     },
     {
-      "id": "979",
+      "id": "1005",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Cryptocurrency",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14930,7 +15320,7 @@
       }
     },
     {
-      "id": "980",
+      "id": "1006",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EducationMetaverse",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14941,7 +15331,7 @@
       }
     },
     {
-      "id": "981",
+      "id": "1007",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#LiquidityPool",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14952,7 +15342,7 @@
       }
     },
     {
-      "id": "982",
+      "id": "1008",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Multiverse",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14963,7 +15353,7 @@
       }
     },
     {
-      "id": "983",
+      "id": "1009",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CommunityGovernanceModel",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14974,7 +15364,7 @@
       }
     },
     {
-      "id": "984",
+      "id": "1010",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CryptoToken",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14985,7 +15375,7 @@
       }
     },
     {
-      "id": "985",
+      "id": "1011",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalRealEstate",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -14996,7 +15386,7 @@
       }
     },
     {
-      "id": "986",
+      "id": "1012",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalTwin",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -15007,7 +15397,7 @@
       }
     },
     {
-      "id": "987",
+      "id": "1013",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#ExtendedRealityXr",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -15018,7 +15408,7 @@
       }
     },
     {
-      "id": "988",
+      "id": "1014",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Metaverse",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -15029,7 +15419,7 @@
       }
     },
     {
-      "id": "989",
+      "id": "1015",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#AiGameAgent",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -15040,7 +15430,7 @@
       }
     },
     {
-      "id": "990",
+      "id": "1016",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DigitalAsset",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -15051,7 +15441,7 @@
       }
     },
     {
-      "id": "991",
+      "id": "1017",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#GameEngine",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -15062,7 +15452,7 @@
       }
     },
     {
-      "id": "992",
+      "id": "1018",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#AiAgentSystem",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -15073,7 +15463,7 @@
       }
     },
     {
-      "id": "993",
+      "id": "1019",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#EtsiDomainAi",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -15084,7 +15474,7 @@
       }
     },
     {
-      "id": "994",
+      "id": "1020",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#CreatorEconomy",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -15095,7 +15485,7 @@
       }
     },
     {
-      "id": "995",
+      "id": "1021",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#DistributedLedgerTechnologyDlt",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -15106,7 +15496,7 @@
       }
     },
     {
-      "id": "996",
+      "id": "1022",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#ComputerVision",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "label": {
@@ -15117,7 +15507,7 @@
       }
     },
     {
-      "id": "997",
+      "id": "1023",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#DigitalSignature",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -15128,7 +15518,7 @@
       }
     },
     {
-      "id": "998",
+      "id": "1024",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#SmartContract",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -15139,7 +15529,7 @@
       }
     },
     {
-      "id": "999",
+      "id": "1025",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#Blockchain",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "label": {
@@ -15150,7 +15540,7 @@
       }
     },
     {
-      "id": "1000",
+      "id": "1026",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#BlockchainNetwork",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -15161,7 +15551,7 @@
       }
     },
     {
-      "id": "1001",
+      "id": "1027",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#IdentityVerification",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -15172,7 +15562,7 @@
       }
     },
     {
-      "id": "1002",
+      "id": "1028",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#SmartContract",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "label": {
@@ -15185,110 +15575,6 @@
   ],
   "property": [
     {
-      "id": "1003",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1004",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1005",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1006",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1007",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1008",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1009",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1010",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1011",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1012",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1013",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1014",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1015",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1016",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1017",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1018",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1019",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1020",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1021",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1022",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1023",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1024",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1025",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1026",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1027",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "1028",
-      "type": "owl:objectProperty"
-    },
-    {
       "id": "1029",
       "type": "owl:objectProperty"
     },
@@ -15302,196 +15588,300 @@
     },
     {
       "id": "1032",
-      "type": "owl:datatypeProperty"
+      "type": "owl:objectProperty"
     },
     {
       "id": "1033",
-      "type": "owl:datatypeProperty"
+      "type": "owl:objectProperty"
     },
     {
       "id": "1034",
-      "type": "owl:datatypeProperty"
+      "type": "owl:objectProperty"
     },
     {
       "id": "1035",
-      "type": "owl:datatypeProperty"
+      "type": "owl:objectProperty"
     },
     {
       "id": "1036",
-      "type": "owl:datatypeProperty"
+      "type": "owl:objectProperty"
     },
     {
       "id": "1037",
-      "type": "owl:datatypeProperty"
+      "type": "owl:objectProperty"
     },
     {
       "id": "1038",
-      "type": "owl:datatypeProperty"
+      "type": "owl:objectProperty"
     },
     {
       "id": "1039",
-      "type": "owl:datatypeProperty"
+      "type": "owl:objectProperty"
     },
     {
       "id": "1040",
-      "type": "owl:datatypeProperty"
+      "type": "owl:objectProperty"
     },
     {
       "id": "1041",
-      "type": "owl:datatypeProperty"
+      "type": "owl:objectProperty"
     },
     {
       "id": "1042",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:objectProperty"
     },
     {
       "id": "1043",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:objectProperty"
     },
     {
       "id": "1044",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:objectProperty"
     },
     {
       "id": "1045",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:objectProperty"
     },
     {
       "id": "1046",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:objectProperty"
     },
     {
       "id": "1047",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:objectProperty"
     },
     {
       "id": "1048",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "1049",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "1050",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "1051",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "1052",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "1053",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "1054",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "1055",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "1056",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "1057",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "1058",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "1059",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "1060",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "1061",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "1062",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "1063",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "1064",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "1065",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "1066",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "1067",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "1068",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "1069",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "1070",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "1071",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "1072",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "1073",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "1074",
       "type": "rdfs:SubClassOf"
     }
   ],
   "propertyAttribute": [
     {
-      "id": "1003",
+      "id": "1029",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#hasApplicationDomain",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "attributes": [
         "object"
       ],
-      "domain": "730",
+      "domain": "756",
       "range": "1"
     },
     {
-      "id": "1004",
+      "id": "1030",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#traversesTerrain",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "attributes": [
         "object"
       ],
-      "domain": "923",
+      "domain": "949",
       "range": "1"
     },
     {
-      "id": "1005",
+      "id": "1031",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#hasJoint",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
         "object"
       ],
-      "domain": "922",
+      "domain": "948",
       "range": "1"
     },
     {
-      "id": "1006",
+      "id": "1032",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#performsTask",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
         "object"
       ],
-      "domain": "941",
+      "domain": "967",
       "range": "1"
     },
     {
-      "id": "1007",
+      "id": "1033",
       "iri": "https://narrativegoldmine.com/ontology/metaverse#hasBodyPart",
       "baseIri": "https://narrativegoldmine.com/ontology/metaverse",
       "attributes": [
         "object"
       ],
-      "domain": "729",
+      "domain": "755",
       "range": "1"
     },
     {
-      "id": "1008",
+      "id": "1034",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#hasControlSystem",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
         "object"
       ],
-      "domain": "941",
+      "domain": "967",
       "range": "1"
     },
     {
-      "id": "1009",
+      "id": "1035",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#hasSensingCapability",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
         "object"
       ],
-      "domain": "941",
+      "domain": "967",
       "range": "1"
     },
     {
-      "id": "1010",
+      "id": "1036",
       "iri": "https://narrativegoldmine.com/ontology/artificial-intelligence#hasKinematicChain",
       "baseIri": "https://narrativegoldmine.com/ontology/artificial-intelligence",
       "attributes": [
         "object"
       ],
-      "domain": "922",
+      "domain": "948",
       "range": "1"
     },
     {
-      "id": "1011",
+      "id": "1037",
       "iri": "https://narrativegoldmine.com/ontology/blockchain#definesWorkspace",
       "baseIri": "https://narrativegoldmine.com/ontology/blockchain",
       "attributes": [
         "object"
       ],
-      "domain": "922",
+      "domain": "948",
       "range": "1"
     },
     {
-      "id": "1012",
+      "id": "1038",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#hasEndEffector",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
         "object"
       ],
-      "domain": "922",
+      "domain": "948",
       "range": "1"
     },
     {
-      "id": "1013",
+      "id": "1039",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#hasLocomotionSystem",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
         "object"
       ],
-      "domain": "923",
+      "domain": "949",
       "range": "1"
     },
     {
-      "id": "1014",
+      "id": "1040",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#hasNavigationCapability",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
         "object"
       ],
-      "domain": "923",
+      "domain": "949",
       "range": "1"
     },
     {
-      "id": "1015",
+      "id": "1041",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#influenced-by",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15504,7 +15894,7 @@
       }
     },
     {
-      "id": "1016",
+      "id": "1042",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#bridges-to",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15517,7 +15907,7 @@
       }
     },
     {
-      "id": "1017",
+      "id": "1043",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#uses",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15530,7 +15920,7 @@
       }
     },
     {
-      "id": "1018",
+      "id": "1044",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#related-to",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15543,7 +15933,7 @@
       }
     },
     {
-      "id": "1019",
+      "id": "1045",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#implemented-by",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15556,7 +15946,7 @@
       }
     },
     {
-      "id": "1020",
+      "id": "1046",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#implements",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15569,7 +15959,7 @@
       }
     },
     {
-      "id": "1021",
+      "id": "1047",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#binds-to",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15582,7 +15972,7 @@
       }
     },
     {
-      "id": "1022",
+      "id": "1048",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#is-enabled-by",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15595,7 +15985,7 @@
       }
     },
     {
-      "id": "1023",
+      "id": "1049",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#categorizes",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15608,7 +15998,7 @@
       }
     },
     {
-      "id": "1024",
+      "id": "1050",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#is-dependency-of",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15621,7 +16011,7 @@
       }
     },
     {
-      "id": "1025",
+      "id": "1051",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#is-required-by",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15634,7 +16024,7 @@
       }
     },
     {
-      "id": "1026",
+      "id": "1052",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#is-subclass-of",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15647,7 +16037,7 @@
       }
     },
     {
-      "id": "1027",
+      "id": "1053",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#is-part-of",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15660,7 +16050,7 @@
       }
     },
     {
-      "id": "1028",
+      "id": "1054",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#depends-on",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15673,7 +16063,7 @@
       }
     },
     {
-      "id": "1029",
+      "id": "1055",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#requires",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15686,7 +16076,7 @@
       }
     },
     {
-      "id": "1030",
+      "id": "1056",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#enables",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15699,7 +16089,7 @@
       }
     },
     {
-      "id": "1031",
+      "id": "1057",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#has-part",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15712,7 +16102,7 @@
       }
     },
     {
-      "id": "1032",
+      "id": "1058",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#autonomyLevel",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15721,7 +16111,7 @@
       "domain": "1"
     },
     {
-      "id": "1033",
+      "id": "1059",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#cycleTime",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15730,7 +16120,7 @@
       "domain": "1"
     },
     {
-      "id": "1034",
+      "id": "1060",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#hasReach",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15739,7 +16129,7 @@
       "domain": "1"
     },
     {
-      "id": "1035",
+      "id": "1061",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#heightMeters",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15748,7 +16138,7 @@
       "domain": "1"
     },
     {
-      "id": "1036",
+      "id": "1062",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#maximumSpeed",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15757,7 +16147,7 @@
       "domain": "1"
     },
     {
-      "id": "1037",
+      "id": "1063",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#minimumAxes",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15766,7 +16156,7 @@
       "domain": "1"
     },
     {
-      "id": "1038",
+      "id": "1064",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#mobilityEnvelope",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15775,7 +16165,7 @@
       "domain": "1"
     },
     {
-      "id": "1039",
+      "id": "1065",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#mtbf",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15784,7 +16174,7 @@
       "domain": "1"
     },
     {
-      "id": "1040",
+      "id": "1066",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#payloadCapacity",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15793,7 +16183,7 @@
       "domain": "1"
     },
     {
-      "id": "1041",
+      "id": "1067",
       "iri": "https://narrativegoldmine.com/ontology/disruptive-technologies#repeatability",
       "baseIri": "https://narrativegoldmine.com/ontology/disruptive-technologies",
       "attributes": [
@@ -15802,63 +16192,63 @@
       "domain": "1"
     },
     {
-      "id": "1042",
-      "domain": "729",
-      "range": "923",
+      "id": "1068",
+      "domain": "755",
+      "range": "949",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "1043",
-      "domain": "729",
-      "range": "941",
+      "id": "1069",
+      "domain": "755",
+      "range": "967",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "1044",
-      "domain": "922",
-      "range": "941",
+      "id": "1070",
+      "domain": "948",
+      "range": "967",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "1045",
-      "domain": "923",
-      "range": "941",
+      "id": "1071",
+      "domain": "949",
+      "range": "967",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "1046",
-      "domain": "730",
-      "range": "922",
+      "id": "1072",
+      "domain": "756",
+      "range": "948",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "1047",
-      "domain": "732",
-      "range": "996",
+      "id": "1073",
+      "domain": "758",
+      "range": "1022",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "1048",
-      "domain": "941",
-      "range": "833",
+      "id": "1074",
+      "domain": "967",
+      "range": "859",
       "attributes": [
         "anonymous",
         "object"
