@@ -1,0 +1,6 @@
+{
+  "title": "UoS HR and UCU RAG",
+  "content": "- Ingest all the HR documents\n- Ingest the employment law legal black bood\n- Ingest all [[UCU]] training material and documents nationally and in the branch\n- Convert to markdown across the board\n- Build a word cloud across the corpus and strip back to the essentials for the GraphRAG\n- Transfer into the RAGflow system\n- Build an HR agent flow\n- Build a UCU rep flow\n- Build an employee flow\n- Test\n- Change the repeat\n",
+  "properties": {},
+  "backlinks": []
+}

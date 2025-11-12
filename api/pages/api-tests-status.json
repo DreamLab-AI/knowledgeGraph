@@ -1,0 +1,6 @@
+{
+  "title": "API Tests Status",
+  "content": "- [Succesful API Call Tests]\n- {{query \"#apicall-ok\"}}\n- [Failed API Call Tests]([[apicall-not-ok]])\n- {{query \"#apicall-not-ok\"}}\n- [Untested API Calls]([[apicall-untested]])\n- {{query \"#apicall-untested\"}}\n- [API Tests Not Relevant]([[apicall-ignore]])\n- {{query \"#apicall-ignore\"}}\n",
+  "properties": {},
+  "backlinks": []
+}

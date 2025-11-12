@@ -1,0 +1,6 @@
+{
+  "title": "Executing all code blocks in a page",
+  "content": "- {{evalpage}}\n- ## Javascript code block execution\n- ```javascript\n  - {{evalparent}}\n- ## Python multiple code block execution with global variable passing between blocks\n- Note global variable var1 is passed successfully to all the following code blocks\n- ```python\n  - {{evalparent}}\n- ```python\n  - {{evalparent}}\n- ```python\n  - {{evalparent}}\n- ```python\n  - {{evalparent}}\n",
+  "properties": {},
+  "backlinks": []
+}

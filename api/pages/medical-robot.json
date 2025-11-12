@@ -1,0 +1,13 @@
+{
+  "title": "Medical Robot",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: RB-0016\n- domain-prefix:: RB\n- sequence-number:: 0016\n- filename-history:: [\"rb-0016-medical-robot.md\"]\n- preferred-term:: Medical Robot\n- source-domain:: metaverse\n- status:: draft\n- definition:: ### Primary Definition\n- maturity:: draft\n- owl:class:: mv:rb0016medicalrobot\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: [[MetaverseDomain]]\n- ## About rb 0016 medical robot\n- ### Primary Definition\n- ### Original Content\n  - ```\n- Deep learning applications in robot-assisted thoracic surgery[1]\n- AI integration in thoracic surgical systems[2]\n- Robotic ureteral reconstruction techniques[3]\n- Spinal surgery reimbursement policies[4]\n- IEEE standards and hardware identifiers[5]\n- Cardiac surgery publications[6]\n- The **actual current definition** of the rb-0016 medical robot entry\n- Any **existing content** you wish improved\n- Clarification on whether \"rb 0016\" refers to a specific system, classification standard, or generic category\n- The **original source material** or context for this ontology\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0016",
+    "preferred_term": "Medical Robot",
+    "definition": "### Primary Definition",
+    "source_domain": "metaverse",
+    "maturity_level": "draft"
+  }
+}

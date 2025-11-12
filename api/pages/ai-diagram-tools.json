@@ -1,0 +1,6 @@
+{
+  "title": "AI diagram tools",
+  "content": "- Sure, I can help you with that! Here's an example of how you can create a mermaid diagram in code to plan a 2-month project scoping out a music app:\n- make me a mermaid diagram as code for a 6 month 2 person development epic to create an LLM based educational app\n- Sure! Here is a mermaid diagram as code for a 6 month 2 person development epic to create an LLM based educational app: ```mermaid graph TD A[Research and Planning] --> B[Design UI/UX] B --> C[Develop Backend] C --> D[Implement Features] D --> E[Test and Debug] E --> F[Refine and Optimize] F --> G[Deploy and Launch] ``` Please let me know if you have any additional information or if there's anything specific you would like to add to the diagram!\n",
+  "properties": {},
+  "backlinks": []
+}

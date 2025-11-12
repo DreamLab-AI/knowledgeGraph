@@ -1,0 +1,13 @@
+{
+  "title": "Quantum AI",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: ME-0006\n- preferred-term:: Quantum AI\n- source-domain:: metaverse\n- status:: emerging-technology\n- definition:: [Generated from Gartner emerging tech analysis]\n- maturity:: emerging\n- owl:class:: mv:QuantumAI\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: [[MetaverseDomain]]\n- category:: AI & Autonomy\n- Specific information about UK-based quantum AI research or North England implementations\n- Detailed academic papers with full citations on quantum AI specifically\n- Comprehensive future outlook projections for quantum AI\n- British contributions and implementations\n  - Research institutions and programmes\n  - Industry adoption\n  - North England innovation (where relevant)\n- **Created**: 2025-11-11\n- **Source**: Gartner Emerging Technology Analysis\n- **Category**: AI & Autonomy\n- **Status**: Emerging Technology\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "ME-0006",
+    "preferred_term": "Quantum AI",
+    "definition": "[Generated from Gartner emerging tech analysis]",
+    "source_domain": "metaverse",
+    "maturity_level": "emerging"
+  }
+}

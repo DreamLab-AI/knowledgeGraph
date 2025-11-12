@@ -1,0 +1,6 @@
+{
+  "title": "Depth Estimation",
+  "content": "- #Public page\n  - automatically published\n- PatchFusion [zhyever/PatchFusion: An End-to-End Tile-Based Framework for High-Resolution Monocular Metric Depth Estimation (github.com)](https://github.com/zhyever/PatchFusion)\n- Marigold, [prs-eth/Marigold: Marigold: Repurposing Diffusion-Based Image Generators for Monocular Depth Estimation (github.com)](https://github.com/prs-eth/Marigold)\n- DMD-Mix, [[2312.13252v1] Zero-Shot Metric Depth with a Field-of-View Conditioned Diffusion Model (arxiv.org)](https://arxiv.org/abs/2312.13252v1)\n- ZoeDepth. [[2302.12288] ZoeDepth: Zero-shot Transfer by Combining Relative and Metric Depth (arxiv.org)](https://arxiv.org/abs/2302.12288)\n- [Depth Anything Web\n  - a Hugging Face Space by Xenova](https://huggingface.co/spaces/Xenova/depth-anything-web) runs in a browser using js\n",
+  "properties": {},
+  "backlinks": []
+}

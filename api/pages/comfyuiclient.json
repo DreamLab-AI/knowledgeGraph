@@ -1,0 +1,6 @@
+{
+  "title": "ComfyUIClient",
+  "content": "- Typescript client for [[ComfyUI]] which I have [deployed locally](https://github.com/itsKaynine/comfy-ui-client)\n- here /c/Users/john/githubs/comfy-ui-client/examples/generate/dist\n- ```javascript import { ComfyUIClient } from 'comfy-ui-client'; import type { Prompt } from 'comfy-ui-client';\n  - {{evalparent}}\n",
+  "properties": {},
+  "backlinks": []
+}

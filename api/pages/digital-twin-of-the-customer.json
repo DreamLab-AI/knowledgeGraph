@@ -1,0 +1,13 @@
+{
+  "title": "Digital Twin of the Customer",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: ME-0013\n- preferred-term:: Digital Twin of the Customer\n- source-domain:: metaverse\n- status:: emerging-technology\n- definition:: [Generated from Gartner emerging tech analysis]\n- maturity:: emerging\n- owl:class:: mv:DigitalTwinoftheCustomer\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: [[MetaverseDomain]]\n- category:: Spatial & Immersive\n- **Unity Technologies** – \"What are Digital Twins and How do They Work?\" (Digital twin creation methodologies and real-time 3D visualization)\n- **McKinsey & Company** – \"What is digital-twin technology?\" (Market analysis projecting 60% annual growth, reaching $73.5 billion by 2027)\n- **Sprinklr** – \"The Role of Digital Twin in The Customer Experience World\" (Customer journey mapping and abandonment reduction)\n- **PTC** – \"What is Digital Twin and why is it important?\" (Service uptime and spatial computing applications)\n- **Esri** – \"Digital Twin Technology & GIS\" (Geospatial frameworks and time-aware representations)\n- British contributions and implementations\n  - Research institutions and programmes\n  - Industry adoption\n  - North England innovation (where relevant)\n- **Created**: 2025-11-11\n- **Source**: Gartner Emerging Technology Analysis\n- **Category**: Spatial & Immersive\n- **Status**: Emerging Technology\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "ME-0013",
+    "preferred_term": "Digital Twin of the Customer",
+    "definition": "[Generated from Gartner emerging tech analysis]",
+    "source_domain": "metaverse",
+    "maturity_level": "emerging"
+  }
+}

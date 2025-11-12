@@ -1,0 +1,13 @@
+{
+  "title": "Multimodal AI",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: ME-0003\n- preferred-term:: Multimodal AI\n- source-domain:: metaverse\n- status:: emerging-technology\n- definition:: [Generated from Gartner emerging tech analysis]\n- maturity:: emerging\n- owl:class:: mv:MultimodalAI\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: [[MetaverseDomain]]\n- category:: AI & Autonomy\n- British contributions and implementations\n  - Research institutions and programmes\n  - Industry adoption\n  - North England innovation (where relevant)\n- **Created**: 2025-11-11\n- **Source**: Gartner Emerging Technology Analysis\n- **Category**: AI & Autonomy\n- **Status**: Emerging Technology\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "ME-0003",
+    "preferred_term": "Multimodal AI",
+    "definition": "[Generated from Gartner emerging tech analysis]",
+    "source_domain": "metaverse",
+    "maturity_level": "emerging"
+  }
+}

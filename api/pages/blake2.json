@@ -1,0 +1,14 @@
+{
+  "title": "BLAKE2",
+  "content": "- ### OntologyBlock\n- ## About BLAKE2\n- The existing definition text from BC-0043-blake2.md\n- Any OntologyBlock metadata that precedes the content section\n- Specific assertions or claims you wish me to verify or update\n- **Performance**: BLAKE2b outperforms SHA-256, SHA-1, and MD5 on 64-bit architectures[2]\n- **Security**: Provides immunity to length extension attacks and indifferentiability from random oracles, comparable to SHA-3[2]\n- **Variants**: BLAKE2b (64-bit optimised, 1–64 byte output) and BLAKE2s (8–32 bit optimised, 1–32 byte output)[3]\n- **Adoption**: Increasingly implemented in cryptographic libraries, blockchain projects, and file integrity systems[6]\n- **Design**: Created by Aumasson, Neves, Wilcox-O'Hearn, and Winnerlein; announced December 2012[2]\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0043",
+    "preferred_term": "BLAKE2",
+    "definition": "Cryptographic hash function within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "source_domain": "blockchain",
+    "maturity_level": "mature",
+    "authority_score": 0.95
+  }
+}

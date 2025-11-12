@@ -1,0 +1,13 @@
+{
+  "title": "Cloud-Native Applications",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: ME-0016\n- preferred-term:: Cloud-Native Applications\n- source-domain:: metaverse\n- status:: emerging-technology\n- definition:: [Generated from Gartner emerging tech analysis]\n- maturity:: emerging\n- owl:class:: mv:Cloud-NativeApplications\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: [[MetaverseDomain]]\n- category:: Infrastructure & Cloud\n- **Scalability**: Applications handle increased workloads without requiring software redesign or rewriting.[2]\n- **Resilience**: Loosely coupled services ensure that individual component failures do not cascade across the system.[2]\n- **Observability**: Built-in monitoring and logging capabilities provide visibility into system behaviour and performance.[1][2]\n- **Manageability**: Automated lifecycle management from development through production reduces operational toil.[2]\n- **Agility**: Shorter application lifecycles and frequent, predictable deployments enable rapid incorporation of user feedback.[4]\n- CNCF published materials and white papers on cloud-native technologies\n- Industry reports from analyst firms specialising in cloud infrastructure\n- Technical documentation from Kubernetes and container ecosystem projects\n- DevOps and software engineering literature addressing microservices patterns\n- British contributions and implementations\n  - Research institutions and programmes\n  - Industry adoption\n  - North England innovation (where relevant)\n- **Created**: 2025-11-11\n- **Source**: Gartner Emerging Technology Analysis\n- **Category**: Infrastructure & Cloud\n- **Status**: Emerging Technology\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "ME-0016",
+    "preferred_term": "Cloud-Native Applications",
+    "definition": "[Generated from Gartner emerging tech analysis]",
+    "source_domain": "metaverse",
+    "maturity_level": "emerging"
+  }
+}

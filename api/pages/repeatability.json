@@ -1,0 +1,13 @@
+{
+  "title": "Repeatability",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: RB-0034\n- domain-prefix:: RB\n- sequence-number:: 0034\n- filename-history:: [\"rb-0034-repeatability.md\"]\n- preferred-term:: Repeatability\n- source-domain:: metaverse\n- status:: draft\n- definition:: ### Primary Definition\n- maturity:: draft\n- owl:class:: mv:rb0034repeatability\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: [[MetaverseDomain]]\n- ## About rb 0034 repeatability\n- ### Primary Definition\n- ### Original Content\n  - ```\n- Repeatability defined as the ability of a measurement or experimental procedure to produce consistent results when performed multiple times under identical conditions\n  - Same operator, equipment, location, and short time intervals maintained\n  - Quantifies the extent to which repeated experimental results agree with one another\n  - Distinct from reproducibility (which involves new data) and replicability (which involves different research teams)\n- Industrial and scientific applications\n  - Manufacturing quality control and product consistency\n  - Clinical laboratory diagnostics and medical testing\n  - Regulatory compliance across sectors\n- Technical precision considerations\n  - Measurement system validation\n  - Experimental approach verification\n  - Controlled variable management\n- Scribbr (2024). Reproducibility vs Replicability: Difference & Examples. Available at: scribbr.com\n- National Centre for Biotechnology Information (2025). Reproducibility and replicability in research: What 452 professors think. *PLoS One*, 20(3), e0319334. https://doi.org/10.1371/journal.pone.0319334\n- Technology Networks (2024). Repeatability vs. Reproducibility. Available at: technologynetworks.com\n- Six Sigma DSI. Repeatability: Test-Retest Reliability & Reproducibility. Available at: sixsigmadsi.com\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0034",
+    "preferred_term": "Repeatability",
+    "definition": "### Primary Definition",
+    "source_domain": "metaverse",
+    "maturity_level": "draft"
+  }
+}

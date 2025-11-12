@@ -1,0 +1,6 @@
+{
+  "title": "Push To Local RAG",
+  "content": "- {{evalpage}}\n- # Simple Data Cleaning and Concatenation for RAG\n- ## Task Description\n- This Logseq page will clean and concatenate markdown files from a specified directory.\n- Steps:\n  - Remove URLs\n  - Remove unwanted characters and special symbols\n  - Normalize whitespace\n  - Exclude files with cleaned content less than 500 bytes\n- Finally, it will write the cleaned and concatenated text to a single output file for use in Retrieval-Augmented Generation (RAG).\n- ## Define File Paths and Import Required Modules\n- ```python\n  - {{evalparent}}\n- ## Text Cleaning Logic\n- ```python\n  - {{evalparent}}\n- ## Concatenate and Clean Files\n- ```python\n  - {{evalparent}}\n- ## Write to Output File\n- ```python\n  - {{evalparent}}\n- ## Summary\n- This script has:\n  - Defined paths for input and output\n  - Created a text cleaning process to remove URLs, special characters, and normalize whitespace\n  - Concatenated all eligible markdown files\n  - Written the cleaned and concatenated text to a single output file\n- The resulting concatenated and cleaned text is stored in the `cleaned_concatenated_text.txt` file, ready for further processing with the RAG system in the Open-webui LLM interface.\n",
+  "properties": {},
+  "backlinks": []
+}

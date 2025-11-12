@@ -1,0 +1,6 @@
+{
+  "title": "Jupyter like behaviour within a page",
+  "content": "- Note use of global variables to pass values between functions\n- ```python\n- {{evalparent}}\n- ```python\n- {{evalparent}}\n",
+  "properties": {},
+  "backlinks": []
+}
