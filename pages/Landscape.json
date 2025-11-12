@@ -1,0 +1,10 @@
+{
+  "backlinks": [],
+  "html": "<h1>Landscape</h1>\n<div class=\"tags\">\n<span class=\"tag\">#Public</span></div>\n<div class=\"blocks\">\n<div class=\"block\" data-id=\"block-0-0\">\n<div class=\"block-content\">#Public page</div>\n<div class=\"block-children\">\n<div class=\"block\" data-id=\"block-1-0\">\n<div class=\"block-content\">automatically published</div>\n</div>\n</div>\n</div>\n<div class=\"block\" data-id=\"block-0-1\">\n<div class=\"block-content\">## AI landscape</div>\n</div>\n<div class=\"block\" data-id=\"block-0-2\">\n<div class=\"block-content\">a16z market analysis [[Landscape]] [market analysis](https://a16z.com/2023/05/25/ai-canon/)</div>\n</div>\n<div class=\"block\" data-id=\"block-0-3\">\n<div class=\"block-content\">Cowboy ventures [[Landscape]] [AI stack overview](https://medium.com/cowboy-ventures/the-new-infra-stack-for-generative-ai-9db8f294dc3f)</div>\n</div>\n</div>\n",
+  "path": "Landscape.md",
+  "properties": {},
+  "tags": [
+    "Public"
+  ],
+  "title": "Landscape"
+}

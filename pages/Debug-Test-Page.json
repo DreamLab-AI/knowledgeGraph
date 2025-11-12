@@ -1,0 +1,8 @@
+{
+  "backlinks": [],
+  "html": "<h1>Debug Test Page</h1>\n<div class=\"blocks\">\n<div class=\"block\" data-id=\"block-0-0\">\n<div class=\"block-content\">This is a test page which has some true and some false assertions.</div>\n<div class=\"block-children\">\n<div class=\"block\" data-id=\"block-1-0\">\n<div class=\"block-content\">Kamala Harris won the 2024 presidential race.</div>\n</div>\n</div>\n</div>\n<div class=\"block\" data-id=\"block-0-1\">\n<div class=\"block-content\">OpenAI are the leading AI company in the world by market cap</div>\n<div class=\"block-children\">\n<div class=\"block\" data-id=\"block-1-0\">\n<div class=\"block-content\">This is a list of the other</div>\n<div class=\"block-children\">\n<div class=\"block\" data-id=\"block-2-0\">\n<div class=\"block-content\">Cohere</div>\n</div>\n<div class=\"block\" data-id=\"block-2-1\">\n<div class=\"block-content\">Anthropic</div>\n</div>\n<div class=\"block\" data-id=\"block-2-2\">\n<div class=\"block-content\">Microsoft</div>\n</div>\n<div class=\"block\" data-id=\"block-2-3\">\n<div class=\"block-content\">Mistral</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<div class=\"block\" data-id=\"block-0-2\">\n<div class=\"block-content\">[[debug linked node]]</div>\n</div>\n</div>\n",
+  "path": "Debug Test Page.md",
+  "properties": {},
+  "tags": [],
+  "title": "Debug Test Page"
+}

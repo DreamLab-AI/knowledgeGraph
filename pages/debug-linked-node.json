@@ -1,0 +1,8 @@
+{
+  "backlinks": [],
+  "html": "<h1>debug linked node</h1>\n<div class=\"blocks\">\n<div class=\"block\" data-id=\"block-0-0\">\n<div class=\"block-content\">This is a node linked to [[Debug Test Page]]</div>\n</div>\n</div>\n",
+  "path": "debug linked node.md",
+  "properties": {},
+  "tags": [],
+  "title": "debug linked node"
+}
