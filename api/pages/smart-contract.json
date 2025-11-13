@@ -1,6 +1,6 @@
 {
   "title": "Smart Contract",
-  "content": "- ### OntologyBlock\n- ## About employs\n",
+  "content": "- ### OntologyBlock\n- ## About employs\n- **Rust Example**: Contracts are typically defined using Rust, providing a robust framework for schema creation.\n- **Simplification**: Future iterations aim to simplify schema creation, making it more accessible to non-developers.\n",
   "properties": {},
   "backlinks": [],
   "ontology": {
