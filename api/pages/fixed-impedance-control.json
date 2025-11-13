@@ -1,0 +1,14 @@
+{
+  "title": "Fixed Impedance Control",
+  "content": "- ### OntologyBlock\n- ## About Fixed Impedance Control\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0152",
+    "preferred_term": "Fixed Impedance Control",
+    "definition": "Fixed impedance control uses predetermined constant impedance parameters.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

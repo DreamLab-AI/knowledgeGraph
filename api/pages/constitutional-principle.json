@@ -1,0 +1,14 @@
+{
+  "title": "Constitutional Principle",
+  "content": "- ### OntologyBlock\n- ## About Constitutional Principle\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0826",
+    "preferred_term": "Constitutional Principle",
+    "definition": "Guiding principle for constitutional AI systems.",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

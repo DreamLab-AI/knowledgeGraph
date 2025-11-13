@@ -1,0 +1,6 @@
+{
+  "title": "Style Guide",
+  "content": "- This guide aims to capture the stylistic nuances of the provided text for accurate imitation by an LLM. It focuses on replicating the author's voice, tone, and the specific Logseq markdown and markup conventions.\n- **I. Overall Tone and Voice:**\n- **II. Logseq Markdown and Markup:**\n- * **Headings and Subheadings:**  Use Logseq's hierarchical heading structure (`- #`, `- ##`, `- ###`, etc.) to organize the text logically. Capitalize the first letter of each word in headings.\n- **IV. Content and Structure:**\n- * **Focus on Emerging Technologies:**  Maintain the focus on emerging technologies, particularly decentralization, AI, XR, and their convergence.\n- **V. Additional Instructions for the LLM:**\n- * **Adhere strictly to the guidelines outlined above.**\n- This detailed style guide provides a comprehensive framework for an LLM to accurately emulate the writing style and markup conventions of the provided text, enabling the generation of new content that seamlessly integrates with the existing knowledge base.\n",
+  "properties": {},
+  "backlinks": []
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Robot Standard",
+  "content": "- ### OntologyBlock\n- ## About ISO 10218\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0106",
+    "preferred_term": "ISO 10218",
+    "definition": "International standard for industrial robot safety, consisting of Part 1 (robots) and Part 2 (robot systems and integration).",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

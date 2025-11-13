@@ -1,0 +1,14 @@
+{
+  "title": "Fungible Token",
+  "content": "- ### OntologyBlock\n- ## About Fungible Token\n  - ERC-20 tokens, stablecoins, governance tokens, utility tokens\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0509",
+    "preferred_term": "Fungible Token",
+    "definition": "A token where each unit is identical and interchangeable with any other unit of the same token, like traditional currencies. Each token holds equal value to another token of the same type.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

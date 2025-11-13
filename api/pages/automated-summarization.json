@@ -1,0 +1,14 @@
+{
+  "title": "Automated Summarization",
+  "content": "- ### OntologyBlock\n- ## About Automated Summarization\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0856",
+    "preferred_term": "Automated Summarization",
+    "definition": "",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

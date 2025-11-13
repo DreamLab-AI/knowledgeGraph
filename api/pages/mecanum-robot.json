@@ -1,0 +1,14 @@
+{
+  "title": "Mecanum Robot",
+  "content": "- ### OntologyBlock\n- ## About Mecanum Wheel Robot\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0117",
+    "preferred_term": "Mecanum Wheel Robot",
+    "definition": "Mecanum robot uses four mecanum wheels with angled rollers enabling true omnidirectional movement.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

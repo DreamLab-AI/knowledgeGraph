@@ -1,0 +1,14 @@
+{
+  "title": "Pure Proof Of Stake",
+  "content": "- ### OntologyBlock\n- ## About Pure Proof of Stake\n  - Algorand\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0549",
+    "preferred_term": "Pure Proof of Stake",
+    "definition": "A PoS variant that randomly selects validators from all stakers proportional to their stake weight, without delegation mechanisms.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

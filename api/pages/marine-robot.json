@@ -1,0 +1,14 @@
+{
+  "title": "Marine Robot",
+  "content": "- ### OntologyBlock\n- ## About Marine Robot\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0111",
+    "preferred_term": "Marine Robot",
+    "definition": "Marine robot is a robot capable of operating on or under water surfaces.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

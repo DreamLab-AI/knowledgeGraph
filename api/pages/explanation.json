@@ -1,0 +1,14 @@
+{
+  "title": "Explanation",
+  "content": "- ### OntologyBlock\n- ## About Explanation\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0823",
+    "preferred_term": "Explanation",
+    "definition": "Explanation of AI system behavior or decisions.",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

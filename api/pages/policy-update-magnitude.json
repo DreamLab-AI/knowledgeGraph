@@ -1,0 +1,14 @@
+{
+  "title": "Policy Update Magnitude",
+  "content": "- ### OntologyBlock\n- ## About Policy Update Magnitude\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0824",
+    "preferred_term": "Policy Update Magnitude",
+    "definition": "Size of policy updates in reinforcement learning.",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

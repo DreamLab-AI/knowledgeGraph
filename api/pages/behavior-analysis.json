@@ -1,0 +1,14 @@
+{
+  "title": "Behavior Analysis",
+  "content": "- ### OntologyBlock\n- ## About Behavior Analysis\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0860",
+    "preferred_term": "Behavior Analysis",
+    "definition": "",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

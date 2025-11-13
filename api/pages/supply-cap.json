@@ -1,0 +1,14 @@
+{
+  "title": "Supply Cap",
+  "content": "- ### OntologyBlock\n- ## About Supply Cap\n  - Bitcoin's 21 million BTC cap\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0529",
+    "preferred_term": "Supply Cap",
+    "definition": "A predetermined maximum limit on the total number of tokens that can ever exist, enforced by protocol rules.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

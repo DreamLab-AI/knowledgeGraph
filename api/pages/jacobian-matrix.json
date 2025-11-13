@@ -1,0 +1,13 @@
+{
+  "title": "Jacobian Matrix",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: RB-0030\n- domain-prefix:: RB\n- sequence-number:: 0030\n- filename-history:: [\"rb-0030-jacobian-matrix.md\"]\n- preferred-term:: Jacobian Matrix\n- source-domain:: metaverse\n- status:: draft\n- definition:: ### Primary Definition\n- maturity:: draft\n- owl:class:: mv:rb0030jacobianmatrix\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: [[MetaverseDomain]]\n- ## About rb 0030 jacobian matrix\n- ### Primary Definition\n- ### Original Content\n  - ```\n- The Jacobian matrix represents the matrix of all first-order partial derivatives of a vector-valued function\n  - Fundamental to vector calculus and optimisation theory\n  - Essential mathematical tool in machine learning and numerical analysis\n  - Provides the best linear approximation of a function around a given point[1]\n- Computational efficiency through sparse representations\n  - Modern neural networks with trillions of parameters necessitate sparse Jacobian operators rather than dense matrix storage[1]\n  - Automatic differentiation (AD) circumvents memory limitations by using Jacobian operators that avoid explicit coefficient storage[1]\n  - Structural zeros in Jacobian matrices (particularly evident in convolutional layers) represent significant computational waste when using dense formats[1]\n- Technical capabilities and limitations\n  - Dense matrix representations (NumPy ndarray, PyTorch Tensor, JAX Array) become intractable for large-scale applications[1]\n  - Sparse operators materialise to sparse matrices, enabling scalable computation[1]\n- Recent developments in sparse automatic differentiation\n  - Automatic Sparse Differentiation techniques leverage Jacobian sparsity to accelerate computation[1]\n  - Fractional-order Jacobian matrix differentiation emerging as research direction in neural networks (arXiv:2506.07408, submitted June 2025)\n- Foundational applications\n  - Stochastic Gradient Descent optimisation relies on gradient and Jacobian computations[2]\n- Scalable sparse differentiation for trillion-parameter models\n- Fractional-order extensions and their practical applications\n- Memory-efficient operator representations\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0030",
+    "preferred_term": "Jacobian Matrix",
+    "definition": "### Primary Definition",
+    "source_domain": "metaverse",
+    "maturity_level": "draft"
+  }
+}

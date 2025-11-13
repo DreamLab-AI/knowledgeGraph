@@ -1,0 +1,13 @@
+{
+  "title": "Stiffness",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: RB-0039\n- domain-prefix:: RB\n- sequence-number:: 0039\n- filename-history:: [\"rb-0039-stiffness.md\"]\n- preferred-term:: Stiffness\n- source-domain:: metaverse\n- status:: draft\n- definition:: ### Primary Definition\n- maturity:: draft\n- owl:class:: mv:rb0039stiffness\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: [[MetaverseDomain]]\n- ## About rb 0039 stiffness\n- ### Primary Definition\n- ### Original Content\n  - ```\n- The current definition or content of the rb 0039 stiffness entry itself\n- Context about which ontology system this belongs to (BFO, RO, CHEBI, or another framework)\n- Clarification on whether \"rb 0039\" refers to a specific resource or classification system\n- Any existing documentation or previous versions of this entry\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0039",
+    "preferred_term": "Stiffness",
+    "definition": "### Primary Definition",
+    "source_domain": "metaverse",
+    "maturity_level": "draft"
+  }
+}

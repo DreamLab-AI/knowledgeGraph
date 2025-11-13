@@ -1,0 +1,14 @@
+{
+  "title": "Value Transfer",
+  "content": "- ### OntologyBlock\n- ## About Value Transfer\n- The current \"Value Transfer.md\" definition you wish improved\n- Any specific North England organisations or initiatives you'd like highlighted\n- Particular academic sources you've already referenced that need completion\n- The target audience's technical level\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "DT-0001",
+    "preferred_term": "Value Transfer",
+    "definition": "The mechanism and process by which economic value, rights, or utility are exchanged between parties across physical, digital, and virtual domains, encompassing monetary systems, token-based systems, resource allocation, and rights transfer protocols.",
+    "source_domain": "cross-domain",
+    "maturity_level": "mature",
+    "authority_score": 1.0
+  }
+}

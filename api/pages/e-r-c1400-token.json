@@ -1,0 +1,14 @@
+{
+  "title": "E R C1400 Token",
+  "content": "- ### OntologyBlock\n- ## About ERC-1400 Token\n  - Tokenized securities, regulated asset tokens\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0518",
+    "preferred_term": "ERC-1400 Token",
+    "definition": "A security token standard tailored for regulatory compliance, providing transfer restrictions, document management, and compliance hooks for securities law requirements.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

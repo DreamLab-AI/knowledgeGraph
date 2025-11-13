@@ -1,0 +1,14 @@
+{
+  "title": "Rack Pinion Actuator",
+  "content": "- ### OntologyBlock\n- ## About Rack and Pinion Actuator\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0178",
+    "preferred_term": "Rack and Pinion Actuator",
+    "definition": "Rack and pinion actuator converts rotary motion to linear via gear mechanism.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

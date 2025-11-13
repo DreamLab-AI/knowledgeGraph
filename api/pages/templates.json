@@ -1,0 +1,6 @@
+{
+  "title": "Templates",
+  "content": "- template:: python code block\n  - {{evalparent}}\n- #### Basic Javascript  block\n- template:: javascript code block\n  - {{evalparent}}\n",
+  "properties": {},
+  "backlinks": []
+}

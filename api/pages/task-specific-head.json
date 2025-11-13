@@ -1,0 +1,12 @@
+{
+  "title": "Task-Specific Head",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: AI-0258\n- preferred-term:: Task Specific Head\n- source-domain:: metaverse\n- status:: draft\n- definition:: A small neural network layer or module added on top of a pre-trained model to adapt it for specific downstream tasks. Task-specific heads process the pre-trained model's representations to produce task-appropriate outputs (classifications, spans, sequences, etc.).\n- Recent implementations of task-specific heads in production systems (2024-2025)\n- Academic literature and papers on this architecture\n- UK-based organisations deploying this approach\n- Current technical standards and frameworks\n- North England research institutions or companies working in this space\n- Verify whether facts have changed since 2024\n- Identify current industry adoption patterns\n- Provide UK or North England examples\n- Cite recent academic papers with DOIs\n- Describe 2025 landscape developments\n- Distinguish between dated and current content\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0258",
+    "preferred_term": "Task Specific Head",
+    "definition": "A small neural network layer or module added on top of a pre-trained model to adapt it for specific downstream tasks. Task-specific heads process the pre-trained model's representations to produce task-appropriate outputs (classifications, spans, sequences, etc.).",
+    "source_domain": "metaverse"
+  }
+}

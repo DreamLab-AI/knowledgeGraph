@@ -1,0 +1,14 @@
+{
+  "title": "E R C1400 Standard",
+  "content": "- ### OntologyBlock\n- ## About ERC-1400 Standard\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0541",
+    "preferred_term": "ERC-1400 Standard",
+    "definition": "Security token standard with compliance controls and transfer restrictions.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

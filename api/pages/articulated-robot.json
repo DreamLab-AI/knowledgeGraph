@@ -1,0 +1,14 @@
+{
+  "title": "Articulated Robot",
+  "content": "- ### OntologyBlock\n- ## About Articulated Robot\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0130",
+    "preferred_term": "Articulated Robot",
+    "definition": "Articulated robot has multiple rotary joints (typically six) enabling complex 3D movements.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

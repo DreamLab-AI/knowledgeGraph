@@ -1,0 +1,14 @@
+{
+  "title": "Hexacopter",
+  "content": "- ### OntologyBlock\n- ## About Hexacopter\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0123",
+    "preferred_term": "Hexacopter",
+    "definition": "Hexacopter is a six-rotor VTOL aircraft providing redundancy.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Coinbase Transaction",
+  "content": "- ### OntologyBlock\n- ## About Coinbase Transaction\n- Academic context and technical foundations\n- Current landscape and implementations\n- Technical capabilities and limitations\n- UK and North England context (where applicable to blockchain infrastructure)\n- Future directions and research priorities\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0068",
+    "preferred_term": "Coinbase Transaction",
+    "definition": "Block reward transaction within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "source_domain": "blockchain",
+    "maturity_level": "mature",
+    "authority_score": 0.95
+  }
+}

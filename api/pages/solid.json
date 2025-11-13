@@ -1,0 +1,6 @@
+{
+  "title": "Solid",
+  "content": "- [Solid](https://solidproject.org/),  (and offshoot [[Solid-Lite]]) is an exciting project led by Prof. Tim Berners-Lee, inventor of the World Wide Web, taking place at MIT. The project aims to radically change the way Web applications work today, resulting in true data ownership as well as improved privacy. Solid (derived from \\\"social linked data\\\") is a proposed set of conventions and tools for building decentralized social applications based on Linked Data principles. Solid is modular and extensible and it relies as much as possible on existing W3C standards and protocols.\"\n- <iframe src=\"https://www.bbc.co.uk/news/technology-54871705\" style=\"width: 60%; height: 600px\"></iframe>\n- [[Solid-Lite]] might be taking up the mantle here\n- [Update context URI by melvincarvalho · Pull Request #3895 · perma-id/w3id.org (github.com)](https://github.com/perma-id/w3id.org/pull/3895/files)\n- ![W3 weird Solid graph dystopia](https://www.w3.org/DesignIssues/diagrams/solid/SN-dystopia.svg)\n",
+  "properties": {},
+  "backlinks": []
+}

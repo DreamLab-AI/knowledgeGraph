@@ -1,0 +1,14 @@
+{
+  "title": "State Space Control",
+  "content": "- ### OntologyBlock\n- ## About State Space Control\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0149",
+    "preferred_term": "State Space Control",
+    "definition": "State space control uses modern control theory with state feedback.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

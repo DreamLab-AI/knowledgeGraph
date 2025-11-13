@@ -1,0 +1,14 @@
+{
+  "title": "Smart Contract",
+  "content": "- ### OntologyBlock\n- ## About employs\n- **Rust Example**: Contracts are typically defined using Rust, providing a robust framework for schema creation.\n- **Simplification**: Future iterations aim to simplify schema creation, making it more accessible to non-developers.\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0508",
+    "preferred_term": "employs",
+    "definition": "Indicates what is employed or utilized.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

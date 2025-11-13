@@ -1,0 +1,14 @@
+{
+  "title": "Gasper Consensus",
+  "content": "- ### OntologyBlock\n- ## About Gasper Consensus\n  - Ethereum (post-Merge)\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0554",
+    "preferred_term": "Gasper Consensus",
+    "definition": "Ethereum's PoS consensus combining Casper FFG (finality gadget) with LMD GHOST (fork choice rule). Validators directly stake ether without delegation mechanism.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

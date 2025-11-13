@@ -1,0 +1,14 @@
+{
+  "title": "Fixed Wing Uav",
+  "content": "- ### OntologyBlock\n- ## About Fixed-Wing UAV\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0125",
+    "preferred_term": "Fixed-Wing UAV",
+    "definition": "Fixed-wing UAV uses wings for lift enabling long-range and efficient flight.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Text To3d",
+  "content": "- ### OntologyBlock\n- ## About Text-to-3D\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0858",
+    "preferred_term": "Text-to-3D",
+    "definition": "",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

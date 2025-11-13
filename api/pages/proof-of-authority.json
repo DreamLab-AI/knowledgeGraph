@@ -1,0 +1,14 @@
+{
+  "title": "Proof Of Authority",
+  "content": "- ### OntologyBlock\n- ## About Proof of Authority\n  - VeChain, xDai Chain, POA Network\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0547",
+    "preferred_term": "Proof of Authority",
+    "definition": "A consensus mechanism where pre-approved validators (authorities) with verified identities are authorized to validate transactions and create blocks.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Performance Level",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: RB-0101\n- domain-prefix:: RB\n- sequence-number:: 0101\n- filename-history:: [\"rb-0101-performance-level.md\"]\n- preferred-term:: Performance Level\n- source-domain:: metaverse\n- status:: draft\n- definition:: ### Primary Definition\n- maturity:: draft\n- owl:class:: mv:rb0101performancelevel\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: [[MetaverseDomain]]\n- ## About rb 0101 performance level\n- ### Primary Definition\n- ### Original Content\n  - ```\n- The original ontology entry you're referencing\n- Authoritative sources defining \"rb 0101 performance level\"\n- Current academic literature on this specific concept\n- UK or North England contextual materials\n- Verified technical specifications or standards\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0101",
+    "preferred_term": "Performance Level",
+    "definition": "### Primary Definition",
+    "source_domain": "metaverse",
+    "maturity_level": "draft"
+  }
+}

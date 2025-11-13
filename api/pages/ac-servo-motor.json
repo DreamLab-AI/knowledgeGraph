@@ -1,0 +1,14 @@
+{
+  "title": "Ac Servo Motor",
+  "content": "- ### OntologyBlock\n- ## About AC Servo Motor\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0171",
+    "preferred_term": "AC Servo Motor",
+    "definition": "AC servo motor is most common in industrial robots providing high performance.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Lower Limb Exoskeleton",
+  "content": "- ### OntologyBlock\n- ## About Lower Limb Exoskeleton\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0140",
+    "preferred_term": "Lower Limb Exoskeleton",
+    "definition": "Lower limb exoskeleton assists or augments walking and leg movements.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

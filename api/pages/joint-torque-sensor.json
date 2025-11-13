@@ -1,0 +1,14 @@
+{
+  "title": "Joint Torque Sensor",
+  "content": "- ### OntologyBlock\n- ## About Joint Torque Sensor\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0159",
+    "preferred_term": "Joint Torque Sensor",
+    "definition": "Joint torque sensor measures torque applied at revolute or prismatic joint.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

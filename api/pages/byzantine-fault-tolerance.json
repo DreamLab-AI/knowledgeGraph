@@ -1,0 +1,14 @@
+{
+  "title": "Byzantine Fault Tolerance",
+  "content": "- ### OntologyBlock\n- ## About Byzantine Fault Tolerance\n  - Classical problem formalized by Lamport, Shostak, and Pease (1982). First practical implementation by Castro and Liskov (1999).\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0544",
+    "preferred_term": "Byzantine Fault Tolerance",
+    "definition": "The feature of a distributed network to reach consensus on the same value even when some nodes fail to respond or respond with incorrect information. Enables networks to function correctly despite malicious or faulty nodes comprising less than one-third of the network.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

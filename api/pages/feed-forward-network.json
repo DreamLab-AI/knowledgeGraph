@@ -1,0 +1,14 @@
+{
+  "title": "Feed Forward Network",
+  "content": "- ### OntologyBlock\n- ## About Feed Forward Network\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0811",
+    "preferred_term": "Feed Forward Network",
+    "definition": "",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

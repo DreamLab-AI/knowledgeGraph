@@ -1,0 +1,14 @@
+{
+  "title": "Quadcopter",
+  "content": "- ### OntologyBlock\n- ## About Quadcopter\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0122",
+    "preferred_term": "Quadcopter",
+    "definition": "Quadcopter is a four-rotor VTOL aircraft.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

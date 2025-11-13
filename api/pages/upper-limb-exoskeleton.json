@@ -1,0 +1,14 @@
+{
+  "title": "Upper Limb Exoskeleton",
+  "content": "- ### OntologyBlock\n- ## About Upper Limb Exoskeleton\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0139",
+    "preferred_term": "Upper Limb Exoskeleton",
+    "definition": "Upper limb exoskeleton assists or augments arm and shoulder movements.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

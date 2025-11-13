@@ -1,0 +1,14 @@
+{
+  "title": "Human Preference",
+  "content": "- ### OntologyBlock\n- ## About Property\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0801",
+    "preferred_term": "Property",
+    "definition": "Capability for autonomous self-improvement.",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

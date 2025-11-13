@@ -1,0 +1,14 @@
+{
+  "title": "Tendermint Consensus",
+  "content": "- ### OntologyBlock\n- ## About Tendermint Consensus\n  - Cosmos Hub, Binance Chain\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0557",
+    "preferred_term": "Tendermint Consensus",
+    "definition": "A BFT consensus engine combining PBFT with PoS, providing instant finality and supporting high transaction throughput.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

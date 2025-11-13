@@ -1,0 +1,12 @@
+{
+  "title": "Confusion Matrix",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: AI-0111\n- preferred-term:: Confusion Matrix\n- source-domain:: metaverse\n- status:: draft\n- definition:: A tabular visualisation and analytical tool summarising the performance of a classification model by displaying the counts or proportions of predictions cross-tabulated against actual class labels, typically organised with predicted classes as columns and actual classes as rows (or vice versa), enabling systematic analysis of where a model succeeds and fails, calculation of various performance metrics, and identification of specific confusion patterns between classes.\n- **No dated news or time-sensitive announcements** to remove (the results are educational, not journalistic)\n- **No UK or North England context** whatsoever (confusion matrices are geographically agnostic mathematical tools)\n- **No regional case studies** or British institutional implementations\n- **No complete academic citations** with DOIs or verified journal references\n- **No discussion of emerging trends, research directions, or anticipated challenges** in confusion matrix methodology\n- **No information about standards, frameworks, or industry-specific adoption patterns**\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0111",
+    "preferred_term": "Confusion Matrix",
+    "definition": "A tabular visualisation and analytical tool summarising the performance of a classification model by displaying the counts or proportions of predictions cross-tabulated against actual class labels, typically organised with predicted classes as columns and actual classes as rows (or vice versa), enabling systematic analysis of where a model succeeds and fails, calculation of various performance metrics, and identification of specific confusion patterns between classes.",
+    "source_domain": "metaverse"
+  }
+}

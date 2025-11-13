@@ -1,0 +1,14 @@
+{
+  "title": "Proprioceptive Sensor",
+  "content": "- ### OntologyBlock\n- ## About Proprioceptive Sensor\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0155",
+    "preferred_term": "Proprioceptive Sensor",
+    "definition": "Proprioceptive sensor provides information about robot's own configuration and internal forces.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}
