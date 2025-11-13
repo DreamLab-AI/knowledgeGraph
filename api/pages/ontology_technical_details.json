@@ -1,6 +1,0 @@
-{
-  "title": "ONTOLOGY_TECHNICAL_DETAILS",
-  "content": "- [[Hyperledger Besu]]\n- [[Enterprise Blockchain Architecture]]\n- [[Permissioned Blockchain]]\n- [[Private Channels]]\n- [[Hyperledger Fabric]]\n- [[Enterprise Blockchain Architecture]]\n- [[Permissioned Blockchain]]\n- Related implementations (Fabric vs Besu)\n- Parent architecture (Enterprise Blockchain Architecture)\n- Related patterns (Permissioned Blockchain)\n- [[Hyperledger Fabric]]     ↔ (reciprocal)\n- [[Hyperledger Besu]]       ↔ (reciprocal)\n- [[Permissioned Blockchain]] ↔ (reciprocal)\n- `[[Data Structure]]` - MISSING ❌\n- `[[Distributed System]]` - MISSING ❌\n- `[[Record-Keeping System]]` - MISSING ❌\n- [[Block]]\n- [[Transaction]]\n- [[Node]]\n- [[Consensus Mechanism]]\n- [[Distributed Ledger]]\n- [[Cryptographic System]]\n- [[Peer-to-Peer Network]]\n- BC-0001-blockchain\n- BC-0003-block\n- BC-0006-transaction\n- [... 92 more pages ...]\n",
-  "properties": {},
-  "backlinks": []
-}

@@ -1,6 +1,0 @@
-{
-  "title": "Upscaling",
-  "content": "- CSSR [[ComfyUI]] SOTA  [workflow for upscale](https://discord.com/channels/1076117621407223829/1196177599244812468/1196177599244812468)\n- [ccsr_creative_upscale.json](../assets/ccsr_creative_upscale_1706648180350_0.json)\n- Might have to install from github [kijai/ComfyUI-CCSR: ComfyUI wrapper node for CCSR (github.com)](https://github.com/kijai/ComfyUI-CCSR)\n- [kijai/ComfyUI-SUPIR: SUPIR upscaling wrapper for ComfyUI (github.com)](https://github.com/kijai/ComfyUI-SUPIR)\n- [SUPIR: Best Stable Diffusion Super Resolution Upscaler + full workflow. (youtube.com)](https://www.youtube.com/watch?v=Q9y-7Nwj2ic)\n- [(2) SUPIR v2 nodes from Kijai are available on manager, and they look brilliant! : comfyui (reddit.com)](https://www.reddit.com/r/comfyui/comments/1bh07ke/supir_v2_nodes_from_kijai_are_available_on/)\n- https://medium.com/@yushantripleseven/supir-image-restoration-cd4f409ccd34#3b78\n- [OpenModelDB](https://openmodeldb.info/)\n- [Civitai's Guide to Image Upscaling!\n  - Civitai Education](https://education.civitai.com/civitais-guide-to-image-upscaling/\n",
-  "properties": {},
-  "backlinks": []
-}

@@ -1,6 +1,0 @@
-{
-  "title": "AI Search",
-  "content": "- [Turbo Seek – AI Search Engine](https://www.turboseek.io/)\n- kagi AI API [FastGPT | Kagi's Docs](https://help.kagi.com/kagi/api/fastgpt.html)\n- [Running tasks - Documentation - Nolita](https://docs.nolita.ai/tasks.html) agentic search framework [[Projects]] [[AR Frame]]\n- DONE Consider putting the summariser I wrote into a pipeline in open webui [[SHOULD]]\n- [pipelines/examples/pipelines/web/linkSummariser.py at main · jjohare/pipelines (github.com)](https://github.com/jjohare/pipelines/blob/main/examples/pipelines/web/linkSummariser.py)\n",
-  "properties": {},
-  "backlinks": []
-}

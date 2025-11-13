@@ -1,6 +1,0 @@
-{
-  "title": "Layer2",
-  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: mv-1761742247941\n- preferred-term:: Layer2\n- source-domain:: metaverse\n- status:: draft\n- definition:: A component of the metaverse ecosystem.\n- maturity:: draft\n- owl:class:: mv:Layer2\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: [[MetaverseDomain]]\n- ## About Layer2\n- A component of the metaverse ecosystem.\n- ### Original Content\n  - ```\n- **Purpose**: Process transactions faster and cheaper than the base layer\n- **Examples**: Optimistic Rollups, zk-Rollups, and hybrid compute solutions\n- **Application**: Enabling efficient NFT trading, DeFi operations, and micro-transactions\n- [[Metaverse]]\n- [[MetaverseDomain]]\n- **Last Enriched**: 2025-11-11\n- **Enrichment Source**: Perplexity AI (Sonar)\n- **Verification Status**: Automated enrichment - human review recommended\n",
-  "properties": {},
-  "backlinks": []
-}

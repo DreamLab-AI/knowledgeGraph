@@ -1,6 +1,0 @@
-{
-  "title": "Executing Javascript in a code block",
-  "content": "- ```javascript\n- {{evalparent}}\n",
-  "properties": {},
-  "backlinks": []
-}

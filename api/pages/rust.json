@@ -1,6 +1,0 @@
-{
-  "title": "Rust",
-  "content": "- # Distilled Rust Advice\n- **Refactor main.rs into separate layers:**\n  - ```\n- **Define traits for repository pattern:**\n  - ```\n- **Encapsulate dependencies in adapters (avoid leaking 3rd party libraries):**\n  - ```\n- **Testability improvements with mocks:**\n  - ```\n- **Decouple domain from transport (HTTP) layer:**\n  - ```\n- **Create a service layer for complex domain logic:**\n  - ```\n- **Set up bootstrapping logic in main.rs:**\n  - ```\n- **Define async repository methods and handle error scenarios:**\n  - ```\n",
-  "properties": {},
-  "backlinks": []
-}

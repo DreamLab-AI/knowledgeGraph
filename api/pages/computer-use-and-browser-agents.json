@@ -1,6 +1,0 @@
-{
-  "title": "Computer Use and Browser Agents",
-  "content": "- ### Expanding Agent Capabilities\n  - Browser agents can interact with any web-based interface, dramatically expanding what AI systems can accomplish. They operate websites designed for humans rather than requiring specific API access.\n- ### Use Cases and Applications\n  - Browser agents excel at:\n  - Web scraping and data collection from sites without APIs\n  - Testing web applications and user interfaces\n  - Automated form filling and data entry\n  - Research across multiple websites and databases\n  - E-commerce and booking tasks\n- ### Technical Implementation\n  - Modern browser agent frameworks:\n  - Provide headless browser environments\n  - Support real-time session monitoring\n  - Handle authentication and session management\n  - Offer both programmatic and visual feedback\n  - Scale to multiple concurrent sessions\n",
-  "properties": {},
-  "backlinks": []
-}

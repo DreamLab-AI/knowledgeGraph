@@ -1,6 +1,0 @@
-{
-  "title": "Python to list nodes",
-  "content": "- Note Python will load the first time this block is evaluated\n- ```python\n- {{evalparent}}\n",
-  "properties": {},
-  "backlinks": []
-}
