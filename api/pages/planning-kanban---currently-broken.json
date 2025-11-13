@@ -1,6 +1,0 @@
-{
-  "title": "Planning Kanban - currently broken",
-  "content": "- {{renderer :kboard-query, High level Projects View, progress, TODO, DOING, DONE, cover, 260px}}\n- {{query (and [[PlayerTwo]] (property :progress))}}\n- {{query (and [[KnoWhere]] (property :progress))}}\n- {{query (and [[Training Material]] (property :progress))}}\n- {{query (and [[Pete Woodbridge]] (property :progress))}}\n- {{query (and [[ParentsGuideToAI]] (property :progress))}}\n- {{query (and [[NLW education discord]] (property :progress))}}\n",
-  "properties": {},
-  "backlinks": []
-}

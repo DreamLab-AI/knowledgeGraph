@@ -1,6 +1,0 @@
-{
-  "title": "Player Two code",
-  "content": "- {{renderer code_diagram,mermaid}}\n- ```mermaid sequenceDiagram\n- ## Group file encryption\n- Brief from Kalila\n  - No keys are traded on our server. (trustless)\n  - One user can create an encrypted object, then invite other users to join after the fact.\n  - They can share a code or key over Discord for example to complete the initial invite process if need be.\n  - ONE of N users can ALWAYS decrypt and reencrypt the object.\n- Would like to use Solid-Lite and NosDev, but they are using firebase containers right now\n- This is the workflow\n  - Each user of a system has a self generated bip85 master key.\n  - From that we can get access to all of the usual derivation paths.\n  - The path that they are using for their ID to authenticate with the server is m/44'/1237\n  - The users client creates a 32 byte private key from the 0 index of path 1237\n  - A public key is created from that.\n  - The public key is used as part of a webjson token to auth with a payment server, and the public key is added as hex to the whitelist for the server side\n  - The client can then communicate with \"middleware\" server which contains the whitelist.\n- Diagrams from VSCode\n- ```mermaid\n- ```mermaid graph LR\n- ```mermaid graph TB\n- ```mermaid\n",
-  "properties": {},
-  "backlinks": []
-}

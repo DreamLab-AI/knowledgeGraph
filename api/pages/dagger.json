@@ -1,6 +1,0 @@
-{
-  "title": "Dagger",
-  "content": "- Of course! This is an excellent question and a perfect use case for comparing the traditional Docker wrapper script pattern with Dagger. Your `powerdev.sh` and `Dockerfile` are a very well-structured and powerful example of the conventional approach.\n- ### High-Level Summary\n- ### Advantages of Dagger\n- #### 1. Portability & Language\n- #### 2. Unmatched Caching\n- #### 3. Modularity & Reusability\n- #### 4. CI/Local Parity\n- #### 5. Discoverability & Type Safety\n- ### Disadvantages & Considerations\n- #### 1. Mindset Shift & Learning Curve\n- #### 2. Verbosity for Simple Commands\n- #### 3. Host Device Integration (like GPUs)\n- ### How Your `powerdev` would look in Dagger (Conceptual)\n- ### Conclusion\n- [Build an AI Agent | Dagger](https://docs.dagger.io/quickstart/agent)\n- [Building AI agent from scratch using Dagger - YouTube](https://www.youtube.com/watch?v=1rDcyiR0wZE)\n",
-  "properties": {},
-  "backlinks": []
-}

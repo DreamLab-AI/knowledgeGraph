@@ -1,6 +1,0 @@
-{
-  "title": "Logseq",
-  "content": "- [[Large language models]] [Mixture of Mutli-LoRA local LLM](https://github.com/uukuguy/multi_loras?tab=readme-ov-file#mixture-of-multi-loras)]\n- [[ComfyUI]] [[Autogen]] demo?\n- [[ComfyUI]] LoRA training demo?\n- [[Node based visual interfaces]] demo for NFT creation?\n- docker web version [logseq/docs/docker-web-app-guide.md at master · logseq/logseq (github.com)](https://github.com/logseq/logseq/blob/master/docs/docker-web-app-guide.md)\n- [Custom Prompt for OCR Image using ocr.space · debanjandhar12/logseq-chatgpt-plugin · Discussion #26 (github.com)](https://github.com/debanjandhar12/logseq-chatgpt-plugin/discussions/26)\n- [ahonn/logseq-plugin-ai-assistant: A powerful tool that enhances your Logseq experience by allowing you to interact with AI models like OpenAI's gpt-3.5-turbo. (github.com)](https://github.com/ahonn/logseq-plugin-ai-assistant)\n- # Plugin development\n- [LongarMD/logseq-plugin-gpt-generation (github.com)](https://github.com/LongarMD/logseq-plugin-gpt-generation)\n",
-  "properties": {},
-  "backlinks": []
-}

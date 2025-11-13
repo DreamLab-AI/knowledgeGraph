@@ -1,6 +1,0 @@
-{
-  "title": "KOHYA Dreambooth and similar",
-  "content": "- [bmaltais/kohya_ss (github.com)](https://github.com/bmaltais/kohya_ss/issues/1915)\n- https://github.com/Nerogar/OneTrainer/wiki/Lessons-Learnt-and-Tutorials\n- [Stable-Diffusion/Tutorials/Full-Stable-Diffusion-XL-SDXL-DreamBooth-Training-Tutorial-On-Kaggle.md at main · FurkanGozukara/Stable-Diffusion (github.com)](https://github.com/FurkanGozukara/Stable-Diffusion/blob/main/Tutorials/Full-Stable-Diffusion-XL-SDXL-DreamBooth-Training-Tutorial-On-Kaggle.md)\n- [Nerogar/OneTrainer: OneTrainer is a one-stop solution for all your stable diffusion training needs. (github.com)](https://github.com/Nerogar/OneTrainer)\n- [Tried to use same settings I find in Kohya but training failed epic · Issue #116 · Nerogar/OneTrainer (github.com)](https://github.com/Nerogar/OneTrainer/issues/116)\n- [How To Properly Setup OneTrainer Concepts And Some Other Options - Quick Tutorial Before Big One - YouTube](https://www.youtube.com/watch?v=yPOadldf6bI&t=147s)\n- [[KOHYA Dreambooth and similar]] [[Docker]] image with SDXL [ashleykleynhans/kohya-docker: Docker image for Kohya_ss Web UI (github.com)](https://github.com/ashleykleynhans/kohya-docker) works with a command shell inside the docker\n- ```text\n",
-  "properties": {},
-  "backlinks": []
-}

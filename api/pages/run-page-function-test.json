@@ -1,6 +1,0 @@
-{
-  "title": "Run Page Function Test",
-  "content": "- {{runpage}}\n- Note\n- use of global variables to pass values between functions\n- function output accumulated into *output* variable which is displayed in the last code block to show the results of all functions executing\n- ```python\n- ```python\n",
-  "properties": {},
-  "backlinks": []
-}

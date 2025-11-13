@@ -1,0 +1,91 @@
+:root {
+  --pink: #78bcfb;
+  --cyan: rgb(90, 198, 198);
+}
+
+h1.title {
+  color: rgba(195, 153, 82, 0.9);
+}
+
+h1 {
+  color: rgb(172, 176, 72);
+}
+
+h2 {
+  color: rgba(205, 140, 134, 0.9);
+}
+
+h3 {
+  color: rgba(99, 177, 124, 0.768);
+}
+
+h4 {
+  color: rgb(110, 180, 233);
+}
+
+h5 {
+  color: rgb(200, 116, 223);
+}
+
+mark {
+  color: rgb(90, 19, 19);
+  background: #d7ee83;
+}
+
+b {
+  color: #a97741;
+}
+
+i {
+  color: #4bba45;
+}
+
+
+::selection {
+  color: rgb(107, 76, 76);
+  background: #609cc3;
+}
+
+a.tag {
+  background: #ffffff;
+  border-radius: 10px 10px 10px 10px;
+  border-color: rgb(236, 11, 11);
+  border-width: 1px;
+  padding: 0px 6px;
+  color: rgb(196, 6, 6);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+
+#right-sidebar-container #calendar-placeholder {
+  padding: 6px 16px 6px 12px;
+}
+
+/* CSS for running code from buttons */
+button.kit {
+  background: var(--ls-tertiary-background-color);
+  padding: 2px 4px 2px 4px;
+}
+button.out {
+  background: var(--ls-tertiary-background-color);
+  display: inline-table;
+  line-height: 12px;
+  margin: 0px 3px 0px 3px;
+  padding: 2px;
+}
+div.out button.out {
+    visibility: hidden;
+}
+div.out:hover button.out {
+    visibility: visible;
+}
+div.out {
+  font-size: 14px;
+}
+span.out {
+  display: inline-table;
+  font-size: 14px;
+  padding: 2px;
+  white-space: pre-wrap;
+}

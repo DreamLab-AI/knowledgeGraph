@@ -1,6 +1,0 @@
-{
-  "title": "CLI multi agent systems",
-  "content": "- Modern CLI AI tools can be approached like conversational interfaces:\n  - Ask the tool what it can do\n  - Request help with navigation and commands\n  - Use natural language to describe desired outcomes\n  - Let the tool guide you through complex processes\n- ### Integration with Automation\n  - CLI tools excel in automation contexts:\n  - GitHub Actions and CI/CD pipelines\n  - Bash scripts and system administration\n  - Background processing and scheduled tasks\n  - Headless operation in server environments\n- ### Advantages of CLI Interfaces\n  - Command-line tools offer distinct benefits:\n  - Single-focus interaction without visual distractions\n  - Fire-and-forget task execution\n  - Easy integration with existing development workflows\n  - Reduced cognitive load during complex operations\n",
-  "properties": {},
-  "backlinks": []
-}
