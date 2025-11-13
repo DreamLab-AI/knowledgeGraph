@@ -1,0 +1,14 @@
+{
+  "title": "E R C721 Standard",
+  "content": "- ### OntologyBlock\n- ## About ERC-721 Standard\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0539",
+    "preferred_term": "ERC-721 Standard",
+    "definition": "Technical standard for non-fungible tokens on Ethereum, defining unique token identification and ownership tracking.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

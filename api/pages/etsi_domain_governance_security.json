@@ -1,0 +1,6 @@
+{
+  "title": "ETSI_Domain_Governance_Security",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: mv-1761742247919\n- preferred-term:: ETSI_Domain_Governance_Security\n- source-domain:: metaverse\n- status:: draft\n- definition:: A component of the metaverse ecosystem.\n- maturity:: draft\n- owl:class:: mv:ETSI_Domain_Governance_Security\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: [[MetaverseDomain]]\n- Critical security controls and safeguards (TR 104 168)[1]\n- Network security associations and identity management[2]\n- 5G security requirements (TS 133 501)[3]\n- AI data security across lifecycle stages[4]\n- Security control frameworks for IoT and mobile devices[5]\n- AI security taxonomies and threat mitigation[6]\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n",
+  "properties": {},
+  "backlinks": []
+}

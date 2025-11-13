@@ -1,0 +1,14 @@
+{
+  "title": "Calibration Standard",
+  "content": "- ### OntologyBlock\n- ## About Calibration Standard\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0188",
+    "preferred_term": "Calibration Standard",
+    "definition": "Calibration standard defines methods for improving robot positioning accuracy.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Ai Engineering",
+  "content": "- ### OntologyBlock\n- ## About Gartner Prediction\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0802",
+    "preferred_term": "Gartner Prediction",
+    "definition": "Indicates environments where something operates.",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

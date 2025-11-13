@@ -1,0 +1,13 @@
+{
+  "title": "Liverpool Smart Cities",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: UK-001\n- preferred-term:: Liverpool Smart Cities\n- source-domain:: uk-regional\n- status:: active\n- definition:: Liverpool's smart cities initiative and technology sector focusing on Internet of Things, urban technology, and digital infrastructure.\n- maturity:: established\n- region:: Merseyside\n- focus-areas:: Smart Cities, IoT, Urban Tech\n- owl:class:: uk:LiverpoolSmartCities\n- owl:physicality:: ConceptualEntity\n- owl:role:: RegionalEcosystem\n- belongsToDomain:: [[UKTechEcosystem]]\n- Liverpool Smart Cities in Merseyside, North England\n- [[North England Innovation Corridor]]\n- [[Northern Powerhouse]]\n- [[UK Tech Ecosystem]]\n- **Created**: 2025-11-11\n- **Region**: Merseyside, North England\n- **Category**: Regional Technology Ecosystem\n- **Status**: Active\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "UK-001",
+    "preferred_term": "Liverpool Smart Cities",
+    "definition": "Liverpool's smart cities initiative and technology sector focusing on Internet of Things, urban technology, and digital infrastructure.",
+    "source_domain": "uk-regional",
+    "maturity_level": "established"
+  }
+}

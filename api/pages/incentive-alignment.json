@@ -1,0 +1,14 @@
+{
+  "title": "Incentive Alignment",
+  "content": "- ### OntologyBlock\n- ## About Incentive Alignment\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0537",
+    "preferred_term": "Incentive Alignment",
+    "definition": "The design principle ensuring participants' economic interests align with network health and security, making honest behavior more profitable than malicious behavior.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

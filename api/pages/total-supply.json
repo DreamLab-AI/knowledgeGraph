@@ -1,0 +1,14 @@
+{
+  "title": "Total Supply",
+  "content": "- ### OntologyBlock\n- ## About Total Supply\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0533",
+    "preferred_term": "Total Supply",
+    "definition": "The total number of tokens that have been created, including all tokens in circulation plus those locked, reserved, or held by the project.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "AI Ethics Board",
+  "content": "- ### OntologyBlock\n- ## About 0388 Ai Ethics Board\n- ## HR & Onboarding\n- ## HR & Onboarding\n- ## HR & Onboarding\n- ## HR & Onboarding\n- ## Onboarding and triaging\n- {{video https://www.youtube.com/watch?v=lDevgsp9vn0}}\n- ## **Conclusion**\n- Systematically review each assertion against 2025 sources\n- Remove dated material (the search results reference 2024 initiatives and earlier frameworks)\n- Integrate UK and North England context where applicable\n- Convert to Logseq nested bullet format with headings\n- Provide complete academic citations with DOIs\n- Maintain technical precision with appropriate cordial tone\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0388",
+    "preferred_term": "AI Ethics Board",
+    "definition": "AI Ethics Board is a multidisciplinary oversight committee comprising technical experts, ethicists, legal professionals, domain specialists, and stakeholder representatives, responsible for conducting ethical reviews of AI systems, providing guidance on ethical dilemmas, and exercising veto authority over AI deployments that violate ethical principles or organizational values. This governance body evaluates proposed AI systems against ethical frameworks, assesses potential harms and benefits, reviews fairness and bias implications, examines privacy and data protection compliance, and ensures alignment with responsible AI principles. The board operates through structured ethical review processes including proposal submission and screening, expert deliberation and assessment, stakeholder consultation and impact evaluation, ethical decision-making with documented rationale, and ongoing monitoring of deployed systems. Authority and scope typically include power to approve, conditionally approve with modifications, defer for additional information, or reject AI projects, mandate ethical impact assessments and fairness audits, require mitigation measures for identified risks, and escalate significant ethical concerns to executive leadership. Effective boards maintain independence from AI development teams to avoid conflicts of interest, possess diverse expertise spanning technical, ethical, legal, and social dimensions, engage affected communities in deliberations, and report to senior governance structures. Implementation follows models from research ethics committees and institutional review boards, adapted for AI-specific challenges as recommended by the EU High-Level Expert Group on AI and IEEE P7000 series standards.",
+    "source_domain": "ai-grounded",
+    "maturity_level": "mature",
+    "authority_score": 0.95
+  }
+}

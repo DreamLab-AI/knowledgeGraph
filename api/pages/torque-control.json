@@ -1,0 +1,14 @@
+{
+  "title": "Torque Control",
+  "content": "- ### OntologyBlock\n- ## About Torque Control\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0153",
+    "preferred_term": "Torque Control",
+    "definition": "Torque control directly commands actuator torques for compliant interaction.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Robot Singularity",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: RB-0031\n- preferred-term:: rb 0031 singularity\n- source-domain:: metaverse\n- status:: draft\n- definition:: ### Primary Definition\n- maturity:: draft\n- owl:class:: mv:rb0031singularity\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: [[MetaverseDomain]]\n- ## About rb 0031 singularity\n- ### Primary Definition\n- ### Original Content\n  - ```\n- ## Disruption:\n  - This is happening so fast that many are viewing it as a [[Singularity]] event; that we will likely see as many problems as benefits initially. -\n- ## Disruption:\n  - This is happening so fast that many are viewing it as a [[Singularity]] event; that we will likely see as many problems as benefits initially. -\n- The existing \"rb-0031-singularity.md\" content you wish improved\n- Any specific North England organisations or initiatives you'd like included\n- Preferred academic citation format (Harvard, APA, Chicago, etc.)\n- Any particular technical frameworks or standards your ontology follows\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0031",
+    "preferred_term": "rb 0031 singularity",
+    "definition": "### Primary Definition",
+    "source_domain": "metaverse",
+    "maturity_level": "draft"
+  }
+}

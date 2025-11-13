@@ -1,0 +1,14 @@
+{
+  "title": "Control System",
+  "content": "- ### OntologyBlock\n- ## About Control System\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0144",
+    "preferred_term": "Control System",
+    "definition": "Control system computes control signals to drive robot actuators toward desired behavior.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

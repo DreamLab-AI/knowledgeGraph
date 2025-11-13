@@ -1,0 +1,13 @@
+{
+  "title": "BC 0101 transaction fee",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: BC-0101\n- preferred-term:: BC 0101 transaction fee\n- source-domain:: metaverse\n- status:: draft\n- definition:: ### Primary Definition\n- maturity:: draft\n- owl:class:: mv:BC0101transactionfee\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: [[MetaverseDomain]]\n- ## About BC 0101 transaction fee\n- ### Primary Definition\n- ### Original Content\n  - ```\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- General credit card processing fees in the UK (0.7–3.4% for credit cards, 0.4–1.7% for debit cards)[1]\n- Foreign transaction fees (typically 1–3%)[7][8]\n- US Department of Defense logistics documentation (unrelated)\n- Card scheme fee rates from October 2025[3]\n- OFAC sanctions guidance (unrelated)\n- ISO standards documentation (unrelated)\n- Review the current definition\n- Identify what needs updating from 2024\n- Assess which content is time-sensitive\n- Verify existing assertions\n- Improve the structure as specified\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0101",
+    "preferred_term": "BC 0101 transaction fee",
+    "definition": "### Primary Definition",
+    "source_domain": "metaverse",
+    "maturity_level": "draft"
+  }
+}

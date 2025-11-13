@@ -1,0 +1,6 @@
+{
+  "title": "Configure a graph for code execution",
+  "content": "- #+BEGIN_TIP\n- ### Configure Code Execution for a graph\n- #### config.edn\n  - go to Settings and click config.edn button\n  - Include the following code in the macro section -- between the {} brackets\n  - ``` edn\n- #### custom.css\n  - go to Settings and click custom.css button\n  - Add the following css (making sure no button settings are already in your custom.css)\n  - ```css\n- #### custom .js\n  - create this file and place it in the *logseq* folder of your graph\n  - ```javascript\n",
+  "properties": {},
+  "backlinks": []
+}

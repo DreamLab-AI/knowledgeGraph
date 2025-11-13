@@ -1,0 +1,6 @@
+{
+  "title": "VirtualMachine",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: mv-1761742247979\n- preferred-term:: VirtualMachine\n- source-domain:: metaverse\n- status:: draft\n- definition:: A component of the metaverse ecosystem.\n- maturity:: draft\n- owl:class:: mv:VirtualMachine\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: [[MetaverseDomain]]\n- ## About VirtualMachine\n- A component of the metaverse ecosystem.\n- ### Original Content\n  - ```\n- Virtual machine architecture and specifications within metaverse systems\n- Technical implementations and standards (e.g., containerisation, hypervisors, resource allocation)\n- Academic literature on virtual machines in immersive environments\n- UK-based research institutions or organisations working on metaverse infrastructure\n- Current 2025 developments in virtual machine technology for distributed immersive systems\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n",
+  "properties": {},
+  "backlinks": []
+}

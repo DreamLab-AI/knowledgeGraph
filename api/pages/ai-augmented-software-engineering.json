@@ -1,0 +1,13 @@
+{
+  "title": "AI-Augmented Software Engineering",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: ME-0008\n- preferred-term:: AI-Augmented Software Engineering\n- source-domain:: metaverse\n- status:: emerging-technology\n- definition:: [Generated from Gartner emerging tech analysis]\n- maturity:: emerging\n- owl:class:: mv:AI-AugmentedSoftwareEngineering\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: [[MetaverseDomain]]\n- category:: AI & Autonomy\n- **Code Generation and Completion**: Automated synthesis of code segments based on contextual requirements and patterns\n- **Quality Assurance**: Predictive analytics for bug identification, vulnerability detection, and code optimisation recommendations\n- **Testing and Deployment**: Acceleration of testing cycles and deployment workflows through automation\n- **Requirements Translation**: Natural language processing systems converting stakeholder requirements into actionable technical specifications[1]\n- British contributions and implementations\n  - Research institutions and programmes\n  - Industry adoption\n  - North England innovation (where relevant)\n- **Created**: 2025-11-11\n- **Source**: Gartner Emerging Technology Analysis\n- **Category**: AI & Autonomy\n- **Status**: Emerging Technology\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "ME-0008",
+    "preferred_term": "AI-Augmented Software Engineering",
+    "definition": "[Generated from Gartner emerging tech analysis]",
+    "source_domain": "metaverse",
+    "maturity_level": "emerging"
+  }
+}

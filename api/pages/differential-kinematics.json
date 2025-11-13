@@ -1,0 +1,14 @@
+{
+  "title": "Differential Kinematics",
+  "content": "- ### OntologyBlock\n- ## About Differential Kinematics\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0183",
+    "preferred_term": "Differential Kinematics",
+    "definition": "Differential kinematics uses Jacobian matrix to relate joint and Cartesian velocities.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

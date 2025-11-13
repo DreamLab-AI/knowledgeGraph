@@ -1,0 +1,14 @@
+{
+  "title": "Smart Contract Platform",
+  "content": "- ### OntologyBlock\n- ## About Smart Contract Platform\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0507",
+    "preferred_term": "Smart Contract Platform",
+    "definition": "A blockchain network providing infrastructure for deploying and executing smart contracts, with virtual machine execution environment, support for programming languages, and token standards.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Hybrid Force Position Control",
+  "content": "- ### OntologyBlock\n- ## About Hybrid Force/Position Control\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0150",
+    "preferred_term": "Hybrid Force/Position Control",
+    "definition": "Hybrid control applies force control in constrained directions and position control in free directions.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

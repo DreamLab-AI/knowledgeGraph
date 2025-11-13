@@ -1,0 +1,6 @@
+{
+  "title": "ai-core-concepts",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: mv-1761742247980\n- preferred-term:: ai core concepts\n- source-domain:: metaverse\n- status:: draft\n- definition:: A component of the metaverse ecosystem.\n- maturity:: draft\n- owl:class:: mv:aicoreconcepts\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: [[MetaverseDomain]]\n- Specific North England case studies or regional implementations\n- Complete academic citations with DOIs\n- UK-specific regulatory or institutional frameworks\n- Verified historical development timelines\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n",
+  "properties": {},
+  "backlinks": []
+}

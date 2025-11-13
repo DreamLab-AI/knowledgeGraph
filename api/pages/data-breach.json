@@ -1,0 +1,14 @@
+{
+  "title": "Data Breach",
+  "content": "- ### OntologyBlock\n- ## About Data Breach\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0863",
+    "preferred_term": "Data Breach",
+    "definition": "",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

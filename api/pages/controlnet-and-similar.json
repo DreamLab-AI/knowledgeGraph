@@ -1,0 +1,6 @@
+{
+  "title": "Controlnet and similar",
+  "content": "- #Public page\n  - automatically published\n- ControlNet\n- Exhastive guide to controlnet [The Ultimate Guide to ControlNet (Part 1) (civitai.com)](https://education.civitai.com/civitai-guide-to-controlnet/#show-me-examples)\n- [OpenPoses](https://openposes.com/)\n- [(1) ControlNet Support for Multi-Input and IP-Adapter-FaceID-portrait in A1111 : StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/19cwrxh/controlnet_support_for_multiinput_and/)\n- Multidiffusion Spatial Controls\n  - a Hugging Face Space by weizmannscience\n  - lllyasviel/ControlNet: Let us control diffusion models!\n  - lllyasviel/ControlNet: Let us control diffusion models!: Let us control diffusion models! Contribute to lllyasviel/ControlNet development by creating an account on GitHub.\n  - Stable Diffusion Art\n",
+  "properties": {},
+  "backlinks": []
+}

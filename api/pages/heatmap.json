@@ -1,0 +1,6 @@
+{
+  "title": "heatmap",
+  "content": "- add in risk minimax, add composite severity column, reorder for severity, highlight GenAI for media in bold\n- {{renderer code_diagram,vegalite}}\n  - ```vegalite\n- https://kroki.io/vegalite/svg/eNqllstu2zAQRff-igHRpWN1UTePnWoYgYu2SB0km6ILmh5L01CkQ1JKDMP_XlLyI4UjW1I3gvjQmcurGZLrHgD7YEWKGWc3wFLnlvYmigpM-CAhl-azAemomlD2XkhyGBXDwR-rFev3AmCOVhhaOvI9HhJDitxlfAl6AfEEKFty4SxwNQfBHSbaEFp48XjITYJKrHYg7oKMtX_3rYLLHK1v_yrb5QMgiuBOW3JUIEwq8nZkzUYVfRVUTJTSBQ-a_HyHyhGXrA_sOzpDIsx42MUG9hhC-b6rTR860iotb2HXm_6W9S7yZ869l6tg0jdalIsxusDMw-1ZoZd7dlfosd6r03pvpZ5xCXdGzyRmcK9lQSo5q_S6RmkTXGuNo1y63HhsyLWR8WkY0mSsPC8NHpxVO6xR2w58rPvytO7xYkGCghi45aRso0TtgmqQpYc6--Hr_WydfdUziHOns7I6OifuKcyx6M-n7Yxl2GNcmpGAL8Qb2dkB1Po3-80wNpmFKRfY2al6SOtyuUeRm7BdTMk-dXfpFKa1Rw-KlN9g5-jrTCuLz7mXgbbzPtOI18C5Q1lMMcllmaZ1_2fsUhK2-2lTg2h9xHjOQez_JFwdpaVv1oWD6XAHeDvlt39uqmtAxs1ToBsM7LLLa9XzcD7sbwev-1ffWBDKefhkK22ngbnVMqhiSmekwpG9G-CvFK4Wayb5DGWsEhnmfdyU49s1sLD8NRwF2ZvTNczFp-G_gYSW2ry7oMrXo0DPOfd3EFduz4dRK3jJX7PyxoaVifMVSqlfEoOo2DZuMLu3-Qt1R9ZS\n",
+  "properties": {},
+  "backlinks": []
+}

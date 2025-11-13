@@ -1,0 +1,14 @@
+{
+  "title": "Market Capitalization",
+  "content": "- ### OntologyBlock\n- ## About Market Capitalization\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0535",
+    "preferred_term": "Market Capitalization",
+    "definition": "The total market value of a token calculated by multiplying circulating supply by current price. Primary metric for comparing token valuations.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

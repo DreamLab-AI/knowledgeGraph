@@ -1,0 +1,14 @@
+{
+  "title": "Cylindrical Robot",
+  "content": "- ### OntologyBlock\n- ## About Cylindrical Robot\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0134",
+    "preferred_term": "Cylindrical Robot",
+    "definition": "Cylindrical robot has one rotary joint and two prismatic joints creating cylindrical workspace.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Nft Ownership Proof",
+  "content": "- ### OntologyBlock\n- ## About NFT Ownership Proof\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0571",
+    "preferred_term": "NFT Ownership Proof",
+    "definition": "Cryptographic proof of NFT ownership.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

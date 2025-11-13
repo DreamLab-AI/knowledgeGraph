@@ -1,0 +1,14 @@
+{
+  "title": "Newton Euler Dynamics",
+  "content": "- ### OntologyBlock\n- ## About Newton-Euler Dynamics\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0184",
+    "preferred_term": "Newton-Euler Dynamics",
+    "definition": "Newton-Euler method applies F=ma and τ=Iα to each link recursively.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

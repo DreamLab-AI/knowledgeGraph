@@ -1,0 +1,14 @@
+{
+  "title": "Spatial Mapping",
+  "content": "- ### OntologyBlock\n- ## About Spatial Mapping\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0854",
+    "preferred_term": "Spatial Mapping",
+    "definition": "",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

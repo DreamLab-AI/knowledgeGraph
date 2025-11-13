@@ -1,0 +1,14 @@
+{
+  "title": "Gas Limit",
+  "content": "- ### OntologyBlock\n- ## About Gas Limit\n- **Transaction-Level Control**: Users specify gas limit per transaction\n- **Block-Level Capacity**: Network enforces maximum gas per block\n- **Refund Mechanism**: Unused gas returned to sender\n- **Failure Protection**: Insufficient gas causes transaction reversion\n- **Cost Predictability**: Enables users to cap maximum transaction costs\n- **Simple ETH Transfer**: 21,000 gas\n- **ERC-20 Transfer**: ~65,000 gas\n- **Complex Smart Contract**: 100,000-500,000+ gas\n- **Block Gas Limit (Ethereum)**: ~30 million gas\n- [[Gas Price]] - Cost per unit of gas\n- [[Transaction Fee]] - Total cost (gas limit × gas price)\n- [[Base Fee]] - Minimum gas price in EIP-1559\n- [[Priority Fee]] - Additional tip for faster inclusion\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0107",
+    "preferred_term": "Gas Limit",
+    "definition": "The maximum amount of computational work (measured in gas units) that a user is willing to allocate for transaction execution on Ethereum and EVM-compatible blockchains.",
+    "source_domain": "blockchain",
+    "maturity_level": "mature",
+    "authority_score": 0.86
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Stablecoin Token",
+  "content": "- ### OntologyBlock\n- ## About Stablecoin Token\n  - USDC (fiat-backed), DAI (crypto-collateralized), USDT (Tether)\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0514",
+    "preferred_term": "Stablecoin Token",
+    "definition": "A token designed to maintain stable value by pegging to external assets like fiat currencies, commodities, or using algorithmic mechanisms.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

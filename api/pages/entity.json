@@ -1,0 +1,14 @@
+{
+  "title": "Entity",
+  "content": "- ### OntologyBlock\n- ## About Entity\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0842",
+    "preferred_term": "Entity",
+    "definition": "",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

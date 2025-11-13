@@ -1,0 +1,14 @@
+{
+  "title": "Neural Radiance Field",
+  "content": "- ### OntologyBlock\n- ## About Neural Radiance Field\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0812",
+    "preferred_term": "Neural Radiance Field",
+    "definition": "NeRF - neural representation for 3D scene synthesis.",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

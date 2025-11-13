@@ -1,0 +1,14 @@
+{
+  "title": "Neural Network Architecture",
+  "content": "- ### OntologyBlock\n- ## About Neural Network Architecture\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0803",
+    "preferred_term": "Neural Network Architecture",
+    "definition": "",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

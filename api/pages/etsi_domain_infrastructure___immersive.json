@@ -1,0 +1,6 @@
+{
+  "title": "ETSI_Domain_Infrastructure___Immersive",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: mv-1761742247920\n- preferred-term:: ETSI_Domain_Infrastructure___Immersive\n- source-domain:: metaverse\n- status:: draft\n- definition:: A component of the metaverse ecosystem.\n- maturity:: draft\n- owl:class:: mv:ETSI_Domain_Infrastructure___Immersive\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: [[MetaverseDomain]]\n- ## About ETSI_Domain_Infrastructure___Immersive\n- A component of the metaverse ecosystem.\n- ### Original Content\n  - ```\n- The original ontology file or its schema\n- ETSI's formal definition of this specific domain classification\n- Documentation clarifying how \"Infrastructure___Immersive\" differs from related domains\n- The ontology's intended use and context\n- Verify claims against current 2025 standards documentation\n- Update dated references\n- Enhance with UK/North England context where applicable\n- Reformat to Logseq nested bullet structure\n- Ensure technical precision and appropriate tone\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n",
+  "properties": {},
+  "backlinks": []
+}

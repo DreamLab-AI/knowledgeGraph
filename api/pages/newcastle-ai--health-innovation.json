@@ -1,0 +1,13 @@
+{
+  "title": "Newcastle AI & Health Innovation",
+  "content": "- ### OntologyBlock\n- ontology:: true\n- term-id:: UK-001\n- preferred-term:: Newcastle AI & Health Innovation\n- source-domain:: uk-regional\n- status:: active\n- definition:: Newcastle's technology ecosystem centred on artificial intelligence and health innovation, anchored by research institutions and the Great North Snowdome.\n- maturity:: established\n- region:: North East England\n- focus-areas:: AI, Health Tech, Research\n- owl:class:: uk:NewcastleAIAndHealthInnovation\n- owl:physicality:: ConceptualEntity\n- owl:role:: RegionalEcosystem\n- belongsToDomain:: [[UKTechEcosystem]]\n- Newcastle AI & Health Innovation, North East England\n  - ## Overview\n    - Newcastle has evolved from an industrial heritage into a leading UK tech and health innovation hub, with strong academic and industry collaboration.\n    - The region’s transformation began in the early 2010s, accelerated by strategic investments in digital infrastructure, research centres, and skills development.\n    - Today, Newcastle is recognised as a national leader in AI, health technology, and life sciences, with a robust ecosystem of universities, research institutes, and private sector partners.\n    - Key organisations include Newcastle University, Northumbria University, the National Innovation Centre for Data (NICD), National Innovation Centre for Ageing (NICA), and Newcastle Health Innovation Partners (NHIP).\n    - The region hosts several major innovation districts, including the Newcastle Helix and the Cobalt Park data centre hub, supporting cross-sector collaboration and commercialisation.\n- [[North England Innovation Corridor]]\n- [[Northern Powerhouse]]\n- [[UK Tech Ecosystem]]\n- **Created**: 2025-11-11\n- **Region**: North East England, North England\n- **Category**: Regional Technology Ecosystem\n- **Status**: Active\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "UK-001",
+    "preferred_term": "Newcastle AI & Health Innovation",
+    "definition": "Newcastle's technology ecosystem centred on artificial intelligence and health innovation, anchored by research institutions and the Great North Snowdome.",
+    "source_domain": "uk-regional",
+    "maturity_level": "established"
+  }
+}

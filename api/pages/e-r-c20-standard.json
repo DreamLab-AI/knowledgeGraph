@@ -1,0 +1,14 @@
+{
+  "title": "E R C20 Standard",
+  "content": "- ### OntologyBlock\n- ## About ERC-20 Standard\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0538",
+    "preferred_term": "ERC-20 Standard",
+    "definition": "Technical standard for fungible tokens on Ethereum, defining required methods and events for token contracts.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

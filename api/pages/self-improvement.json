@@ -1,0 +1,14 @@
+{
+  "title": "Self Improvement",
+  "content": "- ### OntologyBlock\n- ## About Self Improvement\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0827",
+    "preferred_term": "Self Improvement",
+    "definition": "Capability for autonomous self-improvement.",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

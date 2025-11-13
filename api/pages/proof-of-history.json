@@ -1,0 +1,14 @@
+{
+  "title": "Proof Of History",
+  "content": "- ### OntologyBlock\n- ## About Proof of History\n  - Solana\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0548",
+    "preferred_term": "Proof of History",
+    "definition": "A cryptographic mechanism that timestamps transactions to establish a historical record, enabling validators to process transactions in parallel for high throughput. Creates verifiable passage of time between events without requiring nodes to trust each other.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

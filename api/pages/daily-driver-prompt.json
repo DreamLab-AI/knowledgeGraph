@@ -1,0 +1,6 @@
+{
+  "title": "Daily Driver Prompt",
+  "content": "- This text is a setup for our conversation moving forward. There is no task here yet, that will follow. Signal that you have understood this context before I proceed to give you a task or list of tasks.\n- thought: \"A second step toward solving the problem based on the initial thought\"\n- evaluation: \"sure/maybe/impossible\"\n- final_thought: \"A final step that gives the best solution\"\n",
+  "properties": {},
+  "backlinks": []
+}

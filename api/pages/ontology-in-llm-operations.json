@@ -1,0 +1,14 @@
+{
+  "title": "Ontology in LLM Operations",
+  "content": "- ### OntologyBlock\n- ## About Ontology in LLM Operations\n- **[[OWL 2]]**: Web Ontology Language for formal knowledge representation\n- **[[SHACL]]**: Shapes Constraint Language for data validation\n- **[[SPARQL]]**: Query language for RDF and knowledge graphs\n- **[[GraphRAG]]**: Microsoft's graph-based retrieval augmented generation\n- **[[OpenTelemetry]]**: Observability framework with GenAI semantic conventions\n- **[[Neo4j]]**: Graph database platform with LLM integrations\n- **[[LangChain]]**: Framework for LLM application development with graph support\n- **[[LlamaIndex]]**: Data framework for LLM applications\n- W3C OWL 2 Web Ontology Language (2012)\n- W3C SHACL Shapes Constraint Language (2017)\n- W3C SPARQL 1.1 Query Language (2013)\n- OpenTelemetry Semantic Conventions for Generative AI (2024)\n- JSON-LD 1.1 for structured data interchange (2020)\n- Peng, S., et al. (2024). \"Unifying Large Language Models and Knowledge Graphs: A Roadmap.\" *arXiv preprint*.\n- Edge, D., et al. (2024). \"From Local to Global: A Graph RAG Approach.\" *Microsoft Research*.\n- W3C (2012). \"OWL 2 Web Ontology Language Document Overview.\"\n- W3C (2017). \"Shapes Constraint Language (SHACL).\"\n- OpenTelemetry (2024). \"Semantic Conventions for Generative AI.\"\n- Barati, E., et al. (2024). \"Can Knowledge Graphs Reduce Hallucinations?\" *ACL 2024*.\n- **Migration Status**: Original content enriched and integrated 2025-11-13\n- **Last Updated**: 2025-11-13\n- **Review Status**: Comprehensive editorial review complete\n- **Verification**: Academic and industry sources verified\n- **Regional Context**: UK/North England applications and research included\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0878",
+    "preferred_term": "Ontology in LLM Operations",
+    "definition": "The application of formal knowledge representation systems (OWL 2, SHACL, SPARQL) to provide schema-grounded layers that make retrieval, reasoning, outputs, and monitoring in large language model pipelines more deterministic, auditable, and controllable than text-only or pure vector-based approaches.",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "emerging",
+    "authority_score": 0.88
+  }
+}

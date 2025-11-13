@@ -1,0 +1,14 @@
+{
+  "title": "Minting",
+  "content": "- ### OntologyBlock\n- ## About Minting\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0532",
+    "preferred_term": "Minting",
+    "definition": "The process of creating new tokens and adding them to circulation, either through block rewards, staking rewards, or programmatic issuance.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

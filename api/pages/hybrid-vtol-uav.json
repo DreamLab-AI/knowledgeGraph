@@ -1,0 +1,14 @@
+{
+  "title": "Hybrid Vtol Uav",
+  "content": "- ### OntologyBlock\n- ## About Hybrid VTOL UAV\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0126",
+    "preferred_term": "Hybrid VTOL UAV",
+    "definition": "Hybrid VTOL UAV combines rotary-wing vertical takeoff with fixed-wing cruise efficiency.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

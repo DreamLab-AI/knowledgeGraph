@@ -1,0 +1,14 @@
+{
+  "title": "Variable Impedance Control",
+  "content": "- ### OntologyBlock\n- ## About Variable Impedance Control\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0151",
+    "preferred_term": "Variable Impedance Control",
+    "definition": "Variable impedance control modulates robot impedance parameters online based on task requirements.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

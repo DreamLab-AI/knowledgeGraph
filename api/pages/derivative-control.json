@@ -1,0 +1,14 @@
+{
+  "title": "Derivative Control",
+  "content": "- ### OntologyBlock\n- ## About Derivative Control\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0148",
+    "preferred_term": "Derivative Control",
+    "definition": "Derivative control provides damping by responding to rate of error change.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}
