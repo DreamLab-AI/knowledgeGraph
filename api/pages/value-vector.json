@@ -1,0 +1,14 @@
+{
+  "title": "Value Vector",
+  "content": "- ### OntologyBlock\n- ## About Value Vector\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0809",
+    "preferred_term": "Value Vector",
+    "definition": "",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

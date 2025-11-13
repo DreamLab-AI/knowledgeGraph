@@ -1,0 +1,14 @@
+{
+  "title": "Fee Market",
+  "content": "- ### OntologyBlock\n- ## About Fee Market\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0528",
+    "preferred_term": "Fee Market",
+    "definition": "The economic mechanism determining transaction fees through supply and demand dynamics, where users bid for limited block space.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

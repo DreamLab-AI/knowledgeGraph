@@ -1,0 +1,14 @@
+{
+  "title": "Runtime Inspection",
+  "content": "- ### OntologyBlock\n- ## About Runtime Inspection\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0862",
+    "preferred_term": "Runtime Inspection",
+    "definition": "",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

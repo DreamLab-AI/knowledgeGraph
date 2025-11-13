@@ -1,0 +1,14 @@
+{
+  "title": "Integral Control",
+  "content": "- ### OntologyBlock\n- ## About Integral Control\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0147",
+    "preferred_term": "Integral Control",
+    "definition": "Integral control eliminates steady-state error by integrating error over time.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

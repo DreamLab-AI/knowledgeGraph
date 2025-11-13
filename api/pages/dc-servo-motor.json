@@ -1,0 +1,14 @@
+{
+  "title": "Dc Servo Motor",
+  "content": "- ### OntologyBlock\n- ## About DC Servo Motor\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0172",
+    "preferred_term": "DC Servo Motor",
+    "definition": "DC servo motor uses DC power for precise control.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

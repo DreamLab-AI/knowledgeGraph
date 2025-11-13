@@ -1,0 +1,14 @@
+{
+  "title": "Deflationary Token",
+  "content": "- ### OntologyBlock\n- ## About Deflationary Token\n  - Ethereum (net deflationary), BNB (quarterly burns)\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0522",
+    "preferred_term": "Deflationary Token",
+    "definition": "A token with mechanisms that permanently remove tokens from circulation (burning), reducing total supply over time to create scarcity and potential value appreciation.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

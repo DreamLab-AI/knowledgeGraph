@@ -1,0 +1,14 @@
+{
+  "title": "Mobile Manipulator",
+  "content": "- ### OntologyBlock\n- ## About Mobile Manipulator\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0142",
+    "preferred_term": "Mobile Manipulator",
+    "definition": "Mobile manipulator integrates locomotion with manipulation capabilities.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

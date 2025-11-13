@@ -1,0 +1,14 @@
+{
+  "title": "Delegated Proof Of Stake",
+  "content": "- ### OntologyBlock\n- ## About Delegated Proof of Stake\n  - EOS, TRON, BitShares\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0550",
+    "preferred_term": "Delegated Proof of Stake",
+    "definition": "A PoS variant where network participants have the right to delegate the production of new blocks to a fixed number of delegates (witnesses), with users determining delegates via democratic voting mechanism weighted by locked tokens.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

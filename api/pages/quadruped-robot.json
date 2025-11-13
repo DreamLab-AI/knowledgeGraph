@@ -1,0 +1,14 @@
+{
+  "title": "Quadruped Robot",
+  "content": "- ### OntologyBlock\n- ## About Quadruped Robot\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0119",
+    "preferred_term": "Quadruped Robot",
+    "definition": "Quadruped robot walks on four legs with gaits inspired by mammals like dogs or cats.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

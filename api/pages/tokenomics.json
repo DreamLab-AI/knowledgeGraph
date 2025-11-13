@@ -1,0 +1,14 @@
+{
+  "title": "Tokenomics",
+  "content": "- ### OntologyBlock\n- ## About Tokenomics\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0576",
+    "preferred_term": "Tokenomics",
+    "definition": "Economic model of token systems.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

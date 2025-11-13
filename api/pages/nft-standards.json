@@ -1,0 +1,14 @@
+{
+  "title": "Nft Standards",
+  "content": "- ### OntologyBlock\n- ## About NFT Standards\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0573",
+    "preferred_term": "NFT Standards",
+    "definition": "",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

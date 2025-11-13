@@ -1,0 +1,14 @@
+{
+  "title": "E R C20 Token",
+  "content": "- ### OntologyBlock\n- ## About ERC-20 Token\n  - USDC, LINK, UNI, DAI\n  - Proposed by Fabian Vogelsteller in 2015 as EIP-20.\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0515",
+    "preferred_term": "ERC-20 Token",
+    "definition": "A fungible token implementing the ERC-20 standard on Ethereum blockchain. The most widely used Ethereum token standard providing uniform API for token operations within smart contracts.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Parallel Robot",
+  "content": "- ### OntologyBlock\n- ## About Parallel Robot\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0136",
+    "preferred_term": "Parallel Robot",
+    "definition": "Parallel robot has end-effector directly connected to base by multiple separate linkages working simultaneously.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

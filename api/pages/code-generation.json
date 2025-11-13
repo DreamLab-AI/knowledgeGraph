@@ -1,0 +1,14 @@
+{
+  "title": "Code Generation",
+  "content": "- ### OntologyBlock\n- ## About Code Generation\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0868",
+    "preferred_term": "Code Generation",
+    "definition": "",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

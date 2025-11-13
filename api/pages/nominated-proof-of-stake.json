@@ -1,0 +1,14 @@
+{
+  "title": "Nominated Proof Of Stake",
+  "content": "- ### OntologyBlock\n- ## About Nominated Proof of Stake\n  - Polkadot\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0551",
+    "preferred_term": "Nominated Proof of Stake",
+    "definition": "A PoS variant where token holders nominate validators for block creation, with elected validators producing blocks while nominators share rewards and slashing risks.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

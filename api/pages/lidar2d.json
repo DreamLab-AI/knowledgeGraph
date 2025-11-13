@@ -1,0 +1,14 @@
+{
+  "title": "Lidar2d",
+  "content": "- ### OntologyBlock\n- ## About 2D LiDAR\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0162",
+    "preferred_term": "2D LiDAR",
+    "definition": "2D LiDAR scans single horizontal or vertical plane for obstacle detection.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

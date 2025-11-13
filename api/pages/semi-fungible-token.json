@@ -1,0 +1,14 @@
+{
+  "title": "Semi Fungible Token",
+  "content": "- ### OntologyBlock\n- ## About Semi-Fungible Token\n  - Event tickets (fungible until used, then non-fungible as proof of attendance), gaming items with limited quantities\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0511",
+    "preferred_term": "Semi-Fungible Token",
+    "definition": "A token that can represent both fungible and non-fungible properties, typically starting as fungible but becoming non-fungible under certain conditions, or representing classes of interchangeable assets.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

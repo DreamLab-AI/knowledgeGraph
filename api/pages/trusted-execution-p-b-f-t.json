@@ -1,0 +1,14 @@
+{
+  "title": "Trusted Execution P B F T",
+  "content": "- ### OntologyBlock\n- ## About Trusted Execution PBFT\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0561",
+    "preferred_term": "Trusted Execution PBFT",
+    "definition": "A parallel Byzantine Fault Tolerance protocol leveraging Trusted Execution Environments (TEEs), utilizing a Unique Sequential Identifier Generator (USIG) based on Intel Software Guard Extensions (SGX).",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

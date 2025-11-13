@@ -1,0 +1,14 @@
+{
+  "title": "Differential Drive Robot",
+  "content": "- ### OntologyBlock\n- ## About Differential Drive Robot\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0114",
+    "preferred_term": "Differential Drive Robot",
+    "definition": "Differential drive robot uses two independently controlled wheels on each side for locomotion and steering.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

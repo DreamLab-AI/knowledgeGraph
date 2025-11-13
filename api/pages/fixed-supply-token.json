@@ -1,0 +1,14 @@
+{
+  "title": "Fixed Supply Token",
+  "content": "- ### OntologyBlock\n- ## About Fixed Supply Token\n  - Bitcoin (21M cap), Litecoin (84M cap)\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0523",
+    "preferred_term": "Fixed Supply Token",
+    "definition": "A token with a predetermined maximum supply that cannot be exceeded, often with emission schedule governing distribution over time.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

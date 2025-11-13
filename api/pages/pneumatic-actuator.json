@@ -1,0 +1,14 @@
+{
+  "title": "Pneumatic Actuator",
+  "content": "- ### OntologyBlock\n- ## About Pneumatic Actuator\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0168",
+    "preferred_term": "Pneumatic Actuator",
+    "definition": "Pneumatic actuator uses compressed air to generate motion.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

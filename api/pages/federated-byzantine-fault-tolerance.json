@@ -1,0 +1,14 @@
+{
+  "title": "Federated Byzantine Fault Tolerance",
+  "content": "- ### OntologyBlock\n- ## About Federated Byzantine Fault Tolerance\n  - Stellar (SCP), Ripple\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0556",
+    "preferred_term": "Federated Byzantine Fault Tolerance",
+    "definition": "A consensus mechanism enhancing scalability, speed, and security of blockchain networks by using a trusted set of federated nodes for consensus rather than the entire network.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

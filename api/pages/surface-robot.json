@@ -1,0 +1,14 @@
+{
+  "title": "Surface Robot",
+  "content": "- ### OntologyBlock\n- ## About Surface Marine Robot\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "RB-0127",
+    "preferred_term": "Surface Marine Robot",
+    "definition": "Surface marine robot operates on water surface like unmanned surface vessels.",
+    "source_domain": "robotics",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

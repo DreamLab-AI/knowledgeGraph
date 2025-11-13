@@ -1,0 +1,14 @@
+{
+  "title": "Transaction Fee",
+  "content": "- ### OntologyBlock\n- ## About Transaction Fee\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0524",
+    "preferred_term": "Transaction Fee",
+    "definition": "The payment required for processing transactions and including them in blockchain blocks, compensating validators/miners for computational resources and providing spam protection.",
+    "source_domain": "blockchain",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}

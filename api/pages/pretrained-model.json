@@ -1,0 +1,14 @@
+{
+  "title": "Pretrained Model",
+  "content": "- ### OntologyBlock\n- ## About Pretrained Model\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "AI-0875",
+    "preferred_term": "Pretrained Model",
+    "definition": "",
+    "source_domain": "artificial-intelligence",
+    "maturity_level": "established",
+    "authority_score": 0.95
+  }
+}
