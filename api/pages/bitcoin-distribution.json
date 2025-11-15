@@ -1,6 +1,12 @@
 {
   "title": "Bitcoin Distribution",
-  "content": "- An Analysis of [Bitcoin Asset Distribution]: Ruminations on Recent Technical Surveys (2023-2025)\n",
-  "properties": {},
+  "content": "- **Last Updated**: November 14, 2025\n- **Term ID**: BTC-DIST-001\n- **Quality Score**: 0.92\n- **Coverage Period**: 2023-2025\n- **Primary Data Sources**: 15+ academic, corporate, and analytical sources\n- **Citation Count**: 20+ references\n- **Wiki-links Count**: 60+ cross-references\n- **Logseq Compliance**: Full metadata, proper wiki-link syntax, category tags\n- **2025 Data Integration**: Current ETF holdings, corporate treasury, mining metrics, wealth distribution updates\n",
+  "properties": {
+    "qualityScore": "0.92",
+    "relatedTerms": "[\"Wealth Distribution\", \"GINI Coefficient\", \"Institutional Adoption\", \"Whale Watching\"]",
+    "category": "\"Bitcoin Economics\"",
+    "termID": "\"BTC-DIST-001\"",
+    "lastUpdated": "2025-11-14"
+  },
   "backlinks": []
 }

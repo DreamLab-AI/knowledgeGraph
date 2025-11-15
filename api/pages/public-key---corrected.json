@@ -1,0 +1,14 @@
+{
+  "title": "Public Key - CORRECTED",
+  "content": "- ### OntologyBlock\n- ## About Public Key\n",
+  "properties": {},
+  "backlinks": [],
+  "ontology": {
+    "term_id": "BC-0037",
+    "preferred_term": "Public Key",
+    "definition": "Publicly-shared cryptographic key within blockchain systems, providing essential functionality for distributed ledger technology operations and properties. In public-key cryptography, a public key is distributed openly and used to encrypt messages or verify digital signatures, while the corresponding private key remains secret with its owner.",
+    "source_domain": "blockchain",
+    "maturity_level": "mature",
+    "authority_score": 0.95
+  }
+}
