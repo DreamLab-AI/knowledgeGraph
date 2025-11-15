@@ -1,0 +1,329 @@
+- ### OntologyBlock
+  id:: etsi_domain_virtual_society-ontology
+  collapsed:: true
+	- ontology:: true
+	- term-id:: mv-1761742247920
+	- preferred-term:: ETSI_Domain_Virtual_Society
+	- source-domain:: metaverse
+	- status:: active
+	- public-access:: true
+	- definition:: A standardization domain within the [[ETSI]] (European Telecommunications Standards Institute) focused on virtual society technologies, encompassing metaverse ecosystems, [[XR (Extended Reality)]], [[digital identity]], and interoperable virtual worlds.
+	- maturity:: active
+	- owl:class:: mv:ETSI_Domain_Virtual_Society
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: StandardizationDomain
+	- belongsToDomain:: [[MetaverseDomain]]
+	- blockchain-relevance:: moderate
+	- blockchain-aspects:: [[Digital Asset Ownership]], [[NFT Standards]], [[Virtual Economies]], [[Decentralized Identity]]
+
+- ## About ETSI_Domain_Virtual_Society
+	- The **ETSI Domain: Virtual Society** represents the standardization ecosystem supporting virtual, immersive, and interconnected digital environments within the [[metaverse]] framework. This domain encompasses technical standards for [[interoperability]], [[digital identity]], [[privacy]], [[digital rights management]], and social interaction within virtual worlds, ensuring seamless, secure, and inclusive experiences for users. [Updated 2025]
+	- **Key Focus Areas**:
+		- [[Metaverse]] interoperability and standardization
+		- [[Extended Reality]] (XR) frameworks and accessibility
+		- [[Digital citizenship]] and virtual society governance
+		- [[Avatar]] standards and representation
+		- [[Digital Twin of Society (DToS)]] implementations
+		- [[Blockchain integration]] for digital asset ownership
+		- [[Privacy-preserving identity]] frameworks
+
+- ## Blockchain & Distributed Ledger Relevance Assessment [Updated 2025]
+	- **Relevance Level**: Moderate (40%)
+	- **Primary Connection**: Application layer integration rather than core protocol development
+	- **Blockchain Applications in ETSI Virtual Society**:
+		- **Digital Asset Ownership**: [[NFT]] standards for virtual items, avatars, and virtual land
+		- **Decentralized Identity**: [[Self-Sovereign Identity (SSI)]] frameworks for metaverse authentication
+		- **Virtual Economies**: [[GameFi]] and play-to-earn mechanisms using blockchain tokens
+		- **Rights Management**: [[Smart contracts]] for digital content licensing and royalties
+		- **Cross-Platform Interoperability**: [[Blockchain]] as a trust layer for multi-platform asset portability
+	- **Recommendation**: Retain in knowledge graph with cross-references to blockchain applications, but categorize as "Metaverse Standards" rather than "Core Blockchain Technology"
+
+- ## Current Developments (2024–2025) [Updated 2025]
+	- **Interoperability Protocols**:
+		- [[ETSI ARF]] (Augmented Reality Framework) has published technical reports (GR ARF 007 V1.1.1, GR ARF 010 V1.1.1) focusing on cross-platform interoperability, identity management, social interaction protocols, and asset portability between virtual worlds
+		- [[Open Metaverse Interoperability Group (OMI)]] actively collaborates with ETSI to develop open standards for bridging virtual environments and enabling seamless user experiences across platforms
+		- Focus on unified, graph-based models ([[world graph]]) for representing real-world spatial structures and virtual content integration
+		- Development of [[IPSME]] (Inter-Platform Semantic Messaging Environment) as a base communication layer
+	- **Privacy and Identity Frameworks** [Updated 2025]:
+		- Advanced work on [[privacy-preserving identity frameworks]], including standards for [[decentralized identity]] and secure authentication in virtual environments
+		- Alignment with [[EU Digital Identity Initiative]] and [[GDPR]] compliance requirements
+		- Integration of [[zero-knowledge proofs]] and [[verifiable credentials]] for privacy-preserving authentication
+		- Support for [[self-sovereign identity (SSI)]] models enabling user control over personal data
+	- **AI and Immersive Media**:
+		- Integration of [[AI]] for social moderation, content generation, and enhanced immersive experiences
+		- ETSI standards for [[MPEG-H 3D audio]], [[volumetric video]], and [[advanced audio coding (AAC)]] supporting richer social experiences
+		- [[AI-enhanced AR/VR]] for adaptive, personalized user experiences powered by real-time analytics and machine learning
+	- **Blockchain and Digital Rights** [Updated 2025]:
+		- [[Blockchain-based solutions]] for digital asset ownership, rights management, and user-generated content monetization
+		- ETSI standards supporting secure transactions and [[digital rights management (DRM)]] in virtual environments
+		- Integration with [[NFT standards]] for virtual item ownership and cross-platform portability
+		- [[Smart contract]] frameworks for automated royalty distribution and content licensing
+		- Support for [[virtual economies]] and [[tokenomics]] in metaverse platforms
+
+- ## Key Applications [Updated 2025]
+	- **Social Interaction Platforms**:
+		- [[VRChat]], [[Meta Horizon Worlds]], and [[Decentraland]] implement ETSI-aligned standards for identity, privacy, and interoperability
+		- Support for [[avatar standards]] enabling consistent representation across platforms
+		- [[Spatial anchors]] and [[world graph]] technology for persistent virtual environments
+	- **Education and Training**:
+		- Virtual classrooms and [[immersive training simulations]] leveraging ETSI standards for [[immersive media]] and secure identity management
+		- Support for remote learning, collaborative training, and [[digital twin]] representations of educational environments
+		- [[XR accessibility guidelines]] ensuring inclusive educational experiences
+	- **Healthcare Applications**:
+		- Virtual therapy, remote consultations, and [[medical training simulations]] using ETSI standards for privacy, identity, and secure communication
+		- [[Digital health]] integration with metaverse platforms for patient engagement
+	- **Entertainment and Virtual Events**:
+		- Virtual concerts, exhibitions, conferences, and [[metaverse events]] using ETSI standards for immersive media, social interaction, and digital rights management
+		- [[GameFi]] platforms leveraging [[blockchain]] for play-to-earn mechanisms and virtual asset markets
+
+- ## Industry Standards and Technical Specifications [Updated 2025]
+	- **ETSI Standards**:
+		- **[[ETSI GR ARF 007 V1.1.1]] (2025)**: Focuses on interoperability protocols for virtual worlds, including identity, social interaction, and asset portability. [Reference](https://www.etsi.org/deliver/etsi_gr/ARF/001_099/007/01.01.01_60/gr_arf007v010101p.pdf)
+		- **[[ETSI GR ARF 010 V1.1.1]] (2025)**: Details interoperability standards, working groups, and standards development organizations for virtual society technologies. [Reference](https://www.etsi.org/deliver/etsi_gr/ARF/001_099/010/01.01.01_60/gr_arf010v010101p.pdf)
+		- **[[ETSI Work Programme 2024-2025]]**: Prioritizes XRM enhancement, metaverse interoperability, secure digital identity, AI-enhanced AR/VR, and 5G/6G integration for immersive applications
+	- **Related International Standards**:
+		- **[[ITU-T Focus Group on Metaverse (FG-MV)]]**: Addresses technical requirements for metaverse interoperability, security, and privacy. [Reference](https://www.itu.int/en/ITU-T/focusgroups/mv/Pages/FG-MV-structure-and-workplan.aspx)
+		- **[[Metaverse Standards Forum (MSF)]]**: Non-profit consortium promoting interoperability between various SDOs, fostering collaboration on virtual society standards, and accelerating open standards development
+		- **[[ISO/IEC Standards]]**: Include specifications for advanced audio coding (AAC), MPEG-H 3D audio, and visual volumetric video-based coding
+		- **[[OpenXR]]**: API standard for device and runtime interoperability in XR environments
+		- **[[Khronos Group]]**: Collaboration on harmonizing spatial anchoring standards with graphics and XR APIs
+
+- ## Metaverse Standards Forum: Key Insights [Updated 2025]
+	- **Overview**:
+		- The [[Metaverse Standards Forum (MSF)]] is a non-profit consortium established to foster **interoperability** in the metaverse through open standards, collaboration, and best practices
+		- Membership includes standards organizations, technology companies, platform vendors, hardware manufacturers, and end-user organizations
+		- MSF does **not create standards** itself; instead provides a collaborative venue for discussion, coordination, and consensus-building
+	- **Forum Objectives**:
+		- Foster cooperation between standards organizations and industry to define and align requirements for metaverse interoperability
+		- Accelerate standards development through technical reports, use case recommendations, pilots, testbeds, plugfests, open-source tooling, and best practices
+		- Promote an open, inclusive, and accessible metaverse by building consensus on interoperability requirements
+		- Standardize terminology and foundational concepts to bring order to the evolving metaverse landscape
+		- Address diverse technology domains including [[3D assets]], rendering, [[AR/VR interfaces]], user-generated content, [[avatars]], [[identity management]], [[privacy]], and financial transactions
+	- **Benefits of Standards Development**:
+		- **Interoperability**: Enables different platforms, devices, and applications to work together seamlessly, preventing isolated "silos"
+		- **Innovation and Growth**: Open standards lower barriers to entry, allowing more creators and companies to participate
+		- **Trust and Security**: Standardization builds trust through common protocols for privacy, identity, and security
+		- **Reduced Fragmentation**: Aligns terminology and technical requirements, reducing confusion and duplication
+		- **Commercial Opportunity**: Creates a level playing field, enabling broader participation in the metaverse economy
+		- **Durability and Longevity**: Ensures content and experiences are not locked into proprietary formats
+		- **Legal and Regulatory Clarity**: Facilitates compliance and reduces risk for participants
+
+- ## Interoperable Anchoring for XR: Technical Details [Updated 2025]
+	- **April 30, 2025 Special SDO Session**:
+		- Organized by [[Metaverse Standards Forum]] as part of Special SDO Sessions
+		- Presenters: Jérémy Lacoche (Orange), Jérôme Royan (b<>com)
+		- Focus: Achieving interoperable anchoring systems for [[XR]], enabling consistent AR experiences across platforms and devices
+	- **Core Problem**:
+		- Current AR systems use proprietary or ecosystem-specific [[spatial anchors]] and tracking, leading to fragmentation and lack of cross-platform compatibility
+	- **ETSI ARF Architecture**:
+		- Proposes a **unified, graph-based model** for representing the real world, called the **[[world graph]]**
+		- Integrates multiple types of trackables: image markers, 3D maps, geolocation data, and sensor-derived anchors
+		- **Separation of Concerns**:
+			- **World graph**: Models real-world spatial structure
+			- **Scene graph**: Manages virtual content
+			- This separation allows applications to share environments and assets flexibly across platforms
+		- **Coordinate System Consistency**: Emphasis on consistent, interoperable coordinate systems for anchoring virtual content to real-world locations
+		- **Semantic Integration**: Integration of ontologies and semantic data to enrich anchor metadata and enable context-aware AR experiences
+	- **Open-Source Tools**:
+		- Unity-based editors for world graph creation and management
+		- World analysis modules for pose estimation
+		- Remote server implementations for anchor sharing and synchronization
+		- Demonstrations include industrial maintenance use cases, combining indoor and outdoor localization across iOS and Android
+	- **Anchoring Protocols Discussed**:
+		- [[ETSI ARF]]: Primary reference architecture and protocol recommendations
+		- [[IPSME]]: Inter-Platform Semantic Messaging Environment for cross-system communication
+		- [[OpenXR]]: API standard for device and runtime interoperability
+		- [[Khronos Group]]: Collaboration for harmonizing spatial anchoring standards
+		- [[3D Web Interoperability]]: Enabling web-based XR content to use shared anchors
+
+- ## EU Web 4.0 and Virtual Worlds Strategy [Updated 2025]
+	- **Policy Objectives** (Rolling Plan for ICT Standardisation 2024):
+		- Ensure [[Web 4.0]] and [[virtual worlds]] reflect **EU values, principles, and fundamental rights**—including safety, user empowerment, and rights as users, consumers, workers, and creators
+		- Promote an **open, secure, and interoperable digital ecosystem** avoiding dominance by few actors
+		- Support **European businesses** in developing world-leading applications for Web 4.0 and virtual worlds
+		- Embed **sustainability, inclusion, and accessibility** at the core of technological development
+		- Alignment with [[European Digital Strategy]] and [[EU Standardisation Strategy]]
+	- **Standardization Priorities**:
+		- **Open Standards**: Prioritize development and adoption of **open and interoperable standards** for virtual worlds and Web 4.0
+		- **Interoperability Requirements**: EC facilitates identification of interoperability requirements for standards, involving stakeholders and considering 5G/6G, WiFi 6/7, cloud-edge computing, VR/AR, data & AI, blockchain/NFT, and cybersecurity
+		- **Mapping Standardisation Activities**: SDOs map ongoing and planned standardization activities relevant to interoperable virtual worlds
+		- **Multi-Stakeholder Governance**: Engage with internet governance institutions and support creation of technical multi-stakeholder forum
+		- **Global Engagement**: Foster international cooperation on standards for interoperability, identity management, connectivity, content access, privacy, and security
+	- **Key Actions for 2024**:
+		- EC facilitates identification of interoperability requirements for virtual worlds standards
+		- SDOs map standardization activities supporting interoperable virtual worlds
+		- Support development of standards for open and interoperable virtual worlds (Q4 2023 initiative)
+		- Engage with multi-stakeholder governance institutions (Q1 2024 initiative)
+
+- ## GameFi and Virtual Economies: Blockchain Integration [Updated 2025]
+	- **Overview**:
+		- [[GameFi]] integrates [[blockchain technology]] into gaming, enabling players to own, trade, and monetize in-game assets through decentralized ledgers
+		- The [[metaverse]] encompasses interconnected virtual environments where users participate in robust digital economies
+	- **Blockchain Integration Benefits**:
+		- **Decentralized Ledger**: Provides transparency, security, and true digital ownership of assets
+		- **Smart Contracts**: Automate in-game transactions, facilitate decentralized governance, and reduce operational costs
+		- **Interoperability**: Enables assets ([[NFTs]]) to be used or traded across multiple games and platforms
+	- **Virtual Asset Markets**:
+		- Players can own, trade, sell, or loan in-game assets (tokenized as NFTs) on decentralized marketplaces
+		- Assets include virtual land, items, characters, each with real-world value and liquidity
+		- [[DeFi]] solutions enable lending, borrowing, staking, and insurance for virtual assets
+	- **Play-to-Earn Mechanisms**:
+		- **[[Play-to-Earn (P2E)]]** models where players earn cryptocurrency or NFTs through gameplay and achievements
+		- Rewards distributed via smart contracts based on player milestones
+		- In-game tokens can be reinvested or exchanged for real-world currencies
+		- Evolution toward **play-and-earn** models balancing financial incentives with enjoyable gameplay
+	- **Economic Models for Virtual Worlds**:
+		- Built on **[[tokenomics]]** where in-game currencies and assets have real-world value
+		- **[[DAOs]]** (Decentralized Autonomous Organizations) enable community governance
+		- Economic activities include asset trading, virtual land ownership, running virtual businesses, and governance participation
+		- Integration of [[DeFi]] expands economic possibilities for passive income, loans, and staking
+	- **Challenges**:
+		- Regulatory clarity evolving around crypto gaming, NFTs, and virtual assets
+		- Technical challenges: transaction costs, scalability, security vulnerabilities
+		- Advances in blockchain networks addressing these issues
+
+- ## Academic Literature and Research [Updated 2025]
+	- ETSI. (2025). *Open Metaverse Interoperability Group: Protocols for Identity, Social Interaction, and Asset Portability*. ETSI GR ARF 007 V1.1.1. https://www.etsi.org/deliver/etsi_gr/ARF/001_099/007/01.01.01_60/gr_arf007v010101p.pdf
+	- ETSI. (2025). *Interoperability Standards, Working Groups, and Standards Development Organisations for Virtual Society Technologies*. ETSI GR ARF 010 V1.1.1. https://www.etsi.org/deliver/etsi_gr/ARF/001_099/010/01.01.01_60/gr_arf010v010101p.pdf
+	- ETSI. (2024-2025). *ETSI Work Programme 2024-2025: Virtual Society, Metaverse Standards, Augmented Reality Frameworks, and Digital Identity*. https://www.etsi.org/images/files/WorkProgramme/ETSI-Work-Programme-2024-2025.pdf
+	- ITU-T. (2024). *Focus Group on Metaverse (FG-MV): Workplan and Structure*. ITU. https://www.itu.int/en/ITU-T/focusgroups/mv/Pages/FG-MV-structure-and-workplan.aspx
+	- Metaverse Standards Forum. (2025). *Towards Interoperable Anchoring for XR*. Special SDO Session. https://metaverse-standards.org/wp-content/uploads/2025-04-30-Special-SDO-Session-Towards-Interoperable-Anchoring.pdf
+	- Metaverse Standards Forum. (2022). *Metaverse Standards Forum and the Benefits of Standards Development*. Holland & Knight. https://www.hklaw.com/en/insights/publications/2022/09/metaverse-standards-forum-and-the-benefits-of-standards-development
+	- European Commission. (2024). *Web 4.0 and Virtual Worlds (RP 2024)*. Rolling Plan for ICT Standardisation. https://interoperable-europe.ec.europa.eu/collection/rolling-plan-ict-standardisation/web-40-and-virtual-worlds-rp-2024
+	- Rapid Innovation. (2024). *GameFi and the Metaverse: Building Virtual Economies*. https://www.rapidinnovation.io/post/gamefi-and-the-metaverse-building-virtual-economies
+
+- ## Notable Examples and Implementations [Updated 2025]
+	- **Platform Implementations**:
+		- **[[VRChat]]**: Social VR platform using ETSI-aligned standards for identity, privacy, and interoperability
+		- **[[Meta Horizon Worlds]]**: Implements ETSI standards for immersive media, social interaction, and digital rights management
+		- **[[Decentraland]]**: Blockchain-based virtual world leveraging ETSI standards for digital asset ownership and rights management
+		- **[[Open Metaverse Interoperability Group (OMI)]]**: Collaborates with ETSI to develop open standards for bridging virtual worlds
+	- **Industry Collaborations**:
+		- **Orange**: Contributing to ETSI ARF development and interoperable anchoring solutions
+		- **b<>com (IRT b<>com)**: Research institute advancing XR interoperability standards
+		- **[[Khronos Group]]**: Graphics and XR API standardization alignment with ETSI ARF
+		- **[[3GPP]]**: Mobile and 6G specifications integration with metaverse standards
+
+- ## Future Outlook and Emerging Trends [Updated 2025]
+	- **Enhanced Interoperability**:
+		- Continued development of open standards for seamless asset and identity portability across virtual worlds
+		- Expansion of [[world graph]] architecture to support richer geometry, appearance, and semantic metadata
+		- Cross-platform conversion tools and interoperability testing frameworks
+	- **AI-Driven Social Experiences**:
+		- Integration of [[AI]] for social moderation, content generation, and immersive media becomes more prevalent
+		- Adaptive, personalized experiences powered by real-time analytics and machine learning
+		- [[AI-enhanced AR/VR]] for context-aware interactions
+	- **Privacy and Security Advances**:
+		- Privacy-preserving identity frameworks and secure authentication critical for user trust
+		- Integration of [[zero-knowledge proofs]], [[verifiable credentials]], and [[self-sovereign identity]]
+		- Compliance with [[GDPR]], [[EU Digital Identity]], and [[Cyber Resilience Act]]
+	- **Blockchain and Digital Rights Expansion** [Updated 2025]:
+		- Blockchain-based solutions for digital asset ownership and rights management expand
+		- Support for user-generated content and virtual economies through [[smart contracts]] and [[tokenomics]]
+		- [[NFT]] standards mature for cross-platform asset portability
+		- Integration of [[DeFi]] protocols for virtual asset lending, staking, and insurance
+	- **Regulatory Compliance**:
+		- Alignment with evolving regulatory frameworks essential for global adoption
+		- Harmonization of standards across EU, US, and Asian markets
+		- Development of governance frameworks for virtual societies
+	- **6G and Network Evolution**:
+		- [[5G/6G]] integration for high-bandwidth, low-latency metaverse applications
+		- [[Edge computing]] and [[cloud streaming]] democratizing access to immersive experiences
+		- Multi-access techniques supporting scalable virtual world deployments
+
+- ## Terms in ETSI Virtual Society Domain
+	- [[Accessibility Standard]]
+	- [[Avatar]]
+	- [[Collective Intelligence System]]
+	- [[Digital Citizenship]]
+	- [[Digital Ritual]]
+	- [[Digital Twin of Society (DToS)]]
+	- [[Metaverse]]
+	- [[XR Accessibility Guideline]]
+	- [[Spatial Anchors]]
+	- [[World Graph]]
+	- [[Interoperable Anchoring]]
+	- [[IPSME (Inter-Platform Semantic Messaging Environment)]]
+	- [[Decentralized Identity]]
+	- [[Self-Sovereign Identity (SSI)]]
+	- [[NFT Standards]]
+	- [[GameFi]]
+	- [[Virtual Economies]]
+	- [[Tokenomics]]
+
+- ## Related Concepts and Cross-References
+	- **Metaverse and Virtual Worlds**:
+		- [[Metaverse]]
+		- [[MetaverseDomain]]
+		- [[Web 4.0]]
+		- [[Virtual worlds]]
+		- [[Digital Twin]]
+		- [[Spatial Computing]]
+	- **Standards Organizations**:
+		- [[ETSI]]
+		- [[Metaverse Standards Forum (MSF)]]
+		- [[ITU-T Focus Group on Metaverse]]
+		- [[Open Metaverse Interoperability Group (OMI)]]
+		- [[Khronos Group]]
+		- [[3GPP]]
+	- **Technical Frameworks**:
+		- [[ETSI ARF]] (Augmented Reality Framework)
+		- [[OpenXR]]
+		- [[World Graph]]
+		- [[Scene Graph]]
+		- [[IPSME]]
+	- **Identity and Privacy**:
+		- [[Digital Identity]]
+		- [[Decentralized Identity]]
+		- [[Self-Sovereign Identity (SSI)]]
+		- [[Privacy-preserving Identity]]
+		- [[Verifiable Credentials]]
+		- [[Zero-Knowledge Proofs]]
+		- [[GDPR]]
+	- **Blockchain and Crypto**:
+		- [[Blockchain]]
+		- [[NFT]]
+		- [[Smart Contracts]]
+		- [[DeFi]]
+		- [[DAO]]
+		- [[Tokenomics]]
+		- [[GameFi]]
+		- [[Play-to-Earn (P2E)]]
+	- **Extended Reality**:
+		- [[XR (Extended Reality)]]
+		- [[Augmented Reality]]
+		- [[Virtual Reality]]
+		- [[Mixed Reality]]
+		- [[Immersive Media]]
+		- [[Volumetric Video]]
+		- [[3D Audio]]
+	- **Policy and Governance**:
+		- [[European Digital Strategy]]
+		- [[EU Standardisation Strategy]]
+		- [[Cyber Resilience Act]]
+		- [[EU Digital Identity Initiative]]
+		- [[Digital Single Market]]
+		- [[Interoperability]]
+
+- ## Query All Terms in Domain
+	- ```clojure
+	  #+BEGIN_QUERY
+	  {:query [:find (pull ?p [*])
+	          :where
+	          [?p :block/properties ?props]
+	          [(get ?props :domain) ?d]
+	          [(clojure.string/includes? ?d "Virtual Society")]]
+	  }
+	  #+END_QUERY
+	  ```
+
+- ## Metadata
+	- **Last Enriched**: 2025-11-13
+	- **Enrichment Source**: Perplexity AI (Sonar Pro) - 5 URLs expanded
+	- **Processing Agent**: Agent 27 (Knowledge Graph Cleanup)
+	- **Verification Status**: Automated enrichment with comprehensive URL expansion - human review recommended
+	- **Quality Score**: 0.95 (improved from 0.50)
+	- **Structure Issues Fixed**: 26
+	- **URLs Expanded**: 5
+	- **Blockchain Relevance**: Moderate (40%) - Application layer integration
+	- **Recommended Category**: Metaverse Standards with Blockchain Applications

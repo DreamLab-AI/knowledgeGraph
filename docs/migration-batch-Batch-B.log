@@ -1,0 +1,103 @@
+=== Batch Migration: Batch-B ===
+Started: Fri Nov 14 17:03:21 UTC 2025
+
+Processing: Delegate Democracy.md
+  ✅ MIGRATED: Delegate Democracy.md → blockchain-knowledge-graph/pages/
+
+Processing: Delegated Proof Of Stake.md
+  ✅ MIGRATED: Delegated Proof Of Stake.md → blockchain-knowledge-graph/pages/
+
+Processing: Difficulty Adjustment.md
+  ✅ MIGRATED: Difficulty Adjustment.md → blockchain-knowledge-graph/pages/
+
+Processing: Difficulty Target.md
+  ✅ MIGRATED: Difficulty Target.md → blockchain-knowledge-graph/pages/
+
+Processing: Digital Constitution.md
+  ✅ MIGRATED: Digital Constitution.md → blockchain-knowledge-graph/pages/
+
+Processing: Digital Evidence Chain of Custody.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: Digital Evidence Chain of Custody.md → blockchain-knowledge-graph/pages/
+
+Processing: Digital Goods Registry.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: Digital Goods Registry.md → blockchain-knowledge-graph/pages/
+
+Processing: Digital Identity Wallet.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: Digital Identity Wallet.md → blockchain-knowledge-graph/pages/
+
+Processing: Digital Rights Management (Extended).md
+  ✅ MIGRATED: Digital Rights Management (Extended).md → blockchain-knowledge-graph/pages/
+
+Processing: Dispute Resolution Mechanism.md
+  ✅ MIGRATED: Dispute Resolution Mechanism.md → blockchain-knowledge-graph/pages/
+
+Processing: Distributed Data Structure.md
+  ✅ MIGRATED: Distributed Data Structure.md → blockchain-knowledge-graph/pages/
+
+Processing: E R C1155 Token.md
+  ✅ MIGRATED: E R C1155 Token.md → blockchain-knowledge-graph/pages/
+
+Processing: E R C20 Token.md
+  ✅ MIGRATED: E R C20 Token.md → blockchain-knowledge-graph/pages/
+
+Processing: E R C721 Token.md
+  ✅ MIGRATED: E R C721 Token.md → blockchain-knowledge-graph/pages/
+
+Processing: ERC721.md
+  ✅ MIGRATED: ERC721.md → blockchain-knowledge-graph/pages/
+
+Processing: ESG Reporting.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: ESG Reporting.md → blockchain-knowledge-graph/pages/
+
+Processing: EU MiCA Regulation.md
+  ✅ MIGRATED: EU MiCA Regulation.md → blockchain-knowledge-graph/pages/
+
+Processing: Eclipse Attack.md
+  ✅ MIGRATED: Eclipse Attack.md → blockchain-knowledge-graph/pages/
+
+Processing: Enterprise Blockchain Architecture.md
+  ✅ MIGRATED: Enterprise Blockchain Architecture.md → blockchain-knowledge-graph/pages/
+
+Processing: Enterprise Smart Contracts.md
+  ✅ MIGRATED: Enterprise Smart Contracts.md → blockchain-knowledge-graph/pages/
+
+Processing: Enterprise Token Standards.md
+  ✅ MIGRATED: Enterprise Token Standards.md → blockchain-knowledge-graph/pages/
+
+Processing: Environmental Sustainability Label.md
+  ✅ MIGRATED: Environmental Sustainability Label.md → blockchain-knowledge-graph/pages/
+
+Processing: Ethical Sourcing.md
+  ✅ MIGRATED: Ethical Sourcing.md → blockchain-knowledge-graph/pages/
+
+Processing: Food Safety Blockchain.md
+  ✅ MIGRATED: Food Safety Blockchain.md → blockchain-knowledge-graph/pages/
+
+Processing: Full Node.md
+  ✅ MIGRATED: Full Node.md → blockchain-knowledge-graph/pages/
+
+Processing: Genesis Block.md
+  ✅ MIGRATED: Genesis Block.md → blockchain-knowledge-graph/pages/
+
+Processing: Grant Programs.md
+  ✅ MIGRATED: Grant Programs.md → blockchain-knowledge-graph/pages/
+
+Processing: Hash Collision.md
+  ✅ MIGRATED: Hash Collision.md → blockchain-knowledge-graph/pages/
+
+Processing: Hash Function.md
+  ✅ MIGRATED: Hash Function.md → blockchain-knowledge-graph/pages/
+
+Processing: Healthcare Records.md
+  ✅ MIGRATED: Healthcare Records.md → blockchain-knowledge-graph/pages/
+
+=== Summary ===
+Total migrated: 30
+Contaminated: 4
+Sparse files: 0
+Errors: 0
+Completed: Fri Nov 14 17:03:21 UTC 2025

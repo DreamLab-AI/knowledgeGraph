@@ -1,0 +1,110 @@
+=== Batch Migration: Batch-A ===
+Started: Fri Nov 14 17:02:54 UTC 2025
+
+Processing: Anti Counterfeiting.md
+  ✅ MIGRATED: Anti Counterfeiting.md → blockchain-knowledge-graph/pages/
+
+Processing: BLAKE2.md
+  ✅ MIGRATED: BLAKE2.md → blockchain-knowledge-graph/pages/
+
+Processing: Bitcoin Environmental Issues.md
+  📝 SPARSE: File is only 202 bytes
+  ✅ MIGRATED: Bitcoin Environmental Issues.md → blockchain-knowledge-graph/pages/
+
+Processing: Bitcoin Technical Overview.md
+  ✅ MIGRATED: Bitcoin Technical Overview.md → blockchain-knowledge-graph/pages/
+
+Processing: Block Header.md
+  ✅ MIGRATED: Block Header.md → blockchain-knowledge-graph/pages/
+
+Processing: Block Height.md
+  ✅ MIGRATED: Block Height.md → blockchain-knowledge-graph/pages/
+
+Processing: Block Propagation Time.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: Block Propagation Time.md → blockchain-knowledge-graph/pages/
+
+Processing: Carbon Footprint Measurement.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: Carbon Footprint Measurement.md → blockchain-knowledge-graph/pages/
+
+Processing: Cardano.md
+  ✅ MIGRATED: Cardano.md → blockchain-knowledge-graph/pages/
+
+Processing: Climate Action DAO.md
+  ✅ MIGRATED: Climate Action DAO.md → blockchain-knowledge-graph/pages/
+
+Processing: Clinical Trials.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: Clinical Trials.md → blockchain-knowledge-graph/pages/
+
+Processing: Collision Resistance.md
+  ✅ MIGRATED: Collision Resistance.md → blockchain-knowledge-graph/pages/
+
+Processing: Compliance Monitoring.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: Compliance Monitoring.md → blockchain-knowledge-graph/pages/
+
+Processing: Conflict Mineral Tracking.md
+  ✅ MIGRATED: Conflict Mineral Tracking.md → blockchain-knowledge-graph/pages/
+
+Processing: Consensus Rule.md
+  ✅ MIGRATED: Consensus Rule.md → blockchain-knowledge-graph/pages/
+
+Processing: ConsensusAlgorithm.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: ConsensusAlgorithm.md → blockchain-knowledge-graph/pages/
+
+Processing: ConsensusMechanism.md
+  ✅ MIGRATED: ConsensusMechanism.md → blockchain-knowledge-graph/pages/
+
+Processing: Consortium Blockchain.md
+  ✅ MIGRATED: Consortium Blockchain.md → blockchain-knowledge-graph/pages/
+
+Processing: Consumer Protection.md
+  ✅ MIGRATED: Consumer Protection.md → blockchain-knowledge-graph/pages/
+
+Processing: Cross Border Compliance.md
+  ✅ MIGRATED: Cross Border Compliance.md → blockchain-knowledge-graph/pages/
+
+Processing: CryptographicHash.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: CryptographicHash.md → blockchain-knowledge-graph/pages/
+
+Processing: Cryptography.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: Cryptography.md → blockchain-knowledge-graph/pages/
+
+Processing: Customs Trade Facilitation.md
+  ✅ MIGRATED: Customs Trade Facilitation.md → blockchain-knowledge-graph/pages/
+
+Processing: DAO Legal Structures.md
+  ✅ MIGRATED: DAO Legal Structures.md → blockchain-knowledge-graph/pages/
+
+Processing: DAO.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: DAO.md → blockchain-knowledge-graph/pages/
+
+Processing: Data Storage Layer.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: Data Storage Layer.md → blockchain-knowledge-graph/pages/
+
+Processing: DataPipeline.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: DataPipeline.md → blockchain-knowledge-graph/pages/
+
+Processing: Decentralized Autonomous Organization (DAO).md
+  ✅ MIGRATED: Decentralized Autonomous Organization (DAO).md → blockchain-knowledge-graph/pages/
+
+Processing: Decentralized Identifiers.md
+  ✅ MIGRATED: Decentralized Identifiers.md → blockchain-knowledge-graph/pages/
+
+Processing: Decentralized Identity (DID).md
+  ✅ MIGRATED: Decentralized Identity (DID).md → blockchain-knowledge-graph/pages/
+
+=== Summary ===
+Total migrated: 30
+Contaminated: 10
+Sparse files: 1
+Errors: 0
+Completed: Fri Nov 14 17:02:54 UTC 2025

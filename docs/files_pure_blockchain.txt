@@ -1,0 +1,134 @@
+# Pure Blockchain
+
+Total files: 130
+
+1. Anti Counterfeiting.md
+2. BLAKE2.md
+3. Bitcoin Environmental Issues.md
+4. Bitcoin Technical Overview.md
+5. Block Header.md
+6. Block Height.md
+7. Block Propagation Time.md
+8. Carbon Footprint Measurement.md
+9. Cardano.md
+10. Climate Action DAO.md
+11. Clinical Trials.md
+12. Collision Resistance.md
+13. Compliance Monitoring.md
+14. Conflict Mineral Tracking.md
+15. Consensus Rule.md
+16. ConsensusAlgorithm.md
+17. ConsensusMechanism.md
+18. Consortium Blockchain.md
+19. Consumer Protection.md
+20. Cross Border Compliance.md
+21. CryptographicHash.md
+22. Cryptography.md
+23. Customs Trade Facilitation.md
+24. DAO Legal Structures.md
+25. DAO.md
+26. Data Storage Layer.md
+27. DataPipeline.md
+28. Decentralized Autonomous Organization (DAO).md
+29. Decentralized Identifiers.md
+30. Decentralized Identity (DID).md
+31. Delegate Democracy.md
+32. Delegated Proof Of Stake.md
+33. Difficulty Adjustment.md
+34. Difficulty Target.md
+35. Digital Constitution.md
+36. Digital Evidence Chain of Custody.md
+37. Digital Goods Registry.md
+38. Digital Identity Wallet.md
+39. Digital Rights Management (Extended).md
+40. Dispute Resolution Mechanism.md
+41. Distributed Data Structure.md
+42. E R C1155 Token.md
+43. E R C20 Token.md
+44. E R C721 Token.md
+45. ERC721.md
+46. ESG Reporting.md
+47. EU MiCA Regulation.md
+48. Eclipse Attack.md
+49. Enterprise Blockchain Architecture.md
+50. Enterprise Smart Contracts.md
+51. Enterprise Token Standards.md
+52. Environmental Sustainability Label.md
+53. Ethical Sourcing.md
+54. Food Safety Blockchain.md
+55. Full Node.md
+56. Genesis Block.md
+57. Grant Programs.md
+58. Hash Collision.md
+59. Hash Function.md
+60. Healthcare Records.md
+61. Hyperledger Besu.md
+62. Hyperledger Fabric.md
+63. Hyperledger Indy.md
+64. Hyperledger Iroha.md
+65. Identity Verification.md
+66. Immutability.md
+67. Input.md
+68. Keccak-256.md
+69. Layer2.md
+70. Longest Chain Rule.md
+71. Luxury Goods Authentication.md
+72. Merkle Proof.md
+73. Metaverse as Markets.md
+74. Miner.md
+75. Misc Twitter Links.md
+76. Multiverse.md
+77. NFT Renting.md
+78. NFT Wrapping.md
+79. NFT.md
+80. Nakamoto Consensus.md
+81. Network Hash Rate.md
+82. Network Synchronization.md
+83. ONTOLOGY_ANALYSIS_SUMMARY.md
+84. On Chain Voting.md
+85. Orphan Reddit Links.md
+86. Ouroboros Consensus.md
+87. Partition Attack.md
+88. Permissioned Blockchain.md
+89. Permissioned Network.md
+90. Persistence.md
+91. Pharmaceutical Traceability.md
+92. Portability.md
+93. Preimage Resistance.md
+94. PrivateBlockchain.md
+95. Product Recall Management.md
+96. Proof Of History.md
+97. ProofOfWork.md
+98. Pruned Node.md
+99. Public Key - CORRECTED.md
+100. Public-Key Cryptography.md
+101. Quadratic Voting.md
+102. RGB and Client Side Validation.md
+103. Regulatory Reporting.md
+104. Runes and Glyphs.md
+105. Salt.md
+106. Schnorr Signature.md
+107. Security Token.md
+108. SecurityLayer.md
+109. Self Sovereign Identity.md
+110. Selfish Mining.md
+111. Semi Fungible Token.md
+112. Snapshot Voting.md
+113. Solo Mining.md
+114. Spatial Web.md
+115. Sustainable Consensus.md
+116. Taylor Swift is Venice.md
+117. Testnet.md
+118. Timestamp.md
+119. User Consent Token.md
+120. VERIFICATION.md
+121. Virtual Property Right.md
+122. VirtualMachine.md
+123. Voting Systems.md
+124. Web3.md
+125. Zero-Knowledge Proof (ZKP).md
+126. Zero-Knowledge Proof.md
+127. blockchain-core-concepts.md
+128. metaverse-core-concepts.md
+129. personal accounts.md
+130. security-audit-guide.md

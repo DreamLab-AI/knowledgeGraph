@@ -1,0 +1,105 @@
+=== Batch Migration: Batch-D ===
+Started: Fri Nov 14 17:03:22 UTC 2025
+
+Processing: Pharmaceutical Traceability.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: Pharmaceutical Traceability.md → blockchain-knowledge-graph/pages/
+
+Processing: Portability.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: Portability.md → blockchain-knowledge-graph/pages/
+
+Processing: Preimage Resistance.md
+  ✅ MIGRATED: Preimage Resistance.md → blockchain-knowledge-graph/pages/
+
+Processing: PrivateBlockchain.md
+  ✅ MIGRATED: PrivateBlockchain.md → blockchain-knowledge-graph/pages/
+
+Processing: Product Recall Management.md
+  ✅ MIGRATED: Product Recall Management.md → blockchain-knowledge-graph/pages/
+
+Processing: Proof Of History.md
+  ✅ MIGRATED: Proof Of History.md → blockchain-knowledge-graph/pages/
+
+Processing: ProofOfWork.md
+  ✅ MIGRATED: ProofOfWork.md → blockchain-knowledge-graph/pages/
+
+Processing: Pruned Node.md
+  ✅ MIGRATED: Pruned Node.md → blockchain-knowledge-graph/pages/
+
+Processing: Public Key - CORRECTED.md
+  ✅ MIGRATED: Public Key - CORRECTED.md → blockchain-knowledge-graph/pages/
+
+Processing: Public-Key Cryptography.md
+  ✅ MIGRATED: Public-Key Cryptography.md → blockchain-knowledge-graph/pages/
+
+Processing: Quadratic Voting.md
+  ✅ MIGRATED: Quadratic Voting.md → blockchain-knowledge-graph/pages/
+
+Processing: RGB and Client Side Validation.md
+  ✅ MIGRATED: RGB and Client Side Validation.md → blockchain-knowledge-graph/pages/
+
+Processing: Regulatory Reporting.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: Regulatory Reporting.md → blockchain-knowledge-graph/pages/
+
+Processing: Runes and Glyphs.md
+  ✅ MIGRATED: Runes and Glyphs.md → blockchain-knowledge-graph/pages/
+
+Processing: Salt.md
+  ✅ MIGRATED: Salt.md → blockchain-knowledge-graph/pages/
+
+Processing: Schnorr Signature.md
+  ✅ MIGRATED: Schnorr Signature.md → blockchain-knowledge-graph/pages/
+
+Processing: Security Token.md
+  ✅ MIGRATED: Security Token.md → blockchain-knowledge-graph/pages/
+
+Processing: SecurityLayer.md
+  ✅ MIGRATED: SecurityLayer.md → blockchain-knowledge-graph/pages/
+
+Processing: Self Sovereign Identity.md
+  ✅ MIGRATED: Self Sovereign Identity.md → blockchain-knowledge-graph/pages/
+
+Processing: Selfish Mining.md
+  ✅ MIGRATED: Selfish Mining.md → blockchain-knowledge-graph/pages/
+
+Processing: Semi Fungible Token.md
+  ✅ MIGRATED: Semi Fungible Token.md → blockchain-knowledge-graph/pages/
+
+Processing: Snapshot Voting.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: Snapshot Voting.md → blockchain-knowledge-graph/pages/
+
+Processing: Solo Mining.md
+  ✅ MIGRATED: Solo Mining.md → blockchain-knowledge-graph/pages/
+
+Processing: Spatial Web.md
+  ✅ MIGRATED: Spatial Web.md → blockchain-knowledge-graph/pages/
+
+Processing: Sustainable Consensus.md
+  ✅ MIGRATED: Sustainable Consensus.md → blockchain-knowledge-graph/pages/
+
+Processing: Taylor Swift is Venice.md
+  ✅ MIGRATED: Taylor Swift is Venice.md → blockchain-knowledge-graph/pages/
+
+Processing: Testnet.md
+  📝 SPARSE: File is only 71 bytes
+  ✅ MIGRATED: Testnet.md → blockchain-knowledge-graph/pages/
+
+Processing: Timestamp.md
+  ✅ MIGRATED: Timestamp.md → blockchain-knowledge-graph/pages/
+
+Processing: User Consent Token.md
+  ✅ MIGRATED: User Consent Token.md → blockchain-knowledge-graph/pages/
+
+Processing: VERIFICATION.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: VERIFICATION.md → blockchain-knowledge-graph/pages/
+
+=== Summary ===
+Total migrated: 30
+Contaminated: 5
+Sparse files: 1
+Errors: 0
+Completed: Fri Nov 14 17:03:22 UTC 2025

@@ -1,0 +1,123 @@
+[package]
+name = "logseq-publisher-rust"
+version = "0.1.0"
+edition = "2021"
+authors = ["Logseq Publisher Team"]
+description = "High-performance Rust implementation of Logseq graph publisher with OWL/RDF ontology support"
+license = "MIT"
+repository = "https://github.com/logseq/logseq-publisher-rust"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "logseq-publisher"
+path = "src/bin/main.rs"
+
+[dependencies]
+# Markdown and parsing
+pulldown-cmark = "0.11"
+regex = "1.10"
+lazy_static = "1.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Graph and data structures
+petgraph = "0.6"
+indexmap = "2.1"
+
+# File system and I/O
+walkdir = "2.4"
+glob = "0.3"
+
+# CLI and parallel processing
+clap = { version = "4.5", features = ["derive"] }
+rayon = "1.8"
+indicatif = "0.17"
+
+# Hashing
+sha2 = "0.10"
+
+# WASM support
+wasm-bindgen = "0.2"
+wasm-bindgen-futures = "0.4"
+js-sys = "0.3"
+web-sys = { version = "0.3", features = [
+    "Document",
+    "Element",
+    "HtmlElement",
+    "Node",
+    "Window",
+    "Performance",
+    "PerformanceTiming"
+]}
+
+# Error handling
+thiserror = "1.0"
+anyhow = "1.0"
+
+# RDF and OWL support (Phase 2)
+sophia = "0.8"
+rio_api = "0.8"
+rio_turtle = "0.8"
+serde_yaml = "0.9"
+
+# Async support
+tokio = { version = "1.35", features = ["full"], optional = true }
+
+# napi-rs support (Phase 2)
+napi = { version = "2", features = ["serde-json"], optional = true }
+napi-derive = { version = "2", optional = true }
+
+[build-dependencies]
+# napi-rs build support
+napi-build = "2"
+
+[dev-dependencies]
+# Testing
+criterion = { version = "0.5", features = ["html_reports"] }
+proptest = "1.4"
+quickcheck = "1.0"
+quickcheck_macros = "1.0"
+rstest = "0.18"
+mockall = "0.12"
+wiremock = "0.5"
+
+# Test utilities
+pretty_assertions = "1.4"
+tempfile = "3.8"
+assert_fs = "1.0"
+predicates = "3.0"
+
+# WASM testing
+wasm-bindgen-test = "0.3"
+
+[features]
+default = []
+async = ["tokio"]
+wasm = []
+napi = ["dep:napi", "dep:napi-derive"]
+
+[[bench]]
+name = "parser_bench"
+harness = false
+
+[[bench]]
+name = "graph_bench"
+harness = false
+
+[[bench]]
+name = "wasm_bench"
+harness = false
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+
+[profile.bench]
+opt-level = 3
+lto = true
+
+[profile.test]
+opt-level = 1

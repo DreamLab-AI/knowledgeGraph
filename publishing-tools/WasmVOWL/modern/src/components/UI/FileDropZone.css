@@ -1,0 +1,179 @@
+.file-drop-zone-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.file-drop-zone {
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+.file-drop-zone:hover {
+  border-color: #666;
+  background-color: #f0f0f0;
+}
+
+.file-drop-zone.dragging {
+  border-color: #4a90e2;
+  background-color: #e3f2fd;
+  transform: scale(1.02);
+}
+
+.file-drop-zone.loading {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.drop-zone-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.drop-zone-icon {
+  width: 64px;
+  height: 64px;
+  color: #666;
+}
+
+.file-drop-zone.dragging .drop-zone-icon {
+  color: #4a90e2;
+  animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #4a90e2;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.drop-zone-content h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.drop-zone-content p {
+  margin: 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+.file-hint {
+  font-size: 0.875rem !important;
+  color: #999 !important;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-input-label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.file-input-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.file-input-button:hover {
+  background-color: #357abd;
+}
+
+.file-input-button:active {
+  background-color: #2d6ba3;
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: #fee;
+  border: 1px solid #fcc;
+  border-radius: 6px;
+  color: #c33;
+}
+
+.error-message svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.sample-ontologies {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 1.5rem;
+}
+
+.sample-ontologies h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.sample-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.sample-button {
+  padding: 0.625rem 1.25rem;
+  background-color: white;
+  border: 2px solid #4a90e2;
+  border-radius: 6px;
+  color: #4a90e2;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sample-button:hover:not(:disabled) {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.sample-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sample-button:active:not(:disabled) {
+  transform: scale(0.98);
+}

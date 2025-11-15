@@ -1,0 +1,23 @@
+# Never include private data
+mainKnowledgeGraph/
+
+# No test/sample content
+**/pages/
+**/journals/
+**/public/ontologies/
+
+# Build artifacts
+**/node_modules/
+**/dist/
+**/pkg/
+**/.venv/
+**/venv/
+
+# Generated files
+*.ttl
+*.json
+narrativegoldmine-ontology.*
+
+# IDE
+.vscode/
+.idea/

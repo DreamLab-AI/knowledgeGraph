@@ -1,0 +1,30 @@
+31. Delegate Democracy.md
+32. Delegated Proof Of Stake.md
+33. Difficulty Adjustment.md
+34. Difficulty Target.md
+35. Digital Constitution.md
+36. Digital Evidence Chain of Custody.md
+37. Digital Goods Registry.md
+38. Digital Identity Wallet.md
+39. Digital Rights Management (Extended).md
+40. Dispute Resolution Mechanism.md
+41. Distributed Data Structure.md
+42. E R C1155 Token.md
+43. E R C20 Token.md
+44. E R C721 Token.md
+45. ERC721.md
+46. ESG Reporting.md
+47. EU MiCA Regulation.md
+48. Eclipse Attack.md
+49. Enterprise Blockchain Architecture.md
+50. Enterprise Smart Contracts.md
+51. Enterprise Token Standards.md
+52. Environmental Sustainability Label.md
+53. Ethical Sourcing.md
+54. Food Safety Blockchain.md
+55. Full Node.md
+56. Genesis Block.md
+57. Grant Programs.md
+58. Hash Collision.md
+59. Hash Function.md
+60. Healthcare Records.md

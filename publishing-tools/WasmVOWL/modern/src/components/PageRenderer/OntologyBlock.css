@@ -1,0 +1,59 @@
+.ontology-block {
+  background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+  border-left: 4px solid #4a9eff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.ontology-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.ontology-icon {
+  font-size: 1.5rem;
+}
+
+.ontology-header h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary, #333);
+}
+
+.ontology-properties {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.ontology-property {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 1rem;
+}
+
+.ontology-property dt {
+  font-weight: 600;
+  color: var(--text-secondary, #666);
+  text-transform: capitalize;
+}
+
+.ontology-property dd {
+  margin: 0;
+  color: var(--text-primary, #333);
+  font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .ontology-property {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}

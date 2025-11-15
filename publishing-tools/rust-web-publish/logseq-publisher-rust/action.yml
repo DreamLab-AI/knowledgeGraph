@@ -1,0 +1,180 @@
+name: 'Logseq Publisher (Rust - Externalized Content)'
+description: 'Publishes Logseq graph with externalized page content for optimal performance'
+author: 'Logseq Publisher Team'
+
+branding:
+  icon: 'book-open'
+  color: 'blue'
+
+inputs:
+  graph-directory:
+    description: 'Directory containing the Logseq graph (pages/)'
+    required: true
+
+  output-directory:
+    description: 'Directory for published output'
+    required: true
+    default: 'www'
+
+  theme-mode:
+    description: 'Theme mode (light or dark)'
+    required: false
+    default: 'light'
+
+  filter-property:
+    description: 'Filter pages by property (e.g., "public-access:: true")'
+    required: false
+    default: ''
+
+  include-backlinks:
+    description: 'Include backlinks in exported pages'
+    required: false
+    default: 'false'
+
+  include-graph-view:
+    description: 'Include graph view visualization'
+    required: false
+    default: 'false'
+
+  custom-css:
+    description: 'Path to custom CSS file'
+    required: false
+    default: ''
+
+  max-size-mb:
+    description: 'Maximum output size in MB (fails if exceeded)'
+    required: false
+    default: '100'
+
+  verbose:
+    description: 'Enable verbose logging'
+    required: false
+    default: 'false'
+
+outputs:
+  pages-count:
+    description: 'Number of pages published'
+    value: ${{ steps.publish.outputs.pages_count }}
+
+  output-size:
+    description: 'Output directory size in MB'
+    value: ${{ steps.publish.outputs.output_size }}
+
+  build-time:
+    description: 'Build time in seconds'
+    value: ${{ steps.publish.outputs.build_time }}
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup Rust
+      uses: actions-rust-lang/setup-rust-toolchain@v1
+      with:
+        toolchain: stable
+        # Disable automatic caching - we'll handle it manually with correct paths
+        cache: false
+
+    - name: Cache Rust dependencies
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.cargo/bin/
+          ~/.cargo/registry/index/
+          ~/.cargo/registry/cache/
+          ~/.cargo/git/db/
+          ${{ github.action_path }}/target/
+        key: ${{ runner.os }}-cargo-logseq-publisher-v1
+        restore-keys: |
+          ${{ runner.os }}-cargo-logseq-publisher-
+          ${{ runner.os }}-cargo-
+
+    - name: Build Rust publisher
+      shell: bash
+      working-directory: ${{ github.action_path }}
+      run: |
+        echo "🔨 Building Rust publisher..."
+        echo "Working directory: $(pwd)"
+        echo "Cargo.toml exists: $(test -f Cargo.toml && echo 'yes' || echo 'no')"
+        chmod +x build.sh
+        ./build.sh
+
+    - name: Run publisher
+      id: publish
+      shell: bash
+      working-directory: ${{ github.action_path }}
+      env:
+        INPUT_DIR: ${{ github.workspace }}/${{ inputs.graph-directory }}
+        OUTPUT_DIR: ${{ github.workspace }}/${{ inputs.output-directory }}
+        THEME: ${{ inputs.theme-mode }}
+        FILTER: ${{ inputs.filter-property }}
+        BACKLINKS: ${{ inputs.include-backlinks }}
+        GRAPH_VIEW: ${{ inputs.include-graph-view }}
+        CUSTOM_CSS: ${{ inputs.custom-css }}
+        VERBOSE: ${{ inputs.verbose }}
+      run: |
+        echo "🚀 Running Logseq Publisher..."
+
+        START_TIME=$(date +%s)
+
+        # Phase 5 CLI uses subcommands (export, ontology)
+        # Run export command with API generation enabled
+        ./target/release/logseq-publisher export \
+          --input "$INPUT_DIR" \
+          --output "$OUTPUT_DIR" \
+          --with-api
+
+        echo "✅ Export completed with API generation"
+
+        # Capture outputs
+        END_TIME=$(date +%s)
+        BUILD_TIME=$((END_TIME - START_TIME))
+
+        OUTPUT_SIZE=$(du -sm "$OUTPUT_DIR" | cut -f1)
+        # Phase 5 API structure: /api/pages/*.json
+        PAGES_COUNT=$(find "$OUTPUT_DIR/api/pages" -name "*.json" 2>/dev/null | wc -l || echo "0")
+
+        echo "pages_count=$PAGES_COUNT" >> $GITHUB_OUTPUT
+        echo "output_size=$OUTPUT_SIZE" >> $GITHUB_OUTPUT
+        echo "build_time=$BUILD_TIME" >> $GITHUB_OUTPUT
+
+        echo ""
+        echo "✅ Publishing complete!"
+        echo "   Pages: $PAGES_COUNT"
+        echo "   Size:  ${OUTPUT_SIZE}MB"
+        echo "   Time:  ${BUILD_TIME}s"
+
+    - name: Verify output size
+      shell: bash
+      env:
+        OUTPUT_DIR: ${{ github.workspace }}/${{ inputs.output-directory }}
+        MAX_SIZE: ${{ inputs.max-size-mb }}
+      run: |
+        OUTPUT_SIZE=$(du -sm "$OUTPUT_DIR" | cut -f1)
+
+        echo "📊 Output size: ${OUTPUT_SIZE}MB (max: ${MAX_SIZE}MB)"
+
+        if [ "$OUTPUT_SIZE" -gt "$MAX_SIZE" ]; then
+          echo "❌ ERROR: Output size (${OUTPUT_SIZE}MB) exceeds maximum (${MAX_SIZE}MB)"
+          echo "   Consider filtering more content or reducing assets"
+          exit 1
+        fi
+
+        echo "✅ Size check passed"
+
+    - name: Create deployment summary
+      shell: bash
+      env:
+        OUTPUT_DIR: ${{ github.workspace }}/${{ inputs.output-directory }}
+        PAGES_COUNT: ${{ steps.publish.outputs.pages_count }}
+        OUTPUT_SIZE: ${{ steps.publish.outputs.output_size }}
+        BUILD_TIME: ${{ steps.publish.outputs.build_time }}
+      run: |
+        echo "## 📊 Logseq Publisher Summary" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "| Metric | Value |" >> $GITHUB_STEP_SUMMARY
+        echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
+        echo "| Pages Published | $PAGES_COUNT |" >> $GITHUB_STEP_SUMMARY
+        echo "| Output Size | ${OUTPUT_SIZE}MB |" >> $GITHUB_STEP_SUMMARY
+        echo "| Build Time | ${BUILD_TIME}s |" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "✅ **Build successful!**" >> $GITHUB_STEP_SUMMARY

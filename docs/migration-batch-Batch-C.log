@@ -1,0 +1,106 @@
+=== Batch Migration: Batch-C ===
+Started: Fri Nov 14 17:03:22 UTC 2025
+
+Processing: Hyperledger Besu.md
+  ✅ MIGRATED: Hyperledger Besu.md → blockchain-knowledge-graph/pages/
+
+Processing: Hyperledger Fabric.md
+  ✅ MIGRATED: Hyperledger Fabric.md → blockchain-knowledge-graph/pages/
+
+Processing: Hyperledger Indy.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: Hyperledger Indy.md → blockchain-knowledge-graph/pages/
+
+Processing: Hyperledger Iroha.md
+  ✅ MIGRATED: Hyperledger Iroha.md → blockchain-knowledge-graph/pages/
+
+Processing: Identity Verification.md
+  ✅ MIGRATED: Identity Verification.md → blockchain-knowledge-graph/pages/
+
+Processing: Immutability.md
+  ✅ MIGRATED: Immutability.md → blockchain-knowledge-graph/pages/
+
+Processing: Input.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: Input.md → blockchain-knowledge-graph/pages/
+
+Processing: Keccak-256.md
+  ✅ MIGRATED: Keccak-256.md → blockchain-knowledge-graph/pages/
+
+Processing: Layer2.md
+  ✅ MIGRATED: Layer2.md → blockchain-knowledge-graph/pages/
+
+Processing: Longest Chain Rule.md
+  ✅ MIGRATED: Longest Chain Rule.md → blockchain-knowledge-graph/pages/
+
+Processing: Luxury Goods Authentication.md
+  ✅ MIGRATED: Luxury Goods Authentication.md → blockchain-knowledge-graph/pages/
+
+Processing: Merkle Proof.md
+  ✅ MIGRATED: Merkle Proof.md → blockchain-knowledge-graph/pages/
+
+Processing: Metaverse as Markets.md
+  ✅ MIGRATED: Metaverse as Markets.md → blockchain-knowledge-graph/pages/
+
+Processing: Miner.md
+  ✅ MIGRATED: Miner.md → blockchain-knowledge-graph/pages/
+
+Processing: Misc Twitter Links.md
+  ✅ MIGRATED: Misc Twitter Links.md → blockchain-knowledge-graph/pages/
+
+Processing: Multiverse.md
+  ✅ MIGRATED: Multiverse.md → blockchain-knowledge-graph/pages/
+
+Processing: NFT Renting.md
+  ✅ MIGRATED: NFT Renting.md → blockchain-knowledge-graph/pages/
+
+Processing: NFT Wrapping.md
+  ✅ MIGRATED: NFT Wrapping.md → blockchain-knowledge-graph/pages/
+
+Processing: NFT.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: NFT.md → blockchain-knowledge-graph/pages/
+
+Processing: Nakamoto Consensus.md
+  ✅ MIGRATED: Nakamoto Consensus.md → blockchain-knowledge-graph/pages/
+
+Processing: Network Hash Rate.md
+  ✅ MIGRATED: Network Hash Rate.md → blockchain-knowledge-graph/pages/
+
+Processing: Network Synchronization.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: Network Synchronization.md → blockchain-knowledge-graph/pages/
+
+Processing: ONTOLOGY_ANALYSIS_SUMMARY.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: ONTOLOGY_ANALYSIS_SUMMARY.md → blockchain-knowledge-graph/pages/
+
+Processing: On Chain Voting.md
+  ✅ MIGRATED: On Chain Voting.md → blockchain-knowledge-graph/pages/
+
+Processing: Orphan Reddit Links.md
+  ✅ MIGRATED: Orphan Reddit Links.md → blockchain-knowledge-graph/pages/
+
+Processing: Ouroboros Consensus.md
+  ✅ MIGRATED: Ouroboros Consensus.md → blockchain-knowledge-graph/pages/
+
+Processing: Partition Attack.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: Partition Attack.md → blockchain-knowledge-graph/pages/
+
+Processing: Permissioned Blockchain.md
+  ✅ MIGRATED: Permissioned Blockchain.md → blockchain-knowledge-graph/pages/
+
+Processing: Permissioned Network.md
+  ✅ MIGRATED: Permissioned Network.md → blockchain-knowledge-graph/pages/
+
+Processing: Persistence.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: Persistence.md → blockchain-knowledge-graph/pages/
+
+=== Summary ===
+Total migrated: 30
+Contaminated: 7
+Sparse files: 0
+Errors: 0
+Completed: Fri Nov 14 17:03:22 UTC 2025

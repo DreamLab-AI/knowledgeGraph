@@ -1,0 +1,31 @@
+# Rust build artifacts
+target/
+Cargo.lock
+
+# Source files (only ship the compiled .node files)
+src/
+tests/
+benches/
+examples/
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# Development files
+.git/
+.github/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test and benchmark data
+test-output/
+fixtures/
+
+# CI/CD
+.gitlab-ci.yml
+.travis.yml
+azure-pipelines.yml

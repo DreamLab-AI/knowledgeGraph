@@ -1,0 +1,40 @@
+=== Batch Migration: Batch-E ===
+Started: Fri Nov 14 17:03:22 UTC 2025
+
+Processing: Virtual Property Right.md
+  ✅ MIGRATED: Virtual Property Right.md → blockchain-knowledge-graph/pages/
+
+Processing: VirtualMachine.md
+  ✅ MIGRATED: VirtualMachine.md → blockchain-knowledge-graph/pages/
+
+Processing: Voting Systems.md
+  ✅ MIGRATED: Voting Systems.md → blockchain-knowledge-graph/pages/
+
+Processing: Web3.md
+  ✅ MIGRATED: Web3.md → blockchain-knowledge-graph/pages/
+
+Processing: Zero-Knowledge Proof (ZKP).md
+  ✅ MIGRATED: Zero-Knowledge Proof (ZKP).md → blockchain-knowledge-graph/pages/
+
+Processing: Zero-Knowledge Proof.md
+  ⚠️  CONTAMINATED: Found cross-domain markers
+  ✅ MIGRATED: Zero-Knowledge Proof.md → blockchain-knowledge-graph/pages/
+
+Processing: blockchain-core-concepts.md
+  ✅ MIGRATED: blockchain-core-concepts.md → blockchain-knowledge-graph/pages/
+
+Processing: metaverse-core-concepts.md
+  ✅ MIGRATED: metaverse-core-concepts.md → blockchain-knowledge-graph/pages/
+
+Processing: personal accounts.md
+  ✅ MIGRATED: personal accounts.md → blockchain-knowledge-graph/pages/
+
+Processing: security-audit-guide.md
+  ✅ MIGRATED: security-audit-guide.md → blockchain-knowledge-graph/pages/
+
+=== Summary ===
+Total migrated: 10
+Contaminated: 1
+Sparse files: 0
+Errors: 0
+Completed: Fri Nov 14 17:03:22 UTC 2025

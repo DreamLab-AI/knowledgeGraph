@@ -1,0 +1,82 @@
+.wiki-link-wrapper {
+  position: relative;
+  display: inline;
+}
+
+.wiki-link {
+  color: var(--accent, #4a9eff);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--accent, #4a9eff);
+  transition: all 0.2s;
+}
+
+.wiki-link:hover {
+  background: rgba(74, 158, 255, 0.1);
+  border-bottom-style: solid;
+}
+
+.wiki-link-preview {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  width: 300px;
+  max-width: 90vw;
+  background: white;
+  border: 1px solid var(--border-color, #e0e0e0);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.wiki-link-preview h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary, #333);
+}
+
+.preview-excerpt {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-secondary, #666);
+  margin: 0 0 0.75rem 0;
+}
+
+.preview-ontology {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.ontology-badge,
+.domain-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.ontology-badge {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.domain-badge {
+  background: #f3e5f5;
+  color: #7b1fa2;
+  text-transform: uppercase;
+}

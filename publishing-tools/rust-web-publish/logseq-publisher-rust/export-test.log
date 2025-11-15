@@ -1,0 +1,12 @@
+📦 Exporting Logseq graph...
+   Input: ./test-logseq
+   Output: ./test-output
+📖 Parsing Logseq pages...
+✅ Parsed 2 pages
+
+🚀 Generating Phase 5 API files...
+📁 Created API directories at ./test-output/api
+🔍 Generated search index: 2 documents
+📄 Generated 2 page JSON files
+🔗 Generated 2 backlink files
+✅ Phase 5 API files generated successfully!

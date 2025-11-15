@@ -1,0 +1,133 @@
+.search-bar {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  font-size: 1.1rem;
+  pointer-events: none;
+  color: var(--text-secondary, #666);
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 2.5rem;
+  border: 1px solid var(--border-color, #e0e0e0);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: white;
+  transition: all 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent, #4a9eff);
+  box-shadow: 0 0 0 3px rgba(74, 158, 255, 0.1);
+}
+
+.search-clear {
+  position: absolute;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-secondary, #666);
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.search-clear:hover {
+  background: var(--bg-hover, #f0f0f0);
+}
+
+.search-results-dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid var(--border-color, #e0e0e0);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.search-result-item {
+  padding: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-color, #e0e0e0);
+  transition: background 0.2s;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-item:hover,
+.search-result-item.selected {
+  background: var(--bg-hover, #f5f5f5);
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.result-title {
+  font-weight: 600;
+  color: var(--text-primary, #333);
+  font-size: 0.95rem;
+}
+
+.result-badge {
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  background: var(--bg-secondary, #f0f0f0);
+}
+
+.result-badge.ontology {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.result-badge.page {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.result-excerpt {
+  font-size: 0.85rem;
+  color: var(--text-secondary, #666);
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    max-width: 100%;
+  }
+
+  .search-results-dropdown {
+    max-height: 300px;
+  }
+
+  .search-result-item {
+    padding: 0.75rem;
+  }
+}

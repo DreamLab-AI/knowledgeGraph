@@ -1,0 +1,232 @@
+name: Comprehensive Test Suite
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+env:
+  CARGO_TERM_COLOR: always
+  RUST_BACKTRACE: 1
+
+jobs:
+  test:
+    name: Test Suite
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        rust: [stable, beta, nightly]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: ${{ matrix.rust }}
+          override: true
+          components: rustfmt, clippy
+
+      - name: Cache cargo registry
+        uses: actions/cache@v3
+        with:
+          path: ~/.cargo/registry
+          key: ${{ runner.os }}-cargo-registry-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Cache cargo index
+        uses: actions/cache@v3
+        with:
+          path: ~/.cargo/git
+          key: ${{ runner.os }}-cargo-git-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Cache cargo build
+        uses: actions/cache@v3
+        with:
+          path: target
+          key: ${{ runner.os }}-cargo-build-target-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Run unit tests
+        run: cargo test --lib --verbose
+
+      - name: Run integration tests
+        run: cargo test --test '*' --verbose
+
+      - name: Run doc tests
+        run: cargo test --doc --verbose
+
+  wasm:
+    name: WASM Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
+          target: wasm32-unknown-unknown
+
+      - name: Install wasm-pack
+        run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+
+      - name: Run WASM tests
+        run: wasm-pack test --headless --chrome --firefox
+
+      - name: Build WASM
+        run: wasm-pack build --target web
+
+      - name: Check bundle size
+        run: |
+          SIZE=$(wc -c < pkg/logseq_publisher_rust_bg.wasm)
+          echo "WASM bundle size: $SIZE bytes"
+          if [ $SIZE -gt 524288 ]; then
+            echo "Error: Bundle size exceeds 512KB"
+            exit 1
+          fi
+
+  benchmark:
+    name: Performance Benchmarks
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
+
+      - name: Run benchmarks
+        run: cargo bench --verbose
+
+      - name: Archive benchmark results
+        uses: actions/upload-artifact@v3
+        with:
+          name: benchmark-results
+          path: target/criterion
+
+  coverage:
+    name: Code Coverage
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
+
+      - name: Install tarpaulin
+        run: cargo install cargo-tarpaulin
+
+      - name: Generate coverage
+        run: cargo tarpaulin --out Xml --output-dir ./coverage
+
+      - name: Upload to codecov.io
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./coverage/cobertura.xml
+          fail_ci_if_error: true
+
+      - name: Check coverage threshold
+        run: |
+          COVERAGE=$(grep -oP 'line-rate="\K[^"]+' coverage/cobertura.xml | head -1)
+          COVERAGE_PERCENT=$(echo "$COVERAGE * 100" | bc)
+          echo "Coverage: $COVERAGE_PERCENT%"
+          if (( $(echo "$COVERAGE_PERCENT < 80" | bc -l) )); then
+            echo "Error: Coverage below 80%"
+            exit 1
+          fi
+
+  lint:
+    name: Linting
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
+          components: rustfmt, clippy
+
+      - name: Run rustfmt
+        run: cargo fmt -- --check
+
+      - name: Run clippy
+        run: cargo clippy -- -D warnings
+
+  security:
+    name: Security Audit
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
+
+      - name: Run cargo audit
+        uses: actions-rs/audit-check@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+  e2e:
+    name: End-to-End Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup test repository
+        run: |
+          mkdir -p test-graph/pages
+          echo "- Test page [[link]]" > test-graph/pages/test.md
+
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
+
+      - name: Build publisher
+        run: cargo build --release
+
+      - name: Run publisher
+        run: ./target/release/logseq-publisher-rust test-graph --output dist
+
+      - name: Verify output
+        run: |
+          if [ ! -f "dist/index.html" ]; then
+            echo "Error: index.html not generated"
+            exit 1
+          fi
+
+      - name: Deploy to test branch
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config --global user.name "CI Bot"
+          git config --global user.email "ci@logseq.com"
+          git checkout -b gh-pages-test
+          cp -r dist/* .
+          git add .
+          git commit -m "Test deployment"

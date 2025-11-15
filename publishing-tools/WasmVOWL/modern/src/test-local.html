@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WasmVOWL Debug Test - Local</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      overflow: hidden;
+    }
+
+    #app {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .test-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #1e293b;
+      padding: 15px 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      z-index: 100;
+    }
+
+    .test-header h1 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .test-controls {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .test-controls button {
+      padding: 8px 16px;
+      background: #3b82f6;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .test-controls button:hover {
+      background: #2563eb;
+    }
+
+    .test-controls button.danger {
+      background: #ef4444;
+    }
+
+    .test-controls button.danger:hover {
+      background: #dc2626;
+    }
+
+    .test-info {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: #1e293b;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      font-size: 13px;
+      z-index: 100;
+    }
+
+    .test-info div {
+      margin: 4px 0;
+    }
+
+    .test-info strong {
+      color: #60a5fa;
+    }
+
+    #console-output {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 400px;
+      max-height: 300px;
+      background: #000;
+      color: #0f0;
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      padding: 10px;
+      border-radius: 8px;
+      overflow-y: auto;
+      z-index: 100;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    #console-output div {
+      margin: 2px 0;
+      word-wrap: break-word;
+    }
+
+    .log-info { color: #60a5fa; }
+    .log-warn { color: #fbbf24; }
+    .log-error { color: #f87171; }
+    .log-success { color: #4ade80; }
+  </style>
+</head>
+<body>
+  <div class="test-header">
+    <h1>🐛 WasmVOWL Force Simulation Debug Test</h1>
+    <div class="test-controls">
+      <button id="btn-enable-debug">Enable Debug Logging</button>
+      <button id="btn-log-distribution">Log Distribution</button>
+      <button id="btn-export-positions">Export Positions</button>
+      <button id="btn-reset-simulation" class="danger">Reset Simulation</button>
+      <button id="btn-toggle-console">Toggle Console</button>
+    </div>
+  </div>
+
+  <div id="app"></div>
+
+  <div class="test-info">
+    <div><strong>Nodes:</strong> <span id="node-count">-</span></div>
+    <div><strong>Alpha:</strong> <span id="alpha-value">-</span></div>
+    <div><strong>Iteration:</strong> <span id="iteration-count">-</span></div>
+    <div><strong>FPS:</strong> <span id="fps-value">-</span></div>
+    <div><strong>Clustering:</strong> <span id="clustering-pct">-</span>%</div>
+  </div>
+
+  <div id="console-output" style="display: none;"></div>
+
+  <script type="module">
+    // Intercept console logs
+    const consoleOutput = document.getElementById('console-output');
+    const originalLog = console.log;
+    const originalWarn = console.warn;
+    const originalError = console.error;
+
+    function addToConsole(message, type = 'info') {
+      const div = document.createElement('div');
+      div.className = `log-${type}`;
+      div.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+      consoleOutput.appendChild(div);
+      consoleOutput.scrollTop = consoleOutput.scrollHeight;
+
+      // Keep only last 100 messages
+      while (consoleOutput.children.length > 100) {
+        consoleOutput.removeChild(consoleOutput.firstChild);
+      }
+    }
+
+    console.log = function(...args) {
+      originalLog.apply(console, args);
+      addToConsole(args.join(' '), 'info');
+    };
+
+    console.warn = function(...args) {
+      originalWarn.apply(console, args);
+      addToConsole(args.join(' '), 'warn');
+    };
+
+    console.error = function(...args) {
+      originalError.apply(console, args);
+      addToConsole(args.join(' '), 'error');
+    };
+
+    // Button handlers
+    document.getElementById('btn-enable-debug').addEventListener('click', () => {
+      if (window.wasmvowlDebug) {
+        window.wasmvowlDebug.enableAllLogging();
+        console.log('✅ Debug logging enabled');
+      }
+    });
+
+    document.getElementById('btn-log-distribution').addEventListener('click', () => {
+      console.log('📊 Logging current distribution...');
+      // This will be connected to the actual debug manager
+    });
+
+    document.getElementById('btn-export-positions').addEventListener('click', () => {
+      console.log('💾 Exporting positions...');
+      // This will be connected to the actual export function
+    });
+
+    document.getElementById('btn-reset-simulation').addEventListener('click', () => {
+      console.log('🔄 Resetting simulation...');
+      location.reload();
+    });
+
+    document.getElementById('btn-toggle-console').addEventListener('click', () => {
+      const output = document.getElementById('console-output');
+      output.style.display = output.style.display === 'none' ? 'block' : 'none';
+    });
+
+    // Stats updater (will be connected to actual app)
+    setInterval(() => {
+      // These will be updated by the actual app
+      document.getElementById('node-count').textContent = '-';
+      document.getElementById('alpha-value').textContent = '-';
+      document.getElementById('iteration-count').textContent = '-';
+      document.getElementById('fps-value').textContent = '-';
+      document.getElementById('clustering-pct').textContent = '-';
+    }, 1000);
+
+    console.log('🚀 WasmVOWL Debug Test initialized');
+    console.log('💡 Use ?debug=true in URL to auto-enable debug mode');
+    console.log('🔍 Access window.wasmvowlDebug for advanced debugging');
+  </script>
+
+  <!-- App will be loaded here -->
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>

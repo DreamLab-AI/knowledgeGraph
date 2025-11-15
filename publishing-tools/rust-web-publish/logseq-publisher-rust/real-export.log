@@ -1,0 +1,12 @@
+📦 Exporting Logseq graph...
+   Input: /mnt/mldata/githubs/logseq/mainKnowledgeGraph
+   Output: ./real-output
+📖 Parsing Logseq pages...
+✅ Parsed 1477 pages
+
+🚀 Generating Phase 5 API files...
+📁 Created API directories at ./real-output/api
+🔍 Generated search index: 1477 documents
+📄 Generated 1477 page JSON files
+🔗 Generated 1477 backlink files
+✅ Phase 5 API files generated successfully!

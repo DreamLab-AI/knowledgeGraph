@@ -1,0 +1,13 @@
+/target
+/pkg
+Cargo.lock
+**/*.rs.bk
+*.wasm
+*.js
+!package.json
+node_modules
+.DS_Store
+test-output/
+*.node
+target/
+node_modules/

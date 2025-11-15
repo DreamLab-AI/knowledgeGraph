@@ -1,0 +1,163 @@
+# Blockchain Finance
+
+Total files: 159
+
+1. Agreement Protocol.md
+2. Archival Node.md
+3. Asia Pacific Regulation.md
+4. Assets adjacent to nostr.md
+5. BC 0101 transaction fee.md
+6. BC 0102 inflation.md
+7. BC 0103 halving.md
+8. BC 0105 tokenomics.md
+9. BC 0106 gas price.md
+10. BC 0107 gas limit.md
+11. BC 0109 priority fee.md
+12. BC 0110 fee market.md
+13. BC 0111 deflationary token.md
+14. BC 0112 inflationary token.md
+15. BC 0113 emission schedule.md
+16. BC 0114 burning mechanism.md
+17. BC 0115 minting.md
+18. BC 0116 total supply.md
+19. BC 0117 circulating supply.md
+20. BC 0118 market capitalization.md
+21. BC 0120 incentive alignment.md
+22. BTC Layer 3.md
+23. Base Fee.md
+24. Bitcoin As Money.md
+25. Bitcoin Centralisation Risks.md
+26. Bitcoin Distribution.md
+27. Bitcoin ETF.md
+28. Bitcoin Mining.md
+29. Bitcoin Value Proposition.md
+30. Bitcoin related links.md
+31. Bitcoin.md
+32. Block Propagation.md
+33. Block Reward (Mining Incentive).md
+34. Block Reward.md
+35. Block Size.md
+36. Block.md
+37. Blockchain As A Service.md
+38. Blockchain Entity.md
+39. Blockchain Interoperability.md
+40. Bootstrap Node.md
+41. Burning Mechanism.md
+42. Byzantine Fault Tolerance.md
+43. Carbon Credit Token.md
+44. Carbon Credit Tracking.md
+45. Carbon Neutral Blockchain.md
+46. Cashu.md
+47. Censorship Resistance.md
+48. Central Bank Digital Currency (CBDC).md
+49. Chain Reorganization.md
+50. Coin.md
+51. Coinbase Transaction.md
+52. Consensus Mechanism.md
+53. ConsensusDomain.md
+54. Creator Royalty Token.md
+55. CrossChainBridge.md
+56. Crypto Legal from DigiSoc.md
+57. Crypto Token.md
+58. DAO Tooling.md
+59. DeFiProtocol.md
+60. Decentralised Web.md
+61. Decentralized Autonomous Organization.md
+62. DecentralizedStorage.md
+63. Deflationary Token.md
+64. Digital Asset Risks.md
+65. Digital Asset.md
+66. Digital Objects.md
+67. Digital Real Estate.md
+68. Distributed Ledger Technology (DLT).md
+69. Distributed Ledger.md
+70. Distributed Protocol.md
+71. E-Contract Arbitration.md
+72. ERC20.md
+73. ETSI_Domain_Virtual_Economy.md
+74. EconomicLayer.md
+75. Energy Consumption Blockchain.md
+76. Environmental Impact Assessment.md
+77. Ethereum.md
+78. FATF Recommendations.md
+79. Finality.md
+80. Fork Choice Rule.md
+81. Fractionalized NFT.md
+82. Fungible Token.md
+83. Gas Limit.md
+84. Gas Price.md
+85. Gas.md
+86. Governance Token.md
+87. Green Blockchain Initiatives.md
+88. Halving.md
+89. INDEX.md
+90. Layer2Scaling.md
+91. Licensing Requirements.md
+92. Lightning and Similar L2.md
+93. Liquidity Pool.md
+94. Marketplace.md
+95. Mempool.md
+96. Merkle Root.md
+97. Micropayment.md
+98. MiddlewareLayer.md
+99. Mining Reward.md
+100. Mining.md
+101. Money from DigiSoc.md
+102. Money.md
+103. Multi Sig Governance.md
+104. NFT Swapping.md
+105. Native Token.md
+106. Non-Fungible Token (NFT).md
+107. Nonce.md
+108. Orphan Block.md
+109. Peer Discovery.md
+110. Peer-to-Peer Network.md
+111. Permissionless Network.md
+112. Pool Share.md
+113. Priority Fee.md
+114. Privacy Preserving Blockchain.md
+115. Private Channels.md
+116. Proof Of Stake Sustainability.md
+117. ProofOfStake.md
+118. Property Registry.md
+119. Proposal System.md
+120. ProtocolLayer.md
+121. Provenance Tracking.md
+122. PublicBlockchain.md
+123. Quorum Blockchain.md
+124. R3 Corda.md
+125. Real Estate Tokenization.md
+126. Renewable Energy Certificates.md
+127. Royalty Mechanism.md
+128. Securities Regulation.md
+129. Smart Royalty Contract.md
+130. SmartContract.md
+131. Solana.md
+132. Stable Coins.md
+133. Stablecoin Regulation.md
+134. Stablecoin.md
+135. Supply Chain Traceability.md
+136. Sybil Attack.md
+137. TERM-INDEX.md
+138. Tax Treatment Crypto.md
+139. Token Bonding Curve.md
+140. Token Custody Service.md
+141. Token.md
+142. TokenEconomicsDomain.md
+143. Tokenization.md
+144. Tokenomics Governance.md
+145. Total Supply.md
+146. Transaction Confirmation.md
+147. Transaction Fee.md
+148. Transaction Pool.md
+149. Transaction Standard.md
+150. Travel Rule.md
+151. Treasury Management.md
+152. US Regulatory Framework.md
+153. Validator Node.md
+154. Virtual Securities Offering (VSO).md
+155. VirtualAsset.md
+156. VirtualEconomy.md
+157. VirtualWorld.md
+158. Wallet.md
+159. ecash.md

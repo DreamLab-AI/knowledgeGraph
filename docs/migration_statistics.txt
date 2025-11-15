@@ -1,0 +1,24 @@
+======================================================================
+MIGRATION STATISTICS SUMMARY
+======================================================================
+
+Pure Blockchain                              :  130 files (  8.0%)
+Blockchain Ai                                :  108 files (  6.7%)
+Blockchain Finance                           :  159 files (  9.8%)
+Blockchain Ai Finance                        :   47 files (  2.9%)
+Other Domains                                :  922 files ( 56.8%)
+Non Domain                                   :  130 files (  8.0%)
+Unclassified                                 :  128 files (  7.9%)
+
+TOTAL                                        : 1624 files (100.0%)
+
+
+MIGRATION ACTIONS:
+1. Move 130 files to blockchain-knowledge-graph
+2. Create cross-domain-KG with:
+   - 108 blockchain+AI files
+   - 159 blockchain+finance files
+   - 47 blockchain+AI+finance files
+   Total cross-domain: 314 files
+3. Audit 922 non-blockchain files
+4. Review 258 unclassified files

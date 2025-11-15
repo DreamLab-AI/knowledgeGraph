@@ -1,0 +1,18 @@
+BC 0109 priority fee.md
+BC 0110 fee market.md
+BC 0111 deflationary token.md
+BC 0112 inflationary token.md
+BC 0113 emission schedule.md
+BC 0114 burning mechanism.md
+BC 0115 minting.md
+BC 0116 total supply.md
+BC 0117 circulating supply.md
+BC 0118 market capitalization.md
+BC 0119 economic security.md
+BC 0120 incentive alignment.md
+Block Reward.md
+Block Time.md
+Block.md
+Blockchain Entity.md
+Bootstrap Node.md
+Central Bank Digital Currency (CBDC).md

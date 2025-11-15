@@ -1,0 +1,136 @@
+#
+# Chimera Prime Workstream 1.4: SPARQL Verification Query
+# Purpose: Verify complete removal of dt:is-subclass-of from ontology
+# Expected Result: 0 results (empty result set)
+#
+
+PREFIX dt: <http://example.org/dt#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+# ==============================================================================
+# QUERY 1: Find ANY remaining dt:is-subclass-of property usage
+# ==============================================================================
+
+SELECT DISTINCT ?subject ?predicate ?object
+WHERE {
+    {
+        # Direct usage as predicate
+        ?subject dt:is-subclass-of ?object .
+        BIND(dt:is-subclass-of AS ?predicate)
+    }
+    UNION
+    {
+        # Usage in owl:Restriction patterns (most common case)
+        ?subject owl:onProperty dt:is-subclass-of .
+        ?subject ?predicate ?object .
+        FILTER(?predicate != rdf:type)
+    }
+    UNION
+    {
+        # Usage in property definitions or references
+        ?subject ?predicate dt:is-subclass-of .
+        FILTER(?predicate != owl:inverseOf)
+        FILTER(?predicate != rdfs:subPropertyOf)
+    }
+    UNION
+    {
+        # Check if property definition still exists
+        dt:is-subclass-of ?predicate ?object .
+    }
+}
+ORDER BY ?subject ?predicate ?object
+
+# Expected: 0 results after successful refactoring
+
+# ==============================================================================
+# QUERY 2: Verify rdfs:subClassOf is being used correctly
+# ==============================================================================
+
+# Uncomment to run after refactoring to ensure standard patterns are in place
+
+# SELECT (COUNT(?subject) AS ?subClassOfCount)
+# WHERE {
+#     ?subject rdfs:subClassOf ?object .
+# }
+
+# Expected: > 0 results (should have standard subclass relationships)
+
+# ==============================================================================
+# QUERY 3: Verify inverse property declarations
+# ==============================================================================
+
+# SELECT ?property ?inverseProperty
+# WHERE {
+#     VALUES ?property {
+#         dt:has-part dt:enables dt:requires dt:uses dt:depends-on
+#     }
+#     ?property owl:inverseOf ?inverseProperty .
+# }
+
+# Expected: 5 results (one for each property pair)
+
+# ==============================================================================
+# QUERY 4: Find any commented/deprecated references (if RDF comments preserved)
+# ==============================================================================
+
+# SELECT ?subject ?comment
+# WHERE {
+#     ?subject rdfs:comment ?comment .
+#     FILTER(CONTAINS(LCASE(?comment), "deprecated") ||
+#            CONTAINS(LCASE(?comment), "refactored") ||
+#            CONTAINS(LCASE(?comment), "is-subclass-of"))
+# }
+
+# Expected: Documentation of deprecated property
+
+# ==============================================================================
+# USAGE INSTRUCTIONS
+# ==============================================================================
+
+# Apache Jena ARQ:
+#   arq --data=ontology-full-bridged.ttl.refactored \
+#       --query=verify-no-is-subclass-of.sparql
+
+# Stardog:
+#   stardog query mydb verify-no-is-subclass-of.sparql
+
+# GraphDB:
+#   Load query in SPARQL workbench
+
+# Command line with rapper:
+#   rapper -i turtle ontology-full-bridged.ttl.refactored | \
+#   arq --data=- --query=verify-no-is-subclass-of.sparql
+
+# ==============================================================================
+# VALIDATION CRITERIA
+# ==============================================================================
+
+# PASS: Query 1 returns 0 results
+# FAIL: Query 1 returns any results (dt:is-subclass-of still present)
+
+# Additional validation:
+# - Run HermiT reasoner and check for consistency
+# - Run Pellet reasoner and verify classification
+# - Verify inverse properties trigger automatic inference
+
+# ==============================================================================
+# TROUBLESHOOTING
+# ==============================================================================
+
+# If results are found:
+# 1. Check line numbers in SPARQL results
+# 2. Inspect those lines in the ontology file
+# 3. Determine if pattern was missed by refactoring script
+# 4. Manual correction may be required for complex patterns
+
+# Common patterns that may need manual review:
+# - Nested restrictions
+# - Complex class expressions
+# - Property chains involving dt:is-subclass-of
+# - Axioms with multiple restrictions
+
+# ==============================================================================
+# END OF VERIFICATION QUERY
+# ==============================================================================

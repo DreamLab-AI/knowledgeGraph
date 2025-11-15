@@ -1,0 +1,59 @@
+{
+  "name": "@logseq/publisher-rust",
+  "version": "0.1.0",
+  "description": "High-performance Rust implementation of Logseq graph publisher with OWL/RDF ontology support and napi-rs Node.js bindings",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/logseq/logseq-publisher-rust.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "logseq",
+    "publisher",
+    "ontology",
+    "owl",
+    "rdf",
+    "knowledge-graph",
+    "napi-rs",
+    "rust"
+  ],
+  "napi": {
+    "name": "logseq-publisher",
+    "binaryName": "logseq-publisher",
+    "targets": [
+      "x86_64-unknown-linux-musl",
+      "aarch64-unknown-linux-gnu",
+      "aarch64-unknown-linux-musl",
+      "aarch64-apple-darwin",
+      "x86_64-apple-darwin",
+      "x86_64-pc-windows-msvc",
+      "aarch64-pc-windows-msvc"
+    ]
+  },
+  "scripts": {
+    "artifacts": "napi artifacts",
+    "build": "napi build --platform --release --features napi",
+    "build:debug": "napi build --platform --features napi",
+    "prepublishOnly": "napi prepublish -t npm",
+    "test": "cargo test --features napi",
+    "universal": "napi universal",
+    "version": "napi version"
+  },
+  "devDependencies": {
+    "@napi-rs/cli": "^3.4.1"
+  },
+  "engines": {
+    "node": ">= 18"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "*.node"
+  ]
+}

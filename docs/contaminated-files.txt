@@ -1,0 +1,27 @@
+Block Propagation Time.md
+Carbon Footprint Measurement.md
+Clinical Trials.md
+Compliance Monitoring.md
+ConsensusAlgorithm.md
+CryptographicHash.md
+Cryptography.md
+DAO.md
+Data Storage Layer.md
+DataPipeline.md
+Digital Evidence Chain of Custody.md
+Digital Goods Registry.md
+Digital Identity Wallet.md
+ESG Reporting.md
+Hyperledger Indy.md
+Input.md
+NFT.md
+Network Synchronization.md
+ONTOLOGY_ANALYSIS_SUMMARY.md
+Partition Attack.md
+Persistence.md
+Pharmaceutical Traceability.md
+Portability.md
+Regulatory Reporting.md
+Snapshot Voting.md
+VERIFICATION.md
+Zero-Knowledge Proof.md
