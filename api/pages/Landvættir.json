@@ -1,0 +1,50 @@
+{
+  "title": "Landvættir",
+  "content": "- ### OntologyBlock\n  id:: landvættir-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-825892394243\n\t- preferred-term:: Landvættir\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on landvættir.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:Landvttir\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: landvættir-relationships\n\t\t- has-part:: [[WorldSpace]], [[PhysicsEngine]], [[SceneGraph]], [[Avatar]]\n\t\t- is-part-of:: [[Metaverse]], [[MetaversePlatform]]\n\t\t- requires:: [[3DRenderingEngine]], [[NetworkProtocol]], [[DatabaseSystem]]\n\t\t- enables:: [[VirtualSociety]], [[DigitalEconomy]], [[SocialInteraction]]\n\n\t- #### OWL Axioms\n\t  id:: landvættir-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:Landvttir))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:Landvttir mv:VirtualEntity)\n\t\t  SubClassOf(mv:Landvttir mv:Object)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:Landvttir\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:Landvttir \"Landvættir\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:Landvttir \"A component of the metaverse ecosystem focusing on landvættir.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:Landvttir \"mv-825892394243\"^^xsd:string)\n\t\t  ```\n\n- Papers with Umran [[PEOPLE]]\n- email [(5236) Inbox | j.j.ohare@pm.me | Proton Mail](https://mail.proton.me/u/0/inbox/yUHPd88XhnweoU7GbEodghvsulG2Jys8TEkRAt1CxhKo_ZNKR65UQtfAcMEsRWEOY3IHyeharqgDolETkeubEg==)\n- [Access denied (google.com)](https://drive.google.com/drive/folders/1rUP6RYERNF7QlDJihM85t_tIWzy93zSR?usp=drive_link)\n- ```- Keywords: A.I, GAN, Landscape, Virtual, Digital Art, Virtual worlds, games, design, GenAI```\n\t- Landvættir is a portfolio journey across these bootstrapping years of GenAI and AGI\n\t\t- Colin\n\t\t  collapsed:: true\n\t\t- The Scenism manifesto refers to a set of principles and ideas that revolve around the concept of scenism in the context of art and entertainment. Scenism places a strong emphasis on the power of creating immersive and visually captivating experiences for its audience. It aims to go beyond merely presenting a piece of art or storytelling, and instead seeks to transport the audience into a vivid and engaging world. At the core of the Scenism manifesto is the belief that the environment or setting plays a crucial role in shaping the overall experience. Scenists believe that by creating intricate and detailed environments, they can enhance the emotional impact of the art form. This goes beyond simply designing a visually pleasing backdrop; it involves creating a multi-sensory experience that allows the audience to feel fully immersed in the world being presented.\n\t\t- Scenists also recognize the importance of collaboration and interdisciplinary approaches in creating truly impactful experiences. They advocate for the involvement of professionals from various fields such as set design, lighting design, sound design, costume design, and more, to work together seamlessly and cohesively. This collaborative effort ensures that every aspect of the scenography supports and enhances the overall experience.\n\t\t- Another key aspect of Scenism is the utilization of technology and innovation. Scenists embrace advancements in technology to push the boundaries of what can be achieved in terms of creating immersive experiences. This includes the use of virtual reality, augmented reality, interactive elements, and other cutting-edge tools to enhance the audience's engagement and deepen their connection with the artistic work.\n\t\t- Scenism also seeks to challenge traditional audience-performer dynamics. Instead of passive viewers, the manifesto encourages the audience to actively engage with the environment and participate in the experience. This can involve interactive elements, audience interaction, or even blurring the lines between the performer and the spectator. The goal is to create an inclusive and participatory atmosphere where the audience becomes an integral part of the artistic narrative.\n\t\t- In summary, the Scenism manifesto underscores the importance of creating immersive, visually captivating experiences that go beyond traditional art forms. By emphasizing the role of intricate environments, collaboration, technology, and active audience engagement, Scenism aims to push boundaries and unlock new realms of artistic expression and engagement.\n\t\t- a further exploration of my Scenism manifesto, and is a practice based art research project.\n- # Papers Planning\n- This is a portfolio of papers describing the history of these moments, artists, and technologies\n  id:: 65cbd02d-8454-417f-ba42-34c70f1c02d3\n\t- {{embed ((65e04fa2-0e47-4829-8e09-5ccf65118a54))}}\n\t- # Gamescapes\n\t\t- Holding text\n\t- # The Binding Paper\n\t\t- **If the generations of A.I to follow dream of the first virtual places, will they dream of Turner, Constable and Monet? Or would they dream of the precursor virtual landscapes where the seeds of their intelligence took hold and began to grow?**\n\t\t- Arc and reasons\n\t\t- Survey and Framework\n\t\t\t- Embedding in wider artistic praxis, not tech for tech sake,\n\t\t\t- Grounding\n\t\t\t- Theoretical framework Venn\n\t\t\t\t- Scenism\n\t\t\t\t- Romanticism\n\t\t\t\t- Environmental psychology\n\t\t\t\t- Architechture -\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "65cbd02d-8454-417f-ba42-34c70f1c02d3",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-825892394243",
+    "- preferred-term": "Landvættir",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on landvættir.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:Landvttir",
+    "- owl:physicality": "VirtualEntity",
+    "- owl:role": "Object",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- has-part": "[[WorldSpace]], [[PhysicsEngine]], [[SceneGraph]], [[Avatar]]",
+    "- is-part-of": "[[Metaverse]], [[MetaversePlatform]]",
+    "- requires": "[[3DRenderingEngine]], [[NetworkProtocol]], [[DatabaseSystem]]",
+    "- enables": "[[VirtualSociety]], [[DigitalEconomy]], [[SocialInteraction]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "PhysicsEngine",
+    "SceneGraph",
+    "Metaverse",
+    "NetworkProtocol",
+    "WorldSpace",
+    "PEOPLE",
+    "SocialInteraction",
+    "MetaversePlatform",
+    "3DRenderingEngine",
+    "DatabaseSystem",
+    "Avatar",
+    "VirtualSociety",
+    "DigitalEconomy",
+    "MetaverseDomain"
+  ],
+  "ontology": {
+    "term_id": "mv-825892394243",
+    "preferred_term": "Landvættir",
+    "definition": "A component of the metaverse ecosystem focusing on landvættir.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

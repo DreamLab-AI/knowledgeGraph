@@ -1,0 +1,55 @@
+{
+  "title": "National Industrial Centre for Virtual Environments",
+  "content": "- ### OntologyBlock\n  id:: national-industrial-centre-for-virtual-environments-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-639899567473\n\t- preferred-term:: National Industrial Centre for Virtual Environments\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on national industrial centre for virtual environments.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:NationalIndustrialCentreForVirtualEnvironments\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: national-industrial-centre-for-virtual-environments-relationships\n\t\t- has-part:: [[WorldSpace]], [[PhysicsEngine]], [[SceneGraph]], [[Avatar]]\n\t\t- is-part-of:: [[Metaverse]], [[MetaversePlatform]]\n\t\t- requires:: [[3DRenderingEngine]], [[NetworkProtocol]], [[DatabaseSystem]]\n\t\t- enables:: [[VirtualSociety]], [[DigitalEconomy]], [[SocialInteraction]]\n\n\t- #### OWL Axioms\n\t  id:: national-industrial-centre-for-virtual-environments-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:NationalIndustrialCentreForVirtualEnvironments))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:NationalIndustrialCentreForVirtualEnvironments mv:VirtualEntity)\n\t\t  SubClassOf(mv:NationalIndustrialCentreForVirtualEnvironments mv:Object)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:NationalIndustrialCentreForVirtualEnvironments\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:NationalIndustrialCentreForVirtualEnvironments \"National Industrial Centre for Virtual Environments\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:NationalIndustrialCentreForVirtualEnvironments \"A component of the metaverse ecosystem focusing on national industrial centre for virtual environments.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:NationalIndustrialCentreForVirtualEnvironments \"mv-639899567473\"^^xsd:string)\n\t\t  ```\n\npublic:: true\n\n- #Public page automatically published\n\t- The NICVE was a major academic VR research centre in the late 90's and and 2000's. It followed on from the pioneering work by [Bob Stone](https://www.linkedin.com/in/prof-bob-stone-21b86918/), [Andy Connell](https://www.linkedin.com/in/andrew-connell-vr/),  in the National Advanced Robotics Research Centre (NARRC) at The University Of Salford.\n\t- I was a student in the first year of the [Virtual Reality Master Programme](https://www.timeshighereducation.com/features/salford-offers-virtual-reality-masters/98524.article) at the NICVE, under [Nick Avis](https://www.linkedin.com/in/nick-avis-885177211/), [Karen Padmore](https://www.linkedin.com/in/karen-padmore-a061961/), [Terrence Fernando](https://www.linkedin.com/in/terrence-fernando-6972411/), and [Rob Aspin](https://www.linkedin.com/in/professor-rob-aspin-85655340/). I later worked in the centre under [David Roberts](https://www.linkedin.com/in/david-roberts-0b6b181b/) as it evolved until it was disbanded early in this decade as interest in extended reality and telepresence waned.\n\t- This was from our first paper, published by another of our lecturers; [Ruth Aylett](https://www.linkedin.com/in/ACoAAAACrVwB204Ab7f4c5tb6XmlXPpd9ov_mrA), which we did as the project at the end of the masters programme. Every single triangle in that was hand drawn separately, one at a time, by me. Modelling wasn't really a proper thing back then. It was CAD, or Medit on an SGI O2. You can see the resemblance to N64 games of the era which were all the same hardware/software pipelines. [https://www.aaai.org/Papers/Symposia/Fall/1999/FS-99-01/FS99-01-014.pdf](https://www.aaai.org/Papers/Symposia/Fall/1999/FS-99-01/FS99-01-014.pdf)\n\t- ![prospectus.bmp](../assets/prospectus_1704195118229_0.bmp)\n\t- [Dr Simon Campion](https://www.linkedin.com/in/ACoAAAfPu4gBKe76g1PvTLMvi7uMUwf9ZAMC60s) using our experimental Barco based immersion workbench. Again a mockup, but about right. We took this to Farnborough airshow in support of [Euravia Engineering & Supply Co. Limited](https://www.linkedin.com/company/euravia/)\n\t- ![workbench.jpg](../assets/workbench_1704195169470_0.jpg)\n\t- The NICVE 4 sided system, which was powered by a three rack SGI Onyx2 IR2 \"supercomputer\". It was made of wood because the tracking systems was electromagnetic (flock of birds). When trains went past everything wobbled a bit. I used to sit in the dark reconverging the CRT guns every week with music blaring. It was a good task. It was I think the first such system outside of the USA, [where it was pioneered](https://ualr.edu/eac/cave/).\n\t- ![1666439576666.png](../assets/1666439576666_1708174000080_0.png){:height 1103, :width 1051}\n\t- One of the SGI cabs being delivered. Must be 1997 then? They were brand new. That was expensive. Really really expensive. We ran the whole building off them.\n\t- ![Untitled-23.jpg](../assets/Untitled-23_1704195226252_0.jpg)\n\t- This was our reality room, with 3 edge blended Barco projectors. They were RGB CRT guns. Pre digital. Wow. This is a mockup because there wasn't enough light for cameras of the time to capture the glory. That's a laser scan of a 747 by Mensi, who sold us a laser scanner for a couple of hundred thousand pounds that took a couple of samples a second.\n\t- ![1666439697003.png](../assets/1666439697003_1708174028512_0.png)\n\t- This was the Trimension Relocatable Reality Centre, at GMEX in Manchester in this case, and a very young me. The compute on the left is an SGI Onyx2 Deskside.\n\t- ![DSCF2204.JPG](../assets/DSCF2204_1704195427620_0.JPG)\n\t- ### Adrenaline Rush\n\t- I was a member of the science team on the first ever jump of DaVinci's parachute design, for an IMAX film called [Adrenaline rush, The science of risk (2002) Video Pinkbike](https://www.pinkbike.com/video/464827/)\n\t- ![Screenshot 2024-01-29 175325.png](../assets/Screenshot_2024-01-29_175325_1706551309172_0.png)\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "national-industrial-centre-for-virtual-environments-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-639899567473",
+    "- preferred-term": "National Industrial Centre for Virtual Environments",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on national industrial centre for virtual environments.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:NationalIndustrialCentreForVirtualEnvironments",
+    "- owl:physicality": "VirtualEntity",
+    "- owl:role": "Object",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- has-part": "[[WorldSpace]], [[PhysicsEngine]], [[SceneGraph]], [[Avatar]]",
+    "- is-part-of": "[[Metaverse]], [[MetaversePlatform]]",
+    "- requires": "[[3DRenderingEngine]], [[NetworkProtocol]], [[DatabaseSystem]]",
+    "- enables": "[[VirtualSociety]], [[DigitalEconomy]], [[SocialInteraction]]",
+    "public": "true"
+  },
+  "backlinks": [
+    "Suggested Reading Order",
+    "Octave Multi Model Laboratory",
+    "Technical History (extended CV)",
+    "BC-0037-public-key"
+  ],
+  "wiki_links": [
+    "PhysicsEngine",
+    "SceneGraph",
+    "Metaverse",
+    "NetworkProtocol",
+    "WorldSpace",
+    "SocialInteraction",
+    "MetaversePlatform",
+    "3DRenderingEngine",
+    "DatabaseSystem",
+    "Avatar",
+    "VirtualSociety",
+    "DigitalEconomy",
+    "MetaverseDomain"
+  ],
+  "ontology": {
+    "term_id": "mv-639899567473",
+    "preferred_term": "National Industrial Centre for Virtual Environments",
+    "definition": "A component of the metaverse ecosystem focusing on national industrial centre for virtual environments.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

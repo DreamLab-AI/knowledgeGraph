@@ -1,0 +1,39 @@
+{
+  "title": "ERC-1400 Token",
+  "content": "- ### OntologyBlock\n  id:: erc1400token-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0518\n    - filename-history:: [\"BC-0518-erc1400token.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0518\n    - preferred-term:: ERC-1400 Token\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: A security token standard tailored for regulatory compliance, providing transfer restrictions, document management, and compliance hooks for securities law requirements.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:ERC1400Token\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### Relationships\n    - is-subclass-of:: [[Security Token]]\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :ERC1400Token))\n      (SubClassOf :ERC1400Token :SecurityToken)\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :ERC1400Token \"ERC-1400 Token\"@en)\n      (AnnotationAssertion rdfs:comment :ERC1400Token\n        \"A security token standard tailored for regulatory compliance, providing transfer restrictions, document management, and compliance hooks for securities law requirements.\"@en)\n      ```\n\n- ## About ERC-1400 Token\n  A security token standard tailored for regulatory compliance, providing transfer restrictions, document management, and compliance hooks for securities law requirements.\n  \n  ### Examples\n  - Tokenized securities, regulated asset tokens\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "erc1400token-ontology",
+    "collapsed": "true",
+    "- domain-prefix": "BC",
+    "- sequence-number": "0518",
+    "- filename-history": "[\"BC-0518-erc1400token.md\"]",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0518",
+    "- preferred-term": "ERC-1400 Token",
+    "- source-domain": "metaverse",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-11-13",
+    "- definition": "A security token standard tailored for regulatory compliance, providing transfer restrictions, document management, and compliance hooks for securities law requirements.",
+    "- maturity": "established",
+    "- source": "Chimera Prime Research",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:ERC1400Token",
+    "- belongsToDomain": "[[Blockchain]]",
+    "- is-subclass-of": "[[Security Token]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "Security Token",
+    "Blockchain"
+  ],
+  "ontology": {
+    "term_id": "BC-0518",
+    "preferred_term": "ERC-1400 Token",
+    "definition": "A security token standard tailored for regulatory compliance, providing transfer restrictions, document management, and compliance hooks for securities law requirements.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

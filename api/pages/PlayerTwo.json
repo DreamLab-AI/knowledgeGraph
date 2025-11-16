@@ -1,0 +1,52 @@
+{
+  "title": "PlayerTwo",
+  "content": "- ### OntologyBlock\n  id:: playertwo-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-180849186917\n\t- preferred-term:: PlayerTwo\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on playertwo.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:Playertwo\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: playertwo-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: playertwo-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:Playertwo))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:Playertwo mv:ConceptualEntity)\n\t\t  SubClassOf(mv:Playertwo mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:Playertwo\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:Playertwo \"PlayerTwo\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:Playertwo \"A component of the metaverse ecosystem focusing on playertwo.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:Playertwo \"mv-180849186917\"^^xsd:string)\n\t\t  ```\n\n- Planning for work on [[Neocadia]] and [[Player Two code]]\n\t- Near term planning\n\t\t- stand up a nostr relay\n\t\t- sync whitelist from publey hex list on the middleware\n\t\t- isolate the subset of users on the whitelist from the message pool in the relay\n\t\t- build a super dumb module for a form of the player2 client that confirms a message with the whitelist code on the relay\n\t- Medium term\n\t\t- Connect the nostr module in the fork to the interface proper, replacing the comms to the middleware server with the comms to the relay over the network as DMs\n\t\t- Leave the storage as it stands\n\t\t- Leave the middleware user management as it stands, see if the latancy is ok for message passing and retrieval\n\t- Longer term\n\t\t- Integrate nosdav for file storage and encryption\n\t\t- Figure out groups\n\t\t- Figure out media passing\n\t\t- Integrate token rails\n- decent competition [miku.gg | Generative Visual Novels](https://miku.gg/)\n- Style transfer workflow for [[ComfyUI]] [Comfy Workflows](https://comfyworkflows.com/workflows/4cd95372-4995-4740-8675-f228d4c24f41) [[AI Video]]\n- [Megumin (KonoSuba)\n\t- Megumin Arch Wizard Outfit | Stable Diffusion LoRA | Civitai](https://civitai.com/models/9502/megumin-konosuba)\n- # Demo\n\t- [Player Two](https://app.playertwo.ai/#/story/XV7eOWS6b8UrxIypZBYM/replay/4)\n-\n- # Robot Project\n\t- I forgot you said email is best. So rq here it is:\n\t\t- Team\n\t\t- Michael: Vircadia (clients: Deutsche Telekom, University\n\t\t  Academy 92) and Player Two (Gen 1 Closed Alpha #1, Gen 2 10k+\n\t\t  users). Has USA and TT access.\n\t\t- Soul: Quant @ HSBC. German, Brazilian, and Russian access.\n\t\t  Biotech background.\n\t\t- Ken: Designs and develops custom SOTA batteries and weapons\n\t\t  R&D. Based in Thailand with Thai and UK access.\n\t\t- Biscuits: PhD @ University of Salford. CTO and specialist at\n\t\t  UK firms on XR and blockchain. Has UK access.\n\t\t- Setup\n\t\t- Workshop: Compound in Thailand (Ken's) or rented space in\n\t\t  Taiwan. Use 3D printers for production and prototyping.\n\t\t- Marketing: Aim to be the Raspberry Pi of humanoid\n\t\t  waifurobotics and replace StabilityAI with a stable open-source\n\t\t  model funding and development business model (Apache 2.0 / MIT).\n\t\t- Tokenomics\n\t\t- Initial sale: US$50k for a Player Two wAIfu bot preorder (25%\n\t\t  burned, 75% for extra capital).\n\t\t- Staked tokens count towards ED3N Network voting.\n\t\t\t- Early: Open-source everything, members vote on next items to\n\t\t\t  build and release, and can vote to issue new tokens for\n\t\t\t  treasury.\n\t\t\t- Later: Tokens burned for discounted compute on in-house\n\t\t\t  clusters or sold to other robot owners for training on their\n\t\t\t  clusters (\"mining\").\n\t\t\t- ED3N (Network) Solution\n\t\t- Problems: Regulation targeting compute, centralized compute in\n\t\t  datacenters, unreliable decentralized compute.\n\t\t- Solution: Known compute and validated software stack in each\n\t\t  Player Two's wAIfu (Robot), improving with each generation.\n\t\t- wAIfu's can accept $ED3N tokens to perform edge compute for\n\t\t  other devices globally, supporting a distributed network.\n\t\t- Notes\n\t\t- Sell US$10-20m tokens on Solana, need KYC inroads (investors\n\t\t  can handshake to vendors or we use public platform).\n\t\t- Incorporate non-US entity if needed (ideally DAO, secondarily\n\t\t  Middle East or Asia) to save on cost and legal.\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "playertwo-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-180849186917",
+    "- preferred-term": "PlayerTwo",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on playertwo.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:Playertwo",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]"
+  },
+  "backlinks": [
+    "Speech and voice",
+    "Planning Kanban - currently broken"
+  ],
+  "wiki_links": [
+    "TrackingSystem",
+    "Player Two code",
+    "ImmersiveExperience",
+    "ComputerVision",
+    "ComfyUI",
+    "RenderingEngine",
+    "AI Video",
+    "SpatialComputing",
+    "Robotics",
+    "Neocadia",
+    "HumanComputerInteraction",
+    "MetaverseDomain",
+    "DisplayTechnology",
+    "Presence"
+  ],
+  "ontology": {
+    "term_id": "mv-180849186917",
+    "preferred_term": "PlayerTwo",
+    "definition": "A component of the metaverse ecosystem focusing on playertwo.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

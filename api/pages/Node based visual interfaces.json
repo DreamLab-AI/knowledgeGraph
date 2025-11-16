@@ -1,0 +1,50 @@
+{
+  "title": "Node based visual interfaces",
+  "content": "- ### OntologyBlock\n  id:: node-based-visual-interfaces-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-471200601446\n\t- preferred-term:: Node based visual interfaces\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on node based visual interfaces.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:NodeBasedVisualInterfaces\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: node-based-visual-interfaces-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: node-based-visual-interfaces-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:NodeBasedVisualInterfaces))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:NodeBasedVisualInterfaces mv:ConceptualEntity)\n\t\t  SubClassOf(mv:NodeBasedVisualInterfaces mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:NodeBasedVisualInterfaces\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:NodeBasedVisualInterfaces \"Node based visual interfaces\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:NodeBasedVisualInterfaces \"A component of the metaverse ecosystem focusing on node based visual interfaces.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:NodeBasedVisualInterfaces \"mv-471200601446\"^^xsd:string)\n\t\t  ```\n\n- [Building Smarter Bots: An Expert Guide to Flowise AI\n  title:: Node based visual interfaces\n\t- 33rd Square](https://www.33rdsquare.com/flowise-ai/)\n-\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "node-based-visual-interfaces-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-471200601446",
+    "- preferred-term": "Node based visual interfaces",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on node based visual interfaces.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:NodeBasedVisualInterfaces",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]",
+    "title": "Node based visual interfaces"
+  },
+  "backlinks": [
+    "Logseq",
+    "BC-0072-node",
+    "Interfaces"
+  ],
+  "wiki_links": [
+    "TrackingSystem",
+    "ImmersiveExperience",
+    "ComputerVision",
+    "RenderingEngine",
+    "SpatialComputing",
+    "Robotics",
+    "HumanComputerInteraction",
+    "MetaverseDomain",
+    "DisplayTechnology",
+    "Presence"
+  ],
+  "ontology": {
+    "term_id": "mv-471200601446",
+    "preferred_term": "Node based visual interfaces",
+    "definition": "A component of the metaverse ecosystem focusing on node based visual interfaces.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

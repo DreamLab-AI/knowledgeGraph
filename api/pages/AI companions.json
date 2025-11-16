@@ -1,0 +1,45 @@
+{
+  "title": "AI companions",
+  "content": "- ### OntologyBlock\n  id:: ai-companions-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-7026178094\n\t- preferred-term:: AI companions\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on ai companions.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:AiCompanions\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: ai-companions-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: ai-companions-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:AiCompanions))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:AiCompanions mv:ConceptualEntity)\n\t\t  SubClassOf(mv:AiCompanions mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:AiCompanions\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:AiCompanions \"AI companions\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:AiCompanions \"A component of the metaverse ecosystem focusing on ai companions.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:AiCompanions \"mv-7026178094\"^^xsd:string)\n\t\t  ```\n\n- [Loneliness and suicide mitigation for students using GPT3-enabled chatbots | npj Mental Health Research (nature.com)](https://www.nature.com/articles/s44184-023-00047-6)\n- [The teens making friends with AI chatbots - The Verge](https://www.theverge.com/2024/5/4/24144763/ai-chatbot-friends-character-teens)\n- [Meet My A.I. Friends - The New York Times (nytimes.com)](https://www.nytimes.com/2024/05/09/technology/meet-my-ai-friends.html)\n-\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "ai-companions-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-7026178094",
+    "- preferred-term": "AI companions",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on ai companions.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:AiCompanions",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "TrackingSystem",
+    "ImmersiveExperience",
+    "ComputerVision",
+    "RenderingEngine",
+    "SpatialComputing",
+    "Robotics",
+    "HumanComputerInteraction",
+    "MetaverseDomain",
+    "DisplayTechnology",
+    "Presence"
+  ],
+  "ontology": {
+    "term_id": "mv-7026178094",
+    "preferred_term": "AI companions",
+    "definition": "A component of the metaverse ecosystem focusing on ai companions.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

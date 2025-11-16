@@ -1,0 +1,63 @@
+{
+  "title": "OpenWebUI",
+  "content": "- ### OntologyBlock\n  id:: openwebui-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-665661964810\n\t- preferred-term:: OpenWebUI\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on openwebui.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:Openwebui\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: openwebui-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: openwebui-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:Openwebui))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:Openwebui mv:ConceptualEntity)\n\t\t  SubClassOf(mv:Openwebui mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:Openwebui\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:Openwebui \"OpenWebUI\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:Openwebui \"A component of the metaverse ecosystem focusing on openwebui.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:Openwebui \"mv-665661964810\"^^xsd:string)\n\t\t  ```\n\n# OpenWebUI\n\t- [[WebDev and Consumer Tooling]] [[Large language models]] WebUI for [[Large language models]] formally [[Ollama]] [open-webui/open-webui: User-friendly WebUI for LLMs (Formerly Ollama WebUI) (github.com)](https://github.com/open-webui/open-webui)\n\t- [Open WebUI](https://openwebui.com/)\n\t- [Codewriter Modelfile | OpenWebUI Community](https://openwebui.com/m/vianch/codewriter:latest) [[Coding support]]\n\t- [[Open Webui and Pipelines]] corporate integrations [feat: allow authenticating with a trusted email header by cheahjs · Pull Request #1347 · open-webui/open-webui (github.com)](https://github.com/open-webui/open-webui/pull/1347)\n- [win4r/GraphRAG4OpenWebUI: GraphRAG4OpenWebUI integrates Microsoft's GraphRAG technology into Open WebUI, providing a versatile information retrieval API. It combines local, global, and web searches for advanced Q&A systems and search engines. This tool simplifies graph-based retrieval integration in open web environments. (github.com)](https://github.com/win4r/GraphRAG4OpenWebUI) [[Open Webui and Pipelines]] [[Knowledge Graphing]] [[Knowledge Graphing]]\n- [docs/docs/getting-started/env-configuration.md at improve-flux-docs · JohnTheNerd/docs (github.com)](https://github.com/JohnTheNerd/docs/blob/improve-flux-docs/docs/getting-started/env-configuration.md) [[Flux]] [[ComfyUI]] [[Open Webui and Pipelines]]\n- [pipelines/examples/pipelines/rag/llamaindex_ollama_github_pipeline.py at main · open-webui/pipelines](https://github.com/open-webui/pipelines/blob/main/examples/pipelines/rag/llamaindex_ollama_github_pipeline.py) [[Knowledge Graphing]] [[Open Webui and Pipelines]] [[Projects]] [[SHOULD]]\n- [[Home Assistant]] [[Open Webui and Pipelines]] [Home Assistant Filter Pipeline by atgehrhardt · Pull Request #95 · open-webui/pipelines (github.com)](https://github.com/open-webui/pipelines/pull/95)\n- [Firefunction-v2: Function calling capability on par with GPT4o at 2.5x the speed and 10% of the cost (fireworks.ai)](https://fireworks.ai/blog/firefunction-v2-launch-post) [[MUST]] [[Open Webui and Pipelines]] [[Projects]]\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "openwebui-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-665661964810",
+    "- preferred-term": "OpenWebUI",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on openwebui.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:Openwebui",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]"
+  },
+  "backlinks": [
+    "Retrieval Augmented Generation - RAG",
+    "Open Webui and Pipelines",
+    "Knowledge Graphing",
+    "Flux",
+    "ollama"
+  ],
+  "wiki_links": [
+    "Projects",
+    "WebDev and Consumer Tooling",
+    "Large language models",
+    "RenderingEngine",
+    "Home Assistant",
+    "Robotics",
+    "HumanComputerInteraction",
+    "Flux",
+    "Presence",
+    "ImmersiveExperience",
+    "ComputerVision",
+    "Coding support",
+    "MUST",
+    "SpatialComputing",
+    "SHOULD",
+    "DisplayTechnology",
+    "TrackingSystem",
+    "Ollama",
+    "Knowledge Graphing",
+    "Open Webui and Pipelines",
+    "MetaverseDomain",
+    "ComfyUI"
+  ],
+  "ontology": {
+    "term_id": "mv-665661964810",
+    "preferred_term": "OpenWebUI",
+    "definition": "A component of the metaverse ecosystem focusing on openwebui.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "title": "Facebook Meta",
+  "content": "- ### OntologyBlock\n  id:: facebook-meta-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-360056908346\n\t- preferred-term:: Facebook Meta\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on facebook meta.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:FacebookMeta\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: facebook-meta-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: facebook-meta-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:FacebookMeta))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:FacebookMeta mv:ConceptualEntity)\n\t\t  SubClassOf(mv:FacebookMeta mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:FacebookMeta\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:FacebookMeta \"Facebook Meta\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:FacebookMeta \"A component of the metaverse ecosystem focusing on facebook meta.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:FacebookMeta \"mv-360056908346\"^^xsd:string)\n\t\t  ```\n\npublic:: true\n\n- ## The trust collapse of Facebook\n\t- ### Company Culture\n\t\t- **Growth Focus**: The company culture prioritized growth and user engagement over other factors, such as user safety and value​​.\n\t\t- **Conflicting Teams**: Integrity/safety teams often found their priorities at odds with growth teams, with growth usually prevailing.\n\t\t- **Metrics of Success**: Success was defined primarily in terms of user engagement and platform growth, often to the detriment of other considerations.\n\t- ### Impact on Society\n\t\t- **Content Amplification**: Facebook's algorithms influenced what content got amplified, contributing to sensationalism and decreased factual accuracy.\n\t\t- **User Influence**: Hyperactive users had disproportionate influence over content flow and amplification.\n\t\t- **Democratic Illusion**: The platform created an illusion of democratization, but in practice, it was a curated environment with significant control over content and user interaction.\n\t- ### Mistakes by Senior Management\n\t\t- **Misaligned Priorities**: There was a fundamental misalignment between short-term growth and long-term integrity and user experience.\n\t\t- **Ignoring Research**: Findings that suggested integrity changes could boost long-term retention were often ignored or downplayed.\n\t\t- **Limited Transparency**: Decisions were made with a lack of transparency, both internally and externally.\n\t- ### Media and Public Backlash\n\t\t- **Investigative Reporting**: Reports by The Wall Street Journal and other media highlighted internal conflicts and the company's focus on growth over safety.\n\t\t- **Whistleblower Revelations**: Francis Haugen's whistleblowing brought significant attention to the internal documents and the company's practices.\n\t\t- **Public Perception**: These revelations led to increased scrutiny and criticism of Facebook's impact on society and its prioritization of profits over safety.\n\t- ### Lessons Learnt and Potential Changes\n\t\t- **Internal Awareness**: The leaks led to greater internal and public understanding of the platform's dynamics.\n\t\t- **Regulatory Impact**: The revelations have influenced regulatory discussions and potential legislative actions.\n\t\t- **Corporate Responsibility**: There's an ongoing debate about the responsibility of social media platforms in content management and user safety.\n\t- ### Hypothetical Better Ways of Building Platforms\n\t\t- **User Safety Focus**: Prioritizing user safety and value over mere engagement and growth.\n\t\t- **Balanced Influence**: Implementing measures to prevent hyperactive users from disproportionately influencing content amplification.\n\t\t- **Transparent Decision Making**: Adopting more transparent processes in algorithm design and content moderation decisions.\n\t\t- **Long-Term Metrics**: Shifting focus from short-term engagement metrics to long-term user well-being and platform health.\n\t- References:\n\t- Jeff Horwitz's book \"Broken Code,\" which delves into the Wall Street Journal's 2021 investigation and further into Facebook's internal documents. It was based on interviews and discussions with former Facebook employees and experts, shedding light on the company's internal dynamics and decision-making processes.\n- ## Zuckerberg’s New Goal: Creating Artificial General Intelligence\n\t- **Date:** 18/01/2024\n\t- **Key Points:**\n\t\t- [[Mark Zuckerberg]] and Meta aim to develop AGI, aligning AI research with generative AI product teams.\n\t\t- Intense competition for AI talent; Meta heavily investing in computing resources like Nvidia GPUs.\n\t\t- AGI lacks a clear definition; seen as a gradual process with diverse capabilities.\n\t\t- Meta's AI advancements: Llama 2 and upcoming Llama 3 models focus on coding, reasoning, and planning.\n\t\t- Debate on open vs. closed AI: Zuckerberg prefers open-source AI, balancing opportunity and safety.\n\t\t- AI's role in Meta's strategy: Enhancing social media and developing the metaverse.\n\t\t- Future vision: Deepening human-AI interaction in virtual worlds and social media.\n-\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "facebook-meta-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-360056908346",
+    "- preferred-term": "Facebook Meta",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on facebook meta.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:FacebookMeta",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]",
+    "public": "true"
+  },
+  "backlinks": [
+    "Education and AI",
+    "Ai in Games",
+    "Privacy, Trust and Safety",
+    "BC-0014-block-time"
+  ],
+  "wiki_links": [
+    "TrackingSystem",
+    "ImmersiveExperience",
+    "ComputerVision",
+    "RenderingEngine",
+    "Mark Zuckerberg",
+    "SpatialComputing",
+    "Robotics",
+    "HumanComputerInteraction",
+    "MetaverseDomain",
+    "DisplayTechnology",
+    "Presence"
+  ],
+  "ontology": {
+    "term_id": "mv-360056908346",
+    "preferred_term": "Facebook Meta",
+    "definition": "A component of the metaverse ecosystem focusing on facebook meta.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

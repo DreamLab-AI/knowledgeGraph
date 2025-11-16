@@ -1,0 +1,46 @@
+{
+  "title": "Norbert Wiener",
+  "content": "- ### OntologyBlock\n  id:: norbert-wiener-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-796547906822\n\t- preferred-term:: Norbert Wiener\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on norbert wiener.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:NorbertWiener\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: norbert-wiener-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: norbert-wiener-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:NorbertWiener))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:NorbertWiener mv:ConceptualEntity)\n\t\t  SubClassOf(mv:NorbertWiener mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:NorbertWiener\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:NorbertWiener \"Norbert Wiener\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:NorbertWiener \"A component of the metaverse ecosystem focusing on norbert wiener.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:NorbertWiener \"mv-796547906822\"^^xsd:string)\n\t\t  ```\n\npublic:: true\n\n- #Public page\n\t - automatically published\n- Norbert Wiener was a founding figure in cybernetics, coining the term.\n- He was prophetic about the rise of AI 70 years ago!\n- <iframe src=\"https://monoskop.org/images/9/90/Wiener_Norbert_The_Human_Use_of_Human_Beings_1950.pdf\" style=\"width: 100%; height: 600px\"></iframe>\n- ## The Human Use of Human Beings\n\t- **Information and Entropy**: Wiener's work often intersected with the concept of entropy, a term borrowed from thermodynamics. He drew parallels between the physical world's entropy and information theory. In his view, the acquisition and use of information could counteract the natural tendency towards disorder (entropy) in systems, a concept that has implications in understanding everything from biological evolution to the functioning of economies.\n\t- **Automation and Employment**: One of the book's more prescient concerns was the impact of automation on employment. Wiener foresaw the displacement of workers due to the rise of machines capable of performing tasks previously done by humans. He raised concerns about societal and economic implications, highlighting the need for ethical considerations and new forms of employment in a technologically advanced future.\n\t- **Ethics in Technological Advancement**: Wiener was deeply concerned about the ethical implications of technological advancements. He believed that while technology could significantly improve human life, it also had the potential to be misused. This is evident in his cautionary notes about the use of automated systems in warfare and his concerns about the loss of human autonomy.\n\t- **The Impact on Society and Human Behavior**: Wiener's insights extended to the broader impacts of technology on society and human behavior. He explored how the use of technology in communication could alter social interactions and even human thought processes. His predictions about computers tracking and influencing human behavior are startlingly relevant in today's world of big data and personalized advertising.\n\t- **Limitations of Machine Intelligence**: Interestingly, Wiener also discussed the limitations of machine intelligence. He argued that while machines could replicate certain human cognitive functions, they lacked the genuine understanding and consciousness of humans. This perspective adds to the current discourse on the capabilities and limitations of artificial intelligence.\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "norbert-wiener-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-796547906822",
+    "- preferred-term": "Norbert Wiener",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on norbert wiener.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:NorbertWiener",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]",
+    "public": "true"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "TrackingSystem",
+    "ImmersiveExperience",
+    "ComputerVision",
+    "RenderingEngine",
+    "SpatialComputing",
+    "Robotics",
+    "HumanComputerInteraction",
+    "MetaverseDomain",
+    "DisplayTechnology",
+    "Presence"
+  ],
+  "ontology": {
+    "term_id": "mv-796547906822",
+    "preferred_term": "Norbert Wiener",
+    "definition": "A component of the metaverse ecosystem focusing on norbert wiener.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

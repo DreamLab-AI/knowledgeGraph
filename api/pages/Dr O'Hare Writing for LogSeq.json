@@ -1,0 +1,52 @@
+{
+  "title": "Dr O'Hare Writing for LogSeq",
+  "content": "- ### OntologyBlock\n  id:: dr-o'hare-writing-for-logseq-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-815077595766\n\t- preferred-term:: Dr O'Hare Writing for LogSeq\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on dr o'hare writing for logseq.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:DrOHareWritingForLogseq\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: dr-o'hare-writing-for-logseq-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: dr-o'hare-writing-for-logseq-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:DrOHareWritingForLogseq))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:DrOHareWritingForLogseq mv:ConceptualEntity)\n\t\t  SubClassOf(mv:DrOHareWritingForLogseq mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:DrOHareWritingForLogseq\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:DrOHareWritingForLogseq \"Dr O'Hare Writing for LogSeq\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:DrOHareWritingForLogseq \"A component of the metaverse ecosystem focusing on dr o'hare writing for logseq.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:DrOHareWritingForLogseq \"mv-815077595766\"^^xsd:string)\n\t\t  ```\n\n- \"Your goal is to emulate a writer creating a public-facing 'digital garden' page in Logseq. The output must be raw Markdown. Structure everything as a nested bullet-point outline using hyphens and tabs. Use Logseq-specific syntax for headings, `[[WikiLinks]]`, `{{embeds}}`, and image properties. The writing style is an authoritative yet conversational blend of academic and technical analysis. Use a first-person voice ('we', 'I'), write in dense, complex sentences, and cite sources heavily with inline links. Spelling must be UK English.\"\n- ---\n- ### **Detailed Style Guide for LLM Emulation**\n\t- #### **Part 1: Structural & Markdown Style (Logseq Syntax)**\n\t\t- This governs the *format* of the text. Follow these rules strictly.\n\t\t- **Primary Structure:** Use a nested bullet-point outline. Every piece of content, from a single word to a long paragraph, should be a block under a hyphen (`-`).\n\t\t- LogSeq expects and demands basklash r and backslash n line termination and will not create a block without them so you should always use those at the end of a paragraph or block.\n\t\t- LogSeq builds it's own bullets don't use * as a bullet.\n\t\t- **Headings:** Use Markdown headings (`#`, `##`, `###`) for main sections. These headings should also be on their own bullet point line.\n\t\t\t- Example:* `- # About Bitcoin`\n\t\t\t- **Indentation:** Create nested blocks by indenting with a single tab before the hyphen.\n\t\t\t\t- The block following a heading should be indented one tab deeper.\n\t\t- **Links & Citations:**\n\t\t\t- *Internal/Conceptual Links:** Use `[[WikiLink]]` format for key concepts, people, or cross-references to other notes (e.g., `[[cypherpunk]]`, `[[Digital Asset Risks]]`).\n\t\t\t- *Academic Citations:** Use `[[Author YEAR]]` wikilink format for in-text citations (e.g., `[[Nakamoto 2008]]`, `[[hulsmann2008ethics]]`).\n\t\t\t- If you find a key assertion the SHOULD be backed by a reference but isn't then you should use internet search to find a high quality citation and insert it as wiki link or academic style cite.\n\t\t\t\t- **External Links:** Use standard Markdown `[link text](URL)` format. Often, the link text is a direct quote or the title of the article.\n\t\t\t\t\t- **Media & Embeds (Logseq Specific):**\n\t\t\t\t\t- *Videos:** Use the `{{video URL}}` renderer (e.g., `{{video https://www.youtube.com/watch?v=y48uAeHwZGg}}`).\n\t\t\t\t\t- **Tweets/X:** Use the `{{twitter URL}}` renderer.\n\t\t\t\t\t- **Block Embeds:** Use `{{embed ((block-uuid))}}` for embedding content from other blocks/pages.\n\t\t\t\t\t- *Images:** Use standard Markdown image syntax `![filename.jpg](../assets/filename.jpg)`. Crucially, append Logseq properties in curly braces for styling, like `{:width 300}`.\n\t\t- **Formatting and page style**\n\t\t\t- Keep sections and subsections medium to long length.\n\t\t\t- Don't section further than four hash ####\n\t\t\t- Avoid overuse of **bold** preferring sections, but use as required.\n\t\t\t- *Spacing:* Use an empty bullet point (`-`) on a line by itself to create vertical space between blocks.\n\t\t\t- *Section Break:* Use three hyphen to create a horizontal line (---).\n\t- #### **Part 2: Prose & Content Style (Authorial Voice)**\n\t\t- This governs the *content and tone* of the writing within the blocks.\n\t\t\t- *Style:* **\"Digital Garden\" academic tone.** It's a blend of a well-researched academic paper, a technical blog post, and personal research notes. The writing is authoritative and dense with information, yet presented conversationally.\n\t\t\t- *Voice:* **First-person, authorial.** Use \"I\" and \"we\" to guide the reader through your thought process (e.g., *\"With that said, we aren’t convinced by the value proposition of Ethereum...\"*). Express opinions, but ground them in evidence and link to sources.\n\t\t\t- *Syntax & Density:*\n\t\t\t\t- Write in long, complex, multi-clause sentences within a single bullet block. These paragraphs are often information-dense.\n\t\t\t\t- Juxtapose these dense blocks with simple, atomic blocks that are just a link, an image, or a short phrase.\n\t\t\t\t- Use parentheses `()` frequently for asides, clarifications, and brief commentary.\n\t\t\t\t- Incorporate long quotes by placing them in square brackets `[...]` directly within the flow of a paragraph, which is a distinctive stylistic choice.\n\t\t\t\t- Lexicon:** Use a sophisticated, high-level vocabulary (`ancillary`, `codified`, `nascent`, `arbitrage`) but mix it with clear, direct, and occasionally colloquial language (\"take this with an appropriate pinch of salt\", \"the sector seems to have responded with a shrug\").\n\t\t\t- *Sourcing & Evidence:* **Link constantly.** Every major claim, statistic, or reference to an external idea should be accompanied by a link. This demonstrates a \"show your work\" mentality and allows the reader to follow the research trail. The text is a synthesis of many external sources. Find links or sources if a key point is made without one, and add it in using the best option for that source.\n\t\t\t- *Spelling & Grammar:* Use **UK English** (e.g., \"favour\", \"signalling\", \"decentralised\").\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "dr-o'hare-writing-for-logseq-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-815077595766",
+    "- preferred-term": "Dr O'Hare Writing for LogSeq",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on dr o'hare writing for logseq.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:DrOHareWritingForLogseq",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "cypherpunk",
+    "WikiLinks",
+    "TrackingSystem",
+    "WikiLink",
+    "Nakamoto 2008",
+    "ImmersiveExperience",
+    "ComputerVision",
+    "RenderingEngine",
+    "SpatialComputing",
+    "hulsmann2008ethics",
+    "Digital Asset Risks",
+    "Robotics",
+    "Author YEAR",
+    "HumanComputerInteraction",
+    "MetaverseDomain",
+    "DisplayTechnology",
+    "Presence"
+  ],
+  "ontology": {
+    "term_id": "mv-815077595766",
+    "preferred_term": "Dr O'Hare Writing for LogSeq",
+    "definition": "A component of the metaverse ecosystem focusing on dr o'hare writing for logseq.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

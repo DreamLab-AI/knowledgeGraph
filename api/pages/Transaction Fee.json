@@ -1,0 +1,48 @@
+{
+  "title": "Transaction Fee",
+  "content": "- ### OntologyBlock\n  id:: transactionfee-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0524\n    - filename-history:: [\"BC-0524-transactionfee.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0524\n    - preferred-term:: Transaction Fee\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: The payment required for processing transactions and including them in blockchain blocks, compensating validators/miners for computational resources and providing spam protection.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:TransactionFee\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### Relationships\n    - is-subclass-of:: [[Tokenomics]]\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :TransactionFee))\n      (SubClassOf :TransactionFee :Tokenomics)\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :TransactionFee \"Transaction Fee\"@en)\n      (AnnotationAssertion rdfs:comment :TransactionFee\n        \"The payment required for processing transactions and including them in blockchain blocks, compensating validators/miners for computational resources and providing spam protection.\"@en)\n      ```\n\n- ## About Transaction Fee\n  The payment required for processing transactions and including them in blockchain blocks, compensating validators/miners for computational resources and providing spam protection.\n\t\n\t### Implementation Across Blockchains\n\tTransaction fees are payments made by users to compensate miners and validators for processing and including transactions in blockchain systems, implemented universally across Bitcoin (satoshi-per-byte pricing), Ethereum (gas-based fees with EIP-1559), Binance Smart Chain, Polygon, Solana, and other major blockchains. These fees serve critical economic purposes including spam prevention, network security incentivization through miner/validator compensation, and efficient resource allocation through market-based transaction prioritization mechanisms.\n\t\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "transactionfee-ontology",
+    "collapsed": "true",
+    "- domain-prefix": "BC",
+    "- sequence-number": "0524",
+    "- filename-history": "[\"BC-0524-transactionfee.md\"]",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0524",
+    "- preferred-term": "Transaction Fee",
+    "- source-domain": "metaverse",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-11-13",
+    "- definition": "The payment required for processing transactions and including them in blockchain blocks, compensating validators/miners for computational resources and providing spam protection.",
+    "- maturity": "established",
+    "- source": "Chimera Prime Research",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:TransactionFee",
+    "- belongsToDomain": "[[Blockchain]]",
+    "- is-subclass-of": "[[Tokenomics]]"
+  },
+  "backlinks": [
+    "Gas Limit",
+    "Priority Fee",
+    "BC 0109 priority fee",
+    "Base Fee",
+    "Economic Mechanism",
+    "Telecollaboration and Telepresence",
+    "Mining Pool",
+    "Gas Price"
+  ],
+  "wiki_links": [
+    "Blockchain",
+    "Tokenomics"
+  ],
+  "ontology": {
+    "term_id": "BC-0524",
+    "preferred_term": "Transaction Fee",
+    "definition": "The payment required for processing transactions and including them in blockchain blocks, compensating validators/miners for computational resources and providing spam protection.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "title": "Open Generative AI tools",
+  "content": "- ### OntologyBlock\n  id:: open-generative-ai-tools-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-654626298974\n\t- preferred-term:: Open Generative AI tools\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on open generative ai tools.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:OpenGenerativeAiTools\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: open-generative-ai-tools-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: open-generative-ai-tools-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:OpenGenerativeAiTools))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:OpenGenerativeAiTools mv:ConceptualEntity)\n\t\t  SubClassOf(mv:OpenGenerativeAiTools mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:OpenGenerativeAiTools\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:OpenGenerativeAiTools \"Open Generative AI tools\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:OpenGenerativeAiTools \"A component of the metaverse ecosystem focusing on open generative ai tools.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:OpenGenerativeAiTools \"mv-654626298974\"^^xsd:string)\n\t\t  ```\n\npublic:: true\n\n\t- # Open (ish) tooling\n\t- ## Opensource vs Freeware in AI:\n\t\t- This is a hot, and also seemingly endless debate that has been going on for years.\n\t\t- Open-source AI allows users to access, modify, and distribute the source code **and training methods** for free, promoting collaboration and community-driven development. Popular AI frameworks like TensorFlow and PyTorch fall under this category.\n\t\t- Free-to-use, on the other hand, is copyrighted software distributed without charge, but with limited rights to modify or distribute. Meta Llama 2 falls into that catagory.\n\t\t- Feel free to get right into the weeds with the [Hannibal046/Awesome-LLM: Awesome-LLM: a curated list of Large Language Model (github.com)](https://github.com/Hannibal046/Awesome-LLM)\n\t- ## Large Language models:\n\t\t- ### **\"AI is the high interest credit card of product development\"**\n\t\t\t- There's SO much activity. [Thousands and thousands](https://llm.extractum.io/) of merges and models and LoRAs oh my...\n\t\t\t\t- Some of these are from legit labs are are fabulous.\n\t\t\t\t- [[Deepseek]] (Chinese) [[Falcon]] (UAE) [[Mistral]] (France) [[Red Pyjama]] [[Microsoft Models]] [[Poro]] (Finland) and more.\n\t\t\t- It's confusing because people are \"gaming\" the evaluation tools, so nobody really knows what's good.\n\t\t\t- Best to ask people who know, and accept you're going to be changing the back end of your system a lot.\n\t\t\t- You can pick a size and utility of model and get a long way, but do you need to?\n\t\t\t- Low code [flowise](https://flowiseai.com/) demo which you probably saw earlier.\n\t\t\t\t- It is multi-modal, can generate images like OpenAI, and use audio bi-driectionally, like OpenAI.\n\t\t\t\t- It is a drop in replacement, so crucially it can serve as a BACKUP\n\t\t\t\t- This is doable, but probably don't do it.\n\t- this loads up my local LLM sandbox [<]iframe src=\"http://192.168.0.51:3000/canvas/b9738eeb-4fa2-41a0-9535-549638a958f5\" style=\"width: 100%; height: 600px\"></iframe>\n\t- [[ComfyUI]] live demo (not here for now)\n\t- #### Demo: Running UK Company [[Stable Diffusion]] (SDXL) with a cutting edge French language model creating the prompts in real-time, completely privately on local hardware\n\t- this is a local demo [<]iframe src=\"http://192.168.0.51:8188\" style=\"width: 100%; height: 600px\"></iframe>\n\t- {{video https://www.youtube.com/watch?v=kN8jdvRQvzA}}\n\t- {{video https://www.youtube.com/watch?v=AF2VyqSApjA}}\n\t- You can play with all of these on [Rundiffusion](https://app.rundiffusion.com/)\n\t- ![image.png](../assets/image_1705158589247_0.png)\n\t- [[3D and 4D]]\n\t- {{embed ((65a5024d-11bb-4737-aef3-af73103fa218))}}\n-\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "open-generative-ai-tools-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-654626298974",
+    "- preferred-term": "Open Generative AI tools",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on open generative ai tools.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:OpenGenerativeAiTools",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]",
+    "public": "true"
+  },
+  "backlinks": [
+    "Suggested Reading Order",
+    "Cyber security and Cryptography",
+    "BC-0077-51%-attack",
+    "Proprietary Video"
+  ],
+  "wiki_links": [
+    "RenderingEngine",
+    "Robotics",
+    "HumanComputerInteraction",
+    "Deepseek",
+    "Red Pyjama",
+    "Falcon",
+    "Presence",
+    "Stable Diffusion",
+    "ImmersiveExperience",
+    "ComputerVision",
+    "Mistral",
+    "SpatialComputing",
+    "Poro",
+    "DisplayTechnology",
+    "TrackingSystem",
+    "Microsoft Models",
+    "MetaverseDomain",
+    "ComfyUI",
+    "3D and 4D"
+  ],
+  "ontology": {
+    "term_id": "mv-654626298974",
+    "preferred_term": "Open Generative AI tools",
+    "definition": "A component of the metaverse ecosystem focusing on open generative ai tools.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

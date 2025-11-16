@@ -1,0 +1,13 @@
+{
+  "title": "Inpainting",
+  "content": "- #Public page\n\t - automatically published\n-",
+  "properties": {
+    "public": "true"
+  },
+  "backlinks": [
+    "BC-0072-node",
+    "ComfyUI",
+    "Generative AI"
+  ],
+  "wiki_links": []
+}

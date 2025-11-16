@@ -1,0 +1,14 @@
+{
+  "title": "debug linked node",
+  "content": "- This is a node linked to [[Debug Test Page]]\n-",
+  "properties": {
+    "public": "true"
+  },
+  "backlinks": [
+    "Debug Test Page",
+    "BC-0037-public-key"
+  ],
+  "wiki_links": [
+    "Debug Test Page"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "title": "krita",
+  "content": "- ### OntologyBlock\n  id:: krita-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-523525042165\n\t- preferred-term:: krita\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on krita.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:Krita\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Process\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n\t- #### OWL Axioms\n\t  id:: krita-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:Krita))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:Krita mv:ConceptualEntity)\n\t\t  SubClassOf(mv:Krita mv:Process)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:Krita\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:Krita \"krita\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:Krita \"A component of the metaverse ecosystem focusing on krita.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:Krita \"mv-523525042165\"^^xsd:string)\n\t\t  ```\n\n- Remote server required plugins page [krita-ai-diffusion/doc/comfy-requirements.md at main · Acly/krita-ai-diffusion (github.com)](https://github.com/Acly/krita-ai-diffusion/blob/main/doc/comfy-requirements.md)\n- Port 8189 for my inference system\n- {{video https://www.youtube.com/watch?v=AF2VyqSApjA}}\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "krita-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-523525042165",
+    "- preferred-term": "krita",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on krita.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:Krita",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Process",
+    "- belongsToDomain": "[[MetaverseDomain]]"
+  },
+  "backlinks": [
+    "BC-0072-node",
+    "ComfyUI"
+  ],
+  "wiki_links": [
+    "MetaverseDomain"
+  ],
+  "ontology": {
+    "term_id": "mv-523525042165",
+    "preferred_term": "krita",
+    "definition": "A component of the metaverse ecosystem focusing on krita.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

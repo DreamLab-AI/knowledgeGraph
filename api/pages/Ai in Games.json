@@ -1,0 +1,61 @@
+{
+  "title": "Ai in Games",
+  "content": "- ### OntologyBlock\n  id:: ai-in-games-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-333628979148\n\t- preferred-term:: Ai in Games\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on ai in games.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:AiInGames\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: ai-in-games-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: ai-in-games-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:AiInGames))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:AiInGames mv:ConceptualEntity)\n\t\t  SubClassOf(mv:AiInGames mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:AiInGames\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:AiInGames \"Ai in Games\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:AiInGames \"A component of the metaverse ecosystem focusing on ai in games.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:AiInGames \"mv-333628979148\"^^xsd:string)\n\t\t  ```\n\npublic:: true\n\n- {{video https://www.youtube.com/watch?v=LFaxqJJLOZc}}\n- # Games sector dominates entertainment\n\t- ![1713196618774.jpeg](../assets/1713196618774_1713258422046_0.jpeg)\n\t- Traditional engines like Unity, [[Unreal]], [[Roblox]] , and [[NVIDIA Omniverse]] may become outdated [[Disruption]].\n\t\t- They're something like 15 years old and designed for a past era of computing.\n\t\t- The rise of generative AI, cloud computing, and new spatial platforms is poised to transform 3D creation.\n\t\t- Future engines might start with simple text prompts for creation, making them more accessible and reducing barriers for new creators.\n\t\t- Proposed engines should be modular, cloud-based, and adaptable to different project needs, avoiding the bloat of current engines.\n\t\t- There is opportunity for the traditional engines to pivot here, but they are struggling with their size already.\n\t\t- A key feature will be real-time collaboration and version control in a cloud-based environment.\n\t\t- This suggests that user experience in these engines should be flexible and cater to different skill levels and roles.\n\t\t- New engines might initially focus on specific genres, art styles, or platforms, rather than trying to cover all use cases.\n\t\t- The interoperable [Open Universal Scene Descriptor](https://openusd.org/release/index.html) might be the key enabler.\n\t\t- There could be significant change in the entertainment industry, with more diverse and interactive content as a result of these advancements.\n\t\t- [Fiero\n\t\t- Create 2D games without a single line of code! (fierogameengine.com)](https://fierogameengine.com/)\n\t\t- [They are starting to hide away the AI component and just focus on workflows like Sprite Fusion](https://www.spritefusion.com/)\n\t- <iframe src=\"https://miao-ai-lab.github.io/LARP/\" style=\"width: 800px; height: 400px\"></iframe>\n\t- [LARP: Language-Agent Role Play for Open-World Games (arxiv.org)](https://arxiv.org/pdf/2312.17653.pdf)\n\t\t- Plenty of fun tools for game makers, but distributors are quite ossified, and access to distribution may be patchy.\n\t\t- Steam has [softened it's stance.](https://store.steampowered.com/news/group/4145017/view/3862463747997849618)\n\t\t- Latency and cost are still prohibitive **in game**.\n\t\t- Tools for builders\n\t\t- Blender has been leading the way with open source plugins appearing all the time.\n\t\t- [Scenario\n\t\t- AI-generated game assets](https://www.scenario.com/)\n\t\t- LoRA training.\n\t\t- Already plenty to play with [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7148068781314002944/) and [AI-Powered Creativity: Innovating Look Development with Stable Diffusion & ComfyUI](https://www.youtube.com/watch?v=CLPvdbFUNqw)\n\t- ![1704232411233.mp4](../assets/1704232411233_1704298954869_0.mp4){:height 100, :width 400}\n\t\t- [Create an AI Robot NPC using Hugging Face Transformers 🤗 and Unity Sentis (substack.com)](https://thomassimonini.substack.com/p/create-an-ai-robot-npc-using-hugging?utm_campaign=post&utm_medium=web)\n\t\t- {{video https://www.youtube.com/watch?v=iZ_20vK94hc}}\n\t\t-\n- [GigaxGames/gigax: LLM-powered NPCs running on your hardware (github.com)](https://github.com/GigaxGames/gigax)\n- {{video https://www.youtube.com/watch?v=_KFbT6eph5A}}\n-\n- [[Ai in Games]] https://www.gginsights.io/\n    - [NVIDIA In-Game Inferencing | NVIDIA Developer](https://developer.nvidia.com/rtx/in-game-inferencing/) [[Ai in Games]]\n- [Theoretically Media on X: \"Google's Genie 2 just dropped, and it's a stunner. Create a \"game\" from an image! They're describing it as their most capable large-scale foundation world model yet. More Examples Below! https://t.co/BMOOxfaOVg\" / X](https://x.com/TheoMediaAI/status/1864329184459338207) [[Ai in Games]]\n- https://github.com/etched-ai/open-oasis [[Ai in Games]]\n- [D&D Character Creator (npub.info)](https://pages.npub.info/glyphs/TESTNET_ENG_QAE/tmp/) [[Melvin Carvalho]] [[Runes and Glyphs]] [[Ai in Games]]\n- [[Melvin Carvalho]] [[Nostr protocol]] [[Agents]] [[Ai in Games]] [Home · dungeon-mastr/rules Wiki (github.com)](https://github.com/dungeon-mastr/rules/wiki)\n- https://github.com/GameGen-O/GameGen-O/ [[Ai in Games]]\n- https://gamegen-o.github.io/ [[Ai in Games]] [[Ai in Games]]\n- [[Ai in Games]] [[Llama]] [[Facebook Meta]] [Run AI Town entirely locally by default using llama3 by ianmacartney · Pull Request #219 · a16z-infra/ai-town (github.com)](https://github.com/a16z-infra/ai-town/pull/219) [[Large language models]]\n- [Champions of Otherworldly Magic - Collect, Trade, Battle! (championstcg.com)](https://championstcg.com/) [[Ai in Games]]\n-\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "ai-in-games-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-333628979148",
+    "- preferred-term": "Ai in Games",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on ai in games.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:AiInGames",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]",
+    "public": "true"
+  },
+  "backlinks": [
+    "Ai in Games",
+    "BC-0014-block-time"
+  ],
+  "wiki_links": [
+    "Large language models",
+    "RenderingEngine",
+    "Agents",
+    "Robotics",
+    "HumanComputerInteraction",
+    "Ai in Games",
+    "Runes and Glyphs",
+    "Melvin Carvalho",
+    "Roblox",
+    "Unreal",
+    "Presence",
+    "ImmersiveExperience",
+    "ComputerVision",
+    "Llama",
+    "SpatialComputing",
+    "NVIDIA Omniverse",
+    "Nostr protocol",
+    "DisplayTechnology",
+    "Disruption",
+    "TrackingSystem",
+    "Facebook Meta",
+    "MetaverseDomain"
+  ],
+  "ontology": {
+    "term_id": "mv-333628979148",
+    "preferred_term": "Ai in Games",
+    "definition": "A component of the metaverse ecosystem focusing on ai in games.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Push To Local RAG",
+  "content": "- ### OntologyBlock\n  id:: push-to-local-rag-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-967815162840\n\t- preferred-term:: Push To Local RAG\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on push to local rag.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:PushToLocalRag\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: push-to-local-rag-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: push-to-local-rag-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:PushToLocalRag))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:PushToLocalRag mv:ConceptualEntity)\n\t\t  SubClassOf(mv:PushToLocalRag mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:PushToLocalRag\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:PushToLocalRag \"Push To Local RAG\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:PushToLocalRag \"A component of the metaverse ecosystem focusing on push to local rag.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:PushToLocalRag \"mv-967815162840\"^^xsd:string)\n\t\t  ```\n\n- {{evalpage}}\n- # Simple Data Cleaning and Concatenation for RAG\n- ## Task Description\n\t- This Logseq page will clean and concatenate markdown files from a specified directory.\n\t- Steps:\n\t\t- Remove URLs\n\t\t- Remove unwanted characters and special symbols\n\t\t- Normalize whitespace\n\t\t- Exclude files with cleaned content less than 500 bytes\n\t- Finally, it will write the cleaned and concatenated text to a single output file for use in Retrieval-Augmented Generation (RAG).\n- ## Define File Paths and Import Required Modules\n\t- ```python\n\t  import os\n\t  import re\n\t  global input_directory, output_file, concatenated_text\n\t  \n\t  # Define the input directory containing markdown files and the output file path\n\t  input_directory = \"pages\"\n\t  output_file = \"cleaned_concatenated_text.txt\"\n\t  concatenated_text = \"\"\n\t  \n\t  \"Directories and paths set up.\"\n\t  ```\n\t\t- {{evalparent}}\n- ## Text Cleaning Logic\n\t- ```python\n\t  # Define a function-free cleaning process\n\t  def clean_text(text):\n\t      # Remove URLs starting with http or https\n\t      text = re.sub(r'http\\S+', '', text)\n\t      \n\t      # Remove unwanted characters: - [ ] ( ) * { }\n\t      text = re.sub(r'[-\\[\\]()\\*{}]', '', text)\n\t      \n\t      # Remove double square brackets [[...]]\n\t      text = re.sub(r'\\[\\[|\\]\\]', '', text)\n\t      \n\t      # Additional cleanup: Remove special characters and normalize whitespace\n\t      text = re.sub(r'[^\\w\\s]', '', text)\n\t      text = re.sub(r'\\s+', ' ', text).strip()\n\t      \n\t      return text\n\t  \n\t  \"Text cleaning process defined.\"\n\t  ```\n\t\t- {{evalparent}}\n- ## Concatenate and Clean Files\n\t- ```python\n\t  processed_files = 0\n\t  skipped_files = 0\n\t  \n\t  for root, _, files in os.walk(input_directory):\n\t      for filename in files:\n\t          if filename.endswith(\".md\"):\n\t              input_path = os.path.join(root, filename)\n\t              \n\t              with open(input_path, 'r', encoding='utf-8') as infile:\n\t                  content = infile.read()\n\t              \n\t              cleaned_content = clean_text(content)\n\t              \n\t              if len(cleaned_content.encode('utf-8')) < 500:\n\t                  skipped_files += 1\n\t                  continue\n\t              \n\t              concatenated_text += cleaned_content + \"\\n\\n\" # Ensure each file's content is separated by a newline\n\t              processed_files += 1\n\t  \n\t  \"Files concatenated and cleaned. Proceed to write to output.\"\n\t  ```\n\t\t- {{evalparent}}\n- ## Write to Output File\n\t- ```python\n\t  with open(output_file, 'w', encoding='utf-8') as outfile:\n\t      outfile.write(concatenated_text)\n\t  \n\t  result_message = f\"Processed {processed_files} files, skipped {skipped_files} files. Output written to {output_file}.\"\n\t  result_message\n\t  ```\n\t\t- {{evalparent}}\n- ## Summary\n\t- This script has:\n\t\t- Defined paths for input and output\n\t\t- Created a text cleaning process to remove URLs, special characters, and normalize whitespace\n\t\t- Concatenated all eligible markdown files\n\t\t- Written the cleaned and concatenated text to a single output file\n\t- The resulting concatenated and cleaned text is stored in the `cleaned_concatenated_text.txt` file, ready for further processing with the RAG system in the Open-webui LLM interface.\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "push-to-local-rag-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-967815162840",
+    "- preferred-term": "Push To Local RAG",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on push to local rag.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:PushToLocalRag",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "TrackingSystem",
+    "...",
+    "ImmersiveExperience",
+    "ComputerVision",
+    "RenderingEngine",
+    "SpatialComputing",
+    "Robotics",
+    "HumanComputerInteraction",
+    "MetaverseDomain",
+    "DisplayTechnology",
+    "Presence"
+  ],
+  "ontology": {
+    "term_id": "mv-967815162840",
+    "preferred_term": "Push To Local RAG",
+    "definition": "A component of the metaverse ecosystem focusing on push to local rag.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

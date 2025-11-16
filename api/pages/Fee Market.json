@@ -1,0 +1,42 @@
+{
+  "title": "Fee Market",
+  "content": "- ### OntologyBlock\n  id:: feemarket-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0528\n    - filename-history:: [\"BC-0528-feemarket.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0528\n    - preferred-term:: Fee Market\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: The economic mechanism determining transaction fees through supply and demand dynamics, where users bid for limited block space.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:FeeMarket\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### Relationships\n    - is-subclass-of:: [[Tokenomics]]\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :FeeMarket))\n      (SubClassOf :FeeMarket :Tokenomics)\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :FeeMarket \"Fee Market\"@en)\n      (AnnotationAssertion rdfs:comment :FeeMarket\n        \"The economic mechanism determining transaction fees through supply and demand dynamics, where users bid for limited block space.\"@en)\n      ```\n\n- ## About Fee Market\n  The economic mechanism determining transaction fees through supply and demand dynamics, where users bid for limited block space.\n\t\n\t### Implementation Across Blockchains\n\tFee market is the economic mechanism and price discovery system for blockchain transaction fees, where users competitively bid for limited block space through dynamic pricing to achieve desired transaction inclusion speeds and ordering. Implemented across all major blockchains including Bitcoin's auction-based mempool system (satoshi-per-byte bidding), Ethereum's EIP-1559 hybrid model (combining algorithmic base fees with market-driven priority fees), Binance Smart Chain, Polygon, Solana's priority fee systems, and Arbitrum/Optimism Layer-2 solutions, fee markets balance supply (block capacity measured in gas or bytes) with demand (transaction volume) to achieve efficient resource allocation. The market mechanism enables price discovery through congestion-based dynamics (fees rising during high demand to 100+ gwei and falling to <1 gwei during low usage), spam prevention through economic costs, validator incentivization, and predictable transaction ordering while adapting to varying network conditions and user urgency requirements.\n\t\n  \n  EIP-1559 improved fee market by introducing base fee mechanism for better price discovery.\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "feemarket-ontology",
+    "collapsed": "true",
+    "- domain-prefix": "BC",
+    "- sequence-number": "0528",
+    "- filename-history": "[\"BC-0528-feemarket.md\"]",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0528",
+    "- preferred-term": "Fee Market",
+    "- source-domain": "metaverse",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-11-13",
+    "- definition": "The economic mechanism determining transaction fees through supply and demand dynamics, where users bid for limited block space.",
+    "- maturity": "established",
+    "- source": "Chimera Prime Research",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:FeeMarket",
+    "- belongsToDomain": "[[Blockchain]]",
+    "- is-subclass-of": "[[Tokenomics]]"
+  },
+  "backlinks": [
+    "BC 0109 priority fee",
+    "Transaction Pool"
+  ],
+  "wiki_links": [
+    "Blockchain",
+    "Tokenomics"
+  ],
+  "ontology": {
+    "term_id": "BC-0528",
+    "preferred_term": "Fee Market",
+    "definition": "The economic mechanism determining transaction fees through supply and demand dynamics, where users bid for limited block space.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

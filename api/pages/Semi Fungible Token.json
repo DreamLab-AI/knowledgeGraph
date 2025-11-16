@@ -1,0 +1,43 @@
+{
+  "title": "Semi-Fungible Token",
+  "content": "- ### OntologyBlock\n  id:: semifungibletoken-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0511\n    - filename-history:: [\"BC-0511-semifungibletoken.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0511\n    - preferred-term:: Semi-Fungible Token\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: A token that can represent both fungible and non-fungible properties, typically starting as fungible but becoming non-fungible under certain conditions, or representing classes of interchangeable assets.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:SemiFungibleToken\n    - belongsToDomain:: [[Blockchain]]\n\t- blockchainRelevance:: High\n\t- lastValidated:: 2025-11-14\n\n  - #### Relationships\n    - is-subclass-of:: [[Token]]\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :SemiFungibleToken))\n      (SubClassOf :SemiFungibleToken :Token)\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :SemiFungibleToken \"Semi-Fungible Token\"@en)\n      (AnnotationAssertion rdfs:comment :SemiFungibleToken\n        \"A token that can represent both fungible and non-fungible properties, typically starting as fungible but becoming non-fungible under certain conditions, or representing classes of interchangeable assets.\"@en)\n      ```\n\n- ## About Semi-Fungible Token\n  A token that can represent both fungible and non-fungible properties, typically starting as fungible but becoming non-fungible under certain conditions, or representing classes of interchangeable assets.\n  \n  Enabled by ERC-1155 multi-token standard. Allows bundling multiple asset types in one smart contract.\n  \n  ### Examples\n  - Event tickets (fungible until used, then non-fungible as proof of attendance), gaming items with limited quantities",
+  "properties": {
+    "id": "semifungibletoken-ontology",
+    "collapsed": "true",
+    "- domain-prefix": "BC",
+    "- sequence-number": "0511",
+    "- filename-history": "[\"BC-0511-semifungibletoken.md\"]",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0511",
+    "- preferred-term": "Semi-Fungible Token",
+    "- source-domain": "blockchain",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-11-13",
+    "- definition": "A token that can represent both fungible and non-fungible properties, typically starting as fungible but becoming non-fungible under certain conditions, or representing classes of interchangeable assets.",
+    "- maturity": "established",
+    "- source": "Chimera Prime Research",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:SemiFungibleToken",
+    "- belongsToDomain": "[[Blockchain]]",
+    "- blockchainRelevance": "High",
+    "- lastValidated": "2025-11-14",
+    "- is-subclass-of": "[[Token]]"
+  },
+  "backlinks": [
+    "E R C1155 Token"
+  ],
+  "wiki_links": [
+    "Token",
+    "Blockchain"
+  ],
+  "ontology": {
+    "term_id": "BC-0511",
+    "preferred_term": "Semi-Fungible Token",
+    "definition": "A token that can represent both fungible and non-fungible properties, typically starting as fungible but becoming non-fungible under certain conditions, or representing classes of interchangeable assets.",
+    "source_domain": "blockchain",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

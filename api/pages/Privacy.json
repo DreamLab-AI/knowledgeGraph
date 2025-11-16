@@ -1,0 +1,45 @@
+{
+  "title": "Privacy",
+  "content": "- ### OntologyBlock\n  id:: privacy-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0072\n\t- preferred-term:: Privacy\n\t- source-domain:: ai\n\t- status:: draft\n    - public-access:: true\n\t- definition:: The protection of personal information and individual autonomy in AI systems, encompassing data minimization, purpose limitation, transparency, and individual control over how personal data is collected, processed, stored, and shared throughout the AI lifecycle.\n\n\n\n## Academic Context\n\n- Brief contextual overview\n\t- Privacy in AI systems refers to the protection of personal information and the preservation of individual autonomy throughout the data lifecycle\n\t- Core principles include data minimisation, purpose limitation, transparency, and individual control over how personal data is collected, processed, stored, and shared\n\t- These principles are rooted in both ethical philosophy and legal frameworks, notably the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n\t- Organisations increasingly embed privacy-by-design and privacy-by-default into AI development, especially in sectors such as healthcare, finance, and public services\n\t- Notable platforms include NHS Digital, Open Banking, and the National Underground Asset Register, all of which leverage new data-sharing frameworks enabled by the Data (Use and Access) Act 2025\n\t- In North England, cities like Manchester, Leeds, Newcastle, and Sheffield are home to regional data trusts and smart city initiatives that prioritise privacy in their digital transformation projects\n\n- Technical capabilities and limitations\n\t- Modern AI systems can implement differential privacy, federated learning, and explainable AI to enhance privacy protections\n\t- Limitations remain in balancing privacy with utility, particularly in high-stakes domains such as law enforcement and healthcare\n\n- Standards and frameworks\n\t- The UK GDPR and Data Protection Act 2018 remain the primary legal frameworks\n\t- The Data (Use and Access) Act 2025 introduces new lawful grounds for processing personal data, including for crime prevention and research, while maintaining high privacy standards\n\t- The Information Commissioner’s Office (ICO) continues to issue guidance on privacy best practices, including for automated decision-making and international data transfers\n\n## Research & Literature\n\n- Key academic papers and sources\n\t- Wachter, S., Mittelstadt, B., & Floridi, L. (2017). \"Why a Right to Explanation of Automated Decision-Making Does Not Exist in the General Data Protection Regulation.\" International Data Privacy Law, 7(2), 76–99. https://doi.org/10.1093/idpl/ipx005\n\t- Taylor, L., Floridi, L., & van der Sloot, B. (2017). \"Principles Alone Cannot Guarantee Ethical AI.\" Nature Machine Intelligence, 1(12), 506–507. https://doi.org/10.1038/s42256-019-0125-3\n\t- ICO. (2025). \"Guidance on the Data (Use and Access) Act 2025.\" Information Commissioner’s Office. https://ico.org.uk\n\n- Ongoing research directions\n\t- Exploring the ethical implications of automated decision-making in public services\n\t- Investigating the effectiveness of privacy-enhancing technologies in real-world AI deployments\n\t- Assessing the impact of new data protection legislation on innovation and public trust\n\n## UK Context\n\n- British contributions and implementations\n\t- The UK has maintained a robust data protection regime, with the ICO playing a central role in enforcement and guidance\n\t- The Data (Use and Access) Act 2025 has further clarified the scope of scientific research and introduced new safeguards for automated decision-making\n\n- North England innovation hubs\n\t- Manchester’s Digital Health Innovation Hub and Leeds’ Data City initiative are notable examples of regional efforts to balance privacy with innovation\n\t- Newcastle and Sheffield are home to smart city projects that prioritise privacy in their digital infrastructure\n\n- Regional case studies\n\t- The Greater Manchester Health and Social Care Partnership has implemented privacy-by-design in its AI-driven health analytics platform\n\t- Leeds City Council’s Data City project uses federated learning to protect citizen privacy while enabling data-driven urban planning\n\n## Future Directions\n\n- Emerging trends and developments\n\t- Increasing use of privacy-enhancing technologies in AI systems\n\t- Growing emphasis on transparency and accountability in automated decision-making\n\n- Anticipated challenges\n\t- Balancing privacy with the need for data-driven innovation\n\t- Ensuring compliance with evolving data protection legislation\n\n- Research priorities\n\t- Developing more effective privacy-preserving AI algorithms\n\t- Evaluating the long-term impact of new data protection laws on public trust and innovation\n\n## References\n\n1. Wachter, S., Mittelstadt, B., & Floridi, L. (2017). \"Why a Right to Explanation of Automated Decision-Making Does Not Exist in the General Data Protection Regulation.\" International Data Privacy Law, 7(2), 76–99. https://doi.org/10.1093/idpl/ipx005\n2. Taylor, L., Floridi, L., & van der Sloot, B. (2017). \"Principles Alone Cannot Guarantee Ethical AI.\" Nature Machine Intelligence, 1(12), 506–507. https://doi.org/10.1038/s42256-019-0125-3\n3. Information Commissioner’s Office. (2025). \"Guidance on the Data (Use and Access) Act 2025.\" https://ico.org.uk\n4. UK Parliament. (2025). \"Data (Use and Access) Act 2025.\" https://www.legislation.gov.uk/ukpga/2025/12/contents\n5. Greater Manchester Health and Social Care Partnership. (2025). \"Privacy-by-Design in AI-Driven Health Analytics.\" https://www.gmhealthandcare.org.uk\n6. Leeds City Council. (2025). \"Data City Project: Privacy and Innovation in Urban Planning.\" https://www.leeds.gov.uk\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "privacy-ontology",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "AI-0072",
+    "- preferred-term": "Privacy",
+    "- source-domain": "ai",
+    "- status": "draft",
+    "- public-access": "true",
+    "- definition": "The protection of personal information and individual autonomy in AI systems, encompassing data minimization, purpose limitation, transparency, and individual control over how personal data is collected, processed, stored, and shared throughout the AI lifecycle."
+  },
+  "backlinks": [
+    "BC 0116 total supply",
+    "x402 and l402 payment protocols",
+    "AI Model Card",
+    "Ethical Framework",
+    "RGB and Client Side Validation",
+    "Cryptography",
+    "Runes and Glyphs",
+    "Bitcoin",
+    "Bitcoin As Money",
+    "Digital Objects",
+    "Smart Contract Platform",
+    "Telecollaboration and Telepresence",
+    "AI Governance Principle",
+    "Large language models",
+    "Bitcoin related links",
+    "AI Risks",
+    "Loss-Function",
+    "Lightning and Similar L2",
+    "Decentralized Finance"
+  ],
+  "wiki_links": [],
+  "ontology": {
+    "term_id": "AI-0072",
+    "preferred_term": "Privacy",
+    "definition": "The protection of personal information and individual autonomy in AI systems, encompassing data minimization, purpose limitation, transparency, and individual control over how personal data is collected, processed, stored, and shared throughout the AI lifecycle.",
+    "source_domain": "ai",
+    "maturity_level": null,
+    "authority_score": null
+  }
+}

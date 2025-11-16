@@ -1,0 +1,45 @@
+{
+  "title": "Security Token",
+  "content": "- ### OntologyBlock\n  id:: securitytoken-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0513\n    - filename-history:: [\"BC-0513-securitytoken.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0513\n    - preferred-term:: Security Token\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: A token designed to represent complete or fractional ownership interests in assets and/or entities. Subject to restrictions based on identity, jurisdiction, and asset category, and regulated by securities laws providing investors with entitlements like dividends, profit-sharing, or voting privileges.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:SecurityToken\n    - belongsToDomain:: [[Blockchain]]\n\t- blockchainRelevance:: High\n\t- lastValidated:: 2025-11-14\n\n  - #### Relationships\n    - is-subclass-of:: [[Fungible Token]]\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :SecurityToken))\n      (SubClassOf :SecurityToken :FungibleToken)\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :SecurityToken \"Security Token\"@en)\n      (AnnotationAssertion rdfs:comment :SecurityToken\n        \"A token designed to represent complete or fractional ownership interests in assets and/or entities. Subject to restrictions based on identity, jurisdiction, and asset category, and regulated by securities laws providing investors with entitlements like dividends, profit-sharing, or voting privileges.\"@en)\n      ```\n\n- ## About Security Token\n  A token designed to represent complete or fractional ownership interests in assets and/or entities. Subject to restrictions based on identity, jurisdiction, and asset category, and regulated by securities laws providing investors with entitlements like dividends, profit-sharing, or voting privileges.\n  \n  Represents equity, real estate, debt, or other securities. Standards like ERC-1400 and ERC-3643 tailored for regulatory compliance.\n  \n  ### Examples\n  - Tokenized company shares, real estate tokens, tokenized bonds",
+  "properties": {
+    "id": "securitytoken-ontology",
+    "collapsed": "true",
+    "- domain-prefix": "BC",
+    "- sequence-number": "0513",
+    "- filename-history": "[\"BC-0513-securitytoken.md\"]",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0513",
+    "- preferred-term": "Security Token",
+    "- source-domain": "blockchain",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-11-13",
+    "- definition": "A token designed to represent complete or fractional ownership interests in assets and/or entities. Subject to restrictions based on identity, jurisdiction, and asset category, and regulated by securities laws providing investors with entitlements like dividends, profit-sharing, or voting privileges.",
+    "- maturity": "established",
+    "- source": "Chimera Prime Research",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:SecurityToken",
+    "- belongsToDomain": "[[Blockchain]]",
+    "- blockchainRelevance": "High",
+    "- lastValidated": "2025-11-14",
+    "- is-subclass-of": "[[Fungible Token]]"
+  },
+  "backlinks": [
+    "Token",
+    "E R C3643 Token",
+    "E R C1400 Token"
+  ],
+  "wiki_links": [
+    "Fungible Token",
+    "Blockchain"
+  ],
+  "ontology": {
+    "term_id": "BC-0513",
+    "preferred_term": "Security Token",
+    "definition": "A token designed to represent complete or fractional ownership interests in assets and/or entities. Subject to restrictions based on identity, jurisdiction, and asset category, and regulated by securities laws providing investors with entitlements like dividends, profit-sharing, or voting privileges.",
+    "source_domain": "blockchain",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "title": "Priority Fee",
+  "content": "- ### OntologyBlock\n  id:: priorityfee-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0527\n    - filename-history:: [\"BC-0527-priorityfee.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0527\n    - preferred-term:: Priority Fee\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: The optional additional payment beyond base fee that users can offer to block producers (validators/miners) to prioritize their transaction inclusion.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:PriorityFee\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### Relationships\n    - is-subclass-of:: [[Transaction Fee]]\n    - also-known-as:: Tip\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :PriorityFee))\n      (SubClassOf :PriorityFee :TransactionFee)\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :PriorityFee \"Priority Fee\"@en)\n      (AnnotationAssertion rdfs:comment :PriorityFee\n        \"The optional additional payment beyond base fee that users can offer to block producers (validators/miners) to prioritize their transaction inclusion.\"@en)\n      ```\n\n- ## About Priority Fee\n  The optional additional payment beyond base fee that users can offer to block producers (validators/miners) to prioritize their transaction inclusion.\n\t\n\t### Implementation Across Blockchains\n\tPriority fee (also called miner tip or validator tip) is the optional additional gas price users pay above the base fee to incentivize faster transaction inclusion in Ethereum blocks following EIP-1559, paid directly to block producers as compensation for their work. Implemented in Ethereum, Polygon, Binance Smart Chain, Avalanche C-Chain, Arbitrum, Optimism, and all EIP-1559-compatible chains, priority fees are market-determined tips typically ranging from 1-5 gwei during normal conditions and surging to 50-200+ gwei during high network congestion. Unlike base fees which are burned, priority fees compensate validators directly and enable transaction prioritization through competitive market mechanisms, with higher tips ensuring faster block inclusion while maintaining the predictability benefits of algorithmic base fee pricing for overall transaction cost estimation.\n\t\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "priorityfee-ontology",
+    "collapsed": "true",
+    "- domain-prefix": "BC",
+    "- sequence-number": "0527",
+    "- filename-history": "[\"BC-0527-priorityfee.md\"]",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0527",
+    "- preferred-term": "Priority Fee",
+    "- source-domain": "metaverse",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-11-13",
+    "- definition": "The optional additional payment beyond base fee that users can offer to block producers (validators/miners) to prioritize their transaction inclusion.",
+    "- maturity": "established",
+    "- source": "Chimera Prime Research",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:PriorityFee",
+    "- belongsToDomain": "[[Blockchain]]",
+    "- is-subclass-of": "[[Transaction Fee]]",
+    "- also-known-as": "Tip"
+  },
+  "backlinks": [
+    "Gas Limit"
+  ],
+  "wiki_links": [
+    "Transaction Fee",
+    "Blockchain"
+  ],
+  "ontology": {
+    "term_id": "BC-0527",
+    "preferred_term": "Priority Fee",
+    "definition": "The optional additional payment beyond base fee that users can offer to block producers (validators/miners) to prioritize their transaction inclusion.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

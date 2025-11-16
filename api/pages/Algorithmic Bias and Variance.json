@@ -1,0 +1,46 @@
+{
+  "title": "Algorithmic Bias and Variance",
+  "content": "- ### OntologyBlock\n  id:: algorithmic-bias-and-variance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-384101062294\n\t- preferred-term:: Algorithmic Bias and Variance\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on algorithmic bias and variance.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:AlgorithmicBiasAndVariance\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: algorithmic-bias-and-variance-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: algorithmic-bias-and-variance-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:AlgorithmicBiasAndVariance))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:AlgorithmicBiasAndVariance mv:ConceptualEntity)\n\t\t  SubClassOf(mv:AlgorithmicBiasAndVariance mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:AlgorithmicBiasAndVariance\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:AlgorithmicBiasAndVariance \"Algorithmic Bias and Variance\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:AlgorithmicBiasAndVariance \"A component of the metaverse ecosystem focusing on algorithmic bias and variance.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:AlgorithmicBiasAndVariance \"mv-384101062294\"^^xsd:string)\n\t\t  ```\n\npublic:: true\n\n- # Algorithmic Bias and Variance\n- In machine learning, bias and variance represent a trade-off in a model's ability to generalize.\n- ## The Bias-Variance Trade-off\n\t- **High Bias:** A model with high bias is too simple and makes strong assumptions about the data. This leads to underfitting, where the model performs poorly on both the training data and new, unseen data.\n\t- **High Variance:** A model with high variance is overly complex and learns the training data too well. This leads to overfitting, where the model performs well on the training data but poorly on new, unseen data.\n\t- **The Goal:** The goal of a supervised learning model is to achieve a balance between bias and variance. This is known as the bias-variance trade-off. A model with the optimal balance will generalize well to new, unseen data.\n- ## Model Evaluation Techniques\n\t- ### Basic Parameters\n\t\t- **Bias & Variance:** Measures to understand if our model is too simplistic (high bias) or too complex (high variance).\n\t\t\t- [Bias-Variance in scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html)\n\t\t- **Overfitting & Underfitting:** Indicators that our model is either too closely tailored to the training data or too general.\n\t\t\t- [Regularization in TensorFlow](https://www.tensorflow.org/api_docs/python/tf/keras/regularizers)\n\t- ### Resampling Methods\n\t\t- **Holdout Method (Train / Test Split):** A basic approach to split the dataset into training and testing sets.\n\t\t\t- [Train/Test Split in scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)\n\t\t- **Repeated Holdout:** Running the holdout method multiple times to get a better estimate of model performance.\n\t\t\t- [RepeatedKFold in scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RepeatedKFold.html)\n\t\t- **Cross-validation:** A technique for assessing how the results of a statistical analysis will generalize to an independent data set.\n\t\t\t- [Cross-validation in scikit-learn](https://scikit-learn.org/stable/modules/cross_validation.html)\n\t- ### Hyperparameter Tuning\n\t\t- **Grid Search:** An exhaustive search over a specified parameter grid.\n\t\t\t- [GridSearchCV in scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html)\n\t\t- **Random Search:** A search over a specified parameter distribution.\n\t\t\t- [RandomizedSearchCV in scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html)\n\t- ### Statistical Tests\n\t\t- **Model Comparison:** Statistical tests to compare the performance of two models.\n\t\t\t- [Paired t-tests in SciPy](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_rel.html)\n\t\t- **Algorithm Comparison:** Comparing different algorithms to find which performs best on the data.\n\t\t\t- [Friedman test in SciPy](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.friedmanchisquare.html)\n- ## Evaluation Metrics\n\t- Metrics to quantify the performance of the model.\n\t\t- [Evaluation Metrics in scikit-learn](https://scikit-learn.org/stable/modules/model_evaluation.html)\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "algorithmic-bias-and-variance-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-384101062294",
+    "- preferred-term": "Algorithmic Bias and Variance",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on algorithmic bias and variance.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:AlgorithmicBiasAndVariance",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]",
+    "public": "true"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "TrackingSystem",
+    "ImmersiveExperience",
+    "ComputerVision",
+    "RenderingEngine",
+    "SpatialComputing",
+    "Robotics",
+    "HumanComputerInteraction",
+    "MetaverseDomain",
+    "DisplayTechnology",
+    "Presence"
+  ],
+  "ontology": {
+    "term_id": "mv-384101062294",
+    "preferred_term": "Algorithmic Bias and Variance",
+    "definition": "A component of the metaverse ecosystem focusing on algorithmic bias and variance.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

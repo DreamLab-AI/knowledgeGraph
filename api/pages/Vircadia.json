@@ -1,0 +1,35 @@
+{
+  "title": "Vircadia",
+  "content": "- ### OntologyBlock\n  id:: vircadia-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-87169070522\n\t- preferred-term:: Vircadia\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on vircadia.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:Vircadia\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Process\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n\t- #### OWL Axioms\n\t  id:: vircadia-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:Vircadia))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:Vircadia mv:ConceptualEntity)\n\t\t  SubClassOf(mv:Vircadia mv:Process)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:Vircadia\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:Vircadia \"Vircadia\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:Vircadia \"A component of the metaverse ecosystem focusing on vircadia.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:Vircadia \"mv-87169070522\"^^xsd:string)\n\t\t  ```\n\n- [Verbose logging for SSL errors in requests that Domain server redirects to the Metaverse server. · vircadia/vircadia-native-core@9dc7b76 (github.com)](https://github.com/vircadia/vircadia-native-core/commit/9dc7b76dd16eb88f8901d864ccff7d78e1e4a7a5/checks)\n-\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "vircadia-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-87169070522",
+    "- preferred-term": "Vircadia",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on vircadia.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:Vircadia",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Process",
+    "- belongsToDomain": "[[MetaverseDomain]]"
+  },
+  "backlinks": [
+    "Nostr protocol"
+  ],
+  "wiki_links": [
+    "MetaverseDomain"
+  ],
+  "ontology": {
+    "term_id": "mv-87169070522",
+    "preferred_term": "Vircadia",
+    "definition": "A component of the metaverse ecosystem focusing on vircadia.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

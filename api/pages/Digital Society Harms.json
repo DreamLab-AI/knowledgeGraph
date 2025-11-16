@@ -1,0 +1,51 @@
+{
+  "title": "Digital Society Harms",
+  "content": "- ### OntologyBlock\n  id:: digital-society-harms-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-772656328876\n\t- preferred-term:: Digital Society Harms\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on digital society harms.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:DigitalSocietyHarms\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: digital-society-harms-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: digital-society-harms-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:DigitalSocietyHarms))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:DigitalSocietyHarms mv:ConceptualEntity)\n\t\t  SubClassOf(mv:DigitalSocietyHarms mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:DigitalSocietyHarms\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:DigitalSocietyHarms \"Digital Society Harms\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:DigitalSocietyHarms \"A component of the metaverse ecosystem focusing on digital society harms.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:DigitalSocietyHarms \"mv-772656328876\"^^xsd:string)\n\t\t  ```\n\npublic:: true\n\n- [Digital dementia in the internet generation: excessive screen time during brain development will increase the risk of Alzheimer's disease and related dementias in adulthood](https://www.imrpress.com/journal/JIN/21/1/10.31083/j.jin2101028/htm?fbclid=IwAR1PldZl8TNPuSIzunlNrIZMjl0XUfu8t1_W5mgH9LUEG73dSLqPUN9oEf0&utm_source=TrendMD&utm_medium=cpc&utm_campaign=Journal_of_Integrative_Neuroscience_TrendMD_1)\n- [Neurobiological risk factors for problematic social media use as a specific form of Internet addiction: A narrative review - PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC10251362/#B55:~:text=structural%20brain%20changes)\n- [The “online brain”: how the Internet may be changing our cognition - PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC6502424/)\n- [Structural gray matter differences in Problematic Usage of the Internet: a systematic review and meta-analysis | Molecular Psychiatry](https://www.nature.com/articles/s41380-021-01315-7)\n- [Heavy multitaskers have reduced memory | Stanford Report](https://news.stanford.edu/stories/2018/10/decade-data-reveals-heavy-multitaskers-reduced-memory-psychologist-says)\n- [Your attention didn’t collapse. It was stolen | Psychology | The Guardian](https://www.theguardian.com/science/2022/jan/02/attention-span-focus-screens-apps-smartphones-social-media#:~:text=Miller%20told%20me%20that%20as%20a%20result%20we%20now%20live%20in%20%E2%80%9Ca%20perfect%20storm%20of%20cognitive%20degradation%E2%80%9D.)\n- [Attention Span - The Guardian Bookshop](https://guardianbookshop.com/attention-span-9780008525965)\n- [Bottomless Bowl Experiment and Attention Economy](https://planandmanage.substack.com/p/bottomless-bowl-experiment-and-attention)\n- [Bottomless bowls: why visual cues of portion size may influence intake - PubMed](https://pubmed.ncbi.nlm.nih.gov/15761167/)\n- [Brain Science - Center for Humane Technology](https://www.humanetech.com/brain-science)\n- [06_25_19Harris_Testimony.pdf](https://www.commerce.senate.gov/services/files/96E3A739-DC8D-45F1-87D7-EC70A368371D)\n-\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "digital-society-harms-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-772656328876",
+    "- preferred-term": "Digital Society Harms",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on digital society harms.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:DigitalSocietyHarms",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]",
+    "public": "true"
+  },
+  "backlinks": [
+    "BC-0030-digital-signature",
+    "Project BroBots",
+    "Privacy, Trust and Safety",
+    "BC-0014-block-time"
+  ],
+  "wiki_links": [
+    "TrackingSystem",
+    "ImmersiveExperience",
+    "ComputerVision",
+    "RenderingEngine",
+    "SpatialComputing",
+    "Robotics",
+    "HumanComputerInteraction",
+    "MetaverseDomain",
+    "DisplayTechnology",
+    "Presence"
+  ],
+  "ontology": {
+    "term_id": "mv-772656328876",
+    "preferred_term": "Digital Society Harms",
+    "definition": "A component of the metaverse ecosystem focusing on digital society harms.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

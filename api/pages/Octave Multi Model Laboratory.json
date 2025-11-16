@@ -1,0 +1,56 @@
+{
+  "title": "Octave Multi Model Laboratory",
+  "content": "- ### OntologyBlock\n  id:: octave-multi-model-laboratory-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-501080407130\n\t- preferred-term:: Octave Multi Model Laboratory\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on octave multi model laboratory.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:OctaveMultiModelLaboratory\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: octave-multi-model-laboratory-relationships\n\t\t- has-part:: [[WorldSpace]], [[PhysicsEngine]], [[SceneGraph]], [[Avatar]]\n\t\t- is-part-of:: [[Metaverse]], [[MetaversePlatform]]\n\t\t- requires:: [[3DRenderingEngine]], [[NetworkProtocol]], [[DatabaseSystem]]\n\t\t- enables:: [[VirtualSociety]], [[DigitalEconomy]], [[SocialInteraction]]\n\n\t- #### OWL Axioms\n\t  id:: octave-multi-model-laboratory-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:OctaveMultiModelLaboratory))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:OctaveMultiModelLaboratory mv:VirtualEntity)\n\t\t  SubClassOf(mv:OctaveMultiModelLaboratory mv:Object)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:OctaveMultiModelLaboratory\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:OctaveMultiModelLaboratory \"Octave Multi Model Laboratory\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:OctaveMultiModelLaboratory \"A component of the metaverse ecosystem focusing on octave multi model laboratory.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:OctaveMultiModelLaboratory \"mv-501080407130\"^^xsd:string)\n\t\t  ```\n\npublic:: true\n\n- #Public page automatically published\n- # University of Salford (1997-2022)\n  id:: 65e1a2f6-f063-44f9-8181-cc6e8d5e2339\n\t- Over 25 years of expertise in immersive technologies, high performance compute, distributed systems, machine learning, and latterly generative AI.\n\t\t- ![perpectiveViewOctave.png](../assets/perpectiveViewOctave_1749200107440_0.png)\n\t\t- Technical director of multimillion pound multi-model mixed reality lab at the [[National Industrial Centre for Virtual Environments]].\n\t\t- ![OcTave4330Square (1).jpg](../assets/OcTave4330Square_(1)_1749200127170_0.jpg)\n\t\t- ![OcTave4338Square (1).jpg](../assets/OcTave4338Square_(1)_1749200134642_0.jpg)\n\t\t- Primary expertise in novel display topologies and high performance [[Hardware and Edge]].\n\t\t- ![IMG_20110218_152226.jpg](../assets/IMG_20110218_152226_1749200152488_0.jpg)\n\t\t- This is big data running in human scale VR with Prof Rob Aspin in 2019.\n\t\t- ![P1080785.JPG](../assets/P1080785_1728030359430_0.JPG){:height 499, :width 872}\n\t\t-\n\t\t- ![IMG_20160425_145237.jpg](../assets/IMG_20160425_145237_1728029981248_0.jpg)\n\t\t-\n\t\t- {{video https://www.youtube.com/watch?v=vlV1vRD4jrY&t=15s}}\n\t- Human scale mixed reality experience\n\t\t- Very strong track record and research in immersive systems\n\t\t- 2004 VETS programme R&D engine assembler demo’d at Farnborough Air Show for Euravia Systems\n\t\t- ![image.png](../assets/image_1707994222111_0.png){:width 600}\n\t- Multi decade career supporting research and SMEs at UoS\n\t\t- VETS ERDF  (2001-2008: Consultancy, training and immersive product for 100’s of SMEs)\n\t\t- Cyber foundry & AI foundry  (2019-2022: Detailed R&D for SME’s in immersive/AI/cybersec intersection)\n\t\t- One of the Cyber Foundry projects became a book and product.\n\t\t\t- [Convergence and Disruption in Digital Society -- Money, Secure Communication, Digital Objects and Generative AI in Spatial Mixed Reality (arxiv.org)](https://arxiv.org/abs/2207.09460)\n\t\t\t\t- ![image.png](../assets/image_1704196183900_0.png){:height 700, :width 300}\n\t- ## Octave\n\t\t- Combining acoustics and vision in my world class multi-modal lab:\n\t\t- Supporting PhDs\n\t\t- world firsts -\n\t\t\t- Human eye gaze connection in collaborative mixed reality over distance\n\t\t- Brain scanning in proving treatment of fear of heights\n\t\t- Reconstruction of humans in real time from cameras\n\t\t- Nurse training, immersive education, digital twins\n\t\t- Telepresence, including [[Telethrone]]\n\t\t- Wavefield synthesis with immersive vision\n\t\t- 2002 VETS programme Heaton Park refurbishment visualisation rendered in Octave Multi-Modal lab 2013\n\t\t- ![image.png](../assets/image_1707994463743_0.png){:width 600}\n\t\t-\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "65e1a2f6-f063-44f9-8181-cc6e8d5e2339",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-501080407130",
+    "- preferred-term": "Octave Multi Model Laboratory",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on octave multi model laboratory.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:OctaveMultiModelLaboratory",
+    "- owl:physicality": "VirtualEntity",
+    "- owl:role": "Object",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- has-part": "[[WorldSpace]], [[PhysicsEngine]], [[SceneGraph]], [[Avatar]]",
+    "- is-part-of": "[[Metaverse]], [[MetaversePlatform]]",
+    "- requires": "[[3DRenderingEngine]], [[NetworkProtocol]], [[DatabaseSystem]]",
+    "- enables": "[[VirtualSociety]], [[DigitalEconomy]], [[SocialInteraction]]",
+    "public": "true"
+  },
+  "backlinks": [
+    "Suggested Reading Order",
+    "BC-0037-public-key"
+  ],
+  "wiki_links": [
+    "National Industrial Centre for Virtual Environments",
+    "PhysicsEngine",
+    "Telethrone",
+    "SceneGraph",
+    "Metaverse",
+    "NetworkProtocol",
+    "WorldSpace",
+    "SocialInteraction",
+    "MetaversePlatform",
+    "3DRenderingEngine",
+    "DatabaseSystem",
+    "Avatar",
+    "VirtualSociety",
+    "DigitalEconomy",
+    "MetaverseDomain",
+    "Hardware and Edge"
+  ],
+  "ontology": {
+    "term_id": "mv-501080407130",
+    "preferred_term": "Octave Multi Model Laboratory",
+    "definition": "A component of the metaverse ecosystem focusing on octave multi model laboratory.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

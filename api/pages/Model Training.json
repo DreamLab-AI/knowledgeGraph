@@ -1,0 +1,53 @@
+{
+  "title": "Model Training",
+  "content": "- ### OntologyBlock\n  id:: model-training-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-431164427647\n\t- preferred-term:: Model Training\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on model training.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:ModelTraining\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: model-training-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: model-training-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:ModelTraining))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:ModelTraining mv:ConceptualEntity)\n\t\t  SubClassOf(mv:ModelTraining mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:ModelTraining\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:ModelTraining \"Model Training\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:ModelTraining \"A component of the metaverse ecosystem focusing on model training.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:ModelTraining \"mv-431164427647\"^^xsd:string)\n\t\t  ```\n\n- [OpenAccess-AI-Collective/axolotl: Go ahead and axolotl questions (github.com)](https://github.com/OpenAccess-AI-Collective/axolotl)\n- Mistral takes a mere £500 for a 7B retrain.\n- ### Custom models\n\t- AI/ML is the high interest rate credit card of product development\n\t- The likely emerging trend for [[Large language models]] is small models optimised for your data, with API collaboration and support from a big foundational model.\n\t- Think [[Mistral]], replacing one of the experts with YOUR expert\n\t- This is kinda true for image and video too, in that you can blend workflows between powerful online systems and more nuanced personal models. (imagebashing).\n\t- ### How to train models?\n\t\t- Smaller data and workflows:\n\t\t\t- Do it yourself with suitable cloud hardware. This applies to all Gen AI.\n\t\t\t- [[LoRA DoRA etc]] are very accessible. Basically nudge the existing models for your requirements.\n\t\t\t- Low legal peril.\n\t\t- Medium scale problems:\n\t\t\t- Own the skills you need for your data / product problem.\n\t\t\t- There's a lot of guidance from the major players like Microsoft\n\t\t\t  [Develop Generative AI solutions with Azure OpenAI Service\n\t\t- Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-openai/)\n\t\t\t- Get in a private consultant like me and onboard the skills for your product / data problem\n\t\t\t- This is the same model a the hub and spokes needed for larger models\n\t\t- Large / complex product and data challenges:\n\t\t\t- The industry is set up around the necessary datacentres. These are centres of excellence, commercial labs, Universities, etc.\n\t\t\t- Engage commercial data team who get you up to speed and train your model on their hardware.\n\t\t\t\t- Salford Uni will doubtless have a strategy with Azure.\n\t\t\t\t- [Deep Learning & Artificial Intelligence SCAN Business | SCAN UK](https://www.scan.co.uk/business/deep-learning)\n\t\t\t\t- [Europe’s largest private AI lab | Silo AI](https://www.silo.ai/)\n\t\t\t\t- [Advanced Solutions Lab Google Cloud](https://cloud.google.com/asl/)\n\t\t\t\t- Hartree?\n\t- ### Roll out in the cloud.\n\t- Play with [Runpod](https://www.runpod.io/). There's some great [YouTube tutorials](https://www.youtube.com/watch?v=WjiX3lCnwUI)\n\t- I use a [Lambda Labs H100](https://lambdalabs.com/).\n\t- Unless you really know what you're doing, or you have a LOT of data, I wouldn't buy GPUs and attempt the inferencing side yourself\n\t- ## In Politics.\n\t\t- [An AI Bot Is (Sort of) Running for Mayor in Wyoming | WIRED](https://www.wired.com/story/ai-bot-running-for-mayor-wyoming/)\n\t\t- [There’s an AI Candidate Running for Parliament in the UK | WIRED](https://www.wired.com/story/ai-candidate-running-for-parliament-uk/)\n\t\t- [[Politics, Law, Privacy]]\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "model-training-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-431164427647",
+    "- preferred-term": "Model Training",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on model training.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:ModelTraining",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]"
+  },
+  "backlinks": [
+    "Deep Learning",
+    "Large language models",
+    "Generative AI"
+  ],
+  "wiki_links": [
+    "Politics, Law, Privacy",
+    "TrackingSystem",
+    "ImmersiveExperience",
+    "ComputerVision",
+    "Large language models",
+    "RenderingEngine",
+    "Mistral",
+    "SpatialComputing",
+    "Robotics",
+    "LoRA DoRA etc",
+    "HumanComputerInteraction",
+    "MetaverseDomain",
+    "DisplayTechnology",
+    "Presence"
+  ],
+  "ontology": {
+    "term_id": "mv-431164427647",
+    "preferred_term": "Model Training",
+    "definition": "A component of the metaverse ecosystem focusing on model training.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

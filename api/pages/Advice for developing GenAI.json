@@ -1,0 +1,53 @@
+{
+  "title": "Advice for developing GenAI",
+  "content": "- ### OntologyBlock\n  id:: advice-for-developing-genai-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-804911954155\n\t- preferred-term:: Advice for developing GenAI\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on advice for developing genai.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:AdviceForDevelopingGenai\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: advice-for-developing-genai-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: advice-for-developing-genai-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:AdviceForDevelopingGenai))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:AdviceForDevelopingGenai mv:ConceptualEntity)\n\t\t  SubClassOf(mv:AdviceForDevelopingGenai mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:AdviceForDevelopingGenai\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:AdviceForDevelopingGenai \"Advice for developing GenAI\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:AdviceForDevelopingGenai \"A component of the metaverse ecosystem focusing on advice for developing genai.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:AdviceForDevelopingGenai \"mv-804911954155\"^^xsd:string)\n\t\t  ```\n\n#### **Key Question: Can Gen AI help solve my use case?**\n\n**DO:**\n- **Pick the best model available**: While GPT-4 is a leader for language tasks, for broader GenAI applications, consider the leading models in each category (e.g., vision, speech, etc.). Don't reinvent the wheel.\n\t- [[Midjourney]] v6 for images\n\t- [Suno AI](https://www.suno.ai/) for [[Music and audio]].\n\t- [[Runway]] for [[AI Video]] and [[AI Video]]\n\t- [[OpenAI Whisper]] for speech.\n- **Build a Custom GPT on Test Playground**: Beyond LLMs, experiment with customizable versions of leading models in other domains, like custom vision models on platforms like Azure, AWS, or Google Cloud.\n- **Use public data or generate synthetic with LLMs**: This extends to other AI types as well. Use or generate synthetic data relevant to the task—images for vision AI, sound for audio AI, etc.\n  \n  **DON'T DO:**\n- **Experiment with lower performant models**: This remains a standard guideline across all AI types. Always start with the best available technology to understand the potential ceiling of your application.\n- **Build a polished custom app**: Stay lean and focus on the core functionality of your AI application, whether it's LLM, computer vision, or any other AI technology.\n- **Fine-tune a model**: In early stages, it's more about understanding capabilities and limitations broadly. Specific tuning can come later and might involve more domain-specific models. You **can** start looking into tuning modules like [[LoRA DoRA etc]] and [[qLoRA]] if you understand this stuff well enough.\n-\n- ### Proof of Concept\n- #### **Key Question: Are my stakeholders interested?**\n  \n  **DO:**\n- **Build a simple app (e.g., Streamlit, or [[Vercel]] v0: This applies to all AI applications. Use tools that allow rapid prototyping and sharing with stakeholders, whether for LLMs, computer vision apps, or others.\n- **Experiment with new user experiences**: Regardless of the AI technology, consider how it changes or enhances the user experience. This might involve interactive elements, novel data visualizations, or automating previously manual tasks.\n- **Develop strong product evaluation & testing**: This is critical across all AI domains to ensure the application is reliable, ethical, and effective.\n- **Consult legal experts** You will almost certainly need to get your project signed off by a specialist AI lawyer at some point, because this defers the risk. It's expensive. Make sure you have excellent records of everything you have done.\n-\n- **DON'T DO:**\n- **Build-out a full featured & integrated app**: Keep the proof of concept focused and manageable, whether you're working with natural language understanding, image recognition, or any other AI capability.\n- **Spend too much time on re-usable assets**: Stay agile and ready to pivot or adapt based on feedback and findings.\n- **Ignore LLM risks (e.g., prompt injection, hallucinations)**: Similarly, be aware of and mitigate risks specific to other types of AI, such as adversarial attacks in computer vision or privacy concerns in voice AI.\n-\n- ### Build\n- #### **Key Question: How do I build a robust Gen AI app?**\n  \n  **DO:**\n- **Iterate through implementation techniques**: As with LLMs, try different architectures, data sets, or integration methods relevant to the specific AI type.\n- **Try a cheaper model and possibly fine-tuning**: Once the base functionality is proven, optimize for cost and efficiency, which may include moving to smaller, more specialized models or fine-tuning.\n  \n  **DON'T DO:**\n- **Get stuck with the first implementation attempt**: Be prepared to iterate and evolve as you learn more about the AI's performance and the users' needs.\n- **Forget about data quality (incl. for RAG)**: High-quality, diverse, and relevant data is crucial for training any AI model effectively.\n-\n-\n- ### **Additional Considerations for Generalizing to All GenAI:**\n- **Adaptability**: Different AI fields evolve at different rates. Stay updated with the latest in each specific domain.\n- **Interdisciplinary Integration**: Combining AI types (e.g., LLMs for chatbots with voice recognition) can create more sophisticated solutions.\n- **Ethical and Responsible AI**: Ensure ethical considerations and responsible use are central, especially as models impact different domains differently.\n- **Scalability and Infrastructure**: Different AI models have varying demands on infrastructure. Plan scalability from the start.\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "advice-for-developing-genai-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-804911954155",
+    "- preferred-term": "Advice for developing GenAI",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on advice for developing genai.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:AdviceForDevelopingGenai",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "TrackingSystem",
+    "LoRA DoRA etc",
+    "qLoRA",
+    "ImmersiveExperience",
+    "ComputerVision",
+    "OpenAI Whisper",
+    "RenderingEngine",
+    "AI Video",
+    "SpatialComputing",
+    "Midjourney",
+    "Music and audio",
+    "Robotics",
+    "Runway",
+    "HumanComputerInteraction",
+    "MetaverseDomain",
+    "Vercel",
+    "DisplayTechnology",
+    "Presence"
+  ],
+  "ontology": {
+    "term_id": "mv-804911954155",
+    "preferred_term": "Advice for developing GenAI",
+    "definition": "A component of the metaverse ecosystem focusing on advice for developing genai.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

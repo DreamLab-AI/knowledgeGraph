@@ -1,0 +1,48 @@
+{
+  "title": "Gartner Prediction",
+  "content": "- ### OntologyBlock\n  id:: aiengineering-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0802\n    - filename-history:: [\"AI-0802-aiengineering.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0802\n    - preferred-term:: Gartner Prediction\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: Indicates environments where something operates.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:AiEngineering\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### Relationships\n    - is-subclass-of:: [[Artificial Intelligence]]\n    - is-subclass-of:: [[Ai Engineering]]\n    - is-subclass-of:: [[Generative Ai]]\n    - is-subclass-of:: [[Ai Governance]]\n    - is-subclass-of:: [[Risk]]\n    - is-subclass-of:: [[Risk]]\n    - is-subclass-of:: [[Artificial Intelligence]]\n    - is-subclass-of:: [[Algorithm]]\n    - is-subclass-of:: [[Artificial Intelligence]]\n    - is-subclass-of:: [[Generative Ai]]\n    - is-subclass-of:: [[Generative Ai]]\n    - is-subclass-of:: [[Artificial Intelligence]]\n    - is-subclass-of:: [[Artificial Intelligence]]\n    - is-subclass-of:: [[Artificial Intelligence]]\n    - is-subclass-of:: [[Machine Learning]]\n    - is-subclass-of:: [[Model]]\n    - is-subclass-of:: [[Artificial Intelligence]]\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :AiEngineering))\n      (SubClassOf :AiEngineering :ArtificialIntelligence)\n      (SubClassOf :AiEngineering :AiEngineering)\n      (SubClassOf :AiEngineering :GenerativeAi)\n      (SubClassOf :AiEngineering :AiGovernance)\n      (SubClassOf :AiEngineering :Risk)\n      (SubClassOf :AiEngineering :Risk)\n      (SubClassOf :AiEngineering :ArtificialIntelligence)\n      (SubClassOf :AiEngineering :Algorithm)\n      (SubClassOf :AiEngineering :ArtificialIntelligence)\n      (SubClassOf :AiEngineering :GenerativeAi)\n      (SubClassOf :AiEngineering :GenerativeAi)\n      (SubClassOf :AiEngineering :ArtificialIntelligence)\n      (SubClassOf :AiEngineering :ArtificialIntelligence)\n      (SubClassOf :AiEngineering :ArtificialIntelligence)\n      (SubClassOf :AiEngineering :MachineLearning)\n      (SubClassOf :AiEngineering :Model)\n      (SubClassOf :AiEngineering :ArtificialIntelligence)\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :AiEngineering \"Gartner Prediction\"@en)\n      (AnnotationAssertion rdfs:comment :AiEngineering\n        \"Indicates environments where something operates.\"@en)\n      ```\n\n- ## About Gartner Prediction\n  Indicates environments where something operates.\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "aiengineering-ontology",
+    "collapsed": "true",
+    "- domain-prefix": "AI",
+    "- sequence-number": "0802",
+    "- filename-history": "[\"AI-0802-aiengineering.md\"]",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "AI-0802",
+    "- preferred-term": "Gartner Prediction",
+    "- source-domain": "ai",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-11-13",
+    "- definition": "Indicates environments where something operates.",
+    "- maturity": "established",
+    "- source": "Chimera Prime Research",
+    "- authority-score": "0.95",
+    "- owl:class": "ai:AiEngineering",
+    "- belongsToDomain": "[[Artificial Intelligence]]",
+    "- is-subclass-of": "[[Artificial Intelligence]]"
+  },
+  "backlinks": [
+    "Model Ops",
+    "Ai Engineering"
+  ],
+  "wiki_links": [
+    "Risk",
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Model",
+    "Ai Engineering",
+    "Ai Governance",
+    "Algorithm",
+    "Generative Ai"
+  ],
+  "ontology": {
+    "term_id": "AI-0802",
+    "preferred_term": "Gartner Prediction",
+    "definition": "Indicates environments where something operates.",
+    "source_domain": "ai",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "title": "Metaverse",
+  "content": "- ### OntologyBlock\n  id:: metaverse-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20315\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- public-access:: true\n\n\n\n## Academic Context\n\n- The metaverse represents a convergent network of persistent, synchronous 3D virtual worlds, augmented reality environments, and internet platforms enabling shared spatial computing experiences[6]\n  - Term originated from Neal Stephenson's 1992 science fiction novel *Snow Crash* as a portmanteau of \"meta\" and \"universe\"[6]\n  - Envisioned as a version of the Internet facilitating immersive virtual worlds through VR and AR headsets[6]\n  - Increasingly linked to Web3 technologies and decentralised systems since the early 2020s[6]\n- Core architectural concept integrates interoperable digital assets, persistent identity systems, and real-time social interaction across multiple virtual environments[1][2]\n  - Requires seamless bridging of physical and digital realms through extended reality technologies[2]\n  - Demands robust standardisation frameworks to prevent fragmentation into disconnected silos[4]\n\n## Current Landscape (2025)\n\n- International standardisation efforts\n  - ISO/IEC JTC 1/SC 24 developing foundational metaverse standards, with ISO/IEC DIS 24931-1 currently under development to define terms, terminology, and core concepts[5]\n  - ISO/IEC PWI 24931-5 establishing information models for metaverse services, including semantic organisation and interfaces for platforms, virtual worlds, avatars, sensors, and real-world interaction[1]\n  - Korea's Electronics and Telecommunications Research Institute (ETRI) chairs the newly formed ISO/IEC JTC 1/SC 6 Metaverse Advisory Group, established June 2025, guiding international standardisation for metaverse communications[2]\n- Industry coordination mechanisms\n  - Metaverse Standards Forum incorporated as independent non-profit consortium, providing venue for standards organisations and companies to foster interoperability standards[4]\n  - Forum maintains active working groups addressing 3D asset interoperability (USD and glTF), AI integration, accessibility, digital fashion wearables, privacy and cybersecurity, and real/virtual world integration[4]\n  - Parallel efforts from IEEE SA, ITU-T, and industry-led groups including Open Metaverse Alliance (OMA3) creating competitive standardisation landscape[2]\n- Technical infrastructure requirements\n  - Foundational technologies include 3D rendering engines, distributed computing architectures, real-time synchronisation protocols, and content distribution networks[1]\n  - glTF has become the de facto standard for 3D asset delivery on the web, achieving ISO standardisation as ISO/IEC 12113:2022[3]\n  - Extended reality (VR/AR/MR) technologies integrated with edge and cloud computing platforms, supported by AI and semantic information processing[1]\n- Persistent challenges\n  - Information privacy, user addiction, and user safety concerns stemming from social media and video game industry challenges[6]\n  - Fragmentation risks without widely accepted interoperability standards across virtual environments[2]\n  - Hype-driven exaggeration of development progress by commercial entities for public relations purposes[6]\n\n## Research & Literature\n\n- Foundational standards documentation\n  - ISO/IEC JTC 1/SC 24/WG 6 activity on X3D (3D graphics standards)[3]\n  - IEEE 1589-2020 proposes integrated conceptual model describing interactions between physical world, user, and digital information, with data models binding to XML and JSON[7]\n  - ISO/IEC 18039:2019 defines scope, key concepts, terms, and generalised system architecture for mixed and augmented reality applications[7]\n  - ISO/IEC 18040:2019 specifies reference model and base components for representing and controlling layered augmented environments in MAR scenes[7]\n  - ISO/IEC 18520:2019 identifies reference framework for benchmarking vision-based spatial registration and tracking methods[7]\n  - ISO/IEC 23488:2022 specifies image-based representation models for target objects and environments[7]\n- Strategic standardisation initiatives\n  - Korea's proposal establishing Metaverse Advisory Group reflects decades of ICT standards contributions spanning telecommunications, broadcasting, and satellite technologies[2]\n  - Standardisation efforts positioned as strategic foothold in contested technology frontier with significant market influence implications[2]\n\n## UK Context\n\n- British Standards Institution (BSI) participation in ISO/IEC 24931-1 development through BS EN ISO/IEC 24931-1 project, providing UK input to foundational metaverse terminology and concepts[8]\n- UK involvement in Metaverse Standards Forum working groups, particularly through academic and technology sector representatives\n- Limited specific North England innovation hub documentation in current standardisation literature, though regional technology clusters participate in broader UK standards development processes\n\n## Future Directions\n\n- Standardisation maturation\n  - ISO/IEC 24931 series expected to progress from draft to formal international standards, establishing baseline interoperability requirements[5]\n  - Metaverse Standards Forum working groups anticipated to produce pragmatic, action-based interoperability specifications across 3D asset formats, avatar systems, and cross-world portability[4]\n- Emerging technical priorities\n  - AI integration within metaverse environments requiring standardised semantic information processing frameworks[1]\n  - Real/virtual world integration standards addressing sensor data, actuator control, and bidirectional interaction protocols[1]\n  - Decentralised Web3 services and blockchain-based digital ownership mechanisms requiring standardisation[4]\n- Anticipated challenges\n  - Balancing interoperability standardisation with proprietary competitive advantage across major platform operators\n  - Establishing privacy and cybersecurity standards without stifling innovation in emerging technologies\n  - Achieving consensus across 169+ ISO member nations on fundamental metaverse concepts and terminology\n\n## References\n\n1. Metaverse Alliance. (2025). Metaverse Standards Development and Collaboration. ISO/IEC JTC 1 Technical Documentation. https://metaversealliance.or.kr/editor/file/73b8b9ea/download/9262ee70-57c3-477b-b1c5-565898bcaac2\n\n2. Highways Today. (2025, August 25). Korea Takes the Helm in Setting Global Metaverse Standards. Retrieved from https://highways.today/2025/08/25/metaverse-standards/\n\n3. IEEE Metaverse Reality. (2024, June). Have I Got Some Metaverse Standards for You. IEEE Standards Newsletter. https://metaversereality.ieee.org/publications/newsletter/june-2024/have-i-got-some-metaverse-standards-for-you/\n\n4. Metaverse Standards Forum. (2025). Building an Open Metaverse. https://metaverse-standards.org\n\n5. International Organization for Standardization. (2025). ISO/IEC DIS 24931-1 - Information Technology — Metaverse — Part 1. https://www.iso.org/standard/88529.html\n\n6. Wikipedia. (2025). Metaverse. Retrieved from https://en.wikipedia.org/wiki/Metaverse\n\n7. ANSI Blog. (2025). Metaverse Technology: Augmented Reality Standards. https://blog.ansi.org/ansi/metaverse-technology-augmented-reality-standards/\n\n8. British Standards Institution. (2024). BS EN ISO/IEC 24931-1 Project. Standards Development. https://standardsdevelopment.bsigroup.com/projects/2024-01958\n\n## Metadata\n\n- Last Updated: 2025-11-12\n- Review Status: Comprehensive editorial review with current standardisation landscape integration\n- Verification: Academic and standards sources verified against November 2025 developments\n- Regional Context: UK and North England context integrated where substantively relevant to standardisation efforts",
+  "properties": {
+    "id": "metaverse-ontology",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "20315",
+    "- source-domain": "metaverse",
+    "- status": "draft",
+    "- public-access": "true"
+  },
+  "backlinks": [
+    "Metaverse governance and safeguarding",
+    "Human-Centred Values",
+    "Game Engine",
+    "ETSI_Domain_Virtual_Society",
+    "Metaverse Infrastructure",
+    "Recent Projects",
+    "Octave Multi Model Laboratory",
+    "AI Model Card",
+    "Avatar Wearable",
+    "Intelligent Npc",
+    "TELE-CONV-001-metaverse-telepresence-bridge",
+    "Virtual World Traversal",
+    "AI Agent System",
+    "Metaverse Content Pipeline",
+    "ETSI Domain Virtual Society",
+    "Metaverse Safety Protocol",
+    "Variational Autoencoders",
+    "TELE-0000-telepresence-domain",
+    "Digital Objects",
+    "Telecollaboration and Telepresence",
+    "Landvættir",
+    "Humanity Attestation",
+    "Proof Of Authority",
+    "Physics-Based Animation",
+    "Fashion",
+    "Loyalty Token",
+    "Avatar Behavior",
+    "National Industrial Centre for Virtual Environments",
+    "Lightning and Similar L2"
+  ],
+  "wiki_links": [],
+  "ontology": {
+    "term_id": "20315",
+    "preferred_term": "Metaverse",
+    "definition": "",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": null
+  }
+}

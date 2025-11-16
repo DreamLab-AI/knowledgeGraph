@@ -1,0 +1,45 @@
+{
+  "title": "ECDSA",
+  "content": "- ### OntologyBlock\n  id:: ecdsa-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0040\n    - preferred-term:: ECDSA\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Elliptic Curve Digital Signature Algorithm within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:ECDSA\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n    - implementedInLayer:: [[SecurityLayer]]\n\n  - #### Relationships\n    id:: ecdsa-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[CryptographicPrimitive]]\n\n  - #### OWL Axioms\n    id:: ecdsa-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0040>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:ECDSA))\n\n  ## Subclass Relationships\n  SubClassOf(:ECDSA :CryptographicPrimitive)\n  SubClassOf(:ECDSA :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:ECDSA\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:ECDSA\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :ECDSA \"BC-0040\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :ECDSA \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :ECDSA \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :ECDSA :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :ECDSA :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :ECDSA \"ECDSA\"@en)\n  AnnotationAssertion(rdfs:comment :ECDSA\n    \"Elliptic Curve Digital Signature Algorithm\"@en)\n  AnnotationAssertion(dct:description :ECDSA\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :ECDSA \"BC-0040\")\n  AnnotationAssertion(:priority :ECDSA \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :ECDSA \"cryptographic-foundations\"@en)\n)\n      ```\n\n- ## About ECDSA\n  id:: ecdsa-about\n\n  - Elliptic Curve Digital Signature Algorithm within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n  -\n  - ### Key Characteristics\n    id:: ecdsa-characteristics\n    - 1. **Definitional Property**: Core defining characteristic\n    - 2. **Functional Property**: Operational behavior\n    - 3. **Structural Property**: Compositional elements\n    - 4. **Security Property**: Security guarantees provided\n    - 5. **Performance Property**: Efficiency considerations\n  -\n  - ### Technical Components\n    id:: ecdsa-components\n    - **Implementation**: How concept is realized technically\n    - **Verification**: Methods for validating correctness\n    - **Interaction**: Relationships with other components\n    - **Constraints**: Technical limitations and requirements\n  -\n  - ### Use Cases\n    id:: ecdsa-use-cases\n    - **1. Core Blockchain Operation**\n    - **Application**: Fundamental blockchain functionality\n    - **Example**: Practical implementation in major blockchains\n    - **Requirements**: Technical prerequisites\n    - **Benefits**: Value provided to blockchain systems\n  -\n  - ### Standards & References\n    id:: ecdsa-standards\n    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies\n    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies\n    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies\n  -\n\n\t- ## ECDSA / SHA256 / secp256k1\n\t\t- These technologies tend to use the same underpinning [elliptic curvecryptography](https://curves.ulfheim.net/), and it makes sense to unpackthis here just once, only in the context of Bitcoin, as this will be themain focus of our attention.\n\t\t\t\t- Academic journals like Journal of Cryptography, Ledger, and Journal of Cryptographic Engineering have also published peer-reviewed papers. The impact factors are not as high as broader CS journals however.\n\t\t\t\t- Bitcoin Improvement Proposals (BIPs) also undergo scrutiny by expert reviewers.\n\t\t\t\t- There is still room for more peer review in top journals, but publication venue credibility is generally decent.",
+  "properties": {
+    "id": "ecdsa-standards",
+    "collapsed": "true",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0040",
+    "- preferred-term": "ECDSA",
+    "- source-domain": "blockchain",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-10-28",
+    "- definition": "Elliptic Curve Digital Signature Algorithm within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "- maturity": "mature",
+    "- source": "[[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:ECDSA",
+    "- owl:physicality": "VirtualEntity",
+    "- owl:role": "Object",
+    "- owl:inferred-class": "bc:VirtualObject",
+    "- belongsToDomain": "[[CryptographicDomain]]",
+    "- implementedInLayer": "[[SecurityLayer]]",
+    "- is-subclass-of": "[[Blockchain Entity]], [[CryptographicPrimitive]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "Blockchain Entity",
+    "ISO/IEC 23257:2021",
+    "CryptographicPrimitive",
+    "NIST NISTIR",
+    "SecurityLayer",
+    "CryptographicDomain",
+    "IEEE 2418.1"
+  ],
+  "ontology": {
+    "term_id": "BC-0040",
+    "preferred_term": "ECDSA",
+    "definition": "Elliptic Curve Digital Signature Algorithm within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "source_domain": "blockchain",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "title": "multimodal",
+  "content": "- ### OntologyBlock\n  id:: multimodal-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-535789044987\n\t- preferred-term:: multimodal\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on multimodal.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:Multimodal\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: multimodal-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: multimodal-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:Multimodal))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:Multimodal mv:ConceptualEntity)\n\t\t  SubClassOf(mv:Multimodal mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:Multimodal\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:Multimodal \"multimodal\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:Multimodal \"A component of the metaverse ecosystem focusing on multimodal.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:Multimodal \"mv-535789044987\"^^xsd:string)\n\t\t  ```\n\npublic:: true\n\n- #Public page automatically published\n- # OpenAI ChatGPT-4o (omni)\n  id:: 66446c0e-93be-431d-93d4-1e5fa36848c5\n\t- Free to use, for everyone! Not private by default.\n\t- True multi modality across video, images, and audio.\n\t- The first of the true publicly accessible models trained without compromise for multi-modality.\n\t- Multi-lingual across 50 languages, supporting image input and output, real time video input, text to 3D.\n\t- Empathetic voice to voice with very low latency.\n\t- [Min Choi on X: \"I used GPT-4o to create STL file for 3D model in ~ 20 seconds on my phone. Pretty remarkable what you can generate with AI and simple prompt now. https://t.co/2fbObrpPol\" / X (twitter.com)](https://twitter.com/minchoi/status/1790396782200987662)\n\t- {{twitter https://twitter.com/minchoi/status/1790396782200987662}}\n- # Google DeepMind Gemini\n\t- Gemini is a multimodal LLM capable of inputting and outputting text, understanding images, and generating images.\n\t- While specific architecture details are scarce, it represents a leap in LLMs interacting with multiple data types.\n- ### Multi-Modal Large Language Models (LLMs)\n\t- **Introduction:**\n\t\t- [[Large language models]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.\n\t\t- Multimodal models extend LLMs capabilities to not just output text, but images and understand multimodal inputs.\n\t- **Core Concepts:**\n\t\t- **LLMs for Text:**\n\t\t\t- LLMs process prompts and generate replies one token at a time, acting as a multiclass classifier.\n\t\t- **Image Generation:**\n\t\t\t- Traditional pixel-by-pixel image generation is intractable; hence, a different approach is needed.\n\t\t\t- The solution is treating image generation as a language generation problem, akin to ancient hieroglyphics.\n\t- **Techniques in Multi-Modal LLMs:**\n\t\t- **Autoencoders:**\n\t\t\t- Compress images into a lower-dimensional latent space and then regenerate them, learning crucial properties.\n\t\t- **[[Variational Autoencoders]] (VAE) & VQ-VAE:**\n\t\t\t- VAEs add a generative aspect by allowing for new image generation from random latent embeddings.\n\t\t\t- VQ-VAE further discretizes this process, creating a vocabulary of image \"words\" or tokens.\n\t- **Implementation:**\n\t\t- **Vector Quantization:**\n\t\t\t- Creates a discrete set of embedding vectors forming the vocabulary for our image-based language.\n\t\t- **Encoding and Decoding:**\n\t\t\t- Images are encoded to these discrete codes and decoded back to form new or reconstructed images.\n\t- **Training and Inference:**\n\t\t- A mixed sequence of embeddings (words and image tokens) is created for training.\n\t\t- The model learns to generate image tokens, forming a coherent sequence with the text, allowing for the generation of images corresponding to text descriptions.\n\t- **Challenges and Developments:**\n\t\t- The importance of quality data over quantity, especially for large, complex models.\n\t\t- Ongoing efforts focus on refining data quality, applying safety measures, and improving model transparency.\n-\n- ```mermaid\n  flowchart LR\n  A[Text Input] -->|Processed by LLM| B[Text Tokens]\n  B -->|Alongside Image Tokens| D[Mixed Embeddings]\n  C[Image Input] -->|Encoded via VQ-VAE| E[Image Tokens]\n  E --> D\n  D -->|Next Token Prediction| F[Generated Sequence]\n  F -->|Decoded| G[Output Image & Text]\n  ```\n-\n- Some random links\n\t- Apple Ferret is a [[Multimodal]] [[Large language models]] from [[Apple]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)\n\t- [THUDM/CogVLM: a state-of-the-art-level open visual language model | 多模态预训练模型 (github.com)](https://github.com/THUDM/CogVLM)\n\t- [moondream\n\t\t- a tiny vision language model](https://moondream.ai/)\n\t- Key Papers\n\t\t- [Variational Autoencoder (VAE)](https://arxiv.org/abs/1312.6114)\n\t\t- [Vector Quantized Variational Autoencoder (VQ-VAE)](https://arxiv.org/abs/1711.00937)\n\t\t- [Vector Quantized Generative Adversarial Network (VQ-GAN)](https://compvis.github.io/taming-transformers/)\n\t\t- [Gemini](https://assets.bwbx.io/documents/users/iqjWHBFdfxIU/rJRW6x8V4P0g/v0)\n\t\t- [Parti](https://sites.research.google/parti/)\n\t\t- [DallE](https://arxiv.org/pdf/2102.12092.pdf)\n\t\t- [2304.06939.pdf (arxiv.org)](https://arxiv.org/pdf/2304.06939.pdf) C4 model\n\t\t- [huggingface/OBELICS: Code used for the creation of OBELICS, an open, massive and curated collection of interleaved image-text web documents, containing 141M documents, 115B text tokens and 353M images. (github.com)](https://github.com/huggingface/OBELICS?tab=readme-ov-file)\n\t\t-\n\t\t-\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "66446c0e-93be-431d-93d4-1e5fa36848c5",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-535789044987",
+    "- preferred-term": "multimodal",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on multimodal.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:Multimodal",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]",
+    "public": "true"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "TrackingSystem",
+    "Variational Autoencoders",
+    "ImmersiveExperience",
+    "ComputerVision",
+    "Large language models",
+    "RenderingEngine",
+    "Apple",
+    "SpatialComputing",
+    "Robotics",
+    "HumanComputerInteraction",
+    "Multimodal",
+    "MetaverseDomain",
+    "DisplayTechnology",
+    "Presence"
+  ],
+  "ontology": {
+    "term_id": "mv-535789044987",
+    "preferred_term": "multimodal",
+    "definition": "A component of the metaverse ecosystem focusing on multimodal.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

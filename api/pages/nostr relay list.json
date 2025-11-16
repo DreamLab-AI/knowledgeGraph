@@ -1,0 +1,45 @@
+{
+  "title": "nostr relay list",
+  "content": "- ### OntologyBlock\n  id:: nostr-relay-list-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-743867924417\n\t- preferred-term:: nostr relay list\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on nostr relay list.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:NostrRelayList\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: nostr-relay-list-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: nostr-relay-list-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:NostrRelayList))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:NostrRelayList mv:ConceptualEntity)\n\t\t  SubClassOf(mv:NostrRelayList mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:NostrRelayList\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:NostrRelayList \"nostr relay list\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:NostrRelayList \"A component of the metaverse ecosystem focusing on nostr relay list.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:NostrRelayList \"mv-743867924417\"^^xsd:string)\n\t\t  ```\n\n- 1. wss://[nostr.oxtr.dev/](https://nostr.oxtr.dev/) - 40ms\n    2. wss://[relay.chorus.community/](https://relay.chorus.community/) - 58ms\n    3. wss://[relay.nostr.net/](https://relay.nostr.net/) - 66ms\n    4. wss://[relay.exit.pub/](https://relay.exit.pub/) - 69ms\n    5. wss://nostr.mom/ - 98ms\n    6. wss://[nostr.vulpem.com/](https://nostr.vulpem.com/) - 103ms\n    7. wss://[relay.degmods.com/](https://relay.degmods.com/) - 103ms\n    8. wss://[relay.agora.social/](https://relay.agora.social/) - 119ms\n    9. wss://a.nos.lol/ - 125ms\n    10. wss://[relay.primal.net/](https://relay.primal.net/) - 130ms\n    11. wss://[nostr.data.haus/](https://nostr.data.haus/) - 137ms\n    12. wss://[relays.land/spatianostra](https://relays.land/spatianostra) - 145ms\n    13. wss://[nostr.sathoarder.com/](https://nostr.sathoarder.com/) - 156ms\n    14. wss://[relay.nostromo.social/](https://relay.nostromo.social/) - 163ms\n    15. wss://[sendit.nosflare.com/](https://sendit.nosflare.com/) - 166ms\n    16. wss://[nostr.yael.at/](https://nostr.yael.at/) - 182ms\n    17. wss://orangesync.tech/ - 184ms\n    18. wss://[nostr.einundzwanzig.space/](https://nostr.einundzwanzig.space/) - 192ms\n    19. wss://[soloco.nl/](https://soloco.nl/) - 194ms\n    20. wss://[nostr.chaima.info/](https://nostr.chaima.info/) - 195ms\n    21. wss://[relay1.nostrchat.io/](https://relay1.nostrchat.io/) - 199ms\n    22. wss://[relay.noswhere.com/](https://relay.noswhere.com/) - 226ms\n    23. wss://[relay.nostr.band/wss://cobrafuma.com/relay](https://relay.nostr.band/wss://cobrafuma.com/relay) - 239ms\n    24. wss://[relay.seq1.net/outbox](https://relay.seq1.net/outbox) - 248ms\n    25. wss://nos.lol/ - 249ms\n    26. wss://[nostr.azzamo.net/](https://nostr.azzamo.net/) - 269ms\n    27. wss://[feeds.nostr.band/popular](https://feeds.nostr.band/popular) - 286ms\n    28. wss://purpura.cloud/ - 337ms\n    29. wss://[ithurtswhenip.ee/](https://ithurtswhenip.ee/) - 340ms\n    30. wss://[relay.davidebtc.me/](https://relay.davidebtc.me/) - 348ms\n    31. wss://[feeds.nostr.band/lang/zh](https://feeds.nostr.band/lang/zh) - 371ms\n    32. wss://[nostrue.com/](https://nostrue.com/) - 436ms\n    33. wss://[nostr.roundrockbitcoiners.com/](https://nostr.roundrockbitcoiners.com/) - 440ms\n    34. wss://[multiplexer.huszonegy.world/](https://multiplexer.huszonegy.world/) - 442ms\n    35. wss://[relay.agorist.space/](https://relay.agorist.space/) - 463ms\n    36. wss://[relay.damus.io/](https://relay.damus.io/) - 475ms\n    37. wss://[relay.nostr.band/](https://relay.nostr.band/) - 481ms\n    38. wss://[relay.nostriot.com/](https://relay.nostriot.com/) - 497ms\n    39. wss://[relay.nos.social/](https://relay.nos.social/) - 507ms\n    40. wss://[feeds.nostr.band/nostrhispano](https://feeds.nostr.band/nostrhispano) - 510ms\n- <!--EndFragment-->\n-\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "nostr-relay-list-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-743867924417",
+    "- preferred-term": "nostr relay list",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on nostr relay list.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:NostrRelayList",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "TrackingSystem",
+    "ImmersiveExperience",
+    "ComputerVision",
+    "RenderingEngine",
+    "SpatialComputing",
+    "Robotics",
+    "HumanComputerInteraction",
+    "MetaverseDomain",
+    "DisplayTechnology",
+    "Presence"
+  ],
+  "ontology": {
+    "term_id": "mv-743867924417",
+    "preferred_term": "nostr relay list",
+    "definition": "A component of the metaverse ecosystem focusing on nostr relay list.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

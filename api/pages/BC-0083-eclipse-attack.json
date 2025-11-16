@@ -1,0 +1,45 @@
+{
+  "title": "Eclipse Attack",
+  "content": "- ### OntologyBlock\n  id:: eclipse-attack-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0083\n    - preferred-term:: Eclipse Attack\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Node isolation attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:EclipseAttack\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n    - implementedInLayer:: [[SecurityLayer]]\n\n  - #### Relationships\n    id:: eclipse-attack-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[NetworkComponent]]\n\n  - #### OWL Axioms\n    id:: eclipse-attack-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0083>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:EclipseAttack))\n\n  ## Subclass Relationships\n  SubClassOf(:EclipseAttack :NetworkComponent)\n  SubClassOf(:EclipseAttack :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:EclipseAttack\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:EclipseAttack\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :EclipseAttack \"BC-0083\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :EclipseAttack \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :EclipseAttack \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :EclipseAttack :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :EclipseAttack :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :EclipseAttack \"Eclipse Attack\"@en)\n  AnnotationAssertion(rdfs:comment :EclipseAttack\n    \"Node isolation attack\"@en)\n  AnnotationAssertion(dct:description :EclipseAttack\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :EclipseAttack \"BC-0083\")\n  AnnotationAssertion(:priority :EclipseAttack \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :EclipseAttack \"network-security\"@en)\n)\n      ```\n\n- ## About Eclipse Attack\n  id:: eclipse-attack-about\n\n  - Node isolation attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n  -\n  - ### Key Characteristics\n    id:: eclipse-attack-characteristics\n    - 1. **Definitional Property**: Core defining characteristic\n    - 2. **Functional Property**: Operational behavior\n    - 3. **Structural Property**: Compositional elements\n    - 4. **Security Property**: Security guarantees provided\n    - 5. **Performance Property**: Efficiency considerations\n  -\n  - ### Technical Components\n    id:: eclipse-attack-components\n    - **Implementation**: How concept is realized technically\n    - **Verification**: Methods for validating correctness\n    - **Interaction**: Relationships with other components\n    - **Constraints**: Technical limitations and requirements\n  -\n  - ### Use Cases\n    id:: eclipse-attack-use-cases\n    - **1. Core Blockchain Operation**\n    - **Application**: Fundamental blockchain functionality\n    - **Example**: Practical implementation in major blockchains\n    - **Requirements**: Technical prerequisites\n    - **Benefits**: Value provided to blockchain systems\n  -\n  - ### Standards & References\n    id:: eclipse-attack-standards\n    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies\n    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies\n    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies\n  -",
+  "properties": {
+    "id": "eclipse-attack-standards",
+    "collapsed": "true",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0083",
+    "- preferred-term": "Eclipse Attack",
+    "- source-domain": "blockchain",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-10-28",
+    "- definition": "Node isolation attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "- maturity": "mature",
+    "- source": "[[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:EclipseAttack",
+    "- owl:physicality": "VirtualEntity",
+    "- owl:role": "Object",
+    "- owl:inferred-class": "bc:VirtualObject",
+    "- belongsToDomain": "[[CryptographicDomain]]",
+    "- implementedInLayer": "[[SecurityLayer]]",
+    "- is-subclass-of": "[[Blockchain Entity]], [[NetworkComponent]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "Blockchain Entity",
+    "ISO/IEC 23257:2021",
+    "NIST NISTIR",
+    "SecurityLayer",
+    "CryptographicDomain",
+    "IEEE 2418.1",
+    "NetworkComponent"
+  ],
+  "ontology": {
+    "term_id": "BC-0083",
+    "preferred_term": "Eclipse Attack",
+    "definition": "Node isolation attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "source_domain": "blockchain",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

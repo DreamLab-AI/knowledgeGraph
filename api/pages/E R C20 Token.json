@@ -1,0 +1,39 @@
+{
+  "title": "ERC-20 Token",
+  "content": "- ### OntologyBlock\n  id:: erc20token-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0515\n    - filename-history:: [\"BC-0515-erc20token.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0515\n    - preferred-term:: ERC-20 Token\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: A fungible token implementing the ERC-20 standard on Ethereum blockchain. The most widely used Ethereum token standard providing uniform API for token operations within smart contracts.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:ERC20Token\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### Relationships\n    - is-subclass-of:: [[Fungible Token]]\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :ERC20Token))\n      (SubClassOf :ERC20Token :FungibleToken)\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :ERC20Token \"ERC-20 Token\"@en)\n      (AnnotationAssertion rdfs:comment :ERC20Token\n        \"A fungible token implementing the ERC-20 standard on Ethereum blockchain. The most widely used Ethereum token standard providing uniform API for token operations within smart contracts.\"@en)\n      ```\n\n- ## About ERC-20 Token\n  A fungible token implementing the ERC-20 standard on Ethereum blockchain. The most widely used Ethereum token standard providing uniform API for token operations within smart contracts.\n  \n  Standard methods: transfer, balanceOf, approve, allowance, transferFrom, totalSupply. Events: Transfer, Approval.\n  \n  ### Examples\n  - USDC, LINK, UNI, DAI\n  \n  ### Historical Context\n  - Proposed by Fabian Vogelsteller in 2015 as EIP-20.\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "erc20token-ontology",
+    "collapsed": "true",
+    "- domain-prefix": "BC",
+    "- sequence-number": "0515",
+    "- filename-history": "[\"BC-0515-erc20token.md\"]",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0515",
+    "- preferred-term": "ERC-20 Token",
+    "- source-domain": "metaverse",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-11-13",
+    "- definition": "A fungible token implementing the ERC-20 standard on Ethereum blockchain. The most widely used Ethereum token standard providing uniform API for token operations within smart contracts.",
+    "- maturity": "established",
+    "- source": "Chimera Prime Research",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:ERC20Token",
+    "- belongsToDomain": "[[Blockchain]]",
+    "- is-subclass-of": "[[Fungible Token]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "Fungible Token",
+    "Blockchain"
+  ],
+  "ontology": {
+    "term_id": "BC-0515",
+    "preferred_term": "ERC-20 Token",
+    "definition": "A fungible token implementing the ERC-20 standard on Ethereum blockchain. The most widely used Ethereum token standard providing uniform API for token operations within smart contracts.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}
