@@ -28,22 +28,22 @@
     "AI Governance Principle"
   ],
   "wiki_links": [
-    "OECD AI Principles",
-    "Alternative Dispute Resolution",
-    "GDPR Article 22",
     "Remedy Implementation",
-    "Judicial Review",
-    "EU AI Act",
-    "Ombudsman Service",
-    "Explanation Provision",
     "Human Review Process",
-    "Algorithmic Accountability Act",
-    "AIEthicsDomain",
     "ConceptualLayer",
+    "Algorithmic Accountability Act",
+    "Ombudsman Service",
     "AI Governance Principle",
-    "Decision Appeal",
+    "EU AI Act",
+    "AIEthicsDomain",
+    "Complaint Mechanism",
+    "Alternative Dispute Resolution",
     "ISO/IEC 42001",
-    "Complaint Mechanism"
+    "Judicial Review",
+    "Decision Appeal",
+    "OECD AI Principles",
+    "GDPR Article 22",
+    "Explanation Provision"
   ],
   "ontology": {
     "term_id": "PC-0014",

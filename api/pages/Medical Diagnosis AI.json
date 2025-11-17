@@ -15,9 +15,9 @@
   "backlinks": [],
   "wiki_links": [
     "Medical AI",
-    "MetaverseDomain",
     "Clinical Decision Support",
-    "Treatment Planning AI"
+    "Treatment Planning AI",
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "AI-0343",

@@ -29,22 +29,22 @@
     "AI Governance Principle"
   ],
   "wiki_links": [
-    "ACM Code of Ethics",
+    "ConceptualLayer",
     "IEEE Ethically Aligned Design",
+    "Montreal Declaration for Responsible AI",
+    "AI Governance Principle",
     "Fairness",
     "Transparency",
-    "Montreal Declaration for Responsible AI",
     "Accountability",
-    "Beneficence",
-    "Non-maleficence",
     "Justice",
-    "Privacy",
-    "Autonomy",
-    "Human Dignity",
     "AIEthicsDomain",
-    "ConceptualLayer",
-    "AI Governance Principle",
-    "Asilomar AI Principles"
+    "Autonomy",
+    "Non-maleficence",
+    "Asilomar AI Principles",
+    "ACM Code of Ethics",
+    "Privacy",
+    "Beneficence",
+    "Human Dignity"
   ],
   "ontology": {
     "term_id": "PC-0011",

@@ -31,19 +31,19 @@
   ],
   "wiki_links": [
     "Transaction Fee Economics",
-    "Gas Mechanism",
-    "Mechanism Design Theory",
-    "Blockchain Entity",
-    "Staking Reward",
-    "Slashing",
     "Fee Burning",
-    "Block Reward",
-    "Liquidity Mining",
     "ConceptualLayer",
+    "Liquidity Mining",
     "Token",
+    "Blockchain Entity",
+    "Transaction Fee",
     "BlockchainDomain",
+    "Slashing",
+    "Staking Reward",
+    "Mechanism Design Theory",
+    "Gas Mechanism",
     "Tokenomics Research",
-    "Transaction Fee"
+    "Block Reward"
   ],
   "ontology": {
     "term_id": "PC-0005",

@@ -29,19 +29,19 @@
     "Metaverse Ontology"
   ],
   "wiki_links": [
-    "DisplayTechnology",
-    "Google",
-    "MetaverseDomain",
+    "RenderingEngine",
+    "Robotics",
     "ComputerVision",
-    "TrackingSystem",
     "HumanComputerInteraction",
     "Large language models",
-    "Robotics",
-    "Presence",
     "OpenAI",
+    "TrackingSystem",
+    "ImmersiveExperience",
+    "DisplayTechnology",
     "SpatialComputing",
-    "RenderingEngine",
-    "ImmersiveExperience"
+    "Google",
+    "Presence",
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "mv-587565214449",

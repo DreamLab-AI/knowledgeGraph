@@ -32,19 +32,19 @@
     "BC-0014-block-time"
   ],
   "wiki_links": [
-    "DisplayTechnology",
-    "Education and AI",
-    "MetaverseDomain",
+    "RenderingEngine",
+    "Robotics",
     "ComputerVision",
-    "TrackingSystem",
     "HumanComputerInteraction",
     "Large language models",
-    "Robotics",
-    "Presence",
+    "TrackingSystem",
+    "ImmersiveExperience",
     "Could",
+    "Education and AI",
+    "DisplayTechnology",
     "SpatialComputing",
-    "RenderingEngine",
-    "ImmersiveExperience"
+    "Presence",
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "mv-216451438188",

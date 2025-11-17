@@ -27,22 +27,22 @@
     "Technical History (extended CV)"
   ],
   "wiki_links": [
-    "DisplayTechnology",
-    "MetaverseDomain",
+    "RenderingEngine",
+    "Robotics",
     "ComputerVision",
+    "Head Gaze",
+    "HumanComputerInteraction",
     "PEOPLE",
     "TrackingSystem",
-    "HumanComputerInteraction",
+    "ImmersiveExperience",
     "Face Swap",
-    "Head Gaze",
-    "Robotics",
+    "NVIDIA Omniverse",
+    "DisplayTechnology",
+    "SpatialComputing",
+    "KnoWhere",
     "Presence",
     "Segmentation and Identification",
-    "SpatialComputing",
-    "RenderingEngine",
-    "ImmersiveExperience",
-    "KnoWhere",
-    "NVIDIA Omniverse"
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "mv-165251182378",
