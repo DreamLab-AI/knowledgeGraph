@@ -36,22 +36,22 @@
     "Decentralized Finance"
   ],
   "wiki_links": [
-    "Audit Trail",
-    "AIEthicsDomain",
-    "Conformity Assessment",
     "NIST AI Risk Management Framework",
-    "ConceptualLayer",
-    "GDPR Compliance",
-    "GDPR",
-    "EU AI Act Compliance",
-    "Algorithmic Impact Assessment",
-    "AI Governance Principle",
-    "Human Oversight Requirement",
     "Transparency Obligation",
+    "Algorithmic Impact Assessment",
+    "AIEthicsDomain",
+    "AI Governance Principle",
     "EU AI Act",
+    "Sector-Specific Compliance",
+    "Conformity Assessment",
+    "GDPR Compliance",
+    "Human Oversight Requirement",
+    "ConceptualLayer",
+    "Audit Trail",
     "IEEE 7000 Model Process",
     "ISO/IEC 42001",
-    "Sector-Specific Compliance"
+    "EU AI Act Compliance",
+    "GDPR"
   ],
   "ontology": {
     "term_id": "PC-0012",

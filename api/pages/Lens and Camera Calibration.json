@@ -23,19 +23,19 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Presence",
-    "DisplayTechnology",
-    "RenderingEngine",
-    "SpatialComputing",
-    "TrackingSystem",
-    "Robotics",
     "Deep Learning",
-    "MetaverseDomain",
+    "SpatialComputing",
+    "DisplayTechnology",
+    "License",
+    "Robotics",
+    "RenderingEngine",
     "ImmersiveExperience",
-    "HumanComputerInteraction",
     "ComputerVision",
     "Python",
-    "License"
+    "Presence",
+    "MetaverseDomain",
+    "TrackingSystem",
+    "HumanComputerInteraction"
   ],
   "ontology": {
     "term_id": "mv-739517645761",

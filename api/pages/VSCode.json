@@ -20,8 +20,8 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "MetaverseDomain",
     " -n \"$SSH_TTY\" ",
+    "MetaverseDomain",
     " $- =~ i ",
     " -z \"$TMUX\" "
   ],

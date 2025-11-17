@@ -28,19 +28,19 @@
     "Fashion"
   ],
   "wiki_links": [
-    "Presence",
-    "DisplayTechnology",
-    "RenderingEngine",
     "PEOPLE",
     "SpatialComputing",
-    "TrackingSystem",
+    "DisplayTechnology",
+    "David Tully",
     "Robotics",
-    "MetaverseDomain",
-    "ImmersiveExperience",
-    "HumanComputerInteraction",
     "MUST",
+    "RenderingEngine",
+    "ImmersiveExperience",
     "ComputerVision",
-    "David Tully"
+    "Presence",
+    "MetaverseDomain",
+    "TrackingSystem",
+    "HumanComputerInteraction"
   ],
   "ontology": {
     "term_id": "mv-644303374260",
