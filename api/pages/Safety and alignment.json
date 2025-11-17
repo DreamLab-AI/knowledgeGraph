@@ -28,19 +28,19 @@
     "Safety and alignment"
   ],
   "wiki_links": [
-    "TrackingSystem",
-    "HumanComputerInteraction",
-    "RenderingEngine",
-    "confusion matrices",
-    "Presence",
     "ImmersiveExperience",
+    "RenderingEngine",
+    "TrackingSystem",
     "ComputerVision",
+    "MetaverseDomain",
+    "confusion matrices",
+    "SpatialComputing",
     "Safety and alignment",
     "Social contract and jobs",
-    "Robotics",
-    "SpatialComputing",
+    "Presence",
     "DisplayTechnology",
-    "MetaverseDomain"
+    "Robotics",
+    "HumanComputerInteraction"
   ],
   "ontology": {
     "term_id": "mv-5331324652",

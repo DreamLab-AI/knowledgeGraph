@@ -26,20 +26,20 @@
     "Speech and voice"
   ],
   "wiki_links": [
-    "TrackingSystem",
-    "HumanComputerInteraction",
+    "ImmersiveExperience",
     "RenderingEngine",
+    "TrackingSystem",
+    "ComputerVision",
+    "MetaverseDomain",
+    "SpatialComputing",
     "Real Time",
     "Presence",
-    "ImmersiveExperience",
-    "ComputerVision",
     "Unreal",
-    "ComfyUI",
-    "Robotics",
-    "SpatialComputing",
-    "Touch Designer",
     "DisplayTechnology",
-    "MetaverseDomain"
+    "Robotics",
+    "Touch Designer",
+    "HumanComputerInteraction",
+    "ComfyUI"
   ],
   "ontology": {
     "term_id": "mv-326164975514",

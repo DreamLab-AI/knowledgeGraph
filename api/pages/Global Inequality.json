@@ -27,20 +27,20 @@
     "Death of the Internet"
   ],
   "wiki_links": [
-    "TrackingSystem",
-    "HumanComputerInteraction",
     "mattei2022capital",
-    "RenderingEngine",
-    "booth2020price",
-    "Presence",
     "ImmersiveExperience",
+    "RenderingEngine",
+    "TrackingSystem",
+    "booth2020price",
     "ComputerVision",
-    "Robotics",
-    "balassa2013theory",
-    "SpatialComputing",
+    "MetaverseDomain",
     "hawtrey1925currency",
+    "SpatialComputing",
+    "Presence",
     "DisplayTechnology",
-    "MetaverseDomain"
+    "balassa2013theory",
+    "Robotics",
+    "HumanComputerInteraction"
   ],
   "ontology": {
     "term_id": "mv-715649298519",
