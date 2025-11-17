@@ -19,17 +19,17 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "HumanRobotInteraction",
-    "ManipulatorArm",
-    "MetaverseDomain",
-    "SLAM",
-    "SensorFusion",
-    "RobotLearning",
     "AutonomousRobot",
+    "SensorFusion",
+    "PathPlanning",
+    "MetaverseDomain",
     "Teleoperation",
-    "SwarmRobotics",
+    "ManipulatorArm",
+    "RobotLearning",
     "SoftRobotics",
-    "PathPlanning"
+    "SwarmRobotics",
+    "SLAM",
+    "HumanRobotInteraction"
   ],
   "ontology": {
     "term_id": "mv-1761742247991",

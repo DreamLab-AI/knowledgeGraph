@@ -20,11 +20,11 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "AIEthicsDomain",
-    "OWL 2 Web Ontology Language",
     "OntologyDomain",
-    "BlockchainDomain",
+    "OWL 2 Web Ontology Language",
     "Dublin Core Metadata Initiative",
+    "AIEthicsDomain",
+    "BlockchainDomain",
     "RoboticsDomain"
   ],
   "ontology": {

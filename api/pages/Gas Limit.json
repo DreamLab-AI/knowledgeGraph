@@ -30,12 +30,12 @@
     "Transaction Pool"
   ],
   "wiki_links": [
-    "Transaction Fee",
     "Resource Control",
-    "Transaction Parameter",
-    "Gas Price",
     "Priority Fee",
+    "Transaction Parameter",
     "Blockchain",
+    "Gas Price",
+    "Transaction Fee",
     "Base Fee"
   ],
   "ontology": {
