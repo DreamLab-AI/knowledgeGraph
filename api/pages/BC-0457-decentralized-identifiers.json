@@ -24,21 +24,21 @@
     "BC-0495-voting-systems"
   ],
   "wiki_links": [
-    "GDPR",
-    "Trust Over IP Foundation",
-    "BC-0459-digital-identity-wallet|digital identity wallets",
-    "BC-0459-digital-identity-wallet|Digital Identity Wallet",
-    "Sovrin Network",
-    "BC-0460-identity-verification|Identity Verification",
-    "BC-0458-verifiable-credentials|Verifiable Credentials",
-    "eIDAS",
-    "BC-0460-identity-verification|identity verification",
-    "Ethereum",
+    "Bitcoin",
     "BC-0435-hyperledger-indy|Hyperledger Indy",
-    "W3C",
     "BC-0456-self-sovereign-identity|Self-Sovereign Identity",
     "BlockchainDomain",
-    "Bitcoin"
+    "GDPR",
+    "Sovrin Network",
+    "BC-0458-verifiable-credentials|Verifiable Credentials",
+    "BC-0459-digital-identity-wallet|digital identity wallets",
+    "W3C",
+    "BC-0459-digital-identity-wallet|Digital Identity Wallet",
+    "Trust Over IP Foundation",
+    "BC-0460-identity-verification|Identity Verification",
+    "eIDAS",
+    "Ethereum",
+    "BC-0460-identity-verification|identity verification"
   ],
   "ontology": {
     "term_id": "BC-0457",

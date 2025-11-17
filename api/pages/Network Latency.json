@@ -29,17 +29,17 @@
   },
   "backlinks": [],
   "wiki_links": [
+    "IEEE 2418.1",
+    "NetworkComponent",
+    "Blockchain Entity",
+    "NIST NISTIR",
+    "boring2009scroll",
+    "SecurityLayer",
     "Large language models",
     "hansberger2017dispelling",
-    "NetworkComponent",
-    "IEEE 2418.1",
-    "SecurityLayer",
-    "ISO/IEC 23257:2021",
-    "NIST NISTIR",
-    "Blockchain Entity",
-    "boring2009scroll",
     "Update Cycle",
-    "CryptographicDomain"
+    "CryptographicDomain",
+    "ISO/IEC 23257:2021"
   ],
   "ontology": {
     "term_id": "BC-0081",
