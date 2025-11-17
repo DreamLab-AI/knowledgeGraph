@@ -28,7 +28,6 @@
     "- is-subclass-of": "[[Blockchain Entity]], [[CryptographicPrimitive]]"
   },
   "backlinks": [
-    "Token",
     "Runes and Glyphs",
     "Digital Signature",
     "Public Key",
@@ -37,24 +36,24 @@
     "Address"
   ],
   "wiki_links": [
-    "CryptographicDomain",
-    "filardo2012central",
-    "cantillon1756essai; @bordo1983some",
+    "NIST NISTIR",
+    "CryptographicPrimitive",
+    "Energy and Power",
+    "bertomeu2023uncle",
     "giancarlo2021cryptodad",
-    "wang2021central",
+    "CryptographicDomain",
     "Agents",
-    "ISO/IEC 23257:2021",
+    "prasad2021future",
+    "Artificial Intelligence",
+    "filardo2012central",
+    "Social contract and jobs",
+    "cantillon1756essai; @bordo1983some",
     "IEEE 2418.1",
     "Blockchain Entity",
-    "CryptographicPrimitive",
-    "Convergence",
-    "prasad2021future",
-    "bertomeu2023uncle",
-    "Social contract and jobs",
-    "Energy and Power",
-    "Artificial Intelligence",
+    "ISO/IEC 23257:2021",
+    "wang2021central",
     "SecurityLayer",
-    "NIST NISTIR"
+    "Convergence"
   ],
   "ontology": {
     "term_id": "BC-0036",

@@ -26,7 +26,6 @@
     "Education and AI",
     "Politics, Law, Privacy",
     "Social contract and jobs",
-    "infrastructure",
     "Technical History (extended CV)",
     "State of the art in AI",
     "BC-0037-public-key",
@@ -34,19 +33,19 @@
     "Agentic Metaverse for Global Creatives"
   ],
   "wiki_links": [
-    "ComputerVision",
-    "Presence",
-    "MetaverseDomain",
-    "TrackingSystem",
-    "large language models",
-    "DisplayTechnology",
-    "RenderingEngine",
     "Digital Society Harms",
-    "Facebook Meta",
-    "ImmersiveExperience",
-    "Robotics",
     "HumanComputerInteraction",
-    "SpatialComputing"
+    "RenderingEngine",
+    "DisplayTechnology",
+    "large language models",
+    "MetaverseDomain",
+    "ImmersiveExperience",
+    "SpatialComputing",
+    "Presence",
+    "TrackingSystem",
+    "Robotics",
+    "Facebook Meta",
+    "ComputerVision"
   ],
   "ontology": {
     "term_id": "mv-936520497102",

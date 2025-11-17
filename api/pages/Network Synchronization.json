@@ -31,16 +31,16 @@
     "Transaction Confirmation"
   ],
   "wiki_links": [
-    "ConsensusProtocol",
-    "ISO/IEC 23257:2021",
     "ConsensusDomain",
-    "ProtocolLayer",
-    "IEEE 2418.1",
-    "Blockchain Entity",
-    "Lightning Network",
-    "schnorr1989efficient",
+    "NIST NISTIR",
     "Nostr",
-    "NIST NISTIR"
+    "ProtocolLayer",
+    "schnorr1989efficient",
+    "IEEE 2418.1",
+    "ConsensusProtocol",
+    "Blockchain Entity",
+    "ISO/IEC 23257:2021",
+    "Lightning Network"
   ],
   "ontology": {
     "term_id": "BC-0057",

@@ -20,10 +20,10 @@
   },
   "backlinks": [],
   "wiki_links": [
-    " $- =~ i ",
-    " -z \"$TMUX\" ",
     "MetaverseDomain",
-    " -n \"$SSH_TTY\" "
+    " -n \"$SSH_TTY\" ",
+    " -z \"$TMUX\" ",
+    " $- =~ i "
   ],
   "ontology": {
     "term_id": "mv-959859783096",

@@ -12,9 +12,7 @@
     "- public-access": "true",
     "- definition": "A model compression technique where a smaller \"student\" model is trained to mimic the behaviour of a larger \"teacher\" model, transferring knowledge through soft targets. Knowledge distillation enables simple student networks with few parameters to achieve comparable performance to deep teacher networks."
   },
-  "backlinks": [
-    "Perception System"
-  ],
+  "backlinks": [],
   "wiki_links": [],
   "ontology": {
     "term_id": "AI-0279",

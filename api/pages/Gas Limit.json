@@ -27,17 +27,16 @@
     "- related-to": "[[Base Fee]]"
   },
   "backlinks": [
-    "Telecollaboration and Telepresence",
     "Transaction Pool"
   ],
   "wiki_links": [
-    "Priority Fee",
-    "Transaction Fee",
-    "Base Fee",
     "Blockchain",
+    "Resource Control",
+    "Base Fee",
+    "Priority Fee",
     "Gas Price",
-    "Transaction Parameter",
-    "Resource Control"
+    "Transaction Fee",
+    "Transaction Parameter"
   ],
   "ontology": {
     "term_id": "BC-0107",

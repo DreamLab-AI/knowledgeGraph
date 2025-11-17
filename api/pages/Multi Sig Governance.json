@@ -18,9 +18,7 @@
     "- owl:role": "Concept",
     "- belongsToDomain": "[[BlockchainDomain]]"
   },
-  "backlinks": [
-    "Governance Token"
-  ],
+  "backlinks": [],
   "wiki_links": [
     "BlockchainDomain"
   ],

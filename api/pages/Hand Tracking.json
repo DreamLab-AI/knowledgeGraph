@@ -23,12 +23,10 @@
     "- belongsToDomain": "[[Artificial Intelligence]]",
     "- is-subclass-of": "[[Computer Vision]]"
   },
-  "backlinks": [
-    "Telecollaboration and Telepresence"
-  ],
+  "backlinks": [],
   "wiki_links": [
-    "Computer Vision",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "Computer Vision"
   ],
   "ontology": {
     "term_id": "AI-0852",

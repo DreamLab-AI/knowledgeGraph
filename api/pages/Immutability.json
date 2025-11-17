@@ -29,20 +29,19 @@
   },
   "backlinks": [
     "Transaction Confirmation",
-    "ConceptualLayer",
     "Digital Objects"
   ],
   "wiki_links": [
-    "CryptographicDomain",
-    "UDA",
+    "NIST NISTIR",
     "NetworkComponent",
-    "ISO/IEC 23257:2021",
+    "CryptographicDomain",
+    "Digital Objects",
     "IEEE 2418.1",
     "Blockchain Entity",
-    "Digital Objects",
+    "ISO/IEC 23257:2021",
+    "UDA",
     "DIBA",
-    "SecurityLayer",
-    "NIST NISTIR"
+    "SecurityLayer"
   ],
   "ontology": {
     "term_id": "BC-0079",

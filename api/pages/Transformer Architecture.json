@@ -12,9 +12,7 @@
     "- public-access": "true",
     "- definition": "A neural network architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely, designed for sequence-to-sequence tasks."
   },
-  "backlinks": [
-    "AI-Augmented Software Engineering"
-  ],
+  "backlinks": [],
   "wiki_links": [],
   "ontology": {
     "term_id": "AI-0196",

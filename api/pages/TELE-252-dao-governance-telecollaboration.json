@@ -5,15 +5,14 @@
   "backlinks": [
     "TELE-250-blockchain-collaboration",
     "TELE-251-smart-contract-coordination",
-    "TELE-0000-telepresence-domain",
     "TELE-002-telecollaboration"
   ],
   "wiki_links": [
-    "TELE-0000-telepresence-domain",
+    "TELE-250-blockchain-collaboration",
+    "BlockchainDomain",
     "TELE-002-telecollaboration",
     "TELE-251-smart-contract-coordination",
-    "BlockchainDomain",
-    "TELE-250-blockchain-collaboration",
+    "TELE-0000-telepresence-domain",
     "DecentralisedAutonomousOrganisation",
     "BlockchainCollaboration"
   ],
