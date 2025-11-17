@@ -32,21 +32,21 @@
     "Agentic Alliance"
   ],
   "wiki_links": [
-    "Customization",
     "lockwood2021exploring",
-    "SocialInteraction",
-    "dwork1992pricing",
-    "VirtualWorld",
-    "UserRepresentation",
-    "DigitalIdentity",
-    "king1966fisher",
-    "AuthenticationService",
-    "MetaversePlatform",
+    "Customization",
     "Appearance",
-    "Animation",
+    "MetaversePlatform",
+    "SocialInteraction",
+    "UserRepresentation",
+    "VirtualWorld",
+    "dwork1992pricing",
+    "king1966fisher",
+    "Presence",
     "Pubky",
+    "AuthenticationService",
+    "DigitalIdentity",
     "MetaverseDomain",
-    "Presence"
+    "Animation"
   ],
   "ontology": {
     "term_id": "mv-432362532415",

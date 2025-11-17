@@ -27,13 +27,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Prompt Engineering",
-    "Robot (RB-0001)",
     "ISO 8373:2021",
+    "Prompt Engineering",
     "Artificial Superintelligence",
-    "Microsoft CoPilot",
     "Artificial Intelligence",
-    "Robotics"
+    "Robotics",
+    "Robot (RB-0001)",
+    "Microsoft CoPilot"
   ],
   "ontology": {
     "term_id": "RB-0002",

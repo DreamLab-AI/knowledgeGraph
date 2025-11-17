@@ -20,13 +20,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "BlockchainDomain",
-    "BC-0463-governance-token",
-    "BC-0462-on-chain-voting",
-    "BC-0142-smart-contract",
     "BC-0456-self-sovereign-identity",
+    "BC-0462-on-chain-voting",
     "BC-0470-dao-legal-structures",
+    "BC-0463-governance-token",
+    "BlockchainDomain",
     "BC-0457-decentralized-identifiers",
+    "BC-0142-smart-contract",
     "BC-0458-verifiable-credentials"
   ],
   "ontology": {
