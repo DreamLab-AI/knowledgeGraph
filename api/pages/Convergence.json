@@ -34,19 +34,19 @@
     "Loss-Function"
   ],
   "wiki_links": [
-    "Singularity",
     "RenderingEngine",
     "Robotics",
-    "ComputerVision",
-    "HumanComputerInteraction",
-    "TrackingSystem",
-    "ImmersiveExperience",
-    "DisplayTechnology",
     "SpatialComputing",
-    "Artificial General Intelligence",
+    "DisplayTechnology",
+    "HumanComputerInteraction",
     "Spatial Computing",
-    "Presence",
-    "MetaverseDomain"
+    "Artificial General Intelligence",
+    "ImmersiveExperience",
+    "Singularity",
+    "TrackingSystem",
+    "ComputerVision",
+    "MetaverseDomain",
+    "Presence"
   ],
   "ontology": {
     "term_id": "mv-730687576412",

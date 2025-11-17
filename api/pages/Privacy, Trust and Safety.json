@@ -35,17 +35,17 @@
   "wiki_links": [
     "RenderingEngine",
     "Robotics",
-    "ComputerVision",
+    "SpatialComputing",
     "Digital Society Harms",
+    "DisplayTechnology",
     "HumanComputerInteraction",
+    "ImmersiveExperience",
     "Facebook Meta",
     "TrackingSystem",
-    "ImmersiveExperience",
+    "ComputerVision",
     "large language models",
-    "DisplayTechnology",
-    "SpatialComputing",
-    "Presence",
-    "MetaverseDomain"
+    "MetaverseDomain",
+    "Presence"
   ],
   "ontology": {
     "term_id": "mv-936520497102",

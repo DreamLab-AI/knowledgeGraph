@@ -28,18 +28,18 @@
   "wiki_links": [
     "RenderingEngine",
     "Robotics",
-    "ComputerVision",
-    "Neocadia",
-    "HumanComputerInteraction",
-    "TrackingSystem",
-    "ImmersiveExperience",
-    "ComfyUI",
-    "DisplayTechnology",
     "SpatialComputing",
-    "Player Two code",
-    "Presence",
     "AI Video",
-    "MetaverseDomain"
+    "DisplayTechnology",
+    "HumanComputerInteraction",
+    "ImmersiveExperience",
+    "Neocadia",
+    "TrackingSystem",
+    "ComputerVision",
+    "ComfyUI",
+    "MetaverseDomain",
+    "Player Two code",
+    "Presence"
   ],
   "ontology": {
     "term_id": "mv-180849186917",

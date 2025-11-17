@@ -30,17 +30,17 @@
   "wiki_links": [
     "RenderingEngine",
     "Robotics",
-    "David Tully",
-    "ComputerVision",
-    "HumanComputerInteraction",
-    "TrackingSystem",
-    "ImmersiveExperience",
-    "DisplayTechnology",
     "SpatialComputing",
-    "MUST",
+    "DisplayTechnology",
+    "HumanComputerInteraction",
     "PEOPLE",
-    "Presence",
-    "MetaverseDomain"
+    "David Tully",
+    "ImmersiveExperience",
+    "TrackingSystem",
+    "MUST",
+    "ComputerVision",
+    "MetaverseDomain",
+    "Presence"
   ],
   "ontology": {
     "term_id": "mv-644303374260",

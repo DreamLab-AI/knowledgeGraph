@@ -28,19 +28,19 @@
     "Consensus Mechanism"
   ],
   "wiki_links": [
-    "Blockchain",
-    "ConceptualLayer",
-    "Byzantine Fault Tolerance",
-    "Checkpoint System",
-    "Blockchain Entity",
-    "State Machine Replication",
-    "Fault-Tolerant Systems",
-    "Byzantine Fault Tolerant System",
     "BlockchainDomain",
-    "Replication System",
     "Dependable Computing Systems",
-    "Crash Fault Tolerant System",
-    "Consensus Mechanism"
+    "Fault-Tolerant Systems",
+    "Blockchain",
+    "Byzantine Fault Tolerant System",
+    "Byzantine Fault Tolerance",
+    "State Machine Replication",
+    "Checkpoint System",
+    "ConceptualLayer",
+    "Blockchain Entity",
+    "Replication System",
+    "Consensus Mechanism",
+    "Crash Fault Tolerant System"
   ],
   "ontology": {
     "term_id": "PC-0008",

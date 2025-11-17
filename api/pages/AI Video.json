@@ -39,18 +39,18 @@
   "wiki_links": [
     "RenderingEngine",
     "Robotics",
-    "Update Cycle",
-    "ComputerVision",
-    "LoRA DoRA etc",
-    "HumanComputerInteraction",
-    "TrackingSystem",
-    "ImmersiveExperience",
-    "ComfyUI",
-    "DisplayTechnology",
     "SpatialComputing",
+    "DisplayTechnology",
+    "HumanComputerInteraction",
+    "Update Cycle",
+    "LoRA DoRA etc",
+    "ImmersiveExperience",
+    "TrackingSystem",
+    "ComputerVision",
+    "ComfyUI",
+    "MetaverseDomain",
     "MotionDirector",
-    "Presence",
-    "MetaverseDomain"
+    "Presence"
   ],
   "ontology": {
     "term_id": "mv-449611067545",

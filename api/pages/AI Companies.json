@@ -28,19 +28,19 @@
   "wiki_links": [
     "RenderingEngine",
     "Robotics",
-    "ComputerVision",
+    "SpatialComputing",
+    "DisplayTechnology",
     "HumanComputerInteraction",
     "Large language models",
-    "OpenAI",
-    "TrackingSystem",
-    "ImmersiveExperience",
     "Comparison of GPT4 and Gemini Ultra",
-    "DisplayTechnology",
-    "SpatialComputing",
+    "ImmersiveExperience",
+    "TrackingSystem",
+    "ComputerVision",
     "Infrastructure",
+    "OpenAI",
     "Politics, Law, Privacy",
-    "Presence",
-    "MetaverseDomain"
+    "MetaverseDomain",
+    "Presence"
   ],
   "ontology": {
     "term_id": "mv-164801311429",

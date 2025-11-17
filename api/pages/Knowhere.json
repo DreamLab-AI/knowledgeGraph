@@ -29,20 +29,20 @@
   "wiki_links": [
     "RenderingEngine",
     "Robotics",
-    "ComputerVision",
+    "SpatialComputing",
+    "Segmentation and Identification",
     "Head Gaze",
+    "DisplayTechnology",
     "HumanComputerInteraction",
     "PEOPLE",
-    "TrackingSystem",
     "ImmersiveExperience",
     "Face Swap",
-    "NVIDIA Omniverse",
-    "DisplayTechnology",
-    "SpatialComputing",
+    "TrackingSystem",
+    "ComputerVision",
     "KnoWhere",
-    "Presence",
-    "Segmentation and Identification",
-    "MetaverseDomain"
+    "NVIDIA Omniverse",
+    "MetaverseDomain",
+    "Presence"
   ],
   "ontology": {
     "term_id": "mv-165251182378",

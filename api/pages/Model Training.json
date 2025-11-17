@@ -29,18 +29,18 @@
   "wiki_links": [
     "RenderingEngine",
     "Robotics",
-    "LoRA DoRA etc",
-    "ComputerVision",
+    "SpatialComputing",
+    "DisplayTechnology",
     "HumanComputerInteraction",
     "Large language models",
-    "TrackingSystem",
+    "LoRA DoRA etc",
     "ImmersiveExperience",
-    "DisplayTechnology",
-    "Mistral",
-    "SpatialComputing",
+    "TrackingSystem",
+    "ComputerVision",
     "Politics, Law, Privacy",
-    "Presence",
-    "MetaverseDomain"
+    "MetaverseDomain",
+    "Mistral",
+    "Presence"
   ],
   "ontology": {
     "term_id": "mv-431164427647",

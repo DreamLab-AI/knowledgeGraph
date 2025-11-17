@@ -30,17 +30,17 @@
   "wiki_links": [
     "RenderingEngine",
     "Robotics",
-    "ComputerVision",
+    "SpatialComputing",
+    "DisplayTechnology",
     "HumanComputerInteraction",
     "confusion matrices",
-    "TrackingSystem",
     "ImmersiveExperience",
-    "DisplayTechnology",
-    "SpatialComputing",
-    "Social contract and jobs",
-    "Presence",
+    "TrackingSystem",
+    "ComputerVision",
+    "MetaverseDomain",
     "Safety and alignment",
-    "MetaverseDomain"
+    "Social contract and jobs",
+    "Presence"
   ],
   "ontology": {
     "term_id": "mv-5331324652",

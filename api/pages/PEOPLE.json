@@ -34,17 +34,17 @@
   "wiki_links": [
     "RenderingEngine",
     "Robotics",
-    "ComputerVision",
+    "SpatialComputing",
+    "DisplayTechnology",
     "HumanComputerInteraction",
     "Large language models",
-    "TrackingSystem",
     "ImmersiveExperience",
+    "TrackingSystem",
     "Could",
+    "ComputerVision",
     "Education and AI",
-    "DisplayTechnology",
-    "SpatialComputing",
-    "Presence",
-    "MetaverseDomain"
+    "MetaverseDomain",
+    "Presence"
   ],
   "ontology": {
     "term_id": "mv-216451438188",

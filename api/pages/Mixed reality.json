@@ -29,18 +29,18 @@
   "wiki_links": [
     "RenderingEngine",
     "Robotics",
-    "ComputerVision",
-    "Humans, Avatars , Character",
-    "HumanComputerInteraction",
-    "TrackingSystem",
-    "ImmersiveExperience",
-    "apple",
-    "Education and AI",
-    "DisplayTechnology",
     "SpatialComputing",
+    "Humans, Avatars , Character",
+    "apple",
+    "DisplayTechnology",
+    "HumanComputerInteraction",
     "Apple",
-    "Presence",
-    "MetaverseDomain"
+    "ImmersiveExperience",
+    "TrackingSystem",
+    "ComputerVision",
+    "Education and AI",
+    "MetaverseDomain",
+    "Presence"
   ],
   "ontology": {
     "term_id": "mv-485321926566",

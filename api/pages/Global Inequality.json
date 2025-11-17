@@ -29,18 +29,18 @@
   "wiki_links": [
     "RenderingEngine",
     "Robotics",
-    "ComputerVision",
-    "booth2020price",
-    "HumanComputerInteraction",
-    "TrackingSystem",
-    "ImmersiveExperience",
-    "DisplayTechnology",
-    "balassa2013theory",
     "SpatialComputing",
-    "mattei2022capital",
     "hawtrey1925currency",
-    "Presence",
-    "MetaverseDomain"
+    "DisplayTechnology",
+    "HumanComputerInteraction",
+    "mattei2022capital",
+    "booth2020price",
+    "ImmersiveExperience",
+    "TrackingSystem",
+    "ComputerVision",
+    "balassa2013theory",
+    "MetaverseDomain",
+    "Presence"
   ],
   "ontology": {
     "term_id": "mv-715649298519",

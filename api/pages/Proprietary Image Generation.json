@@ -28,21 +28,21 @@
     "BC-0014-block-time"
   ],
   "wiki_links": [
-    "android",
     "RenderingEngine",
-    "Landscape",
     "Robotics",
-    "ComputerVision",
-    "HumanComputerInteraction",
-    "OpenAI",
-    "TrackingSystem",
-    "ImmersiveExperience",
-    "presentation",
-    "DisplayTechnology",
     "SpatialComputing",
+    "android",
+    "DisplayTechnology",
+    "HumanComputerInteraction",
+    "ImmersiveExperience",
+    "TrackingSystem",
+    "ComputerVision",
+    "presentation",
+    "OpenAI",
+    "MetaverseDomain",
     "Proprietary Video",
-    "Presence",
-    "MetaverseDomain"
+    "Landscape",
+    "Presence"
   ],
   "ontology": {
     "term_id": "mv-751415638687",

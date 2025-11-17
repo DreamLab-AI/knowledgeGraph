@@ -26,17 +26,17 @@
   "wiki_links": [
     "RenderingEngine",
     "Robotics",
-    "ComputerVision",
-    "HumanComputerInteraction",
-    "TrackingSystem",
-    "ImmersiveExperience",
-    "Product Design",
-    "DisplayTechnology",
     "SpatialComputing",
+    "DisplayTechnology",
+    "HumanComputerInteraction",
+    "Product Design",
+    "ImmersiveExperience",
+    "TrackingSystem",
+    "ComputerVision",
     "Politics, Law, Privacy",
-    "Presence",
+    "MetaverseDomain",
     "Safety and alignment",
-    "MetaverseDomain"
+    "Presence"
   ],
   "ontology": {
     "term_id": "mv-288045444843",

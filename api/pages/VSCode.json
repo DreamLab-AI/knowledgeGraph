@@ -21,9 +21,9 @@
   "backlinks": [],
   "wiki_links": [
     " -z \"$TMUX\" ",
-    " $- =~ i ",
+    "MetaverseDomain",
     " -n \"$SSH_TTY\" ",
-    "MetaverseDomain"
+    " $- =~ i "
   ],
   "ontology": {
     "term_id": "mv-959859783096",
