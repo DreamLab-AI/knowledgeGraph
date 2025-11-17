@@ -33,19 +33,19 @@
     "Agentic Metaverse for Global Creatives"
   ],
   "wiki_links": [
-    "MetaverseDomain",
-    "RenderingEngine",
-    "Robotics",
-    "Presence",
     "large language models",
-    "HumanComputerInteraction",
-    "SpatialComputing",
-    "Facebook Meta",
-    "TrackingSystem",
-    "Digital Society Harms",
     "ImmersiveExperience",
+    "RenderingEngine",
+    "Presence",
     "DisplayTechnology",
-    "ComputerVision"
+    "SpatialComputing",
+    "ComputerVision",
+    "Robotics",
+    "TrackingSystem",
+    "MetaverseDomain",
+    "HumanComputerInteraction",
+    "Facebook Meta",
+    "Digital Society Harms"
   ],
   "ontology": {
     "term_id": "mv-936520497102",

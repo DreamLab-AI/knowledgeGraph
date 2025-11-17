@@ -26,17 +26,17 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Blockchain Entity",
     "IEEE 2418.1",
-    "NIP-05",
+    "Anthropic",
+    "CryptographicDomain",
+    "Blockchain Entity",
     "NIST NISTIR",
     "CryptographicPrimitive",
-    "Anthropic",
-    "ISO/IEC 23257:2021",
     "Alby",
-    "SecurityLayer",
     "OpenAI",
-    "CryptographicDomain"
+    "SecurityLayer",
+    "ISO/IEC 23257:2021",
+    "NIP-05"
   ],
   "ontology": {
     "term_id": "BC-0050",

@@ -20,12 +20,12 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Dublin Core Metadata Initiative",
-    "RoboticsDomain",
-    "OWL 2 Web Ontology Language",
     "AIEthicsDomain",
+    "OWL 2 Web Ontology Language",
     "BlockchainDomain",
-    "OntologyDomain"
+    "Dublin Core Metadata Initiative",
+    "OntologyDomain",
+    "RoboticsDomain"
   ],
   "ontology": {
     "term_id": "ONTO-PROPS",
