@@ -28,18 +28,18 @@
   ],
   "wiki_links": [
     "ImmersiveExperience",
-    "RenderingEngine",
-    "Presence",
-    "DisplayTechnology",
-    "SpatialComputing",
-    "ComputerVision",
-    "Stable Diffusion",
-    "Robotics",
     "TrackingSystem",
-    "3D and 4D",
     "MetaverseDomain",
+    "ComputerVision",
     "AI Video",
-    "HumanComputerInteraction"
+    "HumanComputerInteraction",
+    "RenderingEngine",
+    "Stable Diffusion",
+    "SpatialComputing",
+    "Robotics",
+    "Presence",
+    "3D and 4D",
+    "DisplayTechnology"
   ],
   "ontology": {
     "term_id": "mv-44124548050",

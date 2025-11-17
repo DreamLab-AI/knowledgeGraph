@@ -22,14 +22,14 @@
     "BC-0492-clinical-trials"
   ],
   "wiki_links": [
+    "BC-0492-clinical-trials",
     "BC-0456-self-sovereign-identity",
+    "BC-0459-digital-identity-wallet",
+    "BC-0457-decentralized-identifiers",
+    "BC-0426-hyperledger-fabric",
     "BC-0458-verifiable-credentials",
     "BlockchainDomain",
-    "BC-0476-aml-kyc-compliance",
-    "BC-0457-decentralized-identifiers",
-    "BC-0492-clinical-trials",
-    "BC-0459-digital-identity-wallet",
-    "BC-0426-hyperledger-fabric"
+    "BC-0476-aml-kyc-compliance"
   ],
   "ontology": {
     "term_id": "BC-0491",

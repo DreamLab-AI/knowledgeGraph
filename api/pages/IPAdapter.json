@@ -28,18 +28,18 @@
   ],
   "wiki_links": [
     "ImmersiveExperience",
+    "TrackingSystem",
+    "MetaverseDomain",
+    "ComputerVision",
+    "Code",
+    "HumanComputerInteraction",
+    "Paper",
     "RenderingEngine",
+    "SpatialComputing",
+    "Robotics",
     "Presence",
     "DisplayTechnology",
-    "SpatialComputing",
-    "ComputerVision",
-    "Paper",
-    "Robotics",
-    "TrackingSystem",
-    "BibTeX",
-    "MetaverseDomain",
-    "Code",
-    "HumanComputerInteraction"
+    "BibTeX"
   ],
   "ontology": {
     "term_id": "mv-366063046856",

@@ -24,19 +24,19 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Product Design",
     "ImmersiveExperience",
-    "RenderingEngine",
-    "Presence",
-    "Safety and alignment",
-    "DisplayTechnology",
-    "SpatialComputing",
-    "ComputerVision",
-    "Robotics",
     "TrackingSystem",
     "MetaverseDomain",
+    "ComputerVision",
     "Politics, Law, Privacy",
-    "HumanComputerInteraction"
+    "HumanComputerInteraction",
+    "Product Design",
+    "RenderingEngine",
+    "SpatialComputing",
+    "Robotics",
+    "Presence",
+    "DisplayTechnology",
+    "Safety and alignment"
   ],
   "ontology": {
     "term_id": "mv-288045444843",
