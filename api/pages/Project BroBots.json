@@ -24,20 +24,20 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Death of the Internet",
-    "TrackingSystem",
-    "Digital Society Harms",
-    "ImmersiveExperience",
     "ComputerVision",
+    "DisplayTechnology",
     "RenderingEngine",
-    "Agentic Alliance",
-    "SpatialComputing",
+    "Digital Society Harms",
     "Agents",
+    "TrackingSystem",
     "Robotics",
     "HumanComputerInteraction",
+    "Death of the Internet",
+    "ImmersiveExperience",
     "MetaverseDomain",
-    "DisplayTechnology",
-    "Presence"
+    "Presence",
+    "Agentic Alliance",
+    "SpatialComputing"
   ],
   "ontology": {
     "term_id": "mv-950883424226",

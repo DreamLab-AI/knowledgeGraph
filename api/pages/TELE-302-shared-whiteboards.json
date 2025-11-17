@@ -6,17 +6,16 @@
     "TELE-301-virtual-office-spaces",
     "TELE-CONV-001-metaverse-telepresence-bridge",
     "TELE-028-horizon-workrooms",
-    "TELE-0000-telepresence-domain",
     "TELE-300-digital-twin-collaboration",
     "TELE-002-telecollaboration"
   ],
   "wiki_links": [
-    "DigitalTwinCollaboration",
-    "TELE-0000-telepresence-domain",
     "AIDomain",
-    "TELE-301-virtual-office-spaces",
     "TELE-028-horizon-workrooms",
-    "TELE-002-telecollaboration"
+    "TELE-301-virtual-office-spaces",
+    "TELE-0000-telepresence-domain",
+    "TELE-002-telecollaboration",
+    "DigitalTwinCollaboration"
   ],
   "ontology": {
     "term_id": "TELE-302",

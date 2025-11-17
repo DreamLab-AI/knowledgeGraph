@@ -26,18 +26,18 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Recent Projects",
-    "Update Cycle",
     "king1966fisher",
-    "ConsensusDomain",
-    "Blockchain Entity",
     "ISO/IEC 23257:2021",
-    "Education and AI",
-    "NIST NISTIR",
-    "ProtocolLayer",
     "IEEE 2418.1",
+    "Recent Projects",
+    "NIST NISTIR",
     "Layoff tracker and threatened roles",
-    "ConsensusProtocol"
+    "ConsensusDomain",
+    "Update Cycle",
+    "Education and AI",
+    "ConsensusProtocol",
+    "ProtocolLayer",
+    "Blockchain Entity"
   ],
   "ontology": {
     "term_id": "BC-0052",

@@ -18,17 +18,15 @@
     "- owl:role": "Concept",
     "- belongsToDomain": "[[BlockchainDomain]]"
   },
-  "backlinks": [
-    "BC-0446-supply-chain-traceability"
-  ],
+  "backlinks": [],
   "wiki_links": [
+    "BC-0442-pharmaceutical-traceability",
     "BlockchainDomain",
-    "BC-0446-supply-chain-traceability",
     "BC-0426-hyperledger-fabric",
     "BC-0476-aml-kyc-compliance",
-    "BC-0444-luxury-goods-authentication",
     "BC-0441-provenance-tracking",
-    "BC-0442-pharmaceutical-traceability",
+    "BC-0444-luxury-goods-authentication",
+    "BC-0446-supply-chain-traceability",
     "BC-0432-consortium-blockchain"
   ],
   "ontology": {

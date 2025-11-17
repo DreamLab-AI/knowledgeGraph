@@ -26,16 +26,16 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ConsensusDomain",
-    "Blockchain Entity",
     "ISO/IEC 23257:2021",
-    "NIST NISTIR",
-    "ProtocolLayer",
     "software engineering",
-    "innovation",
     "IEEE 2418.1",
+    "innovation",
+    "NIST NISTIR",
+    "ConsensusDomain",
+    "community",
     "ConsensusProtocol",
-    "community"
+    "ProtocolLayer",
+    "Blockchain Entity"
   ],
   "ontology": {
     "term_id": "BC-0066",

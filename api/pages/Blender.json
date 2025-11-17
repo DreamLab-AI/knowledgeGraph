@@ -24,23 +24,22 @@
   },
   "backlinks": [
     "Virtual Production",
-    "Daniel AI creative technologist",
-    "Telecollaboration and Telepresence"
+    "Daniel AI creative technologist"
   ],
   "wiki_links": [
-    "TrackingSystem",
-    "Stable Diffusion",
-    "ImmersiveExperience",
     "ComputerVision",
-    "3D and 4D",
-    "RenderingEngine",
-    "AI Video",
-    "SpatialComputing",
-    "Robotics",
-    "HumanComputerInteraction",
-    "MetaverseDomain",
     "DisplayTechnology",
-    "Presence"
+    "RenderingEngine",
+    "TrackingSystem",
+    "Robotics",
+    "AI Video",
+    "HumanComputerInteraction",
+    "Stable Diffusion",
+    "3D and 4D",
+    "ImmersiveExperience",
+    "MetaverseDomain",
+    "Presence",
+    "SpatialComputing"
   ],
   "ontology": {
     "term_id": "mv-44124548050",

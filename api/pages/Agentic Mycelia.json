@@ -24,7 +24,6 @@
   },
   "backlinks": [
     "Projects",
-    "Ontology conversation with AIs",
     "Blockchain",
     "Knowledge Graphing",
     "BC-0037-public-key",
@@ -32,24 +31,24 @@
     "Fashion"
   ],
   "wiki_links": [
-    "Anthropic Claude",
-    "Gemini",
-    "TrackingSystem",
-    "Metaverse Ontology",
-    "ImmersiveExperience",
     "ComputerVision",
-    "Google",
     "Large language models",
-    "Diagrams as Code",
+    "DisplayTechnology",
     "RenderingEngine",
+    "TrackingSystem",
+    "Diagrams as Code",
+    "Robotics",
+    "Gemini",
     "Chain of Thought",
     "Prompt Engineering",
-    "SpatialComputing",
-    "Robotics",
+    "Google",
     "HumanComputerInteraction",
+    "Anthropic Claude",
+    "Metaverse Ontology",
+    "ImmersiveExperience",
     "MetaverseDomain",
-    "DisplayTechnology",
-    "Presence"
+    "Presence",
+    "SpatialComputing"
   ],
   "ontology": {
     "term_id": "mv-830197611609",

@@ -30,24 +30,23 @@
     "BC-0037-public-key",
     "BC-0036-private-key",
     "Energy and Power",
-    "Money from DigiSoc",
     "Introduction to me",
     "Loss-Function"
   ],
   "wiki_links": [
-    "TrackingSystem",
-    "ImmersiveExperience",
     "ComputerVision",
-    "Singularity",
+    "DisplayTechnology",
     "RenderingEngine",
-    "Spatial Computing",
-    "SpatialComputing",
+    "TrackingSystem",
     "Robotics",
     "HumanComputerInteraction",
+    "Singularity",
     "Artificial General Intelligence",
+    "ImmersiveExperience",
     "MetaverseDomain",
-    "DisplayTechnology",
-    "Presence"
+    "Presence",
+    "SpatialComputing",
+    "Spatial Computing"
   ],
   "ontology": {
     "term_id": "mv-730687576412",

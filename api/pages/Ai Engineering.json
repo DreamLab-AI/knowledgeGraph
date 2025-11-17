@@ -24,18 +24,17 @@
     "- is-subclass-of": "[[Artificial Intelligence]]"
   },
   "backlinks": [
-    "Model Ops",
     "Ai Engineering"
   ],
   "wiki_links": [
-    "Risk",
-    "Artificial Intelligence",
-    "Machine Learning",
-    "Model",
     "Ai Engineering",
+    "Model",
     "Ai Governance",
-    "Algorithm",
-    "Generative Ai"
+    "Risk",
+    "Machine Learning",
+    "Artificial Intelligence",
+    "Generative Ai",
+    "Algorithm"
   ],
   "ontology": {
     "term_id": "AI-0802",

@@ -19,28 +19,27 @@
     "- belongsToDomain": "[[BlockchainDomain]]"
   },
   "backlinks": [
-    "BC-0446-supply-chain-traceability",
     "BC-0450-carbon-credit-tracking"
   ],
   "wiki_links": [
-    "BC-0025-smart-contracts",
+    "IoT",
+    "BC-0266-sustainability",
     "BC-0443-luxury-goods-authentication",
     "BlockchainDomain",
-    "Decentralised Identifiers",
-    "BC-0447-product-authenticity",
-    "Ethereum",
-    "Artificial Intelligence",
-    "BC-0266-sustainability",
-    "GS1",
-    "BC-0036-iot-integration",
     "Extended Producer Responsibility",
-    "IoT",
-    "Digital Product Passport",
-    "Hyperledger Fabric",
-    "VeChain",
-    "BC-0450-carbon-credit-tracking",
+    "BC-0025-smart-contracts",
+    "Artificial Intelligence",
     "GDPR",
-    "BC-0440-supply-chain-traceability"
+    "Ethereum",
+    "BC-0450-carbon-credit-tracking",
+    "BC-0447-product-authenticity",
+    "GS1",
+    "Hyperledger Fabric",
+    "Decentralised Identifiers",
+    "BC-0036-iot-integration",
+    "VeChain",
+    "BC-0440-supply-chain-traceability",
+    "Digital Product Passport"
   ],
   "ontology": {
     "term_id": "BC-0449",

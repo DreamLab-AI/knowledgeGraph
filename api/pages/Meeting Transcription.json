@@ -23,12 +23,10 @@
     "- belongsToDomain": "[[Artificial Intelligence]]",
     "- is-subclass-of": "[[Speech Recognition]]"
   },
-  "backlinks": [
-    "Telecollaboration and Telepresence"
-  ],
+  "backlinks": [],
   "wiki_links": [
-    "Artificial Intelligence",
-    "Speech Recognition"
+    "Speech Recognition",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0855",

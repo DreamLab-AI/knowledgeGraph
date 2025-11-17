@@ -24,15 +24,13 @@
     "- is-subclass-of": "[[Generative Ai]]"
   },
   "backlinks": [
-    "Transformers",
-    "AI-Augmented Software Engineering",
     "AI Agent System",
     "Large language models",
     "Generative AI"
   ],
   "wiki_links": [
-    "Generative Ai",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "Generative Ai"
   ],
   "ontology": {
     "term_id": "AI-0868",
