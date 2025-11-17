@@ -75,21 +75,21 @@
     "BC-0075-peer-to-peer-network"
   ],
   "wiki_links": [
-    "Smart Contract",
-    "Node",
-    "Economic Mechanism",
-    "Distributed Data Structure",
-    "BlockchainDomain",
+    "Distributed Ledger",
+    "W3C Blockchain Community Group",
     "Blockchain",
     "Block",
-    "Cryptographic System",
+    "Node",
+    "Distributed Data Structure",
+    "BlockchainDomain",
+    "Smart Contract",
     "NIST Blockchain Technology Overview",
+    "Distributed Protocol",
     "ConceptualLayer",
     "Transaction",
-    "W3C Blockchain Community Group",
-    "Distributed Protocol",
+    "Economic Mechanism",
     "ISO/IEC 23257:2021",
-    "Distributed Ledger"
+    "Cryptographic System"
   ],
   "ontology": {
     "term_id": "PC-0001",

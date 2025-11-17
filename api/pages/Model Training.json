@@ -27,20 +27,20 @@
     "Generative AI"
   ],
   "wiki_links": [
-    "LoRA DoRA etc",
-    "Mistral",
-    "SpatialComputing",
-    "DisplayTechnology",
-    "Robotics",
-    "RenderingEngine",
-    "ImmersiveExperience",
-    "ComputerVision",
-    "Large language models",
-    "Presence",
-    "MetaverseDomain",
-    "TrackingSystem",
     "HumanComputerInteraction",
-    "Politics, Law, Privacy"
+    "DisplayTechnology",
+    "Large language models",
+    "TrackingSystem",
+    "ImmersiveExperience",
+    "Robotics",
+    "Politics, Law, Privacy",
+    "LoRA DoRA etc",
+    "MetaverseDomain",
+    "Presence",
+    "RenderingEngine",
+    "ComputerVision",
+    "Mistral",
+    "SpatialComputing"
   ],
   "ontology": {
     "term_id": "mv-431164427647",

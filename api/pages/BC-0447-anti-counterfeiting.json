@@ -21,12 +21,12 @@
   "backlinks": [],
   "wiki_links": [
     "BC-0442-pharmaceutical-traceability",
+    "BC-0441-provenance-tracking",
+    "BC-0432-consortium-blockchain",
+    "BC-0444-luxury-goods-authentication",
     "BC-0446-supply-chain-traceability",
     "BlockchainDomain",
-    "BC-0441-provenance-tracking",
-    "BC-0444-luxury-goods-authentication",
     "BC-0426-hyperledger-fabric",
-    "BC-0432-consortium-blockchain",
     "BC-0476-aml-kyc-compliance"
   ],
   "ontology": {

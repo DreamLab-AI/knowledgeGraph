@@ -27,17 +27,17 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "NIST NISTIR",
-    "SecurityLayer",
-    "jones2008trust",
     "Lightning and Similar L2",
-    "IEEE 2418.1",
-    "Nostr protocol",
-    "CryptographicDomain",
-    "Open Source",
-    "ISO/IEC 23257:2021",
     "Blockchain Entity",
-    "CryptographicPrimitive"
+    "Nostr protocol",
+    "SecurityLayer",
+    "CryptographicPrimitive",
+    "IEEE 2418.1",
+    "CryptographicDomain",
+    "ISO/IEC 23257:2021",
+    "jones2008trust",
+    "NIST NISTIR",
+    "Open Source"
   ],
   "ontology": {
     "term_id": "BC-0038",

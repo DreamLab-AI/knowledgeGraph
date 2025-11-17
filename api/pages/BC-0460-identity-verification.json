@@ -20,19 +20,19 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "W3C",
-    "Sovrin Network",
+    "BC-0456-self-sovereign-identity|Self-Sovereign Identity",
+    "BC-0435-hyperledger-indy|Hyperledger Indy",
+    "BC-0457-decentralized-identifiers|Decentralised Identifiers",
     "BC-0459-digital-identity-wallet|wallets",
     "Trust Over IP Foundation",
-    "BC-0459-digital-identity-wallet|digital identity wallets",
-    "BC-0459-digital-identity-wallet|Digital Identity Wallet",
     "BlockchainDomain",
-    "BC-0457-decentralized-identifiers|Decentralised Identifiers",
-    "BC-0435-hyperledger-indy|Hyperledger Indy",
-    "eIDAS",
-    "BC-0456-self-sovereign-identity|Self-Sovereign Identity",
+    "BC-0459-digital-identity-wallet|Digital Identity Wallet",
+    "GDPR",
     "BC-0458-verifiable-credentials|Verifiable Credentials",
-    "GDPR"
+    "eIDAS",
+    "Sovrin Network",
+    "W3C",
+    "BC-0459-digital-identity-wallet|digital identity wallets"
   ],
   "ontology": {
     "term_id": "BC-0460",
