@@ -30,20 +30,20 @@
     "BC 0109 priority fee"
   ],
   "wiki_links": [
-    "Liquidity Mining",
     "Tokenomics Research",
-    "Token",
-    "BlockchainDomain",
-    "ConceptualLayer",
-    "Block Reward",
-    "Slashing",
-    "Mechanism Design Theory",
-    "Fee Burning",
+    "Transaction Fee Economics",
     "Staking Reward",
+    "Liquidity Mining",
+    "Token",
+    "ConceptualLayer",
+    "Slashing",
     "Gas Mechanism",
-    "Blockchain Entity",
+    "BlockchainDomain",
     "Transaction Fee",
-    "Transaction Fee Economics"
+    "Fee Burning",
+    "Mechanism Design Theory",
+    "Block Reward",
+    "Blockchain Entity"
   ],
   "ontology": {
     "term_id": "PC-0005",

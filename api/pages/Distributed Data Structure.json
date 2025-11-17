@@ -29,18 +29,18 @@
   ],
   "wiki_links": [
     "Byzantine Fault Tolerance Papers",
-    "Distributed Systems: Principles and Paradigms",
-    "BlockchainDomain",
-    "State Tree",
-    "ConceptualLayer",
     "CAP Theorem",
-    "Merkle Tree",
-    "Block Tree",
-    "Transaction Pool",
-    "Blockchain Entity",
     "Trie",
+    "Merkle Tree",
     "Distributed Hash Table",
-    "Blockchain"
+    "Block Tree",
+    "ConceptualLayer",
+    "Transaction Pool",
+    "Blockchain",
+    "State Tree",
+    "BlockchainDomain",
+    "Distributed Systems: Principles and Paradigms",
+    "Blockchain Entity"
   ],
   "ontology": {
     "term_id": "PC-0002",
