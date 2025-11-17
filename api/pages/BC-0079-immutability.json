@@ -26,16 +26,16 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "SecurityLayer",
-    "ISO/IEC 23257:2021",
-    "Digital Objects",
-    "UDA",
-    "IEEE 2418.1",
-    "NIST NISTIR",
-    "NetworkComponent",
-    "CryptographicDomain",
     "DIBA",
-    "Blockchain Entity"
+    "CryptographicDomain",
+    "UDA",
+    "Blockchain Entity",
+    "NIST NISTIR",
+    "IEEE 2418.1",
+    "Digital Objects",
+    "SecurityLayer",
+    "NetworkComponent",
+    "ISO/IEC 23257:2021"
   ],
   "ontology": {
     "term_id": "BC-0079",

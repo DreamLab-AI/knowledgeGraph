@@ -23,19 +23,19 @@
     "BC-0468-multi-sig-governance"
   ],
   "wiki_links": [
-    "BC-0468-multi-sig-governance",
+    "Gitcoin",
+    "BC-0461-decentralized-autonomous-organization",
+    "Mechanism Design",
+    "BC-0469-snapshot-voting",
     "BlockchainDomain",
     "Liberal Radicalism",
-    "Mechanism Design",
-    "BC-0461-decentralized-autonomous-organization",
-    "BC-0469-snapshot-voting",
     "Worldcoin",
-    "Gitcoin",
-    "BC-0462-on-chain-voting",
-    "BC-0470-dao-legal-structures",
+    "Commons Stack",
     "BC-0467-conviction-voting",
+    "BC-0470-dao-legal-structures",
     "Sybil Resistance",
-    "Commons Stack"
+    "BC-0462-on-chain-voting",
+    "BC-0468-multi-sig-governance"
   ],
   "ontology": {
     "term_id": "BC-0466",

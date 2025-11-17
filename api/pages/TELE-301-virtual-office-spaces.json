@@ -9,16 +9,16 @@
     "TELE-002-telecollaboration"
   ],
   "wiki_links": [
-    "TELE-027-spatial-platform",
-    "TELE-026-microsoft-mesh",
-    "TELE-028-horizon-workrooms",
     "TELE-0000-telepresence-domain",
-    "TELE-302-shared-whiteboards",
+    "TELE-020-virtual-reality-telepresence",
+    "TELE-026-microsoft-mesh",
+    "TELE-300-digital-twin-collaboration",
+    "TELE-028-horizon-workrooms",
     "TELE-002-telecollaboration",
     "MetaverseDomain",
-    "DigitalTwinCollaboration",
-    "TELE-300-digital-twin-collaboration",
-    "TELE-020-virtual-reality-telepresence"
+    "TELE-027-spatial-platform",
+    "TELE-302-shared-whiteboards",
+    "DigitalTwinCollaboration"
   ],
   "ontology": {
     "term_id": "TELE-301",
