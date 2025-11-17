@@ -11,11 +11,11 @@
   ],
   "wiki_links": [
     "TELE-002-telecollaboration",
-    "AIDomain",
+    "TELE-028-horizon-workrooms",
     "TELE-301-virtual-office-spaces",
     "TELE-0000-telepresence-domain",
-    "DigitalTwinCollaboration",
-    "TELE-028-horizon-workrooms"
+    "AIDomain",
+    "DigitalTwinCollaboration"
   ],
   "ontology": {
     "term_id": "TELE-302",

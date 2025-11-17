@@ -22,22 +22,22 @@
     "BC-0491-healthcare-records"
   ],
   "wiki_links": [
+    "W3C",
     "Trust Over IP Foundation",
     "BC-0457-decentralized-identifiers|DIDs",
-    "BC-0457-decentralized-identifiers|Decentralised Identifiers",
-    "BC-0460-identity-verification|Identity Verification",
+    "BC-0435-hyperledger-indy|Hyperledger Aries",
     "BC-0435-hyperledger-indy|Hyperledger Indy",
-    "BC-0458-verifiable-credentials|Verifiable Credentials",
+    "BlockchainDomain",
     "BC-0458-verifiable-credentials|Verifiable Presentations",
-    "GDPR",
-    "BC-0456-self-sovereign-identity|Self-Sovereign Identity",
-    "BC-0435-hyperledger-indy|Hyperledger",
+    "BC-0457-decentralized-identifiers|Decentralised Identifier",
+    "BC-0460-identity-verification|Identity Verification",
     "Sovrin Network",
     "eIDAS",
-    "BlockchainDomain",
-    "BC-0435-hyperledger-indy|Hyperledger Aries",
-    "W3C",
-    "BC-0457-decentralized-identifiers|Decentralised Identifier"
+    "BC-0435-hyperledger-indy|Hyperledger",
+    "BC-0457-decentralized-identifiers|Decentralised Identifiers",
+    "BC-0456-self-sovereign-identity|Self-Sovereign Identity",
+    "GDPR",
+    "BC-0458-verifiable-credentials|Verifiable Credentials"
   ],
   "ontology": {
     "term_id": "BC-0459",

@@ -28,21 +28,21 @@
     "BC-0074-light-node"
   ],
   "wiki_links": [
+    "ComputerVision",
     "Apple",
-    "MetaverseDomain",
-    "Robotics",
-    "ComfyUI",
-    "SpatialComputing",
-    "HumanComputerInteraction",
-    "relighting",
+    "RenderingEngine",
     "DisplayTechnology",
     "Global lighting | Image Based Lighting",
-    "Presence",
-    "AI Video",
-    "RenderingEngine",
-    "ComputerVision",
     "TrackingSystem",
-    "ImmersiveExperience"
+    "relighting",
+    "ComfyUI",
+    "SpatialComputing",
+    "MetaverseDomain",
+    "Presence",
+    "ImmersiveExperience",
+    "AI Video",
+    "HumanComputerInteraction",
+    "Robotics"
   ],
   "ontology": {
     "term_id": "mv-216922492684",

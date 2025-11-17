@@ -31,12 +31,12 @@
   ],
   "wiki_links": [
     "Resource Control",
-    "Base Fee",
-    "Priority Fee",
-    "Blockchain",
-    "Gas Price",
     "Transaction Fee",
-    "Transaction Parameter"
+    "Priority Fee",
+    "Transaction Parameter",
+    "Gas Price",
+    "Base Fee",
+    "Blockchain"
   ],
   "ontology": {
     "term_id": "BC-0107",

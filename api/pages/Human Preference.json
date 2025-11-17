@@ -25,13 +25,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "System",
-    "Machine Learning",
-    "Neural Network Component",
     "Component",
-    "Artificial Intelligence",
+    "Machine Learning",
     "Attention Mechanism",
-    "Ai Governance"
+    "System",
+    "Neural Network Component",
+    "Ai Governance",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0801",
