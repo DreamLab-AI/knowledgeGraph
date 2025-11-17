@@ -27,19 +27,19 @@
     "Daniel AI creative technologist"
   ],
   "wiki_links": [
-    "3D and 4D",
-    "HumanComputerInteraction",
-    "RenderingEngine",
+    "Presence",
     "DisplayTechnology",
+    "RenderingEngine",
+    "SpatialComputing",
+    "TrackingSystem",
+    "Robotics",
     "AI Video",
     "MetaverseDomain",
     "ImmersiveExperience",
-    "SpatialComputing",
-    "Presence",
-    "Stable Diffusion",
-    "TrackingSystem",
-    "Robotics",
-    "ComputerVision"
+    "HumanComputerInteraction",
+    "3D and 4D",
+    "ComputerVision",
+    "Stable Diffusion"
   ],
   "ontology": {
     "term_id": "mv-44124548050",

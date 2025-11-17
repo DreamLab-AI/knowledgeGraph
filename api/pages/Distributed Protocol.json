@@ -30,19 +30,19 @@
     "Agreement Protocol"
   ],
   "wiki_links": [
-    "Gossip Protocol",
-    "BlockchainDomain",
+    "ConceptualLayer",
     "Distributed Systems: Concepts and Design",
     "Byzantine Agreement Protocols",
-    "State Synchronization Protocol",
     "Consensus Mechanism",
-    "Transaction Broadcast Protocol",
-    "Peer Discovery Protocol",
-    "ConceptualLayer",
-    "Peer-to-Peer Networks",
-    "Agreement Protocol",
+    "BlockchainDomain",
     "Blockchain Entity",
-    "Block Propagation Protocol"
+    "Block Propagation Protocol",
+    "Agreement Protocol",
+    "Peer Discovery Protocol",
+    "Gossip Protocol",
+    "State Synchronization Protocol",
+    "Transaction Broadcast Protocol",
+    "Peer-to-Peer Networks"
   ],
   "ontology": {
     "term_id": "PC-0006",

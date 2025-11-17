@@ -20,14 +20,14 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "BlockchainDomain",
+    "BC-0441-provenance-tracking",
     "BC-0446-supply-chain-traceability",
-    "BC-0432-consortium-blockchain",
+    "BlockchainDomain",
     "BC-0476-aml-kyc-compliance",
-    "BC-0442-pharmaceutical-traceability",
-    "BC-0444-luxury-goods-authentication",
+    "BC-0432-consortium-blockchain",
     "BC-0426-hyperledger-fabric",
-    "BC-0441-provenance-tracking"
+    "BC-0442-pharmaceutical-traceability",
+    "BC-0444-luxury-goods-authentication"
   ],
   "ontology": {
     "term_id": "BC-0447",
