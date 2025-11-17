@@ -24,19 +24,19 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ComputerVision",
-    "Project: Automated Podcast",
-    "RenderingEngine",
-    "DisplayTechnology",
-    "TrackingSystem",
     "Speech and voice",
-    "SpatialComputing",
+    "DisplayTechnology",
     "MetaverseDomain",
-    "Presence",
-    "ImmersiveExperience",
     "AI Video",
+    "ComputerVision",
+    "TrackingSystem",
     "HumanComputerInteraction",
-    "Robotics"
+    "Robotics",
+    "Presence",
+    "Project: Automated Podcast",
+    "SpatialComputing",
+    "RenderingEngine",
+    "ImmersiveExperience"
   ],
   "ontology": {
     "term_id": "mv-138669022002",

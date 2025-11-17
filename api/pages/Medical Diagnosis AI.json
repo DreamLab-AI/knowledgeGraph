@@ -14,10 +14,10 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "MetaverseDomain",
-    "Treatment Planning AI",
     "Medical AI",
-    "Clinical Decision Support"
+    "MetaverseDomain",
+    "Clinical Decision Support",
+    "Treatment Planning AI"
   ],
   "ontology": {
     "term_id": "AI-0343",

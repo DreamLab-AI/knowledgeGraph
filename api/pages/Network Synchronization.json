@@ -33,13 +33,13 @@
   "wiki_links": [
     "Nostr",
     "NIST NISTIR",
-    "IEEE 2418.1",
-    "schnorr1989efficient",
-    "ConsensusDomain",
-    "ConsensusProtocol",
-    "ProtocolLayer",
     "ISO/IEC 23257:2021",
     "Lightning Network",
+    "IEEE 2418.1",
+    "ProtocolLayer",
+    "ConsensusProtocol",
+    "schnorr1989efficient",
+    "ConsensusDomain",
     "Blockchain Entity"
   ],
   "ontology": {
