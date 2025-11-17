@@ -28,22 +28,22 @@
     "BC-0037-public-key"
   ],
   "wiki_links": [
+    "Hardware and Edge",
     "3DRenderingEngine",
+    "PhysicsEngine",
     "VirtualSociety",
-    "NetworkProtocol",
-    "DatabaseSystem",
-    "MetaverseDomain",
-    "DigitalEconomy",
-    "Avatar",
-    "Telethrone",
-    "SocialInteraction",
     "WorldSpace",
+    "Telethrone",
     "SceneGraph",
     "MetaversePlatform",
-    "PhysicsEngine",
+    "DigitalEconomy",
+    "Metaverse",
     "National Industrial Centre for Virtual Environments",
-    "Hardware and Edge",
-    "Metaverse"
+    "Avatar",
+    "NetworkProtocol",
+    "DatabaseSystem",
+    "SocialInteraction",
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "mv-501080407130",

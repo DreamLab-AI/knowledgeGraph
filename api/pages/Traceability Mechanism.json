@@ -28,21 +28,21 @@
     "AI Governance Principle"
   ],
   "wiki_links": [
-    "Metadata Management",
-    "IEEE 2801 Recommended Practice",
     "ConceptualLayer",
-    "Model Versioning",
+    "EU AI Act",
     "Change Management",
     "AI Governance Principle",
-    "Decision Logging",
-    "ISO/IEC 23053 AI Framework",
     "AIEthicsDomain",
-    "NIST AI Risk Management Framework",
-    "Data Provenance",
+    "Lineage Tracking",
     "Tamper-Evident Logging",
-    "EU AI Act",
     "Audit Trail",
-    "Lineage Tracking"
+    "IEEE 2801 Recommended Practice",
+    "Data Provenance",
+    "Metadata Management",
+    "Model Versioning",
+    "NIST AI Risk Management Framework",
+    "Decision Logging",
+    "ISO/IEC 23053 AI Framework"
   ],
   "ontology": {
     "term_id": "PC-0013",

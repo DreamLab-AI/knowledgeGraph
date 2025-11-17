@@ -26,20 +26,20 @@
     "Planning Kanban - currently broken"
   ],
   "wiki_links": [
+    "Neocadia",
+    "TrackingSystem",
+    "Player Two code",
+    "HumanComputerInteraction",
+    "ComfyUI",
+    "DisplayTechnology",
+    "ImmersiveExperience",
+    "Presence",
     "AI Video",
     "SpatialComputing",
-    "HumanComputerInteraction",
-    "MetaverseDomain",
-    "ImmersiveExperience",
-    "TrackingSystem",
-    "DisplayTechnology",
-    "Neocadia",
+    "Robotics",
     "RenderingEngine",
-    "Presence",
-    "ComputerVision",
-    "Player Two code",
-    "ComfyUI",
-    "Robotics"
+    "MetaverseDomain",
+    "ComputerVision"
   ],
   "ontology": {
     "term_id": "mv-180849186917",

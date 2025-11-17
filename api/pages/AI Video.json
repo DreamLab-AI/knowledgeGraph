@@ -37,20 +37,20 @@
     "BC-0074-light-node"
   ],
   "wiki_links": [
-    "SpatialComputing",
-    "HumanComputerInteraction",
-    "MetaverseDomain",
-    "ImmersiveExperience",
-    "TrackingSystem",
     "MotionDirector",
-    "LoRA DoRA etc",
-    "DisplayTechnology",
-    "RenderingEngine",
-    "Presence",
-    "ComputerVision",
+    "TrackingSystem",
+    "HumanComputerInteraction",
+    "Update Cycle",
     "ComfyUI",
+    "DisplayTechnology",
+    "LoRA DoRA etc",
+    "ImmersiveExperience",
+    "Presence",
+    "SpatialComputing",
     "Robotics",
-    "Update Cycle"
+    "RenderingEngine",
+    "MetaverseDomain",
+    "ComputerVision"
   ],
   "ontology": {
     "term_id": "mv-449611067545",

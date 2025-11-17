@@ -29,20 +29,20 @@
     "Generative AI"
   ],
   "wiki_links": [
-    "SpatialComputing",
-    "HumanComputerInteraction",
-    "MetaverseDomain",
-    "ImmersiveExperience",
     "TrackingSystem",
-    "DisplayTechnology",
+    "Machine Learning",
+    "HumanComputerInteraction",
     "Deep Learning",
     "Artificial Intelligence",
-    "RenderingEngine",
+    "DisplayTechnology",
+    "Large language models",
+    "ImmersiveExperience",
     "Presence",
-    "ComputerVision",
-    "Machine Learning",
+    "SpatialComputing",
     "Robotics",
-    "Large language models"
+    "RenderingEngine",
+    "MetaverseDomain",
+    "ComputerVision"
   ],
   "ontology": {
     "term_id": "mv-124060553964",
