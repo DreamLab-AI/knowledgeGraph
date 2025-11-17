@@ -1,0 +1,54 @@
+{
+  "title": "Singularity",
+  "content": "- ### OntologyBlock\n  id:: singularity-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-734677845865\n\t- preferred-term:: Singularity\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on singularity.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:Singularity\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: singularity-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: singularity-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:Singularity))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:Singularity mv:ConceptualEntity)\n\t\t  SubClassOf(mv:Singularity mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:Singularity\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:Singularity \"Singularity\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:Singularity \"A component of the metaverse ecosystem focusing on singularity.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:Singularity \"mv-734677845865\"^^xsd:string)\n\t\t  ```\n\npublic:: true\n\n\t- The concept of the technological singularity has captivated the minds of futurists, technologists, and philosophers for decades.\n- The term \"singularity\" in this context was popularised by mathematician and science fiction author Vernor Vinge in his 1993 essay \"[The Coming Technological Singularity.](https://accelerating.org/articles/comingtechsingularity)\"\n- Vinge's ideas were further expanded upon by inventor and futurist Ray Kurzweil in his 2005 book \"The Singularity Is Near.\"\n- # Naunce of interpretation\n\t- There is a split in interpretations of the singularity, contrasting the event horizon perspective with the omega point analysis, but both can incorporate the idea of an event horizon and the significance of the present moment.\n\t- ## The Event Horizon Interpretation\n\t\t- Vinge's conception of the singularity likens it to a boundary beyond which we cannot see or predict, a fast take-off style event on an exponential curve.\n\t\t- As technology accelerates at an exponential rate, we may reach a point where the pace of change becomes incomprehensible to human minds.\n\t\t- This technological crunch marks a point beyond which our current understanding of the world breaks down, and the future becomes essentially unknowable, potentially even to those experiencing it.\n\t\t- The Event Horizon interpretation emphasizes the breakdown of knowability and predictability beyond a certain threshold of technological advancement.\n\t- ## The Omega Point Interpretation\n\t\t- The Omega Point, as conceived by French Jesuit priest and palaeontologist Pierre Teilhard de Chardin, represents a future state of maximum complexity and consciousness, towards which the universe is evolving.\n\t\t- Kurzweil argues that the singularity is not an impenetrable boundary but rather a point of transition, beyond which intelligence and technology will continue to evolve and expand, ultimately leading to a state of unprecedented possibilities.\n\t\t- The Omega Point interpretation allows for a greater degree of human agency and participation in the process of reaching the singularity and shaping the future beyond it.\n\t\t- This perspective suggests that through the merger of human intelligence with advanced technology, we can actively shape and direct the future evolution of consciousness and complexity.\n- ## 'Now' as an Event Horizon\n\t- Many observers familiar with the field feel that we may have already passed through an event horizon, making it difficult or impossible to go back to a pre-singularity state.\n\t- The current moment can be seen as a boundary condition in both the Event Horizon and Omega Point interpretations.\n\t- In the Event Horizon interpretation, this boundary represents a point beyond which the future becomes unknowable and unpredictable due to the rapid acceleration of technological progress.\n\t- In the Omega Point interpretation, the event horizon represents a critical point in the trajectory towards the Omega Point, beyond which the future becomes increasingly determined by the merger of human intelligence and advanced technology.\n\t- ## Fast vs. Slow Takeoff Scenarios\n\t\t- The possibility of fast or slow takeoff scenarios can exist within both interpretations, depending on the rate at which technological progress accelerates and the degree to which humans can maintain agency and control over the process.\n\t\t- A fast takeoff scenario aligns more closely with the Event Horizon interpretation, suggesting a rapid and potentially unpredictable transition to a post-singularity state.\n\t\t- A slow takeoff scenario is more compatible with the Omega Point interpretation, allowing for a more gradual and collaborative approach to the merger of human intelligence and advanced technology.\n- ## Key Issues and Tensions\n\t- How much risk does advanced AI development pose? Is it an existential threat to humanity?\n\t- Do the potential benefits of faster AI progress outweigh the risks?\n\t- How tractable are proposals for making advanced AI systems safe and aligned with human values?\n\t- To what extent, if any, should governments regulate or restrict AI development? Can it be left to industry?\n\t- Will AI liberate humanity or lead to greater inequality, less human agency and new dangers?\n\t- What moral philosophy should guide these decisions - utilitarianism, human-centric values, or an AI-centric ethic?\n- ## Areas of Agreement and Disagreement\n\t- Both sides agree advanced AI will be transformative, but EAs worry more about downside risks\n\t- Many EAs argue AI safety is critical because the risks are so catastrophic; delaying AI is worth it\n\t- EAccs argue AI progress will be net positive and safety concerns are overblown; delays will cause harm\n\t- EAs and EAccs both worry heavy-handed government AI regulation could be damaging, but EAccs are more universally skeptical of regulation\n\t- EAccs are more open to transformative AI radically changing society; EAs want to preserve human agency\n\t- Both sides agree AI development shouldn't be monopolised by a few corporations, but differ on solutions.\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "singularity-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-734677845865",
+    "- preferred-term": "Singularity",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on singularity.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:Singularity",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]",
+    "public": "true"
+  },
+  "backlinks": [
+    "Block Height",
+    "Social contract and jobs",
+    "rb-0031-singularity",
+    "artificial superintelligence",
+    "Convergence",
+    "Introduction to me",
+    "BC-0011-block-height"
+  ],
+  "wiki_links": [
+    "ComputerVision",
+    "Presence",
+    "MetaverseDomain",
+    "TrackingSystem",
+    "DisplayTechnology",
+    "RenderingEngine",
+    "ImmersiveExperience",
+    "Robotics",
+    "HumanComputerInteraction",
+    "SpatialComputing"
+  ],
+  "ontology": {
+    "term_id": "mv-734677845865",
+    "preferred_term": "Singularity",
+    "definition": "A component of the metaverse ecosystem focusing on singularity.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Stablecoin Token",
+  "content": "- ### OntologyBlock\n  id:: stablecointoken-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0514\n    - filename-history:: [\"BC-0514-stablecointoken.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0514\n    - preferred-term:: Stablecoin Token\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: A token designed to maintain stable value by pegging to external assets like fiat currencies, commodities, or using algorithmic mechanisms.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:StablecoinToken\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### Relationships\n    - is-subclass-of:: [[Fungible Token]]\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :StablecoinToken))\n      (SubClassOf :StablecoinToken :FungibleToken)\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :StablecoinToken \"Stablecoin Token\"@en)\n      (AnnotationAssertion rdfs:comment :StablecoinToken\n        \"A token designed to maintain stable value by pegging to external assets like fiat currencies, commodities, or using algorithmic mechanisms.\"@en)\n      ```\n\n- ## About Stablecoin Token\n  A token designed to maintain stable value by pegging to external assets like fiat currencies, commodities, or using algorithmic mechanisms.\n  \n  ### Examples\n  - USDC (fiat-backed), DAI (crypto-collateralized), USDT (Tether)\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "stablecointoken-ontology",
+    "collapsed": "true",
+    "- domain-prefix": "BC",
+    "- sequence-number": "0514",
+    "- filename-history": "[\"BC-0514-stablecointoken.md\"]",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0514",
+    "- preferred-term": "Stablecoin Token",
+    "- source-domain": "metaverse",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-11-13",
+    "- definition": "A token designed to maintain stable value by pegging to external assets like fiat currencies, commodities, or using algorithmic mechanisms.",
+    "- maturity": "established",
+    "- source": "Chimera Prime Research",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:StablecoinToken",
+    "- belongsToDomain": "[[Blockchain]]",
+    "- is-subclass-of": "[[Fungible Token]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "Blockchain",
+    "Fungible Token"
+  ],
+  "ontology": {
+    "term_id": "BC-0514",
+    "preferred_term": "Stablecoin Token",
+    "definition": "A token designed to maintain stable value by pegging to external assets like fiat currencies, commodities, or using algorithmic mechanisms.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

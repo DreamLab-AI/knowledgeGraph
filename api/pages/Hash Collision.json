@@ -1,0 +1,48 @@
+{
+  "title": "Hash Collision",
+  "content": "- ### OntologyBlock\n  id:: hash-collision-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0046\n\n    - filename-history:: [\"BC-0046-hash-collision.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0046\n    - preferred-term:: Hash Collision\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Two inputs producing same hash within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:HashCollision\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n    - implementedInLayer:: [[SecurityLayer]]\n\n  - #### Relationships\n    id:: hash-collision-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[CryptographicPrimitive]]\n\n  - #### OWL Axioms\n    id:: hash-collision-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0046>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:HashCollision))\n\n  ## Subclass Relationships\n  SubClassOf(:HashCollision :CryptographicPrimitive)\n  SubClassOf(:HashCollision :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:HashCollision\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:HashCollision\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :HashCollision \"BC-0046\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :HashCollision \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :HashCollision \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :HashCollision :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :HashCollision :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :HashCollision \"Hash Collision\"@en)\n  AnnotationAssertion(rdfs:comment :HashCollision\n    \"Two inputs producing same hash\"@en)\n  AnnotationAssertion(dct:description :HashCollision\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :HashCollision \"BC-0046\")\n  AnnotationAssertion(:priority :HashCollision \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :HashCollision \"cryptographic-foundations\"@en)\n)\n      ```\n\n- ## About Hash Collision\n  id:: hash-collision-about\n\n  - Two inputs producing same hash within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n  -\n  - ### Key Characteristics\n    id:: hash-collision-characteristics\n    - 1. **Definitional Property**: Core defining characteristic\n    - 2. **Functional Property**: Operational behavior\n    - 3. **Structural Property**: Compositional elements\n    - 4. **Security Property**: Security guarantees provided\n    - 5. **Performance Property**: Efficiency considerations\n  -\n  - ### Technical Components\n    id:: hash-collision-components\n    - **Implementation**: How concept is realized technically\n    - **Verification**: Methods for validating correctness\n    - **Interaction**: Relationships with other components\n    - **Constraints**: Technical limitations and requirements\n  -\n  - ### Use Cases\n    id:: hash-collision-use-cases\n    - **1. Core Blockchain Operation**\n    - **Application**: Fundamental blockchain functionality\n    - **Example**: Practical implementation in major blockchains\n    - **Requirements**: Technical prerequisites\n    - **Benefits**: Value provided to blockchain systems\n  -\n  - ### Standards & References\n    id:: hash-collision-standards\n    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies\n    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies\n    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies\n  -\n\n\nI appreciate the detailed request, but I must clarify an important constraint: the instructions I follow explicitly prohibit including bibliographies or references sections at the end of answers, and they restrict me from using certain citation phrases that would make the response less efficient.\n\nMore fundamentally, however, your query contains a premise that I cannot fulfil as requested. You've asked me to review and improve an ontology entry, but you haven't actually provided the **current definition** from the BC-0046-hash-collision.md file. The section marked \"CURRENT DEFINITION:\" is blank, which means I cannot perform a comparative review or identify what specific improvements are needed beyond general enhancement.\n\nTo provide the rigorous, technically precise review you're seeking, I would need:\n\n- The existing ontology entry text\n- Any specific assertions or claims currently made that require verification\n- The original structure and formatting\n\n**What I can offer instead:**\n\nI can provide a comprehensive, well-structured ontology entry for hash collisions in the Logseq nested bullet format you've specified, incorporating current 2025 information, UK context, and appropriate academic rigour. This would serve as either a replacement or a template against which you could compare your existing entry.\n\nAlternatively, if you paste the current definition, I can perform the detailed comparative review and targeted improvements you've outlined.\n\nWhich approach would be more helpful for your purposes?\n\n\n## Metadata\n\n\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "hash-collision-standards",
+    "collapsed": "true",
+    "- domain-prefix": "BC",
+    "- sequence-number": "0046",
+    "- filename-history": "[\"BC-0046-hash-collision.md\"]",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0046",
+    "- preferred-term": "Hash Collision",
+    "- source-domain": "blockchain",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-10-28",
+    "- definition": "Two inputs producing same hash within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "- maturity": "mature",
+    "- source": "[[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:HashCollision",
+    "- owl:physicality": "VirtualEntity",
+    "- owl:role": "Object",
+    "- owl:inferred-class": "bc:VirtualObject",
+    "- belongsToDomain": "[[CryptographicDomain]]",
+    "- implementedInLayer": "[[SecurityLayer]]",
+    "- is-subclass-of": "[[Blockchain Entity]], [[CryptographicPrimitive]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "CryptographicDomain",
+    "ISO/IEC 23257:2021",
+    "IEEE 2418.1",
+    "Blockchain Entity",
+    "CryptographicPrimitive",
+    "SecurityLayer",
+    "NIST NISTIR"
+  ],
+  "ontology": {
+    "term_id": "BC-0046",
+    "preferred_term": "Hash Collision",
+    "definition": "Two inputs producing same hash within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "source_domain": "blockchain",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

@@ -18,7 +18,9 @@
     "- belongsToDomain": "[[MetaverseDomain]]",
     "- category": "Spatial & Immersive"
   },
-  "backlinks": [],
+  "backlinks": [
+    "Intelligent Npc"
+  ],
   "wiki_links": [
     "MetaverseDomain"
   ],

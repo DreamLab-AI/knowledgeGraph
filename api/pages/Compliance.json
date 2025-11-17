@@ -21,12 +21,15 @@
     "- belongsToDomain": "[[MetaverseDomain]]"
   },
   "backlinks": [
+    "x402 and l402 payment protocols",
     "AI Model Card",
-    "Runes and Glyphs"
+    "Bitcoin Centralisation Risks",
+    "Runes and Glyphs",
+    "Bitcoin related links"
   ],
   "wiki_links": [
-    "Open Source",
-    "MetaverseDomain"
+    "MetaverseDomain",
+    "Open Source"
   ],
   "ontology": {
     "term_id": "RB-0038",

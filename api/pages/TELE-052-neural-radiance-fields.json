@@ -4,17 +4,18 @@
   "properties": {},
   "backlinks": [
     "TELE-051-3d-gaussian-splatting",
-    "TELE-100-ai-avatars"
+    "TELE-100-ai-avatars",
+    "TELE-0000-telepresence-domain"
   ],
   "wiki_links": [
     "TELE-0000-telepresence-domain",
-    "TELE-053-volumetric-video-conferencing",
-    "TELE-051-3d-gaussian-splatting",
-    "TELE-020-virtual-reality-telepresence",
-    "AIDomain",
     "NeuralRenderingTelepresence",
+    "TELE-050-neural-rendering-telepresence",
+    "TELE-020-virtual-reality-telepresence",
     "TELE-060-instant-ngp",
-    "TELE-050-neural-rendering-telepresence"
+    "AIDomain",
+    "TELE-051-3d-gaussian-splatting",
+    "TELE-053-volumetric-video-conferencing"
   ],
   "ontology": {
     "term_id": "TELE-052",

@@ -1,0 +1,39 @@
+{
+  "title": "ERC-721 Token",
+  "content": "- ### OntologyBlock\n  id:: erc721token-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0516\n    - filename-history:: [\"BC-0516-erc721token.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0516\n    - preferred-term:: ERC-721 Token\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: A non-fungible token implementing the ERC-721 standard, a free, open standard for building unique tokens on Ethereum blockchain with trackable ownership via token identification numbers and ownerOf function.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:ERC721Token\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### Relationships\n    - is-subclass-of:: [[Non Fungible Token]]\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :ERC721Token))\n      (SubClassOf :ERC721Token :NonFungibleToken)\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :ERC721Token \"ERC-721 Token\"@en)\n      (AnnotationAssertion rdfs:comment :ERC721Token\n        \"A non-fungible token implementing the ERC-721 standard, a free, open standard for building unique tokens on Ethereum blockchain with trackable ownership via token identification numbers and ownerOf function.\"@en)\n      ```\n\n- ## About ERC-721 Token\n  A non-fungible token implementing the ERC-721 standard, a free, open standard for building unique tokens on Ethereum blockchain with trackable ownership via token identification numbers and ownerOf function.\n  \n  Required identifiers: name, symbol, contract address. URI mechanism assigns unique metadata per NFT. Standard methods: ownerOf, transferFrom, approve, safeTransferFrom, tokenURI.\n  \n  ### Examples\n  - CryptoKitties, Bored Ape Yacht Club, ENS domains\n  \n  ### Historical Context\n  - Proposed by William Entriken, Dieter Shirley, Jacob Evans, Nastassia Sachs in January 2018.\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "erc721token-ontology",
+    "collapsed": "true",
+    "- domain-prefix": "BC",
+    "- sequence-number": "0516",
+    "- filename-history": "[\"BC-0516-erc721token.md\"]",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0516",
+    "- preferred-term": "ERC-721 Token",
+    "- source-domain": "metaverse",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-11-13",
+    "- definition": "A non-fungible token implementing the ERC-721 standard, a free, open standard for building unique tokens on Ethereum blockchain with trackable ownership via token identification numbers and ownerOf function.",
+    "- maturity": "established",
+    "- source": "Chimera Prime Research",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:ERC721Token",
+    "- belongsToDomain": "[[Blockchain]]",
+    "- is-subclass-of": "[[Non Fungible Token]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "Non Fungible Token",
+    "Blockchain"
+  ],
+  "ontology": {
+    "term_id": "BC-0516",
+    "preferred_term": "ERC-721 Token",
+    "definition": "A non-fungible token implementing the ERC-721 standard, a free, open standard for building unique tokens on Ethereum blockchain with trackable ownership via token identification numbers and ownerOf function.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

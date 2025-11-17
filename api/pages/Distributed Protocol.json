@@ -27,22 +27,24 @@
   "backlinks": [
     "Consensus Mechanism",
     "Blockchain Entity",
-    "Agreement Protocol"
+    "Agreement Protocol",
+    "BC-0051-consensus-mechanism",
+    "ONTOLOGY_TECHNICAL_DETAILS"
   ],
   "wiki_links": [
-    "Block Propagation Protocol",
-    "Byzantine Agreement Protocols",
-    "Blockchain Entity",
+    "Peer Discovery Protocol",
     "Transaction Broadcast Protocol",
+    "Gossip Protocol",
+    "State Synchronization Protocol",
+    "Byzantine Agreement Protocols",
     "Agreement Protocol",
+    "Blockchain Entity",
+    "Peer-to-Peer Networks",
+    "BlockchainDomain",
     "Distributed Systems: Concepts and Design",
     "Consensus Mechanism",
-    "BlockchainDomain",
-    "State Synchronization Protocol",
-    "Peer-to-Peer Networks",
-    "ConceptualLayer",
-    "Gossip Protocol",
-    "Peer Discovery Protocol"
+    "Block Propagation Protocol",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "PC-0006",

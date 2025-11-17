@@ -1,0 +1,52 @@
+{
+  "title": "Reasoning",
+  "content": "- ### OntologyBlock\n  id:: reasoning-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-485625516345\n\t- preferred-term:: Reasoning\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on reasoning.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:Reasoning\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: reasoning-relationships\n\t\t- is-part-of:: [[VirtualWorld]], [[MetaversePlatform]]\n\t\t- requires:: [[DigitalIdentity]], [[AuthenticationService]]\n\t\t- enables:: [[SocialInteraction]], [[Presence]], [[UserRepresentation]]\n\t\t- has-property:: [[Appearance]], [[Customization]], [[Animation]]\n\n\t- #### OWL Axioms\n\t  id:: reasoning-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:Reasoning))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:Reasoning mv:VirtualEntity)\n\t\t  SubClassOf(mv:Reasoning mv:Object)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:Reasoning\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:Reasoning \"Reasoning\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:Reasoning \"A component of the metaverse ecosystem focusing on reasoning.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:Reasoning \"mv-485625516345\"^^xsd:string)\n\t\t  ```\n\npublic:: true\n\n- Natural Language Embedded Programs ([NLEP](https://news.mit.edu/2024/technique-improves-reasoning-capabilities-large-language-models-0614).) is a technique developed by researchers at MIT that enables large language models (LLMs) like GPT-4 to perform hybrid language-symbolic reasoning, combining natural language understanding with math, symbolic reasoning, and API calling capabilities[](https://arxiv.org/html/2309.10814v2)[](https://news.mit.edu/2024/technique-improves-reasoning-capabilities-large-language-models-0614).\n\t- NLEPs are programs containing both programming code (e.g., Python) and natural language comments/representations[](https://arxiv.org/html/2309.10814v2).\n\t- The LLM generates step-by-step programs with natural language comments guiding the program generation, structured knowledge represented in data structures, and natural language responses constructed from program variables[](https://arxiv.org/html/2309.10814v2).\n\t- This hybrid approach combines the benefits of language-based reasoning with program synthesis, enabling accurate computations and generalized problem-solving across various tasks[](https://arxiv.org/html/2309.10814v2)[](https://news.mit.edu/2024/technique-improves-reasoning-capabilities-large-language-models-0614).\n\t- NLEPs achieved over 90% accuracy on symbolic reasoning, question answering, instruction following, and text classification tasks, outperforming task-specific prompting methods and exhibiting better generalization[](https://arxiv.org/html/2309.10814v2)[](https://news.mit.edu/2024/technique-improves-reasoning-capabilities-large-language-models-0614).\n\t- NLEPs can improve data privacy by running programs locally without sending sensitive data to external models[](https://news.mit.edu/2024/technique-improves-reasoning-capabilities-large-language-models-0614).\n\t- The technique relies on the LLM's program generation capability, so it works better with larger models trained on extensive datasets\n\t- The NLEP research was conducted by Hongyin Luo, Tianhua Zhang, Jiaxin Ge, Yoon Kim, James Glass, and others at MIT[](https://arxiv.org/html/2309.10814v2)[](https://news.mit.edu/2024/technique-improves-reasoning-capabilities-large-language-models-0614). An open-source implementation called LangCode is available on [GitHub](https://github.com/luohongyin/LangCode), enabling interactive NLEP generation on platforms like Colab and Jupyter notebooks.\n- ## Deepseek R1\n\t- [(7) DeepSeek on X: \"🚀 DeepSeek-R1-Lite-Preview is now live: unleashing supercharged reasoning power! 🔍 o1-preview-level performance on AIME & MATH benchmarks. 💡 Transparent thought process in real-time. 🛠️ Open-source models & API coming soon! 🌐 Try it now at https://t.co/v1TFy7LHNy #DeepSeek https://t.co/saslkq4a1s\" / X](https://x.com/deepseek_ai/status/1859200145037869485/photo/1)\n\t- ![Gc0zl7WboAAnCTS.jpeg](../assets/Gc0zl7WboAAnCTS_1732126303552_0.jpeg)\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "reasoning-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-485625516345",
+    "- preferred-term": "Reasoning",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on reasoning.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:Reasoning",
+    "- owl:physicality": "VirtualEntity",
+    "- owl:role": "Object",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- is-part-of": "[[VirtualWorld]], [[MetaversePlatform]]",
+    "- requires": "[[DigitalIdentity]], [[AuthenticationService]]",
+    "- enables": "[[SocialInteraction]], [[Presence]], [[UserRepresentation]]",
+    "- has-property": "[[Appearance]], [[Customization]], [[Animation]]",
+    "public": "true"
+  },
+  "backlinks": [
+    "Transformers",
+    "Large language models",
+    "Generative AI"
+  ],
+  "wiki_links": [
+    "VirtualWorld",
+    "Animation",
+    "MetaversePlatform",
+    "Presence",
+    "MetaverseDomain",
+    "Appearance",
+    "DigitalIdentity",
+    "Customization",
+    "AuthenticationService",
+    "UserRepresentation",
+    "SocialInteraction"
+  ],
+  "ontology": {
+    "term_id": "mv-485625516345",
+    "preferred_term": "Reasoning",
+    "definition": "A component of the metaverse ecosystem focusing on reasoning.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

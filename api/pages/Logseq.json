@@ -27,20 +27,20 @@
     "Introduction to me"
   ],
   "wiki_links": [
-    "RenderingEngine",
-    "SpatialComputing",
+    "ComputerVision",
     "Presence",
     "Large language models",
-    "Node based visual interfaces",
-    "ComfyUI",
-    "ComputerVision",
-    "Robotics",
     "MetaverseDomain",
-    "DisplayTechnology",
     "TrackingSystem",
+    "DisplayTechnology",
+    "RenderingEngine",
+    "ComfyUI",
     "ImmersiveExperience",
+    "Robotics",
+    "Node based visual interfaces",
     "HumanComputerInteraction",
-    "Autogen"
+    "Autogen",
+    "SpatialComputing"
   ],
   "ontology": {
     "term_id": "mv-183430311235",

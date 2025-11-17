@@ -25,22 +25,25 @@
     "- is-subclass-of": "[[Blockchain Entity]]"
   },
   "backlinks": [
-    "Blockchain Entity"
+    "BC-0001-blockchain",
+    "Blockchain Entity",
+    "ONTOLOGY_ANALYSIS_REPORT",
+    "ONTOLOGY_TECHNICAL_DETAILS"
   ],
   "wiki_links": [
-    "State Tree",
-    "Blockchain Entity",
-    "Transaction Pool",
-    "Distributed Hash Table",
-    "CAP Theorem",
-    "BlockchainDomain",
-    "Byzantine Fault Tolerance Papers",
     "Trie",
-    "Blockchain",
-    "ConceptualLayer",
+    "Distributed Systems: Principles and Paradigms",
     "Merkle Tree",
+    "Byzantine Fault Tolerance Papers",
+    "Transaction Pool",
+    "Blockchain",
+    "Blockchain Entity",
     "Block Tree",
-    "Distributed Systems: Principles and Paradigms"
+    "BlockchainDomain",
+    "CAP Theorem",
+    "Distributed Hash Table",
+    "State Tree",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "PC-0002",

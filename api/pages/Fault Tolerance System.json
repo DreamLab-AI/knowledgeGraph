@@ -25,22 +25,23 @@
     "- is-subclass-of": "[[Blockchain Entity]]"
   },
   "backlinks": [
-    "Consensus Mechanism"
+    "Consensus Mechanism",
+    "BC-0051-consensus-mechanism"
   ],
   "wiki_links": [
-    "Dependable Computing Systems",
+    "Fault-Tolerant Systems",
+    "Replication System",
+    "Crash Fault Tolerant System",
     "Byzantine Fault Tolerant System",
     "State Machine Replication",
+    "Checkpoint System",
+    "Blockchain",
     "Blockchain Entity",
-    "Fault-Tolerant Systems",
+    "BlockchainDomain",
+    "Dependable Computing Systems",
     "Byzantine Fault Tolerance",
     "Consensus Mechanism",
-    "BlockchainDomain",
-    "Blockchain",
-    "ConceptualLayer",
-    "Crash Fault Tolerant System",
-    "Replication System",
-    "Checkpoint System"
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "PC-0008",

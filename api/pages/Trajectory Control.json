@@ -1,0 +1,39 @@
+{
+  "title": "Trajectory Control",
+  "content": "- ### OntologyBlock\n  id:: trajectorycontrol-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: RB\n    - sequence-number:: 0154\n    - filename-history:: [\"RB-0154-trajectorycontrol.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: RB-0154\n    - preferred-term:: Trajectory Control\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: Trajectory control tracks desired time-varying position, velocity, and acceleration profiles.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: rb:TrajectoryControl\n    - belongsToDomain:: [[Robotics]]\n\n  - #### Relationships\n    - is-subclass-of:: [[Motion Control]]\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :TrajectoryControl))\n      (SubClassOf :TrajectoryControl :MotionControl)\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :TrajectoryControl \"Trajectory Control\"@en)\n      (AnnotationAssertion rdfs:comment :TrajectoryControl\n        \"Trajectory control tracks desired time-varying position, velocity, and acceleration profiles.\"@en)\n      ```\n\n- ## About Trajectory Control\n  Trajectory control tracks desired time-varying position, velocity, and acceleration profiles.\n  \n  A control system following time-parameterized paths.\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "trajectorycontrol-ontology",
+    "collapsed": "true",
+    "- domain-prefix": "RB",
+    "- sequence-number": "0154",
+    "- filename-history": "[\"RB-0154-trajectorycontrol.md\"]",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "RB-0154",
+    "- preferred-term": "Trajectory Control",
+    "- source-domain": "metaverse",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-11-13",
+    "- definition": "Trajectory control tracks desired time-varying position, velocity, and acceleration profiles.",
+    "- maturity": "established",
+    "- source": "Chimera Prime Research",
+    "- authority-score": "0.95",
+    "- owl:class": "rb:TrajectoryControl",
+    "- belongsToDomain": "[[Robotics]]",
+    "- is-subclass-of": "[[Motion Control]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "Motion Control",
+    "Robotics"
+  ],
+  "ontology": {
+    "term_id": "RB-0154",
+    "preferred_term": "Trajectory Control",
+    "definition": "Trajectory control tracks desired time-varying position, velocity, and acceleration profiles.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

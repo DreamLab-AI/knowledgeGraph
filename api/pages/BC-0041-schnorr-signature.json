@@ -1,0 +1,46 @@
+{
+  "title": "Schnorr Signature",
+  "content": "- ### OntologyBlock\n  id:: schnorr-signature-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0041\n    - preferred-term:: Schnorr Signature\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Efficient signature scheme within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:SchnorrSignature\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n    - implementedInLayer:: [[SecurityLayer]]\n\n  - #### Relationships\n    id:: schnorr-signature-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[CryptographicPrimitive]]\n\n  - #### OWL Axioms\n    id:: schnorr-signature-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0041>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:SchnorrSignature))\n\n  ## Subclass Relationships\n  SubClassOf(:SchnorrSignature :CryptographicPrimitive)\n  SubClassOf(:SchnorrSignature :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:SchnorrSignature\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:SchnorrSignature\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :SchnorrSignature \"BC-0041\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :SchnorrSignature \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :SchnorrSignature \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :SchnorrSignature :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :SchnorrSignature :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :SchnorrSignature \"Schnorr Signature\"@en)\n  AnnotationAssertion(rdfs:comment :SchnorrSignature\n    \"Efficient signature scheme\"@en)\n  AnnotationAssertion(dct:description :SchnorrSignature\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :SchnorrSignature \"BC-0041\")\n  AnnotationAssertion(:priority :SchnorrSignature \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :SchnorrSignature \"cryptographic-foundations\"@en)\n)\n      ```\n\n- ## About Schnorr Signature\n  id:: schnorr-signature-about\n\n  - Efficient signature scheme within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n  -\n  - ### Key Characteristics\n    id:: schnorr-signature-characteristics\n    - 1. **Definitional Property**: Core defining characteristic\n    - 2. **Functional Property**: Operational behavior\n    - 3. **Structural Property**: Compositional elements\n    - 4. **Security Property**: Security guarantees provided\n    - 5. **Performance Property**: Efficiency considerations\n  -\n  - ### Technical Components\n    id:: schnorr-signature-components\n    - **Implementation**: How concept is realized technically\n    - **Verification**: Methods for validating correctness\n    - **Interaction**: Relationships with other components\n    - **Constraints**: Technical limitations and requirements\n  -\n  - ### Use Cases\n    id:: schnorr-signature-use-cases\n    - **1. Core Blockchain Operation**\n    - **Application**: Fundamental blockchain functionality\n    - **Example**: Practical implementation in major blockchains\n    - **Requirements**: Technical prerequisites\n    - **Benefits**: Value provided to blockchain systems\n  -\n  - ### Standards & References\n    id:: schnorr-signature-standards\n    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies\n    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies\n    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies\n  -\n\n\t- #### FROST on Bitcoin\n\t\t- It **might** be possible to transfer ownership of a UTXO on the Bitcoin base chain using FROST.[[komlo2020frost]] In this Schnorr & Taproot basedthreshold signature system it’s possible to [add and removesignatories](https://btctranscripts.com/sydney-bitcoin-meetup/2022-03-29-socratic-seminar/)and thresholds of signing without touching the UTXO itself. In principle(though not yet in practice) this might allow transfer of UTXOownership.\n\n\t- #### FROST on Bitcoin\n\t\t- It **might** be possible to transfer ownership of a UTXO on the Bitcoin base chain using FROST.[[komlo2020frost]] In this Schnorr & Taproot basedthreshold signature system it’s possible to [add and removesignatories](https://btctranscripts.com/sydney-bitcoin-meetup/2022-03-29-socratic-seminar/)and thresholds of signing without touching the UTXO itself. In principle(though not yet in practice) this might allow transfer of UTXOownership.",
+  "properties": {
+    "id": "schnorr-signature-standards",
+    "collapsed": "true",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0041",
+    "- preferred-term": "Schnorr Signature",
+    "- source-domain": "blockchain",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-10-28",
+    "- definition": "Efficient signature scheme within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "- maturity": "mature",
+    "- source": "[[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:SchnorrSignature",
+    "- owl:physicality": "VirtualEntity",
+    "- owl:role": "Object",
+    "- owl:inferred-class": "bc:VirtualObject",
+    "- belongsToDomain": "[[CryptographicDomain]]",
+    "- implementedInLayer": "[[SecurityLayer]]",
+    "- is-subclass-of": "[[Blockchain Entity]], [[CryptographicPrimitive]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "CryptographicDomain",
+    "ISO/IEC 23257:2021",
+    "IEEE 2418.1",
+    "Blockchain Entity",
+    "CryptographicPrimitive",
+    "komlo2020frost",
+    "SecurityLayer",
+    "NIST NISTIR"
+  ],
+  "ontology": {
+    "term_id": "BC-0041",
+    "preferred_term": "Schnorr Signature",
+    "definition": "Efficient signature scheme within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "source_domain": "blockchain",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

@@ -12,7 +12,10 @@
     "- public-access": "true",
     "- definition": "Sentiment Analysis is the NLP task of determining the emotional tone, attitude, or opinion expressed in text, classifying content as positive, negative, or neutral, and extracting fine-grained emotional attributes. Sentiment analysis employs transformer-based classifiers to enable applications in social media monitoring, customer feedback analysis, market research, and brand reputation management."
   },
-  "backlinks": [],
+  "backlinks": [
+    "Recurrent Neural Network",
+    "Transformers"
+  ],
   "wiki_links": [],
   "ontology": {
     "term_id": "AI-0369",

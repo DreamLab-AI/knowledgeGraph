@@ -23,26 +23,27 @@
     "public": "true"
   },
   "backlinks": [
+    "Perception System",
     "Large language models",
     "AI Risks",
     "Loss-Function",
     "Generative AI"
   ],
   "wiki_links": [
-    "RenderingEngine",
-    "SpatialComputing",
-    "Machine Learning",
+    "ComputerVision",
     "Presence",
     "Large language models",
-    "Artificial Intelligence",
-    "Deep Learning",
-    "ComputerVision",
-    "Robotics",
     "MetaverseDomain",
-    "DisplayTechnology",
     "TrackingSystem",
+    "DisplayTechnology",
+    "RenderingEngine",
     "ImmersiveExperience",
-    "HumanComputerInteraction"
+    "Robotics",
+    "Machine Learning",
+    "Deep Learning",
+    "HumanComputerInteraction",
+    "Artificial Intelligence",
+    "SpatialComputing"
   ],
   "ontology": {
     "term_id": "mv-124060553964",

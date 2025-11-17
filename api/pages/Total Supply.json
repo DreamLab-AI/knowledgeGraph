@@ -1,0 +1,41 @@
+{
+  "title": "Total Supply",
+  "content": "- ### OntologyBlock\n  id:: totalsupply-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0533\n    - filename-history:: [\"BC-0533-totalsupply.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0533\n    - preferred-term:: Total Supply\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: The total number of tokens that have been created, including all tokens in circulation plus those locked, reserved, or held by the project.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:TotalSupply\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### Relationships\n    - is-subclass-of:: [[Tokenomics]]\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :TotalSupply))\n      (SubClassOf :TotalSupply :Tokenomics)\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :TotalSupply \"Total Supply\"@en)\n      (AnnotationAssertion rdfs:comment :TotalSupply\n        \"The total number of tokens that have been created, including all tokens in circulation plus those locked, reserved, or held by the project.\"@en)\n      ```\n\n- ## About Total Supply\n  The total number of tokens that have been created, including all tokens in circulation plus those locked, reserved, or held by the project.\n\t\n\t### Implementation Across Blockchains\n\tThe complete quantity of tokens that have been created for a cryptocurrency, including all tokens in circulation, held in reserve, locked, vested, or otherwise allocated, representing the maximum theoretical supply at any given moment. Exemplified by Bitcoin's hard-capped 21 million BTC (with approximately 19.5M already mined), Ethereum's uncapped but controlled supply (approximately 120M ETH post-Merge with net issuance influenced by EIP-1559 burning), Cardano's maximum 45 billion ADA, and Ripple's pre-mined 100 billion XRP, total supply serves as a fundamental tokenomics metric for assessing scarcity, calculating market capitalization, understanding monetary policy, and evaluating the relationship between available tokens and economic value.\n\t\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "totalsupply-ontology",
+    "collapsed": "true",
+    "- domain-prefix": "BC",
+    "- sequence-number": "0533",
+    "- filename-history": "[\"BC-0533-totalsupply.md\"]",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0533",
+    "- preferred-term": "Total Supply",
+    "- source-domain": "metaverse",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-11-13",
+    "- definition": "The total number of tokens that have been created, including all tokens in circulation plus those locked, reserved, or held by the project.",
+    "- maturity": "established",
+    "- source": "Chimera Prime Research",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:TotalSupply",
+    "- belongsToDomain": "[[Blockchain]]",
+    "- is-subclass-of": "[[Tokenomics]]"
+  },
+  "backlinks": [
+    "BC 0116 total supply"
+  ],
+  "wiki_links": [
+    "Tokenomics",
+    "Blockchain"
+  ],
+  "ontology": {
+    "term_id": "BC-0533",
+    "preferred_term": "Total Supply",
+    "definition": "The total number of tokens that have been created, including all tokens in circulation plus those locked, reserved, or held by the project.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

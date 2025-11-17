@@ -1,0 +1,46 @@
+{
+  "title": "Practical Byzantine Fault Tolerance",
+  "content": "- ### OntologyBlock\n  id:: practicalbyzantinefaulttolerance-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0555\n    - filename-history:: [\"BC-0555-practicalbyzantinefaulttolerance.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0555\n    - preferred-term:: Practical Byzantine Fault Tolerance\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: A consensus algorithm providing high-performance Byzantine state machine replication, processing thousands of requests per second with sub-millisecond latency increases. Designed for asynchronous systems with low latency optimization.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:PracticalByzantineFaultTolerance\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### Relationships\n    - is-subclass-of:: [[Byzantine Fault Tolerance]]\n    - also-known-as:: PBFT\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :PracticalByzantineFaultTolerance))\n      (SubClassOf :PracticalByzantineFaultTolerance :ByzantineFaultTolerance)\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :PracticalByzantineFaultTolerance \"Practical Byzantine Fault Tolerance\"@en)\n      (AnnotationAssertion rdfs:comment :PracticalByzantineFaultTolerance\n        \"A consensus algorithm providing high-performance Byzantine state machine replication, processing thousands of requests per second with sub-millisecond latency increases. Designed for asynchronous systems with low latency optimization.\"@en)\n      ```\n\n- ## About Practical Byzantine Fault Tolerance\n  A consensus algorithm providing high-performance Byzantine state machine replication, processing thousands of requests per second with sub-millisecond latency increases. Designed for asynchronous systems with low latency optimization.\n  \n  Introduced by Castro and Liskov (1999). Functions when malicious nodes < 1/3 of total. Three-phase protocol: pre-prepare, prepare, commit.\n  \n  ### Examples\n  - Hyperledger Fabric (option), Zilliqa\n  \n  ### Historical Context\n  - Seminal paper at OSDI 1999 made BFT practical for real-world systems.\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "practicalbyzantinefaulttolerance-ontology",
+    "collapsed": "true",
+    "- domain-prefix": "BC",
+    "- sequence-number": "0555",
+    "- filename-history": "[\"BC-0555-practicalbyzantinefaulttolerance.md\"]",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0555",
+    "- preferred-term": "Practical Byzantine Fault Tolerance",
+    "- source-domain": "metaverse",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-11-13",
+    "- definition": "A consensus algorithm providing high-performance Byzantine state machine replication, processing thousands of requests per second with sub-millisecond latency increases. Designed for asynchronous systems with low latency optimization.",
+    "- maturity": "established",
+    "- source": "Chimera Prime Research",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:PracticalByzantineFaultTolerance",
+    "- belongsToDomain": "[[Blockchain]]",
+    "- is-subclass-of": "[[Byzantine Fault Tolerance]]",
+    "- also-known-as": "PBFT"
+  },
+  "backlinks": [
+    "Dynamic Scalable B F T",
+    "Consensus Mechanism",
+    "Node Independent Validation P B F T",
+    "Trusted Execution P B F T",
+    "Value Transfer"
+  ],
+  "wiki_links": [
+    "Byzantine Fault Tolerance",
+    "Blockchain"
+  ],
+  "ontology": {
+    "term_id": "BC-0555",
+    "preferred_term": "Practical Byzantine Fault Tolerance",
+    "definition": "A consensus algorithm providing high-performance Byzantine state machine replication, processing thousands of requests per second with sub-millisecond latency increases. Designed for asynchronous systems with low latency optimization.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

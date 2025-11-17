@@ -1,0 +1,50 @@
+{
+  "title": "WebDev and Consumer Tooling",
+  "content": "- ### OntologyBlock\n  id:: webdev-and-consumer-tooling-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-165712073761\n\t- preferred-term:: WebDev and Consumer Tooling\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on webdev and consumer tooling.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:WebdevAndConsumerTooling\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: webdev-and-consumer-tooling-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: webdev-and-consumer-tooling-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:WebdevAndConsumerTooling))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:WebdevAndConsumerTooling mv:ConceptualEntity)\n\t\t  SubClassOf(mv:WebdevAndConsumerTooling mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:WebdevAndConsumerTooling\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:WebdevAndConsumerTooling \"WebDev and Consumer Tooling\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:WebdevAndConsumerTooling \"A component of the metaverse ecosystem focusing on webdev and consumer tooling.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:WebdevAndConsumerTooling \"mv-165712073761\"^^xsd:string)\n\t\t  ```\n\n- [SaaS WebApp with Streamlit & Python: Quick Guide | Level Up Coding (gitconnected.com)](https://levelup.gitconnected.com/build-a-data-science-saas-app-with-just-python-a-streamlit-guide-240e0a56fc86)\n- [MindStudio (youai.ai)](https://youai.ai/) build deployable AI [[SHOULD]]\n- [DevDocs API Documentation](https://devdocs.io/)\n- [Vercel – Vercel](https://vercel.com/vercel-xrsystemsuks-projects)\n- [Dashboard (franken-ui.dev)](https://www.franken-ui.dev/examples/dashboard) classic templates, modern code.\n- React Three Fibre\n\t- [React Three Fiber (R3F)The Basics (youtube.com)](https://www.youtube.com/watch?v=vTfMjI4rVSI)\n- Retool is low code development for integrating AI into apps and products, with a focus on open source [Build AI apps and workflows faster with Retool AI](https://retool.com/products/ai)\n- [zackees/python-compile (github.com)](https://github.com/zackees/python-compile)\n- [announcing freenginx.org](https://mailman.nginx.org/pipermail/nginx-devel/2024-February/K5IC6VYO2PB7N4HRP2FUQIBIBCGP4WAU.html)\n- [Easily Deploy and Share Your Streamlit Apps | Streamlit Sharing](https://blog.streamlit.io/introducing-streamlit-sharing/)\n- Transparent layers diffusion for [[Image Generation]] [[2402.17113] Transparent Image Layer Diffusion using Latent Transparency (arxiv.org)](https://arxiv.org/abs/2402.17113)\n- [Justine Tunney's Web Page](https://justine.lol/)\n\t- [Unbelievable: A single-file web server that runs on six OSes • The Register](https://www.theregister.com/2022/06/20/redbean_2_a_singlefile_web/)\n- https://github.com/AnswerDotAI/fasthtml/ fasthtml web development framework\n-\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "webdev-and-consumer-tooling-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-165712073761",
+    "- preferred-term": "WebDev and Consumer Tooling",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on webdev and consumer tooling.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:WebdevAndConsumerTooling",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]"
+  },
+  "backlinks": [
+    "Open Webui and Pipelines",
+    "Segmentation and Identification"
+  ],
+  "wiki_links": [
+    "ComputerVision",
+    "Presence",
+    "MetaverseDomain",
+    "TrackingSystem",
+    "Image Generation",
+    "DisplayTechnology",
+    "RenderingEngine",
+    "ImmersiveExperience",
+    "Robotics",
+    "SHOULD",
+    "HumanComputerInteraction",
+    "SpatialComputing"
+  ],
+  "ontology": {
+    "term_id": "mv-165712073761",
+    "preferred_term": "WebDev and Consumer Tooling",
+    "definition": "A component of the metaverse ecosystem focusing on webdev and consumer tooling.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

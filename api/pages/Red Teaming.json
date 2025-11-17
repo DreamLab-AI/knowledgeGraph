@@ -13,6 +13,7 @@
     "- definition": "The practice of deliberately attempting to elicit harmful, biased, or undesired outputs from AI systems to identify vulnerabilities and weaknesses. Red teaming involves adversarial testing where human evaluators or automated systems probe for failure modes, informing alignment training and safety improvements."
   },
   "backlinks": [
+    "Transformers",
     "AI Risks"
   ],
   "wiki_links": [],

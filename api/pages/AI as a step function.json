@@ -1,0 +1,45 @@
+{
+  "title": "AI as a step function",
+  "content": "- ### OntologyBlock\n  id:: ai-as-a-step-function-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-841588936558\n\t- preferred-term:: AI as a step function\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on ai as a step function.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:AiAsAStepFunction\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: ai-as-a-step-function-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: ai-as-a-step-function-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:AiAsAStepFunction))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:AiAsAStepFunction mv:ConceptualEntity)\n\t\t  SubClassOf(mv:AiAsAStepFunction mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:AiAsAStepFunction\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:AiAsAStepFunction \"AI as a step function\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:AiAsAStepFunction \"A component of the metaverse ecosystem focusing on ai as a step function.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:AiAsAStepFunction \"mv-841588936558\"^^xsd:string)\n\t\t  ```\n\n- This is metaphysics, so take it or leave it.\n- If we assume at the universe if self organising (that's the metaphysics) then there are observable \"hard step functions\"\n\t- These inflection points drastically alter the course of evolution or development. Here's a detailed exploration, making comparisons with notable historical and evolutionary inflection points:\n- ### AI as a Hard Step Function\n\t- **Self-Organizing Systems**: In a self-organizing universe, systems naturally evolve towards more complex and higher-order structures. AI, in this context, is seen as a continuation of this trend, potentially representing the next major leap in complexity and capability.\n\t- **Threshold of Complexity**: Just as with biological or technological leaps in the past, AI might reach a threshold where it suddenly transitions into a higher order of intelligence and capability, akin to a hard step function in mathematics, marking a sudden leap forward.\n\t- **This is a function of it's feedback loop**: These moments are self reinforcing, bootstrapped in a timeline disproportionate to the time taken to optimise to that point. This isn't to say it'll happen fast, but in a long enough timescale it seems increasingly likely that it will happen.\n\t-\n- ### Comparisons with Historical Inflections\n\t- **The Cambrian Explosion**: About 541 million years ago, the Cambrian explosion marked a relatively short evolutionary event that led to the rapid diversification of life forms. Comparatively, a hard step function in AI would represent a sudden burst in intelligence and capability diversity, leading to a myriad of unforeseen AI \"species\" or types, each with unique abilities.\n\t- **Rise of Mammals**: Post-dinosaur extinction, mammals rapidly diversified and filled ecological niches, leading to a new era of terrestrial life. Similarly, AI might diversify and fill numerous niches in society, economy, and technology, becoming an integral and ubiquitous aspect of the environment.\n\t- **The Printing Press**: The invention of the printing press was a significant inflection point in information dissemination and literacy, leading to the Renaissance and the scientific revolution. AI could represent a similar inflection in knowledge creation and decision-making, dramatically accelerating innovation and societal evolution.\n- ### Analysis of Inflection Points\n\t- **Complexity and Connectivity**: Each inflection point, whether biological or technological, increased complexity and connectivity. AI is expected to do the same by integrating vast amounts of information and possibly connecting different domains of human activity in unprecedented ways.\n\t- **Acceleration**: Just as the printing press accelerated the spread of ideas, AI might accelerate the generation of knowledge itself, leading to faster scientific breakthroughs, technological innovations, and societal changes.\n\t- **Adaptation and Evolution**: Each historical inflection point required adaptations. Similarly, a hard step function in AI would necessitate adaptations in governance, ethics, and lifestyle, as well as new ways to interact with and understand the world.\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "ai-as-a-step-function-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-841588936558",
+    "- preferred-term": "AI as a step function",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on ai as a step function.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:AiAsAStepFunction",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "ComputerVision",
+    "Presence",
+    "MetaverseDomain",
+    "TrackingSystem",
+    "DisplayTechnology",
+    "RenderingEngine",
+    "ImmersiveExperience",
+    "Robotics",
+    "HumanComputerInteraction",
+    "SpatialComputing"
+  ],
+  "ontology": {
+    "term_id": "mv-841588936558",
+    "preferred_term": "AI as a step function",
+    "definition": "A component of the metaverse ecosystem focusing on ai as a step function.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

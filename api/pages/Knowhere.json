@@ -23,26 +23,27 @@
     "public": "true"
   },
   "backlinks": [
+    "Product Design",
     "MITIH",
     "Technical History (extended CV)"
   ],
   "wiki_links": [
-    "RenderingEngine",
-    "SpatialComputing",
-    "KnoWhere",
-    "NVIDIA Omniverse",
-    "Presence",
-    "Head Gaze",
-    "ComputerVision",
     "PEOPLE",
-    "Robotics",
     "Face Swap",
-    "Segmentation and Identification",
+    "ComputerVision",
+    "Presence",
     "MetaverseDomain",
-    "DisplayTechnology",
     "TrackingSystem",
+    "Segmentation and Identification",
+    "DisplayTechnology",
+    "RenderingEngine",
     "ImmersiveExperience",
-    "HumanComputerInteraction"
+    "Robotics",
+    "Head Gaze",
+    "HumanComputerInteraction",
+    "KnoWhere",
+    "SpatialComputing",
+    "NVIDIA Omniverse"
   ],
   "ontology": {
     "term_id": "mv-165251182378",

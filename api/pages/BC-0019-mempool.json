@@ -1,0 +1,45 @@
+{
+  "title": "Mempool",
+  "content": "- ### OntologyBlock\n  id:: mempool-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0019\n    - preferred-term:: Mempool\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Memory pool of pending transactions within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Mempool\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[BlockchainDomain]]\n    - implementedInLayer:: [[ConceptualLayer]]\n\n  - #### Relationships\n    id:: mempool-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[DistributedDataStructure]]\n\n  - #### OWL Axioms\n    id:: mempool-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0019>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:Mempool))\n\n  ## Subclass Relationships\n  SubClassOf(:Mempool :DistributedDataStructure)\n  SubClassOf(:Mempool :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:Mempool\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:Mempool\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :Mempool \"BC-0019\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :Mempool \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :Mempool \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :Mempool :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :Mempool :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :Mempool \"Mempool\"@en)\n  AnnotationAssertion(rdfs:comment :Mempool\n    \"Memory pool of pending transactions\"@en)\n  AnnotationAssertion(dct:description :Mempool\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :Mempool \"BC-0019\")\n  AnnotationAssertion(:priority :Mempool \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :Mempool \"blockchain-fundamentals\"@en)\n)\n      ```\n\n- ## About Mempool\n  id:: mempool-about\n\n  - Memory pool of pending transactions within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n  -\n  - ### Key Characteristics\n    id:: mempool-characteristics\n    - 1. **Definitional Property**: Core defining characteristic\n    - 2. **Functional Property**: Operational behavior\n    - 3. **Structural Property**: Compositional elements\n    - 4. **Security Property**: Security guarantees provided\n    - 5. **Performance Property**: Efficiency considerations\n  -\n  - ### Technical Components\n    id:: mempool-components\n    - **Implementation**: How concept is realized technically\n    - **Verification**: Methods for validating correctness\n    - **Interaction**: Relationships with other components\n    - **Constraints**: Technical limitations and requirements\n  -\n  - ### Use Cases\n    id:: mempool-use-cases\n    - **1. Core Blockchain Operation**\n    - **Application**: Fundamental blockchain functionality\n    - **Example**: Practical implementation in major blockchains\n    - **Requirements**: Technical prerequisites\n    - **Benefits**: Value provided to blockchain systems\n  -\n  - ### Standards & References\n    id:: mempool-standards\n    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies\n    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies\n    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies\n  -",
+  "properties": {
+    "id": "mempool-standards",
+    "collapsed": "true",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0019",
+    "- preferred-term": "Mempool",
+    "- source-domain": "blockchain",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-10-28",
+    "- definition": "Memory pool of pending transactions within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "- maturity": "mature",
+    "- source": "[[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:Mempool",
+    "- owl:physicality": "VirtualEntity",
+    "- owl:role": "Object",
+    "- owl:inferred-class": "bc:VirtualObject",
+    "- belongsToDomain": "[[BlockchainDomain]]",
+    "- implementedInLayer": "[[ConceptualLayer]]",
+    "- is-subclass-of": "[[Blockchain Entity]], [[DistributedDataStructure]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "DistributedDataStructure",
+    "ISO/IEC 23257:2021",
+    "IEEE 2418.1",
+    "Blockchain Entity",
+    "BlockchainDomain",
+    "NIST NISTIR",
+    "ConceptualLayer"
+  ],
+  "ontology": {
+    "term_id": "BC-0019",
+    "preferred_term": "Mempool",
+    "definition": "Memory pool of pending transactions within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "source_domain": "blockchain",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

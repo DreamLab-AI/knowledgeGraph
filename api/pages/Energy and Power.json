@@ -31,19 +31,19 @@
     "Energy and Power"
   ],
   "wiki_links": [
-    "RenderingEngine",
-    "SpatialComputing",
-    "Convergence",
-    "Presence",
-    "Artificial Intelligence",
-    "ComputerVision",
-    "Robotics",
-    "MetaverseDomain",
-    "DisplayTechnology",
-    "TrackingSystem",
-    "ImmersiveExperience",
     "Energy and Power",
-    "HumanComputerInteraction"
+    "ComputerVision",
+    "Presence",
+    "MetaverseDomain",
+    "TrackingSystem",
+    "DisplayTechnology",
+    "RenderingEngine",
+    "ImmersiveExperience",
+    "Robotics",
+    "Convergence",
+    "HumanComputerInteraction",
+    "Artificial Intelligence",
+    "SpatialComputing"
   ],
   "ontology": {
     "term_id": "mv-961582748519",

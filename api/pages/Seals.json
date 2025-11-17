@@ -1,0 +1,45 @@
+{
+  "title": "Seals",
+  "content": "- ### OntologyBlock\n  id:: seals-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-622751204471\n\t- preferred-term:: Seals\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on seals.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:Seals\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: seals-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: seals-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:Seals))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:Seals mv:ConceptualEntity)\n\t\t  SubClassOf(mv:Seals mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:Seals\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:Seals \"Seals\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:Seals \"A component of the metaverse ecosystem focusing on seals.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:Seals \"mv-622751204471\"^^xsd:string)\n\t\t  ```\n\n- This is [海豹\n\t - Chinese Seal](https://en.wiktionary.org/wiki/%E6%B5%B7%E8%B1%B9)\n- Five shot example with 256x256 gif of the image uploaded\n- ![photo_2024-01-09_18-10-53.jpg](../assets/photo_2024-01-09_18-10-53_1705085581457_0.jpg)\n- ![photo_2024-01-12_14-38-01.jpg](../assets/photo_2024-01-12_14-38-01_1705085469063_0.jpg)\n-\n- ```mermaid\n  sequenceDiagram\n      participant Client as Client Script\n      participant FS as File System\n      participant OpenAI as OpenAI API\n      participant Translator as Translation Service\n  \n      Note over Client, Translator: Initialization phase\n      Client->>FS: Load JSON data and GIF image paths\n      loop For each NFT\n          Client->>FS: Retrieve next JSON and GIF\n          FS-->>Client: JSON data and GIF path\n          Client->>OpenAI: Send GIF and JSON for analysis\n          OpenAI-->>Client: Return text summary in English\n          Client->>Translator: Translate summary to Chinese\n          Translator-->>Client: Return Chinese summary\n          Client->>OpenAI: Request appropriateness ranking\n          OpenAI-->>Client: Return ranking result\n          Client->>FS: Save updated JSON with summaries and ranking\n      end\n      Client->>Client: Validate updated JSON files\n      Note over Client: End of processing\n  \n  ```\n- Few shot prompt\n\t- {\n\t    \"model\": \"gpt-3.5\",\n\t    \"prompt\": \"I am a model that converts input JSON files to output JSON files based on specific rules. Below are examples of input JSON files and their corresponding output JSON files. After examining these examples, convert a new input JSON to the expected output format.\\n\\nExample 1:\\nInput JSON:\\n{ /* Content of '1001 (original).json' */ }\\nOutput JSON:\\n{ /* Content of '1001 (edited AI output).json' */ }\\n\\nExample 2:\\nInput JSON:\\n{ /* Content of '1003 (original).json' */ }\\nOutput JSON:\\n{ /* Content of '1003 (edited AI output).json' */ }\\n\\nExample 3:\\nInput JSON:\\n{ /* Content of '1015 (original).json' */ }\\nOutput JSON:\\n{ /* Content of '1015 (edited AI output).json' */ }\\n\\nExample 4:\\nInput JSON:\\n{ /* Content of '1031 (original).json' */ }\\nOutput JSON:\\n{ /* Content of '1031 (edited AI output).json' */ }\\n\\nExample 5:\\nInput JSON:\\n{ /* Content of '12 (original).json' */ }\\nOutput JSON:\\n{ /* Content of '12 (edited AI output).json' */ }\\n\\nNew Input JSON:\\n{ /* New input JSON content */ }\\n\\nConvert the above new input JSON to the output format based on the examples provided.\",\n\t    \"temperature\": 0.7,\n\t    \"max_tokens\": 2048 }\n\t- [Text generation\n\t - OpenAI API](https://platform.openai.com/docs/guides/text-generation/json-mode) json mode\n- [GPT 3 Token Counter\n\t - Count Tokens and Characters Online (gptokens.com)](https://gptokens.com/)\n- [JSON Checker\n\t - The JSON Validator and Formatter](https://jsonchecker.com/)\n\t-\n\t-\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "seals-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-622751204471",
+    "- preferred-term": "Seals",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on seals.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:Seals",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "ComputerVision",
+    "Presence",
+    "MetaverseDomain",
+    "TrackingSystem",
+    "DisplayTechnology",
+    "RenderingEngine",
+    "ImmersiveExperience",
+    "Robotics",
+    "HumanComputerInteraction",
+    "SpatialComputing"
+  ],
+  "ontology": {
+    "term_id": "mv-622751204471",
+    "preferred_term": "Seals",
+    "definition": "A component of the metaverse ecosystem focusing on seals.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

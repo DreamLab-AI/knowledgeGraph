@@ -25,23 +25,26 @@
     "- is-subclass-of": "[[Blockchain Entity]]"
   },
   "backlinks": [
-    "Blockchain Entity"
+    "BC-0001-blockchain",
+    "Blockchain Entity",
+    "ONTOLOGY_ANALYSIS_REPORT",
+    "ONTOLOGY_TECHNICAL_DETAILS"
   ],
   "wiki_links": [
-    "Threshold Cryptography",
-    "ISO/IEC 18033 Encryption Algorithms",
-    "Public Key Cryptography",
-    "Blockchain Entity",
-    "Cryptographic Hash Function",
-    "Zero-Knowledge Proof",
-    "NIST Cryptographic Standards",
-    "BlockchainDomain",
-    "Homomorphic Encryption",
-    "Blockchain",
     "FIPS 140-3 Security Requirements",
-    "ConceptualLayer",
+    "Merkle Tree",
+    "Cryptographic Hash Function",
+    "Public Key Cryptography",
+    "Zero-Knowledge Proof",
+    "Homomorphic Encryption",
+    "NIST Cryptographic Standards",
+    "Blockchain Entity",
+    "Blockchain",
+    "BlockchainDomain",
+    "Threshold Cryptography",
     "Digital Signature",
-    "Merkle Tree"
+    "ISO/IEC 18033 Encryption Algorithms",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "PC-0003",

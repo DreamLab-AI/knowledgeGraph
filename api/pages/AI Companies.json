@@ -26,21 +26,21 @@
     "Proprietary Large Language Models"
   ],
   "wiki_links": [
-    "RenderingEngine",
-    "SpatialComputing",
-    "Politics, Law, Privacy",
+    "ComputerVision",
+    "OpenAI",
+    "Comparison of GPT4 and Gemini Ultra",
     "Presence",
     "Large language models",
-    "OpenAI",
-    "ComputerVision",
-    "Robotics",
-    "Comparison of GPT4 and Gemini Ultra",
     "MetaverseDomain",
-    "DisplayTechnology",
     "TrackingSystem",
-    "ImmersiveExperience",
+    "DisplayTechnology",
+    "RenderingEngine",
     "Infrastructure",
-    "HumanComputerInteraction"
+    "ImmersiveExperience",
+    "Robotics",
+    "Politics, Law, Privacy",
+    "HumanComputerInteraction",
+    "SpatialComputing"
   ],
   "ontology": {
     "term_id": "mv-164801311429",

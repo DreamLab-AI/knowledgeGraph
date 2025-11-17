@@ -25,15 +25,17 @@
     "- belongsToDomain": "[[Robotics]]",
     "- is-part-of": "[[Robot (RB-0001)]]"
   },
-  "backlinks": [],
+  "backlinks": [
+    "Marine Robot"
+  ],
   "wiki_links": [
-    "Prompt Engineering",
-    "Robot (RB-0001)",
     "Artificial Superintelligence",
+    "Robot (RB-0001)",
+    "Prompt Engineering",
+    "ISO 8373:2021",
     "Microsoft CoPilot",
-    "Artificial Intelligence",
     "Robotics",
-    "ISO 8373:2021"
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "RB-0002",

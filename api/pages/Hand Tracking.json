@@ -23,7 +23,9 @@
     "- belongsToDomain": "[[Artificial Intelligence]]",
     "- is-subclass-of": "[[Computer Vision]]"
   },
-  "backlinks": [],
+  "backlinks": [
+    "Telecollaboration and Telepresence"
+  ],
   "wiki_links": [
     "Computer Vision",
     "Artificial Intelligence"

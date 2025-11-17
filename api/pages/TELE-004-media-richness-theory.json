@@ -3,21 +3,22 @@
   "content": "# Media Richness Theory\n\n### OntologyBlock\nid:: media-richness-theory-ontology\ncollapsed:: true\n- ontology:: true\n- term-id:: TELE-004\n- preferred-term:: Media Richness Theory\n- alternate-terms::\n  - MRT\n  - Information Richness Theory\n  - Channel Richness Theory\n- source-domain:: tele\n- status:: active\n- public-access:: true\n- definition:: \"A theoretical framework positing that communication media vary in their capacity to convey rich information through multiple cues, immediate feedback, language variety, and personal focus, predicting that richer media enable more effective communication of complex, ambiguous information whilst leaner media suffice for routine, unambiguous messages.\"\n- maturity:: mature\n- authority-score:: 0.93\n- owl:class:: tele:MediaRichnessTheory\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain::\n  - [[TELE-0000-telepresence-domain]]\n  - [[TelepresenceFoundations]]\n- bridges-to::\n  - [[AIDomain]]\n\n#### Relationships\nid:: media-richness-theory-relationships\n- is-subclass-of:: [[CommunicationTheory]], [[OrganisationalTheory]]\n- enables:: [[MediaSelection]], [[TaskMediaFit]], [[CommunicationEffectiveness]]\n- related-to:: [[TELE-003-social-presence-theory]], [[TELE-001-telepresence]], [[InformationProcessing]]\n\n#### OWL Axioms\nid:: media-richness-theory-owl-axioms\ncollapsed:: true\n- ```clojure\n  Declaration(Class(tele:MediaRichnessTheory))\n\n  SubClassOf(tele:MediaRichnessTheory tele:FoundationalConcept)\n  SubClassOf(tele:MediaRichnessTheory tele:ConceptualEntity)\n\n  SubClassOf(tele:MediaRichnessTheory\n    ObjectSomeValuesFrom(tele:belongsToDomain tele:TelecollaborationDomain)\n  )\n\n  AnnotationAssertion(rdfs:label tele:MediaRichnessTheory \"Media Richness Theory\"@en-GB)\n  AnnotationAssertion(rdfs:comment tele:MediaRichnessTheory \"Theory of communication media information-carrying capacity\"@en-GB)\n  AnnotationAssertion(dcterms:identifier tele:MediaRichnessTheory \"TELE-004\"^^xsd:string)\n  AnnotationAssertion(dcterms:created tele:MediaRichnessTheory \"2025-11-16\"^^xsd:date)\n  ```\n\n## Definition\n\n**Media Richness Theory** (MRT), formulated by Daft and Lengel (1986), classifies communication media along a spectrum from \"lean\" (low information-carrying capacity) to \"rich\" (high capacity) based on four criteria: ability to transmit multiple cues simultaneously, enable rapid feedback, support natural language variety, and convey personal focus. The theory predicts that task-media fit determines communication effectiveness: equivocal (ambiguous, interpretive) tasks require rich media like face-to-face meetings or [[TELE-020-virtual-reality-telepresence]], whilst routine data transmission succeeds with lean media like email or forms.\n\nMRT identifies face-to-face communication as richest (multimodal cues, instant feedback, nuanced language, personalised), followed descending by video calls, telephone, email, and formal documents (leanest). Modern telepresence technologies ([[TELE-001-telepresence]]) approach face-to-face richness through immersive environments, spatial audio, and photorealistic avatars ([[TELE-100-ai-avatars]]), enabling effective communication of complex, emotionally charged, or culturally nuanced information across distance.\n\n## Media Richness Hierarchy (2025 Updated)\n\n### Richest Media\n1. **Face-to-Face** (benchmark: 100% richness)\n2. **Immersive VR Telepresence** ([[TELE-020-virtual-reality-telepresence]]): 85-90% richness\n3. **Video Conferencing** (Zoom, Teams): 70-75%\n4. **Telephone/VoIP**: 50-60%\n5. **Instant Messaging**: 30-40%\n6. **Email**: 20-30%\n7. **Formal Documents**: 10-20%\n\n### Leanest Media\n\n## Related Concepts\n\n- [[TELE-003-social-presence-theory]]\n- [[TELE-001-telepresence]]\n- [[TELE-020-virtual-reality-telepresence]]\n\n## References\n\n1. Daft, R. L., & Lengel, R. H. (1986). \"Organizational Information Requirements, Media Richness and Structural Design\". *Management Science*, 32(5), 554-571.\n\n## Metadata\n\n- **Term-ID**: TELE-004\n- **Last Updated**: 2025-11-16\n- **Maturity**: Mature\n- **Authority Score**: 0.93",
   "properties": {},
   "backlinks": [
-    "TELE-003-social-presence-theory"
+    "TELE-003-social-presence-theory",
+    "TELE-0000-telepresence-domain"
   ],
   "wiki_links": [
     "TELE-0000-telepresence-domain",
-    "TELE-020-virtual-reality-telepresence",
-    "InformationProcessing",
-    "AIDomain",
     "TelepresenceFoundations",
     "CommunicationTheory",
-    "OrganisationalTheory",
     "CommunicationEffectiveness",
+    "TELE-020-virtual-reality-telepresence",
     "TELE-001-telepresence",
-    "TaskMediaFit",
-    "MediaSelection",
     "TELE-100-ai-avatars",
+    "OrganisationalTheory",
+    "AIDomain",
+    "MediaSelection",
+    "InformationProcessing",
+    "TaskMediaFit",
     "TELE-003-social-presence-theory"
   ],
   "ontology": {

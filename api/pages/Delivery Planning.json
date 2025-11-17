@@ -1,0 +1,47 @@
+{
+  "title": "Delivery Planning",
+  "content": "- ### OntologyBlock\n  id:: delivery-planning-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-685047218244\n\t- preferred-term:: Delivery Planning\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on delivery planning.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:DeliveryPlanning\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: delivery-planning-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: delivery-planning-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:DeliveryPlanning))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:DeliveryPlanning mv:ConceptualEntity)\n\t\t  SubClassOf(mv:DeliveryPlanning mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:DeliveryPlanning\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:DeliveryPlanning \"Delivery Planning\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:DeliveryPlanning \"A component of the metaverse ecosystem focusing on delivery planning.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:DeliveryPlanning \"mv-685047218244\"^^xsd:string)\n\t\t  ```\n\n- Creating a Gantt chart for a 10-month program to build out an Omniverse with various components requires breaking down the project into manageable tasks and assigning them to the right personnel. Given the broad scope of your project, we'll focus on major milestones and deliverables, aligning them with the team members based on their roles. Here's how we can conceptualize it:\n- ### Key Personnel and Their Roles:\n- **Pete**: Leads Omniverse pieces\n- **John**: Leads AI pieces\n- **ML-Support**: Provides machine learning support\n- **Creative-Support**: Offers creative and design support\n- ### Project Phases and Tasks:\n- **GenAI Object Creation** (Months 1-2):\n\t- Task 1: Research and development of GenAI models for object creation.\n\t- Task 2: Initial prototype development.\n\t- **Lead**: John with support from ML-Support.\n- **Omniverse Global Platform Development** (Months 2-4):\n\t- Task 1: Architecture design and infrastructure setup for Omniverse.\n\t- Task 2: Development of foundational elements for scalability and interoperability.\n\t- **Lead**: Pete with support from Creative-Support.\n- **Agents Development** (Months 3-5):\n\t- Task 1: Design of agent models and interaction protocols.\n\t- Task 2: Integration of agents within the Omniverse environment.\n\t- **Lead**: John with ML-Support.\n- **Digital Assets Creation** (Months 4-6):\n\t- Task 1: Development of digital assets libraries.\n\t- Task 2: Integration of GenAI for dynamic asset creation and variation.\n\t- **Lead**: Creative-Support with support from John.\n- **Virtual Production Setup** (Months 5-7):\n\t- Task 1: Development of virtual production tools and workflows.\n\t- Task 2: Testing and refinement in Omniverse scenarios.\n\t- **Lead**: Pete with Creative-Support.\n- **Human Tracking Integration** (Months 6-8):\n\t- Task 1: Development of human tracking systems.\n\t- Task 2: Integration with Omniverse for interactive experiences.\n\t- **Lead**: John with ML-Support.\n- **USD File Format Implementation** (Months 7-9):\n\t- Task 1: Development of USD (Universal Scene Description) file support.\n\t- Task 2: Integration with Omniverse and asset libraries.\n\t- **Lead**: Pete with input from John.\n- **Object Creation and Variation with GenAI and USD** (Months 8-10):\n\t- Task 1: Advanced development of object creation using GenAI within USD framework.\n\t- Task 2: Final testing and optimization.\n\t- **Lead**: John and Pete, with ML-Support and Creative-Support.\n-\n- ```mermaid\n  gantt\n      title A 10-Month Program to Build the Omniverse\n      dateFormat  YYYY-MM-DD\n      excludes weekends\n  \n      section GenAI Object Creation\n      Research & Development :john, 2024-01-01, 15d\n      Prototype Development :john, after john, 15d\n      Milestone 1\n\t - Prototype Complete : milestone, 2024-01-31, 0d\n  \n      section Omniverse Platform\n      Architecture Design :pete, 2024-02-01, 30d\n      Foundational Elements :pete, after pete, 30d\n      Milestone 2\n\t - Platform Ready : milestone, 2024-03-31, 0d\n  \n      section Agents Development\n      Agent Models :john, 2024-04-01, 30d\n      Integration in Omniverse :john, after john, 30d\n      Milestone 3\n\t - Agents Integrated : milestone, 2024-05-30, 0d\n  \n      section Digital Assets\n      Asset Libraries :cs, 2024-04-15, 30d\n      GenAI Integration for Assets :john, after cs, 30d\n      Checkpoint\n\t - Assets Review : milestone, 2024-06-14, 0d\n  \n      section Virtual Production\n      Production Tools Development :pete, 2024-06-15, 30d\n      Testing & Refinement :pete, after pete, 30d\n      Milestone 4\n\t - Virtual Production Setup : milestone, 2024-08-14, 0d\n  \n      section Human Tracking\n      Tracking Systems Development :john, 2024-07-01, 30d\n      Integration with Omniverse :john, after john, 30d\n      Checkpoint\n\t - Tracking Systems Integration Review : milestone, 2024-08-30, 0d\n  \n      section USD Implementation\n      USD Support Development :pete, 2024-09-01, 30d\n      Integration & Testing :pete, after pete, 30d\n      Milestone 5\n\t - USD Implementation Complete : milestone, 2024-10-30, 0d\n  \n      section Final Phase\n      Advanced Object Creation & Integration :john, pete, 2024-11-01, 30d\n      Testing & Optimization :john, pete, after john, 15d\n      Milestone 6\n\t - Project Completion : milestone, 2024-12-15, 0d\n      \n  ```\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "delivery-planning-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-685047218244",
+    "- preferred-term": "Delivery Planning",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on delivery planning.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:DeliveryPlanning",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]"
+  },
+  "backlinks": [
+    "Agentic Metaverse for Global Creatives"
+  ],
+  "wiki_links": [
+    "ComputerVision",
+    "Presence",
+    "MetaverseDomain",
+    "TrackingSystem",
+    "DisplayTechnology",
+    "RenderingEngine",
+    "ImmersiveExperience",
+    "Robotics",
+    "HumanComputerInteraction",
+    "SpatialComputing"
+  ],
+  "ontology": {
+    "term_id": "mv-685047218244",
+    "preferred_term": "Delivery Planning",
+    "definition": "A component of the metaverse ecosystem focusing on delivery planning.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

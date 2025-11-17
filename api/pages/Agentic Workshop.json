@@ -1,0 +1,46 @@
+{
+  "title": "Agentic Workshop",
+  "content": "- ### OntologyBlock\n  id:: agentic-workshop-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-752718979032\n\t- preferred-term:: Agentic Workshop\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on agentic workshop.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:AgenticWorkshop\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: agentic-workshop-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: agentic-workshop-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:AgenticWorkshop))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:AgenticWorkshop mv:ConceptualEntity)\n\t\t  SubClassOf(mv:AgenticWorkshop mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:AgenticWorkshop\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:AgenticWorkshop \"Agentic Workshop\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:AgenticWorkshop \"A component of the metaverse ecosystem focusing on agentic workshop.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:AgenticWorkshop \"mv-752718979032\"^^xsd:string)\n\t\t  ```\n\npublic:: true\n\n-\n- {{embed ((68d3ab67-38ca-43b6-b924-439d02c7f3bd))}}\n- Think of agents as sheep dogs. You're not putting sheep in a pen one by one any more. sometimes the best path to getting the sheep in en masse is a long arc round the field where the agent develops the mass as it goes. Sometimes it's a structured play with more work up front. This somewhat depends on you.\n-\n- My background, why you're here, what you can expect\n- course structure (multi session, not completely interdependent, simple pricing)\n- background and rationalle\n\t- chatbots and the agent / agentic boundary are confusing\n\t\t- you probably already use them (deep research)\n\t\t\t- compare gemini pro deep research with [roo](https://gist.github.com/ruvnet/88c61ee4e38191b0be65f498792d5017) (first view of it)\n\t\t- why this complex way\n\t\t\t- talking about memory\n\t\t\t- consistency, flexibility, scale\n\t\t\t- data safety and privacy\n\t\t\t- longer run times, more thinking, as much as you need\n\t\t\t- price / performance\n\t\t\t- power use and the start of vibe coding\n- phased approach\n\t- Phase one (today)\n\t\t- introduction to vscode\n\t\t- introduction to roo code\n\t\t- context management and context engineering\n\t\t- demonstrate agents, see where we're going (visionflow)\n\t\t- show setup of the system (link to online homework)\n\t\t\t- show how to find all this guidance\n\t\t\t- gemini (free) (more like agents)\n\t\t- claude code (paid) (more like agentic)\n\t\t- case studies using agentic claude\n\t\t\t- -Project management (120 kids doing their own thing)\n\t\t\t- -Data visualisation (new python tools)\n\t\t\t- -Academic research and verifying sources. (latex)\n\t- phase two (tomorrow)\n\t\t- TODO Mcp security course. Context, sheaf of papers\n\t\t-\n- use the search on agentics video site [Agentics Foundation Video Portal](https://video.agentics.org/search?keyword=middleware)\n-\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "agentic-workshop-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-752718979032",
+    "- preferred-term": "Agentic Workshop",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on agentic workshop.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:AgenticWorkshop",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]",
+    "public": "true"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "ComputerVision",
+    "Presence",
+    "MetaverseDomain",
+    "TrackingSystem",
+    "DisplayTechnology",
+    "RenderingEngine",
+    "ImmersiveExperience",
+    "Robotics",
+    "HumanComputerInteraction",
+    "SpatialComputing"
+  ],
+  "ontology": {
+    "term_id": "mv-752718979032",
+    "preferred_term": "Agentic Workshop",
+    "definition": "A component of the metaverse ecosystem focusing on agentic workshop.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

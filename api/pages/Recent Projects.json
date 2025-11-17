@@ -1,0 +1,55 @@
+{
+  "title": "Recent Projects",
+  "content": "- ### OntologyBlock\n  id:: recent-projects-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-202334294651\n\t- preferred-term:: Recent Projects\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on recent projects.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:RecentProjects\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: recent-projects-relationships\n\t\t- has-part:: [[WorldSpace]], [[PhysicsEngine]], [[SceneGraph]], [[Avatar]]\n\t\t- is-part-of:: [[Metaverse]], [[MetaversePlatform]]\n\t\t- requires:: [[3DRenderingEngine]], [[NetworkProtocol]], [[DatabaseSystem]]\n\t\t- enables:: [[VirtualSociety]], [[DigitalEconomy]], [[SocialInteraction]]\n\n\t- #### OWL Axioms\n\t  id:: recent-projects-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:RecentProjects))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:RecentProjects mv:VirtualEntity)\n\t\t  SubClassOf(mv:RecentProjects mv:Object)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:RecentProjects\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:RecentProjects \"Recent Projects\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:RecentProjects \"A component of the metaverse ecosystem focusing on recent projects.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:RecentProjects \"mv-202334294651\"^^xsd:string)\n\t\t  ```\n\npublic:: true\n\n- # Notable works\n\t- Real-time interactive chat bots with thousands of users.  [Player Two | AI Companion](https://playertwo.ai/)\n\t  id:: 659a922a-ac22-484e-9a3f-921390ea68cc\n\t- Marine autonomous AI vision on [[Hardware and Edge]] with [Future Fleet – Autonomous Marine Systems](https://futurefleet.co/) (Patent Pending)\n\t- Human attention tracking in semi public spaces with [QuasiScience](https://quasiscience.com/) and [Fuzzyduck](https://fuzzyduck.co.uk/) (MediaCity:UK)\n\t- Large scale exhibition AI design with [Immersive International](https://www.immersive.international/)\n\t- GenAI and robotics for film pre-visualisation with [LED Virtual Production Studio](https://www.pathwayxr.studio/)\n\t- Interactive GenAI image and video systems for [Neocadia](https://neocadia.com/)\n\t- Text to 3D models with [Vircadia | Open Source Metaverse Platform](https://vircadia.com/)\n\t- Collaborating on the [second Unique Digital Asset](https://twitter.com/Single_Use_Seal) launched on Bitcoin / RGB / [Diba](https://diba.io/)\n\t  id:: 65a27c7d-3da0-4fea-9187-59de9fbbe498\n\t- Educational products with a couple of top flight product managers such as [Parent's guide to Artificial Intelligence)](https://parentsguidetoai.com/)\n\t- LogSeq based training and [[presentation]] material**\n\t- .#.v-gallery-col3\n\t\t- ![image.png](../assets/image_1704299260090_0.png){:width 600}\n\t\t- ![image.png](../assets/image_1705148081233_0.png)\n\t\t- ![image.png](../assets/image_1705148236040_0.png) -\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "65a27c7d-3da0-4fea-9187-59de9fbbe498",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-202334294651",
+    "- preferred-term": "Recent Projects",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on recent projects.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:RecentProjects",
+    "- owl:physicality": "VirtualEntity",
+    "- owl:role": "Object",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- has-part": "[[WorldSpace]], [[PhysicsEngine]], [[SceneGraph]], [[Avatar]]",
+    "- is-part-of": "[[Metaverse]], [[MetaversePlatform]]",
+    "- requires": "[[3DRenderingEngine]], [[NetworkProtocol]], [[DatabaseSystem]]",
+    "- enables": "[[VirtualSociety]], [[DigitalEconomy]], [[SocialInteraction]]",
+    "public": "true"
+  },
+  "backlinks": [
+    "BC-0052-proof-of-work",
+    "Introduction to me"
+  ],
+  "wiki_links": [
+    "DigitalEconomy",
+    "Avatar",
+    "MetaversePlatform",
+    "Metaverse",
+    "MetaverseDomain",
+    "VirtualSociety",
+    "DatabaseSystem",
+    "SceneGraph",
+    "presentation",
+    "PhysicsEngine",
+    "NetworkProtocol",
+    "Hardware and Edge",
+    "WorldSpace",
+    "SocialInteraction",
+    "3DRenderingEngine"
+  ],
+  "ontology": {
+    "term_id": "mv-202334294651",
+    "preferred_term": "Recent Projects",
+    "definition": "A component of the metaverse ecosystem focusing on recent projects.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

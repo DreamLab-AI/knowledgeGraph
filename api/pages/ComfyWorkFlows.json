@@ -1,0 +1,39 @@
+{
+  "title": "ComfyWorkFlows",
+  "content": "- ### OntologyBlock\n  id:: comfyworkflows-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-703576056765\n\t- preferred-term:: ComfyWorkFlows\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on comfyworkflows.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:Comfyworkflows\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Process\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n\t- #### OWL Axioms\n\t  id:: comfyworkflows-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:Comfyworkflows))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:Comfyworkflows mv:ConceptualEntity)\n\t\t  SubClassOf(mv:Comfyworkflows mv:Process)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:Comfyworkflows\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:Comfyworkflows \"ComfyWorkFlows\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:Comfyworkflows \"A component of the metaverse ecosystem focusing on comfyworkflows.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:Comfyworkflows \"mv-703576056765\"^^xsd:string)\n\t\t  ```\n\n- Complex Universal text to video\n\t- [stephan_tual_universal_video_generator__modelscope_adlcm_w_sd15__now_with_supir_sdxl_lightning__comfyworkflows.json](../assets/stephan_tual_universal_video_generator_modelscope_adlcm_w_sd15_now_with_supir_sdxl_lightning_comfyworkflows_1710624249605_0.json)\n- Super High Resolution with multiple passes (slightly work in progress)\n\t- [superHighRes.json](../assets/superHighRes_1711357061263_0.json)\n- Image to Video\n\t- [pxlpshr-lcm-img2vid-v3.json](../assets/pxlpshr-lcm-img2vid-v3_1722888297148_0.json)\n- 3D Object creation\n\t- [scribble_to_3d_model.json](../assets/scribble_to_3d_model_1712495218041_0.json)\n\t- [ShortPhraseLlama3LocalTRIPOSRModelMaker.json](../assets/ShortPhraseLlama3LocalTRIPOSRModelMaker_1713884344844_0.json)\n- Pathway Steve Film Hack project\n\t- [final Pathway.json](../assets/final_Pathway_1717180969146_0.json)\n\t- [Somewhat Working QR code animator.json](../assets/Somewhat_Working_QR_code_animator_1718965965838_0.json)\n- Fashion Project\n\t- [wornFashionImageOtherSide.json](../assets/wornFashionImageOtherSide_1714072657173_0.json)\n\t- [wornFashionImage.json](../assets/wornFashionImage_1714072664216_0.json)\n\t- ![Screenshot 2024-04-25 194433.png](../assets/Screenshot_2024-04-25_194433_1714072682839_0.png)\n\t- ![Screenshot 2024-04-25 194951.png](../assets/Screenshot_2024-04-25_194951_1714072690197_0.png)\n\t-\n- [MayEventBrokenFaceSwap.json](../assets/MayEventBrokenFaceSwap_1714831005658_0.json)\n- IPIV morph\n\t- [ipiv-Morph-img2vid-AnimateDiff-HyperSD.json](../assets/ipiv-Morph-img2vid-AnimateDiff-HyperSD_1717781302517_0.json)\n\t-\n- Building 4 image to QR code animator, incomplete\n\t- [QR animator with 4 image input.json](../assets/QR_animator_with_4_image_input_1719048847707_0.json)\n- Flux\n\t- [image2imageFlux.json](../assets/image2imageFlux_1722886476017_0.json)\n\t- [highResFluxFull40G.json](../assets/highResFluxFull40G_1722886805973_0.json)\n- Image2Video\n\t- [workingImage2Video.json](../assets/workingImage2Video_1723634239251_0.json)\n\t-\n\t-\n\t-\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "comfyworkflows-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-703576056765",
+    "- preferred-term": "ComfyWorkFlows",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on comfyworkflows.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:Comfyworkflows",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Process",
+    "- belongsToDomain": "[[MetaverseDomain]]"
+  },
+  "backlinks": [
+    "BC-0029-merkle-tree",
+    "BC-0072-node",
+    "Merkle Tree",
+    "ComfyUI",
+    "Flux"
+  ],
+  "wiki_links": [
+    "MetaverseDomain"
+  ],
+  "ontology": {
+    "term_id": "mv-703576056765",
+    "preferred_term": "ComfyWorkFlows",
+    "definition": "A component of the metaverse ecosystem focusing on comfyworkflows.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

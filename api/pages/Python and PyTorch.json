@@ -26,21 +26,21 @@
     "ollama"
   ],
   "wiki_links": [
-    "RenderingEngine",
-    "Python and PyTorch",
-    "Nostr protocol",
-    "SpatialComputing",
-    "Machine Learning",
+    "ComputerVision",
     "Presence",
     "Large language models",
-    "ComfyUI",
-    "ComputerVision",
-    "Robotics",
     "MetaverseDomain",
-    "DisplayTechnology",
     "TrackingSystem",
+    "Python and PyTorch",
+    "DisplayTechnology",
+    "RenderingEngine",
+    "ComfyUI",
     "ImmersiveExperience",
-    "HumanComputerInteraction"
+    "Robotics",
+    "Machine Learning",
+    "Nostr protocol",
+    "HumanComputerInteraction",
+    "SpatialComputing"
   ],
   "ontology": {
     "term_id": "mv-682405397089",

@@ -12,7 +12,10 @@
     "- public-access": "true",
     "- definition": "Bidirectional and Auto-Regressive Transformers: a denoising autoencoder for pre-training sequence-to-sequence models, combining bidirectional encoding (like BERT) with autoregressive decoding (like GPT)."
   },
-  "backlinks": [],
+  "backlinks": [
+    "Transformers",
+    "Telecollaboration and Telepresence"
+  ],
   "wiki_links": [],
   "ontology": {
     "term_id": "AI-0222",

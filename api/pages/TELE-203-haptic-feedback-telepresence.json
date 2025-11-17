@@ -7,19 +7,20 @@
     "TELE-200-robotic-telepresence",
     "TELE-201-teleoperation-systems",
     "TELE-028-horizon-workrooms",
+    "TELE-0000-telepresence-domain",
     "TELE-300-digital-twin-collaboration",
     "TELE-CONV-002-robotics-telepresence-bridge",
     "TELE-001-telepresence"
   ],
   "wiki_links": [
-    "TELE-0000-telepresence-domain",
-    "TELE-020-virtual-reality-telepresence",
-    "AIDomain",
     "RoboticsDomain",
-    "TELE-201-teleoperation-systems",
+    "TELE-0000-telepresence-domain",
+    "RoboticTelepresence",
+    "TELE-020-virtual-reality-telepresence",
     "TELE-001-telepresence",
+    "AIDomain",
     "TELE-200-robotic-telepresence",
-    "RoboticTelepresence"
+    "TELE-201-teleoperation-systems"
   ],
   "ontology": {
     "term_id": "TELE-203",

@@ -1,0 +1,45 @@
+{
+  "title": "SHA-256",
+  "content": "- ### OntologyBlock\n  id:: sha-256-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0028\n    - preferred-term:: SHA-256\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Secure Hash Algorithm 256-bit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Sha-256\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n    - implementedInLayer:: [[SecurityLayer]]\n\n  - #### Relationships\n    id:: sha-256-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[CryptographicPrimitive]]\n\n  - #### OWL Axioms\n    id:: sha-256-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0028>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:SHA-256))\n\n  ## Subclass Relationships\n  SubClassOf(:SHA-256 :CryptographicPrimitive)\n  SubClassOf(:SHA-256 :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:SHA-256\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:SHA-256\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :SHA-256 \"BC-0028\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :SHA-256 \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :SHA-256 \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :SHA-256 :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :SHA-256 :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :SHA-256 \"SHA-256\"@en)\n  AnnotationAssertion(rdfs:comment :SHA-256\n    \"Secure Hash Algorithm 256-bit\"@en)\n  AnnotationAssertion(dct:description :SHA-256\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :SHA-256 \"BC-0028\")\n  AnnotationAssertion(:priority :SHA-256 \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :SHA-256 \"cryptographic-foundations\"@en)\n)\n      ```\n\n- ## About SHA-256\n  id:: sha-256-about\n\n  - Secure Hash Algorithm 256-bit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n  -\n  - ### Key Characteristics\n    id:: sha-256-characteristics\n    - 1. **Definitional Property**: Core defining characteristic\n    - 2. **Functional Property**: Operational behavior\n    - 3. **Structural Property**: Compositional elements\n    - 4. **Security Property**: Security guarantees provided\n    - 5. **Performance Property**: Efficiency considerations\n  -\n  - ### Technical Components\n    id:: sha-256-components\n    - **Implementation**: How concept is realized technically\n    - **Verification**: Methods for validating correctness\n    - **Interaction**: Relationships with other components\n    - **Constraints**: Technical limitations and requirements\n  -\n  - ### Use Cases\n    id:: sha-256-use-cases\n    - **1. Core Blockchain Operation**\n    - **Application**: Fundamental blockchain functionality\n    - **Example**: Practical implementation in major blockchains\n    - **Requirements**: Technical prerequisites\n    - **Benefits**: Value provided to blockchain systems\n  -\n  - ### Standards & References\n    id:: sha-256-standards\n    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies\n    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies\n    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies\n  -",
+  "properties": {
+    "id": "sha-256-standards",
+    "collapsed": "true",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0028",
+    "- preferred-term": "SHA-256",
+    "- source-domain": "blockchain",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-10-28",
+    "- definition": "Secure Hash Algorithm 256-bit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "- maturity": "mature",
+    "- source": "[[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:Sha-256",
+    "- owl:physicality": "VirtualEntity",
+    "- owl:role": "Object",
+    "- owl:inferred-class": "bc:VirtualObject",
+    "- belongsToDomain": "[[CryptographicDomain]]",
+    "- implementedInLayer": "[[SecurityLayer]]",
+    "- is-subclass-of": "[[Blockchain Entity]], [[CryptographicPrimitive]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "CryptographicDomain",
+    "ISO/IEC 23257:2021",
+    "IEEE 2418.1",
+    "Blockchain Entity",
+    "CryptographicPrimitive",
+    "SecurityLayer",
+    "NIST NISTIR"
+  ],
+  "ontology": {
+    "term_id": "BC-0028",
+    "preferred_term": "SHA-256",
+    "definition": "Secure Hash Algorithm 256-bit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "source_domain": "blockchain",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

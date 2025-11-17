@@ -1,0 +1,48 @@
+{
+  "title": "GPTs and Custom Assistants",
+  "content": "- ### OntologyBlock\n  id:: gpts-and-custom-assistants-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-242189235282\n\t- preferred-term:: GPTs and Custom Assistants\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on gpts and custom assistants.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:GptsAndCustomAssistants\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: gpts-and-custom-assistants-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: gpts-and-custom-assistants-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:GptsAndCustomAssistants))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:GptsAndCustomAssistants mv:ConceptualEntity)\n\t\t  SubClassOf(mv:GptsAndCustomAssistants mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:GptsAndCustomAssistants\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:GptsAndCustomAssistants \"GPTs and Custom Assistants\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:GptsAndCustomAssistants \"A component of the metaverse ecosystem focusing on gpts and custom assistants.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:GptsAndCustomAssistants \"mv-242189235282\"^^xsd:string)\n\t\t  ```\n\n- Altman and Gates Podcast\n\t- When you look at the next two years, what do you think some of the key milestones will be?\n\t- Multimodality will definitely be important. Which means speech in, speech out? Speech in, speech out. Images. Eventually video. Clearly, people really want that. We’ve launched images and audio, and it had a much stronger response than we expected.\n\t- We’ll be able to push that much further, but maybe the most important areas of progress will be around reasoning ability. Right now, GPT-4 can reason in only extremely limited ways.\n\t- Also reliability. If you ask GPT-4 most questions 10,000 times, one of those 10,000 is probably pretty good, but it doesn’t always know which one, and you’d like to get the best response of 10,000 each time, and so that increase in reliability will be important.\n\t- Customizability and personalization will also be very important. People want very different things out of GPT-4: different styles, different sets of assumptions. We’ll make all that possible, and then also the ability to have it use your own data. The ability to know about you, your email, your calendar, how you like appointments booked, connected to other outside data sources, all of that. Those will be some of the most important areas of improvement. In the basic algorithm right now, it’s just feed forward, multiply, and so to generate every new word, it’s essentially doing the same thing.\n- Custom Assistants\n\t- [SamurAIGPT/Open-Custom-GPT: Create Custom GPT and add/embed on your site using Assistants api (github.com)](https://github.com/SamurAIGPT/Open-Custom-GPT)\n\t- [Trouble Converting Custom GPT to Assistant\n\t\t- API\n\t\t- OpenAI Developer Forum](https://community.openai.com/t/trouble-converting-custom-gpt-to-assistant/597981)\n\t- [Converting Custom GPTs to Assistant (plugbear.io)](https://plugbear.io/posts/converting-gpts-to-assistant)\n\t-\n\t-\n- # GPTs I have found useful\n\t- [ChatGPT GPT Customizer, File Finder & JSON Action Creator (openai.com)](https://chat.openai.com/g/g-iThwkWDbA-gpt-customizer-file-finder-json-action-creator)\n\t- [ChatGPT AI Lawyer (UK) (openai.com)](https://chat.openai.com/g/g-IGm90GOlS-ai-lawyer-uk)\n\t- [ChatGPT ElevenLabs Text To Speech (openai.com)](https://chat.openai.com/g/g-h0lbLuFF1-elevenlabs-text-to-speech)\n\t- GPT \"Mentions\" and \"inline tagging of GPTs\"\n\t- [ChatGPT - Framework Finder](https://chatgpt.com/g/g-vZ7SgKBOh-framework-finder)\n\t- [ChatGPT - Image to Text for Video](https://chatgpt.com/g/g-RpSVwNZgr-image-to-text-for-video)\n- # Project [[Could]]\n\t- Custom GPT\n\t\t- Tags database for logseq\n\t\t- receive an unstructured page\n\t\t- expand all links with summaries\n\t\t- group by\n\t\t- subgroup (identified by gpt)\n\t\t- date (old new)\n\t\t- create narrative scaffold around the links\n\t\t- restructure pass\n\t- Custom API assistant\n\t\t- Convert using assistants\n\t\t- move summary code to locahost\n\t\t- integrate into logseq right clock\n\t- Custom voice to 3d model through API calls\n\t-\n\t-\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "gpts-and-custom-assistants-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-242189235282",
+    "- preferred-term": "GPTs and Custom Assistants",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on gpts and custom assistants.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:GptsAndCustomAssistants",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]"
+  },
+  "backlinks": [
+    "Knowledge Graphing"
+  ],
+  "wiki_links": [
+    "ComputerVision",
+    "Presence",
+    "MetaverseDomain",
+    "TrackingSystem",
+    "DisplayTechnology",
+    "RenderingEngine",
+    "ImmersiveExperience",
+    "Robotics",
+    "HumanComputerInteraction",
+    "Could",
+    "SpatialComputing"
+  ],
+  "ontology": {
+    "term_id": "mv-242189235282",
+    "preferred_term": "GPTs and Custom Assistants",
+    "definition": "A component of the metaverse ecosystem focusing on gpts and custom assistants.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

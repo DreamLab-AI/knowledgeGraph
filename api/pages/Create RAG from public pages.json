@@ -1,0 +1,46 @@
+{
+  "title": "Create RAG from public pages",
+  "content": "- ### OntologyBlock\n  id:: create-rag-from-public-pages-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-992111836057\n\t- preferred-term:: Create RAG from public pages\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem focusing on create rag from public pages.\n\t- maturity:: mature\n\t- authority-score:: 0.85\n\t- owl:class:: mv:CreateRagFromPublicPages\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: create-rag-from-public-pages-relationships\n\t\t- enables:: [[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]\n\t\t- requires:: [[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]\n\t\t- bridges-to:: [[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]\n\n\t- #### OWL Axioms\n\t  id:: create-rag-from-public-pages-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:CreateRagFromPublicPages))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:CreateRagFromPublicPages mv:ConceptualEntity)\n\t\t  SubClassOf(mv:CreateRagFromPublicPages mv:Concept)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:CreateRagFromPublicPages\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:MetaverseDomain)\n\t\t  )\n\n\t\t  # Annotations\n\t\t  AnnotationAssertion(rdfs:label mv:CreateRagFromPublicPages \"Create RAG from public pages\"@en)\n\t\t  AnnotationAssertion(rdfs:comment mv:CreateRagFromPublicPages \"A component of the metaverse ecosystem focusing on create rag from public pages.\"@en)\n\t\t  AnnotationAssertion(dcterms:identifier mv:CreateRagFromPublicPages \"mv-992111836057\"^^xsd:string)\n\t\t  ```\n\n## Python code block execution\n\t- Note Python will load the first time this block is evaluated\n\t- ```python\n\t  import re\n\t  import js\n\t  \n\t  def clean_text(text):\n\t      # Remove URLs starting with http or https\n\t      text = re.sub(r'http\\S+', '', text)\n\t  \n\t      # Remove unwanted characters: - [ ] ( ) * { }\n\t      text = re.sub(r'[-\\[\\]()\\*{}]', '', text)\n\t  \n\t      # Remove double square brackets [[...]]\n\t      text = re.sub(r'\\[\\[|\\]\\]', '', text)\n\t  \n\t      return text\n\t  \n\t  def list_public_pages():\n\t      try:\n\t          pages = js.logseq.api.get_all_pages()\n\t          public_pages = []\n\t          for page in pages:\n\t              page_name = page.originalName\n\t              # Get the first block of the page which typically contains metadata\n\t              content = js.logseq.api.get_page_blocks_tree(page_name)\n\t              if content and \"public:: true\" in content[0].content:\n\t                  public_pages.append(page_name)\n\t          return public_pages\n\t      except Exception as e:\n\t          js.logseq.api.show_msg(f\"Error in list_public_pages: {e}\", {'timeout': 5000})\n\t          return []\n\t  \n\t  def load_page_content(page_name):\n\t      try:\n\t          blocks = js.logseq.api.get_page_blocks_tree(page_name)\n\t          content = \"\\n\".join([block.content for block in blocks])\n\t          return content\n\t      except Exception as e:\n\t          js.logseq.api.show_msg(f\"Error in load_page_content: {e}\", {'timeout': 5000})\n\t          return \"\"\n\t  \n\t  def ensure_fullrag_page_exists():\n\t      try:\n\t          fullrag_page = js.logseq.api.get_page(\"FULLRAG\")\n\t          if fullrag_page is None:\n\t              js.logseq.api.create_page(\"FULLRAG\", {\"title\": \"FULLRAG\"}, {\"createFirstBlockIfNotFound\": True})\n\t          return True\n\t      except Exception as e:\n\t          js.logseq.api.show_msg(f\"Error in ensure_fullrag_page_exists: {e}\", {'timeout': 5000})\n\t          return False\n\t  \n\t  def append_to_fullrag(content):\n\t      try:\n\t          js.logseq.api.append_block_in_page(\"FULLRAG\", content)\n\t          js.logseq.api.show_msg(\"Content appended successfully to FULLRAG.\", {'timeout': 5000})\n\t      except Exception as e:\n\t          js.logseq.api.show_msg(f\"Error in append_to_fullrag: {e}\", {'timeout': 5000})\n\t  \n\t  def process_all_public_pages():\n\t      public_pages = list_public_pages()\n\t      if not public_pages:\n\t          return \"No public pages found.\"\n\t  \n\t      for public_page_name in public_pages:\n\t          content = load_page_content(public_page_name)\n\t          if not content:\n\t              js.logseq.api.show_msg(f\"Could not load content from {public_page_name}.\", {'timeout': 5000})\n\t              continue\n\t  \n\t          cleaned_content = clean_text(content)\n\t          if ensure_fullrag_page_exists():\n\t              append_to_fullrag(f\"# {public_page_name}\\n\\n{cleaned_content}\\n\\n\")\n\t          else:\n\t              return \"Could not ensure FULLRAG page exists.\"\n\t  \n\t      return \"Processed and added content from all public pages to FULLRAG.\"\n\t  \n\t  def main():\n\t      result = process_all_public_pages()\n\t      return result\n\t  \n\t  # Execute the main function\n\t  main()\n\t  ```\n\t\t- {{evalparent}}\n\t\t-\n- <iframe src=\"http://192.168.0.51:3000\" style=\"width: 2000px; height: 800px\"></iframe>```\n- # Prompt for RAGflow\n\t- ```\n\t  ```\n- [ChatGPT](https://chatgpt.com/c/d97620e2-9d1c-46e2-9b34-42145f380160)\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "properties": {
+    "id": "create-rag-from-public-pages-owl-axioms",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-992111836057",
+    "- preferred-term": "Create RAG from public pages",
+    "- source-domain": "metaverse",
+    "- status": "active",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem focusing on create rag from public pages.",
+    "- maturity": "mature",
+    "- authority-score": "0.85",
+    "- owl:class": "mv:CreateRagFromPublicPages",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]",
+    "- enables": "[[ImmersiveExperience]], [[Presence]], [[SpatialComputing]]",
+    "- requires": "[[DisplayTechnology]], [[TrackingSystem]], [[RenderingEngine]]",
+    "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "ComputerVision",
+    "...",
+    "Presence",
+    "MetaverseDomain",
+    "TrackingSystem",
+    "DisplayTechnology",
+    "RenderingEngine",
+    "ImmersiveExperience",
+    "Robotics",
+    "HumanComputerInteraction",
+    "SpatialComputing"
+  ],
+  "ontology": {
+    "term_id": "mv-992111836057",
+    "preferred_term": "Create RAG from public pages",
+    "definition": "A component of the metaverse ecosystem focusing on create rag from public pages.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": 0.85
+  }
+}

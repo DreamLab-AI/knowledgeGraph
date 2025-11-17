@@ -20,7 +20,9 @@
     "- owl:role": "Concept",
     "- belongsToDomain": "[[MetaverseDomain]]"
   },
-  "backlinks": [],
+  "backlinks": [
+    "Rov"
+  ],
   "wiki_links": [
     "MetaverseDomain"
   ],

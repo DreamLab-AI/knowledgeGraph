@@ -1,0 +1,45 @@
+{
+  "title": "Orphan Block",
+  "content": "- ### OntologyBlock\n  id:: orphan-block-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0016\n    - preferred-term:: Orphan Block\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Valid block not in longest chain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:OrphanBlock\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[BlockchainDomain]]\n    - implementedInLayer:: [[ConceptualLayer]]\n\n  - #### Relationships\n    id:: orphan-block-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[DistributedDataStructure]]\n\n  - #### OWL Axioms\n    id:: orphan-block-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0016>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:OrphanBlock))\n\n  ## Subclass Relationships\n  SubClassOf(:OrphanBlock :DistributedDataStructure)\n  SubClassOf(:OrphanBlock :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:OrphanBlock\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:OrphanBlock\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :OrphanBlock \"BC-0016\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :OrphanBlock \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :OrphanBlock \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :OrphanBlock :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :OrphanBlock :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :OrphanBlock \"Orphan Block\"@en)\n  AnnotationAssertion(rdfs:comment :OrphanBlock\n    \"Valid block not in longest chain\"@en)\n  AnnotationAssertion(dct:description :OrphanBlock\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :OrphanBlock \"BC-0016\")\n  AnnotationAssertion(:priority :OrphanBlock \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :OrphanBlock \"blockchain-fundamentals\"@en)\n)\n      ```\n\n- ## About Orphan Block\n  id:: orphan-block-about\n\n  - Valid block not in longest chain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n  -\n  - ### Key Characteristics\n    id:: orphan-block-characteristics\n    - 1. **Definitional Property**: Core defining characteristic\n    - 2. **Functional Property**: Operational behavior\n    - 3. **Structural Property**: Compositional elements\n    - 4. **Security Property**: Security guarantees provided\n    - 5. **Performance Property**: Efficiency considerations\n  -\n  - ### Technical Components\n    id:: orphan-block-components\n    - **Implementation**: How concept is realized technically\n    - **Verification**: Methods for validating correctness\n    - **Interaction**: Relationships with other components\n    - **Constraints**: Technical limitations and requirements\n  -\n  - ### Use Cases\n    id:: orphan-block-use-cases\n    - **1. Core Blockchain Operation**\n    - **Application**: Fundamental blockchain functionality\n    - **Example**: Practical implementation in major blockchains\n    - **Requirements**: Technical prerequisites\n    - **Benefits**: Value provided to blockchain systems\n  -\n  - ### Standards & References\n    id:: orphan-block-standards\n    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies\n    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies\n    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies\n  -",
+  "properties": {
+    "id": "orphan-block-standards",
+    "collapsed": "true",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0016",
+    "- preferred-term": "Orphan Block",
+    "- source-domain": "blockchain",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-10-28",
+    "- definition": "Valid block not in longest chain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "- maturity": "mature",
+    "- source": "[[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:OrphanBlock",
+    "- owl:physicality": "VirtualEntity",
+    "- owl:role": "Object",
+    "- owl:inferred-class": "bc:VirtualObject",
+    "- belongsToDomain": "[[BlockchainDomain]]",
+    "- implementedInLayer": "[[ConceptualLayer]]",
+    "- is-subclass-of": "[[Blockchain Entity]], [[DistributedDataStructure]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "DistributedDataStructure",
+    "ISO/IEC 23257:2021",
+    "IEEE 2418.1",
+    "Blockchain Entity",
+    "BlockchainDomain",
+    "NIST NISTIR",
+    "ConceptualLayer"
+  ],
+  "ontology": {
+    "term_id": "BC-0016",
+    "preferred_term": "Orphan Block",
+    "definition": "Valid block not in longest chain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "source_domain": "blockchain",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

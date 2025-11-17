@@ -12,7 +12,9 @@
     "- public-access": "true"
   },
   "backlinks": [
+    "Recurrent Neural Network",
     "Deep Learning",
+    "Transformers",
     "Human Preference",
     "Large language models",
     "Multi Head Attention"
