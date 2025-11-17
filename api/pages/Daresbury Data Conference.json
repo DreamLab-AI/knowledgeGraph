@@ -23,19 +23,19 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "HumanComputerInteraction",
     "DisplayTechnology",
-    "Health",
-    "Digital",
     "TrackingSystem",
-    "ImmersiveExperience",
-    "Robotics",
-    "MetaverseDomain",
-    "Presence",
     "RenderingEngine",
-    "ComputerVision",
+    "Space",
+    "Robotics",
+    "HumanComputerInteraction",
+    "Digital",
     "SpatialComputing",
-    "Space"
+    "ComputerVision",
+    "Health",
+    "Presence",
+    "ImmersiveExperience",
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "mv-718044584947",

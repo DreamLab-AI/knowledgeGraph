@@ -15,8 +15,8 @@
   "backlinks": [],
   "wiki_links": [
     "Panoptic Segmentation",
-    "Semantic Segmentation",
     "Object Detection",
+    "Semantic Segmentation",
     "MetaverseDomain"
   ],
   "ontology": {

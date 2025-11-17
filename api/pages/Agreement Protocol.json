@@ -29,20 +29,20 @@
     "Distributed Protocol"
   ],
   "wiki_links": [
-    "BFT Consensus",
-    "Byzantine Agreement Papers",
-    "Byzantine Agreement",
-    "PBFT",
-    "BlockchainDomain",
-    "Paxos",
     "Consensus Mechanism",
-    "FLP Impossibility",
-    "Distributed Protocol",
     "ConceptualLayer",
-    "Crash Fault Tolerant Agreement",
     "PBFT Algorithm",
     "Paxos and Raft Consensus",
-    "Nakamoto Consensus"
+    "BlockchainDomain",
+    "Distributed Protocol",
+    "Crash Fault Tolerant Agreement",
+    "Nakamoto Consensus",
+    "FLP Impossibility",
+    "BFT Consensus",
+    "PBFT",
+    "Byzantine Agreement Papers",
+    "Byzantine Agreement",
+    "Paxos"
   ],
   "ontology": {
     "term_id": "PC-0007",

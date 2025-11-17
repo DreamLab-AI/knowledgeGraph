@@ -23,19 +23,19 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Projects",
-    "HumanComputerInteraction",
     "DisplayTechnology",
     "TrackingSystem",
-    "ImmersiveExperience",
-    "Robotics",
-    "MetaverseDomain",
-    "Presence",
     "RenderingEngine",
+    "Robotics",
+    "HumanComputerInteraction",
     "SHOULD",
     "AR Frame",
+    "SpatialComputing",
     "ComputerVision",
-    "SpatialComputing"
+    "Projects",
+    "Presence",
+    "ImmersiveExperience",
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "mv-903603885842",

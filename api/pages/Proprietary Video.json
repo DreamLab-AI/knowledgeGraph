@@ -29,22 +29,22 @@
     "BC-0037-public-key"
   ],
   "wiki_links": [
-    "presentation",
-    "HumanComputerInteraction",
-    "Open Generative AI tools",
     "DisplayTechnology",
-    "NVIDIA Omniverse",
     "TrackingSystem",
-    "ImmersiveExperience",
-    "Robotics",
-    "MetaverseDomain",
-    "Presence",
     "RenderingEngine",
     "Metaverse and Telecollaboration",
-    "ComputerVision",
+    "OpenUSD",
+    "Robotics",
+    "HumanComputerInteraction",
     "SpatialComputing",
     "Omniverse",
-    "OpenUSD"
+    "NVIDIA Omniverse",
+    "presentation",
+    "ComputerVision",
+    "Presence",
+    "ImmersiveExperience",
+    "MetaverseDomain",
+    "Open Generative AI tools"
   ],
   "ontology": {
     "term_id": "mv-192862651986",
