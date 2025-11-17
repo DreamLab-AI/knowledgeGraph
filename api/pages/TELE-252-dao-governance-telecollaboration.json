@@ -12,9 +12,9 @@
     "TELE-002-telecollaboration",
     "TELE-0000-telepresence-domain",
     "BlockchainCollaboration",
-    "DecentralisedAutonomousOrganisation",
+    "BlockchainDomain",
     "TELE-250-blockchain-collaboration",
-    "BlockchainDomain"
+    "DecentralisedAutonomousOrganisation"
   ],
   "ontology": {
     "term_id": "TELE-252",

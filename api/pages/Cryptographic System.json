@@ -28,20 +28,20 @@
     "Blockchain Entity"
   ],
   "wiki_links": [
-    "Zero-Knowledge Proof",
-    "ConceptualLayer",
-    "Blockchain",
-    "Homomorphic Encryption",
-    "ISO/IEC 18033 Encryption Algorithms",
-    "Merkle Tree",
-    "Cryptographic Hash Function",
     "Blockchain Entity",
+    "Merkle Tree",
     "NIST Cryptographic Standards",
-    "BlockchainDomain",
-    "Threshold Cryptography",
-    "Digital Signature",
     "Public Key Cryptography",
-    "FIPS 140-3 Security Requirements"
+    "Cryptographic Hash Function",
+    "Digital Signature",
+    "FIPS 140-3 Security Requirements",
+    "Threshold Cryptography",
+    "Zero-Knowledge Proof",
+    "ISO/IEC 18033 Encryption Algorithms",
+    "Blockchain",
+    "BlockchainDomain",
+    "ConceptualLayer",
+    "Homomorphic Encryption"
   ],
   "ontology": {
     "term_id": "PC-0003",
