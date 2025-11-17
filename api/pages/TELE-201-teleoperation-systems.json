@@ -9,13 +9,13 @@
     "TELE-001-telepresence"
   ],
   "wiki_links": [
-    "TELE-200-robotic-telepresence",
-    "RoboticsDomain",
+    "RoboticTelepresence",
     "TELE-203-haptic-feedback-telepresence",
-    "da Vinci",
-    "TELE-CONV-002-robotics-telepresence-bridge",
     "TELE-0000-telepresence-domain",
-    "RoboticTelepresence"
+    "TELE-CONV-002-robotics-telepresence-bridge",
+    "RoboticsDomain",
+    "TELE-200-robotic-telepresence",
+    "da Vinci"
   ],
   "ontology": {
     "term_id": "TELE-201",

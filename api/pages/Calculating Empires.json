@@ -24,21 +24,21 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Artificial Intelligence",
-    "DisplayTechnology",
     "TrackingSystem",
+    "DisplayTechnology",
     "RenderingEngine",
-    "Robotics",
     "HumanComputerInteraction",
     "Education and AI",
     "SpatialComputing",
+    "Presence",
+    "MetaverseDomain",
+    "Artificial Intelligence",
     "Politics, Law, Privacy",
-    "Cyber Security and Military",
     "ComputerVision",
     "Digital Society Surveillance",
-    "Presence",
+    "Robotics",
     "ImmersiveExperience",
-    "MetaverseDomain"
+    "Cyber Security and Military"
   ],
   "ontology": {
     "term_id": "mv-271243742472",

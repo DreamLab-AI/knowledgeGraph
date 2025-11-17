@@ -28,23 +28,23 @@
     "Flux"
   ],
   "wiki_links": [
-    "WebDev and Consumer Tooling",
-    "Hardware and Edge",
-    "DisplayTechnology",
     "TrackingSystem",
+    "DisplayTechnology",
     "RenderingEngine",
-    "AI Video",
-    "Human tracking and SLAM capture",
-    "Robotics",
     "HumanComputerInteraction",
+    "WebDev and Consumer Tooling",
+    "Human tracking and SLAM capture",
     "SpatialComputing",
+    "Presence",
+    "MetaverseDomain",
+    "Hardware and Edge",
     "Product Design",
     "ComputerVision",
-    "Presence",
+    "Robotics",
     "ImmersiveExperience",
-    "MetaverseDomain",
-    "Segmentation and Identification",
-    "Image Generation"
+    "Image Generation",
+    "AI Video",
+    "Segmentation and Identification"
   ],
   "ontology": {
     "term_id": "mv-798670837568",

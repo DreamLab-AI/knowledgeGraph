@@ -34,23 +34,23 @@
     "BC-0014-block-time"
   ],
   "wiki_links": [
-    "cuervo2018creating",
-    "Hardware and Edge",
-    "DisplayTechnology",
     "TrackingSystem",
+    "DisplayTechnology",
     "RenderingEngine",
-    "boring2009scroll",
-    "Robotics",
     "HumanComputerInteraction",
+    "Hardware and Edge",
     "SpatialComputing",
-    "Large language models",
+    "Presence",
+    "MetaverseDomain",
+    "cuervo2018creating",
+    "boring2009scroll",
+    "hansberger2017dispelling",
     "Update Cycle",
     "ComputerVision",
-    "hansberger2017dispelling",
-    "Presence",
+    "Robotics",
     "ImmersiveExperience",
-    "MetaverseDomain",
-    "Proprietary Large Language Models"
+    "Proprietary Large Language Models",
+    "Large language models"
   ],
   "ontology": {
     "term_id": "mv-702620567296",

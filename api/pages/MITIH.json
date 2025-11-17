@@ -23,20 +23,20 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "MITIH bid assessment",
-    "DisplayTechnology",
     "TrackingSystem",
+    "DisplayTechnology",
     "RenderingEngine",
-    "Robotics",
     "HumanComputerInteraction",
+    "Visionflow",
+    "MITIH bid assessment",
     "SpatialComputing",
-    "NVIDIA Omniverse",
-    "ComputerVision",
     "Presence",
-    "ImmersiveExperience",
     "MetaverseDomain",
     "Knowhere",
-    "Visionflow"
+    "ComputerVision",
+    "NVIDIA Omniverse",
+    "Robotics",
+    "ImmersiveExperience"
   ],
   "ontology": {
     "term_id": "mv-63479380811",

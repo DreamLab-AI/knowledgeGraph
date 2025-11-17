@@ -40,22 +40,22 @@
     "Calculating Empires"
   ],
   "wiki_links": [
-    "copyright",
-    "DisplayTechnology",
     "TrackingSystem",
+    "DisplayTechnology",
     "RenderingEngine",
-    "Robotics",
     "HumanComputerInteraction",
     "Education and AI",
     "SpatialComputing",
+    "Presence",
+    "MetaverseDomain",
     "presentation",
     "Politics, Law, Privacy",
-    "pol",
-    "Privacy, Trust and Safety",
+    "copyright",
     "ComputerVision",
-    "Presence",
+    "Robotics",
+    "pol",
     "ImmersiveExperience",
-    "MetaverseDomain"
+    "Privacy, Trust and Safety"
   ],
   "ontology": {
     "term_id": "mv-263215818414",

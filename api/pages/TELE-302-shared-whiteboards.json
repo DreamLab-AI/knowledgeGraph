@@ -12,10 +12,10 @@
   "wiki_links": [
     "TELE-028-horizon-workrooms",
     "AIDomain",
+    "TELE-0000-telepresence-domain",
     "TELE-002-telecollaboration",
-    "TELE-301-virtual-office-spaces",
     "DigitalTwinCollaboration",
-    "TELE-0000-telepresence-domain"
+    "TELE-301-virtual-office-spaces"
   ],
   "ontology": {
     "term_id": "TELE-302",

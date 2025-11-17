@@ -26,21 +26,21 @@
     "Death of the Internet"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "Hardware and Edge",
-    "DisplayTechnology",
     "TrackingSystem",
+    "DisplayTechnology",
     "RenderingEngine",
-    "Robotics",
     "HumanComputerInteraction",
-    "Artificial Superintelligence",
+    "Hardware and Edge",
     "SpatialComputing",
+    "Presence",
+    "MetaverseDomain",
+    "Artificial Intelligence",
+    "Energy and Power",
     "Politics, Law, Privacy",
     "ComputerVision",
-    "Energy and Power",
-    "Presence",
-    "ImmersiveExperience",
-    "MetaverseDomain"
+    "Robotics",
+    "Artificial Superintelligence",
+    "ImmersiveExperience"
   ],
   "ontology": {
     "term_id": "mv-986329467071",

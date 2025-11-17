@@ -27,14 +27,14 @@
     "Ai Engineering"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "Risk",
-    "Algorithm",
     "Ai Governance",
-    "Generative Ai",
+    "Artificial Intelligence",
     "Ai Engineering",
+    "Generative Ai",
     "Model",
-    "Machine Learning"
+    "Algorithm",
+    "Machine Learning",
+    "Risk"
   ],
   "ontology": {
     "term_id": "AI-0802",

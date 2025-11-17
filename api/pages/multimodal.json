@@ -24,20 +24,20 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Multimodal",
-    "DisplayTechnology",
     "TrackingSystem",
+    "DisplayTechnology",
     "RenderingEngine",
-    "Robotics",
     "HumanComputerInteraction",
-    "Apple",
     "SpatialComputing",
-    "ComputerVision",
     "Presence",
-    "ImmersiveExperience",
     "MetaverseDomain",
-    "Large language models",
-    "Variational Autoencoders"
+    "Variational Autoencoders",
+    "ComputerVision",
+    "Robotics",
+    "ImmersiveExperience",
+    "Multimodal",
+    "Apple",
+    "Large language models"
   ],
   "ontology": {
     "term_id": "mv-535789044987",

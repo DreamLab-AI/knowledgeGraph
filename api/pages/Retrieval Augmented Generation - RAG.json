@@ -27,23 +27,23 @@
     "Training for Design Practitioners"
   ],
   "wiki_links": [
-    "Knowledge Graphing",
-    "Could",
-    "DisplayTechnology",
     "TrackingSystem",
+    "DisplayTechnology",
     "RenderingEngine",
-    "Robotics",
-    "Open Webui and Pipelines",
     "HumanComputerInteraction",
-    "Courses and Training",
+    "Open Webui and Pipelines",
     "SpatialComputing",
-    "Agents",
+    "Presence",
+    "MetaverseDomain",
+    "Could",
     "Update Cycle",
     "ComputerVision",
-    "Retrieval Augmented Generation - RAG",
-    "Presence",
+    "Knowledge Graphing",
+    "Robotics",
     "ImmersiveExperience",
-    "MetaverseDomain"
+    "Agents",
+    "Retrieval Augmented Generation - RAG",
+    "Courses and Training"
   ],
   "ontology": {
     "term_id": "mv-955422140506",

@@ -31,22 +31,22 @@
     "Agentic Alliance"
   ],
   "wiki_links": [
-    "Knowledge Graphing",
-    "DisplayTechnology",
     "TrackingSystem",
+    "DisplayTechnology",
     "RenderingEngine",
-    "Robotics",
     "HumanComputerInteraction",
-    "Metaverse Ontology",
-    "SpatialComputing",
     "Ontology conversation with AIs",
-    "Agentic Metaverse for Global Creatives",
-    "Multi Agent RAG scrapbook",
-    "ComputerVision",
-    "Agentic Mycelia",
+    "SpatialComputing",
     "Presence",
+    "MetaverseDomain",
+    "Metaverse Ontology",
+    "ComputerVision",
+    "Knowledge Graphing",
+    "Robotics",
+    "Multi Agent RAG scrapbook",
+    "Agentic Mycelia",
     "ImmersiveExperience",
-    "MetaverseDomain"
+    "Agentic Metaverse for Global Creatives"
   ],
   "ontology": {
     "term_id": "mv-221207825242",

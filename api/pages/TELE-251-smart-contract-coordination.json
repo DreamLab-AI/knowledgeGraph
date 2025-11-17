@@ -10,14 +10,14 @@
     "TELE-002-telecollaboration"
   ],
   "wiki_links": [
+    "SmartContracts",
     "BlockchainCollaboration",
-    "TELE-252-dao-governance-telecollaboration",
-    "TELE-002-telecollaboration",
     "BlockchainDomain",
-    "TELE-253-cryptocurrency-remuneration",
-    "TELE-250-blockchain-collaboration",
     "TELE-0000-telepresence-domain",
-    "SmartContracts"
+    "TELE-002-telecollaboration",
+    "TELE-253-cryptocurrency-remuneration",
+    "TELE-252-dao-governance-telecollaboration",
+    "TELE-250-blockchain-collaboration"
   ],
   "ontology": {
     "term_id": "TELE-251",
