@@ -19,15 +19,15 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "MetaverseDomain",
-    "ISO/IEC 23894",
-    "Large Language Models",
-    "AI Governance",
-    "AI Risk Management",
-    "AI Ethics",
-    "NIST AI RMF",
     "Algorithmic Bias",
-    "EU AI Act"
+    "AI Ethics",
+    "AI Risk Management",
+    "EU AI Act",
+    "MetaverseDomain",
+    "Large Language Models",
+    "ISO/IEC 23894",
+    "AI Governance",
+    "NIST AI RMF"
   ],
   "ontology": {
     "term_id": "AI-0076",

@@ -31,11 +31,11 @@
   ],
   "wiki_links": [
     "Gas Price",
-    "Resource Control",
-    "Transaction Fee",
     "Priority Fee",
-    "Transaction Parameter",
     "Base Fee",
+    "Resource Control",
+    "Transaction Parameter",
+    "Transaction Fee",
     "Blockchain"
   ],
   "ontology": {

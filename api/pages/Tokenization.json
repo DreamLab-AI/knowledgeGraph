@@ -16,23 +16,23 @@
     "Decentralized Finance"
   ],
   "wiki_links": [
-    "OMA3 Media Working Group",
-    "Asset Metadata",
-    "ISO 24165",
     "Blockchain Network",
     "Token Standard",
-    "Reed Smith Legal Framework",
-    "ETSI GR ARF 010",
+    "OMA3 Media Working Group",
+    "NFT Renting",
     "NFT Swapping",
+    "VirtualProcess",
     "Distributed Ledger",
+    "Reed Smith Legal Framework",
     "Smart Contract",
     "ERC-1155",
+    "NFT Minting",
     "Cryptographic Keys",
-    "ERC-721",
-    "NFT Renting",
-    "VirtualProcess",
     "Blockchain Transaction",
-    "NFT Minting"
+    "ERC-721",
+    "Asset Metadata",
+    "ETSI GR ARF 010",
+    "ISO 24165"
   ],
   "ontology": {
     "term_id": "20212",
