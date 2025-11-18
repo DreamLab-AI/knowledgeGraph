@@ -25,10 +25,10 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "IBM HELib",
     "CKKS Scheme",
-    "Microsoft SEAL",
     "ConceptualLayer",
+    "Microsoft SEAL",
+    "IBM HELib",
     "AIEthicsDomain"
   ],
   "ontology": {

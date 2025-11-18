@@ -1,6 +1,6 @@
 {
   "title": "Mining",
-  "content": "- ### OntologyBlock\n  id:: mining-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0053\n\n    - filename-history:: [\"BC-0053-mining.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0053\n    - preferred-term:: Mining\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-14\n\n  - **Definition**\n    - definition:: Proof-of-work block creation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Mining\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[ConsensusDomain]]\n    - implementedInLayer:: [[ProtocolLayer]]\n\n  - #### Relationships\n    id:: mining-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[ConsensusProtocol]]\n    - relates-to:: [[Proof of Work]], [[Hash Rate]], [[Bitcoin]], [[Energy]], [[Renewable Energy]]\n\n  - #### OWL Axioms\n    id:: mining-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0053>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:Mining))\n\n  ## Subclass Relationships\n  SubClassOf(:Mining :ConsensusProtocol)\n  SubClassOf(:Mining :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:Mining\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:Mining\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :Mining \"BC-0053\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :Mining \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :Mining \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :Mining :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :Mining :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :Mining \"Mining\"@en)\n  AnnotationAssertion(rdfs:comment :Mining\n    \"Proof-of-work block creation\"@en)\n  AnnotationAssertion(dct:description :Mining\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :Mining \"BC-0053\")\n  AnnotationAssertion(:priority :Mining \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :Mining \"consensus-fundamentals\"@en)\n)\n      ```",
+  "content": "- ### OntologyBlock\n  id:: mining-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0053\n\n    - filename-history:: [\"BC-0053-mining.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0053\n    - preferred-term:: Mining\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-14\n\n  - **Definition**\n    - definition:: Proof-of-work block creation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Mining\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[ConsensusDomain]]\n\n  - #### OWL Restrictions\n    - is-subclass-of some BlockchainEntity\n    - is-subclass-of some Consensusprotocol\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  - #### OWL Restrictions\n    - is-subclass-of some BlockchainEntity\n    - is-subclass-of some Consensusprotocol\n    - implementedInLayer:: [[ProtocolLayer]]\n\n  - #### Relationships\n    id:: mining-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[ConsensusProtocol]]\n    - relates-to:: [[Proof of Work]], [[Hash Rate]], [[Bitcoin]], [[Energy]], [[Renewable Energy]]\n\n  - #### OWL Axioms\n    id:: mining-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0053>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:Mining))\n\n  ## Subclass Relationships\n  SubClassOf(:Mining :ConsensusProtocol)\n  SubClassOf(:Mining :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:Mining\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:Mining\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :Mining \"BC-0053\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :Mining \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :Mining \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :Mining :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :Mining :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :Mining \"Mining\"@en)\n  AnnotationAssertion(rdfs:comment :Mining\n    \"Proof-of-work block creation\"@en)\n  AnnotationAssertion(dct:description :Mining\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :Mining \"BC-0053\")\n  AnnotationAssertion(:priority :Mining \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :Mining \"consensus-fundamentals\"@en)\n)\n      ```",
   "properties": {
     "id": "mining-owl-axioms",
     "collapsed": "true",
@@ -24,12 +24,14 @@
     "- owl:role": "Object",
     "- owl:inferred-class": "bc:VirtualObject",
     "- belongsToDomain": "[[ConsensusDomain]]",
+    "- bridges-to": "[[BlockchainEntity]] via is-subclass-of",
     "- implementedInLayer": "[[ProtocolLayer]]",
     "- is-subclass-of": "[[Blockchain Entity]], [[ConsensusProtocol]]",
     "- relates-to": "[[Proof of Work]], [[Hash Rate]], [[Bitcoin]], [[Energy]], [[Renewable Energy]]"
   },
   "backlinks": [
     "Consensus Mechanism",
+    "Blockchain Entity",
     "Difficulty",
     "BC 0102 Inflation",
     "Digital Twin of the Customer",
@@ -47,18 +49,19 @@
     "Transaction Pool"
   ],
   "wiki_links": [
-    "NIST NISTIR",
-    "Proof of Work",
-    "Hash Rate",
-    "IEEE 2418.1",
-    "Energy",
-    "ISO/IEC 23257:2021",
-    "Renewable Energy",
-    "ConsensusDomain",
     "ConsensusProtocol",
+    "Energy",
     "Blockchain Entity",
+    "ISO/IEC 23257:2021",
+    "ProtocolLayer",
+    "Hash Rate",
+    "Proof of Work",
     "Bitcoin",
-    "ProtocolLayer"
+    "IEEE 2418.1",
+    "BlockchainEntity",
+    "NIST NISTIR",
+    "ConsensusDomain",
+    "Renewable Energy"
   ],
   "ontology": {
     "term_id": "BC-0053",

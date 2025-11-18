@@ -29,18 +29,18 @@
     "ETSI_Domain_AI"
   ],
   "wiki_links": [
-    "Emotion AI",
-    "Intelligent UX Categorization",
-    "ApplicationLayer",
-    "Conversational AI Classification",
-    "Conversational AI",
-    "Gesture Recognition",
-    "Adaptive UI",
-    "ComputationAndIntelligenceDomain",
-    "ETSI Domain Taxonomy",
     "ETSI Domain AI",
+    "Gesture Recognition",
+    "Emotion AI",
+    "ApplicationLayer",
+    "Intelligent UX Categorization",
     "InteractionDomain",
-    "ETSI GS MEC"
+    "ETSI Domain Taxonomy",
+    "ETSI GS MEC",
+    "Conversational AI Classification",
+    "ComputationAndIntelligenceDomain",
+    "Conversational AI",
+    "Adaptive UI"
   ],
   "ontology": {
     "term_id": "20334",

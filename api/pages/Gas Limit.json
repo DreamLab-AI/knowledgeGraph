@@ -30,13 +30,13 @@
     "Transaction Pool"
   ],
   "wiki_links": [
-    "Priority Fee",
-    "Transaction Fee",
-    "Transaction Parameter",
-    "Gas Price",
-    "Base Fee",
     "Blockchain",
-    "Resource Control"
+    "Transaction Parameter",
+    "Transaction Fee",
+    "Base Fee",
+    "Priority Fee",
+    "Resource Control",
+    "Gas Price"
   ],
   "ontology": {
     "term_id": "BC-0107",

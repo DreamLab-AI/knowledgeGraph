@@ -29,20 +29,20 @@
   "backlinks": [],
   "wiki_links": [
     "Privacy Controls",
-    "ApplicationLayer",
+    "Privacy-Preserving Analytics",
     "InfrastructureDomain",
+    "Anonymization",
+    "ETSI Metaverse Domain Taxonomy",
+    "Privacy Regulations",
+    "ApplicationLayer",
     "Audit Logging",
     "ETSI GR MEC 032",
-    "ETSI Metaverse Domain Taxonomy",
+    "User Control",
+    "Data Management",
     "Compliance Verification",
     "GDPR",
-    "Privacy Regulations",
-    "User Control",
     "Consent Management",
-    "Anonymization",
-    "Data Management",
-    "Ethics & Law",
-    "Privacy-Preserving Analytics"
+    "Ethics & Law"
   ],
   "ontology": {
     "term_id": "20344",

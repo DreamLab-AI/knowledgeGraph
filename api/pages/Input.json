@@ -1,6 +1,6 @@
 {
   "title": "Input",
-  "content": "- ### OntologyBlock\n  id:: input-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0021\n\n    - filename-history:: [\"BC-0021-input.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0021\n    - preferred-term:: Input\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Transaction funding source within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Input\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[BlockchainDomain]]\n    - implementedInLayer:: [[ConceptualLayer]]\n\n  - #### Relationships\n    id:: input-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[DistributedDataStructure]]\n\n  - #### OWL Axioms\n    id:: input-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0021>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:Input))\n\n  ## Subclass Relationships\n  SubClassOf(:Input :DistributedDataStructure)\n  SubClassOf(:Input :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:Input\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:Input\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :Input \"BC-0021\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :Input \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :Input \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :Input :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :Input :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :Input \"Input\"@en)\n  AnnotationAssertion(rdfs:comment :Input\n    \"Transaction funding source\"@en)\n  AnnotationAssertion(dct:description :Input\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :Input \"BC-0021\")\n  AnnotationAssertion(:priority :Input \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :Input \"blockchain-fundamentals\"@en)\n)\n      ```",
+  "content": "- ### OntologyBlock\n  id:: input-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0021\n\n    - filename-history:: [\"BC-0021-input.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0021\n    - preferred-term:: Input\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Transaction funding source within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Input\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[BlockchainDomain]]\n\n  - #### OWL Restrictions\n    - is-subclass-of some BlockchainEntity\n    - is-subclass-of some Distributeddatastructure\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-to:: [[Distributeddatastructure]] via is-subclass-of\n\n  - #### OWL Restrictions\n    - is-subclass-of some BlockchainEntity\n    - is-subclass-of some Distributeddatastructure\n    - implementedInLayer:: [[ConceptualLayer]]\n\n  - #### Relationships\n    id:: input-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[DistributedDataStructure]]\n\n  - #### OWL Axioms\n    id:: input-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0021>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:Input))\n\n  ## Subclass Relationships\n  SubClassOf(:Input :DistributedDataStructure)\n  SubClassOf(:Input :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:Input\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:Input\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :Input \"BC-0021\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :Input \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :Input \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :Input :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :Input :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :Input \"Input\"@en)\n  AnnotationAssertion(rdfs:comment :Input\n    \"Transaction funding source\"@en)\n  AnnotationAssertion(dct:description :Input\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :Input \"BC-0021\")\n  AnnotationAssertion(:priority :Input \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :Input \"blockchain-fundamentals\"@en)\n)\n      ```",
   "properties": {
     "id": "input-owl-axioms",
     "collapsed": "true",
@@ -24,18 +24,23 @@
     "- owl:role": "Object",
     "- owl:inferred-class": "bc:VirtualObject",
     "- belongsToDomain": "[[BlockchainDomain]]",
+    "- bridges-to": "[[Distributeddatastructure]] via is-subclass-of",
     "- implementedInLayer": "[[ConceptualLayer]]",
     "- is-subclass-of": "[[Blockchain Entity]], [[DistributedDataStructure]]"
   },
-  "backlinks": [],
+  "backlinks": [
+    "Blockchain Entity"
+  ],
   "wiki_links": [
-    "DistributedDataStructure",
-    "NIST NISTIR",
-    "IEEE 2418.1",
-    "ISO/IEC 23257:2021",
+    "ConceptualLayer",
     "BlockchainDomain",
     "Blockchain Entity",
-    "ConceptualLayer"
+    "ISO/IEC 23257:2021",
+    "DistributedDataStructure",
+    "IEEE 2418.1",
+    "BlockchainEntity",
+    "NIST NISTIR",
+    "Distributeddatastructure"
   ],
   "ontology": {
     "term_id": "BC-0021",
