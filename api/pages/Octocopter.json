@@ -1,6 +1,6 @@
 {
   "title": "Octocopter",
-  "content": "- ### OntologyBlock\n  id:: octocopter-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: RB\n    - sequence-number:: 0124\n    - filename-history:: [\"RB-0124-octocopter.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: RB-0124\n    - preferred-term:: Octocopter\n    - source-domain:: robotics\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: Octocopter is an eight-rotor VTOL aircraft for heavy payloads.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: rb:Octocopter\n    - belongsToDomain:: [[Robotics]]\n\n  - #### OWL Restrictions\n    - is-subclass-of some Multirotor\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Multirotor]] via is-subclass-of\n\n  - #### OWL Restrictions\n    - is-subclass-of some Multirotor\n\n  - #### Relationships\n    - is-subclass-of:: [[Multirotor]]\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :Octocopter))\n      (SubClassOf :Octocopter :Multirotor)\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :Octocopter \"Octocopter\"@en)\n      (AnnotationAssertion rdfs:comment :Octocopter\n        \"Octocopter is an eight-rotor VTOL aircraft for heavy payloads.\"@en)\n      ```",
+  "content": "- ### OntologyBlock\n  id:: octocopter-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: RB\n    - sequence-number:: 0124\n    - filename-history:: [\"RB-0124-octocopter.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: RB-0124\n    - preferred-term:: Octocopter\n    - source-domain:: robotics\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: Octocopter is an eight-rotor VTOL aircraft for heavy payloads.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: rb:Octocopter\n    - belongsToDomain:: [[Robotics]]\n\n  - #### OWL Restrictions\n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Multirotor]] via is-subclass-of\n\n  -",
   "properties": {
     "id": "octocopter-ontology",
     "collapsed": "true",
@@ -21,8 +21,7 @@
     "- authority-score": "0.95",
     "- owl:class": "rb:Octocopter",
     "- belongsToDomain": "[[Robotics]]",
-    "- bridges-to": "[[Multirotor]] via is-subclass-of",
-    "- is-subclass-of": "[[Multirotor]]"
+    "- bridges-to": "[[Multirotor]] via is-subclass-of"
   },
   "backlinks": [],
   "wiki_links": [

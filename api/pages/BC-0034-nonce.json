@@ -1,8 +1,8 @@
 {
   "title": "Nonce",
-  "content": "- ### OntologyBlock\n  id:: nonce-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0034\n    - preferred-term:: Nonce\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Number used once for cryptographic operations within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Nonce\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    - is-subclass-of some BlockchainEntity\n    - is-subclass-of some Cryptographicprimitive\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  - #### OWL Restrictions\n    - is-subclass-of some BlockchainEntity\n    - is-subclass-of some Cryptographicprimitive\n    - implementedInLayer:: [[SecurityLayer]]\n\n  - #### Relationships\n    id:: nonce-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[CryptographicPrimitive]]\n\n  - #### OWL Axioms\n    id:: nonce-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0034>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:Nonce))\n\n  ## Subclass Relationships\n  SubClassOf(:Nonce :CryptographicPrimitive)\n  SubClassOf(:Nonce :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:Nonce\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:Nonce\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :Nonce \"BC-0034\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :Nonce \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :Nonce \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :Nonce :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :Nonce :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :Nonce \"Nonce\"@en)\n  AnnotationAssertion(rdfs:comment :Nonce\n    \"Number used once for cryptographic operations\"@en)\n  AnnotationAssertion(dct:description :Nonce\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :Nonce \"BC-0034\")\n  AnnotationAssertion(:priority :Nonce \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :Nonce \"cryptographic-foundations\"@en)\n)\n      ```",
+  "content": "- ### OntologyBlock\n  id:: nonce-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0034\n    - preferred-term:: Nonce\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Number used once for cryptographic operations within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Nonce\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  -",
   "properties": {
-    "id": "nonce-owl-axioms",
+    "id": "nonce-ontology",
     "collapsed": "true",
     "- public-access": "true",
     "- ontology": "true",
@@ -21,20 +21,15 @@
     "- owl:role": "Object",
     "- owl:inferred-class": "bc:VirtualObject",
     "- belongsToDomain": "[[CryptographicDomain]]",
-    "- bridges-to": "[[BlockchainEntity]] via is-subclass-of",
-    "- implementedInLayer": "[[SecurityLayer]]",
-    "- is-subclass-of": "[[Blockchain Entity]], [[CryptographicPrimitive]]"
+    "- bridges-to": "[[BlockchainEntity]] via is-subclass-of"
   },
   "backlinks": [],
   "wiki_links": [
-    "CryptographicPrimitive",
-    "Blockchain Entity",
     "ISO/IEC 23257:2021",
-    "SecurityLayer",
-    "IEEE 2418.1",
     "BlockchainEntity",
-    "NIST NISTIR",
-    "CryptographicDomain"
+    "CryptographicDomain",
+    "IEEE 2418.1",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0034",

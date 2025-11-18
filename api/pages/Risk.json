@@ -25,14 +25,13 @@
   },
   "backlinks": [
     "Data Breach",
-    "Third Party Vulnerability",
     "Ai Engineering",
     "AI Governance Principle"
   ],
   "wiki_links": [
     "DataBreach",
-    "GartnerPrediction",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "GartnerPrediction"
   ],
   "ontology": {
     "term_id": "AI-0839",

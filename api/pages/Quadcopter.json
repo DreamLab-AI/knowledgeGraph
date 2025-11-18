@@ -1,6 +1,6 @@
 {
   "title": "Quadcopter",
-  "content": "- ### OntologyBlock\n  id:: quadcopter-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: RB\n    - sequence-number:: 0122\n    - filename-history:: [\"RB-0122-quadcopter.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: RB-0122\n    - preferred-term:: Quadcopter\n    - source-domain:: robotics\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: Quadcopter is a four-rotor VTOL aircraft.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: rb:Quadcopter\n    - belongsToDomain:: [[Robotics]]\n\n  - #### OWL Restrictions\n    - is-subclass-of some Multirotor\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Multirotor]] via is-subclass-of\n\n  - #### OWL Restrictions\n    - is-subclass-of some Multirotor\n\n  - #### Relationships\n    - is-subclass-of:: [[Multirotor]]\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :Quadcopter))\n      (SubClassOf :Quadcopter :Multirotor)\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :Quadcopter \"Quadcopter\"@en)\n      (AnnotationAssertion rdfs:comment :Quadcopter\n        \"Quadcopter is a four-rotor VTOL aircraft.\"@en)\n      ```",
+  "content": "- ### OntologyBlock\n  id:: quadcopter-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: RB\n    - sequence-number:: 0122\n    - filename-history:: [\"RB-0122-quadcopter.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: RB-0122\n    - preferred-term:: Quadcopter\n    - source-domain:: robotics\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: Quadcopter is a four-rotor VTOL aircraft.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: rb:Quadcopter\n    - belongsToDomain:: [[Robotics]]\n\n  - #### OWL Restrictions\n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Multirotor]] via is-subclass-of\n\n  -",
   "properties": {
     "id": "quadcopter-ontology",
     "collapsed": "true",
@@ -21,8 +21,7 @@
     "- authority-score": "0.95",
     "- owl:class": "rb:Quadcopter",
     "- belongsToDomain": "[[Robotics]]",
-    "- bridges-to": "[[Multirotor]] via is-subclass-of",
-    "- is-subclass-of": "[[Multirotor]]"
+    "- bridges-to": "[[Multirotor]] via is-subclass-of"
   },
   "backlinks": [],
   "wiki_links": [

@@ -1,20 +1,20 @@
 {
   "title": "VirtualWorld",
-  "content": "- ### OntologyBlock\n  id:: virtualworld-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-1761742247979\n\t- preferred-term:: VirtualWorld\n\t- source-domain:: metaverse\n\t- status:: draft\n<<<<<<< HEAD\n=======\n    - public-access:: true\n>>>>>>> 691c6e7cfbf51bb03aef4b19e8bb7f7924266439\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: mv:VirtualWorld\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n<<<<<<< HEAD\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Virtualworld))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Virtualworld \"VirtualWorld\"@en)\n(AnnotationAssertion rdfs:comment :Virtualworld \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Virtualworld \"mv-1761742247979\"^^xsd:string)\n```",
+  "content": "- ### OntologyBlock\n  id:: virtualworld-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0003\n\t- preferred-term:: VirtualWorld\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A computer-generated, immersive 3D environment where users can interact with digital objects and other participants through avatars, forming the foundational space of metaverse experiences.\n\t- maturity:: mature\n\t- owl:class:: mv:VirtualWorld\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Environment\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Virtualworld))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Virtualworld \"VirtualWorld\"@en)\n(AnnotationAssertion rdfs:comment :Virtualworld \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Virtualworld \"mv-1761742247979\"^^xsd:string)\n```",
   "properties": {
     "id": "virtualworld-ontology",
     "collapsed": "true",
     "- ontology": "true",
-    "- term-id": "mv-1761742247979",
+    "- term-id": "MV-0003",
     "- preferred-term": "VirtualWorld",
     "- source-domain": "metaverse",
-    "- status": "draft",
+    "- status": "active",
     "- public-access": "true",
-    "- definition": "A component of the metaverse ecosystem.",
-    "- maturity": "draft",
+    "- definition": "A computer-generated, immersive 3D environment where users can interact with digital objects and other participants through avatars, forming the foundational space of metaverse experiences.",
+    "- maturity": "mature",
     "- owl:class": "mv:VirtualWorld",
-    "- owl:physicality": "ConceptualEntity",
-    "- owl:role": "Concept",
+    "- owl:physicality": "VirtualEntity",
+    "- owl:role": "Environment",
     "- belongsToDomain": "[[MetaverseDomain]]"
   },
   "backlinks": [],
@@ -22,9 +22,9 @@
     "MetaverseDomain"
   ],
   "ontology": {
-    "term_id": "mv-1761742247979",
+    "term_id": "MV-0003",
     "preferred_term": "VirtualWorld",
-    "definition": "A component of the metaverse ecosystem.",
+    "definition": "A computer-generated, immersive 3D environment where users can interact with digital objects and other participants through avatars, forming the foundational space of metaverse experiences.",
     "source_domain": "metaverse",
     "maturity_level": null,
     "authority_score": null

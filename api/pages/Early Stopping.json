@@ -17,14 +17,12 @@
     "- source": "[[Prechelt 1998 Early Stopping But When]], [[Goodfellow et al. 2016 Deep Learning]], [[TensorFlow Keras Callbacks]], [[PyTorch Lightning Early Stopping]]",
     "- authority-score": "0.90"
   },
-  "backlinks": [
-    "Deep Learning"
-  ],
+  "backlinks": [],
   "wiki_links": [
     "TensorFlow Keras Callbacks",
     "Goodfellow et al. 2016 Deep Learning",
-    "PyTorch Lightning Early Stopping",
-    "Prechelt 1998 Early Stopping But When"
+    "Prechelt 1998 Early Stopping But When",
+    "PyTorch Lightning Early Stopping"
   ],
   "ontology": {
     "term_id": "AI-0290",

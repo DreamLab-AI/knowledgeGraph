@@ -25,10 +25,10 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ConceptualLayer",
     "ONNX Runtime",
-    "PyTorch Mobile",
     "AIEthicsDomain",
+    "ConceptualLayer",
+    "PyTorch Mobile",
     "TensorFlow Model Optimization"
   ],
   "ontology": {

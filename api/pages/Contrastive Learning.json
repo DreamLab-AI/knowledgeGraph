@@ -21,10 +21,10 @@
     "Loss Function"
   ],
   "wiki_links": [
-    "Radford et al. 2021 CLIP",
-    "Chen et al. 2020 SimCLR",
     "Gao et al. 2021 SimCSE",
-    "He et al. 2020 MoCo"
+    "He et al. 2020 MoCo",
+    "Radford et al. 2021 CLIP",
+    "Chen et al. 2020 SimCLR"
   ],
   "ontology": {
     "term_id": "AI-0283",

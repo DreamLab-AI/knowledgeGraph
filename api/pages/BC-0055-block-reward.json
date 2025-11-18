@@ -1,8 +1,8 @@
 {
   "title": "Block Reward",
-  "content": "- ### OntologyBlock\n  id:: block-reward-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0055\n    - preferred-term:: Block Reward\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Mining incentive payment within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:BlockReward\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[ConsensusDomain]]\n\n  - #### OWL Restrictions\n    - is-subclass-of some Consensusprotocol\n    - is-subclass-of some BlockchainEntity\n\n  - #### OWL Restrictions\n    - is-subclass-of some Consensusprotocol\n    - is-subclass-of some BlockchainEntity\n    - implementedInLayer:: [[ProtocolLayer]]\n\n  - #### Relationships\n    id:: block-reward-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[ConsensusProtocol]]\n\n  - #### OWL Axioms\n    id:: block-reward-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0055>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:BlockReward))\n\n  ## Subclass Relationships\n  SubClassOf(:BlockReward :ConsensusProtocol)\n  SubClassOf(:BlockReward :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:BlockReward\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:BlockReward\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :BlockReward \"BC-0055\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :BlockReward \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :BlockReward \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :BlockReward :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :BlockReward :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :BlockReward \"Block Reward\"@en)\n  AnnotationAssertion(rdfs:comment :BlockReward\n    \"Mining incentive payment\"@en)\n  AnnotationAssertion(dct:description :BlockReward\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :BlockReward \"BC-0055\")\n  AnnotationAssertion(:priority :BlockReward \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :BlockReward \"consensus-fundamentals\"@en)\n)\n      ```",
+  "content": "- ### OntologyBlock\n  id:: block-reward-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0055\n    - preferred-term:: Block Reward\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Mining incentive payment within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:BlockReward\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[ConsensusDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  -",
   "properties": {
-    "id": "block-reward-owl-axioms",
+    "id": "block-reward-ontology",
     "collapsed": "true",
     "- public-access": "true",
     "- ontology": "true",
@@ -20,19 +20,14 @@
     "- owl:physicality": "VirtualEntity",
     "- owl:role": "Object",
     "- owl:inferred-class": "bc:VirtualObject",
-    "- belongsToDomain": "[[ConsensusDomain]]",
-    "- implementedInLayer": "[[ProtocolLayer]]",
-    "- is-subclass-of": "[[Blockchain Entity]], [[ConsensusProtocol]]"
+    "- belongsToDomain": "[[ConsensusDomain]]"
   },
   "backlinks": [],
   "wiki_links": [
-    "ConsensusProtocol",
-    "Blockchain Entity",
-    "ISO/IEC 23257:2021",
-    "ProtocolLayer",
-    "IEEE 2418.1",
     "NIST NISTIR",
-    "ConsensusDomain"
+    "ConsensusDomain",
+    "ISO/IEC 23257:2021",
+    "IEEE 2418.1"
   ],
   "ontology": {
     "term_id": "BC-0055",

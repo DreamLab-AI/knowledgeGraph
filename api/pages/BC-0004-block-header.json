@@ -1,8 +1,8 @@
 {
   "title": "Block Header",
-  "content": "- ### OntologyBlock\n  id:: block-header-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0004\n    - preferred-term:: Block Header\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Metadata section of a block within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:BlockHeader\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[BlockchainDomain]]\n\n  - #### OWL Restrictions\n    - is-subclass-of some Distributeddatastructure\n    - is-subclass-of some BlockchainEntity\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Distributeddatastructure]] via is-subclass-of\n\n  - #### OWL Restrictions\n    - is-subclass-of some Distributeddatastructure\n    - is-subclass-of some BlockchainEntity\n    - implementedInLayer:: [[ConceptualLayer]]\n\n  - #### Relationships\n    id:: block-header-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[DistributedDataStructure]]\n\n  - #### OWL Axioms\n    id:: block-header-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0004>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:BlockHeader))\n\n  ## Subclass Relationships\n  SubClassOf(:BlockHeader :DistributedDataStructure)\n  SubClassOf(:BlockHeader :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:BlockHeader\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:BlockHeader\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :BlockHeader \"BC-0004\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :BlockHeader \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :BlockHeader \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :BlockHeader :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :BlockHeader :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :BlockHeader \"Block Header\"@en)\n  AnnotationAssertion(rdfs:comment :BlockHeader\n    \"Metadata section of a block\"@en)\n  AnnotationAssertion(dct:description :BlockHeader\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :BlockHeader \"BC-0004\")\n  AnnotationAssertion(:priority :BlockHeader \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :BlockHeader \"blockchain-fundamentals\"@en)\n)\n      ```",
+  "content": "- ### OntologyBlock\n  id:: block-header-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0004\n    - preferred-term:: Block Header\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Metadata section of a block within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:BlockHeader\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[BlockchainDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Distributeddatastructure]] via is-subclass-of\n\n  -",
   "properties": {
-    "id": "block-header-owl-axioms",
+    "id": "block-header-ontology",
     "collapsed": "true",
     "- public-access": "true",
     "- ontology": "true",
@@ -21,17 +21,12 @@
     "- owl:role": "Object",
     "- owl:inferred-class": "bc:VirtualObject",
     "- belongsToDomain": "[[BlockchainDomain]]",
-    "- bridges-to": "[[Distributeddatastructure]] via is-subclass-of",
-    "- implementedInLayer": "[[ConceptualLayer]]",
-    "- is-subclass-of": "[[Blockchain Entity]], [[DistributedDataStructure]]"
+    "- bridges-to": "[[Distributeddatastructure]] via is-subclass-of"
   },
   "backlinks": [],
   "wiki_links": [
-    "ConceptualLayer",
     "BlockchainDomain",
-    "Blockchain Entity",
     "ISO/IEC 23257:2021",
-    "DistributedDataStructure",
     "IEEE 2418.1",
     "NIST NISTIR",
     "Distributeddatastructure"

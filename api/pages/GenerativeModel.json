@@ -1,31 +1,31 @@
 {
   "title": "GenerativeModel",
-  "content": "- ### OntologyBlock\n  id:: generativemodel-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-1761742247928\n\t- preferred-term:: GenerativeModel\n\t- source-domain:: metaverse\n\t- status:: draft\n<<<<<<< HEAD\n=======\n    - public-access:: true\n>>>>>>> 691c6e7cfbf51bb03aef4b19e8bb7f7924266439\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: mv:GenerativeModel\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n<<<<<<< HEAD\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Generativemodel))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Generativemodel \"GenerativeModel\"@en)\n(AnnotationAssertion rdfs:comment :Generativemodel \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Generativemodel \"mv-1761742247928\"^^xsd:string)\n```",
+  "content": "- ### OntologyBlock\n  id:: generativemodel-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0037\n\t- preferred-term:: GenerativeModel\n\t- source-domain:: artificial-intelligence\n\t- status:: draft\n    - public-access:: true\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: ai:GenerativeModel\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[AIDomain]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Generativemodel))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Generativemodel \"GenerativeModel\"@en)\n(AnnotationAssertion rdfs:comment :Generativemodel \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Generativemodel \"mv-1761742247928\"^^xsd:string)\n```",
   "properties": {
     "id": "generativemodel-ontology",
     "collapsed": "true",
     "- ontology": "true",
-    "- term-id": "mv-1761742247928",
+    "- term-id": "MV-0037",
     "- preferred-term": "GenerativeModel",
-    "- source-domain": "metaverse",
+    "- source-domain": "artificial-intelligence",
     "- status": "draft",
     "- public-access": "true",
     "- definition": "A component of the metaverse ecosystem.",
     "- maturity": "draft",
-    "- owl:class": "mv:GenerativeModel",
+    "- owl:class": "ai:GenerativeModel",
     "- owl:physicality": "ConceptualEntity",
     "- owl:role": "Concept",
-    "- belongsToDomain": "[[MetaverseDomain]]"
+    "- belongsToDomain": "[[AIDomain]]"
   },
   "backlinks": [],
   "wiki_links": [
-    "MetaverseDomain"
+    "AIDomain"
   ],
   "ontology": {
-    "term_id": "mv-1761742247928",
+    "term_id": "MV-0037",
     "preferred_term": "GenerativeModel",
     "definition": "A component of the metaverse ecosystem.",
-    "source_domain": "metaverse",
+    "source_domain": "artificial-intelligence",
     "maturity_level": null,
     "authority_score": null
   }

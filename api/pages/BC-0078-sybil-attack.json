@@ -1,8 +1,8 @@
 {
   "title": "Sybil Attack",
-  "content": "- ### OntologyBlock\n  id:: sybil-attack-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0078\n    - preferred-term:: Sybil Attack\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Multiple identity attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:SybilAttack\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    - is-subclass-of some BlockchainEntity\n    - is-subclass-of some Networkcomponent\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-to:: [[Networkcomponent]] via is-subclass-of\n\n  - #### OWL Restrictions\n    - is-subclass-of some BlockchainEntity\n    - is-subclass-of some Networkcomponent\n    - implementedInLayer:: [[SecurityLayer]]\n\n  - #### Relationships\n    id:: sybil-attack-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[NetworkComponent]]\n\n  - #### OWL Axioms\n    id:: sybil-attack-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0078>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:SybilAttack))\n\n  ## Subclass Relationships\n  SubClassOf(:SybilAttack :NetworkComponent)\n  SubClassOf(:SybilAttack :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:SybilAttack\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:SybilAttack\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :SybilAttack \"BC-0078\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :SybilAttack \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :SybilAttack \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :SybilAttack :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :SybilAttack :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :SybilAttack \"Sybil Attack\"@en)\n  AnnotationAssertion(rdfs:comment :SybilAttack\n    \"Multiple identity attack\"@en)\n  AnnotationAssertion(dct:description :SybilAttack\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :SybilAttack \"BC-0078\")\n  AnnotationAssertion(:priority :SybilAttack \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :SybilAttack \"network-security\"@en)\n)\n      ```",
+  "content": "- ### OntologyBlock\n  id:: sybil-attack-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0078\n    - preferred-term:: Sybil Attack\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Multiple identity attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:SybilAttack\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-to:: [[Networkcomponent]] via is-subclass-of\n\n  -",
   "properties": {
-    "id": "sybil-attack-owl-axioms",
+    "id": "sybil-attack-ontology",
     "collapsed": "true",
     "- public-access": "true",
     "- ontology": "true",
@@ -21,21 +21,16 @@
     "- owl:role": "Object",
     "- owl:inferred-class": "bc:VirtualObject",
     "- belongsToDomain": "[[CryptographicDomain]]",
-    "- bridges-to": "[[Networkcomponent]] via is-subclass-of",
-    "- implementedInLayer": "[[SecurityLayer]]",
-    "- is-subclass-of": "[[Blockchain Entity]], [[NetworkComponent]]"
+    "- bridges-to": "[[Networkcomponent]] via is-subclass-of"
   },
   "backlinks": [],
   "wiki_links": [
-    "Blockchain Entity",
-    "ISO/IEC 23257:2021",
-    "SecurityLayer",
     "Networkcomponent",
-    "NetworkComponent",
-    "IEEE 2418.1",
+    "ISO/IEC 23257:2021",
     "BlockchainEntity",
-    "NIST NISTIR",
-    "CryptographicDomain"
+    "CryptographicDomain",
+    "IEEE 2418.1",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0078",

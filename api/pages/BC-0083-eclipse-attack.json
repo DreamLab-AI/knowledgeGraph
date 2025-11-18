@@ -1,8 +1,8 @@
 {
   "title": "Eclipse Attack",
-  "content": "- ### OntologyBlock\n  id:: eclipse-attack-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0083\n    - preferred-term:: Eclipse Attack\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Node isolation attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:EclipseAttack\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    - is-subclass-of some Networkcomponent\n    - is-subclass-of some BlockchainEntity\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Networkcomponent]] via is-subclass-of\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  - #### OWL Restrictions\n    - is-subclass-of some Networkcomponent\n    - is-subclass-of some BlockchainEntity\n    - implementedInLayer:: [[SecurityLayer]]\n\n  - #### Relationships\n    id:: eclipse-attack-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[NetworkComponent]]\n\n  - #### OWL Axioms\n    id:: eclipse-attack-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0083>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:EclipseAttack))\n\n  ## Subclass Relationships\n  SubClassOf(:EclipseAttack :NetworkComponent)\n  SubClassOf(:EclipseAttack :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:EclipseAttack\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:EclipseAttack\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :EclipseAttack \"BC-0083\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :EclipseAttack \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :EclipseAttack \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :EclipseAttack :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :EclipseAttack :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :EclipseAttack \"Eclipse Attack\"@en)\n  AnnotationAssertion(rdfs:comment :EclipseAttack\n    \"Node isolation attack\"@en)\n  AnnotationAssertion(dct:description :EclipseAttack\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :EclipseAttack \"BC-0083\")\n  AnnotationAssertion(:priority :EclipseAttack \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :EclipseAttack \"network-security\"@en)\n)\n      ```",
+  "content": "- ### OntologyBlock\n  id:: eclipse-attack-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0083\n    - preferred-term:: Eclipse Attack\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Node isolation attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:EclipseAttack\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Networkcomponent]] via is-subclass-of\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  -",
   "properties": {
-    "id": "eclipse-attack-owl-axioms",
+    "id": "eclipse-attack-ontology",
     "collapsed": "true",
     "- public-access": "true",
     "- ontology": "true",
@@ -21,21 +21,16 @@
     "- owl:role": "Object",
     "- owl:inferred-class": "bc:VirtualObject",
     "- belongsToDomain": "[[CryptographicDomain]]",
-    "- bridges-to": "[[BlockchainEntity]] via is-subclass-of",
-    "- implementedInLayer": "[[SecurityLayer]]",
-    "- is-subclass-of": "[[Blockchain Entity]], [[NetworkComponent]]"
+    "- bridges-to": "[[BlockchainEntity]] via is-subclass-of"
   },
   "backlinks": [],
   "wiki_links": [
-    "Blockchain Entity",
-    "ISO/IEC 23257:2021",
-    "SecurityLayer",
     "Networkcomponent",
-    "NetworkComponent",
-    "IEEE 2418.1",
+    "ISO/IEC 23257:2021",
     "BlockchainEntity",
-    "NIST NISTIR",
-    "CryptographicDomain"
+    "CryptographicDomain",
+    "IEEE 2418.1",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0083",

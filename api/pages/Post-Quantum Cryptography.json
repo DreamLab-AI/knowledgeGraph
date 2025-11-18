@@ -11,10 +11,6 @@
     "- public-access": "true"
   },
   "backlinks": [
-    "Consensus Mechanism",
-    "Cryptography",
-    "Digital Signature",
-    "Public Key",
     "Bitcoin",
     "Zero-Knowledge Proof (ZKP)",
     "SHA-256"

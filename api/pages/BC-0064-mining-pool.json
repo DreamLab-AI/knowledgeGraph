@@ -1,8 +1,8 @@
 {
   "title": "Mining Pool",
-  "content": "- ### OntologyBlock\n  id:: mining-pool-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0064\n    - preferred-term:: Mining Pool\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Collaborative mining group within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:MiningPool\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[ConsensusDomain]]\n\n  - #### OWL Restrictions\n    - is-subclass-of some Consensusprotocol\n    - is-subclass-of some BlockchainEntity\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  - #### OWL Restrictions\n    - is-subclass-of some Consensusprotocol\n    - is-subclass-of some BlockchainEntity\n    - implementedInLayer:: [[ProtocolLayer]]\n\n  - #### Relationships\n    id:: mining-pool-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[ConsensusProtocol]]\n\n  - #### OWL Axioms\n    id:: mining-pool-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0064>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:MiningPool))\n\n  ## Subclass Relationships\n  SubClassOf(:MiningPool :ConsensusProtocol)\n  SubClassOf(:MiningPool :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:MiningPool\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:MiningPool\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :MiningPool \"BC-0064\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :MiningPool \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :MiningPool \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :MiningPool :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :MiningPool :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :MiningPool \"Mining Pool\"@en)\n  AnnotationAssertion(rdfs:comment :MiningPool\n    \"Collaborative mining group\"@en)\n  AnnotationAssertion(dct:description :MiningPool\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :MiningPool \"BC-0064\")\n  AnnotationAssertion(:priority :MiningPool \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :MiningPool \"consensus-fundamentals\"@en)\n)\n      ```",
+  "content": "- ### OntologyBlock\n  id:: mining-pool-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0064\n    - preferred-term:: Mining Pool\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Collaborative mining group within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:MiningPool\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[ConsensusDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  -",
   "properties": {
-    "id": "mining-pool-owl-axioms",
+    "id": "mining-pool-ontology",
     "collapsed": "true",
     "- public-access": "true",
     "- ontology": "true",
@@ -21,20 +21,15 @@
     "- owl:role": "Object",
     "- owl:inferred-class": "bc:VirtualObject",
     "- belongsToDomain": "[[ConsensusDomain]]",
-    "- bridges-to": "[[BlockchainEntity]] via is-subclass-of",
-    "- implementedInLayer": "[[ProtocolLayer]]",
-    "- is-subclass-of": "[[Blockchain Entity]], [[ConsensusProtocol]]"
+    "- bridges-to": "[[BlockchainEntity]] via is-subclass-of"
   },
   "backlinks": [],
   "wiki_links": [
-    "ConsensusProtocol",
-    "Blockchain Entity",
+    "ConsensusDomain",
     "ISO/IEC 23257:2021",
-    "ProtocolLayer",
-    "IEEE 2418.1",
     "BlockchainEntity",
-    "NIST NISTIR",
-    "ConsensusDomain"
+    "IEEE 2418.1",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0064",

@@ -1,8 +1,8 @@
 {
   "title": "Full Node",
-  "content": "- ### OntologyBlock\n  id:: full-node-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0073\n    - preferred-term:: Full Node\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Complete blockchain copy maintainer within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:FullNode\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    - is-subclass-of some BlockchainEntity\n    - is-subclass-of some Networkcomponent\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Networkcomponent]] via is-subclass-of\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  - #### OWL Restrictions\n    - is-subclass-of some BlockchainEntity\n    - is-subclass-of some Networkcomponent\n    - implementedInLayer:: [[SecurityLayer]]\n\n  - #### Relationships\n    id:: full-node-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[NetworkComponent]]\n\n  - #### OWL Axioms\n    id:: full-node-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0073>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:FullNode))\n\n  ## Subclass Relationships\n  SubClassOf(:FullNode :NetworkComponent)\n  SubClassOf(:FullNode :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:FullNode\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:FullNode\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :FullNode \"BC-0073\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :FullNode \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :FullNode \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :FullNode :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :FullNode :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :FullNode \"Full Node\"@en)\n  AnnotationAssertion(rdfs:comment :FullNode\n    \"Complete blockchain copy maintainer\"@en)\n  AnnotationAssertion(dct:description :FullNode\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :FullNode \"BC-0073\")\n  AnnotationAssertion(:priority :FullNode \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :FullNode \"network-security\"@en)\n)\n      ```",
+  "content": "- ### OntologyBlock\n  id:: full-node-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0073\n    - preferred-term:: Full Node\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Complete blockchain copy maintainer within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:FullNode\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Networkcomponent]] via is-subclass-of\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  -",
   "properties": {
-    "id": "full-node-owl-axioms",
+    "id": "full-node-ontology",
     "collapsed": "true",
     "- public-access": "true",
     "- ontology": "true",
@@ -21,21 +21,16 @@
     "- owl:role": "Object",
     "- owl:inferred-class": "bc:VirtualObject",
     "- belongsToDomain": "[[CryptographicDomain]]",
-    "- bridges-to": "[[BlockchainEntity]] via is-subclass-of",
-    "- implementedInLayer": "[[SecurityLayer]]",
-    "- is-subclass-of": "[[Blockchain Entity]], [[NetworkComponent]]"
+    "- bridges-to": "[[BlockchainEntity]] via is-subclass-of"
   },
   "backlinks": [],
   "wiki_links": [
-    "Blockchain Entity",
-    "ISO/IEC 23257:2021",
-    "SecurityLayer",
     "Networkcomponent",
-    "NetworkComponent",
-    "IEEE 2418.1",
+    "ISO/IEC 23257:2021",
     "BlockchainEntity",
-    "NIST NISTIR",
-    "CryptographicDomain"
+    "CryptographicDomain",
+    "IEEE 2418.1",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0073",

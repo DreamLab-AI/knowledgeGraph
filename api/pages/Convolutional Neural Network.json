@@ -17,9 +17,7 @@
     "- source": "[[LeCun et al. 1998 Gradient-Based Learning]], [[Krizhevsky et al. 2012 AlexNet]], [[He et al. 2016 ResNet]], [[IEEE CVPR Proceedings]]",
     "- authority-score": "0.96"
   },
-  "backlinks": [
-    "Deep Learning"
-  ],
+  "backlinks": [],
   "wiki_links": [
     "He et al. 2016 ResNet",
     "IEEE CVPR Proceedings",

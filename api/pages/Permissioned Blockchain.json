@@ -17,10 +17,7 @@
     "- owl:role": "Concept",
     "- belongsToDomain": "[[BlockchainDomain]]"
   },
-  "backlinks": [
-    "Consensus Mechanism",
-    "Proof Of Authority"
-  ],
+  "backlinks": [],
   "wiki_links": [
     "BlockchainDomain"
   ],

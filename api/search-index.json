@@ -42,7 +42,7 @@
   {
     "id": "AI Game Agent",
     "title": "AI Game Agent",
-    "content": "- #### OWL Restrictions\n- requires some GameState\n- requires some GameEngine\n- has-part some DecisionEngine\n- requires some NavigationMesh\n- has-part some BehaviorTree\n- enables some AdaptiveChallenge\n- implements some ProceduralBehavior\n- enables some DynamicGameplay\n- enables some PlayerEngagement\n- implements some ReinforcementLearning\n- implements some AdaptiveDifficulty\n- has-part some PathfindingSystem\n- has-part some StateMachine\n- is-subclass-of some IntelligentVirtualEntity\n- is-subclas",
+    "content": "- #### OWL Restrictions\n- requires some GameState\n- requires some GameEngine\n- has-part some DecisionEngine\n- requires some NavigationMesh\n- has-part some BehaviorTree\n- enables some AdaptiveChallenge\n- implements some ProceduralBehavior\n- enables some DynamicGameplay\n- enables some PlayerEngagement\n- implements some ReinforcementLearning\n- implements some AdaptiveDifficulty\n- has-part some PathfindingSystem\n- has-part some StateMachine\n- enables some EmergentBehavior\n- #### CrossDomainBridges\n-",
     "tags": [
       "AI-0800",
       "ai"
@@ -532,7 +532,7 @@
   {
     "id": "Accountable Party",
     "title": "Accountable Party",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some AiGovernancePrinciple\n- #### OWL Restrictions\n- is-subclass-of some AiGovernancePrinciple\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: accountable-party-relationships\n- is-subclass-of:: AI Governance Principle\n- #### OWL Axioms\nid:: accountable-party-owl-axioms\ncollapsed:: true\n-\n- ## About Accountable Party\nid:: accountable-party-about\n- Accountable Parties form the human substrate of AI governance, transforming abstract principl",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "PC-0015",
       "metaverse"
@@ -552,7 +552,7 @@
   {
     "id": "Address",
     "title": "Address",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: address-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: address-owl-axioms\ncollapsed:: true\n-\n- ## About Address\nid:: address-about\n- A blockchain address is a Public Key-",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "BC-0038",
       "blockchain"
@@ -592,7 +592,7 @@
   {
     "id": "Agreement Protocol",
     "title": "Agreement Protocol",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some DistributedProtocol\n- #### OWL Restrictions\n- is-subclass-of some DistributedProtocol\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: agreement-protocol-relationships\n- is-subclass-of:: Distributed Protocol\n- #### OWL Axioms\nid:: agreement-protocol-owl-axioms\ncollapsed:: true\n-\n- ## About Agreement Protocol\nid:: agreement-protocol-about\n- Agreement Protocols represent the theoretical heart of blockchain consensus, formalizing how dis",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "PC-0007",
       "metaverse"
@@ -602,7 +602,7 @@
   {
     "id": "Ai Engineering",
     "title": "Gartner Prediction",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some GenerativeAi\n- is-subclass-of some ArtificialIntelligence\n- is-subclass-of some Risk\n- is-subclass-of some ArtificialIntelligence\n- is-subclass-of some ArtificialIntelligence\n- is-subclass-of some MachineLearning\n- is-subclass-of some ArtificialIntelligence\n- is-subclass-of some ArtificialIntelligence\n- is-subclass-of some ArtificialIntelligence\n- is-subclass-of some GenerativeAi\n- is-subclass-of some AiEngineering\n- is-subclass-of some GenerativeAi\n",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: ArtificialIntelligence via is-subclass-of\n- bridges-to:: MachineLearning via is-subclass-of\n- bridges-to:: Risk via is-subclass-of\n- bridges-to:: Risk via is-subclass-of\n- bridges-to:: ArtificialIntelligence via is-subclass-of\n- bridges-to:: ArtificialIntelligence via is-subclass-of\n- bridges-to:: ArtificialIntelligence via is-subclass-of\n- bridges-to:: ArtificialIntelligence via is-subclass-of\n- bridges-to:: ArtificialIntelligence",
     "tags": [
       "AI-0802",
       "ai"
@@ -612,7 +612,7 @@
   {
     "id": "Ai Ops",
     "title": "AIOps",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### CrossDomainBridges\n- bridges-to:: ArtificialIntelligence via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### Relationships\n- is-subclass-of:: Artificial Intelligence\n- #### OWL Axioms\n-\n- ## About AIOps\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration acc",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: ArtificialIntelligence via is-subclass-of\n-",
     "tags": [
       "AI-0877",
       "ai"
@@ -622,7 +622,7 @@
   {
     "id": "Algorithm",
     "title": "Algorithm",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### CrossDomainBridges\n- bridges-to:: ArtificialIntelligence via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### Relationships\n- is-subclass-of:: Artificial Intelligence\n- #### OWL Axioms\n-\n- ## About Algorithm\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: ArtificialIntelligence via is-subclass-of\n-",
     "tags": [
       "AI-0830",
       "artificial-intelligence"
@@ -652,7 +652,7 @@
   {
     "id": "Architecture",
     "title": "Architecture",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### CrossDomainBridges\n- bridges-to:: ArtificialIntelligence via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### Relationships\n- is-subclass-of:: Artificial Intelligence\n- #### OWL Axioms\n-\n- ## About Architecture\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integrat",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: ArtificialIntelligence via is-subclass-of\n-",
     "tags": [
       "AI-0833",
       "artificial-intelligence"
@@ -714,10 +714,10 @@
     "title": "AugmentedReality",
     "content": "-",
     "tags": [
-      "mv-1761742247883",
+      "MV-0004",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247883"
+    "ontology_id": "MV-0004"
   },
   {
     "id": "Authoring Tool",
@@ -742,7 +742,7 @@
   {
     "id": "Automated Summarization",
     "title": "Automated Summarization",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some NaturalLanguageProcessing\n- #### CrossDomainBridges\n- bridges-to:: NaturalLanguageProcessing via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some NaturalLanguageProcessing\n- #### Relationships\n- is-subclass-of:: Natural Language Processing\n- #### OWL Axioms\n-\n- ## About Automated Summarization\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open s",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: NaturalLanguageProcessing via is-subclass-of\n-",
     "tags": [
       "AI-0856",
       "ai"
@@ -982,7 +982,7 @@
   {
     "id": "BC-0003-block",
     "title": "Block",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-from:: Bitcoin via has-part\n- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: block-relationships\n- is-subclass-of:: Blockchain Entity, DistributedDataStructure\n- #### OW",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-from:: Bitcoin via has-part\n-",
     "tags": [
       "BC-0003",
       "blockchain"
@@ -992,7 +992,7 @@
   {
     "id": "BC-0004-block-header",
     "title": "Block Header",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: block-header-relationships\n- is-subclass-of:: Blockchain Entity, DistributedDataStructure\n- #### OWL Axioms\nid:: block-header-owl-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n-",
     "tags": [
       "BC-0004",
       "blockchain"
@@ -1002,7 +1002,7 @@
   {
     "id": "BC-0005-genesis-block",
     "title": "Genesis Block",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: genesis-block-relationships\n- is-subclass-of:: Blockchain Entity, DistributedDa",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0005",
       "blockchain"
@@ -1012,7 +1012,7 @@
   {
     "id": "BC-0006-transaction",
     "title": "Transaction",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: ValueTransfer via implemented-by\n- bridges-from:: Bitcoin via has-part\n- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConceptualLayer\n- #### Relationsh",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: ValueTransfer via implemented-by\n- bridges-from:: Bitcoin via has-part\n-",
     "tags": [
       "BC-0006",
       "blockchain"
@@ -1022,7 +1022,7 @@
   {
     "id": "BC-0007-utxo-model",
     "title": "UTXO Model",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: Bitcoin via implements\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: utxo-model-relationships\n- is-subclass-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: Bitcoin via implements\n-",
     "tags": [
       "BC-0007",
       "blockchain"
@@ -1032,7 +1032,7 @@
   {
     "id": "BC-0008-account-model",
     "title": "Account Model",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: account-model-relationships\n- is-subclass-of:: Blockchain Entity, DistributedDataStructure\n- #### OWL Axioms\nid:: account-model-ow",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n-",
     "tags": [
       "BC-0008",
       "blockchain"
@@ -1052,7 +1052,7 @@
   {
     "id": "BC-0010-decentralization",
     "title": "Decentralization",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: DistributedArchitecture via enables\n- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: decentralization-relations",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: DistributedArchitecture via enables\n-",
     "tags": [
       "BC-0010",
       "blockchain"
@@ -1062,7 +1062,7 @@
   {
     "id": "BC-0011-block-height",
     "title": "Block Height",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: block-height-relationships\n- is-subclass-of:: Blockchain Entity, DistributedDataStructure\n- #### OWL Axioms\nid:: block-height-owl-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n-",
     "tags": [
       "BC-0011",
       "blockchain"
@@ -1072,7 +1072,7 @@
   {
     "id": "BC-0012-block-reward",
     "title": "Block Reward",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-from:: Bitcoin via uses\n- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: block-reward-relationships\n- is-subclass-of:: Blockchain Entity, DistributedDataStructure\n- ####",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-from:: Bitcoin via uses\n-",
     "tags": [
       "BC-0012",
       "blockchain"
@@ -1082,7 +1082,7 @@
   {
     "id": "BC-0013-block-size",
     "title": "Block Size",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: block-size-relationships\n- is-subclass-of:: Blockchain Entity, DistributedDataStructure\n- #### OWL Axioms\nid:: block-size-owl-axio",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n-",
     "tags": [
       "BC-0013",
       "blockchain"
@@ -1092,7 +1092,7 @@
   {
     "id": "BC-0014-block-time",
     "title": "Block Time",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: block-time-relationships\n- is-subclass-of:: Blockchain Entity, DistributedDataStructure\n- #### OWL Axioms\nid:: block-time-owl-axio",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n-",
     "tags": [
       "BC-0014",
       "blockchain"
@@ -1102,7 +1102,7 @@
   {
     "id": "BC-0015-chain-reorganization",
     "title": "Chain Reorganization",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: chain-reorganization-relationships\n- is-subclass-of:: Blockchain Entity, Distri",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n-",
     "tags": [
       "BC-0015",
       "blockchain"
@@ -1112,7 +1112,7 @@
   {
     "id": "BC-0016-orphan-block",
     "title": "Orphan Block",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: orphan-block-relationships\n- is-subclass-of:: Blockchain Entity, DistributedDat",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0016",
       "blockchain"
@@ -1122,7 +1122,7 @@
   {
     "id": "BC-0017-timestamp",
     "title": "Timestamp",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: UserConsentToken via has-part\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: timestamp-relationships\n- is-sub",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: UserConsentToken via has-part\n-",
     "tags": [
       "BC-0017",
       "blockchain"
@@ -1132,7 +1132,7 @@
   {
     "id": "BC-0018-transaction-pool",
     "title": "Transaction Pool",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: transaction-pool-relationships\n- is-subclass-of:: Blockchain Entity, Distribute",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n-",
     "tags": [
       "BC-0018",
       "blockchain"
@@ -1142,7 +1142,7 @@
   {
     "id": "BC-0019-mempool",
     "title": "Mempool",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: Bitcoin via has-part\n- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: mempool-relationships\n- is-subclass-of:: ",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: Bitcoin via has-part\n-",
     "tags": [
       "BC-0019",
       "blockchain"
@@ -1152,7 +1152,7 @@
   {
     "id": "BC-0020-transaction-confirmation",
     "title": "Transaction Confirmation",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: transaction-confirmation-relationships\n- is-subclass-of:: Blockchain Entity, Di",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n-",
     "tags": [
       "BC-0020",
       "blockchain"
@@ -1162,7 +1162,7 @@
   {
     "id": "BC-0021-input",
     "title": "Input",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: input-relationships\n- is-subclass-of:: Blockchain Entity, DistributedDataStruct",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n-",
     "tags": [
       "BC-0021",
       "blockchain"
@@ -1172,7 +1172,7 @@
   {
     "id": "BC-0022-output",
     "title": "Output",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: output-relationships\n- is-subclass-of:: Blockchain Entity, DistributedDataStruc",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n-",
     "tags": [
       "BC-0022",
       "blockchain"
@@ -1182,7 +1182,7 @@
   {
     "id": "BC-0023-script",
     "title": "Script",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-from:: Bitcoin via has-part\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: script-relationships\n- is-subclass-of:: B",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-from:: Bitcoin via has-part\n-",
     "tags": [
       "BC-0023",
       "blockchain"
@@ -1192,7 +1192,7 @@
   {
     "id": "BC-0024-opcodes",
     "title": "Opcodes",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: opcodes-relationships\n- is-subclass-of:: Blockchain Entity, DistributedDataStru",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n-",
     "tags": [
       "BC-0024",
       "blockchain"
@@ -1202,7 +1202,7 @@
   {
     "id": "BC-0025-chain-state",
     "title": "Chain State",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: chain-state-relationships\n- is-subclass-of:: Blockchain Entity, DistributedData",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n-",
     "tags": [
       "BC-0025",
       "blockchain"
@@ -1212,7 +1212,7 @@
   {
     "id": "BC-0026-cryptography",
     "title": "Cryptography",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some MathematicalScience\n- is-subclass-of some SecurityTechnology\n- is-subclass-of some InformationProtection\n- #### CrossDomainBridges\n- bridges-to:: MathematicalScience via is-subclass-of\n- bridges-to:: InformationProtection via is-subclass-of\n- bridges-to:: SecurityTechnology via is-subclass-of\n- bridges-from:: DistributedLedgerTechnologyDlt via depends-on\n- #### OWL Restrictions\n- is-subclass-of some MathematicalScience\n- is-subclass-of some SecurityT",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: MathematicalScience via is-subclass-of\n- bridges-to:: InformationProtection via is-subclass-of\n- bridges-to:: SecurityTechnology via is-subclass-of\n- bridges-from:: DistributedLedgerTechnologyDlt via depends-on\n-",
     "tags": [
       "BC-0026",
       "blockchain"
@@ -1222,7 +1222,7 @@
   {
     "id": "BC-0027-hash-function",
     "title": "Hash Function",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: hash-function-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: hash-function-owl-axioms\ncollaps",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0027",
       "blockchain"
@@ -1232,7 +1232,7 @@
   {
     "id": "BC-0028-sha-256",
     "title": "SHA-256",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some Cryptographicprimitive\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- ",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0028",
       "blockchain"
@@ -1242,7 +1242,7 @@
   {
     "id": "BC-0029-merkle-tree",
     "title": "Merkle Tree",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: merkle-tree-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: merkle-tree-owl-axioms\ncollapsed::",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0029",
       "blockchain"
@@ -1252,7 +1252,7 @@
   {
     "id": "BC-0030-digital-signature",
     "title": "Digital Signature",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: Tokenization via depends-on\n- bridges-from:: VirtualPropertyRight via depends-on\n- bridges-from:: DigitalEvidenceChainOfCustody via has-part\n- bridges-from:: DataProvenance via requires\n- bridges-from:: DistributedLedgerTechnologyDlt via requires\n- bridges-from:: NftSwapping via requires\n- bridges",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: Tokenization via depends-on\n- bridges-from:: VirtualPropertyRight via depends-on\n- bridges-from:: DigitalEvidenceChainOfCustody via has-part\n- bridges-from:: DataProvenance via requires\n- bridges-from:: DistributedLedgerTechnologyDlt via requires\n- bridges-from:: NftSwapping via requires\n- bridges-from:: VerifiableCredentialVc via requires\n- bridges-from:: CulturalProvenanceRecor",
     "tags": [
       "BC-0030",
       "blockchain"
@@ -1262,7 +1262,7 @@
   {
     "id": "BC-0031-public-key-cryptography",
     "title": "Public-Key Cryptography",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: public-key-cryptography-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: public-key-cryptograph",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0031",
       "blockchain"
@@ -1272,7 +1272,7 @@
   {
     "id": "BC-0032-elliptic-curve-cryptography",
     "title": "Elliptic Curve Cryptography",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: ZeroKnowledgeProofZkp via requires\n- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: elliptic-curve-cryptography-relationships\n- is-subclass-of:: Blockchain Entity, Cryptographi",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: ZeroKnowledgeProofZkp via requires\n-",
     "tags": [
       "BC-0032",
       "blockchain"
@@ -1282,7 +1282,7 @@
   {
     "id": "BC-0033-zero-knowledge-proof",
     "title": "Zero-Knowledge Proof",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: zero-knowledge-proof-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: zero-knowledge-proof-owl-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0033",
       "blockchain"
@@ -1292,7 +1292,7 @@
   {
     "id": "BC-0034-nonce",
     "title": "Nonce",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: nonce-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: nonce-owl-axioms\ncollapsed:: true\n-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0034",
       "blockchain"
@@ -1302,7 +1302,7 @@
   {
     "id": "BC-0035-difficulty",
     "title": "Difficulty",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: difficulty-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: difficulty-owl-axioms\ncollapsed:: t",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0035",
       "blockchain"
@@ -1312,7 +1312,7 @@
   {
     "id": "BC-0036-private-key",
     "title": "Private Key",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: private-key-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: private-key-owl-axioms\ncollapsed::",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0036",
       "blockchain"
@@ -1322,7 +1322,7 @@
   {
     "id": "BC-0038-address",
     "title": "Address",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: address-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: address-owl-axioms\ncollapsed:: true\n-\n- ## About Address\nid:: address-about\n- Public key-derived identifier within ",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "BC-0038",
       "blockchain"
@@ -1332,7 +1332,7 @@
   {
     "id": "BC-0039-signature-scheme",
     "title": "Signature Scheme",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: signature-scheme-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: signature-scheme-owl-axioms\nc",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0039",
       "blockchain"
@@ -1342,7 +1342,7 @@
   {
     "id": "BC-0040-ecdsa",
     "title": "ECDSA",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: ecdsa-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: ecdsa-owl-axioms\ncollapsed:: true\n-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0040",
       "blockchain"
@@ -1352,7 +1352,7 @@
   {
     "id": "BC-0041-schnorr-signature",
     "title": "Schnorr Signature",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: schnorr-signature-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: schnorr-signature-owl-axioms",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0041",
       "blockchain"
@@ -1362,7 +1362,7 @@
   {
     "id": "BC-0042-keccak-256",
     "title": "Keccak-256",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: keccak-256-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: keccak-256-owl-axioms\ncollapsed:: t",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0042",
       "blockchain"
@@ -1372,7 +1372,7 @@
   {
     "id": "BC-0043-blake2",
     "title": "BLAKE2",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some Cryptographicprimitive\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- ",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0043",
       "blockchain"
@@ -1382,7 +1382,7 @@
   {
     "id": "BC-0044-merkle-root",
     "title": "Merkle Root",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: merkle-root-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: merkle-root-owl-axioms\ncollapsed::",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0044",
       "blockchain"
@@ -1392,7 +1392,7 @@
   {
     "id": "BC-0045-merkle-proof",
     "title": "Merkle Proof",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: merkle-proof-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: merkle-proof-owl-axioms\ncollapsed",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0045",
       "blockchain"
@@ -1402,7 +1402,7 @@
   {
     "id": "BC-0046-hash-collision",
     "title": "Hash Collision",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: hash-collision-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: hash-collision-owl-axioms\ncolla",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0046",
       "blockchain"
@@ -1412,7 +1412,7 @@
   {
     "id": "BC-0047-preimage-resistance",
     "title": "Preimage Resistance",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: preimage-resistance-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: preimage-resistance-owl-ax",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0047",
       "blockchain"
@@ -1422,7 +1422,7 @@
   {
     "id": "BC-0048-collision-resistance",
     "title": "Collision Resistance",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: collision-resistance-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: collision-resistance-owl-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0048",
       "blockchain"
@@ -1432,7 +1432,7 @@
   {
     "id": "BC-0049-salt",
     "title": "Salt",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: salt-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: salt-owl-axioms\ncollapsed:: true\n-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0049",
       "blockchain"
@@ -1442,7 +1442,7 @@
   {
     "id": "BC-0050-cryptographic-commitment",
     "title": "Cryptographic Commitment",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: cryptographic-commitment-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: cryptographic-commitm",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0050",
       "blockchain"
@@ -1462,7 +1462,7 @@
   {
     "id": "BC-0053-mining",
     "title": "Mining",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: mining-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: mining-owl-axioms\ncollapsed:: true\n-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0053",
       "blockchain"
@@ -1472,7 +1472,7 @@
   {
     "id": "BC-0054-miner",
     "title": "Miner",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: miner-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: miner-owl-axioms\ncollapsed:: true\n-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0054",
       "blockchain"
@@ -1482,7 +1482,7 @@
   {
     "id": "BC-0055-block-reward",
     "title": "Block Reward",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Consensusprotocol\n- is-subclass-of some BlockchainEntity\n- #### OWL Restrictions\n- is-subclass-of some Consensusprotocol\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: block-reward-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: block-reward-owl-axioms\ncollapsed:: true\n-",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "BC-0055",
       "blockchain"
@@ -1492,7 +1492,7 @@
   {
     "id": "BC-0056-difficulty-adjustment",
     "title": "Difficulty Adjustment",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: Bitcoin via uses\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: difficulty-adjustment-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: diffi",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: Bitcoin via uses\n-",
     "tags": [
       "BC-0056",
       "blockchain"
@@ -1502,7 +1502,7 @@
   {
     "id": "BC-0057-network-synchronization",
     "title": "Network Synchronization",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Consensusprotocol\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Consensusprotocol\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: network-synchronization-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: network-synchronization-owl-axioms\nco",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0057",
       "blockchain"
@@ -1512,7 +1512,7 @@
   {
     "id": "BC-0058-consensus-rule",
     "title": "Consensus Rule",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Consensusprotocol\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Consensusprotocol\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: consensus-rule-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: consensus-rule-owl-axioms\ncollapsed:: true\n-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0058",
       "blockchain"
@@ -1522,7 +1522,7 @@
   {
     "id": "BC-0059-longest-chain-rule",
     "title": "Longest Chain Rule",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: longest-chain-rule-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: longest-chain-rule-owl-axioms\ncollapsed:: ",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0059",
       "blockchain"
@@ -1532,7 +1532,7 @@
   {
     "id": "BC-0060-fork-choice-rule",
     "title": "Fork Choice Rule",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: fork-choice-rule-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: fork-choice-rule-owl-axioms\ncollapsed:: true",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0060",
       "blockchain"
@@ -1542,7 +1542,7 @@
   {
     "id": "BC-0061-nakamoto-consensus",
     "title": "Nakamoto Consensus",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: nakamoto-consensus-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: nakamoto-consensus-owl-axioms\ncollapsed:: ",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0061",
       "blockchain"
@@ -1552,7 +1552,7 @@
   {
     "id": "BC-0062-block-propagation",
     "title": "Block Propagation",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: block-propagation-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: block-propagation-owl-axioms\ncollapsed:: true\n-",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "BC-0062",
       "blockchain"
@@ -1562,7 +1562,7 @@
   {
     "id": "BC-0063-network-hash-rate",
     "title": "Network Hash Rate",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: network-hash-rate-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: network-hash-rate-owl-axioms\ncollapsed:: tr",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0063",
       "blockchain"
@@ -1572,7 +1572,7 @@
   {
     "id": "BC-0064-mining-pool",
     "title": "Mining Pool",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Consensusprotocol\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Consensusprotocol\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: mining-pool-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: mining-pool-owl-axioms\ncollapsed:: true\n-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0064",
       "blockchain"
@@ -1582,7 +1582,7 @@
   {
     "id": "BC-0065-solo-mining",
     "title": "Solo Mining",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Consensusprotocol\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Consensusprotocol\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: solo-mining-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: solo-mining-owl-axioms\ncollapsed:: true\n-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0065",
       "blockchain"
@@ -1592,7 +1592,7 @@
   {
     "id": "BC-0066-pool-share",
     "title": "Pool Share",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Consensusprotocol\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Consensusprotocol\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: pool-share-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: pool-share-owl-axioms\ncollapsed:: true\n-\n- ## Abou",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0066",
       "blockchain"
@@ -1602,7 +1602,7 @@
   {
     "id": "BC-0067-difficulty-target",
     "title": "Difficulty Target",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: difficulty-target-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: difficulty-target-owl-axioms\ncollapsed:: tr",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0067",
       "blockchain"
@@ -1612,7 +1612,7 @@
   {
     "id": "BC-0068-coinbase-transaction",
     "title": "Coinbase Transaction",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: coinbase-transaction-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: coinbase-transaction-owl-axioms\ncollapse",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0068",
       "blockchain"
@@ -1622,7 +1622,7 @@
   {
     "id": "BC-0069-mining-reward",
     "title": "Mining Reward",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: mining-reward-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: mining-reward-owl-axioms\ncollapsed:: true\n-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0069",
       "blockchain"
@@ -1632,7 +1632,7 @@
   {
     "id": "BC-0070-halving",
     "title": "Halving",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: Bitcoin via uses\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: halving-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: halving-owl-axioms\n",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: Bitcoin via uses\n-",
     "tags": [
       "BC-0070",
       "blockchain"
@@ -1642,7 +1642,7 @@
   {
     "id": "BC-0071-blockchain-network",
     "title": "Blockchain Network",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: TokenCustodyService via depends-on\n- bridges-from:: CryptoToken via is-part-of\n- bridges-from:: NftSwapping via requires\n- bridges-from:: SmartRoyaltyContract via depends-on\n- bridges-from:: DigitalTaxComplianceNode via depends-on\n- bridges-from:: Token",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: TokenCustodyService via depends-on\n- bridges-from:: CryptoToken via is-part-of\n- bridges-from:: NftSwapping via requires\n- bridges-from:: SmartRoyaltyContract via depends-on\n- bridges-from:: DigitalTaxComplianceNode via depends-on\n- bridges-from:: Tokenization via requires\n- bridges-from:: VirtualSecuritiesOfferingVso via depends",
     "tags": [
       "BC-0071",
       "blockchain"
@@ -1652,7 +1652,7 @@
   {
     "id": "BC-0072-node",
     "title": "Node",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: node-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\nid:: node-owl",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n-",
     "tags": [
       "BC-0072",
       "blockchain"
@@ -1662,7 +1662,7 @@
   {
     "id": "BC-0073-full-node",
     "title": "Full Node",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: full-node-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\nid:: ful",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0073",
       "blockchain"
@@ -1672,7 +1672,7 @@
   {
     "id": "BC-0074-light-node",
     "title": "Light Node",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: SceneGraph via has-part\n- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: light-node-relationships\n- is-subclass-of:: Blockchain Entity, N",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: SceneGraph via has-part\n-",
     "tags": [
       "BC-0074",
       "blockchain"
@@ -1682,7 +1682,7 @@
   {
     "id": "BC-0075-peer-to-peer-network",
     "title": "Peer-to-Peer Network",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: DistributedLedgerTechnologyDlt via requires\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: peer-to-peer-network-relationships\n- is-subc",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: DistributedLedgerTechnologyDlt via requires\n-",
     "tags": [
       "BC-0075",
       "blockchain"
@@ -1692,7 +1692,7 @@
   {
     "id": "BC-0076-double-spending",
     "title": "Double Spending",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: double-spending-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\nid",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n-",
     "tags": [
       "BC-0076",
       "blockchain"
@@ -1702,7 +1702,7 @@
   {
     "id": "BC-0077-51-percent-attack",
     "title": "51 Percent Attack",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: 51%-attack-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\nid:: 51%-attack-owl-axioms\ncollapsed:: true\n-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n-",
     "tags": [
       "BC-0077",
       "blockchain"
@@ -1712,7 +1712,7 @@
   {
     "id": "BC-0078-sybil-attack",
     "title": "Sybil Attack",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: sybil-attack-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\nid:: ",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n-",
     "tags": [
       "BC-0078",
       "blockchain"
@@ -1722,7 +1722,7 @@
   {
     "id": "BC-0079-immutability",
     "title": "Immutability",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: immutability-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\nid:: ",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n-",
     "tags": [
       "BC-0079",
       "blockchain"
@@ -1732,7 +1732,7 @@
   {
     "id": "BC-0080-finality",
     "title": "Finality",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: finality-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\nid:: fina",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n-",
     "tags": [
       "BC-0080",
       "blockchain"
@@ -1742,7 +1742,7 @@
   {
     "id": "BC-0081-network-latency",
     "title": "Network Latency",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-from:: VoiceInteraction via depends-on\n- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: network-latency-relationships\n- is-subclass-of:: Blockch",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-from:: VoiceInteraction via depends-on\n-",
     "tags": [
       "BC-0081",
       "blockchain"
@@ -1752,7 +1752,7 @@
   {
     "id": "BC-0082-block-propagation-time",
     "title": "Block Propagation Time",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: block-propagation-time-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\nid:: block-propagation-time-owl-axioms\ncollaps",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n-",
     "tags": [
       "BC-0082",
       "blockchain"
@@ -1762,7 +1762,7 @@
   {
     "id": "BC-0083-eclipse-attack",
     "title": "Eclipse Attack",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: eclipse-attack-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\nid:",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0083",
       "blockchain"
@@ -1772,7 +1772,7 @@
   {
     "id": "BC-0084-partition-attack",
     "title": "Partition Attack",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: partition-attack-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\ni",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0084",
       "blockchain"
@@ -1782,7 +1782,7 @@
   {
     "id": "BC-0085-selfish-mining",
     "title": "Selfish Mining",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: selfish-mining-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\nid:",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0085",
       "blockchain"
@@ -1792,7 +1792,7 @@
   {
     "id": "BC-0086-censorship-resistance",
     "title": "Censorship Resistance",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: DecentralizationLayer via enables\n- bridges-from:: Bitcoin via enables\n- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: censorship-resist",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: DecentralizationLayer via enables\n- bridges-from:: Bitcoin via enables\n-",
     "tags": [
       "BC-0086",
       "blockchain"
@@ -1802,7 +1802,7 @@
   {
     "id": "BC-0087-network-topology",
     "title": "Network Topology",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-from:: NetworkingLayer via depends-on\n- bridges-from:: ThreatSurfaceMap via requires\n- bridges-from:: DistributedArchitecture via has-part\n- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- implementedInLaye",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-from:: NetworkingLayer via depends-on\n- bridges-from:: ThreatSurfaceMap via requires\n- bridges-from:: DistributedArchitecture via has-part\n-",
     "tags": [
       "BC-0087",
       "blockchain"
@@ -1812,7 +1812,7 @@
   {
     "id": "BC-0088-gossip-protocol",
     "title": "Gossip Protocol",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: gossip-protocol-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\nid",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0088",
       "blockchain"
@@ -1822,7 +1822,7 @@
   {
     "id": "BC-0089-peer-discovery",
     "title": "Peer Discovery",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: peer-discovery-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\nid:",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n-",
     "tags": [
       "BC-0089",
       "blockchain"
@@ -1832,7 +1832,7 @@
   {
     "id": "BC-0090-permissionless-network",
     "title": "Permissionless Network",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: permissionless-network-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Ax",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n-",
     "tags": [
       "BC-0090",
       "blockchain"
@@ -1842,7 +1842,7 @@
   {
     "id": "BC-0091-permissioned-network",
     "title": "Permissioned Network",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: permissioned-network-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axio",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0091",
       "blockchain"
@@ -1852,7 +1852,7 @@
   {
     "id": "BC-0092-validator-node",
     "title": "Validator Node",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: validator-node-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\nid:",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n-",
     "tags": [
       "BC-0092",
       "blockchain"
@@ -1862,7 +1862,7 @@
   {
     "id": "BC-0093-archival-node",
     "title": "Archival Node",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: archival-node-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\nid:: archival-node-owl-axioms\ncollapsed:: true\n-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n-",
     "tags": [
       "BC-0093",
       "blockchain"
@@ -1872,7 +1872,7 @@
   {
     "id": "BC-0094-pruned-node",
     "title": "Pruned Node",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: pruned-node-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\nid:: p",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n-",
     "tags": [
       "BC-0094",
       "blockchain"
@@ -1882,7 +1882,7 @@
   {
     "id": "BC-0095-bootstrap-node",
     "title": "Bootstrap Node",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: bootstrap-node-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\nid:",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0095",
       "blockchain"
@@ -1912,7 +1912,7 @@
   {
     "id": "BC-0098-coin",
     "title": "Coin",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Economicmechanism\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Economicmechanism via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Economicmechanism\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: EconomicLayer\n- #### Relationships\nid:: coin-relationships\n- is-subclass-of:: Blockchain Entity, EconomicMechanism\n- #### OWL Axioms\nid:: coin",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Economicmechanism via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0098",
       "blockchain"
@@ -1922,7 +1922,7 @@
   {
     "id": "BC-0099-native-token",
     "title": "Native Token",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Economicmechanism\n- #### CrossDomainBridges\n- bridges-to:: Economicmechanism via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Economicmechanism\n- implementedInLayer:: EconomicLayer\n- #### Relationships\nid:: native-token-relationships\n- is-subclass-of:: Blockchain Entity, EconomicMechanism\n- #### OWL Axioms\ni",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Economicmechanism via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0099",
       "blockchain"
@@ -1932,7 +1932,7 @@
   {
     "id": "BC-0100-gas",
     "title": "Gas",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Economicmechanism\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Economicmechanism via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Economicmechanism\n- implementedInLayer:: EconomicLayer\n- #### Relationships\nid:: gas-relationships\n- is-subclass-of:: Blockchain Entity, EconomicMechanism\n- #### OWL Axioms\nid:: gas-o",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Economicmechanism via is-subclass-of\n-",
     "tags": [
       "BC-0100",
       "blockchain"
@@ -1942,7 +1942,7 @@
   {
     "id": "BLAKE2",
     "title": "BLAKE2",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some Cryptographicprimitive\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- ",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0043",
       "blockchain"
@@ -1992,7 +1992,7 @@
   {
     "id": "Behavior Analysis",
     "title": "Behavior Analysis",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some MachineLearning\n- #### CrossDomainBridges\n- bridges-to:: MachineLearning via is-subclass-of\n- bridges-from:: BehaviouralFeedbackLoop via has-part\n- #### OWL Restrictions\n- is-subclass-of some MachineLearning\n- #### Relationships\n- is-subclass-of:: Machine Learning\n- #### OWL Axioms\n-\n- ## About Behavior Analysis\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: MachineLearning via is-subclass-of\n- bridges-from:: BehaviouralFeedbackLoop via has-part\n-",
     "tags": [
       "AI-0860",
       "ai"
@@ -2002,7 +2002,7 @@
   {
     "id": "Behavioral Analytics",
     "title": "Behavioral Analytics",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some MachineLearning\n- #### CrossDomainBridges\n- bridges-to:: MachineLearning via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some MachineLearning\n- #### Relationships\n- is-subclass-of:: Machine Learning\n- #### OWL Axioms\n-\n- ## About Behavioral Analytics\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating wit",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: MachineLearning via is-subclass-of\n-",
     "tags": [
       "AI-0873",
       "ai"
@@ -2012,7 +2012,7 @@
   {
     "id": "Behavioral Modeling",
     "title": "Behavioral Modeling",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some MachineLearning\n- #### CrossDomainBridges\n- bridges-to:: MachineLearning via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some MachineLearning\n- #### Relationships\n- is-subclass-of:: Machine Learning\n- #### OWL Axioms\n-\n- ## About Behavioral Modeling\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: MachineLearning via is-subclass-of\n-",
     "tags": [
       "AI-0847",
       "ai"
@@ -2062,7 +2062,7 @@
   {
     "id": "Block",
     "title": "Block",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-from:: Bitcoin via has-part\n- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: block-relationships\n- is-subclass-of:: Blockchain Entity, DistributedDataStructure\n- #### OW",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-from:: Bitcoin via has-part\n-",
     "tags": [
       "BC-0003",
       "blockchain"
@@ -2092,7 +2092,7 @@
   {
     "id": "Cardano",
     "title": "Cardano",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some SmartContractPlatform\n- #### OWL Restrictions\n- is-subclass-of some SmartContractPlatform\n- #### Relationships\n- is-subclass-of:: Smart Contract Platform\n- #### OWL Axioms\n-",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "BC-0567",
       "blockchain"
@@ -2112,7 +2112,7 @@
   {
     "id": "Chain State",
     "title": "Chain State",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: chain-state-relationships\n- is-subclass-of:: Blockchain Entity, DistributedData",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n-",
     "tags": [
       "BC-0025",
       "blockchain"
@@ -2142,7 +2142,7 @@
   {
     "id": "Code Generation",
     "title": "Code Generation",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some GenerativeAi\n- #### OWL Restrictions\n- is-subclass-of some GenerativeAi\n- #### Relationships\n- is-subclass-of:: Generative Ai\n- #### OWL Axioms\n-\n- ## About Code Generation\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in virtual coll",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0868",
       "ai"
@@ -2172,7 +2172,7 @@
   {
     "id": "Coin",
     "title": "Coin",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Economicmechanism\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Economicmechanism via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Economicmechanism\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: EconomicLayer\n- #### Relationships\nid:: coin-relationships\n- is-subclass-of:: Blockchain Entity, EconomicMechanism\n- #### OWL Axioms\nid:: coin",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Economicmechanism via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0098",
       "blockchain"
@@ -2242,7 +2242,7 @@
   {
     "id": "Component",
     "title": "Component",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### Relationships\n- is-subclass-of:: Artificial Intelligence\n- #### OWL Axioms\n-\n- ## About Component\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0834",
       "artificial-intelligence"
@@ -2262,7 +2262,7 @@
   {
     "id": "Computational Component",
     "title": "Computational Component",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Component\n- #### OWL Restrictions\n- is-subclass-of some Component\n- #### Relationships\n- is-subclass-of:: Component\n- #### OWL Axioms\n-\n- ## About Computational Component\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in virtual collab",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0843",
       "ai"
@@ -2302,7 +2302,7 @@
   {
     "id": "Consensus Mechanism",
     "title": "Consensus Mechanism",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some DistributedProtocol\n- is-subclass-of some FaultToleranceSystem\n- is-subclass-of some AgreementProtocol\n- #### CrossDomainBridges\n- bridges-from:: ProofBasedConsensus via is-subclass-of\n- bridges-from:: CollectiveIntelligenceSystem via requires\n- bridges-from:: HybridConsensus via is-subclass-of\n- bridges-from:: CommunityGovernanceModel via depends-on\n- #### OWL Restrictions\n- is-subclass-of some DistributedProtocol\n- is-subclass-of some FaultToleranc",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-from:: ProofBasedConsensus via is-subclass-of\n- bridges-from:: CollectiveIntelligenceSystem via requires\n- bridges-from:: HybridConsensus via is-subclass-of\n- bridges-from:: CommunityGovernanceModel via depends-on\n-",
     "tags": [
       "PC-0009",
       "metaverse"
@@ -2314,20 +2314,20 @@
     "title": "ConsensusAlgorithm",
     "content": "-",
     "tags": [
-      "mv-1761742247908",
-      "metaverse"
+      "BC-0002",
+      "blockchain"
     ],
-    "ontology_id": "mv-1761742247908"
+    "ontology_id": "BC-0002"
   },
   {
     "id": "ConsensusMechanism",
     "title": "ConsensusMechanism",
     "content": "-",
     "tags": [
-      "mv-1761742247908",
+      "MV-0007",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247908"
+    "ontology_id": "MV-0007"
   },
   {
     "id": "Consent Management",
@@ -2422,7 +2422,7 @@
   {
     "id": "Conversational Ai",
     "title": "Conversational AI",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some NaturalLanguageProcessing\n- #### CrossDomainBridges\n- bridges-to:: NaturalLanguageProcessing via is-subclass-of\n- bridges-from:: EtsiDomainAiHumanInterface via categorizes\n- #### OWL Restrictions\n- is-subclass-of some NaturalLanguageProcessing\n- #### Relationships\n- is-subclass-of:: Natural Language Processing\n- #### OWL Axioms\n-\n- ## About Conversational AI\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms contin",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: NaturalLanguageProcessing via is-subclass-of\n- bridges-from:: EtsiDomainAiHumanInterface via categorizes\n-",
     "tags": [
       "AI-0849",
       "ai"
@@ -2494,10 +2494,10 @@
     "title": "CrossChainBridge",
     "content": "-",
     "tags": [
-      "mv-1761742247909",
+      "MV-0008",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247909"
+    "ontology_id": "MV-0008"
   },
   {
     "id": "Crypto Token",
@@ -2512,7 +2512,7 @@
   {
     "id": "Cryptographic Commitment",
     "title": "Cryptographic Commitment",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: cryptographic-commitment-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: cryptographic-commitm",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0050",
       "blockchain"
@@ -2522,7 +2522,7 @@
   {
     "id": "Cryptographic System",
     "title": "Cryptographic System",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: cryptographic-system-relationships\n- is-subclass-of:: Blockchain Entity\n- #### OWL Axioms\nid:: cryptographic-system-owl-axioms\ncollapsed:: true\n-\n- ## About Cryptographic System\nid:: cryptographic-system-about\n- A Cryptographic System provides the mathematical foundation for blockchain security, replacing tr",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "PC-0003",
       "metaverse"
@@ -2534,15 +2534,15 @@
     "title": "CryptographicHash",
     "content": "-",
     "tags": [
-      "mv-1761742247909",
+      "MV-0009",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247909"
+    "ontology_id": "MV-0009"
   },
   {
     "id": "Cryptography",
     "title": "Cryptography",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some MathematicalScience\n- is-subclass-of some SecurityTechnology\n- is-subclass-of some InformationProtection\n- #### CrossDomainBridges\n- bridges-to:: MathematicalScience via is-subclass-of\n- bridges-to:: InformationProtection via is-subclass-of\n- bridges-to:: SecurityTechnology via is-subclass-of\n- bridges-from:: DistributedLedgerTechnologyDlt via depends-on\n- #### OWL Restrictions\n- is-subclass-of some MathematicalScience\n- is-subclass-of some SecurityT",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: MathematicalScience via is-subclass-of\n- bridges-to:: InformationProtection via is-subclass-of\n- bridges-to:: SecurityTechnology via is-subclass-of\n- bridges-from:: DistributedLedgerTechnologyDlt via depends-on\n-",
     "tags": [
       "BC-0026",
       "blockchain"
@@ -2610,16 +2610,6 @@
     "ontology_id": "BC-0472"
   },
   {
-    "id": "DELIVERY-MANIFEST",
-    "title": "DELIVERY MANIFEST",
-    "content": "-",
-    "tags": [
-      "mv-1761742247910",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247910"
-  },
-  {
     "id": "Data Anonymization Pipeline",
     "title": "Data Anonymization Pipeline",
     "content": "-",
@@ -2642,7 +2632,7 @@
   {
     "id": "Data Breach",
     "title": "Data Breach",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Risk\n- #### CrossDomainBridges\n- bridges-to:: Risk via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Risk\n- #### Relationships\n- is-subclass-of:: Risk\n- #### OWL Axioms\n-\n- ## About Data Breach\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterpr",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Risk via is-subclass-of\n-",
     "tags": [
       "AI-0863",
       "ai"
@@ -2704,10 +2694,10 @@
     "title": "DataPipeline",
     "content": "-",
     "tags": [
-      "mv-1761742247911",
+      "MV-0011",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247911"
+    "ontology_id": "MV-0011"
   },
   {
     "id": "Decentralization Layer",
@@ -2722,7 +2712,7 @@
   {
     "id": "Decentralization",
     "title": "Decentralization",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: DistributedArchitecture via enables\n- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: decentralization-relations",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: DistributedArchitecture via enables\n-",
     "tags": [
       "BC-0010",
       "blockchain"
@@ -2782,7 +2772,7 @@
   {
     "id": "Deep Learning",
     "title": "Deep Learning",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- implementedInLayer:: AlgorithmicLayer, ComputeLayer, DataLayer\n- #### Relationships\nid:: deep-learning-relationships\n- is-subclass-of:: Machine Learning, Artificial Intelligence\n- has-part:: Neural Network, Hidden Layer, Activation Function, Loss Function, Optimizer, Backpropagation\n- implements:: Supervised Learning, Unsupervised Learning, Self-Supervised L",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0870",
       "ai"
@@ -2864,7 +2854,7 @@
   {
     "id": "Difficulty",
     "title": "Difficulty",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConsensusLayer, SecurityLayer\n- #### Relationships\nid:: difficulty-relationships\n- is-subclass-of:: Blockchain Entity, Consensus Mechanism, CryptographicPrimitive\n- relates-to:: Mining",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0035",
       "blockchain"
@@ -3070,7 +3060,7 @@
   {
     "id": "Digital Signature",
     "title": "Digital Signature",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: Tokenization via depends-on\n- bridges-from:: VirtualPropertyRight via depends-on\n- bridges-from:: DigitalEvidenceChainOfCustody via has-part\n- bridges-from:: DataProvenance via requires\n- bridges-from:: DistributedLedgerTechnologyDlt via requires\n- bridges-from:: NftSwapping via requires\n- bridges",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: Tokenization via depends-on\n- bridges-from:: VirtualPropertyRight via depends-on\n- bridges-from:: DigitalEvidenceChainOfCustody via has-part\n- bridges-from:: DataProvenance via requires\n- bridges-from:: DistributedLedgerTechnologyDlt via requires\n- bridges-from:: NftSwapping via requires\n- bridges-from:: VerifiableCredentialVc via requires\n- bridges-from:: CulturalProvenanceRecor",
     "tags": [
       "BC-0030",
       "blockchain"
@@ -3152,10 +3142,10 @@
     "title": "DigitalAvatar",
     "content": "-",
     "tags": [
-      "mv-1761742247916",
+      "MV-0005",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247916"
+    "ontology_id": "MV-0005"
   },
   {
     "id": "DigitalTwin",
@@ -3230,7 +3220,7 @@
   {
     "id": "Distributed Data Structure",
     "title": "Distributed Data Structure",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: distributed-data-structure-relationships\n- is-subclass-of:: Blockchain Entity\n- #### OWL Axioms\nid:: distributed-data-structure-owl-axioms\ncollapsed:: true\n-\n- ## About Distributed Data Structure\nid:: distributed-data-structure-about\n- A Distributed Data Structure represents the conceptual foundation for dat",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "PC-0002",
       "metaverse"
@@ -3250,7 +3240,7 @@
   {
     "id": "Distributed Protocol",
     "title": "Distributed Protocol",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: distributed-protocol-relationships\n- is-subclass-of:: Blockchain Entity\n- #### OWL Axioms\nid:: distributed-protocol-owl-axioms\ncollapsed:: true\n-\n- ## About Distributed Protocol\nid:: distributed-protocol-about\n- Distributed Protocols form the communication and coordination backbone of blockchain systems, ena",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "PC-0006",
       "metaverse"
@@ -3260,7 +3250,7 @@
   {
     "id": "Documentation Generation",
     "title": "Documentation Generation",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some GenerativeAi\n- #### OWL Restrictions\n- is-subclass-of some GenerativeAi\n- #### Relationships\n- is-subclass-of:: Generative Ai\n- #### OWL Axioms\n-\n- ## About Documentation Generation\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in vir",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0869",
       "ai"
@@ -3300,7 +3290,7 @@
   {
     "id": "ECDSA",
     "title": "ECDSA",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: ecdsa-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: ecdsa-owl-axioms\ncollapsed:: true\n-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0040",
       "blockchain"
@@ -3312,30 +3302,30 @@
     "title": "ERC721",
     "content": "-",
     "tags": [
-      "mv-1761742247917",
-      "metaverse"
+      "BC-0104",
+      "blockchain"
     ],
-    "ontology_id": "mv-1761742247917"
+    "ontology_id": "BC-0104"
   },
   {
     "id": "ETSI Domain Virtual Society",
     "title": "ETSI_Domain_Virtual_Society",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0012",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0012"
   },
   {
     "id": "ETSIDomainClassification",
     "title": "ETSIDomainClassification",
     "content": "-",
     "tags": [
-      "mv-1761742247917",
+      "MV-0013",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247917"
+    "ontology_id": "MV-0013"
   },
   {
     "id": "ETSI_Domain_AI",
@@ -3552,80 +3542,80 @@
     "title": "ETSI_Domain_Governance_Security",
     "content": "-",
     "tags": [
-      "mv-1761742247919",
+      "MV-0014",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247919"
+    "ontology_id": "MV-0014"
   },
   {
     "id": "ETSI_Domain_Governance___Ethics",
     "title": "ETSI_Domain_Governance___Ethics",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0015",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0015"
   },
   {
     "id": "ETSI_Domain_Governance___Society",
     "title": "ETSI_Domain_Governance___Society",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0016",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0016"
   },
   {
     "id": "ETSI_Domain_Human_Interface",
     "title": "ETSI_Domain_Human_Interface",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0017",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0017"
   },
   {
     "id": "ETSI_Domain_Human_Interface___Governance",
     "title": "ETSI_Domain_Human_Interface___Governance",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0018",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0018"
   },
   {
     "id": "ETSI_Domain_Human_Interface___UX",
     "title": "ETSI_Domain_Human_Interface___UX",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0019",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0019"
   },
   {
     "id": "ETSI_Domain_Identity_&_Trust",
     "title": "ETSI_Domain_Identity_&_Trust",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0020",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0020"
   },
   {
     "id": "ETSI_Domain_Immersive_Experiences",
     "title": "ETSI_Domain_Immersive_Experiences",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0021",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0021"
   },
   {
     "id": "ETSI_Domain_Immersive___Reality_Capture",
@@ -3642,130 +3632,130 @@
     "title": "ETSI_Domain_Infrastructure",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0022",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0022"
   },
   {
     "id": "ETSI_Domain_Infrastructure_Data",
     "title": "ETSI_Domain_Infrastructure_Data",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0023",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0023"
   },
   {
     "id": "ETSI_Domain_Infrastructure___Governance",
     "title": "ETSI_Domain_Infrastructure___Governance",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0024",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0024"
   },
   {
     "id": "ETSI_Domain_Infrastructure___Immersive",
     "title": "ETSI_Domain_Infrastructure___Immersive",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0025",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0025"
   },
   {
     "id": "ETSI_Domain_Infrastructure___Interop",
     "title": "ETSI_Domain_Infrastructure___Interop",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0026",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0026"
   },
   {
     "id": "ETSI_Domain_Infrastructure___Security",
     "title": "ETSI_Domain_Infrastructure___Security",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0027",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0027"
   },
   {
     "id": "ETSI_Domain_Interoperability",
     "title": "ETSI_Domain_Interoperability",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0028",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0028"
   },
   {
     "id": "ETSI_Domain_Interoperability___Creative",
     "title": "ETSI_Domain_Interoperability___Creative",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0029",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0029"
   },
   {
     "id": "ETSI_Domain_Reality_Capture",
     "title": "ETSI_Domain_Reality_Capture",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0030",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0030"
   },
   {
     "id": "ETSI_Domain_Reality_Capture___Creative",
     "title": "ETSI_Domain_Reality_Capture___Creative",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0031",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0031"
   },
   {
     "id": "ETSI_Domain_Security_&_Privacy",
     "title": "ETSI_Domain_Security_&_Privacy",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0032",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0032"
   },
   {
     "id": "ETSI_Domain_Virtual_Economy",
     "title": "ETSI_Domain_Virtual_Economy",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0033",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0033"
   },
   {
     "id": "ETSI_Domain_Virtual_Society",
     "title": "ETSI_Domain_Virtual_Society",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "MV-0034",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "MV-0034"
   },
   {
     "id": "EU MiCA Regulation",
@@ -3790,7 +3780,7 @@
   {
     "id": "Economic Mechanism",
     "title": "Economic Mechanism",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: economic-mechanism-relationships\n- is-subclass-of:: Blockchain Entity\n- #### OWL Axioms\nid:: economic-mechanism-owl-axioms\ncollapsed:: true\n-\n- ## About Economic Mechanism\nid:: economic-mechanism-about\n- Economic Mechanisms in blockchain systems represent the application of mechanism design theory\u2014the engine",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "PC-0005",
       "metaverse"
@@ -3880,7 +3870,7 @@
   {
     "id": "Emotional Intelligence",
     "title": "Emotional Intelligence",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### Relationships\n- is-subclass-of:: Artificial Intelligence\n- #### OWL Axioms\n-\n- ## About Emotional Intelligence\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterp",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0870",
       "ai"
@@ -3950,7 +3940,7 @@
   {
     "id": "Ethical Framework",
     "title": "Ethical Framework",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some AiGovernancePrinciple\n- #### OWL Restrictions\n- is-subclass-of some AiGovernancePrinciple\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: ethical-framework-relationships\n- is-subclass-of:: AI Governance Principle\n- #### OWL Axioms\nid:: ethical-framework-owl-axioms\ncollapsed:: true\n-\n- ## About Ethical Framework\nid:: ethical-framework-about\n- Ethical Frameworks for AI provide structured approaches to moral reasoning about the developm",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "PC-0011",
       "metaverse"
@@ -3992,10 +3982,10 @@
     "title": "ExplainableAI",
     "content": "-",
     "tags": [
-      "mv-1761742247926",
+      "MV-0035",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247926"
+    "ontology_id": "MV-0035"
   },
   {
     "id": "Explanation",
@@ -4038,16 +4028,6 @@
     "ontology_id": "AI-0110"
   },
   {
-    "id": "FILE-LISTING",
-    "title": "FILE LISTING",
-    "content": "-",
-    "tags": [
-      "mv-1761742247926",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247926"
-  },
-  {
     "id": "Fairness Metrics",
     "title": "Fairness Metrics",
     "content": "- #### Relationships\nid:: 0377-fairness-metrics-relationships\n- is-part-of:: Algorithmic Fairness, AI Ethics, Bias Detection\n- requires:: Confusion Matrix, Statistical Testing, Protected Attributes\n- enables:: Bias Mitigation, Fairness Auditing, Regulatory Compliance\n- related-to:: AI Safety Research, Value Alignment, AI Trustworthiness, Algorithmic Accountability\n- measured-by:: Fairness Auditing Tools\n- depends-on:: IEEE P7003-2021, ISO/IEC TR 24027, NIST SP 1270\n- #### OWL Axioms\nid:: 0377-fa",
@@ -4060,7 +4040,7 @@
   {
     "id": "Fault Tolerance System",
     "title": "Fault Tolerance System",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: fault-tolerance-system-relationships\n- is-subclass-of:: Blockchain Entity\n- #### OWL Axioms\nid:: fault-tolerance-system-owl-axioms\ncollapsed:: true\n-\n- ## About Fault Tolerance System\nid:: fault-tolerance-system-about\n- Fault Tolerance Systems represent the engineering discipline of building reliable systems",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "PC-0008",
       "metaverse"
@@ -4092,15 +4072,15 @@
     "title": "FederatedLearning",
     "content": "-",
     "tags": [
-      "mv-1761742247927",
-      "metaverse"
+      "AI-0504",
+      "artificial-intelligence"
     ],
-    "ontology_id": "mv-1761742247927"
+    "ontology_id": "AI-0504"
   },
   {
     "id": "Feed Forward Network",
     "title": "Feed Forward Network",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some NeuralNetworkComponent\n- #### OWL Restrictions\n- is-subclass-of some NeuralNetworkComponent\n- #### Relationships\n- is-subclass-of:: Neural Network Component\n- #### OWL Axioms\n-\n- ## About Feed Forward Network\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterpr",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0811",
       "ai"
@@ -4130,7 +4110,7 @@
   {
     "id": "Finality",
     "title": "Finality",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: finality-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\nid:: fina",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n-",
     "tags": [
       "BC-0080",
       "blockchain"
@@ -4176,7 +4156,7 @@
   {
     "id": "Gas",
     "title": "Gas",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Economicmechanism\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Economicmechanism via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Economicmechanism\n- implementedInLayer:: EconomicLayer\n- #### Relationships\nid:: gas-relationships\n- is-subclass-of:: Blockchain Entity, EconomicMechanism\n- #### OWL Axioms\nid:: gas-o",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Economicmechanism via is-subclass-of\n-",
     "tags": [
       "BC-0100",
       "blockchain"
@@ -4196,7 +4176,7 @@
   {
     "id": "Generative AI",
     "title": "Generative AI",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some MachineLearning\n- #### CrossDomainBridges\n- bridges-to:: MachineLearning via is-subclass-of\n- bridges-from:: BehaviouralFeedbackLoop via has-part\n- #### OWL Restrictions\n- is-subclass-of some MachineLearning\n- implementedInLayer:: ComputeLayer, DataLayer, AlgorithmicLayer\n- #### Relationships\nid:: generative-ai-relationships\n- is-subclass-of:: Artificial Intelligence, Machine Learning, Deep Learning\n- has-part:: Large Language Models, Diffusion Model",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: MachineLearning via is-subclass-of\n- bridges-from:: BehaviouralFeedbackLoop via has-part\n-",
     "tags": [
       "AI-0860",
       "ai"
@@ -4226,7 +4206,7 @@
   {
     "id": "Generative Model",
     "title": "Generative Model",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some MachineLearning\n- #### CrossDomainBridges\n- bridges-to:: MachineLearning via is-subclass-of\n- bridges-from:: SyntheticDataGenerator via has-part\n- #### OWL Restrictions\n- is-subclass-of some MachineLearning\n- #### Relationships\n- is-subclass-of:: Machine Learning\n- #### OWL Axioms\n-\n- ## About Generative Model\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and o",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: MachineLearning via is-subclass-of\n- bridges-from:: SyntheticDataGenerator via has-part\n-",
     "tags": [
       "AI-0840",
       "ai"
@@ -4238,10 +4218,10 @@
     "title": "GenerativeModel",
     "content": "-",
     "tags": [
-      "mv-1761742247928",
-      "metaverse"
+      "MV-0037",
+      "artificial-intelligence"
     ],
-    "ontology_id": "mv-1761742247928"
+    "ontology_id": "MV-0037"
   },
   {
     "id": "Glossary Index",
@@ -4252,16 +4232,6 @@
       "metaverse"
     ],
     "ontology_id": "20329"
-  },
-  {
-    "id": "Glossary_Index",
-    "title": "Glossary_Index",
-    "content": "-",
-    "tags": [
-      "mv-1761742247929",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247929"
   },
   {
     "id": "Governance Model",
@@ -4296,7 +4266,7 @@
   {
     "id": "Halving",
     "title": "Halving",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: Bitcoin via uses\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: halving-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: halving-owl-axioms\n",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: Bitcoin via uses\n-",
     "tags": [
       "BC-0070",
       "blockchain"
@@ -4306,7 +4276,7 @@
   {
     "id": "Hand Tracking",
     "title": "Hand Tracking",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some ComputerVision\n- #### CrossDomainBridges\n- bridges-from:: MixedRealityMr via requires\n- #### OWL Restrictions\n- is-subclass-of some ComputerVision\n- #### Relationships\n- is-subclass-of:: Computer Vision\n- #### OWL Axioms\n-\n- ## About Hand Tracking\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-from:: MixedRealityMr via requires\n-",
     "tags": [
       "AI-0852",
       "ai"
@@ -4318,10 +4288,10 @@
     "title": "HapticFeedback",
     "content": "-",
     "tags": [
-      "mv-1761742247930",
+      "MV-0040",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247930"
+    "ontology_id": "MV-0040"
   },
   {
     "id": "Haptics",
@@ -4376,7 +4346,7 @@
   {
     "id": "Hash Function",
     "title": "Hash Function",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: hash-function-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: hash-function-owl-axioms\ncollaps",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0027",
       "blockchain"
@@ -4436,7 +4406,7 @@
   {
     "id": "Human Preference",
     "title": "Property",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some MachineLearning\n- is-subclass-of some Component\n- is-subclass-of some ArtificialIntelligence\n- is-subclass-of some AiGovernance\n- is-subclass-of some Component\n- is-subclass-of some ArtificialIntelligence\n- is-subclass-of some ArtificialIntelligence\n- is-subclass-of some MachineLearning\n- is-subclass-of some MachineLearning\n- is-subclass-of some ArtificialIntelligence\n- is-subclass-of some ArtificialIntelligence\n- is-subclass-of some ArtificialIntell",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: MachineLearning via is-subclass-of\n- bridges-to:: MachineLearning via is-subclass-of\n- bridges-to:: System via is-subclass-of\n- bridges-to:: MachineLearning via is-subclass-of\n-",
     "tags": [
       "AI-0801",
       "ai"
@@ -4484,29 +4454,9 @@
     "ontology_id": "20236"
   },
   {
-    "id": "IMPLEMENTATION-SUMMARY",
-    "title": "IMPLEMENTATION SUMMARY",
-    "content": "-",
-    "tags": [
-      "mv-1761742247935",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247935"
-  },
-  {
-    "id": "INDEX",
-    "title": "INDEX",
-    "content": "-",
-    "tags": [
-      "mv-1761742247936",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247936"
-  },
-  {
     "id": "Identification System",
     "title": "Identification System",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some System\n- #### CrossDomainBridges\n- bridges-to:: System via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some System\n- #### Relationships\n- is-subclass-of:: System\n- #### OWL Axioms\n-\n- ## About Identification System\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset o",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: System via is-subclass-of\n-",
     "tags": [
       "AI-0841",
       "ai"
@@ -4546,7 +4496,7 @@
   {
     "id": "Image Segmentation",
     "title": "Image Segmentation",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some ComputerVision\n- #### OWL Restrictions\n- is-subclass-of some ComputerVision\n- #### Relationships\n- is-subclass-of:: Computer Vision\n- #### OWL Axioms\n-\n- ## About Image Segmentation\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in vir",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0853",
       "ai"
@@ -4586,7 +4536,7 @@
   {
     "id": "Immutability",
     "title": "Immutability",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: immutability-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\nid:: ",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n-",
     "tags": [
       "BC-0079",
       "blockchain"
@@ -4662,7 +4612,7 @@
   {
     "id": "Input",
     "title": "Input",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: input-relationships\n- is-subclass-of:: Blockchain Entity, DistributedDataStruct",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n-",
     "tags": [
       "BC-0021",
       "blockchain"
@@ -4742,7 +4692,7 @@
   {
     "id": "Keccak-256",
     "title": "Keccak-256",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: keccak-256-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: keccak-256-owl-axioms\ncollapsed:: t",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0042",
       "blockchain"
@@ -4792,7 +4742,7 @@
   {
     "id": "Large language models",
     "title": "Large Language Models",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some NaturalLanguageProcessing\n- #### CrossDomainBridges\n- bridges-from:: VoiceInteraction via has-part\n- #### OWL Restrictions\n- is-subclass-of some NaturalLanguageProcessing\n- implementedInLayer:: ComputeLayer, DataLayer, AlgorithmicLayer\n- #### Relationships\nid:: large-language-models-relationships\n- is-subclass-of:: Foundation Models, Neural Network, Deep Learning, Machine Learning\n- has-part:: Transformer, Attention Mechanism, Tokenization, Embedding",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-from:: VoiceInteraction via has-part\n-",
     "tags": [
       "AI-0850",
       "ai"
@@ -4824,10 +4774,10 @@
     "title": "Layer2Scaling",
     "content": "-",
     "tags": [
-      "mv-1761742247942",
+      "MV-0044",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247942"
+    "ontology_id": "MV-0044"
   },
   {
     "id": "Legged Robot",
@@ -4852,7 +4802,7 @@
   {
     "id": "Lidar2d",
     "title": "2D LiDAR",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Lidar\n- is-subclass-of some Lidar\n- #### OWL Restrictions\n- is-subclass-of some Lidar\n- is-subclass-of some Lidar\n- #### Relationships\n- is-subclass-of:: Lidar\n- #### OWL Axioms\n-",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "RB-0162",
       "robotics"
@@ -4862,7 +4812,7 @@
   {
     "id": "Lidar3d",
     "title": "3D LiDAR",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Lidar\n- is-subclass-of some Lidar\n- #### OWL Restrictions\n- is-subclass-of some Lidar\n- is-subclass-of some Lidar\n- #### Relationships\n- is-subclass-of:: Lidar\n- #### OWL Axioms\n-",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "RB-0163",
       "robotics"
@@ -4882,7 +4832,7 @@
   {
     "id": "Light Node",
     "title": "Light Node",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: SceneGraph via has-part\n- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: NetworkLayer, VerificationLayer\n- #### Relationships\nid:: light-node-relationships\n- is-subclass-of:: Bl",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: SceneGraph via has-part\n-",
     "tags": [
       "BC-0074",
       "metaverse"
@@ -4942,7 +4892,7 @@
   {
     "id": "Machine Learning Technique",
     "title": "Machine Learning Technique",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some MachineLearning\n- #### CrossDomainBridges\n- bridges-to:: MachineLearning via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some MachineLearning\n- #### Relationships\n- is-subclass-of:: Machine Learning\n- #### OWL Axioms\n-\n- ## About Machine Learning Technique\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerati",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: MachineLearning via is-subclass-of\n-",
     "tags": [
       "AI-0828",
       "ai"
@@ -4972,7 +4922,7 @@
   {
     "id": "Manipulator",
     "title": "Manipulator",
-    "content": "- #### OWL Restrictions\n- hasKinematicChain some KinematicStructure\n- is-part-of some RobotRb0001\n- definesWorkspace some WorkspaceVolume\n- hasEndEffector some EndEffector\n- #### CrossDomainBridges\n- bridges-to:: WorkspaceVolume via definesWorkspace\n- bridges-to:: KinematicStructure via hasKinematicChain\n- #### OWL Restrictions\n- hasKinematicChain some KinematicStructure\n- is-part-of some RobotRb0001\n- definesWorkspace some WorkspaceVolume\n- hasEndEffector some EndEffector\n- #### Relationships\ni",
+    "content": "- #### OWL Restrictions\n- hasKinematicChain some KinematicStructure\n- is-part-of some RobotRb0001\n- definesWorkspace some WorkspaceVolume\n- hasEndEffector some EndEffector\n- #### CrossDomainBridges\n- bridges-to:: WorkspaceVolume via definesWorkspace\n- bridges-to:: KinematicStructure via hasKinematicChain\n-",
     "tags": [
       "RB-0003",
       "robotics"
@@ -4984,10 +4934,10 @@
     "title": "Market Surveillance Authority",
     "content": "- ### Original Content\ncollapsed:: true\n-\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in virtual collaboration, training, and digital twins\n- UK companies increasingly active in metaverse development and immersive technologies\n- Technical capabilities\n- Real-time rendering at p",
     "tags": [
-      "mv-1761742247943",
+      "AI-0512",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247943"
+    "ontology_id": "AI-0512"
   },
   {
     "id": "Marketplace",
@@ -5022,7 +4972,7 @@
   {
     "id": "Meeting Transcription",
     "title": "Meeting Transcription",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some SpeechRecognition\n- #### CrossDomainBridges\n- bridges-to:: SpeechRecognition via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some SpeechRecognition\n- #### Relationships\n- is-subclass-of:: Speech Recognition\n- #### OWL Axioms\n-\n- ## About Meeting Transcription\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration acceler",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: SpeechRecognition via is-subclass-of\n-",
     "tags": [
       "AI-0855",
       "ai"
@@ -5042,7 +4992,7 @@
   {
     "id": "Mempool",
     "title": "Mempool",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: Bitcoin via has-part\n- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: mempool-relationships\n- is-subclass-of:: ",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: Bitcoin via has-part\n-",
     "tags": [
       "BC-0019",
       "blockchain"
@@ -5172,7 +5122,7 @@
   {
     "id": "Miner",
     "title": "Miner",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: miner-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: miner-owl-axioms\ncollapsed:: true\n-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0054",
       "blockchain"
@@ -5182,7 +5132,7 @@
   {
     "id": "Mining",
     "title": "Mining",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: mining-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- relates-to:: Proof of Work, Hash Rate, Bitcoin, Energy, Renewable Energy\n- ",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0053",
       "blockchain"
@@ -5192,7 +5142,7 @@
   {
     "id": "Minting",
     "title": "Minting",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Tokenomics\n- #### OWL Restrictions\n- is-subclass-of some Tokenomics\n- #### Relationships\n- is-subclass-of:: Tokenomics\n- #### OWL Axioms\n-",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "BC-0532",
       "blockchain"
@@ -5282,7 +5232,7 @@
   {
     "id": "Model",
     "title": "Model",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### Relationships\n- is-subclass-of:: Artificial Intelligence\n- #### OWL Axioms\n-\n- ## About Model\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption gro",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0829",
       "artificial-intelligence"
@@ -5292,7 +5242,7 @@
   {
     "id": "Module",
     "title": "Module",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Component\n- #### OWL Restrictions\n- is-subclass-of some Component\n- #### Relationships\n- is-subclass-of:: Component\n- #### OWL Axioms\n-\n- ## About Module\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in virtual collaboration, training",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0845",
       "artificial-intelligence"
@@ -5322,7 +5272,7 @@
   {
     "id": "Multi Head Attention",
     "title": "Multi-Head Attention",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some AttentionMechanism\n- #### OWL Restrictions\n- is-subclass-of some AttentionMechanism\n- #### Relationships\n- is-subclass-of:: Attention Mechanism\n- #### OWL Axioms\n-\n- ## About Multi-Head Attention\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption ",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0810",
       "ai"
@@ -5332,7 +5282,7 @@
   {
     "id": "Multimodal Understanding",
     "title": "Multimodal Understanding",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### Relationships\n- is-subclass-of:: Artificial Intelligence\n- #### OWL Axioms\n-\n- ## About Multimodal Understanding\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Ente",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0867",
       "ai"
@@ -5342,7 +5292,7 @@
   {
     "id": "Multirotor",
     "title": "Multirotor UAV",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some AerialRobot\n- #### OWL Restrictions\n- is-subclass-of some AerialRobot\n- #### Relationships\n- is-subclass-of:: Aerial Robot\n- #### OWL Axioms\n-",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "RB-0121",
       "robotics"
@@ -5394,10 +5344,10 @@
     "title": "NFT",
     "content": "-",
     "tags": [
-      "mv-1761742247949",
-      "metaverse"
+      "BC-0141",
+      "blockchain"
     ],
-    "ontology_id": "mv-1761742247949"
+    "ontology_id": "BC-0141"
   },
   {
     "id": "Narrative Design Ontology",
@@ -5432,7 +5382,7 @@
   {
     "id": "Network Latency",
     "title": "Network Latency",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-from:: VoiceInteraction via depends-on\n- #### OWL Restrictions\n- is-subclass-of some Networkcomponent\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: network-latency-relationships\n- is-subclass-of:: Blockch",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-from:: VoiceInteraction via depends-on\n-",
     "tags": [
       "BC-0081",
       "metaverse"
@@ -5442,7 +5392,7 @@
   {
     "id": "Network Synchronization",
     "title": "Network Synchronization",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Consensusprotocol\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Consensusprotocol\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: network-synchronization-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: network-synchronization-owl-axioms\nco",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0057",
       "metaverse"
@@ -5462,7 +5412,7 @@
   {
     "id": "Neural 3D Generation",
     "title": "Neural 3D Generation",
-    "content": "- #### OWL Restrictions\n- enables some DigitalTwinGeneration\n- has-part some GenerativeModel\n- enables some RapidPrototyping\n- has-part some RenderingEngine\n- has-part some dRepresentation\n- implements some DiffusionModel\n- enables some Automated3dModeling\n- implements some Vae\n- has-part some TrainingPipeline\n- implements some Gan\n- requires some CameraParameters\n- is-subclass-of some ProceduralContentGeneration\n- requires some dAssetDataset\n- is-subclass-of some dContentGeneration\n- implements",
+    "content": "- #### OWL Restrictions\n- enables some DigitalTwinGeneration\n- has-part some GenerativeModel\n- enables some RapidPrototyping\n- has-part some RenderingEngine\n- has-part some dRepresentation\n- implements some DiffusionModel\n- enables some Automated3dModeling\n- implements some Vae\n- has-part some TrainingPipeline\n- implements some Gan\n- requires some CameraParameters\n- requires some dAssetDataset\n- implements some GaussianSplatting\n- enables some VirtualEnvironmentCreation\n- requires some GpuComput",
     "tags": [
       "AI-0700",
       "ai"
@@ -5472,7 +5422,7 @@
   {
     "id": "Neural Network Architecture",
     "title": "Neural Network Architecture",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### Relationships\n- is-subclass-of:: Artificial Intelligence\n- #### OWL Axioms\n-\n- ## About Neural Network Architecture\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- E",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0803",
       "ai"
@@ -5484,10 +5434,10 @@
     "title": "NeuralNetwork",
     "content": "-",
     "tags": [
-      "mv-1761742247950",
-      "metaverse"
+      "AI-0501",
+      "artificial-intelligence"
     ],
-    "ontology_id": "mv-1761742247950"
+    "ontology_id": "AI-0501"
   },
   {
     "id": "Nft Standards",
@@ -5502,7 +5452,7 @@
   {
     "id": "Non Genesis Block",
     "title": "Non Genesis Block",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Block\n- #### OWL Restrictions\n- is-subclass-of some Block\n- #### Relationships\n- is-subclass-of:: Block\n- #### OWL Axioms\n-\n- ## About Non Genesis Block\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in virtual collaboration, training,",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "BC-0568",
       "metaverse"
@@ -5522,7 +5472,7 @@
   {
     "id": "Nonce",
     "title": "Nonce",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: nonce-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: nonce-owl-axioms\ncollapsed:: true\n-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0034",
       "blockchain"
@@ -5552,7 +5502,7 @@
   {
     "id": "Octocopter",
     "title": "Octocopter",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Multirotor\n- #### CrossDomainBridges\n- bridges-to:: Multirotor via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Multirotor\n- #### Relationships\n- is-subclass-of:: Multirotor\n- #### OWL Axioms\n-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Multirotor via is-subclass-of\n-",
     "tags": [
       "RB-0124",
       "robotics"
@@ -5562,7 +5512,7 @@
   {
     "id": "Ontology in LLM Operations",
     "title": "Ontology in LLM Operations",
-    "content": "- #### OWL Restrictions\n- supports some AiGovernance\n- related-to some KnowledgeGraph\n- is-subclass-of some KnowledgeRepresentation\n- enables some ExplainableAi\n- related-to some RetrievalAugmentedGenerationRag\n- related-to some LargeLanguageModel\n- #### CrossDomainBridges\n- bridges-to:: LargeLanguageModel via related-to\n- bridges-to:: RetrievalAugmentedGenerationRag via related-to\n- bridges-to:: KnowledgeRepresentation via is-subclass-of\n- bridges-to:: KnowledgeGraph via related-to\n- #### OWL R",
+    "content": "- #### OWL Restrictions\n- supports some AiGovernance\n- related-to some KnowledgeGraph\n- enables some ExplainableAi\n- related-to some RetrievalAugmentedGenerationRag\n- related-to some LargeLanguageModel\n- #### CrossDomainBridges\n- bridges-to:: LargeLanguageModel via related-to\n- bridges-to:: RetrievalAugmentedGenerationRag via related-to\n- bridges-to:: KnowledgeRepresentation via is-subclass-of\n- bridges-to:: KnowledgeGraph via related-to\n-",
     "tags": [
       "AI-0878",
       "ai"
@@ -5572,7 +5522,7 @@
   {
     "id": "Opcodes",
     "title": "Opcodes",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: opcodes-relationships\n- is-subclass-of:: Blockchain Entity, DistributedDataStru",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n-",
     "tags": [
       "BC-0024",
       "blockchain"
@@ -5608,7 +5558,7 @@
   {
     "id": "Optimization Algorithm",
     "title": "Optimization Algorithm",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Algorithm\n- #### CrossDomainBridges\n- bridges-from:: GenerativeDesignTool via depends-on\n- #### OWL Restrictions\n- is-subclass-of some Algorithm\n- #### Relationships\n- is-subclass-of:: Algorithm\n- #### OWL Axioms\n-\n- ## About Optimization Algorithm\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralise",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-from:: GenerativeDesignTool via depends-on\n-",
     "tags": [
       "AI-0866",
       "ai"
@@ -5618,7 +5568,7 @@
   {
     "id": "Output",
     "title": "Output",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: output-relationships\n- is-subclass-of:: Blockchain Entity, DistributedDataStruc",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n-",
     "tags": [
       "BC-0022",
       "blockchain"
@@ -5670,15 +5620,15 @@
     "title": "PathPlanning",
     "content": "-",
     "tags": [
-      "mv-1761742247951",
+      "MV-0046",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247951"
+    "ontology_id": "MV-0046"
   },
   {
     "id": "Pathfinding Algorithm",
     "title": "Pathfinding Algorithm",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Algorithm\n- #### OWL Restrictions\n- is-subclass-of some Algorithm\n- #### Relationships\n- is-subclass-of:: Algorithm\n- #### OWL Axioms\n-\n- ## About Pathfinding Algorithm\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in virtual collabor",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0851",
       "ai"
@@ -5698,7 +5648,7 @@
   {
     "id": "Peer-to-Peer Network",
     "title": "Peer-to-Peer Network",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: DistributedLedgerTechnologyDlt via requires\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: peer-to-peer-network-relationships\n- is-subc",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Networkcomponent via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: DistributedLedgerTechnologyDlt via requires\n-",
     "tags": [
       "BC-0075",
       "metaverse"
@@ -5730,10 +5680,10 @@
     "title": "Persistence",
     "content": "-",
     "tags": [
-      "mv-1761742247951",
+      "MV-0047",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247951"
+    "ontology_id": "MV-0047"
   },
   {
     "id": "Photogrammetry",
@@ -5808,7 +5758,7 @@
   {
     "id": "Pool Share",
     "title": "Pool Share",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Consensusprotocol\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Consensusprotocol\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: pool-share-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: pool-share-owl-axioms\ncollapsed:: true\n-\n- ## Abou",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0066",
       "metaverse"
@@ -5820,10 +5770,10 @@
     "title": "Portability",
     "content": "-",
     "tags": [
-      "mv-1761742247952",
+      "MV-0048",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247952"
+    "ontology_id": "MV-0048"
   },
   {
     "id": "Post-Quantum Cryptography",
@@ -5888,7 +5838,7 @@
   {
     "id": "Pretrained Model",
     "title": "Pretrained Model",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Model\n- #### OWL Restrictions\n- is-subclass-of some Model\n- #### Relationships\n- is-subclass-of:: Model\n- #### OWL Axioms\n-\n- ## About Pretrained Model\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in virtual collaboration, training, ",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0875",
       "ai"
@@ -5918,7 +5868,7 @@
   {
     "id": "Private Key",
     "title": "Private Key",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: private-key-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: private-key-owl-axioms\ncollapsed::",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0036",
       "blockchain"
@@ -5964,7 +5914,7 @@
   {
     "id": "Proof Of Authority",
     "title": "Proof of Authority",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some ProofBasedConsensus\n- #### OWL Restrictions\n- is-subclass-of some ProofBasedConsensus\n- #### Relationships\n- is-subclass-of:: Proof Based Consensus\n- also-known-as:: PoA\n- #### OWL Axioms\n-\n- ## About Proof of Authority\n**Proof of Authority (PoA)** is a Consensus Mechanism where transaction validation rights are granted to pre-approved validators with verified real-world identities. Unlike Proof of Work or Proof of Stake, PoA relies on reputation and",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "BC-0547",
       "metaverse"
@@ -5974,7 +5924,7 @@
   {
     "id": "ProofOfWork",
     "title": "Proof of Work",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: Bitcoin via implements\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Consensusprotocol\n- implementedInLayer:: ProtocolLayer\n- #### Relationships\nid:: proof-of-work-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: proof-o",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: Bitcoin via implements\n-",
     "tags": [
       "BC-0052",
       "blockchain"
@@ -5984,7 +5934,7 @@
   {
     "id": "Property",
     "title": "Property",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some MachineLearning\n- is-subclass-of some Component\n- is-subclass-of some ArtificialIntelligence\n- is-subclass-of some AiGovernance\n- is-subclass-of some Component\n- is-subclass-of some ArtificialIntelligence\n- is-subclass-of some ArtificialIntelligence\n- is-subclass-of some MachineLearning\n- is-subclass-of some MachineLearning\n- is-subclass-of some ArtificialIntelligence\n- is-subclass-of some ArtificialIntelligence\n- is-subclass-of some ArtificialIntell",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: MachineLearning via is-subclass-of\n- bridges-to:: MachineLearning via is-subclass-of\n- bridges-to:: System via is-subclass-of\n- bridges-to:: MachineLearning via is-subclass-of\n-",
     "tags": [
       "AI-0846",
       "artificial-intelligence"
@@ -6054,7 +6004,7 @@
   {
     "id": "Public Key",
     "title": "Public Key",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Cryptographicprimitive\n- is-subclass-of some BlockchainEntity\n- blockchainRelevance:: High\n- lastValidated:: 2025-11-14\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: public-key-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0037",
       "blockchain"
@@ -6066,15 +6016,15 @@
     "title": "PublicBlockchain",
     "content": "-",
     "tags": [
-      "mv-1761742247959",
+      "MV-0049",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247959"
+    "ontology_id": "MV-0049"
   },
   {
     "id": "Quadcopter",
     "title": "Quadcopter",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Multirotor\n- #### CrossDomainBridges\n- bridges-to:: Multirotor via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some Multirotor\n- #### Relationships\n- is-subclass-of:: Multirotor\n- #### OWL Axioms\n-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Multirotor via is-subclass-of\n-",
     "tags": [
       "RB-0122",
       "robotics"
@@ -6124,7 +6074,7 @@
   {
     "id": "RB-0001-robot",
     "title": "Robot",
-    "content": "- #### OWL Restrictions\n- hasSensingCapability some SensorSystem\n- is-part-of some Autonomousagent\n- hasMechanicalStructure some RobotFrame\n- hasPowerSource some PowerSupply\n- is-part-of some Mechatronicsystem\n- hasControlSystem some RobotController\n- #### CrossDomainBridges\n- bridges-to:: PowerSupply via hasPowerSource\n- bridges-to:: Autonomousagent via is-part-of\n- bridges-to:: Mechatronicsystem via is-part-of\n- #### OWL Restrictions\n- hasSensingCapability some SensorSystem\n- is-part-of some A",
+    "content": "- #### OWL Restrictions\n- hasSensingCapability some SensorSystem\n- is-part-of some Autonomousagent\n- hasMechanicalStructure some RobotFrame\n- hasPowerSource some PowerSupply\n- is-part-of some Mechatronicsystem\n- hasControlSystem some RobotController\n- #### CrossDomainBridges\n- bridges-to:: PowerSupply via hasPowerSource\n- bridges-to:: Autonomousagent via is-part-of\n- bridges-to:: Mechatronicsystem via is-part-of\n-",
     "tags": [
       "RB-0001",
       "robotics"
@@ -6134,7 +6084,7 @@
   {
     "id": "RB-0003-manipulator",
     "title": "Manipulator",
-    "content": "- #### OWL Restrictions\n- hasKinematicChain some KinematicStructure\n- is-part-of some RobotRb0001\n- definesWorkspace some WorkspaceVolume\n- hasEndEffector some EndEffector\n- #### CrossDomainBridges\n- bridges-to:: WorkspaceVolume via definesWorkspace\n- bridges-to:: KinematicStructure via hasKinematicChain\n- #### OWL Restrictions\n- hasKinematicChain some KinematicStructure\n- is-part-of some RobotRb0001\n- definesWorkspace some WorkspaceVolume\n- hasEndEffector some EndEffector\n- #### Relationships\ni",
+    "content": "- #### OWL Restrictions\n- hasKinematicChain some KinematicStructure\n- is-part-of some RobotRb0001\n- definesWorkspace some WorkspaceVolume\n- hasEndEffector some EndEffector\n- #### CrossDomainBridges\n- bridges-to:: WorkspaceVolume via definesWorkspace\n- bridges-to:: KinematicStructure via hasKinematicChain\n-",
     "tags": [
       "RB-0003",
       "robotics"
@@ -6144,7 +6094,7 @@
   {
     "id": "RB-0004-humanoid-robot",
     "title": "Humanoid Robot",
-    "content": "- #### OWL Restrictions\n- is-part-of some MobilerobotRb0002\n- performsBipedalLocomotion some WalkingGait\n- is-part-of some RobotRb0001\n- #### CrossDomainBridges\n- bridges-to:: WalkingGait via performsBipedalLocomotion\n- #### OWL Restrictions\n- is-part-of some MobilerobotRb0002\n- performsBipedalLocomotion some WalkingGait\n- is-part-of some RobotRb0001\n- #### Relationships\nid:: humanoid-robot-relationships\n- is-part-of:: Robot (RB-0001), MobileRobot (RB-0002)\n- #### OWL Axioms\nid:: humanoid-robot-",
+    "content": "- #### OWL Restrictions\n- is-part-of some MobilerobotRb0002\n- performsBipedalLocomotion some WalkingGait\n- is-part-of some RobotRb0001\n- #### CrossDomainBridges\n- bridges-to:: WalkingGait via performsBipedalLocomotion\n-",
     "tags": [
       "RB-0004",
       "robotics"
@@ -6154,22 +6104,12 @@
   {
     "id": "RB-0005-industrial-robot",
     "title": "Industrial Robot",
-    "content": "- #### OWL Restrictions\n- is-part-of some ManipulatorRb0003\n- operatesIn some IndustrialEnvironment\n- #### CrossDomainBridges\n- bridges-to:: ManipulatorRb0003 via is-part-of\n- #### OWL Restrictions\n- is-part-of some ManipulatorRb0003\n- operatesIn some IndustrialEnvironment\n- #### Relationships\nid:: industrial-robot-relationships\n- is-part-of:: Manipulator (RB-0003)\n- #### OWL Axioms\nid:: industrial-robot-owl-axioms\ncollapsed:: true\n-",
+    "content": "- #### OWL Restrictions\n- is-part-of some ManipulatorRb0003\n- operatesIn some IndustrialEnvironment\n- #### CrossDomainBridges\n- bridges-to:: ManipulatorRb0003 via is-part-of\n-",
     "tags": [
       "RB-0005",
       "robotics"
     ],
     "ontology_id": "RB-0005"
-  },
-  {
-    "id": "RESEARCH_SUMMARY",
-    "title": "RESEARCH_SUMMARY",
-    "content": "-",
-    "tags": [
-      "mv-1761742247960",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247960"
   },
   {
     "id": "RGB and Client Side Validation",
@@ -6244,7 +6184,7 @@
   {
     "id": "Redress Procedure",
     "title": "Redress Procedure",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some AiGovernancePrinciple\n- #### OWL Restrictions\n- is-subclass-of some AiGovernancePrinciple\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: redress-procedure-relationships\n- is-subclass-of:: AI Governance Principle\n- #### OWL Axioms\nid:: redress-procedure-owl-axioms\ncollapsed:: true\n-\n- ## About Redress Procedure\nid:: redress-procedure-about\n- Redress Procedures represent a critical safeguard ensuring AI systems remain accountable to t",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "PC-0014",
       "ai-grounded"
@@ -6264,7 +6204,7 @@
   {
     "id": "Regulatory Compliance",
     "title": "Regulatory Compliance",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some AiGovernancePrinciple\n- #### OWL Restrictions\n- is-subclass-of some AiGovernancePrinciple\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: regulatory-compliance-relationships\n- is-subclass-of:: AI Governance Principle\n- #### OWL Axioms\nid:: regulatory-compliance-owl-axioms\ncollapsed:: true\n-\n- ## About Regulatory Compliance\nid:: regulatory-compliance-about\n- Regulatory Compliance for AI systems represents the intersection of technolog",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "PC-0012",
       "metaverse"
@@ -6274,7 +6214,7 @@
   {
     "id": "Reinforcement Learning Algorithm",
     "title": "Reinforcement Learning Algorithm",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some MachineLearning\n- #### OWL Restrictions\n- is-subclass-of some MachineLearning\n- #### Relationships\n- is-subclass-of:: Machine Learning\n- #### OWL Axioms\n-\n- ## About Reinforcement Learning Algorithm\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adopti",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0804",
       "ai"
@@ -6286,10 +6226,10 @@
     "title": "ReinforcementLearning",
     "content": "-",
     "tags": [
-      "mv-1761742247961",
-      "metaverse"
+      "AI-0503",
+      "artificial-intelligence"
     ],
-    "ontology_id": "mv-1761742247961"
+    "ontology_id": "AI-0503"
   },
   {
     "id": "Renewable Energy Certificates",
@@ -6346,10 +6286,10 @@
     "title": "Resilience Metric",
     "content": "-",
     "tags": [
-      "mv-1761742247962",
+      "MV-0051",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247962"
+    "ontology_id": "MV-0051"
   },
   {
     "id": "Resolution",
@@ -6460,7 +6400,7 @@
   {
     "id": "Runtime Inspection",
     "title": "Runtime Inspection",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some AiGovernance\n- #### OWL Restrictions\n- is-subclass-of some AiGovernance\n- #### Relationships\n- is-subclass-of:: Ai Governance\n- #### OWL Axioms\n-\n- ## About Runtime Inspection\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in virtual c",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0862",
       "ai"
@@ -6482,20 +6422,10 @@
     "title": "SLAM",
     "content": "-",
     "tags": [
-      "mv-1761742247966",
+      "MV-0052",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247966"
-  },
-  {
-    "id": "SPARQL-EXAMPLES",
-    "title": "SPARQL EXAMPLES",
-    "content": "-",
-    "tags": [
-      "mv-1761742247966",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247966"
+    "ontology_id": "MV-0052"
   },
   {
     "id": "Safeguarding",
@@ -6530,7 +6460,7 @@
   {
     "id": "Safety Measure",
     "title": "Safety Measure",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some AiGovernance\n- #### OWL Restrictions\n- is-subclass-of some AiGovernance\n- #### Relationships\n- is-subclass-of:: Ai Governance\n- #### OWL Axioms\n-\n- ## About Safety Measure\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in virtual colla",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0838",
       "ai"
@@ -6560,7 +6490,7 @@
   {
     "id": "Salt",
     "title": "Salt",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: salt-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: salt-owl-axioms\ncollapsed:: true\n-",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0049",
       "blockchain"
@@ -6580,7 +6510,7 @@
   {
     "id": "Schnorr Signature",
     "title": "Schnorr Signature",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Cryptographicprimitive\n- blockchainRelevance:: Critical\n- lastValidated:: 2025-11-14\n- qualityScore:: 0.98\n- bitcoinSpecific:: true\n- implementedInLayer:: CryptographicLayer, SignatureLayer, PrivacyLayer\n- #### Relationships\nid:: ",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n-",
     "tags": [
       "BC-0041",
       "blockchain"
@@ -6590,7 +6520,7 @@
   {
     "id": "Script",
     "title": "Script",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-from:: Bitcoin via has-part\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- implementedInLayer:: TransactionLayer, ConsensusLayer, ExecutionLayer\n- #### Relationships\nid:: script-r",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-from:: Bitcoin via has-part\n-",
     "tags": [
       "BC-0023",
       "blockchain"
@@ -6632,10 +6562,10 @@
     "title": "SensorFusion",
     "content": "-",
     "tags": [
-      "mv-1761742247968",
+      "MV-0054",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247968"
+    "ontology_id": "MV-0054"
   },
   {
     "id": "Sentiment Analysis",
@@ -6680,7 +6610,7 @@
   {
     "id": "Smart Contract Platform",
     "title": "Smart Contract Platform",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainNetwork\n- #### CrossDomainBridges\n- bridges-from:: VirtualSecuritiesOfferingVso via requires\n- bridges-from:: SmartRoyaltyContract via requires\n- bridges-from:: TransactionStandard via depends-on\n- bridges-from:: SocialTokenEconomy via requires\n- bridges-from:: LiquidityPool via requires\n- #### OWL Restrictions\n- is-subclass-of some BlockchainNetwork\n- #### Relationships\n- is-subclass-of:: Blockchain Network\n- #### OWL Axioms\n-\n- ## About S",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-from:: VirtualSecuritiesOfferingVso via requires\n- bridges-from:: SmartRoyaltyContract via requires\n- bridges-from:: TransactionStandard via depends-on\n- bridges-from:: SocialTokenEconomy via requires\n- bridges-from:: LiquidityPool via requires\n-",
     "tags": [
       "BC-0507",
       "metaverse"
@@ -6732,25 +6662,25 @@
     "title": "SocialVR",
     "content": "-",
     "tags": [
-      "mv-1761742247969",
+      "MV-0055",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247969"
+    "ontology_id": "MV-0055"
   },
   {
     "id": "SoftRobotics",
     "title": "SoftRobotics",
     "content": "-",
     "tags": [
-      "mv-1761742247969",
+      "MV-0056",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247969"
+    "ontology_id": "MV-0056"
   },
   {
     "id": "Solana",
     "title": "Solana",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some SmartContractPlatform\n- #### OWL Restrictions\n- is-subclass-of some SmartContractPlatform\n- #### Relationships\n- is-subclass-of:: Smart Contract Platform\n- #### OWL Axioms\n-",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "BC-0566",
       "blockchain"
@@ -6760,7 +6690,7 @@
   {
     "id": "Spatial Ai",
     "title": "Spatial AI",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### Relationships\n- is-subclass-of:: Artificial Intelligence\n- #### OWL Axioms\n-\n- ## About Spatial AI\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoptio",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0871",
       "ai"
@@ -6820,7 +6750,7 @@
   {
     "id": "Spatial Mapping",
     "title": "Spatial Mapping",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some SpatialAi\n- #### CrossDomainBridges\n- bridges-from:: SpatialComputing via has-part\n- bridges-from:: AugmentedRealityAr via requires\n- #### OWL Restrictions\n- is-subclass-of some SpatialAi\n- #### Relationships\n- is-subclass-of:: Spatial Ai\n- #### OWL Axioms\n-\n- ## About Spatial Mapping\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integ",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-from:: SpatialComputing via has-part\n- bridges-from:: AugmentedRealityAr via requires\n-",
     "tags": [
       "AI-0854",
       "ai"
@@ -6832,10 +6762,10 @@
     "title": "SpatialComputing",
     "content": "-",
     "tags": [
-      "mv-1761742247973",
+      "MV-0006",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247973"
+    "ontology_id": "MV-0006"
   },
   {
     "id": "Speed And Separation Monitoring",
@@ -6863,7 +6793,7 @@
     "content": "- #### Relationships\nid:: stablecoin-relationships\n- is-part-of:: Crypto Token, Virtual Currency, Digital Asset\n- requires:: Blockchain, Smart Contract, Collateral Reserves, Price Oracle\n- depends-on:: Peg Mechanism, Reserve Asset, Stabilization Algorithm\n- enables:: Price Stability, Cross-Border Transactions, Virtual Commerce, Value Transfer\n- #### OWL Axioms\nid:: stablecoin-owl-axioms\ncollapsed:: true\n-\n- ## About Stablecoin\nid:: stablecoin-about\n- Stablecoins are a category of cryptocurrencie",
     "tags": [
       "20190",
-      "metaverse"
+      "blockchain"
     ],
     "ontology_id": "20190"
   },
@@ -6942,15 +6872,15 @@
     "title": "SwarmRobotics",
     "content": "-",
     "tags": [
-      "mv-1761742247974",
-      "metaverse"
+      "RB-0107",
+      "robotics"
     ],
-    "ontology_id": "mv-1761742247974"
+    "ontology_id": "RB-0107"
   },
   {
     "id": "Sybil Attack",
     "title": "Sybil Attack",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Networkcomponent\n- blockchainRelevance:: High\n- lastValidated:: 2025-11-14\n- implementedInLayer:: SecurityLayer\n- #### Relationships\nid:: sybil-attack-relationships\n- is-subclass-of:: B",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Networkcomponent via is-subclass-of\n-",
     "tags": [
       "BC-0078",
       "blockchain"
@@ -6960,7 +6890,7 @@
   {
     "id": "Symbolic Reasoning",
     "title": "Symbolic Reasoning",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### Relationships\n- is-subclass-of:: Artificial Intelligence\n- #### OWL Axioms\n-\n- ## About Symbolic Reasoning\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0865",
       "ai"
@@ -6990,7 +6920,7 @@
   {
     "id": "System",
     "title": "System",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### CrossDomainBridges\n- bridges-from:: IdentificationSystem via is-subclass-of\n- bridges-from:: Property via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### Relationships\n- is-subclass-of:: Artificial Intelligence\n- #### OWL Axioms\n-\n- ## About System\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperabi",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-from:: IdentificationSystem via is-subclass-of\n- bridges-from:: Property via is-subclass-of\n-",
     "tags": [
       "AI-0831",
       "artificial-intelligence"
@@ -7280,7 +7210,7 @@
   {
     "id": "Technique",
     "title": "Technique",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### Relationships\n- is-subclass-of:: Artificial Intelligence\n- #### OWL Axioms\n-\n- ## About Technique\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0832",
       "artificial-intelligence"
@@ -7330,7 +7260,7 @@
   {
     "id": "Text To Image",
     "title": "Text-to-Image",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some GenerativeAi\n- #### OWL Restrictions\n- is-subclass-of some GenerativeAi\n- #### Relationships\n- is-subclass-of:: Generative Ai\n- #### OWL Axioms\n-\n- ## About Text-to-Image\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in virtual collab",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0857",
       "ai"
@@ -7340,7 +7270,7 @@
   {
     "id": "Text To Speech",
     "title": "Text-to-Speech",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some NaturalLanguageProcessing\n- #### CrossDomainBridges\n- bridges-from:: VoiceInteraction via has-part\n- #### OWL Restrictions\n- is-subclass-of some NaturalLanguageProcessing\n- #### Relationships\n- is-subclass-of:: Natural Language Processing\n- #### OWL Axioms\n-\n- ## About Text-to-Speech\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integr",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-from:: VoiceInteraction via has-part\n-",
     "tags": [
       "AI-0850",
       "ai"
@@ -7350,7 +7280,7 @@
   {
     "id": "Text To3d",
     "title": "Text-to-3D",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some GenerativeAi\n- #### OWL Restrictions\n- is-subclass-of some GenerativeAi\n- #### Relationships\n- is-subclass-of:: Generative Ai\n- #### OWL Axioms\n-\n- ## About Text-to-3D\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in virtual collabora",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0858",
       "ai"
@@ -7360,7 +7290,7 @@
   {
     "id": "Third Party Vulnerability",
     "title": "Third-Party Vulnerability",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Risk\n- #### OWL Restrictions\n- is-subclass-of some Risk\n- #### Relationships\n- is-subclass-of:: Risk\n- #### OWL Axioms\n-\n- ## About Third-Party Vulnerability\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in virtual collaboration, trai",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0864",
       "ai"
@@ -7380,7 +7310,7 @@
   {
     "id": "Timestamp",
     "title": "Timestamp",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: UserConsentToken via has-part\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: timestamp-relationships\n- is-sub",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: UserConsentToken via has-part\n-",
     "tags": [
       "BC-0017",
       "blockchain"
@@ -7440,7 +7370,7 @@
   {
     "id": "Toxicity Detection",
     "title": "Toxicity Detection",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some ContentModeration\n- #### CrossDomainBridges\n- bridges-to:: ContentModeration via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some ContentModeration\n- #### Relationships\n- is-subclass-of:: Content Moderation\n- #### OWL Axioms\n-\n- ## About Toxicity Detection\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerati",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: ContentModeration via is-subclass-of\n-",
     "tags": [
       "AI-0859",
       "ai"
@@ -7450,7 +7380,7 @@
   {
     "id": "Traceability Mechanism",
     "title": "Traceability Mechanism",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some AiGovernancePrinciple\n- #### OWL Restrictions\n- is-subclass-of some AiGovernancePrinciple\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: traceability-mechanism-relationships\n- is-subclass-of:: AI Governance Principle\n- #### OWL Axioms\nid:: traceability-mechanism-owl-axioms\ncollapsed:: true\n-\n- ## About Traceability Mechanism\nid:: traceability-mechanism-about\n- Traceability Mechanisms serve as the foundational infrastructure for AI a",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "PC-0013",
       "metaverse"
@@ -7470,7 +7400,7 @@
   {
     "id": "Transaction Confirmation",
     "title": "Transaction Confirmation",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- blockchainRelevance:: High\n- lastValidated:: 2025-11-14\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: transaction-confirmat",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n-",
     "tags": [
       "BC-0020",
       "blockchain"
@@ -7480,7 +7410,7 @@
   {
     "id": "Transaction Pool",
     "title": "Transaction Pool",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- #### OWL Restrictions\n- is-subclass-of some BlockchainEntity\n- is-subclass-of some Distributeddatastructure\n- blockchainRelevance:: High\n- lastValidated:: 2025-11-14\n- implementedInLayer:: ConceptualLayer\n- #### Relationships\nid:: transaction-pool-rela",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-to:: Distributeddatastructure via is-subclass-of\n-",
     "tags": [
       "BC-0018",
       "blockchain"
@@ -7500,7 +7430,7 @@
   {
     "id": "Transaction",
     "title": "Transaction",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: ValueTransfer via implemented-by\n- bridges-from:: Bitcoin via has-part\n- #### OWL Restrictions\n- is-subclass-of some Distributeddatastructure\n- is-subclass-of some BlockchainEntity\n- implementedInLayer:: ConceptualLayer\n- #### Relationsh",
+    "content": "- #### OWL Restrictions\n- #### CrossDomainBridges\n- bridges-to:: Distributeddatastructure via is-subclass-of\n- bridges-to:: BlockchainEntity via is-subclass-of\n- bridges-from:: ValueTransfer via implemented-by\n- bridges-from:: Bitcoin via has-part\n-",
     "tags": [
       "BC-0006",
       "blockchain"
@@ -7520,7 +7450,7 @@
   {
     "id": "Transformer",
     "title": "Transformer",
-    "content": "- ### Primary Definition\nA **Transformer** is a neural network architecture relying on self-attention mechanisms rather than recurrence or convolution. Transformers process entire sequences in parallel, enabling efficient training on large datasets and serving as the foundation for most modern large language models.\n- maturity:: draft\n- owl:class:: mv:Transformer\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: MetaverseDomain",
+    "content": "- ### Primary Definition\nA **Transformer** is a neural network architecture relying on self-attention mechanisms rather than recurrence or convolution. Transformers process entire sequences in parallel, enabling efficient training on large datasets and serving as the foundation for most modern large language models.\n- maturity:: mature\n- owl:class:: ai:Transformer\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: MetaverseDomain",
     "tags": [
       "AI-0037",
       "metaverse"
@@ -7616,36 +7546,6 @@
       "metaverse"
     ],
     "ontology_id": "20274"
-  },
-  {
-    "id": "VALIDATION_REPORT",
-    "title": "VALIDATION_REPORT",
-    "content": "-",
-    "tags": [
-      "mv-1761742247976",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247976"
-  },
-  {
-    "id": "VERIFICATION-REPORT",
-    "title": "VERIFICATION REPORT",
-    "content": "-",
-    "tags": [
-      "mv-1761742247978",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247978"
-  },
-  {
-    "id": "VERIFICATION",
-    "title": "VERIFICATION",
-    "content": "-",
-    "tags": [
-      "mv-1761742247978",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247978"
   },
   {
     "id": "Validation Process",
@@ -7822,10 +7722,10 @@
     "title": "VirtualWorld",
     "content": "-",
     "tags": [
-      "mv-1761742247979",
+      "MV-0003",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247979"
+    "ontology_id": "MV-0003"
   },
   {
     "id": "Vision System",
@@ -7836,16 +7736,6 @@
       "robotics"
     ],
     "ontology_id": "RB-0068"
-  },
-  {
-    "id": "VisioningLab-Property-Crosswalk",
-    "title": "VisioningLab Property Crosswalk",
-    "content": "-",
-    "tags": [
-      "\u2192",
-      "metaverse"
-    ],
-    "ontology_id": "\u2192"
   },
   {
     "id": "Visual Servoing",
@@ -7900,7 +7790,7 @@
   {
     "id": "Workforce Augmentation",
     "title": "Workforce Augmentation",
-    "content": "- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### OWL Restrictions\n- is-subclass-of some ArtificialIntelligence\n- #### Relationships\n- is-subclass-of:: Artificial Intelligence\n- #### OWL Axioms\n-\n- ## About Workforce Augmentation\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterp",
+    "content": "- #### OWL Restrictions\n-",
     "tags": [
       "AI-0872",
       "ai"
@@ -7964,12 +7854,6 @@
     "tags": []
   },
   {
-    "id": "debug linked node",
-    "title": "debug linked node",
-    "content": "public:: true\n- This is a node linked to Debug Test Page\n-",
-    "tags": []
-  },
-  {
     "id": "glTF (3D File Format)",
     "title": "glTF (3D File Format)",
     "content": "-",
@@ -7978,26 +7862,6 @@
       "metaverse"
     ],
     "ontology_id": "20110"
-  },
-  {
-    "id": "implementation-examples",
-    "title": "implementation examples",
-    "content": "-",
-    "tags": [
-      "mv-1761742247980",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247980"
-  },
-  {
-    "id": "metaverse-core-concepts",
-    "title": "metaverse core concepts",
-    "content": "-",
-    "tags": [
-      "mv-1761742247981",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247981"
   },
   {
     "id": "ontology-properties",
@@ -8028,15 +7892,5 @@
       "robotics"
     ],
     "ontology_id": "RB-0101"
-  },
-  {
-    "id": "security-audit-guide",
-    "title": "security audit guide",
-    "content": "-",
-    "tags": [
-      "mv-1761742247991",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247991"
   }
 ]

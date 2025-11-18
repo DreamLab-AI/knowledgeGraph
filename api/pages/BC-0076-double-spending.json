@@ -1,8 +1,8 @@
 {
   "title": "Double Spending",
-  "content": "- ### OntologyBlock\n  id:: double-spending-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0076\n    - preferred-term:: Double Spending\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Fraudulent duplicate payment within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:DoubleSpending\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    - is-subclass-of some Networkcomponent\n    - is-subclass-of some BlockchainEntity\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-to:: [[Networkcomponent]] via is-subclass-of\n\n  - #### OWL Restrictions\n    - is-subclass-of some Networkcomponent\n    - is-subclass-of some BlockchainEntity\n    - implementedInLayer:: [[SecurityLayer]]\n\n  - #### Relationships\n    id:: double-spending-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[NetworkComponent]]\n\n  - #### OWL Axioms\n    id:: double-spending-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0076>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:DoubleSpending))\n\n  ## Subclass Relationships\n  SubClassOf(:DoubleSpending :NetworkComponent)\n  SubClassOf(:DoubleSpending :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:DoubleSpending\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:DoubleSpending\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :DoubleSpending \"BC-0076\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :DoubleSpending \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :DoubleSpending \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :DoubleSpending :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :DoubleSpending :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :DoubleSpending \"Double Spending\"@en)\n  AnnotationAssertion(rdfs:comment :DoubleSpending\n    \"Fraudulent duplicate payment\"@en)\n  AnnotationAssertion(dct:description :DoubleSpending\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :DoubleSpending \"BC-0076\")\n  AnnotationAssertion(:priority :DoubleSpending \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :DoubleSpending \"network-security\"@en)\n)\n      ```",
+  "content": "- ### OntologyBlock\n  id:: double-spending-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0076\n    - preferred-term:: Double Spending\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Fraudulent duplicate payment within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:DoubleSpending\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-to:: [[Networkcomponent]] via is-subclass-of\n\n  -",
   "properties": {
-    "id": "double-spending-owl-axioms",
+    "id": "double-spending-ontology",
     "collapsed": "true",
     "- public-access": "true",
     "- ontology": "true",
@@ -21,21 +21,16 @@
     "- owl:role": "Object",
     "- owl:inferred-class": "bc:VirtualObject",
     "- belongsToDomain": "[[CryptographicDomain]]",
-    "- bridges-to": "[[Networkcomponent]] via is-subclass-of",
-    "- implementedInLayer": "[[SecurityLayer]]",
-    "- is-subclass-of": "[[Blockchain Entity]], [[NetworkComponent]]"
+    "- bridges-to": "[[Networkcomponent]] via is-subclass-of"
   },
   "backlinks": [],
   "wiki_links": [
-    "Blockchain Entity",
-    "ISO/IEC 23257:2021",
-    "SecurityLayer",
     "Networkcomponent",
-    "NetworkComponent",
-    "IEEE 2418.1",
+    "ISO/IEC 23257:2021",
     "BlockchainEntity",
-    "NIST NISTIR",
-    "CryptographicDomain"
+    "CryptographicDomain",
+    "IEEE 2418.1",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0076",

@@ -1,8 +1,8 @@
 {
   "title": "Immutability",
-  "content": "- ### OntologyBlock\n  id:: immutability-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0079\n    - preferred-term:: Immutability\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Tamper-resistant property within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Immutability\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    - is-subclass-of some BlockchainEntity\n    - is-subclass-of some Networkcomponent\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-to:: [[Networkcomponent]] via is-subclass-of\n\n  - #### OWL Restrictions\n    - is-subclass-of some BlockchainEntity\n    - is-subclass-of some Networkcomponent\n    - implementedInLayer:: [[SecurityLayer]]\n\n  - #### Relationships\n    id:: immutability-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[NetworkComponent]]\n\n  - #### OWL Axioms\n    id:: immutability-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://narrativegoldmine.com/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://narrativegoldmine.com/blockchain/BC-0079>\n  Import(<http://narrativegoldmine.com/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:Immutability))\n\n  ## Subclass Relationships\n  SubClassOf(:Immutability :NetworkComponent)\n  SubClassOf(:Immutability :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:Immutability\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:Immutability\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :Immutability \"BC-0079\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :Immutability \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :Immutability \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :Immutability :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :Immutability :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :Immutability \"Immutability\"@en)\n  AnnotationAssertion(rdfs:comment :Immutability\n    \"Tamper-resistant property\"@en)\n  AnnotationAssertion(dct:description :Immutability\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :Immutability \"BC-0079\")\n  AnnotationAssertion(:priority :Immutability \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :Immutability \"network-security\"@en)\n)\n      ```\n\n- ## About Immutability\n  id:: immutability-about\n\n  - Tamper-resistant property within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n  -\n  - ### Key Characteristics\n    id:: immutability-characteristics\n    - 1. **Definitional Property**: Core defining characteristic\n    - 2. **Functional Property**: Operational behavior\n    - 3. **Structural Property**: Compositional elements\n    - 4. **Security Property**: Security guarantees provided\n    - 5. **Performance Property**: Efficiency considerations\n  -\n  - ### Technical Components\n    id:: immutability-components\n    - **Implementation**: How concept is realized technically\n    - **Verification**: Methods for validating correctness\n    - **Interaction**: Relationships with other components\n    - **Constraints**: Technical limitations and requirements\n  -\n  - ### Use Cases\n    id:: immutability-use-cases\n    - **1. Core Blockchain Operation**\n    - **Application**: Fundamental blockchain functionality\n    - **Example**: Practical implementation in major blockchains\n    - **Requirements**: Technical prerequisites\n    - **Benefits**: Value provided to blockchain systems\n  -\n  - ### Standards & References\n    id:: immutability-standards\n    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies\n    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies\n    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies\n  -\n\n\t- #### Satoshi Ordinals, inscriptions, and RUNES\n\t\t- Ordinal inscriptions commit digital data directly in bitcoin. The ability to store NFTs on the bitcoin blockchain offers the security, immutability, and decentralization that is fundamental to bitcoin’s design.The use of Taproot has allowed Ordinals to store large files on the bitcoin blockchain, by exploiting cheap space which was designed to add more complex ‘script-path spend’ scripts. Their creator Rodarmor says the following of them:\n- This includes [[UDA]] from [[DIBA]] and [[Digital Objects]]\n\t- [RGB explainer slides](https://docsend.com/view/he8x9erkjmphphvn)\n\t- [rgb tokens](https://twitter.com/iris_wallet/status/1639189676845047808)\n\t- [RGB minimal fork for tether](https://t.me/rgbtelegram/36013)\n\t- [Iris wallet](https://play.google.com/store/apps/details?id=com.iriswallet.testnet)",
+  "content": "- ### OntologyBlock\n  id:: immutability-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0079\n    - preferred-term:: Immutability\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Tamper-resistant property within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Immutability\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-to:: [[Networkcomponent]] via is-subclass-of\n\n  -",
   "properties": {
-    "id": "immutability-standards",
+    "id": "immutability-ontology",
     "collapsed": "true",
     "- public-access": "true",
     "- ontology": "true",
@@ -21,24 +21,16 @@
     "- owl:role": "Object",
     "- owl:inferred-class": "bc:VirtualObject",
     "- belongsToDomain": "[[CryptographicDomain]]",
-    "- bridges-to": "[[Networkcomponent]] via is-subclass-of",
-    "- implementedInLayer": "[[SecurityLayer]]",
-    "- is-subclass-of": "[[Blockchain Entity]], [[NetworkComponent]]"
+    "- bridges-to": "[[Networkcomponent]] via is-subclass-of"
   },
   "backlinks": [],
   "wiki_links": [
-    "DIBA",
-    "Blockchain Entity",
-    "ISO/IEC 23257:2021",
-    "SecurityLayer",
     "Networkcomponent",
-    "Digital Objects",
-    "NetworkComponent",
-    "IEEE 2418.1",
+    "ISO/IEC 23257:2021",
     "BlockchainEntity",
-    "NIST NISTIR",
     "CryptographicDomain",
-    "UDA"
+    "IEEE 2418.1",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0079",
