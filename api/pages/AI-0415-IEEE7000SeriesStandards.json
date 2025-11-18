@@ -25,12 +25,12 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "IEEE P2863",
     "IEEE P7003",
-    "AIEthicsDomain",
-    "ConceptualLayer",
+    "IEEE 7000",
     "IEEE P7001",
-    "IEEE 7000"
+    "IEEE P2863",
+    "ConceptualLayer",
+    "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "AI-0415",

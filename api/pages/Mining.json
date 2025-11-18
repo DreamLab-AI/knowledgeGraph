@@ -48,16 +48,16 @@
   ],
   "wiki_links": [
     "NIST NISTIR",
-    "Blockchain Entity",
-    "ConsensusProtocol",
-    "Energy",
     "Proof of Work",
-    "ConsensusDomain",
-    "Renewable Energy",
     "Hash Rate",
-    "Bitcoin",
-    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
+    "Energy",
+    "ISO/IEC 23257:2021",
+    "Renewable Energy",
+    "ConsensusDomain",
+    "ConsensusProtocol",
+    "Blockchain Entity",
+    "Bitcoin",
     "ProtocolLayer"
   ],
   "ontology": {

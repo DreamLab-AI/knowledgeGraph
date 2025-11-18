@@ -32,16 +32,16 @@
     "Digital Twin of the Customer"
   ],
   "wiki_links": [
-    "NIST NISTIR",
     "Digital Objects",
+    "NIST NISTIR",
+    "IEEE 2418.1",
+    "UDA",
+    "ISO/IEC 23257:2021",
     "CryptographicDomain",
-    "DIBA",
     "NetworkComponent",
     "SecurityLayer",
-    "ISO/IEC 23257:2021",
-    "IEEE 2418.1",
-    "Blockchain Entity",
-    "UDA"
+    "DIBA",
+    "Blockchain Entity"
   ],
   "ontology": {
     "term_id": "BC-0079",

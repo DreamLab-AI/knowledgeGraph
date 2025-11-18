@@ -30,19 +30,19 @@
   ],
   "wiki_links": [
     "Homomorphic Encryption",
+    "Merkle Tree",
+    "Public Key Cryptography",
     "FIPS 140-3 Security Requirements",
     "BlockchainDomain",
-    "ConceptualLayer",
-    "Blockchain",
-    "Cryptographic Hash Function",
-    "ISO/IEC 18033 Encryption Algorithms",
-    "Public Key Cryptography",
-    "Zero-Knowledge Proof",
-    "Merkle Tree",
     "Digital Signature",
-    "NIST Cryptographic Standards",
+    "Blockchain",
     "Threshold Cryptography",
-    "Blockchain Entity"
+    "Blockchain Entity",
+    "NIST Cryptographic Standards",
+    "Cryptographic Hash Function",
+    "ConceptualLayer",
+    "Zero-Knowledge Proof",
+    "ISO/IEC 18033 Encryption Algorithms"
   ],
   "ontology": {
     "term_id": "PC-0003",

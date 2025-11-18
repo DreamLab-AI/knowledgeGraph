@@ -25,11 +25,11 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "CKKS Scheme",
-    "AIEthicsDomain",
     "IBM HELib",
+    "CKKS Scheme",
+    "Microsoft SEAL",
     "ConceptualLayer",
-    "Microsoft SEAL"
+    "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "AI-0418",

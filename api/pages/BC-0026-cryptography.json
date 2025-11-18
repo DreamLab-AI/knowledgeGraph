@@ -26,14 +26,14 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Security Technology",
+    "ISO/IEC 18033",
+    "CryptographicDomain",
+    "SecurityLayer",
     "NIST FIPS",
     "NIST SP",
-    "Mathematical Science",
-    "CryptographicDomain",
-    "ISO/IEC 18033",
     "Information Protection",
-    "SecurityLayer"
+    "Mathematical Science",
+    "Security Technology"
   ],
   "ontology": {
     "term_id": "BC-0026",

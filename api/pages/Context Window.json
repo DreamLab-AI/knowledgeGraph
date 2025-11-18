@@ -21,9 +21,9 @@
     "Deep Learning"
   ],
   "wiki_links": [
+    "OpenAI GPT-4 Technical Report",
     "Vaswani et al. 2017 Attention is All You Need",
-    "Anthropic Context Windows Research 2024",
-    "OpenAI GPT-4 Technical Report"
+    "Anthropic Context Windows Research 2024"
   ],
   "ontology": {
     "term_id": "AI-0238",

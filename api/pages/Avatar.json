@@ -33,15 +33,15 @@
     "Neural 3D Generation"
   ],
   "wiki_links": [
-    "InteractionDomain",
-    "Metaverse",
     "Social Presence",
-    "Animation Rig",
+    "Metaverse",
+    "3D Rendering Engine",
+    "ACM + Web3D HAnim",
     "UserExperienceLayer",
+    "InteractionDomain",
     "User Embodiment",
     "Visual Mesh",
-    "ACM + Web3D HAnim",
-    "3D Rendering Engine"
+    "Animation Rig"
   ],
   "ontology": {
     "term_id": "20067",

@@ -33,11 +33,11 @@
   ],
   "wiki_links": [
     "NIST NISTIR",
+    "IEEE 2418.1",
+    "ISO/IEC 23257:2021",
     "CryptographicDomain",
     "NetworkComponent",
     "SecurityLayer",
-    "ISO/IEC 23257:2021",
-    "IEEE 2418.1",
     "Blockchain Entity"
   ],
   "ontology": {

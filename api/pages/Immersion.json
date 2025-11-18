@@ -31,22 +31,22 @@
     "TELE-001-telepresence"
   ],
   "wiki_links": [
-    "ACM",
-    "Emotional Immersion",
-    "Content Quality",
-    "InteractionDomain",
-    "Cognitive Immersion",
-    "Flow State",
-    "Presence",
     "ApplicationLayer",
+    "Content Quality",
     "Haptic Feedback",
     "Sensory Immersion",
+    "Presence",
+    "ACM",
     "Interaction Mechanism",
-    "Audio Spatialization",
+    "Visual Fidelity",
+    "Cognitive Immersion",
     "User Engagement",
     "PresentationLayer",
-    "Visual Fidelity",
-    "Display Technology"
+    "InteractionDomain",
+    "Emotional Immersion",
+    "Audio Spatialization",
+    "Display Technology",
+    "Flow State"
   ],
   "ontology": {
     "term_id": "20255",
