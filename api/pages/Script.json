@@ -30,24 +30,23 @@
     "coin": "deposit(&mut to.coin, coin);"
   },
   "backlinks": [
-    "Bitcoin Technical Overview",
     "Bitcoin",
     "Transaction Pool"
   ],
   "wiki_links": [
-    "ConceptualLayer",
-    "BlockchainDomain",
-    "BIP 141",
-    "DistributedDataStructure",
-    "Ethereum Yellow Paper",
-    "Blockchain Entity",
-    "EIP-1559",
-    "Move Language Documentation",
     "Clarity Language Reference",
     "IEEE 2418.1",
-    "BIP 342",
+    "DistributedDataStructure",
+    "BlockchainDomain",
+    "Blockchain Entity",
+    "EIP-1559",
     "ISO/IEC 23257:2021",
-    "NIST NISTIR"
+    "ConceptualLayer",
+    "Ethereum Yellow Paper",
+    "Move Language Documentation",
+    "NIST NISTIR",
+    "BIP 342",
+    "BIP 141"
   ],
   "ontology": {
     "term_id": "BC-0023",

@@ -28,15 +28,14 @@
     "- is-subclass-of": "[[Blockchain Entity]], [[EconomicMechanism]]"
   },
   "backlinks": [
-    "BC 0115 minting",
-    "TokenEconomicsDomain"
+    "BC 0115 minting"
   ],
   "wiki_links": [
     "EconomicLayer",
-    "Blockchain Entity",
-    "TokenEconomicsDomain",
     "IEEE 2418.1",
     "EconomicMechanism",
+    "Blockchain Entity",
+    "TokenEconomicsDomain",
     "ISO/IEC 23257:2021",
     "NIST NISTIR"
   ],

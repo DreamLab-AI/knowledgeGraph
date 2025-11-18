@@ -10,16 +10,6 @@
     "ontology_id": "20223"
   },
   {
-    "id": "3D and 4D",
-    "title": "3D and 4D",
-    "content": "- #### Relationships\nid:: 3d-and-4d-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: 3d-and-4d-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- # 3D and 4D Content Creation\n- This page provides an overview of the tools and techniques used to create 3D and 4D content, with a focus on AI-powered solutions.\n- ## Text to 3D\n- #",
-    "tags": [
-      "mv-429922099522",
-      "metaverse"
-    ],
-    "ontology_id": "mv-429922099522"
-  },
-  {
     "id": "AI Agent System",
     "title": "AI Agent System",
     "content": "- #### Relationships\nid:: ai-agent-system-relationships\n- has-part:: Perception System, Decision Engine, Action Executor, Learning Module, Memory System, Goal Planner, Tool Use System, Communication Protocol, Knowledge Base\n- implements:: Reinforcement Learning, Planning Algorithm, Decision Making, Autonomous Behavior, Active Learning, Meta-Learning, Transfer Learning, Imitation Learning\n- requires:: Sensor Input, Environment Model, Reward Function, Action Space, API Access, Authentication Syste",
@@ -28,16 +18,6 @@
       "ai"
     ],
     "ontology_id": "AI-0600"
-  },
-  {
-    "id": "AI Companies",
-    "title": "AI Companies",
-    "content": "- #### Relationships\nid:: ai-companies-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: ai-companies-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- **Majors**\n- There are several very strong Large language models Gemini, Claude, and ChatGPT, Llama, and Grok\n- Comparison of GPT4 and Gemini Ultra\n- OpenAI\n- OpenAI has been ",
-    "tags": [
-      "mv-164801311429",
-      "metaverse"
-    ],
-    "ontology_id": "mv-164801311429"
   },
   {
     "id": "AI Development",
@@ -100,16 +80,6 @@
     "ontology_id": "AI-0082"
   },
   {
-    "id": "AI Liability",
-    "title": "**Algorithmic Accountability: A Comparative Analysis of AI Liability Frameworks in the United States and United Kingdom**",
-    "content": "- #### Relationships\nid:: **algorithmic-accountability:-a-comparative-analysis-of-ai-liability-frameworks-in-the-united-states-and-united-kingdom**-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: **algorithmic-accountability:-a-comparative-analysis-of-ai-liability-frameworks-in-the-united-states-and-united-kingdom**-owl",
-    "tags": [
-      "mv-779619480947",
-      "metaverse"
-    ],
-    "ontology_id": "mv-779619480947"
-  },
-  {
     "id": "AI Model Card",
     "title": "AI Model Card",
     "content": "- #### Relationships\nid:: ai-model-card-relationships\n- has-part:: Model Details, Performance Metrics, Limitations Section, Ethical Considerations, Use Case Descriptions, Training Data Information, Bias Analysis, Fairness Metrics, Security Considerations\n- is-part-of:: AI Documentation Framework, Model Governance System, AI Risk Management, Compliance Documentation\n- requires:: Model Evaluation Results, Training Dataset Metadata, Performance Benchmarks, Demographic Performance Analysis, Safety T",
@@ -130,26 +100,6 @@
     "ontology_id": "AI-0076"
   },
   {
-    "id": "AI Risks",
-    "title": "AI Risks",
-    "content": "- #### Relationships\nid:: ai-risks-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: ai-risks-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- ## OntologyBlock\n- **termID**: AI-RISK-001\n- **termType**: Domain Concept\n- **primaryDomain**: Artificial Intelligence, AI Safety, AI Ethics\n- **relatedDomains**: AI Governance, Machi",
-    "tags": [
-      "mv-186210684732",
-      "metaverse"
-    ],
-    "ontology_id": "mv-186210684732"
-  },
-  {
-    "id": "AI Search",
-    "title": "AI Search",
-    "content": "- #### Relationships\nid:: ai-search-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: ai-search-owl-axioms\ncollapsed:: true\n-\n- Turbo Seek \u2013 AI Search Engine\n- kagi AI API FastGPT | Kagi's Docs\n- Running tasks - Documentation - Nolita agentic search framework Projects AR Frame\n- DONE Consider putting the summariser I wrot",
-    "tags": [
-      "mv-903603885842",
-      "metaverse"
-    ],
-    "ontology_id": "mv-903603885842"
-  },
-  {
     "id": "AI TRiSM",
     "title": "AI TRiSM",
     "content": "-",
@@ -168,16 +118,6 @@
       "metaverse"
     ],
     "ontology_id": "ME-0020"
-  },
-  {
-    "id": "AI Video",
-    "title": "AI Video",
-    "content": "- #### Relationships\nid:: ai-video-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: ai-video-owl-axioms\ncollapsed:: true\n-\npublic:: true\n#Public page automatically published\n- # Real-Time\n- H. Jensons -TWISTED : r/aivideo (reddit.com)\n- !rapidsave.com_h_jensons_twisted-zyldr5g40mid1.mp4\n- EndlessDreams - Real-Time videos",
-    "tags": [
-      "mv-449611067545",
-      "metaverse"
-    ],
-    "ontology_id": "mv-449611067545"
   },
   {
     "id": "AI-0387-ai-governance-framework",
@@ -650,56 +590,6 @@
     "ontology_id": "AI-0271"
   },
   {
-    "id": "Advice for developing GenAI",
-    "title": "Advice for developing GenAI",
-    "content": "- #### Relationships\nid:: advice-for-developing-genai-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: advice-for-developing-genai-owl-axioms\ncollapsed:: true\n-\n**Key Question: Can Gen AI help solve my use case?**\n**DO:**\n- **Pick the best model available**: While GPT-4 is a leader for language tasks, for broader GenAI a",
-    "tags": [
-      "mv-804911954155",
-      "metaverse"
-    ],
-    "ontology_id": "mv-804911954155"
-  },
-  {
-    "id": "Agentic Alliance",
-    "title": "Agentic Alliance",
-    "content": "- #### Relationships\nid:: agentic-alliance-relationships\n- is-part-of:: VirtualWorld, MetaversePlatform\n- requires:: DigitalIdentity, AuthenticationService\n- enables:: SocialInteraction, Presence, UserRepresentation\n- has-property:: Appearance, Customization, Animation\n- #### OWL Axioms\nid:: agentic-alliance-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- Projects with Melvin Carvalho for Agents Distributed Identity Distributed Computing Nostr protocol Bitcoin\n- Agentic Alliance - Advancing Agent ",
-    "tags": [
-      "mv-585043035608",
-      "metaverse"
-    ],
-    "ontology_id": "mv-585043035608"
-  },
-  {
-    "id": "Agentic Internet",
-    "title": "Agentic Internet",
-    "content": "- #### Relationships\nid:: agentic-internet-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: agentic-internet-owl-axioms\ncollapsed:: true\n-\npublic:: true\naliases:: Agent-First Internet, Bitcoin AI Stack, Decentralized Agent Economy\ntermID:: BTC-AI-0001\nbelongsToDomain:: Bitcoin Domain, AI Domain, Architecture, Protocol St",
-    "tags": [
-      "mv-501595693888",
-      "metaverse"
-    ],
-    "ontology_id": "mv-501595693888"
-  },
-  {
-    "id": "Agentic Metaverse for Global Creatives",
-    "title": "Agentic Metaverse for Global Creatives",
-    "content": "- #### Relationships\nid:: agentic-metaverse-for-global-creatives-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: agentic-metaverse-for-global-creatives-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n-\n- Online Version\n-\n- # Introduction and Problem Definition\n- Delivery Planning\n- ## ",
-    "tags": [
-      "mv-186083114948",
-      "metaverse"
-    ],
-    "ontology_id": "mv-186083114948"
-  },
-  {
-    "id": "Agentic Mycelia",
-    "title": "Agentic Mycelia",
-    "content": "- #### Relationships\nid:: agentic-mycelia-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: agentic-mycelia-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- # Agentic Mycelia: A Framework for a Decentralized Metaverse\n-\n- # Introduction\n- This document explores the concept of the \"Agentic Mycelia,\" a framework for interconne",
-    "tags": [
-      "mv-830197611609",
-      "metaverse"
-    ],
-    "ontology_id": "mv-830197611609"
-  },
-  {
     "id": "Agreement Protocol",
     "title": "Agreement Protocol",
     "content": "- #### Relationships\nid:: agreement-protocol-relationships\n- is-subclass-of:: Distributed Protocol\n- #### OWL Axioms\nid:: agreement-protocol-owl-axioms\ncollapsed:: true\n-\n- ## About Agreement Protocol\nid:: agreement-protocol-about\n- Agreement Protocols represent the theoretical heart of blockchain consensus, formalizing how distributed parties can coordinate despite the inherent challenges of unreliable networks and potentially malicious participants. The study of agreement protocols originated ",
@@ -730,16 +620,6 @@
     "ontology_id": "AI-0877"
   },
   {
-    "id": "Ai in Games",
-    "title": "Ai in Games",
-    "content": "- #### Relationships\nid:: ai-in-games-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: ai-in-games-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- {{video https://www.youtube.com/watch?v=LFaxqJJLOZc}}\n- # Games sector dominates entertainment\n- !1713196618774.jpeg\n- Traditional engines like Unity, Unreal, Roblox , and NVIDI",
-    "tags": [
-      "mv-333628979148",
-      "metaverse"
-    ],
-    "ontology_id": "mv-333628979148"
-  },
-  {
     "id": "Algorithm",
     "title": "Algorithm",
     "content": "- #### Relationships\n- is-subclass-of:: Artificial Intelligence\n- #### OWL Axioms\n-\n- ## About Algorithm\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in virtual collaboration, training, and digital twins\n- UK companies increasingly active in metaverse development and immersive t",
@@ -758,26 +638,6 @@
       "metaverse"
     ],
     "ontology_id": "20298"
-  },
-  {
-    "id": "AnimateDiff",
-    "title": "AnimateDiff",
-    "content": "- #### Relationships\nid:: animatediff-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: animatediff-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- # AnimateDiff\n- AnimateDiff is a framework that can generate animated videos from a single static image and a text prompt. It is a powerful tool for creating AI-generated animat",
-    "tags": [
-      "mv-852207747839",
-      "metaverse"
-    ],
-    "ontology_id": "mv-852207747839"
-  },
-  {
-    "id": "Anthropic Claude",
-    "title": "Anthropic Claude",
-    "content": "- #### Relationships\nid:: anthropic-claude-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: anthropic-claude-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- # Anthropic Claude\n- Anthropic's Claude is a family of large language models (LLMs) that are designed to be helpful, harmless, and honest. They are trained on a massiv",
-    "tags": [
-      "mv-587565214449",
-      "metaverse"
-    ],
-    "ontology_id": "mv-587565214449"
   },
   {
     "id": "Application Layer",
@@ -878,16 +738,6 @@
       "metaverse"
     ],
     "ontology_id": "AI-0036"
-  },
-  {
-    "id": "Automated Podcasting",
-    "title": "Automated Podcasting",
-    "content": "- #### Relationships\nid:: automated-podcasting-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: automated-podcasting-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- # Automated Podcasting\n- Automated podcasting is the use of artificial intelligence to automate various aspects of the podcasting workflow, from content creati",
-    "tags": [
-      "mv-138669022002",
-      "metaverse"
-    ],
-    "ontology_id": "mv-138669022002"
   },
   {
     "id": "Automated Summarization",
@@ -2100,16 +1950,6 @@
     "ontology_id": "BC-0043"
   },
   {
-    "id": "BTC Layer 3",
-    "title": "BTC Layer 3",
-    "content": "- #### Relationships\nid:: btc-layer-3-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: btc-layer-3-owl-axioms\ncollapsed:: true\n-\npublic:: true\ntermID:: BTC-L3-0001\nqualityScore:: 0.94\nbitcoinSpecific:: true\nlastUpdated:: 2025-11-14\n- # Bitcoin Layer 3: Smart Contracts & Asset Systems\nid:: btc-l3-overview\n- Bitcoin Layer ",
-    "tags": [
-      "mv-368710515979",
-      "metaverse"
-    ],
-    "ontology_id": "mv-368710515979"
-  },
-  {
     "id": "Backdoor Attack",
     "title": "Backdoor Attack",
     "content": "-",
@@ -2210,36 +2050,6 @@
     "ontology_id": "20150"
   },
   {
-    "id": "Bitcoin As Money",
-    "title": "Bitcoin As Money",
-    "content": "- #### Relationships\nid:: bitcoin-as-money-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: bitcoin-as-money-owl-axioms\ncollapsed:: true\n-\npublic:: true\ntermID:: bitcoin-as-money-001\nqualityScore:: 0.94\nbitcoinSpecific:: true\nlastUpdated:: 2025-11-14\ntags:: #Bitcoin #Money #Economics #MonetaryTheory #LightningNetwork #Pa",
-    "tags": [
-      "mv-139366363097",
-      "metaverse"
-    ],
-    "ontology_id": "mv-139366363097"
-  },
-  {
-    "id": "Bitcoin Technical Overview",
-    "title": "Bitcoin Technical Overview",
-    "content": "- #### Relationships\nid:: bitcoin-technical-overview-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: bitcoin-technical-overview-owl-axioms\ncollapsed:: true\n-\npublic:: true\ntermID:: BTC-TECH-0001\nqualityScore:: 0.94\nbitcoinSpecific:: true\nlastUpdated:: 2025-11-14\n- #Public page #Bitcoin #Cryptography #Blockchain\n- automa",
-    "tags": [
-      "mv-371664510868",
-      "metaverse"
-    ],
-    "ontology_id": "mv-371664510868"
-  },
-  {
-    "id": "Bitcoin Value Proposition",
-    "title": "Bitcoin Value Proposition",
-    "content": "- #### Relationships\nid:: bitcoin-value-proposition-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: bitcoin-value-proposition-owl-axioms\ncollapsed:: true\n-\npublic:: true\ntermID:: bitcoin-value-proposition-comprehensive-2025\nqualityScore:: 0.94\nbitcoinSpecific:: true\nlastUpdated:: 2025-11-14\n- #Public page automatically ",
-    "tags": [
-      "mv-55724426610",
-      "metaverse"
-    ],
-    "ontology_id": "mv-55724426610"
-  },
-  {
     "id": "Bitcoin",
     "title": "Bitcoin",
     "content": "- #### Relationships\nid:: bitcoin-relationships\n- is-subclass-of:: Cryptocurrency, Blockchain\n- has-part:: Block, Transaction, Script, UTXO, Lightning Network, Mempool\n- implements:: Proof of Work, SHA-256, Elliptic Curve Cryptography, UTXO Model\n- uses:: Halving, Supply Cap, Difficulty Adjustment, Block Reward\n- enables:: Peer-to-Peer Transfer, Censorship Resistance, Monetary Sovereignty, Programmable Money\n- bridges-to:: Renewable Energy (domain: energy), Value Transfer (domain: economics)\n- #",
@@ -2248,16 +2058,6 @@
       "blockchain"
     ],
     "ontology_id": "BC-0500"
-  },
-  {
-    "id": "Blender",
-    "title": "Blender",
-    "content": "- #### Relationships\nid:: blender-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: blender-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- # Blender\n- Blender is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, motion graphics, interactiv",
-    "tags": [
-      "mv-44124548050",
-      "metaverse"
-    ],
-    "ontology_id": "mv-44124548050"
   },
   {
     "id": "Block",
@@ -2280,16 +2080,6 @@
     "ontology_id": "PC-0001"
   },
   {
-    "id": "Calculating Empires",
-    "title": "Calculating Empires",
-    "content": "- #### Relationships\nid:: calculating-empires-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: calculating-empires-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- Calculating Empires is a large-scale research visualization project and exhibition that explores the interconnected history of technology and power from 1500 to ",
-    "tags": [
-      "mv-271243742472",
-      "metaverse"
-    ],
-    "ontology_id": "mv-271243742472"
-  },
-  {
     "id": "Carbon Credit Token",
     "title": "Carbon Credit Token",
     "content": "- #### Relationships\nid:: carboncredittoken-relationships\n- has-part:: Carbon Offset Certificate, Verification Metadata, Token Smart Contract, Blockchain Record\n- is-part-of:: Virtual Economy, Environmental Asset Market, Sustainability Framework\n- requires:: Blockchain, Smart Contract, Verification Authority, Digital Wallet\n- depends-on:: Carbon Registry, Verification Standard, Trading Platform\n- enables:: Emissions Trading, Carbon Offset Trading, Environmental Compliance, Sustainability Reporti",
@@ -2310,16 +2100,6 @@
     "ontology_id": "BC-0567"
   },
   {
-    "id": "Cashu",
-    "title": "Cashu",
-    "content": "- #### Relationships\nid:: cashu-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: cashu-owl-axioms\ncollapsed:: true\n-\npublic:: true\ntermID:: BTC-PRIV-0001\nqualityScore:: 0.93\n- #Public page -- automatically published\n- ## Cashu: Privacy-Preserving Bitcoin Ecash Protocol\n- Cashu is a free and open-source **Chaumian ecash p",
-    "tags": [
-      "mv-376356710478",
-      "metaverse"
-    ],
-    "ontology_id": "mv-376356710478"
-  },
-  {
     "id": "Central Bank Digital Currency (CBDC)",
     "title": "Central Bank Digital Currency (CBDC)",
     "content": "- #### Relationships\nid:: cbdc-relationships\n- has-part:: Digital Currency Ledger, Payment Protocol, Identity System, Transaction Validator\n- is-part-of:: Monetary System, Payment Infrastructure, Financial System\n- requires:: Central Bank, Digital Wallet, Distributed Ledger, Identity Verification, Regulatory Framework\n- depends-on:: Banking Infrastructure, Settlement System, Cryptographic Protocol\n- enables:: Digital Payments, Financial Inclusion, Monetary Policy Implementation, Programmable Mon",
@@ -2338,16 +2118,6 @@
       "blockchain"
     ],
     "ontology_id": "BC-0025"
-  },
-  {
-    "id": "Client side DCO",
-    "title": "Client side DCO",
-    "content": "- #### Relationships\nid:: client-side-dco-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: client-side-dco-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page\n- automatically published\n- # Client Pull Model for Embedded Product Promotion\n- An Interview With Jack Dorsey (piratewires.com)\n- ## User-Side Components\n-",
-    "tags": [
-      "mv-561381264809",
-      "metaverse"
-    ],
-    "ontology_id": "mv-561381264809"
   },
   {
     "id": "Cloud Rendering Service",
@@ -2378,16 +2148,6 @@
       "ai"
     ],
     "ontology_id": "AI-0868"
-  },
-  {
-    "id": "Coding support",
-    "title": "Coding support",
-    "content": "- #### Relationships\nid:: coding-support-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: coding-support-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- {{video https://www.youtube.com/watch?v=yj73GIEKmLI}}\n- # Believably wrong answers\n- **Study Details**  by Purdue University. Presented at the Computer-Human Interaction C",
-    "tags": [
-      "mv-411006412271",
-      "metaverse"
-    ],
-    "ontology_id": "mv-411006412271"
   },
   {
     "id": "Cognitive Feedback Interface",
@@ -2438,16 +2198,6 @@
       "metaverse"
     ],
     "ontology_id": "20305"
-  },
-  {
-    "id": "ComfyUI",
-    "title": "ComfyUI",
-    "content": "- #### Relationships\nid:: comfyui-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: comfyui-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n-\n- It's not the easiest way to use Stable Diffusion.\n- https://private-user-images.githubusercontent.com/140084057/368715655-f46f769d-f168-454c-9c7",
-    "tags": [
-      "mv-258351002389",
-      "metaverse"
-    ],
-    "ontology_id": "mv-258351002389"
   },
   {
     "id": "Community Governance Model",
@@ -2590,16 +2340,6 @@
     "ontology_id": "20123"
   },
   {
-    "id": "Conspiracies",
-    "title": "Conspiracies",
-    "content": "- #### Relationships\nid:: conspiracies-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: conspiracies-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- Lots of the online communities that glom around the research topics of this book self identify as libertarian, mistrustful of government. To be clear, there are many specific ",
-    "tags": [
-      "mv-286960668786",
-      "metaverse"
-    ],
-    "ontology_id": "mv-286960668786"
-  },
-  {
     "id": "Constraint",
     "title": "Constraint",
     "content": "- #### Relationships\n- #### OWL Axioms\n-\n- ## About Constraint\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in virtual collaboration, training, and digital twins\n- UK companies increasingly active in metaverse development and immersive technologies\n- Technical capabilities\n- Rea",
@@ -2678,16 +2418,6 @@
       "ai"
     ],
     "ontology_id": "AI-0283"
-  },
-  {
-    "id": "Convergence",
-    "title": "Convergence",
-    "content": "- #### Relationships\nid:: convergence-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: convergence-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- As a reminder this is the Venn diagram I made in 2022 while figuring out what to research,\n- !Convergence of AI, Value, XR{:height 336, :width 700}\n-\n- <iframe style=\"border-rad",
-    "tags": [
-      "mv-730687576412",
-      "metaverse"
-    ],
-    "ontology_id": "mv-730687576412"
   },
   {
     "id": "Conversational Ai",
@@ -2800,16 +2530,6 @@
     "ontology_id": "PC-0003"
   },
   {
-    "id": "CryptographicDomain",
-    "title": "CryptographicDomain",
-    "content": "- #### Relationships\nid:: cryptographicdomain-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: cryptographicdomain-owl-axioms\ncollapsed:: true\n-\n- ### MetaOntologyBlock\nid:: cryptographic-domain-meta\ncollapsed:: true\n- **Classification**\n- meta-ontology:: true\n- classification-type:: domain\n- name:: CryptographicDomain\n-",
-    "tags": [
-      "mv-736140713002",
-      "metaverse"
-    ],
-    "ontology_id": "mv-736140713002"
-  },
-  {
     "id": "CryptographicHash",
     "title": "CryptographicHash",
     "content": "-",
@@ -2890,16 +2610,6 @@
     "ontology_id": "BC-0472"
   },
   {
-    "id": "DAO",
-    "title": "DAO",
-    "content": "-",
-    "tags": [
-      "mv-1761742247910",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247910"
-  },
-  {
     "id": "DELIVERY-MANIFEST",
     "title": "DELIVERY MANIFEST",
     "content": "-",
@@ -2908,26 +2618,6 @@
       "metaverse"
     ],
     "ontology_id": "mv-1761742247910"
-  },
-  {
-    "id": "Daniel AI creative technologist",
-    "title": "Daniel AI creative technologist",
-    "content": "- #### Relationships\nid:: daniel-ai-creative-technologist-relationships\n- is-part-of:: VirtualWorld, MetaversePlatform\n- requires:: DigitalIdentity, AuthenticationService\n- enables:: SocialInteraction, Presence, UserRepresentation\n- has-property:: Appearance, Customization, Animation\n- #### OWL Axioms\nid:: daniel-ai-creative-technologist-owl-axioms\ncollapsed:: true\n-\n- Scenes with Blender and Agent Frameworks\n- {{video https://www.youtube.com/watch?v=neoK_WMq92g}}\n- {{video https://www.youtube.c",
-    "tags": [
-      "mv-871208729395",
-      "metaverse"
-    ],
-    "ontology_id": "mv-871208729395"
-  },
-  {
-    "id": "Daresbury Data Conference",
-    "title": "Daresbury Data Conference",
-    "content": "- #### Relationships\nid:: daresbury-data-conference-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: daresbury-data-conference-owl-axioms\ncollapsed:: true\n-\n- Health Space and Digital tech clusters cross cluster conference.\n- Future of Data for the UK economy\n- Collect, store, use challenges.\n- Quantum ML gives a 20% opt",
-    "tags": [
-      "mv-718044584947",
-      "metaverse"
-    ],
-    "ontology_id": "mv-718044584947"
   },
   {
     "id": "Data Anonymization Pipeline",
@@ -3018,26 +2708,6 @@
       "metaverse"
     ],
     "ontology_id": "mv-1761742247911"
-  },
-  {
-    "id": "Death of the Internet",
-    "title": "Death of the Internet",
-    "content": "- #### Relationships\nid:: death-of-the-internet-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: death-of-the-internet-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n- # The story arc of THE MISTAKES\n- make the internet\n- centralise it to monetise it\n- choose passwords instead of verif",
-    "tags": [
-      "mv-952842129530",
-      "metaverse"
-    ],
-    "ontology_id": "mv-952842129530"
-  },
-  {
-    "id": "Decentralised Web",
-    "title": "Decentralised Web",
-    "content": "- #### Relationships\nid:: decentralised-web-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: decentralised-web-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page\n- automatically published\n- # Decentralisation & The Web\n- ## Semantic web\n- The Semantic Web definition of Web3.0 has been somewhat overhauled by other",
-    "tags": [
-      "mv-505931966989",
-      "metaverse"
-    ],
-    "ontology_id": "mv-505931966989"
   },
   {
     "id": "Decentralization Layer",
@@ -3136,16 +2806,6 @@
     "tags": []
   },
   {
-    "id": "Definitions and frameworks for Metaverse",
-    "title": "Definitions and frameworks for Metaverse",
-    "content": "- #### Relationships\nid:: definitions-and-frameworks-for-metaverse-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: definitions-and-frameworks-for-metaverse-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page\n- automatically published\n- # Theoretical Framework toward metaverse Update Cycle\nid:: 65cbd03c-03a4-4ca3-",
-    "tags": [
-      "mv-25265051498",
-      "metaverse"
-    ],
-    "ontology_id": "mv-25265051498"
-  },
-  {
     "id": "Degrees Of Freedom",
     "title": "Degrees Of Freedom",
     "content": "- ### Primary Definition\n**Degrees of Freedom** - Independent position variables defining robot configuration\n- maturity:: draft\n- owl:class:: mv:rb0023degreesoffreedom\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: MetaverseDomain\n- ## About rb 0023 degrees of freedom\n- ### Primary Definition\n**Degrees of Freedom** - Independent position variables defining robot configuration\n-\n- ### Original Content\ncollapsed:: true\n- clojure\n(Declaration (Class :DegreesofFreedom",
@@ -3216,16 +2876,6 @@
     "title": "Diffusion Models",
     "content": "public:: true",
     "tags": []
-  },
-  {
-    "id": "Digital Asset Risks",
-    "title": "Digital Asset Risks",
-    "content": "- #### Relationships\nid:: digital-asset-risks-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: digital-asset-risks-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n- ## OntologyBlock\n- termID:: BTC-RISK-001\n- domain:: Bitcoin, Cryptocurrency, Risk Management, Regulatory Compliance, Finan",
-    "tags": [
-      "mv-237322718863",
-      "metaverse"
-    ],
-    "ontology_id": "mv-237322718863"
   },
   {
     "id": "Digital Asset Workflow",
@@ -3368,16 +3018,6 @@
     "ontology_id": "20293"
   },
   {
-    "id": "Digital Objects",
-    "title": "Digital Objects",
-    "content": "- #### Relationships\nid:: digital-objects-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: digital-objects-owl-axioms\ncollapsed:: true\n-\npublic:: true\ntermID:: DO-2025-001\nqualityScore:: 0.92\nlastUpdated:: 2025-11-15\ntags:: #DigitalObjects #NFT #Blockchain #Web3 #CreatorEconomy\n- #Public page\n- automatically published\n- ",
-    "tags": [
-      "mv-398052380189",
-      "metaverse"
-    ],
-    "ontology_id": "mv-398052380189"
-  },
-  {
     "id": "Digital Ontology Repository",
     "title": "Digital Ontology Repository",
     "content": "-",
@@ -3438,16 +3078,6 @@
     "ontology_id": "BC-0030"
   },
   {
-    "id": "Digital Society Surveillance",
-    "title": "Digital Society Surveillance",
-    "content": "- #### Relationships\nid:: digital-society-surveillance-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: digital-society-surveillance-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n- # Surveillance Capitalism\n- Surveillance capitalism is a term coined by Harvard Business School professo",
-    "tags": [
-      "mv-187507391153",
-      "metaverse"
-    ],
-    "ontology_id": "mv-187507391153"
-  },
-  {
     "id": "Digital Taxonomy Registry",
     "title": "Digital Taxonomy Registry",
     "content": "-",
@@ -3490,7 +3120,7 @@
   {
     "id": "Digital Twin of the Customer",
     "title": "Digital Twin of the Customer",
-    "content": "-",
+    "content": "- ### Geopolitics\n- It can be seen that following the invasion of Ukraine by Russia, that Sanctions of various kinds were applied to the Russian economy. One of these was the previously discussed SWIFT international settlement network. Another whole category was the removal of support by private businesses domiciled outside of Russia and Ukraine, and pertinent here is that VISA, Mastercard, PayPal, and Western Union all removed support for their product rails. This means that while some cards an",
     "tags": [
       "ME-0013",
       "metaverse"
@@ -3590,7 +3220,7 @@
   {
     "id": "Distributed Architecture",
     "title": "Distributed Architecture",
-    "content": "-",
+    "content": "- ### DID principles\n- The core principles of distributed identity are that there should bepersistent identifiers, like real world documents which assert identity,but with extended use cases. These should be permanent, and resolvableeverywhere, forever. Underpinning this is cryptographically verifiableand decentralised data, managed by the user, or their trusted proxy. Asprimitives this makes them lifetime digital assets, that are portable,and unconfiscatable, with no required reliance on a trus",
     "tags": [
       "20178",
       "metaverse"
@@ -3606,16 +3236,6 @@
       "metaverse"
     ],
     "ontology_id": "PC-0002"
-  },
-  {
-    "id": "Distributed Identity",
-    "title": "Distributed Identity",
-    "content": "- #### Relationships\nid:: distributed-identity-relationships\n- is-part-of:: VirtualWorld, MetaversePlatform\n- requires:: DigitalIdentity, AuthenticationService\n- enables:: SocialInteraction, Presence, UserRepresentation\n- has-property:: Appearance, Customization, Animation\n- #### OWL Axioms\nid:: distributed-identity-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page\n- automatically published\n- For distributed Web3, and by extension metaverse applications toflourish it is necessary to sol",
-    "tags": [
-      "mv-432362532415",
-      "metaverse"
-    ],
-    "ontology_id": "mv-432362532415"
   },
   {
     "id": "Distributed Ledger Technology (DLT)",
@@ -3646,16 +3266,6 @@
       "ai"
     ],
     "ontology_id": "AI-0869"
-  },
-  {
-    "id": "Dr O'Hare Writing for LogSeq",
-    "title": "Dr O'Hare Writing for LogSeq",
-    "content": "- #### Relationships\nid:: dr-o'hare-writing-for-logseq-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: dr-o'hare-writing-for-logseq-owl-axioms\ncollapsed:: true\n-\n- \"Your goal is to emulate a writer creating a public-facing 'digital garden' page in Logseq. The output must be raw Markdown. Structure everything as a nested",
-    "tags": [
-      "mv-815077595766",
-      "metaverse"
-    ],
-    "ontology_id": "mv-815077595766"
   },
   {
     "id": "Dropout",
@@ -4230,22 +3840,12 @@
   {
     "id": "Education Metaverse",
     "title": "Education Metaverse",
-    "content": "-",
+    "content": "- ### Session 1\n- How to use my knowledge and tools, in your own time at your own pace, if you want.\n- About AI. Myth busting.\n- The Shadow Of The Shape Of The Thing \u2013 defining the problems of AI in educative settings.\n- Feedback and questions.\n- ### Session 2\n- Socratic uses and the moral mazes.\n- Pragmatic uses, and the secret cyborg problem.\n- Overview of specific tools.\n- Introduction to techniques.\n- ### Session 3\n- Deep dive on power techniques.\n- Workshop 1 \u2013 Prompting techniques.\n- ### S",
     "tags": [
       "20310",
       "metaverse"
     ],
     "ontology_id": "20310"
-  },
-  {
-    "id": "Education and AI",
-    "title": "Education and AI",
-    "content": "- #### Relationships\nid:: education-and-ai-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: education-and-ai-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- # Wait!\n- Positives. AI is potentially very good at continuous, patient, optimised delivery of education, especially where there is a paucity of skilled teachers. This",
-    "tags": [
-      "mv-796017780365",
-      "metaverse"
-    ],
-    "ontology_id": "mv-796017780365"
   },
   {
     "id": "Emergency Stop",
@@ -4308,16 +3908,6 @@
     "ontology_id": "RB-0025"
   },
   {
-    "id": "Energy and Power",
-    "title": "Energy and Power",
-    "content": "- #### Relationships\nid:: energy-and-power-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: energy-and-power-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- # Data Centres and AI\n- Energy Grid Challenges:\n- Growing demand from AI/data centers, industrial onshoring, and electrification is straining power grids\n- Google have",
-    "tags": [
-      "mv-961582748519",
-      "metaverse"
-    ],
-    "ontology_id": "mv-961582748519"
-  },
-  {
     "id": "Entity",
     "title": "Entity",
     "content": "- #### Relationships\n- #### OWL Axioms\n-\n- ## About Entity\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in virtual collaboration, training, and digital twins\n- UK companies increasingly active in metaverse development and immersive technologies\n- Technical capabilities\n- Real-ti",
@@ -4356,16 +3946,6 @@
       "metaverse"
     ],
     "ontology_id": "AI-0049"
-  },
-  {
-    "id": "Ethereum",
-    "title": "Ethereum",
-    "content": "- #### Relationships\nid:: ethereum-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: ethereum-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- Public Page Automatically published\n- Ethereumbuterin2013ethereum is the second most secure public blockchain (by about 50%)sayeed2019assessing, and second most valuable by market cap",
-    "tags": [
-      "mv-243744109519",
-      "metaverse"
-    ],
-    "ontology_id": "mv-243744109519"
   },
   {
     "id": "Ethical Framework",
@@ -4478,16 +4058,6 @@
     "ontology_id": "AI-0377"
   },
   {
-    "id": "Fashion",
-    "title": "Fashion",
-    "content": "- #### Relationships\nid:: fashion-relationships\n- has-part:: WorldSpace, PhysicsEngine, SceneGraph, Avatar\n- is-part-of:: Metaverse, MetaversePlatform\n- requires:: 3DRenderingEngine, NetworkProtocol, DatabaseSystem\n- enables:: VirtualSociety, DigitalEconomy, SocialInteraction\n- #### OWL Axioms\nid:: fashion-owl-axioms\ncollapsed:: true\n-\n- cozymantis/human-parser-comfyui-node: A ComfyUI node to automatically extract masks for body regions and clothing/fashion items. Made with \ud83d\udc9a by the CozyMantis s",
-    "tags": [
-      "mv-401831097601",
-      "metaverse"
-    ],
-    "ontology_id": "mv-401831097601"
-  },
-  {
     "id": "Fault Tolerance System",
     "title": "Fault Tolerance System",
     "content": "- #### Relationships\nid:: fault-tolerance-system-relationships\n- is-subclass-of:: Blockchain Entity\n- #### OWL Axioms\nid:: fault-tolerance-system-owl-axioms\ncollapsed:: true\n-\n- ## About Fault Tolerance System\nid:: fault-tolerance-system-about\n- Fault Tolerance Systems represent the engineering discipline of building reliable systems from unreliable components\u2014a fundamental requirement for blockchain networks operating across thousands of geographically distributed nodes in adversarial environme",
@@ -4568,26 +4138,6 @@
     "ontology_id": "BC-0080"
   },
   {
-    "id": "Flux",
-    "title": "Flux",
-    "content": "- #### Relationships\nid:: flux-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: flux-owl-axioms\ncollapsed:: true\n-\npublic:: true\n-\n- ### Reddit: Flux dev lora training use SimpleTuner\n- This web link has been automatically summarised\nTitle: Flux dev lora training use SimpleTuner, it works with 4090. Detail:\n- SimpleTuner",
-    "tags": [
-      "mv-37277876718",
-      "metaverse"
-    ],
-    "ontology_id": "mv-37277876718"
-  },
-  {
-    "id": "Foundation Models",
-    "title": "Foundation Models",
-    "content": "- #### Relationships\nid:: foundation-models-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: foundation-models-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- # Foundation Models\n- Foundation models are large-scale, pre-trained models that can be adapted to a wide range of downstream tasks. They are trained on massive data",
-    "tags": [
-      "mv-124060553964",
-      "metaverse"
-    ],
-    "ontology_id": "mv-124060553964"
-  },
-  {
     "id": "Fractionalized NFT",
     "title": "Fractionalized NFT",
     "content": "-",
@@ -4632,16 +4182,6 @@
       "blockchain"
     ],
     "ontology_id": "BC-0100"
-  },
-  {
-    "id": "Gaussian splatting and Similar",
-    "title": "Gaussian splatting and Similar",
-    "content": "- #### Relationships\nid:: gaussian-splatting-and-similar-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: gaussian-splatting-and-similar-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n- {{video https://www.youtube.com/watch?v=lG3g8mYKfqU}}\n- # Gaussian Splatting\n- Instantsplat: Unbound",
-    "tags": [
-      "mv-814070958412",
-      "metaverse"
-    ],
-    "ontology_id": "mv-814070958412"
   },
   {
     "id": "Generative AI Engineering",
@@ -4704,16 +4244,6 @@
     "ontology_id": "mv-1761742247928"
   },
   {
-    "id": "Global Inequality",
-    "title": "Global Inequality",
-    "content": "- #### Relationships\nid:: global-inequality-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: global-inequality-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n- # Global politics & digital society\n- !Image\n- ## Inequality as the driving force\n- ### Inequality on the Rise\n- In Britain in",
-    "tags": [
-      "mv-715649298519",
-      "metaverse"
-    ],
-    "ontology_id": "mv-715649298519"
-  },
-  {
     "id": "Glossary Index",
     "title": "Glossary Index",
     "content": "-",
@@ -4764,16 +4294,6 @@
     "ontology_id": "AI-0040"
   },
   {
-    "id": "HOST January 17th Presentation",
-    "title": "Purpose of Talk :",
-    "content": "- #### Relationships\nid:: purpose-of-talk-:-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: purpose-of-talk-:-owl-axioms\ncollapsed:: true\n-\nPurpose of Talk :\n- ## A now / next / later flit through generative AI.\n- SDXL QR Code Art Generator\nid:: 659a922a-0f77-4dc5-a0dd-f76f2793423f\n- v2.0 | Stable Diffusion Workflows | ",
-    "tags": [
-      "mv-314937831658",
-      "metaverse"
-    ],
-    "ontology_id": "mv-314937831658"
-  },
-  {
     "id": "Halving",
     "title": "Halving",
     "content": "- #### Relationships\nid:: halving-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: halving-owl-axioms\ncollapsed:: true\n-",
@@ -4822,16 +4342,6 @@
       "metaverse"
     ],
     "ontology_id": "20167"
-  },
-  {
-    "id": "Hardware and Edge",
-    "title": "Hardware and Edge",
-    "content": "- #### Relationships\nid:: hardware-and-edge-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: hardware-and-edge-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n- # Wearables\n- ### Orion\n- Zero to One: How Our Custom Silicon & Chips Are Revolutionizing AR | Meta Quest Blog | Meta Store\n- ",
-    "tags": [
-      "mv-702620567296",
-      "metaverse"
-    ],
-    "ontology_id": "mv-702620567296"
   },
   {
     "id": "Hardware-Platform-Agnostic",
@@ -4992,16 +4502,6 @@
       "metaverse"
     ],
     "ontology_id": "mv-1761742247936"
-  },
-  {
-    "id": "IPAdapter",
-    "title": "IPAdapter",
-    "content": "- #### Relationships\nid:: ipadapter-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: ipadapter-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page\n- automatically published\n- From ip-adapter.github.io\u00a0/\n- # IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image Diffusion Models\n- Hu Ye Jun Zhang Sibo L",
-    "tags": [
-      "mv-366063046856",
-      "metaverse"
-    ],
-    "ontology_id": "mv-366063046856"
   },
   {
     "id": "Identification System",
@@ -5190,16 +4690,6 @@
     "ontology_id": "20232"
   },
   {
-    "id": "Interfaces",
-    "title": "Interfaces",
-    "content": "- #### Relationships\nid:: interfaces-relationships\n- is-part-of:: VirtualWorld, MetaversePlatform\n- requires:: DigitalIdentity, AuthenticationService\n- enables:: SocialInteraction, Presence, UserRepresentation\n- has-property:: Appearance, Customization, Animation\n- #### OWL Axioms\nid:: interfaces-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- # Node based\n- Rivet (ironcladapp.com) is a Interfaces for Infrastructure Hardware and Edge based Agents using Large language models\n- Node based visual int",
-    "tags": [
-      "mv-494144127593",
-      "metaverse"
-    ],
-    "ontology_id": "mv-494144127593"
-  },
-  {
     "id": "Interoperability Framework",
     "title": "Interoperability Framework",
     "content": "-",
@@ -5228,16 +4718,6 @@
       "ai"
     ],
     "ontology_id": "AI-0300"
-  },
-  {
-    "id": "Introduction to me",
-    "title": "Introduction to me",
-    "content": "- #### Relationships\nid:: introduction-to-me-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: introduction-to-me-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n- !image.png{:height 336, :width 1067}\nid:: 661d5f74-f334-4872-ba92-51244c2fb490\n-\n- ## Dreamlab\n- I'm associate director, and",
-    "tags": [
-      "mv-475680473025",
-      "metaverse"
-    ],
-    "ontology_id": "mv-475680473025"
   },
   {
     "id": "Iso 13482 Compliance",
@@ -5280,16 +4760,6 @@
     "ontology_id": "AI-0808"
   },
   {
-    "id": "Knowhere",
-    "title": "Knowhere",
-    "content": "- #### Relationships\nid:: knowhere-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: knowhere-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page\n- automatically published\n- # Enabling Hyper-Personalised Experiences\n- ## Summary\n- **Project Name**: KnoWhere\n- **Objective**: Enabling Hyper-Personalized Experiences i",
-    "tags": [
-      "mv-165251182378",
-      "metaverse"
-    ],
-    "ontology_id": "mv-165251182378"
-  },
-  {
     "id": "Knowledge Distillation",
     "title": "Knowledge Distillation",
     "content": "-",
@@ -5318,16 +4788,6 @@
       "metaverse"
     ],
     "ontology_id": "20308"
-  },
-  {
-    "id": "Knowledge Graphing",
-    "title": "Knowledge Graphing",
-    "content": "- #### Relationships\nid:: knowledge-graphing-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: knowledge-graphing-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n- ## Obsidian\n- ### Obsidian\n- **Obsidian**: A markdown-based note-taking app designed for knowledge management and building a",
-    "tags": [
-      "mv-661220716135",
-      "metaverse"
-    ],
-    "ontology_id": "mv-661220716135"
   },
   {
     "id": "Large language models",
@@ -5380,26 +4840,6 @@
     "ontology_id": "RB-0013"
   },
   {
-    "id": "Lens and Camera Calibration",
-    "title": "Lens and Camera Calibration",
-    "content": "- #### Relationships\nid:: lens-and-camera-calibration-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: lens-and-camera-calibration-owl-axioms\ncollapsed:: true\n-\nDeep Learning for Camera Calibration\nThis web link has been automatically summarised\n- Introduction\n- This repository, 'Awesome-Deep-Camera-Calibration', provide",
-    "tags": [
-      "mv-739517645761",
-      "metaverse"
-    ],
-    "ontology_id": "mv-739517645761"
-  },
-  {
-    "id": "Leopold Aschenbrenner",
-    "title": "Leopold Aschenbrenner",
-    "content": "- #### Relationships\nid:: leopold-aschenbrenner-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: leopold-aschenbrenner-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- {{video https://www.youtube.com/watch?v=zdbVtZIn9IM&}}\n- # The Trillion-Dollar Cluster and Beyond\n- !situationalawareness.pdf\n- WEBPAGE LINK\n- This podcast a",
-    "tags": [
-      "mv-986329467071",
-      "metaverse"
-    ],
-    "ontology_id": "mv-986329467071"
-  },
-  {
     "id": "Lidar",
     "title": "Lidar",
     "content": "- ### Primary Definition\n**LIDAR** - LIDAR in robotics systems\n- maturity:: draft\n- owl:class:: mv:rb0069lidar\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: MetaverseDomain",
@@ -5450,16 +4890,6 @@
     "ontology_id": "BC-0074"
   },
   {
-    "id": "Lightning and Similar L2",
-    "title": "Lightning and Similar L2",
-    "content": "- #### Relationships\nid:: lightning-and-similar-l2-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: lightning-and-similar-l2-owl-axioms\ncollapsed:: true\n-\nicon:: \u039e\npublic:: true\naliases:: Lightning Network, Bitcoin Layer 2, LN, Bitcoin L2\ntermID:: BTC-L2-0001\nbelongsToDomain:: Bitcoin Domain, Layer 2, Payment Protocols, ",
-    "tags": [
-      "mv-174272169738",
-      "metaverse"
-    ],
-    "ontology_id": "mv-174272169738"
-  },
-  {
     "id": "Liquidity Pool",
     "title": "Liquidity Pool",
     "content": "-",
@@ -5468,16 +4898,6 @@
       "metaverse"
     ],
     "ontology_id": "20136"
-  },
-  {
-    "id": "Logseq",
-    "title": "Logseq",
-    "content": "- #### Relationships\nid:: logseq-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: logseq-owl-axioms\ncollapsed:: true\n-\nDemos in Logseq\n- Large language models Mixture of Mutli-LoRA local LLM]\n- ComfyUI Autogen demo?\n- ComfyUI LoRA training demo?\n- Node based visual interfaces demo for NFT creation?\n- docker web version l",
-    "tags": [
-      "mv-183430311235",
-      "metaverse"
-    ],
-    "ontology_id": "mv-183430311235"
   },
   {
     "id": "Long Short-Term Memory",
@@ -5500,16 +4920,6 @@
     "ontology_id": "AI-0047"
   },
   {
-    "id": "Louby Lou",
-    "title": "Project Shaping",
-    "content": "- #### Relationships\nid:: project-shaping-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: project-shaping-owl-axioms\ncollapsed:: true\n-\nProject Shaping\n- ## Lean Canvas\n- **Problem:** Identify the top 1-3 problems that your target customers face. This section also often includes listing existing alternatives that custom",
-    "tags": [
-      "mv-982053179158",
-      "metaverse"
-    ],
-    "ontology_id": "mv-982053179158"
-  },
-  {
     "id": "Loyalty Token",
     "title": "Loyalty Token",
     "content": "-",
@@ -5528,16 +4938,6 @@
       "metaverse"
     ],
     "ontology_id": "BC-0444"
-  },
-  {
-    "id": "MITIH",
-    "title": "Extension",
-    "content": "- #### Relationships\nid:: extension-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: extension-owl-axioms\ncollapsed:: true\n-\nExtension\n- Talk to Andy about the continuity\n-\n- Planning meeting 19th March\n- !MITIH_Technology_Lab_Funding_Business_Case.pdf\n- Themes are\n- ec\n- Project suggestions from me\n- \ud83d\udfe2 HP dashboard base",
-    "tags": [
-      "mv-63479380811",
-      "metaverse"
-    ],
-    "ontology_id": "mv-63479380811"
   },
   {
     "id": "Machine Learning Technique",
@@ -5710,16 +5110,6 @@
     "ontology_id": "20328"
   },
   {
-    "id": "Metaverse Ontology",
-    "title": "Metaverse Ontology",
-    "content": "- #### Relationships\nid:: metaverse-ontology-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: metaverse-ontology-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n- # Existing state of the Art\n- Index \u2014 MLGT: The authoritative multi-lingual glossary of terms (metaverse-standards.org)\n-\n- ",
-    "tags": [
-      "mv-641651579558",
-      "metaverse"
-    ],
-    "ontology_id": "mv-641651579558"
-  },
-  {
     "id": "Metaverse Psychology Profile",
     "title": "Metaverse Psychology Profile",
     "content": "-",
@@ -5738,16 +5128,6 @@
       "metaverse"
     ],
     "ontology_id": "20188"
-  },
-  {
-    "id": "Metaverse and Telecollaboration",
-    "title": "Metaverse and Telecollaboration",
-    "content": "- #### Relationships\nid:: metaverse-and-telecollaboration-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: metaverse-and-telecollaboration-owl-axioms\ncollapsed:: true\n-\nexclude-from-graph-view:: true\n-\n- #Public page automatically published\n- ## Introduction\n- There may be an inflection point in the organisational topolo",
-    "tags": [
-      "mv-606591937212",
-      "metaverse"
-    ],
-    "ontology_id": "mv-606591937212"
   },
   {
     "id": "Metaverse",
@@ -5778,16 +5158,6 @@
       "metaverse"
     ],
     "ontology_id": "20216"
-  },
-  {
-    "id": "Micropayments",
-    "title": "Micropayments",
-    "content": "- #### Relationships\nid:: micropayments-relationships\n- is-part-of:: VirtualWorld, MetaversePlatform\n- requires:: DigitalIdentity, AuthenticationService\n- enables:: SocialInteraction, Presence, UserRepresentation\n- has-property:: Appearance, Customization, Animation\n- #### OWL Axioms\nid:: micropayments-owl-axioms\ncollapsed:: true\n-\npublic:: true\ntermID:: BTC-AI-ECON-0001\nqualityScore:: 0.97\nbitcoinSpecific:: true\n- # The Evolution and Future of Micropayments\n- **Domain**:: Bitcoin-AI Economics, ",
-    "tags": [
-      "mv-639835316173",
-      "metaverse"
-    ],
-    "ontology_id": "mv-639835316173"
   },
   {
     "id": "Middleware",
@@ -5838,16 +5208,6 @@
       "metaverse"
     ],
     "ontology_id": "20244"
-  },
-  {
-    "id": "Mixed reality",
-    "title": "Mixed reality",
-    "content": "- #### Relationships\nid:: mixed-reality-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: mixed-reality-owl-axioms\ncollapsed:: true\n-\npublic:: true\n#Public page\n- automatically published\n- # Spatial and Augment Reality\n- ## Meta Orion\n- {{video https://www.youtube.com/watch?v=G0eKzU_fV00}}\n-\n- ## Apple Vision Pro\n- This t",
-    "tags": [
-      "mv-485321926566",
-      "metaverse"
-    ],
-    "ontology_id": "mv-485321926566"
   },
   {
     "id": "Mobile-Robot",
@@ -5910,16 +5270,6 @@
     "ontology_id": "RB-0062"
   },
   {
-    "id": "Model Training",
-    "title": "Model Training",
-    "content": "- #### Relationships\nid:: model-training-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: model-training-owl-axioms\ncollapsed:: true\n-\n- OpenAccess-AI-Collective/axolotl: Go ahead and axolotl questions (github.com)\n- Mistral takes a mere \u00a3500 for a 7B retrain.\n- ### Custom models\n- AI/ML is the high interest rate credit ",
-    "tags": [
-      "mv-431164427647",
-      "metaverse"
-    ],
-    "ontology_id": "mv-431164427647"
-  },
-  {
     "id": "Model Weights",
     "title": "Model Weights",
     "content": "-",
@@ -5970,16 +5320,6 @@
     "ontology_id": "20155"
   },
   {
-    "id": "Multi Agent RAG scrapbook",
-    "title": "Multi Agent RAG scrapbook",
-    "content": "- #### Relationships\nid:: multi-agent-rag-scrapbook-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: multi-agent-rag-scrapbook-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- Lit survey for PEOPLE David Tully MUST In here for now.\n- {{video https://www.youtube.com/watch?v=LhWtpV-ZEeI}}\n- chat-Sure thing! Below, were going ",
-    "tags": [
-      "mv-644303374260",
-      "metaverse"
-    ],
-    "ontology_id": "mv-644303374260"
-  },
-  {
     "id": "Multi Head Attention",
     "title": "Multi-Head Attention",
     "content": "- #### Relationships\n- is-subclass-of:: Attention Mechanism\n- #### OWL Axioms\n-\n- ## About Multi-Head Attention\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in virtual collaboration, training, and digital twins\n- UK companies increasingly active in metaverse development and imme",
@@ -5988,16 +5328,6 @@
       "ai"
     ],
     "ontology_id": "AI-0810"
-  },
-  {
-    "id": "Multi Sig Governance",
-    "title": "Multi Sig Governance",
-    "content": "-",
-    "tags": [
-      "BC-0468",
-      "blockchain"
-    ],
-    "ontology_id": "BC-0468"
   },
   {
     "id": "Multimodal Understanding",
@@ -6028,16 +5358,6 @@
       "metaverse"
     ],
     "ontology_id": "20316"
-  },
-  {
-    "id": "Music and audio",
-    "title": "Music and audio",
-    "content": "- #### Relationships\nid:: music-and-audio-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: music-and-audio-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n- ## Audio as an essential intimate modality\n- <iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/episode/44yEyY",
-    "tags": [
-      "mv-513244121401",
-      "metaverse"
-    ],
-    "ontology_id": "mv-513244121401"
   },
   {
     "id": "NFT Renting",
@@ -6220,16 +5540,6 @@
     "ontology_id": "RB-0061"
   },
   {
-    "id": "Nostr protocol",
-    "title": "Nostr protocol",
-    "content": "- #### Relationships\nid:: nostr-protocol-relationships\n- is-part-of:: VirtualWorld, MetaversePlatform\n- requires:: DigitalIdentity, AuthenticationService\n- enables:: SocialInteraction, Presence, UserRepresentation\n- has-property:: Appearance, Customization, Animation\n- #### OWL Axioms\nid:: nostr-protocol-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- aliases:: Nostr, Notes and Other Stuff Transmitted by Relays, NOSTR Protocol, Nostr Network\ntermID:: BTC-COM-0001\nbelongsToDomain:: Bitcoin Domain, ",
-    "tags": [
-      "mv-567214887671",
-      "metaverse"
-    ],
-    "ontology_id": "mv-567214887671"
-  },
-  {
     "id": "Objective",
     "title": "Objective",
     "content": "- #### Relationships\n- #### OWL Axioms\n-\n- ## About Objective\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in virtual collaboration, training, and digital twins\n- UK companies increasingly active in metaverse development and immersive technologies\n- Technical capabilities\n- Real",
@@ -6238,16 +5548,6 @@
       "artificial-intelligence"
     ],
     "ontology_id": "AI-0835"
-  },
-  {
-    "id": "Octave Multi Model Laboratory",
-    "title": "Octave Multi Model Laboratory",
-    "content": "- #### Relationships\nid:: octave-multi-model-laboratory-relationships\n- has-part:: WorldSpace, PhysicsEngine, SceneGraph, Avatar\n- is-part-of:: Metaverse, MetaversePlatform\n- requires:: 3DRenderingEngine, NetworkProtocol, DatabaseSystem\n- enables:: VirtualSociety, DigitalEconomy, SocialInteraction\n- #### OWL Axioms\nid:: octave-multi-model-laboratory-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n- # University of Salford (1997-2022)\nid:: 65e1a2f6-f063-44f9-818",
-    "tags": [
-      "mv-501080407130",
-      "metaverse"
-    ],
-    "ontology_id": "mv-501080407130"
   },
   {
     "id": "Octocopter",
@@ -6278,26 +5578,6 @@
       "blockchain"
     ],
     "ontology_id": "BC-0024"
-  },
-  {
-    "id": "Open Generative AI tools",
-    "title": "Open Generative AI tools",
-    "content": "- #### Relationships\nid:: open-generative-ai-tools-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: open-generative-ai-tools-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- # Open (ish) tooling\n- ## Opensource vs Freeware in AI:\n- This is a hot, and also seemingly endless debate that has been going on for years.\n- Open-sou",
-    "tags": [
-      "mv-654626298974",
-      "metaverse"
-    ],
-    "ontology_id": "mv-654626298974"
-  },
-  {
-    "id": "Open Webui and Pipelines",
-    "title": "OpenWebUI",
-    "content": "- #### Relationships\nid:: openwebui-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: openwebui-owl-axioms\ncollapsed:: true\n-\nOpenWebUI\n- WebDev and Consumer Tooling Large language models WebUI for Large language models formally Ollama open-webui/open-webui: User-friendly WebUI for LLMs (Formerly Ollama WebUI) (github.com",
-    "tags": [
-      "mv-665661964810",
-      "metaverse"
-    ],
-    "ontology_id": "mv-665661964810"
   },
   {
     "id": "Open World",
@@ -6356,16 +5636,6 @@
     "ontology_id": "AI-0054"
   },
   {
-    "id": "Overview of Machine Learning Techniques",
-    "title": "Overview of Machine Learning Techniques",
-    "content": "- #### Relationships\nid:: overview-of-machine-learning-techniques-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: overview-of-machine-learning-techniques-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page\n- automatically published\n- ## AI or ML or what?\n- It's not intelligent. It's just machine learning which is",
-    "tags": [
-      "mv-172100543101",
-      "metaverse"
-    ],
-    "ontology_id": "mv-172100543101"
-  },
-  {
     "id": "Ownership & Freedom (distributed)",
     "title": "Ownership & Freedom (distributed)",
     "content": "-",
@@ -6386,16 +5656,6 @@
     "ontology_id": "20322"
   },
   {
-    "id": "PEOPLE",
-    "title": "Nick Avis",
-    "content": "- #### Relationships\nid:: nick-avis-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: nick-avis-owl-axioms\ncollapsed:: true\n-\nNick Avis\n- ## Intelligent Ultrasound\n- Nick is after a CTO for his new project which is ostensibly training for ultrasound using graphics that are hand made, but it is trending toward GenAI\n- DONE",
-    "tags": [
-      "mv-216451438188",
-      "metaverse"
-    ],
-    "ontology_id": "mv-216451438188"
-  },
-  {
     "id": "Parameter",
     "title": "Parameter",
     "content": "- #### Relationships\n- #### OWL Axioms\n-\n- ## About Parameter\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in virtual collaboration, training, and digital twins\n- UK companies increasingly active in metaverse development and immersive technologies\n- Technical capabilities\n- Real",
@@ -6404,16 +5664,6 @@
       "artificial-intelligence"
     ],
     "ontology_id": "AI-0837"
-  },
-  {
-    "id": "Patent",
-    "title": "Patent",
-    "content": "- #### Relationships\nid:: patent-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: patent-owl-axioms\ncollapsed:: true\n-\n- termID:: patent-2025-001\n- qualityScore:: 0.89\n- lastUpdated:: 2025-11-15\n- categories:: Patent Law, Intellectual Property, Patent Landscape, Innovation\n- status:: Active Research [Updated 2025]\n-\n- # ",
-    "tags": [
-      "mv-4277325389",
-      "metaverse"
-    ],
-    "ontology_id": "mv-4277325389"
   },
   {
     "id": "PathPlanning",
@@ -6516,16 +5766,6 @@
     "ontology_id": "20190"
   },
   {
-    "id": "Planning Kanban - currently broken",
-    "title": "Planning Kanban - currently broken",
-    "content": "- #### Relationships\nid:: planning-kanban---currently-broken-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: planning-kanban---currently-broken-owl-axioms\ncollapsed:: true\n-\n- {{renderer :kboard-query, High level Projects View, progress, TODO, DOING, DONE, cover, 260px}}\n- {{query (and PlayerTwo (property :progress))}}\n",
-    "tags": [
-      "mv-910289072312",
-      "metaverse"
-    ],
-    "ontology_id": "mv-910289072312"
-  },
-  {
     "id": "Platform Engineering",
     "title": "Platform Engineering",
     "content": "-",
@@ -6556,16 +5796,6 @@
     "ontology_id": "20267"
   },
   {
-    "id": "PlayerTwo",
-    "title": "PlayerTwo",
-    "content": "- #### Relationships\nid:: playertwo-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: playertwo-owl-axioms\ncollapsed:: true\n-\n- Planning for work on Neocadia and Player Two code\n- Near term planning\n- stand up a nostr relay\n- sync whitelist from publey hex list on the middleware\n- isolate the subset of users on the whitel",
-    "tags": [
-      "mv-180849186917",
-      "metaverse"
-    ],
-    "ontology_id": "mv-180849186917"
-  },
-  {
     "id": "Policy Engine",
     "title": "Policy Engine",
     "content": "-",
@@ -6574,16 +5804,6 @@
       "metaverse"
     ],
     "ontology_id": "20070"
-  },
-  {
-    "id": "Politics, Law, Privacy",
-    "title": "Politics, Law, Privacy",
-    "content": "- #### Relationships\nid:: politics,-law,-privacy-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: politics,-law,-privacy-owl-axioms\ncollapsed:: true\n-\npublic:: true\nicon:: \u2696\ufe0f\nThis is a general purpose linking slide for future presentation\n- ## Politics, Law, Privacy\n- EU AI act is it'll be near impossible now for small d",
-    "tags": [
-      "mv-263215818414",
-      "metaverse"
-    ],
-    "ontology_id": "mv-263215818414"
   },
   {
     "id": "Pool Share",
@@ -6686,16 +5906,6 @@
     "ontology_id": "20227"
   },
   {
-    "id": "Privacy, Trust and Safety",
-    "title": "Privacy, Trust and Safety",
-    "content": "- #### Relationships\nid:: privacy,-trust-and-safety-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: privacy,-trust-and-safety-owl-axioms\ncollapsed:: true\n-\npublic:: true\n#Public page automatically published\n- # Trust and Safety\n- Trust and safety (T&S) is crucially important for building ethical and inclu\u00adsive online co",
-    "tags": [
-      "mv-936520497102",
-      "metaverse"
-    ],
-    "ontology_id": "mv-936520497102"
-  },
-  {
     "id": "Privacy-Enhancing Computation (PEC)",
     "title": "Privacy-Enhancing Computation (PEC)",
     "content": "-",
@@ -6752,46 +5962,6 @@
     "tags": []
   },
   {
-    "id": "Product and Risk Management",
-    "title": "Product and Risk Management",
-    "content": "- #### Relationships\nid:: product-and-risk-management-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: product-and-risk-management-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page\n- automatically published\n- # Academic science mindset, is business product mindset\nid:: 659a922a-2c71-4899-b2c6-a6e88ef339fa\n- Scie",
-    "tags": [
-      "mv-288045444843",
-      "metaverse"
-    ],
-    "ontology_id": "mv-288045444843"
-  },
-  {
-    "id": "Project BroBots",
-    "title": "Project BroBots",
-    "content": "- #### Relationships\nid:: project-brobots-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: project-brobots-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- # Project: BroBots\n- ## Mission Statement\n- To address the negative impacts of toxic online behavior by developing a multi-agent system that can identify and counter har",
-    "tags": [
-      "mv-950883424226",
-      "metaverse"
-    ],
-    "ontology_id": "mv-950883424226"
-  },
-  {
-    "id": "Projects",
-    "title": "Projects",
-    "content": "- #### Relationships\nid:: projects-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: projects-owl-axioms\ncollapsed:: true\n-\n- Fashion 3D objects\n- TODO write a script to start the docker for CRM\n-\n- DONE Bind it to llama3\n- Binding social immersive spaces with AI\n- Metaverse Ontology\n- Ontology conversation with AIs\n- Kno",
-    "tags": [
-      "mv-221207825242",
-      "metaverse"
-    ],
-    "ontology_id": "mv-221207825242"
-  },
-  {
-    "id": "Prompt Engineering",
-    "title": "Prompt Engineering",
-    "content": "- #### Relationships\nid:: prompt-engineering-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: prompt-engineering-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page\n- automatically published\n- There is a new class of wrapped and visualised prompt engineering playgrounds\n- Home (cyborgism.wiki)\n- websim.ai\n- world_",
-    "tags": [
-      "mv-304203143932",
-      "metaverse"
-    ],
-    "ontology_id": "mv-304203143932"
-  },
-  {
     "id": "Proof Of Authority",
     "title": "Proof of Authority",
     "content": "- #### Relationships\n- is-subclass-of:: Proof Based Consensus\n- also-known-as:: PoA\n- #### OWL Axioms\n-\n- ## About Proof of Authority\n**Proof of Authority (PoA)** is a Consensus Mechanism where transaction validation rights are granted to pre-approved validators with verified real-world identities. Unlike Proof of Work or Proof of Stake, PoA relies on reputation and identity rather than computational power or economic stake. This makes it ideal for Permissioned Blockchain networks requiring high",
@@ -6810,36 +5980,6 @@
       "artificial-intelligence"
     ],
     "ontology_id": "AI-0846"
-  },
-  {
-    "id": "Proprietary Image Generation",
-    "title": "Proprietary Image Generation",
-    "content": "- #### Relationships\nid:: proprietary-image-generation-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: proprietary-image-generation-owl-axioms\ncollapsed:: true\n-\npublic:: true\n#Public page\n- automatically published\n- ## Closed Source Image Generation: id:: 659a9229-ed15-4932-a207-eb2daa96786e\n- ### MidJourney v5&6\n- twi",
-    "tags": [
-      "mv-751415638687",
-      "metaverse"
-    ],
-    "ontology_id": "mv-751415638687"
-  },
-  {
-    "id": "Proprietary Large Language Models",
-    "title": "Proprietary Large Language Models",
-    "content": "- #### Relationships\nid:: proprietary-large-language-models-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: proprietary-large-language-models-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page\n- automatically published\n- ## Closed source Large Language Models: and AI Companies\n- !1712680210067.jpeg\n- LinkedIn po",
-    "tags": [
-      "mv-816522063571",
-      "metaverse"
-    ],
-    "ontology_id": "mv-816522063571"
-  },
-  {
-    "id": "Proprietary Video",
-    "title": "Proprietary Video",
-    "content": "- #### Relationships\nid:: proprietary-video-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: proprietary-video-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n- Seems that everyone expects this to break through this year.\n- Justine Moore from A16Z has compiled 2023 on Twitter.\n- {{tweet",
-    "tags": [
-      "mv-192862651986",
-      "metaverse"
-    ],
-    "ontology_id": "mv-192862651986"
   },
   {
     "id": "Protective Stop",
@@ -6920,16 +6060,6 @@
       "metaverse"
     ],
     "ontology_id": "mv-1761742247959"
-  },
-  {
-    "id": "Python and PyTorch",
-    "title": "Python and PyTorch",
-    "content": "- #### Relationships\nid:: python-and-pytorch-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: python-and-pytorch-owl-axioms\ncollapsed:: true\n-\n- https://intel.github.io/intel-extension-for-pytorch/#introduction Python and PyTorch\n- https://github.com/pydn/ComfyUI-to-Python-Extension Python and PyTorch ComfyUI convert to ",
-    "tags": [
-      "mv-682405397089",
-      "metaverse"
-    ],
-    "ontology_id": "mv-682405397089"
   },
   {
     "id": "Quadcopter",
@@ -7070,16 +6200,6 @@
       "ai"
     ],
     "ontology_id": "AI-0876"
-  },
-  {
-    "id": "Real Time",
-    "title": "Real Time",
-    "content": "- #### Relationships\nid:: real-time-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: real-time-owl-axioms\ncollapsed:: true\n-\n- Real Time interaction engines for live\n- TOOLL3 is touch designer light ish? Touch Designer offworld allows integration with Unreal and NDI spout connection to ComfyUI\n- TROIKATRONIX : ISADORA - ",
-    "tags": [
-      "mv-326164975514",
-      "metaverse"
-    ],
-    "ontology_id": "mv-326164975514"
   },
   {
     "id": "Real-Time Rendering Pipeline",
@@ -7230,16 +6350,6 @@
       "metaverse"
     ],
     "ontology_id": "RB-0036"
-  },
-  {
-    "id": "Retrieval Augmented Generation - RAG",
-    "title": "Building a Knowledge Assistant",
-    "content": "- #### Relationships\nid:: building-a-knowledge-assistant-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: building-a-knowledge-assistant-owl-axioms\ncollapsed:: true\n-\nBuilding a Knowledge Assistant\n- The goal of a knowledge assistant is to create a system that can accept a wide range of tasks, from simple direct queries ",
-    "tags": [
-      "mv-955422140506",
-      "metaverse"
-    ],
-    "ontology_id": "mv-955422140506"
   },
   {
     "id": "Right to Be Forgotten",
@@ -7438,16 +6548,6 @@
     "ontology_id": "RB-0087"
   },
   {
-    "id": "Safety and alignment",
-    "title": "Safety and alignment",
-    "content": "- #### Relationships\nid:: safety-and-alignment-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: safety-and-alignment-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- What used to be called bias whet I was doing postgrad Machine Learning (2020) is now called Safety and alignment.\n- Bias\n- [[2309.17012] Benchmarking Cognitive",
-    "tags": [
-      "mv-5331324652",
-      "metaverse"
-    ],
-    "ontology_id": "mv-5331324652"
-  },
-  {
     "id": "Salt",
     "title": "Salt",
     "content": "- #### Relationships\nid:: salt-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: salt-owl-axioms\ncollapsed:: true\n-",
@@ -7496,16 +6596,6 @@
       "metaverse"
     ],
     "ontology_id": "20172"
-  },
-  {
-    "id": "Segmentation and Identification",
-    "title": "Segmentation and Identification",
-    "content": "- #### Relationships\nid:: segmentation-and-identification-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: segmentation-and-identification-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n- Products.Blog DeepDataSpace | The Go-To Choice for CV Data Visualization, Annotation, and Model An",
-    "tags": [
-      "mv-798670837568",
-      "metaverse"
-    ],
-    "ontology_id": "mv-798670837568"
   },
   {
     "id": "Self-Sovereign Identity (SSI)",
@@ -7610,7 +6700,7 @@
   {
     "id": "Social Impact Assessment (SIA)",
     "title": "Social Impact Assessment (SIA)",
-    "content": "-",
+    "content": "- ### IMF report is tough reading\n- #### 2024 top up report\n- (I agree with lots of this one, but it's pretty much the IMF fishing for power, hence distancing themselves from it in the actual text, while also pushing it out on all channels)\n- Broadening the Gains from Generative AI: The Role of Fiscal Policies (imf.org)\n- Fiscal Policy Can Help Broaden the Gains blog post based on it\n- **Increased Poverty Due to Robotization**:\n- Robotization may lead to increasing poverty, especially affecting ",
     "tags": [
       "20228",
       "metaverse"
@@ -7626,16 +6716,6 @@
       "metaverse"
     ],
     "ontology_id": "20268"
-  },
-  {
-    "id": "Social contract and jobs",
-    "title": "Social contract and jobs",
-    "content": "- #### Relationships\nid:: social-contract-and-jobs-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: social-contract-and-jobs-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n- !ssstwitter.com_1734385624871.mp4\n- # Artificial Intelligence\n- Some people LIKE clear repetitive tasks as their",
-    "tags": [
-      "mv-65709528000",
-      "metaverse"
-    ],
-    "ontology_id": "mv-65709528000"
   },
   {
     "id": "SocialVR",
@@ -7666,16 +6746,6 @@
       "blockchain"
     ],
     "ontology_id": "BC-0566"
-  },
-  {
-    "id": "Soon-Next-Later (AI futurology)",
-    "title": "Soon-Next-Later (AI futurology)",
-    "content": "- #### Relationships\nid:: soon-next-later-(ai-futurology)-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: soon-next-later-(ai-futurology)-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- # Soon, Next, and Later\nid:: 659a9246-af6b-4582-9368-3b688130d703 collapsed:: true (exclusively optimistic take)\n- twitter link to the re",
-    "tags": [
-      "mv-621953135183",
-      "metaverse"
-    ],
-    "ontology_id": "mv-621953135183"
   },
   {
     "id": "Spatial Ai",
@@ -7758,16 +6828,6 @@
     "ontology_id": "mv-1761742247973"
   },
   {
-    "id": "Speech and voice",
-    "title": "Speech and voice",
-    "content": "- #### Relationships\nid:: speech-and-voice-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: speech-and-voice-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n- {{video https://www.youtube.com/watch?v=xCDAjpZJWYw}}\n- NVIDIA/NeMo: NeMo: a toolkit for conversational AI (github.com)\n- Canary",
-    "tags": [
-      "mv-848312212064",
-      "metaverse"
-    ],
-    "ontology_id": "mv-848312212064"
-  },
-  {
     "id": "Speed And Separation Monitoring",
     "title": "Speed And Separation Monitoring",
     "content": "- ### Primary Definition\n**Speed and Separation Monitoring** - Speed and Separation Monitoring in robotics systems\n- maturity:: draft\n- owl:class:: mv:rb0105speedandseparationmonitoring\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: MetaverseDomain\n- ## About rb 0105 speed and separation monitoring\n- ### Primary Definition\n**Speed and Separation Monitoring** - Speed and Separation Monitoring in robotics systems\n-\n- ### Original Content\ncollapsed:: true\n- clojure\n(D",
@@ -7788,16 +6848,6 @@
     "ontology_id": "RB-0093"
   },
   {
-    "id": "Stable Diffusion",
-    "title": "Stable Diffusion",
-    "content": "- #### Relationships\nid:: stable-diffusion-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: stable-diffusion-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n- Stable\u00a0Diffusion\u00a0has\u00a0emerged\u00a0as\u00a0a\u00a0transformative\u00a0force\u00a0in\u00a0generative\u00a0AI,\u00a0mainly\u00a0for\u00a0text to image\u00a0synthesis. This\u00a0open source\u00a0mo",
-    "tags": [
-      "mv-819761654713",
-      "metaverse"
-    ],
-    "ontology_id": "mv-819761654713"
-  },
-  {
     "id": "Stablecoin",
     "title": "Stablecoin",
     "content": "- #### Relationships\nid:: stablecoin-relationships\n- is-part-of:: Crypto Token, Virtual Currency, Digital Asset\n- requires:: Blockchain, Smart Contract, Collateral Reserves, Price Oracle\n- depends-on:: Peg Mechanism, Reserve Asset, Stabilization Algorithm\n- enables:: Price Stability, Cross-Border Transactions, Virtual Commerce, Value Transfer\n- #### OWL Axioms\nid:: stablecoin-owl-axioms\ncollapsed:: true\n-\n- ## About Stablecoin\nid:: stablecoin-about\n- Stablecoins are a category of cryptocurrencie",
@@ -7816,16 +6866,6 @@
       "metaverse"
     ],
     "ontology_id": "20149"
-  },
-  {
-    "id": "State of the art in AI",
-    "title": "State of the art in AI",
-    "content": "- #### Relationships\nid:: state-of-the-art-in-ai-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: state-of-the-art-in-ai-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n- # A look at 2023\nid:: 65a2a968-c150-4dca-8ddc-902f29a8d7e0\n- <iframe src=\"https://spectrum.ieee.org/ai-index-2024\" s",
-    "tags": [
-      "mv-564158265963",
-      "metaverse"
-    ],
-    "ontology_id": "mv-564158265963"
   },
   {
     "id": "Stiffness",
@@ -7856,16 +6896,6 @@
       "metaverse"
     ],
     "ontology_id": "20175"
-  },
-  {
-    "id": "Suggested Reading Order",
-    "title": "Suggested Reading Order",
-    "content": "- #### Relationships\nid:: suggested-reading-order-relationships\n- is-part-of:: VirtualWorld, MetaversePlatform\n- requires:: DigitalIdentity, AuthenticationService\n- enables:: SocialInteraction, Presence, UserRepresentation\n- has-property:: Appearance, Customization, Animation\n- #### OWL Axioms\nid:: suggested-reading-order-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- I have been working on learning, and learning how to store that knowledge for myself and others since 2019 when I stopped being Te",
-    "tags": [
-      "mv-542014308528",
-      "metaverse"
-    ],
-    "ontology_id": "mv-542014308528"
   },
   {
     "id": "Supply Chain Traceability",
@@ -8218,16 +7248,6 @@
     "ontology_id": "RB-0070"
   },
   {
-    "id": "Taproot assets",
-    "title": "Taproot assets",
-    "content": "- #### Relationships\nid:: taproot-assets-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: taproot-assets-owl-axioms\ncollapsed:: true\n-\n- termID:: BTC-AI-0010\n- bitcoinSpecific:: true\n- qualityScore:: 0.96\n- category:: Bitcoin Protocol, Layer 2, Asset Issuance, Lightning Network\n- relatedConcepts:: RGB Protocol, L402 Prot",
-    "tags": [
-      "mv-276865951985",
-      "metaverse"
-    ],
-    "ontology_id": "mv-276865951985"
-  },
-  {
     "id": "Task-Specific Head",
     "title": "Task Specific Head",
     "content": "-",
@@ -8246,16 +7266,6 @@
       "ai"
     ],
     "ontology_id": "AI-0280"
-  },
-  {
-    "id": "Technical History (extended CV)",
-    "title": "Technical History (extended CV)",
-    "content": "- #### Relationships\nid:: technical-history-(extended-cv)-relationships\n- is-part-of:: VirtualWorld, MetaversePlatform\n- requires:: DigitalIdentity, AuthenticationService\n- enables:: SocialInteraction, Presence, UserRepresentation\n- has-property:: Appearance, Customization, Animation\n- #### OWL Axioms\nid:: technical-history-(extended-cv)-owl-axioms\ncollapsed:: true\n-\n- {{embed ((65e1a2f6-f063-44f9-8181-cc6e8d5e2339))}}\n- ## Legacy Slides\n- .#.v-gallery-col2\n- !Screenshot 2024-02-08 114439.png\n- ",
-    "tags": [
-      "mv-481777689921",
-      "metaverse"
-    ],
-    "ontology_id": "mv-481777689921"
   },
   {
     "id": "Technique",
@@ -8388,16 +7398,6 @@
     "ontology_id": "20270"
   },
   {
-    "id": "TokenEconomicsDomain",
-    "title": "TokenEconomicsDomain",
-    "content": "- #### Relationships\nid:: tokeneconomicsdomain-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: tokeneconomicsdomain-owl-axioms\ncollapsed:: true\n-\n- ### MetaOntologyBlock\nid:: token-economics-domain-meta\ncollapsed:: true\n- **Classification**\n- meta-ontology:: true\n- classification-type:: domain\n- name:: TokenEconomicsDom",
-    "tags": [
-      "mv-374220825164",
-      "metaverse"
-    ],
-    "ontology_id": "mv-374220825164"
-  },
-  {
     "id": "Tokenization",
     "title": "Tokenization",
     "content": "- #### Relationships\nid:: tokenization-relationships\n- has-part:: Smart Contract, Token Standard, Asset Metadata, Blockchain Transaction\n- requires:: Blockchain Network, Cryptographic Keys, Token Standard Protocol, Digital Wallet\n- enables:: NFT Minting, Asset Trading, Ownership Transfer, Fractional Ownership\n- depends-on:: Distributed Ledger, Consensus Mechanism, Digital Signature\n- is-part-of:: Digital Asset Management, Blockchain Economy\n- #### OWL Axioms\nid:: tokenization-owl-axioms\ncollapse",
@@ -8446,16 +7446,6 @@
       "metaverse"
     ],
     "ontology_id": "PC-0013"
-  },
-  {
-    "id": "Training for Design Practitioners",
-    "title": "Training for Design Practitioners",
-    "content": "- #### Relationships\nid:: training-for-design-practitioners-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: training-for-design-practitioners-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- # Insights about AI for small businesses\n- ## AI in the cloud vs your own AI\n- ### Business Admin leveraging Gemini\n- **Primary Recom",
-    "tags": [
-      "mv-863616487984",
-      "metaverse"
-    ],
-    "ontology_id": "mv-863616487984"
   },
   {
     "id": "Training",
@@ -8648,16 +7638,6 @@
     "ontology_id": "mv-1761742247978"
   },
   {
-    "id": "VSCode",
-    "title": "Remote development over SSH tips.",
-    "content": "- #### OWL Axioms\nid:: remote-development-over-ssh-tips.-owl-axioms\ncollapsed:: true\n-\nRemote development over SSH tips.\n- ## Overview\n- This guide provides a comprehensive approach to maximizing SSH connection stability and ensuring persistent development sessions when using VS Code Remote SSH. By combining robust keepalive settings with tmux session management, you'll maintain productive remote development workflows even with unstable network connections.\n- ## Goals\n- **Prevent SSH timeouts** ",
-    "tags": [
-      "mv-959859783096",
-      "metaverse"
-    ],
-    "ontology_id": "mv-959859783096"
-  },
-  {
     "id": "Validation Process",
     "title": "Validation Process",
     "content": "-",
@@ -8716,16 +7696,6 @@
       "ai"
     ],
     "ontology_id": "AI-VAE-001"
-  },
-  {
-    "id": "Verifiable Credential (VC)",
-    "title": "Verifiable Credential (VC)",
-    "content": "- #### Relationships\nid:: verifiable-credential-relationships\n- is-enabled-by:: Decentralized Identity (DID)\n- has-part:: Claim, Cryptographic Proof, Issuer Signature, Credential Metadata, Credential Schema\n- is-part-of:: Self-Sovereign Identity (SSI), Trust Infrastructure\n- requires:: Decentralized Identity (DID), Public Key Infrastructure, Digital Signature, Identity Wallet\n- depends-on:: W3C VC Data Model, JSON-LD, Linked Data Signatures, Credential Status Registry\n- enables:: Trustable Attes",
-    "tags": [
-      "20282",
-      "metaverse"
-    ],
-    "ontology_id": "20282"
   },
   {
     "id": "Virtual Lighting Model",
@@ -8978,16 +7948,6 @@
     "ontology_id": "20189"
   },
   {
-    "id": "artificial superintelligence",
-    "title": "artificial superintelligence",
-    "content": "- #### Relationships\nid:: artificial-superintelligence-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: artificial-superintelligence-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- # Artificial Superintelligence\n- Artificial superintelligence (ASI) is a theoretical form of AI that surpasses human intelligence and cognitive",
-    "tags": [
-      "mv-784990671883",
-      "metaverse"
-    ],
-    "ontology_id": "mv-784990671883"
-  },
-  {
     "id": "collaborative",
     "title": "collaborative",
     "content": "public:: true",
@@ -8998,16 +7958,6 @@
     "title": "debug linked node",
     "content": "public:: true\n- This is a node linked to Debug Test Page\n-",
     "tags": []
-  },
-  {
-    "id": "ecash",
-    "title": "ecash",
-    "content": "- #### Relationships\nid:: ecash-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: ecash-owl-axioms\ncollapsed:: true\n-\npublic:: true\ntermID:: BTC-PRIV-0002\nqualityScore:: 0.92\n- #Public page -- automatically published\n- # David Chaum & The Evolution of Electronic Cash (eCash)\n- ## Historical Foundation & DigiCash Era\nThe *",
-    "tags": [
-      "mv-679695621693",
-      "metaverse"
-    ],
-    "ontology_id": "mv-679695621693"
   },
   {
     "id": "glTF (3D File Format)",
@@ -9040,26 +7990,6 @@
     "ontology_id": "mv-1761742247981"
   },
   {
-    "id": "multimodal",
-    "title": "multimodal",
-    "content": "- #### Relationships\nid:: multimodal-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: multimodal-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n- # OpenAI ChatGPT-4o (omni)\nid:: 66446c0e-93be-431d-93d4-1e5fa36848c5\n- Free to use, for everyone! Not private by default.\n- True multi modal",
-    "tags": [
-      "mv-535789044987",
-      "metaverse"
-    ],
-    "ontology_id": "mv-535789044987"
-  },
-  {
-    "id": "ollama",
-    "title": "ollama",
-    "content": "- #### Relationships\nid:: ollama-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: ollama-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- The Ollama repository on GitHub is a comprehensive, MIT-licensed platform for utilizing and managing large language models (LLMs) such as Llama 3.1, Mistral, Gemma 2, and others. It offer",
-    "tags": [
-      "mv-822624739539",
-      "metaverse"
-    ],
-    "ontology_id": "mv-822624739539"
-  },
-  {
     "id": "ontology-properties",
     "title": "Ontology Property Definitions",
     "content": "- #### OWL Property Definitions\nid:: ontology-properties-owl\ncollapsed:: true\n-\n- ## About Ontology Property Definitions\nid:: ontology-properties-about\n- This ontology file provides comprehensive formal definitions for all object properties and datatype properties used throughout the Disruptive Technology Ontology. Properties establish typed, directional relationships between concepts, enabling automated reasoning, consistency checking, and knowledge graph traversal across AI, blockchain, roboti",
@@ -9078,16 +8008,6 @@
       "robotics"
     ],
     "ontology_id": "RB-0065"
-  },
-  {
-    "id": "relighting",
-    "title": "relighting",
-    "content": "- #### Relationships\nid:: relighting-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: relighting-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- Global lighting | Image Based Lighting ComfyUI lllyasviel/IC-Light: More relighting! (github.com)\n- Relighting Relight Better than Magnific - Relighting v5 (better UX) | ComfyUI W",
-    "tags": [
-      "mv-216922492684",
-      "metaverse"
-    ],
-    "ontology_id": "mv-216922492684"
   },
   {
     "id": "security-audit-guide",

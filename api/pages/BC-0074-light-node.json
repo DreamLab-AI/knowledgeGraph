@@ -27,18 +27,18 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "NetworkComponent",
-    "SecurityLayer",
     "Global lighting | Image Based Lighting",
-    "Apple",
-    "CryptographicDomain",
-    "Blockchain Entity",
-    "ComfyUI",
-    "AI Video",
-    "relighting",
+    "SecurityLayer",
     "IEEE 2418.1",
+    "relighting",
+    "Apple",
+    "Blockchain Entity",
+    "CryptographicDomain",
     "ISO/IEC 23257:2021",
-    "NIST NISTIR"
+    "AI Video",
+    "NIST NISTIR",
+    "NetworkComponent",
+    "ComfyUI"
   ],
   "ontology": {
     "term_id": "BC-0074",

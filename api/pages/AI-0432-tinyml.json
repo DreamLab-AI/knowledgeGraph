@@ -25,11 +25,11 @@
   },
   "backlinks": [],
   "wiki_links": [
+    "AIEthicsDomain",
     "MLPerf Tiny",
     "ConceptualLayer",
     "TensorFlow Lite Micro",
-    "TinyML Foundation",
-    "AIEthicsDomain"
+    "TinyML Foundation"
   ],
   "ontology": {
     "term_id": "AI-0432",

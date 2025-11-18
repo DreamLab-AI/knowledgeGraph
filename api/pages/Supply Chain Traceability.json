@@ -17,9 +17,7 @@
     "- owl:role": "Concept",
     "- belongsToDomain": "[[BlockchainDomain]]"
   },
-  "backlinks": [
-    "TokenEconomicsDomain"
-  ],
+  "backlinks": [],
   "wiki_links": [
     "BlockchainDomain"
   ],

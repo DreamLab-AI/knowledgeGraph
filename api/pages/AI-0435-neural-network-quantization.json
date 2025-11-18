@@ -25,11 +25,11 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ConceptualLayer",
-    "TensorRT",
-    "TensorFlow Lite Quantization",
     "AIEthicsDomain",
-    "ONNX Runtime"
+    "TensorFlow Lite Quantization",
+    "ONNX Runtime",
+    "ConceptualLayer",
+    "TensorRT"
   ],
   "ontology": {
     "term_id": "AI-0435",

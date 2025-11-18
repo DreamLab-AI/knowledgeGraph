@@ -30,20 +30,19 @@
   "backlinks": [
     "RGB and Client Side Validation",
     "Cryptography",
-    "Bitcoin Technical Overview",
     "Digital Signature",
     "Hash Function",
-    "CryptographicDomain",
+    "Bitcoin",
     "SHA-256",
     "Address"
   ],
   "wiki_links": [
     "SecurityLayer",
-    "CryptographicDomain",
-    "Blockchain Entity",
-    "CryptographicPrimitive",
     "IEEE 2418.1",
+    "Blockchain Entity",
+    "CryptographicDomain",
     "ISO/IEC 23257:2021",
+    "CryptographicPrimitive",
     "NIST NISTIR"
   ],
   "ontology": {

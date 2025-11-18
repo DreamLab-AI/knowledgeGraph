@@ -30,9 +30,9 @@
   },
   "backlinks": [
     "Consensus Mechanism",
-    "Digital Asset Risks",
     "Difficulty",
     "BC 0102 Inflation",
+    "Digital Twin of the Customer",
     "BC 0115 minting",
     "BC 0110 fee market",
     "Runes and Glyphs",
@@ -41,24 +41,23 @@
     "Hash Function",
     "BC 0104 supply cap",
     "Bitcoin",
-    "Digital Objects",
     "BC 0103 Halving",
     "SHA-256",
     "Transaction Pool"
   ],
   "wiki_links": [
-    "ConsensusProtocol",
-    "Hash Rate",
-    "Blockchain Entity",
-    "Bitcoin",
+    "ConsensusDomain",
     "Renewable Energy",
-    "Proof of Work",
-    "ProtocolLayer",
     "IEEE 2418.1",
+    "ProtocolLayer",
+    "ConsensusProtocol",
+    "Energy",
+    "Blockchain Entity",
+    "Hash Rate",
+    "Proof of Work",
     "ISO/IEC 23257:2021",
     "NIST NISTIR",
-    "Energy",
-    "ConsensusDomain"
+    "Bitcoin"
   ],
   "ontology": {
     "term_id": "BC-0053",

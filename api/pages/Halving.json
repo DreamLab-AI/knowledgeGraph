@@ -28,20 +28,20 @@
     "- is-subclass-of": "[[Blockchain Entity]], [[ConsensusProtocol]]"
   },
   "backlinks": [
-    "Digital Asset Risks",
     "BC 0102 Inflation",
+    "Digital Twin of the Customer",
     "Runes and Glyphs",
     "BC 0104 supply cap",
     "Bitcoin"
   ],
   "wiki_links": [
+    "ConsensusDomain",
+    "IEEE 2418.1",
+    "ProtocolLayer",
     "ConsensusProtocol",
     "Blockchain Entity",
-    "ProtocolLayer",
-    "IEEE 2418.1",
     "ISO/IEC 23257:2021",
-    "NIST NISTIR",
-    "ConsensusDomain"
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0070",

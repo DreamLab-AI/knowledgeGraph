@@ -35,16 +35,15 @@
     "BC 0109 priority fee",
     "Bitcoin",
     "Smart Contract Platform",
-    "Transaction Pool",
-    "Lightning and Similar L2"
+    "Transaction Pool"
   ],
   "wiki_links": [
-    "ConceptualLayer",
-    "BlockchainDomain",
-    "DistributedDataStructure",
-    "Blockchain Entity",
     "IEEE 2418.1",
+    "DistributedDataStructure",
+    "BlockchainDomain",
+    "Blockchain Entity",
     "ISO/IEC 23257:2021",
+    "ConceptualLayer",
     "NIST NISTIR"
   ],
   "ontology": {

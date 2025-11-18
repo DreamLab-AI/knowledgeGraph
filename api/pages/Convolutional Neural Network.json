@@ -21,10 +21,10 @@
     "Deep Learning"
   ],
   "wiki_links": [
-    "Krizhevsky et al. 2012 AlexNet",
     "LeCun et al. 1998 Gradient-Based Learning",
-    "IEEE CVPR Proceedings",
-    "He et al. 2016 ResNet"
+    "Krizhevsky et al. 2012 AlexNet",
+    "He et al. 2016 ResNet",
+    "IEEE CVPR Proceedings"
   ],
   "ontology": {
     "term_id": "AI-0032",

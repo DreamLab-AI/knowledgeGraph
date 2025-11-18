@@ -27,17 +27,17 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Digital Art Application",
-    "ETSI GS MEC",
-    "Music Production Tool",
-    "Animation Software",
-    "ETSI Domain Taxonomy",
-    "InfrastructureDomain",
     "ApplicationLayer",
-    "CreativeMediaDomain",
+    "Digital Art Application",
+    "Animation Software",
     "Design Platform",
+    "CreativeMediaDomain",
+    "ETSI Domain Taxonomy",
     "Collaboration Tool Categorization",
-    "Creative Application Classification"
+    "ETSI GS MEC",
+    "Creative Application Classification",
+    "Music Production Tool",
+    "InfrastructureDomain"
   ],
   "ontology": {
     "term_id": "20335",

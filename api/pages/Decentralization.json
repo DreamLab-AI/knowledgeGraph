@@ -29,15 +29,15 @@
   },
   "backlinks": [
     "Consensus Mechanism",
-    "Digital Objects"
+    "Digital Twin of the Customer"
   ],
   "wiki_links": [
-    "ConceptualLayer",
-    "BlockchainDomain",
-    "DistributedDataStructure",
-    "Blockchain Entity",
     "IEEE 2418.1",
+    "DistributedDataStructure",
+    "BlockchainDomain",
+    "Blockchain Entity",
     "ISO/IEC 23257:2021",
+    "ConceptualLayer",
     "NIST NISTIR"
   ],
   "ontology": {

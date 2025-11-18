@@ -17,16 +17,7 @@
     "- owl:role": "Concept",
     "- belongsToDomain": "[[MetaverseDomain]]"
   },
-  "backlinks": [
-    "Distributed Identity",
-    "Suggested Reading Order",
-    "Daniel AI creative technologist",
-    "Nostr protocol",
-    "Interfaces",
-    "Technical History (extended CV)",
-    "Agentic Alliance",
-    "Micropayments"
-  ],
+  "backlinks": [],
   "wiki_links": [
     "MetaverseDomain"
   ],

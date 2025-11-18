@@ -25,11 +25,11 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ConceptualLayer",
-    "GDPR Article 35",
-    "ICO DPIA Code",
+    "AIEthicsDomain",
     "ISO 29134",
-    "AIEthicsDomain"
+    "GDPR Article 35",
+    "ConceptualLayer",
+    "ICO DPIA Code"
   ],
   "ontology": {
     "term_id": "AI-0425",

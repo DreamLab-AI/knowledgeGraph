@@ -27,26 +27,26 @@
     "- enables": "[[Microtransactions]], [[Pay-Per-Use Models]], [[Instant Settlements]]"
   },
   "backlinks": [
-    "Lightning and Similar L2"
+    "Bitcoin"
   ],
   "wiki_links": [
+    "Transaction Validation",
+    "Central Bank Digital Currency",
+    "Blockchain Infrastructure",
+    "MiddlewareLayer",
+    "VirtualEconomyDomain",
     "Digital Wallet",
+    "Digital Payment System",
     "Payment Protocol",
-    "Cryptographic Authentication",
+    "Fee Calculation",
+    "Instant Settlements",
     "Settlement Mechanism",
     "Payment Network",
-    "Transaction Validation",
-    "Pay-Per-Use Models",
-    "Instant Settlements",
-    "Microtransactions",
-    "MiddlewareLayer",
     "OMA3",
-    "Fee Calculation",
-    "Digital Payment System",
-    "Blockchain Infrastructure",
-    "Central Bank Digital Currency",
-    "VirtualEconomyDomain",
-    "Reed Smith"
+    "Cryptographic Authentication",
+    "Pay-Per-Use Models",
+    "Reed Smith",
+    "Microtransactions"
   ],
   "ontology": {
     "term_id": "20216",

@@ -27,23 +27,21 @@
   },
   "backlinks": [
     "Metaverse_Ontology_Schema",
-    "Octave Multi Model Laboratory",
     "Metaverse",
     "ETSI Domain Virtual Society",
     "TELE-100-ai-avatars",
-    "Fashion",
     "Neural 3D Generation"
   ],
   "wiki_links": [
-    "User Embodiment",
-    "UserExperienceLayer",
-    "ACM + Web3D HAnim",
-    "Social Presence",
     "Animation Rig",
-    "Visual Mesh",
-    "Metaverse",
+    "Social Presence",
+    "ACM + Web3D HAnim",
     "3D Rendering Engine",
-    "InteractionDomain"
+    "UserExperienceLayer",
+    "User Embodiment",
+    "Metaverse",
+    "InteractionDomain",
+    "Visual Mesh"
   ],
   "ontology": {
     "term_id": "20067",

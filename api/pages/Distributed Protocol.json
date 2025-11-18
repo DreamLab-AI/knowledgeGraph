@@ -31,19 +31,19 @@
     "BC-0051-consensus-mechanism"
   ],
   "wiki_links": [
-    "ConceptualLayer",
-    "BlockchainDomain",
-    "Consensus Mechanism",
-    "Transaction Broadcast Protocol",
-    "Peer-to-Peer Networks",
-    "Blockchain Entity",
-    "Peer Discovery Protocol",
-    "State Synchronization Protocol",
-    "Gossip Protocol",
-    "Distributed Systems: Concepts and Design",
     "Byzantine Agreement Protocols",
-    "Block Propagation Protocol",
-    "Agreement Protocol"
+    "Transaction Broadcast Protocol",
+    "Peer Discovery Protocol",
+    "BlockchainDomain",
+    "Distributed Systems: Concepts and Design",
+    "Blockchain Entity",
+    "State Synchronization Protocol",
+    "ConceptualLayer",
+    "Agreement Protocol",
+    "Consensus Mechanism",
+    "Gossip Protocol",
+    "Peer-to-Peer Networks",
+    "Block Propagation Protocol"
   ],
   "ontology": {
     "term_id": "PC-0006",

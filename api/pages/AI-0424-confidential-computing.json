@@ -25,10 +25,10 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ConceptualLayer",
     "Confidential Computing Consortium",
-    "Intel SGX",
     "AIEthicsDomain",
+    "ConceptualLayer",
+    "Intel SGX",
     "AMD SEV"
   ],
   "ontology": {

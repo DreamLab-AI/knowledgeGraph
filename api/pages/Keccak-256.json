@@ -28,17 +28,16 @@
     "- is-subclass-of": "[[Blockchain Entity]], [[CryptographicPrimitive]]"
   },
   "backlinks": [
-    "CryptographicDomain",
     "SHA-256",
     "Address"
   ],
   "wiki_links": [
     "SecurityLayer",
-    "CryptographicDomain",
-    "Blockchain Entity",
-    "CryptographicPrimitive",
     "IEEE 2418.1",
+    "Blockchain Entity",
+    "CryptographicDomain",
     "ISO/IEC 23257:2021",
+    "CryptographicPrimitive",
     "NIST NISTIR"
   ],
   "ontology": {
