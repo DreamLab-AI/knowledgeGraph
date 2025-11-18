@@ -21,9 +21,9 @@
     "Deep Learning"
   ],
   "wiki_links": [
-    "Goodfellow et al. 2016 Deep Learning",
-    "PyTorch Lightning Early Stopping",
     "Prechelt 1998 Early Stopping But When",
+    "PyTorch Lightning Early Stopping",
+    "Goodfellow et al. 2016 Deep Learning",
     "TensorFlow Keras Callbacks"
   ],
   "ontology": {

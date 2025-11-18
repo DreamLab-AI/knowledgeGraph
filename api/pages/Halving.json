@@ -32,16 +32,17 @@
     "Digital Twin of the Customer",
     "Runes and Glyphs",
     "BC 0104 supply cap",
-    "Bitcoin"
+    "Bitcoin",
+    "ProofOfWork"
   ],
   "wiki_links": [
-    "ConsensusDomain",
-    "IEEE 2418.1",
-    "ProtocolLayer",
-    "ConsensusProtocol",
+    "NIST NISTIR",
     "Blockchain Entity",
+    "ConsensusProtocol",
+    "ConsensusDomain",
     "ISO/IEC 23257:2021",
-    "NIST NISTIR"
+    "IEEE 2418.1",
+    "ProtocolLayer"
   ],
   "ontology": {
     "term_id": "BC-0070",

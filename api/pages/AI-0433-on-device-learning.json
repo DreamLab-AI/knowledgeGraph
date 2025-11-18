@@ -28,8 +28,8 @@
     "AIEthicsDomain",
     "PyTorch Mobile",
     "ConceptualLayer",
-    "TensorFlow Lite",
-    "Apple Core ML"
+    "Apple Core ML",
+    "TensorFlow Lite"
   ],
   "ontology": {
     "term_id": "AI-0433",

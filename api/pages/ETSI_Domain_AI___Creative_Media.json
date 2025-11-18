@@ -29,17 +29,17 @@
     "ETSI_Domain_AI"
   ],
   "wiki_links": [
-    "ApplicationLayer",
-    "ETSI Domain AI",
-    "Generative AI",
-    "CreativeMediaDomain",
-    "ETSI Domain Taxonomy",
     "ETSI GS MEC",
-    "ComputationAndIntelligenceDomain",
+    "AI Art Categorization",
     "AI Assisted Authoring",
-    "Procedural Content Generation",
+    "ApplicationLayer",
+    "Generative AI",
+    "ETSI Domain AI",
     "Generative Content Classification",
-    "AI Art Categorization"
+    "ETSI Domain Taxonomy",
+    "Procedural Content Generation",
+    "ComputationAndIntelligenceDomain",
+    "CreativeMediaDomain"
   ],
   "ontology": {
     "term_id": "20331",

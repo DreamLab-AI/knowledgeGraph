@@ -34,11 +34,12 @@
     "Smart Contract Platform",
     "Value Transfer",
     "Timestamp",
+    "ProofOfWork",
     "Decentralized Finance"
   ],
   "wiki_links": [
-    "Smart Contract Platform",
-    "Blockchain"
+    "Blockchain",
+    "Smart Contract Platform"
   ],
   "ontology": {
     "term_id": "BC-0566",

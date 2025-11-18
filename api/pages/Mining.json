@@ -42,22 +42,23 @@
     "BC 0104 supply cap",
     "Bitcoin",
     "BC 0103 Halving",
+    "ProofOfWork",
     "SHA-256",
     "Transaction Pool"
   ],
   "wiki_links": [
-    "ConsensusDomain",
-    "Renewable Energy",
-    "IEEE 2418.1",
-    "ProtocolLayer",
+    "NIST NISTIR",
+    "Blockchain Entity",
     "ConsensusProtocol",
     "Energy",
-    "Blockchain Entity",
-    "Hash Rate",
     "Proof of Work",
+    "ConsensusDomain",
+    "Renewable Energy",
+    "Hash Rate",
+    "Bitcoin",
     "ISO/IEC 23257:2021",
-    "NIST NISTIR",
-    "Bitcoin"
+    "IEEE 2418.1",
+    "ProtocolLayer"
   ],
   "ontology": {
     "term_id": "BC-0053",

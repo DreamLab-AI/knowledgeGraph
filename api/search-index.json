@@ -1700,8 +1700,8 @@
     "ontology_id": "BC-0076"
   },
   {
-    "id": "BC-0077-51%-attack",
-    "title": "51% Attack",
+    "id": "BC-0077-51-percent-attack",
+    "title": "51 Percent Attack",
     "content": "- #### Relationships\nid:: 51%-attack-relationships\n- is-subclass-of:: Blockchain Entity, NetworkComponent\n- #### OWL Axioms\nid:: 51%-attack-owl-axioms\ncollapsed:: true\n-",
     "tags": [
       "BC-0077",
@@ -5972,6 +5972,16 @@
     "ontology_id": "BC-0547"
   },
   {
+    "id": "ProofOfWork",
+    "title": "Proof of Work",
+    "content": "- #### Relationships\nid:: proof-of-work-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: proof-of-work-owl-axioms\ncollapsed:: true\n-\n- ## About Proof of Work\nid:: proof-of-work-about\n- Computational puzzle consensus mechanism within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n-\n- ### Key Characteristics\nid:: proof-of-work-characteristics\n- 1. **Definitional Property**: Core defining",
+    "tags": [
+      "BC-0052",
+      "blockchain"
+    ],
+    "ontology_id": "BC-0052"
+  },
+  {
     "id": "Property",
     "title": "Property",
     "content": "- #### Relationships\n- #### OWL Axioms\n-\n- ## About Property\nCurrent Landscape (2025)\n- Industry adoption and implementations\n- Metaverse platforms continue to evolve with focus on interoperability and open standards\n- Web3 integration accelerating with decentralised identity and asset ownership\n- Enterprise adoption growing in virtual collaboration, training, and digital twins\n- UK companies increasingly active in metaverse development and immersive technologies\n- Technical capabilities\n- Real-",
@@ -6460,12 +6470,12 @@
   {
     "id": "SHA-256",
     "title": "SHA-256",
-    "content": "- #### Relationships\nid:: sha-256-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: sha-256-owl-axioms\ncollapsed:: true\n-\n- ## About SHA-256\nid:: sha256-about\n- **SHA-256** (Secure Hash Algorithm 256-bit) is a cryptographic Hash Function from the SHA-2 family, designed by the NSA and standardized by NIST in FIPS 180-4. It produces a fixed 256-bit (32-byte) hash value from arbitrary-length input data, serving as the cryptographic foundation for Bitc",
+    "content": "- #### Relationships\nid:: sha256-relationships\n- is-subclass-of:: Hash Function, Cryptographic Primitive, Bitcoin Protocol\n- is-type-of:: SHA-2 Family\n- used-in:: Bitcoin, Bitcoin Cash, Litecoin (wrapped in Scrypt), Bitcoin SV, Namecoin\n- compared-with:: SHA-3, Keccak-256 (Ethereum), BLAKE2, SHA-1, MD5\n- enables:: Proof-of-Work, Mining, Merkle Trees, Digital Signatures, HMAC\n- requires:: Nonce, Block Header, Transaction Data\n- produces:: Block Hash, Transaction ID, Merkle Root\n- secured-by:: Col",
     "tags": [
-      "BC-0028",
-      "blockchain"
+      "BC-SHA256-001",
+      "[[Cryptography]],"
     ],
-    "ontology_id": "BC-0028"
+    "ontology_id": "BC-SHA256-001"
   },
   {
     "id": "SLAM",
@@ -6580,7 +6590,7 @@
   {
     "id": "Script",
     "title": "Script",
-    "content": "- #### Relationships\nid:: script-relationships\n- is-subclass-of:: Blockchain Entity, DistributedDataStructure\n- #### OWL Axioms\nid:: script-owl-axioms\ncollapsed:: true\n-\n- ## About Blockchain Scripts\nid:: script-about\n- Programming languages and script execution environments that enable transaction validation, smart contract execution, and cryptographic operations in blockchain systems. Scripts provide the mechanism for enforcing consensus rules, validating transactions, and enabling decentraliz",
+    "content": "- #### Relationships\nid:: script-relationships\n- is-subclass-of:: Blockchain Entity, DistributedDataStructure, ComputationModel\n- relates-to:: Transaction Validation, Smart Contract, Virtual Machine, Gas Model\n- #### OWL Axioms\nid:: script-owl-axioms\ncollapsed:: true\n-\n- ## About Blockchain Scripts\nid:: script-about\n- Programming languages and script execution environments that enable transaction validation, smart contract execution, and cryptographic operations in blockchain systems. Scripts pr",
     "tags": [
       "BC-0023",
       "blockchain"
@@ -8001,13 +8011,23 @@
   },
   {
     "id": "rb-0065-visual-servoing",
-    "title": "Visual Servoing",
-    "content": "- ### Primary Definition\n**Visual Servoing** is a closed-loop robot control technique using real-time visual feedback from cameras to guide robot motion, enabling precise positioning through either position-based (PBVS) or image-based (IBVS) control strategies.\n- ### Technical Architecture\n**Control Approaches**\n1. **Position-Based Visual Servoing (PBVS)**\n- Reconstructs 3D pose from visual features\n- Controls robot in Cartesian space\n- Requires accurate camera calibration\n- Subject to pose esti",
+    "title": "rb 0065 visual servoing",
+    "content": "- ### Primary Definition\n**Visual Servoing** - Visual Servoing in robotics systems\n- maturity:: draft\n- owl:class:: mv:rb0065visualservoing\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: MetaverseDomain\n- ## About rb 0065 visual servoing\n- ### Primary Definition\n**Visual Servoing** - Visual Servoing in robotics systems\n-\n- ### Original Content\ncollapsed:: true\n- clojure\n(Declaration (Class :VisualServoing))\n(SubClassOf :VisualServoing :Robot)\n(AnnotationAssertion r",
     "tags": [
       "RB-0065",
       "robotics"
     ],
     "ontology_id": "RB-0065"
+  },
+  {
+    "id": "rb-0101-performance-level",
+    "title": "rb 0101 performance level",
+    "content": "- ### Primary Definition\n**Performance Level** - Performance Level in robotics systems\n- maturity:: draft\n- owl:class:: mv:rb0101performancelevel\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: MetaverseDomain\n- ## About rb 0101 performance level\n- ### Primary Definition\n**Performance Level** - Performance Level in robotics systems\n-\n- ### Original Content\ncollapsed:: true\n- clojure\n(Declaration (Class :PerformanceLevel))\n(SubClassOf :PerformanceLevel :Robot)\n(Annot",
+    "tags": [
+      "RB-0101",
+      "robotics"
+    ],
+    "ontology_id": "RB-0101"
   },
   {
     "id": "security-audit-guide",
