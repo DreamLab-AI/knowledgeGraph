@@ -28,19 +28,19 @@
     "Blockchain Entity"
   ],
   "wiki_links": [
-    "BlockchainDomain",
-    "CAP Theorem",
-    "Distributed Systems: Principles and Paradigms",
-    "Block Tree",
     "Blockchain",
     "State Tree",
-    "ConceptualLayer",
     "Byzantine Fault Tolerance Papers",
-    "Trie",
-    "Transaction Pool",
-    "Merkle Tree",
+    "Block Tree",
+    "CAP Theorem",
+    "Distributed Systems: Principles and Paradigms",
     "Distributed Hash Table",
-    "Blockchain Entity"
+    "ConceptualLayer",
+    "Merkle Tree",
+    "Trie",
+    "BlockchainDomain",
+    "Blockchain Entity",
+    "Transaction Pool"
   ],
   "ontology": {
     "term_id": "PC-0002",

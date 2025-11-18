@@ -28,20 +28,20 @@
     "Music and audio"
   ],
   "wiki_links": [
-    "TrackingSystem",
-    "MetaverseDomain",
     "HumanComputerInteraction",
-    "ComputerVision",
-    "RenderingEngine",
-    "Music and audio",
-    "copyright",
-    "SpatialComputing",
-    "DisplayTechnology",
-    "Robotics",
     "Update Cycle",
-    "Presence",
+    "MetaverseDomain",
+    "TrackingSystem",
+    "ComputerVision",
+    "Microsoft CoPilot",
     "ImmersiveExperience",
-    "Microsoft CoPilot"
+    "copyright",
+    "Robotics",
+    "RenderingEngine",
+    "SpatialComputing",
+    "Music and audio",
+    "Presence",
+    "DisplayTechnology"
   ],
   "ontology": {
     "term_id": "mv-513244121401",

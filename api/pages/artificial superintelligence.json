@@ -24,19 +24,19 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "TrackingSystem",
-    "Artificial Intelligence",
-    "MetaverseDomain",
     "HumanComputerInteraction",
-    "Singularity",
+    "MetaverseDomain",
+    "TrackingSystem",
     "ComputerVision",
+    "ImmersiveExperience",
+    "Artificial Intelligence",
+    "Singularity",
+    "AI Risks",
+    "Robotics",
     "RenderingEngine",
     "SpatialComputing",
-    "DisplayTechnology",
-    "Robotics",
-    "AI Risks",
     "Presence",
-    "ImmersiveExperience"
+    "DisplayTechnology"
   ],
   "ontology": {
     "term_id": "mv-784990671883",

@@ -31,19 +31,19 @@
   ],
   "wiki_links": [
     "Token",
-    "Tokenomics Research",
-    "BlockchainDomain",
-    "Gas Mechanism",
-    "Blockchain Entity",
     "Fee Burning",
-    "Staking Reward",
-    "ConceptualLayer",
     "Block Reward",
+    "Tokenomics Research",
+    "Transaction Fee Economics",
+    "Gas Mechanism",
     "Slashing",
-    "Transaction Fee",
-    "Liquidity Mining",
     "Mechanism Design Theory",
-    "Transaction Fee Economics"
+    "Transaction Fee",
+    "ConceptualLayer",
+    "BlockchainDomain",
+    "Blockchain Entity",
+    "Liquidity Mining",
+    "Staking Reward"
   ],
   "ontology": {
     "term_id": "PC-0005",
