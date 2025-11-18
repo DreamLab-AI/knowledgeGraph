@@ -1,0 +1,50 @@
+{
+  "title": "Cardano",
+  "content": "- ### OntologyBlock\n  id:: cardano-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0567\n    - filename-history:: [\"BC-0567-cardano.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0567\n    - preferred-term:: Cardano\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: A research-driven blockchain platform using the mathematically-verified Ouroboros Proof-of-Stake consensus protocol. Features layered architecture separating settlement and computation layers, written in Haskell with Plutus for smart contracts. Emphasizes formal verification, sustainability, decentralization, and provable security guarantees.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Cardano\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### Relationships\n    - is-subclass-of:: [[Smart Contract Platform]]\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :Cardano))\n      (SubClassOf :Cardano :SmartContractPlatform)\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :Cardano \"Cardano\"@en)\n      (AnnotationAssertion rdfs:comment :Cardano\n        \"A research-driven blockchain platform using the mathematically-verified Ouroboros Proof-of-Stake consensus protocol. Features layered architecture separating settlement and computation layers, written in Haskell with Plutus for smart contracts. Emphasizes formal verification, sustainability, decentralization, and provable security guarantees.\"@en)\n      ```",
+  "properties": {
+    "id": "cardano-ontology",
+    "collapsed": "true",
+    "- domain-prefix": "BC",
+    "- sequence-number": "0567",
+    "- filename-history": "[\"BC-0567-cardano.md\"]",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0567",
+    "- preferred-term": "Cardano",
+    "- source-domain": "blockchain",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-11-13",
+    "- definition": "A research-driven blockchain platform using the mathematically-verified Ouroboros Proof-of-Stake consensus protocol. Features layered architecture separating settlement and computation layers, written in Haskell with Plutus for smart contracts. Emphasizes formal verification, sustainability, decentralization, and provable security guarantees.",
+    "- maturity": "established",
+    "- source": "Chimera Prime Research",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:Cardano",
+    "- belongsToDomain": "[[Blockchain]]",
+    "- is-subclass-of": "[[Smart Contract Platform]]"
+  },
+  "backlinks": [
+    "Consensus Mechanism",
+    "Cryptography",
+    "Sybil Attack",
+    "BC 0112 inflationary token",
+    "Digital Signature",
+    "CryptographicDomain",
+    "Digital Objects",
+    "Smart Contract Platform",
+    "TokenEconomicsDomain",
+    "Decentralized Finance"
+  ],
+  "wiki_links": [
+    "Smart Contract Platform",
+    "Blockchain"
+  ],
+  "ontology": {
+    "term_id": "BC-0567",
+    "preferred_term": "Cardano",
+    "definition": "A research-driven blockchain platform using the mathematically-verified Ouroboros Proof-of-Stake consensus protocol. Features layered architecture separating settlement and computation layers, written in Haskell with Plutus for smart contracts. Emphasizes formal verification, sustainability, decentralization, and provable security guarantees.",
+    "source_domain": "blockchain",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

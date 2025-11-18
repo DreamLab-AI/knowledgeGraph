@@ -1,0 +1,42 @@
+{
+  "title": "Minting",
+  "content": "- ### OntologyBlock\n  id:: minting-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0532\n    - filename-history:: [\"BC-0532-minting.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0532\n    - preferred-term:: Minting\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: The process of creating new tokens and adding them to circulation, either through block rewards, staking rewards, or programmatic issuance.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Minting\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### Relationships\n    - is-subclass-of:: [[Tokenomics]]\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :Minting))\n      (SubClassOf :Minting :Tokenomics)\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :Minting \"Minting\"@en)\n      (AnnotationAssertion rdfs:comment :Minting\n        \"The process of creating new tokens and adding them to circulation, either through block rewards, staking rewards, or programmatic issuance.\"@en)\n      ```",
+  "properties": {
+    "id": "minting-ontology",
+    "collapsed": "true",
+    "- domain-prefix": "BC",
+    "- sequence-number": "0532",
+    "- filename-history": "[\"BC-0532-minting.md\"]",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0532",
+    "- preferred-term": "Minting",
+    "- source-domain": "blockchain",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-11-13",
+    "- definition": "The process of creating new tokens and adding them to circulation, either through block rewards, staking rewards, or programmatic issuance.",
+    "- maturity": "established",
+    "- source": "Chimera Prime Research",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:Minting",
+    "- belongsToDomain": "[[Blockchain]]",
+    "- is-subclass-of": "[[Tokenomics]]"
+  },
+  "backlinks": [
+    "BC 0115 minting",
+    "Digital Objects"
+  ],
+  "wiki_links": [
+    "Blockchain",
+    "Tokenomics"
+  ],
+  "ontology": {
+    "term_id": "BC-0532",
+    "preferred_term": "Minting",
+    "definition": "The process of creating new tokens and adding them to circulation, either through block rewards, staking rewards, or programmatic issuance.",
+    "source_domain": "blockchain",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

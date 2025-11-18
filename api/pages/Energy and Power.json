@@ -24,25 +24,24 @@
   },
   "backlinks": [
     "Leopold Aschenbrenner",
-    "Blockchain",
     "Private Key",
     "BC-0036-private-key",
     "Energy and Power"
   ],
   "wiki_links": [
-    "Energy and Power",
-    "Convergence",
-    "ImmersiveExperience",
-    "Artificial Intelligence",
-    "TrackingSystem",
-    "Presence",
-    "Robotics",
-    "SpatialComputing",
-    "DisplayTechnology",
     "MetaverseDomain",
-    "ComputerVision",
+    "Artificial Intelligence",
+    "Presence",
+    "Convergence",
+    "Energy and Power",
+    "SpatialComputing",
+    "RenderingEngine",
+    "TrackingSystem",
+    "DisplayTechnology",
     "HumanComputerInteraction",
-    "RenderingEngine"
+    "ImmersiveExperience",
+    "Robotics",
+    "ComputerVision"
   ],
   "ontology": {
     "term_id": "mv-961582748519",

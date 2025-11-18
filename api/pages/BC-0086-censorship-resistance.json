@@ -1,0 +1,45 @@
+{
+  "title": "Censorship Resistance",
+  "content": "- ### OntologyBlock\n  id:: censorship-resistance-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0086\n    - preferred-term:: Censorship Resistance\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Transaction inclusion guarantee within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:CensorshipResistance\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n    - implementedInLayer:: [[SecurityLayer]]\n\n  - #### Relationships\n    id:: censorship-resistance-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[NetworkComponent]]\n\n  - #### OWL Axioms\n    id:: censorship-resistance-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0086>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:CensorshipResistance))\n\n  ## Subclass Relationships\n  SubClassOf(:CensorshipResistance :NetworkComponent)\n  SubClassOf(:CensorshipResistance :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:CensorshipResistance\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:CensorshipResistance\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :CensorshipResistance \"BC-0086\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :CensorshipResistance \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :CensorshipResistance \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :CensorshipResistance :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :CensorshipResistance :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :CensorshipResistance \"Censorship Resistance\"@en)\n  AnnotationAssertion(rdfs:comment :CensorshipResistance\n    \"Transaction inclusion guarantee\"@en)\n  AnnotationAssertion(dct:description :CensorshipResistance\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :CensorshipResistance \"BC-0086\")\n  AnnotationAssertion(:priority :CensorshipResistance \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :CensorshipResistance \"network-security\"@en)\n)\n      ```",
+  "properties": {
+    "id": "censorship-resistance-owl-axioms",
+    "collapsed": "true",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0086",
+    "- preferred-term": "Censorship Resistance",
+    "- source-domain": "blockchain",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-10-28",
+    "- definition": "Transaction inclusion guarantee within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "- maturity": "mature",
+    "- source": "[[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:CensorshipResistance",
+    "- owl:physicality": "VirtualEntity",
+    "- owl:role": "Object",
+    "- owl:inferred-class": "bc:VirtualObject",
+    "- belongsToDomain": "[[CryptographicDomain]]",
+    "- implementedInLayer": "[[SecurityLayer]]",
+    "- is-subclass-of": "[[Blockchain Entity]], [[NetworkComponent]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "NetworkComponent",
+    "SecurityLayer",
+    "CryptographicDomain",
+    "Blockchain Entity",
+    "IEEE 2418.1",
+    "ISO/IEC 23257:2021",
+    "NIST NISTIR"
+  ],
+  "ontology": {
+    "term_id": "BC-0086",
+    "preferred_term": "Censorship Resistance",
+    "definition": "Transaction inclusion guarantee within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "source_domain": "blockchain",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "title": "Keccak-256",
+  "content": "- ### OntologyBlock\n  id:: keccak-256-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0042\n\n    - filename-history:: [\"BC-0042-keccak-256.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0042\n    - preferred-term:: Keccak-256\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: SHA-3 hash function variant within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Keccak-256\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n    - implementedInLayer:: [[SecurityLayer]]\n\n  - #### Relationships\n    id:: keccak-256-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[CryptographicPrimitive]]\n\n  - #### OWL Axioms\n    id:: keccak-256-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0042>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:Keccak-256))\n\n  ## Subclass Relationships\n  SubClassOf(:Keccak-256 :CryptographicPrimitive)\n  SubClassOf(:Keccak-256 :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:Keccak-256\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:Keccak-256\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :Keccak-256 \"BC-0042\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :Keccak-256 \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :Keccak-256 \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :Keccak-256 :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :Keccak-256 :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :Keccak-256 \"Keccak-256\"@en)\n  AnnotationAssertion(rdfs:comment :Keccak-256\n    \"SHA-3 hash function variant\"@en)\n  AnnotationAssertion(dct:description :Keccak-256\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :Keccak-256 \"BC-0042\")\n  AnnotationAssertion(:priority :Keccak-256 \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :Keccak-256 \"cryptographic-foundations\"@en)\n)\n      ```",
+  "properties": {
+    "id": "keccak-256-owl-axioms",
+    "collapsed": "true",
+    "- domain-prefix": "BC",
+    "- sequence-number": "0042",
+    "- filename-history": "[\"BC-0042-keccak-256.md\"]",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0042",
+    "- preferred-term": "Keccak-256",
+    "- source-domain": "blockchain",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-10-28",
+    "- definition": "SHA-3 hash function variant within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "- maturity": "mature",
+    "- source": "[[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:Keccak-256",
+    "- owl:physicality": "VirtualEntity",
+    "- owl:role": "Object",
+    "- owl:inferred-class": "bc:VirtualObject",
+    "- belongsToDomain": "[[CryptographicDomain]]",
+    "- implementedInLayer": "[[SecurityLayer]]",
+    "- is-subclass-of": "[[Blockchain Entity]], [[CryptographicPrimitive]]"
+  },
+  "backlinks": [
+    "CryptographicDomain",
+    "SHA-256",
+    "Address"
+  ],
+  "wiki_links": [
+    "SecurityLayer",
+    "CryptographicDomain",
+    "Blockchain Entity",
+    "CryptographicPrimitive",
+    "IEEE 2418.1",
+    "ISO/IEC 23257:2021",
+    "NIST NISTIR"
+  ],
+  "ontology": {
+    "term_id": "BC-0042",
+    "preferred_term": "Keccak-256",
+    "definition": "SHA-3 hash function variant within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "source_domain": "blockchain",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

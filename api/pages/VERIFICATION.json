@@ -1,0 +1,32 @@
+{
+  "title": "VERIFICATION",
+  "content": "- ### OntologyBlock\n  id:: verification-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-1761742247978\n\t- preferred-term:: VERIFICATION\n\t- source-domain:: metaverse\n\t- status:: draft\n<<<<<<< HEAD\n=======\n    - public-access:: true\n>>>>>>> 691c6e7cfbf51bb03aef4b19e8bb7f7924266439\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: mv:VERIFICATION\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n<<<<<<< HEAD\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Verification))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Verification \"VERIFICATION\"@en)\n(AnnotationAssertion rdfs:comment :Verification \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Verification \"mv-1761742247978\"^^xsd:string)\n```",
+  "properties": {
+    "id": "verification-ontology",
+    "collapsed": "true",
+    "- ontology": "true",
+    "- term-id": "mv-1761742247978",
+    "- preferred-term": "VERIFICATION",
+    "- source-domain": "metaverse",
+    "- status": "draft",
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem.",
+    "- maturity": "draft",
+    "- owl:class": "mv:VERIFICATION",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "MetaverseDomain"
+  ],
+  "ontology": {
+    "term_id": "mv-1761742247978",
+    "preferred_term": "VERIFICATION",
+    "definition": "A component of the metaverse ecosystem.",
+    "source_domain": "metaverse",
+    "maturity_level": null,
+    "authority_score": null
+  }
+}

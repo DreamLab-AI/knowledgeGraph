@@ -22,7 +22,6 @@
     "- bridges-to": "[[HumanComputerInteraction]], [[ComputerVision]], [[Robotics]]"
   },
   "backlinks": [
-    "rb-0087-safety-standard",
     "Multi Agent RAG scrapbook",
     "Knowhere",
     "Prompt Engineering",
@@ -31,19 +30,19 @@
     "BC-0014-block-time"
   ],
   "wiki_links": [
-    "Could",
-    "Education and AI",
-    "ImmersiveExperience",
-    "TrackingSystem",
-    "Presence",
-    "Robotics",
-    "SpatialComputing",
-    "DisplayTechnology",
     "MetaverseDomain",
-    "ComputerVision",
+    "Presence",
+    "Could",
+    "SpatialComputing",
+    "RenderingEngine",
+    "TrackingSystem",
+    "DisplayTechnology",
     "HumanComputerInteraction",
-    "Large language models",
-    "RenderingEngine"
+    "ImmersiveExperience",
+    "Robotics",
+    "Education and AI",
+    "ComputerVision",
+    "Large language models"
   ],
   "ontology": {
     "term_id": "mv-216451438188",

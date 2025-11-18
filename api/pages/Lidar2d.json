@@ -1,0 +1,39 @@
+{
+  "title": "2D LiDAR",
+  "content": "- ### OntologyBlock\n  id:: lidar2d-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: RB\n    - sequence-number:: 0162\n    - filename-history:: [\"RB-0162-lidar2d.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: RB-0162\n    - preferred-term:: 2D LiDAR\n    - source-domain:: robotics\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: 2D LiDAR scans single horizontal or vertical plane for obstacle detection.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: rb:Lidar2d\n    - belongsToDomain:: [[Robotics]]\n\n  - #### Relationships\n    - is-subclass-of:: [[Lidar]]\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :Lidar2d))\n      (SubClassOf :Lidar2d :Lidar)\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :Lidar2d \"2D LiDAR\"@en)\n      (AnnotationAssertion rdfs:comment :Lidar2d\n        \"2D LiDAR scans single horizontal or vertical plane for obstacle detection.\"@en)\n      ```",
+  "properties": {
+    "id": "lidar2d-ontology",
+    "collapsed": "true",
+    "- domain-prefix": "RB",
+    "- sequence-number": "0162",
+    "- filename-history": "[\"RB-0162-lidar2d.md\"]",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "RB-0162",
+    "- preferred-term": "2D LiDAR",
+    "- source-domain": "robotics",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-11-13",
+    "- definition": "2D LiDAR scans single horizontal or vertical plane for obstacle detection.",
+    "- maturity": "established",
+    "- source": "Chimera Prime Research",
+    "- authority-score": "0.95",
+    "- owl:class": "rb:Lidar2d",
+    "- belongsToDomain": "[[Robotics]]",
+    "- is-subclass-of": "[[Lidar]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "Lidar",
+    "Robotics"
+  ],
+  "ontology": {
+    "term_id": "RB-0162",
+    "preferred_term": "2D LiDAR",
+    "definition": "2D LiDAR scans single horizontal or vertical plane for obstacle detection.",
+    "source_domain": "robotics",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

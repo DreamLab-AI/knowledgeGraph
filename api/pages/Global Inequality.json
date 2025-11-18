@@ -23,24 +23,23 @@
     "public": "true"
   },
   "backlinks": [
-    "Blockchain",
     "Death of the Internet"
   ],
   "wiki_links": [
-    "hawtrey1925currency",
-    "mattei2022capital",
-    "ImmersiveExperience",
-    "TrackingSystem",
-    "Presence",
-    "Robotics",
-    "SpatialComputing",
-    "balassa2013theory",
-    "DisplayTechnology",
+    "booth2020price",
     "MetaverseDomain",
-    "ComputerVision",
-    "HumanComputerInteraction",
+    "Presence",
+    "SpatialComputing",
+    "mattei2022capital",
     "RenderingEngine",
-    "booth2020price"
+    "TrackingSystem",
+    "DisplayTechnology",
+    "HumanComputerInteraction",
+    "ImmersiveExperience",
+    "Robotics",
+    "balassa2013theory",
+    "ComputerVision",
+    "hawtrey1925currency"
   ],
   "ontology": {
     "term_id": "mv-715649298519",

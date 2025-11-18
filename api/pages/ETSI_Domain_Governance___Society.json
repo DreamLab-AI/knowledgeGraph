@@ -1,22 +1,30 @@
 {
   "title": "ETSI_Domain_Governance___Society",
-  "content": "- ### OntologyBlock\n  id:: etsi_domain_governance___society-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-1761742247922\n\t- preferred-term:: ETSI_Domain_Governance___Society\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- public-access:: true\n\n\n## Academic Context\n\n- The governance domain within the metaverse ecosystem addresses the frameworks, policies, and standards that ensure responsible, interoperable, and sustainable virtual environments.\n  - Key developments include the emergence of multi-stakeholder governance models integrating technical, ethical, and societal considerations.\n  - Academic foundations draw from digital governance, socio-technical systems theory, and standards development research, emphasising interoperability, inclusivity, and human-centric design.\n\n## Current Landscape (2025)\n\n- Industry adoption reflects growing collaboration among standards organisations, technology providers, and policymakers to establish governance frameworks for virtual worlds.\n  - Notable organisations include ETSI, the Metaverse Standards Forum, and The Metaverse Society, which collectively drive interoperability and ethical guidelines.\n  - In the UK, London hosts significant events and initiatives, while North England cities such as Manchester and Leeds are emerging as innovation hubs for digital governance and metaverse research.\n- Technical capabilities have advanced to support geo-information integration, AI governance, and immersive experience standards, though challenges remain in achieving seamless interoperability and addressing ethical concerns.\n- Standards and frameworks are evolving through open, consensus-driven processes, with ETSI’s Augmented Reality Framework and related reports providing strategic and technical recommendations for virtual world governance.\n\n## Research & Literature\n\n- Key academic sources include:\n  - Runde, C. (2025). *ETSI Augmented Reality Framework (ARF): Virtual Worlds Recommendations Report*. ETSI. This report analyses standardisation gaps and proposes governance strategies for virtual worlds.  \n  - Bailer-Jones, D. M. (2009). *Scientific Modelling and AI Governance*. Philosophy of Science Journal.  \n  - Magnani, L., & Bertolotti, T. (2017). *Boundary Concepts in Complex Systems Governance*. Complexity and Governance Review.  \n- Ongoing research focuses on AI’s role in governance, systemic resilience, ethical frameworks, and the integration of geo-information in smart city contexts within virtual environments.\n\n## UK Context\n\n- The UK contributes through active participation in European and global governance initiatives, hosting conferences and fostering multi-stakeholder dialogues in London.\n- North England cities such as Manchester and Leeds are developing as centres for metaverse governance innovation, with academic institutions and tech clusters exploring socio-technical governance models.\n- Regional case studies include collaborative projects integrating geo-information standards with urban digital twins, reflecting the intersection of virtual world governance and smart city development.\n\n## Future Directions\n\n- Emerging trends include the convergence of AI governance with virtual world standards, enhanced interoperability mechanisms, and ethical frameworks addressing digital rights and inclusion.\n- Anticipated challenges involve balancing innovation with regulation, managing digital divides, and ensuring governance models remain adaptive to rapid technological change.\n- Research priorities emphasise multi-disciplinary approaches, stakeholder engagement, and the development of scalable, transparent governance architectures.\n\n## References\n\n1. Runde, C. (2025). *ETSI Augmented Reality Framework (ARF): Virtual Worlds Recommendations Report*. ETSI.  \n2. Bailer-Jones, D. M. (2009). *Scientific Modelling and AI Governance*. Philosophy of Science Journal.  \n3. Magnani, L., & Bertolotti, T. (2017). *Boundary Concepts in Complex Systems Governance*. Complexity and Governance Review.  \n4. The Metaverse Society. (2024). *Meta Trends Report*.  \n5. European Commission & Polish Presidency of the Council of the EU. (2025). *Global Multistakeholder High Level Conference on Web 4.0 and Virtual Worlds Outcome Paper*.  \n6. Metaverse Standards Forum. (2025). *Towards Interoperable Anchoring for XR*.\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: etsi_domain_governance___society-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-1761742247920\n\t- preferred-term:: ETSI_Domain_Governance___Society\n\t- source-domain:: metaverse\n\t- status:: draft\n<<<<<<< HEAD\n=======\n    - public-access:: true\n>>>>>>> 691c6e7cfbf51bb03aef4b19e8bb7f7924266439\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: mv:ETSI_Domain_Governance___Society\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n<<<<<<< HEAD\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Etsidomaingovernancesociety))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Etsidomaingovernancesociety \"ETSI_Domain_Governance___Society\"@en)\n(AnnotationAssertion rdfs:comment :Etsidomaingovernancesociety \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Etsidomaingovernancesociety \"mv-1761742247920\"^^xsd:string)\n```",
   "properties": {
     "id": "etsi_domain_governance___society-ontology",
     "collapsed": "true",
     "- ontology": "true",
-    "- term-id": "mv-1761742247922",
+    "- term-id": "mv-1761742247920",
     "- preferred-term": "ETSI_Domain_Governance___Society",
     "- source-domain": "metaverse",
     "- status": "draft",
-    "- public-access": "true"
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem.",
+    "- maturity": "draft",
+    "- owl:class": "mv:ETSI_Domain_Governance___Society",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]"
   },
   "backlinks": [],
-  "wiki_links": [],
+  "wiki_links": [
+    "MetaverseDomain"
+  ],
   "ontology": {
-    "term_id": "mv-1761742247922",
+    "term_id": "mv-1761742247920",
     "preferred_term": "ETSI_Domain_Governance___Society",
-    "definition": "",
+    "definition": "A component of the metaverse ecosystem.",
     "source_domain": "metaverse",
     "maturity_level": null,
     "authority_score": null

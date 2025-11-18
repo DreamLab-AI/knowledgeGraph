@@ -23,29 +23,28 @@
     "public": "true"
   },
   "backlinks": [
-    "Blockchain",
     "Death of the Internet",
     "Calculating Empires"
   ],
   "wiki_links": [
-    "Update Cycle",
-    "Anthropic Claude",
-    "ImmersiveExperience",
-    "swartz2008guerilla",
-    "TrackingSystem",
-    "Presence",
-    "Robotics",
-    "SpatialComputing",
-    "o2021god",
     "harari2014sapiens",
-    "DisplayTechnology",
     "MetaverseDomain",
-    "ComputerVision",
+    "swartz2008guerilla",
+    "Anthropic Claude",
+    "Presence",
+    "Goldenfein Mann 2024",
+    "SpatialComputing",
+    "RenderingEngine",
+    "TrackingSystem",
+    "DisplayTechnology",
+    "HumanComputerInteraction",
+    "ImmersiveExperience",
+    "Robotics",
     "bayer2023artificial",
     "rosenbergmanipulation",
-    "Goldenfein Mann 2024",
-    "HumanComputerInteraction",
-    "RenderingEngine"
+    "Update Cycle",
+    "o2021god",
+    "ComputerVision"
   ],
   "ontology": {
     "term_id": "mv-187507391153",

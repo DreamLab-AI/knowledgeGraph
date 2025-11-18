@@ -1,0 +1,40 @@
+{
+  "title": "Humanoid Robot",
+  "content": "- ### OntologyBlock\n  id:: humanoid-robot-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: RB-0004\n    - preferred-term:: Humanoid Robot\n    - source-domain:: robotics\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: A humanoid robot is a robot whose overall appearance and kinematic structure are based on the human body, typically including a head, torso, two arms, and two legs.\n    - maturity:: mature\n    - source:: [[ISO 8373:2021]]\n    - authority-score:: 0.96\n\n  - **Semantic Classification**\n    - owl:class:: rb:HumanoidRobot\n    - owl:physicality:: PhysicalEntity\n    - owl:role:: Object\n    - belongsToDomain:: [[Robotics]]\n\n  - #### Relationships\n    id:: humanoid-robot-relationships\n    - is-part-of:: [[Robot (RB-0001)]], [[MobileRobot (RB-0002)]]\n\n  - #### OWL Axioms\n    id:: humanoid-robot-owl-axioms\n    collapsed:: true\n    - ```clojure\n      (Declaration (Class :HumanoidRobot))\n      (SubClassOf :HumanoidRobot :Robot)\n      (SubClassOf :HumanoidRobot :MobileRobot)\n      \n      (SubClassOf :HumanoidRobot\n        (ObjectExactCardinality 1 :hasHead :RobotHead))\n      \n      (SubClassOf :HumanoidRobot\n        (ObjectExactCardinality 1 :hasTorso :RobotTorso))\n      \n      (SubClassOf :HumanoidRobot\n        (ObjectExactCardinality 2 :hasArm :RobotArm))\n      \n      (SubClassOf :HumanoidRobot\n        (ObjectExactCardinality 2 :hasLeg :RobotLeg))\n      \n      (SubClassOf :HumanoidRobot\n        (ObjectSomeValuesFrom :performsBipedalLocomotion :WalkingGait))\n      \n      (DataPropertyAssertion :isAnthropomorphic :HumanoidRobot \"true\"^^xsd:boolean)\n      \n      (AnnotationAssertion rdfs:label :HumanoidRobot \"Humanoid Robot\"@en)\n      (AnnotationAssertion rdfs:comment :HumanoidRobot\n        \"Robot with human-like morphology including bipedal locomotion\"@en)\n      \n      (Declaration (ObjectProperty :hasBodyPart))\n      (ObjectPropertyDomain :hasBodyPart :HumanoidRobot)\n      (ObjectPropertyRange :hasBodyPart :RobotBodyComponent)\n      \n      (Declaration (DataProperty :heightMeters))\n      (DataPropertyDomain :heightMeters :HumanoidRobot)\n      (DataPropertyRange :heightMeters xsd:decimal)\n      (DataPropertyAssertion :heightMeters :HumanoidRobot \"1.2\"^^xsd:decimal)\n      (DataPropertyAssertion :heightMeters :HumanoidRobot \"2.0\"^^xsd:decimal)\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n```",
+  "properties": {
+    "id": "humanoid-robot-owl-axioms",
+    "collapsed": "true",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "RB-0004",
+    "- preferred-term": "Humanoid Robot",
+    "- source-domain": "robotics",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-10-28",
+    "- definition": "A humanoid robot is a robot whose overall appearance and kinematic structure are based on the human body, typically including a head, torso, two arms, and two legs.",
+    "- maturity": "mature",
+    "- source": "[[ISO 8373:2021]]",
+    "- authority-score": "0.96",
+    "- owl:class": "rb:HumanoidRobot",
+    "- owl:physicality": "PhysicalEntity",
+    "- owl:role": "Object",
+    "- belongsToDomain": "[[Robotics]]",
+    "- is-part-of": "[[Robot (RB-0001)]], [[MobileRobot (RB-0002)]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "MobileRobot (RB-0002)",
+    "ISO 8373:2021",
+    "Robot (RB-0001)",
+    "Robotics"
+  ],
+  "ontology": {
+    "term_id": "RB-0004",
+    "preferred_term": "Humanoid Robot",
+    "definition": "A humanoid robot is a robot whose overall appearance and kinematic structure are based on the human body, typically including a head, torso, two arms, and two legs.",
+    "source_domain": "robotics",
+    "maturity_level": null,
+    "authority_score": 0.96
+  }
+}

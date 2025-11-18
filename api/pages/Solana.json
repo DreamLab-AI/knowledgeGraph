@@ -1,0 +1,53 @@
+{
+  "title": "Solana",
+  "content": "- ### OntologyBlock\n  id:: solana-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0566\n    - filename-history:: [\"BC-0566-solana.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0566\n    - preferred-term:: Solana\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: A high-performance blockchain platform combining Proof-of-History (PoH) with Proof-of-Stake consensus, enabling parallel transaction processing for exceptional throughput exceeding 65,000 TPS. Uses single-layer architecture where all transactions process on the base layer, prioritizing speed, throughput, and low latency.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Solana\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### Relationships\n    - is-subclass-of:: [[Smart Contract Platform]]\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :Solana))\n      (SubClassOf :Solana :SmartContractPlatform)\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :Solana \"Solana\"@en)\n      (AnnotationAssertion rdfs:comment :Solana\n        \"A high-performance blockchain platform combining Proof-of-History (PoH) with Proof-of-Stake consensus, enabling parallel transaction processing for exceptional throughput exceeding 65,000 TPS. Uses single-layer architecture where all transactions process on the base layer, prioritizing speed, throughput, and low latency.\"@en)\n      ```",
+  "properties": {
+    "id": "solana-ontology",
+    "collapsed": "true",
+    "- domain-prefix": "BC",
+    "- sequence-number": "0566",
+    "- filename-history": "[\"BC-0566-solana.md\"]",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0566",
+    "- preferred-term": "Solana",
+    "- source-domain": "blockchain",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-11-13",
+    "- definition": "A high-performance blockchain platform combining Proof-of-History (PoH) with Proof-of-Stake consensus, enabling parallel transaction processing for exceptional throughput exceeding 65,000 TPS. Uses single-layer architecture where all transactions process on the base layer, prioritizing speed, throughput, and low latency.",
+    "- maturity": "established",
+    "- source": "Chimera Prime Research",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:Solana",
+    "- belongsToDomain": "[[Blockchain]]",
+    "- is-subclass-of": "[[Smart Contract Platform]]"
+  },
+  "backlinks": [
+    "Consensus Mechanism",
+    "Light Node",
+    "Runes and Glyphs",
+    "BC 0112 inflationary token",
+    "Digital Signature",
+    "Coin",
+    "CryptographicDomain",
+    "Digital Objects",
+    "Smart Contract Platform",
+    "Value Transfer",
+    "Timestamp",
+    "TokenEconomicsDomain",
+    "Decentralized Finance"
+  ],
+  "wiki_links": [
+    "Smart Contract Platform",
+    "Blockchain"
+  ],
+  "ontology": {
+    "term_id": "BC-0566",
+    "preferred_term": "Solana",
+    "definition": "A high-performance blockchain platform combining Proof-of-History (PoH) with Proof-of-Stake consensus, enabling parallel transaction processing for exceptional throughput exceeding 65,000 TPS. Uses single-layer architecture where all transactions process on the base layer, prioritizing speed, throughput, and low latency.",
+    "source_domain": "blockchain",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

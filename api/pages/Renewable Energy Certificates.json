@@ -18,9 +18,7 @@
     "- owl:role": "Concept",
     "- belongsToDomain": "[[BlockchainDomain]]"
   },
-  "backlinks": [
-    "ProofOfWork"
-  ],
+  "backlinks": [],
   "wiki_links": [
     "BlockchainDomain"
   ],

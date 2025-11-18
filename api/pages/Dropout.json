@@ -1,25 +1,33 @@
 {
   "title": "Dropout",
-  "content": "- ### OntologyBlock\n  id:: dropout-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0057\n\t- preferred-term:: Dropout\n\t- source-domain:: ai\n\t- status:: draft\n\t- public-access:: true\n\n\n\n## Academic Context\n\n- Dropout refers to the premature and permanent cessation of formal education without obtaining the minimum qualifications required for completion.\n  - It is a multifaceted phenomenon influenced by individual, social, economic, and institutional factors.\n  - Academic foundations trace dropout to theories of student engagement, socio-economic disadvantage, and educational policy impacts.\n  - Key developments include the integration of early warning systems and predictive analytics to identify at-risk students and tailor interventions.\n\n## Current Landscape (2025)\n\n- Dropout remains a significant challenge across educational levels, from compulsory schooling to higher education and online learning.\n  - Industry adoption of dropout prevention strategies includes data-driven monitoring, personalised support, and flexible learning pathways.\n  - Notable organisations include universities implementing retention programmes and online platforms addressing high attrition rates in MOOCs.\n  - In the UK, and particularly in North England cities such as Manchester, Leeds, Newcastle, and Sheffield, local authorities and educational institutions collaborate on targeted initiatives to reduce dropout rates, often focusing on socio-economically disadvantaged groups.\n- Technical capabilities have advanced with the use of artificial intelligence and behavioural nudging to predict and mitigate dropout risks.\n- Limitations persist in addressing complex socio-economic determinants and ensuring equitable access to support.\n- Standards and frameworks increasingly emphasise inclusive education, lifelong learning, and second-chance opportunities.\n\n## Research & Literature\n\n- Skenderidou, I., Leontopoulos, S., Stafylis, N., & Skenderidis, P. (2025). School Dropout: Causes, Consequences, and Strategies for Prevention. *European Journal of Education Studies*, 12(11), 177-195. DOI: 10.5281/zenodo.6279\n  - This comprehensive study highlights the individual and societal repercussions of dropout and advocates for multi-tiered interventions involving families, schools, and communities.\n- Bağrıacık Yılmaz, H., & Karataş, F. Ö. (2025). Dropout in Online Education: A Longitudinal Multilevel Analysis. *Behavioural Sciences*, 15(4), 483. DOI: 10.3390/bs15040483\n  - Examines patterns and predictors of dropout in online education, emphasising the impact of the COVID-19 pandemic on accelerated adoption and attrition.\n- Additional studies focus on student satisfaction as a predictor of university dropout (e.g., BERA Journal, 2025) and factors influencing dropout decisions among graduate and undergraduate public administration students (Tandfonline, 2024).\n- Ongoing research explores the use of AI for early detection, behavioural interventions, and the design of inclusive educational environments.\n\n## UK Context\n\n- The UK enforces a compulsory education or training requirement until age 18, with the school leaving age set at 16 but followed by mandatory participation in education, apprenticeship, or part-time work combined with training.\n- Disadvantage remains a key factor in dropout risk, with the Education Policy Institute (2025) reporting persistent attainment gaps linked to economic status, notably in reception year pupils.\n- North England cities such as Manchester, Leeds, Newcastle, and Sheffield have developed regional programmes addressing dropout through community engagement, vocational training, and digital inclusion initiatives.\n- Universities in these regions implement retention strategies informed by local socio-economic profiles, aiming to reduce attrition particularly among underrepresented groups.\n- The UK government supports bursaries and maintenance allowances to alleviate financial barriers contributing to dropout.\n\n## Future Directions\n\n- Emerging trends include enhanced use of artificial intelligence and machine learning for predictive analytics in dropout prevention.\n- Integration of behavioural economics techniques, such as nudging, to improve student engagement and retention.\n- Expansion of second-chance education models and flexible learning pathways to accommodate diverse learner needs.\n- Anticipated challenges involve addressing deep-rooted socio-economic inequalities and ensuring equitable access to technological interventions.\n- Research priorities focus on longitudinal studies of intervention efficacy, cross-sector collaboration, and the development of culturally responsive support systems.\n\n## References\n\n1. Skenderidou, I., Leontopoulos, S., Stafylis, N., & Skenderidis, P. (2025). School Dropout: Causes, Consequences, and Strategies for Prevention. *European Journal of Education Studies*, 12(11), 177-195. DOI: 10.5281/zenodo.6279\n\n2. Bağrıacık Yılmaz, H., & Karataş, F. Ö. (2025). Dropout in Online Education: A Longitudinal Multilevel Analysis. *Behavioural Sciences*, 15(4), 483. DOI: 10.3390/bs15040483\n\n3. Education Policy Institute. (2025). *Annual Report on Disadvantage*. London: EPI.\n\n4. GOV.UK. (2025). School Leaving Age. Retrieved November 2025, from https://www.gov.uk/know-when-you-can-leave-school\n\n5. BERA Journal. (2025). Exploring the relationship between satisfaction and university dropout. *Review of Education*, DOI: 10.1002/rev3.70112\n\n6. Tandfonline. (2024). Examining Dropout Among Graduate and Undergraduate Public Administration Students. *Journal of Education and Training Studies*, DOI: 10.1080/15512169.2024.2388126\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: dropout-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0057\n\t- preferred-term:: Dropout\n\t- source-domain:: metaverse\n\t- status:: draft\n<<<<<<< HEAD\n=======\n    - public-access:: true\n>>>>>>> 691c6e7cfbf51bb03aef4b19e8bb7f7924266439\n\t- definition:: ### Primary Definition\n**Dropout** is a regularisation technique that randomly deactivates (drops) a fraction of neurons during each training iteration, preventing co-adaptation and reducing overfitting. Dropout rate (typically 0.2-0.5) controls the fraction of neurons dropped.\n\t- maturity:: draft\n\t- owl:class:: mv:Dropout\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]",
   "properties": {
     "id": "dropout-ontology",
     "collapsed": "true",
     "- ontology": "true",
     "- term-id": "AI-0057",
     "- preferred-term": "Dropout",
-    "- source-domain": "ai",
+    "- source-domain": "metaverse",
     "- status": "draft",
-    "- public-access": "true"
+    "- public-access": "true",
+    "- definition": "### Primary Definition",
+    "- maturity": "draft",
+    "- owl:class": "mv:Dropout",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]"
   },
   "backlinks": [
     "Deep Learning"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "MetaverseDomain"
+  ],
   "ontology": {
     "term_id": "AI-0057",
     "preferred_term": "Dropout",
-    "definition": "",
-    "source_domain": "ai",
+    "definition": "### Primary Definition",
+    "source_domain": "metaverse",
     "maturity_level": null,
     "authority_score": null
   }

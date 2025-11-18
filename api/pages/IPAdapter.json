@@ -27,19 +27,19 @@
     "ComfyUI"
   ],
   "wiki_links": [
-    "BibTeX",
-    "Paper",
-    "ImmersiveExperience",
-    "TrackingSystem",
-    "Presence",
-    "Robotics",
-    "SpatialComputing",
-    "DisplayTechnology",
     "MetaverseDomain",
-    "ComputerVision",
-    "HumanComputerInteraction",
+    "Presence",
+    "SpatialComputing",
     "RenderingEngine",
-    "Code"
+    "TrackingSystem",
+    "DisplayTechnology",
+    "HumanComputerInteraction",
+    "ImmersiveExperience",
+    "Robotics",
+    "Paper",
+    "Code",
+    "ComputerVision",
+    "BibTeX"
   ],
   "ontology": {
     "term_id": "mv-366063046856",

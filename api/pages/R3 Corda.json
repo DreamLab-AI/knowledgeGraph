@@ -19,12 +19,7 @@
     "- belongsToDomain": "[[BlockchainDomain]]"
   },
   "backlinks": [
-    "BC-0431-privacy-preserving-blockchain",
-    "BC-0436-hyperledger-iroha",
-    "Digital Signature",
-    "BC-0432-consortium-blockchain",
-    "BC-0438-quorum-blockchain",
-    "BC-0439-enterprise-smart-contracts"
+    "Digital Signature"
   ],
   "wiki_links": [
     "BlockchainDomain"

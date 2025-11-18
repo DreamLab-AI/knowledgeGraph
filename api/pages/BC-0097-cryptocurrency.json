@@ -26,19 +26,19 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "cashu",
-    "Update Cycle",
-    "EconomicLayer",
-    "Lightning and Similar L2",
-    "EconomicMechanism",
-    "Blockchain Entity",
-    "NIST NISTIR",
     "Bitcoin Technical Overview",
     "gladsteincheck2022",
-    "TokenEconomicsDomain",
+    "EconomicLayer",
+    "Blockchain Entity",
     "Public Key Encryption",
+    "TokenEconomicsDomain",
+    "Lightning and Similar L2",
+    "cashu",
+    "Update Cycle",
+    "IEEE 2418.1",
+    "EconomicMechanism",
     "ISO/IEC 23257:2021",
-    "IEEE 2418.1"
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0097",

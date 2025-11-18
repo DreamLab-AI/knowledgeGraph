@@ -1,23 +1,31 @@
 {
   "title": "Regularisation",
-  "content": "- ### OntologyBlock\n  id:: regularisation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0056\n\t- preferred-term:: Regularisation\n\t- source-domain:: ai\n\t- status:: draft\n\t- public-access:: true\n\n\n\n## Academic Context\n\n- Regularisation is a fundamental technique in machine learning and statistics aimed at preventing overfitting by adding a penalty term to the model’s loss function.\n  - This penalty discourages overly complex models that fit noise rather than underlying patterns, thereby improving generalisation to unseen data.\n  - The academic foundations of regularisation trace back to classical statistics (ridge regression by Hoerl and Kennard, 1970) and have evolved with modern machine learning to include L1 (Lasso), L2 (Ridge), and Elastic Net methods.\n  - Regularisation also addresses multicollinearity and enhances model interpretability by shrinking or zeroing coefficients.\n\n## Current Landscape (2025)\n\n- Regularisation is widely adopted across industries for robust predictive modelling, especially in domains with high-dimensional data such as finance, healthcare, and natural language processing.\n  - Notable platforms like TensorFlow, PyTorch, and scikit-learn provide built-in support for regularisation techniques including dropout, early stopping, and weight penalties.\n  - In the UK, financial institutions in London and tech hubs in Manchester and Leeds actively employ regularisation to improve credit scoring models and fraud detection systems.\n- Technical capabilities now include adaptive regularisation methods that dynamically adjust penalty strength during training, improving model stability and performance.\n- Limitations remain in selecting optimal regularisation parameters (e.g., lambda), which often require cross-validation and domain expertise.\n- Standards and frameworks for model validation increasingly mandate explicit regularisation strategies to ensure fairness and reliability in AI systems.\n\n## Research & Literature\n\n- Key academic papers:\n  - Hoerl, A.E., & Kennard, R.W. (1970). Ridge Regression: Biased Estimation for Nonorthogonal Problems. *Technometrics*, 12(1), 55-67. DOI:10.1080/00401706.1970.10488634\n  - Tibshirani, R. (1996). Regression Shrinkage and Selection via the Lasso. *Journal of the Royal Statistical Society: Series B*, 58(1), 267-288. DOI:10.1111/j.2517-6161.1996.tb02080.x\n  - Zou, H., & Hastie, T. (2005). Regularization and Variable Selection via the Elastic Net. *Journal of the Royal Statistical Society: Series B*, 67(2), 301-320. DOI:10.1111/j.1467-9868.2005.00503.x\n- Ongoing research explores:\n  - Novel regularisation schemes for deep learning architectures, including structured sparsity and Bayesian regularisation.\n  - Automated hyperparameter tuning for regularisation strength using meta-learning.\n  - Theoretical analysis of regularisation effects on model fairness and robustness.\n\n## UK Context\n\n- British academia and industry contribute significantly to regularisation research and application.\n  - Universities such as the University of Manchester and the University of Leeds host active machine learning groups advancing regularisation techniques.\n  - North England innovation hubs, including the Digital Catapult centres in Sheffield and Newcastle, foster startups leveraging regularisation for AI-driven healthcare diagnostics and environmental modelling.\n- Regional case studies:\n  - A Leeds-based fintech startup implemented Elastic Net regularisation to enhance credit risk models, reducing default prediction errors by 15%.\n  - Manchester’s AI research community developed adaptive regularisation algorithms tailored for noisy sensor data in smart city projects.\n\n## Future Directions\n\n- Emerging trends include:\n  - Integration of regularisation with explainable AI to balance model simplicity and interpretability.\n  - Development of context-aware regularisation that adapts penalties based on data provenance and ethical considerations.\n- Anticipated challenges:\n  - Balancing regularisation strength to avoid underfitting while maintaining model fairness.\n  - Scaling regularisation methods efficiently for ultra-large datasets and real-time applications.\n- Research priorities:\n  - Designing regularisation techniques that explicitly mitigate bias and enhance transparency.\n  - Exploring hybrid approaches combining classical regularisation with neural network pruning and compression.\n\n## References\n\n1. Hoerl, A.E., & Kennard, R.W. (1970). Ridge Regression: Biased Estimation for Nonorthogonal Problems. *Technometrics*, 12(1), 55-67. DOI:10.1080/00401706.1970.10488634  \n2. Tibshirani, R. (1996). Regression Shrinkage and Selection via the Lasso. *Journal of the Royal Statistical Society: Series B*, 58(1), 267-288. DOI:10.1111/j.2517-6161.1996.tb02080.x  \n3. Zou, H., & Hastie, T. (2005). Regularization and Variable Selection via the Elastic Net. *Journal of the Royal Statistical Society: Series B*, 67(2), 301-320. DOI:10.1111/j.1467-9868.2005.00503.x  \n4. GeeksforGeeks. (2025). Regularization in Machine Learning. Retrieved September 18, 2025, from GeeksforGeeks website.  \n5. Dataquest. (2025). Regularization in Machine Learning (with Code Examples). Retrieved 2025.  \n6. IBM. (2025). What Is Regularization? IBM Think Blog.  \n7. C3 AI. (2025). What is Regularization in Machine Learning Models?  \n\n*If regularisation were a person, it would be the sensible friend who insists on wearing a seatbelt — preventing crashes (overfitting) without spoiling the fun of the ride (model complexity).*\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: regularisation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0056\n\t- preferred-term:: Regularisation\n\t- source-domain:: metaverse\n\t- status:: draft\n<<<<<<< HEAD\n=======\n    - public-access:: true\n>>>>>>> 691c6e7cfbf51bb03aef4b19e8bb7f7924266439\n\t- definition:: ### Primary Definition\n**Regularisation** comprises techniques that constrain or penalise model complexity during training to prevent overfitting and improve generalisation. Common methods include L1/L2 penalties, dropout, and early stopping.\n\t- maturity:: draft\n\t- owl:class:: mv:Regularisation\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]",
   "properties": {
     "id": "regularisation-ontology",
     "collapsed": "true",
     "- ontology": "true",
     "- term-id": "AI-0056",
     "- preferred-term": "Regularisation",
-    "- source-domain": "ai",
+    "- source-domain": "metaverse",
     "- status": "draft",
-    "- public-access": "true"
+    "- public-access": "true",
+    "- definition": "### Primary Definition",
+    "- maturity": "draft",
+    "- owl:class": "mv:Regularisation",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]"
   },
   "backlinks": [],
-  "wiki_links": [],
+  "wiki_links": [
+    "MetaverseDomain"
+  ],
   "ontology": {
     "term_id": "AI-0056",
     "preferred_term": "Regularisation",
-    "definition": "",
-    "source_domain": "ai",
+    "definition": "### Primary Definition",
+    "source_domain": "metaverse",
     "maturity_level": null,
     "authority_score": null
   }

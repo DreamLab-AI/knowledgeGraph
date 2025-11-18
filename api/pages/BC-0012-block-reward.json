@@ -1,0 +1,45 @@
+{
+  "title": "Block Reward",
+  "content": "- ### OntologyBlock\n  id:: block-reward-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0012\n    - preferred-term:: Block Reward\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Incentive for block creation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:BlockReward\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[BlockchainDomain]]\n    - implementedInLayer:: [[ConceptualLayer]]\n\n  - #### Relationships\n    id:: block-reward-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[DistributedDataStructure]]\n\n  - #### OWL Axioms\n    id:: block-reward-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0012>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:BlockReward))\n\n  ## Subclass Relationships\n  SubClassOf(:BlockReward :DistributedDataStructure)\n  SubClassOf(:BlockReward :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:BlockReward\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:BlockReward\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :BlockReward \"BC-0012\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :BlockReward \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :BlockReward \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :BlockReward :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :BlockReward :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :BlockReward \"Block Reward\"@en)\n  AnnotationAssertion(rdfs:comment :BlockReward\n    \"Incentive for block creation\"@en)\n  AnnotationAssertion(dct:description :BlockReward\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :BlockReward \"BC-0012\")\n  AnnotationAssertion(:priority :BlockReward \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :BlockReward \"blockchain-fundamentals\"@en)\n)\n      ```",
+  "properties": {
+    "id": "block-reward-owl-axioms",
+    "collapsed": "true",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0012",
+    "- preferred-term": "Block Reward",
+    "- source-domain": "blockchain",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-10-28",
+    "- definition": "Incentive for block creation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "- maturity": "mature",
+    "- source": "[[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]",
+    "- authority-score": "0.95",
+    "- owl:class": "bc:BlockReward",
+    "- owl:physicality": "VirtualEntity",
+    "- owl:role": "Object",
+    "- owl:inferred-class": "bc:VirtualObject",
+    "- belongsToDomain": "[[BlockchainDomain]]",
+    "- implementedInLayer": "[[ConceptualLayer]]",
+    "- is-subclass-of": "[[Blockchain Entity]], [[DistributedDataStructure]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "ConceptualLayer",
+    "BlockchainDomain",
+    "DistributedDataStructure",
+    "Blockchain Entity",
+    "IEEE 2418.1",
+    "ISO/IEC 23257:2021",
+    "NIST NISTIR"
+  ],
+  "ontology": {
+    "term_id": "BC-0012",
+    "preferred_term": "Block Reward",
+    "definition": "Incentive for block creation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "source_domain": "blockchain",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

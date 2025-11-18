@@ -20,7 +20,9 @@
     "- owl:role": "Concept",
     "- belongsToDomain": "[[MetaverseDomain]]"
   },
-  "backlinks": [],
+  "backlinks": [
+    "rb-0065-visual-servoing"
+  ],
   "wiki_links": [
     "MetaverseDomain"
   ],

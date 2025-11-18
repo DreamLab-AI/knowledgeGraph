@@ -1,22 +1,30 @@
 {
   "title": "ETSI_Domain_Interoperability___Creative",
-  "content": "- ### OntologyBlock\n  id:: etsi_domain_interoperability___creative-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-1761742247935\n\t- preferred-term:: ETSI_Domain_Interoperability___Creative\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- public-access:: true\n\n\n\nI appreciate the detailed request, but I must flag a significant issue with the premise: the search results provided do not contain sufficient information to construct a comprehensive ontology entry for \"ETSI_Domain_Interoperability___Creative\" as you've specified.\n\nHere's what the search results actually address:\n\n**What's available:**\n- General ETSI standardisation activities in AR frameworks and metaverse interoperability[1][2]\n- Metaverse ecosystem stakeholders (developers, platform providers, investors)[5]\n- References to UK input on metaverse standardisation[6]\n- Broad information on autonomous networks and AI interoperability[3]\n\n**What's critically absent:**\n- Any specific definition or technical specification of \"ETSI_Domain_Interoperability___Creative\"\n- Details about creative domain interoperability within ETSI's work\n- North England-specific implementations or research hubs\n- Academic literature with complete citations on this particular domain\n- Current 2025 technical capabilities or limitations specific to creative interoperability\n- UK or regional case studies relevant to this ontology entry\n\n**The fundamental problem:**\n\nWithout access to the original ontology file, ETSI's specific documentation on creative domain interoperability, or academic sources directly addressing this concept, I cannot responsibly:\n- Verify whether the current definition is accurate or outdated\n- Identify what \"dated news\" should be removed\n- Confirm which facts have changed since 2024\n- Provide verified North England context\n- Supply complete academic citations\n\n**My recommendation:**\n\nTo proceed effectively, you would need to provide:\n1. The original ETSI_Domain_Interoperability___Creative.md file\n2. ETSI technical specifications or working group documents specifically addressing creative domain interoperability\n3. Academic sources on this topic with bibliographic details\n4. Any existing North England research or implementation examples\n\nWould you like to supply these materials, or would you prefer guidance on structuring such an ontology entry based on general ETSI standardisation principles?\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n\n\n\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: etsi_domain_interoperability___creative-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-1761742247920\n\t- preferred-term:: ETSI_Domain_Interoperability___Creative\n\t- source-domain:: metaverse\n\t- status:: draft\n<<<<<<< HEAD\n=======\n    - public-access:: true\n>>>>>>> 691c6e7cfbf51bb03aef4b19e8bb7f7924266439\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: mv:ETSI_Domain_Interoperability___Creative\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]",
   "properties": {
     "id": "etsi_domain_interoperability___creative-ontology",
     "collapsed": "true",
     "- ontology": "true",
-    "- term-id": "mv-1761742247935",
+    "- term-id": "mv-1761742247920",
     "- preferred-term": "ETSI_Domain_Interoperability___Creative",
     "- source-domain": "metaverse",
     "- status": "draft",
-    "- public-access": "true"
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem.",
+    "- maturity": "draft",
+    "- owl:class": "mv:ETSI_Domain_Interoperability___Creative",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]"
   },
   "backlinks": [],
-  "wiki_links": [],
+  "wiki_links": [
+    "MetaverseDomain"
+  ],
   "ontology": {
-    "term_id": "mv-1761742247935",
+    "term_id": "mv-1761742247920",
     "preferred_term": "ETSI_Domain_Interoperability___Creative",
-    "definition": "",
+    "definition": "A component of the metaverse ecosystem.",
     "source_domain": "metaverse",
     "maturity_level": null,
     "authority_score": null

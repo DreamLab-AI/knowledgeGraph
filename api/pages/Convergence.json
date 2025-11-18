@@ -33,19 +33,19 @@
     "Introduction to me"
   ],
   "wiki_links": [
-    "Singularity",
-    "ImmersiveExperience",
-    "TrackingSystem",
-    "Presence",
-    "Robotics",
-    "SpatialComputing",
-    "DisplayTechnology",
     "MetaverseDomain",
-    "ComputerVision",
-    "Spatial Computing",
+    "Presence",
+    "SpatialComputing",
+    "RenderingEngine",
+    "TrackingSystem",
+    "DisplayTechnology",
     "HumanComputerInteraction",
+    "ImmersiveExperience",
+    "Robotics",
+    "Singularity",
+    "Spatial Computing",
     "Artificial General Intelligence",
-    "RenderingEngine"
+    "ComputerVision"
   ],
   "ontology": {
     "term_id": "mv-730687576412",

@@ -1,6 +1,6 @@
 {
   "title": "SLAM",
-  "content": "- ### OntologyBlock\n  id:: slam-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-1761742247966\n\t- preferred-term:: SLAM\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- public-access:: true\n\n\n\n## Academic Context\n\n- Simultaneous Localization and Mapping (SLAM) is a foundational technology in robotics and computer vision that enables a device to build a map of an unknown environment while simultaneously tracking its own position within that environment.\n  - Originating from robotics research in the late 20th century, SLAM has evolved through advances in sensor technology, probabilistic algorithms, and computational power.\n  - It underpins applications ranging from autonomous vehicles and drones to augmented reality (AR) and virtual reality (VR) systems, forming a critical component of spatial awareness in these domains.\n  - The academic foundations include probabilistic robotics, sensor fusion, and computer vision, with seminal works by Durrant-Whyte and Bailey (2006) and Thrun et al. (2005) establishing key frameworks.\n\n## Current Landscape (2025)\n\n- SLAM technology is widely adopted across industries such as autonomous vehicles, robotics, AR/VR, healthcare, and construction.\n  - Notable organisations include tech giants like Meta (formerly Facebook), Google, and Apple, which integrate SLAM into AR platforms and devices.\n  - The gaming industry leverages SLAM for immersive experiences, while healthcare uses it for surgical robotics and rehabilitation devices.\n  - In the UK, companies and research institutions increasingly incorporate SLAM in robotics and AR applications.\n- Technical capabilities have advanced with integration of AI, LiDAR, and sensor fusion, improving accuracy and robustness in complex environments.\n  - Limitations persist in highly dynamic or feature-poor environments, and computational demands remain significant for real-time processing.\n- Standards and frameworks are emerging to ensure interoperability and reliability, including open-source SLAM libraries and industry-specific protocols.\n\n## Research & Literature\n\n- Key academic papers:\n  - Durrant-Whyte, H., & Bailey, T. (2006). Simultaneous localization and mapping: part I. *IEEE Robotics & Automation Magazine*, 13(2), 99-110. DOI: 10.1109/MRA.2006.1638022\n  - Thrun, S., Burgard, W., & Fox, D. (2005). *Probabilistic Robotics*. MIT Press.\n  - Cadena, C., et al. (2016). Past, Present, and Future of Simultaneous Localization and Mapping: Toward the Robust-Perception Age. *IEEE Transactions on Robotics*, 32(6), 1309-1332. DOI: 10.1109/TRO.2016.2624754\n  - Recent work integrates SLAM with mixed reality for scientific visualisation (e.g., atom-scale experiments combining VR and AR) demonstrating interdisciplinary applications[5].\n- Ongoing research focuses on improving SLAM in dynamic environments, reducing computational load, and enhancing multi-sensor fusion, including the use of AI to improve robustness and adaptability.\n\n## UK Context\n\n- The UK has a vibrant SLAM research and development ecosystem, with universities such as the University of Manchester, University of Leeds, Newcastle University, and University of Sheffield contributing to robotics and AR research.\n  - Manchester’s robotics labs focus on autonomous navigation and industrial applications.\n  - Leeds and Sheffield have active research groups working on sensor fusion and AI-enhanced SLAM algorithms.\n- Industry collaborations in North England include robotics startups and AR firms applying SLAM for manufacturing automation, healthcare robotics, and immersive training platforms.\n- Regional innovation hubs support SLAM development, often linked to the UK government’s initiatives on AI and robotics, fostering technology transfer and commercialisation.\n\n## Future Directions\n\n- Emerging trends include:\n  - Integration of SLAM with AI-driven perception systems to handle complex, dynamic, and large-scale environments.\n  - Expansion into new domains such as space exploration, underwater robotics, and advanced healthcare applications.\n  - Enhanced interoperability frameworks to support metaverse and digital twin ecosystems.\n- Anticipated challenges:\n  - Balancing computational efficiency with accuracy and robustness.\n  - Addressing privacy and ethical concerns related to pervasive spatial mapping.\n  - Overcoming hardware limitations for consumer-grade AR/VR devices.\n- Research priorities involve developing lightweight algorithms, improving multi-modal sensor integration, and creating standardised benchmarks for SLAM performance.\n\n## References\n\n1. Durrant-Whyte, H., & Bailey, T. (2006). Simultaneous localization and mapping: part I. *IEEE Robotics & Automation Magazine*, 13(2), 99-110. DOI: 10.1109/MRA.2006.1638022  \n2. Thrun, S., Burgard, W., & Fox, D. (2005). *Probabilistic Robotics*. MIT Press.  \n3. Cadena, C., et al. (2016). Past, Present, and Future of Simultaneous Localization and Mapping: Toward the Robust-Perception Age. *IEEE Transactions on Robotics*, 32(6), 1309-1332. DOI: 10.1109/TRO.2016.2624754  \n4. Nature Scientific Reports (2025). A metaverse laboratory setup for interactive atom visualization and manipulation integrating SLAM with mixed reality. DOI: 10.1038/s41598-025-01578-y  \n5. MarkNtel Advisors (2023). Global Simultaneous Localization and Mapping (SLAM) Technology Market Analysis.  \n6. Industry Today UK (2025). Simultaneous Localization and Mapping (SLAM) Technology Market Forecast.  \n7. Meta Engineering Blog (2017). SLAM: Bringing art to life through technology.  \n\n*If SLAM were a party guest, it would be the one quietly mapping the room while simultaneously figuring out where it left its drink—always aware, never lost.*\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: slam-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-1761742247966\n\t- preferred-term:: SLAM\n\t- source-domain:: metaverse\n\t- status:: draft\n<<<<<<< HEAD\n=======\n    - public-access:: true\n>>>>>>> 691c6e7cfbf51bb03aef4b19e8bb7f7924266439\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: mv:SLAM\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n<<<<<<< HEAD\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Slam))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Slam \"SLAM\"@en)\n(AnnotationAssertion rdfs:comment :Slam \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Slam \"mv-1761742247966\"^^xsd:string)\n```",
   "properties": {
     "id": "slam-ontology",
     "collapsed": "true",
@@ -9,24 +9,31 @@
     "- preferred-term": "SLAM",
     "- source-domain": "metaverse",
     "- status": "draft",
-    "- public-access": "true"
+    "- public-access": "true",
+    "- definition": "A component of the metaverse ecosystem.",
+    "- maturity": "draft",
+    "- owl:class": "mv:SLAM",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]"
   },
   "backlinks": [
     "Augmented Reality (AR)",
     "Virtual Production",
     "Spatial Computing",
-    "robotics-core-concepts",
     "Mobile-Robot",
     "Variational Autoencoders",
     "BC-0014-block-time",
     "Gaussian splatting and Similar",
     "Acceleration"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "MetaverseDomain"
+  ],
   "ontology": {
     "term_id": "mv-1761742247966",
     "preferred_term": "SLAM",
-    "definition": "",
+    "definition": "A component of the metaverse ecosystem.",
     "source_domain": "metaverse",
     "maturity_level": null,
     "authority_score": null

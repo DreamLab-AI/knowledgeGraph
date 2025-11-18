@@ -1,0 +1,45 @@
+{
+  "title": "Gas",
+  "content": "- ### OntologyBlock\n  id:: gas-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0100\n    - preferred-term:: Gas\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Transaction execution cost unit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.90\n\n  - **Semantic Classification**\n    - owl:class:: bc:Gas\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[TokenEconomicsDomain]]\n    - implementedInLayer:: [[EconomicLayer]]\n\n  - #### Relationships\n    id:: gas-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[EconomicMechanism]]\n\n  - #### OWL Axioms\n    id:: gas-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0100>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:Gas))\n\n  ## Subclass Relationships\n  SubClassOf(:Gas :EconomicMechanism)\n  SubClassOf(:Gas :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:Gas\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:Gas\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :Gas \"BC-0100\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :Gas \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :Gas \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :Gas :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :Gas :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :Gas \"Gas\"@en)\n  AnnotationAssertion(rdfs:comment :Gas\n    \"Transaction execution cost unit\"@en)\n  AnnotationAssertion(dct:description :Gas\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :Gas \"BC-0100\")\n  AnnotationAssertion(:priority :Gas \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :Gas \"economic-incentive\"@en)\n)\n      ```",
+  "properties": {
+    "id": "gas-owl-axioms",
+    "collapsed": "true",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "BC-0100",
+    "- preferred-term": "Gas",
+    "- source-domain": "blockchain",
+    "- status": "complete",
+    "- version": "1.0.0",
+    "- last-updated": "2025-10-28",
+    "- definition": "Transaction execution cost unit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "- maturity": "mature",
+    "- source": "[[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]",
+    "- authority-score": "0.90",
+    "- owl:class": "bc:Gas",
+    "- owl:physicality": "VirtualEntity",
+    "- owl:role": "Object",
+    "- owl:inferred-class": "bc:VirtualObject",
+    "- belongsToDomain": "[[TokenEconomicsDomain]]",
+    "- implementedInLayer": "[[EconomicLayer]]",
+    "- is-subclass-of": "[[Blockchain Entity]], [[EconomicMechanism]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "EconomicLayer",
+    "Blockchain Entity",
+    "TokenEconomicsDomain",
+    "IEEE 2418.1",
+    "EconomicMechanism",
+    "ISO/IEC 23257:2021",
+    "NIST NISTIR"
+  ],
+  "ontology": {
+    "term_id": "BC-0100",
+    "preferred_term": "Gas",
+    "definition": "Transaction execution cost unit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "source_domain": "blockchain",
+    "maturity_level": null,
+    "authority_score": 0.9
+  }
+}

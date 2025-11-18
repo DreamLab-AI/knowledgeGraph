@@ -1,0 +1,42 @@
+{
+  "title": "AI Governance Framework",
+  "content": "- ### OntologyBlock\n  id:: 0387-ai-governance-framework-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0387\n    - preferred-term:: AI Governance Framework\n    - source-domain:: ai-grounded\n    - status:: in-progress\n    - version:: 1.0\n    - last-updated:: 2025-10-29\n\n  - **Definition**\n    - definition:: AI Governance Framework is a comprehensive organizational structure that establishes oversight mechanisms, ethical principles, accountability structures, and policy frameworks for responsible development and deployment of artificial intelligence systems. This framework defines roles and responsibilities across the AI lifecycle, implements risk management processes, ensures regulatory compliance, and establishes decision-making authority for AI-related activities. Key components include executive leadership commitment and sponsorship, cross-functional governance committees or AI ethics boards, documented policies covering AI development standards, risk assessment procedures, ethical guidelines, and data governance protocols, incident response and escalation procedures, compliance monitoring and audit mechanisms, and continuous improvement processes. An effective AI governance framework integrates with existing organizational governance structures (IT governance, data governance, enterprise risk management) while addressing AI-specific concerns including algorithmic accountability, fairness and bias mitigation, transparency and explainability requirements, human oversight provisions, and stakeholder engagement. Implementation aligns with international standards including ISO/IEC 42001:2023 AI Management Systems, OECD AI Principles, EU AI Act governance requirements, and sector-specific regulations, providing a systematic approach to managing AI risks and ensuring trustworthy AI deployment that protects organizational interests and stakeholder rights.\n    - maturity:: mature\n    - source:: [[ISO/IEC 42001:2023]], [[OECD AI Principles]], [[EU AI Act]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: aigo:AIGovernanceFramework\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Process\n    - owl:inferred-class:: aigo:VirtualProcess\n    - belongsToDomain:: [[AIEthicsDomain]]\n    - implementedInLayer:: [[ConceptualLayer]]\n\n  - #### Relationships\n    id:: 0387-ai-governance-framework-relationships\n\n  - #### OWL Axioms\n    id:: 0387-ai-governance-framework-owl-axioms\n    collapsed:: true\n    - ```clojure\n      (Declaration (Class :AIGovernanceFramework))\n(SubClassOf :AIGovernanceFramework :OrganisationalGovernance)\n\n(SubClassOf :AIGovernanceFramework\n  (ObjectSomeValuesFrom :establishes :OversightMechanism))\n(SubClassOf :AIGovernanceFramework\n  (ObjectSomeValuesFrom :implements :EthicalPrinciples))\n(SubClassOf :AIGovernanceFramework\n  (ObjectSomeValuesFrom :ensures :Accountability))\n(SubClassOf :AIGovernanceFramework\n  (ObjectSomeValuesFrom :defines :RolesAndResponsibilities))\n(SubClassOf :AIGovernanceFramework\n  (ObjectSomeValuesFrom :includes :PolicyFramework))\n(SubClassOf :AIGovernanceFramework\n  (ObjectSomeValuesFrom :manages :AIRisk))\n\n(DisjointWith :AIGovernanceFramework :DataGovernanceFramework)\n(DisjointWith :AIGovernanceFramework :ITGovernanceFramework)\n      ```",
+  "properties": {
+    "id": "0387-ai-governance-framework-owl-axioms",
+    "collapsed": "true",
+    "- public-access": "true",
+    "- ontology": "true",
+    "- term-id": "AI-0387",
+    "- preferred-term": "AI Governance Framework",
+    "- source-domain": "ai-grounded",
+    "- status": "in-progress",
+    "- version": "1.0",
+    "- last-updated": "2025-10-29",
+    "- definition": "AI Governance Framework is a comprehensive organizational structure that establishes oversight mechanisms, ethical principles, accountability structures, and policy frameworks for responsible development and deployment of artificial intelligence systems. This framework defines roles and responsibilities across the AI lifecycle, implements risk management processes, ensures regulatory compliance, and establishes decision-making authority for AI-related activities. Key components include executive leadership commitment and sponsorship, cross-functional governance committees or AI ethics boards, documented policies covering AI development standards, risk assessment procedures, ethical guidelines, and data governance protocols, incident response and escalation procedures, compliance monitoring and audit mechanisms, and continuous improvement processes. An effective AI governance framework integrates with existing organizational governance structures (IT governance, data governance, enterprise risk management) while addressing AI-specific concerns including algorithmic accountability, fairness and bias mitigation, transparency and explainability requirements, human oversight provisions, and stakeholder engagement. Implementation aligns with international standards including ISO/IEC 42001:2023 AI Management Systems, OECD AI Principles, EU AI Act governance requirements, and sector-specific regulations, providing a systematic approach to managing AI risks and ensuring trustworthy AI deployment that protects organizational interests and stakeholder rights.",
+    "- maturity": "mature",
+    "- source": "[[ISO/IEC 42001:2023]], [[OECD AI Principles]], [[EU AI Act]]",
+    "- authority-score": "0.95",
+    "- owl:class": "aigo:AIGovernanceFramework",
+    "- owl:physicality": "VirtualEntity",
+    "- owl:role": "Process",
+    "- owl:inferred-class": "aigo:VirtualProcess",
+    "- belongsToDomain": "[[AIEthicsDomain]]",
+    "- implementedInLayer": "[[ConceptualLayer]]"
+  },
+  "backlinks": [],
+  "wiki_links": [
+    "ConceptualLayer",
+    "OECD AI Principles",
+    "EU AI Act",
+    "ISO/IEC 42001:2023",
+    "AIEthicsDomain"
+  ],
+  "ontology": {
+    "term_id": "AI-0387",
+    "preferred_term": "AI Governance Framework",
+    "definition": "AI Governance Framework is a comprehensive organizational structure that establishes oversight mechanisms, ethical principles, accountability structures, and policy frameworks for responsible development and deployment of artificial intelligence systems. This framework defines roles and responsibilities across the AI lifecycle, implements risk management processes, ensures regulatory compliance, and establishes decision-making authority for AI-related activities. Key components include executive leadership commitment and sponsorship, cross-functional governance committees or AI ethics boards, documented policies covering AI development standards, risk assessment procedures, ethical guidelines, and data governance protocols, incident response and escalation procedures, compliance monitoring and audit mechanisms, and continuous improvement processes. An effective AI governance framework integrates with existing organizational governance structures (IT governance, data governance, enterprise risk management) while addressing AI-specific concerns including algorithmic accountability, fairness and bias mitigation, transparency and explainability requirements, human oversight provisions, and stakeholder engagement. Implementation aligns with international standards including ISO/IEC 42001:2023 AI Management Systems, OECD AI Principles, EU AI Act governance requirements, and sector-specific regulations, providing a systematic approach to managing AI risks and ensuring trustworthy AI deployment that protects organizational interests and stakeholder rights.",
+    "source_domain": "ai-grounded",
+    "maturity_level": null,
+    "authority_score": 0.95
+  }
+}

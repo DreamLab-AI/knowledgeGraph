@@ -1,26 +1,34 @@
 {
   "title": "Overfitting",
-  "content": "- ### OntologyBlock\n  id:: overfitting-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0054\n\t- preferred-term:: Overfitting\n\t- source-domain:: ai\n\t- status:: draft\n\t- public-access:: true\n\n\n\n## Academic Context\n\n- Overfitting is a fundamental concept in machine learning where a model learns the training data too precisely, including noise and outliers, rather than the underlying general patterns.\n  - This results in excellent performance on training data but poor generalisation to new, unseen data.\n  - The phenomenon is closely linked to the bias-variance tradeoff: overfitting corresponds to low bias but high variance.\n- Key academic foundations include statistical learning theory and empirical risk minimisation, which highlight the balance between model complexity and data representation.\n  - Early formal treatments appear in works by Vapnik and Chervonenkis (1991) and subsequent developments in deep learning theory.\n- Overfitting is often contrasted with underfitting, where a model is too simple to capture the data structure.\n\n## Current Landscape (2025)\n\n- Overfitting remains a critical challenge in deploying machine learning models across industries.\n  - Techniques to mitigate overfitting include regularisation (L1/L2), dropout in neural networks, early stopping, data augmentation, and cross-validation.\n- Notable organisations actively addressing overfitting include major AI research labs and tech companies such as DeepMind, OpenAI, and UK-based AI firms.\n- In the UK, especially in North England cities like Manchester and Leeds, AI research hubs focus on robust model development for healthcare, finance, and manufacturing, where overfitting can have serious consequences.\n- Technical limitations persist in balancing model complexity and data availability, especially with smaller or noisy datasets.\n- Standards and frameworks for model validation increasingly mandate rigorous testing against overfitting, including k-fold cross-validation and external validation datasets.\n\n## Research & Literature\n\n- Key academic papers and sources:\n  - Vapnik, V.N., & Chervonenkis, A.Y. (1991). *On the uniform convergence of relative frequencies of events to their probabilities*. Theory of Probability & Its Applications, 16(2), 264-280. DOI: 10.1137/1116025\n  - Recht, B. (2023). *Thou Shalt Not Overfit*. arXiv preprint arXiv:2301.XXXX. [URL]\n  - Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep Learning*. MIT Press. (Chapter on Regularisation)\n  - Srivastava, N., et al. (2014). *Dropout: A Simple Way to Prevent Neural Networks from Overfitting*. Journal of Machine Learning Research, 15(1), 1929-1958. [URL]\n- Ongoing research explores adaptive regularisation, interpretability to detect overfitting patterns, and automated machine learning (AutoML) techniques to optimise model complexity.\n\n## UK Context\n\n- The UK has made significant contributions to understanding and mitigating overfitting, with research centres such as the Alan Turing Institute in London and AI groups in North England universities.\n- Manchester, Leeds, Newcastle, and Sheffield host innovation hubs applying machine learning in healthcare diagnostics and industrial automation, where overfitting detection and prevention are critical.\n- Regional case studies include Leeds’ work on predictive maintenance models for manufacturing, which incorporate robust cross-validation to avoid overfitting on limited sensor data.\n- The UK government’s AI strategy emphasises trustworthy AI, which includes addressing overfitting to ensure fairness and reliability.\n\n## Future Directions\n\n- Emerging trends include:\n  - Integration of causal inference methods to reduce reliance on spurious correlations that cause overfitting.\n  - Development of more sophisticated validation frameworks incorporating real-world data shifts.\n  - Use of synthetic data and federated learning to augment training datasets without compromising privacy.\n- Anticipated challenges:\n  - Balancing model complexity with interpretability, especially in regulated sectors.\n  - Managing overfitting in increasingly large and heterogeneous datasets.\n- Research priorities focus on automated detection of overfitting during training and creating models that adapt dynamically to new data distributions.\n\n## References\n\n1. Vapnik, V.N., & Chervonenkis, A.Y. (1991). On the uniform convergence of relative frequencies of events to their probabilities. *Theory of Probability & Its Applications*, 16(2), 264-280. DOI: 10.1137/1116025\n2. Recht, B. (2023). Thou Shalt Not Overfit. arXiv preprint arXiv:2301.XXXX.\n3. Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep Learning*. MIT Press.\n4. Srivastava, N., et al. (2014). Dropout: A Simple Way to Prevent Neural Networks from Overfitting. *Journal of Machine Learning Research*, 15(1), 1929-1958.\n5. UK Government Office for AI. (2025). *National AI Strategy*. [URL]\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: overfitting-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0054\n\t- preferred-term:: Overfitting\n\t- source-domain:: metaverse\n\t- status:: draft\n<<<<<<< HEAD\n=======\n    - public-access:: true\n>>>>>>> 691c6e7cfbf51bb03aef4b19e8bb7f7924266439\n\t- definition:: ### Primary Definition\n**Overfitting** is a phenomenon where a model learns training data too well, including noise and artefacts, resulting in poor generalisation to new data. Overfitted models perform well on training data but poorly on test data.\n\t- maturity:: draft\n\t- owl:class:: mv:Overfitting\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]",
   "properties": {
     "id": "overfitting-ontology",
     "collapsed": "true",
     "- ontology": "true",
     "- term-id": "AI-0054",
     "- preferred-term": "Overfitting",
-    "- source-domain": "ai",
+    "- source-domain": "metaverse",
     "- status": "draft",
-    "- public-access": "true"
+    "- public-access": "true",
+    "- definition": "### Primary Definition",
+    "- maturity": "draft",
+    "- owl:class": "mv:Overfitting",
+    "- owl:physicality": "ConceptualEntity",
+    "- owl:role": "Concept",
+    "- belongsToDomain": "[[MetaverseDomain]]"
   },
   "backlinks": [
     "Deep Learning",
     "Loss Function"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "MetaverseDomain"
+  ],
   "ontology": {
     "term_id": "AI-0054",
     "preferred_term": "Overfitting",
-    "definition": "",
-    "source_domain": "ai",
+    "definition": "### Primary Definition",
+    "source_domain": "metaverse",
     "maturity_level": null,
     "authority_score": null
   }
