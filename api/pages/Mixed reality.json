@@ -27,20 +27,20 @@
     "Digital Objects"
   ],
   "wiki_links": [
-    "HumanComputerInteraction",
-    "Humans, Avatars , Character",
-    "MetaverseDomain",
-    "TrackingSystem",
-    "ComputerVision",
-    "ImmersiveExperience",
-    "Apple",
-    "Robotics",
-    "RenderingEngine",
-    "Education and AI",
-    "SpatialComputing",
-    "Presence",
     "apple",
-    "DisplayTechnology"
+    "Education and AI",
+    "Apple",
+    "ImmersiveExperience",
+    "Humans, Avatars , Character",
+    "TrackingSystem",
+    "Presence",
+    "Robotics",
+    "SpatialComputing",
+    "DisplayTechnology",
+    "MetaverseDomain",
+    "ComputerVision",
+    "HumanComputerInteraction",
+    "RenderingEngine"
   ],
   "ontology": {
     "term_id": "mv-485321926566",

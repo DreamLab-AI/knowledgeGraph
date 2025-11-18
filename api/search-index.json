@@ -180,26 +180,6 @@
     "ontology_id": "mv-449611067545"
   },
   {
-    "id": "AI-0377-fairness-metrics",
-    "title": "Fairness Metrics",
-    "content": "- #### Relationships\nid:: 0377-fairness-metrics-relationships\n- is-part-of:: Algorithmic Fairness, AI Ethics, Bias Detection\n- requires:: Confusion Matrix, Statistical Testing, Protected Attributes\n- enables:: Bias Mitigation, Fairness Auditing, Regulatory Compliance\n- related-to:: AI Safety Research, Value Alignment, AI Trustworthiness, Algorithmic Accountability\n- measured-by:: Fairness Auditing Tools\n- depends-on:: IEEE P7003-2021, ISO/IEC TR 24027, NIST SP 1270\n- #### OWL Axioms\nid:: 0377-fa",
-    "tags": [
-      "AI-0377",
-      "ai"
-    ],
-    "ontology_id": "AI-0377"
-  },
-  {
-    "id": "AI-0386-fairness-auditing-tools",
-    "title": "Fairness Auditing Tools",
-    "content": "- #### Relationships\nid:: 0386-fairness-auditing-tools-relationships\n- is-part-of:: AI Governance, Algorithmic Accountability, Bias Mitigation\n- implements:: Fairness Metrics, Bias Detection Methods\n- enables:: Fairness Auditing, Regulatory Compliance, Algorithmic Transparency\n- requires:: Statistical Testing, Data Quality, Protected Attributes\n- integrates-with:: scikit-learn, TensorFlow, PyTorch, CI/CD Pipelines\n- related-to:: AI Safety Research, Value Alignment, Constitutional AI, AI Trustwor",
-    "tags": [
-      "AI-0386",
-      "ai"
-    ],
-    "ontology_id": "AI-0386"
-  },
-  {
     "id": "AI-0416-Differential-Privacy",
     "title": "Differential Privacy",
     "content": "- #### Relationships\nid:: differential-privacy-relationships\n- is-a:: Privacy-Preserving Technique, Cryptographic Protocol\n- applies-to:: Machine Learning, Federated Learning, Statistical Databases\n- uses:: Laplace Mechanism, Gaussian Mechanism, Exponential Mechanism\n- requires:: Noise Addition, Privacy Budget Management, Sensitivity Calculation\n- protects:: Personal Data, Training Data, Query Results\n- enables:: Privacy-Preserving Analytics, Secure Computation\n- implemented-in:: U.S. Census 202",
@@ -230,39 +210,9 @@
     "ontology_id": "AI-0421"
   },
   {
-    "id": "AI-Risk",
-    "title": "AI Risk",
-    "content": "-",
-    "tags": [
-      "AI-0076",
-      "ai"
-    ],
-    "ontology_id": "AI-0076"
-  },
-  {
     "id": "AIEthics",
     "title": "AIEthics",
     "content": "- ### Original Content\ncollapsed:: true\n- turtle\naigo:AIEthics rdf:type owl:Class ;\nrdfs:label \"AI Ethics\"@en ;\nrdfs:comment \"Ethical principles, guidelines, and frameworks governing the development and deployment of artificial intelligence systems.\"@en ;\nmeta:sourceOntology \"aigo:\" ;\nmeta:technologyDomain \"artificial-intelligence\" ;\nmeta:disruptiveTechCategory \"artificial-intelligence-systems\" ;\nmeta:technologyReadinessLevel \"7\"^^xsd:integer ;\nmeta:qualityScore \"0.91\"^^xsd:float .\nCurrent Lands",
-    "tags": [
-      "mv-1761742247878",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247878"
-  },
-  {
-    "id": "AIGovernance",
-    "title": "AIGovernance",
-    "content": "-",
-    "tags": [
-      "mv-1761742247878",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247878"
-  },
-  {
-    "id": "AISystem",
-    "title": "AISystem",
-    "content": "-",
     "tags": [
       "mv-1761742247878",
       "metaverse"
@@ -640,16 +590,6 @@
     "ontology_id": "20231"
   },
   {
-    "id": "AutonomousRobot",
-    "title": "AutonomousRobot",
-    "content": "-",
-    "tags": [
-      "mv-1761742247883",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247883"
-  },
-  {
     "id": "Avatar Interoperability",
     "title": "Avatar Interoperability",
     "content": "-",
@@ -700,27 +640,7 @@
     "ontology_id": "BC-0102"
   },
   {
-    "id": "BC 0102 inflation",
-    "title": "BC 0102 inflation",
-    "content": "- ### Primary Definition\nIncreasing token supply within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n- maturity:: draft\n- owl:class:: mv:BC0102inflation\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: MetaverseDomain\n- ## About BC 0102 inflation\n- ### Primary Definition\nIncreasing token supply within blockchain systems, providing essential functionality for distributed ledger technology operations",
-    "tags": [
-      "BC-0102",
-      "metaverse"
-    ],
-    "ontology_id": "BC-0102"
-  },
-  {
     "id": "BC 0103 Halving",
-    "title": "BC 0103 halving",
-    "content": "- ### Primary Definition\nPeriodic reward reduction within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n- maturity:: draft\n- owl:class:: mv:BC0103halving\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: MetaverseDomain\n- ## About BC 0103 halving\n- ### Primary Definition\nPeriodic reward reduction within blockchain systems, providing essential functionality for distributed ledger technology operations",
-    "tags": [
-      "BC-0103",
-      "metaverse"
-    ],
-    "ontology_id": "BC-0103"
-  },
-  {
-    "id": "BC 0103 halving",
     "title": "BC 0103 halving",
     "content": "- ### Primary Definition\nPeriodic reward reduction within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n- maturity:: draft\n- owl:class:: mv:BC0103halving\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: MetaverseDomain\n- ## About BC 0103 halving\n- ### Primary Definition\nPeriodic reward reduction within blockchain systems, providing essential functionality for distributed ledger technology operations",
     "tags": [
@@ -758,16 +678,6 @@
       "metaverse"
     ],
     "ontology_id": "BC-0106"
-  },
-  {
-    "id": "BC 0107 gas limit",
-    "title": "BC 0107 gas limit",
-    "content": "- ### Primary Definition\nMaximum gas per transaction within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n- maturity:: draft\n- owl:class:: mv:BC0107gaslimit\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: MetaverseDomain\n- ## About BC 0107 gas limit\n- ### Primary Definition\nMaximum gas per transaction within blockchain systems, providing essential functionality for distributed ledger technology ope",
-    "tags": [
-      "BC-0107",
-      "metaverse"
-    ],
-    "ontology_id": "BC-0107"
   },
   {
     "id": "BC 0108 base fee",
@@ -930,16 +840,6 @@
     "ontology_id": "BC-0036"
   },
   {
-    "id": "BC-0037-public-key",
-    "title": "Public Key",
-    "content": "- #### Relationships\nid:: public-key-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: public-key-owl-axioms\ncollapsed:: true\n-\n- ## About Public Key\nid:: public-key-about\n- Publicly-shared cryptographic key within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n-\n- ### Key Characteristics\nid:: public-key-characteristics\n- 1. **Definitional Property**: Core defining characteristic\n-",
-    "tags": [
-      "BC-0037",
-      "blockchain"
-    ],
-    "ontology_id": "BC-0037"
-  },
-  {
     "id": "BC-0038-address",
     "title": "Address",
     "content": "- #### Relationships\nid:: address-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: address-owl-axioms\ncollapsed:: true\n-\n- ## About Address\nid:: address-about\n- Public key-derived identifier within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n-\n- ### Key Characteristics\nid:: address-characteristics\n- 1. **Definitional Property**: Core defining characteristic\n- 2. **Functional Pr",
@@ -958,16 +858,6 @@
       "blockchain"
     ],
     "ontology_id": "BC-0050"
-  },
-  {
-    "id": "BC-0052-proof-of-work",
-    "title": "Proof of Work",
-    "content": "- #### Relationships\nid:: proof-of-work-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: proof-of-work-owl-axioms\ncollapsed:: true\n-\n- ## About Proof of Work\nid:: proof-of-work-about\n- Computational puzzle consensus within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n-\n- ### Key Characteristics\nid:: proof-of-work-characteristics\n- 1. **Definitional Property**: Core defining character",
-    "tags": [
-      "BC-0052",
-      "blockchain"
-    ],
-    "ontology_id": "BC-0052"
   },
   {
     "id": "BC-0066-pool-share",
@@ -1060,26 +950,6 @@
     "ontology_id": "BC-0101"
   },
   {
-    "id": "BC-0102-inflation",
-    "title": "BC 0102 inflation",
-    "content": "- ### Primary Definition\nIncreasing token supply within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n- maturity:: draft\n- owl:class:: mv:BC0102inflation\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: MetaverseDomain\n- ## About BC 0102 inflation\n- ### Primary Definition\nIncreasing token supply within blockchain systems, providing essential functionality for distributed ledger technology operations",
-    "tags": [
-      "BC-0102",
-      "blockchain"
-    ],
-    "ontology_id": "BC-0102"
-  },
-  {
-    "id": "BC-0103-halving",
-    "title": "BC 0103 halving",
-    "content": "- ### Primary Definition\nPeriodic reward reduction within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n- maturity:: draft\n- owl:class:: mv:BC0103halving\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: MetaverseDomain\n- ## About BC 0103 halving\n- ### Primary Definition\nPeriodic reward reduction within blockchain systems, providing essential functionality for distributed ledger technology operations",
-    "tags": [
-      "BC-0103",
-      "blockchain"
-    ],
-    "ontology_id": "BC-0103"
-  },
-  {
     "id": "BC-0104-supply-cap",
     "title": "BC 0104 supply cap",
     "content": "- ### Primary Definition\nMaximum token issuance limit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n- maturity:: draft\n- owl:class:: mv:BC0104supplycap\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: MetaverseDomain\n- ## About BC 0104 supply cap\n- ### Primary Definition\nMaximum token issuance limit within blockchain systems, providing essential functionality for distributed ledger technology",
@@ -1108,16 +978,6 @@
       "blockchain"
     ],
     "ontology_id": "BC-0106"
-  },
-  {
-    "id": "BC-0107-gas-limit",
-    "title": "BC 0107 gas limit",
-    "content": "- ### Primary Definition\nMaximum gas per transaction within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n- maturity:: draft\n- owl:class:: mv:BC0107gaslimit\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: MetaverseDomain\n- ## About BC 0107 gas limit\n- ### Primary Definition\nMaximum gas per transaction within blockchain systems, providing essential functionality for distributed ledger technology ope",
-    "tags": [
-      "BC-0107",
-      "blockchain"
-    ],
-    "ontology_id": "BC-0107"
   },
   {
     "id": "BC-0108-base-fee",
@@ -1980,36 +1840,6 @@
     "ontology_id": "mv-1761742247902"
   },
   {
-    "id": "COMPLETE-ONTOLOGY-INDEX",
-    "title": "COMPLETE ONTOLOGY INDEX",
-    "content": "-",
-    "tags": [
-      "mv-1761742247902",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247902"
-  },
-  {
-    "id": "COMPLETE_HRI_TERMS_REFERENCE",
-    "title": "COMPLETE_HRI_TERMS_REFERENCE",
-    "content": "-",
-    "tags": [
-      "mv-1761742247902",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247902"
-  },
-  {
-    "id": "COMPLETION_REPORT",
-    "title": "COMPLETION_REPORT",
-    "content": "-",
-    "tags": [
-      "mv-1761742247902",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247902"
-  },
-  {
     "id": "Calculating Empires",
     "title": "Calculating Empires",
     "content": "- #### Relationships\nid:: calculating-empires-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: calculating-empires-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- Calculating Empires is a large-scale research visualization project and exhibition that explores the interconnected history of technology and power from 1500 to ",
@@ -2700,16 +2530,6 @@
     "ontology_id": "mv-1761742247911"
   },
   {
-    "id": "DeFiProtocol",
-    "title": "DeFiProtocol",
-    "content": "-",
-    "tags": [
-      "mv-1761742247911",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247911"
-  },
-  {
     "id": "Death of the Internet",
     "title": "Death of the Internet",
     "content": "- #### Relationships\nid:: death-of-the-internet-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: death-of-the-internet-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- #Public page automatically published\n- # The story arc of THE MISTAKES\n- make the internet\n- centralise it to monetise it\n- choose passwords instead of verif",
@@ -2778,16 +2598,6 @@
       "metaverse"
     ],
     "ontology_id": "20280"
-  },
-  {
-    "id": "DecentralizedStorage",
-    "title": "DecentralizedStorage",
-    "content": "-",
-    "tags": [
-      "mv-1761742247911",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247911"
   },
   {
     "id": "Deep Learning",
@@ -3328,16 +3138,6 @@
     "ontology_id": "20224"
   },
   {
-    "id": "ERC20",
-    "title": "ERC20",
-    "content": "-",
-    "tags": [
-      "mv-1761742247916",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247916"
-  },
-  {
     "id": "ERC721",
     "title": "ERC721",
     "content": "-",
@@ -3578,28 +3378,8 @@
     "ontology_id": "20349"
   },
   {
-    "id": "ETSI_Domain_Governance_Compliance",
-    "title": "ETSI_Domain_Governance_Compliance",
-    "content": "-",
-    "tags": [
-      "mv-1761742247919",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247919"
-  },
-  {
     "id": "ETSI_Domain_Governance_Security",
     "title": "ETSI_Domain_Governance_Security",
-    "content": "-",
-    "tags": [
-      "mv-1761742247919",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247919"
-  },
-  {
-    "id": "ETSI_Domain_Governance___Economy",
-    "title": "ETSI_Domain_Governance___Economy",
     "content": "-",
     "tags": [
       "mv-1761742247919",
@@ -3612,70 +3392,70 @@
     "title": "ETSI_Domain_Governance___Ethics",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247921",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247921"
   },
   {
     "id": "ETSI_Domain_Governance___Society",
     "title": "ETSI_Domain_Governance___Society",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247922",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247922"
   },
   {
     "id": "ETSI_Domain_Human_Interface",
     "title": "ETSI_Domain_Human_Interface",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247923",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247923"
   },
   {
     "id": "ETSI_Domain_Human_Interface___Governance",
     "title": "ETSI_Domain_Human_Interface___Governance",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247924",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247924"
   },
   {
     "id": "ETSI_Domain_Human_Interface___UX",
     "title": "ETSI_Domain_Human_Interface___UX",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247925",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247925"
   },
   {
     "id": "ETSI_Domain_Identity_&_Trust",
     "title": "ETSI_Domain_Identity_&_Trust",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247926",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247926"
   },
   {
     "id": "ETSI_Domain_Immersive_Experiences",
     "title": "ETSI_Domain_Immersive_Experiences",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247927",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247927"
   },
   {
     "id": "ETSI_Domain_Immersive___Reality_Capture",
@@ -3692,130 +3472,130 @@
     "title": "ETSI_Domain_Infrastructure",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247928",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247928"
   },
   {
     "id": "ETSI_Domain_Infrastructure_Data",
     "title": "ETSI_Domain_Infrastructure_Data",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247929",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247929"
   },
   {
     "id": "ETSI_Domain_Infrastructure___Governance",
     "title": "ETSI_Domain_Infrastructure___Governance",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247930",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247930"
   },
   {
     "id": "ETSI_Domain_Infrastructure___Immersive",
     "title": "ETSI_Domain_Infrastructure___Immersive",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247931",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247931"
   },
   {
     "id": "ETSI_Domain_Infrastructure___Interop",
     "title": "ETSI_Domain_Infrastructure___Interop",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247932",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247932"
   },
   {
     "id": "ETSI_Domain_Infrastructure___Security",
     "title": "ETSI_Domain_Infrastructure___Security",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247933",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247933"
   },
   {
     "id": "ETSI_Domain_Interoperability",
     "title": "ETSI_Domain_Interoperability",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247934",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247934"
   },
   {
     "id": "ETSI_Domain_Interoperability___Creative",
     "title": "ETSI_Domain_Interoperability___Creative",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247935",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247935"
   },
   {
     "id": "ETSI_Domain_Reality_Capture",
     "title": "ETSI_Domain_Reality_Capture",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247936",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247936"
   },
   {
     "id": "ETSI_Domain_Reality_Capture___Creative",
     "title": "ETSI_Domain_Reality_Capture___Creative",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247937",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247937"
   },
   {
     "id": "ETSI_Domain_Security_&_Privacy",
     "title": "ETSI_Domain_Security_&_Privacy",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247938",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247938"
   },
   {
     "id": "ETSI_Domain_Virtual_Economy",
     "title": "ETSI_Domain_Virtual_Economy",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247939",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247939"
   },
   {
     "id": "ETSI_Domain_Virtual_Society",
     "title": "ETSI_Domain_Virtual_Society",
     "content": "-",
     "tags": [
-      "mv-1761742247920",
+      "mv-1761742247940",
       "metaverse"
     ],
-    "ontology_id": "mv-1761742247920"
+    "ontology_id": "mv-1761742247940"
   },
   {
     "id": "EU MiCA Regulation",
@@ -4098,24 +3878,14 @@
     "ontology_id": "mv-1761742247926"
   },
   {
-    "id": "Fairness Auditing Tools",
-    "title": "Fairness Auditing Tools",
-    "content": "- #### Relationships\nid:: 0386-fairness-auditing-tools-relationships\n- #### OWL Axioms\nid:: 0386-fairness-auditing-tools-owl-axioms\ncollapsed:: true\n-\n- ## About 0386 Fairness Auditing Tools [Updated 2025]\nid:: 0386-fairness-auditing-tools-about\n- ### Leading Fairness Auditing Tools (2025)\n- #### Fairlearn (Microsoft) [Updated 2025]\n- **Introduction**\n- Fairlearn is an open-source Python toolkit developed by Microsoft for assessing and improving fairness in AI systems, with strong focus on mitig",
+    "id": "Fairness Metrics",
+    "title": "Fairness Metrics",
+    "content": "- #### Relationships\nid:: 0377-fairness-metrics-relationships\n- is-part-of:: Algorithmic Fairness, AI Ethics, Bias Detection\n- requires:: Confusion Matrix, Statistical Testing, Protected Attributes\n- enables:: Bias Mitigation, Fairness Auditing, Regulatory Compliance\n- related-to:: AI Safety Research, Value Alignment, AI Trustworthiness, Algorithmic Accountability\n- measured-by:: Fairness Auditing Tools\n- depends-on:: IEEE P7003-2021, ISO/IEC TR 24027, NIST SP 1270\n- #### OWL Axioms\nid:: 0377-fa",
     "tags": [
-      "AI-0386",
+      "AI-0377",
       "ai"
     ],
-    "ontology_id": "AI-0386"
-  },
-  {
-    "id": "Fairness-Auditing-Tools",
-    "title": "Fairness Auditing Tools",
-    "content": "-",
-    "tags": [
-      "AI-0386",
-      "ai"
-    ],
-    "ontology_id": "AI-0386"
+    "ontology_id": "AI-0377"
   },
   {
     "id": "Fashion",
@@ -5082,16 +4852,6 @@
   {
     "id": "Loss Function",
     "title": "Loss Function",
-    "content": "-",
-    "tags": [
-      "AI-0047",
-      "ai"
-    ],
-    "ontology_id": "AI-0047"
-  },
-  {
-    "id": "Loss-Function",
-    "title": "Loss Function",
     "content": "- ### Primary Definition\nA **Loss Function** is a mathematical function that quantifies the difference between predicted outputs and true values, providing a scalar measure of model error. Training algorithms minimise the loss function to improve Model Performance.\n- maturity:: production\n- owl:class:: mv:LossFunction\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: MLDomain, ArtificialIntelligence\n- ## About Loss Function\n- ### Primary Definition [Updated 2025]\n- A ",
     "tags": [
       "AI-0047",
@@ -5160,16 +4920,6 @@
     "ontology_id": "AI-0002"
   },
   {
-    "id": "MachineLearning",
-    "title": "MachineLearning",
-    "content": "-",
-    "tags": [
-      "mv-1761742247943",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247943"
-  },
-  {
     "id": "Manipulability",
     "title": "Manipulability",
     "content": "- ### Primary Definition\n**Manipulability** - Measure of robot dexterity at a configuration\n- maturity:: draft\n- owl:class:: mv:rb0032manipulability\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: MetaverseDomain\n- ## About rb 0032 manipulability\n- ### Primary Definition\n**Manipulability** - Measure of robot dexterity at a configuration\n-\n- ### Original Content\ncollapsed:: true\n- clojure\n(Declaration (Class :Manipulability))\n(SubClassOf :Manipulability :Robot)\n(Anno",
@@ -5178,16 +4928,6 @@
       "robotics"
     ],
     "ontology_id": "RB-0032"
-  },
-  {
-    "id": "ManipulatorArm",
-    "title": "ManipulatorArm",
-    "content": "-",
-    "tags": [
-      "mv-1761742247943",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247943"
   },
   {
     "id": "Market Surveillance Authority",
@@ -5418,16 +5158,6 @@
       "metaverse"
     ],
     "ontology_id": "mv-485321926566"
-  },
-  {
-    "id": "Mobile Robot",
-    "title": "Mobile Robot",
-    "content": "- #### Relationships\nid:: mobile-robot-relationships\n- is-part-of:: Robot (RB-0001)\n- #### OWL Axioms\nid:: mobile-robot-owl-axioms\ncollapsed:: true\n-\n- ## About Mobile Robot\nid:: mobile-robot-about\n- A mobile robot is a robot with locomotion capabilities that enable it to move within its working environment.\n-\n- ### Technical Details\nid:: mobile-robot-details\n- [Content preserved from original file]\n-\n- ### Standards & References\nid:: mobile-robot-standards\n- ISO 8373:2021\n-\n- ### Related Concep",
-    "tags": [
-      "RB-0002",
-      "metaverse"
-    ],
-    "ontology_id": "RB-0002"
   },
   {
     "id": "Mobile-Robot",
@@ -5820,16 +5550,6 @@
     "ontology_id": "AI-0878"
   },
   {
-    "id": "OntologyDefinition",
-    "title": "OntologyDefinition",
-    "content": "-",
-    "tags": [
-      "mv-1761742247950",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247950"
-  },
-  {
     "id": "Open Generative AI tools",
     "title": "Open Generative AI tools",
     "content": "- #### Relationships\nid:: open-generative-ai-tools-relationships\n- enables:: ImmersiveExperience, Presence, SpatialComputing\n- requires:: DisplayTechnology, TrackingSystem, RenderingEngine\n- bridges-to:: HumanComputerInteraction, ComputerVision, Robotics\n- #### OWL Axioms\nid:: open-generative-ai-tools-owl-axioms\ncollapsed:: true\n-\npublic:: true\n- # Open (ish) tooling\n- ## Opensource vs Freeware in AI:\n- This is a hot, and also seemingly endless debate that has been going on for years.\n- Open-sou",
@@ -5994,16 +5714,6 @@
       "metaverse"
     ],
     "ontology_id": "BC-0075"
-  },
-  {
-    "id": "Perception-System",
-    "title": "Perception System",
-    "content": "-",
-    "tags": [
-      "AI-0349",
-      "ai"
-    ],
-    "ontology_id": "AI-0349"
   },
   {
     "id": "Performance Level",
@@ -6362,16 +6072,6 @@
     "ontology_id": "BC-0547"
   },
   {
-    "id": "Proof of Work",
-    "title": "Proof of Work",
-    "content": "- #### Relationships\nid:: proof-of-work-relationships\n- is-subclass-of:: Blockchain Entity, ConsensusProtocol\n- #### OWL Axioms\nid:: proof-of-work-owl-axioms\ncollapsed:: true\n-\n- ## About Proof of Work\nid:: proof-of-work-about\n- Computational puzzle consensus mechanism within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n-\n- ### Key Characteristics\nid:: proof-of-work-characteristics\n- 1. **Definitional Property**: Core defining",
-    "tags": [
-      "BC-0052",
-      "blockchain"
-    ],
-    "ontology_id": "BC-0052"
-  },
-  {
     "id": "ProofOfStake",
     "title": "ProofOfStake",
     "content": "- ### Fundamental Concept\n- **Economic Security Model**: PoS secures blockchain networks through economic incentives rather than computational difficulty\n- **Validator Selection**: Network participants are chosen to propose and validate blocks based on their staked tokens\n- **Stake as Collateral**: Validators must lock up cryptocurrency as security deposit, which can be forfeited (slashing) for malicious behavior\n- **Energy Efficiency**: Eliminates the need for energy-intensive mining operations",
@@ -6482,16 +6182,6 @@
     "ontology_id": "RB-0071"
   },
   {
-    "id": "Public Key - CORRECTED",
-    "title": "Public Key",
-    "content": "- #### Relationships\nid:: public-key-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: public-key-owl-axioms\ncollapsed:: true\n-\n- ## About Public Key\nid:: public-key-about\n- Publicly-shared cryptographic key within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n- Public key cryptography, also known as asymmetric cryptography, is a foundational branch of cryptography that enables se",
-    "tags": [
-      "BC-0037",
-      "metaverse"
-    ],
-    "ontology_id": "BC-0037"
-  },
-  {
     "id": "Public Key",
     "title": "Public Key",
     "content": "- #### Relationships\nid:: public-key-relationships\n- is-subclass-of:: Blockchain Entity, CryptographicPrimitive\n- #### OWL Axioms\nid:: public-key-owl-axioms\ncollapsed:: true\n-\n- ## About Public Key\nid:: public-key-about\n- Publicly-shared cryptographic key within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n- Public key cryptography, also known as asymmetric cryptography, is a foundational branch of cryptography that enables se",
@@ -6560,16 +6250,6 @@
       "metaverse"
     ],
     "ontology_id": "BC-0437"
-  },
-  {
-    "id": "RB-0002-mobile-robot",
-    "title": "Mobile Robot",
-    "content": "- #### Relationships\nid:: mobile-robot-relationships\n- is-part-of:: Robot (RB-0001)\n- #### OWL Axioms\nid:: mobile-robot-owl-axioms\ncollapsed:: true\n-\n- ## About Mobile Robot\nid:: mobile-robot-about\n- A mobile robot is a robot with locomotion capabilities that enable it to move within its working environment.\n-\n- ### Technical Details\nid:: mobile-robot-details\n- [Content preserved from original file]\n-\n- ### Standards & References\nid:: mobile-robot-standards\n- ISO 8373:2021\n-\n- ### Related Concep",
-    "tags": [
-      "RB-0002",
-      "metaverse"
-    ],
-    "ontology_id": "RB-0002"
   },
   {
     "id": "RESEARCH_SUMMARY",
@@ -6642,16 +6322,6 @@
     "ontology_id": "20157"
   },
   {
-    "id": "Recurrent-Neural-Network",
-    "title": "Recurrent Neural Network",
-    "content": "-",
-    "tags": [
-      "AI-0033",
-      "ai"
-    ],
-    "ontology_id": "AI-0033"
-  },
-  {
     "id": "Red Teaming",
     "title": "Red Teaming",
     "content": "-",
@@ -6716,10 +6386,10 @@
     "title": "Renewable Energy Certificates",
     "content": "-",
     "tags": [
-      "BC-0500",
-      "metaverse"
+      "BC-0551",
+      "blockchain"
     ],
-    "ontology_id": "BC-0500"
+    "ontology_id": "BC-0551"
   },
   {
     "id": "Repeatability",
@@ -7778,26 +7448,6 @@
     "ontology_id": "TELE-CONV-002"
   },
   {
-    "id": "TERM-INDEX",
-    "title": "TERM INDEX",
-    "content": "-",
-    "tags": [
-      "mv-1761742247974",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247974"
-  },
-  {
-    "id": "TERM_INDEX",
-    "title": "TERM_INDEX",
-    "content": "-",
-    "tags": [
-      "mv-1761742247974",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247974"
-  },
-  {
     "id": "Tactile Sensing",
     "title": "Tactile Sensing",
     "content": "- ### Primary Definition\n**Tactile Sensing** - Tactile Sensing in robotics systems\n- maturity:: draft\n- owl:class:: mv:rb0070tactilesensing\n- owl:physicality:: ConceptualEntity\n- owl:role:: Concept\n- belongsToDomain:: MetaverseDomain\n- ## About rb 0070 tactile sensing\n- ### Primary Definition\n**Tactile Sensing** - Tactile Sensing in robotics systems\n-\n- ### Original Content\ncollapsed:: true\n- clojure\n(Declaration (Class :TactileSensing))\n(SubClassOf :TactileSensing :Robot)\n(AnnotationAssertion r",
@@ -7876,16 +7526,6 @@
       "robotics"
     ],
     "ontology_id": "RB-0009"
-  },
-  {
-    "id": "Teleoperation",
-    "title": "Teleoperation",
-    "content": "-",
-    "tags": [
-      "mv-1761742247974",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247974"
   },
   {
     "id": "Temperature Sensor",
@@ -8428,26 +8068,6 @@
     "ontology_id": "20314"
   },
   {
-    "id": "VirtualAsset",
-    "title": "VirtualAsset",
-    "content": "-",
-    "tags": [
-      "mv-1761742247979",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247979"
-  },
-  {
-    "id": "VirtualEconomy",
-    "title": "VirtualEconomy",
-    "content": "-",
-    "tags": [
-      "mv-1761742247979",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247979"
-  },
-  {
     "id": "VirtualWorld",
     "title": "VirtualWorld",
     "content": "-",
@@ -8596,26 +8216,6 @@
       "metaverse"
     ],
     "ontology_id": "20189"
-  },
-  {
-    "id": "ZeroKnowledge",
-    "title": "ZeroKnowledge",
-    "content": "-",
-    "tags": [
-      "mv-1761742247980",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247980"
-  },
-  {
-    "id": "ai-core-concepts",
-    "title": "ai core concepts",
-    "content": "-",
-    "tags": [
-      "mv-1761742247980",
-      "metaverse"
-    ],
-    "ontology_id": "mv-1761742247980"
   },
   {
     "id": "artificial superintelligence",

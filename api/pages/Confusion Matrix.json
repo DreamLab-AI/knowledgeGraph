@@ -13,7 +13,7 @@
     "- definition": "A tabular visualisation and analytical tool summarising the performance of a classification model by displaying the counts or proportions of predictions cross-tabulated against actual class labels, typically organised with predicted classes as columns and actual classes as rows (or vice versa), enabling systematic analysis of where a model succeeds and fails, calculation of various performance metrics, and identification of specific confusion patterns between classes."
   },
   "backlinks": [
-    "AI-0377-fairness-metrics"
+    "Fairness Metrics"
   ],
   "wiki_links": [],
   "ontology": {

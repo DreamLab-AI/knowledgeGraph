@@ -27,16 +27,16 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Social contract and jobs",
-    "IEEE 2418.1",
-    "DistributedDataStructure",
+    "Alden2023",
+    "Blockchain Entity",
+    "BlockchainDomain",
     "NIST NISTIR",
+    "DistributedDataStructure",
+    "ConceptualLayer",
     "Srinivasan2022",
     "ISO/IEC 23257:2021",
-    "ConceptualLayer",
-    "BlockchainDomain",
-    "Blockchain Entity",
-    "Alden2023"
+    "IEEE 2418.1",
+    "Social contract and jobs"
   ],
   "ontology": {
     "term_id": "BC-0025",

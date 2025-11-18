@@ -23,19 +23,19 @@
     "BC-0468-multi-sig-governance"
   ],
   "wiki_links": [
-    "BC-0466-quadratic-voting",
-    "BC-0468-multi-sig-governance",
+    "BC-0470-dao-legal-structures",
+    "Optimism",
     "Continuous Funding",
     "BC-0469-snapshot-voting",
-    "Commons Stack",
-    "BC-0462-on-chain-voting",
-    "BC-0461-decentralized-autonomous-organization",
+    "BlockchainDomain",
     "Gardens",
     "Token Engineering",
-    "Optimism",
-    "1Hive",
-    "BlockchainDomain",
-    "BC-0470-dao-legal-structures"
+    "BC-0462-on-chain-voting",
+    "BC-0468-multi-sig-governance",
+    "Commons Stack",
+    "BC-0461-decentralized-autonomous-organization",
+    "BC-0466-quadratic-voting",
+    "1Hive"
   ],
   "ontology": {
     "term_id": "BC-0467",

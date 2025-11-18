@@ -24,26 +24,25 @@
     "public": "true"
   },
   "backlinks": [
-    "Suggested Reading Order",
-    "BC-0037-public-key"
+    "Suggested Reading Order"
   ],
   "wiki_links": [
-    "Avatar",
-    "MetaverseDomain",
-    "WorldSpace",
-    "Metaverse",
     "DigitalEconomy",
-    "National Industrial Centre for Virtual Environments",
     "SocialInteraction",
     "Hardware and Edge",
-    "PhysicsEngine",
-    "MetaversePlatform",
-    "3DRenderingEngine",
-    "VirtualSociety",
     "SceneGraph",
-    "NetworkProtocol",
+    "National Industrial Centre for Virtual Environments",
     "Telethrone",
-    "DatabaseSystem"
+    "3DRenderingEngine",
+    "MetaverseDomain",
+    "PhysicsEngine",
+    "Metaverse",
+    "VirtualSociety",
+    "DatabaseSystem",
+    "WorldSpace",
+    "MetaversePlatform",
+    "NetworkProtocol",
+    "Avatar"
   ],
   "ontology": {
     "term_id": "mv-501080407130",

@@ -27,26 +27,25 @@
     "Human-in-the-Loop",
     "Deep Learning",
     "Private Key",
-    "BC-0037-public-key",
     "BC-0036-private-key",
+    "Loss Function",
     "Energy and Power",
-    "Introduction to me",
-    "Loss-Function"
+    "Introduction to me"
   ],
   "wiki_links": [
-    "HumanComputerInteraction",
-    "Spatial Computing",
-    "MetaverseDomain",
-    "TrackingSystem",
-    "ComputerVision",
-    "ImmersiveExperience",
     "Singularity",
-    "Robotics",
-    "RenderingEngine",
-    "SpatialComputing",
+    "ImmersiveExperience",
+    "TrackingSystem",
     "Presence",
+    "Robotics",
+    "SpatialComputing",
     "DisplayTechnology",
-    "Artificial General Intelligence"
+    "MetaverseDomain",
+    "ComputerVision",
+    "Spatial Computing",
+    "HumanComputerInteraction",
+    "Artificial General Intelligence",
+    "RenderingEngine"
   ],
   "ontology": {
     "term_id": "mv-730687576412",

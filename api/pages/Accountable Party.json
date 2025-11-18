@@ -28,22 +28,22 @@
     "AI Governance Principle"
   ],
   "wiki_links": [
-    "Data Provider",
-    "ISO/IEC 42001",
+    "IEEE 7000 Model Process",
+    "OECD AI Principles",
+    "ConceptualLayer",
     "Deploying Organization",
     "Chief AI Officer",
-    "Algorithmic Accountability Principles",
-    "AI Ethics Board",
-    "System Operator",
     "Algorithmic Auditor",
-    "Governance Body",
-    "IEEE 7000 Model Process",
-    "AIEthicsDomain",
+    "AI Governance Principle",
     "Model Developer",
     "EU AI Act",
-    "ConceptualLayer",
-    "AI Governance Principle",
-    "OECD AI Principles"
+    "Algorithmic Accountability Principles",
+    "System Operator",
+    "Data Provider",
+    "AI Ethics Board",
+    "AIEthicsDomain",
+    "Governance Body",
+    "ISO/IEC 42001"
   ],
   "ontology": {
     "term_id": "PC-0015",

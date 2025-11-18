@@ -25,26 +25,25 @@
   },
   "backlinks": [
     "Suggested Reading Order",
-    "Proprietary Image Generation",
-    "BC-0037-public-key"
+    "Proprietary Image Generation"
   ],
   "wiki_links": [
+    "Omniverse",
+    "Metaverse and Telecollaboration",
+    "presentation",
+    "ImmersiveExperience",
+    "TrackingSystem",
+    "Presence",
+    "Robotics",
+    "SpatialComputing",
+    "Open Generative AI tools",
+    "DisplayTechnology",
+    "MetaverseDomain",
+    "ComputerVision",
+    "OpenUSD",
     "HumanComputerInteraction",
     "NVIDIA Omniverse",
-    "MetaverseDomain",
-    "TrackingSystem",
-    "ComputerVision",
-    "Omniverse",
-    "ImmersiveExperience",
-    "Metaverse and Telecollaboration",
-    "Robotics",
-    "RenderingEngine",
-    "presentation",
-    "SpatialComputing",
-    "OpenUSD",
-    "Open Generative AI tools",
-    "Presence",
-    "DisplayTechnology"
+    "RenderingEngine"
   ],
   "ontology": {
     "term_id": "mv-192862651986",

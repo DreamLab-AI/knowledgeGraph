@@ -4,9 +4,7 @@
   "properties": {
     "public": "true"
   },
-  "backlinks": [
-    "BC-0037-public-key"
-  ],
+  "backlinks": [],
   "wiki_links": [
     "Debug Test Page"
   ]

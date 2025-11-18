@@ -32,15 +32,15 @@
   ],
   "wiki_links": [
     "ConsensusDomain",
-    "IEEE 2418.1",
-    "Lightning Network",
-    "ConsensusProtocol",
-    "ProtocolLayer",
-    "NIST NISTIR",
-    "ISO/IEC 23257:2021",
     "schnorr1989efficient",
+    "ProtocolLayer",
+    "Blockchain Entity",
+    "NIST NISTIR",
+    "ConsensusProtocol",
     "Nostr",
-    "Blockchain Entity"
+    "ISO/IEC 23257:2021",
+    "IEEE 2418.1",
+    "Lightning Network"
   ],
   "ontology": {
     "term_id": "BC-0057",

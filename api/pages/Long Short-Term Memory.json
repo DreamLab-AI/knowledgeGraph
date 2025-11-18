@@ -17,9 +17,7 @@
     "- owl:role": "Concept",
     "- belongsToDomain": "[[MetaverseDomain]]"
   },
-  "backlinks": [
-    "Recurrent-Neural-Network"
-  ],
+  "backlinks": [],
   "wiki_links": [
     "MetaverseDomain"
   ],
