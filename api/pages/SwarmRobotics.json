@@ -1,10 +1,11 @@
 {
   "title": "SwarmRobotics",
-  "content": "- ### OntologyBlock\n  id:: swarmrobotics-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0107\n\t- preferred-term:: SwarmRobotics\n\t- source-domain:: robotics\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A field studying the coordination and collective behavior of multiple simple robots through local rules and interactions, inspired by biological swarm systems like ant colonies and bee swarms.\n\t- maturity:: mature\n\t- owl:class:: rb:SwarmRobotics\n\t- owl:equivalentClass:: rb:SwarmRobotics\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Discipline\n\t- belongsToDomain:: [[RoboticsDomain]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Swarmrobotics))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Swarmrobotics \"SwarmRobotics\"@en)\n(AnnotationAssertion rdfs:comment :Swarmrobotics \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Swarmrobotics \"mv-1761742247974\"^^xsd:string)\n```",
+  "content": "- ### OntologyBlock\n  id:: swarmrobotics-ontology\n  collapsed:: true\n\t- ontology:: true\n    - is-subclass-of:: [[RoboticsTechnology]]\n\t- term-id:: RB-0107\n\t- preferred-term:: SwarmRobotics\n\t- source-domain:: robotics\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A field studying the coordination and collective behavior of multiple simple robots through local rules and interactions, inspired by biological swarm systems like ant colonies and bee swarms.\n\t- maturity:: mature\n\t- owl:class:: rb:SwarmRobotics\n\t- owl:equivalentClass:: rb:SwarmRobotics\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Discipline\n\t- belongsToDomain:: [[RoboticsDomain]]\n\t- #### CrossDomainBridges\n\t\t- dt:uses:: [[Machine Learning]]\n\t\t- dt:uses:: [[ConsensusMechanism]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Swarmrobotics))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Swarmrobotics \"SwarmRobotics\"@en)\n(AnnotationAssertion rdfs:comment :Swarmrobotics \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Swarmrobotics \"mv-1761742247974\"^^xsd:string)\n```",
   "properties": {
     "id": "swarmrobotics-ontology",
     "collapsed": "true",
     "- ontology": "true",
+    "- is-subclass-of": "[[RoboticsTechnology]]",
     "- term-id": "RB-0107",
     "- preferred-term": "SwarmRobotics",
     "- source-domain": "robotics",
@@ -16,11 +17,15 @@
     "- owl:equivalentClass": "rb:SwarmRobotics",
     "- owl:physicality": "ConceptualEntity",
     "- owl:role": "Discipline",
-    "- belongsToDomain": "[[RoboticsDomain]]"
+    "- belongsToDomain": "[[RoboticsDomain]]",
+    "- dt:uses": "[[ConsensusMechanism]]"
   },
   "backlinks": [],
   "wiki_links": [
-    "RoboticsDomain"
+    "RoboticsDomain",
+    "Machine Learning",
+    "ConsensusMechanism",
+    "RoboticsTechnology"
   ],
   "ontology": {
     "term_id": "RB-0107",

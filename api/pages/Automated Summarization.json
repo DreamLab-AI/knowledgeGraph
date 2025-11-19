@@ -1,6 +1,6 @@
 {
   "title": "Automated Summarization",
-  "content": "- ### OntologyBlock\n  id:: automatedsummarization-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0856\n    - filename-history:: [\"AI-0856-automatedsummarization.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0856\n    - preferred-term:: Automated Summarization\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:AutomatedSummarization\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[NaturalLanguageProcessing]] via is-subclass-of\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: automatedsummarization-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0856\n    - filename-history:: [\"AI-0856-automatedsummarization.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[ArtificialIntelligenceTechnology]]\n    - term-id:: AI-0856\n    - preferred-term:: Automated Summarization\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:AutomatedSummarization\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[NaturalLanguageProcessing]] via is-subclass-of\n\n  -",
   "properties": {
     "id": "automatedsummarization-ontology",
     "collapsed": "true",
@@ -9,6 +9,7 @@
     "- filename-history": "[\"AI-0856-automatedsummarization.md\"]",
     "- public-access": "true",
     "- ontology": "true",
+    "- is-subclass-of": "[[ArtificialIntelligenceTechnology]]",
     "- term-id": "AI-0856",
     "- preferred-term": "Automated Summarization",
     "- source-domain": "ai",
@@ -25,8 +26,9 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Artificial Intelligence",
-    "NaturalLanguageProcessing"
+    "ArtificialIntelligenceTechnology",
+    "NaturalLanguageProcessing",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0856",

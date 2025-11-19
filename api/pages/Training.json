@@ -1,6 +1,6 @@
 {
   "title": "Training",
-  "content": "- ### OntologyBlock\n\t- ontology:: true\n\t- term-id:: AI-0041\n\t- preferred-term:: Training\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- definition:: ### Primary Definition\n**Training** is the process of using a training dataset to cause a model to be created or updated. Training involves iterative adjustment of model parameters to minimise error or maximise performance on the training task.\n\t- maturity:: draft\n\t- owl:class:: mv:Training\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]",
+  "content": "- ### OntologyBlock\n\t- ontology:: true\n\t- term-id:: AI-0041\n\t- preferred-term:: Training\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- definition:: ### Primary Definition\n**Training** is the process of using a training dataset to cause a model to be created or updated. Training involves iterative adjustment of model parameters to minimise error or maximise performance on the training task.\n\t- maturity:: draft\n\t- owl:class:: mv:Training\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n### Relationships\n- is-subclass-of:: [[MachineLearning]]",
   "properties": {
     "- ontology": "true",
     "- term-id": "AI-0041",
@@ -19,7 +19,8 @@
     "Loss Function"
   ],
   "wiki_links": [
-    "MetaverseDomain"
+    "MetaverseDomain",
+    "MachineLearning"
   ],
   "ontology": {
     "term_id": "AI-0041",

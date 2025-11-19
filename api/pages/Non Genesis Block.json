@@ -1,6 +1,6 @@
 {
   "title": "Non Genesis Block",
-  "content": "- ### OntologyBlock\n  id:: nongenesisblock-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0568\n    - filename-history:: [\"BC-0568-nongenesisblock.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0568\n    - preferred-term:: Non Genesis Block\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:NonGenesisBlock\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "content": "- ### OntologyBlock\n  id:: nongenesisblock-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0568\n    - filename-history:: [\"BC-0568-nongenesisblock.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0568\n    - preferred-term:: Non Genesis Block\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:NonGenesisBlock\n    - is-subclass-of:: [[Blockchain]]\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### OWL Restrictions\n    \n\n  -",
   "properties": {
     "id": "nongenesisblock-ontology",
     "collapsed": "true",
@@ -20,6 +20,7 @@
     "- source": "Chimera Prime Research",
     "- authority-score": "0.95",
     "- owl:class": "bc:NonGenesisBlock",
+    "- is-subclass-of": "[[Blockchain]]",
     "- belongsToDomain": "[[Blockchain]]"
   },
   "backlinks": [],

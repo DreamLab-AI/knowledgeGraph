@@ -1,6 +1,6 @@
 {
   "title": "Explanation",
-  "content": "- ### OntologyBlock\n  id:: explanation-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0823\n    - filename-history:: [\"AI-0823-explanation.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0823\n    - preferred-term:: Explanation\n    - source-domain:: artificial-intelligence\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: Explanation of AI system behavior or decisions.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:Explanation\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### Relationships\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :Explanation))\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :Explanation \"Explanation\"@en)\n      (AnnotationAssertion rdfs:comment :Explanation\n        \"Explanation of AI system behavior or decisions.\"@en)\n      ```",
+  "content": "- ### OntologyBlock\n  id:: explanation-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0823\n    - filename-history:: [\"AI-0823-explanation.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[DisruptiveTechnology]]\n    - term-id:: AI-0823\n    - preferred-term:: Explanation\n    - source-domain:: artificial-intelligence\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: Explanation of AI system behavior or decisions.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:Explanation\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### Relationships\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :Explanation))\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :Explanation \"Explanation\"@en)\n      (AnnotationAssertion rdfs:comment :Explanation\n        \"Explanation of AI system behavior or decisions.\"@en)\n      ```",
   "properties": {
     "id": "explanation-ontology",
     "collapsed": "true",
@@ -9,6 +9,7 @@
     "- filename-history": "[\"AI-0823-explanation.md\"]",
     "- public-access": "true",
     "- ontology": "true",
+    "- is-subclass-of": "[[DisruptiveTechnology]]",
     "- term-id": "AI-0823",
     "- preferred-term": "Explanation",
     "- source-domain": "artificial-intelligence",
@@ -24,6 +25,7 @@
   },
   "backlinks": [],
   "wiki_links": [
+    "DisruptiveTechnology",
     "Artificial Intelligence"
   ],
   "ontology": {

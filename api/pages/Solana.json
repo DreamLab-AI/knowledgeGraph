@@ -1,6 +1,6 @@
 {
   "title": "Solana",
-  "content": "- ### OntologyBlock\n  id:: solana-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0566\n    - filename-history:: [\"BC-0566-solana.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0566\n    - preferred-term:: Solana\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: A high-performance blockchain platform combining Proof-of-History (PoH) with Proof-of-Stake consensus, enabling parallel transaction processing for exceptional throughput exceeding 65,000 TPS. Uses single-layer architecture where all transactions process on the base layer, prioritizing speed, throughput, and low latency.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Solana\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "content": "- ### OntologyBlock\n  id:: solana-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0566\n    - filename-history:: [\"BC-0566-solana.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[BlockchainTechnology]]\n    - term-id:: BC-0566\n    - preferred-term:: Solana\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: A high-performance blockchain platform combining Proof-of-History (PoH) with Proof-of-Stake consensus, enabling parallel transaction processing for exceptional throughput exceeding 65,000 TPS. Uses single-layer architecture where all transactions process on the base layer, prioritizing speed, throughput, and low latency.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Solana\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### OWL Restrictions\n    \n\n  -",
   "properties": {
     "id": "solana-ontology",
     "collapsed": "true",
@@ -9,6 +9,7 @@
     "- filename-history": "[\"BC-0566-solana.md\"]",
     "- public-access": "true",
     "- ontology": "true",
+    "- is-subclass-of": "[[BlockchainTechnology]]",
     "- term-id": "BC-0566",
     "- preferred-term": "Solana",
     "- source-domain": "blockchain",
@@ -29,7 +30,8 @@
     "Decentralized Finance"
   ],
   "wiki_links": [
-    "Blockchain"
+    "Blockchain",
+    "BlockchainTechnology"
   ],
   "ontology": {
     "term_id": "BC-0566",

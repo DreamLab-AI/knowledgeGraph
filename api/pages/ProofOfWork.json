@@ -1,6 +1,6 @@
 {
   "title": "Proof of Work",
-  "content": "- ### OntologyBlock\n  id:: proof-of-work-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0052\n\n    - filename-history:: [\"BC-0052-proof-of-work.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0052\n    - preferred-term:: Proof of Work\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: [[Computational puzzle]] [[consensus mechanism]] within [[blockchain]] systems, providing essential functionality for [[distributed ledger]] technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:ProofofWork\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[ConsensusDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-from:: [[Bitcoin]] via implements\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: proof-of-work-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0052\n\n    - filename-history:: [\"BC-0052-proof-of-work.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[BlockchainTechnology]]\n    - term-id:: BC-0052\n    - preferred-term:: Proof of Work\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: [[Computational puzzle]] [[consensus mechanism]] within [[blockchain]] systems, providing essential functionality for [[distributed ledger]] technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:ProofofWork\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[ConsensusDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-from:: [[Bitcoin]] via implements\n\n  -",
   "properties": {
     "id": "proof-of-work-ontology",
     "collapsed": "true",
@@ -9,6 +9,7 @@
     "- filename-history": "[\"BC-0052-proof-of-work.md\"]",
     "- public-access": "true",
     "- ontology": "true",
+    "- is-subclass-of": "[[BlockchainTechnology]]",
     "- term-id": "BC-0052",
     "- preferred-term": "Proof of Work",
     "- source-domain": "blockchain",
@@ -31,16 +32,17 @@
     "Blockchain Entity"
   ],
   "wiki_links": [
-    "Computational puzzle",
-    "ISO/IEC 23257:2021",
-    "consensus mechanism",
-    "ConsensusDomain",
-    "BlockchainEntity",
+    "NIST NISTIR",
     "blockchain",
+    "BlockchainTechnology",
     "IEEE 2418.1",
     "Bitcoin",
-    "distributed ledger",
-    "NIST NISTIR"
+    "Computational puzzle",
+    "ConsensusDomain",
+    "BlockchainEntity",
+    "consensus mechanism",
+    "ISO/IEC 23257:2021",
+    "distributed ledger"
   ],
   "ontology": {
     "term_id": "BC-0052",

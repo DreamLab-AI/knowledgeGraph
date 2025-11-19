@@ -1,8 +1,8 @@
 {
   "title": "Finality",
-  "content": "- ### OntologyBlock\n  id:: finality-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0080\n    - preferred-term:: Finality\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Transaction irreversibility within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Finality\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-to:: [[Networkcomponent]] via is-subclass-of\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: finality-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0080\n    - preferred-term:: Finality\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Transaction irreversibility within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Finality\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### Relationships\n    id:: relationships\n    - is-subclass-of:: [[Consensus Mechanism]]\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-to:: [[Networkcomponent]] via is-subclass-of\n\n  -",
   "properties": {
-    "id": "finality-ontology",
+    "id": "relationships",
     "collapsed": "true",
     "- public-access": "true",
     "- ontology": "true",
@@ -21,16 +21,18 @@
     "- owl:role": "Object",
     "- owl:inferred-class": "bc:VirtualObject",
     "- belongsToDomain": "[[CryptographicDomain]]",
+    "- is-subclass-of": "[[Consensus Mechanism]]",
     "- bridges-to": "[[Networkcomponent]] via is-subclass-of"
   },
   "backlinks": [],
   "wiki_links": [
-    "Networkcomponent",
-    "ISO/IEC 23257:2021",
-    "BlockchainEntity",
-    "CryptographicDomain",
+    "NIST NISTIR",
+    "Consensus Mechanism",
     "IEEE 2418.1",
-    "NIST NISTIR"
+    "Networkcomponent",
+    "BlockchainEntity",
+    "ISO/IEC 23257:2021",
+    "CryptographicDomain"
   ],
   "ontology": {
     "term_id": "BC-0080",

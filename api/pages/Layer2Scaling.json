@@ -1,6 +1,6 @@
 {
   "title": "Layer2Scaling",
-  "content": "- ### OntologyBlock\n  id:: layer2scaling-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0044\n\t- preferred-term:: Layer2Scaling\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: mv:Layer2Scaling\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Layer2scaling))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Layer2scaling \"Layer2Scaling\"@en)\n(AnnotationAssertion rdfs:comment :Layer2scaling \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Layer2scaling \"mv-1761742247942\"^^xsd:string)\n```",
+  "content": "- ### OntologyBlock\n  id:: layer2scaling-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0044\n\t- preferred-term:: Layer2Scaling\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: mv:Layer2Scaling\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- is-subclass-of:: [[Metaverse Infrastructure]]\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Layer2scaling))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Layer2scaling \"Layer2Scaling\"@en)\n(AnnotationAssertion rdfs:comment :Layer2scaling \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Layer2scaling \"mv-1761742247942\"^^xsd:string)\n```",
   "properties": {
     "id": "layer2scaling-ontology",
     "collapsed": "true",
@@ -15,11 +15,13 @@
     "- owl:class": "mv:Layer2Scaling",
     "- owl:physicality": "ConceptualEntity",
     "- owl:role": "Concept",
+    "- is-subclass-of": "[[Metaverse Infrastructure]]",
     "- belongsToDomain": "[[MetaverseDomain]]"
   },
   "backlinks": [],
   "wiki_links": [
-    "MetaverseDomain"
+    "MetaverseDomain",
+    "Metaverse Infrastructure"
   ],
   "ontology": {
     "term_id": "MV-0044",

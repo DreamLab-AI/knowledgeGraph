@@ -1,8 +1,8 @@
 {
   "title": "Transaction",
-  "content": "- ### OntologyBlock\n  id:: transaction-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0006\n    - preferred-term:: Transaction\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: State-changing operation on blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Transaction\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[BlockchainDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Distributeddatastructure]] via is-subclass-of\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-from:: [[ValueTransfer]] via implemented-by\n    - bridges-from:: [[Bitcoin]] via has-part\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: transaction-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0006\n    - preferred-term:: Transaction\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: State-changing operation on blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Transaction\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[BlockchainDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### Relationships\n    id:: relationships\n    - is-subclass-of:: [[Blockchain]]\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Distributeddatastructure]] via is-subclass-of\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-from:: [[ValueTransfer]] via implemented-by\n    - bridges-from:: [[Bitcoin]] via has-part\n\n  -",
   "properties": {
-    "id": "transaction-ontology",
+    "id": "relationships",
     "collapsed": "true",
     "- public-access": "true",
     "- ontology": "true",
@@ -21,19 +21,21 @@
     "- owl:role": "Object",
     "- owl:inferred-class": "bc:VirtualObject",
     "- belongsToDomain": "[[BlockchainDomain]]",
+    "- is-subclass-of": "[[Blockchain]]",
     "- bridges-to": "[[BlockchainEntity]] via is-subclass-of",
     "- bridges-from": "[[Bitcoin]] via has-part"
   },
   "backlinks": [],
   "wiki_links": [
-    "BlockchainDomain",
-    "ValueTransfer",
-    "ISO/IEC 23257:2021",
-    "BlockchainEntity",
+    "NIST NISTIR",
+    "Distributeddatastructure",
     "IEEE 2418.1",
     "Bitcoin",
-    "NIST NISTIR",
-    "Distributeddatastructure"
+    "BlockchainEntity",
+    "ISO/IEC 23257:2021",
+    "Blockchain",
+    "BlockchainDomain",
+    "ValueTransfer"
   ],
   "ontology": {
     "term_id": "BC-0006",

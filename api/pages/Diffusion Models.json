@@ -1,6 +1,6 @@
 {
   "title": "Diffusion Models",
-  "content": "",
+  "content": "### Relationships\n- is-subclass-of:: [[GenerativeModel]]",
   "properties": {
     "public": "true"
   },
@@ -8,5 +8,7 @@
     "Variational Autoencoders",
     "Generative AI"
   ],
-  "wiki_links": []
+  "wiki_links": [
+    "GenerativeModel"
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "title": "Deep Learning",
-  "content": "- ### OntologyBlock\n  id:: deep-learning-ontology\n  collapsed:: true\n\n  - **Identification**\n    - ontology:: true\n    - term-id:: AI-0870\n    - preferred-term:: Deep Learning\n    - source-domain:: ai\n    - status:: complete\n    - public-access:: true\n    - version:: 2.0.0\n    - last-updated:: 2025-01-15\n    - quality-score:: 0.91\n\n  - **Definition**\n    - definition:: [[Deep Learning]] is a subset of [[Machine Learning]] based on [[Artificial Neural Networks]] with multiple layers (depth) that learn hierarchical representations of data through [[Backpropagation]] and [[Gradient Descent]]. Deep learning models automatically discover intricate structures in high-dimensional data, enabling breakthrough performance in [[Computer Vision]], [[Natural Language Processing]], [[Speech Recognition]], and [[Reinforcement Learning]]. The \"deep\" refers to the number of layers through which data is transformed, allowing the network to learn increasingly abstract and complex features.\n    - maturity:: mature\n    - source:: [[Yann LeCun]], [[Geoffrey Hinton]], [[Yoshua Bengio]], [[NIST AI Standards]], [[ISO/IEC 22989:2022]]\n    - authority-score:: 0.96\n\n  - **Semantic Classification**\n    - owl:class:: ai:DeepLearning\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Process\n    - owl:inferred-class:: ai:VirtualProcess\n    - belongsToDomain:: [[AI-GroundedDomain]], [[ComputationAndIntelligenceDomain]], [[DataManagementDomain]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "content": "- ### OntologyBlock\n  id:: deep-learning-ontology\n  collapsed:: true\n\n  - **Identification**\n    - ontology:: true\n    - term-id:: AI-0870\n    - preferred-term:: Deep Learning\n    - source-domain:: ai\n    - status:: complete\n    - public-access:: true\n    - version:: 2.0.0\n    - last-updated:: 2025-01-15\n    - quality-score:: 0.91\n\n  - **Definition**\n    - definition:: [[Deep Learning]] is a subset of [[Machine Learning]] based on [[Artificial Neural Networks]] with multiple layers (depth) that learn hierarchical representations of data through [[Backpropagation]] and [[Gradient Descent]]. Deep learning models automatically discover intricate structures in high-dimensional data, enabling breakthrough performance in [[Computer Vision]], [[Natural Language Processing]], [[Speech Recognition]], and [[Reinforcement Learning]]. The \"deep\" refers to the number of layers through which data is transformed, allowing the network to learn increasingly abstract and complex features.\n    - maturity:: mature\n    - source:: [[Yann LeCun]], [[Geoffrey Hinton]], [[Yoshua Bengio]], [[NIST AI Standards]], [[ISO/IEC 22989:2022]]\n    - authority-score:: 0.96\n\n  - **Semantic Classification**\n    - owl:class:: ai:DeepLearning\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Process\n    - owl:inferred-class:: ai:VirtualProcess\n    - belongsToDomain:: [[AI-GroundedDomain]], [[ComputationAndIntelligenceDomain]], [[DataManagementDomain]]\n\n  - #### OWL Restrictions\n    \n\n  - \n### Relationships\n- is-subclass-of:: [[MachineLearning]]",
   "properties": {
     "id": "deep-learning-ontology",
     "collapsed": "true",
@@ -32,23 +32,24 @@
     "Generative AI"
   ],
   "wiki_links": [
-    "NIST AI Standards",
-    "ISO/IEC 22989:2022",
-    "Yann LeCun",
-    "DataManagementDomain",
+    "ComputationAndIntelligenceDomain",
     "Gradient Descent",
     "Yoshua Bengio",
+    "MachineLearning",
     "Speech Recognition",
+    "Computer Vision",
+    "DataManagementDomain",
     "Backpropagation",
     "Natural Language Processing",
-    "ComputationAndIntelligenceDomain",
+    "Yann LeCun",
+    "AI-GroundedDomain",
+    "ISO/IEC 22989:2022",
     "Reinforcement Learning",
     "Deep Learning",
-    "Computer Vision",
-    "AI-GroundedDomain",
-    "Machine Learning",
+    "Artificial Neural Networks",
+    "NIST AI Standards",
     "Geoffrey Hinton",
-    "Artificial Neural Networks"
+    "Machine Learning"
   ],
   "ontology": {
     "term_id": "AI-0870",

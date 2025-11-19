@@ -1,6 +1,6 @@
 {
   "title": "GenerativeModel",
-  "content": "- ### OntologyBlock\n  id:: generativemodel-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0037\n\t- preferred-term:: GenerativeModel\n\t- source-domain:: artificial-intelligence\n\t- status:: draft\n    - public-access:: true\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: ai:GenerativeModel\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[AIDomain]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Generativemodel))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Generativemodel \"GenerativeModel\"@en)\n(AnnotationAssertion rdfs:comment :Generativemodel \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Generativemodel \"mv-1761742247928\"^^xsd:string)\n```",
+  "content": "- ### OntologyBlock\n  id:: generativemodel-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0037\n\t- preferred-term:: GenerativeModel\n\t- source-domain:: artificial-intelligence\n\t- status:: draft\n    - public-access:: true\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: ai:GenerativeModel\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[AIDomain]]\n\n\n### Relationships\n- is-subclass-of:: [[DeepLearning]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Generativemodel))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Generativemodel \"GenerativeModel\"@en)\n(AnnotationAssertion rdfs:comment :Generativemodel \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Generativemodel \"mv-1761742247928\"^^xsd:string)\n```",
   "properties": {
     "id": "generativemodel-ontology",
     "collapsed": "true",
@@ -17,9 +17,14 @@
     "- owl:role": "Concept",
     "- belongsToDomain": "[[AIDomain]]"
   },
-  "backlinks": [],
+  "backlinks": [
+    "Variational Autoencoders",
+    "Diffusion Models",
+    "Generative Adversarial Network"
+  ],
   "wiki_links": [
-    "AIDomain"
+    "AIDomain",
+    "DeepLearning"
   ],
   "ontology": {
     "term_id": "MV-0037",

@@ -1,6 +1,6 @@
 {
   "title": "Optimization Algorithm",
-  "content": "- ### OntologyBlock\n  id:: optimizationalgorithm-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0866\n    - filename-history:: [\"AI-0866-optimizationalgorithm.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0866\n    - preferred-term:: Optimization Algorithm\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:OptimizationAlgorithm\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  - #### CrossDomainBridges\n    - bridges-from:: [[GenerativeDesignTool]] via depends-on\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: optimizationalgorithm-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0866\n    - filename-history:: [\"AI-0866-optimizationalgorithm.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0866\n    - preferred-term:: Optimization Algorithm\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:OptimizationAlgorithm\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  - #### CrossDomainBridges\n    - bridges-from:: [[GenerativeDesignTool]] via depends-on\n\n  - \n### Relationships\n- is-subclass-of:: [[MachineLearning]]",
   "properties": {
     "id": "optimizationalgorithm-ontology",
     "collapsed": "true",
@@ -27,8 +27,9 @@
     "Generative Design Tool"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "GenerativeDesignTool"
+    "GenerativeDesignTool",
+    "MachineLearning",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0866",

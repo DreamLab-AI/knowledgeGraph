@@ -1,10 +1,11 @@
 {
   "title": "NFT",
-  "content": "- ### OntologyBlock\n  id:: nft-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0141\n\t- preferred-term:: NFT\n\t- source-domain:: blockchain\n\t- status:: draft\n    - public-access:: true\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: bc:NFT\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[BlockchainDomain]]",
+  "content": "- ### OntologyBlock\n  id:: nft-ontology\n  collapsed:: true\n\t- ontology:: true\n    - is-subclass-of:: [[BlockchainTechnology]]\n\t- term-id:: BC-0141\n\t- preferred-term:: NFT\n\t- source-domain:: blockchain\n\t- status:: draft\n    - public-access:: true\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: bc:NFT\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- #### CrossDomainBridges\n\t\t- bc:authenticates:: [[VirtualWorld]]\n\t\t- bc:authenticates:: [[DigitalAvatar]]\n\t\t- bc:tokenizes:: [[Digital Goods]]",
   "properties": {
     "id": "nft-ontology",
     "collapsed": "true",
     "- ontology": "true",
+    "- is-subclass-of": "[[BlockchainTechnology]]",
     "- term-id": "BC-0141",
     "- preferred-term": "NFT",
     "- source-domain": "blockchain",
@@ -15,7 +16,9 @@
     "- owl:class": "bc:NFT",
     "- owl:physicality": "ConceptualEntity",
     "- owl:role": "Concept",
-    "- belongsToDomain": "[[BlockchainDomain]]"
+    "- belongsToDomain": "[[BlockchainDomain]]",
+    "- bc:authenticates": "[[DigitalAvatar]]",
+    "- bc:tokenizes": "[[Digital Goods]]"
   },
   "backlinks": [
     "Virtual Property Right",
@@ -25,10 +28,15 @@
     "Carbon Credit Token",
     "Runes and Glyphs",
     "ETSI Domain Virtual Society",
+    "Marketplace",
     "BC 0119 economic security"
   ],
   "wiki_links": [
-    "BlockchainDomain"
+    "Digital Goods",
+    "BlockchainTechnology",
+    "VirtualWorld",
+    "BlockchainDomain",
+    "DigitalAvatar"
   ],
   "ontology": {
     "term_id": "BC-0141",

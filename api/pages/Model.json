@@ -1,6 +1,6 @@
 {
   "title": "Model",
-  "content": "- ### OntologyBlock\n  id:: model-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0829\n    - filename-history:: [\"AI-0829-model.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0829\n    - preferred-term:: Model\n    - source-domain:: artificial-intelligence\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:Model\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "content": "- ### OntologyBlock\n  id:: model-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0829\n    - filename-history:: [\"AI-0829-model.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0829\n    - preferred-term:: Model\n    - source-domain:: artificial-intelligence\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:Model\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  - \n### Relationships\n- is-subclass-of:: [[MachineLearning]]",
   "properties": {
     "id": "model-ontology",
     "collapsed": "true",
@@ -22,8 +22,12 @@
     "- owl:class": "ai:Model",
     "- belongsToDomain": "[[Artificial Intelligence]]"
   },
-  "backlinks": [],
+  "backlinks": [
+    "Model Capacity",
+    "Model Parameters"
+  ],
   "wiki_links": [
+    "MachineLearning",
     "Artificial Intelligence"
   ],
   "ontology": {

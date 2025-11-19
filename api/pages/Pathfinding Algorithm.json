@@ -1,6 +1,6 @@
 {
   "title": "Pathfinding Algorithm",
-  "content": "- ### OntologyBlock\n  id:: pathfindingalgorithm-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0851\n    - filename-history:: [\"AI-0851-pathfindingalgorithm.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0851\n    - preferred-term:: Pathfinding Algorithm\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:PathfindingAlgorithm\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "content": "- ### OntologyBlock\n  id:: pathfindingalgorithm-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0851\n    - filename-history:: [\"AI-0851-pathfindingalgorithm.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0851\n    - preferred-term:: Pathfinding Algorithm\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:PathfindingAlgorithm\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  - \n### Relationships\n- is-subclass-of:: [[Algorithm]]",
   "properties": {
     "id": "pathfindingalgorithm-ontology",
     "collapsed": "true",
@@ -24,6 +24,7 @@
   },
   "backlinks": [],
   "wiki_links": [
+    "Algorithm",
     "Artificial Intelligence"
   ],
   "ontology": {

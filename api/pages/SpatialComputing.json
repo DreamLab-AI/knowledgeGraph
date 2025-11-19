@@ -1,6 +1,6 @@
 {
   "title": "SpatialComputing",
-  "content": "- ### OntologyBlock\n  id:: spatialcomputing-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0006\n\t- preferred-term:: SpatialComputing\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Computing paradigm that blends digital content with the physical world, enabling natural interaction with 3D data through gestures, voice, and gaze in physical space.\n\t- maturity:: mature\n\t- owl:class:: mv:SpatialComputing\n\t- owl:physicality:: Technology\n\t- owl:role:: System\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Spatialcomputing))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Spatialcomputing \"SpatialComputing\"@en)\n(AnnotationAssertion rdfs:comment :Spatialcomputing \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Spatialcomputing \"mv-1761742247973\"^^xsd:string)\n```",
+  "content": "- ### OntologyBlock\n  id:: spatialcomputing-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0006\n\t- preferred-term:: SpatialComputing\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Computing paradigm that blends digital content with the physical world, enabling natural interaction with 3D data through gestures, voice, and gaze in physical space.\n\t- maturity:: mature\n\t- owl:class:: mv:SpatialComputing\n\t- owl:physicality:: Technology\n\t- owl:role:: System\n\t- is-subclass-of:: [[Metaverse]]\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Spatialcomputing))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Spatialcomputing \"SpatialComputing\"@en)\n(AnnotationAssertion rdfs:comment :Spatialcomputing \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Spatialcomputing \"mv-1761742247973\"^^xsd:string)\n```",
   "properties": {
     "id": "spatialcomputing-ontology",
     "collapsed": "true",
@@ -15,6 +15,7 @@
     "- owl:class": "mv:SpatialComputing",
     "- owl:physicality": "Technology",
     "- owl:role": "System",
+    "- is-subclass-of": "[[Metaverse]]",
     "- belongsToDomain": "[[MetaverseDomain]]"
   },
   "backlinks": [
@@ -23,7 +24,8 @@
     "Spatial Mapping"
   ],
   "wiki_links": [
-    "MetaverseDomain"
+    "MetaverseDomain",
+    "Metaverse"
   ],
   "ontology": {
     "term_id": "MV-0006",

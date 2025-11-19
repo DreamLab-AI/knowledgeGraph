@@ -1,9 +1,11 @@
 {
   "title": "Deepmind",
-  "content": "",
+  "content": "### Relationships\n- is-subclass-of:: [[AICompanies]]",
   "properties": {
     "public": "true"
   },
   "backlinks": [],
-  "wiki_links": []
+  "wiki_links": [
+    "AICompanies"
+  ]
 }

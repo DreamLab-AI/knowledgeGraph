@@ -1,6 +1,6 @@
 {
   "title": "Computational Component",
-  "content": "- ### OntologyBlock\n  id:: computationalcomponent-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0843\n    - filename-history:: [\"AI-0843-computationalcomponent.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0843\n    - preferred-term:: Computational Component\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:ComputationalComponent\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "content": "- ### OntologyBlock\n  id:: computationalcomponent-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0843\n    - filename-history:: [\"AI-0843-computationalcomponent.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[ArtificialIntelligenceTechnology]]\n    - term-id:: AI-0843\n    - preferred-term:: Computational Component\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:ComputationalComponent\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  -",
   "properties": {
     "id": "computationalcomponent-ontology",
     "collapsed": "true",
@@ -9,6 +9,7 @@
     "- filename-history": "[\"AI-0843-computationalcomponent.md\"]",
     "- public-access": "true",
     "- ontology": "true",
+    "- is-subclass-of": "[[ArtificialIntelligenceTechnology]]",
     "- term-id": "AI-0843",
     "- preferred-term": "Computational Component",
     "- source-domain": "ai",
@@ -24,6 +25,7 @@
   },
   "backlinks": [],
   "wiki_links": [
+    "ArtificialIntelligenceTechnology",
     "Artificial Intelligence"
   ],
   "ontology": {

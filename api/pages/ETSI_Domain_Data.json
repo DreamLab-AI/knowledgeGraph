@@ -1,6 +1,6 @@
 {
   "title": "ETSI Domain Data",
-  "content": "- ### OntologyBlock\n  id:: etsi-domain-data-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20374\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: ETSI Domain Data\n\t- definition:: Domain categorization for data management, storage, analytics, AI/ML systems, and intelligence capabilities processing information in metaverse environments.\n\t- maturity:: mature\n\t- source:: [[ETSI GR MEC 032]], [[ISO 23257]]\n\t- owl:class:: mv:ETSIDomainData\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[ComputationAndIntelligenceDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-data-relationships\n\t\t- is-part-of:: [[ETSI Metaverse Domain Model]]\n\t\t- has-part:: [[Data Storage]], [[Data Analytics]], [[Machine Learning]], [[AI Systems]]\n\t\t- enables:: [[Data Processing]], [[Intelligence]], [[Predictive Analytics]]\n\t- #### OWL Axioms\n\t  id:: etsi-domain-data-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:ETSIDomainData))\n\n\t\t  SubClassOf(mv:ETSIDomainData mv:VirtualEntity)\n\t\t  SubClassOf(mv:ETSIDomainData mv:Object)\n\n\t\t  SubClassOf(mv:ETSIDomainData\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:ComputationAndIntelligenceDomain)\n\t\t  )\n\n\t\t  SubClassOf(mv:ETSIDomainData\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)\n\t\t  )\n\n\t\t  SubClassOf(mv:ETSIDomainData\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:DataStorage)\n\t\t  )\n\n\t\t  SubClassOf(mv:ETSIDomainData\n\t\t    ObjectSomeValuesFrom(mv:hasPart ai:MachineLearning)\n\t\t  )\n\n\t\t  SubClassOf(mv:ETSIDomainData\n\t\t    ObjectSomeValuesFrom(mv:enablesCapability mv:DataProcessing)\n\t\t  )\n\n\t\t  SubClassOf(mv:ETSIDomainData\n\t\t    ObjectSomeValuesFrom(mv:enablesCapability mv:Intelligence)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n```",
+  "content": "- ### OntologyBlock\n  id:: etsi-domain-data-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20374\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: ETSI Domain Data\n\t- definition:: Domain categorization for data management, storage, analytics, AI/ML systems, and intelligence capabilities processing information in metaverse environments.\n\t- maturity:: mature\n\t- source:: [[ETSI GR MEC 032]], [[ISO 23257]]\n\t- owl:class:: mv:ETSIDomainData\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[ComputationAndIntelligenceDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-data-relationships\n\t\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t\t- is-part-of:: [[ETSI Metaverse Domain Model]]\n\t\t- has-part:: [[Data Storage]], [[Data Analytics]], [[Machine Learning]], [[AI Systems]]\n\t\t- enables:: [[Data Processing]], [[Intelligence]], [[Predictive Analytics]]\n\t- #### OWL Axioms\n\t  id:: etsi-domain-data-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:ETSIDomainData))\n\n\t\t  SubClassOf(mv:ETSIDomainData mv:VirtualEntity)\n\t\t  SubClassOf(mv:ETSIDomainData mv:Object)\n\n\t\t  SubClassOf(mv:ETSIDomainData\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:ComputationAndIntelligenceDomain)\n\t\t  )\n\n\t\t  SubClassOf(mv:ETSIDomainData\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)\n\t\t  )\n\n\t\t  SubClassOf(mv:ETSIDomainData\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:DataStorage)\n\t\t  )\n\n\t\t  SubClassOf(mv:ETSIDomainData\n\t\t    ObjectSomeValuesFrom(mv:hasPart ai:MachineLearning)\n\t\t  )\n\n\t\t  SubClassOf(mv:ETSIDomainData\n\t\t    ObjectSomeValuesFrom(mv:enablesCapability mv:DataProcessing)\n\t\t  )\n\n\t\t  SubClassOf(mv:ETSIDomainData\n\t\t    ObjectSomeValuesFrom(mv:enablesCapability mv:Intelligence)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n```",
   "properties": {
     "id": "etsi-domain-data-owl-axioms",
     "collapsed": "true",
@@ -20,23 +20,25 @@
     "- owl:functional-syntax": "true",
     "- belongsToDomain": "[[ComputationAndIntelligenceDomain]]",
     "- implementedInLayer": "[[ApplicationLayer]]",
+    "- is-subclass-of": "[[ArtificialIntelligence]]",
     "- is-part-of": "[[ETSI Metaverse Domain Model]]",
     "- has-part": "[[Data Storage]], [[Data Analytics]], [[Machine Learning]], [[AI Systems]]",
     "- enables": "[[Data Processing]], [[Intelligence]], [[Predictive Analytics]]"
   },
   "backlinks": [],
   "wiki_links": [
-    "ApplicationLayer",
-    "ISO 23257",
-    "Predictive Analytics",
-    "AI Systems",
+    "ETSI Metaverse Domain Model",
     "ComputationAndIntelligenceDomain",
     "ETSI GR MEC 032",
-    "Data Processing",
-    "ETSI Metaverse Domain Model",
-    "Machine Learning",
-    "Intelligence",
     "Data Analytics",
+    "Predictive Analytics",
+    "ApplicationLayer",
+    "Intelligence",
+    "Data Processing",
+    "ISO 23257",
+    "AI Systems",
+    "ArtificialIntelligence",
+    "Machine Learning",
     "Data Storage"
   ],
   "ontology": {

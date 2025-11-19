@@ -1,6 +1,6 @@
 {
   "title": "OpenAI",
-  "content": "- #Public page\n\t - automatically published\n-",
+  "content": "- #Public page\n\t - automatically published\n-\n### Relationships\n- is-subclass-of:: [[AICompanies]]",
   "properties": {
     "public": "true"
   },
@@ -13,5 +13,7 @@
     "Safety Laser Scanner",
     "Generative AI"
   ],
-  "wiki_links": []
+  "wiki_links": [
+    "AICompanies"
+  ]
 }

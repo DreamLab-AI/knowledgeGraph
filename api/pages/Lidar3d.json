@@ -1,6 +1,6 @@
 {
   "title": "3D LiDAR",
-  "content": "- ### OntologyBlock\n  id:: lidar3d-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: RB\n    - sequence-number:: 0163\n    - filename-history:: [\"RB-0163-lidar3d.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: RB-0163\n    - preferred-term:: 3D LiDAR\n    - source-domain:: robotics\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: 3D LiDAR generates three-dimensional point cloud of environment.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: rb:Lidar3d\n    - belongsToDomain:: [[Robotics]]\n\n  - #### OWL Restrictions\n    \n    \n\n  -",
+  "content": "- ### OntologyBlock\n  id:: lidar3d-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: RB\n    - sequence-number:: 0163\n    - filename-history:: [\"RB-0163-lidar3d.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[RoboticsTechnology]]\n    - term-id:: RB-0163\n    - preferred-term:: 3D LiDAR\n    - source-domain:: robotics\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: 3D LiDAR generates three-dimensional point cloud of environment.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: rb:Lidar3d\n    - belongsToDomain:: [[Robotics]]\n\n  - #### OWL Restrictions\n    \n    \n\n  -",
   "properties": {
     "id": "lidar3d-ontology",
     "collapsed": "true",
@@ -9,6 +9,7 @@
     "- filename-history": "[\"RB-0163-lidar3d.md\"]",
     "- public-access": "true",
     "- ontology": "true",
+    "- is-subclass-of": "[[RoboticsTechnology]]",
     "- term-id": "RB-0163",
     "- preferred-term": "3D LiDAR",
     "- source-domain": "robotics",
@@ -24,7 +25,8 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Robotics"
+    "Robotics",
+    "RoboticsTechnology"
   ],
   "ontology": {
     "term_id": "RB-0163",

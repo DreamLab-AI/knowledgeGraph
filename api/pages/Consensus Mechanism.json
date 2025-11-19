@@ -1,6 +1,6 @@
 {
   "title": "Consensus Mechanism",
-  "content": "- ### OntologyBlock\n  id:: consensus-mechanism-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0051\n\n    - filename-history:: [\"BC-0051-consensus-mechanism.md\"]\n    - ontology:: true\n    - term-id:: PC-0009\n    - preferred-term:: Consensus Mechanism\n    - source-domain:: metaverse\n    - status:: complete\n    - public-access:: true\n    - version:: 1.0.0\n    - last-updated:: 2025-11-08\n\n  - **Definition**\n    - definition:: A Consensus Mechanism is a distributed protocol enabling a network of independent nodes to achieve agreement on a single, canonical state of a shared ledger despite the presence of faulty or malicious participants and unreliable network communication. Consensus mechanisms form the core innovation of blockchain technology, solving the problem of maintaining a consistent global state across thousands of mutually distrusting parties without centralized authority. These mechanisms must satisfy multiple requirements: safety (all honest nodes agree on the same transaction history), liveness (new transactions eventually get processed), censorship resistance (no subset of participants can prevent valid transactions), and finality (confirmed transactions cannot be reversed). Different consensus mechanisms employ various approaches to achieve these properties: Proof-of-Work uses computational puzzles and longest-chain selection; Proof-of-Stake uses validator selection weighted by capital commitment; Byzantine Fault Tolerance protocols use voting rounds with quorum requirements; and hybrid mechanisms combine multiple techniques. The choice of consensus mechanism fundamentally shapes blockchain characteristics including throughput, latency, energy consumption, degree of decentralization, and security guarantees.\n    - maturity:: mature\n    - source:: [[Bitcoin Whitepaper]], [[Ethereum 2.0 Specification]], [[Practical Byzantine Fault Tolerance]], [[Tendermint Consensus]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:ConsensusMechanism\n    - owl:physicality:: ConceptualEntity\n    - owl:role:: Concept\n    - owl:inferred-class:: ConceptualConcept\n    - belongsToDomain:: [[BlockchainDomain]]\n\n  - #### OWL Restrictions\n    \n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-from:: [[ProofBasedConsensus]] via is-subclass-of\n    - bridges-from:: [[CollectiveIntelligenceSystem]] via requires\n    - bridges-from:: [[HybridConsensus]] via is-subclass-of\n    - bridges-from:: [[CommunityGovernanceModel]] via depends-on\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: consensus-mechanism-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0051\n\n    - filename-history:: [\"BC-0051-consensus-mechanism.md\"]\n    - ontology:: true\n    - term-id:: PC-0009\n    - preferred-term:: Consensus Mechanism\n    - source-domain:: metaverse\n    - status:: complete\n    - public-access:: true\n    - version:: 1.0.0\n    - last-updated:: 2025-11-08\n\n  - **Definition**\n    - definition:: A Consensus Mechanism is a distributed protocol enabling a network of independent nodes to achieve agreement on a single, canonical state of a shared ledger despite the presence of faulty or malicious participants and unreliable network communication. Consensus mechanisms form the core innovation of blockchain technology, solving the problem of maintaining a consistent global state across thousands of mutually distrusting parties without centralized authority. These mechanisms must satisfy multiple requirements: safety (all honest nodes agree on the same transaction history), liveness (new transactions eventually get processed), censorship resistance (no subset of participants can prevent valid transactions), and finality (confirmed transactions cannot be reversed). Different consensus mechanisms employ various approaches to achieve these properties: Proof-of-Work uses computational puzzles and longest-chain selection; Proof-of-Stake uses validator selection weighted by capital commitment; Byzantine Fault Tolerance protocols use voting rounds with quorum requirements; and hybrid mechanisms combine multiple techniques. The choice of consensus mechanism fundamentally shapes blockchain characteristics including throughput, latency, energy consumption, degree of decentralization, and security guarantees.\n    - maturity:: mature\n    - source:: [[Bitcoin Whitepaper]], [[Ethereum 2.0 Specification]], [[Practical Byzantine Fault Tolerance]], [[Tendermint Consensus]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:ConsensusMechanism\n    - owl:physicality:: ConceptualEntity\n    - owl:role:: Concept\n    - owl:inferred-class:: ConceptualConcept\n    - is-subclass-of:: [[Metaverse Infrastructure]]\n    - belongsToDomain:: [[BlockchainDomain]]\n\n  - #### OWL Restrictions\n    \n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-from:: [[ProofBasedConsensus]] via is-subclass-of\n    - bridges-from:: [[CollectiveIntelligenceSystem]] via requires\n    - bridges-from:: [[HybridConsensus]] via is-subclass-of\n    - bridges-from:: [[CommunityGovernanceModel]] via depends-on\n\n  -",
   "properties": {
     "id": "consensus-mechanism-ontology",
     "collapsed": "true",
@@ -23,24 +23,31 @@
     "- owl:physicality": "ConceptualEntity",
     "- owl:role": "Concept",
     "- owl:inferred-class": "ConceptualConcept",
+    "- is-subclass-of": "[[Metaverse Infrastructure]]",
     "- belongsToDomain": "[[BlockchainDomain]]",
     "- bridges-from": "[[CommunityGovernanceModel]] via depends-on"
   },
   "backlinks": [
+    "BC-0058-consensus-rule",
+    "BC-0061-nakamoto-consensus",
+    "BC-0080-finality",
+    "BC-0035-difficulty",
     "Tokenization",
     "AI Governance Principle",
+    "BC-0053-mining",
     "SHA-256"
   ],
   "wiki_links": [
-    "Practical Byzantine Fault Tolerance",
-    "BlockchainDomain",
-    "Bitcoin Whitepaper",
-    "HybridConsensus",
-    "CommunityGovernanceModel",
     "ProofBasedConsensus",
-    "CollectiveIntelligenceSystem",
+    "Metaverse Infrastructure",
+    "Practical Byzantine Fault Tolerance",
+    "CommunityGovernanceModel",
+    "Bitcoin Whitepaper",
     "Tendermint Consensus",
-    "Ethereum 2.0 Specification"
+    "Ethereum 2.0 Specification",
+    "BlockchainDomain",
+    "HybridConsensus",
+    "CollectiveIntelligenceSystem"
   ],
   "ontology": {
     "term_id": "PC-0009",

@@ -1,6 +1,6 @@
 {
   "title": "Data Breach",
-  "content": "- ### OntologyBlock\n  id:: databreach-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0863\n    - filename-history:: [\"AI-0863-databreach.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0863\n    - preferred-term:: Data Breach\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:DataBreach\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Risk]] via is-subclass-of\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: databreach-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0863\n    - filename-history:: [\"AI-0863-databreach.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[DataResource]]\n    - term-id:: AI-0863\n    - preferred-term:: Data Breach\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:DataBreach\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Risk]] via is-subclass-of\n\n  -",
   "properties": {
     "id": "databreach-ontology",
     "collapsed": "true",
@@ -9,6 +9,7 @@
     "- filename-history": "[\"AI-0863-databreach.md\"]",
     "- public-access": "true",
     "- ontology": "true",
+    "- is-subclass-of": "[[DataResource]]",
     "- term-id": "AI-0863",
     "- preferred-term": "Data Breach",
     "- source-domain": "ai",
@@ -25,8 +26,9 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Artificial Intelligence",
-    "Risk"
+    "DataResource",
+    "Risk",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0863",

@@ -1,6 +1,6 @@
 {
   "title": "Mobile Robot",
-  "content": "- ### OntologyBlock\n  id:: mobile-robot-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: RB\n\n    - sequence-number:: 0002\n\n    - filename-history:: [\"RB-0002-mobile-robot.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: RB-0002\n    - preferred-term:: Mobile Robot\n    - source-domain:: robotics\n    - status:: complete\n    - version:: 2.0.0\n    - last-updated:: 2025-11-14\n\n  - **Definition**\n    - definition:: A mobile robot is a robot with locomotion capabilities that enable it to move within its working environment.\n    - maturity:: mature\n    - source:: [[ISO 8373:2021]]\n    - authority-score:: 0.98\n\n  - **Semantic Classification**\n    - owl:class:: rb:MobileRobot\n    - owl:physicality:: PhysicalEntity\n    - owl:role:: Object\n    - belongsToDomain:: [[Robotics]]\n\n  - #### OWL Restrictions\n    - hasNavigationCapability some NavigationSystem\n    - performsLocalisation some LocalisationMethod\n    - is-part-of some RobotRb0001\n    - hasLocomotionSystem some LocomotionMechanism\n    - operatesInEnvironment some OperationalEnvironment\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[LocalisationMethod]] via performsLocalisation\n    - bridges-to:: [[LocomotionMechanism]] via hasLocomotionSystem\n    - bridges-to:: [[NavigationSystem]] via hasNavigationCapability\n    - bridges-to:: [[OperationalEnvironment]] via operatesInEnvironment\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: mobile-robot-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: RB\n\n    - sequence-number:: 0002\n\n    - filename-history:: [\"RB-0002-mobile-robot.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[RoboticsTechnology]]\n    - term-id:: RB-0002\n    - preferred-term:: Mobile Robot\n    - source-domain:: robotics\n    - status:: complete\n    - version:: 2.0.0\n    - last-updated:: 2025-11-14\n\n  - **Definition**\n    - definition:: A mobile robot is a robot with locomotion capabilities that enable it to move within its working environment.\n    - maturity:: mature\n    - source:: [[ISO 8373:2021]]\n    - authority-score:: 0.98\n\n  - **Semantic Classification**\n    - owl:class:: rb:MobileRobot\n    - owl:physicality:: PhysicalEntity\n    - owl:role:: Object\n    - belongsToDomain:: [[Robotics]]\n\n  - #### OWL Restrictions\n    - hasNavigationCapability some NavigationSystem\n    - performsLocalisation some LocalisationMethod\n    - is-part-of some RobotRb0001\n    - hasLocomotionSystem some LocomotionMechanism\n    - operatesInEnvironment some OperationalEnvironment\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[LocalisationMethod]] via performsLocalisation\n    - bridges-to:: [[LocomotionMechanism]] via hasLocomotionSystem\n    - bridges-to:: [[NavigationSystem]] via hasNavigationCapability\n    - bridges-to:: [[OperationalEnvironment]] via operatesInEnvironment\n    - dt:requires:: [[PathPlanning]]\n    - dt:uses:: [[Computer Vision]]\n\n  -",
   "properties": {
     "id": "mobile-robot-ontology",
     "collapsed": "true",
@@ -9,6 +9,7 @@
     "- filename-history": "[\"RB-0002-mobile-robot.md\"]",
     "- public-access": "true",
     "- ontology": "true",
+    "- is-subclass-of": "[[RoboticsTechnology]]",
     "- term-id": "RB-0002",
     "- preferred-term": "Mobile Robot",
     "- source-domain": "robotics",
@@ -23,15 +24,20 @@
     "- owl:physicality": "PhysicalEntity",
     "- owl:role": "Object",
     "- belongsToDomain": "[[Robotics]]",
-    "- bridges-to": "[[OperationalEnvironment]] via operatesInEnvironment"
+    "- bridges-to": "[[OperationalEnvironment]] via operatesInEnvironment",
+    "- dt:requires": "[[PathPlanning]]",
+    "- dt:uses": "[[Computer Vision]]"
   },
   "backlinks": [],
   "wiki_links": [
+    "LocomotionMechanism",
     "LocalisationMethod",
+    "RoboticsTechnology",
+    "OperationalEnvironment",
+    "Computer Vision",
     "Robotics",
     "ISO 8373:2021",
-    "LocomotionMechanism",
-    "OperationalEnvironment",
+    "PathPlanning",
     "NavigationSystem"
   ],
   "ontology": {

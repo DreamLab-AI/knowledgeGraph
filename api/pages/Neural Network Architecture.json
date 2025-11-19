@@ -1,6 +1,6 @@
 {
   "title": "Neural Network Architecture",
-  "content": "- ### OntologyBlock\n  id:: neuralnetworkarchitecture-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0803\n    - filename-history:: [\"AI-0803-neuralnetworkarchitecture.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0803\n    - preferred-term:: Neural Network Architecture\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:NeuralNetworkArchitecture\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "content": "- ### OntologyBlock\n  id:: neuralnetworkarchitecture-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0803\n    - filename-history:: [\"AI-0803-neuralnetworkarchitecture.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0803\n    - preferred-term:: Neural Network Architecture\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:NeuralNetworkArchitecture\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  - \n### Relationships\n- is-subclass-of:: [[DeepLearning]]",
   "properties": {
     "id": "neuralnetworkarchitecture-ontology",
     "collapsed": "true",
@@ -24,6 +24,7 @@
   },
   "backlinks": [],
   "wiki_links": [
+    "DeepLearning",
     "Artificial Intelligence"
   ],
   "ontology": {
