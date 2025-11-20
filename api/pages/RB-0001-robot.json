@@ -25,12 +25,12 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Autonomousagent",
-    "Robotics",
-    "RoboticsTechnology",
-    "ISO 8373:2021",
     "PowerSupply",
-    "Mechatronicsystem"
+    "RoboticsTechnology",
+    "Mechatronicsystem",
+    "ISO 8373:2021",
+    "Robotics",
+    "Autonomousagent"
   ],
   "ontology": {
     "term_id": "RB-0001",

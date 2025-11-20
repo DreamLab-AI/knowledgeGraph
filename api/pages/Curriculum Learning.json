@@ -19,11 +19,11 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Zhang et al. 2021 Adaptive Curriculum",
+    "Bengio et al. 2009 Curriculum Learning",
+    "ModelTraining",
     "IEEE TPAMI 2021 Curriculum Learning Survey",
     "Wang et al. 2022 Educational Applications",
-    "Bengio et al. 2009 Curriculum Learning",
-    "ModelTraining"
+    "Zhang et al. 2021 Adaptive Curriculum"
   ],
   "ontology": {
     "term_id": "AI-0260",

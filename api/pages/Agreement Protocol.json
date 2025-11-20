@@ -27,12 +27,12 @@
     "BC-0051-consensus-mechanism"
   ],
   "wiki_links": [
-    "FLP Impossibility",
-    "Paxos and Raft Consensus",
     "Metaverse Infrastructure",
+    "Paxos and Raft Consensus",
+    "PBFT Algorithm",
     "Byzantine Agreement Papers",
-    "BlockchainDomain",
-    "PBFT Algorithm"
+    "FLP Impossibility",
+    "BlockchainDomain"
   ],
   "ontology": {
     "term_id": "PC-0007",

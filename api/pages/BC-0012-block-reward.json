@@ -27,13 +27,13 @@
   },
   "backlinks": [],
   "wiki_links": [
+    "Distributeddatastructure",
+    "IEEE 2418.1",
     "Bitcoin",
     "NIST NISTIR",
     "BlockchainDomain",
-    "Mining",
-    "Distributeddatastructure",
     "ISO/IEC 23257:2021",
-    "IEEE 2418.1"
+    "Mining"
   ],
   "ontology": {
     "term_id": "BC-0012",

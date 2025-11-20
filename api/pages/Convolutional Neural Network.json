@@ -19,11 +19,11 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "He et al. 2016 ResNet",
-    "LeCun et al. 1998 Gradient-Based Learning",
     "IEEE CVPR Proceedings",
     "Krizhevsky et al. 2012 AlexNet",
-    "NeuralNetworkArchitecture"
+    "NeuralNetworkArchitecture",
+    "LeCun et al. 1998 Gradient-Based Learning",
+    "He et al. 2016 ResNet"
   ],
   "ontology": {
     "term_id": "AI-0032",

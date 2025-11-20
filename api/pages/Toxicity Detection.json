@@ -25,9 +25,9 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "NaturalLanguageProcessing",
     "Artificial Intelligence",
-    "ContentModeration"
+    "ContentModeration",
+    "NaturalLanguageProcessing"
   ],
   "ontology": {
     "term_id": "AI-0859",

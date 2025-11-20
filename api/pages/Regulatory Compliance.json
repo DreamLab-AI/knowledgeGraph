@@ -34,12 +34,12 @@
   ],
   "wiki_links": [
     "IEEE 7000 Model Process",
+    "NIST AI Risk Management Framework",
+    "GDPR",
     "AIEthicsDomain",
     "ISO/IEC 42001",
     "EU AI Act",
-    "GDPR",
-    "Metaverse",
-    "NIST AI Risk Management Framework"
+    "Metaverse"
   ],
   "ontology": {
     "term_id": "PC-0012",

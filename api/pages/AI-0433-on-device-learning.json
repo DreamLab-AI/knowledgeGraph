@@ -26,11 +26,11 @@
   "backlinks": [],
   "wiki_links": [
     "TensorFlow Lite",
-    "EdgeAISystem",
-    "Apple Core ML",
     "AIEthicsDomain",
     "PyTorch Mobile",
-    "ConceptualLayer"
+    "ConceptualLayer",
+    "Apple Core ML",
+    "EdgeAISystem"
   ],
   "ontology": {
     "term_id": "AI-0433",

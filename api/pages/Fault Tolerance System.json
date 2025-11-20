@@ -28,10 +28,10 @@
   ],
   "wiki_links": [
     "Metaverse Infrastructure",
-    "Byzantine Fault Tolerance",
     "Fault-Tolerant Systems",
-    "BlockchainDomain",
-    "Dependable Computing Systems"
+    "Byzantine Fault Tolerance",
+    "Dependable Computing Systems",
+    "BlockchainDomain"
   ],
   "ontology": {
     "term_id": "PC-0008",

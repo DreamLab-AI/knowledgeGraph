@@ -30,15 +30,15 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Robotics",
     "LocalisationMethod",
-    "Computer Vision",
+    "NavigationSystem",
     "RoboticsTechnology",
+    "LocomotionMechanism",
     "ISO 8373:2021",
     "OperationalEnvironment",
     "PathPlanning",
-    "NavigationSystem",
-    "LocomotionMechanism"
+    "Computer Vision",
+    "Robotics"
   ],
   "ontology": {
     "term_id": "RB-0002",
