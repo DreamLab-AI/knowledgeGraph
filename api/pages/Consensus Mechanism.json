@@ -38,16 +38,16 @@
     "SHA-256"
   ],
   "wiki_links": [
-    "HybridConsensus",
-    "BlockchainDomain",
-    "Ethereum 2.0 Specification",
-    "Tendermint Consensus",
-    "CollectiveIntelligenceSystem",
-    "ProofBasedConsensus",
+    "Metaverse Infrastructure",
     "CommunityGovernanceModel",
-    "Practical Byzantine Fault Tolerance",
+    "ProofBasedConsensus",
     "Bitcoin Whitepaper",
-    "Metaverse Infrastructure"
+    "HybridConsensus",
+    "Tendermint Consensus",
+    "Ethereum 2.0 Specification",
+    "Practical Byzantine Fault Tolerance",
+    "BlockchainDomain",
+    "CollectiveIntelligenceSystem"
   ],
   "ontology": {
     "term_id": "PC-0009",

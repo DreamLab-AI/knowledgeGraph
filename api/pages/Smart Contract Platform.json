@@ -28,12 +28,12 @@
     "RGB and Client Side Validation"
   ],
   "wiki_links": [
-    "VirtualSecuritiesOfferingVso",
-    "LiquidityPool",
-    "SmartRoyaltyContract",
-    "Blockchain",
+    "SocialTokenEconomy",
     "TransactionStandard",
-    "SocialTokenEconomy"
+    "LiquidityPool",
+    "Blockchain",
+    "SmartRoyaltyContract",
+    "VirtualSecuritiesOfferingVso"
   ],
   "ontology": {
     "term_id": "BC-0507",

@@ -29,11 +29,11 @@
     "BC 0109 priority fee"
   ],
   "wiki_links": [
-    "BlockchainDomain",
-    "Blockchain",
     "Tokenomics Research",
-    "Mechanism Design Theory",
-    "Transaction Fee Economics"
+    "Blockchain",
+    "Transaction Fee Economics",
+    "BlockchainDomain",
+    "Mechanism Design Theory"
   ],
   "ontology": {
     "term_id": "PC-0005",

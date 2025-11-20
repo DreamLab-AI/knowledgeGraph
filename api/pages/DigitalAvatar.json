@@ -28,8 +28,8 @@
   "wiki_links": [
     "Computer Vision",
     "MetaverseDomain",
-    "ArtificialIntelligence",
-    "Machine Learning"
+    "Machine Learning",
+    "ArtificialIntelligence"
   ],
   "ontology": {
     "term_id": "MV-0005",

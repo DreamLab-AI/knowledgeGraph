@@ -9,13 +9,13 @@
   "wiki_links": [
     "TELE-020-virtual-reality-telepresence",
     "ArtificialIntelligenceTechnology",
+    "AIDomain",
     "TELE-060-instant-ngp",
-    "NeuralRenderingTelepresence",
+    "TELE-051-3d-gaussian-splatting",
     "TELE-050-neural-rendering-telepresence",
     "TELE-0000-telepresence-domain",
-    "AIDomain",
-    "TELE-053-volumetric-video-conferencing",
-    "TELE-051-3d-gaussian-splatting"
+    "NeuralRenderingTelepresence",
+    "TELE-053-volumetric-video-conferencing"
   ],
   "ontology": {
     "term_id": "TELE-052",

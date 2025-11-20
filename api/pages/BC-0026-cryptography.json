@@ -29,13 +29,13 @@
   "wiki_links": [
     "InformationProtection",
     "Security Technology",
-    "NIST SP",
-    "NIST FIPS",
     "MathematicalScience",
     "DistributedLedgerTechnologyDlt",
+    "NIST FIPS",
+    "ISO/IEC 18033",
     "CryptographicDomain",
     "SecurityTechnology",
-    "ISO/IEC 18033"
+    "NIST SP"
   ],
   "ontology": {
     "term_id": "BC-0026",

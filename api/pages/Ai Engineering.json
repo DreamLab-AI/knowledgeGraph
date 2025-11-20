@@ -26,11 +26,11 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ArtificialIntelligenceTechnology",
-    "MachineLearning",
     "ArtificialIntelligence",
+    "ArtificialIntelligenceTechnology",
     "Artificial Intelligence",
-    "Risk"
+    "Risk",
+    "MachineLearning"
   ],
   "ontology": {
     "term_id": "AI-0802",

@@ -26,13 +26,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "CrossBorderDataTransferRule",
     "AIEthicsDomain",
-    "AIGovernance",
-    "GDPR Article 35",
+    "ISO 29134",
     "ICO DPIA Code",
+    "GDPR Article 35",
+    "CrossBorderDataTransferRule",
     "ConceptualLayer",
-    "ISO 29134"
+    "AIGovernance"
   ],
   "ontology": {
     "term_id": "AI-0425",

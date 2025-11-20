@@ -26,10 +26,10 @@
     "Physics Engine"
   ],
   "wiki_links": [
-    "Extended Reality (XR)",
-    "Physics Engine",
     "Computer Vision",
-    "MetaverseDomain"
+    "MetaverseDomain",
+    "Physics Engine",
+    "Extended Reality (XR)"
   ],
   "ontology": {
     "term_id": "MV-0003",

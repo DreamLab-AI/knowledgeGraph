@@ -33,11 +33,11 @@
   ],
   "wiki_links": [
     "IEEE 2418.1",
-    "ISO/IEC 23257:2021",
     "BlockchainTechnology",
-    "NIST NISTIR 8202",
     "CryptographicDomain",
-    "BlockchainEntity"
+    "BlockchainEntity",
+    "ISO/IEC 23257:2021",
+    "NIST NISTIR 8202"
   ],
   "ontology": {
     "term_id": "BC-0035",

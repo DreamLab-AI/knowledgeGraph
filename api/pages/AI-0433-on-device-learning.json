@@ -25,11 +25,11 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "TensorFlow Lite",
     "PyTorch Mobile",
+    "AIEthicsDomain",
     "EdgeAISystem",
     "Apple Core ML",
-    "AIEthicsDomain",
+    "TensorFlow Lite",
     "ConceptualLayer"
   ],
   "ontology": {
