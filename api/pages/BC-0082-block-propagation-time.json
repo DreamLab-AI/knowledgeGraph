@@ -26,12 +26,12 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Networkcomponent",
     "IEEE 2418.1",
-    "Block Propagation",
+    "CryptographicDomain",
     "NIST NISTIR",
-    "ISO/IEC 23257:2021",
-    "CryptographicDomain"
+    "Block Propagation",
+    "Networkcomponent",
+    "ISO/IEC 23257:2021"
   ],
   "ontology": {
     "term_id": "BC-0082",

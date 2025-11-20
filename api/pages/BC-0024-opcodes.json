@@ -26,13 +26,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "IEEE 2418.1",
     "Script",
-    "BlockchainDomain",
+    "IEEE 2418.1",
+    "BlockchainEntity",
     "Distributeddatastructure",
+    "BlockchainDomain",
     "NIST NISTIR",
-    "ISO/IEC 23257:2021",
-    "BlockchainEntity"
+    "ISO/IEC 23257:2021"
   ],
   "ontology": {
     "term_id": "BC-0024",

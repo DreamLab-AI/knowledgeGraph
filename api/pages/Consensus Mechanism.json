@@ -39,15 +39,15 @@
   ],
   "wiki_links": [
     "CommunityGovernanceModel",
-    "ProofBasedConsensus",
-    "Practical Byzantine Fault Tolerance",
-    "BlockchainDomain",
-    "Tendermint Consensus",
-    "Bitcoin Whitepaper",
-    "Metaverse Infrastructure",
-    "Ethereum 2.0 Specification",
     "HybridConsensus",
-    "CollectiveIntelligenceSystem"
+    "Ethereum 2.0 Specification",
+    "Tendermint Consensus",
+    "Practical Byzantine Fault Tolerance",
+    "Bitcoin Whitepaper",
+    "BlockchainDomain",
+    "CollectiveIntelligenceSystem",
+    "ProofBasedConsensus",
+    "Metaverse Infrastructure"
   ],
   "ontology": {
     "term_id": "PC-0009",

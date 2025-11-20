@@ -19,11 +19,11 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "AWS Conversational AI",
-    "NLPTask",
-    "ACL Dialogue System Research",
     "Freshworks Conversational AI Guide 2025",
-    "Tidio Conversational AI Technical Documentation"
+    "ACL Dialogue System Research",
+    "AWS Conversational AI",
+    "Tidio Conversational AI Technical Documentation",
+    "NLPTask"
   ],
   "ontology": {
     "term_id": "AI-0372",

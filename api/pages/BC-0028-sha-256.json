@@ -27,11 +27,11 @@
   "backlinks": [],
   "wiki_links": [
     "IEEE 2418.1",
-    "NIST NISTIR",
-    "ISO/IEC 23257:2021",
+    "CryptographicDomain",
     "BlockchainEntity",
+    "NIST NISTIR",
     "Hash Function",
-    "CryptographicDomain"
+    "ISO/IEC 23257:2021"
   ],
   "ontology": {
     "term_id": "BC-0028",

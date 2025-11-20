@@ -27,14 +27,14 @@
   "backlinks": [],
   "wiki_links": [
     "ISO/IEC 23455:2019",
-    "Distributed Ledger",
-    "Cryptographic System",
-    "BlockchainDomain",
+    "Distributed Data Structure",
     "ConceptualLayer",
     "ISO/IEC TR",
-    "Distributed Data Structure",
+    "BlockchainDomain",
     "ITU-T Y.4460",
-    "ISO/IEC 23257:2021"
+    "Distributed Ledger",
+    "ISO/IEC 23257:2021",
+    "Cryptographic System"
   ],
   "ontology": {
     "term_id": "BC-0001",

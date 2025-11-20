@@ -25,12 +25,12 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "AIGovernance",
-    "IEEE P7001",
-    "ConceptualLayer",
-    "AIEthicsDomain",
     "IEEE P2863",
+    "ConceptualLayer",
     "IEEE P7003",
+    "AIEthicsDomain",
+    "IEEE P7001",
+    "AIGovernance",
     "IEEE 7000"
   ],
   "ontology": {

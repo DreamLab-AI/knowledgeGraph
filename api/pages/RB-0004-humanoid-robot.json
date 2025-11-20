@@ -25,10 +25,10 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "RoboticsTechnology",
-    "WalkingGait",
     "Robotics",
-    "ISO 8373:2021"
+    "ISO 8373:2021",
+    "WalkingGait",
+    "RoboticsTechnology"
   ],
   "ontology": {
     "term_id": "RB-0004",
