@@ -27,14 +27,14 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Distributeddatastructure",
-    "Blockchain",
     "IEEE 2418.1",
+    "Distributeddatastructure",
+    "ValueTransfer",
+    "Blockchain",
+    "NIST NISTIR",
     "Bitcoin",
     "BlockchainEntity",
-    "NIST NISTIR",
     "ISO/IEC 23257:2021",
-    "ValueTransfer",
     "BlockchainDomain"
   ],
   "ontology": {

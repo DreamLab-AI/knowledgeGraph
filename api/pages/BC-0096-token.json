@@ -26,18 +26,18 @@
   },
   "backlinks": [],
   "wiki_links": [
+    "RGB and Client Side Validation",
+    "ISO/IEC 23257:2021",
+    "Transferable Right",
     "TokenEconomicsDomain",
-    "liu2022empirical",
+    "Digital Asset",
+    "mackinga2022twap",
     "Cashu",
     "Lightning and Similar L2",
-    "mackinga2022twap",
-    "EconomicLayer",
-    "Transferable Right",
-    "RGB and Client Side Validation",
-    "Blockchain Entity",
     "poelstra2015stake",
-    "ISO/IEC 23257:2021",
-    "Digital Asset"
+    "Blockchain Entity",
+    "liu2022empirical",
+    "EconomicLayer"
   ],
   "ontology": {
     "term_id": "BC-0096",

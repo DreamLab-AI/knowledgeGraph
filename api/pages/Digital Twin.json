@@ -24,10 +24,10 @@
     "Acceleration"
   ],
   "wiki_links": [
-    "VirtualWorld",
-    "Computer Vision",
+    "ArtificialIntelligence",
     "Machine Learning",
-    "ArtificialIntelligence"
+    "Computer Vision",
+    "VirtualWorld"
   ],
   "ontology": {
     "term_id": "20240",

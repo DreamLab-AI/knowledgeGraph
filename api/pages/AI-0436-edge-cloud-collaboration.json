@@ -25,12 +25,12 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "AWS IoT Greengrass",
-    "ETSI MEC",
-    "AIEthicsDomain",
     "Azure IoT Edge",
     "ConceptualLayer",
-    "EdgeAISystem"
+    "EdgeAISystem",
+    "AIEthicsDomain",
+    "ETSI MEC",
+    "AWS IoT Greengrass"
   ],
   "ontology": {
     "term_id": "AI-0436",

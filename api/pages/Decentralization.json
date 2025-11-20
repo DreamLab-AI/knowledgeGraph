@@ -33,12 +33,12 @@
     "Digital Twin of the Customer"
   ],
   "wiki_links": [
+    "IEEE 2418.1",
     "Distributeddatastructure",
     "BlockchainTechnology",
-    "IEEE 2418.1",
-    "BlockchainEntity",
-    "NIST NISTIR",
     "DistributedArchitecture",
+    "NIST NISTIR",
+    "BlockchainEntity",
     "ISO/IEC 23257:2021",
     "BlockchainDomain"
   ],

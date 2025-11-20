@@ -26,13 +26,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Yao's Garbled Circuits",
     "MachineLearning",
-    "AIEthicsDomain",
-    "MP-SPDZ",
+    "PrivacyEnhancingComputationPec",
     "ConceptualLayer",
+    "Yao's Garbled Circuits",
     "Shamir Secret Sharing",
-    "PrivacyEnhancingComputationPec"
+    "AIEthicsDomain",
+    "MP-SPDZ"
   ],
   "ontology": {
     "term_id": "AI-0419",
