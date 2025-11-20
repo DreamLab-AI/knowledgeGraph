@@ -25,9 +25,9 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "MachineLearning",
     "ConceptualLayer",
-    "AIEthicsDomain"
+    "AIEthicsDomain",
+    "MachineLearning"
   ],
   "ontology": {
     "term_id": "AI-0422",

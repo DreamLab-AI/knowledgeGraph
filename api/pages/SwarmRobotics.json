@@ -22,10 +22,10 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "RoboticsDomain",
     "RoboticsTechnology",
-    "ConsensusMechanism",
-    "Machine Learning"
+    "Machine Learning",
+    "RoboticsDomain",
+    "ConsensusMechanism"
   ],
   "ontology": {
     "term_id": "RB-0107",

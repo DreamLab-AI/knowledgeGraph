@@ -28,10 +28,10 @@
     "System"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "DisruptiveTechnology",
     "System",
-    "MachineLearning"
+    "DisruptiveTechnology",
+    "MachineLearning",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0846",

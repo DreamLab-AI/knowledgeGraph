@@ -25,12 +25,12 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Google DP Accounting",
-    "ConceptualLayer",
-    "AIEthicsDomain",
     "AIGovernance",
     "NIST Privacy Framework",
-    "Dwork and Roth (2014)"
+    "ConceptualLayer",
+    "Dwork and Roth (2014)",
+    "AIEthicsDomain",
+    "Google DP Accounting"
   ],
   "ontology": {
     "term_id": "AI-0420",

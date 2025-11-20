@@ -27,9 +27,9 @@
     "Metaverse Ontology Schema"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
     "MetaverseOntologySchema",
-    "MachineLearning"
+    "MachineLearning",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0816",

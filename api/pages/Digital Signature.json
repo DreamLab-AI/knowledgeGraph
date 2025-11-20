@@ -34,21 +34,21 @@
     "BC-0039-signature-scheme"
   ],
   "wiki_links": [
-    "CulturalProvenanceRecord",
     "IEEE 2418.1",
-    "Tokenization",
-    "DataProvenance",
-    "DigitalEvidenceChainOfCustody",
-    "VirtualPropertyRight",
-    "NftSwapping",
     "VerifiableCredentialVc",
-    "DistributedLedgerTechnologyDlt",
-    "ISO/IEC 23257:2021",
-    "CryptographicDomain",
+    "NftSwapping",
     "NIST NISTIR",
+    "DistributedLedgerTechnologyDlt",
     "VirtualNotaryService",
+    "ISO/IEC 23257:2021",
+    "BlockchainEntity",
     "BlockchainTechnology",
-    "BlockchainEntity"
+    "VirtualPropertyRight",
+    "Tokenization",
+    "CryptographicDomain",
+    "DataProvenance",
+    "CulturalProvenanceRecord",
+    "DigitalEvidenceChainOfCustody"
   ],
   "ontology": {
     "term_id": "BC-0030",

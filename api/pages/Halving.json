@@ -37,13 +37,13 @@
     "Bitcoin"
   ],
   "wiki_links": [
-    "IEEE 2418.1",
     "ConsensusDomain",
-    "ISO/IEC 23257:2021",
-    "Bitcoin",
+    "IEEE 2418.1",
     "NIST NISTIR",
+    "ISO/IEC 23257:2021",
+    "BlockchainEntity",
     "BlockchainTechnology",
-    "BlockchainEntity"
+    "Bitcoin"
   ],
   "ontology": {
     "term_id": "BC-0070",

@@ -27,16 +27,16 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "IEEE 2418.1",
-    "DistributedArchitecture",
-    "Blockchain Network",
-    "ISO/IEC 23257:2021",
     "Networkcomponent",
-    "CryptographicDomain",
-    "NIST NISTIR",
+    "IEEE 2418.1",
     "NetworkingLayer",
+    "NIST NISTIR",
+    "ISO/IEC 23257:2021",
+    "BlockchainEntity",
     "ThreatSurfaceMap",
-    "BlockchainEntity"
+    "Blockchain Network",
+    "CryptographicDomain",
+    "DistributedArchitecture"
   ],
   "ontology": {
     "term_id": "BC-0087",

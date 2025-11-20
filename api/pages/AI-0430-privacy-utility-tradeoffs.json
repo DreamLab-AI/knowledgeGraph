@@ -27,11 +27,11 @@
   "backlinks": [],
   "wiki_links": [
     "Narayanan and Shmatikov (2008)",
-    "AIEthicsDomain",
-    "ConceptualLayer",
     "NIST Privacy Framework",
     "ArtificialIntelligenceTechnology",
-    "Dwork and Roth (2014)"
+    "ConceptualLayer",
+    "Dwork and Roth (2014)",
+    "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "AI-0430",

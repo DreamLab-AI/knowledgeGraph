@@ -19,9 +19,9 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "NeuralNetworkArchitecture",
-    "Krizhevsky et al. 2012 AlexNet",
     "LeCun et al. 1998 Gradient-Based Learning",
+    "Krizhevsky et al. 2012 AlexNet",
+    "NeuralNetworkArchitecture",
     "IEEE CVPR Proceedings",
     "He et al. 2016 ResNet"
   ],

@@ -25,12 +25,12 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ModelCompression",
     "TensorFlow Lite Quantization",
-    "TensorRT",
     "ConceptualLayer",
     "AIEthicsDomain",
-    "ONNX Runtime"
+    "ModelCompression",
+    "ONNX Runtime",
+    "TensorRT"
   ],
   "ontology": {
     "term_id": "AI-0435",

@@ -25,12 +25,12 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "CKKS Scheme",
-    "IBM HELib",
     "Microsoft SEAL",
+    "CKKS Scheme",
     "ConceptualLayer",
     "AIEthicsDomain",
-    "MachineLearning"
+    "MachineLearning",
+    "IBM HELib"
   ],
   "ontology": {
     "term_id": "AI-0418",

@@ -30,10 +30,10 @@
     "IEEE 2418.1",
     "ZeroKnowledgeProofZkp",
     "Public Key Cryptography",
-    "ISO/IEC 23257:2021",
-    "CryptographicDomain",
     "NIST NISTIR",
-    "BlockchainEntity"
+    "ISO/IEC 23257:2021",
+    "BlockchainEntity",
+    "CryptographicDomain"
   ],
   "ontology": {
     "term_id": "BC-0032",

@@ -31,20 +31,20 @@
     "TELE-300-digital-twin-collaboration"
   ],
   "wiki_links": [
-    "Synchronization Module",
-    "IoT Sensors",
-    "ISO 23247",
-    "Remote Monitoring",
-    "Data Model",
-    "Real-time Data Stream",
-    "Metaverse Infrastructure",
-    "Physical Object",
-    "InfrastructureDomain",
-    "Data Pipeline",
-    "Virtual Model",
-    "Predictive Maintenance",
     "ETSI",
-    "PlatformLayer"
+    "Data Model",
+    "Predictive Maintenance",
+    "Physical Object",
+    "Metaverse Infrastructure",
+    "PlatformLayer",
+    "IoT Sensors",
+    "Virtual Model",
+    "ISO 23247",
+    "Synchronization Module",
+    "Remote Monitoring",
+    "Real-time Data Stream",
+    "InfrastructureDomain",
+    "Data Pipeline"
   ],
   "ontology": {
     "term_id": "30445",
