@@ -27,11 +27,11 @@
     "BC-0051-consensus-mechanism"
   ],
   "wiki_links": [
-    "Dependable Computing Systems",
     "BlockchainDomain",
     "Fault-Tolerant Systems",
-    "Metaverse Infrastructure",
-    "Byzantine Fault Tolerance"
+    "Dependable Computing Systems",
+    "Byzantine Fault Tolerance",
+    "Metaverse Infrastructure"
   ],
   "ontology": {
     "term_id": "PC-0008",

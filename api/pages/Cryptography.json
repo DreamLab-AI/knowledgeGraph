@@ -40,15 +40,15 @@
     "SHA-256"
   ],
   "wiki_links": [
-    "MathematicalScience",
-    "NIST FIPS",
-    "NIST SP",
-    "DistributedLedgerTechnologyDlt",
-    "CryptographicDomain",
-    "ISO/IEC 18033",
     "InformationProtection",
     "BlockchainTechnology",
-    "SecurityTechnology"
+    "MathematicalScience",
+    "NIST SP",
+    "NIST FIPS",
+    "DistributedLedgerTechnologyDlt",
+    "CryptographicDomain",
+    "SecurityTechnology",
+    "ISO/IEC 18033"
   ],
   "ontology": {
     "term_id": "BC-0026",

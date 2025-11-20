@@ -36,9 +36,9 @@
   ],
   "wiki_links": [
     "ConsensusMechanism",
-    "ArtificialIntelligence",
-    "PathPlanning",
     "Computer Vision",
+    "PathPlanning",
+    "ArtificialIntelligence",
     "rb-0008-autonomous-robot"
   ],
   "ontology": {

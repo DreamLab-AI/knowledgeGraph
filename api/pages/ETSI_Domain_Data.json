@@ -27,19 +27,19 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Intelligence",
-    "ArtificialIntelligence",
-    "ComputationAndIntelligenceDomain",
-    "AI Systems",
-    "ISO 23257",
     "Data Processing",
-    "Predictive Analytics",
+    "ISO 23257",
+    "ComputationAndIntelligenceDomain",
     "ETSI Metaverse Domain Model",
+    "AI Systems",
     "Data Analytics",
+    "Predictive Analytics",
     "Machine Learning",
+    "ArtificialIntelligence",
+    "ApplicationLayer",
     "Data Storage",
-    "ETSI GR MEC 032",
-    "ApplicationLayer"
+    "Intelligence",
+    "ETSI GR MEC 032"
   ],
   "ontology": {
     "term_id": "20374",

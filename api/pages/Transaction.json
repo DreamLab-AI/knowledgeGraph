@@ -45,16 +45,16 @@
     "BC-0008-account-model"
   ],
   "wiki_links": [
-    "ValueTransfer",
-    "TrainingData",
-    "Bitcoin",
     "IEEE 2418.1",
-    "BlockchainEntity",
-    "Distributeddatastructure",
     "BlockchainDomain",
-    "NIST NISTIR",
+    "TrainingData",
+    "ISO/IEC 23257:2021",
     "BlockchainTechnology",
-    "ISO/IEC 23257:2021"
+    "Bitcoin",
+    "NIST NISTIR",
+    "Distributeddatastructure",
+    "ValueTransfer",
+    "BlockchainEntity"
   ],
   "ontology": {
     "term_id": "BC-0006",

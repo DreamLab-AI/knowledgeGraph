@@ -30,16 +30,16 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "SceneGraph",
     "IEEE 2418.1",
-    "CryptographicDomain",
     "BlockchainEntity",
-    "Bitcoin Whitepaper",
-    "NIST NISTIR 8202",
-    "NetworkArchitecture",
     "Blockchain",
+    "ISO/IEC 23257:2021",
     "Networkcomponent",
-    "ISO/IEC 23257:2021"
+    "NIST NISTIR 8202",
+    "CryptographicDomain",
+    "Bitcoin Whitepaper",
+    "NetworkArchitecture",
+    "SceneGraph"
   ],
   "ontology": {
     "term_id": "BC-0074",

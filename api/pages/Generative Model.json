@@ -28,9 +28,9 @@
     "Variational Autoencoders"
   ],
   "wiki_links": [
-    "DeepLearning",
-    "SyntheticDataGenerator",
     "MachineLearning",
+    "SyntheticDataGenerator",
+    "DeepLearning",
     "Artificial Intelligence"
   ],
   "ontology": {

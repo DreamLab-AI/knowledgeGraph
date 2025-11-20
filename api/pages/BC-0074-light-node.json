@@ -27,14 +27,14 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "SceneGraph",
     "IEEE 2418.1",
     "Node",
+    "ISO/IEC 23257:2021",
+    "Networkcomponent",
+    "NIST NISTIR",
     "CryptographicDomain",
     "BlockchainEntity",
-    "NIST NISTIR",
-    "Networkcomponent",
-    "ISO/IEC 23257:2021"
+    "SceneGraph"
   ],
   "ontology": {
     "term_id": "BC-0074",

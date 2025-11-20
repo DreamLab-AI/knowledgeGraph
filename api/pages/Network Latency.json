@@ -30,13 +30,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "VoiceInteraction",
     "IEEE 2418.1",
+    "ISO/IEC 23257:2021",
+    "Networkcomponent",
+    "NIST NISTIR",
     "CryptographicDomain",
     "BlockchainEntity",
-    "NIST NISTIR",
-    "Networkcomponent",
-    "ISO/IEC 23257:2021",
+    "VoiceInteraction",
     "Metaverse Infrastructure"
   ],
   "ontology": {

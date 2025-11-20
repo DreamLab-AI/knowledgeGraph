@@ -53,10 +53,10 @@
   ],
   "wiki_links": [
     "IEEE 2418.1",
-    "BlockchainEntity",
-    "NIST NISTIR",
-    "BlockchainTechnology",
     "ISO/IEC 23257:2021",
+    "BlockchainTechnology",
+    "NIST NISTIR",
+    "BlockchainEntity",
     "ConsensusDomain"
   ],
   "ontology": {

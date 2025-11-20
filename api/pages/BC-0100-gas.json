@@ -26,13 +26,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
-    "BlockchainEntity",
-    "Economicmechanism",
-    "NIST NISTIR",
     "Transaction Fee",
-    "TokenEconomicsDomain"
+    "ISO/IEC 23257:2021",
+    "Economicmechanism",
+    "TokenEconomicsDomain",
+    "NIST NISTIR",
+    "BlockchainEntity"
   ],
   "ontology": {
     "term_id": "BC-0100",

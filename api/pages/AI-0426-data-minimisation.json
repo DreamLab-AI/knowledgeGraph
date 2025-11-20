@@ -25,12 +25,12 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ConceptualLayer",
+    "ISO 29100",
     "AIEthicsDomain",
+    "AIGovernance",
     "GDPR Article 25",
     "GDPR Article 5(1)(c)",
-    "ISO 29100",
-    "AIGovernance"
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "AI-0426",
