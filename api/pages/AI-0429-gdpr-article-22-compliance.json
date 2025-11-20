@@ -25,13 +25,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ConceptualLayer",
-    "French CNIL",
-    "AIGovernance",
-    "WP29 Guidelines",
-    "GDPR Article 22",
     "Dutch DPA",
-    "AIEthicsDomain"
+    "AIEthicsDomain",
+    "French CNIL",
+    "WP29 Guidelines",
+    "ConceptualLayer",
+    "AIGovernance",
+    "GDPR Article 22"
   ],
   "ontology": {
     "term_id": "AI-0429",

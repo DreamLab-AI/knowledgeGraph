@@ -25,9 +25,9 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "SpeechRecognition",
     "Artificial Intelligence",
-    "SpeechProcessing"
+    "SpeechProcessing",
+    "SpeechRecognition"
   ],
   "ontology": {
     "term_id": "AI-0855",

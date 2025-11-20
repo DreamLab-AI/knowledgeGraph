@@ -19,11 +19,11 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Nature 2025 Omics Data Augmentation",
     "TrainingMethod",
+    "Yeh et al. 2024 Amplio Human-in-Loop",
     "IBM Data Augmentation Guidelines",
     "arXiv 2024 AutoML Augmentation Survey",
-    "Yeh et al. 2024 Amplio Human-in-Loop"
+    "Nature 2025 Omics Data Augmentation"
   ],
   "ontology": {
     "term_id": "AI-0286",

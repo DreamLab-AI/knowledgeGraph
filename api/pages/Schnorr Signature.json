@@ -29,14 +29,14 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Bitcoin Core 2025",
-    "FROST Protocol",
-    "BlockchainTechnology",
-    "CryptographicDomain",
-    "BIP 340 Schnorr Signatures",
-    "BIP 341 Taproot",
     "MuSig2 Specification",
-    "BlockchainEntity"
+    "BIP 341 Taproot",
+    "BIP 340 Schnorr Signatures",
+    "CryptographicDomain",
+    "BlockchainTechnology",
+    "BlockchainEntity",
+    "Bitcoin Core 2025",
+    "FROST Protocol"
   ],
   "ontology": {
     "term_id": "BC-0041",

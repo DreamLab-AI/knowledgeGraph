@@ -26,10 +26,10 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "MachineLearning",
     "System",
-    "ArtificialIntelligenceTechnology",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "MachineLearning",
+    "ArtificialIntelligenceTechnology"
   ],
   "ontology": {
     "term_id": "AI-0801",

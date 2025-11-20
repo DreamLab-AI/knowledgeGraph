@@ -29,17 +29,17 @@
   "backlinks": [],
   "wiki_links": [
     "Therapeutic VR",
-    "Telemedicine Platform",
-    "ApplicationLayer",
-    "Medical Platform Categorization",
-    "InfrastructureDomain",
     "ETSI GS MEC",
-    "Metaverse",
+    "InfrastructureDomain",
+    "Medical Simulation",
+    "VirtualSocietyDomain",
     "ETSI Domain Taxonomy",
     "Healthcare Application Classification",
-    "Medical Simulation",
+    "Telemedicine Platform",
+    "Medical Platform Categorization",
     "Health Monitoring",
-    "VirtualSocietyDomain"
+    "ApplicationLayer",
+    "Metaverse"
   ],
   "ontology": {
     "term_id": "20337",

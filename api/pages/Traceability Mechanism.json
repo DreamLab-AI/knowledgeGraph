@@ -28,11 +28,11 @@
   ],
   "wiki_links": [
     "ISO/IEC 23053 AI Framework",
-    "NIST AI Risk Management Framework",
-    "Metaverse",
-    "IEEE 2801 Recommended Practice",
     "AIEthicsDomain",
-    "EU AI Act"
+    "EU AI Act",
+    "IEEE 2801 Recommended Practice",
+    "Metaverse",
+    "NIST AI Risk Management Framework"
   ],
   "ontology": {
     "term_id": "PC-0013",
