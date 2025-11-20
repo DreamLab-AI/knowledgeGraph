@@ -41,14 +41,14 @@
   ],
   "wiki_links": [
     "NIST FIPS",
-    "InformationProtection",
     "MathematicalScience",
-    "SecurityTechnology",
-    "BlockchainTechnology",
     "DistributedLedgerTechnologyDlt",
+    "NIST SP",
     "CryptographicDomain",
+    "InformationProtection",
+    "SecurityTechnology",
     "ISO/IEC 18033",
-    "NIST SP"
+    "BlockchainTechnology"
   ],
   "ontology": {
     "term_id": "BC-0026",

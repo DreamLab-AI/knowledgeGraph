@@ -36,10 +36,10 @@
   ],
   "wiki_links": [
     "ArtificialIntelligence",
-    "ConsensusMechanism",
     "Computer Vision",
-    "rb-0008-autonomous-robot",
-    "PathPlanning"
+    "PathPlanning",
+    "ConsensusMechanism",
+    "rb-0008-autonomous-robot"
   ],
   "ontology": {
     "term_id": "AI-0002",

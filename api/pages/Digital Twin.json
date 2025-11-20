@@ -25,9 +25,9 @@
   ],
   "wiki_links": [
     "ArtificialIntelligence",
-    "Machine Learning",
     "Computer Vision",
-    "VirtualWorld"
+    "VirtualWorld",
+    "Machine Learning"
   ],
   "ontology": {
     "term_id": "20240",

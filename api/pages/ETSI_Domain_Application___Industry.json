@@ -29,17 +29,17 @@
   "backlinks": [],
   "wiki_links": [
     "ArtificialIntelligence",
-    "Industrial Digital Twin",
-    "InfrastructureDomain",
+    "ETSI Domain Taxonomy",
+    "Industrial Application Classification",
     "Remote Operations",
     "Manufacturing Platform Categorization",
-    "ApplicationLayer",
-    "Industrial Application Classification",
-    "Manufacturing Simulation",
-    "ETSI Domain Taxonomy",
     "VirtualEconomyDomain",
-    "ETSI GS MEC",
-    "Predictive Maintenance"
+    "InfrastructureDomain",
+    "ApplicationLayer",
+    "Industrial Digital Twin",
+    "Manufacturing Simulation",
+    "Predictive Maintenance",
+    "ETSI GS MEC"
   ],
   "ontology": {
     "term_id": "20338",

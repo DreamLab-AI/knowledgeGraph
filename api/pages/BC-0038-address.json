@@ -27,9 +27,9 @@
   "wiki_links": [
     "IEEE 2418.1",
     "Public Key Cryptography",
-    "NIST NISTIR",
+    "ISO/IEC 23257:2021",
     "CryptographicDomain",
-    "ISO/IEC 23257:2021"
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0038",

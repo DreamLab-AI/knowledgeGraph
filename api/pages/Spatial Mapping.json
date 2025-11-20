@@ -28,10 +28,10 @@
     "Augmented Reality (AR)"
   ],
   "wiki_links": [
-    "SpatialComputing",
-    "Artificial Intelligence",
     "AugmentedRealityAr",
-    "ArtificialIntelligenceTechnology"
+    "ArtificialIntelligenceTechnology",
+    "SpatialComputing",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0854",

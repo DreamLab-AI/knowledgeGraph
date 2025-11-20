@@ -25,12 +25,12 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "MachineLearning",
-    "ConceptualLayer",
     "ISO/IEC TR 24027",
     "Agrawal and Srikant (2000)",
     "AIEthicsDomain",
-    "GDPR Article 9"
+    "ConceptualLayer",
+    "GDPR Article 9",
+    "MachineLearning"
   ],
   "ontology": {
     "term_id": "AI-0423",

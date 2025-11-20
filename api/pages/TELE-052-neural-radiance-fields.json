@@ -7,15 +7,15 @@
     "TELE-100-ai-avatars"
   ],
   "wiki_links": [
-    "TELE-050-neural-rendering-telepresence",
-    "TELE-0000-telepresence-domain",
-    "ArtificialIntelligenceTechnology",
-    "TELE-060-instant-ngp",
-    "AIDomain",
-    "NeuralRenderingTelepresence",
     "TELE-020-virtual-reality-telepresence",
+    "TELE-060-instant-ngp",
+    "NeuralRenderingTelepresence",
+    "TELE-050-neural-rendering-telepresence",
+    "AIDomain",
     "TELE-051-3d-gaussian-splatting",
-    "TELE-053-volumetric-video-conferencing"
+    "TELE-053-volumetric-video-conferencing",
+    "ArtificialIntelligenceTechnology",
+    "TELE-0000-telepresence-domain"
   ],
   "ontology": {
     "term_id": "TELE-052",
