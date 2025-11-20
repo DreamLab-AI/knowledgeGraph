@@ -30,8 +30,8 @@
     "IEEE 2418.1",
     "ISO/IEC 23257:2021",
     "NIST NISTIR",
-    "CryptographicDomain",
     "BlockchainEntity",
+    "CryptographicDomain",
     "Public Key Cryptography",
     "ZeroKnowledgeProofZkp"
   ],

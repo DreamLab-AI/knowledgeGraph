@@ -26,13 +26,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ArtificialIntelligenceTechnology",
-    "EU Charter Article 21",
-    "ConceptualLayer",
-    "EU AI Act",
-    "AIEthicsDomain",
+    "WCAG",
     "ISO/IEC TR 24027",
-    "WCAG"
+    "EU Charter Article 21",
+    "EU AI Act",
+    "ConceptualLayer",
+    "ArtificialIntelligenceTechnology",
+    "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "AI-0413",

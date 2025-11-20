@@ -27,14 +27,14 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "VoiceInteraction",
     "IEEE 2418.1",
+    "Networkcomponent",
     "ISO/IEC 23257:2021",
     "Blockchain Network",
     "NIST NISTIR",
-    "Networkcomponent",
-    "CryptographicDomain",
-    "BlockchainEntity"
+    "VoiceInteraction",
+    "BlockchainEntity",
+    "CryptographicDomain"
   ],
   "ontology": {
     "term_id": "BC-0081",

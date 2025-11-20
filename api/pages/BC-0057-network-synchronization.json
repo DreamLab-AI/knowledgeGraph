@@ -30,8 +30,8 @@
     "ISO/IEC 23257:2021",
     "Blockchain Network",
     "NIST NISTIR",
-    "BlockchainEntity",
-    "ConsensusDomain"
+    "ConsensusDomain",
+    "BlockchainEntity"
   ],
   "ontology": {
     "term_id": "BC-0057",

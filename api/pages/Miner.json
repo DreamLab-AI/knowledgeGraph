@@ -34,9 +34,9 @@
     "IEEE 2418.1",
     "ISO/IEC 23257:2021",
     "NIST NISTIR",
-    "BlockchainTechnology",
+    "ConsensusDomain",
     "BlockchainEntity",
-    "ConsensusDomain"
+    "BlockchainTechnology"
   ],
   "ontology": {
     "term_id": "BC-0054",

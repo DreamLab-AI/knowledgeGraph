@@ -25,9 +25,9 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ConceptualLayer",
     "ModelCompression",
-    "AIEthicsDomain"
+    "AIEthicsDomain",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "AI-0443",

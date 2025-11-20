@@ -29,9 +29,9 @@
     "IEEE 2418.1",
     "ISO/IEC 23257:2021",
     "NIST NISTIR",
-    "CryptographicDomain",
+    "Merkle Tree",
     "BlockchainEntity",
-    "Merkle Tree"
+    "CryptographicDomain"
   ],
   "ontology": {
     "term_id": "BC-0044",

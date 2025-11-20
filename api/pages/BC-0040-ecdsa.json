@@ -27,11 +27,11 @@
   "backlinks": [],
   "wiki_links": [
     "IEEE 2418.1",
+    "Signature Scheme",
     "ISO/IEC 23257:2021",
     "NIST NISTIR",
-    "Signature Scheme",
-    "CryptographicDomain",
-    "BlockchainEntity"
+    "BlockchainEntity",
+    "CryptographicDomain"
   ],
   "ontology": {
     "term_id": "BC-0040",

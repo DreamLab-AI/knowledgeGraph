@@ -33,8 +33,8 @@
     "IEEE 2418.1",
     "ISO/IEC 23257:2021",
     "NIST NISTIR",
-    "BlockchainTechnology",
-    "CryptographicDomain"
+    "CryptographicDomain",
+    "BlockchainTechnology"
   ],
   "ontology": {
     "term_id": "BC-0038",

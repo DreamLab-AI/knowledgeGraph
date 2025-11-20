@@ -27,8 +27,8 @@
   "backlinks": [],
   "wiki_links": [
     "DataResource",
-    "ConceptualLayer",
-    "AIEthicsDomain"
+    "AIEthicsDomain",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "AI-0422",
