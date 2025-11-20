@@ -27,13 +27,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "PrivacyEnhancingComputationPec",
-    "Intel SGX",
-    "Confidential Computing Consortium",
     "ConceptualLayer",
-    "ArtificialIntelligenceTechnology",
     "AIEthicsDomain",
-    "AMD SEV"
+    "Confidential Computing Consortium",
+    "AMD SEV",
+    "ArtificialIntelligenceTechnology",
+    "PrivacyEnhancingComputationPec",
+    "Intel SGX"
   ],
   "ontology": {
     "term_id": "AI-0424",

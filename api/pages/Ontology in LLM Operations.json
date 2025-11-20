@@ -27,11 +27,11 @@
   "backlinks": [],
   "wiki_links": [
     "LargeLanguageModel",
-    "KnowledgeGraph",
     "KnowledgeRepresentation",
-    "ArtificialIntelligenceTechnology",
+    "RetrievalAugmentedGenerationRag",
     "Artificial Intelligence",
-    "RetrievalAugmentedGenerationRag"
+    "ArtificialIntelligenceTechnology",
+    "KnowledgeGraph"
   ],
   "ontology": {
     "term_id": "AI-0878",

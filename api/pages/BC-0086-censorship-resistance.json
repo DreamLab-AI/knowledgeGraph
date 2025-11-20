@@ -27,15 +27,15 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "IEEE 2418.1",
-    "Networkcomponent",
-    "Bitcoin",
-    "ISO/IEC 23257:2021",
-    "NIST NISTIR",
-    "BlockchainEntity",
+    "Blockchain",
     "CryptographicDomain",
+    "BlockchainEntity",
+    "ISO/IEC 23257:2021",
     "DecentralizationLayer",
-    "Blockchain"
+    "Bitcoin",
+    "Networkcomponent",
+    "IEEE 2418.1",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0086",

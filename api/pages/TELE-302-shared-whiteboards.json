@@ -11,12 +11,12 @@
   ],
   "wiki_links": [
     "TELE-028-horizon-workrooms",
-    "TELE-002-telecollaboration",
-    "DisruptiveTechnology",
-    "DigitalTwinCollaboration",
-    "TELE-301-virtual-office-spaces",
     "AIDomain",
-    "TELE-0000-telepresence-domain"
+    "TELE-0000-telepresence-domain",
+    "TELE-002-telecollaboration",
+    "TELE-301-virtual-office-spaces",
+    "DisruptiveTechnology",
+    "DigitalTwinCollaboration"
   ],
   "ontology": {
     "term_id": "TELE-302",

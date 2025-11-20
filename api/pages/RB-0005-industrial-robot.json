@@ -27,13 +27,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ISO 8373:2021",
-    "ManipulatorRb0003",
-    "Machine Learning",
     "Computer Vision",
     "PathPlanning",
     "Robotics",
-    "RoboticsTechnology"
+    "RoboticsTechnology",
+    "ManipulatorRb0003",
+    "Machine Learning",
+    "ISO 8373:2021"
   ],
   "ontology": {
     "term_id": "RB-0005",

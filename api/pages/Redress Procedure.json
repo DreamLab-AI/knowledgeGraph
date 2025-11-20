@@ -27,13 +27,13 @@
     "AI Governance Principle"
   ],
   "wiki_links": [
-    "Algorithmic Accountability Act",
-    "OECD AI Principles",
     "GDPR Article 22",
-    "ISO/IEC 42001",
+    "AIEthicsDomain",
     "EU AI Act",
-    "ArtificialIntelligenceTechnology",
-    "AIEthicsDomain"
+    "OECD AI Principles",
+    "ISO/IEC 42001",
+    "Algorithmic Accountability Act",
+    "ArtificialIntelligenceTechnology"
   ],
   "ontology": {
     "term_id": "PC-0014",

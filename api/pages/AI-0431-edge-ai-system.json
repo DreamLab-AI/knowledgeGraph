@@ -25,9 +25,9 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "AIApplications",
     "AIEthicsDomain",
-    "ConceptualLayer"
+    "ConceptualLayer",
+    "AIApplications"
   ],
   "ontology": {
     "term_id": "AI-0431",
