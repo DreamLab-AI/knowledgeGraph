@@ -19,11 +19,11 @@
     "AI Risk"
   ],
   "wiki_links": [
-    "EU AI Act Article 73",
-    "AIRisk",
     "OECD AI Incidents Monitor",
+    "IEEE P2863",
     "AI Incident Database",
-    "IEEE P2863"
+    "AIRisk",
+    "EU AI Act Article 73"
   ],
   "ontology": {
     "term_id": "AI-0082",

@@ -20,14 +20,14 @@
   "backlinks": [],
   "wiki_links": [
     "EEOC Uniform Guidelines 1978",
-    "UK Equality Act 2010",
-    "ConceptualLayer",
-    "AIFairness",
-    "AIEthicsDomain",
-    "Britannica Disparate Impact",
     "US EEOC Uniform Guidelines",
-    "Sage Journals 2024 Legal-Empirical Disparate Impact",
-    "EU Anti-Discrimination Directives"
+    "ConceptualLayer",
+    "EU Anti-Discrimination Directives",
+    "UK Equality Act 2010",
+    "AIFairness",
+    "Britannica Disparate Impact",
+    "AIEthicsDomain",
+    "Sage Journals 2024 Legal-Empirical Disparate Impact"
   ],
   "ontology": {
     "term_id": "AI-0381",

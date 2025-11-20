@@ -27,11 +27,11 @@
   "backlinks": [],
   "wiki_links": [
     "CryptographicDomain",
-    "ISO/IEC 23257:2021",
     "Block Propagation",
-    "Networkcomponent",
+    "NIST NISTIR",
+    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
-    "NIST NISTIR"
+    "Networkcomponent"
   ],
   "ontology": {
     "term_id": "BC-0082",

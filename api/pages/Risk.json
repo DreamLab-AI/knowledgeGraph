@@ -30,10 +30,10 @@
     "AI Governance Principle"
   ],
   "wiki_links": [
-    "DisruptiveTechnology",
-    "Artificial Intelligence",
     "GartnerPrediction",
-    "DataBreach"
+    "Artificial Intelligence",
+    "DataBreach",
+    "DisruptiveTechnology"
   ],
   "ontology": {
     "term_id": "AI-0839",

@@ -26,12 +26,12 @@
   },
   "backlinks": [],
   "wiki_links": [
+    "Distributed Protocol",
+    "Agreement Protocol",
+    "Fault Tolerance System",
+    "ProtocolLayer",
     "ITU-T Y.3051",
     "ISO/IEC 23257:2021",
-    "ProtocolLayer",
-    "Fault Tolerance System",
-    "Agreement Protocol",
-    "Distributed Protocol",
     "IEEE 2418.1",
     "ConsensusDomain"
   ],

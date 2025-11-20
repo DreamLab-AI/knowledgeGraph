@@ -30,9 +30,9 @@
     "ConceptualLayer",
     "ITU-T Y.4560",
     "ISO/IEC 23257:2021",
-    "Record-Keeping System",
+    "Data Structure",
     "Distributed System",
-    "Data Structure"
+    "Record-Keeping System"
   ],
   "ontology": {
     "term_id": "BC-0002",

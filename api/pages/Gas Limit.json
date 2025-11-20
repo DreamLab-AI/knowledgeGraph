@@ -28,12 +28,12 @@
   },
   "backlinks": [],
   "wiki_links": [
+    "Transaction Parameter",
+    "Transaction Fee",
+    "Priority Fee",
+    "Gas Price",
     "Blockchain",
     "Base Fee",
-    "Transaction Fee",
-    "Gas Price",
-    "Priority Fee",
-    "Transaction Parameter",
     "Resource Control"
   ],
   "ontology": {

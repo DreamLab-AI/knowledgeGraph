@@ -28,11 +28,11 @@
     "Blockchain Entity"
   ],
   "wiki_links": [
+    "NIST Cryptographic Standards",
     "BlockchainDomain",
     "ISO/IEC 18033 Encryption Algorithms",
-    "NIST Cryptographic Standards",
-    "Metaverse",
-    "FIPS 140-3 Security Requirements"
+    "FIPS 140-3 Security Requirements",
+    "Metaverse"
   ],
   "ontology": {
     "term_id": "PC-0003",
