@@ -29,10 +29,10 @@
   ],
   "wiki_links": [
     "Metaverse Infrastructure",
-    "Distributed Systems: Concepts and Design",
+    "Peer-to-Peer Networks",
     "BlockchainDomain",
-    "Byzantine Agreement Protocols",
-    "Peer-to-Peer Networks"
+    "Distributed Systems: Concepts and Design",
+    "Byzantine Agreement Protocols"
   ],
   "ontology": {
     "term_id": "PC-0006",

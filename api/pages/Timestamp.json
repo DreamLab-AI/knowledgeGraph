@@ -34,14 +34,14 @@
     "User Consent Token"
   ],
   "wiki_links": [
-    "NIST NISTIR",
-    "Distributeddatastructure",
+    "BlockchainDomain",
+    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
     "BlockchainTechnology",
     "UserConsentToken",
-    "BlockchainEntity",
-    "ISO/IEC 23257:2021",
-    "BlockchainDomain"
+    "Distributeddatastructure",
+    "NIST NISTIR",
+    "BlockchainEntity"
   ],
   "ontology": {
     "term_id": "BC-0017",

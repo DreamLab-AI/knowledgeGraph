@@ -28,18 +28,18 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ETSI GS MEC",
-    "Learning Platform Categorization",
-    "ApplicationLayer",
-    "Metaverse",
-    "VirtualSocietyDomain",
-    "Learning Management System",
-    "InfrastructureDomain",
-    "Education Application Classification",
     "Educational Simulation",
+    "ApplicationLayer",
+    "Education Application Classification",
+    "InfrastructureDomain",
+    "ETSI GS MEC",
+    "Metaverse",
+    "ETSI Domain Taxonomy",
+    "Learning Platform Categorization",
     "Training Platform",
     "Virtual Classroom",
-    "ETSI Domain Taxonomy"
+    "VirtualSocietyDomain",
+    "Learning Management System"
   ],
   "ontology": {
     "term_id": "20336",

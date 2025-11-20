@@ -28,8 +28,8 @@
     "ConceptualLayer",
     "EdgeAISystem",
     "AWS IoT Greengrass",
-    "AIEthicsDomain",
     "Azure IoT Edge",
+    "AIEthicsDomain",
     "ETSI MEC"
   ],
   "ontology": {

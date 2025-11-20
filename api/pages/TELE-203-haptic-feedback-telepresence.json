@@ -12,14 +12,14 @@
     "TELE-001-telepresence"
   ],
   "wiki_links": [
-    "TelecollaborationTechnology",
-    "TELE-0000-telepresence-domain",
+    "TELE-200-robotic-telepresence",
+    "RoboticTelepresence",
     "TELE-020-virtual-reality-telepresence",
+    "TelecollaborationTechnology",
+    "AIDomain",
+    "TELE-0000-telepresence-domain",
     "RoboticsDomain",
     "TELE-001-telepresence",
-    "AIDomain",
-    "RoboticTelepresence",
-    "TELE-200-robotic-telepresence",
     "TELE-201-teleoperation-systems"
   ],
   "ontology": {

@@ -29,11 +29,11 @@
   ],
   "wiki_links": [
     "SocialTokenEconomy",
-    "LiquidityPool",
-    "SmartRoyaltyContract",
-    "Blockchain",
+    "TransactionStandard",
     "VirtualSecuritiesOfferingVso",
-    "TransactionStandard"
+    "Blockchain",
+    "SmartRoyaltyContract",
+    "LiquidityPool"
   ],
   "ontology": {
     "term_id": "BC-0507",

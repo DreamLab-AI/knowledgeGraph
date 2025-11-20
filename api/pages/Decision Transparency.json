@@ -19,12 +19,12 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "EU AI Act Article 13",
-    "AIFairness",
-    "ISO/IEC 23894:2023",
     "GDPR Article 15",
-    "NIST AI RMF",
-    "Artificial Intelligence"
+    "AIFairness",
+    "Artificial Intelligence",
+    "ISO/IEC 23894:2023",
+    "EU AI Act Article 13",
+    "NIST AI RMF"
   ],
   "ontology": {
     "term_id": "AI-0822",

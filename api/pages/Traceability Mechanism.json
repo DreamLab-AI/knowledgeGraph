@@ -27,12 +27,12 @@
     "AI Governance Principle"
   ],
   "wiki_links": [
-    "EU AI Act",
+    "ISO/IEC 23053 AI Framework",
+    "NIST AI Risk Management Framework",
     "Metaverse",
     "IEEE 2801 Recommended Practice",
     "AIEthicsDomain",
-    "ISO/IEC 23053 AI Framework",
-    "NIST AI Risk Management Framework"
+    "EU AI Act"
   ],
   "ontology": {
     "term_id": "PC-0013",

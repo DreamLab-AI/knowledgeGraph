@@ -26,11 +26,11 @@
   "backlinks": [],
   "wiki_links": [
     "ConceptualLayer",
-    "MachineLearning",
     "Google Federated Learning",
+    "McMahan et al. (2017)",
+    "MachineLearning",
     "AIEthicsDomain",
-    "TensorFlow Federated",
-    "McMahan et al. (2017)"
+    "TensorFlow Federated"
   ],
   "ontology": {
     "term_id": "AI-0417",

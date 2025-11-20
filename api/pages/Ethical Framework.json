@@ -28,12 +28,12 @@
     "AI Governance Principle"
   ],
   "wiki_links": [
+    "Montreal Declaration for Responsible AI",
+    "IEEE Ethically Aligned Design",
     "Asilomar AI Principles",
     "AIEthicsDomain",
-    "IEEE Ethically Aligned Design",
     "ArtificialIntelligence",
-    "ACM Code of Ethics",
-    "Montreal Declaration for Responsible AI"
+    "ACM Code of Ethics"
   ],
   "ontology": {
     "term_id": "PC-0011",

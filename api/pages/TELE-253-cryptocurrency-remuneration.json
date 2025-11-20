@@ -7,13 +7,13 @@
     "TELE-251-smart-contract-coordination"
   ],
   "wiki_links": [
-    "TELE-0000-telepresence-domain",
-    "BlockchainCollaboration",
     "TELE-251-smart-contract-coordination",
+    "BlockchainCollaboration",
     "TELE-002-telecollaboration",
-    "TELE-250-blockchain-collaboration",
+    "TELE-0000-telepresence-domain",
     "BlockchainDomain",
-    "DisruptiveTechnology"
+    "DisruptiveTechnology",
+    "TELE-250-blockchain-collaboration"
   ],
   "ontology": {
     "term_id": "TELE-253",

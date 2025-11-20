@@ -26,13 +26,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "NIST NISTIR",
-    "Distributeddatastructure",
-    "IEEE 2418.1",
-    "BlockchainEntity",
-    "ISO/IEC 23257:2021",
     "BlockchainDomain",
-    "Transaction"
+    "ISO/IEC 23257:2021",
+    "IEEE 2418.1",
+    "Distributeddatastructure",
+    "Transaction",
+    "NIST NISTIR",
+    "BlockchainEntity"
   ],
   "ontology": {
     "term_id": "BC-0021",

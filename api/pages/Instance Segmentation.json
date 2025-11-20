@@ -14,11 +14,11 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ImageSegmentation",
-    "MetaverseDomain",
     "Panoptic Segmentation",
+    "Semantic Segmentation",
     "Object Detection",
-    "Semantic Segmentation"
+    "ImageSegmentation",
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "AI-0360",

@@ -28,20 +28,20 @@
     "Bitcoin"
   ],
   "wiki_links": [
-    "EconomicSystemDomain",
-    "Cryptocurrency",
-    "BIS",
-    "MetaverseDomain",
-    "DigitalMoney",
     "NeuralNetwork",
     "IMF",
-    "BlockchainDomain",
+    "BIS",
+    "DigitalMoney",
+    "ISO 4217",
     "CentralBankDigitalCurrency",
-    "DisruptiveTechnology",
     "VirtualCurrency",
+    "BlockchainDomain",
     "Bank of England",
     "AcceptanceNetwork",
-    "ISO 4217"
+    "Cryptocurrency",
+    "MetaverseDomain",
+    "EconomicSystemDomain",
+    "DisruptiveTechnology"
   ],
   "ontology": {
     "term_id": "DT-0002",
