@@ -27,13 +27,13 @@
     "AI Governance Principle"
   ],
   "wiki_links": [
-    "Metaverse",
     "AIEthicsDomain",
-    "Algorithmic Accountability Principles",
-    "ISO/IEC 42001",
-    "EU AI Act",
     "IEEE 7000 Model Process",
-    "OECD AI Principles"
+    "OECD AI Principles",
+    "Metaverse",
+    "EU AI Act",
+    "Algorithmic Accountability Principles",
+    "ISO/IEC 42001"
   ],
   "ontology": {
     "term_id": "PC-0015",

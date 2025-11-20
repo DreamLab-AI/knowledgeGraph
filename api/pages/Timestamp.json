@@ -36,11 +36,11 @@
   "wiki_links": [
     "Distributeddatastructure",
     "IEEE 2418.1",
-    "NIST NISTIR",
-    "UserConsentToken",
-    "BlockchainTechnology",
-    "BlockchainEntity",
     "ISO/IEC 23257:2021",
+    "NIST NISTIR",
+    "BlockchainTechnology",
+    "UserConsentToken",
+    "BlockchainEntity",
     "BlockchainDomain"
   ],
   "ontology": {

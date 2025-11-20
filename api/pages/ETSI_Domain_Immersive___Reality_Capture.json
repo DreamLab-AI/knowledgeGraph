@@ -27,18 +27,18 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Metaverse",
-    "ISO 23257",
-    "ETSI GR MEC 032",
-    "Volumetric Capture",
-    "CreativeMediaDomain",
-    "ETSI Metaverse Domain Model",
-    "ETSI Domain Immersive",
-    "Photorealistic Immersion",
+    "ApplicationLayer",
     "Spatial Interaction",
+    "ISO 23257",
     "ETSI Domain Reality Capture",
+    "Volumetric Capture",
+    "ETSI GR MEC 032",
+    "CreativeMediaDomain",
+    "Metaverse",
+    "ETSI Domain Immersive",
+    "ETSI Metaverse Domain Model",
     "InteractionDomain",
-    "ApplicationLayer"
+    "Photorealistic Immersion"
   ],
   "ontology": {
     "term_id": "20360",

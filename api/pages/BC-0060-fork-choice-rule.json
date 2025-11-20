@@ -26,12 +26,12 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ConsensusDomain",
-    "Consensus Rule",
     "IEEE 2418.1",
+    "ISO/IEC 23257:2021",
     "NIST NISTIR",
+    "Consensus Rule",
     "BlockchainEntity",
-    "ISO/IEC 23257:2021"
+    "ConsensusDomain"
   ],
   "ontology": {
     "term_id": "BC-0060",

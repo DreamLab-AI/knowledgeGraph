@@ -25,12 +25,12 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ISO/IEC 42001:2023",
-    "AIEthicsDomain",
-    "EU AI Act",
-    "ConceptualLayer",
     "OECD AI Principles",
-    "AIGovernance"
+    "ConceptualLayer",
+    "AIGovernance",
+    "EU AI Act",
+    "AIEthicsDomain",
+    "ISO/IEC 42001:2023"
   ],
   "ontology": {
     "term_id": "AI-0387",

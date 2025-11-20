@@ -33,13 +33,13 @@
     "Decentralized Finance"
   ],
   "wiki_links": [
-    "Metaverse",
-    "AIEthicsDomain",
-    "ISO/IEC 42001",
-    "EU AI Act",
-    "GDPR",
     "IEEE 7000 Model Process",
-    "NIST AI Risk Management Framework"
+    "GDPR",
+    "NIST AI Risk Management Framework",
+    "Metaverse",
+    "EU AI Act",
+    "ISO/IEC 42001",
+    "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "PC-0012",

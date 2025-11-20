@@ -27,10 +27,10 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "NaturalLanguageProcessing",
     "ArtificialIntelligenceTechnology",
     "Artificial Intelligence",
-    "EtsiDomainAiHumanInterface"
+    "EtsiDomainAiHumanInterface",
+    "NaturalLanguageProcessing"
   ],
   "ontology": {
     "term_id": "AI-0849",

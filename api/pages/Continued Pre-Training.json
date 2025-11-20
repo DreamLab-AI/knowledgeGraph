@@ -19,11 +19,11 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "PreTraining",
     "Raschka 2025 LLM Training Paradigms",
     "AWS SageMaker CPT Documentation",
+    "Google Cloud AI Platform",
     "AMD ROCm Multilingual CPT Playbook",
-    "Google Cloud AI Platform"
+    "PreTraining"
   ],
   "ontology": {
     "term_id": "AI-0248",

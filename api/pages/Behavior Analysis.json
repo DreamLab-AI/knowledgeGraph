@@ -27,10 +27,10 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "MachineLearning",
     "ArtificialIntelligenceTechnology",
-    "BehaviouralFeedbackLoop",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "MachineLearning",
+    "BehaviouralFeedbackLoop"
   ],
   "ontology": {
     "term_id": "AI-0860",
