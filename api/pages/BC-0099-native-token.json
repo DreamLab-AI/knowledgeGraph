@@ -26,13 +26,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "BlockchainEntity",
-    "TokenEconomicsDomain",
+    "NIST NISTIR",
     "IEEE 2418.1",
     "Economicmechanism",
+    "BlockchainEntity",
+    "Token",
     "ISO/IEC 23257:2021",
-    "NIST NISTIR",
-    "Token"
+    "TokenEconomicsDomain"
   ],
   "ontology": {
     "term_id": "BC-0099",

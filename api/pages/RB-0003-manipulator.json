@@ -25,11 +25,11 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "KinematicStructure",
-    "WorkspaceVolume",
     "ISO 8373:2021",
+    "KinematicStructure",
+    "RoboticsTechnology",
     "Robotics",
-    "RoboticsTechnology"
+    "WorkspaceVolume"
   ],
   "ontology": {
     "term_id": "RB-0003",

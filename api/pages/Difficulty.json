@@ -32,11 +32,11 @@
     "SHA-256"
   ],
   "wiki_links": [
+    "IEEE 2418.1",
     "BlockchainEntity",
     "NIST NISTIR 8202",
-    "CryptographicDomain",
-    "IEEE 2418.1",
     "ISO/IEC 23257:2021",
+    "CryptographicDomain",
     "BlockchainTechnology"
   ],
   "ontology": {

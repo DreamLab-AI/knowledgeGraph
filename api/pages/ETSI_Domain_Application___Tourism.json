@@ -30,16 +30,16 @@
   "wiki_links": [
     "Cultural Heritage Experience",
     "Virtual Tour",
-    "VirtualSocietyDomain",
-    "InfrastructureDomain",
-    "ETSI Domain Taxonomy",
-    "Destination Preview",
-    "ETSI GS MEC",
-    "Tourism Application Classification",
     "Extended Reality (XR)",
+    "Tourism Application Classification",
+    "ETSI Domain Taxonomy",
+    "VirtualSocietyDomain",
     "ApplicationLayer",
-    "Travel Planning Platform",
-    "Cultural Experience Categorization"
+    "ETSI GS MEC",
+    "InfrastructureDomain",
+    "Cultural Experience Categorization",
+    "Destination Preview",
+    "Travel Planning Platform"
   ],
   "ontology": {
     "term_id": "20339",

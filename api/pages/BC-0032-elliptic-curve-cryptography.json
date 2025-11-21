@@ -27,13 +27,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "BlockchainEntity",
-    "CryptographicDomain",
-    "ZeroKnowledgeProofZkp",
+    "NIST NISTIR",
     "IEEE 2418.1",
+    "BlockchainEntity",
     "Public Key Cryptography",
     "ISO/IEC 23257:2021",
-    "NIST NISTIR"
+    "CryptographicDomain",
+    "ZeroKnowledgeProofZkp"
   ],
   "ontology": {
     "term_id": "BC-0032",

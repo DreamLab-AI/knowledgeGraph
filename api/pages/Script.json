@@ -37,16 +37,16 @@
     "Bitcoin"
   ],
   "wiki_links": [
-    "BIP 141 (Bitcoin)",
     "SmartContractDomain",
-    "BlockchainDomain",
-    "BlockchainEntity",
     "Bitcoin",
-    "Distributeddatastructure",
     "Ethereum Yellow Paper",
     "IEEE 2418.1",
+    "BlockchainEntity",
     "ISO/IEC 23257:2021",
-    "BlockchainTechnology"
+    "BlockchainTechnology",
+    "BIP 141 (Bitcoin)",
+    "Distributeddatastructure",
+    "BlockchainDomain"
   ],
   "ontology": {
     "term_id": "BC-0023",
