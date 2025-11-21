@@ -29,9 +29,9 @@
   ],
   "wiki_links": [
     "MachineLearning",
+    "DeepLearning",
     "SyntheticDataGenerator",
-    "Artificial Intelligence",
-    "DeepLearning"
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0840",

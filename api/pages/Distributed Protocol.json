@@ -28,10 +28,10 @@
     "BC-0051-consensus-mechanism"
   ],
   "wiki_links": [
-    "Byzantine Agreement Protocols",
-    "Distributed Systems: Concepts and Design",
-    "Peer-to-Peer Networks",
     "Metaverse Infrastructure",
+    "Distributed Systems: Concepts and Design",
+    "Byzantine Agreement Protocols",
+    "Peer-to-Peer Networks",
     "BlockchainDomain"
   ],
   "ontology": {

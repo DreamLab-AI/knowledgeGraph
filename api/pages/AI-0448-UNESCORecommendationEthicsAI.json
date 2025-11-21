@@ -25,10 +25,10 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "UNESCO Recommendation on the Ethics of AI (2021)",
-    "AIGovernance",
     "ConceptualLayer",
-    "AIEthicsDomain"
+    "AIGovernance",
+    "AIEthicsDomain",
+    "UNESCO Recommendation on the Ethics of AI (2021)"
   ],
   "ontology": {
     "term_id": "AI-0448",

@@ -27,13 +27,13 @@
   },
   "backlinks": [],
   "wiki_links": [
+    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
-    "BlockchainEntity",
-    "Networkcomponent",
-    "DistributedLedgerTechnologyDlt",
     "NIST NISTIR",
     "CryptographicDomain",
-    "ISO/IEC 23257:2021",
+    "Networkcomponent",
+    "BlockchainEntity",
+    "DistributedLedgerTechnologyDlt",
     "Blockchain Network"
   ],
   "ontology": {

@@ -41,13 +41,13 @@
     "BC-0011-block-height"
   ],
   "wiki_links": [
+    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
     "BlockchainTechnology",
-    "BlockchainDomain",
     "Algorithm",
-    "Distributeddatastructure",
     "NIST NISTIR",
-    "ISO/IEC 23257:2021",
+    "BlockchainDomain",
+    "Distributeddatastructure",
     "Bitcoin"
   ],
   "ontology": {
