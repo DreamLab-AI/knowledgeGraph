@@ -27,10 +27,10 @@
   "wiki_links": [
     "AIEthicsDomain",
     "AIGovernance",
-    "GDPR Article 32",
     "ConceptualLayer",
     "GDPR Article 4(5)",
-    "GDPR Article 25"
+    "GDPR Article 25",
+    "GDPR Article 32"
   ],
   "ontology": {
     "term_id": "AI-0427",

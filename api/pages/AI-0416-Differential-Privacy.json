@@ -26,15 +26,15 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "PrivacyEnhancingComputationPec",
     "AIEthicsDomain",
-    "Dwork et al. (2006)",
-    "SyntheticDataGenerator",
-    "U.S. Census 2020",
+    "PrivacyEnhancingComputationPec",
     "MachineLearning",
-    "Apple Differential Privacy",
+    "SyntheticDataGenerator",
+    "ConceptualLayer",
+    "U.S. Census 2020",
     "DataAnonymizationPipeline",
-    "ConceptualLayer"
+    "Apple Differential Privacy",
+    "Dwork et al. (2006)"
   ],
   "ontology": {
     "term_id": "AI-0416",

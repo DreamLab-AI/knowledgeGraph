@@ -52,12 +52,12 @@
     "BC-0065-solo-mining"
   ],
   "wiki_links": [
-    "NIST NISTIR",
-    "BlockchainTechnology",
-    "ConsensusDomain",
     "IEEE 2418.1",
     "BlockchainEntity",
-    "ISO/IEC 23257:2021"
+    "BlockchainTechnology",
+    "NIST NISTIR",
+    "ISO/IEC 23257:2021",
+    "ConsensusDomain"
   ],
   "ontology": {
     "term_id": "BC-0053",

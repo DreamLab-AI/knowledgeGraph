@@ -26,11 +26,11 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ArtificialIntelligenceTechnology",
-    "LargeLanguageModel",
     "KnowledgeRepresentation",
-    "Artificial Intelligence",
+    "LargeLanguageModel",
     "RetrievalAugmentedGenerationRag",
+    "ArtificialIntelligenceTechnology",
+    "Artificial Intelligence",
     "KnowledgeGraph"
   ],
   "ontology": {

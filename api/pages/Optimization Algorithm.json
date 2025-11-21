@@ -27,9 +27,9 @@
     "Generative Design Tool"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
     "MachineLearning",
-    "GenerativeDesignTool"
+    "GenerativeDesignTool",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0866",

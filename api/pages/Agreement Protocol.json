@@ -28,11 +28,11 @@
   ],
   "wiki_links": [
     "Metaverse Infrastructure",
-    "Byzantine Agreement Papers",
-    "Paxos and Raft Consensus",
     "BlockchainDomain",
+    "PBFT Algorithm",
     "FLP Impossibility",
-    "PBFT Algorithm"
+    "Byzantine Agreement Papers",
+    "Paxos and Raft Consensus"
   ],
   "ontology": {
     "term_id": "PC-0007",

@@ -19,11 +19,11 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Microsoft Azure OpenAI DPO",
-    "TrainingMethod",
-    "Sharma et al. 2024 DPO arXiv 2305.18290",
     "Croitoru et al. 2025 Curriculum DPO CVPR",
-    "Wu et al. 2025 Robust DPO ICLR"
+    "Sharma et al. 2024 DPO arXiv 2305.18290",
+    "Microsoft Azure OpenAI DPO",
+    "Wu et al. 2025 Robust DPO ICLR",
+    "TrainingMethod"
   ],
   "ontology": {
     "term_id": "AI-0266",

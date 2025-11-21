@@ -31,12 +31,12 @@
     "Blockchain Entity"
   ],
   "wiki_links": [
-    "NIST NISTIR",
-    "BlockchainTechnology",
     "IEEE 2418.1",
-    "BlockchainEntity",
     "Economicmechanism",
+    "BlockchainEntity",
+    "BlockchainTechnology",
     "TokenEconomicsDomain",
+    "NIST NISTIR",
     "ISO/IEC 23257:2021"
   ],
   "ontology": {
