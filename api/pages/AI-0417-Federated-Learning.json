@@ -25,10 +25,10 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Google Federated Learning",
-    "TensorFlow Federated",
     "AIEthicsDomain",
+    "Google Federated Learning",
     "MachineLearning",
+    "TensorFlow Federated",
     "ConceptualLayer",
     "McMahan et al. (2017)"
   ],

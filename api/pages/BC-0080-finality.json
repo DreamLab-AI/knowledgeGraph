@@ -26,13 +26,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Consensus Mechanism",
+    "BlockchainEntity",
     "NIST NISTIR",
     "IEEE 2418.1",
-    "BlockchainEntity",
-    "ISO/IEC 23257:2021",
+    "Networkcomponent",
     "CryptographicDomain",
-    "Networkcomponent"
+    "Consensus Mechanism",
+    "ISO/IEC 23257:2021"
   ],
   "ontology": {
     "term_id": "BC-0080",

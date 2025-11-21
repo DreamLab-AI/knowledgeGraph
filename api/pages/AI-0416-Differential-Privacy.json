@@ -28,13 +28,13 @@
   "wiki_links": [
     "Dwork et al. (2006)",
     "DataAnonymizationPipeline",
-    "SyntheticDataGenerator",
     "AIEthicsDomain",
-    "Apple Differential Privacy",
-    "MachineLearning",
-    "ConceptualLayer",
+    "U.S. Census 2020",
     "PrivacyEnhancingComputationPec",
-    "U.S. Census 2020"
+    "MachineLearning",
+    "Apple Differential Privacy",
+    "SyntheticDataGenerator",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "AI-0416",

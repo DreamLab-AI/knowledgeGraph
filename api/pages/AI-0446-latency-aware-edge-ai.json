@@ -25,9 +25,9 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "EdgeAISystem",
     "ConceptualLayer",
-    "AIEthicsDomain"
+    "AIEthicsDomain",
+    "EdgeAISystem"
   ],
   "ontology": {
     "term_id": "AI-0446",

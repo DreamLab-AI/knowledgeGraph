@@ -21,13 +21,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "DisruptiveTechnology",
-    "AIEthicsDomain",
-    "OntologyDomain",
     "Dublin Core Metadata Initiative",
+    "AIEthicsDomain",
     "OWL 2 Web Ontology Language",
     "RoboticsDomain",
-    "BlockchainDomain"
+    "DisruptiveTechnology",
+    "BlockchainDomain",
+    "OntologyDomain"
   ],
   "ontology": {
     "term_id": "ONTO-PROPS",

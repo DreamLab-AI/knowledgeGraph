@@ -32,17 +32,17 @@
     "Blockchain Entity"
   ],
   "wiki_links": [
+    "Computational puzzle",
     "Bitcoin",
     "consensus mechanism",
+    "ConsensusDomain",
+    "BlockchainEntity",
     "NIST NISTIR",
     "IEEE 2418.1",
-    "BlockchainEntity",
-    "Computational puzzle",
     "blockchain",
-    "ConsensusDomain",
-    "ISO/IEC 23257:2021",
+    "distributed ledger",
     "BlockchainTechnology",
-    "distributed ledger"
+    "ISO/IEC 23257:2021"
   ],
   "ontology": {
     "term_id": "BC-0052",

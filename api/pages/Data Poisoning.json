@@ -19,10 +19,10 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "ISO/IEC 23894 Risk Management",
-    "AISecurity",
-    "NIST AI RMF Security",
     "Chen et al. 2017 Backdoor Attacks",
+    "ISO/IEC 23894 Risk Management",
+    "NIST AI RMF Security",
+    "AISecurity",
     "UK NCSC AI Security Guidance",
     "Biggio et al. 2012 SVM Poisoning"
   ],
