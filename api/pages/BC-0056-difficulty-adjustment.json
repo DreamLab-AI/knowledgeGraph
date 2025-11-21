@@ -27,13 +27,13 @@
   },
   "backlinks": [],
   "wiki_links": [
+    "ConsensusDomain",
     "NIST NISTIR",
-    "Bitcoin",
-    "ISO/IEC 23257:2021",
-    "Mining",
-    "IEEE 2418.1",
     "BlockchainEntity",
-    "ConsensusDomain"
+    "Bitcoin",
+    "IEEE 2418.1",
+    "ISO/IEC 23257:2021",
+    "Mining"
   ],
   "ontology": {
     "term_id": "BC-0056",

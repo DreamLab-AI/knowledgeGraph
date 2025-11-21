@@ -19,11 +19,11 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Lewis et al. 2020 BART",
+    "Raffel et al. 2020 T5",
     "Sutskever et al. 2014 Sequence to Sequence Learning",
-    "ModelArchitecture",
+    "Lewis et al. 2020 BART",
     "Vaswani et al. 2017 Attention is All You Need",
-    "Raffel et al. 2020 T5"
+    "ModelArchitecture"
   ],
   "ontology": {
     "term_id": "AI-0207",

@@ -35,11 +35,11 @@
     "Decentralized Finance"
   ],
   "wiki_links": [
-    "PathPlanning",
-    "ArtificialIntelligence",
-    "ConsensusMechanism",
     "rb-0008-autonomous-robot",
-    "Computer Vision"
+    "ArtificialIntelligence",
+    "PathPlanning",
+    "Computer Vision",
+    "ConsensusMechanism"
   ],
   "ontology": {
     "term_id": "AI-0002",

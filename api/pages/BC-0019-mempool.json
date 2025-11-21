@@ -27,14 +27,14 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "BlockchainDomain",
-    "Transaction Pool",
     "NIST NISTIR",
+    "BlockchainEntity",
+    "Transaction Pool",
     "Bitcoin",
-    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
-    "Distributeddatastructure",
-    "BlockchainEntity"
+    "BlockchainDomain",
+    "ISO/IEC 23257:2021",
+    "Distributeddatastructure"
   ],
   "ontology": {
     "term_id": "BC-0019",

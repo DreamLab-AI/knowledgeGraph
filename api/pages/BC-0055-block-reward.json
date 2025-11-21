@@ -25,11 +25,11 @@
   },
   "backlinks": [],
   "wiki_links": [
+    "ConsensusDomain",
     "NIST NISTIR",
-    "ISO/IEC 23257:2021",
-    "Mining",
     "IEEE 2418.1",
-    "ConsensusDomain"
+    "ISO/IEC 23257:2021",
+    "Mining"
   ],
   "ontology": {
     "term_id": "BC-0055",

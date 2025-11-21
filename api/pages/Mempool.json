@@ -36,14 +36,14 @@
     "Bitcoin"
   ],
   "wiki_links": [
-    "BlockchainDomain",
     "NIST NISTIR",
-    "Bitcoin",
-    "ISO/IEC 23257:2021",
-    "IEEE 2418.1",
-    "Distributeddatastructure",
+    "BlockchainTechnology",
     "BlockchainEntity",
-    "BlockchainTechnology"
+    "Bitcoin",
+    "IEEE 2418.1",
+    "BlockchainDomain",
+    "ISO/IEC 23257:2021",
+    "Distributeddatastructure"
   ],
   "ontology": {
     "term_id": "BC-0019",

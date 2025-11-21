@@ -26,12 +26,12 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "CryptographicDomain",
-    "Merkle Tree",
     "NIST NISTIR",
-    "ISO/IEC 23257:2021",
+    "Merkle Tree",
+    "BlockchainEntity",
     "IEEE 2418.1",
-    "BlockchainEntity"
+    "ISO/IEC 23257:2021",
+    "CryptographicDomain"
   ],
   "ontology": {
     "term_id": "BC-0044",
