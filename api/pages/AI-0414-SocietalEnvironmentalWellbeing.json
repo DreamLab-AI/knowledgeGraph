@@ -26,13 +26,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Green AI",
-    "AIEthicsDomain",
-    "UN SDGs",
     "ArtificialIntelligenceTechnology",
-    "ConceptualLayer",
     "IEA Data Center Report",
-    "EU AI Act"
+    "EU AI Act",
+    "Green AI",
+    "UN SDGs",
+    "AIEthicsDomain",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "AI-0414",

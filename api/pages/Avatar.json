@@ -36,17 +36,17 @@
   ],
   "wiki_links": [
     "ArtificialIntelligence",
-    "Animation Rig",
-    "Social Presence",
-    "InteractionDomain",
-    "ACM + Web3D HAnim",
-    "Metaverse",
     "UserExperienceLayer",
-    "3D Rendering Engine",
-    "Machine Learning",
-    "Computer Vision",
     "Visual Mesh",
-    "User Embodiment"
+    "Computer Vision",
+    "User Embodiment",
+    "Machine Learning",
+    "Social Presence",
+    "ACM + Web3D HAnim",
+    "3D Rendering Engine",
+    "Animation Rig",
+    "InteractionDomain",
+    "Metaverse"
   ],
   "ontology": {
     "term_id": "20067",

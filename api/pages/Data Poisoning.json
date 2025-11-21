@@ -19,12 +19,12 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Biggio et al. 2012 SVM Poisoning",
     "Chen et al. 2017 Backdoor Attacks",
+    "AISecurity",
     "UK NCSC AI Security Guidance",
     "ISO/IEC 23894 Risk Management",
-    "NIST AI RMF Security",
-    "AISecurity"
+    "Biggio et al. 2012 SVM Poisoning",
+    "NIST AI RMF Security"
   ],
   "ontology": {
     "term_id": "AI-0085",

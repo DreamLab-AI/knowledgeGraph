@@ -30,19 +30,19 @@
     "ETSI_Domain_AI"
   ],
   "wiki_links": [
-    "ETSI GS MEC",
-    "ETSI Domain AI",
     "ArtificialIntelligence",
-    "ComputationAndIntelligenceDomain",
-    "Predictive Analytics",
-    "InfrastructureDomain",
-    "AI Data Processing",
     "Machine Learning Pipeline",
     "Intelligent Analytics Categorization",
-    "ETSI_Domain_AI",
-    "ML Pipeline Classification",
+    "InfrastructureDomain",
     "ETSI Domain Taxonomy",
-    "ApplicationLayer"
+    "ETSI Domain AI",
+    "ETSI GS MEC",
+    "AI Data Processing",
+    "Predictive Analytics",
+    "ApplicationLayer",
+    "ML Pipeline Classification",
+    "ComputationAndIntelligenceDomain",
+    "ETSI_Domain_AI"
   ],
   "ontology": {
     "term_id": "20332",

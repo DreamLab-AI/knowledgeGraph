@@ -26,13 +26,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "PrivacyImpactAssessmentPia",
-    "AIGovernance",
-    "AIEthicsDomain",
-    "Cavoukian (2009)",
-    "ConceptualLayer",
     "ISO 29100",
-    "GDPR Article 25"
+    "Cavoukian (2009)",
+    "AIEthicsDomain",
+    "ConceptualLayer",
+    "AIGovernance",
+    "GDPR Article 25",
+    "PrivacyImpactAssessmentPia"
   ],
   "ontology": {
     "term_id": "AI-0428",

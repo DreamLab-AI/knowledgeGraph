@@ -30,10 +30,10 @@
     "Identification System"
   ],
   "wiki_links": [
-    "Property",
-    "IdentificationSystem",
     "DisruptiveTechnology",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "IdentificationSystem",
+    "Property"
   ],
   "ontology": {
     "term_id": "AI-0831",
