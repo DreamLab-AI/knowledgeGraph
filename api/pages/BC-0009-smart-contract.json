@@ -29,16 +29,16 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "NIST NISTIR",
-    "Marketplace",
-    "DigitalAvatar",
-    "IEEE 2418.1",
-    "Blockchain Entity",
-    "DistributedDataStructure",
-    "Bias Detection Methods",
-    "ConceptualLayer",
     "BlockchainDomain",
-    "ISO/IEC 23257:2021"
+    "DistributedDataStructure",
+    "DigitalAvatar",
+    "ISO/IEC 23257:2021",
+    "Marketplace",
+    "NIST NISTIR",
+    "ConceptualLayer",
+    "Bias Detection Methods",
+    "IEEE 2418.1",
+    "Blockchain Entity"
   ],
   "ontology": {
     "term_id": "BC-0009",

@@ -21,11 +21,11 @@
     "Loss Function"
   ],
   "wiki_links": [
-    "Chen et al. 2020 SimCLR",
     "MachineLearning",
     "Radford et al. 2021 CLIP",
     "Gao et al. 2021 SimCSE",
-    "He et al. 2020 MoCo"
+    "He et al. 2020 MoCo",
+    "Chen et al. 2020 SimCLR"
   ],
   "ontology": {
     "term_id": "AI-0283",

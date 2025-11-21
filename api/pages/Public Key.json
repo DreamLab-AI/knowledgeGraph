@@ -31,12 +31,12 @@
     "Runes and Glyphs"
   ],
   "wiki_links": [
-    "BlockchainEntity",
-    "NIST NISTIR",
-    "IEEE 2418.1",
     "BlockchainTechnology",
+    "BlockchainEntity",
+    "ISO/IEC 23257:2021",
     "CryptographicDomain",
-    "ISO/IEC 23257:2021"
+    "NIST NISTIR",
+    "IEEE 2418.1"
   ],
   "ontology": {
     "term_id": "BC-0037",

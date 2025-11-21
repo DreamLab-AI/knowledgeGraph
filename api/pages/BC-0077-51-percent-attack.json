@@ -26,12 +26,12 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "NIST NISTIR",
-    "IEEE 2418.1",
     "Networkcomponent",
-    "CryptographicDomain",
     "Blockchain",
-    "ISO/IEC 23257:2021"
+    "ISO/IEC 23257:2021",
+    "CryptographicDomain",
+    "NIST NISTIR",
+    "IEEE 2418.1"
   ],
   "ontology": {
     "term_id": "BC-0077",

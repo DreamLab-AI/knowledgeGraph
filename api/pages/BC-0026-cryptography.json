@@ -27,13 +27,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "InformationProtection",
-    "Security Technology",
-    "SecurityTechnology",
-    "MathematicalScience",
-    "CryptographicDomain",
     "ISO/IEC 18033",
+    "MathematicalScience",
     "NIST SP",
+    "CryptographicDomain",
+    "Security Technology",
+    "InformationProtection",
+    "SecurityTechnology",
     "NIST FIPS",
     "DistributedLedgerTechnologyDlt"
   ],

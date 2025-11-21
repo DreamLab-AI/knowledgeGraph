@@ -30,10 +30,10 @@
   ],
   "wiki_links": [
     "Transaction Fee Economics",
-    "Mechanism Design Theory",
-    "Blockchain",
     "BlockchainDomain",
-    "Tokenomics Research"
+    "Blockchain",
+    "Tokenomics Research",
+    "Mechanism Design Theory"
   ],
   "ontology": {
     "term_id": "PC-0005",

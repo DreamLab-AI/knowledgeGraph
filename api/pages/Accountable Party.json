@@ -28,12 +28,12 @@
   ],
   "wiki_links": [
     "ISO/IEC 42001",
-    "EU AI Act",
     "AIEthicsDomain",
-    "Algorithmic Accountability Principles",
-    "OECD AI Principles",
     "IEEE 7000 Model Process",
-    "Metaverse"
+    "EU AI Act",
+    "Metaverse",
+    "Algorithmic Accountability Principles",
+    "OECD AI Principles"
   ],
   "ontology": {
     "term_id": "PC-0015",

@@ -25,10 +25,10 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "AIEthicsDomain",
     "ModelCompression",
-    "TensorFlow Lite Quantization",
     "TensorRT",
+    "AIEthicsDomain",
+    "TensorFlow Lite Quantization",
     "ConceptualLayer",
     "ONNX Runtime"
   ],

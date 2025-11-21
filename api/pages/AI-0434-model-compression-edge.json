@@ -25,9 +25,9 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "AIEthicsDomain",
     "TensorFlow Model Optimization",
     "EdgeAISystem",
+    "AIEthicsDomain",
     "PyTorch Mobile",
     "ConceptualLayer",
     "ONNX Runtime"
