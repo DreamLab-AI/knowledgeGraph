@@ -26,11 +26,11 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "Mining Pool",
-    "BlockchainEntity",
     "ConsensusDomain",
+    "Mining Pool",
     "ISO/IEC 23257:2021",
     "NIST NISTIR",
+    "BlockchainEntity",
     "IEEE 2418.1"
   ],
   "ontology": {

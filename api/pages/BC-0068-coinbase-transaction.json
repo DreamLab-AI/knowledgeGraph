@@ -26,11 +26,11 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "BlockchainEntity",
     "ConsensusDomain",
     "ISO/IEC 23257:2021",
     "NIST NISTIR",
     "Transaction",
+    "BlockchainEntity",
     "IEEE 2418.1"
   ],
   "ontology": {

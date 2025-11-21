@@ -28,12 +28,12 @@
   "backlinks": [],
   "wiki_links": [
     "Networkcomponent",
-    "Blockchain Network",
-    "BlockchainEntity",
-    "VoiceInteraction",
-    "ISO/IEC 23257:2021",
     "CryptographicDomain",
+    "ISO/IEC 23257:2021",
     "NIST NISTIR",
+    "Blockchain Network",
+    "VoiceInteraction",
+    "BlockchainEntity",
     "IEEE 2418.1"
   ],
   "ontology": {

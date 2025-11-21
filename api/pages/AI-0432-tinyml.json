@@ -25,11 +25,11 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "MLPerf Tiny",
-    "TinyML Foundation",
-    "EdgeAISystem",
     "AIEthicsDomain",
+    "EdgeAISystem",
+    "TinyML Foundation",
     "ConceptualLayer",
+    "MLPerf Tiny",
     "TensorFlow Lite Micro"
   ],
   "ontology": {

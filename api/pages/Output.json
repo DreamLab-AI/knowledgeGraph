@@ -31,12 +31,12 @@
     "Blockchain Entity"
   ],
   "wiki_links": [
-    "BlockchainTechnology",
     "BlockchainDomain",
-    "BlockchainEntity",
     "Distributeddatastructure",
     "ISO/IEC 23257:2021",
     "NIST NISTIR",
+    "BlockchainEntity",
+    "BlockchainTechnology",
     "IEEE 2418.1"
   ],
   "ontology": {

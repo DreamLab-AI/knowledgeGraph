@@ -26,13 +26,13 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "BlockchainDomain",
+    "Record-Keeping System",
     "ITU-T Y.4560",
+    "BlockchainDomain",
     "Distributed System",
     "ISO/IEC 23257:2021",
-    "Record-Keeping System",
-    "ConceptualLayer",
-    "Data Structure"
+    "Data Structure",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "BC-0002",

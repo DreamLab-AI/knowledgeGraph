@@ -25,10 +25,10 @@
     "RB-0005-industrial-robot"
   ],
   "wiki_links": [
-    "MetaverseDomain",
-    "ArtificialIntelligence",
     "Computer Vision",
-    "Machine Learning"
+    "Machine Learning",
+    "ArtificialIntelligence",
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "MV-0046",

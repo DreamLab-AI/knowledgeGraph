@@ -28,12 +28,12 @@
   "backlinks": [],
   "wiki_links": [
     "Networkcomponent",
-    "BlockchainEntity",
-    "SceneGraph",
+    "CryptographicDomain",
     "Node",
     "ISO/IEC 23257:2021",
-    "CryptographicDomain",
     "NIST NISTIR",
+    "SceneGraph",
+    "BlockchainEntity",
     "IEEE 2418.1"
   ],
   "ontology": {
