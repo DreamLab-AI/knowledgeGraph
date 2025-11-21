@@ -29,20 +29,20 @@
     "ETSI_Domain_AI"
   ],
   "wiki_links": [
-    "ComputationAndIntelligenceDomain",
-    "ETSI GS MEC",
-    "AI Ethics Classification",
-    "Explainable AI",
-    "Bias Detection",
-    "ETSI Domain AI",
-    "AI Ethics Framework",
-    "Explainability Categorization",
-    "AIGovernance",
-    "ETSI_Domain_AI",
     "ApplicationLayer",
+    "AIGovernance",
+    "ETSI GS MEC",
+    "Explainability Categorization",
+    "ComputationAndIntelligenceDomain",
+    "ETSI Domain AI",
+    "Explainable AI",
+    "AI Ethics Framework",
+    "Bias Detection",
     "AI Compliance",
+    "ETSI_Domain_AI",
     "ETSI Domain Taxonomy",
-    "TrustAndGovernanceDomain"
+    "TrustAndGovernanceDomain",
+    "AI Ethics Classification"
   ],
   "ontology": {
     "term_id": "20333",

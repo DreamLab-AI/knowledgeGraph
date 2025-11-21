@@ -31,21 +31,21 @@
     "Bitcoin"
   ],
   "wiki_links": [
-    "BlockchainDomain",
-    "AI-GroundedDomain",
-    "ISO/IEC 23257:2021",
-    "EconomicSystemDomain",
-    "Transaction",
-    "SmartContract",
-    "Bitcoin",
-    "W3C Web Payments",
-    "Token",
-    "DigitalCurrency",
     "BarterSystem",
-    "BIS Innovation Hub",
     "Metaverse",
+    "Bitcoin",
+    "SmartContract",
+    "EconomicSystemDomain",
+    "W3C Web Payments",
+    "DigitalCurrency",
+    "BlockchainDomain",
     "RoboticsDomain",
-    "MetaverseDomain"
+    "Token",
+    "Transaction",
+    "BIS Innovation Hub",
+    "MetaverseDomain",
+    "AI-GroundedDomain",
+    "ISO/IEC 23257:2021"
   ],
   "ontology": {
     "term_id": "DT-0001",

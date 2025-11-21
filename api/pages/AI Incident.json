@@ -21,9 +21,9 @@
   "wiki_links": [
     "IEEE P2863",
     "OECD AI Incidents Monitor",
-    "AI Incident Database",
     "AIRisk",
-    "EU AI Act Article 73"
+    "EU AI Act Article 73",
+    "AI Incident Database"
   ],
   "ontology": {
     "term_id": "AI-0082",

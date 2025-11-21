@@ -25,12 +25,12 @@
   },
   "backlinks": [],
   "wiki_links": [
-    "AIEthicsDomain",
-    "EdgeAISystem",
-    "ConceptualLayer",
+    "PyTorch Mobile",
     "TensorFlow Model Optimization",
+    "AIEthicsDomain",
     "ONNX Runtime",
-    "PyTorch Mobile"
+    "EdgeAISystem",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "AI-0434",
