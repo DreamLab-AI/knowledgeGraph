@@ -10,18 +10,18 @@
     "Decentralized Identifiers"
   ],
   "wiki_links": [
-    "Metaverse",
-    "3D Rendering Engine",
-    "UserExperienceLayer",
-    "Visual Mesh",
     "Animation Rig",
-    "Computer Vision",
-    "ArtificialIntelligence",
-    "Social Presence",
-    "Machine Learning",
-    "ACM + Web3D HAnim",
     "User Embodiment",
-    "InteractionDomain"
+    "Social Presence",
+    "3D Rendering Engine",
+    "Metaverse",
+    "ACM + Web3D HAnim",
+    "UserExperienceLayer",
+    "InteractionDomain",
+    "Machine Learning",
+    "Visual Mesh",
+    "Computer Vision",
+    "ArtificialIntelligence"
   ],
   "ontology": {
     "term_id": "20067",

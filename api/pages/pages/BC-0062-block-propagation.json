@@ -6,9 +6,9 @@
   "wiki_links": [
     "Blockchain Network",
     "ConsensusDomain",
+    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
-    "NIST NISTIR",
-    "ISO/IEC 23257:2021"
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0062",

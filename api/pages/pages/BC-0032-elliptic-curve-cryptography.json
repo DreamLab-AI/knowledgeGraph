@@ -4,13 +4,13 @@
   "content": "- ### OntologyBlock\n  id:: elliptic-curve-cryptography-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0032\n    - preferred-term:: Elliptic Curve Cryptography\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: ECC-based public-key system within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:EllipticCurveCryptography\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### Relationships\n    id:: relationships\n    - is-subclass-of:: [[Public Key Cryptography]]\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-from:: [[ZeroKnowledgeProofZkp]] via requires\n\n  -",
   "backlinks": [],
   "wiki_links": [
-    "BlockchainEntity",
-    "ISO/IEC 23257:2021",
-    "ZeroKnowledgeProofZkp",
     "Public Key Cryptography",
+    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
+    "CryptographicDomain",
+    "BlockchainEntity",
     "NIST NISTIR",
-    "CryptographicDomain"
+    "ZeroKnowledgeProofZkp"
   ],
   "ontology": {
     "term_id": "BC-0032",

@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: ontology-llm-operations-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0878\n    - filename-history:: [\"AI-0878-ontology-llm-operations.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[ArtificialIntelligenceTechnology]]\n    - term-id:: AI-0878\n    - preferred-term:: Ontology in LLM Operations\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: The application of formal knowledge representation systems (OWL 2, SHACL, SPARQL) to provide schema-grounded layers that make retrieval, reasoning, outputs, and monitoring in large language model pipelines more deterministic, auditable, and controllable than text-only or pure vector-based approaches.\n    - maturity:: emerging\n    - source:: Industry analysis and W3C standards integration\n    - authority-score:: 0.88\n\n  - **Semantic Classification**\n    - owl:class:: ai:OntologyInLLMOperations\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    - supports some AiGovernance\n    - related-to some KnowledgeGraph\n    \n    - enables some ExplainableAi\n    - related-to some RetrievalAugmentedGenerationRag\n    - related-to some LargeLanguageModel\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[LargeLanguageModel]] via related-to\n    - bridges-to:: [[RetrievalAugmentedGenerationRag]] via related-to\n    - bridges-to:: [[KnowledgeRepresentation]] via is-subclass-of\n    - bridges-to:: [[KnowledgeGraph]] via related-to\n\n  -",
   "backlinks": [],
   "wiki_links": [
+    "RetrievalAugmentedGenerationRag",
     "ArtificialIntelligenceTechnology",
-    "Artificial Intelligence",
-    "KnowledgeGraph",
     "LargeLanguageModel",
     "KnowledgeRepresentation",
-    "RetrievalAugmentedGenerationRag"
+    "Artificial Intelligence",
+    "KnowledgeGraph"
   ],
   "ontology": {
     "term_id": "AI-0878",

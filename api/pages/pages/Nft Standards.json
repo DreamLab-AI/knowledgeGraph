@@ -4,10 +4,10 @@
   "content": "- ### OntologyBlock\n  id:: nftstandards-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0573\n    - filename-history:: [\"BC-0573-nftstandards.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0573\n    - preferred-term:: NFT Standards\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:NftStandards\n    - is-subclass-of:: [[Metaverse Infrastructure]]\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### CrossDomainBridges\n    - bridges-from:: [[DigitalRealEstate]] via depends-on\n    - bridges-from:: [[DigitalGoods]] via depends-on\n\n  - #### Relationships\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :NftStandards))\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :NftStandards \"NFT Standards\"@en)\n      ```\n\n- ## About NFT Standards\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [],
   "wiki_links": [
-    "DigitalRealEstate",
     "Blockchain",
     "DigitalGoods",
-    "Metaverse Infrastructure"
+    "Metaverse Infrastructure",
+    "DigitalRealEstate"
   ],
   "ontology": {
     "term_id": "BC-0573",

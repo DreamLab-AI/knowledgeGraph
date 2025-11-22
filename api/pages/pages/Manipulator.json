@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: manipulator-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: RB\n\n    - sequence-number:: 0003\n\n    - filename-history:: [\"RB-0003-manipulator.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[RoboticsTechnology]]\n    - term-id:: RB-0003\n    - preferred-term:: Manipulator\n    - source-domain:: robotics\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: A manipulator is a robot consisting of a series of segments, typically moving in a serial or parallel kinematic chain, with an end-effector for performing tasks.\n    - maturity:: mature\n    - source:: [[ISO 8373:2021]]\n    - authority-score:: 0.99\n\n  - **Semantic Classification**\n    - owl:class:: rb:Manipulator\n    - owl:physicality:: PhysicalEntity\n    - owl:role:: Object\n    - belongsToDomain:: [[Robotics]]\n    - owl:disjointWith:: [[LanguageModel]]\n\n  - #### OWL Restrictions\n    - hasKinematicChain some KinematicStructure\n    - is-part-of some RobotRb0001\n    - definesWorkspace some WorkspaceVolume\n    - hasEndEffector some EndEffector\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[WorkspaceVolume]] via definesWorkspace\n    - bridges-to:: [[KinematicStructure]] via hasKinematicChain\n\n  -",
   "backlinks": [],
   "wiki_links": [
-    "Robotics",
-    "KinematicStructure",
     "LanguageModel",
-    "WorkspaceVolume",
+    "RoboticsTechnology",
     "ISO 8373:2021",
-    "RoboticsTechnology"
+    "WorkspaceVolume",
+    "KinematicStructure",
+    "Robotics"
   ],
   "ontology": {
     "term_id": "RB-0003",

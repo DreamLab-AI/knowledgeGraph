@@ -4,13 +4,13 @@
   "content": "- ### OntologyBlock\n  id:: block-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0003\n    - preferred-term:: Block\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Fundamental unit containing transactions within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 1.0\n\n  - **Semantic Classification**\n    - owl:class:: bc:Block\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[BlockchainDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### Relationships\n    id:: relationships\n    - is-subclass-of:: [[Blockchain]]\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Distributeddatastructure]] via is-subclass-of\n    - bridges-from:: [[Bitcoin]] via has-part\n\n  -",
   "backlinks": [],
   "wiki_links": [
-    "Distributeddatastructure",
     "BlockchainDomain",
-    "Blockchain",
-    "IEEE 2418.1",
     "Bitcoin",
+    "ISO/IEC 23257:2021",
+    "Distributeddatastructure",
+    "IEEE 2418.1",
     "NIST NISTIR",
-    "ISO/IEC 23257:2021"
+    "Blockchain"
   ],
   "ontology": {
     "term_id": "BC-0003",

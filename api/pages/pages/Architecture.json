@@ -4,9 +4,9 @@
   "content": "- ### OntologyBlock\n  id:: architecture-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0833\n    - filename-history:: [\"AI-0833-architecture.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[DisruptiveTechnology]]\n    - term-id:: AI-0833\n    - preferred-term:: Architecture\n    - source-domain:: artificial-intelligence\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:Architecture\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[ArtificialIntelligence]] via is-subclass-of\n\n  -",
   "backlinks": [],
   "wiki_links": [
+    "DisruptiveTechnology",
     "ArtificialIntelligence",
-    "Artificial Intelligence",
-    "DisruptiveTechnology"
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0833",

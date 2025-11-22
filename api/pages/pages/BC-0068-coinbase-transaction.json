@@ -5,11 +5,11 @@
   "backlinks": [],
   "wiki_links": [
     "ConsensusDomain",
-    "BlockchainEntity",
     "Transaction",
+    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
-    "NIST NISTIR",
-    "ISO/IEC 23257:2021"
+    "BlockchainEntity",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0068",

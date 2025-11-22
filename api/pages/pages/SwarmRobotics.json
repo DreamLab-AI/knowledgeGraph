@@ -5,9 +5,9 @@
   "backlinks": [],
   "wiki_links": [
     "RoboticsTechnology",
-    "ConsensusMechanism",
     "Machine Learning",
-    "RoboticsDomain"
+    "RoboticsDomain",
+    "ConsensusMechanism"
   ],
   "ontology": {
     "term_id": "RB-0107",

@@ -6,10 +6,10 @@
     "Loss Function"
   ],
   "wiki_links": [
-    "MachineLearning",
     "Radford et al. 2021 CLIP",
-    "Gao et al. 2021 SimCSE",
     "Chen et al. 2020 SimCLR",
+    "MachineLearning",
+    "Gao et al. 2021 SimCSE",
     "He et al. 2020 MoCo"
   ],
   "ontology": {

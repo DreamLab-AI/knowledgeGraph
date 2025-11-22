@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "AIEthicsDomain",
-    "TinyML Foundation",
-    "EdgeAISystem",
     "ConceptualLayer",
+    "TinyML Foundation",
     "TensorFlow Lite Micro",
+    "EdgeAISystem",
     "MLPerf Tiny"
   ],
   "ontology": {

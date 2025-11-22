@@ -6,10 +6,10 @@
   "wiki_links": [
     "Consensus Mechanism",
     "ConsensusDomain",
-    "BlockchainEntity",
+    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
-    "NIST NISTIR",
-    "ISO/IEC 23257:2021"
+    "BlockchainEntity",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0061",

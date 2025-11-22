@@ -7,11 +7,11 @@
     "Blockchain Entity"
   ],
   "wiki_links": [
+    "BlockchainDomain",
     "Byzantine Fault Tolerance Papers",
     "Distributed Systems: Principles and Paradigms",
-    "BlockchainDomain",
-    "CAP Theorem",
-    "Metaverse Infrastructure"
+    "Metaverse Infrastructure",
+    "CAP Theorem"
   ],
   "ontology": {
     "term_id": "PC-0002",

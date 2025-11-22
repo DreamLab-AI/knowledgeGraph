@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: pool-share-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0066\n    - preferred-term:: Pool Share\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Mining contribution unit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:PoolShare\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[ConsensusDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### Relationships\n    id:: relationships\n    - is-subclass-of:: [[Mining Pool]]\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  -",
   "backlinks": [],
   "wiki_links": [
-    "ConsensusDomain",
-    "BlockchainEntity",
     "Mining Pool",
+    "ConsensusDomain",
+    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
-    "NIST NISTIR",
-    "ISO/IEC 23257:2021"
+    "BlockchainEntity",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0066",
