@@ -1,0 +1,60 @@
+{
+  "id": "AI-0422-synthetic-data-generation",
+  "title": "0422 Synthetic Data Generation",
+  "content": "- ### OntologyBlock\n  id:: 0422-synthetic-data-generation-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0422\n    - preferred-term:: 0422 Synthetic Data Generation\n    - source-domain:: ai-grounded\n    - status:: in-progress\n    - version:: 1.0\n    - last-updated:: 2025-10-29\n\n  - **Definition**\n    - definition:: \n    - maturity:: mature\n    - source:: \n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: aigo:SyntheticDataGeneration\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Process\n    - owl:inferred-class:: aigo:VirtualProcess\n    - belongsToDomain:: [[AIEthicsDomain]]\n    - implementedInLayer:: [[ConceptualLayer]]\n\n  - #### Relationships\n    id:: 0422-synthetic-data-generation-relationships\n\n  - #### OWL Axioms\n    id:: 0422-synthetic-data-generation-owl-axioms\n    collapsed:: true\n    - ```clojure\n      (Declaration (Class :SyntheticDataGeneration))\n(SubClassOf :SyntheticDataGeneration :PrivacyPreservingTechnique)\n\n;; Core Relationships\n(SubClassOf :SyntheticDataGeneration\n  (ObjectSomeValuesFrom :generates :SyntheticDataset))\n(SubClassOf :SyntheticDataGeneration\n  (ObjectSomeValuesFrom :preserves :StatisticalProperties))\n(SubClassOf :SyntheticDataGeneration\n  (ObjectSomeValuesFrom :protects :IndividualPrivacy))\n(SubClassOf :SyntheticDataGeneration\n  (ObjectSomeValuesFrom :learns :DataDistribution))\n(SubClassOf :SyntheticDataGeneration\n  (ObjectSomeValuesFrom :eliminates :PersonalIdentifiers))\n(SubClassOf :SyntheticDataGeneration\n  (ObjectSomeValuesFrom :maintains :DataUtility))\n(SubClassOf :SyntheticDataGeneration\n  (ObjectSomeValuesFrom :enables :DataSharing))\n(SubClassOf :SyntheticDataGeneration\n  (ObjectSomeValuesFrom :prevents :ReidentificationRisk))\n\n;; Generation Methods\n(SubClassOf :SyntheticDataGeneration\n  (ObjectSomeValuesFrom :employs\n    (ObjectUnionOf :GenerativeAdversarialNetwork\n                   :VariationalAutoencoder\n                   :StatisticalSampling\n                   :BayesianNetworks)))\n\n;; Privacy Guarantees\n(SubClassOf :SyntheticDataGeneration\n  (ObjectSomeValuesFrom :provides\n    (ObjectIntersectionOf :DifferentialPrivacy\n                         :kAnonymity\n                         :PlausibleDeniability)))\n\n;; Quality Metrics\n(SubClassOf :SyntheticDataGeneration\n  (ObjectSomeValuesFrom :measures\n    (ObjectUnionOf :FidelityMetric\n                   :UtilityMetric\n                   :PrivacyMetric\n                   :DiversityMetric)))\n\n;; Data Properties\n(SubClassOf :SyntheticDataGeneration\n  (DataHasValue :privacyLevel\n    (DatatypeRestriction xsd:float (MinInclusive \"0.0\") (MaxInclusive \"1.0\"))))\n(SubClassOf :SyntheticDataGeneration\n  (DataHasValue :fidelityScore\n    (DatatypeRestriction xsd:float (MinInclusive \"0.0\") (MaxInclusive \"1.0\"))))\n(SubClassOf :SyntheticDataGeneration\n  (DataHasValue :generationMethod xsd:string))\n(SubClassOf :SyntheticDataGeneration\n  (DataHasValue :reidentificationRisk\n    (DatatypeRestriction xsd:float (MinInclusive \"0.0\") (MaxInclusive \"1.0\"))))\n\n;; Regulatory Compliance\n(SubClassOf :SyntheticDataGeneration\n  (ObjectSomeValuesFrom :compliesWith\n    (ObjectUnionOf :GDPR_Article25 ;; Privacy by Design\n                   :GDPR_Article5_1c ;; Data Minimisation\n                   :ISO27701\n                   :NISTPrivacyFramework)))\n\n;; Use Cases\n(SubClassOf :SyntheticDataGeneration\n  (ObjectSomeValuesFrom :supports\n    (ObjectUnionOf :ResearchDataSharing\n                   :ModelTraining\n                   :TestDataCreation\n                   :PublicDatasets)))\n      ```\n\n- ## About 0422 Synthetic Data Generation\n  id:: 0422-synthetic-data-generation-about\n\n  - \n  -\n  \n\n\n\n### Relationships\n- is-subclass-of:: [[MachineLearning]]\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "ConceptualLayer",
+    "MachineLearning",
+    "AIEthicsDomain"
+  ],
+  "ontology": {
+    "term_id": "AI-0422",
+    "preferred_term": "0422 Synthetic Data Generation",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "ai-grounded",
+    "domain": "ai-grounded",
+    "domain_full_name": "",
+    "definition": "- maturity:: mature",
+    "scope_note": null,
+    "status": "in-progress",
+    "maturity": "mature",
+    "version": "1.0",
+    "public_access": true,
+    "last_updated": "2025-10-29",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "aigo:SyntheticDataGeneration",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Process",
+    "owl_inferred_class": "aigo:VirtualProcess",
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "AIEthicsDomain"
+    ],
+    "implemented_in_layer": [
+      "ConceptualLayer"
+    ],
+    "source": [
+      "- authority-score:: 0.95"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'aigo' doesn't match source-domain 'ai-grounded'"
+      ]
+    }
+  }
+}

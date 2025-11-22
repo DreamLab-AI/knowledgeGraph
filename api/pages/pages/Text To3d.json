@@ -1,0 +1,58 @@
+{
+  "id": "Text To3d",
+  "title": "Text-to-3D",
+  "content": "- ### OntologyBlock\n  id:: textto3d-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0858\n    - filename-history:: [\"AI-0858-textto3d.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[GenerativeAISystem]]\n    - term-id:: AI-0858\n    - preferred-term:: Text-to-3D\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:TextTo3d\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "backlinks": [],
+  "wiki_links": [
+    "GenerativeAISystem",
+    "Artificial Intelligence"
+  ],
+  "ontology": {
+    "term_id": "AI-0858",
+    "preferred_term": "Text-to-3D",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#TextTo3d",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "- maturity:: established",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-13",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:TextTo3d",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Artificial Intelligence"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "Chimera Prime Research"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

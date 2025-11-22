@@ -1,0 +1,68 @@
+{
+  "id": "Redress Procedure",
+  "title": "Redress Procedure",
+  "content": "- ### OntologyBlock\n  id:: redress-procedure-ontology\n  collapsed:: true\n\n  - **Identification**\n    - ontology:: true\n    - is-subclass-of:: [[ArtificialIntelligenceTechnology]]\n    - term-id:: PC-0014\n    - preferred-term:: Redress Procedure\n    - source-domain:: ai-grounded\n    - status:: complete\n    - public-access:: true\n    - version:: 1.0.0\n    - last-updated:: 2025-11-08\n\n  - **Definition**\n    - definition:: A Redress Procedure is a formalized mechanism enabling individuals or groups adversely affected by AI system decisions to challenge those decisions, seek explanations, request human review, and obtain remedies including correction, compensation, or policy changes. Redress procedures address a fundamental accountability requirement: when AI systems make consequential decisions affecting employment, credit, housing, criminal justice, or other significant life opportunities, affected individuals must have meaningful avenues to contest erroneous or unfair outcomes. These procedures encompass complaint submission mechanisms (accessible interfaces for lodging grievances), investigation processes (systematic review of contested decisions), human oversight interventions (qualified personnel examining AI outputs and overriding when appropriate), explanation provision (meaningful information about decision factors), and remedy implementation (corrective actions ranging from decision reversal to compensation for damages). Effective redress requires balancing competing concerns: accessibility (procedures must be understandable and available to all affected parties including those with limited technical or legal sophistication), timeliness (redress must occur rapidly enough to prevent irreversible harm), thoroughness (investigations must genuinely examine AI decision-making rather than rubber-stamping outputs), and cost-effectiveness (procedures must scale to handle potentially thousands of challenges without imposing unsustainable burdens).\n    - maturity:: mature\n    - source:: [[GDPR Article 22]], [[EU AI Act]], [[ISO/IEC 42001]], [[OECD AI Principles]], [[Algorithmic Accountability Act]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: aigo:RedressProcedure\n    - owl:physicality:: ConceptualEntity\n    - owl:role:: Concept\n    - owl:inferred-class:: ConceptualConcept\n    - belongsToDomain:: [[AIEthicsDomain]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "backlinks": [
+    "AI Governance Principle"
+  ],
+  "wiki_links": [
+    "OECD AI Principles",
+    "AIEthicsDomain",
+    "GDPR Article 22",
+    "Algorithmic Accountability Act",
+    "EU AI Act",
+    "ArtificialIntelligenceTechnology",
+    "ISO/IEC 42001"
+  ],
+  "ontology": {
+    "term_id": "PC-0014",
+    "preferred_term": "Redress Procedure",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "ai-grounded",
+    "domain": "ai-grounded",
+    "domain_full_name": "",
+    "definition": "A Redress Procedure is a formalized mechanism enabling individuals or groups adversely affected by AI system decisions to challenge those decisions, seek explanations, request human review, and obtain remedies including correction, compensation, or policy changes. Redress procedures address a fundamental accountability requirement: when AI systems make consequential decisions affecting employment, credit, housing, criminal justice, or other significant life opportunities, affected individuals must have meaningful avenues to contest erroneous or unfair outcomes. These procedures encompass complaint submission mechanisms (accessible interfaces for lodging grievances), investigation processes (systematic review of contested decisions), human oversight interventions (qualified personnel examining AI outputs and overriding when appropriate), explanation provision (meaningful information about decision factors), and remedy implementation (corrective actions ranging from decision reversal to compensation for damages). Effective redress requires balancing competing concerns: accessibility (procedures must be understandable and available to all affected parties including those with limited technical or legal sophistication), timeliness (redress must occur rapidly enough to prevent irreversible harm), thoroughness (investigations must genuinely examine AI decision-making rather than rubber-stamping outputs), and cost-effectiveness (procedures must scale to handle potentially thousands of challenges without imposing unsustainable burdens).",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-08",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "aigo:RedressProcedure",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": "ConceptualConcept",
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "AIEthicsDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "GDPR Article 22",
+      "EU AI Act",
+      "ISO/IEC 42001",
+      "OECD AI Principles",
+      "Algorithmic Accountability Act"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'aigo' doesn't match source-domain 'ai-grounded'"
+      ]
+    }
+  }
+}

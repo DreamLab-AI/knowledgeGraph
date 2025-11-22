@@ -1,0 +1,81 @@
+{
+  "id": "Money",
+  "title": "Money",
+  "content": "- ### OntologyBlock\n\n  - **Identification**\n    - ontology:: true\n    - is-subclass-of:: [[DisruptiveTechnology]]\n    - term-id:: DT-0002\n    - preferred-term:: Money\n    - source-domain:: cross-domain\n    - status:: complete\n    - public-access:: true\n    - version:: 1.0.0\n    - last-updated:: 2025-11-05\n\n  - **Definition**\n    - definition:: A medium of exchange, unit of account, and store of value accepted within an economic system, encompassing physical currency, digital money, and virtual currency forms.\n    - maturity:: mature\n    - source:: [[BIS]], [[IMF]], [[ISO 4217]], [[Bank of England]]\n    - authority-score:: 1.0\n\n  - **Semantic Classification**\n    - owl:class:: dt:Money\n    - owl:physicality:: HybridEntity\n    - owl:role:: Object\n    - owl:inferred-class:: dt:HybridObject\n    - belongsToDomain:: [[EconomicSystemDomain]]\n    - owl:disjointWith:: [[NeuralNetwork]], [[BlockchainDomain]], [[MetaverseDomain]]\n\n  - #### OWL Restrictions\n    - has-part some FiatCurrency\n    - has-part some DigitalMoney\n    - implemented-by some Stablecoin\n    - has-part some CentralBankDigitalCurrency\n    - requires some Trust\n    - is-part-of some ValueTransfer\n    - implemented-by some Cash\n    - enables some PriceDiscovery\n    - requires some AcceptanceNetwork\n    - implemented-by some ElectronicMoney\n    - enables some Savings\n    - enables some EconomicExchange\n    - has-part some Cryptocurrency\n    - requires some IssuingAuthority\n    - has-part some VirtualCurrency\n    - implemented-by some BankDeposit\n    - enables some Debt\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[CentralBankDigitalCurrency]] via has-part\n    - bridges-to:: [[DigitalMoney]] via has-part\n    - bridges-to:: [[AcceptanceNetwork]] via requires\n    - bridges-to:: [[Cryptocurrency]] via has-part\n    - bridges-to:: [[VirtualCurrency]] via has-part\n\n  -",
+  "backlinks": [
+    "Social Impact Assessment (SIA)",
+    "Bitcoin"
+  ],
+  "wiki_links": [
+    "DigitalMoney",
+    "VirtualCurrency",
+    "ISO 4217",
+    "BIS",
+    "IMF",
+    "Cryptocurrency",
+    "BlockchainDomain",
+    "Bank of England",
+    "EconomicSystemDomain",
+    "AcceptanceNetwork",
+    "CentralBankDigitalCurrency",
+    "DisruptiveTechnology",
+    "NeuralNetwork",
+    "MetaverseDomain"
+  ],
+  "ontology": {
+    "term_id": "DT-0002",
+    "preferred_term": "Money",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/disruptive-tech#Money",
+    "source_domain": "cross-domain",
+    "domain": "cross-domain",
+    "domain_full_name": "",
+    "definition": "A medium of exchange, unit of account, and store of value accepted within an economic system, encompassing physical currency, digital money, and virtual currency forms.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-05",
+    "authority_score": 1.0,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "dt:Money",
+    "owl_physicality": "HybridEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "dt:HybridObject",
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "CentralBankDigitalCurrency via has",
+      "DigitalMoney via has",
+      "AcceptanceNetwork via requires",
+      "Cryptocurrency via has",
+      "VirtualCurrency via has"
+    ],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "EconomicSystemDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "BIS",
+      "IMF",
+      "ISO 4217",
+      "Bank of England"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'dt' doesn't match source-domain 'cross-domain'"
+      ]
+    }
+  }
+}

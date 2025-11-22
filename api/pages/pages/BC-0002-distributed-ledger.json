@@ -1,0 +1,68 @@
+{
+  "id": "BC-0002-distributed-ledger",
+  "title": "Distributed Ledger",
+  "content": "- ### OntologyBlock\n  id:: distributed-ledger-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0002\n    - preferred-term:: Distributed Ledger\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: A distributed ledger is a database architecture where multiple identical copies of a ledger are maintained across different nodes in a network, with updates replicated and synchronized through a consensus mechanism, eliminating the need for a central authority to prevent manipulation and maintain data integrity.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[ITU-T Y.4560]]\n    - authority-score:: 1.0\n\n  - **Semantic Classification**\n    - owl:class:: bc:DistributedLedger\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[BlockchainDomain]]\n    - implementedInLayer:: [[ConceptualLayer]]\n\n  - #### Relationships\n    id:: distributed-ledger-relationships\n    - is-subclass-of:: [[Data Structure]], [[Distributed System]], [[Record-Keeping System]]\n\n  - #### OWL Axioms\n    id:: distributed-ledger-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0002>\n\n  ## Class Declaration\n  Declaration(Class(:DistributedLedger))\n\n  ## Subclass Relationships\n  SubClassOf(:DistributedLedger :DataStructure)\n  SubClassOf(:DistributedLedger :DistributedSystem)\n  SubClassOf(:DistributedLedger :RecordKeepingSystem)\n\n  ## Essential Properties\n  SubClassOf(:DistributedLedger\n    (ObjectMinCardinality 2 :maintainedBy :Node))\n\n  SubClassOf(:DistributedLedger\n    (ObjectExactCardinality 1 :usesConsensus :ConsensusMechanism))\n\n  SubClassOf(:DistributedLedger\n    (ObjectMinCardinality 1 :recordsTransaction :Transaction))\n\n  SubClassOf(:DistributedLedger\n    (ObjectExactCardinality 1 :hasSynchronization :SynchronizationMechanism))\n\n  SubClassOf(:DistributedLedger\n    (DataHasValue :isDistributed \"true\"^^xsd:boolean))\n\n  SubClassOf(:DistributedLedger\n    (DataHasValue :hasReplication \"true\"^^xsd:boolean))\n\n  ## Data Properties\n  DataPropertyAssertion(:numberOfReplicas :DistributedLedger xsd:positiveInteger)\n  DataPropertyAssertion(:consistencyModel :DistributedLedger xsd:string)\n  DataPropertyAssertion(:replicationFactor :DistributedLedger xsd:decimal)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:replicatedAcross :DistributedLedger :Node)\n  ObjectPropertyAssertion(:synchronizedBy :DistributedLedger :ConsensusMechanism)\n  ObjectPropertyAssertion(:contains :DistributedLedger :LedgerEntry)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :DistributedLedger \"Distributed Ledger\"@en)\n  AnnotationAssertion(rdfs:comment :DistributedLedger\n    \"Database replicated and synchronized across multiple network nodes\"@en)\n  AnnotationAssertion(:termID :DistributedLedger \"BC-0002\")\n\n  ## Axioms\n  SubClassOf(:Blockchain :DistributedLedger)\n  SubClassOf(:DirectedAcyclicGraph :DistributedLedger)\n)\n      ```",
+  "backlinks": [],
+  "wiki_links": [
+    "ISO/IEC 23257:2021",
+    "Distributed System",
+    "BlockchainDomain",
+    "ITU-T Y.4560",
+    "ConceptualLayer",
+    "Record-Keeping System",
+    "Data Structure"
+  ],
+  "ontology": {
+    "term_id": "BC-0002",
+    "preferred_term": "Distributed Ledger",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#DistributedLedger",
+    "source_domain": "blockchain",
+    "domain": "blockchain",
+    "domain_full_name": "",
+    "definition": "A distributed ledger is a database architecture where multiple identical copies of a ledger are maintained across different nodes in a network, with updates replicated and synchronized through a consensus mechanism, eliminating the need for a central authority to prevent manipulation and maintain data integrity.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-10-28",
+    "authority_score": 1.0,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:DistributedLedger",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "bc:VirtualObject",
+    "is_subclass_of": [
+      "Data Structure",
+      "Distributed System",
+      "Record-Keeping System"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [
+      "ConceptualLayer"
+    ],
+    "source": [
+      "ISO/IEC 23257:2021",
+      "ITU-T Y.4560"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+      ]
+    }
+  }
+}

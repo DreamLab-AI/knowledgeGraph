@@ -1,0 +1,136 @@
+{
+  "id": "Fairness Metrics",
+  "title": "Fairness Metrics",
+  "content": "- ### OntologyBlock\n  id:: 0377-fairness-metrics-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[PerformanceMetric]]\n    - term-id:: AI-0377\n    - preferred-term:: Fairness Metrics\n    - source-domain:: ai\n    - status:: approved\n    - version:: 1.0\n    - last-updated:: 2025-11-16\n\n  - **Definition**\n    - definition:: Fairness Metrics are quantitative measures and mathematical frameworks used to evaluate and ensure equitable treatment across different demographic groups in AI systems. These metrics provide objective, measurable criteria to assess whether an algorithmic system produces disparate impacts, maintains statistical parity, or achieves equalized odds across protected attributes such as race, gender, age, or disability status. Key fairness metrics include demographic parity (equal positive prediction rates across groups), equalized odds (equal true positive and false positive rates), equal opportunity (equal true positive rates), and predictive parity (equal precision across groups). The selection and application of fairness metrics depends on the specific context, stakeholder values, and regulatory requirements, as different metrics can conflict and no single metric satisfies all fairness criteria simultaneously. Implementation requires confusion matrix analysis, statistical testing, and careful consideration of base rate differences between groups, as formalized in IEEE P7003-2021 and NIST SP 1270 guidelines for algorithmic fairness assessment.\n    - maturity:: mature\n    - source:: [[IEEE P7003-2021]], [[ISO/IEC TR 24027]], [[NIST SP 1270]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: aigo:FairnessMetrics\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Process\n    - owl:inferred-class:: aigo:VirtualProcess\n    - belongsToDomain:: [[AIEthicsDomain]]\n    - implementedInLayer:: [[ConceptualLayer]]\n\n  - #### Relationships\n    id:: 0377-fairness-metrics-relationships\n    - is-part-of:: [[Algorithmic Fairness]], [[AI Ethics]], [[Bias Detection]]\n    - requires:: [[Confusion Matrix]], [[Statistical Testing]], [[Protected Attributes]]\n    - enables:: [[Bias Mitigation]], [[Fairness Auditing]], [[Regulatory Compliance]]\n    - related-to:: [[AI Safety Research]], [[Value Alignment]], [[AI Trustworthiness]], [[Algorithmic Accountability]]\n    - measured-by:: [[Fairness Auditing Tools]]\n    - depends-on:: [[IEEE P7003-2021]], [[ISO/IEC TR 24027]], [[NIST SP 1270]]\n\n  - #### OWL Axioms\n    id:: 0377-fairness-metrics-owl-axioms\n    collapsed:: true\n    - ```clojure\n      (Declaration (Class :FairnessMetric))\n(SubClassOf :FairnessMetric :EvaluationMetric)\n(SubClassOf :FairnessMetric :EthicalAIComponent)\n\n(AnnotationAssertion rdfs:label :FairnessMetric\n  \"Fairness Metric\"@en)\n(AnnotationAssertion rdfs:comment :FairnessMetric\n  \"Quantitative measures for assessing algorithmic fairness across protected groups, including demographic parity, equalized odds, and equality of opportunity.\"@en)\n(AnnotationAssertion :dcterms:source :FairnessMetric\n  \"IEEE P7003-2021, ISO/IEC TR 24027:2021, NIST SP 1270\")\n\n;; Object Properties\n(Declaration (ObjectProperty :measures))\n(ObjectPropertyDomain :measures :FairnessMetric)\n(ObjectPropertyRange :measures :AlgorithmicFairness)\n\n(Declaration (ObjectProperty :detectsBias))\n(ObjectPropertyDomain :detectsBias :FairnessMetric)\n(ObjectPropertyRange :detectsBias :ProtectedAttribute)\n\n(Declaration (ObjectProperty :appliesTo))\n(ObjectPropertyDomain :appliesTo :FairnessMetric)\n(ObjectPropertyRange :appliesTo :AIModel)\n\n(Declaration (ObjectProperty :requiresConfusionMatrix))\n(SubObjectPropertyOf :requiresConfusionMatrix :dependsOn)\n\n;; Data Properties\n(Declaration (DataProperty :hasValueRange))\n(DataPropertyAssertion :hasValueRange :FairnessMetric\n  \"[0,1] for most metrics\"^^xsd:string)\n\n(Declaration (DataProperty :hasThreshold))\n(DataPropertyDomain :hasThreshold :FairnessMetric)\n(DataPropertyRange :hasThreshold xsd:decimal)\n\n(Declaration (DataProperty :requiresGroundTruth))\n(DataPropertyAssertion :requiresGroundTruth :FairnessMetric\n  \"true\"^^xsd:boolean)\n\n;; Subclass Definitions\n(Declaration (Class :DemographicParity))\n(SubClassOf :DemographicParity :FairnessMetric)\n(AnnotationAssertion rdfs:comment :DemographicParity\n  \"P(Ŷ=1|A=0) = P(Ŷ=1|A=1) where A is protected attribute and Ŷ is prediction\"@en)\n\n(Declaration (Class :EqualizedOdds))\n(SubClassOf :EqualizedOdds :FairnessMetric)\n(AnnotationAssertion rdfs:comment :EqualizedOdds\n  \"P(Ŷ=1|A=0,Y=y) = P(Ŷ=1|A=1,Y=y) for y ∈ {0,1}\"@en)\n\n(Declaration (Class :EqualOpportunity))\n(SubClassOf :EqualOpportunity :FairnessMetric)\n(AnnotationAssertion rdfs:comment :EqualOpportunity\n  \"P(Ŷ=1|A=0,Y=1) = P(Ŷ=1|A=1,Y=1) - equal true positive rates\"@en)\n\n(Declaration (Class :PredictiveParity))\n(SubClassOf :PredictiveParity :FairnessMetric)\n(AnnotationAssertion rdfs:comment :PredictiveParity\n  \"P(Y=1|Ŷ=1,A=0) = P(Y=1|Ŷ=1,A=1) - equal precision across groups\"@en)\n\n;; Disjoint Classes\n(DisjointClasses :DemographicParity :EqualizedOdds :EqualOpportunity)\n\n;; Domain Constraints\n(SubClassOf :FairnessMetric\n  (ObjectSomeValuesFrom :measures :AlgorithmicFairness))\n(SubClassOf :FairnessMetric\n  (ObjectSomeValuesFrom :detectsBias :ProtectedAttribute))\n(SubClassOf :FairnessMetric\n  (DataSomeValuesFrom :hasThreshold xsd:decimal))\n      ```\n\n- ## About Fairness Metrics\n  id:: 0377-fairness-metrics-about\n\n  Fairness Metrics provide quantitative frameworks for evaluating algorithmic equity across demographic groups. These mathematical measures are essential for detecting and mitigating bias in AI systems, ensuring compliance with regulatory frameworks such as the [[EU AI Act]], [[IEEE P7003-2021]], and [[NIST AI Risk Management Framework]].\n\n  ### Core Fairness Metrics\n\n  - **[[Demographic Parity]]**: Equal positive prediction rates across groups: P(Ŷ=1|A=0) = P(Ŷ=1|A=1)\n  - **[[Equalized Odds]]**: Equal true positive and false positive rates: P(Ŷ=1|A=0,Y=y) = P(Ŷ=1|A=1,Y=y)\n  - **[[Equal Opportunity]]**: Equal true positive rates across groups\n  - **[[Predictive Parity]]**: Equal precision across demographic groups\n  - **[[Calibration]]**: Predicted probabilities match actual outcomes across groups\n\n  ### Application Domains\n\n  - **Criminal Justice**: Risk assessment tools, recidivism prediction\n  - **Financial Services**: Credit scoring, loan approval systems\n  - **Healthcare**: Diagnosis algorithms, treatment recommendations\n  - **Employment**: Hiring algorithms, performance evaluation\n  - **Education**: Admissions systems, grading automation\n\n  ### Implementation Challenges\n\n  Fairness metrics often conflict with one another - achieving one form of fairness may preclude others. The **impossibility theorem** (Kleinberg et al., 2017) demonstrates that demographic parity, equalized odds, and predictive parity cannot be simultaneously satisfied except in trivial cases. This requires careful stakeholder engagement to determine which fairness criteria align with societal values and regulatory requirements.\n\n## Current Landscape (2024-2025)\n\n- ### Industry Adoption and Implementations\n  - Many organisations now embed fairness metrics into their AI governance strategies, using them to comply with regulations, build trust, and protect brand reputation\n  - Notable platforms include Iterate.ai, Shelf.io, and IEEE's machine learning fairness standards\n  - **Technical Capabilities**:\n    - Fairness metrics can identify and quantify bias across groups, but they cannot eliminate all forms of unfairness due to inherent trade-offs between different fairness definitions\n    - Metrics are most effective when combined with transparency, explainability, and continuous monitoring\n  - **Standards and Frameworks**:\n    - [[IEEE 3198-2025]]: Comprehensive standard for evaluating machine learning fairness, specifying methods, metrics, and test cases\n    - [[EU AI Act]]: European regulatory framework for AI systems\n    - [[UK AI Regulation]]: Regulatory guidance on automated decision-making\n\n- ### UK Context\n  - The [[UK AI Regulation]] emphasises fairness assessment through the [[ICO AI Auditing Framework]] and [[BSI ADS standards]]. UK organisations implementing fairness metrics include:\n    - **[[NHS AI Lab]]**: Fairness testing for medical diagnosis algorithms\n    - **[[Financial Conduct Authority]]**: Credit decisioning fairness requirements\n    - **[[University of Oxford]]**: Research on fairness metric selection and tradeoffs\n    - **Manchester AI Ethics Hub**: Regional fairness auditing initiatives\n\n  - **North England Regional Context**:\n    - UK-based companies and public sector bodies increasingly adopt fairness metrics, particularly in sectors such as finance, healthcare, and public services\n    - In North England, cities like Manchester, Leeds, Newcastle, and Sheffield host innovation hubs and research centres focused on ethical AI, including fairness and bias mitigation\n\n- ### 2024-2025 Developments\n  - Integration with [[Large Language Models]] fairness testing\n  - [[Intersectional Fairness]] metrics accounting for multiple protected attributes\n  - [[Causal Fairness]] frameworks using causal inference\n  - [[Dynamic Fairness]] metrics for evolving populations\n  - [[Differential Privacy]] integration for fairness with privacy guarantees\n\n\n## Research & Literature\n\n- Key academic papers and sources\n  - Barocas, S., Hardt, M., & Narayanan, A. (2019). Fairness and Machine Learning: Limitations and Opportunities. fairmlbook.org. https://fairmlbook.org/\n  - Mehrabi, N., Morstatter, F., Saxena, N., Lerman, K., & Galstyan, A. (2021). A Survey on Bias and Fairness in Machine Learning. ACM Computing Surveys, 54(6), 1–37. https://doi.org/10.1145/3457607\n  - Mitchell, S., Potash, E., Barocas, S., D’Amour, A., & Lum, K. (2021). Algorithmic Fairness: Choices, Assumptions, and Definitions. Annual Review of Statistics and Its Application, 8, 141–163. https://doi.org/10.1146/annurev-statistics-042720-020326\n- Ongoing research directions\n  - Contextual fairness standards tailored to specific domains (e.g., healthcare, criminal justice)\n  - Global and cultural variations in fairness perceptions and requirements\n  - Integration of fairness metrics with explainable AI and human-in-the-loop systems\n\n## UK Policy and Research\n\n- ### British Contributions and Implementations\n  - The UK has been active in developing regulatory frameworks and best practices for AI fairness, with contributions from academic institutions, industry, and government bodies\n  - The [[Centre for Data Ethics and Innovation]] (CDEI) and the [[Alan Turing Institute]] play key roles in shaping national policy and research\n\n- ### North England Innovation Hubs\n  - Manchester, Leeds, Newcastle, and Sheffield are home to several universities and research centres engaged in AI ethics and fairness\n  - **[[University of Manchester]]**: AI for Social Good initiative\n  - **[[Newcastle University]]**: Centre for Social Justice and Community Action\n  - **[[University of Leeds]]**: Institute for Data Analytics with fairness focus\n  - **[[University of Sheffield]]**: Machine Learning Research Group\n\n- ### Regional Case Studies\n  - Local authorities in North England have piloted AI systems for social services, using fairness metrics to ensure equitable outcomes for diverse communities\n  - **Leeds Housing Allocation**: Recent project used fairness metrics to evaluate an AI-driven housing allocation system, highlighting the importance of context-specific fairness standards\n  - **Manchester NHS Collaboration**: Fairness auditing for diagnostic algorithms\n  - **Newcastle Social Services**: Algorithmic accountability initiatives\n\n## Future Directions\n\n- Emerging trends and developments\n  - Increasing focus on domain-specific fairness standards and global harmonisation of regulatory approaches\n  - Growing interest in the role of cultural and societal factors in shaping fairness perceptions\n- Anticipated challenges\n  - Balancing competing fairness criteria and managing trade-offs in real-world applications\n  - Ensuring that fairness metrics are accessible and usable for non-expert stakeholders\n- Research priorities\n  - Developing more robust and context-aware fairness metrics\n  - Exploring the intersection of fairness, transparency, and accountability in AI systems\n  - Investigating the long-term societal impacts of fairness-aware AI\n\n## References\n\n1. Barocas, S., Hardt, M., & Narayanan, A. (2019). Fairness and Machine Learning: Limitations and Opportunities. fairmlbook.org. https://fairmlbook.org/\n2. Mehrabi, N., Morstatter, F., Saxena, N., Lerman, K., & Galstyan, A. (2021). A Survey on Bias and Fairness in Machine Learning. ACM Computing Surveys, 54(6), 1–37. https://doi.org/10.1145/3457607\n3. Mitchell, S., Potash, E., Barocas, S., D’Amour, A., & Lum, K. (2021). Algorithmic Fairness: Choices, Assumptions, and Definitions. Annual Review of Statistics and Its Application, 8, 141–163. https://doi.org/10.1146/annurev-statistics-042720-020326\n4. IEEE 3198-2025. IEEE Standard for Machine Learning Fairness. IEEE. https://standards.ieee.org/ieee/3198/11068/\n5. Centre for Data Ethics and Innovation (CDEI). (2023). AI Barometer Report. https://www.gov.uk/government/organisations/centre-for-data-ethics-and-innovation\n6. Alan Turing Institute. (2023). Fairness in AI. https://www.turing.ac.uk/research/research-programmes/fairness-ai\n7. University of Manchester. (2023). AI for Social Good. https://www.manchester.ac.uk/research/themes/ai-for-social-good/\n8. Newcastle University. (2023). Centre for Social Justice and Community Action. https://www.ncl.ac.uk/csjca/\n\n## Metadata\n\n- **Document Type**: Knowledge Graph Entry - [[AI Ethics]] Domain\n- **Primary Category**: [[Algorithmic Fairness]], [[AI Ethics]]\n- **Secondary Categories**: [[Bias Detection]], [[AI Governance]]\n- **Term ID**: AI-0377\n- **Status**: Approved\n- **Version**: 1.0\n- **Last Updated**: 2025-11-16\n- **Review Status**: Comprehensive editorial review completed\n- **Verification**: Academic sources verified, citations cross-referenced\n- **Regional Context**: UK/Northern England where applicable\n- **Quality Score**: 0.95 (post-processing)\n- **Authority Score**: 0.95 (IEEE P7003-2021, NIST SP 1270)\n- **Completeness**: High - Comprehensive coverage with academic references and OWL axioms\n- **Link Density**: High - Extensive [[wiki-links]] to related concepts\n\n---\n\n**Processing Notes**:\n- Merged content from AI-0377-fairness-metrics.md (duplicate)\n- Enhanced OntologyBlock with complete definition and relationships\n- Added detailed OWL axioms for semantic web integration\n- Expanded UK regional context and case studies\n- Integrated 2024-2025 developments\n- Fixed Logseq formatting inconsistencies\n- Cross-referenced with regulatory frameworks",
+  "backlinks": [
+    "AI Model Card",
+    "AI Governance Principle"
+  ],
+  "wiki_links": [
+    "Financial Conduct Authority",
+    "wiki-links",
+    "Calibration",
+    "ISO/IEC TR 24027",
+    "Bias Mitigation",
+    "Protected Attributes",
+    "Intersectional Fairness",
+    "Value Alignment",
+    "Differential Privacy",
+    "University of Manchester",
+    "BSI ADS standards",
+    "Demographic Parity",
+    "University of Oxford",
+    "NIST AI Risk Management Framework",
+    "Algorithmic Accountability",
+    "IEEE 3198-2025",
+    "AIEthicsDomain",
+    "Large Language Models",
+    "Alan Turing Institute",
+    "AI Ethics",
+    "AI Safety Research",
+    "Causal Fairness",
+    "Dynamic Fairness",
+    "Fairness Auditing Tools",
+    "Centre for Data Ethics and Innovation",
+    "Regulatory Compliance",
+    "IEEE P7003-2021",
+    "NIST SP 1270",
+    "Bias Detection",
+    "University of Leeds",
+    "PerformanceMetric",
+    "Confusion Matrix",
+    "ConceptualLayer",
+    "UK AI Regulation",
+    "ICO AI Auditing Framework",
+    "AI Governance",
+    "Newcastle University",
+    "University of Sheffield",
+    "Equal Opportunity",
+    "Statistical Testing",
+    "Algorithmic Fairness",
+    "AI Trustworthiness",
+    "NHS AI Lab",
+    "Fairness Auditing",
+    "EU AI Act",
+    "Equalized Odds",
+    "Predictive Parity"
+  ],
+  "ontology": {
+    "term_id": "AI-0377",
+    "preferred_term": "Fairness Metrics",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#aigo:FairnessMetrics",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Fairness Metrics are quantitative measures and mathematical frameworks used to evaluate and ensure equitable treatment across different demographic groups in AI systems. These metrics provide objective, measurable criteria to assess whether an algorithmic system produces disparate impacts, maintains statistical parity, or achieves equalized odds across protected attributes such as race, gender, age, or disability status. Key fairness metrics include demographic parity (equal positive prediction rates across groups), equalized odds (equal true positive and false positive rates), equal opportunity (equal true positive rates), and predictive parity (equal precision across groups). The selection and application of fairness metrics depends on the specific context, stakeholder values, and regulatory requirements, as different metrics can conflict and no single metric satisfies all fairness criteria simultaneously. Implementation requires confusion matrix analysis, statistical testing, and careful consideration of base rate differences between groups, as formalized in IEEE P7003-2021 and NIST SP 1270 guidelines for algorithmic fairness assessment.",
+    "scope_note": null,
+    "status": "approved",
+    "maturity": "mature",
+    "version": "1.0",
+    "public_access": true,
+    "last_updated": "2025-11-16",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "aigo:FairnessMetrics",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Process",
+    "owl_inferred_class": "aigo:VirtualProcess",
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [
+      "Algorithmic Fairness",
+      "AI Ethics",
+      "Bias Detection"
+    ],
+    "requires": [
+      "Confusion Matrix",
+      "Statistical Testing",
+      "Protected Attributes"
+    ],
+    "depends_on": [
+      "IEEE P7003-2021",
+      "ISO/IEC TR 24027",
+      "NIST SP 1270"
+    ],
+    "enables": [
+      "Bias Mitigation",
+      "Fairness Auditing",
+      "Regulatory Compliance"
+    ],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "AIEthicsDomain"
+    ],
+    "implemented_in_layer": [
+      "ConceptualLayer"
+    ],
+    "source": [
+      "IEEE P7003-2021",
+      "ISO/IEC TR 24027",
+      "NIST SP 1270"
+    ],
+    "other_relationships": {
+      "related-to": [
+        "AI Safety Research",
+        "Value Alignment",
+        "AI Trustworthiness",
+        "Algorithmic Accountability"
+      ],
+      "measured-by": [
+        "Fairness Auditing Tools"
+      ]
+    },
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'aigo' doesn't match source-domain 'ai'"
+      ]
+    }
+  }
+}

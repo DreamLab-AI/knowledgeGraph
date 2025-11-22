@@ -1,0 +1,60 @@
+{
+  "id": "AI-0438-iot-ai-integration",
+  "title": "IoT AI Integration (AI-0438)",
+  "content": "- ### OntologyBlock\n  id:: iot-ai-integration-(ai-0438)-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0438\n    - preferred-term:: IoT AI Integration (AI-0438)\n    - source-domain:: ai-grounded\n    - status:: in-progress\n    - version:: 1.0\n    - last-updated:: 2025-10-29\n\n  - **Definition**\n    - definition:: IoT AI Integration synergizes Internet of Things sensor networks with embedded machine learning, enabling intelligent autonomous decision-making directly on IoT devices without requiring centralized cloud processing. IoT devices continuously generate multi-modal sensor data from accelerometers, temperature sensors, light sensors, and microphones; AI models analyze this streaming data locally for anomaly detection, pattern recognition, and real-time control actions. The integration addresses IoT challenges including network latency, bandwidth limitations, power constraints, and privacy concerns by moving inference onto resource-constrained edge devices. IoT sensors typically operate with extreme power budgets (milliwatts), making efficient inference critical for battery-powered deployments. AI models deployed on IoT devices employ quantization and pruning to fit within 128KB-1MB memory constraints while maintaining sufficient accuracy for task-specific applications. Communication protocols like MQTT, CoAP, and LoRaWAN support integration with backend systems while minimizing network traffic through selective event-driven transmission. IoT AI systems handle diverse use cases: smart building occupancy detection, agricultural soil monitoring, predictive maintenance in manufacturing, environmental monitoring, and personal health tracking. The architecture enables edge intelligence that reduces latency from seconds to milliseconds, enables offline operation during connectivity loss, and preserves privacy by processing sensitive data locally. Standards like IEEE 2413-2019 and ETSI TS 103645 guide secure IoT AI deployments. This integration transforms IoT from passive data collection to active intelligent edge systems.\n    - maturity:: mature\n    - source:: \n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: aigo:IoTAIIntegration\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Process\n    - owl:inferred-class:: aigo:VirtualProcess\n    - belongsToDomain:: [[AIEthicsDomain]]\n    - implementedInLayer:: [[ConceptualLayer]]\n\n  - #### Relationships\n    id:: iot-ai-integration-(ai-0438)-relationships\n\n  - #### OWL Axioms\n    id:: iot-ai-integration-(ai-0438)-owl-axioms\n    collapsed:: true\n    - ```clojure\n      (Declaration (Class :IoTAIIntegration))\n(AnnotationAssertion rdfs:label :IoTAIIntegration \"IoT AI Integration\"@en)\n(SubClassOf :IoTAIIntegration :AIGovernancePrinciple)\n(SubClassOf :IoTAIIntegration :InternetOfThings)\n\n;; IoT Device Integration\n(SubClassOf :IoTAIIntegration\n  (ObjectSomeValuesFrom :integratesWith :IoTSensor))\n(SubClassOf :IoTAIIntegration\n  (ObjectSomeValuesFrom :integratesWith :IoTActuator))\n(SubClassOf :IoTAIIntegration\n  (ObjectSomeValuesFrom :processesWith :EmbeddedAI))\n\n;; Communication Protocols\n(SubClassOf :IoTAIIntegration\n  (ObjectSomeValuesFrom :supportsProtocol :MQTT))\n(SubClassOf :IoTAIIntegration\n  (ObjectSomeValuesFrom :supportsProtocol :CoAP))\n(SubClassOf :IoTAIIntegration\n  (ObjectSomeValuesFrom :supportsProtocol :LoRaWAN))\n\n;; Resource Constraints\n(DataPropertyAssertion :hasMaxPowerConsumptionMW :IoTAIIntegration \"10\"^^xsd:integer)\n(DataPropertyAssertion :hasMaxMemoryKB :IoTAIIntegration \"128\"^^xsd:integer)\n(DataPropertyAssertion :hasBatteryLifeMonths :IoTAIIntegration \"24\"^^xsd:integer)\n\n;; Standards Reference\n(AnnotationAssertion rdfs:seeAlso :IoTAIIntegration\n  \"IEEE 2413-2019 IoT Architecture Framework\")\n(AnnotationAssertion rdfs:seeAlso :IoTAIIntegration\n  \"ETSI TS 103 645 - Cyber Security for Consumer IoT\")\n      ```\n\n### Relationships\n- is-subclass-of:: [[EdgeAISystem]]",
+  "backlinks": [],
+  "wiki_links": [
+    "EdgeAISystem",
+    "ConceptualLayer",
+    "AIEthicsDomain"
+  ],
+  "ontology": {
+    "term_id": "AI-0438",
+    "preferred_term": "IoT AI Integration (AI-0438)",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "ai-grounded",
+    "domain": "ai-grounded",
+    "domain_full_name": "",
+    "definition": "IoT AI Integration synergizes Internet of Things sensor networks with embedded machine learning, enabling intelligent autonomous decision-making directly on IoT devices without requiring centralized cloud processing. IoT devices continuously generate multi-modal sensor data from accelerometers, temperature sensors, light sensors, and microphones; AI models analyze this streaming data locally for anomaly detection, pattern recognition, and real-time control actions. The integration addresses IoT challenges including network latency, bandwidth limitations, power constraints, and privacy concerns by moving inference onto resource-constrained edge devices. IoT sensors typically operate with extreme power budgets (milliwatts), making efficient inference critical for battery-powered deployments. AI models deployed on IoT devices employ quantization and pruning to fit within 128KB-1MB memory constraints while maintaining sufficient accuracy for task-specific applications. Communication protocols like MQTT, CoAP, and LoRaWAN support integration with backend systems while minimizing network traffic through selective event-driven transmission. IoT AI systems handle diverse use cases: smart building occupancy detection, agricultural soil monitoring, predictive maintenance in manufacturing, environmental monitoring, and personal health tracking. The architecture enables edge intelligence that reduces latency from seconds to milliseconds, enables offline operation during connectivity loss, and preserves privacy by processing sensitive data locally. Standards like IEEE 2413-2019 and ETSI TS 103645 guide secure IoT AI deployments. This integration transforms IoT from passive data collection to active intelligent edge systems.",
+    "scope_note": null,
+    "status": "in-progress",
+    "maturity": "mature",
+    "version": "1.0",
+    "public_access": true,
+    "last_updated": "2025-10-29",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "aigo:IoTAIIntegration",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Process",
+    "owl_inferred_class": "aigo:VirtualProcess",
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "AIEthicsDomain"
+    ],
+    "implemented_in_layer": [
+      "ConceptualLayer"
+    ],
+    "source": [
+      "- authority-score:: 0.95"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'aigo' doesn't match source-domain 'ai-grounded'"
+      ]
+    }
+  }
+}

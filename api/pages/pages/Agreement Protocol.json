@@ -1,0 +1,66 @@
+{
+  "id": "Agreement Protocol",
+  "title": "Agreement Protocol",
+  "content": "- ### OntologyBlock\n  id:: agreement-protocol-ontology\n  collapsed:: true\n\n  - **Identification**\n    - ontology:: true\n    - term-id:: PC-0007\n    - preferred-term:: Agreement Protocol\n    - source-domain:: metaverse\n    - status:: complete\n    - public-access:: true\n    - version:: 1.0.0\n    - last-updated:: 2025-11-08\n\n  - **Definition**\n    - definition:: An Agreement Protocol is a distributed protocol specifically designed to enable multiple independent nodes to reach consensus on a single value, decision, or sequence of events despite the presence of failures, network asynchrony, and potentially malicious participants. Agreement protocols constitute the theoretical foundation for blockchain consensus mechanisms, formalizing the conditions under which distributed parties can coordinate without trusted intermediaries. These protocols must satisfy fundamental properties: safety (also called consistency or agreement—all honest nodes agree on the same value), liveness (also called termination—the protocol eventually completes), and validity (the agreed value satisfies specified constraints, such as being proposed by some participant). The design of agreement protocols navigates fundamental impossibility results including the FLP theorem (impossibility of deterministic consensus in asynchronous systems with crash failures) and Byzantine Agreement bounds (requiring at least 3f+1 nodes to tolerate f Byzantine failures). Practical blockchain agreement protocols employ various techniques to circumvent these impossibilities including randomization, synchrony assumptions, economic incentives, and probabilistic finality.\n    - maturity:: mature\n    - source:: [[Byzantine Agreement Papers]], [[FLP Impossibility]], [[Paxos and Raft Consensus]], [[PBFT Algorithm]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:AgreementProtocol\n    - owl:physicality:: ConceptualEntity\n    - owl:role:: Concept\n    - owl:inferred-class:: ConceptualConcept\n    - is-subclass-of:: [[Metaverse Infrastructure]]\n    - belongsToDomain:: [[BlockchainDomain]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "backlinks": [
+    "BC-0051-consensus-mechanism"
+  ],
+  "wiki_links": [
+    "FLP Impossibility",
+    "Byzantine Agreement Papers",
+    "BlockchainDomain",
+    "Paxos and Raft Consensus",
+    "Metaverse Infrastructure",
+    "PBFT Algorithm"
+  ],
+  "ontology": {
+    "term_id": "PC-0007",
+    "preferred_term": "Agreement Protocol",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#AgreementProtocol",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "An Agreement Protocol is a distributed protocol specifically designed to enable multiple independent nodes to reach consensus on a single value, decision, or sequence of events despite the presence of failures, network asynchrony, and potentially malicious participants. Agreement protocols constitute the theoretical foundation for blockchain consensus mechanisms, formalizing the conditions under which distributed parties can coordinate without trusted intermediaries. These protocols must satisfy fundamental properties: safety (also called consistency or agreement—all honest nodes agree on the same value), liveness (also called termination—the protocol eventually completes), and validity (the agreed value satisfies specified constraints, such as being proposed by some participant). The design of agreement protocols navigates fundamental impossibility results including the FLP theorem (impossibility of deterministic consensus in asynchronous systems with crash failures) and Byzantine Agreement bounds (requiring at least 3f+1 nodes to tolerate f Byzantine failures). Practical blockchain agreement protocols employ various techniques to circumvent these impossibilities including randomization, synchrony assumptions, economic incentives, and probabilistic finality.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-08",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:AgreementProtocol",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": "ConceptualConcept",
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "Byzantine Agreement Papers",
+      "FLP Impossibility",
+      "Paxos and Raft Consensus",
+      "PBFT Algorithm"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'bc' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

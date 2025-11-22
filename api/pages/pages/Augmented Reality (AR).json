@@ -1,0 +1,124 @@
+{
+  "id": "Augmented Reality (AR)",
+  "title": "Augmented Reality (AR)",
+  "content": "- ### OntologyBlock\n  id:: augmented-reality-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20243\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: Augmented Reality (AR)\n\t- definition:: Interactive system that overlays digital content (visual, audio, haptic) onto the physical environment in real time, enabling spatially-registered blended experiences where virtual information enhances physical perception.\n\t- maturity:: mature\n\t- source:: [[ISO 9241-940]], [[IEEE P2048-3]]\n\t- owl:class:: mv:AugmentedReality\n\t- owl:physicality:: HybridEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:HybridObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InteractionDomain]]\n\t- implementedInLayer:: [[NetworkLayer]], [[ComputeLayer]]\n\t- #### Relationships\n\t  id:: augmented-reality-relationships\n\t\t- is-subclass-of:: [[Extended Reality (XR)]]\n\t\t- has-part:: [[AR Display Device]], [[Spatial Tracking System]], [[Digital Content Overlay]], [[Environmental Sensor]]\n\t\t- is-part-of:: [[Extended Reality (XR)]], [[Spatial Computing]]\n\t\t- requires:: [[Computer Vision]], [[Real-Time Rendering]], [[Spatial Mapping]], [[Device Camera]]\n\t\t- depends-on:: [[6DOF Tracking]], [[SLAM]], [[Depth Sensing]], [[Environmental Understanding]]\n\t\t- enables:: [[Spatial Anchoring]], [[Object Recognition]], [[Contextual Information Overlay]], [[Interactive Holograms]]\n\t\t- binds-to:: [[Physical Environment]], [[Digital Content Layer]]\n\t- #### OWL Axioms\n\t  id:: augmented-reality-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:AugmentedReality))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:AugmentedReality mv:HybridEntity)\n\t\t  SubClassOf(mv:AugmentedReality mv:Object)\n\n\t\t  # Physical-virtual binding constraint\n\t\t  SubClassOf(mv:AugmentedReality\n\t\t    ObjectSomeValuesFrom(mv:bindsPhysical mv:PhysicalEnvironment)\n\t\t  )\n\t\t  SubClassOf(mv:AugmentedReality\n\t\t    ObjectSomeValuesFrom(mv:bindsVirtual mv:DigitalContentOverlay)\n\t\t  )\n\n\t\t  # Real-time registration requirement\n\t\t  SubClassOf(mv:AugmentedReality\n\t\t    ObjectSomeValuesFrom(mv:requires mv:SpatialTracking)\n\t\t  )\n\t\t  SubClassOf(mv:AugmentedReality\n\t\t    ObjectSomeValuesFrom(mv:requires mv:RealTimeRendering)\n\t\t  )\n\n\t\t  # Display modality constraints\n\t\t  SubClassOf(mv:AugmentedReality\n\t\t    ObjectMinCardinality(1 mv:hasDisplayModality mv:VisualOverlay)\n\t\t  )\n\n\t\t  # Environmental context dependency\n\t\t  SubClassOf(mv:AugmentedReality\n\t\t    ObjectSomeValuesFrom(mv:dependsOn mv:EnvironmentalUnderstanding)\n\t\t  )\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:AugmentedReality\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:InteractionDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:AugmentedReality\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:NetworkLayer)\n\t\t  )\n\t\t  SubClassOf(mv:AugmentedReality\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ComputeLayer)\n\t\t  )\n\n\t\t  # Spatial registration axiom\n\t\t  SubClassOf(mv:AugmentedReality\n\t\t    ObjectSomeValuesFrom(mv:enablesSpatialAnchoring mv:PhysicalSpace)\n\t\t  )\n\n\t\t  # Interaction capability\n\t\t  SubClassOf(mv:AugmentedReality\n\t\t    ObjectSomeValuesFrom(mv:enables mv:ContextualInformationOverlay)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:requires)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n```\n- ## About Augmented Reality (AR)\n  id:: augmented-reality-about\n\t- Augmented Reality (AR) is a HybridObject technology that enhances the physical world by overlaying digital content in real time. Unlike Virtual Reality, which creates fully immersive digital environments, AR maintains the physical environment as the primary context while adding contextual digital information, 3D models, animations, or sensory enhancements. AR systems use spatial tracking, computer vision, and real-time rendering to register virtual content to physical locations, creating spatially-coherent blended experiences.\n\t- ### Key Characteristics\n\t  id:: augmented-reality-characteristics\n\t\t- **Physical-Digital Blending**: Virtual content coexists with and enhances physical environment perception\n\t\t- **Real-Time Registration**: Digital overlays are spatially anchored and synchronized to physical world coordinates\n\t\t- **Contextual Enhancement**: Virtual information is context-aware, responding to environmental conditions and user position\n\t\t- **Multi-Modal Overlay**: Supports visual, audio, and haptic augmentation of physical reality\n\t\t- **Interactive Holograms**: Users can manipulate virtual objects that appear to exist in physical space\n\t- ### Technical Components\n\t  id:: augmented-reality-components\n\t\t- [[AR Display Device]] - Optical see-through (glasses) or video pass-through (headset/phone) display systems\n\t\t- [[Spatial Tracking System]] - 6DOF tracking using IMUs, cameras, and depth sensors\n\t\t- [[SLAM]] - Simultaneous Localization and Mapping for environment understanding\n\t\t- [[Computer Vision]] - Object recognition, surface detection, and feature tracking\n\t\t- [[Real-Time Rendering Engine]] - Low-latency graphics rendering synchronized to physical world\n\t\t- [[Spatial Mapping]] - 3D mesh generation and environmental reconstruction\n\t\t- [[Spatial Anchoring]] - Persistent placement of virtual content in physical coordinates\n\t- ### Functional Capabilities\n\t  id:: augmented-reality-capabilities\n\t\t- **Environmental Understanding**: Detects surfaces, objects, and spatial boundaries for virtual content placement\n\t\t- **Occlusion Handling**: Virtual objects correctly appear behind or in front of physical objects\n\t\t- **Spatial Audio**: 3D positional audio that responds to user head movement and environment acoustics\n\t\t- **Hand Tracking**: Natural gesture-based interaction with virtual content in physical space\n\t\t- **Multi-User Experiences**: Shared AR sessions where multiple users see and interact with same virtual content\n\t\t- **Persistent Content**: Virtual objects remain anchored to physical locations across sessions\n\t- ### Use Cases\n\t  id:: augmented-reality-use-cases\n\t\t- **Industrial Maintenance**: Overlay repair instructions, part identification, and diagnostic data on physical equipment\n\t\t- **Medical Training**: Visualize anatomical structures, surgical guidance, and patient data overlaid on physical body\n\t\t- **Retail Visualization**: Virtual furniture placement, product try-on, and interactive shopping experiences\n\t\t- **Navigation & Wayfinding**: Directional arrows, points of interest, and contextual information overlaid on real-world views\n\t\t- **Education**: Interactive 3D models, historical reconstructions, and scientific visualizations in physical classrooms\n\t\t- **Remote Assistance**: Experts guide on-site workers with annotated visual overlays and spatial pointers\n\t- ### Standards & References\n\t  id:: augmented-reality-standards\n\t\t- [[ISO 9241-940]] - Ergonomics of human-system interaction for AR/VR systems\n\t\t- [[IEEE P2048-3]] - Virtual Reality and Augmented Reality device and system interoperability standards\n\t\t- [[ETSI GR ARF 010]] - Augmented Reality Framework for architecture and interfaces\n\t\t- [[EWG/MSF Taxonomy]] - Metaverse Standards Forum AR classification\n\t\t- [[WebXR Device API]] - Browser-based AR experiences standard\n\t\t- [[OpenXR]] - Cross-platform AR/VR runtime standard\n\t- ### Related Concepts\n\t  id:: augmented-reality-related\n\t\t- [[Mixed Reality (MR)]] - Includes AR with deeper physical-virtual interaction and object occlusion\n\t\t- [[Extended Reality (XR)]] - Umbrella term encompassing AR, VR, and MR technologies\n\t\t- [[Spatial Computing]] - Broader computing paradigm that includes AR as a key interaction modality\n\t\t- [[Virtual Reality (VR)]] - Contrast: fully immersive digital environment vs. physical world overlay\n\t\t- [[Digital Twin]] - AR often used to visualize digital twin data overlaid on physical counterpart\n\t\t- [[HybridObject]] - Ontology classification for technologies that bind physical and virtual elements\n\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Metaverse platforms continue to evolve with focus on interoperability and open standards\n  - Web3 integration accelerating with decentralised identity and asset ownership\n  - Enterprise adoption growing in virtual collaboration, training, and digital twins\n  - UK companies increasingly active in metaverse development and immersive technologies\n\n- Technical capabilities\n  - Real-time rendering at photorealistic quality levels\n  - Low-latency networking enabling seamless multi-user experiences\n  - AI-driven content generation and procedural world building\n  - Spatial audio and haptics enhancing immersion\n\n- UK and North England context\n  - Manchester: Digital Innovation Factory supports metaverse startups and research\n  - Leeds: Holovis leads in immersive experiences for entertainment and training\n  - Newcastle: University research in spatial computing and interactive systems\n  - Sheffield: Advanced manufacturing using digital twin technology\n\n- Standards and frameworks\n  - Metaverse Standards Forum driving interoperability protocols\n  - WebXR enabling browser-based immersive experiences\n  - glTF and USD for 3D asset interchange\n  - Open Metaverse Interoperability Group defining cross-platform standards\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "ETSI GR ARF 010",
+    "Computer Vision",
+    "Spatial Tracking System",
+    "IEEE P2048-3",
+    "Spatial Mapping",
+    "InteractionDomain",
+    "Extended Reality (XR)",
+    "Real-Time Rendering",
+    "Environmental Sensor",
+    "Mixed Reality (MR)",
+    "Physical Environment",
+    "Digital Content Overlay",
+    "WebXR Device API",
+    "EWG/MSF Taxonomy",
+    "HybridObject",
+    "6DOF Tracking",
+    "Environmental Understanding",
+    "Spatial Anchoring",
+    "Virtual Reality (VR)",
+    "Device Camera",
+    "Interactive Holograms",
+    "Contextual Information Overlay",
+    "Real-Time Rendering Engine",
+    "ISO 9241-940",
+    "AR Display Device",
+    "Depth Sensing",
+    "ComputeLayer",
+    "SLAM",
+    "Digital Twin",
+    "NetworkLayer",
+    "Spatial Computing",
+    "OpenXR",
+    "Digital Content Layer",
+    "Object Recognition"
+  ],
+  "ontology": {
+    "term_id": "20243",
+    "preferred_term": "Augmented Reality (AR)",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#AugmentedReality",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "Interactive system that overlays digital content (visual, audio, haptic) onto the physical environment in real time, enabling spatially-registered blended experiences where virtual information enhances physical perception.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:AugmentedReality",
+    "owl_physicality": "HybridEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:HybridObject",
+    "is_subclass_of": [
+      "Extended Reality (XR)"
+    ],
+    "has_part": [
+      "AR Display Device",
+      "Spatial Tracking System",
+      "Digital Content Overlay",
+      "Environmental Sensor"
+    ],
+    "is_part_of": [
+      "Extended Reality (XR)",
+      "Spatial Computing"
+    ],
+    "requires": [
+      "Computer Vision",
+      "Real-Time Rendering",
+      "Spatial Mapping",
+      "Device Camera"
+    ],
+    "depends_on": [
+      "6DOF Tracking",
+      "SLAM",
+      "Depth Sensing",
+      "Environmental Understanding"
+    ],
+    "enables": [
+      "Spatial Anchoring",
+      "Object Recognition",
+      "Contextual Information Overlay",
+      "Interactive Holograms"
+    ],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "InteractionDomain"
+    ],
+    "implemented_in_layer": [
+      "NetworkLayer",
+      "ComputeLayer"
+    ],
+    "source": [
+      "ISO 9241-940",
+      "IEEE P2048-3"
+    ],
+    "other_relationships": {
+      "binds-to": [
+        "Physical Environment",
+        "Digital Content Layer"
+      ]
+    },
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

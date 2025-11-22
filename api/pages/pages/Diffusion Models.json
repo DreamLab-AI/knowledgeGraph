@@ -1,0 +1,12 @@
+{
+  "id": "Diffusion Models",
+  "title": "Diffusion Models",
+  "content": "### Relationships\n- is-subclass-of:: [[GenerativeModel]]",
+  "backlinks": [
+    "Variational Autoencoders",
+    "Generative AI"
+  ],
+  "wiki_links": [
+    "GenerativeModel"
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "ETSI_Domain_Data_Mgmt___AI",
+  "title": "ETSI Domain: Data Management + AI",
+  "content": "- ### OntologyBlock\n  id:: etsi-domain-datamgmt-ai-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20345\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: ETSI Domain: Data Management + AI\n\t- definition:: Crossover domain for ETSI metaverse categorization addressing data infrastructure supporting AI/ML workflows, training data management, model versioning, and inference serving.\n\t- maturity:: mature\n\t- source:: [[ETSI GR MEC 032]]\n\t- owl:class:: mv:ETSIDomain_DataMgmt_AI\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-datamgmt-ai-relationships\n\t\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t\t- is-part-of:: [[ETSI Metaverse Domain Taxonomy]]\n\t\t- has-part:: [[Training Data Repository]], [[Model Registry]], [[Feature Store]], [[Experiment Tracking]]\n\t\t- requires:: [[Data Management]], [[AI & Machine Learning]]\n\t\t- enables:: [[ML Operations]], [[Model Deployment]], [[Data Versioning]]\n\t\t- depends-on:: [[MLOps Infrastructure]], [[Data Pipelines]]\n\t- #### OWL Axioms\n\t  id:: etsi-domain-datamgmt-ai-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:ETSIDomain_DataMgmt_AI))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_AI mv:VirtualEntity)\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_AI mv:Object)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_AI\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:InfrastructureDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_AI\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)\n\t\t  )\n\n\t\t  # Crossover domain dependencies\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_AI\n\t\t    ObjectSomeValuesFrom(mv:requires mv:ETSIDomain_DataManagement)\n\t\t  )\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_AI\n\t\t    ObjectSomeValuesFrom(mv:requires mv:ETSIDomain_AI)\n\t\t  )\n\n\t\t  # MLOps enablement\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_AI\n\t\t    ObjectSomeValuesFrom(mv:enables mv:MLOperations)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:requires)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n```",
+  "backlinks": [],
+  "wiki_links": [
+    "Data Versioning",
+    "Feature Store",
+    "Data Management",
+    "ApplicationLayer",
+    "ETSI Metaverse Domain Taxonomy",
+    "Training Data Repository",
+    "AI & Machine Learning",
+    "Model Deployment",
+    "Experiment Tracking",
+    "ArtificialIntelligence",
+    "ETSI GR MEC 032",
+    "Model Registry",
+    "Data Pipelines",
+    "InfrastructureDomain",
+    "ML Operations",
+    "MLOps Infrastructure"
+  ],
+  "ontology": {
+    "term_id": "20345",
+    "preferred_term": "ETSI Domain: Data Management + AI",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#ETSIDomain_DataMgmt_AI",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "Crossover domain for ETSI metaverse categorization addressing data infrastructure supporting AI/ML workflows, training data management, model versioning, and inference serving.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:ETSIDomain_DataMgmt_AI",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
+    "is_subclass_of": [
+      "ArtificialIntelligence"
+    ],
+    "has_part": [
+      "Training Data Repository",
+      "Model Registry",
+      "Feature Store",
+      "Experiment Tracking"
+    ],
+    "is_part_of": [
+      "ETSI Metaverse Domain Taxonomy"
+    ],
+    "requires": [
+      "Data Management",
+      "AI & Machine Learning"
+    ],
+    "depends_on": [
+      "MLOps Infrastructure",
+      "Data Pipelines"
+    ],
+    "enables": [
+      "ML Operations",
+      "Model Deployment",
+      "Data Versioning"
+    ],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "InfrastructureDomain"
+    ],
+    "implemented_in_layer": [
+      "ApplicationLayer"
+    ],
+    "source": [
+      "ETSI GR MEC 032"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

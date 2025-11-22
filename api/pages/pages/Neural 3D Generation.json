@@ -1,0 +1,92 @@
+{
+  "id": "Neural 3D Generation",
+  "title": "Neural 3D Generation",
+  "content": "- ### OntologyBlock\n  id:: neural-3d-generation-ontology\n  collapsed:: true\n\n  - **Identification**\n    - ontology:: true\n    - term-id:: AI-0700\n    - preferred-term:: Neural 3D Generation\n    - source-domain:: ai\n    - status:: complete\n    - public-access:: true\n    - version:: 1.0.0\n    - last-updated:: 2025-11-05\n\n  - **Definition**\n    - definition:: AI-powered creation of three-dimensional geometric models, volumetric representations, and 4D dynamic scenes using neural networks and machine learning techniques, including generative models, neural radiance fields, gaussian splatting, and diffusion-based 3D synthesis.\n    - maturity:: emerging\n    - source:: [[SIGGRAPH AI]], [[OpenAI Point-E]], [[GET3D]], [[NeRF]], [[3D Gaussian Splatting]]\n    - authority-score:: 0.90\n\n  - **Semantic Classification**\n    - owl:class:: ai:Neural3DGeneration\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Process\n    - owl:inferred-class:: ai:VirtualProcess\n    - belongsToDomain:: [[AI-GroundedDomain]], [[CreativeMediaDomain]]\n\n  - #### OWL Restrictions\n    - enables some DigitalTwinGeneration\n    - has-part some GenerativeModel\n    - enables some RapidPrototyping\n    - has-part some RenderingEngine\n    - has-part some dRepresentation\n    - implements some DiffusionModel\n    - enables some Automated3dModeling\n    - implements some Vae\n    - has-part some TrainingPipeline\n    - implements some Gan\n    - requires some CameraParameters\n    \n    - requires some dAssetDataset\n    \n    - implements some GaussianSplatting\n    - enables some VirtualEnvironmentCreation\n    \n    - requires some GpuCompute\n    - has-part some NeuralNetwork\n    - requires some TrainingData\n    - implements some NeuralRadianceField\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[dContentGeneration]] via is-subclass-of\n    - bridges-to:: [[dRepresentation]] via has-part\n    - bridges-to:: [[Vae]] via implements\n    - bridges-to:: [[DigitalTwinGeneration]] via enables\n    - bridges-to:: [[CameraParameters]] via requires\n    - bridges-to:: [[Gan]] via implements\n    - bridges-to:: [[dAssetDataset]] via requires\n    - bridges-to:: [[VirtualEnvironmentCreation]] via enables\n    - bridges-to:: [[ProceduralContentGeneration]] via is-subclass-of\n    - bridges-to:: [[RapidPrototyping]] via enables\n    - bridges-to:: [[RenderingEngine]] via has-part\n    - bridges-to:: [[GpuCompute]] via requires\n\n  - \n### Relationships\n- is-subclass-of:: [[ComputerVision]]",
+  "backlinks": [],
+  "wiki_links": [
+    "Vae",
+    "ComputerVision",
+    "dContentGeneration",
+    "SIGGRAPH AI",
+    "CameraParameters",
+    "Gan",
+    "CreativeMediaDomain",
+    "AI-GroundedDomain",
+    "dRepresentation",
+    "GpuCompute",
+    "VirtualEnvironmentCreation",
+    "dAssetDataset",
+    "DigitalTwinGeneration",
+    "RenderingEngine",
+    "ProceduralContentGeneration",
+    "GET3D",
+    "3D Gaussian Splatting",
+    "NeRF",
+    "OpenAI Point-E",
+    "RapidPrototyping"
+  ],
+  "ontology": {
+    "term_id": "AI-0700",
+    "preferred_term": "Neural 3D Generation",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#Neural3DGeneration",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "AI-powered creation of three-dimensional geometric models, volumetric representations, and 4D dynamic scenes using neural networks and machine learning techniques, including generative models, neural radiance fields, gaussian splatting, and diffusion-based 3D synthesis.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "emerging",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-05",
+    "authority_score": 0.9,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:Neural3DGeneration",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Process",
+    "owl_inferred_class": "ai:VirtualProcess",
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "dContentGeneration via is",
+      "dRepresentation via has",
+      "Vae via implements",
+      "DigitalTwinGeneration via enables",
+      "CameraParameters via requires",
+      "Gan via implements",
+      "dAssetDataset via requires",
+      "VirtualEnvironmentCreation via enables",
+      "ProceduralContentGeneration via is",
+      "RapidPrototyping via enables",
+      "RenderingEngine via has",
+      "GpuCompute via requires"
+    ],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "AI-GroundedDomain",
+      "CreativeMediaDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "SIGGRAPH AI",
+      "OpenAI Point-E",
+      "GET3D",
+      "NeRF",
+      "3D Gaussian Splatting"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

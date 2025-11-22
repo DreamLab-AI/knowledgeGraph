@@ -1,0 +1,62 @@
+{
+  "id": "Minting",
+  "title": "Minting",
+  "content": "- ### OntologyBlock\n  id:: minting-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0532\n    - filename-history:: [\"BC-0532-minting.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[BlockchainTechnology]]\n    - term-id:: BC-0532\n    - preferred-term:: Minting\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: The process of creating new tokens and adding them to circulation, either through block rewards, staking rewards, or programmatic issuance.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Minting\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "backlinks": [
+    "Digital Twin of the Customer",
+    "BC 0115 minting"
+  ],
+  "wiki_links": [
+    "Blockchain",
+    "BlockchainTechnology"
+  ],
+  "ontology": {
+    "term_id": "BC-0532",
+    "preferred_term": "Minting",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#Minting",
+    "source_domain": "blockchain",
+    "domain": "blockchain",
+    "domain_full_name": "",
+    "definition": "The process of creating new tokens and adding them to circulation, either through block rewards, staking rewards, or programmatic issuance.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-13",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:Minting",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Blockchain"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "Chimera Prime Research"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+      ]
+    }
+  }
+}

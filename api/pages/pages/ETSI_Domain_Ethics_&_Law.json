@@ -1,0 +1,94 @@
+{
+  "id": "ETSI_Domain_Ethics_&_Law",
+  "title": "ETSI Domain: Ethics & Law",
+  "content": "- ### OntologyBlock\n  id:: etsi-domain-ethics-law-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20347\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: ETSI Domain: Ethics & Law\n\t- definition:: Domain marker for ETSI metaverse categorization covering ethical frameworks, legal compliance, regulatory requirements, and responsible governance structures for virtual environments.\n\t- maturity:: mature\n\t- source:: [[ETSI GR MEC 032]]\n\t- owl:class:: mv:ETSIDomain_EthicsLaw\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-ethics-law-relationships\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-part-of:: [[ETSI Metaverse Domain Taxonomy]]\n\t\t- has-part:: [[Ethical Frameworks]], [[Legal Compliance]], [[Regulatory Systems]], [[Rights Management]]\n\t\t- requires:: [[Policy Enforcement]], [[Compliance Monitoring]]\n\t\t- enables:: [[Responsible AI]], [[User Protection]], [[Legal Accountability]]\n\t\t- depends-on:: [[GDPR]], [[Digital Services Act]], [[Content Moderation Standards]]\n\t- #### OWL Axioms\n\t  id:: etsi-domain-ethics-law-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:ETSIDomain_EthicsLaw))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:ETSIDomain_EthicsLaw mv:VirtualEntity)\n\t\t  SubClassOf(mv:ETSIDomain_EthicsLaw mv:Object)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:ETSIDomain_EthicsLaw\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:InfrastructureDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:ETSIDomain_EthicsLaw\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)\n\t\t  )\n\n\t\t  # Domain taxonomy membership\n\t\t  SubClassOf(mv:ETSIDomain_EthicsLaw\n\t\t    ObjectSomeValuesFrom(mv:isPartOf mv:ETSIMetaverseDomainTaxonomy)\n\t\t  )\n\n\t\t  # Responsible AI enablement\n\t\t  SubClassOf(mv:ETSIDomain_EthicsLaw\n\t\t    ObjectSomeValuesFrom(mv:enables mv:ResponsibleAI)\n\t\t  )\n\n\t\t  # Regulatory compliance dependency\n\t\t  SubClassOf(mv:ETSIDomain_EthicsLaw\n\t\t    ObjectSomeValuesFrom(mv:dependsOn mv:GDPR)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:requires)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n```",
+  "backlinks": [],
+  "wiki_links": [
+    "Ethical Frameworks",
+    "Policy Enforcement",
+    "Digital Services Act",
+    "ApplicationLayer",
+    "ETSI Metaverse Domain Taxonomy",
+    "Legal Compliance",
+    "Compliance Monitoring",
+    "Regulatory Systems",
+    "Responsible AI",
+    "Metaverse",
+    "Content Moderation Standards",
+    "GDPR",
+    "ETSI GR MEC 032",
+    "User Protection",
+    "Rights Management",
+    "InfrastructureDomain",
+    "Legal Accountability"
+  ],
+  "ontology": {
+    "term_id": "20347",
+    "preferred_term": "ETSI Domain: Ethics & Law",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#ETSIDomain_EthicsLaw",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "Domain marker for ETSI metaverse categorization covering ethical frameworks, legal compliance, regulatory requirements, and responsible governance structures for virtual environments.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:ETSIDomain_EthicsLaw",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
+    "is_subclass_of": [
+      "Metaverse"
+    ],
+    "has_part": [
+      "Ethical Frameworks",
+      "Legal Compliance",
+      "Regulatory Systems",
+      "Rights Management"
+    ],
+    "is_part_of": [
+      "ETSI Metaverse Domain Taxonomy"
+    ],
+    "requires": [
+      "Policy Enforcement",
+      "Compliance Monitoring"
+    ],
+    "depends_on": [
+      "GDPR",
+      "Digital Services Act",
+      "Content Moderation Standards"
+    ],
+    "enables": [
+      "Responsible AI",
+      "User Protection",
+      "Legal Accountability"
+    ],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "InfrastructureDomain"
+    ],
+    "implemented_in_layer": [
+      "ApplicationLayer"
+    ],
+    "source": [
+      "ETSI GR MEC 032"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

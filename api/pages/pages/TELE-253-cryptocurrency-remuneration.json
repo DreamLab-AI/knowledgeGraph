@@ -1,0 +1,63 @@
+{
+  "id": "TELE-253-cryptocurrency-remuneration",
+  "title": "Cryptocurrency Remuneration",
+  "content": "# Cryptocurrency Remuneration\n\n- ### OntologyBlock\n  id:: cryptocurrency-remuneration-ontology\n  collapsed:: true\n  - ontology:: true\n    - is-subclass-of:: [[DisruptiveTechnology]]\n  - term-id:: TELE-253\n  - preferred-term:: Cryptocurrency Remuneration\n  - alternate-terms::\n  - Crypto Payments\n  - Blockchain Payroll\n  - Digital Asset Compensation\n  - source-domain:: tele\n  - status:: active\n  - public-access:: true\n  - definition:: \"The payment of remote workers, freelancers, or distributed team members in cryptocurrency (Bitcoin, Ethereum, stablecoins) rather than traditional fiat currency, enabling borderless, instant, low-fee transactions that bypass traditional banking systems whilst providing financial inclusion for unbanked populations and facilitating blockchain-based collaboration.\"\n  - maturity:: developing\n  - authority-score:: 0.77\n  - owl:class:: tele:CryptocurrencyRemuneration\n  - owl:physicality:: ConceptualEntity\n  - owl:role:: Process\n  - belongsToDomain::\n  - [[TELE-0000-telepresence-domain]]\n  - [[BlockchainCollaboration]]\n  - bridges-to::\n  - [[BlockchainDomain]]\n\n\n## Definition\n\n**Cryptocurrency Remuneration** enables global teams to receive payments in digital assets, bypassing traditional wire transfers that take 3-5 days and cost 3-5% in fees. Stablecoins (USDC, DAI) pegged to USD avoid cryptocurrency volatility, whilst Lightning Network enables sub-penny transaction fees for microtask payments.\n\n## Advantages\n\n- **Instant Settlement**: Payments confirmed in seconds-minutes\n- **Low Fees**: <£0.01 vs. 3-5% PayPal/wire transfer fees\n- **Global Access**: Anyone with internet can receive payments\n- **Financial Inclusion**: Enables unbanked populations to participate in remote work\n\n## Challenges\n\n- **Volatility**: Bitcoin, Ethereum prices fluctuate (stablecoins mitigate this)\n- **Tax Complexity**: Cryptocurrency income/capital gains taxation complicated (HMRC guidance)\n- **Regulatory Risk**: Some jurisdictions restrict cryptocurrency use\n- **User Experience**: Requires cryptocurrency wallet literacy\n\n## UK Tax Treatment (HMRC)\n\n- Cryptocurrency payments subject to income tax, National Insurance\n- Capital gains tax applies to token appreciation (£3,000 annual exemption, 2025)\n- Employers paying in crypto must withhold PAYE, NI\n\n## Related Concepts\n\n- [[TELE-002-telecollaboration]]\n- [[TELE-250-blockchain-collaboration]]\n- [[TELE-251-smart-contract-coordination]]\n\n## Metadata\n\n- **Term-ID**: TELE-253\n- **Last Updated**: 2025-11-16\n- **Maturity**: Developing\n- **Authority Score**: 0.77",
+  "backlinks": [
+    "TELE-250-blockchain-collaboration",
+    "TELE-251-smart-contract-coordination"
+  ],
+  "wiki_links": [
+    "TELE-002-telecollaboration",
+    "BlockchainCollaboration",
+    "BlockchainDomain",
+    "TELE-250-blockchain-collaboration",
+    "TELE-0000-telepresence-domain",
+    "TELE-251-smart-contract-coordination",
+    "DisruptiveTechnology"
+  ],
+  "ontology": {
+    "term_id": "TELE-253",
+    "preferred_term": "Cryptocurrency Remuneration",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "tele",
+    "domain": "tele",
+    "domain_full_name": "",
+    "definition": "\"The payment of remote workers, freelancers, or distributed team members in cryptocurrency (Bitcoin, Ethereum, stablecoins) rather than traditional fiat currency, enabling borderless, instant, low-fee transactions that bypass traditional banking systems whilst providing financial inclusion for unbanked populations and facilitating blockchain-based collaboration.\"",
+    "scope_note": null,
+    "status": "active",
+    "maturity": "developing",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": 0.77,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "tele:CryptocurrencyRemuneration",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Process",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "TELE-0000-telepresence-domain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

@@ -1,0 +1,815 @@
+{
+  "domains": {
+    "ai": {
+      "name": "Artificial Intelligence",
+      "prefix": "AI-",
+      "namespace": "http://narrativegoldmine.com/ai#",
+      "pages": [
+        {
+          "id": "AI Agent System",
+          "title": "AI Agent System",
+          "term_id": "AI-0600",
+          "iri": "http://narrativegoldmine.com/ai#AIAgentSystem"
+        },
+        {
+          "id": "AI Development",
+          "title": "AI Development",
+          "term_id": "AI-0093",
+          "iri": null
+        },
+        {
+          "id": "AI Game Agent",
+          "title": "AI Game Agent",
+          "term_id": "AI-0800",
+          "iri": "http://narrativegoldmine.com/ai#AIGameAgent"
+        },
+        {
+          "id": "AI Incident",
+          "title": "AI Incident",
+          "term_id": "AI-0082",
+          "iri": null
+        },
+        {
+          "id": "AI Risk",
+          "title": "AI Risk",
+          "term_id": "AI-0076",
+          "iri": null
+        },
+        {
+          "id": "AI-Generated Content Disclosure",
+          "title": "AI-Generated Content Disclosure",
+          "term_id": "AI-0421",
+          "iri": "http://narrativegoldmine.com/metaverse#AIGeneratedContentDisclosure"
+        },
+        {
+          "id": "Activation Function",
+          "title": "Activation Function",
+          "term_id": "AI-0059",
+          "iri": null
+        },
+        {
+          "id": "Adversarial Attack",
+          "title": "Adversarial Attack",
+          "term_id": "AI-0084",
+          "iri": null
+        },
+        {
+          "id": "Adversarial Robustness",
+          "title": "Adversarial Robustness",
+          "term_id": "AI-0074",
+          "iri": null
+        },
+        {
+          "id": "Adversarial Testing",
+          "title": "Adversarial Testing",
+          "term_id": "AI-0271",
+          "iri": null
+        },
+        {
+          "id": "Ai Engineering",
+          "title": "Gartner Prediction",
+          "term_id": "AI-0802",
+          "iri": "http://narrativegoldmine.com/ai#AiEngineering"
+        },
+        {
+          "id": "Ai Ops",
+          "title": "AIOps",
+          "term_id": "AI-0877",
+          "iri": "http://narrativegoldmine.com/ai#AiOps"
+        },
+        {
+          "id": "Artificial Intelligence",
+          "title": "Artificial Intelligence",
+          "term_id": "AI-0001",
+          "iri": null
+        },
+        {
+          "id": "Attention Mechanism",
+          "title": "Attention Mechanism",
+          "term_id": "AI-0038",
+          "iri": null
+        },
+        {
+          "id": "Automated Summarization",
+          "title": "Automated Summarization",
+          "term_id": "AI-0856",
+          "iri": "http://narrativegoldmine.com/ai#AutomatedSummarization"
+        },
+        {
+          "id": "Backdoor Attack",
+          "title": "Backdoor Attack",
+          "term_id": "AI-0088",
+          "iri": null
+        },
+        {
+          "id": "Batch Normalisation",
+          "title": "Batch Normalisation",
+          "term_id": "AI-0058",
+          "iri": null
+        },
+        {
+          "id": "Batch Size",
+          "title": "Batch Size",
+          "term_id": "AI-0050",
+          "iri": null
+        },
+        {
+          "id": "Behavior Analysis",
+          "title": "Behavior Analysis",
+          "term_id": "AI-0860",
+          "iri": "http://narrativegoldmine.com/ai#BehaviorAnalysis"
+        },
+        {
+          "id": "Behavioral Analytics",
+          "title": "Behavioral Analytics",
+          "term_id": "AI-0873",
+          "iri": "http://narrativegoldmine.com/ai#BehavioralAnalytics"
+        },
+        {
+          "id": "Behavioral Modeling",
+          "title": "Behavioral Modeling",
+          "term_id": "AI-0847",
+          "iri": "http://narrativegoldmine.com/ai#BehavioralModeling"
+        },
+        {
+          "id": "Code Generation",
+          "title": "Code Generation",
+          "term_id": "AI-0868",
+          "iri": "http://narrativegoldmine.com/ai#CodeGeneration"
+        },
+        {
+          "id": "Computational Component",
+          "title": "Computational Component",
+          "term_id": "AI-0843",
+          "iri": "http://narrativegoldmine.com/ai#ComputationalComponent"
+        },
+        {
+          "id": "Confusion Matrix",
+          "title": "Confusion Matrix",
+          "term_id": "AI-0111",
+          "iri": null
+        },
+        {
+          "id": "Context Window",
+          "title": "Context Window",
+          "term_id": "AI-0238",
+          "iri": null
+        },
+        {
+          "id": "Continued Pre-Training",
+          "title": "Continued Pre-Training",
+          "term_id": "AI-0248",
+          "iri": null
+        },
+        {
+          "id": "Contrastive Learning",
+          "title": "Contrastive Learning",
+          "term_id": "AI-0283",
+          "iri": null
+        },
+        {
+          "id": "Conversational Ai",
+          "title": "Conversational AI",
+          "term_id": "AI-0849",
+          "iri": "http://narrativegoldmine.com/ai#ConversationalAi"
+        },
+        {
+          "id": "Convolutional Neural Network",
+          "title": "Convolutional Neural Network",
+          "term_id": "AI-0032",
+          "iri": null
+        },
+        {
+          "id": "Curriculum Learning",
+          "title": "Curriculum Learning",
+          "term_id": "AI-0260",
+          "iri": null
+        },
+        {
+          "id": "Data Augmentation Strategies",
+          "title": "Data Augmentation Strategies",
+          "term_id": "AI-0286",
+          "iri": null
+        },
+        {
+          "id": "Data Breach",
+          "title": "Data Breach",
+          "term_id": "AI-0863",
+          "iri": "http://narrativegoldmine.com/ai#DataBreach"
+        },
+        {
+          "id": "Data Poisoning",
+          "title": "Data Poisoning",
+          "term_id": "AI-0085",
+          "iri": null
+        },
+        {
+          "id": "Decision Transparency",
+          "title": "Decision Transparency",
+          "term_id": "AI-0822",
+          "iri": null
+        },
+        {
+          "id": "Deep Learning",
+          "title": "Deep Learning",
+          "term_id": "AI-0870",
+          "iri": "http://narrativegoldmine.com/ai#DeepLearning"
+        },
+        {
+          "id": "Democratic Values",
+          "title": "Democratic Values",
+          "term_id": "AI-0167",
+          "iri": null
+        },
+        {
+          "id": "Dialogue System",
+          "title": "Dialogue System",
+          "term_id": "AI-0372",
+          "iri": null
+        },
+        {
+          "id": "Direct Preference Optimisation",
+          "title": "Direct Preference Optimisation",
+          "term_id": "AI-0266",
+          "iri": null
+        },
+        {
+          "id": "Disparate Impact",
+          "title": "Disparate Impact",
+          "term_id": "AI-0381",
+          "iri": null
+        },
+        {
+          "id": "Documentation Generation",
+          "title": "Documentation Generation",
+          "term_id": "AI-0869",
+          "iri": "http://narrativegoldmine.com/ai#DocumentationGeneration"
+        },
+        {
+          "id": "Drug Discovery AI",
+          "title": "Drug Discovery AI",
+          "term_id": "AI-0341",
+          "iri": null
+        },
+        {
+          "id": "Early Stopping",
+          "title": "Early Stopping",
+          "term_id": "AI-0290",
+          "iri": null
+        },
+        {
+          "id": "Emotional Intelligence",
+          "title": "Emotional Intelligence",
+          "term_id": "AI-0870",
+          "iri": "http://narrativegoldmine.com/ai#EmotionalIntelligence"
+        },
+        {
+          "id": "Encoder-Decoder Architecture",
+          "title": "Encoder-Decoder Architecture",
+          "term_id": "AI-0207",
+          "iri": null
+        },
+        {
+          "id": "F1 Score",
+          "title": "F1 Score",
+          "term_id": "AI-0110",
+          "iri": null
+        },
+        {
+          "id": "Fairness Metrics",
+          "title": "Fairness Metrics",
+          "term_id": "AI-0377",
+          "iri": "http://narrativegoldmine.com/ai#aigo:FairnessMetrics"
+        },
+        {
+          "id": "Feature Extraction",
+          "title": "Feature Extraction",
+          "term_id": "AI-0060",
+          "iri": null
+        },
+        {
+          "id": "Feed Forward Network",
+          "title": "Feed Forward Network",
+          "term_id": "AI-0811",
+          "iri": "http://narrativegoldmine.com/ai#FeedForwardNetwork"
+        },
+        {
+          "id": "Feedforward Neural Network",
+          "title": "Feedforward Neural Network",
+          "term_id": "AI-0031",
+          "iri": null
+        },
+        {
+          "id": "Generative AI",
+          "title": "Generative AI",
+          "term_id": "AI-0860",
+          "iri": "http://narrativegoldmine.com/ai#GenerativeAI"
+        },
+        {
+          "id": "Generative Adversarial Network",
+          "title": "Generative Adversarial Network",
+          "term_id": "AI-0035",
+          "iri": null
+        },
+        {
+          "id": "Generative Model",
+          "title": "Generative Model",
+          "term_id": "AI-0840",
+          "iri": "http://narrativegoldmine.com/ai#GenerativeModel"
+        },
+        {
+          "id": "Gradient Descent",
+          "title": "Gradient Descent",
+          "term_id": "AI-0044",
+          "iri": null
+        },
+        {
+          "id": "Graph Neural Network",
+          "title": "Graph Neural Network",
+          "term_id": "AI-0040",
+          "iri": null
+        },
+        {
+          "id": "Hand Tracking",
+          "title": "Hand Tracking",
+          "term_id": "AI-0852",
+          "iri": "http://narrativegoldmine.com/ai#HandTracking"
+        },
+        {
+          "id": "Harmful Bias",
+          "title": "Harmful Bias",
+          "term_id": "AI-0083",
+          "iri": null
+        },
+        {
+          "id": "High-Risk AI System",
+          "title": "High Risk AI System",
+          "term_id": "AI-0081",
+          "iri": null
+        },
+        {
+          "id": "Human Preference",
+          "title": "Property",
+          "term_id": "AI-0801",
+          "iri": "http://narrativegoldmine.com/ai#HumanPreference"
+        },
+        {
+          "id": "Human-Centred Values",
+          "title": "Human Centred Values",
+          "term_id": "AI-0159",
+          "iri": null
+        },
+        {
+          "id": "Identification System",
+          "title": "Identification System",
+          "term_id": "AI-0841",
+          "iri": "http://narrativegoldmine.com/ai#IdentificationSystem"
+        },
+        {
+          "id": "Image Segmentation",
+          "title": "Image Segmentation",
+          "term_id": "AI-0853",
+          "iri": "http://narrativegoldmine.com/ai#ImageSegmentation"
+        },
+        {
+          "id": "Inclusive Growth",
+          "title": "Inclusive Growth",
+          "term_id": "AI-0156",
+          "iri": null
+        },
+        {
+          "id": "Instance Segmentation",
+          "title": "Instance Segmentation",
+          "term_id": "AI-0360",
+          "iri": "http://narrativegoldmine.com/metaverse#InstanceSegmentation"
+        },
+        {
+          "id": "Intrinsic Interpretability",
+          "title": "Intrinsic Interpretability",
+          "term_id": "AI-0300",
+          "iri": null
+        },
+        {
+          "id": "Key Vector",
+          "title": "Key Vector",
+          "term_id": "AI-0808",
+          "iri": "http://narrativegoldmine.com/ai#KeyVector"
+        },
+        {
+          "id": "Knowledge Distillation",
+          "title": "Knowledge Distillation",
+          "term_id": "AI-0279",
+          "iri": null
+        },
+        {
+          "id": "Knowledge Graph Construction",
+          "title": "Knowledge Graph Construction",
+          "term_id": "AI-0816",
+          "iri": "http://narrativegoldmine.com/ai#KnowledgeGraphConstruction"
+        },
+        {
+          "id": "Large language models",
+          "title": "Large Language Models",
+          "term_id": "AI-0850",
+          "iri": "http://narrativegoldmine.com/ai#LargeLanguageModel"
+        },
+        {
+          "id": "Long Short-Term Memory",
+          "title": "Long Short Term Memory",
+          "term_id": "AI-0034",
+          "iri": "http://narrativegoldmine.com/metaverse#LongShortTermMemory"
+        },
+        {
+          "id": "Loss Function",
+          "title": "Loss Function",
+          "term_id": "AI-0047",
+          "iri": "http://narrativegoldmine.com/metaverse#LossFunction"
+        },
+        {
+          "id": "Machine Learning Technique",
+          "title": "Machine Learning Technique",
+          "term_id": "AI-0828",
+          "iri": "http://narrativegoldmine.com/ai#MachineLearningTechnique"
+        },
+        {
+          "id": "Machine Learning",
+          "title": "Machine Learning",
+          "term_id": "AI-0002",
+          "iri": null
+        },
+        {
+          "id": "Medical Diagnosis AI",
+          "title": "Medical Diagnosis AI",
+          "term_id": "AI-0343",
+          "iri": "http://narrativegoldmine.com/metaverse#MedicalDiagnosisAI"
+        },
+        {
+          "id": "Meeting Transcription",
+          "title": "Meeting Transcription",
+          "term_id": "AI-0855",
+          "iri": "http://narrativegoldmine.com/ai#MeetingTranscription"
+        },
+        {
+          "id": "Membership Inference",
+          "title": "Membership Inference",
+          "term_id": "AI-0087",
+          "iri": null
+        },
+        {
+          "id": "Model Capacity",
+          "title": "Model Capacity",
+          "term_id": "AI-0053",
+          "iri": null
+        },
+        {
+          "id": "Model Extraction",
+          "title": "Model Extraction",
+          "term_id": "AI-0090",
+          "iri": null
+        },
+        {
+          "id": "Model Inversion",
+          "title": "Model Inversion",
+          "term_id": "AI-0086",
+          "iri": null
+        },
+        {
+          "id": "Model Parameters",
+          "title": "Model Parameters",
+          "term_id": "AI-0051",
+          "iri": null
+        },
+        {
+          "id": "Model Weights",
+          "title": "Model Weights",
+          "term_id": "AI-0052",
+          "iri": null
+        },
+        {
+          "id": "Multi Head Attention",
+          "title": "Multi-Head Attention",
+          "term_id": "AI-0810",
+          "iri": "http://narrativegoldmine.com/ai#MultiHeadAttention"
+        },
+        {
+          "id": "Multimodal Understanding",
+          "title": "Multimodal Understanding",
+          "term_id": "AI-0867",
+          "iri": "http://narrativegoldmine.com/ai#MultimodalUnderstanding"
+        },
+        {
+          "id": "Natural Language Processing",
+          "title": "Natural Language Processing",
+          "term_id": "AI-0366",
+          "iri": null
+        },
+        {
+          "id": "Neural 3D Generation",
+          "title": "Neural 3D Generation",
+          "term_id": "AI-0700",
+          "iri": "http://narrativegoldmine.com/ai#Neural3DGeneration"
+        },
+        {
+          "id": "Neural Network Architecture",
+          "title": "Neural Network Architecture",
+          "term_id": "AI-0803",
+          "iri": "http://narrativegoldmine.com/ai#NeuralNetworkArchitecture"
+        },
+        {
+          "id": "Ontology in LLM Operations",
+          "title": "Ontology in LLM Operations",
+          "term_id": "AI-0878",
+          "iri": "http://narrativegoldmine.com/ai#OntologyInLLMOperations"
+        },
+        {
+          "id": "Optimization Algorithm",
+          "title": "Optimization Algorithm",
+          "term_id": "AI-0866",
+          "iri": "http://narrativegoldmine.com/ai#OptimizationAlgorithm"
+        },
+        {
+          "id": "Pathfinding Algorithm",
+          "title": "Pathfinding Algorithm",
+          "term_id": "AI-0851",
+          "iri": "http://narrativegoldmine.com/ai#PathfindingAlgorithm"
+        },
+        {
+          "id": "Predictive Personalization",
+          "title": "Predictive Personalization",
+          "term_id": "AI-0874",
+          "iri": "http://narrativegoldmine.com/ai#PredictivePersonalization"
+        },
+        {
+          "id": "Pretrained Model",
+          "title": "Pretrained Model",
+          "term_id": "AI-0875",
+          "iri": "http://narrativegoldmine.com/ai#PretrainedModel"
+        },
+        {
+          "id": "Query Vector",
+          "title": "Query Vector",
+          "term_id": "AI-0807",
+          "iri": "http://narrativegoldmine.com/ai#QueryVector"
+        },
+        {
+          "id": "Rapid Ai Deployment",
+          "title": "Rapid AI Deployment",
+          "term_id": "AI-0876",
+          "iri": "http://narrativegoldmine.com/ai#RapidAiDeployment"
+        },
+        {
+          "id": "Red Teaming",
+          "title": "Red Teaming",
+          "term_id": "AI-0270",
+          "iri": null
+        },
+        {
+          "id": "Reinforcement Learning Algorithm",
+          "title": "Reinforcement Learning Algorithm",
+          "term_id": "AI-0804",
+          "iri": "http://narrativegoldmine.com/ai#ReinforcementLearningAlgorithm"
+        },
+        {
+          "id": "Residual Network",
+          "title": "Residual Network",
+          "term_id": "AI-0039",
+          "iri": null
+        },
+        {
+          "id": "Risk Assessment",
+          "title": "Risk Assessment",
+          "term_id": "AI-0078",
+          "iri": null
+        },
+        {
+          "id": "Risk Management",
+          "title": "Risk Management",
+          "term_id": "AI-0077",
+          "iri": null
+        },
+        {
+          "id": "Risk Mitigation",
+          "title": "Risk Mitigation",
+          "term_id": "AI-0079",
+          "iri": null
+        },
+        {
+          "id": "Risk Treatment",
+          "title": "Risk Treatment",
+          "term_id": "AI-0080",
+          "iri": null
+        },
+        {
+          "id": "Root Mean Square Error",
+          "title": "Root Mean Square Error",
+          "term_id": "AI-0115",
+          "iri": null
+        },
+        {
+          "id": "Runtime Inspection",
+          "title": "Runtime Inspection",
+          "term_id": "AI-0862",
+          "iri": "http://narrativegoldmine.com/ai#RuntimeInspection"
+        },
+        {
+          "id": "Safety Measure",
+          "title": "Safety Measure",
+          "term_id": "AI-0838",
+          "iri": "http://narrativegoldmine.com/ai#SafetyMeasure"
+        },
+        {
+          "id": "Sentiment Analysis",
+          "title": "Sentiment Analysis",
+          "term_id": "AI-0369",
+          "iri": null
+        },
+        {
+          "id": "Spatial Ai",
+          "title": "Spatial AI",
+          "term_id": "AI-0871",
+          "iri": "http://narrativegoldmine.com/ai#SpatialAi"
+        },
+        {
+          "id": "Spatial Mapping",
+          "title": "Spatial Mapping",
+          "term_id": "AI-0854",
+          "iri": "http://narrativegoldmine.com/ai#SpatialMapping"
+        },
+        {
+          "id": "Stochastic Gradient Descent",
+          "title": "Stochastic Gradient Descent",
+          "term_id": "AI-0045",
+          "iri": null
+        },
+        {
+          "id": "Symbolic Reasoning",
+          "title": "Symbolic Reasoning",
+          "term_id": "AI-0865",
+          "iri": "http://narrativegoldmine.com/ai#SymbolicReasoning"
+        },
+        {
+          "id": "Synthetic Data Generation",
+          "title": "Synthetic Data Generation",
+          "term_id": "AI-0422",
+          "iri": "http://narrativegoldmine.com/ai#aigo:SyntheticDataGeneration"
+        },
+        {
+          "id": "Task-Specific Head",
+          "title": "Task Specific Head",
+          "term_id": "AI-0258",
+          "iri": null
+        },
+        {
+          "id": "Teacher-Student Training",
+          "title": "Teacher Student Training",
+          "term_id": "AI-0280",
+          "iri": null
+        },
+        {
+          "id": "Text To Image",
+          "title": "Text-to-Image",
+          "term_id": "AI-0857",
+          "iri": "http://narrativegoldmine.com/ai#TextToImage"
+        },
+        {
+          "id": "Text To Speech",
+          "title": "Text-to-Speech",
+          "term_id": "AI-0850",
+          "iri": "http://narrativegoldmine.com/ai#TextToSpeech"
+        },
+        {
+          "id": "Text To3d",
+          "title": "Text-to-3D",
+          "term_id": "AI-0858",
+          "iri": "http://narrativegoldmine.com/ai#TextTo3d"
+        },
+        {
+          "id": "Third Party Vulnerability",
+          "title": "Third-Party Vulnerability",
+          "term_id": "AI-0864",
+          "iri": "http://narrativegoldmine.com/ai#ThirdPartyVulnerability"
+        },
+        {
+          "id": "Toxicity Detection",
+          "title": "Toxicity Detection",
+          "term_id": "AI-0859",
+          "iri": "http://narrativegoldmine.com/ai#ToxicityDetection"
+        },
+        {
+          "id": "Transformer Architecture",
+          "title": "Transformer Architecture",
+          "term_id": "AI-0196",
+          "iri": null
+        },
+        {
+          "id": "Trojan Attack",
+          "title": "Trojan Attack",
+          "term_id": "AI-0089",
+          "iri": null
+        },
+        {
+          "id": "Value Alignment",
+          "title": "Value Alignment",
+          "term_id": "AI-0269",
+          "iri": null
+        },
+        {
+          "id": "Value Vector",
+          "title": "Value Vector",
+          "term_id": "AI-0809",
+          "iri": "http://narrativegoldmine.com/ai#ValueVector"
+        },
+        {
+          "id": "Variational Autoencoders",
+          "title": "Variational Autoencoders",
+          "term_id": "AI-VAE-001",
+          "iri": null
+        },
+        {
+          "id": "Workforce Augmentation",
+          "title": "Workforce Augmentation",
+          "term_id": "AI-0872",
+          "iri": "http://narrativegoldmine.com/ai#WorkforceAugmentation"
+        }
+      ],
+      "count": 121
+    },
+    "bc": {
+      "name": "Blockchain",
+      "prefix": "BC-",
+      "namespace": "http://narrativegoldmine.com/blockchain#",
+      "pages": [],
+      "count": 0
+    },
+    "rb": {
+      "name": "Robotics",
+      "prefix": "RB-",
+      "namespace": "http://narrativegoldmine.com/robotics#",
+      "pages": [],
+      "count": 0
+    },
+    "mv": {
+      "name": "Metaverse",
+      "prefix": "MV-",
+      "namespace": "http://narrativegoldmine.com/metaverse#",
+      "pages": [],
+      "count": 0
+    },
+    "tc": {
+      "name": "Telecollaboration",
+      "prefix": "TC-",
+      "namespace": "http://narrativegoldmine.com/telecollaboration#",
+      "pages": [],
+      "count": 0
+    },
+    "dt": {
+      "name": "Disruptive Technologies",
+      "prefix": "DT-",
+      "namespace": "http://narrativegoldmine.com/disruptive-tech#",
+      "pages": [],
+      "count": 0
+    }
+  },
+  "uncategorized": {
+    "pages": [
+      {
+        "id": "Deepmind",
+        "title": "Deepmind"
+      },
+      {
+        "id": "Diagrams as Code",
+        "title": "Diagrams as Code"
+      },
+      {
+        "id": "Diffusion Models",
+        "title": "Diffusion Models"
+      },
+      {
+        "id": "GANs",
+        "title": "GANs"
+      },
+      {
+        "id": "Inpainting",
+        "title": "Inpainting"
+      },
+      {
+        "id": "OpenAI",
+        "title": "OpenAI"
+      },
+      {
+        "id": "Procedural and Hybrid 4D",
+        "title": "Procedural and Hybrid 4D"
+      },
+      {
+        "id": "Runes and Glyphs",
+        "title": "Runes and Glyphs"
+      },
+      {
+        "id": "collaborative",
+        "title": "collaborative"
+      }
+    ],
+    "count": 9
+  },
+  "total_pages": 793
+}

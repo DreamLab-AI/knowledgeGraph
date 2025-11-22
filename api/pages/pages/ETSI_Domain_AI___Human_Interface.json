@@ -1,0 +1,91 @@
+{
+  "id": "ETSI_Domain_AI___Human_Interface",
+  "title": "ETSI Domain AI + Human Interface",
+  "content": "- ### OntologyBlock\n  id:: etsi-domain-ai-human-interface-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20334\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: ETSI Domain AI + Human Interface\n\t- definition:: Cross-domain marker for metaverse components combining artificial intelligence with human interaction systems including conversational AI, gesture recognition, emotion detection, and intelligent user experience adaptation.\n\t- maturity:: mature\n\t- source:: [[ETSI GS MEC]]\n\t- owl:class:: mv:ETSIDomainAIHumanInterface\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[ComputationAndIntelligenceDomain]], [[InteractionDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-ai-human-interface-relationships\n\t\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t\t- is-part-of:: [[ETSI Domain Taxonomy]]\n\t\t- depends-on:: [[ETSI Domain AI]], [[InteractionDomain]]\n\t\t- enables:: [[Conversational AI Classification]], [[Intelligent UX Categorization]]\n\t\t- categorizes:: [[Conversational AI]], [[Gesture Recognition]], [[Emotion AI]], [[Adaptive UI]]\n\t- #### OWL Axioms\n\t  id:: etsi-domain-ai-human-interface-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:ETSIDomainAIHumanInterface))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:ETSIDomainAIHumanInterface mv:VirtualEntity)\n\t\t  SubClassOf(mv:ETSIDomainAIHumanInterface mv:Object)\n\n\t\t  # Cross-domain marker classification\n\t\t  SubClassOf(mv:ETSIDomainAIHumanInterface mv:DomainMarker)\n\t\t  SubClassOf(mv:ETSIDomainAIHumanInterface mv:CrossDomainMarker)\n\n\t\t  # Multiple domain classification\n\t\t  SubClassOf(mv:ETSIDomainAIHumanInterface\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:ComputationAndIntelligenceDomain)\n\t\t  )\n\t\t  SubClassOf(mv:ETSIDomainAIHumanInterface\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:InteractionDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:ETSIDomainAIHumanInterface\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n```",
+  "backlinks": [
+    "ETSI_Domain_AI"
+  ],
+  "wiki_links": [
+    "Conversational AI",
+    "ETSI Domain Taxonomy",
+    "ApplicationLayer",
+    "ComputationAndIntelligenceDomain",
+    "Emotion AI",
+    "InteractionDomain",
+    "ArtificialIntelligence",
+    "ETSI Domain AI",
+    "Conversational AI Classification",
+    "Gesture Recognition",
+    "Intelligent UX Categorization",
+    "Adaptive UI",
+    "ETSI GS MEC"
+  ],
+  "ontology": {
+    "term_id": "20334",
+    "preferred_term": "ETSI Domain AI + Human Interface",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#ETSIDomainAIHumanInterface",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "Cross-domain marker for metaverse components combining artificial intelligence with human interaction systems including conversational AI, gesture recognition, emotion detection, and intelligent user experience adaptation.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:ETSIDomainAIHumanInterface",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
+    "is_subclass_of": [
+      "ArtificialIntelligence"
+    ],
+    "has_part": [],
+    "is_part_of": [
+      "ETSI Domain Taxonomy"
+    ],
+    "requires": [],
+    "depends_on": [
+      "ETSI Domain AI",
+      "InteractionDomain"
+    ],
+    "enables": [
+      "Conversational AI Classification",
+      "Intelligent UX Categorization"
+    ],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "ComputationAndIntelligenceDomain",
+      "InteractionDomain"
+    ],
+    "implemented_in_layer": [
+      "ApplicationLayer"
+    ],
+    "source": [
+      "ETSI GS MEC"
+    ],
+    "other_relationships": {
+      "categorizes": [
+        "Conversational AI",
+        "Gesture Recognition",
+        "Emotion AI",
+        "Adaptive UI"
+      ]
+    },
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

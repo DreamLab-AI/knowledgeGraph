@@ -1,0 +1,56 @@
+{
+  "id": "Metaverse Architecture Stack",
+  "title": "Metaverse Architecture Stack",
+  "content": "- ### OntologyBlock\n  id:: metaversearchitecturestack-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20177\n\t- preferred-term:: Metaverse Architecture Stack\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Metaverse Infrastructure]]\n\t- public-access:: true\n\n\n\n# Metaverse Architecture Stack – Updated Ontology Entry\n\n## Academic Context\n\n- The Metaverse Architecture Stack represents a foundational framework for enabling interoperability across distributed virtual environments and systems[1][4]\n  - Emerged from recognition that early-stage metaverse development lacks mature, standardised architectural consensus between academia and industry[4]\n  - Addresses complexity of integrating real and virtual elements through layered component organisation\n  - Encompasses infrastructure, interactivity, and ecosystem dimensions to establish common ground for development[4]\n\n- IEEE P2048 Standard for Metaverse: Terminology, Definitions, and Taxonomy provides the primary standardisation effort[1][2]\n  - Approved by IEEE Standards Association Board on 10 November 2022[2][3]\n  - Intended to define terminology, categories, and levels of metaverse systems whilst facilitating sustainable development[1]\n  - Addresses early-stage confusion and lack of consensus that could mislead adopters and create unnecessary barriers[1]\n\n## Current Landscape (2025)\n\n- Infrastructure requirements and technical stack\n  - Hardware components include high-performance servers (GPU), storage systems, and data centres capable of processing vast quantities of virtual environment data[4]\n  - Software development tools, programming languages, and frameworks enable creation of immersive environments ranging from 2D applications to complex 3D simulations[4]\n  - Networking technologies essential for real-time, low-latency connectivity include high-speed broadband, 5G/6G wireless networks, and edge computing solutions[4]\n  - Blockchain, cloud-edge computing, storage systems, and interoperability protocols form critical infrastructure layers[4]\n\n- Standards and frameworks currently active\n  - IEEE 2888 standardises interfaces between physical and virtual worlds, defining data formats and APIs[1]\n  - IEEE P7016 provides ethical assessment methodology and techno-social overview for metaverse system design and operation[1]\n  - ISO/IEC 23005 offers guidelines for metaverse design, development, and deployment[1]\n  - IEEE P3812.1 addresses identity framework requirements for metaverse systems (approved 3 December 2022)[2][3]\n  - IEEE initiatives on persistent computing and decentralised metaverse architectures approved for development[2][3]\n\n- Technical capabilities and current limitations\n  - Real-time interactivity across multiple devices and platforms remains technically challenging at scale\n  - Standardised data formats and APIs still under development, limiting cross-platform interoperability\n  - Edge computing and 5G/6G deployment remains incomplete in many regions, constraining low-latency performance\n\n## Research & Literature\n\n- Key academic sources\n  - Metaverse Survey & Tutorial: Exploring Key Requirements (arXiv 2405.04718v1) provides comprehensive overview of architectural frameworks and infrastructure requirements[4]\n  - IEEE P2048 documentation establishes foundational terminology and taxonomy for sustainable metaverse development[1][2]\n  - Metaverse: Requirements, Architecture, Standards, Status (arXiv 2302.01125) details standards landscape and key technological requirements[1]\n\n- Ongoing research directions\n  - Standardisation of interoperability protocols across heterogeneous platforms\n  - Ethical assessment methodologies for metaverse system design (IEEE P7016.1 for extended reality and educational metadata)\n  - Identity framework specifications and decentralised architecture models\n  - Integration of persistent computing capabilities\n\n## UK Context\n\n- British involvement in standards development\n  - IEEE Metaverse Standards Committee operates through international accredited processes with UK participation in working groups\n  - UK academic institutions contributing to research on metaverse architecture and interoperability standards\n\n- Regional considerations\n  - 5G/6G infrastructure deployment across UK regions affects practical implementation of low-latency metaverse systems\n  - North England technology hubs (Manchester, Leeds, Newcastle) increasingly engaged with immersive technology research, though specific metaverse architecture initiatives remain limited to broader XR development programmes\n\n## Future Directions\n\n- Emerging technical priorities\n  - Completion and ratification of IEEE P2048 taxonomy and terminology standards to establish industry consensus\n  - Development of mature interoperability protocols enabling seamless cross-platform user experiences\n  - Advancement of edge computing and 6G networking to support real-time, low-latency interactions at scale\n\n- Anticipated challenges\n  - Reconciling divergent architectural approaches between major platform developers and academic standardisation bodies\n  - Establishing ethical frameworks that balance innovation with user protection and data privacy\n  - Achieving backwards compatibility whilst evolving standards for emerging technologies\n\n- Research priorities\n  - Formal specification of layered architecture models with explicit ordering constraints and cardinality requirements\n  - Evaluation of decentralised versus centralised architectural approaches for different use cases\n  - Integration of identity and authentication frameworks with privacy-preserving mechanisms\n\n## References\n\n1. Metaverse: Requirements, Architecture, Standards, Status. arXiv:2302.01125. Available at: https://arxiv.org/pdf/2302.01125\n2. IEEE Metaverse Standards Committee. Metaverse In IEEE. ITU Cities presentation, October 2023. Available at: https://www.itu.int/cities/wp-content/uploads/2023/10/6_Ralf-Ma.pdf\n3. IEEE Metaverse Standards Committee. Metaverse In IEEE. Standards presentation, 2023. Available at: https://s43678.pcdn.co/wp-content/uploads/2023/07/05-Session2-Ralf-Ma.pdf\n4. Metaverse Survey & Tutorial: Exploring Key Requirements. arXiv:2405.04718v1. Available at: https://arxiv.org/html/2405.04718v1\n\n## Metadata\n\n- Last Updated: 12 November 2025\n- Review Status: Comprehensive editorial review against current standards landscape\n- Verification: Academic sources verified against IEEE standards approvals and arXiv publications\n- Regional Context: UK participation noted; North England context limited to general XR development activity",
+  "backlinks": [],
+  "wiki_links": [
+    "Metaverse Infrastructure"
+  ],
+  "ontology": {
+    "term_id": "20177",
+    "preferred_term": "Metaverse Architecture Stack",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": null,
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: owl:class",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

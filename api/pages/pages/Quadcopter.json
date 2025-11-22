@@ -1,0 +1,62 @@
+{
+  "id": "Quadcopter",
+  "title": "Quadcopter",
+  "content": "- ### OntologyBlock\n  id:: quadcopter-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: RB\n    - sequence-number:: 0122\n    - filename-history:: [\"RB-0122-quadcopter.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[RoboticsTechnology]]\n    - term-id:: RB-0122\n    - preferred-term:: Quadcopter\n    - source-domain:: robotics\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: Quadcopter is a four-rotor VTOL aircraft.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: rb:Quadcopter\n    - belongsToDomain:: [[Robotics]]\n\n  - #### OWL Restrictions\n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Multirotor]] via is-subclass-of\n\n  -",
+  "backlinks": [],
+  "wiki_links": [
+    "Robotics",
+    "RoboticsTechnology",
+    "Multirotor"
+  ],
+  "ontology": {
+    "term_id": "RB-0122",
+    "preferred_term": "Quadcopter",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/robotics#Quadcopter",
+    "source_domain": "robotics",
+    "domain": "robotics",
+    "domain_full_name": "",
+    "definition": "Quadcopter is a four-rotor VTOL aircraft.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-13",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "rb:Quadcopter",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "Multirotor via is"
+    ],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Robotics"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "Chimera Prime Research"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'rb' doesn't match source-domain 'robotics'"
+      ]
+    }
+  }
+}

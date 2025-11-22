@@ -1,0 +1,89 @@
+{
+  "id": "ETSI_Domain_AI___Creative_Media",
+  "title": "ETSI Domain AI + Creative Media",
+  "content": "- ### OntologyBlock\n  id:: etsi-domain-ai-creative-media-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20331\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: ETSI Domain AI + Creative Media\n\t- definition:: Cross-domain marker for metaverse components that combine artificial intelligence capabilities with creative media applications such as generative content, procedural generation, and AI-assisted authoring.\n\t- maturity:: mature\n\t- source:: [[ETSI GS MEC]]\n\t- owl:class:: mv:ETSIDomainAICreativeMedia\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[ComputationAndIntelligenceDomain]], [[CreativeMediaDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-ai-creative-media-relationships\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-part-of:: [[ETSI Domain Taxonomy]]\n\t\t- depends-on:: [[ETSI Domain AI]], [[CreativeMediaDomain]]\n\t\t- enables:: [[Generative Content Classification]], [[AI Art Categorization]]\n\t\t- categorizes:: [[Generative AI]], [[Procedural Content Generation]], [[AI Assisted Authoring]]\n\t- #### OWL Axioms\n\t  id:: etsi-domain-ai-creative-media-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:ETSIDomainAICreativeMedia))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:ETSIDomainAICreativeMedia mv:VirtualEntity)\n\t\t  SubClassOf(mv:ETSIDomainAICreativeMedia mv:Object)\n\n\t\t  # Cross-domain marker classification\n\t\t  SubClassOf(mv:ETSIDomainAICreativeMedia mv:DomainMarker)\n\t\t  SubClassOf(mv:ETSIDomainAICreativeMedia mv:CrossDomainMarker)\n\n\t\t  # Multiple domain classification\n\t\t  SubClassOf(mv:ETSIDomainAICreativeMedia\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:ComputationAndIntelligenceDomain)\n\t\t  )\n\t\t  SubClassOf(mv:ETSIDomainAICreativeMedia\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:CreativeMediaDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:ETSIDomainAICreativeMedia\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n```",
+  "backlinks": [
+    "ETSI_Domain_AI"
+  ],
+  "wiki_links": [
+    "Generative AI",
+    "ETSI Domain Taxonomy",
+    "ApplicationLayer",
+    "AI Assisted Authoring",
+    "ComputationAndIntelligenceDomain",
+    "Procedural Content Generation",
+    "Metaverse",
+    "Generative Content Classification",
+    "ETSI Domain AI",
+    "AI Art Categorization",
+    "CreativeMediaDomain",
+    "ETSI GS MEC"
+  ],
+  "ontology": {
+    "term_id": "20331",
+    "preferred_term": "ETSI Domain AI + Creative Media",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#ETSIDomainAICreativeMedia",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "Cross-domain marker for metaverse components that combine artificial intelligence capabilities with creative media applications such as generative content, procedural generation, and AI-assisted authoring.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:ETSIDomainAICreativeMedia",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
+    "is_subclass_of": [
+      "Metaverse"
+    ],
+    "has_part": [],
+    "is_part_of": [
+      "ETSI Domain Taxonomy"
+    ],
+    "requires": [],
+    "depends_on": [
+      "ETSI Domain AI",
+      "CreativeMediaDomain"
+    ],
+    "enables": [
+      "Generative Content Classification",
+      "AI Art Categorization"
+    ],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "ComputationAndIntelligenceDomain",
+      "CreativeMediaDomain"
+    ],
+    "implemented_in_layer": [
+      "ApplicationLayer"
+    ],
+    "source": [
+      "ETSI GS MEC"
+    ],
+    "other_relationships": {
+      "categorizes": [
+        "Generative AI",
+        "Procedural Content Generation",
+        "AI Assisted Authoring"
+      ]
+    },
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

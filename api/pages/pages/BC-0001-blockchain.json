@@ -1,0 +1,72 @@
+{
+  "id": "BC-0001-blockchain",
+  "title": "Blockchain",
+  "content": "- ### OntologyBlock\n  id:: blockchain-ontology\n  collapsed:: true\n\n  - **Identification**\n    - ontology:: true\n    - term-id:: BC-0001\n    - preferred-term:: Blockchain\n    - source-domain:: blockchain\n    - status:: complete\n    - public-access:: true\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: A blockchain is a distributed, cryptographically-secured data structure consisting of an ordered chain of blocks, where each block contains a cryptographic hash of the previous block, a timestamp, and transaction data, maintained through a consensus mechanism across a peer-to-peer network without requiring a trusted central authority.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[ISO/IEC TR]], [[ISO/IEC 23455:2019]], [[ITU-T Y.4460]]\n    - authority-score:: 1.0\n\n  - **Semantic Classification**\n    - owl:class:: bc:Blockchain\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[BlockchainDomain]]\n    - implementedInLayer:: [[ConceptualLayer]]\n\n  - #### Relationships\n    id:: blockchain-relationships\n    - is-subclass-of:: [[Distributed Data Structure]], [[Distributed Ledger]], [[Cryptographic System]]\n\n  - #### OWL Axioms\n    id:: blockchain-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0001>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:Blockchain))\n\n  ## Subclass Relationships\n  SubClassOf(:Blockchain :DistributedDataStructure)\n  SubClassOf(:Blockchain :CryptographicSystem)\n  SubClassOf(:Blockchain :DistributedLedger)\n\n  ## Essential Properties\n  SubClassOf(:Blockchain\n    (ObjectExactCardinality 1 :hasGenesisBlock :Block))\n\n  SubClassOf(:Blockchain\n    (ObjectMinCardinality 1 :containsBlock :Block))\n\n  SubClassOf(:Blockchain\n    (ObjectExactCardinality 1 :usesConsensus :ConsensusMechanism))\n\n  SubClassOf(:Blockchain\n    (ObjectExactCardinality 1 :usesHashFunction :CryptographicHashFunction))\n\n  SubClassOf(:Blockchain\n    (ObjectMinCardinality 1 :maintainedBy :Node))\n\n  SubClassOf(:Blockchain\n    (DataHasValue :isImmutable \"true\"^^xsd:boolean))\n\n  SubClassOf(:Blockchain\n    (DataHasValue :isDistributed \"true\"^^xsd:boolean))\n\n  SubClassOf(:Blockchain\n    (DataHasValue :isDecentralized \"true\"^^xsd:boolean))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasBlockHeight :Blockchain xsd:nonNegativeInteger)\n  DataPropertyAssertion(:hasChainDifficulty :Blockchain xsd:decimal)\n  DataPropertyAssertion(:hasBlockTime :Blockchain xsd:duration)\n  DataPropertyAssertion(:hasCreationDate :Blockchain xsd:dateTime)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:containsBlock :Blockchain :Block)\n  ObjectPropertyAssertion(:maintainedBy :Blockchain :Node)\n  ObjectPropertyAssertion(:executesTransaction :Blockchain :Transaction)\n  ObjectPropertyAssertion(:implementsProtocol :Blockchain :BlockchainProtocol)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :Blockchain \"Blockchain\"@en)\n  AnnotationAssertion(rdfs:comment :Blockchain\n    \"A distributed, cryptographically-secured chain of blocks maintained through consensus\"@en)\n  AnnotationAssertion(dct:description :Blockchain\n    \"Core data structure combining cryptographic hashing, distributed consensus, and sequential block ordering\"@en)\n  AnnotationAssertion(:termID :Blockchain \"BC-0001\")\n  AnnotationAssertion(:authorityScore :Blockchain \"1.0\"^^xsd:decimal)\n\n  ## Disjoint Classes\n  DisjointClasses(:Blockchain :TraditionalDatabase)\n  DisjointClasses(:Blockchain :CentralizedLedger)\n)\n      ```",
+  "backlinks": [],
+  "wiki_links": [
+    "ISO/IEC 23257:2021",
+    "Distributed Data Structure",
+    "Cryptographic System",
+    "BlockchainDomain",
+    "ISO/IEC 23455:2019",
+    "ConceptualLayer",
+    "ITU-T Y.4460",
+    "Distributed Ledger",
+    "ISO/IEC TR"
+  ],
+  "ontology": {
+    "term_id": "BC-0001",
+    "preferred_term": "Blockchain",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#Blockchain",
+    "source_domain": "blockchain",
+    "domain": "blockchain",
+    "domain_full_name": "",
+    "definition": "A blockchain is a distributed, cryptographically-secured data structure consisting of an ordered chain of blocks, where each block contains a cryptographic hash of the previous block, a timestamp, and transaction data, maintained through a consensus mechanism across a peer-to-peer network without requiring a trusted central authority.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-10-28",
+    "authority_score": 1.0,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:Blockchain",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "bc:VirtualObject",
+    "is_subclass_of": [
+      "Distributed Data Structure",
+      "Distributed Ledger",
+      "Cryptographic System"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [
+      "ConceptualLayer"
+    ],
+    "source": [
+      "ISO/IEC 23257:2021",
+      "ISO/IEC TR",
+      "ISO/IEC 23455:2019",
+      "ITU-T Y.4460"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+      ]
+    }
+  }
+}

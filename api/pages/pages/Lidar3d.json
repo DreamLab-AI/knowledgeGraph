@@ -1,0 +1,59 @@
+{
+  "id": "Lidar3d",
+  "title": "3D LiDAR",
+  "content": "- ### OntologyBlock\n  id:: lidar3d-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: RB\n    - sequence-number:: 0163\n    - filename-history:: [\"RB-0163-lidar3d.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[RoboticsTechnology]]\n    - term-id:: RB-0163\n    - preferred-term:: 3D LiDAR\n    - source-domain:: robotics\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: 3D LiDAR generates three-dimensional point cloud of environment.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: rb:Lidar3d\n    - belongsToDomain:: [[Robotics]]\n\n  - #### OWL Restrictions\n    \n    \n\n  -",
+  "backlinks": [],
+  "wiki_links": [
+    "Robotics",
+    "RoboticsTechnology"
+  ],
+  "ontology": {
+    "term_id": "RB-0163",
+    "preferred_term": "3D LiDAR",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/robotics#Lidar3d",
+    "source_domain": "robotics",
+    "domain": "robotics",
+    "domain_full_name": "",
+    "definition": "3D LiDAR generates three-dimensional point cloud of environment.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-13",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "rb:Lidar3d",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Robotics"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "Chimera Prime Research"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'rb' doesn't match source-domain 'robotics'"
+      ]
+    }
+  }
+}

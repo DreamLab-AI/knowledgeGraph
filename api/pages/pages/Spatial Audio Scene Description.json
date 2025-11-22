@@ -1,0 +1,56 @@
+{
+  "id": "Spatial Audio Scene Description",
+  "title": "Spatial Audio Scene Description",
+  "content": "- ### OntologyBlock\n  id:: spatial-audio-scene-description-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20115\n\t- preferred-term:: Spatial Audio Scene Description\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Metaverse]]\n\t- public-access:: true\n\n\n\n## Academic Context\n\n- Spatial Audio Scene Description is a **data model** designed to encode sound sources, listener positions, acoustic environments, and spatial audio metadata within a three-dimensional framework.\n  - It enables immersive and realistic audio experiences, particularly in virtual and augmented reality environments.\n  - The academic foundations lie in signal processing, psychoacoustics, and 3D audio rendering techniques developed over the past two decades.\n  - Key developments include the formalisation of spatial audio metadata standards such as MPEG-H 3D Audio and Dolby Atmos object-based audio, which allow flexible positioning and movement of sound objects in 3D space.\n\n## Current Landscape (2025)\n\n- Industry adoption of spatial audio scene description is widespread across entertainment, gaming, virtual reality (VR), augmented reality (AR), automotive, and smart home sectors.\n  - Major technology companies such as Dolby, Apple (with Dolby Atmos integration), Meta (Horizon OS), and Google are leading implementations.\n  - Spatial audio content is increasingly available on streaming platforms, gaming engines, and immersive theatre experiences.\n- In the UK, particularly in North England cities like Manchester, Leeds, Newcastle, and Sheffield, innovation hubs and universities are actively researching spatial audio applications in VR, cultural heritage, and gaming.\n  - For example, Manchester’s digital media sector integrates spatial audio in immersive museum exhibits and live performance spaces.\n- Technical capabilities include precise 3D localisation of sound sources, dynamic scene adaptation, and integration with AI for personalised Head-Related Transfer Function (HRTF) profiles.\n- Limitations remain in standard interoperability, computational complexity for real-time rendering, and user-friendly authoring tools.\n- Standards and frameworks such as MPEG-H 3D Audio, Dolby Atmos, and open-source initiatives (e.g., Eclipsa Audio) are driving wider adoption and cross-platform compatibility.\n\n## Research & Literature\n\n- Key academic papers and sources include:\n  - Zotter, F., & Frank, M. (2019). *Ambisonics: A Practical 3D Audio Theory for Recording, Studio Production, Sound Reinforcement, and Virtual Reality*. Springer. DOI: 10.1007/978-3-030-03404-0\n  - Pulkki, V., & Karjalainen, M. (2015). *Communication Acoustics: An Introduction to Speech, Audio and Psychoacoustics*. Wiley. ISBN: 978-1118866181\n  - Begault, D. R. (2021). *3D Sound for Virtual Reality and Multimedia*. Academic Press. ISBN: 978-0128154816\n- Ongoing research focuses on:\n  - AI-driven personalised spatial audio rendering using individual HRTFs.\n  - Integration of spatial audio with haptic feedback for multisensory immersion.\n  - Efficient encoding and streaming of spatial audio metadata for low-latency applications.\n  - Cross-modal interaction between spatial audio and visual AR/VR cues.\n\n## UK Context\n\n- The UK has a strong tradition in audio research, with institutions such as the University of York and University of Salford leading in spatial audio and immersive media.\n- North England innovation hubs in Manchester and Leeds are notable for applying spatial audio in cultural heritage projects, immersive theatre, and digital arts.\n  - For instance, Leeds Digital Festival has showcased spatial audio installations blending sound art with interactive environments.\n- Regional case studies include immersive museum audio tours employing spatial audio to create realistic acoustic spaces, enhancing visitor engagement and accessibility.\n- The UK’s creative industries benefit from spatial audio scene description to produce richer audio experiences in gaming, VR storytelling, and live events.\n\n## Future Directions\n\n- Emerging trends include:\n  - AI-enhanced spatial audio personalisation becoming mainstream by the late 2020s.\n  - Greater integration with haptic and tactile feedback devices to deepen immersion.\n  - Expansion of spatial audio in automotive infotainment and smart home IoT ecosystems.\n  - Development of universal, open standards to resolve current interoperability challenges.\n- Anticipated challenges:\n  - Balancing computational demands with real-time performance on consumer devices.\n  - Ensuring accessibility and inclusivity in spatial audio experiences.\n  - Educating content creators to avoid disorienting or gimmicky spatial mixes.\n- Research priorities:\n  - Refining AI models for individualised HRTF estimation without intrusive measurements.\n  - Exploring cross-modal sensory integration for enhanced presence in VR/AR.\n  - Developing scalable authoring tools that democratise spatial audio content creation.\n\n## References\n\n1. Zotter, F., & Frank, M. (2019). *Ambisonics: A Practical 3D Audio Theory for Recording, Studio Production, Sound Reinforcement, and Virtual Reality*. Springer. DOI: 10.1007/978-3-030-03404-0  \n2. Pulkki, V., & Karjalainen, M. (2015). *Communication Acoustics: An Introduction to Speech, Audio and Psychoacoustics*. Wiley. ISBN: 978-1118866181  \n3. Begault, D. R. (2021). *3D Sound for Virtual Reality and Multimedia*. Academic Press. ISBN: 978-0128154816  \n4. Loumidea Team. (2025). Spatial Audio Design in 2025: Innovations, Showdowns, and Future Trends. Loumidea Blog.  \n5. Panphonics. (2025). Game-changing audio trends to watch for in 2025. Panphonics Blog.  \n6. Havit Audio Center. (2025). Spatial Audio: The Ultimate Guide to Immersive Sound 2025.  \n7. Apple Music. (2025). Spatial Audio: Compelling Sound from Anywhere. Apple Artists Support.  \n8. Meta Horizon OS Developers. (2025). Spatial Audio. Meta Developer Documentation.  \n9. MuseumNext. (2025). New Ideas for Museum Audio Tours: Trends Shaping 2025.  \n\nIf spatial audio scene description were a dinner party, it would be the host who not only places every guest (sound source) perfectly around the table but also ensures the listener’s seat offers the best view and acoustics — all without anyone feeling left out or overwhelmed.\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "Metaverse"
+  ],
+  "ontology": {
+    "term_id": "20115",
+    "preferred_term": "Spatial Audio Scene Description",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": null,
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: owl:class",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

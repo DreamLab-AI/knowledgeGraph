@@ -1,0 +1,56 @@
+{
+  "id": "Metaverse Psychology Profile",
+  "title": "Metaverse Psychology Profile",
+  "content": "- ### OntologyBlock\n  id:: metaverse-psychology-profile-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20258\n\t- preferred-term:: Metaverse Psychology Profile\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Metaverse]]\n\t- public-access:: true\n\n\n## Academic Context\n\n- The metaverse represents a convergence of immersive digital technologies enabling persistent virtual environments where users interact in real-time[3]\n  - Ontological frameworks for the metaverse remain nascent, with researchers still establishing foundational definitions and conceptual boundaries\n  - Psychology profiles within metaverse contexts extend traditional user modelling by incorporating immersive experience dimensions absent from conventional digital platforms\n  - Key theoretical constructs include immersion, presence, and interactivity as mechanisms shaping user behaviour and psychological states[3][7]\n\n- Metaverse psychology profiling sits at the intersection of human-computer interaction, virtual reality research, and computational psychology\n  - The field draws on established immersion literature whilst adapting frameworks to account for persistent, multi-user virtual environments\n  - Current research emphasises the need for context-robust theoretical models that transcend specific technological implementations[3]\n\n## Current Landscape (2025)\n\n- Industry adoption and technical implementations\n  - Metaverse platforms increasingly employ behavioural tracking and sentiment analysis to personalise user experiences\n  - Data collection mechanisms span virtual interaction logging, affective response monitoring, and psychometric assessment integration\n  - Privacy and ethical governance frameworks remain inconsistently implemented across platforms, creating regulatory uncertainty\n\n- Technical capabilities and limitations\n  - Current systems can capture behavioural patterns, emotional state indicators, and social interaction analytics with reasonable fidelity\n  - Limitations persist in accurately inferring cognitive traits and deeper psychological constructs from virtual interaction data alone\n  - Boundary alteration—the psychological mechanism by which users shift between immersive and non-immersive states—remains poorly understood and difficult to measure[7]\n\n- Standards and frameworks\n  - The Protégé ontology editor and OWL-DL (Web Ontology Language Description Logic) provide formal specification mechanisms for metaverse domain ontologies[1]\n  - Ontology Usability Scale (OUS) offers a standardised approach to evaluating ontology design across syntax, semantics, and pragmatic dimensions[1]\n  - No universally accepted psychological profiling standard currently exists; definitions vary significantly across research groups and commercial stakeholders[4]\n\n## Research & Literature\n\n- Foundational ontology work\n  - Kim et al. (2021) and subsequent researchers have developed MetaOntology frameworks specifying state-of-the-art metaverse technologies through systematic domain analysis[1]\n  - Ontological approaches distinguish between virtual entities, their physical instantiation, and functional roles within metaverse systems[1]\n\n- Immersive experience theory\n  - Flanagin, DeAndrea & Holbert (2017, 2020) and Huskey et al. (2020) have advanced mechanism-oriented approaches to understanding immersion across varying technological contexts[3]\n  - Marr's tri-level framework (computational, algorithmic, implementational) provides a structured approach to decomposing immersive psychological processes[3]\n  - Three key processes identified as central to immersive experience: interactivity, boundary alteration, and motivation[7]\n\n- Social ontology considerations\n  - Carrigan (2022) raises critical questions regarding relational goods and trust-building within virtual environments, questioning whether immersive remote connection can sustain genuine intimacy[5]\n  - The distinction between \"IRL fetish\" (preference for physical reality) and reflective preference for digital experiences remains philosophically contested[5]\n\n- Metaverse definition and conceptualisation\n  - Park and Kim define the metaverse primarily as a place, space, or world, emphasising its physical dimension[4]\n  - Mulla Sadra's ontological framework characterises the metaverse as a \"hybrid external credit\" world comprising both tangible and perceptible components with real, objective existence[2]\n\n## UK Context\n\n- British academic contributions\n  - UK-based research institutions have contributed to immersion theory development and ontological frameworks for virtual environments\n  - The Open University and other UK universities have engaged with metaverse psychology research, though specific North England innovation hubs remain limited in published output\n\n- Regulatory and ethical landscape\n  - UK data protection frameworks (GDPR, Data Protection Act 2018) create specific constraints on psychological profiling and behavioural tracking within metaverse platforms\n  - The Information Commissioner's Office (ICO) has begun issuing guidance on virtual environment data collection, though comprehensive metaverse-specific regulations remain under development\n\n## Future Directions\n\n- Emerging research priorities\n  - Developing context-robust theoretical models that remain valid across diverse metaverse platforms and technological implementations\n  - Establishing standardised psychological profiling methodologies that balance personalisation benefits against privacy and autonomy concerns\n  - Understanding boundary alteration mechanisms—how users psychologically transition between immersive and non-immersive states—remains critically under-researched\n\n- Anticipated challenges\n  - Reconciling commercial personalisation interests with ethical data governance and informed consent requirements\n  - Determining whether relational goods (trust, intimacy, genuine social connection) can authentically emerge within virtual environments\n  - Addressing the philosophical tension between virtual and physical reality experiences, particularly post-pandemic shifts in user preferences\n\n- Regulatory and governance development\n  - Harmonisation of psychological profiling standards across jurisdictions, particularly between UK/EU frameworks and international platforms\n  - Establishment of minimum ethical standards for affective response monitoring and sentiment analysis within metaverse systems\n  - Development of user agency mechanisms enabling individuals to understand, contest, and modify their psychological profiles\n\n## References\n\n1. Kim, J., Lee, S., Ning, H., et al. (2022). MetaOntology: Toward developing an ontology for the metaverse. *NIH/PMC*. https://pmc.ncbi.nlm.nih.gov/articles/PMC9493250/\n\n2. Ontology of \"Metaverse\" and the Way of Perception in It Based on Mulla Sadra's Ontology. *Allameh Tabataba'i University*. https://wph.atu.ac.ir/article_17114.html\n\n3. Flanagin, A.J., DeAndrea, D.C., & Holbert, R.L. (2017, 2020). What is 'Being There'? An Ontology of the Immersive Experience. *Annals of the International Communication Association*, 48(4), 391–413. https://academic.oup.com/anncom/article/48/4/391/7931783\n\n4. Park, S.H., & Kim, J. (2024). What is the Metaverse and who seeks to define it? Mapping the site of definitional struggle. *SAGE Journals*, 48(4). https://journals.sagepub.com/doi/10.1177/02683962231159927\n\n5. Carrigan, M. (2022). The social ontology of the Metaverse. *Mark Carrigan Blog*. https://markcarrigan.net/2022/01/30/the-social-ontology-of-the-metaverse/\n\n6. Huskey, R., et al. (2020). What is 'Being There'? An ontology of the immersive experience. *Taylor & Francis Online*. https://www.tandfonline.com/doi/full/10.1080/23808985.2024.2382752\n\n## Metadata\n\n- Last Updated: 2025-11-12\n- Review Status: Comprehensive editorial review completed\n- Verification: Academic sources verified against current literature\n- Regional Context: UK/North England context integrated where applicable\n- Format: Converted to Logseq nested bullet structure with markdown headings",
+  "backlinks": [],
+  "wiki_links": [
+    "Metaverse"
+  ],
+  "ontology": {
+    "term_id": "20258",
+    "preferred_term": "Metaverse Psychology Profile",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": null,
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: owl:class",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

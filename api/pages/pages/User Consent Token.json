@@ -1,0 +1,136 @@
+{
+  "id": "User Consent Token",
+  "title": "User Consent Token",
+  "content": "- ### OntologyBlock\n  id:: userconsenttoken-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20274\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: User Consent Token\n\t- definition:: A cryptographically verifiable digital token that represents and enforces user consent for data processing, collection, sharing, or participation in virtual environments with granular permission controls and revocation mechanisms.\n\t- maturity:: draft\n\t- source:: [[GDPR]] [[W3C DID Core]] [[ISO 29184]]\n\t- owl:class:: mv:UserConsentToken\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[VirtualEconomyDomain]]\n\t- blockchainRelevance:: High\n\t- lastValidated:: 2025-11-14 [[TrustAndGovernanceDomain]]\n\t- implementedInLayer:: [[MiddlewareLayer]]\n\t- #### Relationships\n\t  id:: userconsenttoken-relationships\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- has-part:: [[Consent Payload]], [[Cryptographic Signature]], [[Scope Definition]], [[Timestamp]], [[Revocation Mechanism]]\n\t\t- is-part-of:: [[Consent Management Framework]]\n\t\t- requires:: [[Digital Identity]], [[Cryptographic Key]], [[Consent Registry]], [[Privacy Policy]], [[Data Schema]]\n\t\t- depends-on:: [[Decentralized Identifier (DID)]], [[Verifiable Credential]], [[Blockchain Ledger]], [[Time Oracle]]\n\t\t- enables:: [[Granular Consent Control]], [[Consent Audit Trail]], [[Automated Privacy Compliance]], [[User Data Sovereignty]], [[Consent Revocation]]\n\t- #### OWL Axioms\n\t  id:: userconsenttoken-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:UserConsentToken))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:UserConsentToken mv:VirtualEntity)\n\t\t  SubClassOf(mv:UserConsentToken mv:Object)\n\n\t\t  # Essential token components\n\t\t  SubClassOf(mv:UserConsentToken\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:ConsentPayload)\n\t\t  )\n\t\t  SubClassOf(mv:UserConsentToken\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:CryptographicSignature)\n\t\t  )\n\t\t  SubClassOf(mv:UserConsentToken\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:ScopeDefinition)\n\t\t  )\n\t\t  SubClassOf(mv:UserConsentToken\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:RevocationMechanism)\n\t\t  )\n\n\t\t  # Critical dependencies\n\t\t  SubClassOf(mv:UserConsentToken\n\t\t    ObjectSomeValuesFrom(mv:requires mv:DigitalIdentity)\n\t\t  )\n\t\t  SubClassOf(mv:UserConsentToken\n\t\t    ObjectSomeValuesFrom(mv:requires mv:CryptographicKey)\n\t\t  )\n\t\t  SubClassOf(mv:UserConsentToken\n\t\t    ObjectSomeValuesFrom(mv:requires mv:ConsentRegistry)\n\t\t  )\n\n\t\t  # Cardinality constraint - exactly one subject identity\n\t\t  SubClassOf(mv:UserConsentToken\n\t\t    ObjectExactCardinality(1 mv:representsConsentOf mv:DigitalIdentity)\n\t\t  )\n\n\t\t  # Enabled capabilities\n\t\t  SubClassOf(mv:UserConsentToken\n\t\t    ObjectSomeValuesFrom(mv:enables mv:GranularConsentControl)\n\t\t  )\n\t\t  SubClassOf(mv:UserConsentToken\n\t\t    ObjectSomeValuesFrom(mv:enables mv:ConsentAuditTrail)\n\t\t  )\n\n\t\t  # Dual domain classification\n\t\t  SubClassOf(mv:UserConsentToken\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:VirtualEconomyDomain)\n\t\t  )\n\t\t  SubClassOf(mv:UserConsentToken\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:TrustAndGovernanceDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:UserConsentToken\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:MiddlewareLayer)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:requires)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n```\n- ## About User Consent Token\n  id:: userconsenttoken-about\n\t- User Consent Tokens provide a cryptographic mechanism for capturing, verifying, and managing user consent for data processing activities in metaverse and virtual environments. These tokens transform consent from passive checkbox agreements into active, revocable, and auditable digital objects that travel with user data. By leveraging blockchain, verifiable credentials, and decentralized identifiers, consent tokens enable users to maintain sovereignty over their personal information while providing organizations with cryptographic proof of lawful processing authority under regulations like GDPR, CCPA, and emerging metaverse privacy frameworks.\n\t- ### Key Characteristics\n\t  id:: userconsenttoken-characteristics\n\t\t- **Cryptographic Verification** - Digital signatures ensure consent authenticity and non-repudiation using public key infrastructure\n\t\t- **Granular Permissions** - Fine-grained control over specific data types, processing purposes, and sharing permissions\n\t\t- **Revocability** - On-chain or off-chain mechanisms allowing users to withdraw consent with immediate effect\n\t\t- **Temporal Scope** - Time-bound consent with expiration dates, renewal requirements, and historical version tracking\n\t\t- **Portability** - Standards-based format enabling consent transfer across platforms and jurisdictions\n\t\t- **Immutable Audit Trail** - Blockchain-based or hash-linked record of all consent grants, modifications, and revocations\n\t\t- **Machine-Readable** - Structured format enabling automated privacy compliance checks and policy enforcement\n\t\t- **Identity-Bound** - Cryptographically linked to decentralized identifiers (DIDs) preventing consent forgery\n\t- ### Technical Components\n\t  id:: userconsenttoken-components\n\t\t- [[Consent Payload]] - Structured data containing purpose, data categories, processing activities, and duration specifications\n\t\t- [[Cryptographic Signature]] - Ed25519, ECDSA, or RSA signature binding token to user's private key\n\t\t- [[Scope Definition]] - Enumeration of permitted data types, third parties, geographic regions, and use cases\n\t\t- [[Timestamp]] - Issuance time, expiration date, and last modification timestamp from trusted time oracle\n\t\t- [[Revocation Mechanism]] - On-chain smart contract function or revocation registry for consent withdrawal\n\t\t- [[Consent Registry]] - Decentralized or federated database mapping consent tokens to active permissions\n\t\t- [[Privacy Policy Hash]] - Cryptographic hash of the privacy policy version user consented to\n\t\t- [[Data Subject Identifier]] - Decentralized identifier (DID) or pseudonymous identifier for the consenting user\n\t\t- [[Purpose Specification]] - Machine-readable purpose codes (marketing, analytics, AI training, etc.)\n\t\t- [[Proof of Receipt]] - Cryptographic receipt proving user acknowledgment and understanding\n\t- ### Functional Capabilities\n\t  id:: userconsenttoken-capabilities\n\t\t- **GDPR Compliance Automation**: Automated enforcement of Article 6 (lawfulness), Article 7 (consent conditions), and Article 17 (right to erasure) through smart contracts\n\t\t- **Consent-Driven Data Access**: Real-time verification of processing authority before accessing user data, with automatic denial if consent is revoked\n\t\t- **Cross-Platform Consent Portability**: Transfer consent grants across metaverse platforms using W3C Verifiable Credentials and DID standards\n\t\t- **Privacy-Preserving Consent Proofs**: Zero-knowledge proofs demonstrating valid consent without revealing user identity or consent details\n\t\t- **Dynamic Consent Management**: Real-time consent modification, scope adjustment, and purpose-specific revocation without full withdrawal\n\t\t- **Consent Analytics and Reporting**: Aggregated consent statistics for privacy impact assessments and regulatory reporting\n\t\t- **Automated Consent Renewal**: Proactive re-consent requests before token expiration with historical context\n\t\t- **Consent Delegation**: Parental controls, guardian authorization, and organizational consent hierarchies\n\t- ### Use Cases\n\t  id:: userconsenttoken-use-cases\n\t\t- **Metaverse Data Collection** - Capturing consent for behavioral analytics, avatar telemetry, spatial positioning, and biometric data in virtual worlds\n\t\t- **AI Training Consent** - Explicit user authorization for using virtual world interactions, chat logs, or creative outputs to train machine learning models\n\t\t- **Cross-Platform Data Sharing** - User-controlled consent for identity federation, profile synchronization, and asset transfers between metaverse platforms\n\t\t- **Biometric Authentication** - Consent management for facial recognition, iris scanning, gait analysis, or voice recognition in XR environments\n\t\t- **Health Data Processing** - HIPAA-compliant consent tokens for VR therapy, fitness tracking, or mental health monitoring applications\n\t\t- **Marketing and Advertising** - Granular consent for targeted advertising, behavioral profiling, and third-party data monetization in virtual spaces\n\t\t- **Research Participation** - Consent management for academic studies, user experience research, and A/B testing in virtual environments\n\t\t- **Smart Contract Authorization** - Consent tokens as access control mechanisms for DeFi transactions, DAO participation, or token gating\n\t\t- **Age-Appropriate Experiences** - Parental consent tokens for minors accessing age-restricted content or social features\n\t\t- **Employee Monitoring** - Workplace consent for virtual office surveillance, productivity tracking, and collaboration analytics\n\t- ### Standards & References\n\t  id:: userconsenttoken-standards\n\t\t- [[GDPR (General Data Protection Regulation)]] - EU privacy law requiring explicit, informed, and revocable consent (Articles 6-7)\n\t\t- [[CCPA (California Consumer Privacy Act)]] - California privacy law with opt-out consent mechanisms and consumer rights\n\t\t- [[ISO/IEC 29184:2020]] - International standard for online privacy notices and consent\n\t\t- [[W3C Verifiable Credentials Data Model]] - Standard for cryptographically verifiable consent tokens\n\t\t- [[W3C Decentralized Identifiers (DIDs)]] - Identity standard binding consent tokens to user identities\n\t\t- [[Kantara Consent Receipt Specification]] - Standard format for consent receipts and proof of consent\n\t\t- [[IEEE P7012]] - Standard for machine-readable personal privacy terms (consent expression)\n\t\t- [[NIST Privacy Framework]] - Consent management best practices and privacy engineering guidance\n\t\t- [[eIDAS Regulation]] - EU electronic identification and trust services enabling qualified signatures\n\t\t- [[HIPAA Privacy Rule]] - U.S. health data consent requirements for authorization forms\n\t\t- [[OAuth 2.0 and OpenID Connect]] - Authorization frameworks supporting consent-based data access\n\t\t- [[FHIR Consent Resource]] - Healthcare consent representation in Fast Healthcare Interoperability Resources\n\t- ### Related Concepts\n\t  id:: userconsenttoken-related\n\t\t- [[Digital Identity]] - Foundation for binding consent tokens to specific users\n\t\t- [[Verifiable Credential]] - Cryptographic format for representing consent as verifiable claims\n\t\t- [[Decentralized Identifier (DID)]] - User identifier enabling self-sovereign consent management\n\t\t- [[Smart Contract]] - Execution environment for automated consent enforcement\n\t\t- [[Privacy Policy]] - Legal document that consent tokens reference via cryptographic hashing\n\t\t- [[Blockchain Ledger]] - Immutable storage for consent audit trails and revocation registries\n\t\t- [[KYC/AML System]] - Identity verification prerequisite for legally binding consent\n\t\t- [[Zero-Knowledge Proof]] - Privacy-preserving consent verification technique\n\t\t- [[Access Control List (ACL)]] - Permission system informed by consent token grants\n\t\t- [[Data Vault]] - Personal data store utilizing consent tokens for access control\n\t\t- [[User Agreement Compliance]] - Related compliance tracking mechanism\n\t\t- [[VirtualObject]] - Ontology classification as a virtual consent management object\n\n\n\nI appreciate the detailed request, but I must flag a significant issue with the premise: the search results provided do not contain sufficient information to deliver the comprehensive ontology review you've requested.\n\n## What the Search Results Actually Cover\n\nThe search results discuss **access tokens** and **user consent mechanisms** within OAuth 2.0 and identity platforms (Okta, Microsoft Entra, Auth0, Cisco), but they do not address \"User Consent Tokens\" as a distinct, cryptographically verifiable artefact for data processing consent with granular permission controls and revocation mechanisms.\n\nThe distinction matters considerably:\n\n- **Access tokens** [2][4] are credentials for accessing protected resources, not consent records\n- **User consent** [1][7] represents explicit permission to access scopes, but the search results do not describe this as a tokenised, cryptographically verifiable object\n- **Consent grants** [1] persist independently of tokens and can outlast them, but this is not the same as a \"User Consent Token\" as a discrete technical entity\n\n## The Core Problem\n\nYour current definition describes something more sophisticated than what appears in standard OAuth 2.0 literature—specifically, a **tokenised consent artefact** with enforcement capabilities and granular controls. This may exist in emerging privacy frameworks (GDPR consent management, privacy-preserving technologies, or decentralised identity systems), but the search results do not cover these domains.\n\n## What I Cannot Provide\n\nWithout search results addressing:\n- Privacy-tech implementations (consent management platforms, privacy tokens)\n- GDPR-specific consent tokenisation\n- Decentralised identity or blockchain-based consent mechanisms\n- Academic literature on consent as a cryptographic object\n- UK regulatory frameworks for consent documentation\n\nI cannot responsibly construct the ontology entry you've requested, particularly with the rigour and accuracy you've specified. Fabricating citations or inferring technical details would violate the precision you've asked for.\n\n## Recommendation\n\nTo proceed effectively, I would need search results covering:\n1. Consent management platforms and their technical architectures\n2. Privacy-preserving consent technologies\n3. UK and EU regulatory requirements for consent documentation\n4. Academic research on consent tokenisation\n5. Specific implementations in North England organisations (if they exist)\n\nWould you like to provide additional search results, or shall we refocus the query?\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "GDPR (General Data Protection Regulation)",
+    "W3C DID Core",
+    "Time Oracle",
+    "Data Schema",
+    "Data Vault",
+    "Consent Revocation",
+    "Scope Definition",
+    "Privacy Policy Hash",
+    "Metaverse",
+    "Data Subject Identifier",
+    "HIPAA Privacy Rule",
+    "GDPR",
+    "Digital Identity",
+    "Purpose Specification",
+    "FHIR Consent Resource",
+    "NIST Privacy Framework",
+    "User Agreement Compliance",
+    "Access Control List (ACL)",
+    "Revocation Mechanism",
+    "Proof of Receipt",
+    "eIDAS Regulation",
+    "Consent Management Framework",
+    "IEEE P7012",
+    "MiddlewareLayer",
+    "Kantara Consent Receipt Specification",
+    "User Data Sovereignty",
+    "Consent Audit Trail",
+    "VirtualEconomyDomain",
+    "VirtualObject",
+    "Timestamp",
+    "Cryptographic Signature",
+    "ISO/IEC 29184:2020",
+    "KYC/AML System",
+    "W3C Decentralized Identifiers (DIDs)",
+    "W3C Verifiable Credentials Data Model",
+    "Cryptographic Key",
+    "OAuth 2.0 and OpenID Connect",
+    "Zero-Knowledge Proof",
+    "Automated Privacy Compliance",
+    "Smart Contract",
+    "Consent Payload",
+    "Privacy Policy",
+    "Verifiable Credential",
+    "Consent Registry",
+    "ISO 29184",
+    "TrustAndGovernanceDomain",
+    "Blockchain Ledger",
+    "CCPA (California Consumer Privacy Act)",
+    "Granular Consent Control",
+    "Decentralized Identifier (DID)"
+  ],
+  "ontology": {
+    "term_id": "20274",
+    "preferred_term": "User Consent Token",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#UserConsentToken",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "A cryptographically verifiable digital token that represents and enforces user consent for data processing, collection, sharing, or participation in virtual environments with granular permission controls and revocation mechanisms.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:UserConsentToken",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
+    "is_subclass_of": [
+      "Metaverse"
+    ],
+    "has_part": [
+      "Consent Payload",
+      "Cryptographic Signature",
+      "Scope Definition",
+      "Timestamp",
+      "Revocation Mechanism"
+    ],
+    "is_part_of": [
+      "Consent Management Framework"
+    ],
+    "requires": [
+      "Digital Identity",
+      "Cryptographic Key",
+      "Consent Registry",
+      "Privacy Policy",
+      "Data Schema"
+    ],
+    "depends_on": [
+      "Decentralized Identifier (DID)",
+      "Verifiable Credential",
+      "Blockchain Ledger",
+      "Time Oracle"
+    ],
+    "enables": [
+      "Granular Consent Control",
+      "Consent Audit Trail",
+      "Automated Privacy Compliance",
+      "User Data Sovereignty",
+      "Consent Revocation"
+    ],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "VirtualEconomyDomain"
+    ],
+    "implemented_in_layer": [
+      "MiddlewareLayer"
+    ],
+    "source": [
+      "GDPR",
+      "W3C DID Core",
+      "ISO 29184"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

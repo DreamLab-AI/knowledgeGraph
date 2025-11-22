@@ -1,0 +1,66 @@
+{
+  "id": "Economic Mechanism",
+  "title": "Economic Mechanism",
+  "content": "- ### OntologyBlock\n  id:: economic-mechanism-ontology\n  collapsed:: true\n\n  - **Identification**\n    - ontology:: true\n    - term-id:: PC-0005\n    - preferred-term:: Economic Mechanism\n    - source-domain:: metaverse\n    - status:: complete\n    - public-access:: true\n    - version:: 1.0.0\n    - last-updated:: 2025-11-08\n\n  - **Definition**\n    - definition:: An Economic Mechanism is a structured system of incentives, penalties, and resource allocation rules designed to align participant behavior with desired network outcomes in blockchain ecosystems. Drawing from mechanism design theory in economics, blockchain economic mechanisms create game-theoretic environments where rational self-interested actors produce collectively beneficial outcomes without central coordination. These mechanisms encompass token economics (tokenomics) including supply schedules, distribution models, and utility functions; transaction fee markets that allocate limited block space to highest-value transactions; mining or staking rewards that incentivize honest participation in consensus; slashing penalties that discourage malicious behavior; and automated market makers that enable decentralized exchange. Effective economic mechanisms must balance multiple objectives: incentive compatibility (honest behavior should be profitable), budget balance (rewards don't exceed available resources), individual rationality (participants benefit from participation), and resistance to collusion or Sybil attacks. The design space includes considerations of inflation vs. deflation, fee burning vs. redistribution, and wealth concentration vs. broad distribution, each with implications for network security, sustainability, and decentralization.\n    - maturity:: mature\n    - source:: [[Mechanism Design Theory]], [[Tokenomics Research]], [[Transaction Fee Economics]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:EconomicMechanism\n    - owl:physicality:: ConceptualEntity\n    - owl:role:: Concept\n    - owl:inferred-class:: ConceptualConcept\n    - is-subclass-of:: [[Blockchain]]\n    - belongsToDomain:: [[BlockchainDomain]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "backlinks": [
+    "Blockchain Entity",
+    "BC 0112 inflationary token",
+    "BC 0109 priority fee"
+  ],
+  "wiki_links": [
+    "Mechanism Design Theory",
+    "BlockchainDomain",
+    "Transaction Fee Economics",
+    "Tokenomics Research",
+    "Blockchain"
+  ],
+  "ontology": {
+    "term_id": "PC-0005",
+    "preferred_term": "Economic Mechanism",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#EconomicMechanism",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "An Economic Mechanism is a structured system of incentives, penalties, and resource allocation rules designed to align participant behavior with desired network outcomes in blockchain ecosystems. Drawing from mechanism design theory in economics, blockchain economic mechanisms create game-theoretic environments where rational self-interested actors produce collectively beneficial outcomes without central coordination. These mechanisms encompass token economics (tokenomics) including supply schedules, distribution models, and utility functions; transaction fee markets that allocate limited block space to highest-value transactions; mining or staking rewards that incentivize honest participation in consensus; slashing penalties that discourage malicious behavior; and automated market makers that enable decentralized exchange. Effective economic mechanisms must balance multiple objectives: incentive compatibility (honest behavior should be profitable), budget balance (rewards don't exceed available resources), individual rationality (participants benefit from participation), and resistance to collusion or Sybil attacks. The design space includes considerations of inflation vs. deflation, fee burning vs. redistribution, and wealth concentration vs. broad distribution, each with implications for network security, sustainability, and decentralization.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-08",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:EconomicMechanism",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": "ConceptualConcept",
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "Mechanism Design Theory",
+      "Tokenomics Research",
+      "Transaction Fee Economics"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'bc' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "Value Transfer",
+  "title": "Value Transfer",
+  "content": "- ### OntologyBlock\n  id:: value-transfer-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: DT-0001\n    - preferred-term:: Value Transfer\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-15\n    - qualityScore:: 0.94\n\n  - **Definition**\n    - definition:: The mechanism and process by which economic value, rights, or utility are exchanged between parties across physical, digital, and virtual domains, encompassing monetary systems, token-based systems, resource allocation, and rights transfer protocols.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[BIS Innovation Hub]], [[W3C Web Payments]]\n    - authority-score:: 1.0\n\n  - **Semantic Classification**\n    - owl:class:: dt:ValueTransfer\n    - owl:physicality:: ConceptualEntity\n    - owl:role:: Process\n    - owl:inferred-class:: dt:ConceptualProcess\n    - is-subclass-of:: [[Metaverse]]\n    - belongsToDomain:: [[EconomicSystemDomain]], [[BlockchainDomain]], [[MetaverseDomain]], [[AI-GroundedDomain]], [[RoboticsDomain]]\n\n  - #### OWL Restrictions\n    - implemented-by some PaymentSystem\n    - implemented-by some SmartContract\n    - requires some ValueRepresentation\n    - enables some EconomicExchange\n    - enables some Commerce\n    - has-part some RightsTransfer\n    - has-part some ResourceAllocation\n    - implemented-by some ExchangeProtocol\n    - enables some Trade\n    - implemented-by some Transaction\n    - enables some Payment\n    - is-enabled-by some Stablecoin\n    - has-part some DigitalCurrency\n    - has-part some Money\n    - enables some Settlement\n    - has-part some Token\n    - has-part some BarterSystem\n    - requires some TransferProtocol\n    - is-enabled-by some DigitalAsset\n    - requires some TrustMechanism\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[SmartContract]] via implemented-by\n    - bridges-to:: [[Token]] via has-part\n    - bridges-to:: [[BarterSystem]] via has-part\n    - bridges-to:: [[Transaction]] via implemented-by\n    - bridges-to:: [[DigitalCurrency]] via has-part\n    - bridges-from:: [[Bitcoin]] via bridges-to\n\n  -",
+  "backlinks": [
+    "Stablecoin",
+    "Bitcoin"
+  ],
+  "wiki_links": [
+    "BIS Innovation Hub",
+    "ISO/IEC 23257:2021",
+    "Bitcoin",
+    "BarterSystem",
+    "BlockchainDomain",
+    "RoboticsDomain",
+    "Metaverse",
+    "W3C Web Payments",
+    "EconomicSystemDomain",
+    "Transaction",
+    "DigitalCurrency",
+    "Token",
+    "AI-GroundedDomain",
+    "SmartContract",
+    "MetaverseDomain"
+  ],
+  "ontology": {
+    "term_id": "DT-0001",
+    "preferred_term": "Value Transfer",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/disruptive-tech#ValueTransfer",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "The mechanism and process by which economic value, rights, or utility are exchanged between parties across physical, digital, and virtual domains, encompassing monetary systems, token-based systems, resource allocation, and rights transfer protocols.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-15",
+    "authority_score": 1.0,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "dt:ValueTransfer",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Process",
+    "owl_inferred_class": "dt:ConceptualProcess",
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "SmartContract via implemented",
+      "Token via has",
+      "BarterSystem via has",
+      "Transaction via implemented",
+      "DigitalCurrency via has"
+    ],
+    "bridges_from": [
+      "Bitcoin via bridges"
+    ],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "EconomicSystemDomain",
+      "BlockchainDomain",
+      "MetaverseDomain",
+      "AI-GroundedDomain",
+      "RoboticsDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "ISO/IEC 23257:2021",
+      "BIS Innovation Hub",
+      "W3C Web Payments"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'dt' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

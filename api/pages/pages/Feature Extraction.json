@@ -1,0 +1,58 @@
+{
+  "id": "Feature Extraction",
+  "title": "Feature Extraction",
+  "content": "- ### OntologyBlock\n  id:: feature-extraction-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0060\n\t- preferred-term:: Feature Extraction\n\t- source-domain:: ai\n\t- status:: draft\n\t- public-access:: true\n\n\n### Relationships\n- is-subclass-of:: [[ComputerVisionTask]]\n\n\n\n## Academic Context\n\n- Feature extraction is a fundamental process in machine learning and data analysis that involves transforming raw, often unstructured data into a set of meaningful, informative features suitable for model training and analysis.\n  - It serves to reduce data dimensionality while preserving task-relevant information, thereby improving computational efficiency and predictive accuracy.\n  - The academic foundations of feature extraction span signal processing, statistics, and computer vision, with methods evolving from manual feature crafting to automated extraction via deep learning architectures.\n  - Key developments include classical techniques such as Principal Component Analysis (PCA), wavelet transforms, and more recent advances in automated feature extraction through convolutional neural networks (CNNs) and transformer models.\n\n## Current Landscape (2025)\n\n- Feature extraction remains a critical step in machine learning pipelines, especially for domains with complex data such as images, speech, and text.\n  - Industry adoption is widespread across sectors including finance (credit risk modelling), healthcare (early disease detection), and e-commerce (customer behaviour prediction).\n  - Notable platforms and organisations utilising advanced feature extraction techniques include Google AI, DeepMind, and UK-based AI firms such as Faculty and BenevolentAI.\n  - In the UK, particularly in North England cities like Manchester and Leeds, there is growing integration of feature extraction in AI-driven health analytics and smart city projects.\n- Technical capabilities have advanced with automated feature extraction embedded in deep learning frameworks, though manual feature engineering remains relevant for time-series and signal data.\n- Limitations include challenges in interpretability of automatically extracted features and computational costs for very high-dimensional data.\n- Standards and frameworks for feature extraction are evolving, with increasing emphasis on reproducibility, explainability, and integration with data governance policies.\n\n## Research & Literature\n\n- Key academic papers and sources:\n  - Guyon, I., & Elisseeff, A. (2003). An Introduction to Variable and Feature Selection. *Journal of Machine Learning Research*, 3, 1157–1182. DOI: 10.1162/153244303322753616\n  - Bengio, Y., Courville, A., & Vincent, P. (2013). Representation Learning: A Review and New Perspectives. *IEEE Transactions on Pattern Analysis and Machine Intelligence*, 35(8), 1798–1828. DOI: 10.1109/TPAMI.2013.50\n  - Liu, H., & Motoda, H. (Eds.). (2012). *Feature Extraction, Construction and Selection: A Data Mining Perspective*. Springer. ISBN: 978-1461439649\n- Ongoing research focuses on:\n  - Enhancing automated feature extraction interpretability.\n  - Hybrid approaches combining domain knowledge with deep learning.\n  - Feature extraction for multimodal data fusion.\n  - Efficient feature extraction for edge computing and real-time applications.\n\n## UK Context\n\n- The UK has contributed significantly to feature extraction research, with institutions like the Alan Turing Institute leading in AI and data science innovation.\n- North England innovation hubs in Manchester, Leeds, Newcastle, and Sheffield are active in applying feature extraction to healthcare analytics, urban planning, and industrial IoT.\n  - For example, Manchester’s AI Health Innovation Hub integrates feature extraction techniques to improve diagnostic imaging analysis.\n  - Leeds-based startups are leveraging feature extraction in natural language processing for financial services.\n- Regional case studies demonstrate successful deployment of feature extraction in smart city initiatives and predictive maintenance in manufacturing sectors.\n\n## Future Directions\n\n- Emerging trends include:\n  - Greater automation and integration of feature extraction within end-to-end machine learning pipelines.\n  - Development of explainable feature extraction methods to satisfy regulatory and ethical standards.\n  - Expansion of feature extraction techniques to handle increasingly complex and heterogeneous data sources.\n- Anticipated challenges:\n  - Balancing automation with domain expertise to avoid loss of critical contextual information.\n  - Managing computational demands as data dimensionality and volume grow.\n  - Ensuring fairness and bias mitigation in feature selection processes.\n- Research priorities:\n  - Creating robust, generalisable feature extraction frameworks.\n  - Enhancing interpretability and transparency.\n  - Tailoring feature extraction for UK-specific datasets and regulatory environments.\n\n## References\n\n1. Guyon, I., & Elisseeff, A. (2003). An Introduction to Variable and Feature Selection. *Journal of Machine Learning Research*, 3, 1157–1182. DOI: 10.1162/153244303322753616  \n2. Bengio, Y., Courville, A., & Vincent, P. (2013). Representation Learning: A Review and New Perspectives. *IEEE Transactions on Pattern Analysis and Machine Intelligence*, 35(8), 1798–1828. DOI: 10.1109/TPAMI.2013.50  \n3. Liu, H., & Motoda, H. (Eds.). (2012). *Feature Extraction, Construction and Selection: A Data Mining Perspective*. Springer. ISBN: 978-1461439649\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Variational Autoencoders"
+  ],
+  "wiki_links": [
+    "ComputerVisionTask"
+  ],
+  "ontology": {
+    "term_id": "AI-0060",
+    "preferred_term": "Feature Extraction",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": null,
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: owl:class",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

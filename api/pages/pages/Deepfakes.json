@@ -1,0 +1,116 @@
+{
+  "id": "Deepfakes",
+  "title": "Deepfakes",
+  "content": "- ### OntologyBlock\n  id:: deepfakes-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20238\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: Deepfakes\n\t- definition:: AI-generated or manipulated synthetic media content that convincingly alters a person's appearance, voice, or actions using deep learning techniques such as GANs, autoencoders, and voice synthesis models.\n\t- maturity:: mature\n\t- source:: [[Reed Smith]], [[ISO 29100]]\n\t- owl:class:: mv:Deepfakes\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[CreativeMediaDomain]], [[TrustAndGovernanceDomain]]\n\t- implementedInLayer:: [[MiddlewareLayer]]\n\t- #### Relationships\n\t  id:: deepfakes-relationships\n\t\t- has-part:: [[Face Swapping]], [[Voice Cloning]], [[Gesture Synthesis]], [[Synthetic Video Generation]], [[Audio Manipulation]]\n\t\t- is-part-of:: [[Synthetic Media]], [[AI-Generated Content]]\n\t\t- requires:: [[Deep Learning]], [[Generative Adversarial Network]], [[Neural Network]], [[Training Dataset]], [[Computational Infrastructure]]\n\t\t- depends-on:: [[Computer Vision]], [[Audio Processing]], [[Machine Learning Models]], [[Face Recognition]]\n\t\t- enables:: [[Content Creation]], [[Media Manipulation]], [[Entertainment Production]], [[Identity Deception]], [[Misinformation]]\n\t- #### OWL Axioms\n\t  id:: deepfakes-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:Deepfakes))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:Deepfakes mv:VirtualEntity)\n\t\t  SubClassOf(mv:Deepfakes mv:Object)\n\n\t\t  # Synthetic media artifact created by AI\n\t\t  SubClassOf(mv:Deepfakes mv:SyntheticMedia)\n\t\t  SubClassOf(mv:Deepfakes mv:AIGeneratedContent)\n\n\t\t  # Requires deep learning infrastructure\n\t\t  SubClassOf(mv:Deepfakes\n\t\t    ObjectSomeValuesFrom(mv:requires ai:DeepLearning)\n\t\t  )\n\t\t  SubClassOf(mv:Deepfakes\n\t\t    ObjectSomeValuesFrom(mv:requires mv:GenerativeAdversarialNetwork)\n\t\t  )\n\t\t  SubClassOf(mv:Deepfakes\n\t\t    ObjectSomeValuesFrom(mv:requires ai:NeuralNetwork)\n\t\t  )\n\n\t\t  # Has modality components\n\t\t  SubClassOf(mv:Deepfakes\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:FaceSwapping)\n\t\t  )\n\t\t  SubClassOf(mv:Deepfakes\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:VoiceCloning)\n\t\t  )\n\t\t  SubClassOf(mv:Deepfakes\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:SyntheticVideoGeneration)\n\t\t  )\n\n\t\t  # Depends on computer vision and audio processing\n\t\t  SubClassOf(mv:Deepfakes\n\t\t    ObjectSomeValuesFrom(mv:dependsOn mv:ComputerVision)\n\t\t  )\n\t\t  SubClassOf(mv:Deepfakes\n\t\t    ObjectSomeValuesFrom(mv:dependsOn mv:AudioProcessing)\n\t\t  )\n\n\t\t  # Domain classifications\n\t\t  SubClassOf(mv:Deepfakes\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:CreativeMediaDomain)\n\t\t  )\n\t\t  SubClassOf(mv:Deepfakes\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:TrustAndGovernanceDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:Deepfakes\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:MiddlewareLayer)\n\t\t  )\n\n\t\t  # Quality constraint - requires high-fidelity synthesis\n\t\t  SubClassOf(mv:Deepfakes\n\t\t    DataHasValue(mv:requiresHighFidelity \"true\"^^xsd:boolean)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:requires)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n```\n\n### Relationships\n- is-subclass-of:: [[GenerativeAI]]",
+  "backlinks": [
+    "AI Risk",
+    "Safety Laser Scanner"
+  ],
+  "wiki_links": [
+    "Computational Infrastructure",
+    "Entertainment Production",
+    "Computer Vision",
+    "Audio Processing",
+    "Misinformation",
+    "Voice Cloning",
+    "Media Manipulation",
+    "Synthetic Video Generation",
+    "MiddlewareLayer",
+    "Face Swapping",
+    "Gesture Synthesis",
+    "ISO 29100",
+    "Audio Manipulation",
+    "AI-Generated Content",
+    "Neural Network",
+    "Generative Adversarial Network",
+    "Face Recognition",
+    "Synthetic Media",
+    "Deep Learning",
+    "GenerativeAI",
+    "TrustAndGovernanceDomain",
+    "Training Dataset",
+    "Content Creation",
+    "Reed Smith",
+    "CreativeMediaDomain",
+    "Identity Deception",
+    "Machine Learning Models"
+  ],
+  "ontology": {
+    "term_id": "20238",
+    "preferred_term": "Deepfakes",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#Deepfakes",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "AI-generated or manipulated synthetic media content that convincingly alters a person's appearance, voice, or actions using deep learning techniques such as GANs, autoencoders, and voice synthesis models.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:Deepfakes",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
+    "is_subclass_of": [],
+    "has_part": [
+      "Face Swapping",
+      "Voice Cloning",
+      "Gesture Synthesis",
+      "Synthetic Video Generation",
+      "Audio Manipulation"
+    ],
+    "is_part_of": [
+      "Synthetic Media",
+      "AI-Generated Content"
+    ],
+    "requires": [
+      "Deep Learning",
+      "Generative Adversarial Network",
+      "Neural Network",
+      "Training Dataset",
+      "Computational Infrastructure"
+    ],
+    "depends_on": [
+      "Computer Vision",
+      "Audio Processing",
+      "Machine Learning Models",
+      "Face Recognition"
+    ],
+    "enables": [
+      "Content Creation",
+      "Media Manipulation",
+      "Entertainment Production",
+      "Identity Deception",
+      "Misinformation"
+    ],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "CreativeMediaDomain",
+      "TrustAndGovernanceDomain"
+    ],
+    "implemented_in_layer": [
+      "MiddlewareLayer"
+    ],
+    "source": [
+      "Reed Smith",
+      "ISO 29100"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

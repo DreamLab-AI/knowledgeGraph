@@ -1,0 +1,69 @@
+{
+  "id": "Mobile-Robot",
+  "title": "Mobile Robot",
+  "content": "- ### OntologyBlock\n  id:: mobile-robot-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: RB\n\n    - sequence-number:: 0002\n\n    - filename-history:: [\"RB-0002-mobile-robot.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[RoboticsTechnology]]\n    - term-id:: RB-0002\n    - preferred-term:: Mobile Robot\n    - source-domain:: robotics\n    - status:: complete\n    - version:: 2.0.0\n    - last-updated:: 2025-11-14\n\n  - **Definition**\n    - definition:: A mobile robot is a robot with locomotion capabilities that enable it to move within its working environment.\n    - maturity:: mature\n    - source:: [[ISO 8373:2021]]\n    - authority-score:: 0.98\n\n  - **Semantic Classification**\n    - owl:class:: rb:MobileRobot\n    - owl:physicality:: PhysicalEntity\n    - owl:role:: Object\n    - belongsToDomain:: [[Robotics]]\n\n  - #### OWL Restrictions\n    - hasNavigationCapability some NavigationSystem\n    - performsLocalisation some LocalisationMethod\n    - is-part-of some RobotRb0001\n    - hasLocomotionSystem some LocomotionMechanism\n    - operatesInEnvironment some OperationalEnvironment\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[LocalisationMethod]] via performsLocalisation\n    - bridges-to:: [[LocomotionMechanism]] via hasLocomotionSystem\n    - bridges-to:: [[NavigationSystem]] via hasNavigationCapability\n    - bridges-to:: [[OperationalEnvironment]] via operatesInEnvironment\n    - dt:requires:: [[PathPlanning]]\n    - dt:uses:: [[Computer Vision]]\n\n  -",
+  "backlinks": [],
+  "wiki_links": [
+    "RoboticsTechnology",
+    "Computer Vision",
+    "NavigationSystem",
+    "ISO 8373:2021",
+    "Robotics",
+    "PathPlanning",
+    "LocomotionMechanism",
+    "OperationalEnvironment",
+    "LocalisationMethod"
+  ],
+  "ontology": {
+    "term_id": "RB-0002",
+    "preferred_term": "Mobile Robot",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/robotics#MobileRobot",
+    "source_domain": "robotics",
+    "domain": "robotics",
+    "domain_full_name": "",
+    "definition": "A mobile robot is a robot with locomotion capabilities that enable it to move within its working environment.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "2.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-14",
+    "authority_score": 0.98,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "rb:MobileRobot",
+    "owl_physicality": "PhysicalEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "LocalisationMethod via performsLocalisation",
+      "LocomotionMechanism via hasLocomotionSystem",
+      "NavigationSystem via hasNavigationCapability",
+      "OperationalEnvironment via operatesInEnvironment"
+    ],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Robotics"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "ISO 8373:2021"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'rb' doesn't match source-domain 'robotics'"
+      ]
+    }
+  }
+}

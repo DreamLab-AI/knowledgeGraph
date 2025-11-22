@@ -1,0 +1,87 @@
+{
+  "id": "Avatar",
+  "title": "Avatar",
+  "content": "- ### OntologyBlock\n  id:: avatar-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20067\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: Avatar\n\t- definition:: Digital representation of a person or agent used to interact within a virtual environment.\n\t- maturity:: mature\n\t- source:: [[ACM + Web3D HAnim]]\n\t- owl:class:: mv:Avatar\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Agent\n\t- owl:inferred-class:: mv:VirtualAgent\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InteractionDomain]]\n\t- implementedInLayer:: [[UserExperienceLayer]]\n\t- #### Relationships\n\t  id:: avatar-relationships\n\t\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t\t- is-part-of:: [[Metaverse]]\n\t\t- has-part:: [[Visual Mesh]], [[Animation Rig]]\n\t\t- requires:: [[3D Rendering Engine]]\n\t\t- enables:: [[User Embodiment]], [[Social Presence]]\n\t- #### CrossDomainBridges\n\t\t- dt:uses:: [[Computer Vision]]\n\t\t- dt:uses:: [[Machine Learning]]\n\t- #### OWL Axioms\n\t  id:: avatar-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:Avatar))\n\n\t\t  # Classification\n\t\t  SubClassOf(mv:Avatar mv:VirtualEntity)\n\t\t  SubClassOf(mv:Avatar mv:Agent)\n\n\t\t  # Constraints\n\t\t  SubClassOf(mv:Avatar\n\t\t    ObjectExactCardinality(1 mv:represents mv:Agent)\n\t\t  )\n\n\t\t  # Domain Classification\n\t\t  SubClassOf(mv:Avatar\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:InteractionDomain)\n\t\t  )\n\t\t  SubClassOf(mv:Avatar\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:UserExperienceLayer)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:requires)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n```",
+  "backlinks": [
+    "Metaverse_Ontology_Schema",
+    "Metaverse",
+    "ETSI Domain Virtual Society",
+    "TELE-100-ai-avatars",
+    "Decentralized Identifiers"
+  ],
+  "wiki_links": [
+    "Social Presence",
+    "Computer Vision",
+    "InteractionDomain",
+    "UserExperienceLayer",
+    "ArtificialIntelligence",
+    "Metaverse",
+    "Visual Mesh",
+    "3D Rendering Engine",
+    "Machine Learning",
+    "Animation Rig",
+    "User Embodiment",
+    "ACM + Web3D HAnim"
+  ],
+  "ontology": {
+    "term_id": "20067",
+    "preferred_term": "Avatar",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#Avatar",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "Digital representation of a person or agent used to interact within a virtual environment.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:Avatar",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Agent",
+    "owl_inferred_class": "mv:VirtualAgent",
+    "is_subclass_of": [
+      "ArtificialIntelligence"
+    ],
+    "has_part": [
+      "Visual Mesh",
+      "Animation Rig"
+    ],
+    "is_part_of": [
+      "Metaverse"
+    ],
+    "requires": [
+      "3D Rendering Engine"
+    ],
+    "depends_on": [],
+    "enables": [
+      "User Embodiment",
+      "Social Presence"
+    ],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "InteractionDomain"
+    ],
+    "implemented_in_layer": [
+      "UserExperienceLayer"
+    ],
+    "source": [
+      "ACM + Web3D HAnim"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

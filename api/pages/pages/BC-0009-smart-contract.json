@@ -1,0 +1,71 @@
+{
+  "id": "BC-0009-smart-contract",
+  "title": "Smart Contract",
+  "content": "- ### OntologyBlock\n  id:: smart-contract-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0009\n    - preferred-term:: Smart Contract\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Self-executing programmable code within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:SmartContract\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[BlockchainDomain]]\n    - implementedInLayer:: [[ConceptualLayer]]\n\n  - #### Relationships\n    id:: smart-contract-relationships\n    - is-subclass-of:: [[Blockchain Entity]], [[DistributedDataStructure]]\n  - #### CrossDomainBridges\n    - dt:uses:: [[Bias Detection Methods]]\n    - bc:governs:: [[Marketplace]]\n    - bc:authenticates:: [[DigitalAvatar]]\n\n  - #### OWL Axioms\n    id:: smart-contract-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\nPrefix(dct:=<http://purl.org/dc/terms/>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0009>\n  Import(<http://metaverse-ontology.org/blockchain/core>)\n\n  ## Class Declaration\n  Declaration(Class(:SmartContract))\n\n  ## Subclass Relationships\n  SubClassOf(:SmartContract :DistributedDataStructure)\n  SubClassOf(:SmartContract :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:SmartContract\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:SmartContract\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :SmartContract \"BC-0009\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :SmartContract \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :SmartContract \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :SmartContract :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :SmartContract :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :SmartContract \"Smart Contract\"@en)\n  AnnotationAssertion(rdfs:comment :SmartContract\n    \"Self-executing programmable code\"@en)\n  AnnotationAssertion(dct:description :SmartContract\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :SmartContract \"BC-0009\")\n  AnnotationAssertion(:priority :SmartContract \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :SmartContract \"blockchain-fundamentals\"@en)\n)\n      ```",
+  "backlinks": [],
+  "wiki_links": [
+    "Blockchain Entity",
+    "ISO/IEC 23257:2021",
+    "IEEE 2418.1",
+    "BlockchainDomain",
+    "Marketplace",
+    "NIST NISTIR",
+    "ConceptualLayer",
+    "Bias Detection Methods",
+    "DigitalAvatar",
+    "DistributedDataStructure"
+  ],
+  "ontology": {
+    "term_id": "BC-0009",
+    "preferred_term": "Smart Contract",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#SmartContract",
+    "source_domain": "blockchain",
+    "domain": "blockchain",
+    "domain_full_name": "",
+    "definition": "Self-executing programmable code within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-10-28",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:SmartContract",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "bc:VirtualObject",
+    "is_subclass_of": [
+      "Blockchain Entity",
+      "DistributedDataStructure"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [
+      "ConceptualLayer"
+    ],
+    "source": [
+      "ISO/IEC 23257:2021",
+      "IEEE 2418.1",
+      "NIST NISTIR"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+      ]
+    }
+  }
+}

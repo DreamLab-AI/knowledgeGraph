@@ -1,0 +1,87 @@
+{
+  "id": "Transaction",
+  "title": "Transaction",
+  "content": "- ### OntologyBlock\n  id:: transaction-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0006\n\n    - filename-history:: [\"BC-0006-transaction.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[BlockchainTechnology]]\n    - term-id:: BC-0006\n    - preferred-term:: Transaction\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: State-changing operation on blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Transaction\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[BlockchainDomain]]\n    - owl:disjointWith:: [[TrainingData]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Distributeddatastructure]] via is-subclass-of\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-from:: [[ValueTransfer]] via implemented-by\n    - bridges-from:: [[Bitcoin]] via has-part\n\n  -",
+  "backlinks": [
+    "BC-0018-transaction-pool",
+    "BC-0068-coinbase-transaction",
+    "Blockchain Entity",
+    "BC-0022-output",
+    "RGB and Client Side Validation",
+    "BC-0023-script",
+    "BC-0007-utxo-model",
+    "BC-0020-transaction-confirmation",
+    "Bitcoin",
+    "Value Transfer",
+    "SHA-256",
+    "BC-0021-input",
+    "BC-0008-account-model"
+  ],
+  "wiki_links": [
+    "TrainingData",
+    "Bitcoin",
+    "ISO/IEC 23257:2021",
+    "BlockchainTechnology",
+    "BlockchainEntity",
+    "IEEE 2418.1",
+    "BlockchainDomain",
+    "NIST NISTIR",
+    "Distributeddatastructure",
+    "ValueTransfer"
+  ],
+  "ontology": {
+    "term_id": "BC-0006",
+    "preferred_term": "Transaction",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#Transaction",
+    "source_domain": "blockchain",
+    "domain": "blockchain",
+    "domain_full_name": "",
+    "definition": "State-changing operation on blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-10-28",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:Transaction",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "bc:VirtualObject",
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "Distributeddatastructure via is",
+      "BlockchainEntity via is"
+    ],
+    "bridges_from": [
+      "ValueTransfer via implemented",
+      "Bitcoin via has"
+    ],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "ISO/IEC 23257:2021",
+      "IEEE 2418.1",
+      "NIST NISTIR"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+      ]
+    }
+  }
+}

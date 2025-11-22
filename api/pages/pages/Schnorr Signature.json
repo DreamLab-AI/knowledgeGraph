@@ -1,0 +1,69 @@
+{
+  "id": "Schnorr Signature",
+  "title": "Schnorr Signature",
+  "content": "- ### OntologyBlock\n  id:: schnorr-signature-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0041\n\n    - filename-history:: [\"BC-0041-schnorr-signature.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[BlockchainTechnology]]\n    - term-id:: BC-0041\n    - preferred-term:: Schnorr Signature\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Cryptographic digital signature scheme based on discrete logarithm problem hardness, providing efficient, aggregatable, and provably secure signatures for Bitcoin transactions, enabling multi-signature constructions (MuSig2), threshold signatures (FROST), enhanced privacy through signature indistinguishability, and reduced blockchain footprint via signature aggregation in Taproot.\n    - maturity:: production\n    - source:: [[BIP 340 Schnorr Signatures]], [[BIP 341 Taproot]], [[MuSig2 Specification]], [[FROST Protocol]], [[Bitcoin Core 2025]]\n    - authority-score:: 0.98\n\n  - **Semantic Classification**\n    - owl:class:: bc:SchnorrSignature\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  -",
+  "backlinks": [],
+  "wiki_links": [
+    "BIP 340 Schnorr Signatures",
+    "BlockchainTechnology",
+    "BIP 341 Taproot",
+    "BlockchainEntity",
+    "FROST Protocol",
+    "Bitcoin Core 2025",
+    "CryptographicDomain",
+    "MuSig2 Specification"
+  ],
+  "ontology": {
+    "term_id": "BC-0041",
+    "preferred_term": "Schnorr Signature",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#SchnorrSignature",
+    "source_domain": "blockchain",
+    "domain": "blockchain",
+    "domain_full_name": "",
+    "definition": "Cryptographic digital signature scheme based on discrete logarithm problem hardness, providing efficient, aggregatable, and provably secure signatures for Bitcoin transactions, enabling multi-signature constructions (MuSig2), threshold signatures (FROST), enhanced privacy through signature indistinguishability, and reduced blockchain footprint via signature aggregation in Taproot.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "production",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-10-28",
+    "authority_score": 0.98,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:SchnorrSignature",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "bc:VirtualObject",
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "BlockchainEntity via is"
+    ],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "CryptographicDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "BIP 340 Schnorr Signatures",
+      "BIP 341 Taproot",
+      "MuSig2 Specification",
+      "FROST Protocol",
+      "Bitcoin Core 2025"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+      ]
+    }
+  }
+}

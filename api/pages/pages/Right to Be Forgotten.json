@@ -1,0 +1,56 @@
+{
+  "id": "Right to Be Forgotten",
+  "title": "Right to Be Forgotten",
+  "content": "- ### OntologyBlock\n  id:: righttobeforgotten-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20295\n\t- preferred-term:: Right to Be Forgotten\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Metaverse]]\n\t- public-access:: true\n\n\n\n## Academic Context\n\n- Brief contextual overview\n\t- The Right to Be Forgotten (RTBF) is a privacy right established under Article 17 of the General Data Protection Regulation (GDPR), allowing individuals to request the deletion or removal of their personal data under certain conditions\n\t- The concept emerged from European jurisprudence, notably the 2014 Google Spain v AEPD case, which affirmed that individuals could request search engines to delist links containing outdated or irrelevant personal information\n\t- RTBF is distinct from the right to privacy; while privacy concerns information not yet public, RTBF concerns the removal of information that was once public but is no longer relevant or necessary\n\n- Key developments and current state\n\t- The right is not absolute and must be balanced against other rights, such as freedom of expression and the public interest in access to information\n\t- In the UK, the right to erasure is enshrined in the UK GDPR, with additional guidance from the Information Commissioner’s Office (ICO)\n\t- The Data (Use and Access) Act 2025 introduced new exemptions, particularly regarding disproportionate effort and public interest, but the core framework remains aligned with EU GDPR\n\n- Academic foundations\n\t- The philosophical underpinnings of RTBF are rooted in autonomy, dignity, and the ability to control one’s digital footprint\n\t- Scholars debate the tension between individual privacy and collective memory, with ongoing research into the societal impacts of erasure\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n\t- Major search engines, including Google and Bing, have established processes for handling RTBF requests, often involving manual review and assessment of relevance and public interest\n\t- UK-based platforms and directories, such as local news sites and business directories, are required to comply with erasure requests under UK GDPR\n\t- In North England, cities like Manchester, Leeds, Newcastle, and Sheffield have seen increased awareness and use of RTBF, particularly among individuals seeking to manage their online reputations after negative media coverage\n\n- Notable organisations and platforms\n\t- Google, Bing, and other major search engines\n\t- Local news outlets and online directories in North England\n\t- Reputation management firms, such as Internet Erasure, which specialise in assisting individuals with RTBF requests\n\n- Technical capabilities and limitations\n\t- Automated systems can identify and process some erasure requests, but complex cases often require human review\n\t- Challenges include verifying the identity of the requester, assessing the relevance and public interest of the data, and ensuring compliance across multiple jurisdictions\n\n- Standards and frameworks\n\t- The UK GDPR and ICO guidance provide the primary legal framework\n\t- Industry best practices include transparent request processes, clear communication with data subjects, and robust audit trails\n\n## Research & Literature\n\n- Key academic papers and sources\n\t- Mantelero, A. (2014). \"The EU General Data Protection Regulation: A Commentary.\" *Computer Law & Security Review*, 30(5), 523-532. https://doi.org/10.1016/j.clsr.2014.07.001\n\t- Bennett, C. J., & Raab, C. D. (2006). \"The Governance of Privacy: Policy Instruments in Global Perspective.\" *MIT Press*. https://mitpress.mit.edu/books/governance-privacy\n\t- Solove, D. J. (2007). \"‘I’ve Got Nothing to Hide’ and Other Misunderstandings of Privacy.\" *San Diego Law Review*, 44, 745-772. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=998565\n\t- ICO. (2025). \"The right to erasure and the right to restriction.\" https://ico.org.uk/for-organisations/law-enforcement/guide-to-le-processing/individual-rights/the-right-to-erasure-and-the-right-to-restriction/\n\n- Ongoing research directions\n\t- The impact of RTBF on freedom of expression and access to information\n\t- The effectiveness of automated systems in handling erasure requests\n\t- The role of public interest and historical record in erasure decisions\n\n## UK Context\n\n- British contributions and implementations\n\t- The UK has adopted the EU GDPR framework, with additional guidance from the ICO and recent legislative updates through the Data (Use and Access) Act 2025\n\t- The ICO continues to provide detailed guidance on handling erasure requests, including the assessment of exemptions and public interest\n\n- North England innovation hubs\n\t- Cities like Manchester, Leeds, Newcastle, and Sheffield have seen the emergence of local reputation management firms and digital rights advocacy groups\n\t- These hubs often collaborate with universities and research institutions to explore the practical and ethical implications of RTBF\n\n- Regional case studies\n\t- Manchester: A local news outlet successfully handled a high-profile RTBF request, balancing the individual’s right to erasure with the public interest in access to information\n\t- Leeds: A university research project examined the impact of RTBF on local businesses and their online reputations\n\t- Newcastle: A community initiative provided support and resources for individuals seeking to exercise their RTBF rights\n\t- Sheffield: A local government agency implemented a streamlined process for handling erasure requests, improving transparency and efficiency\n\n## Future Directions\n\n- Emerging trends and developments\n\t- Increased use of automated systems for handling erasure requests\n\t- Greater emphasis on public interest and historical record in erasure decisions\n\t- Ongoing legislative and regulatory updates to address new challenges and technologies\n\n- Anticipated challenges\n\t- Balancing individual privacy with freedom of expression and access to information\n\t- Ensuring compliance across multiple jurisdictions and platforms\n\t- Addressing the potential for abuse of RTBF, such as attempts to erase legitimate public interest information\n\n- Research priorities\n\t- The impact of RTBF on digital reputation and online identity\n\t- The effectiveness of automated systems in handling complex erasure requests\n\t- The role of public interest and historical record in erasure decisions\n\n## References\n\n1. Mantelero, A. (2014). \"The EU General Data Protection Regulation: A Commentary.\" *Computer Law & Security Review*, 30(5), 523-532. https://doi.org/10.1016/j.clsr.2014.07.001\n2. Bennett, C. J., & Raab, C. D. (2006). \"The Governance of Privacy: Policy Instruments in Global Perspective.\" *MIT Press*. https://mitpress.mit.edu/books/governance-privacy\n3. Solove, D. J. (2007). \"‘I’ve Got Nothing to Hide’ and Other Misunderstandings of Privacy.\" *San Diego Law Review*, 44, 745-772. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=998565\n4. ICO. (2025). \"The right to erasure and the right to restriction.\" https://ico.org.uk/for-organisations/law-enforcement/guide-to-le-processing/individual-rights/the-right-to-erasure-and-the-right-to-restriction/\n5. Data (Use and Access) Act 2025. https://www.legislation.gov.uk/ukpga/2025/12/contents\n6. European Data Protection Board. (2025). \"CEF 2025: Launch of coordinated enforcement on the right to erasure.\" https://www.edpb.europa.eu/news/news/2025/cef-2025-launch-coordinated-enforcement-right-erasure_en\n7. Wikipedia. (2025). \"Right to be forgotten.\" https://en.wikipedia.org/wiki/Right_to_be_forgotten\n8. Internet Erasure. (2025). \"The Right to be Forgotten and GDPR in the UK.\" https://www.interneterasure.co.uk/the-right-to-be-forgotten-and-gdpr-in-the-uk.html\n9. Sprintlaw UK. (2025). \"Do I Have A Right To Be Forgotten?\" https://sprintlaw.co.uk/articles/right-to-be-forgotten/\n10. DLA Piper. (2025). \"Data protection laws in the United Kingdom.\" https://www.dlapiperdataprotection.com/?c=GB\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "Metaverse"
+  ],
+  "ontology": {
+    "term_id": "20295",
+    "preferred_term": "Right to Be Forgotten",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": null,
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: owl:class",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

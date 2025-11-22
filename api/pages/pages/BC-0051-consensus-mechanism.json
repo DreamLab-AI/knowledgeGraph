@@ -1,0 +1,70 @@
+{
+  "id": "BC-0051-consensus-mechanism",
+  "title": "Consensus Mechanism",
+  "content": "- ### OntologyBlock\n  id:: consensus-mechanism-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0051\n    - preferred-term:: Consensus Mechanism\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: A consensus mechanism is a fault-tolerant protocol that enables distributed network nodes to agree on a single, consistent state of a distributed ledger despite the presence of faulty or malicious nodes, ensuring all valid transactions are recorded in the same order across all nodes without requiring a trusted central authority.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[ITU-T Y.3051]], [[IEEE 2418.1]]\n    - authority-score:: 1.0\n\n  - **Semantic Classification**\n    - owl:class:: bc:ConsensusMechanism\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[ConsensusDomain]]\n    - implementedInLayer:: [[ProtocolLayer]]\n\n  - #### Relationships\n    id:: consensus-mechanism-relationships\n    - is-subclass-of:: [[Distributed Protocol]], [[Agreement Protocol]], [[Fault Tolerance System]]\n\n  - #### OWL Axioms\n    id:: consensus-mechanism-owl-axioms\n    collapsed:: true\n    - ```clojure\n      Prefix(:=<http://metaverse-ontology.org/blockchain#>)\nPrefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\nOntology(<http://metaverse-ontology.org/blockchain/BC-0051>\n\n  ## Class Declaration\n  Declaration(Class(:ConsensusMechanism))\n\n  ## Subclass Relationships\n  SubClassOf(:ConsensusMechanism :DistributedProtocol)\n  SubClassOf(:ConsensusMechanism :AgreementProtocol)\n  SubClassOf(:ConsensusMechanism :FaultToleranceSystem)\n\n  ## Essential Properties\n  SubClassOf(:ConsensusMechanism\n    (ObjectSomeValuesFrom :achieves :ConsensusState))\n\n  SubClassOf(:ConsensusMechanism\n    (ObjectSomeValuesFrom :tolerates :ByzantineFault))\n\n  SubClassOf(:ConsensusMechanism\n    (ObjectSomeValuesFrom :validates :Transaction))\n\n  SubClassOf(:ConsensusMechanism\n    (ObjectSomeValuesFrom :usedBy :Blockchain))\n\n  SubClassOf(:ConsensusMechanism\n    (DataSomeValuesFrom :hasSafetyProperty xsd:boolean))\n\n  SubClassOf(:ConsensusMechanism\n    (DataSomeValuesFrom :hasLivenessProperty xsd:boolean))\n\n  ## Consensus Properties\n  SubClassOf(:ConsensusMechanism\n    (ObjectExactCardinality 1 :hasValidationFunction :ValidationFunction))\n\n  SubClassOf(:ConsensusMechanism\n    (ObjectExactCardinality 1 :hasAgreementProtocol :AgreementProtocol))\n\n  ## Data Properties\n  DataPropertyAssertion(:faultToleranceThreshold :ConsensusMechanism xsd:decimal)\n  DataPropertyAssertion(:finalityTime :ConsensusMechanism xsd:duration)\n  DataPropertyAssertion(:throughput :ConsensusMechanism xsd:decimal)\n  DataPropertyAssertion(:energyEfficiency :ConsensusMechanism xsd:string)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:implementedBy :ConsensusMechanism :Blockchain)\n  ObjectPropertyAssertion(:requires :ConsensusMechanism :NetworkCondition)\n  ObjectPropertyAssertion(:produces :ConsensusMechanism :ConsensusState)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :ConsensusMechanism \"Consensus Mechanism\"@en)\n  AnnotationAssertion(rdfs:comment :ConsensusMechanism\n    \"Protocol enabling distributed nodes to agree on ledger state\"@en)\n  AnnotationAssertion(:termID :ConsensusMechanism \"BC-0051\")\n\n  ## Subclasses\n  Declaration(Class(:ProofOfWork))\n  SubClassOf(:ProofOfWork :ConsensusMechanism)\n\n  Declaration(Class(:ProofOfStake))\n  SubClassOf(:ProofOfStake :ConsensusMechanism)\n\n  Declaration(Class(:ByzantineFaultTolerance))\n  SubClassOf(:ByzantineFaultTolerance :ConsensusMechanism)\n\n  Declaration(Class(:ProofOfAuthority))\n  SubClassOf(:ProofOfAuthority :ConsensusMechanism)\n)\n      ```",
+  "backlinks": [],
+  "wiki_links": [
+    "Distributed Protocol",
+    "ISO/IEC 23257:2021",
+    "ITU-T Y.3051",
+    "ProtocolLayer",
+    "IEEE 2418.1",
+    "Agreement Protocol",
+    "ConsensusDomain",
+    "Fault Tolerance System"
+  ],
+  "ontology": {
+    "term_id": "BC-0051",
+    "preferred_term": "Consensus Mechanism",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#ConsensusMechanism",
+    "source_domain": "blockchain",
+    "domain": "blockchain",
+    "domain_full_name": "",
+    "definition": "A consensus mechanism is a fault-tolerant protocol that enables distributed network nodes to agree on a single, consistent state of a distributed ledger despite the presence of faulty or malicious nodes, ensuring all valid transactions are recorded in the same order across all nodes without requiring a trusted central authority.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-10-28",
+    "authority_score": 1.0,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:ConsensusMechanism",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "bc:VirtualObject",
+    "is_subclass_of": [
+      "Distributed Protocol",
+      "Agreement Protocol",
+      "Fault Tolerance System"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "ConsensusDomain"
+    ],
+    "implemented_in_layer": [
+      "ProtocolLayer"
+    ],
+    "source": [
+      "ISO/IEC 23257:2021",
+      "ITU-T Y.3051",
+      "IEEE 2418.1"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+      ]
+    }
+  }
+}

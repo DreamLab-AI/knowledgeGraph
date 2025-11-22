@@ -1,0 +1,59 @@
+{
+  "id": "Explanation",
+  "title": "Explanation",
+  "content": "- ### OntologyBlock\n  id:: explanation-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0823\n    - filename-history:: [\"AI-0823-explanation.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[DisruptiveTechnology]]\n    - term-id:: AI-0823\n    - preferred-term:: Explanation\n    - source-domain:: artificial-intelligence\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: Explanation of AI system behavior or decisions.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:Explanation\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### Relationships\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :Explanation))\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :Explanation \"Explanation\"@en)\n      (AnnotationAssertion rdfs:comment :Explanation\n        \"Explanation of AI system behavior or decisions.\"@en)\n      ```",
+  "backlinks": [],
+  "wiki_links": [
+    "DisruptiveTechnology",
+    "Artificial Intelligence"
+  ],
+  "ontology": {
+    "term_id": "AI-0823",
+    "preferred_term": "Explanation",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#Explanation",
+    "source_domain": "artificial-intelligence",
+    "domain": "artificial-intelligence",
+    "domain_full_name": "",
+    "definition": "Explanation of AI system behavior or decisions.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-13",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:Explanation",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Artificial Intelligence"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "Chimera Prime Research"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'ai' doesn't match source-domain 'artificial-intelligence'"
+      ]
+    }
+  }
+}

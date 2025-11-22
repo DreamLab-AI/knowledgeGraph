@@ -1,0 +1,71 @@
+{
+  "id": "BC-0075-peer-to-peer-network",
+  "title": "Peer-to-Peer Network",
+  "content": "- ### OntologyBlock\n  id:: peer-to-peer-network-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0075\n    - preferred-term:: Peer-to-Peer Network\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Decentralized communication within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Peer-to-peerNetwork\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### Relationships\n    id:: relationships\n    - is-subclass-of:: [[Blockchain Network]]\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Networkcomponent]] via is-subclass-of\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-from:: [[DistributedLedgerTechnologyDlt]] via requires\n\n  -",
+  "backlinks": [],
+  "wiki_links": [
+    "ISO/IEC 23257:2021",
+    "Networkcomponent",
+    "BlockchainEntity",
+    "IEEE 2418.1",
+    "NIST NISTIR",
+    "CryptographicDomain",
+    "Blockchain Network",
+    "DistributedLedgerTechnologyDlt"
+  ],
+  "ontology": {
+    "term_id": "BC-0075",
+    "preferred_term": "Peer-to-Peer Network",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#Peer-to-peerNetwork",
+    "source_domain": "blockchain",
+    "domain": "blockchain",
+    "domain_full_name": "",
+    "definition": "Decentralized communication within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-10-28",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:Peer-to-peerNetwork",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "bc:VirtualObject",
+    "is_subclass_of": [
+      "Blockchain Network"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "Networkcomponent via is",
+      "BlockchainEntity via is"
+    ],
+    "bridges_from": [
+      "DistributedLedgerTechnologyDlt via requires"
+    ],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "CryptographicDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "ISO/IEC 23257:2021",
+      "IEEE 2418.1",
+      "NIST NISTIR"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+      ]
+    }
+  }
+}

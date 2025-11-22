@@ -1,0 +1,17 @@
+{
+  "id": "OpenAI",
+  "title": "OpenAI",
+  "content": "- #Public page\n\t - automatically published\n-\n### Relationships\n- is-subclass-of:: [[AICompanies]]",
+  "backlinks": [
+    "AI Risk",
+    "Social Impact Assessment (SIA)",
+    "Artificial Intelligence",
+    "Variational Autoencoders",
+    "Bitcoin",
+    "Safety Laser Scanner",
+    "Generative AI"
+  ],
+  "wiki_links": [
+    "AICompanies"
+  ]
+}

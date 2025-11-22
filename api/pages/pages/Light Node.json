@@ -1,0 +1,74 @@
+{
+  "id": "Light Node",
+  "title": "Light Node",
+  "content": "- ### OntologyBlock\n  id:: light-node-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0074\n    - filename-history:: [\"BC-0074-light-node.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0074\n    - preferred-term:: Light Node\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 2.0.0\n    - last-updated:: 2025-11-14\n\n  - **Definition**\n    - definition:: A blockchain network node that stores only block headers and essential transaction data rather than the complete blockchain ledger, utilizing Simplified Payment Verification (SPV) to validate transactions efficiently with minimal resource requirements.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR 8202]], [[Bitcoin Whitepaper]]\n    - authority-score:: 0.98\n\n  - **Semantic Classification**\n    - owl:class:: bc:LightNode\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - is-subclass-of:: [[Blockchain]]\n    - belongsToDomain:: [[CryptographicDomain]], [[NetworkArchitecture]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Networkcomponent]] via is-subclass-of\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-from:: [[SceneGraph]] via has-part\n\n  -",
+  "backlinks": [],
+  "wiki_links": [
+    "SceneGraph",
+    "ISO/IEC 23257:2021",
+    "Networkcomponent",
+    "BlockchainEntity",
+    "NetworkArchitecture",
+    "IEEE 2418.1",
+    "Bitcoin Whitepaper",
+    "CryptographicDomain",
+    "Blockchain",
+    "NIST NISTIR 8202"
+  ],
+  "ontology": {
+    "term_id": "BC-0074",
+    "preferred_term": "Light Node",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#LightNode",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "A blockchain network node that stores only block headers and essential transaction data rather than the complete blockchain ledger, utilizing Simplified Payment Verification (SPV) to validate transactions efficiently with minimal resource requirements.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "2.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-14",
+    "authority_score": 0.98,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:LightNode",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "bc:VirtualObject",
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "Networkcomponent via is",
+      "BlockchainEntity via is"
+    ],
+    "bridges_from": [
+      "SceneGraph via has"
+    ],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "CryptographicDomain",
+      "NetworkArchitecture"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "ISO/IEC 23257:2021",
+      "IEEE 2418.1",
+      "NIST NISTIR 8202",
+      "Bitcoin Whitepaper"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'bc' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

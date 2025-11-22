@@ -1,0 +1,97 @@
+{
+  "id": "Immersion",
+  "title": "Immersion",
+  "content": "- ### OntologyBlock\n  id:: immersion-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20255\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: Immersion\n\t- definition:: Subjective experience of psychological engagement and sense of presence within a virtual environment, characterized by reduced awareness of physical surroundings and absorption in virtual context.\n\t- maturity:: mature\n\t- source:: [[ACM]]\n\t- owl:class:: mv:Immersion\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: mv:VirtualProcess\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InteractionDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]], [[PresentationLayer]]\n\t- #### Relationships\n\t  id:: immersion-relationships\n\t\t- is-subclass-of:: [[Metaverse Infrastructure]]\n\t\t- has-part:: [[Sensory Immersion]], [[Emotional Immersion]], [[Cognitive Immersion]]\n\t\t- requires:: [[Display Technology]], [[Interaction Mechanism]], [[Content Quality]]\n\t\t- enables:: [[Presence]], [[Flow State]], [[User Engagement]]\n\t\t- depends-on:: [[Visual Fidelity]], [[Audio Spatialization]], [[Haptic Feedback]]\n\t- #### OWL Axioms\n\t  id:: immersion-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:Immersion))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:Immersion mv:VirtualEntity)\n\t\t  SubClassOf(mv:Immersion mv:Process)\n\n\t\t  # Compositional structure - three primary dimensions\n\t\t  SubClassOf(mv:Immersion\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:SensoryImmersion)\n\t\t  )\n\n\t\t  SubClassOf(mv:Immersion\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:EmotionalImmersion)\n\t\t  )\n\n\t\t  SubClassOf(mv:Immersion\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:CognitiveImmersion)\n\t\t  )\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:Immersion\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:InteractionDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:Immersion\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)\n\t\t  )\n\n\t\t  SubClassOf(mv:Immersion\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:PresentationLayer)\n\t\t  )\n\n\t\t  # Technical requirements\n\t\t  SubClassOf(mv:Immersion\n\t\t    ObjectSomeValuesFrom(mv:requires mv:DisplayTechnology)\n\t\t  )\n\n\t\t  SubClassOf(mv:Immersion\n\t\t    ObjectSomeValuesFrom(mv:requires mv:InteractionMechanism)\n\t\t  )\n\n\t\t  SubClassOf(mv:Immersion\n\t\t    ObjectSomeValuesFrom(mv:requires mv:ContentQuality)\n\t\t  )\n\n\t\t  # Quality dependencies\n\t\t  SubClassOf(mv:Immersion\n\t\t    ObjectSomeValuesFrom(mv:dependsOn mv:VisualFidelity)\n\t\t  )\n\n\t\t  SubClassOf(mv:Immersion\n\t\t    ObjectSomeValuesFrom(mv:dependsOn mv:AudioSpatialization)\n\t\t  )\n\n\t\t  # Enabled experiences\n\t\t  SubClassOf(mv:Immersion\n\t\t    ObjectSomeValuesFrom(mv:enables mv:Presence)\n\t\t  )\n\n\t\t  SubClassOf(mv:Immersion\n\t\t    ObjectSomeValuesFrom(mv:enables mv:FlowState)\n\t\t  )\n\n\t\t  SubClassOf(mv:Immersion\n\t\t    ObjectSomeValuesFrom(mv:enables mv:UserEngagement)\n\t\t  )\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:requires)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n```",
+  "backlinks": [
+    "TELE-006-presence",
+    "Presence",
+    "TELE-001-telepresence"
+  ],
+  "wiki_links": [
+    "User Engagement",
+    "PresentationLayer",
+    "Flow State",
+    "Visual Fidelity",
+    "ApplicationLayer",
+    "Emotional Immersion",
+    "Content Quality",
+    "Presence",
+    "Display Technology",
+    "InteractionDomain",
+    "Cognitive Immersion",
+    "Interaction Mechanism",
+    "Audio Spatialization",
+    "Metaverse Infrastructure",
+    "Sensory Immersion",
+    "Haptic Feedback",
+    "ACM"
+  ],
+  "ontology": {
+    "term_id": "20255",
+    "preferred_term": "Immersion",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#Immersion",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "Subjective experience of psychological engagement and sense of presence within a virtual environment, characterized by reduced awareness of physical surroundings and absorption in virtual context.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:Immersion",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Process",
+    "owl_inferred_class": "mv:VirtualProcess",
+    "is_subclass_of": [
+      "Metaverse Infrastructure"
+    ],
+    "has_part": [
+      "Sensory Immersion",
+      "Emotional Immersion",
+      "Cognitive Immersion"
+    ],
+    "is_part_of": [],
+    "requires": [
+      "Display Technology",
+      "Interaction Mechanism",
+      "Content Quality"
+    ],
+    "depends_on": [
+      "Visual Fidelity",
+      "Audio Spatialization",
+      "Haptic Feedback"
+    ],
+    "enables": [
+      "Presence",
+      "Flow State",
+      "User Engagement"
+    ],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "InteractionDomain"
+    ],
+    "implemented_in_layer": [
+      "ApplicationLayer",
+      "PresentationLayer"
+    ],
+    "source": [
+      "ACM"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

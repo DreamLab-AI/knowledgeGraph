@@ -1,0 +1,62 @@
+{
+  "id": "Multirotor",
+  "title": "Multirotor UAV",
+  "content": "- ### OntologyBlock\n  id:: multirotor-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: RB\n    - sequence-number:: 0121\n    - filename-history:: [\"RB-0121-multirotor.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[RoboticsTechnology]]\n    - term-id:: RB-0121\n    - preferred-term:: Multirotor UAV\n    - source-domain:: robotics\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: Multirotor UAV achieves lift through multiple propellers driven by motors.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: rb:Multirotor\n    - belongsToDomain:: [[Robotics]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "backlinks": [
+    "Quadcopter",
+    "Octocopter"
+  ],
+  "wiki_links": [
+    "Robotics",
+    "RoboticsTechnology"
+  ],
+  "ontology": {
+    "term_id": "RB-0121",
+    "preferred_term": "Multirotor UAV",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/robotics#Multirotor",
+    "source_domain": "robotics",
+    "domain": "robotics",
+    "domain_full_name": "",
+    "definition": "Multirotor UAV achieves lift through multiple propellers driven by motors.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-13",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "rb:Multirotor",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Robotics"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "Chimera Prime Research"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'rb' doesn't match source-domain 'robotics'"
+      ]
+    }
+  }
+}
