@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: merkle-root-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0044\n    - preferred-term:: Merkle Root\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Top hash of Merkle tree within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:MerkleRoot\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### Relationships\n    id:: relationships\n    - is-subclass-of:: [[Merkle Tree]]\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  -",
   "backlinks": [],
   "wiki_links": [
+    "Merkle Tree",
     "ISO/IEC 23257:2021",
     "BlockchainEntity",
     "IEEE 2418.1",
     "NIST NISTIR",
-    "Merkle Tree",
     "CryptographicDomain"
   ],
   "ontology": {

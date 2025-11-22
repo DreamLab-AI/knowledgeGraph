@@ -7,12 +7,12 @@
     "SHA-256"
   ],
   "wiki_links": [
-    "ISO/IEC 23257:2021",
-    "BlockchainTechnology",
+    "NIST NISTIR 8202",
     "BlockchainEntity",
+    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
-    "CryptographicDomain",
-    "NIST NISTIR 8202"
+    "BlockchainTechnology",
+    "CryptographicDomain"
   ],
   "ontology": {
     "term_id": "BC-0035",

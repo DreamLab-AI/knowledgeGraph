@@ -7,13 +7,13 @@
     "BC 0115 minting"
   ],
   "wiki_links": [
-    "Economicmechanism",
-    "ISO/IEC 23257:2021",
-    "BlockchainTechnology",
-    "BlockchainEntity",
     "TokenEconomicsDomain",
+    "BlockchainEntity",
+    "Economicmechanism",
     "IEEE 2418.1",
-    "NIST NISTIR"
+    "BlockchainTechnology",
+    "NIST NISTIR",
+    "ISO/IEC 23257:2021"
   ],
   "ontology": {
     "term_id": "BC-0100",

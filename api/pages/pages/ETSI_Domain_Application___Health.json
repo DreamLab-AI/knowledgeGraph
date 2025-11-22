@@ -4,18 +4,18 @@
   "content": "- ### OntologyBlock\n  id:: etsi-domain-application-health-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20337\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: ETSI Domain Application + Health\n\t- definition:: Cross-domain marker for metaverse application components focused on healthcare and wellness including telemedicine platforms, medical training simulations, therapeutic VR applications, and health monitoring systems.\n\t- maturity:: mature\n\t- source:: [[ETSI GS MEC]]\n\t- owl:class:: mv:ETSIDomainApplicationHealth\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]], [[VirtualSocietyDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-application-health-relationships\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-part-of:: [[ETSI Domain Taxonomy]]\n\t\t- depends-on:: [[InfrastructureDomain]], [[VirtualSocietyDomain]]\n\t\t- enables:: [[Healthcare Application Classification]], [[Medical Platform Categorization]]\n\t\t- categorizes:: [[Telemedicine Platform]], [[Medical Simulation]], [[Therapeutic VR]], [[Health Monitoring]]\n\t- #### OWL Axioms\n\t  id:: etsi-domain-application-health-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:ETSIDomainApplicationHealth))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:ETSIDomainApplicationHealth mv:VirtualEntity)\n\t\t  SubClassOf(mv:ETSIDomainApplicationHealth mv:Object)\n\n\t\t  # Cross-domain marker classification\n\t\t  SubClassOf(mv:ETSIDomainApplicationHealth mv:DomainMarker)\n\t\t  SubClassOf(mv:ETSIDomainApplicationHealth mv:CrossDomainMarker)\n\n\t\t  # Multiple domain classification\n\t\t  SubClassOf(mv:ETSIDomainApplicationHealth\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:InfrastructureDomain)\n\t\t  )\n\t\t  SubClassOf(mv:ETSIDomainApplicationHealth\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:VirtualSocietyDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:ETSIDomainApplicationHealth\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n```",
   "backlinks": [],
   "wiki_links": [
-    "Healthcare Application Classification",
-    "ETSI Domain Taxonomy",
-    "ApplicationLayer",
-    "Health Monitoring",
-    "Medical Platform Categorization",
-    "Therapeutic VR",
-    "Metaverse",
     "Telemedicine Platform",
     "ETSI GS MEC",
+    "Health Monitoring",
+    "Metaverse",
+    "Healthcare Application Classification",
+    "Therapeutic VR",
+    "ETSI Domain Taxonomy",
+    "VirtualSocietyDomain",
     "InfrastructureDomain",
-    "Medical Simulation",
-    "VirtualSocietyDomain"
+    "ApplicationLayer",
+    "Medical Platform Categorization",
+    "Medical Simulation"
   ],
   "ontology": {
     "term_id": "20337",

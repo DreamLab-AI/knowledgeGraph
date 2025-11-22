@@ -7,9 +7,9 @@
     "ISO/IEC 23257:2021",
     "Networkcomponent",
     "IEEE 2418.1",
+    "Node",
     "NIST NISTIR",
-    "CryptographicDomain",
-    "Node"
+    "CryptographicDomain"
   ],
   "ontology": {
     "term_id": "BC-0093",

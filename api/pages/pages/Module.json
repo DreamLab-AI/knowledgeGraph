@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: module-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0845\n    - filename-history:: [\"AI-0845-module.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[DisruptiveTechnology]]\n    - term-id:: AI-0845\n    - preferred-term:: Module\n    - source-domain:: artificial-intelligence\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:Module\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  -",
   "backlinks": [],
   "wiki_links": [
-    "DisruptiveTechnology",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "DisruptiveTechnology"
   ],
   "ontology": {
     "term_id": "AI-0845",

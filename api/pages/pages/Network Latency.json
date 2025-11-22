@@ -4,14 +4,14 @@
   "content": "- ### OntologyBlock\n  id:: network-latency-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0081\n\n    - filename-history:: [\"BC-0081-network-latency.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0081\n    - preferred-term:: Network Latency\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Communication delay within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:NetworkLatency\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - is-subclass-of:: [[Metaverse Infrastructure]]\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-to:: [[Networkcomponent]] via is-subclass-of\n    - bridges-from:: [[VoiceInteraction]] via depends-on\n\n  -",
   "backlinks": [],
   "wiki_links": [
-    "ISO/IEC 23257:2021",
     "BlockchainEntity",
+    "ISO/IEC 23257:2021",
     "Networkcomponent",
-    "VoiceInteraction",
     "IEEE 2418.1",
+    "VoiceInteraction",
     "NIST NISTIR",
-    "CryptographicDomain",
-    "Metaverse Infrastructure"
+    "Metaverse Infrastructure",
+    "CryptographicDomain"
   ],
   "ontology": {
     "term_id": "BC-0081",

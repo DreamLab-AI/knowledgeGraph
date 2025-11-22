@@ -10,13 +10,13 @@
     "TELE-002-telecollaboration"
   ],
   "wiki_links": [
+    "TELE-301-virtual-office-spaces",
     "AIDomain",
+    "TELE-0000-telepresence-domain",
     "TELE-002-telecollaboration",
     "DigitalTwinCollaboration",
-    "TELE-0000-telepresence-domain",
-    "TELE-028-horizon-workrooms",
     "DisruptiveTechnology",
-    "TELE-301-virtual-office-spaces"
+    "TELE-028-horizon-workrooms"
   ],
   "ontology": {
     "term_id": "TELE-302",

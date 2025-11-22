@@ -13,10 +13,10 @@
     "BC-0028-sha-256"
   ],
   "wiki_links": [
-    "ISO/IEC 23257:2021",
-    "BlockchainTechnology",
     "BlockchainEntity",
+    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
+    "BlockchainTechnology",
     "NIST NISTIR",
     "CryptographicDomain"
   ],

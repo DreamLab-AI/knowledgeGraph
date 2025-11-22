@@ -6,24 +6,24 @@
     "Bitcoin"
   ],
   "wiki_links": [
-    "Payment Network",
     "VirtualEconomyDomain",
-    "Cryptographic Authentication",
-    "Transaction Validation",
+    "Pay-Per-Use Models",
+    "Payment Network",
     "Blockchain Infrastructure",
     "Payment Protocol",
-    "Central Bank Digital Currency",
-    "MiddlewareLayer",
-    "Pay-Per-Use Models",
-    "Instant Settlements",
-    "Fee Calculation",
     "Digital Wallet",
     "Settlement Mechanism",
     "Digital Payment System",
+    "MiddlewareLayer",
     "Reed Smith",
     "OMA3",
+    "Blockchain",
+    "Cryptographic Authentication",
     "Microtransactions",
-    "Blockchain"
+    "Instant Settlements",
+    "Fee Calculation",
+    "Central Bank Digital Currency",
+    "Transaction Validation"
   ],
   "ontology": {
     "term_id": "20216",

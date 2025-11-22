@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: textto3d-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0858\n    - filename-history:: [\"AI-0858-textto3d.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[GenerativeAISystem]]\n    - term-id:: AI-0858\n    - preferred-term:: Text-to-3D\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:TextTo3d\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  -",
   "backlinks": [],
   "wiki_links": [
-    "GenerativeAISystem",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "GenerativeAISystem"
   ],
   "ontology": {
     "term_id": "AI-0858",

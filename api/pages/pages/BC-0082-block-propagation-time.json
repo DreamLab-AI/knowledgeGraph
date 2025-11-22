@@ -7,9 +7,9 @@
     "ISO/IEC 23257:2021",
     "Networkcomponent",
     "IEEE 2418.1",
+    "Block Propagation",
     "NIST NISTIR",
-    "CryptographicDomain",
-    "Block Propagation"
+    "CryptographicDomain"
   ],
   "ontology": {
     "term_id": "BC-0082",

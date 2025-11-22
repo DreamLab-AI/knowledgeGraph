@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: salt-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0049\n    - preferred-term:: Salt\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Random data for hash uniqueness within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Salt\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### Relationships\n    id:: relationships\n    - is-subclass-of:: [[Cryptography]]\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  -",
   "backlinks": [],
   "wiki_links": [
-    "ISO/IEC 23257:2021",
     "BlockchainEntity",
-    "Cryptography",
+    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
     "NIST NISTIR",
+    "Cryptography",
     "CryptographicDomain"
   ],
   "ontology": {

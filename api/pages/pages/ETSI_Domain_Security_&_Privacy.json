@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: etsi_domain_security_&_privacy-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0032\n\t- preferred-term:: ETSI_Domain_Security_&_Privacy\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: mv:ETSI_Domain_Security_&_Privacy\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n### Relationships\n- is-subclass-of:: [[AIGovernance]]",
   "backlinks": [],
   "wiki_links": [
-    "AIGovernance",
-    "MetaverseDomain"
+    "MetaverseDomain",
+    "AIGovernance"
   ],
   "ontology": {
     "term_id": "MV-0032",
