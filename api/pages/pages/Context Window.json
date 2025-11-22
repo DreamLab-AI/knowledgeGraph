@@ -5,9 +5,9 @@
   "backlinks": [],
   "wiki_links": [
     "OpenAI GPT-4 Technical Report",
-    "Vaswani et al. 2017 Attention is All You Need",
     "ModelProperty",
-    "Anthropic Context Windows Research 2024"
+    "Anthropic Context Windows Research 2024",
+    "Vaswani et al. 2017 Attention is All You Need"
   ],
   "ontology": {
     "term_id": "AI-0238",

@@ -6,10 +6,10 @@
     "Variational Autoencoders"
   ],
   "wiki_links": [
-    "MachineLearning",
     "DeepLearning",
-    "SyntheticDataGenerator",
-    "Artificial Intelligence"
+    "MachineLearning",
+    "Artificial Intelligence",
+    "SyntheticDataGenerator"
   ],
   "ontology": {
     "term_id": "AI-0840",

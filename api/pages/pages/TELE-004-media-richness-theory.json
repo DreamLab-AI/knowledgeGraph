@@ -6,19 +6,19 @@
     "TELE-003-social-presence-theory"
   ],
   "wiki_links": [
-    "MediaSelection",
+    "CommunicationEffectiveness",
     "TaskMediaFit",
+    "AIDomain",
+    "InformationProcessing",
     "TELE-003-social-presence-theory",
+    "TELE-001-telepresence",
     "TelepresenceFoundations",
     "TELE-0000-telepresence-domain",
+    "TELE-020-virtual-reality-telepresence",
+    "MediaSelection",
     "OrganisationalTheory",
     "TELE-100-ai-avatars",
-    "TELE-020-virtual-reality-telepresence",
-    "CommunicationTheory",
-    "InformationProcessing",
-    "AIDomain",
-    "TELE-001-telepresence",
-    "CommunicationEffectiveness"
+    "CommunicationTheory"
   ],
   "ontology": {
     "term_id": "TELE-004",

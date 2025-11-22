@@ -14,11 +14,11 @@
     "BC 0119 economic security"
   ],
   "wiki_links": [
-    "BlockchainDomain",
     "Digital Goods",
+    "BlockchainTechnology",
+    "BlockchainDomain",
     "DigitalAvatar",
-    "VirtualWorld",
-    "BlockchainTechnology"
+    "VirtualWorld"
   ],
   "ontology": {
     "term_id": "BC-0141",

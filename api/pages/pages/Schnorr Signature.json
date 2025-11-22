@@ -4,13 +4,13 @@
   "content": "- ### OntologyBlock\n  id:: schnorr-signature-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0041\n\n    - filename-history:: [\"BC-0041-schnorr-signature.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[BlockchainTechnology]]\n    - term-id:: BC-0041\n    - preferred-term:: Schnorr Signature\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Cryptographic digital signature scheme based on discrete logarithm problem hardness, providing efficient, aggregatable, and provably secure signatures for Bitcoin transactions, enabling multi-signature constructions (MuSig2), threshold signatures (FROST), enhanced privacy through signature indistinguishability, and reduced blockchain footprint via signature aggregation in Taproot.\n    - maturity:: production\n    - source:: [[BIP 340 Schnorr Signatures]], [[BIP 341 Taproot]], [[MuSig2 Specification]], [[FROST Protocol]], [[Bitcoin Core 2025]]\n    - authority-score:: 0.98\n\n  - **Semantic Classification**\n    - owl:class:: bc:SchnorrSignature\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  -",
   "backlinks": [],
   "wiki_links": [
+    "MuSig2 Specification",
+    "CryptographicDomain",
+    "BlockchainTechnology",
+    "BlockchainEntity",
+    "BIP 340 Schnorr Signatures",
     "FROST Protocol",
     "BIP 341 Taproot",
-    "BIP 340 Schnorr Signatures",
-    "CryptographicDomain",
-    "BlockchainEntity",
-    "MuSig2 Specification",
-    "BlockchainTechnology",
     "Bitcoin Core 2025"
   ],
   "ontology": {

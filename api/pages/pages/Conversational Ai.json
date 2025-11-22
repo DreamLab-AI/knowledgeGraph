@@ -4,10 +4,10 @@
   "content": "- ### OntologyBlock\n  id:: conversationalai-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0849\n    - filename-history:: [\"AI-0849-conversationalai.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[ArtificialIntelligenceTechnology]]\n    - term-id:: AI-0849\n    - preferred-term:: Conversational AI\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:ConversationalAi\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[NaturalLanguageProcessing]] via is-subclass-of\n    - bridges-from:: [[EtsiDomainAiHumanInterface]] via categorizes\n\n  -",
   "backlinks": [],
   "wiki_links": [
-    "NaturalLanguageProcessing",
     "EtsiDomainAiHumanInterface",
-    "ArtificialIntelligenceTechnology",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "NaturalLanguageProcessing",
+    "ArtificialIntelligenceTechnology"
   ],
   "ontology": {
     "term_id": "AI-0849",

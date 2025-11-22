@@ -4,9 +4,9 @@
   "content": "- ### OntologyBlock\n  id:: handtracking-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0852\n    - filename-history:: [\"AI-0852-handtracking.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[ArtificialIntelligenceTechnology]]\n    - term-id:: AI-0852\n    - preferred-term:: Hand Tracking\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:HandTracking\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  - #### CrossDomainBridges\n    - bridges-from:: [[MixedRealityMr]] via requires\n\n  -",
   "backlinks": [],
   "wiki_links": [
-    "MixedRealityMr",
+    "Artificial Intelligence",
     "ArtificialIntelligenceTechnology",
-    "Artificial Intelligence"
+    "MixedRealityMr"
   ],
   "ontology": {
     "term_id": "AI-0852",

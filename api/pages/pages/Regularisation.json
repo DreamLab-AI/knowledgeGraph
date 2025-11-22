@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: regularisation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0056\n\t- preferred-term:: Regularisation\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- definition:: ### Primary Definition\n**Regularisation** comprises techniques that constrain or penalise model complexity during training to prevent overfitting and improve generalisation. Common methods include L1/L2 penalties, dropout, and early stopping.\n\t- maturity:: draft\n\t- owl:class:: mv:Regularisation\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- is-subclass-of:: [[LearningMethod]]\n\t- belongsToDomain:: [[MetaverseDomain]]",
   "backlinks": [],
   "wiki_links": [
-    "LearningMethod",
-    "MetaverseDomain"
+    "MetaverseDomain",
+    "LearningMethod"
   ],
   "ontology": {
     "term_id": "AI-0056",

@@ -9,10 +9,10 @@
     "Large language models"
   ],
   "wiki_links": [
-    "MetaverseDomain",
     "Computer Vision",
     "Machine Learning",
-    "ArtificialIntelligence"
+    "ArtificialIntelligence",
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "MV-0005",

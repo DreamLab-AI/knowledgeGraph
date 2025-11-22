@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: keyvector-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0808\n    - filename-history:: [\"AI-0808-keyvector.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[ArtificialIntelligenceTechnology]]\n    - term-id:: AI-0808\n    - preferred-term:: Key Vector\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:KeyVector\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### Relationships\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :KeyVector))\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :KeyVector \"Key Vector\"@en)\n      ```\n\n- ## About Key Vector\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [],
   "wiki_links": [
-    "ArtificialIntelligenceTechnology",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "ArtificialIntelligenceTechnology"
   ],
   "ontology": {
     "term_id": "AI-0808",

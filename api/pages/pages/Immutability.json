@@ -7,13 +7,13 @@
     "Digital Twin of the Customer"
   ],
   "wiki_links": [
-    "Networkcomponent",
     "ISO/IEC 23257:2021",
-    "IEEE 2418.1",
     "CryptographicDomain",
-    "BlockchainEntity",
+    "Networkcomponent",
     "NIST NISTIR",
-    "BlockchainTechnology"
+    "BlockchainTechnology",
+    "IEEE 2418.1",
+    "BlockchainEntity"
   ],
   "ontology": {
     "term_id": "BC-0079",

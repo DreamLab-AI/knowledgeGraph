@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: aiengineering-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0802\n    - filename-history:: [\"AI-0802-aiengineering.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[ArtificialIntelligenceTechnology]]\n    - term-id:: AI-0802\n    - preferred-term:: Gartner Prediction\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: Indicates environments where something operates.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:AiEngineering\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[ArtificialIntelligence]] via is-subclass-of\n    - bridges-to:: [[MachineLearning]] via is-subclass-of\n    - bridges-to:: [[Risk]] via is-subclass-of\n    - bridges-to:: [[Risk]] via is-subclass-of\n    - bridges-to:: [[ArtificialIntelligence]] via is-subclass-of\n    - bridges-to:: [[ArtificialIntelligence]] via is-subclass-of\n    - bridges-to:: [[ArtificialIntelligence]] via is-subclass-of\n    - bridges-to:: [[ArtificialIntelligence]] via is-subclass-of\n    - bridges-to:: [[ArtificialIntelligence]] via is-subclass-of\n    - bridges-to:: [[ArtificialIntelligence]] via is-subclass-of\n\n  -",
   "backlinks": [],
   "wiki_links": [
-    "ArtificialIntelligenceTechnology",
     "MachineLearning",
     "Artificial Intelligence",
+    "ArtificialIntelligence",
     "Risk",
-    "ArtificialIntelligence"
+    "ArtificialIntelligenceTechnology"
   ],
   "ontology": {
     "term_id": "AI-0802",

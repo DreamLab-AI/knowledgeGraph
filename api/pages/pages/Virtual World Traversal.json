@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: virtualworldtraversal-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: MV\n    - sequence-number:: 0005\n    - filename-history:: [\"MV-0005-virtualworldtraversal.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: MV-0005\n    - preferred-term:: Virtual World Traversal\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: mv:VirtualWorldTraversal\n    - is-subclass-of:: [[Metaverse Infrastructure]]\n    - belongsToDomain:: [[Metaverse]]\n\n  - #### Relationships\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :VirtualWorldTraversal))\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :VirtualWorldTraversal \"Virtual World Traversal\"@en)\n      ```\n\n- ## About Virtual World Traversal\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [],
   "wiki_links": [
-    "Metaverse",
-    "Metaverse Infrastructure"
+    "Metaverse Infrastructure",
+    "Metaverse"
   ],
   "ontology": {
     "term_id": "MV-0005",

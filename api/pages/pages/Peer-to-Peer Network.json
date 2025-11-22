@@ -4,14 +4,14 @@
   "content": "- ### OntologyBlock\n  id:: peer-to-peer-network-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0075\n\n    - filename-history:: [\"BC-0075-peer-to-peer-network.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0075\n    - preferred-term:: Peer-to-Peer Network\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Decentralized communication within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Peer-to-peerNetwork\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - is-subclass-of:: [[Blockchain]]\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Networkcomponent]] via is-subclass-of\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-from:: [[DistributedLedgerTechnologyDlt]] via requires\n\n  -",
   "backlinks": [],
   "wiki_links": [
-    "Networkcomponent",
-    "DistributedLedgerTechnologyDlt",
     "ISO/IEC 23257:2021",
-    "IEEE 2418.1",
     "CryptographicDomain",
-    "BlockchainEntity",
+    "Networkcomponent",
     "NIST NISTIR",
-    "Blockchain"
+    "IEEE 2418.1",
+    "Blockchain",
+    "DistributedLedgerTechnologyDlt",
+    "BlockchainEntity"
   ],
   "ontology": {
     "term_id": "BC-0075",

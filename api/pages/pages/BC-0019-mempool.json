@@ -4,14 +4,14 @@
   "content": "- ### OntologyBlock\n  id:: mempool-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0019\n    - preferred-term:: Mempool\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Memory pool of pending transactions within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Mempool\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[BlockchainDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### Relationships\n    id:: relationships\n    - is-subclass-of:: [[Transaction Pool]]\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Distributeddatastructure]] via is-subclass-of\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-from:: [[Bitcoin]] via has-part\n\n  -",
   "backlinks": [],
   "wiki_links": [
-    "BlockchainDomain",
-    "Transaction Pool",
     "Bitcoin",
     "ISO/IEC 23257:2021",
-    "Distributeddatastructure",
+    "NIST NISTIR",
     "IEEE 2418.1",
-    "BlockchainEntity",
-    "NIST NISTIR"
+    "Transaction Pool",
+    "BlockchainDomain",
+    "Distributeddatastructure",
+    "BlockchainEntity"
   ],
   "ontology": {
     "term_id": "BC-0019",

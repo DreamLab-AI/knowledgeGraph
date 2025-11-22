@@ -6,9 +6,9 @@
   "wiki_links": [
     "TrainingMethod",
     "Prechelt 1998 Early Stopping But When",
-    "PyTorch Lightning Early Stopping",
     "TensorFlow Keras Callbacks",
-    "Goodfellow et al. 2016 Deep Learning"
+    "Goodfellow et al. 2016 Deep Learning",
+    "PyTorch Lightning Early Stopping"
   ],
   "ontology": {
     "term_id": "AI-0290",
