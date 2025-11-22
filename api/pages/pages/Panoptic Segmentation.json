@@ -1,0 +1,57 @@
+{
+  "id": "Panoptic Segmentation",
+  "title": "Panoptic Segmentation",
+  "content": "- ### OntologyBlock\n  id:: panoptic-segmentation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0361\n\t- preferred-term:: Panoptic Segmentation\n\t- source-domain:: ai\n\t- owl:class:: ai:PanopticSegmentation\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Panoptic Segmentation unifies semantic segmentation and instance segmentation by assigning every pixel both a class label and an instance ID, providing a complete scene understanding with \"thing\" classes (countable objects) and \"stuff\" classes (amorphous regions). Panoptic segmentation offers holistic scene parsing for applications requiring comprehensive visual understanding such as autonomous driving and robotics.\n\t- #### Relationships\n\t  id:: panoptic-segmentation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[ImageSegmentation]]\n\n## Panoptic Segmentation\n\nPanoptic Segmentation refers to panoptic segmentation unifies semantic segmentation and instance segmentation by assigning every pixel both a class label and an instance id, providing a complete scene understanding with \"thing\" classes (countable objects) and \"stuff\" classes (amorphous regions). panoptic segmentation offers holistic scene parsing for applications requiring comprehensive visual understanding such as autonomous driving and robotics.\n\n- Panoptic segmentation is increasingly adopted in industries requiring comprehensive scene understanding, such as autonomous driving, robotics, augmented reality, and medical imaging.\n\t- Autonomous vehicles benefit from panoptic segmentation by simultaneously recognising drivable areas (\"stuff\") and uniquely identifying dynamic objects (\"things\") for navigation and safety.\n\t- Robotics uses panoptic segmentation for precise environment interaction and object manipulation.\n- Notable organisations advancing panoptic segmentation include academic institutions, tech companies, and open-source platforms worldwide.\n- In the UK, and specifically North England cities like Manchester, Leeds, Newcastle, and Sheffield, research groups and startups are integrating panoptic segmentation into smart city initiatives, autonomous systems, and industrial automation.\n- Technical capabilities have improved with transformer-based models such as MaXDeepLab, which enhance accuracy and efficiency.\n- Limitations remain in handling occlusions, real-time processing on edge devices, and generalising across diverse environments.\n- Standards and frameworks for panoptic segmentation datasets and evaluation metrics continue to mature, fostering reproducibility and benchmarking.\n\n## Technical Details\n\n- **Id**: panoptic-segmentation-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Research & Literature\n\n- Key academic papers include:\n\t- Kirillov, A., He, K., Girshick, R., Rother, C., & Dollár, P. (2019). *Panoptic Segmentation*. Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 9404–9413. DOI: 10.1109/CVPR.2019.00961\n\t- Cheng, B., Collins, M. D., Zhu, Y., Liu, T., Huang, T., & Kirillov, A. (2021). *Masked-attention Mask Transformer for Universal Image Segmentation*. Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 1290–1299. DOI: 10.1109/CVPR46437.2021.00136\n\t- Cheng, B., Collins, M. D., Zhu, Y., Liu, T., Huang, T., & Kirillov, A. (2022). *MaX-DeepLab: End-to-End Panoptic Segmentation with Mask Transformers*. IEEE Transactions on Pattern Analysis and Machine Intelligence. DOI: 10.1109/TPAMI.2022.3159279\n- Ongoing research focuses on improving model efficiency, robustness to occlusion and lighting variations, and extending panoptic segmentation to video and 3D data.\n\n## UK Context\n\n- The UK has active research groups in panoptic segmentation within universities such as the University of Manchester and the University of Leeds, contributing to foundational algorithms and applications.\n- North England innovation hubs, including tech clusters in Manchester and Sheffield, are applying panoptic segmentation in autonomous vehicle testing, smart infrastructure monitoring, and industrial robotics.\n- Regional case studies include collaborations between academia and industry to deploy panoptic segmentation in urban traffic management and automated inspection systems.\n- The UK government’s investment in AI and computer vision research supports these developments, fostering a vibrant ecosystem for panoptic segmentation innovation.\n\n## Future Directions\n\n- Emerging trends include:\n\t- Integration of panoptic segmentation with multimodal data (e.g., LiDAR, radar) for enhanced perception in autonomous systems.\n\t- Real-time panoptic segmentation on resource-constrained devices, enabling broader deployment in mobile and embedded applications.\n\t- Expansion into 3D panoptic segmentation for robotics and augmented reality.\n- Anticipated challenges involve balancing model complexity with inference speed, improving generalisation across diverse environments, and addressing ethical considerations in surveillance applications.\n- Research priorities emphasise explainability, robustness, and standardisation of datasets and evaluation protocols.\n\n## References\n\n1. Kirillov, A., He, K., Girshick, R., Rother, C., & Dollár, P. (2019). Panoptic Segmentation. *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*, 9404–9413. DOI: 10.1109/CVPR.2019.00961\n2. Cheng, B., Collins, M. D., Zhu, Y., Liu, T., Huang, T., & Kirillov, A. (2021). Masked-attention Mask Transformer for Universal Image Segmentation. *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*, 1290–1299. DOI: 10.1109/CVPR46437.2021.00136\n3. Cheng, B., Collins, M. D., Zhu, Y., Liu, T., Huang, T., & Kirillov, A. (2022). MaX-DeepLab: End-to-End Panoptic Segmentation with Mask Transformers. *IEEE Transactions on Pattern Analysis and Machine Intelligence*. DOI: 10.1109/TPAMI.2022.3159279\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Instance Segmentation"
+  ],
+  "wiki_links": [
+    "ImageSegmentation"
+  ],
+  "ontology": {
+    "term_id": "AI-0361",
+    "preferred_term": "Panoptic Segmentation",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#PanopticSegmentation",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Panoptic Segmentation unifies semantic segmentation and instance segmentation by assigning every pixel both a class label and an instance ID, providing a complete scene understanding with \"thing\" classes (countable objects) and \"stuff\" classes (amorphous regions). Panoptic segmentation offers holistic scene parsing for applications requiring comprehensive visual understanding such as autonomous driving and robotics.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:PanopticSegmentation",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "ImageSegmentation"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

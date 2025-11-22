@@ -1,0 +1,57 @@
+{
+  "id": "BC-0477-travel-rule",
+  "title": "Travel Rule",
+  "content": "- ### OntologyBlock\n  id:: bc-0477-travel-rule-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0477\n\t- preferred-term:: Travel Rule\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: A component of the blockchain ecosystem.\n\t- maturity:: draft\n\t- owl:class:: bc:TravelRule\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- #### Relationships\n\t  id:: bc-0477-travel-rule-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Compliance]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :TravelRule))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :TravelRule \"Travel Rule\"@en)\n(AnnotationAssertion rdfs:comment :TravelRule \"A component of the blockchain ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :TravelRule \"BC-0477\"^^xsd:string)\n```",
+  "backlinks": [],
+  "wiki_links": [
+    "BlockchainDomain",
+    "Blockchain Compliance"
+  ],
+  "ontology": {
+    "term_id": "BC-0477",
+    "preferred_term": "Travel Rule",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#TravelRule",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
+    "definition": "A component of the blockchain ecosystem.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:TravelRule",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Blockchain Compliance"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated"
+      ]
+    }
+  }
+}

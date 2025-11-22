@@ -1,30 +1,27 @@
 {
   "id": "Human Preference",
   "title": "Property",
-  "content": "- ### OntologyBlock\n  id:: humanpreference-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0801\n    - filename-history:: [\"AI-0801-humanpreference.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[ArtificialIntelligenceTechnology]]\n    - term-id:: AI-0801\n    - preferred-term:: Property\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: Capability for autonomous self-improvement.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:HumanPreference\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[MachineLearning]] via is-subclass-of\n    - bridges-to:: [[MachineLearning]] via is-subclass-of\n    - bridges-to:: [[System]] via is-subclass-of\n    - bridges-to:: [[MachineLearning]] via is-subclass-of\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: humanpreference-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0801\n\t- preferred-term:: Property\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Capability for autonomous self-improvement.\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: ai:HumanPreference\n\t- belongsToDomain:: [[Artificial Intelligence]]",
   "backlinks": [],
   "wiki_links": [
-    "MachineLearning",
-    "Artificial Intelligence",
-    "ArtificialIntelligenceTechnology",
-    "System"
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0801",
     "preferred_term": "Property",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/ai#HumanPreference",
-    "source_domain": "ai",
+    "source_domain": null,
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
     "definition": "Capability for autonomous self-improvement.",
     "scope_note": null,
     "status": "complete",
     "maturity": "established",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-11-13",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "ai:HumanPreference",
@@ -38,12 +35,7 @@
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [
-      "MachineLearning via is",
-      "MachineLearning via is",
-      "System via is",
-      "MachineLearning via is"
-    ],
+    "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
@@ -56,6 +48,8 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

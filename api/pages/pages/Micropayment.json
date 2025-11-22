@@ -1,38 +1,39 @@
 {
   "id": "Micropayment",
   "title": "Micropayment",
-  "content": "- ### OntologyBlock\n  id:: micropayment-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20216\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: Micropayment\n\t- definition:: Very small electronic payment processed automatically within digital environments for low-value transactions.\n\t- maturity:: mature\n\t- source:: [[Reed Smith]], [[OMA3]]\n\t- owl:class:: mv:Micropayment\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: mv:VirtualProcess\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[VirtualEconomyDomain]]\n\t- implementedInLayer:: [[MiddlewareLayer]]\n\t- #### Relationships\n\t  id:: micropayment-relationships\n\t\t- is-subclass-of:: [[Blockchain]]\n\t\t- has-part:: [[Payment Protocol]], [[Transaction Validation]], [[Fee Calculation]], [[Settlement Mechanism]]\n\t\t- is-part-of:: [[Digital Payment System]]\n\t\t- requires:: [[Digital Wallet]], [[Payment Network]], [[Cryptographic Authentication]]\n\t\t- depends-on:: [[Blockchain Infrastructure]], [[Central Bank Digital Currency]]\n\t\t- enables:: [[Microtransactions]], [[Pay-Per-Use Models]], [[Instant Settlements]]\n\t- #### OWL Axioms\n\t  id:: micropayment-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:Micropayment))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:Micropayment mv:VirtualEntity)\n\t\t  SubClassOf(mv:Micropayment mv:Process)\n\n\t\t  # Essential process requirements\n\t\t  SubClassOf(mv:Micropayment\n\t\t    ObjectSomeValuesFrom(mv:requires mv:DigitalWallet)\n\t\t  )\n\n\t\t  SubClassOf(mv:Micropayment\n\t\t    ObjectSomeValuesFrom(mv:requires mv:PaymentNetwork)\n\t\t  )\n\n\t\t  SubClassOf(mv:Micropayment\n\t\t    ObjectSomeValuesFrom(mv:requires mv:CryptographicAuthentication)\n\t\t  )\n\n\t\t  # Structural components\n\t\t  SubClassOf(mv:Micropayment\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:PaymentProtocol)\n\t\t  )\n\n\t\t  SubClassOf(mv:Micropayment\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:TransactionValidation)\n\t\t  )\n\n\t\t  SubClassOf(mv:Micropayment\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:FeeCalculation)\n\t\t  )\n\n\t\t  SubClassOf(mv:Micropayment\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:SettlementMechanism)\n\t\t  )\n\n\t\t  # Enabling capabilities\n\t\t  SubClassOf(mv:Micropayment\n\t\t    ObjectSomeValuesFrom(mv:enables mv:Microtransactions)\n\t\t  )\n\n\t\t  SubClassOf(mv:Micropayment\n\t\t    ObjectSomeValuesFrom(mv:enables mv:PayPerUseModels)\n\t\t  )\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:Micropayment\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:VirtualEconomyDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:Micropayment\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:MiddlewareLayer)\n\t\t  )\n\n\t\t  # Part-of relationship\n\t\t  SubClassOf(mv:Micropayment\n\t\t    ObjectSomeValuesFrom(mv:isPartOf mv:DigitalPaymentSystem)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:requires)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n```",
+  "content": "- ### OntologyBlock\n  id:: micropayment-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20216\n\t- preferred-term:: Micropayment\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Very small electronic payment processed automatically within digital environments for low-value transactions.\n\t- source:: [[Reed Smith]], [[OMA3]]\n\t- maturity:: mature\n\t- owl:class:: mv:Micropayment\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: mv:VirtualProcess\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[VirtualEconomyDomain]]\n\t- implementedInLayer:: [[MiddlewareLayer]]\n\t- #### Relationships\n\t  id:: micropayment-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain]]\n\t\t- is-part-of:: [[Digital Payment System]]\n\t\t- has-part:: [[Transaction Validation]]\n\t\t- has-part:: [[Settlement Mechanism]]\n\t\t- has-part:: [[Fee Calculation]]\n\t\t- has-part:: [[Payment Protocol]]\n\t\t- requires:: [[Payment Network]]\n\t\t- requires:: [[Digital Wallet]]\n\t\t- requires:: [[Cryptographic Authentication]]\n\t\t- enables:: [[Instant Settlements]]\n\t\t- enables:: [[Pay-Per-Use Models]]\n\t\t- enables:: [[Microtransactions]]\n\t\t- depends-on:: [[Blockchain Infrastructure]]\n\t\t- depends-on:: [[Central Bank Digital Currency]]",
   "backlinks": [
-    "Bitcoin"
+    "Bitcoin",
+    "Perception System"
   ],
   "wiki_links": [
-    "Digital Payment System",
+    "Microtransactions",
+    "Digital Wallet",
+    "MiddlewareLayer",
     "Fee Calculation",
+    "Settlement Mechanism",
+    "Transaction Validation",
     "VirtualEconomyDomain",
     "Reed Smith",
     "Payment Network",
+    "Digital Payment System",
     "Pay-Per-Use Models",
-    "Microtransactions",
-    "Transaction Validation",
-    "Blockchain",
-    "Central Bank Digital Currency",
-    "MiddlewareLayer",
-    "Cryptographic Authentication",
-    "Digital Wallet",
-    "Instant Settlements",
-    "OMA3",
     "Blockchain Infrastructure",
-    "Settlement Mechanism",
-    "Payment Protocol"
+    "OMA3",
+    "Central Bank Digital Currency",
+    "Cryptographic Authentication",
+    "Payment Protocol",
+    "Instant Settlements",
+    "Blockchain"
   ],
   "ontology": {
     "term_id": "20216",
     "preferred_term": "Micropayment",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#Micropayment",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "Very small electronic payment processed automatically within digital environments for low-value transactions.",
     "scope_note": null,
     "status": "draft",
@@ -51,17 +52,17 @@
       "Blockchain"
     ],
     "has_part": [
-      "Payment Protocol",
       "Transaction Validation",
+      "Settlement Mechanism",
       "Fee Calculation",
-      "Settlement Mechanism"
+      "Payment Protocol"
     ],
     "is_part_of": [
       "Digital Payment System"
     ],
     "requires": [
-      "Digital Wallet",
       "Payment Network",
+      "Digital Wallet",
       "Cryptographic Authentication"
     ],
     "depends_on": [
@@ -69,9 +70,9 @@
       "Central Bank Digital Currency"
     ],
     "enables": [
-      "Microtransactions",
+      "Instant Settlements",
       "Pay-Per-Use Models",
-      "Instant Settlements"
+      "Microtransactions"
     ],
     "relates_to": [],
     "bridges_to": [],
@@ -90,8 +91,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "term-id '20216' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

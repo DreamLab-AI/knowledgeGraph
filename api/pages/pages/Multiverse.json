@@ -1,52 +1,53 @@
 {
   "id": "Multiverse",
   "title": "Multiverse",
-  "content": "- ### OntologyBlock\n  id:: multiverse-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20316\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: Multiverse\n\t- definition:: A network of interconnected but distinct metaverses and virtual worlds that enable cross-platform identity, asset portability, and interoperability while maintaining individual world sovereignty and distinct governance models.\n\t- maturity:: draft\n\t- source:: [[OMA3]], [[Metaverse Standards Forum]]\n\t- owl:class:: mv:Multiverse\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]], [[VirtualSocietyDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: multiverse-relationships\n\t\t- is-subclass-of:: [[Metaverse Infrastructure]]\n\t\t- has-part:: [[Metaverse]], [[Interoperability Protocol]], [[Federated Identity]], [[Cross-Chain Bridge]], [[Portal System]], [[Multi-World Governance]], [[Asset Translation Layer]], [[Universal Inventory]]\n\t\t- is-part-of:: [[Spatial Web]]\n\t\t- requires:: [[Identity Federation]], [[Protocol Translation]], [[Asset Bridging]], [[Distributed Governance]], [[Standard Format Support]], [[Cross-Platform Authentication]]\n\t\t- depends-on:: [[Blockchain]], [[Decentralized Identifier]], [[Verifiable Credential]], [[Smart Contract]], [[Interoperability Standard]]\n\t\t- enables:: [[Cross-World Travel]], [[Asset Portability]], [[Multi-Platform Gaming]], [[Federated Social Networks]], [[Cross-Metaverse Commerce]], [[Universal Avatar]]\n\t- #### OWL Axioms\n\t  id:: multiverse-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:Multiverse))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:Multiverse mv:VirtualEntity)\n\t\t  SubClassOf(mv:Multiverse mv:Object)\n\n\t\t  # Multiverse consists of multiple metaverses\n\t\t  SubClassOf(mv:Multiverse\n\t\t    ObjectMinCardinality(2 mv:hasPart mv:Metaverse)\n\t\t  )\n\n\t\t  # Core interoperability infrastructure\n\t\t  SubClassOf(mv:Multiverse\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:InteroperabilityProtocol)\n\t\t  )\n\t\t  SubClassOf(mv:Multiverse\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:FederatedIdentity)\n\t\t  )\n\t\t  SubClassOf(mv:Multiverse\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:CrossChainBridge)\n\t\t  )\n\n\t\t  # Navigation and connectivity systems\n\t\t  SubClassOf(mv:Multiverse\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:PortalSystem)\n\t\t  )\n\t\t  SubClassOf(mv:Multiverse\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:AssetTranslationLayer)\n\t\t  )\n\t\t  SubClassOf(mv:Multiverse\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:UniversalInventory)\n\t\t  )\n\n\t\t  # Governance and coordination\n\t\t  SubClassOf(mv:Multiverse\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:MultiWorldGovernance)\n\t\t  )\n\n\t\t  # Technical requirements for cross-world functionality\n\t\t  SubClassOf(mv:Multiverse\n\t\t    ObjectSomeValuesFrom(mv:requires mv:IdentityFederation)\n\t\t  )\n\t\t  SubClassOf(mv:Multiverse\n\t\t    ObjectSomeValuesFrom(mv:requires mv:ProtocolTranslation)\n\t\t  )\n\t\t  SubClassOf(mv:Multiverse\n\t\t    ObjectSomeValuesFrom(mv:requires mv:AssetBridging)\n\t\t  )\n\t\t  SubClassOf(mv:Multiverse\n\t\t    ObjectSomeValuesFrom(mv:requires mv:DistributedGovernance)\n\t\t  )\n\t\t  SubClassOf(mv:Multiverse\n\t\t    ObjectSomeValuesFrom(mv:requires mv:StandardFormatSupport)\n\t\t  )\n\n\t\t  # Domain classifications\n\t\t  SubClassOf(mv:Multiverse\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:InfrastructureDomain)\n\t\t  )\n\t\t  SubClassOf(mv:Multiverse\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:VirtualSocietyDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:Multiverse\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:requires)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n```",
+  "content": "- ### OntologyBlock\n  id:: multiverse-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20316\n\t- preferred-term:: Multiverse\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A network of interconnected but distinct metaverses and virtual worlds that enable cross-platform identity, asset portability, and interoperability while maintaining individual world sovereignty and distinct governance models.\n\t- source:: [[OMA3]], [[Metaverse Standards Forum]]\n\t- maturity:: draft\n\t- owl:class:: mv:Multiverse\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]], [[VirtualSocietyDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: multiverse-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse Infrastructure]]\n\t\t- is-part-of:: [[Spatial Web]]\n\t\t- has-part:: [[Asset Translation Layer]]\n\t\t- has-part:: [[Federated Identity]]\n\t\t- has-part:: [[Interoperability Protocol]]\n\t\t- has-part:: [[Cross-Chain Bridge]]\n\t\t- has-part:: [[Universal Inventory]]\n\t\t- has-part:: [[Portal System]]\n\t\t- has-part:: [[Metaverse]]\n\t\t- has-part:: [[Multi-World Governance]]\n\t\t- requires:: [[Standard Format Support]]\n\t\t- requires:: [[Cross-Platform Authentication]]\n\t\t- requires:: [[Protocol Translation]]\n\t\t- requires:: [[Distributed Governance]]\n\t\t- requires:: [[Identity Federation]]\n\t\t- requires:: [[Asset Bridging]]\n\t\t- enables:: [[Federated Social Networks]]\n\t\t- enables:: [[Universal Avatar]]\n\t\t- enables:: [[Cross-World Travel]]\n\t\t- enables:: [[Asset Portability]]\n\t\t- enables:: [[Multi-Platform Gaming]]\n\t\t- enables:: [[Cross-Metaverse Commerce]]\n\t\t- depends-on:: [[Verifiable Credential]]\n\t\t- depends-on:: [[Smart Contract]]\n\t\t- depends-on:: [[Decentralized Identifier]]\n\t\t- depends-on:: [[Blockchain]]\n\t\t- depends-on:: [[Interoperability Standard]]",
   "backlinks": [
+    "Identity Federation",
     "Metaverse"
   ],
   "wiki_links": [
-    "InfrastructureDomain",
-    "Cross-Metaverse Commerce",
-    "Asset Portability",
-    "Metaverse Infrastructure",
     "Standard Format Support",
-    "Federated Social Networks",
-    "Multi-World Governance",
-    "OMA3",
-    "Metaverse Standards Forum",
-    "Universal Avatar",
-    "Decentralized Identifier",
     "Federated Identity",
-    "Cross-Platform Authentication",
-    "Interoperability Protocol",
-    "Blockchain",
-    "ApplicationLayer",
-    "Universal Inventory",
-    "Spatial Web",
-    "Asset Bridging",
-    "Interoperability Standard",
-    "Protocol Translation",
-    "Cross-World Travel",
     "Verifiable Credential",
+    "Cross-World Travel",
+    "Multi-World Governance",
+    "ApplicationLayer",
     "Asset Translation Layer",
-    "Metaverse",
-    "Identity Federation",
-    "Smart Contract",
+    "Interoperability Standard",
+    "Universal Inventory",
+    "Blockchain",
     "Cross-Chain Bridge",
-    "Portal System",
+    "Multi-Platform Gaming",
+    "Cross-Metaverse Commerce",
+    "Cross-Platform Authentication",
+    "Decentralized Identifier",
+    "Identity Federation",
+    "Universal Avatar",
+    "InfrastructureDomain",
+    "Metaverse Infrastructure",
+    "Smart Contract",
     "Distributed Governance",
     "VirtualSocietyDomain",
-    "Multi-Platform Gaming"
+    "Federated Social Networks",
+    "Protocol Translation",
+    "Spatial Web",
+    "Interoperability Protocol",
+    "Portal System",
+    "Asset Portability",
+    "Metaverse",
+    "Asset Bridging",
+    "OMA3",
+    "Metaverse Standards Forum"
   ],
   "ontology": {
     "term_id": "20316",
     "preferred_term": "Multiverse",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#Multiverse",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "A network of interconnected but distinct metaverses and virtual worlds that enable cross-platform identity, asset portability, and interoperability while maintaining individual world sovereignty and distinct governance models.",
     "scope_note": null,
     "status": "draft",
@@ -65,40 +66,40 @@
       "Metaverse Infrastructure"
     ],
     "has_part": [
-      "Metaverse",
-      "Interoperability Protocol",
-      "Federated Identity",
-      "Cross-Chain Bridge",
-      "Portal System",
-      "Multi-World Governance",
       "Asset Translation Layer",
-      "Universal Inventory"
+      "Federated Identity",
+      "Interoperability Protocol",
+      "Cross-Chain Bridge",
+      "Universal Inventory",
+      "Portal System",
+      "Metaverse",
+      "Multi-World Governance"
     ],
     "is_part_of": [
       "Spatial Web"
     ],
     "requires": [
-      "Identity Federation",
-      "Protocol Translation",
-      "Asset Bridging",
-      "Distributed Governance",
       "Standard Format Support",
-      "Cross-Platform Authentication"
+      "Cross-Platform Authentication",
+      "Protocol Translation",
+      "Distributed Governance",
+      "Identity Federation",
+      "Asset Bridging"
     ],
     "depends_on": [
-      "Blockchain",
-      "Decentralized Identifier",
       "Verifiable Credential",
       "Smart Contract",
+      "Decentralized Identifier",
+      "Blockchain",
       "Interoperability Standard"
     ],
     "enables": [
+      "Federated Social Networks",
+      "Universal Avatar",
       "Cross-World Travel",
       "Asset Portability",
       "Multi-Platform Gaming",
-      "Federated Social Networks",
-      "Cross-Metaverse Commerce",
-      "Universal Avatar"
+      "Cross-Metaverse Commerce"
     ],
     "relates_to": [],
     "bridges_to": [],
@@ -118,8 +119,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "term-id '20316' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

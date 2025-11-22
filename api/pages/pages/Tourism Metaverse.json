@@ -1,57 +1,109 @@
 {
   "id": "Tourism Metaverse",
   "title": "Tourism Metaverse",
-  "content": "- ### OntologyBlock\n  id:: tourism-metaverse-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20313\n\t- preferred-term:: Tourism Metaverse\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Extended Reality (XR)]]\n\t- public-access:: true\n\n\n\n## Academic Context\n\n- Brief contextual overview\n\t- The Tourism Metaverse refers to the integration of immersive digital environments—primarily virtual reality (VR), augmented reality (AR), and mixed reality (MR)—into the tourism sector, enabling users to explore, preview, and experience destinations and cultural sites remotely.\n\t- Key developments and current state\n\t\t- The metaverse in tourism has evolved from simple virtual tours to interactive, multi-sensory experiences that blend digital and physical travel, supporting accessibility and sustainable tourism practices.\n\t\t- Academic foundations\n\t\t\t- Research in tourism and hospitality increasingly focuses on how immersive technologies reshape consumer behaviour, destination marketing, and service delivery.\n\t\t\t- Theoretical frameworks such as the Means-end Chain and soft laddering have been applied to understand the value hierarchies and psychological benefits of metaverse tourism experiences (Buhalis et al., 2025).\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n\t- Notable organisations and platforms\n\t\t- Major travel brands and destination marketing organisations (DMOs) use metaverse platforms for virtual destination previews, interactive storytelling, and immersive marketing campaigns.\n\t\t- Examples include browser-based platforms like Decentraland and ZEPETO, which have been adopted by international tourism boards for virtual exhibitions and cultural showcases.\n\t- UK and North England examples where relevant\n\t\t- UK tourism boards have piloted virtual experiences for heritage sites, such as the Roman Baths in Bath and the Lake District, with some North England cities like Manchester and Leeds exploring AR-enhanced city tours.\n\t\t- The National Trust has experimented with VR experiences for remote access to historic properties, including properties in Northumberland and Yorkshire.\n\t- Technical capabilities and limitations\n\t\t- Capabilities\n\t\t\t- Hyper-realistic VR environments, interactive avatars, and real-time data integration allow for immersive previews and personalised tours.\n\t\t\t- AR integration enables overlaying digital information onto physical environments, enhancing on-site experiences.\n\t\t- Limitations\n\t\t\t- Sensory fidelity remains limited; experiences are primarily visual and auditory, with limited tactile or olfactory feedback.\n\t\t\t- Accessibility barriers persist for users without advanced hardware or reliable internet connectivity.\n\t- Standards and frameworks\n\t\t- Industry standards for interoperability and user experience are still evolving, with organisations like the Open Metaverse Alliance working to establish common protocols.\n\n## Research & Literature\n\n- Key academic papers and sources\n\t- Buhalis, D., et al. (2025). The metaverse revolutionises tourism marketing: a systematic review. Journal of Hospitality and Tourism Insights. https://doi.org/10.1108/JHTI-01-2025-0161\n\t- McKinsey & Company (2025). Tourism in the metaverse: Can travel go virtual? https://www.mckinsey.com/industries/travel/our-insights/tourism-in-the-metaverse-can-travel-go-virtual\n\t- Exploring the metaverse tourism experience and its driving forces. Current Issues in Tourism, 2025. https://doi.org/10.1080/13683500.2025.2530588\n- Ongoing research directions\n\t- Investigating the psychological and behavioural impacts of metaverse tourism on travel decision-making.\n\t- Exploring the integration of AI and machine learning to personalise virtual travel experiences.\n\n## UK Context\n\n- British contributions and implementations\n\t- The UK has been at the forefront of adopting immersive technologies in tourism, with initiatives led by VisitBritain, Historic England, and various regional tourism boards.\n\t- British universities, including those in Manchester and Leeds, are conducting research on the impact of metaverse technologies on cultural heritage and sustainable tourism.\n- North England innovation hubs (if relevant)\n\t- Manchester and Leeds have emerged as regional innovation hubs, with local tech startups collaborating with tourism organisations to develop AR and VR experiences for cultural and heritage sites.\n\t- Newcastle and Sheffield are exploring smart city technologies that integrate AR for urban tourism and visitor engagement.\n- Regional case studies\n\t- The Lake District National Park has piloted VR experiences for remote access to scenic trails and historic sites.\n\t- The Yorkshire Museum in York has launched AR-enhanced exhibitions, allowing visitors to interact with digital reconstructions of historical artefacts.\n\n## Future Directions\n\n- Emerging trends and developments\n\t- Increased integration of AI-driven personalisation and real-time data in metaverse tourism experiences.\n\t- Expansion of multi-sensory feedback technologies to enhance immersion.\n- Anticipated challenges\n\t- Ensuring equitable access to metaverse tourism experiences, particularly for users in rural or underserved areas.\n\t- Addressing privacy and data security concerns in immersive digital environments.\n- Research priorities\n\t- Longitudinal studies on the impact of metaverse tourism on physical travel patterns and destination branding.\n\t- Development of ethical guidelines for the use of immersive technologies in tourism.\n\n## References\n\n1. Buhalis, D., et al. (2025). The metaverse revolutionises tourism marketing: a systematic review. Journal of Hospitality and Tourism Insights. https://doi.org/10.1108/JHTI-01-2025-0161\n2. McKinsey & Company (2025). Tourism in the metaverse: Can travel go virtual? https://www.mckinsey.com/industries/travel/our-insights/tourism-in-the-metaverse-can-travel-go-virtual\n3. Exploring the metaverse tourism experience and its driving forces. Current Issues in Tourism, 2025. https://doi.org/10.1080/13683500.2025.2530588\n4. National Trust (2025). Virtual heritage experiences. https://www.nationaltrust.org.uk\n5. VisitBritain (2025). Immersive tourism initiatives. https://www.visitbritain.org\n6. Historic England (2025). Digital heritage projects. https://historicengland.org.uk\n7. Open Metaverse Alliance (2025). Standards and protocols. https://openmetaversealliance.org\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: tourism-metaverse-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20313\n\t- preferred-term:: Tourism Metaverse\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A virtual platform enabling users to explore, preview, and experience tourist destinations, cultural sites, and travel experiences through immersive digital environments, supporting sustainable tourism and accessibility to remote or restricted locations.\n\t- source:: [[ETSI GS MEC]]\n\t- maturity:: draft\n\t- owl:class:: mv:TourismMetaverse\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[VirtualSocietyDomain]], [[CreativeMediaDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: tourism-metaverse-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Metaverse Platform]]\n\t\t- is-part-of:: [[Virtual World]]\n\t\t- has-part:: [[Tour Guide System]]\n\t\t- has-part:: [[Travel Planner]]\n\t\t- has-part:: [[Cultural Exhibit]]\n\t\t- has-part:: [[Geospatial Engine]]\n\t\t- has-part:: [[Virtual Destination]]\n\t\t- requires:: [[Content Management System]]\n\t\t- requires:: [[Spatial Audio]]\n\t\t- requires:: [[Avatar System]]\n\t\t- requires:: [[3D Rendering Engine]]\n\t\t- enables:: [[Cultural Heritage Preservation]]\n\t\t- enables:: [[Destination Marketing]]\n\t\t- enables:: [[Virtual Tourism]]\n\t\t- enables:: [[Accessibility Enhancement]]\n\t\t- depends-on:: [[Geographic Information System]]\n\t\t- depends-on:: [[Photogrammetry]]\n\t\t- depends-on:: [[360 Video]]\n\t\t- depends-on:: [[Translation Service]]\n\n## Academic Context\n\n- Brief contextual overview\n\t- The Tourism Metaverse refers to the integration of immersive digital environments—primarily virtual reality (VR), augmented reality (AR), and mixed reality (MR)—into the tourism sector, enabling users to explore, preview, and experience destinations and cultural sites remotely.\n\t- Key developments and current state\n\t\t- The metaverse in tourism has evolved from simple virtual tours to interactive, multi-sensory experiences that blend digital and physical travel, supporting accessibility and sustainable tourism practices.\n\t\t- Academic foundations\n\t\t\t- Research in tourism and hospitality increasingly focuses on how immersive technologies reshape consumer behaviour, destination marketing, and service delivery.\n\t\t\t- Theoretical frameworks such as the Means-end Chain and soft laddering have been applied to understand the value hierarchies and psychological benefits of metaverse tourism experiences (Buhalis et al., 2025).\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n\t- Notable organisations and platforms\n\t\t- Major travel brands and destination marketing organisations (DMOs) use metaverse platforms for virtual destination previews, interactive storytelling, and immersive marketing campaigns.\n\t\t- Examples include browser-based platforms like Decentraland and ZEPETO, which have been adopted by international tourism boards for virtual exhibitions and cultural showcases.\n\t- UK and North England examples where relevant\n\t\t- UK tourism boards have piloted virtual experiences for heritage sites, such as the Roman Baths in Bath and the Lake District, with some North England cities like Manchester and Leeds exploring AR-enhanced city tours.\n\t\t- The National Trust has experimented with VR experiences for remote access to historic properties, including properties in Northumberland and Yorkshire.\n\t- Technical capabilities and limitations\n\t\t- Capabilities\n\t\t\t- Hyper-realistic VR environments, interactive avatars, and real-time data integration allow for immersive previews and personalised tours.\n\t\t\t- AR integration enables overlaying digital information onto physical environments, enhancing on-site experiences.\n\t\t- Limitations\n\t\t\t- Sensory fidelity remains limited; experiences are primarily visual and auditory, with limited tactile or olfactory feedback.\n\t\t\t- Accessibility barriers persist for users without advanced hardware or reliable internet connectivity.\n\t- Standards and frameworks\n\t\t- Industry standards for interoperability and user experience are still evolving, with organisations like the Open Metaverse Alliance working to establish common protocols.\n\n## Research & Literature\n\n- Key academic papers and sources\n\t- Buhalis, D., et al. (2025). The metaverse revolutionises tourism marketing: a systematic review. Journal of Hospitality and Tourism Insights. https://doi.org/10.1108/JHTI-01-2025-0161\n\t- McKinsey & Company (2025). Tourism in the metaverse: Can travel go virtual? https://www.mckinsey.com/industries/travel/our-insights/tourism-in-the-metaverse-can-travel-go-virtual\n\t- Exploring the metaverse tourism experience and its driving forces. Current Issues in Tourism, 2025. https://doi.org/10.1080/13683500.2025.2530588\n- Ongoing research directions\n\t- Investigating the psychological and behavioural impacts of metaverse tourism on travel decision-making.\n\t- Exploring the integration of AI and machine learning to personalise virtual travel experiences.\n\n## UK Context\n\n- British contributions and implementations\n\t- The UK has been at the forefront of adopting immersive technologies in tourism, with initiatives led by VisitBritain, Historic England, and various regional tourism boards.\n\t- British universities, including those in Manchester and Leeds, are conducting research on the impact of metaverse technologies on cultural heritage and sustainable tourism.\n- North England innovation hubs (if relevant)\n\t- Manchester and Leeds have emerged as regional innovation hubs, with local tech startups collaborating with tourism organisations to develop AR and VR experiences for cultural and heritage sites.\n\t- Newcastle and Sheffield are exploring smart city technologies that integrate AR for urban tourism and visitor engagement.\n- Regional case studies\n\t- The Lake District National Park has piloted VR experiences for remote access to scenic trails and historic sites.\n\t- The Yorkshire Museum in York has launched AR-enhanced exhibitions, allowing visitors to interact with digital reconstructions of historical artefacts.\n\n## Future Directions\n\n- Emerging trends and developments\n\t- Increased integration of AI-driven personalisation and real-time data in metaverse tourism experiences.\n\t- Expansion of multi-sensory feedback technologies to enhance immersion.\n- Anticipated challenges\n\t- Ensuring equitable access to metaverse tourism experiences, particularly for users in rural or underserved areas.\n\t- Addressing privacy and data security concerns in immersive digital environments.\n- Research priorities\n\t- Longitudinal studies on the impact of metaverse tourism on physical travel patterns and destination branding.\n\t- Development of ethical guidelines for the use of immersive technologies in tourism.\n\n## References\n\n1. Buhalis, D., et al. (2025). The metaverse revolutionises tourism marketing: a systematic review. Journal of Hospitality and Tourism Insights. https://doi.org/10.1108/JHTI-01-2025-0161\n2. McKinsey & Company (2025). Tourism in the metaverse: Can travel go virtual? https://www.mckinsey.com/industries/travel/our-insights/tourism-in-the-metaverse-can-travel-go-virtual\n3. Exploring the metaverse tourism experience and its driving forces. Current Issues in Tourism, 2025. https://doi.org/10.1080/13683500.2025.2530588\n4. National Trust (2025). Virtual heritage experiences. https://www.nationaltrust.org.uk\n5. VisitBritain (2025). Immersive tourism initiatives. https://www.visitbritain.org\n6. Historic England (2025). Digital heritage projects. https://historicengland.org.uk\n7. Open Metaverse Alliance (2025). Standards and protocols. https://openmetaversealliance.org\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [
+    "Virtual World",
     "Photogrammetry"
   ],
   "wiki_links": [
-    "Extended Reality (XR)"
+    "3D Rendering Engine",
+    "Avatar System",
+    "Cultural Exhibit",
+    "Destination Marketing",
+    "ApplicationLayer",
+    "Cultural Heritage Preservation",
+    "ETSI GS MEC",
+    "Translation Service",
+    "Virtual Destination",
+    "Spatial Audio",
+    "Geospatial Engine",
+    "Accessibility Enhancement",
+    "CreativeMediaDomain",
+    "Metaverse Platform",
+    "Geographic Information System",
+    "Travel Planner",
+    "Tour Guide System",
+    "VirtualSocietyDomain",
+    "Photogrammetry",
+    "Virtual World",
+    "Content Management System",
+    "360 Video",
+    "Virtual Tourism"
   ],
   "ontology": {
     "term_id": "20313",
     "preferred_term": "Tourism Metaverse",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#TourismMetaverse",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "A virtual platform enabling users to explore, preview, and experience tourist destinations, cultural sites, and travel experiences through immersive digital environments, supporting sustainable tourism and accessibility to remote or restricted locations.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "draft",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:TourismMetaverse",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "has_part": [
+      "Tour Guide System",
+      "Travel Planner",
+      "Cultural Exhibit",
+      "Geospatial Engine",
+      "Virtual Destination"
+    ],
+    "is_part_of": [
+      "Metaverse Platform",
+      "Virtual World"
+    ],
+    "requires": [
+      "Content Management System",
+      "Spatial Audio",
+      "Avatar System",
+      "3D Rendering Engine"
+    ],
+    "depends_on": [
+      "Geographic Information System",
+      "Photogrammetry",
+      "360 Video",
+      "Translation Service"
+    ],
+    "enables": [
+      "Cultural Heritage Preservation",
+      "Destination Marketing",
+      "Virtual Tourism",
+      "Accessibility Enhancement"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "VirtualSocietyDomain",
+      "CreativeMediaDomain"
+    ],
+    "implemented_in_layer": [
+      "ApplicationLayer"
+    ],
+    "source": [
+      "ETSI GS MEC"
+    ],
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20313' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

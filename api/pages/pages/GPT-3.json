@@ -1,0 +1,58 @@
+{
+  "id": "GPT-3",
+  "title": "GPT 3",
+  "content": "- ### OntologyBlock\n  id:: gpt-3-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0214\n\t- preferred-term:: GPT 3\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: mv:GPT3\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n### Domain & Architecture\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- maturity:: draft\n\n### Relationships\n- is-subclass-of:: [[GPT]]\n\n## Characteristics\n\n- **Massive Scale**: 175 billion parameters\n- **In-Context Learning**: Learns from prompt examples without parameter updates\n- **Few-Shot Performance**: Strong task performance with minimal examples\n- **Emergent Abilities**: Capabilities arising from scale\n\n## Academic Foundations\n\n**Primary Source**: Brown et al., \"Language Models are Few-Shot Learners\", arXiv:2005.14165 (2020)\n\n**Benchmark Performance**: Achieves 85.0 F1 on CoQA in few-shot settings, demonstrating strong in-context learning abilities.\n\n**Citations**: Seminal work on emergent abilities in large models.\n\n## Technical Context\n\nGPT-3's in-context learning allows it to adapt to new tasks purely through text interaction with the model. Few-shot performance increases more rapidly with model size than zero-shot, demonstrating benefits of scale for learning from demonstrations.\n\n## Ontological Relationships\n\n- **Broader Term**: Large Language Model\n- **Related Terms**: GPT-2, GPT-4, In-Context Learning, Few-Shot Learning\n- **Successors**: InstructGPT, ChatGPT, GPT-4\n\n## Usage Context\n\n\"GPT-3 achieves 85.0 F1 on CoQA in few-shot settings, demonstrating strong in-context learning abilities.\"\n\n## OWL Functional Syntax\n\n```clojure\n(Declaration (Class :GPT3))\n(AnnotationAssertion rdfs:label :GPT3 \"GPT-3\"@en)\n(AnnotationAssertion :fullName :GPT3 \"Generative Pre-trained Transformer 3\"@en)\n(AnnotationAssertion rdfs:comment :GPT3\n  \"175 billion parameter autoregressive model demonstrating few-shot learning without fine-tuning.\"@en)\n(AnnotationAssertion :hasSource :GPT3\n  \"Brown et al., 'Language Models are Few-Shot Learners', arXiv:2005.14165 (2020)\"@en)\n\n;; Taxonomic relationships\n(SubClassOf :GPT3 :LargeLanguageModel)\n(SubClassOf :GPT3 :DecoderOnlyModel)\n(SubClassOf :GPT3 :AutoregressiveLanguageModel)\n(SubClassOf :GPT3 :GPT)\n\n;; Scale characteristics\n(DataPropertyAssertion :hasParameterCount :GPT3 \"175B\"^^xsd:string)\n(AnnotationAssertion :scaleComparison :GPT3\n  \"10× larger than any previous non-sparse language model\"@en)\n\n;; Emergent capabilities\n(Declaration (Class :InContextLearning))\n(Declaration (Class :FewShotLearning))\n(Declaration (Class :ZeroShotLearning))\n(Declaration (Class :EmergentAbility))\n\n(SubClassOf :GPT3\n  (ObjectSomeValuesFrom :demonstrates :InContextLearning))\n(SubClassOf :GPT3\n  (ObjectSomeValuesFrom :demonstrates :FewShotLearning))\n(SubClassOf :GPT3\n  (ObjectSomeValuesFrom :demonstrates :ZeroShotLearning))\n(SubClassOf :GPT3\n  (ObjectSomeValuesFrom :exhibits :EmergentAbility))\n\n;; Learning characteristics\n(DataPropertyAssertion :learnsFromPromptExamples :GPT3 \"true\"^^xsd:boolean)\n(DataPropertyAssertion :requiresParameterUpdates :GPT3 \"false\"^^xsd:boolean)\n(DataPropertyAssertion :adaptsViaTextInteraction :GPT3 \"true\"^^xsd:boolean)\n\n;; Model variants\n(Declaration (Class :GPT3Small))\n(Declaration (Class :GPT3Medium))\n(Declaration (Class :GPT3Large))\n(Declaration (Class :GPT3XL))\n(Declaration (Class :GPT3_175B))\n\n(SubClassOf :GPT3Small :GPT3)\n(SubClassOf :GPT3Medium :GPT3)\n(SubClassOf :GPT3Large :GPT3)\n(SubClassOf :GPT3XL :GPT3)\n(SubClassOf :GPT3_175B :GPT3)\n\n(DataPropertyAssertion :hasParameterCount :GPT3Small \"125M\"^^xsd:string)\n(DataPropertyAssertion :hasParameterCount :GPT3Medium \"350M\"^^xsd:string)\n(DataPropertyAssertion :hasParameterCount :GPT3Large \"760M\"^^xsd:string)\n(DataPropertyAssertion :hasParameterCount :GPT3XL \"1.3B\"^^xsd:string)\n(DataPropertyAssertion :hasParameterCount :GPT3_175B \"175B\"^^xsd:string)\n\n;; Benchmark performance\n(DataPropertyAssertion :achievesCoQAF1 :GPT3 \"85.0\"^^xsd:decimal)\n(AnnotationAssertion :benchmarkContext :GPT3 \"Few-shot settings\"@en)\n\n;; Successors\n(AnnotationAssertion :hasSuccessor :GPT3 :InstructGPT)\n(AnnotationAssertion :hasSuccessor :GPT3 :ChatGPT)\n(AnnotationAssertion :hasSuccessor :GPT3 :GPT4)\n\n;; Key findings\n(AnnotationAssertion :keyFinding :GPT3\n  \"Few-shot performance scales more rapidly with model size than zero-shot\"@en)\n(AnnotationAssertion :keyFinding :GPT3\n  \"Demonstrates benefits of scale for learning from demonstrations\"@en)\n\n;; Architecture specifics\n(DataPropertyAssertion :hasLayerCount :GPT3_175B \"96\"^^xsd:integer)\n(DataPropertyAssertion :hasHiddenDimension :GPT3_175B \"12288\"^^xsd:integer)\n(DataPropertyAssertion :hasAttentionHeads :GPT3_175B \"96\"^^xsd:integer)\n(DataPropertyAssertion :hasContextLength :GPT3_175B \"2048\"^^xsd:integer)\n```\n\n## References\n\n- Brown, T., et al. (2020). \"Language Models are Few-Shot Learners\". arXiv:2005.14165\n\n---\n\n*Ontology Term managed by AI-Grounded Ontology Working Group*\n*UK English Spelling Standards Applied*\n\t- maturity:: draft\n\t- owl:class:: mv:GPT3\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]",
+  "backlinks": [],
+  "wiki_links": [
+    "MetaverseDomain",
+    "GPT"
+  ],
+  "ontology": {
+    "term_id": "AI-0214",
+    "preferred_term": "GPT 3",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#GPT3",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:GPT3",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain",
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

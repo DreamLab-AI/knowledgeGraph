@@ -1,0 +1,53 @@
+{
+  "id": "Explainability (OECD)",
+  "title": "Explainability (OECD)",
+  "content": "- ### OntologyBlock\n  id:: explainability-oecd-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0162\n\t- preferred-term:: Explainability (OECD)\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: People affected by AI-based outcomes should be able to understand how and why particular decisions or recommendations were reached, with explanations provided in ways appropriate to the context and enabling meaningful contestation of AI-influenced decisions.\n\n## Explainability (OECD)\n\nExplainability (OECD) refers to people affected by ai-based outcomes should be able to understand how and why particular decisions or recommendations were reached, with explanations provided in ways appropriate to the context and enabling meaningful contestation of ai-influenced decisions.\n\n- The OECD AI Principles represent the first intergovernmental standard on artificial intelligence, adopted in 2019 and substantially updated in 2023 and 2024[1][2][3]\n  - Explainability forms one of five core values-based principles alongside inclusive growth, human rights respect, robustness, and accountability\n  - The principle emerged from recognition that AI systems operate across borders and require international consensus on trustworthy governance\n  - Explainability specifically addresses the transparency requirement: stakeholders must understand how AI systems operate, with providers disclosing information about data sources, logic, and decision-making processes in context-appropriate ways[1]\n- The principle reflects a rights-based approach to AI governance\n  - Enables users to challenge outputs where needed, supporting meaningful contestation of AI-influenced decisions\n  - Balances innovation with protection of human rights and democratic values\n  - Designed to remain flexible and relevant as AI systems continue to evolve post-deployment, particularly with generative AI applications[2]\n\n## Technical Details\n\n- **Id**: explainability-(oecd)-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Current Landscape (2025)\n\n- OECD framework adoption and influence\n  - Over 1,000 policy initiatives across more than 70 jurisdictions follow the OECD AI Principles as of May 2023, with continued expansion through 2025[3]\n  - The framework has significantly influenced landmark regulatory efforts including the European Union's AI Act and the NIST AI Risk Management Framework[2]\n  - OECD member countries are expected to actively support these principles and make best efforts to implement them\n- Explainability in practice across governance frameworks\n  - The EU AI Act operationalises explainability through a tiered, risk-based classification system (unacceptable, high, limited, minimal risk), with high-risk systems requiring explicit transparency mechanisms[4]\n  - UNESCO's Recommendation on the Ethics of Artificial Intelligence incorporates explainability whilst emphasising environmental sustainability and gender equality[4]\n  - Common implementation themes include human oversight, transparency, accountability, and proportionality—with oversight corresponding to potential system impact[4]\n- Technical implementation considerations\n  - Context-appropriate disclosure remains challenging; different stakeholders (engineers, product managers, end-users) require tailored explanations[1]\n  - Organisations must provide ongoing training to navigate the complex, constantly evolving regulatory landscape, with role-specific guidance on model transparency and accuracy[1]\n  - The principle acknowledges that meaningful explainability requires balancing technical precision with accessibility for non-specialist audiences\n- UK and North England context\n  - The UK has adopted OECD principles within its AI governance framework, though specific North England implementation details remain limited in current policy documentation\n  - Manchester, Leeds, Newcastle, and Sheffield host significant AI research and development clusters, though formal explainability-focused initiatives specific to these regions are not yet prominently documented in international governance frameworks\n  - UK organisations increasingly align with OECD standards as baseline expectations for responsible AI deployment\n\n## Research & Literature\n\n- Primary sources\n  - OECD (2019, updated 2023–2024). *Recommendation of the Council on Artificial Intelligence*. OECD Legal Instruments. Available at: https://legalinstruments.oecd.org/en/instruments/oecd-legal-0449[2][3]\n  - OECD (2025). *Governing with Artificial Intelligence: AI in Policy Evaluation*. OECD Publications[5]\n- Framework documentation\n  - OECD (2024). *AI Principles – OECD*. Topic overview and adherent countries. Available at: https://www.oecd.org/en/topics/sub-issues/ai-principles.html[3]\n  - Bradley (2025). *Global AI Governance: Five Key Frameworks Explained*. Analysis of OECD recommendations and related governance structures[2]\n- Implementation guidance\n  - AI21 Labs (2025). *9 Key AI Governance Frameworks in 2025*. Comparative analysis of explainability across frameworks including OECD, EU AI Act, and UNESCO recommendations[4]\n\n## Future Directions\n\n- Evolving technical standards\n  - Continued refinement of explainability definitions to accommodate generative AI systems and post-deployment model evolution\n  - Development of standardised metrics for assessing explanation quality and user comprehension across different contexts\n- Regulatory harmonisation\n  - Governments worldwide increasingly adopt OECD definitions and AI system classifications for interoperable governance[2]\n  - Anticipated convergence between EU, UK, and international frameworks, though jurisdictional variations will persist\n- Research priorities\n  - Empirical studies on effective explanation formats for diverse stakeholder groups\n  - Investigation of trade-offs between explainability and model performance\n  - Development of proportionate oversight mechanisms that scale with system risk levels\n- Emerging challenges\n  - Balancing proprietary concerns with transparency requirements\n  - Ensuring explainability remains meaningful as AI systems become increasingly complex\n  - Addressing cultural and linguistic variations in what constitutes \"context-appropriate\" explanation\n---\n**Note:** This entry reflects the current state of OECD AI governance as of November 2025. The principles remain non-binding but highly influential, with implementation varying across jurisdictions. The framework continues to evolve in response to technological developments, particularly in generative AI applications.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [],
+  "ontology": {
+    "term_id": "AI-0162",
+    "preferred_term": "Explainability (OECD)",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "People affected by AI-based outcomes should be able to understand how and why particular decisions or recommendations were reached, with explanations provided in ways appropriate to the context and enabling meaningful contestation of AI-influenced decisions.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": null,
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:class",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "Parameter Count",
+  "title": "Parameter Count",
+  "content": "- ### OntologyBlock\n  id:: parameter-count-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0245\n\t- preferred-term:: Parameter Count\n\t- source-domain:: ai\n\t- owl:class:: ai:ParameterCount\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: The total number of trainable parameters in a neural network, serving as a primary measure of model size and capacity, typically ranging from millions to hundreds of billions in modern language models.\n\t- #### Relationships\n\t  id:: parameter-count-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[ModelProperty]]\n\n## Parameter Count\n\nParameter Count refers to the total number of trainable parameters in a neural network, serving as a primary measure of model size and capacity, typically ranging from millions to hundreds of billions in modern language models.\n\n- Definition and foundational role\n  - Internal variables adjusted during training to improve predictive accuracy\n  - Act as the model's \"tuning knobs\" refined through data exposure\n  - In deep learning, parameters primarily comprise weights assigned to connections between neurons\n  - Serve as a primary measure of model size and computational capacity\n- Historical development\n  - Neural scaling laws framework established by Banko and colleagues\n  - Chinchilla model introduced standardised approaches to parameter-compute relationships\n  - Recent unification of sparse and dense model scaling laws (ICLR 2025)\n- Relationship to model architecture\n  - Model structure and neuron layer depth significantly influence total parameter count\n  - Special architectural components (attention mechanisms, mixture-of-experts) contribute substantially\n  - Sparse models can achieve comparable performance with lower active parameter counts than dense equivalents\n\n## Technical Details\n\n- **Id**: parameter-count-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Current Landscape (2025)\n\n- Parameter count ranges and scale\n  - Modern language models typically range from millions to hundreds of billions of parameters\n  - \"Giant models\" now routinely reach billions to trillions of parameters\n  - Sparse pre-training configurations demonstrate that average parameter count predicts evaluation loss equally well across sparse and dense architectures\n- Technical considerations and trade-offs\n  - More parameters enable models to capture complex data patterns, potentially improving accuracy\n  - Excessive parameters risk overfitting—memorising training examples rather than learning underlying patterns\n  - Critical balance required between capacity and generalisation performance\n  - Sparse architectures offer computational efficiency without proportional performance sacrifice\n- Industry adoption\n  - Parameter count remains a widely cited metric for model capability comparison\n  - Increasingly supplemented by compute-aware metrics (training compute, dataset size)\n  - Mixture-of-experts models complicate direct parameter-to-capability comparisons\n- Standards and frameworks\n  - Unified scaling laws now accommodate both sparse and dense pre-training regimes\n  - Average parameter count metric provides consistent predictive framework across model types\n  - Downstream task evaluation validates sparse-dense equivalence beyond loss metrics\n\n## Research & Literature\n\n- Foundational scaling laws\n  - Banko, M., et al. (2003). \"A Study of the Effects of Different Types of Errors on the Requirements for Automatic NLP Systems.\" *Proceedings of the 41st Annual Meeting of the Association for Computational Linguistics*\n  - Establishes framework for understanding performance scaling with parameters, data, and compute\n- Recent advances in sparse-dense unification\n  - Anonymous authors (2025). \"Average Parameter Count Over Pre-training Unifies Sparse and Dense Scaling Laws.\" *Proceedings of the International Conference on Learning Representations (ICLR 2025)*\n  - Demonstrates that average parameter count predicts sparse pre-training loss with equivalent accuracy to dense models\n  - Validates findings on models exceeding 1 billion parameters\n  - Extends Chinchilla model framework to sparse pre-training configurations\n- Empirical parameter tracking\n  - Epoch AI (2024). \"Parameter Counts in Machine Learning.\" *Epoch AI Blog*\n  - Comprehensive compilation of 139 machine learning systems with development dates and trainable parameter counts\n  - Acknowledges selection biases toward academic publications, English-language papers, and vision/language/gaming domains\n- Contextual data visualisation\n  - Our World in Data (2024). \"Exponential Growth of Parameters in Notable AI Systems\" and \"Parameters in Notable Artificial Intelligence Systems\"\n  - Provides accessible overview of parameter scaling trends across AI development\n\n## UK Context\n\n- Academic research contributions\n  - UK institutions actively engaged in neural scaling law research and sparse model development\n  - Parameter count standardisation efforts supported by British AI research community\n- North England innovation\n  - Manchester, Leeds, Newcastle, and Sheffield host significant AI research clusters within universities and technology sectors\n  - Regional contributions to machine learning infrastructure and model development frameworks\n  - Growing adoption of parameter-efficient fine-tuning techniques in North England technology hubs\n\n## Future Directions\n\n- Emerging measurement frameworks\n  - Parameter count increasingly contextualised within broader efficiency metrics (compute, data, inference cost)\n  - Sparse and mixture-of-experts architectures necessitate refined comparison methodologies\n  - Active research into parameter-agnostic capability assessment\n- Anticipated challenges\n  - Balancing model capacity against computational resource constraints\n  - Developing standardised benchmarks for sparse versus dense model comparison\n  - Managing training and inference costs for trillion-parameter systems\n- Research priorities\n  - Refining scaling law predictions across diverse architectures and training regimes\n  - Investigating optimal parameter allocation strategies\n  - Exploring parameter efficiency through architectural innovation rather than scale alone\n\n## References\n\n1. Banko, M., et al. (2003). \"A Study of the Effects of Different Types of Errors on the Requirements for Automatic NLP Systems.\" *Proceedings of the 41st Annual Meeting of the Association for Computational Linguistics*.\n2. Anonymous (2025). \"Average Parameter Count Over Pre-training Unifies Sparse and Dense Scaling Laws.\" *Proceedings of the International Conference on Learning Representations (ICLR 2025)*. arXiv:2501.12486.\n3. Epoch AI (2024). \"Parameter Counts in Machine Learning.\" Retrieved from Epoch AI Blog.\n4. Our World in Data (2024). \"Exponential Growth of Parameters in Notable AI Systems\" and \"Parameters in Notable Artificial Intelligence Systems.\"\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "ModelProperty"
+  ],
+  "ontology": {
+    "term_id": "AI-0245",
+    "preferred_term": "Parameter Count",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#ParameterCount",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "The total number of trainable parameters in a neural network, serving as a primary measure of model size and capacity, typically ranging from millions to hundreds of billions in modern language models.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:ParameterCount",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "ModelProperty"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

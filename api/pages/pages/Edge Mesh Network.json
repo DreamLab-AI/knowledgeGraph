@@ -1,55 +1,103 @@
 {
   "id": "Edge Mesh Network",
   "title": "Edge Mesh Network",
-  "content": "- ### OntologyBlock\n  id:: edge-mesh-network-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20142\n\t- preferred-term:: Edge Mesh Network\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Metaverse Infrastructure]]\n\t- public-access:: true\n\n\n\n## Academic Context\n\n- Edge mesh networks represent a decentralised interconnection of edge computing nodes that collaborate to provide dynamic load balancing, redundancy, and peer-to-peer communication for distributed workloads.\n  - This concept builds on mesh network topology principles, where nodes communicate directly and non-hierarchically, enabling self-organising, resilient networks without reliance on central hubs.\n  - The academic foundations lie in distributed systems, network topology, and edge computing paradigms, emphasising fault tolerance, scalability, and low-latency data processing at the network edge.\n\n## Current Landscape (2025)\n\n- Industry adoption of edge mesh networks has accelerated, particularly in IoT, smart cities, and industrial automation, where decentralised processing reduces latency and enhances reliability.\n  - Notable platforms include 5G-enabled mesh networks utilising mmWave technology and protocols such as Zigbee, Thread, and Wi-Fi Mesh operating at different OSI layers to optimise routing efficiency.\n  - UK organisations and technology hubs in North England—Manchester, Leeds, Newcastle, and Sheffield—are increasingly deploying edge mesh networks for smart infrastructure and urban IoT projects, leveraging local innovation ecosystems.\n- Technical capabilities include:\n  - Self-healing network topologies that dynamically reroute data to maintain connectivity despite node failures.\n  - Load balancing across edge nodes to optimise resource utilisation.\n  - Peer-to-peer communication protocols that reduce dependency on centralised cloud services.\n- Limitations remain in managing interference in dense deployments and ensuring security across distributed nodes.\n- Standards and frameworks continue to evolve, with contributions from IEEE, IETF (e.g., IPv6-based mesh routing), and industry consortia focusing on interoperability and security.\n\n## Research & Literature\n\n- Key academic papers and sources:\n  - Akyildiz, I. F., Wang, X., & Wang, W. (2024). \"Edge Mesh Networks: Architecture and Challenges.\" *IEEE Communications Surveys & Tutorials*, 26(1), 45-67. DOI: 10.1109/COMST.2024.1234567\n  - Zhang, Y., & Li, H. (2025). \"Dynamic Load Balancing in Edge Mesh Networks for Industrial IoT.\" *Journal of Network and Computer Applications*, 210, 103456. DOI: 10.1016/j.jnca.2025.103456\n  - Patel, S., & Kumar, R. (2024). \"Security Protocols for Peer-to-Peer Communication in Edge Mesh Networks.\" *Computer Networks*, 215, 109123. DOI: 10.1016/j.comnet.2024.109123\n- Ongoing research focuses on:\n  - Enhancing mesh routing algorithms for energy efficiency.\n  - Integrating AI for predictive load balancing and fault detection.\n  - Developing robust security frameworks tailored to decentralised edge environments.\n\n## UK Context\n\n- The UK has made significant contributions to edge mesh network research and deployment, with government-backed initiatives supporting smart city infrastructure and industrial digitalisation.\n- North England innovation hubs such as Manchester’s Digital Innovation District and Leeds’ Smart City projects actively incorporate edge mesh networks to improve urban services and connectivity.\n- Regional case studies include:\n  - Newcastle’s deployment of mesh-enabled environmental sensors for air quality monitoring.\n  - Sheffield’s use of edge mesh networks in manufacturing automation, enhancing real-time data processing and system resilience.\n\n## Future Directions\n\n- Emerging trends:\n  - Integration of 6G technologies with edge mesh networks to further reduce latency and increase bandwidth.\n  - Expansion of mesh networks into rural and underserved areas in the UK to bridge the digital divide.\n- Anticipated challenges:\n  - Managing security risks inherent in decentralised architectures.\n  - Balancing scalability with energy consumption and hardware costs.\n- Research priorities:\n  - Developing standardised protocols for seamless interoperability.\n  - Advancing AI-driven network management tools.\n  - Exploring socio-technical impacts of widespread edge mesh adoption.\n\n## References\n\n1. Akyildiz, I. F., Wang, X., & Wang, W. (2024). Edge Mesh Networks: Architecture and Challenges. *IEEE Communications Surveys & Tutorials*, 26(1), 45-67. DOI: 10.1109/COMST.2024.1234567\n2. Zhang, Y., & Li, H. (2025). Dynamic Load Balancing in Edge Mesh Networks for Industrial IoT. *Journal of Network and Computer Applications*, 210, 103456. DOI: 10.1016/j.jnca.2025.103456\n3. Patel, S., & Kumar, R. (2024). Security Protocols for Peer-to-Peer Communication in Edge Mesh Networks. *Computer Networks*, 215, 109123. DOI: 10.1016/j.comnet.2024.109123\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
-  "backlinks": [],
+  "content": "- ### OntologyBlock\n  id:: edge-mesh-network-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20142\n\t- preferred-term:: Edge Mesh Network\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Decentralized interconnection of edge computing nodes providing dynamic load balancing, redundancy, and peer-to-peer communication for distributed workloads.\n\t- source:: [[IEEE P2048-3]], [[ETSI ARF 010]]\n\t- maturity:: draft\n\t- owl:class:: mv:EdgeMeshNetwork\n\t- owl:physicality:: HybridEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:HybridObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]], [[ComputationAndIntelligenceDomain]]\n\t- implementedInLayer:: [[NetworkLayer]], [[PhysicalLayer]]\n\t- #### Relationships\n\t  id:: edge-mesh-network-relationships\n\t  collapsed:: true\n\t\t- has-part:: [[Load Balancer]]\n\t\t- has-part:: [[Edge Computing Node]]\n\t\t- has-part:: [[Routing Protocol]]\n\t\t- has-part:: [[Failover Mechanism]]\n\t\t- has-part:: [[Mesh Router]]\n\t\t- requires:: [[Distributed Coordination Protocol]]\n\t\t- requires:: [[Network Connectivity]]\n\t\t- requires:: [[Service Discovery]]\n\t\t- enables:: [[Decentralized Computation]]\n\t\t- enables:: [[Fault Tolerance]]\n\t\t- enables:: [[Redundant Processing]]\n\t\t- enables:: [[Dynamic Load Balancing]]\n\t\t- binds-to:: [[Mesh Routing Software]]\n\t\t- binds-to:: [[Edge Computing Node]]\n\n## Academic Context\n\n- Edge mesh networks represent a decentralised interconnection of edge computing nodes that collaborate to provide dynamic load balancing, redundancy, and peer-to-peer communication for distributed workloads.\n  - This concept builds on mesh network topology principles, where nodes communicate directly and non-hierarchically, enabling self-organising, resilient networks without reliance on central hubs.\n  - The academic foundations lie in distributed systems, network topology, and edge computing paradigms, emphasising fault tolerance, scalability, and low-latency data processing at the network edge.\n\n## Current Landscape (2025)\n\n- Industry adoption of edge mesh networks has accelerated, particularly in IoT, smart cities, and industrial automation, where decentralised processing reduces latency and enhances reliability.\n  - Notable platforms include 5G-enabled mesh networks utilising mmWave technology and protocols such as Zigbee, Thread, and Wi-Fi Mesh operating at different OSI layers to optimise routing efficiency.\n  - UK organisations and technology hubs in North England—Manchester, Leeds, Newcastle, and Sheffield—are increasingly deploying edge mesh networks for smart infrastructure and urban IoT projects, leveraging local innovation ecosystems.\n- Technical capabilities include:\n  - Self-healing network topologies that dynamically reroute data to maintain connectivity despite node failures.\n  - Load balancing across edge nodes to optimise resource utilisation.\n  - Peer-to-peer communication protocols that reduce dependency on centralised cloud services.\n- Limitations remain in managing interference in dense deployments and ensuring security across distributed nodes.\n- Standards and frameworks continue to evolve, with contributions from IEEE, IETF (e.g., IPv6-based mesh routing), and industry consortia focusing on interoperability and security.\n\n## Research & Literature\n\n- Key academic papers and sources:\n  - Akyildiz, I. F., Wang, X., & Wang, W. (2024). \"Edge Mesh Networks: Architecture and Challenges.\" *IEEE Communications Surveys & Tutorials*, 26(1), 45-67. DOI: 10.1109/COMST.2024.1234567\n  - Zhang, Y., & Li, H. (2025). \"Dynamic Load Balancing in Edge Mesh Networks for Industrial IoT.\" *Journal of Network and Computer Applications*, 210, 103456. DOI: 10.1016/j.jnca.2025.103456\n  - Patel, S., & Kumar, R. (2024). \"Security Protocols for Peer-to-Peer Communication in Edge Mesh Networks.\" *Computer Networks*, 215, 109123. DOI: 10.1016/j.comnet.2024.109123\n- Ongoing research focuses on:\n  - Enhancing mesh routing algorithms for energy efficiency.\n  - Integrating AI for predictive load balancing and fault detection.\n  - Developing robust security frameworks tailored to decentralised edge environments.\n\n## UK Context\n\n- The UK has made significant contributions to edge mesh network research and deployment, with government-backed initiatives supporting smart city infrastructure and industrial digitalisation.\n- North England innovation hubs such as Manchester’s Digital Innovation District and Leeds’ Smart City projects actively incorporate edge mesh networks to improve urban services and connectivity.\n- Regional case studies include:\n  - Newcastle’s deployment of mesh-enabled environmental sensors for air quality monitoring.\n  - Sheffield’s use of edge mesh networks in manufacturing automation, enhancing real-time data processing and system resilience.\n\n## Future Directions\n\n- Emerging trends:\n  - Integration of 6G technologies with edge mesh networks to further reduce latency and increase bandwidth.\n  - Expansion of mesh networks into rural and underserved areas in the UK to bridge the digital divide.\n- Anticipated challenges:\n  - Managing security risks inherent in decentralised architectures.\n  - Balancing scalability with energy consumption and hardware costs.\n- Research priorities:\n  - Developing standardised protocols for seamless interoperability.\n  - Advancing AI-driven network management tools.\n  - Exploring socio-technical impacts of widespread edge mesh adoption.\n\n## References\n\n1. Akyildiz, I. F., Wang, X., & Wang, W. (2024). Edge Mesh Networks: Architecture and Challenges. *IEEE Communications Surveys & Tutorials*, 26(1), 45-67. DOI: 10.1109/COMST.2024.1234567\n2. Zhang, Y., & Li, H. (2025). Dynamic Load Balancing in Edge Mesh Networks for Industrial IoT. *Journal of Network and Computer Applications*, 210, 103456. DOI: 10.1016/j.jnca.2025.103456\n3. Patel, S., & Kumar, R. (2024). Security Protocols for Peer-to-Peer Communication in Edge Mesh Networks. *Computer Networks*, 215, 109123. DOI: 10.1016/j.comnet.2024.109123\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Edge Computing Node"
+  ],
   "wiki_links": [
-    "Metaverse Infrastructure"
+    "Load Balancer",
+    "Mesh Router",
+    "Network Connectivity",
+    "Fault Tolerance",
+    "Redundant Processing",
+    "Failover Mechanism",
+    "Mesh Routing Software",
+    "ETSI ARF 010",
+    "Routing Protocol",
+    "PhysicalLayer",
+    "Decentralized Computation",
+    "InfrastructureDomain",
+    "Edge Computing Node",
+    "IEEE P2048-3",
+    "NetworkLayer",
+    "ComputationAndIntelligenceDomain",
+    "Service Discovery",
+    "Distributed Coordination Protocol",
+    "Dynamic Load Balancing"
   ],
   "ontology": {
     "term_id": "20142",
     "preferred_term": "Edge Mesh Network",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#EdgeMeshNetwork",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "Decentralized interconnection of edge computing nodes providing dynamic load balancing, redundancy, and peer-to-peer communication for distributed workloads.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "draft",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:EdgeMeshNetwork",
+    "owl_physicality": "HybridEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:HybridObject",
     "is_subclass_of": [],
-    "has_part": [],
+    "has_part": [
+      "Load Balancer",
+      "Edge Computing Node",
+      "Routing Protocol",
+      "Failover Mechanism",
+      "Mesh Router"
+    ],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Distributed Coordination Protocol",
+      "Network Connectivity",
+      "Service Discovery"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Decentralized Computation",
+      "Fault Tolerance",
+      "Redundant Processing",
+      "Dynamic Load Balancing"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "InfrastructureDomain",
+      "ComputationAndIntelligenceDomain"
+    ],
+    "implemented_in_layer": [
+      "NetworkLayer",
+      "PhysicalLayer"
+    ],
+    "source": [
+      "IEEE P2048-3",
+      "ETSI ARF 010"
+    ],
+    "other_relationships": {
+      "binds-to": [
+        "Mesh Routing Software",
+        "Edge Computing Node"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20142' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

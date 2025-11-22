@@ -1,20 +1,20 @@
 {
   "id": "ERC721",
   "title": "ERC721",
-  "content": "- ### OntologyBlock\n  id:: erc721-ontology\n  collapsed:: true\n\t- ontology:: true\n    - is-subclass-of:: [[BlockchainTechnology]]\n\t- term-id:: BC-0104\n\t- preferred-term:: ERC721\n\t- source-domain:: blockchain\n\t- status:: active\n\t- public-access:: true\n\t- definition:: The Ethereum token standard for creating non-fungible tokens (NFTs) where each token has unique identifiers and metadata, enabling verifiable digital ownership of distinct assets.\n\t- maturity:: mature\n\t- owl:class:: bc:ERC721\n\t- owl:equivalentClass:: mv:ERC721\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Standard\n\t- belongsToDomain:: [[BlockchainDomain]]",
+  "content": "- ### OntologyBlock\n  id:: erc721-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0104\n\t- preferred-term:: ERC721\n\t- status:: active\n\t- public-access:: true\n\t- definition:: The Ethereum token standard for creating non-fungible tokens (NFTs) where each token has unique identifiers and metadata, enabling verifiable digital ownership of distinct assets.\n\t- maturity:: mature\n\t- owl:class:: bc:ERC721\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Standard\n\t- owl:equivalentClass:: mv:ERC721\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- #### Relationships\n\t  id:: erc721-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[BlockchainTechnology]]\n\t\t- belongsToDomain:: [[BlockchainDomain]]",
   "backlinks": [],
   "wiki_links": [
-    "BlockchainTechnology",
-    "BlockchainDomain"
+    "BlockchainDomain",
+    "BlockchainTechnology"
   ],
   "ontology": {
     "term_id": "BC-0104",
     "preferred_term": "ERC721",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/blockchain#ERC721",
-    "source_domain": "blockchain",
-    "domain": "blockchain",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
     "definition": "The Ethereum token standard for creating non-fungible tokens (NFTs) where each token has unique identifiers and metadata, enabling verifiable digital ownership of distinct assets.",
     "scope_note": null,
     "status": "active",
@@ -29,7 +29,9 @@
     "owl_physicality": "ConceptualEntity",
     "owl_role": "Standard",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "BlockchainTechnology"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -40,16 +42,21 @@
     "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
+      "BlockchainDomain",
       "BlockchainDomain"
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "belongsToDomain": [
+        "BlockchainDomain"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+        "Missing required property: source-domain",
+        "Missing required property: last-updated"
       ]
     }
   }

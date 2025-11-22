@@ -1,0 +1,73 @@
+{
+  "id": "Multi Sig Governance",
+  "title": "Multi Sig Governance",
+  "content": "- ### OntologyBlock\n  id:: multi-sig-governance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0468\n\t- preferred-term:: Multi Sig Governance\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: A component of the blockchain ecosystem.\n\t- maturity:: draft\n\t- owl:class:: bc:MultiSigGovernance\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[BlockchainDomain]]\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n\n## References and Resources\n\t\t- [[BC-0410-decentralised-autonomous-organisations]]\n\t\t- [[BC-0411-dao-governance-models]]\n\t\t- [[BC-0469-governance-tokens]]\n\t\t- [[BC-0470-voting-mechanisms]]\n\t\t- [[BC-0471-tokenomics-governance]] which refers to A component of the blockchain ecosystem.\n\t\t- [[BC-0472-dao-tooling]] which refers to A component of the blockchain ecosystem.\n\t\t- [[BC-0474-grant-programmes]] which refers to A component of the blockchain ecosystem.\n\t\t- [[BC-0462-treasury-management]]\n\t\t- [[Compound]]\n\t\t- [[Uniswap]]\n\t\t- [[ENS]]\n\t\t- [[Optimism]]\n\t\t- [[Gitcoin]]\n\t\t- [[Karma]]\n\t\t- [[Agora]]\n\t\t- [[StableLab]]\n\t-\n\t- ### Original Content\n\t  collapsed:: true\n\t\t- ```\n\n\t\t  ```",
+  "backlinks": [
+    "Governance Token"
+  ],
+  "wiki_links": [
+    "BC-0471-tokenomics-governance",
+    "BlockchainDomain",
+    "BC-0474-grant-programmes",
+    "BC-0410-decentralised-autonomous-organisations",
+    "BC-0469-governance-tokens",
+    "Compound",
+    "ENS",
+    "BC-0462-treasury-management",
+    "BC-0470-voting-mechanisms",
+    "Gitcoin",
+    "Karma",
+    "Agora",
+    "StableLab",
+    "BC-0472-dao-tooling",
+    "Uniswap",
+    "Optimism",
+    "BC-0411-dao-governance-models"
+  ],
+  "ontology": {
+    "term_id": "BC-0468",
+    "preferred_term": "Multi Sig Governance",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#MultiSigGovernance",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
+    "definition": "A component of the blockchain ecosystem.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:MultiSigGovernance",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

@@ -1,36 +1,36 @@
 {
   "id": "ETSI_Domain_AI",
   "title": "ETSI Domain AI",
-  "content": "- ### OntologyBlock\n  id:: etsi-domain-ai-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20330\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: ETSI Domain AI\n\t- definition:: Domain marker concept for categorizing metaverse components related to artificial intelligence, machine learning, and computational intelligence capabilities.\n\t- maturity:: mature\n\t- source:: [[ETSI GS MEC]]\n\t- owl:class:: mv:ETSIDomainAI\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[ComputationAndIntelligenceDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-ai-relationships\n\t\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t\t- is-dependency-of:: [[ETSI_Domain_AI___Governance]], [[ETSI_Domain_AI___Data_Mgmt]], [[ETSI_Domain_AI___Human_Interface]], [[ETSI_Domain_AI___Creative_Media]]\n\t\t- is-part-of:: [[ETSI Domain Taxonomy]]\n\t\t- enables:: [[AI Service Classification]], [[Intelligence Layer Categorization]]\n\t\t- depends-on:: [[ComputationAndIntelligenceDomain]]\n\t\t- has-part:: [[ETSI Domain AI Creative Media]], [[ETSI Domain AI Data Mgmt]], [[ETSI Domain AI Governance]], [[ETSI Domain AI Human Interface]]\n\t- #### OWL Axioms\n\t  id:: etsi-domain-ai-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:ETSIDomainAI))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:ETSIDomainAI mv:VirtualEntity)\n\t\t  SubClassOf(mv:ETSIDomainAI mv:Object)\n\n\t\t  # Domain marker classification\n\t\t  SubClassOf(mv:ETSIDomainAI mv:DomainMarker)\n\t\t  SubClassOf(mv:ETSIDomainAI mv:TaxonomyNode)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:ETSIDomainAI\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:ComputationAndIntelligenceDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:ETSIDomainAI\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)\n\t\t  )\n\n\t\t  # Taxonomy relationships\n\t\t  SubClassOf(mv:ETSIDomainAI\n\t\t    ObjectSomeValuesFrom(mv:categorizes mv:AIComponent)\n\t\t  )\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:isdependencyof)\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n```",
+  "content": "- ### OntologyBlock\n  id:: etsi-domain-ai-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20330\n\t- preferred-term:: ETSI Domain AI\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Domain marker concept for categorizing metaverse components related to artificial intelligence, machine learning, and computational intelligence capabilities.\n\t- source:: [[ETSI GS MEC]]\n\t- maturity:: mature\n\t- owl:class:: mv:ETSIDomainAI\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[ComputationAndIntelligenceDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-ai-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t\t- is-part-of:: [[ETSI Domain Taxonomy]]\n\t\t- has-part:: [[ETSI Domain AI Creative Media]]\n\t\t- has-part:: [[ETSI Domain AI Human Interface]]\n\t\t- has-part:: [[ETSI Domain AI Data Mgmt]]\n\t\t- has-part:: [[ETSI Domain AI Governance]]\n\t\t- enables:: [[Intelligence Layer Categorization]]\n\t\t- enables:: [[AI Service Classification]]\n\t\t- depends-on:: [[ComputationAndIntelligenceDomain]]\n\t\t- is-dependency-of:: [[ETSI_Domain_AI___Creative_Media]]\n\t\t- is-dependency-of:: [[ETSI_Domain_AI___Human_Interface]]\n\t\t- is-dependency-of:: [[ETSI_Domain_AI___Governance]]\n\t\t- is-dependency-of:: [[ETSI_Domain_AI___Data_Mgmt]]",
   "backlinks": [
     "ETSI_Domain_AI___Governance",
     "ETSI_Domain_AI___Data_Mgmt"
   ],
   "wiki_links": [
-    "ETSI_Domain_AI___Human_Interface",
-    "ComputationAndIntelligenceDomain",
-    "ETSI Domain AI Creative Media",
     "ETSI Domain Taxonomy",
     "ETSI Domain AI Data Mgmt",
-    "ArtificialIntelligence",
-    "ApplicationLayer",
+    "ETSI_Domain_AI___Creative_Media",
     "ETSI GS MEC",
     "ETSI_Domain_AI___Governance",
-    "AI Service Classification",
-    "Intelligence Layer Categorization",
+    "ArtificialIntelligence",
+    "ComputationAndIntelligenceDomain",
     "ETSI Domain AI Governance",
-    "ETSI_Domain_AI___Data_Mgmt",
+    "ETSI Domain AI Creative Media",
     "ETSI Domain AI Human Interface",
-    "ETSI_Domain_AI___Creative_Media"
+    "Intelligence Layer Categorization",
+    "ETSI_Domain_AI___Data_Mgmt",
+    "ApplicationLayer",
+    "ETSI_Domain_AI___Human_Interface",
+    "AI Service Classification"
   ],
   "ontology": {
     "term_id": "20330",
     "preferred_term": "ETSI Domain AI",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ETSIDomainAI",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "Domain marker concept for categorizing metaverse components related to artificial intelligence, machine learning, and computational intelligence capabilities.",
     "scope_note": null,
     "status": "draft",
@@ -50,9 +50,9 @@
     ],
     "has_part": [
       "ETSI Domain AI Creative Media",
+      "ETSI Domain AI Human Interface",
       "ETSI Domain AI Data Mgmt",
-      "ETSI Domain AI Governance",
-      "ETSI Domain AI Human Interface"
+      "ETSI Domain AI Governance"
     ],
     "is_part_of": [
       "ETSI Domain Taxonomy"
@@ -62,8 +62,8 @@
       "ComputationAndIntelligenceDomain"
     ],
     "enables": [
-      "AI Service Classification",
-      "Intelligence Layer Categorization"
+      "Intelligence Layer Categorization",
+      "AI Service Classification"
     ],
     "relates_to": [],
     "bridges_to": [],
@@ -80,17 +80,18 @@
     ],
     "other_relationships": {
       "is-dependency-of": [
-        "ETSI_Domain_AI___Governance",
-        "ETSI_Domain_AI___Data_Mgmt",
+        "ETSI_Domain_AI___Creative_Media",
         "ETSI_Domain_AI___Human_Interface",
-        "ETSI_Domain_AI___Creative_Media"
+        "ETSI_Domain_AI___Governance",
+        "ETSI_Domain_AI___Data_Mgmt"
       ]
     },
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "term-id '20330' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

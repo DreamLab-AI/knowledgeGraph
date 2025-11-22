@@ -1,55 +1,116 @@
 {
   "id": "Zero-Trust Architecture (ZTA)",
   "title": "Zero-Trust Architecture (ZTA)",
-  "content": "- ### OntologyBlock\n  id:: zerotrustarchitecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20189\n\t- preferred-term:: Zero-Trust Architecture (ZTA)\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Metaverse]]\n\t- public-access:: true\n\n\n# Zero-Trust Architecture (ZTA) – Revised Ontology Entry\n\n## Academic Context\n\n- Foundational security paradigm shift from perimeter-based models\n  - Originated from recognition that traditional network boundaries no longer provide adequate protection in distributed, cloud-native environments[1][2][3]\n  - Core principle: \"never trust, always verify\" applied continuously across all access requests[1][2][4]\n  - Represents fundamental departure from implicit trust models that dominated enterprise security for decades\n- Key developments and current state\n  - Adoption accelerated by remote work proliferation, cloud migration, and sophisticated threat landscapes[1][3]\n  - Now considered industry standard rather than emerging practice as of 2025[1][2]\n  - Recognised by government agencies (notably CISA in the United States) as essential framework for federal cybersecurity[5]\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Widespread deployment across financial services, healthcare, and technology sectors\n  - Multi-factor authentication (MFA), endpoint detection and response (EDR), identity and access management (IAM), and security information and event management (SIEM) now standard implementation tools[1]\n  - Organisations transitioning from legacy perimeter defences to continuous verification models[3]\n  - UK and North England examples where relevant\n    - CMS (US federal agency) implementation demonstrates government-scale deployment using CISA Zero Trust Maturity Model[5]\n    - UK National Health Service and financial institutions increasingly adopting ZTA frameworks, though specific North England case studies remain limited in public documentation\n    - Manchester and Leeds technology clusters showing growing adoption among fintech and digital services companies\n- Technical capabilities and limitations\n  - Capabilities: eliminates implicit trust, prevents lateral movement through micro-segmentation[1][2], enables real-time threat detection and response[2][4], supports hybrid and cloud-native architectures[3][4]\n  - Limitations: requires substantial organisational change management; no single tool provides complete implementation[5]; demands continuous monitoring overhead; integration complexity across legacy systems remains challenging\n- Standards and frameworks\n  - CISA Zero Trust Maturity Model provides structured assessment and transition roadmap[5]\n  - Framework assesses five pillars: identity, devices, networks, applications and workloads, data[5]\n  - Cross-cutting elements: visibility and analytics, automation and orchestration, governance[5]\n\n## Core Principles (Refined Definition)\n\n- Never trust, always verify\n  - Every user, device, and application requires authentication and authorisation regardless of location or prior access[1][2][4]\n  - Continuous reassessment of trust posture throughout session duration[4]\n- Least privilege access\n  - Users and systems granted only minimum necessary permissions[1][2]\n  - Significantly reduces damage potential from compromised accounts\n- Micro-segmentation\n  - Network divided into smaller zones preventing lateral threat movement[1]\n  - Granular, direct-to-application connectivity replaces broad network-based access[3]\n- Assume breach\n  - Operates under assumption that attackers may already be inside network[2]\n  - Prioritises containment, detection, and rapid response[2]\n  - Continuous monitoring and anomaly detection essential[1]\n- Device and endpoint security\n  - All devices must meet security requirements before network access[1]\n  - Device posture verification integrated into access decisions[2]\n\n## Research & Literature\n\n- Key academic and industry sources\n  - Strata Identity (2025): \"Zero Trust Security\" – comprehensive framework overview addressing modern threat landscape and implementation strategies[1]\n  - Seraphic Security (2025): \"Zero Trust Architecture in 2025: 7 Key Components\" – detailed technical decomposition of ZTA principles[2]\n  - Zscaler: \"What Is Zero Trust Architecture?\" – analysis of attack surface reduction and lateral movement prevention[3]\n  - CrowdStrike: \"What is Zero Trust? – Guide to Zero Trust Security\" – emphasis on continuous authentication and modern infrastructure security[4]\n  - CMS Information Security and Privacy Program: \"Zero Trust\" – government implementation case study using CISA maturity model[5]\n  - Microsoft Learn: \"What is Zero Trust?\" – security strategy documentation emphasising breach assumption[9]\n  - Palo Alto Networks Cyberpedia: \"What Is Zero Trust Architecture?\" – comprehensive framework covering implementation and use cases[8]\n- Ongoing research directions\n  - Integration of artificial intelligence for dynamic threat detection and automated response\n  - Scalability challenges in large distributed environments\n  - User experience optimisation without compromising security rigour\n  - Standardisation across heterogeneous cloud and hybrid environments\n\n## UK Context\n\n- British contributions and implementations\n  - UK government increasingly mandating ZTA adoption across public sector organisations\n  - Financial Conduct Authority (FCA) guidance increasingly incorporates zero-trust principles for regulated institutions\n  - GCHQ and National Cyber Security Centre (NCSC) recommendations favour zero-trust approaches for critical infrastructure\n- North England innovation hubs\n  - Manchester's growing fintech sector adopting ZTA for regulatory compliance and competitive advantage\n  - Leeds digital services cluster implementing zero-trust frameworks for NHS and public sector contracts\n  - Newcastle emerging as technology hub with increasing ZTA adoption among software development firms\n  - Regional universities (Manchester, Leeds, Newcastle) conducting research into zero-trust implementation challenges and optimisations\n- Regional considerations\n  - UK data residency requirements influencing ZTA implementation strategies\n  - GDPR compliance integration with zero-trust access controls\n  - Public sector procurement increasingly specifying zero-trust capabilities\n\n## Future Directions\n\n- Emerging trends and developments\n  - Convergence of zero-trust principles with artificial intelligence-driven security orchestration[1]\n  - Expansion into operational technology (OT) and industrial control systems\n  - Integration with quantum-resistant cryptography as post-quantum computing threats materialise\n  - Increased focus on user experience and frictionless authentication\n- Anticipated challenges\n  - Legacy system integration complexity (particularly in large enterprises with decades-old infrastructure)\n  - Skills gap in zero-trust architecture design and implementation\n  - Cost of continuous monitoring and validation infrastructure\n  - Balancing security rigour with organisational agility\n- Research priorities\n  - Automated policy generation and enforcement\n  - Zero-trust implementation in edge computing and IoT environments\n  - Standardised metrics for measuring zero-trust maturity and effectiveness\n  - Human factors in zero-trust adoption and organisational change management\n\n---\n\n**Note on revision:** The original definition conflated zero-trust principles with \"metaverse network boundaries,\" which represents unnecessary specificity and potential temporal bias. The revised entry grounds ZTA in established cybersecurity practice whilst maintaining technical precision and acknowledging genuine implementation complexities—rather more honest than suggesting zero-trust is a panacea, which it decidedly is not.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: zero-trust-architecture-zta-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20189\n\t- preferred-term:: Zero-Trust Architecture (ZTA)\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Security model requiring continuous verification of all entities and transactions with least-privilege access enforcement, eliminating implicit trust within metaverse network boundaries.\n\t- source:: [[NIST SP 800-207]], [[ENISA 2024]], [[ISO 27001]]\n\t- maturity:: mature\n\t- owl:class:: mv:ZeroTrustArchitecture\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[TrustAndGovernanceDomain]]\n\t- implementedInLayer:: [[DataLayer]], [[MiddlewareLayer]], [[NetworkLayer]]\n\t- #### Relationships\n\t  id:: zero-trust-architecture-zta-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Security Architecture]]\n\t\t- is-part-of:: [[Cybersecurity Framework]]\n\t\t- has-part:: [[Policy Enforcement Point]]\n\t\t- has-part:: [[Policy Engine]]\n\t\t- has-part:: [[Policy Decision Point]]\n\t\t- has-part:: [[Least-Privilege Access Control]]\n\t\t- has-part:: [[Continuous Verification]]\n\t\t- requires:: [[Network Segmentation]]\n\t\t- requires:: [[Device Authentication]]\n\t\t- requires:: [[Identity Verification]]\n\t\t- requires:: [[Logging and Monitoring]]\n\t\t- requires:: [[Encryption]]\n\t\t- enables:: [[Breach Containment]]\n\t\t- enables:: [[Dynamic Access Control]]\n\t\t- enables:: [[Insider Threat Mitigation]]\n\t\t- enables:: [[Threat Detection]]\n\t\t- enables:: [[Microsegmentation]]\n\t\t- depends-on:: [[Access Control System]]\n\t\t- depends-on:: [[Security Information and Event Management (SIEM)]]\n\t\t- depends-on:: [[Authorization Framework]]\n\t\t- depends-on:: [[Authentication Protocol]]\n\n## Academic Context\n\n- Foundational security paradigm shift from perimeter-based models\n  - Originated from recognition that traditional network boundaries no longer provide adequate protection in distributed, cloud-native environments[1][2][3]\n  - Core principle: \"never trust, always verify\" applied continuously across all access requests[1][2][4]\n  - Represents fundamental departure from implicit trust models that dominated enterprise security for decades\n- Key developments and current state\n  - Adoption accelerated by remote work proliferation, cloud migration, and sophisticated threat landscapes[1][3]\n  - Now considered industry standard rather than emerging practice as of 2025[1][2]\n  - Recognised by government agencies (notably CISA in the United States) as essential framework for federal cybersecurity[5]\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Widespread deployment across financial services, healthcare, and technology sectors\n  - Multi-factor authentication (MFA), endpoint detection and response (EDR), identity and access management (IAM), and security information and event management (SIEM) now standard implementation tools[1]\n  - Organisations transitioning from legacy perimeter defences to continuous verification models[3]\n  - UK and North England examples where relevant\n    - CMS (US federal agency) implementation demonstrates government-scale deployment using CISA Zero Trust Maturity Model[5]\n    - UK National Health Service and financial institutions increasingly adopting ZTA frameworks, though specific North England case studies remain limited in public documentation\n    - Manchester and Leeds technology clusters showing growing adoption among fintech and digital services companies\n- Technical capabilities and limitations\n  - Capabilities: eliminates implicit trust, prevents lateral movement through micro-segmentation[1][2], enables real-time threat detection and response[2][4], supports hybrid and cloud-native architectures[3][4]\n  - Limitations: requires substantial organisational change management; no single tool provides complete implementation[5]; demands continuous monitoring overhead; integration complexity across legacy systems remains challenging\n- Standards and frameworks\n  - CISA Zero Trust Maturity Model provides structured assessment and transition roadmap[5]\n  - Framework assesses five pillars: identity, devices, networks, applications and workloads, data[5]\n  - Cross-cutting elements: visibility and analytics, automation and orchestration, governance[5]\n\n## Core Principles (Refined Definition)\n\n- Never trust, always verify\n  - Every user, device, and application requires authentication and authorisation regardless of location or prior access[1][2][4]\n  - Continuous reassessment of trust posture throughout session duration[4]\n- Least privilege access\n  - Users and systems granted only minimum necessary permissions[1][2]\n  - Significantly reduces damage potential from compromised accounts\n- Micro-segmentation\n  - Network divided into smaller zones preventing lateral threat movement[1]\n  - Granular, direct-to-application connectivity replaces broad network-based access[3]\n- Assume breach\n  - Operates under assumption that attackers may already be inside network[2]\n  - Prioritises containment, detection, and rapid response[2]\n  - Continuous monitoring and anomaly detection essential[1]\n- Device and endpoint security\n  - All devices must meet security requirements before network access[1]\n  - Device posture verification integrated into access decisions[2]\n\n## Research & Literature\n\n- Key academic and industry sources\n  - Strata Identity (2025): \"Zero Trust Security\" – comprehensive framework overview addressing modern threat landscape and implementation strategies[1]\n  - Seraphic Security (2025): \"Zero Trust Architecture in 2025: 7 Key Components\" – detailed technical decomposition of ZTA principles[2]\n  - Zscaler: \"What Is Zero Trust Architecture?\" – analysis of attack surface reduction and lateral movement prevention[3]\n  - CrowdStrike: \"What is Zero Trust? – Guide to Zero Trust Security\" – emphasis on continuous authentication and modern infrastructure security[4]\n  - CMS Information Security and Privacy Program: \"Zero Trust\" – government implementation case study using CISA maturity model[5]\n  - Microsoft Learn: \"What is Zero Trust?\" – security strategy documentation emphasising breach assumption[9]\n  - Palo Alto Networks Cyberpedia: \"What Is Zero Trust Architecture?\" – comprehensive framework covering implementation and use cases[8]\n- Ongoing research directions\n  - Integration of artificial intelligence for dynamic threat detection and automated response\n  - Scalability challenges in large distributed environments\n  - User experience optimisation without compromising security rigour\n  - Standardisation across heterogeneous cloud and hybrid environments\n\n## UK Context\n\n- British contributions and implementations\n  - UK government increasingly mandating ZTA adoption across public sector organisations\n  - Financial Conduct Authority (FCA) guidance increasingly incorporates zero-trust principles for regulated institutions\n  - GCHQ and National Cyber Security Centre (NCSC) recommendations favour zero-trust approaches for critical infrastructure\n- North England innovation hubs\n  - Manchester's growing fintech sector adopting ZTA for regulatory compliance and competitive advantage\n  - Leeds digital services cluster implementing zero-trust frameworks for NHS and public sector contracts\n  - Newcastle emerging as technology hub with increasing ZTA adoption among software development firms\n  - Regional universities (Manchester, Leeds, Newcastle) conducting research into zero-trust implementation challenges and optimisations\n- Regional considerations\n  - UK data residency requirements influencing ZTA implementation strategies\n  - GDPR compliance integration with zero-trust access controls\n  - Public sector procurement increasingly specifying zero-trust capabilities\n\n## Future Directions\n\n- Emerging trends and developments\n  - Convergence of zero-trust principles with artificial intelligence-driven security orchestration[1]\n  - Expansion into operational technology (OT) and industrial control systems\n  - Integration with quantum-resistant cryptography as post-quantum computing threats materialise\n  - Increased focus on user experience and frictionless authentication\n- Anticipated challenges\n  - Legacy system integration complexity (particularly in large enterprises with decades-old infrastructure)\n  - Skills gap in zero-trust architecture design and implementation\n  - Cost of continuous monitoring and validation infrastructure\n  - Balancing security rigour with organisational agility\n- Research priorities\n  - Automated policy generation and enforcement\n  - Zero-trust implementation in edge computing and IoT environments\n  - Standardised metrics for measuring zero-trust maturity and effectiveness\n  - Human factors in zero-trust adoption and organisational change management\n\n---\n\n**Note on revision:** The original definition conflated zero-trust principles with \"metaverse network boundaries,\" which represents unnecessary specificity and potential temporal bias. The revised entry grounds ZTA in established cybersecurity practice whilst maintaining technical precision and acknowledging genuine implementation complexities—rather more honest than suggesting zero-trust is a panacea, which it decidedly is not.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [],
   "wiki_links": [
-    "Metaverse"
+    "Insider Threat Mitigation",
+    "Policy Engine",
+    "Authorization Framework",
+    "Cybersecurity Framework",
+    "Network Segmentation",
+    "Identity Verification",
+    "Access Control System",
+    "Policy Enforcement Point",
+    "Breach Containment",
+    "NIST SP 800-207",
+    "Dynamic Access Control",
+    "Security Information and Event Management (SIEM)",
+    "ENISA 2024",
+    "TrustAndGovernanceDomain",
+    "Encryption",
+    "Policy Decision Point",
+    "Microsegmentation",
+    "MiddlewareLayer",
+    "Device Authentication",
+    "ISO 27001",
+    "Logging and Monitoring",
+    "Least-Privilege Access Control",
+    "Security Architecture",
+    "NetworkLayer",
+    "DataLayer",
+    "Authentication Protocol",
+    "Continuous Verification",
+    "Threat Detection"
   ],
   "ontology": {
     "term_id": "20189",
     "preferred_term": "Zero-Trust Architecture (ZTA)",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#ZeroTrustArchitecture",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "Security model requiring continuous verification of all entities and transactions with least-privilege access enforcement, eliminating implicit trust within metaverse network boundaries.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:ZeroTrustArchitecture",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "has_part": [
+      "Policy Enforcement Point",
+      "Policy Engine",
+      "Policy Decision Point",
+      "Least-Privilege Access Control",
+      "Continuous Verification"
+    ],
+    "is_part_of": [
+      "Security Architecture",
+      "Cybersecurity Framework"
+    ],
+    "requires": [
+      "Network Segmentation",
+      "Device Authentication",
+      "Identity Verification",
+      "Logging and Monitoring",
+      "Encryption"
+    ],
+    "depends_on": [
+      "Access Control System",
+      "Security Information and Event Management (SIEM)",
+      "Authorization Framework",
+      "Authentication Protocol"
+    ],
+    "enables": [
+      "Breach Containment",
+      "Dynamic Access Control",
+      "Insider Threat Mitigation",
+      "Threat Detection",
+      "Microsegmentation"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "TrustAndGovernanceDomain"
+    ],
+    "implemented_in_layer": [
+      "DataLayer",
+      "MiddlewareLayer",
+      "NetworkLayer"
+    ],
+    "source": [
+      "NIST SP 800-207",
+      "ENISA 2024",
+      "ISO 27001"
+    ],
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20189' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

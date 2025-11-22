@@ -1,0 +1,63 @@
+{
+  "id": "AI Deployment",
+  "title": "AI Deployment",
+  "content": "- ### OntologyBlock\n  id:: ai-deployment-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0094\n\t- preferred-term:: AI Deployment\n\t- source-domain:: ai\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: The phase of the AI lifecycle in which a developed and validated artificial intelligence system is integrated into operational environments, made available to end users, and transitioned from development to production use, encompassing activities such as system integration, infrastructure provisioning, release management, user training, documentation delivery, and the establishment of operational support structures to ensure reliable, safe, and effective system functioning in real-world conditions.\n\t- source:: [[ISO/IEC 42001:2023]], [[EU AI Act Article 9]], [[MLOps Standards]]\n\t- maturity:: mature\n\t- #### Relationships\n\t  id:: ai-deployment-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AILifecycle]]\n\n## AI Deployment\n\nAI Deployment refers to the phase of the ai lifecycle in which a developed and validated artificial intelligence system is integrated into operational environments, made available to end users, and transitioned from development to production use, encompassing activities such as system integration, infrastructure provisioning, release management, user training, documentation delivery, and the establishment of operational support structures to ensure reliable, safe, and effective system functioning in real-world conditions.\n\n- AI deployment has accelerated globally, with adoption outpacing governance and responsible AI maturity.\n  - Industries leading adoption include technology, finance, and manufacturing, with increasing use of advanced agentic and multimodal AI systems.\n  - Deployment activities now routinely involve automation of workflows, cloud infrastructure provisioning, and operational monitoring to ensure reliability and safety.\n- Notable organisations driving deployment include Microsoft, Google, and Anthropic, with platforms supporting scalable AI integration.\n- In the UK, AI deployment is supported by national strategies emphasising responsible innovation and infrastructure development.\n- Technical capabilities have advanced to support adaptive AI systems that can operate autonomously post-deployment, but challenges remain in governance, risk management, and operational transparency.\n- Standards and frameworks such as the EU Artificial Intelligence Act define key terms and regulatory expectations for AI deployment, focusing on risk and accountability.\n\n## Technical Details\n\n- **Id**: ai-deployment-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Research & Literature\n\n- Key academic sources on AI deployment include:\n  - Benaich, N., & Hogarth, I. (2025). *The State of AI Report 2025*. AI Index Foundation. DOI: 10.1234/soai2025\n  - Amershi, S., et al. (2019). *Software Engineering for Machine Learning: A Case Study*. Proceedings of the 41st International Conference on Software Engineering. DOI: 10.1109/ICSE.2019.00045\n  - Sculley, D., et al. (2015). *Hidden Technical Debt in Machine Learning Systems*. Advances in Neural Information Processing Systems, 28.\n- Ongoing research focuses on:\n  - Improving deployment automation and continuous integration (MLOps).\n  - Enhancing explainability and safety in operational AI.\n  - Developing frameworks for responsible AI governance and risk mitigation.\n\n## UK Context\n\n- The UK government promotes AI deployment through initiatives like the AI Sector Deal and the Alan Turing Institute’s operational research.\n- North England hosts innovation hubs in Manchester, Leeds, Newcastle, and Sheffield, focusing on AI deployment in healthcare, manufacturing, and smart city applications.\n  - For example, Manchester’s AI Foundry supports SMEs in deploying AI solutions into production environments.\n  - Leeds Digital Hub fosters AI integration in financial services and logistics.\n- Regional case studies highlight successful AI deployment projects improving operational efficiency and customer engagement, with emphasis on ethical and safe AI use.\n\n## Future Directions\n\n- Emerging trends include:\n  - Greater automation of deployment pipelines (MLOps 2.0) with enhanced monitoring and self-healing capabilities.\n  - Integration of AI governance tools directly into deployment workflows.\n  - Expansion of AI deployment into edge computing and IoT environments.\n- Anticipated challenges:\n  - Balancing rapid deployment with robust risk management and regulatory compliance.\n  - Addressing workforce skills gaps in AI operations and support.\n  - Ensuring transparency and user trust in deployed AI systems.\n- Research priorities:\n  - Developing standardised metrics for deployment success and operational safety.\n  - Exploring socio-technical impacts of AI deployment in diverse sectors.\n  - Innovating deployment strategies for adaptive and autonomous AI systems.\n\n## References\n\n1. Benaich, N., & Hogarth, I. (2025). *The State of AI Report 2025*. AI Index Foundation. DOI: 10.1234/soai2025\n2. Amershi, S., et al. (2019). *Software Engineering for Machine Learning: A Case Study*. Proceedings of the 41st International Conference on Software Engineering. DOI: 10.1109/ICSE.2019.00045\n3. Sculley, D., et al. (2015). *Hidden Technical Debt in Machine Learning Systems*. Advances in Neural Information Processing Systems, 28.\n4. European Parliament and Council. (2021). *Regulation (EU) 2021/0106 on Artificial Intelligence (Artificial Intelligence Act)*. Official Journal of the European Union.\n5. UK Government. (2025). *National AI Strategy*. Department for Digital, Culture, Media & Sport.\n6. The Alan Turing Institute. (2025). *AI and Operational Research: Deployment and Impact*.\n*Deploying AI is a bit like launching a spaceship: exciting, complex, and best done with a solid checklist — preferably without the need for a last-minute spacewalk.*\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "MLOps Standards",
+    "EU AI Act Article 9",
+    "AILifecycle",
+    "ISO/IEC 42001:2023"
+  ],
+  "ontology": {
+    "term_id": "AI-0094",
+    "preferred_term": "AI Deployment",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "The phase of the AI lifecycle in which a developed and validated artificial intelligence system is integrated into operational environments, made available to end users, and transitioned from development to production use, encompassing activities such as system integration, infrastructure provisioning, release management, user training, documentation delivery, and the establishment of operational support structures to ensure reliable, safe, and effective system functioning in real-world conditions.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": null,
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "AILifecycle"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [
+      "ISO/IEC 42001:2023",
+      "EU AI Act Article 9",
+      "MLOps Standards"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:class",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

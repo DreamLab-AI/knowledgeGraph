@@ -1,0 +1,59 @@
+{
+  "id": "Rov",
+  "title": "Remotely Operated Vehicle (ROV)",
+  "content": "- ### OntologyBlock\n  id:: rov-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0128\n\t- preferred-term:: Remotely Operated Vehicle (ROV)\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: ROV is tethered underwater robot controlled remotely via cable providing power and communications.\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: rb:Rov\n\t- belongsToDomain:: [[Robotics]]",
+  "backlinks": [],
+  "wiki_links": [
+    "Robotics"
+  ],
+  "ontology": {
+    "term_id": "RB-0128",
+    "preferred_term": "Remotely Operated Vehicle (ROV)",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/robotics#Rov",
+    "source_domain": null,
+    "domain": "rb",
+    "domain_full_name": "Robotics",
+    "definition": "ROV is tethered underwater robot controlled remotely via cable providing power and communications.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "rb:Rov",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Robotics"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "Chimera Prime Research"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

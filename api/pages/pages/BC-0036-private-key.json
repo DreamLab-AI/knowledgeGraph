@@ -1,15 +1,15 @@
 {
   "id": "BC-0036-private-key",
   "title": "Private Key",
-  "content": "- ### OntologyBlock\n  id:: private-key-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0036\n    - preferred-term:: Private Key\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Secret cryptographic key within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:PrivateKey\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### Relationships\n    id:: relationships\n    - is-subclass-of:: [[Public Key Cryptography]]\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: private-key-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0036\n\t- preferred-term:: Private Key\n\t- source-domain:: blockchain\n\t- status:: complete\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: bc:PrivateKey\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\n### Domain & Architecture\n\t- belongsToDomain:: [[CryptographicDomain]]\n\t- maturity:: mature\n\n### Relationships\nid:: relationships\n    - is-subclass-of:: [[Public Key Cryptography]]\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  -\n\n### Quality Metrics\n\t- authority-score:: 0.95\n\n- ### OntologyBlock\n  id:: private-key-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0036\n    - preferred-term:: Private Key\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Secret cryptographic key within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:PrivateKey\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### Relationships\n    id:: relationships\n    - is-subclass-of:: [[Public Key Cryptography]]\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  -",
   "backlinks": [],
   "wiki_links": [
-    "ISO/IEC 23257:2021",
-    "CryptographicDomain",
     "NIST NISTIR",
-    "IEEE 2418.1",
+    "BlockchainEntity",
+    "CryptographicDomain",
+    "ISO/IEC 23257:2021",
     "Public Key Cryptography",
-    "BlockchainEntity"
+    "IEEE 2418.1"
   ],
   "ontology": {
     "term_id": "BC-0036",
@@ -43,11 +43,13 @@
     "enables": [],
     "relates_to": [],
     "bridges_to": [
+      "BlockchainEntity via is",
       "BlockchainEntity via is"
     ],
     "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
+      "CryptographicDomain",
       "CryptographicDomain"
     ],
     "implemented_in_layer": [],

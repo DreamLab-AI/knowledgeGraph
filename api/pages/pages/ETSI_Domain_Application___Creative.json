@@ -1,30 +1,30 @@
 {
   "id": "ETSI_Domain_Application___Creative",
   "title": "ETSI Domain Application + Creative",
-  "content": "- ### OntologyBlock\n  id:: etsi-domain-application-creative-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20335\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: ETSI Domain Application + Creative\n\t- definition:: Cross-domain marker for metaverse application components focused on creative industries including digital art, music production, animation, film, design tools, and creative collaboration platforms.\n\t- maturity:: mature\n\t- source:: [[ETSI GS MEC]]\n\t- owl:class:: mv:ETSIDomainApplicationCreative\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]], [[CreativeMediaDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-application-creative-relationships\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-part-of:: [[ETSI Domain Taxonomy]]\n\t\t- depends-on:: [[InfrastructureDomain]], [[CreativeMediaDomain]]\n\t\t- enables:: [[Creative Application Classification]], [[Collaboration Tool Categorization]]\n\t\t- categorizes:: [[Digital Art Application]], [[Music Production Tool]], [[Animation Software]], [[Design Platform]]\n\t- #### OWL Axioms\n\t  id:: etsi-domain-application-creative-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:ETSIDomainApplicationCreative))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:ETSIDomainApplicationCreative mv:VirtualEntity)\n\t\t  SubClassOf(mv:ETSIDomainApplicationCreative mv:Object)\n\n\t\t  # Cross-domain marker classification\n\t\t  SubClassOf(mv:ETSIDomainApplicationCreative mv:DomainMarker)\n\t\t  SubClassOf(mv:ETSIDomainApplicationCreative mv:CrossDomainMarker)\n\n\t\t  # Multiple domain classification\n\t\t  SubClassOf(mv:ETSIDomainApplicationCreative\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:InfrastructureDomain)\n\t\t  )\n\t\t  SubClassOf(mv:ETSIDomainApplicationCreative\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:CreativeMediaDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:ETSIDomainApplicationCreative\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n```",
+  "content": "- ### OntologyBlock\n  id:: etsi-domain-application-creative-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20335\n\t- preferred-term:: ETSI Domain Application + Creative\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Cross-domain marker for metaverse application components focused on creative industries including digital art, music production, animation, film, design tools, and creative collaboration platforms.\n\t- source:: [[ETSI GS MEC]]\n\t- maturity:: mature\n\t- owl:class:: mv:ETSIDomainApplicationCreative\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]], [[CreativeMediaDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-application-creative-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-part-of:: [[ETSI Domain Taxonomy]]\n\t\t- enables:: [[Creative Application Classification]]\n\t\t- enables:: [[Collaboration Tool Categorization]]\n\t\t- categorizes:: [[Digital Art Application]]\n\t\t- categorizes:: [[Animation Software]]\n\t\t- categorizes:: [[Music Production Tool]]\n\t\t- categorizes:: [[Design Platform]]\n\t\t- depends-on:: [[InfrastructureDomain]]\n\t\t- depends-on:: [[CreativeMediaDomain]]",
   "backlinks": [],
   "wiki_links": [
-    "Digital Art Application",
-    "InfrastructureDomain",
+    "Collaboration Tool Categorization",
     "ETSI Domain Taxonomy",
     "Music Production Tool",
-    "Creative Application Classification",
-    "Animation Software",
-    "ApplicationLayer",
+    "InfrastructureDomain",
     "ETSI GS MEC",
     "Design Platform",
-    "CreativeMediaDomain",
     "Metaverse",
-    "Collaboration Tool Categorization"
+    "Digital Art Application",
+    "Creative Application Classification",
+    "Animation Software",
+    "CreativeMediaDomain",
+    "ApplicationLayer"
   ],
   "ontology": {
     "term_id": "20335",
     "preferred_term": "ETSI Domain Application + Creative",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ETSIDomainApplicationCreative",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "Cross-domain marker for metaverse application components focused on creative industries including digital art, music production, animation, film, design tools, and creative collaboration platforms.",
     "scope_note": null,
     "status": "draft",
@@ -72,16 +72,17 @@
     "other_relationships": {
       "categorizes": [
         "Digital Art Application",
-        "Music Production Tool",
         "Animation Software",
+        "Music Production Tool",
         "Design Platform"
       ]
     },
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "term-id '20335' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

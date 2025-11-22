@@ -1,0 +1,59 @@
+{
+  "id": "Autonomous Vehicle",
+  "title": "Autonomous Vehicle",
+  "content": "- ### OntologyBlock\n  id:: autonomous-vehicle-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0346\n\t- preferred-term:: Autonomous Vehicle\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: An Autonomous Vehicle is a self-driving vehicle capable of navigating and operating without human intervention, employing artificial intelligence for perception, localisation, path planning, motion control, and decision-making. Autonomous vehicles integrate sensor fusion, computer vision, deep learning, and control algorithms to achieve SAE automation levels ranging from Level 1 (driver assistance) to Level 5 (full automation).\n\t- #### Relationships\n\t  id:: autonomous-vehicle-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AutonomousSystem]]\n\n## Autonomous Vehicle\n\nAutonomous Vehicle refers to an autonomous vehicle is a self-driving vehicle capable of navigating and operating without human intervention, employing artificial intelligence for perception, localisation, path planning, motion control, and decision-making. autonomous vehicles integrate sensor fusion, computer vision, deep learning, and control algorithms to achieve sae automation levels ranging from level 1 (driver assistance) to level 5 (full automation).\n\n- Industry adoption of AVs remains progressive but cautious, with SAE automation levels ranging from Level 1 (driver assistance) to Level 5 (full automation) still under active development and testing.\n  - Notable organisations include Waymo, Tesla, Aurora, and various automotive manufacturers advancing AV technologies.\n  - Connected vehicle technology has become widespread, with approximately 75% of new vehicles equipped with connectivity features enabling vehicle-to-vehicle (V2V) and vehicle-to-infrastructure (V2I) communication.\n  - Technical capabilities now include advanced sensor fusion, deep learning for perception, and AI-driven decision-making; however, limitations persist in handling complex urban environments and unpredictable scenarios.\n  - Regulatory frameworks are evolving, with agencies such as the US National Highway Traffic Safety Administration (NHTSA) prioritising safety, innovation, and commercial deployment, including augmented reality testing methods for AV performance.\n  - Standards and frameworks continue to develop globally, emphasising safety, interoperability, and cybersecurity.\n\n## Technical Details\n\n- **Id**: autonomous-vehicle-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Research & Literature\n\n- Key academic papers and sources:\n  - Bojarski, M., et al. (2016). End to End Learning for Self-Driving Cars. *arXiv preprint arXiv:1604.07316*. [https://arxiv.org/abs/1604.07316]\n  - Chen, L., et al. (2023). Synthetic Data Generation for Autonomous Driving: A Survey. *IEEE Transactions on Intelligent Transportation Systems*, 24(5), 4567-4585. DOI: 10.1109/TITS.2022.3156789\n  - Shalev-Shwartz, S., Shammah, S., & Shashua, A. (2016). Safe, Multi-Agent, Reinforcement Learning for Autonomous Driving. *arXiv preprint arXiv:1610.03295*. [https://arxiv.org/abs/1610.03295]\n- Ongoing research directions include improving interpretability of end-to-end AI models, enhancing simulation environments with generative AI, and developing robust safety validation techniques.\n\n## UK Context\n\n- The UK has been a significant contributor to AV research and deployment, with government initiatives supporting testing and innovation.\n  - North England hosts several innovation hubs, including Manchester’s Connected Autonomous Vehicle (CAV) Centre, Leeds’ Smart Mobility Lab, Newcastle’s Urban Observatory, and Sheffield’s Advanced Manufacturing Research Centre, all actively engaged in AV-related projects.\n  - Regional case studies include trials of autonomous shuttles and delivery vehicles in Manchester and Newcastle, focusing on urban mobility and last-mile logistics.\n  - UK regulations emphasise safety and public engagement, with frameworks aligning with international standards while addressing local infrastructure and societal needs.\n\n## Future Directions\n\n- Emerging trends:\n  - Integration of generative AI for enhanced training and scenario simulation.\n  - Expansion of autonomous vehicle deployment in controlled urban zones and motorway corridors.\n  - Increased focus on cybersecurity and data privacy as connectivity grows.\n- Anticipated challenges:\n  - Navigating complex urban environments with unpredictable human behaviour.\n  - Harmonising regulatory frameworks across jurisdictions.\n  - Public acceptance and ethical considerations.\n- Research priorities:\n  - Developing transparent and verifiable AI models.\n  - Enhancing multi-modal sensor fusion.\n  - Addressing non-traditional vehicle designs and user needs, including accessibility.\n\n## References\n\n1. Bojarski, M., et al. (2016). End to End Learning for Self-Driving Cars. *arXiv preprint arXiv:1604.07316*. Available at: https://arxiv.org/abs/1604.07316\n2. Chen, L., et al. (2023). Synthetic Data Generation for Autonomous Driving: A Survey. *IEEE Transactions on Intelligent Transportation Systems*, 24(5), 4567-4585. DOI: 10.1109/TITS.2022.3156789\n3. Shalev-Shwartz, S., Shammah, S., & Shashua, A. (2016). Safe, Multi-Agent, Reinforcement Learning for Autonomous Driving. *arXiv preprint arXiv:1610.03295*. Available at: https://arxiv.org/abs/1610.03295\n4. World Economic Forum (2025). Autonomous Vehicles: Timeline and Roadmap Ahead. Available at: https://reports.weforum.org/docs/WEF_Autonomous_Vehicles_2025.pdf\n5. Crowell & Moring LLP (2025). Summer 2025 Autonomous Vehicle Developments. Available at: https://www.crowell.com/en/insights/client-alerts/summer-2025-autonomous-vehicle-developments\n*Autonomous vehicles may not yet have mastered the art of tea-making, but their journey from science fiction to everyday reality is well underway.*\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "ADAS",
+    "Perception System"
+  ],
+  "wiki_links": [
+    "AutonomousSystem"
+  ],
+  "ontology": {
+    "term_id": "AI-0346",
+    "preferred_term": "Autonomous Vehicle",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "An Autonomous Vehicle is a self-driving vehicle capable of navigating and operating without human intervention, employing artificial intelligence for perception, localisation, path planning, motion control, and decision-making. Autonomous vehicles integrate sensor fusion, computer vision, deep learning, and control algorithms to achieve SAE automation levels ranging from Level 1 (driver assistance) to Level 5 (full automation).",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": null,
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "AutonomousSystem"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:class",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

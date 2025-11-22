@@ -1,0 +1,72 @@
+{
+  "id": "Precision",
+  "title": "Precision",
+  "content": "- ### OntologyBlock\n  id:: precision-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0108\n\t- preferred-term:: Precision\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: mv:Precision\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n### Domain & Architecture\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- maturity:: draft\n\n### Relationships\nid:: precision-relationships\n\t\t- is-subclass-of:: [[ArtificialIntelligence]]\n\n## Mathematical Definition\n\n$$\\text{Precision} = \\frac{TP}{TP + FP} = \\frac{TP}{\\text{All Positive Predictions}}$$\n\nWhere:\n- **TP** (True Positives): Correct positive predictions\n- **FP** (False Positives): Incorrect positive predictions (Type I errors)\n\nAlso known as **Positive Predictive Value (PPV)** in medical and statistical contexts.\n\n## Context and Significance\n\nPrecision answers the question: \"When the model predicts positive, how often is it correct?\" This metric is crucial in scenarios where false positives carry significant costs—such as spam filtering (legitimate emails incorrectly flagged), fraud detection (legitimate transactions blocked), or medical testing (healthy patients undergoing unnecessary procedures). High precision indicates that positive predictions are trustworthy, though it says nothing about how many actual positives the model identifies (that's recall).\n\nPrecision and recall exist in tension: increasing precision typically decreases recall and vice versa. This fundamental trade-off requires careful balancing based on application requirements, with the F1 score providing one approach to harmonising both metrics.\n\n## Key Characteristics\n\n- **False positive focus**: Emphasises minimising incorrect positive predictions\n- **Prediction reliability**: Measures trustworthiness of positive predictions\n- **Trade-off with recall**: Improving precision often reduces recall\n- **Threshold-sensitive**: For probabilistic classifiers, varies with classification threshold\n- **Class-specific**: Typically calculated per class in multi-class settings\n- **Imbalance-robust**: Less affected by class imbalance than accuracy\n\n## Appropriate Use Cases\n\n**When Precision is Critical:**\n- Spam filtering: Minimise legitimate emails incorrectly marked as spam\n- Fraud detection (certain contexts): Avoid blocking legitimate transactions\n- Medical screening (certain contexts): Reduce false alarm rate for expensive follow-up tests\n- Content moderation: Minimise incorrectly removed legitimate content\n- Quality control: Reduce false rejections of acceptable products\n- Legal discovery: Minimise irrelevant documents in review sets\n\n**When to Prioritise Recall Instead:**\n- Disease screening: Catching all potential cases more important than false alarms\n- Security threat detection: Missing threats more costly than false alarms\n- Manufacturing defect detection: Catching all defects critical for safety\n\n**When to Balance Both:**\n- Use F1 score or other balanced metrics\n- Adjust threshold to application-specific precision-recall trade-off\n\n## Relationships\n\n- **Component of**: Model Performance assessment\n- **Calculated from**: Confusion Matrix (TP and FP)\n- **Trades off with**: Recall (sensitivity)\n- **Harmonised in**: F1 Score (harmonic mean of precision and recall)\n- **Visualised via**: Precision-Recall Curve\n- **Complementary to**: Recall, Specificity\n- **Used in**: Model Evaluation, threshold selection, performance monitoring\n- **Monitored during**: AI Monitoring, operational oversight\n- **Reported in**: Model Cards, performance dashboards, audit documentation\n\n## Examples and Applications\n\n1. **Spam Email Filter**: Precision of 98% means that out of 100 emails flagged as spam, 98 truly are spam and 2 are legitimate emails incorrectly filtered—high precision minimises user frustration from missing important emails\n2. **Medical Cancer Screening**: Screening test with 80% precision means 20% of positive results are false positives, leading to unnecessary anxiety and follow-up procedures—precision-recall balance crucial given costs of both error types\n3. **Fraud Detection System**: Credit card fraud model with 60% precision blocks 100 transactions, 60 truly fraudulent and 40 legitimate—low precision creates customer friction, requiring balance with fraud capture (recall)\n4. **Search Engine Results**: Search precision of 90% for top 10 results means 9 of 10 results are relevant to query—high precision critical for user satisfaction even if some relevant results not retrieved (lower recall)\n\n## Calculation and Implementation\n\n**Standard Calculation:**\n```python\nfrom sklearn.metrics import precision_score\n\nprecision = precision_score(y_true, y_pred)\n# For multi-class: specify average parameter\n# 'micro', 'macro', 'weighted', or None for per-class\n```\n\n**Manual Calculation:**\n```python\ntrue_positives = sum((y_true == 1) & (y_pred == 1))\nfalse_positives = sum((y_true == 0) & (y_pred == 1))\nprecision = true_positives / (true_positives + false_positives)\n```\n\n**Threshold Optimization:**\nFor probabilistic classifiers, precision varies with classification threshold:\n```python\nfrom sklearn.metrics import precision_recall_curve\n\nprecisions, recalls, thresholds = precision_recall_curve(y_true, y_scores)\n# Select threshold based on precision requirements\n```\n\n## Implementation Considerations\n\n**Best Practices:**\n- Report precision alongside recall and F1 score\n- Calculate per-class precision in multi-class problems\n- Use precision-recall curves to select appropriate thresholds\n- Disaggregate precision across demographic groups for fairness assessment\n- Establish minimum acceptable precision based on false positive costs\n- Monitor precision trends over time to detect degradation\n\n**Common Pitfalls:**\n- Optimising for precision alone, ignoring recall (missing many positive instances)\n- Failing to account for class imbalance when interpreting precision\n- Using micro-averaging in multi-class settings, which can obscure per-class performance\n- Not adjusting thresholds for deployment context after training\n- Ignoring precision variations across demographic subgroups\n\n**Precision-Recall Trade-off Management:**\n- Use precision-recall curve to visualise trade-off\n- Set threshold based on business requirements for false positive vs. false negative costs\n- Consider dynamic thresholds adapting to context (e.g., higher precision during peak hours)\n- Employ ensemble methods or calibration to improve both simultaneously where possible\n\n## Variants and Related Metrics\n\n**Micro-averaged Precision** (multi-class): Aggregate TP and FP across classes before calculating\n$$\\text{Precision}_{\\text{micro}} = \\frac{\\sum_i TP_i}{\\sum_i (TP_i + FP_i)}$$\n\n**Macro-averaged Precision** (multi-class): Average of per-class precisions\n$$\\text{Precision}_{\\text{macro}} = \\frac{1}{n}\\sum_i \\text{Precision}_i$$\n\n**Weighted Precision**: Precision averaged across classes weighted by support (class frequency)\n\n**Precision@K**: Precision considering only top K predictions (ranking tasks)\n\n## ISO/IEC and Standards Alignment\n\n**ISO/IEC 25059** (Quality Model for AI Systems):\n- Precision as metric for functional correctness\n- Completeness and correctness sub-characteristics\n\n**ISO/IEC 25024** (Data Quality Metrics):\n- Precision in context of output quality measurement\n\n## NIST AI RMF Integration\n\n**MEASURE Function**:\n- MEASURE-2.2: Appropriate metrics including precision selected based on context\n- MEASURE-2.3: Performance measured across different contexts and subgroups\n- Precision as component of Valid and Reliable trustworthiness characteristic\n\n## Related Terms\n\n- [[Model Performance]]: Broader concept including precision\n- [[Recall]]: Complementary metric measuring sensitivity\n- [[F1 Score]]: Harmonic mean balancing precision and recall\n- [[Accuracy]]: Overall correctness metric\n- [[Confusion Matrix]]: Source of precision calculation\n- [[Precision-Recall Curve]]: Visualisation of precision-recall trade-off\n- [[True Positive]]: Numerator of precision calculation\n- [[False Positive]]: Denominator component of precision\n- [[Positive Predictive Value]]: Synonym for precision\n\n## References\n\n1. Davis, J. & Goadrich, M., *The Relationship Between Precision-Recall and ROC Curves*, ICML (2006)\n2. Powers, D.M.W., *Evaluation: From Precision, Recall and F-Measure to ROC, Informedness, Markedness & Correlation* (2011)\n3. ISO/IEC 25059, *Software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Quality model for AI systems*\n4. Saito, T. & Rehmsmeier, M., *The Precision-Recall Plot Is More Informative than the ROC Plot When Evaluating Binary Classifiers on Imbalanced Datasets*, PLOS ONE (2015)\n\n## Formal Ontology\n\n<details>\n<summary>OWL Functional Syntax</summary>\n\n```clojure\n;; Class Declaration\n(Declaration (Class :Precision))\n(SubClassOf :Precision :PerformanceMetric)\n(SubClassOf :Precision :ClassificationMetric)\n\n;; Synonyms\n(Declaration (Class :PositivePredictiveValue))\n(EquivalentClasses :Precision :PositivePredictiveValue)\n\n;; Core relationships\n(SubClassOf :Precision\n  (ObjectSomeValuesFrom :measuresPerformanceOf :MachineLearningModel))\n(SubClassOf :Precision\n  (ObjectSomeValuesFrom :calculatedFrom :ConfusionMatrix))\n(SubClassOf :Precision\n  (ObjectSomeValuesFrom :tradeOffWith :Recall))\n(SubClassOf :Precision\n  (ObjectSomeValuesFrom :harmonisedIn :F1Score))\n\n;; Metric properties\n(Declaration (DataProperty :hasPrecisionValue))\n(DataPropertyDomain :hasPrecisionValue :Precision)\n(DataPropertyRange :hasPrecisionValue xsd:float)\n(FunctionalDataProperty :hasPrecisionValue)\n\n(Declaration (DataProperty :truePositiveCount))\n(DataPropertyDomain :truePositiveCount :Precision)\n(DataPropertyRange :truePositiveCount xsd:integer)\n\n(Declaration (DataProperty :falsePositiveCount))\n(DataPropertyDomain :falsePositiveCount :Precision)\n(DataPropertyRange :falsePositiveCount xsd:integer)\n\n;; Value constraints\n(SubClassOf :Precision\n  (DataPropertyRestriction\n    :hasPrecisionValue\n    (MinInclusiveDataRange 0.0^^xsd:float)\n    (MaxInclusiveDataRange 1.0^^xsd:float)))\n\n;; Use case focus\n(Declaration (Class :FalsePositiveMinimisation))\n(SubClassOf :Precision\n  (ObjectSomeValuesFrom :optimisesFor :FalsePositiveMinimisation))\n\n;; Critical applications\n(Declaration (Class :SpamFiltering))\n(Declaration (Class :FraudDetection))\n(Declaration (Class :ContentModeration))\n(Declaration (ObjectProperty :criticalFor))\n\n(SubClassOf :Precision\n  (ObjectUnionValuesFrom :criticalFor\n    :SpamFiltering :FraudDetection :ContentModeration))\n\n;; Threshold sensitivity\n(Declaration (Class :ThresholdDependentMetric))\n(SubClassOf :Precision :ThresholdDependentMetric)\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Precision \"Precision\"@en)\n(AnnotationAssertion rdfs:label :Precision \"Positive Predictive Value\"@en)\n(AnnotationAssertion rdfs:comment :Precision\n  \"A classification performance metric representing the proportion of positive predictions made by an artificial intelligence model that are actually correct.\"@en)\n(AnnotationAssertion dcterms:source :Precision <https://www.iso.org/standard/74438.html>)\n(AnnotationAssertion :termID :Precision \"AI-0108\"^^xsd:string)\n(AnnotationAssertion :mathematicalFormula :Precision\n  \"TP / (TP + FP)\"^^xsd:string)\n\n;; ISO/IEC alignment\n(AnnotationAssertion :alignedWith :Precision :ISO25059)\n(AnnotationAssertion :alignedWith :Precision :ISO25024)\n(AnnotationAssertion :alignedWith :Precision :NISTAIRFM_MEASURE22)\n```\n\n</details>\n\n## See Also\n\n- [[Model Performance]]\n- [[Recall]]\n- [[F1 Score]]\n- [[Accuracy]]\n- [[Confusion Matrix]]\n- [[Precision-Recall Curve]]\n- [[True Positive]]\n- [[False Positive]]\n- [[Specificity]]\n\t- maturity:: draft\n\t- owl:class:: mv:Precision\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: precision-relationships\n\t\t- is-subclass-of:: [[ArtificialIntelligence]]",
+  "backlinks": [
+    "Accuracy",
+    "Recall"
+  ],
+  "wiki_links": [
+    "True Positive",
+    "Recall",
+    "ArtificialIntelligence",
+    "Accuracy",
+    "Positive Predictive Value",
+    "Model Performance",
+    "Specificity",
+    "MetaverseDomain",
+    "Precision-Recall Curve",
+    "False Positive",
+    "Confusion Matrix",
+    "F1 Score"
+  ],
+  "ontology": {
+    "term_id": "AI-0108",
+    "preferred_term": "Precision",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#Precision",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:Precision",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "ArtificialIntelligence"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain",
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

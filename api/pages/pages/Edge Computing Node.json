@@ -1,55 +1,104 @@
 {
   "id": "Edge Computing Node",
   "title": "Edge Computing Node",
-  "content": "- ### OntologyBlock\n  id:: edge-computing-node-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20141\n\t- preferred-term:: Edge Computing Node\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Metaverse Infrastructure]]\n\t- public-access:: true\n\n\n\n# Edge Computing Node – Updated Ontology Entry\n\n## Academic Context\n\n- Edge computing represents a fundamental shift in distributed computing architecture\n  - Moves computation and data storage closer to data sources rather than relying solely on centralised cloud infrastructure[1][2]\n  - Emerged from content delivery networks in the 1990s, evolving significantly through the 2000s and beyond[2]\n  - Addresses latency constraints critical for real-time applications where milliseconds genuinely matter\n- The discipline bridges traditional cloud computing with localised processing paradigms\n  - Reduces dependency on backhauling raw data to distant data centres[1]\n  - Enables immediate response capabilities essential for autonomous systems, surveillance, and industrial automation[1]\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Enterprise spending on edge infrastructure reached $176 billion in 2022, with continued growth trajectory[1]\n  - Gartner projections indicated that by 2025, over 70% of enterprise-generated data would be processed outside traditional centralised data centres[1]\n  - Organisations increasingly deploy edge solutions across dispersed networks rather than monolithic factory floors[3]\n  - Applications span oil pipelines, maritime vessels, industrial zones, and unmanned remote sites where consistent human presence proves impractical[3]\n- Technical capabilities and limitations\n  - Edge nodes process data locally, transmitting only refined insights rather than raw datasets to central servers[6]\n  - Store-and-forward protocols maintain data integrity during connectivity loss, retaining information for up to 35 days before reconnection[3]\n  - Remote sites frequently suffer from poor or inconsistent internet connectivity, necessitating rigorous bandwidth monitoring[3]\n  - Virtualization technologies simplify application deployment and management across distributed edge servers[2]\n- Standards and frameworks\n  - ETSI MEC (Multi-access Edge Computing) standards committee provides governance frameworks[2]\n  - Fog computing operates as a distinct architectural layer in larger deployments (such as smart cities), positioned between edge and cloud infrastructure[2]\n  - Edge nodes in cloud gaming applications (\"gamelets\") typically sit within one to two network hops from clients, ensuring responsive real-time performance[2]\n\n## UK Context\n\n- British contributions and implementations\n  - UK enterprises increasingly adopt edge computing to address latency constraints in financial services, healthcare, and manufacturing sectors\n  - National infrastructure modernisation initiatives incorporate edge computing principles for improved resilience and reduced dependency on centralised processing\n- North England innovation hubs\n  - Manchester, Leeds, Newcastle, and Sheffield host growing technology clusters exploring edge computing applications\n  - Regional manufacturing and industrial automation sectors benefit from localised processing capabilities, particularly in precision engineering and supply chain optimisation\n  - Universities across the North actively research distributed computing architectures and edge infrastructure deployment\n\n## Research & Literature\n\n- Key academic and industry sources\n  - Arabi, K. (2014). Edge computing as computing outside the cloud, at the network's edge. IEEE DAC keynote and MIT MTL Seminar presentation[2]\n  - Reznik, A. Chair, ETSI MEC ISG standards committee. Defines edge as anything beyond traditional data centre infrastructure[2]\n  - Gartner Research. Enterprise data processing predictions and market analysis (2025 projections)[1]\n  - IDC. Global spending forecasts on edge infrastructure and solutions[1]\n- Ongoing research directions\n  - Security implications of distributed edge architectures and data encryption at the periphery[3]\n  - Optimisation of store-and-forward protocols for variable connectivity environments\n  - Integration patterns between edge, fog, and cloud layers in heterogeneous deployments\n  - Real-time decision-making frameworks leveraging edge-processed insights\n\n## Future Directions\n\n- Emerging trends and developments\n  - Increased convergence of edge computing with Internet of Things (IoT) ecosystems, where device connectivity drives architectural decisions[2]\n  - Expansion of edge capabilities into sectors requiring sub-millisecond response times (autonomous vehicles, surgical robotics, industrial control systems)\n  - Development of standardised management platforms for multi-site edge deployments\n- Anticipated challenges\n  - Maintaining consistent security posture across geographically dispersed edge nodes\n  - Managing bandwidth constraints in regions with unreliable connectivity infrastructure\n  - Balancing computational offloading decisions between edge and cloud resources\n- Research priorities\n  - Formal frameworks for latency-aware application design\n  - Resilience mechanisms for edge infrastructure operating in challenging environments\n  - Cost-benefit analysis methodologies for edge versus cloud deployment decisions\n\n---\n\n**Revised Definition:** Distributed computing resource deployed at or near data sources to enable localised processing, reducing latency and bandwidth requirements whilst supporting real-time applications through proximity-based computation and storage.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
-  "backlinks": [],
+  "content": "- ### OntologyBlock\n  id:: edge-computing-node-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20141\n\t- preferred-term:: Edge Computing Node\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Physical computing resource deployed near data sources to reduce latency for immersive applications through localized processing.\n\t- source:: [[ETSI ARF 010]], [[IEEE P2048-3]]\n\t- maturity:: mature\n\t- owl:class:: mv:EdgeComputingNode\n\t- owl:physicality:: PhysicalEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:PhysicalObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]], [[ComputationAndIntelligenceDomain]]\n\t- implementedInLayer:: [[PhysicalLayer]], [[ComputeLayer]]\n\t- #### Relationships\n\t  id:: edge-computing-node-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Edge Mesh Network]]\n\t\t- is-part-of:: [[Edge Network]]\n\t\t- has-part:: [[Memory Module]]\n\t\t- has-part:: [[Network Interface]]\n\t\t- has-part:: [[Storage Unit]]\n\t\t- has-part:: [[Cooling System]]\n\t\t- has-part:: [[Processor]]\n\t\t- has-part:: [[GPU]]\n\t\t- requires:: [[Physical Housing]]\n\t\t- requires:: [[Power Supply]]\n\t\t- requires:: [[Network Connectivity]]\n\t\t- enables:: [[Bandwidth Optimization]]\n\t\t- enables:: [[Real-time Analytics]]\n\t\t- enables:: [[Local Data Processing]]\n\t\t- enables:: [[Low Latency Processing]]\n\n## Academic Context\n\n- Edge computing represents a fundamental shift in distributed computing architecture\n  - Moves computation and data storage closer to data sources rather than relying solely on centralised cloud infrastructure[1][2]\n  - Emerged from content delivery networks in the 1990s, evolving significantly through the 2000s and beyond[2]\n  - Addresses latency constraints critical for real-time applications where milliseconds genuinely matter\n- The discipline bridges traditional cloud computing with localised processing paradigms\n  - Reduces dependency on backhauling raw data to distant data centres[1]\n  - Enables immediate response capabilities essential for autonomous systems, surveillance, and industrial automation[1]\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Enterprise spending on edge infrastructure reached $176 billion in 2022, with continued growth trajectory[1]\n  - Gartner projections indicated that by 2025, over 70% of enterprise-generated data would be processed outside traditional centralised data centres[1]\n  - Organisations increasingly deploy edge solutions across dispersed networks rather than monolithic factory floors[3]\n  - Applications span oil pipelines, maritime vessels, industrial zones, and unmanned remote sites where consistent human presence proves impractical[3]\n- Technical capabilities and limitations\n  - Edge nodes process data locally, transmitting only refined insights rather than raw datasets to central servers[6]\n  - Store-and-forward protocols maintain data integrity during connectivity loss, retaining information for up to 35 days before reconnection[3]\n  - Remote sites frequently suffer from poor or inconsistent internet connectivity, necessitating rigorous bandwidth monitoring[3]\n  - Virtualization technologies simplify application deployment and management across distributed edge servers[2]\n- Standards and frameworks\n  - ETSI MEC (Multi-access Edge Computing) standards committee provides governance frameworks[2]\n  - Fog computing operates as a distinct architectural layer in larger deployments (such as smart cities), positioned between edge and cloud infrastructure[2]\n  - Edge nodes in cloud gaming applications (\"gamelets\") typically sit within one to two network hops from clients, ensuring responsive real-time performance[2]\n\n## UK Context\n\n- British contributions and implementations\n  - UK enterprises increasingly adopt edge computing to address latency constraints in financial services, healthcare, and manufacturing sectors\n  - National infrastructure modernisation initiatives incorporate edge computing principles for improved resilience and reduced dependency on centralised processing\n- North England innovation hubs\n  - Manchester, Leeds, Newcastle, and Sheffield host growing technology clusters exploring edge computing applications\n  - Regional manufacturing and industrial automation sectors benefit from localised processing capabilities, particularly in precision engineering and supply chain optimisation\n  - Universities across the North actively research distributed computing architectures and edge infrastructure deployment\n\n## Research & Literature\n\n- Key academic and industry sources\n  - Arabi, K. (2014). Edge computing as computing outside the cloud, at the network's edge. IEEE DAC keynote and MIT MTL Seminar presentation[2]\n  - Reznik, A. Chair, ETSI MEC ISG standards committee. Defines edge as anything beyond traditional data centre infrastructure[2]\n  - Gartner Research. Enterprise data processing predictions and market analysis (2025 projections)[1]\n  - IDC. Global spending forecasts on edge infrastructure and solutions[1]\n- Ongoing research directions\n  - Security implications of distributed edge architectures and data encryption at the periphery[3]\n  - Optimisation of store-and-forward protocols for variable connectivity environments\n  - Integration patterns between edge, fog, and cloud layers in heterogeneous deployments\n  - Real-time decision-making frameworks leveraging edge-processed insights\n\n## Future Directions\n\n- Emerging trends and developments\n  - Increased convergence of edge computing with Internet of Things (IoT) ecosystems, where device connectivity drives architectural decisions[2]\n  - Expansion of edge capabilities into sectors requiring sub-millisecond response times (autonomous vehicles, surgical robotics, industrial control systems)\n  - Development of standardised management platforms for multi-site edge deployments\n- Anticipated challenges\n  - Maintaining consistent security posture across geographically dispersed edge nodes\n  - Managing bandwidth constraints in regions with unreliable connectivity infrastructure\n  - Balancing computational offloading decisions between edge and cloud resources\n- Research priorities\n  - Formal frameworks for latency-aware application design\n  - Resilience mechanisms for edge infrastructure operating in challenging environments\n  - Cost-benefit analysis methodologies for edge versus cloud deployment decisions\n\n---\n\n**Revised Definition:** Distributed computing resource deployed at or near data sources to enable localised processing, reducing latency and bandwidth requirements whilst supporting real-time applications through proximity-based computation and storage.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Edge Network",
+    "Edge Mesh Network"
+  ],
   "wiki_links": [
-    "Metaverse Infrastructure"
+    "Network Connectivity",
+    "Low Latency Processing",
+    "Power Supply",
+    "Local Data Processing",
+    "ETSI ARF 010",
+    "Network Interface",
+    "Bandwidth Optimization",
+    "PhysicalLayer",
+    "InfrastructureDomain",
+    "Storage Unit",
+    "Memory Module",
+    "IEEE P2048-3",
+    "Edge Network",
+    "Cooling System",
+    "GPU",
+    "Processor",
+    "Physical Housing",
+    "ComputationAndIntelligenceDomain",
+    "ComputeLayer",
+    "Edge Mesh Network",
+    "Real-time Analytics"
   ],
   "ontology": {
     "term_id": "20141",
     "preferred_term": "Edge Computing Node",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#EdgeComputingNode",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "Physical computing resource deployed near data sources to reduce latency for immersive applications through localized processing.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:EdgeComputingNode",
+    "owl_physicality": "PhysicalEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:PhysicalObject",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
+    "has_part": [
+      "Memory Module",
+      "Network Interface",
+      "Storage Unit",
+      "Cooling System",
+      "Processor",
+      "GPU"
+    ],
+    "is_part_of": [
+      "Edge Mesh Network",
+      "Edge Network"
+    ],
+    "requires": [
+      "Physical Housing",
+      "Power Supply",
+      "Network Connectivity"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Bandwidth Optimization",
+      "Real-time Analytics",
+      "Local Data Processing",
+      "Low Latency Processing"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "InfrastructureDomain",
+      "ComputationAndIntelligenceDomain"
+    ],
+    "implemented_in_layer": [
+      "PhysicalLayer",
+      "ComputeLayer"
+    ],
+    "source": [
+      "ETSI ARF 010",
+      "IEEE P2048-3"
+    ],
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20141' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

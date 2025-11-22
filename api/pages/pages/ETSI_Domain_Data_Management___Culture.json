@@ -1,34 +1,34 @@
 {
   "id": "ETSI_Domain_Data_Management___Culture",
   "title": "ETSI Domain: Data Management + Cultural Heritage",
-  "content": "- ### OntologyBlock\n  id:: etsi-domain-datamgmt-culture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20343\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: ETSI Domain: Data Management + Cultural Heritage\n\t- definition:: Crossover domain for ETSI metaverse categorization addressing data preservation and management systems for cultural heritage digitization, archival, and accessibility.\n\t- maturity:: mature\n\t- source:: [[ETSI GR MEC 032]]\n\t- owl:class:: mv:ETSIDomain_DataMgmt_Culture\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-datamgmt-culture-relationships\n\t\t- is-subclass-of:: [[Metaverse Infrastructure]]\n\t\t- is-part-of:: [[ETSI Metaverse Domain Taxonomy]]\n\t\t- has-part:: [[Digital Archive]], [[Preservation System]], [[Heritage Database]], [[Access Control]]\n\t\t- requires:: [[Data Management]], [[Cultural Heritage Digitization]]\n\t\t- enables:: [[Long-term Preservation]], [[Public Access]], [[Educational Outreach]]\n\t\t- depends-on:: [[Archival Standards]], [[Metadata Schemas]]\n\t- #### OWL Axioms\n\t  id:: etsi-domain-datamgmt-culture-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:ETSIDomain_DataMgmt_Culture))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Culture mv:VirtualEntity)\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Culture mv:Object)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Culture\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:InfrastructureDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Culture\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)\n\t\t  )\n\n\t\t  # Crossover domain dependencies\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Culture\n\t\t    ObjectSomeValuesFrom(mv:requires mv:ETSIDomain_DataManagement)\n\t\t  )\n\n\t\t  # Preservation enablement\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Culture\n\t\t    ObjectSomeValuesFrom(mv:enables mv:LongTermPreservation)\n\t\t  )\n\n\t\t  # Archival standards dependency\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Culture\n\t\t    ObjectSomeValuesFrom(mv:dependsOn mv:ArchivalStandards)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:requires)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n```",
+  "content": "- ### OntologyBlock\n  id:: etsi-domain-datamgmt-culture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20343\n\t- preferred-term:: ETSI Domain: Data Management + Cultural Heritage\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Crossover domain for ETSI metaverse categorization addressing data preservation and management systems for cultural heritage digitization, archival, and accessibility.\n\t- source:: [[ETSI GR MEC 032]]\n\t- maturity:: mature\n\t- owl:class:: mv:ETSIDomain_DataMgmt_Culture\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-datamgmt-culture-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse Infrastructure]]\n\t\t- is-part-of:: [[ETSI Metaverse Domain Taxonomy]]\n\t\t- has-part:: [[Heritage Database]]\n\t\t- has-part:: [[Access Control]]\n\t\t- has-part:: [[Preservation System]]\n\t\t- has-part:: [[Digital Archive]]\n\t\t- requires:: [[Cultural Heritage Digitization]]\n\t\t- requires:: [[Data Management]]\n\t\t- enables:: [[Educational Outreach]]\n\t\t- enables:: [[Long-term Preservation]]\n\t\t- enables:: [[Public Access]]\n\t\t- depends-on:: [[Archival Standards]]\n\t\t- depends-on:: [[Metadata Schemas]]",
   "backlinks": [],
   "wiki_links": [
-    "Digital Archive",
-    "Public Access",
-    "InfrastructureDomain",
-    "Heritage Database",
-    "ETSI Metaverse Domain Taxonomy",
-    "Metaverse Infrastructure",
-    "Data Management",
-    "Archival Standards",
-    "ApplicationLayer",
-    "Access Control",
-    "Educational Outreach",
-    "ETSI GR MEC 032",
     "Metadata Schemas",
-    "Preservation System",
+    "Educational Outreach",
+    "Archival Standards",
+    "Metaverse Infrastructure",
+    "InfrastructureDomain",
     "Cultural Heritage Digitization",
-    "Long-term Preservation"
+    "Digital Archive",
+    "ETSI GR MEC 032",
+    "Access Control",
+    "Preservation System",
+    "Long-term Preservation",
+    "Data Management",
+    "ApplicationLayer",
+    "Public Access",
+    "ETSI Metaverse Domain Taxonomy",
+    "Heritage Database"
   ],
   "ontology": {
     "term_id": "20343",
     "preferred_term": "ETSI Domain: Data Management + Cultural Heritage",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ETSIDomain_DataMgmt_Culture",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "Crossover domain for ETSI metaverse categorization addressing data preservation and management systems for cultural heritage digitization, archival, and accessibility.",
     "scope_note": null,
     "status": "draft",
@@ -47,26 +47,26 @@
       "Metaverse Infrastructure"
     ],
     "has_part": [
-      "Digital Archive",
-      "Preservation System",
       "Heritage Database",
-      "Access Control"
+      "Access Control",
+      "Preservation System",
+      "Digital Archive"
     ],
     "is_part_of": [
       "ETSI Metaverse Domain Taxonomy"
     ],
     "requires": [
-      "Data Management",
-      "Cultural Heritage Digitization"
+      "Cultural Heritage Digitization",
+      "Data Management"
     ],
     "depends_on": [
       "Archival Standards",
       "Metadata Schemas"
     ],
     "enables": [
+      "Educational Outreach",
       "Long-term Preservation",
-      "Public Access",
-      "Educational Outreach"
+      "Public Access"
     ],
     "relates_to": [],
     "bridges_to": [],
@@ -84,8 +84,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "term-id '20343' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

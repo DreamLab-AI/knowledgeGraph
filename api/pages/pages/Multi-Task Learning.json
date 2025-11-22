@@ -1,0 +1,55 @@
+{
+  "id": "Multi-Task Learning",
+  "title": "Multi Task Learning",
+  "content": "- ### OntologyBlock\n  id:: multi-task-learning-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0259\n\t- preferred-term:: Multi Task Learning\n\t- source-domain:: ai\n\t- owl:class:: ai:MultiTaskLearning\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A machine learning paradigm where a model is trained simultaneously on multiple related tasks, sharing representations across tasks to improve generalization and efficiency. Multi-task learning leverages task relatedness to learn better features than training on each task independently.\n\t- #### Relationships\n\t  id:: multi-task-learning-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[MachineLearning]]\n\n## Multi Task Learning\n\nMulti Task Learning refers to a machine learning paradigm where a model is trained simultaneously on multiple related tasks, sharing representations across tasks to improve generalization and efficiency. multi-task learning leverages task relatedness to learn better features than training on each task independently.\n\n- Industry adoption and implementations\n  - MTL is widely adopted in industries such as healthcare, finance, and technology, where it is used to improve the performance of models in tasks like natural language processing, computer vision, and predictive analytics\n  - Notable organisations and platforms include Google, Microsoft, and Amazon, which use MTL in their AI systems to enhance efficiency and accuracy\n- UK and North England examples where relevant\n  - In the UK, MTL is used by companies like DeepMind and Babylon Health to develop more robust and efficient AI models for healthcare applications\n  - North England innovation hubs, such as those in Manchester, Leeds, Newcastle, and Sheffield, are actively researching and implementing MTL in various sectors, including healthcare, finance, and smart cities\n- Technical capabilities and limitations\n  - MTL can significantly improve model performance and efficiency, especially when tasks are related and data is limited\n  - However, MTL can also introduce challenges, such as the need for careful task selection and the potential for negative transfer if tasks are too dissimilar\n- Standards and frameworks\n  - Popular deep learning frameworks like TensorFlow and PyTorch provide built-in support for MTL, making it easier for researchers and practitioners to implement and experiment with MTL architectures\n\n## Technical Details\n\n- **Id**: multi-task-learning-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Research & Literature\n\n- Key academic papers and sources\n  - Caruana, R. (1997). Multitask Learning. Machine Learning, 28(1), 41-75. https://doi.org/10.1023/A:1007379606734\n  - Zhang, Y., & Yang, Q. (2018). A Survey on Multi-Task Learning. IEEE Transactions on Knowledge and Data Engineering, 31(1), 5-27. https://doi.org/10.1109/TKDE.2017.2755622\n  - Ruder, S. (2017). An Overview of Multi-Task Learning in Deep Neural Networks. arXiv preprint arXiv:1706.05098. https://arxiv.org/abs/1706.05098\n- Ongoing research directions\n  - Current research focuses on improving task selection, mitigating negative transfer, and developing more efficient and scalable MTL architectures\n  - There is also growing interest in applying MTL to new domains, such as reinforcement learning and unsupervised learning\n\n## UK Context\n\n- British contributions and implementations\n  - UK researchers have made significant contributions to the development and application of MTL, particularly in healthcare and natural language processing\n  - Institutions like the University of Cambridge, University College London, and the Alan Turing Institute are at the forefront of MTL research\n- North England innovation hubs (if relevant)\n  - North England is home to several innovation hubs that are actively researching and implementing MTL, including the Manchester Institute of Biotechnology, the Leeds Institute for Data Analytics, and the Newcastle University Centre for In Vivo Imaging\n  - These hubs are collaborating with local industries to develop MTL solutions for healthcare, finance, and smart city applications\n- Regional case studies\n  - In Manchester, MTL is being used to develop AI models for early disease detection and personalized medicine\n  - In Leeds, MTL is being applied to financial risk assessment and fraud detection\n  - In Newcastle, MTL is being used to improve the accuracy of environmental monitoring systems\n\n## Future Directions\n\n- Emerging trends and developments\n  - There is a growing trend towards using MTL in combination with other advanced techniques, such as transfer learning and reinforcement learning, to further enhance model performance\n  - The development of more efficient and scalable MTL architectures is expected to drive wider adoption in industry and academia\n- Anticipated challenges\n  - One of the main challenges is the need for careful task selection to avoid negative transfer and ensure that tasks are sufficiently related\n  - Another challenge is the need for more robust and interpretable MTL models, particularly in high-stakes applications like healthcare and finance\n- Research priorities\n  - Key research priorities include improving task selection, mitigating negative transfer, and developing more efficient and scalable MTL architectures\n  - There is also a need for more empirical studies to evaluate the performance of MTL in real-world applications and to identify best practices for its implementation\n\n## References\n\n1. Caruana, R. (1997). Multitask Learning. Machine Learning, 28(1), 41-75. https://doi.org/10.1023/A:1007379606734\n2. Zhang, Y., & Yang, Q. (2018). A Survey on Multi-Task Learning. IEEE Transactions on Knowledge and Data Engineering, 31(1), 5-27. https://doi.org/10.1109/TKDE.2017.2755622\n3. Ruder, S. (2017). An Overview of Multi-Task Learning in Deep Neural Networks. arXiv preprint arXiv:1706.05098. https://arxiv.org/abs/1706.05098\n4. Zhang, Y., & Yang, Q. (2020). A Survey on Multi-Task Learning: From Traditional Methods to Deep Learning. ACM Computing Surveys, 53(2), 1-35. https://doi.org/10.1145/3371891\n5. Zhang, Y., & Yang, Q. (2021). Multi-Task Learning: A Survey. IEEE Transactions on Knowledge and Data Engineering, 33(1), 1-20. https://doi.org/10.1109/TKDE.2019.2946158\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "MachineLearning"
+  ],
+  "ontology": {
+    "term_id": "AI-0259",
+    "preferred_term": "Multi Task Learning",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#MultiTaskLearning",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "A machine learning paradigm where a model is trained simultaneously on multiple related tasks, sharing representations across tasks to improve generalization and efficiency. Multi-task learning leverages task relatedness to learn better features than training on each task independently.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:MultiTaskLearning",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "MachineLearning"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

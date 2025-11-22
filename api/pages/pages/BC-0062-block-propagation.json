@@ -1,12 +1,12 @@
 {
   "id": "BC-0062-block-propagation",
   "title": "Block Propagation",
-  "content": "- ### OntologyBlock\n  id:: block-propagation-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0062\n    - preferred-term:: Block Propagation\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Network block distribution within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:BlockPropagation\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[ConsensusDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### Relationships\n    id:: relationships\n    - is-subclass-of:: [[Blockchain Network]]\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: block-propagation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0062\n\t- preferred-term:: Block Propagation\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Network block distribution within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:BlockPropagation\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[ConsensusDomain]]\n\t- #### Relationships\n\t  id:: block-propagation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Network]]",
   "backlinks": [],
   "wiki_links": [
+    "NIST NISTIR",
     "Blockchain Network",
     "ISO/IEC 23257:2021",
-    "NIST NISTIR",
     "IEEE 2418.1",
     "ConsensusDomain"
   ],
@@ -15,17 +15,17 @@
     "preferred_term": "Block Propagation",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/blockchain#BlockPropagation",
-    "source_domain": "blockchain",
-    "domain": "blockchain",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
     "definition": "Network block distribution within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
     "scope_note": null,
     "status": "complete",
     "maturity": "mature",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-10-28",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "bc:BlockPropagation",
@@ -56,7 +56,8 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+        "Missing required property: source-domain",
+        "Missing required property: last-updated"
       ]
     }
   }

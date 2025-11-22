@@ -1,0 +1,84 @@
+{
+  "id": "Censorship Resistance",
+  "title": "Censorship Resistance",
+  "content": "- ### OntologyBlock\n  id:: censorship-resistance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0086\n\t- preferred-term:: Censorship Resistance\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Transaction inclusion guarantee within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:CensorshipResistance\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[CryptographicDomain]]\n\t- #### Relationships\n\t  id:: censorship-resistance-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain]]\n\t\t- bridges-to:: [[Networkcomponent]]\n\t\t- bridges-to:: [[BlockchainEntity]]\n\t\t- bridges-from:: [[Bitcoin]]\n\t\t- bridges-from:: [[DecentralizationLayer]]\n\n## Censorship Resistance\n\nCensorship Resistance refers to transaction inclusion guarantee within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\n- **Industry Adoption and Implementations**\n  Public permissionless blockchains remain the primary exemplars of censorship resistance, enabling users worldwide to transact without gatekeepers[1]. Decentralised social networks and DeFi platforms increasingly incorporate censorship-resistant features to enhance user autonomy and privacy[4].\n- **Notable Organisations and Platforms**\n  Ethereum and Bitcoin continue to lead, though newer protocols explore consensusless or DAG-based approaches to improve censorship resistance and throughput[2]. Decentralised social media projects, some leveraging blockchain, aim to counteract centralised platform censorship[4].\n- **UK and North England Examples**\n  UK academic institutions such as Middlesex University (London) contribute to research on blockchain-based decentralised social networks enhancing censorship resistance and privacy[4]. While North England cities like Manchester, Leeds, Newcastle, and Sheffield are emerging hubs for blockchain innovation, specific high-profile censorship resistance projects remain nascent but growing, often linked to fintech and digital identity startups.\n- **Technical Capabilities and Limitations**\n  Leader-based consensus protocols face inherent censorship risks due to transaction selection by block proposers. Consensusless and DAG-based protocols offer promising alternatives but face challenges in scalability and security trade-offs[2]. Censorship resistance is not absolute; network-level attacks and regulatory pressures can still impose constraints.\n- **Standards and Frameworks**\n  Industry and academic efforts are ongoing to standardise censorship resistance metrics and protocols, with emphasis on transparency, auditability, and decentralisation thresholds. No universally accepted standard exists yet, but frameworks increasingly consider socio-technical factors alongside cryptographic guarantees.\n\n## Technical Details\n\n- **Id**: censorship-resistance-standards\n- **Collapsed**: true\n- **Domain Prefix**: BC\n- **Sequence Number**: 0086\n- **Filename History**: [\"BC-0086-censorship-resistance.md\"]\n- **Public Access**: true\n- **Source Domain**: metaverse\n- **Status**: complete\n- **Last Updated**: 2025-10-28\n- **Maturity**: mature\n- **Source**: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n- **Authority Score**: 0.95\n- **Owl:Class**: bc:CensorshipResistance\n- **Owl:Physicality**: VirtualEntity\n- **Owl:Role**: Object\n- **Owl:Inferred Class**: bc:VirtualObject\n- **Belongstodomain**: [[CryptographicDomain]]\n- **Implementedinlayer**: [[SecurityLayer]]\n- **Is Subclass Of**: [[Blockchain Entity]], [[NetworkComponent]]\n\n## Research & Literature\n\n- **Key Academic Papers and Sources**\n  - Alpos, O., David, B., Kamarinakis, N., & Zindros, D. (2025). *Consensus Protocols for Censorship Resistance and Efficiency*. arXiv preprint arXiv:2504.03588. https://doi.org/10.48550/arXiv.2504.03588[2]\n  - Thiha, M., Yetgin, H., Piras, L., & Al-Obeidallah, M. G. (2025). *Enhancing Privacy, Censorship Resistance, and User Engagement in a Blockchain-Based Social Network*. SCITEPRESS Digital Library. https://doi.org/10.5220/0013238500003824[4]\n  - Liberty Street Economics (2025). *How Censorship Resistant Are Decentralized Systems?* Federal Reserve Bank of New York. [1]\n- **Ongoing Research Directions**\n  Research focuses on improving short-term censorship resistance guarantees, exploring consensusless protocols, and integrating privacy with censorship resistance in decentralised social networks. The interplay between technical censorship resistance and regulatory or infrastructural censorship remains a critical area.\n\n## UK Context\n\n- **British Contributions and Implementations**\n  UK researchers contribute to blockchain-based decentralised social networks prioritising censorship resistance and privacy[4]. The UK government and private sector show growing interest in decentralised technologies, though regulatory frameworks continue to evolve cautiously.\n- **North England Innovation Hubs**\n  Cities such as Manchester, Leeds, Newcastle, and Sheffield foster fintech and blockchain startups exploring decentralised identity, payments, and data sovereignty, indirectly supporting censorship resistance principles. Academic-industry collaborations in these regions are increasing, though specific censorship resistance projects are still emerging.\n- **Regional Case Studies**\n  Middlesex University’s blockchain social network project exemplifies UK academic efforts to address censorship and privacy challenges in digital communication[4]. Regional innovation clusters in North England are poised to contribute further as decentralised technology adoption expands.\n\n## Future Directions\n\n- **Emerging Trends and Developments**\n  - Development of consensusless and DAG-based protocols to enhance censorship resistance and efficiency[2].\n  - Integration of censorship resistance with privacy-preserving technologies in social networks and financial applications[4].\n  - Increased focus on socio-technical frameworks addressing regulatory and infrastructural censorship.\n- **Anticipated Challenges**\n  - Balancing censorship resistance with regulatory compliance, especially in jurisdictions with stringent content controls.\n  - Mitigating network-level censorship and denial-of-service attacks.\n  - Ensuring scalability without compromising censorship resistance guarantees.\n- **Research Priorities**\n  - Formalising censorship resistance metrics and standards.\n  - Exploring hybrid consensus models combining leader-based and consensusless approaches.\n  - Investigating the impact of censorship resistance on user behaviour and platform governance.\n\n## References\n\n1. Liberty Street Economics. (2025). *How Censorship Resistant Are Decentralized Systems?* Federal Reserve Bank of New York. Retrieved February 2025, from https://libertystreeteconomics.newyorkfed.org/2025/02/how-censorship-resistant-are-decentralized-systems/\n2. Alpos, O., David, B., Kamarinakis, N., & Zindros, D. (2025). *Consensus Protocols for Censorship Resistance and Efficiency*. arXiv preprint arXiv:2504.03588. https://doi.org/10.48550/arXiv.2504.03588\n3. Thiha, M., Yetgin, H., Piras, L., & Al-Obeidallah, M. G. (2025). *Enhancing Privacy, Censorship Resistance, and User Engagement in a Blockchain-Based Social Network*. SCITEPRESS Digital Library. https://doi.org/10.5220/0013238500003824\n\n## Metadata\n\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Bitcoin",
+    "Human Rights",
+    "Decentralization Layer"
+  ],
+  "wiki_links": [
+    "NIST NISTIR",
+    "BlockchainEntity",
+    "CryptographicDomain",
+    "SecurityLayer",
+    "NetworkComponent",
+    "DecentralizationLayer",
+    "Blockchain Entity",
+    "ISO/IEC 23257:2021",
+    "Networkcomponent",
+    "Bitcoin",
+    "IEEE 2418.1",
+    "Blockchain"
+  ],
+  "ontology": {
+    "term_id": "BC-0086",
+    "preferred_term": "Censorship Resistance",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#CensorshipResistance",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "Transaction inclusion guarantee within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": "2025-10-28",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:CensorshipResistance",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "bc:VirtualObject",
+    "is_subclass_of": [
+      "Blockchain"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "CryptographicDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "ISO/IEC 23257:2021",
+      "IEEE 2418.1",
+      "NIST NISTIR"
+    ],
+    "other_relationships": {
+      "bridges-to": [
+        "Networkcomponent",
+        "BlockchainEntity"
+      ],
+      "bridges-from": [
+        "Bitcoin",
+        "DecentralizationLayer"
+      ]
+    },
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "owl:class namespace 'bc' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

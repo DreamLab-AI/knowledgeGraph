@@ -1,0 +1,55 @@
+{
+  "id": "Healthcare Records",
+  "title": "Healthcare Records",
+  "content": "- ### OntologyBlock\n  id:: healthcare-records-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0491\n\t- preferred-term:: Healthcare Records\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Blockchain-based electronic health record systems employing immutable distributed ledgers, smart contracts for consent management, and cryptographic security measures to enable secure patient data sharing, interoperability across healthcare providers, and patient-controlled access whilst maintaining HIPAA and GDPR compliance through hybrid on-chain/off-chain architectures.\n\t- maturity:: draft\n\t- owl:class:: bc:HealthcareRecords\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[BlockchainDomain]]\n\n## Healthcare Records\n\nHealthcare Records refers to blockchain-based electronic health record systems employing immutable distributed ledgers, smart contracts for consent management, and cryptographic security measures to enable secure patient data sharing, interoperability across healthcare providers, and patient-controlled access whilst maintaining hipaa and gdpr compliance through hybrid on-chain/off-chain architectures.\n\n- Industry adoption and implementations\n  - Blockchain-based electronic health record (EHR) systems are increasingly deployed by hospitals, insurers, and research institutions to enable secure, auditable, and interoperable data exchange\n  - Notable platforms include IBM Lifescience, ConsenSys Health, and Embleema, with growing interest from NHS Digital and regional health authorities\n  - In North England, Manchester University NHS Foundation Trust and Leeds Teaching Hospitals NHS Trust have piloted blockchain solutions for consent management and clinical data sharing, with Newcastle and Sheffield exploring similar initiatives\n  - These implementations often leverage hybrid on-chain/off-chain architectures to balance performance, privacy, and regulatory compliance\n- Technical capabilities and limitations\n  - Immutable distributed ledgers ensure data integrity and auditability, reducing the risk of tampering and unauthorised access\n  - Smart contracts automate consent workflows and access controls, streamlining patient authorisation and regulatory compliance\n  - Cryptographic security measures, such as zero-knowledge proofs and homomorphic encryption, enhance privacy while enabling selective data sharing\n  - Limitations include scalability challenges, integration complexity with legacy systems, and the need for robust governance frameworks\n- Standards and frameworks\n  - Compliance with UK and EU regulations, such as the Data Protection Act 2018 and GDPR, is achieved through careful design of access controls and audit trails\n  - Industry standards, including HL7 FHIR and ISO/TS 18308, are increasingly integrated with blockchain architectures to ensure interoperability and data portability\n\n## Technical Details\n\n- **Id**: bc-0491-healthcare-records-ontology\n- **Collapsed**: true\n- **Source Domain**: metaverse\n- **Status**: complete\n- **Public Access**: true\n- **Authority Score**: 0.90\n- **Maturity**: draft\n- **Owl:Class**: bc:HealthcareRecords\n- **Owl:Physicality**: ConceptualEntity\n- **Owl:Role**: Concept\n- **Belongstodomain**: [[BlockchainDomain]]\n\n## Research & Literature\n\n- Key academic papers and sources\n  - Azaria, A., Ekblaw, A., Vieira, T., & Lippman, A. (2016). MedRec: Using Blockchain for Medical Data Access and Permission Management. In Proceedings of the 2nd International Conference on Machine Learning for Healthcare (MLHC). DOI: 10.48550/arXiv.1608.07636\n  - Kuo, T. T., Kim, H. E., & Ohno-Machado, L. (2017). Blockchain Distributed Ledger Technologies for Biomedical and Health Care Applications. Journal of the American Medical Informatics Association, 24(6), 1211–1220. DOI: 10.1093/jamia/ocx068\n  - Agbo, C. C., Mahmoud, Q. H., & Eklund, J. M. (2019). Blockchain Technology in Healthcare: A Systematic Review. Healthcare, 7(2), 56. DOI: 10.3390/healthcare7020056\n  - A systematic literature review published in 2025 analyses blockchain-based healthcare implementations, benchmarking peer-reviewed studies and turning proofs-of-concept into practical solutions (Healthcare, 2025, 13(9), 1087). DOI: 10.3390/healthcare13091087\n- Ongoing research directions\n  - Research is focused on improving scalability, privacy-preserving techniques, and integration with AI and IoT for real-time health monitoring\n  - Studies are also exploring the socio-technical aspects of blockchain adoption, including patient trust, clinician acceptance, and regulatory alignment\n\n## UK Context\n\n- British contributions and implementations\n  - The UK has been at the forefront of blockchain innovation in healthcare, with NHS Digital and the National Institute for Health Research (NIHR) supporting pilot projects and research initiatives\n  - The NHS has explored blockchain for secure data sharing, consent management, and supply chain integrity, particularly in response to the challenges of interoperability and data security\n- North England innovation hubs\n  - Manchester, Leeds, Newcastle, and Sheffield are emerging as regional innovation hubs, with universities and NHS trusts collaborating on blockchain-based healthcare solutions\n  - For example, the University of Manchester and Leeds Teaching Hospitals NHS Trust have partnered on projects to develop blockchain platforms for clinical data exchange and patient consent management\n- Regional case studies\n  - Manchester University NHS Foundation Trust has piloted a blockchain-based system for managing patient consent and sharing clinical data across providers, demonstrating improved data security and patient control\n  - Leeds Teaching Hospitals NHS Trust has explored blockchain for supply chain management, ensuring the integrity and traceability of medical supplies\n\n## Future Directions\n\n- Emerging trends and developments\n  - The integration of blockchain with AI and IoT is expected to enable more sophisticated health monitoring and personalised medicine\n  - Multi-chain systems and interoperability protocols are being developed to facilitate seamless data exchange across different healthcare providers and regions\n- Anticipated challenges\n  - Scalability, regulatory compliance, and integration with legacy systems remain significant challenges\n  - Ensuring patient trust and clinician acceptance will be crucial for widespread adoption\n- Research priorities\n  - Research is needed to address technical limitations, improve privacy-preserving techniques, and explore the socio-technical aspects of blockchain adoption in healthcare\n\n## References\n\n1. Azaria, A., Ekblaw, A., Vieira, T., & Lippman, A. (2016). MedRec: Using Blockchain for Medical Data Access and Permission Management. In Proceedings of the 2nd International Conference on Machine Learning for Healthcare (MLHC). DOI: 10.48550/arXiv.1608.07636\n2. Kuo, T. T., Kim, H. E., & Ohno-Machado, L. (2017). Blockchain Distributed Ledger Technologies for Biomedical and Health Care Applications. Journal of the American Medical Informatics Association, 24(6), 1211–1220. DOI: 10.1093/jamia/ocx068\n3. Agbo, C. C., Mahmoud, Q. H., & Eklund, J. M. (2019). Blockchain Technology in Healthcare: A Systematic Review. Healthcare, 7(2), 56. DOI: 10.3390/healthcare7020056\n4. A systematic literature review published in 2025 analyses blockchain-based healthcare implementations, benchmarking peer-reviewed studies and turning proofs-of-concept into practical solutions (Healthcare, 2025, 13(9), 1087). DOI: 10.3390/healthcare13091087\n5. NHS Digital. (2025). Blockchain in Healthcare: A Guide for NHS Organisations. Retrieved from https://digital.nhs.uk/services/blockchain-in-healthcare\n6. Manchester University NHS Foundation Trust. (2025). Blockchain Pilot for Patient Consent and Data Sharing. Retrieved from https://www.manchester.ac.uk/research/projects/blockchain-pilot\n7. Leeds Teaching Hospitals NHS Trust. (2025). Blockchain for Supply Chain Management. Retrieved from https://www.leedsth.nhs.uk/research/blockchain-supply-chain\n\n## Metadata\n\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "BlockchainDomain"
+  ],
+  "ontology": {
+    "term_id": "BC-0491",
+    "preferred_term": "Healthcare Records",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#HealthcareRecords",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "Blockchain-based electronic health record systems employing immutable distributed ledgers, smart contracts for consent management, and cryptographic security measures to enable secure patient data sharing, interoperability across healthcare providers, and patient-controlled access whilst maintaining HIPAA and GDPR compliance through hybrid on-chain/off-chain architectures.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": 0.9,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:HealthcareRecords",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'bc' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

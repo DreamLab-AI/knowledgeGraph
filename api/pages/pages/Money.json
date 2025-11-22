@@ -1,43 +1,35 @@
 {
   "id": "Money",
   "title": "Money",
-  "content": "- ### OntologyBlock\n\n  - **Identification**\n    - ontology:: true\n    - is-subclass-of:: [[DisruptiveTechnology]]\n    - term-id:: DT-0002\n    - preferred-term:: Money\n    - source-domain:: cross-domain\n    - status:: complete\n    - public-access:: true\n    - version:: 1.0.0\n    - last-updated:: 2025-11-05\n\n  - **Definition**\n    - definition:: A medium of exchange, unit of account, and store of value accepted within an economic system, encompassing physical currency, digital money, and virtual currency forms.\n    - maturity:: mature\n    - source:: [[BIS]], [[IMF]], [[ISO 4217]], [[Bank of England]]\n    - authority-score:: 1.0\n\n  - **Semantic Classification**\n    - owl:class:: dt:Money\n    - owl:physicality:: HybridEntity\n    - owl:role:: Object\n    - owl:inferred-class:: dt:HybridObject\n    - belongsToDomain:: [[EconomicSystemDomain]]\n    - owl:disjointWith:: [[NeuralNetwork]], [[BlockchainDomain]], [[MetaverseDomain]]\n\n  - #### OWL Restrictions\n    - has-part some FiatCurrency\n    - has-part some DigitalMoney\n    - implemented-by some Stablecoin\n    - has-part some CentralBankDigitalCurrency\n    - requires some Trust\n    - is-part-of some ValueTransfer\n    - implemented-by some Cash\n    - enables some PriceDiscovery\n    - requires some AcceptanceNetwork\n    - implemented-by some ElectronicMoney\n    - enables some Savings\n    - enables some EconomicExchange\n    - has-part some Cryptocurrency\n    - requires some IssuingAuthority\n    - has-part some VirtualCurrency\n    - implemented-by some BankDeposit\n    - enables some Debt\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[CentralBankDigitalCurrency]] via has-part\n    - bridges-to:: [[DigitalMoney]] via has-part\n    - bridges-to:: [[AcceptanceNetwork]] via requires\n    - bridges-to:: [[Cryptocurrency]] via has-part\n    - bridges-to:: [[VirtualCurrency]] via has-part\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: DT-0002\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: DT-0002\n\t- preferred-term:: Money\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A medium of exchange, unit of account, and store of value accepted within an economic system, encompassing physical currency, digital money, and virtual currency forms.\n\t- source:: [[BIS]], [[IMF]], [[ISO 4217]], [[Bank of England]]\n\t- maturity:: mature\n\t- owl:class:: dt:Money\n\t- owl:physicality:: HybridEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: dt:HybridObject\n\t- belongsToDomain:: [[EconomicSystemDomain]]",
   "backlinks": [
+    "Cryptocurrency",
     "Social Impact Assessment (SIA)",
     "Bitcoin"
   ],
   "wiki_links": [
-    "ISO 4217",
-    "MetaverseDomain",
-    "Cryptocurrency",
-    "AcceptanceNetwork",
     "IMF",
-    "EconomicSystemDomain",
-    "NeuralNetwork",
-    "Bank of England",
     "BIS",
-    "BlockchainDomain",
-    "DigitalMoney",
-    "DisruptiveTechnology",
-    "VirtualCurrency",
-    "CentralBankDigitalCurrency"
+    "ISO 4217",
+    "Bank of England",
+    "EconomicSystemDomain"
   ],
   "ontology": {
     "term_id": "DT-0002",
     "preferred_term": "Money",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/disruptive-tech#Money",
-    "source_domain": "cross-domain",
-    "domain": "cross-domain",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "dt",
+    "domain_full_name": "Disruptive Technologies",
     "definition": "A medium of exchange, unit of account, and store of value accepted within an economic system, encompassing physical currency, digital money, and virtual currency forms.",
     "scope_note": null,
     "status": "complete",
     "maturity": "mature",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-11-05",
-    "authority_score": 1.0,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "dt:Money",
@@ -51,13 +43,7 @@
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [
-      "CentralBankDigitalCurrency via has",
-      "DigitalMoney via has",
-      "AcceptanceNetwork via requires",
-      "Cryptocurrency via has",
-      "VirtualCurrency via has"
-    ],
+    "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
@@ -73,8 +59,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'dt' doesn't match source-domain 'cross-domain'"
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

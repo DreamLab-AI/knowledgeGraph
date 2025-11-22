@@ -1,40 +1,33 @@
 {
   "id": "Halving",
   "title": "Halving",
-  "content": "- ### OntologyBlock\n  id:: halving-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0070\n\n    - filename-history:: [\"BC-0070-halving.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[BlockchainTechnology]]\n    - term-id:: BC-0070\n    - preferred-term:: Halving\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Block reward reduction event within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Halving\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[ConsensusDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-from:: [[Bitcoin]] via uses\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: halving-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0070\n\t- preferred-term:: Halving\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Block reward reduction event within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:Halving\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[ConsensusDomain]]",
   "backlinks": [
-    "Blockchain Entity",
-    "BC 0102 Inflation",
-    "Digital Twin of the Customer",
     "Runes and Glyphs",
-    "BC 0104 supply cap",
     "Bitcoin"
   ],
   "wiki_links": [
-    "Bitcoin",
-    "ISO/IEC 23257:2021",
     "NIST NISTIR",
-    "BlockchainTechnology",
+    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
-    "ConsensusDomain",
-    "BlockchainEntity"
+    "ConsensusDomain"
   ],
   "ontology": {
     "term_id": "BC-0070",
     "preferred_term": "Halving",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/blockchain#Halving",
-    "source_domain": "blockchain",
-    "domain": "blockchain",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
     "definition": "Block reward reduction event within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
     "scope_note": null,
     "status": "complete",
     "maturity": "mature",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-10-28",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "bc:Halving",
@@ -48,12 +41,8 @@
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [
-      "BlockchainEntity via is"
-    ],
-    "bridges_from": [
-      "Bitcoin via uses"
-    ],
+    "bridges_to": [],
+    "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
       "ConsensusDomain"
@@ -67,8 +56,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

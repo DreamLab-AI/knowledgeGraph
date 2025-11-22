@@ -1,0 +1,59 @@
+{
+  "id": "LoRA",
+  "title": "LoRA",
+  "content": "- ### OntologyBlock\n  id:: lora-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0254\n\t- preferred-term:: LoRA\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A parameter-efficient fine-tuning method that freezes pre-trained weights and injects trainable low-rank decomposition matrices into each layer of the transformer, dramatically reducing trainable parameters whilst maintaining performance. LoRA represents weight updates as the product of two low-rank matrices.\n\n## Academic Context\n\nLoRA has become the most widely used and effective PEFT method for adapting large language models, offering superior efficiency and performance compared to earlier techniques like adapters.\n\n**Primary Sources**:\n- Hu et al., foundational LoRA paper\n- Widely discussed in arXiv:2305.14314 (2023) - QLoRA paper\n\n## Key Characteristics\n\n- Freezes all pre-trained weights\n- Adds low-rank decomposition matrices (A, B)\n- Trainable parameters typically 0.1-1% of model\n- Can merge with base weights for zero inference overhead\n- Enables efficient multi-task deployment\n\n## Technical Details\n\n**Mathematical Formulation**:\n```\nW' = W₀ + ΔW = W₀ + BA\n\nWhere:\n- W₀: Frozen pre-trained weights (d × d)\n- B: Trainable matrix (d × r)\n- A: Trainable matrix (r × d)\n- r: Rank (typically 4-64)\n- r << d\n```\n\n**Training**:\n```\nh = W₀x + BAx = W₀x + Δx\n```\n\n**Inference** (after merging):\n```\nW_merged = W₀ + BA\nh = W_merged x  (no overhead)\n```\n\n## Usage in AI/ML\n\n\"LoRA is the most widely used and effective PEFT method for adapting large language models.\"\n\nApplications:\n- Fine-tuning large language models\n- Multi-task model deployment\n- Personalized model adaptation\n- Domain-specific specialization\n- Instruction tuning with limited resources\n\n## Related Concepts\n\n- **Parameter-Efficient Fine-Tuning (PEFT)**: Broader category\n- **QLoRA**: Quantized variant for extreme efficiency\n- **Adapter Modules**: Earlier PEFT approach\n- **Low-Rank Decomposition**: Mathematical foundation\n- **Matrix Factorization**: Core technique\n\n## Key Advantages\n\n**Efficiency**:\n- 10,000× fewer parameters than full fine-tuning\n- Reduced memory requirements\n- Faster training\n\n**Performance**:\n- Matches or exceeds full fine-tuning\n- No degradation on most tasks\n\n**Deployment**:\n- Zero inference overhead (after merging)\n- Easy multi-task switching (before merging)\n- Small storage per task\n\n## Typical Hyperparameters\n\n**Rank (r)**:\n- Low complexity tasks: 4-8\n- Medium complexity: 16-32\n- High complexity: 64+\n\n**Alpha (scaling factor)**: Often r or 2r\n\n**Target Modules**:\n- Attention weights (Q, K, V, O)\n- Feed-forward layers\n- All linear layers (maximum adaptation)\n\n## Training Process\n\n1. Freeze all pre-trained weights W₀\n2. Initialise A (Gaussian), B (zeros)\n3. Forward pass: h = W₀x + BAx\n4. Compute loss and gradients\n5. Update only A and B\n6. Optionally merge: W' = W₀ + BA\n\n## Comparison to Other PEFT Methods\n\n**vs. Full Fine-Tuning**:\n- 0.01% of parameters\n- Comparable performance\n- Much faster training\n\n**vs. Adapters**:\n- Lower parameters\n- No inference overhead (when merged)\n- Better performance\n\n**vs. Prefix Tuning**:\n- Different modification strategy\n- Can merge weights\n- Generally more efficient\n\n## Implementation Considerations\n\n**Memory Savings**:\n- Only store gradients for A, B\n- Can use smaller batch sizes\n- Enables larger models on same hardware\n\n**Multi-Task Deployment**:\n- Store separate (A, B) per task\n- Typically <10MB per task (vs. GB for full model)\n- Fast task switching\n\n## Historical Development\n\n- 2021: LoRA introduced\n- 2022: Rapid adoption in community\n- 2023: QLoRA extends to extreme efficiency\n- 2024+: Standard method for LLM fine-tuning\n- 2025: Hybrid approaches combining LoRA variants\n\n## Significance\n\nLoRA revolutionised efficient fine-tuning by demonstrating that low-rank adaptations could match full fine-tuning performance whilst requiring minimal resources, democratising access to large model customisation.\n\n## OWL Functional Syntax\n\n```clojure\n(Declaration (Class :LoRA))\n(SubClassOf :LoRA :ParameterEfficientFineTuning)\n(SubClassOf :LoRA\n  (ObjectSomeValuesFrom :freezes :PreTrainedWeights))\n(SubClassOf :LoRA\n  (ObjectSomeValuesFrom :injects :LowRankDecompositionMatrices))\n(SubClassOf :LoRA\n  (ObjectSomeValuesFrom :represents :WeightUpdates))\n(SubClassOf :LoRA\n  (ObjectSomeValuesFrom :canMergeWith :BaseWeights))\n(SubClassOf :LoRA\n  (ObjectSomeValuesFrom :enables :ZeroInferenceOverhead))\n(SubClassOf :LoRA\n  (DataPropertyAssertion :hasParameterFraction \"0.1-1%\"))\n\n(AnnotationAssertion rdfs:comment :LoRA\n  \"Parameter-efficient fine-tuning method injecting trainable low-rank decomposition matrices into transformer layers whilst freezing pre-trained weights\"@en)\n(AnnotationAssertion :hasAcademicSource :LoRA\n  \"Hu et al., foundational LoRA paper; discussed in QLoRA arXiv:2305.14314 (2023)\")\n```\n\n## UK English Notes\n\n- \"Whilst maintaining\" (British usage)\n- \"Optimisation\" in related contexts\n- \"Parameterisation\" (not \"parameterization\")\n\n**Last Updated**: 2025-10-27\n**Verification Status**: Verified against QLoRA paper (arXiv:2305.14314)\n\t- maturity:: draft\n\t- owl:class:: mv:LoRA\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t- belongsToDomain:: [[MetaverseDomain]]",
+  "backlinks": [
+    "AI-Augmented Software Engineering"
+  ],
+  "wiki_links": [
+    "ArtificialIntelligence",
+    "MetaverseDomain"
+  ],
+  "ontology": {
+    "term_id": "AI-0254",
+    "preferred_term": "LoRA",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#LoRA",
+    "source_domain": null,
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "A parameter-efficient fine-tuning method that freezes pre-trained weights and injects trainable low-rank decomposition matrices into each layer of the transformer, dramatically reducing trainable parameters whilst maintaining performance. LoRA represents weight updates as the product of two low-rank matrices.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:LoRA",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'ai'"
+      ]
+    }
+  }
+}

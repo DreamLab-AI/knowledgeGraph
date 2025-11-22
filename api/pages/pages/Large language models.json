@@ -1,58 +1,64 @@
 {
   "id": "Large language models",
   "title": "Large Language Models",
-  "content": "- ### OntologyBlock\n  id:: large-language-models-ontology\n  collapsed:: true\n\n  - **Identification**\n    - ontology:: true\n    - term-id:: AI-0850\n    - preferred-term:: Large Language Models\n    - source-domain:: ai\n    - status:: complete\n    - public-access:: true\n    - version:: 2.0.0\n    - last-updated:: 2025-01-15\n    - quality-score:: 0.92\n\n  - **Definition**\n    - definition:: [[Large Language Models]] (LLMs) are [[Foundation Models]] with billions to trillions of parameters trained on massive text corpora using [[Transformer]] architectures and [[Self-Supervised Learning]], capable of performing diverse [[Natural Language Processing]] tasks through [[Few-Shot Learning]], [[Zero-Shot Learning]], and [[Prompt Engineering]]. LLMs represent a paradigm shift in [[Artificial Intelligence]], demonstrating emergent capabilities in reasoning, code generation, multilingual understanding, and complex task decomposition.\n    - maturity:: mature\n    - source:: [[OpenAI Research]], [[Google DeepMind]], [[Anthropic]], [[Meta AI Research]], [[NIST AI Standards]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:LargeLanguageModel\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Process\n    - owl:inferred-class:: ai:VirtualProcess\n    - belongsToDomain:: [[AI-GroundedDomain]], [[ComputationAndIntelligenceDomain]], [[DataManagementDomain]]\n\n  - #### OWL Restrictions\n    \n\n  - #### CrossDomainBridges\n    - bridges-from:: [[VoiceInteraction]] via has-part\n    - dt:enables:: [[Intelligent Npc]]\n    - dt:enables:: [[DigitalAvatar]]\n\n  -\n### Relationships\n- is-subclass-of:: [[ModelArchitecture]]",
+  "content": "- ### OntologyBlock\n  id:: large-language-models-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0850\n\t- preferred-term:: Large Language Models\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: [[Large Language Models]] (LLMs) are [[Foundation Models]] with billions to trillions of parameters trained on massive text corpora using [[Transformer]] architectures and [[Self-Supervised Learning]], capable of performing diverse [[Natural Language Processing]] tasks through [[Few-Shot Learning]], [[Zero-Shot Learning]], and [[Prompt Engineering]]. LLMs represent a paradigm shift in [[Artificial Intelligence]], demonstrating emergent capabilities in reasoning, code generation, multilingual understanding, and complex task decomposition.\n\t- source:: [[OpenAI Research]], [[Google DeepMind]], [[Anthropic]], [[Meta AI Research]], [[NIST AI Standards]]\n\t- maturity:: mature\n\t- owl:class:: ai:LargeLanguageModel\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: ai:VirtualProcess\n\t- belongsToDomain:: [[AI-GroundedDomain]], [[ComputationAndIntelligenceDomain]], [[DataManagementDomain]]\n\t- #### Relationships\n\t  id:: large-language-models-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[ModelArchitecture]]\n\t- #### CrossDomainBridges\n\t  id:: large-language-models-bridges\n\t  collapsed:: true\n\t\t- dt:enables:: [[DigitalAvatar]]\n\t\t- dt:enables:: [[Intelligent Npc]]",
   "backlinks": [
+    "Logseq Test API Calls from Python",
+    "Intelligent Npc",
     "Artificial Intelligence",
     "Runes and Glyphs",
-    "Education Metaverse"
+    "Education Metaverse",
+    "Knowledge Distillation for Edge (AI-0443)",
+    "HumanRobotInteraction",
+    "Anthropic Claude"
   ],
   "wiki_links": [
     "ModelArchitecture",
+    "Google DeepMind",
+    "Natural Language Processing",
+    "Transformer",
+    "Large Language Models",
+    "Self-Supervised Learning",
+    "DataManagementDomain",
+    "OpenAI Research",
+    "NIST AI Standards",
     "Artificial Intelligence",
-    "ComputationAndIntelligenceDomain",
+    "DigitalAvatar",
+    "Foundation Models",
+    "Zero-Shot Learning",
+    "Few-Shot Learning",
+    "AI-GroundedDomain",
     "Prompt Engineering",
     "Intelligent Npc",
-    "Transformer",
-    "Zero-Shot Learning",
-    "VoiceInteraction",
-    "Self-Supervised Learning",
-    "Foundation Models",
-    "Google DeepMind",
-    "DataManagementDomain",
-    "NIST AI Standards",
-    "AI-GroundedDomain",
+    "ComputationAndIntelligenceDomain",
     "Anthropic",
-    "DigitalAvatar",
-    "Meta AI Research",
-    "Large Language Models",
-    "Natural Language Processing",
-    "Few-Shot Learning",
-    "OpenAI Research"
+    "Meta AI Research"
   ],
   "ontology": {
     "term_id": "AI-0850",
     "preferred_term": "Large Language Models",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/ai#LargeLanguageModel",
-    "source_domain": "ai",
+    "source_domain": null,
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
     "definition": "[[Large Language Models]] (LLMs) are [[Foundation Models]] with billions to trillions of parameters trained on massive text corpora using [[Transformer]] architectures and [[Self-Supervised Learning]], capable of performing diverse [[Natural Language Processing]] tasks through [[Few-Shot Learning]], [[Zero-Shot Learning]], and [[Prompt Engineering]]. LLMs represent a paradigm shift in [[Artificial Intelligence]], demonstrating emergent capabilities in reasoning, code generation, multilingual understanding, and complex task decomposition.",
     "scope_note": null,
     "status": "complete",
     "maturity": "mature",
-    "version": "2.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-01-15",
-    "authority_score": 0.95,
-    "quality_score": 0.92,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "ai:LargeLanguageModel",
     "owl_physicality": "VirtualEntity",
     "owl_role": "Process",
     "owl_inferred_class": "ai:VirtualProcess",
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "ModelArchitecture"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -60,9 +66,7 @@
     "enables": [],
     "relates_to": [],
     "bridges_to": [],
-    "bridges_from": [
-      "VoiceInteraction via has"
-    ],
+    "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
       "AI-GroundedDomain",
@@ -80,7 +84,8 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: source-domain",
+        "Missing required property: last-updated"
       ]
     }
   }

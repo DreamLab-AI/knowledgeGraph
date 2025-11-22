@@ -1,32 +1,31 @@
 {
   "id": "AI-0444-embedded-ai-frameworks",
-  "title": "Embedded AI Frameworks (AI-0444)",
-  "content": "- ### OntologyBlock\n  id:: embedded-ai-frameworks-(ai-0444)-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0444\n    - preferred-term:: Embedded AI Frameworks (AI-0444)\n    - source-domain:: ai-grounded\n    - status:: in-progress\n    - version:: 1.0\n    - last-updated:: 2025-10-29\n\n  - **Definition**\n    - definition:: Embedded AI Frameworks provide software infrastructure and tooling optimized for deploying and running machine learning models on resource-constrained embedded systems and edge devices. These frameworks target footprints of 100KB-10MB runtime size, supporting inference with minimal RAM (50-500MB), tailored for microcontrollers, mobile processors, and single-board computers. TensorFlow Lite achieves <500KB core runtime, enabling models on 1MB-RAM Arduino boards; ONNX Runtime provides hardware-agnostic model execution with optimized paths for mobile and embedded targets; OpenVINO targets edge deployment across Intel and ARM processors with automated optimization pipelines. Embedded frameworks provide model quantization (INT8/FP16), pruning integration, hardware acceleration abstraction supporting NPUs/FPGAs/DSPs, and optimized inference kernels. They eliminate unnecessary functionality from full TensorFlow/PyTorch: no graph construction, limited dynamic operations, streamlined memory allocation avoiding heap fragmentation on embedded systems. Frameworks support model format conversion (ONNX, SavedModel) ensuring compatibility across platforms. Delegation APIs abstract hardware accelerators, allowing single models to efficiently utilize specialized processors without model-specific rewriting. Memory optimization including input/output tensor reuse, weight sharing, and activation caching reduces peak memory footprint. Benchmarking tools enable latency/throughput/power profiling across diverse hardware. Popular frameworks include MicroTVM (extreme embedded, microcontrollers), CoreML (Apple ecosystem), Qualcomm SNPE (mobile SoCs), and Xilinx embedded AI tools. Embedded frameworks democratize edge AI deployment, eliminating low-level optimization burden and enabling developers to focus on application logic rather than hardware-specific implementation. The ecosystem continues evolving supporting emerging paradigms like continual learning and neuromorphic computing.\n    - maturity:: mature\n    - source:: \n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: aigo:EmbeddedAIFrameworks\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Process\n    - owl:inferred-class:: aigo:VirtualProcess\n    - belongsToDomain:: [[AIEthicsDomain]]\n    - implementedInLayer:: [[ConceptualLayer]]\n\n  - #### Relationships\n    id:: embedded-ai-frameworks-(ai-0444)-relationships\n\n  - #### OWL Axioms\n    id:: embedded-ai-frameworks-(ai-0444)-owl-axioms\n    collapsed:: true\n    - ```clojure\n      (Declaration (Class :EmbeddedAIFrameworks))\n(AnnotationAssertion rdfs:label :EmbeddedAIFrameworks \"Embedded AI Frameworks\"@en)\n(SubClassOf :EmbeddedAIFrameworks :AIGovernancePrinciple)\n\n;; Framework Capabilities\n(SubClassOf :EmbeddedAIFrameworks\n  (ObjectSomeValuesFrom :supports :ModelOptimization))\n(SubClassOf :EmbeddedAIFrameworks\n  (ObjectSomeValuesFrom :supports :HardwareAcceleration))\n(SubClassOf :EmbeddedAIFrameworks\n  (ObjectSomeValuesFrom :provides :InferenceEngine))\n\n;; Resource Footprint\n(DataPropertyAssertion :hasRuntimeSizeKB :EmbeddedAIFrameworks \"100\"^^xsd:integer)\n(DataPropertyAssertion :hasRAMRequirementKB :EmbeddedAIFrameworks \"50\"^^xsd:integer)\n      ```\n\n### Relationships\n- is-subclass-of:: [[EdgeAISystem]]",
+  "title": "Embedded AI Frameworks",
+  "content": "- ### OntologyBlock\n  id:: embedded-ai-frameworks-(ai-0444)-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0444\n\t- preferred-term:: Embedded AI Frameworks\n\t- source-domain:: ai\n\t- status:: in\n\t- public-access:: true\n\t- definition:: Embedded AI Frameworks provide software infrastructure and tooling optimized for deploying and running machine learning models on resource-constrained embedded systems and edge devices. These frameworks target footprints of 100KB-10MB runtime size, supporting inference with minimal RAM (50-500MB), tailored for microcontrollers, mobile processors, and single-board computers. TensorFlow Lite achieves <500KB core runtime, enabling models on 1MB-RAM Arduino boards; ONNX Runtime provides hardware-agnostic model execution with optimized paths for mobile and embedded targets; OpenVINO targets edge deployment across Intel and ARM processors with automated optimization pipelines. Embedded frameworks provide model quantization (INT8/FP16), pruning integration, hardware acceleration abstraction supporting NPUs/FPGAs/DSPs, and optimized inference kernels. They eliminate unnecessary functionality from full TensorFlow/PyTorch: no graph construction, limited dynamic operations, streamlined memory allocation avoiding heap fragmentation on embedded systems. Frameworks support model format conversion (ONNX, SavedModel) ensuring compatibility across platforms. Delegation APIs abstract hardware accelerators, allowing single models to efficiently utilize specialized processors without model-specific rewriting. Memory optimization including input/output tensor reuse, weight sharing, and activation caching reduces peak memory footprint. Benchmarking tools enable latency/throughput/power profiling across diverse hardware. Popular frameworks include MicroTVM (extreme embedded, microcontrollers), CoreML (Apple ecosystem), Qualcomm SNPE (mobile SoCs), and Xilinx embedded AI tools. Embedded frameworks democratize edge AI deployment, eliminating low-level optimization burden and enabling developers to focus on application logic rather than hardware-specific implementation. The ecosystem continues evolving supporting emerging paradigms like continual learning and neuromorphic computing.\n\t- maturity:: mature\n\t- owl:class:: ai:EmbeddedAIFrameworks\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: aigo:VirtualProcess\n\t- belongsToDomain:: [[AIEthicsDomain]]\n\t- implementedInLayer:: [[ConceptualLayer]]",
   "backlinks": [],
   "wiki_links": [
-    "EdgeAISystem",
     "ConceptualLayer",
     "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "AI-0444",
-    "preferred_term": "Embedded AI Frameworks (AI-0444)",
+    "preferred_term": "Embedded AI Frameworks",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "ai-grounded",
-    "domain": "ai-grounded",
-    "domain_full_name": "",
+    "iri": "http://narrativegoldmine.com/ai#EmbeddedAIFrameworks",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
     "definition": "Embedded AI Frameworks provide software infrastructure and tooling optimized for deploying and running machine learning models on resource-constrained embedded systems and edge devices. These frameworks target footprints of 100KB-10MB runtime size, supporting inference with minimal RAM (50-500MB), tailored for microcontrollers, mobile processors, and single-board computers. TensorFlow Lite achieves <500KB core runtime, enabling models on 1MB-RAM Arduino boards; ONNX Runtime provides hardware-agnostic model execution with optimized paths for mobile and embedded targets; OpenVINO targets edge deployment across Intel and ARM processors with automated optimization pipelines. Embedded frameworks provide model quantization (INT8/FP16), pruning integration, hardware acceleration abstraction supporting NPUs/FPGAs/DSPs, and optimized inference kernels. They eliminate unnecessary functionality from full TensorFlow/PyTorch: no graph construction, limited dynamic operations, streamlined memory allocation avoiding heap fragmentation on embedded systems. Frameworks support model format conversion (ONNX, SavedModel) ensuring compatibility across platforms. Delegation APIs abstract hardware accelerators, allowing single models to efficiently utilize specialized processors without model-specific rewriting. Memory optimization including input/output tensor reuse, weight sharing, and activation caching reduces peak memory footprint. Benchmarking tools enable latency/throughput/power profiling across diverse hardware. Popular frameworks include MicroTVM (extreme embedded, microcontrollers), CoreML (Apple ecosystem), Qualcomm SNPE (mobile SoCs), and Xilinx embedded AI tools. Embedded frameworks democratize edge AI deployment, eliminating low-level optimization burden and enabling developers to focus on application logic rather than hardware-specific implementation. The ecosystem continues evolving supporting emerging paradigms like continual learning and neuromorphic computing.",
     "scope_note": null,
-    "status": "in-progress",
+    "status": "in",
     "maturity": "mature",
-    "version": "1.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-10-29",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": "aigo:EmbeddedAIFrameworks",
+    "owl_class": "ai:EmbeddedAIFrameworks",
     "owl_physicality": "VirtualEntity",
     "owl_role": "Process",
     "owl_inferred_class": "aigo:VirtualProcess",
@@ -46,14 +45,12 @@
     "implemented_in_layer": [
       "ConceptualLayer"
     ],
-    "source": [
-      "- authority-score:: 0.95"
-    ],
+    "source": [],
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'aigo' doesn't match source-domain 'ai-grounded'"
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

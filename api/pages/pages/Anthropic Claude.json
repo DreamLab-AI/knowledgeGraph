@@ -1,0 +1,58 @@
+{
+  "id": "Anthropic Claude",
+  "title": "Anthropic Claude",
+  "content": "- ### OntologyBlock\n  id:: anthropic-claude-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0401\n\t- preferred-term:: Anthropic Claude\n\t- source-domain:: ai\n\t- owl:class:: ai:AnthropicClaude\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Anthropic Claude is a family of large language models designed for complex, multi-step tasks with large context windows.\n- ## Models\n\t- ### Claude 3.5 Sonnet\n\t\t- The latest and most advanced model in the Claude 3.5 family. It is designed for complex, multi-step tasks and can generate high-quality text and code.\n\t- ### Claude 3 Opus\n\t\t- A powerful model that is well-suited for a wide range of tasks.\n\t- ### Claude 3 Haiku\n\t\t- A smaller, faster model that is ideal for real-time applications.\n- ## Features\n\t- **Large context window:** Claude models have a large context window, which allows them to process and understand long documents and conversations.\n\t- **Multilingual:** Claude models can understand and generate text in multiple languages.\n\t- **Code generation:** Claude models can generate code in a variety of programming languages.\n\t- **Safety:** Claude models are designed to be safe and avoid generating harmful or offensive content.\n- ## Resources\n\t- ### Official Website\n\t\t- [Anthropic](https://www.anthropic.com/)\n\t- ### Documentation\n\t\t- [Claude Documentation](https://docs.anthropic.com/claude/docs)\n\t- ### Prompt Library\n\t\t- [Claude Prompt Library](https://docs.anthropic.com/claude/prompt-library)\n\t- ### Model Card\n\t\t- [Claude 3 Model Card](https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf)\n- ## Examples\n\t- [Mancala web app coded in 25 seconds](https://x.com/alliekmiller/status/1803818951706579307)\n\t- [Mario clone made with geometric shapes](https://x.com/skirano/status/1803809495811858807)\n- ## See Also\n\t- [[Large language models]]\n\t- [[OpenAI]]\n\t- [[Google]]\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Education Metaverse"
+  ],
+  "wiki_links": [
+    "OpenAI",
+    "Large language models",
+    "Google"
+  ],
+  "ontology": {
+    "term_id": "AI-0401",
+    "preferred_term": "Anthropic Claude",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#AnthropicClaude",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Anthropic Claude is a family of large language models designed for complex, multi-step tasks with large context windows.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:AnthropicClaude",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

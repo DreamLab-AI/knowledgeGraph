@@ -1,0 +1,62 @@
+{
+  "id": "Responsible AI",
+  "title": "Responsible AI",
+  "content": "- ### OntologyBlock\n  id:: responsible-ai-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0104\n\t- preferred-term:: Responsible AI\n\t- source-domain:: ai\n\t- owl:class:: ai:ResponsibleAI\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: The practice of designing, developing, deploying, and operating artificial intelligence systems with explicit attention to their societal impacts, ethical implications, and potential harms, incorporating accountability mechanisms, stakeholder engagement, risk management, transparency, and governance throughout the AI lifecycle to ensure that AI systems are developed and used in ways that benefit individuals and society whilst minimising negative consequences, respecting human rights and democratic values, and maintaining clear lines of responsibility for AI-driven outcomes.\n\t- #### Relationships\n\t  id:: responsible-ai-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AIGovernance]]\n\n## Responsible AI\n\nResponsible AI refers to the practice of designing, developing, deploying, and operating artificial intelligence systems with explicit attention to their societal impacts, ethical implications, and potential harms, incorporating accountability mechanisms, stakeholder engagement, risk management, transparency, and governance throughout the ai lifecycle to ensure that ai systems are developed and used in ways that benefit individuals and society whilst minimising negative consequences, respecting human rights and democratic values, and maintaining clear lines of responsibility for ai-driven outcomes.\n\n- Industry adoption and implementations\n\t- Notable organisations and platforms\n\t\t- Microsoft’s Responsible AI Standard is widely referenced, with its six principles—fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability—now embedded in Azure Machine Learning and other enterprise platforms\n\t\t- Google’s AI Principles and IBM’s governance frameworks are similarly influential, with increasing convergence on core RAI tenets\n\t\t- The Responsible AI Institute (RAI) continues to drive global collaboration, offering certification and audit services for AI systems\n\t- UK and North England examples where relevant\n\t\t- The Alan Turing Institute in London leads national RAI research, collaborating with universities and industry partners across the UK\n\t\t- In North England, the University of Manchester’s Centre for Data Ethics and Innovation has become a hub for RAI research, focusing on healthcare and public sector applications\n\t\t- Leeds City Council has piloted RAI frameworks in local government AI projects, ensuring transparency and accountability in automated decision-making\n\t\t- Newcastle University’s Institute for Data Science and Artificial Intelligence is exploring RAI in smart city initiatives, with a focus on community engagement and ethical data governance\n- Technical capabilities and limitations\n\t- Modern RAI tools include AI impact assessments, model cards, datasheets for datasets, and explainability dashboards, which help operationalise ethical principles\n\t- Limitations persist in areas such as real-time bias detection, cross-cultural fairness, and the scalability of human oversight mechanisms\n- Standards and frameworks\n\t- The OECD AI Principles, ISO/IEC 42001 (AI management systems), and the EU AI Act provide comprehensive guidance for RAI implementation\n\t- The NIST AI Risk Management Framework (AI RMF) is increasingly adopted for risk assessment and mitigation in both public and private sectors\n\n## Technical Details\n\n- **Id**: responsible-ai-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Research & Literature\n\n- Key academic papers and sources\n\t- Floridi, L., Cowls, J., Beltrametti, M., et al. (2018). \"AI4People—An Ethical Framework for a Good AI Society: Opportunities, Risks, Principles, and Recommendations.\" *Minds and Machines*, 28(4), 689–707. https://doi.org/10.1007/s11023-018-9482-5\n\t- Jobin, A., Ienca, M., & Vayena, E. (2019). \"The Global Landscape of AI Ethics Guidelines.\" *Nature Machine Intelligence*, 1(9), 389–399. https://doi.org/10.1038/s42256-019-0088-2\n\t- Mittelstadt, B. D. (2019). \"Principles Alone Cannot Guarantee Ethical AI.\" *Nature Machine Intelligence*, 1(11), 501–507. https://doi.org/10.1038/s42256-019-0114-y\n\t- Wachter, S., Mittelstadt, B., & Floridi, L. (2017). \"Why a Right to Explanation of Automated Decision-Making Does Not Exist in the General Data Protection Regulation.\" *International Data Privacy Law*, 7(2), 76–99. https://doi.org/10.1093/idpl/ipx005\n- Ongoing research directions\n\t- Exploring the intersection of RAI with emerging technologies such as generative AI and autonomous systems\n\t- Investigating the role of public participation and stakeholder engagement in AI governance\n\t- Developing more robust metrics for fairness, transparency, and accountability in AI systems\n\n## UK Context\n\n- British contributions and implementations\n\t- The UK government’s Office for Artificial Intelligence and the Centre for Data Ethics and Innovation have played a pivotal role in shaping national RAI policy\n\t- The Alan Turing Institute’s RAI programme supports interdisciplinary research and public engagement, fostering a culture of responsible innovation\n- North England innovation hubs (if relevant)\n\t- The University of Manchester’s Centre for Data Ethics and Innovation collaborates with local NHS trusts to ensure ethical AI deployment in healthcare\n\t- Leeds City Council’s RAI pilot projects have set a precedent for transparent and accountable AI use in local government\n\t- Newcastle University’s Institute for Data Science and Artificial Intelligence is at the forefront of RAI research in smart city applications, with a focus on community engagement and ethical data governance\n- Regional case studies\n\t- Manchester’s AI for Health initiative has implemented RAI principles in predictive analytics for patient care, ensuring fairness and transparency in algorithmic decision-making\n\t- Leeds’ Smart City programme has integrated RAI frameworks into urban planning and public service delivery, with a strong emphasis on stakeholder engagement and public trust\n\n## Future Directions\n\n- Emerging trends and developments\n\t- Increasing integration of RAI into regulatory frameworks, with a focus on enforceable standards and compliance mechanisms\n\t- Growing emphasis on cross-sector collaboration and international harmonisation of RAI principles\n- Anticipated challenges\n\t- Balancing innovation with ethical and regulatory constraints\n\t- Addressing the global digital divide in RAI adoption and capacity-building\n- Research priorities\n\t- Developing more sophisticated tools for real-time bias detection and mitigation\n\t- Exploring the ethical implications of AI in emerging domains such as climate change and global health\n\n## References\n\n1. Floridi, L., Cowls, J., Beltrametti, M., et al. (2018). \"AI4People—An Ethical Framework for a Good AI Society: Opportunities, Risks, Principles, and Recommendations.\" *Minds and Machines*, 28(4), 689–707. https://doi.org/10.1007/s11023-018-9482-5\n2. Jobin, A., Ienca, M., & Vayena, E. (2019). \"The Global Landscape of AI Ethics Guidelines.\" *Nature Machine Intelligence*, 1(9), 389–399. https://doi.org/10.1038/s42256-019-0088-2\n3. Mittelstadt, B. D. (2019). \"Principles Alone Cannot Guarantee Ethical AI.\" *Nature Machine Intelligence*, 1(11), 501–507. https://doi.org/10.1038/s42256-019-0114-y\n4. Wachter, S., Mittelstadt, B., & Floridi, L. (2017). \"Why a Right to Explanation of Automated Decision-Making Does Not Exist in the General Data Protection Regulation.\" *International Data Privacy Law*, 7(2), 76–99. https://doi.org/10.1093/idpl/ipx005\n5. OECD (2019). *OECD Principles on Artificial Intelligence*. https://www.oecd.org/going-digital/ai/principles/\n6. ISO/IEC JTC 1/SC 42 (2023). *ISO/IEC 42001:2023 Information technology — Artificial intelligence — AI management system*. https://www.iso.org/standard/81234.html\n7. NIST (2023). *AI Risk Management Framework (AI RMF)*. https://www.nist.gov/itl/ai-risk-management-framework\n8. Alan Turing Institute (2025). *Responsible AI Programme*. https://www.turing.ac.uk/research/research-programmes/responsible-ai\n9. University of Manchester (2025). *Centre for Data Ethics and Innovation*. https://www.manchester.ac.uk/research/centres/data-ethics-and-innovation/\n10. Leeds City Council (2025). *Smart City and Responsible AI Initiatives*. https://www.leeds.gov.uk/smartcity\n11. Newcastle University (2025). *Institute for Data Science and Artificial Intelligence*. https://www.ncl.ac.uk/idsai/\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "AI Governance Framework",
+    "AI Model Card",
+    "Ethics & Law Layer",
+    "ETSI_Domain_Ethics_&_Law",
+    "AI Governance Principle",
+    "Safety Laser Scanner"
+  ],
+  "wiki_links": [
+    "AIGovernance"
+  ],
+  "ontology": {
+    "term_id": "AI-0104",
+    "preferred_term": "Responsible AI",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#ResponsibleAI",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "The practice of designing, developing, deploying, and operating artificial intelligence systems with explicit attention to their societal impacts, ethical implications, and potential harms, incorporating accountability mechanisms, stakeholder engagement, risk management, transparency, and governance throughout the AI lifecycle to ensure that AI systems are developed and used in ways that benefit individuals and society whilst minimising negative consequences, respecting human rights and democratic values, and maintaining clear lines of responsibility for AI-driven outcomes.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:ResponsibleAI",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "AIGovernance"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

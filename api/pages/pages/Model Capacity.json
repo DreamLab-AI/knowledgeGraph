@@ -1,34 +1,37 @@
 {
   "id": "Model Capacity",
   "title": "Model Capacity",
-  "content": "- ### OntologyBlock\n  id:: model-capacity-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0053\n\t- preferred-term:: Model Capacity\n\t- source-domain:: ai\n\t- status:: draft\n\t- public-access:: true\n\n\n\n### Relationships\n- is-subclass-of:: [[Model]]\n\n## Academic Context\n\n- Model capacity refers to the ability of a machine learning model, particularly neural networks, to represent a wide variety of functions or mappings from inputs to outputs.\n  - It is primarily determined by architectural parameters such as the number of layers (depth) and the number of nodes (width) within those layers.\n  - A model with insufficient capacity tends to underfit, failing to capture the underlying patterns in the training data, while excessive capacity risks overfitting, memorising training data and losing generalisation ability.\n- The theoretical foundation of model capacity is linked to concepts such as the Vapnik–Chervonenkis (VC) dimension, which formalises the complexity of function classes a model can represent.\n- Advances in deep learning have shown that increasing depth can efficiently increase capacity, enabling models to learn complex functions with fewer parameters than shallow but wide networks, provided appropriate training algorithms are used.\n\n## Current Landscape (2025)\n\n- Industry adoption of models with carefully controlled capacity is widespread across sectors including finance, healthcare, and technology.\n  - Organisations such as DeepMind, OpenAI, and Google continue to push the boundaries of model capacity, balancing size with efficiency and generalisation.\n  - In the UK, tech hubs in London and Cambridge lead in deploying large-scale models, while Northern England cities like Manchester and Leeds are growing centres for AI startups focusing on practical applications of machine learning.\n- Technical capabilities now include dynamic capacity adjustment techniques, such as neural architecture search and pruning, which optimise model size post-training to improve deployment efficiency.\n- Limitations remain in interpretability and computational cost, with larger capacity models demanding significant hardware resources and energy consumption.\n- Standards and frameworks for model capacity management are emerging, emphasising reproducibility, fairness, and robustness, with contributions from bodies such as the Alan Turing Institute and UK government AI initiatives.\n\n## Research & Literature\n\n- Key academic works include:\n  - Anthony, M., Bartlett, P. L., & Shawe-Taylor, J. (1999). *Neural Network Learning: Theoretical Foundations*. Cambridge University Press. DOI: 10.1017/CBO9780511623958\n  - Zhang, C., Bengio, S., Hardt, M., Recht, B., & Vinyals, O. (2017). Understanding deep learning requires rethinking generalization. *International Conference on Learning Representations (ICLR)*. URL: https://arxiv.org/abs/1611.03530\n  - Neyshabur, B., Tomioka, R., & Srebro, N. (2015). Norm-based capacity control in neural networks. *Conference on Learning Theory (COLT)*. URL: https://arxiv.org/abs/1503.00036\n- Ongoing research explores:\n  - The interplay between capacity, generalisation, and optimisation dynamics.\n  - Methods to quantify effective capacity beyond parameter count, including information-theoretic measures.\n  - Techniques for adaptive capacity control during training to prevent overfitting without manual tuning.\n\n## UK Context\n\n- The UK has made significant contributions to understanding and applying model capacity concepts, with institutions like the University of Manchester and the University of Leeds hosting leading AI research groups.\n- Northern England innovation hubs are increasingly active in AI, with Manchester’s AI Seed Fund supporting startups that develop efficient models tailored for industrial applications.\n- Regional case studies include collaborations between Sheffield’s Advanced Manufacturing Research Centre and AI firms to deploy capacity-optimised models for predictive maintenance in manufacturing.\n\n## Future Directions\n\n- Emerging trends include:\n  - Integration of model capacity control with automated machine learning (AutoML) pipelines to streamline model development.\n  - Development of energy-efficient models that maintain high capacity while reducing carbon footprint, a growing concern in the UK and globally.\n- Anticipated challenges:\n  - Balancing model capacity with explainability and ethical AI requirements.\n  - Managing capacity in federated and edge learning scenarios, particularly relevant for UK industries adopting distributed AI.\n- Research priorities focus on:\n  - Creating robust metrics for effective capacity.\n  - Designing training algorithms that dynamically adjust capacity in response to data complexity.\n  - Enhancing UK-specific datasets and benchmarks to reflect regional diversity and application needs.\n\n## References\n\n1. Anthony, M., Bartlett, P. L., & Shawe-Taylor, J. (1999). *Neural Network Learning: Theoretical Foundations*. Cambridge University Press. https://doi.org/10.1017/CBO9780511623958\n2. Zhang, C., Bengio, S., Hardt, M., Recht, B., & Vinyals, O. (2017). Understanding deep learning requires rethinking generalization. *International Conference on Learning Representations (ICLR)*. https://arxiv.org/abs/1611.03530\n3. Neyshabur, B., Tomioka, R., & Srebro, N. (2015). Norm-based capacity control in neural networks. *Conference on Learning Theory (COLT)*. https://arxiv.org/abs/1503.00036\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: unknown-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0053\n\t- preferred-term:: Model Capacity\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: ### Primary Definition\n\t- maturity:: draft\n\t- owl:class:: mv:ModelCapacity\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: unknown-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Model]]\n\n## Academic Context\n\n- Model capacity refers to the ability of a machine learning model, particularly neural networks, to represent a wide variety of functions or mappings from inputs to outputs.\n  - It is primarily determined by architectural parameters such as the number of layers (depth) and the number of nodes (width) within those layers.\n  - A model with insufficient capacity tends to underfit, failing to capture the underlying patterns in the training data, while excessive capacity risks overfitting, memorising training data and losing generalisation ability.\n- The theoretical foundation of model capacity is linked to concepts such as the Vapnik–Chervonenkis (VC) dimension, which formalises the complexity of function classes a model can represent.\n- Advances in deep learning have shown that increasing depth can efficiently increase capacity, enabling models to learn complex functions with fewer parameters than shallow but wide networks, provided appropriate training algorithms are used.\n\n## Current Landscape (2025)\n\n- Industry adoption of models with carefully controlled capacity is widespread across sectors including finance, healthcare, and technology.\n  - Organisations such as DeepMind, OpenAI, and Google continue to push the boundaries of model capacity, balancing size with efficiency and generalisation.\n  - In the UK, tech hubs in London and Cambridge lead in deploying large-scale models, while Northern England cities like Manchester and Leeds are growing centres for AI startups focusing on practical applications of machine learning.\n- Technical capabilities now include dynamic capacity adjustment techniques, such as neural architecture search and pruning, which optimise model size post-training to improve deployment efficiency.\n- Limitations remain in interpretability and computational cost, with larger capacity models demanding significant hardware resources and energy consumption.\n- Standards and frameworks for model capacity management are emerging, emphasising reproducibility, fairness, and robustness, with contributions from bodies such as the Alan Turing Institute and UK government AI initiatives.\n\n## Research & Literature\n\n- Key academic works include:\n  - Anthony, M., Bartlett, P. L., & Shawe-Taylor, J. (1999). *Neural Network Learning: Theoretical Foundations*. Cambridge University Press. DOI: 10.1017/CBO9780511623958\n  - Zhang, C., Bengio, S., Hardt, M., Recht, B., & Vinyals, O. (2017). Understanding deep learning requires rethinking generalization. *International Conference on Learning Representations (ICLR)*. URL: https://arxiv.org/abs/1611.03530\n  - Neyshabur, B., Tomioka, R., & Srebro, N. (2015). Norm-based capacity control in neural networks. *Conference on Learning Theory (COLT)*. URL: https://arxiv.org/abs/1503.00036\n- Ongoing research explores:\n  - The interplay between capacity, generalisation, and optimisation dynamics.\n  - Methods to quantify effective capacity beyond parameter count, including information-theoretic measures.\n  - Techniques for adaptive capacity control during training to prevent overfitting without manual tuning.\n\n## UK Context\n\n- The UK has made significant contributions to understanding and applying model capacity concepts, with institutions like the University of Manchester and the University of Leeds hosting leading AI research groups.\n- Northern England innovation hubs are increasingly active in AI, with Manchester’s AI Seed Fund supporting startups that develop efficient models tailored for industrial applications.\n- Regional case studies include collaborations between Sheffield’s Advanced Manufacturing Research Centre and AI firms to deploy capacity-optimised models for predictive maintenance in manufacturing.\n\n## Future Directions\n\n- Emerging trends include:\n  - Integration of model capacity control with automated machine learning (AutoML) pipelines to streamline model development.\n  - Development of energy-efficient models that maintain high capacity while reducing carbon footprint, a growing concern in the UK and globally.\n- Anticipated challenges:\n  - Balancing model capacity with explainability and ethical AI requirements.\n  - Managing capacity in federated and edge learning scenarios, particularly relevant for UK industries adopting distributed AI.\n- Research priorities focus on:\n  - Creating robust metrics for effective capacity.\n  - Designing training algorithms that dynamically adjust capacity in response to data complexity.\n  - Enhancing UK-specific datasets and benchmarks to reflect regional diversity and application needs.\n\n## References\n\n1. Anthony, M., Bartlett, P. L., & Shawe-Taylor, J. (1999). *Neural Network Learning: Theoretical Foundations*. Cambridge University Press. https://doi.org/10.1017/CBO9780511623958\n2. Zhang, C., Bengio, S., Hardt, M., Recht, B., & Vinyals, O. (2017). Understanding deep learning requires rethinking generalization. *International Conference on Learning Representations (ICLR)*. https://arxiv.org/abs/1611.03530\n3. Neyshabur, B., Tomioka, R., & Srebro, N. (2015). Norm-based capacity control in neural networks. *Conference on Learning Theory (COLT)*. https://arxiv.org/abs/1503.00036\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [],
   "wiki_links": [
-    "Model"
+    "Model",
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "AI-0053",
     "preferred_term": "Model Capacity",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "ai",
+    "iri": "http://narrativegoldmine.com/metaverse#ModelCapacity",
+    "source_domain": null,
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
-    "definition": null,
+    "definition": "### Primary Definition",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "draft",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
+    "owl_class": "mv:ModelCapacity",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Model"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -38,18 +41,17 @@
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "MetaverseDomain"
+    ],
     "implemented_in_layer": [],
     "source": [],
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "owl:class namespace 'mv' doesn't match source-domain 'ai'"
       ]
     }
   }

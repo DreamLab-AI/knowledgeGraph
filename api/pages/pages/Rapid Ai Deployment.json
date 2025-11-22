@@ -1,28 +1,27 @@
 {
   "id": "Rapid Ai Deployment",
   "title": "Rapid AI Deployment",
-  "content": "- ### OntologyBlock\n  id:: rapidaideployment-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0876\n    - filename-history:: [\"AI-0876-rapidaideployment.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[ArtificialIntelligenceTechnology]]\n    - term-id:: AI-0876\n    - preferred-term:: Rapid AI Deployment\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:RapidAiDeployment\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### Relationships\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :RapidAiDeployment))\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :RapidAiDeployment \"Rapid AI Deployment\"@en)\n      ```\n\n- ## About Rapid AI Deployment\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: rapidaideployment-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0876\n\t- preferred-term:: Rapid AI Deployment\n\t- status:: complete\n\t- public-access:: true\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: ai:RapidAiDeployment\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [],
   "wiki_links": [
-    "Artificial Intelligence",
-    "ArtificialIntelligenceTechnology"
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0876",
     "preferred_term": "Rapid AI Deployment",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/ai#RapidAiDeployment",
-    "source_domain": "ai",
+    "source_domain": null,
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
-    "definition": "- maturity:: established",
+    "definition": null,
     "scope_note": null,
     "status": "complete",
     "maturity": "established",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-11-13",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "ai:RapidAiDeployment",
@@ -49,6 +48,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

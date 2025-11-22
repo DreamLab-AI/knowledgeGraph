@@ -1,0 +1,59 @@
+{
+  "id": "Sensor Fusion",
+  "title": "Sensor Fusion",
+  "content": "- ### OntologyBlock\n  id:: sensor-fusion-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0350\n\t- preferred-term:: Sensor Fusion\n\t- source-domain:: ai\n\t- owl:class:: ai:SensorFusion\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Sensor Fusion is the process of combining data from multiple sensors (camera, lidar, radar, GPS, IMU) to produce more accurate, reliable, and complete information than could be obtained from any individual sensor. Sensor fusion employs algorithms including Kalman filtering, particle filtering, and deep learning-based fusion to integrate complementary sensor modalities whilst managing sensor noise, uncertainties, and failures.\n\n## Sensor Fusion\n\nSensor Fusion refers to sensor fusion is the process of combining data from multiple sensors (camera, lidar, radar, gps, imu) to produce more accurate, reliable, and complete information than could be obtained from any individual sensor. sensor fusion employs algorithms including kalman filtering, particle filtering, and deep learning-based fusion to integrate complementary sensor modalities whilst managing sensor noise, uncertainties, and failures.\n\n- Sensor fusion is widely adopted in automotive Advanced Driver-Assistance Systems (ADAS) and autonomous vehicles, combining inputs from cameras, LiDAR, radar, GPS, and inertial measurement units (IMUs).\n  - Algorithms fuse complementary sensor modalities to enhance object detection, localisation, and scene understanding while managing sensor noise, uncertainties, and failures.\n  - Beyond automotive, sensor fusion supports robotics, telemedicine, industrial automation, and environmental monitoring.\n- Notable organisations include automotive suppliers like Aptiv and technology firms such as QNX (BlackBerry), which develop sensor fusion software stacks for safety-critical applications.\n- UK and North England examples:\n  - Research hubs in Manchester and Leeds focus on sensor fusion for autonomous systems and smart city applications.\n  - Newcastle University conducts advanced research in multi-sensor data fusion for robotics and environmental sensing.\n  - Sheffield’s innovation centres explore sensor fusion in manufacturing and healthcare technologies.\n- Technical capabilities have improved with advances in AI, enabling real-time fusion of high-dimensional data streams.\n- Limitations remain in sensor cost, computational complexity, and robustness under adverse conditions.\n- Standards and frameworks for sensor fusion are evolving, with ISO and SAE developing guidelines for automotive sensor integration and safety assurance.\n\n## Technical Details\n\n- **Id**: sensor-fusion-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Research & Literature\n\n- Key academic papers and sources:\n  - Hall, D. L., & Llinas, J. (1997). \"An Introduction to Multisensor Data Fusion.\" *Proceedings of the IEEE*, 85(1), 6-23. DOI: 10.1109/5.554205\n  - Khaleghi, B., Khamis, A., Karray, F. O., & Razavi, S. N. (2013). \"Multisensor Data Fusion: A Review of the State-of-the-Art.\" *Information Fusion*, 14(1), 28-44. DOI: 10.1016/j.inffus.2011.08.001\n  - Li, X. R., & Jilkov, V. P. (2003). \"Survey of Maneuvering Target Tracking. Part V: Multiple-Model Methods.\" *IEEE Transactions on Aerospace and Electronic Systems*, 39(4), 1333-1364. DOI: 10.1109/TAES.2003.1261136\n  - Recent conference proceedings from IEEE International Conference on Robotics and Automation (ICRA) and International Conference on Information Fusion (Fusion 2024).\n- Ongoing research directions include:\n  - Deep learning architectures for sensor fusion that improve robustness to sensor failures and environmental variability.\n  - Fusion of heterogeneous data types, including visual, radar, acoustic, and inertial sensors.\n  - Real-time distributed sensor fusion for connected and autonomous vehicle networks.\n  - Explainability and verification of sensor fusion algorithms for safety-critical applications.\n\n## UK Context\n\n- The UK is a significant contributor to sensor fusion research and applications, with government and industry partnerships supporting innovation.\n- North England innovation hubs:\n  - Manchester’s Graphene Engineering Innovation Centre integrates sensor fusion in novel materials and wearable technologies.\n  - Leeds hosts the Institute for Transport Studies, advancing sensor fusion for autonomous transport systems.\n  - Newcastle University’s Centre for Autonomous Systems and Robotics develops sensor fusion algorithms for drones and environmental monitoring.\n  - Sheffield’s Advanced Manufacturing Research Centre applies sensor fusion in industrial automation and quality control.\n- Regional case studies:\n  - Deployment of sensor fusion in smart city projects in Manchester, combining traffic cameras, environmental sensors, and GPS data to optimise urban mobility.\n  - Collaborative projects between universities and automotive companies in Leeds and Newcastle focusing on sensor fusion for next-generation ADAS.\n\n## Future Directions\n\n- Emerging trends:\n  - Integration of AI-driven sensor fusion with edge computing to reduce latency and enhance privacy.\n  - Expansion into new domains such as augmented reality, personalised healthcare monitoring, and environmental sustainability.\n  - Development of standardised, modular sensor fusion frameworks to accelerate adoption across industries.\n- Anticipated challenges:\n  - Ensuring robustness and reliability in complex, dynamic environments.\n  - Managing the increasing volume and heterogeneity of sensor data.\n  - Addressing cybersecurity risks inherent in interconnected sensor networks.\n- Research priorities:\n  - Enhancing interpretability and trustworthiness of sensor fusion outputs.\n  - Developing adaptive fusion algorithms that can learn and evolve with changing sensor configurations.\n  - Strengthening collaboration between academia, industry, and regulatory bodies to establish best practices and standards.\n\n## References\n\n1. Hall, D. L., & Llinas, J. (1997). An Introduction to Multisensor Data Fusion. *Proceedings of the IEEE*, 85(1), 6-23. DOI: 10.1109/5.554205\n2. Khaleghi, B., Khamis, A., Karray, F. O., & Razavi, S. N. (2013). Multisensor Data Fusion: A Review of the State-of-the-Art. *Information Fusion*, 14(1), 28-44. DOI: 10.1016/j.inffus.2011.08.001\n3. Li, X. R., & Jilkov, V. P. (2003). Survey of Maneuvering Target Tracking. Part V: Multiple-Model Methods. *IEEE Transactions on Aerospace and Electronic Systems*, 39(4), 1333-1364. DOI: 10.1109/TAES.2003.1261136\n4. Dewesoft. (2024). What is Sensor Fusion? Retrieved May 15, 2024, from https://dewesoft.com/blog/what-is-sensor-fusion\n5. Aptiv. What Is Sensor Fusion? Retrieved 2025, from https://www.aptiv.com/en/insights/article/what-is-sensor-fusion\n6. QNX (BlackBerry). Sensor Fusion for Automotive. Retrieved 2025, from https://blackberry.qnx.com/en/ultimate-guides/software-defined-vehicle/sensor-fusion\n*If sensor fusion were a football team, it would be the ultimate all-star lineup—each player (sensor) brings unique skills, but together they score the winning goal of accurate perception.*\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Context Awareness",
+    "Robot-Control",
+    "Extended Reality (XR)",
+    "Spatial Computing",
+    "ADAS",
+    "Perception System"
+  ],
+  "wiki_links": [],
+  "ontology": {
+    "term_id": "AI-0350",
+    "preferred_term": "Sensor Fusion",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#SensorFusion",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Sensor Fusion is the process of combining data from multiple sensors (camera, lidar, radar, GPS, IMU) to produce more accurate, reliable, and complete information than could be obtained from any individual sensor. Sensor fusion employs algorithms including Kalman filtering, particle filtering, and deep learning-based fusion to integrate complementary sensor modalities whilst managing sensor noise, uncertainties, and failures.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:SensorFusion",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "AI Provider",
+  "title": "AI Provider",
+  "content": "- ### OntologyBlock\n  id:: ai-provider-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0099\n\t- preferred-term:: AI Provider\n\t- source-domain:: ai\n\t- owl:class:: ai:AIProvider\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: An individual, organisation, or legal entity that develops, produces, or supplies an artificial intelligence system, including responsibility for design decisions, training processes, system capabilities, documentation, and compliance with applicable requirements, and who either places the AI system on the market under their own name or trademark, substantially modifies an existing system, or makes the system available for use, thereby assuming primary accountability for the system's characteristics, performance, and conformity with regulatory obligations.\n\t- source:: [[EU AI Act Articles 16-17]], [[ISO/IEC 42001:2023]], [[OECD AI Principles]], [[UK AI Regulation]]\n\t- maturity:: mature\n\t- #### Relationships\n\t  id:: ai-provider-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AIApplications]]\n\n## AI Provider\n\nAI Provider refers to an individual, organisation, or legal entity that develops, produces, or supplies an artificial intelligence system, including responsibility for design decisions, training processes, system capabilities, documentation, and compliance with applicable requirements, and who either places the ai system on the market under their own name or trademark, substantially modifies an existing system, or makes the system available for use, thereby assuming primary accountability for the system's characteristics, performance, and conformity with regulatory obligations.\n\n- Definition and scope within regulatory frameworks\n  - The term \"AI Provider\" has evolved significantly as regulatory landscapes crystallised in 2024–2025\n  - Encompasses developers, producers, and suppliers assuming primary accountability for AI system characteristics and performance\n  - Distinction between providers of general-purpose AI models and providers of downstream AI systems increasingly material\n- Foundational principles\n  - Responsibility extends across design decisions, training processes, system capabilities, and documentation\n  - Primary accountability triggered by placing systems on market under own name, substantial modification, or making available for use\n  - Regulatory obligations now formally codified in multiple jurisdictions\n\n## Technical Details\n\n- **Id**: ai-provider-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Current Landscape (2025)\n\n- Regulatory framework developments\n  - UK maintains principles-based approach across five core pillars: safety, security and robustness, transparency and availability, fairness and accountability, and contestability and redress[1]\n  - Sector-specific regulators (FCA, IPO, CMA, Information Commissioner) now actively implementing AI governance through existing legal frameworks with supplementary guidance[1]\n  - EU AI Act entered full application 2 August 2025, with general-purpose AI providers subject to enhanced obligations including technical documentation and model cards[4]\n  - Voluntary safety and transparency measures apply to developers of highly capable AI models in UK context[1]\n- Industry adoption and implementations\n  - Large language model providers (such as those powering post-2022 AI chatbots) now classified as general-purpose AI providers under EU framework, subject to compute thresholds exceeding 10^23 FLOPs[4]\n  - Open-source GPAI model providers benefit from certain exemptions under EU rules, though conditions remain stringent[4]\n  - UK providers navigating regulatory divergence between UK principles-based framework and EU's prescriptive AI Act[1]\n- UK and North England context\n  - Manchester, Leeds, and Newcastle emerging as secondary innovation hubs supporting AI development, though London remains primary centre\n  - UK government establishing AI and Digital Hub to provide regulatory guidance to innovators[6]\n  - Sectoral regulators now building AI capability across regions to support compliance implementation[1]\n- Technical capabilities and limitations\n  - Providers must now demonstrate compliance with technical standards for security of machine learning systems[6]\n  - Documentation requirements expanding to include training data provenance, model capabilities, and known limitations\n  - Transparency obligations require disclosure of AI system interactions to users (Article 50, EU AI Act)[4]\n- Standards and frameworks\n  - General-purpose AI Code of Practice published July 2025, with European Commission confirming adequacy for demonstrating compliance[4]\n  - UK government considering formalisation of statutory duty for regulators to \"have due regard\" to five core principles[6]\n  - Copyright and AI consultation (closed February 2025) informing future guidance on training data disclosure obligations[3]\n\n## Research & Literature\n\n- Key regulatory developments\n  - UK Government (2024). *Response to AI Regulation White Paper*. Established cross-sector principles-based framework avoiding new legislation in short term[1]\n  - European Commission (2025). *Guidelines on General-Purpose AI Scope of Application*. Published 18 July 2025, providing technical criteria for GPAI classification[4]\n  - General-purpose AI Code of Practice (2025). Final version published August 2025, establishing voluntary compliance mechanisms[4]\n- Ongoing research directions\n  - Assessment of regulatory divergence between UK and EU frameworks and implications for international providers\n  - Evaluation of principles-based versus prescriptive regulatory effectiveness in fostering innovation whilst maintaining safety\n  - Investigation of sectoral implementation challenges across FCA, IPO, CMA, and Information Commissioner remits\n\n## UK Context\n\n- British regulatory approach\n  - UK deliberately avoided prescriptive legislation in favour of flexible, sector-specific oversight building on existing regulatory expertise[5]\n  - Government committed to examining outcomes of IPO Copyright and AI Consultation before introducing AI-specific copyright provisions[3]\n  - Principles-based framework designed to avoid stifling innovation whilst ensuring responsible development[6]\n- North England considerations\n  - Manchester hosts growing AI research community with university partnerships supporting provider development\n  - Leeds and Sheffield emerging as centres for AI application in manufacturing and healthcare sectors\n  - Newcastle developing fintech AI capabilities, relevant to FCA regulatory oversight\n  - Regional variation in sectoral regulator engagement reflects distributed nature of UK AI ecosystem\n- Territorial application\n  - UK framework maintains existing territorial scope of legislation applicable to AI, including data protection requirements[2]\n  - Government continuing to assess territorial reach as framework develops, particularly regarding cross-border service provision[2]\n\n## Future Directions\n\n- Emerging regulatory developments\n  - Targeted legislation anticipated within 12–24 months to address gaps in current framework, particularly risks posed by complex general-purpose AI systems[1]\n  - UK government monitoring EU AI Act enforcement (full compliance required by August 2026) to inform future UK legislative decisions[3]\n  - Potential formalisation of statutory duties for regulators regarding five core principles[6]\n- Anticipated challenges\n  - Regulatory divergence between UK and EU frameworks creating compliance complexity for international providers\n  - Definitional clarity required for \"substantial modification\" of existing AI systems to determine provider status\n  - Balancing innovation promotion with safety and security requirements as AI capabilities advance\n- Research priorities\n  - Effectiveness of voluntary compliance mechanisms versus statutory requirements\n  - Impact of principles-based regulation on innovation rates and safety outcomes\n  - Cross-jurisdictional harmonisation possibilities and barriers\n---\n**Note on format:** The original definition remains technically sound and current. The improvements above contextualise it within the 2025 regulatory landscape, particularly the August 2025 EU AI Act implementation and UK's ongoing principles-based approach. The definition itself requires no substantive revision, though practitioners should note the distinction between general-purpose AI providers and downstream system providers is now formally material in regulatory terms.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Stakeholder"
+  ],
+  "wiki_links": [
+    "UK AI Regulation",
+    "EU AI Act Articles 16-17",
+    "AIApplications",
+    "OECD AI Principles",
+    "ISO/IEC 42001:2023"
+  ],
+  "ontology": {
+    "term_id": "AI-0099",
+    "preferred_term": "AI Provider",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#AIProvider",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "An individual, organisation, or legal entity that develops, produces, or supplies an artificial intelligence system, including responsibility for design decisions, training processes, system capabilities, documentation, and compliance with applicable requirements, and who either places the AI system on the market under their own name or trademark, substantially modifies an existing system, or makes the system available for use, thereby assuming primary accountability for the system's characteristics, performance, and conformity with regulatory obligations.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:AIProvider",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "AIApplications"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [
+      "EU AI Act Articles 16-17",
+      "ISO/IEC 42001:2023",
+      "OECD AI Principles",
+      "UK AI Regulation"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

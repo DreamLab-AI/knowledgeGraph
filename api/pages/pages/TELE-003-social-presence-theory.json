@@ -1,7 +1,7 @@
 {
   "id": "TELE-003-social-presence-theory",
   "title": "Social Presence Theory",
-  "content": "# Social Presence Theory\n\n- ### OntologyBlock\n  id:: social-presence-theory-ontology\n  collapsed:: true\n  - ontology:: true\n  - term-id:: TELE-003\n  - preferred-term:: Social Presence Theory\n  - alternate-terms::\n  - SPT\n  - Social Telepresence Theory\n  - Mediated Social Presence\n  - source-domain:: tele\n  - status:: active\n  - public-access:: true\n  - definition:: \"A theoretical framework explaining how communication media vary in their capacity to convey social cues (facial expressions, vocal intonation, body language, interpersonal warmth), thereby influencing the degree to which communicators perceive each other as psychologically present, real, and engaged in interpersonal exchange.\"\n  - maturity:: mature\n  - authority-score:: 0.94\n  - owl:class:: tele:SocialPresenceTheory\n  - owl:physicality:: ConceptualEntity\n  - owl:role:: Concept\n  - belongsToDomain::\n  - [[TELE-0000-telepresence-domain]]\n  - [[TelepresenceFoundations]]\n  - bridges-to::\n  - [[AIDomain]]\n  - [[MetaverseDomain]]\n\n\n#### Relationships\nid:: social-presence-theory-relationships\n- is-subclass-of:: [[CommunicationTheory]], [[MediaTheory]]\n- enables:: [[TELE-001-telepresence]], [[TELE-002-telecollaboration]], [[VirtualTeamBuilding]]\n- requires:: [[MediatedCommunication]], [[NonverbalCommunication]]\n- related-to:: [[TELE-004-media-richness-theory]], [[TELE-006-presence]], [[TrustBuilding]]\n\n#### OWL Axioms\nid:: social-presence-theory-owl-axioms\ncollapsed:: true\n- ```clojure\n  Declaration(Class(tele:SocialPresenceTheory))\n\n  SubClassOf(tele:SocialPresenceTheory tele:FoundationalConcept)\n  SubClassOf(tele:SocialPresenceTheory tele:ConceptualEntity)\n\n  SubClassOf(tele:SocialPresenceTheory\n    ObjectSomeValuesFrom(tele:belongsToDomain tele:TelecollaborationDomain)\n  )\n\n  SubClassOf(tele:SocialPresenceTheory\n    ObjectSomeValuesFrom(tele:enables tele:Telepresence)\n  )\n\n  AnnotationAssertion(rdfs:label tele:SocialPresenceTheory \"Social Presence Theory\"@en-GB)\n  AnnotationAssertion(rdfs:comment tele:SocialPresenceTheory \"Communication theory of mediated social cues\"@en-GB)\n  AnnotationAssertion(dcterms:identifier tele:SocialPresenceTheory \"TELE-003\"^^xsd:string)\n  AnnotationAssertion(dcterms:created tele:SocialPresenceTheory \"2025-11-16\"^^xsd:date)\n  ```\n\n## Definition\n\n**Social Presence Theory** (SPT), formulated by Short, Williams, and Christie (1976), posits that communication media differ in their ability to transmit social cues that convey interpersonal warmth, intimacy, and psychological proximity. The theory emerged from research on telecommunications systems and has become foundational to understanding how technology-mediated communication affects collaboration, trust, and relationship formation.\n\nThe core proposition is that **social presence** — the degree to which a communication partner is perceived as \"real\" and \"there\" — depends on the medium's capacity to convey verbal and nonverbal signals including facial expressions, eye gaze, posture, vocal inflection, and turn-taking cues. Higher social presence media (e.g., video, VR) enable richer interpersonal exchange than lower presence media (e.g., email, text chat), influencing communication effectiveness, persuasiveness, and social attraction.\n\nSPT predicts that tasks requiring socio-emotional communication (relationship building, conflict resolution, creative brainstorming) benefit from high-presence media, whilst information transfer tasks can tolerate low-presence channels. This has profound implications for [[TELE-002-telecollaboration]] system design: immersive telepresence platforms ([[TELE-020-virtual-reality-telepresence]]) maximise social presence through photorealistic avatars, spatial audio, and gesture tracking.\n\n## Current Landscape (2025)\n\nSocial Presence Theory remains highly relevant in 2025 as organisations navigate hybrid work and choose between communication platforms with vastly different presence capabilities.\n\n**Research Findings**:\n- VR meetings (Meta Horizon Workrooms) achieve 87% of face-to-face social presence (Microsoft Research, 2025)\n- AI avatars with facial animation increase perceived presence by 43% vs. static images (Stanford VR Lab)\n- Spatial audio positioning raises social presence scores 31% vs. mono audio (University of Manchester study)\n\n**UK Context**:\nBritish institutions leverage SPT principles in telepresence deployments:\n- NHS uses high-presence video consultation for mental health therapy\n- University of Leeds researches gaze-aware telepresence for education\n- Manchester-based startups develop emotion-aware collaboration tools\n\n## Theoretical Framework\n\n### Dimensions of Social Presence\n\n**Intimacy**: Psychological distance between communicators\n- Influenced by proximity, eye contact, smiling, personal disclosure\n- High in face-to-face, VR avatars; low in email, text\n\n**Immediacy**: Salience of the other person in the interaction\n- Conveyed through responsiveness, attentiveness, feedback\n- Enhanced by real-time video, spatial audio; reduced by asynchronous text\n\n**Co-Presence**: Shared sense of \"being there together\"\n- Created by shared virtual spaces, joint attention, mutual awareness\n- Core goal of [[TELE-001-telepresence]] systems\n\n### Cue Availability\n\nSPT identifies cues that convey social presence:\n- **Visual**: Facial expressions, gestures, appearance, gaze direction\n- **Auditory**: Vocal tone, prosody, laughter, silence\n- **Spatial**: Proximity, orientation, interpersonal distance\n- **Temporal**: Turn-taking rhythm, response latency\n\nModern telepresence systems replicate these cues:\n- [[TELE-100-ai-avatars]]: Photorealistic facial rendering\n- [[TELE-110-spatial-audio-processing]]: 3D voice positioning\n- [[TELE-115-gaze-tracking]]: Eye contact simulation\n\n## Related Concepts\n\n- [[TELE-001-telepresence]]\n- [[TELE-004-media-richness-theory]]\n- [[TELE-006-presence]]\n- [[TELE-100-ai-avatars]]\n\n## Academic References\n\n1. Short, J., Williams, E., & Christie, B. (1976). *The Social Psychology of Telecommunications*. John Wiley & Sons.\n2. Biocca, F., Harms, C., & Burgoon, J. K. (2003). \"Toward a More Robust Theory and Measure of Social Presence\". *Presence*, 12(5), 456-480.\n\n## Metadata\n\n- **Term-ID**: TELE-003\n- **Last Updated**: 2025-11-16\n- **Maturity**: Mature\n- **Authority Score**: 0.94",
+  "content": "- ### OntologyBlock\n  id:: social-presence-theory-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TELE-003\n\t- preferred-term:: Social Presence Theory\n\t- source-domain:: tc\n\t- owl:class:: tc:SocialPresenceTheory\n\t- status:: active\n\t- public-access:: true\n\t- definition:: \"A theoretical framework explaining how communication media vary in their capacity to convey social cues (facial expressions, vocal intonation, body language, interpersonal warmth), thereby influencing the degree to which communicators perceive each other as psychologically present, real, and engaged in interpersonal exchange.\"\n\t- maturity:: mature\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- #### Relationships\n\t  id:: social-presence-theory-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[MediaTheory]]\n\t\t- is-subclass-of:: [[CommunicationTheory]]\n\t\t- requires:: [[MediatedCommunication]]\n\t\t- requires:: [[NonverbalCommunication]]\n\t\t- enables:: [[TELE-002-telecollaboration]]\n\t\t- enables:: [[VirtualTeamBuilding]]\n\t\t- enables:: [[TELE-001-telepresence]]\n\t\t- related-to:: [[TrustBuilding]]\n\t\t- related-to:: [[TELE-004-media-richness-theory]]\n\t\t- related-to:: [[TELE-006-presence]]\n\n## Definition\n\n**Social Presence Theory** (SPT), formulated by Short, Williams, and Christie (1976), posits that communication media differ in their ability to transmit social cues that convey interpersonal warmth, intimacy, and psychological proximity. The theory emerged from research on telecommunications systems and has become foundational to understanding how technology-mediated communication affects collaboration, trust, and relationship formation.\n\nThe core proposition is that **social presence** — the degree to which a communication partner is perceived as \"real\" and \"there\" — depends on the medium's capacity to convey verbal and nonverbal signals including facial expressions, eye gaze, posture, vocal inflection, and turn-taking cues. Higher social presence media (e.g., video, VR) enable richer interpersonal exchange than lower presence media (e.g., email, text chat), influencing communication effectiveness, persuasiveness, and social attraction.\n\nSPT predicts that tasks requiring socio-emotional communication (relationship building, conflict resolution, creative brainstorming) benefit from high-presence media, whilst information transfer tasks can tolerate low-presence channels. This has profound implications for [[TELE-002-telecollaboration]] system design: immersive telepresence platforms ([[TELE-020-virtual-reality-telepresence]]) maximise social presence through photorealistic avatars, spatial audio, and gesture tracking.\n\n## Current Landscape (2025)\n\nSocial Presence Theory remains highly relevant in 2025 as organisations navigate hybrid work and choose between communication platforms with vastly different presence capabilities.\n\n**Research Findings**:\n- VR meetings (Meta Horizon Workrooms) achieve 87% of face-to-face social presence (Microsoft Research, 2025)\n- AI avatars with facial animation increase perceived presence by 43% vs. static images (Stanford VR Lab)\n- Spatial audio positioning raises social presence scores 31% vs. mono audio (University of Manchester study)\n\n**UK Context**:\nBritish institutions leverage SPT principles in telepresence deployments:\n- NHS uses high-presence video consultation for mental health therapy\n- University of Leeds researches gaze-aware telepresence for education\n- Manchester-based startups develop emotion-aware collaboration tools\n\n## Theoretical Framework\n\n### Dimensions of Social Presence\n\n**Intimacy**: Psychological distance between communicators\n- Influenced by proximity, eye contact, smiling, personal disclosure\n- High in face-to-face, VR avatars; low in email, text\n\n**Immediacy**: Salience of the other person in the interaction\n- Conveyed through responsiveness, attentiveness, feedback\n- Enhanced by real-time video, spatial audio; reduced by asynchronous text\n\n**Co-Presence**: Shared sense of \"being there together\"\n- Created by shared virtual spaces, joint attention, mutual awareness\n- Core goal of [[TELE-001-telepresence]] systems\n\n### Cue Availability\n\nSPT identifies cues that convey social presence:\n- **Visual**: Facial expressions, gestures, appearance, gaze direction\n- **Auditory**: Vocal tone, prosody, laughter, silence\n- **Spatial**: Proximity, orientation, interpersonal distance\n- **Temporal**: Turn-taking rhythm, response latency\n\nModern telepresence systems replicate these cues:\n- [[TELE-100-ai-avatars]]: Photorealistic facial rendering\n- [[TELE-110-spatial-audio-processing]]: 3D voice positioning\n- [[TELE-115-gaze-tracking]]: Eye contact simulation\n\n## Related Concepts\n\n- [[TELE-001-telepresence]]\n- [[TELE-004-media-richness-theory]]\n- [[TELE-006-presence]]\n- [[TELE-100-ai-avatars]]\n\n## Academic References\n\n1. Short, J., Williams, E., & Christie, B. (1976). *The Social Psychology of Telecommunications*. John Wiley & Sons.\n2. Biocca, F., Harms, C., & Burgoon, J. K. (2003). \"Toward a More Robust Theory and Measure of Social Presence\". *Presence*, 12(5), 456-480.\n\n## Metadata\n\n- **Term-ID**: TELE-003\n- **Last Updated**: 2025-11-16\n- **Maturity**: Mature\n- **Authority Score**: 0.94",
   "backlinks": [
     "TELE-006-presence",
     "TELE-CONV-001-metaverse-telepresence-bridge",
@@ -10,33 +10,29 @@
     "TELE-002-telecollaboration"
   ],
   "wiki_links": [
-    "MetaverseDomain",
-    "AIDomain",
-    "MediatedCommunication",
-    "TELE-110-spatial-audio-processing",
     "TELE-115-gaze-tracking",
-    "TELE-001-telepresence",
-    "TELE-006-presence",
     "TELE-004-media-richness-theory",
-    "TelepresenceFoundations",
-    "TELE-0000-telepresence-domain",
-    "MediaTheory",
-    "TELE-002-telecollaboration",
-    "VirtualTeamBuilding",
-    "NonverbalCommunication",
     "TELE-020-virtual-reality-telepresence",
-    "TrustBuilding",
     "TELE-100-ai-avatars",
-    "CommunicationTheory"
+    "TELE-001-telepresence",
+    "NonverbalCommunication",
+    "TELE-006-presence",
+    "CommunicationTheory",
+    "MediaTheory",
+    "MediatedCommunication",
+    "TrustBuilding",
+    "VirtualTeamBuilding",
+    "TELE-110-spatial-audio-processing",
+    "TELE-002-telecollaboration"
   ],
   "ontology": {
     "term_id": "TELE-003",
     "preferred_term": "Social Presence Theory",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "tele",
-    "domain": "tele",
-    "domain_full_name": "",
+    "iri": "http://narrativegoldmine.com/telecollaboration#SocialPresenceTheory",
+    "source_domain": "tc",
+    "domain": "tc",
+    "domain_full_name": "Telecollaboration",
     "definition": "\"A theoretical framework explaining how communication media vary in their capacity to convey social cues (facial expressions, vocal intonation, body language, interpersonal warmth), thereby influencing the degree to which communicators perceive each other as psychologically present, real, and engaged in interpersonal exchange.\"",
     "scope_note": null,
     "status": "active",
@@ -44,33 +40,48 @@
     "version": null,
     "public_access": true,
     "last_updated": null,
-    "authority_score": 0.94,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": "tele:SocialPresenceTheory",
+    "owl_class": "tc:SocialPresenceTheory",
     "owl_physicality": "ConceptualEntity",
     "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "MediaTheory",
+      "CommunicationTheory"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "MediatedCommunication",
+      "NonverbalCommunication"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "TELE-002-telecollaboration",
+      "VirtualTeamBuilding",
+      "TELE-001-telepresence"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [
-      "TELE-0000-telepresence-domain"
-    ],
+    "belongs_to_domain": [],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "TrustBuilding",
+        "TELE-004-media-richness-theory",
+        "TELE-006-presence"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "term-id 'TELE-003' doesn't match domain 'tc' (expected TC-)"
       ]
     }
   }

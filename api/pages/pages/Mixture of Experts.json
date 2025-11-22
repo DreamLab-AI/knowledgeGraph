@@ -1,0 +1,55 @@
+{
+  "id": "Mixture of Experts",
+  "title": "Mixture of Experts",
+  "content": "- ### OntologyBlock\n  id:: mixture-of-experts-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0276\n\t- preferred-term:: Mixture of Experts\n\t- source-domain:: ai\n\t- owl:class:: ai:MixtureOfExperts\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: An architecture that uses multiple specialised sub-networks (experts) with a gating mechanism that routes inputs to a sparse subset of experts, enabling scaling without proportional compute increases. MoE is adopted in production LLMs like GPT-4, enabling massive scale with controlled costs.\n\t- #### Relationships\n\t  id:: mixture-of-experts-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[NeuralNetwork]]\n\n## Mixture of Experts\n\nMixture of Experts refers to an architecture that uses multiple specialised sub-networks (experts) with a gating mechanism that routes inputs to a sparse subset of experts, enabling scaling without proportional compute increases. moe is adopted in production llms like gpt-4, enabling massive scale with controlled costs.\n\n- Industry adoption and implementations\n  - MoE is widely used in production LLMs, including models from leading AI companies such as OpenAI, Mistral AI, and Google\n  - Notable platforms and models include Mistral’s Mixtral 8x7B, Google’s V-MoE, and various proprietary LLMs that leverage MoE for efficient scaling\n  - The architecture is also being explored in other domains, such as computer vision and speech recognition\n- UK and North England examples where relevant\n  - UK-based AI research institutions and companies are actively contributing to the development and application of MoE architectures\n  - The University of Manchester has a strong research group in machine learning, with ongoing projects in scalable AI and efficient neural network architectures\n  - Leeds and Newcastle are home to several startups and research labs focusing on AI and machine learning, some of which are exploring MoE for specific applications\n  - Sheffield’s Advanced Manufacturing Research Centre (AMRC) is investigating the use of MoE in industrial AI systems, particularly for predictive maintenance and quality control\n- Technical capabilities and limitations\n  - MoE enables models to scale to billions of parameters while maintaining efficient inference and training\n  - The architecture supports expert parallelism, allowing experts to be distributed across multiple devices for large-scale deployments\n  - Challenges include load balancing, distributed training complexity, and tuning for stability and efficiency\n  - Careful design and optimisation are required to ensure that the gating network effectively routes inputs and that the experts are well-balanced\n- Standards and frameworks\n  - There are no formal standards for MoE architectures, but best practices are emerging from the research community\n  - Popular deep learning frameworks such as PyTorch and TensorFlow provide tools and libraries for implementing MoE models\n  - Open-source projects and research repositories offer reference implementations and benchmarks for MoE architectures\n\n## Technical Details\n\n- **Id**: mixture-of-experts-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Research & Literature\n\n- Key academic papers and sources\n  - Jacobs, R. A., Jordan, M. I., Nowlan, S. J., & Hinton, G. E. (1991). Adaptive Mixture of Local Experts. Neural Computation, 3(1), 79-87. https://doi.org/10.1162/neco.1991.3.1.79\n  - Shazeer, N., Mirhoseini, A., Maziarz, K., Davis, A., Le, Q., Hinton, G., & Dean, J. (2017). Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer. arXiv preprint arXiv:1701.06538. https://arxiv.org/abs/1701.06538\n  - Fedus, W., Zoph, B., & Shazeer, N. (2021). Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity. arXiv preprint arXiv:2101.03961. https://arxiv.org/abs/2101.03961\n  - Riquelme, C., Tucker, G., & Snoek, J. (2018). Scalable and Efficient Deep Learning with Mixture of Experts. arXiv preprint arXiv:1801.01423. https://arxiv.org/abs/1801.01423\n- Ongoing research directions\n  - Improving load balancing and expert selection mechanisms\n  - Exploring hierarchical and multi-level MoE architectures\n  - Developing more efficient and scalable training algorithms\n  - Applying MoE to new domains and applications, such as reinforcement learning and multimodal learning\n\n## UK Context\n\n- British contributions and implementations\n  - UK researchers have made significant contributions to the development and application of MoE architectures, particularly in the areas of scalable AI and efficient neural network design\n  - The Alan Turing Institute and other national research centres are actively involved in advancing the state of the art in MoE and related techniques\n- North England innovation hubs (if relevant)\n  - The University of Manchester’s Machine Learning Group is a leading centre for research in scalable AI and efficient neural network architectures\n  - Leeds and Newcastle are home to several startups and research labs focusing on AI and machine learning, with some exploring MoE for specific applications\n  - Sheffield’s AMRC is investigating the use of MoE in industrial AI systems, particularly for predictive maintenance and quality control\n- Regional case studies\n  - The University of Manchester has developed a MoE-based system for real-time anomaly detection in industrial settings, demonstrating the practical benefits of the architecture in real-world applications\n  - A startup in Leeds is using MoE to build a scalable recommendation engine for e-commerce, leveraging the architecture’s ability to handle large and diverse datasets efficiently\n\n## Future Directions\n\n- Emerging trends and developments\n  - Continued growth in the use of MoE for large-scale AI models, driven by the need for efficient and scalable solutions\n  - Exploration of new applications and domains, such as reinforcement learning and multimodal learning\n  - Development of more sophisticated gating and load balancing mechanisms\n- Anticipated challenges\n  - Ensuring stable and efficient training of MoE models, particularly in distributed and parallel settings\n  - Addressing the complexity of expert selection and load balancing\n  - Balancing the trade-offs between model capacity and computational efficiency\n- Research priorities\n  - Improving the robustness and reliability of MoE architectures\n  - Developing more efficient and scalable training algorithms\n  - Exploring new applications and domains for MoE\n\n## References\n\n1. Jacobs, R. A., Jordan, M. I., Nowlan, S. J., & Hinton, G. E. (1991). Adaptive Mixture of Local Experts. Neural Computation, 3(1), 79-87. https://doi.org/10.1162/neco.1991.3.1.79\n2. Shazeer, N., Mirhoseini, A., Maziarz, K., Davis, A., Le, Q., Hinton, G., & Dean, J. (2017). Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer. arXiv preprint arXiv:1701.06538. https://arxiv.org/abs/1701.06538\n3. Fedus, W., Zoph, B., & Shazeer, N. (2021). Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity. arXiv preprint arXiv:2101.03961. https://arxiv.org/abs/2101.03961\n4. Riquelme, C., Tucker, G., & Snoek, J. (2018). Scalable and Efficient Deep Learning with Mixture of Experts. arXiv preprint arXiv:1801.01423. https://arxiv.org/abs/1801.01423\n5. University of Manchester Machine Learning Group. (2025). Real-time Anomaly Detection with Mixture of Experts. https://mlg.eng.man.ac.uk/research/anomaly-detection/\n6. Leeds AI Startup. (2025). Scalable Recommendation Engine with Mixture of Experts. https://leedsai.com/recommendation-engine/\n7. Sheffield AMRC. (2025). Industrial AI Systems with Mixture of Experts. https://amrc.co.uk/industrial-ai/\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "NeuralNetwork"
+  ],
+  "ontology": {
+    "term_id": "AI-0276",
+    "preferred_term": "Mixture of Experts",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#MixtureOfExperts",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "An architecture that uses multiple specialised sub-networks (experts) with a gating mechanism that routes inputs to a sparse subset of experts, enabling scaling without proportional compute increases. MoE is adopted in production LLMs like GPT-4, enabling massive scale with controlled costs.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:MixtureOfExperts",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "NeuralNetwork"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

@@ -1,18 +1,19 @@
 {
   "id": "Ethical Framework",
   "title": "Ethical Framework",
-  "content": "- ### OntologyBlock\n  id:: ethical-framework-ontology\n  collapsed:: true\n\n  - **Identification**\n    - ontology:: true\n    - term-id:: PC-0011\n    - preferred-term:: Ethical Framework\n    - source-domain:: metaverse\n    - status:: complete\n    - public-access:: true\n    - version:: 1.0.0\n    - last-updated:: 2025-11-08\n\n  - **Definition**\n    - definition:: An Ethical Framework is a structured set of moral principles, values, and reasoning methods that guide the development, deployment, and use of AI systems to ensure they respect human dignity, promote well-being, and avoid harm. Ethical frameworks for AI translate philosophical traditions and moral reasoning into practical guidelines addressing unique challenges posed by algorithmic decision-making: how to ensure fairness when training data reflects historical discrimination, how to balance accuracy with transparency when complex models resist interpretation, how to assign responsibility when autonomous systems cause harm, and how to preserve human agency when AI systems make consequential recommendations. These frameworks draw from multiple ethical traditions including consequentialism (evaluating AI systems by their outcomes and impacts), deontology (establishing duties and rules AI systems must follow regardless of consequences), virtue ethics (cultivating organizational practices promoting responsible AI development), and care ethics (emphasizing relationships and contextual understanding). Ethical frameworks provide structured approaches for identifying, analyzing, and resolving moral dilemmas arising throughout the AI lifecycle, from data collection practices that may violate privacy, to model training that may embed biases, to deployment contexts where AI recommendations may conflict with human values.\n    - maturity:: mature\n    - source:: [[IEEE Ethically Aligned Design]], [[ACM Code of Ethics]], [[Montreal Declaration for Responsible AI]], [[Asilomar AI Principles]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: aigo:EthicalFramework\n    - owl:physicality:: ConceptualEntity\n    - owl:role:: Concept\n    - owl:inferred-class:: ConceptualConcept\n    - is-subclass-of:: [[ArtificialIntelligence]]\n    - belongsToDomain:: [[AIEthicsDomain]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "content": "- ### OntologyBlock\n  id:: ethical-framework-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: PC-0011\n\t- preferred-term:: Ethical Framework\n\t- source-domain:: metaverse\n\t- status:: complete\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: aigo:EthicalFramework\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- owl:inferred-class:: ConceptualConcept\n\n### Domain & Architecture\n\t- belongsToDomain:: [[AIEthicsDomain]]\n\t- maturity:: mature\n\n### Relationships\n\n### Quality Metrics\n\t- authority-score:: 0.95\n\n- ### OntologyBlock\n  id:: ethical-framework-ontology\n  collapsed:: true\n\n  - **Identification**\n    - ontology:: true\n    - term-id:: PC-0011\n    - preferred-term:: Ethical Framework\n    - source-domain:: metaverse\n    - status:: complete\n    - public-access:: true\n    - version:: 1.0.0\n    - last-updated:: 2025-11-08\n\n  - **Definition**\n    - definition:: An Ethical Framework is a structured set of moral principles, values, and reasoning methods that guide the development, deployment, and use of AI systems to ensure they respect human dignity, promote well-being, and avoid harm. Ethical frameworks for AI translate philosophical traditions and moral reasoning into practical guidelines addressing unique challenges posed by algorithmic decision-making: how to ensure fairness when training data reflects historical discrimination, how to balance accuracy with transparency when complex models resist interpretation, how to assign responsibility when autonomous systems cause harm, and how to preserve human agency when AI systems make consequential recommendations. These frameworks draw from multiple ethical traditions including consequentialism (evaluating AI systems by their outcomes and impacts), deontology (establishing duties and rules AI systems must follow regardless of consequences), virtue ethics (cultivating organizational practices promoting responsible AI development), and care ethics (emphasizing relationships and contextual understanding). Ethical frameworks provide structured approaches for identifying, analyzing, and resolving moral dilemmas arising throughout the AI lifecycle, from data collection practices that may violate privacy, to model training that may embed biases, to deployment contexts where AI recommendations may conflict with human values.\n    - maturity:: mature\n    - source:: [[IEEE Ethically Aligned Design]], [[ACM Code of Ethics]], [[Montreal Declaration for Responsible AI]], [[Asilomar AI Principles]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: aigo:EthicalFramework\n    - owl:physicality:: ConceptualEntity\n    - owl:role:: Concept\n    - owl:inferred-class:: ConceptualConcept\n    - is-subclass-of:: [[ArtificialIntelligence]]\n    - belongsToDomain:: [[AIEthicsDomain]]\n\n  - #### OWL Restrictions\n    \n\n  -",
   "backlinks": [
     "AI Governance Framework",
-    "AI Governance Principle"
+    "AI Governance Principle",
+    "Governance Model"
   ],
   "wiki_links": [
-    "ArtificialIntelligence",
-    "Asilomar AI Principles",
-    "ACM Code of Ethics",
+    "Montreal Declaration for Responsible AI",
     "IEEE Ethically Aligned Design",
-    "AIEthicsDomain",
-    "Montreal Declaration for Responsible AI"
+    "ArtificialIntelligence",
+    "ACM Code of Ethics",
+    "Asilomar AI Principles",
+    "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "PC-0011",
@@ -47,6 +48,7 @@
     "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
+      "AIEthicsDomain",
       "AIEthicsDomain"
     ],
     "implemented_in_layer": [],

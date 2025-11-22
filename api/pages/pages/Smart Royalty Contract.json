@@ -1,55 +1,110 @@
 {
   "id": "Smart Royalty Contract",
   "title": "Smart Royalty Contract",
-  "content": "- ### OntologyBlock\n  id:: smart-royalty-contract-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20272\n\t- preferred-term:: Smart Royalty Contract\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Metaverse]]\n\t- public-access:: true\n\n\n\n## Academic Context\n\n- Brief contextual overview\n\t- Smart royalty contracts are a subset of blockchain-based smart contracts, designed to automate the enforcement, calculation, and distribution of royalty payments in digital asset ecosystems\n\t- These contracts encode the terms of royalty agreements directly into executable code, ensuring that creators and rights holders receive compensation automatically upon qualifying events such as sales, streams, or licencing of digital works\n\t- The academic foundations draw from distributed systems, cryptography, and contract law, with growing interdisciplinary research in blockchain governance and digital rights management\n\n- Key developments and current state\n\t- The integration of smart contracts into intellectual property management has matured, with robust implementations in NFT marketplaces, music streaming, and digital publishing\n\t- Research continues to address legal enforceability, cross-jurisdictional compliance, and the scalability of royalty distribution systems\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n\t- Smart royalty contracts are widely adopted in NFT marketplaces, digital art platforms, and music streaming services\n\t- Notable platforms include OpenSea, Rarible, and Audius, which use smart contracts to automate royalty payments for creators\n\t- In the UK, platforms such as Minted and Art Blocks have implemented smart royalty contracts for digital artists, ensuring transparent and timely compensation\n\n- UK and North England examples where relevant\n\t- Manchester-based digital art collective \"Northern Lights\" uses smart royalty contracts to manage payments for collaborative NFT projects\n\t- Leeds-based music streaming platform \"Northern Beats\" employs smart contracts to automate royalty distributions for independent artists\n\t- Newcastle's \"Digital Rights Hub\" supports local creators with smart contract solutions for digital asset management\n\n- Technical capabilities and limitations\n\t- Smart royalty contracts can handle complex payment structures, including multi-party splits and conditional payouts\n\t- Limitations include the need for robust legal frameworks, challenges in cross-chain interoperability, and the potential for smart contract vulnerabilities\n\n- Standards and frameworks\n\t- Industry standards such as ERC-2981 (NFT Royalty Standard) and ERC-721 (NFT Standard) are widely adopted for royalty management\n\t- Frameworks like OpenZeppelin provide secure and audited smart contract templates for royalty distribution\n\n## Research & Literature\n\n- Key academic papers and sources\n\t- Buterin, V. (2014). \"A Next-Generation Smart Contract and Decentralized Application Platform.\" Ethereum White Paper. https://ethereum.org/en/whitepaper/\n\t- Atzei, N., Bartoletti, M., & Cimoli, T. (2017). \"A Survey of Attacks on Ethereum Smart Contracts.\" In International Conference on Principles of Security and Trust. https://doi.org/10.1007/978-3-662-54455-6_9\n\t- Wattenhofer, R. (2018). \"The Science of the Blockchain.\" In Distributed Ledger Technology: Research and Practice. https://doi.org/10.1145/3236765\n\n- Ongoing research directions\n\t- Legal enforceability of smart contracts in different jurisdictions\n\t- Scalability and interoperability of royalty distribution systems\n\t- Privacy-preserving smart contract designs\n\n## UK Context\n\n- British contributions and implementations\n\t- UK universities and research institutions, such as the University of Manchester and the University of Leeds, are actively researching smart contract applications in digital rights management\n\t- The UK Intellectual Property Office has published guidelines on the use of blockchain for intellectual property protection\n\n- North England innovation hubs (if relevant)\n\t- Manchester's \"Blockchain North\" initiative supports startups and researchers in developing smart contract solutions for creative industries\n\t- Leeds' \"Digital Innovation Hub\" fosters collaboration between academia and industry on blockchain-based royalty management\n\n- Regional case studies\n\t- \"Northern Lights\" in Manchester has successfully implemented smart royalty contracts for collaborative NFT projects, ensuring fair and transparent compensation for all contributors\n\t- \"Northern Beats\" in Leeds has automated royalty distributions for independent artists, reducing administrative overhead and increasing trust in the payment process\n\n## Future Directions\n\n- Emerging trends and developments\n\t- Increased adoption of smart royalty contracts in traditional industries such as publishing and film\n\t- Development of cross-chain royalty standards to facilitate interoperability between different blockchain platforms\n\n- Anticipated challenges\n\t- Legal and regulatory compliance across different jurisdictions\n\t- Ensuring the security and reliability of smart contract code\n\t- Addressing privacy concerns in royalty distribution systems\n\n- Research priorities\n\t- Legal enforceability and compliance of smart contracts\n\t- Scalability and interoperability of royalty distribution systems\n\t- Privacy-preserving smart contract designs\n\n## References\n\n1. Buterin, V. (2014). \"A Next-Generation Smart Contract and Decentralized Application Platform.\" Ethereum White Paper. https://ethereum.org/en/whitepaper/\n2. Atzei, N., Bartoletti, M., & Cimoli, T. (2017). \"A Survey of Attacks on Ethereum Smart Contracts.\" In International Conference on Principles of Security and Trust. https://doi.org/10.1007/978-3-662-54455-6_9\n3. Wattenhofer, R. (2018). \"The Science of the Blockchain.\" In Distributed Ledger Technology: Research and Practice. https://doi.org/10.1145/3236765\n4. UK Intellectual Property Office. (2023). \"Blockchain and Intellectual Property: Guidance for Creators and Businesses.\" https://www.gov.uk/government/publications/blockchain-and-intellectual-property-guidance-for-creators-and-businesses\n5. OpenZeppelin. (2025). \"Smart Contract Templates for Royalty Distribution.\" https://openzeppelin.com/contracts/\n6. ERC-2981: NFT Royalty Standard. (2025). https://eips.ethereum.org/EIPS/eip-2981\n7. ERC-721: NFT Standard. (2025). https://eips.ethereum.org/EIPS/eip-721\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
-  "backlinks": [],
+  "content": "- ### OntologyBlock\n  id:: smart-royalty-contract-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20272\n\t- preferred-term:: Smart Royalty Contract\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A programmable blockchain contract that automatically enforces royalty payment terms, calculates compensation amounts, and triggers distributions to creators and rights holders upon qualifying transactions in NFT and digital asset ecosystems.\n\t- source:: [[EIP-2981]]\n\t- maturity:: mature\n\t- owl:class:: mv:SmartRoyaltyContract\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[VirtualEconomyDomain]]\n\t- implementedInLayer:: [[MiddlewareLayer]]\n\t- #### Relationships\n\t  id:: smart-royalty-contract-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[NFT Standard Implementation]]\n\t\t- has-part:: [[Event Emitter]]\n\t\t- has-part:: [[Enforcement Module]]\n\t\t- has-part:: [[Payment Splitter]]\n\t\t- has-part:: [[Royalty Logic]]\n\t\t- has-part:: [[Royalty Registry]]\n\t\t- requires:: [[Payment Token]]\n\t\t- requires:: [[Oracle Service]]\n\t\t- requires:: [[Token Standard]]\n\t\t- requires:: [[Smart Contract Platform]]\n\t\t- enables:: [[Automated Payment Enforcement]]\n\t\t- enables:: [[Perpetual Creator Royalties]]\n\t\t- enables:: [[Royalty Verification]]\n\t\t- enables:: [[Multi-Recipient Distribution]]\n\t\t- is-required-by:: [[Smart Royalties Ledger]]\n\t\t- depends-on:: [[Metadata Storage]]\n\t\t- depends-on:: [[Wallet Infrastructure]]\n\t\t- depends-on:: [[Blockchain Network]]\n\t\t- depends-on:: [[Gas Fee Market]]\n\n## Academic Context\n\n- Brief contextual overview\n\t- Smart royalty contracts are a subset of blockchain-based smart contracts, designed to automate the enforcement, calculation, and distribution of royalty payments in digital asset ecosystems\n\t- These contracts encode the terms of royalty agreements directly into executable code, ensuring that creators and rights holders receive compensation automatically upon qualifying events such as sales, streams, or licencing of digital works\n\t- The academic foundations draw from distributed systems, cryptography, and contract law, with growing interdisciplinary research in blockchain governance and digital rights management\n\n- Key developments and current state\n\t- The integration of smart contracts into intellectual property management has matured, with robust implementations in NFT marketplaces, music streaming, and digital publishing\n\t- Research continues to address legal enforceability, cross-jurisdictional compliance, and the scalability of royalty distribution systems\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n\t- Smart royalty contracts are widely adopted in NFT marketplaces, digital art platforms, and music streaming services\n\t- Notable platforms include OpenSea, Rarible, and Audius, which use smart contracts to automate royalty payments for creators\n\t- In the UK, platforms such as Minted and Art Blocks have implemented smart royalty contracts for digital artists, ensuring transparent and timely compensation\n\n- UK and North England examples where relevant\n\t- Manchester-based digital art collective \"Northern Lights\" uses smart royalty contracts to manage payments for collaborative NFT projects\n\t- Leeds-based music streaming platform \"Northern Beats\" employs smart contracts to automate royalty distributions for independent artists\n\t- Newcastle's \"Digital Rights Hub\" supports local creators with smart contract solutions for digital asset management\n\n- Technical capabilities and limitations\n\t- Smart royalty contracts can handle complex payment structures, including multi-party splits and conditional payouts\n\t- Limitations include the need for robust legal frameworks, challenges in cross-chain interoperability, and the potential for smart contract vulnerabilities\n\n- Standards and frameworks\n\t- Industry standards such as ERC-2981 (NFT Royalty Standard) and ERC-721 (NFT Standard) are widely adopted for royalty management\n\t- Frameworks like OpenZeppelin provide secure and audited smart contract templates for royalty distribution\n\n## Research & Literature\n\n- Key academic papers and sources\n\t- Buterin, V. (2014). \"A Next-Generation Smart Contract and Decentralized Application Platform.\" Ethereum White Paper. https://ethereum.org/en/whitepaper/\n\t- Atzei, N., Bartoletti, M., & Cimoli, T. (2017). \"A Survey of Attacks on Ethereum Smart Contracts.\" In International Conference on Principles of Security and Trust. https://doi.org/10.1007/978-3-662-54455-6_9\n\t- Wattenhofer, R. (2018). \"The Science of the Blockchain.\" In Distributed Ledger Technology: Research and Practice. https://doi.org/10.1145/3236765\n\n- Ongoing research directions\n\t- Legal enforceability of smart contracts in different jurisdictions\n\t- Scalability and interoperability of royalty distribution systems\n\t- Privacy-preserving smart contract designs\n\n## UK Context\n\n- British contributions and implementations\n\t- UK universities and research institutions, such as the University of Manchester and the University of Leeds, are actively researching smart contract applications in digital rights management\n\t- The UK Intellectual Property Office has published guidelines on the use of blockchain for intellectual property protection\n\n- North England innovation hubs (if relevant)\n\t- Manchester's \"Blockchain North\" initiative supports startups and researchers in developing smart contract solutions for creative industries\n\t- Leeds' \"Digital Innovation Hub\" fosters collaboration between academia and industry on blockchain-based royalty management\n\n- Regional case studies\n\t- \"Northern Lights\" in Manchester has successfully implemented smart royalty contracts for collaborative NFT projects, ensuring fair and transparent compensation for all contributors\n\t- \"Northern Beats\" in Leeds has automated royalty distributions for independent artists, reducing administrative overhead and increasing trust in the payment process\n\n## Future Directions\n\n- Emerging trends and developments\n\t- Increased adoption of smart royalty contracts in traditional industries such as publishing and film\n\t- Development of cross-chain royalty standards to facilitate interoperability between different blockchain platforms\n\n- Anticipated challenges\n\t- Legal and regulatory compliance across different jurisdictions\n\t- Ensuring the security and reliability of smart contract code\n\t- Addressing privacy concerns in royalty distribution systems\n\n- Research priorities\n\t- Legal enforceability and compliance of smart contracts\n\t- Scalability and interoperability of royalty distribution systems\n\t- Privacy-preserving smart contract designs\n\n## References\n\n1. Buterin, V. (2014). \"A Next-Generation Smart Contract and Decentralized Application Platform.\" Ethereum White Paper. https://ethereum.org/en/whitepaper/\n2. Atzei, N., Bartoletti, M., & Cimoli, T. (2017). \"A Survey of Attacks on Ethereum Smart Contracts.\" In International Conference on Principles of Security and Trust. https://doi.org/10.1007/978-3-662-54455-6_9\n3. Wattenhofer, R. (2018). \"The Science of the Blockchain.\" In Distributed Ledger Technology: Research and Practice. https://doi.org/10.1145/3236765\n4. UK Intellectual Property Office. (2023). \"Blockchain and Intellectual Property: Guidance for Creators and Businesses.\" https://www.gov.uk/government/publications/blockchain-and-intellectual-property-guidance-for-creators-and-businesses\n5. OpenZeppelin. (2025). \"Smart Contract Templates for Royalty Distribution.\" https://openzeppelin.com/contracts/\n6. ERC-2981: NFT Royalty Standard. (2025). https://eips.ethereum.org/EIPS/eip-2981\n7. ERC-721: NFT Standard. (2025). https://eips.ethereum.org/EIPS/eip-721\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Smart Royalties Ledger"
+  ],
   "wiki_links": [
-    "Metaverse"
+    "Multi-Recipient Distribution",
+    "EIP-2981",
+    "Metadata Storage",
+    "Wallet Infrastructure",
+    "NFT Standard Implementation",
+    "Token Standard",
+    "Royalty Logic",
+    "Smart Royalties Ledger",
+    "Blockchain Network",
+    "MiddlewareLayer",
+    "Oracle Service",
+    "Gas Fee Market",
+    "Event Emitter",
+    "Automated Payment Enforcement",
+    "Payment Token",
+    "Royalty Verification",
+    "Smart Contract Platform",
+    "Enforcement Module",
+    "VirtualEconomyDomain",
+    "Perpetual Creator Royalties",
+    "Payment Splitter",
+    "Royalty Registry"
   ],
   "ontology": {
     "term_id": "20272",
     "preferred_term": "Smart Royalty Contract",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#SmartRoyaltyContract",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "A programmable blockchain contract that automatically enforces royalty payment terms, calculates compensation amounts, and triggers distributions to creators and rights holders upon qualifying transactions in NFT and digital asset ecosystems.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:SmartRoyaltyContract",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "has_part": [
+      "Event Emitter",
+      "Enforcement Module",
+      "Payment Splitter",
+      "Royalty Logic",
+      "Royalty Registry"
+    ],
+    "is_part_of": [
+      "NFT Standard Implementation"
+    ],
+    "requires": [
+      "Payment Token",
+      "Oracle Service",
+      "Token Standard",
+      "Smart Contract Platform"
+    ],
+    "depends_on": [
+      "Metadata Storage",
+      "Wallet Infrastructure",
+      "Blockchain Network",
+      "Gas Fee Market"
+    ],
+    "enables": [
+      "Automated Payment Enforcement",
+      "Perpetual Creator Royalties",
+      "Royalty Verification",
+      "Multi-Recipient Distribution"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "VirtualEconomyDomain"
+    ],
+    "implemented_in_layer": [
+      "MiddlewareLayer"
+    ],
+    "source": [
+      "EIP-2981"
+    ],
+    "other_relationships": {
+      "is-required-by": [
+        "Smart Royalties Ledger"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20272' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

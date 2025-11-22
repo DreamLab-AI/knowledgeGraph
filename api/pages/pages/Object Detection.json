@@ -1,0 +1,58 @@
+{
+  "id": "Object Detection",
+  "title": "Object Detection",
+  "content": "- ### OntologyBlock\n  id:: object-detection-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0358\n\t- preferred-term:: Object Detection\n\t- source-domain:: ai\n\t- owl:class:: ai:ObjectDetection\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Object Detection is the computer vision task of identifying and localising multiple objects within an image by predicting bounding boxes and class labels for each detected instance. Object detectors (YOLO, Faster R-CNN, DETR) combine classification and localisation, outputting spatial coordinates and class probabilities for all objects of interest in real-time or near-real-time performance.\n\t- #### Relationships\n\t  id:: object-detection-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[ComputerVision]]\n\n## Object Detection\n\nObject Detection refers to object detection is the computer vision task of identifying and localising multiple objects within an image by predicting bounding boxes and class labels for each detected instance. object detectors (yolo, faster r-cnn, detr) combine classification and localisation, outputting spatial coordinates and class probabilities for all objects of interest in real-time or near-real-time performance.\n\n- Industry adoption spans autonomous vehicles, surveillance systems, medical imaging, retail inventory management, and agricultural monitoring[5]\n  - Real-time decision-making capabilities enable practical deployment in safety-critical applications[5]\n  - Confidence scoring mechanisms provide quantifiable uncertainty estimates alongside predictions[4]\n- Technical capabilities and performance characteristics\n  - Single-stage detectors achieve real-time performance through unified prediction pipelines[2]\n  - Two-stage detectors employ region proposal mechanisms followed by refinement, trading latency for enhanced accuracy[2]\n  - Mask R-CNN extends capabilities to pixel-wise segmentation for detailed object delineation[2]\n  - Non-maximum suppression techniques resolve overlapping bounding box predictions[3]\n- Processing pipeline standardisation\n  - Input preprocessing enhances image quality and normalisation[2]\n  - Feature extraction isolates shape, texture, and colour characteristics[2]\n  - Algorithm application generates predictions with associated confidence metrics[2]\n  - Bounding box coordinate calculation and post-processing derive actionable insights[3]\n- Current limitations remain evident in edge cases\n  - Occlusion handling and small object detection present ongoing challenges\n  - Domain-specific fine-tuning requirements persist despite transfer learning advances\n  - Computational resource demands vary significantly across model architectures\n\n## Technical Details\n\n- **Id**: object-detection-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Research & Literature\n\n- Foundational methodologies and contemporary developments\n  - Girshick, R., Donahue, J., Darrell, T., & Malik, J. (2014). \"Rich feature hierarchies for accurate object detection and semantic segmentation.\" *IEEE Conference on Computer Vision and Pattern Recognition (CVPR)*\n  - Redmon, J., Divvala, S., Girshick, R., & Farhadi, A. (2016). \"You Only Look Once: Unified, Real-Time Object Detection.\" *IEEE Conference on Computer Vision and Pattern Recognition (CVPR)*\n  - He, K., Gkioxari, G., Dollár, P., & Girshick, R. (2017). \"Mask R-CNN.\" *IEEE International Conference on Computer Vision (ICCV)*\n  - Carion, N., Massa, F., Synnaeve, G., Usunier, N., Kirillov, A., & Zagoruyko, S. (2020). \"End-to-End Object Detection with Transformers (DETR).\" *European Conference on Computer Vision (ECCV)*\n- Ongoing research directions\n  - Transformer-based architectures continue displacing CNN-centric approaches[1]\n  - Efficiency optimisation for edge deployment and resource-constrained environments\n  - Multi-modal fusion integrating RGB, thermal, and LiDAR data streams\n  - Few-shot and zero-shot learning paradigms reducing annotation requirements\n\n## UK Context\n\n- British academic contributions to object detection research\n  - University of Oxford and University of Cambridge maintain active computer vision research programmes with significant object detection contributions\n  - DeepMind (London-based) has advanced transformer architectures applicable to detection tasks\n- North England innovation and implementation\n  - Manchester's thriving AI and robotics sector increasingly incorporates object detection in autonomous systems and industrial applications\n  - Leeds hosts significant computer vision research initiatives within its university and technology sectors\n  - Newcastle's robotics and autonomous systems clusters employ detection technologies in manufacturing and logistics optimisation\n  - Sheffield's advanced manufacturing sector utilises object detection for quality assurance and process automation\n- Regional case studies and applications\n  - UK retail sector (particularly Northern chains) implements inventory tracking systems leveraging object detection for stock management\n  - Autonomous vehicle testing programmes across UK regions employ detection systems for pedestrian and obstacle recognition\n  - NHS trusts increasingly adopt medical imaging object detection for tumour localisation and anomaly identification\n\n## Future Directions\n\n- Emerging technical trajectories\n  - Continued architectural evolution towards efficient transformer designs balancing accuracy and computational cost[1]\n  - Integration with multimodal learning frameworks combining visual, textual, and sensor data\n  - Adversarial robustness improvements addressing real-world deployment challenges\n  - Explainability mechanisms enhancing interpretability for regulated domains (medical, autonomous systems)\n- Anticipated challenges and research priorities\n  - Domain adaptation remains critical for cross-dataset generalisation\n  - Computational efficiency for edge deployment without sacrificing accuracy\n  - Handling extreme scale variations and cluttered scenes\n  - Ethical considerations regarding surveillance applications and bias mitigation\n- Industry evolution\n  - Consolidation around efficient, production-ready architectures suitable for deployment at scale\n  - Increased emphasis on interpretability and uncertainty quantification for safety-critical applications\n  - Growing demand for specialised models addressing vertical-specific requirements (medical, autonomous driving, retail)\n\n## References\n\n[1] HiringNet. \"Object Detection: State-of-the-Art Models in 2025.\" Available at: hiringnet.com/object-detection-state-of-the-art-models-in-2025\n[2] TechnoLynx. \"A Complete Guide to Object Detection in 2025.\" Available at: technolynx.com/post/a-complete-guide-to-object-detection-in-2025\n[3] GeeksforGeeks. \"What is Object Detection in Computer Vision?\" Last Updated: 6 November 2025. Available at: geeksforgeeks.org/computer-vision/what-is-object-detection-in-computer-vision/\n[4] Roboflow Blog. \"What Is Object Detection? How AI Sees the World.\" Available at: blog.roboflow.com/object-detection/\n[5] HiTech Digital. \"Object Detection Guide 2025: Master Techniques & Tools.\" Available at: hitechdigital.com/blog/object-detection-guide\n[6] OpenCV. \"What is Computer Vision in 2025? A Beginners Guide.\" Available at: opencv.org/blog/what-is-computer-vision/\n[7] Viam. \"Object detection guide from a computer vision expert (2025).\" Available at: viam.com/post/computer-vision-object-detection-guide\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Instance Segmentation",
+    "Perception System"
+  ],
+  "wiki_links": [
+    "ComputerVision"
+  ],
+  "ontology": {
+    "term_id": "AI-0358",
+    "preferred_term": "Object Detection",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#ObjectDetection",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Object Detection is the computer vision task of identifying and localising multiple objects within an image by predicting bounding boxes and class labels for each detected instance. Object detectors (YOLO, Faster R-CNN, DETR) combine classification and localisation, outputting spatial coordinates and class probabilities for all objects of interest in real-time or near-real-time performance.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:ObjectDetection",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "ComputerVision"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

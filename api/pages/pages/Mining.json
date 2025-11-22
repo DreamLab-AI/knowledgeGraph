@@ -1,55 +1,47 @@
 {
   "id": "Mining",
   "title": "Mining",
-  "content": "- ### OntologyBlock\n  id:: mining-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0053\n\n    - filename-history:: [\"BC-0053-mining.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[BlockchainTechnology]]\n    - term-id:: BC-0053\n    - preferred-term:: Mining\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-14\n\n  - **Definition**\n    - definition:: Proof-of-work block creation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Mining\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[ConsensusDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: mining-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0053\n\t- preferred-term:: Mining\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Proof-of-work block creation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:Mining\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[ConsensusDomain]]",
   "backlinks": [
     "BC-0056-difficulty-adjustment",
     "BC-0064-mining-pool",
-    "Blockchain Entity",
     "BC-0070-halving",
     "BC-0067-difficulty-target",
-    "BC 0102 Inflation",
-    "Digital Twin of the Customer",
-    "BC 0115 minting",
+    "Cryptocurrency",
     "BC 0110 fee market",
     "Runes and Glyphs",
-    "BC 0112 inflationary token",
+    "Difficulty Target",
     "BC-0085-selfish-mining",
     "BC-0055-block-reward",
-    "BC 0104 supply cap",
-    "Bitcoin",
     "BC-0012-block-reward",
     "BC-0054-miner",
     "BC-0069-mining-reward",
-    "BC 0103 Halving",
     "SHA-256",
     "BC-0063-network-hash-rate",
     "BC-0065-solo-mining"
   ],
   "wiki_links": [
-    "ISO/IEC 23257:2021",
     "NIST NISTIR",
-    "BlockchainTechnology",
+    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
-    "ConsensusDomain",
-    "BlockchainEntity"
+    "ConsensusDomain"
   ],
   "ontology": {
     "term_id": "BC-0053",
     "preferred_term": "Mining",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/blockchain#Mining",
-    "source_domain": "blockchain",
-    "domain": "blockchain",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
     "definition": "Proof-of-work block creation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
     "scope_note": null,
     "status": "complete",
     "maturity": "mature",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-11-14",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "bc:Mining",
@@ -63,9 +55,7 @@
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [
-      "BlockchainEntity via is"
-    ],
+    "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
@@ -80,8 +70,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

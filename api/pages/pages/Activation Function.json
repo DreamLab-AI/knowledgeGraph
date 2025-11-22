@@ -1,34 +1,39 @@
 {
   "id": "Activation Function",
   "title": "Activation Function",
-  "content": "- ### OntologyBlock\n  id:: activation-function-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0059\n\t- preferred-term:: Activation Function\n\t- source-domain:: ai\n\t- status:: draft\n\t- public-access:: true\n\n\n### Relationships\n- is-subclass-of:: [[NeuralNetwork]]\n\n## Academic Context\n\n- Activation functions are mathematical functions applied to the output of individual neurons in artificial neural networks.\n  - They introduce **non-linearity**, enabling networks to learn complex, non-linear relationships in data that linear models cannot capture.\n  - This non-linearity is essential for tasks such as image recognition, natural language processing, and other sophisticated pattern recognition problems.\n- The output of a neuron is computed as the activation function applied to the weighted sum of inputs plus a bias term.\n  - Formally: Output = ActivationFunction(Σ(Weight × Input) + Bias).\n- Activation functions are generally differentiable or piecewise differentiable, facilitating gradient-based optimisation methods like backpropagation.\n- Early foundational work established the universal approximation theorem, showing that neural networks with suitable activation functions can approximate any continuous function.\n  - Pinkus (1999) demonstrated that activation functions need not be bounded to satisfy universal approximation, paving the way for unbounded functions like ReLU.\n\n## Current Landscape (2025)\n\n- Activation functions remain a critical component in deep learning architectures, with several widely adopted types:\n  - **Sigmoid**: Outputs between 0 and 1; historically popular but prone to vanishing gradients.\n  - **Tanh**: Outputs between -1 and 1; zero-centred but still susceptible to gradient issues.\n  - **ReLU (Rectified Linear Unit)**: Outputs zero for negative inputs and identity for positive inputs; computationally efficient and mitigates vanishing gradients.\n  - Variants like Leaky ReLU, Parametric ReLU, and GELU address ReLU’s limitations such as dying neurons.\n- Industry adoption is extensive across sectors including finance, healthcare, and autonomous systems.\n  - UK companies and research institutions integrate these functions into AI solutions, with notable activity in Manchester and Leeds AI hubs.\n- Technical limitations persist:\n  - Vanishing and exploding gradients remain challenges in very deep networks.\n  - Activation functions can affect convergence speed and model generalisation.\n- Frameworks such as TensorFlow, PyTorch, and ONNX standardise activation function implementations, ensuring interoperability and optimisation.\n\n## Research & Literature\n\n- Key academic sources include:\n  - Pinkus, A. (1999). *Approximation theory of the MLP model in neural networks*. Acta Numerica, 8, 143-195. DOI: 10.1017/S0962492900002833\n  - Glorot, X., Bordes, A., & Bengio, Y. (2011). *Deep Sparse Rectifier Neural Networks*. Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics (AISTATS), 315-323.\n  - Hendrycks, D., & Gimpel, K. (2016). *Gaussian Error Linear Units (GELUs)*. arXiv:1606.08415.\n- Ongoing research explores:\n  - Novel activation functions that balance computational efficiency with improved gradient flow.\n  - Adaptive and learnable activation functions tailored to specific tasks.\n  - Theoretical analysis of activation function properties in very deep and wide networks.\n\n## UK Context\n\n- The UK is a significant contributor to activation function research and application, with universities such as the University of Manchester and University of Leeds hosting strong AI and machine learning groups.\n- North England innovation hubs, including Manchester’s AI Lab and Leeds’ Centre for AI, actively develop and deploy neural network models utilising advanced activation functions.\n- Regional case studies include collaborations between academia and industry in Newcastle focusing on healthcare diagnostics powered by deep learning models employing ReLU and its variants.\n\n## Future Directions\n\n- Emerging trends:\n  - Development of activation functions that dynamically adapt during training.\n  - Integration of activation functions with neuromorphic computing and spiking neural networks.\n  - Exploration of activation functions that improve robustness against adversarial attacks.\n- Anticipated challenges:\n  - Balancing model complexity with computational cost.\n  - Ensuring activation functions generalise well across diverse datasets and architectures.\n- Research priorities include:\n  - Formalising theoretical guarantees for new activation functions.\n  - Enhancing interpretability of neural network decisions via activation function analysis.\n  - Expanding activation function design to quantum and hybrid classical-quantum neural networks.\n\n## References\n\n1. Pinkus, A. (1999). Approximation theory of the MLP model in neural networks. *Acta Numerica*, 8, 143-195. https://doi.org/10.1017/S0962492900002833\n2. Glorot, X., Bordes, A., & Bengio, Y. (2011). Deep Sparse Rectifier Neural Networks. *Proceedings of AISTATS*, 315-323.\n3. Hendrycks, D., & Gimpel, K. (2016). Gaussian Error Linear Units (GELUs). arXiv:1606.08415.\n4. Meegle. Activation Functions In Neural Networks. Retrieved 2025.\n5. DataCamp. Introduction to Activation Functions in Neural Networks. Retrieved 2025.\n6. Google Developers. Neural Networks: Activation Functions. Retrieved 2025.\n7. Wikipedia contributors. Activation function. *Wikipedia*. Retrieved 2025.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
-  "backlinks": [],
+  "content": "- ### OntologyBlock\n  id:: unknown-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0059\n\t- preferred-term:: Activation Function\n\t- source-domain:: ai\n\t- owl:class:: ai:ActivationFunction\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: ### Primary Definition\n\t- maturity:: draft\n\t- owl:class:: mv:ActivationFunction\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: unknown-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[NeuralNetwork]]\n\n## Academic Context\n\n- Activation functions are mathematical functions applied to the output of individual neurons in artificial neural networks.\n  - They introduce **non-linearity**, enabling networks to learn complex, non-linear relationships in data that linear models cannot capture.\n  - This non-linearity is essential for tasks such as image recognition, natural language processing, and other sophisticated pattern recognition problems.\n- The output of a neuron is computed as the activation function applied to the weighted sum of inputs plus a bias term.\n  - Formally: Output = ActivationFunction(Σ(Weight × Input) + Bias).\n- Activation functions are generally differentiable or piecewise differentiable, facilitating gradient-based optimisation methods like backpropagation.\n- Early foundational work established the universal approximation theorem, showing that neural networks with suitable activation functions can approximate any continuous function.\n  - Pinkus (1999) demonstrated that activation functions need not be bounded to satisfy universal approximation, paving the way for unbounded functions like ReLU.\n\n## Current Landscape (2025)\n\n- Activation functions remain a critical component in deep learning architectures, with several widely adopted types:\n  - **Sigmoid**: Outputs between 0 and 1; historically popular but prone to vanishing gradients.\n  - **Tanh**: Outputs between -1 and 1; zero-centred but still susceptible to gradient issues.\n  - **ReLU (Rectified Linear Unit)**: Outputs zero for negative inputs and identity for positive inputs; computationally efficient and mitigates vanishing gradients.\n  - Variants like Leaky ReLU, Parametric ReLU, and GELU address ReLU’s limitations such as dying neurons.\n- Industry adoption is extensive across sectors including finance, healthcare, and autonomous systems.\n  - UK companies and research institutions integrate these functions into AI solutions, with notable activity in Manchester and Leeds AI hubs.\n- Technical limitations persist:\n  - Vanishing and exploding gradients remain challenges in very deep networks.\n  - Activation functions can affect convergence speed and model generalisation.\n- Frameworks such as TensorFlow, PyTorch, and ONNX standardise activation function implementations, ensuring interoperability and optimisation.\n\n## Research & Literature\n\n- Key academic sources include:\n  - Pinkus, A. (1999). *Approximation theory of the MLP model in neural networks*. Acta Numerica, 8, 143-195. DOI: 10.1017/S0962492900002833\n  - Glorot, X., Bordes, A., & Bengio, Y. (2011). *Deep Sparse Rectifier Neural Networks*. Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics (AISTATS), 315-323.\n  - Hendrycks, D., & Gimpel, K. (2016). *Gaussian Error Linear Units (GELUs)*. arXiv:1606.08415.\n- Ongoing research explores:\n  - Novel activation functions that balance computational efficiency with improved gradient flow.\n  - Adaptive and learnable activation functions tailored to specific tasks.\n  - Theoretical analysis of activation function properties in very deep and wide networks.\n\n## UK Context\n\n- The UK is a significant contributor to activation function research and application, with universities such as the University of Manchester and University of Leeds hosting strong AI and machine learning groups.\n- North England innovation hubs, including Manchester’s AI Lab and Leeds’ Centre for AI, actively develop and deploy neural network models utilising advanced activation functions.\n- Regional case studies include collaborations between academia and industry in Newcastle focusing on healthcare diagnostics powered by deep learning models employing ReLU and its variants.\n\n## Future Directions\n\n- Emerging trends:\n  - Development of activation functions that dynamically adapt during training.\n  - Integration of activation functions with neuromorphic computing and spiking neural networks.\n  - Exploration of activation functions that improve robustness against adversarial attacks.\n- Anticipated challenges:\n  - Balancing model complexity with computational cost.\n  - Ensuring activation functions generalise well across diverse datasets and architectures.\n- Research priorities include:\n  - Formalising theoretical guarantees for new activation functions.\n  - Enhancing interpretability of neural network decisions via activation function analysis.\n  - Expanding activation function design to quantum and hybrid classical-quantum neural networks.\n\n## References\n\n1. Pinkus, A. (1999). Approximation theory of the MLP model in neural networks. *Acta Numerica*, 8, 143-195. https://doi.org/10.1017/S0962492900002833\n2. Glorot, X., Bordes, A., & Bengio, Y. (2011). Deep Sparse Rectifier Neural Networks. *Proceedings of AISTATS*, 315-323.\n3. Hendrycks, D., & Gimpel, K. (2016). Gaussian Error Linear Units (GELUs). arXiv:1606.08415.\n4. Meegle. Activation Functions In Neural Networks. Retrieved 2025.\n5. DataCamp. Introduction to Activation Functions in Neural Networks. Retrieved 2025.\n6. Google Developers. Neural Networks: Activation Functions. Retrieved 2025.\n7. Wikipedia contributors. Activation function. *Wikipedia*. Retrieved 2025.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Recurrent Neural Network"
+  ],
   "wiki_links": [
+    "MetaverseDomain",
     "NeuralNetwork"
   ],
   "ontology": {
     "term_id": "AI-0059",
     "preferred_term": "Activation Function",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/ai#ActivationFunction",
     "source_domain": "ai",
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
-    "definition": null,
+    "definition": "### Primary Definition",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "draft",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
+    "owl_class": "ai:ActivationFunction",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "NeuralNetwork"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -38,18 +43,15 @@
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "MetaverseDomain"
+    ],
     "implemented_in_layer": [],
     "source": [],
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: last-updated"
       ]
     }
   }

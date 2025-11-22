@@ -1,0 +1,68 @@
+{
+  "id": "Block Size",
+  "title": "Block Size",
+  "content": "- ### OntologyBlock\n  id:: block-size-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0013\n\t- preferred-term:: Block Size\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Data capacity limit of a block within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:BlockSize\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- implementedInLayer:: [[ConceptualLayer]]\n\t- #### Relationships\n\t  id:: block-size-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Entity]]\n\t\t- is-subclass-of:: [[DistributedDataStructure]]\n\n## Block Size\n\nBlock Size refers to data capacity limit of a block within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\n- Industry adoption and implementations\n\t- Most major blockchains have moved beyond simple fixed block size limits\n\t- Bitcoin uses a block weight limit of 4 million weight units, allowing for a theoretical maximum block size of 4 MB, though practical sizes are typically around 2 MB\n\t- Ethereum employs a gas limit per block, dynamically adjusting the amount of computation and data that can be processed\n\t- Alternative blockchains such as Litecoin and Dogecoin have different block size and block time parameters to optimise for specific use cases\n- Notable organisations and platforms\n\t- Bitstamp, Coinbase, and Yellow Card provide educational resources and trading platforms that reflect current block size practices\n\t- Academic and industry collaborations in the UK, including the University of Manchester and Leeds Beckett University, contribute to blockchain research and development\n- UK and North England examples where relevant\n\t- The University of Manchester’s Blockchain Research Group explores scalability solutions, including block size optimisation\n\t- Leeds Beckett University’s Centre for Digital Innovation has projects focused on blockchain applications in supply chain and finance\n\t- Newcastle University’s School of Computing Science investigates the impact of block size on network performance and security\n- Technical capabilities and limitations\n\t- Larger block sizes can increase transaction throughput but may lead to stales and temporary chain splits\n\t- Smaller block sizes enhance network resilience but can result in slower transaction processing and higher fees\n\t- Dynamic block size limits and weight-based systems offer a middle ground, balancing scalability and security\n- Standards and frameworks\n\t- The Bitcoin Improvement Proposal (BIP) process governs changes to block size and other parameters\n\t- Ethereum’s EIP (Ethereum Improvement Proposal) process similarly manages gas limit and block size adjustments\n\t- Industry standards such as the Blockchain Interoperability Alliance promote best practices for block size and other technical parameters\n\n## Technical Details\n\n- **Id**: block-size-standards\n- **Collapsed**: true\n- **Domain Prefix**: BC\n- **Sequence Number**: 0013\n- **Filename History**: [\"BC-0013-block-size.md\"]\n- **Public Access**: true\n- **Source Domain**: blockchain\n- **Status**: complete\n- **Last Updated**: 2025-10-28\n- **Maturity**: mature\n- **Source**: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n- **Authority Score**: 0.95\n- **Owl:Class**: bc:BlockSize\n- **Owl:Physicality**: VirtualEntity\n- **Owl:Role**: Object\n- **Owl:Inferred Class**: bc:VirtualObject\n- **Belongstodomain**: [[BlockchainDomain]]\n- **Implementedinlayer**: [[ConceptualLayer]]\n- **Is Subclass Of**: [[Blockchain Entity]], [[DistributedDataStructure]]\n\n## Research & Literature\n\n- Key academic papers and sources\n\t- Nakamoto, S. (2008). Bitcoin: A Peer-to-Peer Electronic Cash System. *Cryptology ePrint Archive*. https://eprint.iacr.org/2008/424\n\t- Decker, C., & Wattenhofer, R. (2013). Information Propagation in the Bitcoin Network. *IEEE P2P 2013 Proceedings*. https://doi.org/10.1109/P2P.2013.6688704\n\t- Eyal, I., & Sirer, E. G. (2014). Majority is not Enough: Bitcoin Mining is Vulnerable. *Financial Cryptography and Data Security*. https://doi.org/10.1007/978-3-662-45472-5_28\n\t- Sompolinsky, Y., & Zohar, A. (2015). Secure High-Rate Transaction Processing in Bitcoin. *Financial Cryptography and Data Security*. https://doi.org/10.1007/978-3-662-47854-7_37\n- Ongoing research directions\n\t- Optimising block size for different blockchain use cases\n\t- Investigating the impact of block size on network performance and security\n\t- Exploring dynamic and adaptive block size limits\n\n## UK Context\n\n- British contributions and implementations\n\t- The UK has a vibrant blockchain research community, with significant contributions from universities and industry\n\t- The National Cyber Security Centre (NCSC) provides guidance on blockchain security, including block size considerations\n- North England innovation hubs (if relevant)\n\t- Manchester, Leeds, Newcastle, and Sheffield are home to several blockchain innovation hubs and research centres\n\t- These hubs collaborate on projects that explore the practical implications of block size and other blockchain parameters\n- Regional case studies\n\t- The University of Manchester’s Blockchain Research Group has conducted studies on the impact of block size on transaction throughput and network resilience\n\t- Leeds Beckett University’s Centre for Digital Innovation has developed blockchain solutions for supply chain management, optimising block size for efficiency\n\n## Future Directions\n\n- Emerging trends and developments\n\t- Continued exploration of dynamic and adaptive block size limits\n\t- Integration of machine learning and AI to optimise block size in real-time\n\t- Increased focus on interoperability and standardisation across different blockchain platforms\n- Anticipated challenges\n\t- Balancing scalability with decentralisation and security\n\t- Addressing the potential for stales and temporary chain splits with larger block sizes\n\t- Ensuring that block size changes do not compromise network integrity\n- Research priorities\n\t- Developing robust models for predicting the impact of block size changes\n\t- Investigating the long-term effects of different block size strategies on network performance\n\t- Exploring the role of block size in emerging blockchain applications such as DeFi and NFTs\n\n## References\n\n1. Nakamoto, S. (2008). Bitcoin: A Peer-to-Peer Electronic Cash System. *Cryptology ePrint Archive*. https://eprint.iacr.org/2008/424\n2. Decker, C., & Wattenhofer, R. (2013). Information Propagation in the Bitcoin Network. *IEEE P2P 2013 Proceedings*. https://doi.org/10.1109/P2P.2013.6688704\n3. Eyal, I., & Sirer, E. G. (2014). Majority is not Enough: Bitcoin Mining is Vulnerable. *Financial Cryptography and Data Security*. https://doi.org/10.1007/978-3-662-45472-5_28\n4. Sompolinsky, Y., & Zohar, A. (2015). Secure High-Rate Transaction Processing in Bitcoin. *Financial Cryptography and Data Security*. https://doi.org/10.1007/978-3-662-47854-7_37\n5. Bitstamp. (2025). What is block size? https://www.bitstamp.net/en-gb/learn/crypto-101/what-is-block-size/\n6. Bitcoin Magazine. (2025). What Is The Bitcoin Block Size Limit? https://bitcoinmagazine.com/guides/what-is-the-bitcoin-block-size-limit\n7. CoinMarketCap Academy. (2025). Block Size Definition. https://coinmarketcap.com/academy/glossary/block-size\n8. Yellow Card Academy. (2025). Block Size Limit. https://academy.yellowcard.io/glossary/block-size-limit/\n9. Wikipedia. (2025). Bitcoin scalability problem. https://en.wikipedia.org/wiki/Bitcoin_scalability_problem\n10. Coinbase. (2025). Bitcoin block reward, block size, block time: what's the difference? https://www.coinbase.com/learn/crypto-basics/bitcoin-block-reward-block-size-block-time-whats-the-difference\n\n## Metadata\n\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "NIST NISTIR",
+    "BlockchainDomain",
+    "Blockchain Entity",
+    "ISO/IEC 23257:2021",
+    "ConceptualLayer",
+    "DistributedDataStructure",
+    "IEEE 2418.1"
+  ],
+  "ontology": {
+    "term_id": "BC-0013",
+    "preferred_term": "Block Size",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#BlockSize",
+    "source_domain": "blockchain",
+    "domain": "blockchain",
+    "domain_full_name": "",
+    "definition": "Data capacity limit of a block within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": "2025-10-28",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:BlockSize",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "bc:VirtualObject",
+    "is_subclass_of": [
+      "Blockchain Entity",
+      "DistributedDataStructure"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [
+      "ConceptualLayer"
+    ],
+    "source": [
+      "ISO/IEC 23257:2021",
+      "IEEE 2418.1",
+      "NIST NISTIR"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+      ]
+    }
+  }
+}

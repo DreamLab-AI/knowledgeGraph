@@ -1,23 +1,21 @@
 {
   "id": "NFT",
   "title": "NFT",
-  "content": "- ### OntologyBlock\n  id:: nft-ontology\n  collapsed:: true\n\t- ontology:: true\n    - is-subclass-of:: [[BlockchainTechnology]]\n\t- term-id:: BC-0141\n\t- preferred-term:: NFT\n\t- source-domain:: blockchain\n\t- status:: draft\n    - public-access:: true\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: bc:NFT\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- #### CrossDomainBridges\n\t\t- bc:authenticates:: [[VirtualWorld]]\n\t\t- bc:authenticates:: [[DigitalAvatar]]\n\t\t- bc:tokenizes:: [[Digital Goods]]",
+  "content": "- ### OntologyBlock\n  id:: nft-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0141\n\t- preferred-term:: NFT\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: bc:NFT\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- #### CrossDomainBridges\n\t  id:: nft-bridges\n\t  collapsed:: true\n\t\t- bc:authenticates:: [[VirtualWorld]]\n\t\t- bc:authenticates:: [[DigitalAvatar]]\n\t\t- bc:tokenizes:: [[Digital Goods]]",
   "backlinks": [
+    "BC 0114 burning mechanism",
     "Virtual Property Right",
-    "RGB and Client Side Validation",
-    "Digital Twin of the Customer",
-    "Creator Royalty Token",
     "Carbon Credit Token",
     "Runes and Glyphs",
-    "ETSI Domain Virtual Society",
     "Marketplace",
+    "Upscaling",
+    "Fractionalized NFT",
     "BC 0119 economic security"
   ],
   "wiki_links": [
-    "Digital Goods",
-    "BlockchainTechnology",
-    "BlockchainDomain",
     "DigitalAvatar",
+    "Digital Goods",
+    "BlockchainDomain",
     "VirtualWorld"
   ],
   "ontology": {
@@ -25,9 +23,9 @@
     "preferred_term": "NFT",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/blockchain#NFT",
-    "source_domain": "blockchain",
-    "domain": "blockchain",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
     "definition": "A component of the metaverse ecosystem.",
     "scope_note": null,
     "status": "draft",
@@ -60,9 +58,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

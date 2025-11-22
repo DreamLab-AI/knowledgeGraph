@@ -1,0 +1,57 @@
+{
+  "id": "rb-0095-safety-zone",
+  "title": "rb 0095 safety zone",
+  "content": "- ### OntologyBlock\n  id:: rb-0095-safety-zone-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0095\n\t- preferred-term:: rb 0095 safety zone\n\t- source-domain:: robotics\n\t- status:: draft\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: mv:rb0095safetyzone\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n### Domain & Architecture\n\t- belongsToDomain:: [[RoboticsDomain]]\n\t- maturity:: draft\n\n### Relationships\n\n- ### OntologyBlock\n  id:: rb-0095-safety-zone-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0095\n\t- preferred-term:: rb 0095 safety zone\n\t- source-domain:: robotics\n\t- status:: draft\n\t- definition:: ### Primary Definition\n**Safety Zone** - Safety Zone in robotics systems\n\t- maturity:: draft\n\t- owl:class:: mv:rb0095safetyzone\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[RoboticsDomain]]\n\t- is-subclass-of:: [[SafetyMechanisms]]",
+  "backlinks": [],
+  "wiki_links": [
+    "RoboticsDomain",
+    "SafetyMechanisms"
+  ],
+  "ontology": {
+    "term_id": "RB-0095",
+    "preferred_term": "rb 0095 safety zone",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#rb0095safetyzone",
+    "source_domain": "robotics",
+    "domain": "robotics",
+    "domain_full_name": "",
+    "definition": "### Primary Definition",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:rb0095safetyzone",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "RoboticsDomain",
+      "RoboticsDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'robotics'"
+      ]
+    }
+  }
+}

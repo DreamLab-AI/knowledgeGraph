@@ -1,51 +1,47 @@
 {
   "id": "Generative Model",
   "title": "Generative Model",
-  "content": "- ### OntologyBlock\n  id:: generativemodel-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0840\n    - filename-history:: [\"AI-0840-generativemodel.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0840\n    - preferred-term:: Generative Model\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:GenerativeModel\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[MachineLearning]] via is-subclass-of\n    - bridges-from:: [[SyntheticDataGenerator]] via has-part\n\n  - \n### Relationships\n- is-subclass-of:: [[DeepLearning]]",
+  "content": "- ### OntologyBlock\n  id:: generativemodel-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0840\n\t- preferred-term:: Generative Model\n\t- status:: complete\n\t- public-access:: true\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: ai:GenerativeModel\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: generativemodel-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[DeepLearning]]",
   "backlinks": [
-    "Variational Autoencoders"
+    "Synthetic Data Generator"
   ],
   "wiki_links": [
-    "DeepLearning",
-    "MachineLearning",
     "Artificial Intelligence",
-    "SyntheticDataGenerator"
+    "DeepLearning"
   ],
   "ontology": {
     "term_id": "AI-0840",
     "preferred_term": "Generative Model",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/ai#GenerativeModel",
-    "source_domain": "ai",
+    "source_domain": null,
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
-    "definition": "- maturity:: established",
+    "definition": null,
     "scope_note": null,
     "status": "complete",
     "maturity": "established",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-11-13",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "ai:GenerativeModel",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "DeepLearning"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [
-      "MachineLearning via is"
-    ],
-    "bridges_from": [
-      "SyntheticDataGenerator via has"
-    ],
+    "bridges_to": [],
+    "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
       "Artificial Intelligence"
@@ -57,9 +53,11 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

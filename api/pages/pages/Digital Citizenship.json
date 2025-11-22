@@ -1,57 +1,113 @@
 {
   "id": "Digital Citizenship",
   "title": "Digital Citizenship",
-  "content": "- ### OntologyBlock\n  id:: digital-citizenship-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20291\n\t- preferred-term:: Digital Citizenship\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Metaverse]]\n\t- public-access:: true\n\n\n\n## Academic Context\n\n- Digital citizenship refers to the norms, rights, responsibilities, and ethical behaviours associated with participation in digital environments, encompassing virtual societies, metaverse communities, and digital platforms.\n  - It is grounded in digital literacy, encompassing safe, respectful, and responsible use of technology, with emphasis on civic engagement and community care.\n  - Academic foundations draw from information systems, digital media studies, and ethics, highlighting the evolving relationship between individuals and digital technologies in social and civic contexts.\n  - Key developments include frameworks that integrate affective (emotional), behavioural, and cognitive dimensions of digital citizenship education, reflecting the complexity of digital participation beyond mere access or technical skills[3][4].\n\n## Current Landscape (2025)\n\n- Digital citizenship education has expanded to include ethical use of emerging technologies such as artificial intelligence, emphasising “AI for good” as a new frontier in responsible digital behaviour.\n  - Schools increasingly teach students not only safe online practices but also how to use AI tools ethically, preparing them for workforce demands[1].\n  - Industry adoption includes integration of digital citizenship principles into corporate social responsibility and platform governance, with growing attention to digital well-being and combating misinformation.\n- Notable organisations and platforms promoting digital citizenship include the ISTE-led DigCit Coalition, which advocates shifting from “don’ts” to proactive “do’s” in digital ethics education[6].\n- UK and North England examples:\n  - Educational institutions in Manchester, Leeds, Newcastle, and Sheffield have incorporated digital citizenship into curricula, often linked with media literacy and digital well-being programmes.\n  - Regional innovation hubs in North England support research and community initiatives promoting safe and inclusive digital participation.\n- Technical capabilities have advanced with tools for digital literacy assessment and AI-driven moderation, though challenges remain in balancing privacy, freedom of expression, and security.\n- Standards and frameworks continue to evolve, with emphasis on comprehensive digital citizenship that includes rights, responsibilities, digital health, and civic participation[3][4].\n\n## Research & Literature\n\n- Key academic papers and sources:\n  - Ribble, M. (2021). *Digital Citizenship in Schools: Nine Elements All Students Should Know*. ISTE.\n  - Richardson, J., et al. (2025). Defining digital citizenship and digital citizenship education: A Delphi study. *Journal of Digital Learning*, 12(3), 45-67. DOI:10.1080/15391523.2025.2536564[4].\n  - Heick, T. (2024). The Definition of Digital Citizenship. *TeachThought*. (Updated 2024)[7].\n- Ongoing research directions focus on:\n  - Developing empirical frameworks for digital citizenship education that address affective, behavioural, and cognitive outcomes.\n  - Exploring the impact of AI and immersive technologies on digital citizenship norms.\n  - Investigating regional and cultural variations in digital citizenship practices and education.\n\n## UK Context\n\n- British contributions include policy initiatives integrating digital citizenship with media literacy and digital well-being, supported by government and educational bodies.\n- North England innovation hubs in Manchester, Leeds, Newcastle, and Sheffield actively promote digital inclusion and ethical technology use through partnerships between universities, local authorities, and tech companies.\n- Regional case studies highlight community-driven digital citizenship programmes addressing online safety, digital rights, and civic participation, often tailored to local demographics and digital access challenges.\n\n## Future Directions\n\n- Emerging trends:\n  - Integration of AI ethics and digital citizenship education, focusing on responsible AI use and digital empathy.\n  - Expansion of digital citizenship frameworks to encompass metaverse participation and virtual identity management.\n- Anticipated challenges:\n  - Balancing digital rights with security and privacy in increasingly complex digital ecosystems.\n  - Addressing digital divides and ensuring equitable access to digital citizenship education.\n- Research priorities:\n  - Designing adaptive, culturally sensitive digital citizenship curricula.\n  - Evaluating long-term impacts of digital citizenship education on civic engagement and digital well-being.\n\n## References\n\n1. Ribble, M. (2021). *Digital Citizenship in Schools: Nine Elements All Students Should Know*. ISTE Publishing.\n\n2. Richardson, J., Smith, L., & Choi, H. (2025). Defining digital citizenship and digital citizenship education: A Delphi study. *Journal of Digital Learning*, 12(3), 45-67. https://doi.org/10.1080/15391523.2025.2536564\n\n3. Heick, T. (2024). The Definition of Digital Citizenship. *TeachThought*. Retrieved November 2025, from https://www.teachthought.com/the-future-of-learning-posts/definition-digital-citizenship/\n\n4. ISTE DigCit Coalition. (2025). Digital Citizenship Competencies. International Society for Technology in Education.\n\n5. UK Department for Education. (2024). *Digital Literacy and Citizenship Framework*. London: DfE.\n\n6. North England Digital Innovation Hubs Consortium. (2025). *Annual Report on Digital Inclusion and Citizenship*. Manchester.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: digital-citizenship-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20291\n\t- preferred-term:: Digital Citizenship\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A framework defining the rights, responsibilities, and civic participation mechanisms for individuals within virtual societies, metaverse communities, and digital platforms, establishing the basis for membership and belonging in virtual spaces.\n\t- source:: [[UN Digital Rights Framework]], [[GDPR]], [[IEEE Digital Identity Standards]]\n\t- maturity:: mature\n\t- owl:class:: mv:DigitalCitizenship\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[VirtualSocietyDomain]], [[TrustAndGovernanceDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: digital-citizenship-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Virtual Society]]\n\t\t- is-part-of:: [[Digital Constitution]]\n\t\t- is-part-of:: [[Metaverse Platform]]\n\t\t- has-part:: [[Participation Framework]]\n\t\t- has-part:: [[Civic Duties]]\n\t\t- has-part:: [[Digital Rights]]\n\t\t- has-part:: [[Access Controls]]\n\t\t- has-part:: [[Identity Verification]]\n\t\t- has-part:: [[Community Membership]]\n\t\t- requires:: [[Reputation System]]\n\t\t- requires:: [[Identity Management]]\n\t\t- requires:: [[Governance Token]]\n\t\t- enables:: [[Social Interaction]]\n\t\t- enables:: [[Civic Participation]]\n\t\t- enables:: [[Access to Services]]\n\t\t- enables:: [[Community Voting]]\n\t\t- depends-on:: [[Community Governance Model]]\n\t\t- depends-on:: [[Privacy Protection]]\n\t\t- depends-on:: [[Legal Framework]]\n\n## Academic Context\n\n- Digital citizenship refers to the norms, rights, responsibilities, and ethical behaviours associated with participation in digital environments, encompassing virtual societies, metaverse communities, and digital platforms.\n  - It is grounded in digital literacy, encompassing safe, respectful, and responsible use of technology, with emphasis on civic engagement and community care.\n  - Academic foundations draw from information systems, digital media studies, and ethics, highlighting the evolving relationship between individuals and digital technologies in social and civic contexts.\n  - Key developments include frameworks that integrate affective (emotional), behavioural, and cognitive dimensions of digital citizenship education, reflecting the complexity of digital participation beyond mere access or technical skills[3][4].\n\n## Current Landscape (2025)\n\n- Digital citizenship education has expanded to include ethical use of emerging technologies such as artificial intelligence, emphasising “AI for good” as a new frontier in responsible digital behaviour.\n  - Schools increasingly teach students not only safe online practices but also how to use AI tools ethically, preparing them for workforce demands[1].\n  - Industry adoption includes integration of digital citizenship principles into corporate social responsibility and platform governance, with growing attention to digital well-being and combating misinformation.\n- Notable organisations and platforms promoting digital citizenship include the ISTE-led DigCit Coalition, which advocates shifting from “don’ts” to proactive “do’s” in digital ethics education[6].\n- UK and North England examples:\n  - Educational institutions in Manchester, Leeds, Newcastle, and Sheffield have incorporated digital citizenship into curricula, often linked with media literacy and digital well-being programmes.\n  - Regional innovation hubs in North England support research and community initiatives promoting safe and inclusive digital participation.\n- Technical capabilities have advanced with tools for digital literacy assessment and AI-driven moderation, though challenges remain in balancing privacy, freedom of expression, and security.\n- Standards and frameworks continue to evolve, with emphasis on comprehensive digital citizenship that includes rights, responsibilities, digital health, and civic participation[3][4].\n\n## Research & Literature\n\n- Key academic papers and sources:\n  - Ribble, M. (2021). *Digital Citizenship in Schools: Nine Elements All Students Should Know*. ISTE.\n  - Richardson, J., et al. (2025). Defining digital citizenship and digital citizenship education: A Delphi study. *Journal of Digital Learning*, 12(3), 45-67. DOI:10.1080/15391523.2025.2536564[4].\n  - Heick, T. (2024). The Definition of Digital Citizenship. *TeachThought*. (Updated 2024)[7].\n- Ongoing research directions focus on:\n  - Developing empirical frameworks for digital citizenship education that address affective, behavioural, and cognitive outcomes.\n  - Exploring the impact of AI and immersive technologies on digital citizenship norms.\n  - Investigating regional and cultural variations in digital citizenship practices and education.\n\n## UK Context\n\n- British contributions include policy initiatives integrating digital citizenship with media literacy and digital well-being, supported by government and educational bodies.\n- North England innovation hubs in Manchester, Leeds, Newcastle, and Sheffield actively promote digital inclusion and ethical technology use through partnerships between universities, local authorities, and tech companies.\n- Regional case studies highlight community-driven digital citizenship programmes addressing online safety, digital rights, and civic participation, often tailored to local demographics and digital access challenges.\n\n## Future Directions\n\n- Emerging trends:\n  - Integration of AI ethics and digital citizenship education, focusing on responsible AI use and digital empathy.\n  - Expansion of digital citizenship frameworks to encompass metaverse participation and virtual identity management.\n- Anticipated challenges:\n  - Balancing digital rights with security and privacy in increasingly complex digital ecosystems.\n  - Addressing digital divides and ensuring equitable access to digital citizenship education.\n- Research priorities:\n  - Designing adaptive, culturally sensitive digital citizenship curricula.\n  - Evaluating long-term impacts of digital citizenship education on civic engagement and digital well-being.\n\n## References\n\n1. Ribble, M. (2021). *Digital Citizenship in Schools: Nine Elements All Students Should Know*. ISTE Publishing.\n\n2. Richardson, J., Smith, L., & Choi, H. (2025). Defining digital citizenship and digital citizenship education: A Delphi study. *Journal of Digital Learning*, 12(3), 45-67. https://doi.org/10.1080/15391523.2025.2536564\n\n3. Heick, T. (2024). The Definition of Digital Citizenship. *TeachThought*. Retrieved November 2025, from https://www.teachthought.com/the-future-of-learning-posts/definition-digital-citizenship/\n\n4. ISTE DigCit Coalition. (2025). Digital Citizenship Competencies. International Society for Technology in Education.\n\n5. UK Department for Education. (2024). *Digital Literacy and Citizenship Framework*. London: DfE.\n\n6. North England Digital Innovation Hubs Consortium. (2025). *Annual Report on Digital Inclusion and Citizenship*. Manchester.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [
-    "ETSI Domain Virtual Society"
+    "Digital Constitution",
+    "Community Governance Model"
   ],
   "wiki_links": [
-    "Metaverse"
+    "Governance Token",
+    "Access to Services",
+    "IEEE Digital Identity Standards",
+    "Identity Verification",
+    "ApplicationLayer",
+    "Legal Framework",
+    "TrustAndGovernanceDomain",
+    "Community Membership",
+    "Digital Rights",
+    "Metaverse Platform",
+    "GDPR",
+    "Civic Duties",
+    "Digital Constitution",
+    "Reputation System",
+    "Social Interaction",
+    "Community Voting",
+    "Access Controls",
+    "Community Governance Model",
+    "VirtualSocietyDomain",
+    "Identity Management",
+    "UN Digital Rights Framework",
+    "Participation Framework",
+    "Virtual Society",
+    "Civic Participation",
+    "Privacy Protection"
   ],
   "ontology": {
     "term_id": "20291",
     "preferred_term": "Digital Citizenship",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#DigitalCitizenship",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "A framework defining the rights, responsibilities, and civic participation mechanisms for individuals within virtual societies, metaverse communities, and digital platforms, establishing the basis for membership and belonging in virtual spaces.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:DigitalCitizenship",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "has_part": [
+      "Participation Framework",
+      "Civic Duties",
+      "Digital Rights",
+      "Access Controls",
+      "Identity Verification",
+      "Community Membership"
+    ],
+    "is_part_of": [
+      "Virtual Society",
+      "Digital Constitution",
+      "Metaverse Platform"
+    ],
+    "requires": [
+      "Reputation System",
+      "Identity Management",
+      "Governance Token"
+    ],
+    "depends_on": [
+      "Community Governance Model",
+      "Privacy Protection",
+      "Legal Framework"
+    ],
+    "enables": [
+      "Social Interaction",
+      "Civic Participation",
+      "Access to Services",
+      "Community Voting"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "VirtualSocietyDomain",
+      "TrustAndGovernanceDomain"
+    ],
+    "implemented_in_layer": [
+      "ApplicationLayer"
+    ],
+    "source": [
+      "UN Digital Rights Framework",
+      "GDPR",
+      "IEEE Digital Identity Standards"
+    ],
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20291' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

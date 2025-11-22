@@ -1,0 +1,55 @@
+{
+  "id": "Serious Incident",
+  "title": "Serious Incident",
+  "content": "- ### OntologyBlock\n  id:: serious-incident-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0519\n\t- preferred-term:: Serious Incident\n\t- source-domain:: ai\n\t- owl:class:: ai:SeriousIncident\n\t- status:: active\n\t- public-access:: true\n\t- definition:: An incident or malfunctioning of an AI system that directly or indirectly leads to death, serious health damage, serious disruption of critical infrastructure, or serious fundamental rights infringements.\n\t- #### Relationships\n\t  id:: serious-incident-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AIRiskManagement]]\n\n## Serious Incident\n\nSerious Incident refers to an incident or malfunctioning of an ai system that directly or indirectly leads to death, serious health damage, serious disruption of critical infrastructure, or serious fundamental rights infringements.\n\n- Industry adoption of incident reporting and management frameworks for AI systems has accelerated, driven by regulatory expectations and public trust concerns.\n  - Notable organisations such as the UK Information Commissioner's Office (ICO) have introduced statutory codes of practice on AI and automated decision-making, focusing on high-risk applications and serious incidents.\n  - UK regulators including the Financial Conduct Authority (FCA) and Competition and Markets Authority (CMA) apply sector-specific principles addressing safety, transparency, and accountability.\n  - In North England, innovation hubs in Manchester and Leeds are developing AI safety tools integrated into critical infrastructure monitoring, reflecting regional commitment to mitigating serious incidents.\n- Technical capabilities include enhanced monitoring, anomaly detection, and incident response protocols, though limitations remain in predicting indirect or systemic harms.\n- Standards and frameworks are evolving, with the UK adopting a principles-based approach supplemented by forthcoming legislation expected in late 2026, contrasting with the EU’s more prescriptive AI Act.\n\n## Technical Details\n\n- **Id**: serious-incident-ontology\n- **Collapsed**: true\n- **Source Domain**: metaverse\n- **Status**: draft\n- **Public Access**: true\n\n## Research & Literature\n\n- Key academic papers and sources:\n  - Amodei, D., Olah, C., Steinhardt, J., Christiano, P., Schulman, J., & Mané, D. (2016). Concrete Problems in AI Safety. *arXiv preprint arXiv:1606.06565*. https://doi.org/10.48550/arXiv.1606.06565\n  - Cath, C., Wachter, S., Mittelstadt, B., Taddeo, M., & Floridi, L. (2018). Artificial Intelligence and the ‘Good Society’: The US, EU, and UK Approach. *Science and Engineering Ethics*, 24(2), 505–528. https://doi.org/10.1007/s11948-017-9901-7\n  - Veale, M., & Borgesius, F. Z. (2021). Demystifying the Draught EU Artificial Intelligence Act. *Computer Law & Security Review*, 41, 105567. https://doi.org/10.1016/j.clsr.2021.105567\n- Ongoing research focuses on refining incident classification, improving detection of indirect harms, and integrating human rights impact assessments into AI safety protocols.\n\n## UK Context\n\n- The UK has adopted a cross-sectoral AI regulatory framework underpinned by five core principles: safety, security and robustness, transparency and availability, fairness and accountability, and contestability and redress.\n- British contributions include the ICO’s AI and Biometrics Strategy (2025), which prioritises scrutiny of large-scale AI systems, recruitment algorithms, and police use of facial recognition.\n- North England innovation hubs in Manchester, Leeds, Newcastle, and Sheffield are active in developing AI safety technologies, particularly for critical infrastructure and public service applications.\n- Regional case studies include Leeds City Council’s pilot of AI-driven infrastructure monitoring systems designed to detect and mitigate serious incidents before escalation.\n\n## Future Directions\n\n- Emerging trends include the establishment of the UK AI Authority (pending legislation), increased regulatory sandboxes, and enhanced statutory codes of practice for serious AI incidents.\n- Anticipated challenges involve balancing innovation with risk mitigation, addressing systemic and indirect harms, and harmonising UK regulations with international frameworks, especially post-Brexit divergences.\n- Research priorities focus on incident reporting standards, transparency mechanisms, and embedding human rights considerations into AI system design and deployment.\n\n## References\n\n1. Amodei, D., Olah, C., Steinhardt, J., Christiano, P., Schulman, J., & Mané, D. (2016). Concrete Problems in AI Safety. *arXiv preprint arXiv:1606.06565*. https://doi.org/10.48550/arXiv.1606.06565\n2. Cath, C., Wachter, S., Mittelstadt, B., Taddeo, M., & Floridi, L. (2018). Artificial Intelligence and the ‘Good Society’: The US, EU, and UK Approach. *Science and Engineering Ethics*, 24(2), 505–528. https://doi.org/10.1007/s11948-017-9901-7\n3. Veale, M., & Borgesius, F. Z. (2021). Demystifying the Draught EU Artificial Intelligence Act. *Computer Law & Security Review*, 41, 105567. https://doi.org/10.1016/j.clsr.2021.105567\n4. UK Information Commissioner's Office. (2025). AI and Biometrics Strategy. Published June 5, 2025.\n5. UK Government. (2025). Data (Use and Access) Act 2025.\n6. Moore Barlow LLP. (2025). AI Regulation in the UK - September 2025 Update.\n7. King & Spalding. (2025). EU & UK AI Round-up – July 2025.\n8. Osborne Clarke. (2025). Artificial Intelligence | UK Regulatory Outlook October 2025.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "AIRiskManagement"
+  ],
+  "ontology": {
+    "term_id": "AI-0519",
+    "preferred_term": "Serious Incident",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#SeriousIncident",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "An incident or malfunctioning of an AI system that directly or indirectly leads to death, serious health damage, serious disruption of critical infrastructure, or serious fundamental rights infringements.",
+    "scope_note": null,
+    "status": "active",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:SeriousIncident",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "AIRiskManagement"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

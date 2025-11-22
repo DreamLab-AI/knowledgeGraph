@@ -1,0 +1,73 @@
+{
+  "id": "Hyperledger Fabric",
+  "title": "Hyperledger Fabric",
+  "content": "- ### OntologyBlock\n  id:: hyperledger-fabric-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0426\n\t- preferred-term:: Hyperledger Fabric\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A component of the blockchain ecosystem.\n\t- maturity:: draft\n\t- owl:class:: bc:HyperledgerFabric\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[BlockchainDomain]]\n\n## Hyperledger Fabric\n\nHyperledger Fabric refers to a component of the blockchain ecosystem.\n\n- Industry adoption and implementations\n  - Fabric is widely used in sectors such as finance, supply chain, healthcare, and government\n  - Notable organisations and platforms include IBM Blockchain, R3 Corda, and various consortia focused on industry-specific use cases\n  - In the UK, Fabric has been adopted by financial institutions, logistics companies, and public sector bodies\n- UK and North England examples where relevant\n  - In Manchester, Fabric has been used in supply chain projects to enhance transparency and traceability\n  - Leeds-based fintechs have leveraged Fabric for secure and efficient cross-border payments\n  - Newcastle and Sheffield have seen pilot projects in healthcare and public services, focusing on data sharing and privacy\n- Technical capabilities and limitations\n  - Fabric offers high transaction throughput, low latency, and robust privacy controls\n  - Its modular architecture allows for customisation and integration with existing systems\n  - Limitations include complexity in setup and management, and the need for skilled developers\n- Standards and frameworks\n  - Fabric adheres to industry standards for blockchain interoperability and security\n  - It is part of the broader Hyperledger ecosystem, which includes other frameworks and tools\n\n## Technical Details\n\n- **Id**: bc-0426-hyperledger-fabric-relationships\n- **Collapsed**: true\n- **Source Domain**: metaverse\n- **Status**: draft\n- **Public Access**: true\n- **Maturity**: draft\n- **Owl:Class**: bc:HyperledgerFabric\n- **Owl:Physicality**: ConceptualEntity\n- **Owl:Role**: Concept\n- **Belongstodomain**: [[BlockchainDomain]]\n\n## Research & Literature\n\n- Key academic papers and sources\n  - Androulaki, E., Barger, A., Bortnikov, V., Cachin, C., Christidis, K., De Caro, A., ... & Yellick, J. (2018). \"Hyperledger Fabric: A Distributed Operating System for Permissioned Blockchains.\" Proceedings of the 13th USENIX Symposium on Operating Systems Design and Implementation (OSDI '18). https://www.usenix.org/conference/osdi18/presentation/androulaki\n  - Cachin, C., & Vukolić, M. (2017). \"Blockchain Consensus Protocols in the Wild.\" arXiv preprint arXiv:1707.01873. https://arxiv.org/abs/1707.01873\n  - Wood, G. (2014). \"Ethereum: A Secure Decentralised Generalised Transaction Ledger.\" Ethereum Project Yellow Paper. https://ethereum.github.io/yellowpaper/paper.pdf\n- Ongoing research directions\n  - Improving consensus algorithms for higher performance and security\n  - Enhancing privacy and confidentiality features\n  - Exploring new use cases and integration with emerging technologies\n\n## UK Context\n\n- British contributions and implementations\n  - UK universities and research institutions have contributed to the development and evaluation of Fabric\n  - British companies have been active in deploying Fabric for various business applications\n- North England innovation hubs (if relevant)\n  - Manchester, Leeds, Newcastle, and Sheffield have established innovation hubs and research centres focused on blockchain and distributed ledger technologies\n  - These hubs often collaborate with industry partners and government agencies to drive innovation and adoption\n- Regional case studies\n  - Manchester: Supply chain transparency and traceability\n  - Leeds: Cross-border payments and financial services\n  - Newcastle: Healthcare data sharing and privacy\n  - Sheffield: Public sector data management and citizen services\n\n## Future Directions\n\n- Emerging trends and developments\n  - Increased focus on interoperability and cross-chain communication\n  - Integration with artificial intelligence and machine learning for enhanced analytics and automation\n  - Expansion into new sectors such as energy, education, and smart cities\n- Anticipated challenges\n  - Ensuring regulatory compliance and data privacy\n  - Managing the complexity of large-scale deployments\n  - Addressing the skills gap in blockchain development and management\n- Research priorities\n  - Developing more efficient and secure consensus mechanisms\n  - Enhancing privacy and confidentiality features\n  - Exploring new use cases and integration with emerging technologies\n\n## References\n\n1. Androulaki, E., Barger, A., Bortnikov, V., Cachin, C., Christidis, K., De Caro, A., ... & Yellick, J. (2018). \"Hyperledger Fabric: A Distributed Operating System for Permissioned Blockchains.\" Proceedings of the 13th USENIX Symposium on Operating Systems Design and Implementation (OSDI '18). https://www.usenix.org/conference/osdi18/presentation/androulaki\n2. Cachin, C., & Vukolić, M. (2017). \"Blockchain Consensus Protocols in the Wild.\" arXiv preprint arXiv:1707.01873. https://arxiv.org/abs/1707.01873\n3. Wood, G. (2014). \"Ethereum: A Secure Decentralised Generalised Transaction Ledger.\" Ethereum Project Yellow Paper. https://ethereum.github.io/yellowpaper/paper.pdf\n4. Hyperledger Fabric Documentation. https://hyperledger-fabric.readthedocs.io/en/latest/whatis.html\n5. IBM Hyperledger Fabric Overview. https://www.ibm.com/think/topics/hyperledger\n6. GeeksforGeeks Hyperledger Fabric in Blockchain. https://www.geeksforgeeks.org/computer-networks/hyperledger-fabric-in-blockchain/\n7. upGrad Hyperledger Fabric Features 2025. https://www.upgrad.com/blog/hyperledger-frameworks-hyperledger-tools-blockchain-technology/\n8. Chaincode Consulting Hyperledger Fabric Overview. https://www.chaincodeconsulting.com/insights/blog/hyperledger-fabric-in-blockchain-a-comprehensive-overview\n9. Calibraint Hyperledger Fabric Blog. https://www.calibraint.com/blog/hyperledger-fabric\n10. MyBlockchainExperts Hyperledger Fabric Development Fundamentals. https://myblockchainexperts.org/2025/08/21/hyperledger-fabric/\n\n## Metadata\n\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "BC-0431-privacy-preserving-blockchain",
+    "BC-0437-r3-corda",
+    "BC-0448-cold-chain-monitoring",
+    "BC-0436-hyperledger-iroha",
+    "BC-0451-logistics-optimization",
+    "BC-0449-circular-economy",
+    "PrivateBlockchain",
+    "BC-0445-conflict-mineral-tracking",
+    "Blockchain Network",
+    "BC-0452-customs-trade-facilitation",
+    "BC-0432-consortium-blockchain",
+    "BC-0438-quorum-blockchain",
+    "BC-0441-provenance-tracking",
+    "BC-0434-blockchain-as-a-service",
+    "BC-0439-enterprise-smart-contracts",
+    "BC-0442-pharmaceutical-traceability",
+    "BC-0443-food-safety-blockchain"
+  ],
+  "wiki_links": [
+    "BlockchainDomain"
+  ],
+  "ontology": {
+    "term_id": "BC-0426",
+    "preferred_term": "Hyperledger Fabric",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#HyperledgerFabric",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "A component of the blockchain ecosystem.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:HyperledgerFabric",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'bc' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

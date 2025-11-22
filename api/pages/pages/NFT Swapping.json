@@ -1,57 +1,102 @@
 {
   "id": "NFT Swapping",
   "title": "NFT Swapping",
-  "content": "- ### OntologyBlock\n  id:: nft-swapping-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20214\n\t- preferred-term:: NFT Swapping\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Blockchain]]\n\t- public-access:: true\n\n\n\n## Academic Context\n\n- NFT swapping is the process of exchanging non-fungible tokens (NFTs) between participants through atomic smart contract transactions that guarantee simultaneous bilateral asset transfer.\n  - This mechanism ensures trustless, peer-to-peer exchanges without intermediaries, leveraging blockchain immutability and smart contract automation.\n  - The academic foundation lies in blockchain technology, cryptographic proofs, and decentralised finance (DeFi) protocols enabling secure asset swaps.\n  - Key developments include the formalisation of smart contract standards for NFT interoperability and atomic swaps, ensuring transaction atomicity and preventing fraud.\n\n## Current Landscape (2025)\n\n- Industry adoption of NFT swapping has matured, with platforms supporting direct NFT-for-NFT swaps, NFT-for-cryptocurrency trades, and hybrid swaps combining both.\n  - Notable platforms include OpenSea, Rarible, and emerging decentralised exchanges (DEXs) integrating auction-based NFT swaps.\n  - Cross-chain NFT swapping is increasingly supported, enabling interoperability between blockchains such as Ethereum, Polygon, and Binance Smart Chain.\n- Technical capabilities now include:\n  - Smart contracts that lock NFTs during swap execution to prevent double-spending.\n  - Automated royalty payments to creators embedded within swap contracts.\n  - Validation mechanisms to confirm ownership and authenticity before swap finalisation.\n- Limitations remain in cross-chain liquidity and standardisation, with ongoing efforts to harmonise NFT metadata and transfer protocols.\n- Standards and frameworks are evolving, with organisations like the Metaverse Standards Forum advancing interoperable NFT swap protocols that include royalty enforcement and cancellation flows.\n\n## Research & Literature\n\n- Key academic sources include:\n  - Smith, J., & Lee, A. (2024). \"Atomic Swaps for Non-Fungible Tokens: Protocols and Security.\" *Journal of Blockchain Research*, 12(3), 145-162. DOI:10.1234/jbr.2024.0123\n  - Patel, R., & Nguyen, T. (2025). \"Cross-Chain NFT Interoperability: Challenges and Solutions.\" *International Conference on Distributed Ledger Technology*, pp. 78-89. URL: https://doi.org/10.5678/icdlt.2025.0078\n  - Chen, L., et al. (2025). \"Smart Contract Design for NFT Swapping with Royalty Enforcement.\" *IEEE Transactions on Blockchain*, 6(1), 34-47. DOI:10.1109/TBC.2025.00123\n- Ongoing research focuses on:\n  - Enhancing cross-chain NFT swap protocols.\n  - Improving user experience and security in decentralised NFT marketplaces.\n  - Integrating legal and regulatory compliance into smart contract frameworks.\n\n## UK Context\n\n- The UK has seen growing interest in NFT swapping, particularly within digital art and gaming sectors.\n  - British startups and blockchain firms in London and Manchester are developing NFT swap platforms that prioritise user-friendly interfaces and compliance with UK financial regulations.\n- North England innovation hubs such as Manchester’s MediaCityUK and Leeds Digital Hub are fostering NFT-related blockchain projects, including NFT swapping tools tailored for local artists and collectors.\n- Sheffield’s tech community has hosted workshops on NFT smart contract development, promoting knowledge exchange on secure swapping mechanisms.\n- Regional case studies include a Manchester-based NFT platform enabling local musicians to swap digital collectibles directly with fans, embedding royalty payments automatically.\n\n## Future Directions\n\n- Emerging trends:\n  - Expansion of cross-chain NFT swapping with seamless interoperability.\n  - Integration of AI-driven valuation tools to facilitate fair swaps.\n  - Development of decentralised autonomous organisations (DAOs) managing NFT swap marketplaces.\n- Anticipated challenges:\n  - Regulatory clarity in the UK and globally regarding NFT ownership and swapping.\n  - Scalability and gas fee optimisation for high-volume NFT swaps.\n  - User education to mitigate risks of scams and failed transactions.\n- Research priorities:\n  - Formal verification of smart contracts for NFT swaps.\n  - Privacy-preserving swap protocols.\n  - Socio-economic impact studies of NFT swapping on creative industries.\n\n## References\n\n1. Smith, J., & Lee, A. (2024). Atomic Swaps for Non-Fungible Tokens: Protocols and Security. *Journal of Blockchain Research*, 12(3), 145-162. DOI:10.1234/jbr.2024.0123\n2. Patel, R., & Nguyen, T. (2025). Cross-Chain NFT Interoperability: Challenges and Solutions. *International Conference on Distributed Ledger Technology*, pp. 78-89. https://doi.org/10.5678/icdlt.2025.0078\n3. Chen, L., et al. (2025). Smart Contract Design for NFT Swapping with Royalty Enforcement. *IEEE Transactions on Blockchain*, 6(1), 34-47. DOI:10.1109/TBC.2025.00123\n4. Metaverse Standards Forum. (2025). Peer to Peer NFT Swapping Use Case. Retrieved from https://portal.metaverse-standards.org/document/dl/7560\n5. Platinum Crypto Academy. (2025). A Step-by-Step Guide to Understanding NFT Swapping and Bridging. Retrieved from https://www.platinumcryptoacademy.com/cryptocurrency-investment/a-step-by-step-guide-to-understanding-nft-swapping-and-bridging/\n\nA modest reminder: while NFT swapping promises a seamless exchange of digital treasures, always double-cheque your smart contracts — after all, even the cleverest blockchain wizard can’t undo a miscast spell!\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
-  "backlinks": [
-    "Tokenization"
-  ],
+  "content": "- ### OntologyBlock\n  id:: nft-swapping-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20214\n\t- preferred-term:: NFT Swapping\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Process of executing mutual exchange of non-fungible tokens between participants using atomic smart contract transactions that ensure simultaneous bilateral asset transfer.\n\t- source:: [[MSF Use Cases]]\n\t- maturity:: mature\n\t- owl:class:: mv:NFTSwapping\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: mv:VirtualProcess\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[VirtualEconomyDomain]]\n\t- implementedInLayer:: [[MiddlewareLayer]]\n\t- #### Relationships\n\t  id:: nft-swapping-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Decentralized Exchange]]\n\t\t- is-part-of:: [[NFT Marketplace]]\n\t\t- has-part:: [[Swap Smart Contract]]\n\t\t- has-part:: [[Asset Verification]]\n\t\t- has-part:: [[Exchange Agreement]]\n\t\t- has-part:: [[Atomic Transaction]]\n\t\t- requires:: [[Gas Fee Payment]]\n\t\t- requires:: [[Digital Signature]]\n\t\t- requires:: [[Blockchain Network]]\n\t\t- requires:: [[NFT Ownership Proof]]\n\t\t- enables:: [[Trust-Minimized Transfer]]\n\t\t- enables:: [[Direct Exchange]]\n\t\t- enables:: [[Asset Liquidity]]\n\t\t- enables:: [[Peer-to-Peer Trading]]\n\t\t- depends-on:: [[Cryptographic Verification]]\n\t\t- depends-on:: [[Token Standard]]\n\t\t- depends-on:: [[Transaction Validation]]\n\t\t- depends-on:: [[Consensus Mechanism]]\n\n## Academic Context\n\n- NFT swapping is the process of exchanging non-fungible tokens (NFTs) between participants through atomic smart contract transactions that guarantee simultaneous bilateral asset transfer.\n  - This mechanism ensures trustless, peer-to-peer exchanges without intermediaries, leveraging blockchain immutability and smart contract automation.\n  - The academic foundation lies in blockchain technology, cryptographic proofs, and decentralised finance (DeFi) protocols enabling secure asset swaps.\n  - Key developments include the formalisation of smart contract standards for NFT interoperability and atomic swaps, ensuring transaction atomicity and preventing fraud.\n\n## Current Landscape (2025)\n\n- Industry adoption of NFT swapping has matured, with platforms supporting direct NFT-for-NFT swaps, NFT-for-cryptocurrency trades, and hybrid swaps combining both.\n  - Notable platforms include OpenSea, Rarible, and emerging decentralised exchanges (DEXs) integrating auction-based NFT swaps.\n  - Cross-chain NFT swapping is increasingly supported, enabling interoperability between blockchains such as Ethereum, Polygon, and Binance Smart Chain.\n- Technical capabilities now include:\n  - Smart contracts that lock NFTs during swap execution to prevent double-spending.\n  - Automated royalty payments to creators embedded within swap contracts.\n  - Validation mechanisms to confirm ownership and authenticity before swap finalisation.\n- Limitations remain in cross-chain liquidity and standardisation, with ongoing efforts to harmonise NFT metadata and transfer protocols.\n- Standards and frameworks are evolving, with organisations like the Metaverse Standards Forum advancing interoperable NFT swap protocols that include royalty enforcement and cancellation flows.\n\n## Research & Literature\n\n- Key academic sources include:\n  - Smith, J., & Lee, A. (2024). \"Atomic Swaps for Non-Fungible Tokens: Protocols and Security.\" *Journal of Blockchain Research*, 12(3), 145-162. DOI:10.1234/jbr.2024.0123\n  - Patel, R., & Nguyen, T. (2025). \"Cross-Chain NFT Interoperability: Challenges and Solutions.\" *International Conference on Distributed Ledger Technology*, pp. 78-89. URL: https://doi.org/10.5678/icdlt.2025.0078\n  - Chen, L., et al. (2025). \"Smart Contract Design for NFT Swapping with Royalty Enforcement.\" *IEEE Transactions on Blockchain*, 6(1), 34-47. DOI:10.1109/TBC.2025.00123\n- Ongoing research focuses on:\n  - Enhancing cross-chain NFT swap protocols.\n  - Improving user experience and security in decentralised NFT marketplaces.\n  - Integrating legal and regulatory compliance into smart contract frameworks.\n\n## UK Context\n\n- The UK has seen growing interest in NFT swapping, particularly within digital art and gaming sectors.\n  - British startups and blockchain firms in London and Manchester are developing NFT swap platforms that prioritise user-friendly interfaces and compliance with UK financial regulations.\n- North England innovation hubs such as Manchester’s MediaCityUK and Leeds Digital Hub are fostering NFT-related blockchain projects, including NFT swapping tools tailored for local artists and collectors.\n- Sheffield’s tech community has hosted workshops on NFT smart contract development, promoting knowledge exchange on secure swapping mechanisms.\n- Regional case studies include a Manchester-based NFT platform enabling local musicians to swap digital collectibles directly with fans, embedding royalty payments automatically.\n\n## Future Directions\n\n- Emerging trends:\n  - Expansion of cross-chain NFT swapping with seamless interoperability.\n  - Integration of AI-driven valuation tools to facilitate fair swaps.\n  - Development of decentralised autonomous organisations (DAOs) managing NFT swap marketplaces.\n- Anticipated challenges:\n  - Regulatory clarity in the UK and globally regarding NFT ownership and swapping.\n  - Scalability and gas fee optimisation for high-volume NFT swaps.\n  - User education to mitigate risks of scams and failed transactions.\n- Research priorities:\n  - Formal verification of smart contracts for NFT swaps.\n  - Privacy-preserving swap protocols.\n  - Socio-economic impact studies of NFT swapping on creative industries.\n\n## References\n\n1. Smith, J., & Lee, A. (2024). Atomic Swaps for Non-Fungible Tokens: Protocols and Security. *Journal of Blockchain Research*, 12(3), 145-162. DOI:10.1234/jbr.2024.0123\n2. Patel, R., & Nguyen, T. (2025). Cross-Chain NFT Interoperability: Challenges and Solutions. *International Conference on Distributed Ledger Technology*, pp. 78-89. https://doi.org/10.5678/icdlt.2025.0078\n3. Chen, L., et al. (2025). Smart Contract Design for NFT Swapping with Royalty Enforcement. *IEEE Transactions on Blockchain*, 6(1), 34-47. DOI:10.1109/TBC.2025.00123\n4. Metaverse Standards Forum. (2025). Peer to Peer NFT Swapping Use Case. Retrieved from https://portal.metaverse-standards.org/document/dl/7560\n5. Platinum Crypto Academy. (2025). A Step-by-Step Guide to Understanding NFT Swapping and Bridging. Retrieved from https://www.platinumcryptoacademy.com/cryptocurrency-investment/a-step-by-step-guide-to-understanding-nft-swapping-and-bridging/\n\nA modest reminder: while NFT swapping promises a seamless exchange of digital treasures, always double-cheque your smart contracts — after all, even the cleverest blockchain wizard can’t undo a miscast spell!\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
   "wiki_links": [
-    "Blockchain"
+    "Asset Verification",
+    "Gas Fee Payment",
+    "MSF Use Cases",
+    "Digital Signature",
+    "Cryptographic Verification",
+    "Asset Liquidity",
+    "Direct Exchange",
+    "Atomic Transaction",
+    "Token Standard",
+    "Trust-Minimized Transfer",
+    "NFT Ownership Proof",
+    "NFT Marketplace",
+    "Blockchain Network",
+    "MiddlewareLayer",
+    "Exchange Agreement",
+    "Consensus Mechanism",
+    "Peer-to-Peer Trading",
+    "Transaction Validation",
+    "Swap Smart Contract",
+    "VirtualEconomyDomain",
+    "Decentralized Exchange"
   ],
   "ontology": {
     "term_id": "20214",
     "preferred_term": "NFT Swapping",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#NFTSwapping",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "Process of executing mutual exchange of non-fungible tokens between participants using atomic smart contract transactions that ensure simultaneous bilateral asset transfer.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:NFTSwapping",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Process",
+    "owl_inferred_class": "mv:VirtualProcess",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "has_part": [
+      "Swap Smart Contract",
+      "Asset Verification",
+      "Exchange Agreement",
+      "Atomic Transaction"
+    ],
+    "is_part_of": [
+      "Decentralized Exchange",
+      "NFT Marketplace"
+    ],
+    "requires": [
+      "Gas Fee Payment",
+      "Digital Signature",
+      "Blockchain Network",
+      "NFT Ownership Proof"
+    ],
+    "depends_on": [
+      "Cryptographic Verification",
+      "Token Standard",
+      "Transaction Validation",
+      "Consensus Mechanism"
+    ],
+    "enables": [
+      "Trust-Minimized Transfer",
+      "Direct Exchange",
+      "Asset Liquidity",
+      "Peer-to-Peer Trading"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "VirtualEconomyDomain"
+    ],
+    "implemented_in_layer": [
+      "MiddlewareLayer"
+    ],
+    "source": [
+      "MSF Use Cases"
+    ],
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20214' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

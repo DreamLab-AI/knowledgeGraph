@@ -1,0 +1,58 @@
+{
+  "id": "Securities Regulation",
+  "title": "Securities Regulation",
+  "content": "- ### OntologyBlock\n  id:: securities-regulation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0478\n\t- preferred-term:: Securities Regulation\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: A component of the blockchain ecosystem.\n\t- maturity:: draft\n\t- owl:class:: bc:SecuritiesRegulation\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[BlockchainDomain]]\n\n## Securities Regulation\n\nSecurities Regulation refers to a component of the blockchain ecosystem.\n\n- Industry adoption and implementations\n\t- Securities regulation now extends to digital securities and certain cryptoassets, reflecting the convergence of traditional finance and blockchain-based systems\n\t- Notable organisations and platforms\n\t\t- The Financial Conduct Authority (FCA) oversees securities regulation in the UK, including digital securities and cryptoassets\n\t\t- Platforms such as Tokeny (for security token issuance) and CME Group’s digital asset offerings are active in the UK market\n\t- UK and North England examples where relevant\n\t\t- Manchester-based fintech firms are increasingly involved in digital securities issuance, leveraging local expertise in financial technology and regulatory compliance\n\t\t- Leeds and Newcastle have seen growth in blockchain-based securities platforms, supported by regional innovation hubs and university partnerships\n- Technical capabilities and limitations\n\t- Smart contracts enable automated compliance with securities regulations, but challenges remain in ensuring legal enforceability and regulatory alignment\n\t- Interoperability between blockchain platforms and traditional financial systems is improving, though fragmentation persists\n- Standards and frameworks\n\t- The UK’s Financial Services and Markets Act 2000 (Regulated Activities) Order 2025 now includes cryptoassets as regulated activities, aligning with international standards such as MiCA in the EU\n\t- The FCA’s Market Abuse Regime for Cryptoassets (MARC) sets out rules for insider dealing, market manipulation, and disclosure\n\n## Technical Details\n\n- **Id**: bc-0478-securities-regulation-ontology\n- **Collapsed**: true\n- **Source Domain**: metaverse\n- **Status**: stub-needs-content\n- **Public Access**: true\n- **Content Status**: minimal-placeholder-requires-authoring\n- **Maturity**: draft\n- **Owl:Class**: bc:SecuritiesRegulation\n- **Owl:Physicality**: ConceptualEntity\n- **Owl:Role**: Concept\n- **Belongstodomain**: [[BlockchainDomain]]\n\n## Research & Literature\n\n- Key academic papers and sources\n\t- Llewellyn, K. N. (1931). \"What Price Securities Regulation?\" Columbia Law Review, 31(1), 1–42. https://doi.org/10.2307/1115817\n\t- Zetzsche, D. A., Buckley, R. P., Arner, D. W., & Barberis, J. N. (2020). \"The ICO Gold Rush: It’s a Scam, It’s a Bubble, It’s a Super Challenge for Regulators.\" Harvard International Law Journal, 61(2), 269–312. https://doi.org/10.2139/ssrn.3108350\n\t- Arner, D. W., Barberis, J. N., & Zetzsche, D. A. (2021). \"Cryptoassets, Fintech and the Law: The Case for Regulatory Innovation.\" Journal of Financial Regulation, 7(1), 1–35. https://doi.org/10.1093/jfr/fjab001\n- Ongoing research directions\n\t- The impact of blockchain on securities regulation, including the role of smart contracts and decentralised finance\n\t- Regulatory challenges in cross-border securities issuance and trading\n\n## UK Context\n\n- British contributions and implementations\n\t- The UK has been a leader in adapting securities regulation to digital assets, with the FCA and HM Treasury playing key roles in shaping the regulatory framework\n\t- The new regime applies to cryptoasset activities provided “in or to” the UK, reflecting a broader geographical scope than previous rules\n- North England innovation hubs (if relevant)\n\t- Manchester, Leeds, Newcastle, and Sheffield are home to fintech clusters and university research centres focused on blockchain and digital securities\n\t- Regional case studies\n\t\t- The University of Manchester’s Digital Finance Institute has conducted research on the regulatory implications of blockchain-based securities\n\t\t- Leeds-based fintech firms are exploring the use of blockchain for private equity and venture capital fundraising\n\n## Future Directions\n\n- Emerging trends and developments\n\t- Increased use of blockchain for securities issuance and trading, driven by demand for transparency and efficiency\n\t- Regulatory harmonisation with international standards, particularly in the EU and US\n- Anticipated challenges\n\t- Ensuring regulatory clarity for emerging technologies such as decentralised finance and non-fungible tokens\n\t- Balancing innovation with investor protection and market integrity\n- Research priorities\n\t- The impact of regulatory changes on market structure and investor behaviour\n\t- The role of artificial intelligence and machine learning in securities regulation\n\n## References\n\n1. Llewellyn, K. N. (1931). \"What Price Securities Regulation?\" Columbia Law Review, 31(1), 1–42. https://doi.org/10.2307/1115817\n2. Zetzsche, D. A., Buckley, R. P., Arner, D. W., & Barberis, J. N. (2020). \"The ICO Gold Rush: It’s a Scam, It’s a Bubble, It’s a Super Challenge for Regulators.\" Harvard International Law Journal, 61(2), 269–312. https://doi.org/10.2139/ssrn.3108350\n3. Arner, D. W., Barberis, J. N., & Zetzsche, D. A. (2021). \"Cryptoassets, Fintech and the Law: The Case for Regulatory Innovation.\" Journal of Financial Regulation, 7(1), 1–35. https://doi.org/10.1093/jfr/fjab001\n4. Financial Conduct Authority. (2025). Discussion Paper DP25/1: Regulating Cryptoasset Activities. https://www.fca.org.uk/publications/discussion-papers/dp25-1-regulating-cryptoasset-activities\n5. HM Treasury. (2025). Financial Services and Markets Act 2000 (Regulated Activities and Miscellaneous Provisions) (Cryptoassets) Order 2025. https://www.gov.uk/government/publications/financial-services-and-markets-act-2000-regulated-activities-and-miscellaneous-provisions-cryptoassets-order-2025\n6. University of Manchester Digital Finance Institute. (2025). Blockchain and Securities Regulation: A Regional Perspective. https://www.manchester.ac.uk/research/digital-finance-institute/publications/blockchain-and-securities-regulation/\n\n## Metadata\n\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "BC-0483-us-regulatory-framework",
+    "AI Governance Principle"
+  ],
+  "wiki_links": [
+    "BlockchainDomain"
+  ],
+  "ontology": {
+    "term_id": "BC-0478",
+    "preferred_term": "Securities Regulation",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#SecuritiesRegulation",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "A component of the blockchain ecosystem.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:SecuritiesRegulation",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'bc' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

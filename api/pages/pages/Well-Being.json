@@ -1,0 +1,59 @@
+{
+  "id": "Well-Being",
+  "title": "Well Being",
+  "content": "- ### OntologyBlock\n  id:: well-being-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0158\n\t- preferred-term:: Well Being\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: AI should enhance human and societal well-being by augmenting human capabilities, enriching quality of life, supporting physical and mental health, enabling meaningful work, strengthening social connections, and contributing to flourishing individuals and communities.\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :WellBeing))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :WellBeing \"Well Being\"@en)\n(AnnotationAssertion rdfs:comment :WellBeing \"AI should enhance human and societal well-being by augmenting human capabilities, enriching quality of life, supporting physical and mental health, enabling meaningful work, strengthening social connections, and contributing to flourishing individuals and communities.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :WellBeing \"AI-0158\"^^xsd:string)\n(DataPropertyAssertion :isAITechnology :WellBeing \"true\"^^xsd:boolean)\n```\n\n## Source\n\n- **Primary**: OECD AI Principles 2024 revision (Principle 1.1)\n- **Related**: OECD Better Life Initiative, WHO Constitution (health definition)\n\n## Context\n\nWell-being represents the third component of OECD's foundational AI principle, emphasising that technology should serve human flourishing rather than narrow economic metrics. This holistic concept encompasses physical health, mental health, social connections, meaningful work, and overall quality of life.\n\n## Key Characteristics\n\n- **Holistic perspective**: Addressing multiple dimensions of human flourishing\n- **Quality of life**: Enhancing lived experience beyond economic measures\n- **Health support**: Contributing to physical and mental health\n- **Social connection**: Strengthening rather than replacing human relationships\n- **Meaningful engagement**: Enabling purposeful work and activities\n\n## Relationships\n\n- **Parent Concept**: OECD AI Principle 1 (Inclusive Growth, Sustainable Development and Well-Being)\n- **Related Terms**:\n  - Inclusive Growth (AI-0156)\n  - Sustainable Development (AI-0157)\n  - Human-Centred Values (AI-0159)\n  - Social Impact (AI-0170)\n- **Measured By**: Well-being metrics, quality of life indicators, health outcomes\n\n## Well-Being Dimensions\n\n### Physical Health\n- Healthcare accessibility and quality improvements\n- Disease detection and prevention\n- Assistive technologies for disability\n- Environmental health monitoring\n\n### Mental Health\n- Psychological support systems\n- Stress and anxiety management\n- Prevention of algorithmic harm\n- Digital well-being protection\n\n### Social Well-Being\n- Community strengthening\n- Reduced social isolation\n- Enhanced communication capabilities\n- Maintained human agency in relationships\n\n### Economic Well-Being\n- Meaningful employment opportunities\n- Income security and stability\n- Work-life balance support\n- Skill development pathways\n\n### Civic Well-Being\n- Democratic participation enhancement\n- Access to information and services\n- Community engagement support\n- Rights protection and empowerment\n\n## Implementation Considerations\n\n1. **Impact assessment**: Evaluating effects on multiple well-being dimensions\n2. **Harm prevention**: Avoiding psychological manipulation and exploitation\n3. **Autonomy preservation**: Maintaining human agency and self-determination\n4. **Social connection**: Designing for human relationships rather than replacement\n5. **Meaningful work**: Creating employment that provides purpose and dignity\n\n## OECD Framework Alignment\n\n- **Dimension**: People and Planet Context\n- **Principle Number**: P1 (part 3 of 3)\n- **Actor Responsibility**: All AI actors throughout lifecycle\n\n## Regulatory Context\n\nWell-being considerations inform:\n- EU AI Act prohibited practices (Article 5) addressing manipulation and exploitation\n- High-risk classifications for systems affecting health, safety and fundamental rights\n- Transparency obligations enabling informed decision-making\n- Human oversight requirements preserving agency\n\n## Measurement Approaches\n\nWell-being impacts can be assessed through:\n- Subjective well-being surveys and self-reporting\n- Objective health outcomes (physical and mental)\n- Social connection metrics and relationship quality\n- Work satisfaction and meaningful engagement indicators\n- OECD Better Life Index dimensions\n\n## Potential Risks to Well-Being\n\n- **Manipulation**: Exploiting psychological vulnerabilities\n- **Addiction**: Designing for excessive engagement\n- **Social isolation**: Replacing human interaction\n- **Deskilling**: Reducing human capabilities through over-reliance\n- **Stress and anxiety**: Information overload and constant monitoring\n- **Loss of agency**: Automated decision-making reducing self-determination\n\n## 2024 Revision Updates\n\nThe 2024 OECD revision strengthened well-being by:\n- Explicitly addressing mental health alongside physical health\n- Emphasising meaningful work beyond employment statistics\n- Connecting to social connection and community flourishing\n- Integrating with sustainability and inclusion concerns\n\n## Design Principles for Well-Being\n\n1. **Human augmentation**: Enhancing rather than replacing capabilities\n2. **Respectful defaults**: Protecting attention and cognitive resources\n3. **Transparent operation**: Building trust through understandable systems\n4. **Reversible decisions**: Preserving human control and correction\n5. **Social consideration**: Accounting for community and relational impacts\n\n## Related Standards\n\n- IEEE 7010-2020 - Recommended Practice for Assessing the Impact of Autonomous and Intelligent Systems on Human Well-Being\n- ISO/IEC TR 24030:2021 - Artificial intelligence (AI) — Use cases\n- WHO guidance on ethics and governance of AI for health\n\n## See Also\n\n- Human-Centred Values (AI-0159)\n- Fairness (OECD) (AI-0160)\n- Social Impact (AI-0170)\n- Accountability (AI-0165)\n\n---\n\n*Part of AI Grounded Ontology - OECD AI Principles Framework*\n*Aligned with OECD AI Principles 2024 and WHO health frameworks*\n\t- maturity:: draft\n\t- owl:class:: mv:WellBeing\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- is-subclass-of:: [[Metaverse]]\n\t- belongsToDomain:: [[MetaverseDomain]]",
+  "backlinks": [
+    "AI Governance Principle"
+  ],
+  "wiki_links": [
+    "MetaverseDomain",
+    "Metaverse"
+  ],
+  "ontology": {
+    "term_id": "AI-0158",
+    "preferred_term": "Well Being",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#WellBeing",
+    "source_domain": null,
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "AI should enhance human and societal well-being by augmenting human capabilities, enriching quality of life, supporting physical and mental health, enabling meaningful work, strengthening social connections, and contributing to flourishing individuals and communities.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:WellBeing",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'ai'"
+      ]
+    }
+  }
+}

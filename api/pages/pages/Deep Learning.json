@@ -1,58 +1,64 @@
 {
   "id": "Deep Learning",
   "title": "Deep Learning",
-  "content": "- ### OntologyBlock\n  id:: deep-learning-ontology\n  collapsed:: true\n\n  - **Identification**\n    - ontology:: true\n    - term-id:: AI-0870\n    - preferred-term:: Deep Learning\n    - source-domain:: ai\n    - status:: complete\n    - public-access:: true\n    - version:: 2.0.0\n    - last-updated:: 2025-01-15\n    - quality-score:: 0.91\n\n  - **Definition**\n    - definition:: [[Deep Learning]] is a subset of [[Machine Learning]] based on [[Artificial Neural Networks]] with multiple layers (depth) that learn hierarchical representations of data through [[Backpropagation]] and [[Gradient Descent]]. Deep learning models automatically discover intricate structures in high-dimensional data, enabling breakthrough performance in [[Computer Vision]], [[Natural Language Processing]], [[Speech Recognition]], and [[Reinforcement Learning]]. The \"deep\" refers to the number of layers through which data is transformed, allowing the network to learn increasingly abstract and complex features.\n    - maturity:: mature\n    - source:: [[Yann LeCun]], [[Geoffrey Hinton]], [[Yoshua Bengio]], [[NIST AI Standards]], [[ISO/IEC 22989:2022]]\n    - authority-score:: 0.96\n\n  - **Semantic Classification**\n    - owl:class:: ai:DeepLearning\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Process\n    - owl:inferred-class:: ai:VirtualProcess\n    - belongsToDomain:: [[AI-GroundedDomain]], [[ComputationAndIntelligenceDomain]], [[DataManagementDomain]]\n\n  - #### OWL Restrictions\n    \n\n  - \n### Relationships\n- is-subclass-of:: [[MachineLearning]]",
+  "content": "- ### OntologyBlock\n  id:: deep-learning-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0870\n\t- preferred-term:: Deep Learning\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: [[Deep Learning]] is a subset of [[Machine Learning]] based on [[Artificial Neural Networks]] with multiple layers (depth) that learn hierarchical representations of data through [[Backpropagation]] and [[Gradient Descent]]. Deep learning models automatically discover intricate structures in high-dimensional data, enabling breakthrough performance in [[Computer Vision]], [[Natural Language Processing]], [[Speech Recognition]], and [[Reinforcement Learning]]. The \"deep\" refers to the number of layers through which data is transformed, allowing the network to learn increasingly abstract and complex features.\n\t- source:: [[Yann LeCun]], [[Geoffrey Hinton]], [[Yoshua Bengio]], [[NIST AI Standards]], [[ISO/IEC 22989:2022]]\n\t- maturity:: mature\n\t- owl:class:: ai:DeepLearning\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: ai:VirtualProcess\n\t- belongsToDomain:: [[AI-GroundedDomain]], [[ComputationAndIntelligenceDomain]], [[DataManagementDomain]]\n\t- #### Relationships\n\t  id:: deep-learning-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[MachineLearning]]",
   "backlinks": [
     "Robot-Control",
     "Deep Learning",
     "Deepfakes",
+    "AI-Augmented Software Engineering",
+    "Knowledge Distillation for Edge (AI-0443)",
     "Variational Autoencoders",
+    "Perception System",
     "Loss Function",
+    "Upscaling",
     "Generative AI"
   ],
   "wiki_links": [
-    "Gradient Descent",
-    "MachineLearning",
-    "ComputationAndIntelligenceDomain",
     "Yoshua Bengio",
+    "MachineLearning",
+    "AI-GroundedDomain",
+    "ComputationAndIntelligenceDomain",
+    "Gradient Descent",
+    "ISO/IEC 22989:2022",
+    "Geoffrey Hinton",
     "Artificial Neural Networks",
-    "Natural Language Processing",
-    "Machine Learning",
-    "DataManagementDomain",
-    "Reinforcement Learning",
-    "Computer Vision",
     "Backpropagation",
     "Speech Recognition",
-    "ISO/IEC 22989:2022",
+    "Reinforcement Learning",
+    "Natural Language Processing",
     "Yann LeCun",
     "NIST AI Standards",
-    "AI-GroundedDomain",
+    "DataManagementDomain",
+    "Computer Vision",
     "Deep Learning",
-    "Geoffrey Hinton"
+    "Machine Learning"
   ],
   "ontology": {
     "term_id": "AI-0870",
     "preferred_term": "Deep Learning",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/ai#DeepLearning",
-    "source_domain": "ai",
+    "source_domain": null,
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
     "definition": "[[Deep Learning]] is a subset of [[Machine Learning]] based on [[Artificial Neural Networks]] with multiple layers (depth) that learn hierarchical representations of data through [[Backpropagation]] and [[Gradient Descent]]. Deep learning models automatically discover intricate structures in high-dimensional data, enabling breakthrough performance in [[Computer Vision]], [[Natural Language Processing]], [[Speech Recognition]], and [[Reinforcement Learning]]. The \"deep\" refers to the number of layers through which data is transformed, allowing the network to learn increasingly abstract and complex features.",
     "scope_note": null,
     "status": "complete",
     "maturity": "mature",
-    "version": "2.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-01-15",
-    "authority_score": 0.96,
-    "quality_score": 0.91,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "ai:DeepLearning",
     "owl_physicality": "VirtualEntity",
     "owl_role": "Process",
     "owl_inferred_class": "ai:VirtualProcess",
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "MachineLearning"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -78,7 +84,8 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: source-domain",
+        "Missing required property: last-updated"
       ]
     }
   }

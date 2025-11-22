@@ -1,58 +1,126 @@
 {
   "id": "Scene Graph",
   "title": "Scene Graph",
-  "content": "- ### OntologyBlock\n  id:: scenegraph-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20112\n\t- preferred-term:: Scene Graph\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Metaverse]]\n\t- public-access:: true\n\n\n\n## Academic Context\n\n- Brief contextual overview\n\t- Scene graphs are a foundational data structure in computer graphics, widely used to organise and manage the spatial, logical, and rendering relationships among objects in a scene\n\t- The concept originated in the 1980s and has since become a standard approach in both academic and industrial graphics systems\n\t- Key developments and current state\n\t\t- Scene graphs have evolved from simple hierarchical trees to more complex, modular representations, supporting advanced features such as animation, culling, and real-time rendering\n\t\t- Modern scene graphs are integral to a wide range of applications, including video games, virtual reality, and scientific visualisation\n\t- Academic foundations\n\t\t- The theoretical underpinnings of scene graphs are rooted in graph theory and computer graphics, with significant contributions from researchers in the fields of computer science and engineering\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n\t- Notable organisations and platforms\n\t\t- Scene graphs are used by major game engines such as Unity and Unreal Engine, as well as by graphics libraries like OpenGL and DirectX\n\t\t- In the UK, companies such as Rockstar North (Edinburgh) and Frontier Developments (Cambridge) have adopted scene graph technologies in their game development pipelines\n\t\t- UK and North England examples where relevant\n\t\t\t- The University of Manchester has a strong research group in computer graphics, with ongoing projects that utilise scene graphs for scientific visualisation and virtual reality applications\n\t\t\t- Leeds Beckett University has a digital media research centre that explores the use of scene graphs in interactive media and educational software\n\t\t\t- Newcastle University's School of Computing Science has a focus on real-time graphics and has developed custom scene graph solutions for augmented reality and robotics\n\t\t\t- Sheffield Hallam University's Centre for Virtual Environments and Visualisation has applied scene graphs in the context of urban planning and architectural visualisation\n\t- Technical capabilities and limitations\n\t\t- Scene graphs enable efficient traversal, culling, and rendering operations, making them well-suited for complex scenes with many objects\n\t\t- They support hierarchical transformations, allowing for easy manipulation of groups of objects\n\t\t- Limitations include the potential for performance bottlenecks in very large or deeply nested graphs, and the need for careful management of memory and resources\n\t- Standards and frameworks\n\t\t- Common standards include the OpenSceneGraph (OSG) and the Scene Graph API in Unity\n\t\t- Frameworks such as CUGL (Cornell University Graphics Library) and the Scene Graph XML format used by Roku provide additional tools and specifications for creating and managing scene graphs\n\n## Research & Literature\n\n- Key academic papers and sources\n\t- Akenine-Möller, T., Haines, E., & Hoffman, N. (2018). Real-Time Rendering (4th ed.). A K Peters/CRC Press. https://doi.org/10.1201/9781315152759\n\t- Watt, A., & Watt, M. (2000). Advanced Animation and Rendering Techniques: Theory and Practice. Addison-Wesley Professional. https://www.amazon.co.uk/Advanced-Animation-Rendering-Techniques-Practice/dp/0201544121\n\t- Isenberg, T. (2023). Introduction to Computer Graphics: TP-3. http://tobias.isenberg.cc/graphics-intro/Labs/TP-3\n\t- Cornell University. (2025). Scene Graphs. https://www.cs.cornell.edu/courses/cs5152/2025sp/labs/design2/\n\t- NVIDIA Research. (2021). Neural Scene Graph Rendering. https://research.nvidia.com/publication/2021-06_neural-scene-graph-rendering\n- Ongoing research directions\n\t- Development of more efficient and scalable scene graph algorithms\n\t- Integration of machine learning and neural networks for scene graph generation and manipulation\n\t- Exploration of scene graphs in the context of augmented and virtual reality\n\n## UK Context\n\n- British contributions and implementations\n\t- The UK has a strong tradition in computer graphics research, with significant contributions from universities and industry\n\t- British researchers have been at the forefront of developing new scene graph algorithms and applications, particularly in the areas of scientific visualisation and interactive media\n- North England innovation hubs (if relevant)\n\t- Manchester, Leeds, Newcastle, and Sheffield are home to several research groups and innovation hubs that are actively working on scene graph technologies\n\t- These cities have a vibrant ecosystem of startups, research institutions, and industry partners that collaborate on graphics and visualisation projects\n- Regional case studies\n\t- The University of Manchester's Visualisation and Virtual Reality Group has developed a custom scene graph system for visualising large-scale scientific data, which has been used in collaborations with the NHS and other healthcare providers\n\t- Leeds Beckett University's Digital Media Research Centre has created interactive educational software that uses scene graphs to manage complex multimedia content\n\t- Newcastle University's School of Computing Science has developed a scene graph-based augmented reality platform for robotics and industrial applications\n\t- Sheffield Hallam University's Centre for Virtual Environments and Visualisation has applied scene graphs in the context of urban planning, helping local authorities to visualise and plan city developments\n\n## Future Directions\n\n- Emerging trends and developments\n\t- Increased use of scene graphs in real-time and interactive applications, such as virtual and augmented reality\n\t- Integration of scene graphs with machine learning and artificial intelligence for automated scene generation and manipulation\n\t- Development of more modular and flexible scene graph architectures to support a wider range of applications\n- Anticipated challenges\n\t- Managing the complexity and performance of large-scale scene graphs\n\t- Ensuring compatibility and interoperability between different scene graph systems and standards\n\t- Addressing the computational and memory requirements of advanced scene graph features\n- Research priorities\n\t- Improving the efficiency and scalability of scene graph algorithms\n\t- Exploring new applications of scene graphs in emerging fields such as autonomous vehicles and smart cities\n\t- Developing more user-friendly tools and interfaces for creating and managing scene graphs\n\n## References\n\n1. Akenine-Möller, T., Haines, E., & Hoffman, N. (2018). Real-Time Rendering (4th ed.). A K Peters/CRC Press. https://doi.org/10.1201/9781315152759\n2. Watt, A., & Watt, M. (2000). Advanced Animation and Rendering Techniques: Theory and Practice. Addison-Wesley Professional. https://www.amazon.co.uk/Advanced-Animation-Rendering-Techniques-Practice/dp/0201544121\n3. Isenberg, T. (2023). Introduction to Computer Graphics: TP-3. http://tobias.isenberg.cc/graphics-intro/Labs/TP-3\n4. Cornell University. (2025). Scene Graphs. https://www.cs.cornell.edu/courses/cs5152/2025sp/labs/design2/\n5. NVIDIA Research. (2021). Neural Scene Graph Rendering. https://research.nvidia.com/publication/2021-06_neural-scene-graph-rendering\n6. Roku Developer. (2025). Overview | Roku Developer. https://developer.roku.com/docs/developer-program/core-concepts/scenegraph-xml/overview.md\n7. Wikipedia. (2025). Scene graph. https://en.wikipedia.org/wiki/Scene_graph\n8. Tutorials Point. (2025). Scene Graphs in Computer Graphics. https://www.tutorialspoint.com/computer_graphics/computer_graphics_scene_graphs.htm\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: scene-graph-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20112\n\t- preferred-term:: Scene Graph\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A hierarchical tree-based data structure organizing and describing the spatial, logical, and rendering relationships among objects in a 3D scene, enabling efficient traversal, culling, and rendering operations.\n\t- source:: [[Web3D]], [[ISO/IEC 19775-2]]\n\t- maturity:: mature\n\t- owl:class:: mv:SceneGraph\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[CreativeMediaDomain]], [[InteractionDomain]]\n\t- implementedInLayer:: [[DataLayer]]\n\t- #### Relationships\n\t  id:: scene-graph-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Virtual World]]\n\t\t- is-part-of:: [[Game Engine]]\n\t\t- is-part-of:: [[3D Engine]]\n\t\t- is-part-of:: [[Rendering Engine]]\n\t\t- is-part-of:: [[glTF (3D File Format)]]\n\t\t- has-part:: [[Scene Node]]\n\t\t- has-part:: [[Camera Node]]\n\t\t- has-part:: [[Light Node]]\n\t\t- has-part:: [[Group Node]]\n\t\t- has-part:: [[Geometry Node]]\n\t\t- has-part:: [[Transform Node]]\n\t\t- requires:: [[Bounding Volume]]\n\t\t- requires:: [[Transform Matrix]]\n\t\t- requires:: [[Spatial Index]]\n\t\t- enables:: [[Level of Detail]]\n\t\t- enables:: [[Spatial Queries]]\n\t\t- enables:: [[Scene Rendering]]\n\t\t- enables:: [[Frustum Culling]]\n\t\t- enables:: [[Collision Detection]]\n\t\t- is-required-by:: [[Real-Time Rendering Pipeline]]\n\t\t- depends-on:: [[Graphics API]]\n\t\t- depends-on:: [[Rendering Pipeline]]\n\t\t- depends-on:: [[Coordinate System]]\n\n## Academic Context\n\n- Brief contextual overview\n\t- Scene graphs are a foundational data structure in computer graphics, widely used to organise and manage the spatial, logical, and rendering relationships among objects in a scene\n\t- The concept originated in the 1980s and has since become a standard approach in both academic and industrial graphics systems\n\t- Key developments and current state\n\t\t- Scene graphs have evolved from simple hierarchical trees to more complex, modular representations, supporting advanced features such as animation, culling, and real-time rendering\n\t\t- Modern scene graphs are integral to a wide range of applications, including video games, virtual reality, and scientific visualisation\n\t- Academic foundations\n\t\t- The theoretical underpinnings of scene graphs are rooted in graph theory and computer graphics, with significant contributions from researchers in the fields of computer science and engineering\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n\t- Notable organisations and platforms\n\t\t- Scene graphs are used by major game engines such as Unity and Unreal Engine, as well as by graphics libraries like OpenGL and DirectX\n\t\t- In the UK, companies such as Rockstar North (Edinburgh) and Frontier Developments (Cambridge) have adopted scene graph technologies in their game development pipelines\n\t\t- UK and North England examples where relevant\n\t\t\t- The University of Manchester has a strong research group in computer graphics, with ongoing projects that utilise scene graphs for scientific visualisation and virtual reality applications\n\t\t\t- Leeds Beckett University has a digital media research centre that explores the use of scene graphs in interactive media and educational software\n\t\t\t- Newcastle University's School of Computing Science has a focus on real-time graphics and has developed custom scene graph solutions for augmented reality and robotics\n\t\t\t- Sheffield Hallam University's Centre for Virtual Environments and Visualisation has applied scene graphs in the context of urban planning and architectural visualisation\n\t- Technical capabilities and limitations\n\t\t- Scene graphs enable efficient traversal, culling, and rendering operations, making them well-suited for complex scenes with many objects\n\t\t- They support hierarchical transformations, allowing for easy manipulation of groups of objects\n\t\t- Limitations include the potential for performance bottlenecks in very large or deeply nested graphs, and the need for careful management of memory and resources\n\t- Standards and frameworks\n\t\t- Common standards include the OpenSceneGraph (OSG) and the Scene Graph API in Unity\n\t\t- Frameworks such as CUGL (Cornell University Graphics Library) and the Scene Graph XML format used by Roku provide additional tools and specifications for creating and managing scene graphs\n\n## Research & Literature\n\n- Key academic papers and sources\n\t- Akenine-Möller, T., Haines, E., & Hoffman, N. (2018). Real-Time Rendering (4th ed.). A K Peters/CRC Press. https://doi.org/10.1201/9781315152759\n\t- Watt, A., & Watt, M. (2000). Advanced Animation and Rendering Techniques: Theory and Practice. Addison-Wesley Professional. https://www.amazon.co.uk/Advanced-Animation-Rendering-Techniques-Practice/dp/0201544121\n\t- Isenberg, T. (2023). Introduction to Computer Graphics: TP-3. http://tobias.isenberg.cc/graphics-intro/Labs/TP-3\n\t- Cornell University. (2025). Scene Graphs. https://www.cs.cornell.edu/courses/cs5152/2025sp/labs/design2/\n\t- NVIDIA Research. (2021). Neural Scene Graph Rendering. https://research.nvidia.com/publication/2021-06_neural-scene-graph-rendering\n- Ongoing research directions\n\t- Development of more efficient and scalable scene graph algorithms\n\t- Integration of machine learning and neural networks for scene graph generation and manipulation\n\t- Exploration of scene graphs in the context of augmented and virtual reality\n\n## UK Context\n\n- British contributions and implementations\n\t- The UK has a strong tradition in computer graphics research, with significant contributions from universities and industry\n\t- British researchers have been at the forefront of developing new scene graph algorithms and applications, particularly in the areas of scientific visualisation and interactive media\n- North England innovation hubs (if relevant)\n\t- Manchester, Leeds, Newcastle, and Sheffield are home to several research groups and innovation hubs that are actively working on scene graph technologies\n\t- These cities have a vibrant ecosystem of startups, research institutions, and industry partners that collaborate on graphics and visualisation projects\n- Regional case studies\n\t- The University of Manchester's Visualisation and Virtual Reality Group has developed a custom scene graph system for visualising large-scale scientific data, which has been used in collaborations with the NHS and other healthcare providers\n\t- Leeds Beckett University's Digital Media Research Centre has created interactive educational software that uses scene graphs to manage complex multimedia content\n\t- Newcastle University's School of Computing Science has developed a scene graph-based augmented reality platform for robotics and industrial applications\n\t- Sheffield Hallam University's Centre for Virtual Environments and Visualisation has applied scene graphs in the context of urban planning, helping local authorities to visualise and plan city developments\n\n## Future Directions\n\n- Emerging trends and developments\n\t- Increased use of scene graphs in real-time and interactive applications, such as virtual and augmented reality\n\t- Integration of scene graphs with machine learning and artificial intelligence for automated scene generation and manipulation\n\t- Development of more modular and flexible scene graph architectures to support a wider range of applications\n- Anticipated challenges\n\t- Managing the complexity and performance of large-scale scene graphs\n\t- Ensuring compatibility and interoperability between different scene graph systems and standards\n\t- Addressing the computational and memory requirements of advanced scene graph features\n- Research priorities\n\t- Improving the efficiency and scalability of scene graph algorithms\n\t- Exploring new applications of scene graphs in emerging fields such as autonomous vehicles and smart cities\n\t- Developing more user-friendly tools and interfaces for creating and managing scene graphs\n\n## References\n\n1. Akenine-Möller, T., Haines, E., & Hoffman, N. (2018). Real-Time Rendering (4th ed.). A K Peters/CRC Press. https://doi.org/10.1201/9781315152759\n2. Watt, A., & Watt, M. (2000). Advanced Animation and Rendering Techniques: Theory and Practice. Addison-Wesley Professional. https://www.amazon.co.uk/Advanced-Animation-Rendering-Techniques-Practice/dp/0201544121\n3. Isenberg, T. (2023). Introduction to Computer Graphics: TP-3. http://tobias.isenberg.cc/graphics-intro/Labs/TP-3\n4. Cornell University. (2025). Scene Graphs. https://www.cs.cornell.edu/courses/cs5152/2025sp/labs/design2/\n5. NVIDIA Research. (2021). Neural Scene Graph Rendering. https://research.nvidia.com/publication/2021-06_neural-scene-graph-rendering\n6. Roku Developer. (2025). Overview | Roku Developer. https://developer.roku.com/docs/developer-program/core-concepts/scenegraph-xml/overview.md\n7. Wikipedia. (2025). Scene graph. https://en.wikipedia.org/wiki/Scene_graph\n8. Tutorials Point. (2025). Scene Graphs in Computer Graphics. https://www.tutorialspoint.com/computer_graphics/computer_graphics_scene_graphs.htm\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [
     "Game Engine",
-    "ETSI Domain Virtual Society"
+    "Virtual World",
+    "Real-Time Rendering Pipeline",
+    "glTF (3D File Format)",
+    "Spatial Index"
   ],
   "wiki_links": [
-    "Metaverse"
+    "3D Engine",
+    "Light Node",
+    "Rendering Engine",
+    "InteractionDomain",
+    "Collision Detection",
+    "Scene Node",
+    "Geometry Node",
+    "Transform Matrix",
+    "Frustum Culling",
+    "Rendering Pipeline",
+    "Scene Rendering",
+    "Real-Time Rendering Pipeline",
+    "CreativeMediaDomain",
+    "Bounding Volume",
+    "Camera Node",
+    "Spatial Index",
+    "Level of Detail",
+    "glTF (3D File Format)",
+    "Virtual World",
+    "Transform Node",
+    "Spatial Queries",
+    "ISO/IEC 19775-2",
+    "Game Engine",
+    "DataLayer",
+    "Group Node",
+    "Coordinate System",
+    "Web3D",
+    "Graphics API"
   ],
   "ontology": {
     "term_id": "20112",
     "preferred_term": "Scene Graph",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#SceneGraph",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "A hierarchical tree-based data structure organizing and describing the spatial, logical, and rendering relationships among objects in a 3D scene, enabling efficient traversal, culling, and rendering operations.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:SceneGraph",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "has_part": [
+      "Scene Node",
+      "Camera Node",
+      "Light Node",
+      "Group Node",
+      "Geometry Node",
+      "Transform Node"
+    ],
+    "is_part_of": [
+      "Virtual World",
+      "Game Engine",
+      "3D Engine",
+      "Rendering Engine",
+      "glTF (3D File Format)"
+    ],
+    "requires": [
+      "Bounding Volume",
+      "Transform Matrix",
+      "Spatial Index"
+    ],
+    "depends_on": [
+      "Graphics API",
+      "Rendering Pipeline",
+      "Coordinate System"
+    ],
+    "enables": [
+      "Level of Detail",
+      "Spatial Queries",
+      "Scene Rendering",
+      "Frustum Culling",
+      "Collision Detection"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "CreativeMediaDomain",
+      "InteractionDomain"
+    ],
+    "implemented_in_layer": [
+      "DataLayer"
+    ],
+    "source": [
+      "Web3D",
+      "ISO/IEC 19775-2"
+    ],
+    "other_relationships": {
+      "is-required-by": [
+        "Real-Time Rendering Pipeline"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20112' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

@@ -1,24 +1,26 @@
 {
   "id": "SpatialComputing",
   "title": "SpatialComputing",
-  "content": "- ### OntologyBlock\n  id:: spatialcomputing-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0006\n\t- preferred-term:: SpatialComputing\n\t- source-domain:: metaverse\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Computing paradigm that blends digital content with the physical world, enabling natural interaction with 3D data through gestures, voice, and gaze in physical space.\n\t- maturity:: mature\n\t- owl:class:: mv:SpatialComputing\n\t- owl:physicality:: Technology\n\t- owl:role:: System\n\t- is-subclass-of:: [[Metaverse]]\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Spatialcomputing))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Spatialcomputing \"SpatialComputing\"@en)\n(AnnotationAssertion rdfs:comment :Spatialcomputing \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Spatialcomputing \"mv-1761742247973\"^^xsd:string)\n```",
+  "content": "- ### OntologyBlock\n  id:: spatialcomputing-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0006\n\t- preferred-term:: SpatialComputing\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Computing paradigm that blends digital content with the physical world, enabling natural interaction with 3D data through gestures, voice, and gaze in physical space.\n\t- maturity:: mature\n\t- owl:class:: mv:SpatialComputing\n\t- owl:physicality:: Technology\n\t- owl:role:: System\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Spatialcomputing))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Spatialcomputing \"SpatialComputing\"@en)\n(AnnotationAssertion rdfs:comment :Spatialcomputing \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Spatialcomputing \"mv-1761742247973\"^^xsd:string)\n```",
   "backlinks": [
+    "Node",
     "TELE-021-augmented-reality-collaboration",
+    "Account Model",
     "TELE-CONV-001-metaverse-telepresence-bridge",
-    "Spatial Mapping"
+    "Human Rights",
+    "Block Time"
   ],
   "wiki_links": [
-    "MetaverseDomain",
-    "Metaverse"
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "MV-0006",
     "preferred_term": "SpatialComputing",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#SpatialComputing",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "Computing paradigm that blends digital content with the physical world, enabling natural interaction with 3D data through gestures, voice, and gaze in physical space.",
     "scope_note": null,
     "status": "active",
@@ -51,9 +53,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

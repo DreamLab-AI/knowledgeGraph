@@ -1,55 +1,112 @@
 {
   "id": "Autonomous Agent",
   "title": "Autonomous Agent",
-  "content": "- ### OntologyBlock\n  id:: autonomous-agent-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20231\n\t- preferred-term:: Autonomous Agent\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- public-access:: true\n\n\n\n\n### Relationships\n- is-subclass-of:: [[AutonomousAIAgents]]\n\n## Academic Context\n\n- Autonomous agents are software entities designed to operate independently, making decisions and adapting to their environment to achieve specific goals without continuous human oversight.\n  - Their academic foundations lie in artificial intelligence, multi-agent systems, and cognitive architectures, drawing from disciplines such as computer science, robotics, and systems theory.\n  - Key developments include advances in machine learning, planning algorithms, and human-agent interaction models, enabling agents to exhibit goal-directed behaviour and adaptive responses.\n  - The concept has evolved from rule-based systems to sophisticated agents capable of reasoning, learning, and collaborating within complex digital environments such as metaverses.\n\n## Current Landscape (2025)\n\n- Autonomous agents are increasingly adopted across industries, powering applications from virtual assistants and customer service bots to complex simulations and autonomous vehicles.\n  - Notable organisations include technology leaders developing large language model (LLM)-powered agents capable of planning, reasoning, and tool use at scale and speed.\n  - In the UK, and particularly in North England, innovation hubs in Manchester, Leeds, Newcastle, and Sheffield are integrating autonomous agents into sectors such as digital manufacturing, smart cities, and immersive metaverse platforms.\n- Technically, agents now leverage improved models featuring chain-of-thought reasoning, extended context windows, and function calling, enabling more nuanced and efficient autonomous decision-making.\n- Standards and frameworks are emerging, such as the MPAI Metaverse Model – Architecture (MMM-TEC), which defines agent control architectures ensuring coherent digital entity behaviour and rights compliance within metaverse instances.\n\n## Research & Literature\n\n- Key academic sources include:\n  - Real de Oliveira, R., & Rodrigues, J. J. P. C. (2025). *Towards Web 4.0: Frameworks for Autonomous AI Agents and Decentralized Governance*. Frontiers in Blockchain, 8, 1591907. https://doi.org/10.3389/fbloc.2025.1591907\n  - Hay, J. (2025). *AI Agents in 2025: Expectations vs. Reality*. IBM Think Insights.\n  - MPAI Community. (2025). *A-User Control: The Autonomous Agent’s Brain*. MPAI.\n- Ongoing research focuses on enhancing agent autonomy through decentralized coordination, ethical frameworks, transparent learning, and integration with brain-computer interfaces to augment human-agent collaboration.\n\n## UK Context\n\n- The UK contributes significantly to autonomous agent research and deployment, with government and academic partnerships fostering AI innovation.\n- North England hosts several innovation clusters:\n  - Manchester’s AI and digital innovation centres focus on autonomous systems for urban management and healthcare.\n  - Leeds and Sheffield are advancing applications in industrial automation and immersive digital environments.\n  - Newcastle is notable for research in multi-agent systems and ethical AI governance.\n- Regional case studies include pilot projects deploying autonomous agents in smart city infrastructure and digital twin simulations, demonstrating practical benefits and challenges.\n\n## Future Directions\n\n- Emerging trends include the integration of autonomous agents within Web 4.0 ecosystems, characterised by decentralised governance, economic autonomy, and ethical alignment.\n- Anticipated challenges involve ensuring transparency, mitigating biases, securing identity frameworks, and balancing autonomy with human oversight.\n- Research priorities emphasise scalable governance structures, adaptive learning models, and enhanced human-agent interaction modalities, including natural language and brain-computer interfaces.\n- As autonomous agents become more embedded in everyday life, their role will shift from tools to collaborative partners—though one hopes they won’t start demanding tea breaks.\n\n## References\n\n1. Real de Oliveira, R., & Rodrigues, J. J. P. C. (2025). Towards Web 4.0: Frameworks for Autonomous AI Agents and Decentralized Governance. *Frontiers in Blockchain*, 8, 1591907. https://doi.org/10.3389/fbloc.2025.1591907\n2. Hay, J. (2025). AI Agents in 2025: Expectations vs. Reality. IBM Think Insights.\n3. MPAI Community. (2025). A-User Control: The Autonomous Agent’s Brain. MPAI.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
-  "backlinks": [],
+  "content": "- ### OntologyBlock\n  id:: autonomous-agent-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20231\n\t- preferred-term:: Autonomous Agent\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Software entity capable of acting autonomously to achieve goals within a metaverse, exhibiting goal-directed behavior, decision-making, and adaptive responses without continuous human intervention.\n\t- source:: [[ETSI GR ARF 010]], [[MSF Use Cases]]\n\t- maturity:: mature\n\t- owl:class:: mv:AutonomousAgent\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Agent\n\t- owl:inferred-class:: mv:VirtualAgent\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[ComputationAndIntelligenceDomain]]\n\t- implementedInLayer:: [[DataLayer]], [[ComputeLayer]]\n\t- #### Relationships\n\t  id:: autonomous-agent-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AutonomousAIAgents]]\n\t\t- is-part-of:: [[AI System]]\n\t\t- is-part-of:: [[Autonomous System]]\n\t\t- is-part-of:: [[Intelligent Environment]]\n\t\t- has-part:: [[Learning Component]]\n\t\t- has-part:: [[Decision Engine]]\n\t\t- has-part:: [[Perception Module]]\n\t\t- has-part:: [[Goal System]]\n\t\t- has-part:: [[Action Executor]]\n\t\t- requires:: [[Goal Specification]]\n\t\t- requires:: [[Runtime Environment]]\n\t\t- requires:: [[Computational Resources]]\n\t\t- enables:: [[Process Automation]]\n\t\t- enables:: [[Decision Support]]\n\t\t- enables:: [[Content Moderation]]\n\t\t- enables:: [[Autonomous Behavior]]\n\t\t- enables:: [[NPC Interaction]]\n\t\t- depends-on:: [[Data Source]]\n\t\t- depends-on:: [[Knowledge Base]]\n\t\t- depends-on:: [[AI Framework]]\n\n## Academic Context\n\n- Autonomous agents are software entities designed to operate independently, making decisions and adapting to their environment to achieve specific goals without continuous human oversight.\n  - Their academic foundations lie in artificial intelligence, multi-agent systems, and cognitive architectures, drawing from disciplines such as computer science, robotics, and systems theory.\n  - Key developments include advances in machine learning, planning algorithms, and human-agent interaction models, enabling agents to exhibit goal-directed behaviour and adaptive responses.\n  - The concept has evolved from rule-based systems to sophisticated agents capable of reasoning, learning, and collaborating within complex digital environments such as metaverses.\n\n## Current Landscape (2025)\n\n- Autonomous agents are increasingly adopted across industries, powering applications from virtual assistants and customer service bots to complex simulations and autonomous vehicles.\n  - Notable organisations include technology leaders developing large language model (LLM)-powered agents capable of planning, reasoning, and tool use at scale and speed.\n  - In the UK, and particularly in North England, innovation hubs in Manchester, Leeds, Newcastle, and Sheffield are integrating autonomous agents into sectors such as digital manufacturing, smart cities, and immersive metaverse platforms.\n- Technically, agents now leverage improved models featuring chain-of-thought reasoning, extended context windows, and function calling, enabling more nuanced and efficient autonomous decision-making.\n- Standards and frameworks are emerging, such as the MPAI Metaverse Model – Architecture (MMM-TEC), which defines agent control architectures ensuring coherent digital entity behaviour and rights compliance within metaverse instances.\n\n## Research & Literature\n\n- Key academic sources include:\n  - Real de Oliveira, R., & Rodrigues, J. J. P. C. (2025). *Towards Web 4.0: Frameworks for Autonomous AI Agents and Decentralized Governance*. Frontiers in Blockchain, 8, 1591907. https://doi.org/10.3389/fbloc.2025.1591907\n  - Hay, J. (2025). *AI Agents in 2025: Expectations vs. Reality*. IBM Think Insights.\n  - MPAI Community. (2025). *A-User Control: The Autonomous Agent’s Brain*. MPAI.\n- Ongoing research focuses on enhancing agent autonomy through decentralized coordination, ethical frameworks, transparent learning, and integration with brain-computer interfaces to augment human-agent collaboration.\n\n## UK Context\n\n- The UK contributes significantly to autonomous agent research and deployment, with government and academic partnerships fostering AI innovation.\n- North England hosts several innovation clusters:\n  - Manchester’s AI and digital innovation centres focus on autonomous systems for urban management and healthcare.\n  - Leeds and Sheffield are advancing applications in industrial automation and immersive digital environments.\n  - Newcastle is notable for research in multi-agent systems and ethical AI governance.\n- Regional case studies include pilot projects deploying autonomous agents in smart city infrastructure and digital twin simulations, demonstrating practical benefits and challenges.\n\n## Future Directions\n\n- Emerging trends include the integration of autonomous agents within Web 4.0 ecosystems, characterised by decentralised governance, economic autonomy, and ethical alignment.\n- Anticipated challenges involve ensuring transparency, mitigating biases, securing identity frameworks, and balancing autonomy with human oversight.\n- Research priorities emphasise scalable governance structures, adaptive learning models, and enhanced human-agent interaction modalities, including natural language and brain-computer interfaces.\n- As autonomous agents become more embedded in everyday life, their role will shift from tools to collaborative partners—though one hopes they won’t start demanding tea breaks.\n\n## References\n\n1. Real de Oliveira, R., & Rodrigues, J. J. P. C. (2025). Towards Web 4.0: Frameworks for Autonomous AI Agents and Decentralized Governance. *Frontiers in Blockchain*, 8, 1591907. https://doi.org/10.3389/fbloc.2025.1591907\n2. Hay, J. (2025). AI Agents in 2025: Expectations vs. Reality. IBM Think Insights.\n3. MPAI Community. (2025). A-User Control: The Autonomous Agent’s Brain. MPAI.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Content Moderation"
+  ],
   "wiki_links": [
-    "AutonomousAIAgents"
+    "AI Framework",
+    "NPC Interaction",
+    "Intelligent Environment",
+    "MSF Use Cases",
+    "Knowledge Base",
+    "Data Source",
+    "Goal System",
+    "Learning Component",
+    "Perception Module",
+    "Action Executor",
+    "Runtime Environment",
+    "Process Automation",
+    "Content Moderation",
+    "Autonomous Behavior",
+    "AI System",
+    "AutonomousAIAgents",
+    "ComputationAndIntelligenceDomain",
+    "ComputeLayer",
+    "DataLayer",
+    "Decision Engine",
+    "Computational Resources",
+    "Decision Support",
+    "Goal Specification",
+    "ETSI GR ARF 010",
+    "Autonomous System"
   ],
   "ontology": {
     "term_id": "20231",
     "preferred_term": "Autonomous Agent",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#AutonomousAgent",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "Software entity capable of acting autonomously to achieve goals within a metaverse, exhibiting goal-directed behavior, decision-making, and adaptive responses without continuous human intervention.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
-    "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "owl_class": "mv:AutonomousAgent",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Agent",
+    "owl_inferred_class": "mv:VirtualAgent",
+    "is_subclass_of": [
+      "AutonomousAIAgents"
+    ],
+    "has_part": [
+      "Learning Component",
+      "Decision Engine",
+      "Perception Module",
+      "Goal System",
+      "Action Executor"
+    ],
+    "is_part_of": [
+      "AI System",
+      "Autonomous System",
+      "Intelligent Environment"
+    ],
+    "requires": [
+      "Goal Specification",
+      "Runtime Environment",
+      "Computational Resources"
+    ],
+    "depends_on": [
+      "Data Source",
+      "Knowledge Base",
+      "AI Framework"
+    ],
+    "enables": [
+      "Process Automation",
+      "Decision Support",
+      "Content Moderation",
+      "Autonomous Behavior",
+      "NPC Interaction"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "ComputationAndIntelligenceDomain"
+    ],
+    "implemented_in_layer": [
+      "DataLayer",
+      "ComputeLayer"
+    ],
+    "source": [
+      "ETSI GR ARF 010",
+      "MSF Use Cases"
+    ],
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "term-id '20231' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

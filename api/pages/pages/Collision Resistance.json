@@ -1,0 +1,70 @@
+{
+  "id": "Collision Resistance",
+  "title": "Collision Resistance",
+  "content": "- ### OntologyBlock\n  id:: collision-resistance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0048\n\t- preferred-term:: Collision Resistance\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Hash function security property within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:CollisionResistance\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[CryptographicDomain]]\n\t- implementedInLayer:: [[SecurityLayer]]\n\t- #### Relationships\n\t  id:: collision-resistance-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Entity]]\n\t\t- is-subclass-of:: [[CryptographicPrimitive]]\n\n## Collision Resistance\n\nCollision Resistance refers to hash function security property within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\n- Collision resistance remains critical in industry, especially in financial technology, cybersecurity, and blockchain platforms.\n  - Organisations such as major UK banks and fintech firms in London and Manchester rely on collision-resistant hashes to secure transactions.\n  - Blockchain projects in Leeds and Newcastle increasingly adopt SHA-3 and other advanced hash functions to mitigate vulnerabilities found in older algorithms like MD5 and SHA-1.\n- Technical capabilities have improved with newer hash functions offering stronger collision resistance, though the \"birthday paradox\" still sets theoretical limits on collision resistance based on output size.\n- Standards such as NIST SP 800-107 Rev. 1 continue to guide secure hash function design and evaluation, emphasising collision resistance as a key criterion.\n\n## Technical Details\n\n- **Id**: collision-resistance-standards\n- **Collapsed**: true\n- **Domain Prefix**: BC\n- **Sequence Number**: 0048\n- **Filename History**: [\"BC-0048-collision-resistance.md\"]\n- **Public Access**: true\n- **Source Domain**: blockchain\n- **Status**: complete\n- **Last Updated**: 2025-10-28\n- **Maturity**: mature\n- **Source**: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n- **Authority Score**: 0.95\n- **Owl:Class**: bc:CollisionResistance\n- **Owl:Physicality**: VirtualEntity\n- **Owl:Role**: Object\n- **Owl:Inferred Class**: bc:VirtualObject\n- **Belongstodomain**: [[CryptographicDomain]]\n- **Implementedinlayer**: [[SecurityLayer]]\n- **Is Subclass Of**: [[Blockchain Entity]], [[CryptographicPrimitive]]\n\n## Research & Literature\n\n- Seminal papers and authoritative sources include:\n  - Merkle, R. C. (1989). \"A Certified Digital Signature.\" *Advances in Cryptology — CRYPTO '89 Proceedings*. DOI: 10.1007/3-540-46885-4_32\n  - Damgård, I. (1989). \"A Design Principle for Hash Functions.\" *Advances in Cryptology — CRYPTO '89 Proceedings*. DOI: 10.1007/3-540-46885-4_31\n  - Wang, X., Yin, Y. L., & Yu, H. (2005). \"Finding Collisions in the Full SHA-1.\" *Advances in Cryptology — CRYPTO 2005*. DOI: 10.1007/11535218_3\n  - National Institute of Standards and Technology (NIST). (2020). *NIST SP 800-107 Rev. 1: Recommendation for Applications Using Approved Hash Algorithms*. Available at NIST website.\n- Ongoing research focuses on developing hash functions resistant to quantum attacks and improving efficiency without compromising collision resistance.\n\n## UK Context\n\n- The UK has contributed significantly to cryptographic research, with institutions such as the University of Manchester and University of Leeds hosting leading cryptography groups.\n  - Manchester’s Centre for Doctoral Training in Cyber Security and Privacy explores hash function security and collision resistance.\n  - Leeds-based fintech startups integrate collision-resistant hashing in blockchain applications to enhance transaction security.\n- Regional innovation hubs in Newcastle and Sheffield support cybersecurity initiatives that leverage collision resistance for secure data systems.\n- UK government agencies advocate for adoption of collision-resistant algorithms in national cybersecurity frameworks.\n\n## Future Directions\n\n- Emerging trends include quantum-resistant hash functions and hybrid cryptographic schemes combining classical and post-quantum algorithms.\n- Anticipated challenges involve balancing collision resistance with computational efficiency and adapting standards to evolving threat landscapes.\n- Research priorities emphasise provable security models, real-world cryptanalysis, and practical deployment in resource-constrained environments.\n\n## References\n\n1. Merkle, R. C. (1989). A Certified Digital Signature. *Advances in Cryptology — CRYPTO '89 Proceedings*, 218–238. DOI: 10.1007/3-540-46885-4_32\n2. Damgård, I. (1989). A Design Principle for Hash Functions. *Advances in Cryptology — CRYPTO '89 Proceedings*, 416–427. DOI: 10.1007/3-540-46885-4_31\n3. Wang, X., Yin, Y. L., & Yu, H. (2005). Finding Collisions in the Full SHA-1. *Advances in Cryptology — CRYPTO 2005*, 17–36. DOI: 10.1007/11535218_3\n4. National Institute of Standards and Technology (NIST). (2020). *Recommendation for Applications Using Approved Hash Algorithms (SP 800-107 Rev. 1)*. Available at: csrc.nist.gov\n5. Diversification.com. Collision resistance: Meaning, Criticisms & Real-World Uses. Accessed 2025.\n6. GeeksforGeeks. What is Strong and Weak Collision Resistance in Cryptography? Updated July 2025.\n7. Wikipedia contributors. Collision resistance. Wikipedia, The Free Encyclopedia. Accessed November 2025.\n*If hash collisions were a party, collision resistance would be the bouncer ensuring no two guests wear the same mask—because in cryptography, identical masks are a security faux pas.*\n\n## Metadata\n\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "SHA-256"
+  ],
+  "wiki_links": [
+    "NIST NISTIR",
+    "CryptographicDomain",
+    "SecurityLayer",
+    "CryptographicPrimitive",
+    "Blockchain Entity",
+    "ISO/IEC 23257:2021",
+    "IEEE 2418.1"
+  ],
+  "ontology": {
+    "term_id": "BC-0048",
+    "preferred_term": "Collision Resistance",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#CollisionResistance",
+    "source_domain": "blockchain",
+    "domain": "blockchain",
+    "domain_full_name": "",
+    "definition": "Hash function security property within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": "2025-10-28",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:CollisionResistance",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "bc:VirtualObject",
+    "is_subclass_of": [
+      "Blockchain Entity",
+      "CryptographicPrimitive"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "CryptographicDomain"
+    ],
+    "implemented_in_layer": [
+      "SecurityLayer"
+    ],
+    "source": [
+      "ISO/IEC 23257:2021",
+      "IEEE 2418.1",
+      "NIST NISTIR"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+      ]
+    }
+  }
+}

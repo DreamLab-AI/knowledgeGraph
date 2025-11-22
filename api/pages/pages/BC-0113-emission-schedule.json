@@ -1,0 +1,58 @@
+{
+  "id": "BC-0113-emission-schedule",
+  "title": "BC 0113 emission schedule",
+  "content": "- ### OntologyBlock\n  id:: bc-0113-emission-schedule-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0113\n\t- preferred-term:: BC 0113 emission schedule\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: ### Primary Definition\n\t- maturity:: draft\n\t- owl:class:: mv:BC0113emissionschedule\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: bc-0113-emission-schedule-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Token Economics]]\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "MetaverseDomain",
+    "Token Economics"
+  ],
+  "ontology": {
+    "term_id": "BC-0113",
+    "preferred_term": "BC 0113 emission schedule",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#BC0113emissionschedule",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
+    "definition": "### Primary Definition",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:BC0113emissionschedule",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Token Economics"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "owl:class namespace 'mv' doesn't match source-domain 'bc'"
+      ]
+    }
+  }
+}

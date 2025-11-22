@@ -1,0 +1,63 @@
+{
+  "id": "BERT",
+  "title": "BERT",
+  "content": "- ### OntologyBlock\n  id:: bert-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0211\n\t- preferred-term:: BERT\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: mv:BERT\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n### Domain & Architecture\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- maturity:: draft\n\n### Relationships\n- is-subclass-of:: [[PreTrainedLanguageModel]]\n\n## Characteristics\n\n- **Encoder-Only Architecture**: Uses only transformer encoder layers\n- **Bidirectional Pre-training**: Attends to full context in both directions\n- **Masked Language Modelling**: Primary pre-training objective\n- **Fine-Tuning Paradigm**: Pre-train then fine-tune for downstream tasks\n\n## Academic Foundations\n\n**Primary Source**: Devlin et al., \"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding\", arXiv:1810.04805 (2018)\n\n**Benchmark Results**: Obtains state-of-the-art results on eleven NLP tasks, pushing GLUE benchmark to 80.4% and achieving 93.2 F1 on SQuAD v1.1.\n\n## Technical Context\n\nBERT revolutionised NLP by demonstrating that pre-training bidirectional representations on large text corpora, then fine-tuning on specific tasks, achieves superior performance compared to task-specific architectures. Uses WordPiece tokenisation and trains on masked language modelling and next sentence prediction.\n\n## Ontological Relationships\n\n- **Broader Term**: Pre-trained Language Model\n- **Related Terms**: Masked Language Model, Transformer Architecture, RoBERTa, ALBERT\n- **Architecture Type**: Encoder-Only Transformer\n\n## Usage Context\n\n\"BERT obtains state-of-the-art results on eleven NLP tasks, including pushing the GLUE benchmark to 80.4%.\"\n\n## OWL Functional Syntax\n\n```clojure\n(Declaration (Class :BERT))\n(AnnotationAssertion rdfs:label :BERT \"BERT\"@en)\n(AnnotationAssertion :fullName :BERT \"Bidirectional Encoder Representations from Transformers\"@en)\n(AnnotationAssertion rdfs:comment :BERT\n  \"Transformer-based model pre-training deep bidirectional representations using masked language modelling.\"@en)\n(AnnotationAssertion :hasSource :BERT\n  \"Devlin et al., 'BERT: Pre-training of Deep Bidirectional Transformers', arXiv:1810.04805 (2018)\"@en)\n\n;; Taxonomic relationships\n(SubClassOf :BERT :PreTrainedLanguageModel)\n(SubClassOf :BERT :EncoderOnlyModel)\n(SubClassOf :BERT :TransformerArchitecture)\n\n;; Architectural characteristics\n(SubClassOf :BERT\n  (ObjectAllValuesFrom :usesArchitectureType :EncoderOnly))\n(SubClassOf :BERT\n  (ObjectAllValuesFrom :usesAttentionType :BidirectionalAttention))\n\n;; Pre-training objectives\n(Declaration (Class :MaskedLanguageModelling))\n(Declaration (Class :NextSentencePrediction))\n\n(SubClassOf :BERT\n  (ObjectSomeValuesFrom :trainedWith :MaskedLanguageModelling))\n(SubClassOf :BERT\n  (ObjectSomeValuesFrom :trainedWith :NextSentencePrediction))\n\n;; Tokenisation\n(SubClassOf :BERT\n  (ObjectSomeValuesFrom :usesTokenisation :WordPiece))\n\n;; Training paradigm\n(SubClassOf :BERT\n  (ObjectSomeValuesFrom :follows :PreTrainFineTuneParadigm))\n(DataPropertyAssertion :supportsBidirectionalContext :BERT \"true\"^^xsd:boolean)\n\n;; Benchmark performance\n(DataPropertyAssertion :achievesGLUEScore :BERT \"80.4\"^^xsd:decimal)\n(DataPropertyAssertion :achievesSQuADv1F1 :BERT \"93.2\"^^xsd:decimal)\n(AnnotationAssertion :benchmarkPerformance :BERT\n  \"State-of-the-art on eleven NLP tasks at introduction\"@en)\n\n;; Model variants\n(Declaration (Class :BERTBase))\n(Declaration (Class :BERTLarge))\n(SubClassOf :BERTBase :BERT)\n(SubClassOf :BERTLarge :BERT)\n\n(DataPropertyAssertion :hasLayerCount :BERTBase \"12\"^^xsd:integer)\n(DataPropertyAssertion :hasHiddenDimension :BERTBase \"768\"^^xsd:integer)\n(DataPropertyAssertion :hasAttentionHeads :BERTBase \"12\"^^xsd:integer)\n(DataPropertyAssertion :hasParameterCount :BERTBase \"110M\"^^xsd:string)\n\n(DataPropertyAssertion :hasLayerCount :BERTLarge \"24\"^^xsd:integer)\n(DataPropertyAssertion :hasHiddenDimension :BERTLarge \"1024\"^^xsd:integer)\n(DataPropertyAssertion :hasAttentionHeads :BERTLarge \"16\"^^xsd:integer)\n(DataPropertyAssertion :hasParameterCount :BERTLarge \"340M\"^^xsd:string)\n\n;; Successors and variants\n(SubClassOf :RoBERTa :BERT)\n(SubClassOf :ALBERT :BERT)\n(SubClassOf :DeBERTa :BERT)\n(SubClassOf :mBERT :BERT)\n\n;; Impact\n(AnnotationAssertion :hasImpact :BERT\n  \"Revolutionised NLP by demonstrating effectiveness of bidirectional pre-training\"@en)\n```\n\n## References\n\n- Devlin, J., et al. (2018). \"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding\". arXiv:1810.04805\n\n---\n\n*Ontology Term managed by AI-Grounded Ontology Working Group*\n*UK English Spelling Standards Applied*\n\t- maturity:: draft\n\t- owl:class:: mv:BERT\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]",
+  "backlinks": [
+    "mBERT",
+    "DeBERTa",
+    "ALBERT",
+    "RoBERTa"
+  ],
+  "wiki_links": [
+    "MetaverseDomain",
+    "PreTrainedLanguageModel"
+  ],
+  "ontology": {
+    "term_id": "AI-0211",
+    "preferred_term": "BERT",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#BERT",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:BERT",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain",
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

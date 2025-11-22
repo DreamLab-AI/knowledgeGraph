@@ -1,7 +1,7 @@
 {
   "id": "TELE-251-smart-contract-coordination",
   "title": "Smart Contract Coordination",
-  "content": "# Smart Contract Coordination\n\n- ### OntologyBlock\n  id:: smart-contract-coordination-ontology\n  collapsed:: true\n  - ontology:: true\n    - is-subclass-of:: [[DisruptiveTechnology]]\n  - term-id:: TELE-251\n  - preferred-term:: Smart Contract Coordination\n  - alternate-terms::\n  - Blockchain-Based Coordination\n  - Automated Agreement Execution\n  - Self-Executing Contracts for Collaboration\n  - source-domain:: tele\n  - status:: active\n  - public-access:: true\n  - definition:: \"The use of blockchain smart contracts—self-executing programs stored on distributed ledgers—to automate coordination, task allocation, payment distribution, and milestone verification in distributed teams, enabling trustless collaboration through cryptographically enforced agreements that execute deterministically without centralised intermediaries.\"\n  - maturity:: developing\n  - authority-score:: 0.80\n  - owl:class:: tele:SmartContractCoordination\n  - owl:physicality:: ConceptualEntity\n  - owl:role:: Process\n  - belongsToDomain::\n  - [[TELE-0000-telepresence-domain]]\n  - [[BlockchainCollaboration]]\n  - bridges-to::\n  - [[BlockchainDomain]]\n\n\n## Definition\n\n**Smart Contract Coordination** applies blockchain technology to [[TELE-002-telecollaboration]], encoding collaboration rules as immutable smart contracts that automatically enforce agreements. For example, a freelance developer completes a GitHub pull request; a smart contract verifies the merge, then releases payment in cryptocurrency [[TELE-253-cryptocurrency-remuneration]] without requiring escrow agents or manual approvals.\n\n## Use Cases\n\n- **Milestone-Based Payments**: Funds released when deliverables verified on-chain\n- **Multi-Signature Approvals**: Requires M-of-N team signatures to execute decisions\n- **Royalty Distribution**: NFT sales automatically split revenue among contributors\n- **DAO Task Allocation**: Decentralised autonomous organisations [[TELE-252-dao-governance-telecollaboration]] assign tasks via smart contracts\n\n## Advantages\n\n- **Trustless**: No reliance on third-party intermediaries\n- **Transparent**: All transactions auditable on blockchain\n- **Automated**: Execution deterministic, instant upon conditions met\n- **Global**: Cryptocurrency payments bypass banking system\n\n## Challenges\n\n- **Code Bugs**: Smart contract vulnerabilities enable exploits (£3.1B stolen in 2024)\n- **Gas Fees**: Transaction costs £0.50-£50 depending on network congestion\n- **Irreversibility**: Erroneous payments difficult to reverse\n- **Legal Uncertainty**: Smart contract enforceability unclear in UK law\n\n## Related Concepts\n\n- [[TELE-002-telecollaboration]]\n- [[TELE-250-blockchain-collaboration]]\n- [[TELE-252-dao-governance-telecollaboration]]\n- [[SmartContracts]]\n\n## Metadata\n\n- **Term-ID**: TELE-251\n- **Last Updated**: 2025-11-16\n- **Maturity**: Developing\n- **Authority Score**: 0.80",
+  "content": "- ### OntologyBlock\n  id:: smart-contract-coordination-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TELE-251\n\t- preferred-term:: Smart Contract Coordination\n\t- source-domain:: tc\n\t- owl:class:: tc:SmartContractCoordination\n\t- status:: active\n\t- public-access:: true\n\t- definition:: \"The use of blockchain smart contracts—self-executing programs stored on distributed ledgers—to automate coordination, task allocation, payment distribution, and milestone verification in distributed teams, enabling trustless collaboration through cryptographically enforced agreements that execute deterministically without centralised intermediaries.\"\n\t- maturity:: developing\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Process\n\n## Definition\n\n**Smart Contract Coordination** applies blockchain technology to [[TELE-002-telecollaboration]], encoding collaboration rules as immutable smart contracts that automatically enforce agreements. For example, a freelance developer completes a GitHub pull request; a smart contract verifies the merge, then releases payment in cryptocurrency [[TELE-253-cryptocurrency-remuneration]] without requiring escrow agents or manual approvals.\n\n## Use Cases\n\n- **Milestone-Based Payments**: Funds released when deliverables verified on-chain\n- **Multi-Signature Approvals**: Requires M-of-N team signatures to execute decisions\n- **Royalty Distribution**: NFT sales automatically split revenue among contributors\n- **DAO Task Allocation**: Decentralised autonomous organisations [[TELE-252-dao-governance-telecollaboration]] assign tasks via smart contracts\n\n## Advantages\n\n- **Trustless**: No reliance on third-party intermediaries\n- **Transparent**: All transactions auditable on blockchain\n- **Automated**: Execution deterministic, instant upon conditions met\n- **Global**: Cryptocurrency payments bypass banking system\n\n## Challenges\n\n- **Code Bugs**: Smart contract vulnerabilities enable exploits (£3.1B stolen in 2024)\n- **Gas Fees**: Transaction costs £0.50-£50 depending on network congestion\n- **Irreversibility**: Erroneous payments difficult to reverse\n- **Legal Uncertainty**: Smart contract enforceability unclear in UK law\n\n## Related Concepts\n\n- [[TELE-002-telecollaboration]]\n- [[TELE-250-blockchain-collaboration]]\n- [[TELE-252-dao-governance-telecollaboration]]\n- [[SmartContracts]]\n\n## Metadata\n\n- **Term-ID**: TELE-251\n- **Last Updated**: 2025-11-16\n- **Maturity**: Developing\n- **Authority Score**: 0.80",
   "backlinks": [
     "TELE-250-blockchain-collaboration",
     "TELE-253-cryptocurrency-remuneration",
@@ -10,24 +10,20 @@
     "TELE-002-telecollaboration"
   ],
   "wiki_links": [
-    "BlockchainCollaboration",
     "TELE-252-dao-governance-telecollaboration",
-    "TELE-253-cryptocurrency-remuneration",
-    "TELE-250-blockchain-collaboration",
-    "BlockchainDomain",
-    "TELE-0000-telepresence-domain",
-    "DisruptiveTechnology",
     "SmartContracts",
+    "TELE-250-blockchain-collaboration",
+    "TELE-253-cryptocurrency-remuneration",
     "TELE-002-telecollaboration"
   ],
   "ontology": {
     "term_id": "TELE-251",
     "preferred_term": "Smart Contract Coordination",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "tele",
-    "domain": "tele",
-    "domain_full_name": "",
+    "iri": "http://narrativegoldmine.com/telecollaboration#SmartContractCoordination",
+    "source_domain": "tc",
+    "domain": "tc",
+    "domain_full_name": "Telecollaboration",
     "definition": "\"The use of blockchain smart contracts—self-executing programs stored on distributed ledgers—to automate coordination, task allocation, payment distribution, and milestone verification in distributed teams, enabling trustless collaboration through cryptographically enforced agreements that execute deterministically without centralised intermediaries.\"",
     "scope_note": null,
     "status": "active",
@@ -35,10 +31,10 @@
     "version": null,
     "public_access": true,
     "last_updated": null,
-    "authority_score": 0.8,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": "tele:SmartContractCoordination",
+    "owl_class": "tc:SmartContractCoordination",
     "owl_physicality": "ConceptualEntity",
     "owl_role": "Process",
     "owl_inferred_class": null,
@@ -52,16 +48,15 @@
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [
-      "TELE-0000-telepresence-domain"
-    ],
+    "belongs_to_domain": [],
     "implemented_in_layer": [],
     "source": [],
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id 'TELE-251' doesn't match domain 'tc' (expected TC-)"
       ]
     }
   }

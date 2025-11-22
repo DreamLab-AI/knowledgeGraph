@@ -1,0 +1,127 @@
+{
+  "id": "Cryptocurrency",
+  "title": "Cryptocurrency",
+  "content": "- ### OntologyBlock\n  id:: cryptocurrency-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0105\n\t- preferred-term:: Cryptocurrency\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A digital currency secured by cryptographic algorithms, operating on a decentralized blockchain network without central authority, enabling peer-to-peer value transfer.\n\t- source:: [[Reed Smith]], [[ISO 24165]]\n\t- maturity:: mature\n\t- owl:class:: bc:Cryptocurrency\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- owl:equivalentClass:: bc:Cryptocurrency\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[BlockchainDomain]], [[VirtualEconomyDomain]]\n\t- implementedInLayer:: [[Middleware Layer]]\n\t- #### Relationships\n\t  id:: cryptocurrency-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Decentralized Network]]\n\t\t- is-part-of:: [[Money]]\n\t\t- is-part-of:: [[Digital Currency System]]\n\t\t- has-part:: [[Transaction System]]\n\t\t- has-part:: [[Cryptographic Protocol]]\n\t\t- has-part:: [[Blockchain]]\n\t\t- has-part:: [[Consensus Mechanism]]\n\t\t- requires:: [[Staking]]\n\t\t- requires:: [[Mining]]\n\t\t- requires:: [[Wallet]]\n\t\t- requires:: [[Distributed Ledger]]\n\t\t- enables:: [[Value Storage]]\n\t\t- enables:: [[Programmable Money]]\n\t\t- enables:: [[Cross-Border Transfer]]\n\t\t- enables:: [[Decentralized Payment]]\n\t\t- is-enabled-by:: [[Distributed Ledger Technology (DLT)]]\n\t\t- is-dependency-of:: [[Play-to-Earn (P2E)]]\n\t\t- depends-on:: [[Peer-to-Peer Network]]\n\t\t- depends-on:: [[Cryptographic Hash]]\n\t\t- depends-on:: [[Digital Signature]]\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "BC-0483-us-regulatory-framework",
+    "AI Model Card",
+    "BC-0481-fatf-recommendations",
+    "Carbon Credit Token",
+    "BC-0484-asia-pacific-regulation",
+    "Central Bank Digital Currency (CBDC)",
+    "Distributed Ledger Technology (DLT)",
+    "Play-to-Earn (P2E)",
+    "Bitcoin",
+    "AI Governance Principle"
+  ],
+  "wiki_links": [
+    "Play-to-Earn (P2E)",
+    "BlockchainDomain",
+    "Programmable Money",
+    "Digital Signature",
+    "Middleware Layer",
+    "Cryptographic Hash",
+    "Distributed Ledger",
+    "Digital Currency System",
+    "Blockchain",
+    "Decentralized Network",
+    "Distributed Ledger Technology (DLT)",
+    "Money",
+    "Reed Smith",
+    "Transaction System",
+    "Decentralized Payment",
+    "Staking",
+    "Wallet",
+    "Value Storage",
+    "Peer-to-Peer Network",
+    "Mining",
+    "Consensus Mechanism",
+    "ISO 24165",
+    "VirtualEconomyDomain",
+    "Cross-Border Transfer",
+    "Cryptographic Protocol"
+  ],
+  "ontology": {
+    "term_id": "BC-0105",
+    "preferred_term": "Cryptocurrency",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#Cryptocurrency",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
+    "definition": "A digital currency secured by cryptographic algorithms, operating on a decentralized blockchain network without central authority, enabling peer-to-peer value transfer.",
+    "scope_note": null,
+    "status": "active",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:Cryptocurrency",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "bc:VirtualObject",
+    "is_subclass_of": [],
+    "has_part": [
+      "Transaction System",
+      "Cryptographic Protocol",
+      "Blockchain",
+      "Consensus Mechanism"
+    ],
+    "is_part_of": [
+      "Decentralized Network",
+      "Money",
+      "Digital Currency System"
+    ],
+    "requires": [
+      "Staking",
+      "Mining",
+      "Wallet",
+      "Distributed Ledger"
+    ],
+    "depends_on": [
+      "Peer-to-Peer Network",
+      "Cryptographic Hash",
+      "Digital Signature"
+    ],
+    "enables": [
+      "Value Storage",
+      "Programmable Money",
+      "Cross-Border Transfer",
+      "Decentralized Payment"
+    ],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain",
+      "VirtualEconomyDomain"
+    ],
+    "implemented_in_layer": [
+      "Middleware Layer"
+    ],
+    "source": [
+      "Reed Smith",
+      "ISO 24165"
+    ],
+    "other_relationships": {
+      "is-enabled-by": [
+        "Distributed Ledger Technology (DLT)"
+      ],
+      "is-dependency-of": [
+        "Play-to-Earn (P2E)"
+      ]
+    },
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

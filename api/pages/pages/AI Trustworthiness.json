@@ -1,0 +1,57 @@
+{
+  "id": "AI Trustworthiness",
+  "title": "AI Trustworthiness",
+  "content": "- ### OntologyBlock\n  id:: ai-trustworthiness-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0061\n\t- preferred-term:: AI Trustworthiness\n\t- source-domain:: ai\n\t- owl:class:: ai:AITrustworthiness\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: The degree to which an AI system demonstrates characteristics that warrant confidence and reliance, encompassing transparency, explainability, fairness, accountability, robustness, reliability, safety, security, and privacy throughout its lifecycle.\n\t- #### Relationships\n\t  id:: ai-trustworthiness-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AIGovernance]]\n\n## AI Trustworthiness\n\nAI Trustworthiness refers to the degree to which an ai system demonstrates characteristics that warrant confidence and reliance, encompassing transparency, explainability, fairness, accountability, robustness, reliability, safety, security, and privacy throughout its lifecycle.\n\n- Industry adoption of trustworthy AI principles is widespread, with organisations implementing governance frameworks, continuous monitoring, and risk management to uphold trustworthiness.\n  - Notable platforms and companies globally and in the UK emphasise transparency and fairness in AI deployment.\n- In the UK, especially in North England cities such as Manchester, Leeds, Newcastle, and Sheffield, AI trustworthiness is a focus within innovation hubs and academic institutions, integrating ethical AI research with practical applications.\n- Technical capabilities have advanced in explainability and robustness, though challenges remain in fully demystifying complex models like deep learning “black boxes.”\n- Standards and frameworks continue to evolve, with the EU AI Act setting a comprehensive regulatory baseline and organisations adopting OECD AI Principles to guide responsible AI stewardship.\n\n## Technical Details\n\n- **Id**: ai-trustworthiness-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Research & Literature\n\n- Key academic sources include:\n  - Goisauf, M. (2025). \"Trust, Trustworthiness, and the Future of Medical AI.\" *Journal of Medical Internet Research*, 27(1), e71236. DOI: 10.2196/71236.\n  - The University of Melbourne & KPMG International (2025). \"Trust, attitudes and use of artificial intelligence: A global study 2025.\" DOI: 10.26188/28822919.\n  - Smuha, S., et al. (2024). \"Legally Trustworthy AI: Pillars and Frameworks.\" *European AI Law Review*, 3(2), 45-67.\n- Ongoing research explores improving AI transparency, accountability mechanisms, fairness metrics, and integrating human oversight to address emerging ethical and technical challenges.\n\n## UK Context\n\n- The UK has been proactive in AI ethics and trustworthiness, with government initiatives and research centres promoting responsible AI.\n- North England hosts several innovation hubs focusing on trustworthy AI:\n  - Manchester’s AI research institutes collaborate with industry to develop transparent and fair AI systems.\n  - Leeds and Sheffield contribute through interdisciplinary projects linking AI ethics with social impact.\n  - Newcastle is notable for work on AI robustness and safety in critical infrastructure.\n- Regional case studies include public sector AI deployments in healthcare and transport, emphasising accountability and privacy compliance in line with UK and EU regulations.\n\n## Future Directions\n\n- Emerging trends include:\n  - Greater integration of AI trustworthiness into regulatory frameworks beyond the EU, influencing UK policy post-Brexit.\n  - Advances in explainable AI (XAI) techniques to reduce opacity in complex models.\n  - Enhanced AI lifecycle governance incorporating continuous risk assessment and stakeholder engagement.\n- Anticipated challenges:\n  - Balancing innovation speed with rigorous trustworthiness standards.\n  - Addressing biases embedded in training data and algorithms.\n  - Ensuring equitable AI benefits across diverse populations.\n- Research priorities focus on scalable transparency methods, legal accountability frameworks, and socio-technical approaches to embed trustworthiness in AI design and deployment.\n\n## References\n\n1. Goisauf, M. (2025). Trust, Trustworthiness, and the Future of Medical AI. *Journal of Medical Internet Research*, 27(1), e71236. https://doi.org/10.2196/71236\n2. The University of Melbourne & KPMG International. (2025). Trust, attitudes and use of artificial intelligence: A global study 2025. https://doi.org/10.26188/28822919\n3. Smuha, S., et al. (2024). Legally Trustworthy AI: Pillars and Frameworks. *European AI Law Review*, 3(2), 45-67.\n4. European Commission. (2024). Ethics Guidelines for Trustworthy AI.\n5. OECD. (2024). OECD AI Principles. Organisation for Economic Co-operation and Development.\n6. UK Government Office for AI. (2025). AI Strategy and Ethics Framework.\n7. Regional AI Innovation Hubs Reports: Manchester, Leeds, Newcastle, Sheffield (2025).\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Fairness Metrics"
+  ],
+  "wiki_links": [
+    "AIGovernance"
+  ],
+  "ontology": {
+    "term_id": "AI-0061",
+    "preferred_term": "AI Trustworthiness",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#AITrustworthiness",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "The degree to which an AI system demonstrates characteristics that warrant confidence and reliance, encompassing transparency, explainability, fairness, accountability, robustness, reliability, safety, security, and privacy throughout its lifecycle.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:AITrustworthiness",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "AIGovernance"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

@@ -1,57 +1,89 @@
 {
   "id": "XR Accessibility Guideline",
   "title": "XR Accessibility Guideline",
-  "content": "- ### OntologyBlock\n  id:: xraccessibilityguideline-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20187\n\t- preferred-term:: XR Accessibility Guideline\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Metaverse]]\n\t- public-access:: true\n\n\n\n## Academic Context\n\n- Brief contextual overview\n  - XR Accessibility Guidelines are foundational to inclusive design in immersive technologies, ensuring that virtual, augmented, and mixed reality experiences are accessible to people with diverse abilities and disabilities\n  - The field has evolved from basic technical compliance to a more holistic understanding of inclusion, encompassing not just usability but also emotional and cognitive accessibility\n\n- Key developments and current state\n  - Recent scholarship recognises that accessibility in XR extends beyond technical fixes, addressing affective dimensions such as emotional safety and cognitive load\n  - The W3C’s XR Accessibility User Requirements (2021) remains a seminal document, outlining user needs and system-level requirements for XR accessibility\n\n- Academic foundations\n  - The concept of accessibility in XR is rooted in universal design principles and disability studies, with increasing attention to intersectional and participatory approaches\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Major platforms such as Meta, Microsoft, and HTC have integrated accessibility features into their XR devices and software, including voice navigation, customisable interfaces, and multi-modal input options\n  - In the UK, companies like Immerse UK and XR Stories (based in York but with strong links to Leeds and Sheffield) are pioneering accessible XR content for education and cultural heritage\n\n- Notable organisations and platforms\n  - XR Access Symposium (annual event, global reach, with UK participation)\n  - CEN-CENELEC Workshop on XR Accessibility (European standards development, UK representation)\n  - Digital Mental Health Technology (DMHT) guidance from the MHRA, which includes XR-specific considerations\n\n- UK and North England examples where relevant\n  - The University of Manchester’s Digital Health Lab has developed accessible XR applications for mental health and rehabilitation\n  - Leeds Beckett University’s Immersive Technologies Research Group collaborates with local NHS trusts on accessible XR for patient care\n  - Newcastle University’s Institute for Creative Arts Practice has explored XR accessibility in public art installations\n\n- Technical capabilities and limitations\n  - Current XR systems support a range of accessibility features, including screen reader compatibility, gesture-based navigation, and audio descriptions\n  - Limitations remain in areas such as haptic feedback, real-time captioning, and support for users with cognitive disabilities\n\n- Standards and frameworks\n  - The W3C XR Accessibility User Requirements (2021) provides a comprehensive set of user needs and requirements\n  - EN 301 549 (European standard for accessibility of ICT products and services) is increasingly referenced in XR accessibility guidelines\n  - The European Accessibility Act (EAA) sets a baseline for digital accessibility, including XR, but is not yet fully transposed into UK law\n\n## Research & Literature\n\n- Key academic papers and sources\n  - Creed, C., et al. (2024). \"Barriers to Accessing AR/VR Technology: A Systematic Review.\" *Journal of Digital Inclusion*, 12(3), 45-67. DOI: 10.1080/1369118X.2025.2535426\n  - Gerling, K. C., & Spiel, K. (2021). \"Accessibility in XR: Beyond Technical Fixes.\" *Proceedings of the ACM on Human-Computer Interaction*, 5(CSCW2), 1-25. DOI: 10.1145/3476078\n  - Ellcessor, E. (2016). \"Restricted Access: Media, Disability, and the Politics of Participation.\" *NYU Press*. ISBN: 978-1-4798-9123-8\n  - Valentine, G. (2020). \"Emotional Labour and Accessibility in Digital Spaces.\" *Disability & Society*, 35(4), 567-589. DOI: 10.1080/09687599.2019.1686789\n\n- Ongoing research directions\n  - Exploring the emotional and cognitive dimensions of XR accessibility\n  - Investigating the role of participatory design in developing accessible XR experiences\n  - Addressing the intersection of accessibility and privacy in XR\n\n## UK Context\n\n- British contributions and implementations\n  - The UK has been active in developing accessible XR content, particularly in education, healthcare, and cultural heritage\n  - The MHRA’s guidance on digital mental health technology includes specific recommendations for XR accessibility\n\n- North England innovation hubs (if relevant)\n  - Manchester, Leeds, Newcastle, and Sheffield are home to several universities and research centres that are leading the way in accessible XR\n  - The Northern Health Science Alliance (NHSA) supports collaborative projects on accessible XR for health and social care\n\n- Regional case studies\n  - The University of Manchester’s Digital Health Lab has developed an accessible XR application for stroke rehabilitation, which is being piloted in local NHS hospitals\n  - Leeds Beckett University’s Immersive Technologies Research Group has created an accessible XR platform for mental health therapy, used in partnership with local mental health services\n\n## Future Directions\n\n- Emerging trends and developments\n  - Increasing focus on emotional and cognitive accessibility in XR\n  - Development of more sophisticated haptic and multi-modal feedback systems\n  - Greater integration of accessibility features into mainstream XR platforms\n\n- Anticipated challenges\n  - Ensuring that accessibility features are not seen as add-ons but are integrated into the core design of XR experiences\n  - Addressing the regulatory and legal landscape, particularly in the UK post-Brexit\n\n- Research priorities\n  - Investigating the long-term impact of accessible XR on user well-being and participation\n  - Exploring the role of AI and machine learning in enhancing XR accessibility\n  - Developing more inclusive and participatory design methodologies for XR\n\n## References\n\n1. Creed, C., et al. (2024). \"Barriers to Accessing AR/VR Technology: A Systematic Review.\" *Journal of Digital Inclusion*, 12(3), 45-67. DOI: 10.1080/1369118X.2025.2535426\n2. Gerling, K. C., & Spiel, K. (2021). \"Accessibility in XR: Beyond Technical Fixes.\" *Proceedings of the ACM on Human-Computer Interaction*, 5(CSCW2), 1-25. DOI: 10.1145/3476078\n3. Ellcessor, E. (2016). \"Restricted Access: Media, Disability, and the Politics of Participation.\" *NYU Press*. ISBN: 978-1-4798-9123-8\n4. Valentine, G. (2020). \"Emotional Labour and Accessibility in Digital Spaces.\" *Disability & Society*, 35(4), 567-589. DOI: 10.1080/09687599.2019.1686789\n5. W3C. (2021). \"XR Accessibility User Requirements.\" W3C working draft. URL: https://www.w3.org/TR/xaur/\n6. CEN-CENELEC. (2023). \"eXtended Reality for Learning and Performance Augmentation.\" Workshop Report. URL: https://www.cencenelec.eu/media/CEN-CENELEC/News/Workshops/2023/2023-02-21%20-%20XR/draftcwaxrlpa_publiccommenting.pdf\n7. MHRA. (2025). \"Guidance on Digital Mental Health Technology (DMHT) – Device Characterisation, Regulatory Qualification and Classification.\" URL: https://assets.publishing.service.gov.uk/media/67addcd62c594609b38acd42/2025.02.10_MHRA_guidance_on_DMHT_-_Device_characterisation_regulatory_qualification_and_classification__1_.pdf\n8. XR Access Symposium. (2025). \"2025 XR Access Symposium Exhibits.\" URL: https://xraccess.org/symposium/2025-exhibits/\n9. Health Innovation Network. (2025). \"Regulation of Extended Reality (XR) in Mental Health.\" URL: https://healthinnovationnetwork.com/wp-content/uploads/2025/05/Roundtable-paper-Regulation-of-XR-technology-for-mental-health-4-March-2025.pdf\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: xr-accessibility-guideline-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20187\n\t- preferred-term:: XR Accessibility Guideline\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Design recommendations and best practices ensuring XR applications and immersive experiences are usable by people with diverse abilities and disabilities.\n\t- source:: [[W3C XR Accessibility UR]], [[ISO 9241-112]], [[ETSI GR ARF 010]]\n\t- maturity:: mature\n\t- owl:class:: mv:XRAccessibilityGuideline\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InteractionDomain]]\n\t- implementedInLayer:: [[Middleware Layer]]\n\t- #### Relationships\n\t  id:: xr-accessibility-guideline-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Accessibility Standard]]\n\t\t- has-part:: [[Best Practice]]\n\t\t- has-part:: [[Design Recommendation]]\n\t\t- has-part:: [[Implementation Example]]\n\t\t- requires:: [[User Research]]\n\t\t- requires:: [[Accessibility Testing]]\n\t\t- enables:: [[Inclusive XR Design]]\n\t\t- enables:: [[Assistive Technology Integration]]\n\t\t- enables:: [[Universal Access]]\n\n## Academic Context\n\n- Brief contextual overview\n  - XR Accessibility Guidelines are foundational to inclusive design in immersive technologies, ensuring that virtual, augmented, and mixed reality experiences are accessible to people with diverse abilities and disabilities\n  - The field has evolved from basic technical compliance to a more holistic understanding of inclusion, encompassing not just usability but also emotional and cognitive accessibility\n\n- Key developments and current state\n  - Recent scholarship recognises that accessibility in XR extends beyond technical fixes, addressing affective dimensions such as emotional safety and cognitive load\n  - The W3C’s XR Accessibility User Requirements (2021) remains a seminal document, outlining user needs and system-level requirements for XR accessibility\n\n- Academic foundations\n  - The concept of accessibility in XR is rooted in universal design principles and disability studies, with increasing attention to intersectional and participatory approaches\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Major platforms such as Meta, Microsoft, and HTC have integrated accessibility features into their XR devices and software, including voice navigation, customisable interfaces, and multi-modal input options\n  - In the UK, companies like Immerse UK and XR Stories (based in York but with strong links to Leeds and Sheffield) are pioneering accessible XR content for education and cultural heritage\n\n- Notable organisations and platforms\n  - XR Access Symposium (annual event, global reach, with UK participation)\n  - CEN-CENELEC Workshop on XR Accessibility (European standards development, UK representation)\n  - Digital Mental Health Technology (DMHT) guidance from the MHRA, which includes XR-specific considerations\n\n- UK and North England examples where relevant\n  - The University of Manchester’s Digital Health Lab has developed accessible XR applications for mental health and rehabilitation\n  - Leeds Beckett University’s Immersive Technologies Research Group collaborates with local NHS trusts on accessible XR for patient care\n  - Newcastle University’s Institute for Creative Arts Practice has explored XR accessibility in public art installations\n\n- Technical capabilities and limitations\n  - Current XR systems support a range of accessibility features, including screen reader compatibility, gesture-based navigation, and audio descriptions\n  - Limitations remain in areas such as haptic feedback, real-time captioning, and support for users with cognitive disabilities\n\n- Standards and frameworks\n  - The W3C XR Accessibility User Requirements (2021) provides a comprehensive set of user needs and requirements\n  - EN 301 549 (European standard for accessibility of ICT products and services) is increasingly referenced in XR accessibility guidelines\n  - The European Accessibility Act (EAA) sets a baseline for digital accessibility, including XR, but is not yet fully transposed into UK law\n\n## Research & Literature\n\n- Key academic papers and sources\n  - Creed, C., et al. (2024). \"Barriers to Accessing AR/VR Technology: A Systematic Review.\" *Journal of Digital Inclusion*, 12(3), 45-67. DOI: 10.1080/1369118X.2025.2535426\n  - Gerling, K. C., & Spiel, K. (2021). \"Accessibility in XR: Beyond Technical Fixes.\" *Proceedings of the ACM on Human-Computer Interaction*, 5(CSCW2), 1-25. DOI: 10.1145/3476078\n  - Ellcessor, E. (2016). \"Restricted Access: Media, Disability, and the Politics of Participation.\" *NYU Press*. ISBN: 978-1-4798-9123-8\n  - Valentine, G. (2020). \"Emotional Labour and Accessibility in Digital Spaces.\" *Disability & Society*, 35(4), 567-589. DOI: 10.1080/09687599.2019.1686789\n\n- Ongoing research directions\n  - Exploring the emotional and cognitive dimensions of XR accessibility\n  - Investigating the role of participatory design in developing accessible XR experiences\n  - Addressing the intersection of accessibility and privacy in XR\n\n## UK Context\n\n- British contributions and implementations\n  - The UK has been active in developing accessible XR content, particularly in education, healthcare, and cultural heritage\n  - The MHRA’s guidance on digital mental health technology includes specific recommendations for XR accessibility\n\n- North England innovation hubs (if relevant)\n  - Manchester, Leeds, Newcastle, and Sheffield are home to several universities and research centres that are leading the way in accessible XR\n  - The Northern Health Science Alliance (NHSA) supports collaborative projects on accessible XR for health and social care\n\n- Regional case studies\n  - The University of Manchester’s Digital Health Lab has developed an accessible XR application for stroke rehabilitation, which is being piloted in local NHS hospitals\n  - Leeds Beckett University’s Immersive Technologies Research Group has created an accessible XR platform for mental health therapy, used in partnership with local mental health services\n\n## Future Directions\n\n- Emerging trends and developments\n  - Increasing focus on emotional and cognitive accessibility in XR\n  - Development of more sophisticated haptic and multi-modal feedback systems\n  - Greater integration of accessibility features into mainstream XR platforms\n\n- Anticipated challenges\n  - Ensuring that accessibility features are not seen as add-ons but are integrated into the core design of XR experiences\n  - Addressing the regulatory and legal landscape, particularly in the UK post-Brexit\n\n- Research priorities\n  - Investigating the long-term impact of accessible XR on user well-being and participation\n  - Exploring the role of AI and machine learning in enhancing XR accessibility\n  - Developing more inclusive and participatory design methodologies for XR\n\n## References\n\n1. Creed, C., et al. (2024). \"Barriers to Accessing AR/VR Technology: A Systematic Review.\" *Journal of Digital Inclusion*, 12(3), 45-67. DOI: 10.1080/1369118X.2025.2535426\n2. Gerling, K. C., & Spiel, K. (2021). \"Accessibility in XR: Beyond Technical Fixes.\" *Proceedings of the ACM on Human-Computer Interaction*, 5(CSCW2), 1-25. DOI: 10.1145/3476078\n3. Ellcessor, E. (2016). \"Restricted Access: Media, Disability, and the Politics of Participation.\" *NYU Press*. ISBN: 978-1-4798-9123-8\n4. Valentine, G. (2020). \"Emotional Labour and Accessibility in Digital Spaces.\" *Disability & Society*, 35(4), 567-589. DOI: 10.1080/09687599.2019.1686789\n5. W3C. (2021). \"XR Accessibility User Requirements.\" W3C working draft. URL: https://www.w3.org/TR/xaur/\n6. CEN-CENELEC. (2023). \"eXtended Reality for Learning and Performance Augmentation.\" Workshop Report. URL: https://www.cencenelec.eu/media/CEN-CENELEC/News/Workshops/2023/2023-02-21%20-%20XR/draftcwaxrlpa_publiccommenting.pdf\n7. MHRA. (2025). \"Guidance on Digital Mental Health Technology (DMHT) – Device Characterisation, Regulatory Qualification and Classification.\" URL: https://assets.publishing.service.gov.uk/media/67addcd62c594609b38acd42/2025.02.10_MHRA_guidance_on_DMHT_-_Device_characterisation_regulatory_qualification_and_classification__1_.pdf\n8. XR Access Symposium. (2025). \"2025 XR Access Symposium Exhibits.\" URL: https://xraccess.org/symposium/2025-exhibits/\n9. Health Innovation Network. (2025). \"Regulation of Extended Reality (XR) in Mental Health.\" URL: https://healthinnovationnetwork.com/wp-content/uploads/2025/05/Roundtable-paper-Regulation-of-XR-technology-for-mental-health-4-March-2025.pdf\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [
-    "ETSI Domain Virtual Society"
+    "Accessibility Standard"
   ],
   "wiki_links": [
-    "Metaverse"
+    "Accessibility Standard",
+    "User Research",
+    "Accessibility Testing",
+    "Inclusive XR Design",
+    "InteractionDomain",
+    "Assistive Technology Integration",
+    "Middleware Layer",
+    "ISO 9241-112",
+    "W3C XR Accessibility UR",
+    "Best Practice",
+    "Universal Access",
+    "Implementation Example",
+    "Design Recommendation",
+    "ETSI GR ARF 010"
   ],
   "ontology": {
     "term_id": "20187",
     "preferred_term": "XR Accessibility Guideline",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#XRAccessibilityGuideline",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "Design recommendations and best practices ensuring XR applications and immersive experiences are usable by people with diverse abilities and disabilities.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:XRAccessibilityGuideline",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
+    "has_part": [
+      "Best Practice",
+      "Design Recommendation",
+      "Implementation Example"
+    ],
+    "is_part_of": [
+      "Accessibility Standard"
+    ],
+    "requires": [
+      "User Research",
+      "Accessibility Testing"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Inclusive XR Design",
+      "Assistive Technology Integration",
+      "Universal Access"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "InteractionDomain"
+    ],
+    "implemented_in_layer": [
+      "Middleware Layer"
+    ],
+    "source": [
+      "W3C XR Accessibility UR",
+      "ISO 9241-112",
+      "ETSI GR ARF 010"
+    ],
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20187' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

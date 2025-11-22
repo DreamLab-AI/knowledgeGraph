@@ -1,0 +1,57 @@
+{
+  "id": "Sheffield Advanced Manufacturing",
+  "title": "Sheffield Advanced Manufacturing",
+  "content": "- ### OntologyBlock\n  id:: sheffield-advanced-manufacturing-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: UK-005\n\t- preferred-term:: Sheffield Advanced Manufacturing\n\t- source-domain:: uk\n\t- owl:class:: uk:SheffieldAdvancedManufacturing\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Sheffield's advanced manufacturing hub specialising in materials science, robotics, and Industry 4.0 technologies.\n\t- maturity:: established\n\t- owl:class:: uk:SheffieldAdvancedManufacturing\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: RegionalEcosystem\n\t- belongsToDomain:: [[UKTechEcosystem]]\n\n## Sheffield Advanced Manufacturing\n\nSheffield Advanced Manufacturing refers to sheffield's advanced manufacturing hub specialising in materials science, robotics, and industry 4.0 technologies.\n\n- [[North England Innovation Corridor]]\n- [[Northern Powerhouse]]\n- [[UK Tech Ecosystem]]\n\n## Technical Details\n\n- **Id**: sheffield-advanced-manufacturing-ontology\n- **Collapsed**: true\n- **Source Domain**: uk-regions\n- **Status**: active\n- **Public Access**: true\n- **Maturity**: established\n- **Region**: South Yorkshire\n- **Focus Areas**: Manufacturing, Materials, Robotics\n- **Owl:Class**: uk:UK-005-SheffieldAdvancedManufacturing\n- **Owl:Physicality**: ConceptualEntity\n- **Owl:Role**: RegionalEcosystem\n- **Belongstodomain**: [[UKTechEcosystem]]\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n\n## References\n\n1. [https://www.mercia.co.uk/the-manufacturing-renaissance-spotlight-on-south-yorkshire/](https://www.mercia.co.uk/the-manufacturing-renaissance-spotlight-on-south-yorkshire/)\n2. [https://www.centreforcities.org/reader/parks-and-innovation-lessons-from-sheffields-advanced-manufacturing-park/what-is-the-amp-model/](https://www.centreforcities.org/reader/parks-and-innovation-lessons-from-sheffields-advanced-manufacturing-park/what-is-the-amp-model/)\n3. [https://www.gov.uk/government/news/south-yorkshire-named-as-first-uk-investment-zone](https://www.gov.uk/government/news/south-yorkshire-named-as-first-uk-investment-zone)\n4. [https://sheffield.ac.uk/city-region/news/economic-impact-and-influence-why-amrc-matters-uk-manufacturing](https://sheffield.ac.uk/city-region/news/economic-impact-and-influence-why-amrc-matters-uk-manufacturing)\n5. [https://britishmanufacturinghistory.uk/2024/07/13/sheffield-manufacturing-history/](https://britishmanufacturinghistory.uk/2024/07/13/sheffield-manufacturing-history/)\n6. [https://invest.southyorkshire-ca.gov.uk/amid](https://invest.southyorkshire-ca.gov.uk/amid)\n7. [https://just2ce.eu/case-studies/case-study-sheffield-advanced-manufacturing-district/](https://just2ce.eu/case-studies/case-study-sheffield-advanced-manufacturing-district/)\n8. [https://en.wikipedia.org/wiki/Advanced_Manufacturing_Park](https://en.wikipedia.org/wiki/Advanced_Manufacturing_Park)\n9. [https://harworthgroup.com/projects/advanced-manufacturing-park/](https://harworthgroup.com/projects/advanced-manufacturing-park/)\n10. [https://www.brookings.edu/articles/an-advanced-manufacturing-innovation-district-grows-in-sheffield-england/](https://www.brookings.edu/articles/an-advanced-manufacturing-innovation-district-grows-in-sheffield-england/)\n\n## Metadata\n\n- **Created**: 2025-11-11\n- **Region**: South Yorkshire, North England\n- **Category**: Regional Technology Ecosystem\n- **Status**: Active",
+  "backlinks": [],
+  "wiki_links": [
+    "UK Tech Ecosystem",
+    "Northern Powerhouse",
+    "UKTechEcosystem",
+    "North England Innovation Corridor"
+  ],
+  "ontology": {
+    "term_id": "UK-005",
+    "preferred_term": "Sheffield Advanced Manufacturing",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "uk",
+    "domain": "uk",
+    "domain_full_name": "",
+    "definition": "Sheffield's advanced manufacturing hub specialising in materials science, robotics, and Industry 4.0 technologies.",
+    "scope_note": null,
+    "status": "active",
+    "maturity": "established",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "uk:SheffieldAdvancedManufacturing",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "RegionalEcosystem",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "UKTechEcosystem"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

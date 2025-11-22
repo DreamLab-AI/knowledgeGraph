@@ -1,0 +1,72 @@
+{
+  "id": "Accuracy",
+  "title": "Accuracy",
+  "content": "- ### OntologyBlock\n  id:: accuracy-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0107\n\t- preferred-term:: Accuracy\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: mv:Accuracy\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n### Domain & Architecture\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- maturity:: draft\n\n### Relationships\nid:: accuracy-relationships\n\t\t- is-subclass-of:: [[ArtificialIntelligence]]\n\n## Mathematical Definition\n\n$$\\text{Accuracy} = \\frac{TP + TN}{TP + TN + FP + FN}$$\n\nWhere:\n- **TP** (True Positives): Correctly predicted positive instances\n- **TN** (True Negatives): Correctly predicted negative instances\n- **FP** (False Positives): Incorrectly predicted as positive\n- **FN** (False Negatives): Incorrectly predicted as negative\n\n## Context and Significance\n\nAccuracy is often the most intuitive and widely reported performance metric, representing the straightforward question: \"How often is the model correct?\" However, its simplicity can be misleading in many real-world scenarios. In imbalanced datasets (where one class vastly outnumbers others), high accuracy can be achieved by simply predicting the majority class, masking poor performance on minority classes. In applications with asymmetric costs (where false positives and false negatives have different consequences), accuracy treats all errors equally, failing to reflect true system utility.\n\nDespite these limitations, accuracy remains valuable as one component of comprehensive performance assessment, particularly when combined with other metrics providing complementary perspectives (precision, recall, F1 score) and when disaggregated across subgroups to detect fairness issues.\n\n## Key Characteristics\n\n- **Aggregate metric**: Single number summarising overall correctness\n- **Balanced treatment**: Weights all instances equally regardless of class\n- **Intuitive interpretation**: Directly represents proportion correct\n- **Imbalance-sensitive**: Can be misleading with skewed class distributions\n- **Complementary**: Best used alongside precision, recall, and F1 score\n- **Threshold-dependent**: For probabilistic classifiers, depends on classification threshold\n\n## Appropriate Use Cases\n\n**When Accuracy is Suitable:**\n- Balanced datasets with roughly equal class proportions\n- Applications where all error types have similar costs\n- Multi-class problems where overall correctness is primary concern\n- Initial exploratory analysis to assess basic model viability\n- Situations where false positives and false negatives equally undesirable\n\n**When Alternative Metrics Preferred:**\n- Imbalanced datasets (use precision, recall, F1, or balanced accuracy)\n- Asymmetric error costs (use weighted metrics or cost-sensitive evaluation)\n- Critical applications where specific error types must be minimised (use precision or recall)\n- Fairness-sensitive contexts (use group-disaggregated metrics)\n\n## Relationships\n\n- **Component of**: Model Performance assessment\n- **Calculated from**: Confusion Matrix values\n- **Complements**: Precision, Recall, F1 Score\n- **Alternative to**: Balanced Accuracy (for imbalanced data)\n- **Visualised via**: ROC Curve (across thresholds)\n- **Used in**: Model Evaluation, model selection, performance monitoring\n- **Monitored during**: AI Monitoring, operational oversight\n- **Reported in**: Model Cards, performance dashboards, audit documentation\n\n## Examples and Applications\n\n1. **Balanced Binary Classification**: Email spam filter with 50% spam, 50% legitimate emails achieves 95% accuracy, meaning 95 out of 100 emails correctly classified—accuracy appropriately reflects performance given balanced distribution\n2. **Imbalanced Dataset Misuse**: Fraud detection with 99.5% legitimate transactions, 0.5% fraudulent—model predicting \"legitimate\" for all transactions achieves 99.5% accuracy but catches zero fraud, demonstrating accuracy's inadequacy for imbalanced problems\n3. **Multi-class Classification**: Image classifier distinguishing 10 animal species with approximately equal representation achieves 87% accuracy, providing useful overall performance indicator whilst individual per-class precision and recall offer additional detail\n4. **Medical Screening Limitation**: Disease screening test with 2% disease prevalence—model always predicting \"healthy\" achieves 98% accuracy but fails to identify any cases, illustrating need for sensitivity (recall) and specificity metrics in medical contexts\n\n## Computational Considerations\n\n**Calculation Requirements:**\n- Requires labelled test data with ground truth labels\n- For probabilistic classifiers, requires threshold selection to convert probabilities to class predictions\n- Efficient to compute: O(n) where n is number of instances\n- Standard implementation in all ML libraries\n\n**Threshold Sensitivity:**\n- For probabilistic classifiers (outputting probabilities), accuracy depends on classification threshold (typically 0.5)\n- Optimal threshold for accuracy may differ from thresholds optimising other objectives\n- Threshold should be set on validation data, not test data, to avoid optimistic bias\n\n## Implementation Considerations\n\n**Best Practices:**\n- Report accuracy alongside precision, recall, and F1 score for comprehensive view\n- Disaggregate accuracy across demographic groups to detect fairness issues\n- Calculate per-class accuracy in addition to overall accuracy for multi-class problems\n- Consider balanced accuracy for imbalanced datasets: (Sensitivity + Specificity) / 2\n- Establish baseline accuracy (e.g., always predicting majority class) for context\n- Monitor accuracy trends over time to detect model degradation\n\n**Common Pitfalls:**\n- Relying solely on accuracy for imbalanced datasets\n- Ignoring accuracy paradox: high accuracy masking poor minority class performance\n- Comparing accuracy across datasets with different class balance\n- Optimising for accuracy when business objectives prioritise specific error types\n- Failing to disaggregate accuracy across subgroups in fairness assessments\n\n## Alternatives and Extensions\n\n**Balanced Accuracy**: Average of sensitivity and specificity, more appropriate for imbalanced datasets\n\n**Top-K Accuracy**: Proportion of instances where true label in top K predictions (common in multi-class ranking)\n\n**Cohen's Kappa**: Accuracy adjusted for chance agreement\n\n**Matthews Correlation Coefficient (MCC)**: Balanced measure considering all confusion matrix cells\n\n## ISO/IEC and Standards Alignment\n\n**ISO/IEC 25059** (Quality Model for AI Systems):\n- Accuracy as component of functional suitability quality characteristic\n- Correctness sub-characteristic addressed by accuracy metric\n\n**ISO/IEC 25024** (Data Quality Metrics):\n- Accuracy in context of data quality and model output quality\n\n## NIST AI RMF Integration\n\n**MEASURE Function**:\n- MEASURE-2.2: AI system performance metrics tracked, including accuracy where appropriate\n- MEASURE-2.7: AI system accuracy established and evaluated across different contexts\n- Accuracy as one component of Valid and Reliable trustworthiness characteristic\n\n## Related Terms\n\n- **Model Performance**: Broader concept of which accuracy is one metric\n- **Precision**: Complementary metric for positive predictive value\n- **Recall**: Complementary metric for sensitivity\n- **F1 Score**: Harmonic mean balancing precision and recall\n- **Confusion Matrix**: Source of accuracy calculation\n- **ROC Curve**: Visualises accuracy/performance trade-offs across thresholds\n- **Balanced Accuracy**: Variant addressing class imbalance\n- **True Positive Rate**: Related to recall/sensitivity\n- **True Negative Rate**: Specificity\n\n## References\n\n1. Sokolova, M. & Lapalme, G., *A systematic analysis of performance measures for classification tasks*, Information Processing & Management (2009)\n2. Powers, D.M.W., *Evaluation: From Precision, Recall and F-Measure to ROC, Informedness, Markedness & Correlation*, Journal of Machine Learning Technologies (2011)\n3. ISO/IEC 25059, *Software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Quality model for AI systems*\n4. Breck, E. et al., *The ML Test Score: A Rubric for ML Production Readiness*, Google Research (2017)\n\n## Formal Ontology\n\n<details>\n<summary>OWL Functional Syntax</summary>\n\n```clojure\n;; Class Declaration\n(Declaration (Class :Accuracy))\n(SubClassOf :Accuracy :PerformanceMetric)\n(SubClassOf :Accuracy :ClassificationMetric)\n\n;; Core relationships\n(SubClassOf :Accuracy\n  (ObjectSomeValuesFrom :measuresPerformanceOf :MachineLearningModel))\n(SubClassOf :Accuracy\n  (ObjectSomeValuesFrom :calculatedFrom :ConfusionMatrix))\n(SubClassOf :Accuracy\n  (ObjectSomeValuesFrom :complementedBy :Precision))\n(SubClassOf :Accuracy\n  (ObjectSomeValuesFrom :complementedBy :Recall))\n(SubClassOf :Accuracy\n  (ObjectSomeValuesFrom :complementedBy :F1Score))\n\n;; Metric properties\n(Declaration (DataProperty :hasAccuracyValue))\n(DataPropertyDomain :hasAccuracyValue :Accuracy)\n(DataPropertyRange :hasAccuracyValue xsd:float)\n(FunctionalDataProperty :hasAccuracyValue)\n\n(Declaration (DataProperty :hasTruePositives))\n(DataPropertyDomain :hasTruePositives :Accuracy)\n(DataPropertyRange :hasTruePositives xsd:integer)\n\n(Declaration (DataProperty :hasTrueNegatives))\n(DataPropertyDomain :hasTrueNegatives :Accuracy)\n(DataPropertyRange :hasTrueNegatives xsd:integer)\n\n(Declaration (DataProperty :hasFalsePositives))\n(DataPropertyDomain :hasFalsePositives :Accuracy)\n(DataPropertyRange :hasFalsePositives xsd:integer)\n\n(Declaration (DataProperty :hasFalseNegatives))\n(DataPropertyDomain :hasFalseNegatives :Accuracy)\n(DataPropertyRange :hasFalseNegatives xsd:integer)\n\n;; Value constraints\n(SubClassOf :Accuracy\n  (DataPropertyRestriction\n    :hasAccuracyValue\n    (MinInclusiveDataRange 0.0^^xsd:float)\n    (MaxInclusiveDataRange 1.0^^xsd:float)))\n\n;; Use case restrictions\n(Declaration (Class :BalancedDataset))\n(Declaration (Class :ImbalancedDataset))\n(Declaration (ObjectProperty :appropriateFor))\n\n(SubClassOf :Accuracy\n  (ObjectUnionValuesFrom :appropriateFor :BalancedDataset))\n\n;; Limitations\n(Declaration (Class :ClassImbalanceSensitivity))\n(SubClassOf :Accuracy\n  (ObjectSomeValuesFrom :hasLimitation :ClassImbalanceSensitivity))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Accuracy \"Accuracy\"@en)\n(AnnotationAssertion rdfs:comment :Accuracy\n  \"A classification performance metric representing the proportion of correct predictions made by an artificial intelligence model across all instances in a dataset.\"@en)\n(AnnotationAssertion dcterms:source :Accuracy <https://www.iso.org/standard/74438.html>)\n(AnnotationAssertion :termID :Accuracy \"AI-0107\"^^xsd:string)\n(AnnotationAssertion :mathematicalFormula :Accuracy\n  \"(TP + TN) / (TP + TN + FP + FN)\"^^xsd:string)\n\n;; ISO/IEC alignment\n(AnnotationAssertion :alignedWith :Accuracy :ISO25059)\n(AnnotationAssertion :alignedWith :Accuracy :ISO25024)\n(AnnotationAssertion :alignedWith :Accuracy :NISTAIRFM_MEASURE22)\n```\n\n</details>\n\n## See Also\n\n- [[Model Performance]]\n- [[Precision]]\n- [[Recall]]\n- [[F1 Score]]\n- [[Confusion Matrix]]\n- [[ROC Curve]]\n- [[Balanced Accuracy]]\n- [[Sensitivity]]\n- [[Specificity]]\n\t- maturity:: draft\n\t- owl:class:: mv:Accuracy\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: accuracy-relationships\n\t\t- is-subclass-of:: [[ArtificialIntelligence]]",
+  "backlinks": [
+    "Precision",
+    "Loss Function",
+    "Recall"
+  ],
+  "wiki_links": [
+    "Sensitivity",
+    "Recall",
+    "ArtificialIntelligence",
+    "ROC Curve",
+    "Model Performance",
+    "Specificity",
+    "MetaverseDomain",
+    "Precision",
+    "Confusion Matrix",
+    "F1 Score",
+    "Balanced Accuracy"
+  ],
+  "ontology": {
+    "term_id": "AI-0107",
+    "preferred_term": "Accuracy",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#Accuracy",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:Accuracy",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "ArtificialIntelligence"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain",
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

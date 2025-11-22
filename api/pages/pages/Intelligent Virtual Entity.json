@@ -1,55 +1,116 @@
 {
   "id": "Intelligent Virtual Entity",
   "title": "Intelligent Virtual Entity",
-  "content": "- ### OntologyBlock\n  id:: intelligent-virtual-entity-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20232\n\t- preferred-term:: Intelligent Virtual Entity\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t- public-access:: true\n\n\n\n## Academic Context\n\n- Intelligent Virtual Entities (IVEs) are AI-driven representations within virtual environments that exhibit adaptive behaviours by integrating perception, reasoning, learning, and interaction capabilities.\n  - These entities build on foundational AI disciplines such as natural language processing, machine learning, and autonomous agent theory.\n  - The academic study of IVEs intersects with human-computer interaction, cognitive modelling, and virtual reality research.\n  - Key developments include advances in contextual understanding and multi-modal interaction, enabling more sophisticated and believable virtual presences.\n\n## Current Landscape (2025)\n\n- IVEs are increasingly adopted across sectors including customer service, education, entertainment, and simulation training.\n  - Leading platforms incorporate IVEs to automate complex user interactions, leveraging technologies like large language models and reinforcement learning.\n  - Notable organisations include global tech firms and specialised AI startups focusing on virtual assistants and digital avatars.\n- In the UK, especially in North England cities such as Manchester and Leeds, IVEs are integrated into digital customer experience platforms and virtual training environments.\n  - Universities and innovation hubs in Newcastle and Sheffield contribute research and development, fostering regional expertise.\n- Technical capabilities now allow IVEs to:\n  - Understand and respond to nuanced user intents.\n  - Adapt dynamically to changing contexts post-deployment.\n  - Operate with varying levels of autonomy, from guided assistance to semi-autonomous decision-making.\n- Limitations remain in fully autonomous reasoning and handling edge cases without human oversight.\n- Standards and frameworks, notably the EU Artificial Intelligence Act (AI Act), provide regulatory guidance on AI system definitions, adaptiveness, and risk management, influencing IVE development and deployment.\n\n## Research & Literature\n\n- Key academic sources include:\n  - Russell, S., & Norvig, P. (2021). *Artificial Intelligence: A Modern Approach*. Pearson. [Foundational AI concepts]\n  - Wooldridge, M. (2025). *An Introduction to MultiAgent Systems*. Wiley. [Agent-based modelling]\n  - Liao, Q. V., et al. (2024). \"Contextual Adaptation in Intelligent Virtual Agents.\" *Journal of Artificial Intelligence Research*, 72, 345-378. https://doi.org/10.1613/jair.1.13245\n  - European Commission (2025). *Guidelines on the Definition of AI Systems under the AI Act*. Brussels: EU Publications. [Regulatory framework]\n- Ongoing research focuses on:\n  - Enhancing contextual reasoning and long-term learning.\n  - Improving multi-modal perception integrating vision, speech, and gesture.\n  - Balancing autonomy with ethical and legal compliance.\n\n## UK Context\n\n- The UK contributes significantly through academic institutions and industry collaborations, with a focus on ethical AI and human-centred design.\n- North England innovation hubs:\n  - Manchester’s AI and Digital Futures Institute develops IVEs for healthcare simulations.\n  - Leeds Digital Hub supports startups creating virtual assistants for retail and public services.\n  - Newcastle University researches adaptive dialogue systems for IVEs.\n  - Sheffield’s Advanced Manufacturing Research Centre explores IVEs in industrial training.\n- Regional case studies demonstrate successful deployment of IVEs in public sector digital services and education, highlighting the blend of technical sophistication and user-centric design.\n\n## Future Directions\n\n- Emerging trends include:\n  - Integration of generative AI to enhance creativity and spontaneity in IVEs.\n  - Greater autonomy with improved ethical safeguards and transparency.\n  - Cross-platform interoperability enabling IVEs to operate seamlessly across virtual, augmented, and mixed reality environments.\n- Anticipated challenges:\n  - Ensuring robust privacy and data protection in line with UK and EU regulations.\n  - Addressing biases and ensuring inclusivity in virtual entity behaviour.\n  - Managing user trust and expectations as IVEs become more human-like.\n- Research priorities:\n  - Developing standardised evaluation metrics for IVE performance and user experience.\n  - Exploring hybrid human-AI collaboration models.\n  - Investigating long-term societal impacts of widespread IVE adoption.\n\n## References\n\n1. Russell, S., & Norvig, P. (2021). *Artificial Intelligence: A Modern Approach*. Pearson.\n2. Wooldridge, M. (2025). *An Introduction to MultiAgent Systems*. Wiley.\n3. Liao, Q. V., et al. (2024). \"Contextual Adaptation in Intelligent Virtual Agents.\" *Journal of Artificial Intelligence Research*, 72, 345-378. https://doi.org/10.1613/jair.1.13245\n4. European Commission. (2025). *Guidelines on the Definition of AI Systems under the AI Act*. Brussels: EU Publications.\n5. Manchester AI and Digital Futures Institute. (2025). *Annual Report on Virtual Simulation Technologies*.\n6. Leeds Digital Hub. (2025). *Innovations in Virtual Customer Experience*.\n7. Newcastle University. (2025). *Adaptive Dialogue Systems for Virtual Entities*.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
-  "backlinks": [],
+  "content": "- ### OntologyBlock\n  id:: intelligent-virtual-entity-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20232\n\t- preferred-term:: Intelligent Virtual Entity\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: AI-driven representation within a virtual world that responds adaptively to users and context, combining perception, reasoning, learning, and interaction capabilities to create sophisticated virtual presences.\n\t- source:: [[ETSI GR ARF 010]]\n\t- maturity:: mature\n\t- owl:class:: mv:IntelligentVirtualEntity\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Agent\n\t- owl:inferred-class:: mv:VirtualAgent\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[ComputationAndIntelligenceDomain]], [[InteractionDomain]]\n\t- implementedInLayer:: [[ComputeLayer]], [[DataLayer]]\n\t- #### Relationships\n\t  id:: intelligent-virtual-entity-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Adaptive Virtual World]]\n\t\t- is-part-of:: [[Intelligent Environment]]\n\t\t- is-part-of:: [[AI Ecosystem]]\n\t\t- has-part:: [[Perception System]]\n\t\t- has-part:: [[Behavior Controller]]\n\t\t- has-part:: [[Learning Module]]\n\t\t- has-part:: [[Interaction Manager]]\n\t\t- has-part:: [[Reasoning Engine]]\n\t\t- has-part:: [[Knowledge Representation]]\n\t\t- requires:: [[Training Data]]\n\t\t- requires:: [[Sensor Input]]\n\t\t- requires:: [[AI Framework]]\n\t\t- requires:: [[Computational Resources]]\n\t\t- enables:: [[Personalized Experience]]\n\t\t- enables:: [[Adaptive Interaction]]\n\t\t- enables:: [[Intelligent Assistance]]\n\t\t- enables:: [[Context-Aware Response]]\n\t\t- enables:: [[Dynamic Storytelling]]\n\t\t- depends-on:: [[Natural Language Processing]]\n\t\t- depends-on:: [[Knowledge Base]]\n\t\t- depends-on:: [[Machine Learning Platform]]\n\t\t- depends-on:: [[Computer Vision]]\n\n## Academic Context\n\n- Intelligent Virtual Entities (IVEs) are AI-driven representations within virtual environments that exhibit adaptive behaviours by integrating perception, reasoning, learning, and interaction capabilities.\n  - These entities build on foundational AI disciplines such as natural language processing, machine learning, and autonomous agent theory.\n  - The academic study of IVEs intersects with human-computer interaction, cognitive modelling, and virtual reality research.\n  - Key developments include advances in contextual understanding and multi-modal interaction, enabling more sophisticated and believable virtual presences.\n\n## Current Landscape (2025)\n\n- IVEs are increasingly adopted across sectors including customer service, education, entertainment, and simulation training.\n  - Leading platforms incorporate IVEs to automate complex user interactions, leveraging technologies like large language models and reinforcement learning.\n  - Notable organisations include global tech firms and specialised AI startups focusing on virtual assistants and digital avatars.\n- In the UK, especially in North England cities such as Manchester and Leeds, IVEs are integrated into digital customer experience platforms and virtual training environments.\n  - Universities and innovation hubs in Newcastle and Sheffield contribute research and development, fostering regional expertise.\n- Technical capabilities now allow IVEs to:\n  - Understand and respond to nuanced user intents.\n  - Adapt dynamically to changing contexts post-deployment.\n  - Operate with varying levels of autonomy, from guided assistance to semi-autonomous decision-making.\n- Limitations remain in fully autonomous reasoning and handling edge cases without human oversight.\n- Standards and frameworks, notably the EU Artificial Intelligence Act (AI Act), provide regulatory guidance on AI system definitions, adaptiveness, and risk management, influencing IVE development and deployment.\n\n## Research & Literature\n\n- Key academic sources include:\n  - Russell, S., & Norvig, P. (2021). *Artificial Intelligence: A Modern Approach*. Pearson. [Foundational AI concepts]\n  - Wooldridge, M. (2025). *An Introduction to MultiAgent Systems*. Wiley. [Agent-based modelling]\n  - Liao, Q. V., et al. (2024). \"Contextual Adaptation in Intelligent Virtual Agents.\" *Journal of Artificial Intelligence Research*, 72, 345-378. https://doi.org/10.1613/jair.1.13245\n  - European Commission (2025). *Guidelines on the Definition of AI Systems under the AI Act*. Brussels: EU Publications. [Regulatory framework]\n- Ongoing research focuses on:\n  - Enhancing contextual reasoning and long-term learning.\n  - Improving multi-modal perception integrating vision, speech, and gesture.\n  - Balancing autonomy with ethical and legal compliance.\n\n## UK Context\n\n- The UK contributes significantly through academic institutions and industry collaborations, with a focus on ethical AI and human-centred design.\n- North England innovation hubs:\n  - Manchester’s AI and Digital Futures Institute develops IVEs for healthcare simulations.\n  - Leeds Digital Hub supports startups creating virtual assistants for retail and public services.\n  - Newcastle University researches adaptive dialogue systems for IVEs.\n  - Sheffield’s Advanced Manufacturing Research Centre explores IVEs in industrial training.\n- Regional case studies demonstrate successful deployment of IVEs in public sector digital services and education, highlighting the blend of technical sophistication and user-centric design.\n\n## Future Directions\n\n- Emerging trends include:\n  - Integration of generative AI to enhance creativity and spontaneity in IVEs.\n  - Greater autonomy with improved ethical safeguards and transparency.\n  - Cross-platform interoperability enabling IVEs to operate seamlessly across virtual, augmented, and mixed reality environments.\n- Anticipated challenges:\n  - Ensuring robust privacy and data protection in line with UK and EU regulations.\n  - Addressing biases and ensuring inclusivity in virtual entity behaviour.\n  - Managing user trust and expectations as IVEs become more human-like.\n- Research priorities:\n  - Developing standardised evaluation metrics for IVE performance and user experience.\n  - Exploring hybrid human-AI collaboration models.\n  - Investigating long-term societal impacts of widespread IVE adoption.\n\n## References\n\n1. Russell, S., & Norvig, P. (2021). *Artificial Intelligence: A Modern Approach*. Pearson.\n2. Wooldridge, M. (2025). *An Introduction to MultiAgent Systems*. Wiley.\n3. Liao, Q. V., et al. (2024). \"Contextual Adaptation in Intelligent Virtual Agents.\" *Journal of Artificial Intelligence Research*, 72, 345-378. https://doi.org/10.1613/jair.1.13245\n4. European Commission. (2025). *Guidelines on the Definition of AI Systems under the AI Act*. Brussels: EU Publications.\n5. Manchester AI and Digital Futures Institute. (2025). *Annual Report on Virtual Simulation Technologies*.\n6. Leeds Digital Hub. (2025). *Innovations in Virtual Customer Experience*.\n7. Newcastle University. (2025). *Adaptive Dialogue Systems for Virtual Entities*.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Perception System"
+  ],
   "wiki_links": [
-    "ArtificialIntelligence"
+    "AI Framework",
+    "Reasoning Engine",
+    "Sensor Input",
+    "Intelligent Environment",
+    "Knowledge Representation",
+    "InteractionDomain",
+    "Perception System",
+    "Interaction Manager",
+    "Natural Language Processing",
+    "Knowledge Base",
+    "Training Data",
+    "Personalized Experience",
+    "Behavior Controller",
+    "Intelligent Assistance",
+    "Dynamic Storytelling",
+    "Learning Module",
+    "Context-Aware Response",
+    "AI Ecosystem",
+    "Machine Learning Platform",
+    "Adaptive Virtual World",
+    "ComputationAndIntelligenceDomain",
+    "ComputeLayer",
+    "DataLayer",
+    "Adaptive Interaction",
+    "Computational Resources",
+    "Computer Vision",
+    "ETSI GR ARF 010"
   ],
   "ontology": {
     "term_id": "20232",
     "preferred_term": "Intelligent Virtual Entity",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#IntelligentVirtualEntity",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "AI-driven representation within a virtual world that responds adaptively to users and context, combining perception, reasoning, learning, and interaction capabilities to create sophisticated virtual presences.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:IntelligentVirtualEntity",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Agent",
+    "owl_inferred_class": "mv:VirtualAgent",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "has_part": [
+      "Perception System",
+      "Behavior Controller",
+      "Learning Module",
+      "Interaction Manager",
+      "Reasoning Engine",
+      "Knowledge Representation"
+    ],
+    "is_part_of": [
+      "Adaptive Virtual World",
+      "Intelligent Environment",
+      "AI Ecosystem"
+    ],
+    "requires": [
+      "Training Data",
+      "Sensor Input",
+      "AI Framework",
+      "Computational Resources"
+    ],
+    "depends_on": [
+      "Natural Language Processing",
+      "Knowledge Base",
+      "Machine Learning Platform",
+      "Computer Vision"
+    ],
+    "enables": [
+      "Personalized Experience",
+      "Adaptive Interaction",
+      "Intelligent Assistance",
+      "Context-Aware Response",
+      "Dynamic Storytelling"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "ComputationAndIntelligenceDomain",
+      "InteractionDomain"
+    ],
+    "implemented_in_layer": [
+      "ComputeLayer",
+      "DataLayer"
+    ],
+    "source": [
+      "ETSI GR ARF 010"
+    ],
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20232' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

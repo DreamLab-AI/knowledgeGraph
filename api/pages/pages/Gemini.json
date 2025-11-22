@@ -1,0 +1,67 @@
+{
+  "id": "Gemini",
+  "title": "Gemini",
+  "content": "- ### OntologyBlock\n  id:: gemini-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0229\n\t- preferred-term:: Gemini\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: mv:Gemini\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n### Domain & Architecture\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- maturity:: draft\n\n### Relationships\n\n## Characteristics\n\n- **Native Multimodality**: Processes multiple modalities from the ground up\n- **Multiple Sizes**: Nano, Pro, and Ultra variants\n- **Cross-Modal Understanding**: Reasons across different input types\n- **Flexible Deployment**: From mobile to cloud\n\n## Academic Foundations\n\n**Primary Source**: Google DeepMind, \"Gemini: A Family of Highly Capable Multimodal Models\" (2023)\n\n**Performance**: Demonstrates strong performance on diverse benchmarks including MMMU, multimodal understanding, and reasoning tasks.\n\n## Technical Context\n\nGemini represents Google's approach to multimodal AI, training models from scratch to understand and reason about information presented in different modalities. The family includes Gemini Nano for on-device applications, Gemini Pro for general use, and Gemini Ultra for complex tasks.\n\n## Ontological Relationships\n\n- **Broader Term**: Large Language Model, Multimodal Model\n- **Related Terms**: GPT-4, Multimodal Learning, Vision-Language Model\n- **Variants**: Gemini Nano, Gemini Pro, Gemini Ultra\n\n## Usage Context\n\n\"Gemini's native multimodal training enables seamless reasoning across text, images, audio, and video inputs.\"\n\n## OWL Functional Syntax\n\n```clojure\n(Declaration (Class :Gemini))\n(AnnotationAssertion rdfs:label :Gemini \"Gemini\"@en)\n(AnnotationAssertion rdfs:comment :Gemini\n  \"Family of multimodal AI models by Google DeepMind natively processing text, images, audio, and video.\"@en)\n(AnnotationAssertion :hasSource :Gemini\n  \"Google DeepMind, 'Gemini: A Family of Highly Capable Multimodal Models' (2023)\"@en)\n\n;; Taxonomic relationships\n(SubClassOf :Gemini :LargeLanguageModel)\n(SubClassOf :Gemini :MultimodalModel)\n(SubClassOf :Gemini :TransformerArchitecture)\n\n;; Native multimodality\n(SubClassOf :Gemini\n  (ObjectSomeValuesFrom :nativelyProcesses :Text))\n(SubClassOf :Gemini\n  (ObjectSomeValuesFrom :nativelyProcesses :Images))\n(SubClassOf :Gemini\n  (ObjectSomeValuesFrom :nativelyProcesses :Audio))\n(SubClassOf :Gemini\n  (ObjectSomeValuesFrom :nativelyProcesses :Video))\n\n;; Capabilities\n(SubClassOf :Gemini\n  (ObjectSomeValuesFrom :performs :CrossModalReasoning))\n(SubClassOf :Gemini\n  (ObjectSomeValuesFrom :supports :FlexibleDeployment))\n\n;; Model variants\n(SubClassOf :GeminiNano :Gemini)\n(SubClassOf :GeminiPro :Gemini)\n(SubClassOf :GeminiUltra :Gemini)\n\n;; Properties\n(DataPropertyAssertion :isNativelyMultimodal :Gemini \"true\"^^xsd:boolean)\n(DataPropertyAssertion :maxContextLength :Gemini \"1000000\"^^xsd:integer)\n(DataPropertyAssertion :deploymentRange :Gemini \"mobile to cloud\"^^xsd:string)\n(DataPropertyAssertion :developer :Gemini \"Google DeepMind\"^^xsd:string)\n(DataPropertyAssertion :modalitiesSupported :Gemini \"text, images, audio, video\"^^xsd:string)\n```\n\n## References\n\n- Google DeepMind (2023). \"Gemini: A Family of Highly Capable Multimodal Models\"\n\n---\n\n*Ontology Term managed by AI-Grounded Ontology Working Group*\n*UK English Spelling Standards Applied*\n\t- maturity:: draft\n\t- owl:class:: mv:Gemini\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t- belongsToDomain:: [[MetaverseDomain]]",
+  "backlinks": [
+    "BC-0489-consumer-protection",
+    "BC-0486-regulatory-reporting",
+    "BC-0481-fatf-recommendations",
+    "BC-0488-licensing-requirements",
+    "Education Metaverse",
+    "Technical Robustness and Safety",
+    "BC-0487-compliance-monitoring",
+    "Co-Training"
+  ],
+  "wiki_links": [
+    "ArtificialIntelligence",
+    "MetaverseDomain"
+  ],
+  "ontology": {
+    "term_id": "AI-0229",
+    "preferred_term": "Gemini",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#Gemini",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:Gemini",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain",
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

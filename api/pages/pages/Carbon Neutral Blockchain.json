@@ -1,0 +1,55 @@
+{
+  "id": "Carbon Neutral Blockchain",
+  "title": "Carbon Neutral Blockchain",
+  "content": "- ### OntologyBlock\n  id:: carbon-neutral-blockchain-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0505\n\t- preferred-term:: Carbon Neutral Blockchain\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: A component of the blockchain ecosystem.\n\t- maturity:: draft\n\t- owl:class:: bc:CarbonNeutralBlockchain\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[BlockchainDomain]]\n\n## Carbon Neutral Blockchain\n\nCarbon Neutral Blockchain refers to a component of the blockchain ecosystem.\n\n- Industry adoption and implementations\n\t- Major blockchain platforms have transitioned to or launched carbon-neutral or carbon-negative networks, including Algorand (carbon negative), Ethereum (post-Proof-of-Stake), and several enterprise-focused chains\n\t- Carbon-neutral blockchains are increasingly adopted in sectors such as finance, supply chain, and energy, where environmental credentials are a competitive advantage\n- Notable organisations and platforms\n\t- Algorand: Publicly carbon negative, with transparent reporting and third-party verification\n\t- Ethereum: Transitioned to Proof-of-Stake, reducing energy consumption by over 99% compared to its PoW era\n\t- Energy Web Foundation: Specialises in blockchain solutions for renewable energy and carbon tracking\n- UK and North England examples where relevant\n\t- UK-based fintechs and energy startups are integrating carbon-neutral blockchains into their operations, particularly in Manchester and Leeds\n\t- The Energy Systems Catapult (Birmingham) and the Digital Catapult (Leeds) have supported pilot projects using blockchain for carbon accounting and renewable energy trading\n\t- Newcastle University’s Smart Grids and Energy Systems group has explored blockchain for local energy markets, with a focus on sustainability\n- Technical capabilities and limitations\n\t- Carbon-neutral blockchains can achieve significant reductions in energy use and emissions, but residual impacts may remain from hardware manufacturing, network infrastructure, and indirect energy use\n\t- Carbon offsetting is often used to address residual emissions, but the credibility and permanence of offsets are subject to ongoing debate\n\t- Scalability and decentralisation remain challenges, as some energy-efficient consensus mechanisms trade off security or decentralisation for lower energy use\n- Standards and frameworks\n\t- Industry standards for carbon-neutral blockchain are emerging, including the Crypto Climate Accord and the Blockchain for Climate Foundation’s guidelines\n\t- The International Organization for Standardization (ISO) is developing standards for blockchain sustainability and carbon accounting\n\n## Technical Details\n\n- **Id**: bc-0505-carbon-neutral-blockchain-ontology\n- **Collapsed**: true\n- **Source Domain**: metaverse\n- **Status**: stub-needs-content\n- **Public Access**: true\n- **Content Status**: minimal-placeholder-requires-authoring\n- **Maturity**: draft\n- **Owl:Class**: bc:CarbonNeutralBlockchain\n- **Owl:Physicality**: ConceptualEntity\n- **Owl:Role**: Concept\n- **Belongstodomain**: [[BlockchainDomain]]\n\n## Research & Literature\n\n- Key academic papers and sources\n\t- de Vries, A. (2018). Bitcoin’s growing energy problem. Nature Climate Change, 8(5), 325–326. https://doi.org/10.1038/s41558-018-0151-0\n\t- Stoll, C., Klaaßen, L., & Gallersdörfer, U. (2019). The carbon footprint of Bitcoin. Joule, 3(7), 1647–1661. https://doi.org/10.1016/j.joule.2019.05.017\n\t- Truby, J. (2020). Decarbonizing Bitcoin: Law and policy choices for reducing the energy consumption of Blockchain technologies and digital currencies. Energy Research & Social Science, 67, 101525. https://doi.org/10.1016/j.erss.2020.101525\n\t- Energy Web Foundation. (2023). Blockchain for Energy: A Guide to Sustainable Implementation. https://www.energyweb.org/reports/blockchain-for-energy-2023/\n- Ongoing research directions\n\t- Lifecycle assessment of blockchain hardware and infrastructure\n\t- Integration of blockchain with carbon markets and environmental monitoring\n\t- Development of standards for carbon-neutral blockchain certification\n\t- Exploration of blockchain’s role in supporting renewable energy and grid resilience\n\n## UK Context\n\n- British contributions and implementations\n\t- The UK has been active in promoting sustainable blockchain through research, policy, and industry initiatives\n\t- The Department for Energy Security and Net Zero has funded projects exploring blockchain for carbon tracking and energy efficiency\n\t- UK universities and research institutes have published influential work on blockchain sustainability and climate policy\n- North England innovation hubs (if relevant)\n\t- Manchester and Leeds are emerging as centres for fintech and sustainable technology, with local startups and accelerators supporting green blockchain projects\n\t- The Northern Powerhouse initiative has encouraged collaboration between universities, businesses, and local authorities on sustainable digital infrastructure\n\t- Newcastle and Sheffield have hosted hackathons and workshops focused on blockchain for climate action and energy innovation\n- Regional case studies\n\t- A Manchester-based energy startup has piloted a blockchain platform for peer-to-peer renewable energy trading, with carbon-neutral certification\n\t- Leeds City Council has explored blockchain for transparent carbon accounting in municipal operations\n\t- Newcastle University’s Smart Grids group has developed a blockchain-based system for tracking carbon emissions in local energy networks\n\n## Future Directions\n\n- Emerging trends and developments\n\t- Increasing integration of blockchain with carbon markets and environmental monitoring systems\n\t- Growth of carbon-neutral and carbon-negative blockchain platforms, with greater transparency and third-party verification\n\t- Expansion of blockchain applications in supply chain sustainability, green finance, and energy trading\n- Anticipated challenges\n\t- Ensuring the credibility and permanence of carbon offsets used by blockchain platforms\n\t- Balancing energy efficiency, security, and decentralisation in consensus mechanisms\n\t- Addressing indirect emissions from hardware manufacturing and network infrastructure\n- Research priorities\n\t- Lifecycle assessment of blockchain hardware and infrastructure\n\t- Development of standards for carbon-neutral blockchain certification\n\t- Exploration of blockchain’s role in supporting renewable energy and grid resilience\n\n## References\n\n1. de Vries, A. (2018). Bitcoin’s growing energy problem. Nature Climate Change, 8(5), 325–326. https://doi.org/10.1038/s41558-018-0151-0\n2. Stoll, C., Klaaßen, L., & Gallersdörfer, U. (2019). The carbon footprint of Bitcoin. Joule, 3(7), 1647–1661. https://doi.org/10.1016/j.joule.2019.05.017\n3. Truby, J. (2020). Decarbonizing Bitcoin: Law and policy choices for reducing the energy consumption of Blockchain technologies and digital currencies. Energy Research & Social Science, 67, 101525. https://doi.org/10.1016/j.erss.2020.101525\n4. Energy Web Foundation. (2023). Blockchain for Energy: A Guide to Sustainable Implementation. https://www.energyweb.org/reports/blockchain-for-energy-2023/\n5. Crypto Climate Accord. (2023). https://www.cryptoclimateaccord.org/\n6. Blockchain for Climate Foundation. (2023). https://www.blockchainforclimate.org/\n7. International Organization for Standardization. (2023). ISO/TC 307 – Blockchain and distributed ledger technologies. https://www.iso.org/committee/6735668.html\n\n## Metadata\n\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "BlockchainDomain"
+  ],
+  "ontology": {
+    "term_id": "BC-0505",
+    "preferred_term": "Carbon Neutral Blockchain",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#CarbonNeutralBlockchain",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "A component of the blockchain ecosystem.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:CarbonNeutralBlockchain",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'bc' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

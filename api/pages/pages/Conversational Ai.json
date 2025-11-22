@@ -1,30 +1,27 @@
 {
   "id": "Conversational Ai",
   "title": "Conversational AI",
-  "content": "- ### OntologyBlock\n  id:: conversationalai-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0849\n    - filename-history:: [\"AI-0849-conversationalai.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[ArtificialIntelligenceTechnology]]\n    - term-id:: AI-0849\n    - preferred-term:: Conversational AI\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:ConversationalAi\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[NaturalLanguageProcessing]] via is-subclass-of\n    - bridges-from:: [[EtsiDomainAiHumanInterface]] via categorizes\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: conversationalai-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0849\n\t- preferred-term:: Conversational AI\n\t- status:: complete\n\t- public-access:: true\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: ai:ConversationalAi\n\t- belongsToDomain:: [[Artificial Intelligence]]",
   "backlinks": [],
   "wiki_links": [
-    "EtsiDomainAiHumanInterface",
-    "Artificial Intelligence",
-    "NaturalLanguageProcessing",
-    "ArtificialIntelligenceTechnology"
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0849",
     "preferred_term": "Conversational AI",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/ai#ConversationalAi",
-    "source_domain": "ai",
+    "source_domain": null,
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
-    "definition": "- maturity:: established",
+    "definition": null,
     "scope_note": null,
     "status": "complete",
     "maturity": "established",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-11-13",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "ai:ConversationalAi",
@@ -38,12 +35,8 @@
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [
-      "NaturalLanguageProcessing via is"
-    ],
-    "bridges_from": [
-      "EtsiDomainAiHumanInterface via categorizes"
-    ],
+    "bridges_to": [],
+    "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
       "Artificial Intelligence"
@@ -55,6 +48,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

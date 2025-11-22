@@ -1,58 +1,120 @@
 {
   "id": "Mixed Reality (MR)",
   "title": "Mixed Reality (MR)",
-  "content": "- ### OntologyBlock\n  id:: mixed-reality-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20244\n\t- preferred-term:: Mixed Reality (MR)\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Extended Reality (XR)]]\n\t- public-access:: true\n\n\n# Mixed Reality (MR) – Ontology Entry Review & Enhancement\n\n## Academic Context\n\n- Mixed reality represents the contemporary evolution of human-computer interaction\n  - Conceptual foundations established by Milgram and Kishino (1994) in their seminal taxonomy of visual displays, introducing the virtuality continuum[2]\n  - Distinguishes itself from augmented reality through bidirectional interaction rather than unidirectional overlay[5]\n  - Encompasses spatial awareness, environmental mapping, and real-time physics simulation as core technical requirements[4]\n  - Positioned as the next computational paradigm following mainframes, personal computers, and smartphones[2]\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Mixed reality has transitioned from laboratory prototypes to practical commercial deployment across multiple sectors[1]\n  - Enterprise applications dominate current adoption: pilot training, architectural visualisation, repair documentation, and collaborative design workflows[1]\n  - Consumer accessibility expanding through mobile AR implementations (Instagram filters represent mainstream MR experiences for hundreds of millions globally)[2]\n  - Hardware maturity improving with depth sensors, high-speed processors, and micro-displays enabling eye-tracking and real-time spatial mapping[1]\n\n- Technical capabilities and limitations\n  - Spatial anchoring now provides persistent digital object placement within physical environments, eliminating drift and jitter[4]\n  - Real-time environmental perception through multi-sensor fusion (cameras, microphones, processors) enables millisecond-latency scene updates[1]\n  - Advanced occlusion, lighting simulation, and physics interactions create convincing blended experiences (though complete photorealism remains aspirational rather than universal)[1]\n  - Wireless latency and processing power remain practical constraints for complex scenarios[1]\n\n- Standards and frameworks\n  - Windows Mixed Reality platform represents enterprise-grade implementation with holographic 3D models and spatial sound capabilities[2]\n  - Extended Reality (XR) serves as umbrella terminology encompassing the full reality-virtuality continuum[3]\n  - Environmental understanding now includes hand-tracking, eye-tracking, speech input, and collaborative 3D asset manipulation[2]\n\n## UK Context\n\n- British contributions and implementations\n  - Microsoft's mixed reality research and development maintains significant UK presence, particularly through Windows Mixed Reality initiatives[2]\n  - UK manufacturing and engineering sectors increasingly adopting MR for maintenance documentation and worker training protocols\n  - Healthcare applications emerging in surgical planning and medical training environments across NHS trusts\n\n- North England innovation considerations\n  - Manchester's technology sector showing growing interest in MR applications for industrial design and manufacturing visualisation\n  - Leeds and Sheffield manufacturing clusters represent potential adoption hubs for repair and maintenance documentation workflows\n  - Newcastle's digital innovation community exploring MR applications, though formal case studies remain limited in published literature\n\n## Research & Literature\n\n- Key academic foundations and current sources\n  - Milgram, P. & Kishino, F. (1994). \"A Taxonomy of Mixed Reality Visual Displays.\" *IEICE Transactions on Information and Systems*, E77-D(12), 1321–1329. [Foundational conceptual framework][2]\n  - Microsoft Learn documentation on Mixed Reality (2023–2025 updates) provides current technical specifications and platform capabilities[2]\n  - Circuit Stream and N-iX MR publications (2025) offer contemporary technical analysis of spatial mapping, environmental perception, and real-time interaction requirements[3][4]\n  - Coursera and Interaction Design Foundation resources provide accessible yet rigorous explanations of MR distinctions from AR and VR[5][6]\n\n- Ongoing research directions\n  - Photorealistic rendering and physics simulation fidelity improvements\n  - Latency reduction in wireless transmission and environmental mapping\n  - Accessibility and usability across diverse user populations\n  - Ethical considerations regarding persistent spatial data collection and privacy\n\n## Future Directions\n\n- Emerging trends and developments\n  - Convergence of MR with artificial intelligence for adaptive environmental understanding and predictive object placement[1]\n  - Expansion beyond enterprise into consumer lifestyle applications (home design, entertainment, social interaction)\n  - Integration with Internet of Things (IoT) enabling MR interfaces for smart environments\n  - Improved battery efficiency and form-factor miniaturisation reducing headset burden\n\n- Anticipated challenges\n  - Standardisation across competing hardware platforms and software ecosystems remains incomplete\n  - Privacy implications of continuous environmental sensing and spatial data retention\n  - User fatigue and ergonomic concerns with extended headset usage\n  - Accessibility barriers for users with visual, motor, or cognitive differences\n\n- Research priorities\n  - Robust environmental mapping in challenging lighting and complex spatial conditions\n  - Seamless hand-object interaction physics without perceptible latency\n  - Cross-platform interoperability standards\n  - Ethical frameworks for spatial data governance\n\n## Revised Definition\n\nMixed reality is a computational paradigm that seamlessly blends physical and digital environments through real-time spatial mapping, enabling bidirectional interaction between users, physical objects, and persistent digital elements. Distinguished from augmented reality by genuine environmental understanding and physics-aware rendering, MR creates convincing composite experiences where digital content behaves according to real-world spatial and optical principles. Current implementations leverage advanced sensor fusion, low-latency processing, and sophisticated computer vision to anchor virtual objects reliably within physical space, supporting applications from industrial maintenance to collaborative design—though achieving universal photorealism and eliminating perceptible latency remain active research challenges.\n\n---\n\n**Note:** The original definition was technically sound but lacked historical grounding and current implementation context. This revision anchors the concept within established academic frameworks whilst acknowledging practical limitations that distinguish aspirational capabilities from deployed reality. UK context remains limited in published literature; North England examples are speculative pending formal case study documentation.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: mixed-reality-mr-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20244\n\t- preferred-term:: Mixed Reality (MR)\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Interactive environment where physical and digital elements coexist, interact bidirectionally, and dynamically influence each other in real time with advanced occlusion, lighting, and physics simulation creating seamless blended experiences.\n\t- source:: [[ACM]], [[ISO 9241-940]]\n\t- maturity:: mature\n\t- owl:class:: mv:MixedReality\n\t- owl:physicality:: HybridEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:HybridObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InteractionDomain]]\n\t- implementedInLayer:: [[NetworkLayer]], [[ComputeLayer]]\n\t- #### Relationships\n\t  id:: mixed-reality-mr-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Extended Reality (XR)]]\n\t\t- is-part-of:: [[Spatial Computing]]\n\t\t- has-part:: [[Depth Camera]]\n\t\t- has-part:: [[Physics Simulation Engine]]\n\t\t- has-part:: [[Spatial Mesh]]\n\t\t- has-part:: [[Occlusion Rendering]]\n\t\t- has-part:: [[Lighting Estimation]]\n\t\t- requires:: [[Environmental Lighting]]\n\t\t- requires:: [[Object Tracking]]\n\t\t- requires:: [[Hand Tracking]]\n\t\t- requires:: [[Real-Time 3D Reconstruction]]\n\t\t- enables:: [[Shared Spatial Anchors]]\n\t\t- enables:: [[Virtual-Physical Collision]]\n\t\t- enables:: [[Realistic Occlusion]]\n\t\t- enables:: [[Bidirectional Interaction]]\n\t\t- binds-to:: [[Physical Objects]]\n\t\t- binds-to:: [[Virtual Objects]]\n\t\t- depends-on:: [[Depth Sensing]]\n\t\t- depends-on:: [[Computer Vision]]\n\t\t- depends-on:: [[Physics Engine]]\n\t\t- depends-on:: [[SLAM]]\n\n## Academic Context\n\n- Mixed reality represents the contemporary evolution of human-computer interaction\n  - Conceptual foundations established by Milgram and Kishino (1994) in their seminal taxonomy of visual displays, introducing the virtuality continuum[2]\n  - Distinguishes itself from augmented reality through bidirectional interaction rather than unidirectional overlay[5]\n  - Encompasses spatial awareness, environmental mapping, and real-time physics simulation as core technical requirements[4]\n  - Positioned as the next computational paradigm following mainframes, personal computers, and smartphones[2]\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Mixed reality has transitioned from laboratory prototypes to practical commercial deployment across multiple sectors[1]\n  - Enterprise applications dominate current adoption: pilot training, architectural visualisation, repair documentation, and collaborative design workflows[1]\n  - Consumer accessibility expanding through mobile AR implementations (Instagram filters represent mainstream MR experiences for hundreds of millions globally)[2]\n  - Hardware maturity improving with depth sensors, high-speed processors, and micro-displays enabling eye-tracking and real-time spatial mapping[1]\n\n- Technical capabilities and limitations\n  - Spatial anchoring now provides persistent digital object placement within physical environments, eliminating drift and jitter[4]\n  - Real-time environmental perception through multi-sensor fusion (cameras, microphones, processors) enables millisecond-latency scene updates[1]\n  - Advanced occlusion, lighting simulation, and physics interactions create convincing blended experiences (though complete photorealism remains aspirational rather than universal)[1]\n  - Wireless latency and processing power remain practical constraints for complex scenarios[1]\n\n- Standards and frameworks\n  - Windows Mixed Reality platform represents enterprise-grade implementation with holographic 3D models and spatial sound capabilities[2]\n  - Extended Reality (XR) serves as umbrella terminology encompassing the full reality-virtuality continuum[3]\n  - Environmental understanding now includes hand-tracking, eye-tracking, speech input, and collaborative 3D asset manipulation[2]\n\n## UK Context\n\n- British contributions and implementations\n  - Microsoft's mixed reality research and development maintains significant UK presence, particularly through Windows Mixed Reality initiatives[2]\n  - UK manufacturing and engineering sectors increasingly adopting MR for maintenance documentation and worker training protocols\n  - Healthcare applications emerging in surgical planning and medical training environments across NHS trusts\n\n- North England innovation considerations\n  - Manchester's technology sector showing growing interest in MR applications for industrial design and manufacturing visualisation\n  - Leeds and Sheffield manufacturing clusters represent potential adoption hubs for repair and maintenance documentation workflows\n  - Newcastle's digital innovation community exploring MR applications, though formal case studies remain limited in published literature\n\n## Research & Literature\n\n- Key academic foundations and current sources\n  - Milgram, P. & Kishino, F. (1994). \"A Taxonomy of Mixed Reality Visual Displays.\" *IEICE Transactions on Information and Systems*, E77-D(12), 1321–1329. [Foundational conceptual framework][2]\n  - Microsoft Learn documentation on Mixed Reality (2023–2025 updates) provides current technical specifications and platform capabilities[2]\n  - Circuit Stream and N-iX MR publications (2025) offer contemporary technical analysis of spatial mapping, environmental perception, and real-time interaction requirements[3][4]\n  - Coursera and Interaction Design Foundation resources provide accessible yet rigorous explanations of MR distinctions from AR and VR[5][6]\n\n- Ongoing research directions\n  - Photorealistic rendering and physics simulation fidelity improvements\n  - Latency reduction in wireless transmission and environmental mapping\n  - Accessibility and usability across diverse user populations\n  - Ethical considerations regarding persistent spatial data collection and privacy\n\n## Future Directions\n\n- Emerging trends and developments\n  - Convergence of MR with artificial intelligence for adaptive environmental understanding and predictive object placement[1]\n  - Expansion beyond enterprise into consumer lifestyle applications (home design, entertainment, social interaction)\n  - Integration with Internet of Things (IoT) enabling MR interfaces for smart environments\n  - Improved battery efficiency and form-factor miniaturisation reducing headset burden\n\n- Anticipated challenges\n  - Standardisation across competing hardware platforms and software ecosystems remains incomplete\n  - Privacy implications of continuous environmental sensing and spatial data retention\n  - User fatigue and ergonomic concerns with extended headset usage\n  - Accessibility barriers for users with visual, motor, or cognitive differences\n\n- Research priorities\n  - Robust environmental mapping in challenging lighting and complex spatial conditions\n  - Seamless hand-object interaction physics without perceptible latency\n  - Cross-platform interoperability standards\n  - Ethical frameworks for spatial data governance\n\n## Revised Definition\n\nMixed reality is a computational paradigm that seamlessly blends physical and digital environments through real-time spatial mapping, enabling bidirectional interaction between users, physical objects, and persistent digital elements. Distinguished from augmented reality by genuine environmental understanding and physics-aware rendering, MR creates convincing composite experiences where digital content behaves according to real-world spatial and optical principles. Current implementations leverage advanced sensor fusion, low-latency processing, and sophisticated computer vision to anchor virtual objects reliably within physical space, supporting applications from industrial maintenance to collaborative design—though achieving universal photorealism and eliminating perceptible latency remain active research challenges.\n\n---\n\n**Note:** The original definition was technically sound but lacked historical grounding and current implementation context. This revision anchors the concept within established academic frameworks whilst acknowledging practical limitations that distinguish aspirational capabilities from deployed reality. UK context remains limited in published literature; North England examples are speculative pending formal case study documentation.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [
-    "Augmented Reality (AR)",
+    "Extended Reality (XR)",
+    "Spatial Computing",
     "Physics Engine"
   ],
   "wiki_links": [
-    "Extended Reality (XR)"
+    "Extended Reality (XR)",
+    "Occlusion Rendering",
+    "Depth Camera",
+    "Real-Time 3D Reconstruction",
+    "InteractionDomain",
+    "ISO 9241-940",
+    "ACM",
+    "Shared Spatial Anchors",
+    "Environmental Lighting",
+    "Realistic Occlusion",
+    "Spatial Mesh",
+    "Bidirectional Interaction",
+    "SLAM",
+    "Object Tracking",
+    "Spatial Computing",
+    "Hand Tracking",
+    "Physical Objects",
+    "Physics Engine",
+    "Virtual Objects",
+    "Lighting Estimation",
+    "Physics Simulation Engine",
+    "Virtual-Physical Collision",
+    "NetworkLayer",
+    "ComputeLayer",
+    "Computer Vision",
+    "Depth Sensing"
   ],
   "ontology": {
     "term_id": "20244",
     "preferred_term": "Mixed Reality (MR)",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#MixedReality",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "Interactive environment where physical and digital elements coexist, interact bidirectionally, and dynamically influence each other in real time with advanced occlusion, lighting, and physics simulation creating seamless blended experiences.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:MixedReality",
+    "owl_physicality": "HybridEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:HybridObject",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "has_part": [
+      "Depth Camera",
+      "Physics Simulation Engine",
+      "Spatial Mesh",
+      "Occlusion Rendering",
+      "Lighting Estimation"
+    ],
+    "is_part_of": [
+      "Extended Reality (XR)",
+      "Spatial Computing"
+    ],
+    "requires": [
+      "Environmental Lighting",
+      "Object Tracking",
+      "Hand Tracking",
+      "Real-Time 3D Reconstruction"
+    ],
+    "depends_on": [
+      "Depth Sensing",
+      "Computer Vision",
+      "Physics Engine",
+      "SLAM"
+    ],
+    "enables": [
+      "Shared Spatial Anchors",
+      "Virtual-Physical Collision",
+      "Realistic Occlusion",
+      "Bidirectional Interaction"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "InteractionDomain"
+    ],
+    "implemented_in_layer": [
+      "NetworkLayer",
+      "ComputeLayer"
+    ],
+    "source": [
+      "ACM",
+      "ISO 9241-940"
+    ],
+    "other_relationships": {
+      "binds-to": [
+        "Physical Objects",
+        "Virtual Objects"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20244' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

@@ -1,0 +1,57 @@
+{
+  "id": "QLoRA",
+  "title": "QLoRA",
+  "content": "- ### OntologyBlock\n  id:: qlora-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0255\n\t- preferred-term:: QLoRA\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: An extension of LoRA that combines 4-bit quantisation with low-rank adaptation, enabling fine-tuning of very large models (65B+ parameters) on consumer-grade GPUs. QLoRA uses NormalFloat4 quantisation, double quantisation, and paged optimisers to achieve extreme memory efficiency whilst maintaining performance.\n\n## Academic Context\n\nQLoRA represents a breakthrough in democratising access to large model fine-tuning, enabling 65B parameter model adaptation on a single 48GB GPU without performance degradation.\n\n**Primary Source**: Dettmers et al., \"QLoRA: Efficient Finetuning of Quantized LLMs\", arXiv:2305.14314 (2023)\n\n## Key Characteristics\n\n- 4-bit quantisation of base model weights\n- LoRA adapters trained in higher precision\n- NormalFloat4 (NF4) data type\n- Double quantisation for constants\n- Paged optimisers for memory management\n- Enables 65B model fine-tuning on 48GB GPU\n\n## Technical Details\n\n**Core Components**:\n\n1. **4-bit NormalFloat (NF4)**:\n   - Information-theoretically optimal for normally distributed weights\n   - Better quantisation quality than standard 4-bit\n\n2. **Double Quantisation**:\n   - Quantises the quantisation constants\n   - Further reduces memory footprint\n\n3. **Paged Optimisers**:\n   - Uses CPU-GPU paging for memory spikes\n   - Enables larger batch sizes\n\n**Architecture**:\n```\nBase Model: 4-bit NF4 quantisation (frozen)\nLoRA Adapters: Full precision (trainable)\nGradients: Backprop through quantised weights\n```\n\n## Usage in AI/ML\n\n\"QLoRA reduces memory usage enough to fine-tune a 65B parameter model on a single 48GB GPU.\"\n\nApplications:\n- Fine-tuning very large models on consumer hardware\n- Enabling research with limited resources\n- Personalized LLM adaptation\n- Instruction tuning at scale\n- Domain-specific model creation\n\n## Related Concepts\n\n- **LoRA**: Foundation technique\n- **Quantisation**: Core enabler\n- **4-bit NormalFloat (NF4)**: Custom data type\n- **Double Quantisation**: Memory optimization\n- **Paged Optimisers**: Memory management\n- **Parameter-Efficient Fine-Tuning (PEFT)**: Broader category\n\n## Memory Savings Breakdown\n\n**65B Model Example**:\n- **Full FP32**: ~260GB\n- **Full FP16**: ~130GB\n- **4-bit Quantised**: ~33GB\n- **QLoRA Total**: ~48GB (including LoRA + optimiser states)\n\n**Enables**:\n- Consumer GPU fine-tuning (RTX 3090/4090)\n- Academic research with limited budgets\n- Individual developer access to SOTA models\n\n## Technical Innovations\n\n**NF4 Quantisation**:\n```\nOptimal for normally distributed weights\nCustom quantisation levels for better accuracy\nPreserves model quality at 4-bit\n```\n\n**Double Quantisation**:\n```\nQuantise the quantisation constants themselves\nSaves additional ~0.5 bytes per parameter\nSmall overhead for significant savings\n```\n\n**Paged Optimisers**:\n```\nCPU-GPU memory paging (like virtual memory)\nHandles memory spikes during gradient updates\nEnables larger effective batch sizes\n```\n\n## Training Process\n\n1. Load model in 4-bit NF4 format\n2. Freeze quantised base weights\n3. Add LoRA adapters (full precision)\n4. Enable paged optimiser\n5. Backpropagate through frozen 4-bit weights\n6. Update only LoRA adapters\n7. Store adapters separately\n\n## Performance Characteristics\n\n**Accuracy**:\n- Matches full-precision LoRA\n- Minimal degradation from quantisation\n- NF4 crucial for maintaining quality\n\n**Speed**:\n- Slightly slower than full precision (quantisation overhead)\n- Enables training that otherwise impossible\n- Throughput vs. accessibility tradeoff\n\n**Memory**:\n- ~4× reduction vs. 16-bit LoRA\n- ~8× reduction vs. full 16-bit fine-tuning\n\n## Advantages\n\n- Extreme memory efficiency\n- Democratises large model fine-tuning\n- Maintains performance quality\n- Enables research on consumer hardware\n- Reduces fine-tuning costs dramatically\n\n## Challenges\n\n- Slightly slower than full precision\n- Requires careful implementation\n- Quantisation overhead during training\n- Not all operations quantised (gradients full precision)\n- Hardware support varies\n\n## Best Practices\n\n- Use NF4 for normally distributed weights\n- Enable double quantisation for maximum savings\n- Use paged optimisers for stability\n- Monitor for quantisation artefacts\n- Validate on held-out set\n\n## Historical Development\n\n- 2021: LoRA introduced\n- 2023: QLoRA breakthrough (arXiv:2305.14314)\n- 2023-2024: Rapid community adoption\n- 2024+: Standard for large model fine-tuning\n- 2025: Further quantisation innovations\n\n## Significance\n\nQLoRA democratised large language model fine-tuning by making it accessible on consumer-grade hardware, enabling individual researchers and developers to adapt models previously requiring enterprise-scale resources.\n\n## OWL Functional Syntax\n\n```clojure\n(Declaration (Class :QLoRA))\n(SubClassOf :QLoRA :LoRA)\n(SubClassOf :QLoRA\n  (ObjectSomeValuesFrom :combines :FourBitQuantization))\n(SubClassOf :QLoRA\n  (ObjectSomeValuesFrom :combines :LowRankAdaptation))\n(SubClassOf :QLoRA\n  (ObjectSomeValuesFrom :uses :NormalFloat4DataType))\n(SubClassOf :QLoRA\n  (ObjectSomeValuesFrom :implements :DoubleQuantization))\n(SubClassOf :QLoRA\n  (ObjectSomeValuesFrom :uses :PagedOptimizers))\n(SubClassOf :QLoRA\n  (ObjectSomeValuesFrom :enables :ConsumerGPUFineTuning))\n(SubClassOf :QLoRA\n  (DataPropertyAssertion :supportsModelSize \"65B+ parameters on 48GB GPU\"))\n\n(AnnotationAssertion rdfs:comment :QLoRA\n  \"Extension of LoRA combining 4-bit quantization with low-rank adaptation for extreme memory efficiency in fine-tuning very large models\"@en)\n(AnnotationAssertion :hasAcademicSource :QLoRA\n  \"Dettmers et al., arXiv:2305.14314 (2023)\")\n```\n\n## UK English Notes\n\n- \"Quantised\" (not \"quantized\")\n- \"Optimisers\" (not \"optimizers\")\n- \"Whilst maintaining\" (British usage)\n\n**Last Updated**: 2025-10-27\n**Verification Status**: Verified against QLoRA paper (arXiv:2305.14314)\n\t- maturity:: draft\n\t- owl:class:: mv:QLoRA\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t- belongsToDomain:: [[MetaverseDomain]]",
+  "backlinks": [],
+  "wiki_links": [
+    "ArtificialIntelligence",
+    "MetaverseDomain"
+  ],
+  "ontology": {
+    "term_id": "AI-0255",
+    "preferred_term": "QLoRA",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#QLoRA",
+    "source_domain": null,
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "An extension of LoRA that combines 4-bit quantisation with low-rank adaptation, enabling fine-tuning of very large models (65B+ parameters) on consumer-grade GPUs. QLoRA uses NormalFloat4 quantisation, double quantisation, and paged optimisers to achieve extreme memory efficiency whilst maintaining performance.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:QLoRA",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'ai'"
+      ]
+    }
+  }
+}

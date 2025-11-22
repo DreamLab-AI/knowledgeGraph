@@ -1,26 +1,28 @@
 {
   "id": "Value Transfer",
   "title": "Value Transfer",
-  "content": "- ### OntologyBlock\n  id:: value-transfer-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: DT-0001\n    - preferred-term:: Value Transfer\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-15\n    - qualityScore:: 0.94\n\n  - **Definition**\n    - definition:: The mechanism and process by which economic value, rights, or utility are exchanged between parties across physical, digital, and virtual domains, encompassing monetary systems, token-based systems, resource allocation, and rights transfer protocols.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[BIS Innovation Hub]], [[W3C Web Payments]]\n    - authority-score:: 1.0\n\n  - **Semantic Classification**\n    - owl:class:: dt:ValueTransfer\n    - owl:physicality:: ConceptualEntity\n    - owl:role:: Process\n    - owl:inferred-class:: dt:ConceptualProcess\n    - is-subclass-of:: [[Metaverse]]\n    - belongsToDomain:: [[EconomicSystemDomain]], [[BlockchainDomain]], [[MetaverseDomain]], [[AI-GroundedDomain]], [[RoboticsDomain]]\n\n  - #### OWL Restrictions\n    - implemented-by some PaymentSystem\n    - implemented-by some SmartContract\n    - requires some ValueRepresentation\n    - enables some EconomicExchange\n    - enables some Commerce\n    - has-part some RightsTransfer\n    - has-part some ResourceAllocation\n    - implemented-by some ExchangeProtocol\n    - enables some Trade\n    - implemented-by some Transaction\n    - enables some Payment\n    - is-enabled-by some Stablecoin\n    - has-part some DigitalCurrency\n    - has-part some Money\n    - enables some Settlement\n    - has-part some Token\n    - has-part some BarterSystem\n    - requires some TransferProtocol\n    - is-enabled-by some DigitalAsset\n    - requires some TrustMechanism\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[SmartContract]] via implemented-by\n    - bridges-to:: [[Token]] via has-part\n    - bridges-to:: [[BarterSystem]] via has-part\n    - bridges-to:: [[Transaction]] via implemented-by\n    - bridges-to:: [[DigitalCurrency]] via has-part\n    - bridges-from:: [[Bitcoin]] via bridges-to\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: value-transfer-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: DT-0001\n\t- preferred-term:: Value Transfer\n\t- source-domain:: metaverse\n\t- status:: complete\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: dt:ValueTransfer\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: dt:ConceptualProcess\n\n### Domain & Architecture\n\t- belongsToDomain:: [[RoboticsDomain]], [[MetaverseDomain]], [[AI-GroundedDomain]], [[BlockchainDomain]], [[EconomicSystemDomain]]\n\t- maturity:: mature\n\n### Relationships\n\n### Quality Metrics\n\t- authority-score:: 1.00\n\n- ### OntologyBlock\n  id:: value-transfer-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: DT-0001\n    - preferred-term:: Value Transfer\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-15\n    - qualityScore:: 0.94\n\n  - **Definition**\n    - definition:: The mechanism and process by which economic value, rights, or utility are exchanged between parties across physical, digital, and virtual domains, encompassing monetary systems, token-based systems, resource allocation, and rights transfer protocols.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[BIS Innovation Hub]], [[W3C Web Payments]]\n    - authority-score:: 1.0\n\n  - **Semantic Classification**\n    - owl:class:: dt:ValueTransfer\n    - owl:physicality:: ConceptualEntity\n    - owl:role:: Process\n    - owl:inferred-class:: dt:ConceptualProcess\n    - is-subclass-of:: [[Metaverse]]\n    - belongsToDomain:: [[EconomicSystemDomain]], [[BlockchainDomain]], [[MetaverseDomain]], [[AI-GroundedDomain]], [[RoboticsDomain]]\n\n  - #### OWL Restrictions\n    - implemented-by some PaymentSystem\n    - implemented-by some SmartContract\n    - requires some ValueRepresentation\n    - enables some EconomicExchange\n    - enables some Commerce\n    - has-part some RightsTransfer\n    - has-part some ResourceAllocation\n    - implemented-by some ExchangeProtocol\n    - enables some Trade\n    - implemented-by some Transaction\n    - enables some Payment\n    - is-enabled-by some Stablecoin\n    - has-part some DigitalCurrency\n    - has-part some Money\n    - enables some Settlement\n    - has-part some Token\n    - has-part some BarterSystem\n    - requires some TransferProtocol\n    - is-enabled-by some DigitalAsset\n    - requires some TrustMechanism\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[SmartContract]] via implemented-by\n    - bridges-to:: [[Token]] via has-part\n    - bridges-to:: [[BarterSystem]] via has-part\n    - bridges-to:: [[Transaction]] via implemented-by\n    - bridges-to:: [[DigitalCurrency]] via has-part\n    - bridges-from:: [[Bitcoin]] via bridges-to\n\n  -",
   "backlinks": [
+    "book to be processed",
     "Stablecoin",
-    "Bitcoin"
+    "Bitcoin",
+    "Digital Asset"
   ],
   "wiki_links": [
-    "Transaction",
-    "W3C Web Payments",
-    "DigitalCurrency",
-    "MetaverseDomain",
-    "ISO/IEC 23257:2021",
-    "Bitcoin",
-    "Token",
-    "BIS Innovation Hub",
-    "EconomicSystemDomain",
     "BlockchainDomain",
-    "Metaverse",
+    "DigitalCurrency",
+    "W3C Web Payments",
     "RoboticsDomain",
-    "AI-GroundedDomain",
+    "Metaverse",
     "BarterSystem",
+    "BIS Innovation Hub",
+    "MetaverseDomain",
+    "Transaction",
+    "ISO/IEC 23257:2021",
+    "Token",
+    "Bitcoin",
+    "EconomicSystemDomain",
+    "AI-GroundedDomain",
     "SmartContract"
   ],
   "ontology": {
@@ -64,6 +66,11 @@
     ],
     "domain_extensions": {},
     "belongs_to_domain": [
+      "RoboticsDomain",
+      "MetaverseDomain",
+      "AI-GroundedDomain",
+      "BlockchainDomain",
+      "EconomicSystemDomain",
       "EconomicSystemDomain",
       "BlockchainDomain",
       "MetaverseDomain",

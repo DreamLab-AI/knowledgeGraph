@@ -1,14 +1,18 @@
 {
   "id": "NeuralNetwork",
   "title": "NeuralNetwork",
-  "content": "- ### OntologyBlock\n  id:: neuralnetwork-ontology\n  collapsed:: true\n\t- ontology:: true\n    - is-subclass-of:: [[ArtificialIntelligenceTechnology]]\n\t- term-id:: AI-0501\n\t- preferred-term:: NeuralNetwork\n\t- source-domain:: artificial-intelligence\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A computational system inspired by biological neural networks, consisting of interconnected nodes that process information through weighted connections to learn patterns and make predictions.\n\t- maturity:: mature\n\t- owl:class:: ai:NeuralNetwork\n\t- owl:equivalentClass:: ai:NeuralNetwork\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Model\n\t- belongsToDomain:: [[AIDomain]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Neuralnetwork))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Neuralnetwork \"NeuralNetwork\"@en)\n(AnnotationAssertion rdfs:comment :Neuralnetwork \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Neuralnetwork \"mv-1761742247950\"^^xsd:string)\n```",
+  "content": "- ### OntologyBlock\n  id:: neuralnetwork-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0501\n\t- preferred-term:: NeuralNetwork\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A computational system inspired by biological neural networks, consisting of interconnected nodes that process information through weighted connections to learn patterns and make predictions.\n\t- maturity:: mature\n\t- owl:class:: ai:NeuralNetwork\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Model\n\t- owl:equivalentClass:: ai:NeuralNetwork\n\t- belongsToDomain:: [[AIDomain]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Neuralnetwork))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Neuralnetwork \"NeuralNetwork\"@en)\n(AnnotationAssertion rdfs:comment :Neuralnetwork \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Neuralnetwork \"mv-1761742247950\"^^xsd:string)\n```",
   "backlinks": [
-    "Task-Specific Head",
+    "Mixture of Experts",
+    "Residual Connection",
     "Activation Function",
-    "Money"
+    "Hidden Dimension",
+    "Hidden State",
+    "Sparse Mixture of Experts",
+    "Positional Encoding",
+    "Query Key Value"
   ],
   "wiki_links": [
-    "ArtificialIntelligenceTechnology",
     "AIDomain"
   ],
   "ontology": {
@@ -16,9 +20,9 @@
     "preferred_term": "NeuralNetwork",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/ai#NeuralNetwork",
-    "source_domain": "artificial-intelligence",
-    "domain": "artificial-intelligence",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
     "definition": "A computational system inspired by biological neural networks, consisting of interconnected nodes that process information through weighted connections to learn patterns and make predictions.",
     "scope_note": null,
     "status": "active",
@@ -51,9 +55,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'ai' doesn't match source-domain 'artificial-intelligence'"
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

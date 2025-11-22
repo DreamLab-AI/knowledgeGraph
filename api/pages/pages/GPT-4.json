@@ -1,0 +1,62 @@
+{
+  "id": "GPT-4",
+  "title": "GPT 4",
+  "content": "- ### OntologyBlock\n  id:: gpt-4-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0215\n\t- preferred-term:: GPT 4\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: mv:GPT4\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n### Domain & Architecture\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- maturity:: draft\n\n### Relationships\n- is-subclass-of:: [[GPT]]\n\n## Characteristics\n\n- **Multimodal Capabilities**: Processes both images and text\n- **Human-Level Performance**: Matches or exceeds human performance on many benchmarks\n- **Professional Competency**: Passes professional exams (bar exam, medical licencing)\n- **Improved Safety**: Enhanced alignment through RLHF\n\n## Academic Foundations\n\n**Primary Source**: OpenAI, \"GPT-4 Technical Report\", arXiv:2303.08774 (2023)\n\n**Benchmark Performance**: Passes a simulated bar exam with a score around the top 10% of test takers, demonstrating human-level performance.\n\n**Estimated Scale**: Model card asserts training on 13 trillion tokens (though architecture details remain largely undisclosed).\n\n## Technical Context\n\nGPT-4 represents a major advancement in multimodal AI, capable of understanding both visual and textual information. It demonstrates significant improvements in factuality, steerability, and safety compared to GPT-3.5, whilst maintaining strong few-shot learning capabilities.\n\n## Ontological Relationships\n\n- **Broader Term**: Large Language Model, Multimodal Model\n- **Related Terms**: GPT-3, Multimodal Learning, Vision-Language Model\n- **Variants**: GPT-4 Turbo, GPT-4V (Vision)\n\n## Usage Context\n\n\"GPT-4 passes a simulated bar exam with a score around the top 10% of test takers, demonstrating human-level performance.\"\n\n## OWL Functional Syntax\n\n```clojure\n(Declaration (Class :GPT4))\n(AnnotationAssertion rdfs:label :GPT4 \"GPT-4\"@en)\n(AnnotationAssertion rdfs:comment :GPT4\n  \"Large-scale multimodal transformer model accepting image and text inputs, exhibiting human-level performance on benchmarks.\"@en)\n(AnnotationAssertion :hasSource :GPT4\n  \"OpenAI, 'GPT-4 Technical Report', arXiv:2303.08774 (2023)\"@en)\n\n;; Taxonomic relationships\n(SubClassOf :GPT4 :LargeLanguageModel)\n(SubClassOf :GPT4 :MultimodalModel)\n(SubClassOf :GPT4 :TransformerArchitecture)\n\n;; Evolution\n(SubClassOf :GPT4\n  (ObjectSomeValuesFrom :successorOf :GPT3))\n\n;; Modalities\n(SubClassOf :GPT4\n  (ObjectSomeValuesFrom :accepts :TextInput))\n(SubClassOf :GPT4\n  (ObjectSomeValuesFrom :accepts :ImageInput))\n(SubClassOf :GPT4\n  (ObjectSomeValuesFrom :produces :TextOutput))\n\n;; Alignment\n(SubClassOf :GPT4\n  (ObjectSomeValuesFrom :trainedWith :RLHF))\n(SubClassOf :GPT4\n  (ObjectSomeValuesFrom :improves :Safety))\n\n;; Capabilities\n(SubClassOf :GPT4\n  (ObjectSomeValuesFrom :demonstrates :HumanLevelPerformance))\n(SubClassOf :GPT4\n  (ObjectSomeValuesFrom :demonstrates :ProfessionalCompetency))\n\n;; Variants\n(SubClassOf :GPT4Turbo :GPT4)\n(SubClassOf :GPT4Vision :GPT4)\n\n;; Properties\n(DataPropertyAssertion :isMultimodal :GPT4 \"true\"^^xsd:boolean)\n(DataPropertyAssertion :contextLength :GPT4 \"8192\"^^xsd:integer)\n(DataPropertyAssertion :barExamPercentile :GPT4 \"90\"^^xsd:integer)\n(DataPropertyAssertion :estimatedTrainingTokens :GPT4 \"13000000000000\"^^xsd:integer)\n(DataPropertyAssertion :developer :GPT4 \"OpenAI\"^^xsd:string)\n```\n\n## References\n\n- OpenAI (2023). \"GPT-4 Technical Report\". arXiv:2303.08774\n\n---\n\n*Ontology Term managed by AI-Grounded Ontology Working Group*\n*UK English Spelling Standards Applied*\n\t- maturity:: draft\n\t- owl:class:: mv:GPT4\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]",
+  "backlinks": [
+    "AI-Augmented Software Engineering",
+    "BC-0472-dao-tooling",
+    "Safety Laser Scanner"
+  ],
+  "wiki_links": [
+    "MetaverseDomain",
+    "GPT"
+  ],
+  "ontology": {
+    "term_id": "AI-0215",
+    "preferred_term": "GPT 4",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#GPT4",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:GPT4",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain",
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "Selfish Mining",
+  "title": "Selfish Mining",
+  "content": "- ### OntologyBlock\n  id:: selfish-mining-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0085\n\t- preferred-term:: Selfish Mining\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Strategic block withholding within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:SelfishMining\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[CryptographicDomain]]\n\t- implementedInLayer:: [[SecurityLayer]]\n\t- #### Relationships\n\t  id:: selfish-mining-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Entity]]\n\t\t- is-subclass-of:: [[NetworkComponent]]\n\n## Selfish Mining\n\nSelfish Mining refers to strategic block withholding within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\n- Selfish mining remains a theoretical and practical concern in PoW blockchains, including Bitcoin and smaller altcoins.\n  - While Bitcoin’s large hash rate and network decentralisation reduce the practical risk, smaller networks with lower hash power are more vulnerable.\n- Mining pools continue to be scrutinised for potential selfish mining behaviour, though direct evidence is scarce due to the covert nature of the strategy.\n- Technical countermeasures and protocol adjustments have been proposed, such as modifying block reward schemes or incorporating penalties for withheld blocks, but no universal standard has been adopted.\n- In the UK, blockchain research and industry players monitor selfish mining as part of broader efforts to enhance blockchain security and fairness.\n  - North England’s innovation hubs in Manchester and Leeds have active blockchain research groups exploring consensus vulnerabilities and mitigation strategies.\n  - Sheffield and Newcastle have emerging fintech clusters where blockchain security is a growing focus, though selfish mining has not been reported as a significant local issue.\n- The technical limitations of selfish mining include the need for significant hash power and network latency advantages, which constrain its widespread success.\n\n## Technical Details\n\n- **Id**: selfish-mining-standards\n- **Collapsed**: true\n- **Domain Prefix**: BC\n- **Sequence Number**: 0085\n- **Filename History**: [\"BC-0085-selfish-mining.md\"]\n- **Public Access**: true\n- **Source Domain**: blockchain\n- **Status**: complete\n- **Last Updated**: 2025-10-28\n- **Maturity**: mature\n- **Source**: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n- **Authority Score**: 0.95\n- **Owl:Class**: bc:SelfishMining\n- **Owl:Physicality**: VirtualEntity\n- **Owl:Role**: Object\n- **Owl:Inferred Class**: bc:VirtualObject\n- **Belongstodomain**: [[CryptographicDomain]]\n- **Blockchainrelevance**: High\n- **Lastvalidated**: 2025-11-14\n- **Implementedinlayer**: [[SecurityLayer]]\n- **Is Subclass Of**: [[Blockchain Entity]], [[NetworkComponent]]\n\n## Research & Literature\n\n- Key academic papers:\n  - Eyal, I., & Sirer, E. G. (2014). *Majority is not Enough: Bitcoin Mining is Vulnerable*. In Proceedings of the 18th International Conference on Financial Cryptography and Data Security. DOI: 10.1007/978-3-662-45472-5_12\n  - Sapirshtein, A., Sompolinsky, Y., & Zohar, A. (2016). *Optimal Selfish Mining Strategies in Bitcoin*. In Financial Cryptography and Data Security. DOI: 10.1007/978-3-662-53357-4_13\n  - Nayak, K., Kumar, S., Miller, A., & Shi, E. (2016). *Stubborn Mining: Generalizing Selfish Mining and Combining with an Eclipse Attack*. In IEEE European Symposium on Security and Privacy. DOI: 10.1109/EuroSP.2016.21\n- Ongoing research explores:\n  - Game-theoretic models of miner behaviour under varying network conditions.\n  - Protocol modifications to incentivise honest mining and penalise block withholding.\n  - Empirical detection methods for selfish mining in live networks.\n- The literature emphasises the delicate balance between miner incentives, network latency, and decentralisation in maintaining blockchain security.\n\n## UK Context\n\n- The UK has contributed to blockchain security research, with universities such as the University of Manchester and University of Leeds conducting studies on consensus mechanisms and attack vectors including selfish mining.\n- North England’s fintech and blockchain innovation hubs foster collaboration between academia and industry to develop resilient blockchain protocols.\n- Regional case studies include pilot projects in Manchester exploring blockchain applications with embedded security features designed to mitigate selfish mining risks.\n- While selfish mining has not been a prominent issue in UK-based mining operations, awareness and preparedness remain high given the UK’s growing interest in decentralised finance and blockchain infrastructure.\n\n## Future Directions\n\n- Emerging trends include the integration of hybrid consensus mechanisms combining PoW with Proof of Stake (PoS) to reduce selfish mining incentives.\n- Anticipated challenges involve detecting selfish mining in increasingly complex and decentralised mining pools, especially with the rise of cross-chain mining and multi-asset platforms.\n- Research priorities focus on:\n  - Developing robust incentive-compatible protocols that align miner behaviour with network health.\n  - Enhancing real-time monitoring tools to identify selfish mining attempts.\n  - Exploring the impact of network topology and latency on selfish mining feasibility.\n- The subtle art of selfish mining may continue to evolve, but so too will the blockchain community’s countermeasures—perhaps a game of cat and mouse worthy of a Dickensian plot twist.\n\n## References\n\n1. Eyal, I., & Sirer, E. G. (2014). Majority is not Enough: Bitcoin Mining is Vulnerable. *Financial Cryptography and Data Security*, 436–454. DOI: 10.1007/978-3-662-45472-5_12\n2. Sapirshtein, A., Sompolinsky, Y., & Zohar, A. (2016). Optimal Selfish Mining Strategies in Bitcoin. *Financial Cryptography and Data Security*, 515–532. DOI: 10.1007/978-3-662-53357-4_13\n3. Nayak, K., Kumar, S., Miller, A., & Shi, E. (2016). Stubborn Mining: Generalizing Selfish Mining and Combining with an Eclipse Attack. *IEEE European Symposium on Security and Privacy*, 305–320. DOI: 10.1109/EuroSP.2016.21\n\n## Metadata\n\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Mining Pool"
+  ],
+  "wiki_links": [
+    "NIST NISTIR",
+    "CryptographicDomain",
+    "SecurityLayer",
+    "NetworkComponent",
+    "Blockchain Entity",
+    "ISO/IEC 23257:2021",
+    "IEEE 2418.1"
+  ],
+  "ontology": {
+    "term_id": "BC-0085",
+    "preferred_term": "Selfish Mining",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#SelfishMining",
+    "source_domain": "blockchain",
+    "domain": "blockchain",
+    "domain_full_name": "",
+    "definition": "Strategic block withholding within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": "2025-10-28",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:SelfishMining",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "bc:VirtualObject",
+    "is_subclass_of": [
+      "Blockchain Entity",
+      "NetworkComponent"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "CryptographicDomain"
+    ],
+    "implemented_in_layer": [
+      "SecurityLayer"
+    ],
+    "source": [
+      "ISO/IEC 23257:2021",
+      "IEEE 2418.1",
+      "NIST NISTIR"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+      ]
+    }
+  }
+}

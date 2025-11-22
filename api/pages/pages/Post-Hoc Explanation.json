@@ -1,0 +1,55 @@
+{
+  "id": "Post-Hoc Explanation",
+  "title": "Post Hoc Explanation",
+  "content": "- ### OntologyBlock\n  id:: post-hoc-explanation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0299\n\t- preferred-term:: Post Hoc Explanation\n\t- source-domain:: ai\n\t- owl:class:: ai:PostHocExplanation\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Interpretability techniques applied after a machine learning model has been trained, providing explanations for model behaviour and predictions without modifying the model's architecture or requiring retraining.\n\t- #### Relationships\n\t  id:: post-hoc-explanation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[ModelProperty]]\n\n## Post Hoc Explanation\n\nPost Hoc Explanation refers to interpretability techniques applied after a machine learning model has been trained, providing explanations for model behaviour and predictions without modifying the model's architecture or requiring retraining.\n\n- Industry adoption of post hoc explanation techniques is widespread across sectors relying on complex ML models, including finance, healthcare, and climate science.\n  - Common methods include LIME (Local Interpretable Model-agnostic Explanations), SHAP (SHapley Additive exPlanations), surrogate models, and saliency or attention maps.\n  - These methods are model-agnostic, enabling application across diverse architectures without internal access.\n- Notable organisations and platforms integrating post hoc explanations include major AI providers and open-source toolkits, facilitating transparency and trust in AI systems.\n- In the UK, and particularly in North England, institutions such as the University of Manchester and the Alan Turing Institute collaborate with industry partners to advance explainable AI (XAI) research and deployment.\n- Technical limitations persist:\n  - Post hoc explanations provide correlations rather than causations, necessitating cautious interpretation.\n  - They offer *statistical understanding* but not *component-level understanding* of model internals, which can limit their explanatory power in safety-critical applications (Molina et al., 2025)[3].\n- Standards and frameworks for explainability are evolving, with increasing emphasis on empirical validation and ethical transparency.\n\n## Technical Details\n\n- **Id**: post-hoc-explanation-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Research & Literature\n\n- Key academic contributions include:\n  - Oh, N. (2024). *In Defence of Post-hoc Explainability*. Socius Labs. arXiv:2412.17883.\n    - Argues for the legitimacy of post hoc methods as scientific tools, highlighting their epistemic value despite approximations[2].\n  - Molina, et al. (2025). *Moving beyond post hoc explainable artificial intelligence*. Geoscientific Model Development, 18, 787–805.\n    - Reviews limitations of post hoc methods in climate science, emphasising statistical vs. mechanistic understanding[3].\n  - Ribeiro, M.T., Singh, S., & Guestrin, C. (2016). *“Why Should I Trust You?” Explaining the Predictions of Any Classifier*. Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining.\n    - Introduced LIME, a foundational post hoc explanation technique.\n  - Lundberg, S.M., & Lee, S.-I. (2017). *A Unified Approach to Interpreting Model Predictions*. Advances in Neural Information Processing Systems.\n    - Developed SHAP, a game-theoretic method for feature attribution.\n- Ongoing research focuses on improving explanation fidelity, mitigating biases in explanations, and integrating causal inference to move beyond correlation.\n\n## UK Context\n\n- The UK is a leader in XAI research, with significant contributions from universities and research centres in North England.\n  - The University of Manchester’s AI group explores post hoc interpretability in healthcare diagnostics.\n  - Leeds Institute for Data Analytics collaborates on explainability frameworks for financial services.\n  - Newcastle University investigates post hoc methods in environmental modelling.\n  - Sheffield’s Advanced Manufacturing Research Centre applies explainability to industrial AI systems.\n- Regional innovation hubs foster industry-academic partnerships, promoting practical deployment of post hoc explanations in sectors vital to the North, such as healthcare, finance, and manufacturing.\n- The Alan Turing Institute, headquartered in London but with strong North England collaborations, supports national efforts to standardise and improve explainability practices.\n\n## Future Directions\n\n- Emerging trends include:\n  - Integration of causal inference techniques to enhance the explanatory power beyond mere correlations.\n  - Development of standardised benchmarks and empirical validation protocols to assess explanation quality and reliability.\n  - Increased focus on fairness and bias mitigation within explanations to ensure equitable AI outcomes.\n  - Expansion of user-centric explanation methods tailored to diverse stakeholders, from data scientists to regulators and end-users.\n- Anticipated challenges:\n  - Balancing explanation complexity with user comprehensibility.\n  - Addressing the epistemic limits of post hoc methods while maintaining practical utility.\n  - Navigating regulatory requirements, especially in the UK’s evolving AI governance landscape.\n- Research priorities include:\n  - Formalising theoretical frameworks for explanation validity.\n  - Enhancing robustness of explanations against adversarial manipulation.\n  - Exploring regional and sector-specific needs, particularly in the UK’s North England context.\n\n## References\n\n1. Oh, N. (2024). *In Defence of Post-hoc Explainability*. Socius Labs. arXiv:2412.17883.\n2. Molina, et al. (2025). *Moving beyond post hoc explainable artificial intelligence*. Geoscientific Model Development, 18, 787–805. https://doi.org/10.5194/gmd-18-787-2025\n3. Ribeiro, M.T., Singh, S., & Guestrin, C. (2016). “Why Should I Trust You?” Explaining the Predictions of Any Classifier. *Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*, 1135–1144. https://doi.org/10.1145/2939672.2939778\n4. Lundberg, S.M., & Lee, S.-I. (2017). A Unified Approach to Interpreting Model Predictions. *Advances in Neural Information Processing Systems*, 30, 4765–4774.\n5. Molina, et al. (2023). *Statistical vs. Causal Understanding in Explainable AI*. TechRxiv.\n*If post hoc explanations were a pub quiz, they’d be the clever friend who can’t quite remember the answer but gives a plausible and entertaining guess—still, better than silence.*\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "ModelProperty"
+  ],
+  "ontology": {
+    "term_id": "AI-0299",
+    "preferred_term": "Post Hoc Explanation",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#PostHocExplanation",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Interpretability techniques applied after a machine learning model has been trained, providing explanations for model behaviour and predictions without modifying the model's architecture or requiring retraining.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:PostHocExplanation",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "ModelProperty"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "Model Depth",
+  "title": "Model Depth",
+  "content": "- ### OntologyBlock\n  id:: model-depth-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0243\n\t- preferred-term:: Model Depth\n\t- source-domain:: ai\n\t- owl:class:: ai:ModelDepth\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: The number of transformer layers (encoder and/or decoder) stacked in a model, determining the number of sequential transformations applied to representations.\n\t- #### Relationships\n\t  id:: model-depth-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[ModelCapacity]]\n\n## Model Depth\n\nModel Depth refers to the number of transformer layers (encoder and/or decoder) stacked in a model, determining the number of sequential transformations applied to representations.\n\n- Industry adoption and implementations\n\t- Leading platforms such as Hugging Face, Google DeepMind, and Meta AI routinely deploy models with variable depth, often exceeding 100 layers for large language and diffusion models\n\t- In the UK, companies like DeepMind (London), Faculty (London), and Inflection AI (Cambridge) leverage deep transformer architectures for research and commercial applications\n\t- North England has seen growing adoption in academic and industrial settings, with institutions in Manchester, Leeds, and Newcastle integrating deep models into research on healthcare, climate science, and smart cities\n- Technical capabilities and limitations\n\t- Increased depth generally improves representational power, but also raises computational costs and training complexity\n\t- Very deep models may require advanced optimisation techniques (e.g., gradient checkpointing, residual connections) to train effectively\n\t- There is ongoing debate about the optimal depth for specific tasks, with some domains benefiting more from width than depth\n- Standards and frameworks\n\t- Modern deep learning frameworks (PyTorch, TensorFlow, JAX) provide flexible APIs for specifying and training models of arbitrary depth\n\t- Best practices for depth selection are guided by empirical benchmarks and theoretical scaling laws\n\n## Technical Details\n\n- **Id**: model-depth-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Research & Literature\n\n- Key academic papers and sources\n\t- Vaswani, A., et al. (2017). Attention Is All You Need. Advances in Neural Information Processing Systems, 30. https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html\n\t- Brown, T., et al. (2020). Language Models are Few-Shot Learners. Advances in Neural Information Processing Systems, 33. https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html\n\t- Liu, Z., et al. (2021). Swin Transformer: Hierarchical Vision Transformer using Shifted Windows. Proceedings of the IEEE/CVF International Conference on Computer Vision. https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_using_Shifted_Windows_ICCV_2021_paper.html\n\t- Rombach, R., et al. (2022). High-Resolution Image Synthesis with Latent Diffusion Models. Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html\n- Ongoing research directions\n\t- Investigating the trade-offs between depth, width, and computational efficiency\n\t- Exploring novel architectures that mitigate the challenges of training very deep models\n\t- Applying scaling laws to predict optimal depth for specific tasks and datasets\n\n## UK Context\n\n- British contributions and implementations\n\t- UK researchers have played a significant role in advancing transformer architectures, particularly in NLP and computer vision\n\t- Institutions such as the University of Cambridge, University College London, and the Alan Turing Institute have published influential work on model depth and scalability\n- North England innovation hubs\n\t- The University of Manchester’s Department of Computer Science is active in deep learning research, including the development of efficient transformer models for healthcare applications\n\t- Leeds and Newcastle universities collaborate on projects involving deep models for environmental monitoring and urban planning\n\t- Sheffield’s Advanced Manufacturing Research Centre (AMRC) explores the use of deep transformers in industrial automation and predictive maintenance\n- Regional case studies\n\t- Manchester’s AI for Health initiative uses deep transformer models to analyse medical imaging data, improving diagnostic accuracy\n\t- Leeds City Council partners with local universities to deploy deep models for traffic flow prediction and urban resilience\n\n## Future Directions\n\n- Emerging trends and developments\n\t- Continued exploration of hybrid architectures that combine depth with other forms of model complexity\n\t- Increased focus on energy-efficient training and inference for deep models\n\t- Growing interest in adaptive depth, where models dynamically adjust their depth based on input complexity\n- Anticipated challenges\n\t- Balancing depth with computational and environmental costs\n\t- Ensuring robustness and generalisation in very deep models\n\t- Addressing the ethical implications of increasingly complex models\n- Research priorities\n\t- Developing new optimisation techniques for training deep models\n\t- Investigating the theoretical foundations of depth in transformer architectures\n\t- Promoting interdisciplinary collaboration to apply deep models to real-world problems\n\n## References\n\n1. Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention Is All You Need. Advances in Neural Information Processing Systems, 30. https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html\n2. Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., ... & Amodei, D. (2020). Language Models are Few-Shot Learners. Advances in Neural Information Processing Systems, 33. https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html\n3. Liu, Z., Lin, Y., Cao, Y., Hu, H., Wei, Y., Zhang, Z., ... & Guo, B. (2021). Swin Transformer: Hierarchical Vision Transformer using Shifted Windows. Proceedings of the IEEE/CVF International Conference on Computer Vision. https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_using_Shifted_Windows_ICCV_2021_paper.html\n4. Rombach, R., Blattmann, A., Lorenz, D., Esser, P., & Ommer, B. (2022). High-Resolution Image Synthesis with Latent Diffusion Models. Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "ModelCapacity"
+  ],
+  "ontology": {
+    "term_id": "AI-0243",
+    "preferred_term": "Model Depth",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#ModelDepth",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "The number of transformer layers (encoder and/or decoder) stacked in a model, determining the number of sequential transformations applied to representations.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:ModelDepth",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "ModelCapacity"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "rb-0044-velocity",
+  "title": "rb 0044 velocity",
+  "content": "- ### OntologyBlock\n  id:: rb-0044-velocity-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0044\n\t- preferred-term:: rb 0044 velocity\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: ### Primary Definition\n\t- maturity:: draft\n\t- owl:class:: mv:rb0044velocity\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[RoboticsDomain]]\n\t- #### Relationships\n\t  id:: rb-0044-velocity-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[rb-0022-robot-dynamics]]\n\t\t- belongsToDomain:: [[RoboticsDomain]]",
+  "backlinks": [],
+  "wiki_links": [
+    "RoboticsDomain",
+    "rb-0022-robot-dynamics"
+  ],
+  "ontology": {
+    "term_id": "RB-0044",
+    "preferred_term": "rb 0044 velocity",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#rb0044velocity",
+    "source_domain": null,
+    "domain": "rb",
+    "domain_full_name": "Robotics",
+    "definition": "### Primary Definition",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:rb0044velocity",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "rb-0022-robot-dynamics"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "RoboticsDomain",
+      "RoboticsDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "other_relationships": {
+      "belongsToDomain": [
+        "RoboticsDomain"
+      ]
+    },
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "owl:class namespace 'mv' doesn't match source-domain 'rb'"
+      ]
+    }
+  }
+}

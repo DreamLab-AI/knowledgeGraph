@@ -1,0 +1,58 @@
+{
+  "id": "Encoder",
+  "title": "Encoder",
+  "content": "- ### OntologyBlock\n  id:: encoder-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0205\n\t- preferred-term:: Encoder\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: mv:Encoder\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n### Domain & Architecture\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- maturity:: draft\n\n### Relationships\n\n## Characteristics\n\n- **Bidirectional Context**: Attends to entire input sequence\n- **Stacked Layers**: Typically 6-24 layers in modern implementations\n- **Self-Attention**: Uses multi-head self-attention\n- **Representation Learning**: Creates rich contextual embeddings\n\n## Academic Foundations\n\n**Primary Source**: Vaswani et al., \"Attention Is All You Need\", arXiv:1706.03762 (2017)\n\n**Architecture**: Each encoder layer contains multi-head self-attention followed by a position-wise feed-forward network, with residual connections and layer normalisation.\n\n## Technical Context\n\nThe encoder processes the input sequence to create contextualised representations that capture semantic and syntactic information. In BERT-style models, only the encoder is used for bidirectional understanding tasks.\n\n## Ontological Relationships\n\n- **Broader Term**: Transformer Architecture Component\n- **Related Terms**: Decoder, Encoder-Decoder Architecture, Self-Attention\n- **Examples**: BERT, RoBERTa (encoder-only models)\n\n## Usage Context\n\n\"The transformer encoder uses multi-head self-attention to create bidirectional representations of the input sequence.\"\n\n## OWL Functional Syntax\n\n```clojure\n(Declaration (Class :Encoder))\n(AnnotationAssertion rdfs:label :Encoder \"Encoder\"@en)\n(AnnotationAssertion rdfs:comment :Encoder\n  \"Component that processes input sequence to produce contextualised representations.\"@en)\n(AnnotationAssertion :hasSource :Encoder\n  \"Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762 (2017)\"@en)\n\n;; Taxonomic relationships\n(SubClassOf :Encoder :TransformerArchitectureComponent)\n\n;; Structural composition\n(SubClassOf :Encoder\n  (ObjectSomeValuesFrom :consistsOfLayers :EncoderLayer))\n(SubClassOf :Encoder\n  (ObjectMinCardinality 1 :consistsOfLayers :EncoderLayer))\n\n;; Encoder layer structure\n(Declaration (Class :EncoderLayer))\n(SubClassOf :EncoderLayer\n  (ObjectSomeValuesFrom :contains :MultiHeadSelfAttention))\n(SubClassOf :EncoderLayer\n  (ObjectSomeValuesFrom :contains :FeedForwardNetwork))\n(SubClassOf :EncoderLayer\n  (ObjectSomeValuesFrom :uses :ResidualConnection))\n(SubClassOf :EncoderLayer\n  (ObjectSomeValuesFrom :uses :LayerNormalisation))\n\n;; Attention characteristics\n(SubClassOf :Encoder\n  (ObjectAllValuesFrom :usesAttentionType :BidirectionalAttention))\n(DataPropertyAssertion :isBidirectional :Encoder \"true\"^^xsd:boolean)\n(DataPropertyAssertion :attendsToFullContext :Encoder \"true\"^^xsd:boolean)\n\n;; Typical configurations\n(DataPropertyAssertion :typicalLayerCount :Encoder \"6\"^^xsd:integer)\n(DataPropertyAssertion :largeModelLayerCount :Encoder \"24\"^^xsd:integer)\n\n;; Input-output\n(SubClassOf :Encoder\n  (ObjectSomeValuesFrom :takesInput :TokenSequence))\n(SubClassOf :Encoder\n  (ObjectSomeValuesFrom :produces :ContextualisedRepresentation))\n(SubClassOf :Encoder\n  (ObjectSomeValuesFrom :creates :SemanticEncoding))\n\n;; Encoder-only models\n(Declaration (Class :EncoderOnlyModel))\n(SubClassOf :BERT :EncoderOnlyModel)\n(SubClassOf :RoBERTa :EncoderOnlyModel)\n(SubClassOf :ALBERT :EncoderOnlyModel)\n(SubClassOf :DeBERTa :EncoderOnlyModel)\n\n(AnnotationAssertion rdfs:comment :EncoderOnlyModel\n  \"Transformer models using only encoder for bidirectional understanding\"@en)\n```\n\n## References\n\n- Vaswani, A., et al. (2017). \"Attention Is All You Need\". arXiv:1706.03762\n- Devlin, J., et al. (2018). \"BERT: Pre-training of Deep Bidirectional Transformers\". arXiv:1810.04805\n\n---\n\n*Ontology Term managed by AI-Grounded Ontology Working Group*\n*UK English Spelling Standards Applied*\n\t- maturity:: draft\n\t- owl:class:: mv:Encoder\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t- belongsToDomain:: [[MetaverseDomain]]",
+  "backlinks": [],
+  "wiki_links": [
+    "ArtificialIntelligence",
+    "MetaverseDomain"
+  ],
+  "ontology": {
+    "term_id": "AI-0205",
+    "preferred_term": "Encoder",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#Encoder",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:Encoder",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain",
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

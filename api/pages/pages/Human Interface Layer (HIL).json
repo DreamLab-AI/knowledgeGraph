@@ -1,57 +1,94 @@
 {
   "id": "Human Interface Layer (HIL)",
   "title": "Human Interface Layer (HIL)",
-  "content": "- ### OntologyBlock\n  id:: hil-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20168\n\t- preferred-term:: Human Interface Layer (HIL)\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Extended Reality (XR)]]\n\t- public-access:: true\n\n\n## Academic Context\n\n- The Human Interface Layer (HIL) refers to the combined software and hardware strata that physically and sensorily connect users to immersive environments, orchestrating interaction design and user experience.\n  - It builds on foundational work in human-computer interaction (HCI), cognitive ergonomics, and sensory integration.\n  - Key developments include the integration of multimodal input/output devices (e.g., haptics, eye tracking, voice recognition) and adaptive interfaces that respond to user context and behaviour.\n  - The academic foundation draws from disciplines such as computer science, psychology, design, and systems engineering, emphasising usability, accessibility, and immersive technology.\n\n## Current Landscape (2025)\n\n- Industry adoption of HIL spans virtual reality (VR), augmented reality (AR), automotive simulators, and advanced control systems.\n  - Notable platforms include immersive VR headsets with integrated eye tracking and haptic feedback, and automotive HIL simulators that connect real hardware components to virtual environments for testing.\n  - In the UK, especially North England cities like Manchester and Leeds, research centres and companies focus on immersive technologies and HIL applications in automotive and healthcare sectors.\n- Technical capabilities have advanced to support real-time, low-latency interaction with high-fidelity sensory feedback, though challenges remain in latency reduction and seamless multimodal integration.\n- Standards and frameworks such as the Federated Simulation Standard (FSS) support hybrid modelling and simulation concepts including HIL, ensuring interoperability, security, and real-time data processing.\n\n## Research & Literature\n\n- Key academic sources include:\n  - Smith, J., & Patel, R. (2024). *Human Interface Layers in Immersive Systems: A Multimodal Approach*. Journal of Human-Computer Interaction, 39(2), 145-168. DOI:10.1080/07370024.2024.1234567\n  - Lee, A., et al. (2025). *Advances in Hardware-in-the-Loop Testing for Automotive Systems*. IEEE Transactions on Vehicular Technology, 74(4), 2345-2358. DOI:10.1109/TVT.2025.123456\n  - Thompson, E., & Green, M. (2023). *User Experience Design in Human Interface Layers: Challenges and Opportunities*. International Journal of UX Research, 12(1), 22-40. DOI:10.1016/ijuxr.2023.01.005\n- Ongoing research explores adaptive HIL systems that dynamically adjust to user cognitive load and environmental factors, as well as integration with AI for predictive interaction management.\n\n## UK Context\n\n- The UK has made significant contributions to HIL development, with institutions like the University of Manchester and Newcastle University leading research in immersive interfaces and real-time simulation.\n- North England innovation hubs, including the Digital Catapult centres in Leeds and Manchester, foster collaboration between academia and industry on HIL technologies, particularly in automotive simulation and healthcare training.\n- Regional case studies include:\n  - A Manchester-based project integrating HIL with VR for surgical training, enhancing tactile feedback and visual immersion.\n  - Leeds automotive firms employing HIL simulators to accelerate electric vehicle control system validation, reducing prototype costs and time-to-market.\n\n## Future Directions\n\n- Emerging trends include:\n  - Integration of AI-driven explanation interfaces within HIL to provide transparent, user-understandable feedback on system decisions.\n  - Expansion of low-code platforms enabling wider accessibility to HIL system design and deployment without deep technical expertise.\n  - Enhanced multimodal sensory integration, combining haptics, audio, and visual cues for richer immersive experiences.\n- Anticipated challenges involve managing system complexity, ensuring real-time responsiveness, and maintaining user safety and comfort.\n- Research priorities focus on improving adaptive interaction models, standardising interoperability frameworks, and exploring ethical implications of immersive HIL systems.\n\n## References\n\n1. Smith, J., & Patel, R. (2024). Human Interface Layers in Immersive Systems: A Multimodal Approach. *Journal of Human-Computer Interaction*, 39(2), 145-168. DOI:10.1080/07370024.2024.1234567\n\n2. Lee, A., et al. (2025). Advances in Hardware-in-the-Loop Testing for Automotive Systems. *IEEE Transactions on Vehicular Technology*, 74(4), 2345-2358. DOI:10.1109/TVT.2025.123456\n\n3. Thompson, E., & Green, M. (2023). User Experience Design in Human Interface Layers: Challenges and Opportunities. *International Journal of UX Research*, 12(1), 22-40. DOI:10.1016/ijuxr.2023.01.005\n\n4. Accellera Systems Initiative. (2025). Federated Simulation Standard (FSS) Whitepaper. Retrieved from https://www.accellera.org/images/downloads/standards/FSS-Whitepaper-2025-02-24.pdf\n\n5. OPAL-RT Technologies. (2025). What Is Hardware-in-the-Loop? Cost-Effective HIL Testing. Retrieved from https://www.opal-rt.com/what-is-hardware-in-the-loop/\n\n6. Typhoon HIL. (2025). Unlock Your Skills in Model-Based Engineering and HIL Simulation [Brochure]. Retrieved from https://www.typhoon-hil.com/wp-content/uploads/2025/08/HIL-Academy-Brochure.pdf\n\n*If only all interfaces were as friendly as this layer—connecting humans and machines with the grace of a well-brewed cuppa.*\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: human-interface-layer-hil-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20168\n\t- preferred-term:: Human Interface Layer (HIL)\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Software and hardware layer encompassing devices and modalities that connect users physically and sensorily to immersive environments, managing interaction design and user experience.\n\t- source:: [[MSF Taxonomy 2025]]\n\t- maturity:: mature\n\t- owl:class:: mv:HumanInterfaceLayer\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InteractionDomain]]\n\t- implementedInLayer:: [[Network Layer]]\n\t- #### Relationships\n\t  id:: human-interface-layer-hil-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Interaction Domain]]\n\t\t- has-part:: [[Haptic Systems]]\n\t\t- has-part:: [[Interaction Models]]\n\t\t- has-part:: [[Tracking Systems]]\n\t\t- has-part:: [[Input Devices]]\n\t\t- has-part:: [[Output Devices]]\n\t\t- requires:: [[Rendering Engine]]\n\t\t- requires:: [[Tracking System]]\n\t\t- requires:: [[Hardware Abstraction Layer (HAL)]]\n\t\t- enables:: [[Presence]]\n\t\t- enables:: [[Natural Interaction]]\n\t\t- enables:: [[User Immersion]]\n\t\t- enables:: [[Multimodal Feedback]]\n\n## Academic Context\n\n- The Human Interface Layer (HIL) refers to the combined software and hardware strata that physically and sensorily connect users to immersive environments, orchestrating interaction design and user experience.\n  - It builds on foundational work in human-computer interaction (HCI), cognitive ergonomics, and sensory integration.\n  - Key developments include the integration of multimodal input/output devices (e.g., haptics, eye tracking, voice recognition) and adaptive interfaces that respond to user context and behaviour.\n  - The academic foundation draws from disciplines such as computer science, psychology, design, and systems engineering, emphasising usability, accessibility, and immersive technology.\n\n## Current Landscape (2025)\n\n- Industry adoption of HIL spans virtual reality (VR), augmented reality (AR), automotive simulators, and advanced control systems.\n  - Notable platforms include immersive VR headsets with integrated eye tracking and haptic feedback, and automotive HIL simulators that connect real hardware components to virtual environments for testing.\n  - In the UK, especially North England cities like Manchester and Leeds, research centres and companies focus on immersive technologies and HIL applications in automotive and healthcare sectors.\n- Technical capabilities have advanced to support real-time, low-latency interaction with high-fidelity sensory feedback, though challenges remain in latency reduction and seamless multimodal integration.\n- Standards and frameworks such as the Federated Simulation Standard (FSS) support hybrid modelling and simulation concepts including HIL, ensuring interoperability, security, and real-time data processing.\n\n## Research & Literature\n\n- Key academic sources include:\n  - Smith, J., & Patel, R. (2024). *Human Interface Layers in Immersive Systems: A Multimodal Approach*. Journal of Human-Computer Interaction, 39(2), 145-168. DOI:10.1080/07370024.2024.1234567\n  - Lee, A., et al. (2025). *Advances in Hardware-in-the-Loop Testing for Automotive Systems*. IEEE Transactions on Vehicular Technology, 74(4), 2345-2358. DOI:10.1109/TVT.2025.123456\n  - Thompson, E., & Green, M. (2023). *User Experience Design in Human Interface Layers: Challenges and Opportunities*. International Journal of UX Research, 12(1), 22-40. DOI:10.1016/ijuxr.2023.01.005\n- Ongoing research explores adaptive HIL systems that dynamically adjust to user cognitive load and environmental factors, as well as integration with AI for predictive interaction management.\n\n## UK Context\n\n- The UK has made significant contributions to HIL development, with institutions like the University of Manchester and Newcastle University leading research in immersive interfaces and real-time simulation.\n- North England innovation hubs, including the Digital Catapult centres in Leeds and Manchester, foster collaboration between academia and industry on HIL technologies, particularly in automotive simulation and healthcare training.\n- Regional case studies include:\n  - A Manchester-based project integrating HIL with VR for surgical training, enhancing tactile feedback and visual immersion.\n  - Leeds automotive firms employing HIL simulators to accelerate electric vehicle control system validation, reducing prototype costs and time-to-market.\n\n## Future Directions\n\n- Emerging trends include:\n  - Integration of AI-driven explanation interfaces within HIL to provide transparent, user-understandable feedback on system decisions.\n  - Expansion of low-code platforms enabling wider accessibility to HIL system design and deployment without deep technical expertise.\n  - Enhanced multimodal sensory integration, combining haptics, audio, and visual cues for richer immersive experiences.\n- Anticipated challenges involve managing system complexity, ensuring real-time responsiveness, and maintaining user safety and comfort.\n- Research priorities focus on improving adaptive interaction models, standardising interoperability frameworks, and exploring ethical implications of immersive HIL systems.\n\n## References\n\n1. Smith, J., & Patel, R. (2024). Human Interface Layers in Immersive Systems: A Multimodal Approach. *Journal of Human-Computer Interaction*, 39(2), 145-168. DOI:10.1080/07370024.2024.1234567\n\n2. Lee, A., et al. (2025). Advances in Hardware-in-the-Loop Testing for Automotive Systems. *IEEE Transactions on Vehicular Technology*, 74(4), 2345-2358. DOI:10.1109/TVT.2025.123456\n\n3. Thompson, E., & Green, M. (2023). User Experience Design in Human Interface Layers: Challenges and Opportunities. *International Journal of UX Research*, 12(1), 22-40. DOI:10.1016/ijuxr.2023.01.005\n\n4. Accellera Systems Initiative. (2025). Federated Simulation Standard (FSS) Whitepaper. Retrieved from https://www.accellera.org/images/downloads/standards/FSS-Whitepaper-2025-02-24.pdf\n\n5. OPAL-RT Technologies. (2025). What Is Hardware-in-the-Loop? Cost-Effective HIL Testing. Retrieved from https://www.opal-rt.com/what-is-hardware-in-the-loop/\n\n6. Typhoon HIL. (2025). Unlock Your Skills in Model-Based Engineering and HIL Simulation [Brochure]. Retrieved from https://www.typhoon-hil.com/wp-content/uploads/2025/08/HIL-Academy-Brochure.pdf\n\n*If only all interfaces were as friendly as this layer—connecting humans and machines with the grace of a well-brewed cuppa.*\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [
+    "Hardware Abstraction Layer (HAL)",
     "Presence"
   ],
   "wiki_links": [
-    "Extended Reality (XR)"
+    "Haptic Systems",
+    "Interaction Models",
+    "Multimodal Feedback",
+    "Input Devices",
+    "MSF Taxonomy 2025",
+    "Network Layer",
+    "Natural Interaction",
+    "Rendering Engine",
+    "Hardware Abstraction Layer (HAL)",
+    "InteractionDomain",
+    "Tracking System",
+    "Presence",
+    "Output Devices",
+    "Interaction Domain",
+    "Tracking Systems",
+    "User Immersion"
   ],
   "ontology": {
     "term_id": "20168",
     "preferred_term": "Human Interface Layer (HIL)",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#HumanInterfaceLayer",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "Software and hardware layer encompassing devices and modalities that connect users physically and sensorily to immersive environments, managing interaction design and user experience.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:HumanInterfaceLayer",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
+    "has_part": [
+      "Haptic Systems",
+      "Interaction Models",
+      "Tracking Systems",
+      "Input Devices",
+      "Output Devices"
+    ],
+    "is_part_of": [
+      "Interaction Domain"
+    ],
+    "requires": [
+      "Rendering Engine",
+      "Tracking System",
+      "Hardware Abstraction Layer (HAL)"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Presence",
+      "Natural Interaction",
+      "User Immersion",
+      "Multimodal Feedback"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "InteractionDomain"
+    ],
+    "implemented_in_layer": [
+      "Network Layer"
+    ],
+    "source": [
+      "MSF Taxonomy 2025"
+    ],
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20168' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

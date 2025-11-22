@@ -3,12 +3,13 @@
   "title": "OpenAI",
   "content": "- #Public page\n\t - automatically published\n-\n### Relationships\n- is-subclass-of:: [[AICompanies]]",
   "backlinks": [
-    "AI Risk",
     "Social Impact Assessment (SIA)",
+    "AI Alignment",
     "Artificial Intelligence",
-    "Variational Autoencoders",
+    "Knowledge Distillation for Edge (AI-0443)",
     "Bitcoin",
     "Safety Laser Scanner",
+    "Anthropic Claude",
     "Generative AI"
   ],
   "wiki_links": [

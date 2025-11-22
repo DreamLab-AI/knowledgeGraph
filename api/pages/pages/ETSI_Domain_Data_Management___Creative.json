@@ -1,34 +1,34 @@
 {
   "id": "ETSI_Domain_Data_Management___Creative",
   "title": "ETSI Domain: Data Management + Creative Media",
-  "content": "- ### OntologyBlock\n  id:: etsi-domain-datamgmt-creative-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20342\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: ETSI Domain: Data Management + Creative Media\n\t- definition:: Crossover domain for ETSI metaverse categorization addressing data infrastructure supporting creative content workflows, asset management, and version control systems.\n\t- maturity:: mature\n\t- source:: [[ETSI GR MEC 032]]\n\t- owl:class:: mv:ETSIDomain_DataMgmt_Creative\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-datamgmt-creative-relationships\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-part-of:: [[ETSI Metaverse Domain Taxonomy]]\n\t\t- has-part:: [[Asset Database]], [[Version Control]], [[Content Pipeline]], [[Media Library]]\n\t\t- requires:: [[Data Management]], [[Creative Media]]\n\t\t- enables:: [[Asset Version Control]], [[Collaborative Authoring]], [[Content Distribution]]\n\t\t- depends-on:: [[Distributed Storage]], [[Metadata Management]]\n\t- #### OWL Axioms\n\t  id:: etsi-domain-datamgmt-creative-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:ETSIDomain_DataMgmt_Creative))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Creative mv:VirtualEntity)\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Creative mv:Object)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Creative\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:InfrastructureDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Creative\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)\n\t\t  )\n\n\t\t  # Crossover domain dependencies\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Creative\n\t\t    ObjectSomeValuesFrom(mv:requires mv:ETSIDomain_DataManagement)\n\t\t  )\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Creative\n\t\t    ObjectSomeValuesFrom(mv:requires mv:ETSIDomain_CreativeMedia)\n\t\t  )\n\n\t\t  # Asset version control enablement\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Creative\n\t\t    ObjectSomeValuesFrom(mv:enables mv:AssetVersionControl)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:requires)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n```",
+  "content": "- ### OntologyBlock\n  id:: etsi-domain-datamgmt-creative-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20342\n\t- preferred-term:: ETSI Domain: Data Management + Creative Media\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Crossover domain for ETSI metaverse categorization addressing data infrastructure supporting creative content workflows, asset management, and version control systems.\n\t- source:: [[ETSI GR MEC 032]]\n\t- maturity:: mature\n\t- owl:class:: mv:ETSIDomain_DataMgmt_Creative\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-datamgmt-creative-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-part-of:: [[ETSI Metaverse Domain Taxonomy]]\n\t\t- has-part:: [[Asset Database]]\n\t\t- has-part:: [[Media Library]]\n\t\t- has-part:: [[Version Control]]\n\t\t- has-part:: [[Content Pipeline]]\n\t\t- requires:: [[Creative Media]]\n\t\t- requires:: [[Data Management]]\n\t\t- enables:: [[Asset Version Control]]\n\t\t- enables:: [[Collaborative Authoring]]\n\t\t- enables:: [[Content Distribution]]\n\t\t- depends-on:: [[Metadata Management]]\n\t\t- depends-on:: [[Distributed Storage]]",
   "backlinks": [],
   "wiki_links": [
+    "Creative Media",
     "Asset Database",
     "InfrastructureDomain",
     "Distributed Storage",
-    "Creative Media",
-    "ETSI Metaverse Domain Taxonomy",
-    "Data Management",
-    "ApplicationLayer",
+    "Collaborative Authoring",
+    "Metaverse",
+    "Media Library",
+    "Asset Version Control",
     "Metadata Management",
     "ETSI GR MEC 032",
-    "Metaverse",
-    "Version Control",
     "Content Distribution",
-    "Collaborative Authoring",
-    "Media Library",
+    "Data Management",
     "Content Pipeline",
-    "Asset Version Control"
+    "ApplicationLayer",
+    "Version Control",
+    "ETSI Metaverse Domain Taxonomy"
   ],
   "ontology": {
     "term_id": "20342",
     "preferred_term": "ETSI Domain: Data Management + Creative Media",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ETSIDomain_DataMgmt_Creative",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "Crossover domain for ETSI metaverse categorization addressing data infrastructure supporting creative content workflows, asset management, and version control systems.",
     "scope_note": null,
     "status": "draft",
@@ -48,20 +48,20 @@
     ],
     "has_part": [
       "Asset Database",
+      "Media Library",
       "Version Control",
-      "Content Pipeline",
-      "Media Library"
+      "Content Pipeline"
     ],
     "is_part_of": [
       "ETSI Metaverse Domain Taxonomy"
     ],
     "requires": [
-      "Data Management",
-      "Creative Media"
+      "Creative Media",
+      "Data Management"
     ],
     "depends_on": [
-      "Distributed Storage",
-      "Metadata Management"
+      "Metadata Management",
+      "Distributed Storage"
     ],
     "enables": [
       "Asset Version Control",
@@ -84,8 +84,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "term-id '20342' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

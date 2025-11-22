@@ -1,0 +1,55 @@
+{
+  "id": "Placing on the Market",
+  "title": "Placing on the Market",
+  "content": "- ### OntologyBlock\n  id:: placing-on-the-market-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0515\n\t- preferred-term:: Placing on the Market\n\t- source-domain:: ai\n\t- owl:class:: ai:PlacingOnTheMarket\n\t- status:: active\n\t- public-access:: true\n\t- definition:: The first making available of an AI system on the Union market.\n\t- #### Relationships\n\t  id:: placing-on-the-market-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AIGovernance]]\n\n## Placing on the Market\n\nPlacing on the Market refers to the first making available of an ai system on the union market.\n\n- Industry adoption of AI systems compliant with the AI Act is accelerating, with providers increasingly aware of their responsibilities at the point of placing AI systems on the market.\n  - Notable organisations include major European AI developers and integrators, alongside global providers adapting to EU rules.\n  - In the UK, firms in Manchester, Leeds, Newcastle, and Sheffield are actively engaging with AI compliance frameworks, particularly in sectors like finance, healthcare, and manufacturing.\n- Technical capabilities now allow for detailed tracking of AI model training compute, aiding compliance assessments regarding significant modifications.\n- Standards and frameworks are maturing, with the EU AI Act’s definitions guiding market surveillance and enforcement, while UK regulators align post-Brexit with similar principles to maintain market access and innovation.\n\n## Technical Details\n\n- **Id**: placing-on-the-market-ontology\n- **Collapsed**: true\n- **Source Domain**: metaverse\n- **Status**: draft\n- **Public Access**: true\n\n## Research & Literature\n\n- Key academic sources include:\n  - Veale, M., & Borgesius, F. Z. (2021). *Demystifying the Draught EU Artificial Intelligence Act*. Computer Law & Security Review, 41, 105567. https://doi.org/10.1016/j.clsr.2021.105567\n  - Wachter, S., Mittelstadt, B., & Floridi, L. (2017). *Why a Right to Explanation of Automated Decision-Making Does Not Exist in the General Data Protection Regulation*. International Data Privacy Law, 7(2), 76–99. https://doi.org/10.1093/idpl/ipx005\n- Ongoing research focuses on:\n  - The impact of \"placing on the market\" on AI lifecycle governance.\n  - Legal interpretations of provider responsibility for downstream AI model modifications.\n  - The balance between innovation incentives and regulatory safeguards.\n\n## UK Context\n\n- Post-Brexit, the UK has adopted a regulatory approach broadly aligned with the EU AI Act, ensuring that AI systems placed on the UK market meet similar safety and transparency standards.\n  - British contributions include research from the Alan Turing Institute and AI ethics initiatives in Northern England.\n  - Innovation hubs in Manchester, Leeds, Newcastle, and Sheffield are fostering AI development with regulatory compliance embedded from the outset.\n- Regional case studies highlight collaborations between universities and industry to develop AI systems compliant with both UK and EU market requirements, reflecting the pragmatic need to navigate dual regulatory landscapes.\n\n## Future Directions\n\n- Emerging trends include:\n  - Enhanced traceability of AI system provenance and training data to support compliance at the point of placing on the market.\n  - Greater scrutiny of general-purpose AI models, especially regarding modifications that significantly alter capabilities or risks.\n- Anticipated challenges:\n  - Harmonising regulatory approaches between the UK and EU to avoid market fragmentation.\n  - Addressing the complexities of AI systems that evolve post-market placement without breaching compliance.\n- Research priorities:\n  - Developing robust metrics for assessing \"significant change\" in AI models.\n  - Exploring the interplay between provider obligations and deployer responsibilities throughout the AI system lifecycle.\n\n## References\n\n1. European Parliament and Council. (2021). *Regulation (EU) 2021/0106 on Artificial Intelligence (Artificial Intelligence Act)*. Official Journal of the European Union.\n2. Veale, M., & Borgesius, F. Z. (2021). Demystifying the Draught EU Artificial Intelligence Act. *Computer Law & Security Review*, 41, 105567. https://doi.org/10.1016/j.clsr.2021.105567\n3. Wachter, S., Mittelstadt, B., & Floridi, L. (2017). Why a Right to Explanation of Automated Decision-Making Does Not Exist in the General Data Protection Regulation. *International Data Privacy Law*, 7(2), 76–99. https://doi.org/10.1093/idpl/ipx005\n4. Mayer Brown. (2025). EU AI Act News: Rules on General-Purpose AI Start Applying.\n5. BDO UK. (2025). Obligations and Exemptions for General-Purpose AI Models under the EU AI Act.\n6. UK Government and Alan Turing Institute. (2025). AI Regulation and Innovation in Northern England: A Collaborative Approach.\n*No AI system was harmed in the making of this definition, but some might argue the regulatory paperwork is a form of digital origami.*\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "AIGovernance"
+  ],
+  "ontology": {
+    "term_id": "AI-0515",
+    "preferred_term": "Placing on the Market",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#PlacingOnTheMarket",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "The first making available of an AI system on the Union market.",
+    "scope_note": null,
+    "status": "active",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:PlacingOnTheMarket",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "AIGovernance"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

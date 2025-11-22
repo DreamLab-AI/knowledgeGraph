@@ -1,0 +1,64 @@
+{
+  "id": "GPT",
+  "title": "GPT",
+  "content": "- ### OntologyBlock\n  id:: gpt-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0212\n\t- preferred-term:: GPT\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: mv:GPT\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n### Domain & Architecture\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- maturity:: draft\n\n### Relationships\n- is-subclass-of:: [[PreTrainedLanguageModel]]\n\n## Characteristics\n\n- **Decoder-Only Architecture**: Uses only transformer decoder with causal masking\n- **Autoregressive Generation**: Predicts next token sequentially\n- **Generative Pre-training**: Pre-trains on next-token prediction\n- **Transfer Learning**: Fine-tunes for downstream tasks\n\n## Academic Foundations\n\n**Primary Source**: Radford et al., \"Improving Language Understanding by Generative Pre-Training\" (2018)\n\n**Key Innovation**: Demonstrated that large gains on diverse NLP tasks can be realised by generative pre-training followed by discriminative fine-tuning.\n\n## Technical Context\n\nGPT demonstrates the effectiveness of unsupervised pre-training using the language modelling objective. The model learns rich representations that transfer well to various NLP tasks with minimal task-specific modifications.\n\n## Ontological Relationships\n\n- **Broader Term**: Pre-trained Language Model\n- **Related Terms**: GPT-2, GPT-3, GPT-4, Autoregressive Language Model\n- **Architecture Type**: Decoder-Only Transformer\n\n## Usage Context\n\n\"GPT demonstrates that large gains on diverse NLP tasks can be realised by generative pre-training followed by discriminative fine-tuning.\"\n\n## OWL Functional Syntax\n\n```clojure\n(Declaration (Class :GPT))\n(AnnotationAssertion rdfs:label :GPT \"GPT\"@en)\n(AnnotationAssertion :fullName :GPT \"Generative Pre-trained Transformer\"@en)\n(AnnotationAssertion rdfs:comment :GPT\n  \"Autoregressive language model using transformer decoder with generative pre-training.\"@en)\n(AnnotationAssertion :hasSource :GPT\n  \"Radford et al., 'Improving Language Understanding by Generative Pre-Training' (2018)\"@en)\n\n;; Taxonomic relationships\n(SubClassOf :GPT :PreTrainedLanguageModel)\n(SubClassOf :GPT :DecoderOnlyModel)\n(SubClassOf :GPT :AutoregressiveLanguageModel)\n(SubClassOf :GPT :TransformerArchitecture)\n\n;; Architectural characteristics\n(SubClassOf :GPT\n  (ObjectAllValuesFrom :usesArchitectureType :DecoderOnly))\n(SubClassOf :GPT\n  (ObjectAllValuesFrom :usesAttentionType :CausalAttention))\n(SubClassOf :GPT\n  (ObjectAllValuesFrom :implementsMechanism :CausalAttention))\n\n;; Training objective\n(Declaration (Class :NextTokenPrediction))\n(SubClassOf :GPT\n  (ObjectSomeValuesFrom :trainedWith :NextTokenPrediction))\n(SubClassOf :GPT\n  (ObjectSomeValuesFrom :trainedWith :LanguageModelling))\n\n;; Generation characteristics\n(DataPropertyAssertion :isAutoregressive :GPT \"true\"^^xsd:boolean)\n(DataPropertyAssertion :generatesLeftToRight :GPT \"true\"^^xsd:boolean)\n(DataPropertyAssertion :supportsTextGeneration :GPT \"true\"^^xsd:boolean)\n\n;; Training paradigm\n(SubClassOf :GPT\n  (ObjectSomeValuesFrom :follows :GenerativePreTraining))\n(SubClassOf :GPT\n  (ObjectSomeValuesFrom :follows :DiscriminativeFineTuning))\n\n;; Model configuration\n(DataPropertyAssertion :hasLayerCount :GPT \"12\"^^xsd:integer)\n(DataPropertyAssertion :hasHiddenDimension :GPT \"768\"^^xsd:integer)\n(DataPropertyAssertion :hasAttentionHeads :GPT \"12\"^^xsd:integer)\n(DataPropertyAssertion :hasContextLength :GPT \"512\"^^xsd:integer)\n\n;; Successors\n(AnnotationAssertion :hasSuccessor :GPT :GPT2)\n(AnnotationAssertion :hasSuccessor :GPT :GPT3)\n(AnnotationAssertion :hasSuccessor :GPT :GPT4)\n\n;; Key innovation\n(AnnotationAssertion :keyInnovation :GPT\n  \"Demonstrated effectiveness of generative pre-training for transfer learning in NLP\"@en)\n\n;; Transfer learning capability\n(DataPropertyAssertion :supportsTransferLearning :GPT \"true\"^^xsd:boolean)\n(DataPropertyAssertion :requiresTaskSpecificFineTuning :GPT \"true\"^^xsd:boolean)\n```\n\n## References\n\n- Radford, A., et al. (2018). \"Improving Language Understanding by Generative Pre-Training\". OpenAI\n\n---\n\n*Ontology Term managed by AI-Grounded Ontology Working Group*\n*UK English Spelling Standards Applied*\n\t- maturity:: draft\n\t- owl:class:: mv:GPT\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]",
+  "backlinks": [
+    "GPT-4",
+    "AI Model Card",
+    "GPT-3",
+    "Knowledge Distillation for Edge (AI-0443)",
+    "GPT-2"
+  ],
+  "wiki_links": [
+    "MetaverseDomain",
+    "PreTrainedLanguageModel"
+  ],
+  "ontology": {
+    "term_id": "AI-0212",
+    "preferred_term": "GPT",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#GPT",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:GPT",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain",
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

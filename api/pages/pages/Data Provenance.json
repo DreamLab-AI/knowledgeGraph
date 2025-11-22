@@ -1,0 +1,124 @@
+{
+  "id": "Data Provenance",
+  "title": "Data Provenance",
+  "content": "- ### OntologyBlock\n  id:: data-provenance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20202\n\t- preferred-term:: Data Provenance\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A continuous process of recording and tracking the origin, lineage, and transformation history of data objects, enabling traceability, validation of data quality, and verification of authenticity throughout the data lifecycle.\n\t- source:: [[W3C PROV-O]], [[ETSI GR ARF 010]]\n\t- maturity:: mature\n\t- owl:class:: mv:DataProvenance\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: mv:VirtualProcess\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]]\n\t- implementedInLayer:: [[Data Layer]], [[Middleware Layer]]\n\t- #### Relationships\n\t  id:: data-provenance-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Trust Framework]]\n\t\t- is-part-of:: [[Data Management]]\n\t\t- is-part-of:: [[Data Governance]]\n\t\t- has-part:: [[Signature Validator]]\n\t\t- has-part:: [[Timestamp Service]]\n\t\t- has-part:: [[Lineage Tracker]]\n\t\t- has-part:: [[Provenance Recorder]]\n\t\t- has-part:: [[Audit Trail]]\n\t\t- requires:: [[Timestamp Authority]]\n\t\t- requires:: [[Digital Signature]]\n\t\t- requires:: [[Metadata]]\n\t\t- enables:: [[Data Quality Assessment]]\n\t\t- enables:: [[Reproducibility]]\n\t\t- enables:: [[Compliance Audit]]\n\t\t- enables:: [[Attribution]]\n\t\t- enables:: [[Provenance Verification]]\n\t\t- is-dependency-of:: [[Compliance Audit Trail]]\n\t\t- is-required-by:: [[Algorithmic Transparency Index]]\n\t\t- depends-on:: [[Identity Management]]\n\t\t- depends-on:: [[Event Logging]]\n\t\t- depends-on:: [[Blockchain]]\n\n## Academic Context\n\n- Data provenance is the metadata documenting the origin, history, and transformations of data objects throughout their lifecycle.\n  - It provides a foundational basis for data integrity, traceability, and validation in data management and governance.\n  - Academic foundations trace back to database theory, information systems, and digital forensics, where provenance supports reproducibility and auditability.\n  - Distinct from but related to data lineage, provenance emphasises the comprehensive history including source, transformations, and custodianship, rather than just data flow.\n\n## Current Landscape (2025)\n\n- Industry adoption of data provenance has expanded significantly, driven by regulatory compliance (e.g., GDPR, UK Data Protection Act 2018), cybersecurity needs, and AI governance.\n  - Organisations increasingly integrate provenance tracking into data platforms to ensure transparency, quality assurance, and audit readiness.\n  - Leading platforms include Actian Data Intelligence, Acceldata, and bespoke provenance solutions embedded in data lakes and AI pipelines.\n- In the UK, provenance supports compliance with the UK GDPR and sector-specific regulations, such as NHS data governance.\n- North England hubs such as Manchester, Leeds, Newcastle, and Sheffield host growing data science and AI clusters where provenance is integral to research data management and industrial applications.\n- Technical capabilities include automated capture of provenance metadata, cryptographic verification, and integration with data governance frameworks.\n- Limitations remain in standardisation, cross-system interoperability, and provenance data volume management.\n- Standards and frameworks evolving include W3C PROV, ISO/IEC 19944 (Cloud Data Provenance), and emerging AI-specific provenance guidelines.\n\n## Research & Literature\n\n- Key academic papers:\n  - Buneman, P., Khanna, S., & Tan, W.-C. (2001). \"Why and Where: A Characterization of Data Provenance.\" *International Conference on Database Theory*. DOI: 10.1007/3-540-44503-X_20\n  - Cheney, J., et al. (2009). \"Provenance in Databases: Why, How, and Where.\" *Foundations and Trends® in Databases*, 1(4), 379–474. DOI: 10.1561/1900000006\n  - Simmhan, Y. L., Plale, B., & Gannon, D. (2005). \"A Survey of Data Provenance Techniques.\" *ACM SIGMOD Record*, 34(3), 31–36. DOI: 10.1145/1084805.1084812\n- Recent research focuses on provenance in AI datasets, addressing transparency and bias mitigation.\n- Ongoing directions include scalable provenance capture, privacy-preserving provenance, and provenance-aware AI governance.\n\n## UK Context\n\n- The UK has contributed to provenance research through institutions such as the University of Manchester and University of Leeds, focusing on provenance in big data and AI ethics.\n- North England innovation hubs integrate provenance in smart city projects, healthcare data management (e.g., NHS trusts in Newcastle and Sheffield), and financial services.\n- Regional case studies include provenance-enabled data sharing platforms for public health surveillance and supply chain transparency in manufacturing sectors around Leeds and Manchester.\n- The UK government’s National Data Strategy emphasises trustworthy data ecosystems, with provenance as a key enabler.\n\n## Future Directions\n\n- Emerging trends:\n  - Integration of provenance with AI model governance to ensure explainability and accountability.\n  - Use of blockchain and distributed ledger technologies to enhance provenance immutability.\n  - Automated, real-time provenance capture in streaming and IoT data environments.\n- Anticipated challenges:\n  - Balancing provenance detail with data privacy and security.\n  - Standardising provenance metadata across diverse systems and sectors.\n  - Managing provenance data scale without overwhelming storage and processing resources.\n- Research priorities:\n  - Developing provenance frameworks tailored for AI and machine learning.\n  - Enhancing provenance interoperability and usability for non-technical stakeholders.\n  - Investigating provenance’s role in regulatory compliance and ethical data use.\n\n## References\n\n1. Buneman, P., Khanna, S., & Tan, W.-C. (2001). Why and Where: A Characterization of Data Provenance. *International Conference on Database Theory*. DOI: 10.1007/3-540-44503-X_20\n2. Cheney, J., et al. (2009). Provenance in Databases: Why, How, and Where. *Foundations and Trends® in Databases*, 1(4), 379–474. DOI: 10.1561/1900000006\n3. Simmhan, Y. L., Plale, B., & Gannon, D. (2005). A Survey of Data Provenance Techniques. *ACM SIGMOD Record*, 34(3), 31–36. DOI: 10.1145/1084805.1084812\n4. Data Foundation (2025). Data Provenance in AI. *Data Foundation Reports*, September 2025.\n5. W3C PROV Working Group. (2013). PROV-Overview: An Overview of the PROV Family of Documents. W3C Recommendation.\n6. UK Information Commissioner's Office. (2018). Guide to the UK General Data Protection Regulation (UK GDPR).\n7. National Institute of Standards and Technology (NIST). (n.d.). Glossary: Data Provenance.\n\n*If data provenance were a detective, it would never lose its trail — a reassuring thought in a world where data sometimes behaves like a mischievous teenager.*\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Audit Trail",
+    "Provenance Verification",
+    "Algorithmic Transparency Index",
+    "Compliance Audit Trail"
+  ],
+  "wiki_links": [
+    "Provenance Verification",
+    "Data Governance",
+    "Digital Signature",
+    "Middleware Layer",
+    "Data Management",
+    "Event Logging",
+    "Blockchain",
+    "Attribution",
+    "Metadata",
+    "Data Layer",
+    "Compliance Audit",
+    "Provenance Recorder",
+    "Audit Trail",
+    "InfrastructureDomain",
+    "Signature Validator",
+    "Timestamp Service",
+    "Identity Management",
+    "Timestamp Authority",
+    "Reproducibility",
+    "W3C PROV-O",
+    "Trust Framework",
+    "Lineage Tracker",
+    "Compliance Audit Trail",
+    "Algorithmic Transparency Index",
+    "ETSI GR ARF 010",
+    "Data Quality Assessment"
+  ],
+  "ontology": {
+    "term_id": "20202",
+    "preferred_term": "Data Provenance",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#DataProvenance",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "A continuous process of recording and tracking the origin, lineage, and transformation history of data objects, enabling traceability, validation of data quality, and verification of authenticity throughout the data lifecycle.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:DataProvenance",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Process",
+    "owl_inferred_class": "mv:VirtualProcess",
+    "is_subclass_of": [],
+    "has_part": [
+      "Signature Validator",
+      "Timestamp Service",
+      "Lineage Tracker",
+      "Provenance Recorder",
+      "Audit Trail"
+    ],
+    "is_part_of": [
+      "Trust Framework",
+      "Data Management",
+      "Data Governance"
+    ],
+    "requires": [
+      "Timestamp Authority",
+      "Digital Signature",
+      "Metadata"
+    ],
+    "depends_on": [
+      "Identity Management",
+      "Event Logging",
+      "Blockchain"
+    ],
+    "enables": [
+      "Data Quality Assessment",
+      "Reproducibility",
+      "Compliance Audit",
+      "Attribution",
+      "Provenance Verification"
+    ],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "InfrastructureDomain"
+    ],
+    "implemented_in_layer": [
+      "Data Layer",
+      "Middleware Layer"
+    ],
+    "source": [
+      "W3C PROV-O",
+      "ETSI GR ARF 010"
+    ],
+    "other_relationships": {
+      "is-dependency-of": [
+        "Compliance Audit Trail"
+      ],
+      "is-required-by": [
+        "Algorithmic Transparency Index"
+      ]
+    },
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20202' doesn't match domain 'mv' (expected MV-)"
+      ]
+    }
+  }
+}

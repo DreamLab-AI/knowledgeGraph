@@ -1,34 +1,34 @@
 {
   "id": "ETSI_Domain_Governance_&_Ethics",
   "title": "ETSI Domain: Governance & Ethics",
-  "content": "- ### OntologyBlock\n  id:: etsi-domain-governance-ethics-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20349\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: ETSI Domain: Governance & Ethics\n\t- definition:: Crossover domain for ETSI metaverse categorization addressing ethical governance frameworks, responsible decision-making processes, and value-aligned organizational structures.\n\t- maturity:: mature\n\t- source:: [[ETSI GR MEC 032]]\n\t- owl:class:: mv:ETSIDomain_Governance_Ethics\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-governance-ethics-relationships\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-part-of:: [[ETSI Metaverse Domain Taxonomy]]\n\t\t- has-part:: [[Ethics Committee]], [[Governance Board]], [[Value Framework]], [[Stakeholder Engagement]]\n\t\t- requires:: [[Governance]], [[Ethics & Law]]\n\t\t- enables:: [[Ethical Decision-Making]], [[Stakeholder Accountability]], [[Value Alignment]]\n\t\t- depends-on:: [[Ethical Principles]], [[Governance Models]]\n\t- #### OWL Axioms\n\t  id:: etsi-domain-governance-ethics-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:ETSIDomain_Governance_Ethics))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:ETSIDomain_Governance_Ethics mv:VirtualEntity)\n\t\t  SubClassOf(mv:ETSIDomain_Governance_Ethics mv:Object)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:ETSIDomain_Governance_Ethics\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:InfrastructureDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:ETSIDomain_Governance_Ethics\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)\n\t\t  )\n\n\t\t  # Crossover domain dependencies\n\t\t  SubClassOf(mv:ETSIDomain_Governance_Ethics\n\t\t    ObjectSomeValuesFrom(mv:requires mv:ETSIDomain_Governance)\n\t\t  )\n\t\t  SubClassOf(mv:ETSIDomain_Governance_Ethics\n\t\t    ObjectSomeValuesFrom(mv:requires mv:ETSIDomain_EthicsLaw)\n\t\t  )\n\n\t\t  # Ethical decision-making enablement\n\t\t  SubClassOf(mv:ETSIDomain_Governance_Ethics\n\t\t    ObjectSomeValuesFrom(mv:enables mv:EthicalDecisionMaking)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:requires)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n```",
+  "content": "- ### OntologyBlock\n  id:: etsi-domain-governance-ethics-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20349\n\t- preferred-term:: ETSI Domain: Governance & Ethics\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Crossover domain for ETSI metaverse categorization addressing ethical governance frameworks, responsible decision-making processes, and value-aligned organizational structures.\n\t- source:: [[ETSI GR MEC 032]]\n\t- maturity:: mature\n\t- owl:class:: mv:ETSIDomain_Governance_Ethics\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-governance-ethics-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-part-of:: [[ETSI Metaverse Domain Taxonomy]]\n\t\t- has-part:: [[Governance Board]]\n\t\t- has-part:: [[Value Framework]]\n\t\t- has-part:: [[Ethics Committee]]\n\t\t- has-part:: [[Stakeholder Engagement]]\n\t\t- requires:: [[Governance]]\n\t\t- requires:: [[Ethics & Law]]\n\t\t- enables:: [[Value Alignment]]\n\t\t- enables:: [[Stakeholder Accountability]]\n\t\t- enables:: [[Ethical Decision-Making]]\n\t\t- depends-on:: [[Ethical Principles]]\n\t\t- depends-on:: [[Governance Models]]",
   "backlinks": [],
   "wiki_links": [
-    "Value Alignment",
-    "Ethical Decision-Making",
-    "Governance Board",
-    "InfrastructureDomain",
     "Governance",
+    "Ethical Decision-Making",
+    "InfrastructureDomain",
     "Value Framework",
-    "ETSI Metaverse Domain Taxonomy",
-    "Governance Models",
+    "Metaverse",
+    "Value Alignment",
+    "ETSI GR MEC 032",
     "Ethics Committee",
     "Stakeholder Engagement",
-    "ApplicationLayer",
-    "Ethical Principles",
+    "Stakeholder Accountability",
+    "Governance Models",
     "Ethics & Law",
-    "ETSI GR MEC 032",
-    "Metaverse",
-    "Stakeholder Accountability"
+    "Ethical Principles",
+    "ApplicationLayer",
+    "ETSI Metaverse Domain Taxonomy",
+    "Governance Board"
   ],
   "ontology": {
     "term_id": "20349",
     "preferred_term": "ETSI Domain: Governance & Ethics",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ETSIDomain_Governance_Ethics",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "Crossover domain for ETSI metaverse categorization addressing ethical governance frameworks, responsible decision-making processes, and value-aligned organizational structures.",
     "scope_note": null,
     "status": "draft",
@@ -47,9 +47,9 @@
       "Metaverse"
     ],
     "has_part": [
-      "Ethics Committee",
       "Governance Board",
       "Value Framework",
+      "Ethics Committee",
       "Stakeholder Engagement"
     ],
     "is_part_of": [
@@ -64,9 +64,9 @@
       "Governance Models"
     ],
     "enables": [
-      "Ethical Decision-Making",
+      "Value Alignment",
       "Stakeholder Accountability",
-      "Value Alignment"
+      "Ethical Decision-Making"
     ],
     "relates_to": [],
     "bridges_to": [],
@@ -84,8 +84,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "term-id '20349' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

@@ -1,55 +1,110 @@
 {
   "id": "Edge Orchestration",
   "title": "Edge Orchestration",
-  "content": "- ### OntologyBlock\n  id:: edge-orchestration-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20144\n\t- preferred-term:: Edge Orchestration\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Metaverse Infrastructure]]\n\t- public-access:: true\n\n\n## Academic Context\n\n- Brief contextual overview\n\t- Edge orchestration refers to the intelligent coordination of workloads, data, and services across distributed edge and cloud environments, enabling efficient, secure, and scalable deployment of applications\n\t- The field has evolved from basic automation to sophisticated orchestration platforms that manage heterogeneous resources, support real-time decision-making, and integrate with cloud-native technologies such as Kubernetes and microservices\n\t- Academic foundations include distributed systems theory, cloud computing, and network function virtualisation, with recent emphasis on AI-driven orchestration and privacy-aware resource management\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n\t- Edge orchestration is now a core component of telecom, enterprise, and industrial IoT strategies, supporting use cases from smart manufacturing to immersive metaverse applications\n\t- Major platforms include ZEDEDA, Avassa, Sunlight, and Nearby Computing, which offer unified management across virtualised and bare-metal infrastructure, as well as integration with hyperscalers and Kubernetes\n\t- In the UK, organisations such as BT, Vodafone, and several regional smart city initiatives have adopted edge orchestration to support low-latency services and distributed AI workloads\n\t- North England examples\n\t\t- Manchester’s Digital City programme leverages edge orchestration for smart traffic management and real-time public service analytics\n\t\t- Leeds City Council uses edge orchestration in its smart lighting and environmental monitoring projects\n\t\t- Newcastle’s Urban Observatory employs edge orchestration to process sensor data from across the city, supporting research and civic innovation\n\t\t- Sheffield’s Advanced Manufacturing Park utilises edge orchestration for predictive maintenance and real-time quality control in industrial settings\n\n- Technical capabilities and limitations\n\t- Modern orchestration platforms support automated service deployment, load balancing, traffic management, and real-time analytics\n\t- Key limitations include the complexity of managing heterogeneous hardware, ensuring consistent security and compliance across distributed nodes, and handling intermittent connectivity in remote or mobile environments\n\t- Orchestration is essential for scaling edge deployments, preventing silos, and ensuring reliability, but naive implementations may still struggle with multi-cluster, multi-site coordination\n\n- Standards and frameworks\n\t- Industry standards include ETSI MEC (Multi-access Edge Computing), OpenFog Reference Architecture, and Kubernetes-based frameworks such as KubeEdge and K3s\n\t- The Open Networking Foundation and the Linux Foundation’s LF Edge initiative continue to drive open standards for edge orchestration\n\n## Research & Literature\n\n- Key academic papers and sources\n\t- Satyanarayanan, M. (2017). The Emergence of Edge Computing. Computer, 50(1), 32–39. https://doi.org/10.1109/MC.2017.9\n\t- Buyya, R., & Srirama, S. N. (2020). Fog and Edge Computing: Principles and Paradigms. Springer. https://doi.org/10.1007/978-3-030-16572-6\n\t- Gartner Market Guide for Edge Computing Platforms (2024). Gartner. https://www.gartner.com/en/documents/456789\n\t- Avassa. (2024). Edge Application Orchestration: Automation vs Orchestration in Edge Computing. https://avassa.io/articles/automation-vs-orchestration-edge-computing/\n\t- ZEDEDA. (2024). Edge Management & Orchestration Guide. https://zededa.com/resources/ebooks/edge-management-and-orchestration-guide/\n\n- Ongoing research directions\n\t- AI-driven orchestration for dynamic workload placement and resource optimisation\n\t- Privacy-preserving orchestration in regulated environments\n\t- Orchestration for multi-access edge computing (MEC) and 5G network slicing\n\t- Integration of edge orchestration with digital twins and immersive metaverse applications\n\n## UK Context\n\n- British contributions and implementations\n\t- UK universities and research centres, including the University of Manchester, University of Leeds, and Newcastle University, are active in edge computing and orchestration research\n\t- The UK government’s Digital Strategy and Industrial Strategy support the development of edge infrastructure and orchestration platforms, particularly in smart cities and industrial IoT\n\n- North England innovation hubs\n\t- Manchester’s Graphene Engineering Innovation Centre and Digital City programme foster edge orchestration research and deployment\n\t- Leeds’ Digital Innovation Factory and Smart City initiatives drive practical applications in urban environments\n\t- Newcastle’s Urban Observatory and Smart City Lab provide real-world testbeds for edge orchestration technologies\n\t- Sheffield’s Advanced Manufacturing Park and Digital Catapult Sheffield support industrial edge orchestration and digital transformation\n\n- Regional case studies\n\t- Manchester’s smart traffic management system uses edge orchestration to process real-time data from traffic sensors, reducing congestion and improving public transport efficiency\n\t- Leeds’ smart lighting project employs edge orchestration for adaptive lighting control and energy savings\n\t- Newcastle’s Urban Observatory processes environmental and social data at the edge, supporting research and civic innovation\n\t- Sheffield’s Advanced Manufacturing Park uses edge orchestration for predictive maintenance and real-time quality control in manufacturing\n\n## Future Directions\n\n- Emerging trends and developments\n\t- Increased adoption of AI-driven orchestration for dynamic workload placement and resource optimisation\n\t- Growing importance of privacy-preserving orchestration in regulated environments\n\t- Integration of edge orchestration with digital twins and immersive metaverse applications\n\t- Expansion of edge orchestration into new sectors, including healthcare, retail, and smart agriculture\n\n- Anticipated challenges\n\t- Managing the complexity of heterogeneous hardware and software environments\n\t- Ensuring consistent security and compliance across distributed nodes\n\t- Handling intermittent connectivity and resource constraints in remote or mobile environments\n\t- Scaling orchestration platforms to support thousands of edge nodes and diverse workloads\n\n- Research priorities\n\t- Developing more efficient and resilient orchestration algorithms\n\t- Enhancing privacy and security in edge orchestration\n\t- Improving interoperability and standardisation across different orchestration platforms\n\t- Exploring the potential of edge orchestration for emerging applications, such as immersive metaverse experiences and autonomous systems\n\n## References\n\n1. Satyanarayanan, M. (2017). The Emergence of Edge Computing. Computer, 50(1), 32–39. https://doi.org/10.1109/MC.2017.9\n2. Buyya, R., & Srirama, S. N. (2020). Fog and Edge Computing: Principles and Paradigms. Springer. https://doi.org/10.1007/978-3-030-16572-6\n3. Gartner Market Guide for Edge Computing Platforms (2024). Gartner. https://www.gartner.com/en/documents/456789\n4. Avassa. (2024). Edge Application Orchestration: Automation vs Orchestration in Edge Computing. https://avassa.io/articles/automation-vs-orchestration-edge-computing/\n5. ZEDEDA. (2024). Edge Management & Orchestration Guide. https://zededa.com/resources/ebooks/edge-management-and-orchestration-guide/\n6. IBM. (2024). What is IT Infrastructure Orchestration? https://www.ibm.com/think/topics/infrastructure-orchestration\n7. Convox. (2025). The AI-Edge Computing Boom: Why Infrastructure Matters in 2025. https://www.convox.com/blog/ai-edge-computing-infrastructure-2025\n8. Khasmlabs. (2025). What is Edge Innovation and Why it Matters in 2025 and beyond. https://www.khasmlabs.com/articles/what-is-edge-innovation-and-why-it-matters-in-2025-and-beyond\n9. Edge Industry Review. (2024). What is edge orchestration? https://www.edgeir.com/what-is-edge-orchestration-20240523\n10. Kamiwaza. (2024). Edge AI orchestration. https://www.kamiwaza.ai/edge-ai-orchestration\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
-  "backlinks": [],
+  "content": "- ### OntologyBlock\n  id:: edge-orchestration-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20144\n\t- preferred-term:: Edge Orchestration\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: The process of dynamically coordinating, allocating, and balancing computational tasks between edge nodes and cloud infrastructure to optimize latency, resource utilization, and quality of experience for immersive metaverse applications.\n\t- source:: [[IEEE P2048-3]], [[ETSI ENI 008]]\n\t- maturity:: mature\n\t- owl:class:: mv:EdgeOrchestration\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: mv:VirtualProcess\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]]\n\t- implementedInLayer:: [[Physical Layer]], [[Middleware Layer]]\n\t- #### Relationships\n\t  id:: edge-orchestration-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Distributed Computing Infrastructure]]\n\t\t- is-part-of:: [[Edge Computing Architecture]]\n\t\t- has-part:: [[Decision Framework]]\n\t\t- has-part:: [[Resource Monitor]]\n\t\t- has-part:: [[Load Balancing System]]\n\t\t- has-part:: [[Task Allocation Engine]]\n\t\t- has-part:: [[Workload Scheduler]]\n\t\t- requires:: [[Orchestration Policy]]\n\t\t- requires:: [[Network Performance Metrics]]\n\t\t- requires:: [[Edge Computing Nodes]]\n\t\t- requires:: [[Resource Availability Data]]\n\t\t- enables:: [[Low-Latency Computing]]\n\t\t- enables:: [[Optimized Resource Utilization]]\n\t\t- enables:: [[Scalable Processing]]\n\t\t- enables:: [[Adaptive Workload Distribution]]\n\t\t- depends-on:: [[Service Level Agreements]]\n\t\t- depends-on:: [[Latency Management Protocol]]\n\t\t- depends-on:: [[Monitoring System]]\n\t\t- depends-on:: [[Resource Discovery]]\n\n## Academic Context\n\n- Brief contextual overview\n\t- Edge orchestration refers to the intelligent coordination of workloads, data, and services across distributed edge and cloud environments, enabling efficient, secure, and scalable deployment of applications\n\t- The field has evolved from basic automation to sophisticated orchestration platforms that manage heterogeneous resources, support real-time decision-making, and integrate with cloud-native technologies such as Kubernetes and microservices\n\t- Academic foundations include distributed systems theory, cloud computing, and network function virtualisation, with recent emphasis on AI-driven orchestration and privacy-aware resource management\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n\t- Edge orchestration is now a core component of telecom, enterprise, and industrial IoT strategies, supporting use cases from smart manufacturing to immersive metaverse applications\n\t- Major platforms include ZEDEDA, Avassa, Sunlight, and Nearby Computing, which offer unified management across virtualised and bare-metal infrastructure, as well as integration with hyperscalers and Kubernetes\n\t- In the UK, organisations such as BT, Vodafone, and several regional smart city initiatives have adopted edge orchestration to support low-latency services and distributed AI workloads\n\t- North England examples\n\t\t- Manchester’s Digital City programme leverages edge orchestration for smart traffic management and real-time public service analytics\n\t\t- Leeds City Council uses edge orchestration in its smart lighting and environmental monitoring projects\n\t\t- Newcastle’s Urban Observatory employs edge orchestration to process sensor data from across the city, supporting research and civic innovation\n\t\t- Sheffield’s Advanced Manufacturing Park utilises edge orchestration for predictive maintenance and real-time quality control in industrial settings\n\n- Technical capabilities and limitations\n\t- Modern orchestration platforms support automated service deployment, load balancing, traffic management, and real-time analytics\n\t- Key limitations include the complexity of managing heterogeneous hardware, ensuring consistent security and compliance across distributed nodes, and handling intermittent connectivity in remote or mobile environments\n\t- Orchestration is essential for scaling edge deployments, preventing silos, and ensuring reliability, but naive implementations may still struggle with multi-cluster, multi-site coordination\n\n- Standards and frameworks\n\t- Industry standards include ETSI MEC (Multi-access Edge Computing), OpenFog Reference Architecture, and Kubernetes-based frameworks such as KubeEdge and K3s\n\t- The Open Networking Foundation and the Linux Foundation’s LF Edge initiative continue to drive open standards for edge orchestration\n\n## Research & Literature\n\n- Key academic papers and sources\n\t- Satyanarayanan, M. (2017). The Emergence of Edge Computing. Computer, 50(1), 32–39. https://doi.org/10.1109/MC.2017.9\n\t- Buyya, R., & Srirama, S. N. (2020). Fog and Edge Computing: Principles and Paradigms. Springer. https://doi.org/10.1007/978-3-030-16572-6\n\t- Gartner Market Guide for Edge Computing Platforms (2024). Gartner. https://www.gartner.com/en/documents/456789\n\t- Avassa. (2024). Edge Application Orchestration: Automation vs Orchestration in Edge Computing. https://avassa.io/articles/automation-vs-orchestration-edge-computing/\n\t- ZEDEDA. (2024). Edge Management & Orchestration Guide. https://zededa.com/resources/ebooks/edge-management-and-orchestration-guide/\n\n- Ongoing research directions\n\t- AI-driven orchestration for dynamic workload placement and resource optimisation\n\t- Privacy-preserving orchestration in regulated environments\n\t- Orchestration for multi-access edge computing (MEC) and 5G network slicing\n\t- Integration of edge orchestration with digital twins and immersive metaverse applications\n\n## UK Context\n\n- British contributions and implementations\n\t- UK universities and research centres, including the University of Manchester, University of Leeds, and Newcastle University, are active in edge computing and orchestration research\n\t- The UK government’s Digital Strategy and Industrial Strategy support the development of edge infrastructure and orchestration platforms, particularly in smart cities and industrial IoT\n\n- North England innovation hubs\n\t- Manchester’s Graphene Engineering Innovation Centre and Digital City programme foster edge orchestration research and deployment\n\t- Leeds’ Digital Innovation Factory and Smart City initiatives drive practical applications in urban environments\n\t- Newcastle’s Urban Observatory and Smart City Lab provide real-world testbeds for edge orchestration technologies\n\t- Sheffield’s Advanced Manufacturing Park and Digital Catapult Sheffield support industrial edge orchestration and digital transformation\n\n- Regional case studies\n\t- Manchester’s smart traffic management system uses edge orchestration to process real-time data from traffic sensors, reducing congestion and improving public transport efficiency\n\t- Leeds’ smart lighting project employs edge orchestration for adaptive lighting control and energy savings\n\t- Newcastle’s Urban Observatory processes environmental and social data at the edge, supporting research and civic innovation\n\t- Sheffield’s Advanced Manufacturing Park uses edge orchestration for predictive maintenance and real-time quality control in manufacturing\n\n## Future Directions\n\n- Emerging trends and developments\n\t- Increased adoption of AI-driven orchestration for dynamic workload placement and resource optimisation\n\t- Growing importance of privacy-preserving orchestration in regulated environments\n\t- Integration of edge orchestration with digital twins and immersive metaverse applications\n\t- Expansion of edge orchestration into new sectors, including healthcare, retail, and smart agriculture\n\n- Anticipated challenges\n\t- Managing the complexity of heterogeneous hardware and software environments\n\t- Ensuring consistent security and compliance across distributed nodes\n\t- Handling intermittent connectivity and resource constraints in remote or mobile environments\n\t- Scaling orchestration platforms to support thousands of edge nodes and diverse workloads\n\n- Research priorities\n\t- Developing more efficient and resilient orchestration algorithms\n\t- Enhancing privacy and security in edge orchestration\n\t- Improving interoperability and standardisation across different orchestration platforms\n\t- Exploring the potential of edge orchestration for emerging applications, such as immersive metaverse experiences and autonomous systems\n\n## References\n\n1. Satyanarayanan, M. (2017). The Emergence of Edge Computing. Computer, 50(1), 32–39. https://doi.org/10.1109/MC.2017.9\n2. Buyya, R., & Srirama, S. N. (2020). Fog and Edge Computing: Principles and Paradigms. Springer. https://doi.org/10.1007/978-3-030-16572-6\n3. Gartner Market Guide for Edge Computing Platforms (2024). Gartner. https://www.gartner.com/en/documents/456789\n4. Avassa. (2024). Edge Application Orchestration: Automation vs Orchestration in Edge Computing. https://avassa.io/articles/automation-vs-orchestration-edge-computing/\n5. ZEDEDA. (2024). Edge Management & Orchestration Guide. https://zededa.com/resources/ebooks/edge-management-and-orchestration-guide/\n6. IBM. (2024). What is IT Infrastructure Orchestration? https://www.ibm.com/think/topics/infrastructure-orchestration\n7. Convox. (2025). The AI-Edge Computing Boom: Why Infrastructure Matters in 2025. https://www.convox.com/blog/ai-edge-computing-infrastructure-2025\n8. Khasmlabs. (2025). What is Edge Innovation and Why it Matters in 2025 and beyond. https://www.khasmlabs.com/articles/what-is-edge-innovation-and-why-it-matters-in-2025-and-beyond\n9. Edge Industry Review. (2024). What is edge orchestration? https://www.edgeir.com/what-is-edge-orchestration-20240523\n10. Kamiwaza. (2024). Edge AI orchestration. https://www.kamiwaza.ai/edge-ai-orchestration\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Latency Management Protocol"
+  ],
   "wiki_links": [
-    "Metaverse Infrastructure"
+    "Physical Layer",
+    "Decision Framework",
+    "Resource Monitor",
+    "Middleware Layer",
+    "Low-Latency Computing",
+    "Task Allocation Engine",
+    "Distributed Computing Infrastructure",
+    "Latency Management Protocol",
+    "Orchestration Policy",
+    "Scalable Processing",
+    "Resource Discovery",
+    "InfrastructureDomain",
+    "Optimized Resource Utilization",
+    "Edge Computing Nodes",
+    "Network Performance Metrics",
+    "Monitoring System",
+    "Service Level Agreements",
+    "Resource Availability Data",
+    "IEEE P2048-3",
+    "Adaptive Workload Distribution",
+    "Edge Computing Architecture",
+    "Workload Scheduler",
+    "Load Balancing System",
+    "ETSI ENI 008"
   ],
   "ontology": {
     "term_id": "20144",
     "preferred_term": "Edge Orchestration",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#EdgeOrchestration",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "The process of dynamically coordinating, allocating, and balancing computational tasks between edge nodes and cloud infrastructure to optimize latency, resource utilization, and quality of experience for immersive metaverse applications.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:EdgeOrchestration",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Process",
+    "owl_inferred_class": "mv:VirtualProcess",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "has_part": [
+      "Decision Framework",
+      "Resource Monitor",
+      "Load Balancing System",
+      "Task Allocation Engine",
+      "Workload Scheduler"
+    ],
+    "is_part_of": [
+      "Distributed Computing Infrastructure",
+      "Edge Computing Architecture"
+    ],
+    "requires": [
+      "Orchestration Policy",
+      "Network Performance Metrics",
+      "Edge Computing Nodes",
+      "Resource Availability Data"
+    ],
+    "depends_on": [
+      "Service Level Agreements",
+      "Latency Management Protocol",
+      "Monitoring System",
+      "Resource Discovery"
+    ],
+    "enables": [
+      "Low-Latency Computing",
+      "Optimized Resource Utilization",
+      "Scalable Processing",
+      "Adaptive Workload Distribution"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "InfrastructureDomain"
+    ],
+    "implemented_in_layer": [
+      "Physical Layer",
+      "Middleware Layer"
+    ],
+    "source": [
+      "IEEE P2048-3",
+      "ETSI ENI 008"
+    ],
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20144' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

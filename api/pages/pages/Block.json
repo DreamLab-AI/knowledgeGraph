@@ -1,44 +1,42 @@
 {
   "id": "Block",
   "title": "Block",
-  "content": "- ### OntologyBlock\n  id:: block-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0003\n\n    - filename-history:: [\"BC-0003-block.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[BlockchainTechnology]]\n    - term-id:: BC-0003\n    - preferred-term:: Block\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Fundamental unit containing transactions within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 1.0\n\n  - **Semantic Classification**\n    - owl:class:: bc:Block\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[BlockchainDomain]]\n    - owl:disjointWith:: [[Algorithm]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Distributeddatastructure]] via is-subclass-of\n    - bridges-from:: [[Bitcoin]] via has-part\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: block-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0003\n\t- preferred-term:: Block\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Fundamental unit containing transactions within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:Block\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[BlockchainDomain]]",
   "backlinks": [
     "BC-0013-block-size",
-    "Blockchain Entity",
+    "Block Height",
     "BC-0004-block-header",
     "BC-0016-orphan-block",
     "Bitcoin",
     "BC-0017-timestamp",
+    "Block Time",
+    "Genesis Block",
     "BC-0014-block-time",
     "BC-0005-genesis-block",
     "BC-0011-block-height"
   ],
   "wiki_links": [
-    "Bitcoin",
-    "ISO/IEC 23257:2021",
     "NIST NISTIR",
-    "BlockchainTechnology",
-    "Distributeddatastructure",
-    "IEEE 2418.1",
     "BlockchainDomain",
-    "Algorithm"
+    "ISO/IEC 23257:2021",
+    "IEEE 2418.1"
   ],
   "ontology": {
     "term_id": "BC-0003",
     "preferred_term": "Block",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/blockchain#Block",
-    "source_domain": "blockchain",
-    "domain": "blockchain",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
     "definition": "Fundamental unit containing transactions within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
     "scope_note": null,
     "status": "complete",
     "maturity": "mature",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-10-28",
-    "authority_score": 1.0,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "bc:Block",
@@ -52,12 +50,8 @@
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [
-      "Distributeddatastructure via is"
-    ],
-    "bridges_from": [
-      "Bitcoin via has"
-    ],
+    "bridges_to": [],
+    "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
       "BlockchainDomain"
@@ -71,8 +65,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

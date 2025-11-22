@@ -1,0 +1,57 @@
+{
+  "id": "Provider",
+  "title": "Provider",
+  "content": "- ### OntologyBlock\n  id:: provider-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0517\n\t- preferred-term:: Provider\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A natural or legal person, public authority, agency or other body that develops an AI system or a general-purpose AI model, or that has an AI system or a general-purpose AI model developed, and places it on the market or puts the AI system into service under its own name or trademark, whether for payment or free of charge.\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Provider))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Provider \"Provider\"@en)\n(AnnotationAssertion rdfs:comment :Provider \"A natural or legal person, public authority, agency or other body that develops an AI system or a general-purpose AI model, or that has an AI system or a general-purpose AI model developed, and places it on the market or puts the AI system into service under its own name or trademark, whether for payment or free of charge.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Provider \"mv-1761742247959\"^^xsd:string)\n```\n\n## Source\n\n**Primary**: EU AI Act Article 3(3)\n**Context**: Primary duty bearer for AI system compliance\n\n## Regulatory Context\n\nThe provider is the central actor in the EU AI Act compliance framework, bearing primary responsibility for ensuring AI systems meet all applicable requirements before market placement or putting into service.\n\n## Key Characteristics\n\n### Who Qualifies as Provider?\n\n#### Development Scenarios\n1. **Direct development**: Develops AI in-house\n2. **Contracted development**: Commissions third party to develop AI under provider's specifications\n3. **Customisation**: Substantially modifies existing AI system\n\n#### Market Placement\n4. **Own name/trademark**: System bears provider's brand\n5. **Payment or free**: Commercial activity regardless of revenue\n\n### Provider Types\n- **Natural persons**: Individual developers\n- **Legal persons**: Companies, organisations\n- **Public authorities**: Government agencies\n- **Agencies**: Regulatory or administrative bodies\n- **Other bodies**: Non-profit entities, research institutions\n\n## Geographic Scope\n\n### EU-Established Providers\nProviders located or established in the EU.\n\n**Obligations**: Full direct compliance with AI Act\n\n### Non-EU Providers\nTwo pathways to EU market:\n\n#### Option 1: Authorised Representative (Article 22)\nAppoint EU-established representative to:\n- Act on provider's behalf\n- Serve as compliance contact\n- Maintain documentation\n- Liaise with authorities\n\n#### Option 2: Through Importer (Article 23)\nEU-based importer assumes certain provider responsibilities\n\n## Provider Obligations for High-Risk AI\n\n### Pre-Market Requirements (Articles 8-15)\n\n#### 1. Risk Management System (Article 9)\nEstablish continuous iterative process for:\n- Risk identification\n- Risk analysis\n- Risk estimation\n- Risk mitigation\n\n#### 2. Data Governance (Article 10)\nEnsure training, validation, testing datasets are:\n- Relevant\n- Representative\n- Error-free\n- Complete\n\n#### 3. Technical Documentation (Article 11)\nPrepare comprehensive documentation per Annex IV:\n- System description\n- Design specifications\n- Development process\n- Testing results\n- Risk assessment\n\n#### 4. Record-Keeping Capability (Article 19)\nDesign automatic logging to enable:\n- Event tracing\n- Risk monitoring\n- Post-market surveillance\n\n#### 5. Transparency (Article 13)\nProvide clear information to deployers:\n- Intended purpose\n- Capabilities\n- Limitations\n- Accuracy levels\n- Human oversight requirements\n\n#### 6. Human Oversight (Article 14)\nEnable effective oversight through:\n- Monitoring capabilities\n- Interpretation tools\n- Override mechanisms\n- Awareness of limitations\n\n#### 7. Accuracy, Robustness, Cybersecurity (Article 15)\nAchieve appropriate levels of:\n- Performance accuracy\n- Error resilience\n- Security protection\n\n### Conformity Assessment (Article 43)\nComplete before placing on market:\n- Internal control (Annex VI), OR\n- Third-party assessment (Annex VII)\n\nIssue:\n- EU Declaration of Conformity (Article 47)\n- CE marking (Article 48)\n\n### Post-Market Obligations (Articles 16-21, 72-73)\n\n#### Quality Management System (Article 17)\nMaintain documented system for:\n- Regulatory compliance\n- Quality assurance\n- Continuous improvement\n\n#### Post-Market Monitoring (Article 72)\nSystematically:\n- Collect performance data\n- Analyse real-world operation\n- Evaluate continued compliance\n\n#### Serious Incident Reporting (Article 73)\nReport without undue delay to:\n- Market surveillance authorities\n- AI Office (if applicable)\n\n#### Corrective Actions (Article 21)\nWhen non-compliance identified:\n- Immediately take corrective action\n- Withdraw or recall if necessary\n- Inform authorities and deployers\n\n#### Cooperation (Article 25)\nUpon authority request:\n- Provide documentation\n- Grant access to systems\n- Deliver samples\n- Demonstrate compliance\n\n### Documentation Retention (Article 18)\nMaintain for **10 years**:\n- Technical documentation\n- EU Declaration of Conformity\n- Quality management system records\n- Post-market monitoring reports\n\n## Provider Obligations for GPAI Models\n\n### Standard GPAI (Article 53)\n1. **Technical documentation** (Annex XI)\n2. **Downstream transparency information** (Annex XII)\n3. **Copyright compliance policy**\n4. **Training content summary** (publicly available)\n\n### GPAI with Systemic Risk (Article 55)\nAdditional requirements:\n5. **Model evaluation** and adversarial testing\n6. **Systemic risk assessment and mitigation**\n7. **Serious incident reporting**\n8. **Cybersecurity protection**\n9. **Energy efficiency reporting**\n\n## Exemptions and Special Cases\n\n### Free and Open-Source GPAI Models (Article 53(5))\nExempt from:\n- Technical documentation (Article 53(1)(a))\n- Downstream transparency (Article 53(1)(b))\n\nIf parameters, weights, information publicly available under open licence.\n\n### Research and Development (Article 2(6))\nAI systems solely for scientific research and development not subject to AI Act.\n\n**Ceases upon market placement or putting into service**\n\n## Provider Transformation\n\n### When Non-Provider Becomes Provider\n\n#### Substantial Modification (Article 28(1))\nDeployer or distributor becomes provider if:\n- Changing intended purpose\n- Making substantial modification\n\n**New obligations**: Full provider compliance required\n\n#### Own-Use Development\nEntity developing AI for internal use only:\n- **Provider obligations**: Yes (putting into service)\n- **Deployer obligations**: Also yes (dual role)\n\n## Liability and Penalties\n\n### Administrative Fines (Article 99)\n- **Prohibited practices**: Up to €35M or 7% global turnover\n- **High-risk requirements**: Up to €15M or 3% global turnover\n- **Information obligations**: Up to €7.5M or 1.5% global turnover\n\n### Product Liability\n- **Directive 85/374/EEC**: Defective product liability\n- **Proposed AI Liability Directive**: Fault-based claims\n- **Civil damages**: Harm compensation to affected persons\n\n### Criminal Liability\nSerious violations may constitute:\n- Fraud\n- Negligence causing harm\n- Data protection offences\n\n## Rights and Protections\n\n### Compliance Pathways\n- **Harmonised standards**: Presumption of conformity (Article 40)\n- **Common specifications**: Alternative compliance route (Article 41)\n- **Regulatory sandboxes**: Supervised innovation (Article 57)\n\n### Representation\n- **Trade associations**: Collective engagement\n- **Advisory Forum**: Stakeholder input (Article 67)\n- **Codes of practice**: Industry-led compliance (Articles 56, 95)\n\n## Related Concepts\n\n- **Deployer** (AI-0128): User of AI systems\n- **Authorised Representative** (AI-0130): Non-EU provider's EU agent\n- **Importer** (AI-0129): Third-country system introducer\n- **Distributor** (AI-0131): Supply chain intermediary\n\n## Practical Guidance\n\n### For Startups\n- Early risk classification assessment\n- Incremental compliance building\n- Regulatory sandbox participation\n- Open-source exemption evaluation\n\n### For Enterprises\n- Centralized AI governance function\n- Cross-functional compliance teams\n- Third-party audit programmes\n- Supply chain due diligence\n\n### For Public Authorities\n- Fundamental rights impact assessments mandatory\n- Procurement specification compliance\n- Internal expertise development\n- Inter-agency coordination\n\n## See Also\n\n- EU AI Act Chapter II (Provider and Deployer Obligations)\n- Articles 16-29 (Detailed Provider Requirements)\n- Annex IV (Technical Documentation Template)\n- Commission Provider Guidance (expected 2026)\n\t- maturity:: draft\n\t- owl:class:: mv:Provider\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- is-subclass-of:: [[Metaverse]]\n\t- belongsToDomain:: [[MetaverseDomain]]",
+  "backlinks": [],
+  "wiki_links": [
+    "MetaverseDomain",
+    "Metaverse"
+  ],
+  "ontology": {
+    "term_id": "AI-0517",
+    "preferred_term": "Provider",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#Provider",
+    "source_domain": null,
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "A natural or legal person, public authority, agency or other body that develops an AI system or a general-purpose AI model, or that has an AI system or a general-purpose AI model developed, and places it on the market or puts the AI system into service under its own name or trademark, whether for payment or free of charge.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:Provider",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'ai'"
+      ]
+    }
+  }
+}

@@ -1,76 +1,63 @@
 {
   "id": "Digital Signature",
   "title": "Digital Signature",
-  "content": "- ### OntologyBlock\n  id:: digital-signature-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0030\n\n    - filename-history:: [\"BC-0030-digital-signature.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[BlockchainTechnology]]\n    - term-id:: BC-0030\n    - preferred-term:: Digital Signature\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: Cryptographic authentication mechanism within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:DigitalSignature\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-from:: [[Tokenization]] via depends-on\n    - bridges-from:: [[VirtualPropertyRight]] via depends-on\n    - bridges-from:: [[DigitalEvidenceChainOfCustody]] via has-part\n    - bridges-from:: [[DataProvenance]] via requires\n    - bridges-from:: [[DistributedLedgerTechnologyDlt]] via requires\n    - bridges-from:: [[NftSwapping]] via requires\n    - bridges-from:: [[VerifiableCredentialVc]] via requires\n    - bridges-from:: [[CulturalProvenanceRecord]] via requires\n    - bridges-from:: [[VirtualNotaryService]] via requires\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: digital-signature-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0030\n\t- preferred-term:: Digital Signature\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Cryptographic authentication mechanism within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- #### Relationships\n\t  id:: digital-signature-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Entity]]\n\t\t- is-subclass-of:: [[CryptographicPrimitive]]",
   "backlinks": [
     "Virtual Property Right",
+    "Data Provenance",
+    "Cryptocurrency",
+    "NFT Swapping",
+    "Distributed Ledger Technology (DLT)",
     "Tokenization",
-    "BC-0039-signature-scheme"
+    "Virtual Notary Service",
+    "BC-0039-signature-scheme",
+    "Digital Evidence Chain of Custody",
+    "Cultural Provenance Record",
+    "Verifiable Credential (VC)"
   ],
   "wiki_links": [
-    "DigitalEvidenceChainOfCustody",
-    "ISO/IEC 23257:2021",
-    "CryptographicDomain",
-    "VirtualPropertyRight",
     "NIST NISTIR",
-    "BlockchainTechnology",
-    "NftSwapping",
-    "CulturalProvenanceRecord",
     "IEEE 2418.1",
-    "VerifiableCredentialVc",
-    "Tokenization",
-    "DistributedLedgerTechnologyDlt",
-    "DataProvenance",
-    "VirtualNotaryService",
-    "BlockchainEntity"
+    "Blockchain Entity",
+    "ISO/IEC 23257:2021",
+    "CryptographicPrimitive"
   ],
   "ontology": {
     "term_id": "BC-0030",
     "preferred_term": "Digital Signature",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/blockchain#DigitalSignature",
-    "source_domain": "blockchain",
-    "domain": "blockchain",
-    "domain_full_name": "",
+    "iri": null,
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
     "definition": "Cryptographic authentication mechanism within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
     "scope_note": null,
     "status": "complete",
     "maturity": "mature",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-11-13",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": "bc:DigitalSignature",
-    "owl_physicality": "VirtualEntity",
-    "owl_role": "Object",
-    "owl_inferred_class": "bc:VirtualObject",
-    "is_subclass_of": [],
+    "owl_class": null,
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Blockchain Entity",
+      "CryptographicPrimitive"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [
-      "BlockchainEntity via is"
-    ],
-    "bridges_from": [
-      "Tokenization via depends",
-      "VirtualPropertyRight via depends",
-      "DigitalEvidenceChainOfCustody via has",
-      "DataProvenance via requires",
-      "DistributedLedgerTechnologyDlt via requires",
-      "NftSwapping via requires",
-      "VerifiableCredentialVc via requires",
-      "CulturalProvenanceRecord via requires",
-      "VirtualNotaryService via requires"
-    ],
+    "bridges_to": [],
+    "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [
-      "CryptographicDomain"
-    ],
+    "belongs_to_domain": [],
     "implemented_in_layer": [],
     "source": [
       "ISO/IEC 23257:2021",
@@ -80,8 +67,11 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: owl:class",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
       ]
     }
   }

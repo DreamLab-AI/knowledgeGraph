@@ -1,55 +1,106 @@
 {
   "id": "Emotional Analytics Engine",
   "title": "Emotional Analytics Engine",
-  "content": "- ### OntologyBlock\n  id:: emotional-analytics-engine-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20235\n\t- preferred-term:: Emotional Analytics Engine\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t- public-access:: true\n\n\n# Emotional Analytics Engine – Updated Ontology Entry\n\n## Academic Context\n\n- Emotional analytics represents a sophisticated convergence of affective computing, natural language processing, and machine learning\n  - Roots in psychological research on emotion recognition and computational linguistics\n  - Evolved from early rule-based systems to contemporary deep learning architectures\n  - Foundational shift from keyword matching to contextual, multi-modal emotion detection\n- The discipline addresses a fundamental business challenge: understanding not merely what customers articulate, but the affective states underlying their communications\n  - Combines facial expression analysis, voice sentiment detection, text emotion recognition, behavioural pattern analysis, and physiological signal processing where available[1]\n  - Employs multi-modal fusion techniques achieving approximately 94% accuracy in emotion detection through integration of multiple indicators[1]\n  - Incorporates cultural intelligence and temporal analysis to account for contextual variation and emotional trajectories rather than momentary snapshots[1]\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Market valuation reached $13.4 billion in 2025, reflecting substantial commercial investment[4]\n  - Natural language processing market projected to grow from $3.5 billion (2020) to $43.8 billion (2025) at 54.4% compound annual growth rate, driven substantially by emotionally-aware customer service applications[4]\n  - Demonstrated business impact: research indicates emotional analytics can increase engagement by up to 50% and conversions by 70% through personalised experiences[2]\n  - Notable implementations include Nike (70% usage growth through emotion-aligned campaigns) and Coca-Cola (dynamic campaign adjustment based on real-time audience sentiment)[2]\n  - Zendesk employs machine learning algorithms to analyse customer conversations and detect emotions for personalised support[4]\n  - Level AI provides nuanced emotion detection beyond simple categorical labels, identifying disappointment, admiration, frustration, and gratitude with real-time sentiment tracking[5]\n  - UK and North England context: whilst search results do not specify regional implementations, the substantial growth in NLP and customer service AI suggests adoption across British contact centres and retail operations, particularly in Manchester and Leeds technology clusters\n- Technical capabilities and limitations\n  - Sentiment analysis classifies communications as positive, negative, or neutral through machine learning algorithms and lexicon-based approaches[6]\n  - Deep learning architectures (recurrent neural networks, transformers) substantially improved contextual understanding compared to earlier support vector machine and Naïve Bayes classifiers[6]\n  - Pre-trained models (BERT, GPT) enable real-time analysis capabilities with improved accuracy[6]\n  - Emotion recognition typically categorises states as anger, contempt, confusion, disgust, fear, frustration, joy, sadness, and surprise[3]\n  - Limitations include dependency on substantial labelled training datasets, potential cultural bias in facial expression interpretation, and challenges in detecting sarcasm or irony in text analysis\n- Standards and frameworks\n  - Affectiva and Reticle AI represent established platforms for embedding emotional analytics within advertising and event systems[2]\n  - Automatic speech recognition (ASR) combined with natural language understanding (NLU) enables near-human accuracy in intent detection and emotional state classification[5]\n  - Scenario engines classify customer objectives and emotional drivers through contextual word analysis[5]\n\n## Research & Literature\n\n- Key academic and industry sources\n  - AI Magicx (2025). \"Emotional AI: Transforming Customer Experience Through Sentiment Understanding in 2025.\" Available at: aimagicx.com/blog/emotional-ai-transforming-customer-experience-2025/\n  - DzinePixel (2024). \"AI Emotional Analytics: Decoding Feelings to Revolutionise Your Marketing Campaigns.\" Available at: dzinepixel.com/blog/ai-emotional-analytics-decoding-feelings-to-revolutionize-your-marketing-campaigns/\n  - TechTarget (2025). \"What is emotions analytics (EA)? Definition from TechTarget.\" Available at: techtarget.com/searchcustomerexperience/definition/emotions-analytics-EA\n  - SuperAGI (2025). \"Emotionally Intelligent AI Voice Agents – How Emotional AI is Transforming Customer Support and Sales in 2025.\" Available at: superagi.com/emotionally-intelligent-ai-voice-agents-how-emotional-ai-is-transforming-customer-support-and-sales-in-2025/\n  - Level AI (2025). \"10 Best Sentiment Analysis Tools in 2025 (By Use Case).\" Available at: thelevel.ai/blog/sentiment-analysis-tools/\n  - Rapid Innovation (2025). \"AI-Powered Audience Sentiment Analysis 2025: Business Insights.\" Available at: rapidinnovation.io/post/ai-agent-audience-sentiment-analyser\n  - Sprout Social (2025). \"Social Media Sentiment Analysis: Benefits and Guide for 2025.\" Available at: sproutsocial.com/insights/social-media-sentiment-analysis/\n  - Brito, Michael. \"Why Emotional Insights Outperform Raw Data.\" Britopian Research. Available at: britopian.com/research/emotional-insights/\n- Ongoing research directions\n  - Enhancement of cross-cultural emotion recognition accuracy through adaptive baseline calib\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: emotional-analytics-engine-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20235\n\t- preferred-term:: Emotional Analytics Engine\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: AI module analyzing affective states from facial, voice, or physiological data to enable adaptive agent responses and affective computing.\n\t- source:: [[IEEE Affective Computing 2023]]\n\t- maturity:: mature\n\t- owl:class:: mv:EmotionalAnalyticsEngine\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Agent\n\t- owl:inferred-class:: mv:VirtualAgent\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[ComputationAndIntelligenceDomain]]\n\t- implementedInLayer:: [[MiddlewareLayer]], [[NetworkLayer]]\n\t- #### Relationships\n\t  id:: emotional-analytics-engine-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[User Experience Analytics Platform]]\n\t\t- is-part-of:: [[Affective Computing System]]\n\t\t- has-part:: [[Facial Expression Analyzer]]\n\t\t- has-part:: [[Physiological Sensor Processor]]\n\t\t- has-part:: [[Sentiment Classification Model]]\n\t\t- has-part:: [[Voice Emotion Detector]]\n\t\t- has-part:: [[Affective State Predictor]]\n\t\t- requires:: [[Machine Learning Model]]\n\t\t- requires:: [[Privacy Protection]]\n\t\t- requires:: [[Sensor Data Stream]]\n\t\t- requires:: [[Real-Time Processing]]\n\t\t- enables:: [[Emotion-Aware Interaction]]\n\t\t- enables:: [[Mental Health Monitoring]]\n\t\t- enables:: [[Adaptive User Interface]]\n\t\t- enables:: [[Sentiment Analysis]]\n\t\t- depends-on:: [[Speech Processing]]\n\t\t- depends-on:: [[Neural Networks]]\n\t\t- depends-on:: [[Biometric Sensors]]\n\t\t- depends-on:: [[Computer Vision]]\n\n## Academic Context\n\n- Emotional analytics represents a sophisticated convergence of affective computing, natural language processing, and machine learning\n  - Roots in psychological research on emotion recognition and computational linguistics\n  - Evolved from early rule-based systems to contemporary deep learning architectures\n  - Foundational shift from keyword matching to contextual, multi-modal emotion detection\n- The discipline addresses a fundamental business challenge: understanding not merely what customers articulate, but the affective states underlying their communications\n  - Combines facial expression analysis, voice sentiment detection, text emotion recognition, behavioural pattern analysis, and physiological signal processing where available[1]\n  - Employs multi-modal fusion techniques achieving approximately 94% accuracy in emotion detection through integration of multiple indicators[1]\n  - Incorporates cultural intelligence and temporal analysis to account for contextual variation and emotional trajectories rather than momentary snapshots[1]\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Market valuation reached $13.4 billion in 2025, reflecting substantial commercial investment[4]\n  - Natural language processing market projected to grow from $3.5 billion (2020) to $43.8 billion (2025) at 54.4% compound annual growth rate, driven substantially by emotionally-aware customer service applications[4]\n  - Demonstrated business impact: research indicates emotional analytics can increase engagement by up to 50% and conversions by 70% through personalised experiences[2]\n  - Notable implementations include Nike (70% usage growth through emotion-aligned campaigns) and Coca-Cola (dynamic campaign adjustment based on real-time audience sentiment)[2]\n  - Zendesk employs machine learning algorithms to analyse customer conversations and detect emotions for personalised support[4]\n  - Level AI provides nuanced emotion detection beyond simple categorical labels, identifying disappointment, admiration, frustration, and gratitude with real-time sentiment tracking[5]\n  - UK and North England context: whilst search results do not specify regional implementations, the substantial growth in NLP and customer service AI suggests adoption across British contact centres and retail operations, particularly in Manchester and Leeds technology clusters\n- Technical capabilities and limitations\n  - Sentiment analysis classifies communications as positive, negative, or neutral through machine learning algorithms and lexicon-based approaches[6]\n  - Deep learning architectures (recurrent neural networks, transformers) substantially improved contextual understanding compared to earlier support vector machine and Naïve Bayes classifiers[6]\n  - Pre-trained models (BERT, GPT) enable real-time analysis capabilities with improved accuracy[6]\n  - Emotion recognition typically categorises states as anger, contempt, confusion, disgust, fear, frustration, joy, sadness, and surprise[3]\n  - Limitations include dependency on substantial labelled training datasets, potential cultural bias in facial expression interpretation, and challenges in detecting sarcasm or irony in text analysis\n- Standards and frameworks\n  - Affectiva and Reticle AI represent established platforms for embedding emotional analytics within advertising and event systems[2]\n  - Automatic speech recognition (ASR) combined with natural language understanding (NLU) enables near-human accuracy in intent detection and emotional state classification[5]\n  - Scenario engines classify customer objectives and emotional drivers through contextual word analysis[5]\n\n## Research & Literature\n\n- Key academic and industry sources\n  - AI Magicx (2025). \"Emotional AI: Transforming Customer Experience Through Sentiment Understanding in 2025.\" Available at: aimagicx.com/blog/emotional-ai-transforming-customer-experience-2025/\n  - DzinePixel (2024). \"AI Emotional Analytics: Decoding Feelings to Revolutionise Your Marketing Campaigns.\" Available at: dzinepixel.com/blog/ai-emotional-analytics-decoding-feelings-to-revolutionize-your-marketing-campaigns/\n  - TechTarget (2025). \"What is emotions analytics (EA)? Definition from TechTarget.\" Available at: techtarget.com/searchcustomerexperience/definition/emotions-analytics-EA\n  - SuperAGI (2025). \"Emotionally Intelligent AI Voice Agents – How Emotional AI is Transforming Customer Support and Sales in 2025.\" Available at: superagi.com/emotionally-intelligent-ai-voice-agents-how-emotional-ai-is-transforming-customer-support-and-sales-in-2025/\n  - Level AI (2025). \"10 Best Sentiment Analysis Tools in 2025 (By Use Case).\" Available at: thelevel.ai/blog/sentiment-analysis-tools/\n  - Rapid Innovation (2025). \"AI-Powered Audience Sentiment Analysis 2025: Business Insights.\" Available at: rapidinnovation.io/post/ai-agent-audience-sentiment-analyser\n  - Sprout Social (2025). \"Social Media Sentiment Analysis: Benefits and Guide for 2025.\" Available at: sproutsocial.com/insights/social-media-sentiment-analysis/\n  - Brito, Michael. \"Why Emotional Insights Outperform Raw Data.\" Britopian Research. Available at: britopian.com/research/emotional-insights/\n- Ongoing research directions\n  - Enhancement of cross-cultural emotion recognition accuracy through adaptive baseline calib\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [],
   "wiki_links": [
-    "ArtificialIntelligence"
+    "Sentiment Classification Model",
+    "Voice Emotion Detector",
+    "Emotion-Aware Interaction",
+    "Affective Computing System",
+    "Affective State Predictor",
+    "Sensor Data Stream",
+    "Physiological Sensor Processor",
+    "Mental Health Monitoring",
+    "Biometric Sensors",
+    "Neural Networks",
+    "Adaptive User Interface",
+    "Machine Learning Model",
+    "MiddlewareLayer",
+    "Speech Processing",
+    "IEEE Affective Computing 2023",
+    "User Experience Analytics Platform",
+    "Sentiment Analysis",
+    "NetworkLayer",
+    "ComputationAndIntelligenceDomain",
+    "Facial Expression Analyzer",
+    "Real-Time Processing",
+    "Privacy Protection",
+    "Computer Vision"
   ],
   "ontology": {
     "term_id": "20235",
     "preferred_term": "Emotional Analytics Engine",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#EmotionalAnalyticsEngine",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "AI module analyzing affective states from facial, voice, or physiological data to enable adaptive agent responses and affective computing.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:EmotionalAnalyticsEngine",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Agent",
+    "owl_inferred_class": "mv:VirtualAgent",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "has_part": [
+      "Facial Expression Analyzer",
+      "Physiological Sensor Processor",
+      "Sentiment Classification Model",
+      "Voice Emotion Detector",
+      "Affective State Predictor"
+    ],
+    "is_part_of": [
+      "User Experience Analytics Platform",
+      "Affective Computing System"
+    ],
+    "requires": [
+      "Machine Learning Model",
+      "Privacy Protection",
+      "Sensor Data Stream",
+      "Real-Time Processing"
+    ],
+    "depends_on": [
+      "Speech Processing",
+      "Neural Networks",
+      "Biometric Sensors",
+      "Computer Vision"
+    ],
+    "enables": [
+      "Emotion-Aware Interaction",
+      "Mental Health Monitoring",
+      "Adaptive User Interface",
+      "Sentiment Analysis"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "ComputationAndIntelligenceDomain"
+    ],
+    "implemented_in_layer": [
+      "MiddlewareLayer",
+      "NetworkLayer"
+    ],
+    "source": [
+      "IEEE Affective Computing 2023"
+    ],
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20235' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

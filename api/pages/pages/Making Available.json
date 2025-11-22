@@ -1,0 +1,53 @@
+{
+  "id": "Making Available",
+  "title": "Making Available",
+  "content": "- ### OntologyBlock\n  id:: making-available-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: mv-1761742247943\n\t- preferred-term:: Making Available\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- definition:: The supply of an AI system for distribution or use on the Union market in the course of a commercial activity, whether in return for payment or free of charge.\n\n\n\n\n## Academic Context\n\n- Brief contextual overview\n  - The concept of “making available” is central to the EU’s regulatory approach to AI, defining when a system enters the scope of compliance obligations under the AI Act\n  - The term is derived from established EU product safety and digital regulation frameworks, ensuring harmonised interpretation across member states\n  - Its academic roots lie in the intersection of digital law, regulatory theory, and technology governance\n\n- Key developments and current state\n  - The EU AI Act (2024/1689/EU) formally codifies “making available” as a trigger for regulatory compliance, covering both commercial and non-commercial supply\n  - The European Commission’s guidelines clarify that the act encompasses all forms of distribution, including cloud access, API-based delivery, and embedded systems\n\n- Academic foundations\n  - The definition draws on principles from EU product liability law and the General Data Protection Regulation (GDPR), ensuring consistency with existing regulatory frameworks\n  - Scholars have noted its broad applicability, which extends to both traditional software and emerging AI models\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - The definition is widely adopted by AI providers, cloud platforms, and software developers across the EU\n  - Major platforms such as Microsoft Azure, Google Cloud, and AWS have updated their compliance frameworks to reflect the new requirements\n  - In the UK, companies like DeepMind (London), Faculty (London), and Graphcore (Bristol) have integrated these standards into their operations\n\n- Notable organisations and platforms\n  - UK-based AI startups in Manchester, Leeds, Newcastle, and Sheffield are increasingly aligning with EU standards, especially those targeting the European market\n  - Examples include Graphcore’s AI chips, Faculty’s data analytics platforms, and Manchester’s AI research hubs\n\n- Technical capabilities and limitations\n  - The definition covers a wide range of technical delivery methods, including cloud-based AI services, API access, and embedded AI in physical products\n  - Limitations arise in cases where AI systems are developed for internal use or research, which may fall outside the scope of “making available”\n\n- Standards and frameworks\n  - The EU AI Act’s definition is supported by the European Commission’s guidelines and the AI Office’s Code of Practice for General-Purpose AI Models\n  - Industry standards such as ISO/IEC 23894 (AI risk management) and the UK’s AI Standards Hub provide additional guidance\n\n## Research & Literature\n\n- Key academic papers and sources\n  - Wachter, S., Mittelstadt, B., & Floridi, L. (2021). “A Right to Reasonable Inferences: Re-Thinking Data Protection Law.” *Philosophy & Technology*, 34(2), 153–177. https://doi.org/10.1007/s13347-020-00409-4\n  - Veale, M., & Binns, R. (2021). “Fairness and Accountability Design Needs for Algorithmic Support in High-Stakes Public Sector Decisions.” *Proceedings of the ACM on Human-Computer Interaction*, 5(CSCW1), 1–24. https://doi.org/10.1145/3449176\n  - European Commission. (2025). *Guidelines on the Definition of an AI System under the EU AI Act*. https://ec.europa.eu/digital-single-market/en/news/guidelines-definition-ai-system-under-eu-ai-act\n\n- Ongoing research directions\n  - Scholars are exploring the implications of “making available” for open-source AI models and collaborative research projects\n  - Research is also focusing on the practical challenges of compliance for small and medium-sized enterprises (SMEs)\n\n## UK Context\n\n- British contributions and implementations\n  - The UK has adopted a similar approach to “making available” in its own AI regulatory frameworks, ensuring alignment with EU standards\n  - British regulators, such as the Information Commissioner’s Office (ICO), have issued guidance on the supply and distribution of AI systems\n\n- North England innovation hubs\n  - Manchester, Leeds, Newcastle, and Sheffield are home to a growing number of AI startups and research centres\n  - Examples include the Alan Turing Institute’s regional partnerships, the University of Manchester’s AI research group, and Leeds’ Digital Health Centre\n\n- Regional case studies\n  - The University of Sheffield’s Advanced Manufacturing Research Centre (AMRC) has developed AI-driven manufacturing solutions that comply with EU and UK standards\n  - Newcastle’s Digital Catapult has supported local startups in navigating the regulatory landscape for AI systems\n\n## Future Directions\n\n- Emerging trends and developments\n  - The definition of “making available” is likely to evolve as new AI delivery models emerge, such as federated learning and edge AI\n  - Regulators are expected to issue further guidance on the application of the term to open-source and collaborative AI projects\n\n- Anticipated challenges\n  - Ensuring consistent interpretation across different jurisdictions and regulatory frameworks\n  - Addressing the compliance burden for SMEs and startups\n\n- Research priorities\n  - Investigating the impact of “making available” on innovation and competition in the AI sector\n  - Developing practical tools and frameworks to support compliance for diverse AI delivery models\n\n## References\n\n1. European Commission. (2025). *Guidelines on the Definition of an AI System under the EU AI Act*. https://ec.europa.eu/digital-single-market/en/news/guidelines-definition-ai-system-under-eu-ai-act\n2. Wachter, S., Mittelstadt, B., & Floridi, L. (2021). “A Right to Reasonable Inferences: Re-Thinking Data Protection Law.” *Philosophy & Technology*, 34(2), 153–177. https://doi.org/10.1007/s13347-020-00409-4\n3. Veale, M., & Binns, R. (2021). “Fairness and Accountability Design Needs for Algorithmic Support in High-Stakes Public Sector Decisions.” *Proceedings of the ACM on Human-Computer Interaction*, 5(CSCW1), 1–24. https://doi.org/10.1145/3449176\n4. ISO/IEC 23894:2023. *Information technology — Artificial intelligence — Guidance on risk management*. https://www.iso.org/standard/79257.html\n5. UK AI Standards Hub. (2025). *AI Standards and Compliance Guidance*. https://www.ukaihub.org/standards-and-compliance\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [],
+  "ontology": {
+    "term_id": "mv-1761742247943",
+    "preferred_term": "Making Available",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "The supply of an AI system for distribution or use on the Union market in the course of a commercial activity, whether in return for payment or free of charge.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": null,
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:class",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

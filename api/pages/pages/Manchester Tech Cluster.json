@@ -1,0 +1,58 @@
+{
+  "id": "Manchester Tech Cluster",
+  "title": "Manchester Tech Cluster",
+  "content": "- ### OntologyBlock\n  id:: manchester-tech-cluster-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: UK-003\n\t- preferred-term:: Manchester Tech Cluster\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Manchester's thriving technology ecosystem centred on MediaCityUK, including AI, digital innovation, and financial technology sectors.\n\t- maturity:: established\n\t- owl:class:: uk:ManchesterTechCluster\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: RegionalEcosystem\n\t- belongsToDomain:: [[UKTechEcosystem]]\n\n## Manchester Tech Cluster\n\nManchester Tech Cluster refers to manchester's thriving technology ecosystem centred on mediacityuk, including ai, digital innovation, and financial technology sectors.\n\n- [[North England Innovation Corridor]]\n- [[Northern Powerhouse]]\n- [[UK Tech Ecosystem]]\n\n## Technical Details\n\n- **Id**: manchester-tech-cluster-ontology\n- **Collapsed**: true\n- **Source Domain**: uk-regions\n- **Status**: active\n- **Public Access**: true\n- **Maturity**: established\n- **Region**: Greater Manchester\n- **Focus Areas**: Digital, AI, FinTech\n- **Owl:Class**: uk:UK-003-ManchesterTechCluster\n- **Owl:Physicality**: ConceptualEntity\n- **Owl:Role**: RegionalEcosystem\n- **Belongstodomain**: [[UKTechEcosystem]]\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n\n## References\n\n1. [https://www.nucamp.co/blog/coding-bootcamp-united-kingdom-igbr-inside-manchesters-thriving-tech-hub-startups-and-success-stories](https://www.nucamp.co/blog/coding-bootcamp-united-kingdom-igbr-inside-manchesters-thriving-tech-hub-startups-and-success-stories)\n2. [https://gmbusinessboard.com/wp-content/uploads/2021/04/Unicorns-Whitepaper-compressed.final_-1.pdf](https://gmbusinessboard.com/wp-content/uploads/2021/04/Unicorns-Whitepaper-compressed.final_-1.pdf)\n3. [https://sistermanchester.com/our-heritage](https://sistermanchester.com/our-heritage)\n4. [https://www.investinmanchester.com/why-manchester/industry-expertise/digital-and-technology/](https://www.investinmanchester.com/why-manchester/industry-expertise/digital-and-technology/)\n5. [https://www.greatermanchester-ca.gov.uk/news/greater-manchester-celebrates-digital-milestones/](https://www.greatermanchester-ca.gov.uk/news/greater-manchester-celebrates-digital-milestones/)\n6. [https://www.manchesterdigital.com/post/manchester-digital/12-clusters-of-tech-north-west](https://www.manchesterdigital.com/post/manchester-digital/12-clusters-of-tech-north-west)\n7. [https://www.innovationgreatermanchester.com/about-innovation-greater-manchester/innovation-clusters/](https://www.innovationgreatermanchester.com/about-innovation-greater-manchester/innovation-clusters/)\n8. [https://www.scienceandindustrymuseum.org.uk/objects-and-stories/worlds-first-industrial-city](https://www.scienceandindustrymuseum.org.uk/objects-and-stories/worlds-first-industrial-city)\n\n## Metadata\n\n- **Created**: 2025-11-11\n- **Region**: Greater Manchester, North England\n- **Category**: Regional Technology Ecosystem\n- **Status**: Active",
+  "backlinks": [],
+  "wiki_links": [
+    "UK Tech Ecosystem",
+    "Northern Powerhouse",
+    "UKTechEcosystem",
+    "North England Innovation Corridor"
+  ],
+  "ontology": {
+    "term_id": "UK-003",
+    "preferred_term": "Manchester Tech Cluster",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "uk-regions",
+    "domain": "uk-regions",
+    "domain_full_name": "",
+    "definition": "Manchester's thriving technology ecosystem centred on MediaCityUK, including AI, digital innovation, and financial technology sectors.",
+    "scope_note": null,
+    "status": "active",
+    "maturity": "established",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "uk:ManchesterTechCluster",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "RegionalEcosystem",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "UKTechEcosystem"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'uk' doesn't match source-domain 'uk-regions'"
+      ]
+    }
+  }
+}

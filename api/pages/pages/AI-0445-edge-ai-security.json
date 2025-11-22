@@ -1,32 +1,31 @@
 {
   "id": "AI-0445-edge-ai-security",
-  "title": "Edge AI Security (AI-0445)",
-  "content": "- ### OntologyBlock\n  id:: edge-ai-security-(ai-0445)-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0445\n    - preferred-term:: Edge AI Security (AI-0445)\n    - source-domain:: ai-grounded\n    - status:: in-progress\n    - version:: 1.0\n    - last-updated:: 2025-10-29\n\n  - **Definition**\n    - definition:: Edge AI Security protects machine learning systems deployed on distributed edge devices against adversarial attacks, model theft, data poisoning, and unauthorized access while respecting resource constraints of embedded environments. Edge security differs from cloud security by prioritizing offline operation, physical accessibility threats, and extreme resource scarcity. Trusted Execution Environments (TEEs) like ARM TrustZone isolate sensitive AI operations in hardware-protected secure enclaves, preventing unauthorized model inspection or parameter access even by device operating systems. Model encryption protects intellectual property; weights are decrypted only within TEEs during inference. Secure bootstrap chains verify device firmware integrity before executing AI models, preventing compromised code from manipulating inference. Defense mechanisms against adversarial attacks include input validation, anomaly detection, and certified robustness techniques tolerating small input perturbations. Model extraction attacks steal intellectual property by querying inference endpoints; edge systems mitigate this through rate limiting, access control, and covert deployment of detection mechanisms. Data poisoning attacks corrupt local training in federated learning systems; Byzantine-robust aggregation protocols identify and exclude corrupted updates. Physical attacks target edge devices accessing unprotected memory; countermeasures include side-channel resistance, differential power analysis defenses, and information-flow isolation. Privacy preservation through differential privacy adds calibrated noise to gradients and outputs, providing formal privacy guarantees. Standards like NIST AI Risk Management Framework and ARM TrustZone documentation guide secure deployment. Edge security requires balancing protection strength against computational/energy overhead; resource-constrained devices cannot employ computationally expensive cryptographic primitives. Effective edge AI security integrates hardware-level protections (TEEs, secure boot), software hardening (model encryption, access control), and algorithmic defenses (certified robustness) forming defense-in-depth architectures.\n    - maturity:: mature\n    - source:: \n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: aigo:EdgeAISecurity\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Process\n    - owl:inferred-class:: aigo:VirtualProcess\n    - belongsToDomain:: [[AIEthicsDomain]]\n    - implementedInLayer:: [[ConceptualLayer]]\n\n  - #### Relationships\n    id:: edge-ai-security-(ai-0445)-relationships\n\n  - #### OWL Axioms\n    id:: edge-ai-security-(ai-0445)-owl-axioms\n    collapsed:: true\n    - ```clojure\n      (Declaration (Class :EdgeAISecurity))\n(AnnotationAssertion rdfs:label :EdgeAISecurity \"Edge AI Security\"@en)\n(SubClassOf :EdgeAISecurity :AIGovernancePrinciple)\n\n;; Security Threats\n(SubClassOf :EdgeAISecurity\n  (ObjectSomeValuesFrom :mitigates :AdversarialAttack))\n(SubClassOf :EdgeAISecurity\n  (ObjectSomeValuesFrom :mitigates :ModelExtractionAttack))\n(SubClassOf :EdgeAISecurity\n  (ObjectSomeValuesFrom :mitigates :DataPoisoning))\n\n;; Protection Mechanisms\n(SubClassOf :EdgeAISecurity\n  (ObjectSomeValuesFrom :implements :TrustedExecutionEnvironment))\n(SubClassOf :EdgeAISecurity\n  (ObjectSomeValuesFrom :implements :ModelEncryption))\n(SubClassOf :EdgeAISecurity\n  (ObjectSomeValuesFrom :implements :SecureBootstrap))\n\n;; Standards Reference\n(AnnotationAssertion rdfs:seeAlso :EdgeAISecurity\n  \"ARM TrustZone for Cortex-M\")\n(AnnotationAssertion rdfs:seeAlso :EdgeAISecurity\n  \"NIST AI Risk Management Framework\")\n      ```\n\n### Relationships\n- is-subclass-of:: [[EdgeAISystem]]",
+  "title": "Edge AI Security",
+  "content": "- ### OntologyBlock\n  id:: edge-ai-security-(ai-0445)-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0445\n\t- preferred-term:: Edge AI Security\n\t- source-domain:: ai\n\t- status:: in\n\t- public-access:: true\n\t- definition:: Edge AI Security protects machine learning systems deployed on distributed edge devices against adversarial attacks, model theft, data poisoning, and unauthorized access while respecting resource constraints of embedded environments. Edge security differs from cloud security by prioritizing offline operation, physical accessibility threats, and extreme resource scarcity. Trusted Execution Environments (TEEs) like ARM TrustZone isolate sensitive AI operations in hardware-protected secure enclaves, preventing unauthorized model inspection or parameter access even by device operating systems. Model encryption protects intellectual property; weights are decrypted only within TEEs during inference. Secure bootstrap chains verify device firmware integrity before executing AI models, preventing compromised code from manipulating inference. Defense mechanisms against adversarial attacks include input validation, anomaly detection, and certified robustness techniques tolerating small input perturbations. Model extraction attacks steal intellectual property by querying inference endpoints; edge systems mitigate this through rate limiting, access control, and covert deployment of detection mechanisms. Data poisoning attacks corrupt local training in federated learning systems; Byzantine-robust aggregation protocols identify and exclude corrupted updates. Physical attacks target edge devices accessing unprotected memory; countermeasures include side-channel resistance, differential power analysis defenses, and information-flow isolation. Privacy preservation through differential privacy adds calibrated noise to gradients and outputs, providing formal privacy guarantees. Standards like NIST AI Risk Management Framework and ARM TrustZone documentation guide secure deployment. Edge security requires balancing protection strength against computational/energy overhead; resource-constrained devices cannot employ computationally expensive cryptographic primitives. Effective edge AI security integrates hardware-level protections (TEEs, secure boot), software hardening (model encryption, access control), and algorithmic defenses (certified robustness) forming defense-in-depth architectures.\n\t- maturity:: mature\n\t- owl:class:: ai:EdgeAISecurity\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: aigo:VirtualProcess\n\t- belongsToDomain:: [[AIEthicsDomain]]\n\t- implementedInLayer:: [[ConceptualLayer]]",
   "backlinks": [],
   "wiki_links": [
-    "EdgeAISystem",
     "ConceptualLayer",
     "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "AI-0445",
-    "preferred_term": "Edge AI Security (AI-0445)",
+    "preferred_term": "Edge AI Security",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "ai-grounded",
-    "domain": "ai-grounded",
-    "domain_full_name": "",
+    "iri": "http://narrativegoldmine.com/ai#EdgeAISecurity",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
     "definition": "Edge AI Security protects machine learning systems deployed on distributed edge devices against adversarial attacks, model theft, data poisoning, and unauthorized access while respecting resource constraints of embedded environments. Edge security differs from cloud security by prioritizing offline operation, physical accessibility threats, and extreme resource scarcity. Trusted Execution Environments (TEEs) like ARM TrustZone isolate sensitive AI operations in hardware-protected secure enclaves, preventing unauthorized model inspection or parameter access even by device operating systems. Model encryption protects intellectual property; weights are decrypted only within TEEs during inference. Secure bootstrap chains verify device firmware integrity before executing AI models, preventing compromised code from manipulating inference. Defense mechanisms against adversarial attacks include input validation, anomaly detection, and certified robustness techniques tolerating small input perturbations. Model extraction attacks steal intellectual property by querying inference endpoints; edge systems mitigate this through rate limiting, access control, and covert deployment of detection mechanisms. Data poisoning attacks corrupt local training in federated learning systems; Byzantine-robust aggregation protocols identify and exclude corrupted updates. Physical attacks target edge devices accessing unprotected memory; countermeasures include side-channel resistance, differential power analysis defenses, and information-flow isolation. Privacy preservation through differential privacy adds calibrated noise to gradients and outputs, providing formal privacy guarantees. Standards like NIST AI Risk Management Framework and ARM TrustZone documentation guide secure deployment. Edge security requires balancing protection strength against computational/energy overhead; resource-constrained devices cannot employ computationally expensive cryptographic primitives. Effective edge AI security integrates hardware-level protections (TEEs, secure boot), software hardening (model encryption, access control), and algorithmic defenses (certified robustness) forming defense-in-depth architectures.",
     "scope_note": null,
-    "status": "in-progress",
+    "status": "in",
     "maturity": "mature",
-    "version": "1.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-10-29",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": "aigo:EdgeAISecurity",
+    "owl_class": "ai:EdgeAISecurity",
     "owl_physicality": "VirtualEntity",
     "owl_role": "Process",
     "owl_inferred_class": "aigo:VirtualProcess",
@@ -46,14 +45,12 @@
     "implemented_in_layer": [
       "ConceptualLayer"
     ],
-    "source": [
-      "- authority-score:: 0.95"
-    ],
+    "source": [],
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'aigo' doesn't match source-domain 'ai-grounded'"
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

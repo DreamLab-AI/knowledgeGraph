@@ -1,49 +1,50 @@
 {
   "id": "Photogrammetry",
   "title": "Photogrammetry",
-  "content": "- ### OntologyBlock\n  id:: photogrammetry-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20073\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: Photogrammetry\n\t- definition:: A computational technique for reconstructing 3D geometry from overlapping photographic images through mathematical analysis of correspondences, camera poses, and geometric transformations to extract spatial information from 2D image data.\n\t- maturity:: mature\n\t- source:: [[Siemens + ACM]]\n\t- owl:class:: mv:Photogrammetry\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: mv:VirtualProcess\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[CreativeMediaDomain]], [[RealityCaptureDomain]]\n\t- implementedInLayer:: [[Application Layer]]\n\t- #### Relationships\n\t  id:: photogrammetry-relationships\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-dependency-of:: [[Tourism Metaverse]], [[Cultural Heritage XR Experience]]\n\t\t- has-part:: [[Feature Detection]], [[Camera Calibration]], [[Image Matching]], [[Triangulation]], [[Point Cloud Generation]], [[Mesh Reconstruction]]\n\t\t- is-part-of:: [[3D Reconstruction Pipeline]], [[Reality Capture Workflow]]\n\t\t- requires:: [[Camera]], [[Multiple Images]], [[Overlapping Coverage]], [[Image Processing Software]], [[Computational Resources]]\n\t\t- depends-on:: [[Computer Vision Algorithms]], [[Structure from Motion]], [[Multi-View Geometry]], [[Camera Models]]\n\t\t- enables:: [[3D Model Creation]], [[Digital Twin Construction]], [[Terrain Mapping]], [[Asset Digitization]], [[Spatial Measurement]]\n\t- #### OWL Axioms\n\t  id:: photogrammetry-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:Photogrammetry))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:Photogrammetry mv:VirtualEntity)\n\t\t  SubClassOf(mv:Photogrammetry mv:Process)\n\n\t\t  # Domain-specific constraints\n\t\t  SubClassOf(mv:Photogrammetry\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:CreativeMediaDomain)\n\t\t  )\n\n\t\t  SubClassOf(mv:Photogrammetry\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:RealityCaptureDomain)\n\t\t  )\n\n\t\t  SubClassOf(mv:Photogrammetry\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)\n\t\t  )\n\n\t\t  # Process input requirements\n\t\t  SubClassOf(mv:Photogrammetry\n\t\t    ObjectSomeValuesFrom(mv:requires mv:Camera)\n\t\t  )\n\n\t\t  SubClassOf(mv:Photogrammetry\n\t\t    ObjectSomeValuesFrom(mv:requires mv:MultipleImages)\n\t\t  )\n\n\t\t  SubClassOf(mv:Photogrammetry\n\t\t    ObjectSomeValuesFrom(mv:requires mv:OverlappingCoverage)\n\t\t  )\n\n\t\t  # Core sub-processes\n\t\t  SubClassOf(mv:Photogrammetry\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:FeatureDetection)\n\t\t  )\n\n\t\t  SubClassOf(mv:Photogrammetry\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:CameraCalibration)\n\t\t  )\n\n\t\t  SubClassOf(mv:Photogrammetry\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:ImageMatching)\n\t\t  )\n\n\t\t  SubClassOf(mv:Photogrammetry\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:Triangulation)\n\t\t  )\n\n\t\t  # Process outputs\n\t\t  SubClassOf(mv:Photogrammetry\n\t\t    ObjectSomeValuesFrom(mv:enables mv:3DModelCreation)\n\t\t  )\n\n\t\t  SubClassOf(mv:Photogrammetry\n\t\t    ObjectSomeValuesFrom(mv:enables mv:DigitalTwinConstruction)\n\t\t  )\n\n\t\t  # Dependency constraints\n\t\t  SubClassOf(mv:Photogrammetry\n\t\t    ObjectSomeValuesFrom(mv:dependsOn mv:ComputerVisionAlgorithms)\n\t\t  )\n\n\t\t  SubClassOf(mv:Photogrammetry\n\t\t    ObjectSomeValuesFrom(mv:dependsOn mv:StructureFromMotion)\n\t\t  )\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:isdependencyof)\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:requires)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n```",
+  "content": "- ### OntologyBlock\n  id:: photogrammetry-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20073\n\t- preferred-term:: Photogrammetry\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A computational technique for reconstructing 3D geometry from overlapping photographic images through mathematical analysis of correspondences, camera poses, and geometric transformations to extract spatial information from 2D image data.\n\t- source:: [[Siemens + ACM]]\n\t- maturity:: mature\n\t- owl:class:: mv:Photogrammetry\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: mv:VirtualProcess\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[CreativeMediaDomain]], [[RealityCaptureDomain]]\n\t- implementedInLayer:: [[Application Layer]]\n\t- #### Relationships\n\t  id:: photogrammetry-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-part-of:: [[Reality Capture Workflow]]\n\t\t- is-part-of:: [[3D Reconstruction Pipeline]]\n\t\t- has-part:: [[Camera Calibration]]\n\t\t- has-part:: [[Image Matching]]\n\t\t- has-part:: [[Triangulation]]\n\t\t- has-part:: [[Point Cloud Generation]]\n\t\t- has-part:: [[Mesh Reconstruction]]\n\t\t- has-part:: [[Feature Detection]]\n\t\t- requires:: [[Multiple Images]]\n\t\t- requires:: [[Image Processing Software]]\n\t\t- requires:: [[Camera]]\n\t\t- requires:: [[Computational Resources]]\n\t\t- requires:: [[Overlapping Coverage]]\n\t\t- enables:: [[Digital Twin Construction]]\n\t\t- enables:: [[3D Model Creation]]\n\t\t- enables:: [[Terrain Mapping]]\n\t\t- enables:: [[Spatial Measurement]]\n\t\t- enables:: [[Asset Digitization]]\n\t\t- depends-on:: [[Camera Models]]\n\t\t- depends-on:: [[Multi-View Geometry]]\n\t\t- depends-on:: [[Computer Vision Algorithms]]\n\t\t- depends-on:: [[Structure from Motion]]\n\t\t- is-dependency-of:: [[Tourism Metaverse]]\n\t\t- is-dependency-of:: [[Cultural Heritage XR Experience]]",
   "backlinks": [
-    "Virtual Production"
+    "Cultural Heritage XR Experience",
+    "Tourism Metaverse"
   ],
   "wiki_links": [
-    "Point Cloud Generation",
-    "Structure from Motion",
-    "Computational Resources",
-    "Siemens + ACM",
-    "Multiple Images",
-    "Multi-View Geometry",
-    "Computer Vision Algorithms",
-    "CreativeMediaDomain",
     "Tourism Metaverse",
-    "Feature Detection",
-    "Spatial Measurement",
-    "3D Reconstruction Pipeline",
-    "Cultural Heritage XR Experience",
     "Mesh Reconstruction",
-    "Camera Models",
+    "Image Processing Software",
+    "Image Matching",
+    "Camera Calibration",
+    "RealityCaptureDomain",
+    "Structure from Motion",
+    "3D Model Creation",
+    "3D Reconstruction Pipeline",
+    "CreativeMediaDomain",
+    "Digital Twin Construction",
+    "Point Cloud Generation",
     "Camera",
     "Overlapping Coverage",
-    "Image Matching",
-    "Metaverse",
-    "RealityCaptureDomain",
-    "Asset Digitization",
-    "3D Model Creation",
-    "Digital Twin Construction",
-    "Triangulation",
-    "Image Processing Software",
-    "Reality Capture Workflow",
     "Terrain Mapping",
-    "Camera Calibration",
-    "Application Layer"
+    "Feature Detection",
+    "Camera Models",
+    "Siemens + ACM",
+    "Application Layer",
+    "Metaverse",
+    "Reality Capture Workflow",
+    "Computer Vision Algorithms",
+    "Computational Resources",
+    "Asset Digitization",
+    "Cultural Heritage XR Experience",
+    "Spatial Measurement",
+    "Triangulation",
+    "Multi-View Geometry",
+    "Multiple Images"
   ],
   "ontology": {
     "term_id": "20073",
     "preferred_term": "Photogrammetry",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#Photogrammetry",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "A computational technique for reconstructing 3D geometry from overlapping photographic images through mathematical analysis of correspondences, camera poses, and geometric transformations to extract spatial information from 2D image data.",
     "scope_note": null,
     "status": "draft",
@@ -62,36 +63,36 @@
       "Metaverse"
     ],
     "has_part": [
-      "Feature Detection",
       "Camera Calibration",
       "Image Matching",
       "Triangulation",
       "Point Cloud Generation",
-      "Mesh Reconstruction"
+      "Mesh Reconstruction",
+      "Feature Detection"
     ],
     "is_part_of": [
-      "3D Reconstruction Pipeline",
-      "Reality Capture Workflow"
+      "Reality Capture Workflow",
+      "3D Reconstruction Pipeline"
     ],
     "requires": [
-      "Camera",
       "Multiple Images",
-      "Overlapping Coverage",
       "Image Processing Software",
-      "Computational Resources"
+      "Camera",
+      "Computational Resources",
+      "Overlapping Coverage"
     ],
     "depends_on": [
-      "Computer Vision Algorithms",
-      "Structure from Motion",
+      "Camera Models",
       "Multi-View Geometry",
-      "Camera Models"
+      "Computer Vision Algorithms",
+      "Structure from Motion"
     ],
     "enables": [
-      "3D Model Creation",
       "Digital Twin Construction",
+      "3D Model Creation",
       "Terrain Mapping",
-      "Asset Digitization",
-      "Spatial Measurement"
+      "Spatial Measurement",
+      "Asset Digitization"
     ],
     "relates_to": [],
     "bridges_to": [],
@@ -116,8 +117,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "term-id '20073' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

@@ -1,15 +1,15 @@
 {
   "id": "Solana",
   "title": "Solana",
-  "content": "- ### OntologyBlock\n  id:: solana-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0566\n    - filename-history:: [\"BC-0566-solana.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[BlockchainTechnology]]\n    - term-id:: BC-0566\n    - preferred-term:: Solana\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: A high-performance blockchain platform combining Proof-of-History (PoH) with Proof-of-Stake consensus, enabling parallel transaction processing for exceptional throughput exceeding 65,000 TPS. Uses single-layer architecture where all transactions process on the base layer, prioritizing speed, throughput, and low latency.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Solana\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "content": "- ### OntologyBlock\n  id:: solana-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0566\n\t- preferred-term:: Solana\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A high-performance blockchain platform combining Proof-of-History (PoH) with Proof-of-Stake consensus, enabling parallel transaction processing for exceptional throughput exceeding 65,000 TPS. Uses single-layer architecture where all transactions process on the base layer, prioritizing speed, throughput, and low latency.\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: bc:Solana\n\t- belongsToDomain:: [[Blockchain]]",
   "backlinks": [
-    "Digital Twin of the Customer",
+    "AI-Augmented Software Engineering",
     "Runes and Glyphs",
-    "BC 0112 inflationary token",
-    "Decentralized Finance"
+    "Decentralized Autonomous Organization (DAO)",
+    "Blockchain Network",
+    "Block Time"
   ],
   "wiki_links": [
-    "BlockchainTechnology",
     "Blockchain"
   ],
   "ontology": {
@@ -17,17 +17,17 @@
     "preferred_term": "Solana",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/blockchain#Solana",
-    "source_domain": "blockchain",
-    "domain": "blockchain",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
     "definition": "A high-performance blockchain platform combining Proof-of-History (PoH) with Proof-of-Stake consensus, enabling parallel transaction processing for exceptional throughput exceeding 65,000 TPS. Uses single-layer architecture where all transactions process on the base layer, prioritizing speed, throughput, and low latency.",
     "scope_note": null,
     "status": "complete",
     "maturity": "established",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-11-13",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "bc:Solana",
@@ -54,10 +54,11 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

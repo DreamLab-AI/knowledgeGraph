@@ -1,0 +1,55 @@
+{
+  "id": "Layer2",
+  "title": "Layer2",
+  "content": "- ### OntologyBlock\n  id:: layer2-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0103\n\t- preferred-term:: Layer2\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Secondary frameworks built atop Layer 1 blockchains that execute transactions off-chain while leveraging the security and finality of the underlying base layer, enabling scalability improvements.\n\t- maturity:: mature\n\t- owl:class:: bc:Layer2\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Object\n\t- owl:equivalentClass:: mv:Layer2\n\t- belongsToDomain:: [[BlockchainDomain]]\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "BlockchainDomain"
+  ],
+  "ontology": {
+    "term_id": "BC-0103",
+    "preferred_term": "Layer2",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#Layer2",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
+    "definition": "Secondary frameworks built atop Layer 1 blockchains that execute transactions off-chain while leveraging the security and finality of the underlying base layer, enabling scalability improvements.",
+    "scope_note": null,
+    "status": "active",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:Layer2",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "Deployer",
+  "title": "Deployer",
+  "content": "- ### OntologyBlock\n  id:: deployer-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0508\n\t- preferred-term:: Deployer\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A natural or legal person, public authority, agency or other body using an AI system under its authority except where the AI system is used in the course of a personal non-professional activity.\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Deployer))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Deployer \"Deployer\"@en)\n(AnnotationAssertion rdfs:comment :Deployer \"A natural or legal person, public authority, agency or other body using an AI system under its authority except where the AI system is used in the course of a personal non-professional activity.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Deployer \"mv-1761742247914\"^^xsd:string)\n```\n\n## Source\n\n**Primary**: EU AI Act Article 3(4)\n**Reference**: Article 26 (Deployer Obligations)\n\n## Regulatory Context\n\nDeployers are end-users of AI systems in professional contexts. They bear responsibilities for proper use, human oversight, and monitoring, particularly for high-risk AI systems. The AI Act recognises deployers as critical actors in ensuring real-world AI system accountability.\n\n## Key Characteristics\n\n### Who Qualifies as Deployer?\n\n#### Professional Use Contexts\n- **Employers**: Using AI for HR, workforce management\n- **Public authorities**: Government AI deployment\n- **Healthcare providers**: AI-assisted diagnosis, treatment\n- **Financial institutions**: Credit scoring, fraud detection\n- **Educational institutions**: AI for admissions, assessment\n- **Law enforcement**: Biometric identification, risk assessment\n\n#### Exclusion\n**Not deployers**:\n- Individuals using AI for **personal non-professional** activities\n  - Personal photo editing\n  - Consumer chatbots for leisure\n  - Entertainment AI applications\n\n### Authority Criterion\nSystem used \"under its authority\" means:\n- **Control**: Deployer determines how/when system operates\n- **Purpose**: Deployer sets objectives for AI use\n- **Responsibility**: Deployer accountable for deployment consequences\n\n## Deployer Obligations for High-Risk AI (Article 26)\n\n### 1. Instructions for Use Compliance (Article 26(1))\n- **Read and understand** provider's instructions\n- **Follow specifications** for intended purpose\n- **Respect limitations** indicated by provider\n\n### 2. Human Oversight (Article 26(2))\nAssign human oversight to persons who:\n- Have **necessary competence, training, authority**\n- Are **supported by adequate resources**\n\nOversight must enable natural persons to:\n- Understand system capabilities and limitations\n- Monitor operation\n- Interpret outputs\n- Override or interrupt system (including \"stop\" button)\n- Recognise anomalies, dysfunctions, unexpected performance\n\n### 3. Input Data Monitoring (Article 26(3))\nMonitor operation with particular attention to:\n- **Input data quality**: Relevant to intended purpose\n- **Representation**: Appropriate for deployment context\n\n### 4. Logging Review (Article 26(4))\nKeep and use logs provided by high-risk AI system:\n- **Accessibility**: Logs available to deployer\n- **Purpose**: Monitoring, incident investigation, compliance verification\n\n### 5. Fundamental Rights Impact Assessment (Article 27)\n**Mandatory for**:\n- **Public authorities** deploying high-risk AI\n- **Private entities providing public services** (education, healthcare, social services, law enforcement support)\n\n**Before** putting into service, conduct assessment containing:\n\n#### FRIA Elements\n- **System description**: High-risk AI system and intended use\n- **Deployment timeframe**: Duration and scope\n- **Categories of persons**: Affected natural persons and groups\n- **Fundamental rights risks**: Specific rights potentially impacted\n- **Beneficiaries**: Persons or groups benefiting from use\n- **Risk likelihood and severity**: Assessed fundamental rights impact\n- **Complementary measures**: Human oversight, complaint mechanisms, redress\n- **Consultation**: Works council or employee representatives (where applicable)\n\n**Submission**: Provide FRIA to market surveillance authority upon request\n\n### 6. Monitoring Obligations (Article 26(5))\n- **Suspend use** if system becomes non-compliant\n- **Inform provider and distributor** of suspected non-compliance\n- **Inform provider and market surveillance authority** if serious incident occurs\n\n### 7. Cooperation (Article 26(8))\nUpon market surveillance authority request:\n- **Provide documentation**: FRIA, monitoring records\n- **Grant access**: Allow inspection of logs\n- **Explain use**: Deployment context and measures\n\n## Deployer Becoming Provider (Article 28)\n\nA deployer becomes a provider (with full provider obligations) when making:\n\n### Substantial Modification\nChanges to high-risk AI system that:\n- Alter **intended purpose** beyond provider's specifications\n- Involve **substantial modification** not foreseen by provider\n\n**Examples**:\n- Hiring AI repurposed for performance evaluation\n- Credit scoring system modified for insurance pricing\n- Educational assessment tool altered for employment screening\n\n**Consequence**: Full provider obligations apply, including conformity assessment\n\n## Sector-Specific Deployer Obligations\n\n### Law Enforcement, Migration, Border Management (Article 26(6)-(7))\n\n#### Prior Fundamental Rights Impact Assessment\nRequired before first use.\n\n#### Registration in EU Database\nLog each use case in publicly accessible database managed by Commission.\n\n#### Information to Affected Persons\nInform individuals subjected to high-risk AI system, except when:\n- Compromises ongoing investigation\n- Impairs operational security\n- Violates procedural law\n\n#### Complaint Procedures\nEnsure access to effective remedies for affected persons.\n\n### Biometric Identification Deployers (Article 26(7))\n\n#### Real-Time RBI (if legally authorised under Article 5 exceptions)\n- Prior judicial or administrative authorisation\n- Fundamental rights impact assessment\n- Two-person verification of results\n- Temporal/geographic/personal scope limitations\n\n## Record-Keeping Requirements\n\nDeployers must maintain:\n- **Logs from AI system**: Retention period per provider instructions\n- **FRIA documentation**: Throughout deployment and available for inspection\n- **Use case registration**: Law enforcement database entries\n- **Monitoring records**: Performance tracking, incident reports\n\n**Retention**: As long as system in use + reasonable period after (typically aligned with data protection retention)\n\n## Penalties for Non-Compliance\n\nDeployers violating obligations face:\n- **Administrative fines**: Proportionate to infringement severity\n- **Injunctions**: Orders to suspend use or implement corrective measures\n- **Liability**: Civil damages to affected persons (Product Liability, AI Liability Directive)\n\n**Specific penalties**: Member States determine deployer fine amounts (Article 99 focuses on providers)\n\n## Rights and Protections\n\n### Access to Information\nDeployers entitled to:\n- Clear instructions for use from provider\n- Transparency about system capabilities and limitations\n- Technical support from provider\n\n### Legitimate Use Defence\nDeployers not liable if:\n- Followed provider's instructions\n- Conducted required oversight\n- Properly monitored inputs and logs\n- Reported incidents promptly\n\n**Provider liability**: May extend to deployer harm if provider instructions inadequate\n\n## Deployer Categories\n\n### Public Authority Deployers\n**Enhanced obligations**:\n- Mandatory FRIA\n- Public transparency\n- Complaint mechanisms\n- Democratic oversight\n\n### Private Entity Deployers (Public Services)\n**Quasi-public obligations** when providing:\n- Healthcare\n- Education\n- Social services\n- Transport\n- Utilities\n\n### Commercial Deployers\n**Standard obligations**: Human oversight, monitoring, cooperation\n\n## Related Concepts\n\n- **Provider** (AI-0127): AI system developer/supplier\n- **Instructions for Use** (AI-0144): Deployer enablement documentation\n- **Human Oversight Requirements** (AI-0140): Deployer implementation\n- **Fundamental Rights Impact Assessment** (AI-0153): Public authority obligation\n\n## Practical Guidance\n\n### Due Diligence Before Deployment\n1. **Risk classification verification**: Confirm high-risk status\n2. **Provider reputation assessment**: Credible, established provider\n3. **Documentation review**: Complete instructions, CE marking\n4. **Internal capability assessment**: Sufficient expertise for oversight\n5. **FRIA preparation**: If public authority or public service\n\n### Operational Best Practices\n- **Staff training**: Human oversight competence development\n- **Incident response plan**: Serious incident reporting readiness\n- **Regular audits**: Periodic review of AI system performance\n- **Stakeholder engagement**: Affected persons, works councils, civil society\n\n### Red Flags to Suspend Use\n- Unexpected bias in outputs\n- Accuracy degradation\n- Security vulnerabilities discovered\n- Provider recalls or warnings\n- Serious incidents\n\n## See Also\n\n- EU AI Act Article 26 (Obligations of Deployers of High-Risk AI Systems)\n- Article 27 (Fundamental Rights Impact Assessment for High-Risk AI Systems)\n- Article 28 (Obligations of Deployers of High-Risk AI Systems That Are Public Authorities)\n- Commission Deployer Guidance (expected 2026)\n\t- maturity:: draft\n\t- owl:class:: mv:Deployer\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- is-subclass-of:: [[Metaverse]]\n\t- belongsToDomain:: [[MetaverseDomain]]",
+  "backlinks": [],
+  "wiki_links": [
+    "MetaverseDomain",
+    "Metaverse"
+  ],
+  "ontology": {
+    "term_id": "AI-0508",
+    "preferred_term": "Deployer",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#Deployer",
+    "source_domain": null,
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "A natural or legal person, public authority, agency or other body using an AI system under its authority except where the AI system is used in the course of a personal non-professional activity.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:Deployer",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'ai'"
+      ]
+    }
+  }
+}

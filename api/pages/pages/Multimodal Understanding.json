@@ -1,28 +1,27 @@
 {
   "id": "Multimodal Understanding",
   "title": "Multimodal Understanding",
-  "content": "- ### OntologyBlock\n  id:: multimodalunderstanding-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0867\n    - filename-history:: [\"AI-0867-multimodalunderstanding.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[ArtificialIntelligenceTechnology]]\n    - term-id:: AI-0867\n    - preferred-term:: Multimodal Understanding\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:MultimodalUnderstanding\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "content": "- ### OntologyBlock\n  id:: multimodalunderstanding-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0867\n\t- preferred-term:: Multimodal Understanding\n\t- status:: complete\n\t- public-access:: true\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: ai:MultimodalUnderstanding\n\t- belongsToDomain:: [[Artificial Intelligence]]",
   "backlinks": [],
   "wiki_links": [
-    "Artificial Intelligence",
-    "ArtificialIntelligenceTechnology"
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0867",
     "preferred_term": "Multimodal Understanding",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/ai#MultimodalUnderstanding",
-    "source_domain": "ai",
+    "source_domain": null,
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
-    "definition": "- maturity:: established",
+    "definition": null,
     "scope_note": null,
     "status": "complete",
     "maturity": "established",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-11-13",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "ai:MultimodalUnderstanding",
@@ -49,6 +48,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

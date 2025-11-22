@@ -1,0 +1,57 @@
+{
+  "id": "SimCLR",
+  "title": "SimCLR",
+  "content": "- ### OntologyBlock\n  id:: simclr-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0285\n\t- preferred-term:: SimCLR\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A self-supervised learning framework that learns visual representations through contrastive learning with data augmentation. A linear classifier on SimCLR representations achieves 76.5% top-1 accuracy, matching supervised ResNet-50 performance.\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Simclr))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Simclr \"SimCLR\"@en)\n(AnnotationAssertion rdfs:comment :Simclr \"A self-supervised learning framework that learns visual representations through contrastive learning with data augmentation. A linear classifier on SimCLR representations achieves 76.5% top-1 accuracy, matching supervised ResNet-50 performance.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Simclr \"AI-0285\"^^xsd:string)\n(DataPropertyAssertion :isAITechnology :Simclr \"true\"^^xsd:boolean)\n```\n\n## Academic Context\n\nSimCLR demonstrates that simple contrastive learning with strong data augmentation can achieve supervised-level performance without labels.\n\n**Primary Source**: Chen et al., \"A Simple Framework for Contrastive Learning of Visual Representations\", arXiv:2002.05709 (2020)\n\n## Key Characteristics\n\n- Contrastive self-supervised learning\n- Strong data augmentation critical\n- Large batch sizes beneficial\n- Nonlinear projections important\n- Matches supervised performance\n- Influential vision framework\n\n## Related Concepts\n\n- **Contrastive Learning**: Core technique\n- **Data Augmentation**: Critical component\n- **Self-Supervised Learning**: Category\n\n## UK English Notes\n\n- \"Whilst learning\" (British usage)\n\n**Last Updated**: 2025-10-27\n**Verification Status**: Verified against SimCLR paper (arXiv:2002.05709)\n\t- maturity:: draft\n\t- owl:class:: mv:SimCLR\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- is-subclass-of:: [[Extended Reality (XR)]]\n\t- belongsToDomain:: [[MetaverseDomain]]",
+  "backlinks": [],
+  "wiki_links": [
+    "MetaverseDomain",
+    "Extended Reality (XR)"
+  ],
+  "ontology": {
+    "term_id": "AI-0285",
+    "preferred_term": "SimCLR",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#SimCLR",
+    "source_domain": null,
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "A self-supervised learning framework that learns visual representations through contrastive learning with data augmentation. A linear classifier on SimCLR representations achieves 76.5% top-1 accuracy, matching supervised ResNet-50 performance.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:SimCLR",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'ai'"
+      ]
+    }
+  }
+}

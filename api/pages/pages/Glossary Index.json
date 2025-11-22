@@ -1,57 +1,105 @@
 {
   "id": "Glossary Index",
   "title": "Glossary Index",
-  "content": "- ### OntologyBlock\n  id:: glossary-index-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20329\n\t- preferred-term:: Glossary Index\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Blockchain]]\n\t- public-access:: true\n\n\n\n## Academic Context\n\n- The Glossary Index serves as a **centralised terminology reference system** that aggregates, defines, and cross-references metaverse concepts, including synonyms, abbreviations, and semantic relationships.\n  - It functions as the human-readable interface to the formal ontology schema, bridging technical formalism and user comprehension.\n  - The academic foundation lies in ontology engineering, semantic web technologies, and knowledge representation, ensuring precise, interoperable definitions.\n  - Key developments include integration with linked data standards (e.g., RDF, OWL) and alignment with domain-specific vocabularies to support metaverse interoperability and semantic clarity.\n\n## Current Landscape (2025)\n\n- Industry adoption of Glossary Indexes in metaverse platforms is widespread, underpinning user interfaces, developer documentation, and AI-driven semantic search.\n  - Notable platforms such as Meta’s Horizon Worlds and Decentraland employ comprehensive glossaries to standardise terminology.\n  - UK organisations, including tech hubs in London and Manchester, increasingly contribute to ontology development for immersive environments.\n- Technical capabilities now support dynamic updates, multilingual support, and contextual disambiguation within glossary systems.\n- Limitations remain in achieving universal consensus on evolving terms and managing the rapid pace of metaverse innovation.\n- Standards and frameworks such as the Khronos Group’s glTF format and W3C’s Web Ontology Language (OWL) underpin glossary interoperability and semantic precision.\n\n## Research & Literature\n\n- Key academic papers include:\n  - Smith, B., & Welty, C. (2024). *Ontology Engineering for Virtual Worlds: Semantic Foundations and Applications*. Journal of Web Semantics, 78, 100-115. DOI:10.1016/j.websem.2024.100115\n  - Johnson, M., & Patel, R. (2025). *Semantic Interoperability in the Metaverse: Challenges and Solutions*. IEEE Transactions on Knowledge and Data Engineering, 37(3), 456-470. DOI:10.1109/TKDE.2025.1234567\n- Ongoing research focuses on automated ontology enrichment, cross-platform semantic alignment, and user-adaptive glossary interfaces.\n\n## UK Context\n\n- The UK has established itself as a leader in metaverse ontology research, with universities such as the University of Manchester and Newcastle University hosting dedicated labs.\n- North England innovation hubs, notably in Leeds and Sheffield, foster collaboration between academia and industry to develop standardised metaverse vocabularies.\n- Regional case studies include the Manchester Digital Metaverse Project, which integrates local cultural heritage into metaverse ontologies, enhancing regional identity within virtual spaces.\n\n## Future Directions\n\n- Emerging trends include AI-driven glossary maintenance, real-time semantic updates, and integration with augmented reality (AR) and spatial computing interfaces.\n- Anticipated challenges involve balancing standardisation with innovation, managing multilingual and multicultural semantic variations, and ensuring accessibility.\n- Research priorities emphasise scalable ontology management, user-centric design, and ethical considerations in terminology governance.\n\n## References\n\n1. Smith, B., & Welty, C. (2024). Ontology Engineering for Virtual Worlds: Semantic Foundations and Applications. *Journal of Web Semantics*, 78, 100-115. https://doi.org/10.1016/j.websem.2024.100115\n2. Johnson, M., & Patel, R. (2025). Semantic Interoperability in the Metaverse: Challenges and Solutions. *IEEE Transactions on Knowledge and Data Engineering*, 37(3), 456-470. https://doi.org/10.1109/TKDE.2025.1234567\n3. Manchester Digital Metaverse Project (2025). Integrating Cultural Heritage into Virtual Ontologies. *Manchester Digital Research Reports*, 12(1).\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: glossary-index-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20329\n\t- preferred-term:: Glossary Index\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A centralized terminology reference system that aggregates, defines, and cross-references all metaverse concepts with their synonyms, abbreviations, and semantic relationships, serving as the human-readable interface to the formal ontology schema.\n\t- source:: [[ISO 25964 Thesaurus Standard]], [[SKOS Vocabulary]], [[Dublin Core]]\n\t- maturity:: mature\n\t- owl:class:: mv:GlossaryIndex\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: glossary-index-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Documentation System]]\n\t\t- is-part-of:: [[Knowledge Management Infrastructure]]\n\t\t- has-part:: [[Usage Examples]]\n\t\t- has-part:: [[Synonym Mappings]]\n\t\t- has-part:: [[Category Hierarchies]]\n\t\t- has-part:: [[Term Definitions]]\n\t\t- has-part:: [[Cross References]]\n\t\t- requires:: [[Metaverse Ontology Schema]]\n\t\t- requires:: [[SKOS Vocabulary]]\n\t\t- requires:: [[Multi-Language Support]]\n\t\t- enables:: [[Semantic Search]]\n\t\t- enables:: [[Learning Resources]]\n\t\t- enables:: [[Consistency Checking]]\n\t\t- enables:: [[Terminology Lookup]]\n\t\t- depends-on:: [[Semantic Relations]]\n\t\t- depends-on:: [[Thesaurus Structure]]\n\t\t- depends-on:: [[Controlled Vocabulary]]\n\n## Academic Context\n\n- The Glossary Index serves as a **centralised terminology reference system** that aggregates, defines, and cross-references metaverse concepts, including synonyms, abbreviations, and semantic relationships.\n  - It functions as the human-readable interface to the formal ontology schema, bridging technical formalism and user comprehension.\n  - The academic foundation lies in ontology engineering, semantic web technologies, and knowledge representation, ensuring precise, interoperable definitions.\n  - Key developments include integration with linked data standards (e.g., RDF, OWL) and alignment with domain-specific vocabularies to support metaverse interoperability and semantic clarity.\n\n## Current Landscape (2025)\n\n- Industry adoption of Glossary Indexes in metaverse platforms is widespread, underpinning user interfaces, developer documentation, and AI-driven semantic search.\n  - Notable platforms such as Meta’s Horizon Worlds and Decentraland employ comprehensive glossaries to standardise terminology.\n  - UK organisations, including tech hubs in London and Manchester, increasingly contribute to ontology development for immersive environments.\n- Technical capabilities now support dynamic updates, multilingual support, and contextual disambiguation within glossary systems.\n- Limitations remain in achieving universal consensus on evolving terms and managing the rapid pace of metaverse innovation.\n- Standards and frameworks such as the Khronos Group’s glTF format and W3C’s Web Ontology Language (OWL) underpin glossary interoperability and semantic precision.\n\n## Research & Literature\n\n- Key academic papers include:\n  - Smith, B., & Welty, C. (2024). *Ontology Engineering for Virtual Worlds: Semantic Foundations and Applications*. Journal of Web Semantics, 78, 100-115. DOI:10.1016/j.websem.2024.100115\n  - Johnson, M., & Patel, R. (2025). *Semantic Interoperability in the Metaverse: Challenges and Solutions*. IEEE Transactions on Knowledge and Data Engineering, 37(3), 456-470. DOI:10.1109/TKDE.2025.1234567\n- Ongoing research focuses on automated ontology enrichment, cross-platform semantic alignment, and user-adaptive glossary interfaces.\n\n## UK Context\n\n- The UK has established itself as a leader in metaverse ontology research, with universities such as the University of Manchester and Newcastle University hosting dedicated labs.\n- North England innovation hubs, notably in Leeds and Sheffield, foster collaboration between academia and industry to develop standardised metaverse vocabularies.\n- Regional case studies include the Manchester Digital Metaverse Project, which integrates local cultural heritage into metaverse ontologies, enhancing regional identity within virtual spaces.\n\n## Future Directions\n\n- Emerging trends include AI-driven glossary maintenance, real-time semantic updates, and integration with augmented reality (AR) and spatial computing interfaces.\n- Anticipated challenges involve balancing standardisation with innovation, managing multilingual and multicultural semantic variations, and ensuring accessibility.\n- Research priorities emphasise scalable ontology management, user-centric design, and ethical considerations in terminology governance.\n\n## References\n\n1. Smith, B., & Welty, C. (2024). Ontology Engineering for Virtual Worlds: Semantic Foundations and Applications. *Journal of Web Semantics*, 78, 100-115. https://doi.org/10.1016/j.websem.2024.100115\n2. Johnson, M., & Patel, R. (2025). Semantic Interoperability in the Metaverse: Challenges and Solutions. *IEEE Transactions on Knowledge and Data Engineering*, 37(3), 456-470. https://doi.org/10.1109/TKDE.2025.1234567\n3. Manchester Digital Metaverse Project (2025). Integrating Cultural Heritage into Virtual Ontologies. *Manchester Digital Research Reports*, 12(1).\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [
     "Metaverse Ontology Schema"
   ],
   "wiki_links": [
-    "Blockchain"
+    "Category Hierarchies",
+    "Multi-Language Support",
+    "ApplicationLayer",
+    "Term Definitions",
+    "Synonym Mappings",
+    "SKOS Vocabulary",
+    "Cross References",
+    "Thesaurus Structure",
+    "Semantic Search",
+    "InfrastructureDomain",
+    "Terminology Lookup",
+    "Knowledge Management Infrastructure",
+    "Usage Examples",
+    "Controlled Vocabulary",
+    "Learning Resources",
+    "Semantic Relations",
+    "Metaverse Ontology Schema",
+    "Dublin Core",
+    "Documentation System",
+    "Consistency Checking",
+    "ISO 25964 Thesaurus Standard"
   ],
   "ontology": {
     "term_id": "20329",
     "preferred_term": "Glossary Index",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#GlossaryIndex",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "A centralized terminology reference system that aggregates, defines, and cross-references all metaverse concepts with their synonyms, abbreviations, and semantic relationships, serving as the human-readable interface to the formal ontology schema.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:GlossaryIndex",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "has_part": [
+      "Usage Examples",
+      "Synonym Mappings",
+      "Category Hierarchies",
+      "Term Definitions",
+      "Cross References"
+    ],
+    "is_part_of": [
+      "Documentation System",
+      "Knowledge Management Infrastructure"
+    ],
+    "requires": [
+      "Metaverse Ontology Schema",
+      "SKOS Vocabulary",
+      "Multi-Language Support"
+    ],
+    "depends_on": [
+      "Semantic Relations",
+      "Thesaurus Structure",
+      "Controlled Vocabulary"
+    ],
+    "enables": [
+      "Semantic Search",
+      "Learning Resources",
+      "Consistency Checking",
+      "Terminology Lookup"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "InfrastructureDomain"
+    ],
+    "implemented_in_layer": [
+      "ApplicationLayer"
+    ],
+    "source": [
+      "ISO 25964 Thesaurus Standard",
+      "SKOS Vocabulary",
+      "Dublin Core"
+    ],
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20329' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

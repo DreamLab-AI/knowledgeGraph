@@ -1,55 +1,115 @@
 {
   "id": "Identity Provider (IdP)",
   "title": "Identity Provider (IdP)",
-  "content": "- ### OntologyBlock\n  id:: identity-provider-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20283\n\t- preferred-term:: Identity Provider (IdP)\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Metaverse]]\n\t- public-access:: true\n\n\n## Academic Context\n\n- Identity Providers (IdPs) are foundational components in digital identity and access management (IAM) systems, responsible for creating, maintaining, and authenticating digital identities of principals (users or entities) within federated or distributed networks.\n  - They operate by managing credentials and verifying identities to enable secure access to resources, often within federations where trust relationships exist between IdPs and service providers (SPs).\n  - The academic foundations of IdPs lie in federated identity management, cryptographic authentication protocols, and trust frameworks, drawing from standards such as Security Assertion Markup Language (SAML), OAuth 2.0, and OpenID Connect (OIDC).\n  - Key developments include the evolution from simple username-password authentication to multi-factor authentication (MFA) and the integration of biometric and device-based identity factors, enhancing security and user experience.\n\n## Current Landscape (2025)\n\n- Industry adoption of IdPs is widespread across cloud services, enterprise IT, and consumer-facing applications, with major providers including Microsoft Azure Active Directory, Okta, Google Identity, and various open-source solutions.\n  - IdPs enable features such as single sign-on (SSO), multi-factor authentication, and identity federation, simplifying user access while maintaining robust security.\n  - The role of IdPs has expanded to include management of non-human identities (e.g., machine identities) and integration with zero-trust security architectures.\n- In the UK, especially in North England, organisations in sectors such as finance, healthcare, and public services increasingly deploy IdPs to comply with stringent data protection regulations (e.g., UK GDPR) and to support digital transformation initiatives.\n  - Innovation hubs in cities like Manchester and Leeds foster development of identity management solutions tailored to local needs, including federated identity for regional health and education networks.\n- Technical capabilities of modern IdPs include:\n  - Support for multiple authentication protocols (SAML, OAuth 2.0, OIDC).\n  - Integration with cryptographic key stores and policy engines for fine-grained access control.\n  - Scalability to handle millions of identities with high availability.\n- Limitations include challenges in interoperability across heterogeneous systems, privacy concerns related to identity data sharing, and the complexity of managing trust relationships in large federations.\n\n## Research & Literature\n\n- Key academic papers and sources:\n  - Hardt, D. (2012). The OAuth 2.0 Authorization Framework. RFC 6749. DOI: 10.17487/RFC6749\n  - Cantor, S., Kemp, J., Philpott, R., & Maler, E. (2005). Assertions and Protocols for the OASIS Security Assertion Markup Language (SAML) V2.0. OASIS Standard. URL: https://docs.oasis-open.org/security/saml/v2.0/\n  - OpenID Foundation. (2014). OpenID Connect Core 1.0. URL: https://openid.net/specs/openid-connect-core-1_0.html\n  - Research continues on enhancing IdP security against phishing and identity theft, improving privacy-preserving authentication, and enabling decentralized identity models.\n- Ongoing research directions include:\n  - Integration of blockchain and decentralized identifiers (DIDs) to reduce reliance on centralised IdPs.\n  - Use of AI to detect anomalous authentication behaviour.\n  - Enhancing usability without compromising security, especially in multi-factor and passwordless authentication.\n\n## UK Context\n\n- The UK government and private sector have adopted IdP technologies to support digital identity frameworks such as GOV.UK Verify, which relies on federated identity principles.\n- North England hosts innovation clusters focusing on cybersecurity and identity management, with universities and tech companies collaborating on projects to improve identity assurance and privacy.\n- Regional case studies include NHS trusts in Manchester implementing federated IdPs to enable secure access to patient data across multiple healthcare providers, balancing accessibility with compliance to UK data protection laws.\n\n## Future Directions\n\n- Emerging trends:\n  - Increased adoption of passwordless authentication and biometric verification integrated into IdPs.\n  - Greater emphasis on privacy-enhancing technologies (PETs) within identity management.\n  - Expansion of IdP roles to support Internet of Things (IoT) and machine-to-machine authentication.\n- Anticipated challenges:\n  - Balancing user convenience with stringent security requirements.\n  - Managing trust and interoperability in increasingly complex federated environments.\n  - Addressing regulatory changes and cross-border data sharing concerns.\n- Research priorities:\n  - Developing standards for decentralized and self-sovereign identity (SSI).\n  - Enhancing resilience of IdPs against sophisticated cyberattacks.\n  - Improving transparency and user control over identity data.\n\n## References\n\n1. Hardt, D. (2012). The OAuth 2.0 Authorization Framework. RFC 6749. https://doi.org/10.17487/RFC6749\n2. Cantor, S., Kemp, J., Philpott, R., & Maler, E. (2005). Assertions and Protocols for the OASIS Security Assertion Markup Language (SAML) V2.0. OASIS Standard. https://docs.oasis-open.org/security/saml/v2.0/\n3. OpenID Foundation. (2014). OpenID Connect Core 1.0. https://openid.net/specs/openid-connect-core-1_0.html\n4. Ping Identity. Identity Providers: Streamline Secure Access Efficiently. https://www.pingidentity.com/en/resources/identity-fundamentals/identity-providers-service-providers.html\n5. CrowdStrike. What Is Identity Provider (IdP) Security? https://www.crowdstrike.com/en-us/cybersecurity-101/identity-protection/identity-provider-idp-security/\n\n## Metadata\n\n- Last Updated: 2025-11-11\n- Review Status: Comprehensive editorial review\n- Verification: Academic sources verified\n- Regional Context: UK/North England where applicable",
-  "backlinks": [],
+  "content": "- ### OntologyBlock\n  id:: identity-provider-idp-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20283\n\t- preferred-term:: Identity Provider (IdP)\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: An authentication service system that creates, maintains, and manages identity information for principals while providing authentication services to relying party applications within a federation or distributed network.\n\t- source:: [[OASIS SAML]], [[OpenID Foundation]], [[IETF OAuth]]\n\t- maturity:: mature\n\t- owl:class:: mv:IdentityProvider\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[TrustAndGovernanceDomain]]\n\t- implementedInLayer:: [[MiddlewareLayer]]\n\t- #### Relationships\n\t  id:: identity-provider-idp-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Identity Management System]]\n\t\t- is-part-of:: [[Federation Infrastructure]]\n\t\t- has-part:: [[Session Manager]]\n\t\t- has-part:: [[User Directory]]\n\t\t- has-part:: [[Policy Engine]]\n\t\t- has-part:: [[Authentication Server]]\n\t\t- has-part:: [[Credential Store]]\n\t\t- has-part:: [[Token Issuer]]\n\t\t- requires:: [[User Database]]\n\t\t- requires:: [[Cryptographic Key Store]]\n\t\t- requires:: [[Authentication Protocol]]\n\t\t- enables:: [[Single Sign-On (SSO)]]\n\t\t- enables:: [[Access Control]]\n\t\t- enables:: [[Multi-Factor Authentication]]\n\t\t- enables:: [[User Provisioning]]\n\t\t- enables:: [[Identity Federation]]\n\t\t- is-required-by:: [[Identity Federation]]\n\t\t- depends-on:: [[Directory Service]]\n\t\t- depends-on:: [[PKI Infrastructure]]\n\t\t- depends-on:: [[Credential Schema]]\n\n## Academic Context\n\n- Identity Providers (IdPs) are foundational components in digital identity and access management (IAM) systems, responsible for creating, maintaining, and authenticating digital identities of principals (users or entities) within federated or distributed networks.\n  - They operate by managing credentials and verifying identities to enable secure access to resources, often within federations where trust relationships exist between IdPs and service providers (SPs).\n  - The academic foundations of IdPs lie in federated identity management, cryptographic authentication protocols, and trust frameworks, drawing from standards such as Security Assertion Markup Language (SAML), OAuth 2.0, and OpenID Connect (OIDC).\n  - Key developments include the evolution from simple username-password authentication to multi-factor authentication (MFA) and the integration of biometric and device-based identity factors, enhancing security and user experience.\n\n## Current Landscape (2025)\n\n- Industry adoption of IdPs is widespread across cloud services, enterprise IT, and consumer-facing applications, with major providers including Microsoft Azure Active Directory, Okta, Google Identity, and various open-source solutions.\n  - IdPs enable features such as single sign-on (SSO), multi-factor authentication, and identity federation, simplifying user access while maintaining robust security.\n  - The role of IdPs has expanded to include management of non-human identities (e.g., machine identities) and integration with zero-trust security architectures.\n- In the UK, especially in North England, organisations in sectors such as finance, healthcare, and public services increasingly deploy IdPs to comply with stringent data protection regulations (e.g., UK GDPR) and to support digital transformation initiatives.\n  - Innovation hubs in cities like Manchester and Leeds foster development of identity management solutions tailored to local needs, including federated identity for regional health and education networks.\n- Technical capabilities of modern IdPs include:\n  - Support for multiple authentication protocols (SAML, OAuth 2.0, OIDC).\n  - Integration with cryptographic key stores and policy engines for fine-grained access control.\n  - Scalability to handle millions of identities with high availability.\n- Limitations include challenges in interoperability across heterogeneous systems, privacy concerns related to identity data sharing, and the complexity of managing trust relationships in large federations.\n\n## Research & Literature\n\n- Key academic papers and sources:\n  - Hardt, D. (2012). The OAuth 2.0 Authorization Framework. RFC 6749. DOI: 10.17487/RFC6749\n  - Cantor, S., Kemp, J., Philpott, R., & Maler, E. (2005). Assertions and Protocols for the OASIS Security Assertion Markup Language (SAML) V2.0. OASIS Standard. URL: https://docs.oasis-open.org/security/saml/v2.0/\n  - OpenID Foundation. (2014). OpenID Connect Core 1.0. URL: https://openid.net/specs/openid-connect-core-1_0.html\n  - Research continues on enhancing IdP security against phishing and identity theft, improving privacy-preserving authentication, and enabling decentralized identity models.\n- Ongoing research directions include:\n  - Integration of blockchain and decentralized identifiers (DIDs) to reduce reliance on centralised IdPs.\n  - Use of AI to detect anomalous authentication behaviour.\n  - Enhancing usability without compromising security, especially in multi-factor and passwordless authentication.\n\n## UK Context\n\n- The UK government and private sector have adopted IdP technologies to support digital identity frameworks such as GOV.UK Verify, which relies on federated identity principles.\n- North England hosts innovation clusters focusing on cybersecurity and identity management, with universities and tech companies collaborating on projects to improve identity assurance and privacy.\n- Regional case studies include NHS trusts in Manchester implementing federated IdPs to enable secure access to patient data across multiple healthcare providers, balancing accessibility with compliance to UK data protection laws.\n\n## Future Directions\n\n- Emerging trends:\n  - Increased adoption of passwordless authentication and biometric verification integrated into IdPs.\n  - Greater emphasis on privacy-enhancing technologies (PETs) within identity management.\n  - Expansion of IdP roles to support Internet of Things (IoT) and machine-to-machine authentication.\n- Anticipated challenges:\n  - Balancing user convenience with stringent security requirements.\n  - Managing trust and interoperability in increasingly complex federated environments.\n  - Addressing regulatory changes and cross-border data sharing concerns.\n- Research priorities:\n  - Developing standards for decentralized and self-sovereign identity (SSI).\n  - Enhancing resilience of IdPs against sophisticated cyberattacks.\n  - Improving transparency and user control over identity data.\n\n## References\n\n1. Hardt, D. (2012). The OAuth 2.0 Authorization Framework. RFC 6749. https://doi.org/10.17487/RFC6749\n2. Cantor, S., Kemp, J., Philpott, R., & Maler, E. (2005). Assertions and Protocols for the OASIS Security Assertion Markup Language (SAML) V2.0. OASIS Standard. https://docs.oasis-open.org/security/saml/v2.0/\n3. OpenID Foundation. (2014). OpenID Connect Core 1.0. https://openid.net/specs/openid-connect-core-1_0.html\n4. Ping Identity. Identity Providers: Streamline Secure Access Efficiently. https://www.pingidentity.com/en/resources/identity-fundamentals/identity-providers-service-providers.html\n5. CrowdStrike. What Is Identity Provider (IdP) Security? https://www.crowdstrike.com/en-us/cybersecurity-101/identity-protection/identity-provider-idp-security/\n\n## Metadata\n\n- Last Updated: 2025-11-11\n- Review Status: Comprehensive editorial review\n- Verification: Academic sources verified\n- Regional Context: UK/North England where applicable",
+  "backlinks": [
+    "Identity Federation"
+  ],
   "wiki_links": [
-    "Metaverse"
+    "Session Manager",
+    "OASIS SAML",
+    "Policy Engine",
+    "Single Sign-On (SSO)",
+    "PKI Infrastructure",
+    "Cryptographic Key Store",
+    "Token Issuer",
+    "Credential Schema",
+    "User Provisioning",
+    "TrustAndGovernanceDomain",
+    "Directory Service",
+    "Identity Management System",
+    "Identity Federation",
+    "MiddlewareLayer",
+    "Credential Store",
+    "Authentication Server",
+    "User Database",
+    "OpenID Foundation",
+    "User Directory",
+    "Federation Infrastructure",
+    "Authentication Protocol",
+    "Access Control",
+    "IETF OAuth",
+    "Multi-Factor Authentication"
   ],
   "ontology": {
     "term_id": "20283",
     "preferred_term": "Identity Provider (IdP)",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#IdentityProvider",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "An authentication service system that creates, maintains, and manages identity information for principals while providing authentication services to relying party applications within a federation or distributed network.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:IdentityProvider",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "has_part": [
+      "Session Manager",
+      "User Directory",
+      "Policy Engine",
+      "Authentication Server",
+      "Credential Store",
+      "Token Issuer"
+    ],
+    "is_part_of": [
+      "Identity Management System",
+      "Federation Infrastructure"
+    ],
+    "requires": [
+      "User Database",
+      "Cryptographic Key Store",
+      "Authentication Protocol"
+    ],
+    "depends_on": [
+      "Directory Service",
+      "PKI Infrastructure",
+      "Credential Schema"
+    ],
+    "enables": [
+      "Single Sign-On (SSO)",
+      "Access Control",
+      "Multi-Factor Authentication",
+      "User Provisioning",
+      "Identity Federation"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "TrustAndGovernanceDomain"
+    ],
+    "implemented_in_layer": [
+      "MiddlewareLayer"
+    ],
+    "source": [
+      "OASIS SAML",
+      "OpenID Foundation",
+      "IETF OAuth"
+    ],
+    "other_relationships": {
+      "is-required-by": [
+        "Identity Federation"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20283' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

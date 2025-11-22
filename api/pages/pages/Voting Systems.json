@@ -1,0 +1,58 @@
+{
+  "id": "Voting Systems",
+  "title": "Voting Systems",
+  "content": "- ### OntologyBlock\n  id:: voting-systems-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0495\n\t- preferred-term:: Voting Systems\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Blockchain-based electoral systems employing cryptographic verification, end-to-end verifiability, and distributed ledger technology to enable secure voting whilst facing critical security challenges identified by MIT research showing vulnerabilities allowing vote alteration, academic consensus of \"nearly universal\" agreement that no technology can adequately secure online public elections, and real-world implementations spanning Voatz (80,000+ votes across 50+ elections), Estonia (50%+ votes cast online), and Moscow (65,000 voters) demonstrating both potential cost reductions from $7-25 to under $0.50 per vote and significant security concerns.\n\t- maturity:: draft\n\t- owl:class:: bc:VotingSystems\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[BlockchainDomain]]\n\n## Voting Systems\n\nVoting Systems refers to blockchain-based electoral systems employing cryptographic verification, end-to-end verifiability, and distributed ledger technology to enable secure voting whilst facing critical security challenges identified by mit research showing vulnerabilities allowing vote alteration, academic consensus of \"nearly universal\" agreement that no technology can adequately secure online public elections, and real-world implementations spanning voatz (80,000+ votes across 50+ elections), estonia (50%+ votes cast online), and moscow (65,000 voters) demonstrating both potential cost reductions from $7-25 to under $0.50 per vote and significant security concerns.\n\n- Industry adoption and implementations\n  - Blockchain voting platforms such as Voatz and Scytl have been used in limited trials, primarily for absentee and overseas voters, but large-scale public elections remain rare.\n  - Estonia continues to operate its Internet voting system (i-Voting), which incorporates blockchain for vote logging, though the system is not fully decentralised and relies on national identity infrastructure.\n  - Moscow and other Russian cities have conducted small-scale blockchain voting pilots, but these have faced criticism over transparency and auditability.\n- Notable organisations and platforms\n  - Voatz: Deployed in various US states for military and overseas voters, with reported use in over 50 elections and more than 80,000 votes cast.\n  - Scytl: Provides e-voting solutions in Europe, including blockchain-based components for vote logging and audit trails.\n  - Estonia’s i-Voting: Over 50% of votes in recent national elections have been cast online, with blockchain used for vote storage and integrity cheques.\n- UK and North England examples where relevant\n  - The UK has not adopted blockchain voting for national or local elections, but several pilot projects and academic studies have explored its feasibility.\n  - In North England, universities in Manchester, Leeds, Newcastle, and Sheffield have participated in research collaborations on secure e-voting, often in partnership with government agencies and tech firms.\n  - Local councils in Greater Manchester and West Yorkshire have trialled digital voting for internal elections and community consultations, though these have not yet incorporated blockchain technology.\n- Technical capabilities and limitations\n  - Blockchain voting can provide strong audit trails, tamper-evident logs, and decentralised verification, but it does not solve all security problems.\n  - Key limitations include the vulnerability of voter devices to malware, the risk of denial-of-service attacks, and the difficulty of ensuring voter privacy and coercion resistance.\n  - Cost reductions have been observed in some pilot projects, with estimates suggesting per-vote costs can drop from $7–25 to under $0.50, but these savings are context-dependent and may not scale to large public elections.\n- Standards and frameworks\n  - International standards such as ISO/IEC 27001 and NIST guidelines provide general security frameworks for e-voting systems.\n  - The European Union has developed specific guidelines for blockchain-based voting, emphasising transparency, auditability, and voter verifiability.\n\n## Technical Details\n\n- **Id**: bc-0495-voting-systems-ontology\n- **Collapsed**: true\n- **Source Domain**: blockchain\n- **Status**: complete\n- **Public Access**: true\n- **Authority Score**: 0.82\n- **Maturity**: draft\n- **Owl:Class**: bc:VotingSystems\n- **Owl:Physicality**: ConceptualEntity\n- **Owl:Role**: Concept\n- **Belongstodomain**: [[BlockchainDomain]]\n- **Blockchainrelevance**: High\n- **Lastvalidated**: 2025-11-14\n\n## Research & Literature\n\n- Key academic papers and sources\n  - Park, S., Specter, M., Narula, N., Rivest, R. L. (2021). Going from bad to worse: from Internet voting to blockchain voting. Journal of Cybersecurity, 7(1), tyaa025. https://doi.org/10.1093/cybsec/tyaa025\n  - Shaikh, A., Adhikari, N., Nazir, A., Shah, A. S., Baig, S., Al Shihi, H. (2025). Blockchain-enhanced electoral integrity: a robust model for secure voting. F1000Research, 14, 223. https://doi.org/10.12688/f1000research.160087.3\n  - Jefferson, D. (2023). The Myth of “Secure” Blockchain Voting. U.S. Vote Foundation. https://www.usvotefoundation.org/blockchain-voting-is-not-a-security-strategy\n  - CoinLaw. (2025). Blockchain in Voting Systems Statistics 2025. https://coinlaw.io/blockchain-in-voting-systems-statistics/\n  - ACM Digital Library. (2025). A Comprehensive Analysis of Blockchain-Based Voting Systems. https://dl.acm.org/doi/10.1145/3723178.3723275\n  - SSRN. (2025). Blockchain-Based E-Voting Systems: A Systematic Literature Review. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5370817\n- Ongoing research directions\n  - Hybrid models combining blockchain with traditional paper ballots\n  - Zero-knowledge proofs for voter privacy\n  - Layer 2 solutions for scalability and performance\n  - Threat modelling and real-world stress-testing of blockchain voting systems\n\n## UK Context\n\n- British contributions and implementations\n  - The UK has been active in research on secure e-voting, with contributions from universities, government agencies, and independent think tanks.\n  - The National Cyber Security Centre (NCSC) has published guidance on the risks and benefits of blockchain voting, emphasising the need for rigorous security testing and public scrutiny.\n- North England innovation hubs (if relevant)\n  - Universities in Manchester, Leeds, Newcastle, and Sheffield have established research groups focused on digital democracy and secure voting.\n  - Collaborative projects with local councils and tech firms have explored the use of blockchain for internal elections and community consultations.\n- Regional case studies\n  - Greater Manchester Council has trialled digital voting for internal elections, with plans to expand to community consultations.\n  - West Yorkshire Combined Authority has explored the use of blockchain for secure data sharing and audit trails in public services.\n\n## Future Directions\n\n- Emerging trends and developments\n  - Increased use of hybrid models combining blockchain with traditional paper ballots\n  - Greater emphasis on voter privacy and coercion resistance\n  - Development of international standards and best practices for blockchain voting\n- Anticipated challenges\n  - Ensuring the security of voter devices\n  - Mitigating the risk of denial-of-service attacks\n  - Building public trust in new voting technologies\n- Research priorities\n  - Formal verification of blockchain voting protocols\n  - Real-world stress-testing and threat modelling\n  - Development of user-friendly interfaces for secure voting\n\n## References\n\n1. Park, S., Specter, M., Narula, N., Rivest, R. L. (2021). Going from bad to worse: from Internet voting to blockchain voting. Journal of Cybersecurity, 7(1), tyaa025. https://doi.org/10.1093/cybsec/tyaa025\n2. Shaikh, A., Adhikari, N., Nazir, A., Shah, A. S., Baig, S., Al Shihi, H. (2025). Blockchain-enhanced electoral integrity: a robust model for secure voting. F1000Research, 14, 223. https://doi.org/10.12688/f1000research.160087.3\n3. Jefferson, D. (2023). The Myth of “Secure” Blockchain Voting. U.S. Vote Foundation. https://www.usvotefoundation.org/blockchain-voting-is-not-a-security-strategy\n4. CoinLaw. (2025). Blockchain in Voting Systems Statistics 2025. https://coinlaw.io/blockchain-in-voting-systems-statistics/\n5. ACM Digital Library. (2025). A Comprehensive Analysis of Blockchain-Based Voting Systems. https://dl.acm.org/doi/10.1145/3723178.3723275\n6. SSRN. (2025). Blockchain-Based E-Voting Systems: A Systematic Literature Review. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5370817\n\n## Metadata\n\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Governance Token",
+    "Decentralized Autonomous Organization (DAO)"
+  ],
+  "wiki_links": [
+    "BlockchainDomain"
+  ],
+  "ontology": {
+    "term_id": "BC-0495",
+    "preferred_term": "Voting Systems",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#VotingSystems",
+    "source_domain": "blockchain",
+    "domain": "blockchain",
+    "domain_full_name": "",
+    "definition": "Blockchain-based electoral systems employing cryptographic verification, end-to-end verifiability, and distributed ledger technology to enable secure voting whilst facing critical security challenges identified by MIT research showing vulnerabilities allowing vote alteration, academic consensus of \"nearly universal\" agreement that no technology can adequately secure online public elections, and real-world implementations spanning Voatz (80,000+ votes across 50+ elections), Estonia (50%+ votes cast online), and Moscow (65,000 voters) demonstrating both potential cost reductions from $7-25 to under $0.50 per vote and significant security concerns.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": 0.82,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:VotingSystems",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+      ]
+    }
+  }
+}

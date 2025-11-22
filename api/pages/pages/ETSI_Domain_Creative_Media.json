@@ -1,34 +1,34 @@
 {
   "id": "ETSI_Domain_Creative_Media",
   "title": "ETSI Domain: Creative Media",
-  "content": "- ### OntologyBlock\n  id:: etsi-domain-creative-media-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20340\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: ETSI Domain: Creative Media\n\t- definition:: Domain marker for ETSI metaverse categorization covering creative content production, 3D modeling, rendering, and multimedia authoring for virtual environments.\n\t- maturity:: mature\n\t- source:: [[ETSI GR MEC 032]]\n\t- owl:class:: mv:ETSIDomain_CreativeMedia\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-creative-media-relationships\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-part-of:: [[ETSI Metaverse Domain Taxonomy]]\n\t\t- has-part:: [[3D Content Creation]], [[Rendering Pipeline]], [[Asset Management]], [[Multimedia Authoring]]\n\t\t- requires:: [[Creative Tools]], [[Content Pipeline]]\n\t\t- enables:: [[Virtual World Building]], [[Avatar Customization]], [[Scene Design]]\n\t\t- depends-on:: [[Graphics Processing]], [[Asset Format Standards]]\n\t- #### OWL Axioms\n\t  id:: etsi-domain-creative-media-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:ETSIDomain_CreativeMedia))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:ETSIDomain_CreativeMedia mv:VirtualEntity)\n\t\t  SubClassOf(mv:ETSIDomain_CreativeMedia mv:Object)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:ETSIDomain_CreativeMedia\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:InfrastructureDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:ETSIDomain_CreativeMedia\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)\n\t\t  )\n\n\t\t  # Domain taxonomy membership\n\t\t  SubClassOf(mv:ETSIDomain_CreativeMedia\n\t\t    ObjectSomeValuesFrom(mv:isPartOf mv:ETSIMetaverseDomainTaxonomy)\n\t\t  )\n\n\t\t  # Content creation enablement\n\t\t  SubClassOf(mv:ETSIDomain_CreativeMedia\n\t\t    ObjectSomeValuesFrom(mv:enables mv:VirtualWorldBuilding)\n\t\t  )\n\n\t\t  # Creative tools dependency\n\t\t  SubClassOf(mv:ETSIDomain_CreativeMedia\n\t\t    ObjectSomeValuesFrom(mv:requires mv:CreativeTools)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:requires)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n```",
+  "content": "- ### OntologyBlock\n  id:: etsi-domain-creative-media-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20340\n\t- preferred-term:: ETSI Domain: Creative Media\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Domain marker for ETSI metaverse categorization covering creative content production, 3D modeling, rendering, and multimedia authoring for virtual environments.\n\t- source:: [[ETSI GR MEC 032]]\n\t- maturity:: mature\n\t- owl:class:: mv:ETSIDomain_CreativeMedia\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-creative-media-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-part-of:: [[ETSI Metaverse Domain Taxonomy]]\n\t\t- has-part:: [[Asset Management]]\n\t\t- has-part:: [[Rendering Pipeline]]\n\t\t- has-part:: [[3D Content Creation]]\n\t\t- has-part:: [[Multimedia Authoring]]\n\t\t- requires:: [[Creative Tools]]\n\t\t- requires:: [[Content Pipeline]]\n\t\t- enables:: [[Virtual World Building]]\n\t\t- enables:: [[Avatar Customization]]\n\t\t- enables:: [[Scene Design]]\n\t\t- depends-on:: [[Graphics Processing]]\n\t\t- depends-on:: [[Asset Format Standards]]",
   "backlinks": [],
   "wiki_links": [
-    "Content Pipeline",
-    "Graphics Processing",
-    "Creative Tools",
-    "InfrastructureDomain",
-    "Multimedia Authoring",
-    "Avatar Customization",
-    "Asset Format Standards",
-    "ETSI Metaverse Domain Taxonomy",
-    "Virtual World Building",
-    "ApplicationLayer",
-    "ETSI GR MEC 032",
-    "Metaverse",
     "Rendering Pipeline",
     "Asset Management",
+    "Avatar Customization",
+    "InfrastructureDomain",
+    "Virtual World Building",
     "Scene Design",
-    "3D Content Creation"
+    "Metaverse",
+    "ETSI GR MEC 032",
+    "Asset Format Standards",
+    "Graphics Processing",
+    "Creative Tools",
+    "Multimedia Authoring",
+    "3D Content Creation",
+    "ApplicationLayer",
+    "Content Pipeline",
+    "ETSI Metaverse Domain Taxonomy"
   ],
   "ontology": {
     "term_id": "20340",
     "preferred_term": "ETSI Domain: Creative Media",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ETSIDomain_CreativeMedia",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "Domain marker for ETSI metaverse categorization covering creative content production, 3D modeling, rendering, and multimedia authoring for virtual environments.",
     "scope_note": null,
     "status": "draft",
@@ -47,9 +47,9 @@
       "Metaverse"
     ],
     "has_part": [
-      "3D Content Creation",
-      "Rendering Pipeline",
       "Asset Management",
+      "Rendering Pipeline",
+      "3D Content Creation",
       "Multimedia Authoring"
     ],
     "is_part_of": [
@@ -84,8 +84,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "term-id '20340' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

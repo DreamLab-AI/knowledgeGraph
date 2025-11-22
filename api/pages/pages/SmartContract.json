@@ -1,0 +1,63 @@
+{
+  "id": "SmartContract",
+  "title": "SmartContract",
+  "content": "- ### OntologyBlock\n  id:: smartcontract-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0101\n\t- preferred-term:: SmartContract\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Self-executing contracts with terms directly written into code that automatically enforce and execute agreements when predetermined conditions are met on a blockchain network.\n\t- maturity:: mature\n\t- owl:class:: bc:SmartContract\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Object\n\t- owl:equivalentClass:: bc:SmartContract\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- #### CrossDomainBridges\n\t  id:: smartcontract-bridges\n\t  collapsed:: true\n\t\t- dt:uses:: [[Bias Detection Methods]]\n\t\t- bc:authenticates:: [[DigitalAvatar]]\n\t\t- bc:governs:: [[Marketplace]]",
+  "backlinks": [
+    "AIEthics",
+    "Bias Detection Methods",
+    "PrivateBlockchain",
+    "Value Transfer"
+  ],
+  "wiki_links": [
+    "DigitalAvatar",
+    "Marketplace",
+    "BlockchainDomain",
+    "Bias Detection Methods"
+  ],
+  "ontology": {
+    "term_id": "BC-0101",
+    "preferred_term": "SmartContract",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#SmartContract",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
+    "definition": "Self-executing contracts with terms directly written into code that automatically enforce and execute agreements when predetermined conditions are met on a blockchain network.",
+    "scope_note": null,
+    "status": "active",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:SmartContract",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

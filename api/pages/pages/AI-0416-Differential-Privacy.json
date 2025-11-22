@@ -1,38 +1,34 @@
 {
   "id": "AI-0416-Differential-Privacy",
   "title": "Differential Privacy",
-  "content": "- ### OntologyBlock\n  id:: differential-privacy-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0416\n    - preferred-term:: Differential Privacy\n    - source-domain:: ai-grounded\n    - status:: in-progress\n    - version:: 1.0\n    - last-updated:: 2025-10-29\n\n  - **Definition**\n    - definition:: Differential Privacy is a mathematical framework providing provable privacy guarantees by adding carefully calibrated noise to data queries or model outputs, ensuring that the presence or absence of any single individual's data has negligible impact on analysis results. This technique provides formal privacy protection through the epsilon (ε) parameter quantifying privacy loss, where smaller ε values indicate stronger privacy guarantees (typically ε ≤ 1.0 for high-privacy scenarios), with differential privacy satisfied when for all datasets D1 and D2 differing by one record and all possible outputs S, P(M(D1) ∈ S) ≤ exp(ε) × P(M(D2) ∈ S). Implementation mechanisms include the Laplace mechanism adding noise proportional to query sensitivity for numeric queries, the Gaussian mechanism suitable for more complex settings with delta (δ) parameter allowing negligible probability of privacy breach, the exponential mechanism for non-numeric outputs selecting results proportional to their utility, and composition theorems tracking cumulative privacy loss across multiple queries (sequential composition where total ε_total = Σε_i, advanced composition providing tighter bounds). The 2024-2025 period witnessed differential privacy evolve from theoretical framework to practical requirement with the U.S. Census Bureau's 2020 Census deployment demonstrating feasibility at national scale, technology companies including Apple, Microsoft, and Meta deploying differential privacy for telemetry and usage analytics proving strong privacy need not preclude valuable aggregate insights, and academic consensus emerging around epsilon budgets with ε ≤ 1.0 for high-privacy scenarios. Applications span statistical databases enabling privacy-preserving aggregate statistics, machine learning protecting training data through differentially private stochastic gradient descent (DP-SGD), and federated learning scenarios adding noise to model updates before aggregation, though challenges include computational overhead of noise addition, utility degradation particularly for complex queries or small datasets, and privacy budget exhaustion requiring careful allocation across queries.\n    - maturity:: mature\n    - source:: [[Dwork et al. (2006)]], [[U.S. Census 2020]], [[Apple Differential Privacy]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: aigo:DifferentialPrivacy\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Process\n    - owl:inferred-class:: aigo:VirtualProcess\n    - belongsToDomain:: [[AIEthicsDomain]]\n\n  - #### CrossDomainBridges\n    - bridges-from:: [[PrivacyEnhancingComputationPec]] via has-part\n    - bridges-from:: [[DataAnonymizationPipeline]] via enables\n    - bridges-from:: [[SyntheticDataGenerator]] via depends-on\n    - implementedInLayer:: [[ConceptualLayer]]\n\n  - #### Relationships\n    id:: differential-privacy-relationships\n\n  - #### OWL Axioms\n    id:: differential-privacy-owl-axioms\n    collapsed:: true\n    - ```clojure\n      \n      ```\n\n- ## About Differential Privacy\n  id:: differential-privacy-about\n\n  -\n  -\n    - ### Best Practices\n  - ### Implementation Guidelines\n  -\n    **Parameter Selection**:\n    1. Define acceptable privacy loss (ε target)\n    2. Estimate query sensitivity\n    3. Calculate required noise scale\n    4. Validate with privacy auditing tools\n  -\n    **Code Security**:\n    ```python\n    # ✓ GOOD: Use vetted libraries\n    from opendp.measurements import make_base_laplace\n  -\n    # ✗ BAD: Manual noise addition (common errors)\n    # Don't implement DP primitives from scratch\n    ```\n  -\n    **Testing**:\n    - Unit tests for sensitivity calculations\n    - Statistical tests on noise distribution\n    - Privacy auditing (e.g., Google's DP accounting library)\n\n- ### Different modalities\n\n- ### Different modalities\n\n### Relationships\n- is-subclass-of:: [[MachineLearning]]\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: differential-privacy-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0416\n\t- preferred-term:: Differential Privacy\n\t- source-domain:: ai\n\t- status:: in\n\t- public-access:: true\n\t- definition:: Differential Privacy is a mathematical framework providing provable privacy guarantees by adding carefully calibrated noise to data queries or model outputs, ensuring that the presence or absence of any single individual's data has negligible impact on analysis results. This technique provides formal privacy protection through the epsilon (ε) parameter quantifying privacy loss, where smaller ε values indicate stronger privacy guarantees (typically ε ≤ 1.0 for high-privacy scenarios), with differential privacy satisfied when for all datasets D1 and D2 differing by one record and all possible outputs S, P(M(D1) ∈ S) ≤ exp(ε) × P(M(D2) ∈ S). Implementation mechanisms include the Laplace mechanism adding noise proportional to query sensitivity for numeric queries, the Gaussian mechanism suitable for more complex settings with delta (δ) parameter allowing negligible probability of privacy breach, the exponential mechanism for non-numeric outputs selecting results proportional to their utility, and composition theorems tracking cumulative privacy loss across multiple queries (sequential composition where total ε_total = Σε_i, advanced composition providing tighter bounds). The 2024-2025 period witnessed differential privacy evolve from theoretical framework to practical requirement with the U.S. Census Bureau's 2020 Census deployment demonstrating feasibility at national scale, technology companies including Apple, Microsoft, and Meta deploying differential privacy for telemetry and usage analytics proving strong privacy need not preclude valuable aggregate insights, and academic consensus emerging around epsilon budgets with ε ≤ 1.0 for high-privacy scenarios. Applications span statistical databases enabling privacy-preserving aggregate statistics, machine learning protecting training data through differentially private stochastic gradient descent (DP-SGD), and federated learning scenarios adding noise to model updates before aggregation, though challenges include computational overhead of noise addition, utility degradation particularly for complex queries or small datasets, and privacy budget exhaustion requiring careful allocation across queries.\n\t- source:: [[Dwork et al. (2006)]], [[U.S. Census 2020]], [[Apple Differential Privacy]]\n\t- maturity:: mature\n\t- owl:class:: ai:DifferentialPrivacy\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: aigo:VirtualProcess\n\t- belongsToDomain:: [[AIEthicsDomain]]\n\t- implementedInLayer:: [[ConceptualLayer]]\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [],
   "wiki_links": [
-    "DataAnonymizationPipeline",
-    "MachineLearning",
-    "ConceptualLayer",
     "Apple Differential Privacy",
-    "AIEthicsDomain",
-    "Dwork et al. (2006)",
-    "PrivacyEnhancingComputationPec",
     "U.S. Census 2020",
-    "SyntheticDataGenerator"
+    "ConceptualLayer",
+    "Dwork et al. (2006)",
+    "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "AI-0416",
     "preferred_term": "Differential Privacy",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "ai-grounded",
-    "domain": "ai-grounded",
-    "domain_full_name": "",
+    "iri": "http://narrativegoldmine.com/ai#DifferentialPrivacy",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
     "definition": "Differential Privacy is a mathematical framework providing provable privacy guarantees by adding carefully calibrated noise to data queries or model outputs, ensuring that the presence or absence of any single individual's data has negligible impact on analysis results. This technique provides formal privacy protection through the epsilon (ε) parameter quantifying privacy loss, where smaller ε values indicate stronger privacy guarantees (typically ε ≤ 1.0 for high-privacy scenarios), with differential privacy satisfied when for all datasets D1 and D2 differing by one record and all possible outputs S, P(M(D1) ∈ S) ≤ exp(ε) × P(M(D2) ∈ S). Implementation mechanisms include the Laplace mechanism adding noise proportional to query sensitivity for numeric queries, the Gaussian mechanism suitable for more complex settings with delta (δ) parameter allowing negligible probability of privacy breach, the exponential mechanism for non-numeric outputs selecting results proportional to their utility, and composition theorems tracking cumulative privacy loss across multiple queries (sequential composition where total ε_total = Σε_i, advanced composition providing tighter bounds). The 2024-2025 period witnessed differential privacy evolve from theoretical framework to practical requirement with the U.S. Census Bureau's 2020 Census deployment demonstrating feasibility at national scale, technology companies including Apple, Microsoft, and Meta deploying differential privacy for telemetry and usage analytics proving strong privacy need not preclude valuable aggregate insights, and academic consensus emerging around epsilon budgets with ε ≤ 1.0 for high-privacy scenarios. Applications span statistical databases enabling privacy-preserving aggregate statistics, machine learning protecting training data through differentially private stochastic gradient descent (DP-SGD), and federated learning scenarios adding noise to model updates before aggregation, though challenges include computational overhead of noise addition, utility degradation particularly for complex queries or small datasets, and privacy budget exhaustion requiring careful allocation across queries.",
     "scope_note": null,
-    "status": "in-progress",
+    "status": "in",
     "maturity": "mature",
-    "version": "1.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-10-29",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": "aigo:DifferentialPrivacy",
+    "owl_class": "ai:DifferentialPrivacy",
     "owl_physicality": "VirtualEntity",
     "owl_role": "Process",
     "owl_inferred_class": "aigo:VirtualProcess",
@@ -44,11 +40,7 @@
     "enables": [],
     "relates_to": [],
     "bridges_to": [],
-    "bridges_from": [
-      "PrivacyEnhancingComputationPec via has",
-      "DataAnonymizationPipeline via enables",
-      "SyntheticDataGenerator via depends"
-    ],
+    "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
       "AIEthicsDomain"
@@ -64,8 +56,8 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'aigo' doesn't match source-domain 'ai-grounded'"
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

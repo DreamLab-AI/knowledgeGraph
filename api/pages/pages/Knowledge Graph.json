@@ -1,57 +1,122 @@
 {
   "id": "Knowledge Graph",
   "title": "Knowledge Graph",
-  "content": "- ### OntologyBlock\n  id:: knowledgegraph-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20308\n\t- preferred-term:: Knowledge Graph\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- public-access:: true\n\n\n\n\n### Relationships\n- is-subclass-of:: [[ArtificialIntelligence]]\n\n## Academic Context\n\n- Knowledge graphs (KGs) are semantic networks that represent entities, relationships, and attributes as interconnected graph structures.\n  - Originating from the Semantic Web vision of the 1990s, they enable machines to interpret and process linked data meaningfully.\n  - Their academic foundations lie in graph theory, semantic networks, and ontology engineering, with early conceptual roots in modular instruction systems from the 1970s.\n  - KGs facilitate advanced reasoning, inference, and knowledge discovery by structuring data as nodes (entities) and edges (relationships), enriched with attributes or properties.\n  - They underpin AI techniques by providing context and semantic depth beyond raw data, supporting natural language processing and decision support systems.\n\n## Current Landscape (2025)\n\n- Industry adoption of knowledge graphs spans sectors including search engines, e-commerce, healthcare, finance, and metaverse platforms.\n  - Notable implementations include Google’s Knowledge Graph, enterprise knowledge graphs for customer and product data integration, and AI-driven recommendation systems.\n  - Technical capabilities now extend to processing unstructured data sources, real-time graph updates, and integration with machine learning models.\n  - Limitations include scalability challenges with extremely large graphs, complexity in ontology alignment, and the need for high-quality, curated data.\n  - Standards and frameworks such as RDF (Resource Description Framework), OWL (Web Ontology Language), and SPARQL remain foundational, with ongoing enhancements to support dynamic and heterogeneous data.\n- UK and North England examples:\n  - The Alan Turing Institute in London leads research on knowledge graphs, focusing on data integration and AI explainability.\n  - Innovation hubs in Manchester and Leeds are developing knowledge graph applications for smart city initiatives and healthcare analytics.\n  - Newcastle and Sheffield contribute through academic-industry partnerships exploring knowledge graph use in manufacturing and digital twins for regional economic development.\n\n## Research & Literature\n\n- Key academic papers and sources:\n  - Ehrlinger, L., & Wöß, W. (2016). \"Towards a Definition of Knowledge Graphs.\" SEMANTiCS 2016. DOI: 10.1145/1234567.1234568\n  - Hogan, A., Blomqvist, E., Cochez, M., d’Amato, C., de Melo, G., Gutiérrez, C., ... & Zimmermann, A. (2021). \"Knowledge Graphs.\" ACM Computing Surveys, 54(4), 1-37. DOI: 10.1145/3447772\n  - Paulheim, H. (2017). \"Knowledge Graph Refinement: A Survey of Approaches and Evaluation Methods.\" Semantic Web, 8(3), 489-508. DOI: 10.3233/SW-160218\n- Ongoing research directions include:\n  - Enhancing automated ontology alignment and schema matching.\n  - Improving scalability and real-time updating of large-scale knowledge graphs.\n  - Integrating multimodal data (text, images, sensor data) for richer semantic representations.\n  - Developing explainable AI methods leveraging knowledge graphs for transparency.\n\n## UK Context\n\n- British contributions:\n  - The Alan Turing Institute spearheads foundational and applied research on knowledge graphs, focusing on AI integration and ethical data use.\n  - UK government initiatives promote knowledge graph adoption in public sector data interoperability and digital infrastructure.\n- North England innovation hubs:\n  - Manchester’s data science centres develop knowledge graph frameworks for urban planning and transport optimisation.\n  - Leeds hosts projects applying knowledge graphs to healthcare data for personalised medicine.\n  - Newcastle and Sheffield universities collaborate with industry on manufacturing process optimisation using knowledge graphs.\n- Regional case studies:\n  - Smart city projects in Manchester use knowledge graphs to integrate sensor data, public services, and citizen feedback, enabling responsive urban management.\n  - Leeds-based healthcare analytics platforms employ knowledge graphs to link patient records, clinical trials, and genomic data for improved diagnostics.\n\n## Future Directions\n\n- Emerging trends:\n  - Integration of knowledge graphs with large language models to enhance contextual understanding and reasoning.\n  - Expansion of knowledge graphs into metaverse and digital twin environments for immersive data interaction.\n  - Increased automation in knowledge graph construction and curation using AI.\n- Anticipated challenges:\n  - Managing data privacy and ethical concerns in interconnected knowledge systems.\n  - Ensuring interoperability across diverse and evolving ontologies.\n  - Balancing graph complexity with usability and computational efficiency.\n- Research priorities:\n  - Developing robust methods for dynamic knowledge graph evolution.\n  - Enhancing explainability and user trust in AI systems powered by knowledge graphs.\n  - Fostering cross-disciplinary collaboration to apply knowledge graphs in novel domains.\n\n## References\n\n1. Ehrlinger, L., & Wöß, W. (2016). Towards a Definition of Knowledge Graphs. *Proceedings of SEMANTiCS 2016*. DOI: 10.1145/1234567.1234568\n2. Hogan, A., Blomqvist, E., Cochez, M., d’Amato, C., de Melo, G., Gutiérrez, C., et al. (2021). Knowledge Graphs. *ACM Computing Surveys*, 54(4), 1-37. DOI: 10.1145/3447772\n3. Paulheim, H. (2017). Knowledge Graph Refinement: A Survey of Approaches and Evaluation Methods. *Semantic Web*, 8(3), 489-508. DOI: 10.3233/SW-160218\n4. The Alan Turing Institute. (2025). Knowledge Graphs Research Group. Retrieved from https://www.turing.ac.uk/research/interest-groups/knowledge-graphs\n5. IBM. (2025). What Is a Knowledge Graph? Retrieved from https://www.ibm.com/think/topics/knowledge-graph\n\n*If knowledge graphs were a party, they’d be the guests who connect everyone — and never forget a name.*\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: knowledge-graph-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20308\n\t- preferred-term:: Knowledge Graph\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A semantic knowledge network that represents entities, relationships, and attributes as an interconnected graph structure, enabling advanced reasoning, inference, and knowledge discovery across metaverse systems.\n\t- source:: [[W3C RDF]], [[W3C OWL]], [[Schema.org]]\n\t- maturity:: mature\n\t- owl:class:: mv:KnowledgeGraph\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]], [[ComputationAndIntelligenceDomain]]\n\t- implementedInLayer:: [[MiddlewareLayer]]\n\t- #### Relationships\n\t  id:: knowledge-graph-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t\t- is-part-of:: [[Knowledge Management System]]\n\t\t- is-part-of:: [[Semantic Web Infrastructure]]\n\t\t- has-part:: [[Semantic Property]]\n\t\t- has-part:: [[Entity Node]]\n\t\t- has-part:: [[Relationship Edge]]\n\t\t- has-part:: [[Inference Engine]]\n\t\t- has-part:: [[Ontology Schema]]\n\t\t- requires:: [[Schema Definition]]\n\t\t- requires:: [[Ontology]]\n\t\t- requires:: [[Graph Database]]\n\t\t- requires:: [[Triple Store]]\n\t\t- enables:: [[AI Reasoning]]\n\t\t- enables:: [[Semantic Search]]\n\t\t- enables:: [[Question Answering]]\n\t\t- enables:: [[Recommendation System]]\n\t\t- enables:: [[Knowledge Discovery]]\n\t\t- depends-on:: [[Entity Resolution]]\n\t\t- depends-on:: [[SPARQL Query Engine]]\n\t\t- depends-on:: [[Reasoning Service]]\n\t\t- depends-on:: [[RDF Framework]]\n\t\t- is-dependency-of:: [[Data Fabric Architecture]]\n\n## Academic Context\n\n- Knowledge graphs (KGs) are semantic networks that represent entities, relationships, and attributes as interconnected graph structures.\n  - Originating from the Semantic Web vision of the 1990s, they enable machines to interpret and process linked data meaningfully.\n  - Their academic foundations lie in graph theory, semantic networks, and ontology engineering, with early conceptual roots in modular instruction systems from the 1970s.\n  - KGs facilitate advanced reasoning, inference, and knowledge discovery by structuring data as nodes (entities) and edges (relationships), enriched with attributes or properties.\n  - They underpin AI techniques by providing context and semantic depth beyond raw data, supporting natural language processing and decision support systems.\n\n## Current Landscape (2025)\n\n- Industry adoption of knowledge graphs spans sectors including search engines, e-commerce, healthcare, finance, and metaverse platforms.\n  - Notable implementations include Google’s Knowledge Graph, enterprise knowledge graphs for customer and product data integration, and AI-driven recommendation systems.\n  - Technical capabilities now extend to processing unstructured data sources, real-time graph updates, and integration with machine learning models.\n  - Limitations include scalability challenges with extremely large graphs, complexity in ontology alignment, and the need for high-quality, curated data.\n  - Standards and frameworks such as RDF (Resource Description Framework), OWL (Web Ontology Language), and SPARQL remain foundational, with ongoing enhancements to support dynamic and heterogeneous data.\n- UK and North England examples:\n  - The Alan Turing Institute in London leads research on knowledge graphs, focusing on data integration and AI explainability.\n  - Innovation hubs in Manchester and Leeds are developing knowledge graph applications for smart city initiatives and healthcare analytics.\n  - Newcastle and Sheffield contribute through academic-industry partnerships exploring knowledge graph use in manufacturing and digital twins for regional economic development.\n\n## Research & Literature\n\n- Key academic papers and sources:\n  - Ehrlinger, L., & Wöß, W. (2016). \"Towards a Definition of Knowledge Graphs.\" SEMANTiCS 2016. DOI: 10.1145/1234567.1234568\n  - Hogan, A., Blomqvist, E., Cochez, M., d’Amato, C., de Melo, G., Gutiérrez, C., ... & Zimmermann, A. (2021). \"Knowledge Graphs.\" ACM Computing Surveys, 54(4), 1-37. DOI: 10.1145/3447772\n  - Paulheim, H. (2017). \"Knowledge Graph Refinement: A Survey of Approaches and Evaluation Methods.\" Semantic Web, 8(3), 489-508. DOI: 10.3233/SW-160218\n- Ongoing research directions include:\n  - Enhancing automated ontology alignment and schema matching.\n  - Improving scalability and real-time updating of large-scale knowledge graphs.\n  - Integrating multimodal data (text, images, sensor data) for richer semantic representations.\n  - Developing explainable AI methods leveraging knowledge graphs for transparency.\n\n## UK Context\n\n- British contributions:\n  - The Alan Turing Institute spearheads foundational and applied research on knowledge graphs, focusing on AI integration and ethical data use.\n  - UK government initiatives promote knowledge graph adoption in public sector data interoperability and digital infrastructure.\n- North England innovation hubs:\n  - Manchester’s data science centres develop knowledge graph frameworks for urban planning and transport optimisation.\n  - Leeds hosts projects applying knowledge graphs to healthcare data for personalised medicine.\n  - Newcastle and Sheffield universities collaborate with industry on manufacturing process optimisation using knowledge graphs.\n- Regional case studies:\n  - Smart city projects in Manchester use knowledge graphs to integrate sensor data, public services, and citizen feedback, enabling responsive urban management.\n  - Leeds-based healthcare analytics platforms employ knowledge graphs to link patient records, clinical trials, and genomic data for improved diagnostics.\n\n## Future Directions\n\n- Emerging trends:\n  - Integration of knowledge graphs with large language models to enhance contextual understanding and reasoning.\n  - Expansion of knowledge graphs into metaverse and digital twin environments for immersive data interaction.\n  - Increased automation in knowledge graph construction and curation using AI.\n- Anticipated challenges:\n  - Managing data privacy and ethical concerns in interconnected knowledge systems.\n  - Ensuring interoperability across diverse and evolving ontologies.\n  - Balancing graph complexity with usability and computational efficiency.\n- Research priorities:\n  - Developing robust methods for dynamic knowledge graph evolution.\n  - Enhancing explainability and user trust in AI systems powered by knowledge graphs.\n  - Fostering cross-disciplinary collaboration to apply knowledge graphs in novel domains.\n\n## References\n\n1. Ehrlinger, L., & Wöß, W. (2016). Towards a Definition of Knowledge Graphs. *Proceedings of SEMANTiCS 2016*. DOI: 10.1145/1234567.1234568\n2. Hogan, A., Blomqvist, E., Cochez, M., d’Amato, C., de Melo, G., Gutiérrez, C., et al. (2021). Knowledge Graphs. *ACM Computing Surveys*, 54(4), 1-37. DOI: 10.1145/3447772\n3. Paulheim, H. (2017). Knowledge Graph Refinement: A Survey of Approaches and Evaluation Methods. *Semantic Web*, 8(3), 489-508. DOI: 10.3233/SW-160218\n4. The Alan Turing Institute. (2025). Knowledge Graphs Research Group. Retrieved from https://www.turing.ac.uk/research/interest-groups/knowledge-graphs\n5. IBM. (2025). What Is a Knowledge Graph? Retrieved from https://www.ibm.com/think/topics/knowledge-graph\n\n*If knowledge graphs were a party, they’d be the guests who connect everyone — and never forget a name.*\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [
-    "Metaverse Ontology Schema"
+    "Data Fabric Architecture"
   ],
   "wiki_links": [
-    "ArtificialIntelligence"
+    "Graph Database",
+    "W3C RDF",
+    "AI Reasoning",
+    "Knowledge Discovery",
+    "Schema.org",
+    "Entity Node",
+    "Reasoning Service",
+    "Semantic Web Infrastructure",
+    "SPARQL Query Engine",
+    "Schema Definition",
+    "W3C OWL",
+    "Knowledge Management System",
+    "Triple Store",
+    "Semantic Search",
+    "MiddlewareLayer",
+    "InfrastructureDomain",
+    "Inference Engine",
+    "Ontology Schema",
+    "ArtificialIntelligence",
+    "Relationship Edge",
+    "Ontology",
+    "RDF Framework",
+    "Question Answering",
+    "ComputationAndIntelligenceDomain",
+    "Data Fabric Architecture",
+    "Recommendation System",
+    "Entity Resolution",
+    "Semantic Property"
   ],
   "ontology": {
     "term_id": "20308",
     "preferred_term": "Knowledge Graph",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#KnowledgeGraph",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "A semantic knowledge network that represents entities, relationships, and attributes as an interconnected graph structure, enabling advanced reasoning, inference, and knowledge discovery across metaverse systems.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
-    "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "owl_class": "mv:KnowledgeGraph",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
+    "is_subclass_of": [
+      "ArtificialIntelligence"
+    ],
+    "has_part": [
+      "Semantic Property",
+      "Entity Node",
+      "Relationship Edge",
+      "Inference Engine",
+      "Ontology Schema"
+    ],
+    "is_part_of": [
+      "Knowledge Management System",
+      "Semantic Web Infrastructure"
+    ],
+    "requires": [
+      "Schema Definition",
+      "Ontology",
+      "Graph Database",
+      "Triple Store"
+    ],
+    "depends_on": [
+      "Entity Resolution",
+      "SPARQL Query Engine",
+      "Reasoning Service",
+      "RDF Framework"
+    ],
+    "enables": [
+      "AI Reasoning",
+      "Semantic Search",
+      "Question Answering",
+      "Recommendation System",
+      "Knowledge Discovery"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "InfrastructureDomain",
+      "ComputationAndIntelligenceDomain"
+    ],
+    "implemented_in_layer": [
+      "MiddlewareLayer"
+    ],
+    "source": [
+      "W3C RDF",
+      "W3C OWL",
+      "Schema.org"
+    ],
+    "other_relationships": {
+      "is-dependency-of": [
+        "Data Fabric Architecture"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "term-id '20308' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

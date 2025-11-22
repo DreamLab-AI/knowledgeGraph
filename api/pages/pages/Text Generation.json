@@ -1,0 +1,53 @@
+{
+  "id": "Text Generation",
+  "title": "Text Generation",
+  "content": "- ### OntologyBlock\n  id:: text-generation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0374\n\t- preferred-term:: Text Generation\n\t- source-domain:: ai\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Text Generation is the NLP task of producing coherent, contextually appropriate natural language text using neural language models, including applications such as story generation, article writing, code generation, and creative content production. Modern text generation employs transformer-based language models (GPT, T5, BLOOM) with autoregressive or sequence-to-sequence architectures, controllable generation techniques, and prompt engineering to produce human-quality text across diverse domains and styles.\n\t- owl:class:: ai:TextGeneration\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Process\n\t- #### Relationships\n\t  id:: text-generation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[NLPTask]]\n\n## Text Generation\n\nText Generation refers to text generation is the nlp task of producing coherent, contextually appropriate natural language text using neural language models, including applications such as story generation, article writing, code generation, and creative content production. modern text generation employs transformer-based language models (gpt, t5, bloom) with autoregressive or sequence-to-sequence architectures, controllable generation techniques, and prompt engineering to produce human-quality text across diverse domains and styles.\n\n- Industry adoption and implementations\n  - Text generation is widely deployed across sectors including media, customer service, software development, and education\n  - Major platforms such as OpenAI’s GPT series, Google’s Gemini, and Meta’s Llama are used for content creation, chatbots, and code generation\n- Notable organisations and platforms\n  - UK-based companies like DeepMind (London), Faculty (London), and Holistic AI (London) are active in developing and deploying text generation technologies\n  - North England sees growing activity in AI research and application, with hubs in Manchester, Leeds, Newcastle, and Sheffield\n- UK and North England examples where relevant\n  - The University of Manchester’s NLP group contributes to research on controllable text generation and ethical AI\n  - Leeds-based startups are exploring text generation for legal and healthcare documentation\n  - Newcastle University’s Centre for Doctoral Training in Natural Language Processing supports innovation in language technologies\n  - Sheffield’s Advanced Manufacturing Research Centre (AMRC) applies text generation for technical reporting and knowledge management\n- Technical capabilities and limitations\n  - Modern models excel at producing fluent, contextually relevant text across diverse domains and styles\n  - Challenges remain in ensuring factual accuracy, avoiding bias, and maintaining coherence over long passages\n  - Controllable generation techniques and prompt engineering allow for fine-tuning output to specific requirements\n- Standards and frameworks\n  - Industry standards include the use of transformer architectures, autoregressive and sequence-to-sequence models, and evaluation metrics such as BLEU, ROUGE, and human assessment\n  - Frameworks like Hugging Face Transformers and PyTorch Lightning facilitate rapid prototyping and deployment\n\n## Technical Details\n\n- **Id**: text-generation-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Research & Literature\n\n- Key academic papers and sources\n  - Vaswani, A., et al. (2017). Attention is All You Need. Advances in Neural Information Processing Systems, 30. https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf\n  - Brown, T., et al. (2020). Language Models are Few-Shot Learners. Advances in Neural Information Processing Systems, 33. https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf\n  - Raffel, C., et al. (2020). Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer. Journal of Machine Learning Research, 21(140), 1-67. http://jmlr.org/papers/v21/20-074.html\n- Ongoing research directions\n  - Improving controllability and interpretability of generated text\n  - Addressing ethical concerns such as bias, misinformation, and privacy\n  - Developing more efficient and scalable models for real-time applications\n\n## UK Context\n\n- British contributions and implementations\n  - The UK has a strong tradition in NLP and AI research, with leading institutions and industry players driving innovation in text generation\n  - Government initiatives and funding support the development of ethical and trustworthy AI systems\n- North England innovation hubs (if relevant)\n  - Manchester, Leeds, Newcastle, and Sheffield are emerging as key centres for AI and NLP research, with collaborations between universities, startups, and industry partners\n  - Regional innovation hubs foster interdisciplinary research and practical applications in areas such as healthcare, manufacturing, and public services\n- Regional case studies\n  - The University of Manchester’s NLP group has developed text generation tools for summarising scientific literature and generating educational content\n  - Leeds-based startups are using text generation to automate legal document drafting and improve customer service chatbots\n  - Newcastle University’s Centre for Doctoral Training in Natural Language Processing supports research on ethical AI and responsible text generation\n  - Sheffield’s AMRC applies text generation for technical reporting and knowledge management in advanced manufacturing\n\n## Future Directions\n\n- Emerging trends and developments\n  - Integration of multimodal and multilingual capabilities in text generation models\n  - Increased focus on explainability and transparency in AI-generated text\n  - Development of low-resource language models to support underserved communities\n- Anticipated challenges\n  - Ensuring the reliability and trustworthiness of generated text\n  - Balancing automation with human oversight and creativity\n  - Addressing the environmental impact of large-scale language models\n- Research priorities\n  - Advancing controllable and interpretable text generation\n  - Promoting ethical and inclusive AI practices\n  - Exploring new applications in education, healthcare, and public services\n\n## References\n\n1. Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is All You Need. Advances in Neural Information Processing Systems, 30. https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf\n2. Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., ... & Amodei, D. (2020). Language Models are Few-Shot Learners. Advances in Neural Information Processing Systems, 33. https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf\n3. Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., ... & Liu, P. J. (2020). Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer. Journal of Machine Learning Research, 21(140), 1-67. http://jmlr.org/papers/v21/20-074.html\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "NLPTask"
+  ],
+  "ontology": {
+    "term_id": "AI-0374",
+    "preferred_term": "Text Generation",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#TextGeneration",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Text Generation is the NLP task of producing coherent, contextually appropriate natural language text using neural language models, including applications such as story generation, article writing, code generation, and creative content production. Modern text generation employs transformer-based language models (GPT, T5, BLOOM) with autoregressive or sequence-to-sequence architectures, controllable generation techniques, and prompt engineering to produce human-quality text across diverse domains and styles.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:TextGeneration",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Process",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "NLPTask"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated"
+      ]
+    }
+  }
+}

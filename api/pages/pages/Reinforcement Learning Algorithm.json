@@ -1,35 +1,37 @@
 {
   "id": "Reinforcement Learning Algorithm",
   "title": "Reinforcement Learning Algorithm",
-  "content": "- ### OntologyBlock\n  id:: reinforcementlearningalgorithm-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0804\n    - filename-history:: [\"AI-0804-reinforcementlearningalgorithm.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0804\n    - preferred-term:: Reinforcement Learning Algorithm\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:ReinforcementLearningAlgorithm\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  - \n### Relationships\n- is-subclass-of:: [[MachineLearning]]",
+  "content": "- ### OntologyBlock\n  id:: reinforcementlearningalgorithm-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0804\n\t- preferred-term:: Reinforcement Learning Algorithm\n\t- status:: complete\n\t- public-access:: true\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: ai:ReinforcementLearningAlgorithm\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: reinforcementlearningalgorithm-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[MachineLearning]]",
   "backlinks": [],
   "wiki_links": [
-    "MachineLearning",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "MachineLearning"
   ],
   "ontology": {
     "term_id": "AI-0804",
     "preferred_term": "Reinforcement Learning Algorithm",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/ai#ReinforcementLearningAlgorithm",
-    "source_domain": "ai",
+    "source_domain": null,
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
-    "definition": "- maturity:: established",
+    "definition": null,
     "scope_note": null,
     "status": "complete",
     "maturity": "established",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-11-13",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "ai:ReinforcementLearningAlgorithm",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "MachineLearning"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -49,9 +51,11 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

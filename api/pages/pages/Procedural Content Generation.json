@@ -1,58 +1,111 @@
 {
   "id": "Procedural Content Generation",
   "title": "Procedural Content Generation",
-  "content": "- ### OntologyBlock\n  id:: procedural-content-generation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20192\n\t- preferred-term:: Procedural Content Generation\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t- public-access:: true\n\n\n\n## Academic Context\n\n- Procedural Content Generation (PCG) refers to the algorithmic creation of game assets such as 3D objects, textures, environments, or entire scenes, utilising computational rules, mathematical functions, or AI models instead of manual design.\n  - The academic foundation of PCG lies in computer graphics, artificial intelligence, and game design, with early roots in procedural methods used in tabletop role-playing games for dungeon and terrain generation.\n  - Key developments include the integration of machine learning techniques, such as Markov chains and reinforcement learning, to enhance content quality, playability, and adaptability.\n  - PCG reduces development time and costs, optimises storage requirements, and increases content variability and replayability.\n\n## Current Landscape (2025)\n\n- PCG is widely adopted across the gaming industry, from indie developers to major studios, for generating levels, textures, and narratives.\n  - Notable platforms and tools include Houdini for 3D procedural modelling and Substance Designer for texture creation.\n  - Machine learning-enhanced PCG (PCGML) is increasingly used to generate content that adapts to player behaviour, ensuring balanced difficulty and engagement.\n- Technical capabilities now allow real-time content generation with player-centric adjustments, though challenges remain in ensuring coherence and narrative depth.\n- Standards and frameworks are evolving to support interoperability and quality assurance in PCG, with academic and industry collaborations fostering best practices.\n\n## Research & Literature\n\n- Key academic works include:\n  - Smith, G. (2014). *Understanding procedural content generation: a design-centric analysis of the role of PCG in games*. ACM Digital Library. DOI: 10.1145/2556288.2557341.\n  - Zhang, Y., et al. (2025). *Rural residential layout generation and evaluation: An approach based on the Wave Function Collapse algorithm*. International Journal of Architectural Computing. DOI: 10.1177/14780771251326773.\n  - Kanervisto, A., et al. (2025). *World and Human Action Models towards gameplay ideation*. Nature. DOI: 10.1038/s41586-025-08600-3.\n  - Chen, M., & Smith, G. (2024). *Game Development as Project-Based Learning: Synthesizing Postmortems of Student-Created Mobile Games*. Proceedings of the 19th International Conference on the Foundations of Digital Games. DOI: 10.1145/3649921.3649999.\n- Ongoing research focuses on improving procedural narrative generation, player-adaptive content, and hybrid human-AI design workflows.\n\n## UK Context\n\n- The UK has a vibrant game development scene with significant contributions to PCG research and application.\n  - Universities such as the University of York and University of Edinburgh conduct leading research in PCG and AI for games.\n- North England is an innovation hub with cities like Manchester, Leeds, Newcastle, and Sheffield hosting game studios and tech incubators exploring PCG.\n  - Manchester’s MediaCityUK and Leeds Digital Hub support startups utilising PCG for immersive experiences.\n  - Newcastle’s gaming sector integrates PCG in educational and commercial projects, often collaborating with local universities.\n- Regional case studies include indie games developed in Sheffield employing PCG for dynamic level design and procedural storytelling.\n\n## Future Directions\n\n- Emerging trends include:\n  - Greater integration of reinforcement learning and generative AI models to produce more context-aware and player-tailored content.\n  - Expansion of PCG beyond games into virtual reality, simulation training, and digital twin environments.\n- Anticipated challenges:\n  - Balancing randomness with narrative coherence and artistic intent.\n  - Ensuring ethical use of AI-generated content and managing intellectual property rights.\n- Research priorities:\n  - Developing robust evaluation metrics for PCG quality.\n  - Enhancing collaboration tools for human designers and AI systems.\n  - Exploring PCG’s role in accessibility and personalised gaming experiences.\n\n## References\n\n1. Smith, G. (2014). *Understanding procedural content generation: a design-centric analysis of the role of PCG in games*. ACM Digital Library. DOI: 10.1145/2556288.2557341.\n2. Zhang, Y., Xu, Z., Li, H., Zhang, Y., Zhang, R., Wang, Z. (2025). *Rural residential layout generation and evaluation: An approach based on the Wave Function Collapse algorithm*. International Journal of Architectural Computing. DOI: 10.1177/14780771251326773.\n3. Kanervisto, A., Bignell, D., Wen, L., Grayson, M., Georgescu, R., Valcarcel Macua, S., Tan, S., Rashid, T., Pearce, T., Cao, Y., Lemkhenter, A., Jiang, C., Costello, G., Gupta, G., Tot, M., Ishida, S., Gupta, T., Arora, U., White, R., Devlin, S., Morrison, C., Hofmann, K. (2025). *World and Human Action Models towards gameplay ideation*. Nature. DOI: 10.1038/s41586-025-08600-3.\n4. Chen, M., & Smith, G. (2024). *Game Development as Project-Based Learning: Synthesizing Postmortems of Student-Created Mobile Games*. Proceedings of the 19th International Conference on the Foundations of Digital Games. DOI: 10.1145/3649921.3649999.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: procedural-content-generation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20192\n\t- preferred-term:: Procedural Content Generation\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Algorithmic creation of 3D objects, textures, environments, or complete scenes using computational rules, mathematical functions, or AI models rather than manual authoring.\n\t- source:: [[ETSI ARF 010]]\n\t- maturity:: mature\n\t- owl:class:: mv:ProceduralContentGeneration\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: mv:VirtualProcess\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[CreativeMediaDomain]]\n\t- implementedInLayer:: [[ComputeLayer]], [[DataLayer]]\n\t- #### Relationships\n\t  id:: procedural-content-generation-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Content Creation Pipeline]]\n\t\t- has-part:: [[Grammar System]]\n\t\t- has-part:: [[Rule-Based Generator]]\n\t\t- has-part:: [[AI Model Inference Engine]]\n\t\t- has-part:: [[Noise Function Library]]\n\t\t- has-part:: [[Asset Synthesizer]]\n\t\t- requires:: [[Algorithmic Framework]]\n\t\t- requires:: [[Texture Generation System]]\n\t\t- requires:: [[3D Modeling API]]\n\t\t- enables:: [[Infinite World Generation]]\n\t\t- enables:: [[Automated Asset Creation]]\n\t\t- enables:: [[Dynamic Environments]]\n\t\t- enables:: [[Unique Content Variation]]\n\t\t- is-enabled-by:: [[Game Engine]]\n\t\t- depends-on:: [[L-Systems]]\n\t\t- depends-on:: [[Fractal Algorithms]]\n\t\t- depends-on:: [[Machine Learning Models]]\n\t\t- depends-on:: [[Perlin Noise]]\n\n## Academic Context\n\n- Procedural Content Generation (PCG) refers to the algorithmic creation of game assets such as 3D objects, textures, environments, or entire scenes, utilising computational rules, mathematical functions, or AI models instead of manual design.\n  - The academic foundation of PCG lies in computer graphics, artificial intelligence, and game design, with early roots in procedural methods used in tabletop role-playing games for dungeon and terrain generation.\n  - Key developments include the integration of machine learning techniques, such as Markov chains and reinforcement learning, to enhance content quality, playability, and adaptability.\n  - PCG reduces development time and costs, optimises storage requirements, and increases content variability and replayability.\n\n## Current Landscape (2025)\n\n- PCG is widely adopted across the gaming industry, from indie developers to major studios, for generating levels, textures, and narratives.\n  - Notable platforms and tools include Houdini for 3D procedural modelling and Substance Designer for texture creation.\n  - Machine learning-enhanced PCG (PCGML) is increasingly used to generate content that adapts to player behaviour, ensuring balanced difficulty and engagement.\n- Technical capabilities now allow real-time content generation with player-centric adjustments, though challenges remain in ensuring coherence and narrative depth.\n- Standards and frameworks are evolving to support interoperability and quality assurance in PCG, with academic and industry collaborations fostering best practices.\n\n## Research & Literature\n\n- Key academic works include:\n  - Smith, G. (2014). *Understanding procedural content generation: a design-centric analysis of the role of PCG in games*. ACM Digital Library. DOI: 10.1145/2556288.2557341.\n  - Zhang, Y., et al. (2025). *Rural residential layout generation and evaluation: An approach based on the Wave Function Collapse algorithm*. International Journal of Architectural Computing. DOI: 10.1177/14780771251326773.\n  - Kanervisto, A., et al. (2025). *World and Human Action Models towards gameplay ideation*. Nature. DOI: 10.1038/s41586-025-08600-3.\n  - Chen, M., & Smith, G. (2024). *Game Development as Project-Based Learning: Synthesizing Postmortems of Student-Created Mobile Games*. Proceedings of the 19th International Conference on the Foundations of Digital Games. DOI: 10.1145/3649921.3649999.\n- Ongoing research focuses on improving procedural narrative generation, player-adaptive content, and hybrid human-AI design workflows.\n\n## UK Context\n\n- The UK has a vibrant game development scene with significant contributions to PCG research and application.\n  - Universities such as the University of York and University of Edinburgh conduct leading research in PCG and AI for games.\n- North England is an innovation hub with cities like Manchester, Leeds, Newcastle, and Sheffield hosting game studios and tech incubators exploring PCG.\n  - Manchester’s MediaCityUK and Leeds Digital Hub support startups utilising PCG for immersive experiences.\n  - Newcastle’s gaming sector integrates PCG in educational and commercial projects, often collaborating with local universities.\n- Regional case studies include indie games developed in Sheffield employing PCG for dynamic level design and procedural storytelling.\n\n## Future Directions\n\n- Emerging trends include:\n  - Greater integration of reinforcement learning and generative AI models to produce more context-aware and player-tailored content.\n  - Expansion of PCG beyond games into virtual reality, simulation training, and digital twin environments.\n- Anticipated challenges:\n  - Balancing randomness with narrative coherence and artistic intent.\n  - Ensuring ethical use of AI-generated content and managing intellectual property rights.\n- Research priorities:\n  - Developing robust evaluation metrics for PCG quality.\n  - Enhancing collaboration tools for human designers and AI systems.\n  - Exploring PCG’s role in accessibility and personalised gaming experiences.\n\n## References\n\n1. Smith, G. (2014). *Understanding procedural content generation: a design-centric analysis of the role of PCG in games*. ACM Digital Library. DOI: 10.1145/2556288.2557341.\n2. Zhang, Y., Xu, Z., Li, H., Zhang, Y., Zhang, R., Wang, Z. (2025). *Rural residential layout generation and evaluation: An approach based on the Wave Function Collapse algorithm*. International Journal of Architectural Computing. DOI: 10.1177/14780771251326773.\n3. Kanervisto, A., Bignell, D., Wen, L., Grayson, M., Georgescu, R., Valcarcel Macua, S., Tan, S., Rashid, T., Pearce, T., Cao, Y., Lemkhenter, A., Jiang, C., Costello, G., Gupta, G., Tot, M., Ishida, S., Gupta, T., Arora, U., White, R., Devlin, S., Morrison, C., Hofmann, K. (2025). *World and Human Action Models towards gameplay ideation*. Nature. DOI: 10.1038/s41586-025-08600-3.\n4. Chen, M., & Smith, G. (2024). *Game Development as Project-Based Learning: Synthesizing Postmortems of Student-Created Mobile Games*. Proceedings of the 19th International Conference on the Foundations of Digital Games. DOI: 10.1145/3649921.3649999.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [
     "Game Engine",
     "ETSI_Domain_AI___Creative_Media"
   ],
   "wiki_links": [
-    "ArtificialIntelligence"
+    "Dynamic Environments",
+    "Grammar System",
+    "Rule-Based Generator",
+    "Perlin Noise",
+    "Texture Generation System",
+    "ETSI ARF 010",
+    "CreativeMediaDomain",
+    "Infinite World Generation",
+    "Algorithmic Framework",
+    "Asset Synthesizer",
+    "Noise Function Library",
+    "Automated Asset Creation",
+    "L-Systems",
+    "AI Model Inference Engine",
+    "Unique Content Variation",
+    "Machine Learning Models",
+    "Fractal Algorithms",
+    "Content Creation Pipeline",
+    "Game Engine",
+    "ComputeLayer",
+    "DataLayer",
+    "3D Modeling API"
   ],
   "ontology": {
     "term_id": "20192",
     "preferred_term": "Procedural Content Generation",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#ProceduralContentGeneration",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "Algorithmic creation of 3D objects, textures, environments, or complete scenes using computational rules, mathematical functions, or AI models rather than manual authoring.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:ProceduralContentGeneration",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Process",
+    "owl_inferred_class": "mv:VirtualProcess",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "has_part": [
+      "Grammar System",
+      "Rule-Based Generator",
+      "AI Model Inference Engine",
+      "Noise Function Library",
+      "Asset Synthesizer"
+    ],
+    "is_part_of": [
+      "Content Creation Pipeline"
+    ],
+    "requires": [
+      "Algorithmic Framework",
+      "Texture Generation System",
+      "3D Modeling API"
+    ],
+    "depends_on": [
+      "L-Systems",
+      "Fractal Algorithms",
+      "Machine Learning Models",
+      "Perlin Noise"
+    ],
+    "enables": [
+      "Infinite World Generation",
+      "Automated Asset Creation",
+      "Dynamic Environments",
+      "Unique Content Variation"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "CreativeMediaDomain"
+    ],
+    "implemented_in_layer": [
+      "ComputeLayer",
+      "DataLayer"
+    ],
+    "source": [
+      "ETSI ARF 010"
+    ],
+    "other_relationships": {
+      "is-enabled-by": [
+        "Game Engine"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20192' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

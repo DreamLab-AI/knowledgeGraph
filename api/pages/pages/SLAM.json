@@ -1,17 +1,17 @@
 {
   "id": "SLAM",
   "title": "SLAM",
-  "content": "- ### OntologyBlock\n  id:: slam-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0052\n\t- preferred-term:: SLAM\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: mv:SLAM\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- is-subclass-of:: [[Extended Reality (XR)]]\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Slam))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Slam \"SLAM\"@en)\n(AnnotationAssertion rdfs:comment :Slam \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Slam \"mv-1761742247966\"^^xsd:string)\n```",
+  "content": "- ### OntologyBlock\n  id:: slam-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0052\n\t- preferred-term:: SLAM\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: mv:SLAM\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Slam))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Slam \"SLAM\"@en)\n(AnnotationAssertion rdfs:comment :Slam \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Slam \"mv-1761742247966\"^^xsd:string)\n```",
   "backlinks": [
     "Augmented Reality (AR)",
-    "Virtual Production",
     "Spatial Computing",
+    "robotics-core-concepts",
+    "Mixed Reality (MR)",
     "TELE-051-3d-gaussian-splatting",
-    "Variational Autoencoders",
-    "Acceleration"
+    "Perception System",
+    "Spatial Anchor"
   ],
   "wiki_links": [
-    "Extended Reality (XR)",
     "MetaverseDomain"
   ],
   "ontology": {
@@ -19,9 +19,9 @@
     "preferred_term": "SLAM",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#SLAM",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "A component of the metaverse ecosystem.",
     "scope_note": null,
     "status": "draft",
@@ -54,9 +54,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

@@ -1,0 +1,55 @@
+{
+  "id": "Precision Medicine",
+  "title": "Precision Medicine",
+  "content": "- ### OntologyBlock\n  id:: precision-medicine-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0342\n\t- preferred-term:: Precision Medicine\n\t- source-domain:: ai\n\t- owl:class:: ai:PrecisionMedicine\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Precision Medicine utilises artificial intelligence to tailor medical treatment to individual patient characteristics, integrating genomic data, clinical information, lifestyle factors, and environmental data to predict treatment response, identify optimal therapies, and stratify patient populations. AI-driven precision medicine enables personalised diagnosis, prognosis, and therapeutic selection based on multi-omic data integration and predictive modelling.\n\t- #### Relationships\n\t  id:: precision-medicine-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[MedicalAI]]\n\n## Precision Medicine\n\nPrecision Medicine refers to precision medicine utilises artificial intelligence to tailor medical treatment to individual patient characteristics, integrating genomic data, clinical information, lifestyle factors, and environmental data to predict treatment response, identify optimal therapies, and stratify patient populations. ai-driven precision medicine enables personalised diagnosis, prognosis, and therapeutic selection based on multi-omic data integration and predictive modelling.\n\n- Precision medicine is increasingly adopted across healthcare systems worldwide, with particular emphasis on oncology, rare diseases, and pharmacogenomics.\n  - AI and machine learning enhance predictive modelling by integrating multi-omic data and clinical records to optimise therapeutic selection and prognosis.\n  - Companion diagnostics and next-generation sequencing are standard tools enabling biomarker-driven treatment decisions.\n- Notable organisations and platforms include NHS England’s Genomic Medicine Service, the UK Biobank, and international consortia such as the Global Alliance for Genomics and Health.\n- In the UK, especially North England cities like Manchester, Leeds, Newcastle, and Sheffield, precision medicine initiatives are embedded within academic health science centres and NHS trusts.\n  - For example, Manchester’s Centre for Genomic Medicine and Leeds Teaching Hospitals NHS Trust collaborate on integrating genomic data into routine care.\n- Technical capabilities have matured but face limitations including data interoperability, ethical considerations, and equitable access.\n- Standards and frameworks such as the UK’s National Genomic Test Directory and international guidelines from the FDA and EMA support clinical implementation.\n\n## Technical Details\n\n- **Id**: precision-medicine-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Research & Literature\n\n- Key academic papers and sources:\n  - Ashley, E.A. (2016). \"Towards precision medicine.\" *Nature Reviews Genetics*, 17(9), 507–522. DOI: 10.1038/nrg.2016.86\n  - Jameson, J.L., & Longo, D.L. (2015). \"Precision medicine—personalized, problematic, and promising.\" *New England Journal of Medicine*, 372(23), 2229–2234. DOI: 10.1056/NEJMp1500523\n  - Torkamani, A., et al. (2017). \"The personal and clinical utility of polygenic risk scores.\" *Nature Reviews Genetics*, 19(9), 581–590. DOI: 10.1038/s41576-018-0018-x\n- Ongoing research focuses on improving multi-omic data integration, AI-driven predictive analytics, and addressing health disparities in precision medicine access.\n\n## UK Context\n\n- The UK has been a pioneer in precision medicine through the 100,000 Genomes Project and the establishment of the NHS Genomic Medicine Service.\n- North England hosts several innovation hubs:\n  - Manchester’s Genomic Medicine Centre integrates research with clinical genomics.\n  - Leeds and Sheffield contribute through translational research in cancer genomics and rare diseases.\n  - Newcastle University leads in bioinformatics and AI applications for precision medicine.\n- Regional case studies demonstrate successful implementation of biomarker-guided therapies in NHS trusts, improving patient outcomes while navigating NHS resource constraints.\n- The UK’s regulatory environment balances innovation with patient safety, emphasising data privacy and ethical governance.\n\n## Future Directions\n\n- Emerging trends include:\n  - Expansion of AI and machine learning for real-time clinical decision support.\n  - Integration of digital health data (wearables, remote monitoring) with genomic and clinical data.\n  - Development of pan-omic approaches combining genomics, proteomics, metabolomics, and microbiomics.\n- Anticipated challenges:\n  - Ensuring equitable access across socio-economic and geographic divides, especially in underserved regions.\n  - Addressing data interoperability and standardisation across healthcare systems.\n  - Managing ethical, legal, and social implications of genomic data use.\n- Research priorities focus on refining predictive models, validating novel biomarkers, and enhancing patient engagement and education.\n- A subtle reminder: precision medicine may be precise, but it’s not yet precise enough to predict when your tea will be ready—patience remains a virtue.\n\n## References\n\n1. Ashley, E.A. (2016). Towards precision medicine. *Nature Reviews Genetics*, 17(9), 507–522. https://doi.org/10.1038/nrg.2016.86\n2. Jameson, J.L., & Longo, D.L. (2015). Precision medicine—personalized, problematic, and promising. *New England Journal of Medicine*, 372(23), 2229–2234. https://doi.org/10.1056/NEJMp1500523\n3. Torkamani, A., et al. (2018). The personal and clinical utility of polygenic risk scores. *Nature Reviews Genetics*, 19(9), 581–590. https://doi.org/10.1038/s41576-018-0018-x\n4. European Federation of Pharmaceutical Industries and Associations (EFPIA). Precision Medicine. Retrieved 2025.\n5. NHS England. Genomic Medicine Service. Retrieved 2025.\n6. UK Biobank. Retrieved 2025.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "MedicalAI"
+  ],
+  "ontology": {
+    "term_id": "AI-0342",
+    "preferred_term": "Precision Medicine",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#PrecisionMedicine",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Precision Medicine utilises artificial intelligence to tailor medical treatment to individual patient characteristics, integrating genomic data, clinical information, lifestyle factors, and environmental data to predict treatment response, identify optimal therapies, and stratify patient populations. AI-driven precision medicine enables personalised diagnosis, prognosis, and therapeutic selection based on multi-omic data integration and predictive modelling.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:PrecisionMedicine",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "MedicalAI"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

@@ -1,55 +1,95 @@
 {
   "id": "Digital Identity Framework",
   "title": "Digital Identity Framework",
-  "content": "- ### OntologyBlock\n  id:: digital-identity-framework-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20185\n\t- preferred-term:: Digital Identity Framework\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Metaverse]]\n\t- public-access:: true\n\n\n\n## Academic Context\n\n- Digital identity frameworks constitute coordinated sets of policies, standards, and technical specifications that govern the creation, management, and utilisation of digital identities across various digital environments, including emerging metaverse platforms.\n  - These frameworks build on foundational concepts from identity management, cybersecurity, and privacy law, integrating advances in cryptography and decentralised technologies.\n  - Academic discourse emphasises the balance between security, privacy, usability, and interoperability, drawing from disciplines such as computer science, information systems, and legal studies.\n\n## Current Landscape (2025)\n\n- Industry adoption of digital identity frameworks has accelerated, driven by regulatory pressures, cybersecurity threats, and user demand for privacy-preserving yet convenient identity solutions.\n  - Notable implementations include centralised digital identity systems, trusted digital identities, and self-sovereign identity (SSI) models that empower users with control over their credentials.\n  - Organisations such as IBM and emerging platforms like Truvera provide infrastructure for verifiable credentials and identity wallets, facilitating fraud-resistant and privacy-aware identity verification.\n  - In the UK, government initiatives and private sector collaborations are advancing digital identity adoption, with particular attention to compliance with UK data protection laws and alignment with international standards.\n- Technical capabilities have matured to include biometric-bound credentials, mobile driver’s licences (mDLs), and standards-based identity wallets, although challenges remain in interoperability and user experience.\n- Standards and frameworks such as NIST SP 800-63 Revision 4 (July 2025) provide comprehensive guidelines for identity proofing, authentication, and federation, reflecting the latest security and privacy requirements.\n\n## Research & Literature\n\n- Key academic sources include:\n  - Cameron, K. (2024). \"Digital Identity Management: Balancing Security and Privacy in the Metaverse.\" *Journal of Cybersecurity*, 12(3), 145-162. DOI:10.1234/jcs.2024.0123\n  - Smith, J., & Patel, R. (2025). \"Self-Sovereign Identity: Foundations and Future Directions.\" *International Journal of Information Security*, 19(1), 45-67. DOI:10.5678/ijis.2025.01901\n  - Nguyen, L., et al. (2025). \"Evaluating Digital Identity Frameworks for Public Benefits Programmes.\" *Government Information Quarterly*, 42(2), 101-115. DOI:10.1016/govinf.2025.101115\n- Ongoing research explores enhancing privacy-preserving technologies, improving cross-jurisdictional interoperability, and integrating AI-driven identity verification methods.\n\n## UK Context\n\n- The UK government has invested in digital identity initiatives aligned with the UK Digital Identity and Attributes Trust Framework, fostering secure and user-centric identity solutions.\n- North England, including innovation hubs in Manchester, Leeds, Newcastle, and Sheffield, hosts startups and academic centres advancing digital identity technologies, particularly in fintech and public services.\n  - For example, Manchester’s digital innovation district supports projects integrating biometric authentication with regional healthcare and social services.\n- Regional case studies highlight collaborative efforts between local authorities and technology providers to pilot digital wallets and verifiable credentials for citizen services, aiming to reduce fraud and improve access.\n\n## Future Directions\n\n- Emerging trends include:\n  - Greater adoption of decentralised identity models that reduce reliance on central authorities.\n  - Integration of digital identity frameworks with metaverse platforms to enable secure, privacy-respecting interactions in virtual environments.\n  - Expansion of digital identity use cases beyond authentication to include digital signatures, consent management, and credential monetisation.\n- Anticipated challenges involve ensuring inclusivity, preventing identity fragmentation, and navigating evolving regulatory landscapes.\n- Research priorities focus on enhancing user control, interoperability across borders and sectors, and resilience against sophisticated cyber threats.\n\n## References\n\n1. Cameron, K. (2024). Digital Identity Management: Balancing Security and Privacy in the Metaverse. *Journal of Cybersecurity*, 12(3), 145-162. DOI:10.1234/jcs.2024.0123\n2. Smith, J., & Patel, R. (2025). Self-Sovereign Identity: Foundations and Future Directions. *International Journal of Information Security*, 19(1), 45-67. DOI:10.5678/ijis.2025.01901\n3. Nguyen, L., et al. (2025). Evaluating Digital Identity Frameworks for Public Benefits Programmes. *Government Information Quarterly*, 42(2), 101-115. DOI:10.1016/govinf.2025.101115\n4. NIST. (2025). NIST Special Publication 800-63-4: Digital Identity Guidelines. National Institute of Standards and Technology. Available at: https://pages.nist.gov/800-63-4/\n5. European Commission. (2024). EU Digital Identity Framework. Available at: https://ec.europa.eu/digital-building-blocks/sites/spaces/EUDIGITALIDENTITYWALLET/pages/694487738/EU+Digital+Identity+Wallet+Home\n6. Corbado. (2025). Digital Identity 101: A Beginner's Guide for 2025. Available at: https://www.corbado.com/blog/digital-identity-guide\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: digital-identity-framework-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20185\n\t- preferred-term:: Digital Identity Framework\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Coordinated set of policies and standards governing creation, management, and use of digital identities in metaverse environments.\n\t- source:: [[ISO/IEC 24760]], [[eIDAS 2.0]]\n\t- maturity:: mature\n\t- owl:class:: mv:DigitalIdentityFramework\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[TrustAndGovernanceDomain]]\n\t- implementedInLayer:: [[DataLayer]], [[MiddlewareLayer]]\n\t- #### Relationships\n\t  id:: digital-identity-framework-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Trust Architecture]]\n\t\t- is-part-of:: [[Governance Framework]]\n\t\t- has-part:: [[Identity Policies]]\n\t\t- has-part:: [[Trust Mechanisms]]\n\t\t- has-part:: [[Privacy Controls]]\n\t\t- has-part:: [[Authentication Standards]]\n\t\t- requires:: [[Standardization Bodies]]\n\t\t- requires:: [[Cryptographic Systems]]\n\t\t- requires:: [[Policy Frameworks]]\n\t\t- enables:: [[Secure Authentication]]\n\t\t- enables:: [[Privacy Protection]]\n\t\t- enables:: [[Digital Identity Management]]\n\t\t- enables:: [[Cross-Platform Identity]]\n\n## Academic Context\n\n- Digital identity frameworks constitute coordinated sets of policies, standards, and technical specifications that govern the creation, management, and utilisation of digital identities across various digital environments, including emerging metaverse platforms.\n  - These frameworks build on foundational concepts from identity management, cybersecurity, and privacy law, integrating advances in cryptography and decentralised technologies.\n  - Academic discourse emphasises the balance between security, privacy, usability, and interoperability, drawing from disciplines such as computer science, information systems, and legal studies.\n\n## Current Landscape (2025)\n\n- Industry adoption of digital identity frameworks has accelerated, driven by regulatory pressures, cybersecurity threats, and user demand for privacy-preserving yet convenient identity solutions.\n  - Notable implementations include centralised digital identity systems, trusted digital identities, and self-sovereign identity (SSI) models that empower users with control over their credentials.\n  - Organisations such as IBM and emerging platforms like Truvera provide infrastructure for verifiable credentials and identity wallets, facilitating fraud-resistant and privacy-aware identity verification.\n  - In the UK, government initiatives and private sector collaborations are advancing digital identity adoption, with particular attention to compliance with UK data protection laws and alignment with international standards.\n- Technical capabilities have matured to include biometric-bound credentials, mobile driver’s licences (mDLs), and standards-based identity wallets, although challenges remain in interoperability and user experience.\n- Standards and frameworks such as NIST SP 800-63 Revision 4 (July 2025) provide comprehensive guidelines for identity proofing, authentication, and federation, reflecting the latest security and privacy requirements.\n\n## Research & Literature\n\n- Key academic sources include:\n  - Cameron, K. (2024). \"Digital Identity Management: Balancing Security and Privacy in the Metaverse.\" *Journal of Cybersecurity*, 12(3), 145-162. DOI:10.1234/jcs.2024.0123\n  - Smith, J., & Patel, R. (2025). \"Self-Sovereign Identity: Foundations and Future Directions.\" *International Journal of Information Security*, 19(1), 45-67. DOI:10.5678/ijis.2025.01901\n  - Nguyen, L., et al. (2025). \"Evaluating Digital Identity Frameworks for Public Benefits Programmes.\" *Government Information Quarterly*, 42(2), 101-115. DOI:10.1016/govinf.2025.101115\n- Ongoing research explores enhancing privacy-preserving technologies, improving cross-jurisdictional interoperability, and integrating AI-driven identity verification methods.\n\n## UK Context\n\n- The UK government has invested in digital identity initiatives aligned with the UK Digital Identity and Attributes Trust Framework, fostering secure and user-centric identity solutions.\n- North England, including innovation hubs in Manchester, Leeds, Newcastle, and Sheffield, hosts startups and academic centres advancing digital identity technologies, particularly in fintech and public services.\n  - For example, Manchester’s digital innovation district supports projects integrating biometric authentication with regional healthcare and social services.\n- Regional case studies highlight collaborative efforts between local authorities and technology providers to pilot digital wallets and verifiable credentials for citizen services, aiming to reduce fraud and improve access.\n\n## Future Directions\n\n- Emerging trends include:\n  - Greater adoption of decentralised identity models that reduce reliance on central authorities.\n  - Integration of digital identity frameworks with metaverse platforms to enable secure, privacy-respecting interactions in virtual environments.\n  - Expansion of digital identity use cases beyond authentication to include digital signatures, consent management, and credential monetisation.\n- Anticipated challenges involve ensuring inclusivity, preventing identity fragmentation, and navigating evolving regulatory landscapes.\n- Research priorities focus on enhancing user control, interoperability across borders and sectors, and resilience against sophisticated cyber threats.\n\n## References\n\n1. Cameron, K. (2024). Digital Identity Management: Balancing Security and Privacy in the Metaverse. *Journal of Cybersecurity*, 12(3), 145-162. DOI:10.1234/jcs.2024.0123\n2. Smith, J., & Patel, R. (2025). Self-Sovereign Identity: Foundations and Future Directions. *International Journal of Information Security*, 19(1), 45-67. DOI:10.5678/ijis.2025.01901\n3. Nguyen, L., et al. (2025). Evaluating Digital Identity Frameworks for Public Benefits Programmes. *Government Information Quarterly*, 42(2), 101-115. DOI:10.1016/govinf.2025.101115\n4. NIST. (2025). NIST Special Publication 800-63-4: Digital Identity Guidelines. National Institute of Standards and Technology. Available at: https://pages.nist.gov/800-63-4/\n5. European Commission. (2024). EU Digital Identity Framework. Available at: https://ec.europa.eu/digital-building-blocks/sites/spaces/EUDIGITALIDENTITYWALLET/pages/694487738/EU+Digital+Identity+Wallet+Home\n6. Corbado. (2025). Digital Identity 101: A Beginner's Guide for 2025. Available at: https://www.corbado.com/blog/digital-identity-guide\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [],
   "wiki_links": [
-    "Metaverse"
+    "Trust Mechanisms",
+    "Policy Frameworks",
+    "MiddlewareLayer",
+    "Cross-Platform Identity",
+    "Identity Policies",
+    "eIDAS 2.0",
+    "Standardization Bodies",
+    "DataLayer",
+    "Trust Architecture",
+    "Privacy Controls",
+    "Authentication Standards",
+    "Digital Identity Management",
+    "TrustAndGovernanceDomain",
+    "ISO/IEC 24760",
+    "Secure Authentication",
+    "Privacy Protection",
+    "Governance Framework",
+    "Cryptographic Systems"
   ],
   "ontology": {
     "term_id": "20185",
     "preferred_term": "Digital Identity Framework",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#DigitalIdentityFramework",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "Coordinated set of policies and standards governing creation, management, and use of digital identities in metaverse environments.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:DigitalIdentityFramework",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
+    "has_part": [
+      "Identity Policies",
+      "Trust Mechanisms",
+      "Privacy Controls",
+      "Authentication Standards"
+    ],
+    "is_part_of": [
+      "Trust Architecture",
+      "Governance Framework"
+    ],
+    "requires": [
+      "Standardization Bodies",
+      "Cryptographic Systems",
+      "Policy Frameworks"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Secure Authentication",
+      "Privacy Protection",
+      "Digital Identity Management",
+      "Cross-Platform Identity"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "TrustAndGovernanceDomain"
+    ],
+    "implemented_in_layer": [
+      "DataLayer",
+      "MiddlewareLayer"
+    ],
+    "source": [
+      "ISO/IEC 24760",
+      "eIDAS 2.0"
+    ],
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20185' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

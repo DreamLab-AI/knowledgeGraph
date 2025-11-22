@@ -1,33 +1,33 @@
 {
   "id": "ETSI_Domain_AI___Data_Mgmt",
   "title": "ETSI Domain AI + Data Mgmt",
-  "content": "- ### OntologyBlock\n  id:: etsi-domain-ai-data-mgmt-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20332\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: ETSI Domain AI + Data Mgmt\n\t- definition:: Cross-domain marker for metaverse components combining artificial intelligence with data management capabilities including ML pipelines, intelligent data processing, analytics, and AI-driven data governance.\n\t- maturity:: mature\n\t- source:: [[ETSI GS MEC]]\n\t- owl:class:: mv:ETSIDomainAIDataMgmt\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[ComputationAndIntelligenceDomain]], [[InfrastructureDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-ai-data-mgmt-relationships\n\t\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t\t- is-part-of:: [[ETSI Domain Taxonomy]]\n\t\t- depends-on:: [[ETSI Domain AI]], [[InfrastructureDomain]], [[ETSI_Domain_AI]]\n\t\t- enables:: [[ML Pipeline Classification]], [[Intelligent Analytics Categorization]]\n\t\t- categorizes:: [[Machine Learning Pipeline]], [[AI Data Processing]], [[Predictive Analytics]]\n\t- #### OWL Axioms\n\t  id:: etsi-domain-ai-data-mgmt-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:ETSIDomainAIDataMgmt))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:ETSIDomainAIDataMgmt mv:VirtualEntity)\n\t\t  SubClassOf(mv:ETSIDomainAIDataMgmt mv:Object)\n\n\t\t  # Cross-domain marker classification\n\t\t  SubClassOf(mv:ETSIDomainAIDataMgmt mv:DomainMarker)\n\t\t  SubClassOf(mv:ETSIDomainAIDataMgmt mv:CrossDomainMarker)\n\n\t\t  # Multiple domain classification\n\t\t  SubClassOf(mv:ETSIDomainAIDataMgmt\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:ComputationAndIntelligenceDomain)\n\t\t  )\n\t\t  SubClassOf(mv:ETSIDomainAIDataMgmt\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:InfrastructureDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:ETSIDomainAIDataMgmt\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n```",
+  "content": "- ### OntologyBlock\n  id:: etsi-domain-ai-data-mgmt-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20332\n\t- preferred-term:: ETSI Domain AI + Data Mgmt\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Cross-domain marker for metaverse components combining artificial intelligence with data management capabilities including ML pipelines, intelligent data processing, analytics, and AI-driven data governance.\n\t- source:: [[ETSI GS MEC]]\n\t- maturity:: mature\n\t- owl:class:: mv:ETSIDomainAIDataMgmt\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[ComputationAndIntelligenceDomain]], [[InfrastructureDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-ai-data-mgmt-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t\t- is-part-of:: [[ETSI Domain Taxonomy]]\n\t\t- enables:: [[ML Pipeline Classification]]\n\t\t- enables:: [[Intelligent Analytics Categorization]]\n\t\t- categorizes:: [[AI Data Processing]]\n\t\t- categorizes:: [[Machine Learning Pipeline]]\n\t\t- categorizes:: [[Predictive Analytics]]\n\t\t- depends-on:: [[ETSI_Domain_AI]]\n\t\t- depends-on:: [[ETSI Domain AI]]\n\t\t- depends-on:: [[InfrastructureDomain]]",
   "backlinks": [
     "ETSI_Domain_AI"
   ],
   "wiki_links": [
-    "ComputationAndIntelligenceDomain",
-    "InfrastructureDomain",
-    "ETSI Domain Taxonomy",
-    "Intelligent Analytics Categorization",
     "ETSI Domain AI",
-    "ArtificialIntelligence",
-    "AI Data Processing",
-    "ApplicationLayer",
+    "ETSI Domain Taxonomy",
+    "InfrastructureDomain",
     "ETSI GS MEC",
-    "ML Pipeline Classification",
-    "Machine Learning Pipeline",
+    "ArtificialIntelligence",
+    "ComputationAndIntelligenceDomain",
+    "ETSI_Domain_AI",
+    "Intelligent Analytics Categorization",
+    "AI Data Processing",
     "Predictive Analytics",
-    "ETSI_Domain_AI"
+    "ApplicationLayer",
+    "ML Pipeline Classification",
+    "Machine Learning Pipeline"
   ],
   "ontology": {
     "term_id": "20332",
     "preferred_term": "ETSI Domain AI + Data Mgmt",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ETSIDomainAIDataMgmt",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "Cross-domain marker for metaverse components combining artificial intelligence with data management capabilities including ML pipelines, intelligent data processing, analytics, and AI-driven data governance.",
     "scope_note": null,
     "status": "draft",
@@ -51,9 +51,9 @@
     ],
     "requires": [],
     "depends_on": [
+      "ETSI_Domain_AI",
       "ETSI Domain AI",
-      "InfrastructureDomain",
-      "ETSI_Domain_AI"
+      "InfrastructureDomain"
     ],
     "enables": [
       "ML Pipeline Classification",
@@ -75,16 +75,17 @@
     ],
     "other_relationships": {
       "categorizes": [
-        "Machine Learning Pipeline",
         "AI Data Processing",
+        "Machine Learning Pipeline",
         "Predictive Analytics"
       ]
     },
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "term-id '20332' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

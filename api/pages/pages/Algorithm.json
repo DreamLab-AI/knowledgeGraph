@@ -1,48 +1,47 @@
 {
   "id": "Algorithm",
   "title": "Algorithm",
-  "content": "- ### OntologyBlock\n  id:: algorithm-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0830\n    - filename-history:: [\"AI-0830-algorithm.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0830\n    - preferred-term:: Algorithm\n    - source-domain:: artificial-intelligence\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:Algorithm\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### OWL Restrictions\n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[ArtificialIntelligence]] via is-subclass-of\n\n  - \n### Relationships\n- is-subclass-of:: [[MachineLearning]]",
+  "content": "- ### OntologyBlock\n  id:: algorithm-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0830\n\t- preferred-term:: Algorithm\n\t- source-domain:: ai\n\t- owl:class:: ai:Algorithm\n\t- status:: complete\n\t- public-access:: true\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: algorithm-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[MachineLearning]]",
   "backlinks": [
-    "Block",
+    "AI-Augmented Software Engineering",
     "Pathfinding Algorithm"
   ],
   "wiki_links": [
-    "MachineLearning",
-    "ArtificialIntelligence",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "MachineLearning"
   ],
   "ontology": {
     "term_id": "AI-0830",
     "preferred_term": "Algorithm",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/ai#Algorithm",
-    "source_domain": "artificial-intelligence",
-    "domain": "artificial-intelligence",
-    "domain_full_name": "",
-    "definition": "- maturity:: established",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": null,
     "scope_note": null,
     "status": "complete",
     "maturity": "established",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-11-13",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "ai:Algorithm",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "MachineLearning"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [
-      "ArtificialIntelligence via is"
-    ],
+    "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
@@ -55,10 +54,10 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'ai' doesn't match source-domain 'artificial-intelligence'"
+        "Missing required property: owl:role"
       ]
     }
   }

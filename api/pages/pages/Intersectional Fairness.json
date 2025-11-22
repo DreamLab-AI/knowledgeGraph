@@ -1,0 +1,68 @@
+{
+  "id": "Intersectional Fairness",
+  "title": "Intersectional Fairness",
+  "content": "- ### OntologyBlock\n  id:: intersectional-fairness-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0384\n\t- preferred-term:: Intersectional Fairness\n\t- status:: in\n\t- public-access:: true\n\t- definition:: Intersectional Fairness is an approach to algorithmic fairness that accounts for overlapping and interacting protected attributes, recognizing that individuals with multiple marginalized identities may experience unique forms of discrimination not captured by analyzing single attributes in isolation. Rooted in intersectionality theory from critical race and feminist scholarship (Crenshaw 1989), this framework acknowledges that the experiences of, for example, Black women cannot be understood simply as the combination of being Black and being a woman, but involve distinct discriminatory patterns at the intersection of race and gender. In AI systems, intersectional fairness requires evaluating bias and fairness metrics across intersectional subgroups defined by specific combinations of protected attribute values, where the number of subgroups equals the product of attribute cardinalities (e.g., 2 genders × 4 race categories × 3 age brackets = 24 subgroups). This analysis often reveals intersectional disparities where subgroups experience worse outcomes than predicted by single-attribute analysis, particularly affecting individuals with multiple marginalized identities. Implementation challenges include exponential growth of subgroups with additional attributes, sample size limitations for rare intersectional groups, and computational complexity of enforcing fairness across all subgroups simultaneously. Intersectional fairness auditing is increasingly required by comprehensive AI governance frameworks and documented in research by Buolamwini and Gebru (2018) on gender-race bias in facial recognition.\n\t- source:: [[Crenshaw (1989)]], [[Buolamwini and Gebru (2018)]], [[IEEE P7003-2021]]\n\t- maturity:: mature\n\t- owl:class:: aigo:IntersectionalFairness\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: aigo:VirtualProcess\n\t- belongsToDomain:: [[AIEthicsDomain]]\n\t- implementedInLayer:: [[ConceptualLayer]]\n\t- #### Relationships\n\t  id:: intersectional-fairness-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AIFairness]]\n\n## Intersectional Fairness\n\nIntersectional Fairness refers to intersectional fairness is an approach to algorithmic fairness that accounts for overlapping and interacting protected attributes, recognising that individuals with multiple marginalized identities may experience unique forms of discrimination not captured by analysing single attributes in isolation. rooted in intersectionality theory from critical race and feminist scholarship (crenshaw 1989), this framework acknowledges that the experiences of, for example, black women cannot be understood simply as the combination of being black and being a woman, but involve distinct discriminatory patterns at the intersection of race and gender. in ai systems, intersectional fairness requires evaluating bias and fairness metrics across intersectional subgroups defined by specific combinations of protected attribute values, where the number of subgroups equals the product of attribute cardinalities (e.g., 2 genders × 4 race categories × 3 age brackets = 24 subgroups). this analysis often reveals intersectional disparities where subgroups experience worse outcomes than predicted by single-attribute analysis, particularly affecting individuals with multiple marginalized identities. implementation challenges include exponential growth of subgroups with additional attributes, sample size limitations for rare intersectional groups, and computational complexity of enforcing fairness across all subgroups simultaneously. intersectional fairness auditing is increasingly required by comprehensive ai governance frameworks and documented in research by buolamwini and gebru (2018) on gender-race bias in facial recognition.\n\n- Industry adoption of intersectional fairness frameworks is growing, with organisations increasingly aware of the need to evaluate AI systems beyond single demographic categories.\n  - Notable platforms incorporate intersectional metrics to detect and mitigate worst-case disparities, inspired by Rawlsian distributive justice principles, aiming to minimise the gap between the best- and worst-treated subgroups[2].\n  - UK-based AI ethics initiatives and tech companies are embedding intersectional fairness into their governance and auditing processes, reflecting a broader commitment to social justice in AI deployment.\n- Technical capabilities have advanced but remain limited by computational complexity and the challenge of defining relevant intersectional subgroups without falling into fairness gerrymandering.\n- Standards and frameworks are evolving, with interdisciplinary collaboration emphasised to balance quantitative fairness metrics with socio-technical contextual understanding[4].\n\n## Technical Details\n\n- **Id**: 0384-intersectional-fairness-about\n- **Collapsed**: true\n- **Domain Prefix**: AI\n- **Sequence Number**: 0384\n- **Filename History**: [\"AI-0384-intersectional-fairness.md\"]\n- **Public Access**: true\n- **Source Domain**: ai\n- **Status**: in-progress\n- **Last Updated**: 2025-10-29\n- **Maturity**: mature\n- **Source**: [[Crenshaw (1989)]], [[Buolamwini and Gebru (2018)]], [[IEEE P7003-2021]]\n- **Authority Score**: 0.95\n- **Owl:Class**: aigo:IntersectionalFairness\n- **Owl:Physicality**: VirtualEntity\n- **Owl:Role**: Process\n- **Owl:Inferred Class**: aigo:VirtualProcess\n- **Belongstodomain**: [[AIEthicsDomain]]\n- **Implementedinlayer**: [[ConceptualLayer]]\n\n## Research & Literature\n\n- Key academic papers:\n  - Kearns et al. (2018). \"Preventing Fairness Gerrymandering: Auditing and Learning for Subgroup Fairness.\" Proceedings of the 35th International Conference on Machine Learning. DOI: 10.5555/3327144.3327185\n  - Foulds et al. (2025). \"A Survey on Intersectional Fairness in Machine Learning: Notions, Mitigation, and Challenges.\" Montreal AI Ethics Institute. [Online]\n  - Vethman et al. (2025). \"Actionable Recommendations for an Intersectional Approach to AI Fairness.\" Proceedings of FAccT ’25, Athens, Greece.\n  - Mohit Udas, I. (2024). \"Actionable Recommendations for AI Fairness.\" DIVERSIFAIR Project.\n  - Kearns et al. (2020). \"An Intersectional Definition of Fairness.\" IEEE ICDE 2020. DOI: 10.1109/icde48307.2020.00203\n- Ongoing research focuses on developing scalable algorithms that balance computational feasibility with ethical robustness, integrating stakeholder participation, and refining fairness metrics to better capture lived social realities.\n\n## UK Context\n\n- The UK has been a fertile ground for intersectional fairness research and practice, with universities such as the University of Manchester, University of Leeds, Newcastle University, and the University of Sheffield contributing to both theoretical and applied work.\n  - Manchester’s AI ethics groups have collaborated with local councils to audit public sector AI systems for intersectional biases.\n  - Leeds-based initiatives focus on community engagement to ensure AI fairness frameworks reflect diverse regional populations.\n  - Newcastle and Sheffield have hosted workshops and interdisciplinary forums to bridge computer science, social sciences, and law in addressing intersectional fairness.\n- UK policy frameworks increasingly recognise intersectionality in anti-discrimination law, influencing AI governance and ethical standards.\n\n## Future Directions\n\n- Emerging trends include:\n  - Development of hybrid socio-technical frameworks that combine quantitative fairness metrics with qualitative stakeholder insights.\n  - Enhanced participatory design approaches involving affected communities, particularly from marginalised intersectional groups.\n  - Integration of intersectional fairness into regulatory compliance and AI certification processes.\n- Anticipated challenges:\n  - Balancing computational tractability with the ethical imperative to consider complex identity intersections.\n  - Avoiding fairness gerrymandering while ensuring no subgroup is left behind.\n  - Navigating the socio-political complexities of power, privilege, and representation in AI development teams and governance.\n- Research priorities:\n  - Creating transparent, interpretable fairness metrics that resonate with diverse stakeholders.\n  - Expanding datasets to better represent intersectional identities without compromising privacy.\n  - Investigating the long-term societal impacts of intersectionally fair AI systems.\n\n## References\n\n1. Foulds, J., et al. (2025). \"A Survey on Intersectional Fairness in Machine Learning: Notions, Mitigation, and Challenges.\" Montreal AI Ethics Institute.\n2. Fiddler AI Blog (2025). \"Measuring Intersectional Fairness.\"\n3. Vethman, R., et al. (2025). \"Actionable Recommendations for an Intersectional Approach to AI Fairness.\" Proceedings of FAccT ’25, Athens, Greece.\n4. Mohit Udas, I. (2024). \"Actionable Recommendations for AI Fairness.\" DIVERSIFAIR Project.\n5. Kearns, M., et al. (2020). \"An Intersectional Definition of Fairness.\" IEEE International Conference on Data Engineering (ICDE), pp. 1918–1921. DOI: 10.1109/icde48307.2020.00203\n6. Kearns, M., et al. (2018). \"Preventing Fairness Gerrymandering: Auditing and Learning for Subgroup Fairness.\" Proceedings of the 35th International Conference on Machine Learning. DOI: 10.5555/3327144.3327185\n*Intersectional fairness: because fairness isn’t one-size-fits-all, and neither are people.*\n\n## Metadata\n\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Fairness Metrics"
+  ],
+  "wiki_links": [
+    "IEEE P7003-2021",
+    "Buolamwini and Gebru (2018)",
+    "Crenshaw (1989)",
+    "AIFairness",
+    "ConceptualLayer",
+    "AIEthicsDomain"
+  ],
+  "ontology": {
+    "term_id": "AI-0384",
+    "preferred_term": "Intersectional Fairness",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#aigo:IntersectionalFairness",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Intersectional Fairness is an approach to algorithmic fairness that accounts for overlapping and interacting protected attributes, recognizing that individuals with multiple marginalized identities may experience unique forms of discrimination not captured by analyzing single attributes in isolation. Rooted in intersectionality theory from critical race and feminist scholarship (Crenshaw 1989), this framework acknowledges that the experiences of, for example, Black women cannot be understood simply as the combination of being Black and being a woman, but involve distinct discriminatory patterns at the intersection of race and gender. In AI systems, intersectional fairness requires evaluating bias and fairness metrics across intersectional subgroups defined by specific combinations of protected attribute values, where the number of subgroups equals the product of attribute cardinalities (e.g., 2 genders × 4 race categories × 3 age brackets = 24 subgroups). This analysis often reveals intersectional disparities where subgroups experience worse outcomes than predicted by single-attribute analysis, particularly affecting individuals with multiple marginalized identities. Implementation challenges include exponential growth of subgroups with additional attributes, sample size limitations for rare intersectional groups, and computational complexity of enforcing fairness across all subgroups simultaneously. Intersectional fairness auditing is increasingly required by comprehensive AI governance frameworks and documented in research by Buolamwini and Gebru (2018) on gender-race bias in facial recognition.",
+    "scope_note": null,
+    "status": "in",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": "2025-10-29",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "aigo:IntersectionalFairness",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Process",
+    "owl_inferred_class": "aigo:VirtualProcess",
+    "is_subclass_of": [
+      "AIFairness"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "AIEthicsDomain"
+    ],
+    "implemented_in_layer": [
+      "ConceptualLayer"
+    ],
+    "source": [
+      "Crenshaw (1989)",
+      "Buolamwini and Gebru (2018)",
+      "IEEE P7003-2021"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "owl:class namespace 'aigo' doesn't match source-domain 'ai'"
+      ]
+    }
+  }
+}

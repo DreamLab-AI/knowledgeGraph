@@ -1,0 +1,60 @@
+{
+  "id": "Claude",
+  "title": "Claude",
+  "content": "- ### OntologyBlock\n  id:: AI-0230\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0230\n\t- preferred-term:: Claude\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: mv:Claude\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n### Domain & Architecture\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- maturity:: draft\n\n### Relationships\n\n## Characteristics\n\n- **Constitutional AI Training**: Uses self-critique and constitutional principles\n- **Long Context**: Supports very long context windows (100K+ tokens)\n- **Safety Focus**: Emphasises harmlessness and alignment\n- **Strong Reasoning**: Excels at complex reasoning and analysis\n\n## Academic Foundations\n\n**Primary Source**: Bai et al., \"Constitutional AI: Harmlessness from AI Feedback\", arXiv:2212.08073 (2022)\n\n**Alignment Approach**: Combines supervised learning with Constitutional AI and RLAIF for alignment without extensive human feedback on harmful outputs.\n\n## Technical Context\n\nClaude models are trained with Constitutional AI, which uses a set of principles to guide self-critique and revision. This approach enables the model to learn harmless behaviour through AI feedback rather than requiring extensive human labelling of harmful outputs.\n\n## Ontological Relationships\n\n- **Broader Term**: Large Language Model\n- **Related Terms**: GPT-4, Constitutional AI, RLAIF\n- **Variants**: Claude, Claude 2, Claude 3 (Haiku, Sonnet, Opus)\n\n## Usage Context\n\n\"Claude's Constitutional AI training enables harmless behaviour through self-critique guided by explicit principles.\"\n\n## OWL Functional Syntax\n\n```clojure\n(Declaration (Class :Claude))\n(AnnotationAssertion rdfs:label :Claude \"Claude\"@en)\n(AnnotationAssertion rdfs:comment :Claude\n  \"A family of large language models by Anthropic, trained using Constitutional AI for helpfulness, harmlessness, and honesty.\"@en)\n(AnnotationAssertion :hasSource :Claude\n  \"Bai et al., 'Constitutional AI: Harmlessness from AI Feedback', arXiv:2212.08073 (2022)\"@en)\n\n;; Taxonomic relationships\n(SubClassOf :Claude :LargeLanguageModel)\n(SubClassOf :Claude :TransformerArchitecture)\n\n;; Training methodology\n(SubClassOf :Claude\n  (ObjectSomeValuesFrom :trainedWith :ConstitutionalAI))\n(SubClassOf :Claude\n  (ObjectSomeValuesFrom :trainedWith :RLAIF))\n\n;; Design objectives\n(SubClassOf :Claude\n  (ObjectSomeValuesFrom :optimisedFor :Helpfulness))\n(SubClassOf :Claude\n  (ObjectSomeValuesFrom :optimisedFor :Harmlessness))\n(SubClassOf :Claude\n  (ObjectSomeValuesFrom :optimisedFor :Honesty))\n\n;; Capabilities\n(SubClassOf :Claude\n  (ObjectSomeValuesFrom :excellsAt :ComplexReasoning))\n(SubClassOf :Claude\n  (ObjectSomeValuesFrom :excellsAt :CodeGeneration))\n(SubClassOf :Claude\n  (ObjectSomeValuesFrom :supports :ExtendedContext))\n\n;; Model variants\n(SubClassOf :ClaudeHaiku :Claude)\n(SubClassOf :ClaudeSonnet :Claude)\n(SubClassOf :ClaudeOpus :Claude)\n\n;; Properties\n(DataPropertyAssertion :maxContextLength :Claude \"100000\"^^xsd:integer)\n(DataPropertyAssertion :emphasisesSafety :Claude \"true\"^^xsd:boolean)\n(DataPropertyAssertion :developer :Claude \"Anthropic\"^^xsd:string)\n(DataPropertyAssertion :usesConstitution :Claude \"true\"^^xsd:boolean)\n```\n\n## References\n\n- Bai, Y., et al. (2022). \"Constitutional AI: Harmlessness from AI Feedback\". arXiv:2212.08073\n- Anthropic (2023). \"Claude 2 Technical Documentation\"\n\n---\n\n*Ontology Term managed by AI-Grounded Ontology Working Group*\n*UK English Spelling Standards Applied*\n\t- maturity:: draft\n\t- owl:class:: mv:Claude\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t- belongsToDomain:: [[MetaverseDomain]]",
+  "backlinks": [
+    "AI-Augmented Software Engineering"
+  ],
+  "wiki_links": [
+    "ArtificialIntelligence",
+    "MetaverseDomain"
+  ],
+  "ontology": {
+    "term_id": "AI-0230",
+    "preferred_term": "Claude",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#Claude",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:Claude",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain",
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

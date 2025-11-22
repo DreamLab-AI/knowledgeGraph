@@ -1,14 +1,12 @@
 {
   "id": "Cardano",
   "title": "Cardano",
-  "content": "- ### OntologyBlock\n  id:: cardano-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0567\n    - filename-history:: [\"BC-0567-cardano.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[BlockchainTechnology]]\n    - term-id:: BC-0567\n    - preferred-term:: Cardano\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: A research-driven blockchain platform using the mathematically-verified Ouroboros Proof-of-Stake consensus protocol. Features layered architecture separating settlement and computation layers, written in Haskell with Plutus for smart contracts. Emphasizes formal verification, sustainability, decentralization, and provable security guarantees.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Cardano\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "content": "- ### OntologyBlock\n  id:: cardano-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0567\n\t- preferred-term:: Cardano\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A research-driven blockchain platform using the mathematically-verified Ouroboros Proof-of-Stake consensus protocol. Features layered architecture separating settlement and computation layers, written in Haskell with Plutus for smart contracts. Emphasizes formal verification, sustainability, decentralization, and provable security guarantees.\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: bc:Cardano\n\t- belongsToDomain:: [[Blockchain]]",
   "backlinks": [
-    "Digital Twin of the Customer",
-    "BC 0112 inflationary token",
-    "Decentralized Finance"
+    "AI-Augmented Software Engineering",
+    "Block Time"
   ],
   "wiki_links": [
-    "BlockchainTechnology",
     "Blockchain"
   ],
   "ontology": {
@@ -16,17 +14,17 @@
     "preferred_term": "Cardano",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/blockchain#Cardano",
-    "source_domain": "blockchain",
-    "domain": "blockchain",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
     "definition": "A research-driven blockchain platform using the mathematically-verified Ouroboros Proof-of-Stake consensus protocol. Features layered architecture separating settlement and computation layers, written in Haskell with Plutus for smart contracts. Emphasizes formal verification, sustainability, decentralization, and provable security guarantees.",
     "scope_note": null,
     "status": "complete",
     "maturity": "established",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-11-13",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "bc:Cardano",
@@ -53,10 +51,11 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

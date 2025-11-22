@@ -1,34 +1,33 @@
 {
   "id": "ETSI_Domain_AI___Governance",
   "title": "ETSI Domain AI + Governance",
-  "content": "- ### OntologyBlock\n  id:: etsi-domain-ai-governance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20333\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: ETSI Domain AI + Governance\n\t- definition:: Cross-domain marker for metaverse components combining artificial intelligence with governance frameworks including AI ethics, explainability, bias detection, regulatory compliance, and responsible AI systems.\n\t- maturity:: mature\n\t- source:: [[ETSI GS MEC]]\n\t- owl:class:: mv:ETSIDomainAIGovernance\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[ComputationAndIntelligenceDomain]], [[TrustAndGovernanceDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-ai-governance-relationships\n\t\t- is-part-of:: [[ETSI Domain Taxonomy]]\n\t\t- depends-on:: [[ETSI Domain AI]], [[TrustAndGovernanceDomain]], [[ETSI_Domain_AI]]\n\t\t- enables:: [[AI Ethics Classification]], [[Explainability Categorization]]\n\t\t- categorizes:: [[AI Ethics Framework]], [[Explainable AI]], [[Bias Detection]], [[AI Compliance]]\n\t- #### OWL Axioms\n\t  id:: etsi-domain-ai-governance-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:ETSIDomainAIGovernance))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:ETSIDomainAIGovernance mv:VirtualEntity)\n\t\t  SubClassOf(mv:ETSIDomainAIGovernance mv:Object)\n\n\t\t  # Cross-domain marker classification\n\t\t  SubClassOf(mv:ETSIDomainAIGovernance mv:DomainMarker)\n\t\t  SubClassOf(mv:ETSIDomainAIGovernance mv:CrossDomainMarker)\n\n\t\t  # Multiple domain classification\n\t\t  SubClassOf(mv:ETSIDomainAIGovernance\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:ComputationAndIntelligenceDomain)\n\t\t  )\n\t\t  SubClassOf(mv:ETSIDomainAIGovernance\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:TrustAndGovernanceDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:ETSIDomainAIGovernance\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n```\n\n### Relationships\n- is-subclass-of:: [[AIGovernance]]",
+  "content": "- ### OntologyBlock\n  id:: etsi-domain-ai-governance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20333\n\t- preferred-term:: ETSI Domain AI + Governance\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Cross-domain marker for metaverse components combining artificial intelligence with governance frameworks including AI ethics, explainability, bias detection, regulatory compliance, and responsible AI systems.\n\t- source:: [[ETSI GS MEC]]\n\t- maturity:: mature\n\t- owl:class:: mv:ETSIDomainAIGovernance\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[ComputationAndIntelligenceDomain]], [[TrustAndGovernanceDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-ai-governance-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[ETSI Domain Taxonomy]]\n\t\t- enables:: [[AI Ethics Classification]]\n\t\t- enables:: [[Explainability Categorization]]\n\t\t- categorizes:: [[Bias Detection]]\n\t\t- categorizes:: [[AI Compliance]]\n\t\t- categorizes:: [[Explainable AI]]\n\t\t- categorizes:: [[AI Ethics Framework]]\n\t\t- depends-on:: [[TrustAndGovernanceDomain]]\n\t\t- depends-on:: [[ETSI Domain AI]]\n\t\t- depends-on:: [[ETSI_Domain_AI]]",
   "backlinks": [
     "ETSI_Domain_AI"
   ],
   "wiki_links": [
-    "AI Ethics Framework",
-    "ComputationAndIntelligenceDomain",
-    "ETSI Domain Taxonomy",
-    "Bias Detection",
-    "ETSI Domain AI",
     "AI Ethics Classification",
-    "AI Compliance",
-    "AIGovernance",
-    "TrustAndGovernanceDomain",
-    "ETSI GS MEC",
-    "ApplicationLayer",
-    "Explainable AI",
+    "ETSI Domain Taxonomy",
+    "ETSI Domain AI",
     "Explainability Categorization",
-    "ETSI_Domain_AI"
+    "ETSI GS MEC",
+    "ComputationAndIntelligenceDomain",
+    "AI Ethics Framework",
+    "ETSI_Domain_AI",
+    "Bias Detection",
+    "TrustAndGovernanceDomain",
+    "AI Compliance",
+    "Explainable AI",
+    "ApplicationLayer"
   ],
   "ontology": {
     "term_id": "20333",
     "preferred_term": "ETSI Domain AI + Governance",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ETSIDomainAIGovernance",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "Cross-domain marker for metaverse components combining artificial intelligence with governance frameworks including AI ethics, explainability, bias detection, regulatory compliance, and responsible AI systems.",
     "scope_note": null,
     "status": "draft",
@@ -50,8 +49,8 @@
     ],
     "requires": [],
     "depends_on": [
-      "ETSI Domain AI",
       "TrustAndGovernanceDomain",
+      "ETSI Domain AI",
       "ETSI_Domain_AI"
     ],
     "enables": [
@@ -74,18 +73,19 @@
     ],
     "other_relationships": {
       "categorizes": [
-        "AI Ethics Framework",
-        "Explainable AI",
         "Bias Detection",
-        "AI Compliance"
+        "AI Compliance",
+        "Explainable AI",
+        "AI Ethics Framework"
       ]
     },
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
         "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "term-id '20333' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

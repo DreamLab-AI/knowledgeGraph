@@ -1,31 +1,29 @@
 {
   "id": "Knowledge Graph Construction",
   "title": "Knowledge Graph Construction",
-  "content": "- ### OntologyBlock\n  id:: knowledgegraphconstruction-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: AI\n    - sequence-number:: 0816\n    - filename-history:: [\"AI-0816-knowledgegraphconstruction.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0816\n    - preferred-term:: Knowledge Graph Construction\n    - source-domain:: ai\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: \n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: ai:KnowledgeGraphConstruction\n    - belongsToDomain:: [[Artificial Intelligence]]\n\n  - #### CrossDomainBridges\n    - bridges-from:: [[MetaverseOntologySchema]] via enables\n\n  - #### Relationships\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :KnowledgeGraphConstruction))\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :KnowledgeGraphConstruction \"Knowledge Graph Construction\"@en)\n      ```\n\n- ## About Knowledge Graph Construction\n\n\n### Relationships\n- is-subclass-of:: [[MachineLearning]]\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: knowledgegraphconstruction-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0816\n\t- preferred-term:: Knowledge Graph Construction\n\t- status:: complete\n\t- public-access:: true\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: ai:KnowledgeGraphConstruction\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [
     "Metaverse Ontology Schema"
   ],
   "wiki_links": [
-    "MachineLearning",
-    "Artificial Intelligence",
-    "MetaverseOntologySchema"
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0816",
     "preferred_term": "Knowledge Graph Construction",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/ai#KnowledgeGraphConstruction",
-    "source_domain": "ai",
+    "source_domain": null,
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
-    "definition": "- maturity:: established",
+    "definition": null,
     "scope_note": null,
     "status": "complete",
     "maturity": "established",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-11-13",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "ai:KnowledgeGraphConstruction",
@@ -40,9 +38,7 @@
     "enables": [],
     "relates_to": [],
     "bridges_to": [],
-    "bridges_from": [
-      "MetaverseOntologySchema via enables"
-    ],
+    "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
       "Artificial Intelligence"
@@ -54,6 +50,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

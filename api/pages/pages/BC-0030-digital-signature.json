@@ -1,24 +1,24 @@
 {
   "id": "BC-0030-digital-signature",
   "title": "Digital Signature",
-  "content": "- ### OntologyBlock\n  id:: digital-signature-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0030\n    - preferred-term:: Digital Signature\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Cryptographic authentication mechanism within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:DigitalSignature\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### Relationships\n    id:: relationships\n    - is-subclass-of:: [[Cryptography]]\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-from:: [[Tokenization]] via depends-on\n    - bridges-from:: [[VirtualPropertyRight]] via depends-on\n    - bridges-from:: [[DigitalEvidenceChainOfCustody]] via has-part\n    - bridges-from:: [[DataProvenance]] via requires\n    - bridges-from:: [[DistributedLedgerTechnologyDlt]] via requires\n    - bridges-from:: [[NftSwapping]] via requires\n    - bridges-from:: [[VerifiableCredentialVc]] via requires\n    - bridges-from:: [[CulturalProvenanceRecord]] via requires\n    - bridges-from:: [[VirtualNotaryService]] via requires\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: digital-signature-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0030\n\t- preferred-term:: Digital Signature\n\t- source-domain:: blockchain\n\t- status:: complete\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: bc:DigitalSignature\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\n### Domain & Architecture\n\t- belongsToDomain:: [[CryptographicDomain]]\n\t- maturity:: mature\n\n### Relationships\nid:: relationships\n    - is-subclass-of:: [[Cryptography]]\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-from:: [[Tokenization]] via depends-on\n    - bridges-from:: [[VirtualPropertyRight]] via depends-on\n    - bridges-from:: [[DigitalEvidenceChainOfCustody]] via has-part\n    - bridges-from:: [[DataProvenance]] via requires\n    - bridges-from:: [[DistributedLedgerTechnologyDlt]] via requires\n    - bridges-from:: [[NftSwapping]] via requires\n    - bridges-from:: [[VerifiableCredentialVc]] via requires\n    - bridges-from:: [[CulturalProvenanceRecord]] via requires\n    - bridges-from:: [[VirtualNotaryService]] via requires\n\n  -\n\n### Quality Metrics\n\t- authority-score:: 0.95\n\n- ### OntologyBlock\n  id:: digital-signature-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0030\n    - preferred-term:: Digital Signature\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Cryptographic authentication mechanism within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:DigitalSignature\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### Relationships\n    id:: relationships\n    - is-subclass-of:: [[Cryptography]]\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-from:: [[Tokenization]] via depends-on\n    - bridges-from:: [[VirtualPropertyRight]] via depends-on\n    - bridges-from:: [[DigitalEvidenceChainOfCustody]] via has-part\n    - bridges-from:: [[DataProvenance]] via requires\n    - bridges-from:: [[DistributedLedgerTechnologyDlt]] via requires\n    - bridges-from:: [[NftSwapping]] via requires\n    - bridges-from:: [[VerifiableCredentialVc]] via requires\n    - bridges-from:: [[CulturalProvenanceRecord]] via requires\n    - bridges-from:: [[VirtualNotaryService]] via requires\n\n  -",
   "backlinks": [],
   "wiki_links": [
-    "DigitalEvidenceChainOfCustody",
-    "Cryptography",
-    "ISO/IEC 23257:2021",
-    "CryptographicDomain",
-    "VirtualPropertyRight",
     "NIST NISTIR",
-    "NftSwapping",
-    "CulturalProvenanceRecord",
-    "IEEE 2418.1",
-    "VerifiableCredentialVc",
-    "Tokenization",
-    "DistributedLedgerTechnologyDlt",
+    "Cryptography",
+    "BlockchainEntity",
     "DataProvenance",
-    "VirtualNotaryService",
-    "BlockchainEntity"
+    "CryptographicDomain",
+    "DistributedLedgerTechnologyDlt",
+    "CulturalProvenanceRecord",
+    "Tokenization",
+    "NftSwapping",
+    "VirtualPropertyRight",
+    "ISO/IEC 23257:2021",
+    "DigitalEvidenceChainOfCustody",
+    "VerifiableCredentialVc",
+    "IEEE 2418.1",
+    "VirtualNotaryService"
   ],
   "ontology": {
     "term_id": "BC-0030",
@@ -52,9 +52,19 @@
     "enables": [],
     "relates_to": [],
     "bridges_to": [
+      "BlockchainEntity via is",
       "BlockchainEntity via is"
     ],
     "bridges_from": [
+      "Tokenization via depends",
+      "VirtualPropertyRight via depends",
+      "DigitalEvidenceChainOfCustody via has",
+      "DataProvenance via requires",
+      "DistributedLedgerTechnologyDlt via requires",
+      "NftSwapping via requires",
+      "VerifiableCredentialVc via requires",
+      "CulturalProvenanceRecord via requires",
+      "VirtualNotaryService via requires",
       "Tokenization via depends",
       "VirtualPropertyRight via depends",
       "DigitalEvidenceChainOfCustody via has",
@@ -67,6 +77,7 @@
     ],
     "domain_extensions": {},
     "belongs_to_domain": [
+      "CryptographicDomain",
       "CryptographicDomain"
     ],
     "implemented_in_layer": [],

@@ -1,7 +1,7 @@
 {
   "id": "TELE-028-horizon-workrooms",
   "title": "Horizon Workrooms",
-  "content": "# Horizon Workrooms\n\n- ### OntologyBlock\n  id:: horizon-workrooms-ontology\n  collapsed:: true\n  - ontology:: true\n  - term-id:: TELE-028\n  - preferred-term:: Horizon Workrooms\n  - alternate-terms::\n  - Meta Workrooms\n  - Facebook Workrooms\n  - VR Workrooms\n  - Quest Workrooms\n  - source-domain:: tele\n  - status:: active\n  - public-access:: true\n  - definition:: \"Meta's enterprise virtual reality telepresence application for Quest headsets, providing immersive meeting rooms where distributed teams collaborate as avatars around virtual conference tables with spatial audio, shared whiteboards, screen sharing, and keyboard passthrough, representing mainstream commercialisation of VR-based remote collaboration.\"\n  - maturity:: developing\n  - authority-score:: 0.84\n  - owl:class:: tele:HorizonWorkrooms\n  - owl:physicality:: VirtualEntity\n  - owl:role:: Object\n  - belongsToDomain::\n  - [[TELE-0000-telepresence-domain]]\n  - [[XRCollaborationPlatforms]]\n  - bridges-to::\n  - [[MetaverseDomain]]\n  - [[AIDomain]]\n\n\n#### Relationships\nid:: horizon-workrooms-relationships\n- is-subclass-of:: [[TELE-020-virtual-reality-telepresence]], [[CollaborationPlatform]], [[MetaverseApplication]]\n- enables:: [[ImmersiveMeetings]], [[RemoteTeamwork]], [[VirtualWhiteboarding]]\n- requires:: [[MetaQuest]], [[TELE-150-webrtc]], [[TELE-100-ai-avatars]]\n- has-component:: [[VirtualMeetingRoom]], [[TELE-302-shared-whiteboards]], [[AvatarSystem]], [[SpatialAudio]]\n- related-to:: [[TELE-026-microsoft-mesh]], [[TELE-027-spatial-platform]], [[TELE-001-telepresence]]\n\n#### OWL Axioms\nid:: horizon-workrooms-owl-axioms\ncollapsed:: true\n- ```clojure\n  Declaration(Class(tele:HorizonWorkrooms))\n\n  SubClassOf(tele:HorizonWorkrooms tele:VirtualRealityTelepresence)\n  SubClassOf(tele:HorizonWorkrooms tele:VirtualEntity)\n\n  SubClassOf(tele:HorizonWorkrooms\n    ObjectSomeValuesFrom(tele:belongsToDomain tele:TelecollaborationDomain)\n  )\n\n  SubClassOf(tele:HorizonWorkrooms\n    ObjectSomeValuesFrom(tele:requires tele:AIAvatars)\n  )\n\n  AnnotationAssertion(rdfs:label tele:HorizonWorkrooms \"Horizon Workrooms\"@en-GB)\n  AnnotationAssertion(rdfs:comment tele:HorizonWorkrooms \"Meta's VR telepresence platform for enterprise collaboration\"@en-GB)\n  AnnotationAssertion(dcterms:identifier tele:HorizonWorkrooms \"TELE-028\"^^xsd:string)\n  AnnotationAssertion(dcterms:created tele:HorizonWorkrooms \"2025-11-16\"^^xsd:date)\n  ```\n\n## Definition\n\n**Horizon Workrooms** is Meta's flagship enterprise virtual reality collaboration platform, launched in 2021 and continuously enhanced through 2025, enabling distributed teams to meet as photorealistic or stylised avatars in immersive 3D meeting rooms. Running on Meta Quest headsets (Quest 2, Quest 3, Quest Pro), Workrooms provides spatial audio, shared virtual whiteboards, screen sharing from physical computers, and keyboard passthrough (typing on physical keyboard whilst in VR), creating a professional telepresence environment that combines the social presence of face-to-face meetings with the flexibility of remote work.\n\nThe platform represents Meta's bet on the \"metaverse of work\" ([[TELE-CONV-001-metaverse-telepresence-bridge]]), offering free access to up to 16 simultaneous VR participants (plus 50 video call participants) in customisable virtual conference rooms. Users create persistent avatars with customised appearance, join scheduled meetings via web links, and collaborate using hand tracking or controllers to manipulate 3D objects, write on whiteboards, and gesture naturally. Integration with productivity tools (Zoom, Google Meet, Slack) provides hybrid meeting capabilities where VR users appear alongside traditional video conference participants.\n\n## Current Landscape (2025)\n\nHorizon Workrooms has evolved from experimental prototype to viable enterprise platform, with 4.7 million monthly active users globally and adoption by 38% of UK enterprises using VR collaboration (Meta Business Report, 2025).\n\n**Adoption Statistics**:\n- 4.7M monthly active users globally (Meta, Q1 2025)\n- 38% of UK enterprises with VR collaboration use Workrooms (IDC Enterprise XR Survey)\n- 180,000+ virtual rooms created (cumulative since launch)\n- Average meeting duration: 32 minutes (vs. 58 minutes for Zoom calls)\n\n**Technology Capabilities (2025)**:\n- **Avatars**: Stylised Horizon avatars (free) or photorealistic Codec Avatars (Quest Pro)\n- **Audio**: Spatial audio with head-related transfer functions, noise cancellation\n- **Collaboration**: 3 shared whiteboards, screen sharing (desktop mirroring), PDF import\n- **Interoperability**: Zoom, Google Meet integration (video participants appear on screens in VR)\n- **Devices**: Quest 2, Quest 3, Quest 3S, Quest Pro\n\n**UK Context**:\n- **PwC UK**: 1,200-person VR collaboration pilot using Workrooms\n- **Accenture UK**: Onboarding new hires in Workrooms virtual offices\n- **University of Leeds**: Research on learning outcomes in VR education\n- **BT Enterprise**: Client consultations via Workrooms for remote customers\n\n## Features\n\n### Virtual Meeting Rooms\n- **Room Templates**: Conference rooms, amphitheatres, outdoor spaces\n- **Customisation**: Upload company logos, photos, 3D models\n- **Persistent Spaces**: Rooms remain configured between meetings\n- **Capacity**: 16 VR users + 50 video call participants\n\n### Avatar System ([[TELE-100-ai-avatars]])\n- **Stylised Avatars**: Cartoon-like Horizon avatars (default, free)\n- **Codec Avatars**: Photorealistic facial scans (Quest Pro only, experimental)\n- **Facial Tracking**: Quest Pro cameras capture expressions (52 blend shapes)\n- **Hand Tracking**: Controller-free gesture interaction (Quest 3, Pro)\n- **Body Language**: Upper body inverse kinematics simulate natural posture\n\n### Collaboration Tools\n- **Whiteboards**: 3 virtual whiteboards per room, 2D/3D drawing, sticky notes\n- **Screen Sharing**: Desktop mirrored into VR (Windows/Mac)\n- **Keyboard Passthrough**: Type on physical keyboard whilst in VR (Quest 3 camera passthrough)\n- **File Sharing**: Import PDFs, images onto whiteboards\n- **Breakout Rooms**: Split into smaller groups\n\n### Integration\n- **Video Conferencing**: Join Zoom/Google Meet from VR, video participants appear on screens\n- **Slack**: Schedule Workrooms meetings from Slack\n- **Calendar**: Google Calendar, Outlook integration\n- **Meta Business Suite**: Admin dashboard, usage analytics\n\n## User Experience\n\n### Joining a Meeting\n1. **Scheduling**: Create meeting via web (workrooms.com), share link\n2. **Headset**: Don Quest headset, launch Workrooms app\n3. **Avatar**: Select/customise avatar (one-time setup)\n4. **Entry**: Click meeting link, enter virtual room\n5. **Seating**: Sit at virtual conference table (position affects spatial audio)\n\n### During Meeting\n- **Voice**: Speak naturally, spatial audio localises voices (sounds come from avatar positions)\n- **Gestures**: Raise hand, thumbs up, wave (controller buttons or hand tracking)\n- **Whiteboard**: Walk to whiteboard, draw with controller/finger\n- **Screen Share**: Share desktop, appears on virtual screen in room\n- **Keyboard**: Type notes on physical keyboard (passthrough shows hands/keyboard)\n\n### Leaving\n- **Exit**: Remove headset or click \"Leave Room\"\n- **Persistence**: Whiteboards, room configuration saved for next meeting\n\n## Comparison to Competing Platforms\n\n| Feature | Horizon Workrooms | [[TELE-026-microsoft-mesh\\|Microsoft Mesh]] | [[TELE-027-spatial-platform\\|Spatial]] |\n|---------|------------------|----------------------|---------|\n| **Platform** | Meta Quest only | HoloLens, Quest, PC VR | Quest, Vision Pro, Web |\n| **Avatars** | Stylised, photorealistic (Pro) | Microsoft Mesh avatars | Photorealistic (ReadyPlayerMe) |\n| **Max Users (VR)** | 16 | 100+ | 50 |\n| **Integration** | Zoom, Meet, Slack | Microsoft Teams, Azure | Discord, Slack |\n| **Price** | Free | Included with Teams Premium (£6.90/user/month) | Free tier, £25/month Pro |\n| **Focus** | Enterprise meetings | Enterprise/education | Creative collaboration |\n\n## Advantages and Limitations\n\n### Advantages\n- **Free**: No cost for core features (hardware investment only)\n- **Ease of Use**: Simple web scheduling, intuitive VR interface\n- **Social Presence**: 84% of face-to-face social presence (Stanford VR Lab study)\n- **Hybrid Meetings**: VR and video participants co-exist\n- **Persistent Spaces**: Rooms remain configured for recurring meetings\n\n### Limitations\n- **Hardware Lock-In**: Requires Meta Quest (£300-£1,000 investment)\n- **Comfort**: Headset discomfort after 60-90 minutes\n- **Realism**: Stylised avatars less professional than photorealistic\n- **Features**: Fewer productivity integrations than Microsoft Teams/Zoom\n- **Privacy**: Meta collects extensive behavioural data (gaze, movement)\n- **Accessibility**: Limited options for visually/motor-impaired users\n\n## Use Cases\n\n### Remote Team Meetings\n- Weekly standups, sprint planning, retrospectives\n- More engaging than video calls, less fatigue\n- Spatial audio enables natural turn-taking\n\n### Client Consultations\n- Architects present 3D building models in VR\n- Consultants collaborate with remote clients on whiteboards\n- Professional appearance via customised meeting rooms\n\n### Training and Onboarding\n- New hire orientations in virtual corporate HQ\n- Soft skills training (presentations, negotiations)\n- Safety training simulations\n\n### Design Reviews\n- Engineers inspect 3D CAD models collaboratively\n- Product managers review UI/UX prototypes\n- Creative teams critique designs on virtual whiteboards\n\n## Future Roadmap\n\n**Near-Term (2025-2026)**:\n- Photorealistic Codec Avatars for all Quest models (currently Quest Pro only)\n- AI meeting assistants ([[TELE-107-ai-meeting-assistants]]) for transcription, action items\n- Mobile app participation (phone/tablet users join VR meetings as 2D avatars)\n\n**Medium-Term (2026-2028)**:\n- Full-body avatars with leg tracking\n- Haptic gloves for tactile whiteboard interaction ([[TELE-203-haptic-feedback-telepresence]])\n- Real-time language translation ([[TELE-105-real-time-language-translation]])\n\n**Long-Term (2028+)**:\n- AR glasses support (replace VR headsets)\n- Holographic projection (no headset required)\n- Autonomous AI avatars attending meetings on user's behalf\n\n## Related Concepts\n\n- [[TELE-001-telepresence]]\n- [[TELE-020-virtual-reality-telepresence]]\n- [[TELE-026-microsoft-mesh]]\n- [[TELE-100-ai-avatars]]\n- [[TELE-302-shared-whiteboards]]\n- [[TELE-CONV-001-metaverse-telepresence-bridge]]\n\n## References\n\n1. Meta. (2025). *Horizon Workrooms Product Documentation*. https://www.oculus.com/workrooms\n2. Bailenson, J. (2021). \"Nonverbal Overload: A Theoretical Argument for the Causes of Zoom Fatigue\". *Technology, Mind, and Behaviour*, 2(1).\n3. Stanford VR Lab. (2025). *Social Presence in VR Telepresence Study*.\n\n## Metadata\n\n- **Term-ID**: TELE-028\n- **Last Updated**: 2025-11-16\n- **Maturity**: Developing\n- **Authority Score**: 0.84\n- **UK Context**: High (PwC, Accenture, BT adoption)\n- **Cross-Domain**: Bridges to Metaverse, AI",
+  "content": "- ### OntologyBlock\n  id:: horizon-workrooms-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TELE-028\n\t- preferred-term:: Horizon Workrooms\n\t- source-domain:: tc\n\t- owl:class:: tc:HorizonWorkrooms\n\t- status:: active\n\t- public-access:: true\n\t- definition:: \"Meta's enterprise virtual reality telepresence application for Quest headsets, providing immersive meeting rooms where distributed teams collaborate as avatars around virtual conference tables with spatial audio, shared whiteboards, screen sharing, and keyboard passthrough, representing mainstream commercialisation of VR-based remote collaboration.\"\n\t- maturity:: developing\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- #### Relationships\n\t  id:: horizon-workrooms-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[CollaborationPlatform]]\n\t\t- is-subclass-of:: [[MetaverseApplication]]\n\t\t- is-subclass-of:: [[TELE-020-virtual-reality-telepresence]]\n\t\t- requires:: [[MetaQuest]]\n\t\t- requires:: [[TELE-100-ai-avatars]]\n\t\t- requires:: [[TELE-150-webrtc]]\n\t\t- enables:: [[ImmersiveMeetings]]\n\t\t- enables:: [[RemoteTeamwork]]\n\t\t- enables:: [[VirtualWhiteboarding]]\n\t\t- related-to:: [[TELE-027-spatial-platform]]\n\t\t- related-to:: [[TELE-001-telepresence]]\n\t\t- related-to:: [[TELE-026-microsoft-mesh]]\n\t\t- has-component:: [[AvatarSystem]]\n\t\t- has-component:: [[VirtualMeetingRoom]]\n\t\t- has-component:: [[TELE-302-shared-whiteboards]]\n\t\t- has-component:: [[SpatialAudio]]\n\n## Definition\n\n**Horizon Workrooms** is Meta's flagship enterprise virtual reality collaboration platform, launched in 2021 and continuously enhanced through 2025, enabling distributed teams to meet as photorealistic or stylised avatars in immersive 3D meeting rooms. Running on Meta Quest headsets (Quest 2, Quest 3, Quest Pro), Workrooms provides spatial audio, shared virtual whiteboards, screen sharing from physical computers, and keyboard passthrough (typing on physical keyboard whilst in VR), creating a professional telepresence environment that combines the social presence of face-to-face meetings with the flexibility of remote work.\n\nThe platform represents Meta's bet on the \"metaverse of work\" ([[TELE-CONV-001-metaverse-telepresence-bridge]]), offering free access to up to 16 simultaneous VR participants (plus 50 video call participants) in customisable virtual conference rooms. Users create persistent avatars with customised appearance, join scheduled meetings via web links, and collaborate using hand tracking or controllers to manipulate 3D objects, write on whiteboards, and gesture naturally. Integration with productivity tools (Zoom, Google Meet, Slack) provides hybrid meeting capabilities where VR users appear alongside traditional video conference participants.\n\n## Current Landscape (2025)\n\nHorizon Workrooms has evolved from experimental prototype to viable enterprise platform, with 4.7 million monthly active users globally and adoption by 38% of UK enterprises using VR collaboration (Meta Business Report, 2025).\n\n**Adoption Statistics**:\n- 4.7M monthly active users globally (Meta, Q1 2025)\n- 38% of UK enterprises with VR collaboration use Workrooms (IDC Enterprise XR Survey)\n- 180,000+ virtual rooms created (cumulative since launch)\n- Average meeting duration: 32 minutes (vs. 58 minutes for Zoom calls)\n\n**Technology Capabilities (2025)**:\n- **Avatars**: Stylised Horizon avatars (free) or photorealistic Codec Avatars (Quest Pro)\n- **Audio**: Spatial audio with head-related transfer functions, noise cancellation\n- **Collaboration**: 3 shared whiteboards, screen sharing (desktop mirroring), PDF import\n- **Interoperability**: Zoom, Google Meet integration (video participants appear on screens in VR)\n- **Devices**: Quest 2, Quest 3, Quest 3S, Quest Pro\n\n**UK Context**:\n- **PwC UK**: 1,200-person VR collaboration pilot using Workrooms\n- **Accenture UK**: Onboarding new hires in Workrooms virtual offices\n- **University of Leeds**: Research on learning outcomes in VR education\n- **BT Enterprise**: Client consultations via Workrooms for remote customers\n\n## Features\n\n### Virtual Meeting Rooms\n- **Room Templates**: Conference rooms, amphitheatres, outdoor spaces\n- **Customisation**: Upload company logos, photos, 3D models\n- **Persistent Spaces**: Rooms remain configured between meetings\n- **Capacity**: 16 VR users + 50 video call participants\n\n### Avatar System ([[TELE-100-ai-avatars]])\n- **Stylised Avatars**: Cartoon-like Horizon avatars (default, free)\n- **Codec Avatars**: Photorealistic facial scans (Quest Pro only, experimental)\n- **Facial Tracking**: Quest Pro cameras capture expressions (52 blend shapes)\n- **Hand Tracking**: Controller-free gesture interaction (Quest 3, Pro)\n- **Body Language**: Upper body inverse kinematics simulate natural posture\n\n### Collaboration Tools\n- **Whiteboards**: 3 virtual whiteboards per room, 2D/3D drawing, sticky notes\n- **Screen Sharing**: Desktop mirrored into VR (Windows/Mac)\n- **Keyboard Passthrough**: Type on physical keyboard whilst in VR (Quest 3 camera passthrough)\n- **File Sharing**: Import PDFs, images onto whiteboards\n- **Breakout Rooms**: Split into smaller groups\n\n### Integration\n- **Video Conferencing**: Join Zoom/Google Meet from VR, video participants appear on screens\n- **Slack**: Schedule Workrooms meetings from Slack\n- **Calendar**: Google Calendar, Outlook integration\n- **Meta Business Suite**: Admin dashboard, usage analytics\n\n## User Experience\n\n### Joining a Meeting\n1. **Scheduling**: Create meeting via web (workrooms.com), share link\n2. **Headset**: Don Quest headset, launch Workrooms app\n3. **Avatar**: Select/customise avatar (one-time setup)\n4. **Entry**: Click meeting link, enter virtual room\n5. **Seating**: Sit at virtual conference table (position affects spatial audio)\n\n### During Meeting\n- **Voice**: Speak naturally, spatial audio localises voices (sounds come from avatar positions)\n- **Gestures**: Raise hand, thumbs up, wave (controller buttons or hand tracking)\n- **Whiteboard**: Walk to whiteboard, draw with controller/finger\n- **Screen Share**: Share desktop, appears on virtual screen in room\n- **Keyboard**: Type notes on physical keyboard (passthrough shows hands/keyboard)\n\n### Leaving\n- **Exit**: Remove headset or click \"Leave Room\"\n- **Persistence**: Whiteboards, room configuration saved for next meeting\n\n## Comparison to Competing Platforms\n\n| Feature | Horizon Workrooms | [[TELE-026-microsoft-mesh\\|Microsoft Mesh]] | [[TELE-027-spatial-platform\\|Spatial]] |\n|---------|------------------|----------------------|---------|\n| **Platform** | Meta Quest only | HoloLens, Quest, PC VR | Quest, Vision Pro, Web |\n| **Avatars** | Stylised, photorealistic (Pro) | Microsoft Mesh avatars | Photorealistic (ReadyPlayerMe) |\n| **Max Users (VR)** | 16 | 100+ | 50 |\n| **Integration** | Zoom, Meet, Slack | Microsoft Teams, Azure | Discord, Slack |\n| **Price** | Free | Included with Teams Premium (£6.90/user/month) | Free tier, £25/month Pro |\n| **Focus** | Enterprise meetings | Enterprise/education | Creative collaboration |\n\n## Advantages and Limitations\n\n### Advantages\n- **Free**: No cost for core features (hardware investment only)\n- **Ease of Use**: Simple web scheduling, intuitive VR interface\n- **Social Presence**: 84% of face-to-face social presence (Stanford VR Lab study)\n- **Hybrid Meetings**: VR and video participants co-exist\n- **Persistent Spaces**: Rooms remain configured for recurring meetings\n\n### Limitations\n- **Hardware Lock-In**: Requires Meta Quest (£300-£1,000 investment)\n- **Comfort**: Headset discomfort after 60-90 minutes\n- **Realism**: Stylised avatars less professional than photorealistic\n- **Features**: Fewer productivity integrations than Microsoft Teams/Zoom\n- **Privacy**: Meta collects extensive behavioural data (gaze, movement)\n- **Accessibility**: Limited options for visually/motor-impaired users\n\n## Use Cases\n\n### Remote Team Meetings\n- Weekly standups, sprint planning, retrospectives\n- More engaging than video calls, less fatigue\n- Spatial audio enables natural turn-taking\n\n### Client Consultations\n- Architects present 3D building models in VR\n- Consultants collaborate with remote clients on whiteboards\n- Professional appearance via customised meeting rooms\n\n### Training and Onboarding\n- New hire orientations in virtual corporate HQ\n- Soft skills training (presentations, negotiations)\n- Safety training simulations\n\n### Design Reviews\n- Engineers inspect 3D CAD models collaboratively\n- Product managers review UI/UX prototypes\n- Creative teams critique designs on virtual whiteboards\n\n## Future Roadmap\n\n**Near-Term (2025-2026)**:\n- Photorealistic Codec Avatars for all Quest models (currently Quest Pro only)\n- AI meeting assistants ([[TELE-107-ai-meeting-assistants]]) for transcription, action items\n- Mobile app participation (phone/tablet users join VR meetings as 2D avatars)\n\n**Medium-Term (2026-2028)**:\n- Full-body avatars with leg tracking\n- Haptic gloves for tactile whiteboard interaction ([[TELE-203-haptic-feedback-telepresence]])\n- Real-time language translation ([[TELE-105-real-time-language-translation]])\n\n**Long-Term (2028+)**:\n- AR glasses support (replace VR headsets)\n- Holographic projection (no headset required)\n- Autonomous AI avatars attending meetings on user's behalf\n\n## Related Concepts\n\n- [[TELE-001-telepresence]]\n- [[TELE-020-virtual-reality-telepresence]]\n- [[TELE-026-microsoft-mesh]]\n- [[TELE-100-ai-avatars]]\n- [[TELE-302-shared-whiteboards]]\n- [[TELE-CONV-001-metaverse-telepresence-bridge]]\n\n## References\n\n1. Meta. (2025). *Horizon Workrooms Product Documentation*. https://www.oculus.com/workrooms\n2. Bailenson, J. (2021). \"Nonverbal Overload: A Theoretical Argument for the Causes of Zoom Fatigue\". *Technology, Mind, and Behaviour*, 2(1).\n3. Stanford VR Lab. (2025). *Social Presence in VR Telepresence Study*.\n\n## Metadata\n\n- **Term-ID**: TELE-028\n- **Last Updated**: 2025-11-16\n- **Maturity**: Developing\n- **Authority Score**: 0.84\n- **UK Context**: High (PwC, Accenture, BT adoption)\n- **Cross-Domain**: Bridges to Metaverse, AI",
   "backlinks": [
     "TELE-301-virtual-office-spaces",
     "TELE-302-shared-whiteboards",
@@ -11,41 +11,37 @@
     "TELE-002-telecollaboration"
   ],
   "wiki_links": [
-    "VirtualMeetingRoom",
-    "XRCollaborationPlatforms",
-    "CollaborationPlatform",
-    "AIDomain",
-    "TELE-107-ai-meeting-assistants",
-    "VirtualWhiteboarding",
-    "TELE-027-spatial-platform\\|Spatial",
-    "TELE-CONV-001-metaverse-telepresence-bridge",
-    "TELE-020-virtual-reality-telepresence",
     "RemoteTeamwork",
-    "MetaverseDomain",
-    "TELE-150-webrtc",
-    "TELE-302-shared-whiteboards",
-    "TELE-001-telepresence",
-    "TELE-026-microsoft-mesh\\|Microsoft Mesh",
     "TELE-027-spatial-platform",
-    "TELE-105-real-time-language-translation",
     "TELE-203-haptic-feedback-telepresence",
-    "TELE-0000-telepresence-domain",
-    "SpatialAudio",
-    "MetaQuest",
-    "TELE-100-ai-avatars",
-    "TELE-026-microsoft-mesh",
-    "AvatarSystem",
+    "TELE-105-real-time-language-translation",
     "ImmersiveMeetings",
-    "MetaverseApplication"
+    "TELE-027-spatial-platform\\|Spatial",
+    "TELE-020-virtual-reality-telepresence",
+    "TELE-026-microsoft-mesh\\|Microsoft Mesh",
+    "AvatarSystem",
+    "TELE-150-webrtc",
+    "TELE-026-microsoft-mesh",
+    "TELE-100-ai-avatars",
+    "VirtualWhiteboarding",
+    "TELE-001-telepresence",
+    "CollaborationPlatform",
+    "MetaverseApplication",
+    "MetaQuest",
+    "TELE-302-shared-whiteboards",
+    "VirtualMeetingRoom",
+    "SpatialAudio",
+    "TELE-107-ai-meeting-assistants",
+    "TELE-CONV-001-metaverse-telepresence-bridge"
   ],
   "ontology": {
     "term_id": "TELE-028",
     "preferred_term": "Horizon Workrooms",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "tele",
-    "domain": "tele",
-    "domain_full_name": "",
+    "iri": "http://narrativegoldmine.com/telecollaboration#HorizonWorkrooms",
+    "source_domain": "tc",
+    "domain": "tc",
+    "domain_full_name": "Telecollaboration",
     "definition": "\"Meta's enterprise virtual reality telepresence application for Quest headsets, providing immersive meeting rooms where distributed teams collaborate as avatars around virtual conference tables with spatial audio, shared whiteboards, screen sharing, and keyboard passthrough, representing mainstream commercialisation of VR-based remote collaboration.\"",
     "scope_note": null,
     "status": "active",
@@ -53,33 +49,56 @@
     "version": null,
     "public_access": true,
     "last_updated": null,
-    "authority_score": 0.84,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": "tele:HorizonWorkrooms",
+    "owl_class": "tc:HorizonWorkrooms",
     "owl_physicality": "VirtualEntity",
     "owl_role": "Object",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "CollaborationPlatform",
+      "MetaverseApplication",
+      "TELE-020-virtual-reality-telepresence"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "MetaQuest",
+      "TELE-100-ai-avatars",
+      "TELE-150-webrtc"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "ImmersiveMeetings",
+      "RemoteTeamwork",
+      "VirtualWhiteboarding"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [
-      "TELE-0000-telepresence-domain"
-    ],
+    "belongs_to_domain": [],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "TELE-027-spatial-platform",
+        "TELE-001-telepresence",
+        "TELE-026-microsoft-mesh"
+      ],
+      "has-component": [
+        "AvatarSystem",
+        "VirtualMeetingRoom",
+        "TELE-302-shared-whiteboards",
+        "SpatialAudio"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "term-id 'TELE-028' doesn't match domain 'tc' (expected TC-)"
       ]
     }
   }

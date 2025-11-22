@@ -1,0 +1,58 @@
+{
+  "id": "Vocabulary",
+  "title": "Vocabulary",
+  "content": "- ### OntologyBlock\n  id:: vocabulary-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0236\n\t- preferred-term:: Vocabulary\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: mv:Vocabulary\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n### Domain & Architecture\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- maturity:: draft\n\n### Relationships\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Vocabulary))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Vocabulary \"Vocabulary\"@en)\n(AnnotationAssertion rdfs:comment :Vocabulary \"The number of unique tokens in a model's tokenisation scheme, balancing expressiveness with computational efficiency, typically ranging from 30,000 to 250,000 tokens in modern language models.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Vocabulary \"AI-0236\"^^xsd:string)\n(DataPropertyAssertion :isAITechnology :Vocabulary \"true\"^^xsd:boolean)\n```\n\n## Characteristics\n\n- **Fixed Size**: Determined during tokenisation algorithm training\n- **Trade-Off**: Larger vocabularies vs. longer sequences\n- **Special Tokens**: Includes padding, unknown, and task-specific tokens\n- **Model Impact**: Affects embedding layer size and output layer\n\n## Academic Foundations\n\n**Primary Source**: General NLP concept, discussed in tokenisation literature\n\n**Typical Sizes**:\n- BERT: 30,522 tokens (WordPiece)\n- GPT-2: 50,257 tokens (BPE)\n- GPT-3: 50,257 tokens (BPE)\n- T5: 32,000 tokens (SentencePiece)\n\n## Technical Context\n\nVocabulary size is determined by the tokenisation algorithm and affects model size and granularity. Larger vocabularies enable more efficient encoding but increase embedding and output layer sizes. The choice depends on the trade-off between sequence length and token-level granularity.\n\n## Ontological Relationships\n\n- **Broader Term**: Model Hyperparameter\n- **Related Terms**: Tokenisation, Subword Tokenisation, Token Embedding\n- **Determined By**: Tokenisation algorithm and configuration\n\n## Usage Context\n\n\"Vocabulary size is determined by the tokenisation algorithm and affects model size and granularity.\"\n\n## References\n\n- General NLP and tokenisation literature\n- Model-specific technical documentation\n\n---\n\n*Ontology Term managed by AI-Grounded Ontology Working Group*\n*UK English Spelling Standards Applied*\n\t- maturity:: draft\n\t- owl:class:: mv:Vocabulary\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t- belongsToDomain:: [[MetaverseDomain]]",
+  "backlinks": [],
+  "wiki_links": [
+    "ArtificialIntelligence",
+    "MetaverseDomain"
+  ],
+  "ontology": {
+    "term_id": "AI-0236",
+    "preferred_term": "Vocabulary",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#Vocabulary",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:Vocabulary",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain",
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

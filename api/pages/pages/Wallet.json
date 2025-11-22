@@ -1,0 +1,68 @@
+{
+  "id": "Wallet",
+  "title": "Wallet",
+  "content": "- ### OntologyBlock\n  id:: wallet-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0060\n\t- preferred-term:: Wallet\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: bc:Wallet\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- #### Relationships\n\t  id:: wallet-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[BlockchainTechnology]]\n\t\t- belongsToDomain:: [[BlockchainDomain]]",
+  "backlinks": [
+    "Crypto Token",
+    "Cryptocurrency",
+    "Runes and Glyphs"
+  ],
+  "wiki_links": [
+    "BlockchainDomain",
+    "BlockchainTechnology"
+  ],
+  "ontology": {
+    "term_id": "MV-0060",
+    "preferred_term": "Wallet",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#Wallet",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "A component of the metaverse ecosystem.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:Wallet",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "BlockchainTechnology"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain",
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "other_relationships": {
+      "belongsToDomain": [
+        "BlockchainDomain"
+      ]
+    },
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "owl:class namespace 'bc' doesn't match source-domain 'mv'"
+      ]
+    }
+  }
+}

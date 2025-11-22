@@ -1,0 +1,58 @@
+{
+  "id": "WordPiece",
+  "title": "WordPiece",
+  "content": "- ### OntologyBlock\n  id:: wordpiece-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0234\n\t- preferred-term:: WordPiece\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: mv:WordPiece\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n### Domain & Architecture\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- maturity:: draft\n\n### Relationships\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Wordpiece))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Wordpiece \"WordPiece\"@en)\n(AnnotationAssertion rdfs:comment :Wordpiece \"A subword tokenisation method that merges character sequences based on likelihood maximisation rather than frequency, used in BERT and related models.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Wordpiece \"AI-0234\"^^xsd:string)\n(DataPropertyAssertion :isAITechnology :Wordpiece \"true\"^^xsd:boolean)\n```\n\n## Characteristics\n\n- **Likelihood-Based**: Merges based on language model probability\n- **Principled Criterion**: Uses statistical measure rather than frequency\n- **Vocabulary Construction**: Builds vocabulary optimising for model likelihood\n- **BERT Standard**: Default tokenisation for BERT family\n\n## Academic Foundations\n\n**Primary Source**: Schuster & Nakajima (2012); detailed in arXiv:2012.15524 (2020)\n\n**Usage**: Standard tokenisation algorithm for BERT, DistilBERT, and Electra.\n\n**Comparison**: Similar to BPE but uses likelihood maximisation instead of frequency counting for merge decisions.\n\n## Technical Context\n\nWordPiece is the subword tokenisation algorithm used for BERT, DistilBERT, and Electra. It differs from BPE by choosing merges that maximise the likelihood of the training data under a unigram language model, rather than simply merging the most frequent pairs.\n\n## Ontological Relationships\n\n- **Broader Term**: Subword Tokenisation\n- **Related Terms**: Byte-Pair Encoding, SentencePiece, Tokenisation\n- **Used In**: BERT, DistilBERT, ELECTRA\n\n## Usage Context\n\n\"WordPiece is the subword tokenisation algorithm used for BERT, DistilBERT, and Electra.\"\n\n## References\n\n- Schuster, M., & Nakajima, K. (2012). \"Japanese and Korean voice search\". ICASSP 2012\n- Song et al. (2020). \"Fast WordPiece Tokenization\". arXiv:2012.15524\n\n---\n\n*Ontology Term managed by AI-Grounded Ontology Working Group*\n*UK English Spelling Standards Applied*\n\t- maturity:: draft\n\t- owl:class:: mv:WordPiece\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t- belongsToDomain:: [[MetaverseDomain]]",
+  "backlinks": [],
+  "wiki_links": [
+    "ArtificialIntelligence",
+    "MetaverseDomain"
+  ],
+  "ontology": {
+    "term_id": "AI-0234",
+    "preferred_term": "WordPiece",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#WordPiece",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:WordPiece",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain",
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

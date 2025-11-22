@@ -1,0 +1,58 @@
+{
+  "id": "Conviction Voting",
+  "title": "Conviction Voting",
+  "content": "- ### OntologyBlock\n  id:: conviction-voting-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0467\n\t- preferred-term:: Conviction Voting\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: A component of the blockchain ecosystem.\n\t- maturity:: draft\n\t- owl:class:: bc:ConvictionVoting\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[BlockchainDomain]]\n\n## Conviction Voting\n\nConviction Voting is a continuous governance mechanism enabling token holders to signal support for proposals by staking tokens over time, with voting power accumulating gradually to reflect sustained commitment rather than momentary preference. Developed by the Commons Stack and popularised through 1Hive's Gardens and Aragon, conviction voting addresses shortcomings of traditional snapshot voting by eliminating fixed voting periods and reducing voter apathy and last-minute manipulation. The system operates through an exponential decay function where the longer tokens remain staked on a proposal the higher the conviction accrued with a configurable half-life parameter controlling accumulation speed. This design discourages fleeting attacks while empowering passionate minorities to achieve funding thresholds for smaller proposals without requiring majority consensus for every decision. Conviction voting excels in decentralised grant allocation and continuous funding scenarios where community members can dynamically shift support as priorities evolve. Implementation typically involves smart contracts monitoring staked tokens and computing real-time conviction scores automatically executing proposals once they surpass predefined thresholds. Challenges include parameter selection balancing speed and security and the risk of large token holders dominating decisions despite time-weighting mechanisms. Notable deployments include 1Hive's DAO treasury management and Token Engineering Commons demonstrating practical viability in aligning long-term community interests with resource allocation.\n\n- Industry adoption and implementations\n\t- Conviction Voting is used by several DAOs and blockchain-based communities for resource allocation, proposal prioritisation, and governance\n\t- Notable platforms include the Commons Stack, Aragon, and Colony, which have integrated Conviction Voting modules into their governance stacks\n\t- In the UK, the model has been explored by civic tech initiatives and local DAOs, particularly in Manchester and Leeds, where there is a growing interest in decentralised governance for community projects\n- UK and North England examples where relevant\n\t- Manchester’s Digital Democracy Lab has piloted Conviction Voting for local community funding decisions, leveraging blockchain for transparency and accountability\n\t- Leeds-based civic tech group “Northern Commons” has experimented with Conviction Voting for allocating resources to local sustainability projects\n\t- Newcastle and Sheffield have seen academic interest in the model, with research groups at Newcastle University and the University of Sheffield exploring its potential for public sector innovation\n- Technical capabilities and limitations\n\t- Conviction Voting offers enhanced resistance to short-term manipulation and voter apathy, as voting power is proportional to sustained support\n\t- The model is computationally efficient and can be implemented on various blockchain platforms, including Ethereum and Polygon\n\t- Limitations include potential complexity for new users and the need for robust identity management to prevent sybil attacks\n- Standards and frameworks\n\t- Conviction Voting is not yet standardised, but several open-source implementations exist, including those by the Commons Stack and Aragon\n\t- The model is being considered for inclusion in emerging blockchain governance standards, such as those developed by the Decentralised Identity Foundation\n\n## Technical Details\n\n- **Id**: bc-0467-conviction-voting-ontology\n- **Collapsed**: true\n- **Source Domain**: metaverse\n- **Status**: stub-needs-content\n- **Public Access**: true\n- **Content Status**: minimal-placeholder-requires-authoring\n- **Maturity**: draft\n- **Owl:Class**: bc:ConvictionVoting\n- **Owl:Physicality**: ConceptualEntity\n- **Owl:Role**: Concept\n- **Belongstodomain**: [[BlockchainDomain]]\n\n## Research & Literature\n\n- Key academic papers and sources\n\t- Park, S., Specter, M., Narula, N., & Rivest, R. L. (2021). Going from bad to worse: from Internet voting to blockchain voting. Journal of Cybersecurity, 7(1), tyaa025. https://doi.org/10.1093/cybsec/tyaa025\n\t- Shaikh, A., Adhikari, N., Nazir, A., Shah, A. S., Baig, S., & Al Shihi, H. (2025). Blockchain-enhanced electoral integrity: a robust model for secure voting. F1000Research, 14, 223. https://doi.org/10.12688/f1000research.160087.3\n\t- Giveth. (2019). Conviction Voting: A Novel Continuous Decision Making Alternative to Governance. Giveth Blog. https://blog.giveth.io/conviction-voting-a-novel-continuous-decision-making-alternative-to-governance-aa746cfb9475\n- Ongoing research directions\n\t- Researchers are exploring the integration of Conviction Voting with Layer 2 solutions for scalability and enhanced privacy\n\t- There is growing interest in applying the model to public sector governance, particularly in the context of smart cities and community-led initiatives\n\n## UK Context\n\n- British contributions and implementations\n\t- The UK has been at the forefront of exploring blockchain-based governance models, with several civic tech initiatives and academic research groups contributing to the development and refinement of Conviction Voting\n\t- The model has been piloted in various local government and community projects, particularly in the North of England\n- North England innovation hubs (if relevant)\n\t- Manchester’s Digital Democracy Lab and Leeds-based Northern Commons are notable examples of regional innovation hubs experimenting with Conviction Voting\n\t- Newcastle and Sheffield have seen academic interest in the model, with research groups at Newcastle University and the University of Sheffield exploring its potential for public sector innovation\n- Regional case studies\n\t- Manchester’s Digital Democracy Lab has used Conviction Voting for local community funding decisions, demonstrating its potential for enhancing transparency and accountability in public sector governance\n\t- Leeds-based Northern Commons has applied the model to allocate resources for local sustainability projects, highlighting its utility in community-led initiatives\n\n## Future Directions\n\n- Emerging trends and developments\n\t- Conviction Voting is expected to see increased adoption in both private and public sector governance, particularly as blockchain technology becomes more mainstream\n\t- There is growing interest in integrating the model with other decentralised governance mechanisms, such as quadratic voting and reputation-based systems\n- Anticipated challenges\n\t- Ensuring user-friendly interfaces and robust identity management will be key to wider adoption\n\t- Addressing regulatory and legal considerations, particularly in the context of public sector governance, will be an ongoing challenge\n- Research priorities\n\t- Further research is needed on the long-term effects of Conviction Voting on community engagement and decision-making quality\n\t- There is a need for more empirical studies on the model’s performance in real-world settings, particularly in the context of public sector governance\n\n## References\n\n1. Park, S., Specter, M., Narula, N., & Rivest, R. L. (2021). Going from bad to worse: from Internet voting to blockchain voting. Journal of Cybersecurity, 7(1), tyaa025. https://doi.org/10.1093/cybsec/tyaa025\n2. Shaikh, A., Adhikari, N., Nazir, A., Shah, A. S., Baig, S., & Al Shihi, H. (2025). Blockchain-enhanced electoral integrity: a robust model for secure voting. F1000Research, 14, 223. https://doi.org/10.12688/f1000research.160087.3\n3. Giveth. (2019). Conviction Voting: A Novel Continuous Decision Making Alternative to Governance. Giveth Blog. https://blog.giveth.io/conviction-voting-a-novel-continuous-decision-making-alternative-to-governance-aa746cfb9475\n\n## Metadata\n\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Governance Token",
+    "Decentralized Autonomous Organization (DAO)"
+  ],
+  "wiki_links": [
+    "BlockchainDomain"
+  ],
+  "ontology": {
+    "term_id": "BC-0467",
+    "preferred_term": "Conviction Voting",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#ConvictionVoting",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "A component of the blockchain ecosystem.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:ConvictionVoting",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'bc' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

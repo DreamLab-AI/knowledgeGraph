@@ -1,40 +1,41 @@
 {
   "id": "Latency",
   "title": "Latency",
-  "content": "- ### OntologyBlock\n  id:: latency-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20148\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: Latency\n\t- definition:: Virtual performance metric representing the time delay between a user action and corresponding system response within networked immersive environments.\n\t- maturity:: mature\n\t- source:: [[ETSI ARF 010]]\n\t- owl:class:: mv:Latency\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]]\n\t- implementedInLayer:: [[Physical Layer]], [[Network Layer]]\n\t- #### Relationships\n\t  id:: latency-relationships\n\t\t- is-subclass-of:: [[Metaverse Infrastructure]]\n\t\t- is-dependency-of:: [[Presence]]\n\t\t- is-part-of:: [[Network Performance Metrics]], [[Quality of Service]]\n\t\t- depends-on:: [[Network Infrastructure]], [[Routing Protocol]], [[Bandwidth]], [[Processing Delay]], [[Propagation Delay]]\n\t\t- requires:: [[Measurement Tools]], [[Monitoring System]], [[Timestamp Synchronization]]\n\t\t- enables:: [[Performance Optimization]], [[Quality Assessment]], [[SLA Monitoring]], [[User Experience Tuning]]\n\t- #### OWL Axioms\n\t  id:: latency-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:Latency))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:Latency mv:VirtualEntity)\n\t\t  SubClassOf(mv:Latency mv:Object)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:Latency\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:InfrastructureDomain)\n\t\t  )\n\n\t\t  # Layer classification - spans physical and network layers\n\t\t  SubClassOf(mv:Latency\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:PhysicalLayer)\n\t\t  )\n\n\t\t  SubClassOf(mv:Latency\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:NetworkLayer)\n\t\t  )\n\n\t\t  # Part of performance metrics\n\t\t  SubClassOf(mv:Latency\n\t\t    ObjectSomeValuesFrom(mv:isPartOf mv:NetworkPerformanceMetrics)\n\t\t  )\n\n\t\t  # Depends on network infrastructure\n\t\t  SubClassOf(mv:Latency\n\t\t    ObjectSomeValuesFrom(mv:dependsOn mv:NetworkInfrastructure)\n\t\t  )\n\n\t\t  # Has measurable value in milliseconds\n\t\t  SubClassOf(mv:Latency\n\t\t    ObjectSomeValuesFrom(mv:hasValue xsd:decimal)\n\t\t  )\n\n\t\t  # Has time unit (milliseconds)\n\t\t  SubClassOf(mv:Latency\n\t\t    ObjectSomeValuesFrom(mv:hasUnit mv:Millisecond)\n\t\t  )\n\n\t\t  # Enables performance optimization\n\t\t  SubClassOf(mv:Latency\n\t\t    ObjectSomeValuesFrom(mv:enables mv:PerformanceOptimization)\n\t\t  )\n\n\t\t  # Virtual metric with no physical form\n\t\t  SubClassOf(mv:Latency\n\t\t    ObjectComplementOf(mv:PhysicalEntity)\n\t\t  )\n\n\t\t  # Data-based measurement requiring timestamp synchronization\n\t\t  SubClassOf(mv:Latency\n\t\t    ObjectSomeValuesFrom(mv:requires mv:TimestampSynchronization)\n\t\t  )\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:isdependencyof)\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:requires)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n```",
+  "content": "- ### OntologyBlock\n  id:: latency-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20148\n\t- preferred-term:: Latency\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Virtual performance metric representing the time delay between a user action and corresponding system response within networked immersive environments.\n\t- source:: [[ETSI ARF 010]]\n\t- maturity:: mature\n\t- owl:class:: mv:Latency\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]]\n\t- implementedInLayer:: [[Physical Layer]], [[Network Layer]]\n\t- #### Relationships\n\t  id:: latency-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse Infrastructure]]\n\t\t- is-part-of:: [[Network Performance Metrics]]\n\t\t- is-part-of:: [[Quality of Service]]\n\t\t- requires:: [[Monitoring System]]\n\t\t- requires:: [[Timestamp Synchronization]]\n\t\t- requires:: [[Measurement Tools]]\n\t\t- enables:: [[Performance Optimization]]\n\t\t- enables:: [[User Experience Tuning]]\n\t\t- enables:: [[Quality Assessment]]\n\t\t- enables:: [[SLA Monitoring]]\n\t\t- depends-on:: [[Bandwidth]]\n\t\t- depends-on:: [[Routing Protocol]]\n\t\t- depends-on:: [[Propagation Delay]]\n\t\t- depends-on:: [[Network Infrastructure]]\n\t\t- depends-on:: [[Processing Delay]]\n\t\t- is-dependency-of:: [[Presence]]",
   "backlinks": [
+    "Network Infrastructure",
     "Presence"
   ],
   "wiki_links": [
     "Physical Layer",
-    "Timestamp Synchronization",
-    "Quality of Service",
-    "InfrastructureDomain",
     "Propagation Delay",
-    "Routing Protocol",
-    "Metaverse Infrastructure",
-    "Network Layer",
     "Quality Assessment",
-    "Network Performance Metrics",
-    "Network Infrastructure",
-    "SLA Monitoring",
-    "Monitoring System",
-    "Presence",
-    "Processing Delay",
-    "User Experience Tuning",
     "ETSI ARF 010",
-    "Bandwidth",
+    "SLA Monitoring",
+    "Timestamp Synchronization",
+    "Routing Protocol",
+    "Presence",
+    "Metaverse Infrastructure",
+    "InfrastructureDomain",
+    "Network Performance Metrics",
     "Measurement Tools",
-    "Performance Optimization"
+    "Network Infrastructure",
+    "Monitoring System",
+    "Network Layer",
+    "User Experience Tuning",
+    "Processing Delay",
+    "Quality of Service",
+    "Performance Optimization",
+    "Bandwidth"
   ],
   "ontology": {
     "term_id": "20148",
     "preferred_term": "Latency",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#Latency",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "Virtual performance metric representing the time delay between a user action and corresponding system response within networked immersive environments.",
     "scope_note": null,
     "status": "draft",
@@ -58,22 +59,22 @@
       "Quality of Service"
     ],
     "requires": [
-      "Measurement Tools",
       "Monitoring System",
-      "Timestamp Synchronization"
+      "Timestamp Synchronization",
+      "Measurement Tools"
     ],
     "depends_on": [
-      "Network Infrastructure",
-      "Routing Protocol",
       "Bandwidth",
-      "Processing Delay",
-      "Propagation Delay"
+      "Routing Protocol",
+      "Propagation Delay",
+      "Network Infrastructure",
+      "Processing Delay"
     ],
     "enables": [
       "Performance Optimization",
+      "User Experience Tuning",
       "Quality Assessment",
-      "SLA Monitoring",
-      "User Experience Tuning"
+      "SLA Monitoring"
     ],
     "relates_to": [],
     "bridges_to": [],
@@ -97,8 +98,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "term-id '20148' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

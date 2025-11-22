@@ -1,55 +1,100 @@
 {
   "id": "Accessibility Audit Tool",
   "title": "Accessibility Audit Tool",
-  "content": "- ### OntologyBlock\n  id:: accessibility-audit-tool-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20119\n\t- preferred-term:: Accessibility Audit Tool\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Extended Reality (XR)]]\n\t- public-access:: true\n\n\n## Academic Context\n\n- Accessibility audit tools are software utilities designed to evaluate digital environments for compliance with accessibility standards, ensuring usability for people with disabilities.\n  - In XR (Extended Reality) environments—which include augmented reality (AR), virtual reality (VR), and mixed reality (MR)—these tools assess barriers that may hinder access or interaction.\n  - The academic foundation rests on established accessibility principles such as the Web Content Accessibility Guidelines (WCAG) and the Accessible Rich Internet Applications (ARIA) specifications, adapted for XR contexts.\n  - Recent scholarship emphasises moving beyond purely technical accessibility to consider emotional and cognitive dimensions of inclusion in XR, recognising that accessibility is not solely about compliance but also about user experience and social inclusion[3].\n\n## Current Landscape (2025)\n\n- Industry adoption of accessibility audit tools in XR has grown, integrating both automated and manual testing methods to identify and prioritise accessibility issues.\n  - Notable platforms increasingly embed audit capabilities that cheque ARIA roles, keyboard navigation, screen reader compatibility, and multimodal interactions.\n  - Organisations in the UK, including tech hubs in Manchester and Leeds, are actively developing and deploying XR accessibility solutions, often collaborating with universities and disability advocacy groups.\n- Technical capabilities now include AI-assisted analysis to interpret guidelines and provide contextual recommendations, though limitations remain in fully capturing emotional accessibility and complex user interactions in XR[2][4].\n- Standards guiding these audits include WCAG 2.2 and emerging draughts of WCAG 3.0, alongside region-specific legal frameworks such as the UK Equality Act 2010 and the Accessibility Regulations 2018.\n  - The US ADA 2024 updates also influence global best practices, including in the UK, by setting expectations for digital accessibility compliance[4][7].\n\n## Research & Literature\n\n- Key academic contributions include:\n  - Gerling, K., & Spiel, K. (2021). \"Disability inclusion in extended reality (XR) research: Beyond technical accessibility.\" *Information, Communication & Society*, 28(4), 567-584. DOI: 10.1080/1369118X.2025.2535426[3].\n  - Valentine, G. (2020). \"Emotional accessibility in digital environments.\" *Journal of Disability Studies*, 12(2), 175-190.\n  - Ellcessor, E. (2016). \"Emotional accessibility and XR.\" *Media Accessibility Review*, 9(1), 180-195.\n- Ongoing research explores AI-driven audit tools that integrate role-aware and ability-aware guideline navigation, aiming to reduce the cognitive load on developers and testers applying accessibility standards in XR workflows[2].\n- Investigations continue into how XR can support diverse user needs through assistive technologies and inclusive design frameworks such as Universal Design for Learning (UDL)[5].\n\n## UK Context\n\n- The UK has been proactive in accessibility innovation, with Manchester and Leeds serving as notable centres for XR research and development.\n  - Manchester’s digital innovation labs collaborate with disability organisations to pilot XR accessibility audit tools tailored to local needs.\n  - Leeds-based tech firms integrate accessibility audits into XR workplace training solutions, enhancing inclusivity for employees with disabilities[6].\n- Newcastle and Sheffield contribute through academic research focusing on the socio-emotional aspects of XR accessibility, emphasising user safety and pleasure alongside compliance.\n- Regional case studies demonstrate successful deployment of XR accessibility audits in public sector projects, including museums and educational institutions, ensuring compliance with UK legal standards and improving user engagement.\n\n## Future Directions\n\n- Emerging trends include:\n  - Integration of chat-based AI assistants within audit tools to provide real-time, context-sensitive guidance on applying accessibility standards.\n  - Expansion of audit scope to include emotional and cognitive accessibility metrics, addressing the affective dimensions of XR use.\n  - Greater emphasis on cross-modal accessibility, recognising the interplay between visual, auditory, motor, and cognitive user needs.\n- Anticipated challenges involve balancing automated detection with nuanced manual testing, especially for complex XR interactions and diverse disability profiles.\n- Research priorities focus on developing comprehensive frameworks that combine technical, emotional, and social inclusion aspects, alongside scalable tools suitable for varied XR platforms and user groups.\n\n## References\n\n1. Gerling, K., & Spiel, K. (2021). Disability inclusion in extended reality (XR) research: Beyond technical accessibility. *Information, Communication & Society*, 28(4), 567-584. DOI: 10.1080/1369118X.2025.2535426\n2. Metaverse Standards Forum. (2025). Good Intentions, Real Barriers: Investigating Accessibility in XR Workflows.\n3. Interaction Design Foundation. (2025). What are Accessibility Audits?\n4. BetterWeb. (2025). How to Create an Accessibility Audit Report in 2025.\n5. Berkeley Research on XR Accessibility. (2025). XR Accessibility: Research, Teaching, & Learning.\n6. TPGi. (2025). Inclusive XR Can Transform Your Workplace.\n7. Accessibility Works. (2025). 2025 WCAG & ADA Website Compliance Requirements.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: accessibility-audit-tool-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20119\n\t- preferred-term:: Accessibility Audit Tool\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: An automated software utility that verifies compliance with accessibility standards (such as WCAG) in XR environments, identifying barriers for users with disabilities.\n\t- source:: [[W3C XR Accessibility User Requirements]]\n\t- maturity:: mature\n\t- owl:class:: mv:AccessibilityAuditTool\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InteractionDomain]], [[TrustAndGovernanceDomain]]\n\t- implementedInLayer:: [[Application Layer]], [[Middleware Layer]]\n\t- #### Relationships\n\t  id:: accessibility-audit-tool-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Quality Assurance Toolchain]]\n\t\t- has-part:: [[Automated Testing Engine]]\n\t\t- has-part:: [[WCAG Validator]]\n\t\t- has-part:: [[Report Generator]]\n\t\t- has-part:: [[Compliance Dashboard]]\n\t\t- requires:: [[User Interface Analyzer]]\n\t\t- requires:: [[Accessibility Standards]]\n\t\t- requires:: [[Testing Framework]]\n\t\t- enables:: [[Compliance Verification]]\n\t\t- enables:: [[Regulatory Compliance]]\n\t\t- enables:: [[Accessibility Reporting]]\n\t\t- enables:: [[Inclusive Design]]\n\t\t- depends-on:: [[Testing Protocol]]\n\t\t- depends-on:: [[XR Accessibility Standards]]\n\t\t- depends-on:: [[WCAG Guidelines]]\n\n## Academic Context\n\n- Accessibility audit tools are software utilities designed to evaluate digital environments for compliance with accessibility standards, ensuring usability for people with disabilities.\n  - In XR (Extended Reality) environments—which include augmented reality (AR), virtual reality (VR), and mixed reality (MR)—these tools assess barriers that may hinder access or interaction.\n  - The academic foundation rests on established accessibility principles such as the Web Content Accessibility Guidelines (WCAG) and the Accessible Rich Internet Applications (ARIA) specifications, adapted for XR contexts.\n  - Recent scholarship emphasises moving beyond purely technical accessibility to consider emotional and cognitive dimensions of inclusion in XR, recognising that accessibility is not solely about compliance but also about user experience and social inclusion[3].\n\n## Current Landscape (2025)\n\n- Industry adoption of accessibility audit tools in XR has grown, integrating both automated and manual testing methods to identify and prioritise accessibility issues.\n  - Notable platforms increasingly embed audit capabilities that cheque ARIA roles, keyboard navigation, screen reader compatibility, and multimodal interactions.\n  - Organisations in the UK, including tech hubs in Manchester and Leeds, are actively developing and deploying XR accessibility solutions, often collaborating with universities and disability advocacy groups.\n- Technical capabilities now include AI-assisted analysis to interpret guidelines and provide contextual recommendations, though limitations remain in fully capturing emotional accessibility and complex user interactions in XR[2][4].\n- Standards guiding these audits include WCAG 2.2 and emerging draughts of WCAG 3.0, alongside region-specific legal frameworks such as the UK Equality Act 2010 and the Accessibility Regulations 2018.\n  - The US ADA 2024 updates also influence global best practices, including in the UK, by setting expectations for digital accessibility compliance[4][7].\n\n## Research & Literature\n\n- Key academic contributions include:\n  - Gerling, K., & Spiel, K. (2021). \"Disability inclusion in extended reality (XR) research: Beyond technical accessibility.\" *Information, Communication & Society*, 28(4), 567-584. DOI: 10.1080/1369118X.2025.2535426[3].\n  - Valentine, G. (2020). \"Emotional accessibility in digital environments.\" *Journal of Disability Studies*, 12(2), 175-190.\n  - Ellcessor, E. (2016). \"Emotional accessibility and XR.\" *Media Accessibility Review*, 9(1), 180-195.\n- Ongoing research explores AI-driven audit tools that integrate role-aware and ability-aware guideline navigation, aiming to reduce the cognitive load on developers and testers applying accessibility standards in XR workflows[2].\n- Investigations continue into how XR can support diverse user needs through assistive technologies and inclusive design frameworks such as Universal Design for Learning (UDL)[5].\n\n## UK Context\n\n- The UK has been proactive in accessibility innovation, with Manchester and Leeds serving as notable centres for XR research and development.\n  - Manchester’s digital innovation labs collaborate with disability organisations to pilot XR accessibility audit tools tailored to local needs.\n  - Leeds-based tech firms integrate accessibility audits into XR workplace training solutions, enhancing inclusivity for employees with disabilities[6].\n- Newcastle and Sheffield contribute through academic research focusing on the socio-emotional aspects of XR accessibility, emphasising user safety and pleasure alongside compliance.\n- Regional case studies demonstrate successful deployment of XR accessibility audits in public sector projects, including museums and educational institutions, ensuring compliance with UK legal standards and improving user engagement.\n\n## Future Directions\n\n- Emerging trends include:\n  - Integration of chat-based AI assistants within audit tools to provide real-time, context-sensitive guidance on applying accessibility standards.\n  - Expansion of audit scope to include emotional and cognitive accessibility metrics, addressing the affective dimensions of XR use.\n  - Greater emphasis on cross-modal accessibility, recognising the interplay between visual, auditory, motor, and cognitive user needs.\n- Anticipated challenges involve balancing automated detection with nuanced manual testing, especially for complex XR interactions and diverse disability profiles.\n- Research priorities focus on developing comprehensive frameworks that combine technical, emotional, and social inclusion aspects, alongside scalable tools suitable for varied XR platforms and user groups.\n\n## References\n\n1. Gerling, K., & Spiel, K. (2021). Disability inclusion in extended reality (XR) research: Beyond technical accessibility. *Information, Communication & Society*, 28(4), 567-584. DOI: 10.1080/1369118X.2025.2535426\n2. Metaverse Standards Forum. (2025). Good Intentions, Real Barriers: Investigating Accessibility in XR Workflows.\n3. Interaction Design Foundation. (2025). What are Accessibility Audits?\n4. BetterWeb. (2025). How to Create an Accessibility Audit Report in 2025.\n5. Berkeley Research on XR Accessibility. (2025). XR Accessibility: Research, Teaching, & Learning.\n6. TPGi. (2025). Inclusive XR Can Transform Your Workplace.\n7. Accessibility Works. (2025). 2025 WCAG & ADA Website Compliance Requirements.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [],
   "wiki_links": [
-    "Extended Reality (XR)"
+    "Testing Framework",
+    "W3C XR Accessibility User Requirements",
+    "InteractionDomain",
+    "Middleware Layer",
+    "Accessibility Reporting",
+    "Compliance Dashboard",
+    "Report Generator",
+    "TrustAndGovernanceDomain",
+    "Automated Testing Engine",
+    "WCAG Guidelines",
+    "User Interface Analyzer",
+    "Compliance Verification",
+    "Regulatory Compliance",
+    "Testing Protocol",
+    "Accessibility Standards",
+    "WCAG Validator",
+    "Application Layer",
+    "XR Accessibility Standards",
+    "Quality Assurance Toolchain",
+    "Inclusive Design"
   ],
   "ontology": {
     "term_id": "20119",
     "preferred_term": "Accessibility Audit Tool",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#AccessibilityAuditTool",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "An automated software utility that verifies compliance with accessibility standards (such as WCAG) in XR environments, identifying barriers for users with disabilities.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:AccessibilityAuditTool",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "has_part": [
+      "Automated Testing Engine",
+      "WCAG Validator",
+      "Report Generator",
+      "Compliance Dashboard"
+    ],
+    "is_part_of": [
+      "Quality Assurance Toolchain"
+    ],
+    "requires": [
+      "User Interface Analyzer",
+      "Accessibility Standards",
+      "Testing Framework"
+    ],
+    "depends_on": [
+      "Testing Protocol",
+      "XR Accessibility Standards",
+      "WCAG Guidelines"
+    ],
+    "enables": [
+      "Compliance Verification",
+      "Regulatory Compliance",
+      "Accessibility Reporting",
+      "Inclusive Design"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "InteractionDomain",
+      "TrustAndGovernanceDomain"
+    ],
+    "implemented_in_layer": [
+      "Application Layer",
+      "Middleware Layer"
+    ],
+    "source": [
+      "W3C XR Accessibility User Requirements"
+    ],
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20119' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

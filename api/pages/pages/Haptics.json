@@ -1,36 +1,38 @@
 {
   "id": "Haptics",
   "title": "Haptics",
-  "content": "- ### OntologyBlock\n  id:: haptics-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20153\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: Haptics\n\t- definition:: Physical hardware systems that simulate tactile sensations and force feedback within virtual environments through actuators and sensors.\n\t- maturity:: mature\n\t- source:: [[ISO 9241-960]]\n\t- owl:class:: mv:Haptics\n\t- owl:physicality:: PhysicalEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:PhysicalObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InteractionDomain]]\n\t- implementedInLayer:: [[PhysicalLayer]]\n\t- #### Relationships\n\t  id:: haptics-relationships\n\t\t- is-subclass-of:: [[Metaverse Infrastructure]]\n\t\t- has-part:: [[Force Feedback Actuators]], [[Tactile Actuators]], [[Vibration Motors]], [[Piezoelectric Sensors]]\n\t\t- is-part-of:: [[Human Interface Device]]\n\t\t- requires:: [[Power Supply]], [[Signal Processing Unit]], [[Driver Software]]\n\t\t- depends-on:: [[Real-time Processing]], [[Low Latency Communication]]\n\t\t- enables:: [[Tactile Feedback]], [[Force Feedback]], [[Texture Simulation]], [[Physical Presence]]\n\t- #### OWL Axioms\n\t  id:: haptics-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:Haptics))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:Haptics mv:PhysicalEntity)\n\t\t  SubClassOf(mv:Haptics mv:Object)\n\n\t\t  # Hardware component requirements\n\t\t  SubClassOf(mv:Haptics\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:ForceFeedbackActuators)\n\t\t  )\n\t\t  SubClassOf(mv:Haptics\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:TactileActuators)\n\t\t  )\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:Haptics\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:InteractionDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:Haptics\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:PhysicalLayer)\n\t\t  )\n\n\t\t  # Functional requirements\n\t\t  SubClassOf(mv:Haptics\n\t\t    ObjectSomeValuesFrom(mv:requires mv:RealTimeProcessing)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:requires)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n```",
-  "backlinks": [],
+  "content": "- ### OntologyBlock\n  id:: haptics-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20153\n\t- preferred-term:: Haptics\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Physical hardware systems that simulate tactile sensations and force feedback within virtual environments through actuators and sensors.\n\t- source:: [[ISO 9241-960]]\n\t- maturity:: mature\n\t- owl:class:: mv:Haptics\n\t- owl:physicality:: PhysicalEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:PhysicalObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InteractionDomain]]\n\t- implementedInLayer:: [[PhysicalLayer]]\n\t- #### Relationships\n\t  id:: haptics-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse Infrastructure]]\n\t\t- is-part-of:: [[Human Interface Device]]\n\t\t- has-part:: [[Tactile Actuators]]\n\t\t- has-part:: [[Vibration Motors]]\n\t\t- has-part:: [[Piezoelectric Sensors]]\n\t\t- has-part:: [[Force Feedback Actuators]]\n\t\t- requires:: [[Signal Processing Unit]]\n\t\t- requires:: [[Power Supply]]\n\t\t- requires:: [[Driver Software]]\n\t\t- enables:: [[Physical Presence]]\n\t\t- enables:: [[Force Feedback]]\n\t\t- enables:: [[Tactile Feedback]]\n\t\t- enables:: [[Texture Simulation]]\n\t\t- depends-on:: [[Real-time Processing]]\n\t\t- depends-on:: [[Low Latency Communication]]",
+  "backlinks": [
+    "Human Interface Device"
+  ],
   "wiki_links": [
-    "Physical Presence",
-    "Real-time Processing",
-    "Human Interface Device",
     "Tactile Feedback",
-    "ISO 9241-960",
-    "InteractionDomain",
-    "Metaverse Infrastructure",
-    "Vibration Motors",
-    "Force Feedback",
-    "Force Feedback Actuators",
     "PhysicalLayer",
+    "Real-time Processing",
+    "Metaverse Infrastructure",
+    "Force Feedback Actuators",
+    "Power Supply",
+    "Low Latency Communication",
+    "Vibration Motors",
     "Tactile Actuators",
-    "Texture Simulation",
+    "Physical Presence",
+    "InteractionDomain",
+    "Force Feedback",
+    "Human Interface Device",
+    "ISO 9241-960",
+    "Piezoelectric Sensors",
     "Signal Processing Unit",
     "Driver Software",
-    "Low Latency Communication",
-    "Piezoelectric Sensors",
-    "Power Supply"
+    "Texture Simulation"
   ],
   "ontology": {
     "term_id": "20153",
     "preferred_term": "Haptics",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#Haptics",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "Physical hardware systems that simulate tactile sensations and force feedback within virtual environments through actuators and sensors.",
     "scope_note": null,
     "status": "draft",
@@ -49,17 +51,17 @@
       "Metaverse Infrastructure"
     ],
     "has_part": [
-      "Force Feedback Actuators",
       "Tactile Actuators",
       "Vibration Motors",
-      "Piezoelectric Sensors"
+      "Piezoelectric Sensors",
+      "Force Feedback Actuators"
     ],
     "is_part_of": [
       "Human Interface Device"
     ],
     "requires": [
-      "Power Supply",
       "Signal Processing Unit",
+      "Power Supply",
       "Driver Software"
     ],
     "depends_on": [
@@ -67,10 +69,10 @@
       "Low Latency Communication"
     ],
     "enables": [
-      "Tactile Feedback",
+      "Physical Presence",
       "Force Feedback",
-      "Texture Simulation",
-      "Physical Presence"
+      "Tactile Feedback",
+      "Texture Simulation"
     ],
     "relates_to": [],
     "bridges_to": [],
@@ -88,8 +90,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "term-id '20153' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

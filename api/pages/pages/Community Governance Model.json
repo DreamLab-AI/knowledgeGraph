@@ -1,55 +1,120 @@
 {
   "id": "Community Governance Model",
   "title": "Community Governance Model",
-  "content": "- ### OntologyBlock\n  id:: community-governance-model-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20290\n\t- preferred-term:: Community Governance Model\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Metaverse]]\n\t- public-access:: true\n\n\n\n# Community Governance Model – Updated Ontology Entry\n\n## Academic Context\n\n- Community governance models represent a fundamental shift from centralised, top-down decision-making structures toward distributed, participatory frameworks\n  - Rooted in democratic theory and organisational sociology, these models emphasise collective agency and stakeholder empowerment\n  - Extend beyond virtual communities to encompass energy cooperatives, indigenous land stewardship, and institutional governance\n  - Distinguish between governance (structural authority and accountability) and policies (operational rules and behavioural norms)\n  - Key development: Recognition that robust governance frameworks require intentional design; 2024 data indicated only 64% of community programmes maintained comprehensive policies and guidelines[2]\n\n## Current Landscape (2025)\n\n### Governance Architecture and Implementation\n\n- Community governance models now operate across multiple domains: energy systems, digital platforms, indigenous territories, and institutional settings\n  - Energy sector: Communities increasingly establish cooperatives to own and operate renewable infrastructure (solar farms, wind projects) rather than remaining passive consumers[1]\n  - Digital communities: Shift toward decentralised governance structures, particularly in medium to large organisations, allowing distributed business units autonomy whilst maintaining centralised resource support[2]\n  - Indigenous and forest peoples: Governance systems deeply embedded in customary law, cultural traditions, and collective decision-making protocols, with emphasis on intergenerational stewardship[5]\n\n### Technical and Structural Capabilities\n\n- Decision-making mechanisms: Proposal systems, voting protocols, and dispute resolution processes now incorporate both synchronous and asynchronous participation\n  - Accountability frameworks: Boards and governance bodies increasingly adopt \"Governing for What Matters\" approaches, prioritising community impact over purely operational concerns[3]\n  - Scalability considerations: Decentralised models demonstrate capacity to scale initiatives without compromising quality or community engagement[2]\n\n### UK and North England Context\n\n- Limited specific documentation in current search results regarding North England implementations (Manchester, Leeds, Newcastle, Sheffield clusters)\n  - However, UK local authorities increasingly adopt participatory governance models for municipal decision-making and community asset management\n  - Energy cooperatives in UK demonstrate practical application: community-owned renewable projects operate across England, Scotland, and Wales, though concentrated in areas with strong environmental advocacy networks\n  - Institutional adoption: Higher education institutions (such as Clackamas Community College's model, adaptable to UK context) implement shared governance handbooks establishing council structures, community agreements, and transparent decision protocols[7]\n\n## Research & Literature\n\n### Key Academic and Practitioner Sources\n\n- Community Governance in Energy and Sustainability: Foundational frameworks emphasising collective management of energy resources and sustainable practices, distinguishing between traditional corporate models and community-controlled alternatives[1]\n\n- Policies and Governance in Community Management: The Community Maturity Model™ identifies governance as essential infrastructure; 2024 State of Community Management survey documented governance framework adoption rates and identified decentralisation as emerging trend[2]\n\n- Community-Driven Governance Framework (\"Governing for What Matters\"): Defines board accountability primarily toward community impact rather than organisational preservation; emphasises alignment with Vision, Mission, and Values throughout annual planning cycles[3]\n\n- Indigenous and Forest Peoples Governance: Systems rooted in self-determination, customary law, and territorial stewardship; evidence demonstrates strengthened indigenous governance correlates with effective land management and biodiversity protection[5]\n\n- Comprehensive Governance Definition: Community governance encompasses systems, rules, practices, and processes across international, constitutional, statutory, and regulatory bodies, addressing gaps in governmental and market structures[6]\n\n### Ongoing Research Directions\n\n- Effectiveness metrics for decentralised governance models in scaling community initiatives\n- Integration of digital tools with traditional decision-making protocols in indigenous governance systems\n- Financial sustainability mechanisms for community-controlled energy infrastructure\n- Comparative analysis of governance frameworks across cultural and institutional contexts\n\n## UK Context\n\n### British Contributions and Implementations\n\n- Community interest companies (CICs) and cooperative structures provide legal frameworks for community governance in energy, housing, and social enterprise sectors\n- UK local government increasingly adopts participatory budgeting and citizen assemblies, though implementation varies significantly by authority\n- Forest Peoples Programme and similar organisations document indigenous governance practices globally, with implications for UK land management policy\n\n### North England Innovation (Limited Current Evidence)\n\n- Energy sector: Community-owned renewable projects operate across Northern regions, though specific governance model documentation remains dispersed\n- Institutional models: Universities and colleges in North England increasingly adopt shared governance frameworks, though formal case studies remain limited in current literature\n- Recommendation: Direct engagement with Manchester Metropolitan University, Leeds Beckett University, and Newcastle University sustainability programmes may yield contemporary case studies\n\n## Future Directions\n\n### Emerging Trends\n\n- Hybrid governance models combining centralised strategic oversight with decentralised operational autonomy, particularly in large-scale community initiatives\n- Integration of blockchain and distributed ledger technologies for transparent, immutable decision records (though practical adoption remains nascent)\n- Strengthened emphasis on equity and inclusion mechanisms, ensuring governance structures actively incorporate marginalised voices rather than defaulting to dominant stakeholder representation\n\n### Anticipated Challenges\n\n- Scaling participatory decision-making without compromising deliberative quality or decision velocity\n- Reconciling community autonomy with regulatory compliance and accountability requirements\n- Sustaining engagement and preventing governance fatigue in long-term community initiatives\n- Addressing power imbalances within ostensibly \"participatory\" structures\n\n### Research Priorities\n\n- Longitudinal studies comparing governance model effectiveness across energy, digital, and institutional contexts\n- Investigation of cultural and contextual factors influencing governance framework adoption and success\n- Development of practical toolkits for transitioning from centralised to decentralised governance structures\n- Analysis of financial sustainability mechanisms for community-controlled initiatives\n\n---\n\n**Note on Revision**: The original definition emphasised virtual communities and voting mechanisms; the updated entry reflects contemporary understanding that community governance models operate across physical and digital domains, encompassing energy systems, indigenous territories, and institutional structures. The 2024 governance framework adoption data provides current empirical grounding. UK context remains somewhat limited in available literature; direct engagement with regional practitioners would strengthen North England case studies.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
-  "backlinks": [],
+  "content": "- ### OntologyBlock\n  id:: community-governance-model-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20290\n\t- preferred-term:: Community Governance Model\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A participatory decision-making framework that defines rules, voting mechanisms, proposal systems, and dispute resolution processes for virtual communities, enabling democratic and transparent collective governance.\n\t- source:: [[DAO Governance Standards]], [[ISO 37001 Anti-Bribery Management]], [[W3C Decentralized Governance]]\n\t- maturity:: mature\n\t- owl:class:: mv:CommunityGovernanceModel\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[VirtualSocietyDomain]], [[TrustAndGovernanceDomain]]\n\t- implementedInLayer:: [[MiddlewareLayer]]\n\t- #### Relationships\n\t  id:: community-governance-model-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Virtual Community Platform]]\n\t\t- is-part-of:: [[Decentralized Autonomous Organization]]\n\t\t- has-part:: [[Voting System]]\n\t\t- has-part:: [[Proposal Mechanism]]\n\t\t- has-part:: [[Decision Rules]]\n\t\t- has-part:: [[Membership Criteria]]\n\t\t- has-part:: [[Dispute Resolution Process]]\n\t\t- has-part:: [[Governance Token]]\n\t\t- requires:: [[Identity Management]]\n\t\t- requires:: [[Blockchain Infrastructure]]\n\t\t- requires:: [[Smart Contract]]\n\t\t- enables:: [[Collective Action]]\n\t\t- enables:: [[Community Decision Making]]\n\t\t- enables:: [[Democratic Participation]]\n\t\t- enables:: [[Transparent Governance]]\n\t\t- depends-on:: [[Reputation System]]\n\t\t- depends-on:: [[Treasury Management]]\n\t\t- depends-on:: [[Consensus Mechanism]]\n\t\t- is-dependency-of:: [[Digital Constitution]]\n\t\t- is-dependency-of:: [[Digital Citizenship]]\n\n## Academic Context\n\n- Community governance models represent a fundamental shift from centralised, top-down decision-making structures toward distributed, participatory frameworks\n  - Rooted in democratic theory and organisational sociology, these models emphasise collective agency and stakeholder empowerment\n  - Extend beyond virtual communities to encompass energy cooperatives, indigenous land stewardship, and institutional governance\n  - Distinguish between governance (structural authority and accountability) and policies (operational rules and behavioural norms)\n  - Key development: Recognition that robust governance frameworks require intentional design; 2024 data indicated only 64% of community programmes maintained comprehensive policies and guidelines[2]\n\n## Current Landscape (2025)\n\n### Governance Architecture and Implementation\n\n- Community governance models now operate across multiple domains: energy systems, digital platforms, indigenous territories, and institutional settings\n  - Energy sector: Communities increasingly establish cooperatives to own and operate renewable infrastructure (solar farms, wind projects) rather than remaining passive consumers[1]\n  - Digital communities: Shift toward decentralised governance structures, particularly in medium to large organisations, allowing distributed business units autonomy whilst maintaining centralised resource support[2]\n  - Indigenous and forest peoples: Governance systems deeply embedded in customary law, cultural traditions, and collective decision-making protocols, with emphasis on intergenerational stewardship[5]\n\n### Technical and Structural Capabilities\n\n- Decision-making mechanisms: Proposal systems, voting protocols, and dispute resolution processes now incorporate both synchronous and asynchronous participation\n  - Accountability frameworks: Boards and governance bodies increasingly adopt \"Governing for What Matters\" approaches, prioritising community impact over purely operational concerns[3]\n  - Scalability considerations: Decentralised models demonstrate capacity to scale initiatives without compromising quality or community engagement[2]\n\n### UK and North England Context\n\n- Limited specific documentation in current search results regarding North England implementations (Manchester, Leeds, Newcastle, Sheffield clusters)\n  - However, UK local authorities increasingly adopt participatory governance models for municipal decision-making and community asset management\n  - Energy cooperatives in UK demonstrate practical application: community-owned renewable projects operate across England, Scotland, and Wales, though concentrated in areas with strong environmental advocacy networks\n  - Institutional adoption: Higher education institutions (such as Clackamas Community College's model, adaptable to UK context) implement shared governance handbooks establishing council structures, community agreements, and transparent decision protocols[7]\n\n## Research & Literature\n\n### Key Academic and Practitioner Sources\n\n- Community Governance in Energy and Sustainability: Foundational frameworks emphasising collective management of energy resources and sustainable practices, distinguishing between traditional corporate models and community-controlled alternatives[1]\n\n- Policies and Governance in Community Management: The Community Maturity Model™ identifies governance as essential infrastructure; 2024 State of Community Management survey documented governance framework adoption rates and identified decentralisation as emerging trend[2]\n\n- Community-Driven Governance Framework (\"Governing for What Matters\"): Defines board accountability primarily toward community impact rather than organisational preservation; emphasises alignment with Vision, Mission, and Values throughout annual planning cycles[3]\n\n- Indigenous and Forest Peoples Governance: Systems rooted in self-determination, customary law, and territorial stewardship; evidence demonstrates strengthened indigenous governance correlates with effective land management and biodiversity protection[5]\n\n- Comprehensive Governance Definition: Community governance encompasses systems, rules, practices, and processes across international, constitutional, statutory, and regulatory bodies, addressing gaps in governmental and market structures[6]\n\n### Ongoing Research Directions\n\n- Effectiveness metrics for decentralised governance models in scaling community initiatives\n- Integration of digital tools with traditional decision-making protocols in indigenous governance systems\n- Financial sustainability mechanisms for community-controlled energy infrastructure\n- Comparative analysis of governance frameworks across cultural and institutional contexts\n\n## UK Context\n\n### British Contributions and Implementations\n\n- Community interest companies (CICs) and cooperative structures provide legal frameworks for community governance in energy, housing, and social enterprise sectors\n- UK local government increasingly adopts participatory budgeting and citizen assemblies, though implementation varies significantly by authority\n- Forest Peoples Programme and similar organisations document indigenous governance practices globally, with implications for UK land management policy\n\n### North England Innovation (Limited Current Evidence)\n\n- Energy sector: Community-owned renewable projects operate across Northern regions, though specific governance model documentation remains dispersed\n- Institutional models: Universities and colleges in North England increasingly adopt shared governance frameworks, though formal case studies remain limited in current literature\n- Recommendation: Direct engagement with Manchester Metropolitan University, Leeds Beckett University, and Newcastle University sustainability programmes may yield contemporary case studies\n\n## Future Directions\n\n### Emerging Trends\n\n- Hybrid governance models combining centralised strategic oversight with decentralised operational autonomy, particularly in large-scale community initiatives\n- Integration of blockchain and distributed ledger technologies for transparent, immutable decision records (though practical adoption remains nascent)\n- Strengthened emphasis on equity and inclusion mechanisms, ensuring governance structures actively incorporate marginalised voices rather than defaulting to dominant stakeholder representation\n\n### Anticipated Challenges\n\n- Scaling participatory decision-making without compromising deliberative quality or decision velocity\n- Reconciling community autonomy with regulatory compliance and accountability requirements\n- Sustaining engagement and preventing governance fatigue in long-term community initiatives\n- Addressing power imbalances within ostensibly \"participatory\" structures\n\n### Research Priorities\n\n- Longitudinal studies comparing governance model effectiveness across energy, digital, and institutional contexts\n- Investigation of cultural and contextual factors influencing governance framework adoption and success\n- Development of practical toolkits for transitioning from centralised to decentralised governance structures\n- Analysis of financial sustainability mechanisms for community-controlled initiatives\n\n---\n\n**Note on Revision**: The original definition emphasised virtual communities and voting mechanisms; the updated entry reflects contemporary understanding that community governance models operate across physical and digital domains, encompassing energy systems, indigenous territories, and institutional structures. The 2024 governance framework adoption data provides current empirical grounding. UK context remains somewhat limited in available literature; direct engagement with regional practitioners would strengthen North England case studies.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Digital Constitution",
+    "Governance Token",
+    "Digital Citizenship"
+  ],
   "wiki_links": [
-    "Metaverse"
+    "Governance Token",
+    "Democratic Participation",
+    "W3C Decentralized Governance",
+    "Digital Citizenship",
+    "Collective Action",
+    "Dispute Resolution Process",
+    "Community Decision Making",
+    "Blockchain Infrastructure",
+    "TrustAndGovernanceDomain",
+    "ISO 37001 Anti-Bribery Management",
+    "Transparent Governance",
+    "Membership Criteria",
+    "Digital Constitution",
+    "Reputation System",
+    "MiddlewareLayer",
+    "Smart Contract",
+    "Treasury Management",
+    "DAO Governance Standards",
+    "Proposal Mechanism",
+    "VirtualSocietyDomain",
+    "Consensus Mechanism",
+    "Identity Management",
+    "Voting System",
+    "Virtual Community Platform",
+    "Decision Rules",
+    "Decentralized Autonomous Organization"
   ],
   "ontology": {
     "term_id": "20290",
     "preferred_term": "Community Governance Model",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#CommunityGovernanceModel",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "A participatory decision-making framework that defines rules, voting mechanisms, proposal systems, and dispute resolution processes for virtual communities, enabling democratic and transparent collective governance.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:CommunityGovernanceModel",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "has_part": [
+      "Voting System",
+      "Proposal Mechanism",
+      "Decision Rules",
+      "Membership Criteria",
+      "Dispute Resolution Process",
+      "Governance Token"
+    ],
+    "is_part_of": [
+      "Virtual Community Platform",
+      "Decentralized Autonomous Organization"
+    ],
+    "requires": [
+      "Identity Management",
+      "Blockchain Infrastructure",
+      "Smart Contract"
+    ],
+    "depends_on": [
+      "Reputation System",
+      "Treasury Management",
+      "Consensus Mechanism"
+    ],
+    "enables": [
+      "Collective Action",
+      "Community Decision Making",
+      "Democratic Participation",
+      "Transparent Governance"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "VirtualSocietyDomain",
+      "TrustAndGovernanceDomain"
+    ],
+    "implemented_in_layer": [
+      "MiddlewareLayer"
+    ],
+    "source": [
+      "DAO Governance Standards",
+      "ISO 37001 Anti-Bribery Management",
+      "W3C Decentralized Governance"
+    ],
+    "other_relationships": {
+      "is-dependency-of": [
+        "Digital Constitution",
+        "Digital Citizenship"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20290' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

@@ -1,41 +1,48 @@
 {
   "id": "Presence",
   "title": "Presence",
-  "content": "- ### OntologyBlock\n  id:: presence-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20256\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: Presence\n\t- definition:: Perceptual state in which a user feels located inside a virtual or mixed environment, experiencing spatial, social, and self presence.\n\t- maturity:: mature\n\t- source:: [[ACM]]\n\t- owl:class:: mv:Presence\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InteractionDomain]]\n\t- implementedInLayer:: [[ComputeLayer]]\n\t- #### Relationships\n\t  id:: presence-relationships\n\t\t- is-subclass-of:: [[Extended Reality (XR)]]\n\t\t- is-enabled-by:: [[Extended Reality (XR)]], [[Immersion]], [[Human Interface Layer (HIL)]], [[Experience Layer]]\n\t\t- has-part:: [[Spatial Presence]], [[Social Presence]], [[Self Presence]]\n\t\t- is-part-of:: [[Immersive Experience]]\n\t\t- requires:: [[Sensory Feedback]], [[Haptic Device]], [[Visual Display]]\n\t\t- depends-on:: [[Latency]], [[Frame Rate]], [[Field of View]]\n\t\t- enables:: [[Engagement]], [[Embodiment]], [[Social Connection]]\n\t- #### OWL Axioms\n\t  id:: presence-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:Presence))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:Presence mv:VirtualEntity)\n\t\t  SubClassOf(mv:Presence mv:Object)\n\n\t\t  # Presence is a psychological construct that can be measured\n\t\t  SubClassOf(mv:Presence\n\t\t    ObjectSomeValuesFrom(mv:hasMeasurableAttribute mv:PresenceMetric)\n\t\t  )\n\n\t\t  # Presence has distinct dimensional components\n\t\t  SubClassOf(mv:Presence\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:SpatialPresence)\n\t\t  )\n\n\t\t  SubClassOf(mv:Presence\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:SocialPresence)\n\t\t  )\n\n\t\t  SubClassOf(mv:Presence\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:SelfPresence)\n\t\t  )\n\n\t\t  # Presence requires sensory feedback to manifest\n\t\t  SubClassOf(mv:Presence\n\t\t    ObjectSomeValuesFrom(mv:requires mv:SensoryFeedback)\n\t\t  )\n\n\t\t  # Presence depends on technical performance factors\n\t\t  SubClassOf(mv:Presence\n\t\t    ObjectSomeValuesFrom(mv:dependsOn mv:Latency)\n\t\t  )\n\n\t\t  SubClassOf(mv:Presence\n\t\t    ObjectSomeValuesFrom(mv:dependsOn mv:FrameRate)\n\t\t  )\n\n\t\t  # Presence enables immersive experiences\n\t\t  SubClassOf(mv:Presence\n\t\t    ObjectSomeValuesFrom(mv:enables mv:Immersion)\n\t\t  )\n\n\t\t  # Presence is part of immersive experiences\n\t\t  SubClassOf(mv:Presence\n\t\t    ObjectSomeValuesFrom(mv:isPartOf mv:ImmersiveExperience)\n\t\t  )\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:Presence\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:InteractionDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:Presence\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ComputeLayer)\n\t\t  )\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:isenabledby)\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:requires)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n```",
+  "content": "- ### OntologyBlock\n  id:: presence-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20256\n\t- preferred-term:: Presence\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Perceptual state in which a user feels located inside a virtual or mixed environment, experiencing spatial, social, and self presence.\n\t- source:: [[ACM]]\n\t- maturity:: mature\n\t- owl:class:: mv:Presence\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InteractionDomain]]\n\t- implementedInLayer:: [[ComputeLayer]]\n\t- #### Relationships\n\t  id:: presence-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Extended Reality (XR)]]\n\t\t- is-part-of:: [[Immersive Experience]]\n\t\t- has-part:: [[Social Presence]]\n\t\t- has-part:: [[Self Presence]]\n\t\t- has-part:: [[Spatial Presence]]\n\t\t- requires:: [[Visual Display]]\n\t\t- requires:: [[Sensory Feedback]]\n\t\t- requires:: [[Haptic Device]]\n\t\t- enables:: [[Social Connection]]\n\t\t- enables:: [[Embodiment]]\n\t\t- enables:: [[Engagement]]\n\t\t- is-enabled-by:: [[Experience Layer]]\n\t\t- is-enabled-by:: [[Extended Reality (XR)]]\n\t\t- is-enabled-by:: [[Immersion]]\n\t\t- is-enabled-by:: [[Human Interface Layer (HIL)]]\n\t\t- depends-on:: [[Frame Rate]]\n\t\t- depends-on:: [[Latency]]\n\t\t- depends-on:: [[Field of View]]",
   "backlinks": [
+    "Node",
     "Immersion",
-    "Latency"
+    "Extended Reality (XR)",
+    "Account Model",
+    "Latency",
+    "Human Rights",
+    "Experience Layer",
+    "Block Time",
+    "Human Interface Layer (HIL)"
   ],
   "wiki_links": [
-    "Social Connection",
-    "InteractionDomain",
-    "ComputeLayer",
-    "Immersion",
     "Engagement",
-    "Immersive Experience",
-    "Embodiment",
-    "Experience Layer",
-    "Social Presence",
-    "Sensory Feedback",
-    "Field of View",
     "Extended Reality (XR)",
-    "Spatial Presence",
-    "Self Presence",
-    "ACM",
     "Human Interface Layer (HIL)",
+    "Social Connection",
+    "Haptic Device",
+    "Social Presence",
+    "InteractionDomain",
+    "Immersive Experience",
+    "Immersion",
+    "Field of View",
+    "ACM",
+    "Experience Layer",
+    "Spatial Presence",
+    "Embodiment",
     "Frame Rate",
     "Visual Display",
-    "Latency",
-    "Haptic Device"
+    "Sensory Feedback",
+    "ComputeLayer",
+    "Self Presence",
+    "Latency"
   ],
   "ontology": {
     "term_id": "20256",
     "preferred_term": "Presence",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#Presence",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "Perceptual state in which a user feels located inside a virtual or mixed environment, experiencing spatial, social, and self presence.",
     "scope_note": null,
     "status": "draft",
@@ -54,27 +61,27 @@
       "Extended Reality (XR)"
     ],
     "has_part": [
-      "Spatial Presence",
       "Social Presence",
-      "Self Presence"
+      "Self Presence",
+      "Spatial Presence"
     ],
     "is_part_of": [
       "Immersive Experience"
     ],
     "requires": [
+      "Visual Display",
       "Sensory Feedback",
-      "Haptic Device",
-      "Visual Display"
+      "Haptic Device"
     ],
     "depends_on": [
-      "Latency",
       "Frame Rate",
+      "Latency",
       "Field of View"
     ],
     "enables": [
-      "Engagement",
+      "Social Connection",
       "Embodiment",
-      "Social Connection"
+      "Engagement"
     ],
     "relates_to": [],
     "bridges_to": [],
@@ -91,17 +98,18 @@
     ],
     "other_relationships": {
       "is-enabled-by": [
+        "Experience Layer",
         "Extended Reality (XR)",
         "Immersion",
-        "Human Interface Layer (HIL)",
-        "Experience Layer"
+        "Human Interface Layer (HIL)"
       ]
     },
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "term-id '20256' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

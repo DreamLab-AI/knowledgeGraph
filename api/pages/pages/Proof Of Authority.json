@@ -1,7 +1,7 @@
 {
   "id": "Proof Of Authority",
   "title": "Proof of Authority",
-  "content": "- ### OntologyBlock\n  id:: proofofauthority-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0547\n    - filename-history:: [\"BC-0547-proofofauthority.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0547\n    - preferred-term:: Proof of Authority\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: A consensus mechanism where pre-approved validators (authorities) with verified identities are authorized to validate transactions and create blocks.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:ProofOfAuthority\n    - is-subclass-of:: [[Blockchain]]\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "content": "- ### OntologyBlock\n  id:: proofofauthority-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0547\n\t- preferred-term:: Proof of Authority\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A consensus mechanism where pre-approved validators (authorities) with verified identities are authorized to validate transactions and create blocks.\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: bc:ProofOfAuthority\n\t- belongsToDomain:: [[Blockchain]]",
   "backlinks": [],
   "wiki_links": [
     "Blockchain"
@@ -11,17 +11,17 @@
     "preferred_term": "Proof of Authority",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/blockchain#ProofOfAuthority",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
     "definition": "A consensus mechanism where pre-approved validators (authorities) with verified identities are authorized to validate transactions and create blocks.",
     "scope_note": null,
     "status": "complete",
     "maturity": "established",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-11-13",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "bc:ProofOfAuthority",
@@ -48,10 +48,11 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'bc' doesn't match source-domain 'metaverse'"
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

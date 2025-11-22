@@ -1,0 +1,83 @@
+{
+  "id": "Transparency",
+  "title": "Transparency",
+  "content": "- ### OntologyBlock\n  id:: transparency-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0062\n\t- preferred-term:: Transparency\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: The property of an AI system whereby relevant information about the system's design, operation, capabilities, limitations, and decision-making processes is accessible and understandable to appropriate stakeholders.\n\t- #### Relationships\n\t  id:: transparency-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- enables:: [[Explainability (AI-0064)]]\n\t\t- enables:: [[Accountability (AI-0068)]]\n\t\t- is-enabled-by:: [[AI Impact Assessment]]\n\t\t- is-enabled-by:: [[Consent Management]]\n\n## Formal Specification\n\n```yaml\nterm: Transparency\ndefinition: \"Accessibility and comprehensibility of relevant AI system information to stakeholders\"\ndomain: AI Governance\ntype: Quality Attribute\nscope:\n  - system_design\n  - training_data\n  - algorithms\n  - decision_processes\n  - limitations\n  - performance_metrics\nlevels:\n  - disclosure\n  - comprehensibility\n  - verifiability\n```\n\n## Formal Ontology\n\n```clojure\n(Declaration (Class :Transparency))\n(SubClassOf :Transparency :QualityAttribute)\n(SubClassOf :Transparency :TrustworthinessDimension)\n\n;; Core properties\n(Declaration (ObjectProperty :hasDocumentation))\n(Declaration (ObjectProperty :disclosesInformationTo))\n(Declaration (ObjectProperty :enablesVerificationBy))\n\n;; Transparency levels\n(Declaration (Class :DisclosureLevel))\n(Declaration (Class :ComprehensibilityLevel))\n(Declaration (Class :VerifiabilityLevel))\n\n(SubClassOf :Transparency\n  (ObjectIntersectionOf\n    (ObjectSomeValuesFrom :hasDocumentation :Documentation)\n    (ObjectSomeValuesFrom :disclosesInformationTo :Stakeholder)\n    (ObjectSomeValuesFrom :enablesVerificationBy :Auditor)))\n\n;; Property characteristics\n(ObjectPropertyDomain :hasDocumentation :AISystem)\n(ObjectPropertyRange :hasDocumentation :Documentation)\n(ObjectPropertyDomain :disclosesInformationTo :AISystem)\n(ObjectPropertyRange :disclosesInformationTo :Stakeholder)\n\n;; Data properties for transparency metrics\n(Declaration (DataProperty :transparencyScore))\n(DataPropertyDomain :transparencyScore :AISystem)\n(DataPropertyRange :transparencyScore xsd:float)\n(AnnotationAssertion rdfs:comment :transparencyScore\n  \"Transparency level ranging from 0.0 (opaque) to 1.0 (fully transparent)\"^^xsd:string)\n\n(Declaration (DataProperty :documentationCompleteness))\n(DataPropertyDomain :documentationCompleteness :Documentation)\n(DataPropertyRange :documentationCompleteness xsd:float)\n\n;; Transparency scope\n(Declaration (ObjectProperty :providesTransparencyFor))\n(ObjectPropertyDomain :providesTransparencyFor :Documentation)\n(ObjectPropertyRange :providesTransparencyFor :SystemComponent)\n\n;; Relationships with other concepts\n(SubClassOf :Transparency\n  (ObjectSomeValuesFrom :enables :Explainability))\n(SubClassOf :Transparency\n  (ObjectSomeValuesFrom :supports :Accountability))\n\n;; Standards alignment\n(AnnotationAssertion dcterms:source :Transparency\n  \"ISO/IEC TR 24028:2020\"^^xsd:string)\n(AnnotationAssertion dcterms:source :Transparency\n  \"IEEE 7001-2021\"^^xsd:string)\n```\n\n## Authoritative References\n\n### Primary Sources\n\n1. **ISO/IEC TR 24028:2020** - Information technology — Artificial intelligence — Overview of trustworthiness in artificial intelligence\n   - Section 5.3: \"Transparency\"\n   - Defines transparency as disclosure of information about AI systems\n   - Source: ISO/IEC JTC 1/SC 42\n\n2. **NIST AI Risk Management Framework (AI RMF 1.0)**, January 2023\n   - Section 2.2: \"Accountable and Transparent\"\n   - \"Documentation is provided in a manner that is understandable to appropriate stakeholders\"\n   - Source: National Institute of Standards and Technology\n\n3. **EU AI Act** (Regulation 2024/1689), June 2024\n   - Article 13: \"Transparency and provision of information to deployers\"\n   - Article 50: \"Transparency obligations for providers and users\"\n   - Source: European Parliament and Council\n\n### Supporting Standards\n\n4. **ISO/IEC 23894:2023** - Information technology — Artificial intelligence — Guidance on risk management\n   - Section 7.4.2: \"Transparency of AI systems\"\n   - Integration with risk management\n\n5. **IEEE 7001-2021** - Transparency of Autonomous Systems\n   - Comprehensive transparency framework\n   - Five competency groups for transparency\n\n## Key Characteristics\n\n### Dimensions of Transparency\n\n1. **Data Transparency**\n   - Training data sources and characteristics\n   - Data collection methods\n   - Data quality and representativeness\n   - Data preprocessing steps\n   - Labelling procedures\n\n2. **Model Transparency**\n   - Algorithm selection rationale\n   - Architecture and design choices\n   - Hyperparameter configurations\n   - Training procedures\n   - Optimization methods\n\n3. **Performance Transparency**\n   - Evaluation metrics and results\n   - Accuracy across subgroups\n   - Known failure modes\n   - Uncertainty estimates\n   - Limitations and boundaries\n\n4. **Operational Transparency**\n   - Deployment context and conditions\n   - Intended use cases\n   - Human oversight mechanisms\n   - Update and maintenance procedures\n   - Incident reporting processes\n\n5. **Governance Transparency**\n   - Organisational accountability\n   - Decision-making authorities\n   - Ethical review processes\n   - Stakeholder engagement\n   - Compliance mechanisms\n\n## Levels of Transparency\n\n### IEEE 7001 Competency Levels\n\n1. **Level 1: Purposeful**\n   - Basic disclosure of system purpose\n   - Intended functionality\n   - General application domain\n\n2. **Level 2: Trustworthy**\n   - Evidence of reliability\n   - Validation and verification\n   - Quality assurance processes\n\n3. **Level 3: Accountable**\n   - Clear responsibility assignment\n   - Audit trails\n   - Redress mechanisms\n\n4. **Level 4: Contextual**\n   - Situation-specific adaptation\n   - Environmental awareness\n   - Context-dependent behaviour\n\n5. **Level 5: Understandable**\n   - Comprehensible explanations\n   - Appropriate detail for audience\n   - Effective communication\n\n## Relationships\n\n- **Component Of**: AI Trustworthiness (AI-0061)\n- **Enables**: Explainability (AI-0064), Accountability (AI-0068)\n- **Supports**: AI Audit (AI-0104), Conformity Assessment (AI-0103)\n- **Required For**: Informed Consent (AI-0042), Stakeholder Engagement (AI-0036)\n\n## Implementation Approaches\n\n### Documentation Methods\n\n1. **Model Cards**\n   - Standardised model documentation\n   - Performance characteristics\n   - Intended use and limitations\n   - Reference: Mitchell et al. (2019)\n\n2. **Datasheets for Datasets**\n   - Dataset composition and collection\n   - Preprocessing and cleaning\n   - Uses and distribution\n   - Reference: Gebru et al. (2018)\n\n3. **FactSheets**\n   - Comprehensive AI system documentation\n   - Trust and safety information\n   - Reference: IBM Research (Arnold et al., 2019)\n\n4. **System Cards**\n   - End-to-end system documentation\n   - Deployment context\n   - Stakeholder information\n\n### Technical Implementation\n\n1. **Logging and Traceability**\n   ```yaml\n   transparency_log:\n     data_lineage: true\n     model_versioning: true\n     decision_records: true\n     configuration_tracking: true\n     performance_monitoring: true\n   ```\n\n2. **Access Mechanisms**\n   - API endpoints for metadata\n   - Documentation repositories\n   - Interactive dashboards\n   - Public disclosure reports\n\n3. **Automated Reporting**\n   - Continuous documentation generation\n   - Real-time performance dashboards\n   - Automated compliance reports\n\n## Transparency vs. Other Properties\n\n### Transparency vs. Explainability\n\n| Transparency | Explainability |\n|--------------|----------------|\n| What information is disclosed | How decisions are made |\n| System-level properties | Instance-level justifications |\n| Passive accessibility | Active interpretation |\n| Structural information | Causal relationships |\n\n### Transparency vs. Interpretability\n\n| Transparency | Interpretability |\n|--------------|------------------|\n| Information disclosure | Human comprehension |\n| Documentation focus | Understanding focus |\n| External communication | Internal comprehension |\n| Process-oriented | Mechanism-oriented |\n\n## Stakeholder-Specific Transparency\n\n### For Regulators\n\n- Compliance documentation\n- Risk assessments\n- Audit trails\n- Incident reports\n- Validation evidence\n\n### For Users\n\n- System capabilities\n- Limitations and risks\n- Privacy implications\n- Decision-making basis\n- Redress mechanisms\n\n### For Developers\n\n- Technical specifications\n- Training procedures\n- Performance metrics\n- Known issues\n- Update history\n\n### For Affected Individuals\n\n- Data usage\n- Decision impact\n- Rights and recourse\n- Explanation availability\n- Contact information\n\n## Challenges and Limitations\n\n### Trade-offs\n\n1. **Transparency vs. Security**\n   - Disclosure may reveal vulnerabilities\n   - Intellectual property protection\n   - Adversarial exploitation risks\n\n2. **Transparency vs. Privacy**\n   - Training data disclosure\n   - Membership inference risks\n   - Model inversion attacks\n\n3. **Transparency vs. Complexity**\n   - Information overload\n   - Technical comprehension barriers\n   - Appropriate level of detail\n\n### Practical Constraints\n\n1. **Commercial Sensitivity**\n   - Proprietary algorithms\n   - Competitive advantage\n   - Trade secrets\n\n2. **Comprehension Barriers**\n   - Technical expertise required\n   - Cognitive limitations\n   - Communication challenges\n\n3. **Dynamic Systems**\n   - Continuous learning systems\n   - Evolving capabilities\n   - Real-time updates\n\n## Regulatory Requirements\n\n### EU AI Act\n\n**Article 13: Transparency for High-Risk Systems**\n- Instructions for use\n- Technical capabilities\n- Performance metrics\n- Known limitations\n- Human oversight mechanisms\n\n**Article 50: General Transparency Obligations**\n- AI-generated content labelling\n- Deepfake disclosure\n- Chatbot identification\n\n### Sector-Specific Requirements\n\n1. **Healthcare** (EU MDR, FDA)\n   - Clinical validation documentation\n   - Intended use specifications\n   - Performance characteristics\n\n2. **Finance** (SR 11-7, MiFID II)\n   - Algorithm documentation\n   - Risk disclosures\n   - Model governance\n\n3. **Employment** (GDPR Article 22)\n   - Automated decision-making disclosure\n   - Logic involved\n   - Significance and consequences\n\n## Best Practices\n\n1. **Adopt Layered Transparency**\n   - Summary for general public\n   - Detailed documentation for experts\n   - Technical specifications for auditors\n\n2. **Use Standardised Formats**\n   - Model cards, datasheets, factsheets\n   - Consistent structure\n   - Machine-readable metadata\n\n3. **Maintain Living Documentation**\n   - Version control\n   - Update history\n   - Current status\n\n4. **Tailor to Audience**\n   - Stakeholder-specific information\n   - Appropriate technical level\n   - Relevant concerns addressed\n\n5. **Balance Competing Interests**\n   - Maximum disclosure without harm\n   - Protect legitimate interests\n   - Prioritise public safety\n\n6. **Enable Verification**\n   - Provide evidence\n   - Support independent audit\n   - Allow testing and validation\n\n## Measurement and Metrics\n\n### Quantitative Metrics\n\n1. **Documentation Coverage**\n   - Percentage of required information provided\n   - Completeness score\n\n2. **Accessibility**\n   - Time to access information\n   - Ease of navigation\n   - Format availability\n\n3. **Comprehensibility**\n   - Readability scores\n   - Technical complexity measures\n   - User comprehension testing\n\n### Qualitative Assessment\n\n1. **Stakeholder Satisfaction**\n   - User surveys\n   - Expert reviews\n   - Regulator feedback\n\n2. **Audit Results**\n   - Independent verification\n   - Compliance assessments\n   - Gap analysis\n\n## Related Terms\n\n- **AI Trustworthiness** (AI-0061)\n- **Explainability** (AI-0064)\n- **Interpretability** (AI-0065)\n- **Accountability** (AI-0068)\n- **Documentation** (AI-0105)\n- **AI Audit** (AI-0104)\n\n## Version History\n\n- **1.0** (2025-10-27): Initial definition based on ISO/IEC TR 24028:2020 and IEEE 7001-2021\n\n---\n\n*This definition aligns with international transparency standards and regulatory requirements for AI systems.*\n\t- maturity:: draft\n\t- owl:class:: mv:Transparency\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: transparency-relationships\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-enabled-by:: [[AI Impact Assessment]], [[Consent Management]]\n\t\t- enables:: [[Explainability (AI-0064)]], [[Accountability (AI-0068)]]",
+  "backlinks": [
+    "AI Model Card",
+    "Stakeholder",
+    "AI-Augmented Software Engineering",
+    "book to be processed",
+    "Consent Management",
+    "Bitcoin",
+    "AI Governance Principle",
+    "Safety Laser Scanner"
+  ],
+  "wiki_links": [
+    "Explainability (AI-0064)",
+    "Accountability (AI-0068)",
+    "Metaverse",
+    "MetaverseDomain",
+    "Consent Management",
+    "AI Impact Assessment"
+  ],
+  "ontology": {
+    "term_id": "AI-0062",
+    "preferred_term": "Transparency",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#Transparency",
+    "source_domain": null,
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "The property of an AI system whereby relevant information about the system's design, operation, capabilities, limitations, and decision-making processes is accessible and understandable to appropriate stakeholders.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:Transparency",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Metaverse"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [
+      "Explainability (AI-0064)",
+      "Accountability (AI-0068)"
+    ],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "other_relationships": {
+      "is-enabled-by": [
+        "AI Impact Assessment",
+        "Consent Management"
+      ],
+      "belongsToDomain": [
+        "MetaverseDomain"
+      ]
+    },
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "owl:class namespace 'mv' doesn't match source-domain 'ai'"
+      ]
+    }
+  }
+}

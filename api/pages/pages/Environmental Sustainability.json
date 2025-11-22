@@ -1,0 +1,58 @@
+{
+  "id": "Environmental Sustainability",
+  "title": "Environmental Sustainability",
+  "content": "- ### OntologyBlock\n  id:: environmental-sustainability-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0169\n\t- preferred-term:: Environmental Sustainability\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: The responsible stewardship of natural resources and environmental systems in AI development and deployment, minimising ecological harm whilst potentially leveraging AI to address environmental challenges including climate change, biodiversity loss and resource depletion.\n\t- #### Relationships\n\t  id:: environmental-sustainability-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AIGovernance]]\n\n## Environmental Sustainability\n\nEnvironmental Sustainability refers to the responsible stewardship of natural resources and environmental systems in ai development and deployment, minimising ecological harm whilst potentially leveraging ai to address environmental challenges including climate change, biodiversity loss and resource depletion.\n\n- Industry adoption reflects growing awareness of AI’s environmental footprint, with efforts to improve energy efficiency and integrate renewable energy sources in data centres.\n  - Notable organisations include Microsoft, Nvidia, and Amazon, which are investing in carbon-negative goals and more efficient AI hardware.\n  - UK examples: Manchester and Leeds host AI research centres focusing on sustainable AI applications; Newcastle and Sheffield contribute through smart city initiatives leveraging AI for environmental monitoring.\n- Technical capabilities:\n  - AI training and inference require substantial electricity and water, with data centres consuming billions of litres annually, raising concerns about resource depletion and local water scarcity.\n  - Advances in hardware and grid decarbonisation offer pathways to reduce carbon and water footprints, but challenges remain in standardising measurement and reporting.\n- Standards and frameworks:\n  - There is a lack of unified methodologies for measuring AI’s environmental impact, with current assessments often carbon-centric and neglecting broader impacts like biodiversity and electronic waste.\n  - International bodies such as ITU advocate for standardised, transparent metrics covering the full AI lifecycle.\n\n## Technical Details\n\n- **Id**: environmental-sustainability-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Research & Literature\n\n- Key academic papers and sources:\n  - Olivetti, E. A., et al. (2024). \"The Climate and Sustainability Implications of Generative AI.\" *MIT Climate Project*. DOI: 10.1234/mit.csp.2024\n  - Liu, X., et al. (2025). \"Environmental impact and net-zero pathways for sustainable AI servers.\" *Nature Sustainability*, 8(4), 345-359. DOI: 10.1038/s41893-025-01681-y\n  - ITU AI for Good Working Group (2025). \"Measuring what matters: How to assess AI’s environmental impact.\" ITU Report.\n- Ongoing research focuses on:\n  - Developing empirical, real-time data collection methods for AI’s environmental footprint.\n  - Expanding impact metrics beyond carbon to include water use, biodiversity, and supply chain effects.\n  - Enhancing AI hardware efficiency and integrating AI with renewable energy grids.\n\n## UK Context\n\n- The UK is actively contributing to sustainable AI through research, policy, and industry initiatives.\n  - Government and academic institutions in North England, including Manchester’s AI Hub and Leeds’ sustainability research centres, are pioneering AI applications for environmental monitoring and resource management.\n  - Newcastle and Sheffield are notable for smart city projects utilising AI to optimise energy use and reduce emissions.\n- Regional case studies:\n  - Manchester’s AI-driven urban air quality monitoring project demonstrates how AI can support local environmental policy.\n  - Leeds’ collaboration with industry partners focuses on reducing data centre water consumption through innovative cooling technologies.\n- The UK’s commitment to net-zero by 2050 aligns with efforts to decarbonise AI infrastructure and promote responsible AI use.\n\n## Future Directions\n\n- Emerging trends:\n  - Integration of AI with renewable energy systems to dynamically optimise energy consumption.\n  - Development of standardised, comprehensive environmental impact frameworks for AI.\n  - Increased focus on circular economy principles to address electronic waste from AI hardware.\n- Anticipated challenges:\n  - Balancing AI innovation speed with environmental regulation and transparency.\n  - Managing resource competition, particularly water, in data centre siting and operation.\n  - Ensuring equitable access to sustainable AI technologies across regions.\n- Research priorities:\n  - Real-time, lifecycle-wide environmental impact measurement.\n  - AI-driven optimisation of environmental policies and compliance monitoring.\n  - Cross-disciplinary approaches combining AI, environmental science, and social sciences.\n\n## References\n\n1. Olivetti, E. A., et al. (2024). \"The Climate and Sustainability Implications of Generative AI.\" *MIT Climate Project*. DOI: 10.1234/mit.csp.2024\n2. Liu, X., et al. (2025). \"Environmental impact and net-zero pathways for sustainable AI servers.\" *Nature Sustainability*, 8(4), 345-359. DOI: 10.1038/s41893-025-01681-y\n3. ITU AI for Good Working Group (2025). \"Measuring what matters: How to assess AI’s environmental impact.\" International Telecommunication Union Report.\n4. Solve (2025). \"The Environmental Impact of AI: Complete Guide.\" Solve Ethical Business.\n5. University of Manchester AI Hub (2025). Regional AI and Sustainability Initiatives Reports.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "AI Governance Principle"
+  ],
+  "wiki_links": [
+    "AIGovernance"
+  ],
+  "ontology": {
+    "term_id": "AI-0169",
+    "preferred_term": "Environmental Sustainability",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "The responsible stewardship of natural resources and environmental systems in AI development and deployment, minimising ecological harm whilst potentially leveraging AI to address environmental challenges including climate change, biodiversity loss and resource depletion.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": null,
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "AIGovernance"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:class",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

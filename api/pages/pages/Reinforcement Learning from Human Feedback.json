@@ -1,0 +1,59 @@
+{
+  "id": "Reinforcement Learning from Human Feedback",
+  "title": "Reinforcement Learning from Human Feedback",
+  "content": "- ### OntologyBlock\n  id:: reinforcement-learning-from-human-feedback-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0261\n\t- preferred-term:: Reinforcement Learning from Human Feedback\n\t- source-domain:: ai\n\t- owl:class:: ai:ReinforcementLearningFromHumanFeedback\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A technique for aligning language models with human preferences by training a reward model from human rankings of outputs and using reinforcement learning (typically PPO) to optimise the policy towards maximising predicted human preference. RLHF enables models to learn complex alignment objectives difficult to specify explicitly.\n\t- #### Relationships\n\t  id:: reinforcement-learning-from-human-feedback-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[ReinforcementLearning]]\n\n## Reinforcement Learning from Human Feedback\n\nReinforcement Learning from Human Feedback refers to a technique for aligning language models with human preferences by training a reward model from human rankings of outputs and using reinforcement learning (typically ppo) to optimise the policy towards maximising predicted human preference. rlhf enables models to learn complex alignment objectives difficult to specify explicitly.\n\n- RLHF is widely adopted in industry for training large language models (LLMs) and other AI systems, underpinning popular conversational agents and content generation tools.\n  - Notable organisations include OpenAI, Anthropic, and DeepMind, which employ RLHF to refine model behaviour and safety.\n  - The technique is also applied beyond NLP, such as in computer vision for text-to-image generation and in robotics for behaviour shaping.\n- In the UK, several AI research groups and companies integrate RLHF into their workflows, with a growing focus on ethical AI and human-centric design.\n  - North England hubs such as Manchester and Leeds host AI innovation centres that explore RLHF applications in healthcare, finance, and autonomous systems.\n  - For example, the University of Manchester’s AI research teams investigate RLHF to improve clinical decision support systems by incorporating expert feedback loops.\n- Technical capabilities of RLHF include:\n  - Efficient learning from relatively small amounts of high-quality human feedback.\n  - Ability to capture complex, subjective preferences that are difficult to encode explicitly.\n- Limitations remain:\n  - High cost and effort in collecting representative, unbiased human feedback.\n  - Potential for learned reward models to inherit human biases or inconsistencies.\n  - Challenges in scaling feedback collection and ensuring robustness against adversarial or noisy inputs.\n- Standards and frameworks for RLHF are emerging, focusing on transparency in feedback collection, reproducibility of reward modelling, and ethical considerations in deployment.\n\n## Technical Details\n\n- **Id**: reinforcement-learning-from-human-feedback-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Research & Literature\n\n- Key academic papers and sources include:\n  - Christiano, P. F., Leike, J., Brown, T., et al. (2017). *Deep reinforcement learning from human preferences*. Advances in Neural Information Processing Systems, 30.\n    DOI: 10.5555/3295222.3295349\n  - Knox, W. B., & Stone, P. (2009). *Interactively shaping agents via human reinforcement: The TAMER framework*. Proceedings of the Fifth International Conference on Knowledge Capture.\n    DOI: 10.1145/1597735.1597748\n  - Ibarz, J., Leike, J., Berner, C., et al. (2018). *Reward learning from human preferences and demonstrations in Atari*. Advances in Neural Information Processing Systems, 31.\n    URL: https://arxiv.org/abs/1811.06521\n  - Lambert, N. (2025). *RLHF Book*. Available at: https://rlhfbook.com\n- Ongoing research directions focus on:\n  - Improving sample efficiency and robustness of reward models.\n  - Combining RLHF with other alignment techniques such as constitutional AI or scalable oversight.\n  - Addressing bias and fairness in human feedback data.\n  - Extending RLHF to multi-modal and interactive AI systems.\n\n## UK Context\n\n- The UK has made significant contributions to RLHF research and applications, with institutions like the Alan Turing Institute collaborating with universities and industry partners.\n- North England innovation hubs such as Manchester, Leeds, Newcastle, and Sheffield are active in AI research that incorporates RLHF, particularly in sectors like healthcare AI, autonomous systems, and financial technology.\n  - For instance, Leeds AI Centre explores RLHF to enhance explainability and trustworthiness in AI-driven decision-making.\n  - Newcastle University investigates human-in-the-loop reinforcement learning for robotics and assistive technologies.\n- Regional case studies highlight the integration of RLHF in NHS digital health projects, where human feedback from clinicians helps tailor AI diagnostic tools to real-world clinical preferences and constraints.\n\n## Future Directions\n\n- Emerging trends include:\n  - Integration of RLHF with large-scale human feedback platforms to democratise and diversify feedback sources.\n  - Development of hybrid models combining RLHF with unsupervised or self-supervised learning to reduce reliance on costly human annotations.\n  - Advances in interpretability and transparency of reward models to foster trust and regulatory compliance.\n- Anticipated challenges:\n  - Scaling human feedback collection while maintaining quality and representativeness.\n  - Mitigating unintended biases and ensuring equitable AI behaviour across diverse populations.\n  - Balancing model optimisation with safety and ethical constraints.\n- Research priorities emphasise:\n  - Robustness of RLHF-trained models in dynamic, real-world environments.\n  - Cross-disciplinary collaboration to refine feedback protocols and ethical frameworks.\n  - Exploration of RLHF in novel domains such as education, law, and creative industries.\n\n## References\n\n1. Christiano, P. F., Leike, J., Brown, T., et al. (2017). Deep reinforcement learning from human preferences. *Advances in Neural Information Processing Systems*, 30. DOI: 10.5555/3295222.3295349\n2. Knox, W. B., & Stone, P. (2009). Interactively shaping agents via human reinforcement: The TAMER framework. *Proceedings of the Fifth International Conference on Knowledge Capture*. DOI: 10.1145/1597735.1597748\n3. Ibarz, J., Leike, J., Berner, C., et al. (2018). Reward learning from human preferences and demonstrations in Atari. *Advances in Neural Information Processing Systems*, 31. URL: https://arxiv.org/abs/1811.06521\n4. Lambert, N. (2025). *RLHF Book*. Available at: https://rlhfbook.com\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "AI-Augmented Software Engineering",
+    "Loss Function",
+    "Safety Laser Scanner"
+  ],
+  "wiki_links": [
+    "ReinforcementLearning"
+  ],
+  "ontology": {
+    "term_id": "AI-0261",
+    "preferred_term": "Reinforcement Learning from Human Feedback",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#ReinforcementLearningFromHumanFeedback",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "A technique for aligning language models with human preferences by training a reward model from human rankings of outputs and using reinforcement learning (typically PPO) to optimise the policy towards maximising predicted human preference. RLHF enables models to learn complex alignment objectives difficult to specify explicitly.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:ReinforcementLearningFromHumanFeedback",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "ReinforcementLearning"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

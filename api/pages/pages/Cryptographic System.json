@@ -1,17 +1,16 @@
 {
   "id": "Cryptographic System",
   "title": "Cryptographic System",
-  "content": "- ### OntologyBlock\n  id:: cryptographic-system-ontology\n  collapsed:: true\n\n  - **Identification**\n    - ontology:: true\n    - term-id:: PC-0003\n    - preferred-term:: Cryptographic System\n    - source-domain:: metaverse\n    - status:: complete\n    - public-access:: true\n    - version:: 1.0.0\n    - last-updated:: 2025-11-08\n\n  - **Definition**\n    - definition:: A Cryptographic System is an integrated framework of mathematical algorithms, protocols, and mechanisms designed to provide information security properties including confidentiality, integrity, authentication, and non-repudiation in adversarial environments. In blockchain contexts, cryptographic systems form the foundational security layer enabling trustless operation through mathematical guarantees rather than trusted intermediaries. These systems encompass cryptographic hash functions for data integrity verification, digital signature schemes for authentication and authorization, encryption mechanisms for confidentiality, and advanced protocols like zero-knowledge proofs for privacy-preserving verification. Blockchain cryptographic systems must satisfy rigorous security requirements including collision resistance for hash functions, computational infeasibility of private key recovery from public keys, and resistance to quantum computing attacks in next-generation systems. The security guarantees provided by cryptographic systems enable blockchain's core properties: immutability through hash chaining, ownership verification through digital signatures, and transaction validity through cryptographic proofs, all without requiring trust in central authorities.\n    - maturity:: mature\n    - source:: [[NIST Cryptographic Standards]], [[ISO/IEC 18033 Encryption Algorithms]], [[FIPS 140-3 Security Requirements]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:CryptographicSystem\n    - owl:physicality:: ConceptualEntity\n    - owl:role:: Concept\n    - owl:inferred-class:: ConceptualConcept\n    - is-subclass-of:: [[Metaverse]]\n    - belongsToDomain:: [[BlockchainDomain]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "content": "- ### OntologyBlock\n  id:: cryptographic-system-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: PC-0003\n\t- preferred-term:: Cryptographic System\n\t- source-domain:: metaverse\n\t- status:: complete\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: bc:CryptographicSystem\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- owl:inferred-class:: ConceptualConcept\n\n### Domain & Architecture\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- maturity:: mature\n\n### Relationships\n\n### Quality Metrics\n\t- authority-score:: 0.95\n\n- ### OntologyBlock\n  id:: cryptographic-system-ontology\n  collapsed:: true\n\n  - **Identification**\n    - ontology:: true\n    - term-id:: PC-0003\n    - preferred-term:: Cryptographic System\n    - source-domain:: metaverse\n    - status:: complete\n    - public-access:: true\n    - version:: 1.0.0\n    - last-updated:: 2025-11-08\n\n  - **Definition**\n    - definition:: A Cryptographic System is an integrated framework of mathematical algorithms, protocols, and mechanisms designed to provide information security properties including confidentiality, integrity, authentication, and non-repudiation in adversarial environments. In blockchain contexts, cryptographic systems form the foundational security layer enabling trustless operation through mathematical guarantees rather than trusted intermediaries. These systems encompass cryptographic hash functions for data integrity verification, digital signature schemes for authentication and authorization, encryption mechanisms for confidentiality, and advanced protocols like zero-knowledge proofs for privacy-preserving verification. Blockchain cryptographic systems must satisfy rigorous security requirements including collision resistance for hash functions, computational infeasibility of private key recovery from public keys, and resistance to quantum computing attacks in next-generation systems. The security guarantees provided by cryptographic systems enable blockchain's core properties: immutability through hash chaining, ownership verification through digital signatures, and transaction validity through cryptographic proofs, all without requiring trust in central authorities.\n    - maturity:: mature\n    - source:: [[NIST Cryptographic Standards]], [[ISO/IEC 18033 Encryption Algorithms]], [[FIPS 140-3 Security Requirements]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:CryptographicSystem\n    - owl:physicality:: ConceptualEntity\n    - owl:role:: Concept\n    - owl:inferred-class:: ConceptualConcept\n    - is-subclass-of:: [[Metaverse]]\n    - belongsToDomain:: [[BlockchainDomain]]\n\n  - #### OWL Restrictions\n    \n\n  -",
   "backlinks": [
-    "BC-0001-blockchain",
-    "Blockchain Entity"
+    "BC-0001-blockchain"
   ],
   "wiki_links": [
-    "NIST Cryptographic Standards",
-    "ISO/IEC 18033 Encryption Algorithms",
-    "FIPS 140-3 Security Requirements",
     "BlockchainDomain",
-    "Metaverse"
+    "Metaverse",
+    "NIST Cryptographic Standards",
+    "FIPS 140-3 Security Requirements",
+    "ISO/IEC 18033 Encryption Algorithms"
   ],
   "ontology": {
     "term_id": "PC-0003",
@@ -46,6 +45,7 @@
     "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
+      "BlockchainDomain",
       "BlockchainDomain"
     ],
     "implemented_in_layer": [],

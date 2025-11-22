@@ -1,0 +1,59 @@
+{
+  "id": "Fine-Tuning",
+  "title": "Fine Tuning",
+  "content": "- ### OntologyBlock\n  id:: fine-tuning-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0246\n\t- preferred-term:: Fine Tuning\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: The process of adapting a pre-trained model to a specific downstream task by continuing training on task-specific data, typically with a lower learning rate. Fine-tuning leverages knowledge acquired during pre-training whilst specialising the model for particular applications.\n\n## Academic Context\n\nFine-tuning emerged as a foundational technique in transfer learning, enabling pre-trained models to achieve strong performance on specific tasks with relatively little task-specific data. This approach forms the basis of modern large language model adaptation strategies.\n\n**Primary Source**: Multiple sources; comprehensive survey in arXiv:2411.01195 (2024)\n\n## Key Characteristics\n\n- Continues training from pre-trained weights\n- Uses lower learning rates than pre-training\n- Requires task-specific labelled data\n- Adapts general knowledge to specific domains\n- Can update all or subset of model parameters\n\n## Technical Details\n\n**Process**:\n1. Load pre-trained model weights\n2. Replace or add task-specific output layers\n3. Train on task-specific dataset\n4. Use reduced learning rate to prevent catastrophic forgetting\n\n**Variants**:\n- Full fine-tuning (updates all parameters)\n- Layer-wise fine-tuning (selective layer updates)\n- Gradual unfreezing (progressive layer training)\n\n## Usage in AI/ML\n\n\"Fine-tuning allows pre-trained models to achieve strong performance on specific tasks with relatively little task-specific data.\"\n\nCommon applications:\n- Domain adaptation (general → specialised)\n- Task specialisation (language understanding → question answering)\n- Multi-task learning scenarios\n- Transfer across related domains\n\n## Related Concepts\n\n- **Pre-Training**: Initial training phase providing general representations\n- **Transfer Learning**: Broader paradigm of knowledge transfer\n- **Parameter-Efficient Fine-Tuning (PEFT)**: Methods updating fewer parameters\n- **Domain Adaptation**: Specialisation for specific application domains\n- **Catastrophic Forgetting**: Risk during fine-tuning process\n\n## Historical Development\n\n- Early neural networks: Task-specific training from scratch\n- 2018: BERT demonstrates power of pre-train-then-fine-tune\n- 2019-2020: Fine-tuning becomes standard practice\n- 2021+: Parameter-efficient methods gain prominence\n- 2023+: Instruction tuning and alignment fine-tuning\n\n## Significance\n\nFine-tuning democratised access to state-of-the-art model performance by enabling effective task adaptation without massive computational resources required for pre-training from scratch.\n\n## OWL Functional Syntax\n\n```clojure\n(Declaration (Class :FineTuning))\n(SubClassOf :FineTuning :TrainingTechnique)\n(SubClassOf :FineTuning\n  (ObjectSomeValuesFrom :adaptsModel :PreTrainedModel))\n(SubClassOf :FineTuning\n  (ObjectSomeValuesFrom :requiresData :TaskSpecificData))\n(SubClassOf :FineTuning\n  (ObjectSomeValuesFrom :usesLearningRate :LowerLearningRate))\n(SubClassOf :FineTuning\n  (ObjectSomeValuesFrom :prevents :CatastrophicForgetting))\n(SubClassOf :FineTuning\n  (ObjectSomeValuesFrom :enables :TransferLearning))\n\n(AnnotationAssertion rdfs:comment :FineTuning\n  \"Adapts pre-trained models to specific downstream tasks through continued training on task-specific data with lower learning rates\"@en)\n(AnnotationAssertion :hasAcademicSource :FineTuning\n  \"Comprehensive survey in arXiv:2411.01195 (2024)\")\n```\n\n## UK English Notes\n\n- \"Fine-tuning\" (not \"finetuning\")\n- \"Specialised\" (not \"specialized\")\n- \"Optimisation\" in related contexts\n\n**Last Updated**: 2025-10-27\n**Verification Status**: Verified against arXiv:2411.01195 (2024)\n\t- maturity:: draft\n\t- owl:class:: mv:FineTuning\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t- belongsToDomain:: [[MetaverseDomain]]",
+  "backlinks": [
+    "AI-Augmented Software Engineering"
+  ],
+  "wiki_links": [
+    "ArtificialIntelligence",
+    "MetaverseDomain"
+  ],
+  "ontology": {
+    "term_id": "AI-0246",
+    "preferred_term": "Fine Tuning",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#FineTuning",
+    "source_domain": null,
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "The process of adapting a pre-trained model to a specific downstream task by continuing training on task-specific data, typically with a lower learning rate. Fine-tuning leverages knowledge acquired during pre-training whilst specialising the model for particular applications.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:FineTuning",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'ai'"
+      ]
+    }
+  }
+}

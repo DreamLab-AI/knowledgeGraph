@@ -1,32 +1,31 @@
 {
   "id": "AI-0441-edge-ai-accelerators",
-  "title": "Edge AI Accelerators (AI-0441)",
-  "content": "- ### OntologyBlock\n  id:: edge-ai-accelerators-(ai-0441)-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0441\n    - preferred-term:: Edge AI Accelerators (AI-0441)\n    - source-domain:: ai-grounded\n    - status:: in-progress\n    - version:: 1.0\n    - last-updated:: 2025-10-29\n\n  - **Definition**\n    - definition:: Edge AI Accelerators are specialized hardware processors designed to dramatically improve the performance and energy efficiency of machine learning inference on resource-constrained edge devices. These include Neural Processing Units (NPUs), Tensor Processing Units (TPUs), Digital Signal Processors (DSPs), Field-Programmable Gate Arrays (FPGAs), and Application-Specific Integrated Circuits (ASICs) optimized for neural network computations. NPUs integrate directly into mobile processors (Qualcomm Hexagon, Apple Neural Engine) achieving 2-21 TOPS (tera-operations per second) with 2-10 TOPS per watt efficiency. TPUs and ASICs deliver peak performance 5-100x higher than CPUs while consuming 10-50x less power per inference. FPGAs offer programmable flexibility allowing deployment-specific optimizations when fixed-function accelerators are unavailable. Edge AI accelerators exploit parallelism in matrix multiplication operations inherent to neural networks, typically supporting low-precision arithmetic (INT8, FP16) for dramatic speedups versus full-precision FP32 computation. Hardware features including dedicated memory hierarchies, reduced precision datapaths, and specialized reduction circuits eliminate unnecessary energy overhead from general-purpose processors. Platforms like NVIDIA Jetson embed GPUs for accelerated inference on mobile robots and autonomous vehicles. Meta's Orion custom silicon combines custom accelerators for AR processing at mobile-friendly power budgets. Edge accelerators enable real-time video processing, low-latency autonomous responses, and offline operation while respecting power and thermal constraints. The trend toward tightly integrated AI accelerators reflects the fundamental mismatch between neural network parallelism and general-purpose processor design, necessitating specialized hardware for practical edge intelligence.\n    - maturity:: mature\n    - source:: \n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: aigo:EdgeAIAccelerators\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Process\n    - owl:inferred-class:: aigo:VirtualProcess\n    - belongsToDomain:: [[AIEthicsDomain]]\n    - implementedInLayer:: [[ConceptualLayer]]\n\n  - #### Relationships\n    id:: edge-ai-accelerators-(ai-0441)-relationships\n\n  - #### OWL Axioms\n    id:: edge-ai-accelerators-(ai-0441)-owl-axioms\n    collapsed:: true\n    - ```clojure\n      (Declaration (Class :EdgeAIAccelerators))\n(AnnotationAssertion rdfs:label :EdgeAIAccelerators \"Edge AI Accelerators\"@en)\n(SubClassOf :EdgeAIAccelerators :AIGovernancePrinciple)\n\n;; Accelerator Types\n(DisjointClasses :NPU :TPU :DSP :FPGA :ASIC)\n\n;; Performance Characteristics\n(DataPropertyAssertion :hasPeakTOPS :EdgeAIAccelerators \"21\"^^xsd:integer)\n(DataPropertyAssertion :hasPowerWatts :EdgeAIAccelerators \"10\"^^xsd:integer)\n(DataPropertyAssertion :hasEfficiencyTOPSPerWatt :EdgeAIAccelerators \"2.1\"^^xsd:float)\n\n;; Supported Precision\n(SubClassOf :EdgeAIAccelerators\n  (ObjectSomeValuesFrom :supports :INT8Precision))\n(SubClassOf :EdgeAIAccelerators\n  (ObjectSomeValuesFrom :supports :FP16Precision))\n      ```\n\n### Relationships\n- is-subclass-of:: [[EdgeAISystem]]",
+  "title": "Edge AI Accelerators",
+  "content": "- ### OntologyBlock\n  id:: edge-ai-accelerators-(ai-0441)-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0441\n\t- preferred-term:: Edge AI Accelerators\n\t- source-domain:: ai\n\t- status:: in\n\t- public-access:: true\n\t- definition:: Edge AI Accelerators are specialized hardware processors designed to dramatically improve the performance and energy efficiency of machine learning inference on resource-constrained edge devices. These include Neural Processing Units (NPUs), Tensor Processing Units (TPUs), Digital Signal Processors (DSPs), Field-Programmable Gate Arrays (FPGAs), and Application-Specific Integrated Circuits (ASICs) optimized for neural network computations. NPUs integrate directly into mobile processors (Qualcomm Hexagon, Apple Neural Engine) achieving 2-21 TOPS (tera-operations per second) with 2-10 TOPS per watt efficiency. TPUs and ASICs deliver peak performance 5-100x higher than CPUs while consuming 10-50x less power per inference. FPGAs offer programmable flexibility allowing deployment-specific optimizations when fixed-function accelerators are unavailable. Edge AI accelerators exploit parallelism in matrix multiplication operations inherent to neural networks, typically supporting low-precision arithmetic (INT8, FP16) for dramatic speedups versus full-precision FP32 computation. Hardware features including dedicated memory hierarchies, reduced precision datapaths, and specialized reduction circuits eliminate unnecessary energy overhead from general-purpose processors. Platforms like NVIDIA Jetson embed GPUs for accelerated inference on mobile robots and autonomous vehicles. Meta's Orion custom silicon combines custom accelerators for AR processing at mobile-friendly power budgets. Edge accelerators enable real-time video processing, low-latency autonomous responses, and offline operation while respecting power and thermal constraints. The trend toward tightly integrated AI accelerators reflects the fundamental mismatch between neural network parallelism and general-purpose processor design, necessitating specialized hardware for practical edge intelligence.\n\t- maturity:: mature\n\t- owl:class:: ai:EdgeAIAccelerators\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: aigo:VirtualProcess\n\t- belongsToDomain:: [[AIEthicsDomain]]\n\t- implementedInLayer:: [[ConceptualLayer]]",
   "backlinks": [],
   "wiki_links": [
-    "EdgeAISystem",
     "ConceptualLayer",
     "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "AI-0441",
-    "preferred_term": "Edge AI Accelerators (AI-0441)",
+    "preferred_term": "Edge AI Accelerators",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "ai-grounded",
-    "domain": "ai-grounded",
-    "domain_full_name": "",
+    "iri": "http://narrativegoldmine.com/ai#EdgeAIAccelerators",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
     "definition": "Edge AI Accelerators are specialized hardware processors designed to dramatically improve the performance and energy efficiency of machine learning inference on resource-constrained edge devices. These include Neural Processing Units (NPUs), Tensor Processing Units (TPUs), Digital Signal Processors (DSPs), Field-Programmable Gate Arrays (FPGAs), and Application-Specific Integrated Circuits (ASICs) optimized for neural network computations. NPUs integrate directly into mobile processors (Qualcomm Hexagon, Apple Neural Engine) achieving 2-21 TOPS (tera-operations per second) with 2-10 TOPS per watt efficiency. TPUs and ASICs deliver peak performance 5-100x higher than CPUs while consuming 10-50x less power per inference. FPGAs offer programmable flexibility allowing deployment-specific optimizations when fixed-function accelerators are unavailable. Edge AI accelerators exploit parallelism in matrix multiplication operations inherent to neural networks, typically supporting low-precision arithmetic (INT8, FP16) for dramatic speedups versus full-precision FP32 computation. Hardware features including dedicated memory hierarchies, reduced precision datapaths, and specialized reduction circuits eliminate unnecessary energy overhead from general-purpose processors. Platforms like NVIDIA Jetson embed GPUs for accelerated inference on mobile robots and autonomous vehicles. Meta's Orion custom silicon combines custom accelerators for AR processing at mobile-friendly power budgets. Edge accelerators enable real-time video processing, low-latency autonomous responses, and offline operation while respecting power and thermal constraints. The trend toward tightly integrated AI accelerators reflects the fundamental mismatch between neural network parallelism and general-purpose processor design, necessitating specialized hardware for practical edge intelligence.",
     "scope_note": null,
-    "status": "in-progress",
+    "status": "in",
     "maturity": "mature",
-    "version": "1.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-10-29",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": "aigo:EdgeAIAccelerators",
+    "owl_class": "ai:EdgeAIAccelerators",
     "owl_physicality": "VirtualEntity",
     "owl_role": "Process",
     "owl_inferred_class": "aigo:VirtualProcess",
@@ -46,14 +45,12 @@
     "implemented_in_layer": [
       "ConceptualLayer"
     ],
-    "source": [
-      "- authority-score:: 0.95"
-    ],
+    "source": [],
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'aigo' doesn't match source-domain 'ai-grounded'"
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

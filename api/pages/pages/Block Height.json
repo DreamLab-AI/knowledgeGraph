@@ -1,0 +1,77 @@
+{
+  "id": "Block Height",
+  "title": "Block Height",
+  "content": "- ### OntologyBlock\n  id:: block-height-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0011\n\t- preferred-term:: Block Height\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Number of blocks from genesis within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:BlockHeight\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- #### Relationships\n\t  id:: block-height-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Block]]\n\t\t- bridges-to:: [[Distributeddatastructure]]\n\n## Block Height\n\nBlock Height refers to the sequential position of a block within a blockchain, measured as the number of blocks between it and the genesis block (block 0). This fundamental metric serves as a universal coordinate system for blockchain state, enabling nodes to synchronize, clients to verify chain progression, and protocols to implement time-locked transactions or consensus checkpoints. Block height functions as both a chronological marker and a security indicator, with higher block depths providing exponentially greater immutability guarantees through accumulated proof-of-work or finality mechanisms.\n\nIn proof-of-work blockchains like Bitcoin (currently exceeding 870,000 blocks as of early 2025), block height correlates directly with network security through accumulated computational difficulty. Ethereum's transition to proof-of-stake maintains block height as a state progression metric while achieving finality through epoch checkpoints. Enterprise blockchains like Hyperledger Fabric use block height for ordering service coordination and channel state verification. Technical applications include: time-locked transactions using CheckLockTimeVerify (CLTV) opcodes, hard fork activation heights (e.g., Ethereum's Shanghai upgrade at block 15,537,393), and light client verification via block height proofs.\n\nCurrent adoption encompasses all major blockchain protocols, with block height serving as the primary indexing mechanism for blockchain explorers (Etherscan, Blockchain.com), API services, and distributed applications. DeFi protocols utilize block height for oracle price feeds, governance proposal voting windows, and vesting schedule calculations. Layer-2 scaling solutions reference layer-1 block heights for state commitments and fraud proof challenges. Standards from IEEE 2418.1 specify block height encoding in blockchain interoperability protocols, while NIST guidelines reference block height in blockchain forensics and audit trail verification. The metric remains critical for consensus algorithm coordination, with proof-of-stake protocols using slot heights and finalized heights to distinguish proposed versus confirmed states.\n\n## Technical Details\n\n- **Id**: 66314bd7-86ef-4ca2-8f39-704e133ac0a3\n- **Collapsed**: true\n- **Domain Prefix**: BC\n- **Sequence Number**: 0011\n- **Filename History**: [\"BC-0011-block-height.md\"]\n- **Public Access**: true\n- **Source Domain**: blockchain\n- **Status**: complete\n- **Last Updated**: 2025-11-18\n- **Maturity**: mature\n- **Source**: [[IEEE 2418.1]], [[NIST NISTIR 8202]], [[Bitcoin Developer Reference]], [[Ethereum Yellow Paper]]\n- **Authority Score**: 0.96\n- **Owl:Class**: bc:BlockHeight\n- **Owl:Physicality**: VirtualEntity\n- **Owl:Role**: Object\n- **Owl:Inferred Class**: bc:VirtualObject\n- **Belongstodomain**: [[BlockchainDomain]]\n- **Implementedinlayer**: [[ConceptualLayer]]\n- **Is Subclass Of**: [[Blockchain Entity]], [[DistributedDataStructure]]\n\n## Metadata\n\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Runes and Glyphs"
+  ],
+  "wiki_links": [
+    "NIST NISTIR",
+    "BlockchainDomain",
+    "Distributeddatastructure",
+    "Bitcoin Developer Reference",
+    "Blockchain Entity",
+    "ISO/IEC 23257:2021",
+    "Ethereum Yellow Paper",
+    "ConceptualLayer",
+    "DistributedDataStructure",
+    "Block",
+    "IEEE 2418.1",
+    "NIST NISTIR 8202"
+  ],
+  "ontology": {
+    "term_id": "BC-0011",
+    "preferred_term": "Block Height",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#BlockHeight",
+    "source_domain": "blockchain",
+    "domain": "blockchain",
+    "domain_full_name": "",
+    "definition": "Number of blocks from genesis within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": "2025-11-18",
+    "authority_score": 0.96,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:BlockHeight",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "bc:VirtualObject",
+    "is_subclass_of": [
+      "Block"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "ISO/IEC 23257:2021",
+      "IEEE 2418.1",
+      "NIST NISTIR"
+    ],
+    "other_relationships": {
+      "bridges-to": [
+        "Distributeddatastructure"
+      ]
+    },
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "Self Sovereign Identity",
+  "title": "Self Sovereign Identity",
+  "content": "- ### OntologyBlock\n  id:: self-sovereign-identity-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0456\n\t- preferred-term:: Self Sovereign Identity\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: A component of the blockchain ecosystem.\n\t- maturity:: draft\n\t- owl:class:: bc:SelfSovereignIdentity\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[BlockchainDomain]]\n\n## Self Sovereign Identity\n\nSelf Sovereign Identity refers to a component of the blockchain ecosystem.\n\n- SSI adoption has accelerated across industries seeking secure, privacy-preserving digital identity solutions, especially within Web3 ecosystems.\n  - Leading platforms provide standards-based verifiable credentials, decentralised ID wallets, and biometric-bound credentials to enhance security and user control.\n  - Notable organisations include Truvera, Oracle Blockchain, and various open-source initiatives advancing SSI protocols and privacy-enhanced credentials[1][4].\n- Technical capabilities:\n  - SSI systems leverage blockchain and peer-to-peer networks to establish a trust triangle among issuers, holders, and verifiers.\n  - Privacy is enhanced by selective disclosure, allowing users to share only necessary identity attributes.\n  - Limitations include scalability challenges, interoperability hurdles, and the need for widespread adoption of common standards.\n- Standards and frameworks:\n  - The ecosystem is guided by standards such as W3C’s Verifiable Credentials and Decentralised Identifiers specifications.\n  - Emerging frameworks focus on interoperability, privacy preservation, and regulatory compliance.\n\n## Technical Details\n\n- **Id**: bc-0456-self-sovereign-identity-ontology\n- **Collapsed**: true\n- **Source Domain**: blockchain\n- **Status**: stub-needs-content\n- **Public Access**: true\n- **Content Status**: minimal-placeholder-requires-authoring\n- **Maturity**: draft\n- **Owl:Class**: bc:SelfSovereignIdentity\n- **Owl:Physicality**: ConceptualEntity\n- **Owl:Role**: Concept\n- **Belongstodomain**: [[BlockchainDomain]]\n- **Blockchainrelevance**: High\n- **Lastvalidated**: 2025-11-14\n\n## Research & Literature\n\n- Key academic papers and sources:\n  - Giannopoulou, A., & Wang, F. (2021). Self-sovereign identity. *Internet Policy Review*, 10(2). https://doi.org/10.14763/2021.2.1550\n  - Pava-Díaz, R. A. (2024). Self-sovereign identity on the blockchain: contextual analysis and challenges. *Frontiers in Blockchain*, 7, 1443362. https://doi.org/10.3389/fbloc.2024.1443362\n- Ongoing research directions include:\n  - Enhancing privacy through anonymous credentials and zero-knowledge proofs.\n  - Improving scalability and user experience in SSI wallets.\n  - Addressing legal and regulatory frameworks for digital identity sovereignty.\n\n## UK Context\n\n- The UK has seen significant SSI-related innovation, with government and private sector initiatives exploring decentralised identity for public services and financial sectors.\n- North England innovation hubs in Manchester, Leeds, Newcastle, and Sheffield are increasingly active in blockchain and digital identity research, fostering startups and pilot projects utilising SSI principles.\n  - For example, Manchester’s blockchain clusters have supported SSI pilots in healthcare and education sectors, emphasising privacy and user control.\n- Regional case studies demonstrate practical SSI applications improving citizen access to services while reducing fraud and administrative overhead.\n\n## Future Directions\n\n- Emerging trends:\n  - Integration of SSI with Internet of Things (IoT) devices and smart cities.\n  - Expansion of SSI use cases in healthcare, finance, and government identity verification.\n- Anticipated challenges:\n  - Balancing privacy with regulatory requirements such as KYC (Know Your Customer) and AML (Anti-Money Laundering).\n  - Achieving interoperability across diverse SSI implementations and legacy systems.\n- Research priorities:\n  - Developing user-friendly SSI wallets with robust security.\n  - Establishing international standards and governance models.\n  - Investigating socio-technical impacts of decentralised identity on digital inclusion and trust.\n\n## References\n\n1. Giannopoulou, A., & Wang, F. (2021). Self-sovereign identity. *Internet Policy Review*, 10(2). https://doi.org/10.14763/2021.2.1550\n2. Pava-Díaz, R. A. (2024). Self-sovereign identity on the blockchain: contextual analysis and challenges. *Frontiers in Blockchain*, 7, 1443362. https://doi.org/10.3389/fbloc.2024.1443362\n3. Dock.io. (2025). Self-Sovereign Identity: The Ultimate Guide 2025. Retrieved November 2025, from https://www.dock.io/post/self-sovereign-identity\n4. Oracle Blockchain Blog. (2025). Privacy-enhanced verifiable credentials in healthcare. Retrieved November 2025, from https://blogs.oracle.com/blockchain/privacyenhanced-verifiable-credentials\n\n## Metadata\n\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "BlockchainDomain"
+  ],
+  "ontology": {
+    "term_id": "BC-0456",
+    "preferred_term": "Self Sovereign Identity",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#SelfSovereignIdentity",
+    "source_domain": "blockchain",
+    "domain": "blockchain",
+    "domain_full_name": "",
+    "definition": "A component of the blockchain ecosystem.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:SelfSovereignIdentity",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+      ]
+    }
+  }
+}

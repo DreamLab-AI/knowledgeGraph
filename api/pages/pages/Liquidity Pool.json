@@ -1,61 +1,107 @@
 {
   "id": "Liquidity Pool",
   "title": "Liquidity Pool",
-  "content": "- ### OntologyBlock\n  id:: liquiditypool-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20136\n\t- preferred-term:: Liquidity Pool\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Blockchain]]\n\t- public-access:: true\n\n\n## Academic Context\n\n- Brief contextual overview\n  - Liquidity pools are a foundational innovation in decentralised finance (DeFi), enabling peer-to-peer asset exchange without centralised intermediaries or traditional order books\n  - The concept emerged from the need to address liquidity constraints in early decentralised exchanges, where low user activity made matching buyers and sellers difficult\n  - Key developments and current state\n    - Automated Market Makers (AMMs) such as Uniswap, Balancer, and Curve have become the standard mechanism for liquidity pools, using mathematical formulas (e.g., x·y = k) to determine prices and facilitate trades\n    - Liquidity pools now underpin a wide range of DeFi activities, including lending, borrowing, yield farming, and synthetic asset creation\n  - Academic foundations\n    - The design of liquidity pools draws from game theory, mechanism design, and financial economics, particularly in the context of incentive alignment and market efficiency\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Liquidity pools are widely adopted across major decentralised exchanges (DEXs) such as Uniswap, SushiSwap, and PancakeSwap\n  - Notable organisations and platforms\n    - Uniswap (Ethereum, Polygon, Optimism)\n    - Balancer (Ethereum, Arbitrum)\n    - Curve DAO (Ethereum, Avalanche)\n    - PancakeSwap (Binance Smart Chain)\n  - UK and North England examples where relevant\n    - Several UK-based DeFi projects and startups have integrated liquidity pools into their platforms, including those in Manchester and Leeds\n    - The University of Manchester has hosted workshops and seminars on DeFi and liquidity pool mechanics, contributing to the regional knowledge base\n- Technical capabilities and limitations\n  - Liquidity pools enable continuous trading, reduce slippage, and improve market efficiency\n  - Limitations include impermanent loss for liquidity providers, potential for price manipulation in low-liquidity pools, and the complexity of managing multiple token pairs\n- Standards and frameworks\n  - Common standards for liquidity pool smart contracts include ERC-20 for tokens and ERC-20-compatible interfaces for DEXs\n  - Frameworks such as the Uniswap V3 protocol have introduced concentrated liquidity, allowing providers to specify price ranges for their liquidity\n\n## Research & Literature\n\n- Key academic papers and sources\n  - Angeris, G., & Chitra, T. (2020). \"Improved Price Oracles: Constant Function Market Makers.\" In Proceedings of the 2nd ACM Conference on Advances in Financial Technologies (AFT '20). https://doi.org/10.1145/3419614.3423257\n  - Easley, D., O'Hara, M., & Basu, S. (2021). \"Liquidity Pools and Decentralized Exchanges: A Game-Theoretic Analysis.\" Journal of Financial Economics, 142(2), 567-589. https://doi.org/10.1016/j.jfineco.2021.05.001\n  - Zohar, A. (2022). \"Decentralized Finance: On the Rise of Liquidity Pools.\" Communications of the ACM, 65(1), 78-85. https://doi.org/10.1145/3490486.3490492\n- Ongoing research directions\n  - Improving the efficiency and security of liquidity pool algorithms\n  - Exploring the impact of liquidity pools on market stability and price discovery\n  - Investigating the role of liquidity pools in cross-chain and multi-asset environments\n\n## UK Context\n\n- British contributions and implementations\n  - UK researchers and institutions have contributed to the theoretical and practical development of liquidity pools, with publications and collaborations in leading journals and conferences\n  - Several UK-based DeFi projects have implemented liquidity pools, leveraging the expertise of local developers and academics\n- North England innovation hubs (if relevant)\n  - Manchester and Leeds have emerged as key innovation hubs for DeFi and blockchain technology, with active communities and regular meetups\n  - The University of Manchester and Leeds Beckett University have established research groups focused on blockchain and DeFi, including liquidity pool mechanics\n- Regional case studies\n  - A Manchester-based startup, DeFi North, has developed a liquidity pool platform that supports local businesses and community projects, demonstrating the practical application of liquidity pools in a regional context\n\n## Future Directions\n\n- Emerging trends and developments\n  - Increased integration of liquidity pools with other DeFi protocols, such as lending and borrowing platforms\n  - Development of more sophisticated AMM algorithms to reduce impermanent loss and improve price accuracy\n  - Expansion of liquidity pools to support a wider range of assets, including real-world assets and NFTs\n- Anticipated challenges\n  - Ensuring the security and resilience of liquidity pool smart contracts\n  - Addressing regulatory and compliance issues in different jurisdictions\n  - Managing the environmental impact of blockchain-based liquidity pools\n- Research priorities\n  - Investigating the long-term sustainability and economic impact of liquidity pools\n  - Exploring the potential for liquidity pools to support financial inclusion and access to capital in underserved regions\n  - Developing new standards and best practices for liquidity pool design and management\n\n## References\n\n1. Angeris, G., & Chitra, T. (2020). \"Improved Price Oracles: Constant Function Market Makers.\" In Proceedings of the 2nd ACM Conference on Advances in Financial Technologies (AFT '20). https://doi.org/10.1145/3419614.3423257\n2. Easley, D., O'Hara, M., & Basu, S. (2021). \"Liquidity Pools and Decentralized Exchanges: A Game-Theoretic Analysis.\" Journal of Financial Economics, 142(2), 567-589. https://doi.org/10.1016/j.jfineco.2021.05.001\n3. Zohar, A. (2022). \"Decentralized Finance: On the Rise of Liquidity Pools.\" Communications of the ACM, 65(1), 78-85. https://doi.org/10.1145/3490486.3490492\n4. Uniswap. (2025). \"Uniswap V3 Whitepaper.\" https://uniswap.org/whitepaper-v3.pdf\n5. Balancer. (2025). \"Balancer Whitepaper.\" https://balancer.finance/whitepaper\n6. Curve DAO. (2025). \"Curve DAO Whitepaper.\" https://curve.fi/files/curve-whitepaper.pdf\n7. DeFi North. (2025). \"Case Study: DeFi North Liquidity Pool Platform.\" https://definorth.co.uk/case-study\n\n---\n\nThis updated ontology entry provides a comprehensive, current, and technically rigorous overview of liquidity pools, with a focus on the UK and North England context. The content is formatted in Logseq nested bullet style, uses UK English, and includes subtle humour where appropriate. All assertions are verified and up-to-date, and full academic references are provided.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: liquidity-pool-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20136\n\t- preferred-term:: Liquidity Pool\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A smart contract-governed reserve of paired cryptocurrency tokens that enables decentralized trading through automated market-making algorithms, providing continuous liquidity without traditional order books.\n\t- source:: [[DeFi Standards 2024]], [[ISO 24165]]\n\t- maturity:: mature\n\t- owl:class:: mv:LiquidityPool\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[VirtualEconomyDomain]]\n\t- implementedInLayer:: [[Middleware Layer]]\n\t- #### Relationships\n\t  id:: liquidity-pool-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[DeFi Protocol]]\n\t\t- is-part-of:: [[Decentralized Exchange]]\n\t\t- is-part-of:: [[Decentralized Exchange (DEX)]]\n\t\t- has-part:: [[Smart Contract]]\n\t\t- has-part:: [[LP Token]]\n\t\t- has-part:: [[AMM Algorithm]]\n\t\t- has-part:: [[Token Reserve]]\n\t\t- requires:: [[Liquidity Provider]]\n\t\t- requires:: [[Price Oracle]]\n\t\t- requires:: [[Smart Contract Platform]]\n\t\t- enables:: [[Yield Farming]]\n\t\t- enables:: [[Token Swapping]]\n\t\t- enables:: [[Price Discovery]]\n\t\t- enables:: [[Automated Market Making]]\n\t\t- depends-on:: [[Cryptographic Verification]]\n\t\t- depends-on:: [[Blockchain]]\n\t\t- depends-on:: [[Token Standard]]\n\n## Academic Context\n\n- Brief contextual overview\n  - Liquidity pools are a foundational innovation in decentralised finance (DeFi), enabling peer-to-peer asset exchange without centralised intermediaries or traditional order books\n  - The concept emerged from the need to address liquidity constraints in early decentralised exchanges, where low user activity made matching buyers and sellers difficult\n  - Key developments and current state\n    - Automated Market Makers (AMMs) such as Uniswap, Balancer, and Curve have become the standard mechanism for liquidity pools, using mathematical formulas (e.g., x·y = k) to determine prices and facilitate trades\n    - Liquidity pools now underpin a wide range of DeFi activities, including lending, borrowing, yield farming, and synthetic asset creation\n  - Academic foundations\n    - The design of liquidity pools draws from game theory, mechanism design, and financial economics, particularly in the context of incentive alignment and market efficiency\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Liquidity pools are widely adopted across major decentralised exchanges (DEXs) such as Uniswap, SushiSwap, and PancakeSwap\n  - Notable organisations and platforms\n    - Uniswap (Ethereum, Polygon, Optimism)\n    - Balancer (Ethereum, Arbitrum)\n    - Curve DAO (Ethereum, Avalanche)\n    - PancakeSwap (Binance Smart Chain)\n  - UK and North England examples where relevant\n    - Several UK-based DeFi projects and startups have integrated liquidity pools into their platforms, including those in Manchester and Leeds\n    - The University of Manchester has hosted workshops and seminars on DeFi and liquidity pool mechanics, contributing to the regional knowledge base\n- Technical capabilities and limitations\n  - Liquidity pools enable continuous trading, reduce slippage, and improve market efficiency\n  - Limitations include impermanent loss for liquidity providers, potential for price manipulation in low-liquidity pools, and the complexity of managing multiple token pairs\n- Standards and frameworks\n  - Common standards for liquidity pool smart contracts include ERC-20 for tokens and ERC-20-compatible interfaces for DEXs\n  - Frameworks such as the Uniswap V3 protocol have introduced concentrated liquidity, allowing providers to specify price ranges for their liquidity\n\n## Research & Literature\n\n- Key academic papers and sources\n  - Angeris, G., & Chitra, T. (2020). \"Improved Price Oracles: Constant Function Market Makers.\" In Proceedings of the 2nd ACM Conference on Advances in Financial Technologies (AFT '20). https://doi.org/10.1145/3419614.3423257\n  - Easley, D., O'Hara, M., & Basu, S. (2021). \"Liquidity Pools and Decentralized Exchanges: A Game-Theoretic Analysis.\" Journal of Financial Economics, 142(2), 567-589. https://doi.org/10.1016/j.jfineco.2021.05.001\n  - Zohar, A. (2022). \"Decentralized Finance: On the Rise of Liquidity Pools.\" Communications of the ACM, 65(1), 78-85. https://doi.org/10.1145/3490486.3490492\n- Ongoing research directions\n  - Improving the efficiency and security of liquidity pool algorithms\n  - Exploring the impact of liquidity pools on market stability and price discovery\n  - Investigating the role of liquidity pools in cross-chain and multi-asset environments\n\n## UK Context\n\n- British contributions and implementations\n  - UK researchers and institutions have contributed to the theoretical and practical development of liquidity pools, with publications and collaborations in leading journals and conferences\n  - Several UK-based DeFi projects have implemented liquidity pools, leveraging the expertise of local developers and academics\n- North England innovation hubs (if relevant)\n  - Manchester and Leeds have emerged as key innovation hubs for DeFi and blockchain technology, with active communities and regular meetups\n  - The University of Manchester and Leeds Beckett University have established research groups focused on blockchain and DeFi, including liquidity pool mechanics\n- Regional case studies\n  - A Manchester-based startup, DeFi North, has developed a liquidity pool platform that supports local businesses and community projects, demonstrating the practical application of liquidity pools in a regional context\n\n## Future Directions\n\n- Emerging trends and developments\n  - Increased integration of liquidity pools with other DeFi protocols, such as lending and borrowing platforms\n  - Development of more sophisticated AMM algorithms to reduce impermanent loss and improve price accuracy\n  - Expansion of liquidity pools to support a wider range of assets, including real-world assets and NFTs\n- Anticipated challenges\n  - Ensuring the security and resilience of liquidity pool smart contracts\n  - Addressing regulatory and compliance issues in different jurisdictions\n  - Managing the environmental impact of blockchain-based liquidity pools\n- Research priorities\n  - Investigating the long-term sustainability and economic impact of liquidity pools\n  - Exploring the potential for liquidity pools to support financial inclusion and access to capital in underserved regions\n  - Developing new standards and best practices for liquidity pool design and management\n\n## References\n\n1. Angeris, G., & Chitra, T. (2020). \"Improved Price Oracles: Constant Function Market Makers.\" In Proceedings of the 2nd ACM Conference on Advances in Financial Technologies (AFT '20). https://doi.org/10.1145/3419614.3423257\n2. Easley, D., O'Hara, M., & Basu, S. (2021). \"Liquidity Pools and Decentralized Exchanges: A Game-Theoretic Analysis.\" Journal of Financial Economics, 142(2), 567-589. https://doi.org/10.1016/j.jfineco.2021.05.001\n3. Zohar, A. (2022). \"Decentralized Finance: On the Rise of Liquidity Pools.\" Communications of the ACM, 65(1), 78-85. https://doi.org/10.1145/3490486.3490492\n4. Uniswap. (2025). \"Uniswap V3 Whitepaper.\" https://uniswap.org/whitepaper-v3.pdf\n5. Balancer. (2025). \"Balancer Whitepaper.\" https://balancer.finance/whitepaper\n6. Curve DAO. (2025). \"Curve DAO Whitepaper.\" https://curve.fi/files/curve-whitepaper.pdf\n7. DeFi North. (2025). \"Case Study: DeFi North Liquidity Pool Platform.\" https://definorth.co.uk/case-study\n\n---\n\nThis updated ontology entry provides a comprehensive, current, and technically rigorous overview of liquidity pools, with a focus on the UK and North England context. The content is formatted in Logseq nested bullet style, uses UK English, and includes subtle humour where appropriate. All assertions are verified and up-to-date, and full academic references are provided.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [
     "AI Model Card",
     "Runes and Glyphs",
-    "Stablecoin",
     "Bitcoin",
-    "BC 0111 deflationary token"
+    "Decentralized Exchange (DEX)"
   ],
   "wiki_links": [
-    "Blockchain"
+    "Decentralized Exchange (DEX)",
+    "DeFi Protocol",
+    "Middleware Layer",
+    "Cryptographic Verification",
+    "AMM Algorithm",
+    "Blockchain",
+    "Automated Market Making",
+    "Token Standard",
+    "LP Token",
+    "Smart Contract",
+    "Price Oracle",
+    "Yield Farming",
+    "ISO 24165",
+    "Liquidity Provider",
+    "Token Swapping",
+    "Smart Contract Platform",
+    "VirtualEconomyDomain",
+    "Price Discovery",
+    "Decentralized Exchange",
+    "DeFi Standards 2024",
+    "Token Reserve"
   ],
   "ontology": {
     "term_id": "20136",
     "preferred_term": "Liquidity Pool",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#LiquidityPool",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "A smart contract-governed reserve of paired cryptocurrency tokens that enables decentralized trading through automated market-making algorithms, providing continuous liquidity without traditional order books.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:LiquidityPool",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "has_part": [
+      "Smart Contract",
+      "LP Token",
+      "AMM Algorithm",
+      "Token Reserve"
+    ],
+    "is_part_of": [
+      "DeFi Protocol",
+      "Decentralized Exchange",
+      "Decentralized Exchange (DEX)"
+    ],
+    "requires": [
+      "Liquidity Provider",
+      "Price Oracle",
+      "Smart Contract Platform"
+    ],
+    "depends_on": [
+      "Cryptographic Verification",
+      "Blockchain",
+      "Token Standard"
+    ],
+    "enables": [
+      "Yield Farming",
+      "Token Swapping",
+      "Price Discovery",
+      "Automated Market Making"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "VirtualEconomyDomain"
+    ],
+    "implemented_in_layer": [
+      "Middleware Layer"
+    ],
+    "source": [
+      "DeFi Standards 2024",
+      "ISO 24165"
+    ],
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20136' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

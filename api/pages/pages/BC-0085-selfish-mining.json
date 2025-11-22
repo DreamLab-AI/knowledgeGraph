@@ -1,33 +1,33 @@
 {
   "id": "BC-0085-selfish-mining",
   "title": "Selfish Mining",
-  "content": "- ### OntologyBlock\n  id:: selfish-mining-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0085\n    - preferred-term:: Selfish Mining\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Strategic block withholding within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:SelfishMining\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### Relationships\n    id:: relationships\n    - is-subclass-of:: [[Mining]]\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Networkcomponent]] via is-subclass-of\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: selfish-mining-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0085\n\t- preferred-term:: Selfish Mining\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Strategic block withholding within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:SelfishMining\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[CryptographicDomain]]\n\t- #### Relationships\n\t  id:: selfish-mining-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Mining]]\n\t\t- bridges-to:: [[Networkcomponent]]\n\t\t- bridges-to:: [[BlockchainEntity]]",
   "backlinks": [],
   "wiki_links": [
+    "NIST NISTIR",
+    "BlockchainEntity",
+    "CryptographicDomain",
     "Mining",
     "ISO/IEC 23257:2021",
-    "CryptographicDomain",
     "Networkcomponent",
-    "NIST NISTIR",
-    "IEEE 2418.1",
-    "BlockchainEntity"
+    "IEEE 2418.1"
   ],
   "ontology": {
     "term_id": "BC-0085",
     "preferred_term": "Selfish Mining",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/blockchain#SelfishMining",
-    "source_domain": "blockchain",
-    "domain": "blockchain",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
     "definition": "Strategic block withholding within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
     "scope_note": null,
     "status": "complete",
     "maturity": "mature",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-10-28",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "bc:SelfishMining",
@@ -43,10 +43,7 @@
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [
-      "Networkcomponent via is",
-      "BlockchainEntity via is"
-    ],
+    "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
@@ -58,10 +55,17 @@
       "IEEE 2418.1",
       "NIST NISTIR"
     ],
+    "other_relationships": {
+      "bridges-to": [
+        "Networkcomponent",
+        "BlockchainEntity"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+        "Missing required property: source-domain",
+        "Missing required property: last-updated"
       ]
     }
   }

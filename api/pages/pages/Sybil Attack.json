@@ -1,56 +1,55 @@
 {
   "id": "Sybil Attack",
   "title": "Sybil Attack",
-  "content": "- ### OntologyBlock\n  id:: sybil-attack-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0078\n\n    - filename-history:: [\"BC-0078-sybil-attack.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[BlockchainTechnology]]\n    - term-id:: BC-0078\n    - preferred-term:: Sybil Attack\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Multiple identity attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:SybilAttack\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n    - bridges-to:: [[Networkcomponent]] via is-subclass-of\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: sybil-attack-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0078\n\t- preferred-term:: Sybil Attack\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Multiple identity attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- implementedInLayer:: [[SecurityLayer]]\n\t- #### Relationships\n\t  id:: sybil-attack-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Entity]]\n\t\t- is-subclass-of:: [[NetworkComponent]]",
   "backlinks": [],
   "wiki_links": [
-    "ISO/IEC 23257:2021",
-    "CryptographicDomain",
-    "Networkcomponent",
     "NIST NISTIR",
-    "BlockchainTechnology",
-    "IEEE 2418.1",
-    "BlockchainEntity"
+    "SecurityLayer",
+    "NetworkComponent",
+    "Blockchain Entity",
+    "ISO/IEC 23257:2021",
+    "IEEE 2418.1"
   ],
   "ontology": {
     "term_id": "BC-0078",
     "preferred_term": "Sybil Attack",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/blockchain#SybilAttack",
-    "source_domain": "blockchain",
-    "domain": "blockchain",
-    "domain_full_name": "",
+    "iri": null,
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
     "definition": "Multiple identity attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
     "scope_note": null,
     "status": "complete",
     "maturity": "mature",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-10-28",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": "bc:SybilAttack",
-    "owl_physicality": "VirtualEntity",
-    "owl_role": "Object",
-    "owl_inferred_class": "bc:VirtualObject",
-    "is_subclass_of": [],
+    "owl_class": null,
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Blockchain Entity",
+      "NetworkComponent"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [
-      "BlockchainEntity via is",
-      "Networkcomponent via is"
-    ],
+    "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [
-      "CryptographicDomain"
+    "belongs_to_domain": [],
+    "implemented_in_layer": [
+      "SecurityLayer"
     ],
-    "implemented_in_layer": [],
     "source": [
       "ISO/IEC 23257:2021",
       "IEEE 2418.1",
@@ -59,8 +58,11 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: owl:class",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
       ]
     }
   }

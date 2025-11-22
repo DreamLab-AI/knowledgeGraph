@@ -1,0 +1,55 @@
+{
+  "id": "Robot Accuracy",
+  "title": "rb 0035 accuracy",
+  "content": "- ### OntologyBlock\n  id:: rb-0035-accuracy-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0035\n\t- preferred-term:: rb 0035 accuracy\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- definition:: ### Primary Definition\n**Accuracy** - Difference between commanded and actual position\n\t- maturity:: draft\n\t- owl:class:: mv:rb0035accuracy\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n- ## About rb 0035 accuracy\n\t- ### Primary Definition\n**Accuracy** - Difference between commanded and actual position\n\t-\n\t- ### Original Content\n\t  collapsed:: true\n\t\t- ```\n# RB-0035: Accuracy\n\t\t  \n\t\t  ## Metadata\n\t\t  - **Term ID**: RB-0035\n\t\t  - **Term Type**: Core Concept\n\t\t  - **Classification**: Fundamental Concepts\n\t\t  - **Priority**: 1 (Foundational)\n\t\t  - **Authority Score**: 0.95\n\t\t  - **ISO Reference**: ISO 8373:2021\n\t\t  - **Version**: 1.0.0\n\t\t  - **Last Updated**: 2025-10-28\n\t\t  \n\t\t  ## Definition\n\t\t  \n\t\t  ### Primary Definition\n\t\t  **Accuracy** - Difference between commanded and actual position\n\t\t  \n\t\t  ### Standards Context\n\t\t  Defined according to ISO 8373:2021 and related international robotics standards.\n\t\t  \n\t\t  ### Key Characteristics\n\t\t  1. Core property of robotics systems\n\t\t  2. Standardised definition across implementations\n\t\t  3. Measurable and verifiable attributes\n\t\t  4. Essential for safety and performance\n\t\t  5. Industry-wide recognition and adoption\n\t\t  \n\t\t  ## Formal Ontology (OWL Functional Syntax)\n\t\t  \n\t\t  ```clojure\n\t\t  (Declaration (Class :Accuracy))\n\t\t  (SubClassOf :Accuracy :Robot)\n\t\t  \n\t\t  (AnnotationAssertion rdfs:label :Accuracy \"Accuracy\"@en)\n\t\t  (AnnotationAssertion rdfs:comment :Accuracy\n\t\t    \"Accuracy - Foundational robotics concept\"@en)\n\t\t  (AnnotationAssertion :termID :Accuracy \"RB-0035\"^^xsd:string)\n\t\t  \n\t\t  (Declaration (ObjectProperty :relates To))\n\t\t  (ObjectPropertyDomain :relatesTo :Accuracy)\n\t\t  \n\t\t  (Declaration (DataProperty :hasProperty))\n\t\t  (DataPropertyDomain :hasProperty :Accuracy)\n\t\t  (DataPropertyRange :hasProperty xsd:string)\n\t\t  ```\n\t\t  \n\t\t  ## Relationships\n\t\t  \n\t\t  ### Parent Classes\n\t\t  - `Robot`: Primary classification\n\t\t  \n\t\t  ### Related Concepts\n\t\t  - Related robotics concepts and systems\n\t\t  - Cross-references to other ontology terms\n\t\t  - Integration with metaverse ontology\n\t\t  \n\t\t  ## Use Cases\n\t\t  \n\t\t  ### Industrial Applications\n\t\t  1. Manufacturing automation\n\t\t  2. Quality control systems\n\t\t  3. Process optimization\n\t\t  \n\t\t  ### Service Applications\n\t\t  1. Healthcare robotics\n\t\t  2. Logistics and warehousing\n\t\t  3. Consumer robotics\n\t\t  \n\t\t  ### Research Applications\n\t\t  1. Academic research platforms\n\t\t  2. Algorithm development\n\t\t  3. System integration studies\n\t\t  \n\t\t  ## Standards References\n\t\t  \n\t\t  ### Primary Standards\n\t\t  1. **ISO 8373:2021**: Primary reference standard\n\t\t  2. **ISO 8373:2021**: Robotics vocabulary\n\t\t  3. **Related IEEE standards**: Implementation guidelines\n\t\t  \n\t\t  ## Validation Criteria\n\t\t  \n\t\t  ### Conformance Requirements\n\t\t  1. ✓ Meets ISO 8373:2021 requirements\n\t\t  2. ✓ Documented implementation\n\t\t  3. ✓ Verifiable performance metrics\n\t\t  4. ✓ Safety compliance demonstrated\n\t\t  5. ✓ Industry best practices followed\n\t\t  \n\t\t  ## Implementation Notes\n\t\t  \n\t\t  ### Design Considerations\n\t\t  - System integration requirements\n\t\t  - Performance specifications\n\t\t  - Safety considerations\n\t\t  - Maintenance procedures\n\t\t  \n\t\t  ### Common Patterns\n\t\t  ```yaml\n\t\t  implementation:\n\t\t    standards_compliance: true\n\t\t    verification_method: standardised_testing\n\t\t    documentation_level: comprehensive\n\t\t  ```\n\t\t  \n\t\t  ## Cross-References\n\t\t  \n\t\t  ### Metaverse Ontology Integration\n\t\t  - Virtual representation systems\n\t\t  - Digital twin integration\n\t\t  - Simulation environments\n\t\t  \n\t\t  ### Domain Ontologies\n\t\t  - Manufacturing systems\n\t\t  - Control systems\n\t\t  - Safety systems\n\t\t  \n\t\t  ## Future Directions\n\t\t  \n\t\t  ### Emerging Trends\n\t\t  1. AI and machine learning integration\n\t\t  2. Advanced sensing capabilities\n\t\t  3. Improved safety systems\n\t\t  4. Enhanced human-robot collaboration\n\t\t  5. Standardisation advancements\n\t\t  \n\t\t  ---\n\t\t  \n\t\t  **Version History**\n\t\t  - 1.0.0 (2025-10-28): Initial foundational definition\n\t\t  \n\t\t  **Contributors**: Robotics Ontology Working Group\n\t\t  **License**: CC BY 4.0\n\t\t  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0035`\n\t\t  \n\t\t  ```\n\n\n## Academic Context\n\n- **Overview:** Accuracy in measurement science refers to the degree to which a measured value conforms to the true or accepted standard value. It encompasses both *trueness* (closeness of the average of measurements to the true value) and *precision* (repeatability or consistency of measurements) as defined in ISO 5725-1:2023[7].\n  - **Key developments:** The distinction between accuracy and precision has been clarified in recent standards, emphasising that accuracy is a composite concept involving both systematic and random errors.\n  - **Foundations:** Rooted in metrology and statistics, accuracy assessment underpins reliable data collection across scientific disciplines, ensuring measurement validity and comparability.\n\n## Current Landscape (2025)\n\n- **Industry adoption:** Accuracy metrics are integral in fields ranging from manufacturing quality control to environmental monitoring and astrophysics. Calibration protocols and uncertainty quantification are standard practice.\n  - **Notable organisations:** Precision measurement firms like Precisa continue to lead, providing instruments and expertise to ensure measurement accuracy[1].\n  - **UK and North England:** Universities such as the University of Manchester and University of Leeds actively research measurement accuracy in applied physics and engineering contexts. Industrial hubs in Sheffield and Newcastle incorporate accuracy standards in advanced manufacturing and materials testing.\n- **Technical capabilities and limitations:** Modern instrumentation achieves high accuracy through rigorous calibration against traceable standards, yet limitations persist due to environmental factors, instrument drift, and incomplete modelling of complex systems[2].\n- **Standards and frameworks:** ISO 5725 series remains the authoritative framework for accuracy evaluation, complemented by regional standards and sector-specific guidelines (e.g., EN-ISO 354:2003 for acoustics)[3][7].\n\n## Research & Literature\n\n- **Key papers:**\n  - Pober et al. (2016) discuss calibration accuracy in astrophysical signal detection, highlighting challenges from incomplete source models and their impact on measurement fidelity[2].\n  - Allan, R.T., and Vercammen, M.L.S. (2023) provide detailed methodologies for acoustic absorption measurement accuracy in reverberation chambers, illustrating repeatability and reproducibility considerations[3].\n- **Ongoing research:** Focuses on improving calibration techniques, uncertainty quantification, and adaptive algorithms to mitigate measurement errors in dynamic environments.\n\n## UK Context\n\n- **British contributions:** The UK has a strong tradition in metrology, with institutions like the National Physical Laboratory (NPL) advancing accuracy standards and calibration services.\n- **North England innovation hubs:** Manchester’s National Graphene Institute and Leeds’ Institute for Transport Studies incorporate precise measurement techniques in materials science and transport modelling, respectively.\n- **Regional case studies:** Sheffield’s advanced manufacturing sector employs rigorous accuracy protocols to maintain quality in aerospace component fabrication.\n\n## Future Directions\n\n- **Emerging trends:** Integration of AI and machine learning to enhance real-time accuracy assessment and error correction; development of smart sensors with self-calibration capabilities.\n- **Anticipated challenges:** Balancing cost and complexity of high-accuracy systems; addressing accuracy in increasingly miniaturised and complex measurement environments.\n- **Research priorities:** Refining uncertainty models, improving calibration standards for novel materials and quantum technologies, and expanding accessibility of high-accuracy measurement tools.\n\n## References\n\n1. Precisa. (2025). *The Difference between Accuracy and Precision Measurements*. Precisa Blog.  \n2. Pober, J.C., et al. (2016). Calibration requirements for detecting the 21 cm epoch of reionization signal. *Monthly Notices of the Royal Astronomical Society*, 461(3), 3135–3144. https://doi.org/10.1093/mnras/stw1575  \n3. Allan, R.T., & Vercammen, M.L.S. (2023). Measurement of sound absorption in a reverberation room according to EN-ISO 354:2003. *Greenmood Laboratory for Acoustics Report*, A 3544-7E-RA-001.  \n7. ISO. (2023). *ISO 5725-1:2023 Accuracy (trueness and precision) of measurement methods and results — Part 1: General principles and definitions*. International Organization for Standardization.\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "MetaverseDomain"
+  ],
+  "ontology": {
+    "term_id": "RB-0035",
+    "preferred_term": "rb 0035 accuracy",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#rb0035accuracy",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "### Primary Definition",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:rb0035accuracy",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

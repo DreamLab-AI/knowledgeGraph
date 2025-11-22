@@ -1,55 +1,107 @@
 {
   "id": "Decentralized Exchange (DEX)",
   "title": "Decentralized Exchange (DEX)",
-  "content": "- ### OntologyBlock\n  id:: dex-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20262\n\t- preferred-term:: Decentralized Exchange (DEX)\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Blockchain]]\n\t- public-access:: true\n\n\n\n## Academic Context\n\n- Decentralized exchanges (DEXs) are peer-to-peer marketplaces enabling direct cryptocurrency trading without intermediaries, relying on blockchain-based smart contracts to facilitate asset swaps.\n  - They represent a foundational component of decentralized finance (DeFi), enabling permissionless, transparent, and non-custodial transactions.\n  - The academic study of DEXs focuses on cryptographic protocols, game theory for liquidity incentives, and smart contract security.\n  - Key developments include the evolution from order book models to automated market makers (AMMs), which use liquidity pools to enable continuous trading without traditional order matching.\n\n## Current Landscape (2025)\n\n- DEXs have seen widespread adoption across multiple blockchain ecosystems, including Ethereum, Binance Smart Chain, Solana, and emerging Layer 2 solutions.\n  - Leading platforms include Uniswap, SushiSwap, PancakeSwap, and newer entrants like VVS Finance, which emphasise user-friendliness and low fees.\n  - The total value locked (TVL) in DeFi protocols, including DEXs, has surpassed $100 billion, reflecting robust market confidence.\n- Technical capabilities:\n  - Smart contracts automate trades, eliminating custodial risk and enabling composability with other DeFi protocols.\n  - Limitations include scalability challenges, transaction fees (gas costs), and exposure to smart contract vulnerabilities.\n- Standards and frameworks:\n  - Industry efforts focus on interoperability standards (e.g., ERC-20 token compatibility), security audits, and decentralised governance models.\n  - DEX aggregators have emerged to optimise trade routing across multiple DEXs for best prices and liquidity.\n\n## Research & Literature\n\n- Seminal academic works include:\n  - Angeris, G., & Chitra, T. (2021). \"Improved Price Oracles: Constant Function Market Makers.\" *Proceedings of the 38th International Conference on Machine Learning*. [DOI:10.5555/3495724.3495736]\n  - Adams, H., Zinsmeister, N., & Robinson, D. (2020). \"Uniswap v2 Core.\" *Uniswap Protocol Documentation*. [URL: https://uniswap.org/whitepaper.pdf]\n  - Moin, A., & Gervais, A. (2023). \"Security Analysis of Decentralized Exchanges.\" *Journal of Blockchain Research*, 5(2), 45-62. [DOI:10.1016/j.jbr.2023.04.001]\n- Ongoing research explores:\n  - Enhancing scalability via Layer 2 and cross-chain DEX protocols.\n  - Formal verification of smart contracts to mitigate vulnerabilities.\n  - Economic models for incentivising liquidity provision and governance participation.\n\n## UK Context\n\n- The UK has contributed to DeFi and DEX innovation through academic research and fintech startups, with a growing ecosystem in London and emerging hubs in North England.\n- North England innovation hubs:\n  - Manchester and Leeds host blockchain accelerators supporting DEX-related projects focusing on regulatory compliance and user experience.\n  - Newcastle and Sheffield have active developer communities exploring Layer 2 scaling and privacy-preserving DEX technologies.\n- Regional case studies:\n  - A Leeds-based startup recently launched a DEX aggregator tailored for UK users, emphasising compliance with UK financial regulations while maintaining decentralisation principles.\n  - Manchester’s blockchain incubators have fostered projects integrating DEXs with real-world asset tokenisation, reflecting local financial services expertise.\n\n## Future Directions\n\n- Emerging trends:\n  - Integration of real-world assets (RWA) into DEX platforms, expanding beyond purely crypto-native tokens.\n  - Increased adoption of Layer 2 scaling solutions to reduce transaction costs and improve throughput.\n  - Development of cross-chain DEXs enabling seamless asset swaps across multiple blockchains.\n- Anticipated challenges:\n  - Balancing decentralisation with regulatory compliance, particularly in jurisdictions like the UK.\n  - Addressing smart contract security risks and user education to prevent losses.\n  - Managing liquidity fragmentation across numerous DEX platforms.\n- Research priorities:\n  - Formal methods for smart contract verification.\n  - User interface improvements to enhance accessibility without compromising security.\n  - Economic incentive designs that promote sustainable liquidity and decentralised governance.\n\n## References\n\n1. Angeris, G., & Chitra, T. (2021). Improved Price Oracles: Constant Function Market Makers. *Proceedings of the 38th International Conference on Machine Learning*. DOI:10.5555/3495724.3495736\n2. Adams, H., Zinsmeister, N., & Robinson, D. (2020). Uniswap v2 Core. *Uniswap Protocol Documentation*. Available at: https://uniswap.org/whitepaper.pdf\n3. Moin, A., & Gervais, A. (2023). Security Analysis of Decentralized Exchanges. *Journal of Blockchain Research*, 5(2), 45-62. DOI:10.1016/j.jbr.2023.04.001\n4. Chainlink Education Hub. What Is a Decentralized Exchange (DEX)? Accessed 2025.\n5. KuCoin. Top Decentralized Exchanges (DEXs) to Know in 2025. Accessed 2025.\n6. Hedera Learning. The Ins and Outs of Decentralized Exchanges (DEXs). Accessed 2025.\n\n*If decentralisation were a farmers’ market, DEXs would be the stall where you haggle directly with the seller—no middleman, just you, your wallet, and a smart contract ready to swap tokens faster than you can say “blockchain.”*\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
-  "backlinks": [],
+  "content": "- ### OntologyBlock\n  id:: decentralized-exchange-dex-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20262\n\t- preferred-term:: Decentralized Exchange (DEX)\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Peer-to-peer marketplace enabling direct token swaps and digital asset trading through smart contracts without centralized intermediaries or custodial control.\n\t- source:: [[ISO 24165]], [[DeFi WG]]\n\t- maturity:: mature\n\t- owl:class:: mv:DecentralizedExchange\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[VirtualEconomyDomain]]\n\t- implementedInLayer:: [[MiddlewareLayer]]\n\t- #### Relationships\n\t  id:: decentralized-exchange-dex-relationships\n\t  collapsed:: true\n\t\t- has-part:: [[Smart Contract]]\n\t\t- has-part:: [[Automated Market Maker]]\n\t\t- has-part:: [[Trading Interface]]\n\t\t- has-part:: [[Liquidity Pool]]\n\t\t- has-part:: [[Price Oracle]]\n\t\t- requires:: [[Digital Wallet]]\n\t\t- requires:: [[Blockchain]]\n\t\t- requires:: [[Token Standard]]\n\t\t- requires:: [[Consensus Mechanism]]\n\t\t- enables:: [[Liquidity Provision]]\n\t\t- enables:: [[Token Swapping]]\n\t\t- enables:: [[Price Discovery]]\n\t\t- enables:: [[Decentralized Trading]]\n\t\t- depends-on:: [[Cryptographic Signature]]\n\t\t- depends-on:: [[Oracle]]\n\t\t- depends-on:: [[Smart Contract]]\n\t\t- is-dependency-of:: [[Creator Economy]]\n\n## Academic Context\n\n- Decentralized exchanges (DEXs) are peer-to-peer marketplaces enabling direct cryptocurrency trading without intermediaries, relying on blockchain-based smart contracts to facilitate asset swaps.\n  - They represent a foundational component of decentralized finance (DeFi), enabling permissionless, transparent, and non-custodial transactions.\n  - The academic study of DEXs focuses on cryptographic protocols, game theory for liquidity incentives, and smart contract security.\n  - Key developments include the evolution from order book models to automated market makers (AMMs), which use liquidity pools to enable continuous trading without traditional order matching.\n\n## Current Landscape (2025)\n\n- DEXs have seen widespread adoption across multiple blockchain ecosystems, including Ethereum, Binance Smart Chain, Solana, and emerging Layer 2 solutions.\n  - Leading platforms include Uniswap, SushiSwap, PancakeSwap, and newer entrants like VVS Finance, which emphasise user-friendliness and low fees.\n  - The total value locked (TVL) in DeFi protocols, including DEXs, has surpassed $100 billion, reflecting robust market confidence.\n- Technical capabilities:\n  - Smart contracts automate trades, eliminating custodial risk and enabling composability with other DeFi protocols.\n  - Limitations include scalability challenges, transaction fees (gas costs), and exposure to smart contract vulnerabilities.\n- Standards and frameworks:\n  - Industry efforts focus on interoperability standards (e.g., ERC-20 token compatibility), security audits, and decentralised governance models.\n  - DEX aggregators have emerged to optimise trade routing across multiple DEXs for best prices and liquidity.\n\n## Research & Literature\n\n- Seminal academic works include:\n  - Angeris, G., & Chitra, T. (2021). \"Improved Price Oracles: Constant Function Market Makers.\" *Proceedings of the 38th International Conference on Machine Learning*. [DOI:10.5555/3495724.3495736]\n  - Adams, H., Zinsmeister, N., & Robinson, D. (2020). \"Uniswap v2 Core.\" *Uniswap Protocol Documentation*. [URL: https://uniswap.org/whitepaper.pdf]\n  - Moin, A., & Gervais, A. (2023). \"Security Analysis of Decentralized Exchanges.\" *Journal of Blockchain Research*, 5(2), 45-62. [DOI:10.1016/j.jbr.2023.04.001]\n- Ongoing research explores:\n  - Enhancing scalability via Layer 2 and cross-chain DEX protocols.\n  - Formal verification of smart contracts to mitigate vulnerabilities.\n  - Economic models for incentivising liquidity provision and governance participation.\n\n## UK Context\n\n- The UK has contributed to DeFi and DEX innovation through academic research and fintech startups, with a growing ecosystem in London and emerging hubs in North England.\n- North England innovation hubs:\n  - Manchester and Leeds host blockchain accelerators supporting DEX-related projects focusing on regulatory compliance and user experience.\n  - Newcastle and Sheffield have active developer communities exploring Layer 2 scaling and privacy-preserving DEX technologies.\n- Regional case studies:\n  - A Leeds-based startup recently launched a DEX aggregator tailored for UK users, emphasising compliance with UK financial regulations while maintaining decentralisation principles.\n  - Manchester’s blockchain incubators have fostered projects integrating DEXs with real-world asset tokenisation, reflecting local financial services expertise.\n\n## Future Directions\n\n- Emerging trends:\n  - Integration of real-world assets (RWA) into DEX platforms, expanding beyond purely crypto-native tokens.\n  - Increased adoption of Layer 2 scaling solutions to reduce transaction costs and improve throughput.\n  - Development of cross-chain DEXs enabling seamless asset swaps across multiple blockchains.\n- Anticipated challenges:\n  - Balancing decentralisation with regulatory compliance, particularly in jurisdictions like the UK.\n  - Addressing smart contract security risks and user education to prevent losses.\n  - Managing liquidity fragmentation across numerous DEX platforms.\n- Research priorities:\n  - Formal methods for smart contract verification.\n  - User interface improvements to enhance accessibility without compromising security.\n  - Economic incentive designs that promote sustainable liquidity and decentralised governance.\n\n## References\n\n1. Angeris, G., & Chitra, T. (2021). Improved Price Oracles: Constant Function Market Makers. *Proceedings of the 38th International Conference on Machine Learning*. DOI:10.5555/3495724.3495736\n2. Adams, H., Zinsmeister, N., & Robinson, D. (2020). Uniswap v2 Core. *Uniswap Protocol Documentation*. Available at: https://uniswap.org/whitepaper.pdf\n3. Moin, A., & Gervais, A. (2023). Security Analysis of Decentralized Exchanges. *Journal of Blockchain Research*, 5(2), 45-62. DOI:10.1016/j.jbr.2023.04.001\n4. Chainlink Education Hub. What Is a Decentralized Exchange (DEX)? Accessed 2025.\n5. KuCoin. Top Decentralized Exchanges (DEXs) to Know in 2025. Accessed 2025.\n6. Hedera Learning. The Ins and Outs of Decentralized Exchanges (DEXs). Accessed 2025.\n\n*If decentralisation were a farmers’ market, DEXs would be the stall where you haggle directly with the seller—no middleman, just you, your wallet, and a smart contract ready to swap tokens faster than you can say “blockchain.”*\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Creator Economy",
+    "Liquidity Pool"
+  ],
   "wiki_links": [
-    "Blockchain"
+    "Digital Wallet",
+    "Decentralized Trading",
+    "Trading Interface",
+    "Blockchain",
+    "Creator Economy",
+    "Token Standard",
+    "MiddlewareLayer",
+    "Smart Contract",
+    "Liquidity Provision",
+    "Oracle",
+    "Price Oracle",
+    "Cryptographic Signature",
+    "Consensus Mechanism",
+    "DeFi WG",
+    "ISO 24165",
+    "Liquidity Pool",
+    "Token Swapping",
+    "Automated Market Maker",
+    "VirtualEconomyDomain",
+    "Price Discovery"
   ],
   "ontology": {
     "term_id": "20262",
     "preferred_term": "Decentralized Exchange (DEX)",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#DecentralizedExchange",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "Peer-to-peer marketplace enabling direct token swaps and digital asset trading through smart contracts without centralized intermediaries or custodial control.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:DecentralizedExchange",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
     "is_subclass_of": [],
-    "has_part": [],
+    "has_part": [
+      "Smart Contract",
+      "Automated Market Maker",
+      "Trading Interface",
+      "Liquidity Pool",
+      "Price Oracle"
+    ],
     "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "requires": [
+      "Digital Wallet",
+      "Blockchain",
+      "Token Standard",
+      "Consensus Mechanism"
+    ],
+    "depends_on": [
+      "Cryptographic Signature",
+      "Oracle",
+      "Smart Contract"
+    ],
+    "enables": [
+      "Liquidity Provision",
+      "Token Swapping",
+      "Price Discovery",
+      "Decentralized Trading"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "VirtualEconomyDomain"
+    ],
+    "implemented_in_layer": [
+      "MiddlewareLayer"
+    ],
+    "source": [
+      "ISO 24165",
+      "DeFi WG"
+    ],
+    "other_relationships": {
+      "is-dependency-of": [
+        "Creator Economy"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20262' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

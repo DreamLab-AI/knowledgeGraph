@@ -1,34 +1,34 @@
 {
   "id": "Smart Contract Platform",
   "title": "Smart Contract Platform",
-  "content": "- ### OntologyBlock\n  id:: smartcontractplatform-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0507\n    - filename-history:: [\"BC-0507-smartcontractplatform.md\"]\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0507\n    - preferred-term:: Smart Contract Platform\n    - source-domain:: metaverse\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: A blockchain network providing infrastructure for deploying and executing smart contracts, with virtual machine execution environment, support for programming languages, and token standards.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:SmartContractPlatform\n    - is-subclass-of:: [[Blockchain]]\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### OWL Restrictions\n    \n\n  - #### CrossDomainBridges\n    - bridges-from:: [[VirtualSecuritiesOfferingVso]] via requires\n    - bridges-from:: [[SmartRoyaltyContract]] via requires\n    - bridges-from:: [[TransactionStandard]] via depends-on\n    - bridges-from:: [[SocialTokenEconomy]] via requires\n    - bridges-from:: [[LiquidityPool]] via requires\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: smartcontractplatform-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0507\n\t- preferred-term:: Smart Contract Platform\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A blockchain network providing infrastructure for deploying and executing smart contracts, with virtual machine execution environment, support for programming languages, and token standards.\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: bc:SmartContractPlatform\n\t- belongsToDomain:: [[Blockchain]]",
   "backlinks": [
-    "RGB and Client Side Validation"
+    "Liquidity Pool",
+    "RGB and Client Side Validation",
+    "Social Token Economy",
+    "Transaction Standard",
+    "Virtual Securities Offering (VSO)",
+    "Smart Royalty Contract"
   ],
   "wiki_links": [
-    "LiquidityPool",
-    "VirtualSecuritiesOfferingVso",
-    "Blockchain",
-    "SmartRoyaltyContract",
-    "TransactionStandard",
-    "SocialTokenEconomy"
+    "Blockchain"
   ],
   "ontology": {
     "term_id": "BC-0507",
     "preferred_term": "Smart Contract Platform",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/blockchain#SmartContractPlatform",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
     "definition": "A blockchain network providing infrastructure for deploying and executing smart contracts, with virtual machine execution environment, support for programming languages, and token standards.",
     "scope_note": null,
     "status": "complete",
     "maturity": "established",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-11-13",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "bc:SmartContractPlatform",
@@ -43,13 +43,7 @@
     "enables": [],
     "relates_to": [],
     "bridges_to": [],
-    "bridges_from": [
-      "VirtualSecuritiesOfferingVso via requires",
-      "SmartRoyaltyContract via requires",
-      "TransactionStandard via depends",
-      "SocialTokenEconomy via requires",
-      "LiquidityPool via requires"
-    ],
+    "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
       "Blockchain"
@@ -61,10 +55,11 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'bc' doesn't match source-domain 'metaverse'"
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

@@ -1,42 +1,30 @@
 {
   "id": "AI-Generated Content Disclosure",
   "title": "AI-Generated Content Disclosure",
-  "content": "- ### OntologyBlock\n  id:: ai-generated-content-disclosure-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0421\n\t- source-domain:: ai\n\t- status:: complete\n\t- public-access:: true\n\t- preferred-term:: AI-Generated Content Disclosure\n\t- definition:: Mandatory transparency requirement specifying that content created wholly or partially by AI systems must be explicitly labeled with origin metadata for user awareness and regulatory compliance.\n\t- maturity:: mature\n\t- source:: [[EU AI Act]], [[IEEE 7001]]\n\t- owl:class:: mv:AIGeneratedContentDisclosure\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: mv:VirtualProcess\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[TrustAndGovernanceDomain]]\n\t- implementedInLayer:: [[MiddlewareLayer]]\n\t- #### Relationships\n\t  id:: ai-generated-content-disclosure-relationships\n\t\t- has-part:: [[Content Labeling Metadata]], [[AI Origin Declaration]], [[Disclosure Enforcement Mechanism]], [[Transparency Notice]]\n\t\t- is-part-of:: [[AI Transparency Framework]]\n\t\t- requires:: [[Content Authentication]], [[Metadata Standards]], [[Provenance Tracking]]\n\t\t- depends-on:: [[EU AI Act]], [[IEEE 7001]], [[C2PA Standard]]\n\t\t- enables:: [[User Awareness]], [[Regulatory Compliance]], [[Trust Building]], [[Informed Consent]]\n\t- #### OWL Axioms\n\t  id:: ai-generated-content-disclosure-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:AIGeneratedContentDisclosure))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:AIGeneratedContentDisclosure mv:VirtualEntity)\n\t\t  SubClassOf(mv:AIGeneratedContentDisclosure mv:Process)\n\n\t\t  # Domain-specific constraints\n\t\t  SubClassOf(mv:AIGeneratedContentDisclosure\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:TrustAndGovernanceDomain)\n\t\t  )\n\n\t\t  SubClassOf(mv:AIGeneratedContentDisclosure\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:MiddlewareLayer)\n\t\t  )\n\n\t\t  # Required labeling components\n\t\t  SubClassOf(mv:AIGeneratedContentDisclosure\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:ContentLabelingMetadata)\n\t\t  )\n\n\t\t  SubClassOf(mv:AIGeneratedContentDisclosure\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:AIOriginDeclaration)\n\t\t  )\n\n\t\t  SubClassOf(mv:AIGeneratedContentDisclosure\n\t\t    ObjectSomeValuesFrom(mv:hasPart mv:DisclosureEnforcementMechanism)\n\t\t  )\n\n\t\t  # Dependencies on authentication\n\t\t  SubClassOf(mv:AIGeneratedContentDisclosure\n\t\t    ObjectSomeValuesFrom(mv:requires mv:ContentAuthentication)\n\t\t  )\n\n\t\t  SubClassOf(mv:AIGeneratedContentDisclosure\n\t\t    ObjectSomeValuesFrom(mv:requires mv:ProvenanceTracking)\n\t\t  )\n\n\t\t  SubClassOf(mv:AIGeneratedContentDisclosure\n\t\t    ObjectSomeValuesFrom(mv:dependsOn mv:EUAIAct)\n\t\t  )\n\n\t\t  # Enables transparency outcomes\n\t\t  SubClassOf(mv:AIGeneratedContentDisclosure\n\t\t    ObjectSomeValuesFrom(mv:enables mv:UserAwareness)\n\t\t  )\n\n\t\t  SubClassOf(mv:AIGeneratedContentDisclosure\n\t\t    ObjectSomeValuesFrom(mv:enables mv:RegulatoryCompliance)\n\t\t  )\n\n\t\t  SubClassOf(mv:AIGeneratedContentDisclosure\n\t\t    ObjectSomeValuesFrom(mv:enables mv:InformedConsent)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:requires)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n```\n- ## About AI-Generated Content Disclosure\n  id:: ai-generated-content-disclosure-about\n\t- AI-Generated Content Disclosure establishes transparency obligations for content created by artificial intelligence systems within metaverse environments. This regulatory requirement, mandated by frameworks like the EU AI Act, ensures users can identify AI-generated text, images, videos, audio, and virtual assets through explicit labelling and metadata attribution.\n\t- ### Key Characteristics\n\t  id:: ai-generated-content-disclosure-characteristics\n\t\t- Mandatory labelling for all AI-generated or AI-assisted content\n\t\t- Machine-readable metadata standards enabling automated detection\n\t\t- Visual and textual disclosure mechanisms for user interfaces\n\t\t- Provenance tracking throughout content lifecycle and distribution\n\t\t- Standardized disclosure formats across platforms and jurisdictions\n\t\t- Enforcement mechanisms ensuring compliance with transparency requirements\n\t- ### Technical Components\n\t  id:: ai-generated-content-disclosure-components\n\t\t- [[Content Labelling Metadata]] - Structured data fields indicating AI generation source\n\t\t- [[AI Origin Declaration]] - Explicit statement of AI involvement and degree\n\t\t- [[Disclosure Enforcement Mechanism]] - Automated validation and compliance checking\n\t\t- [[Transparency Notice]] - User-facing notification formats and presentation\n\t\t- [[Provenance Tracking]] - Chain-of-custody records for content modifications\n\t\t- [[C2PA Credentials]] - Coalition for Content Provenance and Authenticity standards\n\t\t- [[Content Authentication Protocol]] - Cryptographic verification of origin claims\n\t- ### Functional Capabilities\n\t  id:: ai-generated-content-disclosure-capabilities\n\t\t- **Automated Labelling**: Embeds disclosure metadata at content creation time\n\t\t- **User Notification**: Displays clear visual indicators and text notices to users\n\t\t- **Compliance Verification**: Validates disclosure presence and accuracy for regulatory audits\n\t\t- **Provenance Chain**: Maintains tamper-evident records of AI generation and modifications\n\t\t- **Cross-Platform Standards**: Ensures consistent disclosure across different metaverse platforms\n\t- ### Use Cases\n\t  id:: ai-generated-content-disclosure-use-cases\n\t\t- AI-generated avatar customization content requiring transparency labels\n\t\t- Synthetic media in virtual events and entertainment venues\n\t\t- AI-created 3D assets and environments in metaverse marketplaces\n\t\t- Automated content moderation decisions requiring explanation\n\t\t- AI-assisted virtual influencer and NPC dialogue systems\n\t\t- Deepfake detection and disclosure in social virtual spaces\n\t\t- Generative AI tools for user-generated content creation\n\t\t- Compliance verification for platforms operating under EU AI Act jurisdiction\n\t- ### Standards & References\n\t  id:: ai-generated-content-disclosure-standards\n\t\t- [[EU AI Act]] - Article 52 transparency obligations for AI systems\n\t\t- [[IEEE 7001]] - Transparency of Autonomous Systems standard\n\t\t- [[C2PA Standard]] - Coalition for Content Provenance and Authenticity\n\t\t- [[OECD AI Principles]] - Transparency and explainability requirements\n\t\t- [[ISO/IEC 23894]] - AI risk management guidance on transparency\n\t\t- [[W3C Verifiable Credentials]] - Metadata authentication framework\n\t- ### Related Concepts\n\t  id:: ai-generated-content-disclosure-related\n\t\t- [[AI Transparency Framework]] - Broader disclosure and explainability requirements\n\t\t- [[Content Authentication]] - Verification mechanisms for origin claims\n\t\t- [[Digital Provenance]] - Chain-of-custody tracking for digital assets\n\t\t- [[Synthetic Media Detection]] - Technologies identifying AI-generated content\n\t\t- [[Informed Consent]] - User awareness enabling meaningful consent decisions\n\t\t- [[VirtualProcess]] - Ontology classification as compliance verification activity\n\n### Relationships\n- is-subclass-of:: [[AIGovernance]]\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: ai-generated-content-disclosure-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0421\n\t- preferred-term:: AI-Generated Content Disclosure\n\t- source-domain:: ai\n\t- owl:class:: ai:AIGeneratedContentDisclosure\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Mandatory transparency requirement specifying that content created wholly or partially by AI systems must be explicitly labeled with origin metadata for user awareness and regulatory compliance.\n\t- source:: [[EU AI Act]], [[IEEE 7001]]\n\t- maturity:: mature\n\t- #### Relationships\n\t  id:: ai-generated-content-disclosure-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[AI Transparency Framework]]\n\t\t- has-part:: [[AI Origin Declaration]]\n\t\t- has-part:: [[Disclosure Enforcement Mechanism]]\n\t\t- has-part:: [[Content Labeling Metadata]]\n\t\t- has-part:: [[Transparency Notice]]\n\t\t- requires:: [[Metadata Standards]]\n\t\t- requires:: [[Provenance Tracking]]\n\t\t- requires:: [[Content Authentication]]\n\t\t- enables:: [[Trust Building]]\n\t\t- enables:: [[Regulatory Compliance]]\n\t\t- enables:: [[Informed Consent]]\n\t\t- enables:: [[User Awareness]]\n\t\t- depends-on:: [[C2PA Standard]]\n\t\t- depends-on:: [[IEEE 7001]]\n\t\t- depends-on:: [[EU AI Act]]\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [],
   "wiki_links": [
-    "AI Transparency Framework",
-    "Synthetic Media Detection",
-    "VirtualProcess",
-    "Trust Building",
-    "User Awareness",
-    "Digital Provenance",
-    "TrustAndGovernanceDomain",
-    "Content Labelling Metadata",
-    "Transparency Notice",
-    "C2PA Credentials",
-    "ISO/IEC 23894",
-    "Regulatory Compliance",
-    "AI Origin Declaration",
-    "Provenance Tracking",
-    "Content Authentication",
-    "Informed Consent",
-    "Content Authentication Protocol",
-    "AIGovernance",
-    "EU AI Act",
-    "Metadata Standards",
     "Content Labeling Metadata",
-    "OECD AI Principles",
+    "Informed Consent",
+    "Trust Building",
+    "AI Origin Declaration",
+    "Disclosure Enforcement Mechanism",
+    "EU AI Act",
+    "Provenance Tracking",
+    "Regulatory Compliance",
+    "User Awareness",
+    "Transparency Notice",
+    "AI Transparency Framework",
+    "Content Authentication",
     "C2PA Standard",
-    "IEEE 7001",
-    "MiddlewareLayer",
-    "W3C Verifiable Credentials",
-    "Disclosure Enforcement Mechanism"
+    "Metadata Standards",
+    "IEEE 7001"
   ],
   "ontology": {
     "term_id": "AI-0421",
     "preferred_term": "AI-Generated Content Disclosure",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#AIGeneratedContentDisclosure",
+    "iri": "http://narrativegoldmine.com/ai#AIGeneratedContentDisclosure",
     "source_domain": "ai",
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
@@ -50,46 +38,42 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": "mv:AIGeneratedContentDisclosure",
-    "owl_physicality": "VirtualEntity",
-    "owl_role": "Process",
-    "owl_inferred_class": "mv:VirtualProcess",
+    "owl_class": "ai:AIGeneratedContentDisclosure",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
     "is_subclass_of": [],
     "has_part": [
-      "Content Labeling Metadata",
       "AI Origin Declaration",
       "Disclosure Enforcement Mechanism",
+      "Content Labeling Metadata",
       "Transparency Notice"
     ],
     "is_part_of": [
       "AI Transparency Framework"
     ],
     "requires": [
-      "Content Authentication",
       "Metadata Standards",
-      "Provenance Tracking"
+      "Provenance Tracking",
+      "Content Authentication"
     ],
     "depends_on": [
-      "EU AI Act",
+      "C2PA Standard",
       "IEEE 7001",
-      "C2PA Standard"
+      "EU AI Act"
     ],
     "enables": [
-      "User Awareness",
-      "Regulatory Compliance",
       "Trust Building",
-      "Informed Consent"
+      "Regulatory Compliance",
+      "Informed Consent",
+      "User Awareness"
     ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [
-      "TrustAndGovernanceDomain"
-    ],
-    "implemented_in_layer": [
-      "MiddlewareLayer"
-    ],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
     "source": [
       "EU AI Act",
       "IEEE 7001"
@@ -98,8 +82,9 @@
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'mv' doesn't match source-domain 'ai'"
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

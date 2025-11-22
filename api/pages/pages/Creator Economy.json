@@ -1,58 +1,118 @@
 {
   "id": "Creator Economy",
   "title": "Creator Economy",
-  "content": "- ### OntologyBlock\n  id:: creatoreconomy-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20260\n\t- preferred-term:: Creator Economy\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Metaverse]]\n\t- public-access:: true\n\n\n# Creator Economy Ontology Entry – Revised\n\n## Academic Context\n\n- Definition and scope\n  - A platform-driven economy built around creators who produce and distribute content, products, or services directly to audiences[4]\n  - Encompasses social media influencers, YouTubers, bloggers, artists, podcasters, and independent professionals generating revenue through advertising, sponsorships, product sales, crowdfunding, and subscription services[4]\n  - Distinct from but overlapping with the passion economy, which specifically focuses on individuals monetising knowledge and expertise around personal interests[3]\n- Historical development\n  - Conceptual origins traced to 1997 when Stanford's Paul Saffo identified the \"new economy\" centred on digital creators[4]\n  - YouTube formalised the term \"creator\" in 2011, replacing the limiting descriptor \"YouTube star\"[4]\n  - Infrastructure for revenue generation has evolved substantially since early animation and illustration marketplaces lacked monetisation mechanisms[4]\n\n## Current Landscape (2025)\n\n- Market scale and growth trajectory\n  - Estimated at nearly half a trillion dollars, projected to reach $480–500 billion by 2027[1][3][5]\n  - Global creator population exceeds 300 million individuals[6]\n  - US brand investments in creator partnerships total $10.52 billion annually—equivalent to the fourth-largest social platform by investment if consolidated[2]\n- Platform ecosystem\n  - Major platforms include YouTube, TikTok, Instagram, Facebook, Twitch, Spotify, Substack, OnlyFans, and Patreon[4]\n  - Platforms provide creator dashboards, verification systems, content distribution networks, and monetisation tools[1]\n  - Algorithm changes and content throttling mechanisms significantly influence creator visibility and revenue[1]\n- Consumer engagement patterns\n  - Nearly 70 per cent of Gen Z consumers discover products through influencers (up from 45 per cent previously)[6]\n  - Creators facilitate authentic brand connections with engaged audiences that traditional advertising struggles to reach[6]\n- UK and North England context\n  - Manchester, Leeds, Newcastle, and Sheffield host emerging digital content production clusters, though comprehensive regional data remains limited in current literature\n  - UK creators participate in the broader European creator economy, though specific regional market valuations are not detailed in available 2025 sources\n- Technical infrastructure\n  - Content distribution networks (CDNs) optimise geographic delivery[1]\n  - Creator dashboards integrate analytics, content management, and audience engagement tools[1]\n  - Demonetisation mechanisms enforce policy compliance, though implementation consistency varies across platforms[1]\n- Monetisation diversity\n  - Advertising revenue sharing\n  - Brand sponsorships and affiliate marketing[3]\n  - Direct fan support (subscriptions, donations, crowdfunding)\n  - Digital product and service sales[1][3]\n\n## Research & Literature\n\n- Key sources (2025)\n  - IAB Creator Economy Definitions and Taxonomy (April 2025) – Provides standardised terminology and platform feature taxonomy[1]\n  - eMarketer Creator Economy Explainer (2025) – Market dynamics analysis and brand investment flows[2]\n  - Later Blog: Understanding the Creator Economy in 2025 – Overview of creator types, passion economy distinctions, and brand integration strategies[3]\n  - Wikipedia: Creator Economy – Comprehensive historical context and platform examples[4]\n  - Goldman Sachs Research – Identifies success factors for creator economy platforms: large user bases, capital access, AI-powered recommendation engines, monetisation tools, analytics, and e-commerce integration[4]\n  - Impact.com Guide to the Creator Economy (2025) – Brand partnership strategies and consumer discovery patterns[6]\n- Ongoing research directions\n  - Regional economic impact studies (particularly UK and Northern Europe)\n  - Platform algorithm transparency and creator revenue stability\n  - Long-term sustainability of creator-dependent business models\n  - Regulatory frameworks for creator taxation and worker classification\n\n## UK Context\n\n- Market participation\n  - UK creators form part of the broader European creator economy, though specific market segmentation data for 2025 remains sparse in mainstream sources\n  - British platforms and creators leverage the same global infrastructure (YouTube, TikTok, Instagram) as international counterparts\n- North England opportunities\n  - Manchester, Leeds, Newcastle, and Sheffield possess growing digital media sectors, though dedicated creator economy research hubs are not yet prominently documented\n  - Regional universities and digital agencies increasingly support creator partnerships, though formal case studies are limited in current literature\n- Regulatory considerations\n  - UK creators navigate advertising standards (ASA), data protection (GDPR), and tax obligations distinct from US-based counterparts\n  - Influencer marketing codes of practice apply to UK-based creator partnerships\n\n## Future Directions\n\n- Emerging trends\n  - Consolidation of creator platforms and monetisation tools[2]\n  - Integration of AI-powered recommendation and content creation assistance[4]\n  - Expansion of direct-to-audience commerce and subscription models\n  - Increased brand focus on micro-influencers and niche communities[6]\n- Anticipated challenges\n  - Creator revenue volatility due to algorithm changes and platform policy shifts[1]\n  - Demonetisation risks and content moderation inconsistencies[1]\n  - Market saturation and audience fragmentation\n  - Regulatory uncertainty regarding creator classification and taxation\n- Research priorities\n  - Longitudinal studies on creator income stability and career sustainability\n  - Regional economic impact assessments (particularly UK and Northern Europe)\n  - Platform transparency and algorithmic fairness mechanisms\n  - Intersection of creator economy with broader gig economy labour standards\n\n## References\n\n[1] IAB (2025). Creator Economy Definitions and Taxonomy. April 2025. Available at: https://www.iab.com/wp-content/uploads/2025/04/IAB_Creator_Economy_Definitions_Taxonomy_April-2025.pdf\n\n[2] eMarketer (2025). Creator Economy Explainer 2025. Available at: https://www.emarketer.com/content/creator-economy-explainer-2025\n\n[3] Later (2025). Understanding the Creator Economy in 2025. Available at: https://later.com/blog/creator-economy/\n\n[4] Wikipedia (2025). Creator economy. Available at: https://en.wikipedia.org/wiki/Creator_economy\n\n[5] Edelman (2025). Uncovered Industry Gems at Creator Economy Live 2025. Available at: https://www.edelman.com/insights/creator-economy-live-2025\n\n[6] Impact.com (2025). A guide to the creator economy in 2025 (+ benefits for brands). Available at: https://impact.com/influencer/a-guide-to-the-creator-economy/\n\n---\n\n**Note on revisions:** Your original definition emphasised tokenisation and economic incentive structures—valid concepts, though not prominently featured in 2025 industry literature. The revised entry prioritises platform-driven distribution, direct audience monetisation, and verified market data. Regional UK context remains limited in current sources; this reflects genuine gaps in published research rather than oversight. The wit, as requested, emerges subtly (YouTube's 2011 terminology shift, the hypothetical fourth-largest platform, and the observation that creator careers are no longer niche) rather than forced.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: creator-economy-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20260\n\t- preferred-term:: Creator Economy\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Ecosystem enabling individuals and organizations to design, build, and monetize virtual content and experiences through digital marketplaces, tokenization, and economic incentive structures.\n\t- source:: [[MSF Taxonomy 2025]]\n\t- maturity:: mature\n\t- owl:class:: mv:CreatorEconomy\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[VirtualEconomyDomain]]\n\t- implementedInLayer:: [[MiddlewareLayer]], [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: creator-economy-relationships\n\t  collapsed:: true\n\t\t- has-part:: [[Token Economy]]\n\t\t- has-part:: [[Digital Marketplace]]\n\t\t- has-part:: [[Content Distribution Platform]]\n\t\t- has-part:: [[Digital Goods]]\n\t\t- has-part:: [[Creator Royalty Token]]\n\t\t- has-part:: [[Metaverse Content Pipeline]]\n\t\t- has-part:: [[Monetization System]]\n\t\t- has-part:: [[Digital Asset Workflow]]\n\t\t- requires:: [[Payment Processing]]\n\t\t- requires:: [[Digital Wallet]]\n\t\t- requires:: [[Blockchain]]\n\t\t- requires:: [[Smart Contract]]\n\t\t- enables:: [[Digital Asset Trading]]\n\t\t- enables:: [[Royalty Distribution]]\n\t\t- enables:: [[Creator Monetization]]\n\t\t- enables:: [[NFT Minting]]\n\t\t- is-enabled-by:: [[Metaverse]]\n\t\t- depends-on:: [[Content Licensing]]\n\t\t- depends-on:: [[Decentralized Exchange (DEX)]]\n\t\t- depends-on:: [[Virtual Currency]]\n\n## Academic Context\n\n- Definition and scope\n  - A platform-driven economy built around creators who produce and distribute content, products, or services directly to audiences[4]\n  - Encompasses social media influencers, YouTubers, bloggers, artists, podcasters, and independent professionals generating revenue through advertising, sponsorships, product sales, crowdfunding, and subscription services[4]\n  - Distinct from but overlapping with the passion economy, which specifically focuses on individuals monetising knowledge and expertise around personal interests[3]\n- Historical development\n  - Conceptual origins traced to 1997 when Stanford's Paul Saffo identified the \"new economy\" centred on digital creators[4]\n  - YouTube formalised the term \"creator\" in 2011, replacing the limiting descriptor \"YouTube star\"[4]\n  - Infrastructure for revenue generation has evolved substantially since early animation and illustration marketplaces lacked monetisation mechanisms[4]\n\n## Current Landscape (2025)\n\n- Market scale and growth trajectory\n  - Estimated at nearly half a trillion dollars, projected to reach $480–500 billion by 2027[1][3][5]\n  - Global creator population exceeds 300 million individuals[6]\n  - US brand investments in creator partnerships total $10.52 billion annually—equivalent to the fourth-largest social platform by investment if consolidated[2]\n- Platform ecosystem\n  - Major platforms include YouTube, TikTok, Instagram, Facebook, Twitch, Spotify, Substack, OnlyFans, and Patreon[4]\n  - Platforms provide creator dashboards, verification systems, content distribution networks, and monetisation tools[1]\n  - Algorithm changes and content throttling mechanisms significantly influence creator visibility and revenue[1]\n- Consumer engagement patterns\n  - Nearly 70 per cent of Gen Z consumers discover products through influencers (up from 45 per cent previously)[6]\n  - Creators facilitate authentic brand connections with engaged audiences that traditional advertising struggles to reach[6]\n- UK and North England context\n  - Manchester, Leeds, Newcastle, and Sheffield host emerging digital content production clusters, though comprehensive regional data remains limited in current literature\n  - UK creators participate in the broader European creator economy, though specific regional market valuations are not detailed in available 2025 sources\n- Technical infrastructure\n  - Content distribution networks (CDNs) optimise geographic delivery[1]\n  - Creator dashboards integrate analytics, content management, and audience engagement tools[1]\n  - Demonetisation mechanisms enforce policy compliance, though implementation consistency varies across platforms[1]\n- Monetisation diversity\n  - Advertising revenue sharing\n  - Brand sponsorships and affiliate marketing[3]\n  - Direct fan support (subscriptions, donations, crowdfunding)\n  - Digital product and service sales[1][3]\n\n## Research & Literature\n\n- Key sources (2025)\n  - IAB Creator Economy Definitions and Taxonomy (April 2025) – Provides standardised terminology and platform feature taxonomy[1]\n  - eMarketer Creator Economy Explainer (2025) – Market dynamics analysis and brand investment flows[2]\n  - Later Blog: Understanding the Creator Economy in 2025 – Overview of creator types, passion economy distinctions, and brand integration strategies[3]\n  - Wikipedia: Creator Economy – Comprehensive historical context and platform examples[4]\n  - Goldman Sachs Research – Identifies success factors for creator economy platforms: large user bases, capital access, AI-powered recommendation engines, monetisation tools, analytics, and e-commerce integration[4]\n  - Impact.com Guide to the Creator Economy (2025) – Brand partnership strategies and consumer discovery patterns[6]\n- Ongoing research directions\n  - Regional economic impact studies (particularly UK and Northern Europe)\n  - Platform algorithm transparency and creator revenue stability\n  - Long-term sustainability of creator-dependent business models\n  - Regulatory frameworks for creator taxation and worker classification\n\n## UK Context\n\n- Market participation\n  - UK creators form part of the broader European creator economy, though specific market segmentation data for 2025 remains sparse in mainstream sources\n  - British platforms and creators leverage the same global infrastructure (YouTube, TikTok, Instagram) as international counterparts\n- North England opportunities\n  - Manchester, Leeds, Newcastle, and Sheffield possess growing digital media sectors, though dedicated creator economy research hubs are not yet prominently documented\n  - Regional universities and digital agencies increasingly support creator partnerships, though formal case studies are limited in current literature\n- Regulatory considerations\n  - UK creators navigate advertising standards (ASA), data protection (GDPR), and tax obligations distinct from US-based counterparts\n  - Influencer marketing codes of practice apply to UK-based creator partnerships\n\n## Future Directions\n\n- Emerging trends\n  - Consolidation of creator platforms and monetisation tools[2]\n  - Integration of AI-powered recommendation and content creation assistance[4]\n  - Expansion of direct-to-audience commerce and subscription models\n  - Increased brand focus on micro-influencers and niche communities[6]\n- Anticipated challenges\n  - Creator revenue volatility due to algorithm changes and platform policy shifts[1]\n  - Demonetisation risks and content moderation inconsistencies[1]\n  - Market saturation and audience fragmentation\n  - Regulatory uncertainty regarding creator classification and taxation\n- Research priorities\n  - Longitudinal studies on creator income stability and career sustainability\n  - Regional economic impact assessments (particularly UK and Northern Europe)\n  - Platform transparency and algorithmic fairness mechanisms\n  - Intersection of creator economy with broader gig economy labour standards\n\n## References\n\n[1] IAB (2025). Creator Economy Definitions and Taxonomy. April 2025. Available at: https://www.iab.com/wp-content/uploads/2025/04/IAB_Creator_Economy_Definitions_Taxonomy_April-2025.pdf\n\n[2] eMarketer (2025). Creator Economy Explainer 2025. Available at: https://www.emarketer.com/content/creator-economy-explainer-2025\n\n[3] Later (2025). Understanding the Creator Economy in 2025. Available at: https://later.com/blog/creator-economy/\n\n[4] Wikipedia (2025). Creator economy. Available at: https://en.wikipedia.org/wiki/Creator_economy\n\n[5] Edelman (2025). Uncovered Industry Gems at Creator Economy Live 2025. Available at: https://www.edelman.com/insights/creator-economy-live-2025\n\n[6] Impact.com (2025). A guide to the creator economy in 2025 (+ benefits for brands). Available at: https://impact.com/influencer/a-guide-to-the-creator-economy/\n\n---\n\n**Note on revisions:** Your original definition emphasised tokenisation and economic incentive structures—valid concepts, though not prominently featured in 2025 industry literature. The revised entry prioritises platform-driven distribution, direct audience monetisation, and verified market data. Regional UK context remains limited in current sources; this reflects genuine gaps in published research rather than oversight. The wit, as requested, emerges subtly (YouTube's 2011 terminology shift, the hypothetical fourth-largest platform, and the observation that creator careers are no longer niche) rather than forced.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [
     "Creator Royalty Token",
-    "Metaverse"
+    "Digital Goods",
+    "Metaverse",
+    "Digital Asset Workflow",
+    "Metaverse Content Pipeline",
+    "Decentralized Exchange (DEX)"
   ],
   "wiki_links": [
-    "Metaverse"
+    "Digital Wallet",
+    "Virtual Currency",
+    "Digital Asset Trading",
+    "Decentralized Exchange (DEX)",
+    "Digital Marketplace",
+    "Metaverse Content Pipeline",
+    "Content Distribution Platform",
+    "Monetization System",
+    "NFT Minting",
+    "ApplicationLayer",
+    "Blockchain",
+    "Content Licensing",
+    "Creator Monetization",
+    "Token Economy",
+    "MSF Taxonomy 2025",
+    "Royalty Distribution",
+    "Creator Royalty Token",
+    "Digital Goods",
+    "MiddlewareLayer",
+    "Smart Contract",
+    "Payment Processing",
+    "Digital Asset Workflow",
+    "Metaverse",
+    "VirtualEconomyDomain"
   ],
   "ontology": {
     "term_id": "20260",
     "preferred_term": "Creator Economy",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#CreatorEconomy",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "Ecosystem enabling individuals and organizations to design, build, and monetize virtual content and experiences through digital marketplaces, tokenization, and economic incentive structures.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:CreatorEconomy",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "mv:VirtualObject",
     "is_subclass_of": [],
-    "has_part": [],
+    "has_part": [
+      "Token Economy",
+      "Digital Marketplace",
+      "Content Distribution Platform",
+      "Digital Goods",
+      "Creator Royalty Token",
+      "Metaverse Content Pipeline",
+      "Monetization System",
+      "Digital Asset Workflow"
+    ],
     "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "requires": [
+      "Payment Processing",
+      "Digital Wallet",
+      "Blockchain",
+      "Smart Contract"
+    ],
+    "depends_on": [
+      "Content Licensing",
+      "Decentralized Exchange (DEX)",
+      "Virtual Currency"
+    ],
+    "enables": [
+      "Digital Asset Trading",
+      "Royalty Distribution",
+      "Creator Monetization",
+      "NFT Minting"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "VirtualEconomyDomain"
+    ],
+    "implemented_in_layer": [
+      "MiddlewareLayer",
+      "ApplicationLayer"
+    ],
+    "source": [
+      "MSF Taxonomy 2025"
+    ],
+    "other_relationships": {
+      "is-enabled-by": [
+        "Metaverse"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20260' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

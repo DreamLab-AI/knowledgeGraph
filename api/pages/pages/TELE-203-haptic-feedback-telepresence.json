@@ -1,7 +1,7 @@
 {
   "id": "TELE-203-haptic-feedback-telepresence",
   "title": "Haptic Feedback Telepresence",
-  "content": "# Haptic Feedback Telepresence\n\n- ### OntologyBlock\n  id:: haptic-telepresence-ontology\n  collapsed:: true\n  - ontology:: true\n    - is-subclass-of:: [[TelecollaborationTechnology]]\n  - term-id:: TELE-203\n  - preferred-term:: Haptic Feedback Telepresence\n  - alternate-terms::\n  - Tactile Telepresence\n  - Force Feedback Telepresence\n  - Kinesthetic Telepresence\n  - source-domain:: tele\n  - status:: active\n  - public-access:: true\n  - definition:: \"The integration of haptic (tactile and kinesthetic) feedback devices into telepresence systems, enabling remote operators to feel forces, textures, and vibrations from distant environments through force-feedback gloves, exoskeletons, or handheld controllers, creating bidirectional touch sensation for immersive remote interaction with physical or virtual objects.\"\n  - maturity:: developing\n  - authority-score:: 0.83\n  - owl:class:: tele:HapticFeedbackTelepresence\n  - owl:physicality:: PhysicalEntity\n  - owl:role:: Object\n  - belongsToDomain::\n  - [[TELE-0000-telepresence-domain]]\n  - [[RoboticTelepresence]]\n  - bridges-to::\n  - [[RoboticsDomain]]\n  - [[AIDomain]]\n\n\n## Definition\n\n**Haptic Feedback Telepresence** extends telepresence beyond visual and auditory modalities to include touch sensation, enabling operators to feel forces exerted by remote robots [[TELE-201-teleoperation-systems]] or virtual objects [[TELE-020-virtual-reality-telepresence]]. Force feedback devices replicate resistance, weight, texture, and vibration, creating bidirectional coupling where operator inputs control remote/virtual objects whilst receiving tactile sensations from those objects, enhancing manipulation precision, immersion, and task performance.\n\n## Types of Haptic Feedback\n\n- **Kinesthetic**: Joint torques, resistance (e.g., feeling object weight)\n- **Tactile**: Surface texture, vibration (e.g., fabric roughness)\n- **Thermal**: Temperature sensations (heating/cooling actuators)\n\n## Devices\n\n- **Force Feedback Gloves**: CyberGlove, HaptX, SenseGlove (10+ DOF force feedback)\n- **Exoskeletons**: Full-arm force reflection for teleoperation\n- **Haptic Controllers**: Vibration motors, ultrasonic mid-air haptics\n\n## Applications\n\n- **Surgical Telepresence**: Surgeons feel tissue stiffness during robotic surgery\n- **VR Collaboration**: Users feel virtual handshakes, object textures\n- **Industrial Telerobotics**: Operators sense resistance when manipulating heavy objects remotely\n\n## Related Concepts\n\n- [[TELE-001-telepresence]]\n- [[TELE-200-robotic-telepresence]]\n- [[TELE-201-teleoperation-systems]]\n\n## Metadata\n\n- **Term-ID**: TELE-203\n- **Last Updated**: 2025-11-16\n- **Maturity**: Developing\n- **Authority Score**: 0.83",
+  "content": "- ### OntologyBlock\n  id:: haptic-telepresence-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TELE-203\n\t- preferred-term:: Haptic Feedback Telepresence\n\t- source-domain:: tc\n\t- owl:class:: tc:HapticFeedbackTelepresence\n\t- status:: active\n\t- public-access:: true\n\t- definition:: \"The integration of haptic (tactile and kinesthetic) feedback devices into telepresence systems, enabling remote operators to feel forces, textures, and vibrations from distant environments through force-feedback gloves, exoskeletons, or handheld controllers, creating bidirectional touch sensation for immersive remote interaction with physical or virtual objects.\"\n\t- maturity:: developing\n\t- owl:physicality:: PhysicalEntity\n\t- owl:role:: Object\n\n## Definition\n\n**Haptic Feedback Telepresence** extends telepresence beyond visual and auditory modalities to include touch sensation, enabling operators to feel forces exerted by remote robots [[TELE-201-teleoperation-systems]] or virtual objects [[TELE-020-virtual-reality-telepresence]]. Force feedback devices replicate resistance, weight, texture, and vibration, creating bidirectional coupling where operator inputs control remote/virtual objects whilst receiving tactile sensations from those objects, enhancing manipulation precision, immersion, and task performance.\n\n## Types of Haptic Feedback\n\n- **Kinesthetic**: Joint torques, resistance (e.g., feeling object weight)\n- **Tactile**: Surface texture, vibration (e.g., fabric roughness)\n- **Thermal**: Temperature sensations (heating/cooling actuators)\n\n## Devices\n\n- **Force Feedback Gloves**: CyberGlove, HaptX, SenseGlove (10+ DOF force feedback)\n- **Exoskeletons**: Full-arm force reflection for teleoperation\n- **Haptic Controllers**: Vibration motors, ultrasonic mid-air haptics\n\n## Applications\n\n- **Surgical Telepresence**: Surgeons feel tissue stiffness during robotic surgery\n- **VR Collaboration**: Users feel virtual handshakes, object textures\n- **Industrial Telerobotics**: Operators sense resistance when manipulating heavy objects remotely\n\n## Related Concepts\n\n- [[TELE-001-telepresence]]\n- [[TELE-200-robotic-telepresence]]\n- [[TELE-201-teleoperation-systems]]\n\n## Metadata\n\n- **Term-ID**: TELE-203\n- **Last Updated**: 2025-11-16\n- **Maturity**: Developing\n- **Authority Score**: 0.83",
   "backlinks": [
     "TELE-021-augmented-reality-collaboration",
     "TELE-200-robotic-telepresence",
@@ -13,23 +13,18 @@
   ],
   "wiki_links": [
     "TELE-200-robotic-telepresence",
-    "AIDomain",
     "TELE-001-telepresence",
-    "RoboticTelepresence",
     "TELE-201-teleoperation-systems",
-    "TelecollaborationTechnology",
-    "TELE-0000-telepresence-domain",
-    "RoboticsDomain",
     "TELE-020-virtual-reality-telepresence"
   ],
   "ontology": {
     "term_id": "TELE-203",
     "preferred_term": "Haptic Feedback Telepresence",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "tele",
-    "domain": "tele",
-    "domain_full_name": "",
+    "iri": "http://narrativegoldmine.com/telecollaboration#HapticFeedbackTelepresence",
+    "source_domain": "tc",
+    "domain": "tc",
+    "domain_full_name": "Telecollaboration",
     "definition": "\"The integration of haptic (tactile and kinesthetic) feedback devices into telepresence systems, enabling remote operators to feel forces, textures, and vibrations from distant environments through force-feedback gloves, exoskeletons, or handheld controllers, creating bidirectional touch sensation for immersive remote interaction with physical or virtual objects.\"",
     "scope_note": null,
     "status": "active",
@@ -37,10 +32,10 @@
     "version": null,
     "public_access": true,
     "last_updated": null,
-    "authority_score": 0.83,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": "tele:HapticFeedbackTelepresence",
+    "owl_class": "tc:HapticFeedbackTelepresence",
     "owl_physicality": "PhysicalEntity",
     "owl_role": "Object",
     "owl_inferred_class": null,
@@ -54,16 +49,15 @@
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [
-      "TELE-0000-telepresence-domain"
-    ],
+    "belongs_to_domain": [],
     "implemented_in_layer": [],
     "source": [],
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id 'TELE-203' doesn't match domain 'tc' (expected TC-)"
       ]
     }
   }

@@ -1,34 +1,34 @@
 {
   "id": "ETSI_Domain_Data_Mgmt___Security",
   "title": "ETSI Domain: Data Management + Security",
-  "content": "- ### OntologyBlock\n  id:: etsi-domain-datamgmt-security-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20346\n\t- source-domain:: metaverse\n\t- status:: draft\n    - public-access:: true\n\t- preferred-term:: ETSI Domain: Data Management + Security\n\t- definition:: Crossover domain for ETSI metaverse categorization addressing secure data storage, encrypted databases, access control systems, and data protection mechanisms.\n\t- maturity:: mature\n\t- source:: [[ETSI GR MEC 032]]\n\t- owl:class:: mv:ETSIDomain_DataMgmt_Security\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-datamgmt-security-relationships\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-part-of:: [[ETSI Metaverse Domain Taxonomy]]\n\t\t- has-part:: [[Encrypted Storage]], [[Access Control]], [[Key Management]], [[Security Audit]]\n\t\t- requires:: [[Data Management]], [[Security & Privacy]]\n\t\t- enables:: [[Data-at-Rest Protection]], [[Access Control Enforcement]], [[Threat Detection]]\n\t\t- depends-on:: [[Encryption Algorithms]], [[Authentication Systems]]\n\t- #### OWL Axioms\n\t  id:: etsi-domain-datamgmt-security-owl-axioms\n\t  collapsed:: true\n\t\t- ```clojure\n\t\t  Declaration(Class(mv:ETSIDomain_DataMgmt_Security))\n\n\t\t  # Classification along two primary dimensions\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Security mv:VirtualEntity)\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Security mv:Object)\n\n\t\t  # Domain classification\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Security\n\t\t    ObjectSomeValuesFrom(mv:belongsToDomain mv:InfrastructureDomain)\n\t\t  )\n\n\t\t  # Layer classification\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Security\n\t\t    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)\n\t\t  )\n\n\t\t  # Crossover domain dependencies\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Security\n\t\t    ObjectSomeValuesFrom(mv:requires mv:ETSIDomain_DataManagement)\n\t\t  )\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Security\n\t\t    ObjectSomeValuesFrom(mv:requires mv:ETSIDomain_SecurityPrivacy)\n\t\t  )\n\n\t\t  # Data protection enablement\n\t\t  SubClassOf(mv:ETSIDomain_DataMgmt_Security\n\t\t    ObjectSomeValuesFrom(mv:enables mv:DataAtRestProtection)\n\t\t  )\n\n  # Property characteristics\n  TransitiveObjectProperty(dt:ispartof)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:requires)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:enables)\n\n  # Property characteristics\n  AsymmetricObjectProperty(dt:dependson)\n```",
+  "content": "- ### OntologyBlock\n  id:: etsi-domain-datamgmt-security-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20346\n\t- preferred-term:: ETSI Domain: Data Management + Security\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Crossover domain for ETSI metaverse categorization addressing secure data storage, encrypted databases, access control systems, and data protection mechanisms.\n\t- source:: [[ETSI GR MEC 032]]\n\t- maturity:: mature\n\t- owl:class:: mv:ETSIDomain_DataMgmt_Security\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-datamgmt-security-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-part-of:: [[ETSI Metaverse Domain Taxonomy]]\n\t\t- has-part:: [[Security Audit]]\n\t\t- has-part:: [[Access Control]]\n\t\t- has-part:: [[Encrypted Storage]]\n\t\t- has-part:: [[Key Management]]\n\t\t- requires:: [[Security & Privacy]]\n\t\t- requires:: [[Data Management]]\n\t\t- enables:: [[Threat Detection]]\n\t\t- enables:: [[Data-at-Rest Protection]]\n\t\t- enables:: [[Access Control Enforcement]]\n\t\t- depends-on:: [[Authentication Systems]]\n\t\t- depends-on:: [[Encryption Algorithms]]",
   "backlinks": [],
   "wiki_links": [
-    "Encrypted Storage",
-    "Threat Detection",
-    "Key Management",
-    "InfrastructureDomain",
     "Security & Privacy",
-    "ETSI Metaverse Domain Taxonomy",
-    "Data Management",
-    "Authentication Systems",
-    "ApplicationLayer",
-    "Access Control",
-    "Encryption Algorithms",
-    "ETSI GR MEC 032",
-    "Metaverse",
-    "Access Control Enforcement",
+    "InfrastructureDomain",
+    "Key Management",
     "Data-at-Rest Protection",
-    "Security Audit"
+    "Access Control Enforcement",
+    "Authentication Systems",
+    "Metaverse",
+    "ETSI GR MEC 032",
+    "Access Control",
+    "Encrypted Storage",
+    "Data Management",
+    "ApplicationLayer",
+    "Security Audit",
+    "ETSI Metaverse Domain Taxonomy",
+    "Threat Detection",
+    "Encryption Algorithms"
   ],
   "ontology": {
     "term_id": "20346",
     "preferred_term": "ETSI Domain: Data Management + Security",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ETSIDomain_DataMgmt_Security",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "Crossover domain for ETSI metaverse categorization addressing secure data storage, encrypted databases, access control systems, and data protection mechanisms.",
     "scope_note": null,
     "status": "draft",
@@ -47,26 +47,26 @@
       "Metaverse"
     ],
     "has_part": [
-      "Encrypted Storage",
+      "Security Audit",
       "Access Control",
-      "Key Management",
-      "Security Audit"
+      "Encrypted Storage",
+      "Key Management"
     ],
     "is_part_of": [
       "ETSI Metaverse Domain Taxonomy"
     ],
     "requires": [
-      "Data Management",
-      "Security & Privacy"
+      "Security & Privacy",
+      "Data Management"
     ],
     "depends_on": [
-      "Encryption Algorithms",
-      "Authentication Systems"
+      "Authentication Systems",
+      "Encryption Algorithms"
     ],
     "enables": [
+      "Threat Detection",
       "Data-at-Rest Protection",
-      "Access Control Enforcement",
-      "Threat Detection"
+      "Access Control Enforcement"
     ],
     "relates_to": [],
     "bridges_to": [],
@@ -84,8 +84,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "term-id '20346' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

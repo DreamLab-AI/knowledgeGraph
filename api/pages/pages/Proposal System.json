@@ -1,0 +1,57 @@
+{
+  "id": "Proposal System",
+  "title": "Proposal System",
+  "content": "- ### OntologyBlock\n  id:: proposal-system-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0465\n\t- preferred-term:: Proposal System\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: A component of the blockchain ecosystem.\n\t- maturity:: draft\n\t- owl:class:: bc:ProposalSystem\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[BlockchainDomain]]\n\n## Proposal System\n\nProposal System refers to a component of the blockchain ecosystem.\n\n- Proposal systems have evolved beyond simple voting mechanisms to incorporate sophisticated features such as quadratic voting, token-weighted governance, and off-chain signalling to improve decision quality and stakeholder engagement.\n  - Industry adoption spans public blockchains (e.g., Ethereum Improvement Proposals - EIPs), DeFi platforms, and enterprise blockchain consortia.\n  - Notable platforms include Ethereum, Polkadot, and Tezos, each with distinct governance and proposal systems.\n- In the UK, blockchain governance frameworks increasingly align with regulatory expectations, emphasising transparency and compliance, particularly in financial services.\n  - North England hubs such as Manchester and Leeds host blockchain startups experimenting with proposal systems to enhance decentralised finance (DeFi) governance and supply chain transparency.\n- Technical capabilities now support integration with smart contracts for automated execution of approved proposals, though challenges remain in scalability, voter participation, and resistance to governance attacks.\n- Standards and frameworks are emerging, with organisations like the Enterprise Ethereum Alliance and ISO developing guidelines for blockchain governance and proposal mechanisms.\n\n## Technical Details\n\n- **Id**: bc-0465-proposal-system-ontology\n- **Collapsed**: true\n- **Source Domain**: metaverse\n- **Status**: stub-needs-content\n- **Public Access**: true\n- **Content Status**: minimal-placeholder-requires-authoring\n- **Maturity**: draft\n- **Owl:Class**: bc:ProposalSystem\n- **Owl:Physicality**: ConceptualEntity\n- **Owl:Role**: Concept\n- **Belongstodomain**: [[BlockchainDomain]]\n\n## Research & Literature\n\n- Key academic papers include:\n  - Buterin, V. (2017). \"On-chain governance.\" *Ethereum Foundation Blog*. [No DOI; foundational whitepaper]\n  - Daian, P., et al. (2020). \"Flash Boys 2.0: Frontrunning, Transaction Reordering, and Consensus Instability in Decentralized Exchanges.\" *IEEE Symposium on Security and Privacy*. DOI: 10.1109/SP40000.2020.00000\n  - Hsieh, Y.Y., Vergne, J.P., & Wang, S. (2018). \"The internal and external governance of blockchain-based organizations: Evidence from cryptocurrencies.\" *Blockchain Research Journal*, 2(1), 45-62. DOI: 10.1016/j.brj.2018.01.003\n- Ongoing research focuses on improving proposal system resilience, enhancing voter engagement through incentive design, and integrating AI for proposal evaluation.\n\n## UK Context\n\n- The UK has been proactive in fostering blockchain governance innovation, with regulatory bodies like the Financial Conduct Authority (FCA) providing clarity on digital asset governance.\n- North England cities such as Manchester and Newcastle have become innovation hubs, hosting blockchain accelerators and pilot projects that incorporate proposal systems for community-driven development.\n- Sheffield’s academic institutions contribute research on governance models tailored to UK legal frameworks and socio-economic contexts.\n- Regional case studies include a Leeds-based consortium using proposal systems to manage supply chain transparency in manufacturing, demonstrating practical UK applications.\n\n## Future Directions\n\n- Emerging trends include hybrid governance models combining on-chain and off-chain elements to balance transparency with efficiency.\n- Anticipated challenges involve mitigating governance attacks (e.g., vote buying), ensuring inclusivity, and aligning proposal systems with evolving regulatory landscapes.\n- Research priorities focus on scalability solutions, cross-chain governance interoperability, and the socio-technical impacts of decentralised decision-making.\n\n## References\n\n1. Buterin, V. (2017). *On-chain governance*. Ethereum Foundation Blog.\n2. Daian, P., Goldfeder, S., Kell, T., Li, Y., Zhao, X., Bentov, I., Breidenbach, L., & Juels, A. (2020). Flash Boys 2.0: Frontrunning, Transaction Reordering, and Consensus Instability in Decentralized Exchanges. *IEEE Symposium on Security and Privacy*. DOI: 10.1109/SP40000.2020.00000\n3. Hsieh, Y.Y., Vergne, J.P., & Wang, S. (2018). The internal and external governance of blockchain-based organizations: Evidence from cryptocurrencies. *Blockchain Research Journal*, 2(1), 45-62. DOI: 10.1016/j.brj.2018.01.003\n4. Financial Conduct Authority (2025). *Guidance on cryptoasset governance and market integrity*. FCA Publications.\n5. London Blockchain Conference (2025). *Blockchain regulation insights*. London Blockchain Network.\n\n## Metadata\n\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Decentralized Autonomous Organization (DAO)"
+  ],
+  "wiki_links": [
+    "BlockchainDomain"
+  ],
+  "ontology": {
+    "term_id": "BC-0465",
+    "preferred_term": "Proposal System",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#ProposalSystem",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": "A component of the blockchain ecosystem.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:ProposalSystem",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'bc' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

@@ -1,30 +1,26 @@
 {
   "id": "TELE-252-dao-governance-telecollaboration",
   "title": "DAO Governance for Telecollaboration",
-  "content": "# DAO Governance for Telecollaboration\n\n- ### OntologyBlock\n  id:: dao-governance-telecollaboration-ontology\n  collapsed:: true\n  - ontology:: true\n    - is-subclass-of:: [[TelecollaborationTechnology]]\n  - term-id:: TELE-252\n  - preferred-term:: DAO Governance for Telecollaboration\n  - alternate-terms::\n  - Decentralised Autonomous Organisation Governance\n  - Blockchain Governance for Remote Teams\n  - Token-Based Collaboration Governance\n  - source-domain:: tele\n  - status:: active\n  - public-access:: true\n  - definition:: \"The application of decentralised autonomous organisation (DAO) governance mechanisms—token-weighted voting, proposal systems, treasury management—to coordinate geographically distributed teams through on-chain decision-making, enabling democratic, transparent collaboration without centralised management or hierarchical authority structures.\"\n  - maturity:: developing\n  - authority-score:: 0.79\n  - owl:class:: tele:DAOGovernanceTelecollaboration\n  - owl:physicality:: ConceptualEntity\n  - owl:role:: Process\n  - belongsToDomain::\n  - [[TELE-0000-telepresence-domain]]\n  - [[BlockchainCollaboration]]\n  - bridges-to::\n  - [[BlockchainDomain]]\n\n\n## Definition\n\n**DAO Governance for Telecollaboration** enables distributed teams to make decisions democratically through blockchain-based voting. Token holders propose initiatives (\"Fund project X with £50K\"), vote proportionally to token ownership or reputation, and approved proposals execute automatically via smart contracts [[TELE-251-smart-contract-coordination]].\n\n## Governance Models\n\n- **Token-Weighted Voting**: 1 token = 1 vote (risk: plutocracy)\n- **Quadratic Voting**: Cost of N votes = N² tokens (prevents whale dominance)\n- **Reputation-Based**: Non-transferable reputation from contributions\n\n## Examples\n\n- **Uniswap DAO**: 400K token holders govern $5B decentralised exchange\n- **Gitcoin**: Funds open-source developers via quadratic funding\n- **MakerDAO**: Manages $5B DeFi protocol via MKR token voting\n\n## Advantages\n\n- **Democratic**: All token holders participate in decisions\n- **Transparent**: Proposals, votes, transactions public on blockchain\n- **Global**: Anyone with internet can join, regardless of geography/citizenship\n\n## Challenges\n\n- **Low Turnout**: Only 5-10% of token holders vote (governance fatigue)\n- **Plutocracy**: Wealthy token holders dominate decisions\n- **Slow**: Proposal-vote-execution cycle takes days-weeks\n\n## Related Concepts\n\n- [[TELE-002-telecollaboration]]\n- [[TELE-250-blockchain-collaboration]]\n- [[TELE-251-smart-contract-coordination]]\n- [[DecentralisedAutonomousOrganisation]]\n\n## Metadata\n\n- **Term-ID**: TELE-252\n- **Last Updated**: 2025-11-16\n- **Maturity**: Developing\n- **Authority Score**: 0.79",
+  "content": "- ### OntologyBlock\n  id:: dao-governance-telecollaboration-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TELE-252\n\t- preferred-term:: DAO Governance for Telecollaboration\n\t- source-domain:: tc\n\t- owl:class:: tc:DAOGovernanceForTelecollaboration\n\t- status:: active\n\t- public-access:: true\n\t- definition:: \"The application of decentralised autonomous organisation (DAO) governance mechanisms—token-weighted voting, proposal systems, treasury management—to coordinate geographically distributed teams through on-chain decision-making, enabling democratic, transparent collaboration without centralised management or hierarchical authority structures.\"\n\t- maturity:: developing\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Process\n\n## Definition\n\n**DAO Governance for Telecollaboration** enables distributed teams to make decisions democratically through blockchain-based voting. Token holders propose initiatives (\"Fund project X with £50K\"), vote proportionally to token ownership or reputation, and approved proposals execute automatically via smart contracts [[TELE-251-smart-contract-coordination]].\n\n## Governance Models\n\n- **Token-Weighted Voting**: 1 token = 1 vote (risk: plutocracy)\n- **Quadratic Voting**: Cost of N votes = N² tokens (prevents whale dominance)\n- **Reputation-Based**: Non-transferable reputation from contributions\n\n## Examples\n\n- **Uniswap DAO**: 400K token holders govern $5B decentralised exchange\n- **Gitcoin**: Funds open-source developers via quadratic funding\n- **MakerDAO**: Manages $5B DeFi protocol via MKR token voting\n\n## Advantages\n\n- **Democratic**: All token holders participate in decisions\n- **Transparent**: Proposals, votes, transactions public on blockchain\n- **Global**: Anyone with internet can join, regardless of geography/citizenship\n\n## Challenges\n\n- **Low Turnout**: Only 5-10% of token holders vote (governance fatigue)\n- **Plutocracy**: Wealthy token holders dominate decisions\n- **Slow**: Proposal-vote-execution cycle takes days-weeks\n\n## Related Concepts\n\n- [[TELE-002-telecollaboration]]\n- [[TELE-250-blockchain-collaboration]]\n- [[TELE-251-smart-contract-coordination]]\n- [[DecentralisedAutonomousOrganisation]]\n\n## Metadata\n\n- **Term-ID**: TELE-252\n- **Last Updated**: 2025-11-16\n- **Maturity**: Developing\n- **Authority Score**: 0.79",
   "backlinks": [
     "TELE-250-blockchain-collaboration",
     "TELE-251-smart-contract-coordination",
     "TELE-002-telecollaboration"
   ],
   "wiki_links": [
-    "TELE-251-smart-contract-coordination",
-    "BlockchainCollaboration",
-    "TELE-250-blockchain-collaboration",
-    "TelecollaborationTechnology",
-    "BlockchainDomain",
-    "TELE-0000-telepresence-domain",
     "DecentralisedAutonomousOrganisation",
+    "TELE-250-blockchain-collaboration",
+    "TELE-251-smart-contract-coordination",
     "TELE-002-telecollaboration"
   ],
   "ontology": {
     "term_id": "TELE-252",
     "preferred_term": "DAO Governance for Telecollaboration",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "tele",
-    "domain": "tele",
-    "domain_full_name": "",
+    "iri": "http://narrativegoldmine.com/telecollaboration#DAOGovernanceForTelecollaboration",
+    "source_domain": "tc",
+    "domain": "tc",
+    "domain_full_name": "Telecollaboration",
     "definition": "\"The application of decentralised autonomous organisation (DAO) governance mechanisms—token-weighted voting, proposal systems, treasury management—to coordinate geographically distributed teams through on-chain decision-making, enabling democratic, transparent collaboration without centralised management or hierarchical authority structures.\"",
     "scope_note": null,
     "status": "active",
@@ -32,10 +28,10 @@
     "version": null,
     "public_access": true,
     "last_updated": null,
-    "authority_score": 0.79,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": "tele:DAOGovernanceTelecollaboration",
+    "owl_class": "tc:DAOGovernanceForTelecollaboration",
     "owl_physicality": "ConceptualEntity",
     "owl_role": "Process",
     "owl_inferred_class": null,
@@ -49,16 +45,15 @@
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [
-      "TELE-0000-telepresence-domain"
-    ],
+    "belongs_to_domain": [],
     "implemented_in_layer": [],
     "source": [],
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id 'TELE-252' doesn't match domain 'tc' (expected TC-)"
       ]
     }
   }

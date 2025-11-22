@@ -1,21 +1,21 @@
 {
   "id": "Decision Transparency",
   "title": "Decision Transparency",
-  "content": "- ### OntologyBlock\n  id:: decision-transparency-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0822\n    - preferred-term:: Decision Transparency\n    - source-domain:: ai\n    - status:: approved\n    - version:: 1.0\n    - last-updated:: 2025-11-18\n\n  - **Definition**\n    - definition:: Decision Transparency represents the degree to which AI system decision-making processes, logic, and rationale are observable, understandable, and accessible to relevant stakeholders including affected individuals, auditors, and regulators. This principle requires AI systems to provide meaningful explanations of automated decisions, disclose the data sources, algorithms, and criteria used in decision-making, and enable verification of decision pathways through audit trails and documentation. Decision transparency encompasses both technical transparency (model architecture, training data, feature importance, algorithmic logic) and organizational transparency (governance frameworks, accountability structures, human oversight mechanisms). In regulatory contexts, decision transparency is mandated by GDPR Article 15 (right to explanation), EU AI Act Article 13 (transparency obligations for high-risk systems), and NIST AI RMF MAP function requirements for documentation and communication. Implementation mechanisms include explainable AI (XAI) techniques such as SHAP values, LIME, attention visualization, and counterfactual explanations, coupled with algorithmic impact assessments, model cards, datasheets, and audit logs. Decision transparency must balance competing requirements for intellectual property protection, security considerations, and meaningful accessibility for non-technical stakeholders while maintaining sufficient detail to enable effective oversight and accountability, as formalized in ISO/IEC 23894:2023 guidelines for AI transparency.\n    - maturity:: mature\n    - source:: [[GDPR Article 15]], [[EU AI Act Article 13]], [[ISO/IEC 23894:2023]], [[NIST AI RMF]]\n    - authority-score:: 0.95\n\n\n### Relationships\n- is-subclass-of:: [[AIFairness]]\n\n## Decision Transparency\n\nDecision Transparency refers to the degree to which AI system decision-making processes are observable and understandable to stakeholders.\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n\n## Technical Details\n\n- **Id**: decisiontransparency-ontology\n- **Collapsed**: true\n- **Domain Prefix**: AI\n- **Sequence Number**: 0822\n- **Filename History**: [\"AI-0822-decisiontransparency.md\"]\n- **Public Access**: true\n- **Source Domain**: ai\n- **Status**: complete\n- **Last Updated**: 2025-11-13\n- **Maturity**: established\n- **Source**: Chimera Prime Research\n- **Authority Score**: 0.95\n- **Owl:Class**: ai:DecisionTransparency\n- **Belongstodomain**: [[Artificial Intelligence]]",
+  "content": "- ### OntologyBlock\n  id:: decision-transparency-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0822\n\t- preferred-term:: Decision Transparency\n\t- status:: approved\n\t- public-access:: true\n\t- definition:: Decision Transparency represents the degree to which AI system decision-making processes, logic, and rationale are observable, understandable, and accessible to relevant stakeholders including affected individuals, auditors, and regulators. This principle requires AI systems to provide meaningful explanations of automated decisions, disclose the data sources, algorithms, and criteria used in decision-making, and enable verification of decision pathways through audit trails and documentation. Decision transparency encompasses both technical transparency (model architecture, training data, feature importance, algorithmic logic) and organizational transparency (governance frameworks, accountability structures, human oversight mechanisms). In regulatory contexts, decision transparency is mandated by GDPR Article 15 (right to explanation), EU AI Act Article 13 (transparency obligations for high-risk systems), and NIST AI RMF MAP function requirements for documentation and communication. Implementation mechanisms include explainable AI (XAI) techniques such as SHAP values, LIME, attention visualization, and counterfactual explanations, coupled with algorithmic impact assessments, model cards, datasheets, and audit logs. Decision transparency must balance competing requirements for intellectual property protection, security considerations, and meaningful accessibility for non-technical stakeholders while maintaining sufficient detail to enable effective oversight and accountability, as formalized in ISO/IEC 23894:2023 guidelines for AI transparency.\n\t- source:: [[GDPR Article 15]], [[EU AI Act Article 13]], [[ISO/IEC 23894:2023]], [[NIST AI RMF]]\n\t- maturity:: mature\n\t- #### Relationships\n\t  id:: decision-transparency-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AIFairness]]\n\n## Decision Transparency\n\nDecision Transparency refers to the degree to which AI system decision-making processes are observable and understandable to stakeholders.\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n\n## Technical Details\n\n- **Id**: decisiontransparency-ontology\n- **Collapsed**: true\n- **Domain Prefix**: AI\n- **Sequence Number**: 0822\n- **Filename History**: [\"AI-0822-decisiontransparency.md\"]\n- **Public Access**: true\n- **Source Domain**: ai\n- **Status**: complete\n- **Last Updated**: 2025-11-13\n- **Maturity**: established\n- **Source**: Chimera Prime Research\n- **Authority Score**: 0.95\n- **Owl:Class**: ai:DecisionTransparency\n- **Belongstodomain**: [[Artificial Intelligence]]",
   "backlinks": [],
   "wiki_links": [
-    "Artificial Intelligence",
-    "NIST AI RMF",
-    "GDPR Article 15",
-    "AIFairness",
+    "ISO/IEC 23894:2023",
     "EU AI Act Article 13",
-    "ISO/IEC 23894:2023"
+    "AIFairness",
+    "Artificial Intelligence",
+    "GDPR Article 15",
+    "NIST AI RMF"
   ],
   "ontology": {
     "term_id": "AI-0822",
     "preferred_term": "Decision Transparency",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/ai#DecisionTransparency",
     "source_domain": "ai",
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
@@ -23,17 +23,19 @@
     "scope_note": null,
     "status": "approved",
     "maturity": "mature",
-    "version": "1.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-11-18",
+    "last_updated": "2025-11-13",
     "authority_score": 0.95,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "ai:DecisionTransparency",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "AIFairness"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -54,10 +56,8 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

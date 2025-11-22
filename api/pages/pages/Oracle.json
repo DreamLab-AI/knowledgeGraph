@@ -1,0 +1,60 @@
+{
+  "id": "Oracle",
+  "title": "Oracle",
+  "content": "- ### OntologyBlock\n  id:: oracle-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0045\n\t- preferred-term:: Oracle\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: mv:Oracle\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Oracle))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Oracle \"Oracle\"@en)\n(AnnotationAssertion rdfs:comment :Oracle \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Oracle \"mv-1761742247950\"^^xsd:string)\n```",
+  "backlinks": [
+    "AI Model Card",
+    "Runes and Glyphs",
+    "BC-0434-blockchain-as-a-service",
+    "Decentralized Exchange (DEX)"
+  ],
+  "wiki_links": [
+    "MetaverseDomain"
+  ],
+  "ontology": {
+    "term_id": "MV-0045",
+    "preferred_term": "Oracle",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#Oracle",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "A component of the metaverse ecosystem.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:Oracle",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

@@ -1,13 +1,13 @@
 {
   "id": "BC-0093-archival-node",
   "title": "Archival Node",
-  "content": "- ### OntologyBlock\n  id:: archival-node-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: BC-0093\n    - preferred-term:: Archival Node\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: Complete history storage node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:ArchivalNode\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[CryptographicDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### Relationships\n    id:: relationships\n    - is-subclass-of:: [[Node]]\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Networkcomponent]] via is-subclass-of\n\n  -",
+  "content": "- ### OntologyBlock\n  id:: archival-node-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0093\n\t- preferred-term:: Archival Node\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Complete history storage node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:ArchivalNode\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[CryptographicDomain]]\n\t- #### Relationships\n\t  id:: archival-node-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Node]]\n\t\t- bridges-to:: [[Networkcomponent]]",
   "backlinks": [],
   "wiki_links": [
-    "ISO/IEC 23257:2021",
-    "CryptographicDomain",
-    "Node",
     "NIST NISTIR",
+    "Node",
+    "CryptographicDomain",
+    "ISO/IEC 23257:2021",
     "Networkcomponent",
     "IEEE 2418.1"
   ],
@@ -16,17 +16,17 @@
     "preferred_term": "Archival Node",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/blockchain#ArchivalNode",
-    "source_domain": "blockchain",
-    "domain": "blockchain",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
     "definition": "Complete history storage node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
     "scope_note": null,
     "status": "complete",
     "maturity": "mature",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-10-28",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "bc:ArchivalNode",
@@ -42,9 +42,7 @@
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [
-      "Networkcomponent via is"
-    ],
+    "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
@@ -56,10 +54,16 @@
       "IEEE 2418.1",
       "NIST NISTIR"
     ],
+    "other_relationships": {
+      "bridges-to": [
+        "Networkcomponent"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+        "Missing required property: source-domain",
+        "Missing required property: last-updated"
       ]
     }
   }

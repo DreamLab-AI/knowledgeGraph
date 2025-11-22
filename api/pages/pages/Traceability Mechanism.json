@@ -1,25 +1,25 @@
 {
   "id": "Traceability Mechanism",
   "title": "Traceability Mechanism",
-  "content": "- ### OntologyBlock\n  id:: traceability-mechanism-ontology\n  collapsed:: true\n\n  - **Identification**\n    - ontology:: true\n    - term-id:: PC-0013\n    - preferred-term:: Traceability Mechanism\n    - source-domain:: metaverse\n    - status:: complete\n    - public-access:: true\n    - version:: 1.0.0\n    - last-updated:: 2025-11-08\n\n  - **Definition**\n    - definition:: A Traceability Mechanism is a systematic approach for recording, maintaining, and retrieving comprehensive documentation of an AI system's development process, data lineage, decision-making logic, and operational history to enable accountability, auditability, and debugging. Traceability addresses a critical challenge in AI governance: when an AI system produces harmful or unexpected outputs, stakeholders must be able to trace back through the causal chain to understand why the system behaved as it did, identify responsible parties, and implement corrective measures. Traceability mechanisms encompass data provenance tracking (recording origins, transformations, and quality of training data), model versioning (maintaining records of architectures, hyperparameters, and training procedures), decision logging (capturing inputs, outputs, and intermediate states for individual predictions), and audit trails (documenting who made what changes when and why). Effective traceability requires balancing competing concerns: comprehensive documentation versus storage and computational costs, transparency versus intellectual property protection, detailed logging versus privacy preservation, and real-time accessibility versus long-term archival. Regulatory frameworks increasingly mandate traceability: the EU AI Act requires high-risk systems to maintain logs enabling ex-post verification, GDPR grants individuals rights to explanations of automated decisions, and sector-specific regulations impose record-keeping requirements for compliance demonstration.\n    - maturity:: mature\n    - source:: [[EU AI Act]], [[ISO/IEC 23053 AI Framework]], [[NIST AI Risk Management Framework]], [[IEEE 2801 Recommended Practice]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: aigo:TraceabilityMechanism\n    - owl:physicality:: ConceptualEntity\n    - owl:role:: Concept\n    - owl:inferred-class:: ConceptualConcept\n    - is-subclass-of:: [[Metaverse]]\n    - belongsToDomain:: [[AIEthicsDomain]]\n\n  - #### OWL Restrictions\n    \n\n  -",
+  "content": "- ### OntologyBlock\n  id:: traceability-mechanism-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: PC-0013\n\t- preferred-term:: Traceability Mechanism\n\t- source-domain:: pc\n\t- status:: complete\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: aigo:TraceabilityMechanism\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- owl:inferred-class:: ConceptualConcept\n\n### Domain & Architecture\n\t- belongsToDomain:: [[AIEthicsDomain]]\n\t- maturity:: mature\n\n### Relationships\n\n### Quality Metrics\n\t- authority-score:: 0.95\n\n- ### OntologyBlock\n  id:: traceability-mechanism-ontology\n  collapsed:: true\n\n  - **Identification**\n    - ontology:: true\n    - term-id:: PC-0013\n    - preferred-term:: Traceability Mechanism\n    - source-domain:: metaverse\n    - status:: complete\n    - public-access:: true\n    - version:: 1.0.0\n    - last-updated:: 2025-11-08\n\n  - **Definition**\n    - definition:: A Traceability Mechanism is a systematic approach for recording, maintaining, and retrieving comprehensive documentation of an AI system's development process, data lineage, decision-making logic, and operational history to enable accountability, auditability, and debugging. Traceability addresses a critical challenge in AI governance: when an AI system produces harmful or unexpected outputs, stakeholders must be able to trace back through the causal chain to understand why the system behaved as it did, identify responsible parties, and implement corrective measures. Traceability mechanisms encompass data provenance tracking (recording origins, transformations, and quality of training data), model versioning (maintaining records of architectures, hyperparameters, and training procedures), decision logging (capturing inputs, outputs, and intermediate states for individual predictions), and audit trails (documenting who made what changes when and why). Effective traceability requires balancing competing concerns: comprehensive documentation versus storage and computational costs, transparency versus intellectual property protection, detailed logging versus privacy preservation, and real-time accessibility versus long-term archival. Regulatory frameworks increasingly mandate traceability: the EU AI Act requires high-risk systems to maintain logs enabling ex-post verification, GDPR grants individuals rights to explanations of automated decisions, and sector-specific regulations impose record-keeping requirements for compliance demonstration.\n    - maturity:: mature\n    - source:: [[EU AI Act]], [[ISO/IEC 23053 AI Framework]], [[NIST AI Risk Management Framework]], [[IEEE 2801 Recommended Practice]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: aigo:TraceabilityMechanism\n    - owl:physicality:: ConceptualEntity\n    - owl:role:: Concept\n    - owl:inferred-class:: ConceptualConcept\n    - is-subclass-of:: [[Metaverse]]\n    - belongsToDomain:: [[AIEthicsDomain]]\n\n  - #### OWL Restrictions\n    \n\n  -",
   "backlinks": [
     "AI Governance Principle"
   ],
   "wiki_links": [
-    "NIST AI Risk Management Framework",
-    "AIEthicsDomain",
-    "IEEE 2801 Recommended Practice",
-    "ISO/IEC 23053 AI Framework",
     "Metaverse",
-    "EU AI Act"
+    "EU AI Act",
+    "ISO/IEC 23053 AI Framework",
+    "IEEE 2801 Recommended Practice",
+    "NIST AI Risk Management Framework",
+    "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "PC-0013",
     "preferred_term": "Traceability Mechanism",
     "alt_terms": [],
     "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
+    "source_domain": "pc",
+    "domain": "pc",
     "domain_full_name": "",
     "definition": "A Traceability Mechanism is a systematic approach for recording, maintaining, and retrieving comprehensive documentation of an AI system's development process, data lineage, decision-making logic, and operational history to enable accountability, auditability, and debugging. Traceability addresses a critical challenge in AI governance: when an AI system produces harmful or unexpected outputs, stakeholders must be able to trace back through the causal chain to understand why the system behaved as it did, identify responsible parties, and implement corrective measures. Traceability mechanisms encompass data provenance tracking (recording origins, transformations, and quality of training data), model versioning (maintaining records of architectures, hyperparameters, and training procedures), decision logging (capturing inputs, outputs, and intermediate states for individual predictions), and audit trails (documenting who made what changes when and why). Effective traceability requires balancing competing concerns: comprehensive documentation versus storage and computational costs, transparency versus intellectual property protection, detailed logging versus privacy preservation, and real-time accessibility versus long-term archival. Regulatory frameworks increasingly mandate traceability: the EU AI Act requires high-risk systems to maintain logs enabling ex-post verification, GDPR grants individuals rights to explanations of automated decisions, and sector-specific regulations impose record-keeping requirements for compliance demonstration.",
     "scope_note": null,
@@ -46,6 +46,7 @@
     "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
+      "AIEthicsDomain",
       "AIEthicsDomain"
     ],
     "implemented_in_layer": [],
@@ -59,7 +60,7 @@
       "is_valid": false,
       "errors": [
         "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'aigo' doesn't match source-domain 'metaverse'"
+        "owl:class namespace 'aigo' doesn't match source-domain 'pc'"
       ]
     }
   }

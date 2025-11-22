@@ -1,0 +1,57 @@
+{
+  "id": "Power-Efficient AI (AI-0440)",
+  "title": "Power-Efficient AI (AI-0440)",
+  "content": "- ### OntologyBlock\n  id:: power-efficient-ai-ai-0440-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0440\n\t- preferred-term:: Power-Efficient AI (AI-0440)\n\t- status:: in\n\t- public-access:: true\n\t- definition:: Power-Efficient AI optimizes machine learning systems to minimize energy consumption during inference and training, critical for battery-powered edge devices, IoT sensors, and mobile platforms requiring extended deployment lifetimes. Power-efficient designs target both computational energy (processor operations consuming 50-80% of power budget) and memory access energy (data movement between caches and main memory consuming 20-40%), recognizing that modern systems dissipate more energy moving data than computing. Techniques include dynamic voltage and frequency scaling (DVFS) that adjust processor frequency based on inference demands, power gating that completely deactivates unused hardware components, and event-driven inference that only activates computation when sensor data indicates significant events. Energy efficiency measured in TOPS/Watt (tera-operations per watt) quantifies inference throughput per unit power. Model-level optimizations employ low-precision arithmetic (INT8, FP16 instead of FP32), reducing both computation and memory energy. Hardware accelerators like specialized AI chips achieve 10-50x energy efficiency versus general-purpose processors through reduced datapath widths and specialized operations. Battery-powered IoT systems achieving month-to-year deployment lifetimes require sub-10mW average power budgets, feasible only through extreme energy optimization. Applications include medical wearables, autonomous drones, environmental sensors, and wildlife tracking tags. Energy harvesting systems combining low-power inference with solar or kinetic energy enable perpetual operation. Power-efficient AI is fundamental to sustainable computing, enabling intelligent systems in remote locations without frequent battery replacement or maintenance.\n\t- maturity:: mature\n\t- owl:class:: aigo:PowerEfficientAI\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: aigo:VirtualProcess\n\t- belongsToDomain:: [[AIEthicsDomain]]\n\t- implementedInLayer:: [[ConceptualLayer]]\n\n## Power-Efficient AI (AI-0440)\n\nPower-Efficient AI (AI-0440) refers to power-efficient ai optimizes machine learning systems to minimize energy consumption during inference and training, critical for battery-powered edge devices, iot sensors, and mobile platforms requiring extended deployment lifetimes. power-efficient designs target both computational energy (processor operations consuming 50-80% of power budget) and memory access energy (data movement between caches and main memory consuming 20-40%), recognizing that modern systems dissipate more energy moving data than computing. techniques include dynamic voltage and frequency scaling (dvfs) that adjust processor frequency based on inference demands, power gating that completely deactivates unused hardware components, and event-driven inference that only activates computation when sensor data indicates significant events. energy efficiency measured in tops/watt (tera-operations per watt) quantifies inference throughput per unit power. model-level optimizations employ low-precision arithmetic (int8, fp16 instead of fp32), reducing both computation and memory energy. hardware accelerators like specialized ai chips achieve 10-50x energy efficiency versus general-purpose processors through reduced datapath widths and specialized operations. battery-powered iot systems achieving month-to-year deployment lifetimes require sub-10mw average power budgets, feasible only through extreme energy optimization. applications include medical wearables, autonomous drones, environmental sensors, and wildlife tracking tags. energy harvesting systems combining low-power inference with solar or kinetic energy enable perpetual operation. power-efficient ai is fundamental to sustainable computing, enabling intelligent systems in remote locations without frequent battery replacement or maintenance.\n\n- Training infrastructure requirements\n  - 2030 projections suggest training runs of approximately 2×10²⁹ FLOP requiring around 6 GW of power[1]\n  - Power constraint identified as the primary limiting factor for continued scaling, followed by chip manufacturing capacity[1]\n- Energy efficiency considerations\n  - Data centre Power Usage Effectiveness (PUE) ratios typically range from 1.10 onwards, with overhead for cooling, distribution, and infrastructure[2]\n  - Model architecture choices significantly impact efficiency—Mixture-of-Experts designs activate only specialised parameter subsets, reducing computational demand[2]\n  - Hardware optimisation strategies show counterintuitive trade-offs between response speed and energy per query[2]\n\n## Technical Details\n\n- **Id**: power-efficient-ai-(ai-0440)-about\n- **Collapsed**: true\n- **Domain Prefix**: AI\n- **Sequence Number**: 0440\n- **Filename History**: [\"AI-0440-power-efficient-ai.md\"]\n- **Public Access**: true\n- **Source Domain**: ai\n- **Status**: in-progress\n- **Last Updated**: 2025-10-29\n- **Maturity**: mature\n- **Source**:\n- **Authority Score**: 0.95\n- **Owl:Class**: aigo:PowerEfficientAI\n- **Owl:Physicality**: VirtualEntity\n- **Owl:Role**: Process\n- **Owl:Inferred Class**: aigo:VirtualProcess\n- **Belongstodomain**: [[AIEthicsDomain]]\n- **Implementedinlayer**: [[ConceptualLayer]]\n\n## Research & Literature\n\n- International Energy Agency (2025). *Energy and AI*. Special Report with comprehensive modelling of data centre electricity demand through 2035[3]\n- Epoch AI analysis on scaling feasibility through 2030, examining power supply constraints and infrastructure requirements[1]\n**To proceed with your full ontology revision, please provide the existing AI-0440 entry content.**\n\n## Metadata\n\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "ConceptualLayer",
+    "AIEthicsDomain"
+  ],
+  "ontology": {
+    "term_id": "AI-0440",
+    "preferred_term": "Power-Efficient AI (AI-0440)",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#aigo:PowerEfficientAI",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Power-Efficient AI optimizes machine learning systems to minimize energy consumption during inference and training, critical for battery-powered edge devices, IoT sensors, and mobile platforms requiring extended deployment lifetimes. Power-efficient designs target both computational energy (processor operations consuming 50-80% of power budget) and memory access energy (data movement between caches and main memory consuming 20-40%), recognizing that modern systems dissipate more energy moving data than computing. Techniques include dynamic voltage and frequency scaling (DVFS) that adjust processor frequency based on inference demands, power gating that completely deactivates unused hardware components, and event-driven inference that only activates computation when sensor data indicates significant events. Energy efficiency measured in TOPS/Watt (tera-operations per watt) quantifies inference throughput per unit power. Model-level optimizations employ low-precision arithmetic (INT8, FP16 instead of FP32), reducing both computation and memory energy. Hardware accelerators like specialized AI chips achieve 10-50x energy efficiency versus general-purpose processors through reduced datapath widths and specialized operations. Battery-powered IoT systems achieving month-to-year deployment lifetimes require sub-10mW average power budgets, feasible only through extreme energy optimization. Applications include medical wearables, autonomous drones, environmental sensors, and wildlife tracking tags. Energy harvesting systems combining low-power inference with solar or kinetic energy enable perpetual operation. Power-efficient AI is fundamental to sustainable computing, enabling intelligent systems in remote locations without frequent battery replacement or maintenance.",
+    "scope_note": null,
+    "status": "in",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": "2025-10-29",
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "aigo:PowerEfficientAI",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Process",
+    "owl_inferred_class": "aigo:VirtualProcess",
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "AIEthicsDomain"
+    ],
+    "implemented_in_layer": [
+      "ConceptualLayer"
+    ],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'aigo' doesn't match source-domain 'ai'"
+      ]
+    }
+  }
+}

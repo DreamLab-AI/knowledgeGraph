@@ -1,16 +1,15 @@
 {
   "id": "Tokenomics",
   "title": "Tokenomics",
-  "content": "- ### OntologyBlock\n  id:: tokenomics-ontology\n  collapsed:: true\n\n  - **Identification**\n    - domain-prefix:: BC\n    - sequence-number:: 0576\n    - filename-history:: [\"BC-0576-tokenomics.md\"]\n    - public-access:: true\n    - ontology:: true\n    - is-subclass-of:: [[BlockchainTechnology]]\n    - term-id:: BC-0576\n    - preferred-term:: Tokenomics\n    - source-domain:: blockchain\n    - status:: complete\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: Economic model of token systems.\n    - maturity:: established\n    - source:: Chimera Prime Research\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Tokenomics\n    - belongsToDomain:: [[Blockchain]]\n\n  - #### CrossDomainBridges\n    - bridges-from:: [[PlayToEarnP2e]] via has-part\n\n  - #### Relationships\n\n  - #### OWL Axioms\n    - ```clojure\n      ; Class Declaration\n      (Declaration (Class :Tokenomics))\n      \n      ; Annotations\n      (AnnotationAssertion rdfs:label :Tokenomics \"Tokenomics\"@en)\n      (AnnotationAssertion rdfs:comment :Tokenomics\n        \"Economic model of token systems.\"@en)\n      ```",
+  "content": "- ### OntologyBlock\n  id:: tokenomics-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0576\n\t- preferred-term:: Tokenomics\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Economic model of token systems.\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: bc:Tokenomics\n\t- belongsToDomain:: [[Blockchain]]",
   "backlinks": [
+    "BC 0114 burning mechanism",
+    "BC 0116 total supply",
     "Runes and Glyphs",
-    "BC 0112 inflationary token",
-    "ETSI Domain Virtual Society",
+    "Play-to-Earn (P2E)",
     "BC 0117 circulating supply"
   ],
   "wiki_links": [
-    "PlayToEarnP2e",
-    "BlockchainTechnology",
     "Blockchain"
   ],
   "ontology": {
@@ -18,17 +17,17 @@
     "preferred_term": "Tokenomics",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/blockchain#Tokenomics",
-    "source_domain": "blockchain",
-    "domain": "blockchain",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
     "definition": "Economic model of token systems.",
     "scope_note": null,
     "status": "complete",
     "maturity": "established",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-11-13",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "bc:Tokenomics",
@@ -43,9 +42,7 @@
     "enables": [],
     "relates_to": [],
     "bridges_to": [],
-    "bridges_from": [
-      "PlayToEarnP2e via has"
-    ],
+    "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
       "Blockchain"
@@ -57,10 +54,11 @@
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

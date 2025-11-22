@@ -1,35 +1,30 @@
 {
   "id": "Coin",
   "title": "Coin",
-  "content": "- ### OntologyBlock\n  id:: coin-ontology\n  collapsed:: true\n\n  - **Identification**\n\n    - domain-prefix:: BC\n\n    - sequence-number:: 0098\n\n    - filename-history:: [\"BC-0098-coin.md\"]\n    - ontology:: true\n    - is-subclass-of:: [[BlockchainTechnology]]\n    - term-id:: BC-0098\n    - preferred-term:: Coin\n    - source-domain:: blockchain\n    - status:: complete\n    - public-access:: true\n    - version:: 1.0.0\n    - last-updated:: 2025-11-13\n\n  - **Definition**\n    - definition:: Native blockchain asset within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n    - maturity:: mature\n    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: bc:Coin\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Object\n    - owl:inferred-class:: bc:VirtualObject\n    - belongsToDomain:: [[TokenEconomicsDomain]]\n\n  - #### OWL Restrictions\n    \n    \n\n  - #### CrossDomainBridges\n    - bridges-to:: [[Economicmechanism]] via is-subclass-of\n    - bridges-to:: [[BlockchainEntity]] via is-subclass-of\n\n  -",
-  "backlinks": [
-    "Blockchain Entity"
-  ],
+  "content": "- ### OntologyBlock\n  id:: coin-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0098\n\t- preferred-term:: Coin\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Native blockchain asset within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:Coin\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[TokenEconomicsDomain]]",
+  "backlinks": [],
   "wiki_links": [
-    "Economicmechanism",
-    "ISO/IEC 23257:2021",
     "NIST NISTIR",
-    "BlockchainTechnology",
     "TokenEconomicsDomain",
-    "IEEE 2418.1",
-    "BlockchainEntity"
+    "ISO/IEC 23257:2021",
+    "IEEE 2418.1"
   ],
   "ontology": {
     "term_id": "BC-0098",
     "preferred_term": "Coin",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/blockchain#Coin",
-    "source_domain": "blockchain",
-    "domain": "blockchain",
-    "domain_full_name": "",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
     "definition": "Native blockchain asset within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
     "scope_note": null,
     "status": "complete",
     "maturity": "mature",
-    "version": "1.0.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-11-13",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "bc:Coin",
@@ -43,10 +38,7 @@
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [
-      "Economicmechanism via is",
-      "BlockchainEntity via is"
-    ],
+    "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
     "belongs_to_domain": [
@@ -61,8 +53,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

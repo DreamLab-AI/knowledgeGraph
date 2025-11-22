@@ -1,7 +1,7 @@
 {
   "id": "TELE-302-shared-whiteboards",
   "title": "Shared Whiteboards",
-  "content": "# Shared Whiteboards\n\n- ### OntologyBlock\n  id:: shared-whiteboards-ontology\n  collapsed:: true\n  - ontology:: true\n    - is-subclass-of:: [[DisruptiveTechnology]]\n  - term-id:: TELE-302\n  - preferred-term:: Shared Whiteboards\n  - alternate-terms::\n  - Virtual Whiteboards\n  - Collaborative Whiteboards\n  - Digital Canvases\n  - source-domain:: tele\n  - status:: active\n  - public-access:: true\n  - definition:: \"Digital canvases in telepresence platforms enabling distributed team members to simultaneously draw, write, annotate, and manipulate visual content (text, images, diagrams, sticky notes) in real-time, replicating physical whiteboard collaboration dynamics through multi-user synchronisation and persistent storage of collaborative artefacts.\"\n  - maturity:: mature\n  - authority-score:: 0.86\n  - owl:class:: tele:SharedWhiteboards\n  - owl:physicality:: VirtualEntity\n  - owl:role:: Object\n  - belongsToDomain::\n  - [[TELE-0000-telepresence-domain]]\n  - [[DigitalTwinCollaboration]]\n  - bridges-to::\n  - [[AIDomain]]\n\n\n## Definition\n\n**Shared Whiteboards** are collaborative visual workspaces in telepresence platforms ([[TELE-028-horizon-workrooms]], Miro, Mural, FigJam) where distributed teams brainstorm, diagram, and organise ideas through synchronous multi-user editing. Unlike static documents, whiteboards support freeform drawing, sticky note clustering, and spatial arrangement, enabling visual thinking and collaborative sensemaking across distance.\n\n## Platforms\n\n- **VR**: Horizon Workrooms, Microsoft Mesh (3D whiteboards in virtual rooms)\n- **2D Web**: Miro, Mural, FigJam, Google Jamboard\n- **Hybrid**: iPad/Apple Pencil input mirrored to web viewers\n\n## Features\n\n- **Real-Time Collaboration**: Multiple cursors, live updates\n- **Infinite Canvas**: Unlimited workspace (zoom in/out)\n- **Templates**: Brainstorming, SWOT analysis, user journey maps\n- **AI Assistance**: Auto-generate diagrams, summarise sticky notes\n\n## Related Concepts\n\n- [[TELE-002-telecollaboration]]\n- [[TELE-028-horizon-workrooms]]\n- [[TELE-301-virtual-office-spaces]]\n\n## Metadata\n\n- **Term-ID**: TELE-302\n- **Last Updated**: 2025-11-16\n- **Maturity**: Mature\n- **Authority Score**: 0.86",
+  "content": "- ### OntologyBlock\n  id:: shared-whiteboards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TELE-302\n\t- preferred-term:: Shared Whiteboards\n\t- source-domain:: tc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: \"Digital canvases in telepresence platforms enabling distributed team members to simultaneously draw, write, annotate, and manipulate visual content (text, images, diagrams, sticky notes) in real-time, replicating physical whiteboard collaboration dynamics through multi-user synchronisation and persistent storage of collaborative artefacts.\"\n\t- maturity:: mature\n\t- owl:class:: tele:SharedWhiteboards\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\n## Definition\n\n**Shared Whiteboards** are collaborative visual workspaces in telepresence platforms ([[TELE-028-horizon-workrooms]], Miro, Mural, FigJam) where distributed teams brainstorm, diagram, and organise ideas through synchronous multi-user editing. Unlike static documents, whiteboards support freeform drawing, sticky note clustering, and spatial arrangement, enabling visual thinking and collaborative sensemaking across distance.\n\n## Platforms\n\n- **VR**: Horizon Workrooms, Microsoft Mesh (3D whiteboards in virtual rooms)\n- **2D Web**: Miro, Mural, FigJam, Google Jamboard\n- **Hybrid**: iPad/Apple Pencil input mirrored to web viewers\n\n## Features\n\n- **Real-Time Collaboration**: Multiple cursors, live updates\n- **Infinite Canvas**: Unlimited workspace (zoom in/out)\n- **Templates**: Brainstorming, SWOT analysis, user journey maps\n- **AI Assistance**: Auto-generate diagrams, summarise sticky notes\n\n## Related Concepts\n\n- [[TELE-002-telecollaboration]]\n- [[TELE-028-horizon-workrooms]]\n- [[TELE-301-virtual-office-spaces]]\n\n## Metadata\n\n- **Term-ID**: TELE-302\n- **Last Updated**: 2025-11-16\n- **Maturity**: Mature\n- **Authority Score**: 0.86",
   "backlinks": [
     "TELE-301-virtual-office-spaces",
     "TELE-CONV-001-metaverse-telepresence-bridge",
@@ -10,22 +10,18 @@
     "TELE-002-telecollaboration"
   ],
   "wiki_links": [
-    "AIDomain",
     "TELE-301-virtual-office-spaces",
-    "DisruptiveTechnology",
-    "TELE-0000-telepresence-domain",
-    "TELE-028-horizon-workrooms",
-    "DigitalTwinCollaboration",
-    "TELE-002-telecollaboration"
+    "TELE-002-telecollaboration",
+    "TELE-028-horizon-workrooms"
   ],
   "ontology": {
     "term_id": "TELE-302",
     "preferred_term": "Shared Whiteboards",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "tele",
-    "domain": "tele",
-    "domain_full_name": "",
+    "iri": "http://narrativegoldmine.com/telecollaboration#tele:SharedWhiteboards",
+    "source_domain": "tc",
+    "domain": "tc",
+    "domain_full_name": "Telecollaboration",
     "definition": "\"Digital canvases in telepresence platforms enabling distributed team members to simultaneously draw, write, annotate, and manipulate visual content (text, images, diagrams, sticky notes) in real-time, replicating physical whiteboard collaboration dynamics through multi-user synchronisation and persistent storage of collaborative artefacts.\"",
     "scope_note": null,
     "status": "active",
@@ -33,7 +29,7 @@
     "version": null,
     "public_access": true,
     "last_updated": null,
-    "authority_score": 0.86,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "tele:SharedWhiteboards",
@@ -50,16 +46,16 @@
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [
-      "TELE-0000-telepresence-domain"
-    ],
+    "belongs_to_domain": [],
     "implemented_in_layer": [],
     "source": [],
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id 'TELE-302' doesn't match domain 'tc' (expected TC-)",
+        "owl:class namespace 'tele' doesn't match source-domain 'tc'"
       ]
     }
   }

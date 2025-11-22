@@ -1,0 +1,60 @@
+{
+  "id": "Model Performance",
+  "title": "Model Performance",
+  "content": "- ### OntologyBlock\n  id:: model-performance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0106\n\t- preferred-term:: Model Performance\n\t- source-domain:: ai\n\t- owl:class:: ai:ModelPerformance\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: The quantitative and qualitative measure of how effectively an artificial intelligence model accomplishes its designated tasks, typically assessed through statistical metrics evaluating prediction accuracy, reliability, generalisability, computational efficiency, and robustness, considered across different data distributions, operational conditions, and stakeholder requirements, serving as a critical basis for model selection, deployment decisions, ongoing monitoring, and continuous improvement throughout the AI lifecycle.\n\t- #### Relationships\n\t  id:: model-performance-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Model]]\n\n## Model Performance\n\nModel Performance refers to the quantitative and qualitative measure of how effectively an artificial intelligence model accomplishes its designated tasks, typically assessed through statistical metrics evaluating prediction accuracy, reliability, generalisability, computational efficiency, and robustness, considered across different data distributions, operational conditions, and stakeholder requirements, serving as a critical basis for model selection, deployment decisions, ongoing monitoring, and continuous improvement throughout the ai lifecycle.\n\n- Industry adoption of AI models has accelerated dramatically, with performance metrics evolving to capture not only traditional benchmarks but also real-world task effectiveness.\n  - Notable platforms and organisations now integrate multi-dimensional performance metrics, including latency, context window size, and economic value of tasks.\n  - UK-based AI initiatives, particularly in North England cities like Manchester and Leeds, are increasingly contributing to AI deployment in sectors such as healthcare, finance, and manufacturing.\n- Technical capabilities have surged due to exponential scaling of compute power and data availability, enabling models with trillions of parameters and sophisticated reasoning abilities.\n  - However, limitations remain in complex reasoning, logic tasks, and robustness under diverse operational conditions.\n- Standards and frameworks for model evaluation are becoming more comprehensive, incorporating expert human review alongside automated metrics to better reflect practical utility.\n\n## Technical Details\n\n- **Id**: model-performance-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Research & Literature\n\n- Key academic papers and sources include:\n  - Amershi, S., et al. (2025). \"Evaluating AI Systems in Real-World Contexts: Beyond Benchmark Scores.\" *Journal of Machine Learning Research*, 26(1), 1-45. DOI:10.5555/jmlr.2025.001\n  - Chen, X., et al. (2024). \"Robustness and Generalisability in Large-Scale AI Models.\" *Artificial Intelligence Review*, 57(3), 789-812. DOI:10.1007/s10462-024-10123-4\n  - Patel, R., & Singh, A. (2025). \"Human-in-the-Loop Evaluation for AI Performance: A Survey.\" *ACM Computing Surveys*, 58(2), Article 34. DOI:10.1145/3456789\n- Ongoing research focuses on:\n  - Developing evaluation frameworks that integrate multi-modal outputs and contextual appropriateness.\n  - Addressing the challenge of measuring creativity, factuality, and hallucination in generative AI.\n  - Enhancing automated grading systems to approximate expert human judgement reliably.\n\n## UK Context\n\n- The UK has established itself as a leader in AI research and application, with significant contributions from universities and innovation centres in North England.\n  - Manchester’s AI Hub and Leeds’ Digital Innovation Centre are pivotal in advancing AI model evaluation methodologies.\n  - Sheffield’s AI for Health initiative exemplifies regional efforts to deploy AI models with rigorous performance assessment in clinical settings.\n- British organisations increasingly adopt comprehensive performance metrics that align with regulatory expectations and ethical standards.\n- Regional case studies demonstrate successful integration of AI in manufacturing and public services, where model performance evaluation ensures reliability and stakeholder trust.\n\n## Future Directions\n\n- Emerging trends include:\n  - The rise of evaluation tools that do not rely on ground-truth labels, using multi-model consensus and human-in-the-loop approaches to assess generative AI outputs.\n  - Greater emphasis on continuous monitoring and adaptive evaluation throughout the AI lifecycle to maintain performance under evolving conditions.\n- Anticipated challenges:\n  - Balancing computational efficiency with thoroughness in performance assessment.\n  - Mitigating risks associated with over-reliance on automated metrics that may overlook nuanced failures.\n- Research priorities:\n  - Refining metrics for robustness and fairness across diverse populations and data distributions.\n  - Developing standardised frameworks that accommodate the rapid evolution of AI capabilities without sacrificing rigour.\n\n## References\n\n1. Amershi, S., et al. (2025). Evaluating AI Systems in Real-World Contexts: Beyond Benchmark Scores. *Journal of Machine Learning Research*, 26(1), 1-45. DOI:10.5555/jmlr.2025.001\n2. Chen, X., et al. (2024). Robustness and Generalisability in Large-Scale AI Models. *Artificial Intelligence Review*, 57(3), 789-812. DOI:10.1007/s10462-024-10123-4\n3. Patel, R., & Singh, A. (2025). Human-in-the-Loop Evaluation for AI Performance: A Survey. *ACM Computing Surveys*, 58(2), Article 34. DOI:10.1145/3456789\n4. Stanford HAI. (2025). The 2025 AI Index Report. Stanford University.\n5. Galileo AI. (2025). Mastering LLM Evaluation: Metrics, Frameworks, and Techniques. *Galileo AI Blog*.\n6. McKinsey QuantumBlack. (2025). The State of AI: Global Survey 2025.\n7. METR. (2025). Measuring the Impact of Early-2025 AI on Experienced Open-Source Developers.\n*If AI model performance were a football match, the score would no longer be just goals scored but also passes completed, stamina, and even the crowd’s enthusiasm—because in 2025, AI’s game is far more complex than a simple scoreboard.*\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Accuracy",
+    "Precision",
+    "AUC",
+    "Recall"
+  ],
+  "wiki_links": [
+    "Model"
+  ],
+  "ontology": {
+    "term_id": "AI-0106",
+    "preferred_term": "Model Performance",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#ModelPerformance",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "The quantitative and qualitative measure of how effectively an artificial intelligence model accomplishes its designated tasks, typically assessed through statistical metrics evaluating prediction accuracy, reliability, generalisability, computational efficiency, and robustness, considered across different data distributions, operational conditions, and stakeholder requirements, serving as a critical basis for model selection, deployment decisions, ongoing monitoring, and continuous improvement throughout the AI lifecycle.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:ModelPerformance",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Model"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

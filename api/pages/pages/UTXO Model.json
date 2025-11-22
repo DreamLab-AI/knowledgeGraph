@@ -1,0 +1,71 @@
+{
+  "id": "UTXO Model",
+  "title": "UTXO Model",
+  "content": "- ### OntologyBlock\n  id:: utxo-model-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0007\n\t- preferred-term:: UTXO Model\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Unspent Transaction Output accounting model within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:UTXOModel\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- implementedInLayer:: [[ConceptualLayer]]\n\t- #### Relationships\n\t  id:: utxo-model-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Entity]]\n\t\t- is-subclass-of:: [[DistributedDataStructure]]\n\n## UTXO Model\n\nUTXO Model refers to unspent transaction output accounting model within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\n- Industry adoption and implementations\n\t- Bitcoin remains the most prominent UTXO-based blockchain, with widespread global adoption\n\t- Cardano’s EUTXO model extends the original UTXO concept to support smart contracts and more complex logic\n\t- The Lightning Network, a second-layer scaling solution for Bitcoin, relies on UTXOs to enable off-chain transactions\n- Notable organisations and platforms\n\t- OSL (Hong Kong-based, but with UK operations) provides institutional-grade Bitcoin trading and custody, leveraging UTXO-based security\n\t- Lightspark, a global infrastructure provider, uses the UTXO model to power instant, global payments via the Lightning Network\n\t- Kaleido, a blockchain platform, offers enterprise solutions that compare UTXO and account-based models for business use cases\n- UK and North England examples where relevant\n\t- Several UK fintech firms, including those in Manchester and Leeds, are exploring UTXO-based solutions for secure, scalable payment systems\n\t- The University of Newcastle has research groups investigating blockchain scalability, with a focus on UTXO and EUTXO models\n\t- Sheffield-based startups are developing blockchain applications for supply chain management, leveraging the privacy and security benefits of UTXO\n- Technical capabilities and limitations\n\t- The UTXO model allows for parallel transaction processing, enhancing scalability\n\t- It provides strong privacy guarantees, as each transaction output is a discrete unit\n\t- Limitations include complexity in managing multiple UTXOs and challenges in implementing certain types of smart contracts\n- Standards and frameworks\n\t- The UTXO model is supported by various blockchain standards and frameworks, including those developed by the Blockchain Research Institute and the International Organization for Standardization (ISO)\n\n## Technical Details\n\n- **Id**: utxo-model-standards\n- **Collapsed**: true\n- **Domain Prefix**: BC\n- **Sequence Number**: 0007\n- **Filename History**: [\"BC-0007-utxo-model.md\"]\n- **Public Access**: true\n- **Source Domain**: blockchain\n- **Status**: complete\n- **Last Updated**: 2025-10-28\n- **Maturity**: mature\n- **Source**: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n- **Authority Score**: 0.95\n- **Owl:Class**: bc:UTXOModel\n- **Owl:Physicality**: VirtualEntity\n- **Owl:Role**: Object\n- **Owl:Inferred Class**: bc:VirtualObject\n- **Belongstodomain**: [[BlockchainDomain]]\n- **Implementedinlayer**: [[ConceptualLayer]]\n- **Is Subclass Of**: [[Blockchain Entity]], [[DistributedDataStructure]]\n\n## Research & Literature\n\n- Key academic papers and sources\n\t- Nakamoto, S. (2008). Bitcoin: A Peer-to-Peer Electronic Cash System. https://bitcoin.org/bitcoin.pdf\n\t- Bentov, I., Gabizon, A., & Mizrahi, A. (2014). Cryptocurrencies without Proof of Work. arXiv:1406.5694. https://arxiv.org/abs/1406.5694\n\t- Miers, I., Garman, C., Green, M., & Rubin, A. D. (2013). Zerocoin: Anonymous Distributed E-Cash from Bitcoin. IEEE Symposium on Security and Privacy. https://doi.org/10.1109/SP.2013.34\n\t- Volker, M., & Zamyatin, A. (2020). The Extended UTXO Model. Cardano Foundation. https://docs.cardano.org/about-cardano/learn/eutxo-explainer\n- Ongoing research directions\n\t- Improving scalability and privacy in UTXO-based blockchains\n\t- Developing more expressive smart contract languages for UTXO and EUTXO models\n\t- Exploring hybrid models that combine the strengths of UTXO and account-based systems\n\n## UK Context\n\n- British contributions and implementations\n\t- UK universities and research institutions are actively contributing to the development and analysis of UTXO-based blockchains\n\t- British fintech firms are leveraging UTXO models for secure, scalable payment solutions\n- North England innovation hubs (if relevant)\n\t- Manchester, Leeds, Newcastle, and Sheffield are emerging as centres for blockchain innovation, with several startups and research groups focusing on UTXO and EUTXO models\n\t- The University of Newcastle’s blockchain research group is investigating scalability and privacy in UTXO-based systems\n- Regional case studies\n\t- A Manchester-based fintech startup is developing a UTXO-based payment platform for cross-border transactions\n\t- A Leeds-based supply chain management company is using UTXO models to enhance the security and transparency of its blockchain solutions\n\n## Future Directions\n\n- Emerging trends and developments\n\t- Increased adoption of UTXO-based blockchains in enterprise and financial applications\n\t- Development of more sophisticated smart contract capabilities within UTXO and EUTXO models\n\t- Exploration of hybrid models that combine the strengths of UTXO and account-based systems\n- Anticipated challenges\n\t- Managing the complexity of multiple UTXOs in large-scale applications\n\t- Ensuring privacy and security in increasingly complex blockchain environments\n\t- Addressing regulatory and compliance requirements for UTXO-based systems\n- Research priorities\n\t- Improving scalability and privacy in UTXO-based blockchains\n\t- Developing more expressive smart contract languages for UTXO and EUTXO models\n\t- Exploring hybrid models that combine the strengths of UTXO and account-based systems\n\n## References\n\n1. Nakamoto, S. (2008). Bitcoin: A Peer-to-Peer Electronic Cash System. https://bitcoin.org/bitcoin.pdf\n2. Bentov, I., Gabizon, A., & Mizrahi, A. (2014). Cryptocurrencies without Proof of Work. arXiv:1406.5694. https://arxiv.org/abs/1406.5694\n3. Miers, I., Garman, C., Green, M., & Rubin, A. D. (2013). Zerocoin: Anonymous Distributed E-Cash from Bitcoin. IEEE Symposium on Security and Privacy. https://doi.org/10.1109/SP.2013.34\n4. Volker, M., & Zamyatin, A. (2020). The Extended UTXO Model. Cardano Foundation. https://docs.cardano.org/about-cardano/learn/eutxo-explainer\n5. OSL. (2025). What is Bitcoin’s UTXO Model? https://www.osl.com/hk-en/academy/article/what-is-bitcoins-utxo-model\n6. Lightspark. (2025). UTXO Explained: The Foundation of Bitcoin's Ledger. https://lightspark.com/glossary/utxo\n7. Komodo Platform. (2025). What's a UTXO? A Guide To Unspent Transaction Output (UTXO). https://komodoplatform.com/en/academy/whats-utxo/\n8. Kaleido. (2025). Privacy, Security, Scalability: Comparing UTXO vs. Account Model. https://www.kaleido.io/blockchain-blog/utxo-vs-account-model\n9. NADCAB. (2025). What is UTXO (Unspent Transaction Output) in Blockchain? https://www.nadcab.com/blog/utxo-in-blockchain\n10. Cardano Docs. (2025). Extended UTXO model. https://docs.cardano.org/about-cardano/learn/eutxo-explainer\n11. IOHK. (2025). Cardano's EUTXO model: bringing deterministic predictability to ... https://iohk.io/blog/posts/2025/05/02/cardano-s-eutxo-model-bringing-deterministic-predictability-to-blockchain/\n\n## Metadata\n\n- **Migration Status**: Ontology block enriched on 2025-11-12\n- **Last Updated**: 2025-11-12\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Account Model",
+    "Bitcoin"
+  ],
+  "wiki_links": [
+    "NIST NISTIR",
+    "BlockchainDomain",
+    "Blockchain Entity",
+    "ISO/IEC 23257:2021",
+    "ConceptualLayer",
+    "DistributedDataStructure",
+    "IEEE 2418.1"
+  ],
+  "ontology": {
+    "term_id": "BC-0007",
+    "preferred_term": "UTXO Model",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#UTXOModel",
+    "source_domain": "blockchain",
+    "domain": "blockchain",
+    "domain_full_name": "",
+    "definition": "Unspent Transaction Output accounting model within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": "2025-10-28",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:UTXOModel",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Object",
+    "owl_inferred_class": "bc:VirtualObject",
+    "is_subclass_of": [
+      "Blockchain Entity",
+      "DistributedDataStructure"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [
+      "ConceptualLayer"
+    ],
+    "source": [
+      "ISO/IEC 23257:2021",
+      "IEEE 2418.1",
+      "NIST NISTIR"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+      ]
+    }
+  }
+}

@@ -1,35 +1,34 @@
 {
   "id": "AI-0420-Privacy-Budget-Management",
   "title": "Privacy Budget Management",
-  "content": "- ### OntologyBlock\n  id:: privacy-budget-management-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0420\n    - preferred-term:: Privacy Budget Management\n    - source-domain:: ai-grounded\n    - status:: in-progress\n    - version:: 1.0\n    - last-updated:: 2025-10-29\n\n  - **Definition**\n    - definition:: Privacy Budget Management is the systematic allocation, tracking, and enforcement of differential privacy budget (epsilon/delta parameters) across multiple queries or analyses to prevent cumulative privacy loss from exceeding acceptable thresholds over time. This framework recognizes that each differentially private query consumes privacy budget, with total privacy loss accumulated through composition theorems (sequential composition ε_total = Σε_i for independent queries, advanced composition providing tighter bounds √(2k ln(1/δ))ε + kε(e^ε - 1) for k queries each with budget ε), necessitating careful budget allocation to maximize utility while respecting overall privacy constraints. Management strategies include fixed allocation assigning predetermined budgets to anticipated query categories (dashboards, research, reports), adaptive allocation dynamically adjusting budgets based on query importance and remaining capacity, hierarchical budgeting organizing budgets across organizational levels (global, department, project, individual analyst), and renewal policies replenishing budgets periodically (daily, monthly, annually) for ongoing analytics platforms. Implementation components encompass budget accounting systems tracking consumption across queries with audit trails, enforcement mechanisms rejecting queries exceeding available budget or degrading accuracy to fit constraints, composition analysis applying appropriate theorems (sequential, parallel, advanced, Rényi divergence) to bound cumulative privacy loss, and monitoring dashboards providing visibility into budget utilization, remaining capacity, and projected depletion timelines. Practical applications include organizational data warehouses with yearly privacy budgets allocated across business units and use cases, continuous analytics platforms with replenishing budgets supporting ongoing dashboards and reports, and research data enclaves with fixed budgets consumed through approved study queries, though challenges include difficulty selecting appropriate total budgets balancing privacy protection with analytical needs, complex composition accounting when queries interact non-trivially, and stakeholder communication explaining privacy budget concepts to non-technical decision-makers requiring translations of abstract mathematical constraints into business-relevant terms.\n    - maturity:: mature\n    - source:: [[Dwork and Roth (2014)]], [[Google DP Accounting]], [[NIST Privacy Framework]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: aigo:PrivacyBudgetManagement\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Process\n    - owl:inferred-class:: aigo:VirtualProcess\n    - belongsToDomain:: [[AIEthicsDomain]]\n    - implementedInLayer:: [[ConceptualLayer]]\n\n  - #### Relationships\n    id:: privacy-budget-management-relationships\n\n  - #### OWL Axioms\n    id:: privacy-budget-management-owl-axioms\n    collapsed:: true\n    - ```clojure\n      \n      ```\n\n### Relationships\n- is-subclass-of:: [[AIGovernance]]",
+  "content": "- ### OntologyBlock\n  id:: privacy-budget-management-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0420\n\t- preferred-term:: Privacy Budget Management\n\t- source-domain:: ai\n\t- status:: in\n\t- public-access:: true\n\t- definition:: Privacy Budget Management is the systematic allocation, tracking, and enforcement of differential privacy budget (epsilon/delta parameters) across multiple queries or analyses to prevent cumulative privacy loss from exceeding acceptable thresholds over time. This framework recognizes that each differentially private query consumes privacy budget, with total privacy loss accumulated through composition theorems (sequential composition ε_total = Σε_i for independent queries, advanced composition providing tighter bounds √(2k ln(1/δ))ε + kε(e^ε - 1) for k queries each with budget ε), necessitating careful budget allocation to maximize utility while respecting overall privacy constraints. Management strategies include fixed allocation assigning predetermined budgets to anticipated query categories (dashboards, research, reports), adaptive allocation dynamically adjusting budgets based on query importance and remaining capacity, hierarchical budgeting organizing budgets across organizational levels (global, department, project, individual analyst), and renewal policies replenishing budgets periodically (daily, monthly, annually) for ongoing analytics platforms. Implementation components encompass budget accounting systems tracking consumption across queries with audit trails, enforcement mechanisms rejecting queries exceeding available budget or degrading accuracy to fit constraints, composition analysis applying appropriate theorems (sequential, parallel, advanced, Rényi divergence) to bound cumulative privacy loss, and monitoring dashboards providing visibility into budget utilization, remaining capacity, and projected depletion timelines. Practical applications include organizational data warehouses with yearly privacy budgets allocated across business units and use cases, continuous analytics platforms with replenishing budgets supporting ongoing dashboards and reports, and research data enclaves with fixed budgets consumed through approved study queries, though challenges include difficulty selecting appropriate total budgets balancing privacy protection with analytical needs, complex composition accounting when queries interact non-trivially, and stakeholder communication explaining privacy budget concepts to non-technical decision-makers requiring translations of abstract mathematical constraints into business-relevant terms.\n\t- source:: [[Dwork and Roth (2014)]], [[Google DP Accounting]], [[NIST Privacy Framework]]\n\t- maturity:: mature\n\t- owl:class:: ai:PrivacyBudgetManagement\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: aigo:VirtualProcess\n\t- belongsToDomain:: [[AIEthicsDomain]]\n\t- implementedInLayer:: [[ConceptualLayer]]",
   "backlinks": [],
   "wiki_links": [
+    "Dwork and Roth (2014)",
+    "ConceptualLayer",
     "NIST Privacy Framework",
     "Google DP Accounting",
-    "AIGovernance",
-    "AIEthicsDomain",
-    "Dwork and Roth (2014)",
-    "ConceptualLayer"
+    "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "AI-0420",
     "preferred_term": "Privacy Budget Management",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "ai-grounded",
-    "domain": "ai-grounded",
-    "domain_full_name": "",
+    "iri": "http://narrativegoldmine.com/ai#PrivacyBudgetManagement",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
     "definition": "Privacy Budget Management is the systematic allocation, tracking, and enforcement of differential privacy budget (epsilon/delta parameters) across multiple queries or analyses to prevent cumulative privacy loss from exceeding acceptable thresholds over time. This framework recognizes that each differentially private query consumes privacy budget, with total privacy loss accumulated through composition theorems (sequential composition ε_total = Σε_i for independent queries, advanced composition providing tighter bounds √(2k ln(1/δ))ε + kε(e^ε - 1) for k queries each with budget ε), necessitating careful budget allocation to maximize utility while respecting overall privacy constraints. Management strategies include fixed allocation assigning predetermined budgets to anticipated query categories (dashboards, research, reports), adaptive allocation dynamically adjusting budgets based on query importance and remaining capacity, hierarchical budgeting organizing budgets across organizational levels (global, department, project, individual analyst), and renewal policies replenishing budgets periodically (daily, monthly, annually) for ongoing analytics platforms. Implementation components encompass budget accounting systems tracking consumption across queries with audit trails, enforcement mechanisms rejecting queries exceeding available budget or degrading accuracy to fit constraints, composition analysis applying appropriate theorems (sequential, parallel, advanced, Rényi divergence) to bound cumulative privacy loss, and monitoring dashboards providing visibility into budget utilization, remaining capacity, and projected depletion timelines. Practical applications include organizational data warehouses with yearly privacy budgets allocated across business units and use cases, continuous analytics platforms with replenishing budgets supporting ongoing dashboards and reports, and research data enclaves with fixed budgets consumed through approved study queries, though challenges include difficulty selecting appropriate total budgets balancing privacy protection with analytical needs, complex composition accounting when queries interact non-trivially, and stakeholder communication explaining privacy budget concepts to non-technical decision-makers requiring translations of abstract mathematical constraints into business-relevant terms.",
     "scope_note": null,
-    "status": "in-progress",
+    "status": "in",
     "maturity": "mature",
-    "version": "1.0",
+    "version": null,
     "public_access": true,
-    "last_updated": "2025-10-29",
-    "authority_score": 0.95,
+    "last_updated": null,
+    "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": "aigo:PrivacyBudgetManagement",
+    "owl_class": "ai:PrivacyBudgetManagement",
     "owl_physicality": "VirtualEntity",
     "owl_role": "Process",
     "owl_inferred_class": "aigo:VirtualProcess",
@@ -57,8 +56,8 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'aigo' doesn't match source-domain 'ai-grounded'"
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

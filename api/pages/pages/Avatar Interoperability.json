@@ -1,55 +1,97 @@
 {
   "id": "Avatar Interoperability",
   "title": "Avatar Interoperability",
-  "content": "- ### OntologyBlock\n  id:: avatar-interoperability-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20250\n\t- preferred-term:: Avatar Interoperability\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Metaverse]]\n\t- public-access:: true\n\n\n# Avatar Interoperability – Updated Ontology Entry\n\n## Academic Context\n\n- Avatar interoperability represents a fundamental architectural requirement for metaverse ecosystems\n  - Extends beyond cosmetic portability (avatar outfit purchased in one game functioning in another)\n  - Encompasses deliberate design and deployment facilitating frictionless user experiences, functionality, and safeguards between platforms[5]\n  - Rooted in established interoperability principles from open web standards and communications protocols\n  - Requires unified approaches to digital identity, ownership records, and asset transfer mechanisms[1]\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Ready Player Me demonstrates the first major metaverse interoperability business model, enabling users to create 3D avatars from webcam selfies with hundreds of customisation options[1]\n  - Avatar adoption spans over 3,700 supported applications and games, establishing practical cross-platform functionality[1]\n  - Leading metaverse platforms (Decentraland, The Sandbox, Axie Infinity) increasingly prioritise interoperable avatar systems and NFT-based asset standards[6]\n  - Cross-platform tooling now encompasses web, mobile, and VR devices with improved creator economics and wallet integration[3]\n\n- Technical capabilities and limitations\n  - Current systems enable avatar identity and appearance transfer across compatible environments\n  - Real-time metadata synchronisation remains technically challenging, particularly regarding avatar reputation data and ownership history[2]\n  - Latency issues persist in ownership transfer mechanisms, though efficient protocols are under active development[2]\n  - Cybersecurity measures (encryption, access controls, audit trails) remain essential but inconsistently implemented across platforms[2]\n\n- Standards and frameworks\n  - Metaverse Standards Forum has developed unified metadata standards addressing ownership history, reputation information, and cross-platform compatibility[2]\n  - Privacy-preserving transfer protocols now require explicit user consent for avatar reputation data sharing[2]\n  - Identity verification mechanisms ensure authorised ownership transfers whilst maintaining data protection compliance[2]\n\n## UK Context\n\n- British contributions and implementations\n  - UK technology sector increasingly engages with avatar interoperability through gaming and creative industries\n  - Manchester, Leeds, and Sheffield host emerging digital innovation clusters exploring immersive technologies\n  - UK regulatory frameworks (particularly data protection and digital markets considerations) influence interoperability standards development\n\n- Regional considerations\n  - North England's gaming heritage positions the region favourably for metaverse platform development\n  - Academic institutions across the region contribute to XR and spatial computing research informing interoperability standards\n\n## Future Directions\n\n- Emerging trends and developments\n  - AI-driven avatars with enhanced personalisation and real-time adaptation capabilities[6]\n  - Decentralised governance models enabling user participation in platform development decisions[6]\n  - Greater NFT utility and cross-platform asset recognition beyond cosmetic applications[6]\n  - Integration of Internet of Things (IoT) and artificial intelligence enabling smarter virtual environments[6]\n\n- Anticipated challenges\n  - Balancing frictionless cross-platform experiences with robust privacy protections and user consent mechanisms[5]\n  - Establishing regulatory compliance across jurisdictions whilst maintaining innovation velocity\n  - Resolving cybersecurity vulnerabilities in distributed ownership transfer systems\n  - Achieving consensus on unified metadata standards across competing commercial interests\n\n- Research priorities\n  - Development of latency-optimised ownership transfer protocols[2]\n  - Privacy-preserving reputation data systems maintaining user control and transparency[2]\n  - Standardised identity verification approaches compatible with diverse regulatory frameworks\n  - User experience research on seamless avatar portability across heterogeneous platform architectures\n\n## References\n\n[1] Simon-Kucher & Partners (2024). \"Metaverse interoperability: Avatars trailblaze new business model.\" Available at: https://www.simon-kucher.com/en/insights/metaverse-interoperability-avatars-trailblaze-new-business-model\n\n[2] Metaverse Standards Forum (2024). \"Avatar Ownership Change Transfers to ensure interoperability across different Metaverse Platforms.\" Available at: https://portal.metaverse-standards.org/document/dl/7598\n\n[3] Token Metrics (2025). \"Leading Metaverse Platforms 2025.\" Available at: https://www.tokenmetrics.com/blog/leading-metaverse-platforms-2025\n\n[4] Zeta Micron (2025). \"Building in the Metaverse: What Startups Need to Know About AR & VR in 2025.\" Available at: https://www.zetamicron.com/building-in-the-metaverse-what-startups-need-to-know-about-ar-vr-in-2025/\n\n[5] World Economic Forum (2024). \"Metaverse interoperability is essential. How will regulation play a part?\" Available at: https://www.weforum.org/stories/2024/08/metaverse-interoperability-regulation/\n\n[6] Metana (2025). \"Best Metaverse Games to Enjoy in 2025.\" Available at: https://metana.io/blog/best-metaverse-games-to-enjoy-in-2025/\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "content": "- ### OntologyBlock\n  id:: avatar-interoperability-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20250\n\t- preferred-term:: Avatar Interoperability\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Capability enabling an avatar's identity, appearance, and behaviors to function seamlessly across multiple metaverse platforms and virtual environments.\n\t- source:: [[MSF DG (Interoperable Avatars)]]\n\t- maturity:: draft\n\t- owl:class:: mv:AvatarInteroperability\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: mv:VirtualProcess\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InteractionDomain]]\n\t- implementedInLayer:: [[DataLayer]], [[MiddlewareLayer]]\n\t- #### Relationships\n\t  id:: avatar-interoperability-relationships\n\t  collapsed:: true\n\t\t- has-part:: [[Behavior Mapping]]\n\t\t- has-part:: [[Appearance Translation]]\n\t\t- has-part:: [[Identity Portability]]\n\t\t- has-part:: [[Cross-Platform Authentication]]\n\t\t- requires:: [[Identity Protocol]]\n\t\t- requires:: [[Data Serialization]]\n\t\t- requires:: [[Avatar Standard]]\n\t\t- requires:: [[Platform API]]\n\t\t- enables:: [[Persistent Identity]]\n\t\t- enables:: [[Universal Avatar]]\n\t\t- enables:: [[Seamless Migration]]\n\t\t- enables:: [[Cross-Platform Presence]]\n\t\t- depends-on:: [[glTF]]\n\t\t- depends-on:: [[VRM Format]]\n\t\t- depends-on:: [[HAnim Standard]]\n\n## Academic Context\n\n- Avatar interoperability represents a fundamental architectural requirement for metaverse ecosystems\n  - Extends beyond cosmetic portability (avatar outfit purchased in one game functioning in another)\n  - Encompasses deliberate design and deployment facilitating frictionless user experiences, functionality, and safeguards between platforms[5]\n  - Rooted in established interoperability principles from open web standards and communications protocols\n  - Requires unified approaches to digital identity, ownership records, and asset transfer mechanisms[1]\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Ready Player Me demonstrates the first major metaverse interoperability business model, enabling users to create 3D avatars from webcam selfies with hundreds of customisation options[1]\n  - Avatar adoption spans over 3,700 supported applications and games, establishing practical cross-platform functionality[1]\n  - Leading metaverse platforms (Decentraland, The Sandbox, Axie Infinity) increasingly prioritise interoperable avatar systems and NFT-based asset standards[6]\n  - Cross-platform tooling now encompasses web, mobile, and VR devices with improved creator economics and wallet integration[3]\n\n- Technical capabilities and limitations\n  - Current systems enable avatar identity and appearance transfer across compatible environments\n  - Real-time metadata synchronisation remains technically challenging, particularly regarding avatar reputation data and ownership history[2]\n  - Latency issues persist in ownership transfer mechanisms, though efficient protocols are under active development[2]\n  - Cybersecurity measures (encryption, access controls, audit trails) remain essential but inconsistently implemented across platforms[2]\n\n- Standards and frameworks\n  - Metaverse Standards Forum has developed unified metadata standards addressing ownership history, reputation information, and cross-platform compatibility[2]\n  - Privacy-preserving transfer protocols now require explicit user consent for avatar reputation data sharing[2]\n  - Identity verification mechanisms ensure authorised ownership transfers whilst maintaining data protection compliance[2]\n\n## UK Context\n\n- British contributions and implementations\n  - UK technology sector increasingly engages with avatar interoperability through gaming and creative industries\n  - Manchester, Leeds, and Sheffield host emerging digital innovation clusters exploring immersive technologies\n  - UK regulatory frameworks (particularly data protection and digital markets considerations) influence interoperability standards development\n\n- Regional considerations\n  - North England's gaming heritage positions the region favourably for metaverse platform development\n  - Academic institutions across the region contribute to XR and spatial computing research informing interoperability standards\n\n## Future Directions\n\n- Emerging trends and developments\n  - AI-driven avatars with enhanced personalisation and real-time adaptation capabilities[6]\n  - Decentralised governance models enabling user participation in platform development decisions[6]\n  - Greater NFT utility and cross-platform asset recognition beyond cosmetic applications[6]\n  - Integration of Internet of Things (IoT) and artificial intelligence enabling smarter virtual environments[6]\n\n- Anticipated challenges\n  - Balancing frictionless cross-platform experiences with robust privacy protections and user consent mechanisms[5]\n  - Establishing regulatory compliance across jurisdictions whilst maintaining innovation velocity\n  - Resolving cybersecurity vulnerabilities in distributed ownership transfer systems\n  - Achieving consensus on unified metadata standards across competing commercial interests\n\n- Research priorities\n  - Development of latency-optimised ownership transfer protocols[2]\n  - Privacy-preserving reputation data systems maintaining user control and transparency[2]\n  - Standardised identity verification approaches compatible with diverse regulatory frameworks\n  - User experience research on seamless avatar portability across heterogeneous platform architectures\n\n## References\n\n[1] Simon-Kucher & Partners (2024). \"Metaverse interoperability: Avatars trailblaze new business model.\" Available at: https://www.simon-kucher.com/en/insights/metaverse-interoperability-avatars-trailblaze-new-business-model\n\n[2] Metaverse Standards Forum (2024). \"Avatar Ownership Change Transfers to ensure interoperability across different Metaverse Platforms.\" Available at: https://portal.metaverse-standards.org/document/dl/7598\n\n[3] Token Metrics (2025). \"Leading Metaverse Platforms 2025.\" Available at: https://www.tokenmetrics.com/blog/leading-metaverse-platforms-2025\n\n[4] Zeta Micron (2025). \"Building in the Metaverse: What Startups Need to Know About AR & VR in 2025.\" Available at: https://www.zetamicron.com/building-in-the-metaverse-what-startups-need-to-know-about-ar-vr-in-2025/\n\n[5] World Economic Forum (2024). \"Metaverse interoperability is essential. How will regulation play a part?\" Available at: https://www.weforum.org/stories/2024/08/metaverse-interoperability-regulation/\n\n[6] Metana (2025). \"Best Metaverse Games to Enjoy in 2025.\" Available at: https://metana.io/blog/best-metaverse-games-to-enjoy-in-2025/\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [],
   "wiki_links": [
-    "Metaverse"
+    "Persistent Identity",
+    "Avatar Standard",
+    "InteractionDomain",
+    "Identity Protocol",
+    "Behavior Mapping",
+    "MSF DG (Interoperable Avatars)",
+    "Cross-Platform Authentication",
+    "Seamless Migration",
+    "Data Serialization",
+    "MiddlewareLayer",
+    "Identity Portability",
+    "Universal Avatar",
+    "Platform API",
+    "Cross-Platform Presence",
+    "Appearance Translation",
+    "HAnim Standard",
+    "DataLayer",
+    "glTF",
+    "VRM Format"
   ],
   "ontology": {
     "term_id": "20250",
     "preferred_term": "Avatar Interoperability",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#AvatarInteroperability",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "Capability enabling an avatar's identity, appearance, and behaviors to function seamlessly across multiple metaverse platforms and virtual environments.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "draft",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:AvatarInteroperability",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Process",
+    "owl_inferred_class": "mv:VirtualProcess",
     "is_subclass_of": [],
-    "has_part": [],
+    "has_part": [
+      "Behavior Mapping",
+      "Appearance Translation",
+      "Identity Portability",
+      "Cross-Platform Authentication"
+    ],
     "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "requires": [
+      "Identity Protocol",
+      "Data Serialization",
+      "Avatar Standard",
+      "Platform API"
+    ],
+    "depends_on": [
+      "glTF",
+      "VRM Format",
+      "HAnim Standard"
+    ],
+    "enables": [
+      "Persistent Identity",
+      "Universal Avatar",
+      "Seamless Migration",
+      "Cross-Platform Presence"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "InteractionDomain"
+    ],
+    "implemented_in_layer": [
+      "DataLayer",
+      "MiddlewareLayer"
+    ],
+    "source": [
+      "MSF DG (Interoperable Avatars)"
+    ],
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20250' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }

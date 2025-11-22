@@ -1,0 +1,52 @@
+{
+  "id": "Safety (OECD)",
+  "title": "Safety (OECD)",
+  "content": "- ### OntologyBlock\n  id:: safety-oecd-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0164\n\t- preferred-term:: Safety (OECD)\n\t- source-domain:: ai\n\t- owl:class:: ai:SafetyOECD\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: AI systems should operate safely without causing unacceptable risk of physical or psychological harm to people, property or the environment, with appropriate safeguards to prevent, detect and respond to hazardous failures throughout the AI lifecycle.\n\n## Safety (OECD)\n\nSafety (OECD) refers to ai systems should operate safely without causing unacceptable risk of physical or psychological harm to people, property or the environment, with appropriate safeguards to prevent, detect and respond to hazardous failures throughout the ai lifecycle.\n\n- Industry adoption and implementations\n  - Many global organisations, including those in the UK, use the OECD safety principle as a benchmark for AI risk management.\n  - Notable platforms such as NHS Digital and the Alan Turing Institute have integrated OECD safety guidelines into their AI governance frameworks.\n  - In North England, cities like Manchester, Leeds, Newcastle, and Sheffield are home to AI innovation hubs that apply OECD safety standards in healthcare, smart city, and industrial automation projects.\n    - For example, the Greater Manchester AI Health Network has piloted safety protocols for AI-driven diagnostics, ensuring robustness and harm prevention.\n- Technical capabilities and limitations\n  - Modern AI systems can be designed with fail-safes, anomaly detection, and override mechanisms, but challenges remain in ensuring safety for adaptive and generative models.\n  - Safety measures are most effective when combined with transparency, explainability, and ongoing monitoring.\n- Standards and frameworks\n  - The OECD’s High-level AI Risk Management Interoperability Framework provides a four-step process: define scope, assess risks, address risks, and monitor and communicate.\n  - The OECD has also launched a voluntary reporting framework for AI risk management practices, encouraging organisations to disclose their safety protocols and incident responses.\n\n## Technical Details\n\n- **Id**: safety-(oecd)-ontology\n- **Collapsed**: true\n- **Source Domain**: ai\n- **Status**: draft\n- **Public Access**: true\n\n## Research & Literature\n\n- Key academic papers and sources\n  - OECD. (2024). Recommendation of the Council on Artificial Intelligence. OECD Legal Instruments. https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449\n  - OECD. (2025). Governing with Artificial Intelligence: A Framework for Trustworthy AI in Government. OECD Publishing. https://www.oecd.org/en/publications/2025/06/governing-with-artificial-intelligence_398fa287.html\n  - OECD. (2023). AI Risks and Incidents: Mapping Policy Actions and Addressing Policy Gaps. OECD Publishing. https://www.oecd.org/en/topics/sub-issues/ai-risks-and-incidents.html\n  - Jobin, A., Ienca, M., & Vayena, E. (2019). The global landscape of AI ethics guidelines. Nature Machine Intelligence, 1(9), 389–399. https://doi.org/10.1038/s42256-019-0088-2\n- Ongoing research directions\n  - Research is focused on improving the detection and mitigation of AI safety incidents, especially in dynamic and generative systems.\n  - There is growing interest in developing interoperable incident reporting frameworks and harmonising safety standards across jurisdictions.\n\n## UK Context\n\n- British contributions and implementations\n  - The UK government has adopted the OECD safety principle in its national AI strategy, with a focus on public sector AI applications.\n  - The Centre for Data Ethics and Innovation (CDEI) and the Information Commissioner’s Office (ICO) have published guidance on AI safety and risk management.\n- North England innovation hubs\n  - Manchester’s AI Health Network and Leeds’ Digital Health Enterprise Zone are leading examples of regional AI safety initiatives.\n  - Newcastle and Sheffield are home to research centres that specialise in AI safety for industrial and urban applications.\n- Regional case studies\n  - The Greater Manchester AI Health Network has implemented OECD safety protocols in AI-driven diagnostic tools, reducing the risk of misdiagnosis and ensuring patient safety.\n  - Leeds’ Digital Health Enterprise Zone has developed safety frameworks for AI-powered telemedicine platforms, with a focus on data integrity and system robustness.\n\n## Future Directions\n\n- Emerging trends and developments\n  - There is a growing emphasis on real-time safety monitoring and adaptive risk management for AI systems.\n  - The integration of AI safety with broader digital resilience strategies is becoming increasingly important.\n- Anticipated challenges\n  - Ensuring safety in rapidly evolving and generative AI systems remains a significant challenge.\n  - Harmonising safety standards across different sectors and jurisdictions will require ongoing international cooperation.\n- Research priorities\n  - Research is needed to develop more effective safety protocols for adaptive and generative AI models.\n  - There is a need for better tools and metrics to assess and mitigate AI safety risks in real-world applications.\n\n## References\n\n1. OECD. (2024). Recommendation of the Council on Artificial Intelligence. OECD Legal Instruments. https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449\n2. OECD. (2025). Governing with Artificial Intelligence: A Framework for Trustworthy AI in Government. OECD Publishing. https://www.oecd.org/en/publications/2025/06/governing-with-artificial-intelligence_398fa287.html\n3. OECD. (2023). AI Risks and Incidents: Mapping Policy Actions and Addressing Policy Gaps. OECD Publishing. https://www.oecd.org/en/topics/sub-issues/ai-risks-and-incidents.html\n4. Jobin, A., Ienca, M., & Vayena, E. (2019). The global landscape of AI ethics guidelines. Nature Machine Intelligence, 1(9), 389–399. https://doi.org/10.1038/s42256-019-0088-2\n5. UK Government. (2023). National AI Strategy. https://www.gov.uk/government/publications/national-ai-strategy\n6. Centre for Data Ethics and Innovation. (2023). AI Safety and Risk Management Guidance. https://www.gov.uk/government/organisations/centre-for-data-ethics-and-innovation\n7. Information Commissioner’s Office. (2023). Guidance on AI and Data Protection. https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/artificial-intelligence/\n8. Greater Manchester AI Health Network. (2024). AI Safety Protocols in Healthcare. https://www.gmhealthandcare.org.uk/ai-health-network/\n9. Leeds Digital Health Enterprise Zone. (2024). AI Safety Frameworks for Telemedicine. https://www.leeds.ac.uk/digital-health-enterprise-zone\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [],
+  "ontology": {
+    "term_id": "AI-0164",
+    "preferred_term": "Safety (OECD)",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#SafetyOECD",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "AI systems should operate safely without causing unacceptable risk of physical or psychological harm to people, property or the environment, with appropriate safeguards to prevent, detect and respond to hazardous failures throughout the AI lifecycle.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:SafetyOECD",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

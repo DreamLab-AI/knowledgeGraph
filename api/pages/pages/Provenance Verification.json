@@ -1,55 +1,123 @@
 {
   "id": "Provenance Verification",
   "title": "Provenance Verification",
-  "content": "- ### OntologyBlock\n  id:: provenance-verification-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20204\n\t- preferred-term:: Provenance Verification\n\t- source-domain:: metaverse\n\t- status:: draft\n\t- is-subclass-of:: [[Metaverse]]\n\t- public-access:: true\n\n\n# Provenance Verification – Updated Ontology Entry\n\n## Academic Context\n\n- Provenance verification represents the systematic confirmation of a product or digital asset's history, origins, and transformations[1]\n  - Evolved from art historical practices into a foundational governance mechanism across multiple sectors\n  - Addresses the contemporary demand for transparency and accountability in supply chains\n  - Distinguishes between surface-level claims and verifiable, credible evidence of origin and ethical production[1]\n\n- The concept encompasses three interconnected dimensions\n  - **Authenticity**: confirmation that data originates from reliable sources and represents genuine claims[2]\n  - **Integrity**: assurance that records remain unaltered throughout their lifecycle, typically through cryptographic validation[2]\n  - **Accountability and Transparency**: creation of auditable records tracking modifications and responsible parties[2]\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Food sector: IBM Food Trust blockchain systems track provenance from farm to table, preventing fraud and ensuring transparent sourcing[2]\n  - Fashion and textiles: verification of cotton origins, mill locations, and labour practices throughout garment production[1]\n  - Software development: provenance validation now mandatory under frameworks including SLSA (Supply Chain Levels for Software Artefacts), Executive Order 14028, and NIST SSDF standards[3]\n  - Financial services and healthcare: provenance has become foundational for responsible data privacy and regulatory compliance[5]\n  - Digital art and NFTs: cryptographic techniques provide verifiable proof of authorship and prevent forgery[2]\n\n- Technical capabilities and limitations\n  - Cryptographic hashing generates unique fingerprints for data; any alteration produces detectable changes[2]\n  - Digital signatures and cryptographic methods enable verification of origin and authorship[2]\n  - Software provenance combines multiple validation cheques across ingestion, deployment, and procurement workflows[3]\n  - Limitations remain in establishing trust across entities creating and modifying data; system security depends entirely on robust cryptographic implementation[2]\n\n- Standards and frameworks\n  - SLSA framework for software supply chain security[3]\n  - NIST SSDF (Secure Software Development Framework)[3]\n  - ISO/IEC 5259 and OECD Data Governance Framework for data provenance metadata[5]\n  - Software Bill of Materials (SBOM) standards for dependency mapping and component visibility[4]\n\n## UK Context\n\n- British regulatory environment\n  - Financial Conduct Authority (FCA) and Prudential Regulation Authority (PRA) increasingly require provenance documentation for audit-ready reporting[5]\n  - NHS and healthcare trusts implementing data provenance systems to ensure patient data integrity and GDPR compliance\n  - UK financial institutions adopting provenance standards to simplify compliance cheques and reduce fraud risk[5]\n\n- North England innovation and adoption\n  - Manchester: emerging fintech sector incorporating provenance validation into blockchain-based supply chain solutions\n  - Leeds: textile and fashion industry clusters exploring provenance verification for ethical sourcing claims\n  - Newcastle: digital infrastructure initiatives incorporating SBOM and cryptographic validation in software development pipelines\n  - Sheffield: advanced manufacturing sector implementing provenance tracking for component authenticity\n\n- Regional case studies\n  - Northern textile manufacturers increasingly adopting provenance systems to differentiate ethical production claims in competitive markets\n  - Manchester-based financial services firms leading adoption of data provenance frameworks for regulatory compliance\n\n## Research & Literature\n\n- Key academic and technical sources\n  - IBM (2025). \"Food Trust Blockchain: Farm-to-Table Provenance Tracking.\" Enterprise blockchain implementation documentation.[2]\n  - ReversingLabs (2025). \"Provenance Validation in Software Supply Chains.\" Security standards alignment and CI/CD integration guidance.[3]\n  - JFrog (2025). \"Software Provenance: Secure Supply Chain Practices.\" Comprehensive overview of build metadata, dependency mapping, and SBOM frameworks.[4]\n  - Accel Data (2025). \"Tracking Data Provenance to Ensure Data Integrity and Compliance.\" Data lifecycle management and regulatory alignment.[8]\n  - Privacy Guides (2025). \"The Power of Digital Provenance in the Age of AI.\" Contemporary applications in AI transparency and content verification.[7]\n\n- Ongoing research directions\n  - Integration of provenance systems with artificial intelligence governance frameworks\n  - Scalability challenges in distributed ledger implementations across global supply chains\n  - Standardisation of provenance metadata across heterogeneous systems and jurisdictions\n  - Human-centred approaches to provenance transparency for non-technical stakeholders\n\n## Future Directions\n\n- Emerging trends and developments\n  - Convergence of provenance verification with AI compliance frameworks, particularly for training data authenticity[7]\n  - Expansion of SBOM requirements across regulated industries beyond software development[4]\n  - Integration of provenance systems with automated compliance reporting and audit workflows[5]\n  - Development of interoperable provenance standards across supply chain ecosystems\n\n- Anticipated challenges\n  - Establishing trust mechanisms across decentralised networks without centralised authorities\n  - Balancing transparency requirements with legitimate commercial confidentiality\n  - Managing computational overhead of cryptographic validation at scale\n  - Ensuring provenance systems remain tamper-resistant against evolving threat landscapes\n\n- Research priorities\n  - Development of lightweight provenance frameworks suitable for small and medium enterprises\n  - Cross-sector standardisation initiatives to reduce implementation fragmentation\n  - Human factors research on provenance transparency and stakeholder comprehension\n  - Resilience testing of provenance systems against sophisticated supply chain attacks\n\n---\n\n**Note on revision**: The original definition conflates computational validation with the broader concept of provenance verification. The updated entry distinguishes between provenance as a historical record and verification as the process of confirming that record's authenticity—a distinction increasingly important as regulatory frameworks mature. The addition of UK context reflects the growing prominence of provenance requirements in British financial services and healthcare sectors, though North England examples remain speculative pending specific regional implementation data.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
-  "backlinks": [],
+  "content": "- ### OntologyBlock\n  id:: provenance-verification-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20204\n\t- preferred-term:: Provenance Verification\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Computational process for validating the origin, authenticity, and chain of custody of digital assets through metadata analysis and distributed ledger records.\n\t- source:: [[ETSI ARF 010]], [[W3C PROV-O]], [[ISO 19115]]\n\t- maturity:: draft\n\t- owl:class:: mv:ProvenanceVerification\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: mv:VirtualProcess\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]], [[TrustAndGovernanceDomain]]\n\t- implementedInLayer:: [[MiddlewareLayer]], [[DataLayer]]\n\t- #### Relationships\n\t  id:: provenance-verification-relationships\n\t  collapsed:: true\n\t\t- is-part-of:: [[Asset Management]]\n\t\t- is-part-of:: [[Trust Infrastructure]]\n\t\t- has-part:: [[Authenticity Checking]]\n\t\t- has-part:: [[Metadata Validation]]\n\t\t- has-part:: [[Ledger Record Verification]]\n\t\t- has-part:: [[Chain of Custody Tracking]]\n\t\t- requires:: [[Metadata Standards]]\n\t\t- requires:: [[Timestamp Authority]]\n\t\t- requires:: [[Blockchain]]\n\t\t- requires:: [[Digital Signatures]]\n\t\t- enables:: [[Trust Establishment]]\n\t\t- enables:: [[Ownership Validation]]\n\t\t- enables:: [[Asset Authentication]]\n\t\t- enables:: [[Compliance Auditing]]\n\t\t- is-enabled-by:: [[Virtual Notary Service]]\n\t\t- is-enabled-by:: [[Cultural Provenance Record]]\n\t\t- is-enabled-by:: [[Data Provenance]]\n\t\t- is-enabled-by:: [[Digital Goods Registry]]\n\t\t- depends-on:: [[Cryptographic Verification]]\n\t\t- depends-on:: [[Identity Management]]\n\n## Academic Context\n\n- Provenance verification represents the systematic confirmation of a product or digital asset's history, origins, and transformations[1]\n  - Evolved from art historical practices into a foundational governance mechanism across multiple sectors\n  - Addresses the contemporary demand for transparency and accountability in supply chains\n  - Distinguishes between surface-level claims and verifiable, credible evidence of origin and ethical production[1]\n\n- The concept encompasses three interconnected dimensions\n  - **Authenticity**: confirmation that data originates from reliable sources and represents genuine claims[2]\n  - **Integrity**: assurance that records remain unaltered throughout their lifecycle, typically through cryptographic validation[2]\n  - **Accountability and Transparency**: creation of auditable records tracking modifications and responsible parties[2]\n\n## Current Landscape (2025)\n\n- Industry adoption and implementations\n  - Food sector: IBM Food Trust blockchain systems track provenance from farm to table, preventing fraud and ensuring transparent sourcing[2]\n  - Fashion and textiles: verification of cotton origins, mill locations, and labour practices throughout garment production[1]\n  - Software development: provenance validation now mandatory under frameworks including SLSA (Supply Chain Levels for Software Artefacts), Executive Order 14028, and NIST SSDF standards[3]\n  - Financial services and healthcare: provenance has become foundational for responsible data privacy and regulatory compliance[5]\n  - Digital art and NFTs: cryptographic techniques provide verifiable proof of authorship and prevent forgery[2]\n\n- Technical capabilities and limitations\n  - Cryptographic hashing generates unique fingerprints for data; any alteration produces detectable changes[2]\n  - Digital signatures and cryptographic methods enable verification of origin and authorship[2]\n  - Software provenance combines multiple validation cheques across ingestion, deployment, and procurement workflows[3]\n  - Limitations remain in establishing trust across entities creating and modifying data; system security depends entirely on robust cryptographic implementation[2]\n\n- Standards and frameworks\n  - SLSA framework for software supply chain security[3]\n  - NIST SSDF (Secure Software Development Framework)[3]\n  - ISO/IEC 5259 and OECD Data Governance Framework for data provenance metadata[5]\n  - Software Bill of Materials (SBOM) standards for dependency mapping and component visibility[4]\n\n## UK Context\n\n- British regulatory environment\n  - Financial Conduct Authority (FCA) and Prudential Regulation Authority (PRA) increasingly require provenance documentation for audit-ready reporting[5]\n  - NHS and healthcare trusts implementing data provenance systems to ensure patient data integrity and GDPR compliance\n  - UK financial institutions adopting provenance standards to simplify compliance cheques and reduce fraud risk[5]\n\n- North England innovation and adoption\n  - Manchester: emerging fintech sector incorporating provenance validation into blockchain-based supply chain solutions\n  - Leeds: textile and fashion industry clusters exploring provenance verification for ethical sourcing claims\n  - Newcastle: digital infrastructure initiatives incorporating SBOM and cryptographic validation in software development pipelines\n  - Sheffield: advanced manufacturing sector implementing provenance tracking for component authenticity\n\n- Regional case studies\n  - Northern textile manufacturers increasingly adopting provenance systems to differentiate ethical production claims in competitive markets\n  - Manchester-based financial services firms leading adoption of data provenance frameworks for regulatory compliance\n\n## Research & Literature\n\n- Key academic and technical sources\n  - IBM (2025). \"Food Trust Blockchain: Farm-to-Table Provenance Tracking.\" Enterprise blockchain implementation documentation.[2]\n  - ReversingLabs (2025). \"Provenance Validation in Software Supply Chains.\" Security standards alignment and CI/CD integration guidance.[3]\n  - JFrog (2025). \"Software Provenance: Secure Supply Chain Practices.\" Comprehensive overview of build metadata, dependency mapping, and SBOM frameworks.[4]\n  - Accel Data (2025). \"Tracking Data Provenance to Ensure Data Integrity and Compliance.\" Data lifecycle management and regulatory alignment.[8]\n  - Privacy Guides (2025). \"The Power of Digital Provenance in the Age of AI.\" Contemporary applications in AI transparency and content verification.[7]\n\n- Ongoing research directions\n  - Integration of provenance systems with artificial intelligence governance frameworks\n  - Scalability challenges in distributed ledger implementations across global supply chains\n  - Standardisation of provenance metadata across heterogeneous systems and jurisdictions\n  - Human-centred approaches to provenance transparency for non-technical stakeholders\n\n## Future Directions\n\n- Emerging trends and developments\n  - Convergence of provenance verification with AI compliance frameworks, particularly for training data authenticity[7]\n  - Expansion of SBOM requirements across regulated industries beyond software development[4]\n  - Integration of provenance systems with automated compliance reporting and audit workflows[5]\n  - Development of interoperable provenance standards across supply chain ecosystems\n\n- Anticipated challenges\n  - Establishing trust mechanisms across decentralised networks without centralised authorities\n  - Balancing transparency requirements with legitimate commercial confidentiality\n  - Managing computational overhead of cryptographic validation at scale\n  - Ensuring provenance systems remain tamper-resistant against evolving threat landscapes\n\n- Research priorities\n  - Development of lightweight provenance frameworks suitable for small and medium enterprises\n  - Cross-sector standardisation initiatives to reduce implementation fragmentation\n  - Human factors research on provenance transparency and stakeholder comprehension\n  - Resilience testing of provenance systems against sophisticated supply chain attacks\n\n---\n\n**Note on revision**: The original definition conflates computational validation with the broader concept of provenance verification. The updated entry distinguishes between provenance as a historical record and verification as the process of confirming that record's authenticity—a distinction increasingly important as regulatory frameworks mature. The addition of UK context reflects the growing prominence of provenance requirements in British financial services and healthcare sectors, though North England examples remain speculative pending specific regional implementation data.\n\n## Metadata\n\n- **Last Updated**: 2025-11-11\n- **Review Status**: Comprehensive editorial review\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Data Provenance",
+    "Virtual Notary Service",
+    "Digital Goods Registry",
+    "Cultural Provenance Record"
+  ],
   "wiki_links": [
-    "Metaverse"
+    "Authenticity Checking",
+    "Compliance Auditing",
+    "Trust Establishment",
+    "Asset Authentication",
+    "Cryptographic Verification",
+    "Blockchain",
+    "Digital Goods Registry",
+    "Cultural Provenance Record",
+    "ETSI ARF 010",
+    "TrustAndGovernanceDomain",
+    "Data Provenance",
+    "Asset Management",
+    "MiddlewareLayer",
+    "InfrastructureDomain",
+    "Digital Signatures",
+    "Chain of Custody Tracking",
+    "Trust Infrastructure",
+    "Metadata Validation",
+    "Identity Management",
+    "Virtual Notary Service",
+    "Metadata Standards",
+    "Timestamp Authority",
+    "Ownership Validation",
+    "DataLayer",
+    "W3C PROV-O",
+    "Ledger Record Verification",
+    "ISO 19115"
   ],
   "ontology": {
     "term_id": "20204",
     "preferred_term": "Provenance Verification",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "iri": "http://narrativegoldmine.com/metaverse#ProvenanceVerification",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "Computational process for validating the origin, authenticity, and chain of custody of digital assets through metadata analysis and distributed ledger records.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
+    "maturity": "draft",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
+    "owl_class": "mv:ProvenanceVerification",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Process",
+    "owl_inferred_class": "mv:VirtualProcess",
     "is_subclass_of": [],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "has_part": [
+      "Authenticity Checking",
+      "Metadata Validation",
+      "Ledger Record Verification",
+      "Chain of Custody Tracking"
+    ],
+    "is_part_of": [
+      "Asset Management",
+      "Trust Infrastructure"
+    ],
+    "requires": [
+      "Metadata Standards",
+      "Timestamp Authority",
+      "Blockchain",
+      "Digital Signatures"
+    ],
+    "depends_on": [
+      "Cryptographic Verification",
+      "Identity Management"
+    ],
+    "enables": [
+      "Trust Establishment",
+      "Ownership Validation",
+      "Asset Authentication",
+      "Compliance Auditing"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
-    "implemented_in_layer": [],
-    "source": [],
+    "belongs_to_domain": [
+      "InfrastructureDomain",
+      "TrustAndGovernanceDomain"
+    ],
+    "implemented_in_layer": [
+      "MiddlewareLayer",
+      "DataLayer"
+    ],
+    "source": [
+      "ETSI ARF 010",
+      "W3C PROV-O",
+      "ISO 19115"
+    ],
+    "other_relationships": {
+      "is-enabled-by": [
+        "Virtual Notary Service",
+        "Cultural Provenance Record",
+        "Data Provenance",
+        "Digital Goods Registry"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
+        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "term-id '20204' doesn't match domain 'mv' (expected MV-)"
       ]
     }
   }
