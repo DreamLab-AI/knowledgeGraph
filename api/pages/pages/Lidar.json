@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: rb-0069-lidar-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0069\n\t- preferred-term:: Lidar\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: ### Primary Definition\n\t- maturity:: draft\n\t- owl:class:: mv:rb0069lidar\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: rb-0069-lidar-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Extended Reality (XR)]]\n\t\t- belongsToDomain:: [[MetaverseDomain]]",
   "backlinks": [],
   "wiki_links": [
-    "MetaverseDomain",
-    "Extended Reality (XR)"
+    "Extended Reality (XR)",
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "RB-0069",

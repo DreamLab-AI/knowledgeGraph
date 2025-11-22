@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: bc-0119-economic-security-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0119\n\t- preferred-term:: BC 0119 economic security\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: ### Primary Definition\n\t- maturity:: draft\n\t- owl:class:: mv:BC0119economicsecurity\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: bc-0119-economic-security-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain]]\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [],
   "wiki_links": [
-    "MetaverseDomain",
-    "Blockchain"
+    "Blockchain",
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "BC-0119",

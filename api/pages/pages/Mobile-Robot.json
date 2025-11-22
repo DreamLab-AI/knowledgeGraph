@@ -4,9 +4,9 @@
   "content": "- ### OntologyBlock\n  id:: mobile-robot-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0002\n\t- preferred-term:: Mobile Robot\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A mobile robot is a robot with locomotion capabilities that enable it to move within its working environment.\n\t- source:: [[ISO 8373:2021]]\n\t- maturity:: mature\n\t- owl:class:: rb:MobileRobot\n\t- owl:physicality:: PhysicalEntity\n\t- owl:role:: Object\n\t- belongsToDomain:: [[Robotics]]\n\t- #### CrossDomainBridges\n\t  id:: mobile-robot-bridges\n\t  collapsed:: true\n\t\t- dt:uses:: [[Computer Vision]]\n\t\t- dt:requires:: [[PathPlanning]]",
   "backlinks": [],
   "wiki_links": [
-    "Robotics",
-    "ISO 8373:2021",
     "Computer Vision",
+    "ISO 8373:2021",
+    "Robotics",
     "PathPlanning"
   ],
   "ontology": {

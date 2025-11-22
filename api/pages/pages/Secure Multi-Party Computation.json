@@ -7,11 +7,11 @@
     "Privacy-Enhancing Computation (PEC)"
   ],
   "wiki_links": [
-    "MP-SPDZ",
-    "ConceptualLayer",
     "Shamir Secret Sharing",
     "Yao's Garbled Circuits",
-    "AIEthicsDomain"
+    "MP-SPDZ",
+    "AIEthicsDomain",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "AI-0419",

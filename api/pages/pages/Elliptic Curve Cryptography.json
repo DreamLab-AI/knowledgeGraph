@@ -7,13 +7,13 @@
     "Zero-Knowledge Proof (ZKP)"
   ],
   "wiki_links": [
-    "NIST NISTIR",
-    "CryptographicDomain",
-    "SecurityLayer",
-    "CryptographicPrimitive",
     "Blockchain Entity",
     "ISO/IEC 23257:2021",
-    "IEEE 2418.1"
+    "IEEE 2418.1",
+    "SecurityLayer",
+    "CryptographicDomain",
+    "CryptographicPrimitive",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0032",

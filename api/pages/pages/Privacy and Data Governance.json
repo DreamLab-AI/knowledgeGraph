@@ -7,10 +7,10 @@
     "ISO/IEC 27701",
     "AIGovernance",
     "EU AI Act",
-    "ConceptualLayer",
     "EDPB Opinion 28/2024",
+    "AIEthicsDomain",
     "GDPR",
-    "AIEthicsDomain"
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "AI-0411",

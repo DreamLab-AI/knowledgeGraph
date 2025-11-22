@@ -14,11 +14,11 @@
     "BC-0028-sha-256"
   ],
   "wiki_links": [
-    "NIST NISTIR",
-    "Cryptography",
     "BlockchainEntity",
+    "Cryptography",
     "ISO/IEC 23257:2021",
-    "IEEE 2418.1"
+    "IEEE 2418.1",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0027",

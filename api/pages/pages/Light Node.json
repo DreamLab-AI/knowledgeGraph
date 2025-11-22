@@ -7,11 +7,11 @@
     "Scene Graph"
   ],
   "wiki_links": [
-    "NIST NISTIR",
-    "Node",
-    "CryptographicDomain",
     "ISO/IEC 23257:2021",
-    "IEEE 2418.1"
+    "IEEE 2418.1",
+    "CryptographicDomain",
+    "Node",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0074",

@@ -20,13 +20,13 @@
     "Trust Framework Policy"
   ],
   "wiki_links": [
-    "Metaverse",
-    "EU AI Act",
-    "ISO/IEC 42001",
-    "IEEE 7000 Model Process",
     "NIST AI Risk Management Framework",
+    "EU AI Act",
+    "AIEthicsDomain",
+    "IEEE 7000 Model Process",
     "GDPR",
-    "AIEthicsDomain"
+    "Metaverse",
+    "ISO/IEC 42001"
   ],
   "ontology": {
     "term_id": "PC-0012",

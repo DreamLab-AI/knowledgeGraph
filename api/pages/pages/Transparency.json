@@ -13,12 +13,12 @@
     "Safety Laser Scanner"
   ],
   "wiki_links": [
-    "Explainability (AI-0064)",
+    "AI Impact Assessment",
     "Accountability (AI-0068)",
-    "Metaverse",
-    "MetaverseDomain",
+    "Explainability (AI-0064)",
     "Consent Management",
-    "AI Impact Assessment"
+    "MetaverseDomain",
+    "Metaverse"
   ],
   "ontology": {
     "term_id": "AI-0062",

@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: federatedlearning-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0504\n\t- preferred-term:: FederatedLearning\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A distributed machine learning approach where models are trained across multiple decentralized devices or servers holding local data, without exchanging raw data to preserve privacy.\n\t- maturity:: mature\n\t- owl:class:: ai:FederatedLearning\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Technique\n\t- owl:equivalentClass:: mv:FederatedLearning\n\t- belongsToDomain:: [[AIDomain]]\n\t- #### Relationships\n\t  id:: federatedlearning-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[MachineLearning]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :FederatedLearning))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :FederatedLearning \"FederatedLearning\"@en)\n(AnnotationAssertion rdfs:comment :FederatedLearning \"A distributed machine learning approach where models are trained across multiple decentralized devices or servers holding local data, without exchanging raw data to preserve privacy.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :FederatedLearning \"ai-0504\"^^xsd:string)\n```",
   "backlinks": [],
   "wiki_links": [
-    "AIDomain",
-    "MachineLearning"
+    "MachineLearning",
+    "AIDomain"
   ],
   "ontology": {
     "term_id": "AI-0504",

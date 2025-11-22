@@ -69,11 +69,11 @@
     "Eclipse Attack"
   ],
   "wiki_links": [
-    "BlockchainDomain",
     "ISO/IEC 23257:2021",
-    "ConceptualLayer",
+    "NIST Blockchain Technology Overview",
+    "BlockchainDomain",
     "W3C Blockchain Community Group",
-    "NIST Blockchain Technology Overview"
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "PC-0001",

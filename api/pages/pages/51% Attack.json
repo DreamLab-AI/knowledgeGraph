@@ -7,15 +7,15 @@
     "Safety Laser Scanner"
   ],
   "wiki_links": [
-    "NIST NISTIR",
-    "Open Generative AI tools",
-    "Jailbreaking",
-    "CryptographicDomain",
-    "SecurityLayer",
-    "NetworkComponent",
     "Blockchain Entity",
+    "NetworkComponent",
+    "Open Generative AI tools",
     "ISO/IEC 23257:2021",
-    "IEEE 2418.1"
+    "IEEE 2418.1",
+    "SecurityLayer",
+    "CryptographicDomain",
+    "Jailbreaking",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0077",

@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: robot-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0001\n\t- preferred-term:: Robot\n\t- source-domain:: robotics\n\t- status:: complete\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: rb:Robot\n\t- owl:physicality:: PhysicalEntity\n\t- owl:role:: Object\n\n### Domain & Architecture\n\t- belongsToDomain:: [[Robotics]]\n\t- maturity:: mature\n\n### Relationships\n\n### Quality Metrics\n\t- authority-score:: 1.00\n\n- ### OntologyBlock\n  id:: robot-ontology\n  collapsed:: true\n\n  - **Identification**\n    - ontology:: true\n    - is-subclass-of:: [[RoboticsTechnology]]\n    - term-id:: RB-0001\n    - preferred-term:: Robot\n    - source-domain:: robotics\n    - status:: complete\n    - public-access:: true\n    - version:: 1.0.0\n    - last-updated:: 2025-10-28\n\n  - **Definition**\n    - definition:: A robot is an actuated mechanism programmable in two or more axes with a degree of autonomy, moving within its environment, to perform intended tasks.\n    - maturity:: mature\n    - source:: [[ISO 8373:2021]]\n    - authority-score:: 1.0\n\n  - **Semantic Classification**\n    - owl:class:: rb:Robot\n    - owl:physicality:: PhysicalEntity\n    - owl:role:: Object\n    - belongsToDomain:: [[Robotics]]\n\n  - #### OWL Restrictions\n    - hasSensingCapability some SensorSystem\n    - is-part-of some Autonomousagent\n    - hasMechanicalStructure some RobotFrame\n    - hasPowerSource some PowerSupply\n    - is-part-of some Mechatronicsystem\n    - hasControlSystem some RobotController\n\n  - #### CrossDomainBridges\n    - bridges-to:: [[PowerSupply]] via hasPowerSource\n    - bridges-to:: [[Autonomousagent]] via is-part-of\n    - bridges-to:: [[Mechatronicsystem]] via is-part-of\n\n  -",
   "backlinks": [],
   "wiki_links": [
-    "Robotics",
-    "ISO 8373:2021",
-    "RoboticsTechnology",
-    "PowerSupply",
     "Mechatronicsystem",
-    "Autonomousagent"
+    "Robotics",
+    "PowerSupply",
+    "ISO 8373:2021",
+    "Autonomousagent",
+    "RoboticsTechnology"
   ],
   "ontology": {
     "term_id": "RB-0001",

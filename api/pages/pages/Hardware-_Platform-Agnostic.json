@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: hardware-_platform-agnostic-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20055\n\t- preferred-term:: Hardware _Platform Agnostic\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: capability of a metaverse system to operate across multiple hardware or software platforms without dependency.\n\t- source:: [[Metaverse 101]]\n\t- maturity:: draft\n\t- owl:class:: mv:Hardware_PlatformAgnostic\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :HardwarePlatformAgnostic))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :HardwarePlatformAgnostic \"Hardware _Platform Agnostic\"@en)\n(AnnotationAssertion rdfs:comment :HardwarePlatformAgnostic \"capability of a metaverse system to operate across multiple hardware or software platforms without dependency.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :HardwarePlatformAgnostic \"20055\"^^xsd:string)\n```",
   "backlinks": [],
   "wiki_links": [
-    "MetaverseDomain",
-    "Metaverse 101"
+    "Metaverse 101",
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "20055",

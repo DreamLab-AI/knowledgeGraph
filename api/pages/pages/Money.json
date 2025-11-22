@@ -9,10 +9,10 @@
   ],
   "wiki_links": [
     "IMF",
-    "BIS",
     "ISO 4217",
-    "Bank of England",
-    "EconomicSystemDomain"
+    "EconomicSystemDomain",
+    "BIS",
+    "Bank of England"
   ],
   "ontology": {
     "term_id": "DT-0002",

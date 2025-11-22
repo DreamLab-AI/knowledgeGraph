@@ -6,12 +6,12 @@
     "Cross-Border Data Transfer Rule"
   ],
   "wiki_links": [
+    "ICO DPIA Code",
+    "ISO 29134",
     "GDPR Article 35",
     "AIGovernance",
-    "ISO 29134",
-    "ICO DPIA Code",
-    "ConceptualLayer",
-    "AIEthicsDomain"
+    "AIEthicsDomain",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "AI-0425",

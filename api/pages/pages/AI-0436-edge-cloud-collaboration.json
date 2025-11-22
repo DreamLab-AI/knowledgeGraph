@@ -7,8 +7,8 @@
     "ETSI MEC",
     "Azure IoT Edge",
     "AWS IoT Greengrass",
-    "ConceptualLayer",
-    "AIEthicsDomain"
+    "AIEthicsDomain",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "AI-0436",

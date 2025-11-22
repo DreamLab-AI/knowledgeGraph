@@ -7,10 +7,10 @@
     "Distributed Architecture"
   ],
   "wiki_links": [
-    "NIST NISTIR",
-    "BlockchainDomain",
     "ISO/IEC 23257:2021",
-    "IEEE 2418.1"
+    "IEEE 2418.1",
+    "BlockchainDomain",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0010",

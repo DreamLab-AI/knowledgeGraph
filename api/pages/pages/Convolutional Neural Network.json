@@ -7,9 +7,9 @@
     "Super-Resolution"
   ],
   "wiki_links": [
-    "He et al. 2016 ResNet",
-    "IEEE CVPR Proceedings",
     "Krizhevsky et al. 2012 AlexNet",
+    "IEEE CVPR Proceedings",
+    "He et al. 2016 ResNet",
     "LeCun et al. 1998 Gradient-Based Learning",
     "NeuralNetworkArchitecture"
   ],

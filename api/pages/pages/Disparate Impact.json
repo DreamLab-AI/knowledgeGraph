@@ -7,9 +7,9 @@
     "US EEOC Uniform Guidelines",
     "UK Equality Act 2010",
     "AIFairness",
-    "ConceptualLayer",
+    "AIEthicsDomain",
     "EU Anti-Discrimination Directives",
-    "AIEthicsDomain"
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "AI-0381",

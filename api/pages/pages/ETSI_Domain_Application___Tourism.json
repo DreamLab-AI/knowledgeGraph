@@ -4,18 +4,18 @@
   "content": "- ### OntologyBlock\n  id:: etsi-domain-application-tourism-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20339\n\t- preferred-term:: ETSI Domain Application + Tourism\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Cross-domain marker for metaverse application components focused on tourism and hospitality including virtual tours, destination previews, cultural heritage experiences, and travel planning platforms in immersive environments.\n\t- source:: [[ETSI GS MEC]]\n\t- maturity:: mature\n\t- owl:class:: mv:ETSIDomainApplicationTourism\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]], [[VirtualSocietyDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-application-tourism-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Extended Reality (XR)]]\n\t\t- is-part-of:: [[ETSI Domain Taxonomy]]\n\t\t- enables:: [[Tourism Application Classification]]\n\t\t- enables:: [[Cultural Experience Categorization]]\n\t\t- categorizes:: [[Virtual Tour]]\n\t\t- categorizes:: [[Destination Preview]]\n\t\t- categorizes:: [[Travel Planning Platform]]\n\t\t- categorizes:: [[Cultural Heritage Experience]]\n\t\t- depends-on:: [[VirtualSocietyDomain]]\n\t\t- depends-on:: [[InfrastructureDomain]]",
   "backlinks": [],
   "wiki_links": [
-    "Cultural Experience Categorization",
     "Extended Reality (XR)",
+    "Cultural Heritage Experience",
+    "Travel Planning Platform",
+    "VirtualSocietyDomain",
+    "ApplicationLayer",
+    "Cultural Experience Categorization",
     "ETSI Domain Taxonomy",
-    "InfrastructureDomain",
-    "ETSI GS MEC",
+    "Virtual Tour",
     "Tourism Application Classification",
     "Destination Preview",
-    "Cultural Heritage Experience",
-    "Virtual Tour",
-    "VirtualSocietyDomain",
-    "Travel Planning Platform",
-    "ApplicationLayer"
+    "ETSI GS MEC",
+    "InfrastructureDomain"
   ],
   "ontology": {
     "term_id": "20339",

@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: block-propagation-time-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0082\n\t- preferred-term:: Block Propagation Time\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Network distribution duration within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:BlockPropagationTime\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[CryptographicDomain]]\n\t- #### Relationships\n\t  id:: block-propagation-time-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Block Propagation]]\n\t\t- bridges-to:: [[Networkcomponent]]",
   "backlinks": [],
   "wiki_links": [
-    "NIST NISTIR",
-    "CryptographicDomain",
-    "Block Propagation",
     "ISO/IEC 23257:2021",
+    "IEEE 2418.1",
+    "Block Propagation",
+    "CryptographicDomain",
     "Networkcomponent",
-    "IEEE 2418.1"
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0082",

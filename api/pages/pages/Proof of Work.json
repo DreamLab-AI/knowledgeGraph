@@ -16,18 +16,18 @@
     "BC 0119 economic security"
   ],
   "wiki_links": [
-    "NIST NISTIR",
-    "ConsensusProtocol",
-    "Update Cycle",
-    "Layoff tracker and threatened roles",
-    "ProtocolLayer",
     "Blockchain Entity",
-    "king1966fisher",
-    "ISO/IEC 23257:2021",
-    "Recent Projects",
+    "Update Cycle",
     "Education and AI",
+    "ConsensusDomain",
+    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
-    "ConsensusDomain"
+    "ConsensusProtocol",
+    "Layoff tracker and threatened roles",
+    "Recent Projects",
+    "king1966fisher",
+    "ProtocolLayer",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0052",

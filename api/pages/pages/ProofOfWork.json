@@ -4,14 +4,14 @@
   "content": "- ### OntologyBlock\n  id:: proof-of-work-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0052\n\t- preferred-term:: Proof of Work\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: [[Computational puzzle]] [[consensus mechanism]] within [[blockchain]] systems, providing essential functionality for [[distributed ledger]] technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:ProofofWork\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[ConsensusDomain]]",
   "backlinks": [],
   "wiki_links": [
-    "blockchain",
-    "NIST NISTIR",
-    "consensus mechanism",
-    "ISO/IEC 23257:2021",
-    "distributed ledger",
     "Computational puzzle",
+    "ConsensusDomain",
+    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
-    "ConsensusDomain"
+    "consensus mechanism",
+    "NIST NISTIR",
+    "distributed ledger",
+    "blockchain"
   ],
   "ontology": {
     "term_id": "BC-0052",

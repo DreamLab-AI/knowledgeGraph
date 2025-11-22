@@ -7,10 +7,10 @@
   ],
   "wiki_links": [
     "He et al. 2020 MoCo",
-    "MachineLearning",
+    "Chen et al. 2020 SimCLR",
     "Gao et al. 2021 SimCSE",
     "Radford et al. 2021 CLIP",
-    "Chen et al. 2020 SimCLR"
+    "MachineLearning"
   ],
   "ontology": {
     "term_id": "AI-0283",

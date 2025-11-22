@@ -97,10 +97,10 @@
     "Digital Jurisdiction"
   ],
   "wiki_links": [
-    "DigitalAvatar",
-    "BlockchainDomain",
     "ConsensusMechanism",
-    "Digital Twin"
+    "Digital Twin",
+    "DigitalAvatar",
+    "BlockchainDomain"
   ],
   "ontology": {
     "term_id": "BC-0001",

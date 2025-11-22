@@ -6,11 +6,11 @@
     "Runes and Glyphs"
   ],
   "wiki_links": [
-    "NIST NISTIR",
     "BlockchainEntity",
     "ISO/IEC 23257:2021",
+    "IEEE 2418.1",
     "Public Key Cryptography",
-    "IEEE 2418.1"
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0036",

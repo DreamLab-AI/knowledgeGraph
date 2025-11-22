@@ -13,11 +13,11 @@
     "Safety Laser Scanner"
   ],
   "wiki_links": [
-    "ArtificialIntelligence",
-    "EU AI Act",
+    "NIST AI RMF",
     "OECD AI Principles",
+    "EU AI Act",
     "ISO/IEC 42001:2023",
-    "NIST AI RMF"
+    "ArtificialIntelligence"
   ],
   "ontology": {
     "term_id": "AI-0091",

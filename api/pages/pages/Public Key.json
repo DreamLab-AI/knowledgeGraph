@@ -6,12 +6,12 @@
     "Runes and Glyphs"
   ],
   "wiki_links": [
-    "NIST NISTIR",
-    "SecurityLayer",
-    "CryptographicPrimitive",
     "Blockchain Entity",
     "ISO/IEC 23257:2021",
-    "IEEE 2418.1"
+    "IEEE 2418.1",
+    "SecurityLayer",
+    "CryptographicPrimitive",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0037",

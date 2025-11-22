@@ -7,12 +7,12 @@
     "Safety Laser Scanner"
   ],
   "wiki_links": [
-    "AlgorithmicBias",
-    "Hardt et al. (2016)",
     "Barocas et al. (2019)",
+    "Hardt et al. (2016)",
+    "AlgorithmicBias",
+    "AIEthicsDomain",
     "ConceptualLayer",
-    "Chouldechova (2017)",
-    "AIEthicsDomain"
+    "Chouldechova (2017)"
   ],
   "ontology": {
     "term_id": "AI-0382",

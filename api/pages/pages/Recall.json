@@ -7,19 +7,19 @@
     "Precision"
   ],
   "wiki_links": [
+    "Precision",
+    "Specificity",
     "Sensitivity",
+    "Precision-Recall Curve",
+    "F1 Score",
     "ROC Curve",
+    "MetaverseDomain",
+    "Model Performance",
     "Accuracy",
     "Metaverse",
-    "Model Performance",
     "False Negative",
-    "Specificity",
-    "MetaverseDomain",
-    "Precision-Recall Curve",
-    "Precision",
-    "Confusion Matrix",
-    "F1 Score",
-    "True Positive Rate"
+    "True Positive Rate",
+    "Confusion Matrix"
   ],
   "ontology": {
     "term_id": "AI-0109",

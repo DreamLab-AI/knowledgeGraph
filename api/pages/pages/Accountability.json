@@ -12,18 +12,18 @@
     "Compliance Audit Trail"
   ],
   "wiki_links": [
-    "Human Oversight",
-    "Trust",
+    "AI Impact Assessment",
+    "Explainability (AI-0063)",
+    "Compliance",
+    "Human-in-the-Loop",
     "Transparency (AI-0062)",
+    "Risk Management (AI-0078)",
+    "Audit Trail",
+    "Human Oversight",
+    "MetaverseDomain",
     "Metaverse",
     "Compliance Audit Trail",
-    "MetaverseDomain",
-    "Compliance",
-    "Explainability (AI-0063)",
-    "Risk Management (AI-0078)",
-    "Human-in-the-Loop",
-    "AI Impact Assessment",
-    "Audit Trail"
+    "Trust"
   ],
   "ontology": {
     "term_id": "AI-0067",

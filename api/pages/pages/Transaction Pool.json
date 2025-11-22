@@ -8,12 +8,12 @@
     "BC-0019-mempool"
   ],
   "wiki_links": [
-    "NIST NISTIR",
     "Blockchain Entity",
-    "ISO/IEC 23257:2021",
-    "ConceptualLayer",
     "DistributedDataStructure",
-    "IEEE 2418.1"
+    "ISO/IEC 23257:2021",
+    "IEEE 2418.1",
+    "ConceptualLayer",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0018",

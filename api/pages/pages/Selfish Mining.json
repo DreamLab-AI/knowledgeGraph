@@ -6,13 +6,13 @@
     "Mining Pool"
   ],
   "wiki_links": [
-    "NIST NISTIR",
-    "CryptographicDomain",
-    "SecurityLayer",
-    "NetworkComponent",
     "Blockchain Entity",
+    "NetworkComponent",
     "ISO/IEC 23257:2021",
-    "IEEE 2418.1"
+    "IEEE 2418.1",
+    "SecurityLayer",
+    "CryptographicDomain",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0085",

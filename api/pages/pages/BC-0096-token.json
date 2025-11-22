@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: token-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0096\n\t- preferred-term:: Token\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A token is a digital asset representation on a blockchain that confers specific rights, utility, or value to its holder, implemented as a cryptographically-secured unit that can be owned, transferred, and programmably controlled through smart contracts according to defined rules and protocols.\n\t- source:: [[ISO/IEC 23257:2021]]\n\t- maturity:: mature\n\t- owl:class:: bc:Token\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[TokenEconomicsDomain]]\n\t- implementedInLayer:: [[EconomicLayer]]\n\t- #### Relationships\n\t  id:: token-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Transferable Right]]\n\t\t- is-subclass-of:: [[Digital Asset]]\n\t\t- is-subclass-of:: [[Blockchain Entity]]",
   "backlinks": [],
   "wiki_links": [
-    "EconomicLayer",
-    "Transferable Right",
+    "Digital Asset",
     "Blockchain Entity",
     "ISO/IEC 23257:2021",
-    "Digital Asset",
+    "Transferable Right",
+    "EconomicLayer",
     "TokenEconomicsDomain"
   ],
   "ontology": {

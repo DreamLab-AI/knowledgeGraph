@@ -6,23 +6,23 @@
     "Governance Token"
   ],
   "wiki_links": [
-    "BC-0471-tokenomics-governance",
-    "BlockchainDomain",
     "BC-0474-grant-programmes",
-    "BC-0410-decentralised-autonomous-organisations",
+    "ENS",
+    "BC-0471-tokenomics-governance",
+    "BC-0472-dao-tooling",
     "BC-0469-governance-tokens",
     "Compound",
-    "ENS",
-    "BC-0462-treasury-management",
+    "Optimism",
     "BC-0470-voting-mechanisms",
     "Gitcoin",
+    "BC-0462-treasury-management",
+    "BlockchainDomain",
+    "Uniswap",
     "Karma",
     "Agora",
+    "BC-0411-dao-governance-models",
     "StableLab",
-    "BC-0472-dao-tooling",
-    "Uniswap",
-    "Optimism",
-    "BC-0411-dao-governance-models"
+    "BC-0410-decentralised-autonomous-organisations"
   ],
   "ontology": {
     "term_id": "BC-0468",

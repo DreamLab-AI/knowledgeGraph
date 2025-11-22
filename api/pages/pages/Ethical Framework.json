@@ -9,11 +9,11 @@
   ],
   "wiki_links": [
     "Montreal Declaration for Responsible AI",
-    "IEEE Ethically Aligned Design",
-    "ArtificialIntelligence",
     "ACM Code of Ethics",
     "Asilomar AI Principles",
-    "AIEthicsDomain"
+    "ArtificialIntelligence",
+    "AIEthicsDomain",
+    "IEEE Ethically Aligned Design"
   ],
   "ontology": {
     "term_id": "PC-0011",

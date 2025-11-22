@@ -4,18 +4,18 @@
   "content": "- ### OntologyBlock\n  id:: etsi-domain-application-health-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20337\n\t- preferred-term:: ETSI Domain Application + Health\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Cross-domain marker for metaverse application components focused on healthcare and wellness including telemedicine platforms, medical training simulations, therapeutic VR applications, and health monitoring systems.\n\t- source:: [[ETSI GS MEC]]\n\t- maturity:: mature\n\t- owl:class:: mv:ETSIDomainApplicationHealth\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]], [[VirtualSocietyDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-application-health-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-part-of:: [[ETSI Domain Taxonomy]]\n\t\t- enables:: [[Healthcare Application Classification]]\n\t\t- enables:: [[Medical Platform Categorization]]\n\t\t- categorizes:: [[Telemedicine Platform]]\n\t\t- categorizes:: [[Therapeutic VR]]\n\t\t- categorizes:: [[Health Monitoring]]\n\t\t- categorizes:: [[Medical Simulation]]\n\t\t- depends-on:: [[VirtualSocietyDomain]]\n\t\t- depends-on:: [[InfrastructureDomain]]",
   "backlinks": [],
   "wiki_links": [
-    "ETSI Domain Taxonomy",
-    "InfrastructureDomain",
-    "ETSI GS MEC",
-    "Metaverse",
-    "Medical Platform Categorization",
-    "Health Monitoring",
     "Healthcare Application Classification",
-    "VirtualSocietyDomain",
     "Medical Simulation",
-    "ApplicationLayer",
     "Therapeutic VR",
-    "Telemedicine Platform"
+    "VirtualSocietyDomain",
+    "ApplicationLayer",
+    "Telemedicine Platform",
+    "ETSI Domain Taxonomy",
+    "Health Monitoring",
+    "ETSI GS MEC",
+    "Medical Platform Categorization",
+    "Metaverse",
+    "InfrastructureDomain"
   ],
   "ontology": {
     "term_id": "20337",

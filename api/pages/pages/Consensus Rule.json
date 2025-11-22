@@ -7,15 +7,15 @@
     "BC-0059-longest-chain-rule"
   ],
   "wiki_links": [
-    "NIST NISTIR",
-    "ConsensusProtocol",
-    "BlockchainEntity",
-    "ProtocolLayer",
     "Blockchain Entity",
-    "Consensus Mechanism",
+    "BlockchainEntity",
+    "ConsensusDomain",
     "ISO/IEC 23257:2021",
     "IEEE 2418.1",
-    "ConsensusDomain"
+    "ConsensusProtocol",
+    "Consensus Mechanism",
+    "ProtocolLayer",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0058",

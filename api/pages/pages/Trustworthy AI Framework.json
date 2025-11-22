@@ -7,9 +7,9 @@
     "EU HLEG AI",
     "AIGovernance",
     "EU AI Act",
-    "ConceptualLayer",
     "ISO/IEC 42001:2023",
-    "AIEthicsDomain"
+    "AIEthicsDomain",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "AI-0407",

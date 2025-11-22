@@ -6,12 +6,12 @@
     "Privacy Impact Assessment (PIA)"
   ],
   "wiki_links": [
+    "GDPR Article 25",
     "Cavoukian (2009)",
     "AIGovernance",
-    "ConceptualLayer",
-    "GDPR Article 25",
+    "AIEthicsDomain",
     "ISO 29100",
-    "AIEthicsDomain"
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "AI-0428",

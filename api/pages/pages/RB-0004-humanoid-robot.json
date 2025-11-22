@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: humanoid-robot-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0004\n\t- preferred-term:: Humanoid Robot\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A humanoid robot is a robot whose overall appearance and kinematic structure are based on the human body, typically including a head, torso, two arms, and two legs.\n\t- source:: [[ISO 8373:2021]]\n\t- maturity:: mature\n\t- owl:class:: rb:HumanoidRobot\n\t- owl:physicality:: PhysicalEntity\n\t- owl:role:: Object\n\t- belongsToDomain:: [[Robotics]]",
   "backlinks": [],
   "wiki_links": [
-    "Robotics",
-    "ISO 8373:2021"
+    "ISO 8373:2021",
+    "Robotics"
   ],
   "ontology": {
     "term_id": "RB-0004",

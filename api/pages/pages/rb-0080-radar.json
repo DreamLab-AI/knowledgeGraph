@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: rb-0080-radar-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0080\n\t- preferred-term:: rb 0080 radar\n\t- source-domain:: robotics\n\t- status:: draft\n\t- public-access:: true\n\n\n\n\n### OWL Classification\n\t- owl:class:: mv:rb0080radar\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n### Domain & Architecture\n\t- belongsToDomain:: [[RoboticsDomain]]\n\t- maturity:: draft\n\n### Relationships\n\n- ### OntologyBlock\n  id:: rb-0080-radar-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0080\n\t- preferred-term:: rb 0080 radar\n\t- source-domain:: robotics\n\t- status:: draft\n\t- definition:: ### Primary Definition\n**Radar** - Radar in robotics systems\n\t- maturity:: draft\n\t- owl:class:: mv:rb0080radar\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[RoboticsDomain]]\n\t- is-subclass-of:: [[ExteroceptiveSensors]]",
   "backlinks": [],
   "wiki_links": [
-    "RoboticsDomain",
-    "ExteroceptiveSensors"
+    "ExteroceptiveSensors",
+    "RoboticsDomain"
   ],
   "ontology": {
     "term_id": "RB-0080",

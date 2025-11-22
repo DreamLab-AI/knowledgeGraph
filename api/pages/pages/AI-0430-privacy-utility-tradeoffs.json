@@ -6,10 +6,10 @@
   "wiki_links": [
     "Dwork and Roth (2014)",
     "Narayanan and Shmatikov (2008)",
-    "ConceptualLayer",
-    "ArtificialIntelligenceTechnology",
     "NIST Privacy Framework",
-    "AIEthicsDomain"
+    "ArtificialIntelligenceTechnology",
+    "AIEthicsDomain",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "AI-0430",

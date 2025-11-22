@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: feedforwardnetwork-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0811\n\t- preferred-term:: Feed Forward Network\n\t- status:: complete\n\t- public-access:: true\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: ai:FeedForwardNetwork\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: feedforwardnetwork-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[NeuralNetworkArchitecture]]",
   "backlinks": [],
   "wiki_links": [
-    "NeuralNetworkArchitecture",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "NeuralNetworkArchitecture"
   ],
   "ontology": {
     "term_id": "AI-0811",

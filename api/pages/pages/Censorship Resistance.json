@@ -8,18 +8,18 @@
     "Decentralization Layer"
   ],
   "wiki_links": [
-    "NIST NISTIR",
-    "BlockchainEntity",
-    "CryptographicDomain",
-    "SecurityLayer",
-    "NetworkComponent",
-    "DecentralizationLayer",
     "Blockchain Entity",
+    "NetworkComponent",
+    "BlockchainEntity",
+    "DecentralizationLayer",
     "ISO/IEC 23257:2021",
-    "Networkcomponent",
-    "Bitcoin",
     "IEEE 2418.1",
-    "Blockchain"
+    "Blockchain",
+    "Bitcoin",
+    "SecurityLayer",
+    "CryptographicDomain",
+    "Networkcomponent",
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0086",

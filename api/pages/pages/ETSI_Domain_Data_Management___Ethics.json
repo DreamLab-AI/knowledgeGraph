@@ -6,22 +6,22 @@
     "Consent Management"
   ],
   "wiki_links": [
-    "Privacy-Preserving Analytics",
-    "Compliance Verification",
-    "InfrastructureDomain",
-    "Metaverse",
-    "Anonymization",
     "Privacy Regulations",
-    "Privacy Controls",
     "ETSI GR MEC 032",
-    "Audit Logging",
-    "Consent Management",
-    "Ethics & Law",
-    "Data Management",
     "ApplicationLayer",
     "ETSI Metaverse Domain Taxonomy",
     "GDPR",
-    "User Control"
+    "Audit Logging",
+    "Privacy Controls",
+    "Anonymization",
+    "User Control",
+    "Ethics & Law",
+    "Consent Management",
+    "Data Management",
+    "Compliance Verification",
+    "Privacy-Preserving Analytics",
+    "Metaverse",
+    "InfrastructureDomain"
   ],
   "ontology": {
     "term_id": "20344",

@@ -7,20 +7,20 @@
     "Human Interface Layer (HIL)"
   ],
   "wiki_links": [
-    "Human Interface Layer (HIL)",
-    "InfrastructureDomain",
-    "Physical Layer",
-    "Operating System",
-    "MSF Taxonomy 2025",
-    "Network Layer",
-    "Platform Independence",
-    "API Interfaces",
-    "Device Drivers",
-    "Hardware Resources",
-    "Unified Hardware Access",
-    "Abstraction Modules",
     "Infrastructure Layer",
-    "Device Portability"
+    "Operating System",
+    "Unified Hardware Access",
+    "Physical Layer",
+    "API Interfaces",
+    "MSF Taxonomy 2025",
+    "Platform Independence",
+    "Device Portability",
+    "Hardware Resources",
+    "Human Interface Layer (HIL)",
+    "Abstraction Modules",
+    "Device Drivers",
+    "InfrastructureDomain",
+    "Network Layer"
   ],
   "ontology": {
     "term_id": "20167",

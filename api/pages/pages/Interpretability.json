@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "Model Validation",
-    "ArtificialIntelligence",
-    "Trust",
     "MetaverseDomain",
-    "Debugging"
+    "ArtificialIntelligence",
+    "Debugging",
+    "Trust"
   ],
   "ontology": {
     "term_id": "AI-0064",

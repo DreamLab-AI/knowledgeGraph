@@ -21,10 +21,10 @@
     "BC-0065-solo-mining"
   ],
   "wiki_links": [
-    "NIST NISTIR",
+    "ConsensusDomain",
     "ISO/IEC 23257:2021",
     "IEEE 2418.1",
-    "ConsensusDomain"
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0053",

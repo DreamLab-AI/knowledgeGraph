@@ -4,18 +4,18 @@
   "content": "- ### OntologyBlock\n  id:: hash-collision-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0046\n\t- preferred-term:: Hash Collision\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Two inputs producing same hash within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:HashCollision\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[CryptographicDomain]]\n\t- #### Relationships\n\t  id:: hash-collision-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Hash Function]]\n\t\t- bridges-to:: [[BlockchainEntity]]\n\n## Hash Collision\n\nHash Collision refers to the cryptographic event where two distinct inputs produce identical hash outputs from a hash function, representing a fundamental vulnerability in cryptographic systems when collision resistance fails. In blockchain technology, hash collisions undermine security assumptions by enabling transaction manipulation, block header forgery, and Merkle tree proof attacks. While theoretically inevitable due to the pigeonhole principle (infinite inputs mapping to finite outputs), practical collision resistance requires computationally infeasible collision discovery within realistic attack timeframes.\n\nThe phenomenon gained prominence through academic attacks on MD5 (2004) and SHA-1 (2017), where researchers demonstrated practical collision generation using differential cryptanalysis and chosen-prefix techniques. Modern blockchain systems mitigate collision risks through cryptographically secure hash functions (SHA-256, SHA-3, BLAKE2) with sufficiently large output spaces (256+ bits) and formal security proofs. Bitcoin's SHA-256 hash function requires approximately 2^128 operations to find collisions via birthday attack, far exceeding current computational capabilities. However, collision vulnerabilities persist in legacy systems, certificate authorities, and poorly implemented smart contracts.\n\nCurrent security practices mandate migration from deprecated hash functions (MD5, SHA-1) to collision-resistant alternatives across cryptocurrency wallets, digital signature schemes, and blockchain consensus protocols. The NIST Cryptographic Hash Algorithm Competition standardized SHA-3 (Keccak) in 2015, providing alternative collision-resistant primitives for systems requiring independence from SHA-2 family assumptions. Enterprise blockchain platforms implement collision detection mechanisms, hash function agility, and multi-hash validation to defend against sophisticated collision attacks. Standards from ISO/IEC 10118 specify hash function requirements including collision resistance thresholds, while FIPS 180-4 defines approved algorithms. Post-quantum cryptography initiatives address potential quantum collision search acceleration, though Grover's algorithm provides only quadratic speedup (2^64 operations for SHA-256 collisions), maintaining practical resistance through 2050+ timelines.\n\n## Technical Details\n\n- **Id**: hash-collision-standards\n- **Collapsed**: true\n- **Domain Prefix**: BC\n- **Sequence Number**: 0046\n- **Filename History**: [\"BC-0046-hash-collision.md\"]\n- **Public Access**: true\n- **Source Domain**: blockchain\n- **Status**: complete\n- **Last Updated**: 2025-11-18\n- **Maturity**: mature\n- **Source**: [[NIST FIPS 180-4]], [[ISO/IEC 10118]], [[IEEE 2418.1]], [[RFC 6194]]\n- **Authority Score**: 0.97\n- **Owl:Class**: bc:HashCollision\n- **Owl:Physicality**: VirtualEntity\n- **Owl:Role**: Object\n- **Owl:Inferred Class**: bc:VirtualObject\n- **Belongstodomain**: [[CryptographicDomain]]\n- **Implementedinlayer**: [[SecurityLayer]]\n- **Is Subclass Of**: [[Blockchain Entity]], [[CryptographicPrimitive]]",
   "backlinks": [],
   "wiki_links": [
-    "NIST NISTIR",
-    "NIST FIPS 180-4",
     "ISO/IEC 10118",
-    "BlockchainEntity",
-    "CryptographicDomain",
-    "SecurityLayer",
-    "CryptographicPrimitive",
-    "Hash Function",
     "Blockchain Entity",
+    "BlockchainEntity",
     "ISO/IEC 23257:2021",
+    "IEEE 2418.1",
+    "SecurityLayer",
+    "CryptographicDomain",
+    "Hash Function",
+    "NIST FIPS 180-4",
+    "CryptographicPrimitive",
     "RFC 6194",
-    "IEEE 2418.1"
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0046",

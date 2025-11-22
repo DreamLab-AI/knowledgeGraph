@@ -4,13 +4,13 @@
   "content": "- ### OntologyBlock\n  id:: distributed-ledger-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0002\n\t- preferred-term:: Distributed Ledger\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A distributed ledger is a database architecture where multiple identical copies of a ledger are maintained across different nodes in a network, with updates replicated and synchronized through a consensus mechanism, eliminating the need for a central authority to prevent manipulation and maintain data integrity.\n\t- source:: [[ISO/IEC 23257:2021]], [[ITU-T Y.4560]]\n\t- maturity:: mature\n\t- owl:class:: bc:DistributedLedger\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- implementedInLayer:: [[ConceptualLayer]]\n\t- #### Relationships\n\t  id:: distributed-ledger-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Distributed System]]\n\t\t- is-subclass-of:: [[Data Structure]]\n\t\t- is-subclass-of:: [[Record-Keeping System]]",
   "backlinks": [],
   "wiki_links": [
-    "BlockchainDomain",
-    "Data Structure",
-    "Record-Keeping System",
     "Distributed System",
     "ISO/IEC 23257:2021",
-    "ConceptualLayer",
-    "ITU-T Y.4560"
+    "Data Structure",
+    "BlockchainDomain",
+    "ITU-T Y.4560",
+    "Record-Keeping System",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "BC-0002",

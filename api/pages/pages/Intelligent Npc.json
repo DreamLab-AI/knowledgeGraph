@@ -6,18 +6,18 @@
     "Large language models"
   ],
   "wiki_links": [
-    "IEEE P2874 Embodied AI",
-    "Digital Humans",
-    "Unity ML-Agents",
-    "AAAI Artificial Intelligence and Interactive Digital Entertainment",
-    "Metaverse",
-    "Replica Studios",
-    "OpenAI GPT-4",
-    "Game AI Pro",
-    "Nvidia Audio2Face",
-    "Large language models",
     "Computer Vision",
-    "Machine Learning"
+    "Unity ML-Agents",
+    "Game AI Pro",
+    "Machine Learning",
+    "Digital Humans",
+    "AAAI Artificial Intelligence and Interactive Digital Entertainment",
+    "Nvidia Audio2Face",
+    "IEEE P2874 Embodied AI",
+    "OpenAI GPT-4",
+    "Large language models",
+    "Replica Studios",
+    "Metaverse"
   ],
   "ontology": {
     "term_id": "MV-0003",

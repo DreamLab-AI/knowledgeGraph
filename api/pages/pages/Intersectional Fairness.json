@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "IEEE P7003-2021",
-    "Buolamwini and Gebru (2018)",
-    "Crenshaw (1989)",
     "AIFairness",
+    "AIEthicsDomain",
+    "Crenshaw (1989)",
     "ConceptualLayer",
-    "AIEthicsDomain"
+    "Buolamwini and Gebru (2018)"
   ],
   "ontology": {
     "term_id": "AI-0384",

@@ -4,18 +4,18 @@
   "content": "- ### OntologyBlock\n  id:: public-key-cryptography-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0031\n\t- preferred-term:: Public-Key Cryptography\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Asymmetric encryption system within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:Public-keyCryptography\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[CryptographicDomain]]\n\t- #### Relationships\n\t  id:: public-key-cryptography-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Cryptography]]\n\t\t- bridges-to:: [[BlockchainEntity]]\n\n## Public-Key Cryptography\n\nPublic-Key Cryptography refers to asymmetric cryptographic systems utilizing mathematically related key pairs for encryption, digital signatures, and secure communication in distributed networks. In blockchain technology, public-key cryptography forms the foundational security layer enabling trustless transactions, identity verification, and cryptographic ownership without centralized authorities. Each participant possesses a private key (secret) and corresponding public key (shared), where operations performed with one key can only be reversed or verified with its counterpart.\n\nThe mechanism underpins all major blockchain protocols through digital signature schemes (ECDSA, EdDSA, Schnorr), address generation systems, and cryptographic authentication protocols. Bitcoin employs secp256k1 elliptic curve cryptography for transaction signing, while Ethereum uses the same curve for account generation and smart contract interactions. Modern proof-of-stake networks like Ethereum 2.0 utilize BLS signatures for validator attestations, enabling signature aggregation and reducing bandwidth requirements. The cryptographic security relies on computational hardness assumptions such as discrete logarithm problem and elliptic curve discrete logarithm problem.\n\nCurrent adoption spans all blockchain platforms, cryptocurrency wallets, decentralized identity systems (DIDs), and Web3 authentication protocols. Enterprise implementations include Hyperledger Fabric's MSP (Membership Service Provider) using X.509 certificates, and permissioned networks employing RSA or ECDSA for participant authentication. Technical standards from NIST FIPS 186-5 specify digital signature algorithms, while ISO/IEC 14888 defines signature schemes with message recovery. The transition to post-quantum cryptography is underway, with NIST selecting ML-DSA (Dilithium), SLH-DSA (SPHINCS+), and Falcon for standardization to protect against quantum computing threats to current elliptic curve and RSA-based systems.\n\n## Technical Details\n\n- **Id**: public-key-cryptography-standards\n- **Collapsed**: true\n- **Domain Prefix**: BC\n- **Sequence Number**: 0031\n- **Filename History**: [\"BC-0031-public-key-cryptography.md\"]\n- **Public Access**: true\n- **Source Domain**: blockchain\n- **Status**: complete\n- **Last Updated**: 2025-11-18\n- **Maturity**: mature\n- **Source**: [[NIST FIPS 186-5]], [[ISO/IEC 14888]], [[RFC 8017]], [[IEEE 2418.1]]\n- **Authority Score**: 0.99\n- **Owl:Class**: bc:Public-keyCryptography\n- **Owl:Physicality**: VirtualEntity\n- **Owl:Role**: Object\n- **Owl:Inferred Class**: bc:VirtualObject\n- **Belongstodomain**: [[CryptographicDomain]]\n- **Blockchainrelevance**: High\n- **Lastvalidated**: 2025-11-14\n- **Implementedinlayer**: [[SecurityLayer]]\n- **Is Subclass Of**: [[Blockchain Entity]], [[CryptographicPrimitive]]",
   "backlinks": [],
   "wiki_links": [
-    "NIST NISTIR",
-    "Cryptography",
+    "Blockchain Entity",
     "ISO/IEC 14888",
+    "Cryptography",
     "BlockchainEntity",
+    "ISO/IEC 23257:2021",
+    "IEEE 2418.1",
+    "NIST FIPS 186-5",
+    "SecurityLayer",
     "RFC 8017",
     "CryptographicDomain",
-    "SecurityLayer",
     "CryptographicPrimitive",
-    "Blockchain Entity",
-    "ISO/IEC 23257:2021",
-    "NIST FIPS 186-5",
-    "IEEE 2418.1"
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0031",

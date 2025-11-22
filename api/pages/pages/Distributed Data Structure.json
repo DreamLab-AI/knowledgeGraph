@@ -6,11 +6,11 @@
     "BC-0001-blockchain"
   ],
   "wiki_links": [
-    "BlockchainDomain",
+    "Byzantine Fault Tolerance Papers",
     "Metaverse Infrastructure",
     "Distributed Systems: Principles and Paradigms",
-    "CAP Theorem",
-    "Byzantine Fault Tolerance Papers"
+    "BlockchainDomain",
+    "CAP Theorem"
   ],
   "ontology": {
     "term_id": "PC-0002",

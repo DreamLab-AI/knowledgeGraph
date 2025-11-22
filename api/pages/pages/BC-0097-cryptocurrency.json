@@ -4,13 +4,13 @@
   "content": "- ### OntologyBlock\n  id:: cryptocurrency-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0097\n\t- preferred-term:: Cryptocurrency\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Digital currency on blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:Cryptocurrency\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[TokenEconomicsDomain]]\n\t- implementedInLayer:: [[EconomicLayer]]\n\t- #### Relationships\n\t  id:: cryptocurrency-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Entity]]\n\t\t- is-subclass-of:: [[EconomicMechanism]]",
   "backlinks": [],
   "wiki_links": [
-    "NIST NISTIR",
+    "Blockchain Entity",
+    "EconomicMechanism",
+    "ISO/IEC 23257:2021",
     "IEEE 2418.1",
     "EconomicLayer",
-    "Blockchain Entity",
-    "ISO/IEC 23257:2021",
     "TokenEconomicsDomain",
-    "EconomicMechanism"
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0097",

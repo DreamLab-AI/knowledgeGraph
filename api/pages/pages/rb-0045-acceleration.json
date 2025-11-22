@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: rb-0045-acceleration-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0045\n\t- preferred-term:: rb 0045 acceleration\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: ### Primary Definition\n\t- maturity:: draft\n\t- owl:class:: mv:rb0045acceleration\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[RoboticsDomain]]\n\t- #### Relationships\n\t  id:: rb-0045-acceleration-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[rb-0022-robot-dynamics]]\n\t\t- belongsToDomain:: [[RoboticsDomain]]",
   "backlinks": [],
   "wiki_links": [
-    "RoboticsDomain",
-    "rb-0022-robot-dynamics"
+    "rb-0022-robot-dynamics",
+    "RoboticsDomain"
   ],
   "ontology": {
     "term_id": "RB-0045",
