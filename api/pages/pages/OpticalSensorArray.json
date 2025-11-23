@@ -1,0 +1,58 @@
+{
+  "id": "OpticalSensorArray",
+  "title": "OpticalSensorArray",
+  "content": "- ### OntologyBlock\n  id:: opticalsensorarray-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-1001\n\t- preferred-term:: OpticalSensorArray\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A optical sensor array component in the Robotics domain that required by BiometricBindingMechanism.\n\t- source:: Generated from bridge validation\n\t- maturity:: emerging\n\t- owl:class:: rb:OpticalSensorArray\n\t- #### Relationships\n\t  id:: opticalsensorarray-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Sensor Hardware]]",
+  "backlinks": [],
+  "wiki_links": [
+    "Sensor Hardware"
+  ],
+  "ontology": {
+    "term_id": "RB-1001",
+    "preferred_term": "OpticalSensorArray",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/robotics#OpticalSensorArray",
+    "source_domain": null,
+    "domain": "rb",
+    "domain_full_name": "Robotics",
+    "definition": "A optical sensor array component in the Robotics domain that required by BiometricBindingMechanism.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "emerging",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "rb:OpticalSensorArray",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Sensor Hardware"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [
+      "Generated from bridge validation"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "AlgorithmicFramework",
+  "title": "AlgorithmicFramework",
+  "content": "- ### OntologyBlock\n  id:: algorithmicframework-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-1006\n\t- preferred-term:: AlgorithmicFramework\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A algorithmic framework component in the Artificial Intelligence domain that required by ProceduralContentGeneration.\n\t- source:: Generated from bridge validation\n\t- maturity:: dt:Emerging\n\t- owl:class:: ai:AlgorithmicFramework\n\t- #### Relationships\n\t  id:: algorithmicframework-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AI Framework]]",
+  "backlinks": [],
+  "wiki_links": [
+    "AI Framework"
+  ],
+  "ontology": {
+    "term_id": "AI-1006",
+    "preferred_term": "AlgorithmicFramework",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#AlgorithmicFramework",
+    "source_domain": null,
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "A algorithmic framework component in the Artificial Intelligence domain that required by ProceduralContentGeneration.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "dt:Emerging",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:AlgorithmicFramework",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "AI Framework"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [
+      "Generated from bridge validation"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}
