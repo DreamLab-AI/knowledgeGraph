@@ -3,8 +3,8 @@
   "title": "Spatial Mapping",
   "content": "- ### OntologyBlock\n  id:: spatialmapping-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0854\n\t- preferred-term:: Spatial Mapping\n\t- status:: complete\n\t- public-access:: true\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: ai:SpatialMapping\n\t- belongsToDomain:: [[Artificial Intelligence]]",
   "backlinks": [
-    "Augmented Reality (AR)",
-    "Spatial Computing"
+    "Spatial Computing",
+    "Augmented Reality (AR)"
   ],
   "wiki_links": [
     "Artificial Intelligence"

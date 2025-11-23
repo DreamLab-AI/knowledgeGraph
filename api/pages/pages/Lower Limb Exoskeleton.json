@@ -1,0 +1,56 @@
+{
+  "id": "Lower Limb Exoskeleton",
+  "title": "Lower Limb Exoskeleton",
+  "content": "- ### OntologyBlock\n    - term-id:: RB-0140\n    - preferred-term:: Lower Limb Exoskeleton\n    - ontology:: true\n    - is-subclass-of:: [[Exoskeleton Robot]]\n    - version:: 1.0.0\n\n## Lower Limb Exoskeleton\n\nLower Limb Exoskeleton constitutes a wearable robotic system mechanically coupled to the user's legs, hips, and pelvis to assist, augment, or restore walking and standing functions. These powered orthotic devices apply torques and forces to hip, knee, and ankle joints through actuators controlled by sensors detecting user intent or gait patterns, enabling mobility restoration for individuals with paralysis, gait training for stroke patients, or endurance augmentation for industrial workers. Applications span medical rehabilitation per ISO 13482, military load bearing, and industrial ergonomics.\n\nArchitectural components include rigid or soft exoskeletal structures aligned with biological joint axes, actuators (electric motors, series elastic actuators, pneumatic artificial muscles) providing joint torques, sensors (IMUs, joint encoders, force sensors, EMG) detecting motion intent and ground contact, embedded control systems executing gait algorithms, and power supplies (lithium batteries typically 24-48V, 200-400Wh capacity). Attachment interfaces using adjustable straps, cuffs, or custom-fitted shells transfer forces between robot and user. Passive variants utilize springs and clutches without powered actuation, while active systems employ closed-loop control adjusting assistance in real-time.\n\nControl strategies vary by application. Rehabilitation exoskeletons implement predefined gait trajectories with impedance control allowing patient contribution, using iterative learning to reduce assistance as capability improves. Assistance amplification systems detect biological intent through surface EMG or force sensors, proportionally augmenting natural muscle output. Autonomous walking controllers execute full gait cycles for individuals with complete paralysis, using finite state machines transitioning between stance and swing phases based on ground reaction forces and tilt sensing.\n\nAs of 2024-2025, commercial medical exoskeletons include ReWalk, Ekso GT, and Cyberdyne HAL (Hybrid Assistive Limb) providing FDA/CE-marked rehabilitation and personal mobility for spinal cord injury. Industrial exoskeletons from Lockheed Martin (FORTIS) and Ekso Bionics (EksoVest) reduce metabolic cost 15-40% during repetitive bending and lifting in UK manufacturing and logistics. Research advances include soft fabric-based designs reducing weight to 3-7 kg, AI-based intent recognition improving responsiveness, and variable stiffness actuators enhancing energy efficiency. UK's National Institute for Health Research funds exoskeleton trials evaluating clinical outcomes per NICE guidelines. Safety standards ISO 13482 and EN 1907-1 govern personal care robots and PPE requirements.\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n\n## Technical Details\n\n- **Id**: lowerlimbexoskeleton-ontology\n- **Collapsed**: true\n- **Domain Prefix**: RB\n- **Sequence Number**: 0140\n- **Filename History**: [\"RB-0140-lowerlimbexoskeleton.md\"]\n- **Public Access**: true\n- **Source Domain**: metaverse\n- **Status**: complete\n- **Last Updated**: 2025-11-13\n- **Maturity**: established\n- **Source**: Chimera Prime Research\n- **Authority Score**: 0.95\n- **Owl:Class**: rb:LowerLimbExoskeleton\n- **Belongstodomain**: [[Robotics]]\n- **Is Subclass Of**: [[Exoskeleton Robot]]",
+  "backlinks": [],
+  "wiki_links": [
+    "Exoskeleton Robot",
+    "Robotics"
+  ],
+  "ontology": {
+    "term_id": "RB-0140",
+    "preferred_term": "Lower Limb Exoskeleton",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/robotics#LowerLimbExoskeleton",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-13",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "rb:LowerLimbExoskeleton",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: definition",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'rb' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

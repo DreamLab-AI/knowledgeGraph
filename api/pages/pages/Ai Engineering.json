@@ -2,7 +2,9 @@
   "id": "Ai Engineering",
   "title": "AI Engineering",
   "content": "- ### OntologyBlock\n  id:: aiengineering-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0802\n\t- preferred-term:: AI Engineering\n\t- source-domain:: ai\n\t- owl:class:: ai:AiEngineering\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Indicates environments where something operates.\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- belongsToDomain:: [[Artificial Intelligence]]",
-  "backlinks": [],
+  "backlinks": [
+    "Model Ops"
+  ],
   "wiki_links": [
     "Artificial Intelligence"
   ],

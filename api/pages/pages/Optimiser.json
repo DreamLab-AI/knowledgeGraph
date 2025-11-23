@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: optimiser-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0046\n\t- preferred-term:: Optimiser\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: ### Primary Definition\n\t- maturity:: draft\n\t- owl:class:: mv:Optimiser\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: optimiser-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t\t- belongsToDomain:: [[MetaverseDomain]]",
   "backlinks": [],
   "wiki_links": [
-    "ArtificialIntelligence",
-    "MetaverseDomain"
+    "MetaverseDomain",
+    "ArtificialIntelligence"
   ],
   "ontology": {
     "term_id": "AI-0046",

@@ -4,22 +4,22 @@
   "content": "- ### OntologyBlock\n  id:: avatar-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20067\n\t- preferred-term:: Avatar\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Digital representation of a person or agent used to interact within a virtual environment.\n\t- source:: [[ACM + Web3D HAnim]]\n\t- maturity:: mature\n\t- owl:class:: mv:Avatar\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Agent\n\t- owl:inferred-class:: mv:VirtualAgent\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InteractionDomain]]\n\t- implementedInLayer:: [[UserExperienceLayer]]\n\t- #### Relationships\n\t  id:: avatar-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t\t- is-part-of:: [[Metaverse]]\n\t\t- has-part:: [[Visual Mesh]]\n\t\t- has-part:: [[Animation Rig]]\n\t\t- requires:: [[3D Rendering Engine]]\n\t\t- enables:: [[User Embodiment]]\n\t\t- enables:: [[Social Presence]]\n\t- #### CrossDomainBridges\n\t  id:: avatar-bridges\n\t  collapsed:: true\n\t\t- dt:uses:: [[Machine Learning]]\n\t\t- dt:uses:: [[Computer Vision]]",
   "backlinks": [
     "Metaverse",
-    "TELE-100-ai-avatars",
-    "Decentralized Identifiers"
+    "Decentralized Identifiers",
+    "TELE-100-ai-avatars"
   ],
   "wiki_links": [
-    "3D Rendering Engine",
     "Computer Vision",
-    "InteractionDomain",
-    "Visual Mesh",
-    "ACM + Web3D HAnim",
-    "Animation Rig",
-    "ArtificialIntelligence",
     "Machine Learning",
-    "UserExperienceLayer",
-    "User Embodiment",
+    "ACM + Web3D HAnim",
+    "InteractionDomain",
+    "Animation Rig",
+    "3D Rendering Engine",
     "Metaverse",
-    "Social Presence"
+    "ArtificialIntelligence",
+    "Visual Mesh",
+    "User Embodiment",
+    "Social Presence",
+    "UserExperienceLayer"
   ],
   "ontology": {
     "term_id": "20067",

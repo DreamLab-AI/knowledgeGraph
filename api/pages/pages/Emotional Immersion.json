@@ -6,21 +6,21 @@
     "Immersion"
   ],
   "wiki_links": [
-    "Interaction Design",
-    "Affective Design",
-    "Sensory Feedback",
-    "PresentationLayer",
-    "Empathetic Connection",
-    "ACM",
-    "Emotional Resonance",
-    "InteractionDomain",
-    "User Engagement",
-    "Immersion",
-    "Story Engagement",
     "Visual Fidelity",
+    "User Engagement",
+    "PresentationLayer",
+    "ApplicationLayer",
+    "Story Engagement",
+    "InteractionDomain",
+    "Interaction Design",
+    "Emotional Resonance",
     "Narrative Content",
+    "ACM",
     "Audio Design",
-    "ApplicationLayer"
+    "Sensory Feedback",
+    "Empathetic Connection",
+    "Affective Design",
+    "Immersion"
   ],
   "ontology": {
     "term_id": "20254",

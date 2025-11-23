@@ -6,21 +6,21 @@
     "Infrastructure Layer"
   ],
   "wiki_links": [
-    "InfrastructureDomain",
-    "MSF Taxonomy 2025",
-    "Infrastructure Layer",
-    "Computer Vision",
-    "Environmental Understanding",
-    "Spatial Anchors",
-    "Positioning System",
     "AR Experiences",
-    "SLAM Algorithm",
     "Spatial Computing Services",
-    "Compute Resources",
-    "Localization Service",
+    "Computer Vision",
+    "MSF Taxonomy 2025",
+    "Positioning System",
+    "3D Mapping Engine",
     "Spatial Audio",
-    "Sensor Data",
-    "3D Mapping Engine"
+    "Spatial Anchors",
+    "InfrastructureDomain",
+    "Infrastructure Layer",
+    "Environmental Understanding",
+    "Localization Service",
+    "SLAM Algorithm",
+    "Compute Resources",
+    "Sensor Data"
   ],
   "ontology": {
     "term_id": "20174",

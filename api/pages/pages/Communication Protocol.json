@@ -1,0 +1,61 @@
+{
+  "id": "Communication Protocol",
+  "title": "Communication Protocol",
+  "content": "- ### OntologyBlock\n    - term-id:: RB-0187\n    - preferred-term:: Communication Protocol\n    - ontology:: true\n    - is-subclass-of:: [[Protocol]]\n    - version:: 1.0.0\n\n## Communication Protocol\n\nCommunication Protocol defines standardized message formats, data structures, and exchange rules that enable reliable information transfer between robot components, systems, and external devices. These protocols form the digital nervous system of modern robotics, governing how sensors transmit data to controllers, how actuators receive commands, and how robots communicate with supervisory systems and each other.\n\nContemporary robotics employs layered communication architectures. At the physical layer, protocols like CAN bus, EtherCAT, and Profinet provide deterministic, real-time data exchange critical for motion control. CAN bus dominates automotive and mobile robotics due to its robustness in electrically noisy environments, while EtherCAT and Profinet excel in industrial applications requiring sub-millisecond synchronization across dozens of servo drives. The application layer utilizes protocols such as ROS 2 DDS (Data Distribution Service), OPC UA, and MQTT for higher-level coordination, enabling publish-subscribe patterns that decouple system components.\n\nAs of 2024-2025, cybersecurity has become paramount in robot communication design. IEC 62443 standards now mandate encrypted communication channels, authentication mechanisms, and intrusion detection for industrial robots. ROS 2 incorporates DDS Security for encrypted data transport and access control. Time-Sensitive Networking (TSN) extensions to standard Ethernet enable converged networks carrying both critical real-time robot control and standard IT traffic.\n\nWireless protocols continue advancing, with 5G URLLC (Ultra-Reliable Low-Latency Communication) enabling untethered industrial robots with sub-5ms latency and 99.9999% reliability. WiFi 6E and private 5G networks support fleet coordination in warehouse automation. Safety-critical applications implement redundant communication paths with watchdog timers and heartbeat mechanisms. Protocol selection directly impacts robot performance, safety certification complexity, and integration capabilities within Industry 4.0 ecosystems governed by standards like ISO 10218 for industrial robots and ISO 13482 for service robots.\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n\n## Technical Details\n\n- **Id**: communicationprotocol-ontology\n- **Collapsed**: true\n- **Domain Prefix**: RB\n- **Sequence Number**: 0187\n- **Filename History**: [\"RB-0187-communicationprotocol.md\"]\n- **Public Access**: true\n- **Source Domain**: metaverse\n- **Status**: complete\n- **Last Updated**: 2025-11-13\n- **Maturity**: established\n- **Source**: Chimera Prime Research\n- **Authority Score**: 0.95\n- **Owl:Class**: rb:CommunicationProtocol\n- **Belongstodomain**: [[Robotics]]",
+  "backlinks": [
+    "Data Integration Interface",
+    "Collective Intelligence System",
+    "Middleware",
+    "API Standard"
+  ],
+  "wiki_links": [
+    "Protocol",
+    "Robotics"
+  ],
+  "ontology": {
+    "term_id": "RB-0187",
+    "preferred_term": "Communication Protocol",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/robotics#CommunicationProtocol",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-13",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "rb:CommunicationProtocol",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: definition",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'rb' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

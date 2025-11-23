@@ -1,0 +1,7 @@
+{
+  "id": "VERIFICATION",
+  "title": "VERIFICATION",
+  "content": "## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Verification))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Verification \"VERIFICATION\"@en)\n(AnnotationAssertion rdfs:comment :Verification \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Verification \"mv-1761742247978\"^^xsd:string)\n```",
+  "backlinks": [],
+  "wiki_links": []
+}

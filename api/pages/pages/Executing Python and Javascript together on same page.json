@@ -1,0 +1,7 @@
+{
+  "id": "Executing Python and Javascript together on same page",
+  "title": "Executing Python and Javascript together on same page",
+  "content": "- Code\n\t- {{runpage}}\n\t- ```javascript\n\t  logseq.can_run = \"java?\";\n\t  ```\n\t- ```python\n\t  import js\n\t\n\t  def pyfun(str):\n\t    return js.logseq.can_run[:-1] + str + \" & py\"\n\t\n\t  js.logseq.kits.pyfun = pyfun\n\t  ```\n\t- ```javascript\n\t  logseq.can_run = logseq.kits.pyfun(\"script\");\n\t  ```\n\t- ```python\n\t  js.logseq.can_run += \"thon\"\n\t  ```\n\t- ```javascript\n\t  alert(\"Logseq can edit & run: clojure & \" + logseq.can_run + \" & r-language\");\n\t  ```\n\t-",
+  "backlinks": [],
+  "wiki_links": []
+}

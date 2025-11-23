@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: meetingtranscription-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0855\n\t- preferred-term:: Meeting Transcription\n\t- status:: complete\n\t- public-access:: true\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: ai:MeetingTranscription\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: meetingtranscription-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[SpeechProcessing]]",
   "backlinks": [],
   "wiki_links": [
-    "SpeechProcessing",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "SpeechProcessing"
   ],
   "ontology": {
     "term_id": "AI-0855",

@@ -1,0 +1,56 @@
+{
+  "id": "Monocular Camera",
+  "title": "Monocular Camera",
+  "content": "- ### OntologyBlock\n    - term-id:: RB-0160\n    - preferred-term:: Monocular Camera\n    - ontology:: true\n    - is-subclass-of:: [[Camera]]\n    - version:: 1.0.0\n\n## Monocular Camera\n\nMonocular Camera employs a single lens and image sensor to capture two-dimensional intensity and color information, representing the simplest and most computationally efficient vision system for robotics. While lacking direct depth perception available from stereo or structured light systems, monocular cameras enable numerous critical capabilities including object detection, classification, tracking, visual servoing, and visual odometry through sophisticated image processing and computer vision algorithms. Their low cost, compact size, minimal power consumption, and simple calibration make them ubiquitous in mobile, service, and collaborative robots.\n\nTechnical specifications include resolution (VGA 640×480 to 4K 3840×2160), frame rate (30-120 FPS typical), sensor type (CMOS or CCD), interface (USB, GigE, CSI), field of view (60-180° depending on lens), and dynamic range (8-12 bits per channel). Global shutter sensors capture entire frames simultaneously, eliminating motion blur critical for fast-moving robots, while rolling shutter variants offer lower cost for stationary or slow applications. Autofocus mechanisms enable operation across varying distances, while fixed-focus designs simplify integration for known working ranges.\n\nDepth estimation from monocular images employs structure from motion (SfM) algorithms triangulating features across multiple viewpoints as camera moves, or learning-based approaches using deep neural networks trained on RGB-D datasets to infer depth from single images. Accuracy remains inferior to stereo systems but sufficient for many applications. Visual odometry tracks camera motion by matching features across consecutive frames, enabling robot localization. Visual SLAM (Simultaneous Localization and Mapping) builds environment maps while tracking position. Marker-based pose estimation uses ArUco, AprilTag, or QR codes for precise 6-DOF localization.\n\nAs of 2024-2025, monocular cameras integrate AI accelerators enabling 30+ FPS object detection (YOLO, EfficientDet) on embedded platforms like NVIDIA Jetson or Raspberry Pi. Applications include warehouse robots using overhead cameras for localization, collaborative robots with wrist-mounted cameras for part recognition, service robots performing gesture recognition, and mobile robots executing semantic navigation. UK's Oxford Robotics Institute advances monocular vision-based navigation. Compliance with machine vision standards including EMVA 1288 (sensor characterization) and GigE Vision protocol ensures interoperability. Privacy concerns drive edge processing per GDPR requirements rather than cloud-based vision processing.\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n\n## Technical Details\n\n- **Id**: monocularcamera-ontology\n- **Collapsed**: true\n- **Domain Prefix**: RB\n- **Sequence Number**: 0160\n- **Filename History**: [\"RB-0160-monocularcamera.md\"]\n- **Public Access**: true\n- **Source Domain**: metaverse\n- **Status**: complete\n- **Last Updated**: 2025-11-13\n- **Maturity**: established\n- **Source**: Chimera Prime Research\n- **Authority Score**: 0.95\n- **Owl:Class**: rb:MonocularCamera\n- **Belongstodomain**: [[Robotics]]\n- **Is Subclass Of**: [[Camera]]",
+  "backlinks": [],
+  "wiki_links": [
+    "Camera",
+    "Robotics"
+  ],
+  "ontology": {
+    "term_id": "RB-0160",
+    "preferred_term": "Monocular Camera",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/robotics#MonocularCamera",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-13",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "rb:MonocularCamera",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: definition",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'rb' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

@@ -5,14 +5,14 @@
   "backlinks": [
     "BC-0009-smart-contract",
     "Blockchain",
-    "NFT",
     "SmartContract",
+    "NFT",
     "Large language models"
   ],
   "wiki_links": [
     "Computer Vision",
-    "MetaverseDomain",
-    "Machine Learning"
+    "Machine Learning",
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "MV-0005",

@@ -1,0 +1,60 @@
+{
+  "id": "Motion Control",
+  "title": "Motion Control",
+  "content": "- ### OntologyBlock\n    - term-id:: RB-0145\n    - preferred-term:: Motion Control\n    - ontology:: true\n    - is-subclass-of:: [[Control System]]\n    - version:: 1.0.0\n\n## Motion Control\n\nMotion Control encompasses algorithms, systems, and methodologies for planning and executing desired robot trajectories, translating high-level task objectives into precise time-varying position, velocity, and acceleration commands for actuators. This discipline integrates path planning determining collision-free geometric routes, trajectory generation adding temporal constraints respecting dynamics limitations, and feedback control tracking desired motions despite disturbances and model uncertainties. Effective motion control directly determines robot productivity, precision, and safety across all applications from assembly to surgery.\n\nPlanning operates in joint space (directly specifying joint angles q(t)) or task space (specifying end-effector pose x(t) with inverse kinematics mapping to joints). Joint space planning offers computational simplicity and guaranteed feasibility but provides limited intuition for complex tasks. Task space planning enables intuitive Cartesian paths but risks singularities and joint limits. Workspace partitioning and roadmap methods (RRT, PRM) handle complex obstacle-filled environments. Optimization-based planning minimizes objectives like time, energy, or smoothness while satisfying constraints.\n\nTrajectory generation synthesizes smooth time-parameterized paths respecting velocity, acceleration, and jerk limits. Methods include polynomial splines (quintic for position, velocity, acceleration continuity), trapezoidal velocity profiles (constant acceleration phases), S-curve profiles (jerk-limited), and B-splines enabling local control. Time-optimal trajectory planning maximizes productivity while respecting actuator limits. Real-time trajectory adaptation enables dynamic obstacle avoidance and moving target tracking.\n\nAs of 2024-2025, motion control leverages learning and adaptation. Reinforcement learning discovers optimal policies for complex contact-rich tasks like insertion and assembly. Demonstration-based learning (programming by demonstration) captures human expertise. Model predictive control (MPC) performs receding horizon optimization at 100+ Hz on modern embedded processors, enabling advanced behaviors like whole-body motion for humanoids and mobile manipulators. Cloud-based motion planning services (e.g., Omniverse Isaac Sim) simulate and optimize trajectories offline. Compliance with ISO 10218 and ISO/TS 15066 mandates speed and separation monitoring, ensuring human safety through predictive collision avoidance. UK robotics research at Imperial College and Edinburgh advances learning-based motion control integrated with tactile and force sensing for dexterous manipulation.\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n\n## Technical Details\n\n- **Id**: motioncontrol-ontology\n- **Collapsed**: true\n- **Domain Prefix**: RB\n- **Sequence Number**: 0145\n- **Filename History**: [\"RB-0145-motioncontrol.md\"]\n- **Public Access**: true\n- **Source Domain**: metaverse\n- **Status**: complete\n- **Last Updated**: 2025-11-13\n- **Maturity**: established\n- **Source**: Chimera Prime Research\n- **Authority Score**: 0.95\n- **Owl:Class**: rb:MotionControl\n- **Belongstodomain**: [[Robotics]]\n- **Is Subclass Of**: [[Control System]]",
+  "backlinks": [
+    "Perception System",
+    "Trajectory Control",
+    "Torque Control"
+  ],
+  "wiki_links": [
+    "Control System",
+    "Robotics"
+  ],
+  "ontology": {
+    "term_id": "RB-0145",
+    "preferred_term": "Motion Control",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/robotics#MotionControl",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-13",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "rb:MotionControl",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: definition",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'rb' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

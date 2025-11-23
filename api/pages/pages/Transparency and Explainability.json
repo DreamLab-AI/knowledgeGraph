@@ -5,12 +5,12 @@
   "backlinks": [],
   "wiki_links": [
     "EU AI Act Article 13",
-    "AIGovernance",
     "AIEthicsDomain",
-    "LIME",
-    "ConceptualLayer",
     "Model Cards",
-    "SHAP"
+    "SHAP",
+    "AIGovernance",
+    "ConceptualLayer",
+    "LIME"
   ],
   "ontology": {
     "term_id": "AI-0412",

@@ -7,10 +7,10 @@
     "Stakeholder"
   ],
   "wiki_links": [
+    "AIApplications",
     "NIST AI RMF",
-    "ISO/IEC 42001:2023",
     "EU AI Act Articles 26-27",
-    "AIApplications"
+    "ISO/IEC 42001:2023"
   ],
   "ontology": {
     "term_id": "AI-0098",

@@ -1,0 +1,57 @@
+{
+  "id": "Derivative Control",
+  "title": "Derivative Control",
+  "content": "- ### OntologyBlock\n    - term-id:: RB-0148\n    - preferred-term:: Derivative Control\n    - ontology:: true\n    - is-subclass-of:: [[Control Method]]\n    - version:: 1.0.0\n\n## Derivative Control\n\nDerivative Control represents the D component of PID (Proportional-Integral-Derivative) controllers, generating control signals proportional to the rate of change of error, effectively providing predictive damping that opposes rapid error fluctuations. By responding to error velocity rather than magnitude, derivative action reduces overshoot, suppresses oscillations, and improves system stability, though at the cost of amplifying high-frequency noise if not properly filtered.\n\nThe derivative term computes the time derivative of the error signal e(t), producing output Kd × de/dt, where Kd is the derivative gain. In discrete systems, differentiation is approximated as [e(n) - e(n-1)]/Δt. This anticipatory action opposes rapid changes, analogous to a shock absorber damping spring oscillations. When error decreases rapidly (approaching setpoint), derivative action reduces control effort to prevent overshoot. Conversely, rapidly increasing error triggers stronger corrective response.\n\nDerivative control provides critical benefits for robotic motion control: reducing settling time by 30-60%, minimizing overshoot in joint positioning, and damping mechanical resonances in flexible systems. However, pure differentiation amplifies sensor noise and quantization effects, potentially causing chattering or instability. Standard mitigation techniques include derivative filtering (adding a low-pass filter with cutoff frequency 5-10× the control bandwidth), derivative-on-measurement rather than error, and derivative kick prevention during setpoint changes.\n\nAs of 2024-2025, modern robot controllers employ filtered derivative action with typical implementation: D(s) = Kd×s / (τ×s + 1), where τ = Kd/(N×Kp) and N ranges from 5-20. Advanced variants include second-order derivative for jerk limiting in trajectory control, adaptive derivative gains adjusting to payload changes, and model-based derivative compensation using velocity observers. Real-time constraints limit derivative calculation rates to 1-10 kHz in industrial robots. Proper derivative tuning proves essential for high-performance applications including precision pick-and-place, surgical robotics per ISO 13485, and collaborative robots meeting ISO/TS 15066 force control requirements.\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n\n## Technical Details\n\n- **Id**: derivativecontrol-ontology\n- **Collapsed**: true\n- **Domain Prefix**: RB\n- **Sequence Number**: 0148\n- **Filename History**: [\"RB-0148-derivativecontrol.md\"]\n- **Public Access**: true\n- **Source Domain**: metaverse\n- **Status**: complete\n- **Last Updated**: 2025-11-13\n- **Maturity**: established\n- **Source**: Chimera Prime Research\n- **Authority Score**: 0.95\n- **Owl:Class**: rb:DerivativeControl\n- **Belongstodomain**: [[Robotics]]\n- **Is Subclass Of**: [[Feedback Control]]",
+  "backlinks": [],
+  "wiki_links": [
+    "Feedback Control",
+    "Robotics",
+    "Control Method"
+  ],
+  "ontology": {
+    "term_id": "RB-0148",
+    "preferred_term": "Derivative Control",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/robotics#DerivativeControl",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-13",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "rb:DerivativeControl",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: definition",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'rb' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

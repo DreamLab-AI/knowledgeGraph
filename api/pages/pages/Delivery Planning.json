@@ -1,0 +1,16 @@
+{
+  "id": "Delivery Planning",
+  "title": "Delivery Planning",
+  "content": "## Related Content: Planning Kanban - currently broken\n\n- {{renderer :kboard-query, High level Projects View, progress, TODO, DOING, DONE, cover, 260px}}\n\t- {{query (and [[PlayerTwo]] (property :progress))}}\n\t- {{query (and [[KnoWhere]] (property :progress))}}\n- {{query (and [[Training Material]] (property :progress))}}\n- {{query (and [[Pete Woodbridge]] (property :progress))}}\n- {{query (and [[ParentsGuideToAI]] (property :progress))}}\n- {{query (and [[NLW education discord]] (property :progress))}}\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [
+    "Agentic Internet"
+  ],
+  "wiki_links": [
+    "Pete Woodbridge",
+    "KnoWhere",
+    "ParentsGuideToAI",
+    "NLW education discord",
+    "PlayerTwo",
+    "Training Material"
+  ]
+}

@@ -2,7 +2,9 @@
   "id": "Minting",
   "title": "Minting",
   "content": "- ### OntologyBlock\n  id:: minting-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0532\n\t- preferred-term:: Minting\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: The process of creating new tokens and adding them to circulation, either through block rewards, staking rewards, or programmatic issuance.\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: bc:Minting\n\t- belongsToDomain:: [[Blockchain]]",
-  "backlinks": [],
+  "backlinks": [
+    "Digital Objects"
+  ],
   "wiki_links": [
     "Blockchain"
   ],

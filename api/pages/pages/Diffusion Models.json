@@ -3,8 +3,10 @@
   "title": "Diffusion Models",
   "content": "### Relationships\n- is-subclass-of:: [[GenerativeModel]]",
   "backlinks": [
-    "Variational Autoencoders",
-    "Generative AI"
+    "Dall-e",
+    "Generative AI",
+    "Bitcoin Technical Overview",
+    "Variational Autoencoders"
   ],
   "wiki_links": [
     "GenerativeModel"

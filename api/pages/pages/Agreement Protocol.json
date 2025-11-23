@@ -7,10 +7,10 @@
   ],
   "wiki_links": [
     "Byzantine Agreement Papers",
+    "PBFT Algorithm",
     "Paxos and Raft Consensus",
     "BlockchainDomain",
     "Metaverse Infrastructure",
-    "PBFT Algorithm",
     "FLP Impossibility"
   ],
   "ontology": {

@@ -1,0 +1,57 @@
+{
+  "id": "E R C721 Token",
+  "title": "ERC-721 Token",
+  "content": "- ### OntologyBlock\n    - term-id:: BC-0516\n    - preferred-term:: ERC-721 Token\n    - ontology:: true\n    - is-subclass-of:: [[BlockchainTechnology]]\n    - version:: 1.0.0\n\n## ERC-721 Token\n\nERC-721 Token refers to a non-fungible token implementing the erc-721 standard, a free, open standard for building unique tokens on ethereum blockchain with trackable ownership via token identification numbers and ownerof function.\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n\n## Technical Details\n\n- **Id**: erc721token-ontology\n- **Collapsed**: true\n- **Domain Prefix**: BC\n- **Sequence Number**: 0516\n- **Filename History**: [\"BC-0516-erc721token.md\"]\n- **Public Access**: true\n- **Source Domain**: metaverse\n- **Status**: complete\n- **Last Updated**: 2025-11-13\n- **Maturity**: established\n- **Source**: Chimera Prime Research\n- **Authority Score**: 0.95\n- **Owl:Class**: bc:ERC721Token\n- **Belongstodomain**: [[Blockchain]]\n- **Is Subclass Of**: [[Non Fungible Token]]",
+  "backlinks": [],
+  "wiki_links": [
+    "BlockchainTechnology",
+    "Non Fungible Token",
+    "Blockchain"
+  ],
+  "ontology": {
+    "term_id": "BC-0516",
+    "preferred_term": "ERC-721 Token",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#ERC721Token",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-13",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:ERC721Token",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: definition",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'bc' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

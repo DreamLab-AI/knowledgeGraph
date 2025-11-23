@@ -6,22 +6,22 @@
     "Infrastructure Layer"
   ],
   "wiki_links": [
-    "InfrastructureDomain",
-    "MSF Taxonomy 2025",
-    "Asset Management",
-    "Infrastructure Layer",
     "Content Delivery",
+    "Object Storage",
+    "Storage Hardware",
+    "Block Storage",
+    "Asset Management",
+    "MSF Taxonomy 2025",
+    "Data Storage Infrastructure",
+    "File System",
     "Replication Protocol",
     "Database System",
-    "Storage Hardware",
-    "Object Storage",
     "Cache Layer",
-    "Data Persistence",
-    "Data Management",
-    "Data Storage Infrastructure",
-    "Block Storage",
     "Network Connectivity",
-    "File System"
+    "InfrastructureDomain",
+    "Infrastructure Layer",
+    "Data Persistence",
+    "Data Management"
   ],
   "ontology": {
     "term_id": "20175",

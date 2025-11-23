@@ -4,19 +4,22 @@
   "content": "- ### OntologyBlock\n  id:: nft-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0141\n\t- preferred-term:: NFT\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: bc:NFT\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- #### CrossDomainBridges\n\t  id:: nft-bridges\n\t  collapsed:: true\n\t\t- bc:authenticates:: [[VirtualWorld]]\n\t\t- bc:authenticates:: [[DigitalAvatar]]\n\t\t- bc:tokenizes:: [[Digital Goods]]",
   "backlinks": [
     "BC 0114 burning mechanism",
+    "Web3",
     "Virtual Property Right",
     "Carbon Credit Token",
+    "Fractionalized NFT",
+    "BC 0119 economic security",
     "Runes and Glyphs",
     "Marketplace",
     "Upscaling",
-    "Fractionalized NFT",
-    "BC 0119 economic security"
+    "Digital Objects",
+    "Decentralised Web"
   ],
   "wiki_links": [
-    "VirtualWorld",
-    "DigitalAvatar",
     "Digital Goods",
-    "BlockchainDomain"
+    "BlockchainDomain",
+    "DigitalAvatar",
+    "VirtualWorld"
   ],
   "ontology": {
     "term_id": "BC-0141",

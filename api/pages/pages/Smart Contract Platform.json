@@ -3,12 +3,12 @@
   "title": "Smart Contract Platform",
   "content": "- ### OntologyBlock\n  id:: smartcontractplatform-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0507\n\t- preferred-term:: Smart Contract Platform\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A blockchain network providing infrastructure for deploying and executing smart contracts, with virtual machine execution environment, support for programming languages, and token standards.\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: bc:SmartContractPlatform\n\t- belongsToDomain:: [[Blockchain]]",
   "backlinks": [
-    "Liquidity Pool",
+    "Transaction Standard",
     "RGB and Client Side Validation",
     "Social Token Economy",
-    "Transaction Standard",
-    "Virtual Securities Offering (VSO)",
-    "Smart Royalty Contract"
+    "Liquidity Pool",
+    "Smart Royalty Contract",
+    "Virtual Securities Offering (VSO)"
   ],
   "wiki_links": [
     "Blockchain"

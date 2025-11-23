@@ -1,0 +1,7 @@
+{
+  "id": "FILE-LISTING",
+  "title": "FILE-LISTING",
+  "content": "## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :FileListing))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :FileListing \"FILE LISTING\"@en)\n(AnnotationAssertion rdfs:comment :FileListing \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :FileListing \"mv-1761742247926\"^^xsd:string)\n```",
+  "backlinks": [],
+  "wiki_links": []
+}

@@ -6,14 +6,14 @@
     "BC-0493-real-estate-tokenization"
   ],
   "wiki_links": [
-    "BC-0432-consortium-blockchain",
     "BC-0142-smart-contract",
-    "BlockchainDomain",
-    "BC-0457-decentralized-identifiers",
-    "BC-0456-self-sovereign-identity",
     "BC-0458-verifiable-credentials",
+    "BC-0456-self-sovereign-identity",
+    "BlockchainDomain",
+    "BC-0432-consortium-blockchain",
+    "Blockchain Application",
     "BC-0493-real-estate-tokenization",
-    "Blockchain Application"
+    "BC-0457-decentralized-identifiers"
   ],
   "ontology": {
     "term_id": "BC-0494",

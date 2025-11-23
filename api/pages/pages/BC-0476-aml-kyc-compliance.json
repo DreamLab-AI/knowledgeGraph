@@ -3,9 +3,9 @@
   "title": "AML KYC Compliance",
   "content": "- ### OntologyBlock\n  id:: bc-0476-aml-kyc-compliance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0476\n\t- preferred-term:: AML KYC Compliance\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: A component of the blockchain ecosystem.\n\t- maturity:: draft\n\t- owl:class:: bc:AMLKYCCompliance\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- #### Relationships\n\t  id:: bc-0476-aml-kyc-compliance-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Compliance]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :AMLKYCCompliance))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :AMLKYCCompliance \"AML KYC Compliance\"@en)\n(AnnotationAssertion rdfs:comment :AMLKYCCompliance \"A component of the blockchain ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :AMLKYCCompliance \"BC-0476\"^^xsd:string)\n```",
   "backlinks": [
+    "BC-0492-clinical-trials",
     "BC-0491-healthcare-records",
-    "BC-0447-anti-counterfeiting",
-    "BC-0492-clinical-trials"
+    "BC-0447-anti-counterfeiting"
   ],
   "wiki_links": [
     "Blockchain Compliance",

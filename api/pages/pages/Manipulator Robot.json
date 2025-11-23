@@ -1,0 +1,58 @@
+{
+  "id": "Manipulator Robot",
+  "title": "Manipulator Robot",
+  "content": "- ### OntologyBlock\n    - term-id:: RB-0108\n    - preferred-term:: Manipulator Robot\n    - ontology:: true\n    - is-subclass-of:: [[Robot]]\n    - version:: 1.0.0\n\n## Manipulator Robot\n\nManipulator Robot comprises articulated mechanical arms with multiple revolute or prismatic joints controlled to position and orient an end-effector for grasping, moving, assembling, or processing workpieces. These robots form the backbone of industrial automation, representing over 60% of global robot installations with applications spanning welding, painting, material handling, assembly, and machine tending. The kinematic chain design enables precise six-degree-of-freedom positioning within defined workspaces ranging from 500mm to 3+ meters reach.\n\nStandard configurations include anthropomorphic (six revolute joints mimicking human arm), SCARA (selective compliance assembly robot arm with planar motion), Cartesian/gantry (three perpendicular linear axes), cylindrical, and parallel kinematics. Anthropomorphic designs dominate modern industrial robotics due to workspace versatility and obstacle avoidance capabilities. Joint actuators typically employ AC servo motors with harmonic drive or cycloidal reducers achieving gear ratios 50:1 to 160:1, balancing torque density with backdrivability for force control. Payloads span 3 kg (small assembly) to 2300 kg (heavy material handling), with repeatability of ±0.02mm to ±0.5mm.\n\nEnd-effectors customize manipulation capabilities: parallel jaw grippers, vacuum cups, magnetic grippers, welding torches, spray guns, deburring tools, and force-torque sensors. Quick-change interfaces enable automatic tool switching. Control systems implement forward and inverse kinematics mapping between joint angles and Cartesian coordinates, trajectory planning generating smooth collision-free paths, and servo control executing motion commands at 250-1000 Hz. Programming methods include teach pendant demonstration, offline CAD-based simulation, and learning from demonstration.\n\nAs of 2024-2025, collaborative manipulators (cobots) incorporate force limiting, rounded surfaces, and speed/separation monitoring per ISO/TS 15066, enabling safe unguarded human-robot interaction. AI-powered perception enables bin picking from randomly oriented parts with 95%+ success rates. Cloud connectivity facilitates fleet management and predictive maintenance. Mobile manipulators combining arms with mobile bases serve logistics and flexible manufacturing. Major manufacturers include Fanuc, ABB, KUKA, Yaskawa, and Universal Robots. UK's Manufacturing Technology Centre advances cobot integration in SME manufacturing, with installations growing 25% annually. Compliance with Machinery Directive 2006/42/EC and ISO 10218 safety standards governs deployment in UK industrial facilities.\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n\n## Technical Details\n\n- **Id**: manipulatorrobot-ontology\n- **Collapsed**: true\n- **Domain Prefix**: RB\n- **Sequence Number**: 0108\n- **Filename History**: [\"RB-0108-manipulatorrobot.md\"]\n- **Public Access**: true\n- **Source Domain**: metaverse\n- **Status**: complete\n- **Last Updated**: 2025-11-13\n- **Maturity**: established\n- **Source**: Chimera Prime Research\n- **Authority Score**: 0.95\n- **Owl:Class**: rb:ManipulatorRobot\n- **Belongstodomain**: [[Robotics]]\n- **Is Subclass Of**: [[Robot]]",
+  "backlinks": [
+    "Parallel Robot"
+  ],
+  "wiki_links": [
+    "Robotics",
+    "Robot"
+  ],
+  "ontology": {
+    "term_id": "RB-0108",
+    "preferred_term": "Manipulator Robot",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/robotics#ManipulatorRobot",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-13",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "rb:ManipulatorRobot",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: definition",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'rb' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

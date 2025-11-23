@@ -1,0 +1,56 @@
+{
+  "id": "Proof Of History",
+  "title": "Proof of History",
+  "content": "- ### OntologyBlock\n    - term-id:: BC-0548\n    - preferred-term:: Proof of History\n    - ontology:: true\n    - is-subclass-of:: [[ConsensusMechanism]]\n    - version:: 1.0.0\n\n## Proof of History\n\nProof of History refers to a cryptographic mechanism that timestamps transactions to establish a historical record, enabling validators to process transactions in parallel for high throughput. creates verifiable passage of time between events without requiring nodes to trust each other.\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n\n## Technical Details\n\n- **Id**: proofofhistory-ontology\n- **Collapsed**: true\n- **Domain Prefix**: BC\n- **Sequence Number**: 0548\n- **Filename History**: [\"BC-0548-proofofhistory.md\"]\n- **Public Access**: true\n- **Source Domain**: metaverse\n- **Status**: complete\n- **Last Updated**: 2025-11-13\n- **Maturity**: established\n- **Source**: Chimera Prime Research\n- **Authority Score**: 0.95\n- **Owl:Class**: bc:ProofOfHistory\n- **Belongstodomain**: [[Blockchain]]\n- **Is Subclass Of**: [[ConsensusMechanism]]\n- **Also Known As**: PoH",
+  "backlinks": [],
+  "wiki_links": [
+    "ConsensusMechanism",
+    "Blockchain"
+  ],
+  "ontology": {
+    "term_id": "BC-0548",
+    "preferred_term": "Proof of History",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#ProofOfHistory",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-13",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:ProofOfHistory",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: definition",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'bc' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

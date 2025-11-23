@@ -3,12 +3,12 @@
   "title": "Backpropagation",
   "content": "- ### OntologyBlock\n  id:: backpropagation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0043\n\t- preferred-term:: Backpropagation\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: ### Primary Definition\n\t- maturity:: draft\n\t- owl:class:: mv:Backpropagation\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: backpropagation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t\t- belongsToDomain:: [[MetaverseDomain]]",
   "backlinks": [
-    "Recurrent Neural Network",
-    "Deep Learning"
+    "Deep Learning",
+    "Recurrent Neural Network"
   ],
   "wiki_links": [
-    "ArtificialIntelligence",
-    "MetaverseDomain"
+    "MetaverseDomain",
+    "ArtificialIntelligence"
   ],
   "ontology": {
     "term_id": "AI-0043",

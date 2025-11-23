@@ -6,11 +6,11 @@
     "Recurrent Neural Network"
   ],
   "wiki_links": [
-    "ModelTraining",
-    "Wang et al. 2022 Educational Applications",
-    "Bengio et al. 2009 Curriculum Learning",
     "IEEE TPAMI 2021 Curriculum Learning Survey",
-    "Zhang et al. 2021 Adaptive Curriculum"
+    "ModelTraining",
+    "Zhang et al. 2021 Adaptive Curriculum",
+    "Bengio et al. 2009 Curriculum Learning",
+    "Wang et al. 2022 Educational Applications"
   ],
   "ontology": {
     "term_id": "AI-0260",

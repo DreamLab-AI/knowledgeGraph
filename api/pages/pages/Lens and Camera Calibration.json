@@ -1,0 +1,10 @@
+{
+  "id": "Lens and Camera Calibration",
+  "title": "Lens and Camera Calibration",
+  "content": "- ### VGGSfM: Visual Geometry Grounded SfM\n  [This web link has been automatically summarised](https://github.com/facebookresearch/vggsfm)\n- VGGSfM is a project hosted on GitHub under Facebook Research, focusing on Visual Geometry Grounded Deep Structure From Motion.\n\t- Primarily coded in [[Python]], it highlights using advanced techniques in visual geometry.\n\t- This repository has gained notable attention with 761 stars and 42 forks, indicating active community engagement.\n\t- The project currently has no published releases or packages, which suggests it might be in an ongoing development or experimental phase.\n\t- Three contributors are listed: Jianyuan Wang, Jaewoo Jung, and CharlesCNorton, who bring diverse expertise to the project.\n\t- The repository includes important documentation such as a [[Licence]], a code of conduct, and a security policy, ensuring a structured and secure collaborative environment.\n\t  Topics: Python, Licence\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
+  "backlinks": [],
+  "wiki_links": [
+    "Licence",
+    "Python"
+  ]
+}

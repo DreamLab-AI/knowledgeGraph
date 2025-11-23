@@ -3,9 +3,9 @@
   "title": "Snapshot Voting",
   "content": "- ### OntologyBlock\n  id:: bc-0469-snapshot-voting-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0469\n\t- preferred-term:: Snapshot Voting\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: A component of the blockchain ecosystem.\n\t- maturity:: draft\n\t- owl:class:: bc:SnapshotVoting\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- #### Relationships\n\t  id:: bc-0469-snapshot-voting-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[On-Chain Voting]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :SnapshotVoting))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :SnapshotVoting \"Snapshot Voting\"@en)\n(AnnotationAssertion rdfs:comment :SnapshotVoting \"A component of the blockchain ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :SnapshotVoting \"BC-0469\"^^xsd:string)\n```",
   "backlinks": [
+    "BC-0468-multi-sig-governance",
     "BC-0467-conviction-voting",
-    "BC-0466-quadratic-voting",
-    "BC-0468-multi-sig-governance"
+    "BC-0466-quadratic-voting"
   ],
   "wiki_links": [
     "BlockchainDomain",

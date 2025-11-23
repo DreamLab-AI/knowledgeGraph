@@ -1,0 +1,60 @@
+{
+  "id": "Linear Actuator",
+  "title": "Electric Linear Actuator",
+  "content": "- ### OntologyBlock\n    - term-id:: RB-0174\n    - preferred-term:: Electric Linear Actuator\n    - ontology:: true\n    - is-subclass-of:: [[DisruptiveTechnology]]\n    - version:: 1.0.0\n\n## Electric Linear Actuator\n\nElectric Linear Actuator transforms rotational motor output into controlled linear motion through mechanical transmission mechanisms including ball screws, lead screws, belt drives, or rack-and-pinion systems, combining electric motor controllability with linear force generation essential for numerous robotic tasks. These integrated mechatronic devices package motor, transmission, guide rails, position feedback, and limit switches into single assemblies providing direct linear motion without external conversion mechanisms, simplifying robot design and improving reliability through reduced component count.\n\nCommon conversion mechanisms each offer distinct characteristics. Ball screw actuators provide high efficiency (90%+), precision positioning (±0.01mm), and high load capacity but cost more and require clean environments. Lead screw variants trade efficiency (30-70%) for lower cost and self-locking behavior preventing backdrive. Belt drive actuators achieve high speeds (to 3 m/s) and long strokes (to 10 meters) efficiently but with reduced stiffness. Rack-and-pinion designs offer unlimited stroke through modular racks, moderate efficiency, and simple construction. Rodless cylinders using magnetic or mechanical coupling through sealed tubes provide compact packaging for long strokes.\n\nPerformance specifications span stroke lengths from 25mm to 6 meters, speeds from 1 mm/s to 3 m/s, forces from 100 N to 100 kN, and positioning accuracy from ±1mm to ±0.01mm depending on mechanism and feedback system. Integrated features typically include DC or stepper motors with controllers, absolute or incremental position encoders, electromagnetic brakes, adjustable limit switches, and IP-rated housings. Supply voltages commonly are 12-48 VDC for mobile robotics or 115-230 VAC for industrial installations.\n\nAs of 2024-2025, electric linear actuators dominate collaborative robot base positioning, mobile robot lifting mechanisms, service robot extendable arms, and modular automation systems. Progressive Automation, Thomson Industries, and Actuonix supply standardized actuators with CANopen, EtherCAT, or serial control interfaces. Compact designs integrate planetary gearboxes and BLDC motors achieving 24 VDC operation for battery-powered mobile platforms. Force limiting and zero-velocity detection enable safe human contact per ISO/TS 15066. Smart actuators incorporate current monitoring for collision detection and predictive maintenance. Applications span warehouse logistics (vertically mobile robots), medical robotics (ISO 13485 certified), and outdoor mobile platforms meeting IP65/IP67 requirements for UK agricultural and construction environments.\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n\n## Technical Details\n\n- **Id**: linearactuator-ontology\n- **Collapsed**: true\n- **Domain Prefix**: RB\n- **Sequence Number**: 0174\n- **Filename History**: [\"RB-0174-linearactuator.md\"]\n- **Public Access**: true\n- **Source Domain**: metaverse\n- **Status**: complete\n- **Last Updated**: 2025-11-13\n- **Maturity**: established\n- **Source**: Chimera Prime Research\n- **Authority Score**: 0.95\n- **Owl:Class**: rb:LinearActuator\n- **Belongstodomain**: [[Robotics]]\n- **Is Subclass Of**: [[Electric Actuator]]",
+  "backlinks": [
+    "Rack Pinion Actuator",
+    "Lead Screw Actuator"
+  ],
+  "wiki_links": [
+    "Electric Actuator",
+    "Robotics",
+    "DisruptiveTechnology"
+  ],
+  "ontology": {
+    "term_id": "RB-0174",
+    "preferred_term": "Electric Linear Actuator",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/robotics#LinearActuator",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-13",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "rb:LinearActuator",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: definition",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'rb' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

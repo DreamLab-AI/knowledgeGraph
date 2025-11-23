@@ -1,0 +1,12 @@
+{
+  "id": "Industrial Robot",
+  "title": "Industrial Robot",
+  "content": "- ### OntologyBlock\n  id:: unknown-ontology\n  collapsed:: true",
+  "backlinks": [
+    "Scara Robot",
+    "Delta Robot",
+    "Cylindrical Robot",
+    "Polar Robot"
+  ],
+  "wiki_links": []
+}

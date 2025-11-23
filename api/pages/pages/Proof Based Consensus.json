@@ -1,0 +1,56 @@
+{
+  "id": "Proof Based Consensus",
+  "title": "Proof-Based Consensus",
+  "content": "- ### OntologyBlock\n    - term-id:: BC-0543\n    - preferred-term:: Proof-Based Consensus\n    - ontology:: true\n    - is-subclass-of:: [[ConsensusMechanism]]\n    - version:: 1.0.0\n\n## Proof-Based Consensus\n\nProof-Based Consensus refers to consensus mechanisms requiring participants to provide cryptographic or computational proof to validate transactions and create blocks.\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n\n## Technical Details\n\n- **Id**: proofbasedconsensus-ontology\n- **Collapsed**: true\n- **Domain Prefix**: BC\n- **Sequence Number**: 0543\n- **Filename History**: [\"BC-0543-proofbasedconsensus.md\"]\n- **Public Access**: true\n- **Source Domain**: metaverse\n- **Status**: complete\n- **Last Updated**: 2025-11-13\n- **Maturity**: established\n- **Source**: Chimera Prime Research\n- **Authority Score**: 0.95\n- **Owl:Class**: bc:ProofBasedConsensus\n- **Belongstodomain**: [[Blockchain]]\n- **Is Subclass Of**: [[ConsensusMechanism]]",
+  "backlinks": [],
+  "wiki_links": [
+    "ConsensusMechanism",
+    "Blockchain"
+  ],
+  "ontology": {
+    "term_id": "BC-0543",
+    "preferred_term": "Proof-Based Consensus",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#ProofBasedConsensus",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-13",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:ProofBasedConsensus",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: definition",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'bc' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

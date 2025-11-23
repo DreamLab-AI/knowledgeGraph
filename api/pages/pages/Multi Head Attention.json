@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: multiheadattention-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0810\n\t- preferred-term:: Multi-Head Attention\n\t- status:: complete\n\t- public-access:: true\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: ai:MultiHeadAttention\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: multiheadattention-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AttentionMechanism]]",
   "backlinks": [],
   "wiki_links": [
-    "AttentionMechanism",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "AttentionMechanism"
   ],
   "ontology": {
     "term_id": "AI-0810",

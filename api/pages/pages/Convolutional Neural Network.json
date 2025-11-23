@@ -7,11 +7,11 @@
     "Super-Resolution"
   ],
   "wiki_links": [
-    "NeuralNetworkArchitecture",
-    "LeCun et al. 1998 Gradient-Based Learning",
     "IEEE CVPR Proceedings",
+    "LeCun et al. 1998 Gradient-Based Learning",
     "He et al. 2016 ResNet",
-    "Krizhevsky et al. 2012 AlexNet"
+    "Krizhevsky et al. 2012 AlexNet",
+    "NeuralNetworkArchitecture"
   ],
   "ontology": {
     "term_id": "AI-0032",

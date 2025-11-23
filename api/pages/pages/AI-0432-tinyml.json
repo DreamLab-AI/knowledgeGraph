@@ -6,8 +6,8 @@
   "wiki_links": [
     "TensorFlow Lite Micro",
     "AIEthicsDomain",
-    "ConceptualLayer",
     "MLPerf Tiny",
+    "ConceptualLayer",
     "TinyML Foundation"
   ],
   "ontology": {

@@ -1,0 +1,56 @@
+{
+  "id": "Hydraulic Motor",
+  "title": "Hydraulic Motor",
+  "content": "- ### OntologyBlock\n    - term-id:: RB-0180\n    - preferred-term:: Hydraulic Motor\n    - ontology:: true\n    - is-subclass-of:: [[Hydraulic Actuator]]\n    - version:: 1.0.0\n\n## Hydraulic Motor\n\nHydraulic Motor converts pressurized fluid flow into continuous rotational motion, generating high torque from compact dimensions through positive displacement principles. These actuators enable mobile robots and heavy-duty manipulators to achieve power outputs and torque densities unattainable with electric motors of comparable size, particularly at low speeds where electric motors require bulky gear reducers. Hydraulic motors excel in harsh environments withstanding contamination, temperature extremes, and mechanical abuse that would destroy electric alternatives.\n\nOperating types include gear motors (external, internal, gerotor), vane motors, piston motors (axial, radial), and gerotor motors. Gear motors offer simple construction, low cost, and tolerances to contamination, suitable for mobile robot wheel drives. Vane motors provide smooth operation and moderate efficiency (75-85%). Piston motors achieve highest efficiency (90-95%) and power density, with variable displacement variants enabling speed control at constant pressure. Performance metrics include displacement (cm³/revolution), rated pressure (100-350 bar), maximum speed (500-10,000 RPM depending on type), and torque capacity.\n\nUnlike electric motors requiring magnetic materials and windings, hydraulic motors feature purely mechanical operation: fluid pressure acting on gears, vanes, or pistons creates imbalance forces producing rotation. This enables operation in explosive atmospheres without ignition risk, immersion in liquids, and extreme temperature ranges (-40°C to +120°C with appropriate fluids). Bi-directional operation results from reversing flow direction. Speed control via flow regulation provides infinite variability, while torque limiting through pressure relief valves prevents overload damage.\n\nAs of 2024-2025, hydraulic motors power track drives in heavy mobile robots (demolition, military EOD), swing drives in excavator robots, and joint actuators in heavy-payload manipulators. Variable displacement motors enable energy-efficient speed control matching load requirements. Integrated brake valves prevent runaway under gravity loads. Low-speed high-torque (LSHT) motors eliminate gearboxes in wheel drives for agricultural and construction robots. ISO 3019 and ISO 4391 standardize mounting flanges and shaft dimensions. Modern designs incorporate load sensing and flow sharing for multi-actuator coordination, critical in complex mobile platforms operating in UK construction and agriculture sectors.\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n\n## Technical Details\n\n- **Id**: hydraulicmotor-ontology\n- **Collapsed**: true\n- **Domain Prefix**: RB\n- **Sequence Number**: 0180\n- **Filename History**: [\"RB-0180-hydraulicmotor.md\"]\n- **Public Access**: true\n- **Source Domain**: metaverse\n- **Status**: complete\n- **Last Updated**: 2025-11-13\n- **Maturity**: established\n- **Source**: Chimera Prime Research\n- **Authority Score**: 0.95\n- **Owl:Class**: rb:HydraulicMotor\n- **Belongstodomain**: [[Robotics]]\n- **Is Subclass Of**: [[Hydraulic Actuator]]",
+  "backlinks": [],
+  "wiki_links": [
+    "Hydraulic Actuator",
+    "Robotics"
+  ],
+  "ontology": {
+    "term_id": "RB-0180",
+    "preferred_term": "Hydraulic Motor",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/robotics#HydraulicMotor",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-13",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "rb:HydraulicMotor",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: definition",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'rb' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

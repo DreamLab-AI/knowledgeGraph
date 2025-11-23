@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: imagesegmentation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0853\n\t- preferred-term:: Image Segmentation\n\t- status:: complete\n\t- public-access:: true\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: ai:ImageSegmentation\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: imagesegmentation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[ComputerVision]]",
   "backlinks": [],
   "wiki_links": [
-    "ComputerVision",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "ComputerVision"
   ],
   "ontology": {
     "term_id": "AI-0853",

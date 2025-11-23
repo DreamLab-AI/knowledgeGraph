@@ -1,0 +1,7 @@
+{
+  "id": "HRI_SAFETY_TERMS_SUMMARY",
+  "title": "HRI_SAFETY_TERMS_SUMMARY",
+  "content": "## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Hrisafetytermssummary))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Hrisafetytermssummary \"HRI_SAFETY_TERMS_SUMMARY\"@en)\n(AnnotationAssertion rdfs:comment :Hrisafetytermssummary \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Hrisafetytermssummary \"mv-1761742247930\"^^xsd:string)\n```",
+  "backlinks": [],
+  "wiki_links": []
+}

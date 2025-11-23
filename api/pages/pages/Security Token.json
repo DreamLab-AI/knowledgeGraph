@@ -1,0 +1,60 @@
+{
+  "id": "Security Token",
+  "title": "Security Token",
+  "content": "- ### OntologyBlock\n    - term-id:: BC-0513\n    - preferred-term:: Security Token\n    - ontology:: true\n    - is-subclass-of:: [[TokenType]]\n    - version:: 1.0.0\n\n## Security Token\n\nSecurity Token refers to a token designed to represent complete or fractional ownership interests in assets and/or entities. subject to restrictions based on identity, jurisdiction, and asset category, and regulated by securities laws providing investors with entitlements like dividends, profit-sharing, or voting privileges.\n\n## Technical Details\n\n- **Id**: securitytoken-ontology\n- **Collapsed**: true\n- **Domain Prefix**: BC\n- **Sequence Number**: 0513\n- **Filename History**: [\"BC-0513-securitytoken.md\"]\n- **Public Access**: true\n- **Source Domain**: blockchain\n- **Status**: complete\n- **Last Updated**: 2025-11-13\n- **Maturity**: established\n- **Source**: Chimera Prime Research\n- **Authority Score**: 0.95\n- **Owl:Class**: bc:SecurityToken\n- **Belongstodomain**: [[Blockchain]]\n- **Blockchainrelevance**: High\n- **Lastvalidated**: 2025-11-14\n- **Is Subclass Of**: [[TokenType]]",
+  "backlinks": [
+    "E R C1400 Token",
+    "Identity Federation",
+    "E R C3643 Token"
+  ],
+  "wiki_links": [
+    "TokenType",
+    "Blockchain"
+  ],
+  "ontology": {
+    "term_id": "BC-0513",
+    "preferred_term": "Security Token",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#SecurityToken",
+    "source_domain": "blockchain",
+    "domain": "blockchain",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-13",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:SecurityToken",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: definition",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'bc' doesn't match source-domain 'blockchain'"
+      ]
+    }
+  }
+}
