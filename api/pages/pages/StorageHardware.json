@@ -4,9 +4,9 @@
   "content": "- ### OntologyBlock\n  id:: storagehardware-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-1002\n\t- preferred-term:: StorageHardware\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A storage hardware component in the Metaverse domain that required by DataStorageLayer.\n\t- source:: Generated from bridge validation\n\t- maturity:: emerging\n\t- owl:class:: mv:StorageHardware\n\t- #### Relationships\n\t  id:: storagehardware-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Hardware Component]]\n\n\t\t\t- is-target-of-requires:: [[Storage Layer]]\n\n\t\t\t- is-target-of-requires:: [[Data Storage Layer]]",
   "backlinks": [],
   "wiki_links": [
+    "Storage Layer",
     "Data Storage Layer",
-    "Hardware Component",
-    "Storage Layer"
+    "Hardware Component"
   ],
   "ontology": {
     "term_id": "MV-1002",
