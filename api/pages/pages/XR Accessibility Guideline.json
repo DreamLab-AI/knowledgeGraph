@@ -6,20 +6,20 @@
     "Accessibility Standard"
   ],
   "wiki_links": [
-    "Inclusive XR Design",
-    "User Research",
-    "Accessibility Testing",
-    "Assistive Technology Integration",
-    "Implementation Example",
-    "Middleware Layer",
     "Best Practice",
     "W3C XR Accessibility UR",
-    "ETSI GR ARF 010",
+    "Design Recommendation",
+    "Inclusive XR Design",
     "ISO 9241-112",
-    "Universal Access",
-    "Accessibility Standard",
+    "User Research",
+    "Assistive Technology Integration",
     "InteractionDomain",
-    "Design Recommendation"
+    "Implementation Example",
+    "Accessibility Testing",
+    "Middleware Layer",
+    "ETSI GR ARF 010",
+    "Accessibility Standard",
+    "Universal Access"
   ],
   "ontology": {
     "term_id": "20187",

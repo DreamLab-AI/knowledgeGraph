@@ -7,13 +7,13 @@
     "BC-0082-block-propagation-time"
   ],
   "wiki_links": [
-    "ProtocolLayer",
-    "ConsensusProtocol",
-    "ConsensusDomain",
     "NIST NISTIR",
-    "IEEE 2418.1",
+    "ConsensusDomain",
+    "ProtocolLayer",
     "ISO/IEC 23257:2021",
-    "Blockchain Entity"
+    "ConsensusProtocol",
+    "Blockchain Entity",
+    "IEEE 2418.1"
   ],
   "ontology": {
     "term_id": "BC-0062",

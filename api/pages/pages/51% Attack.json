@@ -8,14 +8,14 @@
   ],
   "wiki_links": [
     "NIST NISTIR",
-    "Jailbreaking",
-    "SecurityLayer",
-    "IEEE 2418.1",
-    "CryptographicDomain",
     "NetworkComponent",
-    "Open Generative AI tools",
+    "CryptographicDomain",
+    "SecurityLayer",
     "ISO/IEC 23257:2021",
-    "Blockchain Entity"
+    "Jailbreaking",
+    "Open Generative AI tools",
+    "Blockchain Entity",
+    "IEEE 2418.1"
   ],
   "ontology": {
     "term_id": "BC-0077",

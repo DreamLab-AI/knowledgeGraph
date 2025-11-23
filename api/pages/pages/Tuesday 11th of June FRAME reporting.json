@@ -4,19 +4,19 @@
   "content": "- ### OntologyBlock\n  id:: MV-0002\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0002\n\t- preferred-term:: FRAME Reporting Framework (Implementation Science)\n\t- status:: active\n\t- public-access:: true\n\t- owl:class:: mv:FRAMEReportingFramework\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: MethodologicalFramework\n\t- belongsToDomain:: [[HealthInformaticsDomain]]\n\n## FRAME Reporting Framework (Implementation Science)\n\nFRAME (Framework for Reporting Adaptations and Modifications) refers to systematic methodologies for documenting modifications to evidence-based interventions and implementation strategies in healthcare settings. Two primary frameworks exist: the original FRAME for reporting adaptations to interventions, and FRAME-IS for documenting modifications to implementation strategies.\n\nThe expanded FRAME includes eight core components: (1) timing and implementation stage of modifications, (2) whether modifications were planned/proactive or unplanned/reactive, (3) decision-makers determining modifications, (4) what elements were modified, (5) delivery level of modifications, (6) type of context or content-level modifications, (7) fidelity-consistency of modifications, and (8) rationale for modifications. FRAME-IS extends this framework specifically for implementation strategies, enabling healthcare system leaders and implementation scientists to systematically document how strategies adapt across different settings and populations.\n\nThese frameworks address critical gaps in implementation science by providing standardized reporting mechanisms that allow researchers to understand the relationship between modifications and health outcomes. FRAME reporting supports evidence synthesis, meta-analysis, and knowledge translation by ensuring transparent documentation of how interventions evolve during real-world implementation. The frameworks are widely used in UK healthcare research and internationally to improve the precision and reproducibility of implementation science studies.\n\n- **Last Updated**: 2025-11-18\n- **Review Status**: Researched and verified through academic implementation science literature\n- **Verification**: Framework documentation from Implementation Science journal\n- **Regional Context**: UK healthcare research, internationally applicable\n\n## Technical Details\n\n- **Id**: frame-reporting-implementation-science-owl-axioms\n- **Collapsed**: true\n- **Source Domain**: health-informatics\n- **Status**: active\n- **Public Access**: false\n- **Maturity**: mature\n- **Authority Score**: 0.85\n- **Owl:Class**: mv:FRAMEReportingFramework\n- **Owl:Physicality**: ConceptualEntity\n- **Owl:Role**: MethodologicalFramework\n- **Belongstodomain**: [[HealthInformaticsDomain]]\n- **Enables**: [[EvidenceBasedMedicine]], [[ImplementationScience]], [[HealthServicesResearch]]\n- **Requires**: [[SystematicDocumentation]], [[QualityAssurance]], [[ResearchMethodology]]\n- **Bridges To**: [[ClinicalResearch]], [[HealthcareQualityImprovement]], [[KnowledgeTranslation]]\n- **Related Terms**: [[Evidence-Based Interventions]], [[Implementation Strategies]], [[Fidelity Assessment]]\n\n## Key Concepts\n\n### FRAME Components\n- Modification timing and stage\n- Planned vs. reactive modifications\n- Decision-making processes\n- Elements modified\n- Delivery level changes\n- Content/context modifications\n- Fidelity consistency\n- Rationale documentation\n\n### FRAME-IS Specifics\n- Implementation strategy modifications\n- Cross-setting adaptation\n- Population-specific modifications\n- Systematic documentation protocols\n\n## Applications\n\n- Healthcare intervention research\n- Implementation science studies\n- Clinical trial adaptations\n- Health services research\n- Quality improvement initiatives\n- Evidence synthesis and meta-analysis\n\n## References\n\n- Wiltsey Stirman, S., Baumann, A. A., & Miller, C. J. (2019). The FRAME: an expanded framework for reporting adaptations and modifications to evidence-based interventions. Implementation Science, 14(1), 58.\n- Miller, C. J., et al. (2021). The FRAME-IS: a framework for documenting modifications to implementation strategies in healthcare. Implementation Science, 16(1), 36.",
   "backlinks": [],
   "wiki_links": [
-    "ImplementationScience",
-    "QualityAssurance",
-    "Implementation Strategies",
-    "HealthInformaticsDomain",
-    "SystematicDocumentation",
-    "EvidenceBasedMedicine",
-    "ResearchMethodology",
     "Fidelity Assessment",
-    "HealthServicesResearch",
     "HealthcareQualityImprovement",
+    "SystematicDocumentation",
     "ClinicalResearch",
     "Evidence-Based Interventions",
-    "KnowledgeTranslation"
+    "HealthInformaticsDomain",
+    "EvidenceBasedMedicine",
+    "KnowledgeTranslation",
+    "Implementation Strategies",
+    "ResearchMethodology",
+    "HealthServicesResearch",
+    "ImplementationScience",
+    "QualityAssurance"
   ],
   "ontology": {
     "term_id": "MV-0002",

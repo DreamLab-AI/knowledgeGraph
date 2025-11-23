@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: neuralnetworkarchitecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0803\n\t- preferred-term:: Neural Network Architecture\n\t- status:: complete\n\t- public-access:: true\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: ai:NeuralNetworkArchitecture\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: neuralnetworkarchitecture-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[DeepLearning]]",
   "backlinks": [],
   "wiki_links": [
-    "Artificial Intelligence",
-    "DeepLearning"
+    "DeepLearning",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0803",

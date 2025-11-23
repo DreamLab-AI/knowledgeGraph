@@ -10,13 +10,13 @@
     "Safety Laser Scanner"
   ],
   "wiki_links": [
-    "EthicalFramework",
+    "IEEE P2863",
     "RegulatoryCompliance",
     "AIGovernancePrinciple",
-    "ConceptualLayer",
+    "AIGovernance",
     "AIEthicsDomain",
-    "IEEE P2863",
-    "AIGovernance"
+    "ConceptualLayer",
+    "EthicalFramework"
   ],
   "ontology": {
     "term_id": "AI-0376",

@@ -6,9 +6,9 @@
   "wiki_links": [
     "ModelProperty",
     "mattei2022capital",
-    "balassa2013theory",
     "booth2020price",
-    "hawtrey1925currency"
+    "hawtrey1925currency",
+    "balassa2013theory"
   ],
   "ontology": {
     "term_id": "AI-0302",

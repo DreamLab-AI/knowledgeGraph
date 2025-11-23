@@ -8,10 +8,10 @@
   ],
   "wiki_links": [
     "NIST NISTIR",
-    "IEEE 2418.1",
     "Node",
     "CryptographicDomain",
-    "ISO/IEC 23257:2021"
+    "ISO/IEC 23257:2021",
+    "IEEE 2418.1"
   ],
   "ontology": {
     "term_id": "BC-0074",

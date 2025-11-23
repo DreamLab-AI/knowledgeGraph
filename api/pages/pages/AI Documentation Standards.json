@@ -6,13 +6,13 @@
     "AI Ethics Checklist_ENHANCED"
   ],
   "wiki_links": [
-    "ISO/IEC 23053",
+    "Datasheets (Gebru et al.)",
+    "EU AI Act",
+    "AIGovernance",
+    "AIEthicsDomain",
     "Model Cards (Mitchell et al.)",
     "ConceptualLayer",
-    "AIEthicsDomain",
-    "EU AI Act",
-    "Datasheets (Gebru et al.)",
-    "AIGovernance"
+    "ISO/IEC 23053"
   ],
   "ontology": {
     "term_id": "AI-0392",

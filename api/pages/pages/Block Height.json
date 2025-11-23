@@ -6,18 +6,18 @@
     "Runes and Glyphs"
   ],
   "wiki_links": [
-    "NIST NISTIR 8202",
-    "Block",
     "NIST NISTIR",
-    "BlockchainDomain",
-    "IEEE 2418.1",
+    "Block",
+    "ISO/IEC 23257:2021",
     "Bitcoin Developer Reference",
     "Ethereum Yellow Paper",
+    "BlockchainDomain",
     "ConceptualLayer",
-    "ISO/IEC 23257:2021",
+    "NIST NISTIR 8202",
+    "Distributeddatastructure",
     "DistributedDataStructure",
     "Blockchain Entity",
-    "Distributeddatastructure"
+    "IEEE 2418.1"
   ],
   "ontology": {
     "term_id": "BC-0011",

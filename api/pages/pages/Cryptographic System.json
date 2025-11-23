@@ -6,10 +6,10 @@
     "BC-0001-blockchain"
   ],
   "wiki_links": [
-    "NIST Cryptographic Standards",
-    "ISO/IEC 18033 Encryption Algorithms",
-    "BlockchainDomain",
     "FIPS 140-3 Security Requirements",
+    "BlockchainDomain",
+    "ISO/IEC 18033 Encryption Algorithms",
+    "NIST Cryptographic Standards",
     "Metaverse"
   ],
   "ontology": {

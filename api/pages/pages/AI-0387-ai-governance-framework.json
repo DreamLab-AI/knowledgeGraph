@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: 0387-ai-governance-framework-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0387\n\t- preferred-term:: AI Governance Framework\n\t- status:: in\n\t- public-access:: true\n\t- definition:: AI Governance Framework is a comprehensive organizational structure that establishes oversight mechanisms, ethical principles, accountability structures, and policy frameworks for responsible development and deployment of artificial intelligence systems. This framework defines roles and responsibilities across the AI lifecycle, implements risk management processes, ensures regulatory compliance, and establishes decision-making authority for AI-related activities. Key components include executive leadership commitment and sponsorship, cross-functional governance committees or AI ethics boards, documented policies covering AI development standards, risk assessment procedures, ethical guidelines, and data governance protocols, incident response and escalation procedures, compliance monitoring and audit mechanisms, and continuous improvement processes. An effective AI governance framework integrates with existing organizational governance structures (IT governance, data governance, enterprise risk management) while addressing AI-specific concerns including algorithmic accountability, fairness and bias mitigation, transparency and explainability requirements, human oversight provisions, and stakeholder engagement. Implementation aligns with international standards including ISO/IEC 42001:2023 AI Management Systems, OECD AI Principles, EU AI Act governance requirements, and sector-specific regulations, providing a systematic approach to managing AI risks and ensuring trustworthy AI deployment that protects organizational interests and stakeholder rights.\n\t- source:: [[ISO/IEC 42001:2023]], [[OECD AI Principles]], [[EU AI Act]]\n\t- maturity:: mature\n\t- owl:class:: aigo:AIGovernanceFramework\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Process\n\t- owl:inferred-class:: aigo:VirtualProcess\n\t- belongsToDomain:: [[AIEthicsDomain]]\n\t- implementedInLayer:: [[ConceptualLayer]]",
   "backlinks": [],
   "wiki_links": [
-    "OECD AI Principles",
-    "ISO/IEC 42001:2023",
-    "ConceptualLayer",
+    "EU AI Act",
     "AIEthicsDomain",
-    "EU AI Act"
+    "OECD AI Principles",
+    "ConceptualLayer",
+    "ISO/IEC 42001:2023"
   ],
   "ontology": {
     "term_id": "AI-0387",

@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: toxicitydetection-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0859\n\t- preferred-term:: Toxicity Detection\n\t- status:: complete\n\t- public-access:: true\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: ai:ToxicityDetection\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: toxicitydetection-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[NaturalLanguageProcessing]]",
   "backlinks": [],
   "wiki_links": [
-    "Artificial Intelligence",
-    "NaturalLanguageProcessing"
+    "NaturalLanguageProcessing",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0859",

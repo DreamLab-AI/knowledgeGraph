@@ -5,11 +5,11 @@
   "backlinks": [],
   "wiki_links": [
     "AIEthicsDomain",
-    "AIFairness",
+    "ConceptualLayer",
     "Dwork et al. (2012)",
     "Barocas et al. (2019)",
-    "ConceptualLayer",
-    "Hardt et al. (2016)"
+    "Hardt et al. (2016)",
+    "AIFairness"
   ],
   "ontology": {
     "term_id": "AI-0383",

@@ -6,12 +6,12 @@
     "AI Governance Principle"
   ],
   "wiki_links": [
-    "EU HLEG AI",
-    "IEEE P7000",
-    "ISO/IEC 42001:2023",
-    "ConceptualLayer",
+    "AIGovernance",
     "AIEthicsDomain",
-    "AIGovernance"
+    "ConceptualLayer",
+    "ISO/IEC 42001:2023",
+    "IEEE P7000",
+    "EU HLEG AI"
   ],
   "ontology": {
     "term_id": "AI-0388",

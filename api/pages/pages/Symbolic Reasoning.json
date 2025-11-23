@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: symbolicreasoning-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0865\n\t- preferred-term:: Symbolic Reasoning\n\t- status:: complete\n\t- public-access:: true\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: ai:SymbolicReasoning\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: symbolicreasoning-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[ArtificialIntelligence]]",
   "backlinks": [],
   "wiki_links": [
-    "ArtificialIntelligence",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "ArtificialIntelligence"
   ],
   "ontology": {
     "term_id": "AI-0865",

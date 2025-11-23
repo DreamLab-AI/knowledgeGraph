@@ -5,16 +5,16 @@
   "backlinks": [],
   "wiki_links": [
     "Model Performance",
-    "True Positive Rate",
-    "QualityMetric",
     "False Positive Rate",
-    "Threshold Selection",
     "Classification",
-    "MetaverseDomain",
-    "Ranking Metric",
-    "ROC Curve",
+    "Precision-Recall Curve",
     "Model Comparison",
-    "Precision-Recall Curve"
+    "True Positive Rate",
+    "MetaverseDomain",
+    "QualityMetric",
+    "Ranking Metric",
+    "Threshold Selection",
+    "ROC Curve"
   ],
   "ontology": {
     "term_id": "AI-0113",

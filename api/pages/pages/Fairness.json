@@ -9,12 +9,12 @@
     "Loss Function"
   ],
   "wiki_links": [
-    "Non-discrimination",
     "Bias Mitigation",
+    "Bias Detection",
     "Equal Treatment",
     "MetaverseDomain",
     "Metaverse",
-    "Bias Detection"
+    "Non-discrimination"
   ],
   "ontology": {
     "term_id": "AI-0065",

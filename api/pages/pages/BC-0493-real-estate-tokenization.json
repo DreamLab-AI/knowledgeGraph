@@ -6,14 +6,14 @@
     "BC-0494-property-registry"
   ],
   "wiki_links": [
-    "BC-0458-verifiable-credentials",
     "BC-0463-governance-token",
-    "BC-0456-self-sovereign-identity",
-    "BC-0478-securities-regulation",
-    "BC-0488-licencing-requirements",
-    "BlockchainDomain",
-    "Blockchain Application",
     "BC-0432-consortium-blockchain",
+    "BC-0488-licencing-requirements",
+    "BC-0478-securities-regulation",
+    "BlockchainDomain",
+    "BC-0456-self-sovereign-identity",
+    "BC-0458-verifiable-credentials",
+    "Blockchain Application",
     "BC-0494-property-registry"
   ],
   "ontology": {

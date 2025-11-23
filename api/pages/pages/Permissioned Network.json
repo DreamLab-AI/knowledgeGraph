@@ -6,16 +6,16 @@
     "BC-0432-consortium-blockchain"
   ],
   "wiki_links": [
-    "Networkcomponent",
-    "BlockchainEntity",
-    "NIST NISTIR",
-    "IEEE 2418.1",
-    "SecurityLayer",
-    "CryptographicDomain",
-    "NetworkComponent",
-    "ISO/IEC 23257:2021",
     "Blockchain Network",
-    "Blockchain Entity"
+    "NIST NISTIR",
+    "NetworkComponent",
+    "CryptographicDomain",
+    "SecurityLayer",
+    "ISO/IEC 23257:2021",
+    "BlockchainEntity",
+    "Networkcomponent",
+    "Blockchain Entity",
+    "IEEE 2418.1"
   ],
   "ontology": {
     "term_id": "BC-0091",

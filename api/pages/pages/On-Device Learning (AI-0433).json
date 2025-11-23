@@ -6,8 +6,8 @@
   "wiki_links": [
     "Apple Core ML",
     "PyTorch Mobile",
-    "ConceptualLayer",
     "AIEthicsDomain",
+    "ConceptualLayer",
     "TensorFlow Lite"
   ],
   "ontology": {

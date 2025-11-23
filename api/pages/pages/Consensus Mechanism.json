@@ -26,16 +26,16 @@
     "Nakamoto Consensus"
   ],
   "wiki_links": [
-    "BlockchainDomain",
-    "Ethereum 2.0 Specification",
     "Tendermint Consensus",
-    "Practical Byzantine Fault Tolerance",
-    "HybridConsensus",
-    "CommunityGovernanceModel",
-    "Bitcoin Whitepaper",
     "ProofBasedConsensus",
+    "Bitcoin Whitepaper",
+    "BlockchainDomain",
+    "Metaverse Infrastructure",
+    "HybridConsensus",
     "CollectiveIntelligenceSystem",
-    "Metaverse Infrastructure"
+    "CommunityGovernanceModel",
+    "Ethereum 2.0 Specification",
+    "Practical Byzantine Fault Tolerance"
   ],
   "ontology": {
     "term_id": "PC-0009",

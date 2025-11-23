@@ -9,12 +9,12 @@
     "Accountability"
   ],
   "wiki_links": [
-    "AIEthicsDomain",
-    "Canada AIA",
-    "ConceptualLayer",
     "ISO/IEC 23894:2023",
     "EU AI Act",
-    "AIGovernance"
+    "AIGovernance",
+    "AIEthicsDomain",
+    "ConceptualLayer",
+    "Canada AIA"
   ],
   "ontology": {
     "term_id": "AI-0390",

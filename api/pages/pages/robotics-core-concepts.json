@@ -4,16 +4,16 @@
   "content": "- ### OntologyBlock\n  id:: robotics-core-concepts-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0109\n\t- preferred-term:: robotics core concepts\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: mv:roboticscoreconcepts\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\n## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :RoboticsCoreConcepts))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :RoboticsCoreConcepts \"robotics core concepts\"@en)\n(AnnotationAssertion rdfs:comment :RoboticsCoreConcepts \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :RoboticsCoreConcepts \"mv-1761742247991\"^^xsd:string)\n```\n\n- ## About robotics core concepts\n\t- A component of the metaverse ecosystem.\n\t-\n\t- ### Original Content\n\t  collapsed:: true\n\t\t- ```\n- # Robotics - Core Concepts Index\n\t\t\n\t\t  - ## Overview\n\t\t    - This index page provides links to key Robotics ontology classes\n\t\t    - Domain: **Robotics**\n\t\t    - Total Classes Documented: 10\n\t\t    - Technology Readiness Level: 6\n\t\t    - Quality Score: 0.89\n\t\t\n\t\t  - ## Autonomous Systems\n\t\t    - [[AutonomousRobot]] - Independent robotic systems\n\t\t    - [[PathPlanning]] - Navigation and motion planning\n\t\t    - [[SLAM]] - Simultaneous localization and mapping\n\t\t\n\t\t  - ## Manipulation & Actuation\n\t\t    - [[ManipulatorArm]] - Robotic arms and end-effectors\n\t\t    - [[SoftRobotics]] - Compliant and flexible robots\n\t\t\n\t\t  - ## Perception & Intelligence\n\t\t    - [[SensorFusion]] - Multi-sensor integration\n\t\t    - [[RobotLearning]] - Machine learning for robots\n\t\t\n\t\t  - ## Coordination & Interaction\n\t\t    - [[SwarmRobotics]] - Multi-robot collective systems\n\t\t    - [[HumanRobotInteraction]] - Human-robot collaboration\n\t\t    - [[Teleoperation]] - Remote robot control\n\t\t\n\t\t  - ## Cross-Domain Integration\n\t\t    - Robotics integrates with:\n\t\t      - **AI**: Perception, learning, decision-making, control\n\t\t      - **Metaverse**: Telepresence, robot avatars, virtual simulation\n\t\t      - **Blockchain**: Robot identity, swarm coordination, provenance\n\t\t\n\t\t  - ## Related Resources\n\t\t    - Source File: `robotics-ontology-unified.ttl`\n\t\t    - Integration Date: 2025-10-28\n\t\t    - Namespace: `rb:` (http://narrativegoldmine.com/robotics#)\n\t\t\n\t\t  - ## Key Applications\n\t\t    - Industrial automation\n\t\t    - Autonomous vehicles\n\t\t    - Surgical robotics\n\t\t    - Service robots\n\t\t    - Search and rescue\n\t\t\n\t\t  ```\n\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [],
   "wiki_links": [
-    "Teleoperation",
-    "SoftRobotics",
-    "MetaverseDomain",
-    "RobotLearning",
-    "SLAM",
-    "SwarmRobotics",
     "AutonomousRobot",
+    "RobotLearning",
     "PathPlanning",
+    "SoftRobotics",
     "SensorFusion",
     "HumanRobotInteraction",
+    "MetaverseDomain",
+    "SLAM",
+    "SwarmRobotics",
+    "Teleoperation",
     "ManipulatorArm"
   ],
   "ontology": {

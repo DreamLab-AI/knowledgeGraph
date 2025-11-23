@@ -7,10 +7,10 @@
     "AI Governance Principle"
   ],
   "wiki_links": [
-    "MetaverseDomain",
-    "Metaverse",
+    "Risk Assessment (AI-0079)",
     "Hazard Analysis",
-    "Risk Assessment (AI-0079)"
+    "Metaverse",
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "AI-0070",

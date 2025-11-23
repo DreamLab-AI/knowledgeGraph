@@ -6,10 +6,10 @@
     "AI Model Card"
   ],
   "wiki_links": [
-    "Model Inversion",
     "AIRisk",
-    "MetaverseDomain",
     "Adversarial Attacks",
+    "Model Inversion",
+    "MetaverseDomain",
     "Membership Inference"
   ],
   "ontology": {

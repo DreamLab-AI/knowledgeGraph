@@ -6,14 +6,14 @@
     "BC-0491-healthcare-records"
   ],
   "wiki_links": [
-    "BC-0458-verifiable-credentials",
-    "BC-0456-self-sovereign-identity",
-    "BC-0486-regulatory-reporting",
+    "BC-0476-aml-kyc-compliance",
     "BC-0426-hyperledger-fabric",
     "BlockchainDomain",
-    "Blockchain Application",
-    "BC-0476-aml-kyc-compliance",
+    "BC-0486-regulatory-reporting",
     "BC-0491-healthcare-records",
+    "BC-0456-self-sovereign-identity",
+    "BC-0458-verifiable-credentials",
+    "Blockchain Application",
     "BC-0442-pharmaceutical-traceability"
   ],
   "ontology": {

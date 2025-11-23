@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: preimage-resistance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0047\n\t- preferred-term:: Preimage Resistance\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Hash function security property within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:PreimageResistance\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[CryptographicDomain]]\n\t- #### Relationships\n\t  id:: preimage-resistance-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Hash Function]]\n\t\t- bridges-to:: [[BlockchainEntity]]",
   "backlinks": [],
   "wiki_links": [
-    "BlockchainEntity",
     "NIST NISTIR",
-    "IEEE 2418.1",
     "CryptographicDomain",
+    "ISO/IEC 23257:2021",
     "Hash Function",
-    "ISO/IEC 23257:2021"
+    "BlockchainEntity",
+    "IEEE 2418.1"
   ],
   "ontology": {
     "term_id": "BC-0047",

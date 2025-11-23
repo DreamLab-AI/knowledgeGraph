@@ -8,12 +8,12 @@
     "Governance Model"
   ],
   "wiki_links": [
-    "Montreal Declaration for Responsible AI",
-    "Asilomar AI Principles",
-    "IEEE Ethically Aligned Design",
-    "ArtificialIntelligence",
     "ACM Code of Ethics",
-    "AIEthicsDomain"
+    "Asilomar AI Principles",
+    "AIEthicsDomain",
+    "IEEE Ethically Aligned Design",
+    "Montreal Declaration for Responsible AI",
+    "ArtificialIntelligence"
   ],
   "ontology": {
     "term_id": "PC-0011",

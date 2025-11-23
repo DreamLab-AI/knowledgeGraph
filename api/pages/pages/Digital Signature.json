@@ -16,11 +16,11 @@
     "Verifiable Credential (VC)"
   ],
   "wiki_links": [
-    "CryptographicPrimitive",
     "NIST NISTIR",
-    "IEEE 2418.1",
     "ISO/IEC 23257:2021",
-    "Blockchain Entity"
+    "CryptographicPrimitive",
+    "Blockchain Entity",
+    "IEEE 2418.1"
   ],
   "ontology": {
     "term_id": "BC-0030",

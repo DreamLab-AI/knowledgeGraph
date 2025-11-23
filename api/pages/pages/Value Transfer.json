@@ -9,21 +9,21 @@
     "Digital Asset"
   ],
   "wiki_links": [
-    "BIS Innovation Hub",
+    "Transaction",
+    "DigitalCurrency",
+    "BarterSystem",
     "SmartContract",
     "Token",
-    "W3C Web Payments",
-    "DigitalCurrency",
-    "BlockchainDomain",
-    "MetaverseDomain",
-    "Bitcoin",
-    "BarterSystem",
-    "Metaverse",
     "ISO/IEC 23257:2021",
+    "BIS Innovation Hub",
+    "BlockchainDomain",
+    "AI-GroundedDomain",
     "EconomicSystemDomain",
+    "MetaverseDomain",
     "RoboticsDomain",
-    "Transaction",
-    "AI-GroundedDomain"
+    "Metaverse",
+    "W3C Web Payments",
+    "Bitcoin"
   ],
   "ontology": {
     "term_id": "DT-0001",

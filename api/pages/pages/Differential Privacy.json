@@ -11,12 +11,12 @@
     "Safety Laser Scanner"
   ],
   "wiki_links": [
-    "Dwork et al. (2006)",
-    "U.S. Census 2020",
     "Apple Differential Privacy",
-    "ConceptualLayer",
+    "Dwork et al. (2006)",
+    "AIGovernance",
     "AIEthicsDomain",
-    "AIGovernance"
+    "ConceptualLayer",
+    "U.S. Census 2020"
   ],
   "ontology": {
     "term_id": "AI-0416",

@@ -6,9 +6,9 @@
   "wiki_links": [
     "AIFairness",
     "AIF360",
-    "Fairlearn",
-    "ConceptualLayer",
     "AIEthicsDomain",
+    "ConceptualLayer",
+    "Fairlearn",
     "IEEE P7003-2021"
   ],
   "ontology": {

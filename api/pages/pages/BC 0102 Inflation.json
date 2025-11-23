@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: bc-0102-inflation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0102\n\t- preferred-term:: BC 0102 inflation\n\t- status:: active\n\t- public-access:: true\n\t- definition:: The rate at which new [[Bitcoin]] units are created and enter circulation through mining rewards, governed by a predetermined supply schedule that decreases over time through halving events, ultimately approaching zero as the network reaches its 21 million coin maximum supply cap.\n\t- maturity:: comprehensive\n\t- owl:class:: bc:BC0102BitcoinInflation\n\t- owl:physicality:: EconomicMechanism\n\t- owl:role:: MonetaryPolicy\n\t- belongsToDomain:: [[Blockchain Economics]]\n\n## Metadata\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [],
   "wiki_links": [
-    "Bitcoin",
-    "Blockchain Economics"
+    "Blockchain Economics",
+    "Bitcoin"
   ],
   "ontology": {
     "term_id": "BC-0102",

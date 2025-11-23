@@ -6,11 +6,11 @@
     "Stakeholder"
   ],
   "wiki_links": [
-    "EU AI Act Articles 16-17",
-    "OECD AI Principles",
     "AIApplications",
-    "ISO/IEC 42001:2023",
-    "UK AI Regulation"
+    "OECD AI Principles",
+    "EU AI Act Articles 16-17",
+    "UK AI Regulation",
+    "ISO/IEC 42001:2023"
   ],
   "ontology": {
     "term_id": "AI-0099",

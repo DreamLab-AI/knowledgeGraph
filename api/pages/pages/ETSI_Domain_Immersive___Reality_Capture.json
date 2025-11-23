@@ -4,18 +4,18 @@
   "content": "- ### OntologyBlock\n  id:: etsi-domain-immersive-reality-capture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20360\n\t- preferred-term:: ETSI Domain Immersive + Reality Capture Crossover\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Domain categorization marker indicating metaverse systems operating at the intersection of immersive interaction capabilities and reality capture technologies for photorealistic virtual environment creation.\n\t- source:: [[ETSI GR MEC 032]], [[ISO 23257]]\n\t- maturity:: mature\n\t- owl:class:: mv:ETSIDomainImmersiveRealityCaptureMarker\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InteractionDomain]], [[CreativeMediaDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-immersive-reality-capture-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-part-of:: [[ETSI Metaverse Domain Model]]\n\t\t- requires:: [[ETSI Domain Immersive]]\n\t\t- requires:: [[ETSI Domain Reality Capture]]\n\t\t- enables:: [[Spatial Interaction]]\n\t\t- enables:: [[Volumetric Capture]]\n\t\t- enables:: [[Photorealistic Immersion]]",
   "backlinks": [],
   "wiki_links": [
-    "Volumetric Capture",
-    "ETSI Domain Immersive",
-    "ApplicationLayer",
-    "ETSI Metaverse Domain Model",
-    "Spatial Interaction",
     "ETSI Domain Reality Capture",
-    "CreativeMediaDomain",
-    "ETSI GR MEC 032",
+    "ETSI Metaverse Domain Model",
+    "InteractionDomain",
+    "Volumetric Capture",
     "ISO 23257",
+    "ApplicationLayer",
+    "Spatial Interaction",
+    "ETSI GR MEC 032",
+    "ETSI Domain Immersive",
     "Metaverse",
-    "Photorealistic Immersion",
-    "InteractionDomain"
+    "CreativeMediaDomain",
+    "Photorealistic Immersion"
   ],
   "ontology": {
     "term_id": "20360",

@@ -9,22 +9,22 @@
     "TELE-252-dao-governance-telecollaboration"
   ],
   "wiki_links": [
-    "TELE-002-telecollaboration",
-    "ConsensusProtocol",
-    "CryptographicKeys",
-    "TransparentDecisionMaking",
-    "TELE-252-dao-governance-telecollaboration",
     "DistributedSystems",
-    "CryptocurrencyPayments",
-    "SmartContracts",
     "TrustlessCoordination",
+    "CryptocurrencyPayments",
     "DecentralisedGovernance",
+    "CryptographicKeys",
     "TELE-251-smart-contract-coordination",
-    "Web3",
-    "DecentralisedAutonomousOrganisation",
+    "TELE-002-telecollaboration",
+    "BlockchainApplication",
     "TELE-253-cryptocurrency-remuneration",
     "BlockchainNetwork",
-    "BlockchainApplication"
+    "TransparentDecisionMaking",
+    "ConsensusProtocol",
+    "Web3",
+    "DecentralisedAutonomousOrganisation",
+    "SmartContracts",
+    "TELE-252-dao-governance-telecollaboration"
   ],
   "ontology": {
     "term_id": "TELE-250",

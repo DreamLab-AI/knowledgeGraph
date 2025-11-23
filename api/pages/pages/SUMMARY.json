@@ -5,14 +5,14 @@
   "backlinks": [],
   "wiki_links": [
     "KnowledgeManagementDomain",
-    "Information Governance",
-    "Overview Generation",
-    "Meta Documentation",
-    "Semantic Consistency",
-    "Ontology",
-    "Documentation",
     "Quick Reference",
-    "Knowledge Management"
+    "Overview Generation",
+    "Information Governance",
+    "Documentation",
+    "Ontology",
+    "Knowledge Management",
+    "Semantic Consistency",
+    "Meta Documentation"
   ],
   "ontology": {
     "term_id": "AI-0518",

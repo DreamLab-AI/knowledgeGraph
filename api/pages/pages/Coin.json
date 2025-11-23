@@ -4,9 +4,9 @@
   "content": "- ### OntologyBlock\n  id:: coin-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0098\n\t- preferred-term:: Coin\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Native blockchain asset within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:Coin\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[TokenEconomicsDomain]]",
   "backlinks": [],
   "wiki_links": [
-    "TokenEconomicsDomain",
     "ISO/IEC 23257:2021",
     "NIST NISTIR",
+    "TokenEconomicsDomain",
     "IEEE 2418.1"
   ],
   "ontology": {

@@ -6,21 +6,21 @@
     "XR Accessibility Guideline"
   ],
   "wiki_links": [
-    "Governance Framework",
-    "W3C XR Accessibility",
-    "Universal Design",
-    "TrustAndGovernanceDomain",
-    "Middleware Layer",
-    "Accessibility Requirement",
-    "User Interface Standard",
     "Testing Protocol",
-    "XR Accessibility Guideline",
-    "Compliance Metric",
-    "Equitable Access",
-    "Accessibility Guideline",
+    "TrustAndGovernanceDomain",
+    "Universal Design",
     "ISO 9241-112",
+    "Accessibility Guideline",
+    "XR Accessibility Guideline",
+    "User Interface Standard",
+    "Compliance Metric",
+    "Inclusive XR Experience",
+    "Middleware Layer",
+    "Equitable Access",
+    "Accessibility Requirement",
     "ETSI GR ARF 010",
-    "Inclusive XR Experience"
+    "Governance Framework",
+    "W3C XR Accessibility"
   ],
   "ontology": {
     "term_id": "20180",

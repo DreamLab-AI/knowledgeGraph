@@ -4,9 +4,9 @@
   "content": "- ### OntologyBlock\n  id:: chain-state-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0025\n\t- preferred-term:: Chain State\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Current blockchain database state within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- #### Relationships\n\t  id:: chain-state-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain]]",
   "backlinks": [],
   "wiki_links": [
+    "Blockchain",
     "ISO/IEC 23257:2021",
     "NIST NISTIR",
-    "Blockchain",
     "IEEE 2418.1"
   ],
   "ontology": {

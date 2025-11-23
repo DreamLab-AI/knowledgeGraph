@@ -7,14 +7,14 @@
     "SmartContract"
   ],
   "wiki_links": [
-    "ISO/IEC TR 24027",
-    "AIEthicsDomain",
     "AlgorithmicBias",
+    "AIEthicsDomain",
     "ConceptualLayer",
-    "IEEE P7003-2021",
     "NIST SP 1270",
+    "ISO/IEC TR 24027",
     "SmartContract",
-    "Machine Learning"
+    "Machine Learning",
+    "IEEE P7003-2021"
   ],
   "ontology": {
     "term_id": "AI-0379",

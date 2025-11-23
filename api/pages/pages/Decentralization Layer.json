@@ -6,20 +6,20 @@
     "Network Infrastructure"
   ],
   "wiki_links": [
+    "Distributed Storage",
     "InfrastructureDomain",
-    "P2P Network",
-    "Distributed Hash Table",
     "MSF Taxonomy 2025",
-    "Middleware Layer",
+    "Fault Tolerance",
+    "Data Sovereignty",
     "Network Infrastructure",
     "Censorship Resistance",
-    "Fault Tolerance",
-    "Distributed Storage",
-    "Blockchain",
+    "Middleware Layer",
+    "P2P Network",
+    "Trust Distribution",
     "Cryptographic Primitives",
-    "Data Sovereignty",
+    "Blockchain",
     "Consensus Protocol",
-    "Trust Distribution"
+    "Distributed Hash Table"
   ],
   "ontology": {
     "term_id": "20163",

@@ -4,16 +4,16 @@
   "content": "- ### OntologyBlock\n  id:: smart-contract-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0009\n\t- preferred-term:: Smart Contract\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Self-executing programmable code within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:SmartContract\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- implementedInLayer:: [[ConceptualLayer]]\n\t- #### Relationships\n\t  id:: smart-contract-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Entity]]\n\t\t- is-subclass-of:: [[DistributedDataStructure]]\n\t- #### CrossDomainBridges\n\t  id:: smart-contract-bridges\n\t  collapsed:: true\n\t\t- dt:uses:: [[Bias Detection Methods]]\n\t\t- bc:authenticates:: [[DigitalAvatar]]\n\t\t- bc:governs:: [[Marketplace]]",
   "backlinks": [],
   "wiki_links": [
-    "Marketplace",
-    "Bias Detection Methods",
     "NIST NISTIR",
+    "ISO/IEC 23257:2021",
+    "Bias Detection Methods",
+    "Marketplace",
     "BlockchainDomain",
     "DigitalAvatar",
-    "IEEE 2418.1",
     "ConceptualLayer",
-    "ISO/IEC 23257:2021",
     "DistributedDataStructure",
-    "Blockchain Entity"
+    "Blockchain Entity",
+    "IEEE 2418.1"
   ],
   "ontology": {
     "term_id": "BC-0009",

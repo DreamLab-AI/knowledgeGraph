@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: block-propagation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0062\n\t- preferred-term:: Block Propagation\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Network block distribution within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:BlockPropagation\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[ConsensusDomain]]\n\t- #### Relationships\n\t  id:: block-propagation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Network]]",
   "backlinks": [],
   "wiki_links": [
-    "ConsensusDomain",
+    "Blockchain Network",
     "NIST NISTIR",
-    "IEEE 2418.1",
+    "ConsensusDomain",
     "ISO/IEC 23257:2021",
-    "Blockchain Network"
+    "IEEE 2418.1"
   ],
   "ontology": {
     "term_id": "BC-0062",

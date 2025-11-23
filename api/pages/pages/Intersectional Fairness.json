@@ -6,11 +6,11 @@
     "Fairness Metrics"
   ],
   "wiki_links": [
-    "AIEthicsDomain",
-    "AIFairness",
-    "Buolamwini and Gebru (2018)",
-    "ConceptualLayer",
     "Crenshaw (1989)",
+    "AIFairness",
+    "AIEthicsDomain",
+    "ConceptualLayer",
+    "Buolamwini and Gebru (2018)",
     "IEEE P7003-2021"
   ],
   "ontology": {

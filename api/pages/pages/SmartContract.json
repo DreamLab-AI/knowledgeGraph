@@ -9,10 +9,10 @@
     "Value Transfer"
   ],
   "wiki_links": [
-    "Marketplace",
     "DigitalAvatar",
-    "BlockchainDomain",
-    "Bias Detection Methods"
+    "Marketplace",
+    "Bias Detection Methods",
+    "BlockchainDomain"
   ],
   "ontology": {
     "term_id": "BC-0101",

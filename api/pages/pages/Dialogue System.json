@@ -7,11 +7,11 @@
     "Chatbot"
   ],
   "wiki_links": [
-    "NLPTask",
-    "ACL Dialogue System Research",
     "AWS Conversational AI",
-    "Freshworks Conversational AI Guide 2025",
-    "Tidio Conversational AI Technical Documentation"
+    "Tidio Conversational AI Technical Documentation",
+    "ACL Dialogue System Research",
+    "NLPTask",
+    "Freshworks Conversational AI Guide 2025"
   ],
   "ontology": {
     "term_id": "AI-0372",

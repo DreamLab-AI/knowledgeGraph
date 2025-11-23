@@ -10,20 +10,20 @@
     "TELE-002-telecollaboration"
   ],
   "wiki_links": [
-    "TELE-020-virtual-reality-telepresence",
-    "VirtualTeamBuilding",
-    "TELE-002-telecollaboration",
+    "MediaTheory",
+    "TELE-001-telepresence",
+    "TELE-006-presence",
+    "NonverbalCommunication",
     "CommunicationTheory",
     "TrustBuilding",
-    "NonverbalCommunication",
-    "MediatedCommunication",
-    "TELE-115-gaze-tracking",
-    "MediaTheory",
-    "TELE-110-spatial-audio-processing",
-    "TELE-006-presence",
     "TELE-004-media-richness-theory",
-    "TELE-001-telepresence",
-    "TELE-100-ai-avatars"
+    "TELE-002-telecollaboration",
+    "TELE-110-spatial-audio-processing",
+    "TELE-100-ai-avatars",
+    "VirtualTeamBuilding",
+    "TELE-115-gaze-tracking",
+    "TELE-020-virtual-reality-telepresence",
+    "MediatedCommunication"
   ],
   "ontology": {
     "term_id": "TELE-003",

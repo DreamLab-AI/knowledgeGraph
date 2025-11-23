@@ -5,17 +5,17 @@
   "backlinks": [],
   "wiki_links": [
     "InfrastructureDomain",
-    "Telemedicine Platform",
-    "ETSI GS MEC",
-    "Medical Platform Categorization",
-    "VirtualSocietyDomain",
     "ETSI Domain Taxonomy",
-    "ApplicationLayer",
-    "Medical Simulation",
-    "Health Monitoring",
+    "ETSI GS MEC",
     "Healthcare Application Classification",
+    "Telemedicine Platform",
+    "Health Monitoring",
+    "Medical Simulation",
+    "Therapeutic VR",
+    "VirtualSocietyDomain",
+    "Medical Platform Categorization",
     "Metaverse",
-    "Therapeutic VR"
+    "ApplicationLayer"
   ],
   "ontology": {
     "term_id": "20337",

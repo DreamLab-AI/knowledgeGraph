@@ -6,9 +6,9 @@
     "robotics-core-concepts"
   ],
   "wiki_links": [
+    "ConsensusMechanism",
     "Machine Learning",
-    "RoboticsDomain",
-    "ConsensusMechanism"
+    "RoboticsDomain"
   ],
   "ontology": {
     "term_id": "RB-0107",

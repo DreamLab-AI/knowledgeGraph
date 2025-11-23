@@ -7,8 +7,8 @@
     "Apple Core ML",
     "EdgeAISystem",
     "PyTorch Mobile",
-    "ConceptualLayer",
     "AIEthicsDomain",
+    "ConceptualLayer",
     "TensorFlow Lite"
   ],
   "ontology": {

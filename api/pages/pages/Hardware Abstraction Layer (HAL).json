@@ -8,19 +8,19 @@
   ],
   "wiki_links": [
     "InfrastructureDomain",
-    "Unified Hardware Access",
-    "Device Portability",
     "MSF Taxonomy 2025",
     "Human Interface Layer (HIL)",
-    "Physical Layer",
-    "Device Drivers",
-    "Hardware Resources",
+    "Abstraction Modules",
+    "Infrastructure Layer",
     "Platform Independence",
     "API Interfaces",
     "Operating System",
-    "Abstraction Modules",
-    "Infrastructure Layer",
-    "Network Layer"
+    "Hardware Resources",
+    "Unified Hardware Access",
+    "Device Portability",
+    "Network Layer",
+    "Physical Layer",
+    "Device Drivers"
   ],
   "ontology": {
     "term_id": "20167",

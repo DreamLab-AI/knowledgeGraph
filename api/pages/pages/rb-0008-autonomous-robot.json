@@ -6,9 +6,9 @@
     "Computer Vision"
   ],
   "wiki_links": [
-    "RoboticsDomain",
     "PathPlanning",
-    "Machine Learning"
+    "Machine Learning",
+    "RoboticsDomain"
   ],
   "ontology": {
     "term_id": "RB-0008",

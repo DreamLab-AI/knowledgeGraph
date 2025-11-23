@@ -16,10 +16,10 @@
     "BC-0031-public-key-cryptography"
   ],
   "wiki_links": [
-    "NIST FIPS",
-    "ISO/IEC 18033",
+    "CryptographicDomain",
     "NIST SP",
-    "CryptographicDomain"
+    "NIST FIPS",
+    "ISO/IEC 18033"
   ],
   "ontology": {
     "term_id": "BC-0026",

@@ -7,12 +7,12 @@
     "Safety Laser Scanner"
   ],
   "wiki_links": [
-    "ISO/IEC TR 24027",
-    "AIEthicsDomain",
     "AIRisk",
+    "AIEthicsDomain",
     "ConceptualLayer",
-    "IEEE P7003-2021",
-    "NIST SP 1270"
+    "NIST SP 1270",
+    "ISO/IEC TR 24027",
+    "IEEE P7003-2021"
   ],
   "ontology": {
     "term_id": "AI-0378",

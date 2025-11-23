@@ -8,17 +8,17 @@
     "Recall"
   ],
   "wiki_links": [
-    "Model Performance",
-    "F1 Score",
     "Confusion Matrix",
+    "Model Performance",
     "Specificity",
     "Balanced Accuracy",
+    "Recall",
     "Precision",
-    "MetaverseDomain",
     "ArtificialIntelligence",
-    "ROC Curve",
+    "MetaverseDomain",
+    "F1 Score",
     "Sensitivity",
-    "Recall"
+    "ROC Curve"
   ],
   "ontology": {
     "term_id": "AI-0107",

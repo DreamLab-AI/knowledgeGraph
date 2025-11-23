@@ -6,11 +6,11 @@
     "Fairness Metrics"
   ],
   "wiki_links": [
-    "ISO/IEC TR 24027",
     "AIF360",
-    "Fairlearn",
-    "ConceptualLayer",
     "AIEthicsDomain",
+    "ConceptualLayer",
+    "Fairlearn",
+    "ISO/IEC TR 24027",
     "IEEE P7003-2021"
   ],
   "ontology": {

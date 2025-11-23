@@ -5,12 +5,12 @@
   "backlinks": [],
   "wiki_links": [
     "NIST NISTIR",
-    "SecurityLayer",
-    "IEEE 2418.1",
-    "CryptographicDomain",
     "NetworkComponent",
+    "CryptographicDomain",
+    "SecurityLayer",
     "ISO/IEC 23257:2021",
-    "Blockchain Entity"
+    "Blockchain Entity",
+    "IEEE 2418.1"
   ],
   "ontology": {
     "term_id": "BC-0083",

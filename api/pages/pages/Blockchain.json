@@ -98,9 +98,9 @@
   ],
   "wiki_links": [
     "DigitalAvatar",
-    "BlockchainDomain",
     "Digital Twin",
-    "ConsensusMechanism"
+    "ConsensusMechanism",
+    "BlockchainDomain"
   ],
   "ontology": {
     "term_id": "BC-0001",
