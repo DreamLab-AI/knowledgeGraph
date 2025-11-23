@@ -7,13 +7,13 @@
   ],
   "wiki_links": [
     "BC-0458-verifiable-credentials",
-    "BC-0432-consortium-blockchain",
-    "BC-0478-securities-regulation",
-    "Blockchain Application",
     "BC-0463-governance-token",
+    "BC-0456-self-sovereign-identity",
+    "BC-0478-securities-regulation",
     "BC-0488-licencing-requirements",
     "BlockchainDomain",
-    "BC-0456-self-sovereign-identity",
+    "Blockchain Application",
+    "BC-0432-consortium-blockchain",
     "BC-0494-property-registry"
   ],
   "ontology": {

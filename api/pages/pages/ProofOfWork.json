@@ -6,12 +6,12 @@
   "wiki_links": [
     "Computational puzzle",
     "ConsensusDomain",
-    "ISO/IEC 23257:2021",
+    "blockchain",
+    "distributed ledger",
+    "NIST NISTIR",
     "IEEE 2418.1",
     "consensus mechanism",
-    "NIST NISTIR",
-    "distributed ledger",
-    "blockchain"
+    "ISO/IEC 23257:2021"
   ],
   "ontology": {
     "term_id": "BC-0052",

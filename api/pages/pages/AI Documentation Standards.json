@@ -7,12 +7,12 @@
   ],
   "wiki_links": [
     "ISO/IEC 23053",
-    "AIGovernance",
-    "Datasheets (Gebru et al.)",
-    "EU AI Act",
     "Model Cards (Mitchell et al.)",
+    "ConceptualLayer",
     "AIEthicsDomain",
-    "ConceptualLayer"
+    "EU AI Act",
+    "Datasheets (Gebru et al.)",
+    "AIGovernance"
   ],
   "ontology": {
     "term_id": "AI-0392",

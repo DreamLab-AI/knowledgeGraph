@@ -14,10 +14,10 @@
   ],
   "wiki_links": [
     "NIST AI RMF",
+    "ArtificialIntelligence",
     "OECD AI Principles",
-    "EU AI Act",
     "ISO/IEC 42001:2023",
-    "ArtificialIntelligence"
+    "EU AI Act"
   ],
   "ontology": {
     "term_id": "AI-0091",

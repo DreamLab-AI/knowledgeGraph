@@ -6,15 +6,15 @@
     "BC-0440-blockchain-interoperability"
   ],
   "wiki_links": [
-    "Distributed Ledger",
-    "ITU-T Y.4460",
-    "ISO/IEC 23257:2021",
-    "BlockchainDomain",
-    "ISO/IEC TR",
+    "ISO/IEC 23455:2019",
     "Cryptographic System",
+    "ITU-T Y.4460",
+    "BlockchainDomain",
+    "Distributed Ledger",
+    "ISO/IEC TR",
     "ConceptualLayer",
     "Distributed Data Structure",
-    "ISO/IEC 23455:2019"
+    "ISO/IEC 23257:2021"
   ],
   "ontology": {
     "term_id": "BC-0001",

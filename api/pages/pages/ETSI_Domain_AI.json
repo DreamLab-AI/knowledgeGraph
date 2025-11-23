@@ -7,21 +7,21 @@
     "ETSI_Domain_AI___Data_Mgmt"
   ],
   "wiki_links": [
-    "ETSI Domain AI Human Interface",
-    "ETSI Domain AI Data Mgmt",
-    "ETSI Domain AI Creative Media",
-    "ApplicationLayer",
-    "ETSI_Domain_AI___Human_Interface",
-    "ETSI Domain Taxonomy",
-    "AI Service Classification",
+    "Intelligence Layer Categorization",
     "ETSI_Domain_AI___Governance",
+    "AI Service Classification",
+    "ETSI GS MEC",
+    "ETSI Domain AI Creative Media",
+    "ETSI Domain AI Governance",
     "ETSI_Domain_AI___Creative_Media",
+    "ETSI Domain Taxonomy",
+    "ETSI_Domain_AI___Human_Interface",
+    "ComputationAndIntelligenceDomain",
+    "ApplicationLayer",
     "ETSI_Domain_AI___Data_Mgmt",
     "ArtificialIntelligence",
-    "ETSI Domain AI Governance",
-    "Intelligence Layer Categorization",
-    "ETSI GS MEC",
-    "ComputationAndIntelligenceDomain"
+    "ETSI Domain AI Human Interface",
+    "ETSI Domain AI Data Mgmt"
   ],
   "ontology": {
     "term_id": "20330",

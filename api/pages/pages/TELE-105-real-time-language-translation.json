@@ -9,22 +9,22 @@
     "TELE-002-telecollaboration"
   ],
   "wiki_links": [
+    "TELE-020-virtual-reality-telepresence",
+    "LowLatencyNetworking",
+    "GlobalTeamwork",
     "TELE-107-ai-meeting-assistants",
+    "TELE-002-telecollaboration",
     "TELE-106-speech-to-speech-translation",
     "NeuralMachineTranslation",
-    "GlobalTeamwork",
-    "MulticulturalMeetings",
-    "TELE-002-telecollaboration",
-    "LanguageModels",
-    "AutomaticSpeechRecognition",
-    "TELE-020-virtual-reality-telepresence",
+    "TextToSpeech",
     "SpeechRecognition",
-    "NaturalLanguageProcessing",
     "ArtificialIntelligence",
     "LanguageTranslation",
-    "TextToSpeech",
-    "LowLatencyNetworking",
-    "CrossLingualCollaboration"
+    "LanguageModels",
+    "AutomaticSpeechRecognition",
+    "MulticulturalMeetings",
+    "CrossLingualCollaboration",
+    "NaturalLanguageProcessing"
   ],
   "ontology": {
     "term_id": "TELE-105",

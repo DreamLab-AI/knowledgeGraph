@@ -6,22 +6,22 @@
     "Accountability"
   ],
   "wiki_links": [
+    "Social contract and jobs",
+    "Risk Management",
+    "AI Governance",
+    "error correction",
     "ethical alignment",
     "Human Oversight",
-    "Risk Management",
-    "Social contract and jobs",
-    "Accountability",
-    "AI Governance",
-    "Disruption",
+    "AI Operator",
     "Convergence",
-    "Decision Support",
-    "Explainability",
-    "MetaverseDomain",
-    "error correction",
-    "Automation Bias",
+    "Disruption",
     "Human-on-the-Loop",
+    "MetaverseDomain",
+    "Accountability",
+    "Automation Bias",
     "Metaverse",
-    "AI Operator"
+    "Explainability",
+    "Decision Support"
   ],
   "ontology": {
     "term_id": "AI-0097",

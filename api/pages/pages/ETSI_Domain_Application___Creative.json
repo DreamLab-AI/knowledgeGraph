@@ -4,18 +4,18 @@
   "content": "- ### OntologyBlock\n  id:: etsi-domain-application-creative-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20335\n\t- preferred-term:: ETSI Domain Application + Creative\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Cross-domain marker for metaverse application components focused on creative industries including digital art, music production, animation, film, design tools, and creative collaboration platforms.\n\t- source:: [[ETSI GS MEC]]\n\t- maturity:: mature\n\t- owl:class:: mv:ETSIDomainApplicationCreative\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]], [[CreativeMediaDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-application-creative-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-part-of:: [[ETSI Domain Taxonomy]]\n\t\t- enables:: [[Creative Application Classification]]\n\t\t- enables:: [[Collaboration Tool Categorization]]\n\t\t- categorizes:: [[Digital Art Application]]\n\t\t- categorizes:: [[Animation Software]]\n\t\t- categorizes:: [[Music Production Tool]]\n\t\t- categorizes:: [[Design Platform]]\n\t\t- depends-on:: [[InfrastructureDomain]]\n\t\t- depends-on:: [[CreativeMediaDomain]]",
   "backlinks": [],
   "wiki_links": [
-    "Metaverse",
     "Animation Software",
-    "ApplicationLayer",
-    "Digital Art Application",
-    "ETSI Domain Taxonomy",
+    "InfrastructureDomain",
     "Creative Application Classification",
-    "Music Production Tool",
-    "Collaboration Tool Categorization",
-    "CreativeMediaDomain",
     "Design Platform",
     "ETSI GS MEC",
-    "InfrastructureDomain"
+    "ETSI Domain Taxonomy",
+    "ApplicationLayer",
+    "Digital Art Application",
+    "CreativeMediaDomain",
+    "Collaboration Tool Categorization",
+    "Metaverse",
+    "Music Production Tool"
   ],
   "ontology": {
     "term_id": "20335",

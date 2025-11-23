@@ -7,18 +7,18 @@
     "Recall"
   ],
   "wiki_links": [
-    "Specificity",
+    "Model Performance",
     "True Positive",
-    "Positive Predictive Value",
-    "Recall",
-    "Precision-Recall Curve",
     "F1 Score",
+    "Confusion Matrix",
+    "Positive Predictive Value",
+    "Specificity",
     "MetaverseDomain",
     "ArtificialIntelligence",
     "False Positive",
-    "Model Performance",
-    "Accuracy",
-    "Confusion Matrix"
+    "Precision-Recall Curve",
+    "Recall",
+    "Accuracy"
   ],
   "ontology": {
     "term_id": "AI-0108",

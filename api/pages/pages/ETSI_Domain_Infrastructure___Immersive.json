@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: etsi_domain_infrastructure___immersive-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0025\n\t- preferred-term:: ETSI_Domain_Infrastructure___Immersive\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: mv:ETSI_Domain_Infrastructure___Immersive\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: etsi_domain_infrastructure___immersive-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Extended Reality (XR)]]\n\t\t- belongsToDomain:: [[MetaverseDomain]]",
   "backlinks": [],
   "wiki_links": [
-    "Extended Reality (XR)",
-    "MetaverseDomain"
+    "MetaverseDomain",
+    "Extended Reality (XR)"
   ],
   "ontology": {
     "term_id": "MV-0025",

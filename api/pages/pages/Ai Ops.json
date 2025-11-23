@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: aiops-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0877\n\t- preferred-term:: AIOps\n\t- source-domain:: ai\n\t- owl:class:: ai:AiOps\n\t- status:: complete\n\t- public-access:: true\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: aiops-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AILifecycle]]",
   "backlinks": [],
   "wiki_links": [
-    "AILifecycle",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "AILifecycle"
   ],
   "ontology": {
     "term_id": "AI-0877",

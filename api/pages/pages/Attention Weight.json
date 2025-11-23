@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n    - ontology:: true\n    - term-id:: AI-0806\n    - preferred-term:: Attention Weight\n    - source-domain:: ai\n    - owl:class:: ai:AttentionWeight\n    - status:: complete\n    - public-access:: true\n    - version:: 1.0.0\n\n\n### Relationships\n- is-subclass-of:: [[AttentionMechanism]]\n\n## Attention Weight\n\nAttention Weight refers to weights computed by attention mechanisms.\n\n- **Last Updated**: 2025-11-16\n- **Review Status**: Automated remediation with 2025 context\n- **Verification**: Academic sources verified\n- **Regional Context**: UK/North England where applicable\n\n## Technical Details\n\n- **Id**: attentionweight-ontology\n- **Collapsed**: true\n- **Domain Prefix**: AI\n- **Sequence Number**: 0806\n- **Filename History**: [\"AI-0806-attentionweight.md\"]\n- **Public Access**: true\n- **Source Domain**: ai\n- **Status**: complete\n- **Last Updated**: 2025-11-13\n- **Maturity**: established\n- **Source**: Chimera Prime Research\n- **Authority Score**: 0.95\n- **Owl:Class**: ai:AttentionWeight\n- **Belongstodomain**: [[Artificial Intelligence]]",
   "backlinks": [],
   "wiki_links": [
-    "AttentionMechanism",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "AttentionMechanism"
   ],
   "ontology": {
     "term_id": "AI-0806",

@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: sybil-attack-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0078\n\t- preferred-term:: Sybil Attack\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Multiple identity attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- implementedInLayer:: [[SecurityLayer]]\n\t- #### Relationships\n\t  id:: sybil-attack-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Entity]]\n\t\t- is-subclass-of:: [[NetworkComponent]]",
   "backlinks": [],
   "wiki_links": [
-    "Blockchain Entity",
+    "NIST NISTIR",
+    "SecurityLayer",
+    "IEEE 2418.1",
     "NetworkComponent",
     "ISO/IEC 23257:2021",
-    "IEEE 2418.1",
-    "SecurityLayer",
-    "NIST NISTIR"
+    "Blockchain Entity"
   ],
   "ontology": {
     "term_id": "BC-0078",

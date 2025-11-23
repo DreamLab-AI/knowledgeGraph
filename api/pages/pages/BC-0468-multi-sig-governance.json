@@ -7,21 +7,21 @@
     "BC-0466-quadratic-voting"
   ],
   "wiki_links": [
-    "Gnosis Safe",
-    "BC-0466-quadratic-voting",
-    "Decentralized Autonomous Organization",
-    "BC-0470-dao-legal-structures",
-    "BC-0469-snapshot-voting",
     "Wormhole",
-    "BC-0467-conviction-voting",
-    "Threshold Cryptography",
-    "Byzantine Fault Tolerance",
-    "BlockchainDomain",
-    "Axelar",
-    "LayerZero",
+    "Gnosis Safe",
     "BC-0462-on-chain-voting",
+    "Threshold Cryptography",
+    "BC-0466-quadratic-voting",
+    "Axelar",
+    "BlockchainDomain",
+    "BC-0469-snapshot-voting",
+    "LayerZero",
+    "Decentralized Autonomous Organization",
     "Hardware Security",
-    "BC-0461-decentralized-autonomous-organization"
+    "BC-0461-decentralized-autonomous-organization",
+    "BC-0470-dao-legal-structures",
+    "Byzantine Fault Tolerance",
+    "BC-0467-conviction-voting"
   ],
   "ontology": {
     "term_id": "BC-0468",

@@ -5,17 +5,17 @@
   "backlinks": [],
   "wiki_links": [
     "ISO/IEC 10118",
-    "Blockchain Entity",
+    "CryptographicPrimitive",
     "BlockchainEntity",
-    "ISO/IEC 23257:2021",
+    "NIST NISTIR",
     "IEEE 2418.1",
     "SecurityLayer",
     "CryptographicDomain",
-    "Hash Function",
-    "NIST FIPS 180-4",
-    "CryptographicPrimitive",
     "RFC 6194",
-    "NIST NISTIR"
+    "Hash Function",
+    "ISO/IEC 23257:2021",
+    "Blockchain Entity",
+    "NIST FIPS 180-4"
   ],
   "ontology": {
     "term_id": "BC-0046",

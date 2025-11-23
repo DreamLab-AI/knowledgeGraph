@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: etsi_domain_infrastructure_data-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0023\n\t- preferred-term:: ETSI_Domain_Infrastructure_Data\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: A component of the metaverse ecosystem.\n\t- maturity:: draft\n\t- owl:class:: mv:ETSI_Domain_Infrastructure_Data\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- #### Relationships\n\t  id:: etsi_domain_infrastructure_data-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse Infrastructure]]\n\t\t- belongsToDomain:: [[MetaverseDomain]]",
   "backlinks": [],
   "wiki_links": [
-    "Metaverse Infrastructure",
-    "MetaverseDomain"
+    "MetaverseDomain",
+    "Metaverse Infrastructure"
   ],
   "ontology": {
     "term_id": "MV-0023",

@@ -7,10 +7,10 @@
   ],
   "wiki_links": [
     "Byzantine Fault Tolerance Papers",
-    "Metaverse Infrastructure",
-    "Distributed Systems: Principles and Paradigms",
     "BlockchainDomain",
-    "CAP Theorem"
+    "CAP Theorem",
+    "Distributed Systems: Principles and Paradigms",
+    "Metaverse Infrastructure"
   ],
   "ontology": {
     "term_id": "PC-0002",

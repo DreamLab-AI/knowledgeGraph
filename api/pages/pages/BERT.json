@@ -9,8 +9,8 @@
     "RoBERTa"
   ],
   "wiki_links": [
-    "PreTrainedLanguageModel",
-    "MetaverseDomain"
+    "MetaverseDomain",
+    "PreTrainedLanguageModel"
   ],
   "ontology": {
     "term_id": "AI-0211",

@@ -4,18 +4,18 @@
   "content": "- ### OntologyBlock\n  id:: etsi-domain-application-industry-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20338\n\t- preferred-term:: ETSI Domain Application + Industry\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Cross-domain marker for metaverse application components focused on industrial applications including manufacturing simulations, industrial digital twins, predictive maintenance, remote operations, and industrial training systems.\n\t- source:: [[ETSI GS MEC]]\n\t- maturity:: mature\n\t- owl:class:: mv:ETSIDomainApplicationIndustry\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]], [[VirtualEconomyDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-application-industry-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[ArtificialIntelligence]]\n\t\t- is-part-of:: [[ETSI Domain Taxonomy]]\n\t\t- enables:: [[Industrial Application Classification]]\n\t\t- enables:: [[Manufacturing Platform Categorization]]\n\t\t- categorizes:: [[Manufacturing Simulation]]\n\t\t- categorizes:: [[Predictive Maintenance]]\n\t\t- categorizes:: [[Remote Operations]]\n\t\t- categorizes:: [[Industrial Digital Twin]]\n\t\t- depends-on:: [[VirtualEconomyDomain]]\n\t\t- depends-on:: [[InfrastructureDomain]]",
   "backlinks": [],
   "wiki_links": [
-    "Industrial Application Classification",
-    "Manufacturing Platform Categorization",
-    "Industrial Digital Twin",
-    "ApplicationLayer",
-    "Manufacturing Simulation",
-    "ETSI Domain Taxonomy",
-    "Remote Operations",
-    "VirtualEconomyDomain",
+    "InfrastructureDomain",
     "Predictive Maintenance",
-    "ArtificialIntelligence",
+    "Remote Operations",
     "ETSI GS MEC",
-    "InfrastructureDomain"
+    "Manufacturing Platform Categorization",
+    "ETSI Domain Taxonomy",
+    "ApplicationLayer",
+    "ArtificialIntelligence",
+    "Industrial Digital Twin",
+    "VirtualEconomyDomain",
+    "Manufacturing Simulation",
+    "Industrial Application Classification"
   ],
   "ontology": {
     "term_id": "20338",

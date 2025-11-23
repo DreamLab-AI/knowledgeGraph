@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: manipulator-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0003\n\t- preferred-term:: Manipulator\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A manipulator is a robot consisting of a series of segments, typically moving in a serial or parallel kinematic chain, with an end-effector for performing tasks.\n\t- source:: [[ISO 8373:2021]]\n\t- maturity:: mature\n\t- owl:class:: rb:Manipulator\n\t- owl:physicality:: PhysicalEntity\n\t- owl:role:: Object\n\t- belongsToDomain:: [[Robotics]]",
   "backlinks": [],
   "wiki_links": [
-    "ISO 8373:2021",
-    "Robotics"
+    "Robotics",
+    "ISO 8373:2021"
   ],
   "ontology": {
     "term_id": "RB-0003",

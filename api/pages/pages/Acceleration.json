@@ -4,9 +4,9 @@
   "content": "- ### OntologyBlock\n  id:: rb-0045-acceleration-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0045\n\t- preferred-term:: Acceleration\n\t- status:: active\n\t- public-access:: true\n\t- definition:: **Acceleration** - Rate of change of [[velocity]] over time, measured in meters per second squared (m/s²)\n\t- maturity:: mature\n\t- owl:class:: mv:rb0045acceleration\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[RoboticsDomain]]\n\t- #### Relationships\n\t  id:: rb-0045-acceleration-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[RoboticsTechnology]]\n\t\t- belongsToDomain:: [[RoboticsDomain]]\n\t\t- definition:: [[velocity]]",
   "backlinks": [],
   "wiki_links": [
+    "RoboticsTechnology",
     "RoboticsDomain",
-    "velocity",
-    "RoboticsTechnology"
+    "velocity"
   ],
   "ontology": {
     "term_id": "RB-0045",

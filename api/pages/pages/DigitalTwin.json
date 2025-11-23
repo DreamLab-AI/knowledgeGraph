@@ -8,19 +8,19 @@
   ],
   "wiki_links": [
     "ISO 23247",
-    "Remote Monitoring",
-    "Metaverse Infrastructure",
-    "IoT Sensors",
+    "InfrastructureDomain",
     "PlatformLayer",
-    "Virtual Model",
-    "Physical Object",
-    "Data Model",
-    "ETSI",
     "Synchronization Module",
     "Predictive Maintenance",
+    "Data Model",
+    "Remote Monitoring",
+    "ETSI",
+    "Physical Object",
     "Real-time Data Stream",
     "Data Pipeline",
-    "InfrastructureDomain"
+    "IoT Sensors",
+    "Virtual Model",
+    "Metaverse Infrastructure"
   ],
   "ontology": {
     "term_id": "30445",

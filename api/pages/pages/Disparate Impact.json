@@ -5,11 +5,11 @@
   "backlinks": [],
   "wiki_links": [
     "US EEOC Uniform Guidelines",
-    "UK Equality Act 2010",
-    "AIFairness",
-    "AIEthicsDomain",
     "EU Anti-Discrimination Directives",
-    "ConceptualLayer"
+    "AIFairness",
+    "UK Equality Act 2010",
+    "ConceptualLayer",
+    "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "AI-0381",

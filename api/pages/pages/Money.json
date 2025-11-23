@@ -8,11 +8,11 @@
     "Bitcoin"
   ],
   "wiki_links": [
+    "BIS",
     "IMF",
     "ISO 4217",
-    "EconomicSystemDomain",
-    "BIS",
-    "Bank of England"
+    "Bank of England",
+    "EconomicSystemDomain"
   ],
   "ontology": {
     "term_id": "DT-0002",

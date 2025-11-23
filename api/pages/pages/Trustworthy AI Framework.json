@@ -5,11 +5,11 @@
   "backlinks": [],
   "wiki_links": [
     "EU HLEG AI",
-    "AIGovernance",
-    "EU AI Act",
     "ISO/IEC 42001:2023",
+    "ConceptualLayer",
     "AIEthicsDomain",
-    "ConceptualLayer"
+    "EU AI Act",
+    "AIGovernance"
   ],
   "ontology": {
     "term_id": "AI-0407",

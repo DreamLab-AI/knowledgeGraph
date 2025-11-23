@@ -7,10 +7,10 @@
   ],
   "wiki_links": [
     "Computer Vision",
-    "Convolutional Neural Network",
     "Image Generation",
     "MetaverseDomain",
-    "ArtificialIntelligence"
+    "ArtificialIntelligence",
+    "Convolutional Neural Network"
   ],
   "ontology": {
     "term_id": "AI-0365",

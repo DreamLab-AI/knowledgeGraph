@@ -9,12 +9,12 @@
     "SHA-256"
   ],
   "wiki_links": [
+    "TensorFlow Federated",
+    "MachineLearning",
     "Google Federated Learning",
     "McMahan et al. (2017)",
-    "TensorFlow Federated",
-    "AIEthicsDomain",
-    "MachineLearning",
-    "ConceptualLayer"
+    "ConceptualLayer",
+    "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "AI-0417",

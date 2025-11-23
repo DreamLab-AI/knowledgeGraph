@@ -8,11 +8,11 @@
     "BC-0434-blockchain-as-a-service"
   ],
   "wiki_links": [
-    "Intel SGX",
     "AMD SEV",
-    "AIEthicsDomain",
+    "Intel SGX",
     "Confidential Computing Consortium",
-    "ConceptualLayer"
+    "ConceptualLayer",
+    "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "AI-0424",

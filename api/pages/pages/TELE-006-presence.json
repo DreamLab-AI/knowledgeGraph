@@ -7,21 +7,21 @@
     "TELE-001-telepresence"
   ],
   "wiki_links": [
+    "TELE-020-virtual-reality-telepresence",
+    "TELE-100-ai-avatars",
+    "Flow",
+    "SensoryStimulation",
+    "AttentionAllocation",
+    "Embodiment",
+    "PsychologicalPhenomenon",
+    "SuspensionOfDisbelief",
     "SpatialPresence",
     "SelfPresence",
-    "Immersion",
-    "Flow",
-    "SuspensionOfDisbelief",
-    "TELE-003-social-presence-theory",
     "SocialPresence",
-    "Embodiment",
-    "TELE-100-ai-avatars",
-    "AttentionAllocation",
-    "PsychologicalPhenomenon",
-    "SensoryStimulation",
     "PerceptualExperience",
+    "Immersion",
     "TELE-001-telepresence",
-    "TELE-020-virtual-reality-telepresence"
+    "TELE-003-social-presence-theory"
   ],
   "ontology": {
     "term_id": "TELE-006",

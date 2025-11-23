@@ -6,8 +6,8 @@
     "Recurrent Neural Network"
   ],
   "wiki_links": [
-    "Bengio et al. 2009 Curriculum Learning",
     "ModelTraining",
+    "Bengio et al. 2009 Curriculum Learning",
     "IEEE TPAMI 2021 Curriculum Learning Survey",
     "Wang et al. 2022 Educational Applications",
     "Zhang et al. 2021 Adaptive Curriculum"

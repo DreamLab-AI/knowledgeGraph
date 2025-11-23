@@ -4,18 +4,18 @@
   "content": "- ### OntologyBlock\n  id:: etsi-domain-application-education-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: 20336\n\t- preferred-term:: ETSI Domain Application + Education\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Cross-domain marker for metaverse application components focused on education and training including virtual classrooms, immersive learning environments, educational simulations, and collaborative learning platforms.\n\t- source:: [[ETSI GS MEC]]\n\t- maturity:: mature\n\t- owl:class:: mv:ETSIDomainApplicationEducation\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: mv:VirtualObject\n\t- owl:functional-syntax:: true\n\t- belongsToDomain:: [[InfrastructureDomain]], [[VirtualSocietyDomain]]\n\t- implementedInLayer:: [[ApplicationLayer]]\n\t- #### Relationships\n\t  id:: etsi-domain-application-education-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- is-part-of:: [[ETSI Domain Taxonomy]]\n\t\t- enables:: [[Education Application Classification]]\n\t\t- enables:: [[Learning Platform Categorization]]\n\t\t- categorizes:: [[Learning Management System]]\n\t\t- categorizes:: [[Virtual Classroom]]\n\t\t- categorizes:: [[Educational Simulation]]\n\t\t- categorizes:: [[Training Platform]]\n\t\t- depends-on:: [[VirtualSocietyDomain]]\n\t\t- depends-on:: [[InfrastructureDomain]]",
   "backlinks": [],
   "wiki_links": [
-    "Training Platform",
-    "VirtualSocietyDomain",
-    "ApplicationLayer",
-    "ETSI Domain Taxonomy",
-    "Learning Platform Categorization",
-    "Education Application Classification",
-    "ETSI GS MEC",
-    "Virtual Classroom",
-    "Metaverse",
     "InfrastructureDomain",
+    "Learning Platform Categorization",
+    "ETSI GS MEC",
+    "VirtualSocietyDomain",
+    "ETSI Domain Taxonomy",
+    "Virtual Classroom",
+    "ApplicationLayer",
+    "Training Platform",
     "Learning Management System",
-    "Educational Simulation"
+    "Education Application Classification",
+    "Educational Simulation",
+    "Metaverse"
   ],
   "ontology": {
     "term_id": "20336",

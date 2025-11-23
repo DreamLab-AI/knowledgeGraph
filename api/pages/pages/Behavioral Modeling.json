@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: behavioralmodeling-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0847\n\t- preferred-term:: Behavioral Modeling\n\t- status:: complete\n\t- public-access:: true\n\t- source:: Chimera Prime Research\n\t- maturity:: established\n\t- owl:class:: ai:BehavioralModeling\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: behavioralmodeling-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[MachineLearning]]",
   "backlinks": [],
   "wiki_links": [
-    "MachineLearning",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "MachineLearning"
   ],
   "ontology": {
     "term_id": "AI-0847",

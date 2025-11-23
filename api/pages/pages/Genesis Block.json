@@ -4,18 +4,18 @@
   "content": "- ### OntologyBlock\n  id:: genesis-block-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0005\n\t- preferred-term:: Genesis Block\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: First block in a blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:GenesisBlock\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- #### Relationships\n\t  id:: genesis-block-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Block]]\n\t\t- bridges-to:: [[Distributeddatastructure]]\n\t\t- bridges-to:: [[BlockchainEntity]]\n\n## Genesis Block\n\nGenesis Block refers to the foundational first block in a blockchain, serving as the immutable starting point for all subsequent blocks in distributed ledger systems. The genesis block establishes the initial state of the blockchain, containing hardcoded parameters that define network consensus rules, initial token distribution, and cryptographic anchors. Unlike subsequent blocks, the genesis block has no previous block reference, making it the sole block with a null or zero previous hash value.\n\nThe genesis block plays a critical role in blockchain architecture by preventing historical tampering and establishing network identity. In Bitcoin, the genesis block (Block 0) was mined on January 3, 2009, containing the famous headline \"The Times 03/Jan/2009 Chancellor on brink of second bailout for banks,\" demonstrating proof of creation date. Modern blockchain implementations embed genesis blocks with specific consensus parameters, validator sets for proof-of-stake networks, and initial state configurations for smart contract platforms like Ethereum.\n\nCurrent adoption spans public blockchains (Bitcoin, Ethereum, Cardano), enterprise implementations (Hyperledger Fabric with configurable genesis blocks), and permissioned networks where genesis blocks define governance structures. The genesis block remains immutable across network upgrades, serving as the ultimate source of truth for chain validity. Technical specifications typically include timestamp, difficulty target, nonce value, Merkle root of genesis transactions, and chain-specific metadata. Standards from ISO/TC 307 and IEEE P2418.1 reference genesis block structure in blockchain interoperability frameworks, while enterprise platforms use genesis blocks to encode business network parameters and participant credentials.\n\n## Technical Details\n\n- **Id**: genesis-block-standards\n- **Collapsed**: true\n- **Domain Prefix**: BC\n- **Sequence Number**: 0005\n- **Filename History**: [\"BC-0005-genesis-block.md\"]\n- **Public Access**: true\n- **Source Domain**: blockchain\n- **Status**: complete\n- **Last Updated**: 2025-10-28\n- **Maturity**: mature\n- **Source**: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR 8202]], [[Bitcoin Whitepaper]]\n- **Authority Score**: 0.98\n- **Owl:Class**: bc:GenesisBlock\n- **Owl:Physicality**: VirtualEntity\n- **Owl:Role**: Object\n- **Owl:Inferred Class**: bc:VirtualObject\n- **Belongstodomain**: [[BlockchainDomain]]\n- **Implementedinlayer**: [[ConceptualLayer]]\n- **Is Subclass Of**: [[Blockchain Entity]], [[DistributedDataStructure]]",
   "backlinks": [],
   "wiki_links": [
-    "Blockchain Entity",
-    "DistributedDataStructure",
-    "Bitcoin Whitepaper",
-    "BlockchainEntity",
     "NIST NISTIR 8202",
-    "ISO/IEC 23257:2021",
-    "IEEE 2418.1",
     "Block",
+    "BlockchainEntity",
+    "NIST NISTIR",
     "BlockchainDomain",
+    "IEEE 2418.1",
     "ConceptualLayer",
-    "Distributeddatastructure",
-    "NIST NISTIR"
+    "Bitcoin Whitepaper",
+    "ISO/IEC 23257:2021",
+    "DistributedDataStructure",
+    "Blockchain Entity",
+    "Distributeddatastructure"
   ],
   "ontology": {
     "term_id": "BC-0005",

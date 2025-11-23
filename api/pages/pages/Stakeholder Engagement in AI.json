@@ -5,11 +5,11 @@
   "backlinks": [],
   "wiki_links": [
     "OECD AI Principles",
-    "AIGovernance",
-    "EU AI Act",
     "ISO 26000",
+    "ConceptualLayer",
     "AIEthicsDomain",
-    "ConceptualLayer"
+    "EU AI Act",
+    "AIGovernance"
   ],
   "ontology": {
     "term_id": "AI-0391",

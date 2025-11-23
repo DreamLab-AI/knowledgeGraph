@@ -6,12 +6,12 @@
     "Fairness Metrics"
   ],
   "wiki_links": [
-    "IEEE P7003-2021",
-    "AIFairness",
     "AIEthicsDomain",
-    "Crenshaw (1989)",
+    "AIFairness",
+    "Buolamwini and Gebru (2018)",
     "ConceptualLayer",
-    "Buolamwini and Gebru (2018)"
+    "Crenshaw (1989)",
+    "IEEE P7003-2021"
   ],
   "ontology": {
     "term_id": "AI-0384",

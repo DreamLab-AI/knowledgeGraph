@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: mining-reward-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0069\n\t- preferred-term:: Mining Reward\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: Block creation compensation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\t- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n\t- maturity:: mature\n\t- owl:class:: bc:MiningReward\n\t- owl:physicality:: VirtualEntity\n\t- owl:role:: Object\n\t- owl:inferred-class:: bc:VirtualObject\n\t- belongsToDomain:: [[ConsensusDomain]]\n\t- #### Relationships\n\t  id:: mining-reward-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Mining]]\n\t\t- bridges-to:: [[BlockchainEntity]]",
   "backlinks": [],
   "wiki_links": [
-    "Mining",
-    "BlockchainEntity",
     "ConsensusDomain",
-    "ISO/IEC 23257:2021",
+    "Mining",
+    "NIST NISTIR",
+    "BlockchainEntity",
     "IEEE 2418.1",
-    "NIST NISTIR"
+    "ISO/IEC 23257:2021"
   ],
   "ontology": {
     "term_id": "BC-0069",

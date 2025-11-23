@@ -8,10 +8,10 @@
   ],
   "wiki_links": [
     "Shamir Secret Sharing",
-    "Yao's Garbled Circuits",
     "MP-SPDZ",
+    "ConceptualLayer",
     "AIEthicsDomain",
-    "ConceptualLayer"
+    "Yao's Garbled Circuits"
   ],
   "ontology": {
     "term_id": "AI-0419",
