@@ -1,7 +1,7 @@
 {
   "id": "RB-1016-path-planning",
   "title": "Path Planning",
-  "content": "- ### OntologyBlock\n  id:: path-planning-ontology\n  collapsed:: true\n  - ontology:: true\n  - term-id:: RB-1016\n  - preferred-term:: Path Planning\n  - alternate-terms:: Motion Planning, Route Planning\n  - source-domain:: rb\n  - status:: complete\n  - public-access:: true\n  - version:: 1.0.0\n  - last-updated:: 2025-11-24\n\n- **Definition**\n  - definition:: The computational process of finding a feasible path for a robot to move from a start configuration to a goal configuration while avoiding obstacles and satisfying constraints. It determines a sequence of configurations connecting start to goal in the robot's configuration space.\n  - maturity:: mature\n  - source:: [[Motion Planning]], [[Robotics]]\n  - authority-score:: 0.97\n\n- **Semantic Classification**\n  - owl:class:: rb:PathPlanning\n  - owl:physicality:: Abstract\n  - owl:role:: Method\n  - belongsToDomain:: [[Robotics]], [[Motion Planning]], [[Autonomous Systems]]\n\n- #### OWL Restrictions\n  - is-subclass-of:: [[Motion Planning]]\n  - requires:: [[Start Configuration]]\n  - requires:: [[Goal Configuration]]\n  - requires:: [[Environment Model]]\n  - produces:: [[Path]]\n  - avoids:: [[Obstacles]]\n  - characterized-by:: [[Feasibility]], [[Optimality]]\n\n- #### Relationships\n  id:: rb-1016-relationships\n  - is-subclass-of:: [[Motion Planning]]\n  - uses:: [[RB-1017-rrt-algorithm]], [[RB-1018-dijkstra-algorithm]]\n  - enables:: [[RB-1007-trajectory-generation]], [[Navigation]]\n  - requires:: [[RB-1013-localization]], [[Mapping]]\n  - related-to:: [[RB-1019-obstacle-avoidance]], [[RB-1003-optimal-control]]\n  - applied-in:: [[Autonomous Vehicles]], [[Mobile Robots]], [[Manipulators]]\n\n- **Problem Formulation**\n  - **Input**:\n    - Robot model (geometry, kinematics)\n    - Start configuration q_start\n    - Goal configuration q_goal\n    - Environment model (obstacles)\n    - Constraints (kinematic, dynamic)\n  - **Output**:\n    - Path: sequence of configurations [q_start, ..., q_goal]\n    - Or \"No solution\" if no feasible path exists\n\n- **Configuration Space (C-space)**\n  - Space of all possible robot configurations\n  - Obstacles mapped to C-space obstacles\n  - Free space: collision-free configurations\n  - Path planning searches in C-space\n  - Dimensionality = robot degrees of freedom\n\n- **Planning Approaches**\n  - **Complete Planners**: Find solution if exists, or report failure\n  - **Resolution Complete**: Find solution at given resolution\n  - **Probabilistically Complete**: Probability → 1 as time → ∞\n\n- **Classical Planning Methods**\n  - **Graph Search Algorithms**:\n    - [[RB-1018-dijkstra-algorithm]]\n    - A* (A-star)\n    - D* (Dynamic A*)\n    - Theta*\n  - **Roadmap Methods**:\n    - Visibility Graph\n    - Voronoi Diagram\n    - Probabilistic Roadmap (PRM)\n  - **Cell Decomposition**:\n    - Exact decomposition\n    - Approximate decomposition\n    - Potential Fields\n\n- **Sampling-Based Methods**\n  - [[RB-1017-rrt-algorithm]] (Rapidly-exploring Random Tree)\n  - RRT* (optimal variant)\n  - RRT-Connect (bidirectional)\n  - PRM (Probabilistic Roadmap)\n  - EST (Expansive Space Trees)\n\n- **Optimization Criteria**\n  - Shortest path (distance)\n  - Fastest path (time)\n  - Smoothest path (curvature)\n  - Energy-efficient path\n  - Safest path (clearance from obstacles)\n  - Multi-objective optimization\n\n- **Types of Path Planning**\n  - **Global Planning**:\n    - Complete environment known\n    - Offline computation possible\n    - Optimal or near-optimal solutions\n  - **Local Planning**:\n    - Partial environment knowledge\n    - Real-time reactive planning\n    - Fast computation required\n\n- **Constraints**\n  - **Kinematic Constraints**:\n    - Non-holonomic (e.g., car-like robots)\n    - Joint limits\n    - Workspace boundaries\n  - **Dynamic Constraints**:\n    - Velocity limits\n    - Acceleration limits\n    - Momentum considerations\n  - **Environmental Constraints**:\n    - Static obstacles\n    - Dynamic obstacles\n    - Narrow passages\n\n- **Special Cases**\n  - **Multi-Robot Path Planning**:\n    - Coordination required\n    - Collision avoidance between robots\n    - Centralized vs decentralized\n  - **Dynamic Environments**:\n    - Moving obstacles\n    - Replanning required\n    - Prediction of obstacle motion\n  - **High-Dimensional Spaces**:\n    - Manipulators (7+ DOF)\n    - Humanoid robots\n    - Curse of dimensionality\n\n- **Path Smoothing**\n  - Post-processing to improve path quality\n  - Remove unnecessary waypoints\n  - Spline fitting\n  - Shortcutting techniques\n\n- **Applications**\n  - Autonomous vehicles (self-driving cars)\n  - Mobile robot navigation\n  - Manipulator motion planning\n  - Drone flight planning\n  - Warehouse automation (AGVs)\n  - Surgical robots\n  - Video game character movement\n\n- **Challenges**\n  - Computational complexity (NP-hard in general)\n  - High-dimensional configuration spaces\n  - Dynamic and uncertain environments\n  - Real-time requirements\n  - Narrow passages\n  - Non-holonomic constraints\n\n- **Metrics for Evaluation**\n  - Path length/distance\n  - Computation time\n  - Path smoothness\n  - Clearance from obstacles\n  - Success rate\n  - Memory usage\n\n- **Related Topics**\n  - [[RB-1019-obstacle-avoidance]] (reactive)\n  - [[RB-1007-trajectory-generation]] (time parameterization)\n  - SLAM (building maps while planning)\n  - Coverage path planning (area coverage)\n\n- **Quality Metrics**\n  - authority-score:: 0.97\n  - completeness:: 0.94\n  - accuracy:: 0.96",
+  "content": "- ### OntologyBlock\n  id:: path-planning-ontology\n  collapsed:: true\n  - ontology:: true\n  - term-id:: RB-1016\n  - preferred-term:: Path Planning\n  - alternate-terms:: Motion Planning, Route Planning\n  - source-domain:: rb\n  - status:: complete\n  - public-access:: true\n  - version:: 1.0.0\n  - last-updated:: 2025-11-24\n\n- **Definition**\n  - definition:: The computational process of finding a feasible path for a robot to move from a start configuration to a goal configuration while avoiding obstacles and satisfying constraints. It determines a sequence of configurations connecting start to goal in the robot's configuration space.\n  - maturity:: mature\n  - source:: [[Motion Planning]], [[Robotics]]\n  - authority-score:: 0.97\n\n- **Semantic Classification**\n  - owl:class:: rb:PathPlanning\n  - owl:physicality:: Abstract\n  - owl:role:: Method\n  - belongsToDomain:: [[Robotics]], [[Motion Planning]], [[Autonomous Systems]]\n\n- #### OWL Restrictions\n  - is-subclass-of:: [[Motion Planning]]\n  - requires:: [[Start Configuration]]\n  - requires:: [[Goal Configuration]]\n  - requires:: [[Environment Model]]\n  - produces:: [[Path]]\n  - avoids:: [[Obstacles]]\n  - characterized-by:: [[Feasibility]], [[Optimality]]\n\n- #### Relationships\n  id:: rb-1016-relationships\n  - is-subclass-of:: [[Motion Planning]]\n  - uses:: [[RB-1017-rrt-algorithm]], [[RB-1018-dijkstra-algorithm]]\n  - enables:: [[RB-1007-trajectory-generation]], [[Navigation]]\n  - requires:: [[RB-1013-localization]], [[Mapping]]\n  - skos:related:: [[RB-1019-obstacle-avoidance]], [[RB-1003-optimal-control]]\n  - applied-in:: [[Autonomous Vehicles]], [[Mobile Robots]], [[Manipulators]]\n\n- **Problem Formulation**\n  - **Input**:\n    - Robot model (geometry, kinematics)\n    - Start configuration q_start\n    - Goal configuration q_goal\n    - Environment model (obstacles)\n    - Constraints (kinematic, dynamic)\n  - **Output**:\n    - Path: sequence of configurations [q_start, ..., q_goal]\n    - Or \"No solution\" if no feasible path exists\n\n- **Configuration Space (C-space)**\n  - Space of all possible robot configurations\n  - Obstacles mapped to C-space obstacles\n  - Free space: collision-free configurations\n  - Path planning searches in C-space\n  - Dimensionality = robot degrees of freedom\n\n- **Planning Approaches**\n  - **Complete Planners**: Find solution if exists, or report failure\n  - **Resolution Complete**: Find solution at given resolution\n  - **Probabilistically Complete**: Probability → 1 as time → ∞\n\n- **Classical Planning Methods**\n  - **Graph Search Algorithms**:\n    - [[RB-1018-dijkstra-algorithm]]\n    - A* (A-star)\n    - D* (Dynamic A*)\n    - Theta*\n  - **Roadmap Methods**:\n    - Visibility Graph\n    - Voronoi Diagram\n    - Probabilistic Roadmap (PRM)\n  - **Cell Decomposition**:\n    - Exact decomposition\n    - Approximate decomposition\n    - Potential Fields\n\n- **Sampling-Based Methods**\n  - [[RB-1017-rrt-algorithm]] (Rapidly-exploring Random Tree)\n  - RRT* (optimal variant)\n  - RRT-Connect (bidirectional)\n  - PRM (Probabilistic Roadmap)\n  - EST (Expansive Space Trees)\n\n- **Optimization Criteria**\n  - Shortest path (distance)\n  - Fastest path (time)\n  - Smoothest path (curvature)\n  - Energy-efficient path\n  - Safest path (clearance from obstacles)\n  - Multi-objective optimization\n\n- **Types of Path Planning**\n  - **Global Planning**:\n    - Complete environment known\n    - Offline computation possible\n    - Optimal or near-optimal solutions\n  - **Local Planning**:\n    - Partial environment knowledge\n    - Real-time reactive planning\n    - Fast computation required\n\n- **Constraints**\n  - **Kinematic Constraints**:\n    - Non-holonomic (e.g., car-like robots)\n    - Joint limits\n    - Workspace boundaries\n  - **Dynamic Constraints**:\n    - Velocity limits\n    - Acceleration limits\n    - Momentum considerations\n  - **Environmental Constraints**:\n    - Static obstacles\n    - Dynamic obstacles\n    - Narrow passages\n\n- **Special Cases**\n  - **Multi-Robot Path Planning**:\n    - Coordination required\n    - Collision avoidance between robots\n    - Centralized vs decentralized\n  - **Dynamic Environments**:\n    - Moving obstacles\n    - Replanning required\n    - Prediction of obstacle motion\n  - **High-Dimensional Spaces**:\n    - Manipulators (7+ DOF)\n    - Humanoid robots\n    - Curse of dimensionality\n\n- **Path Smoothing**\n  - Post-processing to improve path quality\n  - Remove unnecessary waypoints\n  - Spline fitting\n  - Shortcutting techniques\n\n- **Applications**\n  - Autonomous vehicles (self-driving cars)\n  - Mobile robot navigation\n  - Manipulator motion planning\n  - Drone flight planning\n  - Warehouse automation (AGVs)\n  - Surgical robots\n  - Video game character movement\n\n- **Challenges**\n  - Computational complexity (NP-hard in general)\n  - High-dimensional configuration spaces\n  - Dynamic and uncertain environments\n  - Real-time requirements\n  - Narrow passages\n  - Non-holonomic constraints\n\n- **Metrics for Evaluation**\n  - Path length/distance\n  - Computation time\n  - Path smoothness\n  - Clearance from obstacles\n  - Success rate\n  - Memory usage\n\n- **Related Topics**\n  - [[RB-1019-obstacle-avoidance]] (reactive)\n  - [[RB-1007-trajectory-generation]] (time parameterization)\n  - SLAM (building maps while planning)\n  - Coverage path planning (area coverage)\n\n- **Quality Metrics**\n  - authority-score:: 0.97\n  - completeness:: 0.94\n  - accuracy:: 0.96",
   "backlinks": [
     "RB-1013-localization",
     "RB-1006-inverse-kinematics",
@@ -11,27 +11,27 @@
     "RB-1019-obstacle-avoidance"
   ],
   "wiki_links": [
-    "Motion Planning",
-    "Mapping",
-    "Robotics",
-    "Feasibility",
-    "RB-1007-trajectory-generation",
-    "Manipulators",
-    "Autonomous Systems",
-    "Navigation",
-    "Mobile Robots",
-    "RB-1017-rrt-algorithm",
-    "RB-1018-dijkstra-algorithm",
-    "Start Configuration",
-    "Path",
     "RB-1013-localization",
-    "Optimality",
-    "Goal Configuration",
+    "Motion Planning",
+    "Robotics",
+    "Path",
     "Obstacles",
+    "Navigation",
     "RB-1019-obstacle-avoidance",
-    "Environment Model",
+    "RB-1018-dijkstra-algorithm",
+    "RB-1007-trajectory-generation",
+    "Mapping",
+    "Feasibility",
     "Autonomous Vehicles",
-    "RB-1003-optimal-control"
+    "Manipulators",
+    "Start Configuration",
+    "RB-1003-optimal-control",
+    "Goal Configuration",
+    "Environment Model",
+    "RB-1017-rrt-algorithm",
+    "Autonomous Systems",
+    "Mobile Robots",
+    "Optimality"
   ],
   "ontology": {
     "term_id": "RB-1016",
@@ -87,10 +87,6 @@
       "uses": [
         "RB-1017-rrt-algorithm",
         "RB-1018-dijkstra-algorithm"
-      ],
-      "related-to": [
-        "RB-1019-obstacle-avoidance",
-        "RB-1003-optimal-control"
       ],
       "applied-in": [
         "Autonomous Vehicles",
