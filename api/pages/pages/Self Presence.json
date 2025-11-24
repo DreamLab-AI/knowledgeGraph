@@ -1,0 +1,63 @@
+{
+  "id": "Self Presence",
+  "title": "Self Presence",
+  "content": "- ### OntologyBlock\n  id:: TC-9006\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-9006\n\t- preferred-term:: Self Presence\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Subjective experience of embodiment and self-location in a mediated environment, feeling that one's virtual representation is an extension of oneself.\n\t- source:: [[Presence Research]], [[Avatar Psychology]]\n\t- maturity:: emerging\n\t- owl:class:: tc:SelfPresence\n\t- owl:physicality:: Abstract\n\t- owl:role:: Attribute\n\t- belongsToDomain:: [[TelecollaborationDomain]]\n\t- isSubclassOf:: [[Presence]]",
+  "backlinks": [
+    "Presence"
+  ],
+  "wiki_links": [
+    "Presence",
+    "Avatar Psychology",
+    "Presence Research",
+    "TelecollaborationDomain"
+  ],
+  "ontology": {
+    "term_id": "TC-9006",
+    "preferred_term": "Self Presence",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/telecollaboration#SelfPresence",
+    "source_domain": null,
+    "domain": "tc",
+    "domain_full_name": "Telecollaboration",
+    "definition": "Subjective experience of embodiment and self-location in a mediated environment, feeling that one's virtual representation is an extension of oneself.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "emerging",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "tc:SelfPresence",
+    "owl_physicality": "Abstract",
+    "owl_role": "Attribute",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "TelecollaborationDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "Presence Research",
+      "Avatar Psychology"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "Cross-Chain Messaging",
+  "title": "Cross-Chain Messaging",
+  "content": "- ### OntologyBlock\n  id:: BC-9003\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-9003\n\t- preferred-term:: Cross-Chain Messaging\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Protocols and mechanisms that enable communication and data transfer between different blockchain networks, facilitating interoperability and cross-chain applications.\n\t- source:: [[Blockchain Interoperability]]\n\t- maturity:: emerging\n\t- owl:class:: bc:CrossChainMessaging\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- isSubclassOf:: [[Interoperability Protocol]]",
+  "backlinks": [],
+  "wiki_links": [
+    "Interoperability Protocol",
+    "BlockchainDomain",
+    "Blockchain Interoperability"
+  ],
+  "ontology": {
+    "term_id": "BC-9003",
+    "preferred_term": "Cross-Chain Messaging",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#CrossChainMessaging",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
+    "definition": "Protocols and mechanisms that enable communication and data transfer between different blockchain networks, facilitating interoperability and cross-chain applications.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "emerging",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:CrossChainMessaging",
+    "owl_physicality": "Abstract",
+    "owl_role": "Process",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "BlockchainDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "Blockchain Interoperability"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

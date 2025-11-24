@@ -1,0 +1,61 @@
+{
+  "id": "Video Async",
+  "title": "Video Async",
+  "content": "- ### OntologyBlock\n  id:: TC-9003\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-9003\n\t- preferred-term:: Video Async\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Asynchronous video communication allowing users to record, share, and view video messages at their convenience, combining visual richness with time flexibility.\n\t- source:: [[Collaboration Tools]], [[Loom]]\n\t- maturity:: emerging\n\t- owl:class:: tc:VideoAsync\n\t- owl:physicality:: Abstract\n\t- owl:role:: Object\n\t- belongsToDomain:: [[TelecollaborationDomain]]\n\t- isSubclassOf:: [[Asynchronous Collaboration]]",
+  "backlinks": [],
+  "wiki_links": [
+    "Collaboration Tools",
+    "Asynchronous Collaboration",
+    "Loom",
+    "TelecollaborationDomain"
+  ],
+  "ontology": {
+    "term_id": "TC-9003",
+    "preferred_term": "Video Async",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/telecollaboration#VideoAsync",
+    "source_domain": null,
+    "domain": "tc",
+    "domain_full_name": "Telecollaboration",
+    "definition": "Asynchronous video communication allowing users to record, share, and view video messages at their convenience, combining visual richness with time flexibility.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "emerging",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "tc:VideoAsync",
+    "owl_physicality": "Abstract",
+    "owl_role": "Object",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "TelecollaborationDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "Collaboration Tools",
+      "Loom"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

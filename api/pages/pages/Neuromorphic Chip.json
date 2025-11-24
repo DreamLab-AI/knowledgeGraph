@@ -1,0 +1,62 @@
+{
+  "id": "Neuromorphic Chip",
+  "title": "Neuromorphic Chip",
+  "content": "- ### OntologyBlock\n  id:: AI-9006\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9006\n\t- preferred-term:: Neuromorphic Chip\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Computer chips designed to mimic the structure and function of biological neural networks, using analog circuits to emulate neuronal behavior for energy-efficient AI processing.\n\t- source:: [[AI Hardware]], [[Intel Loihi]], [[IBM TrueNorth]]\n\t- maturity:: emerging\n\t- owl:class:: ai:NeuromorphicChip\n\t- owl:physicality:: Physical\n\t- owl:role:: Object\n\t- belongsToDomain:: [[ArtificialIntelligenceDomain]]\n\t- isSubclassOf:: [[AI Hardware]]",
+  "backlinks": [],
+  "wiki_links": [
+    "IBM TrueNorth",
+    "AI Hardware",
+    "ArtificialIntelligenceDomain",
+    "Intel Loihi"
+  ],
+  "ontology": {
+    "term_id": "AI-9006",
+    "preferred_term": "Neuromorphic Chip",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#NeuromorphicChip",
+    "source_domain": null,
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Computer chips designed to mimic the structure and function of biological neural networks, using analog circuits to emulate neuronal behavior for energy-efficient AI processing.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "emerging",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:NeuromorphicChip",
+    "owl_physicality": "Physical",
+    "owl_role": "Object",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "ArtificialIntelligenceDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "AI Hardware",
+      "Intel Loihi",
+      "IBM TrueNorth"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

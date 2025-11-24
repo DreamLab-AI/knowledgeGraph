@@ -1,0 +1,65 @@
+{
+  "id": "Symbolic AI",
+  "title": "Symbolic AI",
+  "content": "- ### OntologyBlock\n  id:: AI-9001\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9001\n\t- preferred-term:: Symbolic AI\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Artificial intelligence based on symbolic representations of problems, logic, and search algorithms, also known as Good Old-Fashioned AI (GOFAI).\n\t- source:: [[Academic AI Research]], [[AAAI]]\n\t- maturity:: mature\n\t- owl:class:: ai:SymbolicAI\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[ArtificialIntelligenceDomain]]\n\t- hasSubclass:: [[Expert Systems]], [[Logic Programming]], [[Knowledge Representation]]",
+  "backlinks": [
+    "Logic Programming"
+  ],
+  "wiki_links": [
+    "AAAI",
+    "Logic Programming",
+    "Academic AI Research",
+    "Expert Systems",
+    "ArtificialIntelligenceDomain",
+    "Knowledge Representation"
+  ],
+  "ontology": {
+    "term_id": "AI-9001",
+    "preferred_term": "Symbolic AI",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#SymbolicAI",
+    "source_domain": null,
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Artificial intelligence based on symbolic representations of problems, logic, and search algorithms, also known as Good Old-Fashioned AI (GOFAI).",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:SymbolicAI",
+    "owl_physicality": "Abstract",
+    "owl_role": "Process",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "ArtificialIntelligenceDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "Academic AI Research",
+      "AAAI"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

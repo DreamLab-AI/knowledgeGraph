@@ -1,0 +1,61 @@
+{
+  "id": "Rigid Body Dynamics",
+  "title": "Rigid Body Dynamics",
+  "content": "- ### OntologyBlock\n  id:: MV-9004\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9004\n\t- preferred-term:: Rigid Body Dynamics\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Physics simulation of solid objects that do not deform, calculating motion, collision, and forces for realistic object behavior in virtual environments.\n\t- source:: [[Physics Engine]], [[Game Physics]]\n\t- maturity:: mature\n\t- owl:class:: mv:RigidBodyDynamics\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- isSubclassOf:: [[Physics Simulation]]",
+  "backlinks": [],
+  "wiki_links": [
+    "Physics Simulation",
+    "MetaverseDomain",
+    "Physics Engine",
+    "Game Physics"
+  ],
+  "ontology": {
+    "term_id": "MV-9004",
+    "preferred_term": "Rigid Body Dynamics",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#RigidBodyDynamics",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "Physics simulation of solid objects that do not deform, calculating motion, collision, and forces for realistic object behavior in virtual environments.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "mature",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:RigidBodyDynamics",
+    "owl_physicality": "Abstract",
+    "owl_role": "Process",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "Physics Engine",
+      "Game Physics"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}
