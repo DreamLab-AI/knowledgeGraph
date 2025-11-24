@@ -1,0 +1,94 @@
+{
+  "id": "RB-1003-optimal-control",
+  "title": "Optimal Control",
+  "content": "- ### OntologyBlock\n  id:: optimal-control-ontology\n  collapsed:: true\n  - ontology:: true\n  - term-id:: RB-1003\n  - preferred-term:: Optimal Control\n  - source-domain:: rb\n  - status:: complete\n  - public-access:: true\n  - version:: 1.0.0\n  - last-updated:: 2025-11-24\n\n- **Definition**\n  - definition:: A control strategy that determines control inputs to minimize or maximize a performance criterion (cost function) while satisfying system constraints. It seeks the best possible control policy according to specified objectives.\n  - maturity:: mature\n  - source:: [[Control Theory]], [[Optimization Theory]]\n  - authority-score:: 0.96\n\n- **Semantic Classification**\n  - owl:class:: rb:OptimalControl\n  - owl:physicality:: Abstract\n  - owl:role:: Method\n  - belongsToDomain:: [[Robotics]], [[Control Theory]], [[Optimization]]\n\n- #### OWL Restrictions\n  - is-subclass-of:: [[RB-1002-closed-loop-control]]\n  - requires:: [[Cost Function]]\n  - requires:: [[System Dynamics Model]]\n  - minimizes some PerformanceCriterion\n  - satisfies some SystemConstraints\n  - uses:: [[Optimization Algorithm]]\n  - characterizedBy:: [[Optimality]], [[Efficiency]]\n\n- #### Relationships\n  id:: rb-1003-relationships\n  - is-subclass-of:: [[RB-1002-closed-loop-control]]\n  - uses:: [[Linear Quadratic Regulator]], [[Model Predictive Control]]\n  - enables:: [[RB-1007-trajectory-generation]]\n  - applied-in:: [[Autonomous Vehicles]], [[Spacecraft Control]]\n  - related-to:: [[RB-1004-adaptive-control]], [[Machine Learning]]\n\n- **Key Concepts**\n  - Cost Function (Objective Function)\n  - State Space Representation\n  - Hamilton-Jacobi-Bellman Equation\n  - Pontryagin's Maximum Principle\n  - Dynamic Programming\n  - Calculus of Variations\n\n- **Common Methods**\n  - Linear Quadratic Regulator (LQR)\n  - Model Predictive Control (MPC)\n  - Dynamic Programming\n  - Variational Methods\n  - Numerical Optimization\n\n- **Cost Function Types**\n  - Energy minimization\n  - Time minimization\n  - Tracking error minimization\n  - Fuel consumption minimization\n  - Multi-objective optimization\n\n- **Applications**\n  - Trajectory optimization for robot arms\n  - Energy-efficient motion planning\n  - Autonomous vehicle path planning\n  - Spacecraft attitude control\n  - Bipedal walking robots\n  - Drone flight control\n\n- **Advantages**\n  - Mathematically rigorous\n  - Guaranteed optimality (when solvable)\n  - Handles constraints explicitly\n  - Balances multiple objectives\n\n- **Challenges**\n  - Computational complexity\n  - Requires accurate system model\n  - May be intractable for complex systems\n  - Real-time implementation difficulties\n\n- **Quality Metrics**\n  - authority-score:: 0.96\n  - completeness:: 0.92\n  - accuracy:: 0.94",
+  "backlinks": [
+    "RB-1004-adaptive-control",
+    "RB-1016-path-planning",
+    "RB-1007-trajectory-generation"
+  ],
+  "wiki_links": [
+    "Autonomous Vehicles",
+    "System Dynamics Model",
+    "Optimality",
+    "Control Theory",
+    "Robotics",
+    "RB-1007-trajectory-generation",
+    "RB-1004-adaptive-control",
+    "Efficiency",
+    "Optimization Theory",
+    "Machine Learning",
+    "Model Predictive Control",
+    "Optimization",
+    "RB-1002-closed-loop-control",
+    "Optimization Algorithm",
+    "Linear Quadratic Regulator",
+    "Spacecraft Control",
+    "Cost Function"
+  ],
+  "ontology": {
+    "term_id": "RB-1003",
+    "preferred_term": "Optimal Control",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/robotics#OptimalControl",
+    "source_domain": "rb",
+    "domain": "rb",
+    "domain_full_name": "Robotics",
+    "definition": "A control strategy that determines control inputs to minimize or maximize a performance criterion (cost function) while satisfying system constraints. It seeks the best possible control policy according to specified objectives.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-24",
+    "authority_score": 0.96,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "rb:OptimalControl",
+    "owl_physicality": "Abstract",
+    "owl_role": "Method",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "RB-1002-closed-loop-control"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [
+      "RB-1007-trajectory-generation"
+    ],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Robotics",
+      "Control Theory",
+      "Optimization"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "Control Theory",
+      "Optimization Theory"
+    ],
+    "other_relationships": {
+      "uses": [
+        "Linear Quadratic Regulator",
+        "Model Predictive Control"
+      ],
+      "applied-in": [
+        "Autonomous Vehicles",
+        "Spacecraft Control"
+      ],
+      "related-to": [
+        "RB-1004-adaptive-control",
+        "Machine Learning"
+      ]
+    },
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

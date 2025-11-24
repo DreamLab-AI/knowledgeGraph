@@ -1,0 +1,100 @@
+{
+  "id": "RB-1009-social-robotics",
+  "title": "Social Robotics",
+  "content": "- ### OntologyBlock\n  id:: social-robotics-ontology\n  collapsed:: true\n  - ontology:: true\n  - term-id:: RB-1009\n  - preferred-term:: Social Robotics\n  - source-domain:: rb\n  - status:: complete\n  - public-access:: true\n  - version:: 1.0.0\n  - last-updated:: 2025-11-24\n\n- **Definition**\n  - definition:: A field of robotics focused on designing robots capable of interacting and communicating with humans and other autonomous agents in a socially acceptable manner, following social rules, norms, and expectations of human interaction.\n  - maturity:: emerging\n  - source:: [[Human-Robot Interaction]], [[Social Sciences]]\n  - authority-score:: 0.92\n\n- **Semantic Classification**\n  - owl:class:: rb:SocialRobotics\n  - owl:physicality:: Interdisciplinary\n  - owl:role:: Field\n  - belongsToDomain:: [[Robotics]], [[Human-Robot Interaction]], [[AI]]\n\n- #### OWL Restrictions\n  - is-subclass-of:: [[Human-Robot Interaction]]\n  - requires:: [[Social Intelligence]]\n  - requires:: [[Communication Capabilities]]\n  - exhibits:: [[Social Behavior]]\n  - interacts-with:: [[Human]], [[Social Agent]]\n  - characterized-by:: [[Emotional Expression]], [[Social Awareness]]\n\n- #### Relationships\n  id:: rb-1009-relationships\n  - is-subclass-of:: [[Human-Robot Interaction]]\n  - related-to:: [[RB-1012-trust-in-automation]], [[RB-1010-telepresence]]\n  - enables:: [[Human-Robot Collaboration]], [[Assistive Robotics]]\n  - uses:: [[Natural Language Processing]], [[Computer Vision]], [[Affective Computing]]\n  - applied-in:: [[Healthcare]], [[Education]], [[Service Industry]]\n\n- **Key Capabilities**\n  - Natural Language Communication\n  - Emotion Recognition and Expression\n  - Gesture Understanding and Generation\n  - Social Norm Compliance\n  - Theory of Mind (understanding others' mental states)\n  - Turn-Taking in Conversation\n  - Personal Space Awareness (Proxemics)\n\n- **Design Considerations**\n  - Appearance (humanoid, zoomorphic, functional)\n  - Size and Physical Presence\n  - Voice and Speech Characteristics\n  - Facial Expressions\n  - Body Language\n  - Cultural Sensitivity\n\n- **Social Interaction Modalities**\n  - Verbal Communication (speech)\n  - Non-Verbal Communication (gestures, gaze)\n  - Touch Interaction\n  - Emotional Expression\n  - Social Cues (head nods, attention)\n\n- **Application Domains**\n  - Healthcare and Therapy\n    - Elderly care companions\n    - Autism therapy robots\n    - Rehabilitation assistants\n  - Education\n    - Teaching assistants\n    - Language learning companions\n    - STEM education robots\n  - Service Industry\n    - Reception robots\n    - Guide robots\n    - Customer service agents\n  - Entertainment\n    - Companion robots\n    - Gaming and play\n\n- **Social Robot Types**\n  - Companion Robots (e.g., Pepper, Jibo)\n  - Therapeutic Robots (e.g., Paro, NAO)\n  - Educational Robots (e.g., KASPAR, Keepon)\n  - Service Robots (e.g., reception robots)\n  - Entertainment Robots (e.g., Aibo, Anki Vector)\n\n- **Research Challenges**\n  - Long-term interaction sustainability\n  - Ethical considerations in emotional attachment\n  - Privacy and data security\n  - Cultural adaptation\n  - Measuring social acceptance\n  - Avoiding uncanny valley effect\n\n- **Ethical Considerations**\n  - Manipulation and deception concerns\n  - Emotional dependency risks\n  - Privacy in social interactions\n  - Transparency of robot capabilities\n  - Impact on human-human relationships\n\n- **Evaluation Metrics**\n  - Social Acceptance\n  - Engagement Duration\n  - User Satisfaction\n  - Task Completion Quality\n  - Emotional Response\n  - Trust Building\n\n- **Technologies Enabling Social Robotics**\n  - Natural Language Processing\n  - Computer Vision (face recognition, emotion detection)\n  - Speech Synthesis and Recognition\n  - Affective Computing\n  - Machine Learning (for personalization)\n  - Multi-modal Sensor Fusion\n\n- **Quality Metrics**\n  - authority-score:: 0.92\n  - completeness:: 0.89\n  - accuracy:: 0.91",
+  "backlinks": [
+    "RB-1010-telepresence",
+    "RB-1012-trust-in-automation"
+  ],
+  "wiki_links": [
+    "Social Behavior",
+    "Robotics",
+    "Affective Computing",
+    "Education",
+    "Social Awareness",
+    "RB-1010-telepresence",
+    "Computer Vision",
+    "Social Sciences",
+    "Communication Capabilities",
+    "Human-Robot Collaboration",
+    "Assistive Robotics",
+    "Natural Language Processing",
+    "AI",
+    "Healthcare",
+    "Social Intelligence",
+    "Human",
+    "Social Agent",
+    "Human-Robot Interaction",
+    "Emotional Expression",
+    "RB-1012-trust-in-automation",
+    "Service Industry"
+  ],
+  "ontology": {
+    "term_id": "RB-1009",
+    "preferred_term": "Social Robotics",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/robotics#SocialRobotics",
+    "source_domain": "rb",
+    "domain": "rb",
+    "domain_full_name": "Robotics",
+    "definition": "A field of robotics focused on designing robots capable of interacting and communicating with humans and other autonomous agents in a socially acceptable manner, following social rules, norms, and expectations of human interaction.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "emerging",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-24",
+    "authority_score": 0.92,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "rb:SocialRobotics",
+    "owl_physicality": "Interdisciplinary",
+    "owl_role": "Field",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Human-Robot Interaction"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [
+      "Human-Robot Collaboration",
+      "Assistive Robotics"
+    ],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Robotics",
+      "Human-Robot Interaction",
+      "AI"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "Human-Robot Interaction",
+      "Social Sciences"
+    ],
+    "other_relationships": {
+      "related-to": [
+        "RB-1012-trust-in-automation",
+        "RB-1010-telepresence"
+      ],
+      "uses": [
+        "Natural Language Processing",
+        "Computer Vision",
+        "Affective Computing"
+      ],
+      "applied-in": [
+        "Healthcare",
+        "Education",
+        "Service Industry"
+      ]
+    },
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

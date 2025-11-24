@@ -1,0 +1,83 @@
+{
+  "id": "RB-1001-open-loop-control",
+  "title": "Open-Loop Control",
+  "content": "- ### OntologyBlock\n  id:: open-loop-control-ontology\n  collapsed:: true\n  - ontology:: true\n  - term-id:: RB-1001\n  - preferred-term:: Open-Loop Control\n  - source-domain:: rb\n  - status:: complete\n  - public-access:: true\n  - version:: 1.0.0\n  - last-updated:: 2025-11-24\n\n- **Definition**\n  - definition:: A control system where the control action is independent of the output. The system executes pre-programmed commands without feedback from sensors to verify if the desired state was achieved.\n  - maturity:: mature\n  - source:: [[Control Theory]]\n  - authority-score:: 0.95\n\n- **Semantic Classification**\n  - owl:class:: rb:OpenLoopControl\n  - owl:physicality:: Abstract\n  - owl:role:: Method\n  - belongsToDomain:: [[Robotics]], [[Control Theory]]\n\n- #### OWL Restrictions\n  - is-subclass-of:: [[Control System]]\n  - lacks:: [[Feedback Mechanism]]\n  - requires:: [[Actuator]]\n  - hasInputSignal some ControlCommand\n  - produces some SystemOutput\n  - characterizedBy:: [[Predictability]], [[No Feedback]]\n\n- #### Relationships\n  id:: rb-1001-relationships\n  - is-subclass-of:: [[Control System]]\n  - contrasts-with:: [[RB-1002-closed-loop-control]]\n  - uses:: [[Actuator]]\n  - applied-in:: [[Stepper Motor Control]], [[Servo Control]]\n  - related-to:: [[Forward Kinematics]]\n\n- **Advantages**\n  - Simple implementation\n  - Lower cost (no sensors required)\n  - Fast execution (no feedback delay)\n  - Predictable timing\n\n- **Disadvantages**\n  - No error correction\n  - Sensitive to disturbances\n  - Cannot adapt to environmental changes\n  - Requires accurate system modeling\n\n- **Applications**\n  - Stepper motor positioning\n  - Simple pick-and-place operations\n  - Timed sequences\n  - Pre-programmed robot trajectories\n\n- **Quality Metrics**\n  - authority-score:: 0.95\n  - completeness:: 0.90\n  - accuracy:: 0.92",
+  "backlinks": [
+    "RB-1002-closed-loop-control"
+  ],
+  "wiki_links": [
+    "RB-1002-closed-loop-control",
+    "Feedback Mechanism",
+    "Control Theory",
+    "Robotics",
+    "Actuator",
+    "Stepper Motor Control",
+    "Forward Kinematics",
+    "Servo Control",
+    "Predictability",
+    "No Feedback",
+    "Control System"
+  ],
+  "ontology": {
+    "term_id": "RB-1001",
+    "preferred_term": "Open-Loop Control",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/robotics#OpenLoopControl",
+    "source_domain": "rb",
+    "domain": "rb",
+    "domain_full_name": "Robotics",
+    "definition": "A control system where the control action is independent of the output. The system executes pre-programmed commands without feedback from sensors to verify if the desired state was achieved.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-24",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "rb:OpenLoopControl",
+    "owl_physicality": "Abstract",
+    "owl_role": "Method",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Control System"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Robotics",
+      "Control Theory"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "Control Theory"
+    ],
+    "other_relationships": {
+      "contrasts-with": [
+        "RB-1002-closed-loop-control"
+      ],
+      "uses": [
+        "Actuator"
+      ],
+      "applied-in": [
+        "Stepper Motor Control",
+        "Servo Control"
+      ],
+      "related-to": [
+        "Forward Kinematics"
+      ]
+    },
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

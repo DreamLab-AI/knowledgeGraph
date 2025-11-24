@@ -1,0 +1,99 @@
+{
+  "id": "RB-1006-inverse-kinematics",
+  "title": "Inverse Kinematics",
+  "content": "- ### OntologyBlock\n  id:: inverse-kinematics-ontology\n  collapsed:: true\n  - ontology:: true\n  - term-id:: RB-1006\n  - preferred-term:: Inverse Kinematics\n  - alternate-terms:: IK\n  - source-domain:: rb\n  - status:: complete\n  - public-access:: true\n  - version:: 1.0.0\n  - last-updated:: 2025-11-24\n\n- **Definition**\n  - definition:: The process of determining the joint parameters (angles or displacements) required to place a robot's end-effector at a desired position and orientation in Cartesian space. It maps from task space to joint space.\n  - maturity:: mature\n  - source:: [[Robotics]], [[Kinematics]]\n  - authority-score:: 0.97\n\n- **Semantic Classification**\n  - owl:class:: rb:InverseKinematics\n  - owl:physicality:: Abstract\n  - owl:role:: Method\n  - belongsToDomain:: [[Robotics]], [[Kinematics]]\n\n- #### OWL Restrictions\n  - is-subclass-of:: [[Kinematics]]\n  - requires:: [[Kinematic Model]]\n  - requires:: [[Target Pose]]\n  - computes:: [[Joint Configuration]]\n  - hasInput some CartesianPose\n  - hasOutput some JointParameters\n  - mayHave:: [[Multiple Solutions]], [[No Solution]]\n  - characterizedBy:: [[Complexity]], [[Non-Uniqueness]]\n\n- #### Relationships\n  id:: rb-1006-relationships\n  - is-subclass-of:: [[Kinematics]]\n  - inverse-of:: [[RB-1005-forward-kinematics]]\n  - uses:: [[Numerical Methods]], [[Analytical Methods]], [[Jacobian Matrix]]\n  - enables:: [[RB-1016-path-planning]], [[Robot Control]]\n  - challenges:: [[Singularities]], [[Joint Limits]]\n  - applied-to:: [[RB-0003-manipulator]], [[RB-0004-humanoid-robot]]\n\n- **Solution Types**\n  - Analytical (Closed-Form) Solutions\n  - Numerical (Iterative) Solutions\n  - Geometric Solutions\n  - Optimization-Based Solutions\n\n- **Analytical Methods**\n  - Algebraic approach\n  - Geometric decomposition\n  - Pieper's solution (for 6-DOF with spherical wrist)\n  - Limited to specific robot geometries\n\n- **Numerical Methods**\n  - Jacobian-based methods\n  - Newton-Raphson iteration\n  - Gradient descent\n  - Cyclic Coordinate Descent (CCD)\n  - FABRIK (Forward And Backward Reaching Inverse Kinematics)\n  - Levenberg-Marquardt algorithm\n\n- **Challenges**\n  - Multiple Solutions (infinite for redundant robots)\n  - No Solution (target outside workspace)\n  - Singularities (Jacobian becomes singular)\n  - Joint Limits (physical constraints)\n  - Computational Complexity\n  - Real-time requirements\n\n- **Solution Selection Criteria**\n  - Closest to current configuration\n  - Avoid joint limits\n  - Avoid singularities\n  - Minimize energy consumption\n  - Collision avoidance\n\n- **Applications**\n  - Robot motion planning\n  - Teleoperation\n  - Computer animation\n  - Virtual reality interaction\n  - Surgical robotics\n  - Collaborative robot control\n\n- **Special Cases**\n  - Redundant robots (more DOF than needed)\n  - Under-actuated robots (fewer DOF than needed)\n  - Parallel robots (closed kinematic chains)\n\n- **Optimization Approaches**\n  - Pseudoinverse methods\n  - Damped least squares\n  - Task priority methods\n  - Null-space optimization\n\n- **Quality Metrics**\n  - authority-score:: 0.97\n  - completeness:: 0.94\n  - accuracy:: 0.96",
+  "backlinks": [
+    "RB-1005-forward-kinematics",
+    "RB-1007-trajectory-generation"
+  ],
+  "wiki_links": [
+    "RB-0003-manipulator",
+    "Complexity",
+    "Robotics",
+    "Target Pose",
+    "Multiple Solutions",
+    "Singularities",
+    "Joint Limits",
+    "Kinematics",
+    "Jacobian Matrix",
+    "No Solution",
+    "Numerical Methods",
+    "RB-1005-forward-kinematics",
+    "RB-1016-path-planning",
+    "Analytical Methods",
+    "Kinematic Model",
+    "Robot Control",
+    "Joint Configuration",
+    "Non-Uniqueness",
+    "RB-0004-humanoid-robot"
+  ],
+  "ontology": {
+    "term_id": "RB-1006",
+    "preferred_term": "Inverse Kinematics",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/robotics#InverseKinematics",
+    "source_domain": "rb",
+    "domain": "rb",
+    "domain_full_name": "Robotics",
+    "definition": "The process of determining the joint parameters (angles or displacements) required to place a robot's end-effector at a desired position and orientation in Cartesian space. It maps from task space to joint space.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-24",
+    "authority_score": 0.97,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "rb:InverseKinematics",
+    "owl_physicality": "Abstract",
+    "owl_role": "Method",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Kinematics"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [
+      "RB-1016-path-planning",
+      "Robot Control"
+    ],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Robotics",
+      "Kinematics"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "Robotics",
+      "Kinematics"
+    ],
+    "other_relationships": {
+      "inverse-of": [
+        "RB-1005-forward-kinematics"
+      ],
+      "uses": [
+        "Numerical Methods",
+        "Analytical Methods",
+        "Jacobian Matrix"
+      ],
+      "challenges": [
+        "Singularities",
+        "Joint Limits"
+      ],
+      "applied-to": [
+        "RB-0003-manipulator",
+        "RB-0004-humanoid-robot"
+      ]
+    },
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "id": "RB-1015-kalman-filter",
+  "title": "Kalman Filter",
+  "content": "- ### OntologyBlock\n  id:: kalman-filter-ontology\n  collapsed:: true\n  - ontology:: true\n  - term-id:: RB-1015\n  - preferred-term:: Kalman Filter\n  - alternate-terms:: KF, Linear Quadratic Estimator\n  - source-domain:: rb\n  - status:: complete\n  - public-access:: true\n  - version:: 1.0.0\n  - last-updated:: 2025-11-24\n\n- **Definition**\n  - definition:: An optimal recursive Bayesian filter that estimates the state of a linear dynamic system from a series of noisy measurements. It minimizes the mean squared error of the estimated state by combining predictions with measurements using weighted averaging based on uncertainty.\n  - maturity:: mature\n  - source:: [[Control Theory]], [[Probabilistic Robotics]], [[Signal Processing]]\n  - authority-score:: 0.98\n\n- **Semantic Classification**\n  - owl:class:: rb:KalmanFilter\n  - owl:physicality:: Abstract\n  - owl:role:: Algorithm\n  - belongsToDomain:: [[Robotics]], [[Control Theory]], [[State Estimation]]\n\n- #### OWL Restrictions\n  - is-subclass-of:: [[Bayes Filter]]\n  - is-instance-of:: [[Recursive Estimator]]\n  - requires:: [[Linear System Model]]\n  - requires:: [[Gaussian Noise Assumption]]\n  - estimates:: [[System State]]\n  - minimizes:: [[Mean Squared Error]]\n  - characterized-by:: [[Optimality]], [[Recursiveness]]\n\n- #### Relationships\n  id:: rb-1015-relationships\n  - is-subclass-of:: [[State Estimation]], [[Bayes Filter]]\n  - used-in:: [[RB-1013-localization]], [[RB-1002-closed-loop-control]]\n  - alternative-to:: [[RB-1014-monte-carlo-localization]]\n  - extended-by:: [[Extended Kalman Filter]], [[Unscented Kalman Filter]]\n  - uses:: [[RB-1008-odometry]], [[Sensor Fusion]]\n  - applied-in:: [[Navigation]], [[Tracking]], [[SLAM]]\n\n- **Mathematical Framework**\n  - **State Space Model**:\n    - State Equation: xₜ = Aₜxₜ₋₁ + Bₜuₜ + wₜ\n    - Measurement Equation: zₜ = Hₜxₜ + vₜ\n  - **Noise**:\n    - Process Noise: wₜ ~ N(0, Qₜ)\n    - Measurement Noise: vₜ ~ N(0, Rₜ)\n  - **Belief**: Gaussian distribution N(μₜ, Σₜ)\n\n- **Algorithm (Two-Step Process)**\n  - **Prediction Step** (Time Update):\n    - Predicted State: x̄ₜ = Aₜxₜ₋₁ + Bₜuₜ\n    - Predicted Covariance: P̄ₜ = AₜPₜ₋₁Aₜᵀ + Qₜ\n  - **Update Step** (Measurement Update):\n    - Kalman Gain: Kₜ = P̄ₜHₜᵀ(HₜP̄ₜHₜᵀ + Rₜ)⁻¹\n    - Updated State: xₜ = x̄ₜ + Kₜ(zₜ - Hₜx̄ₜ)\n    - Updated Covariance: Pₜ = (I - KₜHₜ)P̄ₜ\n\n- **Key Matrices**\n  - **A**: State Transition Matrix (system dynamics)\n  - **B**: Control Input Matrix\n  - **H**: Observation Matrix (measurement model)\n  - **Q**: Process Noise Covariance\n  - **R**: Measurement Noise Covariance\n  - **P**: Estimate Error Covariance\n  - **K**: Kalman Gain (optimal weighting)\n\n- **Properties**\n  - Optimal for linear systems with Gaussian noise\n  - Unbiased estimator\n  - Minimum variance estimator\n  - Recursive (only needs previous state)\n  - Computationally efficient: O(n³) for n states\n  - Closed-form solution\n\n- **Assumptions**\n  - Linearity (system and measurement models)\n  - Gaussian noise (process and measurement)\n  - White noise (uncorrelated over time)\n  - Known system model (A, B, H)\n  - Known noise statistics (Q, R)\n\n- **Variants for Non-Linear Systems**\n  - **Extended Kalman Filter (EKF)**:\n    - Linearizes non-linear models via Jacobian\n    - Most common in robotics\n    - Approximation, not optimal\n  - **Unscented Kalman Filter (UKF)**:\n    - Uses sigma points (no Jacobian)\n    - Better for highly non-linear systems\n    - More accurate than EKF\n  - **Cubature Kalman Filter (CKF)**:\n    - Uses cubature rules\n    - Similar to UKF\n\n- **Applications in Robotics**\n  - Robot localization (sensor fusion)\n  - IMU + GPS fusion for navigation\n  - Target tracking\n  - SLAM (FastSLAM uses EKF)\n  - Sensor calibration\n  - Attitude estimation (orientation)\n  - Velocity estimation\n\n- **Sensor Fusion Example**\n  - Fuse odometry (high frequency, drift) with GPS (low frequency, accurate)\n  - Prediction: Use odometry\n  - Update: Correct with GPS measurements\n  - Result: Smooth, accurate position estimate\n\n- **Advantages**\n  - Optimal for linear Gaussian systems\n  - Computationally efficient\n  - Well-understood theory\n  - Easy to implement\n  - Recursive (no historical data needed)\n  - Provides uncertainty estimates (covariance)\n\n- **Limitations**\n  - Requires linear system model (or linearization)\n  - Assumes Gaussian noise\n  - Sensitive to incorrect noise parameters\n  - EKF can diverge with poor linearization\n  - Cannot handle multi-modal distributions\n\n- **Tuning Parameters**\n  - **Q (Process Noise)**: Trust in model\n    - Large Q: Less trust in model, more responsive\n    - Small Q: More trust in model, smoother\n  - **R (Measurement Noise)**: Trust in sensors\n    - Large R: Less trust in sensors, slower correction\n    - Small R: More trust in sensors, faster correction\n\n- **Comparison with Particle Filter**\n  - KF: Unimodal Gaussian, linear/linearizable\n  - PF: Multi-modal, non-linear, non-Gaussian\n  - KF: Lower computational cost\n  - PF: More flexible, handles global localization\n\n- **Historical Significance**\n  - Developed by Rudolf Kálmán (1960)\n  - Used in Apollo missions (lunar landing)\n  - Foundation of modern navigation systems\n  - One of most widely used algorithms in engineering\n\n- **Quality Metrics**\n  - authority-score:: 0.98\n  - completeness:: 0.95\n  - accuracy:: 0.97",
+  "backlinks": [
+    "RB-1013-localization",
+    "RB-1002-closed-loop-control",
+    "RB-1014-monte-carlo-localization",
+    "RB-1008-odometry"
+  ],
+  "wiki_links": [
+    "State Estimation",
+    "Robotics",
+    "Recursive Estimator",
+    "Bayes Filter",
+    "Sensor Fusion",
+    "Extended Kalman Filter",
+    "Probabilistic Robotics",
+    "System State",
+    "Navigation",
+    "Unscented Kalman Filter",
+    "Control Theory",
+    "Signal Processing",
+    "RB-1008-odometry",
+    "RB-1013-localization",
+    "Recursiveness",
+    "Optimality",
+    "RB-1014-monte-carlo-localization",
+    "RB-1002-closed-loop-control",
+    "SLAM",
+    "Gaussian Noise Assumption",
+    "Linear System Model",
+    "Tracking",
+    "Mean Squared Error"
+  ],
+  "ontology": {
+    "term_id": "RB-1015",
+    "preferred_term": "Kalman Filter",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/robotics#KalmanFilter",
+    "source_domain": "rb",
+    "domain": "rb",
+    "domain_full_name": "Robotics",
+    "definition": "An optimal recursive Bayesian filter that estimates the state of a linear dynamic system from a series of noisy measurements. It minimizes the mean squared error of the estimated state by combining predictions with measurements using weighted averaging based on uncertainty.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "1.0.0",
+    "public_access": true,
+    "last_updated": "2025-11-24",
+    "authority_score": 0.98,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "rb:KalmanFilter",
+    "owl_physicality": "Abstract",
+    "owl_role": "Algorithm",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "State Estimation",
+      "Bayes Filter"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Robotics",
+      "Control Theory",
+      "State Estimation"
+    ],
+    "implemented_in_layer": [],
+    "source": [
+      "Control Theory",
+      "Probabilistic Robotics",
+      "Signal Processing"
+    ],
+    "other_relationships": {
+      "used-in": [
+        "RB-1013-localization",
+        "RB-1002-closed-loop-control"
+      ],
+      "alternative-to": [
+        "RB-1014-monte-carlo-localization"
+      ],
+      "extended-by": [
+        "Extended Kalman Filter",
+        "Unscented Kalman Filter"
+      ],
+      "uses": [
+        "RB-1008-odometry",
+        "Sensor Fusion"
+      ],
+      "applied-in": [
+        "Navigation",
+        "Tracking",
+        "SLAM"
+      ]
+    },
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}
