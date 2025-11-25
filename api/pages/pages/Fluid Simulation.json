@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: MV-9006\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9006\n\t- preferred-term:: Fluid Simulation\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Physics simulation of liquid and gas dynamics using computational fluid dynamics (CFD) techniques to model realistic water, smoke, and atmospheric effects in virtual environments.\n\t- source:: [[Physics Engine]], [[CFD]]\n\t- maturity:: emerging\n\t- owl:class:: mv:FluidSimulation\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- isSubclassOf:: [[Physics Simulation]]",
   "backlinks": [],
   "wiki_links": [
-    "Physics Simulation",
     "MetaverseDomain",
+    "Physics Simulation",
     "Physics Engine",
     "CFD"
   ],
