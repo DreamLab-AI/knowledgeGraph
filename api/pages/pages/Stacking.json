@@ -6,12 +6,12 @@
     "Ensemble Methods"
   ],
   "wiki_links": [
-    "Meta-Learning",
-    "Machine Learning",
-    "Cross-Validation",
-    "Bias",
     "Ensemble Methods",
     "Model Combination",
+    "Bias",
+    "Meta-Learning",
+    "Cross-Validation",
+    "Machine Learning",
     "Variance"
   ],
   "ontology": {
