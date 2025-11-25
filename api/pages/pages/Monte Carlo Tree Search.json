@@ -7,10 +7,10 @@
   ],
   "wiki_links": [
     "Game Playing AI",
-    "Random Sampling",
-    "Minimax Algorithm",
     "Search Algorithms",
+    "Random Sampling",
     "AlphaGo",
+    "Minimax Algorithm",
     "Reinforcement Learning"
   ],
   "ontology": {
