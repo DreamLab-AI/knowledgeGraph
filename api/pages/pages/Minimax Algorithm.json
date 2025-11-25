@@ -8,11 +8,11 @@
   ],
   "wiki_links": [
     "Game Theory",
-    "Search Algorithms",
-    "Alpha-Beta Pruning",
-    "Adversarial Search",
     "Decision Tree",
-    "Game Playing AI"
+    "Game Playing AI",
+    "Search Algorithms",
+    "Adversarial Search",
+    "Alpha-Beta Pruning"
   ],
   "ontology": {
     "term_id": "AI-1005",

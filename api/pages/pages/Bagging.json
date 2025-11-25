@@ -8,11 +8,11 @@
   "wiki_links": [
     "Bootstrap Sampling",
     "Machine Learning",
-    "Ensemble Methods",
     "Random Forest",
-    "Variance",
+    "Ensemble Methods",
+    "Parallel Training",
     "Overfitting",
-    "Parallel Training"
+    "Variance"
   ],
   "ontology": {
     "term_id": "AI-1016",
