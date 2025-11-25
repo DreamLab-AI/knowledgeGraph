@@ -9,23 +9,23 @@
     "RB-1001-open-loop-control"
   ],
   "wiki_links": [
-    "ISO 8373:2021",
-    "RB-1004-adaptive-control",
-    "Control Theory",
-    "PID Control",
+    "Sensor System",
     "RB-1013-localization",
-    "Adaptability",
     "Control System",
+    "Control Theory",
+    "Accuracy",
+    "RB-1004-adaptive-control",
     "Feedback Mechanism",
     "Actuator",
-    "Controller",
     "RB-1007-trajectory-generation",
     "Robotics",
+    "Adaptability",
     "RB-1015-kalman-filter",
-    "Accuracy",
     "RB-1001-open-loop-control",
-    "Sensor System",
-    "Stability"
+    "ISO 8373:2021",
+    "PID Control",
+    "Stability",
+    "Controller"
   ],
   "ontology": {
     "term_id": "RB-1002",

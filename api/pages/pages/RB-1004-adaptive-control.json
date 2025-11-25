@@ -8,22 +8,22 @@
     "RB-1011-cobot-safety-levels"
   ],
   "wiki_links": [
-    "Machine Learning",
-    "Control Theory",
-    "Robust Control",
-    "RB-1003-optimal-control",
-    "Parameter Estimation",
     "Autonomous Systems",
-    "Adaptive Systems",
-    "Self-Tuning",
+    "Control Theory",
+    "Parameter Adaptation Mechanism",
+    "RB-1003-optimal-control",
+    "Self-Tuning Systems",
     "System Identification",
     "Learning",
-    "RB-1011-cobot-safety-levels",
-    "RB-1002-closed-loop-control",
-    "Self-Tuning Systems",
+    "Parameter Estimation",
+    "Adaptive Systems",
     "Robotics",
+    "RB-1011-cobot-safety-levels",
+    "Robust Control",
     "Robustness",
-    "Parameter Adaptation Mechanism"
+    "Machine Learning",
+    "RB-1002-closed-loop-control",
+    "Self-Tuning"
   ],
   "ontology": {
     "term_id": "RB-1004",
