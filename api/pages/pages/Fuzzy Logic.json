@@ -8,10 +8,10 @@
   "wiki_links": [
     "Soft Computing",
     "Knowledge Representation",
-    "Approximate Reasoning",
-    "Decision Making",
     "Control Systems",
     "Artificial Intelligence",
+    "Decision Making",
+    "Approximate Reasoning",
     "Expert Systems"
   ],
   "ontology": {

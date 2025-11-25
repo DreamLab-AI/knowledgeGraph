@@ -6,15 +6,15 @@
     "Ensemble Methods"
   ],
   "wiki_links": [
-    "Ensemble Methods",
-    "XGBoost",
-    "CatBoost",
     "Machine Learning",
     "Gradient Boosting",
-    "Bias",
-    "AdaBoost",
+    "Ensemble Methods",
     "LightGBM",
-    "Accuracy"
+    "Bias",
+    "CatBoost",
+    "XGBoost",
+    "Accuracy",
+    "AdaBoost"
   ],
   "ontology": {
     "term_id": "AI-1015",

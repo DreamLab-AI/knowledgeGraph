@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "Machine Learning",
-    "Self-Training",
-    "Active Learning",
     "Unsupervised Learning",
     "Supervised Learning",
+    "Active Learning",
     "Co-Training",
+    "Self-Training",
     "Data-Efficient Learning"
   ],
   "ontology": {

@@ -4,9 +4,9 @@
   "content": "- ### OntologyBlock\n  id:: AI-9009\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9009\n\t- preferred-term:: Data Lake\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Centralized repository that stores structured and unstructured data at scale in its native format, enabling big data analytics and machine learning workloads.\n\t- source:: [[Data Engineering]], [[Big Data]]\n\t- maturity:: mature\n\t- owl:class:: ai:DataLake\n\t- owl:physicality:: Abstract\n\t- owl:role:: Object\n\t- belongsToDomain:: [[ArtificialIntelligenceDomain]]\n\t- isSubclassOf:: [[Data Engineering]]",
   "backlinks": [],
   "wiki_links": [
-    "ArtificialIntelligenceDomain",
+    "Data Engineering",
     "Big Data",
-    "Data Engineering"
+    "ArtificialIntelligenceDomain"
   ],
   "ontology": {
     "term_id": "AI-9009",

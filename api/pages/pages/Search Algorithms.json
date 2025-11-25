@@ -11,13 +11,13 @@
   ],
   "wiki_links": [
     "Monte Carlo Tree Search",
-    "Minimax Algorithm",
-    "Pathfinding",
     "Planning and Scheduling",
+    "Pathfinding",
+    "Optimization",
     "Graph Theory",
-    "A-Star Algorithm",
     "Artificial Intelligence",
-    "Optimization"
+    "Minimax Algorithm",
+    "A-Star Algorithm"
   ],
   "ontology": {
     "term_id": "AI-1003",
