@@ -4,10 +4,10 @@
   "content": "- ### OntologyBlock\n  id:: RB-9008\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9008\n\t- preferred-term:: Social Navigation\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Robot navigation strategies that account for social norms, human comfort, and contextual appropriateness when moving through human-populated environments.\n\t- source:: [[HRI]], [[Mobile Robotics]]\n\t- maturity:: emerging\n\t- owl:class:: rb:SocialNavigation\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[RoboticsDomain]]\n\t- isSubclassOf:: [[Human-Robot Interaction]]",
   "backlinks": [],
   "wiki_links": [
-    "HRI",
-    "Human-Robot Interaction",
+    "RoboticsDomain",
     "Mobile Robotics",
-    "RoboticsDomain"
+    "HRI",
+    "Human-Robot Interaction"
   ],
   "ontology": {
     "term_id": "RB-9008",

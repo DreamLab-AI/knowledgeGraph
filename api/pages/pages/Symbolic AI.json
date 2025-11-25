@@ -6,12 +6,12 @@
     "Logic Programming"
   ],
   "wiki_links": [
-    "AAAI",
-    "Logic Programming",
     "Academic AI Research",
-    "ArtificialIntelligenceDomain",
     "Knowledge Representation",
-    "Expert Systems"
+    "AAAI",
+    "Expert Systems",
+    "Logic Programming",
+    "ArtificialIntelligenceDomain"
   ],
   "ontology": {
     "term_id": "AI-9001",
