@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: RB-9005\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9005\n\t- preferred-term:: Stigmergy\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Indirect coordination mechanism in swarm robotics where agents communicate through environmental modifications, enabling emergent collective behavior without direct communication.\n\t- source:: [[Swarm Intelligence]], [[Robotics Research]]\n\t- maturity:: emerging\n\t- owl:class:: rb:Stigmergy\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[RoboticsDomain]]\n\t- isSubclassOf:: [[Swarm Coordination]]",
   "backlinks": [],
   "wiki_links": [
-    "RoboticsDomain",
     "Robotics Research",
+    "RoboticsDomain",
     "Swarm Coordination",
     "Swarm Intelligence"
   ],
