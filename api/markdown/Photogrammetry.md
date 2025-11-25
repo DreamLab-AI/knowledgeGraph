@@ -1,0 +1,46 @@
+- ### OntologyBlock
+  id:: photogrammetry-ontology
+  collapsed:: true
+	- ontology:: true
+	- term-id:: DT-1049
+	- preferred-term:: Photogrammetry
+	- status:: draft
+	- public-access:: true
+	- definition:: A computational technique for reconstructing 3D geometry from overlapping photographic images through mathematical analysis of correspondences, camera poses, and geometric transformations to extract spatial information from 2D image data.
+	- source:: [[Siemens + ACM]]
+	- maturity:: mature
+	- owl:class:: mv:Photogrammetry
+	- owl:physicality:: VirtualEntity
+	- owl:role:: Process
+	- owl:inferred-class:: mv:VirtualProcess
+	- owl:functional-syntax:: true
+	- belongsToDomain:: [[CreativeMediaDomain]], [[RealityCaptureDomain]]
+	- implementedInLayer:: [[Application Layer]]
+	- #### Relationships
+	  id:: photogrammetry-relationships
+	  collapsed:: true
+		- is-subclass-of:: [[Metaverse]]
+		- is-part-of:: [[Reality Capture Workflow]]
+		- is-part-of:: [[3D Reconstruction Pipeline]]
+		- has-part:: [[Camera Calibration]]
+		- has-part:: [[Image Matching]]
+		- has-part:: [[Triangulation]]
+		- has-part:: [[Point Cloud Generation]]
+		- has-part:: [[Mesh Reconstruction]]
+		- has-part:: [[Feature Detection]]
+		- requires:: [[Multiple Images]]
+		- requires:: [[Image Processing Software]]
+		- requires:: [[Camera]]
+		- requires:: [[Computational Resources]]
+		- requires:: [[Overlapping Coverage]]
+		- enables:: [[Digital Twin Construction]]
+		- enables:: [[3D Model Creation]]
+		- enables:: [[Terrain Mapping]]
+		- enables:: [[Spatial Measurement]]
+		- enables:: [[Asset Digitization]]
+		- depends-on:: [[Camera Models]]
+		- depends-on:: [[Multi-View Geometry]]
+		- depends-on:: [[Computer Vision Algorithms]]
+		- depends-on:: [[Structure from Motion]]
+		- is-dependency-of:: [[Tourism Metaverse]]
+		- is-dependency-of:: [[Cultural Heritage XR Experience]]

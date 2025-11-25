@@ -1,0 +1,42 @@
+- ### OntologyBlock
+  id:: deepfakes-ontology
+  collapsed:: true
+	- ontology:: true
+	- term-id:: DT-0238
+	- preferred-term:: Deepfakes
+	- status:: draft
+	- public-access:: true
+	- definition:: AI-generated or manipulated synthetic media content that convincingly alters a person's appearance, voice, or actions using deep learning techniques such as GANs, autoencoders, and voice synthesis models.
+	- source:: [[Reed Smith]], [[ISO 29100]]
+	- maturity:: mature
+	- owl:class:: mv:Deepfakes
+	- owl:physicality:: VirtualEntity
+	- owl:role:: Object
+	- owl:inferred-class:: mv:VirtualObject
+	- owl:functional-syntax:: true
+	- belongsToDomain:: [[CreativeMediaDomain]], [[TrustAndGovernanceDomain]]
+	- implementedInLayer:: [[MiddlewareLayer]]
+	- #### Relationships
+	  id:: deepfakes-relationships
+	  collapsed:: true
+		- is-part-of:: [[Synthetic Media]]
+		- is-part-of:: [[AI-Generated Content]]
+		- has-part:: [[Audio Manipulation]]
+		- has-part:: [[Face Swapping]]
+		- has-part:: [[Voice Cloning]]
+		- has-part:: [[Synthetic Video Generation]]
+		- has-part:: [[Gesture Synthesis]]
+		- requires:: [[Deep Learning]]
+		- requires:: [[Training Dataset]]
+		- requires:: [[Computational Infrastructure]]
+		- requires:: [[Generative Adversarial Network]]
+		- requires:: [[Neural Network]]
+		- enables:: [[Misinformation]]
+		- enables:: [[Media Manipulation]]
+		- enables:: [[Content Creation]]
+		- enables:: [[Entertainment Production]]
+		- enables:: [[Identity Deception]]
+		- depends-on:: [[Machine Learning Models]]
+		- depends-on:: [[Audio Processing]]
+		- depends-on:: [[Face Recognition]]
+		- depends-on:: [[Computer Vision]]

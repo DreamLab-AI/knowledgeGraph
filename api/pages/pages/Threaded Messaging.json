@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: TC-9001\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-9001\n\t- preferred-term:: Threaded Messaging\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Asynchronous communication pattern where messages are organized into conversation threads, enabling contextual discussions and reducing notification overload.\n\t- source:: [[Collaboration Tools]], [[Slack]], [[Discord]]\n\t- maturity:: mature\n\t- owl:class:: tc:ThreadedMessaging\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[TelecollaborationDomain]]\n\t- isSubclassOf:: [[Asynchronous Collaboration]]",
   "backlinks": [],
   "wiki_links": [
-    "Discord",
-    "Asynchronous Collaboration",
     "Slack",
     "TelecollaborationDomain",
-    "Collaboration Tools"
+    "Asynchronous Collaboration",
+    "Collaboration Tools",
+    "Discord"
   ],
   "ontology": {
     "term_id": "TC-9001",

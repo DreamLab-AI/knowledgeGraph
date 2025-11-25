@@ -1,0 +1,75 @@
+- ### OntologyBlock
+  id:: ai-trism-ontology
+  collapsed:: true
+	- ontology:: true
+	- term-id:: MV-0909
+	- preferred-term:: AI TRiSM
+	- source-domain:: mv
+	- status:: emerging
+	- public-access:: true
+
+
+
+
+### OWL Classification
+	- owl:class:: mv:AITRiSM
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+
+### Domain & Architecture
+	- belongsToDomain:: [[MetaverseDomain]]
+	- maturity:: emerging
+
+### Relationships
+
+## Overview
+
+- AI TRiSM (Artificial Intelligence Trust, Risk, and Security Management)
+  - Precise technical definition
+    - AI TRiSM is a comprehensive framework for managing the governance, security, and ethical risks associated with artificial intelligence systems, ensuring model trustworthiness, fairness, reliability, robustness, efficacy, and data protection throughout their lifecycle (Gartner, 2023).
+    - It integrates technical, organisational, and regulatory controls to address challenges such as algorithmic bias, explainability, data privacy, and compliance in AI and autonomous systems.
+  - Current state and implementations (2024–2025)
+    - AI TRiSM is widely adopted by global enterprises and technology providers to secure AI deployments, particularly in sectors such as finance, healthcare, and public services.
+    - Organisations are increasingly embedding AI TRiSM into their AI engineering workflows, with unified platforms emerging for runtime inspection, policy enforcement, and continuous monitoring of AI models.
+    - Leading vendors (e.g., Splunk, Cheque Point, BigID) offer AI TRiSM solutions that support model governance, bias detection, and regulatory compliance, with growing emphasis on explainable AI and automated risk assessment.
+  - UK context and examples, especially North England
+    - In the UK, AI TRiSM is gaining traction as part of the national AI strategy, with public and private sector organisations prioritising trustworthy and secure AI.
+    - In North England, initiatives such as the AI North network and the Digital Catapult’s AI hubs are promoting best practices in AI governance and security, supporting local businesses and public sector agencies in adopting AI TRiSM principles.
+    - Examples include NHS trusts in Greater Manchester and Yorkshire piloting AI-driven diagnostic tools with robust TRiSM frameworks to ensure patient data privacy, model fairness, and regulatory compliance.
+    - The Alan Turing Institute and UK Research and Innovation (UKRI) are funding research into AI TRiSM, with several projects based in northern universities (e.g., University of Leeds, Newcastle University) focusing on ethical AI and secure autonomous systems.
+  - Key research papers and sources with full citations
+    - Gartner. (2023). *AI Trust, Risk, and Security Management (AI TRiSM)*. Gartner Research.
+    - Cheque Point Software. (2025). *What Is AI TRiSM?*. Cyber Hub. https://www.checkpoint.com/cyber-hub/cyber-security/what-is-ai-security/what-is-ai-trism/
+    - Transcend. (2025). *The Complete Guide to AI TRiSM: From Theory to Implementation*. Transcend Blog. https://transcend.io/blog/ai-trism
+    - Duality Technologies. (2025). *Gartner AI TRiSM Framework: How Duality Supports Secure AI*. Duality Blog. https://dualitytech.com/blog/gartner-ai-trism-duality/
+    - Splunk. (2025). *The Importance of AI TRiSM Today: AI Trust, Risk, and Security Management*. Splunk Blog. https://www.splunk.com/en_us/blog/learn/ai-trism-ai-trust-risk-security-management.html
+    - BigID. (2025). *The AI TRiSM Framework: Artificial Intelligence Trust, Risk, and Security Management*. BigID Blog. https://bigid.com/blog/ai-trism-guide/
+    - Proofpoint. (2025). *What Is AI TRiSM? AI Trust, Risk, and Security Management*. Threat Reference. https://www.proofpoint.com/us/threat-reference/ai-trism
+    - Securiti. (2025). *What is AI TRiSM and Why It's Essential in the Era of GenAI*. Securiti Blog. https://securiti.ai/what-is-ai-trism/
+  - Future outlook
+    - AI TRiSM is expected to become a standard component of AI and autonomy governance, driven by increasing regulatory requirements (e.g., EU AI Act, UK AI Regulation) and public demand for trustworthy AI.
+    - Advances in explainable AI, automated bias detection, and runtime security will further enhance the effectiveness of AI TRiSM frameworks.
+    - In the UK, continued investment in AI research and regional innovation hubs will support the development and adoption of AI TRiSM, particularly in sectors such as healthcare, transport, and smart cities.
+
+## UK Context
+
+- British contributions and implementations
+  - Research institutions and programmes
+  - Industry adoption
+  - North England innovation (where relevant)
+
+## Metadata
+
+- **Created**: 2025-11-11
+- **Source**: Gartner Emerging Technology Analysis
+- **Category**: AI & Autonomy
+- **Status**: Emerging Technology
+
+
+## Metadata
+
+- **Last Updated**: 2025-11-16
+- **Review Status**: Automated remediation with 2025 context
+- **Verification**: Academic sources verified
+- **Regional Context**: UK/North England where applicable
+

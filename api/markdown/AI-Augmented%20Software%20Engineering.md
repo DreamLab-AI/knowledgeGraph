@@ -1,0 +1,19 @@
+- ### OntologyBlock
+	- #### Identification
+		- ontology:: true
+		- term-id:: MV-0839
+		- preferred-term:: AI-Augmented Software Engineering
+		- source-domain:: ai-grounded
+		- status:: emerging
+		- public-access:: true
+		- last-updated:: None
+	- #### Definition
+		- definition:: [Generated from Gartner emerging tech analysis]
+	- #### Semantic Classification
+		- owl:class:: mv:AI-AugmentedSoftwareEngineering
+		- owl:physicality:: ConceptualEntity
+		- owl:role:: Concept
+		- maturity:: dt:Draft:Emerging
+		- authority-score:: 0.95
+	- #### Relationships
+		- is-subclass-of:: [[ArtificialIntelligence]]
