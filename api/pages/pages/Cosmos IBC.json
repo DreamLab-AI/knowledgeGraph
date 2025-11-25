@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "Layer 0 Protocol",
-    "Cosmos Network",
-    "IBC Protocol",
     "Interoperability Protocol",
-    "BlockchainDomain"
+    "BlockchainDomain",
+    "IBC Protocol",
+    "Cosmos Network"
   ],
   "ontology": {
     "term_id": "BC-9001",

@@ -3,6 +3,7 @@ public:: true
 - ### OntologyBlock
   id:: Foundation Models
   - ontology:: true
+  - public-access:: true
   - term-id:: MV-9715
   - preferred-term:: public:: true
   - source-domain:: mv

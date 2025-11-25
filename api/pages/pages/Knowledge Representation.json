@@ -1,0 +1,69 @@
+{
+  "id": "Knowledge Representation",
+  "title": "Knowledge Representation",
+  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1001\n  - preferred-term:: Knowledge Representation\n  - source-domain:: ai\n  - status:: draft\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]\n- has-subclass:: [[Expert Systems]]\n- has-subclass:: [[Semantic Networks]]\n- skos:related:: [[Logic Programming]]\n- skos:related:: [[Ontology]]\n- enables:: [[Reasoning Systems]]\n- enables:: [[Automated Planning]]\n\n### Definition\nKnowledge representation is the field of artificial intelligence concerned with representing information about the world in a form that computer systems can utilize to solve complex tasks. It involves structuring and encoding knowledge using formal languages, semantic networks, frames, rules, or logic-based systems to enable machines to reason, infer, and make decisions based on stored information.\n\n### Key Components\n- Symbolic representation schemes\n- Semantic networks and graphs\n- Frame-based systems\n- Rule-based representations\n- Description logics\n- Ontological engineering\n\n### Applications\n- Expert systems development\n- Question-answering systems\n- Intelligent agents\n- Knowledge-based reasoning\n- Automated decision-making",
+  "backlinks": [
+    "Fuzzy Logic",
+    "Automated Planning",
+    "STRIPS",
+    "Expert Systems",
+    "Symbolic AI",
+    "Intelligent Virtual Entity"
+  ],
+  "wiki_links": [
+    "Reasoning Systems",
+    "Expert Systems",
+    "Artificial Intelligence",
+    "Ontology",
+    "Logic Programming",
+    "Semantic Networks",
+    "Automated Planning"
+  ],
+  "ontology": {
+    "term_id": "AI-1001",
+    "preferred_term": "Knowledge Representation",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": null,
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: owl:class",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

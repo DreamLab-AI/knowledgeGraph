@@ -3,6 +3,7 @@ public:: true
 - ### OntologyBlock
   id:: Runes and Glyphs
   - ontology:: true
+  - public-access:: true
   - term-id:: BC-9903
   - preferred-term:: public:: true
   - source-domain:: bc

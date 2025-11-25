@@ -3,6 +3,7 @@ public:: true
 - ### OntologyBlock
   id:: Open Generative AI tools
   - ontology:: true
+  - public-access:: true
   - term-id:: MV-9726
   - preferred-term:: public:: true
   - source-domain:: mv

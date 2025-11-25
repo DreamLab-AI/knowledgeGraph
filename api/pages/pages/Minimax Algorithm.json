@@ -1,0 +1,64 @@
+{
+  "id": "Minimax Algorithm",
+  "title": "Minimax Algorithm",
+  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1005\n  - preferred-term:: Minimax Algorithm\n  - source-domain:: ai\n  - status:: draft\n\n### Relationships\n- is-subclass-of:: [[Search Algorithms]]\n- is-subclass-of:: [[Game Theory]]\n- skos:related:: [[Alpha-Beta Pruning]]\n- skos:related:: [[Decision Tree]]\n- used-in:: [[Game Playing AI]]\n- enables:: [[Adversarial Search]]\n\n### Definition\nMinimax is a decision-making algorithm used in two-player zero-sum games that determines the optimal move by minimizing the maximum possible loss. It works by recursively exploring the game tree, assuming the opponent will play optimally, and selecting moves that maximize the player's minimum guaranteed outcome.\n\n### Algorithm Principles\n- Maximizing player seeks highest score\n- Minimizing player (opponent) seeks lowest score\n- Recursive depth-first exploration\n- Backpropagation of utility values\n- Assumes perfect opponent play\n\n### Enhancements\n**Alpha-Beta Pruning:**\n- Eliminates branches that won't affect final decision\n- Reduces search space significantly\n- Maintains identical results to full minimax\n\n**Iterative Deepening:**\n- Gradually increases search depth\n- Provides time-bounded responses\n- Improves move ordering\n\n**Transposition Tables:**\n- Cache evaluated positions\n- Avoid redundant calculations\n\n### Applications\n- Chess engines\n- Checkers programs\n- Tic-tac-toe solvers\n- Connect Four\n- General turn-based games\n\n### Limitations\n- Exponential time complexity\n- Requires complete game state information\n- Computationally expensive for deep trees",
+  "backlinks": [
+    "Monte Carlo Tree Search",
+    "Search Algorithms"
+  ],
+  "wiki_links": [
+    "Game Theory",
+    "Adversarial Search",
+    "Alpha-Beta Pruning",
+    "Decision Tree",
+    "Search Algorithms",
+    "Game Playing AI"
+  ],
+  "ontology": {
+    "term_id": "AI-1005",
+    "preferred_term": "Minimax Algorithm",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": null,
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: owl:class",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "Feature Engineering",
+  "title": "Feature Engineering",
+  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1019\n  - preferred-term:: Feature Engineering\n  - source-domain:: ai\n  - status:: draft\n\n### Relationships\n- is-subclass-of:: [[Data Preprocessing]]\n- is-subclass-of:: [[Machine Learning]]\n- skos:related:: [[Data Cleaning]]\n- skos:related:: [[Dimensionality Reduction]]\n- skos:related:: [[Feature Selection]]\n- precedes:: [[Model Training]]\n- improves:: [[Model Performance]]\n\n### Definition\nFeature engineering is the process of using domain knowledge and creativity to transform raw data into meaningful features (input variables) that better represent the underlying problem to predictive models, thereby improving model accuracy. It involves creating new features, transforming existing ones, selecting relevant variables, and encoding information in ways that make patterns more apparent to machine learning algorithms.\n\n### Importance\n- Often the difference between good and great models\n- Can improve accuracy more than algorithm tuning\n- Domain knowledge crucial for insights\n- \"Applied machine learning is basically feature engineering\" - Andrew Ng\n- Automated feature engineering emerging but human expertise still critical\n\n### Core Techniques\n**Creating New Features:**\n- Polynomial features (x², x³, x×y)\n- Interaction terms (combining features)\n- Aggregations (sum, mean, max, count)\n- Statistical measures (rolling mean, std)\n- Ratios and differences\n- Domain-specific calculations\n\n**Feature Transformation:**\n- Normalization/standardization\n- Log/square root/box-cox transforms\n- Binning/discretization\n- One-hot encoding (categorical → binary)\n- Target encoding (mean encoding)\n- Frequency encoding\n\n**Temporal Features:**\n- Date decomposition (year, month, day, weekday)\n- Time since event\n- Time between events\n- Cyclical encoding (sin/cos for hours, months)\n- Lag features\n- Rolling statistics\n\n**Text Features:**\n- Bag of words\n- TF-IDF\n- N-grams\n- Word embeddings (Word2Vec, GloVe)\n- Text statistics (length, word count)\n- Sentiment scores\n\n**Geospatial Features:**\n- Distance calculations\n- Clustering locations\n- Proximity to points of interest\n- Geographic binning\n- Coordinate transformations\n\n### Encoding Categorical Variables\n**Nominal Categories:**\n- One-hot encoding (binary columns)\n- Binary encoding\n- Hash encoding\n- Leave-one-out encoding\n\n**Ordinal Categories:**\n- Label encoding (ordered integers)\n- Custom mapping based on domain\n\n**High-Cardinality Categories:**\n- Target encoding (mean of target per category)\n- Frequency encoding\n- Embedding layers (deep learning)\n- Grouping rare categories\n\n### Feature Extraction from Complex Data\n**Images:**\n- Edge detection\n- Color histograms\n- Texture features (GLCM)\n- Deep learning embeddings (CNN features)\n- Object detection outputs\n\n**Time Series:**\n- Fourier transforms (frequency domain)\n- Autocorrelation\n- Seasonality decomposition\n- Statistical features (tsfresh library)\n\n**Graphs/Networks:**\n- Node degree\n- Centrality measures\n- Community detection\n- Path-based features\n\n### Feature Selection\n**Filter Methods:**\n- Correlation with target\n- Mutual information\n- Chi-square test\n- ANOVA F-test\n\n**Wrapper Methods:**\n- Forward selection\n- Backward elimination\n- Recursive feature elimination (RFE)\n\n**Embedded Methods:**\n- L1 regularization (Lasso)\n- Tree-based feature importance\n- Elastic Net\n\n**Dimensionality Reduction:**\n- PCA (Principal Component Analysis)\n- LDA (Linear Discriminant Analysis)\n- t-SNE, UMAP (visualization)\n- Autoencoders\n\n### Domain-Specific Examples\n**E-commerce:**\n- Customer lifetime value\n- Days since last purchase\n- Purchase frequency\n- Category preferences\n- Price sensitivity\n\n**Finance:**\n- Moving averages\n- RSI, MACD indicators\n- Volatility measures\n- Debt-to-income ratio\n- Credit utilization\n\n**Healthcare:**\n- BMI (from height/weight)\n- Age groups\n- Risk scores\n- Treatment response indicators\n- Symptom combinations\n\n**NLP:**\n- Word embeddings\n- Part-of-speech tags\n- Named entity features\n- Syntax tree features\n- Readability scores\n\n### Automated Feature Engineering\n**Tools:**\n- Featuretools (automated generation)\n- tsfresh (time series)\n- AutoFeat (polynomial)\n- H2O Driverless AI\n\n**Deep Learning:**\n- Representation learning\n- Autoencoders\n- Embedding layers\n- End-to-end learning\n\n### Best Practices\n1. **Start with domain knowledge**\n   - Consult experts\n   - Understand business logic\n   - Research domain literature\n\n2. **Exploratory Data Analysis**\n   - Visualize distributions\n   - Correlation analysis\n   - Identify patterns\n\n3. **Iterate and validate**\n   - Cross-validation\n   - Monitor performance\n   - A/B testing in production\n\n4. **Handle data leakage**\n   - No future information\n   - Separate train/test properly\n   - Fit transformers on training only\n\n5. **Document features**\n   - Clear naming conventions\n   - Feature definitions\n   - Transformation logic\n\n6. **Consider scalability**\n   - Computation time\n   - Memory usage\n   - Real-time vs batch\n\n### Common Pitfalls\n- **Data leakage:** Using target information\n- **Overfitting:** Too many engineered features\n- **Complexity:** Hard to maintain/interpret\n- **Computational cost:** Expensive calculations\n- **Ignoring interactions:** Missing synergies\n- **Not standardizing:** Different scales cause issues\n\n### Feature Engineering Pipeline\n```python\n# Typical workflow\n1. Load raw data\n2. Handle missing values\n3. Encode categorical variables\n4. Create domain-specific features\n5. Generate interaction terms\n6. Scale/normalize\n7. Select features\n8. Validate on holdout set\n9. Deploy with same transformations\n```\n\n### Evaluation\n**Feature Importance:**\n- Permutation importance\n- SHAP values\n- Tree-based importance\n- Correlation analysis\n\n**Performance Metrics:**\n- Model accuracy improvement\n- Cross-validation scores\n- Learning curves\n- Ablation studies (remove features)\n\n### Modern Trends\n- Automated ML (AutoML) includes automated feature engineering\n- Deep learning reduces need (learns features)\n- Graph neural networks (relational features)\n- Transfer learning (pre-trained embeddings)\n- Feature stores (centralized feature management)\n\n### Impact on Different Models\n- **Linear models:** Benefit greatly (need explicit features)\n- **Tree-based:** Less critical (handle interactions)\n- **Neural networks:** Can learn features but good engineering helps\n- **Distance-based:** Critical (KNN, SVM sensitive to scale)\n\nFeature engineering remains an art and science combining domain expertise, creativity, statistical knowledge, and iterative experimentation to unlock the full potential of machine learning models.",
+  "backlinks": [
+    "Data Cleaning",
+    "Explainable AI (XAI)",
+    "Dimensionality Reduction"
+  ],
+  "wiki_links": [
+    "Dimensionality Reduction",
+    "Machine Learning",
+    "Data Cleaning",
+    "Model Training",
+    "Model Performance",
+    "Data Preprocessing",
+    "Feature Selection"
+  ],
+  "ontology": {
+    "term_id": "AI-1019",
+    "preferred_term": "Feature Engineering",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": null,
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: owl:class",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

@@ -3,6 +3,7 @@ public:: true
 - ### OntologyBlock
   id:: Open Webui and Pipelines
   - ontology:: true
+  - public-access:: true
   - term-id:: MV-9705
   - preferred-term:: public:: true
   - source-domain:: mv

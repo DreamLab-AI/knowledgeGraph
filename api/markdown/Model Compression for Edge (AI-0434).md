@@ -1,0 +1,14 @@
+id:: model-compression-for-edge-ai-0434-ontology
+
+- ### OntologyBlock
+  id:: Model Compression for Edge (AI-0434)
+  - ontology:: true
+  - public-access:: true
+  - term-id:: DT-0434
+  - preferred-term:: Model Compression for Edge (AI-0434)
+  - source-domain:: ai
+  - status:: in
+  - definition:: Model Compression for Edge is the systematic application of techniques reducing neural network computational requirements, memory footprint, and inference latency to enable deployment on resource-constrained edge devices while maintaining acceptable accuracy levels through quantization, pruning, knowledge distillation, and architectural optimization. This approach addresses deployment constraints including model size limitations where edge devices typically support models under 5-50MB compared to gigabyte-scale cloud models, memory bandwidth restrictions as edge processors have limited cache and DRAM bandwidth constraining data movement, computational capacity measured in GFLOPS or TOPS rather than TFLOPS of cloud GPUs, energy budgets requiring inference within milliwatt to watt power envelopes for battery-powered or thermally-constrained devices, and latency requirements demanding real-time inference under 20-100ms for interactive applications. Core techniques span quantization reducing numerical precision from FP32 to INT8 (4x compression) or even INT4/binary (8-32x compression) with minimal accuracy loss through quantization-aware training, pruning removing redundant weights through magnitude-based pruning eliminating smallest weights, structured pruning removing entire filters or channels, and iterative pruning gradually increasing sparsity while retraining, knowledge distillation training compact student models to mimic larger teacher models through soft target training and intermediate layer matching, and neural architecture search automatically discovering efficient architectures balancing accuracy and resource consumption through techniques like MobileNet (depthwise separable convolutions), EfficientNet (compound scaling), and hardware-aware NAS. Implementation pipelines typically combine multiple techniques achieving 4-10x compression with under 1% accuracy degradation measured through metrics including compression ratio (original/compressed size), speedup factor (inference time improvement), accuracy delta (performance degradation), and energy per inference (mJ/inference for battery life projections), with frameworks like TensorFlow Model Optimization Toolkit, ONNX Runtime, PyTorch Mobile, and Neural Network Compression Framework (NNCF) providing integrated workflows from training through deployment supporting various compression strategies and target hardware platforms including ARM Cortex-A/M, Qualcomm Hexagon DSP, Apple Neural Engine, and Google Edge TPU.
+
+### Relationships
+- is-subclass-of:: [[AIApplications]]

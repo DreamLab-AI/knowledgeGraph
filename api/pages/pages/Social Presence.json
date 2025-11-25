@@ -4,13 +4,15 @@
   "content": "- ### OntologyBlock\n  id:: TC-9004\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-9004\n\t- preferred-term:: Social Presence\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Subjective experience of feeling connected to and aware of other people in a mediated communication environment, fostering social interactions and relationships.\n\t- source:: [[Presence Research]], [[Telecollaboration]]\n\t- maturity:: mature\n\t- owl:class:: tc:SocialPresence\n\t- owl:physicality:: Abstract\n\t- owl:role:: Attribute\n\t- belongsToDomain:: [[TelecollaborationDomain]]\n\t- isSubclassOf:: [[Presence]]",
   "backlinks": [
     "TC-0010-Synchronous-Collaboration",
+    "tc-0001-video-conferencing",
+    "Avatar",
     "Presence"
   ],
   "wiki_links": [
-    "Telecollaboration",
-    "TelecollaborationDomain",
+    "Presence Research",
     "Presence",
-    "Presence Research"
+    "Telecollaboration",
+    "TelecollaborationDomain"
   ],
   "ontology": {
     "term_id": "TC-9004",

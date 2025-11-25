@@ -1,0 +1,58 @@
+{
+  "id": "Separation Of Powers",
+  "title": "Separation Of Powers",
+  "content": "- ### OntologyBlock\n  id:: separation-of-powers-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10038\n\t- source-domain:: metaverse\n\t- preferred-term:: Separation Of Powers\n\t- status:: stub\n\t- owl:class:: mv:SeparationOfPowers\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: separation-of-powers-relationships\n\t  collapsed:: true",
+  "backlinks": [],
+  "wiki_links": [
+    "metaverse"
+  ],
+  "ontology": {
+    "term_id": "MV-10038",
+    "preferred_term": "Separation Of Powers",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#SeparationOfPowers",
+    "source_domain": "metaverse",
+    "domain": "metaverse",
+    "domain_full_name": "",
+    "definition": null,
+    "scope_note": null,
+    "status": "stub",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:SeparationOfPowers",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "metaverse"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+      ]
+    }
+  }
+}

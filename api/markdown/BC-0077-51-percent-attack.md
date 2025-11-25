@@ -1,0 +1,14 @@
+id:: 51%-attack-ontology
+
+- ### OntologyBlock
+  id:: BC-0077-51-percent-attack
+  - ontology:: true
+  - public-access:: true
+  - term-id:: BC-9983
+  - preferred-term:: id:: 51%attackontology
+  - source-domain:: bc
+  - status:: draft
+
+### Relationships
+- uses-data-structure:: [[Blockchain]]
+- is-subclass-of:: [[Networkcomponent]]

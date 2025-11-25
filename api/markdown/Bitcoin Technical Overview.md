@@ -3,6 +3,7 @@ public:: true
 - ### OntologyBlock
   id:: Bitcoin Technical Overview
   - ontology:: true
+  - public-access:: true
   - term-id:: BC-9927
   - preferred-term:: public:: true
   - source-domain:: bc

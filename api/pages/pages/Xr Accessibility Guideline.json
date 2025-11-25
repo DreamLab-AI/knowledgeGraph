@@ -1,0 +1,56 @@
+{
+  "id": "Xr Accessibility Guideline",
+  "title": "Xr Accessibility Guideline",
+  "content": "- ### OntologyBlock\n  id:: Xr Accessibility Guideline\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-10168\n  - preferred-term:: Xr Accessibility Guideline\n  - source-domain:: mv\n  - status:: deprecated\n\n### Relationships\n\n### DEPRECATED\n### DEPRECATED\n**This entity has been merged into [[XR Accessibility Guideline]]**\n**Status**: deprecated\n**Merge Date**: 2025-11-23\n**Reason**: Duplicate entity consolidation",
+  "backlinks": [],
+  "wiki_links": [
+    "XR Accessibility Guideline"
+  ],
+  "ontology": {
+    "term_id": "MV-10168",
+    "preferred_term": "Xr Accessibility Guideline",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "mv",
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": null,
+    "scope_note": null,
+    "status": "deprecated",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": null,
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: owl:class",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

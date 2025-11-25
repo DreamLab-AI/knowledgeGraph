@@ -1,0 +1,56 @@
+{
+  "id": "MetaverseOntologySchema",
+  "title": "MetaverseOntologySchema",
+  "content": "- ### OntologyBlock\n  id:: MetaverseOntologySchema\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-1001\n  - preferred-term:: MetaverseOntologySchema\n  - source-domain:: mv\n  - status:: deprecated\n  - definition:: A metaverse ontology schema component in the Metaverse domain that required by GlossaryIndex.\n\n### Relationships\n- is-subclass-of:: [[Ontology Component]]\n\n### DEPRECATED\n### DEPRECATED\n**This entity has been merged into [[Metaverse Ontology Schema]]**\n**Status**: deprecated\n**Merge Date**: 2025-11-23\n**Reason**: Duplicate entity consolidation",
+  "backlinks": [],
+  "wiki_links": [
+    "Ontology Component",
+    "Metaverse Ontology Schema"
+  ],
+  "ontology": {
+    "term_id": "MV-1001",
+    "preferred_term": "MetaverseOntologySchema",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "mv",
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "A metaverse ontology schema component in the Metaverse domain that required by GlossaryIndex.",
+    "scope_note": null,
+    "status": "deprecated",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": null,
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:class",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

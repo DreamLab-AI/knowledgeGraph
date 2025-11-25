@@ -1,0 +1,60 @@
+{
+  "id": "Participatory Policy Making",
+  "title": "Participatory Policy Making",
+  "content": "- ### OntologyBlock\n  id:: participatory-policy-making-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9999\n\t- preferred-term:: Participatory Policy Making\n\t- status:: stub\n\t- owl:class:: mv:ParticipatoryPolicyMaking\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: participatory-policy-making-relationships\n\t  collapsed:: true",
+  "backlinks": [
+    "Digital Citizens' Assembly"
+  ],
+  "wiki_links": [
+    "metaverse"
+  ],
+  "ontology": {
+    "term_id": "MV-9999",
+    "preferred_term": "Participatory Policy Making",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#ParticipatoryPolicyMaking",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": null,
+    "scope_note": null,
+    "status": "stub",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:ParticipatoryPolicyMaking",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "metaverse"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

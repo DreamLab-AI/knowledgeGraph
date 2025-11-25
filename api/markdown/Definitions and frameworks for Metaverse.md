@@ -1,0 +1,116 @@
+Definitions and frameworks for Metaverse
+
+- ### OntologyBlock
+  id:: Definitions and frameworks for Metaverse
+  - ontology:: true
+  - public-access:: true
+  - term-id:: MV-9734
+  - preferred-term:: Definitions And Frameworks For Metaverse
+  - source-domain:: mv
+  - status:: draft
+
+### More like meeting support
+- ##### Spatial
+		- Spatial is worth a quick look because it’s a business first meetingtool, and comparatively well received by industry for that purpose.
+		- - Very compelling. Wins at wow.
+		- - Great avatars, user generated
+		- - AR first design
+		- - Limited scenes
+		- - Smaller groups (12?)
+		- - Limited headset support
+		- - Intuitive meeting support tools
+		- - No back end integration
+	- ##### MeetinVR
+		-
+		- Good enough graphics, pretty mature system
+		-
+		- OK indicative avatars, user selected
+		-
+		- VR first design
+		-
+		- Limited scenes
+		-
+		- Smaller groups (12?)
+		-
+		- Quest and PC
+		-
+		- Writing and gestures supported
+		-
+		- Some basic enterprise tools integration
+		-
+		- Bring in 3D objects
+		-
+		- Need to apply for a licence?
+	- ##### Glue
+		-
+		- Better enterprise security integration
+		-
+		- Larger environments, potential for breakouts in the same space. Workshop capable
+		-
+		- 3D object support, screen sharing, some collaborative tools
+		-
+		- Apply for a licence
+		-
+		- Fairly basic graphics
+		-
+		- Basic avatars
+		-
+		- Quest and PC
+		-
+		- Writing and gestures supported
+		-
+		- Mac support
+	- ##### FramesVR
+		-
+		- Really simple to join
+		-
+		- Basic avatars
+		-
+		- Bit buggy
+		-
+		- 3D object support, screen sharing, some collaborative tools
+		-
+		- Quest and PC
+		-
+		- Larger scenes within scenes
+		-
+		- Runs in the browser
+	- ##### Engage
+		-
+		- Great polished graphics
+		-
+		- Fully customisable avatars
+		-
+		- Limited scenes
+		-
+		- Presentation to groups for education and learning
+		-
+		- PC first, quest is side loadable but that’s a technical issue
+		-
+		- BigScreen VR
+		-
+		- Seated in observation points in a defined shared theatre
+		-
+		- Screen sharing virtual communal screen watching, aimed at gamers, film watching
+		-
+		- up to 12 user
+	- ##### Gather
+		- Gather is an oddball meeting space based around fully customisable 2Drooms with a game feel. It’s really a spatialised twist on videoconferencing but interesting.
+	- ##### NEOSVR
+		- [Notable because](https://neos.com/) it’s trying to integrate cryptomarketplaces, but we haven’t tried it yet.
+	- #### Mixed reality as a metaverse
+		- [Spatial anchors](https://docs.microsoft.com/en-us/windows/mixed-reality/design/spatial-anchors) allow digital objects to be overlaid persistently in the real world. With a global ‘shared truth’ of such objects a different kind of metaverse can arise. One such example is clearly the [[Apple]] [[Vision Pro]]
+	- #### Augmented reality
+		- Marc Petit, general manager of Epic Games envisages a 2 watt pair ofglasses, connected to a 10 watt phone, connected to a 100 watt computeron the edge. This is a device cascade problem which has not yet beensolved, and is at the edge of achievable thermodynamics and latency.
+		- The closest technology at this time seems to be [Lumus’ waveguideprojectors](https://lumusvision.com/) which are light, bright and highresolution. Peggy Johnson, CEO of Magic Leap, one of the market leaderssaid: it“If I had to guess, I think, maybe, five or so years out, forthe type of fully immersive augmented reality that we do.”
+		- In a [GQprofile](https://www.gq.com/story/tim-cook-global-creativity-awards-cover-2023?mbid=social_twitter)Cook, the Apple CEO talked at length about the challenges andopportunities of AR headsets. He has been emphasising the importance ofaugmented reality over VR for almost a decade, believing that AR canenhance communication and connection by overlaying digital elements onthe physical world. Cook’s vision aligns with Apple’s rumoured mixedreality headset, which is expected to cost around $3,000 and focus on‘copresence’, which we have discussed at length in this chapter. Apple’sapproach differs from Meta’s metaverse, as Apple aims to integratedigital aspects into the real world rather than create purely digitalspaces. This is an interesting area for our applications of bringingsmall teams together, but the pricing at this time is significantly atodds with our chosen market. Cook, like this book, has highlighted AR’spotential in education and its ability to bring people together in thereal world.
+	- #### Ubiquitous displays
+		- This includes [laser retinaldisplays](https://skarredghost.com/2022/06/28/mojo-vision-contact-tested-eye/),and smart screens which are context and user aware.
+
+
+## Metadata
+
+- **Last Updated**: 2025-11-16
+- **Review Status**: Automated remediation with 2025 context
+- **Verification**: Academic sources verified
+- **Regional Context**: UK/North England where applicable

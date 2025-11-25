@@ -3,6 +3,7 @@ public:: true
 - ### OntologyBlock
   id:: Decentralised file storage
   - ontology:: true
+  - public-access:: true
   - term-id:: BC-9898
   - preferred-term:: public:: true
   - source-domain:: bc

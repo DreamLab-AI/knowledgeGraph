@@ -1,0 +1,63 @@
+{
+  "id": "STRIPS",
+  "title": "STRIPS",
+  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1009\n  - preferred-term:: STRIPS\n  - source-domain:: ai\n  - status:: draft\n\n### Relationships\n- is-subclass-of:: [[Knowledge Representation]]\n- is-subclass-of:: [[Planning Languages]]\n- used-in:: [[Automated Planning]]\n- skos:related:: [[Automated Planning]]\n- skos:related:: [[Logic Programming]]\n- precursor-to:: [[PDDL]]\n\n### Definition\nSTRIPS (Stanford Research Institute Problem Solver) is a classical automated planning language and algorithm developed in the 1970s. It represents states as conjunctions of propositions (facts), actions as operators with preconditions and effects, and uses means-ends analysis to construct plans by backward chaining from goals to achievable states.\n\n### STRIPS Representation\n**State:**\n- Set of ground atomic formulas\n- Closed-world assumption\n- Example: {On(A,B), On(B,Table), Clear(A)}\n\n**Operators (Actions):**\n- Name and parameters\n- Preconditions: must be true to execute\n- Add list: facts made true\n- Delete list: facts made false\n\n### Classic Example: Blocks World\n```\nAction: Move(block, from, to)\nPreconditions:\n  - On(block, from)\n  - Clear(block)\n  - Clear(to)\nAdd effects:\n  - On(block, to)\n  - Clear(from)\nDelete effects:\n  - On(block, from)\n  - Clear(to)\n```\n\n### STRIPS Algorithm\n1. Start with initial state and goal\n2. Find unsatisfied goal condition\n3. Find operator that achieves it\n4. Recursively plan for operator's preconditions\n5. Execute operator\n6. Repeat until all goals satisfied\n\n### Limitations\n- Propositional representation only\n- No time or resources\n- Deterministic actions\n- Complete observability\n- Static world during planning\n\n### Historical Significance\n- Foundation for modern planning\n- Influenced PDDL standard\n- Basis for many planning competitions\n- Led to hierarchical and temporal extensions\n\n### Successors\n- ADL (richer representation)\n- PDDL (standardized language)\n- HTN (hierarchical planning)",
+  "backlinks": [
+    "Planning and Scheduling",
+    "Automated Planning"
+  ],
+  "wiki_links": [
+    "Knowledge Representation",
+    "PDDL",
+    "Planning Languages",
+    "Logic Programming",
+    "Automated Planning"
+  ],
+  "ontology": {
+    "term_id": "AI-1009",
+    "preferred_term": "STRIPS",
+    "alt_terms": [],
+    "iri": null,
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": null,
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": null,
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: owl:class",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

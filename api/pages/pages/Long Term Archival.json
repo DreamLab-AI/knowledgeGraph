@@ -1,0 +1,58 @@
+{
+  "id": "Long Term Archival",
+  "title": "Long Term Archival",
+  "content": "- ### OntologyBlock\n  id:: long-term-archival-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9948\n\t- preferred-term:: Long Term Archival\n\t- status:: stub\n\t- owl:class:: mv:LongTermArchival\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: long-term-archival-relationships\n\t  collapsed:: true",
+  "backlinks": [],
+  "wiki_links": [
+    "metaverse"
+  ],
+  "ontology": {
+    "term_id": "MV-9948",
+    "preferred_term": "Long Term Archival",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#LongTermArchival",
+    "source_domain": null,
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": null,
+    "scope_note": null,
+    "status": "stub",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:LongTermArchival",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "metaverse"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: source-domain",
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}
