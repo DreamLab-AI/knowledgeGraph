@@ -7,14 +7,14 @@
     "Training Hardware"
   ],
   "wiki_links": [
-    "Training Hardware",
-    "AI Hardware",
-    "TensorFlow",
-    "GPU",
-    "ASIC",
     "Large Language Models",
+    "TensorFlow",
+    "Inference Hardware",
+    "Training Hardware",
     "Deep Learning",
-    "Inference Hardware"
+    "ASIC",
+    "AI Hardware",
+    "GPU"
   ],
   "ontology": {
     "term_id": "AI-1025",

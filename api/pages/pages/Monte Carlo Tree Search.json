@@ -6,12 +6,12 @@
     "Search Algorithms"
   ],
   "wiki_links": [
-    "AlphaGo",
+    "Game Playing AI",
     "Random Sampling",
-    "Reinforcement Learning",
     "Minimax Algorithm",
     "Search Algorithms",
-    "Game Playing AI"
+    "AlphaGo",
+    "Reinforcement Learning"
   ],
   "ontology": {
     "term_id": "AI-1006",
