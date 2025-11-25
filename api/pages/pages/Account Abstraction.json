@@ -4,9 +4,9 @@
   "content": "- ### OntologyBlock\n  id:: BC-9005\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-9005\n\t- preferred-term:: Account Abstraction\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: ERC-4337 standard that enables smart contract wallets with programmable logic, allowing users to customize transaction validation, gas payment, and account recovery without protocol changes.\n\t- source:: [[ERC-4337]], [[Ethereum]]\n\t- maturity:: emerging\n\t- owl:class:: bc:AccountAbstraction\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- isSubclassOf:: [[Ethereum Standard]]",
   "backlinks": [],
   "wiki_links": [
-    "Ethereum Standard",
-    "ERC-4337",
     "BlockchainDomain",
+    "ERC-4337",
+    "Ethereum Standard",
     "Ethereum"
   ],
   "ontology": {

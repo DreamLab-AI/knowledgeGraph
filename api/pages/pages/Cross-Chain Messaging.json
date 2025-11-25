@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: BC-9003\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-9003\n\t- preferred-term:: Cross-Chain Messaging\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Protocols and mechanisms that enable communication and data transfer between different blockchain networks, facilitating interoperability and cross-chain applications.\n\t- source:: [[Blockchain Interoperability]]\n\t- maturity:: emerging\n\t- owl:class:: bc:CrossChainMessaging\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- isSubclassOf:: [[Interoperability Protocol]]",
   "backlinks": [],
   "wiki_links": [
-    "Blockchain Interoperability",
     "BlockchainDomain",
+    "Blockchain Interoperability",
     "Interoperability Protocol"
   ],
   "ontology": {
