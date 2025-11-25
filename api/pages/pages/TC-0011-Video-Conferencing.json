@@ -6,21 +6,21 @@
     "TC-0010-Synchronous-Collaboration"
   ],
   "wiki_links": [
-    "TELE-107-ai-meeting-assistants",
-    "TELE-105-real-time-language-translation",
-    "TC-0010-Synchronous-Collaboration",
-    "Real-Time Communication Protocols",
-    "TC-0016-Remote-Pair-Programming",
-    "Remote Meetings",
-    "TELE-153-5g-telepresence",
-    "Face-to-Face Interaction",
     "TC-0012-Screen-Sharing",
+    "TELE-107-ai-meeting-assistants",
     "TC-0013-Virtual-Meeting",
-    "TELE-150-webrtc",
-    "TELE-100-ai-avatars",
     "TELE-021-augmented-reality-collaboration",
     "TELE-020-virtual-reality-telepresence",
-    "High-Bandwidth Network"
+    "TC-0010-Synchronous-Collaboration",
+    "Real-Time Communication Protocols",
+    "TELE-153-5g-telepresence",
+    "TELE-100-ai-avatars",
+    "Face-to-Face Interaction",
+    "Remote Meetings",
+    "TELE-150-webrtc",
+    "TC-0016-Remote-Pair-Programming",
+    "High-Bandwidth Network",
+    "TELE-105-real-time-language-translation"
   ],
   "ontology": {
     "term_id": "TC-0011",
