@@ -7,12 +7,12 @@
     "Data Annotation"
   ],
   "wiki_links": [
-    "Labeling Cost",
     "Online Learning",
+    "Uncertainty Sampling",
     "Data-Efficient Learning",
     "Semi-Supervised Learning",
+    "Labeling Cost",
     "Machine Learning",
-    "Uncertainty Sampling",
     "Human-in-the-Loop"
   ],
   "ontology": {

@@ -6,13 +6,13 @@
     "Inference Hardware"
   ],
   "wiki_links": [
-    "Edge Computing",
-    "AI Hardware",
     "Custom Neural Architectures",
-    "Low-Latency Inference",
-    "Inference Hardware",
-    "Reconfigurable Computing",
+    "Edge Computing",
     "Hardware Acceleration",
+    "Low-Latency Inference",
+    "Reconfigurable Computing",
+    "Inference Hardware",
+    "AI Hardware",
     "ASIC"
   ],
   "ontology": {

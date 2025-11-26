@@ -4,10 +4,10 @@
   "content": "- ### OntologyBlock\n  id:: RB-9002\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9002\n\t- preferred-term:: Shape Memory Alloy Actuator\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Soft robotics actuator using shape memory alloys that change shape when heated, enabling lightweight and compact actuation for compliant robots.\n\t- source:: [[Soft Robotics]], [[Materials Science]]\n\t- maturity:: emerging\n\t- owl:class:: rb:ShapeMemoryAlloyActuator\n\t- owl:physicality:: Physical\n\t- owl:role:: Object\n\t- belongsToDomain:: [[RoboticsDomain]]\n\t- isSubclassOf:: [[Soft Robotics Actuator]]",
   "backlinks": [],
   "wiki_links": [
-    "Soft Robotics",
     "Materials Science",
-    "Soft Robotics Actuator",
-    "RoboticsDomain"
+    "RoboticsDomain",
+    "Soft Robotics",
+    "Soft Robotics Actuator"
   ],
   "ontology": {
     "term_id": "RB-9002",
