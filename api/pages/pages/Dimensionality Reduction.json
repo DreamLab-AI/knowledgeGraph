@@ -6,16 +6,16 @@
     "Feature Engineering"
   ],
   "wiki_links": [
-    "t-SNE",
     "Unsupervised Learning",
-    "PCA",
-    "Curse of Dimensionality",
+    "t-SNE",
+    "Feature Selection",
     "Feature Engineering",
     "Computational Efficiency",
+    "Curse of Dimensionality",
+    "PCA",
+    "Data Visualization",
     "Machine Learning",
-    "Feature Selection",
-    "UMAP",
-    "Data Visualization"
+    "UMAP"
   ],
   "ontology": {
     "term_id": "AI-1021",

@@ -6,13 +6,13 @@
     "Active Learning"
   ],
   "wiki_links": [
-    "Incremental Learning",
-    "Adaptive Systems",
     "Real-Time Learning",
-    "Stochastic Gradient Descent",
-    "Continual Learning",
     "Reinforcement Learning",
-    "Machine Learning"
+    "Adaptive Systems",
+    "Continual Learning",
+    "Machine Learning",
+    "Stochastic Gradient Descent",
+    "Incremental Learning"
   ],
   "ontology": {
     "term_id": "AI-1012",

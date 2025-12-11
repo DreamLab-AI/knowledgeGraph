@@ -1,6 +1,5 @@
-- ### OntologyBlock
-  id:: workforceaugmentation-ontology
-  collapsed:: true
+### OntologyBlock
+id:: workforceaugmentation-ontology
 	- ontology:: true
 	- term-id:: AI-0872
 	- preferred-term:: Workforce Augmentation
@@ -10,7 +9,5 @@
 	- maturity:: dt:Established
 	- owl:class:: ai:WorkforceAugmentation
 	- belongsToDomain:: [[Artificial Intelligence]]
-
-### Relationships
-
+- ### Relationships
 - is-subclass-of:: [[ai:ArtificialIntelligence]]

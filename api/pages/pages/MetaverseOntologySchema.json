@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: MetaverseOntologySchema\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-1001\n  - preferred-term:: MetaverseOntologySchema\n  - source-domain:: mv\n  - status:: deprecated\n  - definition:: A metaverse ontology schema component in the Metaverse domain that required by GlossaryIndex.\n\n### Relationships\n- is-subclass-of:: [[Ontology Component]]\n\n### DEPRECATED\n### DEPRECATED\n**This entity has been merged into [[Metaverse Ontology Schema]]**\n**Status**: deprecated\n**Merge Date**: 2025-11-23\n**Reason**: Duplicate entity consolidation",
   "backlinks": [],
   "wiki_links": [
-    "Ontology Component",
-    "Metaverse Ontology Schema"
+    "Metaverse Ontology Schema",
+    "Ontology Component"
   ],
   "ontology": {
     "term_id": "MV-1001",
