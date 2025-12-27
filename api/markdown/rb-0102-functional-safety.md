@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0102
 	- source-domain:: rb
-	- preferred-term:: rb 0102 functional safety
-	- status:: draft
+	- preferred-term:: Functional Safety
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0102functionalsafety
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Functional safety refers to the part of overall safety that depends on a system or equipment operating correctly in response to its inputs, including safe management of likely operator errors.
+	- owl:class:: rb:FunctionalSafety
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

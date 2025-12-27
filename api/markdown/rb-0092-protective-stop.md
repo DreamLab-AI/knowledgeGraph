@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0092
 	- source-domain:: rb
-	- preferred-term:: rb 0092 protective stop
-	- status:: draft
+	- preferred-term:: Protective Stop
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0092protectivestop
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Protective stop is a robot safety function that halts motion in response to detected hazards while maintaining motor power for quick restart after the hazard is cleared.
+	- owl:class:: rb:ProtectiveStop
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

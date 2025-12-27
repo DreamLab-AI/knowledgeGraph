@@ -1,24 +1,28 @@
 {
   "id": "Monetary System",
   "title": "Monetary System",
-  "content": "- ### OntologyBlock\n  id:: monetary-system-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9971\n\t- source-domain:: metaverse\n\t- preferred-term:: Monetary System\n\t- status:: stub\n\t- owl:class:: mv:MonetarySystem\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: monetary-system-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: monetary-system-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9971\n\t- source-domain:: mv\n\t- preferred-term:: Monetary System\n\t- status:: active\n\t- owl:class:: mv:MonetarySystem\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: The comprehensive framework of institutions, regulations, and mechanisms governing money creation, distribution, and management within an economy, now evolving to incorporate digital currencies, CBDCs, and blockchain-based financial systems.\n\t- #### Relationships\n\t  id:: monetary-system-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Financial System]]\n\t\t- related-to:: [[Digital Currency]]\n\t\t- related-to:: [[Central Banking]]\n\t\t- enables:: [[Economic Exchange]]\n\n## Digital Transformation\n\n### Global CBDC Progress\n- 137 countries exploring\n- 98% global GDP coverage\n- 72 advanced phase countries\n- 49 active pilots\n- 3 full launches\n\n### Major Pilots\n\n#### Digital Yuan (China)\n- Largest global pilot\n- 7 trillion e-CNY volume\n- $986 billion transactions\n- 17 provincial regions\n- Expanding use cases\n\n#### Digital Rupee (India)\n- Second-largest pilot\n- 334% circulation growth\n- ₹10.16 billion by March 2025\n- Retail and wholesale\n- Offline capability\n\n## Monetary Policy Impact\n\n### CBDC Effects\n- Reserve management changes\n- Interest rate transmission\n- Liquidity management\n- Balance sheet implications\n- Policy tool evolution\n\n### IMF Analysis (2024)\n- Cash substitution scenarios\n- Deposit displacement\n- Reserve adjustments\n- Short-term rate effects\n- Policy target maintenance\n\n## System Components\n\n### Traditional Elements\n- Central banks\n- Commercial banks\n- Payment systems\n- Clearing houses\n- Regulatory bodies\n\n### Digital Additions\n- CBDC infrastructure\n- Blockchain networks\n- Tokenised deposits\n- Digital wallets\n- Smart contracts\n\n## Motivations for Digital Money\n\n### Financial Inclusion\n- Unbanked population access\n- Lower transaction costs\n- Mobile accessibility\n- Simplified onboarding\n- Rural reach\n\n### Payment Efficiency\n- Faster settlements\n- Lower fees\n- 24/7 availability\n- Cross-border improvement\n- Programmable features\n\n### Competition and Resilience\n- Payment market diversity\n- Reduced monopoly risk\n- System redundancy\n- Innovation encouragement\n- Consumer choice\n\n## Cryptocurrency Integration\n\n### Market Status\n- Trillions in Bitcoin market cap\n- Growing institutional adoption\n- Regulatory evolution\n- Stablecoin expansion\n- DeFi development\n\n### Five Trajectories\n- Central bank dominance\n- Cryptocurrency adoption\n- Private stablecoin growth\n- Hybrid systems\n- Platform currencies\n\n## Hong Kong Initiative (2024)\n\n### Project Ensemble\n- Wholesale CBDC launch\n- Interbank settlement\n- Tokenised deposits\n- Tokenised assets\n- Sandbox development\n\n### Interoperability Focus\n- Cross-system compatibility\n- Asset tokenisation\n- Settlement efficiency\n- Innovation testing\n- Industry collaboration\n\n## Macroeconomic Effects\n\n### Banking Sector\n- Deposit competition\n- Wholesale funding shift\n- Profit impacts\n- Business model changes\n- Service innovation\n\n### Broader Economy\n- Financial inclusion gains\n- Dollarisation reduction\n- Cryptoisation prevention\n- Transaction transparency\n- Economic monitoring\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
     "Central Bank Digital Currency (CBDC)"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Economic Exchange",
+    "Financial System",
+    "Digital Currency",
+    "Central Banking"
   ],
   "ontology": {
     "term_id": "MV-9971",
     "preferred_term": "Monetary System",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#MonetarySystem",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "source_domain": "mv",
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "The comprehensive framework of institutions, regulations, and mechanisms governing money creation, distribution, and management within an economy, now evolving to incorporate digital currencies, CBDCs, and blockchain-based financial systems.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +34,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Financial System"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Economic Exchange"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +53,18 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Digital Currency",
+        "Central Banking"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "Missing required property: owl:role"
       ]
     }
   }

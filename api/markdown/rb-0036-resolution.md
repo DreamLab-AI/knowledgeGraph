@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0036
 	- source-domain:: rb
-	- preferred-term:: rb 0036 resolution
-	- status:: draft
+	- preferred-term:: Resolution
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0036resolution
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Resolution in robotics is the smallest incremental motion that a robot can achieve, determined by encoder precision and control system capabilities, distinct from accuracy and repeatability.
+	- owl:class:: rb:Resolution
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

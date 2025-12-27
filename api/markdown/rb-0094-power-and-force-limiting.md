@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0094
 	- source-domain:: rb
-	- preferred-term:: rb 0094 power and force limiting
-	- status:: draft
+	- preferred-term:: Power And Force Limiting
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0094powerandforcelimiting
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Power and force limiting is a collaborative robot safety method that constrains the robot's power and contact force to levels safe for human interaction, enabling shared workspace operation.
+	- owl:class:: rb:PowerAndForceLimiting
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

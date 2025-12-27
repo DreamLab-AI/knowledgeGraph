@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0030
 	- source-domain:: rb
-	- preferred-term:: rb 0030 jacobian matrix
-	- status:: draft
+	- preferred-term:: Jacobian Matrix
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0030jacobianmatrix
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: The Jacobian matrix is a mathematical transformation that relates joint velocities to end-effector velocities, essential for inverse kinematics, singularity analysis, and force mapping in robot manipulators.
+	- owl:class:: rb:JacobianMatrix
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

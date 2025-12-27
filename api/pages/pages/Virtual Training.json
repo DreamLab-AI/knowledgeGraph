@@ -1,14 +1,17 @@
 {
   "id": "Virtual Training",
   "title": "Virtual Training",
-  "content": "- ### OntologyBlock\n  id:: virtual-training-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10151\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Training\n\t- status:: stub\n\t- owl:class:: mv:VirtualTraining\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: virtual-training-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-training-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10151\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Training\n\t- status:: active\n\t- definition:: The use of VR, AR, and simulation technologies to create immersive learning experiences for workforce development, enabling employees to practice skills, experience scenarios, and learn procedures in safe, repeatable virtual environments with measurable outcomes and faster knowledge retention.\n\t- owl:class:: mv:VirtualTraining\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Workforce Development]]\n\t\t- related-to:: [[Virtual Reality VR]]\n\t\t- related-to:: [[Simulation]]\n\t\t- related-to:: [[Enterprise Learning]]\n\t  id:: virtual-training-relationships\n\t  collapsed:: true\n- ## Overview\n\t- The global virtual training and simulation market was valued at $380.11 billion in 2024, projected to reach $1.42 trillion by 2034 at 14.08% CAGR. VR-trained employees are 4x more focused than e-learning peers and retain up to 75% of material vs 10% for lectures. Walmart's VR initiative improved test scores 10-15% while reducing training time 30%, training over 1 million employees. VR learners are 275% more confident applying skills after training.\n- ## Technical Details\n\t- ### Training Benefits\n\t\t- **Engagement**: 75% engagement rate outperforming traditional methods\n\t\t- **Retention**: 75% material retention vs 10% for lectures\n\t\t- **Emotional Connection**: 3.75x more connected than classroom learning\n\t\t- **Time Reduction**: Walmart reduced 30-45 min sessions to 3-5 min VR simulations\n\t- ### Industry Applications\n\t\t- **Aviation**: NASA, USAF, Boeing flight simulators\n\t\t- **Healthcare**: Surgical procedure practice on virtual patients\n\t\t- **Manufacturing**: Equipment operation and safety\n\t\t- **Retail**: Customer service and store operations\n\t\t- **Military**: Combat and tactical training\n\t- ### Technology Platforms\n\t\t- Meta Quest 3 standalone headsets for enterprise\n\t\t- Strivr for workforce performance\n\t\t- Transfr for career exploration\n\t\t- VR Vision for custom training simulations\n\t- ### AI Integration\n\t\t- Intelligent adaptive training content\n\t\t- Performance analytics and assessment\n\t\t- Personalized learning paths\n\t\t- Natural language interaction\n- ## Applications\n\t- Employee onboarding programs\n\t- Safety and compliance training\n\t- Technical skill development\n\t- Soft skill and communication practice\n\t- High-stakes scenario rehearsal\n\t- Equipment operation certification",
   "backlinks": [
     "Virtual Reality (VR)",
     "tc-0003-telepresence-robot"
   ],
   "wiki_links": [
+    "Virtual Reality VR",
     "metaverse",
-    "Metaverse"
+    "Simulation",
+    "Workforce Development",
+    "Enterprise Learning"
   ],
   "ontology": {
     "term_id": "MV-10151",
@@ -18,9 +21,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The use of VR, AR, and simulation technologies to create immersive learning experiences for workforce development, enabling employees to practice skills, experience scenarios, and learn procedures in safe, repeatable virtual environments with measurable outcomes and faster knowledge retention.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -33,7 +36,7 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Workforce Development"
     ],
     "has_part": [],
     "is_part_of": [],
@@ -49,11 +52,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Virtual Reality VR",
+        "Simulation",
+        "Enterprise Learning"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

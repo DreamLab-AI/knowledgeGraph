@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0093
 	- source-domain:: rb
-	- preferred-term:: rb 0093 speed limitation
-	- status:: draft
+	- preferred-term:: Speed Limitation
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0093speedlimitation
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Speed limitation is a safety function that restricts robot movement velocity to predetermined safe values, particularly during human-robot collaborative operations.
+	- owl:class:: rb:SpeedLimitation
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

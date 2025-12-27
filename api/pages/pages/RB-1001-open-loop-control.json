@@ -8,14 +8,14 @@
   "wiki_links": [
     "Stepper Motor Control",
     "Actuator",
-    "Feedback Mechanism",
-    "Control System",
     "Forward Kinematics",
+    "No Feedback",
     "RB-1002-closed-loop-control",
     "Control Theory",
-    "No Feedback",
-    "Servo Control",
     "Robotics",
+    "Servo Control",
+    "Control System",
+    "Feedback Mechanism",
     "Predictability"
   ],
   "ontology": {

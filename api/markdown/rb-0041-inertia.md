@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0041
 	- source-domain:: rb
-	- preferred-term:: rb 0041 inertia
-	- status:: draft
+	- preferred-term:: Inertia
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0041inertia
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Inertia in robotics refers to a body's resistance to changes in angular or linear motion, characterised by the inertia tensor which affects robot dynamics, control, and energy requirements.
+	- owl:class:: rb:Inertia
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

@@ -1,13 +1,22 @@
 {
   "id": "Digital Asset Ecosystem",
   "title": "Digital Asset Ecosystem",
-  "content": "- ### OntologyBlock\n  id:: digital-asset-ecosystem-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9847\n\t- source-domain:: mv\n\t- preferred-term:: Digital Asset Ecosystem\n\t- status:: stub\n\t- owl:class:: mv:DigitalAssetEcosystem\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: digital-asset-ecosystem-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-asset-ecosystem-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9847\n\t- source-domain:: mv\n\t- preferred-term:: Digital Asset Ecosystem\n\t- definition:: The interconnected network of platforms, protocols, services, and participants that collectively enable the creation, storage, exchange, and utilization of blockchain-based digital assets including cryptocurrencies, tokens, NFTs, and tokenized real-world assets across decentralized and centralized infrastructure.\n\t- status:: active\n\t- owl:class:: mv:DigitalAssetEcosystem\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-asset-ecosystem-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Economy]]\n\t\t- enables:: [[Asset Tokenization]], [[DeFi Services]], [[Digital Ownership]]\n\t\t- requires:: [[Blockchain Network]], [[Wallet Infrastructure]], [[Exchange Platforms]]\n\t\t- related-to:: [[Crypto Economy]], [[Web3 Infrastructure]], [[Token Standards]]\n- ## Technical Details\n\t- **Ecosystem Components**:\n\t\t- Layer 1 blockchains: Bitcoin, Ethereum, Solana, Avalanche\n\t\t- Layer 2 scaling: Lightning Network, Optimism, Arbitrum\n\t\t- Bridges and interoperability protocols\n\t\t- Oracles for off-chain data (Chainlink, Pyth)\n\t- **Service Layers**:\n\t\t- Centralized exchanges (CEX): Coinbase, Binance, Kraken\n\t\t- Decentralized exchanges (DEX): Uniswap, Curve, dYdX\n\t\t- Custody solutions: institutional and self-custody\n\t\t- Analytics and data providers\n\t- **2024 Market Developments**:\n\t\t- Bitcoin ETF approvals driving institutional adoption\n\t\t- Real-world asset (RWA) tokenization growth\n\t\t- Regulatory frameworks emerging globally\n\t\t- Cross-chain interoperability improvements\n\t- **Market Size (2024)**: Total crypto market cap exceeding $2 trillion\n- ## Applications\n\t- Cryptocurrency trading and investment\n\t- NFT marketplaces and collectibles\n\t- DeFi lending and yield farming\n\t- Tokenized securities and real estate\n\t- Cross-border payments and remittances",
   "backlinks": [
     "Virtual Securities Offering (VSO)"
   ],
   "wiki_links": [
+    "Token Standards",
+    "Asset Tokenization",
     "metaverse",
-    "Metaverse"
+    "Wallet Infrastructure",
+    "DeFi Services",
+    "Exchange Platforms",
+    "Blockchain Network",
+    "Crypto Economy",
+    "Digital Economy",
+    "Digital Ownership",
+    "Web3 Infrastructure"
   ],
   "ontology": {
     "term_id": "MV-9847",
@@ -17,9 +26,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The interconnected network of platforms, protocols, services, and participants that collectively enable the creation, storage, exchange, and utilization of blockchain-based digital assets including cryptocurrencies, tokens, NFTs, and tokenized real-world assets across decentralized and centralized infrastructure.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +41,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Digital Economy"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Blockchain Network",
+      "Wallet Infrastructure",
+      "Exchange Platforms"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Asset Tokenization",
+      "DeFi Services",
+      "Digital Ownership"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +65,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Crypto Economy",
+        "Web3 Infrastructure",
+        "Token Standards"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

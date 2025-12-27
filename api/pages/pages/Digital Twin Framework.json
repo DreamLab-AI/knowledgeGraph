@@ -1,13 +1,22 @@
 {
   "id": "Digital Twin Framework",
   "title": "Digital Twin Framework",
-  "content": "- ### OntologyBlock\n  id:: digital-twin-framework-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9878\n\t- source-domain:: mv\n\t- preferred-term:: Digital Twin Framework\n\t- status:: stub\n\t- owl:class:: mv:DigitalTwinFramework\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: digital-twin-framework-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-twin-framework-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9878\n\t- source-domain:: mv\n\t- preferred-term:: Digital Twin Framework\n\t- definition:: The architectural blueprint and standards-based methodology for implementing digital twins within enterprise and industrial contexts, defining the layered structure from IoT foundation through application layer, and ensuring interoperability across cyber-physical systems and industrial metaverse platforms.\n\t- status:: active\n\t- owl:class:: mv:DigitalTwinFramework\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-twin-framework-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Enterprise Architecture]]\n\t\t- enables:: [[Standards Compliance]], [[System Interoperability]], [[Scalable Deployment]]\n\t\t- requires:: [[Reference Architecture]], [[Data Models]], [[Integration Standards]]\n\t\t- related-to:: [[RAMI 4.0]], [[IEEE Standards]], [[Industrial IoT]]\n- ## Technical Details\n\t- **Architecture Layers**:\n\t\t- Foundation layer: IoT and sensor infrastructure\n\t\t- Technology layer: Cloud, edge, and processing\n\t\t- Capability layer: Analytics, AI/ML, simulation\n\t\t- Application layer: Domain-specific solutions\n\t\t- Terminal layer: User interfaces and visualization\n\t- **IEEE Metaverse Standards**:\n\t\t- IEEE P3144: Digital Twin Maturity Model and Assessment\n\t\t- IEEE (2023): Identity Framework for Metaverse\n\t\t- IEEE (2023): Metaverse Terminology, Definitions, Taxonomy\n\t- **Enterprise Integration**:\n\t\t- RAMI 4.0 alignment for cyber-physical systems\n\t\t- NVIDIA Omniverse platform for 3D simulations\n\t\t- Industry 5.0 human-centric considerations\n\t- **Key Challenges**: Interoperability standards, identity management, data security\n- ## Applications\n\t- Enterprise digital twin implementation\n\t- Industrial metaverse development\n\t- Smart factory integration\n\t- Cross-platform asset management\n\t- Standards-compliant system design",
   "backlinks": [
     "Digital Twin Interop Protocol"
   ],
   "wiki_links": [
+    "Standards Compliance",
+    "RAMI 4.0",
+    "Enterprise Architecture",
+    "IEEE Standards",
     "metaverse",
-    "Metaverse"
+    "System Interoperability",
+    "Data Models",
+    "Scalable Deployment",
+    "Integration Standards",
+    "Reference Architecture",
+    "Industrial IoT"
   ],
   "ontology": {
     "term_id": "MV-9878",
@@ -17,9 +26,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The architectural blueprint and standards-based methodology for implementing digital twins within enterprise and industrial contexts, defining the layered structure from IoT foundation through application layer, and ensuring interoperability across cyber-physical systems and industrial metaverse platforms.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +41,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Enterprise Architecture"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Reference Architecture",
+      "Data Models",
+      "Integration Standards"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Standards Compliance",
+      "System Interoperability",
+      "Scalable Deployment"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +65,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "RAMI 4.0",
+        "IEEE Standards",
+        "Industrial IoT"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

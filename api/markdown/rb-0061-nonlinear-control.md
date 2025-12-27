@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0061
 	- source-domain:: rb
-	- preferred-term:: rb 0061 nonlinear control
-	- status:: draft
+	- preferred-term:: Nonlinear Control
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0061nonlinearcontrol
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Nonlinear control encompasses control techniques designed for systems with nonlinear dynamics, using methods such as feedback linearization, backstepping, and Lyapunov-based approaches for robot motion control.
+	- owl:class:: rb:NonlinearControl
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

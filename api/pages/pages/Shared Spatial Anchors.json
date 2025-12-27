@@ -1,13 +1,17 @@
 {
   "id": "Shared Spatial Anchors",
   "title": "Shared Spatial Anchors",
-  "content": "- ### OntologyBlock\n  id:: shared-spatial-anchors-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10043\n\t- source-domain:: mv\n\t- preferred-term:: Shared Spatial Anchors\n\t- status:: stub\n\t- owl:class:: mv:SharedSpatialAnchors\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: shared-spatial-anchors-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: shared-spatial-anchors-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10043\n\t- source-domain:: mv\n\t- preferred-term:: Shared Spatial Anchors\n\t- status:: active\n\t- definition:: Cloud-based reference points that lock virtual objects to specific physical locations, enabling multiple users across different devices to perceive digital content in the same position and orientation relative to the real-world environment for collaborative mixed reality experiences.\n\t- owl:class:: mv:SharedSpatialAnchors\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: shared-spatial-anchors-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Spatial Computing]]\n\t\t- related-to:: [[Cloud AR Services]]\n\t\t- related-to:: [[Cross Platform AR]]\n\t\t- related-to:: [[Spatial Mapping]]\n\t\t- enables:: [[Collaborative AR Experiences]]\n\t- #### Key Capabilities\n\t  collapsed:: true\n\t\t- Cross-device coordinate synchronization\n\t\t- Persistent world-locked content placement\n\t\t- Multi-user simultaneous viewing\n\t\t- Platform-agnostic anchor sharing\n\t\t- Environmental understanding mapping\n\t- #### Implementation Platforms\n\t  collapsed:: true\n\t\t- ARCore Cloud Anchors (Google)\n\t\t- ARKit shared experiences (Apple)\n\t\t- Vuforia spatial anchoring\n\t\t- Niantic Lightship VPS\n\t\t- Custom cloud anchor services",
   "backlinks": [
     "Mixed Reality (MR)"
   ],
   "wiki_links": [
+    "Spatial Mapping",
+    "Cross Platform AR",
+    "Cloud AR Services",
+    "Collaborative AR Experiences",
     "metaverse",
-    "Metaverse"
+    "Spatial Computing"
   ],
   "ontology": {
     "term_id": "MV-10043",
@@ -17,9 +21,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Cloud-based reference points that lock virtual objects to specific physical locations, enabling multiple users across different devices to perceive digital content in the same position and orientation relative to the real-world environment for collaborative mixed reality experiences.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +36,15 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Spatial Computing"
     ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Collaborative AR Experiences"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +54,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Cloud AR Services",
+        "Cross Platform AR",
+        "Spatial Mapping"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

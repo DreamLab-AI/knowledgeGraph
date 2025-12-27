@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0075
 	- source-domain:: rb
-	- preferred-term:: rb 0075 range finder
-	- status:: draft
+	- preferred-term:: Range Finder
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0075rangefinder
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: A range finder is a sensor that measures distance to objects using laser, ultrasonic, or infrared technologies, providing point-distance measurements for robot navigation and proximity detection.
+	- owl:class:: rb:RangeFinder
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

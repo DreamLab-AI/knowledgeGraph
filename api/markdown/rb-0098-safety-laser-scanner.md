@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0098
 	- source-domain:: rb
-	- preferred-term:: rb 0098 safety laser scanner
-	- status:: draft
+	- preferred-term:: Safety Laser Scanner
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0098safetylaserscanner
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: A safety laser scanner is a protective device that uses laser beams to detect objects or persons within defined zones, triggering safety responses when intrusion is detected.
+	- owl:class:: rb:SafetyLaserScanner
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

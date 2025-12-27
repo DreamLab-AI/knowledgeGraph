@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0091
 	- source-domain:: rb
-	- preferred-term:: rb 0091 safety rated monitored stop
-	- status:: draft
+	- preferred-term:: Safety Rated Monitored Stop
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0091safetyratedmonitoredstop
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Safety rated monitored stop is a collaborative robot safety function that stops robot motion while continuously monitoring position, triggering protective stop if unexpected movement is detected.
+	- owl:class:: rb:SafetyRatedMonitoredStop
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

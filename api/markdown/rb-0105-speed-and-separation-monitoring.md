@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0105
 	- source-domain:: rb
-	- preferred-term:: rb 0105 speed and separation monitoring
-	- status:: draft
+	- preferred-term:: Speed And Separation Monitoring
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0105speedandseparationmonitoring
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Speed and separation monitoring is a collaborative robot safety method that dynamically adjusts robot speed based on the proximity of human workers, maintaining safe separation distances.
+	- owl:class:: rb:SpeedAndSeparationMonitoring
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

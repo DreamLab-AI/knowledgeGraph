@@ -6,15 +6,16 @@
     "Game Engine",
     "Driver Software",
     "Hardware Resources",
+    "Immersive Interface",
     "Perception System",
     "FPGA"
   ],
   "wiki_links": [
-    "GPU Rendering",
+    "Real-Time VR Performance",
     "metaverse",
     "Hardware Resources",
     "Computing Infrastructure",
-    "Real-Time VR Performance"
+    "GPU Rendering"
   ],
   "ontology": {
     "term_id": "MV-9914",

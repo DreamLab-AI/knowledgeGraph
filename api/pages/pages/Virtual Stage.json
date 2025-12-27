@@ -1,13 +1,16 @@
 {
   "id": "Virtual Stage",
   "title": "Virtual Stage",
-  "content": "- ### OntologyBlock\n  id:: virtual-stage-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10147\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Stage\n\t- status:: stub\n\t- owl:class:: mv:VirtualStage\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: virtual-stage-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-stage-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10147\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Stage\n\t- status:: active\n\t- definition:: A production environment surrounded by LED walls and floors displaying real-time computer-generated imagery, enabling in-camera visual effects for film, television, and broadcast production where digital backgrounds react to camera movement and can be manipulated during live filming.\n\t- owl:class:: mv:VirtualStage\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Production Facility]]\n\t\t- related-to:: [[LED Volume]]\n\t\t- related-to:: [[Virtual Production VP]]\n\t\t- related-to:: [[In-Camera VFX]]\n\t  id:: virtual-stage-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual stages surround performers with curved LED panels displaying real-time 3D environments, capturing realistic lighting, depth, and reflections directly in-camera. In July 2024, the world's largest LED virtual production volume was unveiled in Deqing, China, spanning 50 meters in diameter with 1,700 square meters of LED display. NBCUniversal used StageCraft for 2024 Paris Olympics promotion. CBS Sports utilized robotic camera systems with ICVFX for 2024 NFL broadcasts.\n- ## Technical Details\n\t- ### Stage Configuration\n\t\t- **LED Walls**: Curved panels surrounding the shooting area\n\t\t- **LED Floor**: Ground-level display for reflections and extended environments\n\t\t- **LED Ceiling**: Optional overhead panels for complete immersion\n\t\t- **Tracking Systems**: Camera position detection for perspective synchronization\n\t- ### Technology Stack\n\t\t- ROE Visual panels with 10-bit HDR calibration\n\t\t- Brompton SX40 LED processors for image quality\n\t\t- Unreal Engine for real-time content rendering\n\t\t- Epic Games heavy investment in virtual production tools\n\t- ### Applications Beyond Film\n\t\t- Traditional broadcast studios transitioning to VP\n\t\t- Advertising content creation\n\t\t- Episodic television with feature film quality\n\t\t- Live event production and concerts\n\t- ### Key Benefits\n\t\t- Real-time VFX during filming stage\n\t\t- Enhanced actor performance with visible environments\n\t\t- Reduced post-production requirements\n\t\t- Reusable environments across productions\n- ## Applications\n\t- Feature film and television production\n\t- Live broadcast and sports coverage\n\t- Advertising and commercial production\n\t- Music video and concert visuals\n\t- Corporate event presentations",
   "backlinks": [
     "Virtual Performance Space"
   ],
   "wiki_links": [
+    "Production Facility",
     "metaverse",
-    "Metaverse"
+    "Virtual Production VP",
+    "LED Volume",
+    "In-Camera VFX"
   ],
   "ontology": {
     "term_id": "MV-10147",
@@ -17,9 +20,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A production environment surrounded by LED walls and floors displaying real-time computer-generated imagery, enabling in-camera visual effects for film, television, and broadcast production where digital backgrounds react to camera movement and can be manipulated during live filming.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,7 +35,7 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Production Facility"
     ],
     "has_part": [],
     "is_part_of": [],
@@ -48,11 +51,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "LED Volume",
+        "Virtual Production VP",
+        "In-Camera VFX"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

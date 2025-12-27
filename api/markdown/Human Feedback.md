@@ -4,11 +4,10 @@ id:: human-feedback-ontology
   id:: Human Feedback
   - ontology:: true
   - public-access:: true
-  - term-id:: DT-0262
+  - term-id:: RB-0262
   - preferred-term:: Human Feedback
   - source-domain:: rb
-  - status:: draft
-  - definition:: Information provided by human evaluators about model outputs, typically in the form of rankings, ratings, demonstrations, or corrections. Human feedback serves as the training signal for aligning AI systems with human preferences and values, enabling learning of complex objectives difficult to specify formally.
-
-### Relationships
-- is-subclass-of:: [[TrainingMethod]]
+  - owl:class:: rb:HumanFeedback
+  - is-subclass-of:: [[Robotics]]
+  - status:: active
+  - definition:: Human feedback in robotics is information provided by human operators to guide robot learning, including demonstrations, corrections, rankings, and reinforcement signals for training robot behaviour.

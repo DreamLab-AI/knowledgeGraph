@@ -1,14 +1,18 @@
 {
   "id": "Standardization Bodies",
   "title": "Standardization Bodies",
-  "content": "- ### OntologyBlock\n  id:: standardization-bodies-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10069\n\t- source-domain:: mv\n\t- preferred-term:: Standardization Bodies\n\t- status:: stub\n\t- owl:class:: mv:StandardizationBodies\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: standardization-bodies-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: standardization-bodies-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10069\n\t- source-domain:: mv\n\t- preferred-term:: Standardization Bodies\n\t- status:: active\n\t- definition:: Organizations developing technical standards for metaverse technologies, including IEEE (Metaverse Standards Committee), W3C (Immersive Web Working Group), ISO/IEC (3D formats), ITU (telecommunications), and the Metaverse Standards Forum coordinating 1,800 member organizations for interoperability.\n\t- owl:class:: mv:StandardizationBodies\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: standardization-bodies-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Standards Organization]]\n\t\t- related-to:: [[IEEE Standards]]\n\t\t- related-to:: [[W3C Recommendations]]\n\t\t- related-to:: [[ISO Standards]]\n\t\t- enables:: [[Technology Interoperability]]\n\t- #### Key Organizations\n\t  collapsed:: true\n\t\t- IEEE Metaverse Standards Committee\n\t\t- W3C Immersive Web Working Group\n\t\t- ISO/IEC JTC 1 for IT standards\n\t\t- ITU Focus Group on Metaverse\n\t\t- Khronos Group for graphics APIs\n\t- #### Standards Domains\n\t  collapsed:: true\n\t\t- VR/AR device interoperability\n\t\t- 3D asset format specifications\n\t\t- Identity and authentication frameworks\n\t\t- Network and telecommunications\n\t\t- Ethical and accessibility guidelines",
   "backlinks": [
     "Digital Identity Framework",
     "Interoperability Framework"
   ],
   "wiki_links": [
+    "ISO Standards",
+    "IEEE Standards",
     "metaverse",
-    "Metaverse"
+    "W3C Recommendations",
+    "Standards Organization",
+    "Technology Interoperability"
   ],
   "ontology": {
     "term_id": "MV-10069",
@@ -18,9 +22,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Organizations developing technical standards for metaverse technologies, including IEEE (Metaverse Standards Committee), W3C (Immersive Web Working Group), ISO/IEC (3D formats), ITU (telecommunications), and the Metaverse Standards Forum coordinating 1,800 member organizations for interoperability.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -33,13 +37,15 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Standards Organization"
     ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Technology Interoperability"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -49,11 +55,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "IEEE Standards",
+        "W3C Recommendations",
+        "ISO Standards"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

@@ -1,13 +1,16 @@
 {
   "id": "Watermarking Service",
   "title": "Watermarking Service",
-  "content": "- ### OntologyBlock\n  id:: watermarking-service-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10165\n\t- source-domain:: mv\n\t- preferred-term:: Watermarking Service\n\t- status:: stub\n\t- owl:class:: mv:WatermarkingService\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: watermarking-service-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: watermarking-service-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10165\n\t- source-domain:: mv\n\t- preferred-term:: Watermarking Service\n\t- status:: active\n\t- definition:: Digital infrastructure that embeds imperceptible markers into media content to establish provenance, authenticate ownership, detect tampering, and identify AI-generated content, supporting content credentials standards like C2PA for verifiable digital asset tracking.\n\t- owl:class:: mv:WatermarkingService\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Content Authentication]]\n\t\t- related-to:: [[Digital Rights Management]]\n\t\t- related-to:: [[AI Content Detection]]\n\t\t- related-to:: [[NFT]]\n\t  id:: watermarking-service-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Digital watermarking services embed cryptographic markers for content authentication and provenance tracking. In October 2024, Digimarc released the first implementation of watermarking technology approved for C2PA 2.1 standard. Google's SynthID applies imperceptible pixel-level changes surviving standard manipulation. California's Provenance, Authenticity and Watermarking Standards Act requires AI-generated content watermarks starting February 2025.\n- ## Technical Details\n\t- ### Standards and Frameworks\n\t\t- **C2PA 2.1**: Coalition for Content Provenance and Authenticity standard\n\t\t- **Content Credentials**: Cryptographically signed provenance metadata\n\t\t- **EU AI Act Article 50**: Mandatory AI content labeling\n\t\t- **California Standards Act**: State watermarking requirements\n\t- ### Technology Types\n\t\t- **Invisible Watermarks**: Imperceptible pixel-level modifications\n\t\t- **Robust Watermarks**: Survive compression, cropping, editing\n\t\t- **Fragile Watermarks**: Detect any content tampering\n\t\t- **Metadata Embedding**: EXIF and XMP provenance data\n\t- ### Major Implementations\n\t\t- **Digimarc Validate**: Protection against theft and AI training\n\t\t- **Google SynthID**: AI-generated image identification\n\t\t- **Adobe Content Credentials**: Automatic embedding in Firefly\n\t\t- **OpenAI**: Content Credentials on DALL-E generated images\n- ## Applications\n\t- AI-generated content identification\n\t- Media authenticity verification\n\t- Copyright protection and tracking\n\t- Misinformation detection\n\t- Digital asset provenance in metaverse",
   "backlinks": [
     "Digital Rights Management (Extended)"
   ],
   "wiki_links": [
+    "AI Content Detection",
+    "Digital Rights Management",
+    "Content Authentication",
     "metaverse",
-    "Metaverse"
+    "NFT"
   ],
   "ontology": {
     "term_id": "MV-10165",
@@ -17,9 +20,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Digital infrastructure that embeds imperceptible markers into media content to establish provenance, authenticate ownership, detect tampering, and identify AI-generated content, supporting content credentials standards like C2PA for verifiable digital asset tracking.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,7 +35,7 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Content Authentication"
     ],
     "has_part": [],
     "is_part_of": [],
@@ -48,11 +51,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Digital Rights Management",
+        "AI Content Detection",
+        "NFT"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

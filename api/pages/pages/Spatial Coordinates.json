@@ -1,13 +1,17 @@
 {
   "id": "Spatial Coordinates",
   "title": "Spatial Coordinates",
-  "content": "- ### OntologyBlock\n  id:: spatial-coordinates-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10057\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Coordinates\n\t- status:: stub\n\t- owl:class:: mv:SpatialCoordinates\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: spatial-coordinates-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: spatial-coordinates-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10057\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Coordinates\n\t- status:: active\n\t- definition:: A unified reference frame system for positioning objects in three-dimensional virtual or mixed reality environments, including geographically-anchored poses (GeoPose) tied to Earth coordinates and local coordinate systems for scene-relative object placement with support for coordinate transformation between systems.\n\t- owl:class:: mv:SpatialCoordinates\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: spatial-coordinates-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Coordinate System]]\n\t\t- related-to:: [[GeoPose Standard]]\n\t\t- related-to:: [[Reference Frame]]\n\t\t- related-to:: [[3D Positioning]]\n\t\t- enables:: [[Object Positioning]]\n\t- #### Standards and Specifications\n\t  collapsed:: true\n\t\t- OGC GeoPose 1.0 Data Exchange Standard\n\t\t- Scene-level coordinate interfaces\n\t\t- Geographic frame references\n\t\t- Local coordinate systems\n\t\t- Transformation matrices\n\t- #### Applications\n\t  collapsed:: true\n\t\t- Virtual object placement (x, y, z)\n\t\t- Cross-platform asset positioning\n\t\t- Geospatial metaverse anchoring\n\t\t- Indoor navigation systems\n\t\t- AR content registration",
   "backlinks": [
     "Digital Real Estate"
   ],
   "wiki_links": [
+    "Coordinate System",
+    "Object Positioning",
+    "GeoPose Standard",
+    "Reference Frame",
     "metaverse",
-    "Metaverse"
+    "3D Positioning"
   ],
   "ontology": {
     "term_id": "MV-10057",
@@ -17,9 +21,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A unified reference frame system for positioning objects in three-dimensional virtual or mixed reality environments, including geographically-anchored poses (GeoPose) tied to Earth coordinates and local coordinate systems for scene-relative object placement with support for coordinate transformation between systems.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +36,15 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Coordinate System"
     ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Object Positioning"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +54,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "GeoPose Standard",
+        "Reference Frame",
+        "3D Positioning"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0063
 	- source-domain:: rb
-	- preferred-term:: rb 0063 sliding mode control
-	- status:: draft
+	- preferred-term:: Sliding Mode Control
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0063slidingmodecontrol
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Sliding mode control is a robust nonlinear control method that drives system states to a predefined sliding surface and maintains them there, providing insensitivity to parameter variations and disturbances.
+	- owl:class:: rb:SlidingModeControl
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

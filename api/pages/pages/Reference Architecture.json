@@ -3,16 +3,17 @@
   "title": "Reference Architecture",
   "content": "- ### OntologyBlock\n  id:: reference-architecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10019\n\t- source-domain:: mv\n\t- preferred-term:: Reference Architecture\n\t- status:: active\n\t- definition:: A standardized architectural template that provides proven structural frameworks and design patterns for building scalable, resilient enterprise applications, establishing shared vocabulary and best practices across development teams.\n\t- owl:class:: mv:ReferenceArchitecture\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: reference-architecture-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Software Architecture]]\n\t\t- related-to:: [[Design Patterns]]\n\t\t- related-to:: [[Enterprise Architecture]]\n\t\t- related-to:: [[TOGAF]]\n\t\t- enables:: [[Scalable Systems]]\n\t- #### Common Patterns\n\t  collapsed:: true\n\t\t- Layered (n-tier) architecture\n\t\t- Microservices architecture\n\t\t- Event-driven architecture\n\t\t- Serverless architecture\n\t\t- Domain-driven design\n\t- #### Frameworks\n\t  collapsed:: true\n\t\t- TOGAF for enterprise architecture\n\t\t- Azure Well-Architected Framework\n\t\t- Martin Fowler enterprise patterns (2003)\n\t\t- Netflix microservices as reference model\n\t\t- AWS reference architectures",
   "backlinks": [
+    "Digital Twin Framework",
     "Metaverse Architecture Stack",
     "Distributed Architecture"
   ],
   "wiki_links": [
-    "metaverse",
+    "TOGAF",
     "Design Patterns",
     "Enterprise Architecture",
-    "TOGAF",
-    "Scalable Systems",
-    "Software Architecture"
+    "Software Architecture",
+    "metaverse",
+    "Scalable Systems"
   ],
   "ontology": {
     "term_id": "MV-10019",

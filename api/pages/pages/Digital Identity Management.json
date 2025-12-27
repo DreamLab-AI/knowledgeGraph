@@ -1,13 +1,22 @@
 {
   "id": "Digital Identity Management",
   "title": "Digital Identity Management",
-  "content": "- ### OntologyBlock\n  id:: digital-identity-management-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9858\n\t- source-domain:: mv\n\t- preferred-term:: Digital Identity Management\n\t- status:: stub\n\t- owl:class:: mv:DigitalIdentityManagement\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: digital-identity-management-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-identity-management-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9858\n\t- source-domain:: mv\n\t- preferred-term:: Digital Identity Management\n\t- definition:: The systems, processes, and technologies for creating, maintaining, and verifying digital representations of individuals and entities across virtual environments, incorporating self-sovereign identity principles, decentralized identifiers, and verifiable credentials for secure cross-platform authentication.\n\t- status:: active\n\t- owl:class:: mv:DigitalIdentityManagement\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-identity-management-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Identity Systems]]\n\t\t- enables:: [[User Authentication]], [[Cross-Platform Identity]], [[Privacy Control]]\n\t\t- requires:: [[Cryptographic Keys]], [[Identity Providers]], [[Credential Storage]]\n\t\t- related-to:: [[Self-Sovereign Identity]], [[Decentralized Identifiers]], [[Verifiable Credentials]]\n- ## Technical Details\n\t- **SSI Components**:\n\t\t- Decentralized Identifiers (DIDs) for unique identity\n\t\t- Verifiable Credentials (VCs) for selective disclosure\n\t\t- Digital wallets for credential storage\n\t\t- Blockchain for trust anchoring\n\t- **Metaverse Identity Elements**:\n\t\t- Representation: Avatars and visual presence\n\t\t- Data: Behaviors, preferences, actions\n\t\t- Identification: Authentication credentials\n\t- **2024 Developments**:\n\t\t- Tech Mahindra + EarthID SSI metaverse platform\n\t\t- US DHS contracts for privacy-enhanced digital wallets\n\t\t- EU eIDAS 2.0 preparation for 2025 launch\n\t\t- Market growth: $2.17B to $101B by 2031 (73.12% CAGR)\n\t- **Standards**: W3C DID Core 1.0, Verifiable Credentials, ISO identity assurance\n- ## Applications\n\t- Metaverse authentication\n\t- Cross-platform identity portability\n\t- Gaming credential verification\n\t- KYC for virtual services\n\t- Decentralized social profiles",
   "backlinks": [
     "Digital Identity Framework"
   ],
   "wiki_links": [
+    "Self-Sovereign Identity",
+    "Cryptographic Keys",
+    "Credential Storage",
+    "Verifiable Credentials",
+    "Decentralized Identifiers",
     "metaverse",
-    "Metaverse"
+    "Identity Providers",
+    "Privacy Control",
+    "Cross-Platform Identity",
+    "User Authentication",
+    "Identity Systems"
   ],
   "ontology": {
     "term_id": "MV-9858",
@@ -17,9 +26,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The systems, processes, and technologies for creating, maintaining, and verifying digital representations of individuals and entities across virtual environments, incorporating self-sovereign identity principles, decentralized identifiers, and verifiable credentials for secure cross-platform authentication.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +41,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Identity Systems"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Cryptographic Keys",
+      "Identity Providers",
+      "Credential Storage"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "User Authentication",
+      "Cross-Platform Identity",
+      "Privacy Control"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +65,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Self-Sovereign Identity",
+        "Decentralized Identifiers",
+        "Verifiable Credentials"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

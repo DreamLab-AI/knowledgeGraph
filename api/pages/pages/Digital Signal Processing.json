@@ -1,13 +1,22 @@
 {
   "id": "Digital Signal Processing",
   "title": "Digital Signal Processing",
-  "content": "- ### OntologyBlock\n  id:: digital-signal-processing-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9870\n\t- source-domain:: mv\n\t- preferred-term:: Digital Signal Processing\n\t- status:: stub\n\t- owl:class:: mv:DigitalSignalProcessing\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: digital-signal-processing-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-signal-processing-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9870\n\t- source-domain:: mv\n\t- preferred-term:: Digital Signal Processing\n\t- definition:: The mathematical and computational techniques for representing, transforming, and manipulating signals in digital form, enabling real-time audio processing, video enhancement, spatial audio for VR/AR, and sensor data analysis critical for immersive metaverse experiences.\n\t- status:: active\n\t- owl:class:: mv:DigitalSignalProcessing\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-signal-processing-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Signal Processing]]\n\t\t- enables:: [[Audio Enhancement]], [[Video Processing]], [[Spatial Audio]]\n\t\t- requires:: [[DSP Hardware]], [[Algorithms]], [[Sensors]]\n\t\t- related-to:: [[Audio Processing]], [[Computer Vision]], [[Real-Time Systems]]\n- ## Technical Details\n\t- **Core Operations**:\n\t\t- Filtering: Noise reduction, frequency separation\n\t\t- Transformation: FFT, wavelet analysis\n\t\t- Compression: Efficient data encoding\n\t\t- Enhancement: Quality improvement\n\t- **Metaverse Applications**:\n\t\t- Spatial audio for VR/AR immersion\n\t\t- Real-time voice processing\n\t\t- Motion tracking signal analysis\n\t\t- Haptic feedback generation\n\t- **Market Size (2024)**:\n\t\t- Global DSP market: $25.7B (projected $59.3B by 2035)\n\t\t- Professional DSP market: $580M (CAGR 4.1%)\n\t\t- Audio processing: 58% market share\n\t- **2024 Trends**: AI/ML integration, immersive audio adoption, 5G requirements, edge processing\n- ## Applications\n\t- VR/AR spatial audio\n\t- Voice recognition systems\n\t- Video enhancement and compression\n\t- Sensor data processing\n\t- Real-time communication",
   "backlinks": [
     "Procedural Audio Generator"
   ],
   "wiki_links": [
+    "Audio Enhancement",
+    "Computer Vision",
+    "Signal Processing",
+    "Algorithms",
     "metaverse",
-    "Metaverse"
+    "Audio Processing",
+    "Real-Time Systems",
+    "Spatial Audio",
+    "DSP Hardware",
+    "Sensors",
+    "Video Processing"
   ],
   "ontology": {
     "term_id": "MV-9870",
@@ -17,9 +26,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The mathematical and computational techniques for representing, transforming, and manipulating signals in digital form, enabling real-time audio processing, video enhancement, spatial audio for VR/AR, and sensor data analysis critical for immersive metaverse experiences.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +41,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Signal Processing"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "DSP Hardware",
+      "Algorithms",
+      "Sensors"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Audio Enhancement",
+      "Video Processing",
+      "Spatial Audio"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +65,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Audio Processing",
+        "Computer Vision",
+        "Real-Time Systems"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

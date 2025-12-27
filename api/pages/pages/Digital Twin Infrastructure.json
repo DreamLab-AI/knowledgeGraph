@@ -1,13 +1,22 @@
 {
   "id": "Digital Twin Infrastructure",
   "title": "Digital Twin Infrastructure",
-  "content": "- ### OntologyBlock\n  id:: digital-twin-infrastructure-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9880\n\t- source-domain:: mv\n\t- preferred-term:: Digital Twin Infrastructure\n\t- status:: stub\n\t- owl:class:: mv:DigitalTwinInfrastructure\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: digital-twin-infrastructure-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-twin-infrastructure-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9880\n\t- source-domain:: mv\n\t- preferred-term:: Digital Twin Infrastructure\n\t- definition:: The foundational computing, networking, and data management systems required to deploy and operate digital twins at scale, encompassing cloud platforms, edge computing nodes, IoT gateways, and the connectivity fabric that enables real-time data flow between physical assets and their virtual counterparts.\n\t- status:: active\n\t- owl:class:: mv:DigitalTwinInfrastructure\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-twin-infrastructure-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Computing Infrastructure]]\n\t\t- enables:: [[Real-Time Processing]], [[Scalable Deployment]], [[Edge Analytics]]\n\t\t- requires:: [[Cloud Platform]], [[Edge Computing]], [[5G Connectivity]]\n\t\t- related-to:: [[IoT Gateway]], [[Data Pipeline]], [[Hybrid Cloud]]\n- ## Technical Details\n\t- **Market Size (2024)**:\n\t\t- Global digital twin market: $25B (projected $260B by 2032, 40% CAGR)\n\t\t- Alternative projection: +$163.42B growth 2024-2029 (64.9% CAGR)\n\t\t- Digital Twin as-a-Service (DTaaS): Emerging subscription model\n\t- **Architecture Components**:\n\t\t- IoT sensors and industrial gateways\n\t\t- Edge computing for low-latency processing\n\t\t- Cloud platforms (Azure, AWS, IBM Watson IoT)\n\t\t- 5G/6G connectivity for real-time data\n\t\t- AI/ML processing engines\n\t- **Major Cloud Offerings**:\n\t\t- Azure Digital Twins: DTDL v3 semantic models\n\t\t- AWS TwinMaker: 50M API calls/month free tier\n\t\t- IBM Watson IoT: Hybrid cloud with AI analytics\n\t- **6G Research (2024)**: Hyper-distributed IoT-Edge-Cloud platforms for real-time digital twins\n- ## Applications\n\t- Industrial IoT data processing\n\t- Smart city infrastructure\n\t- Building management systems\n\t- Manufacturing execution systems\n\t- Healthcare monitoring platforms",
   "backlinks": [
     "Digital Twin Synchronisation Bus"
   ],
   "wiki_links": [
+    "5G Connectivity",
     "metaverse",
-    "Metaverse"
+    "Edge Analytics",
+    "Data Pipeline",
+    "Cloud Platform",
+    "Hybrid Cloud",
+    "Computing Infrastructure",
+    "Scalable Deployment",
+    "IoT Gateway",
+    "Edge Computing",
+    "Real-Time Processing"
   ],
   "ontology": {
     "term_id": "MV-9880",
@@ -17,9 +26,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The foundational computing, networking, and data management systems required to deploy and operate digital twins at scale, encompassing cloud platforms, edge computing nodes, IoT gateways, and the connectivity fabric that enables real-time data flow between physical assets and their virtual counterparts.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +41,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Computing Infrastructure"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Cloud Platform",
+      "Edge Computing",
+      "5G Connectivity"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Real-Time Processing",
+      "Scalable Deployment",
+      "Edge Analytics"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +65,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "IoT Gateway",
+        "Data Pipeline",
+        "Hybrid Cloud"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

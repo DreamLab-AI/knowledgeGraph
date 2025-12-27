@@ -1,13 +1,22 @@
 {
   "id": "Digital Forensics Framework",
   "title": "Digital Forensics Framework",
-  "content": "- ### OntologyBlock\n  id:: digital-forensics-framework-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9857\n\t- source-domain:: mv\n\t- preferred-term:: Digital Forensics Framework\n\t- status:: stub\n\t- owl:class:: mv:DigitalForensicsFramework\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: digital-forensics-framework-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-forensics-framework-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9857\n\t- source-domain:: mv\n\t- preferred-term:: Digital Forensics Framework\n\t- definition:: A structured methodology and toolset for identifying, preserving, analyzing, and documenting digital evidence from computing systems, networks, and virtual environments to support cybersecurity investigations, legal proceedings, and incident response within metaverse and blockchain contexts.\n\t- status:: active\n\t- owl:class:: mv:DigitalForensicsFramework\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-forensics-framework-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Cybersecurity]]\n\t\t- enables:: [[Evidence Collection]], [[Incident Investigation]], [[Legal Documentation]]\n\t\t- requires:: [[Forensic Tools]], [[Chain of Custody]], [[Data Integrity]]\n\t\t- related-to:: [[Incident Response]], [[Blockchain Forensics]], [[Virtual Crime Investigation]]\n- ## Technical Details\n\t- **NIST Framework Phases**:\n\t\t- Collection: Identify and acquire data sources\n\t\t- Examination: Assess and extract relevant data\n\t\t- Analysis: Study information to answer investigative questions\n\t\t- Reporting: Document procedures, methods, and findings\n\t- **D4I Framework**:\n\t\t- Digital forensics for Industrie 4.0 and digitalization\n\t\t- Cyber-Kill-Chain mapping for attack analysis\n\t\t- Enhanced examination and analysis phases\n\t- **DFIR Integration**:\n\t\t- Digital Forensics + Incident Response combined\n\t\t- Real-time threat mitigation with evidence preservation\n\t\t- Common tools: EDR, SIEM, forensic imaging\n\t- **2024 Developments**:\n\t\t- AI/ML for pattern recognition in evidence analysis\n\t\t- Market growth to $35.81B by 2032 (15.1% CAGR)\n\t\t- Metaverse-specific forensic methodologies emerging\n- ## Applications\n\t- Cybercrime investigation\n\t- Virtual world incident response\n\t- Blockchain transaction tracing\n\t- NFT fraud detection\n\t- Enterprise security auditing",
   "backlinks": [
     "Digital Evidence Chain of Custody"
   ],
   "wiki_links": [
+    "Legal Documentation",
+    "Data Integrity",
+    "Blockchain Forensics",
+    "Incident Response",
     "metaverse",
-    "Metaverse"
+    "Forensic Tools",
+    "Chain of Custody",
+    "Incident Investigation",
+    "Cybersecurity",
+    "Evidence Collection",
+    "Virtual Crime Investigation"
   ],
   "ontology": {
     "term_id": "MV-9857",
@@ -17,9 +26,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A structured methodology and toolset for identifying, preserving, analyzing, and documenting digital evidence from computing systems, networks, and virtual environments to support cybersecurity investigations, legal proceedings, and incident response within metaverse and blockchain contexts.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +41,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Cybersecurity"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Forensic Tools",
+      "Chain of Custody",
+      "Data Integrity"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Evidence Collection",
+      "Incident Investigation",
+      "Legal Documentation"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +65,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Incident Response",
+        "Blockchain Forensics",
+        "Virtual Crime Investigation"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

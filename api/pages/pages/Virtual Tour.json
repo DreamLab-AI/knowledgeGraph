@@ -1,13 +1,17 @@
 {
   "id": "Virtual Tour",
   "title": "Virtual Tour",
-  "content": "- ### OntologyBlock\n  id:: virtual-tour-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10149\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Tour\n\t- status:: stub\n\t- owl:class:: mv:VirtualTour\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: virtual-tour-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-tour-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10149\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Tour\n\t- status:: active\n\t- definition:: An interactive 360-degree digital representation of a physical location that enables remote exploration through web browsers or VR headsets, commonly used in real estate, museums, hospitality, and education to provide immersive walkthroughs without physical presence.\n\t- owl:class:: mv:VirtualTour\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Immersive Experience]]\n\t\t- related-to:: [[360-Degree Photography]]\n\t\t- related-to:: [[Real Estate Technology]]\n\t\t- related-to:: [[Museum Technology]]\n\t  id:: virtual-tour-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual tours provide interactive, panoramic views enabling viewers to experience locations as if physically present. Research shows listings with 3D virtual tours can sell for up to 9% more and close up to 31% faster. Kuula serves over 500,000 professionals globally, with a December 2025 update supporting up to 32K resolution images. Museums use 360 virtual tours to present collections to global audiences, enhancing accessibility and engagement.\n- ## Technical Details\n\t- ### Tour Types\n\t\t- **360-Degree Photo Tours**: Static panoramic images with hotspot navigation\n\t\t- **3D Virtual Tours**: Full spatial models with depth and measurement\n\t\t- **Video Tours**: Guided walkthrough with narration\n\t\t- **VR Immersive Tours**: Headset-based exploration experience\n\t- ### Leading Platforms\n\t\t- **Kuula**: Award-winning 3D 360 virtual tour software\n\t\t- **Matterport**: Full 3D digital twin creation\n\t\t- **Giraffe360**: Real estate marketing focus\n\t\t- **Panoee**: Free virtual tour software\n\t- ### Creation Technologies\n\t\t- 360-degree cameras for panoramic capture\n\t\t- LiDAR scanning for precise measurements\n\t\t- Photogrammetry for 3D reconstruction\n\t\t- HDR photography for quality visuals\n\t- ### Features\n\t\t- Hotspot navigation between viewpoints\n\t\t- Embedded media and information\n\t\t- Floor plan integration\n\t\t- VR headset compatibility\n- ## Applications\n\t- Real estate property marketing\n\t- Museum and gallery exhibitions\n\t- Hotel and hospitality showcases\n\t- Educational institution tours\n\t- Tourism destination previews\n\t- Retail showroom experiences",
   "backlinks": [
+    "Virtual Museum Tour",
     "ETSI_Domain_Application___Tourism"
   ],
   "wiki_links": [
+    "Real Estate Technology",
+    "Immersive Experience",
+    "Museum Technology",
     "metaverse",
-    "Metaverse"
+    "360-Degree Photography"
   ],
   "ontology": {
     "term_id": "MV-10149",
@@ -17,9 +21,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "An interactive 360-degree digital representation of a physical location that enables remote exploration through web browsers or VR headsets, commonly used in real estate, museums, hospitality, and education to provide immersive walkthroughs without physical presence.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,7 +36,7 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Immersive Experience"
     ],
     "has_part": [],
     "is_part_of": [],
@@ -48,11 +52,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "360-Degree Photography",
+        "Real Estate Technology",
+        "Museum Technology"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

@@ -1,13 +1,17 @@
 {
   "id": "Standard Format Support",
   "title": "Standard Format Support",
-  "content": "- ### OntologyBlock\n  id:: standard-format-support-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10068\n\t- source-domain:: mv\n\t- preferred-term:: Standard Format Support\n\t- status:: stub\n\t- owl:class:: mv:StandardFormatSupport\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: standard-format-support-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: standard-format-support-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10068\n\t- source-domain:: mv\n\t- preferred-term:: Standard Format Support\n\t- status:: active\n\t- definition:: Implementation of standardized data formats enabling interoperability across metaverse platforms, including 3D asset formats like glTF (ISO/IEC 12113:2022), Universal Scene Description (USD), and 3D Tiles for seamless exchange of geometry, materials, animations, and scene descriptions between diverse systems.\n\t- owl:class:: mv:StandardFormatSupport\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: standard-format-support-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Data Interoperability]]\n\t\t- related-to:: [[glTF Format]]\n\t\t- related-to:: [[Universal Scene Description]]\n\t\t- related-to:: [[Metaverse Standards Forum]]\n\t\t- enables:: [[Cross Platform Asset Exchange]]\n\t- #### Key Formats\n\t  collapsed:: true\n\t\t- glTF for efficient 3D transmission\n\t\t- USD for scene organization\n\t\t- 3D Tiles for massive dataset streaming\n\t\t- PhysX for physics properties\n\t\t- FBX for animation exchange\n\t- #### Standardization Efforts\n\t  collapsed:: true\n\t\t- Metaverse Standards Forum coordination\n\t\t- Khronos Group format development\n\t\t- ISO/IEC formal standardization\n\t\t- W3C web format specifications\n\t\t- Industry consortium alignment",
   "backlinks": [
     "Multiverse"
   ],
   "wiki_links": [
     "metaverse",
-    "Metaverse"
+    "Data Interoperability",
+    "glTF Format",
+    "Metaverse Standards Forum",
+    "Universal Scene Description",
+    "Cross Platform Asset Exchange"
   ],
   "ontology": {
     "term_id": "MV-10068",
@@ -17,9 +21,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Implementation of standardized data formats enabling interoperability across metaverse platforms, including 3D asset formats like glTF (ISO/IEC 12113:2022), Universal Scene Description (USD), and 3D Tiles for seamless exchange of geometry, materials, animations, and scene descriptions between diverse systems.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +36,15 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Data Interoperability"
     ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Cross Platform Asset Exchange"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +54,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "glTF Format",
+        "Universal Scene Description",
+        "Metaverse Standards Forum"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

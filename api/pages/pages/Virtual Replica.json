@@ -1,13 +1,16 @@
 {
   "id": "Virtual Replica",
   "title": "Virtual Replica",
-  "content": "- ### OntologyBlock\n  id:: virtual-replica-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10142\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Replica\n\t- status:: stub\n\t- owl:class:: mv:VirtualReplica\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: virtual-replica-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-replica-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10142\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Replica\n\t- status:: active\n\t- definition:: A digital representation of a physical object, system, or environment created through 3D modeling, photogrammetry, or scanning technologies, serving as a static or dynamic copy for visualization, simulation, analysis, and testing purposes without the real-time data connectivity that characterizes digital twins.\n\t- owl:class:: mv:VirtualReplica\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Digital Model]]\n\t\t- related-to:: [[Digital Twin]]\n\t\t- related-to:: [[3D Scanning]]\n\t\t- related-to:: [[Photogrammetry]]\n\t  id:: virtual-replica-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual replicas are digital copies of physical objects or environments used for visualization and simulation. Unlike digital twins that maintain real-time data connectivity, virtual replicas are typically static representations or models with limited update capabilities. Creation often begins with 3D scans using LiDAR or structured-light scanning to capture precise geometry. The global digital twin market is projected to reach $73.5 billion by 2027 with 60% annual growth.\n- ## Technical Details\n\t- ### Creation Methods\n\t\t- **3D Scanning**: LiDAR and structured-light capture for precise geometry\n\t\t- **Photogrammetry**: Photo-based 3D reconstruction\n\t\t- **CAD Modeling**: Computer-aided design for detailed representations\n\t\t- **Point Cloud Processing**: Conversion of scan data to 3D mesh\n\t- ### Types of Replicas\n\t\t- **Product Replicas**: Virtual copies of manufactured items\n\t\t- **Environment Replicas**: Digital recreations of physical spaces\n\t\t- **System Replicas**: Functional simulations of complex systems\n\t\t- **Historical Replicas**: Digital preservation of heritage sites\n\t- ### Comparison to Digital Twins\n\t\t- Virtual replicas are typically static snapshots\n\t\t- Digital twins maintain continuous real-time data connection\n\t\t- Virtual twins add simulation and optimization capabilities\n\t\t- Replicas serve visualization while twins enable prediction\n\t- ### Software Platforms\n\t\t- CAD software for geometric modeling\n\t\t- FlexSim for simulation modeling\n\t\t- Reality capture software for photogrammetry\n\t\t- Game engines for real-time visualization\n- ## Applications\n\t- Vehicle design and safety testing\n\t- Urban planning and city simulation\n\t- Smart city infrastructure modeling\n\t- Manufacturing process visualization\n\t- Heritage preservation and virtual museums",
   "backlinks": [
     "Digital Twin"
   ],
   "wiki_links": [
+    "Photogrammetry",
+    "Digital Twin",
     "metaverse",
-    "Metaverse"
+    "3D Scanning",
+    "Digital Model"
   ],
   "ontology": {
     "term_id": "MV-10142",
@@ -17,9 +20,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A digital representation of a physical object, system, or environment created through 3D modeling, photogrammetry, or scanning technologies, serving as a static or dynamic copy for visualization, simulation, analysis, and testing purposes without the real-time data connectivity that characterizes digital twins.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,7 +35,7 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Digital Model"
     ],
     "has_part": [],
     "is_part_of": [],
@@ -48,11 +51,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Digital Twin",
+        "3D Scanning",
+        "Photogrammetry"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

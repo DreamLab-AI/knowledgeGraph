@@ -1,13 +1,16 @@
 {
   "id": "Visual Marker",
   "title": "Visual Marker",
-  "content": "- ### OntologyBlock\n  id:: visual-marker-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10159\n\t- source-domain:: mv\n\t- preferred-term:: Visual Marker\n\t- status:: stub\n\t- owl:class:: mv:VisualMarker\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: visual-marker-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: visual-marker-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10159\n\t- source-domain:: mv\n\t- preferred-term:: Visual Marker\n\t- status:: active\n\t- definition:: A distinctive visual pattern or fiducial placed in physical environments to enable computer vision systems to track position, orientation, and pose for augmented reality applications, including QR codes, AprilTags, ARTags, and custom image targets that serve as reference points for overlaying digital content.\n\t- owl:class:: mv:VisualMarker\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[AR Technology]]\n\t\t- related-to:: [[Augmented Reality]]\n\t\t- related-to:: [[Computer Vision]]\n\t\t- related-to:: [[Pose Estimation]]\n\t  id:: visual-marker-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Visual markers enable positional tracking for AR applications by providing reference points for image tracking systems. Common types include QR codes, AprilTags, and ARTags that are designed for detection under various imaging conditions. Implementation of visual tags surged over 60% among developers from 2023 to 2024. The FidMark ontology (2024) provides semantic description of markers for pose estimation and detection algorithms.\n- ## Technical Details\n\t- ### Marker Types\n\t\t- **QR Codes**: Widely recognized square patterns with encoded data\n\t\t- **AprilTags**: University of Michigan system for robotics and AR\n\t\t- **ARTags**: Fiducial markers for 3D registration and pose tracking\n\t\t- **Image Targets**: Custom images recognized by AR platforms\n\t- ### Detection Process\n\t\t- Camera captures scene with visible markers\n\t\t- Software analyzes image against preset templates\n\t\t- Position and orientation computed in 3D space\n\t\t- Virtual elements overlaid with accurate alignment\n\t- ### Tracking Algorithms\n\t\t- ArUco marker detection and pose estimation\n\t\t- AprilTag detection for efficient processing\n\t\t- SLAM integration for markerless enhancement\n\t\t- Sensor fusion with IMU data\n\t- ### Use Cases\n\t\t- Inside-out tracking for VR headsets\n\t\t- AR gaming and interactive installations\n\t\t- Robotics localization and navigation\n\t\t- Camera calibration procedures\n- ## Applications\n\t- Augmented reality content anchoring\n\t- VR positional tracking systems\n\t- Robotics navigation and mapping\n\t- Industrial AR maintenance guides\n\t- Interactive museum exhibits\n\t- Educational AR experiences",
   "backlinks": [
     "Spatial Anchor"
   ],
   "wiki_links": [
+    "Computer Vision",
     "metaverse",
-    "Metaverse"
+    "Augmented Reality",
+    "AR Technology",
+    "Pose Estimation"
   ],
   "ontology": {
     "term_id": "MV-10159",
@@ -17,9 +20,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A distinctive visual pattern or fiducial placed in physical environments to enable computer vision systems to track position, orientation, and pose for augmented reality applications, including QR codes, AprilTags, ARTags, and custom image targets that serve as reference points for overlaying digital content.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,7 +35,7 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "AR Technology"
     ],
     "has_part": [],
     "is_part_of": [],
@@ -48,11 +51,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Augmented Reality",
+        "Computer Vision",
+        "Pose Estimation"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

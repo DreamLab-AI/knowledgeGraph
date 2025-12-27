@@ -1,13 +1,22 @@
 {
   "id": "Digital Actor Creation",
   "title": "Digital Actor Creation",
-  "content": "- ### OntologyBlock\n  id:: digital-actor-creation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9844\n\t- source-domain:: mv\n\t- preferred-term:: Digital Actor Creation\n\t- status:: stub\n\t- owl:class:: mv:DigitalActorCreation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: digital-actor-creation-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-actor-creation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9844\n\t- source-domain:: mv\n\t- preferred-term:: Digital Actor Creation\n\t- definition:: The process of designing and generating photorealistic or stylized virtual human characters using 3D modeling, motion capture, AI synthesis, and deep learning techniques for use in entertainment, virtual production, metaverse experiences, and interactive media applications.\n\t- status:: active\n\t- owl:class:: mv:DigitalActorCreation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-actor-creation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Human Technology]]\n\t\t- enables:: [[Virtual Performances]], [[Digital Twins]], [[Synthetic Media]]\n\t\t- requires:: [[Motion Capture]], [[3D Modeling]], [[AI Synthesis]]\n\t\t- related-to:: [[Avatar]], [[Virtual Influencer]], [[Deepfake Technology]]\n- ## Technical Details\n\t- **Creation Pipeline**:\n\t\t- 3D scanning and photogrammetry for likeness capture\n\t\t- Rigging and skeletal animation systems\n\t\t- Facial motion capture with expression mapping\n\t\t- Neural rendering for real-time performance\n\t- **AI Technologies**:\n\t\t- Generative adversarial networks (GANs) for face synthesis\n\t\t- Neural radiance fields (NeRF) for volumetric capture\n\t\t- Voice cloning and lip sync generation\n\t\t- Emotion and gesture synthesis\n\t- **Industry Applications (2024)**:\n\t\t- Virtual production using LED volumes and real-time engines\n\t\t- De-aging and digital resurrection in film\n\t\t- AI-generated virtual influencers\n\t\t- Interactive NPCs in gaming and metaverse\n\t- **Leading Platforms**: Epic Games MetaHuman, Character Creator, Synthesia, Soul Machines\n- ## Applications\n\t- Film and television virtual actors\n\t- Video game character creation\n\t- Virtual customer service representatives\n\t- Educational historical recreations\n\t- Metaverse avatar personalization",
   "backlinks": [
     "Digital Performance Capture"
   ],
   "wiki_links": [
+    "Virtual Influencer",
+    "Digital Human Technology",
     "metaverse",
-    "Metaverse"
+    "3D Modeling",
+    "Deepfake Technology",
+    "Virtual Performances",
+    "Digital Twins",
+    "AI Synthesis",
+    "Synthetic Media",
+    "Avatar",
+    "Motion Capture"
   ],
   "ontology": {
     "term_id": "MV-9844",
@@ -17,9 +26,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The process of designing and generating photorealistic or stylized virtual human characters using 3D modeling, motion capture, AI synthesis, and deep learning techniques for use in entertainment, virtual production, metaverse experiences, and interactive media applications.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +41,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Digital Human Technology"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Motion Capture",
+      "3D Modeling",
+      "AI Synthesis"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Virtual Performances",
+      "Digital Twins",
+      "Synthetic Media"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +65,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Avatar",
+        "Virtual Influencer",
+        "Deepfake Technology"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

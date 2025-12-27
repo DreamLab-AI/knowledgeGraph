@@ -5,7 +5,7 @@
 	- term-id:: BC-0452
 	- preferred-term:: Customs Trade Facilitation
 	- source-domain:: mv
-	- status:: stub
+	- status:: active
 	- public-access:: true
 
 

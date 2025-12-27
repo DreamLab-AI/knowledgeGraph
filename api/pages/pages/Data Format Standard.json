@@ -1,13 +1,22 @@
 {
   "id": "Data Format Standard",
   "title": "Data Format Standard",
-  "content": "- ### OntologyBlock\n  id:: data-format-standard-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9838\n\t- source-domain:: mv\n\t- preferred-term:: Data Format Standard\n\t- status:: stub\n\t- owl:class:: mv:DataFormatStandard\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: data-format-standard-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: data-format-standard-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9838\n\t- source-domain:: mv\n\t- preferred-term:: Data Format Standard\n\t- definition:: Technical specifications defining how data is structured, encoded, and exchanged across metaverse platforms and 3D applications, including standards like glTF for efficient 3D asset transmission and Universal Scene Description (USD) for complex scene composition and collaboration.\n\t- status:: active\n\t- owl:class:: mv:DataFormatStandard\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: data-format-standard-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Technical Standards]]\n\t\t- enables:: [[3D Asset Interoperability]], [[Cross-Platform Exchange]], [[Content Portability]]\n\t\t- requires:: [[Standards Body]], [[Implementation Libraries]], [[Validation Tools]]\n\t\t- related-to:: [[Compatibility Standards]], [[Metaverse Interoperability]], [[Digital Asset Standards]]\n- ## Technical Details\n\t- **Key 3D Format Standards**:\n\t\t- **glTF**: \"JPEG of 3D\" - fast, efficient, opinionated format by Khronos Group\n\t\t- **USD**: \"Photoshop of 3D\" - rich, extensible format for authoring and collaboration (Pixar)\n\t\t- **MaterialX**: Common language for shading and material definition\n\t- **Standards Organizations**:\n\t\t- Metaverse Standards Forum: 3D Asset Interoperability Domain Group\n\t\t- Alliance for OpenUSD (AOUSD): Pixar, Adobe, Apple, Autodesk, NVIDIA\n\t\t- Khronos Group: glTF development and promotion\n\t- **2024 Progress**:\n\t\t- USD and glTF communities building synergies to reduce fragmentation\n\t\t- NVIDIA added glTF plugin for direct USD scene referencing\n\t\t- Exploring NERFs and Gaussian Splats for new 3D representations\n\t- **Scope Expansion**: Beyond geometry to behaviors, sound, physics, scene composition\n- ## Applications\n\t- 3D asset exchange between platforms\n\t- Metaverse content creation workflows\n\t- Game engine asset pipelines\n\t- Virtual production environments\n\t- Digital twin visualization",
   "backlinks": [
     "Universal Manifest"
   ],
   "wiki_links": [
+    "Implementation Libraries",
+    "Digital Asset Standards",
+    "Validation Tools",
     "metaverse",
-    "Metaverse"
+    "3D Asset Interoperability",
+    "Metaverse Interoperability",
+    "Content Portability",
+    "Cross-Platform Exchange",
+    "Standards Body",
+    "Compatibility Standards",
+    "Technical Standards"
   ],
   "ontology": {
     "term_id": "MV-9838",
@@ -17,9 +26,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Technical specifications defining how data is structured, encoded, and exchanged across metaverse platforms and 3D applications, including standards like glTF for efficient 3D asset transmission and Universal Scene Description (USD) for complex scene composition and collaboration.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +41,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Technical Standards"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Standards Body",
+      "Implementation Libraries",
+      "Validation Tools"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "3D Asset Interoperability",
+      "Cross-Platform Exchange",
+      "Content Portability"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +65,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Compatibility Standards",
+        "Metaverse Interoperability",
+        "Digital Asset Standards"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

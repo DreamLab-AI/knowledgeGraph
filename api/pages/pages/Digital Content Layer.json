@@ -1,24 +1,34 @@
 {
   "id": "Digital Content Layer",
   "title": "Digital Content Layer",
-  "content": "- ### OntologyBlock\n  id:: digital-content-layer-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9853\n\t- source-domain:: metaverse\n\t- preferred-term:: Digital Content Layer\n\t- status:: stub\n\t- owl:class:: mv:DigitalContentLayer\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-content-layer-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-content-layer-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9853\n\t- source-domain:: mv\n\t- preferred-term:: Digital Content Layer\n\t- definition:: An architectural abstraction within metaverse and spatial computing systems that organizes and manages digital assets, 3D objects, interactive media, and user-generated content as discrete layers that can be rendered, composed, and manipulated independently within virtual environments.\n\t- status:: active\n\t- owl:class:: mv:DigitalContentLayer\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-content-layer-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse Architecture]]\n\t\t- enables:: [[Content Composition]], [[Layer Management]], [[Dynamic Rendering]]\n\t\t- requires:: [[Rendering Engine]], [[Asset Management]], [[Spatial Mapping]]\n\t\t- related-to:: [[AR Content]], [[3D Assets]], [[Scene Graph]]\n- ## Technical Details\n\t- **Layered Architecture**:\n\t\t- Infrastructure layer: Blockchain, compute, storage\n\t\t- Interaction layer: VR/AR/MR input and output\n\t\t- Ecosystem layer: Applications, services, experiences\n\t\t- Content layer: Assets, media, user-generated content\n\t- **Seven-Layer Model**:\n\t\t- Framework, interaction design, dispersion\n\t\t- Augmented reality, creative industry\n\t\t- Exploration and engagement layers\n\t- **Content Management**:\n\t\t- AI-generated content alongside human creation\n\t\t- Dynamic layer composition at runtime\n\t\t- Cross-platform asset interoperability\n\t\t- Real-time content synchronization\n\t- **2024 Trends**: AI as primary content creator, procedural generation, user-owned content layers\n- ## Applications\n\t- Virtual world construction\n\t- Immersive training environments\n\t- Digital twin visualization\n\t- Gaming asset management\n\t- Collaborative design spaces",
   "backlinks": [
     "Augmented Reality (AR)"
   ],
   "wiki_links": [
-    "metaverse"
+    "Content Composition",
+    "Spatial Mapping",
+    "3D Assets",
+    "Rendering Engine",
+    "metaverse",
+    "Metaverse Architecture",
+    "Scene Graph",
+    "Layer Management",
+    "Asset Management",
+    "AR Content",
+    "Dynamic Rendering"
   ],
   "ontology": {
     "term_id": "MV-9853",
     "preferred_term": "Digital Content Layer",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#DigitalContentLayer",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "source_domain": "mv",
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "An architectural abstraction within metaverse and spatial computing systems that organizes and manages digital assets, 3D objects, interactive media, and user-generated content as discrete layers that can be rendered, composed, and manipulated independently within virtual environments.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +40,22 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Metaverse Architecture"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Rendering Engine",
+      "Asset Management",
+      "Spatial Mapping"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Content Composition",
+      "Layer Management",
+      "Dynamic Rendering"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +65,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "AR Content",
+        "3D Assets",
+        "Scene Graph"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "Missing required property: owl:role"
       ]
     }
   }

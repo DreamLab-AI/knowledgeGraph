@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0034
 	- source-domain:: rb
-	- preferred-term:: rb 0034 repeatability
-	- status:: draft
+	- preferred-term:: Repeatability
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0034repeatability
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Repeatability is the precision with which a robot can return to the same position when commanded multiple times, expressed as the variation in achieved positions from repeated attempts.
+	- owl:class:: rb:Repeatability
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

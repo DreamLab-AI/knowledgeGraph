@@ -1,24 +1,34 @@
 {
   "id": "Digital Identity Standards",
   "title": "Digital Identity Standards",
-  "content": "- ### OntologyBlock\n  id:: digital-identity-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9859\n\t- source-domain:: metaverse\n\t- preferred-term:: Digital Identity Standards\n\t- status:: stub\n\t- owl:class:: mv:DigitalIdentityStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-identity-standards-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-identity-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9859\n\t- source-domain:: mv\n\t- preferred-term:: Digital Identity Standards\n\t- definition:: The technical specifications, protocols, and frameworks established by standards bodies such as W3C and ISO that define interoperable formats for digital identifiers, verifiable credentials, and authentication mechanisms enabling secure identity management across metaverse platforms and decentralized systems.\n\t- status:: active\n\t- owl:class:: mv:DigitalIdentityStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-identity-standards-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Technical Standards]]\n\t\t- enables:: [[Identity Interoperability]], [[Credential Exchange]], [[Trust Frameworks]]\n\t\t- requires:: [[Standards Bodies]], [[Protocol Specifications]], [[Conformance Testing]]\n\t\t- related-to:: [[W3C DID]], [[Verifiable Credentials]], [[ISO Standards]]\n- ## Technical Details\n\t- **W3C DID Core 1.0**:\n\t\t- Approved as W3C Recommendation July 19, 2022\n\t\t- Globally unique, cryptographically verifiable identifiers\n\t\t- Self-administered without central registry\n\t\t- 103 DID Method specifications at publication\n\t- **Key Standards**:\n\t\t- DIDs: Decentralized identifiers for self-sovereign identity\n\t\t- VCs: Verifiable credentials for attestations\n\t\t- ISO 27001: Information security management\n\t\t- eIDAS 2.0: EU digital identity regulation\n\t- **Industry Initiatives**:\n\t\t- Metaverse Standards Forum: 1,800+ member organizations\n\t\t- Founded by Meta, Nvidia, Adobe, W3C and others\n\t\t- Focus on interoperability and secure identity frameworks\n\t- **Leading Wallets**: Supporting multiple standards for cross-platform use\n- ## Applications\n\t- Cross-metaverse identity portability\n\t- Credential verification\n\t- Regulatory compliance\n\t- Interoperable authentication\n\t- Trust framework establishment",
   "backlinks": [
     "Trust Framework Policy"
   ],
   "wiki_links": [
-    "metaverse"
+    "Protocol Specifications",
+    "Verifiable Credentials",
+    "ISO Standards",
+    "Standards Bodies",
+    "metaverse",
+    "Conformance Testing",
+    "Technical Standards",
+    "Identity Interoperability",
+    "W3C DID",
+    "Trust Frameworks",
+    "Credential Exchange"
   ],
   "ontology": {
     "term_id": "MV-9859",
     "preferred_term": "Digital Identity Standards",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#DigitalIdentityStandards",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "source_domain": "mv",
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "The technical specifications, protocols, and frameworks established by standards bodies such as W3C and ISO that define interoperable formats for digital identifiers, verifiable credentials, and authentication mechanisms enabling secure identity management across metaverse platforms and decentralized systems.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +40,22 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Technical Standards"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Standards Bodies",
+      "Protocol Specifications",
+      "Conformance Testing"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Identity Interoperability",
+      "Credential Exchange",
+      "Trust Frameworks"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +65,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "W3C DID",
+        "Verifiable Credentials",
+        "ISO Standards"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "Missing required property: owl:role"
       ]
     }
   }

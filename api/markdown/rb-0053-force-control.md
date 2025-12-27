@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0053
 	- source-domain:: rb
-	- preferred-term:: rb 0053 force control
-	- status:: draft
+	- preferred-term:: Force Control
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0053forcecontrol
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Force control is a robot control method that regulates contact forces between the robot and its environment, essential for assembly, polishing, and manipulation tasks requiring controlled force application.
+	- owl:class:: rb:ForceControl
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

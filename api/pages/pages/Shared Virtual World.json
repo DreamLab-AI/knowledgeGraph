@@ -1,13 +1,17 @@
 {
   "id": "Shared Virtual World",
   "title": "Shared Virtual World",
-  "content": "- ### OntologyBlock\n  id:: shared-virtual-world-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10044\n\t- source-domain:: mv\n\t- preferred-term:: Shared Virtual World\n\t- status:: stub\n\t- owl:class:: mv:SharedVirtualWorld\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: shared-virtual-world-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: shared-virtual-world-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10044\n\t- source-domain:: mv\n\t- preferred-term:: Shared Virtual World\n\t- status:: active\n\t- definition:: A persistent, synchronous three-dimensional digital environment where unlimited users interact simultaneously through avatars, featuring continuous data persistence for identity, assets, and social relationships across sessions while supporting real-time rendering and cross-platform access.\n\t- owl:class:: mv:SharedVirtualWorld\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: shared-virtual-world-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Virtual Environment]]\n\t\t- related-to:: [[Metaverse Platform]]\n\t\t- related-to:: [[Massively Multiplayer Online]]\n\t\t- related-to:: [[Virtual Economy]]\n\t\t- enables:: [[Digital Social Presence]]\n\t- #### Key Characteristics\n\t  collapsed:: true\n\t\t- Persistence across user sessions\n\t\t- Synchronous multi-user interaction\n\t\t- Individual sense of presence\n\t\t- Continuity of digital identity\n\t\t- Interoperable asset systems\n\t- #### Leading Platforms\n\t  collapsed:: true\n\t\t- Decentraland (blockchain-based)\n\t\t- The Sandbox (GameFi focused)\n\t\t- Second Life (social metaverse)\n\t\t- VRChat (social VR platform)\n\t\t- Somnium Space (VR world)",
   "backlinks": [
     "State Synchronization"
   ],
   "wiki_links": [
+    "Metaverse Platform",
     "metaverse",
-    "Metaverse"
+    "Massively Multiplayer Online",
+    "Virtual Economy",
+    "Digital Social Presence",
+    "Virtual Environment"
   ],
   "ontology": {
     "term_id": "MV-10044",
@@ -17,9 +21,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A persistent, synchronous three-dimensional digital environment where unlimited users interact simultaneously through avatars, featuring continuous data persistence for identity, assets, and social relationships across sessions while supporting real-time rendering and cross-platform access.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +36,15 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Virtual Environment"
     ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Digital Social Presence"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +54,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Metaverse Platform",
+        "Massively Multiplayer Online",
+        "Virtual Economy"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

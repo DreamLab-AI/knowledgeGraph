@@ -7,9 +7,10 @@ id:: rb-0046-robot-control-ontology
   - term-id:: RB-0046
   - preferred-term:: Robot Control
   - source-domain:: rb
-  - status:: corrected
-  - definition:: Robot Control - The systems, algorithms, and methodologies that enable robots to execute tasks autonomously or semi-autonomously through sensing, decision-making, and actuation
+  - owl:class:: rb:RobotControl
   - is-subclass-of:: [[Robotics]]
+  - status:: active
+  - definition:: Robot control encompasses the systems, algorithms, and methodologies that enable robots to execute tasks autonomously or semi-autonomously through sensing, decision-making, and actuation.
 
 ### [[Vision-Based Control Systems]]
 - **[[Deep Learning]] and [[Machine Vision]]** [Updated 2025]

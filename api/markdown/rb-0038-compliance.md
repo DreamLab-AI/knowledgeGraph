@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0038
 	- source-domain:: rb
-	- preferred-term:: rb 0038 compliance
-	- status:: draft
+	- preferred-term:: Compliance
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0038compliance
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Compliance in robotics is the inverse of stiffness, representing the mechanical flexibility or yielding behaviour of a robot structure, essential for safe human-robot interaction and assembly tasks.
+	- owl:class:: rb:Compliance
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

@@ -1,13 +1,16 @@
 {
   "id": "Motion Markers",
   "title": "Motion Markers",
-  "content": "- ### OntologyBlock\n  id:: motion-markers-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9973\n\t- source-domain:: mv\n\t- preferred-term:: Motion Markers\n\t- status:: stub\n\t- owl:class:: mv:MotionMarkers\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: motion-markers-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: motion-markers-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9973\n\t- source-domain:: mv\n\t- preferred-term:: Motion Markers\n\t- status:: active\n\t- owl:class:: mv:MotionMarkers\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Reflective or active tracking points placed on subjects for optical motion capture systems, typically 12-15mm diameter for full-body capture, enabling precise position tracking at frame rates from 120fps to 10,000fps for animation, biomechanics, and performance analysis.\n\t- #### Relationships\n\t  id:: motion-markers-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Motion Capture Technology]]\n\t\t- related-to:: [[Optical Tracking]]\n\t\t- related-to:: [[Performance Capture]]\n\t\t- enables:: [[3D Motion Analysis]]\n\n## Marker-Based Systems\n\n### Gold Standard Status\n- Clinical acceptance\n- High accuracy\n- Proven reliability\n- Research validation\n- Industry standard\n\n### Technical Specifications\n- 12-15mm diameter typical\n- Full-body tracking\n- 120-160fps standard\n- Up to 10,000fps possible\n- Resolution-dependent speed\n\n## System Comparison (2024)\n\n### Marker-Based Advantages\n- Higher precision\n- Established protocols\n- Research validation\n- Professional workflows\n- Consistent results\n\n### Markerless Development\n- Non-invasive tracking\n- Computer vision methods\n- Deep learning algorithms\n- Video-based analysis\n- Accessibility improvement\n\n## Accuracy Research\n\n### Systematic Review Findings\n- Good to excellent spatiotemporal accuracy\n- Hip and knee: moderate to excellent\n- Ankle: variable reliability\n- Gait analysis focus\n- Meta-analysis validation\n\n### Reliability Studies\n- 39 kinematic variables tested\n- 10 fundamental movements\n- Moderate to excellent ICC\n- Most movements excellent (>0.90)\n- Inter/intra-rater consistency\n\n## Applications\n\n### Clinical Biomechanics\n- Gait analysis\n- Rehabilitation assessment\n- Injury evaluation\n- Surgical planning\n- Treatment monitoring\n\n### Entertainment Industry\n- Film animation\n- Video game development\n- Virtual production\n- Performance capture\n- Character animation\n\n### Sports Science\n- Athlete performance\n- Technique analysis\n- Injury prevention\n- Training optimisation\n- Movement patterns\n\n## December 2024 Development\n\n### CAMERA Software (University of Bath)\n- Open access release\n- Markerless analysis\n- Comparable accuracy\n- Deep learning methods\n- Body landmark detection\n\n### Clinical Implications\n- Unobtrusive analysis\n- Video footage processing\n- Physiotherapy support\n- Sports coaching\n- Accessibility expansion\n\n## Marker Types\n\n### Passive Markers\n- Reflective material\n- Infrared illumination\n- Camera detection\n- No power required\n- Cost-effective\n\n### Active Markers\n- LED-based\n- Self-illuminating\n- Unique identification\n- Higher visibility\n- Power requirements\n\n## Placement Protocols\n\n### Anatomical Landmarks\n- Joint centres\n- Bony prominences\n- Segment tracking\n- Standardised protocols\n- Cluster configurations\n\n### Considerations\n- Subject size\n- Movement range\n- Occlusion prevention\n- Marker visibility\n- Attachment security\n\n## Future Trends\n\n### Hybrid Approaches\n- Marker and markerless fusion\n- AI-enhanced tracking\n- Real-world deployment\n- Reduced setup time\n- Broader accessibility\n\n### Research Directions\n- Clinical usefulness validation\n- Real-world performance\n- Neurodegeneration applications\n- Functional assessment\n- Home-based monitoring\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
     "Motion Capture Rig"
   ],
   "wiki_links": [
+    "Motion Capture Technology",
     "metaverse",
-    "Metaverse"
+    "Optical Tracking",
+    "3D Motion Analysis",
+    "Performance Capture"
   ],
   "ontology": {
     "term_id": "MV-9973",
@@ -17,9 +20,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Reflective or active tracking points placed on subjects for optical motion capture systems, typically 12-15mm diameter for full-body capture, enabling precise position tracking at frame rates from 120fps to 10,000fps for animation, biomechanics, and performance analysis.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +35,15 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Motion Capture Technology"
     ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "3D Motion Analysis"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +53,16 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Optical Tracking",
+        "Performance Capture"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

@@ -9,16 +9,16 @@
   ],
   "wiki_links": [
     "Metadata Standards",
-    "Governance Process",
-    "Taxonomy",
-    "metaverse",
-    "Semantic Interoperability",
-    "Ontology",
     "Thesaurus",
     "Taxonomy Development",
     "Knowledge Organization",
+    "Consistent Indexing",
+    "metaverse",
+    "Semantic Interoperability",
     "Information Retrieval",
-    "Consistent Indexing"
+    "Governance Process",
+    "Taxonomy",
+    "Ontology"
   ],
   "ontology": {
     "term_id": "MV-9832",

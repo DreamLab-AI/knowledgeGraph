@@ -5,19 +5,22 @@
   "backlinks": [
     "Distributed System Architecture",
     "Privacy Architecture",
+    "Metaverse Architecture",
     "Event Driven Architecture",
     "User Interface Architecture",
+    "Model Architecture",
     "Security Architecture",
     "Distributed Architecture",
     "Enterprise Architecture",
+    "Microservices Architecture",
     "Scalable Architecture"
   ],
   "wiki_links": [
-    "metaverse",
     "Interoperability",
+    "metaverse",
     "Metaverse Infrastructure",
-    "Edge Computing",
-    "Network Architecture"
+    "Network Architecture",
+    "Edge Computing"
   ],
   "ontology": {
     "term_id": "MV-10078",

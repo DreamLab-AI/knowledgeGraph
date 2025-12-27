@@ -1,13 +1,22 @@
 {
   "id": "Data Virtualization",
   "title": "Data Virtualization",
-  "content": "- ### OntologyBlock\n  id:: data-virtualization-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9841\n\t- source-domain:: mv\n\t- preferred-term:: Data Virtualization\n\t- status:: stub\n\t- owl:class:: mv:DataVirtualization\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: data-virtualization-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: data-virtualization-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9841\n\t- source-domain:: mv\n\t- preferred-term:: Data Virtualization\n\t- definition:: A data integration approach that creates a virtual abstraction layer enabling users and applications to access, query, and integrate data from multiple disparate sources as a single unified system without physically moving or replicating the underlying data, supporting real-time access and reducing data management complexity.\n\t- status:: active\n\t- owl:class:: mv:DataVirtualization\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: data-virtualization-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Data Integration]]\n\t\t- enables:: [[Real-Time Data Access]], [[Data Federation]], [[Unified Data View]]\n\t\t- requires:: [[Metadata Management]], [[Query Engine]], [[Data Connectors]]\n\t\t- related-to:: [[Data Fabric]], [[ETL]], [[Data Warehouse]]\n- ## Technical Details\n\t- **Core Capabilities**:\n\t\t- **Abstraction**: Hide technical details (location, structure, API, storage technology)\n\t\t- **Virtualized Access**: Connect disparate sources to common logical access point\n\t\t- **Data Transformation**: Transform, clean, reformat, aggregate at query time\n\t\t- **Data Federation**: Combine results from multiple source systems\n\t\t- **Data Delivery**: Publish views and services on demand\n\t- **Benefits over Traditional ETL**:\n\t\t- Data remains in place; no physical movement\n\t\t- Real-time access to source systems\n\t\t- Reduces data errors and unnecessary workload\n\t\t- No single data model imposed\n\t- **Industry Recognition (2024)**:\n\t\t- CData: Only new entrant in 2024 Gartner report\n\t\t- Denodo: Gartner Peer Insights Customers' Choice (4.6/5) four years running\n\t- **Modern Architecture Role**: Key component of data fabric architecture; isolates data management complexity\n- ## Applications\n\t- Enterprise data integration\n\t- Real-time analytics and AI\n\t- Federated data queries\n\t- Multi-cloud data access\n\t- Legacy system integration",
   "backlinks": [
     "Data Fabric Architecture"
   ],
   "wiki_links": [
+    "Query Engine",
+    "Data Integration",
     "metaverse",
-    "Metaverse"
+    "Data Connectors",
+    "ETL",
+    "Real-Time Data Access",
+    "Data Warehouse",
+    "Data Fabric",
+    "Data Federation",
+    "Unified Data View",
+    "Metadata Management"
   ],
   "ontology": {
     "term_id": "MV-9841",
@@ -17,9 +26,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A data integration approach that creates a virtual abstraction layer enabling users and applications to access, query, and integrate data from multiple disparate sources as a single unified system without physically moving or replicating the underlying data, supporting real-time access and reducing data management complexity.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +41,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Data Integration"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Metadata Management",
+      "Query Engine",
+      "Data Connectors"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Real-Time Data Access",
+      "Data Federation",
+      "Unified Data View"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +65,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Data Fabric",
+        "ETL",
+        "Data Warehouse"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

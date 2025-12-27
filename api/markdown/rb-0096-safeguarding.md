@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0096
 	- source-domain:: rb
-	- preferred-term:: rb 0096 safeguarding
-	- status:: draft
+	- preferred-term:: Safeguarding
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0096safeguarding
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Safeguarding encompasses protective measures and devices implemented to prevent personnel from accessing hazardous areas or machine operations, including physical guards, safety sensors, and interlocks.
+	- owl:class:: rb:Safeguarding
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

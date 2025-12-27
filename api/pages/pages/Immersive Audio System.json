@@ -1,12 +1,16 @@
 {
   "id": "Immersive Audio System",
   "title": "Immersive Audio System",
-  "content": "- ### OntologyBlock\n  id:: Immersive Audio System\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9920\n  - preferred-term:: Immersive Audio System\n  - source-domain:: mv\n  - owl:class:: mv:ImmersiveAudioSystem\n  - status:: stub\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]",
+  "content": "- ### OntologyBlock\n  id:: immersive-audio-system-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9920\n\t- source-domain:: mv\n\t- preferred-term:: Immersive Audio System\n\t- status:: active\n\t- owl:class:: mv:ImmersiveAudioSystem\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Audio technologies enabling three-dimensional soundscapes in virtual environments through spatial audio processing, binaural rendering, and head-related transfer functions (HRTF), creating realistic acoustic experiences that respond to user position and movement within VR, AR, and metaverse applications.\n\t- #### Relationships\n\t  id:: immersive-audio-system-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Audio Technology]]\n\t\t- related-to:: [[Immersive Experiences]]\n\t\t- related-to:: [[VR Headset]]\n\t\t- enables:: [[Spatial Presence]]\n\n## Market Overview\n\n### 3D Audio Market\n- Market value: USD 8.41 billion (2024)\n- Projected: USD 37.56 billion by 2032\n- CAGR: 20.69% (2025-2032)\n- Key drivers: VR, AR, metaverse adoption\n\n### Platform Integration\n- Streaming services\n- Gaming consoles\n- VR/AR headsets\n- Smart speakers\n- Cinematic experiences\n\n## Spatial Audio Technology\n\n### Core Concepts\n- Three-dimensional soundscape creation\n- Direction and distance simulation\n- Acoustic environment replication\n- Dynamic response to user movement\n- Natural sound perception replication\n\n### Technical Components\n- Head-Related Transfer Functions (HRTF)\n- Binaural audio processing\n- AI-driven sound processing\n- Real-time rendering engines\n- Positional audio algorithms\n\n## Hardware Support\n\n### VR Headsets with Spatial Audio\n- Meta Quest 2 and Quest Pro\n- HTC VIVE XR Elite\n- Pico 4 and Pico 4 Enterprise\n- Varjo VR-3 and XR-3\n- Lenovo VRX and A3\n\n### Audio Standards\n- Dolby Atmos integration\n- Apple Spatial Audio (iOS 14+)\n- MPEG-H 3D Audio\n- Ambisonics formats\n- Object-based audio\n\n## Key Benefits\n\n### Immersion Enhancement\n- Realistic environment simulation\n- Natural sound behaviour mimicking\n- Engagement and presence improvement\n- Emotional response amplification\n\n### Functional Capabilities\n- Directional cue provision\n- User attention guidance\n- Interaction promotion\n- Spatial awareness support\n\n## Metaverse Applications\n\n### Virtual Collaboration\n- Co-presence audio\n- Remote collaboration support\n- Virtual meeting spaces\n- Networked participant audio\n\n### Entertainment\n- Gaming soundscapes\n- Virtual concerts\n- Immersive storytelling\n- Social VR experiences\n\n## Future Developments\n\n### AI Integration\n- Dynamic soundscape generation\n- User action-responsive audio\n- Generative audio systems\n- Personalised HRTF profiles\n\n### Industry Collaboration\n- Audio device manufacturers\n- Software developers\n- Content platforms\n- Cross-platform standards\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
     "Spatial Audio Scene Description"
   ],
   "wiki_links": [
-    "Metaverse"
+    "Spatial Presence",
+    "Audio Technology",
+    "Immersive Experiences",
+    "metaverse",
+    "VR Headset"
   ],
   "ontology": {
     "term_id": "MV-9920",
@@ -16,9 +20,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Audio technologies enabling three-dimensional soundscapes in virtual environments through spatial audio processing, binaural rendering, and head-related transfer functions (HRTF), creating realistic acoustic experiences that respond to user position and movement within VR, AR, and metaverse applications.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,27 +34,37 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Audio Technology"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Spatial Presence"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "metaverse"
+    ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Immersive Experiences",
+        "VR Headset"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

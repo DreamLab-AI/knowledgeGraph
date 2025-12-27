@@ -6,14 +6,14 @@
     "Ensemble Methods"
   ],
   "wiki_links": [
+    "Machine Learning",
+    "CatBoost",
+    "Bias",
+    "Accuracy",
+    "Ensemble Methods",
     "AdaBoost",
     "LightGBM",
-    "Ensemble Methods",
-    "Accuracy",
     "XGBoost",
-    "CatBoost",
-    "Machine Learning",
-    "Bias",
     "Gradient Boosting"
   ],
   "ontology": {

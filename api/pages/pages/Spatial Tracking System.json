@@ -1,13 +1,17 @@
 {
   "id": "Spatial Tracking System",
   "title": "Spatial Tracking System",
-  "content": "- ### OntologyBlock\n  id:: spatial-tracking-system-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10065\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Tracking System\n\t- status:: stub\n\t- owl:class:: mv:SpatialTrackingSystem\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: spatial-tracking-system-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: spatial-tracking-system-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10065\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Tracking System\n\t- status:: active\n\t- definition:: Technology for determining the six-degrees-of-freedom (6DOF) position and orientation of devices, controllers, or body parts in three-dimensional space, using visual-inertial SLAM, stereo cameras, and IMU sensors for precise real-time tracking in VR, AR, and mixed reality applications.\n\t- owl:class:: mv:SpatialTrackingSystem\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: spatial-tracking-system-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Motion Tracking]]\n\t\t- related-to:: [[6DOF Tracking]]\n\t\t- related-to:: [[Visual SLAM]]\n\t\t- related-to:: [[IMU Sensors]]\n\t\t- enables:: [[Precise Spatial Positioning]]\n\t- #### Tracking Degrees\n\t  collapsed:: true\n\t\t- Rotational (3DOF): pitch, yaw, roll\n\t\t- Translational (3DOF): X, Y, Z position\n\t\t- Combined 6DOF full spatial tracking\n\t\t- Visual-inertial sensor fusion\n\t\t- Deep learning pose estimation\n\t- #### Applications\n\t  collapsed:: true\n\t\t- VR headset and controller tracking\n\t\t- Location-based entertainment venues\n\t\t- Medical surgical navigation\n\t\t- Film and VFX camera tracking\n\t\t- Industrial robotics guidance",
   "backlinks": [
     "Augmented Reality (AR)"
   ],
   "wiki_links": [
+    "Precise Spatial Positioning",
+    "IMU Sensors",
     "metaverse",
-    "Metaverse"
+    "Visual SLAM",
+    "Motion Tracking",
+    "6DOF Tracking"
   ],
   "ontology": {
     "term_id": "MV-10065",
@@ -17,9 +21,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Technology for determining the six-degrees-of-freedom (6DOF) position and orientation of devices, controllers, or body parts in three-dimensional space, using visual-inertial SLAM, stereo cameras, and IMU sensors for precise real-time tracking in VR, AR, and mixed reality applications.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +36,15 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Motion Tracking"
     ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Precise Spatial Positioning"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +54,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "6DOF Tracking",
+        "Visual SLAM",
+        "IMU Sensors"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

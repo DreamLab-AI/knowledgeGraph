@@ -1,13 +1,17 @@
 {
   "id": "Shared Ownership Model",
   "title": "Shared Ownership Model",
-  "content": "- ### OntologyBlock\n  id:: shared-ownership-model-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10042\n\t- source-domain:: mv\n\t- preferred-term:: Shared Ownership Model\n\t- status:: stub\n\t- owl:class:: mv:SharedOwnershipModel\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: shared-ownership-model-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: shared-ownership-model-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10042\n\t- source-domain:: mv\n\t- preferred-term:: Shared Ownership Model\n\t- status:: active\n\t- definition:: A blockchain-enabled framework for fractional ownership of high-value assets through tokenization, allowing multiple parties to hold proportional stakes in real estate, digital art, intellectual property, or virtual assets with automated governance via smart contracts.\n\t- owl:class:: mv:SharedOwnershipModel\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: shared-ownership-model-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Asset Tokenization]]\n\t\t- related-to:: [[Fractional NFT]]\n\t\t- related-to:: [[Smart Contracts]]\n\t\t- related-to:: [[Digital Asset Management]]\n\t\t- enables:: [[Democratized Investment]]\n\t- #### Tokenization Process\n\t  collapsed:: true\n\t\t- Asset valuation and verification\n\t\t- Token creation representing ownership fractions\n\t\t- Smart contract deployment for governance\n\t\t- Secondary market trading enablement\n\t\t- Profit distribution automation\n\t- #### Asset Classes\n\t  collapsed:: true\n\t\t- Real estate and property investment\n\t\t- Digital art and collectibles\n\t\t- Intellectual property rights\n\t\t- Virtual land and metaverse assets\n\t\t- Luxury goods and alternative investments",
   "backlinks": [
     "Fractionalized NFT"
   ],
   "wiki_links": [
+    "Asset Tokenization",
     "metaverse",
-    "Metaverse"
+    "Smart Contracts",
+    "Democratized Investment",
+    "Digital Asset Management",
+    "Fractional NFT"
   ],
   "ontology": {
     "term_id": "MV-10042",
@@ -17,9 +21,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A blockchain-enabled framework for fractional ownership of high-value assets through tokenization, allowing multiple parties to hold proportional stakes in real estate, digital art, intellectual property, or virtual assets with automated governance via smart contracts.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +36,15 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Asset Tokenization"
     ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Democratized Investment"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +54,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Fractional NFT",
+        "Smart Contracts",
+        "Digital Asset Management"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

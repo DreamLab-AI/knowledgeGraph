@@ -1,13 +1,23 @@
 {
   "id": "Digital Twin Creation",
   "title": "Digital Twin Creation",
-  "content": "- ### OntologyBlock\n  id:: digital-twin-creation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9876\n\t- source-domain:: mv\n\t- preferred-term:: Digital Twin Creation\n\t- status:: stub\n\t- owl:class:: mv:DigitalTwinCreation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: digital-twin-creation-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-twin-creation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9876\n\t- source-domain:: mv\n\t- preferred-term:: Digital Twin Creation\n\t- definition:: The process of developing virtual replicas of physical entities that dynamically reflect real-time conditions through continuous data linkage, enabling simulation, monitoring, and optimization across the asset's entire lifecycle from design through decommissioning.\n\t- status:: active\n\t- owl:class:: mv:DigitalTwinCreation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-twin-creation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Modeling]]\n\t\t- enables:: [[Real-Time Monitoring]], [[Predictive Analytics]], [[Lifecycle Management]]\n\t\t- requires:: [[3D Modeling]], [[IoT Integration]], [[Sensor Data]]\n\t\t- related-to:: [[Simulation]], [[Virtual Prototype]], [[Asset Management]]\n- ## Technical Details\n\t- **Market Growth**:\n\t\t- Global market: ~60% annual growth over next five years\n\t\t- Projected $73.5B by 2027 (McKinsey analysis)\n\t\t- Current market: $3.1B (2020) to $48.2B by 2026\n\t- **Creation Process**:\n\t\t- 3D scanning of existing assets (LiDAR, structured-light)\n\t\t- Meticulous data collection and analysis\n\t\t- Sensor integration for real-time updates\n\t\t- AI/ML model training for behavior prediction\n\t- **Digital Twin vs Simulation**:\n\t\t- Simulations: Static, predefined scenarios, no real-world connection\n\t\t- Digital Twins: Dynamic, real-time conditions, bidirectional data flow\n\t- **Required Technologies**: CAD modeling, cloud computing, IIoT, AR/VR, AI/ML, systems integration\n- ## Applications\n\t- Manufacturing predictive maintenance\n\t- Healthcare surgical planning\n\t- Automotive EV battery simulation\n\t- Smart city traffic optimization\n\t- Product lifecycle management",
   "backlinks": [
-    "Reality Capture System"
+    "Reality Capture System",
+    "Lidar Scanning"
   ],
   "wiki_links": [
+    "Sensor Data",
+    "Lifecycle Management",
     "metaverse",
-    "Metaverse"
+    "Digital Modeling",
+    "3D Modeling",
+    "Simulation",
+    "Virtual Prototype",
+    "Real-Time Monitoring",
+    "Asset Management",
+    "IoT Integration",
+    "Predictive Analytics"
   ],
   "ontology": {
     "term_id": "MV-9876",
@@ -17,9 +27,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The process of developing virtual replicas of physical entities that dynamically reflect real-time conditions through continuous data linkage, enabling simulation, monitoring, and optimization across the asset's entire lifecycle from design through decommissioning.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +42,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Digital Modeling"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "3D Modeling",
+      "IoT Integration",
+      "Sensor Data"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Real-Time Monitoring",
+      "Predictive Analytics",
+      "Lifecycle Management"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +66,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Simulation",
+        "Virtual Prototype",
+        "Asset Management"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

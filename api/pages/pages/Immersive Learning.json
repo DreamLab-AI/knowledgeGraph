@@ -1,15 +1,25 @@
 {
   "id": "Immersive Learning",
   "title": "Immersive Learning",
-  "content": "- ### OntologyBlock\n  id:: Immersive Learning\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9926\n  - preferred-term:: Immersive Learning\n  - source-domain:: mv\n  - owl:class:: mv:ImmersiveLearning\n  - status:: stub\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]",
+  "content": "- ### OntologyBlock\n  id:: immersive-learning-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9926\n\t- source-domain:: mv\n\t- preferred-term:: Immersive Learning\n\t- status:: active\n\t- owl:class:: mv:ImmersiveLearning\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Educational approaches utilising VR, AR, and metaverse technologies to create engaging, interactive learning environments that enable experiential skill development, realistic scenario simulation, and enhanced knowledge retention through presence-based educational experiences.\n\t- #### Relationships\n\t  id:: immersive-learning-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Educational Technology]]\n\t\t- related-to:: [[Learning Management System]]\n\t\t- related-to:: [[Immersive Technology]]\n\t\t- enables:: [[Experiential Education]]\n\n## Industry Developments (2024)\n\n### Platform Trends\n- Metaverse-as-a-service solutions\n- No-code/low-code platforms\n- LMS integration capabilities\n- Customisable training resources\n\n### Meta Education Initiative\n- Beta testing with 12+ universities (US/UK)\n- VR/XR prototype trials\n- Digital twin \"metaversaties\"\n- VictoryXR partnership\n\n## University Adoption\n\n### Partner Institutions\n- University of Basque Country (Spain)\n- University of Hannover (Germany)\n- Leeds University (UK)\n- NYU College of Dentistry\n\n### Proven Results\n- Purdue: 10-15% nursing exam improvement\n- University of Glasgow: Teaching transformation\n- NYU: 1,200+ dental students trained\n- Research positive effect (Hedges' g = 0.524)\n\n## Training Effectiveness\n\n### Focus Improvement\n- 4x more focused than e-learning\n- 1.5x more focused than classroom\n- Low-stress practice environment\n- Immersive attention capture\n\n### Confidence Building\n- 275% more confident post-training\n- 40% improvement over classroom\n- 35% improvement over e-learning\n- Practical skill application\n\n## Research Findings\n\n### Meta-Analysis Results\n- Positive moderate VR effect\n- Significant immersion level variations\n- Equipment type impact\n- Learning objective influence\n\n### Integration Recommendations\n- Pre-service teacher training\n- In-service professional development\n- Supplement to conventional teaching\n- Not standalone delivery\n\n## Platform Accessibility\n\n### Democratisation\n- Reduced developer resource needs\n- Wider company adoption\n- Flexible customisation\n- Easy-to-use interfaces\n\n### Technology Options\n- VR headset experiences\n- Virtual environments\n- AR overlays\n- Mixed reality training\n\n## Applications\n\n### Healthcare Training\n- Medical procedure simulation\n- Nursing skill development\n- Dental training environments\n- Surgical practice\n\n### Professional Development\n- Corporate training programmes\n- Soft skills development\n- Safety procedure training\n- Technical skill building\n\n## Challenges\n\n### Implementation Barriers\n- Accessibility concerns\n- Equity considerations\n- Scalability requirements\n- Technical infrastructure needs\n\n### Quality Assurance\n- Learning outcome validation\n- Assessment integration\n- Instructor preparation\n- Content development standards\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
+    "Learning Analytics",
+    "Learning Management System",
+    "Learning Module",
+    "Learning Component",
     "Virtual Field Trip",
     "Educational Narrative",
     "Education Metaverse",
+    "Knowledge Sharing",
+    "Learning Resources",
     "tc-0003-telepresence-robot"
   ],
   "wiki_links": [
-    "Metaverse"
+    "Experiential Education",
+    "Learning Management System",
+    "metaverse",
+    "Educational Technology",
+    "Immersive Technology"
   ],
   "ontology": {
     "term_id": "MV-9926",
@@ -19,9 +29,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Educational approaches utilising VR, AR, and metaverse technologies to create engaging, interactive learning environments that enable experiential skill development, realistic scenario simulation, and enhanced knowledge retention through presence-based educational experiences.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -33,27 +43,37 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Educational Technology"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Experiential Education"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "metaverse"
+    ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Learning Management System",
+        "Immersive Technology"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

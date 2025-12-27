@@ -8,12 +8,12 @@
     "Bagging"
   ],
   "wiki_links": [
-    "Random Forest",
-    "Stacking",
-    "Model Combination",
-    "Bagging",
-    "Boosting",
     "Machine Learning",
+    "Bagging",
+    "Stacking",
+    "Random Forest",
+    "Model Combination",
+    "Boosting",
     "Generalization",
     "Gradient Boosting"
   ],

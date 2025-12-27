@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0083
 	- source-domain:: rb
-	- preferred-term:: rb 0083 current sensor
-	- status:: draft
+	- preferred-term:: Current Sensor
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0083currentsensor
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: A current sensor measures electrical current flow in robot motor circuits, enabling torque estimation, fault detection, and energy monitoring for motor control applications.
+	- owl:class:: rb:CurrentSensor
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Current Landscape (2025)

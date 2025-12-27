@@ -1,13 +1,22 @@
 {
   "id": "Digital Twin Construction",
   "title": "Digital Twin Construction",
-  "content": "- ### OntologyBlock\n  id:: digital-twin-construction-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9874\n\t- source-domain:: mv\n\t- preferred-term:: Digital Twin Construction\n\t- status:: stub\n\t- owl:class:: mv:DigitalTwinConstruction\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: digital-twin-construction-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-twin-construction-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9874\n\t- source-domain:: mv\n\t- preferred-term:: Digital Twin Construction\n\t- definition:: The application of digital twin technology within the architecture, engineering, and construction (AEC) industry, extending BIM capabilities through real-time sensor integration and IoT connectivity to create dynamic virtual replicas of buildings and infrastructure throughout their lifecycle.\n\t- status:: active\n\t- owl:class:: mv:DigitalTwinConstruction\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-twin-construction-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Twin]]\n\t\t- enables:: [[Building Lifecycle Management]], [[Predictive Maintenance]], [[Construction Optimization]]\n\t\t- requires:: [[BIM]], [[IoT Sensors]], [[Cloud Platform]]\n\t\t- related-to:: [[Smart Building]], [[Construction Metaverse]], [[Facility Management]]\n- ## Technical Details\n\t- **BIM to Digital Twin Evolution**:\n\t\t- BIM: Static digital representation requiring manual updates\n\t\t- Digital Twin: Dynamic model with real-time sensor integration\n\t\t- Metaverse: Immersive 3D platform combining DT data with VR/AR interaction\n\t- **Key Technologies**:\n\t\t- Building Information Modeling (BIM) as foundation\n\t\t- IoT sensors and Internet of Things connectivity\n\t\t- AI/ML for predictive analytics\n\t\t- AR/VR for immersive visualization\n\t\t- Cloud computing for data processing\n\t- **Integration Benefits**:\n\t\t- Complete platform for building lifecycle management\n\t\t- Real-time simulation and scenario testing\n\t\t- Enhanced stakeholder collaboration\n\t\t- Improved schedule, cost, quality, and safety outcomes\n\t- **2024 Recognition**: World Economic Forum named \"Immersive Technology for the Built World\" as Top 10 Emerging Technologies\n- ## Applications\n\t- Construction project monitoring\n\t- Building operations optimization\n\t- Predictive maintenance scheduling\n\t- Virtual design review and coordination\n\t- Training and safety simulation",
   "backlinks": [
     "Photogrammetry"
   ],
   "wiki_links": [
+    "Construction Optimization",
+    "Digital Twin",
+    "Predictive Maintenance",
     "metaverse",
-    "Metaverse"
+    "Facility Management",
+    "Cloud Platform",
+    "Building Lifecycle Management",
+    "Construction Metaverse",
+    "BIM",
+    "IoT Sensors",
+    "Smart Building"
   ],
   "ontology": {
     "term_id": "MV-9874",
@@ -17,9 +26,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The application of digital twin technology within the architecture, engineering, and construction (AEC) industry, extending BIM capabilities through real-time sensor integration and IoT connectivity to create dynamic virtual replicas of buildings and infrastructure throughout their lifecycle.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +41,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Digital Twin"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "BIM",
+      "IoT Sensors",
+      "Cloud Platform"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Building Lifecycle Management",
+      "Predictive Maintenance",
+      "Construction Optimization"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +65,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Smart Building",
+        "Construction Metaverse",
+        "Facility Management"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

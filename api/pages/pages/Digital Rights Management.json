@@ -1,15 +1,25 @@
 {
   "id": "Digital Rights Management",
   "title": "Digital Rights Management",
-  "content": "- ### OntologyBlock\n  id:: digital-rights-management-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9867\n\t- source-domain:: mv\n\t- preferred-term:: Digital Rights Management\n\t- status:: stub\n\t- owl:class:: mv:DigitalRightsManagement\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: digital-rights-management-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-rights-management-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9867\n\t- source-domain:: mv\n\t- preferred-term:: Digital Rights Management\n\t- definition:: Technology systems and protocols that control access to, distribution of, and usage rights for digital content including media, software, and virtual assets, increasingly leveraging blockchain and smart contracts for transparent, decentralized rights enforcement and automated royalty distribution.\n\t- status:: active\n\t- owl:class:: mv:DigitalRightsManagement\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-rights-management-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Content Protection]]\n\t\t- enables:: [[Access Control]], [[Royalty Distribution]], [[Piracy Prevention]]\n\t\t- requires:: [[Encryption]], [[Smart Contracts]], [[License Management]]\n\t\t- related-to:: [[Copyright Protection]], [[NFT Licensing]], [[Content Monetization]]\n- ## Technical Details\n\t- **Traditional DRM Components**:\n\t\t- Encryption and access controls\n\t\t- License servers and key management\n\t\t- Usage tracking and restrictions\n\t\t- Copy protection mechanisms\n\t- **Blockchain DRM Advantages**:\n\t\t- Decentralized: No single point of failure\n\t\t- Transparent: Clear ownership records\n\t\t- Immutable: Tamper-proof rights registry\n\t\t- Automated: Smart contract royalty payments\n\t- **Market Growth (2024)**:\n\t\t- Blockchain DRM: $0.16B (53.6% CAGR)\n\t\t- Projected: $1.42B by 2029 (54.2% CAGR)\n\t- **2024 Developments**: Elastos Elacity DRM for Web3 video, NFT-based content licensing, music industry blockchain adoption\n- ## Applications\n\t- Music streaming royalty distribution\n\t- Video content protection\n\t- Gaming license management\n\t- NFT content access control\n\t- Metaverse asset licensing",
   "backlinks": [
+    "Watermarking Service",
     "Digital Goods",
     "Royalty Mechanism",
     "Digital Asset Workflow"
   ],
   "wiki_links": [
+    "Royalty Distribution",
+    "Content Protection",
+    "License Management",
+    "NFT Licensing",
     "metaverse",
-    "Metaverse"
+    "Access Control",
+    "Smart Contracts",
+    "Piracy Prevention",
+    "Copyright Protection",
+    "Content Monetization",
+    "Encryption"
   ],
   "ontology": {
     "term_id": "MV-9867",
@@ -19,9 +29,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Technology systems and protocols that control access to, distribution of, and usage rights for digital content including media, software, and virtual assets, increasingly leveraging blockchain and smart contracts for transparent, decentralized rights enforcement and automated royalty distribution.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -34,13 +44,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Content Protection"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Encryption",
+      "Smart Contracts",
+      "License Management"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Access Control",
+      "Royalty Distribution",
+      "Piracy Prevention"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -50,11 +68,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Copyright Protection",
+        "NFT Licensing",
+        "Content Monetization"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

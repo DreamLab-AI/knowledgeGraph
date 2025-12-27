@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0087
 	- source-domain:: rb
-	- preferred-term:: rb 0087 safety standard
-	- status:: draft
+	- preferred-term:: Safety Standard
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0087safetystandard
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: A safety standard is a formal document establishing requirements, specifications, and guidelines for ensuring robot operational safety, including ISO 10218 for industrial robots and ISO 15066 for collaborative robots.
+	- owl:class:: rb:SafetyStandard
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

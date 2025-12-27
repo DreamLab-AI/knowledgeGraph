@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0058
 	- source-domain:: rb
-	- preferred-term:: rb 0058 adaptive control
-	- status:: draft
+	- preferred-term:: Adaptive Control
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0058adaptivecontrol
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Adaptive control is a control methodology that automatically adjusts controller parameters in response to changes in system dynamics, enabling robots to handle varying payloads and environmental conditions.
+	- owl:class:: rb:AdaptiveControl
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

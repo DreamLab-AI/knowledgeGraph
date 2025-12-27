@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0047
 	- source-domain:: rb
-	- preferred-term:: rb 0047 feedback control
-	- status:: draft
+	- preferred-term:: Feedback Control
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0047feedbackcontrol
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Feedback control is a closed-loop control method that uses sensor measurements to compute error between desired and actual states, adjusting control inputs to minimise this error.
+	- owl:class:: rb:FeedbackControl
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

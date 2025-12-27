@@ -1,10 +1,16 @@
 {
   "id": "Inclusive Xr Experience",
   "title": "Inclusive Xr Experience",
-  "content": "- ### OntologyBlock\n  id:: Inclusive Xr Experience\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9000\n  - preferred-term:: Inclusive Xr Experience\n  - source-domain:: mv\n  - owl:class:: mv:InclusiveXrExperience\n  - status:: stub\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]",
-  "backlinks": [],
+  "content": "- ### OntologyBlock\n  id:: inclusive-xr-experience-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9000\n\t- source-domain:: mv\n\t- preferred-term:: Inclusive Xr Experience\n\t- status:: active\n\t- owl:class:: mv:InclusiveXrExperience\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Extended reality applications and environments designed to provide equitable, accessible experiences for users of all abilities, incorporating assistive technologies, alternative interaction modalities, and adaptive features that ensure meaningful participation in VR, AR, and metaverse spaces.\n\t- #### Relationships\n\t  id:: inclusive-xr-experience-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Accessible Experience]]\n\t\t- related-to:: [[Inclusive Xr Design]]\n\t\t- related-to:: [[Immersive Experiences]]\n\t\t- enables:: [[Equitable Metaverse Access]]\n\n## Accessibility Framework\n\n### MDPI Research Framework (2024)\n- 11 expert respondent analysis\n- Digital accessibility specialists\n- Metaverse developers\n- Disability advocates\n- Policy formulation experts\n\n### Findings\n- Mixed inclusivity state\n- Significant advancements identified\n- Notable integration gaps\n- Interoperability challenges\n\n## Identified Barriers\n\n### Voice Activation Issues\n- Recognition accuracy problems\n- Accent and speech pattern challenges\n- Alternative command needs\n- Quiet environment requirements\n\n### Menu Accessibility\n- Navigation complexity\n- Visual-only interfaces\n- Size and contrast limitations\n- Alternative navigation absence\n\n### Sensory Overload\n- Neurodivergent user impact\n- Stimulation management needs\n- Calm mode options\n- Customisable environments\n\n### Haptic Usability\n- Motor impairment challenges\n- Force feedback accessibility\n- Alternative sensation delivery\n- Customisable intensity\n\n## Inclusive Technologies\n\n### Input Alternatives\n- Eye-tracking systems\n- Brain-computer interfaces\n- Voice recognition\n- Adaptive controllers\n\n### Output Adaptations\n- Audio descriptions\n- Haptic communication\n- Visual alternatives\n- Multi-sensory options\n\n## Platform Features\n\n### Hardware Accessibility\n- PlayStation VR2 customisation\n- Button remapping\n- Sensitivity controls\n- Third-party controller support\n\n### Software Adaptations\n- Comfort mode settings\n- Motion reduction options\n- Colour blind modes\n- Subtitle customisation\n\n## Research Community\n\n### Academic Focus\n- ACM ASSETS conference research\n- XR accessibility scoping reviews\n- Assistive technology integration\n- Motor disability solutions\n\n### Industry Collaboration\n- Technology company partnerships\n- Disability organisation input\n- User testing programmes\n- Standards development\n\n## Metaverse Opportunities\n\n### Disability Empowerment\n- New interaction possibilities\n- Physical limitation transcendence\n- Social participation enhancement\n- Economic opportunity access\n\n### Design Integration\n- Early-stage accessibility\n- Universal design principles\n- Continuous improvement\n- User feedback incorporation\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "backlinks": [
+    "Inclusive Xr Design"
+  ],
   "wiki_links": [
-    "Metaverse"
+    "Equitable Metaverse Access",
+    "Immersive Experiences",
+    "metaverse",
+    "Inclusive Xr Design",
+    "Accessible Experience"
   ],
   "ontology": {
     "term_id": "MV-9000",
@@ -14,9 +20,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Extended reality applications and environments designed to provide equitable, accessible experiences for users of all abilities, incorporating assistive technologies, alternative interaction modalities, and adaptive features that ensure meaningful participation in VR, AR, and metaverse spaces.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -28,27 +34,37 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Accessible Experience"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Equitable Metaverse Access"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "metaverse"
+    ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Inclusive Xr Design",
+        "Immersive Experiences"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

@@ -1,13 +1,17 @@
 {
   "id": "Spatial Calibration",
   "title": "Spatial Calibration",
-  "content": "- ### OntologyBlock\n  id:: spatial-calibration-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10055\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Calibration\n\t- status:: stub\n\t- owl:class:: mv:SpatialCalibration\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: spatial-calibration-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: spatial-calibration-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10055\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Calibration\n\t- status:: active\n\t- definition:: The process of aligning virtual coordinate frames with physical world references in AR/VR systems, including camera calibration for video see-through displays and optical calibration for see-through displays, ensuring accurate registration of digital content with the real environment.\n\t- owl:class:: mv:SpatialCalibration\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: spatial-calibration-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AR Registration]]\n\t\t- related-to:: [[Camera Calibration]]\n\t\t- related-to:: [[Optical Calibration]]\n\t\t- related-to:: [[Tracking System]]\n\t\t- enables:: [[Accurate AR Alignment]]\n\t- #### Calibration Types\n\t  collapsed:: true\n\t\t- Camera calibration for video see-through\n\t\t- Optical calibration for see-through displays\n\t\t- Semi-automatic SPAAM calibration\n\t\t- Automatic INDICA calibration\n\t\t- Display relative calibration (DRC)\n\t- #### Key Challenges\n\t  collapsed:: true\n\t\t- Spatial mapping error accumulation\n\t\t- Feature-sparse environment handling\n\t\t- Lighting variation compensation\n\t\t- Multi-sensor synchronization\n\t\t- Real-time precision maintenance",
   "backlinks": [
     "Reality Capture System"
   ],
   "wiki_links": [
+    "Optical Calibration",
     "metaverse",
-    "Metaverse"
+    "Camera Calibration",
+    "Tracking System",
+    "Accurate AR Alignment",
+    "AR Registration"
   ],
   "ontology": {
     "term_id": "MV-10055",
@@ -17,9 +21,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The process of aligning virtual coordinate frames with physical world references in AR/VR systems, including camera calibration for video see-through displays and optical calibration for see-through displays, ensuring accurate registration of digital content with the real environment.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +36,15 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "AR Registration"
     ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Accurate AR Alignment"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +54,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Camera Calibration",
+        "Optical Calibration",
+        "Tracking System"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

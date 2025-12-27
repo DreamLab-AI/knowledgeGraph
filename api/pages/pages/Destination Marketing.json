@@ -1,13 +1,22 @@
 {
   "id": "Destination Marketing",
   "title": "Destination Marketing",
-  "content": "- ### OntologyBlock\n  id:: destination-marketing-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9843\n\t- source-domain:: mv\n\t- preferred-term:: Destination Marketing\n\t- status:: stub\n\t- owl:class:: mv:DestinationMarketing\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: destination-marketing-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: destination-marketing-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9843\n\t- source-domain:: mv\n\t- preferred-term:: Destination Marketing\n\t- definition:: The strategic promotion of physical or virtual locations using immersive technologies, AR/VR experiences, and digital twin representations to attract visitors, investors, and residents by showcasing destinations through interactive 3D visualizations and metaverse presence.\n\t- status:: active\n\t- owl:class:: mv:DestinationMarketing\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: destination-marketing-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Marketing]]\n\t\t- enables:: [[Virtual Tourism]], [[Location Promotion]], [[Immersive Advertising]]\n\t\t- requires:: [[3D Content Creation]], [[VR Experiences]], [[Digital Twin]]\n\t\t- related-to:: [[Virtual Travel]], [[Spatial Marketing]], [[Tourism Technology]]\n- ## Technical Details\n\t- **Core Technologies**:\n\t\t- Virtual reality destination tours\n\t\t- Augmented reality wayfinding and information overlays\n\t\t- Digital twin city representations\n\t\t- 360-degree immersive video experiences\n\t- **Marketing Strategies**:\n\t\t- Metaverse presence for virtual tourism previews\n\t\t- Gamified exploration experiences\n\t\t- User-generated virtual content\n\t\t- Influencer partnerships in virtual spaces\n\t- **2024 Trends**:\n\t\t- AI-personalized destination recommendations\n\t\t- Real-time virtual event streaming from destinations\n\t\t- NFT-based loyalty and collectible programs\n\t\t- Carbon footprint visualization for sustainable tourism\n\t- **Key Metrics**: Virtual engagement rates, conversion to physical visits, immersive content completion rates\n- ## Applications\n\t- Tourism board promotional campaigns\n\t- Real estate virtual property showcases\n\t- Event venue marketing\n\t- Cultural heritage site promotion\n\t- Smart city attraction initiatives",
   "backlinks": [
     "Tourism Metaverse"
   ],
   "wiki_links": [
+    "Spatial Marketing",
+    "Digital Marketing",
+    "Location Promotion",
+    "Digital Twin",
     "metaverse",
-    "Metaverse"
+    "Tourism Technology",
+    "3D Content Creation",
+    "Virtual Tourism",
+    "Immersive Advertising",
+    "VR Experiences",
+    "Virtual Travel"
   ],
   "ontology": {
     "term_id": "MV-9843",
@@ -17,9 +26,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The strategic promotion of physical or virtual locations using immersive technologies, AR/VR experiences, and digital twin representations to attract visitors, investors, and residents by showcasing destinations through interactive 3D visualizations and metaverse presence.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +41,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Digital Marketing"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "3D Content Creation",
+      "VR Experiences",
+      "Digital Twin"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Virtual Tourism",
+      "Location Promotion",
+      "Immersive Advertising"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +65,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Virtual Travel",
+        "Spatial Marketing",
+        "Tourism Technology"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

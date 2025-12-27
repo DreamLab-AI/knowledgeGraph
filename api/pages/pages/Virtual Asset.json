@@ -6,15 +6,18 @@
     "Non-Fungible Token (NFT)",
     "Virtual Asset Trading",
     "Virtual Economy",
+    "Virtual Securities Offering Vso",
+    "Land Parcel",
     "Loyalty Token",
+    "Virtualeconomydomain",
     "Tax Treatment Crypto"
   ],
   "wiki_links": [
-    "Cryptocurrency",
-    "metaverse",
     "Digital Asset",
+    "metaverse",
+    "VASP",
     "NFT",
-    "VASP"
+    "Cryptocurrency"
   ],
   "ontology": {
     "term_id": "MV-10104",

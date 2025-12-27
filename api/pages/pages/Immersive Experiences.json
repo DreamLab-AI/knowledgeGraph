@@ -1,17 +1,23 @@
 {
   "id": "Immersive Experiences",
   "title": "Immersive Experiences",
-  "content": "- ### OntologyBlock\n  id:: Immersive Experiences\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9923\n  - preferred-term:: Immersive Experiences\n  - source-domain:: mv\n  - owl:class:: mv:ImmersiveExperiences\n  - status:: stub\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]",
+  "content": "- ### OntologyBlock\n  id:: immersive-experiences-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9923\n\t- source-domain:: mv\n\t- preferred-term:: Immersive Experiences\n\t- status:: active\n\t- owl:class:: mv:ImmersiveExperiences\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Digital interactions utilising VR, AR, and mixed reality technologies to create engaging, interactive environments that generate a sense of presence and participation, spanning gaming, education, enterprise collaboration, and consumer applications within metaverse platforms.\n\t- #### Relationships\n\t  id:: immersive-experiences-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Experience]]\n\t\t- related-to:: [[Immersive Technology]]\n\t\t- related-to:: [[Extended Reality Xr]]\n\t\t- enables:: [[Virtual Presence]]\n\n## Market Overview\n\n### Global Metaverse Market\n- Market value: USD 105.40 billion (2024)\n- Projected: USD 936.57 billion by 2030\n- CAGR: 46.4% (2025-2030)\n\n### Consumer Metaverse\n- Value: USD 114.7 billion (2024)\n- Projected: USD 2,272.3 billion by 2034\n- CAGR: 34.8%\n\n### Immersive Technology Market\n- Value: USD 40.88 billion (2024)\n- Projected: USD 169.88 billion by 2030\n- CAGR: 27.9%\n\n## Technology Segments\n\n### Virtual Reality Leadership\n- 46% market share (2024)\n- Gaming and entertainment focus\n- Healthcare and education adoption\n- Fully interactive environments\n\n### Hardware Dominance\n- 54.7% of consumer market (2024)\n- VR headsets essential\n- AR glasses growth\n- Haptic technology integration\n\n## Regional Performance\n\n### North America\n- 42.8% market share (2024)\n- Leading VR/AR investment\n- High technology adoption\n- Strong consumer demand\n\n## Application Segments\n\n### Gaming\n- 25.3% market share (2024)\n- Roblox, Fortnite, Decentraland\n- User-generated content\n- Virtual world interactions\n\n### Training and Learning\n- 40.1% of immersive tech market\n- Interactive learning environments\n- Safe skill practice\n- Realistic simulations\n\n### Enterprise\n- 70.7% of consumer metaverse (2024)\n- Virtual events and conferences\n- Training and onboarding\n- Marketing and collaboration\n\n## User Engagement\n\n### Digital Engagement Growth\n- 400% increase in retail engagement\n- Virtual store adoption\n- Luxury and mainstream brands\n- Younger audience capture\n\n### Platform Success\n- Meta Quest: USD 2 billion in titles\n- 68% headset shipment growth\n- Sustained user engagement\n- Developer monetisation\n\n## User Trends\n\n### Avatar Creation\n- 54% prefer different-from-self avatars\n- 24% create complete alter egos\n- Self-expression tools\n- Identity exploration\n\n### User Projections\n- 17.4% penetration (2025)\n- 39.7% penetration (2030)\n- 2.6 billion users by 2030\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
     "Extended Reality (XR)",
     "Visualization Layer",
     "Real-Time Rendering Pipeline",
     "Dynamic Character Animation",
+    "Inclusive Xr Experience",
+    "Immersive Audio System",
     "Spatial Audio",
     "Physical Hardware"
   ],
   "wiki_links": [
-    "Metaverse"
+    "metaverse",
+    "Immersive Technology",
+    "Virtual Presence",
+    "Extended Reality Xr",
+    "Digital Experience"
   ],
   "ontology": {
     "term_id": "MV-9923",
@@ -21,9 +27,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Digital interactions utilising VR, AR, and mixed reality technologies to create engaging, interactive environments that generate a sense of presence and participation, spanning gaming, education, enterprise collaboration, and consumer applications within metaverse platforms.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -35,27 +41,37 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Digital Experience"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Virtual Presence"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "metaverse"
+    ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Immersive Technology",
+        "Extended Reality Xr"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

@@ -6,13 +6,13 @@
     "Ensemble Methods"
   ],
   "wiki_links": [
-    "Cross-Validation",
-    "Ensemble Methods",
-    "Meta-Learning",
-    "Variance",
     "Machine Learning",
     "Bias",
-    "Model Combination"
+    "Ensemble Methods",
+    "Variance",
+    "Model Combination",
+    "Meta-Learning",
+    "Cross-Validation"
   ],
   "ontology": {
     "term_id": "AI-1017",

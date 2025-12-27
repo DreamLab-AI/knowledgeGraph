@@ -1,14 +1,17 @@
 {
   "id": "Large Language Model",
   "title": "Large Language Model",
-  "content": "- ### OntologyBlock\n  id:: large-language-model-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9940\n\t- source-domain:: mv\n\t- preferred-term:: Large Language Model\n\t- status:: stub\n\t- owl:class:: mv:LargeLanguageModel\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: large-language-model-relationships\n\t  collapsed:: true\n\n\t\t\t- is-associated-with:: [[Ontology In Llm Operations]]",
+  "content": "- ### OntologyBlock\n  id:: large-language-model-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9940\n\t- source-domain:: mv\n\t- preferred-term:: Large Language Model\n\t- status:: active\n\t- owl:class:: mv:LargeLanguageModel\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Advanced AI systems trained on massive text datasets that enable natural language understanding and generation for metaverse applications, powering intelligent NPCs, real-time translation, conversational interfaces, and adaptive content generation.\n\t- #### Relationships\n\t  id:: large-language-model-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Artificial Intelligence]]\n\t\t- related-to:: [[Natural Language Processing]]\n\t\t- related-to:: [[Metaverse Npc]]\n\t\t- enables:: [[Intelligent Virtual Agents]]\n\t\t- is-associated-with:: [[Ontology In Llm Operations]]\n\n## NTT DOCOMO Development (2024)\n\n### World-First Technology\n- Generative AI for NPC creation\n- Text input only required\n- 20-minute generation time\n- No programming expertise needed\n- Distinct NPC personalities\n\n### Technology Components\n- Behaviour-logic-generative AI\n- Animation-generative AI\n- Appearance-generative AI\n- Behaviour tree automation\n- LLM infrastructure integration\n\n## Academic Research\n\n### Paradigm Shift in VR\n- Transforming narrative generation\n- NPC interaction enhancement\n- Accessibility improvement\n- Personalisation advancement\n- Game mastering innovation\n\n### Research Growth\n- 62 peer-reviewed studies analysed\n- 2018-2025 publication range\n- Sharp post-2023 increase\n- Peak in 2024-2025\n- Expanding research interest\n\n### Application Domains\n- Emotionally intelligent NPCs\n- Procedurally generated stories\n- Inclusive XR settings\n- Adaptive content delivery\n- Interactive narratives\n\n## Metaverse Applications\n\n### NPC Enhancement\n- Sophisticated chatbot capabilities\n- Support and information provision\n- User experience improvement\n- Natural conversation flow\n- Context-aware responses\n\n### Translation Services\n- Real-time language translation\n- Language barrier elimination\n- Global accessibility\n- Cross-cultural communication\n- Seamless user interaction\n\n### Prompting Strategies\n- Different approaches available\n- Model fine-tuning options\n- Inclusive design support\n- Narrative customisation\n- Behaviour adaptation\n\n## Educational Platforms\n\n### Coursera Offerings\n- Metaverse and LLM courses\n- Inworld platform introduction\n- Responsive NPC creation\n- Expressive character design\n- Practical skills training\n\n## XR Integration\n\n### Embedding LLMs in XR\n- NPC deployment in environments\n- Narrative integration\n- Inclusive setting design\n- Engagement enhancement\n- Accessibility focus\n\n### Design Considerations\n- Multiple prompting strategies\n- Model fine-tuning approaches\n- User experience optimisation\n- Performance balancing\n- Context management\n\n## Future Potential\n\n### Conversational AI\n- Natural dialogue systems\n- User guidance provision\n- Information delivery\n- Direction assistance\n- Enhanced immersion\n\n### Content Generation\n- Dynamic story creation\n- Adaptive experiences\n- Personalised content\n- Real-time generation\n- User-responsive narratives\n\n## Research Directions\n\n### Key Focus Areas\n- Emotionally intelligent systems\n- Procedural generation\n- Accessibility enhancement\n- Personalisation mechanisms\n- User engagement metrics\n\n### Implementation Challenges\n- Computational requirements\n- Response latency\n- Context maintenance\n- Coherence preservation\n- Safety considerations\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
     "Grammar System"
   ],
   "wiki_links": [
-    "Ontology In Llm Operations",
     "metaverse",
-    "Metaverse"
+    "Metaverse Npc",
+    "Intelligent Virtual Agents",
+    "Natural Language Processing",
+    "Ontology In Llm Operations",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "MV-9940",
@@ -18,9 +21,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Advanced AI systems trained on massive text datasets that enable natural language understanding and generation for metaverse applications, powering intelligent NPCs, real-time translation, conversational interfaces, and adaptive content generation.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -33,13 +36,15 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Artificial Intelligence"
     ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Intelligent Virtual Agents"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -50,6 +55,10 @@
     "implemented_in_layer": [],
     "source": [],
     "other_relationships": {
+      "related-to": [
+        "Natural Language Processing",
+        "Metaverse Npc"
+      ],
       "is-associated-with": [
         "Ontology In Llm Operations"
       ]
@@ -58,7 +67,6 @@
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

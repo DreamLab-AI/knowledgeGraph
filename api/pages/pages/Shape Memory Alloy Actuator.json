@@ -5,9 +5,9 @@
   "backlinks": [],
   "wiki_links": [
     "Robotics",
-    "Materials Science",
     "RoboticsDomain",
-    "Soft Robotics"
+    "Soft Robotics",
+    "Materials Science"
   ],
   "ontology": {
     "term_id": "RB-9002",

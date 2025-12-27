@@ -5,23 +5,40 @@
 	- term-id:: BC-0457
 	- preferred-term:: Decentralized Identifiers
 	- source-domain:: mv
-	- status:: stub
+	- status:: active
 	- public-access:: true
-
-
-
-
-### OWL Classification
+	- definition:: A W3C standard for globally unique, verifiable, persistent identifiers that enable self-sovereign digital identity without reliance on centralized registries, enabling entities to prove identity through cryptographic verification while maintaining control over their own identity data across blockchain and distributed networks.
+- ### OWL Classification
 	- owl:class:: bc:DecentralizedIdentifiers
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-
-### Domain & Architecture
+- ### Domain & Architecture
 	- belongsToDomain:: [[BlockchainDomain]]
-	- maturity:: draft
+	- maturity:: active
+- ### Relationships
+	- is-subclass-of:: [[Digital Identity]]
+	- authenticates:: [[Avatar]]
+	- enables:: [[Self-Sovereign Identity]], [[Verifiable Credentials]], [[Identity Portability]]
+	- requires:: [[Cryptographic Keys]], [[DID Document]], [[Resolution Method]]
+	- related-to:: [[W3C Standards]], [[Blockchain Identity]], [[Digital Wallet]]
+- ## Technical Details
+	- **W3C DID Core 1.0**: Official W3C standard despite objections from Google, Apple, Mozilla
+		- 103 experimental DID Method specifications at publication
+		- 46 implementations in conformance test suite
+	- **Key Components**:
+		- DID Document: Describes subject with cryptographic public keys
+		- DID Methods: Resolution and registration specifications
+		- Verifiable Credentials: Higher layer for digitally signed credentials
+	- **2024 Adoption**:
+		- EU eIDAS 2.0 regulation shaping legal recognition
+		- ENS partnered with GoDaddy (February 2024)
+		- 71 billion digital identity verification checks projected
+	- **Platforms**: Hyperledger Indy, Sovrin Network, Ethereum Name Service
+- ## Applications
+	- Self-sovereign identity management
+	- Web3 and metaverse authentication
+	- NFT ownership verification
+	- Government digital identity
+	- Supply chain entity verification
 
-### Relationships
-- is-subclass-of:: [[Metaverse]]
-
-- authenticates:: [[Avatar]]
 

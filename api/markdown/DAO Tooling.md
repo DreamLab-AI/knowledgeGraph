@@ -5,7 +5,7 @@
 	- term-id:: BC-0472
 	- preferred-term:: DAO Tooling
 	- source-domain:: mv
-	- status:: stub
+	- status:: active
 	- public-access:: true
 
 

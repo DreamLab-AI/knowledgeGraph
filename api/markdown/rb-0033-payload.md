@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0033
 	- source-domain:: rb
-	- preferred-term:: rb 0033 payload
-	- status:: draft
+	- preferred-term:: Payload
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0033payload
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Payload is the maximum mass that a robot can carry and manipulate at its end-effector while maintaining specified performance characteristics including speed, accuracy, and repeatability.
+	- owl:class:: rb:Payload
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

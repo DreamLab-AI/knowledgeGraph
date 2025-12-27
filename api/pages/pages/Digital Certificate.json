@@ -1,13 +1,22 @@
 {
   "id": "Digital Certificate",
   "title": "Digital Certificate",
-  "content": "- ### OntologyBlock\n  id:: digital-certificate-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9852\n\t- source-domain:: mv\n\t- preferred-term:: Digital Certificate\n\t- status:: stub\n\t- owl:class:: mv:DigitalCertificate\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: digital-certificate-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-certificate-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9852\n\t- source-domain:: mv\n\t- preferred-term:: Digital Certificate\n\t- definition:: A cryptographic credential issued by a Certificate Authority that validates the identity of entities, authenticates users, and secures transactions within virtual environments, metaverse platforms, and blockchain networks through public key infrastructure and verifiable attestations.\n\t- status:: active\n\t- owl:class:: mv:DigitalCertificate\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-certificate-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Security]]\n\t\t- enables:: [[Identity Verification]], [[Secure Communication]], [[Trust Establishment]]\n\t\t- requires:: [[Public Key Infrastructure]], [[Certificate Authority]], [[Cryptographic Keys]]\n\t\t- related-to:: [[Verifiable Credentials]], [[SSL Certificates]], [[Blockchain Authentication]]\n- ## Technical Details\n\t- **Core Components**:\n\t\t- X.509 certificates for TLS/SSL encryption\n\t\t- Certificate Authority (CA) trust chains\n\t\t- Public/private key pairs\n\t\t- Digital signature verification\n\t- **Metaverse Applications**:\n\t\t- KYC-verified blockchain identity certificates\n\t\t- Cross-platform user authentication\n\t\t- NFT provenance and ownership verification\n\t\t- Secure avatar identity across virtual worlds\n\t- **2024 Developments**:\n\t\t- Blockchain-based certificate authorities for decentralized trust\n\t\t- Mutual authentication frameworks for metaverse users\n\t\t- Professional certifications for metaverse expertise emerging\n\t\t- Integration with verifiable credentials standards\n\t- **Challenges**: Certificate revocation management, cross-platform trust, decentralized CA models\n- ## Applications\n\t- Metaverse user authentication\n\t- Secure virtual transactions\n\t- Professional credential verification\n\t- NFT authenticity attestation\n\t- Cross-platform identity portability",
   "backlinks": [
     "Virtual Notary Service"
   ],
   "wiki_links": [
+    "Verifiable Credentials",
+    "Cryptographic Keys",
+    "Digital Security",
+    "Certificate Authority",
+    "Trust Establishment",
+    "Blockchain Authentication",
     "metaverse",
-    "Metaverse"
+    "Identity Verification",
+    "Public Key Infrastructure",
+    "Secure Communication",
+    "SSL Certificates"
   ],
   "ontology": {
     "term_id": "MV-9852",
@@ -17,9 +26,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A cryptographic credential issued by a Certificate Authority that validates the identity of entities, authenticates users, and secures transactions within virtual environments, metaverse platforms, and blockchain networks through public key infrastructure and verifiable attestations.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +41,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Digital Security"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Public Key Infrastructure",
+      "Certificate Authority",
+      "Cryptographic Keys"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Identity Verification",
+      "Secure Communication",
+      "Trust Establishment"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +65,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Verifiable Credentials",
+        "SSL Certificates",
+        "Blockchain Authentication"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

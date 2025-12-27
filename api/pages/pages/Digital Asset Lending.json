@@ -1,13 +1,22 @@
 {
   "id": "Digital Asset Lending",
   "title": "Digital Asset Lending",
-  "content": "- ### OntologyBlock\n  id:: digital-asset-lending-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9849\n\t- source-domain:: mv\n\t- preferred-term:: Digital Asset Lending\n\t- status:: stub\n\t- owl:class:: mv:DigitalAssetLending\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: digital-asset-lending-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-asset-lending-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9849\n\t- source-domain:: mv\n\t- preferred-term:: Digital Asset Lending\n\t- definition:: Financial services enabling cryptocurrency holders to lend their digital assets to borrowers through centralized platforms or decentralized protocols, earning interest yields while providing liquidity for trading, leverage, and other financial activities secured by collateralized positions.\n\t- status:: active\n\t- owl:class:: mv:DigitalAssetLending\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-asset-lending-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[DeFi Services]]\n\t\t- enables:: [[Yield Generation]], [[Leverage Trading]], [[Liquidity Provision]]\n\t\t- requires:: [[Collateral Management]], [[Smart Contracts]], [[Liquidation Systems]]\n\t\t- related-to:: [[Flash Loans]], [[Yield Farming]], [[Credit Protocols]]\n- ## Technical Details\n\t- **Lending Models**:\n\t\t- Over-collateralized loans: Typical 150-200% collateral ratio\n\t\t- Under-collateralized/unsecured: Credit scoring or reputation-based\n\t\t- Flash loans: Single-block uncollateralized borrowing\n\t\t- Peer-to-peer: Direct lender-borrower matching\n\t- **Major Protocols (2024)**:\n\t\t- Aave: Multi-chain lending with variable/stable rates\n\t\t- Compound: Algorithmic interest rate markets\n\t\t- MakerDAO: DAI stablecoin generation via CDPs\n\t\t- JustLend: TRON ecosystem lending\n\t- **Risk Parameters**:\n\t\t- Liquidation thresholds and penalties\n\t\t- Interest rate models (utilization-based)\n\t\t- Bad debt handling mechanisms\n\t\t- Oracle price feed dependencies\n\t- **Market Dynamics**: TVL fluctuations with market conditions, regulatory uncertainty affecting CeFi lenders\n- ## Applications\n\t- Passive income generation\n\t- Trading leverage and margin\n\t- Stablecoin minting\n\t- Arbitrage financing\n\t- Corporate working capital",
   "backlinks": [
     "NFT Renting"
   ],
   "wiki_links": [
+    "Yield Generation",
+    "Leverage Trading",
+    "Flash Loans",
+    "Collateral Management",
     "metaverse",
-    "Metaverse"
+    "Liquidation Systems",
+    "DeFi Services",
+    "Smart Contracts",
+    "Credit Protocols",
+    "Liquidity Provision",
+    "Yield Farming"
   ],
   "ontology": {
     "term_id": "MV-9849",
@@ -17,9 +26,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Financial services enabling cryptocurrency holders to lend their digital assets to borrowers through centralized platforms or decentralized protocols, earning interest yields while providing liquidity for trading, leverage, and other financial activities secured by collateralized positions.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +41,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "DeFi Services"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Collateral Management",
+      "Smart Contracts",
+      "Liquidation Systems"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Yield Generation",
+      "Leverage Trading",
+      "Liquidity Provision"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +65,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Flash Loans",
+        "Yield Farming",
+        "Credit Protocols"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

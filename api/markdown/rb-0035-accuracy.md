@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0035
 	- source-domain:: rb
-	- preferred-term:: rb 0035 accuracy
-	- status:: draft
+	- preferred-term:: Accuracy
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0035accuracy
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Accuracy in robotics is the degree of conformity between a robot's commanded position and its actual achieved position, affected by calibration, thermal effects, and mechanical tolerances.
+	- owl:class:: rb:Accuracy
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

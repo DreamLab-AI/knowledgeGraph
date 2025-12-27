@@ -7,13 +7,13 @@
   ],
   "wiki_links": [
     "Identity Management",
-    "metaverse",
-    "Selective Disclosure",
     "Verifiable Credentials",
-    "Cross-Platform Identity",
     "Credential Verification",
     "Blockchain Anchoring",
-    "Decentralized Identifiers"
+    "Decentralized Identifiers",
+    "metaverse",
+    "Selective Disclosure",
+    "Cross-Platform Identity"
   ],
   "ontology": {
     "term_id": "MV-9782",

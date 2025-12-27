@@ -1,13 +1,17 @@
 {
   "id": "Software Platform",
   "title": "Software Platform",
-  "content": "- ### OntologyBlock\n  id:: software-platform-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10048\n\t- source-domain:: mv\n\t- preferred-term:: Software Platform\n\t- status:: stub\n\t- owl:class:: mv:SoftwarePlatform\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: software-platform-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: software-platform-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10048\n\t- source-domain:: mv\n\t- preferred-term:: Software Platform\n\t- status:: active\n\t- definition:: An integrated technology foundation providing common services, APIs, and infrastructure for developing, deploying, and running applications, including cloud-native platforms, container orchestration systems, and internal developer platforms that abstract underlying complexity while enabling scalable application delivery.\n\t- owl:class:: mv:SoftwarePlatform\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: software-platform-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Technology Infrastructure]]\n\t\t- related-to:: [[Cloud Native Development]]\n\t\t- related-to:: [[Platform Engineering]]\n\t\t- related-to:: [[Container Orchestration]]\n\t\t- enables:: [[Application Development]]\n\t- #### Platform Types\n\t  collapsed:: true\n\t\t- Internal developer platforms\n\t\t- Cloud-native infrastructure platforms\n\t\t- Low-code and no-code platforms\n\t\t- Industry cloud platforms\n\t\t- Container orchestration (Kubernetes)\n\t- #### Key Trends 2024\n\t  collapsed:: true\n\t\t- Platform engineering adoption growing\n\t\t- AI-augmented development tools\n\t\t- Infrastructure as code practices\n\t\t- Serverless computing expansion\n\t\t- Cloud development environments",
   "backlinks": [
     "Game Engine"
   ],
   "wiki_links": [
+    "Platform Engineering",
     "metaverse",
-    "Metaverse"
+    "Technology Infrastructure",
+    "Container Orchestration",
+    "Cloud Native Development",
+    "Application Development"
   ],
   "ontology": {
     "term_id": "MV-10048",
@@ -17,9 +21,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "An integrated technology foundation providing common services, APIs, and infrastructure for developing, deploying, and running applications, including cloud-native platforms, container orchestration systems, and internal developer platforms that abstract underlying complexity while enabling scalable application delivery.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +36,15 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Technology Infrastructure"
     ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Application Development"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +54,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Cloud Native Development",
+        "Platform Engineering",
+        "Container Orchestration"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

@@ -1,11 +1,15 @@
 {
   "id": "Shared Ar Experiences",
   "title": "Shared Ar Experiences",
-  "content": "- ### OntologyBlock\n  id:: shared-ar-experiences-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10040\n\t- source-domain:: mv\n\t- preferred-term:: Shared Ar Experiences\n\t- status:: stub\n\t- owl:class:: mv:SharedArExperiences\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: shared-ar-experiences-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: shared-ar-experiences-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10040\n\t- source-domain:: mv\n\t- preferred-term:: Shared Ar Experiences\n\t- status:: active\n\t- definition:: Collaborative augmented reality interactions enabling multiple users to simultaneously view and interact with digital content overlaid on shared physical environments, supporting real-time synchronization of virtual objects across devices for social connection and joint activities.\n\t- owl:class:: mv:SharedArExperiences\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: shared-ar-experiences-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Augmented Reality]]\n\t\t- related-to:: [[Collaborative Mixed Reality]]\n\t\t- related-to:: [[Spatial Anchors]]\n\t\t- related-to:: [[Multi User Experience]]\n\t\t- enables:: [[Social AR Interaction]]\n\t- #### Key Technologies\n\t  collapsed:: true\n\t\t- Cloud-based spatial anchor services\n\t\t- Cross-platform AR synchronization\n\t\t- Real-time object state sharing\n\t\t- Multi-device coordinate alignment\n\t\t- Shared world understanding\n\t- #### Applications\n\t  collapsed:: true\n\t\t- Virtual meetings and collaborative workspaces\n\t\t- Multiplayer AR gaming experiences\n\t\t- Educational group simulations\n\t\t- Design review and visualization\n\t\t- Social entertainment and events",
   "backlinks": [],
   "wiki_links": [
+    "Social AR Interaction",
     "metaverse",
-    "Metaverse"
+    "Augmented Reality",
+    "Multi User Experience",
+    "Collaborative Mixed Reality",
+    "Spatial Anchors"
   ],
   "ontology": {
     "term_id": "MV-10040",
@@ -15,9 +19,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Collaborative augmented reality interactions enabling multiple users to simultaneously view and interact with digital content overlaid on shared physical environments, supporting real-time synchronization of virtual objects across devices for social connection and joint activities.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,13 +34,15 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Augmented Reality"
     ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Social AR Interaction"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -46,11 +52,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Collaborative Mixed Reality",
+        "Spatial Anchors",
+        "Multi User Experience"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

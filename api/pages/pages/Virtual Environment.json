@@ -8,20 +8,23 @@
     "Virtual Location",
     "Virtual Interaction Logging",
     "Extended Reality (XR)",
+    "Shared Virtual World",
     "Virtual Destination",
     "Virtual Environment Connectivity",
     "Virtual Classroom",
     "Collaborative Learning",
     "Collective Learning",
-    "Virtual Clinic"
+    "Metaverse Venue",
+    "Virtual Clinic",
+    "Virtual World Platform"
   ],
   "wiki_links": [
-    "Metaverse",
     "3D Models",
-    "metaverse",
-    "Virtual Reality",
+    "Metaverse",
     "Digital Twin",
-    "Augmented Reality"
+    "metaverse",
+    "Augmented Reality",
+    "Virtual Reality"
   ],
   "ontology": {
     "term_id": "MV-10122",

@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0040
 	- source-domain:: rb
-	- preferred-term:: rb 0040 backlash
-	- status:: draft
+	- preferred-term:: Backlash
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0040backlash
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Backlash is the mechanical clearance or play between mating gear teeth or transmission components, causing position errors and reduced repeatability in robot joints.
+	- owl:class:: rb:Backlash
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

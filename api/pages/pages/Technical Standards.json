@@ -13,14 +13,16 @@
     "Network Standards",
     "Compatibility Standards",
     "Compatibility Process",
-    "Interoperability Framework"
+    "Digital Identity Standards",
+    "Interoperability Framework",
+    "Data Format Standard"
   ],
   "wiki_links": [
-    "Standards Conformance",
-    "metaverse",
-    "Interoperability",
+    "Standards Compliance",
     "Standards",
-    "Standards Compliance"
+    "Interoperability",
+    "metaverse",
+    "Standards Conformance"
   ],
   "ontology": {
     "term_id": "MV-10079",

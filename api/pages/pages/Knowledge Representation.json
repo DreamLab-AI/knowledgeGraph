@@ -14,12 +14,12 @@
   ],
   "wiki_links": [
     "Semantic Networks",
-    "Ontology",
     "Reasoning Systems",
-    "Expert Systems",
-    "Automated Planning",
     "Logic Programming",
-    "Artificial Intelligence"
+    "Automated Planning",
+    "Expert Systems",
+    "Artificial Intelligence",
+    "Ontology"
   ],
   "ontology": {
     "term_id": "AI-1001",

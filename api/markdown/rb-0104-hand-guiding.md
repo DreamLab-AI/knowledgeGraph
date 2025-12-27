@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0104
 	- source-domain:: rb
-	- preferred-term:: rb 0104 hand guiding
-	- status:: draft
+	- preferred-term:: Hand Guiding
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0104handguiding
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Hand guiding is a collaborative robot operation mode that allows a human operator to manually move the robot by applying force directly to the end-effector or a dedicated guiding device.
+	- owl:class:: rb:HandGuiding
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

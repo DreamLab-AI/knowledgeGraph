@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0023
 	- source-domain:: rb
-	- preferred-term:: rb 0023 degrees of freedom
-	- status:: draft
+	- preferred-term:: Degrees Of Freedom
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0023degreesoffreedom
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Degrees of freedom (DOF) is the number of independent parameters that define the configuration of a robot, corresponding to the number of joints in a serial manipulator and determining its motion capabilities.
+	- owl:class:: rb:DegreesOfFreedom
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

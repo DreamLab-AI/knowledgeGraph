@@ -5,12 +5,46 @@
 	- public-access:: true
 	- term-id:: MV-10175
 	- source-domain:: mv
-	- preferred-term:: Zk Snarks
-	- status:: stub
-	- owl:class:: mv:ZkSnarks
+	- preferred-term:: ZK-SNARKs
+	- status:: active
+	- definition:: Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge - a cryptographic proof system enabling one party to prove possession of information without revealing the information itself, characterized by small proof sizes, fast verification, and no interaction required between prover and verifier, though requiring a trusted setup ceremony.
+	- owl:class:: mv:ZKSNARKs
 	- belongsToDomain:: [[metaverse]]
 	- #### Relationships
-- is-subclass-of:: [[Metaverse]]
+		- is-subclass-of:: [[Zero Knowledge Proof]]
+		- related-to:: [[Blockchain Privacy]]
+		- related-to:: [[Layer 2 Scaling]]
+		- related-to:: [[Cryptography]]
 	  id:: zk-snarks-relationships
 	  collapsed:: true
+- ## Overview
+	- ZK-SNARKs enable cryptographic proofs that verify information without revealing it. The concept originated from Goldwasser, Micali, and Rackoff's 1989 paper on interactive proof systems. A 2012 paper demonstrated SNARKs as a blockchain privacy mechanism. Zcash was the first widespread application, enabling shielded transactions. ZK-SNARKs power Layer 2 solutions including zkSync, Polygon zkEVM, and Linea.
+- ## Technical Details
+	- ### Key Properties
+		- **Succinct**: Very small proof sizes for blockchain efficiency
+		- **Non-Interactive**: Single message from prover to verifier
+		- **Zero-Knowledge**: No private input information revealed
+		- **Arguments of Knowledge**: Proves knowledge possession
+	- ### Blockchain Applications
+		- **Privacy Transactions**: Zcash shielded transfers
+		- **ZK-Rollups**: Layer 2 scaling for Ethereum
+		- **Identity Verification**: Private credential proofs
+		- **Compliance**: Regulatory proofs without data exposure
+	- ### Technical Requirements
+		- Trusted setup ceremony for parameter generation
+		- Elliptic curve cryptography foundations
+		- Circuit-based computation representation
+		- Proof generation and verification algorithms
+	- ### Comparison to ZK-STARKs
+		- Smaller proof sizes than STARKs
+		- Faster on-chain verification
+		- Requires trusted setup (vulnerability)
+		- Not quantum-resistant
+- ## Applications
+	- Privacy-preserving cryptocurrency transactions
+	- Blockchain scaling through rollups
+	- Private smart contract execution
+	- Identity and credential verification
+	- Confidential voting systems
+
 

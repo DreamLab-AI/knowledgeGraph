@@ -1,13 +1,16 @@
 {
   "id": "Virtual Nation State",
   "title": "Virtual Nation State",
-  "content": "- ### OntologyBlock\n  id:: virtual-nation-state-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10132\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Nation State\n\t- status:: stub\n\t- owl:class:: mv:VirtualNationState\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: virtual-nation-state-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-nation-state-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10132\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Nation State\n\t- status:: active\n\t- definition:: A digital sovereign entity existing within metaverse platforms that offers forms of virtual citizenship, governance structures, economic systems, and legal frameworks, potentially providing e-residency, digital identity, and participation in virtual economies independent of geographic territory.\n\t- owl:class:: mv:VirtualNationState\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Digital Governance]]\n\t\t- related-to:: [[Digital Citizenship]]\n\t\t- related-to:: [[DAO]]\n\t\t- related-to:: [[Virtual Economy]]\n\t  id:: virtual-nation-state-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual nation states are emerging digital entities that challenge traditional concepts of geographic sovereignty. Tuvalu announced plans at COP27 to become the first digitized nation in the metaverse. Palau offers digital residency with over 300,000 applicants, while Barbados is building a virtual embassy. KPMG predicts digital citizenship could replace physical passports by 2040.\n- ## Technical Details\n\t- ### Governance Models\n\t\t- **Centralized Platforms**: Corporate-controlled closed metaverses\n\t\t- **Decentralized DAOs**: Token-holder governance in open metaverses\n\t\t- **Hybrid Systems**: Government-backed virtual territories\n\t\t- **Digital Residency Programs**: E-citizenship with real-world benefits\n\t- ### Key Features\n\t\t- Digital identity via wallet addresses\n\t\t- Virtual asset ownership rights\n\t\t- Participation in virtual economies\n\t\t- Cross-metaverse identity portability\n\t- ### Real-World Initiatives\n\t\t- Tuvalu metaverse preservation project\n\t\t- Palau digital residency NFTs (BNB Chain)\n\t\t- Seoul administrative metaverse (by 2026)\n\t\t- Barbados virtual embassy development\n- ## Applications\n\t- Climate refugee nation preservation\n\t- Digital residency and e-governance\n\t- Virtual diplomatic representation\n\t- Decentralized autonomous governance\n\t- Cross-border digital identity",
   "backlinks": [
     "Digital Jurisdiction"
   ],
   "wiki_links": [
     "metaverse",
-    "Metaverse"
+    "DAO",
+    "Digital Citizenship",
+    "Virtual Economy",
+    "Digital Governance"
   ],
   "ontology": {
     "term_id": "MV-10132",
@@ -17,9 +20,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A digital sovereign entity existing within metaverse platforms that offers forms of virtual citizenship, governance structures, economic systems, and legal frameworks, potentially providing e-residency, digital identity, and participation in virtual economies independent of geographic territory.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,7 +35,7 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Digital Governance"
     ],
     "has_part": [],
     "is_part_of": [],
@@ -48,11 +51,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Digital Citizenship",
+        "DAO",
+        "Virtual Economy"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

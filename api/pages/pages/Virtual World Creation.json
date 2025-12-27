@@ -1,13 +1,16 @@
 {
   "id": "Virtual World Creation",
   "title": "Virtual World Creation",
-  "content": "- ### OntologyBlock\n  id:: virtual-world-creation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10154\n\t- source-domain:: mv\n\t- preferred-term:: Virtual World Creation\n\t- status:: stub\n\t- owl:class:: mv:VirtualWorldCreation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: virtual-world-creation-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-world-creation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10154\n\t- source-domain:: mv\n\t- preferred-term:: Virtual World Creation\n\t- status:: active\n\t- definition:: The comprehensive process of designing, developing, and deploying immersive 3D virtual environments using game engines, procedural generation algorithms, and specialized terrain tools, encompassing everything from initial concept to fully realized interactive digital worlds for games, metaverse platforms, and simulations.\n\t- owl:class:: mv:VirtualWorldCreation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Digital Content Creation]]\n\t\t- related-to:: [[Procedural Generation]]\n\t\t- related-to:: [[Game Engine]]\n\t\t- related-to:: [[Terrain Generation]]\n\t  id:: virtual-world-creation-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual world creation spans from procedural terrain generation to full game world development. World Machine has been the preferred terrain solution for AAA studios for over a decade. World Creator 2024.3 introduced enhanced procedural terrain generation optimized for Unreal Engine and Unity. Procedural Worlds serves 150,000+ Unity customers. Dreamteck completed innovative procedural level generation technology in April 2024.\n- ## Technical Details\n\t- ### Procedural Generation Techniques\n\t\t- **Perlin/Simplex Noise**: Natural terrain textures and heightmaps\n\t\t- **Cellular Automata**: Organic cave systems and growth patterns\n\t\t- **L-Systems**: Fractal-like plant and vegetation structures\n\t\t- **Markov Chains**: Text, music, and level layout generation\n\t- ### Terrain Generation Tools\n\t\t- **World Machine**: Industry-standard fractal-based terrain\n\t\t- **World Creator**: Real-time GPU terrain generation\n\t\t- **Procedural Worlds Storm**: Unity terrain and biome platform\n\t\t- **Gaea**: Erosion simulation and realistic landscapes\n\t- ### Game Engine Capabilities\n\t\t- Unreal Engine Blueprint visual scripting\n\t\t- Unity procedural generation tools\n\t\t- Large-scale environment handling\n\t\t- Real-time rendering optimization\n\t- ### Key Benefits\n\t\t- **Infinite Replayability**: New content per playthrough\n\t\t- **Reduced Development Cost**: Automated content creation\n\t\t- **Smaller File Sizes**: Algorithmic rather than stored content\n\t\t- **Seed-Based Generation**: Repeatable worlds for testing\n- ## Applications\n\t- Open world game development\n\t- Metaverse platform environments\n\t- VFX environment creation\n\t- Simulation training worlds\n\t- Procedural landscape visualization",
   "backlinks": [
     "Game Engine"
   ],
   "wiki_links": [
+    "Game Engine",
+    "Digital Content Creation",
+    "Procedural Generation",
     "metaverse",
-    "Metaverse"
+    "Terrain Generation"
   ],
   "ontology": {
     "term_id": "MV-10154",
@@ -17,9 +20,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The comprehensive process of designing, developing, and deploying immersive 3D virtual environments using game engines, procedural generation algorithms, and specialized terrain tools, encompassing everything from initial concept to fully realized interactive digital worlds for games, metaverse platforms, and simulations.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,7 +35,7 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Digital Content Creation"
     ],
     "has_part": [],
     "is_part_of": [],
@@ -48,11 +51,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Procedural Generation",
+        "Game Engine",
+        "Terrain Generation"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

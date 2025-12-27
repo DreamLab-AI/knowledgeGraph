@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0051
 	- source-domain:: rb
-	- preferred-term:: rb 0051 trajectory planning
-	- status:: draft
+	- preferred-term:: Trajectory Planning
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0051trajectoryplanning
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Trajectory planning is the process of generating a time-parameterized path that specifies robot position, velocity, and acceleration profiles to achieve smooth motion between waypoints.
+	- owl:class:: rb:TrajectoryPlanning
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

@@ -1,14 +1,17 @@
 {
   "id": "Machine Learning Pipeline",
   "title": "Machine Learning Pipeline",
-  "content": "- ### OntologyBlock\n  id:: machine-learning-pipeline-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9953\n\t- source-domain:: mv\n\t- preferred-term:: Machine Learning Pipeline\n\t- status:: stub\n\t- owl:class:: mv:MachineLearningPipeline\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: machine-learning-pipeline-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: machine-learning-pipeline-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9953\n\t- source-domain:: mv\n\t- preferred-term:: Machine Learning Pipeline\n\t- status:: active\n\t- owl:class:: mv:MachineLearningPipeline\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Automated workflow systems that orchestrate the end-to-end machine learning lifecycle from data ingestion and preprocessing through model training, validation, deployment, and monitoring using MLOps practices.\n\t- #### Relationships\n\t  id:: machine-learning-pipeline-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[MLOps]]\n\t\t- related-to:: [[Continuous Integration]]\n\t\t- related-to:: [[Model Deployment]]\n\t\t- enables:: [[Production ML Systems]]\n\n## MLOps Foundation\n\n### Core Principles\n- DevOps for ML\n- DataOps integration\n- ModelOps practices\n- Automated workflows\n- Continuous operations\n\n### Maturity Levels\n- Level 0: Manual processes\n- Level 1: Automated training\n- Level 2: Full CI/CD automation\n- Progressive maturity\n- Velocity improvement\n\n## Continuous Practices\n\n### Continuous Integration (CI)\n- Code testing\n- Data validation\n- Model testing\n- Pipeline validation\n- Automated quality\n\n### Continuous Delivery (CD)\n- Automated deployment\n- Model serving\n- Prediction service\n- Version management\n- Rollback capability\n\n### Continuous Training (CT)\n- Auto retraining\n- New data triggers\n- Model refresh\n- Performance maintenance\n- Drift response\n\n### Continuous Monitoring (CM)\n- Production data tracking\n- Model performance\n- Drift detection\n- Alert generation\n- Health assessment\n\n## Pipeline Components\n\n### Data Pipeline\n- Airflow orchestration\n- Data ingestion\n- Preprocessing automation\n- Feature engineering\n- Quality validation\n\n### Model Training\n- MLflow tracking\n- Experiment logging\n- Hyperparameter tuning\n- Model registration\n- Artifact storage\n\n### Model Deployment\n- Docker containerisation\n- REST API creation\n- Serving infrastructure\n- Load balancing\n- Scaling automation\n\n### CI/CD Integration\n- Jenkins workflows\n- GitHub Actions\n- GitLab CI\n- Azure DevOps\n- Automated triggers\n\n## Feature Management\n\n### Feature Stores\n- Centralised storage\n- Feature versioning\n- Consistency guarantee\n- Serving optimisation\n- Reuse enablement\n\n### Feast Platform\n- Open-source store\n- Backend agnostic\n- Platform independent\n- Production serving\n- Batch processing\n\n### Feature Pipelines\n- Raw data transformation\n- Feature computation\n- Quality monitoring\n- Freshness tracking\n- Lineage management\n\n## MLOps Tools (2024)\n\n### Kubeflow\n- Kubernetes-native\n- End-to-end pipelines\n- Multi-cloud support\n- AWS, GCP, Azure\n- Scalable deployments\n\n### MLflow\n- Experiment tracking\n- Model registry\n- Deployment tools\n- Open-source\n- Framework agnostic\n\n### Metaflow\n- Netflix development\n- Data science workflows\n- AWS integration\n- Version control\n- Reproducibility\n\n### Seldon Core\n- Model serving\n- Kubernetes deployment\n- A/B testing\n- Canary releases\n- Monitoring built-in\n\n### MLRun\n- End-to-end platform\n- Iguazio development\n- Auto-scaling\n- GPU support\n- Real-time serving\n\n## Automation Benefits\n\n### Time-to-Market\n- Reduced manual work\n- Faster deployment\n- Rapid iteration\n- Quick feedback\n- Accelerated delivery\n\n### Quality Assurance\n- Consistent processes\n- Error reduction\n- Reproducibility\n- Audit trails\n- Compliance support\n\n### Scalability\n- Resource efficiency\n- Parallel processing\n- Distributed training\n- Auto-scaling\n- Cost optimisation\n\n## Production Monitoring\n\n### Performance Tracking\n- Response time\n- Throughput metrics\n- Error rates\n- Resource usage\n- SLA compliance\n\n### Drift Detection\n- Data drift monitoring\n- Concept drift\n- Prediction quality\n- Feature stability\n- Retrain triggers\n\n### Security\n- Data encryption\n- Access control\n- Audit logging\n- Compliance checks\n- Vulnerability scanning\n\n## Implementation Strategy\n\n### Pipeline Design\n- Modular components\n- Reusable stages\n- Clear interfaces\n- Error handling\n- Recovery mechanisms\n\n### Best Practices\n- Version everything\n- Automate testing\n- Monitor continuously\n- Document thoroughly\n- Iterate frequently\n\n## Future Trends\n\n### AutoMLOps\n- Automated pipeline creation\n- Self-optimising systems\n- AI-driven operations\n- Reduced manual setup\n- Intelligent orchestration\n\n### Edge MLOps\n- Edge deployment\n- Distributed pipelines\n- Local training\n- Federated learning\n- IoT integration\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
     "ETSI_Domain_AI___Data_Mgmt",
     "Data Annotation"
   ],
   "wiki_links": [
+    "Continuous Integration",
     "metaverse",
-    "Metaverse"
+    "Production ML Systems",
+    "MLOps",
+    "Model Deployment"
   ],
   "ontology": {
     "term_id": "MV-9953",
@@ -18,9 +21,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Automated workflow systems that orchestrate the end-to-end machine learning lifecycle from data ingestion and preprocessing through model training, validation, deployment, and monitoring using MLOps practices.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -33,13 +36,15 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "MLOps"
     ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Production ML Systems"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -49,11 +54,16 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Continuous Integration",
+        "Model Deployment"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

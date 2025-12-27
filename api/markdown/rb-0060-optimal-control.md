@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0060
 	- source-domain:: rb
-	- preferred-term:: rb 0060 optimal control
-	- status:: draft
+	- preferred-term:: Optimal Control
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0060optimalcontrol
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Optimal control is a mathematical framework for determining control strategies that minimise a cost function, such as energy consumption, time, or tracking error, while satisfying system constraints.
+	- owl:class:: rb:OptimalControl
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

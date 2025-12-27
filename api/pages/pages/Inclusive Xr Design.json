@@ -1,10 +1,16 @@
 {
   "id": "Inclusive Xr Design",
   "title": "Inclusive Xr Design",
-  "content": "- ### OntologyBlock\n  id:: Inclusive Xr Design\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9001\n  - preferred-term:: Inclusive Xr Design\n  - source-domain:: mv\n  - owl:class:: mv:InclusiveXrDesign\n  - status:: stub\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]",
-  "backlinks": [],
+  "content": "- ### OntologyBlock\n  id:: inclusive-xr-design-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9001\n\t- source-domain:: mv\n\t- preferred-term:: Inclusive Xr Design\n\t- status:: active\n\t- owl:class:: mv:InclusiveXrDesign\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Design methodologies for creating accessible VR, AR, and metaverse experiences that accommodate diverse user abilities, including those with visual, auditory, motor, and cognitive disabilities, ensuring equitable access through alternative input methods, adaptive interfaces, and assistive technology integration.\n\t- #### Relationships\n\t  id:: inclusive-xr-design-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Accessible Design]]\n\t\t- related-to:: [[Inclusive Xr Experience]]\n\t\t- related-to:: [[Immersive Interface]]\n\t\t- enables:: [[Universal XR Access]]\n\n## Inclusive Immersion Concept\n\n### Design Philosophy\n- Minimise user exclusion based on needs\n- Maximise enjoyment potential\n- Equitable metaverse access\n- Diverse user consideration\n- Early accessibility integration\n\n### Research Focus\n- Mixed inclusivity state findings\n- Assistive technology gaps\n- Interoperability challenges\n- Significant advancement recognition\n\n## Accessibility Challenges\n\n### Visual Impairments\n- Screen reader compatibility\n- Audio description systems\n- Contrast and colour options\n- Text scaling capabilities\n\n### Hearing Impairments\n- HMD and hearing aid ergonomics\n- Assistive tool integration\n- Conversation synchronisation\n- Caption and subtitle support\n\n### Motor Disabilities\n- Motion-tracked controller alternatives\n- Conventional interaction barriers\n- Physical movement requirements\n- Fine motor skill challenges\n\n### Neurodivergent Users\n- Sensory overload potential\n- Integration difficulty\n- Learning disability considerations\n- Cognitive load management\n\n## Design Solutions\n\n### Multiple Input Methods\n- Not motion-only controls\n- Keyboard support\n- Adaptive controller compatibility\n- Preferred interaction choice\n\n### Advanced Input Technologies\n- Eye tracking control\n- Brain-computer interfaces\n- Voice recognition navigation\n- Hands-free operation\n\n### Adaptive Controllers\n- PlayStation VR2 remapping\n- Sensitivity adjustments\n- Xbox Adaptive Controller\n- Meta Quest integration\n\n## Industry Initiatives\n\n### XR Association (XRA)\n- VR and AR trade association\n- October 2020 accessibility guidance\n- Disabled user development focus\n- Industry best practices\n\n### Community Efforts\n- XR Access symposiums (2019+)\n- \"XR inclusive for all\" mission\n- Research expansion post-2021\n- Apple Vision Pro (2024) influence\n\n## Design Opportunities\n\n### Early Stage Advantage\n- Core accessibility integration\n- Proactive inclusive design\n- Barrier prevention approach\n- Website/app lesson application\n\n### Development Best Practices\n- Accessibility from beginning\n- User testing with disabilities\n- Assistive technology compatibility\n- Continuous improvement cycles\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "backlinks": [
+    "Inclusive Xr Experience"
+  ],
   "wiki_links": [
-    "Metaverse"
+    "Universal XR Access",
+    "Accessible Design",
+    "metaverse",
+    "Immersive Interface",
+    "Inclusive Xr Experience"
   ],
   "ontology": {
     "term_id": "MV-9001",
@@ -14,9 +20,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Design methodologies for creating accessible VR, AR, and metaverse experiences that accommodate diverse user abilities, including those with visual, auditory, motor, and cognitive disabilities, ensuring equitable access through alternative input methods, adaptive interfaces, and assistive technology integration.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -28,27 +34,37 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Accessible Design"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Universal XR Access"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "metaverse"
+    ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Inclusive Xr Experience",
+        "Immersive Interface"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

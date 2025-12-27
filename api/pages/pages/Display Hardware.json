@@ -1,14 +1,24 @@
 {
   "id": "Display Hardware",
   "title": "Display Hardware",
-  "content": "- ### OntologyBlock\n  id:: display-hardware-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9882\n\t- source-domain:: mv\n\t- preferred-term:: Display Hardware\n\t- status:: stub\n\t- owl:class:: mv:DisplayHardware\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: display-hardware-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: display-hardware-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9882\n\t- source-domain:: mv\n\t- preferred-term:: Display Hardware\n\t- definition:: The physical devices and display technologies that render visual content for virtual, augmented, and mixed reality experiences, including VR headsets, AR glasses, and related optical systems that create immersive visual interfaces for metaverse applications.\n\t- status:: active\n\t- owl:class:: mv:DisplayHardware\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: display-hardware-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Hardware]]\n\t\t- enables:: [[Immersive Visualization]], [[Spatial Computing]], [[Mixed Reality]]\n\t\t- requires:: [[Display Technology]], [[Optical Systems]], [[Graphics Processing]]\n\t\t- related-to:: [[VR Headset]], [[AR Glasses]], [[HMD]]\n- ## Technical Details\n\t- **Market Position (2024)**:\n\t\t- Meta: 74.6% market share across VR/AR\n\t\t- Q1 2025: 18.1% YoY growth in global headset shipments\n\t\t- VR/AR/MR display market: Projected $4.6B by 2034\n\t- **Key Devices (2024)**:\n\t\t- Meta Quest 3S: $299, pancake lenses, Snapdragon XR2 Gen 2\n\t\t- Apple Vision Pro: ~370K-420K units sold in 2024\n\t\t- Meta Orion: Advanced AR glasses with holographic displays\n\t\t- Samsung/Google MR headset: OLED microdisplay collaboration\n\t- **Display Technologies**:\n\t\t- LCD (Liquid Crystal Display)\n\t\t- OLED with TFT backplanes\n\t\t- OLED-on-silicon/micro-OLED\n\t\t- Micro-LED microdisplays\n\t\t- Liquid crystal on silicon (LCoS)\n\t\t- Waveguide optics for AR\n\t- **Usage**: 70% gaming, 42% video, 35% fitness, 22% creative\n- ## Applications\n\t- VR gaming and entertainment\n\t- Enterprise training and simulation\n\t- AR workplace assistance\n\t- Healthcare visualization\n\t- Metaverse social interaction",
   "backlinks": [
     "Visualization Layer",
-    "Ar Display Device"
+    "Ar Display Device",
+    "Digital Content Overlay"
   ],
   "wiki_links": [
+    "Graphics Processing",
     "metaverse",
-    "Metaverse"
+    "Immersive Visualization",
+    "HMD",
+    "VR Headset",
+    "AR Glasses",
+    "Display Technology",
+    "Hardware",
+    "Optical Systems",
+    "Spatial Computing",
+    "Mixed Reality"
   ],
   "ontology": {
     "term_id": "MV-9882",
@@ -18,9 +28,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The physical devices and display technologies that render visual content for virtual, augmented, and mixed reality experiences, including VR headsets, AR glasses, and related optical systems that create immersive visual interfaces for metaverse applications.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -33,13 +43,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Hardware"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Display Technology",
+      "Optical Systems",
+      "Graphics Processing"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Immersive Visualization",
+      "Spatial Computing",
+      "Mixed Reality"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -49,11 +67,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "VR Headset",
+        "AR Glasses",
+        "HMD"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

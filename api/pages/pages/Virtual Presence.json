@@ -3,13 +3,14 @@
   "title": "Virtual Presence",
   "content": "- ### OntologyBlock\n  id:: virtual-presence-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10137\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Presence\n\t- status:: active\n\t- definition:: The psychological experience of being there within a virtual place or situation, encompassing spatial presence (sense of location), social presence (connection with others), and self-presence (embodiment in virtual form), achieved through telepresence technologies and immersive environments.\n\t- owl:class:: mv:VirtualPresence\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Telepresence]]\n\t\t- related-to:: [[Virtual Reality]]\n\t\t- related-to:: [[Avatar]]\n\t\t- related-to:: [[Immersive Experience]]\n\t  id:: virtual-presence-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual presence is the sensation of being within a place or situation, representing the psychological counterpart of technological immersion. The metaverse is defined as a convergence of three major technological trends: telepresence, digital twins, and blockchain. In 2024, 14.3 million VR headsets were sold, nearly tripling 2019 figures, demonstrating growing demand for immersive presence experiences.\n- ## Technical Details\n\t- ### Presence Dimensions\n\t\t- **Spatial Presence**: Sense of being in the virtual location\n\t\t- **Social Presence**: Feeling connected to others in the space\n\t\t- **Self-Presence**: Embodiment and identification with virtual avatar\n\t- ### Enabling Technologies\n\t\t- VR headsets for full immersion\n\t\t- AR glasses for enhanced reality\n\t\t- Haptic devices for tactile feedback\n\t\t- Spatial audio for directional sound\n\t- ### Telepresence Methods\n\t\t- Real-time video conferencing\n\t\t- Avatar-mediated interaction\n\t\t- Telerobotics and remote operation\n\t\t- Digital twin environments\n- ## Applications\n\t- Remote work and virtual office presence\n\t- Telemedicine and healthcare consultations\n\t- Immersive training and simulation\n\t- Virtual shopping and retail experiences\n\t- Social gatherings and virtual events",
   "backlinks": [
+    "Immersive Experiences",
     "Virtual Reality (VR)",
     "Communication Software"
   ],
   "wiki_links": [
-    "metaverse",
-    "Immersive Experience",
     "Telepresence",
+    "Immersive Experience",
+    "metaverse",
     "Virtual Reality",
     "Avatar"
   ],

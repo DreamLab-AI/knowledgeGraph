@@ -3,14 +3,15 @@
   "title": "Virtual Field Trip",
   "content": "- ### OntologyBlock\n  id:: virtual-field-trip-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10125\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Field Trip\n\t- status:: active\n\t- definition:: An educational experience using VR, AR, or MR technologies that transports students to locations they could not otherwise visit, enabling immersive learning through 360-degree environments, interactive simulations, and experiential content without leaving the classroom.\n\t- owl:class:: mv:VirtualFieldTrip\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Educational Technology]]\n\t\t- related-to:: [[Virtual Reality]]\n\t\t- related-to:: [[Immersive Learning]]\n\t\t- related-to:: [[Distance Learning]]\n\t  id:: virtual-field-trip-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual field trips use immersive technologies to transport students to otherwise inaccessible locations such as the Great Wall of China, coral reefs, or historical sites. Research shows VR can improve knowledge acquisition compared to traditional instruction. In Kentucky, students use Meta Quest headsets to virtually visit technology centers and learn about careers.\n- ## Technical Details\n\t- ### Technology Types\n\t\t- **Virtual Reality (VR)**: Fully immersive 360-degree environments via headsets\n\t\t- **Augmented Reality (AR)**: Digital overlays on physical world via devices\n\t\t- **Mixed Reality (MR)**: Interactive digital elements in physical spaces\n\t\t- **360 Video**: Non-interactive panoramic experiences\n\t- ### Content Sources\n\t\t- Google Arts & Culture collections\n\t\t- National Geographic expeditions\n\t\t- Living Oceans Foundation coral reef curriculum\n\t\t- Museum and historical site partnerships\n\t- ### Hardware Options\n\t\t- Meta Quest headsets for schools\n\t\t- Smartphone-based VR viewers\n\t\t- Classroom projection systems\n\t\t- Tablet-based AR experiences\n- ## Applications\n\t- Historical site and museum visits\n\t- Science and nature exploration\n\t- Career and workplace exposure\n\t- Cultural and geographic education\n\t- STEM concept visualization",
   "backlinks": [
+    "Virtual Museum Tour",
     "Education Metaverse"
   ],
   "wiki_links": [
     "Distance Learning",
+    "Immersive Learning",
     "metaverse",
     "Educational Technology",
-    "Virtual Reality",
-    "Immersive Learning"
+    "Virtual Reality"
   ],
   "ontology": {
     "term_id": "MV-10125",

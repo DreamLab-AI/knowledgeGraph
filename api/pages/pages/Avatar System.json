@@ -4,6 +4,7 @@
   "content": "- ### OntologyBlock\n  id:: Avatar System\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9792\n  - preferred-term:: Avatar System\n  - source-domain:: mv\n  - owl:class:: mv:AvatarSystem\n  - status:: active\n  - definition:: Avatar System is the integrated technical architecture for creating, customizing, animating, and rendering digital representations of users in virtual environments, encompassing character models, animation systems, facial expression rigs, physics simulations, and real-time rendering pipelines.\n  - is-subclass-of:: [[Virtual Character System]]\n  - enables:: [[User Representation]], [[Social Interaction]], [[Embodied Presence]]\n  - requires:: [[3D Rendering Engine]], [[Animation Controller]], [[Input Processing]]\n\n### Technical Details\nKey components include:\n- **Character Model**: 3D mesh with skeleton hierarchy and blend shapes\n- **Animation Controller**: State machine managing movement, gestures, and transitions\n- **Expression System**: Facial rig with blend shapes for emotions and lip sync\n- **Physics Simulation**: Cloth, hair, and accessory dynamics\n\n### Input Integration\n- **Motion Capture**: Full-body tracking from VR controllers or external systems\n- **Facial Tracking**: Webcam or headset-based expression capture\n- **Eye Tracking**: Gaze direction and pupil data for realistic eye contact\n- **Voice Input**: Audio-driven lip sync and emotion detection\n\n### Rendering Pipeline\nReal-time rendering with physically-based materials, subsurface scattering for skin, dynamic lighting, and level-of-detail optimization for performance across devices.\n\n### Platform Examples\nUnity Avatar System, Unreal MetaHuman, Ready Player Me SDK, and VRChat avatar framework provide comprehensive avatar system implementations.",
   "backlinks": [
     "Virtual Performance Space",
+    "Social Vr",
     "Digital Ritual",
     "Dynamic Character Animation",
     "Education Metaverse",
@@ -12,12 +13,12 @@
     "Character Model"
   ],
   "wiki_links": [
-    "Animation Controller",
-    "Embodied Presence",
-    "3D Rendering Engine",
     "Virtual Character System",
-    "Input Processing",
     "User Representation",
+    "Embodied Presence",
+    "Animation Controller",
+    "Input Processing",
+    "3D Rendering Engine",
     "Social Interaction"
   ],
   "ontology": {

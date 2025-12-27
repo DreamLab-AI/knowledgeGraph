@@ -1,13 +1,16 @@
 {
   "id": "Virtual Production Workflow",
   "title": "Virtual Production Workflow",
-  "content": "- ### OntologyBlock\n  id:: virtual-production-workflow-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10140\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Production Workflow\n\t- status:: stub\n\t- owl:class:: mv:VirtualProductionWorkflow\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: virtual-production-workflow-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-production-workflow-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10140\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Production Workflow\n\t- status:: active\n\t- definition:: The end-to-end process for creating film and television content using virtual production techniques, integrating pre-visualization, virtual art department asset creation, real-time game engine rendering, LED volume shooting, and post-production refinement in a non-linear pipeline where VFX work begins in pre-production rather than post-production.\n\t- owl:class:: mv:VirtualProductionWorkflow\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Production Pipeline]]\n\t\t- related-to:: [[Virtual Production VP]]\n\t\t- related-to:: [[Pre-visualization]]\n\t\t- related-to:: [[Virtual Art Department]]\n\t  id:: virtual-production-workflow-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual production workflows differ fundamentally from traditional linear pipelines by moving VFX work to the start of production rather than post-production. The Virtual Art Department (VAD) designs, creates, and manages all visual assets including 3D prototypes and camera-ready environments. Virtual environments are captured in-camera rather than added in post, enabling filmmakers to execute multiple tasks in parallel using real-time renderers.\n- ## Technical Details\n\t- ### Pre-Production Phase\n\t\t- **Pitchvis**: VFX studio previsualization to get projects greenlit\n\t\t- **Asset Creation**: Generation of rough CGI and virtual assets for creative decisions\n\t\t- **Virtual Art Department**: Determines which elements should be virtual vs physical\n\t\t- **Environment Design**: Building digital locations in game engines\n\t- ### Production Phase\n\t\t- **LED Volume Shooting**: Filming with real-time digital backgrounds\n\t\t- **Motion Capture**: Live animation and performance capture integration\n\t\t- **Live Rendering**: Near-final scene visualization during capture\n\t\t- **On-Set Visualization**: Real-time lighting, effects, and animated backgrounds\n\t- ### Post-Production Phase\n\t\t- **Footage Refinement**: Digital asset enhancement and color grading\n\t\t- **Motion Capture Polish**: Cleanup of captured performance data\n\t\t- **Final Compositing**: Integration of remaining VFX elements\n\t\t- **Delivery**: Final output preparation for distribution\n\t- ### Key Technologies\n\t\t- Unreal Engine and Unity for real-time rendering\n\t\t- Camera tracking systems for perspective synchronization\n\t\t- LED wall technology for background display\n\t\t- Motion capture suits and systems\n- ## Applications\n\t- Feature film production workflows\n\t- Television series creation pipelines\n\t- Streaming content development\n\t- Commercial and advertising production\n\t- Live event and broadcast integration",
   "backlinks": [
     "Reality Capture System"
   ],
   "wiki_links": [
     "metaverse",
-    "Metaverse"
+    "Virtual Production VP",
+    "Pre-visualization",
+    "Virtual Art Department",
+    "Production Pipeline"
   ],
   "ontology": {
     "term_id": "MV-10140",
@@ -17,9 +20,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The end-to-end process for creating film and television content using virtual production techniques, integrating pre-visualization, virtual art department asset creation, real-time game engine rendering, LED volume shooting, and post-production refinement in a non-linear pipeline where VFX work begins in pre-production rather than post-production.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,7 +35,7 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Production Pipeline"
     ],
     "has_part": [],
     "is_part_of": [],
@@ -48,11 +51,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Virtual Production VP",
+        "Pre-visualization",
+        "Virtual Art Department"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

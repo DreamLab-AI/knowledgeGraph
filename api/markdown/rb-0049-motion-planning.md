@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0049
 	- source-domain:: rb
-	- preferred-term:: rb 0049 motion planning
-	- status:: draft
+	- preferred-term:: Motion Planning
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0049motionplanning
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Motion planning is the computational process of finding a collision-free path for a robot from its start configuration to a goal configuration in its workspace or configuration space.
+	- owl:class:: rb:MotionPlanning
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

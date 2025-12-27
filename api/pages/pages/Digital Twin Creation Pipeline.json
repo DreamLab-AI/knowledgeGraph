@@ -1,13 +1,22 @@
 {
   "id": "Digital Twin Creation Pipeline",
   "title": "Digital Twin Creation Pipeline",
-  "content": "- ### OntologyBlock\n  id:: digital-twin-creation-pipeline-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9875\n\t- source-domain:: mv\n\t- preferred-term:: Digital Twin Creation Pipeline\n\t- status:: stub\n\t- owl:class:: mv:DigitalTwinCreationPipeline\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: digital-twin-creation-pipeline-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-twin-creation-pipeline-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9875\n\t- source-domain:: mv\n\t- preferred-term:: Digital Twin Creation Pipeline\n\t- definition:: The systematic workflow and technology stack for generating digital twins, combining 3D scanning techniques such as LiDAR, photogrammetry, and structured-light scanning with AI processing to create accurate virtual replicas of physical assets, environments, or systems.\n\t- status:: active\n\t- owl:class:: mv:DigitalTwinCreationPipeline\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-twin-creation-pipeline-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[3D Content Pipeline]]\n\t\t- enables:: [[Asset Digitization]], [[Virtual Replica Creation]], [[Real-Time Monitoring]]\n\t\t- requires:: [[3D Scanning]], [[Photogrammetry]], [[Point Cloud Processing]]\n\t\t- related-to:: [[LiDAR]], [[Computer Vision]], [[CAD Integration]]\n- ## Technical Details\n\t- **Core Capture Technologies**:\n\t\t- LiDAR scanning: Precise geometry capture\n\t\t- Photogrammetry: 3D reconstruction from photographs\n\t\t- Structured-light scanning: High-detail surface capture\n\t\t- Drone-based aerial photogrammetry for large areas\n\t- **Pipeline Components**:\n\t\t- Data capture (sensors, cameras, scanners)\n\t\t- Point cloud or mesh generation\n\t\t- AI-based semantic segmentation\n\t\t- Geometric primitive fitting\n\t\t- Real-time data integration layer\n\t- **Consumer-Grade Advances (2024)**:\n\t\t- iPhone 15 Pro stereo vision capabilities for scanning\n\t\t- Mean error of 4.97% compared to ground truth\n\t\t- Cost-effective alternative to industrial scanners\n\t- **Processing Platforms**: OpenDroneMap (open-source), AWS Fargate/Lambda serverless, NVIDIA Omniverse\n- ## Applications\n\t- Industrial asset digitization\n\t- Cultural heritage preservation\n\t- Facility management documentation\n\t- Smart manufacturing systems\n\t- Urban planning and smart cities",
   "backlinks": [
     "Reality Capture System"
   ],
   "wiki_links": [
+    "LiDAR",
+    "Photogrammetry",
+    "Computer Vision",
     "metaverse",
-    "Metaverse"
+    "Asset Digitization",
+    "CAD Integration",
+    "Real-Time Monitoring",
+    "3D Scanning",
+    "3D Content Pipeline",
+    "Virtual Replica Creation",
+    "Point Cloud Processing"
   ],
   "ontology": {
     "term_id": "MV-9875",
@@ -17,9 +26,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The systematic workflow and technology stack for generating digital twins, combining 3D scanning techniques such as LiDAR, photogrammetry, and structured-light scanning with AI processing to create accurate virtual replicas of physical assets, environments, or systems.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +41,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "3D Content Pipeline"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "3D Scanning",
+      "Photogrammetry",
+      "Point Cloud Processing"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Asset Digitization",
+      "Virtual Replica Creation",
+      "Real-Time Monitoring"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +65,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "LiDAR",
+        "Computer Vision",
+        "CAD Integration"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

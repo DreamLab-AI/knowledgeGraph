@@ -1,13 +1,16 @@
 {
   "id": "Virtual Society Regulations",
   "title": "Virtual Society Regulations",
-  "content": "- ### OntologyBlock\n  id:: virtual-society-regulations-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10146\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Society Regulations\n\t- status:: stub\n\t- owl:class:: mv:VirtualSocietyRegulations\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: virtual-society-regulations-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-society-regulations-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10146\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Society Regulations\n\t- status:: active\n\t- definition:: The legal frameworks, governance structures, and policy mechanisms designed to regulate behavior, protect rights, and ensure safety within metaverse platforms and virtual world environments, encompassing intellectual property, data privacy, content moderation, and cross-jurisdictional enforcement challenges.\n\t- owl:class:: mv:VirtualSocietyRegulations\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Digital Governance]]\n\t\t- related-to:: [[Metaverse Governance]]\n\t\t- related-to:: [[Virtual World Platform]]\n\t\t- related-to:: [[Data Privacy]]\n\t  id:: virtual-society-regulations-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual society regulations address governance challenges in metaverse environments where traditional geographic jurisdiction boundaries become complex. The EU is formulating comprehensive virtual world policies, projecting market growth from EUR27 billion in 2022 to over EUR800 billion by 2030. The European Parliament adopted the AI Act on 13 March 2024 with metaverse-relevant provisions. UN Virtual Worlds Day occurred in June 2024, preceding the Global Digital Compact adoption in September 2024.\n- ## Technical Details\n\t- ### EU Regulatory Framework\n\t\t- **GDPR**: Data protection for virtual world personal data\n\t\t- **Digital Services Act**: Platform liability and content moderation\n\t\t- **Digital Markets Act**: Competition and gatekeeper obligations\n\t\t- **AI Act**: Prohibition of harmful manipulation and deception\n\t- ### Governance Challenges\n\t\t- **Jurisdiction**: Determining applicable law across global virtual spaces\n\t\t- **Identity**: Avatar accountability and real-world attribution\n\t\t- **Enforcement**: Cross-border violation prosecution\n\t\t- **Interoperability**: Standards across different metaverse platforms\n\t- ### Key Legal Areas\n\t\t- Intellectual property rights protection\n\t\t- Data privacy and personal information handling\n\t\t- Criminal law application to virtual crimes\n\t\t- Content moderation and community guidelines\n\t- ### Multistakeholder Approach\n\t\t- Industry self-regulation and standards development\n\t\t- Government oversight and enforcement\n\t\t- User community governance participation\n\t\t- International cooperation frameworks\n- ## Applications\n\t- Platform terms of service enforcement\n\t- Virtual property rights protection\n\t- User safety and harassment prevention\n\t- Cross-platform identity verification\n\t- Virtual economy consumer protection\n\t- Human rights preservation in virtual spaces",
   "backlinks": [
     "Metaverse Liability Model"
   ],
   "wiki_links": [
     "metaverse",
-    "Metaverse"
+    "Metaverse Governance",
+    "Digital Governance",
+    "Virtual World Platform",
+    "Data Privacy"
   ],
   "ontology": {
     "term_id": "MV-10146",
@@ -17,9 +20,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The legal frameworks, governance structures, and policy mechanisms designed to regulate behavior, protect rights, and ensure safety within metaverse platforms and virtual world environments, encompassing intellectual property, data privacy, content moderation, and cross-jurisdictional enforcement challenges.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,7 +35,7 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Digital Governance"
     ],
     "has_part": [],
     "is_part_of": [],
@@ -48,11 +51,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Metaverse Governance",
+        "Virtual World Platform",
+        "Data Privacy"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0039
 	- source-domain:: rb
-	- preferred-term:: rb 0039 stiffness
-	- status:: draft
+	- preferred-term:: Stiffness
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0039stiffness
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Stiffness in robotics is the ratio of applied force to resulting deflection, determining how rigidly a robot structure resists deformation under load and affects positioning accuracy.
+	- owl:class:: rb:Stiffness
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

@@ -1,14 +1,23 @@
 {
   "id": "Digital Repository",
   "title": "Digital Repository",
-  "content": "- ### OntologyBlock\n  id:: digital-repository-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9866\n\t- source-domain:: mv\n\t- preferred-term:: Digital Repository\n\t- status:: stub\n\t- owl:class:: mv:DigitalRepository\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: digital-repository-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-repository-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9866\n\t- source-domain:: mv\n\t- preferred-term:: Digital Repository\n\t- definition:: A managed storage and access system for digital objects, assets, and metadata designed to ensure long-term preservation, discoverability, and integrity of digital content through standardized ingest, storage, and retrieval processes supporting metaverse archives and institutional collections.\n\t- status:: active\n\t- owl:class:: mv:DigitalRepository\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-repository-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Data Management]]\n\t\t- enables:: [[Digital Preservation]], [[Content Access]], [[Metadata Management]]\n\t\t- requires:: [[Storage Infrastructure]], [[Metadata Standards]], [[Access Controls]]\n\t\t- related-to:: [[Digital Archive]], [[IPFS]], [[Institutional Repository]]\n- ## Technical Details\n\t- **Core Functions**:\n\t\t- Ingest: Accepting and validating digital objects\n\t\t- Storage: Secure, redundant data persistence\n\t\t- Management: Metadata cataloging and organization\n\t\t- Access: Discovery and retrieval interfaces\n\t\t- Preservation: Long-term viability assurance\n\t- **Metadata Standards**:\n\t\t- PREMIS: Preservation metadata implementation strategies\n\t\t- Dublin Core: General descriptive metadata\n\t\t- METS: Metadata encoding and transmission\n\t\t- OAIS: Open Archival Information System reference model\n\t- **TRUST Principles**:\n\t\t- Transparency, Responsibility, User focus\n\t\t- Sustainability, Technology\n\t- **2024 Developments**: Harvard DRS Futures project, AI-assisted cataloging, decentralized storage integration\n- ## Applications\n\t- Academic research archives\n\t- Cultural heritage preservation\n\t- Corporate records management\n\t- Metaverse asset storage\n\t- Government document repositories",
   "backlinks": [
     "Collective Memory Archive",
     "Asset Archive"
   ],
   "wiki_links": [
+    "Metadata Standards",
+    "Content Access",
+    "Institutional Repository",
+    "Storage Infrastructure",
     "metaverse",
-    "Metaverse"
+    "Data Management",
+    "IPFS",
+    "Digital Archive",
+    "Access Controls",
+    "Metadata Management",
+    "Digital Preservation"
   ],
   "ontology": {
     "term_id": "MV-9866",
@@ -18,9 +27,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A managed storage and access system for digital objects, assets, and metadata designed to ensure long-term preservation, discoverability, and integrity of digital content through standardized ingest, storage, and retrieval processes supporting metaverse archives and institutional collections.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -33,13 +42,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Data Management"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Storage Infrastructure",
+      "Metadata Standards",
+      "Access Controls"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Digital Preservation",
+      "Content Access",
+      "Metadata Management"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -49,11 +66,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Digital Archive",
+        "IPFS",
+        "Institutional Repository"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

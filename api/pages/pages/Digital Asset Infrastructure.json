@@ -1,13 +1,22 @@
 {
   "id": "Digital Asset Infrastructure",
   "title": "Digital Asset Infrastructure",
-  "content": "- ### OntologyBlock\n  id:: digital-asset-infrastructure-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9848\n\t- source-domain:: mv\n\t- preferred-term:: Digital Asset Infrastructure\n\t- status:: stub\n\t- owl:class:: mv:DigitalAssetInfrastructure\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: digital-asset-infrastructure-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-asset-infrastructure-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9848\n\t- source-domain:: mv\n\t- preferred-term:: Digital Asset Infrastructure\n\t- definition:: The foundational technology stack comprising blockchain networks, node infrastructure, custody systems, key management solutions, and integration APIs that enable secure creation, storage, transfer, and management of digital assets across institutional and retail applications.\n\t- status:: active\n\t- owl:class:: mv:DigitalAssetInfrastructure\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-asset-infrastructure-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Infrastructure]]\n\t\t- enables:: [[Asset Custody]], [[Transaction Processing]], [[Key Management]]\n\t\t- requires:: [[Node Network]], [[Cryptographic Systems]], [[Storage Solutions]]\n\t\t- related-to:: [[Wallet Infrastructure]], [[Exchange Technology]], [[Security Hardware]]\n- ## Technical Details\n\t- **Core Infrastructure Components**:\n\t\t- Full node and validator infrastructure\n\t\t- Hardware security modules (HSM)\n\t\t- Multi-party computation (MPC) key management\n\t\t- Cold and hot wallet systems\n\t- **Enterprise Solutions**:\n\t\t- Fireblocks: Institutional custody and transfer\n\t\t- BitGo: Multi-signature wallets\n\t\t- Anchorage: Qualified custodian services\n\t\t- Copper: Prime brokerage infrastructure\n\t- **Technical Standards**:\n\t\t- BIP-32/39/44 for HD wallet derivation\n\t\t- EIP standards for Ethereum integration\n\t\t- CCSS for cryptocurrency security\n\t\t- SOC 2 compliance for service providers\n\t- **2024 Trends**: Institutional-grade custody expansion, regulated infrastructure providers, insurance coverage growth\n- ## Applications\n\t- Institutional custody services\n\t- Exchange backend systems\n\t- Payment processor integration\n\t- Corporate treasury management\n\t- Regulated financial services",
   "backlinks": [
     "Token Custody Service"
   ],
   "wiki_links": [
+    "Digital Infrastructure",
     "metaverse",
-    "Metaverse"
+    "Cryptographic Systems",
+    "Wallet Infrastructure",
+    "Exchange Technology",
+    "Key Management",
+    "Storage Solutions",
+    "Asset Custody",
+    "Security Hardware",
+    "Node Network",
+    "Transaction Processing"
   ],
   "ontology": {
     "term_id": "MV-9848",
@@ -17,9 +26,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The foundational technology stack comprising blockchain networks, node infrastructure, custody systems, key management solutions, and integration APIs that enable secure creation, storage, transfer, and management of digital assets across institutional and retail applications.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +41,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Digital Infrastructure"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Node Network",
+      "Cryptographic Systems",
+      "Storage Solutions"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Asset Custody",
+      "Transaction Processing",
+      "Key Management"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +65,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Wallet Infrastructure",
+        "Exchange Technology",
+        "Security Hardware"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

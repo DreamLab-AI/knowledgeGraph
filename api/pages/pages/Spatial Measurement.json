@@ -1,13 +1,17 @@
 {
   "id": "Spatial Measurement",
   "title": "Spatial Measurement",
-  "content": "- ### OntologyBlock\n  id:: spatial-measurement-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10060\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Measurement\n\t- status:: stub\n\t- owl:class:: mv:SpatialMeasurement\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: spatial-measurement-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: spatial-measurement-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10060\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Measurement\n\t- status:: active\n\t- definition:: Technology for determining distances, depths, and dimensional properties in physical and virtual environments using sensors such as Time-of-Flight cameras, structured light sensors, and LiDAR, enabling accurate 3D surface mapping, obstacle detection, and gesture tracking in AR/VR applications.\n\t- owl:class:: mv:SpatialMeasurement\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: spatial-measurement-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Depth Sensing]]\n\t\t- related-to:: [[Time Of Flight Sensors]]\n\t\t- related-to:: [[LiDAR Technology]]\n\t\t- related-to:: [[Structured Light Sensing]]\n\t\t- enables:: [[3D Environment Mapping]]\n\t- #### Key Technologies\n\t  collapsed:: true\n\t\t- Time-of-Flight (ToF) sensors\n\t\t- Structured light depth cameras\n\t\t- LiDAR scanning systems\n\t\t- Stereo vision depth estimation\n\t\t- Infrared depth sensing\n\t- #### Market Context\n\t  collapsed:: true\n\t\t- 3D sensor market $6.05 billion (2024)\n\t\t- Projected $27.33 billion by 2032\n\t\t- ToF sensors largest market segment\n\t\t- VR/AR headset integration growing\n\t\t- Healthcare and robotics applications",
   "backlinks": [
     "Photogrammetry"
   ],
   "wiki_links": [
+    "Time Of Flight Sensors",
+    "3D Environment Mapping",
     "metaverse",
-    "Metaverse"
+    "Structured Light Sensing",
+    "LiDAR Technology",
+    "Depth Sensing"
   ],
   "ontology": {
     "term_id": "MV-10060",
@@ -17,9 +21,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Technology for determining distances, depths, and dimensional properties in physical and virtual environments using sensors such as Time-of-Flight cameras, structured light sensors, and LiDAR, enabling accurate 3D surface mapping, obstacle detection, and gesture tracking in AR/VR applications.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +36,15 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Depth Sensing"
     ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "3D Environment Mapping"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +54,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Time Of Flight Sensors",
+        "LiDAR Technology",
+        "Structured Light Sensing"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

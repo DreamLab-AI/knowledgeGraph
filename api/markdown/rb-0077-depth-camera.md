@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0077
 	- source-domain:: rb
-	- preferred-term:: rb 0077 depth camera
-	- status:: draft
+	- preferred-term:: Depth Camera
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0077depthcamera
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: A depth camera is a sensor that captures distance information for each pixel in an image, producing 3D point clouds used for robot navigation, obstacle avoidance, and object manipulation.
+	- owl:class:: rb:DepthCamera
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

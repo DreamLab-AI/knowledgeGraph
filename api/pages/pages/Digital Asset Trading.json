@@ -1,15 +1,24 @@
 {
   "id": "Digital Asset Trading",
   "title": "Digital Asset Trading",
-  "content": "- ### OntologyBlock\n  id:: digital-asset-trading-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9851\n\t- source-domain:: mv\n\t- preferred-term:: Digital Asset Trading\n\t- status:: stub\n\t- owl:class:: mv:DigitalAssetTrading\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: digital-asset-trading-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-asset-trading-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9851\n\t- source-domain:: mv\n\t- preferred-term:: Digital Asset Trading\n\t- definition:: The buying, selling, and exchange of cryptocurrencies, tokens, and other blockchain-based assets through centralized exchanges, decentralized protocols, and over-the-counter markets using various order types, trading strategies, and execution mechanisms to achieve price discovery and liquidity.\n\t- status:: active\n\t- owl:class:: mv:DigitalAssetTrading\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-asset-trading-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Financial Trading]]\n\t\t- enables:: [[Price Discovery]], [[Liquidity Provision]], [[Market Making]]\n\t\t- requires:: [[Exchange Platform]], [[Order Matching]], [[Settlement Systems]]\n\t\t- related-to:: [[Algorithmic Trading]], [[DEX Trading]], [[Derivatives Market]]\n- ## Technical Details\n\t- **Trading Venues**:\n\t\t- Centralized exchanges (CEX): Order book matching, custody\n\t\t- Decentralized exchanges (DEX): AMM pools, on-chain settlement\n\t\t- OTC desks: Large block trades, negotiated pricing\n\t\t- Dark pools: Institutional anonymous trading\n\t- **Order Types**:\n\t\t- Market orders: Immediate execution at best price\n\t\t- Limit orders: Execution at specified price or better\n\t\t- Stop orders: Triggered execution at threshold\n\t\t- TWAP/VWAP: Time/volume-weighted execution\n\t- **2024 Market Structure**:\n\t\t- Daily spot volume: $50-100+ billion globally\n\t\t- Derivatives volume exceeding spot markets\n\t\t- DEX share growing (10-15% of volume)\n\t\t- Institutional trading infrastructure maturing\n\t- **Key Exchanges**: Binance, Coinbase, Kraken, Uniswap, dYdX\n- ## Applications\n\t- Retail cryptocurrency investing\n\t- Institutional trading operations\n\t- Arbitrage and market making\n\t- Hedging and risk management\n\t- Algorithmic strategy execution",
   "backlinks": [
     "Creator Economy",
     "Secondary Market Integration",
     "Cross Metaverse Commerce"
   ],
   "wiki_links": [
+    "Financial Trading",
+    "Derivatives Market",
+    "Order Matching",
     "metaverse",
-    "Metaverse"
+    "Settlement Systems",
+    "Algorithmic Trading",
+    "DEX Trading",
+    "Market Making",
+    "Exchange Platform",
+    "Liquidity Provision",
+    "Price Discovery"
   ],
   "ontology": {
     "term_id": "MV-9851",
@@ -19,9 +28,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The buying, selling, and exchange of cryptocurrencies, tokens, and other blockchain-based assets through centralized exchanges, decentralized protocols, and over-the-counter markets using various order types, trading strategies, and execution mechanisms to achieve price discovery and liquidity.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -34,13 +43,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Financial Trading"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Exchange Platform",
+      "Order Matching",
+      "Settlement Systems"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Price Discovery",
+      "Liquidity Provision",
+      "Market Making"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -50,11 +67,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Algorithmic Trading",
+        "DEX Trading",
+        "Derivatives Market"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

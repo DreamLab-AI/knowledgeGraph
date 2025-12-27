@@ -1,7 +1,7 @@
 {
   "id": "Digital Identity",
   "title": "Digital Identity",
-  "content": "- ### OntologyBlock\n  id:: digital-identity-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9860\n\t- source-domain:: mv\n\t- preferred-term:: Digital Identity\n\t- status:: stub\n\t- owl:class:: mv:DigitalIdentity\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: digital-identity-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-identity-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9860\n\t- source-domain:: mv\n\t- preferred-term:: Digital Identity\n\t- definition:: A digital representation of an entity encompassing personally identifiable information, behavioral data, credentials, and authentication attributes that enables individuals and organizations to establish presence, ownership, and trust within virtual environments, blockchain networks, and metaverse platforms.\n\t- status:: active\n\t- owl:class:: mv:DigitalIdentity\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-identity-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Identity]]\n\t\t- enables:: [[Authentication]], [[Authorization]], [[Digital Presence]]\n\t\t- requires:: [[Identity Verification]], [[Credential Storage]], [[Privacy Controls]]\n\t\t- related-to:: [[Avatar]], [[Self-Sovereign Identity]], [[Decentralized Identifiers]]\n- ## Technical Details\n\t- **Metaverse Identity Components**:\n\t\t- Representation: Avatars, digital personas\n\t\t- Data: Preferences, behaviors, transaction history\n\t\t- Identification: Credentials, keys, attestations\n\t- **Technology Stack**:\n\t\t- Decentralized identifiers (DIDs)\n\t\t- Verifiable credentials (VCs)\n\t\t- Blockchain-based identity anchoring\n\t\t- Biometric authentication\n\t- **Key Characteristics**:\n\t\t- Portable across platforms and metaverses\n\t\t- User-controlled with selective disclosure\n\t\t- Cryptographically verifiable\n\t\t- Persistent across sessions\n\t- **2024 Trends**: Integration with physical identity, regulatory frameworks emerging, interoperability focus\n- ## Applications\n\t- Metaverse user profiles\n\t- NFT and asset ownership\n\t- Cross-platform authentication\n\t- Virtual reputation systems\n\t- Decentralized social networks",
   "backlinks": [
     "Virtual Property Right",
     "Central Bank Digital Currency",
@@ -13,6 +13,7 @@
     "Identity Verification",
     "Decentralized Autonomous Organization (DAO)",
     "Transaction Standard",
+    "Decentralized Identifiers",
     "Credential Format Standard",
     "BC-0456-self-sovereign-identity",
     "Humanity Attestation",
@@ -24,8 +25,17 @@
     "Decentralised Web"
   ],
   "wiki_links": [
+    "Authentication",
+    "Credential Storage",
+    "Self-Sovereign Identity",
+    "Digital Presence",
+    "Identity",
+    "Authorization",
+    "Decentralized Identifiers",
     "metaverse",
-    "Metaverse"
+    "Identity Verification",
+    "Avatar",
+    "Privacy Controls"
   ],
   "ontology": {
     "term_id": "MV-9860",
@@ -35,9 +45,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A digital representation of an entity encompassing personally identifiable information, behavioral data, credentials, and authentication attributes that enables individuals and organizations to establish presence, ownership, and trust within virtual environments, blockchain networks, and metaverse platforms.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -50,13 +60,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Identity"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Identity Verification",
+      "Credential Storage",
+      "Privacy Controls"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Authentication",
+      "Authorization",
+      "Digital Presence"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -66,11 +84,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Avatar",
+        "Self-Sovereign Identity",
+        "Decentralized Identifiers"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

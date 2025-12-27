@@ -1,12 +1,16 @@
 {
   "id": "Metaverse Venue",
   "title": "Metaverse Venue",
-  "content": "- ### OntologyBlock\n  id:: Metaverse Venue\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9966\n  - preferred-term:: Metaverse Venue\n  - source-domain:: mv\n  - owl:class:: mv:MetaverseVenue\n  - status:: stub\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]",
+  "content": "- ### OntologyBlock\n  id:: metaverse-venue-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9966\n\t- source-domain:: mv\n\t- preferred-term:: Metaverse Venue\n\t- status:: active\n\t- owl:class:: mv:MetaverseVenue\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Virtual 3D spaces within metaverse platforms designed to host events, conferences, exhibitions, and social gatherings, enabling global participation through customisable avatars and interactive environments that transcend physical location constraints.\n\t- #### Relationships\n\t  id:: metaverse-venue-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Virtual Environment]]\n\t\t- related-to:: [[Virtual Events]]\n\t\t- related-to:: [[Digital Twin]]\n\t\t- enables:: [[Global Virtual Gatherings]]\n\n## Market Overview\n\n### Investment Growth\n- $12 billion spent in 2020\n- $72.8 billion projected for 2024\n- VR/AR foundation technologies\n- Increasing enterprise adoption\n- Platform expansion\n\n### Key Platforms\n\n#### MootUp\n- Browser-based access\n- Scalable event hosting\n- Thousands of concurrent attendees\n- Global accessibility\n- 3D interactive features\n\n#### Meetaverse\n- Business meeting focus\n- Sales and marketing tools\n- Engagement tracking\n- User data analytics\n- Corporate event support\n\n#### Hyperspace\n- VR conference capability\n- Metaverse networking\n- 3D environment navigation\n- Collaborative sessions\n- Virtual exhibitor booths\n\n#### vFairs\n- Avatar customisation\n- Personalised presence\n- Interactive 3D venues\n- Visual engagement\n- Event management\n\n#### VenueTwin\n- Digital twin creation\n- Real-time interaction\n- Colleague collaboration\n- Partner engagement\n- Physical venue replication\n\n## Event Types\n\n### Corporate Events\n- Conferences\n- Trade shows\n- Product launches\n- Team meetings\n- Training sessions\n\n### Social Gatherings\n- Concerts\n- Exhibitions\n- Networking events\n- Community meetups\n- Cultural celebrations\n\n## Key Features\n\n### Avatar Systems\n- Custom creation\n- Personal representation\n- Expression capability\n- Interaction tools\n- Identity options\n\n### Environment Design\n- 3D world building\n- Interactive elements\n- Spatial audio\n- Visual branding\n- Navigation systems\n\n## Benefits\n\n### Global Reach\n- No geographical limits\n- Cross-cultural participation\n- Time zone flexibility\n- International networking\n- Inclusive access\n\n### Engagement\n- Immersive experience\n- Interactive content\n- Personalised journeys\n- Real-time interaction\n- Memorable events\n\n## Technical Requirements\n\n### Platform Support\n- Web browser access\n- VR headset compatibility\n- Mobile device support\n- Desktop applications\n- Cross-platform sync\n\n### Infrastructure\n- High bandwidth\n- Low latency\n- Scalable hosting\n- Secure connections\n- Reliable uptime\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
     "Virtual Performance Space"
   ],
   "wiki_links": [
-    "Metaverse"
+    "Global Virtual Gatherings",
+    "Digital Twin",
+    "metaverse",
+    "Virtual Events",
+    "Virtual Environment"
   ],
   "ontology": {
     "term_id": "MV-9966",
@@ -16,9 +20,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Virtual 3D spaces within metaverse platforms designed to host events, conferences, exhibitions, and social gatherings, enabling global participation through customisable avatars and interactive environments that transcend physical location constraints.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,27 +34,37 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Virtual Environment"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Global Virtual Gatherings"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "metaverse"
+    ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Virtual Events",
+        "Digital Twin"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

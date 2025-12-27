@@ -1,13 +1,22 @@
 {
   "id": "Digital Art Application",
   "title": "Digital Art Application",
-  "content": "- ### OntologyBlock\n  id:: digital-art-application-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9846\n\t- source-domain:: mv\n\t- preferred-term:: Digital Art Application\n\t- status:: stub\n\t- owl:class:: mv:DigitalArtApplication\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: digital-art-application-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-art-application-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9846\n\t- source-domain:: mv\n\t- preferred-term:: Digital Art Application\n\t- definition:: Software platforms and tools enabling artists to create, manipulate, and distribute visual art using digital technologies, including generative AI systems, 3D modeling software, and NFT minting platforms that facilitate artistic expression and commerce in virtual environments.\n\t- status:: active\n\t- owl:class:: mv:DigitalArtApplication\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-art-application-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Creative Software]]\n\t\t- enables:: [[Digital Art Creation]], [[NFT Minting]], [[Virtual Exhibitions]]\n\t\t- requires:: [[Graphics Processing]], [[User Interface]], [[Storage Systems]]\n\t\t- related-to:: [[Generative AI Art]], [[3D Modeling]], [[NFT Marketplace]]\n- ## Technical Details\n\t- **Application Categories**:\n\t\t- Raster graphics: Photoshop, Procreate, Krita\n\t\t- Vector graphics: Illustrator, Affinity Designer\n\t\t- 3D modeling: Blender, ZBrush, Maya\n\t\t- Generative AI: Midjourney, DALL-E, Stable Diffusion\n\t- **Key Features**:\n\t\t- Layer-based non-destructive editing\n\t\t- Brush engines with pressure sensitivity\n\t\t- Real-time collaboration capabilities\n\t\t- Direct NFT minting integration\n\t- **2024 AI Integration**:\n\t\t- Text-to-image generation\n\t\t- Style transfer and artistic filters\n\t\t- Automated background removal and enhancement\n\t\t- AI-assisted composition suggestions\n\t- **Distribution Platforms**: OpenSea, Foundation, SuperRare, ArtStation\n- ## Applications\n\t- Professional illustration and concept art\n\t- NFT art creation and sales\n\t- Virtual gallery exhibitions\n\t- Game asset development\n\t- Social media content creation",
   "backlinks": [
     "ETSI_Domain_Application___Creative"
   ],
   "wiki_links": [
+    "Digital Art Creation",
+    "User Interface",
+    "Creative Software",
+    "NFT Minting",
     "metaverse",
-    "Metaverse"
+    "3D Modeling",
+    "Virtual Exhibitions",
+    "Generative AI Art",
+    "Storage Systems",
+    "NFT Marketplace",
+    "Graphics Processing"
   ],
   "ontology": {
     "term_id": "MV-9846",
@@ -17,9 +26,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Software platforms and tools enabling artists to create, manipulate, and distribute visual art using digital technologies, including generative AI systems, 3D modeling software, and NFT minting platforms that facilitate artistic expression and commerce in virtual environments.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +41,21 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Creative Software"
     ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Graphics Processing",
+      "User Interface",
+      "Storage Systems"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Digital Art Creation",
+      "NFT Minting",
+      "Virtual Exhibitions"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +65,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Generative AI Art",
+        "3D Modeling",
+        "NFT Marketplace"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

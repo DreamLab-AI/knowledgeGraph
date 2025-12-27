@@ -11,16 +11,18 @@
     "User Interface Standard",
     "Standards Conformance Testing",
     "Standards Validation",
+    "Xr Accessibility Standards",
     "Technical Standards",
-    "Verifiable Credential Standard"
+    "Verifiable Credential Standard",
+    "Vocabulary Governance"
   ],
   "wiki_links": [
-    "Standards Conformance",
-    "metaverse",
-    "Interoperability",
     "Standards Compliance",
-    "Technical Standards",
-    "Metaverse"
+    "Metaverse",
+    "Interoperability",
+    "metaverse",
+    "Standards Conformance",
+    "Technical Standards"
   ],
   "ontology": {
     "term_id": "MV-10076",

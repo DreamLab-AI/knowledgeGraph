@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0064
 	- source-domain:: rb
-	- preferred-term:: rb 0064 computed torque control
-	- status:: draft
+	- preferred-term:: Computed Torque Control
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0064computedtorquecontrol
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Computed torque control is a nonlinear control technique that uses the robot's dynamic model to compute the required joint torques for achieving desired trajectory tracking.
+	- owl:class:: rb:ComputedTorqueControl
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

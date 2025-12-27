@@ -1,13 +1,17 @@
 {
   "id": "Shared Knowledge Base",
   "title": "Shared Knowledge Base",
-  "content": "- ### OntologyBlock\n  id:: shared-knowledge-base-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10041\n\t- source-domain:: mv\n\t- preferred-term:: Shared Knowledge Base\n\t- status:: stub\n\t- owl:class:: mv:SharedKnowledgeBase\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: shared-knowledge-base-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: shared-knowledge-base-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10041\n\t- source-domain:: mv\n\t- preferred-term:: Shared Knowledge Base\n\t- status:: active\n\t- definition:: A collaborative knowledge repository enabling multiple agents or users to exchange, integrate, and query structured information using semantic web technologies, providing a common understanding of domain concepts through ontologies and linked data standards.\n\t- owl:class:: mv:SharedKnowledgeBase\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: shared-knowledge-base-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Knowledge Management System]]\n\t\t- related-to:: [[Semantic Web Standards]]\n\t\t- related-to:: [[Ontology Management]]\n\t\t- related-to:: [[Linked Data]]\n\t\t- enables:: [[Collaborative Knowledge Discovery]]\n\t- #### Key Features\n\t  collapsed:: true\n\t\t- Ontology-based knowledge representation\n\t\t- SPARQL query interface for retrieval\n\t\t- Cross-platform data integration\n\t\t- Semantic search capabilities\n\t\t- Version control for knowledge evolution\n\t- #### Applications\n\t  collapsed:: true\n\t\t- Computer-supported cooperative work\n\t\t- Enterprise knowledge management\n\t\t- AI agent coordination systems\n\t\t- Research collaboration platforms\n\t\t- Building information modelling integration",
   "backlinks": [
     "Collective Intelligence System"
   ],
   "wiki_links": [
+    "Linked Data",
+    "Knowledge Management System",
     "metaverse",
-    "Metaverse"
+    "Ontology Management",
+    "Semantic Web Standards",
+    "Collaborative Knowledge Discovery"
   ],
   "ontology": {
     "term_id": "MV-10041",
@@ -17,9 +21,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A collaborative knowledge repository enabling multiple agents or users to exchange, integrate, and query structured information using semantic web technologies, providing a common understanding of domain concepts through ontologies and linked data standards.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,13 +36,15 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Knowledge Management System"
     ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Collaborative Knowledge Discovery"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -48,11 +54,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Semantic Web Standards",
+        "Ontology Management",
+        "Linked Data"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

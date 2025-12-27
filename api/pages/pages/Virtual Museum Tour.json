@@ -1,13 +1,16 @@
 {
   "id": "Virtual Museum Tour",
   "title": "Virtual Museum Tour",
-  "content": "- ### OntologyBlock\n  id:: virtual-museum-tour-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10131\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Museum Tour\n\t- status:: stub\n\t- owl:class:: mv:VirtualMuseumTour\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: virtual-museum-tour-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-museum-tour-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10131\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Museum Tour\n\t- status:: active\n\t- definition:: An immersive digital experience that enables users to explore museum collections, exhibitions, and cultural heritage sites through VR, AR, 360-degree imagery, or interactive 3D environments, providing global access to art and artifacts regardless of physical location.\n\t- owl:class:: mv:VirtualMuseumTour\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Virtual Tour]]\n\t\t- related-to:: [[Cultural Heritage]]\n\t\t- related-to:: [[Digital Preservation]]\n\t\t- related-to:: [[Virtual Field Trip]]\n\t  id:: virtual-museum-tour-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual museum tours provide global access to cultural heritage through immersive digital experiences. Institutions worldwide have digitized collections and created virtual exhibitions accessible via web browsers, VR headsets, and mobile devices. These experiences democratize access to art and history while preserving fragile artifacts digitally.\n- ## Technical Details\n\t- ### Tour Formats\n\t\t- **360-Degree Photography**: Panoramic room navigation\n\t\t- **3D Reconstructions**: Full volumetric environment exploration\n\t\t- **VR Experiences**: Immersive headset-based tours\n\t\t- **AR Overlays**: Enhanced physical visits with digital content\n\t- ### Content Features\n\t\t- High-resolution artifact imagery\n\t\t- Audio guides and narration\n\t\t- Interactive information hotspots\n\t\t- Curator-led virtual walkthroughs\n\t- ### Platform Examples\n\t\t- Google Arts & Culture\n\t\t- Matterport museum scans\n\t\t- Smithsonian Open Access\n\t\t- British Museum virtual galleries\n- ## Applications\n\t- Distance learning and education\n\t- Cultural heritage preservation\n\t- Accessibility for mobility-impaired visitors\n\t- Exhibition promotion and marketing\n\t- Research and scholarly access",
   "backlinks": [
     "Cultural Heritage XR Experience"
   ],
   "wiki_links": [
     "metaverse",
-    "Metaverse"
+    "Virtual Field Trip",
+    "Virtual Tour",
+    "Cultural Heritage",
+    "Digital Preservation"
   ],
   "ontology": {
     "term_id": "MV-10131",
@@ -17,9 +20,9 @@
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "An immersive digital experience that enables users to explore museum collections, exhibitions, and cultural heritage sites through VR, AR, 360-degree imagery, or interactive 3D environments, providing global access to art and artifacts regardless of physical location.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,7 +35,7 @@
     "owl_role": null,
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Metaverse"
+      "Virtual Tour"
     ],
     "has_part": [],
     "is_part_of": [],
@@ -48,11 +51,17 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Cultural Heritage",
+        "Digital Preservation",
+        "Virtual Field Trip"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"
       ]

@@ -4,14 +4,12 @@
 	- ontology:: true
 	- term-id:: RB-0056
 	- source-domain:: rb
-	- preferred-term:: rb 0056 impedance control
-	- status:: draft
+	- preferred-term:: Impedance Control
+	- status:: active
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
-	- owl:class:: mv:rb0056impedancecontrol
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
+	- definition:: Impedance control is a robot control strategy that regulates the dynamic relationship between force and motion, enabling compliant interaction with the environment through specified mechanical impedance behaviour.
+	- owl:class:: rb:ImpedanceControl
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata
