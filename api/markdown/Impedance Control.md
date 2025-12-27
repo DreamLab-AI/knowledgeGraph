@@ -2,21 +2,21 @@
   id:: rb-0056-impedance-control-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0941
+	- term-id:: RB-0941
 	- domain-prefix:: RB
 	- sequence-number:: 0056
 	- filename-history:: ["rb-0056-impedance-control.md"]
 	- preferred-term:: Impedance Control
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Impedance Control** - Impedance Control in robotics systems
 	- maturity:: draft
-	- owl:class:: mv:rb0056impedancecontrol
+	- owl:class:: rb:ImpedanceControl
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0056 impedance control
 	- ### Primary Definition
 **Impedance Control** - Impedance Control in robotics systems
@@ -216,4 +216,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

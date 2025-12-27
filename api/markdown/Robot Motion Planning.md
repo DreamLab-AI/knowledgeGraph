@@ -2,18 +2,18 @@
   id:: rb-0049-motion-planning-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0898
+	- term-id:: RB-0898
 	- preferred-term:: rb 0049 motion planning
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Motion Planning** - Motion Planning in robotics systems
 	- maturity:: draft
-	- owl:class:: mv:rb0049motionplanning
+	- owl:class:: rb:RobotMotionPlanning
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0049 motion planning
 	- ### Primary Definition
 **Motion Planning** - Motion Planning in robotics systems
@@ -259,4 +259,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

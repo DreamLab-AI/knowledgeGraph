@@ -2,17 +2,17 @@
   id:: rb-0039-stiffness-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0878
-	- source-domain:: mv
+	- term-id:: RB-0878
+	- source-domain:: rb
 	- preferred-term:: Stiffness
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition
 	- maturity:: draft
-	- owl:class:: mv:rb0039stiffness
+	- owl:class:: rb:Stiffness
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata
 
@@ -30,4 +30,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

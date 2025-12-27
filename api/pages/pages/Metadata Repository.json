@@ -7,10 +7,10 @@
     "Digital Taxonomy Registry"
   ],
   "wiki_links": [
-    "Data Discovery",
     "Data Catalog",
-    "Metadata Management",
     "Data Management",
+    "Data Discovery",
+    "Metadata Management",
     "metaverse"
   ],
   "ontology": {

@@ -2,21 +2,21 @@
   id:: rb-0007-collaborative-robot-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0856
+	- term-id:: RB-0856
 	- domain-prefix:: RB
 	- sequence-number:: 0007
 	- filename-history:: ["rb-0007-collaborative-robot.md"]
 	- preferred-term:: Collaborative Robot
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Collaborative Robot** - Collaborative Robot in robotics systems
 	- maturity:: draft
-	- owl:class:: mv:rb0007collaborativerobot
+	- owl:class:: rb:CollaborativeRobot
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0007 collaborative robot
 	- ### Primary Definition
 **Collaborative Robot** - Collaborative Robot in robotics systems
@@ -226,4 +226,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

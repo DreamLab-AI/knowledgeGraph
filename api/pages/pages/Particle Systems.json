@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: particle-systems-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10001\n\t- source-domain:: metaverse\n\t- preferred-term:: Particle Systems\n\t- status:: active\n\t- definition:: The collective infrastructure and tooling for creating and managing particle-based visual effects in game engines and VFX software, encompassing emitter configuration, physics integration, and real-time or offline rendering pipelines.\n\t- owl:class:: mv:ParticleSystems\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: particle-systems-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[VFX Tools]]\n\t\t- related-to:: [[Particle System]]\n\t\t- related-to:: [[Game Engine]]\n\t\t- related-to:: [[Visual Effects Pipeline]]\n\t\t- enables:: [[Real Time VFX]]\n\t- #### Popular Tools\n\t  collapsed:: true\n\t\t- Houdini for industry-leading VFX simulation\n\t\t- Unity VFX Graph for real-time GPU particles\n\t\t- Unreal Niagara for advanced game effects\n\t\t- Blender particle and simulation tools\n\t\t- After Effects particle plugins for motion graphics\n\t- #### Capabilities\n\t  collapsed:: true\n\t\t- Millions of particles with GPU acceleration\n\t\t- Physics-based behavior and collision detection\n\t\t- Procedural generation and noise-driven motion\n\t\t- Integration with lighting and shadows\n\t\t- Event-driven spawning and particle communication",
   "backlinks": [],
   "wiki_links": [
-    "Particle System",
-    "Game Engine",
-    "Real Time VFX",
     "VFX Tools",
+    "Game Engine",
+    "Particle System",
     "Visual Effects Pipeline",
+    "Real Time VFX",
     "metaverse"
   ],
   "ontology": {

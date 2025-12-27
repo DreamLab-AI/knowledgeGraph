@@ -2,21 +2,21 @@
   id:: rb-0046-robot-control-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0857
+	- term-id:: RB-0857
 	- domain-prefix:: RB
 	- sequence-number:: 0046
 	- filename-history:: ["rb-0046-robot-control.md"]
 	- preferred-term:: Robot Control
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Robot Control** - Robot Control in robotics systems
 	- maturity:: draft
-	- owl:class:: mv:rb0046robotcontrol
+	- owl:class:: rb:RobotControl
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0046 robot control
 	- ### Primary Definition
 **Robot Control** - Robot Control in robotics systems
@@ -243,4 +243,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

@@ -8,11 +8,11 @@
   ],
   "wiki_links": [
     "Uncertainty Sampling",
-    "Human-in-the-Loop",
-    "Labeling Cost",
-    "Machine Learning",
     "Online Learning",
+    "Human-in-the-Loop",
+    "Machine Learning",
     "Semi-Supervised Learning",
+    "Labeling Cost",
     "Data-Efficient Learning"
   ],
   "ontology": {

@@ -2,21 +2,21 @@
   id:: rb-0074-gps-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0074
+	- term-id:: RB-0074
 	- domain-prefix:: RB
 	- sequence-number:: 0074
 	- filename-history:: ["rb-0074-gps.md"]
 	- preferred-term:: Gps
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **GPS** - GPS in robotics systems
 	- maturity:: draft
-	- owl:class:: mv:rb0074gps
+	- owl:class:: rb:Gps
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0074 gps
 	- ### Primary Definition
 **GPS** - GPS in robotics systems
@@ -263,4 +263,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

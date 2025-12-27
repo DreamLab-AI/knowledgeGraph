@@ -2,21 +2,21 @@
   id:: rb-0081-gyroscope-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0081
+	- term-id:: RB-0081
 	- domain-prefix:: RB
 	- sequence-number:: 0081
 	- filename-history:: ["rb-0081-gyroscope.md"]
 	- preferred-term:: Gyroscope
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Gyroscope** - Gyroscope in robotics systems
 	- maturity:: draft
-	- owl:class:: mv:rb0081gyroscope
+	- owl:class:: rb:Gyroscope
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0081 gyroscope
 	- ### Primary Definition
 **Gyroscope** - Gyroscope in robotics systems
@@ -226,4 +226,4 @@ No dated news or announcements remain; all facts are current as of late 2025. Th
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

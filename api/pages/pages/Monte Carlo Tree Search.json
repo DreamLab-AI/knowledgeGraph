@@ -6,11 +6,11 @@
     "Search Algorithms"
   ],
   "wiki_links": [
-    "Minimax Algorithm",
     "Search Algorithms",
+    "Minimax Algorithm",
+    "AlphaGo",
     "Random Sampling",
     "Game Playing AI",
-    "AlphaGo",
     "Reinforcement Learning"
   ],
   "ontology": {

@@ -2,17 +2,17 @@
   id:: rb-0036-resolution-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0870
-	- source-domain:: mv
+	- term-id:: RB-0870
+	- source-domain:: rb
 	- preferred-term:: Resolution
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition
 	- maturity:: draft
-	- owl:class:: mv:rb0036resolution
+	- owl:class:: rb:Resolution
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Academic Context
 
@@ -66,4 +66,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

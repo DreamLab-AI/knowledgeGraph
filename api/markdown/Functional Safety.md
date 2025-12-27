@@ -2,21 +2,21 @@
   id:: rb-0102-functional-safety-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0102
+	- term-id:: RB-0102
 	- domain-prefix:: RB
 	- sequence-number:: 0102
 	- filename-history:: ["rb-0102-functional-safety.md"]
 	- preferred-term:: Functional Safety
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Functional Safety** - Functional Safety in robotics systems
 	- maturity:: draft
-	- owl:class:: mv:rb0102functionalsafety
+	- owl:class:: rb:FunctionalSafety
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0102 functional safety
 	- ### Primary Definition
 **Functional Safety** - Functional Safety in robotics systems
@@ -236,4 +236,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

@@ -8,10 +8,10 @@
   ],
   "wiki_links": [
     "Continuous Integration",
+    "Model Deployment",
     "MLOps",
     "Production ML Systems",
-    "metaverse",
-    "Model Deployment"
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9953",

@@ -2,21 +2,21 @@
   id:: rb-0012-wheeled-mobile-robot-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0825
+	- term-id:: RB-0825
 	- domain-prefix:: RB
 	- sequence-number:: 0012
 	- filename-history:: ["rb-0012-wheeled-mobile-robot.md"]
 	- preferred-term:: Wheeled Mobile Robot
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Wheeled Mobile Robot** - Wheeled Mobile Robot in robotics systems
 	- maturity:: draft
-	- owl:class:: mv:rb0012wheeledmobilerobot
+	- owl:class:: rb:WheeledMobileRobot
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0012 wheeled mobile robot
 	- ### Primary Definition
 **Wheeled Mobile Robot** - Wheeled Mobile Robot in robotics systems
@@ -259,4 +259,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

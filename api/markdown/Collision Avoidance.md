@@ -2,21 +2,21 @@
   id:: rb-0052-collision-avoidance-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0886
+	- term-id:: RB-0886
 	- domain-prefix:: RB
 	- sequence-number:: 0052
 	- filename-history:: ["rb-0052-collision-avoidance.md"]
 	- preferred-term:: Collision Avoidance
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Collision Avoidance** - Collision Avoidance in robotics systems
 	- maturity:: draft
-	- owl:class:: mv:rb0052collisionavoidance
+	- owl:class:: rb:CollisionAvoidance
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0052 collision avoidance
 	- ### Primary Definition
 **Collision Avoidance** - Collision Avoidance in robotics systems
@@ -249,4 +249,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

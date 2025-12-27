@@ -2,21 +2,21 @@
   id:: rb-0103-collaborative-operation-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0948
+	- term-id:: RB-0948
 	- domain-prefix:: RB
 	- sequence-number:: 0103
 	- filename-history:: ["rb-0103-collaborative-operation.md"]
 	- preferred-term:: Collaborative Operation
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Collaborative Operation** - Collaborative Operation in robotics systems
 	- maturity:: draft
-	- owl:class:: mv:rb0103collaborativeoperation
+	- owl:class:: rb:CollaborativeOperation
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0103 collaborative operation
 	- ### Primary Definition
 **Collaborative Operation** - Collaborative Operation in robotics systems
@@ -247,4 +247,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

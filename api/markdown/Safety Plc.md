@@ -2,17 +2,17 @@
   id:: safety-plc-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0099
-	- source-domain:: mv
+	- term-id:: RB-0099
+	- source-domain:: rb
 	- preferred-term:: Safety Plc
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition
 	- maturity:: draft
-	- owl:class:: mv:rb0099safetyplc
+	- owl:class:: rb:SafetyPlc
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Safety Plc
 
@@ -90,4 +90,4 @@ Safety Plc refers to ### Primary Definition
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

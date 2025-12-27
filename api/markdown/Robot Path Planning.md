@@ -2,18 +2,18 @@
   id:: rb-0050-path-planning-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0050
+	- term-id:: RB-0050
 	- preferred-term:: rb 0050 path planning
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Path Planning** - Path Planning in robotics systems
 	- maturity:: draft
-	- owl:class:: mv:rb0050pathplanning
+	- owl:class:: rb:RobotPathPlanning
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0050 path planning
 	- ### Primary Definition
 **Path Planning** - Path Planning in robotics systems
@@ -286,4 +286,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

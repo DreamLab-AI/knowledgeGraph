@@ -2,21 +2,21 @@
   id:: rb-0021-robot-kinematics-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0842
+	- term-id:: RB-0842
 	- domain-prefix:: RB
 	- sequence-number:: 0021
 	- filename-history:: ["rb-0021-robot-kinematics.md"]
 	- preferred-term:: Robot Kinematics
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Robot Kinematics** - Study of robot motion without considering forces
 	- maturity:: draft
-	- owl:class:: mv:rb0021robotkinematics
+	- owl:class:: rb:RobotKinematics
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0021 robot kinematics
 	- ### Primary Definition
 **Robot Kinematics** - Study of robot motion without considering forces
@@ -217,4 +217,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

@@ -2,17 +2,17 @@
   id:: rb-0033-payload-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0829
-	- source-domain:: metaverse
+	- term-id:: RB-0829
+	- source-domain:: rb
 	- preferred-term:: Payload
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition
 	- maturity:: draft
-	- owl:class:: mv:rb0033payload
+	- owl:class:: rb:Payload
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 
 ## The Core Problem
 

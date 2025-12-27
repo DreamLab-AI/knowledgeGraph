@@ -2,17 +2,17 @@
   id:: rb-0096-safeguarding-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0096
-	- source-domain:: mv
+	- term-id:: RB-0096
+	- source-domain:: rb
 	- preferred-term:: Safeguarding
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition
 	- maturity:: draft
-	- owl:class:: mv:rb0096safeguarding
+	- owl:class:: rb:Safeguarding
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Academic Context
 
@@ -72,4 +72,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

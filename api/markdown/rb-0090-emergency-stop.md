@@ -3,13 +3,13 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0090
-	- source-domain:: system
+	- source-domain:: rb
 	- preferred-term:: rb 0090 emergency stop
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition
 	- maturity:: draft
-	- owl:class:: mv:rb0090emergencystop
+	- owl:class:: rb:EmergencyStop
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]

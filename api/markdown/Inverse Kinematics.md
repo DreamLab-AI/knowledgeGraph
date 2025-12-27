@@ -2,21 +2,21 @@
   id:: rb-0029-inverse-kinematics-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0907
+	- term-id:: RB-0907
 	- domain-prefix:: RB
 	- sequence-number:: 0029
 	- filename-history:: ["rb-0029-inverse-kinematics.md"]
 	- preferred-term:: Inverse Kinematics
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Inverse Kinematics** - Computing joint angles from desired end-effector pose
 	- maturity:: draft
-	- owl:class:: mv:rb0029inversekinematics
+	- owl:class:: rb:InverseKinematics
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0029 inverse kinematics
 	- ### Primary Definition
 **Inverse Kinematics** - Computing joint angles from desired end-effector pose
@@ -232,4 +232,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

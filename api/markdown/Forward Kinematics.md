@@ -2,21 +2,21 @@
   id:: rb-0028-forward-kinematics-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0830
+	- term-id:: RB-0830
 	- domain-prefix:: RB
 	- sequence-number:: 0028
 	- filename-history:: ["rb-0028-forward-kinematics.md"]
 	- preferred-term:: Forward Kinematics
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Forward Kinematics** - Computing end-effector pose from joint angles
 	- maturity:: draft
-	- owl:class:: mv:rb0028forwardkinematics
+	- owl:class:: rb:ForwardKinematics
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0028 forward kinematics
 	- ### Primary Definition
 **Forward Kinematics** - Computing end-effector pose from joint angles
@@ -234,4 +234,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

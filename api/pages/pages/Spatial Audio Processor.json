@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "HRTF Processing",
-    "Binaural Audio",
     "3D Sound Rendering",
     "Dolby Atmos",
-    "metaverse",
-    "Audio Processing System"
+    "Binaural Audio",
+    "Audio Processing System",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10052",

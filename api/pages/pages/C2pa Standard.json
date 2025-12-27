@@ -5,16 +5,16 @@
   "backlinks": [],
   "wiki_links": [
     "Technical Standard",
-    "Content Authenticity Initiative",
     "Authenticity Certification",
-    "Trust Model",
     "Content Provenance",
+    "Metadata Framework",
     "Media Verification",
-    "Cryptographic Signing",
     "Digital Signature",
     "Media Integrity",
+    "Trust Model",
+    "Content Authenticity Initiative",
     "metaverse",
-    "Metadata Framework"
+    "Cryptographic Signing"
   ],
   "ontology": {
     "term_id": "MV-9802",

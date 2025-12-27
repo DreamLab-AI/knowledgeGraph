@@ -8,8 +8,8 @@
   ],
   "wiki_links": [
     "Decision Tree",
-    "Search Algorithms",
     "Game Theory",
+    "Search Algorithms",
     "Adversarial Search",
     "Alpha-Beta Pruning",
     "Game Playing AI"

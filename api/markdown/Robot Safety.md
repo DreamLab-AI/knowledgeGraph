@@ -2,21 +2,21 @@
   id:: rb-0086-robot-safety-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0086
+	- term-id:: RB-0086
 	- domain-prefix:: RB
 	- sequence-number:: 0086
 	- filename-history:: ["rb-0086-robot-safety.md"]
 	- preferred-term:: Robot Safety
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Robot Safety** - Robot Safety in robotics systems
 	- maturity:: draft
-	- owl:class:: mv:rb0086robotsafety
+	- owl:class:: rb:RobotSafety
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0086 robot safety
 	- ### Primary Definition
 **Robot Safety** - Robot Safety in robotics systems
@@ -280,4 +280,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

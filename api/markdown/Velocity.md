@@ -2,21 +2,21 @@
   id:: rb-0044-velocity-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0901
+	- term-id:: RB-0901
 	- domain-prefix:: RB
 	- sequence-number:: 0044
 	- filename-history:: ["rb-0044-velocity.md"]
 	- preferred-term:: Velocity
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Velocity** - Rate of change of position
 	- maturity:: draft
-	- owl:class:: mv:rb0044velocity
+	- owl:class:: rb:Velocity
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0044 velocity
 	- ### Primary Definition
 **Velocity** - Rate of change of position
@@ -267,4 +267,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

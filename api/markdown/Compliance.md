@@ -2,17 +2,17 @@
   id:: rb-0038-compliance-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0928
-	- source-domain:: mv
+	- term-id:: RB-0928
+	- source-domain:: rb
 	- preferred-term:: Compliance
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition
 	- maturity:: draft
-	- owl:class:: mv:rb0038compliance
+	- owl:class:: rb:Compliance
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata
 
@@ -30,4 +30,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

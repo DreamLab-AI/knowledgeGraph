@@ -2,21 +2,21 @@
   id:: rb-0017-rescue-robot-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0942
+	- term-id:: RB-0942
 	- domain-prefix:: RB
 	- sequence-number:: 0017
 	- filename-history:: ["rb-0017-rescue-robot.md"]
 	- preferred-term:: Rescue Robot
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Rescue Robot** - Rescue Robot in robotics systems
 	- maturity:: draft
-	- owl:class:: mv:rb0017rescuerobot
+	- owl:class:: rb:RescueRobot
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0017 rescue robot
 	- ### Primary Definition
 **Rescue Robot** - Rescue Robot in robotics systems
@@ -232,4 +232,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

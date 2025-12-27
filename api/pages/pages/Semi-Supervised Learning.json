@@ -7,10 +7,10 @@
   ],
   "wiki_links": [
     "Active Learning",
-    "Machine Learning",
-    "Co-Training",
     "Supervised Learning",
     "Self-Training",
+    "Machine Learning",
+    "Co-Training",
     "Unsupervised Learning",
     "Data-Efficient Learning"
   ],

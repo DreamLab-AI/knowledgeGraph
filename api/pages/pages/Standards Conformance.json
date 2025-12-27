@@ -11,10 +11,10 @@
   ],
   "wiki_links": [
     "Standards",
-    "Standards Conformance Testing",
-    "Interoperability",
     "Standards Compliance",
-    "metaverse"
+    "Interoperability",
+    "metaverse",
+    "Standards Conformance Testing"
   ],
   "ontology": {
     "term_id": "MV-10073",

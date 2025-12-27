@@ -2,17 +2,17 @@
   id:: rb-0024-workspace-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0947
-	- source-domain:: mv
+	- term-id:: RB-0947
+	- source-domain:: rb
 	- preferred-term:: Workspace
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition
 	- maturity:: draft
-	- owl:class:: mv:rb0024workspace
+	- owl:class:: rb:Workspace
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Academic Context
 
@@ -104,4 +104,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

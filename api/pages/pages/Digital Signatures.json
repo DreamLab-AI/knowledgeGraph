@@ -9,15 +9,15 @@
     "SHA-256"
   ],
   "wiki_links": [
-    "Signature Algorithm",
-    "Authentication",
-    "Hash Function",
-    "Blockchain Security",
-    "Cryptography",
     "Smart Contracts",
+    "Blockchain Security",
+    "Private Key",
+    "Cryptography",
+    "Signature Algorithm",
     "Public Key Infrastructure",
     "Non-Repudiation",
-    "Private Key",
+    "Hash Function",
+    "Authentication",
     "metaverse",
     "Data Integrity"
   ],

@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: therapeutic-vr-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10081\n\t- source-domain:: mv\n\t- preferred-term:: Therapeutic VR\n\t- status:: active\n\t- definition:: The application of virtual reality technology for clinical therapeutic purposes, including treatment of mental health conditions, pain management, rehabilitation, and behavioral health interventions through immersive, interactive digital environments.\n\t- owl:class:: mv:TherapeuticVr\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Virtual Reality Applications]]\n\t\t- related-to:: [[Mental Health]]\n\t\t- related-to:: [[Healthcare Technology]]\n\t\t- related-to:: [[Digital Therapeutics]]\n\t  id:: therapeutic-vr-relationships\n\t  collapsed:: true\n- ## Overview\n\t- VR is being used to treat anxiety, PTSD, substance use disorders, autism, phobias, and various mood disorders. The FDA granted marketing authorization for VR therapy in 2021, and CMS created a billing code for VR cognitive behavioral therapy devices effective April 2023.\n- ## Technical Details\n\t- ### Treatment Applications\n\t\t- **Exposure Therapy**: Customizable VR scenarios for phobia and PTSD treatment\n\t\t- **Cognitive Behavioral Therapy**: Interactive VR environments for therapeutic interventions\n\t\t- **Pain Management**: Distraction and relaxation therapy for chronic pain\n\t\t- **Rehabilitation**: Physical and occupational therapy in virtual environments\n\t- ### Key Developments (2024)\n\t\t- **RelieVRx**: FDA-authorized VR program for chronic lower back pain with HCPSC billing code\n\t\t- **Telehealth Integration**: VR combined with telepsychiatry for remote therapy\n\t\t- **Avatar-Based Therapy**: Anonymity and immersion for patients avoiding traditional care\n\t- ### Clinical Benefits\n\t\t- Controlled, reproducible therapeutic scenarios\n\t\t- Individualized treatment customization\n\t\t- Safe environment for exposure therapy\n\t\t- Measurable physiological response tracking\n- ## Applications\n\t- PTSD treatment for veterans and trauma survivors\n\t- Phobia desensitization programs\n\t- Palliative care mental health support\n\t- Addiction treatment and prevention\n\t- Anxiety and depression interventions",
   "backlinks": [],
   "wiki_links": [
-    "Virtual Reality Applications",
-    "Healthcare Technology",
-    "metaverse",
     "Digital Therapeutics",
-    "Mental Health"
+    "Virtual Reality Applications",
+    "Mental Health",
+    "metaverse",
+    "Healthcare Technology"
   ],
   "ontology": {
     "term_id": "MV-10081",

@@ -3,13 +3,13 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0088
-	- source-domain:: system
+	- source-domain:: rb
 	- preferred-term:: rb 0088 iso 13482 compliance
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition
 	- maturity:: draft
-	- owl:class:: mv:rb0088iso13482compliance
+	- owl:class:: rb:Iso13482Compliance
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]

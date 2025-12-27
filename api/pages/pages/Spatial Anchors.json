@@ -11,12 +11,12 @@
     "Physical Virtual Registration"
   ],
   "wiki_links": [
-    "Augmented Reality",
     "Persistent AR Placement",
     "SLAM",
+    "Location Based Services",
     "AR Technology",
-    "metaverse",
-    "Location Based Services"
+    "Augmented Reality",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10051",

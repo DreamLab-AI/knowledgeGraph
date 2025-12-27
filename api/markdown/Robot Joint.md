@@ -2,21 +2,21 @@
   id:: rb-0026-robot-joint-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0869
+	- term-id:: RB-0869
 	- domain-prefix:: RB
 	- sequence-number:: 0026
 	- filename-history:: ["rb-0026-robot-joint.md"]
 	- preferred-term:: Robot Joint
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Robot Joint** - Articulation between robot links allowing relative motion
 	- maturity:: draft
-	- owl:class:: mv:rb0026robotjoint
+	- owl:class:: rb:RobotJoint
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0026 robot joint
 	- ### Primary Definition
 **Robot Joint** - Articulation between robot links allowing relative motion
@@ -232,4 +232,4 @@ A robotic joint like rb 0026 might not win a beauty contest, but it certainly ea
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

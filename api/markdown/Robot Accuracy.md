@@ -2,18 +2,18 @@
   id:: rb-0035-accuracy-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0877
+	- term-id:: RB-0877
 	- preferred-term:: rb 0035 accuracy
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Accuracy** - Difference between commanded and actual position
 	- maturity:: draft
-	- owl:class:: mv:rb0035accuracy
+	- owl:class:: rb:RobotAccuracy
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0035 accuracy
 	- ### Primary Definition
 **Accuracy** - Difference between commanded and actual position
@@ -208,4 +208,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: skos-vocabulary-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10045\n\t- source-domain:: mv\n\t- preferred-term:: Skos Vocabulary\n\t- status:: active\n\t- definition:: A W3C recommendation providing an RDF-based data model for representing thesauri, taxonomies, classification schemes, and other structured controlled vocabularies, enabling publication and linking of knowledge organization systems on the semantic web through standardized concepts and relationships.\n\t- owl:class:: mv:SkosVocabulary\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: skos-vocabulary-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Knowledge Organization System]]\n\t\t- related-to:: [[Semantic Web Standards]]\n\t\t- related-to:: [[RDF Vocabulary]]\n\t\t- related-to:: [[Ontology Design]]\n\t\t- enables:: [[Linked Vocabulary Publishing]]\n\t- #### Core Components\n\t  collapsed:: true\n\t\t- skos:Concept for vocabulary terms\n\t\t- skos:prefLabel for preferred labels\n\t\t- skos:broader and skos:narrower hierarchies\n\t\t- skos:related for associative relationships\n\t\t- skos:ConceptScheme for vocabulary grouping\n\t- #### Implementations\n\t  collapsed:: true\n\t\t- EuroVoc multilingual thesaurus\n\t\t- AGROVOC agricultural vocabulary\n\t\t- Library of Congress Subject Headings\n\t\t- GEMET environmental thesaurus\n\t\t- DBpedia concept mappings",
   "backlinks": [],
   "wiki_links": [
+    "Linked Vocabulary Publishing",
     "Ontology Design",
+    "Knowledge Organization System",
     "RDF Vocabulary",
     "Semantic Web Standards",
-    "metaverse",
-    "Linked Vocabulary Publishing",
-    "Knowledge Organization System"
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10045",

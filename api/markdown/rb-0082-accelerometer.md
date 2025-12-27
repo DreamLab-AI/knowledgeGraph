@@ -3,13 +3,13 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0082
-	- source-domain:: system
+	- source-domain:: rb
 	- preferred-term:: rb 0082 accelerometer
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition
 	- maturity:: draft
-	- owl:class:: mv:rb0082accelerometer
+	- owl:class:: rb:Accelerometer
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]

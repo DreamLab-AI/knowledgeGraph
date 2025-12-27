@@ -2,21 +2,21 @@
   id:: rb-0040-backlash-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0887
+	- term-id:: RB-0887
 	- domain-prefix:: RB
 	- sequence-number:: 0040
 	- filename-history:: ["rb-0040-backlash.md"]
 	- preferred-term:: Backlash
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Backlash** - Lost motion due to gaps in mechanical transmission
 	- maturity:: draft
-	- owl:class:: mv:rb0040backlash
+	- owl:class:: rb:Backlash
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0040 backlash
 	- ### Primary Definition
 **Backlash** - Lost motion due to gaps in mechanical transmission
@@ -269,4 +269,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

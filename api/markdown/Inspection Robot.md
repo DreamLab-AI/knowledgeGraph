@@ -2,21 +2,21 @@
   id:: rb-0018-inspection-robot-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0905
+	- term-id:: RB-0905
 	- domain-prefix:: RB
 	- sequence-number:: 0018
 	- filename-history:: ["rb-0018-inspection-robot.md"]
 	- preferred-term:: Inspection Robot
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Inspection Robot** - Inspection Robot in robotics systems
 	- maturity:: draft
-	- owl:class:: mv:rb0018inspectionrobot
+	- owl:class:: rb:InspectionRobot
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0018 inspection robot
 	- ### Primary Definition
 **Inspection Robot** - Inspection Robot in robotics systems
@@ -263,4 +263,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

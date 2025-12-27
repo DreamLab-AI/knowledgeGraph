@@ -2,21 +2,21 @@
   id:: rb-0041-inertia-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0872
+	- term-id:: RB-0872
 	- domain-prefix:: RB
 	- sequence-number:: 0041
 	- filename-history:: ["rb-0041-inertia.md"]
 	- preferred-term:: Inertia
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Inertia** - Resistance to changes in motion state
 	- maturity:: draft
-	- owl:class:: mv:rb0041inertia
+	- owl:class:: rb:Inertia
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0041 inertia
 	- ### Primary Definition
 **Inertia** - Resistance to changes in motion state
@@ -259,4 +259,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

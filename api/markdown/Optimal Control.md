@@ -2,21 +2,21 @@
   id:: rb-0060-optimal-control-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0858
+	- term-id:: RB-0858
 	- domain-prefix:: RB
 	- sequence-number:: 0060
 	- filename-history:: ["rb-0060-optimal-control.md"]
 	- preferred-term:: Optimal Control
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Optimal Control** - Optimal Control in robotics systems
 	- maturity:: draft
-	- owl:class:: mv:rb0060optimalcontrol
+	- owl:class:: rb:OptimalControl
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0060 optimal control
 	- ### Primary Definition
 **Optimal Control** - Optimal Control in robotics systems
@@ -252,4 +252,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

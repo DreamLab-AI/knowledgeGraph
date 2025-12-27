@@ -2,21 +2,21 @@
   id:: rb-0019-exoskeleton-robot-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0931
+	- term-id:: RB-0931
 	- domain-prefix:: RB
 	- sequence-number:: 0019
 	- filename-history:: ["rb-0019-exoskeleton-robot.md"]
 	- preferred-term:: Exoskeleton Robot
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Exoskeleton Robot** - Exoskeleton Robot in robotics systems
 	- maturity:: draft
-	- owl:class:: mv:rb0019exoskeletonrobot
+	- owl:class:: rb:ExoskeletonRobot
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0019 exoskeleton robot
 	- ### Primary Definition
 **Exoskeleton Robot** - Exoskeleton Robot in robotics systems
@@ -220,4 +220,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

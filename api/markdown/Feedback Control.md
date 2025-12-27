@@ -2,21 +2,21 @@
   id:: rb-0047-feedback-control-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0834
+	- term-id:: RB-0834
 	- domain-prefix:: RB
 	- sequence-number:: 0047
 	- filename-history:: ["rb-0047-feedback-control.md"]
 	- preferred-term:: Feedback Control
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Feedback Control** - Feedback Control in robotics systems
 	- maturity:: draft
-	- owl:class:: mv:rb0047feedbackcontrol
+	- owl:class:: rb:FeedbackControl
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0047 feedback control
 	- ### Primary Definition
 **Feedback Control** - Feedback Control in robotics systems
@@ -256,4 +256,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

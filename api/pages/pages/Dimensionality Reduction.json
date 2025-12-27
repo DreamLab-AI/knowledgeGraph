@@ -6,15 +6,15 @@
     "Feature Engineering"
   ],
   "wiki_links": [
-    "Feature Selection",
     "PCA",
-    "Feature Engineering",
+    "Data Visualization",
+    "Machine Learning",
     "Computational Efficiency",
     "t-SNE",
-    "Curse of Dimensionality",
-    "Machine Learning",
+    "Feature Selection",
     "Unsupervised Learning",
-    "Data Visualization",
+    "Feature Engineering",
+    "Curse of Dimensionality",
     "UMAP"
   ],
   "ontology": {

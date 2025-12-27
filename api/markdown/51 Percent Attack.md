@@ -7,7 +7,7 @@
   - term-id:: BC-9981
   - preferred-term:: 51% Attack
   - source-domain:: bc
-  - owl:class:: bc:51Attack
+  - owl:class:: bc:FiftyOnePercentAttack
   - status:: draft
 
 ### Key Characteristics

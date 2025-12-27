@@ -6,11 +6,11 @@
     "Eye Tracking"
   ],
   "wiki_links": [
-    "Tracking Hardware",
-    "Foveated Rendering",
-    "Eye Tracking System",
     "Infrared Camera",
-    "metaverse"
+    "Eye Tracking System",
+    "metaverse",
+    "Tracking Hardware",
+    "Foveated Rendering"
   ],
   "ontology": {
     "term_id": "MV-9931",

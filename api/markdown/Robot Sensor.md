@@ -2,21 +2,21 @@
   id:: rb-0066-robot-sensor-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0880
+	- term-id:: RB-0880
 	- domain-prefix:: RB
 	- sequence-number:: 0066
 	- filename-history:: ["rb-0066-robot-sensor.md"]
 	- preferred-term:: Robot Sensor
-	- source-domain:: mv
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Robot Sensor** - Robot Sensor in robotics systems
 	- maturity:: draft
-	- owl:class:: mv:rb0066robotsensor
+	- owl:class:: rb:RobotSensor
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0066 robot sensor
 	- ### Primary Definition
 **Robot Sensor** - Robot Sensor in robotics systems
@@ -231,4 +231,4 @@
 - **Regional Context**: UK/North England where applicable
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Robotics]]

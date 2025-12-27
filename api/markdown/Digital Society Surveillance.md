@@ -21,7 +21,7 @@
   - term-id:: BC-9896
   - preferred-term:: 2
   - source-domain:: bc
-  - owl:class:: bc:2
+  - owl:class:: bc:DigitalSocietySurveillance
   - status:: draft
 
 ### Overview of Government Data Acquisition Practices

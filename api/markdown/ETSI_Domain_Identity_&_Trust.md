@@ -9,7 +9,7 @@
 	- public-access:: true
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
-	- owl:class:: mv:ETSI_Domain_Identity_&_Trust
+	- owl:class:: mv:ETSI_Domain_Identity_And_Trust
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]

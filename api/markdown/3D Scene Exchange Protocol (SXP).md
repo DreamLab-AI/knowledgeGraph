@@ -9,7 +9,7 @@
 	- public-access:: true
 	- definition:: open standard enabling interoperable transfer of 3D scene graphs, materials, and animations.
 	- maturity:: draft
-	- owl:class:: mv:3DSceneExchangeProtocol(SXP)
+	- owl:class:: mv:ThreeDSceneExchangeProtocol
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
