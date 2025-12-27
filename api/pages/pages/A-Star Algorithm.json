@@ -6,13 +6,13 @@
     "Search Algorithms"
   ],
   "wiki_links": [
+    "Route Planning",
     "Search Algorithms",
-    "Dijkstra's Algorithm",
+    "Heuristic Methods",
     "Priority Queue",
     "Pathfinding",
-    "Route Planning",
-    "Heuristic Methods",
-    "Graph Theory"
+    "Graph Theory",
+    "Dijkstra's Algorithm"
   ],
   "ontology": {
     "term_id": "AI-1004",
