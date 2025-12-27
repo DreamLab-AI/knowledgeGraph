@@ -5,6 +5,7 @@
   - preferred-term:: Feature Engineering
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:FeatureEngineering
 
 ### Relationships
 - is-subclass-of:: [[Data Preprocessing]]

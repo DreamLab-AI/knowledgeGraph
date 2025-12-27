@@ -5,11 +5,14 @@ id:: digital-rights-management-extended-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: DT-0276
+  - source-domain:: bc
+  - owl:class:: bc:DigitalRightsManagement(extended)
   - preferred-term:: Digital Rights Management (Extended)
   - status:: draft
   - definition:: A comprehensive virtual system for protecting, licensing, and enforcing usage rights for digital content through encryption, access control, and automated rights enforcement mechanisms.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Content Protection Infrastructure]]
 - has-part:: [[Watermarking Service]]
 - has-part:: [[Access Control Module]]

@@ -5,6 +5,8 @@ id:: physics-engine-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: DT-0118
+  - source-domain:: mv
+  - owl:class:: mv:PhysicsEngine
   - preferred-term:: Physics Engine
   - definition:: Software component that simulates physical interactions, constraints, and dynamics in real-time for virtual environments.
 
@@ -38,7 +40,7 @@ id:: physics-engine-ontology
 - depends-on:: [[3D Engine]]
 - depends-on:: [[Animation System]]
 - depends-on:: [[Rendering Pipeline]]
-- dt:uses:: [[Machine Learning]]
-- dt:enables:: [[VirtualWorld]]
-- dt:enables:: [[Digital Twin]]
+- mv:uses:: [[Machine Learning]]
+- mv:enables:: [[VirtualWorld]]
+- mv:enables:: [[Digital Twin]]
 

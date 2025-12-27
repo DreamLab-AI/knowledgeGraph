@@ -7,6 +7,8 @@ id:: immersive-audio-system-ontology
   - term-id:: MV-9920
   - preferred-term:: Immersive Audio System
   - source-domain:: mv
+  - owl:class:: mv:ImmersiveAudioSystem
   - status:: stub
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]

@@ -8,6 +8,7 @@ AI-0446-latency-aware-edge-ai
   - preferred-term:: Ai 0446 Latency Aware Edge Ai
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0446LatencyAwareEdgeAi
 
 ### Relationships
 - is-subclass-of:: [[ai:ModelArchitecture]]

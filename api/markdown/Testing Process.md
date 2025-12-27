@@ -7,10 +7,12 @@ id:: testing-process-ontology
   - term-id:: DT-0207
   - preferred-term:: Testing Process
   - source-domain:: mv
+  - owl:class:: mv:TestingProcess
   - status:: draft
   - definition:: Systematic execution of verification and validation operations to detect faults, verify functionality, and ensure quality standards in metaverse systems and applications.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Development Workflow]]
 - is-part-of:: [[Quality Assurance]]
 - has-part:: [[User Acceptance Testing]]

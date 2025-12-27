@@ -7,6 +7,7 @@ id:: etsi_domain_reality_capture___creative-ontology
   - term-id:: MV-0031
   - preferred-term:: ETSI_Domain_Reality_Capture___Creative
   - source-domain:: mv
+  - owl:class:: mv:EtsiDomainRealityCaptureCreative
   - status:: draft
   - definition:: A component of the metaverse ecosystem.
 

@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: AI-0825
+    - source-domain:: ai
+    - owl:class:: ai:TrainingInstability
     - preferred-term:: Training Instability
     - ontology:: true
     - public-access:: true

@@ -8,6 +8,7 @@ id:: learning-rate-schedule-ontology
   - preferred-term:: Learning Rate Schedule
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:LearningRateSchedule
   - definition:: A strategy for adjusting the learning rate during training according to a predefined or adaptive schedule. Learning rate schedules improve convergence and final performance by using higher rates early for rapid progress and lower rates later for fine-tuning.
 
 ### Relationships

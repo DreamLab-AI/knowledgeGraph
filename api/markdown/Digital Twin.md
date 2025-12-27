@@ -7,10 +7,12 @@ id:: digital-twin-ontology
   - term-id:: DT-0240
   - preferred-term:: Digital Twin
   - source-domain:: mv
+  - owl:class:: mv:DigitalTwin
   - status:: draft
   - definition:: A digital representation of a physical object or system synchronized with real-world data through IoT sensors and bidirectional data flows, enabling real-time monitoring, simulation, and predictive analytics.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - uses:: [[Machine Learning]]
 - is-part-of:: [[Digital Twin Ecosystem]]
 - is-part-of:: [[Industrial Metaverse]]

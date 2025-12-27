@@ -7,6 +7,7 @@ id:: etsi_domain_infrastructure-ontology
   - term-id:: MV-0022
   - preferred-term:: ETSI_Domain_Infrastructure
   - source-domain:: mv
+  - owl:class:: mv:EtsiDomainInfrastructure
   - status:: draft
   - definition:: A component of the metaverse ecosystem.
 

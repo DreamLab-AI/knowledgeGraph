@@ -7,5 +7,9 @@ id:: decentralization-ontology
   - term-id:: BC-0010
   - preferred-term:: Decentralization
   - source-domain:: bc
+  - owl:class:: bc:Decentralization
   - status:: complete
   - definition:: Distribution of control across network within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

@@ -1,24 +1,29 @@
 {
   "id": "Privacy Architecture",
   "title": "Privacy Architecture",
-  "content": "- ### OntologyBlock\n  id:: privacy-architecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10010\n\t- preferred-term:: Privacy Architecture\n\t- status:: stub\n\t- owl:class:: mv:PrivacyArchitecture\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: privacy-architecture-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: privacy-architecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10010\n\t- source-domain:: mv\n\t- preferred-term:: Privacy Architecture\n\t- status:: active\n\t- definition:: A systematic design framework that embeds data protection principles into software systems from inception, incorporating privacy-by-design methodologies, access controls, anonymization techniques, and compliance mechanisms to safeguard personal information.\n\t- owl:class:: mv:PrivacyArchitecture\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: privacy-architecture-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[System Architecture]]\n\t\t- related-to:: [[Data Protection]]\n\t\t- related-to:: [[Privacy By Design]]\n\t\t- related-to:: [[Regulatory Compliance]]\n\t\t- enables:: [[Data Privacy]]\n\t- #### Key Principles\n\t  collapsed:: true\n\t\t- Privacy by design from initial development\n\t\t- Data minimization and purpose limitation\n\t\t- Role-based access control (RBAC)\n\t\t- Encryption and anonymization techniques\n\t\t- Transparency in data collection and usage\n\t- #### 2024 Context\n\t  collapsed:: true\n\t\t- Organizations faced EUR 1.2B in GDPR fines\n\t\t- 82% of breaches involve human element (Verizon 2024)\n\t\t- 63% of breaches linked to misconfigured interfaces\n\t\t- RBAC reduces unauthorized access by 70%",
   "backlinks": [
     "Privacy-Enhancing Computation (PEC)"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Data Protection",
+    "Data Privacy",
+    "Privacy By Design",
+    "Regulatory Compliance",
+    "System Architecture"
   ],
   "ontology": {
     "term_id": "MV-10010",
     "preferred_term": "Privacy Architecture",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#PrivacyArchitecture",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A systematic design framework that embeds data protection principles into software systems from inception, incorporating privacy-by-design methodologies, access controls, anonymization techniques, and compliance mechanisms to safeguard personal information.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "System Architecture"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Data Privacy"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Data Protection",
+        "Privacy By Design",
+        "Regulatory Compliance"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

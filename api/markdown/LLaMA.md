@@ -18,7 +18,7 @@
 
 ### Domain & Architecture
 	- belongsToDomain:: [[MetaverseDomain]]
-	- maturity:: dt:Draft
+	- maturity:: mv:Draft
 
 ### Relationships
 

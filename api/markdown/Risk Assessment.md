@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0078
+	- source-domain:: mv
 	- preferred-term:: Risk Assessment
 	- status:: draft
 	- public-access:: true

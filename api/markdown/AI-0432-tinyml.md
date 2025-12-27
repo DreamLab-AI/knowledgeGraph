@@ -8,6 +8,7 @@ AI-0432-tinyml
   - preferred-term:: Ai 0432 Tinyml
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0432Tinyml
 
 ### Relationships
 - is-subclass-of:: [[ai:ModelArchitecture]]

@@ -7,6 +7,7 @@ id:: bootstrap-node-ontology
   - term-id:: DT-0918
   - preferred-term:: Bootstrap Node
   - source-domain:: bc
+  - owl:class:: bc:BootstrapNode
   - status:: complete
   - definition:: Network entry point node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

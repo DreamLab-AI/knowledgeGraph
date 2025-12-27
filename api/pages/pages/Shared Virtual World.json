@@ -1,19 +1,20 @@
 {
   "id": "Shared Virtual World",
   "title": "Shared Virtual World",
-  "content": "- ### OntologyBlock\n  id:: shared-virtual-world-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10044\n\t- preferred-term:: Shared Virtual World\n\t- status:: stub\n\t- owl:class:: mv:SharedVirtualWorld\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: shared-virtual-world-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: shared-virtual-world-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10044\n\t- source-domain:: mv\n\t- preferred-term:: Shared Virtual World\n\t- status:: stub\n\t- owl:class:: mv:SharedVirtualWorld\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: shared-virtual-world-relationships\n\t  collapsed:: true",
   "backlinks": [
     "State Synchronization"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Metaverse"
   ],
   "ontology": {
     "term_id": "MV-10044",
     "preferred_term": "Shared Virtual World",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#SharedVirtualWorld",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
     "definition": null,
@@ -30,7 +31,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Metaverse"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -48,12 +51,10 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
         "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

@@ -7,10 +7,12 @@ id:: metaverse-safety-protocol-ontology
   - term-id:: DT-0188
   - preferred-term:: Metaverse Safety Protocol
   - source-domain:: mv
+  - owl:class:: mv:MetaverseSafetyProtocol
   - status:: draft
   - definition:: Procedures and safeguards ensuring physical and psychological safety of users during immersive metaverse experiences.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Safety Standard]]
 - is-part-of:: [[Governance Framework]]
 - has-part:: [[Safety Guideline]]

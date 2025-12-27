@@ -3,17 +3,19 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0839
+	- source-domain:: ai
 	- preferred-term:: Risk
 	- status:: complete
 	- public-access:: true
 	- source:: Chimera Prime Research
-	- maturity:: dt:Established
+	- maturity:: established
 	- owl:class:: ai:Risk
 	- belongsToDomain:: [[Artificial Intelligence]]
 
 ### Relationships
 
 
+- is-subclass-of:: [[Artificial Intelligence]]
 ## Metadata
 
 - **Last Updated**: 2025-11-16

@@ -12,7 +12,7 @@
 
 
 ### OWL Classification
-	- owl:class:: org:CoinbaseTransaction
+	- owl:class:: bc:CoinbaseTransaction
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: bc:VirtualObject

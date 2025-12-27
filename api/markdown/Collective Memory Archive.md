@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0305
+	- source-domain:: mv
 	- preferred-term:: Collective Memory Archive
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[VirtualSocietyDomain]], [[CreativeMediaDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: collective-memory-archive-relationships
 	  collapsed:: true
 		- is-part-of:: [[Community Knowledge Systems]]

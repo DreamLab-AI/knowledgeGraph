@@ -2,22 +2,18 @@
   id:: rb-0015-agricultural-robot-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0900
-	- domain-prefix:: RB
-	- sequence-number:: 0015
-	- filename-history:: ["rb-0015-agricultural-robot.md"]
+	- term-id:: RB-0015
 	- preferred-term:: Agricultural Robot
 	- source-domain:: rb
 	- owl:class:: rb:AgriculturalRobot
+	- is-subclass-of:: [[Robotics]]
 	- status:: draft
     - public-access:: true
-	- definition:: ### Primary Definition
-**Agricultural Robot** - Agricultural Robot in robotics systems
+	- definition:: An agricultural robot is an autonomous or semi-autonomous machine designed to perform farming tasks such as planting, weeding, harvesting, and crop monitoring.
 	- maturity:: draft
-	- owl:class:: mv:rb0015agriculturalrobot
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- owl:physicality:: PhysicalEntity
+	- owl:role:: Object
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0015 agricultural robot
 	- ### Primary Definition
 **Agricultural Robot** - Agricultural Robot in robotics systems

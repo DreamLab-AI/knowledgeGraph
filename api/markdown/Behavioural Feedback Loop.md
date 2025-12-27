@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0251
+	- source-domain:: mv
 	- preferred-term:: Behavioural Feedback Loop
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[ComputationAndIntelligenceDomain]]
 	- implementedInLayer:: [[NetworkLayer]], [[ComputeLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: behavioural-feedback-loop-relationships
 	  collapsed:: true
 		- has-part:: [[Adaptive Reinforcement]]

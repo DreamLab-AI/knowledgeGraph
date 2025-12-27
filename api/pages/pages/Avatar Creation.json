@@ -1,22 +1,30 @@
 {
   "id": "Avatar Creation",
   "title": "Avatar Creation",
-  "content": "- ### OntologyBlock\n  id:: Avatar Creation\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9788\n  - preferred-term:: Avatar Creation\n  - source-domain:: mv\n  - status:: stub\n\n### Relationships",
+  "content": "- ### OntologyBlock\n  id:: Avatar Creation\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9788\n  - preferred-term:: Avatar Creation\n  - source-domain:: mv\n  - owl:class:: mv:AvatarCreation\n  - status:: active\n  - definition:: Avatar Creation is the process of designing and generating 3D digital representations of users for metaverse environments, encompassing selfie-based AI generation, manual customization tools, full-body scanning, and procedural generation techniques that enable personalized virtual identities.\n  - is-subclass-of:: [[Digital Identity Creation]]\n  - enables:: [[Virtual Self-Expression]], [[Metaverse Participation]], [[Digital Persona Management]]\n  - requires:: [[3D Modeling Tools]], [[AI Generation Systems]], [[Customization Interfaces]]\n\n### Technical Details\nKey technologies include:\n- **AI-Powered Generation**: Single selfie to fully customizable 3D avatar transformation (MetaPerson Creator, Avatar SDK)\n- **Real-Time 3D Engines**: Unity and Unreal Engine for avatar rendering and interaction\n- **Full-Body Scanning**: Photogrammetry and depth sensors for realistic body capture\n- **Procedural Generation**: Algorithmic creation of avatar variations and accessories\n\n### Avatar Types\n- **2D Avatars**: Simple profile representations for social platforms\n- **3D Cartoon Avatars**: Stylized characters for casual metaverse applications\n- **Photorealistic Avatars**: Lifelike representations using advanced rendering\n- **AI Avatars**: ML-driven animations from video data with motion prints\n\n### 2024 Developments\nMeta introducing enhanced customization with intricate facial features, expanded clothing options, and branded items for Connect 2024. Cross-platform platforms like Ready Player Me support 1000+ compatible applications.",
   "backlinks": [
     "Human Capture & Recognition"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "3D Modeling Tools",
+    "Customization Interfaces",
+    "Virtual Self-Expression",
+    "Metaverse Participation",
+    "Digital Identity Creation",
+    "AI Generation Systems",
+    "Digital Persona Management"
+  ],
   "ontology": {
     "term_id": "MV-9788",
     "preferred_term": "Avatar Creation",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/metaverse#AvatarCreation",
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Avatar Creation is the process of designing and generating 3D digital representations of users for metaverse environments, encompassing selfie-based AI generation, manual customization tools, full-body scanning, and procedural generation techniques that enable personalized virtual identities.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -24,7 +32,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "mv:AvatarCreation",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -45,8 +53,6 @@
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

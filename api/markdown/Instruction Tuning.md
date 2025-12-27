@@ -8,6 +8,7 @@ id:: instruction-tuning-ontology
   - preferred-term:: Instruction Tuning
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:InstructionTuning
   - definition:: A fine-tuning technique that trains language models to follow natural language instructions by training on diverse instruction-response pairs. Instruction tuning enables models to generalise to new tasks described through instructions without task-specific training data.
 
 ### Relationships

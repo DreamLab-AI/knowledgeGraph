@@ -1,24 +1,28 @@
 {
   "id": "Virtual Clinic",
   "title": "Virtual Clinic",
-  "content": "- ### OntologyBlock\n  id:: virtual-clinic-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10108\n\t- preferred-term:: Virtual Clinic\n\t- status:: stub\n\t- owl:class:: mv:VirtualClinic\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: virtual-clinic-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-clinic-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10108\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Clinic\n\t- status:: active\n\t- definition:: A telemedicine platform that enables clinicians to provide health services by connecting with patients through virtual means, offering remote consultations, diagnosis, treatment recommendations, and follow-up care using HIPAA-compliant video and digital communication technologies.\n\t- owl:class:: mv:VirtualClinic\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Virtual Environment]]\n\t\t- related-to:: [[Telehealth]]\n\t\t- related-to:: [[Digital Health]]\n\t\t- related-to:: [[Remote Patient Monitoring]]\n\t  id:: virtual-clinic-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual clinics are an emerging form of telemedicine that positively impact healthcare accessibility in remote, rural, and underserved areas. Telehealth adoption has grown significantly since the COVID-19 pandemic, with both patients and clinicians reporting high satisfaction. Virtual clinics can decrease wait times and travel costs while providing access to medical expertise regardless of location.\n- ## Technical Details\n\t- ### Service Delivery Models\n\t\t- **Synchronous Telehealth**: Real-time video consultations between providers and patients\n\t\t- **Store-and-Forward**: Secure transmission of medical images and data to specialists\n\t\t- **Remote Patient Monitoring**: Continuous tracking of health metrics and vital signs\n\t\t- **mHealth Applications**: Mobile apps for scheduling, messaging, and symptom tracking\n\t- ### Technical Requirements\n\t\t- HIPAA-compliant video platforms\n\t\t- Secure messaging and data encryption\n\t\t- Electronic health record (EHR) integration\n\t\t- Digital prescription capabilities\n\t- ### Specialties Supported\n\t\t- Primary care consultations\n\t\t- Mental health and behavioral therapy\n\t\t- Dermatology (teledermatology)\n\t\t- Radiology (teleradiology)\n\t\t- Chronic disease management\n- ## Applications\n\t- Rural and underserved area healthcare access\n\t- After-hours urgent care consultations\n\t- Follow-up appointments and medication management\n\t- Specialist consultations and second opinions\n\t- Mental health counseling and therapy sessions",
   "backlinks": [
     "Health Metaverse Application"
   ],
   "wiki_links": [
-    "metaverse"
+    "Telehealth",
+    "metaverse",
+    "Digital Health",
+    "Remote Patient Monitoring",
+    "Virtual Environment"
   ],
   "ontology": {
     "term_id": "MV-10108",
     "preferred_term": "Virtual Clinic",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#VirtualClinic",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A telemedicine platform that enables clinicians to provide health services by connecting with patients through virtual means, offering remote consultations, diagnosis, treatment recommendations, and follow-up care using HIPAA-compliant video and digital communication technologies.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Virtual Environment"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +51,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Telehealth",
+        "Digital Health",
+        "Remote Patient Monitoring"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0302
+	- source-domain:: mv
 	- preferred-term:: Digital Ritual
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[VirtualSocietyDomain]]
 	- implementedInLayer:: [[ApplicationLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: digital-ritual-relationships
 	  collapsed:: true
 		- is-part-of:: [[Virtual Community Practice]]

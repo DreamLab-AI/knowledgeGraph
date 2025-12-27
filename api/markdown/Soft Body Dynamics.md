@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-9005
+	- source-domain:: mv
 	- preferred-term:: Soft Body Dynamics
 	- status:: draft
 	- public-access:: true
@@ -14,3 +15,6 @@
 	- owl:role:: Process
 	- belongsToDomain:: [[MetaverseDomain]]
 	- isSubclassOf:: [[Physics Simulation]]
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

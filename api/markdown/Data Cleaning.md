@@ -5,6 +5,7 @@
   - preferred-term:: Data Cleaning
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:DataCleaning
 
 ### Relationships
 - is-subclass-of:: [[Data Preprocessing]]

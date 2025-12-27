@@ -5,6 +5,7 @@
 	- term-id:: DT-7883
 	- preferred-term:: Authorised Representative
 	- source-domain:: mv
+  - owl:class:: mv:AuthorisedRepresentative
 	- status:: draft
     - public-access:: true
 	- definition:: A natural or legal person located or established in the Union who has received and accepted a written mandate from a provider of an AI system or a general-purpose AI model to, respectively, perform and carry out on its behalf the tasks and procedures established by this Regulation.
@@ -69,4 +70,5 @@
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
 
-
+### Relationships
+- is-subclass-of:: [[Metaverse]]

@@ -8,4 +8,9 @@ id:: lora-ontology
   - preferred-term:: LoRA
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Lora
   - definition:: A parameter-efficient fine-tuning method that freezes pre-trained weights and injects trainable low-rank decomposition matrices into each layer of the transformer, dramatically reducing trainable parameters whilst maintaining performance. LoRA represents weight updates as the product of two low-rank matrices.
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

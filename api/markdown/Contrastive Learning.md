@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: A self-supervised learning approach that learns representations by contrasting positive pairs (similar samples) against negative pairs (dissimilar samples). Contrastive learning enables models to learn powerful representations without explicit labels by pushing similar examples together and dissimilar ones apart in embedding space.
 	- source:: [[Chen et al. 2020 SimCLR]], [[He et al. 2020 MoCo]], [[Radford et al. 2021 CLIP]], [[Gao et al. 2021 SimCSE]]
-	- maturity:: dt:Mature
+	- maturity:: mature
 	- #### Relationships
 - is-subclass-of:: [[ai:ModelArchitecture]]
 	  id:: contrastive-learning-relationships

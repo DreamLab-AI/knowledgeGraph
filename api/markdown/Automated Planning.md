@@ -5,6 +5,7 @@
   - preferred-term:: Automated Planning
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:AutomatedPlanning
 
 ### Relationships
 - is-subclass-of:: [[Planning and Scheduling]]

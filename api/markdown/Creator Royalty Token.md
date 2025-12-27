@@ -7,10 +7,12 @@ id:: creatorroyaltytoken-ontology
   - term-id:: DT-0132
   - preferred-term:: Creator Royalty Token
   - source-domain:: bc
+  - owl:class:: bc:CreatorRoyaltyToken
   - status:: draft
   - definition:: Token granting its holder a share of ongoing revenue from creative works, enabling automated royalty distribution and fractional ownership of intellectual property income streams.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - uses-data-structure:: [[Blockchain]]
 - is-part-of:: [[Virtual Economy]]
 - is-part-of:: [[Intellectual Property System]]

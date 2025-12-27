@@ -1,7 +1,7 @@
 {
   "id": "MonetaryPolicyImplementation",
   "title": "MonetaryPolicyImplementation",
-  "content": "- ### OntologyBlock\n  id:: monetarypolicyimplementation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-1003\n\t- preferred-term:: MonetaryPolicyImplementation\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A monetary policy implementation component in the Metaverse domain that enables CentralBankDigitalCurrencyCbdc.\n\t- source:: Generated from bridge validation\n\t- maturity:: emerging\n\t- owl:class:: mv:MonetaryPolicyImplementation\n\t- #### Relationships\n\t  id:: monetarypolicyimplementation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Economic Mechanism]]",
+  "content": "- ### OntologyBlock\n  id:: monetarypolicyimplementation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-1003\n\t- source-domain:: mv\n\t- preferred-term:: MonetaryPolicyImplementation\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A monetary policy implementation component in the Metaverse domain that enables CentralBankDigitalCurrencyCbdc.\n\t- source:: Generated from bridge validation\n\t- maturity:: emerging\n\t- owl:class:: mv:MonetaryPolicyImplementation\n\t- #### Relationships\n\t  id:: monetarypolicyimplementation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Economic Mechanism]]",
   "backlinks": [],
   "wiki_links": [
     "Economic Mechanism"
@@ -11,7 +11,7 @@
     "preferred_term": "MonetaryPolicyImplementation",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#MonetaryPolicyImplementation",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
     "definition": "A monetary policy implementation component in the Metaverse domain that enables CentralBankDigitalCurrencyCbdc.",
@@ -48,7 +48,6 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"

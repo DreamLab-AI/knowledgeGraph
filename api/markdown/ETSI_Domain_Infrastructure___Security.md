@@ -7,6 +7,7 @@ id:: etsi_domain_infrastructure___security-ontology
   - term-id:: MV-0027
   - preferred-term:: ETSI_Domain_Infrastructure___Security
   - source-domain:: mv
+  - owl:class:: mv:EtsiDomainInfrastructureSecurity
   - status:: draft
   - definition:: A component of the metaverse ecosystem.
 

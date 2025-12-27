@@ -7,10 +7,12 @@ id:: nft-renting-ontology
   - term-id:: DT-0213
   - preferred-term:: NFT Renting
   - source-domain:: bc
+  - owl:class:: bc:NftRenting
   - status:: draft
   - definition:: Process of temporarily assigning usage rights for a non-fungible token without transferring ownership, enforced through smart contract time-bound licensing mechanisms.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Digital Asset Lending]]
 - is-part-of:: [[NFT Marketplace]]
 - has-part:: [[Rental Smart Contract]]

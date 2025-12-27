@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0815
+    - source-domain:: ai
+    - owl:class:: ai:ConditionalRandomField
     - preferred-term:: Conditional Random Field
     - ontology:: true
     - public-access:: true

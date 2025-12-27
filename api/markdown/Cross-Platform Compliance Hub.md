@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0296
+	- source-domain:: mv
 	- preferred-term:: Cross-Platform Compliance Hub
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: cross-platform-compliance-hub-relationships
 	  collapsed:: true
 		- is-part-of:: [[Governance Infrastructure]]

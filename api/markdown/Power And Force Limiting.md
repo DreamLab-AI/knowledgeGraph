@@ -8,7 +8,8 @@
 	- owl:class:: rb:PowerAndForceLimiting
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- is-subclass-of:: [[Robotics]]
+	- definition:: Power and force limiting (PFL) is a safety principle in collaborative robotics enabling robots to operate safely in shared workspaces by constraining the mechanical energy exerted during contact.
 	- maturity:: draft
 
 ## Academic Context

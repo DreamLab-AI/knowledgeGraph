@@ -7,6 +7,7 @@ id:: bc-0487-compliance-monitoring-ontology
   - term-id:: BC-0487
   - preferred-term:: Compliance Monitoring
   - source-domain:: bc
+  - owl:class:: bc:ComplianceMonitoring
   - status:: stub
   - definition:: A component of the blockchain ecosystem.
 

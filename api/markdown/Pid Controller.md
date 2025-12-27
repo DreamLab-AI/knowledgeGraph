@@ -3,6 +3,7 @@
   collapsed:: true
 	- preferred-term:: Pid Controller
 	- source-domain:: mv
+  - owl:class:: mv:PidController
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition

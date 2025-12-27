@@ -3,6 +3,8 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0976
+	- source-domain:: tc
+	- owl:class:: tc:EmergencyStop
 	- preferred-term:: Emergency Stop
 	- status:: draft
 	- public-access:: true

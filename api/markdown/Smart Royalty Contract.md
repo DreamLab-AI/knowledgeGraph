@@ -7,10 +7,12 @@ id:: smart-royalty-contract-ontology
   - term-id:: DT-0272
   - preferred-term:: Smart Royalty Contract
   - source-domain:: bc
+  - owl:class:: bc:SmartRoyaltyContract
   - status:: draft
   - definition:: A programmable blockchain contract that automatically enforces royalty payment terms, calculates compensation amounts, and triggers distributions to creators and rights holders upon qualifying transactions in NFT and digital asset ecosystems.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[NFT Standard Implementation]]
 - has-part:: [[Event Emitter]]
 - has-part:: [[Enforcement Module]]

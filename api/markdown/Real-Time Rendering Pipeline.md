@@ -7,10 +7,12 @@ id:: real-time-rendering-pipeline-ontology
   - term-id:: DT-0194
   - preferred-term:: Real-Time Rendering Pipeline
   - source-domain:: mv
+  - owl:class:: mv:RealTimeRenderingPipeline
   - status:: draft
   - definition:: Sequence of GPU processes converting 3D scene data into visual frames at interactive rates (typically 30-120+ FPS).
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Graphics Rendering System]]
 - is-part-of:: [[Game Engine]]
 - has-part:: [[Rasterization]]

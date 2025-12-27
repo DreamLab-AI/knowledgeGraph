@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-1007
+	- source-domain:: mv
 	- preferred-term:: MathLibrary
 	- status:: complete
 	- public-access:: true

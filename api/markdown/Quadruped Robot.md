@@ -1,10 +1,11 @@
-Quadruped Robot
-
 - ### OntologyBlock
-  id:: Quadruped Robot
+  id:: quadruped-robot-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1003
   - preferred-term:: Quadruped Robot
   - source-domain:: rb
+  - owl:class:: rb:QuadrupedRobot
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
+  - definition:: A quadruped robot is a legged mobile robot with four legs, providing stable locomotion over uneven terrain.

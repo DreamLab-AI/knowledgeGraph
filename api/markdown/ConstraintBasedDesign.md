@@ -3,12 +3,13 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-1000
+	- source-domain:: ai
 	- preferred-term:: ConstraintBasedDesign
 	- status:: complete
 	- public-access:: true
 	- definition:: A constraint based design component in the Artificial Intelligence domain that enables GenerativeDesignTool.
 	- source:: Generated from bridge validation
-	- maturity:: dt:Emerging
+	- maturity:: emerging
 	- owl:class:: ai:ConstraintBasedDesign
 	- #### Relationships
 	  id:: constraintbaseddesign-relationships

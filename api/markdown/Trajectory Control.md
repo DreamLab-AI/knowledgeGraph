@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0154
+    - source-domain:: tc
+    - owl:class:: tc:TrajectoryControl
     - preferred-term:: Trajectory Control
     - ontology:: true
     - public-access:: true

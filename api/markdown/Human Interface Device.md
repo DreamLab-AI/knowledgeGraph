@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0967
+	- source-domain:: mv
 	- preferred-term:: Human Interface Device
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[InteractionDomain]]
 	- implementedInLayer:: [[PhysicalLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: human-interface-device-relationships
 	  collapsed:: true
 		- is-part-of:: [[Interaction System]]

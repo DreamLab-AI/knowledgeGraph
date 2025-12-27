@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: MV-0570
+    - source-domain:: mv
+    - owl:class:: mv:NftStandard
     - preferred-term:: NFT Standard
     - ontology:: true
     - public-access:: true

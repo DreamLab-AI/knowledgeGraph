@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-9001
+	- source-domain:: ai
 	- preferred-term:: Symbolic AI
 	- status:: draft
 	- public-access:: true
@@ -14,3 +15,7 @@
 	- owl:role:: Process
 	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- hasSubclass:: [[Expert Systems]], [[Logic Programming]], [[Knowledge Representation]]
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

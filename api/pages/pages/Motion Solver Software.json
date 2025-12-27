@@ -1,24 +1,29 @@
 {
   "id": "Motion Solver Software",
   "title": "Motion Solver Software",
-  "content": "- ### OntologyBlock\n  id:: motion-solver-software-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9974\n\t- preferred-term:: Motion Solver Software\n\t- status:: stub\n\t- owl:class:: mv:MotionSolverSoftware\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: motion-solver-software-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: motion-solver-software-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9974\n\t- source-domain:: mv\n\t- preferred-term:: Motion Solver Software\n\t- status:: active\n\t- definition:: Specialized software that uses multibody dynamics and physics-based algorithms to calculate reaction forces, torques, velocities, accelerations, and motor behaviors for mechanical systems and animated characters, enabling accurate simulation of rigid and flexible body movements.\n\t- owl:class:: mv:MotionSolverSoftware\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: motion-solver-software-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Simulation Software]]\n\t\t- related-to:: [[Physics Simulation]]\n\t\t- related-to:: [[Character Animation]]\n\t\t- related-to:: [[Multibody Dynamics]]\n\t\t- enables:: [[Real Time Character Animation]]\n\t- #### Technical Details\n\t  collapsed:: true\n\t\t- Uses advanced multibody dynamics solvers for rigid and flexible body analysis\n\t\t- Supports shared memory parallel processing (SMP) and massive parallel processing (MPP)\n\t\t- Can convert CAD geometry and assembly constraints into motion models\n\t\t- Integrates physics-based animation with cloth, shell, and fluid simulation\n\t\t- Market projected to reach $33.59 billion by 2025\n\t- #### Applications\n\t  collapsed:: true\n\t\t- Automotive and aerospace product design testing\n\t\t- Video game character physics\n\t\t- Film visual effects and animation\n\t\t- Robotics simulation\n\t\t- Virtual prototyping",
   "backlinks": [
     "Motion Capture Rig"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Real Time Character Animation",
+    "Physics Simulation",
+    "Multibody Dynamics",
+    "Simulation Software",
+    "Character Animation"
   ],
   "ontology": {
     "term_id": "MV-9974",
     "preferred_term": "Motion Solver Software",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#MotionSolverSoftware",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Specialized software that uses multibody dynamics and physics-based algorithms to calculate reaction forces, torques, velocities, accelerations, and motor behaviors for mechanical systems and animated characters, enabling accurate simulation of rigid and flexible body movements.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Simulation Software"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Real Time Character Animation"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Physics Simulation",
+        "Character Animation",
+        "Multibody Dynamics"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

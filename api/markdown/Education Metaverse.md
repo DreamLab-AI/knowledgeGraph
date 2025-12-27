@@ -7,10 +7,12 @@ id:: education-metaverse-ontology
   - term-id:: DT-0310
   - preferred-term:: Education Metaverse
   - source-domain:: mv
+  - owl:class:: mv:EducationMetaverse
   - status:: draft
   - definition:: A virtual platform that provides immersive educational experiences through interconnected digital learning environments, enabling collaborative instruction, skills development, and knowledge transfer across distributed participants.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Metaverse Application Platform]]
 - has-part:: [[Virtual Classroom]]
 - has-part:: [[Learning Module]]

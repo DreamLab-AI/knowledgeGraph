@@ -7,6 +7,7 @@ id:: bc-0110-fee-market-ontology
   - term-id:: MV-0832
   - preferred-term:: BC 0110 fee market
   - source-domain:: bc
+  - owl:class:: bc:Bc0110FeeMarket
   - status:: draft
   - definition:: ### Primary Definition
 

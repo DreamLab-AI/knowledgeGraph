@@ -7,5 +7,9 @@ id:: private-channels-ontology
   - term-id:: BC-0430
   - preferred-term:: Private Channels
   - source-domain:: bc
+  - owl:class:: bc:PrivateChannels
   - status:: draft
   - definition:: A component of the blockchain ecosystem.
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

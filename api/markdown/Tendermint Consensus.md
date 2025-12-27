@@ -7,4 +7,8 @@ Tendermint Consensus
   - term-id:: BC-9868
   - preferred-term:: Tendermint Consensus
   - source-domain:: bc
+  - owl:class:: bc:TendermintConsensus
   - status:: draft
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

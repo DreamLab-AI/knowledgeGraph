@@ -1,24 +1,31 @@
 {
   "id": "Automated Market Making",
   "title": "Automated Market Making",
-  "content": "- ### OntologyBlock\n  id:: automated-market-making-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9787\n\t- preferred-term:: Automated Market Making\n\t- status:: stub\n\t- owl:class:: mv:AutomatedMarketMaking\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: automated-market-making-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: automated-market-making-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9787\n\t- source-domain:: mv\n\t- preferred-term:: Automated Market Making\n\t- status:: active\n\t- definition:: Automated Market Making is the practice and methodology of operating decentralized exchange protocols that use algorithmic pricing and liquidity pools to facilitate permissionless trading, encompassing pool design, fee structures, capital efficiency optimization, and impermanent loss mitigation strategies.\n\t- owl:class:: mv:AutomatedMarketMaking\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[DeFi Operations]]\n\t- enables:: [[Decentralized Trading]], [[Liquidity Mining]], [[Token Accessibility]]\n\t- requires:: [[Liquidity Provision]], [[Smart Contract Deployment]], [[Price Oracle Integration]]\n\t- #### Relationships\n\t  id:: automated-market-making-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey concepts include:\n- **Constant Product Market Makers**: x * y = k formula ensuring continuous liquidity at all price levels\n- **Concentrated Liquidity**: Capital efficiency through targeted price range provision (Uniswap v3)\n- **Fee Tiers**: Variable trading fees based on asset volatility and liquidity depth\n- **Price Impact**: Relationship between trade size and resulting price movement\n\n### Pool Types\n- **Standard Pairs**: Two-token pools with equal weighting\n- **Weighted Pools**: Multi-token pools with custom asset allocations (Balancer)\n- **Stable Pools**: Optimized for correlated assets with minimal slippage (Curve)\n- **Hybrid Pools**: Combining order book and AMM mechanics\n\n### Risk Management\nImpermanent loss occurs when liquidity provider holdings diverge from simply holding tokens. Mitigation strategies include selecting correlated pairs, choosing appropriate fee tiers, and active position management.",
   "backlinks": [
     "Liquidity Pool"
   ],
   "wiki_links": [
-    "metaverse"
+    "DeFi Operations",
+    "Decentralized Trading",
+    "metaverse",
+    "Smart Contract Deployment",
+    "Price Oracle Integration",
+    "Liquidity Provision",
+    "Liquidity Mining",
+    "Token Accessibility"
   ],
   "ontology": {
     "term_id": "MV-9787",
     "preferred_term": "Automated Market Making",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#AutomatedMarketMaking",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Automated Market Making is the practice and methodology of operating decentralized exchange protocols that use algorithmic pricing and liquidity pools to facilitate permissionless trading, encompassing pool design, fee structures, capital efficiency optimization, and impermanent loss mitigation strategies.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -48,9 +55,7 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

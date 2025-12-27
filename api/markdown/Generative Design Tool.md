@@ -88,16 +88,16 @@ id:: generative-design-tool-relationships
 		  SubClassOf(mv:AutomatedDesign mv:VirtualProcess)
 
   # Property characteristics
-  TransitiveObjectProperty(dt:ispartof)
+  TransitiveObjectProperty(mv:ispartof)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:requires)
+  AsymmetricObjectProperty(mv:requires)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:dependson)
+  AsymmetricObjectProperty(mv:dependson)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:enables)
+  AsymmetricObjectProperty(mv:enables)
 ```
 - ## About Generative Design Tools
   id:: generative-design-tool-about

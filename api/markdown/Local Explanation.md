@@ -3,6 +3,8 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-1009
+	- source-domain:: ai
+	- owl:class:: ai:LocalExplanation
 	- preferred-term:: Local Explanation
 	- status:: draft
 	- public-access:: true

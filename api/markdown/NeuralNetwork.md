@@ -8,7 +8,7 @@
 	- status:: active
 	- public-access:: true
 	- definition:: A computational system inspired by biological neural networks, consisting of interconnected nodes that process information through weighted connections to learn patterns and make predictions.
-	- maturity:: dt:Mature
+	- maturity:: mature
 	- owl:class:: ai:Neuralnetwork
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Model

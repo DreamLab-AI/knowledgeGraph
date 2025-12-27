@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: BC-9001
+	- source-domain:: bc
 	- preferred-term:: Cosmos IBC
 	- status:: draft
 	- public-access:: true
@@ -14,3 +15,6 @@
 	- owl:role:: Process
 	- belongsToDomain:: [[BlockchainDomain]]
 	- isSubclassOf:: [[Layer 0 Protocol]], [[Interoperability Protocol]]
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

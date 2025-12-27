@@ -1,14 +1,16 @@
 {
   "id": "Digital Wallet",
   "title": "Digital Wallet",
-  "content": "- ### OntologyBlock\n  id:: Digital Wallet\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9881\n  - preferred-term:: Digital Wallet\n  - source-domain:: bc\n  - status:: stub\n\n### Relationships",
+  "content": "- ### OntologyBlock\n  id:: Digital Wallet\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9881\n  - preferred-term:: Digital Wallet\n  - source-domain:: bc\n  - owl:class:: bc:DigitalWallet\n  - status:: stub\n\n### Relationships\n- is-subclass-of:: [[Blockchain]]",
   "backlinks": [
     "Creator Economy",
     "Micropayment",
     "Non-Fungible Token (NFT)",
     "Digital Real Estate",
     "NFT Wrapping",
+    "Customer Rewards",
     "Creator Royalty Token",
+    "Cross Metaverse Commerce",
     "Digital Goods",
     "Carbon Credit Token",
     "Social Token Economy",
@@ -21,12 +23,14 @@
     "Digital Asset",
     "Loyalty Token"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "Blockchain"
+  ],
   "ontology": {
     "term_id": "MV-9881",
     "preferred_term": "Digital Wallet",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/blockchain#DigitalWallet",
     "source_domain": "bc",
     "domain": "bc",
     "domain_full_name": "Blockchain",
@@ -40,7 +44,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "bc:DigitalWallet",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -62,7 +66,6 @@
       "errors": [
         "Missing required property: last-updated",
         "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)",

@@ -1,24 +1,31 @@
 {
   "id": "Adaptive Virtual World",
   "title": "Adaptive Virtual World",
-  "content": "- ### OntologyBlock\n  id:: adaptive-virtual-world-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9759\n\t- preferred-term:: Adaptive Virtual World\n\t- status:: stub\n\t- owl:class:: mv:AdaptiveVirtualWorld\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: adaptive-virtual-world-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: adaptive-virtual-world-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9759\n\t- source-domain:: mv\n\t- preferred-term:: Adaptive Virtual World\n\t- status:: active\n\t- definition:: Adaptive Virtual World describes a metaverse environment that uses procedural generation, AI-driven content creation, and real-time user behavior analysis to dynamically evolve landscapes, structures, weather patterns, NPCs, and game mechanics in response to collective and individual user actions.\n\t- owl:class:: mv:AdaptiveVirtualWorld\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Virtual World]]\n\t- enables:: [[Emergent Gameplay]], [[Persistent World Evolution]], [[Personalized Environments]]\n\t- requires:: [[Procedural Generation]], [[Generative AI]], [[Neural Networks]]\n\t- #### Relationships\n\t  id:: adaptive-virtual-world-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Procedural Content Generation (PCG)**: Algorithmic creation of landscapes, cities, and dungeons without manual design\n- **AI-Enhanced PCG**: Machine learning optimizes procedural algorithms based on player behavior analysis\n- **Real-Time World Modification**: Weather patterns and environmental conditions change based on user actions\n- **Generative AI Integration**: AIGC technology creates virtual scenes, characters, and interactive elements\n\n### Market Context\nProcedural content generation captured over 33% of the Generative AI in Metaverse market in 2023, projected to grow to $611 million by 2033 (31.5% CAGR).",
   "backlinks": [
     "Intelligent Virtual Entity"
   ],
   "wiki_links": [
-    "metaverse"
+    "Virtual World",
+    "Emergent Gameplay",
+    "Procedural Generation",
+    "metaverse",
+    "Persistent World Evolution",
+    "Personalized Environments",
+    "Generative AI",
+    "Neural Networks"
   ],
   "ontology": {
     "term_id": "MV-9759",
     "preferred_term": "Adaptive Virtual World",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#AdaptiveVirtualWorld",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Adaptive Virtual World describes a metaverse environment that uses procedural generation, AI-driven content creation, and real-time user behavior analysis to dynamically evolve landscapes, structures, weather patterns, NPCs, and game mechanics in response to collective and individual user actions.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -48,9 +55,7 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

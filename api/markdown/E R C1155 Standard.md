@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: MV-0540
+    - source-domain:: mv
+    - owl:class:: mv:Erc1155Standard
     - preferred-term:: ERC-1155 Standard
     - ontology:: true
     - public-access:: true

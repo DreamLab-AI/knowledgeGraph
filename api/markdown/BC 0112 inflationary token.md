@@ -7,6 +7,7 @@ id:: unknown-ontology
   - term-id:: MV-0112
   - preferred-term:: BC 0112 inflationary token
   - source-domain:: bc
+  - owl:class:: bc:Bc0112InflationaryToken
   - status:: active
   - definition:: ### Primary Definition
 

@@ -1,24 +1,29 @@
 {
   "id": "Format Parser",
   "title": "Format Parser",
-  "content": "- ### OntologyBlock\n  id:: format-parser-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9902\n\t- preferred-term:: Format Parser\n\t- status:: stub\n\t- owl:class:: mv:FormatParser\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: format-parser-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: format-parser-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9902\n\t- source-domain:: mv\n\t- preferred-term:: Format Parser\n\t- status:: active\n\t- owl:class:: mv:FormatParser\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Software components that interpret and convert various 3D asset file formats (glTF, USD, FBX, OBJ) into internal representations for metaverse platforms, enabling interoperability between content creation tools and runtime environments whilst preserving geometry, materials, animations, and metadata.\n\t- #### Relationships\n\t  id:: format-parser-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Data Processing]]\n\t\t- related-to:: [[3D Asset Pipeline]]\n\t\t- related-to:: [[Interoperability Standard]]\n\t\t- enables:: [[Cross-Platform Content]]\n\n## Supported Formats\n\n### Industry Standards\n\n#### glTF (GL Transmission Format)\n- Khronos Group standard for 3D scenes\n- JSON-based with binary geometry data\n- Optimised for web and real-time applications\n- Widely adopted in metaverse platforms\n\n#### USD (Universal Scene Description)\n- Pixar-developed scene description format\n- Compositional and non-destructive\n- OpenUSD initiative for industry adoption\n- Digital twin and simulation support\n\n#### FBX (Filmbox)\n- Autodesk proprietary format\n- Industry standard for animation\n- Skeletal and morph target support\n- Wide tool compatibility\n\n#### OBJ (Wavefront Object)\n- Simple text-based geometry format\n- Broad legacy support\n- Material library (.mtl) companion files\n- Limited animation support\n\n### Emerging Formats\n- VRM (Virtual Reality Model) for avatars\n- USDZ (Apple's USD variant)\n- 3D Tiles for geospatial data\n\n## Parsing Pipeline\n\n### Input Processing\n- File format detection\n- Schema validation\n- Binary data extraction\n- Metadata parsing\n\n### Geometry Processing\n- Vertex buffer construction\n- Index buffer generation\n- Normal and tangent calculation\n- UV coordinate mapping\n\n### Material Processing\n- PBR (Physically Based Rendering) material extraction\n- Texture reference resolution\n- Shader property mapping\n- Material graph interpretation\n\n### Animation Processing\n- Skeleton hierarchy extraction\n- Animation curve parsing\n- Blend shape target loading\n- Animation clip segmentation\n\n## Interoperability Challenges\n\n### Format Conversion Issues\n- Material system differences\n- Coordinate system variations\n- Animation representation differences\n- Metadata loss during conversion\n\n### Best Practices\n- Preserve original data where possible\n- Document conversion limitations\n- Support format versioning\n- Validate output integrity\n\n## Applications\n\n### Content Creation\n- Asset import/export pipelines\n- Format translation tools\n- Batch processing systems\n\n### Runtime Systems\n- Real-time asset loading\n- Streaming content delivery\n- LOD format handling\n- Compression support\n\n## Metadata\n\n- **Migration Status**: Enriched via domain knowledge 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
-    "Conversion Pipeline"
+    "Conversion Pipeline",
+    "Gltf Standard"
   ],
   "wiki_links": [
-    "metaverse"
+    "Data Processing",
+    "Interoperability Standard",
+    "metaverse",
+    "3D Asset Pipeline",
+    "Cross-Platform Content"
   ],
   "ontology": {
     "term_id": "MV-9902",
     "preferred_term": "Format Parser",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#FormatParser",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Software components that interpret and convert various 3D asset file formats (glTF, USD, FBX, OBJ) into internal representations for metaverse platforms, enabling interoperability between content creation tools and runtime environments whilst preserving geometry, materials, animations, and metadata.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Data Processing"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Cross-Platform Content"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,18 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "3D Asset Pipeline",
+        "Interoperability Standard"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

@@ -6,9 +6,10 @@ collapsed:: true
 	- preferred-term:: Service Robot
 	- source-domain:: rb
 	- owl:class:: rb:ServiceRobot
+	- is-subclass-of:: [[Robotics]]
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- definition:: A service robot performs useful tasks for humans outside of industrial automation, including healthcare, logistics, domestic assistance, and public services.
 	- maturity:: draft
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## Academic Context

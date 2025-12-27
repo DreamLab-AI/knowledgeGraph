@@ -3,6 +3,7 @@
   collapsed:: true
 	- preferred-term:: Robot Link
 	- source-domain:: mv
+  - owl:class:: mv:RobotLink
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition

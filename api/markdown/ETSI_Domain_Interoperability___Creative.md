@@ -7,6 +7,7 @@ id:: etsi_domain_interoperability___creative-ontology
   - term-id:: MV-0029
   - preferred-term:: ETSI_Domain_Interoperability___Creative
   - source-domain:: mv
+  - owl:class:: mv:EtsiDomainInteroperabilityCreative
   - status:: draft
   - definition:: A component of the metaverse ecosystem.
 

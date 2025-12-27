@@ -1,14 +1,14 @@
-id:: perception-system-ontology
-
 - ### OntologyBlock
-  id:: Perception System
+  id:: perception-system-ontology
   - ontology:: true
   - public-access:: true
-  - term-id:: MV-0349
+  - term-id:: RB-0349
   - preferred-term:: Perception System
   - source-domain:: rb
+  - owl:class:: rb:PerceptionSystem
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: A Perception System is the sensor processing and environmental understanding component of autonomous systems that interprets raw sensor data to build a coherent representation of the surrounding environment, including object detection, classification, tracking, localisation, and scene understanding. Perception systems fuse data from multiple sensor modalities (camera, lidar, radar) to create robust environmental models for autonomous decision-making.
+  - definition:: A perception system is the sensor processing and environmental understanding component of autonomous robotic systems that interprets raw sensor data to build a coherent representation of the surrounding environment, including object detection, classification, tracking, localisation, and scene understanding.
 
 ### Relationships
 - uses:: [[Machine Learning]]

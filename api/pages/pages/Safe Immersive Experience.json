@@ -1,22 +1,29 @@
 {
   "id": "Safe Immersive Experience",
   "title": "Safe Immersive Experience",
-  "content": "- ### OntologyBlock\n  id:: Safe Immersive Experience\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-10026\n  - preferred-term:: Safe Immersive Experience\n  - source-domain:: mv\n  - status:: stub\n\n### Relationships",
+  "content": "- ### OntologyBlock\n  id:: safe-immersive-experience-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10026\n\t- source-domain:: mv\n\t- preferred-term:: Safe Immersive Experience\n\t- status:: active\n\t- definition:: Design principles and technical safeguards that protect users from physical harm, psychological distress, and privacy violations in virtual and augmented reality environments through content moderation, comfort settings, and safety boundaries.\n\t- owl:class:: mv:SafeImmersiveExperience\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: safe-immersive-experience-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[User Safety]]\n\t\t- related-to:: [[VR Comfort Settings]]\n\t\t- related-to:: [[Content Moderation]]\n\t\t- related-to:: [[Parental Controls]]\n\t\t- enables:: [[Responsible XR Design]]\n\t- #### Safety Features\n\t  collapsed:: true\n\t\t- Guardian boundary systems for physical space\n\t\t- Passthrough mode for real-world awareness\n\t\t- Motion sickness reduction techniques\n\t\t- Age-appropriate content filtering\n\t\t- Emergency exit mechanisms\n\t- #### Design Principles\n\t  collapsed:: true\n\t\t- Comfort settings for locomotion\n\t\t- Content warnings for intense experiences\n\t\t- Rest period recommendations\n\t\t- Harassment prevention tools\n\t\t- Privacy-preserving data collection",
   "backlinks": [
     "Metaverse Safety Protocol"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "metaverse",
+    "Responsible XR Design",
+    "VR Comfort Settings",
+    "User Safety",
+    "Parental Controls",
+    "Content Moderation"
+  ],
   "ontology": {
     "term_id": "MV-10026",
     "preferred_term": "Safe Immersive Experience",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/metaverse#SafeImmersiveExperience",
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Design principles and technical safeguards that protect users from physical harm, psychological distress, and privacy violations in virtual and augmented reality environments through content moderation, comfort settings, and safety boundaries.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -24,32 +31,42 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "mv:SafeImmersiveExperience",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "User Safety"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Responsible XR Design"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "metaverse"
+    ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "VR Comfort Settings",
+        "Content Moderation",
+        "Parental Controls"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

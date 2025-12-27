@@ -7,6 +7,7 @@ id:: bc-0116-total-supply-ontology
   - term-id:: MV-0945
   - preferred-term:: BC 0116 total supply
   - source-domain:: bc
+  - owl:class:: bc:Bc0116TotalSupply
   - status:: draft
   - definition:: ### Primary Definition
 

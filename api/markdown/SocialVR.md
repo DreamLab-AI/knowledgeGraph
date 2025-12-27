@@ -5,6 +5,8 @@ id:: socialvr-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: MV-0055
+  - source-domain:: mv
+  - owl:class:: mv:Socialvr
   - preferred-term:: SocialVR
   - status:: deprecated
   - definition:: A component of the metaverse ecosystem.
@@ -15,3 +17,6 @@ id:: socialvr-ontology
 **Status**: deprecated
 **Merge Date**: 2025-11-23
 **Reason**: Duplicate entity consolidation
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

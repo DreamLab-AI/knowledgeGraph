@@ -7,5 +7,9 @@ id:: mempool-ontology
   - term-id:: BC-0019
   - preferred-term:: Mempool
   - source-domain:: bc
+  - owl:class:: bc:Mempool
   - status:: complete
   - definition:: Memory pool of pending transactions within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

@@ -3,7 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0057
-	- preferred-term:: rb 0057 admittance control
+	- preferred-term:: Admittance Control
 	- source-domain:: rb
 	- status:: draft
 	- public-access:: true
@@ -12,12 +12,13 @@
 
 
 ### OWL Classification
-	- owl:class:: mv:rb0057admittancecontrol
+	- owl:class:: rb:AdmittanceControl
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 
 ### Domain & Architecture
 	- belongsToDomain:: [[RoboticsDomain]]
+	- is-subclass-of:: [[Robotics]]
 	- maturity:: draft
 
 ### Relationships

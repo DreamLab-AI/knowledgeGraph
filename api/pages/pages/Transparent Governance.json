@@ -1,25 +1,31 @@
 {
   "id": "Transparent Governance",
   "title": "Transparent Governance",
-  "content": "- ### OntologyBlock\n  id:: transparent-governance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10089\n\t- preferred-term:: Transparent Governance\n\t- status:: stub\n\t- owl:class:: mv:TransparentGovernance\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: transparent-governance-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: transparent-governance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10089\n\t- source-domain:: mv\n\t- preferred-term:: Transparent Governance\n\t- status:: active\n\t- definition:: A governance model where rules, processes, decisions, and their enforcement are openly visible, verifiable, and accessible to all stakeholders, typically implemented through blockchain technology, public smart contracts, and open data practices.\n\t- owl:class:: mv:TransparentGovernance\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Governance]]\n\t\t- related-to:: [[DAO]]\n\t\t- related-to:: [[Transparent Decision Making]]\n\t\t- related-to:: [[Accountability]]\n\t  id:: transparent-governance-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Transparent governance is a benchmark of modern governance endorsed by most governments worldwide, featuring prominently in UN Sustainable Development Goal 16. In blockchain and metaverse contexts, transparency is enabled through immutable records, public smart contracts, and open treasury management.\n- ## Technical Details\n\t- ### Blockchain Implementation\n\t\t- **Public Smart Contracts**: Verifiable governance rules encoded on-chain\n\t\t- **Open Treasury**: Real-time visibility of fund balances and transactions\n\t\t- **On-Chain Voting**: Immutable voting records and outcomes\n\t\t- **Audit Trails**: Complete history of governance actions\n\t- ### Transparency Frameworks\n\t\t- **Freedom of Information**: 119 countries with FOI regulation\n\t\t- **UNCAC**: UN Convention Against Corruption transparency provisions\n\t\t- **SDG 16**: Developing effective, accountable, transparent institutions\n\t\t- **WEF Stakeholder Capitalism**: Corporate transparency metrics\n\t- ### Measurement Tools\n\t\t- T-Index for country-level transparency\n\t\t- DAO governance analytics platforms\n\t\t- Smart contract auditing and verification\n\t\t- Treasury monitoring dashboards\n- ## Applications\n\t- DAO organizational governance\n\t- Metaverse platform rule-making\n\t- Digital asset regulatory compliance\n\t- Community treasury management\n\t- Cross-border governance coordination",
   "backlinks": [
+    "BC-0462-on-chain-voting",
+    "Transparency Metrics",
     "Digital Citizens' Assembly",
     "Community Governance Model"
   ],
   "wiki_links": [
-    "metaverse"
+    "Transparent Decision Making",
+    "metaverse",
+    "Accountability",
+    "DAO",
+    "Governance"
   ],
   "ontology": {
     "term_id": "MV-10089",
     "preferred_term": "Transparent Governance",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#TransparentGovernance",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A governance model where rules, processes, decisions, and their enforcement are openly visible, verifiable, and accessible to all stakeholders, typically implemented through blockchain technology, public smart contracts, and open data practices.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -31,7 +37,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Governance"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -46,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "DAO",
+        "Transparent Decision Making",
+        "Accountability"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

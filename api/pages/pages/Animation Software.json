@@ -1,24 +1,31 @@
 {
   "id": "Animation Software",
   "title": "Animation Software",
-  "content": "- ### OntologyBlock\n  id:: animation-software-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9767\n\t- preferred-term:: Animation Software\n\t- status:: stub\n\t- owl:class:: mv:AnimationSoftware\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: animation-software-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: animation-software-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9767\n\t- source-domain:: mv\n\t- preferred-term:: Animation Software\n\t- status:: active\n\t- definition:: Animation Software encompasses digital tools and applications for creating computer-generated moving images through 3D modeling, rigging, motion graphics, rendering, and compositing, supporting the complete animation pipeline from asset creation to final output for games, film, and metaverse content.\n\t- owl:class:: mv:AnimationSoftware\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Digital Content Creation Tools]]\n\t- enables:: [[3D Character Animation]], [[Motion Graphics]], [[Visual Effects]]\n\t- requires:: [[GPU Rendering]], [[3D Modeling]], [[Rigging Systems]]\n\t- #### Relationships\n\t  id:: animation-software-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **3D Modeling**: Creating polygon-based assets (33.2% market share in 2024)\n- **Rigging**: Setting up controllable skeleton structures for character animation\n- **Motion Graphics**: Dynamic visual content merging graphic design with animation\n- **Rendering Pipeline**: Texturing, lighting, camera setting, and final render generation\n\n### Leading Platforms\n- **Blender**: Open-source suite supporting complete 3D pipeline\n- **Cinema 4D**: Professional 3D animation and modeling solution\n- **After Effects**: 2.5D animation for motion graphics and compositing\n- **Unreal Engine 5**: Real-time rendering with cinematic-quality visuals\n\n### 2024 Trends\nAI-driven automation of rotoscoping and motion capture, real-time rendering advancement, and integration of generative AI tools.",
   "backlinks": [
     "ETSI_Domain_Application___Creative"
   ],
   "wiki_links": [
-    "metaverse"
+    "GPU Rendering",
+    "metaverse",
+    "Motion Graphics",
+    "Digital Content Creation Tools",
+    "3D Character Animation",
+    "3D Modeling",
+    "Visual Effects",
+    "Rigging Systems"
   ],
   "ontology": {
     "term_id": "MV-9767",
     "preferred_term": "Animation Software",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#AnimationSoftware",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Animation Software encompasses digital tools and applications for creating computer-generated moving images through 3D modeling, rigging, motion graphics, rendering, and compositing, supporting the complete animation pipeline from asset creation to final output for games, film, and metaverse content.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -48,9 +55,7 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

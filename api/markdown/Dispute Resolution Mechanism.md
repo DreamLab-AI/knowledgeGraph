@@ -7,10 +7,12 @@ id:: dispute-resolution-mechanism-ontology
   - term-id:: DT-0223
   - preferred-term:: Dispute Resolution Mechanism
   - source-domain:: bc
+  - owl:class:: bc:DisputeResolutionMechanism
   - status:: draft
   - definition:: Agreed process and framework for resolving conflicts between metaverse participants through mediation, arbitration, or other structured resolution methods.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Governance Framework]]
 - is-part-of:: [[Trust Infrastructure]]
 - has-part:: [[Evidence Submission System]]

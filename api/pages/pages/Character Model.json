@@ -1,24 +1,35 @@
 {
   "id": "Character Model",
   "title": "Character Model",
-  "content": "- ### OntologyBlock\n  id:: character-model-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9818\n\t- preferred-term:: Character Model\n\t- status:: stub\n\t- owl:class:: mv:CharacterModel\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: character-model-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: character-model-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9818\n\t- source-domain:: mv\n\t- preferred-term:: Character Model\n\t- definition:: A 3D digital representation of a character consisting of a polygonal mesh, textures, and materials, designed with clean topology optimized for animation and real-time rendering, serving as the foundation for rigging, skinning, and character animation workflows.\n\t- status:: active\n\t- owl:class:: mv:CharacterModel\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: character-model-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[3D Model]]\n\t\t- enables:: [[Character Animation]], [[Virtual Avatars]], [[Game Characters]]\n\t\t- requires:: [[3D Modeling Software]], [[Texture Mapping]], [[Topology Design]]\n\t\t- related-to:: [[Character Rigging]], [[Mesh Topology]], [[Avatar System]]\n- ## Technical Details\n\t- **Topology Requirements**:\n\t\t- Clean, evenly distributed mesh (preferably quads)\n\t\t- Suitable polycount for target platform\n\t\t- Symmetrical neutral pose (T-pose or A-pose)\n\t\t- Dense mesh around deformation areas (eyes, shoulders, elbows)\n\t- **Common Issues to Avoid**:\n\t\t- N-Gons (faces with more than 4 edges)\n\t\t- Flipped faces and open edges\n\t\t- Isolated vertices\n\t\t- Poor edge flow around joints\n\t- **Retopology**: Process of converting high-resolution models into optimized meshes suitable for animation and real-time use\n\t- **Tools**: Blender, Maya, 3ds Max, ZBrush, Character Creator, AccuRIG\n- ## Applications\n\t- Video game character creation\n\t- Virtual avatar systems\n\t- Animated film production\n\t- VR/AR character representation\n\t- Metaverse identity systems",
   "backlinks": [
+    "Character Rigging",
     "Narrative Design Ontology"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Game Characters",
+    "Mesh Topology",
+    "Texture Mapping",
+    "Topology Design",
+    "Character Rigging",
+    "Avatar System",
+    "3D Model",
+    "Character Animation",
+    "3D Modeling Software",
+    "Virtual Avatars"
   ],
   "ontology": {
     "term_id": "MV-9818",
     "preferred_term": "Character Model",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#CharacterModel",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A 3D digital representation of a character consisting of a polygonal mesh, textures, and materials, designed with clean topology optimized for animation and real-time rendering, serving as the foundation for rigging, skinning, and character animation workflows.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +41,22 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "3D Model"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "3D Modeling Software",
+      "Texture Mapping",
+      "Topology Design"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Character Animation",
+      "Virtual Avatars",
+      "Game Characters"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +66,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Character Rigging",
+        "Mesh Topology",
+        "Avatar System"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

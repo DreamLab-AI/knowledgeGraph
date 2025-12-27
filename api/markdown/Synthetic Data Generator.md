@@ -8,9 +8,11 @@ id:: synthetic-data-generator-ontology
   - preferred-term:: Synthetic Data Generator
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:SyntheticDataGenerator
   - definition:: AI-powered system that produces artificial datasets preserving statistical properties and structural characteristics of original data while protecting privacy and enabling testing scenarios.
 
 ### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 - is-part-of:: [[AI Pipeline]]
 - is-part-of:: [[Data Management Platform]]
 - has-part:: [[GenerativeModel]]

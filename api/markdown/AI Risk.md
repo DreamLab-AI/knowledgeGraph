@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0076
+	- source-domain:: mv
 	- preferred-term:: AI Risk
 	- status:: draft
 	- public-access:: true

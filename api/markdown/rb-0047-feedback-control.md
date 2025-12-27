@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0047
+	- source-domain:: rb
 	- preferred-term:: rb 0047 feedback control
 	- status:: draft
 	- public-access:: true

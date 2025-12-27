@@ -3,11 +3,12 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0829
+	- source-domain:: ai
 	- preferred-term:: Model
 	- status:: complete
 	- public-access:: true
 	- source:: Chimera Prime Research
-	- maturity:: dt:Established
+	- maturity:: established
 	- owl:class:: ai:Model
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships

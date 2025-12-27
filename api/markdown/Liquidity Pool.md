@@ -7,10 +7,12 @@ id:: liquidity-pool-ontology
   - term-id:: DT-0136
   - preferred-term:: Liquidity Pool
   - source-domain:: bc
+  - owl:class:: bc:LiquidityPool
   - status:: draft
   - definition:: A smart contract-governed reserve of paired cryptocurrency tokens that enables decentralized trading through automated market-making algorithms, providing continuous liquidity without traditional order books.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[DeFi Protocol]]
 - is-part-of:: [[Decentralized Exchange]]
 - is-part-of:: [[Decentralized Exchange (DEX)]]

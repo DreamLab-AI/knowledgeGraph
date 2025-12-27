@@ -1,24 +1,29 @@
 {
   "id": "Participant Protection",
   "title": "Participant Protection",
-  "content": "- ### OntologyBlock\n  id:: participant-protection-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9997\n\t- preferred-term:: Participant Protection\n\t- status:: stub\n\t- owl:class:: mv:ParticipantProtection\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: participant-protection-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: participant-protection-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9997\n\t- source-domain:: mv\n\t- preferred-term:: Participant Protection\n\t- status:: active\n\t- definition:: Policies, technologies, and practices designed to safeguard users' privacy, data, and safety on digital platforms, encompassing regulatory compliance, privacy-enhancing technologies, and platform safety features that protect against data misuse, harassment, and harmful content.\n\t- owl:class:: mv:ParticipantProtection\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: participant-protection-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Safety]]\n\t\t- related-to:: [[Data Privacy]]\n\t\t- related-to:: [[User Safety]]\n\t\t- related-to:: [[Platform Governance]]\n\t\t- enables:: [[Trust in Digital Platforms]]\n\t- #### Regulatory Framework (2024)\n\t  collapsed:: true\n\t\t- EU AI Act entered force August 2024\n\t\t- NIS2 Directive for cybersecurity requirements\n\t\t- California Age-Appropriate Design Code Act (CAADCA)\n\t\t- Oregon Consumer Privacy Act (OCPA)\n\t\t- CPRA enforcement began March 2024\n\t- #### Protection Measures\n\t  collapsed:: true\n\t\t- Privacy-enhancing technologies (PETs)\n\t\t- Two-step verification and encryption\n\t\t- Age verification and child safety controls\n\t\t- Content moderation and reporting tools\n\t\t- User control over personal data sharing",
   "backlinks": [
     "Dispute Resolution Mechanism"
   ],
   "wiki_links": [
-    "metaverse"
+    "Digital Safety",
+    "metaverse",
+    "Data Privacy",
+    "User Safety",
+    "Trust in Digital Platforms",
+    "Platform Governance"
   ],
   "ontology": {
     "term_id": "MV-9997",
     "preferred_term": "Participant Protection",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ParticipantProtection",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Policies, technologies, and practices designed to safeguard users' privacy, data, and safety on digital platforms, encompassing regulatory compliance, privacy-enhancing technologies, and platform safety features that protect against data misuse, harassment, and harmful content.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Digital Safety"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Trust in Digital Platforms"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Data Privacy",
+        "User Safety",
+        "Platform Governance"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

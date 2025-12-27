@@ -7,10 +7,12 @@ id:: nft-wrapping-ontology
   - term-id:: DT-0215
   - preferred-term:: NFT Wrapping
   - source-domain:: bc
+  - owl:class:: bc:NftWrapping
   - status:: draft
   - definition:: Process of encapsulating digital assets within a new token structure to modify usage or ownership rules.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Asset Tokenization]]
 - has-part:: [[Metadata Mapping]]
 - has-part:: [[Token Standard]]

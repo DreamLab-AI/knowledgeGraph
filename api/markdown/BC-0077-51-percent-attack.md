@@ -7,6 +7,7 @@ id:: 51%-attack-ontology
   - term-id:: BC-9983
   - preferred-term:: id:: 51%attackontology
   - source-domain:: bc
+  - owl:class:: bc:Id51attackontology
   - status:: draft
 
 ### Relationships

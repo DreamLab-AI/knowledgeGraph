@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0970
+    - source-domain:: rb
+    - owl:class:: rb:TorqueControl
     - preferred-term:: Torque Control
     - ontology:: true
     - public-access:: true
@@ -17,18 +19,5 @@ Torque Control refers to torque control directly commands actuator torques for c
 
 ## Technical Details
 
-- **Id**: torquecontrol-ontology
-- **Collapsed**: true
-- **Domain Prefix**: RB
-- **Sequence Number**: 0153
-- **Filename History**: ["RB-0153-torquecontrol.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: rb:TorqueControl
-- **Belongstodomain**: [[Robotics]]
-- **Is Subclass Of**: [[Motion Control]]
+- **is-subclass-of**: [[Robotics]]
+- **definition**: Torque control directly commands actuator torques for compliant interaction with the environment.

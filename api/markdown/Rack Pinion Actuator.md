@@ -1,10 +1,11 @@
-Rack and Pinion Actuator
-
 - ### OntologyBlock
-  id:: Rack Pinion Actuator
+  id:: rack-pinion-actuator-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1039
   - preferred-term:: Rack and Pinion Actuator
   - source-domain:: rb
+  - owl:class:: rb:RackPinionActuator
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
+  - definition:: A rack and pinion actuator converts rotary motion into linear motion through a gear mechanism consisting of a circular gear (pinion) engaging a linear gear (rack).

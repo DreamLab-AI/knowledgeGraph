@@ -8,7 +8,8 @@
 	- owl:class:: rb:SafetyLaserScanner
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- is-subclass-of:: [[Robotics]]
+	- definition:: A safety laser scanner is a critical component providing non-contact detection of objects and personnel to ensure operational safety by emitting laser beams and triggering responses when protected zones are breached.
 	- maturity:: draft
 
 ## Academic Context

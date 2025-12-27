@@ -1,24 +1,29 @@
 {
   "id": "Participant Management System",
   "title": "Participant Management System",
-  "content": "- ### OntologyBlock\n  id:: participant-management-system-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9996\n\t- preferred-term:: Participant Management System\n\t- status:: stub\n\t- owl:class:: mv:ParticipantManagementSystem\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: participant-management-system-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: participant-management-system-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9996\n\t- source-domain:: mv\n\t- preferred-term:: Participant Management System\n\t- status:: active\n\t- definition:: A platform for organizing event attendees through registration, invitation management, check-in tracking, and real-time attendance monitoring, providing tools for ticketing, payment processing, and post-event analytics.\n\t- owl:class:: mv:ParticipantManagementSystem\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: participant-management-system-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Event Management]]\n\t\t- related-to:: [[Registration Systems]]\n\t\t- related-to:: [[Attendance Tracking]]\n\t\t- related-to:: [[Virtual Events]]\n\t\t- enables:: [[Event Analytics]]\n\t- #### Core Features\n\t  collapsed:: true\n\t\t- Online registration and ticketing\n\t\t- Invitation management and RSVP tracking\n\t\t- Real-time check-in and badge printing\n\t\t- Attendee behavior analytics\n\t\t- Session and activity tracking\n\t- #### Leading Platforms\n\t  collapsed:: true\n\t\t- Eventleaf for conference management\n\t\t- AirLST for participant and invitation workflows\n\t\t- RSVPify for event registration\n\t\t- SpotMe for enterprise events (Forrester Leader 2024)\n\t\t- Cvent for attendee behavior insights",
   "backlinks": [
     "Digital Citizens' Assembly"
   ],
   "wiki_links": [
-    "metaverse"
+    "Event Analytics",
+    "metaverse",
+    "Virtual Events",
+    "Event Management",
+    "Attendance Tracking",
+    "Registration Systems"
   ],
   "ontology": {
     "term_id": "MV-9996",
     "preferred_term": "Participant Management System",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ParticipantManagementSystem",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A platform for organizing event attendees through registration, invitation management, check-in tracking, and real-time attendance monitoring, providing tools for ticketing, payment processing, and post-event analytics.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Event Management"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Event Analytics"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Registration Systems",
+        "Attendance Tracking",
+        "Virtual Events"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

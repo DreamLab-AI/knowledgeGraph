@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0045
+	- source-domain:: mv
 	- preferred-term:: Oracle
 	- status:: draft
 	- public-access:: true
@@ -27,3 +28,6 @@
 ;; Data Properties
 (AnnotationAssertion dcterms:identifier :Oracle "mv-1761742247950"^^xsd:string)
 ```
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

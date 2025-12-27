@@ -3,11 +3,12 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0502
+	- source-domain:: ai
 	- preferred-term:: AIEthics
 	- status:: active
 	- public-access:: true
 	- definition:: The branch of ethics examining moral principles and guidelines for the development, deployment, and governance of artificial intelligence systems to ensure they benefit humanity.
-	- maturity:: dt:Mature
+	- maturity:: mature
 	- owl:class:: ai:AIEthics
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Framework
@@ -17,6 +18,7 @@
 ### Relationships
 
 
+- is-subclass-of:: [[Artificial Intelligence]]
 ## OWL Formal Semantics
 
 ```clojure
@@ -49,10 +51,10 @@
 		    - **TRL:** 7
 		    - **Quality Score:** 0.91
 		    - ```turtle
-		      aigo:AIEthics rdf:type owl:Class ;
+		      ai:AIEthics rdf:type owl:Class ;
 		          rdfs:label "AI Ethics"@en ;
 		          rdfs:comment "Ethical principles, guidelines, and frameworks governing the development and deployment of artificial intelligence systems."@en ;
-		          meta:sourceOntology "aigo:" ;
+		          meta:sourceOntology "ai:" ;
 		          meta:technologyDomain "artificial-intelligence" ;
 		          meta:disruptiveTechCategory "artificial-intelligence-systems" ;
 		          meta:technologyReadinessLevel "7"^^xsd:integer ;

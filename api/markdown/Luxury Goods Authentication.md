@@ -16,6 +16,7 @@ id:: bc-0444-luxury-goods-authentication-ontology collapsed:: true - ontology:: 
 	- maturity:: mature
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 
 ### Quality Metrics
 	- authority-score:: 0.90

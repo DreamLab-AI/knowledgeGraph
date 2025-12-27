@@ -5,7 +5,9 @@ id:: rb-0012-wheeled-mobile-robot-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0012
-  - preferred-term:: rb 0012 wheeled mobile robot
+  - preferred-term:: Wheeled Mobile Robot
   - source-domain:: rb
+  - owl:class:: rb:WheeledMobileRobot
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
   - definition:: ### Primary Definition

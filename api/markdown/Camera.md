@@ -4,14 +4,13 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: RB-0076
-	- preferred-term:: rb 0076 camera
+	- preferred-term:: Camera
 	- source-domain:: rb
+	- owl:class:: rb:Camera
+	- is-subclass-of:: [[Robotics]]
 	- status:: draft
-	- definition:: ### Primary Definition
-**Camera** - Camera in robotics systems
+	- definition:: A camera is an imaging sensor used in robotics systems for visual perception and computer vision applications.
 	- maturity:: draft
-	- owl:class:: mv:rb0076camera
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
-	- is-subclass-of:: [[ExteroceptiveSensors]]

@@ -22,6 +22,7 @@
 	- maturity:: mature
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 id:: cloud-rendering-service-relationships
 		- uses:: [[Metaverse Infrastructure]]
 		- has-part:: [[Rendering Pipeline]], [[Streaming Encoder]], [[Load Balancer]]
@@ -86,10 +87,10 @@ id:: cloud-rendering-service-relationships
 		  SubClassOf(mv:ClientDevice mv:PhysicalObject)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:requires)
+  AsymmetricObjectProperty(mv:requires)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:enables)
+  AsymmetricObjectProperty(mv:enables)
 ```
 - ## About Cloud Rendering Services
   id:: cloud-rendering-service-about

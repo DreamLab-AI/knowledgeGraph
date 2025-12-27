@@ -1,24 +1,31 @@
 {
   "id": "Arbitration Decision Engine",
   "title": "Arbitration Decision Engine",
-  "content": "- ### OntologyBlock\n  id:: arbitration-decision-engine-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9773\n\t- preferred-term:: Arbitration Decision Engine\n\t- status:: stub\n\t- owl:class:: mv:ArbitrationDecisionEngine\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: arbitration-decision-engine-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: arbitration-decision-engine-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9773\n\t- source-domain:: mv\n\t- preferred-term:: Arbitration Decision Engine\n\t- status:: active\n\t- definition:: Arbitration Decision Engine is an AI-powered or smart contract-based automated system that evaluates evidence, applies predetermined rules, and renders decisions in dispute resolution processes, functioning as an oracle that can trigger smart contract modifications and enable self-enforcing arbitral outcomes.\n\t- owl:class:: mv:ArbitrationDecisionEngine\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Automated Dispute Resolution]]\n\t- enables:: [[Self-Enforcing Awards]], [[Decentralized Arbitration]], [[Smart Contract Resolution]]\n\t- requires:: [[Evidence Authentication]], [[Rule Encoding]], [[Blockchain Integration]]\n\t- #### Relationships\n\t  id:: arbitration-decision-engine-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **AI-Based Evaluation Layer**: Transformer and LSTM models classifying, interpreting, and evaluating evidence\n- **Smart Contract Agreement Layer**: Encoded legal terms and self-executing arbitration clauses\n- **Evidence Management Layer**: Blockchain-based authentication ensuring integrity, authenticity, and traceability\n- **Oracle Function**: Decisions automatically trigger or modify smart contracts, enabling self-enforcement\n\n### Platforms and Implementations\n- **Kleros**: DAO on Ethereum arbitrating disputes using decentralized juror pools (500 disputes resolved by 2020)\n- **UK Digital Dispute Resolution Rules**: Allowing parties to choose AI agents for automated dispute resolution\n- **LCAM Blockchain Expedited Arbitration Rules**: Effective December 2024, ensuring on-chain and off-chain award enforceability\n\n### Benefits and Challenges\nBenefits include transparent tamper-proof ledgers, reduced time and costs, and automatic award enforcement without court intervention. Challenges include privacy concerns, enforceability of smart awards, and difficulty maintaining pseudonymity in decentralized decision-making.",
   "backlinks": [
     "E-Contract Arbitration"
   ],
   "wiki_links": [
-    "metaverse"
+    "Blockchain Integration",
+    "Rule Encoding",
+    "metaverse",
+    "Automated Dispute Resolution",
+    "Evidence Authentication",
+    "Decentralized Arbitration",
+    "Smart Contract Resolution",
+    "Self-Enforcing Awards"
   ],
   "ontology": {
     "term_id": "MV-9773",
     "preferred_term": "Arbitration Decision Engine",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ArbitrationDecisionEngine",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Arbitration Decision Engine is an AI-powered or smart contract-based automated system that evaluates evidence, applies predetermined rules, and renders decisions in dispute resolution processes, functioning as an oracle that can trigger smart contract modifications and enable self-enforcing arbitral outcomes.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -48,9 +55,7 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

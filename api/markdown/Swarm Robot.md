@@ -1,11 +1,11 @@
-id:: swarm-robot-ontology
-
 - ### OntologyBlock
-  id:: Swarm Robot
+  id:: swarm-robot-ontology
   - ontology:: true
   - public-access:: true
-  - term-id:: MV-0924
+  - term-id:: RB-0020
   - preferred-term:: Swarm Robot
   - source-domain:: rb
+  - owl:class:: rb:SwarmRobot
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: A swarm robot is a member of a multi-robot system that uses distributed coordination and collective behavior inspired by biological swarms.

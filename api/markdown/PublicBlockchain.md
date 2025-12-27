@@ -7,6 +7,7 @@ id:: publicblockchain-ontology
   - term-id:: MV-0049
   - preferred-term:: PublicBlockchain
   - source-domain:: bc
+  - owl:class:: bc:Publicblockchain
   - status:: draft
   - definition:: A component of the metaverse ecosystem.
 

@@ -5,6 +5,8 @@ id:: generativemodel-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: AI-0840
+  - source-domain:: ai
+  - owl:class:: ai:GenerativeModel
   - preferred-term:: Generative Model
   - status:: deprecated
 

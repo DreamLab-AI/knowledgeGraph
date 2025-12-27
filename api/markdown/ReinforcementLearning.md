@@ -3,11 +3,12 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0503
+	- source-domain:: ai
 	- preferred-term:: ReinforcementLearning
 	- status:: active
 	- public-access:: true
 	- definition:: A machine learning paradigm where an agent learns to make decisions by interacting with an environment, receiving rewards or penalties, and optimizing behavior to maximize cumulative rewards.
-	- maturity:: dt:Mature
+	- maturity:: mature
 	- owl:class:: ai:ReinforcementLearning
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Technique
@@ -29,6 +30,7 @@
 (AnnotationAssertion dcterms:identifier :Reinforcementlearning "mv-1761742247961"^^xsd:string)
 ```
 	- #### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 	  id:: relationships
 	  collapsed:: true
 

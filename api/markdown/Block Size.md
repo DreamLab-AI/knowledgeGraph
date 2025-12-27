@@ -7,6 +7,7 @@ id:: block-size-ontology
   - term-id:: BC-0013
   - preferred-term:: Block Size
   - source-domain:: bc
+  - owl:class:: bc:BlockSize
   - status:: complete
   - definition:: Data capacity limit of a block within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

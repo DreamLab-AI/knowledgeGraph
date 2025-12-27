@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0032
+	- source-domain:: rb
 	- preferred-term:: rb 0032 manipulability
 	- status:: draft
 	- public-access:: true

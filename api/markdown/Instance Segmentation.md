@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0360
+	- source-domain:: mv
 	- preferred-term:: Instance Segmentation
 	- status:: draft
 	- public-access:: true

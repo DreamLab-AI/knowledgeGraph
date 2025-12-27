@@ -5,6 +5,7 @@
   - preferred-term:: Online Learning
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:OnlineLearning
 
 ### Relationships
 - is-subclass-of:: [[Machine Learning]]

@@ -8,9 +8,11 @@ id:: validation-process-ontology
   - preferred-term:: Validation Process
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:ValidationProcess
   - definition:: Activity of systematically checking whether systems, components, or implementations satisfy specified requirements, standards, and compliance criteria through verification testing and quality assurance procedures.
 
 ### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 - has-part:: [[Standards Validation]]
 - has-part:: [[Test Execution]]
 - has-part:: [[Results Analysis]]

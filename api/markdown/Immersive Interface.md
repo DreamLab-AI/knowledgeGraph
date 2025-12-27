@@ -7,6 +7,8 @@ id:: immersive-interface-ontology
   - term-id:: MV-9925
   - preferred-term:: Immersive Interface
   - source-domain:: mv
+  - owl:class:: mv:ImmersiveInterface
   - status:: stub
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]

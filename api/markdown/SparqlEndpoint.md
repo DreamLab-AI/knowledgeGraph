@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-1005
+	- source-domain:: mv
 	- preferred-term:: SparqlEndpoint
 	- status:: complete
 	- public-access:: true

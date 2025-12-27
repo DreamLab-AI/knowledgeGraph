@@ -3,11 +3,12 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0847
+	- source-domain:: ai
 	- preferred-term:: Behavioral Modeling
 	- status:: complete
 	- public-access:: true
 	- source:: Chimera Prime Research
-	- maturity:: dt:Established
+	- maturity:: established
 	- owl:class:: ai:BehavioralModeling
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships

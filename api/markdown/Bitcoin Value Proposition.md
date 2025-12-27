@@ -7,6 +7,7 @@ id:: 661d5f6a-ce5e-479e-8722-2128890607bd
   - term-id:: BC-9951
   - preferred-term:: id:: 661d5f6ace5e479e87222128890607bd
   - source-domain:: bc
+  - owl:class:: bc:Id661d5f6ace5e479e87222128890607bd
   - status:: draft
 
 ### Demand Paradox
@@ -328,3 +329,6 @@ id:: 661d5f6a-ce5e-479e-8722-2128890607bd
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

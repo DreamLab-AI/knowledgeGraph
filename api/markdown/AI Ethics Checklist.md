@@ -7,6 +7,7 @@ id:: ai-ethics-checklist-ontology
   - term-id:: DT-0220
   - preferred-term:: AI Ethics Checklist
   - source-domain:: mv
+  - owl:class:: mv:AiEthicsChecklist
   - status:: deprecated
   - definition:: Structured verification process evaluating fairness, accountability, transparency, and ethical compliance of AI systems against established governance frameworks.
 

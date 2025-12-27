@@ -8,6 +8,7 @@ id:: privacypreservinganalytics-ontology
   - preferred-term:: PrivacyPreservingAnalytics
   - source-domain:: ai
   - status:: complete
+  - owl:class:: ai:Privacypreservinganalytics
   - definition:: A privacy preserving analytics component in the Artificial Intelligence domain that enables EtsiDomainDataManagementEthics.
 
 ### Relationships

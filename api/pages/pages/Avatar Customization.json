@@ -1,22 +1,31 @@
 {
   "id": "Avatar Customization",
   "title": "Avatar Customization",
-  "content": "- ### OntologyBlock\n  id:: Avatar Customization\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9789\n  - preferred-term:: Avatar Customization\n  - source-domain:: mv\n  - status:: stub\n\n### Relationships",
+  "content": "- ### OntologyBlock\n  id:: Avatar Customization\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9789\n  - preferred-term:: Avatar Customization\n  - source-domain:: mv\n  - owl:class:: mv:AvatarCustomization\n  - status:: active\n  - definition:: Avatar Customization is the practice of modifying and personalizing digital avatar attributes including physical features, clothing, accessories, animations, and expressions to create unique virtual representations that reflect user identity and preferences in metaverse environments.\n  - is-subclass-of:: [[Digital Personalization]]\n  - enables:: [[Self-Expression]], [[Identity Representation]], [[Social Distinction]]\n  - requires:: [[Customization Tools]], [[Asset Libraries]], [[Real-Time Preview]]\n\n### Technical Details\nKey customization elements include:\n- **Physical Features**: Face shape, skin tone, hair style, body proportions, and biometric details\n- **Clothing and Accessories**: Outfits, jewelry, glasses, and wearable items\n- **Animations**: Custom gestures, movement styles, and emotes\n- **Expression Systems**: Facial animations, eye tracking, and lip sync\n\n### Customization Approaches\n- **Slider-Based**: Parametric controls for continuous adjustment of features\n- **Preset Libraries**: Curated combinations of features for quick selection\n- **AI-Assisted**: Recommendation systems suggesting combinations based on preferences\n- **Direct Upload**: User-created textures and models integration\n\n### Identity and Expression\nAvatar customization serves as cornerstone of self-expression in the metaverse, enabling users to mirror real-life identity or experiment with alternative personas. Virtually limitless possibilities from hairstyles to fine-tuned facial features support unique digital identities.",
   "backlinks": [
+    "Personalized Virtual Experiences",
     "ETSI_Domain_Creative_Media"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "Social Distinction",
+    "Self-Expression",
+    "Customization Tools",
+    "Digital Personalization",
+    "Asset Libraries",
+    "Identity Representation",
+    "Real-Time Preview"
+  ],
   "ontology": {
     "term_id": "MV-9789",
     "preferred_term": "Avatar Customization",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/metaverse#AvatarCustomization",
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Avatar Customization is the practice of modifying and personalizing digital avatar attributes including physical features, clothing, accessories, animations, and expressions to create unique virtual representations that reflect user identity and preferences in metaverse environments.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -24,7 +33,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "mv:AvatarCustomization",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -45,8 +54,6 @@
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

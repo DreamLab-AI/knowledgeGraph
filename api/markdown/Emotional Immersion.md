@@ -7,10 +7,12 @@ id:: emotional-immersion-ontology
   - term-id:: DT-0254
   - preferred-term:: Emotional Immersion
   - source-domain:: mv
+  - owl:class:: mv:EmotionalImmersion
   - status:: draft
   - definition:: Psychological absorption and empathetic engagement experienced during virtual interaction, characterized by affective resonance with virtual content and reduced awareness of physical surroundings.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[User Engagement]]
 - is-part-of:: [[Immersion]]
 - requires:: [[Affective Design]]

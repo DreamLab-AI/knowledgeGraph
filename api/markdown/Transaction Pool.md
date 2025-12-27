@@ -7,6 +7,7 @@ id:: transaction-pool-ontology
   - term-id:: DT-0018
   - preferred-term:: Transaction Pool
   - source-domain:: bc
+  - owl:class:: bc:TransactionPool
   - status:: complete
   - definition:: Pending unconfirmed transactions within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

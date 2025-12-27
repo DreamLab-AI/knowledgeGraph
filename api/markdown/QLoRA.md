@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0255
+	- source-domain:: mv
 	- preferred-term:: QLoRA
 	- status:: draft
 	- public-access:: true

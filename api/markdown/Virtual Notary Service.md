@@ -7,10 +7,12 @@ id:: virtual-notary-service-ontology
   - term-id:: DT-0279
   - preferred-term:: Virtual Notary Service
   - source-domain:: bc
+  - owl:class:: bc:VirtualNotaryService
   - status:: draft
   - definition:: Autonomous agent providing cryptographic attestation, timestamping, and verification services for digital documents and transactions through distributed ledger anchoring and automated certification protocols.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - has-part:: [[Digital Signature Verification]]
 - has-part:: [[Hash Function Module]]
 - has-part:: [[Verification Protocol]]

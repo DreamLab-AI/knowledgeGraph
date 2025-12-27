@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-9003
+	- source-domain:: mv
 	- preferred-term:: Inflation Control
 	- status:: draft
 	- public-access:: true
@@ -14,3 +15,6 @@
 	- owl:role:: Process
 	- belongsToDomain:: [[MetaverseDomain]]
 	- isSubclassOf:: [[Virtual Economy]]
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

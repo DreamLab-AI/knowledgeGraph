@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-1008
+	- source-domain:: mv
 	- preferred-term:: GuaranteedBandwidth
 	- status:: complete
 	- public-access:: true

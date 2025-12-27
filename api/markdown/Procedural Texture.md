@@ -7,10 +7,12 @@ id:: procedural-texture-ontology
   - term-id:: DT-0193
   - preferred-term:: Procedural Texture
   - source-domain:: mv
+  - owl:class:: mv:ProceduralTexture
   - status:: draft
   - definition:: Algorithmically generated pattern used to simulate surface detail without stored images, computed on-demand using mathematical functions.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Material System]]
 - is-part-of:: [[Rendering Pipeline]]
 - has-part:: [[Pattern Generator]]

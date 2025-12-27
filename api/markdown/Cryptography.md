@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0026
+	- source-domain:: bc
 	- preferred-term:: Cryptography
 	- status:: complete
 	- public-access:: true
@@ -20,3 +21,6 @@
 - **is-subclass-of** [[dt:MathematicalScience]] (disruptive-technologies) - owl:someValuesFrom
 - **is-subclass-of** [[dt:SecurityTechnology]] (disruptive-technologies) - owl:someValuesFrom
 - **is-subclass-of** [[dt:InformationProtection]] (disruptive-technologies) - owl:someValuesFrom
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

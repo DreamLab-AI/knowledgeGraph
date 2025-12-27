@@ -11,4 +11,5 @@ id:: opticalsensorarray-ontology
   - definition:: A optical sensor array component in the Robotics domain that required by BiometricBindingMechanism.
 
 ### Relationships
-- is-subclass-of:: [[Sensor Hardware]]
+- is-subclass-of:: [[Robotics]]
+  - owl:class:: rb:OpticalSensorArray

@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: AI-0818
+    - source-domain:: ai
+    - owl:class:: ai:PretrainedWeights
     - preferred-term:: Pretrained Weights
     - ontology:: true
     - public-access:: true

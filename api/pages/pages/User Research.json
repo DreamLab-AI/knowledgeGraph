@@ -1,22 +1,27 @@
 {
   "id": "User Research",
   "title": "User Research",
-  "content": "- ### OntologyBlock\n  id:: User Research\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-10099\n  - preferred-term:: User Research\n  - status:: stub\n\n### Relationships",
+  "content": "- ### OntologyBlock\n  id:: User Research\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10099\n\t- source-domain:: mv\n\t- owl:class:: mv:UserResearch\n\t- preferred-term:: User Research\n\t- status:: active\n\t- definition:: Systematic investigation of user behaviors, needs, preferences, and experiences in metaverse environments through qualitative and quantitative methods to inform design decisions and improve virtual world experiences.\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Research Methods]]\n\t\t- related-to:: [[User Experience]]\n\t\t- related-to:: [[Usability Testing]]\n\t\t- related-to:: [[Human-Computer Interaction]]\n- ## Overview\n\t- User research in metaverse contexts involves studying how people interact with virtual environments, avatars, and spatial interfaces. This includes understanding user mental models, navigation patterns, social behaviors, and comfort levels in immersive experiences.\n- ## Technical Details\n\t- ### Research Methods\n\t\t- **Observational Studies**: Tracking user behavior in virtual environments\n\t\t- **Usability Testing**: Task-based evaluation of XR interfaces\n\t\t- **Surveys and Interviews**: Gathering subjective feedback\n\t\t- **Biometric Analysis**: Eye tracking, physiological responses\n\t\t- **A/B Testing**: Comparing design variations\n\t- ### XR-Specific Metrics\n\t\t- Presence and immersion levels\n\t\t- Cybersickness and comfort\n\t\t- Spatial awareness and navigation\n\t\t- Social presence and avatar embodiment\n\t\t- Task completion in 3D environments\n\t- ### Data Collection Tools\n\t\t- In-VR observation systems\n\t\t- Telemetry and analytics platforms\n\t\t- Eye and gaze tracking\n\t\t- Motion analysis systems\n- ## Applications\n\t- Metaverse platform design optimization\n\t- VR game user experience research\n\t- Enterprise XR training effectiveness\n\t- Accessibility and inclusive design\n\t- Avatar and identity preference studies",
   "backlinks": [
     "XR Accessibility Guideline"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "Human-Computer Interaction",
+    "Usability Testing",
+    "User Experience",
+    "Research Methods"
+  ],
   "ontology": {
     "term_id": "MV-10099",
     "preferred_term": "User Research",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": null,
+    "iri": "http://narrativegoldmine.com/metaverse#UserResearch",
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Systematic investigation of user behaviors, needs, preferences, and experiences in metaverse environments through qualitative and quantitative methods to inform design decisions and improve virtual world experiences.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -24,11 +29,13 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "mv:UserResearch",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Research Methods"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -41,16 +48,19 @@
     "belongs_to_domain": [],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "User Experience",
+        "Usability Testing",
+        "Human-Computer Interaction"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

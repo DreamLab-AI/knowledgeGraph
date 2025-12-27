@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0263
+	- source-domain:: mv
 	- preferred-term:: Digital Asset Workflow
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[VirtualEconomyDomain]], [[CreativeMediaDomain]]
 	- implementedInLayer:: [[DataLayer]], [[MiddlewareLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: digital-asset-workflow-relationships
 	  collapsed:: true
 		- is-part-of:: [[Creator Economy]]

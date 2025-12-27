@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0299
+	- source-domain:: mv
 	- preferred-term:: Threat Surface Map
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[InfrastructureDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: threat-surface-map-relationships
 	  collapsed:: true
 		- is-part-of:: [[Security Architecture]]

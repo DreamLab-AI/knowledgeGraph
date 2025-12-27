@@ -7,6 +7,7 @@ id:: longest-chain-rule-ontology
   - term-id:: DT-0992
   - preferred-term:: Longest Chain Rule
   - source-domain:: bc
+  - owl:class:: bc:LongestChainRule
   - status:: complete
   - definition:: Chain selection mechanism within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

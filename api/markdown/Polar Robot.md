@@ -1,10 +1,11 @@
-Polar Robot
-
 - ### OntologyBlock
-  id:: Polar Robot
+  id:: polar-robot-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1054
   - preferred-term:: Polar Robot
   - source-domain:: rb
+  - owl:class:: rb:PolarRobot
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
+  - definition:: A polar robot features a spherical coordinate workspace with two rotary joints and one prismatic joint.

@@ -7,10 +7,12 @@ id:: visualization-layer-ontology
   - term-id:: DT-0176
   - preferred-term:: Visualization Layer
   - source-domain:: mv
+  - owl:class:: mv:VisualizationLayer
   - status:: draft
   - definition:: Graphics and rendering systems responsible for displaying virtual environments, objects, and interfaces through advanced rendering pipelines and visual processing.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Presentation Infrastructure]]
 - has-part:: [[Rendering Engine]]
 - has-part:: [[Display Manager]]

@@ -7,6 +7,7 @@ id:: unknown-ontology
   - term-id:: MV-0938
   - preferred-term:: BC 0109 priority fee
   - source-domain:: mv
+  - owl:class:: mv:Bc0109PriorityFee
   - status:: verified
   - definition:: ### Primary Definition
 

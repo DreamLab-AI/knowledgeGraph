@@ -21,6 +21,7 @@
   - term-id:: BC-9896
   - preferred-term:: 2
   - source-domain:: bc
+  - owl:class:: bc:2
   - status:: draft
 
 ### Overview of Government Data Acquisition Practices
@@ -91,3 +92,6 @@
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

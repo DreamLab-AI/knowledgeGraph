@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-9004
+	- source-domain:: ai
 	- preferred-term:: TPU
 	- status:: draft
 	- public-access:: true
@@ -14,3 +15,7 @@
 	- owl:role:: Object
 	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- isSubclassOf:: [[AI Hardware]]
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

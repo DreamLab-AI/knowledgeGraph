@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0046
+	- source-domain:: mv
 	- preferred-term:: PathPlanning
 	- status:: draft
 	- public-access:: true
@@ -15,3 +16,6 @@
 
 - uses:: [[Computer Vision]]
 - uses:: [[Machine Learning]]
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

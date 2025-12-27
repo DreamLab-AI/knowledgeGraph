@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0153
+	- source-domain:: mv
 	- preferred-term:: Haptics
 	- status:: draft
 	- public-access:: true

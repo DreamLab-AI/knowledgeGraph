@@ -8,3 +8,8 @@ AI-0413-DiversityNonDiscriminationFairness
   - preferred-term:: Ai 0413 Diversitynondiscriminationfairness
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0413Diversitynondiscriminationfairness
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

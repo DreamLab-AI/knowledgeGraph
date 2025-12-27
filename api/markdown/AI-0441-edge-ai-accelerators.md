@@ -8,3 +8,8 @@ AI-0441-edge-ai-accelerators
   - preferred-term:: Ai 0441 Edge Ai Accelerators
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0441EdgeAiAccelerators
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

@@ -1,24 +1,34 @@
 {
   "id": "Binary Buffer",
   "title": "Binary Buffer",
-  "content": "- ### OntologyBlock\n  id:: binary-buffer-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9799\n\t- preferred-term:: Binary Buffer\n\t- status:: stub\n\t- owl:class:: mv:BinaryBuffer\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: binary-buffer-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: binary-buffer-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9799\n\t- source-domain:: mv\n\t- preferred-term:: Binary Buffer\n\t- definition:: A contiguous region of memory used to temporarily store binary data during transfer, processing, or rendering operations, serving as an intermediary between data sources and destinations in graphics pipelines, network communications, and computational workflows.\n\t- status:: active\n\t- owl:class:: mv:BinaryBuffer\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: binary-buffer-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Data Structure]]\n\t\t- enables:: [[Data Transfer]], [[Graphics Rendering]], [[Stream Processing]]\n\t\t- requires:: [[Memory Allocation]], [[Data Formatting]], [[Buffer Management]]\n\t\t- related-to:: [[Framebuffer]], [[Vertex Buffer]], [[Memory Management]]\n- ## Technical Details\n\t- **Buffer Types**:\n\t\t- **Framebuffer**: Contains bitmap data driving video displays, representing all pixels in a complete video frame\n\t\t- **Vertex Buffer**: Stores 3D geometry data for GPU processing\n\t\t- **Index Buffer**: Contains indices referencing vertex data\n\t\t- **Uniform Buffer**: Holds shader parameters and constants\n\t- **Memory Technologies**:\n\t\t- DRAM (DDR5, LPDDR5, GDDR6, HBM3)\n\t\t- 3D stacked memory with through-silicon vias (TSVs)\n\t\t- Computing-in-memory (CIM) architectures\n\t- **Modern Developments**:\n\t\t- 3D vertical integration using hybrid-bonding technology\n\t\t- Processing-in-memory (PIM) for reduced latency\n\t\t- CXL memory interface for AI/ML workloads\n- ## Applications\n\t- Real-time 3D graphics rendering\n\t- Video display frame management\n\t- Network packet buffering\n\t- GPU compute operations\n\t- AI/ML data preprocessing",
   "backlinks": [
     "glTF (3D File Format)"
   ],
   "wiki_links": [
-    "metaverse"
+    "Stream Processing",
+    "Buffer Management",
+    "Data Formatting",
+    "metaverse",
+    "Graphics Rendering",
+    "Data Structure",
+    "Data Transfer",
+    "Framebuffer",
+    "Vertex Buffer",
+    "Memory Allocation",
+    "Memory Management"
   ],
   "ontology": {
     "term_id": "MV-9799",
     "preferred_term": "Binary Buffer",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#BinaryBuffer",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A contiguous region of memory used to temporarily store binary data during transfer, processing, or rendering operations, serving as an intermediary between data sources and destinations in graphics pipelines, network communications, and computational workflows.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +40,22 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Data Structure"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Memory Allocation",
+      "Data Formatting",
+      "Buffer Management"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Data Transfer",
+      "Graphics Rendering",
+      "Stream Processing"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +65,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Framebuffer",
+        "Vertex Buffer",
+        "Memory Management"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

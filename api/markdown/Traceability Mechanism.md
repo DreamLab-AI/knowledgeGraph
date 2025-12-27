@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: DT-0013
 	- preferred-term:: Traceability Mechanism
-	- source-domain:: pc
+	- source-domain:: ai
 	- status:: complete
 	- public-access:: true
 
@@ -12,7 +12,7 @@
 
 
 ### OWL Classification
-	- owl:class:: aigo:TraceabilityMechanism
+	- owl:class:: ai:TraceabilityMechanism
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- owl:inferred-class:: ConceptualConcept
@@ -47,7 +47,7 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:TraceabilityMechanism
+    - owl:class:: ai:TraceabilityMechanism
     - owl:physicality:: ConceptualEntity
     - owl:role:: Concept
     - owl:inferred-class:: ConceptualConcept

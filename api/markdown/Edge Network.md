@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0143
+	- source-domain:: mv
 	- preferred-term:: Edge Network
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[InfrastructureDomain]], [[ComputationAndIntelligenceDomain]]
 	- implementedInLayer:: [[NetworkLayer]], [[ComputeLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: edge-network-relationships
 	  collapsed:: true
 		- has-part:: [[Network Management System]]

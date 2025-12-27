@@ -7,6 +7,7 @@ id:: metaverse_ontology_schema-ontology
   - term-id:: MV-0850
   - preferred-term:: Metaverse_Ontology_Schema
   - source-domain:: mv
+  - owl:class:: mv:MetaverseOntologySchema
   - status:: deprecated
   - definition:: ` - Formal standards-style definition
 
@@ -16,3 +17,6 @@ id:: metaverse_ontology_schema-ontology
 **Status**: deprecated
 **Merge Date**: 2025-11-23
 **Reason**: Duplicate entity consolidation
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

@@ -1,25 +1,30 @@
 {
   "id": "Network Function Virtualization",
   "title": "Network Function Virtualization",
-  "content": "- ### OntologyBlock\n  id:: network-function-virtualization-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9982\n\t- preferred-term:: Network Function Virtualization\n\t- status:: stub\n\t- owl:class:: mv:NetworkFunctionVirtualization\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: network-function-virtualization-relationships\n\t  collapsed:: true\n\n\t\t\t- is-associated-with:: [[G Network Slice]]",
+  "content": "- ### OntologyBlock\n  id:: network-function-virtualization-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9982\n\t- source-domain:: mv\n\t- preferred-term:: Network Function Virtualization\n\t- status:: active\n\t- definition:: A network architecture approach that decouples network functions from proprietary hardware by deploying them as virtual machines or containers on commercial off-the-shelf servers, enabling flexible, scalable network services without vendor lock-in.\n\t- owl:class:: mv:NetworkFunctionVirtualization\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: network-function-virtualization-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Network Architecture]]\n\t\t- related-to:: [[Cloud Computing]]\n\t\t- related-to:: [[Software Defined Networking]]\n\t\t- is-associated-with:: [[G Network Slice]]\n\t\t- enables:: [[Network Scalability]]\n\t- #### ETSI Architecture\n\t  collapsed:: true\n\t\t- NFV Infrastructure (NFVI): Compute, storage, and network resources\n\t\t- Virtual Network Functions (VNFs): Software implementations of network functions\n\t\t- NFV Management and Orchestration (MANO): Lifecycle management layer\n\t\t- Cloud-Native Network Functions (CNFs): Container-based evolution using microservices\n\t- #### Market Context\n\t  collapsed:: true\n\t\t- Market valued at approximately USD 35-40 billion in 2024\n\t\t- Projected to reach USD 240+ billion by 2033-2034\n\t\t- Growth driven by 5G adoption and IoT scalability demands\n\t\t- China investing USD 2 billion in 2024 for national NFV infrastructure\n\t\t- US FCC initiating USD 1.2 billion program for NFV deployment",
   "backlinks": [
-    "6G Network Slice"
+    "6G Network Slice",
+    "Physical Network Hardware"
   ],
   "wiki_links": [
+    "Software Defined Networking",
+    "Cloud Computing",
     "metaverse",
-    "G Network Slice"
+    "Network Scalability",
+    "G Network Slice",
+    "Network Architecture"
   ],
   "ontology": {
     "term_id": "MV-9982",
     "preferred_term": "Network Function Virtualization",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#NetworkFunctionVirtualization",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A network architecture approach that decouples network functions from proprietary hardware by deploying them as virtual machines or containers on commercial off-the-shelf servers, enabling flexible, scalable network services without vendor lock-in.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -31,12 +36,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Network Architecture"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Network Scalability"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -47,6 +56,10 @@
     "implemented_in_layer": [],
     "source": [],
     "other_relationships": {
+      "related-to": [
+        "Cloud Computing",
+        "Software Defined Networking"
+      ],
       "is-associated-with": [
         "G Network Slice"
       ]
@@ -54,12 +67,9 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

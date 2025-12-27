@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0259
+	- source-domain:: mv
 	- preferred-term:: Digital Well-Being Index
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[VirtualSocietyDomain]], [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[Middleware Layer]], [[Application Layer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: digital-well-being-index-relationships
 	  collapsed:: true
 		- is-part-of:: [[Platform Governance Framework]]

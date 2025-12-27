@@ -8,7 +8,7 @@
 	- status:: complete
 	- public-access:: true
 	- definition:: AI-powered techniques for enhancing image and video resolution using deep learning models to generate high-resolution outputs from low-resolution inputs, including super-resolution, interpolation, and detail enhancement
-	- maturity:: dt:Mature
+	- maturity:: mature
 	- owl:class:: ai:AiUpscalingAndSuperResolution
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Process

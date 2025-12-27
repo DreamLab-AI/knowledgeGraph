@@ -1,22 +1,26 @@
 {
   "id": "Virtual Location",
   "title": "Virtual Location",
-  "content": "- ### OntologyBlock\n  id:: virtual-location-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10129\n\t- preferred-term:: Virtual Location\n\t- status:: stub\n\t- owl:class:: mv:VirtualLocation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: virtual-location-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-location-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10129\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Location\n\t- status:: active\n\t- definition:: A defined spatial coordinate or addressable place within a virtual environment, representing specific positions, areas, or destinations that users can navigate to, reference, and interact with in metaverse platforms.\n\t- owl:class:: mv:VirtualLocation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Virtual Environment]]\n\t\t- related-to:: [[Virtual Destination]]\n\t\t- related-to:: [[Spatial Computing]]\n\t\t- related-to:: [[Navigation]]\n\t  id:: virtual-location-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual locations are addressable points or areas within metaverse environments that enable navigation, meeting coordination, and spatial organization. They range from precise coordinates to named destinations and landmarks. Effective location systems support teleportation, waypoints, and social meetup features.\n- ## Technical Details\n\t- ### Location Types\n\t\t- **Coordinate-Based**: X, Y, Z position in 3D space\n\t\t- **Named Locations**: Labeled landmarks and destinations\n\t\t- **Relative Positions**: Proximity to other objects or users\n\t\t- **Hierarchical Addresses**: World, region, parcel, building\n\t- ### Navigation Features\n\t\t- Teleportation points and portals\n\t\t- Waypoint and bookmark systems\n\t\t- Map-based location selection\n\t\t- Friend and event location sharing\n\t- ### Technical Implementation\n\t\t- Spatial coordinate systems\n\t\t- Location persistence across sessions\n\t\t- Cross-platform location references\n\t\t- Privacy controls for location sharing\n- ## Applications\n\t- Meeting and event coordination\n\t- Virtual tour waypoints\n\t- Asset and property identification\n\t- Social meetup arrangements\n\t- Content and experience discovery",
   "backlinks": [],
   "wiki_links": [
-    "metaverse"
+    "Spatial Computing",
+    "metaverse",
+    "Virtual Destination",
+    "Virtual Environment",
+    "Navigation"
   ],
   "ontology": {
     "term_id": "MV-10129",
     "preferred_term": "Virtual Location",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#VirtualLocation",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A defined spatial coordinate or addressable place within a virtual environment, representing specific positions, areas, or destinations that users can navigate to, reference, and interact with in metaverse platforms.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -28,7 +32,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Virtual Environment"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -43,15 +49,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Virtual Destination",
+        "Spatial Computing",
+        "Navigation"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

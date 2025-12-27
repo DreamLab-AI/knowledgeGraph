@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0063
+	- source-domain:: rb
 	- preferred-term:: rb 0063 sliding mode control
 	- status:: draft
 	- public-access:: true

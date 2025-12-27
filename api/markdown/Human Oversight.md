@@ -3,6 +3,8 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-1080
+	- source-domain:: ai
+	- owl:class:: ai:HumanOversight
 	- preferred-term:: Human Oversight
 	- status:: draft
 	- public-access:: true

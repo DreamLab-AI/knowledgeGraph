@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0223
+	- source-domain:: mv
 	- preferred-term:: 3D Scene Exchange Protocol (SXP)
 	- status:: draft
 	- public-access:: true
@@ -103,3 +104,5 @@
 - Verification: Academic sources verified
 - Regional Context: UK/North England where applicable
 
+### Relationships
+- is-subclass-of:: [[Metaverse]]

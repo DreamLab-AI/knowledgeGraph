@@ -8,6 +8,7 @@ id:: unknown-ontology
   - preferred-term:: Model Weights
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:ModelWeights
   - definition:: ### Primary Definition
 
 ### Relationships

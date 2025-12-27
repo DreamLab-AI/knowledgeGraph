@@ -7,10 +7,12 @@ id:: virtual-reality-vr-ontology
   - term-id:: DT-0327
   - preferred-term:: Virtual Reality (VR)
   - source-domain:: mv
+  - owl:class:: mv:VirtualRealityVr
   - status:: draft
   - definition:: Immersive technology system that combines physical head-mounted display hardware with virtual computer-generated 3D environments to create fully encompassing sensory experiences that replace user perception of the physical world.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Extended Reality (XR)]]
 - has-part:: [[Head-Mounted Display]]
 - has-part:: [[Tracking Sensors]]

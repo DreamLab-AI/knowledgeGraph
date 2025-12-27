@@ -3,6 +3,7 @@
   collapsed:: true
 	- preferred-term:: Autonomous Robot
 	- source-domain:: mv
+  - owl:class:: mv:AutonomousRobot
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition

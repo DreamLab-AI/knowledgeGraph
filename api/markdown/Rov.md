@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0128
+	- source-domain:: rb
 	- preferred-term:: Remotely Operated Vehicle (ROV)
 	- status:: complete
 	- public-access:: true
@@ -11,3 +12,4 @@
 	- maturity:: established
 	- owl:class:: rb:Rov
 	- belongsToDomain:: [[Robotics]]
+	- is-subclass-of:: [[Robotics]]

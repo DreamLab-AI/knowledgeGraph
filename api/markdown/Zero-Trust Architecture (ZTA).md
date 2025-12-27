@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0189
+	- source-domain:: mv
 	- preferred-term:: Zero-Trust Architecture (ZTA)
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[DataLayer]], [[MiddlewareLayer]], [[NetworkLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: zero-trust-architecture-zta-relationships
 	  collapsed:: true
 		- is-part-of:: [[Security Architecture]]

@@ -7,6 +7,7 @@ id:: bc-0103-halving-ontology
   - term-id:: MV-0103
   - preferred-term:: BC 0103 halving
   - source-domain:: mv
+  - owl:class:: mv:Bc0103Halving
   - status:: draft
   - definition:: ### Primary Definition
 

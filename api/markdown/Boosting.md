@@ -5,6 +5,7 @@
   - preferred-term:: Boosting
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Boosting
 
 ### Relationships
 - is-subclass-of:: [[Ensemble Methods]]

@@ -3,6 +3,7 @@
   collapsed:: true
 	- preferred-term:: Robot Dynamics
 	- source-domain:: mv
+  - owl:class:: mv:RobotDynamics
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition

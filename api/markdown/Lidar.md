@@ -7,6 +7,7 @@ id:: rb-0069-lidar-ontology
   - term-id:: MV-0069
   - preferred-term:: Lidar
   - source-domain:: mv
+  - owl:class:: mv:Lidar
   - status:: draft
   - definition:: ### Primary Definition
 

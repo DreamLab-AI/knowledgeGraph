@@ -7,9 +7,11 @@ id:: fork-choice-rule-ontology
   - term-id:: DT-0060
   - preferred-term:: Fork Choice Rule
   - source-domain:: bc
+  - owl:class:: bc:ForkChoiceRule
   - status:: complete
   - definition:: Canonical chain selection within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - uses-data-structure:: [[Blockchain Entity]]
 - implements:: [[ConsensusProtocol]]

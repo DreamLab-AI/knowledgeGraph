@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-9005
+	- source-domain:: rb
 	- preferred-term:: Stigmergy
 	- status:: draft
 	- public-access:: true
@@ -13,4 +14,4 @@
 	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[RoboticsDomain]]
-	- isSubclassOf:: [[Swarm Coordination]]
+	- is-subclass-of:: [[Robotics]]

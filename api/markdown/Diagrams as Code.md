@@ -7,4 +7,8 @@ public:: true
   - term-id:: BC-9875
   - preferred-term:: public:: true
   - source-domain:: bc
+  - owl:class:: bc:PublicTrue
   - status:: draft
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

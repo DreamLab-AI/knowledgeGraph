@@ -10,6 +10,7 @@ id:: mv-83431247778
   - status:: draft
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - uses-data-structure:: [[Blockchain Entity]]
 - ngm:relatedTo:: [[Full Node]]
 - enables:: [[Consensus]]

@@ -7,5 +7,9 @@ id:: consensusalgorithm-ontology
   - term-id:: BC-0002
   - preferred-term:: ConsensusAlgorithm
   - source-domain:: bc
+  - owl:class:: bc:Consensusalgorithm
   - status:: active
   - definition:: A protocol used by distributed systems to achieve agreement on a single data value or state among multiple nodes, ensuring network integrity and preventing double-spending.
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

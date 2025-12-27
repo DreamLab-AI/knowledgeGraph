@@ -7,6 +7,7 @@ id:: autoencoder-ontology
   - term-id:: MV-0036
   - preferred-term:: Autoencoder
   - source-domain:: mv
+  - owl:class:: mv:Autoencoder
   - status:: draft
   - definition:: ### Primary Definition
 

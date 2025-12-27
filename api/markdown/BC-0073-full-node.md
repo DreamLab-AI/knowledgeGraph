@@ -7,6 +7,7 @@ id:: full-node-ontology
   - term-id:: DT-0951
   - preferred-term:: Full Node
   - source-domain:: bc
+  - owl:class:: bc:FullNode
   - status:: complete
   - definition:: Complete blockchain copy maintainer within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

@@ -7,6 +7,7 @@ id:: bc-0106-gas-price-ontology
   - term-id:: MV-0922
   - preferred-term:: BC 0106 gas price
   - source-domain:: bc
+  - owl:class:: bc:Bc0106GasPrice
   - status:: draft
   - definition:: ### Primary Definition
 

@@ -7,6 +7,7 @@ flowchart LR
   - term-id:: MV-9703
   - preferred-term:: flowchart LR
   - source-domain:: mv
+  - owl:class:: mv:FlowchartLr
   - status:: draft
 
 ### Multi-Modal Large Language Models (LLMs)
@@ -235,3 +236,6 @@ public:: true
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

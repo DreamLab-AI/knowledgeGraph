@@ -7,10 +7,12 @@ id:: cultural-provenance-record-ontology
   - term-id:: DT-0301
   - preferred-term:: Cultural Provenance Record
   - source-domain:: bc
+  - owl:class:: bc:CulturalProvenanceRecord
   - status:: draft
   - definition:: A structured metadata object that documents the origin, ownership history, authenticity verification, and cultural context of cultural artifacts, artworks, or digital cultural assets to establish legitimacy and preserve heritage lineage.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Museum Information System]]
 - is-part-of:: [[Cultural Heritage Management System]]
 - has-part:: [[Authentication Record]]

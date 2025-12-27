@@ -8,6 +8,7 @@ id:: unknown-ontology
   - preferred-term:: Feature Extraction
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:FeatureExtraction
   - definition:: ### Primary Definition
 
 ### Relationships

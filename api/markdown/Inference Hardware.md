@@ -5,6 +5,7 @@
   - preferred-term:: Inference Hardware
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:InferenceHardware
 
 ### Relationships
 - is-subclass-of:: [[AI Hardware]]

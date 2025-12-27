@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0889
+	- source-domain:: mv
 	- preferred-term:: Generative AI Engineering
 	- status:: emerging
 	- public-access:: true
@@ -76,3 +77,5 @@
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
 
+### Relationships
+- is-subclass-of:: [[Metaverse]]

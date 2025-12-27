@@ -7,10 +7,12 @@ id:: mixed-reality-mr-ontology
   - term-id:: DT-0244
   - preferred-term:: Mixed Reality (MR)
   - source-domain:: mv
+  - owl:class:: mv:MixedRealityMr
   - status:: draft
   - definition:: Interactive environment where physical and digital elements coexist, interact bidirectionally, and dynamically influence each other in real time with advanced occlusion, lighting, and physics simulation creating seamless blended experiences.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Extended Reality (XR)]]
 - is-part-of:: [[SpatialComputing]]
 - has-part:: [[Depth Camera]]

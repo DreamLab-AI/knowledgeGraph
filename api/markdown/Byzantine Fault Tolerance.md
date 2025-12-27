@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0544
+    - source-domain:: bc
+    - owl:class:: bc:ByzantineFaultTolerance
     - preferred-term:: Byzantine Fault Tolerance
     - ontology:: true
     - public-access:: true

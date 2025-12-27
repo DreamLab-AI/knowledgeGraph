@@ -3,11 +3,16 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0166
+	- source-domain:: ai
+	- owl:class:: ai:HumanRights
 	- preferred-term:: Human Rights
 	- status:: revised
 	- public-access:: true
 	- definition:: Fundamental rights and freedoms inherent to all human beings as recognised in international instruments including the Universal Declaration of Human Rights, which AI systems must respect and protect throughout their lifecycle.
 
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 ## Definition
 
 Human rights form a foundational component of the OECD's [[human-centred values]] principle, establishing that AI development and deployment must occur within the framework of internationally recognised fundamental rights rather than technological or economic imperatives alone.

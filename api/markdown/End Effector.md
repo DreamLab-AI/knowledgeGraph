@@ -1,11 +1,11 @@
-id:: end-effector-ontology
-
 - ### OntologyBlock
-  id:: End Effector
+  id:: end-effector-ontology
   - ontology:: true
   - public-access:: true
-  - term-id:: DT-0025
+  - term-id:: RB-0025
   - preferred-term:: End Effector
   - source-domain:: rb
+  - owl:class:: rb:EndEffector
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: An end effector is the device at the end of a robotic arm designed to interact with the environment, such as a gripper, tool, or sensor.

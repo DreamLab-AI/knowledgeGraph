@@ -19,7 +19,7 @@
 
 ### Domain & Architecture
 	- belongsToDomain:: [[AI-GroundedDomain]], [[ComputationAndIntelligenceDomain]]
-	- maturity:: dt:Mature
+	- maturity:: mature
 
 ### Relationships
 - is-subclass-of:: [[ai:ModelArchitecture]]

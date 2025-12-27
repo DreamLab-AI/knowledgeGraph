@@ -4,12 +4,12 @@
 	- ontology:: true
 	- term-id:: DT-0872
 	- preferred-term:: Virtual Production
-	- source-domain:: xr
+	- source-domain:: mv
 	- status:: complete
 	- public-access:: true
 	- definition:: Real-time filmmaking technique combining [[LED Volume]] stages, [[game engine]] rendering, and [[in-camera visual effects]] (ICVFX) to create photorealistic virtual environments during live-action production, enabling directors to see final composited imagery on set
 	- maturity:: mature
-	- owl:class:: xr:VirtualProduction
+	- owl:class:: mv:VirtualProduction
 	- owl:physicality:: PhysicalEntity
 	- owl:role:: System
 	- belongsToDomain:: [[XRDomain]], [[MediaProductionDomain]], [[GameEngineDomain]]

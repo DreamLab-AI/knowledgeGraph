@@ -5,6 +5,7 @@
 	- term-id:: AI-7943
 	- preferred-term:: Making Available
 	- source-domain:: mv
+  - owl:class:: mv:MakingAvailable
 	- status:: draft
     - public-access:: true
 	- definition:: The supply of an AI system for distribution or use on the Union market in the course of a commercial activity, whether in return for payment or free of charge.
@@ -101,4 +102,5 @@
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
 
-
+### Relationships
+- is-subclass-of:: [[Metaverse]]

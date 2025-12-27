@@ -1,24 +1,28 @@
 {
   "id": "Standards Validation",
   "title": "Standards Validation",
-  "content": "- ### OntologyBlock\n  id:: standards-validation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10075\n\t- preferred-term:: Standards Validation\n\t- status:: stub\n\t- owl:class:: mv:StandardsValidation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: standards-validation-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: standards-validation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10075\n\t- source-domain:: mv\n\t- preferred-term:: Standards Validation\n\t- status:: active\n\t- definition:: Processes used to determine whether development products conform to requirements and whether the final product satisfies its intended use and user needs, confirming that the correct product was built to meet stakeholder goals.\n\t- owl:class:: mv:StandardsValidation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Standards]]\n\t\t- related-to:: [[Standards Conformance Testing]]\n\t\t- related-to:: [[Standards Compliance]]\n\t  id:: standards-validation-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Standards validation confirms that products fulfill their intended use and goals, distinct from verification which confirms products meet developer plans. The process ensures models accurately represent real-world applications and quantifies how parameter variations affect outcomes.\n- ## Technical Details\n\t- ### Key Standards\n\t\t- **IEEE 1012-2024**: Covers Verification and Validation (V&V) processes for systems, software, and hardware including interfaces\n\t\t- **ASME VVUQ Standards (2024)**: Including multivariate metrics, scaling methodologies for nuclear systems, and computational physics simulation software selection\n\t\t- **FDA Computer Software Assurance**: Risk-based approach for medical device software validation\n\t- ### Validation vs Verification\n\t\t- **Verification**: Confirms \"you built it right\" - product meets developer plans\n\t\t- **Validation**: Confirms \"you built the right thing\" - product meets stakeholder goals\n- ## Applications\n\t- Medical device software development and FDA compliance\n\t- Computational modeling in engineering and science\n\t- Clinical database and data capture system testing\n\t- Cloud-based validation platforms for distributed teams\n\t- Automated validation using digital technologies (66% of organizations expect increased adoption)",
   "backlinks": [
+    "Standards Conformance Testing",
     "Validation Process"
   ],
   "wiki_links": [
-    "metaverse"
+    "Standards",
+    "Standards Compliance",
+    "metaverse",
+    "Standards Conformance Testing"
   ],
   "ontology": {
     "term_id": "MV-10075",
     "preferred_term": "Standards Validation",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#StandardsValidation",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Processes used to determine whether development products conform to requirements and whether the final product satisfies its intended use and user needs, confirming that the correct product was built to meet stakeholder goals.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Standards"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +51,18 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Standards Conformance Testing",
+        "Standards Compliance"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0083
+	- source-domain:: rb
 	- preferred-term:: rb 0083 current sensor
 	- status:: draft
 	- public-access:: true

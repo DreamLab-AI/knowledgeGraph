@@ -1,24 +1,31 @@
 {
   "id": "Adaptive Virtual Experience",
   "title": "Adaptive Virtual Experience",
-  "content": "- ### OntologyBlock\n  id:: adaptive-virtual-experience-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9758\n\t- preferred-term:: Adaptive Virtual Experience\n\t- status:: stub\n\t- owl:class:: mv:AdaptiveVirtualExperience\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: adaptive-virtual-experience-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: adaptive-virtual-experience-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9758\n\t- source-domain:: mv\n\t- preferred-term:: Adaptive Virtual Experience\n\t- status:: active\n\t- definition:: Adaptive Virtual Experience refers to AI-driven immersive environments that dynamically adjust content, difficulty, pacing, and presentation in real-time based on user behavior, preferences, physiological responses, and interaction patterns to deliver personalized and engaging virtual reality experiences.\n\t- owl:class:: mv:AdaptiveVirtualExperience\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Virtual Reality Experience]]\n\t- enables:: [[Personalized Learning]], [[Therapeutic VR]], [[Dynamic Gaming]]\n\t- requires:: [[Machine Learning]], [[Real-Time Analytics]], [[User Behavior Tracking]]\n\t- #### Relationships\n\t  id:: adaptive-virtual-experience-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Behavioral Analysis**: AI algorithms analyze user interactions, gaze patterns, and engagement metrics in real-time\n- **Dynamic Content Adjustment**: Environments modify difficulty, narrative paths, and sensory inputs based on user state\n- **Personalization Engines**: Machine learning models build user profiles to optimize experiences\n- **Physiological Integration**: Biometric sensors tracking heart rate and eye movement inform adaptive responses\n\n### Application Domains\n- **Healthcare**: Personalized therapeutic interventions adjusting based on patient progress\n- **Education**: AI tutors providing personalized guidance adapted to learning styles\n- **Training**: Surgical and industrial scenarios with adaptive complications\n- **Gaming**: Procedural difficulty adjustment based on player behavior",
   "backlinks": [
     "Biosensing Interface"
   ],
   "wiki_links": [
-    "metaverse"
+    "Therapeutic VR",
+    "Virtual Reality Experience",
+    "metaverse",
+    "Dynamic Gaming",
+    "Personalized Learning",
+    "Real-Time Analytics",
+    "User Behavior Tracking",
+    "Machine Learning"
   ],
   "ontology": {
     "term_id": "MV-9758",
     "preferred_term": "Adaptive Virtual Experience",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#AdaptiveVirtualExperience",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Adaptive Virtual Experience refers to AI-driven immersive environments that dynamically adjust content, difficulty, pacing, and presentation in real-time based on user behavior, preferences, physiological responses, and interaction patterns to deliver personalized and engaging virtual reality experiences.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -48,9 +55,7 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

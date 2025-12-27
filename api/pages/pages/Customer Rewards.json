@@ -1,12 +1,22 @@
 {
   "id": "Customer Rewards",
   "title": "Customer Rewards",
-  "content": "- ### OntologyBlock\n  id:: customer-rewards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9837\n\t- source-domain:: metaverse\n\t- preferred-term:: Customer Rewards\n\t- status:: stub\n\t- owl:class:: mv:CustomerRewards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: customer-rewards-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: customer-rewards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9837\n\t- source-domain:: metaverse\n\t- preferred-term:: Customer Rewards\n\t- definition:: Loyalty program systems that use blockchain technology and tokenization to create tradeable, interoperable digital rewards, enabling customers to earn, exchange, and redeem tokens across multiple platforms and businesses while providing brands with transparent, fraud-resistant, and cost-effective incentive mechanisms.\n\t- status:: active\n\t- owl:class:: mv:CustomerRewards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: customer-rewards-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Loyalty Programs]]\n\t\t- enables:: [[Customer Retention]], [[Token Trading]], [[Cross-Platform Rewards]]\n\t\t- requires:: [[Blockchain Infrastructure]], [[Digital Wallet]], [[Smart Contracts]]\n\t\t- related-to:: [[Tokenization]], [[NFT Rewards]], [[DeFi Integration]]\n- ## Technical Details\n\t- **Tokenization Benefits**:\n\t\t- Loyalty points converted to tradeable digital tokens\n\t\t- Smart contracts eliminate intermediaries and reduce costs\n\t\t- Real-time tracking on blockchain for instant balance visibility\n\t\t- Secondary markets for trading, selling, or renting rewards\n\t- **Real-World Examples**:\n\t\t- **Singapore Airlines KrisPay**: Miles converted to spendable tokens\n\t\t- **Yuga Labs**: $150M in tokenized loyalty royalties\n\t\t- **Rakuten**: Loyalty points convertible to cryptocurrency\n\t\t- **Visa Web3 Loyalty**: Interactive digital treasure hunts\n\t- **Consumer Demand**:\n\t\t- 76% of millennials, 71% of Gen Z consider loyalty vital\n\t\t- 41% of Gen Z dissatisfied with current programs\n\t\t- 96% of millennials want program refresh\n\t- **Future Trends**: DeFi integration, DAO governance, staking yields, cross-chain functionality\n- ## Applications\n\t- Retail loyalty programs\n\t- Travel rewards tokenization\n\t- Gaming achievement rewards\n\t- Brand engagement incentives\n\t- Cross-merchant reward networks",
   "backlinks": [
     "Loyalty Token"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Tokenization",
+    "Customer Retention",
+    "Token Trading",
+    "Blockchain Infrastructure",
+    "Smart Contracts",
+    "Digital Wallet",
+    "DeFi Integration",
+    "NFT Rewards",
+    "Cross-Platform Rewards",
+    "Loyalty Programs"
   ],
   "ontology": {
     "term_id": "MV-9837",
@@ -16,9 +26,9 @@
     "source_domain": "metaverse",
     "domain": "metaverse",
     "domain_full_name": "",
-    "definition": null,
+    "definition": "Loyalty program systems that use blockchain technology and tokenization to create tradeable, interoperable digital rewards, enabling customers to earn, exchange, and redeem tokens across multiple platforms and businesses while providing brands with transparent, fraud-resistant, and cost-effective incentive mechanisms.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +40,22 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Loyalty Programs"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Blockchain Infrastructure",
+      "Digital Wallet",
+      "Smart Contracts"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Customer Retention",
+      "Token Trading",
+      "Cross-Platform Rewards"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,14 +65,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Tokenization",
+        "NFT Rewards",
+        "DeFi Integration"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)",
         "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
       ]
     }

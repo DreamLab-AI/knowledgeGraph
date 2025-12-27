@@ -1,24 +1,34 @@
 {
   "id": "Compliance Standards",
   "title": "Compliance Standards",
-  "content": "- ### OntologyBlock\n  id:: compliance-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9828\n\t- preferred-term:: Compliance Standards\n\t- status:: stub\n\t- owl:class:: mv:ComplianceStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: compliance-standards-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: compliance-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9828\n\t- source-domain:: mv\n\t- preferred-term:: Compliance Standards\n\t- definition:: The regulatory requirements, technical specifications, and legal frameworks that govern operations within virtual environments and metaverse platforms, encompassing data privacy, intellectual property, consumer protection, and conduct standards that organizations must adhere to when operating in or developing for immersive digital spaces.\n\t- status:: active\n\t- owl:class:: mv:ComplianceStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: compliance-standards-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Regulatory Framework]]\n\t\t- enables:: [[Legal Compliance]], [[Data Protection]], [[Consumer Safety]]\n\t\t- requires:: [[Regulatory Guidance]], [[Legal Expertise]], [[Monitoring Systems]]\n\t\t- related-to:: [[GDPR]], [[Digital Services Act]], [[Platform Regulation]]\n- ## Technical Details\n\t- **EU Regulatory Framework**:\n\t\t- European Parliament called for metaverse-specific regulations (January 2024)\n\t\t- GDPR: Data collection, consent, transparency, privacy notices\n\t\t- Digital Services Act (DSA): Platform accountability and content moderation\n\t\t- AI Act: Cybersecurity duties, risk assessment, explainability, oversight\n\t\t- Digital Markets Act (DMA): Gatekeeper obligations for competition and transparency\n\t- **Compliance Categories**:\n\t\t- Intellectual property law (patents, trademarks, copyrights)\n\t\t- User conduct and behavioral standards\n\t\t- Privacy and safety regulations\n\t\t- Age-appropriate design codes for minors\n\t- **Key Challenges**:\n\t\t- GDPR right to erasure conflicts with metaverse persistence\n\t\t- Cross-border regulatory harmonization\n\t\t- Pseudonymity vs. KYC requirements\n\t- **Recommendations**: Privacy-first design, metaverse-specific policies, user data control mechanisms\n- ## Applications\n\t- Platform licensing and operation\n\t- Data privacy compliance\n\t- Intellectual property protection\n\t- Consumer protection enforcement\n\t- Cross-jurisdictional regulatory alignment",
   "backlinks": [
     "Validation Process"
   ],
   "wiki_links": [
-    "metaverse"
+    "Digital Services Act",
+    "metaverse",
+    "Monitoring Systems",
+    "Regulatory Framework",
+    "Legal Expertise",
+    "Data Protection",
+    "Platform Regulation",
+    "Consumer Safety",
+    "GDPR",
+    "Legal Compliance",
+    "Regulatory Guidance"
   ],
   "ontology": {
     "term_id": "MV-9828",
     "preferred_term": "Compliance Standards",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ComplianceStandards",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The regulatory requirements, technical specifications, and legal frameworks that govern operations within virtual environments and metaverse platforms, encompassing data privacy, intellectual property, consumer protection, and conduct standards that organizations must adhere to when operating in or developing for immersive digital spaces.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +40,22 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Regulatory Framework"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Regulatory Guidance",
+      "Legal Expertise",
+      "Monitoring Systems"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Legal Compliance",
+      "Data Protection",
+      "Consumer Safety"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +65,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "GDPR",
+        "Digital Services Act",
+        "Platform Regulation"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

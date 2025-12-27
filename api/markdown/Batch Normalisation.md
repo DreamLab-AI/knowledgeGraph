@@ -8,6 +8,7 @@ id:: unknown-ontology
   - preferred-term:: Batch Normalisation
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:BatchNormalisation
   - definition:: ### Primary Definition
 
 ### Relationships

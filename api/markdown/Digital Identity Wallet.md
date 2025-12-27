@@ -7,10 +7,12 @@ id:: digital-identity-wallet-ontology
   - term-id:: DT-0126
   - preferred-term:: Digital Identity Wallet
   - source-domain:: bc
+  - owl:class:: bc:DigitalIdentityWallet
   - status:: draft
   - definition:: A secure software container that stores verifiable credentials, cryptographic keys, and identity data, enabling users to control their digital identity and authenticate across platforms.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - has-part:: [[Verification Engine]]
 - has-part:: [[Private Key Store]]
 - has-part:: [[Biometric Interface]]

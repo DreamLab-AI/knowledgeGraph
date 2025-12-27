@@ -7,6 +7,7 @@ Definitions and frameworks for Metaverse
   - term-id:: MV-9734
   - preferred-term:: Definitions And Frameworks For Metaverse
   - source-domain:: mv
+  - owl:class:: mv:DefinitionsAndFrameworksForMetaverse
   - status:: draft
 
 ### More like meeting support
@@ -114,3 +115,6 @@ Definitions and frameworks for Metaverse
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

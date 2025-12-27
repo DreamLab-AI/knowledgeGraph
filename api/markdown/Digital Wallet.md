@@ -7,6 +7,8 @@ id:: digital-wallet-ontology
   - term-id:: MV-9881
   - preferred-term:: Digital Wallet
   - source-domain:: bc
+  - owl:class:: bc:DigitalWallet
   - status:: stub
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]

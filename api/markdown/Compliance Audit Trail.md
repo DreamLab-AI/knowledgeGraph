@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0219
+	- source-domain:: mv
 	- preferred-term:: Compliance Audit Trail
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[DataLayer]], [[MiddlewareLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: compliance-audit-trail-relationships
 	  collapsed:: true
 		- is-part-of:: [[Compliance Management System]]

@@ -1,24 +1,29 @@
 {
   "id": "Enterprise Architecture",
   "title": "Enterprise Architecture",
-  "content": "- ### OntologyBlock\n  id:: enterprise-architecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9893\n\t- preferred-term:: Enterprise Architecture\n\t- status:: stub\n\t- owl:class:: mv:EnterpriseArchitecture\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: enterprise-architecture-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: enterprise-architecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9893\n\t- source-domain:: mv\n\t- preferred-term:: Enterprise Architecture\n\t- status:: active\n\t- owl:class:: mv:EnterpriseArchitecture\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: A strategic framework for aligning business processes, information systems, and technology infrastructure with organisational goals, increasingly incorporating metaverse technologies such as XR, digital twins, and AI to enable digital transformation and persistent virtual work environments.\n\t- #### Relationships\n\t  id:: enterprise-architecture-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[System Architecture]]\n\t\t- related-to:: [[Digital Transformation]]\n\t\t- related-to:: [[Digital Twin]]\n\t\t- enables:: [[Enterprise Metaverse]]\n\n## Technical Details\n\n### Core Functions\n- Strategic alignment of technology with business objectives\n- Integration management across platforms and systems\n- Agility and adaptability in digital transformation\n- Risk management and innovation enablement\n\n### Metaverse Integration Components\n- XR (Extended Reality) for immersive experiences\n- AI and machine learning for intelligent automation\n- Cloud and edge computing for scalable infrastructure\n- Digital twins for real-time physical-digital synchronisation\n- Advanced interfaces for natural interaction\n\n### Framework Evolution\n- Traditional EA frameworks adapting for metaverse era\n- Focus on interoperability initiatives (e.g., OpenUSD frameworks)\n- Persistent virtual work environment architectures\n- Hybrid physical-virtual enterprise operations\n\n## Enterprise Metaverse Applications\n\n### Market Size\n- Global Enterprise Metaverse Applications Market: USD 340.0 million (2024)\n- Projected CAGR: 12.30% (2025-2032)\n- Convergence of XR, AI, cloud/edge computing, and digital twins\n\n### Industry Applications\n- Virtual training simulators (pharmaceutical, manufacturing)\n- Digital twins of supply chains\n- Immersive collaboration spaces\n- Remote operations and maintenance\n- Customer experience centres\n\n### Regulatory Considerations\n- Governance frameworks for metaverse operations\n- Identity and access management\n- Data protection and privacy\n- Compliance with industry-specific regulations\n\n## Digital Transformation Integration\n\n### EA Role in Digital Transformation\n- Managing digital ecosystem complexity\n- Enabling strategic alignment and operational impact\n- Leveraging AI, IoT, and blockchain integration\n- Improving flexibility and strategic approaches\n\n### Transformation Focus Areas\n- Scale, speed, and resilience in executional architecture\n- Digital experience optimisation\n- Complexity management and integration\n- Innovation acceleration\n\n## Research Sources\n\n- MDPI Sustainability: \"Assessing the Impact of Enterprise Architecture on Digital Transformation Success\"\n- De Gruyter: \"Enterprise Transformation to Artificial Intelligence and the Metaverse\"\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
-    "Data Fabric Architecture"
+    "Data Fabric Architecture",
+    "Reference Architecture"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Enterprise Metaverse",
+    "Digital Transformation",
+    "Digital Twin",
+    "System Architecture"
   ],
   "ontology": {
     "term_id": "MV-9893",
     "preferred_term": "Enterprise Architecture",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#EnterpriseArchitecture",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A strategic framework for aligning business processes, information systems, and technology infrastructure with organisational goals, increasingly incorporating metaverse technologies such as XR, digital twins, and AI to enable digital transformation and persistent virtual work environments.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "System Architecture"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Enterprise Metaverse"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,18 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Digital Transformation",
+        "Digital Twin"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

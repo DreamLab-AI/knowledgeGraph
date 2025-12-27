@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0192
+	- source-domain:: mv
 	- preferred-term:: Procedural Content Generation
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[CreativeMediaDomain]]
 	- implementedInLayer:: [[ComputeLayer]], [[DataLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: procedural-content-generation-relationships
 	  collapsed:: true
 		- is-part-of:: [[Content Creation Pipeline]]

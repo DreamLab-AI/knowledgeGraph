@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0104
+	- source-domain:: rb
 	- preferred-term:: rb 0104 hand guiding
 	- status:: draft
 	- public-access:: true

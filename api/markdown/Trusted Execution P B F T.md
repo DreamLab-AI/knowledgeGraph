@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0561
+    - source-domain:: bc
+    - owl:class:: bc:TrustedExecutionPbft
     - preferred-term:: Trusted Execution PBFT
     - ontology:: true
     - public-access:: true

@@ -9,6 +9,7 @@
   - term-id:: BC-9949
   - preferred-term:: Ethereum
   - source-domain:: bc
+  - owl:class:: bc:Ethereum
   - status:: draft
   - definition:: A decentralized blockchain platform enabling smart contracts and decentralized applications (dApps) through its Turing-complete programming environment. Transitioned from Proof-of-Work to Proof-of-Stake consensus via "The Merge", featuring account-based model and EVM execution environment.
 

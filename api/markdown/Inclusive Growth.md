@@ -6,6 +6,7 @@
 	- preferred-term:: Inclusive Growth
 	- source-domain:: ai
 	- status:: draft
+  - owl:class:: ai:InclusiveGrowth
     - public-access:: true
 
 

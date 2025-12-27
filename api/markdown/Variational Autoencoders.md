@@ -8,7 +8,7 @@
 	- status:: complete
 	- public-access:: true
 	- definition:: Generative neural network architecture combining autoencoders with variational inference for probabilistic latent space modeling and data generation
-	- maturity:: dt:Mature
+	- maturity:: mature
 	- owl:class:: ai:VariationalAutoencoders
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Architecture

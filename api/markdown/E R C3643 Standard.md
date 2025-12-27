@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: MV-0542
+    - source-domain:: mv
+    - owl:class:: mv:Erc3643Standard
     - preferred-term:: ERC-3643 Standard
     - ontology:: true
     - public-access:: true

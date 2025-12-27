@@ -1,24 +1,28 @@
 {
   "id": "Transparent Data Processing",
   "title": "Transparent Data Processing",
-  "content": "- ### OntologyBlock\n  id:: transparent-data-processing-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10087\n\t- preferred-term:: Transparent Data Processing\n\t- status:: stub\n\t- owl:class:: mv:TransparentDataProcessing\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: transparent-data-processing-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: transparent-data-processing-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10087\n\t- source-domain:: mv\n\t- preferred-term:: Transparent Data Processing\n\t- status:: active\n\t- definition:: Data handling practices that are openly disclosed to users, providing clear information about what data is collected, how it is processed, who has access, and for what purposes, enabling informed consent and accountability.\n\t- owl:class:: mv:TransparentDataProcessing\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Data Processing]]\n\t\t- related-to:: [[GDPR]]\n\t\t- related-to:: [[Privacy By Design]]\n\t\t- related-to:: [[Data Governance]]\n\t  id:: transparent-data-processing-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Transparent data processing is a fundamental principle of data protection regulations like GDPR, requiring organizations to clearly communicate their data practices. In metaverse contexts, this includes disclosure of immersive data collection such as movement patterns, gaze tracking, and biometric data.\n- ## Technical Details\n\t- ### GDPR Transparency Principles\n\t\t- **Lawfulness**: Processing must have valid legal basis\n\t\t- **Purpose Limitation**: Data used only for stated purposes\n\t\t- **Data Minimization**: Collect only necessary data\n\t\t- **Accuracy**: Maintain correct and up-to-date data\n\t\t- **Storage Limitation**: Retain data only as long as needed\n\t- ### Implementation Mechanisms\n\t\t- **Audit Trails**: Logging all data access and processing activities\n\t\t- **Data Flow Mapping**: Documenting data movement through systems\n\t\t- **Privacy Notices**: Clear disclosure of processing activities\n\t\t- **Access Controls**: Role-based permissions with logging\n\t- ### Blockchain-Enabled Transparency\n\t\t- Immutable processing logs on-chain\n\t\t- Smart contract-enforced data policies\n\t\t- Decentralized identity for consent tracking\n\t\t- Zero-knowledge proofs for privacy-preserving verification\n- ## Applications\n\t- Metaverse platform data governance\n\t- VR biometric data handling\n\t- Cross-platform data portability\n\t- AI training data transparency\n\t- Healthcare data in virtual environments",
   "backlinks": [
     "Privacy Impact Assessment (PIA)"
   ],
   "wiki_links": [
-    "metaverse"
+    "Data Processing",
+    "metaverse",
+    "Privacy By Design",
+    "GDPR",
+    "Data Governance"
   ],
   "ontology": {
     "term_id": "MV-10087",
     "preferred_term": "Transparent Data Processing",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#TransparentDataProcessing",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Data handling practices that are openly disclosed to users, providing clear information about what data is collected, how it is processed, who has access, and for what purposes, enabling informed consent and accountability.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Data Processing"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +51,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "GDPR",
+        "Privacy By Design",
+        "Data Governance"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

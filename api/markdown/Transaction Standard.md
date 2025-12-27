@@ -7,10 +7,12 @@ id:: transaction-standard-ontology
   - term-id:: DT-0113
   - preferred-term:: Transaction Standard
   - source-domain:: bc
+  - owl:class:: bc:TransactionStandard
   - status:: draft
   - definition:: A protocol defining secure exchange of digital assets and services within virtual economies, specifying message formats, authentication mechanisms, settlement procedures, and integrity guarantees.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Payment System]]
 - is-part-of:: [[Virtual Economy Infrastructure]]
 - has-part:: [[Integrity Verification]]

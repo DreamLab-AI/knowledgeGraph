@@ -7,7 +7,10 @@ Electromagnetic Compatibility (EMC) standards for robotics establish requirement
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1052
-  - preferred-term:: Electromagnetic Compatibility (EMC) standards for robotics establish requirements...
+  - preferred-term:: EMC Standard
+  - owl:class:: rb:EmcStandard
+  - is-subclass-of:: [[Robotics]]
+  - definition:: Electromagnetic Compatibility (EMC) standards for robotics establish requirements ensuring robot systems neither generate excessive electromagnetic interference nor suffer malfunction from external disturbances.
   - source-domain:: rb
   - status:: draft
 

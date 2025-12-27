@@ -7,6 +7,7 @@
   - term-id:: MV-9725
   - preferred-term:: {{twitter https://twitter.com/DG_Rand/status/1775618798717911424}}
   - source-domain:: mv
+  - owl:class:: mv:TwitterHttpstwittercomdgRandstatus1775618798717911424
   - status:: draft
 
 ### Relationships

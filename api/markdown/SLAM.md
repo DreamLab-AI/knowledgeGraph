@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0052
+	- source-domain:: mv
 	- preferred-term:: SLAM
 	- status:: draft
 	- public-access:: true
@@ -27,3 +28,6 @@
 ;; Data Properties
 (AnnotationAssertion dcterms:identifier :Slam "mv-1761742247966"^^xsd:string)
 ```
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

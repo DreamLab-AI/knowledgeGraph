@@ -8,6 +8,7 @@ id:: unknown-ontology
   - preferred-term:: Model Capacity
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:ModelCapacity
   - definition:: ### Primary Definition
 
 ### Relationships

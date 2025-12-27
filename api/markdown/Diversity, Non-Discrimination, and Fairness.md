@@ -3,19 +3,23 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0413
+	- source-domain:: ai
 	- preferred-term:: Diversity, Non-Discrimination, and Fairness
 	- status:: in
 	- public-access:: true
 	- definition:: Diversity Non-Discrimination and Fairness is a trustworthiness dimension ensuring AI systems avoid unfair bias, ensure equitable treatment across demographic groups, implement accessibility and universal design, and enable inclusive stakeholder participation throughout development and deployment. This dimension encompasses three core components: unfair bias avoidance (identifying bias affecting protected characteristics including sex, racial or ethnic origin, religion, disability, age, and sexual orientation per EU Charter Article 21, implementing bias mitigation through pre-processing data corrections, in-processing fairness constraints, and post-processing prediction adjustments, and continuously monitoring fairness metrics including demographic parity requiring equal selection rates across groups, equalized odds ensuring equal true positive and false positive rates, equal opportunity guaranteeing equal true positive rates, and individual fairness treating similar individuals similarly), accessibility and universal design (complying with Web Content Accessibility Guidelines WCAG ensuring perceivable, operable, understandable, and robust interfaces, implementing European Accessibility Act requirements, and applying universal design principles creating systems usable by people with diverse abilities without specialized adaptation), and stakeholder participation (involving diverse stakeholders including end users, affected communities, domain experts, and civil society throughout development lifecycle, implementing participatory design methodologies enabling co-creation with affected populations, and ensuring representative development teams reflecting diversity of deployment contexts and user populations). Legal frameworks including the EU AI Act mandate high-risk systems implement data governance ensuring training, validation, and testing datasets are relevant, representative, accurate, complete, and free from errors, with potential biases identified and mitigated. The 2024-2025 period marked transition from voluntary fairness practices to legally mandated requirements with enforcement mechanisms across jurisdictions including EU AI Act penalties reaching EUR 35 million or 7% of worldwide annual turnover, U.S. state-level legislation including Colorado AI Act and New York City Bias Audit Law, and international standards including ISO/IEC TR 24027:2021 for bias detection and ISO/IEC 42001:2023 for AI risk management, with regulatory sandboxes enabling deliberate testing to expose unwanted bias before deployment.
 	- source:: [[EU AI Act]], [[EU Charter Article 21]], [[ISO/IEC TR 24027]], [[WCAG]]
 	- maturity:: mature
-	- owl:class:: aigo:DiversityNonDiscriminationFairness
+	- owl:class:: ai:DiversityNonDiscriminationFairness
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
-	- owl:inferred-class:: aigo:VirtualProcess
+	- owl:inferred-class:: ai:VirtualProcess
 	- belongsToDomain:: [[AIEthicsDomain]]
 	- implementedInLayer:: [[ConceptualLayer]]
 
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 ## Diversity, Non-Discrimination, and Fairness
 
 Diversity, Non-Discrimination, and Fairness refers to diversity non-discrimination and fairness is a trustworthiness dimension ensuring ai systems avoid unfair bias, ensure equitable treatment across demographic groups, implement accessibility and universal design, and enable inclusive stakeholder participation throughout development and deployment. this dimension encompasses three core components: unfair bias avoidance (identifying bias affecting protected characteristics including sex, racial or ethnic origin, religion, disability, age, and sexual orientation per eu charter article 21, implementing bias mitigation through pre-processing data corrections, in-processing fairness constraints, and post-processing prediction adjustments, and continuously monitoring fairness metrics including demographic parity requiring equal selection rates across groups, equalized odds ensuring equal true positive and false positive rates, equal opportunity guaranteeing equal true positive rates, and individual fairness treating similar individuals similarly), accessibility and universal design (complying with web content accessibility guidelines wcag ensuring perceivable, operable, understandable, and robust interfaces, implementing european accessibility act requirements, and applying universal design principles creating systems usable by people with diverse abilities without specialized adaptation), and stakeholder participation (involving diverse stakeholders including end users, affected communities, domain experts, and civil society throughout development lifecycle, implementing participatory design methodologies enabling co-creation with affected populations, and ensuring representative development teams reflecting diversity of deployment contexts and user populations). legal frameworks including the eu ai act mandate high-risk systems implement data governance ensuring training, validation, and testing datasets are relevant, representative, accurate, complete, and free from errors, with potential biases identified and mitigated. the 2024-2025 period marked transition from voluntary fairness practices to legally mandated requirements with enforcement mechanisms across jurisdictions including eu ai act penalties reaching eur 35 million or 7% of worldwide annual turnover, u.s. state-level legislation including colorado ai act and new york city bias audit law, and international standards including iso/iec tr 24027:2021 for bias detection and iso/iec 42001:2023 for ai risk management, with regulatory sandboxes enabling deliberate testing to expose unwanted bias before deployment.
@@ -43,10 +47,10 @@ Diversity, Non-Discrimination, and Fairness refers to diversity non-discriminati
 - **Maturity**: mature
 - **Source**: [[EU AI Act]], [[EU Charter Article 21]], [[ISO/IEC TR 24027]], [[WCAG]]
 - **Authority Score**: 0.95
-- **Owl:Class**: aigo:DiversityNonDiscriminationFairness
+- **Owl:Class**: ai:DiversityNonDiscriminationFairness
 - **Owl:Physicality**: VirtualEntity
 - **Owl:Role**: Process
-- **Owl:Inferred Class**: aigo:VirtualProcess
+- **Owl:Inferred Class**: ai:VirtualProcess
 - **Belongstodomain**: [[AIEthicsDomain]]
 - **Implementedinlayer**: [[ConceptualLayer]]
 

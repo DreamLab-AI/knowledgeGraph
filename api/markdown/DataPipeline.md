@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0011
+	- source-domain:: mv
 	- preferred-term:: DataPipeline
 	- status:: draft
 	- public-access:: true
@@ -27,3 +28,6 @@
 ;; Data Properties
 (AnnotationAssertion dcterms:identifier :Datapipeline "mv-1761742247911"^^xsd:string)
 ```
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

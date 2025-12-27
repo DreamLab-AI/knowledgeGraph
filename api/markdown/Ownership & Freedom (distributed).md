@@ -7,5 +7,9 @@ id:: unknown-ontology
   - term-id:: MV-0890
   - preferred-term:: Ownership & Freedom (distributed)
   - source-domain:: bc
+  - owl:class:: bc:OwnershipFreedomDistributed
   - status:: draft
   - definition:: principle of distributing control and governance of assets or data rather than centralising it in a single authority.
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

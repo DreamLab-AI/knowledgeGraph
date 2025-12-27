@@ -7,4 +7,8 @@ id:: nongenesisblock-ontology
   - term-id:: BC-0568
   - preferred-term:: Non Genesis Block
   - source-domain:: bc
+  - owl:class:: bc:NonGenesisBlock
   - status:: complete
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

@@ -3,6 +3,7 @@
   collapsed:: true
 	- preferred-term:: Velocity Control
 	- source-domain:: mv
+  - owl:class:: mv:VelocityControl
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition

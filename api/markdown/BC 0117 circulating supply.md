@@ -7,6 +7,7 @@ id:: unknown-ontology
   - term-id:: MV-0117
   - preferred-term:: BC 0117 circulating supply
   - source-domain:: bc
+  - owl:class:: bc:Bc0117CirculatingSupply
   - status:: active
   - definition:: ### Primary Definition
 

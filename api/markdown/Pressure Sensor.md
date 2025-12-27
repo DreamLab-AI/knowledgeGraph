@@ -6,9 +6,10 @@
 	- preferred-term:: Pressure Sensor
 	- source-domain:: rb
 	- owl:class:: rb:PressureSensor
+	- is-subclass-of:: [[Robotics]]
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- definition:: A pressure sensor measures mechanical pressure and converts it to an electrical signal for robotic control applications.
 	- maturity:: draft
 
 ## Academic Context

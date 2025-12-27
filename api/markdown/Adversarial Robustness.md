@@ -6,6 +6,7 @@
 	- preferred-term:: Adversarial Robustness
 	- source-domain:: ai
 	- status:: draft
+  - owl:class:: ai:AdversarialRobustness
     - public-access:: true
 
 

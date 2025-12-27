@@ -1,24 +1,28 @@
 {
   "id": "Driver Software",
   "title": "Driver Software",
-  "content": "- ### OntologyBlock\n  id:: driver-software-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9886\n\t- preferred-term:: Driver Software\n\t- status:: stub\n\t- owl:class:: mv:DriverSoftware\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: driver-software-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: driver-software-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9886\n\t- source-domain:: mv\n\t- preferred-term:: Driver Software\n\t- status:: active\n\t- owl:class:: mv:DriverSoftware\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: System-level software components that enable communication between operating systems and extended reality (XR) hardware devices, translating high-level application commands into hardware-specific instructions for VR headsets, AR glasses, haptic controllers, and spatial computing peripherals.\n\t- #### Relationships\n\t  id:: driver-software-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[System Software]]\n\t\t- related-to:: [[Hardware Acceleration]]\n\t\t- enables:: [[Extended Reality Xr]]\n\t\t- supports:: [[Immersive Interface]]\n\n## Technical Details\n\n### Core Functions\n- Hardware abstraction layer between XR applications and physical devices\n- Real-time translation of tracking data from sensors to application coordinates\n- Performance optimisation for latency-critical immersive experiences\n- Cross-platform compatibility management\n\n### Supported Hardware Categories\n- VR headsets (Meta Quest, HTC Vive, PlayStation VR)\n- AR glasses and smart eyewear\n- Haptic feedback controllers\n- Motion tracking systems\n- Spatial audio devices\n- Eye-tracking modules\n\n### Platform Ecosystem\n\n#### Meta Platforms\n- Maintains 74.6% market share across entire 2024 (full-year data)\n- Integrated hardware, software, and content ecosystem approach\n- Operating system and software ecosystem model\n\n#### Industry Landscape\n- 2024 global metaverse market value: USD 105.4 billion\n- Software accounts for 41.6% of market revenue\n- Asia-Pacific fastest-growing region with 35.1% CAGR projected through 2030\n\n## XR Technology Integration\n\n### Extended Reality (XR)\n- Umbrella term unifying AR, VR, and MR technologies on the reality-virtuality continuum\n- Enables transitions from physical world to completely virtual environments\n- Driver software essential for seamless experience across reality spectrum\n\n### Technical Requirements\n- Low-latency data transmission (sub-20ms for preventing motion sickness)\n- High-bandwidth sensor data processing\n- Real-time spatial mapping and tracking\n- Cross-device synchronisation\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
     "Haptics"
   ],
   "wiki_links": [
-    "metaverse"
+    "Immersive Interface",
+    "Hardware Acceleration",
+    "metaverse",
+    "Extended Reality Xr",
+    "System Software"
   ],
   "ontology": {
     "term_id": "MV-9886",
     "preferred_term": "Driver Software",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#DriverSoftware",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "System-level software components that enable communication between operating systems and extended reality (XR) hardware devices, translating high-level application commands into hardware-specific instructions for VR headsets, AR glasses, haptic controllers, and spatial computing peripherals.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +34,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "System Software"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Extended Reality Xr"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +53,20 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Hardware Acceleration"
+      ],
+      "supports": [
+        "Immersive Interface"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

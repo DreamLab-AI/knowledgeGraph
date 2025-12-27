@@ -1,11 +1,11 @@
-id:: visual-servoing-ontology
-
 - ### OntologyBlock
-  id:: Visual Servoing
+  id:: visual-servoing-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0065
   - preferred-term:: Visual Servoing
   - source-domain:: rb
+  - owl:class:: rb:VisualServoing
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: Visual servoing is a robot control technique that uses visual feedback from cameras to control robot motion, enabling precise positioning and tracking tasks without explicit pose estimation.

@@ -7,10 +7,12 @@ id:: non-fungible-token-nft-ontology
   - term-id:: DT-0893
   - preferred-term:: Non-Fungible Token (NFT)
   - source-domain:: bc
+  - owl:class:: bc:NonFungibleTokenNft
   - status:: draft
   - definition:: A digital asset recorded on a distributed ledger that is uniquely identifiable and non-interchangeable, representing ownership or rights to specific digital or physical items.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Crypto Token]]
 - is-part-of:: [[Digital Asset]]
 - is-part-of:: [[Virtual Asset]]

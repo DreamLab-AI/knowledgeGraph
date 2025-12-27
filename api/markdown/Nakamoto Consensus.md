@@ -7,6 +7,7 @@ id:: nakamoto-consensus-ontology
   - term-id:: DT-1071
   - preferred-term:: Nakamoto Consensus
   - source-domain:: bc
+  - owl:class:: bc:NakamotoConsensus
   - status:: complete
   - definition:: Bitcoin-style consensus within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

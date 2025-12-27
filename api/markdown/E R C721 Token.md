@@ -7,4 +7,8 @@ ERC-721 Token refers to a non-fungible token implementing the erc-721 standard, 
   - term-id:: BC-9870
   - preferred-term:: ERC721 Token
   - source-domain:: bc
+  - owl:class:: bc:Erc721Token
   - status:: draft
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

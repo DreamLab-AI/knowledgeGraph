@@ -11,4 +11,5 @@ id:: iotsensornetwork-ontology
   - definition:: A iot sensor network component in the Robotics domain that required by IndustrialMetaverse.
 
 ### Relationships
-- is-subclass-of:: [[Sensor System]]
+- is-subclass-of:: [[Robotics]]
+  - owl:class:: rb:IotSensorNetwork

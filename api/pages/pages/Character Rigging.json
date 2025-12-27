@@ -1,24 +1,36 @@
 {
   "id": "Character Rigging",
   "title": "Character Rigging",
-  "content": "- ### OntologyBlock\n  id:: character-rigging-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9820\n\t- preferred-term:: Character Rigging\n\t- status:: stub\n\t- owl:class:: mv:CharacterRigging\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: character-rigging-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: character-rigging-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9820\n\t- source-domain:: mv\n\t- preferred-term:: Character Rigging\n\t- definition:: The process of creating a hierarchical skeleton of interconnected bones and joints within a 3D character model, along with control systems and deformation rules, enabling animators to manipulate the mesh through inverse kinematics and forward kinematics for realistic movement.\n\t- status:: active\n\t- owl:class:: mv:CharacterRigging\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: character-rigging-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Animation Technique]]\n\t\t- enables:: [[Character Animation]], [[Skeletal Animation]], [[Motion Capture Retargeting]]\n\t\t- requires:: [[Character Model]], [[Skinning]], [[Weight Painting]]\n\t\t- related-to:: [[Inverse Kinematics]], [[Bone Structure]], [[Animation Controller]]\n- ## Technical Details\n\t- **Core Components**:\n\t\t- Bone hierarchy (joints with parent-child relationships)\n\t\t- Control rig (animation controls)\n\t\t- Skinning (binding mesh to skeleton)\n\t\t- Weight painting (bone influence per vertex)\n\t- **Kinematics Types**:\n\t\t- **Forward Kinematics (FK)**: Animator moves each joint separately\n\t\t- **Inverse Kinematics (IK)**: Animate end effector, system calculates joint positions\n\t\t- Modern rigs include FK/IK switches for flexibility\n\t- **Bone Transform**: Position, scale, orientation relative to bind pose; child transforms are product of parent and own transform\n\t- **Auto-Rigging Tools**: Mixamo, AccuRIG, Anything World (AI-enhanced, 40% faster than manual)\n\t- **Software**: Blender, Maya, 3ds Max, Houdini, Cinema 4D, Unreal Engine\n- ## Applications\n\t- Video game character animation\n\t- Animated film production\n\t- VR avatar systems\n\t- Motion capture integration\n\t- Procedural animation systems",
   "backlinks": [
-    "Digital Performance Capture"
+    "Real Time Character Animation",
+    "Digital Performance Capture",
+    "Character Model"
   ],
   "wiki_links": [
-    "metaverse"
+    "Animation Controller",
+    "metaverse",
+    "Bone Structure",
+    "Animation Technique",
+    "Motion Capture Retargeting",
+    "Weight Painting",
+    "Skeletal Animation",
+    "Character Model",
+    "Character Animation",
+    "Skinning",
+    "Inverse Kinematics"
   ],
   "ontology": {
     "term_id": "MV-9820",
     "preferred_term": "Character Rigging",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#CharacterRigging",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The process of creating a hierarchical skeleton of interconnected bones and joints within a 3D character model, along with control systems and deformation rules, enabling animators to manipulate the mesh through inverse kinematics and forward kinematics for realistic movement.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +42,22 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Animation Technique"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Character Model",
+      "Skinning",
+      "Weight Painting"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Character Animation",
+      "Skeletal Animation",
+      "Motion Capture Retargeting"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +67,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Inverse Kinematics",
+        "Bone Structure",
+        "Animation Controller"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

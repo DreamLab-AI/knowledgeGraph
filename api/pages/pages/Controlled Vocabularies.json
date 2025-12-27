@@ -1,24 +1,36 @@
 {
   "id": "Controlled Vocabularies",
   "title": "Controlled Vocabularies",
-  "content": "- ### OntologyBlock\n  id:: controlled-vocabularies-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9832\n\t- preferred-term:: Controlled Vocabularies\n\t- status:: stub\n\t- owl:class:: mv:ControlledVocabularies\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: controlled-vocabularies-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: controlled-vocabularies-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9832\n\t- source-domain:: mv\n\t- preferred-term:: Controlled Vocabularies\n\t- definition:: Standardized sets of terms, phrases, and hierarchical relationships used to describe and organize information within knowledge management systems, databases, and metadata schemas, ensuring consistent indexing, retrieval, and interoperability across digital platforms and virtual environments.\n\t- status:: active\n\t- owl:class:: mv:ControlledVocabularies\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: controlled-vocabularies-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Knowledge Organization]]\n\t\t- enables:: [[Consistent Indexing]], [[Information Retrieval]], [[Semantic Interoperability]]\n\t\t- requires:: [[Taxonomy Development]], [[Metadata Standards]], [[Governance Process]]\n\t\t- related-to:: [[Ontology]], [[Taxonomy]], [[Thesaurus]]\n- ## Technical Details\n\t- **Vocabulary Types** (increasing complexity):\n\t\t- **Term Lists/Pick Lists**: Simple agreed-upon word lists\n\t\t- **Taxonomies**: Hierarchical broader/narrower structures\n\t\t- **Thesauri**: Include synonyms, acronyms, and associations\n\t\t- **Ontologies**: Formal description logic with OWL encoding\n\t- **Business Value**:\n\t\t- Enables reuse of existing knowledge assets\n\t\t- Shortens critical process cycle times\n\t\t- Reduces costs through faster retrieval\n\t\t- Supports better decision making\n\t- **2024 Developments**:\n\t\t- Taxonomy Boot Camp 2024 (Washington DC, November 18-19)\n\t\t- AI and NLP for auto-tagging and classification\n\t\t- Integration across enterprise applications\n\t\t- CKO-led systematic taxonomy management\n\t- **Challenges**: Balancing human cognition with automated AI/NLP capabilities in taxonomic classification\n- ## Applications\n\t- Enterprise content management\n\t- Digital asset indexing\n\t- Search engine optimization\n\t- Knowledge graph construction\n\t- Cross-platform metadata alignment",
   "backlinks": [
-    "Semantic Metadata Registry"
+    "Controlled Vocabulary",
+    "Semantic Metadata Registry",
+    "Category Hierarchies"
   ],
   "wiki_links": [
-    "metaverse"
+    "Metadata Standards",
+    "Governance Process",
+    "Taxonomy",
+    "metaverse",
+    "Semantic Interoperability",
+    "Ontology",
+    "Thesaurus",
+    "Taxonomy Development",
+    "Knowledge Organization",
+    "Information Retrieval",
+    "Consistent Indexing"
   ],
   "ontology": {
     "term_id": "MV-9832",
     "preferred_term": "Controlled Vocabularies",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ControlledVocabularies",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Standardized sets of terms, phrases, and hierarchical relationships used to describe and organize information within knowledge management systems, databases, and metadata schemas, ensuring consistent indexing, retrieval, and interoperability across digital platforms and virtual environments.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +42,22 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Knowledge Organization"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Taxonomy Development",
+      "Metadata Standards",
+      "Governance Process"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Consistent Indexing",
+      "Information Retrieval",
+      "Semantic Interoperability"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +67,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Ontology",
+        "Taxonomy",
+        "Thesaurus"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

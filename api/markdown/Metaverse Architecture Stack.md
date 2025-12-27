@@ -7,10 +7,12 @@ id:: metaverse-architecture-stack-ontology
   - term-id:: DT-0177
   - preferred-term:: Metaverse Architecture Stack
   - source-domain:: mv
+  - owl:class:: mv:MetaverseArchitectureStack
   - status:: draft
   - definition:: Layered framework defining functional components and interfaces for metaverse systems to interoperate at network, data, and application levels.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Reference Architecture]]
 - has-part:: [[Data Layer]]
 - has-part:: [[Component Definitions]]

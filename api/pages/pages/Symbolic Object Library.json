@@ -1,24 +1,28 @@
 {
   "id": "Symbolic Object Library",
   "title": "Symbolic Object Library",
-  "content": "- ### OntologyBlock\n  id:: symbolic-object-library-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10077\n\t- preferred-term:: Symbolic Object Library\n\t- status:: stub\n\t- owl:class:: mv:SymbolicObjectLibrary\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: symbolic-object-library-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: symbolic-object-library-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10077\n\t- source-domain:: mv\n\t- preferred-term:: Symbolic Object Library\n\t- status:: active\n\t- definition:: A collection or repository of standardized 3D digital objects, assets, and components designed for use across metaverse platforms, including models, textures, animations, and interactive elements that can be shared and reused in virtual environments.\n\t- owl:class:: mv:SymbolicObjectLibrary\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Digital Asset]]\n\t\t- related-to:: [[3D Models]]\n\t\t- related-to:: [[Virtual Objects]]\n\t\t- related-to:: [[Interoperability]]\n\t  id:: symbolic-object-library-relationships\n\t  collapsed:: true\n- ## Overview\n\t- 3D models are essential components in the development of the metaverse, serving as building blocks for creating immersive and interactive virtual environments. These digital representations simulate real-world counterparts in three dimensions, encompassing height, width, and depth. A symbolic object library provides standardized collections of these assets for consistent use across platforms.\n- ## Technical Details\n\t- ### Key Standards for 3D Objects\n\t\t- **glTF**: Khronos Group specification for efficient transmission and loading of 3D scenes and models\n\t\t- **Universal Scene Description (USD)**: Pixar specification for 3D graphics interchange, supported by Blender, Apple SceneKit, and Autodesk 3ds Max\n\t\t- **NVIDIA Omniverse**: Adopted USD for metaverse development tools in 2021\n\t- ### Object Properties\n\t\t- **Geometric Data**: Height, width, depth, and mesh complexity\n\t\t- **Physical Properties**: Using specifications like PhysX for physics and behavioral properties\n\t\t- **Animation Data**: Movement, rigging, and interaction behaviors\n\t\t- **Material Properties**: Textures, colors, reflectivity, and transparency\n- ## Applications\n\t- Virtual furniture and interior design assets\n\t- Cityscape and architectural models\n\t- Character models and avatars\n\t- Interactive props and game objects\n\t- Cross-platform asset sharing between metaverse environments",
   "backlinks": [
     "Digital Ritual"
   ],
   "wiki_links": [
-    "metaverse"
+    "3D Models",
+    "Virtual Objects",
+    "metaverse",
+    "Interoperability",
+    "Digital Asset"
   ],
   "ontology": {
     "term_id": "MV-10077",
     "preferred_term": "Symbolic Object Library",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#SymbolicObjectLibrary",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A collection or repository of standardized 3D digital objects, assets, and components designed for use across metaverse platforms, including models, textures, animations, and interactive elements that can be shared and reused in virtual environments.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Digital Asset"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +51,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "3D Models",
+        "Virtual Objects",
+        "Interoperability"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

@@ -5,11 +5,12 @@ id:: rb-0043-torque-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0043
-  - preferred-term:: rb 0043 torque
+  - preferred-term:: Torque
   - source-domain:: rb
+  - owl:class:: rb:Torque
   - status:: draft
   - definition:: ### Primary Definition
 
 ### Relationships
-- is-subclass-of:: [[rb-0022-robot-dynamics]]
+- is-subclass-of:: [[Robotics]]
 - belongsToDomain:: [[RoboticsDomain]]

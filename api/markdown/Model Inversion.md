@@ -8,6 +8,7 @@ id:: unknown-ontology
   - preferred-term:: Model Inversion
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:ModelInversion
   - definition:: An inference-time privacy attack that reconstructs sensitive training data or attributes from a trained model by exploiting model outputs, predictions, or internal representations, potentially revealing confidential information about individuals in the training dataset.
 
 ### Relationships

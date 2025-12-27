@@ -7,10 +7,12 @@ id:: xr-accessibility-guideline-ontology
   - term-id:: DT-0187
   - preferred-term:: XR Accessibility Guideline
   - source-domain:: mv
+  - owl:class:: mv:XrAccessibilityGuideline
   - status:: draft
   - definition:: Design recommendations and best practices ensuring XR applications and immersive experiences are usable by people with diverse abilities and disabilities.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Accessibility Standard]]
 - has-part:: [[Best Practice]]
 - has-part:: [[Design Recommendation]]

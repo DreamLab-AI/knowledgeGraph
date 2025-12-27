@@ -1,22 +1,28 @@
 {
   "id": "Dynamic Character Animation",
   "title": "Dynamic Character Animation",
-  "content": "- ### OntologyBlock\n  id:: dynamic-character-animation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9887\n\t- preferred-term:: Dynamic Character Animation\n\t- status:: stub\n\t- owl:class:: mv:DynamicCharacterAnimation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: dynamic-character-animation-relationships\n\t  collapsed:: true",
-  "backlinks": [],
+  "content": "- ### OntologyBlock\n  id:: dynamic-character-animation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9887\n\t- source-domain:: mv\n\t- preferred-term:: Dynamic Character Animation\n\t- status:: active\n\t- owl:class:: mv:DynamicCharacterAnimation\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Real-time procedural animation techniques that enable 3D avatars and characters to move, express, and respond dynamically to user input and environmental stimuli in metaverse environments, utilising motion capture, rigging systems, and AI-driven motion synthesis.\n\t- #### Relationships\n\t  id:: dynamic-character-animation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[3D Animation]]\n\t\t- related-to:: [[Avatar System]]\n\t\t- related-to:: [[Motion Capture]]\n\t\t- enables:: [[Immersive Experiences]]\n\n## Technical Details\n\n### Core Technologies\n- **Motion Capture**: Recording human movement for realistic avatar animation\n- **Rigging**: Building digital skeletons that control how avatars move, gesture, and express themselves\n- **Keyframe Animation**: Manual animation techniques for precise control\n- **Motion Primitives**: Precomputed basic movements that actors (avatars, robots, vehicles) perform for specific tasks\n\n### Animation Quality Factors\n- Natural facial expressions and body language through proper rigging\n- Real-time response to user actions\n- Programmatic behaviour generation\n- Seamless transitions between animation states\n\n### AI Integration\n- NPCs (Non-Player Characters) with greater capacity to understand, respond, and anticipate user needs\n- AI-powered characters interacting with users in real-time\n- Machine learning for adaptive response generation\n- Natural language processing for conversational interactions\n\n## Applications\n\n### Gaming and Entertainment\n- Inworld AI technology enabling NPCs that learn from user interactions\n- Play-to-earn gaming with dynamic avatar economies\n- Virtual performances and live events\n\n### Industrial Metaverse\n- Digital twin technology connecting real world to virtual environment\n- Smart manufacturing integration with visible, intelligent production\n- Training simulations with realistic character interactions\n\n### Animation Film Creation\n- Multiple performers in VR controlling avatars with natural movements\n- Virtual filming techniques for animation production\n- Metaverse platforms enabling collaborative creative workflows\n\n## 2024 Developments\n\n- AI becoming the main driver accelerating creative, realistic, and responsive metaverse content\n- Metaverse animation and rigging services enabling personalised dynamic experiences\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "backlinks": [
+    "Game Narratives"
+  ],
   "wiki_links": [
-    "metaverse"
+    "3D Animation",
+    "metaverse",
+    "Motion Capture",
+    "Avatar System",
+    "Immersive Experiences"
   ],
   "ontology": {
     "term_id": "MV-9887",
     "preferred_term": "Dynamic Character Animation",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#DynamicCharacterAnimation",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Real-time procedural animation techniques that enable 3D avatars and characters to move, express, and respond dynamically to user input and environmental stimuli in metaverse environments, utilising motion capture, rigging systems, and AI-driven motion synthesis.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -28,12 +34,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "3D Animation"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Immersive Experiences"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -43,15 +53,18 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Avatar System",
+        "Motion Capture"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

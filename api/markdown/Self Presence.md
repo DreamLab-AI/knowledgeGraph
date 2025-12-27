@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: TC-9006
+	- source-domain:: tc
 	- preferred-term:: Self Presence
 	- status:: draft
 	- public-access:: true

@@ -1,24 +1,34 @@
 {
   "id": "Collective Learning",
   "title": "Collective Learning",
-  "content": "- ### OntologyBlock\n  id:: collective-learning-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9823\n\t- preferred-term:: Collective Learning\n\t- status:: stub\n\t- owl:class:: mv:CollectiveLearning\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: collective-learning-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: collective-learning-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9823\n\t- source-domain:: mv\n\t- preferred-term:: Collective Learning\n\t- definition:: A collaborative educational approach in virtual environments and metaverse platforms where groups of learners work together to construct knowledge, share experiences, and solve problems through social interaction, benefiting from diverse perspectives, AI-powered personalization, and immersive VR/AR technologies that enable global participation without physical co-location.\n\t- status:: active\n\t- owl:class:: mv:CollectiveLearning\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: collective-learning-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Educational Methodology]]\n\t\t- enables:: [[Knowledge Co-Construction]], [[Peer Learning]], [[Global Collaboration]]\n\t\t- requires:: [[Virtual Environment]], [[Communication Tools]], [[Learning Management System]]\n\t\t- related-to:: [[Collaborative Learning]], [[VR Education]], [[Social Learning]]\n- ## Technical Details\n\t- **Metaverse Learning Environments**:\n\t\t- Platforms like EngageVR and Immersed provide virtual classrooms and interactive simulations\n\t\t- AltspaceVR used for bioethics discussions and collective brainstorming\n\t\t- Full-body avatars enable natural classroom-like interactions\n\t- **Technology Stack**:\n\t\t- WebXR frameworks (A-Frame, Three.js) for web-based VR/AR experiences\n\t\t- Server solutions (Photon, SpatialOS) for concurrent user handling\n\t\t- AI/ML for NPC behaviors and content recommendations\n\t- **2024 Developments**:\n\t\t- Healthcare (45%) and education (22%) leading metaverse development sectors\n\t\t- Machine learning advances in hand tracking for natural interaction\n\t\t- Deep learning (CNNs, attention mechanisms) improving immersive experience quality\n\t- **Learning Outcomes**:\n\t\t- VR lessons enable \"learning through doing\" with critical engagement\n\t\t- Equal global access to resources, education, and social opportunities\n\t\t- Collaborative design sessions in platforms like Spatial and MeetinVR\n- ## Applications\n\t- Virtual classroom immersive education\n\t- Global collaborative courses without travel\n\t- Team-based problem solving in VR\n\t- Professional training simulations\n\t- Cross-cultural knowledge exchange",
   "backlinks": [
     "Collective Intelligence System"
   ],
   "wiki_links": [
-    "metaverse"
+    "Educational Methodology",
+    "VR Education",
+    "metaverse",
+    "Global Collaboration",
+    "Learning Management System",
+    "Collaborative Learning",
+    "Social Learning",
+    "Virtual Environment",
+    "Knowledge Co-Construction",
+    "Communication Tools",
+    "Peer Learning"
   ],
   "ontology": {
     "term_id": "MV-9823",
     "preferred_term": "Collective Learning",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#CollectiveLearning",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A collaborative educational approach in virtual environments and metaverse platforms where groups of learners work together to construct knowledge, share experiences, and solve problems through social interaction, benefiting from diverse perspectives, AI-powered personalization, and immersive VR/AR technologies that enable global participation without physical co-location.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +40,22 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Educational Methodology"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Virtual Environment",
+      "Communication Tools",
+      "Learning Management System"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Knowledge Co-Construction",
+      "Peer Learning",
+      "Global Collaboration"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +65,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Collaborative Learning",
+        "VR Education",
+        "Social Learning"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

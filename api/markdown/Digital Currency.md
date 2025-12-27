@@ -4,11 +4,13 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9855
+	- source-domain:: mv
 	- preferred-term:: Digital Currency
 	- status:: stub
 	- owl:class:: mv:DigitalCurrency
 	- belongsToDomain:: [[metaverse]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: digital-currency-relationships
 	  collapsed:: true
 

@@ -5,7 +5,9 @@ id:: rb-0028-forward-kinematics-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0028
-  - preferred-term:: rb 0028 forward kinematics
+  - preferred-term:: Forward Kinematics
   - source-domain:: rb
+  - owl:class:: rb:ForwardKinematics
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
   - definition:: ### Primary Definition

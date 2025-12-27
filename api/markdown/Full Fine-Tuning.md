@@ -8,6 +8,7 @@ id:: full-fine-tuning-ontology
   - preferred-term:: Full Fine Tuning
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:FullFineTuning
   - definition:: A fine-tuning approach that updates all parameters of a pre-trained model during adaptation to a downstream task. Full fine-tuning provides maximum flexibility and performance potential but requires substantial computational resources and memory.
 
 ### Relationships

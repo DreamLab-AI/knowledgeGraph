@@ -7,5 +7,9 @@ id:: enterprise-blockchain-architecture-ontology
   - term-id:: BC-0428
   - preferred-term:: Enterprise Blockchain Architecture
   - source-domain:: bc
+  - owl:class:: bc:EnterpriseBlockchainArchitecture
   - status:: draft
   - definition:: A component of the blockchain ecosystem.
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

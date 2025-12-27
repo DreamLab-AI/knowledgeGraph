@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0933
+	- source-domain:: mv
 	- preferred-term:: High Risk AI System
 	- status:: draft
 	- public-access:: true

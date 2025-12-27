@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-1102
+	- source-domain:: mv
 	- preferred-term:: Display Metrology
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[InteractionDomain]]
 	- implementedInLayer:: [[NetworkLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: display-metrology-relationships
 	  collapsed:: true
 		- is-part-of:: [[XR Testing Infrastructure]]

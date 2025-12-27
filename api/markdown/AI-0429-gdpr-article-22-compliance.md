@@ -8,3 +8,8 @@ AI-0429-gdpr-article-22-compliance
   - preferred-term:: Ai 0429 Gdpr Article 22 Compliance
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0429GdprArticle22Compliance
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

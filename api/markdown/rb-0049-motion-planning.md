@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0049
+	- source-domain:: rb
 	- preferred-term:: rb 0049 motion planning
 	- status:: draft
 	- public-access:: true

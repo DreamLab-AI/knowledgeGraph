@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0181
+	- source-domain:: ai
 	- preferred-term:: AI Governance Framework
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 	  id:: ai-governance-framework-relationships
 	  collapsed:: true
 		- is-part-of:: [[Governance Model]]

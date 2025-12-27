@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0916
+	- source-domain:: mv
 	- preferred-term:: Neuromorphic Computing
 	- status:: emerging
 	- public-access:: true
@@ -91,3 +92,6 @@ Future applications are expected across deep learning, next-generation semicondu
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

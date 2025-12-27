@@ -7,6 +7,7 @@ id:: censorship-resistance-ontology
   - term-id:: DT-0086
   - preferred-term:: Censorship Resistance
   - source-domain:: bc
+  - owl:class:: bc:CensorshipResistance
   - status:: complete
   - definition:: Transaction inclusion guarantee within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

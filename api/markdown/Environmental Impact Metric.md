@@ -7,10 +7,12 @@ id:: environmental-impact-metric-ontology
   - term-id:: DT-0309
   - preferred-term:: Environmental Impact Metric
   - source-domain:: mv
+  - owl:class:: mv:EnvironmentalImpactMetric
   - status:: draft
   - definition:: A quantitative measurement framework for assessing the environmental sustainability of metaverse and digital systems, encompassing energy consumption, carbon emissions, resource efficiency, and ecological footprint across computational infrastructure and user interactions.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Green Computing Initiative]]
 - is-part-of:: [[ESG Reporting System]]
 - is-part-of:: [[Sustainability Framework]]

@@ -1,24 +1,30 @@
 {
   "id": "Search Index",
   "title": "Search Index",
-  "content": "- ### OntologyBlock\n  id:: search-index-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10031\n\t- preferred-term:: Search Index\n\t- status:: stub\n\t- owl:class:: mv:SearchIndex\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: search-index-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: search-index-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10031\n\t- source-domain:: mv\n\t- preferred-term:: Search Index\n\t- status:: active\n\t- definition:: A data structure that maps terms, embeddings, or attributes to document locations, enabling rapid retrieval of relevant content from large metaverse asset catalogues through inverted indexes, vector indexes, or hybrid approaches.\n\t- owl:class:: mv:SearchIndex\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: search-index-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Data Structure]]\n\t\t- related-to:: [[Search Engine]]\n\t\t- related-to:: [[Database Indexing]]\n\t\t- related-to:: [[Information Retrieval]]\n\t\t- enables:: [[Fast Query Response]]\n\t- #### Index Types\n\t  collapsed:: true\n\t\t- Inverted index for text search\n\t\t- Vector index for semantic similarity\n\t\t- B-tree for range queries\n\t\t- Geospatial index for location search\n\t\t- Graph index for relationship traversal\n\t- #### Technologies\n\t  collapsed:: true\n\t\t- Apache Lucene indexing library\n\t\t- HNSW for approximate nearest neighbour\n\t\t- FAISS for vector similarity\n\t\t- Pinecone managed vector database\n\t\t- Milvus open source vector search",
   "backlinks": [
+    "Search Engine",
     "Digital Goods Registry"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Data Structure",
+    "Database Indexing",
+    "Fast Query Response",
+    "Information Retrieval",
+    "Search Engine"
   ],
   "ontology": {
     "term_id": "MV-10031",
     "preferred_term": "Search Index",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#SearchIndex",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A data structure that maps terms, embeddings, or attributes to document locations, enabling rapid retrieval of relevant content from large metaverse asset catalogues through inverted indexes, vector indexes, or hybrid approaches.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +36,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Data Structure"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Fast Query Response"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +55,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Search Engine",
+        "Database Indexing",
+        "Information Retrieval"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

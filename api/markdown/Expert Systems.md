@@ -5,6 +5,7 @@
   - preferred-term:: Expert Systems
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:ExpertSystems
 
 ### Relationships
 - is-subclass-of:: [[Knowledge Representation]]

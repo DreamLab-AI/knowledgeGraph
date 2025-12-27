@@ -1,7 +1,7 @@
 {
   "id": "VirtualSociety",
   "title": "VirtualSociety",
-  "content": "- ### OntologyBlock\n  id:: VirtualSociety\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-1006\n  - preferred-term:: VirtualSociety\n  - status:: complete\n  - definition:: A virtual society component in the Metaverse domain that enables VirtualWorld.\n\n### Relationships\n- is-subclass-of:: [[Social Structure]]",
+  "content": "- ### OntologyBlock\n  id:: VirtualSociety\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-1006\n  - source-domain:: mv\n  - owl:class:: mv:Virtualsociety\n  - preferred-term:: VirtualSociety\n  - status:: complete\n  - definition:: A virtual society component in the Metaverse domain that enables VirtualWorld.\n\n### Relationships\n- is-subclass-of:: [[Social Structure]]",
   "backlinks": [],
   "wiki_links": [
     "Social Structure"
@@ -10,8 +10,8 @@
     "term_id": "MV-1006",
     "preferred_term": "VirtualSociety",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": null,
+    "iri": "http://narrativegoldmine.com/metaverse#Virtualsociety",
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
     "definition": "A virtual society component in the Metaverse domain that enables VirtualWorld.",
@@ -24,7 +24,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "mv:Virtualsociety",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -44,9 +44,7 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

@@ -1,14 +1,16 @@
 {
   "id": "Xr Meeting Space",
   "title": "Xr Meeting Space",
-  "content": "- ### OntologyBlock\n  id:: Xr Meeting Space\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-10172\n  - preferred-term:: Xr Meeting Space\n  - source-domain:: mv\n  - status:: stub\n\n### Relationships",
+  "content": "- ### OntologyBlock\n  id:: Xr Meeting Space\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-10172\n  - preferred-term:: Xr Meeting Space\n  - source-domain:: mv\n  - owl:class:: mv:XrMeetingSpace\n  - status:: stub\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]",
   "backlinks": [],
-  "wiki_links": [],
+  "wiki_links": [
+    "Metaverse"
+  ],
   "ontology": {
     "term_id": "MV-10172",
     "preferred_term": "Xr Meeting Space",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/metaverse#XrMeetingSpace",
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
@@ -22,7 +24,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "mv:XrMeetingSpace",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -44,7 +46,6 @@
       "errors": [
         "Missing required property: last-updated",
         "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

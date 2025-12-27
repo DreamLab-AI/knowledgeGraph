@@ -7,6 +7,7 @@ id:: smart-contract-ontology
   - term-id:: BC-0009
   - preferred-term:: Smart Contract
   - source-domain:: bc
+  - owl:class:: bc:SmartContract
   - status:: deprecated
   - definition:: Self-executing programmable code within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

@@ -8,6 +8,7 @@ id:: unknown-ontology
   - preferred-term:: Generative Adversarial Network
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:GenerativeAdversarialNetwork
   - definition:: ### Primary Definition
 
 ### Relationships

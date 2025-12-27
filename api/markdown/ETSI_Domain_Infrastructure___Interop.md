@@ -7,6 +7,7 @@ id:: etsi_domain_infrastructure___interop-ontology
   - term-id:: MV-0026
   - preferred-term:: ETSI_Domain_Infrastructure___Interop
   - source-domain:: mv
+  - owl:class:: mv:EtsiDomainInfrastructureInterop
   - status:: draft
   - definition:: A component of the metaverse ecosystem.
 

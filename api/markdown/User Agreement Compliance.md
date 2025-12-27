@@ -7,10 +7,12 @@ id:: user-agreement-compliance-ontology
   - term-id:: DT-0229
   - preferred-term:: User Agreement Compliance
   - source-domain:: mv
+  - owl:class:: mv:UserAgreementCompliance
   - status:: draft
   - definition:: Process ensuring user actions within a metaverse platform adhere to declared policies, terms of service, and acceptable use guidelines.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Platform Management]]
 - is-part-of:: [[Governance Framework]]
 - has-part:: [[User Monitoring]]

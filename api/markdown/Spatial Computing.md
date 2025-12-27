@@ -7,10 +7,12 @@ id:: spatial-computing-ontology
   - term-id:: DT-0326
   - preferred-term:: Spatial Computing
   - source-domain:: mv
+  - owl:class:: mv:SpatialComputing
   - status:: deprecated
   - definition:: Computing paradigm that enables interaction with digital content through three-dimensional spatial awareness, mapping, and tracking of physical environments and user positions.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Metaverse]]
 - has-part:: [[Spatial Audio]]
 - has-part:: [[Extended Reality (XR)]]

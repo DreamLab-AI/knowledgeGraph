@@ -7,6 +7,7 @@ id:: gossip-protocol-ontology
   - term-id:: DT-1074
   - preferred-term:: Gossip Protocol
   - source-domain:: bc
+  - owl:class:: bc:GossipProtocol
   - status:: complete
   - definition:: Information propagation method within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

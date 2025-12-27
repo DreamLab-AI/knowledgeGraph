@@ -7,10 +7,12 @@ id:: e-contract-arbitration-ontology
   - term-id:: DT-0224
   - preferred-term:: E-Contract Arbitration
   - source-domain:: bc
+  - owl:class:: bc:EContractArbitration
   - status:: draft
   - definition:: Online dispute resolution process specifically designed for resolving conflicts arising from smart contract execution, code interpretation, or automated transaction failures.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Smart Contract Governance]]
 - is-part-of:: [[Dispute Resolution Mechanism]]
 - has-part:: [[Contract Analysis Process]]

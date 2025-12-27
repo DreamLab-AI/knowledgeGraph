@@ -7,6 +7,7 @@ id:: solana-ontology
   - term-id:: BC-0566
   - preferred-term:: Solana
   - source-domain:: bc
+  - owl:class:: bc:Solana
   - status:: complete
   - definition:: A high-performance blockchain platform combining Proof-of-History (PoH) with Proof-of-Stake consensus, enabling parallel transaction processing for exceptional throughput exceeding 65,000 TPS. Uses single-layer architecture where all transactions process on the base layer, prioritizing speed, throughput, and low latency.
 

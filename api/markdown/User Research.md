@@ -2,10 +2,43 @@ id:: user-research-ontology
 
 - ### OntologyBlock
   id:: User Research
-  - ontology:: true
-  - public-access:: true
-  - term-id:: MV-10099
-  - preferred-term:: User Research
-  - status:: stub
+	- ontology:: true
+	- public-access:: true
+	- term-id:: MV-10099
+	- source-domain:: mv
+	- owl:class:: mv:UserResearch
+	- preferred-term:: User Research
+	- status:: active
+	- definition:: Systematic investigation of user behaviors, needs, preferences, and experiences in metaverse environments through qualitative and quantitative methods to inform design decisions and improve virtual world experiences.
+	- #### Relationships
+		- is-subclass-of:: [[Research Methods]]
+		- related-to:: [[User Experience]]
+		- related-to:: [[Usability Testing]]
+		- related-to:: [[Human-Computer Interaction]]
+- ## Overview
+	- User research in metaverse contexts involves studying how people interact with virtual environments, avatars, and spatial interfaces. This includes understanding user mental models, navigation patterns, social behaviors, and comfort levels in immersive experiences.
+- ## Technical Details
+	- ### Research Methods
+		- **Observational Studies**: Tracking user behavior in virtual environments
+		- **Usability Testing**: Task-based evaluation of XR interfaces
+		- **Surveys and Interviews**: Gathering subjective feedback
+		- **Biometric Analysis**: Eye tracking, physiological responses
+		- **A/B Testing**: Comparing design variations
+	- ### XR-Specific Metrics
+		- Presence and immersion levels
+		- Cybersickness and comfort
+		- Spatial awareness and navigation
+		- Social presence and avatar embodiment
+		- Task completion in 3D environments
+	- ### Data Collection Tools
+		- In-VR observation systems
+		- Telemetry and analytics platforms
+		- Eye and gaze tracking
+		- Motion analysis systems
+- ## Applications
+	- Metaverse platform design optimization
+	- VR game user experience research
+	- Enterprise XR training effectiveness
+	- Accessibility and inclusive design
+	- Avatar and identity preference studies
 
-### Relationships

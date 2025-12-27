@@ -1,14 +1,16 @@
 {
   "id": "BC-BlockchainNetwork",
   "title": "id: BCBlockchainNetwork",
-  "content": "id: BC-BlockchainNetwork\n\n- ### OntologyBlock\n  id:: BC-BlockchainNetwork\n  - ontology:: true\n  - public-access:: true\n  - term-id:: BC-9935\n  - preferred-term:: id: BCBlockchainNetwork\n  - source-domain:: bc\n  - status:: draft",
+  "content": "id: BC-BlockchainNetwork\n\n- ### OntologyBlock\n  id:: BC-BlockchainNetwork\n  - ontology:: true\n  - public-access:: true\n  - term-id:: BC-9935\n  - preferred-term:: id: BCBlockchainNetwork\n  - source-domain:: bc\n  - owl:class:: bc:IdBcblockchainnetwork\n  - status:: draft\n\n### Relationships\n- is-subclass-of:: [[Blockchain]]",
   "backlinks": [],
-  "wiki_links": [],
+  "wiki_links": [
+    "Blockchain"
+  ],
   "ontology": {
     "term_id": "BC-9935",
     "preferred_term": "id: BCBlockchainNetwork",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/blockchain#IdBcblockchainnetwork",
     "source_domain": "bc",
     "domain": "bc",
     "domain_full_name": "Blockchain",
@@ -22,7 +24,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "bc:IdBcblockchainnetwork",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -44,7 +46,6 @@
       "errors": [
         "Missing required property: last-updated",
         "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

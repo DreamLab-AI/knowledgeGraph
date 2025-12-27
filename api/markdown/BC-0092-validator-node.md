@@ -7,6 +7,7 @@ id:: validator-node-ontology
   - term-id:: DT-0092
   - preferred-term:: Validator Node
   - source-domain:: bc
+  - owl:class:: bc:ValidatorNode
   - status:: complete
   - definition:: Transaction validation participant within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

@@ -10,7 +10,11 @@ To comprehend the legal challenges posed by [[Artificial...
   - preferred-term:: To comprehend the legal challenges posed by [[Artificial...
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:ToComprehendTheLegalChallengesPosedByartificial
 
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 To comprehend the legal challenges posed by [[Artificial Intelligence]], it is essential to first understand the foundational doctrines of [[Tort Law]] upon which any [[AI Liability]] regime will be built. In both the [[United States]] and the [[United Kingdom]], the legal frameworks for assigning responsibility for harm have evolved over centuries, primarily through the [[common law]] doctrines of [[Negligence]] and [[Strict Liability]]. These principles, developed in response to the physical and industrial risks of their time, now provide the essential toolkit for addressing the novel digital risks of the 21st century. This section establishes these bedrock legal principles, highlighting their historical development, core elements, and the key transatlantic divergences that will prove critical in the context of AI.
 
 To comprehend the legal challenges posed by [[Artificial Intelligence]], it is essential to first understand the foundational doctrines of [[Tort Law]] upon which any [[AI Liability]] regime will be built. In both the [[United States]] and the [[United Kingdom]], the legal frameworks for assigning responsibility for harm have evolved over centuries, primarily through the [[common law]] doctrines of [[Negligence]] and [[Strict Liability]]. These principles, developed in response to the physical and industrial risks of their time, now provide the essential toolkit for addressing the novel digital risks of the 21st century. This section establishes these bedrock legal principles, highlighting their historical development, core elements, and the key transatlantic divergences that will prove critical in the context of AI.

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-1044
+	- source-domain:: mv
 	- preferred-term:: FRAME Reporting Framework (Implementation Science)
 	- status:: active
 	- public-access:: true
@@ -73,3 +74,6 @@ These frameworks address critical gaps in implementation science by providing st
 
 - Wiltsey Stirman, S., Baumann, A. A., & Miller, C. J. (2019). The FRAME: an expanded framework for reporting adaptations and modifications to evidence-based interventions. Implementation Science, 14(1), 58.
 - Miller, C. J., et al. (2021). The FRAME-IS: a framework for documenting modifications to implementation strategies in healthcare. Implementation Science, 16(1), 36.
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

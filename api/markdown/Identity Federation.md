@@ -7,10 +7,12 @@ id:: identity-federation-ontology
   - term-id:: DT-0284
   - preferred-term:: Identity Federation
   - source-domain:: mv
+  - owl:class:: mv:IdentityFederation
   - status:: draft
   - definition:: A distributed authentication workflow that enables cross-domain identity linking through trust relationships, allowing users to access resources across multiple organizations using a single set of credentials.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Distributed Authentication Architecture]]
 - is-part-of:: [[Identity Management System]]
 - has-part:: [[Trust Establishment]]

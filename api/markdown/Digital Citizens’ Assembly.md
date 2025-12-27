@@ -7,4 +7,8 @@ id:: digital-citizens’-assembly-ontology
   - term-id:: MV-9747
   - preferred-term:: id:: digitalcitizens’assemblyontology
   - source-domain:: mv
+  - owl:class:: mv:IdDigitalcitizensassemblyontology
   - status:: draft
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

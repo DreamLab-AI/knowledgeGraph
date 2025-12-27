@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: ### Primary Definition
 	- source:: [[LeCun et al. 1998 Gradient-Based Learning]], [[Krizhevsky et al. 2012 AlexNet]], [[He et al. 2016 ResNet]], [[IEEE CVPR Proceedings]]
-	- maturity:: dt:Mature
+	- maturity:: mature
 	- #### Relationships
 - is-subclass-of:: [[ai:ModelArchitecture]]
 	  id:: convolutional-neural-network-relationships

@@ -1,11 +1,11 @@
-id:: ultrasonic-sensor-ontology
-
 - ### OntologyBlock
-  id:: Ultrasonic Sensor
+  id:: ultrasonic-sensor-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0079
   - preferred-term:: Ultrasonic Sensor
   - source-domain:: rb
+  - owl:class:: rb:UltrasonicSensor
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: An ultrasonic sensor uses sound waves above the audible range to detect objects and measure distances.

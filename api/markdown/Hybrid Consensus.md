@@ -7,4 +7,8 @@ Hybrid Consensus refers to consensus mechanisms combining multiple approaches, t
   - term-id:: BC-9963
   - preferred-term:: Hybrid Consensus
   - source-domain:: bc
+  - owl:class:: bc:HybridConsensus
   - status:: draft
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

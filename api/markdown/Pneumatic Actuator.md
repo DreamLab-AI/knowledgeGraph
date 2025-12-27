@@ -1,10 +1,11 @@
-Pneumatic Actuator refers to pneumatic actuator uses compressed air to generate motion.
-
 - ### OntologyBlock
-  id:: Pneumatic Actuator
+  id:: pneumatic-actuator-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1047
-  - preferred-term:: Pneumatic Actuator refers to pneumatic actuator uses compressed air to generate motion.
+  - preferred-term:: Pneumatic Actuator
   - source-domain:: rb
+  - owl:class:: rb:PneumaticActuator
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
+  - definition:: A pneumatic actuator uses compressed air to generate motion.

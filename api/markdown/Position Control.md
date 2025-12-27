@@ -3,6 +3,7 @@
   collapsed:: true
 	- preferred-term:: Position Control
 	- source-domain:: mv
+  - owl:class:: mv:PositionControl
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition

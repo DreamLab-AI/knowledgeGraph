@@ -7,6 +7,7 @@ id:: portability-ontology
   - term-id:: MV-0048
   - preferred-term:: Portability
   - source-domain:: mv
+  - owl:class:: mv:Portability
   - status:: draft
   - definition:: A component of the metaverse ecosystem.
 

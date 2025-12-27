@@ -8,3 +8,8 @@ AI-0433-on-device-learning
   - preferred-term:: Ai 0433 On Device Learning
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0433OnDeviceLearning
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

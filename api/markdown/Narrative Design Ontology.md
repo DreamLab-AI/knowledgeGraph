@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-1084
+	- source-domain:: mv
 	- preferred-term:: Narrative Design Ontology
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[CreativeMediaDomain]]
 	- implementedInLayer:: [[ApplicationLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: narrative-design-relationships-relationships
 	  collapsed:: true
 		- is-part-of:: [[Interactive Storytelling System]]

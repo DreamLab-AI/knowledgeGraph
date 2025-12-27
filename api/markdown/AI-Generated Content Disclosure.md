@@ -13,8 +13,9 @@
 		- owl:class:: ai:AIGeneratedContentDisclosure
 		- owl:physicality:: None
 		- owl:role:: None
-		- maturity:: dt:Draft:Mature
+		- maturity:: mature
 	- #### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 		- has-part:: [[AI Origin Declaration]]
 		- has-part:: [[Disclosure Enforcement Mechanism]]
 		- has-part:: [[Content Labeling Metadata]]

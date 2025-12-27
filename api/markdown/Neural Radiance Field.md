@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: AI-0812
+    - source-domain:: ai
+    - owl:class:: ai:NeuralRadianceField
     - preferred-term:: Neural Radiance Field
     - ontology:: true
     - public-access:: true

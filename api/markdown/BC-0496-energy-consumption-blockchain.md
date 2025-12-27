@@ -7,6 +7,7 @@ id:: bc-0496-energy-consumption-blockchain-ontology
   - term-id:: BC-0496
   - preferred-term:: Energy Consumption Blockchain
   - source-domain:: bc
+  - owl:class:: bc:EnergyConsumptionBlockchain
   - status:: stub
   - definition:: A component of the blockchain ecosystem.
 

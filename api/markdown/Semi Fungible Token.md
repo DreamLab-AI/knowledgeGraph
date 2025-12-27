@@ -7,4 +7,8 @@ Semi-Fungible Token refers to a token that can represent both fungible and non-f
   - term-id:: BC-9917
   - preferred-term:: SemiFungible Token
   - source-domain:: bc
+  - owl:class:: bc:SemifungibleToken
   - status:: draft
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

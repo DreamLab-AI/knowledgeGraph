@@ -7,10 +7,12 @@ id:: federated-credential-exchange-ontology
   - term-id:: DT-0286
   - preferred-term:: Federated Credential Exchange
   - source-domain:: bc
+  - owl:class:: bc:FederatedCredentialExchange
   - status:: draft
   - definition:: A cross-platform workflow process that enables secure sharing and translation of identity credentials between different identity providers using standardized protocols, attribute mapping, and user consent mechanisms.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Federated Identity System]]
 - is-part-of:: [[Trust Framework]]
 - has-part:: [[Credential Request]]

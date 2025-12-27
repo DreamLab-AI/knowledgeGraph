@@ -5,6 +5,7 @@
   - preferred-term:: Neuromorphic Chips
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:NeuromorphicChips
 
 ### Relationships
 - is-subclass-of:: [[AI Hardware]]

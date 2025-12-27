@@ -8,9 +8,11 @@ id:: voice-interaction-ontology
   - preferred-term:: Voice Interaction
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:VoiceInteraction
   - definition:: Communication method enabling control and conversation through speech recognition, natural language understanding, and text-to-speech synthesis.
 
 ### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 - is-part-of:: [[Multimodal Interaction]]
 - has-part:: [[Natural Language Understanding]]
 - has-part:: [[Voice Commands]]

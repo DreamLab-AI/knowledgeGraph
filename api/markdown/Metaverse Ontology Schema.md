@@ -7,6 +7,7 @@ id:: metaverse-ontology-schema-ontology
   - term-id:: DT-0328
   - preferred-term:: Metaverse Ontology Schema
   - source-domain:: mv
+  - owl:class:: mv:MetaverseOntologySchema
   - status:: draft
   - definition:: A formal OWL 2 ontology framework defining the complete taxonomic structure, semantic relationships, axioms, and reasoning rules for metaverse concepts, enabling automated classification, consistency validation, and interoperability across virtual world implementations.
 

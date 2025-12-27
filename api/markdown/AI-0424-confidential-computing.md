@@ -7,7 +7,7 @@
     - ontology:: true
     - term-id:: AI-0424
     - preferred-term:: 0424 Confidential Computing
-    - source-domain:: ai-grounded
+    - source-domain:: ai
     - status:: in-progress
     - version:: 1.0
     - last-updated:: 2025-10-29
@@ -19,14 +19,15 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:ConfidentialComputing
+    - owl:class:: ai:ConfidentialComputing
     - owl:physicality:: VirtualEntity
     - owl:role:: Process
-    - owl:inferred-class:: aigo:VirtualProcess
+    - owl:inferred-class:: ai:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 
   - #### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
     id:: 0424-confidential-computing-relationships
 
   - #### OWL Axioms

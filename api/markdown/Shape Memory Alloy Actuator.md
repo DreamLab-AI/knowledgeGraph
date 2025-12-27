@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-9002
+	- source-domain:: rb
 	- preferred-term:: Shape Memory Alloy Actuator
 	- status:: draft
 	- public-access:: true
@@ -13,4 +14,4 @@
 	- owl:physicality:: Physical
 	- owl:role:: Object
 	- belongsToDomain:: [[RoboticsDomain]]
-	- isSubclassOf:: [[Soft Robotics Actuator]]
+	- is-subclass-of:: [[Robotics]]

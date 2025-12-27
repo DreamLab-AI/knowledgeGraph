@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0128
+	- source-domain:: mv
 	- preferred-term:: Digital Taxonomy Registry
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[VirtualEconomyDomain]], [[ComputationAndIntelligenceDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]], [[DataLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: digital-taxonomy-registry-relationships
 	  collapsed:: true
 		- has-part:: [[API Interface]]

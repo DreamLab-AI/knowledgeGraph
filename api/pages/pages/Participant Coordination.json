@@ -1,24 +1,29 @@
 {
   "id": "Participant Coordination",
   "title": "Participant Coordination",
-  "content": "- ### OntologyBlock\n  id:: participant-coordination-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9995\n\t- preferred-term:: Participant Coordination\n\t- status:: stub\n\t- owl:class:: mv:ParticipantCoordination\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: participant-coordination-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: participant-coordination-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9995\n\t- source-domain:: mv\n\t- preferred-term:: Participant Coordination\n\t- status:: active\n\t- definition:: The synchronization and management of multiple users interacting within shared virtual environments, requiring real-time pose tracking, coordinate system alignment, and collaborative state management to enable seamless multi-user experiences.\n\t- owl:class:: mv:ParticipantCoordination\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: participant-coordination-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Multi-User Systems]]\n\t\t- related-to:: [[Real-Time Collaboration]]\n\t\t- related-to:: [[Spatial Synchronization]]\n\t\t- related-to:: [[Virtual Collaboration]]\n\t\t- enables:: [[Shared Virtual Experiences]]\n\t- #### Technical Requirements\n\t  collapsed:: true\n\t\t- Real-time pose calculation for each device\n\t\t- Coordinate system synchronization across users\n\t\t- Edge cloud services for low-latency processing\n\t\t- Distributed SLAM for spatial alignment\n\t\t- Anchor-based synchronization mechanisms\n\t- #### Platform Examples\n\t  collapsed:: true\n\t\t- Microsoft Mesh for Teams immersive spaces\n\t\t- Multi-user AR coordination platforms\n\t\t- Real-time document collaboration (Office 365)\n\t\t- Virtual meeting rooms with spatial presence\n\t\t- Research showing blink synchronization predicts team performance",
   "backlinks": [
     "Digital Ritual"
   ],
   "wiki_links": [
-    "metaverse"
+    "Spatial Synchronization",
+    "metaverse",
+    "Virtual Collaboration",
+    "Shared Virtual Experiences",
+    "Real-Time Collaboration",
+    "Multi-User Systems"
   ],
   "ontology": {
     "term_id": "MV-9995",
     "preferred_term": "Participant Coordination",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ParticipantCoordination",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The synchronization and management of multiple users interacting within shared virtual environments, requiring real-time pose tracking, coordinate system alignment, and collaborative state management to enable seamless multi-user experiences.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Multi-User Systems"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Shared Virtual Experiences"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Real-Time Collaboration",
+        "Spatial Synchronization",
+        "Virtual Collaboration"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

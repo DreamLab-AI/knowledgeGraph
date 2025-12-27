@@ -1,24 +1,29 @@
 {
   "id": "Namespace Declarations",
   "title": "Namespace Declarations",
-  "content": "- ### OntologyBlock\n  id:: namespace-declarations-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9977\n\t- preferred-term:: Namespace Declarations\n\t- status:: stub\n\t- owl:class:: mv:NamespaceDeclarations\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: namespace-declarations-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: namespace-declarations-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9977\n\t- source-domain:: mv\n\t- preferred-term:: Namespace Declarations\n\t- status:: active\n\t- definition:: XML and RDF syntax constructs that associate short prefix identifiers with full namespace URIs, enabling the use of qualified names (QNames) to abbreviate long IRIs into human-readable yet machine-processable references in semantic web documents.\n\t- owl:class:: mv:NamespaceDeclarations\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: namespace-declarations-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Semantic Web Standards]]\n\t\t- related-to:: [[RDF]]\n\t\t- related-to:: [[XML]]\n\t\t- related-to:: [[Semantic Web]]\n\t\t- enables:: [[Ontology Interoperability]]\n\t- #### Technical Details\n\t  collapsed:: true\n\t\t- Declared using xmlns:prefix syntax in XML documents\n\t\t- RDF namespace IRI: http://www.w3.org/1999/02/22-rdf-syntax-ns#\n\t\t- QNames consist of namespace prefix and local name\n\t\t- Prefixed Names (PNames) extend QNames with more flexible abbreviation\n\t\t- INamespaceMapper interface manages prefix-to-URI mappings\n\t- #### Standard Namespaces\n\t  collapsed:: true\n\t\t- rdf: for RDF syntax elements\n\t\t- rdfs: for RDF Schema vocabulary\n\t\t- owl: for OWL ontology language\n\t\t- xsd: for XML Schema datatypes\n\t\t- Custom namespaces for domain-specific vocabularies",
   "backlinks": [
     "Metaverse Ontology Schema"
   ],
   "wiki_links": [
-    "metaverse"
+    "Semantic Web",
+    "metaverse",
+    "RDF",
+    "Semantic Web Standards",
+    "XML",
+    "Ontology Interoperability"
   ],
   "ontology": {
     "term_id": "MV-9977",
     "preferred_term": "Namespace Declarations",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#NamespaceDeclarations",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "XML and RDF syntax constructs that associate short prefix identifiers with full namespace URIs, enabling the use of qualified names (QNames) to abbreviate long IRIs into human-readable yet machine-processable references in semantic web documents.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Semantic Web Standards"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Ontology Interoperability"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "RDF",
+        "XML",
+        "Semantic Web"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

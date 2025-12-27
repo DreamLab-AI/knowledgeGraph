@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0232
+	- source-domain:: mv
 	- preferred-term:: Intelligent Virtual Entity
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[ComputationAndIntelligenceDomain]], [[InteractionDomain]]
 	- implementedInLayer:: [[ComputeLayer]], [[DataLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: intelligent-virtual-entity-relationships
 	  collapsed:: true
 		- is-part-of:: [[Adaptive Virtual World]]

@@ -14,6 +14,7 @@
     - term-id:: RB-0002
     - preferred-term:: Mobile Robot
     - source-domain:: rb
+    - is-subclass-of:: [[Robotics]]
     - status:: complete
     - version:: 1.0.0
     - last-updated:: 2025-10-28

@@ -8,3 +8,8 @@
   - preferred-term:: RAGFlow
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ragflow
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

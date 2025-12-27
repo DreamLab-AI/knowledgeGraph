@@ -7,6 +7,7 @@ id:: bc-0104-supply-cap-ontology
   - term-id:: MV-0912
   - preferred-term:: Bitcoin Supply Cap
   - source-domain:: mv
+  - owl:class:: mv:BitcoinSupplyCap
   - status:: approved
   - definition:: ### Primary Definition
 

@@ -7,7 +7,10 @@ Derivative Control represents the D component of PID (Proportional-Integral-Deri
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1025
-  - preferred-term:: Derivative Control represents the D component of PID...
+  - preferred-term:: Derivative Control
+  - owl:class:: rb:DerivativeControl
+  - is-subclass-of:: [[Robotics]]
+  - definition:: Derivative control is the D component of PID controllers, generating control signals proportional to the rate of change of error, providing predictive damping to reduce overshoot and oscillations.
   - source-domain:: rb
   - status:: draft
 

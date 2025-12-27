@@ -6,6 +6,7 @@
 	- preferred-term:: AI Audit
 	- source-domain:: ai
 	- status:: draft
+  - owl:class:: ai:AiAudit
 	- public-access:: true
 	- definition:: A systematic, independent examination and evaluation of an artificial intelligence system's design, development processes, deployment procedures, operational performance, documentation, governance arrangements, and compliance with applicable requirements, conducted by qualified assessors to verify conformity with specified standards, regulations, ethical principles, or organisational policies, and to identify deficiencies, risks, or opportunities for improvement, producing documented findings and recommendations that support accountability, transparency, and continuous enhancement of AI system trustworthiness.
 	- source:: [[BS ISO/IEC 42006:2025]], [[EU AI Act Article 43]], [[NIST AI RMF]]

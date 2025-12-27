@@ -1,11 +1,11 @@
-id:: humanrobotinteraction-ontology
-
 - ### OntologyBlock
-  id:: HumanRobotInteraction
+  id:: humanrobotinteraction-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0193
-  - preferred-term:: HumanRobotInteraction
+  - preferred-term:: Human-Robot Interaction
   - source-domain:: rb
+  - owl:class:: rb:HumanRobotInteraction
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: A component of the metaverse ecosystem.
+  - definition:: Human-robot interaction (HRI) is a multidisciplinary field studying the interfaces, communication, and collaboration between humans and robots, encompassing physical, cognitive, and social aspects of human-robot partnerships.

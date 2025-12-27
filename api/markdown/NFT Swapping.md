@@ -7,10 +7,12 @@ id:: nft-swapping-ontology
   - term-id:: DT-0214
   - preferred-term:: NFT Swapping
   - source-domain:: bc
+  - owl:class:: bc:NftSwapping
   - status:: draft
   - definition:: Process of executing mutual exchange of non-fungible tokens between participants using atomic smart contract transactions that ensure simultaneous bilateral asset transfer.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Decentralized Exchange]]
 - is-part-of:: [[NFT Marketplace]]
 - has-part:: [[Swap Smart Contract]]

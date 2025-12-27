@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0518
+	- source-domain:: mv
 	- preferred-term:: Ontology Summary Documentation
 	- status:: draft
 	- public-access:: true
@@ -64,3 +65,6 @@ Summary documents should:
 (SubClassOf :OntologySummaryDocumentation
   (ObjectSomeValuesFrom :partOf :MetaDocumentation))
 ```
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

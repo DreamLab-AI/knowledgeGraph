@@ -1,24 +1,30 @@
 {
   "id": "Physical Hardware",
   "title": "Physical Hardware",
-  "content": "- ### OntologyBlock\n  id:: physical-hardware-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10005\n\t- preferred-term:: Physical Hardware\n\t- status:: stub\n\t- owl:class:: mv:PhysicalHardware\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: physical-hardware-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: physical-hardware-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10005\n\t- source-domain:: mv\n\t- preferred-term:: Physical Hardware\n\t- status:: active\n\t- definition:: The tangible computing devices and peripherals required for metaverse and XR experiences, including VR headsets, AR glasses, haptic devices, motion controllers, and supporting infrastructure like GPUs and networking equipment.\n\t- owl:class:: mv:PhysicalHardware\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: physical-hardware-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Hardware]]\n\t\t- related-to:: [[VR Headsets]]\n\t\t- related-to:: [[Haptic Devices]]\n\t\t- related-to:: [[Motion Controllers]]\n\t\t- enables:: [[Immersive Experiences]]\n\t- #### Device Categories\n\t  collapsed:: true\n\t\t- VR headsets: Meta Quest, PlayStation VR2, Valve Index\n\t\t- AR glasses: Microsoft HoloLens, Magic Leap\n\t\t- Haptic gloves and suits for touch simulation\n\t\t- Motion controllers with haptic feedback\n\t\t- Tracking systems for body movement\n\t- #### Market Context\n\t  collapsed:: true\n\t\t- Metaverse AR/VR hardware market projected at $4.1B by 2033\n\t\t- Meta Quest 2 sold over 20 million units\n\t\t- Growing interest in sensor fusion and spatial computing\n\t\t- Hand and eye tracking reducing controller dependence",
   "backlinks": [
+    "Processing Hardware",
     "Infrastructure Layer"
   ],
   "wiki_links": [
-    "metaverse"
+    "Haptic Devices",
+    "Motion Controllers",
+    "metaverse",
+    "Immersive Experiences",
+    "Hardware",
+    "VR Headsets"
   ],
   "ontology": {
     "term_id": "MV-10005",
     "preferred_term": "Physical Hardware",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#PhysicalHardware",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The tangible computing devices and peripherals required for metaverse and XR experiences, including VR headsets, AR glasses, haptic devices, motion controllers, and supporting infrastructure like GPUs and networking equipment.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +36,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Hardware"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Immersive Experiences"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +55,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "VR Headsets",
+        "Haptic Devices",
+        "Motion Controllers"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

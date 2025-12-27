@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-1017
+	- source-domain:: mv
 	- preferred-term:: 6G Network Slice
 	- public-access:: true
 	- definition:: Virtual partition of 6G infrastructure guaranteeing specified quality-of-service levels for immersive workloads through isolated resource allocation.
@@ -16,6 +17,7 @@
 	- belongsToDomain:: [[InfrastructureDomain]]
 	- implementedInLayer:: [[NetworkLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: 6g-network-slice-relationships
 	  collapsed:: true
 		- has-part:: [[Service Level Agreement]]

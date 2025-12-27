@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0103
+	- source-domain:: rb
 	- preferred-term:: rb 0103 collaborative operation
 	- status:: draft
 	- public-access:: true

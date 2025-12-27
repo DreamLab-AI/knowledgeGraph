@@ -7,6 +7,7 @@ id:: bc-0501-esg-reporting-ontology
   - term-id:: BC-0501
   - preferred-term:: ESG Reporting
   - source-domain:: bc
+  - owl:class:: bc:EsgReporting
   - status:: stub
   - definition:: A component of the blockchain ecosystem.
 

@@ -7,9 +7,11 @@ id:: digital-citizens'-assembly-ontology
   - term-id:: MV-9733
   - preferred-term:: id:: digitalcitizens'assemblyontology
   - source-domain:: mv
+  - owl:class:: mv:IdDigitalcitizensassemblyontology
   - status:: draft
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Democratic Governance System]]
 - is-part-of:: [[Civic Engagement Platform]]
 - has-part:: [[Deliberation Agent]]

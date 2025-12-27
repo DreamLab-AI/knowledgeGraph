@@ -7,9 +7,11 @@ id:: xr-accessibility-guideline-ontology
   - term-id:: MV-10168
   - preferred-term:: Xr Accessibility Guideline
   - source-domain:: mv
+  - owl:class:: mv:XrAccessibilityGuideline
   - status:: deprecated
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 
 ### DEPRECATED
 ### DEPRECATED

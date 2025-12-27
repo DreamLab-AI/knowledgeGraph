@@ -8,6 +8,7 @@ AI-0436-edge-cloud-collaboration
   - preferred-term:: Ai 0436 Edge Cloud Collaboration
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0436EdgeCloudCollaboration
 
 ### Relationships
 - is-subclass-of:: [[ai:ModelArchitecture]]

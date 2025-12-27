@@ -225,4 +225,5 @@ No dated news or announcements remain; all facts are current as of late 2025. Th
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
 
-
+### Relationships
+- is-subclass-of:: [[Metaverse]]

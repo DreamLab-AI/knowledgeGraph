@@ -7,9 +7,11 @@ id:: telemetry-&-analytics-ontology
   - term-id:: MV-9714
   - preferred-term:: id:: telemetry&analyticsontology
   - source-domain:: mv
+  - owl:class:: mv:IdTelemetryanalyticsontology
   - status:: draft
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Data Management]]
 - has-part:: [[Performance Metrics]]
 - has-part:: [[Monitoring Dashboard]]

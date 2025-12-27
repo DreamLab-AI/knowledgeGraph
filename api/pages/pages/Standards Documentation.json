@@ -1,12 +1,15 @@
 {
   "id": "Standards Documentation",
   "title": "Standards Documentation",
-  "content": "- ### OntologyBlock\n  id:: standards-documentation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10074\n\t- source-domain:: metaverse\n\t- preferred-term:: Standards Documentation\n\t- status:: stub\n\t- owl:class:: mv:StandardsDocumentation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: standards-documentation-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: standards-documentation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10074\n\t- source-domain:: metaverse\n\t- preferred-term:: Standards Documentation\n\t- status:: active\n\t- definition:: Established guidelines, rules, and best practices that govern the creation of technical documentation, including structure, formatting conventions, terminology usage, delivery methods, and presentation to ensure consistency, clarity, and accuracy across all content.\n\t- owl:class:: mv:StandardsDocumentation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: standards-documentation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Standards]]\n\t\t- related-to:: [[Technical Standards]]\n\t\t- related-to:: [[Interoperability]]\n- ## Overview\n\t- Technical documentation standards provide structured guidance for creating documentation for technical products, systems, or processes. These standards outline how companies should commission, service, maintain, or repair technical equipment and ensure consistent quality across all documentation.\n- ## Technical Details\n\t- ### Types of Standards\n\t\t- **Open Standards**: Publicly accessible guidelines that anyone can use without licensing fees, prioritizing cost-effectiveness and interoperability\n\t\t- **Closed Standards**: Proprietary guidelines controlled by specific vendors, often requiring licensing fees\n\t- ### Key Industry Standards\n\t\t- **IEC/IEEE 82079-1 (2019)**: Primary standard for technical writers creating product instructions\n\t\t- **VDI Guideline 2770**: Standardizes manufacturer documentation quality in machinery and plant construction\n\t- ### Authoring Standards\n\t\t- **HTML/CSS**: Web page documentation\n\t\t- **XML**: Data storage and transport documentation\n\t\t- **Markdown**: Simple web content like blog posts\n- ## Applications\n\t- Product manuals and user guides\n\t- API documentation\n\t- Software documentation with AI/NLP automation\n\t- VR/AR integrated documentation experiences\n\t- Cross-platform documentation integration",
   "backlinks": [
     "Validation Process",
     "Digital Taxonomy Registry"
   ],
   "wiki_links": [
+    "Interoperability",
+    "Standards",
+    "Technical Standards",
     "metaverse"
   ],
   "ontology": {
@@ -17,9 +20,9 @@
     "source_domain": "metaverse",
     "domain": "metaverse",
     "domain_full_name": "",
-    "definition": null,
+    "definition": "Established guidelines, rules, and best practices that govern the creation of technical documentation, including structure, formatting conventions, terminology usage, delivery methods, and presentation to ensure consistency, clarity, and accuracy across all content.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -31,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Standards"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -46,14 +51,18 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Technical Standards",
+        "Interoperability"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)",
         "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
       ]
     }

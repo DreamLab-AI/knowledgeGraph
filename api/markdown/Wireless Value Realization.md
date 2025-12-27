@@ -21,6 +21,7 @@
 	- maturity:: emerging
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 
 ## Overview
 

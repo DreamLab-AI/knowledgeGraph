@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: BC-0532
+	- source-domain:: bc
 	- preferred-term:: Minting
 	- status:: complete
 	- public-access:: true
@@ -11,3 +12,6 @@
 	- maturity:: established
 	- owl:class:: bc:Minting
 	- belongsToDomain:: [[Blockchain]]
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

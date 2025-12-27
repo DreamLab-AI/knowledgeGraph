@@ -7,6 +7,7 @@ While groundbreaking, and crucially, "available", Luma Dream Machine...
   - term-id:: MV-9731
   - preferred-term:: While groundbreaking, and crucially, "available", Luma Dream Machine...
   - source-domain:: mv
+  - owl:class:: mv:WhileGroundbreakingAndCruciallyAvailableLumaDreamMachine
   - status:: draft
 
 ### Pika Labs
@@ -108,3 +109,6 @@ While groundbreaking, and crucially, "available", Luma Dream Machine...
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

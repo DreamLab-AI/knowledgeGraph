@@ -7,6 +7,7 @@ id:: peer-discovery-ontology
   - term-id:: DT-0089
   - preferred-term:: Peer Discovery
   - source-domain:: bc
+  - owl:class:: bc:PeerDiscovery
   - status:: complete
   - definition:: Node finding mechanism within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

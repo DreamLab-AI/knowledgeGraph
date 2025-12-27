@@ -1,7 +1,7 @@
 {
   "id": "Social Presence",
   "title": "Social Presence",
-  "content": "- ### OntologyBlock\n  id:: TC-9004\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-9004\n\t- preferred-term:: Social Presence\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Subjective experience of feeling connected to and aware of other people in a mediated communication environment, fostering social interactions and relationships.\n\t- source:: [[Presence Research]], [[Telecollaboration]]\n\t- maturity:: mature\n\t- owl:class:: tc:SocialPresence\n\t- owl:physicality:: Abstract\n\t- owl:role:: Attribute\n\t- belongsToDomain:: [[TelecollaborationDomain]]\n\t- isSubclassOf:: [[Presence]]",
+  "content": "- ### OntologyBlock\n  id:: TC-9004\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-9004\n\t- source-domain:: tc\n\t- preferred-term:: Social Presence\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Subjective experience of feeling connected to and aware of other people in a mediated communication environment, fostering social interactions and relationships.\n\t- source:: [[Presence Research]], [[Telecollaboration]]\n\t- maturity:: mature\n\t- owl:class:: tc:SocialPresence\n\t- owl:physicality:: Abstract\n\t- owl:role:: Attribute\n\t- belongsToDomain:: [[TelecollaborationDomain]]\n\t- isSubclassOf:: [[Presence]]",
   "backlinks": [
     "TC-0010-Synchronous-Collaboration",
     "tc-0001-video-conferencing",
@@ -10,8 +10,8 @@
   ],
   "wiki_links": [
     "Presence Research",
-    "TelecollaborationDomain",
     "Telecollaboration",
+    "TelecollaborationDomain",
     "Presence"
   ],
   "ontology": {
@@ -19,7 +19,7 @@
     "preferred_term": "Social Presence",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/telecollaboration#SocialPresence",
-    "source_domain": null,
+    "source_domain": "tc",
     "domain": "tc",
     "domain_full_name": "Telecollaboration",
     "definition": "Subjective experience of feeling connected to and aware of other people in a mediated communication environment, fostering social interactions and relationships.",
@@ -57,7 +57,6 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
         "Missing required property: is-subclass-of (at least one parent class)"
       ]

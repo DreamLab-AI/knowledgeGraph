@@ -73,10 +73,10 @@ id:: authoring-tool-relationships
 		  SubClassOf(mv:ContentCreation mv:VirtualProcess)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:requires)
+  AsymmetricObjectProperty(mv:requires)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:enables)
+  AsymmetricObjectProperty(mv:enables)
 ```
 - ## About Authoring Tools
   id:: authoring-tool-about

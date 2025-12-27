@@ -2,22 +2,18 @@
   id:: rb-0010-aerial-robot-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0917
-	- domain-prefix:: RB
-	- sequence-number:: 0010
-	- filename-history:: ["rb-0010-aerial-robot.md"]
+	- term-id:: RB-0010
 	- preferred-term:: Aerial Robot
 	- source-domain:: rb
 	- owl:class:: rb:AerialRobot
+	- is-subclass-of:: [[Robotics]]
 	- status:: draft
     - public-access:: true
-	- definition:: ### Primary Definition
-**Aerial Robot** - Aerial Robot in robotics systems
+	- definition:: An aerial robot is an autonomous or remotely operated flying system, including drones and unmanned aerial vehicles (UAVs), for surveillance, inspection, delivery, and monitoring applications.
 	- maturity:: draft
-	- owl:class:: mv:rb0010aerialrobot
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- owl:physicality:: PhysicalEntity
+	- owl:role:: Object
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0010 aerial robot
 	- ### Primary Definition
 **Aerial Robot** - Aerial Robot in robotics systems

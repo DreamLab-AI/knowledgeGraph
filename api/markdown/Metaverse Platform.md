@@ -7,6 +7,8 @@ id:: metaverse-platform-ontology
   - term-id:: MV-9964
   - preferred-term:: Metaverse Platform
   - source-domain:: mv
+  - owl:class:: mv:MetaversePlatform
   - status:: stub
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]

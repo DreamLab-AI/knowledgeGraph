@@ -4,11 +4,38 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9825
+	- source-domain:: mv
 	- preferred-term:: Community Standards
-	- status:: stub
+	- definition:: The rules, guidelines, and behavioral norms established for virtual environments and metaverse platforms that govern user conduct, content creation, and social interactions, often enforced through technical standards, governance frameworks, and moderation systems to ensure safety, inclusivity, and positive user experiences.
+	- status:: active
 	- owl:class:: mv:CommunityStandards
 	- belongsToDomain:: [[metaverse]]
 	- #### Relationships
 	  id:: community-standards-relationships
 	  collapsed:: true
+		- is-subclass-of:: [[Platform Governance]]
+		- enables:: [[User Safety]], [[Content Moderation]], [[Trust Building]]
+		- requires:: [[Governance Framework]], [[Moderation Tools]], [[Reporting Mechanisms]]
+		- related-to:: [[Content Moderation Standards]], [[Digital Ethics]], [[Platform Policy]]
+- ## Technical Details
+	- **Standards Organizations**:
+		- Metaverse Standards Forum: 2,600+ member organizations promoting interoperability and inclusivity
+		- IEEE Standards: P2048 Metaverse Terminology, P7016 Ethically Aligned Design
+		- World Economic Forum "Defining and Building the Metaverse" initiative
+	- **Key Principles**:
+		- Plurality, inclusivity, openness, transparency, decision-making by consensus
+		- Decentralized platforms based on community protocols via blockchain
+		- Technical standards enabling compatibility and security across platforms
+	- **Human Rights Considerations**:
+		- Virtual environments enable free expression but risk bullying, harassment, and hate speech
+		- Behavioral moderation needed in addition to content moderation
+		- Immersive nature intensifies perception of threats and psychological effects
+	- **Regulatory Frameworks**: GDPR, Digital Services Act, EU AI Act, Global Digital Compact (2024)
+- ## Applications
+	- Virtual world governance policies
+	- User behavior guidelines enforcement
+	- Content creation standards
+	- Community safety protocols
+	- Cross-platform interoperability standards
+
 

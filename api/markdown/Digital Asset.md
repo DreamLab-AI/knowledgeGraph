@@ -7,10 +7,12 @@ id:: digital-asset-ontology
   - term-id:: DT-0109
   - preferred-term:: Digital Asset
   - source-domain:: bc
+  - owl:class:: bc:DigitalAsset
   - status:: draft
   - definition:: An identifiable unit of digital information that possesses economic or functional value within a metaverse system, capable of being owned, transferred, or exchanged.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Virtual Economy]]
 - is-part-of:: [[Digital Goods]]
 - is-part-of:: [[Asset Management System]]

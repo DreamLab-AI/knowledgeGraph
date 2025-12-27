@@ -7,5 +7,9 @@ id:: privateblockchain-ontology
   - term-id:: MV-0143
   - preferred-term:: PrivateBlockchain
   - source-domain:: bc
+  - owl:class:: bc:Privateblockchain
   - status:: draft
   - definition:: A component of the metaverse ecosystem.
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

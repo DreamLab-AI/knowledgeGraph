@@ -3,11 +3,12 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0875
+	- source-domain:: ai
 	- preferred-term:: Pretrained Model
 	- status:: complete
 	- public-access:: true
 	- source:: Chimera Prime Research
-	- maturity:: dt:Established
+	- maturity:: established
 	- owl:class:: ai:PretrainedModel
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships

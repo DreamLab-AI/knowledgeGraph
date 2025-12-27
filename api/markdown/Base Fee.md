@@ -16,4 +16,8 @@ Base Fee refers to the minimum gas price per unit required for transaction inclu
   - term-id:: BC-9877
   - preferred-term:: Base Fee
   - source-domain:: bc
+  - owl:class:: bc:BaseFee
   - status:: draft
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

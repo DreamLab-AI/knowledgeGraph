@@ -3,15 +3,16 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0079
-	- preferred-term:: rb 0079 ultrasonic sensor
+	- preferred-term:: Ultrasonic Sensor
 	- source-domain:: rb
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition
 	- maturity:: draft
-	- owl:class:: mv:rb0079ultrasonicsensor
+	- owl:class:: rb:UltrasonicSensor
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

@@ -7,6 +7,7 @@ Taproot assets
   - term-id:: BC-9932
   - preferred-term:: Taproot Assets
   - source-domain:: bc
+  - owl:class:: bc:TaprootAssets
   - status:: draft
 
 ### Asset Issuance Mechanism
@@ -289,3 +290,6 @@ Taproot assets
 	- [Pairing Phrase - Lightning Terminal](https://terminal.lightning.engineering/connect/pair/)
 
 	- [Lightning Terminal](https://192.168.0.20:8443/)
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

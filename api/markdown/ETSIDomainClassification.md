@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0013
+	- source-domain:: mv
 	- preferred-term:: ETSIDomainClassification
 	- status:: draft
 	- public-access:: true
@@ -27,3 +28,6 @@
 ;; Data Properties
 (AnnotationAssertion dcterms:identifier :Etsidomainclassification "mv-1761742247917"^^xsd:string)
 ```
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: MV-0539
+    - source-domain:: mv
+    - owl:class:: mv:Erc721Standard
     - preferred-term:: ERC-721 Standard
     - ontology:: true
     - public-access:: true

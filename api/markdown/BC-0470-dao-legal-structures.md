@@ -7,6 +7,7 @@ id:: bc-0470-dao-legal-structures-ontology
   - term-id:: BC-0470
   - preferred-term:: DAO Legal Structures
   - source-domain:: bc
+  - owl:class:: bc:DaoLegalStructures
   - status:: stub
   - definition:: A component of the blockchain ecosystem.
 

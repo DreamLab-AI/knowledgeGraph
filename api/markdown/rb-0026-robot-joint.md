@@ -5,7 +5,9 @@ id:: rb-0026-robot-joint-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0026
-  - preferred-term:: rb 0026 robot joint
+  - preferred-term:: Robot Joint
   - source-domain:: rb
+  - owl:class:: rb:RobotJoint
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
   - definition:: ### Primary Definition

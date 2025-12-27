@@ -3,11 +3,12 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0811
+	- source-domain:: ai
 	- preferred-term:: Feed Forward Network
 	- status:: complete
 	- public-access:: true
 	- source:: Chimera Prime Research
-	- maturity:: dt:Established
+	- maturity:: established
 	- owl:class:: ai:FeedForwardNetwork
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships

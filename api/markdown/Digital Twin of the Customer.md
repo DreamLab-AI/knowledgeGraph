@@ -21,6 +21,7 @@
 	- maturity:: emerging
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 
 ## Latest Developments and Frameworks (2024–2025)
 

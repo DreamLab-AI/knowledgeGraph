@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0330
+	- source-domain:: mv
 	- preferred-term:: ETSI Domain AI
 	- status:: draft
 	- public-access:: true

@@ -10,11 +10,11 @@
 	- public-access:: true
 	- definition:: Algorithmic Transparency Reports are periodic public disclosures that document AI system characteristics, performance metrics, governance practices, and accountability mechanisms to ensure public accountability, promote stakeholder trust, and address societal concerns about algorithmic decision-making. These reports provide standardized transparency information accessible to non-technical audiences, enabling external scrutiny, regulatory compliance verification, and informed public discourse about AI systems affecting individuals and communities. Key report sections include system descriptions (purpose, functionality, deployment scale, affected populations), performance metrics (accuracy, precision, recall, fairness metrics disaggregated by protected groups), fairness and bias analysis (disparate impact assessments, bias mitigation measures, ongoing monitoring), governance and oversight (responsible parties, ethics board reviews, audit procedures), data practices (data sources, collection methods, retention policies, privacy protections), explainability provisions (how decisions are made, contestation mechanisms, human review availability), incidents and remediation (system failures, bias incidents, corrective actions taken), and stakeholder engagement (consultation processes, feedback mechanisms, response to concerns). Report publication follows regular cadences (annual, quarterly) and covers designated high-risk or high-impact systems, with content balancing transparency objectives against proprietary information protection and adversarial exploitation risks. Transparency reporting builds on corporate social responsibility disclosure practices and government transparency reporting traditions, adapted for algorithmic accountability contexts. Implementation aligns with emerging requirements including EU AI Act Article 13 transparency obligations for high-risk systems, Platform-to-Business Regulation transparency requirements, and voluntary transparency commitments from technology companies as recommended by the AI Now Institute and other civil society organizations.
 	- source:: [[EU AI Act]], [[AI Now Institute]], [[Platform-to-Business Regulation]]
-	- maturity:: dt:Mature
-	- owl:class:: aigo:AlgorithmicTransparencyReports
+	- maturity:: mature
+	- owl:class:: ai:AlgorithmicTransparencyReports
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
-	- owl:inferred-class:: aigo:VirtualProcess
+	- owl:inferred-class:: ai:VirtualProcess
 	- belongsToDomain:: [[AIEthicsDomain]]
 	- implementedInLayer:: [[ConceptualLayer]]
 	- #### Relationships
@@ -50,10 +50,10 @@ Algorithmic Transparency Reports refers to algorithmic transparency reports are 
 - **Maturity**: mature
 - **Source**: [[EU AI Act]], [[AI Now Institute]], [[Platform-to-Business Regulation]]
 - **Authority Score**: 0.95
-- **Owl:Class**: aigo:AlgorithmicTransparencyReports
+- **Owl:Class**: ai:AlgorithmicTransparencyReports
 - **Owl:Physicality**: VirtualEntity
 - **Owl:Role**: Process
-- **Owl:Inferred Class**: aigo:VirtualProcess
+- **Owl:Inferred Class**: ai:VirtualProcess
 - **Belongstodomain**: [[AIEthicsDomain]]
 - **Implementedinlayer**: [[ConceptualLayer]]
 

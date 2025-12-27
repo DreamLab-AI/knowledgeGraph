@@ -1,25 +1,30 @@
 {
   "id": "Nearest Neighbor Search",
   "title": "Nearest Neighbor Search",
-  "content": "- ### OntologyBlock\n  id:: nearest-neighbor-search-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9981\n\t- preferred-term:: Nearest Neighbor Search\n\t- status:: stub\n\t- owl:class:: mv:NearestNeighborSearch\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: nearest-neighbor-search-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: nearest-neighbor-search-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9981\n\t- source-domain:: mv\n\t- preferred-term:: Nearest Neighbor Search\n\t- status:: active\n\t- definition:: An algorithmic technique used in vector databases to find data points most similar to a query vector by computing distance metrics like cosine similarity or Euclidean distance, with approximate methods (ANN) trading minor accuracy for millisecond-scale retrieval from billions of objects.\n\t- owl:class:: mv:NearestNeighborSearch\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: nearest-neighbor-search-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Search Algorithm]]\n\t\t- related-to:: [[Vector Database]]\n\t\t- related-to:: [[Similarity Search]]\n\t\t- related-to:: [[Machine Learning]]\n\t\t- enables:: [[Semantic Search]]\n\t- #### Algorithm Types\n\t  collapsed:: true\n\t\t- HNSW (Hierarchical Navigable Small Worlds): Industry-standard graph-based ANN\n\t\t- Locality-Sensitive Hashing (LSH): Hash-based collision for similar points\n\t\t- IVF (Inverted File Index): Partitioned index for approximate search\n\t\t- KD-Tree: Tree-based method for low to moderate dimensions\n\t\t- Exact Nearest Neighbor (ENN): Guarantees absolute closest vectors\n\t- #### Technical Details\n\t  collapsed:: true\n\t\t- Distance metrics include cosine similarity and L2 (Euclidean) distance\n\t\t- Libraries: Faiss, Hnswlib, Annoy for efficient vector storage\n\t\t- Performance measured by latency, throughput, and recall accuracy\n\t\t- HNSW supports incremental updates for production systems\n\t\t- MongoDB Atlas offers both ANN and ENN search capabilities",
   "backlinks": [
     "RB-1017-rrt-algorithm",
     "Spatial Index"
   ],
   "wiki_links": [
-    "metaverse"
+    "Vector Database",
+    "metaverse",
+    "Search Algorithm",
+    "Similarity Search",
+    "Semantic Search",
+    "Machine Learning"
   ],
   "ontology": {
     "term_id": "MV-9981",
     "preferred_term": "Nearest Neighbor Search",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#NearestNeighborSearch",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "An algorithmic technique used in vector databases to find data points most similar to a query vector by computing distance metrics like cosine similarity or Euclidean distance, with approximate methods (ANN) trading minor accuracy for millisecond-scale retrieval from billions of objects.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -31,12 +36,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Search Algorithm"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Semantic Search"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -46,15 +55,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Vector Database",
+        "Similarity Search",
+        "Machine Learning"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

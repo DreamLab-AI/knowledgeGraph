@@ -3,11 +3,12 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0858
+	- source-domain:: ai
 	- preferred-term:: Text-to-3D
 	- status:: complete
 	- public-access:: true
 	- source:: Chimera Prime Research
-	- maturity:: dt:Established
+	- maturity:: established
 	- owl:class:: ai:TextTo3d
 	- belongsToDomain:: [[Artificial Intelligence]]
 

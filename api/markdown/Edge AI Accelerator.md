@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-9007
+	- source-domain:: ai
 	- preferred-term:: Edge AI Accelerator
 	- status:: draft
 	- public-access:: true
@@ -14,3 +15,7 @@
 	- owl:role:: Object
 	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- isSubclassOf:: [[AI Hardware]]
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

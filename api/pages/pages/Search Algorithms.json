@@ -1,7 +1,7 @@
 {
   "id": "Search Algorithms",
   "title": "Search Algorithms",
-  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1003\n  - preferred-term:: Search Algorithms\n  - source-domain:: ai\n  - status:: draft\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]\n- has-subclass:: [[A-Star Algorithm]]\n- has-subclass:: [[Minimax Algorithm]]\n- has-subclass:: [[Monte Carlo Tree Search]]\n- skos:related:: [[Optimization]]\n- skos:related:: [[Graph Theory]]\n- enables:: [[Planning and Scheduling]]\n- enables:: [[Pathfinding]]\n\n### Definition\nSearch algorithms are computational methods used to navigate through problem spaces to find solutions, optimal paths, or goal states. They systematically explore possible states and transitions, employing various strategies such as breadth-first, depth-first, heuristic-guided, or adversarial search to efficiently discover solutions to complex problems.\n\n### Categories\n**Uninformed Search:**\n- Breadth-first search (BFS)\n- Depth-first search (DFS)\n- Uniform cost search\n\n**Informed Search:**\n- Greedy best-first search\n- A* algorithm\n- Iterative deepening A*\n\n**Adversarial Search:**\n- Minimax\n- Alpha-beta pruning\n- Monte Carlo Tree Search\n\n**Local Search:**\n- Hill climbing\n- Simulated annealing\n- Genetic algorithms\n\n### Applications\n- Route planning and navigation\n- Game playing (chess, Go)\n- Scheduling and resource allocation\n- Puzzle solving\n- Robotics path planning",
+  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1003\n  - preferred-term:: Search Algorithms\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:SearchAlgorithms\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]\n- has-subclass:: [[A-Star Algorithm]]\n- has-subclass:: [[Minimax Algorithm]]\n- has-subclass:: [[Monte Carlo Tree Search]]\n- skos:related:: [[Optimization]]\n- skos:related:: [[Graph Theory]]\n- enables:: [[Planning and Scheduling]]\n- enables:: [[Pathfinding]]\n\n### Definition\nSearch algorithms are computational methods used to navigate through problem spaces to find solutions, optimal paths, or goal states. They systematically explore possible states and transitions, employing various strategies such as breadth-first, depth-first, heuristic-guided, or adversarial search to efficiently discover solutions to complex problems.\n\n### Categories\n**Uninformed Search:**\n- Breadth-first search (BFS)\n- Depth-first search (DFS)\n- Uniform cost search\n\n**Informed Search:**\n- Greedy best-first search\n- A* algorithm\n- Iterative deepening A*\n\n**Adversarial Search:**\n- Minimax\n- Alpha-beta pruning\n- Monte Carlo Tree Search\n\n**Local Search:**\n- Hill climbing\n- Simulated annealing\n- Genetic algorithms\n\n### Applications\n- Route planning and navigation\n- Game playing (chess, Go)\n- Scheduling and resource allocation\n- Puzzle solving\n- Robotics path planning",
   "backlinks": [
     "Planning and Scheduling",
     "Automated Planning",
@@ -10,20 +10,20 @@
     "Minimax Algorithm"
   ],
   "wiki_links": [
-    "Monte Carlo Tree Search",
-    "Planning and Scheduling",
-    "A-Star Algorithm",
-    "Minimax Algorithm",
-    "Artificial Intelligence",
-    "Pathfinding",
     "Graph Theory",
-    "Optimization"
+    "Minimax Algorithm",
+    "A-Star Algorithm",
+    "Optimization",
+    "Planning and Scheduling",
+    "Artificial Intelligence",
+    "Monte Carlo Tree Search",
+    "Pathfinding"
   ],
   "ontology": {
     "term_id": "AI-1003",
     "preferred_term": "Search Algorithms",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/ai#SearchAlgorithms",
     "source_domain": "ai",
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
@@ -37,7 +37,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "ai:SearchAlgorithms",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -59,7 +59,6 @@
       "errors": [
         "Missing required property: last-updated",
         "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

@@ -8,9 +8,9 @@
 	- owl:class:: rb:AdmittanceControl
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- is-subclass-of:: [[Robotics]]
+	- definition:: Admittance control is a force control strategy where the robot responds to external forces by producing motion, allowing compliant interaction with the environment.
 	- maturity:: draft
-	- is-subclass-of:: [[ControlAlgorithms]]
 
 
 ## Current Landscape (2025)

@@ -3,11 +3,12 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0841
+	- source-domain:: ai
 	- preferred-term:: Identification System
 	- status:: complete
 	- public-access:: true
 	- source:: Chimera Prime Research
-	- maturity:: dt:Established
+	- maturity:: established
 	- owl:class:: ai:IdentificationSystem
 	- belongsToDomain:: [[Artificial Intelligence]]
 

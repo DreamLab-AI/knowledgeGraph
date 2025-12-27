@@ -7,7 +7,10 @@ Motion Control encompasses algorithms, systems, and methodologies for planning a
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1015
-  - preferred-term:: Motion Control encompasses algorithms, systems, and methodologies for...
+  - preferred-term:: Motion Control
+  - owl:class:: rb:MotionControl
+  - is-subclass-of:: [[Robotics]]
+  - definition:: Motion control encompasses algorithms, systems, and methodologies for planning and executing desired robot trajectories, translating high-level task objectives into precise actuator commands.
   - source-domain:: rb
   - status:: draft
 

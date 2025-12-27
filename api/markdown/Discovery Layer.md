@@ -7,10 +7,12 @@ id:: discovery-layer-ontology
   - term-id:: DT-0164
   - preferred-term:: Discovery Layer
   - source-domain:: mv
+  - owl:class:: mv:DiscoveryLayer
   - status:: draft
   - definition:: Functional layer responsible for search, navigation, and exposure of metaverse experiences and assets through indexing, search engines, and recommendation systems.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Data Layer]]
 - has-part:: [[Recommendation System]]
 - has-part:: [[Search Engine]]

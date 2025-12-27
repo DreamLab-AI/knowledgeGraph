@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: TC-9001
+	- source-domain:: tc
 	- preferred-term:: Threaded Messaging
 	- status:: draft
 	- public-access:: true

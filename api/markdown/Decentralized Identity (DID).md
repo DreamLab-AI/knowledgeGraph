@@ -7,10 +7,12 @@ id:: decentralized-identity-did-ontology
   - term-id:: DT-0280
   - preferred-term:: Decentralized Identity (DID)
   - source-domain:: bc
+  - owl:class:: bc:DecentralizedIdentityDid
   - status:: draft
   - definition:: A W3C standard for self-sovereign digital identities that are globally unique, cryptographically verifiable, and controlled by the identity subject without requiring centralized authorities.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Self-Sovereign Identity (SSI)]]
 - is-part-of:: [[Identity Management System]]
 - has-part:: [[DID Resolver]]

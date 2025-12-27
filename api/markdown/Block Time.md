@@ -7,6 +7,7 @@ id:: block-time-ontology
   - term-id:: BC-0014
   - preferred-term:: Block Time
   - source-domain:: bc
+  - owl:class:: bc:BlockTime
   - status:: complete
   - definition:: Average time between blocks within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

@@ -10,10 +10,10 @@
 	- definition:: Advanced [[smart contract]] system for [[Bitcoin]] utilizing [[client-side validation]] architecture to enable [[private]], [[scalable]] [[Layer 3]] programmable assets, [[NFTs]], [[DAOs]], and [[autonomous agent economies]] through [[single-use seals]] and [[AluVM]] execution without [[on-chain]] state publication, now production-ready with [[RGB v0.11]] supporting [[stablecoin]] issuance on [[Lightning Network]] including [[Tether USDT]] integration.
 	- source:: [[LNP/BP Standards Association]], [[RGB Working Group]], [[Maxim Orlovsky RGB Research]], [[Bitfinex RGB Implementation]], [[Tether RGB USDT]], [[Pandora Prime RGB Wallet]], [[DIBA Marketplace]], [[RGB v0.11 Release Notes 2024]]
 	- maturity:: production
-	- owl:class:: btcai:RGBClientSideValidation
+	- owl:class:: bc:RGBClientSideValidation
 	- owl:physicality:: VirtualProtocol
 	- owl:role:: SmartContractSystem
-	- owl:inferred-class:: btcai:Layer3Protocol,
+	- owl:inferred-class:: bc:Layer3Protocol,
 	- belongsToDomain:: [[BitcoinAIDomain]], [[SmartContractDomain]], [[Layer3Domain]], [[PrivacyDomain]]
 	- implementedInLayer:: [[Bitcoin Layer 3]], [[Lightning Network Layer]], [[Off-Chain Computation Layer]]
 	- #### Relationships

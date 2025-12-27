@@ -1,29 +1,31 @@
 {
   "id": "Knowledge Representation",
   "title": "Knowledge Representation",
-  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1001\n  - preferred-term:: Knowledge Representation\n  - source-domain:: ai\n  - status:: draft\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]\n- has-subclass:: [[Expert Systems]]\n- has-subclass:: [[Semantic Networks]]\n- skos:related:: [[Logic Programming]]\n- skos:related:: [[Ontology]]\n- enables:: [[Reasoning Systems]]\n- enables:: [[Automated Planning]]\n\n### Definition\nKnowledge representation is the field of artificial intelligence concerned with representing information about the world in a form that computer systems can utilize to solve complex tasks. It involves structuring and encoding knowledge using formal languages, semantic networks, frames, rules, or logic-based systems to enable machines to reason, infer, and make decisions based on stored information.\n\n### Key Components\n- Symbolic representation schemes\n- Semantic networks and graphs\n- Frame-based systems\n- Rule-based representations\n- Description logics\n- Ontological engineering\n\n### Applications\n- Expert systems development\n- Question-answering systems\n- Intelligent agents\n- Knowledge-based reasoning\n- Automated decision-making",
+  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1001\n  - preferred-term:: Knowledge Representation\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:KnowledgeRepresentation\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]\n- has-subclass:: [[Expert Systems]]\n- has-subclass:: [[Semantic Networks]]\n- skos:related:: [[Logic Programming]]\n- skos:related:: [[Ontology]]\n- enables:: [[Reasoning Systems]]\n- enables:: [[Automated Planning]]\n\n### Definition\nKnowledge representation is the field of artificial intelligence concerned with representing information about the world in a form that computer systems can utilize to solve complex tasks. It involves structuring and encoding knowledge using formal languages, semantic networks, frames, rules, or logic-based systems to enable machines to reason, infer, and make decisions based on stored information.\n\n### Key Components\n- Symbolic representation schemes\n- Semantic networks and graphs\n- Frame-based systems\n- Rule-based representations\n- Description logics\n- Ontological engineering\n\n### Applications\n- Expert systems development\n- Question-answering systems\n- Intelligent agents\n- Knowledge-based reasoning\n- Automated decision-making",
   "backlinks": [
     "Fuzzy Logic",
     "Automated Planning",
+    "Owl Class Hierarchy",
     "STRIPS",
     "Expert Systems",
+    "Semantic Web Standards",
     "Symbolic AI",
     "Intelligent Virtual Entity"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
+    "Semantic Networks",
+    "Ontology",
     "Reasoning Systems",
+    "Expert Systems",
     "Automated Planning",
     "Logic Programming",
-    "Expert Systems",
-    "Ontology",
-    "Semantic Networks"
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-1001",
     "preferred_term": "Knowledge Representation",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/ai#KnowledgeRepresentation",
     "source_domain": "ai",
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
@@ -37,7 +39,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "ai:KnowledgeRepresentation",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -59,7 +61,6 @@
       "errors": [
         "Missing required property: last-updated",
         "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

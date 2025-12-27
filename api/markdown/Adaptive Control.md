@@ -2,7 +2,7 @@
   id:: rb-0058-adaptive-control-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0058
+	- term-id:: RB-0058
 	- domain-prefix:: RB
 	- sequence-number:: 0058
 	- filename-history:: ["rb-0058-adaptive-control.md"]
@@ -13,11 +13,11 @@
     - public-access:: true
 	- definition:: ### Primary Definition
 **Adaptive Control** - Adaptive Control in robotics systems
+	- is-subclass-of:: [[Robotics]]
 	- maturity:: draft
-	- owl:class:: mv:rb0058adaptivecontrol
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0058 adaptive control
 	- ### Primary Definition
 **Adaptive Control** - Adaptive Control in robotics systems

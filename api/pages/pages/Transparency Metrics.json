@@ -1,25 +1,29 @@
 {
   "id": "Transparency Metrics",
   "title": "Transparency Metrics",
-  "content": "- ### OntologyBlock\n  id:: transparency-metrics-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10085\n\t- preferred-term:: Transparency Metrics\n\t- status:: stub\n\t- owl:class:: mv:TransparencyMetrics\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: transparency-metrics-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: transparency-metrics-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10085\n\t- source-domain:: mv\n\t- preferred-term:: Transparency Metrics\n\t- status:: active\n\t- definition:: Quantitative and qualitative measures used to assess and communicate the openness, accountability, and visibility of governance, operations, and decision-making processes in digital platforms, DAOs, and metaverse environments.\n\t- owl:class:: mv:TransparencyMetrics\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Governance]]\n\t\t- related-to:: [[Transparent Governance]]\n\t\t- related-to:: [[Accountability]]\n\t\t- related-to:: [[Open Data]]\n\t  id:: transparency-metrics-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Transparency metrics enable measurement and benchmarking of organizational openness and accountability. The T-Index measures real transparency using 14 de facto components across 129 countries. Sustainability reporting frameworks like GRI, SASB, and TCFD provide standardized ESG metrics.\n- ## Technical Details\n\t- ### Measurement Frameworks\n\t\t- **T-Index**: 14 de facto components based on website observations + 5 de jure components from laws\n\t\t- **WEF Stakeholder Capitalism Metrics**: 55 metrics for corporate transparency\n\t\t- **GRI (Global Reporting Initiative)**: Sustainability reporting standards\n\t\t- **SASB**: Industry-specific sustainability accounting standards\n\t- ### Key Metrics Categories\n\t\t- **Data Disclosure**: Open data availability and accessibility\n\t\t- **Decision Transparency**: Visibility of governance processes\n\t\t- **Financial Reporting**: Revenue, spending, and allocation disclosure\n\t\t- **Performance Tracking**: Measurable goals and progress reporting\n\t- ### Blockchain-Enabled Transparency\n\t\t- On-chain voting records\n\t\t- Treasury balance visibility\n\t\t- Smart contract execution logs\n\t\t- Token distribution analytics\n- ## Applications\n\t- DAO governance transparency reporting\n\t- Corporate ESG compliance measurement\n\t- Government open data initiatives\n\t- Metaverse platform accountability\n\t- Digital identity transparency verification",
   "backlinks": [
     "AI Ethics Checklist_ENHANCED",
     "AI Ethics Checklist"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Accountability",
+    "Open Data",
+    "Transparent Governance",
+    "Governance"
   ],
   "ontology": {
     "term_id": "MV-10085",
     "preferred_term": "Transparency Metrics",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#TransparencyMetrics",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Quantitative and qualitative measures used to assess and communicate the openness, accountability, and visibility of governance, operations, and decision-making processes in digital platforms, DAOs, and metaverse environments.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -31,7 +35,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Governance"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -46,15 +52,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Transparent Governance",
+        "Accountability",
+        "Open Data"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

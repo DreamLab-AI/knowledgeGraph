@@ -7,7 +7,10 @@ Lower Limb Exoskeleton constitutes a wearable robotic system...
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1037
-  - preferred-term:: Lower Limb Exoskeleton constitutes a wearable robotic system...
+  - preferred-term:: Lower Limb Exoskeleton
+  - owl:class:: rb:LowerLimbExoskeleton
+  - is-subclass-of:: [[Robotics]]
+  - definition:: A lower limb exoskeleton is a wearable robotic system mechanically coupled to the user's legs, hips, and pelvis to assist, augment, or restore walking and standing functions.
   - source-domain:: rb
   - status:: draft
 

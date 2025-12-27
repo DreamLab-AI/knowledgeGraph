@@ -7,7 +7,10 @@ Differential Kinematics establishes the mathematical relationship between joint 
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1053
-  - preferred-term:: Differential Kinematics establishes the mathematical relationship between joint...
+  - preferred-term:: Differential Kinematics
+  - owl:class:: rb:DifferentialKinematics
+  - is-subclass-of:: [[Robotics]]
+  - definition:: Differential Kinematics establishes the mathematical relationship between joint velocities and end-effector Cartesian velocities through the Jacobian matrix, enabling velocity-level motion control and singularity analysis.
   - source-domain:: rb
   - status:: draft
 

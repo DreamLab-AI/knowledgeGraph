@@ -3,17 +3,19 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0807
+	- source-domain:: ai
 	- preferred-term:: Query Vector
 	- status:: complete
 	- public-access:: true
 	- source:: Chimera Prime Research
-	- maturity:: dt:Established
+	- maturity:: established
 	- owl:class:: ai:QueryVector
 	- belongsToDomain:: [[Artificial Intelligence]]
 
 ### Relationships
 
 
+- is-subclass-of:: [[Artificial Intelligence]]
 ## Metadata
 
 - **Last Updated**: 2025-11-16

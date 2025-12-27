@@ -8,6 +8,7 @@ id:: mean-absolute-error-ontology
   - preferred-term:: Mean Absolute Error
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:MeanAbsoluteError
   - definition:: A regression performance metric representing the average magnitude of errors between predicted and actual values, calculated as the arithmetic mean of absolute differences between predictions and ground truth across all instances, providing an intuitive measure of prediction accuracy in the same units as the target variable, treating all errors equally regardless of direction, and being less sensitive to outliers than squared error metrics.
 
 ### Relationships

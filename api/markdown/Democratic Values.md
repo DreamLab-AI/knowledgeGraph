@@ -6,6 +6,7 @@
 	- preferred-term:: Democratic Values
 	- source-domain:: ai
 	- status:: draft
+  - owl:class:: ai:DemocraticValues
     - public-access:: true
 
 

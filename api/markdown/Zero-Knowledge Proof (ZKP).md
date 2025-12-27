@@ -7,6 +7,7 @@ id:: zero-knowledge-proof-ontology
   - term-id:: DT-0211
   - preferred-term:: Zero-Knowledge Proof (ZKP)
   - source-domain:: bc
+  - owl:class:: bc:ZeroKnowledgeProofZkp
   - status:: draft
   - definition:: A cryptographic protocol that enables one party (the prover) to prove to another party (the verifier) that a statement is true without revealing any information beyond the validity of the statement itself.
 

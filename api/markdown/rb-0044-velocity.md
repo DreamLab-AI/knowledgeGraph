@@ -5,11 +5,12 @@ id:: rb-0044-velocity-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0044
-  - preferred-term:: rb 0044 velocity
+  - preferred-term:: Velocity
   - source-domain:: rb
+  - owl:class:: rb:Velocity
   - status:: draft
   - definition:: ### Primary Definition
 
 ### Relationships
-- is-subclass-of:: [[rb-0022-robot-dynamics]]
+- is-subclass-of:: [[Robotics]]
 - belongsToDomain:: [[RoboticsDomain]]

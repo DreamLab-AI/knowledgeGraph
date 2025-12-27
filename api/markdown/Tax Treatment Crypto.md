@@ -2,10 +2,40 @@ id:: tax-treatment-crypto-ontology
 
 - ### OntologyBlock
   id:: Tax Treatment Crypto
-  - ontology:: true
-  - public-access:: true
-  - term-id:: BC-0485
-  - preferred-term:: Tax Treatment Crypto
-  - source-domain:: bc
-  - status:: stub
-  - definition:: A component of the blockchain ecosystem.
+	- ontology:: true
+	- public-access:: true
+	- term-id:: BC-0485
+	- preferred-term:: Tax Treatment Crypto
+	- source-domain:: bc
+  - owl:class:: bc:TaxTreatmentCrypto
+	- status:: active
+	- definition:: The regulatory framework governing how cryptocurrency and digital assets are classified and taxed, including capital gains treatment for sales and trades, income tax for mining and staking rewards, and reporting requirements for digital asset transactions.
+	- #### Relationships
+		- is-subclass-of:: [[Cryptocurrency Regulation]]
+		- related-to:: [[Virtual Asset]]
+		- related-to:: [[Blockchain]]
+		- related-to:: [[Digital Asset]]
+- ## Overview
+	- For U.S. tax purposes, digital assets are considered property, not currency. The IRS established foundational rules for federal tax treatment of crypto in a 2014 notice. Cryptocurrency is subject to capital gains tax when disposed and income tax when earned through activities like mining or staking.
+- ## Technical Details
+	- ### Tax Categories
+		- **Capital Gains Tax**: Applies when selling, trading, or using crypto to purchase goods/services
+		- **Income Tax**: Applies when earning crypto from staking, mining, referrals, or as compensation
+	- ### 2024 Tax Rates
+		- **Short-term gains** (held 1 year or less): Ordinary income rates up to 37%
+		- **Long-term gains** (held over 1 year): 0% to 20% depending on income level
+		- **NFTs (Collectibles)**: Taxed at up to 28%
+	- ### Reporting Requirements
+		- **Form 8949**: Report capital gains/losses from digital asset transactions
+		- **Schedule D (Form 1040)**: Summary of capital gains and losses
+		- **Form 1099-DA**: Starting 2025, exchanges must report certain digital asset transactions
+	- ### Non-Taxable Transactions
+		- Transfers between wallets or accounts you own
+		- Gifts up to $18,000 per recipient per year (2024)
+- ## Applications
+	- Individual cryptocurrency investor tax compliance
+	- Business crypto payment acceptance
+	- Mining and staking operation taxation
+	- NFT trading and sales reporting
+	- DeFi income reporting
+

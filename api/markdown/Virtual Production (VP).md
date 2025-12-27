@@ -7,10 +7,12 @@ id:: virtual-production-vp-ontology
   - term-id:: DT-0198
   - preferred-term:: Virtual Production (VP)
   - source-domain:: mv
+  - owl:class:: mv:VirtualProductionVp
   - status:: draft
   - definition:: Production technique blending real and virtual scenes using XR and real-time rendering for film, broadcast, and immersive content creation.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Broadcast Production]]
 - is-part-of:: [[Film Production Workflow]]
 - has-part:: [[LED Volume]]

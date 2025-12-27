@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0196
+	- source-domain:: mv
 	- preferred-term:: Digital Performance Capture
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[CreativeMediaDomain]]
 	- implementedInLayer:: [[PhysicalLayer]], [[ComputeLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: digital-performance-capture-relationships
 	  collapsed:: true
 		- is-part-of:: [[Reality Capture Workflow]]

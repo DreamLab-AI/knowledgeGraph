@@ -1,24 +1,29 @@
 {
   "id": "User Interface Architecture",
   "title": "User Interface Architecture",
-  "content": "- ### OntologyBlock\n  id:: user-interface-architecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10097\n\t- preferred-term:: User Interface Architecture\n\t- status:: stub\n\t- owl:class:: mv:UserInterfaceArchitecture\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: user-interface-architecture-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: user-interface-architecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10097\n\t- source-domain:: mv\n\t- preferred-term:: User Interface Architecture\n\t- status:: active\n\t- definition:: The structural design and organization of user interface components, interaction patterns, and navigation systems that enable users to interact with metaverse platforms and virtual environments across different devices and modalities.\n\t- owl:class:: mv:UserInterfaceArchitecture\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[System Architecture]]\n\t\t- related-to:: [[User Experience]]\n\t\t- related-to:: [[Interaction Design]]\n\t\t- related-to:: [[Accessibility]]\n\t  id:: user-interface-architecture-relationships\n\t  collapsed:: true\n- ## Overview\n\t- User interface architecture in metaverse contexts must accommodate 3D spatial interactions, multiple input modalities (gesture, voice, gaze, controllers), and cross-platform consistency while maintaining usability and accessibility.\n- ## Technical Details\n\t- ### Interface Paradigms\n\t\t- **Spatial UI**: 3D interfaces anchored in virtual space\n\t\t- **Diegetic UI**: Interfaces integrated into the virtual world\n\t\t- **Non-Diegetic UI**: Traditional overlay interfaces\n\t\t- **Adaptive UI**: Context-responsive interface layouts\n\t- ### Input Modalities\n\t\t- Hand tracking and gesture recognition\n\t\t- Voice commands and natural language\n\t\t- Eye gaze and head tracking\n\t\t- Physical controllers and haptics\n\t\t- Brain-computer interfaces (emerging)\n\t- ### Design Principles\n\t\t- Spatial depth and hierarchy\n\t\t- Reachability and comfort zones\n\t\t- Visual comfort and readability\n\t\t- Cross-platform consistency\n\t\t- Accessibility compliance\n- ## Applications\n\t- VR application menu systems\n\t- AR overlay interfaces\n\t- Metaverse social hubs\n\t- Virtual workspace design\n\t- Gaming HUD and inventory systems",
   "backlinks": [
+    "User Interface Standard",
     "Experience Layer"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "User Experience",
+    "Interaction Design",
+    "Accessibility",
+    "System Architecture"
   ],
   "ontology": {
     "term_id": "MV-10097",
     "preferred_term": "User Interface Architecture",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#UserInterfaceArchitecture",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The structural design and organization of user interface components, interaction patterns, and navigation systems that enable users to interact with metaverse platforms and virtual environments across different devices and modalities.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +35,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "System Architecture"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +52,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "User Experience",
+        "Interaction Design",
+        "Accessibility"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

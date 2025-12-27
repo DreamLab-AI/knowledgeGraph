@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0306
+	- source-domain:: mv
 	- preferred-term:: Semantic Metadata Registry
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[InfrastructureDomain]], [[CreativeMediaDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: semantic-metadata-registry-relationships
 	  collapsed:: true
 		- is-part-of:: [[Metadata Management Infrastructure]]

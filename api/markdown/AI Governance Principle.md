@@ -12,7 +12,7 @@
 
 
 ### OWL Classification
-	- owl:class:: aigo:AIGovernancePrinciple
+	- owl:class:: ai:AIGovernancePrinciple
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- owl:inferred-class:: ConceptualConcept
@@ -31,7 +31,7 @@ id:: ai-governance-principle-relationships
     collapsed:: true
     - ```clojure
       Prefix(:=<http://narrativegoldmine.com/ai-governance#>)
-Prefix(aigo:=<http://narrativegoldmine.com/ai-governance#>)
+Prefix(ai:=<http://narrativegoldmine.com/ai-governance#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -44,89 +44,89 @@ Ontology(<http://narrativegoldmine.com/ai-governance/PC-0010>
   Import(<http://narrativegoldmine.com/ai-governance/core>)
 
   ## Class Declaration
-  Declaration(Class(aigo:AIGovernancePrinciple))
+  Declaration(Class(ai:AIGovernancePrinciple))
 
   ## Root Class - No parents
-  SubClassOf(aigo:AIGovernancePrinciple owl:Thing)
+  SubClassOf(ai:AIGovernancePrinciple owl:Thing)
 
   ## Essential Normative Properties
-  SubClassOf(aigo:AIGovernancePrinciple
-    (DataHasValue aigo:isNormative "true"^^xsd:boolean))
+  SubClassOf(ai:AIGovernancePrinciple
+    (DataHasValue ai:isNormative "true"^^xsd:boolean))
 
-  SubClassOf(aigo:AIGovernancePrinciple
-    (DataHasValue aigo:guidesAIGovernance "true"^^xsd:boolean))
+  SubClassOf(ai:AIGovernancePrinciple
+    (DataHasValue ai:guidesAIGovernance "true"^^xsd:boolean))
 
-  SubClassOf(aigo:AIGovernancePrinciple
-    (DataSomeValuesFrom aigo:addressesConcern xsd:string))
+  SubClassOf(ai:AIGovernancePrinciple
+    (DataSomeValuesFrom ai:addressesConcern xsd:string))
 
   ## Core Value Alignment
-  SubClassOf(aigo:AIGovernancePrinciple
-    (ObjectSomeValuesFrom aigo:alignsWith aigo:HumanValue))
+  SubClassOf(ai:AIGovernancePrinciple
+    (ObjectSomeValuesFrom ai:alignsWith ai:HumanValue))
 
-  SubClassOf(aigo:AIGovernancePrinciple
-    (ObjectSomeValuesFrom aigo:protects aigo:StakeholderInterest))
+  SubClassOf(ai:AIGovernancePrinciple
+    (ObjectSomeValuesFrom ai:protects ai:StakeholderInterest))
 
   ## Governance Scope
-  SubClassOf(aigo:AIGovernancePrinciple
-    (ObjectSomeValuesFrom aigo:appliesTo aigo:AISystem))
+  SubClassOf(ai:AIGovernancePrinciple
+    (ObjectSomeValuesFrom ai:appliesTo ai:AISystem))
 
-  SubClassOf(aigo:AIGovernancePrinciple
-    (ObjectSomeValuesFrom aigo:implementedThrough aigo:GovernanceMechanism))
+  SubClassOf(ai:AIGovernancePrinciple
+    (ObjectSomeValuesFrom ai:implementedThrough ai:GovernanceMechanism))
 
   ## Data Properties
-  DataPropertyAssertion(aigo:hasPrincipleType aigo:AIGovernancePrinciple xsd:string)
-  DataPropertyAssertion(aigo:hasScope aigo:AIGovernancePrinciple xsd:string)
-  DataPropertyAssertion(aigo:hasPriorityLevel aigo:AIGovernancePrinciple xsd:string)
-  DataPropertyAssertion(aigo:hasAdoptionLevel aigo:AIGovernancePrinciple xsd:string)
-  DataPropertyAssertion(aigo:hasEnforceability aigo:AIGovernancePrinciple xsd:string)
+  DataPropertyAssertion(ai:hasPrincipleType ai:AIGovernancePrinciple xsd:string)
+  DataPropertyAssertion(ai:hasScope ai:AIGovernancePrinciple xsd:string)
+  DataPropertyAssertion(ai:hasPriorityLevel ai:AIGovernancePrinciple xsd:string)
+  DataPropertyAssertion(ai:hasAdoptionLevel ai:AIGovernancePrinciple xsd:string)
+  DataPropertyAssertion(ai:hasEnforceability ai:AIGovernancePrinciple xsd:string)
 
   ## Object Properties
-  ObjectPropertyAssertion(aigo:alignsWith aigo:AIGovernancePrinciple aigo:HumanValue)
-  ObjectPropertyAssertion(aigo:protects aigo:AIGovernancePrinciple aigo:StakeholderInterest)
-  ObjectPropertyAssertion(aigo:appliesTo aigo:AIGovernancePrinciple aigo:AISystem)
-  ObjectPropertyAssertion(aigo:implementedThrough aigo:AIGovernancePrinciple aigo:GovernanceMechanism)
-  ObjectPropertyAssertion(aigo:informsPolicy aigo:AIGovernancePrinciple aigo:Policy)
-  ObjectPropertyAssertion(aigo:requiresCompliance aigo:AIGovernancePrinciple aigo:ComplianceRequirement)
+  ObjectPropertyAssertion(ai:alignsWith ai:AIGovernancePrinciple ai:HumanValue)
+  ObjectPropertyAssertion(ai:protects ai:AIGovernancePrinciple ai:StakeholderInterest)
+  ObjectPropertyAssertion(ai:appliesTo ai:AIGovernancePrinciple ai:AISystem)
+  ObjectPropertyAssertion(ai:implementedThrough ai:AIGovernancePrinciple ai:GovernanceMechanism)
+  ObjectPropertyAssertion(ai:informsPolicy ai:AIGovernancePrinciple ai:Policy)
+  ObjectPropertyAssertion(ai:requiresCompliance ai:AIGovernancePrinciple ai:ComplianceRequirement)
 
   ## Property Domains and Ranges
-  ObjectPropertyDomain(aigo:alignsWith aigo:AIGovernancePrinciple)
-  ObjectPropertyRange(aigo:alignsWith aigo:HumanValue)
+  ObjectPropertyDomain(ai:alignsWith ai:AIGovernancePrinciple)
+  ObjectPropertyRange(ai:alignsWith ai:HumanValue)
 
-  ObjectPropertyDomain(aigo:appliesTo aigo:AIGovernancePrinciple)
-  ObjectPropertyRange(aigo:appliesTo aigo:AISystem)
+  ObjectPropertyDomain(ai:appliesTo ai:AIGovernancePrinciple)
+  ObjectPropertyRange(ai:appliesTo ai:AISystem)
 
   ## Disjoint Union - Major Principle Categories
-  DisjointUnion(aigo:AIGovernancePrinciple
-    aigo:EthicalPrinciple
-    aigo:TechnicalPrinciple
-    aigo:RegulatoryPrinciple
-    aigo:OrganizationalPrinciple)
+  DisjointUnion(ai:AIGovernancePrinciple
+    ai:EthicalPrinciple
+    ai:TechnicalPrinciple
+    ai:RegulatoryPrinciple
+    ai:OrganizationalPrinciple)
 
   ## Annotations
-  AnnotationAssertion(rdfs:label aigo:AIGovernancePrinciple "AI Governance Principle"@en)
-  AnnotationAssertion(rdfs:comment aigo:AIGovernancePrinciple
+  AnnotationAssertion(rdfs:label ai:AIGovernancePrinciple "AI Governance Principle"@en)
+  AnnotationAssertion(rdfs:comment ai:AIGovernancePrinciple
     "Foundational normative guideline shaping responsible AI development and deployment"@en)
-  AnnotationAssertion(dct:description aigo:AIGovernancePrinciple
+  AnnotationAssertion(dct:description ai:AIGovernancePrinciple
     "Normative standard ensuring AI systems align with human values, ethics, and societal benefit"@en)
-  AnnotationAssertion(aigo:termID aigo:AIGovernancePrinciple "PC-0010")
-  AnnotationAssertion(aigo:authorityScore aigo:AIGovernancePrinciple "0.95"^^xsd:decimal)
-  AnnotationAssertion(dct:created aigo:AIGovernancePrinciple "2025-11-08"^^xsd:date)
-  AnnotationAssertion(skos:definition aigo:AIGovernancePrinciple
+  AnnotationAssertion(ai:termID ai:AIGovernancePrinciple "PC-0010")
+  AnnotationAssertion(ai:authorityScore ai:AIGovernancePrinciple "0.95"^^xsd:decimal)
+  AnnotationAssertion(dct:created ai:AIGovernancePrinciple "2025-11-08"^^xsd:date)
+  AnnotationAssertion(skos:definition ai:AIGovernancePrinciple
     "Foundational guideline ensuring AI systems align with human values and ethical imperatives"@en)
 
   ## Principle Type Enumeration
-  SubClassOf(aigo:AIGovernancePrinciple
-    (DataHasValue aigo:hasPrincipleType
+  SubClassOf(ai:AIGovernancePrinciple
+    (DataHasValue ai:hasPrincipleType
       (DataOneOf("ethical" "technical" "regulatory" "organizational" "social"))))
 
   ## Enforceability Levels
-  SubClassOf(aigo:AIGovernancePrinciple
-    (DataHasValue aigo:hasEnforceability
+  SubClassOf(ai:AIGovernancePrinciple
+    (DataHasValue ai:hasEnforceability
       (DataOneOf("mandatory" "recommended" "aspirational" "voluntary"))))
 
   ## Priority Levels
-  SubClassOf(aigo:AIGovernancePrinciple
-    (DataHasValue aigo:hasPriorityLevel
+  SubClassOf(ai:AIGovernancePrinciple
+    (DataHasValue ai:hasPriorityLevel
       (DataOneOf("critical" "high" "medium" "low"))))
 )
       ```

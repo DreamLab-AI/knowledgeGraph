@@ -7,6 +7,7 @@ id:: rb-0073-imu-ontology
   - term-id:: MV-0073
   - preferred-term:: Imu
   - source-domain:: mv
+  - owl:class:: mv:Imu
   - status:: draft
   - definition:: ### Primary Definition
 

@@ -7,5 +7,9 @@ id:: gas-ontology
   - term-id:: DT-1079
   - preferred-term:: Gas
   - source-domain:: bc
+  - owl:class:: bc:Gas
   - status:: complete
   - definition:: Transaction execution cost unit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0819
+    - source-domain:: ai
+    - owl:class:: ai:TaskAdaptation
     - preferred-term:: Task Adaptation
     - ontology:: true
     - public-access:: true

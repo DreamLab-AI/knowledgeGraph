@@ -7,6 +7,7 @@
   - term-id:: MV-9737
   - preferred-term:: {{twitter https://twitter.com/LibertyRPF/status/1737848545657618873}}
   - source-domain:: mv
+  - owl:class:: mv:TwitterHttpstwittercomlibertyrpfstatus1737848545657618873
   - status:: draft
 
 ### MidJourney v5&6
@@ -102,3 +103,6 @@ public:: true
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

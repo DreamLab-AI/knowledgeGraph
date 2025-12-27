@@ -5,11 +5,14 @@ id:: creator-economy-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: DT-0260
+  - source-domain:: bc
+  - owl:class:: bc:CreatorEconomy
   - preferred-term:: Creator Economy
   - status:: draft
   - definition:: Ecosystem enabling individuals and organizations to design, build, and monetize virtual content and experiences through digital marketplaces, tokenization, and economic incentive structures.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - has-part:: [[Token Economy]]
 - has-part:: [[Digital Marketplace]]
 - has-part:: [[Content Distribution Platform]]

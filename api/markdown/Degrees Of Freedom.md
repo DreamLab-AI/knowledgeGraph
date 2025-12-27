@@ -3,12 +3,17 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0023
+	- source-domain:: ai
+	- owl:class:: ai:DegreesOfFreedom
 	- preferred-term:: Degrees Of Freedom
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition
 	- maturity:: draft
 
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 ## Academic Context
 
 - Degrees of freedom (df) represent the number of independent values in a dataset that are free to vary while satisfying imposed constraints, a fundamental concept in inferential statistics.

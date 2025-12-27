@@ -5,6 +5,7 @@
   - preferred-term:: Data Annotation
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:DataAnnotation
 
 ### Relationships
 - is-subclass-of:: [[Data Engineering]]

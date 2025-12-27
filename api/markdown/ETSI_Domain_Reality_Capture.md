@@ -7,6 +7,7 @@ id:: etsi_domain_reality_capture-ontology
   - term-id:: MV-0030
   - preferred-term:: ETSI_Domain_Reality_Capture
   - source-domain:: mv
+  - owl:class:: mv:EtsiDomainRealityCapture
   - status:: draft
   - definition:: A component of the metaverse ecosystem.
 

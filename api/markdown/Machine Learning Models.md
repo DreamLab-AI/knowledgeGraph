@@ -4,11 +4,13 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9952
+	- source-domain:: mv
 	- preferred-term:: Machine Learning Models
 	- status:: stub
 	- owl:class:: mv:MachineLearningModels
 	- belongsToDomain:: [[metaverse]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: machine-learning-models-relationships
 	  collapsed:: true
 

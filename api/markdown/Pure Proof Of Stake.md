@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0549
+    - source-domain:: bc
+    - owl:class:: bc:PureProofOfStake
     - preferred-term:: Pure Proof of Stake
     - ontology:: true
     - public-access:: true

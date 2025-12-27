@@ -11,6 +11,7 @@ id:: rb-0045-acceleration-ontology
   - definition:: **Acceleration** - Rate of change of [[velocity]] over time, measured in meters per second squared (m/s²)
 
 ### Relationships
-- is-subclass-of:: [[RoboticsTechnology]]
+- is-subclass-of:: [[Robotics]]
+  - owl:class:: rb:Acceleration
 - belongsToDomain:: [[RoboticsDomain]]
 - definition:: [[velocity]]

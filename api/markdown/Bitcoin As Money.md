@@ -7,6 +7,7 @@ Bitcoin As Money
   - term-id:: BC-9973
   - preferred-term:: Bitcoin As Money
   - source-domain:: bc
+  - owl:class:: bc:BitcoinAsMoney
   - status:: draft
 
 ### [[Bitcoin]] as [[Money]]
@@ -195,3 +196,6 @@ Bitcoin As Money
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

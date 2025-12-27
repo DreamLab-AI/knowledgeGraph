@@ -8,6 +8,7 @@ AI Risks
   - preferred-term:: Ai Risks
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:AiRisks
 
 ### Relationships
 - is-subclass-of:: [[AIGovernance]]

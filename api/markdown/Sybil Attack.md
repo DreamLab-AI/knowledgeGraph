@@ -7,6 +7,7 @@ id:: sybil-attack-ontology
   - term-id:: DT-1073
   - preferred-term:: Sybil Attack
   - source-domain:: bc
+  - owl:class:: bc:SybilAttack
   - status:: complete
   - definition:: Multiple identity attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

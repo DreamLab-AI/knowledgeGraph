@@ -6,6 +6,7 @@
   - alternate-terms:: Field-Programmable Gate Array
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Fpga
 
 ### Relationships
 - is-subclass-of:: [[AI Hardware]]

@@ -3,7 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0042
-	- preferred-term:: rb 0042 friction
+	- preferred-term:: Friction
 	- source-domain:: rb
 	- status:: draft
 	- public-access:: true
@@ -12,12 +12,13 @@
 
 
 ### OWL Classification
-	- owl:class:: mv:rb0042friction
+	- owl:class:: rb:Friction
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 
 ### Domain & Architecture
 	- belongsToDomain:: [[RoboticsDomain]]
+	- is-subclass-of:: [[Robotics]]
 	- maturity:: draft
 
 ### Relationships

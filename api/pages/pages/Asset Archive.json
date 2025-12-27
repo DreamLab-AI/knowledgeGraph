@@ -1,24 +1,31 @@
 {
   "id": "Asset Archive",
   "title": "Asset Archive",
-  "content": "- ### OntologyBlock\n  id:: asset-archive-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9779\n\t- preferred-term:: Asset Archive\n\t- status:: stub\n\t- owl:class:: mv:AssetArchive\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: asset-archive-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: asset-archive-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9779\n\t- source-domain:: mv\n\t- preferred-term:: Asset Archive\n\t- status:: active\n\t- definition:: Asset Archive is a digital repository system for long-term storage, management, and preservation of 3D models, textures, animations, and other virtual world components, incorporating provenance tracking, version control, and standardized formats to ensure accessibility and interoperability across metaverse platforms.\n\t- owl:class:: mv:AssetArchive\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Digital Repository]]\n\t- enables:: [[Asset Preservation]], [[Cross-Platform Interoperability]], [[Content Reuse]]\n\t- requires:: [[Standardized Formats]], [[Metadata Management]], [[Storage Infrastructure]]\n\t- #### Relationships\n\t  id:: asset-archive-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Format Standards**: Support for glTF, USD, FBX, and other interoperable 3D formats\n- **Metadata Systems**: Asset descriptions, provenance records, licensing information, and version history\n- **Cloud Storage**: Scalable infrastructure for storing and retrieving large 3D assets\n- **Blockchain Integration**: Provenance tracking and ownership verification for NFT-linked assets\n\n### Applications\n- **User-Created Content Preservation**: Archiving creator works across virtual platforms\n- **Intellectual Property Management**: Tracking ownership and licensing of digital assets\n- **Platform Migration**: Enabling asset portability between different metaverse environments\n- **Heritage Preservation**: Long-term storage of culturally significant virtual creations\n\n### Best Practices\nMultiple format support, redundant storage, regular integrity verification, and comprehensive metadata documentation ensure long-term asset accessibility.",
   "backlinks": [
     "Digital Asset Workflow"
   ],
   "wiki_links": [
-    "metaverse"
+    "Asset Preservation",
+    "Metadata Management",
+    "metaverse",
+    "Cross-Platform Interoperability",
+    "Standardized Formats",
+    "Storage Infrastructure",
+    "Content Reuse",
+    "Digital Repository"
   ],
   "ontology": {
     "term_id": "MV-9779",
     "preferred_term": "Asset Archive",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#AssetArchive",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Asset Archive is a digital repository system for long-term storage, management, and preservation of 3D models, textures, animations, and other virtual world components, incorporating provenance tracking, version control, and standardized formats to ensure accessibility and interoperability across metaverse platforms.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -48,9 +55,7 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

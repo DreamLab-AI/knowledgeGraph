@@ -12,7 +12,7 @@
 
 
 ### OWL Classification
-	- owl:class:: aigo:EthicalFramework
+	- owl:class:: ai:EthicalFramework
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- owl:inferred-class:: ConceptualConcept
@@ -47,7 +47,7 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:EthicalFramework
+    - owl:class:: ai:EthicalFramework
     - owl:physicality:: ConceptualEntity
     - owl:role:: Concept
     - owl:inferred-class:: ConceptualConcept

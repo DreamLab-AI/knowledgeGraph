@@ -7,6 +7,7 @@ id:: human-rights-ontology
   - term-id:: MV-4954
   - preferred-term:: Human Rights
   - source-domain:: bc
+  - owl:class:: bc:HumanRights
   - status:: draft
   - definition:: Fundamental rights and freedoms inherent to all human beings as recognised in international instruments including the Universal Declaration of Human Rights, which AI systems must respect and protect throughout their lifecycle.
 

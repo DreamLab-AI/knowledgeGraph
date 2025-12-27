@@ -2,10 +2,42 @@ id:: cbdc-frameworks-ontology
 
 - ### OntologyBlock
   id:: CBDC Frameworks
-  - ontology:: true
-  - public-access:: true
-  - term-id:: BC-0480
-  - preferred-term:: CBDC Frameworks
-  - source-domain:: bc
-  - status:: stub
-  - definition:: A component of the blockchain ecosystem.
+	- ontology:: true
+	- public-access:: true
+	- term-id:: BC-0480
+	- preferred-term:: CBDC Frameworks
+	- source-domain:: bc
+	- owl:class:: bc:CbdcFrameworks
+	- definition:: Architectural models and design specifications for Central Bank Digital Currencies that define the operational roles, technical infrastructure, and policy frameworks governing the issuance, distribution, and management of sovereign digital money by central banks and private intermediaries.
+	- status:: active
+- ### Relationships
+	- is-subclass-of:: [[Financial Framework]]
+	- enables:: [[Digital Currency Issuance]], [[Monetary Policy Implementation]], [[Financial Inclusion]]
+	- requires:: [[Central Bank Infrastructure]], [[Payment Systems]], [[Regulatory Compliance]]
+	- related-to:: [[Central Bank Digital Currency]], [[Digital Money]], [[Payment Infrastructure]]
+- ## Technical Details
+	- **Architecture Types**:
+		- **Direct Model**: Central bank operates all aspects
+		- **Indirect Model**: Private intermediaries handle distribution
+		- **Hybrid Model**: Central bank issues, intermediaries provide services (most common)
+	- **Key Processes** (BIS Framework):
+		- User enrollment
+		- CBDC creation (cash-in)
+		- CBDC destruction (cash-out)
+		- Intra-ledger transfers
+	- **Common Configuration** (26 CBDC systems analyzed):
+		- Two-tier architecture
+		- Distributed Ledger Technology (DLT)
+		- Token-based access model
+	- **Design Considerations**:
+		- Privacy vs. AML/CFT compliance
+		- Centralized vs. decentralized infrastructure
+		- Token-based vs. account-based access
+		- Offline payment capabilities
+	- **Adoption Status** (2024): Low global adoption; Canada and Australia suspended CBDC plans
+- ## Applications
+	- Retail payments and financial inclusion
+	- Cross-border wholesale settlements
+	- Monetary policy implementation
+	- Government disbursements
+

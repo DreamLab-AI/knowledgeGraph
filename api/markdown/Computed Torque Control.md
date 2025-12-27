@@ -8,7 +8,8 @@
 	- owl:class:: rb:ComputedTorqueControl
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- is-subclass-of:: [[Robotics]]
+	- definition:: Computed Torque Control (CTC) is a classical nonlinear control strategy for robotic manipulators that uses feedback linearisation to cancel nonlinear dynamics and achieve precise trajectory tracking.
 	- maturity:: draft
 
 ## Academic Context

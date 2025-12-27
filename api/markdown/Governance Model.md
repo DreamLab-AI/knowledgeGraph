@@ -7,10 +7,12 @@ id:: governance-model-ontology
   - term-id:: DT-0183
   - preferred-term:: Governance Model
   - source-domain:: mv
+  - owl:class:: mv:GovernanceModel
   - status:: draft
   - definition:: Framework of rules and decision-making processes defining authority and accountability within a metaverse ecosystem.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Metaverse Architecture]]
 - has-part:: [[Ethical Framework]]
 - has-part:: [[Accountability Mechanism]]

@@ -6,6 +6,7 @@
 	- preferred-term:: AI Lifecycle
 	- source-domain:: ai
 	- status:: draft
+  - owl:class:: ai:AiLifecycle
 	- public-access:: true
 	- definition:: The series of distinct phases through which an artificial intelligence system progresses from initial conception to eventual decommissioning, encompassing planning, design, development, verification, deployment, operation, monitoring, maintenance, and retirement, with each phase involving specific activities, stakeholder roles, documentation requirements, and governance controls to ensure responsible and effective AI system management.
 	- source:: [[ISO/IEC 42001:2023]], [[NIST AI RMF]], [[EU AI Act]], [[MLOps Frameworks]]

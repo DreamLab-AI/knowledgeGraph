@@ -7,6 +7,7 @@
   - term-id:: BC-9880
   - preferred-term:: ```yaml
   - source-domain:: bc
+  - owl:class:: bc:Yaml
   - status:: draft
 
 ### Original Vision: The Semantic Web (1999-2009)
@@ -576,3 +577,6 @@
 ---
 *Last updated: 2025-01-15*
 *Quality Score: 0.90 | Completeness: 0.88 | Depth: 0.92*
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

@@ -5,7 +5,9 @@ id:: rb-0014-surgical-robot-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0014
-  - preferred-term:: rb 0014 surgical robot
+  - preferred-term:: Surgical Robot
   - source-domain:: rb
+  - owl:class:: rb:SurgicalRobot
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
   - definition:: ### Primary Definition

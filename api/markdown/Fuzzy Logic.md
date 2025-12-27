@@ -5,6 +5,7 @@
   - preferred-term:: Fuzzy Logic
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:FuzzyLogic
 
 ### Relationships
 - is-subclass-of:: [[Artificial Intelligence]]

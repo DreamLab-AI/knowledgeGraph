@@ -1,25 +1,38 @@
 {
   "id": "Technical Standards",
   "title": "Technical Standards",
-  "content": "- ### OntologyBlock\n  id:: technical-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10079\n\t- preferred-term:: Technical Standards\n\t- status:: stub\n\t- owl:class:: mv:TechnicalStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: technical-standards-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: technical-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10079\n\t- source-domain:: mv\n\t- preferred-term:: Technical Standards\n\t- status:: active\n\t- definition:: Formal specifications, protocols, and guidelines that define how metaverse technologies, components, and systems should operate and interact, ensuring interoperability, quality, and compatibility across different platforms and implementations.\n\t- owl:class:: mv:TechnicalStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Standards]]\n\t\t- related-to:: [[Interoperability]]\n\t\t- related-to:: [[Standards Compliance]]\n\t\t- related-to:: [[Standards Conformance]]\n\t  id:: technical-standards-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Technical standards for the metaverse define the protocols and specifications that enable interoperability between different platforms, technologies, and applications. The Metaverse Standards Forum coordinates 2,600+ members to develop and promote these standards.\n- ## Technical Details\n\t- ### Key Standards Organizations\n\t\t- **IEEE Standards Association**: Metaverse Standards Committee (CTS/MSC) for core technology standards\n\t\t- **Khronos Group**: glTF, WebXR, and other graphics/XR standards\n\t\t- **OMA3**: Inter-World Portaling System (IWPS) specification launched November 2024\n\t\t- **W3C**: Web standards including WebXR Device API\n\t- ### Core Technical Standards\n\t\t- **glTF**: 3D scene and model transmission standard\n\t\t- **WebXR**: XR experience specification for web browsers (Safari support added 2024)\n\t\t- **USD (Universal Scene Description)**: 3D graphics interchange format\n\t\t- **IEEE P2874**: Interoperability among disparate hardware/software systems\n\t\t- **3D Tiles**: Real-time massive 3D dataset streaming\n\t- ### Key Standards Areas\n\t\t- Avatar portability and identity standards\n\t\t- Asset interoperability formats\n\t\t- Spatial audio specifications\n\t\t- Haptic feedback protocols\n\t\t- Privacy and security standards\n- ## Applications\n\t- Cross-platform asset and avatar portability\n\t- Seamless navigation between virtual worlds\n\t- Consistent user experience across platforms\n\t- Hardware and software interoperability",
   "backlinks": [
+    "Virtual Environment Specification",
+    "Standards Compliance",
+    "Standards Documentation",
+    "Standards",
+    "Environmental Standards",
+    "Asset Format Standards",
+    "Documentation Standards",
+    "Network Standards",
+    "Compatibility Standards",
     "Compatibility Process",
     "Interoperability Framework"
   ],
   "wiki_links": [
-    "metaverse"
+    "Standards Conformance",
+    "metaverse",
+    "Interoperability",
+    "Standards",
+    "Standards Compliance"
   ],
   "ontology": {
     "term_id": "MV-10079",
     "preferred_term": "Technical Standards",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#TechnicalStandards",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Formal specifications, protocols, and guidelines that define how metaverse technologies, components, and systems should operate and interact, ensuring interoperability, quality, and compatibility across different platforms and implementations.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -31,7 +44,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Standards"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -46,15 +61,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Interoperability",
+        "Standards Compliance",
+        "Standards Conformance"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

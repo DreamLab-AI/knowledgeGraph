@@ -7,10 +7,12 @@ id:: trust-framework-policy-ontology
   - term-id:: DT-0186
   - preferred-term:: Trust Framework Policy
   - source-domain:: mv
+  - owl:class:: mv:TrustFrameworkPolicy
   - status:: draft
   - definition:: Set of rules and requirements governing participant behavior, accountability, and interoperability in federated digital identity ecosystems within metaverse environments.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Federated Identity System]]
 - has-part:: [[Certification Criteria]]
 - has-part:: [[Trust Anchor]]

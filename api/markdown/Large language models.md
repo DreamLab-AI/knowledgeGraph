@@ -3,12 +3,13 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0850
+	- source-domain:: ai
 	- preferred-term:: Large Language Models
 	- status:: complete
 	- public-access:: true
 	- definition:: [[Large Language Models]] (LLMs) are [[Foundation Models]] with billions to trillions of parameters trained on massive text corpora using [[Transformer]] architectures and [[Self-Supervised Learning]], capable of performing diverse [[Natural Language Processing]] tasks through [[Few-Shot Learning]], [[Zero-Shot Learning]], and [[Prompt Engineering]]. LLMs represent a paradigm shift in [[Artificial Intelligence]], demonstrating emergent capabilities in reasoning, code generation, multilingual understanding, and complex task decomposition.
 	- source:: [[OpenAI Research]], [[Google DeepMind]], [[Anthropic]], [[Meta AI Research]], [[NIST AI Standards]]
-	- maturity:: dt:Mature
+	- maturity:: mature
 	- owl:class:: ai:LargeLanguageModel
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Process

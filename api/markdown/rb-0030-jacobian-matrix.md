@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0030
+	- source-domain:: rb
 	- preferred-term:: rb 0030 jacobian matrix
 	- status:: draft
 	- public-access:: true

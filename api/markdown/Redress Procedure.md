@@ -12,7 +12,7 @@
 
 
 ### OWL Classification
-	- owl:class:: aigo:RedressProcedure
+	- owl:class:: ai:RedressProcedure
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- owl:inferred-class:: ConceptualConcept
@@ -35,7 +35,7 @@
     - is-subclass-of:: [[ArtificialIntelligenceTechnology]]
     - term-id:: DT-0014
     - preferred-term:: Redress Procedure
-    - source-domain:: ai-grounded
+    - source-domain:: ai
     - status:: complete
     - public-access:: true
     - version:: 1.0.0
@@ -48,7 +48,7 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:RedressProcedure
+    - owl:class:: ai:RedressProcedure
     - owl:physicality:: ConceptualEntity
     - owl:role:: Concept
     - owl:inferred-class:: ConceptualConcept

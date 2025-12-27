@@ -7,6 +7,7 @@ Agentic Metaverse for Global Creatives
   - term-id:: MV-9739
   - preferred-term:: Agentic Metaverse For Global Creatives
   - source-domain:: mv
+  - owl:class:: mv:AgenticMetaverseForGlobalCreatives
   - status:: draft
 
 ### Virtual Training and Simulation:
@@ -81,3 +82,6 @@ Agentic Metaverse for Global Creatives
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

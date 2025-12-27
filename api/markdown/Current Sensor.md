@@ -6,9 +6,10 @@
 	- preferred-term:: Current Sensor
 	- source-domain:: rb
 	- owl:class:: rb:CurrentSensor
+	- is-subclass-of:: [[Robotics]]
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- definition:: A current sensor measures electric current in a conductor using magnetic field sensing principles.
 	- maturity:: draft
 
 ## Academic Context

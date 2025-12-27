@@ -8,6 +8,7 @@ AI-0437-federated-edge-learning
   - preferred-term:: Ai 0437 Federated Edge Learning
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0437FederatedEdgeLearning
 
 ### Relationships
 - is-subclass-of:: [[ai:ModelArchitecture]]

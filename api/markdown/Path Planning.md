@@ -9,6 +9,7 @@
 
 ### Relationships
 
+- is-subclass-of:: [[Artificial Intelligence]]
 	- status:: draft
 	- public-access:: true
 	- definition:: Path Planning is the algorithmic process of determining an optimal or feasible geometric path from a start location to a goal location whilst avoiding obstacles, adhering to constraints, and optimising objectives such as distance, time, safety, or energy consumption. Path planning algorithms range from graph-based methods (A*, Dijkstra) to sampling-based methods (RRT, PRM) and optimisation-based methods for autonomous navigation.

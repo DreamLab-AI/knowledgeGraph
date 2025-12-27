@@ -3,6 +3,8 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-1050
+	- source-domain:: mv
+	- owl:class:: mv:DepthCamera
 	- preferred-term:: Depth Camera
 	- status:: draft
 	- public-access:: true
@@ -94,3 +96,5 @@
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
 
+### Relationships
+- is-subclass-of:: [[Metaverse]]

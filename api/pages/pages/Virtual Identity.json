@@ -1,24 +1,28 @@
 {
   "id": "Virtual Identity",
   "title": "Virtual Identity",
-  "content": "- ### OntologyBlock\n  id:: virtual-identity-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10126\n\t- preferred-term:: Virtual Identity\n\t- status:: stub\n\t- owl:class:: mv:VirtualIdentity\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: virtual-identity-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-identity-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10126\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Identity\n\t- status:: active\n\t- definition:: A digital representation encompassing behaviours, preferences, movements, actions, and decisions made in digital spaces, extending beyond 3D avatars to include representation, data, and identification across AR, VR, MR, and web platforms using decentralized identity technologies.\n\t- owl:class:: mv:VirtualIdentity\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Digital Identity]]\n\t\t- related-to:: [[Avatar]]\n\t\t- related-to:: [[Decentralized Identity]]\n\t\t- related-to:: [[Self-Sovereign Identity]]\n\t  id:: virtual-identity-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual identity in the metaverse encompasses three key aspects: representation (how we express ourselves through avatars and behavior), data (our digital footprint and preferences), and identification (verifying who we are). Technologies like Self-Sovereign Identity (SSI) and Decentralized Identifiers (DIDs) are foundational for secure, interoperable digital identities. The avatar market is projected to exceed $500 billion by 2030.\n- ## Technical Details\n\t- ### Identity Components\n\t\t- **Representation**: Avatars, pseudonyms, dress, speech, and behavior expression\n\t\t- **Data**: Activity logs, preferences, interaction patterns, and credentials\n\t\t- **Identification**: Authentication, verification, and access control\n\t- ### Avatar Technologies\n\t\t- Full-body motion capture avatars\n\t\t- AI-generated photorealistic representations\n\t\t- Customizable stylized avatars\n\t\t- Cross-platform portable avatars\n\t- ### Security Technologies\n\t\t- Self-Sovereign Identity (SSI) frameworks\n\t\t- Decentralized Identifiers (DIDs)\n\t\t- Blockchain-based identity verification\n\t\t- Verifiable credentials for claims\n- ## Applications\n\t- Professional metaverse personas and networking\n\t- Gaming and entertainment avatars\n\t- Virtual commerce and shopping identities\n\t- Digital assistants and AI companions\n\t- Cross-platform identity portability",
   "backlinks": [
     "Human Capture & Recognition"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Decentralized Identity",
+    "Digital Identity",
+    "Self-Sovereign Identity",
+    "Avatar"
   ],
   "ontology": {
     "term_id": "MV-10126",
     "preferred_term": "Virtual Identity",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#VirtualIdentity",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A digital representation encompassing behaviours, preferences, movements, actions, and decisions made in digital spaces, extending beyond 3D avatars to include representation, data, and identification across AR, VR, MR, and web platforms using decentralized identity technologies.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Digital Identity"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +51,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Avatar",
+        "Decentralized Identity",
+        "Self-Sovereign Identity"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

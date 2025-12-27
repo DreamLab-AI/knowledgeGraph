@@ -22,6 +22,7 @@
 
 ### Relationships
 
+- is-subclass-of:: [[Artificial Intelligence]]
 ## Metadata
 
 - **Last Updated**: 2025-11-16

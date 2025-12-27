@@ -7,6 +7,7 @@ id:: bc-0114-burning-mechanism-ontology
   - term-id:: MV-0827
   - preferred-term:: BC 0114 burning mechanism
   - source-domain:: bc
+  - owl:class:: bc:Bc0114BurningMechanism
   - status:: draft
   - definition:: ### Primary Definition
 

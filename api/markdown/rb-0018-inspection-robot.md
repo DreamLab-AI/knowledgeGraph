@@ -5,7 +5,9 @@ id:: rb-0018-inspection-robot-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0018
-  - preferred-term:: rb 0018 inspection robot
+  - preferred-term:: Inspection Robot
   - source-domain:: rb
+  - owl:class:: rb:InspectionRobot
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
   - definition:: ### Primary Definition

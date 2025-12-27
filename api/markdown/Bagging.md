@@ -5,6 +5,7 @@
   - preferred-term:: Bagging
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Bagging
 
 ### Relationships
 - is-subclass-of:: [[Ensemble Methods]]

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-9003
+	- source-domain:: rb
 	- preferred-term:: Centralized Swarm Control
 	- status:: draft
 	- public-access:: true
@@ -13,4 +14,4 @@
 	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[RoboticsDomain]]
-	- isSubclassOf:: [[Swarm Control Architecture]]
+	- is-subclass-of:: [[Robotics]]

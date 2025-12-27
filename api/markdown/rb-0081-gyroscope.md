@@ -5,11 +5,12 @@ id:: rb-0081-gyroscope-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0081
-  - preferred-term:: rb 0081 gyroscope
+  - preferred-term:: Gyroscope
   - source-domain:: rb
+  - owl:class:: rb:Gyroscope
   - status:: draft
   - definition:: ### Primary Definition
 
 ### Relationships
-- is-subclass-of:: [[ProprioceptiveSensors]]
+- is-subclass-of:: [[Robotics]]
 - belongsToDomain:: [[RoboticsDomain]]

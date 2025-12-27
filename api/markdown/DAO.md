@@ -9,6 +9,7 @@ The most interesting thing about DAOs is that...
   - term-id:: BC-9885
   - preferred-term:: The most interesting thing about DAOs is that...
   - source-domain:: bc
+  - owl:class:: bc:TheMostInterestingThingAboutDaosIsThat
   - status:: draft
 
 The most interesting thing about DAOs is that they belong more in this money chapter than they do in blockchain. As we have seen they're finding most success as loosely regulated crowd funding platforms. If a small company did find itself wishing to explore this fringe mechanism for raising capital, then we would certainly recommend keeping a global eye on evolving regulation and the onward legal exposure of the company.
@@ -154,3 +155,6 @@ The most interesting thing about DAOs is that they belong more in this money cha
 		- ```
 
 		  ```
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

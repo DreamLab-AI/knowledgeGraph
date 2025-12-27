@@ -5,7 +5,9 @@ id:: rb-0007-collaborative-robot-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0007
-  - preferred-term:: rb 0007 collaborative robot
+  - preferred-term:: Collaborative Robot
   - source-domain:: rb
+  - owl:class:: rb:CollaborativeRobot
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
   - definition:: ### Primary Definition

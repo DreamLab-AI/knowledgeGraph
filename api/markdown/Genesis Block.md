@@ -7,6 +7,7 @@ id:: genesis-block-ontology
   - term-id:: BC-0005
   - preferred-term:: Genesis Block
   - source-domain:: bc
+  - owl:class:: bc:GenesisBlock
   - status:: complete
   - definition:: First block in a blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

@@ -7,6 +7,7 @@ id:: etsi-domain-immersive-reality-capture-ontology
   - term-id:: DT-0360
   - preferred-term:: ETSI Domain Immersive + Reality Capture Crossover
   - source-domain:: mv
+  - owl:class:: mv:EtsiDomainImmersiveRealityCaptureCrossover
   - status:: draft
   - definition:: Domain categorization marker indicating metaverse systems operating at the intersection of immersive interaction capabilities and reality capture technologies for photorealistic virtual environment creation.
 

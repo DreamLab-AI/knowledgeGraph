@@ -1,10 +1,11 @@
-Omnidirectional Robot
-
 - ### OntologyBlock
-  id:: Omnidirectional Robot
+  id:: omnidirectional-robot-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1026
   - preferred-term:: Omnidirectional Robot
   - source-domain:: rb
+  - owl:class:: rb:OmnidirectionalRobot
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
+  - definition:: An omnidirectional robot can move in any direction without changing orientation, using specialized wheels like Mecanum or omniwheels.

@@ -7,10 +7,12 @@ id:: virtualworld-ontology
   - term-id:: MV-0003
   - preferred-term:: VirtualWorld
   - source-domain:: mv
+  - owl:class:: mv:Virtualworld
   - status:: active
   - definition:: A computer-generated, immersive 3D environment where users can interact with digital objects and other participants through avatars, forming the foundational space of metaverse experiences.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - uses:: [[Computer Vision]]
 - requires:: [[Physics Engine]]
 - is-part-of:: [[Metaverse Platform]]

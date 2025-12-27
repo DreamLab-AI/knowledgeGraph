@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0152
+	- source-domain:: mv
 	- preferred-term:: Eye Tracking
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[InteractionDomain]]
 	- implementedInLayer:: [[EdgeLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: eye-tracking-relationships
 	  collapsed:: true
 		- is-part-of:: [[Human-Computer Interaction Framework]]

@@ -1,24 +1,29 @@
 {
   "id": "Parametric Modeling",
   "title": "Parametric Modeling",
-  "content": "- ### OntologyBlock\n  id:: parametric-modeling-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9992\n\t- preferred-term:: Parametric Modeling\n\t- status:: stub\n\t- owl:class:: mv:ParametricModeling\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: parametric-modeling-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: parametric-modeling-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9992\n\t- source-domain:: mv\n\t- preferred-term:: Parametric Modeling\n\t- status:: active\n\t- definition:: A CAD design methodology that uses algorithms and adjustable parameters to generate and modify complex 3D geometry, enabling flexible, constraint-driven design where changes to input values automatically propagate throughout the model.\n\t- owl:class:: mv:ParametricModeling\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: parametric-modeling-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[3D Modeling]]\n\t\t- related-to:: [[CAD Software]]\n\t\t- related-to:: [[Computational Design]]\n\t\t- related-to:: [[BIM]]\n\t\t- enables:: [[Generative Design]]\n\t- #### Leading Software\n\t  collapsed:: true\n\t\t- Rhino with Grasshopper for visual programming\n\t\t- Autodesk Revit for BIM and architecture\n\t\t- SolidWorks for mechanical engineering\n\t\t- Autodesk Fusion 360 for cloud-based CAD/CAM\n\t\t- CATIA for aerospace and automotive industries\n\t\t- FreeCAD as open-source alternative\n\t- #### Key Benefits\n\t  collapsed:: true\n\t\t- Automatic updates when parameters change\n\t\t- Rapid design iteration and exploration\n\t\t- Complex geometry difficult with traditional methods\n\t\t- Constraint-based relationships maintain design intent\n\t\t- Integration with simulation and analysis tools",
   "backlinks": [
     "Generative Design Tool"
   ],
   "wiki_links": [
-    "metaverse"
+    "BIM",
+    "Computational Design",
+    "metaverse",
+    "Generative Design",
+    "3D Modeling",
+    "CAD Software"
   ],
   "ontology": {
     "term_id": "MV-9992",
     "preferred_term": "Parametric Modeling",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ParametricModeling",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A CAD design methodology that uses algorithms and adjustable parameters to generate and modify complex 3D geometry, enabling flexible, constraint-driven design where changes to input values automatically propagate throughout the model.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "3D Modeling"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Generative Design"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "CAD Software",
+        "Computational Design",
+        "BIM"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

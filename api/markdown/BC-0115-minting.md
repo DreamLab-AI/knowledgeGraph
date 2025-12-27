@@ -7,6 +7,7 @@ id:: bc-0115-minting-ontology
   - term-id:: MV-0115
   - preferred-term:: BC 0115 minting
   - source-domain:: bc
+  - owl:class:: bc:Bc0115Minting
   - status:: draft
   - definition:: ### Primary Definition
 

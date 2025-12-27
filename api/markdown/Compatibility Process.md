@@ -7,10 +7,12 @@ id:: compatibility-process-ontology
   - term-id:: DT-0209
   - preferred-term:: Compatibility Process
   - source-domain:: mv
+  - owl:class:: mv:CompatibilityProcess
   - status:: draft
   - definition:: Systematic procedure for ensuring that digital assets, applications, and systems conform to common standards, protocols, and specifications to enable seamless exchange, integration, and interoperability across metaverse platforms.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - has-part:: [[Integration Testing]]
 - has-part:: [[Format Validation]]
 - has-part:: [[Interoperability Verification]]

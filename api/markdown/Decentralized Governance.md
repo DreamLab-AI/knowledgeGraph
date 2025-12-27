@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: DT-6206
 	- preferred-term:: Decentralized Governance
-	- source-domain:: unknown
+	- source-domain:: bc
 	- status:: draft
 	- public-access:: true
 

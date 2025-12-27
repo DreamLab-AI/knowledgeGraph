@@ -3,10 +3,13 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0068
+	- source-domain:: rb
+	- owl:class:: rb:VisionSystem
 	- preferred-term:: Vision System
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- is-subclass-of:: [[Robotics]]
+	- definition:: A vision system is an integrated imaging and processing system used in robotics for object recognition, inspection, guidance, and environmental perception.
 	- maturity:: draft
 	- belongsToDomain:: [[RoboticsDomain]]
 	- #### Relationships

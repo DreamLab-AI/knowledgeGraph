@@ -5,6 +5,7 @@
   - preferred-term:: Minimax Algorithm
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:MinimaxAlgorithm
 
 ### Relationships
 - is-subclass-of:: [[Search Algorithms]]

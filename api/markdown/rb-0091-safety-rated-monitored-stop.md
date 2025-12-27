@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0091
+	- source-domain:: rb
 	- preferred-term:: rb 0091 safety rated monitored stop
 	- status:: draft
 	- public-access:: true

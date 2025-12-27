@@ -7,6 +7,7 @@ id:: etsi_domain_interoperability-ontology
   - term-id:: MV-0028
   - preferred-term:: ETSI_Domain_Interoperability
   - source-domain:: mv
+  - owl:class:: mv:EtsiDomainInteroperability
   - status:: draft
   - definition:: A component of the metaverse ecosystem.
 

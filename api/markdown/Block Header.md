@@ -7,6 +7,7 @@ id:: block-header-ontology
   - term-id:: BC-0004
   - preferred-term:: Block Header
   - source-domain:: bc
+  - owl:class:: bc:BlockHeader
   - status:: complete
   - definition:: Metadata section of a block within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

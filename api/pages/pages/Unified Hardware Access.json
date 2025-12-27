@@ -1,24 +1,28 @@
 {
   "id": "Unified Hardware Access",
   "title": "Unified Hardware Access",
-  "content": "- ### OntologyBlock\n  id:: unified-hardware-access-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10092\n\t- preferred-term:: Unified Hardware Access\n\t- status:: stub\n\t- owl:class:: mv:UnifiedHardwareAccess\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: unified-hardware-access-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: unified-hardware-access-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10092\n\t- source-domain:: mv\n\t- preferred-term:: Unified Hardware Access\n\t- status:: active\n\t- definition:: A standardized abstraction layer that provides consistent interfaces for accessing diverse XR hardware devices, including VR headsets, AR glasses, haptic controllers, and tracking systems, enabling cross-platform application development.\n\t- owl:class:: mv:UnifiedHardwareAccess\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Hardware Abstraction]]\n\t\t- related-to:: [[XR Device]]\n\t\t- related-to:: [[WebXR]]\n\t\t- related-to:: [[Interoperability]]\n\t  id:: unified-hardware-access-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Unified hardware access provides developers with consistent APIs to interact with various XR devices regardless of manufacturer or platform. Standards like WebXR and OpenXR enable applications to work across different headsets and controllers without device-specific code.\n- ## Technical Details\n\t- ### Key Standards\n\t\t- **WebXR Device API**: W3C standard for XR in web browsers\n\t\t- **OpenXR**: Khronos Group open standard for XR runtime access\n\t\t- **OpenHMD**: Open-source API for head-mounted displays\n\t- ### Abstraction Layers\n\t\t- Input device abstraction (controllers, hand tracking)\n\t\t- Display abstraction (resolution, refresh rate, FOV)\n\t\t- Tracking abstraction (6DoF, eye tracking, body tracking)\n\t\t- Audio spatialization abstraction\n\t- ### Hardware Categories\n\t\t- VR headsets (Quest, PSVR, Index, Pico)\n\t\t- AR glasses (HoloLens, Magic Leap, Apple Vision Pro)\n\t\t- Haptic feedback devices\n\t\t- Motion capture systems\n\t\t- Eye and gaze tracking hardware\n- ## Applications\n\t- Cross-platform VR/AR application development\n\t- Enterprise XR deployment across device fleets\n\t- Metaverse client compatibility\n\t- Accessibility device integration\n\t- Research and development prototyping",
   "backlinks": [
     "Hardware Abstraction Layer (HAL)"
   ],
   "wiki_links": [
-    "metaverse"
+    "WebXR",
+    "metaverse",
+    "Interoperability",
+    "Hardware Abstraction",
+    "XR Device"
   ],
   "ontology": {
     "term_id": "MV-10092",
     "preferred_term": "Unified Hardware Access",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#UnifiedHardwareAccess",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A standardized abstraction layer that provides consistent interfaces for accessing diverse XR hardware devices, including VR headsets, AR glasses, haptic controllers, and tracking systems, enabling cross-platform application development.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Hardware Abstraction"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +51,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "XR Device",
+        "WebXR",
+        "Interoperability"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

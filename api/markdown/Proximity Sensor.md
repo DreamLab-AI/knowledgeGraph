@@ -6,9 +6,10 @@
 	- preferred-term:: Proximity Sensor
 	- source-domain:: rb
 	- owl:class:: rb:ProximitySensor
+	- is-subclass-of:: [[Robotics]]
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- definition:: A proximity sensor detects the presence or absence of objects without physical contact using capacitive, inductive, ultrasonic, or photoelectric technologies.
 	- maturity:: draft
 
 ## Academic Context

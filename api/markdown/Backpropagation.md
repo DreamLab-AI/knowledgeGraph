@@ -7,6 +7,7 @@ id:: backpropagation-ontology
   - term-id:: MV-0043
   - preferred-term:: Backpropagation
   - source-domain:: mv
+  - owl:class:: mv:Backpropagation
   - status:: draft
   - definition:: ### Primary Definition
 

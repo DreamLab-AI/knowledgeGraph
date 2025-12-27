@@ -1,12 +1,13 @@
 {
   "id": "Soft Body Dynamics",
   "title": "Soft Body Dynamics",
-  "content": "- ### OntologyBlock\n  id:: MV-9005\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9005\n\t- preferred-term:: Soft Body Dynamics\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Physics simulation of deformable objects like cloth, flesh, or elastic materials, modeling realistic deformation and dynamic behavior in virtual environments.\n\t- source:: [[Physics Engine]], [[Game Physics]]\n\t- maturity:: emerging\n\t- owl:class:: mv:SoftBodyDynamics\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- isSubclassOf:: [[Physics Simulation]]",
+  "content": "- ### OntologyBlock\n  id:: MV-9005\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9005\n\t- source-domain:: mv\n\t- preferred-term:: Soft Body Dynamics\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Physics simulation of deformable objects like cloth, flesh, or elastic materials, modeling realistic deformation and dynamic behavior in virtual environments.\n\t- source:: [[Physics Engine]], [[Game Physics]]\n\t- maturity:: emerging\n\t- owl:class:: mv:SoftBodyDynamics\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- isSubclassOf:: [[Physics Simulation]]\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]",
   "backlinks": [],
   "wiki_links": [
+    "MetaverseDomain",
     "Physics Simulation",
     "Game Physics",
-    "MetaverseDomain",
+    "Metaverse",
     "Physics Engine"
   ],
   "ontology": {
@@ -14,7 +15,7 @@
     "preferred_term": "Soft Body Dynamics",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#SoftBodyDynamics",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
     "definition": "Physics simulation of deformable objects like cloth, flesh, or elastic materials, modeling realistic deformation and dynamic behavior in virtual environments.",
@@ -52,7 +53,6 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
         "Missing required property: is-subclass-of (at least one parent class)"
       ]

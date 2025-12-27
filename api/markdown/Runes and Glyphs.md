@@ -7,6 +7,7 @@ public:: true
   - term-id:: BC-9903
   - preferred-term:: public:: true
   - source-domain:: bc
+  - owl:class:: bc:PublicTrue
   - status:: draft
 
 ### Origins and Design Philosophy
@@ -402,3 +403,6 @@ public:: true
 	- [[Casey Rodarmor]] - [[Melvin Carvalho]] - [[Lightning Labs]] - [[Blockstream]]
 	- [[Generative AI]] - [[Machine Learning]] - [[AI Agent]] - [[Robotics]] - [[IoT]] - [[Decentralized Identity]]
 	- [[Securities]] - [[Regulation]] - [[KYC]] - [[AML]] - [[Compliance]] - [[Tax]] - [[CBDC]]
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

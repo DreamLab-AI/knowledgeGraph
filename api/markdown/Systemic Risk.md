@@ -5,6 +5,7 @@
 	- term-id:: DT-7974
 	- preferred-term:: Systemic Risk
 	- source-domain:: mv
+  - owl:class:: mv:SystemicRisk
 	- status:: draft
     - public-access:: true
 	- definition:: Risk specific to high-impact capabilities of general-purpose AI models with significant impact on the Union market due to reach, or actual or foreseeable negative effects on public health, safety, fundamental rights, environment, democracy, or rule of law.
@@ -100,4 +101,5 @@ This updated ontology entry provides a comprehensive and current overview of sys
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
 
-
+### Relationships
+- is-subclass-of:: [[Metaverse]]

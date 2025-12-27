@@ -7,10 +7,12 @@ id:: digital-curation-platform-ontology
   - term-id:: DT-0124
   - preferred-term:: Digital Curation Platform
   - source-domain:: mv
+  - owl:class:: mv:DigitalCurationPlatform
   - status:: draft
   - definition:: Integrated system for organizing, preserving, managing, and providing long-term access to digital cultural artifacts, collections, and heritage materials in metaverse environments.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - has-part:: [[Search Interface]]
 - has-part:: [[Preservation Engine]]
 - has-part:: [[Access Control]]

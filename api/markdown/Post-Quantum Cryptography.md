@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0210
+	- source-domain:: mv
 	- preferred-term:: Post-Quantum Cryptography
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[Physical Layer]], [[Network Layer]], [[Compute Layer]], [[Data Layer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: post-quantum-cryptography-relationships
 	  collapsed:: true
 		- is-part-of:: [[Security Protocol]]

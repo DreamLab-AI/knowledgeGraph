@@ -3,12 +3,13 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-1007
+	- source-domain:: ai
 	- preferred-term:: ModelEvaluationResults
 	- status:: complete
 	- public-access:: true
 	- definition:: A model evaluation results component in the Artificial Intelligence domain that required by AiModelCard.
 	- source:: Generated from bridge validation
-	- maturity:: dt:Emerging
+	- maturity:: emerging
 	- owl:class:: ai:ModelEvaluationResults
 	- #### Relationships
 - is-subclass-of:: [[ai:ModelArchitecture]]

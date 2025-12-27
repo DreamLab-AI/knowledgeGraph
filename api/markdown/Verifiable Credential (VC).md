@@ -7,10 +7,12 @@ id:: verifiable-credential-vc-ontology
   - term-id:: DT-0282
   - preferred-term:: Verifiable Credential (VC)
   - source-domain:: bc
+  - owl:class:: bc:VerifiableCredentialVc
   - status:: draft
   - definition:: A W3C standard for tamper-evident credentials that can be cryptographically verified, containing claims made by an issuer about a subject, enabling trustable digital attestations without requiring direct communication with the issuer.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Self-Sovereign Identity (SSI)]]
 - is-part-of:: [[Trust Infrastructure]]
 - has-part:: [[Cryptographic Proof]]

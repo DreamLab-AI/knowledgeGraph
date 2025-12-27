@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0238
+	- source-domain:: mv
 	- preferred-term:: Deepfakes
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[CreativeMediaDomain]], [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: deepfakes-relationships
 	  collapsed:: true
 		- is-part-of:: [[Synthetic Media]]

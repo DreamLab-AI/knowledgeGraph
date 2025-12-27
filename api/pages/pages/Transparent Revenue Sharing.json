@@ -1,24 +1,28 @@
 {
   "id": "Transparent Revenue Sharing",
   "title": "Transparent Revenue Sharing",
-  "content": "- ### OntologyBlock\n  id:: transparent-revenue-sharing-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10090\n\t- preferred-term:: Transparent Revenue Sharing\n\t- status:: stub\n\t- owl:class:: mv:TransparentRevenueSharing\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: transparent-revenue-sharing-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: transparent-revenue-sharing-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10090\n\t- source-domain:: mv\n\t- preferred-term:: Transparent Revenue Sharing\n\t- status:: active\n\t- definition:: A financial distribution model where revenue allocation, payment calculations, and disbursements are openly visible and verifiable by all stakeholders, often implemented through smart contracts that automatically distribute earnings according to predefined rules.\n\t- owl:class:: mv:TransparentRevenueSharing\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Revenue Distribution]]\n\t\t- related-to:: [[Smart Contract]]\n\t\t- related-to:: [[Creator Economy]]\n\t\t- related-to:: [[Tokenomics]]\n\t  id:: transparent-revenue-sharing-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Transparent revenue sharing uses blockchain technology to provide verifiable, automated distribution of earnings among stakeholders. Smart contracts enforce predefined splitting rules, with all transactions visible on-chain for auditing and accountability.\n- ## Technical Details\n\t- ### Smart Contract Implementation\n\t\t- **Automatic Splitting**: Revenue divided according to coded percentages\n\t\t- **Real-Time Distribution**: Immediate payment upon revenue receipt\n\t\t- **Immutable Rules**: Transparent, unchangeable distribution logic\n\t\t- **Audit Trail**: Complete transaction history on blockchain\n\t- ### Revenue Sharing Models\n\t\t- **Creator Royalties**: NFT secondary sale royalties\n\t\t- **Platform Fees**: Marketplace commission distribution\n\t\t- **Staking Rewards**: Validator and delegator earnings\n\t\t- **DAO Treasury**: Community fund allocation\n\t- ### Verification Mechanisms\n\t\t- On-chain transaction records\n\t\t- Block explorer access for all stakeholders\n\t\t- Smart contract source code verification\n\t\t- Real-time dashboard analytics\n- ## Applications\n\t- NFT marketplace royalty distribution\n\t- Gaming guild revenue sharing\n\t- Metaverse land rental income\n\t- Music and content creator platforms\n\t- Decentralized advertising networks",
   "backlinks": [
     "Smart Royalties Ledger"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Smart Contract",
+    "Revenue Distribution",
+    "Creator Economy",
+    "Tokenomics"
   ],
   "ontology": {
     "term_id": "MV-10090",
     "preferred_term": "Transparent Revenue Sharing",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#TransparentRevenueSharing",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A financial distribution model where revenue allocation, payment calculations, and disbursements are openly visible and verifiable by all stakeholders, often implemented through smart contracts that automatically distribute earnings according to predefined rules.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Revenue Distribution"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +51,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Smart Contract",
+        "Creator Economy",
+        "Tokenomics"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

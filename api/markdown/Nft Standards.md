@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: BC-0573
+	- source-domain:: bc
 	- preferred-term:: NFT Standards
 	- status:: complete
 	- public-access:: true
@@ -18,3 +19,5 @@
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
 
+### Relationships
+- is-subclass-of:: [[Blockchain]]

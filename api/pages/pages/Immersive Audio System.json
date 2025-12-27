@@ -1,16 +1,18 @@
 {
   "id": "Immersive Audio System",
   "title": "Immersive Audio System",
-  "content": "- ### OntologyBlock\n  id:: Immersive Audio System\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9920\n  - preferred-term:: Immersive Audio System\n  - source-domain:: mv\n  - status:: stub\n\n### Relationships",
+  "content": "- ### OntologyBlock\n  id:: Immersive Audio System\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9920\n  - preferred-term:: Immersive Audio System\n  - source-domain:: mv\n  - owl:class:: mv:ImmersiveAudioSystem\n  - status:: stub\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]",
   "backlinks": [
     "Spatial Audio Scene Description"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "Metaverse"
+  ],
   "ontology": {
     "term_id": "MV-9920",
     "preferred_term": "Immersive Audio System",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/metaverse#ImmersiveAudioSystem",
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
@@ -24,7 +26,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "mv:ImmersiveAudioSystem",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -46,7 +48,6 @@
       "errors": [
         "Missing required property: last-updated",
         "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

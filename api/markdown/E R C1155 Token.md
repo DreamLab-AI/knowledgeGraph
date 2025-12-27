@@ -9,8 +9,12 @@ ERC-1155 Token refers to a multi-token standard offering semi-fungibility where 
   - term-id:: BC-9907
   - preferred-term:: ERC1155 Token
   - source-domain:: bc
+  - owl:class:: bc:Erc1155Token
   - status:: draft
 
 ERC1155 Token refers to a multitoken standard offering semifungibility where tokens represent classes of interchangeable assets. bundles multiple assets (fungible and nonfungible) in one smart contract for efficient gas usage and reduced network congestion.
 
 ERC1155 Token refers to a multitoken standard offering semifungibility where tokens represent classes of interchangeable assets. bundles multiple assets (fungible and nonfungible) in one smart contract for efficient gas usage and reduced network congestion.
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

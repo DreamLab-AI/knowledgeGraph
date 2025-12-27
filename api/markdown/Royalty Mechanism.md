@@ -7,10 +7,12 @@ id:: royalty-mechanism-ontology
   - term-id:: DT-0217
   - preferred-term:: Royalty Mechanism
   - source-domain:: bc
+  - owl:class:: bc:RoyaltyMechanism
   - status:: draft
   - definition:: Automated process ensuring creators receive compensation when their assets are resold or used in secondary markets.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Digital Rights Management]]
 - has-part:: [[Royalty Calculation]]
 - has-part:: [[Payment Distribution]]

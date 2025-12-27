@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0565
+    - source-domain:: bc
+    - owl:class:: bc:SubMillisecondLatency
     - preferred-term:: Sub-Millisecond Latency
     - ontology:: true
     - public-access:: true

@@ -1,25 +1,25 @@
 {
   "id": "Active Learning",
   "title": "Active Learning",
-  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1013\n  - preferred-term:: Active Learning\n  - source-domain:: ai\n  - status:: draft\n\n### Relationships\n- is-subclass-of:: [[Machine Learning]]\n- skos:related:: [[Semi-Supervised Learning]]\n- skos:related:: [[Online Learning]]\n- skos:related:: [[Human-in-the-Loop]]\n- uses:: [[Uncertainty Sampling]]\n- enables:: [[Data-Efficient Learning]]\n- reduces:: [[Labeling Cost]]\n\n### Definition\nActive learning is a machine learning paradigm where the algorithm actively selects which unlabeled examples to query for labels, rather than passively accepting randomly labeled data. By intelligently choosing the most informative examples to label, active learning can achieve high performance with significantly fewer labeled instances, dramatically reducing annotation costs and expert time.\n\n### Core Premise\n- Labeled data is expensive to obtain\n- Not all examples are equally informative\n- Algorithm can query an oracle (human annotator)\n- Strategic selection improves learning efficiency\n- Can achieve same performance with 10-100x less labeled data\n\n### Query Strategies\n**Uncertainty Sampling:**\n- Select examples where model is least confident\n- Variants:\n  - Least confidence\n  - Margin sampling (smallest difference between top 2 predictions)\n  - Entropy (highest prediction entropy)\n\n**Query-by-Committee:**\n- Maintain ensemble of models\n- Select examples with highest disagreement\n- Measures: vote entropy, KL divergence\n\n**Expected Model Change:**\n- Choose examples that would most change model\n- Gradient-based selection\n\n**Expected Error Reduction:**\n- Select examples that minimize expected generalization error\n- Computationally expensive\n\n**Variance Reduction:**\n- Minimize prediction variance on unlabeled pool\n\n**Density-Weighted Methods:**\n- Balance informativeness with representativeness\n- Avoid outliers that are uncertain but not typical\n\n### Learning Scenarios\n**Pool-Based:**\n- Large pool of unlabeled data available\n- Select batch of queries from pool\n- Most common in practice\n\n**Stream-Based:**\n- Examples arrive sequentially\n- Decide whether to query each one\n- Binary decision: query or skip\n\n**Query Synthesis:**\n- Generate artificial examples to query\n- Rarely used (unnatural examples)\n\n### Practical Considerations\n**Batch Mode:**\n- Select multiple queries at once\n- Reduce human wait time\n- Consider diversity to avoid redundancy\n\n**Cold Start Problem:**\n- How to initialize with few labels\n- Random sampling or heuristic selection\n\n**Stopping Criteria:**\n- Budget exhausted\n- Performance plateau\n- Uncertainty threshold\n\n### Applications\n- Medical image annotation (expensive expert time)\n- Named entity recognition in NLP\n- Drug discovery (expensive experiments)\n- Sentiment analysis\n- Document classification\n- Speech recognition\n- Object detection in computer vision\n\n### Benefits\n- Reduces labeling costs by 50-99%\n- Focuses expert effort on hard cases\n- Faster model development\n- Practical for domains with expensive labels\n\n### Challenges\n- Oracle may be imperfect or inconsistent\n- Biased sampling can hurt generalization\n- Computational cost of query selection\n- Assumes oracle can label anything (not always true)\n- May focus on outliers rather than representative examples\n\n### Modern Developments\n- Deep active learning (neural networks)\n- Bayesian active learning\n- Multi-armed bandit formulations\n- Active learning with adversarial robustness\n- Active learning for deep generative models",
+  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1013\n  - preferred-term:: Active Learning\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:ActiveLearning\n\n### Relationships\n- is-subclass-of:: [[Machine Learning]]\n- skos:related:: [[Semi-Supervised Learning]]\n- skos:related:: [[Online Learning]]\n- skos:related:: [[Human-in-the-Loop]]\n- uses:: [[Uncertainty Sampling]]\n- enables:: [[Data-Efficient Learning]]\n- reduces:: [[Labeling Cost]]\n\n### Definition\nActive learning is a machine learning paradigm where the algorithm actively selects which unlabeled examples to query for labels, rather than passively accepting randomly labeled data. By intelligently choosing the most informative examples to label, active learning can achieve high performance with significantly fewer labeled instances, dramatically reducing annotation costs and expert time.\n\n### Core Premise\n- Labeled data is expensive to obtain\n- Not all examples are equally informative\n- Algorithm can query an oracle (human annotator)\n- Strategic selection improves learning efficiency\n- Can achieve same performance with 10-100x less labeled data\n\n### Query Strategies\n**Uncertainty Sampling:**\n- Select examples where model is least confident\n- Variants:\n  - Least confidence\n  - Margin sampling (smallest difference between top 2 predictions)\n  - Entropy (highest prediction entropy)\n\n**Query-by-Committee:**\n- Maintain ensemble of models\n- Select examples with highest disagreement\n- Measures: vote entropy, KL divergence\n\n**Expected Model Change:**\n- Choose examples that would most change model\n- Gradient-based selection\n\n**Expected Error Reduction:**\n- Select examples that minimize expected generalization error\n- Computationally expensive\n\n**Variance Reduction:**\n- Minimize prediction variance on unlabeled pool\n\n**Density-Weighted Methods:**\n- Balance informativeness with representativeness\n- Avoid outliers that are uncertain but not typical\n\n### Learning Scenarios\n**Pool-Based:**\n- Large pool of unlabeled data available\n- Select batch of queries from pool\n- Most common in practice\n\n**Stream-Based:**\n- Examples arrive sequentially\n- Decide whether to query each one\n- Binary decision: query or skip\n\n**Query Synthesis:**\n- Generate artificial examples to query\n- Rarely used (unnatural examples)\n\n### Practical Considerations\n**Batch Mode:**\n- Select multiple queries at once\n- Reduce human wait time\n- Consider diversity to avoid redundancy\n\n**Cold Start Problem:**\n- How to initialize with few labels\n- Random sampling or heuristic selection\n\n**Stopping Criteria:**\n- Budget exhausted\n- Performance plateau\n- Uncertainty threshold\n\n### Applications\n- Medical image annotation (expensive expert time)\n- Named entity recognition in NLP\n- Drug discovery (expensive experiments)\n- Sentiment analysis\n- Document classification\n- Speech recognition\n- Object detection in computer vision\n\n### Benefits\n- Reduces labeling costs by 50-99%\n- Focuses expert effort on hard cases\n- Faster model development\n- Practical for domains with expensive labels\n\n### Challenges\n- Oracle may be imperfect or inconsistent\n- Biased sampling can hurt generalization\n- Computational cost of query selection\n- Assumes oracle can label anything (not always true)\n- May focus on outliers rather than representative examples\n\n### Modern Developments\n- Deep active learning (neural networks)\n- Bayesian active learning\n- Multi-armed bandit formulations\n- Active learning with adversarial robustness\n- Active learning for deep generative models",
   "backlinks": [
     "Semi-Supervised Learning",
     "Data Annotation"
   ],
   "wiki_links": [
+    "Labeling Cost",
+    "Uncertainty Sampling",
+    "Human-in-the-Loop",
+    "Online Learning",
     "Semi-Supervised Learning",
     "Machine Learning",
-    "Data-Efficient Learning",
-    "Human-in-the-Loop",
-    "Uncertainty Sampling",
-    "Online Learning",
-    "Labeling Cost"
+    "Data-Efficient Learning"
   ],
   "ontology": {
     "term_id": "AI-1013",
     "preferred_term": "Active Learning",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/ai#ActiveLearning",
     "source_domain": "ai",
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
@@ -33,7 +33,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "ai:ActiveLearning",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -55,7 +55,6 @@
       "errors": [
         "Missing required property: last-updated",
         "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

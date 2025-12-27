@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-1078
+	- source-domain:: mv
 	- preferred-term:: Trust Score Metric
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: trust-score-metric-relationships
 	  collapsed:: true
 		- is-part-of:: [[Trust Infrastructure]]

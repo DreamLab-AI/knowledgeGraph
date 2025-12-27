@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0101
+	- source-domain:: rb
 	- preferred-term:: rb 0101 performance level
 	- status:: draft
 	- public-access:: true

@@ -5,7 +5,9 @@ id:: rb-0015-agricultural-robot-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0015
-  - preferred-term:: rb 0015 agricultural robot
+  - preferred-term:: Agricultural Robot
   - source-domain:: rb
+  - owl:class:: rb:AgriculturalRobot
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
   - definition:: ### Primary Definition

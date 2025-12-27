@@ -3,15 +3,16 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0011
-	- preferred-term:: rb 0011 underwater robot
+	- preferred-term:: Underwater Robot
 	- source-domain:: rb
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition
 	- maturity:: draft
-	- owl:class:: mv:rb0011underwaterrobot
+	- owl:class:: rb:UnderwaterRobot
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

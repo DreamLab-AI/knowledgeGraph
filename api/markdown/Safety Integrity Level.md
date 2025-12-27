@@ -8,7 +8,8 @@
 	- owl:class:: rb:SafetyIntegrityLevel
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- is-subclass-of:: [[Robotics]]
+	- definition:: Safety Integrity Level (SIL) is a quantitative measure of the risk reduction provided by a safety instrumented function, ranging from SIL 1 to SIL 4, as defined in IEC 61508.
 	- maturity:: draft
 
 ## Academic Context

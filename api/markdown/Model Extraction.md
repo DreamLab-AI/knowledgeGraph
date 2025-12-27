@@ -8,6 +8,7 @@ id:: unknown-ontology
   - preferred-term:: Model Extraction
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:ModelExtraction
   - definition:: An attack where adversaries reconstruct a functionally equivalent or similar machine learning model by systematically querying a target model and training a substitute model on the collected input-output pairs, enabling theft of intellectual property, privacy violations, and subsequent attacks.
 
 ### Relationships

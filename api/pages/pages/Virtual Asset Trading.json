@@ -1,24 +1,28 @@
 {
   "id": "Virtual Asset Trading",
   "title": "Virtual Asset Trading",
-  "content": "- ### OntologyBlock\n  id:: virtual-asset-trading-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10103\n\t- preferred-term:: Virtual Asset Trading\n\t- status:: stub\n\t- owl:class:: mv:VirtualAssetTrading\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: virtual-asset-trading-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-asset-trading-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10103\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Asset Trading\n\t- status:: active\n\t- definition:: The exchange, purchase, and sale of digital assets including cryptocurrencies, NFTs, virtual land, in-game items, and other tokenized value through marketplaces, exchanges, and peer-to-peer transactions.\n\t- owl:class:: mv:VirtualAssetTrading\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Virtual Economy]]\n\t\t- related-to:: [[NFT Marketplace]]\n\t\t- related-to:: [[Cryptocurrency Exchange]]\n\t\t- related-to:: [[Virtual Asset]]\n\t  id:: virtual-asset-trading-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual asset trading encompasses all forms of digital asset exchange in metaverse and blockchain ecosystems. This includes centralized exchanges, decentralized exchanges (DEXs), NFT marketplaces, and peer-to-peer trading platforms.\n- ## Technical Details\n\t- ### Trading Platforms\n\t\t- **Centralized Exchanges (CEX)**: Coinbase, Binance, Kraken\n\t\t- **Decentralized Exchanges (DEX)**: Uniswap, SushiSwap, Curve\n\t\t- **NFT Marketplaces**: OpenSea, Blur, Magic Eden\n\t\t- **Metaverse Markets**: Decentraland, The Sandbox\n\t- ### Trading Mechanisms\n\t\t- Order book matching\n\t\t- Automated Market Makers (AMM)\n\t\t- Auction systems (English, Dutch)\n\t\t- Fixed-price listings\n\t- ### Regulatory Considerations\n\t\t- FATF Travel Rule compliance\n\t\t- AML/KYC requirements\n\t\t- Securities classification\n\t\t- Consumer protection\n- ## Applications\n\t- Cryptocurrency spot trading\n\t- NFT collection trading\n\t- Virtual real estate transactions\n\t- In-game item marketplaces\n\t- Digital art auctions",
   "backlinks": [
     "Virtual Property Right"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Cryptocurrency Exchange",
+    "Virtual Asset",
+    "Virtual Economy",
+    "NFT Marketplace"
   ],
   "ontology": {
     "term_id": "MV-10103",
     "preferred_term": "Virtual Asset Trading",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#VirtualAssetTrading",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The exchange, purchase, and sale of digital assets including cryptocurrencies, NFTs, virtual land, in-game items, and other tokenized value through marketplaces, exchanges, and peer-to-peer transactions.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Virtual Economy"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +51,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "NFT Marketplace",
+        "Cryptocurrency Exchange",
+        "Virtual Asset"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

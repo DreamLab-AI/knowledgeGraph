@@ -1,24 +1,28 @@
 {
   "id": "Unique Content Variation",
   "title": "Unique Content Variation",
-  "content": "- ### OntologyBlock\n  id:: unique-content-variation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10093\n\t- preferred-term:: Unique Content Variation\n\t- status:: stub\n\t- owl:class:: mv:UniqueContentVariation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: unique-content-variation-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: unique-content-variation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10093\n\t- source-domain:: mv\n\t- preferred-term:: Unique Content Variation\n\t- status:: active\n\t- definition:: Procedurally generated or algorithmically created variations of digital content that produce distinct, individualized versions of assets, experiences, or environments, often used in NFTs and generative art to ensure scarcity and uniqueness.\n\t- owl:class:: mv:UniqueContentVariation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Generative Content]]\n\t\t- related-to:: [[NFT]]\n\t\t- related-to:: [[Procedural Generation]]\n\t\t- related-to:: [[Digital Scarcity]]\n\t  id:: unique-content-variation-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Unique content variation enables the creation of one-of-a-kind digital assets through algorithmic combination of traits, properties, or elements. This technique is fundamental to generative NFT collections and procedural content generation in virtual worlds.\n- ## Technical Details\n\t- ### Generation Methods\n\t\t- **Trait Layering**: Combining visual elements (backgrounds, bodies, accessories)\n\t\t- **Parametric Variation**: Mathematical parameter adjustments\n\t\t- **Procedural Generation**: Algorithmic content creation\n\t\t- **AI-Assisted Generation**: Machine learning-based variations\n\t- ### Uniqueness Verification\n\t\t- Hash-based content fingerprinting\n\t\t- On-chain metadata storage\n\t\t- Trait rarity calculations\n\t\t- Collision detection algorithms\n\t- ### Implementation Patterns\n\t\t- Seed-based deterministic generation\n\t\t- Weighted randomization for rarity\n\t\t- Exclusion rules for trait conflicts\n\t\t- Preview and reveal mechanisms\n- ## Applications\n\t- Generative PFP (profile picture) NFT collections\n\t- Procedural metaverse environment generation\n\t- Unique avatar customization systems\n\t- Dynamic in-game item generation\n\t- Personalized digital art creation",
   "backlinks": [
     "Procedural Content Generation"
   ],
   "wiki_links": [
-    "metaverse"
+    "Procedural Generation",
+    "metaverse",
+    "Digital Scarcity",
+    "Generative Content",
+    "NFT"
   ],
   "ontology": {
     "term_id": "MV-10093",
     "preferred_term": "Unique Content Variation",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#UniqueContentVariation",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Procedurally generated or algorithmically created variations of digital content that produce distinct, individualized versions of assets, experiences, or environments, often used in NFTs and generative art to ensure scarcity and uniqueness.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Generative Content"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +51,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "NFT",
+        "Procedural Generation",
+        "Digital Scarcity"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

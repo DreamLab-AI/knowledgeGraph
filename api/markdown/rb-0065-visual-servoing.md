@@ -3,15 +3,16 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0065
-	- preferred-term:: rb 0065 visual servoing
+	- preferred-term:: Visual Servoing
 	- source-domain:: rb
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition
 	- maturity:: draft
-	- owl:class:: mv:rb0065visualservoing
+	- owl:class:: rb:VisualServoing
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

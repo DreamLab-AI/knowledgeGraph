@@ -5,7 +5,9 @@ id:: rb-0019-exoskeleton-robot-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0019
-  - preferred-term:: rb 0019 exoskeleton robot
+  - preferred-term:: Exoskeleton Robot
   - source-domain:: rb
+  - owl:class:: rb:ExoskeletonRobot
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
   - definition:: ### Primary Definition

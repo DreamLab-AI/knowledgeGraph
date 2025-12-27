@@ -1,19 +1,15 @@
 
-### Definition
-id:: underwater-robot-ontology
-
-### Notes
-*Instructional content moved from class definition*
-
 - ### OntologyBlock
-  id:: Underwater Robot
+  id:: underwater-robot-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0011
   - preferred-term:: Underwater Robot
   - source-domain:: rb
+  - owl:class:: rb:UnderwaterRobot
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: An underwater robot is a robotic system designed to operate in aquatic environments, including remotely operated vehicles (ROVs) and autonomous underwater vehicles (AUVs).
 
 ### Industry Adoption and Implementations
 - Commercial and research ROVs now operate across multiple sectors

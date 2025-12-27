@@ -7,5 +7,9 @@ id:: mining-ontology
   - term-id:: DT-0053
   - preferred-term:: Mining
   - source-domain:: bc
+  - owl:class:: bc:Mining
   - status:: complete
   - definition:: Proof-of-work block creation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

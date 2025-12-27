@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0105
+	- source-domain:: rb
 	- preferred-term:: rb 0105 speed and separation monitoring
 	- status:: draft
 	- public-access:: true

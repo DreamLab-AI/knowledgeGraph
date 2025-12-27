@@ -3,10 +3,13 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0084
+	- source-domain:: rb
+	- owl:class:: rb:TemperatureSensor
 	- preferred-term:: Temperature Sensor
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- is-subclass-of:: [[Robotics]]
+	- definition:: A temperature sensor measures thermal conditions in robotic systems for monitoring motor performance, environmental conditions, and safety systems.
 	- maturity:: draft
 	- belongsToDomain:: [[RoboticsDomain]]
 

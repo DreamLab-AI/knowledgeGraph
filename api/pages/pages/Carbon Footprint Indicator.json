@@ -1,24 +1,34 @@
 {
   "id": "Carbon Footprint Indicator",
   "title": "Carbon Footprint Indicator",
-  "content": "- ### OntologyBlock\n  id:: carbon-footprint-indicator-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9810\n\t- preferred-term:: Carbon Footprint Indicator\n\t- status:: stub\n\t- owl:class:: mv:CarbonFootprintIndicator\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: carbon-footprint-indicator-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: carbon-footprint-indicator-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9810\n\t- source-domain:: mv\n\t- preferred-term:: Carbon Footprint Indicator\n\t- definition:: A quantitative environmental performance metric that measures and tracks an organization's greenhouse gas emissions in CO2 equivalent units, serving as a key sustainability KPI for monitoring progress toward emission reduction targets and enabling comparative analysis across operations.\n\t- status:: active\n\t- owl:class:: mv:CarbonFootprintIndicator\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: carbon-footprint-indicator-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Environmental KPI]]\n\t\t- enables:: [[Performance Monitoring]], [[Target Tracking]], [[Benchmarking]]\n\t\t- requires:: [[Emissions Data]], [[Measurement Methodology]], [[Reporting Framework]]\n\t\t- related-to:: [[Carbon Accounting]], [[Sustainability Metrics]], [[ESG Reporting]]\n- ## Technical Details\n\t- **Measurement Scope**:\n\t\t- **Scope 1**: Direct emissions from company facilities and vehicles\n\t\t- **Scope 2**: Indirect emissions from purchased electricity\n\t\t- **Scope 3**: Value chain emissions (typically 80%+ of total)\n\t- **Related KPIs**:\n\t\t- Carbon Intensity (emissions per unit output)\n\t\t- Energy Consumption (70%+ of typical carbon footprint)\n\t\t- Waste Reduction and Recycling Rates\n\t\t- Water Conservation Metrics\n\t\t- Supply Chain Emissions\n\t- **Reporting Standards**: GHG Protocol, ISO 14064, ISSB IFRS S2\n\t- **Unit of Measurement**: Tonnes of CO2 equivalent (tCO2e)\n\t- **Best Practices**: Align KPIs with business model and value chain; balance comprehensiveness with operational simplicity\n- ## Applications\n\t- Corporate sustainability dashboard reporting\n\t- ESG investor disclosures\n\t- Regulatory compliance tracking\n\t- Carbon reduction target monitoring\n\t- Supply chain performance management",
   "backlinks": [
     "Environmental Impact Metric"
   ],
   "wiki_links": [
-    "metaverse"
+    "Benchmarking",
+    "Measurement Methodology",
+    "metaverse",
+    "Carbon Accounting",
+    "ESG Reporting",
+    "Target Tracking",
+    "Reporting Framework",
+    "Performance Monitoring",
+    "Sustainability Metrics",
+    "Emissions Data",
+    "Environmental KPI"
   ],
   "ontology": {
     "term_id": "MV-9810",
     "preferred_term": "Carbon Footprint Indicator",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#CarbonFootprintIndicator",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A quantitative environmental performance metric that measures and tracks an organization's greenhouse gas emissions in CO2 equivalent units, serving as a key sustainability KPI for monitoring progress toward emission reduction targets and enabling comparative analysis across operations.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +40,22 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Environmental KPI"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Emissions Data",
+      "Measurement Methodology",
+      "Reporting Framework"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Performance Monitoring",
+      "Target Tracking",
+      "Benchmarking"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +65,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Carbon Accounting",
+        "Sustainability Metrics",
+        "ESG Reporting"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

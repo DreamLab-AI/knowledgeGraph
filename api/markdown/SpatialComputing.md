@@ -5,11 +5,14 @@ id:: spatialcomputing-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: MV-0006
+  - source-domain:: mv
+  - owl:class:: mv:Spatialcomputing
   - preferred-term:: SpatialComputing
   - status:: active
   - definition:: Computing paradigm that blends digital content with the physical world, enabling natural interaction with 3D data through gestures, voice, and gaze in physical space.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Metaverse]]
 - has-part:: [[Spatial Audio]]
 - has-part:: [[Extended Reality (XR)]]

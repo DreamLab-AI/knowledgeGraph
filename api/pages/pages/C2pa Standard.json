@@ -1,22 +1,32 @@
 {
   "id": "C2pa Standard",
-  "title": "C2pa Standard",
-  "content": "- ### OntologyBlock\n  id:: c2pa-standard-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9802\n\t- preferred-term:: C2pa Standard\n\t- status:: stub\n\t- owl:class:: mv:C2paStandard\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: c2pa-standard-relationships\n\t  collapsed:: true",
+  "title": "C2PA Standard",
+  "content": "- ### OntologyBlock\n  id:: c2pa-standard-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9802\n\t- source-domain:: mv\n\t- preferred-term:: C2PA Standard\n\t- definition:: An open technical standard developed by the Coalition for Content Provenance and Authenticity that establishes cryptographically-signed Content Credentials to certify the origin, history, and authenticity of digital media, functioning like a tamper-evident nutrition label for digital content.\n\t- status:: active\n\t- owl:class:: mv:C2paStandard\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: c2pa-standard-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Technical Standard]]\n\t\t- enables:: [[Content Provenance]], [[Media Verification]], [[Authenticity Certification]]\n\t\t- requires:: [[Cryptographic Signing]], [[Metadata Framework]], [[Trust Model]]\n\t\t- related-to:: [[Digital Signature]], [[Content Authenticity Initiative]], [[Media Integrity]]\n- ## Technical Details\n\t- **Core Framework**:\n\t\t- Provenance Model: Structures and stores provenance information\n\t\t- Trust Model: Verifies content creator identities\n\t\t- Claim Model: Defines claims made about content\n\t\t- Binding Techniques: Cryptographically links provenance to content\n\t- **Content Credentials Include**:\n\t\t- Content ingredients used in production\n\t\t- Date, time, and location of creation\n\t\t- Device or software used in production process\n\t\t- Cryptographic hash and signature for tamper detection\n\t- **Organizational Structure**: Joint Development Foundation under Linux Foundation, founded by Adobe, Arm, Intel, Microsoft, and Truepic\n\t- **Adoption**: 5000+ member organizations as of 2024, including Microsoft, Adobe, BBC, OpenAI, Google, Meta, and Amazon\n\t- **Standardization**: Expected ISO adoption by 2025; W3C examining browser-level integration\n- ## Applications\n\t- Digital media authenticity verification\n\t- AI-generated content identification\n\t- News and journalism provenance tracking\n\t- Disinformation mitigation\n\t- Creative asset rights management",
   "backlinks": [],
   "wiki_links": [
-    "metaverse"
+    "Technical Standard",
+    "Media Verification",
+    "Cryptographic Signing",
+    "metaverse",
+    "Digital Signature",
+    "Media Integrity",
+    "Metadata Framework",
+    "Content Authenticity Initiative",
+    "Trust Model",
+    "Authenticity Certification",
+    "Content Provenance"
   ],
   "ontology": {
     "term_id": "MV-9802",
-    "preferred_term": "C2pa Standard",
+    "preferred_term": "C2PA Standard",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#C2paStandard",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "An open technical standard developed by the Coalition for Content Provenance and Authenticity that establishes cryptographically-signed Content Credentials to certify the origin, history, and authenticity of digital media, functioning like a tamper-evident nutrition label for digital content.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -28,12 +38,22 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Technical Standard"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Cryptographic Signing",
+      "Metadata Framework",
+      "Trust Model"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Content Provenance",
+      "Media Verification",
+      "Authenticity Certification"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -43,15 +63,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Digital Signature",
+        "Content Authenticity Initiative",
+        "Media Integrity"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

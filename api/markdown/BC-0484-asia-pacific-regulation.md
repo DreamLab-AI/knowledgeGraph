@@ -7,6 +7,7 @@ id:: bc-0484-asia-pacific-regulation-ontology
   - term-id:: BC-0484
   - preferred-term:: Asia Pacific Regulation
   - source-domain:: bc
+  - owl:class:: bc:AsiaPacificRegulation
   - status:: stub
   - definition:: A component of the blockchain ecosystem.
 

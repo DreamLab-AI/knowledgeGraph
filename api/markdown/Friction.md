@@ -4,13 +4,14 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: RB-0042
-	- preferred-term:: rb 0042 friction
+	- preferred-term:: Friction
 	- source-domain:: rb
 	- status:: draft
 	- definition:: ### Primary Definition
 **Friction** - Resistance to relative motion between surfaces
 	- maturity:: draft
-	- owl:class:: mv:rb0042friction
+	- owl:class:: rb:Friction
+	- is-subclass-of:: [[Robotics]]
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0040
+	- source-domain:: mv
 	- preferred-term:: HapticFeedback
 	- status:: draft
 	- public-access:: true
@@ -27,3 +28,6 @@
 ;; Data Properties
 (AnnotationAssertion dcterms:identifier :Hapticfeedback "mv-1761742247930"^^xsd:string)
 ```
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

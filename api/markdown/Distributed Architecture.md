@@ -7,10 +7,12 @@ id:: distributed-architecture-ontology
   - term-id:: DT-0178
   - preferred-term:: Distributed Architecture
   - source-domain:: bc
+  - owl:class:: bc:DistributedArchitecture
   - status:: draft
   - definition:: Network design pattern allowing multi-node operation of a shared virtual world with coordinated state management across geographic or logical boundaries.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[System Architecture]]
 - is-part-of:: [[Reference Architecture]]
 - has-part:: [[Consensus Protocol]]

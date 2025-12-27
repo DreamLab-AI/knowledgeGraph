@@ -5,7 +5,9 @@ id:: rb-0067-force-torque-sensor-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0067
-  - preferred-term:: rb 0067 force torque sensor
+  - preferred-term:: Force Torque Sensor
   - source-domain:: rb
+  - owl:class:: rb:ForceTorqueSensor
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
   - definition:: ### Primary Definition

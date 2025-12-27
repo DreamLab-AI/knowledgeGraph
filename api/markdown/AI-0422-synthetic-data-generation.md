@@ -7,7 +7,7 @@
     - ontology:: true
     - term-id:: AI-0422
     - preferred-term:: 0422 Synthetic Data Generation
-    - source-domain:: ai-grounded
+    - source-domain:: ai
     - status:: in-progress
     - version:: 1.0
     - last-updated:: 2025-10-29
@@ -19,14 +19,15 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:SyntheticDataGeneration
+    - owl:class:: ai:SyntheticDataGeneration
     - owl:physicality:: VirtualEntity
     - owl:role:: Process
-    - owl:inferred-class:: aigo:VirtualProcess
+    - owl:inferred-class:: ai:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 
   - #### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
     id:: 0422-synthetic-data-generation-relationships
 
   - #### OWL Axioms

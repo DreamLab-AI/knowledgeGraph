@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0097
+	- source-domain:: rb
 	- preferred-term:: rb 0097 light curtain
 	- status:: draft
 	- public-access:: true

@@ -7,5 +7,9 @@ id:: rb-0030-jacobian-matrix-ontology
   - term-id:: RB-0030
   - preferred-term:: Jacobian Matrix
   - source-domain:: mv
+  - owl:class:: mv:JacobianMatrix
   - status:: draft
   - definition:: ### Primary Definition
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

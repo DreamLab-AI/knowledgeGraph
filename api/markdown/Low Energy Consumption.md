@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0564
+    - source-domain:: bc
+    - owl:class:: bc:LowEnergyConsumption
     - preferred-term:: Low Energy Consumption
     - ontology:: true
     - public-access:: true

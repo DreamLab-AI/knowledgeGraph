@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: MV-0151
+    - source-domain:: mv
+    - owl:class:: mv:VariableImpedanceControl
     - preferred-term:: Variable Impedance Control
     - ontology:: true
     - public-access:: true

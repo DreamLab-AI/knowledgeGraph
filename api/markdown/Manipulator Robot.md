@@ -7,7 +7,10 @@ Manipulator Robot comprises articulated mechanical arms with multiple revolute o
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1051
-  - preferred-term:: Manipulator Robot comprises articulated mechanical arms with multiple...
+  - preferred-term:: Manipulator Robot
+  - owl:class:: rb:ManipulatorRobot
+  - is-subclass-of:: [[Robotics]]
+  - definition:: A manipulator robot comprises articulated mechanical arms with multiple revolute or prismatic joints controlled to position and orient an end-effector for grasping, moving, assembling, or processing workpieces.
   - source-domain:: rb
   - status:: draft
 

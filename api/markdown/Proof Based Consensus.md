@@ -7,4 +7,8 @@ Proof-Based Consensus refers to consensus mechanisms requiring participants to p
   - term-id:: BC-9902
   - preferred-term:: ProofBased Consensus
   - source-domain:: bc
+  - owl:class:: bc:ProofbasedConsensus
   - status:: draft
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

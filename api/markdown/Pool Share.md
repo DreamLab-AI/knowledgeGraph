@@ -7,6 +7,7 @@ id:: unknown-ontology
   - term-id:: MV-0066
   - preferred-term:: Pool Share
   - source-domain:: bc
+  - owl:class:: bc:PoolShare
   - status:: complete
   - definition:: Mining contribution unit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

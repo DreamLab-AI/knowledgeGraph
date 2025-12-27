@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: BC-1000
+	- source-domain:: bc
 	- preferred-term:: NftMinting
 	- status:: complete
 	- public-access:: true

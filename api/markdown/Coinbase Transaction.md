@@ -7,6 +7,7 @@ id:: coinbase-transaction-ontology
   - term-id:: DT-0068
   - preferred-term:: Coinbase Transaction
   - source-domain:: bc
+  - owl:class:: bc:CoinbaseTransaction
   - status:: complete
   - definition:: Block reward transaction within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

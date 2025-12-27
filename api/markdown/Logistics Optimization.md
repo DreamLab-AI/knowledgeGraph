@@ -7,6 +7,7 @@ id:: logistics-optimization-ontology
   - term-id:: BC-0451
   - preferred-term:: Logistics Optimization
   - source-domain:: bc
+  - owl:class:: bc:LogisticsOptimization
   - status:: stub
   - definition:: A component of the blockchain ecosystem.
 

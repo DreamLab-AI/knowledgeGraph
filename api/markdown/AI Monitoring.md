@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: The systematic and ongoing observation, measurement, and analysis of an artificial intelligence system's behaviour, performance, inputs, outputs, and impacts during operational use, employing automated tools and human oversight to detect degradation, anomalies, bias, safety issues, or unintended consequences, enabling timely intervention, maintenance, and continuous improvement whilst ensuring accountability and compliance with governance requirements.
 	- source:: [[ISO/IEC 42001:2023]], [[EU AI Act Article 72]], [[NIST AI RMF]], [[ISO 42005:2024]]
-	- maturity:: dt:Mature
+	- maturity:: mature
 	- #### Relationships
 - is-subclass-of:: [[ai:ModelArchitecture]]
 	  id:: ai-monitoring-relationships

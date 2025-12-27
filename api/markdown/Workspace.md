@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0947
+	- source-domain:: mv
 	- preferred-term:: Workspace
 	- status:: draft
 	- public-access:: true
@@ -102,3 +103,5 @@
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
 
+### Relationships
+- is-subclass-of:: [[Metaverse]]

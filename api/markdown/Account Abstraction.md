@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: BC-9005
+	- source-domain:: bc
 	- preferred-term:: Account Abstraction
 	- status:: draft
 	- public-access:: true
@@ -14,3 +15,6 @@
 	- owl:role:: Process
 	- belongsToDomain:: [[BlockchainDomain]]
 	- isSubclassOf:: [[Ethereum Standard]]
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

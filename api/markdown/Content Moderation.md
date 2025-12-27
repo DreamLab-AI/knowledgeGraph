@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0122
+	- source-domain:: mv
 	- preferred-term:: Content Moderation
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[VirtualSocietyDomain]]
 	- implementedInLayer:: [[Middleware Layer]], [[Application Layer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: content-moderation-relationships
 	  collapsed:: true
 		- is-part-of:: [[Platform Governance System]]

@@ -7,6 +7,7 @@ public:: true
   - term-id:: BC-9927
   - preferred-term:: public:: true
   - source-domain:: bc
+  - owl:class:: bc:PublicTrue
   - status:: draft
 
 ### Custody and Self-Sovereignty
@@ -320,3 +321,6 @@ public:: true
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

@@ -7,6 +7,8 @@ id:: metaverse-stack-ontology
   - term-id:: MV-9965
   - preferred-term:: Metaverse Stack
   - source-domain:: mv
+  - owl:class:: mv:MetaverseStack
   - status:: stub
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]

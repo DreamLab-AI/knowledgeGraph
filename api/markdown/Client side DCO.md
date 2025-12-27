@@ -8,7 +8,11 @@ This ensures relevant and engaging marketing content within...
   - preferred-term:: This ensures relevant and engaging marketing content within...
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:ThisEnsuresRelevantAndEngagingMarketingContentWithin
 
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 ### Local Knowledge Base
 - Each user device maintains a secure, [[Hardware and Edge]] local knowledge base.
 		- This base contains user preferences, interests, and demographic data, organised as a lookup table. Hashes represent product classes or categories of product that are interesting to the user (opt in)

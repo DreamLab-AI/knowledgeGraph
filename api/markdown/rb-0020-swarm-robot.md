@@ -5,11 +5,12 @@ id:: rb-0020-swarm-robot-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0020
-  - preferred-term:: rb 0020 swarm robot
+  - preferred-term:: Swarm Robot
   - source-domain:: rb
+  - owl:class:: rb:SwarmRobot
   - status:: draft
   - definition:: ### Primary Definition
 
 ### Relationships
-- is-subclass-of:: [[rb-0001-robot]]
+- is-subclass-of:: [[Robotics]]
 - belongsToDomain:: [[RoboticsDomain]]

@@ -1,24 +1,31 @@
 {
   "id": "Awareness",
   "title": "Awareness",
-  "content": "- ### OntologyBlock\n  id:: awareness-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9793\n\t- preferred-term:: Awareness\n\t- status:: stub\n\t- owl:class:: mv:Awareness\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: awareness-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: awareness-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9793\n\t- source-domain:: mv\n\t- preferred-term:: Awareness\n\t- status:: active\n\t- definition:: Awareness in metaverse contexts refers to systems and mechanisms that provide users with perception of other participants, environmental changes, and relevant contextual information in shared virtual spaces, supporting presence, social interaction, and collaborative activities through visual, audio, and haptic cues.\n\t- owl:class:: mv:Awareness\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Social Computing]]\n\t- enables:: [[Collaborative Presence]], [[Social Interaction]], [[Situational Understanding]]\n\t- requires:: [[Presence Detection]], [[State Synchronization]], [[Notification Systems]]\n\t- #### Relationships\n\t  id:: awareness-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey awareness types include:\n- **Presence Awareness**: Knowledge of who is online and available in virtual spaces\n- **Spatial Awareness**: Understanding of user positions and orientations in 3D environments\n- **Activity Awareness**: Visibility into what other users are doing or have done\n- **Contextual Awareness**: Environmental state, time, and relevant situational information\n\n### Implementation Mechanisms\n- **Visual Indicators**: Avatars, name tags, status icons, and activity animations\n- **Audio Cues**: Spatial audio indicating direction and proximity of participants\n- **Notification Systems**: Alerts for arrivals, departures, and significant events\n- **Peripheral Vision**: Subtle indicators in UI margins for non-intrusive awareness\n\n### CSCW Foundations\nAwareness concepts derive from Computer-Supported Cooperative Work research, adapted for 3D immersive environments to support natural social interactions and effective collaboration.",
   "backlinks": [
     "Technology Adoption"
   ],
   "wiki_links": [
-    "metaverse"
+    "Collaborative Presence",
+    "Presence Detection",
+    "metaverse",
+    "State Synchronization",
+    "Social Computing",
+    "Notification Systems",
+    "Social Interaction",
+    "Situational Understanding"
   ],
   "ontology": {
     "term_id": "MV-9793",
     "preferred_term": "Awareness",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#Awareness",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Awareness in metaverse contexts refers to systems and mechanisms that provide users with perception of other participants, environmental changes, and relevant contextual information in shared virtual spaces, supporting presence, social interaction, and collaborative activities through visual, audio, and haptic cues.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -48,9 +55,7 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

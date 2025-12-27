@@ -1,10 +1,11 @@
-Tracked Robot
-
 - ### OntologyBlock
-  id:: Tracked Robot
+  id:: tracked-robot-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1016
   - preferred-term:: Tracked Robot
   - source-domain:: rb
+  - owl:class:: rb:TrackedRobot
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
+  - definition:: A tracked robot uses continuous track locomotion for mobility over rough or soft terrain where wheeled robots would struggle.

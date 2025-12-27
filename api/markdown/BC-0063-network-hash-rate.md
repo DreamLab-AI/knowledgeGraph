@@ -7,6 +7,7 @@ id:: network-hash-rate-ontology
   - term-id:: DT-0063
   - preferred-term:: Network Hash Rate
   - source-domain:: bc
+  - owl:class:: bc:NetworkHashRate
   - status:: complete
   - definition:: Total computational power within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

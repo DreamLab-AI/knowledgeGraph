@@ -7,4 +7,8 @@ Node-Independent Validation PBFT refers to an improved pbft algorithm based on n
   - term-id:: BC-9926
   - preferred-term:: NodeIndependent Validation PBFT
   - source-domain:: bc
+  - owl:class:: bc:NodeindependentValidationPbft
   - status:: draft
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

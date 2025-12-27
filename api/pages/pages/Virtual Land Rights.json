@@ -1,24 +1,28 @@
 {
   "id": "Virtual Land Rights",
   "title": "Virtual Land Rights",
-  "content": "- ### OntologyBlock\n  id:: virtual-land-rights-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10128\n\t- preferred-term:: Virtual Land Rights\n\t- status:: stub\n\t- owl:class:: mv:VirtualLandRights\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: virtual-land-rights-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-land-rights-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10128\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Land Rights\n\t- status:: active\n\t- definition:: Blockchain-based ownership and property rights for digital land parcels in metaverse platforms, represented as NFTs that serve as digital deeds providing proof of ownership, development rights, and transferability of virtual real estate assets.\n\t- owl:class:: mv:VirtualLandRights\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Digital Property Rights]]\n\t\t- related-to:: [[NFT]]\n\t\t- related-to:: [[Virtual Real Estate]]\n\t\t- related-to:: [[Blockchain]]\n\t  id:: virtual-land-rights-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual land rights are NFT-based ownership claims to metaverse real estate. Land ownership is represented by unique blockchain tokens acting as digital deeds. Decentraland has 90,601 fixed land parcels while The Sandbox has 166,464 LAND tokens. Major brands including HSBC, Samsung, and Nike have invested in virtual properties. Market growth is predicted at 37.73% CAGR from 2024 to 2030.\n- ## Technical Details\n\t- ### Ownership Mechanisms\n\t\t- **NFT Deeds**: Unique tokens proving ownership on blockchain\n\t\t- **Smart Contracts**: Automated transfer and rights management\n\t\t- **On-Chain Records**: Immutable ownership history\n\t\t- **Wallet Storage**: Secure custody of land NFTs\n\t- ### Rights Included\n\t\t- Development and building rights\n\t\t- Rental and lease agreements\n\t\t- Commercial usage permissions\n\t\t- Resale and transfer rights\n\t- ### Major Platforms\n\t\t- Decentraland (MANA/LAND tokens)\n\t\t- The Sandbox (SAND/LAND tokens)\n\t\t- Otherside (Otherdeed NFTs)\n\t\t- Somnium Space, Cryptovoxels\n- ## Applications\n\t- Virtual real estate investment\n\t- Commercial space development\n\t- Event venue creation\n\t- Brand flagship store locations\n\t- Gaming and entertainment destinations",
   "backlinks": [
     "Virtual Property Right"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Blockchain",
+    "Virtual Real Estate",
+    "NFT",
+    "Digital Property Rights"
   ],
   "ontology": {
     "term_id": "MV-10128",
     "preferred_term": "Virtual Land Rights",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#VirtualLandRights",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Blockchain-based ownership and property rights for digital land parcels in metaverse platforms, represented as NFTs that serve as digital deeds providing proof of ownership, development rights, and transferability of virtual real estate assets.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Digital Property Rights"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +51,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "NFT",
+        "Virtual Real Estate",
+        "Blockchain"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

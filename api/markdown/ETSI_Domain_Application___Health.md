@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0337
+	- source-domain:: mv
 	- preferred-term:: ETSI Domain Application + Health
 	- status:: draft
 	- public-access:: true

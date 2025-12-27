@@ -5,7 +5,9 @@ id:: rb-0050-path-planning-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0050
-  - preferred-term:: rb 0050 path planning
+  - preferred-term:: Path Planning
   - source-domain:: rb
+  - owl:class:: rb:PathPlanning
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
   - definition:: ### Primary Definition

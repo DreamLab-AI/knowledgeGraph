@@ -8,6 +8,7 @@ id:: machine-learning-ontology
   - preferred-term:: Machine Learning
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:MachineLearning
 
 ### Relationships
 - enables:: [[Computer Vision]]

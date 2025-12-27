@@ -7,6 +7,7 @@ id:: bc-0111-deflationary-token-ontology
   - term-id:: MV-0897
   - preferred-term:: BC 0111 deflationary token
   - source-domain:: bc
+  - owl:class:: bc:Bc0111DeflationaryToken
   - status:: draft
   - definition:: ### Primary Definition
 

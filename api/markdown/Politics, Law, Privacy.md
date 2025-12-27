@@ -9,6 +9,7 @@ For more detailed information on her research and publications, you can visit he
   - term-id:: BC-9979
   - preferred-term:: For more detailed information on her research and...
   - source-domain:: bc
+  - owl:class:: bc:ForMoreDetailedInformationOnHerResearchAnd
   - status:: draft
 
 For more detailed information on her research and publications, you can visit her [Stanford Law School profile](https://law.stanford.edu/margarethagan/) and the [Legal Design Lab website](https://justiceinnovation.law.stanford.edu/americanacademyeventonaiequitableaccesstolegalservices/). Her work continues to push the boundaries of how AI can be leveraged to enhance the accessibility and effectiveness of legal services.

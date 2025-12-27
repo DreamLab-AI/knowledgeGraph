@@ -7,6 +7,7 @@ id:: bc-0108-base-fee-ontology
   - term-id:: MV-0108
   - preferred-term:: BC 0108 base fee
   - source-domain:: bc
+  - owl:class:: bc:Bc0108BaseFee
   - status:: draft
   - definition:: ### Primary Definition
 

@@ -8,6 +8,7 @@ id:: unknown-ontology
   - preferred-term:: Gradient Descent
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:GradientDescent
   - definition:: ### Primary Definition
 
 ### Relationships

@@ -3,15 +3,16 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0437
+	- source-domain:: ai
 	- preferred-term:: Federated Edge Learning (AI-0437)
 	- status:: in
 	- public-access:: true
 	- definition:: Federated Edge Learning combines distributed machine learning with edge computing, enabling collaborative model training across decentralized edge devices while keeping training data locally on-device. This paradigm addresses privacy concerns by transmitting only model updates (gradients) rather than raw sensitive data to aggregation servers. Participants train local models on their devices using private datasets, then securely aggregate updates into a global model that improves collectively. Federated Edge Learning maintains data sovereignty, allowing healthcare systems, financial institutions, and autonomous fleets to benefit from collaborative intelligence without compromising individual privacy. The architecture comprises edge clients performing local training with limited computational resources, aggregation servers coordinating model updates, and secure aggregation protocols ensuring gradient confidentiality. Communication efficiency is critical; techniques like gradient compression, selective client participation, and quantization reduce network overhead by 10x or more. The approach supports differential privacy mechanisms, adding calibrated noise to gradients for formal privacy guarantees. Federated Edge Learning handles statistical heterogeneity where edge devices have non-identical data distributions, requiring robust aggregation algorithms. Applications include keyboard prediction on mobile devices, vehicular perception across connected cars, and enterprise analytics on sensitive data. Standards like IEEE P3652.1 specify federated learning baselines. This paradigm fundamentally shifts ML from centralized cloud processing to privacy-preserving distributed intelligence at network edges.
 	- maturity:: mature
-	- owl:class:: aigo:FederatedEdgeLearning
+	- owl:class:: ai:FederatedEdgeLearning
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
-	- owl:inferred-class:: aigo:VirtualProcess
+	- owl:inferred-class:: ai:VirtualProcess
 	- belongsToDomain:: [[AIEthicsDomain]]
 	- implementedInLayer:: [[ConceptualLayer]]
 	- #### Relationships
@@ -61,10 +62,10 @@ Federated Edge Learning (AI-0437) refers to federated edge learning combines dis
 - **Maturity**: mature
 - **Source**:
 - **Authority Score**: 0.95
-- **Owl:Class**: aigo:FederatedEdgeLearning
+- **Owl:Class**: ai:FederatedEdgeLearning
 - **Owl:Physicality**: VirtualEntity
 - **Owl:Role**: Process
-- **Owl:Inferred Class**: aigo:VirtualProcess
+- **Owl:Inferred Class**: ai:VirtualProcess
 - **Belongstodomain**: [[AIEthicsDomain]]
 - **Implementedinlayer**: [[ConceptualLayer]]
 

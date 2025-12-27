@@ -5,6 +5,8 @@ id:: consensusmechanism-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: MV-0007
+  - source-domain:: mv
+  - owl:class:: mv:Consensusmechanism
   - preferred-term:: ConsensusMechanism
   - status:: deprecated
   - definition:: A component of the metaverse ecosystem.

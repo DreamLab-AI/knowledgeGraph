@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0317
+	- source-domain:: mv
 	- preferred-term:: Open World
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[CreativeMediaDomain]]
 	- implementedInLayer:: [[ApplicationLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: open-world-relationships
 	  collapsed:: true
 		- has-part:: [[Virtual Environment]]

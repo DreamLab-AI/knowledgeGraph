@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0005
+	- source-domain:: mv
 	- preferred-term:: Virtual World Traversal
 	- status:: complete
 	- public-access:: true
@@ -18,3 +19,5 @@
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
 
+### Relationships
+- is-subclass-of:: [[Metaverse]]

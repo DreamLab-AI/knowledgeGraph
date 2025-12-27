@@ -8,3 +8,8 @@ AI-0387-ai-governance-framework
   - preferred-term:: Ai 0387 Ai Governance Framework
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0387AiGovernanceFramework
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

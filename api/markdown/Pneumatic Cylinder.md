@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-1032
+    - source-domain:: mv
+    - owl:class:: mv:PneumaticCylinder
     - preferred-term:: Pneumatic Cylinder
     - ontology:: true
     - public-access:: true

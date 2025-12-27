@@ -1,24 +1,28 @@
 {
   "id": "Virtual City Model",
   "title": "Virtual City Model",
-  "content": "- ### OntologyBlock\n  id:: virtual-city-model-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10106\n\t- preferred-term:: Virtual City Model\n\t- status:: stub\n\t- owl:class:: mv:VirtualCityModel\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: virtual-city-model-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-city-model-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10106\n\t- source-domain:: mv\n\t- preferred-term:: Virtual City Model\n\t- status:: active\n\t- definition:: A digital representation of an urban environment including buildings, infrastructure, terrain, and dynamic elements, used for urban planning, simulation, gaming, and metaverse world-building based on real or imagined cities.\n\t- owl:class:: mv:VirtualCityModel\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Digital Twin]]\n\t\t- related-to:: [[3D Models]]\n\t\t- related-to:: [[Urban Planning]]\n\t\t- related-to:: [[GIS]]\n\t  id:: virtual-city-model-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual city models create detailed digital representations of urban environments for various applications from city planning to gaming. These models can represent real cities as digital twins or serve as the foundation for metaverse virtual worlds.\n- ## Technical Details\n\t- ### Model Components\n\t\t- **Building Geometry**: LOD (Level of Detail) 1-4 representations\n\t\t- **Infrastructure**: Roads, utilities, transportation\n\t\t- **Terrain**: Elevation, land cover, water features\n\t\t- **Dynamic Elements**: Traffic, pedestrians, weather\n\t- ### Data Standards\n\t\t- **CityGML**: OGC standard for 3D city models\n\t\t- **3D Tiles**: Cesium streaming format\n\t\t- **OpenStreetMap**: Crowd-sourced geographic data\n\t\t- **BIM/IFC**: Building Information Modeling\n\t- ### Creation Methods\n\t\t- LiDAR and photogrammetry capture\n\t\t- Procedural generation algorithms\n\t\t- Manual 3D modeling\n\t\t- AI-assisted reconstruction\n- ## Applications\n\t- Urban planning and simulation\n\t- Smart city visualization\n\t- Metaverse world-building\n\t- Gaming environment creation\n\t- Emergency response planning",
   "backlinks": [
     "Digital Twin of Society (DToS)"
   ],
   "wiki_links": [
-    "metaverse"
+    "3D Models",
+    "GIS",
+    "metaverse",
+    "Digital Twin",
+    "Urban Planning"
   ],
   "ontology": {
     "term_id": "MV-10106",
     "preferred_term": "Virtual City Model",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#VirtualCityModel",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A digital representation of an urban environment including buildings, infrastructure, terrain, and dynamic elements, used for urban planning, simulation, gaming, and metaverse world-building based on real or imagined cities.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Digital Twin"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +51,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "3D Models",
+        "Urban Planning",
+        "GIS"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

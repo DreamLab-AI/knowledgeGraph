@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0274
+	- source-domain:: mv
 	- preferred-term:: Helpfulness
 	- status:: draft
 	- public-access:: true

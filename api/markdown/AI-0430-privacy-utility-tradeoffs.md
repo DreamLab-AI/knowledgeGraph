@@ -8,3 +8,8 @@ AI-0430-privacy-utility-tradeoffs
   - preferred-term:: Ai 0430 Privacy Utility Tradeoffs
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0430PrivacyUtilityTradeoffs
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

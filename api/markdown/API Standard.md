@@ -7,6 +7,7 @@ id:: api-standard-ontology
   - term-id:: DT-1016
   - preferred-term:: API Standard
   - source-domain:: mv
+  - owl:class:: mv:ApiStandard
   - status:: draft
   - definition:: Specification defining how independent software components communicate within metaverse systems, establishing protocols and data formats for interoperability.
 

@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0827
+    - source-domain:: ai
+    - owl:class:: ai:SelfImprovement
     - preferred-term:: Self Improvement
     - ontology:: true
     - public-access:: true

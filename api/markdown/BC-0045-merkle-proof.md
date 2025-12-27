@@ -7,6 +7,7 @@ id:: merkle-proof-ontology
   - term-id:: DT-0977
   - preferred-term:: Merkle Proof
   - source-domain:: bc
+  - owl:class:: bc:MerkleProof
   - status:: complete
   - definition:: Cryptographic inclusion proof within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

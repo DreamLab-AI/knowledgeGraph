@@ -8,6 +8,7 @@ id:: unknown-ontology
   - preferred-term:: Feedforward Neural Network
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:FeedforwardNeuralNetwork
   - definition:: ### Primary Definition
 
 ### Relationships

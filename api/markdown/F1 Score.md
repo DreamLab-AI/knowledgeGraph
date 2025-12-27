@@ -6,6 +6,7 @@
 	- preferred-term:: F1 Score
 	- source-domain:: ai
 	- status:: draft
+  - owl:class:: ai:F1Score
     - public-access:: true
 
 

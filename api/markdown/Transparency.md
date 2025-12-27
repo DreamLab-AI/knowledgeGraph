@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0937
+	- source-domain:: mv
 	- preferred-term:: Transparency
 	- status:: draft
 	- public-access:: true

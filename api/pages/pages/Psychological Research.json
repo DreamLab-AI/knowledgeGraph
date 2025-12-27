@@ -1,24 +1,29 @@
 {
   "id": "Psychological Research",
   "title": "Psychological Research",
-  "content": "- ### OntologyBlock\n  id:: psychological-research-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10015\n\t- preferred-term:: Psychological Research\n\t- status:: stub\n\t- owl:class:: mv:PsychologicalResearch\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: psychological-research-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: psychological-research-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10015\n\t- source-domain:: mv\n\t- preferred-term:: Psychological Research\n\t- status:: active\n\t- definition:: Scientific investigation of mental health applications within virtual reality and metaverse environments, examining therapeutic benefits for conditions including PTSD, anxiety, and depression, while assessing potential risks such as addiction and attention impairment.\n\t- owl:class:: mv:PsychologicalResearch\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: psychological-research-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Research Methods]]\n\t\t- related-to:: [[VR Therapy]]\n\t\t- related-to:: [[Mental Health]]\n\t\t- related-to:: [[Digital Therapeutics]]\n\t\t- enables:: [[Evidence Based VR Treatment]]\n\t- #### Therapeutic Applications\n\t  collapsed:: true\n\t\t- PTSD treatment through controlled exposure\n\t\t- Anxiety reduction in virtual environments\n\t\t- Depression intervention with VR\n\t\t- Trauma recovery in safe settings\n\t\t- Oxford VR self-confidence therapy research\n\t- #### Challenges\n\t  collapsed:: true\n\t\t- VR headset affordability and access\n\t\t- Potential for addictive behaviours\n\t\t- Attention impairment in adolescents\n\t\t- Data privacy and algorithmic bias concerns\n\t\t- Digital inequality in mental health access",
   "backlinks": [
     "Metaverse Psychology Profile"
   ],
   "wiki_links": [
-    "metaverse"
+    "Mental Health",
+    "metaverse",
+    "Evidence Based VR Treatment",
+    "VR Therapy",
+    "Research Methods",
+    "Digital Therapeutics"
   ],
   "ontology": {
     "term_id": "MV-10015",
     "preferred_term": "Psychological Research",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#PsychologicalResearch",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Scientific investigation of mental health applications within virtual reality and metaverse environments, examining therapeutic benefits for conditions including PTSD, anxiety, and depression, while assessing potential risks such as addiction and attention impairment.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Research Methods"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Evidence Based VR Treatment"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "VR Therapy",
+        "Mental Health",
+        "Digital Therapeutics"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

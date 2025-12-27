@@ -7,6 +7,7 @@ id:: bc-0499-green-blockchain-initiatives-ontology
   - term-id:: BC-0499
   - preferred-term:: Green Blockchain Initiatives
   - source-domain:: bc
+  - owl:class:: bc:GreenBlockchainInitiatives
   - status:: stub
   - definition:: A component of the blockchain ecosystem.
 

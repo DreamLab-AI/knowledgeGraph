@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0098
+	- source-domain:: rb
 	- preferred-term:: rb 0098 safety laser scanner
 	- status:: draft
 	- public-access:: true

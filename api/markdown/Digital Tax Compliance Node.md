@@ -7,10 +7,12 @@ id:: digital-tax-compliance-node-ontology
   - term-id:: DT-0275
   - preferred-term:: Digital Tax Compliance Node
   - source-domain:: bc
+  - owl:class:: bc:DigitalTaxComplianceNode
   - status:: draft
   - definition:: An automated virtual system that calculates, reports, and ensures tax compliance for digital transactions across multiple jurisdictions in real-time.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Virtual Economy Infrastructure]]
 - has-part:: [[Transaction Monitor]]
 - has-part:: [[Jurisdiction Mapping Service]]

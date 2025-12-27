@@ -1,21 +1,21 @@
 {
   "id": "Threaded Messaging",
   "title": "Threaded Messaging",
-  "content": "- ### OntologyBlock\n  id:: TC-9001\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-9001\n\t- preferred-term:: Threaded Messaging\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Asynchronous communication pattern where messages are organized into conversation threads, enabling contextual discussions and reducing notification overload.\n\t- source:: [[Collaboration Tools]], [[Slack]], [[Discord]]\n\t- maturity:: mature\n\t- owl:class:: tc:ThreadedMessaging\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[TelecollaborationDomain]]\n\t- isSubclassOf:: [[Asynchronous Collaboration]]",
+  "content": "- ### OntologyBlock\n  id:: TC-9001\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-9001\n\t- source-domain:: tc\n\t- preferred-term:: Threaded Messaging\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Asynchronous communication pattern where messages are organized into conversation threads, enabling contextual discussions and reducing notification overload.\n\t- source:: [[Collaboration Tools]], [[Slack]], [[Discord]]\n\t- maturity:: mature\n\t- owl:class:: tc:ThreadedMessaging\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[TelecollaborationDomain]]\n\t- isSubclassOf:: [[Asynchronous Collaboration]]",
   "backlinks": [],
   "wiki_links": [
-    "Discord",
-    "Collaboration Tools",
     "Slack",
+    "Asynchronous Collaboration",
     "TelecollaborationDomain",
-    "Asynchronous Collaboration"
+    "Collaboration Tools",
+    "Discord"
   ],
   "ontology": {
     "term_id": "TC-9001",
     "preferred_term": "Threaded Messaging",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/telecollaboration#ThreadedMessaging",
-    "source_domain": null,
+    "source_domain": "tc",
     "domain": "tc",
     "domain_full_name": "Telecollaboration",
     "definition": "Asynchronous communication pattern where messages are organized into conversation threads, enabling contextual discussions and reducing notification overload.",
@@ -54,7 +54,6 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
         "Missing required property: is-subclass-of (at least one parent class)"
       ]

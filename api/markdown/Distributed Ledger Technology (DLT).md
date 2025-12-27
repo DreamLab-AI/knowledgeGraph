@@ -7,10 +7,12 @@ id:: distributed-ledger-technology-dlt-ontology
   - term-id:: DT-0278
   - preferred-term:: Distributed Ledger Technology (DLT)
   - source-domain:: bc
+  - owl:class:: bc:DistributedLedgerTechnologyDlt
   - status:: draft
   - definition:: Distributed database infrastructure using cryptographic consensus mechanisms to maintain immutable, tamper-resistant records across decentralized peer-to-peer networks without centralized authority.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - has-part:: [[Consensus Protocol]]
 - has-part:: [[Block Structure]]
 - has-part:: [[Transaction Pool]]

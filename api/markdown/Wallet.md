@@ -7,6 +7,7 @@ id:: wallet-ontology
   - term-id:: BC-0595
   - preferred-term:: Wallet
   - source-domain:: bc
+  - owl:class:: bc:Wallet
   - status:: draft
   - definition:: A component of the metaverse ecosystem.
 

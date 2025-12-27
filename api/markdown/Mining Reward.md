@@ -7,9 +7,11 @@ id:: mining-reward-ontology
   - term-id:: DT-1058
   - preferred-term:: Mining Reward
   - source-domain:: bc
+  - owl:class:: bc:MiningReward
   - status:: complete
   - definition:: Block creation compensation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - uses-data-structure:: [[Blockchain Entity]]
 - implements:: [[ConsensusProtocol]]

@@ -8,6 +8,7 @@ AI-0435-neural-network-quantization
   - preferred-term:: Ai 0435 Neural Network Quantization
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0435NeuralNetworkQuantization
 
 ### Relationships
 - is-subclass-of:: [[ai:ModelArchitecture]]

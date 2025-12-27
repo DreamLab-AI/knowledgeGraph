@@ -7,6 +7,7 @@ id:: etsi_domain_security_&_privacy-ontology
   - term-id:: MV-9724
   - preferred-term:: id:: etsi_domain_security_&_privacyontology
   - source-domain:: mv
+  - owl:class:: mv:IdEtsiDomainSecurityPrivacyontology
   - status:: draft
 
 ### Relationships

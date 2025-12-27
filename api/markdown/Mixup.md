@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0287
+	- source-domain:: mv
 	- preferred-term:: Mixup
 	- status:: draft
 	- public-access:: true

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0878
+	- source-domain:: mv
 	- preferred-term:: Stiffness
 	- status:: draft
 	- public-access:: true
@@ -28,3 +29,5 @@
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
 
+### Relationships
+- is-subclass-of:: [[Metaverse]]

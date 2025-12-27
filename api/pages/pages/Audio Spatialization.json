@@ -1,24 +1,31 @@
 {
   "id": "Audio Spatialization",
   "title": "Audio Spatialization",
-  "content": "- ### OntologyBlock\n  id:: audio-spatialization-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9784\n\t- preferred-term:: Audio Spatialization\n\t- status:: stub\n\t- owl:class:: mv:AudioSpatialization\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: audio-spatialization-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: audio-spatialization-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9784\n\t- source-domain:: mv\n\t- preferred-term:: Audio Spatialization\n\t- status:: active\n\t- definition:: Audio Spatialization is the technique of positioning sounds in three-dimensional space using Head-Related Transfer Functions (HRTFs), binaural processing, and ambisonics to create realistic 3D audio experiences that respond to listener position and head movement in virtual reality and immersive applications.\n\t- owl:class:: mv:AudioSpatialization\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Spatial Audio Technology]]\n\t- enables:: [[3D Sound Perception]], [[Immersive Audio]], [[Sound Localization]]\n\t- requires:: [[HRTF Filters]], [[Binaural Rendering]], [[Head Tracking]]\n\t- #### Relationships\n\t  id:: audio-spatialization-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **HRTF (Head-Related Transfer Functions)**: Filters encoding how sound reaches ears based on head/ear geometry and source direction\n- **Binaural Audio**: Two-channel synthesis enabling 3D sound perception through headphones\n- **Interaural Differences**: ILD (level) and ITD (time) cues used by brain for localization\n- **Ambisonics**: 3D audio rendering treating HRTFs as virtual loudspeakers around the head\n\n### HRTF Capture\nMost accurate method involves placing microphones in ears, playing sounds from all directions in anechoic chamber, and computing transfer functions from recorded differences.\n\n### Standards\nAES69-2022 (SOFA 2.1) provides standardized file format for exchanging spatial acoustic data.\n\n### Applications\nVR/AR immersion, gaming, music production, and communication technologies benefit from precise spatial audio corresponding to real-world sound localization.",
   "backlinks": [
     "Immersion"
   ],
   "wiki_links": [
-    "metaverse"
+    "Spatial Audio Technology",
+    "metaverse",
+    "Head Tracking",
+    "Immersive Audio",
+    "Binaural Rendering",
+    "HRTF Filters",
+    "Sound Localization",
+    "3D Sound Perception"
   ],
   "ontology": {
     "term_id": "MV-9784",
     "preferred_term": "Audio Spatialization",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#AudioSpatialization",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Audio Spatialization is the technique of positioning sounds in three-dimensional space using Head-Related Transfer Functions (HRTFs), binaural processing, and ambisonics to create realistic 3D audio experiences that respond to listener position and head movement in virtual reality and immersive applications.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -48,9 +55,7 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

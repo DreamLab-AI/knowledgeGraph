@@ -7,6 +7,7 @@ Avatar Wearables constitute digital fashion items, accessories, cosmetic enhance
   - term-id:: MV-9704
   - preferred-term:: Avatar Wearables constitute digital fashion items, accessories, cosmetic...
   - source-domain:: mv
+  - owl:class:: mv:AvatarWearablesConstituteDigitalFashionItemsAccessoriesCosmetic
   - status:: draft
 
 ### Definition
@@ -46,3 +47,6 @@ Avatar Wearables constitute digital fashion items, accessories, cosmetic enhance
 - **Owl:Class**: mv:AvatarWearable
 - **Belongstodomain**: [[Metaverse]]
 - **Is Subclass Of**: [[Digital Asset]]
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

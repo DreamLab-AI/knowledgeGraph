@@ -14,6 +14,7 @@
     - term-id:: RB-0004
     - preferred-term:: Humanoid Robot
     - source-domain:: rb
+    - is-subclass-of:: [[Robotics]]
     - status:: complete
     - version:: 1.0.0
     - last-updated:: 2025-10-28

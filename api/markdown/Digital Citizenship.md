@@ -2,6 +2,7 @@
 id:: digital-citizenship-ontology
 	- ontology:: true
 	- term-id:: DT-0291
+	- source-domain:: mv
 	- preferred-term:: Digital Citizenship
 	- status:: draft
 	- public-access:: true
@@ -16,6 +17,7 @@ id:: digital-citizenship-ontology
 	- belongsToDomain:: [[VirtualSocietyDomain]], [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[ApplicationLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: digital-citizenship-relationships
 		- is-part-of:: [[Virtual Society]]
 		- is-part-of:: [[Digital Constitution]]

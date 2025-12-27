@@ -6,6 +6,7 @@
 	- preferred-term:: AI Deployment
 	- source-domain:: ai
 	- status:: draft
+  - owl:class:: ai:AiDeployment
 	- public-access:: true
 	- definition:: The phase of the AI lifecycle in which a developed and validated artificial intelligence system is integrated into operational environments, made available to end users, and transitioned from development to production use, encompassing activities such as system integration, infrastructure provisioning, release management, user training, documentation delivery, and the establishment of operational support structures to ensure reliable, safe, and effective system functioning in real-world conditions.
 	- source:: [[ISO/IEC 42001:2023]], [[EU AI Act Article 9]], [[MLOps Standards]]

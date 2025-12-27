@@ -1,24 +1,29 @@
 {
   "id": "Network Standards",
   "title": "Network Standards",
-  "content": "- ### OntologyBlock\n  id:: network-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9983\n\t- preferred-term:: Network Standards\n\t- status:: stub\n\t- owl:class:: mv:NetworkStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: network-standards-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: network-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9983\n\t- source-domain:: mv\n\t- preferred-term:: Network Standards\n\t- status:: active\n\t- definition:: Technical specifications and protocols developed by standards bodies like IEEE, IETF, ITU, and ISO that define how network devices communicate, ensuring interoperability, security, and performance across telecommunications and internet infrastructure.\n\t- owl:class:: mv:NetworkStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: network-standards-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Technical Standards]]\n\t\t- related-to:: [[Network Protocols]]\n\t\t- related-to:: [[Telecommunications]]\n\t\t- related-to:: [[Internet Architecture]]\n\t\t- enables:: [[Network Interoperability]]\n\t- #### Standards Organizations\n\t  collapsed:: true\n\t\t- IEEE: Develops 802.x standards for LAN, MAN, and wireless networks\n\t\t- IETF: Manages Internet protocol suite (TCP/IP), QUIC, TLS, SRv6\n\t\t- ITU: International telecommunications standards\n\t\t- ISO: International standards including OSI model\n\t- #### Key Standards\n\t  collapsed:: true\n\t\t- IEEE 802.3: Ethernet local and metropolitan area networks\n\t\t- IEEE 802.11: Wi-Fi wireless communication standards\n\t\t- IEEE 802.1: LAN/MAN architecture and Time Sensitive Networking\n\t\t- IETF RFCs: Deterministic Networking (DetNet), BGP routing\n\t\t- 2024 developments in quantum-hybrid internet protocols",
   "backlinks": [
     "Networking Layer"
   ],
   "wiki_links": [
-    "metaverse"
+    "Internet Architecture",
+    "metaverse",
+    "Network Interoperability",
+    "Telecommunications",
+    "Network Protocols",
+    "Technical Standards"
   ],
   "ontology": {
     "term_id": "MV-9983",
     "preferred_term": "Network Standards",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#NetworkStandards",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Technical specifications and protocols developed by standards bodies like IEEE, IETF, ITU, and ISO that define how network devices communicate, ensuring interoperability, security, and performance across telecommunications and internet infrastructure.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Technical Standards"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Network Interoperability"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Network Protocols",
+        "Telecommunications",
+        "Internet Architecture"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

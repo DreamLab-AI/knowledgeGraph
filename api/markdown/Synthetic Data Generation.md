@@ -12,10 +12,10 @@
 
 
 ### OWL Classification
-	- owl:class:: aigo:SyntheticDataGeneration
+	- owl:class:: ai:SyntheticDataGeneration
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
-	- owl:inferred-class:: aigo:VirtualProcess
+	- owl:inferred-class:: ai:VirtualProcess
 
 ### Domain & Architecture
 	- belongsToDomain:: [[AIEthicsDomain]]
@@ -23,6 +23,7 @@
 	- maturity:: mature
 
 ### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 id:: 0422-synthetic-data-generation-relationships
 
   - #### OWL Axioms

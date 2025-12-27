@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0234
+	- source-domain:: mv
 	- preferred-term:: Collective Intelligence System
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[ComputationAndIntelligenceDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: collective-intelligence-system-relationships
 	  collapsed:: true
 		- is-part-of:: [[Multi-Agent System]]

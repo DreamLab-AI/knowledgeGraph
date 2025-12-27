@@ -7,10 +7,12 @@ id:: social-token-economy-ontology
   - term-id:: DT-0268
   - preferred-term:: Social Token Economy
   - source-domain:: bc
+  - owl:class:: bc:SocialTokenEconomy
   - status:: draft
   - definition:: Economic model where communities issue tokens representing reputation, participation value, or creator-fan relationships, enabling decentralized governance and value distribution.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Token Economy]]
 - has-part:: [[Governance Rights]]
 - has-part:: [[Creator Token]]

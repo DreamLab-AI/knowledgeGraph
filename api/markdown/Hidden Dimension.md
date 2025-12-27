@@ -8,6 +8,7 @@ id:: hidden-dimension-ontology
   - preferred-term:: Hidden Dimension
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:HiddenDimension
   - definition:: The dimensionality of the internal representations in a neural network, determining the capacity of each layer to encode information, typically denoted as d_model in transformers.
 
 ### Relationships

@@ -7,7 +7,10 @@ Cybersecurity Standard establishes requirements, guidelines, and best practices 
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1040
-  - preferred-term:: Cybersecurity Standard establishes requirements, guidelines, and best practices...
+  - preferred-term:: Cybersecurity Standard
+  - owl:class:: rb:CybersecurityStandard
+  - is-subclass-of:: [[Robotics]]
+  - definition:: A cybersecurity standard establishes requirements, guidelines, and best practices for protecting robot systems against digital threats including unauthorised access, malware, and cyberattacks.
   - source-domain:: rb
   - status:: draft
 

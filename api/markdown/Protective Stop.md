@@ -8,7 +8,8 @@
 	- owl:class:: rb:ProtectiveStop
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- is-subclass-of:: [[Robotics]]
+	- definition:: A protective stop is a safety function that halts robot motion when operational limits or external obstacles are encountered, ensuring safe human-robot collaboration.
 	- maturity:: draft
 
 ## Academic Context

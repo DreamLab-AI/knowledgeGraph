@@ -1,14 +1,16 @@
 {
   "id": "Xr Headset",
   "title": "Xr Headset",
-  "content": "- ### OntologyBlock\n  id:: Xr Headset\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-10171\n  - preferred-term:: Xr Headset\n  - source-domain:: mv\n  - status:: stub\n\n### Relationships",
+  "content": "- ### OntologyBlock\n  id:: Xr Headset\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-10171\n  - preferred-term:: Xr Headset\n  - source-domain:: mv\n  - owl:class:: mv:XrHeadset\n  - status:: stub\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]",
   "backlinks": [],
-  "wiki_links": [],
+  "wiki_links": [
+    "Metaverse"
+  ],
   "ontology": {
     "term_id": "MV-10171",
     "preferred_term": "Xr Headset",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/metaverse#XrHeadset",
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
@@ -22,7 +24,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "mv:XrHeadset",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -44,7 +46,6 @@
       "errors": [
         "Missing required property: last-updated",
         "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

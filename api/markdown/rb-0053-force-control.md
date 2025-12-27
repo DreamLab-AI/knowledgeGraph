@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0053
+	- source-domain:: rb
 	- preferred-term:: rb 0053 force control
 	- status:: draft
 	- public-access:: true

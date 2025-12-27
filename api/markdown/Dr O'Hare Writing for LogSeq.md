@@ -12,6 +12,7 @@ Dr O'Hare Writing for LogSeq
   - term-id:: BC-9882
   - preferred-term:: Dr O'hare Writing For Logseq
   - source-domain:: bc
+  - owl:class:: bc:DrOhareWritingForLogseq
   - status:: draft
 
 <!-- INSTRUCTIONAL CONTENT (moved from inline) -->
@@ -65,3 +66,6 @@ Dr O'Hare Writing for LogSeq
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

@@ -2,6 +2,7 @@
 
 ### Definition
 id:: artificial-intelligence-ontology collapsed:: true - ontology:: true - term-id:: AI-0001 - preferred-term:: Artificial Intelligence - source-domain:: ai - status:: draft - public-access:: true
+  - owl:class:: ai:ArtificialIntelligenceSourceDomainAiStatusDraftPublicAccessTrue
 
 ### Notes
 *Instructional content moved from class definition*

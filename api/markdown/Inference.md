@@ -8,6 +8,7 @@ id:: inference-ontology
   - preferred-term:: Inference
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Inference
   - definition:: ### Primary Definition
 
 ### Relationships

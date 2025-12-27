@@ -7,6 +7,7 @@ clear that this is possible, or even what people want.
   - term-id:: MV-9756
   - preferred-term:: clear that this is possible, or even what people want.
   - source-domain:: mv
+  - owl:class:: mv:ClearThatThisIsPossibleOrEvenWhatPeopleWant
   - status:: draft
 
 ### Toward an open metaverse
@@ -1435,3 +1436,6 @@ public:: true
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

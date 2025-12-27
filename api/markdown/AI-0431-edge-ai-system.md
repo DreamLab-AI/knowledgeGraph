@@ -8,3 +8,8 @@ AI-0431-edge-ai-system
   - preferred-term:: Ai 0431 Edge Ai System
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0431EdgeAiSystem
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

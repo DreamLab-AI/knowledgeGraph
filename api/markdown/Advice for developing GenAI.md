@@ -8,7 +8,11 @@
   - preferred-term:: DO:
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Do
 
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 ### Proof of Concept
 - #### **Key Question: Are my stakeholders interested?**
 

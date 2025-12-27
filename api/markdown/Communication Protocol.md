@@ -7,7 +7,10 @@ Communication Protocol defines standardized message formats, data structures,...
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1005
-  - preferred-term:: Communication Protocol defines standardized message formats, data structures,...
+  - preferred-term:: Communication Protocol
+  - owl:class:: rb:CommunicationProtocol
+  - is-subclass-of:: [[Robotics]]
+  - definition:: A communication protocol defines standardised message formats, data structures, and exchange rules enabling reliable information transfer between robot components, systems, and external devices.
   - source-domain:: rb
   - status:: draft
 

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0185
+	- source-domain:: mv
 	- preferred-term:: Digital Identity Framework
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[DataLayer]], [[MiddlewareLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: digital-identity-framework-relationships
 	  collapsed:: true
 		- is-part-of:: [[Trust Architecture]]

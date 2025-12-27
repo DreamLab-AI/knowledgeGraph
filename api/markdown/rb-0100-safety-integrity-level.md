@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0100
+	- source-domain:: rb
 	- preferred-term:: rb 0100 safety integrity level
 	- status:: draft
 	- public-access:: true

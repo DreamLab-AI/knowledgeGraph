@@ -3,11 +3,12 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0856
+	- source-domain:: ai
 	- preferred-term:: Automated Summarization
 	- status:: complete
 	- public-access:: true
 	- source:: Chimera Prime Research
-	- maturity:: dt:Established
+	- maturity:: established
 	- owl:class:: ai:AutomatedSummarization
 	- belongsToDomain:: [[Artificial Intelligence]]
 

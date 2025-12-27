@@ -1,24 +1,34 @@
 {
   "id": "Communication Software",
   "title": "Communication Software",
-  "content": "- ### OntologyBlock\n  id:: communication-software-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9824\n\t- preferred-term:: Communication Software\n\t- status:: stub\n\t- owl:class:: mv:CommunicationSoftware\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: communication-software-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: communication-software-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9824\n\t- source-domain:: mv\n\t- preferred-term:: Communication Software\n\t- definition:: Software applications and platforms that enable real-time interaction, collaboration, and social connection within virtual environments and metaverse spaces, including immersive video conferencing, spatial audio, avatar-based communication, and AI-enhanced translation and transcription services that bridge physical and digital worlds.\n\t- status:: active\n\t- owl:class:: mv:CommunicationSoftware\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: communication-software-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Collaboration Technology]]\n\t\t- enables:: [[Real-Time Collaboration]], [[Remote Communication]], [[Virtual Meetings]]\n\t\t- requires:: [[Network Infrastructure]], [[Audio Visual Systems]], [[User Interface]]\n\t\t- related-to:: [[Virtual Presence]], [[Spatial Computing]], [[Remote Work]]\n- ## Technical Details\n\t- **Enterprise Platforms**:\n\t\t- **Microsoft Mesh**: Teams-like productivity in shared 3D environments across PCs, VR headsets, HoloLens\n\t\t- **Virbela**: Virtual worlds for remote work, learning, and events with file sharing, audio, and chat\n\t\t- **ENGAGE XR**: Immersive whiteboards, screen streaming, 3D virtual pens, spatial VoIP communications\n\t- **Social Platforms**:\n\t\t- **VRChat**: Customizable virtual spaces with spatial audio and expressive avatar gestures\n\t\t- **Spatial**: AI-powered lifelike avatars, voice assistants, real-time language translation\n\t\t- **GatherInVR**: Scalable platform for information sharing with avatar creation engine\n\t- **Key Technologies**:\n\t\t- Spatial audio for natural conversation dynamics\n\t\t- AI facial expression recognition and personalized content delivery\n\t\t- Automatic meeting summaries and transcription\n\t- **Industry Trend**: Term \"spatial computing\" now encapsulates VR, AR, and mixed reality technologies\n- ## Applications\n\t- Enterprise virtual meetings and presentations\n\t- Remote team collaboration and co-creation\n\t- Virtual events and conferences\n\t- Educational online courses\n\t- Social networking in immersive spaces",
   "backlinks": [
     "Networking Layer"
   ],
   "wiki_links": [
-    "metaverse"
+    "Virtual Presence",
+    "metaverse",
+    "Spatial Computing",
+    "Collaboration Technology",
+    "Remote Communication",
+    "Virtual Meetings",
+    "Remote Work",
+    "User Interface",
+    "Network Infrastructure",
+    "Real-Time Collaboration",
+    "Audio Visual Systems"
   ],
   "ontology": {
     "term_id": "MV-9824",
     "preferred_term": "Communication Software",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#CommunicationSoftware",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Software applications and platforms that enable real-time interaction, collaboration, and social connection within virtual environments and metaverse spaces, including immersive video conferencing, spatial audio, avatar-based communication, and AI-enhanced translation and transcription services that bridge physical and digital worlds.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +40,22 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Collaboration Technology"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Network Infrastructure",
+      "Audio Visual Systems",
+      "User Interface"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Real-Time Collaboration",
+      "Remote Communication",
+      "Virtual Meetings"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +65,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Virtual Presence",
+        "Spatial Computing",
+        "Remote Work"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

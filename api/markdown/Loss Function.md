@@ -10,6 +10,9 @@ id:: loss-function-ontology
   - status:: active
   - definition:: ### Primary Definition
 
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 ### Primary Sources
 1. Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep Learning*. MIT Press. DOI: 10.5555/3086952
 2. Bishop, C. M. (2006). *Pattern Recognition and Machine Learning*. Springer. ISBN: 978-0387310732

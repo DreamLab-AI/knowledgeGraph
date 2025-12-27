@@ -8,6 +8,7 @@ id:: unknown-ontology
   - preferred-term:: Residual Network
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:ResidualNetwork
   - definition:: ### Primary Definition
 
 ### Relationships

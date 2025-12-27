@@ -7,4 +7,8 @@ id:: unknown-ontology
   - term-id:: MV-9727
   - preferred-term:: id:: unknownontology
   - source-domain:: mv
+  - owl:class:: mv:IdUnknownontology
   - status:: draft
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

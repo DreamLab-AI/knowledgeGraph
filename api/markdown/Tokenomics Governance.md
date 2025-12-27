@@ -2,10 +2,41 @@ id:: tokenomics-governance-ontology
 
 - ### OntologyBlock
   id:: Tokenomics Governance
-  - ontology:: true
-  - public-access:: true
-  - term-id:: BC-0471
-  - preferred-term:: Tokenomics Governance
-  - source-domain:: bc
-  - status:: stub
-  - definition:: A component of the blockchain ecosystem.
+	- ontology:: true
+	- public-access:: true
+	- term-id:: BC-0471
+	- preferred-term:: Tokenomics Governance
+	- source-domain:: bc
+	- owl:class:: bc:TokenomicsGovernance
+	- status:: active
+	- definition:: The economic model and governance framework that determines how tokens are issued, distributed, and used for decision-making within a Decentralized Autonomous Organization (DAO), including voting mechanisms, staking incentives, and power distribution among token holders.
+	- #### Relationships
+		- is-subclass-of:: [[Blockchain Governance]]
+		- related-to:: [[DAO]]
+		- related-to:: [[Governance Token]]
+		- related-to:: [[Voting Mechanism]]
+- ## Overview
+	- Tokenomics describes the economics of a token system on a blockchain, enabling new incentive systems and use cases for DAOs. Token distribution models determine how tokens are allocated among participants and influence the overall governance and economic structure of the organization.
+- ## Technical Details
+	- ### Voting Mechanisms
+		- **Token Voting**: Voting power proportional to token holdings
+		- **Quadratic Voting**: Square root of token holdings for more equitable outcomes
+		- **On-Chain Voting**: Direct blockchain voting for transparency and immutability
+		- **Stake-Weighted Voting**: Longer staking periods provide more voting power
+	- ### Governance Challenges
+		- **Plutocracy Risk**: Large token holders controlling majority decisions
+		- **Whale Dominance**: Concentration of power among few large holders
+		- **Collusion Problems**: Coordinated voting manipulation
+		- **Voter Apathy**: Low participation in governance proposals
+	- ### Token Holder Powers
+		- Proposing and voting on governance changes
+		- Controlling treasury spending
+		- Modifying tokenomics parameters
+		- Approving protocol upgrades
+- ## Applications
+	- DeFi protocol governance
+	- NFT community decision-making
+	- Gaming guild management
+	- Social network governance
+	- Supply chain DAO coordination
+

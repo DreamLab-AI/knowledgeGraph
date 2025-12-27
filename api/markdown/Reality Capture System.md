@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0157
+	- source-domain:: mv
 	- preferred-term:: Reality Capture System
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[CreativeMediaDomain]]
 	- implementedInLayer:: [[PhysicalLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: reality-capture-system-relationships
 	  collapsed:: true
 		- is-part-of:: [[Digital Twin Creation Pipeline]]

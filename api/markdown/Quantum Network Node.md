@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0146
+	- source-domain:: mv
 	- preferred-term:: Quantum Network Node
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[InfrastructureDomain]], [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[Physical Layer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: quantum-network-node-relationships
 	  collapsed:: true
 		- is-part-of:: [[Quantum Communication Network]]

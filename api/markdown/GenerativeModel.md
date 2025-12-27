@@ -5,6 +5,8 @@ id:: generativemodel-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: AI-0908
+  - source-domain:: ai
+  - owl:class:: ai:Generativemodel
   - preferred-term:: GenerativeModel
   - status:: draft
   - definition:: A component of the metaverse ecosystem.

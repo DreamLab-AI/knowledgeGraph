@@ -12,6 +12,7 @@ id:: block-ontology
   - definition:: A block is a fundamental data structure unit in a blockchain that contains a collection of validated transactions, a cryptographic hash of the previous block, a timestamp, and a nonce. Blocks are cryptographically linked to form an immutable chain, providing the core infrastructure for distributed ledger technology operations and properties.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is:: [[Distributeddatastructure]]
 - part-of:: [[Blockchain]]
 - integrates-with:: [[Distributeddatastructure]]

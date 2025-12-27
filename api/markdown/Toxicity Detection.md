@@ -3,11 +3,12 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0859
+	- source-domain:: ai
 	- preferred-term:: Toxicity Detection
 	- status:: complete
 	- public-access:: true
 	- source:: Chimera Prime Research
-	- maturity:: dt:Established
+	- maturity:: established
 	- owl:class:: ai:ToxicityDetection
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships

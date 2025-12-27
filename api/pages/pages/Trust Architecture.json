@@ -1,24 +1,28 @@
 {
   "id": "Trust Architecture",
   "title": "Trust Architecture",
-  "content": "- ### OntologyBlock\n  id:: trust-architecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10091\n\t- preferred-term:: Trust Architecture\n\t- status:: stub\n\t- owl:class:: mv:TrustArchitecture\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: trust-architecture-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: trust-architecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10091\n\t- source-domain:: mv\n\t- preferred-term:: Trust Architecture\n\t- status:: active\n\t- definition:: The structural framework of protocols, technologies, and governance mechanisms that establish, verify, and maintain trust relationships between users, platforms, and services in decentralized digital environments and metaverse ecosystems.\n\t- owl:class:: mv:TrustArchitecture\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Security Architecture]]\n\t\t- related-to:: [[Decentralized Identity]]\n\t\t- related-to:: [[Verifiable Credentials]]\n\t\t- related-to:: [[Zero Trust]]\n\t  id:: trust-architecture-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Trust architecture in digital environments defines how trust is established, verified, and maintained across decentralized systems. This includes identity verification, credential management, cryptographic proofs, and governance structures that enable secure interactions without centralized authorities.\n- ## Technical Details\n\t- ### Trust Models\n\t\t- **Zero Trust**: Never trust, always verify - continuous authentication and authorization\n\t\t- **Decentralized Trust**: Distributed consensus and cryptographic verification\n\t\t- **Federated Trust**: Trust relationships between identity providers\n\t\t- **Reputation-Based Trust**: Historical behavior-based trust scores\n\t- ### Key Components\n\t\t- **Decentralized Identifiers (DIDs)**: Self-sovereign identity anchors\n\t\t- **Verifiable Credentials**: Cryptographically signed attestations\n\t\t- **Smart Contract Enforcement**: Automated trust rule execution\n\t\t- **Consensus Mechanisms**: Distributed agreement on truth\n\t- ### Implementation Patterns\n\t\t- Multi-signature authorization\n\t\t- Threshold cryptography\n\t\t- Proof-of-stake validation\n\t\t- Trusted execution environments (TEE)\n- ## Applications\n\t- Cross-platform metaverse identity verification\n\t- Secure asset transfer between virtual worlds\n\t- DAO governance trust frameworks\n\t- Decentralized marketplace escrow\n\t- Privacy-preserving authentication",
   "backlinks": [
     "Digital Identity Framework"
   ],
   "wiki_links": [
-    "metaverse"
+    "Security Architecture",
+    "metaverse",
+    "Decentralized Identity",
+    "Verifiable Credentials",
+    "Zero Trust"
   ],
   "ontology": {
     "term_id": "MV-10091",
     "preferred_term": "Trust Architecture",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#TrustArchitecture",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The structural framework of protocols, technologies, and governance mechanisms that establish, verify, and maintain trust relationships between users, platforms, and services in decentralized digital environments and metaverse ecosystems.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Security Architecture"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +51,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Decentralized Identity",
+        "Verifiable Credentials",
+        "Zero Trust"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

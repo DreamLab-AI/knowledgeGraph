@@ -7,10 +7,12 @@ id:: scene-graph-ontology
   - term-id:: DT-0112
   - preferred-term:: Scene Graph
   - source-domain:: mv
+  - owl:class:: mv:SceneGraph
   - status:: draft
   - definition:: A hierarchical tree-based data structure organizing and describing the spatial, logical, and rendering relationships among objects in a 3D scene, enabling efficient traversal, culling, and rendering operations.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[VirtualWorld]]
 - is-part-of:: [[Game Engine]]
 - is-part-of:: [[3D Engine]]

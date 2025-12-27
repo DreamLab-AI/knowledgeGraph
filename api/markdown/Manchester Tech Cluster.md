@@ -3,12 +3,13 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-1001
+	- source-domain:: ngm
 	- preferred-term:: Manchester Tech Cluster
 	- status:: active
 	- public-access:: true
 	- definition:: Manchester's thriving technology ecosystem centred on MediaCityUK, including AI, digital innovation, and financial technology sectors.
 	- maturity:: established
-	- owl:class:: uk:ManchesterTechCluster
+	- owl:class:: mv:ManchesterTechCluster
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: RegionalEcosystem
 	- belongsToDomain:: [[UKTechEcosystem]]
@@ -31,7 +32,7 @@ Manchester Tech Cluster refers to manchester's thriving technology ecosystem cen
 - **Maturity**: established
 - **Region**: Greater Manchester
 - **Focus Areas**: Digital, AI, FinTech
-- **Owl:Class**: uk:UK-003-ManchesterTechCluster
+- **Owl:Class**: mv:UK-003-ManchesterTechCluster
 - **Owl:Physicality**: ConceptualEntity
 - **Owl:Role**: RegionalEcosystem
 - **Belongstodomain**: [[UKTechEcosystem]]

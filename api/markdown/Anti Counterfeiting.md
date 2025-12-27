@@ -143,3 +143,6 @@ Anti Counterfeiting refers to blockchain-based systems employing cryptographic v
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

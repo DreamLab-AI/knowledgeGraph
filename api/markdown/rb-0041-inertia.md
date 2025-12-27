@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0041
+	- source-domain:: rb
 	- preferred-term:: rb 0041 inertia
 	- status:: draft
 	- public-access:: true

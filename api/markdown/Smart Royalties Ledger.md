@@ -7,10 +7,12 @@ id:: smart-royalties-ledger-ontology
   - term-id:: DT-0271
   - preferred-term:: Smart Royalties Ledger
   - source-domain:: bc
+  - owl:class:: bc:SmartRoyaltiesLedger
   - status:: draft
   - definition:: An automated tracking and distribution system that records creator royalty obligations, calculates payment amounts, and executes compensation transfers for digital content and NFT sales in virtual economy environments.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Creator Economy Infrastructure]]
 - has-part:: [[Distribution Queue]]
 - has-part:: [[Settlement System]]

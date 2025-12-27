@@ -1,10 +1,11 @@
-Tactile Sensor
-
 - ### OntologyBlock
-  id:: Tactile Sensor
+  id:: tactile-sensor-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1024
   - preferred-term:: Tactile Sensor
   - source-domain:: rb
+  - owl:class:: rb:TactileSensor
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
+  - definition:: A tactile sensor detects physical contact, pressure, or texture through direct mechanical interaction with objects.

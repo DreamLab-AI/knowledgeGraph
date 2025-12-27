@@ -3,12 +3,13 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0898
+	- source-domain:: mv
 	- preferred-term:: Leeds Digital Hub
 	- status:: active
 	- public-access:: true
 	- definition:: Leeds' digital technology sector focusing on health technology innovation, financial services technology, and digital creative industries.
 	- maturity:: established
-	- owl:class:: uk:LeedsDigitalHub
+	- owl:class:: mv:LeedsDigitalHub
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: RegionalEcosystem
 	- belongsToDomain:: [[UKTechEcosystem]]
@@ -28,7 +29,7 @@ Leeds Digital Hub refers to leeds' digital technology sector focusing on health 
 - **Maturity**: established
 - **Region**: West Yorkshire
 - **Focus Areas**: HealthTech, FinTech, Digital Industries
-- **Owl:Class**: uk:UK-002-LeedsDigitalHub
+- **Owl:Class**: mv:UK-002-LeedsDigitalHub
 - **Owl:Physicality**: ConceptualEntity
 - **Owl:Role**: RegionalEcosystem
 - **Belongstodomain**: [[UKTechEcosystem]]
@@ -114,3 +115,6 @@ Government support is evident through the Places for Growth strategy, which aims
 - **Region**: West Yorkshire, North England
 - **Category**: Regional Technology Ecosystem
 - **Status**: Active
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

@@ -7,6 +7,7 @@ id:: blockchain-network-ontology
   - term-id:: DT-3762
   - preferred-term:: Blockchain Network
   - source-domain:: bc
+  - owl:class:: bc:BlockchainNetwork
   - status:: complete
   - definition:: Distributed node infrastructure within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

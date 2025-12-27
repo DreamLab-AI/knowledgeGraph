@@ -8,6 +8,7 @@ id:: unknown-ontology
   - preferred-term:: Model Parameters
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:ModelParameters
   - definition:: ### Primary Definition
 
 ### Relationships

@@ -5,6 +5,7 @@
   - preferred-term:: Ensemble Methods
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:EnsembleMethods
 
 ### Relationships
 - is-subclass-of:: [[Machine Learning]]

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0094
+	- source-domain:: rb
 	- preferred-term:: rb 0094 power and force limiting
 	- status:: draft
 	- public-access:: true

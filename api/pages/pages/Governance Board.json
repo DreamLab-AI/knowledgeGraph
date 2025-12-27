@@ -1,24 +1,28 @@
 {
   "id": "Governance Board",
   "title": "Governance Board",
-  "content": "- ### OntologyBlock\n  id:: governance-board-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9910\n\t- preferred-term:: Governance Board\n\t- status:: stub\n\t- owl:class:: mv:GovernanceBoard\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: governance-board-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: governance-board-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9910\n\t- source-domain:: mv\n\t- preferred-term:: Governance Board\n\t- status:: active\n\t- owl:class:: mv:GovernanceBoard\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: An oversight body responsible for strategic decision-making and policy enforcement within metaverse organisations, evolving from traditional corporate board structures to decentralised autonomous organisation (DAO) models where token holders collectively govern through transparent on-chain voting mechanisms.\n\t- #### Relationships\n\t  id:: governance-board-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Governance Architecture]]\n\t\t- related-to:: [[Governance Token]]\n\t\t- related-to:: [[DAO Governance]]\n\t\t- enables:: [[Collective Decision Making]]\n\n## Traditional vs DAO Governance\n\n### Corporate Board Model\n- Small group elected by shareholders\n- Centralised decision-making\n- Board meeting voting\n- Fiduciary duty to shareholders\n- Decision protocols not always visible\n\n### DAO Governance Model\n- Token holder voting rights\n- Proportional voting power\n- Direct participation in decisions\n- Transparent on-chain processes\n- Smart contract enforcement\n\n## 2024 Scale\n\n### DAO Ecosystem\n- 13,000+ active DAOs (2024)\n- USD 24.5 billion total treasury\n- 11.1 million governance token holders\n- Collective decision management\n\n### Governance Evolution\n- Hybrid model emergence\n- Centralised accountability components\n- Decentralised oversight mechanisms\n- Risk mitigation structures\n\n## Voting Mechanisms\n\n### On-Chain Governance\n- Tally platform for blockchain voting\n- Immutable vote recording\n- Verifiable decision audit trail\n- Security and accountability focus\n\n### Off-Chain Governance\n- Snapshot voting platform\n- Gas-free voting operations\n- Cost-effective governance\n- Regular proposal creation\n\n## Oversight Challenges\n\n### Whale Influence\n- Large token holder concentration\n- Divergent interests from small holders\n- Governance vulnerability creation\n- Agency problem emergence\n\n### Centralisation Tensions\n- Associated entity influence (e.g., Uniswap Labs)\n- Trusted parties for vote verification\n- Protocol development control\n- Decentralisation rhetoric vs reality\n\n## Hybrid Approaches\n\n### Benefits\n- Enhanced accountability\n- Community oversight maintenance\n- Expertise access for complex decisions\n- Decision paralysis mitigation\n\n### Implementation\n- Centralized bodies with defined responsibilities\n- Decentralised voting on key decisions\n- Graduated autonomy models\n- Emergency intervention protocols\n\n## Applications\n\n### Protocol Governance\n- DeFi protocol management\n- Infrastructure decisions\n- Treasury allocation\n- Partnership approvals\n\n### Metaverse Platforms\n- Virtual world policy\n- Economic parameter setting\n- Content moderation rules\n- Platform development direction\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
     "ETSI_Domain_Governance_&_Ethics"
   ],
   "wiki_links": [
-    "metaverse"
+    "Collective Decision Making",
+    "DAO Governance",
+    "metaverse",
+    "Governance Architecture",
+    "Governance Token"
   ],
   "ontology": {
     "term_id": "MV-9910",
     "preferred_term": "Governance Board",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#GovernanceBoard",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "An oversight body responsible for strategic decision-making and policy enforcement within metaverse organisations, evolving from traditional corporate board structures to decentralised autonomous organisation (DAO) models where token holders collectively govern through transparent on-chain voting mechanisms.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +34,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Governance Architecture"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Collective Decision Making"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +53,18 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Governance Token",
+        "DAO Governance"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

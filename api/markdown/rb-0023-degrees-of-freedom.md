@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0023
+	- source-domain:: rb
 	- preferred-term:: rb 0023 degrees of freedom
 	- status:: draft
 	- public-access:: true

@@ -4,13 +4,13 @@
 	- ontology:: true
 	- term-id:: DT-0884
 	- preferred-term:: North England Innovation Corridor
-	- source-domain:: uk
-	- owl:class:: uk:NorthEnglandInnovationCorridor
+	- source-domain:: mv
+	- owl:class:: mv:NorthEnglandInnovationCorridor
 	- status:: active
 	- public-access:: true
 	- definition:: The collaborative innovation corridor spanning Manchester, Leeds, Liverpool, Sheffield, and Newcastle, forming the Northern Powerhouse technology ecosystem.
 	- maturity:: established
-	- owl:class:: uk:NorthEnglandInnovationCorridor
+	- owl:class:: mv:NorthEnglandInnovationCorridor
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: RegionalEcosystem
 	- belongsToDomain:: [[UKTechEcosystem]]
@@ -42,7 +42,7 @@ If you're seeking information about specific innovation hubs, technology cluster
 - **Maturity**: established
 - **Region**: Northern Powerhouse
 - **Focus Areas**: Regional Collaboration, Innovation
-- **Owl:Class**: uk:NorthEnglandInnovationCorridor
+- **Owl:Class**: mv:NorthEnglandInnovationCorridor
 - **Owl:Physicality**: ConceptualEntity
 - **Owl:Role**: RegionalEcosystem
 - **Belongstodomain**: [[UKTechEcosystem]]

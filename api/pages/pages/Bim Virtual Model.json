@@ -1,22 +1,32 @@
 {
   "id": "Bim Virtual Model",
-  "title": "Bim Virtual Model",
-  "content": "- ### OntologyBlock\n  id:: bim-virtual-model-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9798\n\t- preferred-term:: Bim Virtual Model\n\t- status:: stub\n\t- owl:class:: mv:BimVirtualModel\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: bim-virtual-model-relationships\n\t  collapsed:: true",
+  "title": "BIM Virtual Model",
+  "content": "- ### OntologyBlock\n  id:: bim-virtual-model-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9798\n\t- source-domain:: mv\n\t- preferred-term:: BIM Virtual Model\n\t- definition:: A comprehensive 3D digital representation of a building or infrastructure asset created through Building Information Modeling, containing geometric data, material specifications, and functional characteristics that enable visualization, simulation, quantity take-offs, and clash detection throughout the construction lifecycle.\n\t- status:: active\n\t- owl:class:: mv:BimVirtualModel\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: bim-virtual-model-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[3D Model]]\n\t\t- enables:: [[Design Visualization]], [[Construction Simulation]], [[Clash Detection]]\n\t\t- requires:: [[BIM Software]], [[Design Data]], [[Modeling Standards]]\n\t\t- related-to:: [[Digital Twin]], [[Virtual Construction]], [[Building Design]]\n- ## Technical Details\n\t- **Model Characteristics**:\n\t\t- Parametric 3D geometry with embedded information\n\t\t- Material and component specifications\n\t\t- Spatial relationships and constraints\n\t\t- Scheduling and cost data integration\n\t- **Distinction from Digital Twin**:\n\t\t- BIM models: Static design and construction visualization\n\t\t- Digital twins: Real-time bi-directional data connection with physical asset\n\t- **Integration Technologies**:\n\t\t- CAD drawing import/export\n\t\t- Photogrammetry for existing conditions capture\n\t\t- IoT sensor integration for operational phase\n\t\t- VR/AR for immersive visualization\n\t\t- 3D Gaussian Splatting for enhanced scanning\n- ## Standards\n\t- **ISO 19650**: Information management framework for BIM\n\t- **OpenBIM**: Open standards for cross-platform data exchange\n\t- **IFC (Industry Foundation Classes)**: Neutral file format for model sharing\n- ## Applications\n\t- Pre-construction site visualization\n\t- Stakeholder coordination and communication\n\t- Construction sequencing simulation\n\t- Facility management and operations\n\t- Metaverse integration for extended building interaction",
   "backlinks": [],
   "wiki_links": [
-    "metaverse"
+    "Building Design",
+    "Design Data",
+    "metaverse",
+    "Construction Simulation",
+    "Digital Twin",
+    "3D Model",
+    "Design Visualization",
+    "Clash Detection",
+    "Virtual Construction",
+    "BIM Software",
+    "Modeling Standards"
   ],
   "ontology": {
     "term_id": "MV-9798",
-    "preferred_term": "Bim Virtual Model",
+    "preferred_term": "BIM Virtual Model",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#BimVirtualModel",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A comprehensive 3D digital representation of a building or infrastructure asset created through Building Information Modeling, containing geometric data, material specifications, and functional characteristics that enable visualization, simulation, quantity take-offs, and clash detection throughout the construction lifecycle.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -28,12 +38,22 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "3D Model"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "BIM Software",
+      "Design Data",
+      "Modeling Standards"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Design Visualization",
+      "Construction Simulation",
+      "Clash Detection"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -43,15 +63,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Digital Twin",
+        "Virtual Construction",
+        "Building Design"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

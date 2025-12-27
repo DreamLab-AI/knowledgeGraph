@@ -1,22 +1,29 @@
 {
   "id": "Real Time Character Animation",
   "title": "Real Time Character Animation",
-  "content": "- ### OntologyBlock\n  id:: real-time-character-animation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10016\n\t- preferred-term:: Real Time Character Animation\n\t- status:: stub\n\t- owl:class:: mv:RealTimeCharacterAnimation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: real-time-character-animation-relationships\n\t  collapsed:: true",
-  "backlinks": [],
+  "content": "- ### OntologyBlock\n  id:: real-time-character-animation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10016\n\t- source-domain:: mv\n\t- preferred-term:: Real Time Character Animation\n\t- status:: active\n\t- definition:: The process of generating and rendering character movements instantaneously during gameplay or interactive experiences, utilizing rigging systems, motion capture data, and procedural animation to create lifelike digital characters that respond dynamically to user input and environmental conditions.\n\t- owl:class:: mv:RealTimeCharacterAnimation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: real-time-character-animation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[3D Animation]]\n\t\t- related-to:: [[Motion Capture]]\n\t\t- related-to:: [[Character Rigging]]\n\t\t- related-to:: [[Procedural Animation]]\n\t\t- enables:: [[Interactive Experiences]]\n\t- #### Key Technologies\n\t  collapsed:: true\n\t\t- Real-time rendering via Unreal Engine and Unity\n\t\t- Motion capture (mocap) for realistic movement\n\t\t- Procedural animation for dynamic terrain adaptation\n\t\t- AI-powered automated rigging and facial animation\n\t\t- Inverse kinematics for natural joint movement\n\t- #### Market Context\n\t  collapsed:: true\n\t\t- 3D animation market projected at $7.98B by 2025\n\t\t- 60% revenue from games and entertainment\n\t\t- 40% of 3D animation services for character work\n\t\t- VR and AR driving demand for immersive content",
+  "backlinks": [
+    "Motion Solver Software"
+  ],
   "wiki_links": [
-    "metaverse"
+    "3D Animation",
+    "metaverse",
+    "Character Rigging",
+    "Motion Capture",
+    "Procedural Animation",
+    "Interactive Experiences"
   ],
   "ontology": {
     "term_id": "MV-10016",
     "preferred_term": "Real Time Character Animation",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#RealTimeCharacterAnimation",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The process of generating and rendering character movements instantaneously during gameplay or interactive experiences, utilizing rigging systems, motion capture data, and procedural animation to create lifelike digital characters that respond dynamically to user input and environmental conditions.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -28,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "3D Animation"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Interactive Experiences"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -43,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Motion Capture",
+        "Character Rigging",
+        "Procedural Animation"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: MV-0157
+    - source-domain:: mv
+    - owl:class:: mv:RotaryEncoder
     - preferred-term:: Rotary Encoder
     - ontology:: true
     - public-access:: true

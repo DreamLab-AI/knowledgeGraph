@@ -1,24 +1,34 @@
 {
   "id": "Category Hierarchies",
   "title": "Category Hierarchies",
-  "content": "- ### OntologyBlock\n  id:: category-hierarchies-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9816\n\t- preferred-term:: Category Hierarchies\n\t- status:: stub\n\t- owl:class:: mv:CategoryHierarchies\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: category-hierarchies-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: category-hierarchies-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9816\n\t- source-domain:: mv\n\t- preferred-term:: Category Hierarchies\n\t- definition:: A structured classification system that organizes concepts, objects, or information into parent-child relationships forming a tree-like taxonomy, enabling logical navigation from broad categories to specific subcategories for knowledge organization and content management.\n\t- status:: active\n\t- owl:class:: mv:CategoryHierarchies\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: category-hierarchies-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Knowledge Organization System]]\n\t\t- enables:: [[Content Classification]], [[Navigation Structure]], [[Semantic Organization]]\n\t\t- requires:: [[Taxonomy Design]], [[Term Relationships]], [[Classification Rules]]\n\t\t- related-to:: [[Controlled Vocabularies]], [[Ontology]], [[Faceted Classification]]\n- ## Technical Details\n\t- **Hierarchy Types**:\n\t\t- **Linnaean System**: Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species\n\t\t- **Library Classification**: Dewey Decimal, Library of Congress, Universal Decimal\n\t\t- **Faceted Taxonomy**: Independent filters combining to narrow results\n\t- **Design Principles**:\n\t\t- Terms arranged in parent-child relationships\n\t\t- Focus on terms needed for content coverage rather than abstract domain division\n\t\t- Avoid overly strict level definitions\n\t\t- Named levels (Domain, Category, Subcategory) are cautioned against\n\t- **Taxonomies vs. Ontologies**: Taxonomies are narrower, using hierarchical relationships; ontologies apply a larger variety of relation types\n\t- **Modern Applications**: Knowledge bases use hybrid taxonomy combining hierarchical navigation with intelligent tagging for multiple pathways to information\n- ## Applications\n\t- Content management system organization\n\t- E-commerce product categorization\n\t- Library and archive classification\n\t- Search and navigation optimization\n\t- Knowledge graph construction",
   "backlinks": [
     "Glossary Index"
   ],
   "wiki_links": [
-    "metaverse"
+    "Knowledge Organization System",
+    "Semantic Organization",
+    "metaverse",
+    "Navigation Structure",
+    "Taxonomy Design",
+    "Classification Rules",
+    "Ontology",
+    "Controlled Vocabularies",
+    "Content Classification",
+    "Faceted Classification",
+    "Term Relationships"
   ],
   "ontology": {
     "term_id": "MV-9816",
     "preferred_term": "Category Hierarchies",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#CategoryHierarchies",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A structured classification system that organizes concepts, objects, or information into parent-child relationships forming a tree-like taxonomy, enabling logical navigation from broad categories to specific subcategories for knowledge organization and content management.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +40,22 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Knowledge Organization System"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Taxonomy Design",
+      "Term Relationships",
+      "Classification Rules"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Content Classification",
+      "Navigation Structure",
+      "Semantic Organization"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +65,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Controlled Vocabularies",
+        "Ontology",
+        "Faceted Classification"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

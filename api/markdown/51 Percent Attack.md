@@ -7,6 +7,7 @@
   - term-id:: BC-9981
   - preferred-term:: 51% Attack
   - source-domain:: bc
+  - owl:class:: bc:51Attack
   - status:: draft
 
 ### Key Characteristics
@@ -246,3 +247,6 @@ id:: 51%-attack-future
 - **Content Alignment**: 100% relevant to 51% attacks (removed 364 lines of irrelevant content)
 - **Citations Added**: 10 academic and industry sources
 - **Wiki-Links Added**: 45+ internal links to related concepts
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

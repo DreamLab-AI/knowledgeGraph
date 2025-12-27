@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0102
+	- source-domain:: rb
 	- preferred-term:: rb 0102 functional safety
 	- status:: draft
 	- public-access:: true

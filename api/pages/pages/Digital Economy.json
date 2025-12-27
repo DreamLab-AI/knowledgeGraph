@@ -1,18 +1,20 @@
 {
   "id": "Digital Economy",
   "title": "Digital Economy",
-  "content": "- ### OntologyBlock\n  id:: Digital Economy\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9856\n  - preferred-term:: Digital Economy\n  - status:: stub\n\n### Relationships",
+  "content": "- ### OntologyBlock\n  id:: Digital Economy\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9856\n  - source-domain:: mv\n  - owl:class:: mv:DigitalEconomy\n  - preferred-term:: Digital Economy\n  - status:: stub\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]",
   "backlinks": [
     "Virtual World",
     "VirtualWorld"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "Metaverse"
+  ],
   "ontology": {
     "term_id": "MV-9856",
     "preferred_term": "Digital Economy",
     "alt_terms": [],
-    "iri": null,
-    "source_domain": null,
+    "iri": "http://narrativegoldmine.com/metaverse#DigitalEconomy",
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
     "definition": null,
@@ -25,7 +27,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "mv:DigitalEconomy",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -45,10 +47,8 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
         "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

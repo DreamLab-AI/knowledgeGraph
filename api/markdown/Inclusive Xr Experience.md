@@ -7,6 +7,8 @@ id:: inclusive-xr-experience-ontology
   - term-id:: MV-9000
   - preferred-term:: Inclusive Xr Experience
   - source-domain:: mv
+  - owl:class:: mv:InclusiveXrExperience
   - status:: stub
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]

@@ -7,6 +7,7 @@ id:: etsi_domain_virtual_society-ontology
   - term-id:: MV-0034
   - preferred-term:: ETSI_Domain_Virtual_Society
   - source-domain:: mv
+  - owl:class:: mv:EtsiDomainVirtualSociety
   - status:: draft
   - definition:: A component of the metaverse ecosystem.
 

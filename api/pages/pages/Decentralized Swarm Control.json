@@ -1,10 +1,10 @@
 {
   "id": "Decentralized Swarm Control",
   "title": "Decentralized Swarm Control",
-  "content": "- ### OntologyBlock\n  id:: RB-9004\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9004\n\t- preferred-term:: Decentralized Swarm Control\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Swarm robotics control architecture where each robot makes autonomous decisions based on local information and interactions, enabling fault tolerance and scalability.\n\t- source:: [[Swarm Robotics]]\n\t- maturity:: emerging\n\t- owl:class:: rb:DecentralizedSwarmControl\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[RoboticsDomain]]\n\t- isSubclassOf:: [[Swarm Control Architecture]]",
+  "content": "- ### OntologyBlock\n  id:: RB-9004\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9004\n\t- source-domain:: rb\n\t- preferred-term:: Decentralized Swarm Control\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Swarm robotics control architecture where each robot makes autonomous decisions based on local information and interactions, enabling fault tolerance and scalability.\n\t- source:: [[Swarm Robotics]]\n\t- maturity:: emerging\n\t- owl:class:: rb:DecentralizedSwarmControl\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[RoboticsDomain]]\n\t- is-subclass-of:: [[Robotics]]",
   "backlinks": [],
   "wiki_links": [
-    "Swarm Control Architecture",
+    "Robotics",
     "RoboticsDomain",
     "Swarm Robotics"
   ],
@@ -13,7 +13,7 @@
     "preferred_term": "Decentralized Swarm Control",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/robotics#DecentralizedSwarmControl",
-    "source_domain": null,
+    "source_domain": "rb",
     "domain": "rb",
     "domain_full_name": "Robotics",
     "definition": "Swarm robotics control architecture where each robot makes autonomous decisions based on local information and interactions, enabling fault tolerance and scalability.",
@@ -50,7 +50,6 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
         "Missing required property: is-subclass-of (at least one parent class)"
       ]

@@ -5,6 +5,7 @@
   - preferred-term:: Tensor Processing Unit
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:TensorProcessingUnit
 
 ### Relationships
 - is-subclass-of:: [[AI Hardware]]

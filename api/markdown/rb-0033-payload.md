@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0033
+	- source-domain:: rb
 	- preferred-term:: rb 0033 payload
 	- status:: draft
 	- public-access:: true

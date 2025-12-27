@@ -1,12 +1,22 @@
 {
   "id": "Calibration Standards",
   "title": "Calibration Standards",
-  "content": "- ### OntologyBlock\n  id:: calibration-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9804\n\t- source-domain:: metaverse\n\t- preferred-term:: Calibration Standards\n\t- status:: stub\n\t- owl:class:: mv:CalibrationStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: calibration-standards-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: calibration-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9804\n\t- source-domain:: metaverse\n\t- preferred-term:: Calibration Standards\n\t- definition:: Documented specifications and reference materials that establish measurement accuracy requirements, traceability to national standards, and systematic procedures for aligning sensors, displays, and imaging systems to known reference values in XR and computer vision applications.\n\t- status:: active\n\t- owl:class:: mv:CalibrationStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: calibration-standards-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Technical Standard]]\n\t\t- enables:: [[Measurement Accuracy]], [[Device Alignment]], [[Quality Assurance]]\n\t\t- requires:: [[Reference Materials]], [[Traceability Chain]], [[Validation Procedures]]\n\t\t- related-to:: [[Calibration Target]], [[Camera Parameters]], [[Display Testing]]\n- ## Technical Details\n\t- **VR/AR/MR Calibration Requirements**:\n\t\t- Camera and IMU module alignment\n\t\t- Display luminance and chromaticity measurement\n\t\t- Lens distortion characterization\n\t\t- Field of view (10-50 degrees AR, 100-120 degrees VR)\n\t- **Key Metrology Factors**:\n\t\t- Photometric imaging accuracy\n\t\t- Optical aperture matching human eye pupil\n\t\t- Sensor resolution for defect detection\n\t\t- System MTF (Modulation Transfer Function)\n\t\t- Distortion calibration for wide FOV\n\t- **Traceability**: Results traceable to national standards eliminate need for golden sample calibration\n\t- **2024 Research Advances**:\n\t\t- Meta-Calib framework using ArUco-encoded meta-boards\n\t\t- Global correction frameworks for video see-through AR\n\t\t- Multi-configuration camera calibration solutions\n- ## Applications\n\t- AR/VR headset display quality assurance\n\t- Computer vision camera alignment\n\t- Autonomous vehicle sensor calibration\n\t- SLAM system accuracy verification\n\t- 3D reconstruction quality control",
   "backlinks": [
     "Display Metrology"
   ],
   "wiki_links": [
-    "metaverse"
+    "Technical Standard",
+    "Camera Parameters",
+    "metaverse",
+    "Display Testing",
+    "Reference Materials",
+    "Validation Procedures",
+    "Calibration Target",
+    "Measurement Accuracy",
+    "Device Alignment",
+    "Quality Assurance",
+    "Traceability Chain"
   ],
   "ontology": {
     "term_id": "MV-9804",
@@ -16,9 +26,9 @@
     "source_domain": "metaverse",
     "domain": "metaverse",
     "domain_full_name": "",
-    "definition": null,
+    "definition": "Documented specifications and reference materials that establish measurement accuracy requirements, traceability to national standards, and systematic procedures for aligning sensors, displays, and imaging systems to known reference values in XR and computer vision applications.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +40,22 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Technical Standard"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Reference Materials",
+      "Traceability Chain",
+      "Validation Procedures"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Measurement Accuracy",
+      "Device Alignment",
+      "Quality Assurance"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,14 +65,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Calibration Target",
+        "Camera Parameters",
+        "Display Testing"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)",
         "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
       ]
     }

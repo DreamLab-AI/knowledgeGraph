@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: MV-0508
+    - source-domain:: mv
+    - owl:class:: mv:Employs
     - preferred-term:: employs
     - ontology:: true
     - public-access:: true

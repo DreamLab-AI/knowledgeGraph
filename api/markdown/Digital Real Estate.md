@@ -7,10 +7,12 @@ id:: digital-real-estate-ontology
   - term-id:: DT-0265
   - preferred-term:: Digital Real Estate
   - source-domain:: mv
+  - owl:class:: mv:DigitalRealEstate
   - status:: draft
   - definition:: Tokenized virtual land parcels and property within metaverse worlds that can be owned, developed, monetized, and traded as digital assets.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Virtual Economy]]
 - is-part-of:: [[VirtualWorld]]
 - has-part:: [[Spatial Coordinates]]

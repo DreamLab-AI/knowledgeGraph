@@ -7,7 +7,10 @@ Newton-Euler Dynamics formulation computes robot dynamics through recursive appl
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1014
-  - preferred-term:: NewtonEuler Dynamics formulation computes robot dynamics through recursive...
+  - preferred-term:: Newton-Euler Dynamics
+  - owl:class:: rb:NewtonEulerDynamics
+  - is-subclass-of:: [[Robotics]]
+  - definition:: Newton-Euler Dynamics formulation computes robot dynamics through recursive application of Newton's and Euler's equations to each link, enabling efficient calculation of forward and inverse dynamics.
   - source-domain:: rb
   - status:: draft
 

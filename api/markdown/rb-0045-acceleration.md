@@ -5,11 +5,12 @@ id:: rb-0045-acceleration-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0045
-  - preferred-term:: rb 0045 acceleration
+  - preferred-term:: Acceleration
   - source-domain:: rb
+  - owl:class:: rb:Acceleration
   - status:: draft
   - definition:: ### Primary Definition
 
 ### Relationships
-- is-subclass-of:: [[rb-0022-robot-dynamics]]
+- is-subclass-of:: [[Robotics]]
 - belongsToDomain:: [[RoboticsDomain]]

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0339
+	- source-domain:: mv
 	- preferred-term:: ETSI Domain Application + Tourism
 	- status:: draft
 	- public-access:: true

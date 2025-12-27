@@ -7,6 +7,7 @@ id:: hash-function-ontology
   - term-id:: DT-0027
   - preferred-term:: Hash Function
   - source-domain:: bc
+  - owl:class:: bc:HashFunction
   - status:: complete
   - definition:: One-way data transformation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

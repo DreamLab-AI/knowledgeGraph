@@ -19,7 +19,7 @@
 
 ### Domain & Architecture
 	- belongsToDomain:: [[AI-GroundedDomain]], [[CreativeMediaDomain]]
-	- maturity:: dt:Emerging
+	- maturity:: emerging
 
 ### Relationships
 - is-subclass-of:: [[ai:ModelArchitecture]]

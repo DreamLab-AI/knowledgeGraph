@@ -7,6 +7,7 @@ public:: true
   - term-id:: MV-9726
   - preferred-term:: public:: true
   - source-domain:: mv
+  - owl:class:: mv:PublicTrue
   - status:: draft
 
 ### GitHub Repositories
@@ -1961,3 +1962,6 @@ public:: true
 - /parse https://twitter.com/0xfoobar/status/1591142748207583235
 - https://twitter.com/0xfoobar/status/1591142748207583235
 - [[Knowledge Graphing]] MindsDB integration with
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

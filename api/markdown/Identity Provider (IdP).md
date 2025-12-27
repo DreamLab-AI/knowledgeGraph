@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0283
+	- source-domain:: mv
 	- preferred-term:: Identity Provider (IdP)
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: identity-provider-idp-relationships
 	  collapsed:: true
 		- is-part-of:: [[Identity Management System]]

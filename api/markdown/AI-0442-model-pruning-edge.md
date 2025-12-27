@@ -8,6 +8,7 @@ AI-0442-model-pruning-edge
   - preferred-term:: Ai 0442 Model Pruning Edge
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0442ModelPruningEdge
 
 ### Relationships
 - is-subclass-of:: [[ai:ModelArchitecture]]

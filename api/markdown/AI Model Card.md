@@ -76,16 +76,16 @@ id:: ai-model-card-relationships
 		  )
 
   # Property characteristics
-  TransitiveObjectProperty(dt:ispartof)
+  TransitiveObjectProperty(mv:ispartof)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:requires)
+  AsymmetricObjectProperty(mv:requires)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:dependson)
+  AsymmetricObjectProperty(mv:dependson)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:enables)
+  AsymmetricObjectProperty(mv:enables)
 ```
 - ## About AI Model Card
   id:: ai-model-card-about

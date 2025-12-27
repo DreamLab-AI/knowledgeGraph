@@ -1,24 +1,28 @@
 {
   "id": "Environmental Asset Market",
   "title": "Environmental Asset Market",
-  "content": "- ### OntologyBlock\n  id:: environmental-asset-market-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9894\n\t- preferred-term:: Environmental Asset Market\n\t- status:: stub\n\t- owl:class:: mv:EnvironmentalAssetMarket\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: environmental-asset-market-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: environmental-asset-market-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9894\n\t- source-domain:: mv\n\t- preferred-term:: Environmental Asset Market\n\t- status:: active\n\t- owl:class:: mv:EnvironmentalAssetMarket\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Blockchain-enabled trading platforms for environmental assets including carbon credits, renewable energy certificates, and biodiversity offsets, utilising tokenisation and smart contracts to enhance transparency, prevent double-counting, and enable fractional ownership of sustainability instruments.\n\t- #### Relationships\n\t  id:: environmental-asset-market-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Asset Market]]\n\t\t- related-to:: [[Carbon Credits]]\n\t\t- related-to:: [[ESG Reporting]]\n\t\t- enables:: [[Sustainable Finance]]\n\n## Market Overview\n\n### Carbon Credit Market\n- Global carbon credit market value: USD 1,142.40 billion (2024)\n- Projected growth: USD 4,983.7 billion by 2035\n- CAGR: 18%\n- 2023: 155+ million carbon credits retired, 258 million traded worldwide\n\n### Blockchain-Based Platforms\n- Global blockchain-based carbon credit platform market: USD 325 million (2024)\n- Projected: USD 567 million by 2031\n- CAGR: 8.9%\n- 40-50% year-over-year revenue growth for leading platforms (2024)\n\n## Tokenisation Process\n\n### How It Works\n- Carbon credits minted as tokens on blockchain\n- Tokens tradeable on various platforms\n- Fractionalisation into smaller units possible\n- Retirement process burns tokens and updates registries\n\n### Key Features\n- Smart contracts automate minting, retiring, and registry updates\n- Connection maintained to original registries (Verra, Gold Standard)\n- Prevention of double-counting through immutable records\n- Transparent audit trails\n\n## Major Projects and DAOs\n\n### KlimaDAO\n- Established August 2021\n- Accelerates carbon market adoption via blockchain\n- Transparent, secure, and accessible carbon trading\n\n### Regen Network\n- DAO model since 2021\n- REGEN token governance\n- Environmental asset tokenisation protocol\n\n### Toucan Protocol\n- Infrastructure for carbon credit tokenisation\n- Bridge between off-chain and on-chain carbon markets\n- Integration with DeFi ecosystem\n\n## Industry Partnerships\n\n### Enterprise Adoption\n- **IBM & Energy Blockchain Lab**: Blockchain carbon asset management platform with Chinese government\n- **Microsoft & ClimateTrade**: Blockchain carbon tracking for 2030 carbon-negative goals\n- **Verra**: Exploring blockchain integration for on-chain/off-chain verification\n\n## Challenges\n\n### Standardisation\n- Lack of unified global standards for blockchain-based credits\n- Regulatory scrutiny of methodology validation\n- Greenwashing risks with tokenised environmental assets\n\n### Technical Considerations\n- Integration with established frameworks (VCS, Gold Standard)\n- Credit verification and methodology validation\n- Cross-registry interoperability\n\n## Market Applications\n\n### Trading Instruments\n- Carbon credits and offsets\n- Renewable energy certificates (RECs)\n- Biodiversity credits\n- Water usage rights\n\n### Benefits\n- 40% increase in transaction speed (Shanghai Environment and Energy Exchange)\n- 15% reduction in transaction costs\n- Enhanced transparency and auditability\n- Real-time price discovery\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
     "Carbon Credit Token"
   ],
   "wiki_links": [
-    "metaverse"
+    "Sustainable Finance",
+    "metaverse",
+    "ESG Reporting",
+    "Carbon Credits",
+    "Digital Asset Market"
   ],
   "ontology": {
     "term_id": "MV-9894",
     "preferred_term": "Environmental Asset Market",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#EnvironmentalAssetMarket",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Blockchain-enabled trading platforms for environmental assets including carbon credits, renewable energy certificates, and biodiversity offsets, utilising tokenisation and smart contracts to enhance transparency, prevent double-counting, and enable fractional ownership of sustainability instruments.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +34,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Digital Asset Market"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Sustainable Finance"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +53,18 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Carbon Credits",
+        "ESG Reporting"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

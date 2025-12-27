@@ -7,6 +7,7 @@ id:: chain-state-ontology
   - term-id:: AI-0025
   - preferred-term:: Chain State
   - source-domain:: bc
+  - owl:class:: bc:ChainState
   - status:: complete
   - definition:: Current blockchain database state within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

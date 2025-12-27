@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0103
+	- source-domain:: mv
 	- preferred-term:: Content Delivery Network (CDN)
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[Infrastructure Domain]]
 	- implementedInLayer:: [[Physical Layer]], [[Network Layer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: content-delivery-network-cdn-relationships
 	  collapsed:: true
 		- is-part-of:: [[Network Infrastructure]]

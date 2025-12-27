@@ -7,6 +7,7 @@ id:: merkle-tree-ontology
   - term-id:: DT-1034
   - preferred-term:: Merkle Tree
   - source-domain:: bc
+  - owl:class:: bc:MerkleTree
   - status:: complete
   - definition:: Hierarchical hash data structure within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

@@ -4,13 +4,13 @@
 	- ontology:: true
 	- term-id:: DT-0005
 	- preferred-term:: Sheffield Advanced Manufacturing
-	- source-domain:: uk
-	- owl:class:: uk:SheffieldAdvancedManufacturing
+	- source-domain:: mv
+	- owl:class:: mv:SheffieldAdvancedManufacturing
 	- status:: active
 	- public-access:: true
 	- definition:: Sheffield's advanced manufacturing hub specialising in materials science, robotics, and Industry 4.0 technologies.
 	- maturity:: established
-	- owl:class:: uk:SheffieldAdvancedManufacturing
+	- owl:class:: mv:SheffieldAdvancedManufacturing
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: RegionalEcosystem
 	- belongsToDomain:: [[UKTechEcosystem]]
@@ -33,7 +33,7 @@ Sheffield Advanced Manufacturing refers to sheffield's advanced manufacturing hu
 - **Maturity**: established
 - **Region**: South Yorkshire
 - **Focus Areas**: Manufacturing, Materials, Robotics
-- **Owl:Class**: uk:UK-005-SheffieldAdvancedManufacturing
+- **Owl:Class**: mv:UK-005-SheffieldAdvancedManufacturing
 - **Owl:Physicality**: ConceptualEntity
 - **Owl:Role**: RegionalEcosystem
 - **Belongstodomain**: [[UKTechEcosystem]]

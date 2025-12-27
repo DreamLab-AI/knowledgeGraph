@@ -1,10 +1,11 @@
-Surface Marine Robot
-
 - ### OntologyBlock
-  id:: Surface Robot
+  id:: surface-robot-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1023
-  - preferred-term:: Surface Marine Robot
+  - preferred-term:: Surface Robot
   - source-domain:: rb
+  - owl:class:: rb:SurfaceRobot
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
+  - definition:: A surface marine robot operates on water surfaces for autonomous or remote-controlled missions including surveillance, environmental monitoring, and maritime operations.

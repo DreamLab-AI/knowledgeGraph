@@ -3,6 +3,7 @@
   collapsed:: true
 	- preferred-term:: Infrared Sensor
 	- source-domain:: mv
+  - owl:class:: mv:InfraredSensor
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition

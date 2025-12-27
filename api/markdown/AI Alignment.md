@@ -6,6 +6,7 @@
 	- preferred-term:: AI Alignment
 	- source-domain:: ai
 	- status:: draft
+  - owl:class:: ai:AiAlignment
 	- public-access:: true
 	- definition:: The process of making AI systems' behaviour and goals consistent with human values, preferences, and intentions. AI alignment encompasses technical methods and research aimed at ensuring AI systems act in accordance with human interests, even as they become more capable.
 	- source:: [[OpenAI]], [[Anthropic]], [[DeepMind]], [[IEEE P7000]]

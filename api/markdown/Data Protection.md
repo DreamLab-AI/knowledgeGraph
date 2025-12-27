@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0201
+	- source-domain:: mv
 	- preferred-term:: Data Protection
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[Middleware Layer]], [[Application Layer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: data-protection-relationships
 	  collapsed:: true
 		- is-part-of:: [[Security Framework]]

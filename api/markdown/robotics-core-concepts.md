@@ -1,11 +1,11 @@
-id:: robotics-core-concepts-ontology
-
 - ### OntologyBlock
-  id:: robotics-core-concepts
+  id:: robotics-core-concepts-ontology
   - ontology:: true
   - public-access:: true
-  - term-id:: MV-0879
-  - preferred-term:: robotics core concepts
+  - term-id:: RB-0879
+  - preferred-term:: Robotics Core Concepts
   - source-domain:: rb
+  - owl:class:: rb:RoboticsCoreConepts
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: A component of the metaverse ecosystem.
+  - definition:: Robotics core concepts encompass the fundamental principles, theories, and methodologies underpinning robotic systems including kinematics, dynamics, control, perception, and planning.

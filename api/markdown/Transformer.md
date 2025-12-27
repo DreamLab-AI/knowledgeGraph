@@ -8,7 +8,7 @@
 	- status:: mature
 	- public-access:: true
 	- definition:: ### Primary Definition
-	- maturity:: dt:Mature
+	- maturity:: mature
 	- owl:class:: ai:Transformer
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept

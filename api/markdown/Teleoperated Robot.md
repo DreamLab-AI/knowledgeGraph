@@ -1,11 +1,11 @@
-id:: teleoperated-robot-ontology
-
 - ### OntologyBlock
-  id:: Teleoperated Robot
+  id:: teleoperated-robot-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0009
   - preferred-term:: Teleoperated Robot
   - source-domain:: rb
+  - owl:class:: rb:TeleoperatedRobot
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: A teleoperated robot is remotely controlled by a human operator, typically using haptic feedback and video transmission for situational awareness.

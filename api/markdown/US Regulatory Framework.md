@@ -2,10 +2,41 @@ id:: us-regulatory-framework-ontology
 
 - ### OntologyBlock
   id:: US Regulatory Framework
-  - ontology:: true
-  - public-access:: true
-  - term-id:: BC-0483
-  - preferred-term:: US Regulatory Framework
-  - source-domain:: bc
-  - status:: stub
-  - definition:: A component of the blockchain ecosystem.
+	- ontology:: true
+	- public-access:: true
+	- term-id:: BC-0483
+	- preferred-term:: US Regulatory Framework
+	- source-domain:: bc
+	- owl:class:: bc:UsRegulatoryFramework
+	- status:: active
+	- definition:: The evolving system of laws, regulations, and agency oversight governing cryptocurrency and blockchain technology in the United States, primarily involving the SEC, CFTC, FinCEN, and state regulators with ongoing legislative efforts to establish clear jurisdictional boundaries.
+	- #### Relationships
+		- is-subclass-of:: [[Regulatory Framework]]
+		- related-to:: [[SEC]]
+		- related-to:: [[CFTC]]
+		- related-to:: [[Cryptocurrency Regulation]]
+- ## Overview
+	- The US regulatory framework for crypto involves multiple agencies with overlapping jurisdictions. The FIT21 Act passed the House in May 2024 with bipartisan support (279-136), representing the first major digital asset legislation. CFTC Chair stated 70% of digital assets are commodities, not securities.
+- ## Technical Details
+	- ### Regulatory Agencies
+		- **SEC**: Securities regulation, investor protection
+		- **CFTC**: Commodities and derivatives oversight
+		- **FinCEN**: Anti-money laundering, Bank Secrecy Act
+		- **State Regulators**: Money transmitter licenses (BitLicense)
+	- ### Key Legislation
+		- **FIT21**: Establishes CFTC jurisdiction over digital commodities
+		- **Travel Rule**: FATF Recommendation 16 for VASP compliance
+		- **Bank Secrecy Act**: AML/KYC requirements
+	- ### 2024-2025 Developments
+		- SEC-CFTC joint roundtable on crypto harmonization (Sept 2025)
+		- SEC "Project Crypto" for rule updates
+		- CFTC pilot program for tokenized collateral
+		- DOJ memo ending "regulation by prosecution"
+		- 47% increase in crypto startup funding H1 2025
+- ## Applications
+	- Cryptocurrency exchange licensing
+	- Token classification guidance
+	- DeFi regulatory compliance
+	- Stablecoin oversight
+	- NFT marketplace regulations
+

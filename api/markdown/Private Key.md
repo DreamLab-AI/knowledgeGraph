@@ -7,6 +7,7 @@ id:: private-key-ontology
   - term-id:: DT-0036
   - preferred-term:: Private Key
   - source-domain:: bc
+  - owl:class:: bc:PrivateKey
   - status:: complete
   - definition:: Secret cryptographic key within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

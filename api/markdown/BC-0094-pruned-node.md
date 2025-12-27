@@ -7,6 +7,7 @@ id:: pruned-node-ontology
   - term-id:: DT-0932
   - preferred-term:: Pruned Node
   - source-domain:: bc
+  - owl:class:: bc:PrunedNode
   - status:: complete
   - definition:: Partial history storage node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

@@ -7,6 +7,7 @@ id:: public-key-cryptography-ontology
   - term-id:: DT-1072
   - preferred-term:: Public-Key Cryptography
   - source-domain:: bc
+  - owl:class:: bc:PublicKeyCryptography
   - status:: complete
   - definition:: Asymmetric encryption system within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

@@ -1,17 +1,20 @@
 {
   "id": "Metaverse Architecture",
   "title": "Metaverse Architecture",
-  "content": "- ### OntologyBlock\n  id:: Metaverse Architecture\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9003\n  - preferred-term:: Metaverse Architecture\n  - source-domain:: mv\n  - status:: stub\n\n### Relationships",
+  "content": "- ### OntologyBlock\n  id:: Metaverse Architecture\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9003\n  - preferred-term:: Metaverse Architecture\n  - source-domain:: mv\n  - owl:class:: mv:MetaverseArchitecture\n  - status:: stub\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]",
   "backlinks": [
+    "Etsi Metaverse Domain Model",
     "Interoperability Framework",
     "Governance Model"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "Metaverse"
+  ],
   "ontology": {
     "term_id": "MV-9003",
     "preferred_term": "Metaverse Architecture",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/metaverse#MetaverseArchitecture",
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
@@ -25,7 +28,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "mv:MetaverseArchitecture",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -47,7 +50,6 @@
       "errors": [
         "Missing required property: last-updated",
         "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

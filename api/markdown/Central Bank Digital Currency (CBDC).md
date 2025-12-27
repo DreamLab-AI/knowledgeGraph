@@ -22,6 +22,7 @@
 	- maturity:: mature
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 id:: cbdc-relationships
 		- uses-data-structure:: [[Blockchain]]
 		- has-part:: [[Digital Currency Ledger]], [[Payment Protocol]], [[Identity System]], [[Transaction Validator]]
@@ -87,19 +88,19 @@ id:: cbdc-relationships
 		  SubClassOf(mv:DigitalPayments mv:VirtualProcess)
 
   # Property characteristics
-  TransitiveObjectProperty(dt:ispartof)
+  TransitiveObjectProperty(mv:ispartof)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:requires)
+  AsymmetricObjectProperty(mv:requires)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:dependson)
+  AsymmetricObjectProperty(mv:dependson)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:enables)
+  AsymmetricObjectProperty(mv:enables)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:implements)
+  AsymmetricObjectProperty(mv:implements)
 ```
 - ## About Central Bank Digital Currencies
   id:: cbdc-about

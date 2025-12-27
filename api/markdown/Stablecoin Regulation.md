@@ -7,5 +7,9 @@ id:: stablecoin-regulation-ontology
   - term-id:: BC-0479
   - preferred-term:: Stablecoin Regulation
   - source-domain:: bc
+  - owl:class:: bc:StablecoinRegulation
   - status:: stub
   - definition:: A component of the blockchain ecosystem.
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

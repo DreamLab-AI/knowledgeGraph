@@ -1,24 +1,28 @@
 {
   "id": "Virtual Community Practice",
   "title": "Virtual Community Practice",
-  "content": "- ### OntologyBlock\n  id:: virtual-community-practice-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10113\n\t- preferred-term:: Virtual Community Practice\n\t- status:: stub\n\t- owl:class:: mv:VirtualCommunityPractice\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: virtual-community-practice-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-community-practice-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10113\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Community Practice\n\t- status:: active\n\t- definition:: The methodologies, norms, and behaviors that govern how members interact, collaborate, and build relationships within virtual community platforms, including governance structures, social conventions, and collective practices that shape online community culture.\n\t- owl:class:: mv:VirtualCommunityPractice\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Community Governance]]\n\t\t- related-to:: [[Virtual Community Platform]]\n\t\t- related-to:: [[Digital Citizenship]]\n\t\t- related-to:: [[Online Moderation]]\n\t  id:: virtual-community-practice-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual community practice encompasses the social norms, governance structures, and collective behaviors that define how members engage within metaverse platforms. As virtual communities grow, establishing effective practices for interaction, conflict resolution, and community building becomes essential for creating healthy, sustainable virtual spaces.\n- ## Technical Details\n\t- ### Governance Models\n\t\t- **Centralized Governance**: Platform-controlled rules and moderation\n\t\t- **Decentralized Governance**: DAO-based community voting\n\t\t- **Hybrid Models**: Platform guidelines with community input\n\t\t- **Creator-Led**: Individual world owners set local rules\n\t- ### Community Management\n\t\t- Content moderation and safety systems\n\t\t- Community guidelines enforcement\n\t\t- Dispute resolution mechanisms\n\t\t- Trust and safety teams\n\t- ### Social Conventions\n\t\t- Avatar etiquette and personal space\n\t\t- Communication norms and language policies\n\t\t- Event hosting protocols\n\t\t- Newcomer onboarding practices\n- ## Applications\n\t- Community guideline development\n\t- Virtual world governance design\n\t- Online safety and moderation\n\t- Cross-cultural community building\n\t- Digital citizenship education",
   "backlinks": [
     "Digital Ritual"
   ],
   "wiki_links": [
-    "metaverse"
+    "Digital Citizenship",
+    "metaverse",
+    "Online Moderation",
+    "Virtual Community Platform",
+    "Community Governance"
   ],
   "ontology": {
     "term_id": "MV-10113",
     "preferred_term": "Virtual Community Practice",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#VirtualCommunityPractice",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The methodologies, norms, and behaviors that govern how members interact, collaborate, and build relationships within virtual community platforms, including governance structures, social conventions, and collective practices that shape online community culture.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Community Governance"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +51,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Virtual Community Platform",
+        "Digital Citizenship",
+        "Online Moderation"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

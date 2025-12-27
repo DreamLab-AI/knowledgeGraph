@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0004
+	- source-domain:: mv
 	- preferred-term:: AugmentedReality
 	- status:: active
 	- public-access:: true
@@ -27,3 +28,6 @@
 ;; Data Properties
 (AnnotationAssertion dcterms:identifier :Augmentedreality "mv-1761742247883"^^xsd:string)
 ```
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

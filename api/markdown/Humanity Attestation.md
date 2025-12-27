@@ -12,10 +12,12 @@ id:: humanity-attestation-ontology
   - term-id:: DT-0236
   - preferred-term:: Humanity Attestation
   - source-domain:: bc
+  - owl:class:: bc:HumanityAttestation
   - status:: draft
   - definition:: Verification process that confirms a digital identity represents a human rather than an automated agent, bot, or AI system.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Identity Verification]]
 - is-part-of:: [[Authentication System]]
 - has-part:: [[Behavioral Analysis]]

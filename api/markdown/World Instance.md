@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0318
+	- source-domain:: mv
 	- preferred-term:: World Instance
 	- status:: draft
 	- public-access:: true
@@ -65,3 +66,5 @@
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
 
+### Relationships
+- is-subclass-of:: [[Metaverse]]

@@ -3,11 +3,12 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0873
+	- source-domain:: ai
 	- preferred-term:: Behavioral Analytics
 	- status:: complete
 	- public-access:: true
 	- source:: Chimera Prime Research
-	- maturity:: dt:Established
+	- maturity:: established
 	- owl:class:: ai:BehavioralAnalytics
 	- belongsToDomain:: [[Artificial Intelligence]]
 

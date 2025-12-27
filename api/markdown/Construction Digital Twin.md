@@ -7,10 +7,12 @@ id:: construction-digital-twin-ontology
   - term-id:: DT-1040
   - preferred-term:: Construction Digital Twin
   - source-domain:: mv
+  - owl:class:: mv:ConstructionDigitalTwin
   - status:: draft
   - definition:: An integrated 3D model of built assets synchronized with real-time construction, operational, and maintenance data, enabling lifecycle management from design through decommissioning.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Digital Twin]]
 - is-part-of:: [[Smart Building Ecosystem]]
 - has-part:: [[Asset Database]]

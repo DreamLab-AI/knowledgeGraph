@@ -7,6 +7,7 @@ id:: transaction-confirmation-ontology
   - term-id:: DT-0020
   - preferred-term:: Transaction Confirmation
   - source-domain:: bc
+  - owl:class:: bc:TransactionConfirmation
   - status:: complete
   - definition:: Inclusion in blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

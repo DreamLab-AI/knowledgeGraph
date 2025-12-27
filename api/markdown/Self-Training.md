@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0281
+	- source-domain:: mv
 	- preferred-term:: Self Training
 	- status:: draft
 	- public-access:: true

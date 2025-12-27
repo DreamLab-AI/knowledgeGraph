@@ -7,6 +7,7 @@ id:: etsi_domain_infrastructure___governance-ontology
   - term-id:: MV-0024
   - preferred-term:: ETSI_Domain_Infrastructure___Governance
   - source-domain:: mv
+  - owl:class:: mv:EtsiDomainInfrastructureGovernance
   - status:: draft
   - definition:: A component of the metaverse ecosystem.
 

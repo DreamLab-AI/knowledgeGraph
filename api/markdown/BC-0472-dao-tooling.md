@@ -7,6 +7,7 @@ id:: bc-0472-dao-tooling-ontology
   - term-id:: BC-0472
   - preferred-term:: DAO Tooling
   - source-domain:: bc
+  - owl:class:: bc:DaoTooling
   - status:: stub
   - definition:: A component of the blockchain ecosystem.
 

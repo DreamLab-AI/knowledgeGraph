@@ -9,7 +9,8 @@
 	- public-access:: true
 	- definition:: "Digital canvases in telepresence platforms enabling distributed team members to simultaneously draw, write, annotate, and manipulate visual content (text, images, diagrams, sticky notes) in real-time, replicating physical whiteboard collaboration dynamics through multi-user synchronisation and persistent storage of collaborative artefacts."
 	- maturity:: mature
-	- owl:class:: tele:SharedWhiteboards
+	- owl:class:: tc:SharedWhiteboards
+	- is-subclass-of:: [[TELE-002-telecollaboration]]
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 

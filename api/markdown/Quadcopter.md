@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0122
+	- source-domain:: rb
 	- preferred-term:: Quadcopter
 	- status:: complete
 	- public-access:: true
@@ -11,3 +12,4 @@
 	- maturity:: established
 	- owl:class:: rb:Quadcopter
 	- belongsToDomain:: [[Robotics]]
+	- is-subclass-of:: [[Robotics]]

@@ -7,10 +7,12 @@ id:: data-storage-layer-ontology
   - term-id:: DT-0162
   - preferred-term:: Data Storage Layer
   - source-domain:: mv
+  - owl:class:: mv:DataStorageLayer
   - status:: draft
   - definition:: Software layer managing persistent storage, retrieval, and lifecycle of digital assets, metadata, world state, user data, and transactional records in metaverse systems.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Metaverse Stack]]
 - has-part:: [[Cache Layer]]
 - has-part:: [[Database System]]

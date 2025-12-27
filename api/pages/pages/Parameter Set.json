@@ -1,24 +1,29 @@
 {
   "id": "Parameter Set",
   "title": "Parameter Set",
-  "content": "- ### OntologyBlock\n  id:: parameter-set-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9991\n\t- preferred-term:: Parameter Set\n\t- status:: stub\n\t- owl:class:: mv:ParameterSet\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: parameter-set-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: parameter-set-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9991\n\t- source-domain:: mv\n\t- preferred-term:: Parameter Set\n\t- status:: active\n\t- definition:: A collection of configurable values that define the behavior, appearance, or operation of a system, algorithm, or model, allowing users to store, recall, and modify settings to achieve different outputs or modes of operation.\n\t- owl:class:: mv:ParameterSet\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: parameter-set-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Configuration]]\n\t\t- related-to:: [[System Settings]]\n\t\t- related-to:: [[Presets]]\n\t\t- related-to:: [[Model Configuration]]\n\t\t- enables:: [[Reproducibility]]\n\t- #### Applications\n\t  collapsed:: true\n\t\t- Machine learning model hyperparameters\n\t\t- Audio synthesizer presets\n\t\t- Graphics rendering settings\n\t\t- Simulation configuration\n\t\t- Algorithm tuning parameters\n\t- #### Management Features\n\t  collapsed:: true\n\t\t- Save and load functionality for preset management\n\t\t- Version control for parameter history\n\t\t- Interpolation between parameter sets\n\t\t- Random generation for exploration\n\t\t- Export and import for sharing configurations",
   "backlinks": [
     "Procedural Texture"
   ],
   "wiki_links": [
-    "metaverse"
+    "System Settings",
+    "metaverse",
+    "Presets",
+    "Reproducibility",
+    "Model Configuration",
+    "Configuration"
   ],
   "ontology": {
     "term_id": "MV-9991",
     "preferred_term": "Parameter Set",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ParameterSet",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A collection of configurable values that define the behavior, appearance, or operation of a system, algorithm, or model, allowing users to store, recall, and modify settings to achieve different outputs or modes of operation.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Configuration"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Reproducibility"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "System Settings",
+        "Presets",
+        "Model Configuration"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

@@ -8,6 +8,7 @@ id:: unknown-ontology
   - preferred-term:: Trojan Attack
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:TrojanAttack
   - definition:: A backdoor attack on AI models, often emphasizing supply chain compromise, where a pre-trained model or training pipeline is maliciously modified to contain hidden triggers that cause specific attacker-defined behaviors when activated, while maintaining normal performance otherwise.
 
 ### Relationships

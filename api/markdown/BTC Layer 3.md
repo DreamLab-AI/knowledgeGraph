@@ -7,6 +7,7 @@ id:: rgb-protocol
   - term-id:: BC-9955
   - preferred-term:: id:: rgbprotocol
   - source-domain:: bc
+  - owl:class:: bc:IdRgbprotocol
   - status:: draft
 
 ### Technical Architecture
@@ -171,3 +172,6 @@ id:: rgb-protocol
 	- [[Consensus Mechanisms]] - Proof of Transfer, Proof of Work
 	- [[Cross-Chain Bridges]] - Interoperability infrastructure
 	- [[AI Smart Contracts]] - Autonomous contract execution with AI
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

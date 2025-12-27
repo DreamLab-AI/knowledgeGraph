@@ -4,6 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0169
 	- source-domain:: ai
+  - owl:class:: ai:EnvironmentalSustainability
 	- preferred-term:: Environmental Sustainability
 	- status:: draft
 	- public-access:: true

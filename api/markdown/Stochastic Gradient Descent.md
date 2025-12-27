@@ -8,6 +8,7 @@ id:: unknown-ontology
   - preferred-term:: Stochastic Gradient Descent
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:StochasticGradientDescent
   - definition:: ### Primary Definition
 
 ### Relationships

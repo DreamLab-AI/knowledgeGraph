@@ -1,24 +1,29 @@
 {
   "id": "Ritual Artifact",
   "title": "Ritual Artifact",
-  "content": "- ### OntologyBlock\n  id:: ritual-artifact-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10025\n\t- preferred-term:: Ritual Artifact\n\t- status:: stub\n\t- owl:class:: mv:RitualArtifact\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: ritual-artifact-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: ritual-artifact-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10025\n\t- source-domain:: mv\n\t- preferred-term:: Ritual Artifact\n\t- status:: active\n\t- definition:: Digital objects within virtual worlds that hold cultural, spiritual, or ceremonial significance, often represented as NFTs enabling communities to preserve and share cultural heritage through blockchain-verified authenticity and ownership.\n\t- owl:class:: mv:RitualArtifact\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: ritual-artifact-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Heritage]]\n\t\t- related-to:: [[Cultural Preservation]]\n\t\t- related-to:: [[NFT Collections]]\n\t\t- related-to:: [[Virtual Museums]]\n\t\t- enables:: [[Digital Cultural Heritage]]\n\t- #### Applications\n\t  collapsed:: true\n\t\t- Virtual museum exhibits\n\t\t- Indigenous cultural preservation\n\t\t- Religious ceremony digitization\n\t\t- Archaeological reconstruction\n\t\t- Community ritual documentation\n\t- #### Preservation Methods\n\t  collapsed:: true\n\t\t- 3D scanning of physical artifacts\n\t\t- Photogrammetry reconstruction\n\t\t- Blockchain provenance tracking\n\t\t- IPFS decentralized storage\n\t\t- Metadata standards for cultural context",
   "backlinks": [
     "Digital Ritual"
   ],
   "wiki_links": [
-    "metaverse"
+    "Digital Heritage",
+    "Digital Cultural Heritage",
+    "metaverse",
+    "Virtual Museums",
+    "NFT Collections",
+    "Cultural Preservation"
   ],
   "ontology": {
     "term_id": "MV-10025",
     "preferred_term": "Ritual Artifact",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#RitualArtifact",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Digital objects within virtual worlds that hold cultural, spiritual, or ceremonial significance, often represented as NFTs enabling communities to preserve and share cultural heritage through blockchain-verified authenticity and ownership.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Digital Heritage"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Digital Cultural Heritage"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Cultural Preservation",
+        "NFT Collections",
+        "Virtual Museums"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

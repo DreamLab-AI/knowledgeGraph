@@ -1,7 +1,7 @@
 {
   "id": "NftMinting",
   "title": "NftMinting",
-  "content": "- ### OntologyBlock\n  id:: nftminting-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-1000\n\t- preferred-term:: NftMinting\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A nft minting component in the Blockchain domain that enables DigitalAssetWorkflow.\n\t- source:: Generated from bridge validation\n\t- maturity:: emerging\n\t- owl:class:: bc:NftMinting\n\t- #### Relationships\n\t  id:: nftminting-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Process]]",
+  "content": "- ### OntologyBlock\n  id:: nftminting-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-1000\n\t- source-domain:: bc\n\t- preferred-term:: NftMinting\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A nft minting component in the Blockchain domain that enables DigitalAssetWorkflow.\n\t- source:: Generated from bridge validation\n\t- maturity:: emerging\n\t- owl:class:: bc:NftMinting\n\t- #### Relationships\n\t  id:: nftminting-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Process]]",
   "backlinks": [],
   "wiki_links": [
     "Blockchain Process"
@@ -11,7 +11,7 @@
     "preferred_term": "NftMinting",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/blockchain#NftMinting",
-    "source_domain": null,
+    "source_domain": "bc",
     "domain": "bc",
     "domain_full_name": "Blockchain",
     "definition": "A nft minting component in the Blockchain domain that enables DigitalAssetWorkflow.",
@@ -48,7 +48,6 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"

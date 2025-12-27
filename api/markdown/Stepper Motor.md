@@ -1,10 +1,11 @@
-Stepper Motor refers to stepper motor divides full rotation into discrete steps for open-loop position control.
-
 - ### OntologyBlock
-  id:: Stepper Motor
+  id:: stepper-motor-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1035
   - preferred-term:: Stepper Motor
   - source-domain:: rb
+  - owl:class:: rb:StepperMotor
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
+  - definition:: A stepper motor divides full rotation into discrete steps for open-loop position control.

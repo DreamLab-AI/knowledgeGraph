@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0530
+    - source-domain:: bc
+    - owl:class:: bc:EmissionSchedule
     - preferred-term:: Emission Schedule
     - ontology:: true
     - public-access:: true

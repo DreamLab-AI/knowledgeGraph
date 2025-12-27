@@ -4,8 +4,8 @@
 	- ontology:: true
 	- term-id:: DT-0012
 	- preferred-term:: Regulatory Compliance
-	- source-domain:: pc
-	- owl:class:: pc:RegulatoryCompliance
+	- source-domain:: ai
+	- owl:class:: ai:RegulatoryCompliance
 	- status:: complete
 	- public-access:: true
 
@@ -13,7 +13,7 @@
 
 
 ### OWL Classification
-	- owl:class:: aigo:RegulatoryCompliance
+	- owl:class:: ai:RegulatoryCompliance
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- owl:inferred-class:: ConceptualConcept
@@ -48,7 +48,7 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:RegulatoryCompliance
+    - owl:class:: ai:RegulatoryCompliance
     - owl:physicality:: ConceptualEntity
     - owl:role:: Concept
     - owl:inferred-class:: ConceptualConcept

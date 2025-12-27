@@ -1,11 +1,11 @@
-id:: swarmrobotics-ontology
-
 - ### OntologyBlock
-  id:: SwarmRobotics
+  id:: swarmrobotics-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0107
-  - preferred-term:: SwarmRobotics
+  - preferred-term:: Swarm Robotics
   - source-domain:: rb
+  - owl:class:: rb:SwarmRobotics
+  - is-subclass-of:: [[Robotics]]
   - status:: active
-  - definition:: A field studying the coordination and collective behavior of multiple simple robots through local rules and interactions, inspired by biological swarm systems like ant colonies and bee swarms.
+  - definition:: Swarm robotics is a field studying the coordination and collective behaviour of multiple simple robots through local rules and interactions, inspired by biological swarm systems like ant colonies and bee swarms.

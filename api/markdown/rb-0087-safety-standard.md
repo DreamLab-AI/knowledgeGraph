@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0087
+	- source-domain:: rb
 	- preferred-term:: rb 0087 safety standard
 	- status:: draft
 	- public-access:: true

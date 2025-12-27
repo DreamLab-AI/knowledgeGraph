@@ -1,24 +1,29 @@
 {
   "id": "Processing Hardware",
   "title": "Processing Hardware",
-  "content": "- ### OntologyBlock\n  id:: processing-hardware-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10012\n\t- preferred-term:: Processing Hardware\n\t- status:: stub\n\t- owl:class:: mv:ProcessingHardware\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: processing-hardware-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: processing-hardware-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10012\n\t- source-domain:: mv\n\t- preferred-term:: Processing Hardware\n\t- status:: active\n\t- definition:: Specialized computing components including CPUs, GPUs, and accelerators that execute computational operations for graphics rendering, artificial intelligence workloads, and real-time data processing in immersive digital environments.\n\t- owl:class:: mv:ProcessingHardware\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: processing-hardware-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Physical Hardware]]\n\t\t- related-to:: [[GPU Computing]]\n\t\t- related-to:: [[Real Time Rendering]]\n\t\t- related-to:: [[AI Acceleration]]\n\t\t- enables:: [[High Performance Computing]]\n\t- #### Hardware Types\n\t  collapsed:: true\n\t\t- CPU (Central Processing Unit) for sequential task execution\n\t\t- GPU (Graphics Processing Unit) for parallel processing\n\t\t- TPU (Tensor Processing Unit) for AI workloads\n\t\t- FPGA for specialized acceleration\n\t\t- DPU (Data Processing Unit) for data centre operations\n\t- #### Market Context\n\t  collapsed:: true\n\t\t- GPU as a Service market valued at $4.31B in 2024\n\t\t- Projected growth to $49.84B by 2032\n\t\t- AI-focused processors driving 2024 developments\n\t\t- GPU critical for LLM training and inference",
   "backlinks": [
     "Compute Layer"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "GPU Computing",
+    "Real Time Rendering",
+    "High Performance Computing",
+    "AI Acceleration",
+    "Physical Hardware"
   ],
   "ontology": {
     "term_id": "MV-10012",
     "preferred_term": "Processing Hardware",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ProcessingHardware",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Specialized computing components including CPUs, GPUs, and accelerators that execute computational operations for graphics rendering, artificial intelligence workloads, and real-time data processing in immersive digital environments.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Physical Hardware"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "High Performance Computing"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "GPU Computing",
+        "Real Time Rendering",
+        "AI Acceleration"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

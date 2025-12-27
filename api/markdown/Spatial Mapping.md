@@ -5,6 +5,8 @@ id:: spatialmapping-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: AI-0854
+  - source-domain:: ai
+  - owl:class:: ai:SpatialMapping
   - preferred-term:: Spatial Mapping
   - status:: complete
 

@@ -7,6 +7,8 @@ id:: immersive-gaming-ontology
   - term-id:: MV-9924
   - preferred-term:: Immersive Gaming
   - source-domain:: mv
+  - owl:class:: mv:ImmersiveGaming
   - status:: stub
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]

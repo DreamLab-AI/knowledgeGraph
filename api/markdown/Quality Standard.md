@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: MV-0192
+    - source-domain:: mv
+    - owl:class:: mv:QualityStandard
     - preferred-term:: Quality Standard
     - ontology:: true
     - public-access:: true

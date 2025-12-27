@@ -1,17 +1,16 @@
-id:: autonomous-agent-ontology
-
 - ### OntologyBlock
-  id:: Autonomous Agent
+  id:: autonomous-agent-ontology
   - ontology:: true
   - public-access:: true
-  - term-id:: DT-0231
+  - term-id:: RB-0231
   - preferred-term:: Autonomous Agent
   - source-domain:: rb
+  - owl:class:: rb:AutonomousAgent
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: Software entity capable of acting autonomously to achieve goals within a metaverse, exhibiting goal-directed behavior, decision-making, and adaptive responses without continuous human intervention.
+  - definition:: An autonomous agent is a software or robotic entity capable of acting independently to achieve goals, exhibiting goal-directed behaviour, decision-making, and adaptive responses without continuous human intervention.
 
 ### Relationships
-- is-subclass-of:: [[AutonomousAIAgents]]
 - is-part-of:: [[AI System]]
 - is-part-of:: [[Autonomous System]]
 - is-part-of:: [[Intelligent Environment]]

@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0149
+    - source-domain:: tc
+    - owl:class:: tc:StateSpaceControl
     - preferred-term:: State Space Control
     - ontology:: true
     - public-access:: true

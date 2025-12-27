@@ -1,24 +1,28 @@
 {
   "id": "User Context Awareness",
   "title": "User Context Awareness",
-  "content": "- ### OntologyBlock\n  id:: user-context-awareness-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10096\n\t- preferred-term:: User Context Awareness\n\t- status:: stub\n\t- owl:class:: mv:UserContextAwareness\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: user-context-awareness-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: user-context-awareness-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10096\n\t- source-domain:: mv\n\t- preferred-term:: User Context Awareness\n\t- status:: active\n\t- definition:: The capability of digital systems to understand and adapt to a user's current situation, including their location, activity, preferences, device capabilities, and environmental factors to provide personalized and relevant experiences.\n\t- owl:class:: mv:UserContextAwareness\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Context-Aware Computing]]\n\t\t- related-to:: [[Personalization]]\n\t\t- related-to:: [[Ambient Intelligence]]\n\t\t- related-to:: [[User Experience]]\n\t  id:: user-context-awareness-relationships\n\t  collapsed:: true\n- ## Overview\n\t- User context awareness enables systems to adapt experiences based on understanding the user's current situation. In metaverse contexts, this includes physical environment awareness, social context, device capabilities, and user state detection.\n- ## Technical Details\n\t- ### Context Types\n\t\t- **Physical Context**: Location, movement, posture, gestures\n\t\t- **Social Context**: Nearby users, relationships, group activities\n\t\t- **Device Context**: Hardware capabilities, battery, connectivity\n\t\t- **Temporal Context**: Time of day, session duration, history\n\t\t- **Environmental Context**: Lighting, noise, physical space\n\t- ### Detection Methods\n\t\t- Sensor fusion (IMU, cameras, depth sensors)\n\t\t- Machine learning inference\n\t\t- User preference learning\n\t\t- Behavioral pattern recognition\n\t- ### Privacy Considerations\n\t\t- Consent for context collection\n\t\t- On-device vs cloud processing\n\t\t- Data minimization principles\n\t\t- User control over adaptation\n- ## Applications\n\t- Adaptive VR/AR interfaces\n\t- Smart environment switching\n\t- Personalized content recommendations\n\t- Accessibility adaptations\n\t- Social presence optimization",
   "backlinks": [
     "Feedback Mechanism"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Ambient Intelligence",
+    "Context-Aware Computing",
+    "Personalization",
+    "User Experience"
   ],
   "ontology": {
     "term_id": "MV-10096",
     "preferred_term": "User Context Awareness",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#UserContextAwareness",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The capability of digital systems to understand and adapt to a user's current situation, including their location, activity, preferences, device capabilities, and environmental factors to provide personalized and relevant experiences.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Context-Aware Computing"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +51,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Personalization",
+        "Ambient Intelligence",
+        "User Experience"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

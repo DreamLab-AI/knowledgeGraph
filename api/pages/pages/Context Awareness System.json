@@ -1,24 +1,35 @@
 {
   "id": "Context Awareness System",
   "title": "Context Awareness System",
-  "content": "- ### OntologyBlock\n  id:: context-awareness-system-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9831\n\t- preferred-term:: Context Awareness System\n\t- status:: stub\n\t- owl:class:: mv:ContextAwarenessSystem\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: context-awareness-system-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: context-awareness-system-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9831\n\t- source-domain:: mv\n\t- preferred-term:: Context Awareness System\n\t- definition:: A technology framework that captures, processes, and interprets contextual information about users and their environments using IoT sensors, location tracking, and AI analytics to enable adaptive services, personalized experiences, and intelligent decision-making in virtual and physical spaces.\n\t- status:: active\n\t- owl:class:: mv:ContextAwarenessSystem\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: context-awareness-system-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Intelligent Systems]]\n\t\t- enables:: [[Location Based Services]], [[Adaptive Services]], [[Situational Awareness]]\n\t\t- requires:: [[IoT Sensors]], [[Data Analytics]], [[Network Infrastructure]]\n\t\t- related-to:: [[Context Aware Response]], [[Smart Environment]], [[Ubiquitous Computing]]\n- ## Technical Details\n\t- **Context Types**:\n\t\t- User location (most common context)\n\t\t- Current activity and situation\n\t\t- Mood and social context\n\t\t- Task and goals\n\t\t- Environmental conditions\n\t- **Sensor Technologies**:\n\t\t- Smartphones, tablets, wearable devices\n\t\t- Smart sensors, cameras, microphones\n\t\t- GPS devices, beacons, RFID\n\t\t- IoT environmental sensors\n\t- **2024 Advancements**:\n\t\t- AI, 5G, and edge computing improving indoor positioning\n\t\t- Contextual analysis providing \"why\" and \"how\" of movement patterns\n\t\t- Real-time precise location data via connected IoT devices\n\t- **Applications by Sector**:\n\t\t- Retail: Customer navigation, targeted promotions\n\t\t- Manufacturing: Equipment tracking, production optimization\n\t\t- Logistics: Real-time shipment tracking\n- ## Applications\n\t- Indoor navigation and wayfinding\n\t- Personalized retail experiences\n\t- Smart building automation\n\t- Healthcare patient monitoring\n\t- Industrial asset tracking",
   "backlinks": [
+    "Context Aware Response",
     "Procedural Audio Generator"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Intelligent Systems",
+    "Location Based Services",
+    "Context Aware Response",
+    "Data Analytics",
+    "Situational Awareness",
+    "Adaptive Services",
+    "IoT Sensors",
+    "Network Infrastructure",
+    "Smart Environment",
+    "Ubiquitous Computing"
   ],
   "ontology": {
     "term_id": "MV-9831",
     "preferred_term": "Context Awareness System",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ContextAwarenessSystem",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A technology framework that captures, processes, and interprets contextual information about users and their environments using IoT sensors, location tracking, and AI analytics to enable adaptive services, personalized experiences, and intelligent decision-making in virtual and physical spaces.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +41,22 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Intelligent Systems"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "IoT Sensors",
+      "Data Analytics",
+      "Network Infrastructure"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Location Based Services",
+      "Adaptive Services",
+      "Situational Awareness"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +66,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Context Aware Response",
+        "Smart Environment",
+        "Ubiquitous Computing"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

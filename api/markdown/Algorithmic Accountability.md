@@ -10,11 +10,11 @@
 	- public-access:: true
 	- definition:: Algorithmic Accountability is a responsibility framework that ensures AI systems and their developers are answerable for the decisions, outcomes, and impacts produced by algorithmic processes, including mechanisms for redress, transparency, and oversight.
 	- source:: [[IEEE P2863]]
-	- maturity:: dt:Mature
-	- owl:class:: aigo:AIGovernancePrinciple
+	- maturity:: mature
+	- owl:class:: ai:AIGovernancePrinciple
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
-	- owl:inferred-class:: aigo:VirtualProcess
+	- owl:inferred-class:: ai:VirtualProcess
 	- belongsToDomain:: [[AIEthicsDomain]]
 	- implementedInLayer:: [[ConceptualLayer]]
 	- #### Relationships
@@ -69,10 +69,10 @@ Algorithmic Accountability refers to algorithmic accountability is a responsibil
 - **Maturity**: mature
 - **Source**: [[IEEE P2863]]
 - **Authority Score**: 0.95
-- **Owl:Class**: aigo:AIGovernancePrinciple
+- **Owl:Class**: ai:AIGovernancePrinciple
 - **Owl:Physicality**: VirtualEntity
 - **Owl:Role**: Process
-- **Owl:Inferred Class**: aigo:VirtualProcess
+- **Owl:Inferred Class**: ai:VirtualProcess
 - **Belongstodomain**: [[AIEthicsDomain]]
 - **Implementedinlayer**: [[ConceptualLayer]]
 - **Is Subclass Of**: [[AIGovernancePrinciple]], [[EthicalFramework]], [[RegulatoryCompliance]]

@@ -1,26 +1,31 @@
 {
   "id": "Spatial Interaction",
   "title": "Spatial Interaction",
-  "content": "- ### OntologyBlock\n  id:: spatial-interaction-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10059\n\t- preferred-term:: Spatial Interaction\n\t- status:: stub\n\t- owl:class:: mv:SpatialInteraction\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: spatial-interaction-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: spatial-interaction-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10059\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Interaction\n\t- status:: active\n\t- definition:: The design and implementation of user input methods within extended reality environments that enable natural manipulation of virtual objects through gestures, eye tracking, voice commands, and physical movement in three-dimensional space.\n\t- owl:class:: mv:SpatialInteraction\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: spatial-interaction-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Human Computer Interaction]]\n\t\t- related-to:: [[Gesture Recognition]]\n\t\t- related-to:: [[Eye Tracking]]\n\t\t- related-to:: [[Spatial Computing]]\n\t\t- enables:: [[Immersive User Experience]]\n\t- #### Interaction Methods\n\t  collapsed:: true\n\t\t- Hand gesture recognition for object manipulation\n\t\t- Eye tracking for gaze-based selection\n\t\t- Voice commands for hands-free control\n\t\t- 6DoF controller input for precise positioning\n\t\t- Haptic feedback for tactile response\n\t- #### Market Context\n\t  collapsed:: true\n\t\t- XR market projected at $183.96B in 2024\n\t\t- Growth to $1,706.96B by 2032 (CAGR 32.1%)\n\t\t- Apple Vision Pro and Meta Quest 3 leading devices\n\t\t- AI-powered spatial intelligence emerging trend",
   "backlinks": [
     "Extended Reality (XR)",
     "Human Interface Device",
     "ETSI_Domain_Immersive___Reality_Capture"
   ],
   "wiki_links": [
-    "metaverse"
+    "Gesture Recognition",
+    "Spatial Computing",
+    "metaverse",
+    "Human Computer Interaction",
+    "Immersive User Experience",
+    "Eye Tracking"
   ],
   "ontology": {
     "term_id": "MV-10059",
     "preferred_term": "Spatial Interaction",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#SpatialInteraction",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The design and implementation of user input methods within extended reality environments that enable natural manipulation of virtual objects through gestures, eye tracking, voice commands, and physical movement in three-dimensional space.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -32,12 +37,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Human Computer Interaction"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Immersive User Experience"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -47,15 +56,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Gesture Recognition",
+        "Eye Tracking",
+        "Spatial Computing"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0141
+	- source-domain:: mv
 	- preferred-term:: Edge Computing Node
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[InfrastructureDomain]], [[ComputationAndIntelligenceDomain]]
 	- implementedInLayer:: [[PhysicalLayer]], [[ComputeLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: edge-computing-node-relationships
 	  collapsed:: true
 		- is-part-of:: [[Edge Mesh Network]]

@@ -3,6 +3,8 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0362
+	- source-domain:: ai
+	- owl:class:: ai:ImageGeneration
 	- preferred-term:: Image Generation
 	- status:: draft
 	- public-access:: true

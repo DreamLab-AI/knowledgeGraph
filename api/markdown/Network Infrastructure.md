@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-1005
+	- source-domain:: mv
 	- preferred-term:: Network Infrastructure
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[InfrastructureDomain]]
 	- implementedInLayer:: [[Physical Layer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: network-infrastructure-relationships
 	  collapsed:: true
 		- has-part:: [[Data Center]]

@@ -1,24 +1,28 @@
 {
   "id": "Virtual Environment Specification",
   "title": "Virtual Environment Specification",
-  "content": "- ### OntologyBlock\n  id:: virtual-environment-specification-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10121\n\t- preferred-term:: Virtual Environment Specification\n\t- status:: stub\n\t- owl:class:: mv:VirtualEnvironmentSpecification\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: virtual-environment-specification-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-environment-specification-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10121\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Environment Specification\n\t- status:: active\n\t- definition:: Technical standards and requirements documents that define the parameters, capabilities, and constraints of virtual environments, including rendering requirements, interaction models, physics simulation rules, and interoperability protocols.\n\t- owl:class:: mv:VirtualEnvironmentSpecification\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Technical Standards]]\n\t\t- related-to:: [[Virtual Environment]]\n\t\t- related-to:: [[Interoperability]]\n\t\t- related-to:: [[OpenXR]]\n\t  id:: virtual-environment-specification-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual environment specifications define technical requirements for creating interoperable metaverse experiences. These standards ensure consistent user experiences across platforms and enable asset portability. Key specifications cover rendering, physics, spatial audio, and interaction models.\n- ## Technical Details\n\t- ### Specification Categories\n\t\t- **Rendering Requirements**: Resolution, frame rate, lighting models\n\t\t- **Physics Simulation**: Gravity, collision detection, material properties\n\t\t- **Interaction Models**: Input methods, gesture recognition, haptics\n\t\t- **Audio Standards**: Spatial audio, HRTF, acoustic simulation\n\t- ### Key Standards\n\t\t- OpenXR for cross-platform XR development\n\t\t- glTF for 3D model exchange\n\t\t- USD (Universal Scene Description) for scene composition\n\t\t- WebXR for browser-based experiences\n\t- ### Performance Specifications\n\t\t- Minimum 90 FPS for VR applications\n\t\t- Sub-20ms motion-to-photon latency\n\t\t- LOD (Level of Detail) requirements\n\t\t- Memory and bandwidth constraints\n- ## Applications\n\t- Platform compatibility requirements\n\t- Content creation guidelines\n\t- Quality assurance testing\n\t- Cross-platform asset development\n\t- Performance optimization targets",
   "backlinks": [
     "Spatial Audio Scene Description"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Interoperability",
+    "Virtual Environment",
+    "Technical Standards",
+    "OpenXR"
   ],
   "ontology": {
     "term_id": "MV-10121",
     "preferred_term": "Virtual Environment Specification",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#VirtualEnvironmentSpecification",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Technical standards and requirements documents that define the parameters, capabilities, and constraints of virtual environments, including rendering requirements, interaction models, physics simulation rules, and interoperability protocols.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Technical Standards"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +51,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Virtual Environment",
+        "Interoperability",
+        "OpenXR"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

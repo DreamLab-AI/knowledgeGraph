@@ -7,6 +7,7 @@ id:: elliptic-curve-cryptography-ontology
   - term-id:: DT-0032
   - preferred-term:: Elliptic Curve Cryptography
   - source-domain:: bc
+  - owl:class:: bc:EllipticCurveCryptography
   - status:: complete
   - definition:: ECC-based public-key system within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0343
+	- source-domain:: mv
 	- preferred-term:: ETSI Domain: Data Management + Cultural Heritage
 	- status:: draft
 	- public-access:: true

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0282
+	- source-domain:: mv
 	- preferred-term:: Co Training
 	- status:: draft
 	- public-access:: true

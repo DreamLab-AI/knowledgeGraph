@@ -7,6 +7,7 @@ collapsed:: true
   - term-id:: MV-9716
   - preferred-term:: collapsed:: true
   - source-domain:: mv
+  - owl:class:: mv:CollapsedTrue
   - status:: draft
 
 ### Identified shortfalls
@@ -127,3 +128,6 @@ collapsed:: true
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

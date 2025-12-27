@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0307
+	- source-domain:: mv
 	- preferred-term:: Provenance Ontology (PROV-O)
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[InfrastructureDomain]], [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: provenance-relationships-prov-o-relationships
 	  collapsed:: true
 		- is-part-of:: [[Semantic Web Standards]]

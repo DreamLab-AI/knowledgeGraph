@@ -7,10 +7,12 @@ id:: play-to-earn-p2e-ontology
   - term-id:: DT-0267
   - preferred-term:: Play-to-Earn (P2E)
   - source-domain:: bc
+  - owl:class:: bc:PlayToEarnP2e
   - status:: draft
   - definition:: Economic model and gameplay process where users gain real-world value through virtual participation, task completion, and reward distribution mechanisms that convert in-game achievements into tradeable assets.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Virtual Economy]]
 - is-part-of:: [[GameFi]]
 - has-part:: [[Task Completion System]]

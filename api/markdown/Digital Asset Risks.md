@@ -9,6 +9,7 @@
   - term-id:: BC-9894
   - preferred-term:: ![](./assets/38ea50962c15ec244e6f6b69d4f506f4e836b575.png)
   - source-domain:: bc
+  - owl:class:: bc:Assets38ea50962c15ec244e6f6b69d4f506f4e836b575png
   - status:: draft
 
 ![](./assets/38ea50962c15ec244e6f6b69d4f506f4e836b575.png)
@@ -108,3 +109,6 @@
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

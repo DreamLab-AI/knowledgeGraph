@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0928
+    - source-domain:: bc
+    - owl:class:: bc:CirculatingSupply
     - preferred-term:: Circulating Supply
     - ontology:: true
     - public-access:: true

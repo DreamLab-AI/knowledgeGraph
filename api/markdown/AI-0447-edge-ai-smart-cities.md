@@ -8,3 +8,8 @@ AI-0447-edge-ai-smart-cities
   - preferred-term:: Ai 0447 Edge Ai Smart Cities
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0447EdgeAiSmartCities
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

@@ -1,16 +1,11 @@
-### Definition
-
-Electric Actuator converts electrical energy into mechanical motion,...
-
 - ### OntologyBlock
-  id:: Electric Actuator
+  id:: electric-actuator-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1008
-  - preferred-term:: Electric Actuator converts electrical energy into mechanical motion,...
+  - preferred-term:: Electric Actuator
   - source-domain:: rb
+  - owl:class:: rb:ElectricActuator
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-
-Electric Actuator converts electrical energy into mechanical motion, serving as the primary actuation technology for contemporary robots through electromagnetic principles. These devices encompass rotary motors, linear actuators, and specialized mechanisms that transform electrical current into force and displacement, offering advantages of precise control, clean operation, programmability, and seamless integration with digital control systems. Electric actuators have largely supplanted hydraulic and pneumatic alternatives in many robotics applications.
-
-Electric Actuator converts electrical energy into mechanical motion, serving as the primary actuation technology for contemporary robots through electromagnetic principles. These devices encompass rotary motors, linear actuators, and specialized mechanisms that transform electrical current into force and displacement, offering advantages of precise control, clean operation, programmability, and seamless integration with digital control systems. Electric actuators have largely supplanted hydraulic and pneumatic alternatives in many robotics applications.
+  - definition:: An electric actuator converts electrical energy into mechanical motion, serving as the primary actuation technology for contemporary robots through electromagnetic principles.

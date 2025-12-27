@@ -7,6 +7,7 @@ id:: utxo-model-ontology
   - term-id:: BC-0007
   - preferred-term:: UTXO Model
   - source-domain:: bc
+  - owl:class:: bc:UtxoModel
   - status:: complete
   - definition:: Unspent Transaction Output accounting model within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-1030
+	- source-domain:: mv
 	- preferred-term:: Universal Manifest
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[Interoperability Domain]], [[Trust And Governance Domain]]
 	- implementedInLayer:: [[Data Layer]], [[Middleware Layer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: universal-manifest-relationships
 	  collapsed:: true
 		- is-part-of:: [[Asset Management System]]

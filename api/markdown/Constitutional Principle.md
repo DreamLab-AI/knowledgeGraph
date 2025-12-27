@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0826
+    - source-domain:: ai
+    - owl:class:: ai:ConstitutionalPrinciple
     - preferred-term:: Constitutional Principle
     - ontology:: true
     - public-access:: true

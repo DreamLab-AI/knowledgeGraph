@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0331
+	- source-domain:: mv
 	- preferred-term:: ETSI Domain AI + Creative Media
 	- status:: draft
 	- public-access:: true

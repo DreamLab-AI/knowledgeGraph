@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0105
+	- source-domain:: mv
 	- preferred-term:: Data Fabric Architecture
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[Computation And Intelligence Domain]], [[Trust And Governance Domain]]
 	- implementedInLayer:: [[Data Layer]], [[Middleware Layer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: data-fabric-architecture-relationships
 	  collapsed:: true
 		- is-part-of:: [[Enterprise Architecture]]

@@ -8,8 +8,10 @@ id:: human-capture-&-recognition-ontology
   - preferred-term:: id:: humancapture&recognitionontology
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:IdHumancapturerecognitionontology
 
 ### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 - is-part-of:: [[Reality Capture]]
 - has-part:: [[Facial Recognition]]
 - has-part:: [[Biometric Analysis]]

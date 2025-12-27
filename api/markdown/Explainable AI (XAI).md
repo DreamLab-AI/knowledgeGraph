@@ -8,9 +8,11 @@ id:: explainable-ai-xai-ontology
   - preferred-term:: Explainable AI (XAI)
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:ExplainableAiXai
   - definition:: AI system designed to make its decision-making processes, reasoning, and outputs transparent and understandable to humans through interpretable models and explanations.
 
 ### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 - is-part-of:: [[AI System]]
 - is-part-of:: [[Decision Support System]]
 - has-part:: [[Feature Attribution]]

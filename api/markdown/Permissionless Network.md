@@ -7,6 +7,7 @@ id:: permissionless-network-ontology
   - term-id:: DT-0090
   - preferred-term:: Permissionless Network
   - source-domain:: bc
+  - owl:class:: bc:PermissionlessNetwork
   - status:: complete
   - definition:: Open access blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

@@ -8,3 +8,8 @@ AI-0438-iot-ai-integration
   - preferred-term:: Ai 0438 Iot Ai Integration
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0438IotAiIntegration
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

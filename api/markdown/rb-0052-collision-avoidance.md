@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0052
+	- source-domain:: rb
 	- preferred-term:: rb 0052 collision avoidance
 	- status:: draft
 	- public-access:: true

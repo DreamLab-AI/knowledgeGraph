@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0288
+	- source-domain:: mv
 	- preferred-term:: CutMix
 	- status:: draft
 	- public-access:: true

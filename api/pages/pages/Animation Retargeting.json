@@ -1,24 +1,31 @@
 {
   "id": "Animation Retargeting",
   "title": "Animation Retargeting",
-  "content": "- ### OntologyBlock\n  id:: animation-retargeting-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9766\n\t- preferred-term:: Animation Retargeting\n\t- status:: stub\n\t- owl:class:: mv:AnimationRetargeting\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: animation-retargeting-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: animation-retargeting-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9766\n\t- source-domain:: mv\n\t- preferred-term:: Animation Retargeting\n\t- status:: active\n\t- definition:: Animation Retargeting is the process of transferring motion capture or animation data from one character skeleton to another with different proportions, joint configurations, or bone structures, enabling reuse of animation assets across diverse character models in games, film, and virtual environments.\n\t- owl:class:: mv:AnimationRetargeting\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Animation Technology]]\n\t- enables:: [[Character Animation Reuse]], [[Motion Capture Workflows]], [[Avatar Animation]]\n\t- requires:: [[Skeleton Mapping]], [[Pose Matching]], [[Inverse Kinematics]]\n\t- #### Relationships\n\t  id:: animation-retargeting-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Skeleton Mapping**: Associating bones between source and target characters using hierarchical tagging systems\n- **Pose Matching**: Aligning rest poses between characters with different default configurations\n- **Joint Binding**: Matching key skeletal parts with similar kinematics between different character rigs\n- **Constraint Systems**: Maintaining joint limits and anatomical plausibility during motion transfer\n\n### Advanced Techniques (2024)\n- **ML-Based Retargeting**: Skeleton-aware and shape-aware methods retargeting between non-homeomorphic skeletons\n- **Video-Based Retargeting**: Deep learning frameworks processing noisy monocular video motion data\n- **Single-Camera Capture**: Solutions enabling motion capture from any video or iPhone",
   "backlinks": [
     "Motion Capture Rig"
   ],
   "wiki_links": [
-    "metaverse"
+    "Animation Technology",
+    "Motion Capture Workflows",
+    "Avatar Animation",
+    "Skeleton Mapping",
+    "metaverse",
+    "Pose Matching",
+    "Character Animation Reuse",
+    "Inverse Kinematics"
   ],
   "ontology": {
     "term_id": "MV-9766",
     "preferred_term": "Animation Retargeting",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#AnimationRetargeting",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Animation Retargeting is the process of transferring motion capture or animation data from one character skeleton to another with different proportions, joint configurations, or bone structures, enabling reuse of animation assets across diverse character models in games, film, and virtual environments.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -48,9 +55,7 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

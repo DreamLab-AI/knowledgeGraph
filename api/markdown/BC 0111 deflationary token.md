@@ -7,6 +7,7 @@ id:: unknown-ontology
   - term-id:: MV-0111
   - preferred-term:: BC 0111 deflationary token
   - source-domain:: bc
+  - owl:class:: bc:Bc0111DeflationaryToken
   - status:: approved
   - definition:: ### Primary Definition
 

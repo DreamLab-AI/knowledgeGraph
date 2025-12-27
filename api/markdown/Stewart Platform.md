@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: MV-0137
+    - source-domain:: mv
+    - owl:class:: mv:StewartPlatform
     - preferred-term:: Stewart Platform
     - ontology:: true
     - public-access:: true

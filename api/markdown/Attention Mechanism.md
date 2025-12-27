@@ -9,7 +9,7 @@
 	- status:: draft
 	- public-access:: true
 	- definition:: Technique that enables models to dynamically focus on the most relevant parts of input data when making predictions.
-	- maturity:: dt:Draft
+	- maturity:: draft
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]

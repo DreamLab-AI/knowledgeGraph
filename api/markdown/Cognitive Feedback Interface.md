@@ -1,14 +1,14 @@
-id:: cognitive-feedback-interface-ontology
-
 - ### OntologyBlock
-  id:: Cognitive Feedback Interface
+  id:: cognitive-feedback-interface-ontology
   - ontology:: true
   - public-access:: true
-  - term-id:: DT-0252
+  - term-id:: RB-0252
   - preferred-term:: Cognitive Feedback Interface
   - source-domain:: rb
+  - owl:class:: rb:CognitiveFeedbackInterface
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: Adaptive interface system that dynamically adjusts information flow and interaction modalities based on real-time assessment of user cognitive state, attention levels, and mental workload.
+  - definition:: A cognitive feedback interface is an adaptive system that dynamically adjusts information flow and interaction modalities based on real-time assessment of user cognitive state, attention levels, and mental workload for human-robot interaction.
 
 ### Relationships
 - has-part:: [[Cognitive State Monitor]]

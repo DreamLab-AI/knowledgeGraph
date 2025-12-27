@@ -7,6 +7,7 @@ public:: true
   - term-id:: MV-9705
   - preferred-term:: public:: true
   - source-domain:: mv
+  - owl:class:: mv:PublicTrue
   - status:: draft
 
 ### GitHub Repositories
@@ -690,3 +691,6 @@ public:: true
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

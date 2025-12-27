@@ -1,16 +1,11 @@
-### Definition
-
-Cylindrical Robot features kinematic architecture comprising one revolute...
-
 - ### OntologyBlock
-  id:: Cylindrical Robot
+  id:: cylindrical-robot-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1043
-  - preferred-term:: Cylindrical Robot features kinematic architecture comprising one revolute...
+  - preferred-term:: Cylindrical Robot
   - source-domain:: rb
+  - owl:class:: rb:CylindricalRobot
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-
-Cylindrical Robot features kinematic architecture comprising one revolute (rotary) base joint and two prismatic (linear) joints, generating a cylindrical workspace envelope. This configuration provides vertical reach and radial extension while maintaining rotational positioning around a central axis, combining the simplicity of Cartesian robots with the space efficiency of polar coordinates. The typical structure includes a rotating base, a vertical sliding column, and a radially extending arm.
-
-Cylindrical Robot features kinematic architecture comprising one revolute (rotary) base joint and two prismatic (linear) joints, generating a cylindrical workspace envelope. This configuration provides vertical reach and radial extension while maintaining rotational positioning around a central axis, combining the simplicity of Cartesian robots with the space efficiency of polar coordinates. The typical structure includes a rotating base, a vertical sliding column, and a radially extending arm.
+  - definition:: A cylindrical robot features kinematic architecture comprising one revolute base joint and two prismatic joints, generating a cylindrical workspace envelope.

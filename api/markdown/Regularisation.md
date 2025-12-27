@@ -7,6 +7,7 @@ id:: regularisation-ontology
   - term-id:: MV-0835
   - preferred-term:: Regularisation
   - source-domain:: mv
+  - owl:class:: mv:Regularisation
   - status:: draft
   - definition:: ### Primary Definition
 

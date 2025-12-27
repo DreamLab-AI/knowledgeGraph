@@ -8,6 +8,7 @@ id:: global-explanation-ontology
   - preferred-term:: Global Explanation
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:GlobalExplanation
   - definition:: Interpretability techniques that characterise the overall behaviour, decision-making patterns, and feature importance of a machine learning model across its entire input space, rather than explaining individual predictions.
 
 ### Relationships

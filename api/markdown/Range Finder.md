@@ -6,9 +6,10 @@
 	- preferred-term:: Range Finder
 	- source-domain:: rb
 	- owl:class:: rb:RangeFinder
+	- is-subclass-of:: [[Robotics]]
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- definition:: A range finder measures distance from the observer to a target using laser or optical technology.
 	- maturity:: draft
 
 ## Academic Context

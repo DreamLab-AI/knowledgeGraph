@@ -7,10 +7,12 @@ id:: interoperability-framework-ontology
   - term-id:: DT-0940
   - preferred-term:: Interoperability Framework
   - source-domain:: mv
+  - owl:class:: mv:InteroperabilityFramework
   - status:: draft
   - definition:: Coordinated set of standards and specifications enabling interaction between heterogeneous systems in metaverse environments.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Metaverse Architecture]]
 - has-part:: [[Technical Standards]]
 - has-part:: [[Protocol Definitions]]

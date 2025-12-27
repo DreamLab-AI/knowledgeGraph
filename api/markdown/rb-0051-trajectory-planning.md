@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0051
+	- source-domain:: rb
 	- preferred-term:: rb 0051 trajectory planning
 	- status:: draft
 	- public-access:: true

@@ -1,14 +1,13 @@
-id:: autonomous-navigation-ontology
-
 - ### OntologyBlock
-  id:: Autonomous Navigation
+  id:: autonomous-navigation-ontology
   - ontology:: true
   - public-access:: true
-  - term-id:: DT-0355
+  - term-id:: RB-0355
   - preferred-term:: Autonomous Navigation
   - source-domain:: rb
+  - owl:class:: rb:AutonomousNavigation
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: Autonomous Navigation encompasses the complete system capability for a robot or autonomous agent to move from one location to another without human guidance, integrating perception, localisation, mapping, path planning, obstacle avoidance, and control. Autonomous navigation systems employ SLAM, sensor fusion, and AI-based decision-making to operate in unknown or dynamic environments.
+  - definition:: Autonomous navigation encompasses the complete system capability for a robot to move from one location to another without human guidance, integrating perception, localisation, mapping, path planning, obstacle avoidance, and control.
 
 ### Relationships
-- is-subclass-of:: [[AutonomousSystem]]

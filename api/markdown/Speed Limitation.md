@@ -8,7 +8,8 @@
 	- owl:class:: rb:SpeedLimitation
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- is-subclass-of:: [[Robotics]]
+	- definition:: Speed limitation is a safety function that restricts the maximum operational speed of a robot to reduce injury risk during human-robot interaction.
 	- maturity:: draft
 
 ## Academic Context

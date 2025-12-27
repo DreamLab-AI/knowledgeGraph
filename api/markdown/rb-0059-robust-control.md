@@ -3,7 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0059
-	- preferred-term:: rb 0059 robust control
+	- preferred-term:: Robust Control
 	- source-domain:: rb
 	- status:: draft
 	- public-access:: true
@@ -12,12 +12,13 @@
 
 
 ### OWL Classification
-	- owl:class:: mv:rb0059robustcontrol
+	- owl:class:: rb:RobustControl
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 
 ### Domain & Architecture
 	- belongsToDomain:: [[RoboticsDomain]]
+	- is-subclass-of:: [[Robotics]]
 	- maturity:: draft
 
 ### Relationships

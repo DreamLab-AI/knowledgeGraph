@@ -7,9 +7,11 @@ id:: book-to-be-processed-ontology
   - term-id:: MV-9702
   - preferred-term:: Digital Society Book Draft
   - source-domain:: mv
+  - owl:class:: mv:DigitalSocietyBookDraft
   - status:: draft
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - explores:: [[Decentralized Governance]]
 - explores:: [[Digital Inclusion]]
 - explores:: [[Value Transfer]]

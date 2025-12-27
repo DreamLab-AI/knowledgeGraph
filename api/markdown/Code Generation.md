@@ -3,11 +3,12 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0868
+	- source-domain:: ai
 	- preferred-term:: Code Generation
 	- status:: complete
 	- public-access:: true
 	- source:: Chimera Prime Research
-	- maturity:: dt:Established
+	- maturity:: established
 	- owl:class:: ai:CodeGeneration
 	- belongsToDomain:: [[Artificial Intelligence]]
 

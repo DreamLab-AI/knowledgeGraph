@@ -7,10 +7,12 @@ id:: token-bonding-curve-ontology
   - term-id:: DT-0269
   - preferred-term:: Token Bonding Curve
   - source-domain:: bc
+  - owl:class:: bc:TokenBondingCurve
   - status:: draft
   - definition:: Algorithmic pricing mechanism that defines token value as a mathematical function of circulating supply and reserve balance, providing continuous liquidity through automated market making.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Token Economy]]
 - is-part-of:: [[Automated Market Maker]]
 - has-part:: [[Liquidity Mechanism]]

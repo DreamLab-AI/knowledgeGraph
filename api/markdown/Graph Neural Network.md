@@ -8,6 +8,7 @@ id:: unknown-ontology
   - preferred-term:: Graph Neural Network
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:GraphNeuralNetwork
   - definition:: ### Primary Definition
 
 ### Relationships

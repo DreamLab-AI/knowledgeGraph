@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0848
+    - source-domain:: mv
+    - owl:class:: mv:ProceduralGeneration
     - preferred-term:: Procedural Generation
     - ontology:: true
     - public-access:: true

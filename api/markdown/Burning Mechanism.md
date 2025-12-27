@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0531
+    - source-domain:: bc
+    - owl:class:: bc:BurningMechanism
     - preferred-term:: Burning Mechanism
     - ontology:: true
     - public-access:: true

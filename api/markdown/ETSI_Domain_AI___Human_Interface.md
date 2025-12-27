@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0334
+	- source-domain:: mv
 	- preferred-term:: ETSI Domain AI + Human Interface
 	- status:: draft
 	- public-access:: true

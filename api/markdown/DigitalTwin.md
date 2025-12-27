@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0986
+	- source-domain:: mv
 	- preferred-term:: Digital Twin
 	- status:: draft
 	- public-access:: true

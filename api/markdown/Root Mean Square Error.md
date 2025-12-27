@@ -6,6 +6,7 @@
 	- preferred-term:: Root Mean Square Error
 	- source-domain:: ai
 	- status:: draft
+  - owl:class:: ai:RootMeanSquareError
     - public-access:: true
 
 

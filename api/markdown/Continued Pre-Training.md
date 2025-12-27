@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: An intermediate training phase where a pre-trained model undergoes additional pre-training on domain-specific or task-relevant data before fine-tuning. This technique bridges general pre-training and task-specific fine-tuning, adapting model knowledge to particular domains whilst maintaining broad capabilities.
 	- source:: [[AWS SageMaker CPT Documentation]], [[Google Cloud AI Platform]], [[AMD ROCm Multilingual CPT Playbook]], [[Raschka 2025 LLM Training Paradigms]]
-	- maturity:: dt:Mature
+	- maturity:: mature
 	- #### Relationships
 - is-subclass-of:: [[ai:ModelArchitecture]]
 	  id:: continued-pre-training-relationships

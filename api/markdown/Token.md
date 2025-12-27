@@ -7,6 +7,7 @@ id:: token-ontology
   - term-id:: BC-0144
   - preferred-term:: Token
   - source-domain:: bc
+  - owl:class:: bc:Token
   - status:: draft
   - definition:: A component of the metaverse ecosystem.
 

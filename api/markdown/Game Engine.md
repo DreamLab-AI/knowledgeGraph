@@ -89,22 +89,22 @@ id:: gameengine-relationships
 		  SubClassOf(mv:RealTimeRendering mv:VirtualProcess)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:isdependencyof)
+  AsymmetricObjectProperty(mv:isdependencyof)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:isrequiredby)
+  AsymmetricObjectProperty(mv:isrequiredby)
 
   # Property characteristics
-  TransitiveObjectProperty(dt:ispartof)
+  TransitiveObjectProperty(mv:ispartof)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:requires)
+  AsymmetricObjectProperty(mv:requires)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:dependson)
+  AsymmetricObjectProperty(mv:dependson)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:enables)
+  AsymmetricObjectProperty(mv:enables)
 ```
 - ## About Game Engines
   id:: gameengine-about

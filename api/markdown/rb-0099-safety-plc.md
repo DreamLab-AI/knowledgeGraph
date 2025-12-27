@@ -5,11 +5,12 @@ id:: rb-0099-safety-plc-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0099
-  - preferred-term:: rb 0099 safety plc
+  - preferred-term:: Safety PLC
   - source-domain:: rb
+  - owl:class:: rb:SafetyPLC
   - status:: draft
   - definition:: ### Primary Definition
 
 ### Relationships
-- is-subclass-of:: [[SafetyDevices]]
+- is-subclass-of:: [[Robotics]]
 - belongsToDomain:: [[RoboticsDomain]]

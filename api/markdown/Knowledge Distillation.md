@@ -6,6 +6,7 @@
 	- preferred-term:: Knowledge Distillation
 	- source-domain:: ai
 	- status:: draft
+  - owl:class:: ai:KnowledgeDistillation
     - public-access:: true
 
 

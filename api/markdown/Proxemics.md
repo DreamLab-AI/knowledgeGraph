@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-9006
+	- source-domain:: rb
 	- preferred-term:: Proxemics
 	- status:: draft
 	- public-access:: true
@@ -13,4 +14,4 @@
 	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[RoboticsDomain]]
-	- isSubclassOf:: [[Human-Robot Interaction]]
+	- is-subclass-of:: [[Robotics]]

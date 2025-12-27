@@ -7,6 +7,7 @@ id:: etsi_domain_virtual_economy-ontology
   - term-id:: MV-0033
   - preferred-term:: ETSI_Domain_Virtual_Economy
   - source-domain:: mv
+  - owl:class:: mv:EtsiDomainVirtualEconomy
   - status:: draft
   - definition:: A component of the metaverse ecosystem.
 

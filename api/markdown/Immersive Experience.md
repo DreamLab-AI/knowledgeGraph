@@ -7,7 +7,9 @@ id:: unknown-ontology
   - term-id:: MV-0319
   - preferred-term:: Immersive Experience
   - source-domain:: mv
+  - owl:class:: mv:ImmersiveExperience
   - status:: draft
   - definition:: ### Primary Definition
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]

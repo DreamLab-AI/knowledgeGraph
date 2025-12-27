@@ -7,6 +7,7 @@ id:: native-token-ontology
   - term-id:: DT-1003
   - preferred-term:: Native Token
   - source-domain:: bc
+  - owl:class:: bc:NativeToken
   - status:: complete
   - definition:: Blockchain-native cryptocurrency within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

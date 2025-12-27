@@ -7,10 +7,12 @@ id:: industrial-metaverse-ontology
   - term-id:: DT-0312
   - preferred-term:: Industrial Metaverse
   - source-domain:: mv
+  - owl:class:: mv:IndustrialMetaverse
   - status:: draft
   - definition:: A virtual platform integrating digital twin technology, simulation environments, and collaborative workspaces for manufacturing operations, supply chain management, remote equipment control, and industrial training across geographically distributed facilities.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Metaverse Application Platform]]
 - has-part:: [[Predictive Analytics]]
 - has-part:: [[Supply Chain Visualization]]

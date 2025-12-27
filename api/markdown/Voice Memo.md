@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: TC-9002
+	- source-domain:: tc
 	- preferred-term:: Voice Memo
 	- status:: draft
 	- public-access:: true

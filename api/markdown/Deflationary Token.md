@@ -7,4 +7,8 @@ Deflationary Token
   - term-id:: BC-9972
   - preferred-term:: Deflationary Token
   - source-domain:: bc
+  - owl:class:: bc:DeflationaryToken
   - status:: draft
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

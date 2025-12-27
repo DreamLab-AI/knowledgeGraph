@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0295
+	- source-domain:: mv
 	- preferred-term:: Right to Be Forgotten
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[ApplicationLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: right-to-be-forgotten-relationships
 	  collapsed:: true
 		- is-part-of:: [[Privacy Rights System]]

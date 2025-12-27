@@ -7,6 +7,7 @@ id:: optimiser-ontology
   - term-id:: MV-0867
   - preferred-term:: Optimiser
   - source-domain:: mv
+  - owl:class:: mv:Optimiser
   - status:: draft
   - definition:: ### Primary Definition
 

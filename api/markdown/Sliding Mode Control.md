@@ -8,7 +8,8 @@
 	- owl:class:: rb:SlidingModeControl
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- is-subclass-of:: [[Robotics]]
+	- definition:: Sliding mode control (SMC) is a robust nonlinear control methodology that employs discontinuous control signals to force system trajectories onto a predefined sliding surface where the system exhibits desirable dynamic properties.
 	- maturity:: draft
 
 ## Academic Context

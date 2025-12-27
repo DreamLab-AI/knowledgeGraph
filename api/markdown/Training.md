@@ -7,6 +7,7 @@ id:: AI-0041
   - term-id:: MV-0875
   - preferred-term:: Training
   - source-domain:: mv
+  - owl:class:: mv:Training
   - status:: draft
   - definition:: ### Primary Definition
 

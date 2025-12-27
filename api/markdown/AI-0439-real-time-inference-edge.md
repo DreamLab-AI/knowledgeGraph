@@ -8,6 +8,7 @@ AI-0439-real-time-inference-edge
   - preferred-term:: Ai 0439 Real Time Inference Edge
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0439RealTimeInferenceEdge
 
 ### Relationships
 - is-subclass-of:: [[ai:ModelArchitecture]]

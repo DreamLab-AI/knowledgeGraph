@@ -1,10 +1,11 @@
-Pneumatic Motor refers to pneumatic motor converts compressed air to rotational motion.
-
 - ### OntologyBlock
-  id:: Pneumatic Motor
+  id:: pneumatic-motor-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1046
-  - preferred-term:: Pneumatic Motor refers to pneumatic motor converts compressed air to rotational motion.
+  - preferred-term:: Pneumatic Motor
   - source-domain:: rb
+  - owl:class:: rb:PneumaticMotor
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
+  - definition:: A pneumatic motor converts compressed air to rotational motion.

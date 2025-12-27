@@ -7,10 +7,12 @@ id:: spatial-audio-scene-description-ontology
   - term-id:: DT-0115
   - preferred-term:: Spatial Audio Scene Description
   - source-domain:: mv
+  - owl:class:: mv:SpatialAudioSceneDescription
   - status:: draft
   - definition:: A data model for encoding sound sources, listener positions, acoustic environments, and spatial audio metadata in three-dimensional space to enable immersive and realistic audio experiences in virtual environments.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[3D Scene Graph]]
 - is-part-of:: [[Immersive Audio System]]
 - is-part-of:: [[Virtual Environment Specification]]

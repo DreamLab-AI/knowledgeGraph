@@ -3,6 +3,7 @@
   collapsed:: true
 	- preferred-term:: Robust Control
 	- source-domain:: mv
+  - owl:class:: mv:RobustControl
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition

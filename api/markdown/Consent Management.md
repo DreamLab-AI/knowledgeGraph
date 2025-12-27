@@ -7,10 +7,12 @@ id:: consent-management-ontology
   - term-id:: DT-0123
   - preferred-term:: Consent Management
   - source-domain:: mv
+  - owl:class:: mv:ConsentManagement
   - status:: draft
   - definition:: System for recording and enforcing user permissions for data collection, processing, and sharing across metaverse platforms, ensuring compliance with privacy regulations and user autonomy.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[ETSI_Domain_Data_Management___Ethics]]
 - has-part:: [[Policy Engine]]
 - has-part:: [[Consent Registry]]

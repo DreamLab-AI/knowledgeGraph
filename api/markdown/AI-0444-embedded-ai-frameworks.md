@@ -8,6 +8,7 @@ AI-0444-embedded-ai-frameworks
   - preferred-term:: Ai 0444 Embedded Ai Frameworks
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0444EmbeddedAiFrameworks
 
 ### Relationships
 - is-subclass-of:: [[ai:ModelArchitecture]]

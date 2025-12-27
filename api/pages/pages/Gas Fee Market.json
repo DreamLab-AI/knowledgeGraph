@@ -1,24 +1,28 @@
 {
   "id": "Gas Fee Market",
   "title": "Gas Fee Market",
-  "content": "- ### OntologyBlock\n  id:: gas-fee-market-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9904\n\t- preferred-term:: Gas Fee Market\n\t- status:: stub\n\t- owl:class:: mv:GasFeeMarket\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: gas-fee-market-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: gas-fee-market-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9904\n\t- source-domain:: mv\n\t- preferred-term:: Gas Fee Market\n\t- status:: active\n\t- owl:class:: mv:GasFeeMarket\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: The economic mechanism governing blockchain transaction costs, where users bid with gas fees to prioritise transaction processing, creating a market-based system essential for metaverse operations including NFT trades, smart contract execution, and virtual asset transfers.\n\t- #### Relationships\n\t  id:: gas-fee-market-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Economics]]\n\t\t- related-to:: [[Economic Parameters]]\n\t\t- related-to:: [[Smart Contract]]\n\t\t- impacts:: [[Metaverse Virtual Economy]]\n\n## 2024 Market Dynamics\n\n### Ethereum Fee Evolution\n- Average fees dropped to $3.78 by mid-2024\n- Peak on February 9, 2024: 70 gwei average, up to 377 gwei\n- Dencun upgrade (EIP-4844): 95% fee reduction by March 2025\n- Transaction costs now $0.39-$0.65 for token swaps\n\n### Annual Fee Revenue\n- Ethereum 2024 fee revenue: USD 2.48 billion\n- 3% increase from 2023 (USD 2.41 billion)\n- Q1 2024 alone: USD 1.17 billion\n- Monthly range: USD 62.82 - 606.77 million\n\n## Fee Structure\n\n### EIP-1559 Mechanism (Since 2021)\n- **Base Fee**: Minimum fee per gas unit, network-adjusted\n- **Priority Fee (Tip)**: Optional tip for validators\n- **Base Fee Burning**: Permanently removed from circulation\n- Fee adjustment based on block utilisation\n\n### Price Determinants\n- Network congestion levels\n- Block space demand\n- Transaction complexity\n- Time-of-day patterns\n\n## Layer 2 Impact\n\n### EIP-4844 (Dencun Upgrade)\n- Proto-danksharding implementation\n- Layer 2 fees reduced by 90%\n- More efficient data usage\n- Lower on-chain data costs\n\n### Popular Layer 2 Solutions\n- Optimistic Rollups\n- zk-Rollups\n- Polygon\n- Arbitrum\n\n## Competitive Landscape\n\n### Alternative Blockchains\n- Solana 2024 fee growth: 2,838% (USD 750.65 million)\n- Transaction volume spikes causing congestion\n- Lower base fee alternatives\n- Trade-offs between security and cost\n\n### Market Share Shifts\n- Ethereum maintains dominance in fee revenue\n- Layer 2 reducing main chain activity\n- ETH supply burn decreased in 2024\n- Growing competitive alternatives\n\n## Cost Optimisation Strategies\n\n### Timing\n- Off-peak transactions (late night, weekends)\n- Avoid U.S. business hours peaks\n- Monitor gas tracking tools\n\n### Technical\n- Layer 2 solution usage\n- Transaction batching\n- Smart contract optimisation\n- Gas-efficient contract patterns\n\n## Metaverse Applications\n\n### Fee Impact Areas\n- NFT minting and trading\n- Virtual land transactions\n- In-game asset transfers\n- DAO governance participation\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
     "Smart Royalty Contract"
   ],
   "wiki_links": [
-    "metaverse"
+    "Economic Parameters",
+    "Blockchain Economics",
+    "metaverse",
+    "Metaverse Virtual Economy",
+    "Smart Contract"
   ],
   "ontology": {
     "term_id": "MV-9904",
     "preferred_term": "Gas Fee Market",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#GasFeeMarket",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The economic mechanism governing blockchain transaction costs, where users bid with gas fees to prioritise transaction processing, creating a market-based system essential for metaverse operations including NFT trades, smart contract execution, and virtual asset transfers.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Blockchain Economics"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +51,21 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Economic Parameters",
+        "Smart Contract"
+      ],
+      "impacts": [
+        "Metaverse Virtual Economy"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

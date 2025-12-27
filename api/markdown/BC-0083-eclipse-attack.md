@@ -7,6 +7,7 @@ id:: eclipse-attack-ontology
   - term-id:: DT-0083
   - preferred-term:: Eclipse Attack
   - source-domain:: bc
+  - owl:class:: bc:EclipseAttack
   - status:: complete
   - definition:: Node isolation attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

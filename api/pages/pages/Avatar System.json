@@ -1,26 +1,36 @@
 {
   "id": "Avatar System",
   "title": "Avatar System",
-  "content": "- ### OntologyBlock\n  id:: Avatar System\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9792\n  - preferred-term:: Avatar System\n  - source-domain:: mv\n  - status:: stub\n\n### Relationships",
+  "content": "- ### OntologyBlock\n  id:: Avatar System\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9792\n  - preferred-term:: Avatar System\n  - source-domain:: mv\n  - owl:class:: mv:AvatarSystem\n  - status:: active\n  - definition:: Avatar System is the integrated technical architecture for creating, customizing, animating, and rendering digital representations of users in virtual environments, encompassing character models, animation systems, facial expression rigs, physics simulations, and real-time rendering pipelines.\n  - is-subclass-of:: [[Virtual Character System]]\n  - enables:: [[User Representation]], [[Social Interaction]], [[Embodied Presence]]\n  - requires:: [[3D Rendering Engine]], [[Animation Controller]], [[Input Processing]]\n\n### Technical Details\nKey components include:\n- **Character Model**: 3D mesh with skeleton hierarchy and blend shapes\n- **Animation Controller**: State machine managing movement, gestures, and transitions\n- **Expression System**: Facial rig with blend shapes for emotions and lip sync\n- **Physics Simulation**: Cloth, hair, and accessory dynamics\n\n### Input Integration\n- **Motion Capture**: Full-body tracking from VR controllers or external systems\n- **Facial Tracking**: Webcam or headset-based expression capture\n- **Eye Tracking**: Gaze direction and pupil data for realistic eye contact\n- **Voice Input**: Audio-driven lip sync and emotion detection\n\n### Rendering Pipeline\nReal-time rendering with physically-based materials, subsurface scattering for skin, dynamic lighting, and level-of-detail optimization for performance across devices.\n\n### Platform Examples\nUnity Avatar System, Unreal MetaHuman, Ready Player Me SDK, and VRChat avatar framework provide comprehensive avatar system implementations.",
   "backlinks": [
     "Virtual Performance Space",
     "Digital Ritual",
+    "Dynamic Character Animation",
     "Education Metaverse",
     "Tourism Metaverse",
-    "Experience Layer"
+    "Experience Layer",
+    "Character Model"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "Animation Controller",
+    "Embodied Presence",
+    "3D Rendering Engine",
+    "Virtual Character System",
+    "Input Processing",
+    "User Representation",
+    "Social Interaction"
+  ],
   "ontology": {
     "term_id": "MV-9792",
     "preferred_term": "Avatar System",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/metaverse#AvatarSystem",
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Avatar System is the integrated technical architecture for creating, customizing, animating, and rendering digital representations of users in virtual environments, encompassing character models, animation systems, facial expression rigs, physics simulations, and real-time rendering pipelines.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -28,7 +38,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "mv:AvatarSystem",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -49,8 +59,6 @@
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

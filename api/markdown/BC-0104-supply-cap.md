@@ -7,6 +7,7 @@ id:: bc-0104-supply-cap-ontology
   - term-id:: MV-0910
   - preferred-term:: BC 0104 supply cap
   - source-domain:: bc
+  - owl:class:: bc:Bc0104SupplyCap
   - status:: draft
   - definition:: ### Primary Definition
 

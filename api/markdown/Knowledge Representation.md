@@ -5,6 +5,7 @@
   - preferred-term:: Knowledge Representation
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:KnowledgeRepresentation
 
 ### Relationships
 - is-subclass-of:: [[Artificial Intelligence]]

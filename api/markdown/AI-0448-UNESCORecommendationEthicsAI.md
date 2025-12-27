@@ -8,3 +8,8 @@ AI-0448-UNESCORecommendationEthicsAI
   - preferred-term:: Ai 0448 Unescorecommendationethicsai
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0448Unescorecommendationethicsai
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

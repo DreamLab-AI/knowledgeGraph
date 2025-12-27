@@ -7,6 +7,8 @@ id:: inclusive-xr-design-ontology
   - term-id:: MV-9001
   - preferred-term:: Inclusive Xr Design
   - source-domain:: mv
+  - owl:class:: mv:InclusiveXrDesign
   - status:: stub
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]

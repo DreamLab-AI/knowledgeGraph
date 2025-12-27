@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: BC-9003
+	- source-domain:: bc
 	- preferred-term:: Cross-Chain Messaging
 	- status:: draft
 	- public-access:: true
@@ -14,3 +15,6 @@
 	- owl:role:: Process
 	- belongsToDomain:: [[BlockchainDomain]]
 	- isSubclassOf:: [[Interoperability Protocol]]
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

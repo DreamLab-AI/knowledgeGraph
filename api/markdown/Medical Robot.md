@@ -6,9 +6,10 @@
 	- preferred-term:: Medical Robot
 	- source-domain:: rb
 	- owl:class:: rb:MedicalRobot
+	- is-subclass-of:: [[Robotics]]
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- definition:: A medical robot is a robotic system designed for healthcare applications including surgery, rehabilitation, diagnostics, and patient care.
 	- maturity:: draft
 	- belongsToDomain:: [[RoboticsDomain]]
 

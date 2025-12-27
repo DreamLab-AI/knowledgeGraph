@@ -1,24 +1,29 @@
 {
   "id": "Secondary Market Integration",
   "title": "Secondary Market Integration",
-  "content": "- ### OntologyBlock\n  id:: secondary-market-integration-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10033\n\t- preferred-term:: Secondary Market Integration\n\t- status:: stub\n\t- owl:class:: mv:SecondaryMarketIntegration\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: secondary-market-integration-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: secondary-market-integration-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10033\n\t- source-domain:: mv\n\t- preferred-term:: Secondary Market Integration\n\t- status:: active\n\t- definition:: Technical and business infrastructure connecting primary asset creation with resale marketplaces, enabling liquidity for digital collectibles, virtual real estate, and NFTs through automated royalty distribution and cross-platform trading protocols.\n\t- owl:class:: mv:SecondaryMarketIntegration\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: secondary-market-integration-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Asset Trading]]\n\t\t- related-to:: [[NFT Marketplaces]]\n\t\t- related-to:: [[Royalty Distribution]]\n\t\t- related-to:: [[Cross Platform Trading]]\n\t\t- enables:: [[Asset Liquidity]]\n\t- #### Key Components\n\t  collapsed:: true\n\t\t- Smart contract royalty enforcement\n\t\t- Price discovery mechanisms\n\t\t- Order book and AMM trading\n\t\t- Cross-chain bridge integration\n\t\t- Escrow and settlement services\n\t- #### Major Platforms\n\t  collapsed:: true\n\t\t- OpenSea for general NFT trading\n\t\t- Blur for professional traders\n\t\t- Magic Eden for Solana ecosystem\n\t\t- LooksRare community marketplace\n\t\t- Rarible protocol aggregation",
   "backlinks": [
     "Virtual Securities Offering (VSO)"
   ],
   "wiki_links": [
-    "metaverse"
+    "Cross Platform Trading",
+    "metaverse",
+    "Asset Liquidity",
+    "Digital Asset Trading",
+    "NFT Marketplaces",
+    "Royalty Distribution"
   ],
   "ontology": {
     "term_id": "MV-10033",
     "preferred_term": "Secondary Market Integration",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#SecondaryMarketIntegration",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Technical and business infrastructure connecting primary asset creation with resale marketplaces, enabling liquidity for digital collectibles, virtual real estate, and NFTs through automated royalty distribution and cross-platform trading protocols.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Digital Asset Trading"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Asset Liquidity"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "NFT Marketplaces",
+        "Royalty Distribution",
+        "Cross Platform Trading"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

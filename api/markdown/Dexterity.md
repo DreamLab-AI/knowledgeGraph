@@ -1,11 +1,11 @@
-id:: rb-0037-dexterity-ontology
-
 - ### OntologyBlock
-  id:: Dexterity
+  id:: dexterity-ontology
   - ontology:: true
   - public-access:: true
-  - term-id:: MV-0833
+  - term-id:: RB-0037
   - preferred-term:: Dexterity
   - source-domain:: rb
+  - owl:class:: rb:Dexterity
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: Dexterity is the ability of a robot manipulator or end-effector to perform fine, precise, and coordinated movements, particularly in manipulation and grasping tasks requiring multiple degrees of freedom.

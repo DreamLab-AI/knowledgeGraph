@@ -1,22 +1,30 @@
 {
   "id": "Avatar Portability",
   "title": "Avatar Portability",
-  "content": "- ### OntologyBlock\n  id:: Avatar Portability\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9790\n  - preferred-term:: Avatar Portability\n  - source-domain:: mv\n  - status:: stub\n\n### Relationships",
+  "content": "- ### OntologyBlock\n  id:: Avatar Portability\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9790\n  - preferred-term:: Avatar Portability\n  - source-domain:: mv\n  - owl:class:: mv:AvatarPortability\n  - status:: active\n  - definition:: Avatar Portability is the capability to transfer digital avatar representations between different metaverse platforms, applications, and virtual worlds while maintaining visual fidelity, customization, and associated digital assets, enabled by standardized formats and interoperability frameworks.\n  - is-subclass-of:: [[Digital Asset Portability]]\n  - enables:: [[Cross-Platform Identity]], [[Seamless World Transitions]], [[Asset Continuity]]\n  - requires:: [[Standardized Formats]], [[Translation Frameworks]], [[Platform Integration]]\n\n### Technical Details\nKey enablers include:\n- **VRM Format**: glTF-based standard for humanoid avatars with expressions and rigging\n- **Avatar Translation Framework**: Common baseline format with guidelines for mesh, material, and animation handling\n- **Ready Player Me**: Cross-app avatar platform supporting 1000+ applications via free SDK\n- **Two-Way Interoperability**: Avatars and accessories transferable between applications\n\n### Challenges\n- **Format Fragmentation**: Different engines use varying asset formats and rendering pipelines\n- **Visual Consistency**: Maintaining appearance quality across diverse platform aesthetics\n- **Custom Character Systems**: Games implementing unique constraints and asset pipelines\n- **Performance Optimization**: Adapting avatars to different platform capabilities\n\n### 2024 Developments\nPlayerZero platform launched enabling Web3 collectible avatars transferable across multiple games and virtual worlds. Khronos/VRM Consortium collaboration advancing international standardization of VRM avatar format.",
   "backlinks": [
     "Universal Manifest"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "Platform Integration",
+    "Cross-Platform Identity",
+    "Asset Continuity",
+    "Seamless World Transitions",
+    "Translation Frameworks",
+    "Standardized Formats",
+    "Digital Asset Portability"
+  ],
   "ontology": {
     "term_id": "MV-9790",
     "preferred_term": "Avatar Portability",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/metaverse#AvatarPortability",
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Avatar Portability is the capability to transfer digital avatar representations between different metaverse platforms, applications, and virtual worlds while maintaining visual fidelity, customization, and associated digital assets, enabled by standardized formats and interoperability frameworks.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -24,7 +32,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "mv:AvatarPortability",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -45,8 +53,6 @@
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

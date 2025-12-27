@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-1088
+	- source-domain:: mv
 	- preferred-term:: Spatial Index
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[InfrastructureDomain]]
 	- implementedInLayer:: [[I) Physical Layer]], [[IV) Data Layer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: spatial-index-relationships
 	  collapsed:: true
 		- is-part-of:: [[Spatial Database]]

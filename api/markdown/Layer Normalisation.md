@@ -8,6 +8,7 @@ id:: layer-normalisation-ontology
   - preferred-term:: Layer Normalisation
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:LayerNormalisation
   - definition:: A normalisation technique that normalises activations across the feature dimension for each example independently, stabilising deep network training.
 
 ### Relationships

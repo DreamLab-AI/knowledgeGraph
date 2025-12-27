@@ -1,24 +1,29 @@
 {
   "id": "Participant Authentication",
   "title": "Participant Authentication",
-  "content": "- ### OntologyBlock\n  id:: participant-authentication-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9994\n\t- preferred-term:: Participant Authentication\n\t- status:: stub\n\t- owl:class:: mv:ParticipantAuthentication\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: participant-authentication-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: participant-authentication-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9994\n\t- source-domain:: mv\n\t- preferred-term:: Participant Authentication\n\t- status:: active\n\t- definition:: The process of verifying the identity of users in virtual environments, events, and metaverse platforms through methods including multi-factor authentication, biometrics, blockchain-based identity, and AI-powered verification to prevent impersonation and ensure secure access.\n\t- owl:class:: mv:ParticipantAuthentication\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: participant-authentication-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Identity Management]]\n\t\t- related-to:: [[Digital Identity]]\n\t\t- related-to:: [[Access Control]]\n\t\t- related-to:: [[Biometric Authentication]]\n\t\t- enables:: [[Secure Virtual Events]]\n\t- #### Authentication Methods\n\t  collapsed:: true\n\t\t- Multi-factor authentication (MFA) adapted for VR\n\t\t- Biometric verification through VR headsets\n\t\t- Behavioral biometrics based on user actions\n\t\t- Blockchain-verified avatar authenticity\n\t\t- Self-Sovereign Identity (SSI) and Decentralized Identifiers (DIDs)\n\t- #### Challenges\n\t  collapsed:: true\n\t\t- Identity proofing more difficult than traditional systems\n\t\t- Avatar impersonation and fake identity creation risks\n\t\t- Cross-platform identity verification complexity\n\t\t- Balancing privacy with authentication requirements",
   "backlinks": [
     "Digital Ritual"
   ],
   "wiki_links": [
-    "metaverse"
+    "Access Control",
+    "Identity Management",
+    "metaverse",
+    "Secure Virtual Events",
+    "Digital Identity",
+    "Biometric Authentication"
   ],
   "ontology": {
     "term_id": "MV-9994",
     "preferred_term": "Participant Authentication",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ParticipantAuthentication",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The process of verifying the identity of users in virtual environments, events, and metaverse platforms through methods including multi-factor authentication, biometrics, blockchain-based identity, and AI-powered verification to prevent impersonation and ensure secure access.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Identity Management"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Secure Virtual Events"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Digital Identity",
+        "Access Control",
+        "Biometric Authentication"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

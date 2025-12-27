@@ -1,22 +1,30 @@
 {
   "id": "Non Linear Narrative",
   "title": "Non Linear Narrative",
-  "content": "- ### OntologyBlock\n  id:: non-linear-narrative-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9985\n\t- preferred-term:: Non Linear Narrative\n\t- status:: stub\n\t- owl:class:: mv:NonLinearNarrative\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: non-linear-narrative-relationships\n\t  collapsed:: true",
-  "backlinks": [],
+  "content": "- ### OntologyBlock\n  id:: non-linear-narrative-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9985\n\t- source-domain:: mv\n\t- preferred-term:: Non Linear Narrative\n\t- status:: active\n\t- definition:: A storytelling approach where events are presented out of chronological order or where audience choices create branching paths through the narrative, allowing multiple ways to experience story events based on interactions and decisions.\n\t- owl:class:: mv:NonLinearNarrative\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: non-linear-narrative-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Narrative Structure]]\n\t\t- related-to:: [[Interactive Storytelling]]\n\t\t- related-to:: [[Branching Narrative]]\n\t\t- related-to:: [[Non Linear Storytelling]]\n\t\t- enables:: [[Player Agency]]\n\t- #### Types\n\t  collapsed:: true\n\t\t- Internally nonlinear: Stories told chronologically out of order\n\t\t- Interactive nonlinear: Multiple paths based on audience choices\n\t\t- Branching narrative: Story diverges based on player decisions\n\t\t- Storylets: Modular narrative units for flexible assembly\n\t- #### Design Considerations\n\t  collapsed:: true\n\t\t- Balance between player freedom and narrative meaning\n\t\t- Scope management for branching complexity\n\t\t- Re-convergence points to control divergence\n\t\t- Testing requirements increase with path combinations\n\t\t- Higher development cost than linear narratives",
+  "backlinks": [
+    "Narrative Arc",
+    "Non Linear Storytelling"
+  ],
   "wiki_links": [
-    "metaverse"
+    "Player Agency",
+    "metaverse",
+    "Non Linear Storytelling",
+    "Interactive Storytelling",
+    "Branching Narrative",
+    "Narrative Structure"
   ],
   "ontology": {
     "term_id": "MV-9985",
     "preferred_term": "Non Linear Narrative",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#NonLinearNarrative",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A storytelling approach where events are presented out of chronological order or where audience choices create branching paths through the narrative, allowing multiple ways to experience story events based on interactions and decisions.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -28,12 +36,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Narrative Structure"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Player Agency"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -43,15 +55,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Interactive Storytelling",
+        "Branching Narrative",
+        "Non Linear Storytelling"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

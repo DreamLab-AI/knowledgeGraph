@@ -9,7 +9,7 @@
 	- status:: complete
 	- public-access:: true
 	- source:: Chimera Prime Research
-	- maturity:: dt:Established
+	- maturity:: established
 	- belongsToDomain:: [[Artificial Intelligence]]
 
 ### Relationships

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-1004
+	- source-domain:: mv
 	- preferred-term:: SemanticSearch
 	- status:: complete
 	- public-access:: true

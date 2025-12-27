@@ -9,8 +9,12 @@ Gasper Consensus
   - term-id:: BC-9975
   - preferred-term:: Gasper Consensus
   - source-domain:: bc
+  - owl:class:: bc:GasperConsensus
   - status:: draft
 
 Gasper Consensus refers to ethereum's pos consensus combining casper ffg (finality gadget) with lmd ghost (fork choice rule). validators directly stake ether without delegation mechanism.
 
 Gasper Consensus refers to ethereum's pos consensus combining casper ffg (finality gadget) with lmd ghost (fork choice rule). validators directly stake ether without delegation mechanism.
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

@@ -21,6 +21,7 @@
 	- maturity:: mature
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 
 ### Quality Metrics
 	- authority-score:: 0.89

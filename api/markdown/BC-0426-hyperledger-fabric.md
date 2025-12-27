@@ -7,6 +7,7 @@ id:: relationships
   - term-id:: BC-9923
   - preferred-term:: id:: relationships
   - source-domain:: bc
+  - owl:class:: bc:IdRelationships
   - status:: draft
 
 ### Relationships

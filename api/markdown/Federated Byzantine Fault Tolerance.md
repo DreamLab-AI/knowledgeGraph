@@ -7,4 +7,8 @@ Federated Byzantine Fault Tolerance
   - term-id:: BC-9867
   - preferred-term:: Federated Byzantine Fault Tolerance
   - source-domain:: bc
+  - owl:class:: bc:FederatedByzantineFaultTolerance
   - status:: draft
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

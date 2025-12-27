@@ -1,7 +1,7 @@
 {
   "id": "Digital Ownership",
   "title": "Digital Ownership",
-  "content": "- ### OntologyBlock\n  id:: digital-ownership-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9863\n\t- preferred-term:: Digital Ownership\n\t- status:: stub\n\t- owl:class:: mv:DigitalOwnership\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-ownership-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: digital-ownership-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9863\n\t- source-domain:: mv\n\t- preferred-term:: Digital Ownership\n\t- status:: stub\n\t- owl:class:: mv:DigitalOwnership\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n- is-subclass-of:: [[Metaverse]]\n\t  id:: digital-ownership-relationships\n\t  collapsed:: true",
   "backlinks": [
     "Non-Fungible Token (NFT)",
     "Crypto Token",
@@ -10,14 +10,15 @@
     "Digital Asset"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Metaverse"
   ],
   "ontology": {
     "term_id": "MV-9863",
     "preferred_term": "Digital Ownership",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#DigitalOwnership",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
     "definition": null,
@@ -34,7 +35,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Metaverse"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -52,12 +55,10 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
         "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

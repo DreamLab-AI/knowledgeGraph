@@ -5,6 +5,7 @@
   - preferred-term:: A-Star Algorithm
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:AStarAlgorithm
 
 ### Relationships
 - is-subclass-of:: [[Search Algorithms]]

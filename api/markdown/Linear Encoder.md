@@ -7,7 +7,10 @@ Linear Encoder measures linear position or displacement through non-contact sens
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1011
-  - preferred-term:: Linear Encoder measures linear position or displacement through...
+  - preferred-term:: Linear Encoder
+  - owl:class:: rb:LinearEncoder
+  - is-subclass-of:: [[Robotics]]
+  - definition:: A linear encoder measures linear position or displacement through non-contact sensing of periodic graduations on a scale, providing essential feedback for precise position control in linear robot axes.
   - source-domain:: rb
   - status:: draft
 

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: TC-9004
+	- source-domain:: tc
 	- preferred-term:: Social Presence
 	- status:: draft
 	- public-access:: true

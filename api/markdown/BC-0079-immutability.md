@@ -7,6 +7,7 @@ id:: immutability-ontology
   - term-id:: DT-0079
   - preferred-term:: Immutability
   - source-domain:: bc
+  - owl:class:: bc:Immutability
   - status:: complete
   - definition:: Tamper-resistant property within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

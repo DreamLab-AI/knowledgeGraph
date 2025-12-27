@@ -5,6 +5,7 @@
   - preferred-term:: Semi-Supervised Learning
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:SemiSupervisedLearning
 
 ### Relationships
 - is-subclass-of:: [[Machine Learning]]

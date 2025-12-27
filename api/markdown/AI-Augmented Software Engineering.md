@@ -3,7 +3,7 @@
 		- ontology:: true
 		- term-id:: MV-0839
 		- preferred-term:: AI-Augmented Software Engineering
-		- source-domain:: ai-grounded
+		- source-domain:: ai
 		- status:: emerging
 		- public-access:: true
 		- last-updated:: None
@@ -13,7 +13,7 @@
 		- owl:class:: mv:AI-AugmentedSoftwareEngineering
 		- owl:physicality:: ConceptualEntity
 		- owl:role:: Concept
-		- maturity:: dt:Draft:Emerging
+		- maturity:: emerging
 		- authority-score:: 0.95
 	- #### Relationships
 		- is-subclass-of:: [[ArtificialIntelligence]]

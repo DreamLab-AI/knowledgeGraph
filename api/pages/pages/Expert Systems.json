@@ -1,26 +1,26 @@
 {
   "id": "Expert Systems",
   "title": "Expert Systems",
-  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1002\n  - preferred-term:: Expert Systems\n  - source-domain:: ai\n  - status:: draft\n\n### Relationships\n- is-subclass-of:: [[Knowledge Representation]]\n- is-subclass-of:: [[Artificial Intelligence]]\n- uses:: [[Inference Engine]]\n- uses:: [[Knowledge Base]]\n- skos:related:: [[Fuzzy Logic]]\n- skos:related:: [[Rule-Based Systems]]\n- enables:: [[Decision Support]]\n\n### Definition\nExpert systems are computer programs that emulate the decision-making ability of human experts in specific domains. They consist of a knowledge base containing domain-specific information and an inference engine that applies logical rules to derive conclusions, make recommendations, or solve complex problems within their specialized area of expertise.\n\n### Architecture Components\n- Knowledge base (facts and rules)\n- Inference engine (reasoning mechanism)\n- User interface\n- Explanation facility\n- Knowledge acquisition module\n\n### Historical Significance\n- MYCIN (medical diagnosis)\n- DENDRAL (chemical analysis)\n- XCON (computer configuration)\n- Peak popularity in 1980s-1990s\n\n### Modern Applications\n- Medical diagnosis support\n- Financial planning\n- Quality control\n- Fault diagnosis\n- Configuration systems",
+  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1002\n  - preferred-term:: Expert Systems\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:ExpertSystems\n\n### Relationships\n- is-subclass-of:: [[Knowledge Representation]]\n- is-subclass-of:: [[Artificial Intelligence]]\n- uses:: [[Inference Engine]]\n- uses:: [[Knowledge Base]]\n- skos:related:: [[Fuzzy Logic]]\n- skos:related:: [[Rule-Based Systems]]\n- enables:: [[Decision Support]]\n\n### Definition\nExpert systems are computer programs that emulate the decision-making ability of human experts in specific domains. They consist of a knowledge base containing domain-specific information and an inference engine that applies logical rules to derive conclusions, make recommendations, or solve complex problems within their specialized area of expertise.\n\n### Architecture Components\n- Knowledge base (facts and rules)\n- Inference engine (reasoning mechanism)\n- User interface\n- Explanation facility\n- Knowledge acquisition module\n\n### Historical Significance\n- MYCIN (medical diagnosis)\n- DENDRAL (chemical analysis)\n- XCON (computer configuration)\n- Peak popularity in 1980s-1990s\n\n### Modern Applications\n- Medical diagnosis support\n- Financial planning\n- Quality control\n- Fault diagnosis\n- Configuration systems",
   "backlinks": [
     "Fuzzy Logic",
     "Knowledge Representation",
     "Symbolic AI"
   ],
   "wiki_links": [
-    "Knowledge Representation",
-    "Inference Engine",
     "Fuzzy Logic",
-    "Artificial Intelligence",
-    "Knowledge Base",
     "Rule-Based Systems",
-    "Decision Support"
+    "Decision Support",
+    "Inference Engine",
+    "Knowledge Base",
+    "Knowledge Representation",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-1002",
     "preferred_term": "Expert Systems",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/ai#ExpertSystems",
     "source_domain": "ai",
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
@@ -34,7 +34,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "ai:ExpertSystems",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -56,7 +56,6 @@
       "errors": [
         "Missing required property: last-updated",
         "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

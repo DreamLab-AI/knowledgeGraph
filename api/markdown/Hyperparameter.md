@@ -7,6 +7,7 @@ id:: hyperparameter-ontology
   - term-id:: MV-0923
   - preferred-term:: Hyperparameter
   - source-domain:: mv
+  - owl:class:: mv:Hyperparameter
   - status:: draft
   - definition:: ### Primary Definition
 

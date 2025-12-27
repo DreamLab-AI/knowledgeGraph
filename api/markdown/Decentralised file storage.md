@@ -7,6 +7,7 @@ public:: true
   - term-id:: BC-9898
   - preferred-term:: public:: true
   - source-domain:: bc
+  - owl:class:: bc:PublicTrue
   - status:: draft
 
 ### 2.3.1 Emerging consensus
@@ -413,3 +414,6 @@ The recent hype cycle ignored the legacy definitions described above and instead
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

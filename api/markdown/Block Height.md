@@ -7,6 +7,7 @@ id:: block-height-ontology
   - term-id:: BC-0011
   - preferred-term:: Block Height
   - source-domain:: bc
+  - owl:class:: bc:BlockHeight
   - status:: complete
   - definition:: Number of blocks from genesis within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

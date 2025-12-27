@@ -3,12 +3,13 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0991
+	- source-domain:: bc
 	- preferred-term:: Ontology Property Definitions
 	- status:: complete
 	- public-access:: true
 	- definition:: Comprehensive definitions of object properties and datatype properties used throughout the Disruptive Technology Ontology, establishing formal semantic relationships between concepts across AI, blockchain, robotics, and metaverse domains. Properties define typed relationships with explicit domains, ranges, inverse relationships, and logical characteristics enabling automated reasoning and knowledge graph traversal.
 	- maturity:: mature
-	- owl:class:: dt:OntologyPropertyDefinitions
+	- owl:class:: ai:OntologyPropertyDefinitions
 	- belongsToDomain:: [[OntologyDomain]]
 
 ## OntologyBlock
@@ -124,3 +125,5 @@
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
 
+### Relationships
+- is-subclass-of:: [[Blockchain]]

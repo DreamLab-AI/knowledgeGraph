@@ -1,14 +1,14 @@
-id:: biosensing-interface-ontology
-
 - ### OntologyBlock
-  id:: Biosensing Interface
+  id:: biosensing-interface-ontology
   - ontology:: true
   - public-access:: true
-  - term-id:: DT-0150
+  - term-id:: RB-0150
   - preferred-term:: Biosensing Interface
   - source-domain:: rb
+  - owl:class:: rb:BiosensingInterface
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: Physical sensor hardware system that detects physiological signals (heart rate, EEG, GSR, EMG) to adapt virtual interaction in real time.
+  - definition:: A biosensing interface is a physical sensor hardware system that detects physiological signals (heart rate, EEG, GSR, EMG) to enable adaptive human-robot interaction and biofeedback control.
 
 ### Relationships
 - is-part-of:: [[Affective Computing Framework]]

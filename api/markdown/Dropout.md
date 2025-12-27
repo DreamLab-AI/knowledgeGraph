@@ -7,6 +7,7 @@ id:: dropout-ontology
   - term-id:: MV-0057
   - preferred-term:: Dropout
   - source-domain:: mv
+  - owl:class:: mv:Dropout
   - status:: draft
   - definition:: ### Primary Definition
 

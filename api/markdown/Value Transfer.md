@@ -12,10 +12,10 @@
 
 
 ### OWL Classification
-	- owl:class:: dt:ValueTransfer
+	- owl:class:: mv:ValueTransfer
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Process
-	- owl:inferred-class:: dt:ConceptualProcess
+	- owl:inferred-class:: mv:ConceptualProcess
 
 ### Domain & Architecture
 	- belongsToDomain:: [[RoboticsDomain]], [[MetaverseDomain]], [[AI-GroundedDomain]], [[BlockchainDomain]], [[EconomicSystemDomain]]
@@ -48,10 +48,10 @@
     - authority-score:: 1.0
 
   - **Semantic Classification**
-    - owl:class:: dt:ValueTransfer
+    - owl:class:: mv:ValueTransfer
     - owl:physicality:: ConceptualEntity
     - owl:role:: Process
-    - owl:inferred-class:: dt:ConceptualProcess
+    - owl:inferred-class:: mv:ConceptualProcess
     - is-subclass-of:: [[Metaverse]]
     - belongsToDomain:: [[EconomicSystemDomain]], [[BlockchainDomain]], [[MetaverseDomain]], [[AI-GroundedDomain]], [[RoboticsDomain]]
 

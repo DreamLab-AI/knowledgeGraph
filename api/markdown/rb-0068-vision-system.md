@@ -3,15 +3,16 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0068
-	- preferred-term:: rb 0068 vision system
+	- preferred-term:: Vision System
 	- source-domain:: rb
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition
 	- maturity:: draft
-	- owl:class:: mv:rb0068visionsystem
+	- owl:class:: rb:VisionSystem
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

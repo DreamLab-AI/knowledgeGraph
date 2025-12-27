@@ -7,6 +7,7 @@ id:: unknown-ontology
   - term-id:: MV-0893
   - preferred-term:: BC 0118 market capitalization
   - source-domain:: bc
+  - owl:class:: bc:Bc0118MarketCapitalization
   - status:: deprecated
 
 ### Relationships

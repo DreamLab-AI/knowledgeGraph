@@ -5,6 +5,7 @@
   - preferred-term:: Training Hardware
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:TrainingHardware
 
 ### Relationships
 - is-subclass-of:: [[AI Hardware]]

@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0537
+    - source-domain:: bc
+    - owl:class:: bc:IncentiveAlignment
     - preferred-term:: Incentive Alignment
     - ontology:: true
     - public-access:: true

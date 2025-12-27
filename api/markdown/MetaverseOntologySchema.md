@@ -7,6 +7,7 @@ id:: metaverseontologyschema-ontology
   - term-id:: MV-1001
   - preferred-term:: MetaverseOntologySchema
   - source-domain:: mv
+  - owl:class:: mv:Metaverseontologyschema
   - status:: deprecated
   - definition:: A metaverse ontology schema component in the Metaverse domain that required by GlossaryIndex.
 

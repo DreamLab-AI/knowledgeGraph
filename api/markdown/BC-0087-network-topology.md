@@ -7,6 +7,7 @@ id:: network-topology-ontology
   - term-id:: DT-0087
   - preferred-term:: Network Topology
   - source-domain:: bc
+  - owl:class:: bc:NetworkTopology
   - status:: complete
   - definition:: Node connection structure within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

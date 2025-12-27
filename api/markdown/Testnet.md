@@ -7,4 +7,8 @@ Testnet refers to alternative blockchain network designed for testing, developme
   - term-id:: BC-9904
   - preferred-term:: Testnet
   - source-domain:: bc
+  - owl:class:: bc:Testnet
   - status:: draft
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

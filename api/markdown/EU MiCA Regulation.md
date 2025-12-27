@@ -21,6 +21,7 @@
 	- maturity:: draft
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 
 ## Academic Context
 

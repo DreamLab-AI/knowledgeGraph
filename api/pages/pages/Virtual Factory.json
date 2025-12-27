@@ -1,24 +1,28 @@
 {
   "id": "Virtual Factory",
   "title": "Virtual Factory",
-  "content": "- ### OntologyBlock\n  id:: virtual-factory-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10124\n\t- preferred-term:: Virtual Factory\n\t- status:: stub\n\t- owl:class:: mv:VirtualFactory\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: virtual-factory-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-factory-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10124\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Factory\n\t- status:: active\n\t- definition:: A physically accurate digital twin representation of a manufacturing facility that enables modeling, simulation, analysis, and optimization of production processes, resources, and operations without requiring physical prototypes or pilot plants.\n\t- owl:class:: mv:VirtualFactory\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Digital Twin]]\n\t\t- related-to:: [[Virtual Commissioning]]\n\t\t- related-to:: [[Smart Manufacturing]]\n\t\t- related-to:: [[Industry 4.0]]\n\t  id:: virtual-factory-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual factories are digital twins that allow manufacturers to model, simulate, and optimize production without physical prototypes. They integrate big data, AI, IoT, and machine learning as core Industry 4.0 concepts. Companies like Pegatron develop virtual-factory solutions on OpenUSD, while Rockwell Automation integrates NVIDIA Omniverse for digital twins.\n- ## Technical Details\n\t- ### Digital Twin Types\n\t\t- **Process Twins**: Simulate machines, assets, and workflows\n\t\t- **Factory Twins**: 360-degree view of entire plant operations\n\t\t- **Asset Twins**: Individual machine representations\n\t\t- **System Twins**: Integrated production line models\n\t- ### Core Components\n\t\t- Physical components and sensors\n\t\t- Virtual models and simulations\n\t\t- Bidirectional data flow connectivity\n\t\t- Real-time synchronization\n\t- ### Key Technologies\n\t\t- NVIDIA Omniverse for collaboration\n\t\t- OpenUSD for data interoperability\n\t\t- Siemens Tecnomatix for process simulation\n\t\t- IoT sensors for real-time data\n- ## Applications\n\t- Production planning and optimization\n\t- Predictive maintenance scheduling\n\t- Factory layout and workflow design\n\t- Robotics and AMR training\n\t- New product introduction simulation",
   "backlinks": [
     "Industrial Metaverse"
   ],
   "wiki_links": [
-    "metaverse"
+    "Industry 4.0",
+    "metaverse",
+    "Virtual Commissioning",
+    "Smart Manufacturing",
+    "Digital Twin"
   ],
   "ontology": {
     "term_id": "MV-10124",
     "preferred_term": "Virtual Factory",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#VirtualFactory",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A physically accurate digital twin representation of a manufacturing facility that enables modeling, simulation, analysis, and optimization of production processes, resources, and operations without requiring physical prototypes or pilot plants.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Digital Twin"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +51,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Virtual Commissioning",
+        "Smart Manufacturing",
+        "Industry 4.0"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

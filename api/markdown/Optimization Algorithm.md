@@ -3,11 +3,12 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0866
+	- source-domain:: ai
 	- preferred-term:: Optimization Algorithm
 	- status:: complete
 	- public-access:: true
 	- source:: Chimera Prime Research
-	- maturity:: dt:Established
+	- maturity:: established
 	- owl:class:: ai:OptimizationAlgorithm
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships

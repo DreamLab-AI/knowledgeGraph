@@ -7,6 +7,7 @@ id:: salt-ontology
   - term-id:: DT-0049
   - preferred-term:: Salt
   - source-domain:: bc
+  - owl:class:: bc:Salt
   - status:: complete
   - definition:: Random data for hash uniqueness within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

@@ -1,7 +1,7 @@
 {
   "id": "PrivacyPreservingAnalytics",
   "title": "PrivacyPreservingAnalytics",
-  "content": "- ### OntologyBlock\n  id:: PrivacyPreservingAnalytics\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1005\n  - preferred-term:: PrivacyPreservingAnalytics\n  - source-domain:: ai\n  - status:: complete\n  - definition:: A privacy preserving analytics component in the Artificial Intelligence domain that enables EtsiDomainDataManagementEthics.\n\n### Relationships\n- is-subclass-of:: [[AI Analysis Method]]",
+  "content": "- ### OntologyBlock\n  id:: PrivacyPreservingAnalytics\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1005\n  - preferred-term:: PrivacyPreservingAnalytics\n  - source-domain:: ai\n  - status:: complete\n  - owl:class:: ai:Privacypreservinganalytics\n  - definition:: A privacy preserving analytics component in the Artificial Intelligence domain that enables EtsiDomainDataManagementEthics.\n\n### Relationships\n- is-subclass-of:: [[AI Analysis Method]]",
   "backlinks": [],
   "wiki_links": [
     "AI Analysis Method"
@@ -10,7 +10,7 @@
     "term_id": "AI-1005",
     "preferred_term": "PrivacyPreservingAnalytics",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/ai#Privacypreservinganalytics",
     "source_domain": "ai",
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
@@ -24,7 +24,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "ai:Privacypreservinganalytics",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -45,7 +45,6 @@
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

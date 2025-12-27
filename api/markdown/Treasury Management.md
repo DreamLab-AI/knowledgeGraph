@@ -2,10 +2,42 @@ id:: treasury-management-ontology
 
 - ### OntologyBlock
   id:: Treasury Management
-  - ontology:: true
-  - public-access:: true
-  - term-id:: BC-0464
-  - preferred-term:: Treasury Management
-  - source-domain:: bc
-  - status:: stub
-  - definition:: A component of the blockchain ecosystem.
+	- ontology:: true
+	- public-access:: true
+	- term-id:: BC-0464
+	- preferred-term:: Treasury Management
+	- source-domain:: bc
+	- owl:class:: bc:TreasuryManagement
+	- status:: active
+	- definition:: The governance, allocation, and operational management of digital assets held in DAO or protocol treasuries, including diversification strategies, yield generation, spending authorization, and risk management using smart contracts and multisig wallets.
+	- #### Relationships
+		- is-subclass-of:: [[DAO Operations]]
+		- related-to:: [[Tokenomics Governance]]
+		- related-to:: [[Smart Contract]]
+		- related-to:: [[Multisig Wallet]]
+- ## Overview
+	- DAO treasury management involves overseeing $21+ billion in collective assets across 13,000+ DAOs worldwide. The majority (67.3%) of treasuries are held in native tokens, with 18.2% in stablecoins. Multisig wallets (primarily Gnosis Safe) are used by most DAOs for secure treasury storage.
+- ## Technical Details
+	- ### Treasury Allocation Patterns
+		- **Native Tokens**: 67.3% of total assets
+		- **Stablecoins**: 18.2% for liquidity and stability
+		- **Other Crypto**: 11.7% diversification
+		- **Traditional Assets**: 2.8% (minimal)
+	- ### Management Mechanisms
+		- **Multisig Wallets**: Multi-party authorization (Gnosis Safe standard)
+		- **On-Chain Governance**: Token-weighted voting for spending
+		- **Snapshot Voting**: 96% of major DAO votes processed via Snapshot
+		- **DeFi Yield**: Idle funds deployed to Aave, Compound, Yearn
+	- ### Best Practices
+		- Early diversification to reduce native token exposure
+		- Finance working groups for analysis and oversight
+		- Smart contract automation for disbursements
+		- Regular treasury updates and audits
+		- Emergency controls and circuit breakers
+- ## Applications
+	- Protocol development funding
+	- Community grants and incentives
+	- Liquidity provision programs
+	- Ecosystem development initiatives
+	- Contributor compensation
+

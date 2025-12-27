@@ -1,17 +1,16 @@
-id:: safety-ontology
-
 - ### OntologyBlock
-  id:: Safety
+  id:: safety-ontology
   - ontology:: true
   - public-access:: true
-  - term-id:: MV-0070
+  - term-id:: RB-0070
   - preferred-term:: Safety
   - source-domain:: rb
+  - owl:class:: rb:Safety
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: The condition whereby an AI system operates without causing unacceptable risk of physical injury, harm to human health or well-being, damage to property, or harm to the environment, achieved through hazard identification, risk assessment, and implementation of appropriate safeguards.
+  - definition:: The condition whereby a robotic system operates without causing unacceptable risk of physical injury, harm to human health or well-being, damage to property, or harm to the environment, achieved through hazard identification, risk assessment, and implementation of appropriate safeguards.
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
 - requires:: [[Hazard Analysis]]
 - requires:: [[Risk Assessment (AI-0079)]]
 
@@ -436,11 +435,9 @@ class SafetyMonitor:
 
 *This definition emphasises safety as a fundamental requirement for AI systems, especially in high-risk applications, requiring systematic hazard analysis and multi-layered safeguards.*
 	- maturity:: draft
-	- owl:class:: mv:Safety
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 	- #### Relationships
 	  id:: safety-relationships
-		- is-subclass-of:: [[Metaverse]]
 		- requires:: [[Risk Assessment (AI-0079)]], [[Hazard Analysis]]

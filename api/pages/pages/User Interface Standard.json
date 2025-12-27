@@ -1,12 +1,16 @@
 {
   "id": "User Interface Standard",
   "title": "User Interface Standard",
-  "content": "- ### OntologyBlock\n  id:: user-interface-standard-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10098\n\t- source-domain:: metaverse\n\t- preferred-term:: User Interface Standard\n\t- status:: stub\n\t- owl:class:: mv:UserInterfaceStandard\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: user-interface-standard-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: user-interface-standard-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10098\n\t- source-domain:: metaverse\n\t- preferred-term:: User Interface Standard\n\t- status:: active\n\t- definition:: Specifications and guidelines that define consistent patterns, components, and interactions for user interfaces in metaverse and XR environments, ensuring usability, accessibility, and cross-platform consistency.\n\t- owl:class:: mv:UserInterfaceStandard\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Standards]]\n\t\t- related-to:: [[User Interface Architecture]]\n\t\t- related-to:: [[Accessibility]]\n\t\t- related-to:: [[User Experience]]\n\t  id:: user-interface-standard-relationships\n\t  collapsed:: true\n- ## Overview\n\t- User interface standards for metaverse environments define how interfaces should behave across different XR devices and platforms. These standards address spatial interactions, multimodal input, accessibility requirements, and visual design principles specific to immersive environments.\n- ## Technical Details\n\t- ### Key Standards Bodies\n\t\t- **W3C**: Web accessibility and XR standards (WebXR)\n\t\t- **IEEE**: Human-computer interaction standards\n\t\t- **ISO 9241**: Ergonomics of human-system interaction\n\t\t- **WCAG**: Web Content Accessibility Guidelines\n\t- ### XR-Specific Considerations\n\t\t- Spatial UI placement and depth\n\t\t- Comfort zones and reachability\n\t\t- Text legibility in 3D space\n\t\t- Motion and transition design\n\t\t- Multi-modal feedback (visual, audio, haptic)\n\t- ### Accessibility Requirements\n\t\t- Alternative input methods\n\t\t- High contrast and scalable UI elements\n\t\t- Screen reader compatibility for menus\n\t\t- Motion sensitivity accommodations\n- ## Applications\n\t- VR application design guidelines\n\t- AR overlay interface patterns\n\t- Metaverse platform UI consistency\n\t- Accessible XR experience design\n\t- Enterprise XR application standards",
   "backlinks": [
     "Accessibility Standard"
   ],
   "wiki_links": [
-    "metaverse"
+    "User Interface Architecture",
+    "metaverse",
+    "User Experience",
+    "Standards",
+    "Accessibility"
   ],
   "ontology": {
     "term_id": "MV-10098",
@@ -16,9 +20,9 @@
     "source_domain": "metaverse",
     "domain": "metaverse",
     "domain_full_name": "",
-    "definition": null,
+    "definition": "Specifications and guidelines that define consistent patterns, components, and interactions for user interfaces in metaverse and XR environments, ensuring usability, accessibility, and cross-platform consistency.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Standards"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,14 +51,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "User Interface Architecture",
+        "Accessibility",
+        "User Experience"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)",
         "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
       ]
     }

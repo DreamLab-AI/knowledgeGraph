@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0162
+	- source-domain:: rb
 	- preferred-term:: 2D LiDAR
 	- status:: complete
 	- public-access:: true
@@ -11,3 +12,4 @@
 	- maturity:: established
 	- owl:class:: rb:Lidar2d
 	- belongsToDomain:: [[Robotics]]
+	- is-subclass-of:: [[Robotics]]

@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: AI-0805
+    - source-domain:: ai
+    - owl:class:: ai:NeuralNetworkComponent
     - preferred-term:: Neural Network Component
     - ontology:: true
     - public-access:: true

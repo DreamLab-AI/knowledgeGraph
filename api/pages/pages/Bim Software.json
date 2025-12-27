@@ -1,22 +1,32 @@
 {
   "id": "Bim Software",
-  "title": "Bim Software",
-  "content": "- ### OntologyBlock\n  id:: bim-software-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9797\n\t- preferred-term:: Bim Software\n\t- status:: stub\n\t- owl:class:: mv:BimSoftware\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: bim-software-relationships\n\t  collapsed:: true",
+  "title": "BIM Software",
+  "content": "- ### OntologyBlock\n  id:: bim-software-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9797\n\t- source-domain:: mv\n\t- preferred-term:: BIM Software\n\t- definition:: Specialized applications for Building Information Modeling that enable the generation, management, and collaboration on digital representations of physical and functional characteristics of buildings and infrastructure, supporting the entire asset lifecycle from design through construction to operations.\n\t- status:: active\n\t- owl:class:: mv:BimSoftware\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: bim-software-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Design Software]]\n\t\t- enables:: [[3D Modeling]], [[Construction Coordination]], [[Facility Management]]\n\t\t- requires:: [[CAD Capabilities]], [[Data Management]], [[Collaboration Tools]]\n\t\t- related-to:: [[Digital Twin]], [[Construction Technology]], [[Architecture Software]]\n- ## Technical Details\n\t- **BIM Dimensions**:\n\t\t- 3D: Geometric modeling\n\t\t- 4D: Scheduling and timeline\n\t\t- 5D: Cost analysis and estimation\n\t\t- 6D: Environmental sustainability\n\t\t- 7D: Facility management and maintenance\n\t- **Market Size**: USD 7.9 billion (2023), projected USD 15.0 billion by 2028 (13.7% CAGR)\n\t- **Key Trends (2024)**:\n\t\t- Cloud-based collaboration platforms\n\t\t- AI/ML integration for clash detection and optimization\n\t\t- Digital twin connectivity\n\t\t- VR/AR visualization capabilities\n\t\t- OpenBIM adoption for interoperability\n- ## Leading Platforms\n\t- **Autodesk Revit**: Industry standard for architects, engineers, and contractors\n\t- **Bentley Systems MicroStation**: Infrastructure engineering and BIM applications\n\t- **ArchiCAD**: Architectural design and documentation\n\t- **Supporting Tools**: Solibri (model checking), Synchro/Navisworks (4D planning), Procore (document management)\n- ## Applications\n\t- Architectural design and visualization\n\t- Structural and MEP engineering\n\t- Construction project management\n\t- Clash detection and coordination\n\t- Post-construction facility management",
   "backlinks": [],
   "wiki_links": [
-    "metaverse"
+    "Construction Coordination",
+    "Design Software",
+    "metaverse",
+    "CAD Capabilities",
+    "Data Management",
+    "3D Modeling",
+    "Construction Technology",
+    "Facility Management",
+    "Architecture Software",
+    "Collaboration Tools",
+    "Digital Twin"
   ],
   "ontology": {
     "term_id": "MV-9797",
-    "preferred_term": "Bim Software",
+    "preferred_term": "BIM Software",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#BimSoftware",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Specialized applications for Building Information Modeling that enable the generation, management, and collaboration on digital representations of physical and functional characteristics of buildings and infrastructure, supporting the entire asset lifecycle from design through construction to operations.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -28,12 +38,22 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Design Software"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "CAD Capabilities",
+      "Data Management",
+      "Collaboration Tools"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "3D Modeling",
+      "Construction Coordination",
+      "Facility Management"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -43,15 +63,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Digital Twin",
+        "Construction Technology",
+        "Architecture Software"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

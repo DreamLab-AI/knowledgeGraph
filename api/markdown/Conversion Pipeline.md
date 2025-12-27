@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0104
+	- source-domain:: mv
 	- preferred-term:: Conversion Pipeline
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[Computation And Intelligence Domain]], [[Infrastructure Domain]]
 	- implementedInLayer:: [[Data Layer]], [[Middleware Layer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: conversion-pipeline-relationships
 	  collapsed:: true
 		- is-part-of:: [[Asset Pipeline]]

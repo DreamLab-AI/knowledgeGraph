@@ -7,6 +7,7 @@ id:: cryptographichash-ontology
   - term-id:: MV-0009
   - preferred-term:: CryptographicHash
   - source-domain:: mv
+  - owl:class:: mv:Cryptographichash
   - status:: draft
   - definition:: A component of the metaverse ecosystem.
 

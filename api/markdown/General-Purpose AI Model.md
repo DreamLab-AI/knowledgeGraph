@@ -3,6 +3,8 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0509
+	- source-domain:: ai
+	- owl:class:: ai:GeneralPurposeAiModel
 	- preferred-term:: General Purpose AI Model
 	- status:: active
 	- public-access:: true

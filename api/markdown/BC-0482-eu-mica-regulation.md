@@ -7,6 +7,7 @@ id:: bc-0482-eu-mica-regulation-ontology
   - term-id:: BC-0482
   - preferred-term:: EU MiCA Regulation
   - source-domain:: bc
+  - owl:class:: bc:EuMicaRegulation
   - status:: stub
   - definition:: A component of the blockchain ecosystem.
 

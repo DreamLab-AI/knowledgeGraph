@@ -2,7 +2,7 @@
   id:: rb-0062-model-predictive-control-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0062
+	- term-id:: RB-0062
 	- preferred-term:: Model Predictive Control
 	- source-domain:: rb
 	- status:: draft
@@ -12,16 +12,17 @@
 
 
 ### OWL Classification
-	- owl:class:: mv:rb0062modelpredictivecontrol
+	- owl:class:: rb:ModelPredictiveControl
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 
 ### Domain & Architecture
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[RoboticsDomain]]
 	- maturity:: draft
+	- definition:: Model Predictive Control (MPC) is an advanced control strategy that uses dynamic models of a system to predict future behaviour and optimise control actions over a finite horizon.
 
 ### Relationships
-- is-subclass-of:: [[MachineLearning]]
+- is-subclass-of:: [[Robotics]]
 
 ## Academic Context
 

@@ -1,11 +1,11 @@
-id:: rb-0032-manipulability-ontology
-
 - ### OntologyBlock
-  id:: Manipulability
+  id:: manipulability-ontology
   - ontology:: true
   - public-access:: true
-  - term-id:: MV-0925
+  - term-id:: RB-0032
   - preferred-term:: Manipulability
   - source-domain:: rb
+  - owl:class:: rb:Manipulability
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: Manipulability is a scalar measure quantifying a robot manipulator's ability to arbitrarily change position and orientation at its current configuration, derived from the Jacobian matrix determinant.

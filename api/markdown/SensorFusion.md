@@ -1,11 +1,11 @@
-id:: sensorfusion-ontology
-
 - ### OntologyBlock
-  id:: SensorFusion
+  id:: sensorfusion-ontology
   - ontology:: true
   - public-access:: true
-  - term-id:: MV-0054
-  - preferred-term:: SensorFusion
+  - term-id:: RB-0054
+  - preferred-term:: Sensor Fusion
   - source-domain:: rb
+  - owl:class:: rb:SensorFusion
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: A component of the metaverse ecosystem.
+  - definition:: Sensor fusion is the process of combining data from multiple sensors to produce more accurate, complete, and reliable information about the environment or system state than any single sensor could provide.

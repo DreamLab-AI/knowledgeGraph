@@ -5,6 +5,8 @@ id:: multiverse-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: DT-0316
+  - source-domain:: mv
+  - owl:class:: mv:Multiverse
   - preferred-term:: Multiverse
   - status:: draft
   - definition:: A network of interconnected but distinct metaverses and virtual worlds that enable cross-platform identity, asset portability, and interoperability while maintaining individual world sovereignty and distinct governance models.

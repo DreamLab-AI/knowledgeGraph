@@ -1,11 +1,11 @@
-id:: surgical-robot-ontology
-
 - ### OntologyBlock
-  id:: Surgical Robot
+  id:: surgical-robot-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0014
   - preferred-term:: Surgical Robot
   - source-domain:: rb
+  - owl:class:: rb:SurgicalRobot
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: A surgical robot is a robotic system used to assist in surgical procedures, providing enhanced precision, dexterity, and minimally invasive capabilities.

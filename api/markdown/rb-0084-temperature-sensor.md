@@ -3,15 +3,16 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0084
-	- preferred-term:: rb 0084 temperature sensor
+	- preferred-term:: Temperature Sensor
 	- source-domain:: rb
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition
 	- maturity:: draft
-	- owl:class:: mv:rb0084temperaturesensor
+	- owl:class:: rb:TemperatureSensor
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
+	- is-subclass-of:: [[Robotics]]
 	- belongsToDomain:: [[RoboticsDomain]]
 
 ## Metadata

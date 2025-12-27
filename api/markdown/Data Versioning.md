@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-9011
+	- source-domain:: ai
 	- preferred-term:: Data Versioning
 	- status:: draft
 	- public-access:: true
@@ -14,3 +15,7 @@
 	- owl:role:: Process
 	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- isSubclassOf:: [[Data Engineering]]
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

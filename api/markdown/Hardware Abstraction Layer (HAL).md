@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-1060
+	- source-domain:: mv
 	- preferred-term:: Hardware Abstraction Layer (HAL)
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[InfrastructureDomain]]
 	- implementedInLayer:: [[Physical Layer]], [[Network Layer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: hardware-abstraction-layer-hal-relationships
 	  collapsed:: true
 		- is-part-of:: [[Infrastructure Layer]]

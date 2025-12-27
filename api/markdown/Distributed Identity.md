@@ -9,6 +9,7 @@
   - term-id:: BC-9940
   - preferred-term:: ![]./assets/431d39316d5fa17f89fa9e1154fa2a267517a245.png
   - source-domain:: bc
+  - owl:class:: bc:Assets431d39316d5fa17f89fa9e1154fa2a267517a245png
   - status:: draft
 
 ![]./assets/431d39316d5fa17f89fa9e1154fa2a267517a245.png
@@ -262,3 +263,6 @@
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

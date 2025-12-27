@@ -7,4 +7,8 @@ ERC-1400 Token refers to a security token standard tailored for regulatory compl
   - term-id:: BC-9871
   - preferred-term:: ERC1400 Token
   - source-domain:: bc
+  - owl:class:: bc:Erc1400Token
   - status:: draft
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

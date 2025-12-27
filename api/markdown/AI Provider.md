@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: An individual, organisation, or legal entity that develops, produces, or supplies an artificial intelligence system, including responsibility for design decisions, training processes, system capabilities, documentation, and compliance with applicable requirements, and who either places the AI system on the market under their own name or trademark, substantially modifies an existing system, or makes the system available for use, thereby assuming primary accountability for the system's characteristics, performance, and conformity with regulatory obligations.
 	- source:: [[EU AI Act Articles 16-17]], [[ISO/IEC 42001:2023]], [[OECD AI Principles]], [[UK AI Regulation]]
-	- maturity:: dt:Mature
+	- maturity:: mature
 	- #### Relationships
 - is-subclass-of:: [[ai:ModelArchitecture]]
 	  id:: ai-provider-relationships

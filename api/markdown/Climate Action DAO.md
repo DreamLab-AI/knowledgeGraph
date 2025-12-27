@@ -2,10 +2,40 @@ id:: climate-action-dao-ontology
 
 - ### OntologyBlock
   id:: Climate Action DAO
-  - ontology:: true
-  - public-access:: true
-  - term-id:: BC-0502
-  - preferred-term:: Climate Action DAO
-  - source-domain:: bc
-  - status:: stub
-  - definition:: A component of the blockchain ecosystem.
+	- ontology:: true
+	- public-access:: true
+	- term-id:: BC-0502
+	- preferred-term:: Climate Action DAO
+	- source-domain:: bc
+	- owl:class:: bc:ClimateActionDao
+	- definition:: A decentralized autonomous organization that uses blockchain technology, token-based governance, and smart contracts to coordinate climate initiatives, manage carbon credit trading, and democratize environmental decision-making through transparent community-driven mechanisms.
+	- status:: active
+- ### Relationships
+	- is-subclass-of:: [[Decentralized Autonomous Organization]]
+	- enables:: [[Carbon Credit Trading]], [[Environmental Governance]], [[Climate Finance]]
+	- requires:: [[Blockchain Network]], [[Governance Token]], [[Smart Contracts]]
+	- related-to:: [[Carbon Credit Tracking]], [[Tokenization]], [[Environmental Sustainability]]
+- ## Technical Details
+	- **Leading Climate DAOs**:
+		- **KlimaDAO**: 600,000 tonnes retired on-chain, 25M+ VCS credits on platform
+		- **Regen Network**: REGEN token holders govern protocol development
+		- **DAO-IPCI**: Decentralized ledger for carbon unit operations
+		- **Earth Fund**: Web 3.0 climate conservation DAO
+	- **Benefits**:
+		- Transparent governance without central control
+		- Fast and decentralized sustainability support
+		- Community-driven resource allocation
+		- Tokenized incentives for carbon removal
+	- **Challenges**:
+		- Core team concentration of power
+		- Anonymous leadership accountability issues
+		- Regulatory uncertainty
+		- Blockchain energy consumption concerns
+		- Potential for scam DAOs
+- ## Applications
+	- Carbon credit tokenization and trading
+	- Environmental project funding
+	- Community climate governance
+	- Carbon offset verification
+	- Sustainable development coordination
+

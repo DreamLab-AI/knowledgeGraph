@@ -2,10 +2,40 @@ id:: travel-rule-ontology
 
 - ### OntologyBlock
   id:: Travel Rule
-  - ontology:: true
-  - public-access:: true
-  - term-id:: BC-0477
-  - preferred-term:: Travel Rule
-  - source-domain:: bc
-  - status:: stub
-  - definition:: A component of the blockchain ecosystem.
+	- ontology:: true
+	- public-access:: true
+	- term-id:: BC-0477
+	- preferred-term:: Travel Rule
+	- source-domain:: bc
+	- owl:class:: bc:TravelRule
+	- status:: active
+	- definition:: An international anti-money laundering regulation (FATF Recommendation 16) requiring Virtual Asset Service Providers (VASPs) to collect and share originator and beneficiary information for cryptocurrency transfers above specified thresholds.
+	- #### Relationships
+		- is-subclass-of:: [[AML Compliance]]
+		- related-to:: [[VASP]]
+		- related-to:: [[FATF]]
+		- related-to:: [[Cryptocurrency Regulation]]
+- ## Overview
+	- The Crypto Travel Rule requires VASPs and financial institutions to collect and share sender and recipient details before or during cryptocurrency transactions. Extended to virtual assets by FATF in 2019, the rule ensures personal data "travels" with transactions for transparency and traceability. As of 2024, 75% of jurisdictions are only partially or non-compliant.
+- ## Technical Details
+	- ### Requirements
+		- Collect originator name, account number, and physical address
+		- Collect beneficiary name and account number
+		- Share information with counterparty VASP
+		- Maintain records for regulatory reporting
+	- ### Thresholds
+		- **FATF Recommendation**: $1,000/EUR 1,000 de minimis
+		- **United States**: $3,000 threshold for full data collection
+		- **EU (TFR)**: No minimum threshold for CASP-to-CASP transfers
+	- ### Implementation Challenges
+		- **Interoperability**: No universal technical solution mandated
+		- **Sunrise Issue**: Varying compliance timelines across jurisdictions
+		- **Counterparty Identification**: Verifying regulated VASPs vs unhosted wallets
+		- **Privacy Conflicts**: GDPR and data protection law tensions
+- ## Applications
+	- Cryptocurrency exchange compliance
+	- Cross-border virtual asset transfers
+	- DeFi protocol regulatory adaptation
+	- Stablecoin transaction monitoring
+	- Institutional crypto custody services
+

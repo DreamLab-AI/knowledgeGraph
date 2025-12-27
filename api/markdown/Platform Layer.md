@@ -7,10 +7,12 @@ id:: platform-layer-ontology
   - term-id:: DT-0171
   - preferred-term:: Platform Layer
   - source-domain:: mv
+  - owl:class:: mv:PlatformLayer
   - status:: draft
   - definition:: Architectural tier providing core platform services including identity, world state management, and asset services upon which metaverse applications are built.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Infrastructure Architecture]]
 - has-part:: [[World State Service]]
 - has-part:: [[Platform Middleware]]

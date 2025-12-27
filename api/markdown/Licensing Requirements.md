@@ -7,5 +7,9 @@ id:: licensing-requirements-ontology
   - term-id:: BC-0488
   - preferred-term:: Licensing Requirements
   - source-domain:: bc
+  - owl:class:: bc:LicensingRequirements
   - status:: stub
   - definition:: A component of the blockchain ecosystem.
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

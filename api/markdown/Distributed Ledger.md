@@ -7,4 +7,8 @@ id:: distributed-ledger-ontology
   - term-id:: BC-0585
   - preferred-term:: Distributed Ledger
   - source-domain:: bc
+  - owl:class:: bc:DistributedLedger
   - status:: complete
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

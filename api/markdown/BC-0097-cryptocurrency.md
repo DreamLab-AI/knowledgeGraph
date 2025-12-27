@@ -7,6 +7,7 @@ id:: cryptocurrency-ontology
   - term-id:: DT-0097
   - preferred-term:: Cryptocurrency
   - source-domain:: bc
+  - owl:class:: bc:Cryptocurrency
   - status:: complete
   - definition:: Digital currency on blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

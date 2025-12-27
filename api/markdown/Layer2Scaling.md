@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0044
+	- source-domain:: mv
 	- preferred-term:: Layer2Scaling
 	- status:: draft
 	- public-access:: true
@@ -27,3 +28,6 @@
 ;; Data Properties
 (AnnotationAssertion dcterms:identifier :Layer2scaling "mv-1761742247942"^^xsd:string)
 ```
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

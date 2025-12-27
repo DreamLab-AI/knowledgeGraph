@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0056
+	- source-domain:: rb
 	- preferred-term:: rb 0056 impedance control
 	- status:: draft
 	- public-access:: true

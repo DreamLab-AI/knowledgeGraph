@@ -8,7 +8,11 @@
   - preferred-term:: {{twitter https://twitter.com/cocktailpeanut/status/1765462787046686968}}
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:twitterHttpstwittercomcocktailpeanutstatus1765462787046686968
 
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 ### [NVIDIA Edify](https://research.nvidia.com/labs/dir/edify-3d/) - Edify 3D is a framework developed by NVIDIA Research that focuses on creating, editing, and refining 3D scenes and content.
 - The system leverages [[artificial intelligence]] and [[machine learning]] to allow users to interact with 3D models in a more intuitive and accessible way, streamlining the 3D creation process.
 - One key aim of Edify 3D is to simplify complex tasks like object placement, colour correction, and material assignment within a 3D environment.

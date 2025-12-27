@@ -3,16 +3,17 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0384
+	- source-domain:: ai
 	- preferred-term:: Intersectional Fairness
 	- status:: in
 	- public-access:: true
 	- definition:: Intersectional Fairness is an approach to algorithmic fairness that accounts for overlapping and interacting protected attributes, recognizing that individuals with multiple marginalized identities may experience unique forms of discrimination not captured by analyzing single attributes in isolation. Rooted in intersectionality theory from critical race and feminist scholarship (Crenshaw 1989), this framework acknowledges that the experiences of, for example, Black women cannot be understood simply as the combination of being Black and being a woman, but involve distinct discriminatory patterns at the intersection of race and gender. In AI systems, intersectional fairness requires evaluating bias and fairness metrics across intersectional subgroups defined by specific combinations of protected attribute values, where the number of subgroups equals the product of attribute cardinalities (e.g., 2 genders × 4 race categories × 3 age brackets = 24 subgroups). This analysis often reveals intersectional disparities where subgroups experience worse outcomes than predicted by single-attribute analysis, particularly affecting individuals with multiple marginalized identities. Implementation challenges include exponential growth of subgroups with additional attributes, sample size limitations for rare intersectional groups, and computational complexity of enforcing fairness across all subgroups simultaneously. Intersectional fairness auditing is increasingly required by comprehensive AI governance frameworks and documented in research by Buolamwini and Gebru (2018) on gender-race bias in facial recognition.
 	- source:: [[Crenshaw (1989)]], [[Buolamwini and Gebru (2018)]], [[IEEE P7003-2021]]
 	- maturity:: mature
-	- owl:class:: aigo:IntersectionalFairness
+	- owl:class:: ai:IntersectionalFairness
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
-	- owl:inferred-class:: aigo:VirtualProcess
+	- owl:inferred-class:: ai:VirtualProcess
 	- belongsToDomain:: [[AIEthicsDomain]]
 	- implementedInLayer:: [[ConceptualLayer]]
 	- #### Relationships
@@ -44,10 +45,10 @@ Intersectional Fairness refers to intersectional fairness is an approach to algo
 - **Maturity**: mature
 - **Source**: [[Crenshaw (1989)]], [[Buolamwini and Gebru (2018)]], [[IEEE P7003-2021]]
 - **Authority Score**: 0.95
-- **Owl:Class**: aigo:IntersectionalFairness
+- **Owl:Class**: ai:IntersectionalFairness
 - **Owl:Physicality**: VirtualEntity
 - **Owl:Role**: Process
-- **Owl:Inferred Class**: aigo:VirtualProcess
+- **Owl:Inferred Class**: ai:VirtualProcess
 - **Belongstodomain**: [[AIEthicsDomain]]
 - **Implementedinlayer**: [[ConceptualLayer]]
 

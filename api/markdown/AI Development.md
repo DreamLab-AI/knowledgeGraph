@@ -6,6 +6,7 @@
 	- preferred-term:: AI Development
 	- source-domain:: ai
 	- status:: draft
+  - owl:class:: ai:AiDevelopment
     - public-access:: true
 	- definition:: The phase of the AI lifecycle encompassing the design, creation, training, and validation of artificial intelligence systems, including activities such as algorithm selection, data preparation, model architecture design, training process execution, hyperparameter optimisation, performance evaluation, and documentation, conducted according to established engineering principles, ethical guidelines, and governance frameworks to produce AI systems suitable for their intended purpose.
 

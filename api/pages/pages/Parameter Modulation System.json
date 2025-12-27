@@ -1,24 +1,29 @@
 {
   "id": "Parameter Modulation System",
   "title": "Parameter Modulation System",
-  "content": "- ### OntologyBlock\n  id:: parameter-modulation-system-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9990\n\t- preferred-term:: Parameter Modulation System\n\t- status:: stub\n\t- owl:class:: mv:ParameterModulationSystem\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: parameter-modulation-system-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: parameter-modulation-system-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9990\n\t- source-domain:: mv\n\t- preferred-term:: Parameter Modulation System\n\t- status:: active\n\t- definition:: A signal processing architecture that uses modulator signals to dynamically control carrier signal parameters like pitch, amplitude, and timbre over time, enabling expressive sound synthesis and complex audio effects through techniques such as FM, AM, and envelope modulation.\n\t- owl:class:: mv:ParameterModulationSystem\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: parameter-modulation-system-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Audio System]]\n\t\t- related-to:: [[Sound Synthesis]]\n\t\t- related-to:: [[Signal Processing]]\n\t\t- related-to:: [[Audio Effects]]\n\t\t- enables:: [[Dynamic Sound Design]]\n\t- #### Modulation Types\n\t  collapsed:: true\n\t\t- Frequency Modulation (FM): Modulator affects carrier frequency\n\t\t- Amplitude Modulation (AM): Modulator affects carrier volume\n\t\t- Wavetable Modulation: Morphing between wave shapes\n\t\t- Filter Modulation: Dynamic cutoff and resonance control\n\t\t- Ring Modulation: Multiplicative signal combination\n\t- #### Modulation Sources\n\t  collapsed:: true\n\t\t- ADSR Envelopes: Attack, Decay, Sustain, Release shaping\n\t\t- LFOs (Low Frequency Oscillators): Cyclic parameter variation\n\t\t- Velocity and Aftertouch: Performance-based control\n\t\t- Step Sequencers: Rhythmic parameter patterns\n\t\t- Neural networks for automatic parameter estimation",
   "backlinks": [
     "Procedural Audio Generator"
   ],
   "wiki_links": [
-    "metaverse"
+    "Signal Processing",
+    "metaverse",
+    "Audio System",
+    "Dynamic Sound Design",
+    "Sound Synthesis",
+    "Audio Effects"
   ],
   "ontology": {
     "term_id": "MV-9990",
     "preferred_term": "Parameter Modulation System",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ParameterModulationSystem",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A signal processing architecture that uses modulator signals to dynamically control carrier signal parameters like pitch, amplitude, and timbre over time, enabling expressive sound synthesis and complex audio effects through techniques such as FM, AM, and envelope modulation.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Audio System"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Dynamic Sound Design"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Sound Synthesis",
+        "Signal Processing",
+        "Audio Effects"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

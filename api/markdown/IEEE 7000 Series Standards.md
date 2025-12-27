@@ -13,7 +13,7 @@
     - ontology:: true
     - term-id:: DT-0415
     - preferred-term:: IEEE 7000 Series Standards
-    - source-domain:: ai-grounded
+    - source-domain:: ai
     - status:: in-progress
     - version:: 1.0
     - last-updated:: 2025-10-29
@@ -25,14 +25,15 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:IEEE7000SeriesStandards
+    - owl:class:: ai:IEEE7000SeriesStandards
     - owl:physicality:: VirtualEntity
     - owl:role:: Process
-    - owl:inferred-class:: aigo:VirtualProcess
+    - owl:inferred-class:: ai:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 
   - #### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
     id:: 0415-ieee7000seriesstandards-relationships
 
   - #### OWL Axioms

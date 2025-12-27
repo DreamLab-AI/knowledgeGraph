@@ -7,6 +7,7 @@ id:: merkle-root-ontology
   - term-id:: DT-0044
   - preferred-term:: Merkle Root
   - source-domain:: bc
+  - owl:class:: bc:MerkleRoot
   - status:: complete
   - definition:: Top hash of Merkle tree within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

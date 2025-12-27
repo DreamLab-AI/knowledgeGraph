@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: BC-0141
+	- source-domain:: bc
 	- preferred-term:: NFT
 	- status:: draft
 	- public-access:: true
@@ -16,3 +17,6 @@
 - authenticates:: [[VirtualWorld]]
 - authenticates:: [[DigitalAvatar]]
 - tokenizes:: [[Digital Goods]]
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

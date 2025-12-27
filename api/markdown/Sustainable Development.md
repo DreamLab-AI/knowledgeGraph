@@ -3,6 +3,8 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0157
+	- source-domain:: ai
+	- owl:class:: ai:SustainableDevelopment
 	- preferred-term:: Sustainable Development
 	- status:: draft
 	- public-access:: true

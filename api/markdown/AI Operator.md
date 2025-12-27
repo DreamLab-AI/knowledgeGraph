@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: An individual or organisational entity responsible for the operational management, monitoring, and control of an artificial intelligence system during its deployment and use, including activities such as configuring system parameters, overseeing system performance, responding to incidents, coordinating maintenance, exercising human oversight, and ensuring the AI system operates safely, effectively, and in accordance with established policies, procedures, and regulatory requirements within specific operational contexts.
 	- source:: [[EU AI Act Articles 26-27]], [[ISO/IEC 42001:2023]], [[NIST AI RMF]]
-	- maturity:: dt:Mature
+	- maturity:: mature
 	- #### Relationships
 	  id:: ai-operator-relationships
 	  collapsed:: true

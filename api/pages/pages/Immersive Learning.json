@@ -1,17 +1,21 @@
 {
   "id": "Immersive Learning",
   "title": "Immersive Learning",
-  "content": "- ### OntologyBlock\n  id:: Immersive Learning\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9926\n  - preferred-term:: Immersive Learning\n  - source-domain:: mv\n  - status:: stub\n\n### Relationships",
+  "content": "- ### OntologyBlock\n  id:: Immersive Learning\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9926\n  - preferred-term:: Immersive Learning\n  - source-domain:: mv\n  - owl:class:: mv:ImmersiveLearning\n  - status:: stub\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]",
   "backlinks": [
+    "Virtual Field Trip",
+    "Educational Narrative",
     "Education Metaverse",
     "tc-0003-telepresence-robot"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "Metaverse"
+  ],
   "ontology": {
     "term_id": "MV-9926",
     "preferred_term": "Immersive Learning",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/metaverse#ImmersiveLearning",
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
@@ -25,7 +29,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "mv:ImmersiveLearning",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -47,7 +51,6 @@
       "errors": [
         "Missing required property: last-updated",
         "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

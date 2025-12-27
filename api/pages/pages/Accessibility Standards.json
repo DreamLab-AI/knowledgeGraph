@@ -1,24 +1,29 @@
 {
   "id": "Accessibility Standards",
   "title": "Accessibility Standards",
-  "content": "- ### OntologyBlock\n  id:: accessibility-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9757\n\t- preferred-term:: Accessibility Standards\n\t- status:: stub\n\t- owl:class:: mv:AccessibilityStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: accessibility-standards-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: accessibility-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9757\n\t- source-domain:: mv\n\t- preferred-term:: Accessibility Standards\n\t- status:: active\n\t- definition:: Accessibility Standards for the metaverse and extended reality (XR) encompass guidelines, technical specifications, and design principles that ensure virtual environments, interfaces, and interactions are usable by people with diverse disabilities including visual, auditory, physical, cognitive, and neurological impairments.\n\t- owl:class:: mv:AccessibilityStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Design Standards]]\n\t- enables:: [[Inclusive Virtual Experiences]], [[Universal Design]]\n\t- requires:: [[Assistive Technology Integration]], [[Multi-Modal Interfaces]]\n\t- #### Relationships\n\t  id:: accessibility-standards-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **W3C XR Accessibility User Requirements (XRAUR)**: 19 user needs descriptions for people with disabilities in XR environments\n- **WCAG Adaptation**: WCAG 2.2 provides foundational guidance but XR-specific adaptations are needed for 3D spatial interfaces\n- **Multi-Modal Input**: Alternative input methods including accessible gamepads, voice navigation, and eye tracking\n- **Hardware Accessibility**: Addressing barriers from heavy headsets, hand tracking, and controller designs\n\n### Regulatory Framework\n- **Americans with Disabilities Act (ADA)**: Interpreted to include digital accessibility for virtual platforms\n- **WCAG 3.0 Development**: Upcoming standards addressing metaverse and immersive technology accessibility\n- **Inclusive Immersion Framework**: Maximizing accessibility across VR, AR, and metaverse experiences\n\n### Design Principles\nTen principles for designing inclusive metaverse experiences embrace diversity, equity, accessibility, and safety.",
   "backlinks": [
     "Accessibility Audit Tool"
   ],
   "wiki_links": [
-    "metaverse"
+    "Inclusive Virtual Experiences",
+    "Universal Design",
+    "metaverse",
+    "Multi-Modal Interfaces",
+    "Design Standards",
+    "Assistive Technology Integration"
   ],
   "ontology": {
     "term_id": "MV-9757",
     "preferred_term": "Accessibility Standards",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#AccessibilityStandards",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Accessibility Standards for the metaverse and extended reality (XR) encompass guidelines, technical specifications, and design principles that ensure virtual environments, interfaces, and interactions are usable by people with diverse disabilities including visual, auditory, physical, cognitive, and neurological impairments.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -48,9 +53,7 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

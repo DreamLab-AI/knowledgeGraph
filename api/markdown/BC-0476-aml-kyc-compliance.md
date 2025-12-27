@@ -7,6 +7,7 @@ id:: bc-0476-aml-kyc-compliance-ontology
   - term-id:: BC-0476
   - preferred-term:: AML KYC Compliance
   - source-domain:: bc
+  - owl:class:: bc:AmlKycCompliance
   - status:: stub
   - definition:: A component of the blockchain ecosystem.
 

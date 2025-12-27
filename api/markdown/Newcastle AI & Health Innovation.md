@@ -4,13 +4,13 @@
 	- ontology:: true
 	- term-id:: DT-0004
 	- preferred-term:: Newcastle AI & Health Innovation
-	- source-domain:: uk
-	- owl:class:: uk:NewcastleAIAndHealthInnovation
+	- source-domain:: mv
+	- owl:class:: mv:NewcastleAIAndHealthInnovation
 	- status:: active
 	- public-access:: true
 	- definition:: Newcastle's technology ecosystem centred on artificial intelligence and health innovation, anchored by research institutions and the Great North Snowdome.
 	- maturity:: established
-	- owl:class:: uk:NewcastleAIAndHealthInnovation
+	- owl:class:: mv:NewcastleAIAndHealthInnovation
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: RegionalEcosystem
 	- belongsToDomain:: [[UKTechEcosystem]]
@@ -33,7 +33,7 @@ Newcastle AI & Health Innovation refers to newcastle's technology ecosystem cent
 - **Maturity**: established
 - **Region**: North East England
 - **Focus Areas**: AI, Health Tech, Research
-- **Owl:Class**: uk:UK-004-NewcastleAIAndHealthInnovation
+- **Owl:Class**: mv:UK-004-NewcastleAIAndHealthInnovation
 - **Owl:Physicality**: ConceptualEntity
 - **Owl:Role**: RegionalEcosystem
 - **Belongstodomain**: [[UKTechEcosystem]]

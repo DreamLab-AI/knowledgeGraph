@@ -1,22 +1,27 @@
 {
   "id": "Physical Virtual Registration",
   "title": "Physical Virtual Registration",
-  "content": "- ### OntologyBlock\n  id:: physical-virtual-registration-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10007\n\t- preferred-term:: Physical Virtual Registration\n\t- status:: stub\n\t- owl:class:: mv:PhysicalVirtualRegistration\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: physical-virtual-registration-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: physical-virtual-registration-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10007\n\t- source-domain:: mv\n\t- preferred-term:: Physical Virtual Registration\n\t- status:: active\n\t- definition:: The process of aligning and synchronizing virtual content with physical world coordinates using spatial tracking, computer vision, and sensor fusion to ensure accurate overlay of digital objects in augmented reality environments.\n\t- owl:class:: mv:PhysicalVirtualRegistration\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: physical-virtual-registration-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Spatial Computing]]\n\t\t- related-to:: [[Spatial Anchors]]\n\t\t- related-to:: [[Computer Vision]]\n\t\t- related-to:: [[SLAM]]\n\t\t- enables:: [[Accurate AR Overlay]]\n\t- #### Technologies\n\t  collapsed:: true\n\t\t- Visual-inertial odometry for pose estimation\n\t\t- Simultaneous Localization and Mapping (SLAM)\n\t\t- Marker-based registration using fiducials\n\t\t- Markerless registration using feature detection\n\t\t- Depth sensors for environment understanding\n\t- #### Challenges\n\t  collapsed:: true\n\t\t- Drift correction over extended sessions\n\t\t- Dynamic environment handling\n\t\t- Low-light and featureless surface tracking\n\t\t- Multi-user coordinate system alignment",
   "backlinks": [],
   "wiki_links": [
-    "metaverse"
+    "Spatial Computing",
+    "metaverse",
+    "Spatial Anchors",
+    "Computer Vision",
+    "SLAM",
+    "Accurate AR Overlay"
   ],
   "ontology": {
     "term_id": "MV-10007",
     "preferred_term": "Physical Virtual Registration",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#PhysicalVirtualRegistration",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The process of aligning and synchronizing virtual content with physical world coordinates using spatial tracking, computer vision, and sensor fusion to ensure accurate overlay of digital objects in augmented reality environments.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -28,12 +33,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spatial Computing"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Accurate AR Overlay"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -43,15 +52,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Spatial Anchors",
+        "Computer Vision",
+        "SLAM"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

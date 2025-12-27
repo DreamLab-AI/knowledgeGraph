@@ -8,3 +8,8 @@ AI-0415-IEEE7000SeriesStandards
   - preferred-term:: Ai 0415 Ieee7000seriesstandards
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0415Ieee7000seriesstandards
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

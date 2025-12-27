@@ -7,6 +7,7 @@ id:: bc-0120-incentive-alignment-ontology
   - term-id:: MV-0914
   - preferred-term:: BC 0120 incentive alignment
   - source-domain:: bc
+  - owl:class:: bc:Bc0120IncentiveAlignment
   - status:: draft
   - definition:: ### Primary Definition
 

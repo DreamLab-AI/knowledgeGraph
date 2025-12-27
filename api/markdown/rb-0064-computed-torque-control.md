@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0064
+	- source-domain:: rb
 	- preferred-term:: rb 0064 computed torque control
 	- status:: draft
 	- public-access:: true

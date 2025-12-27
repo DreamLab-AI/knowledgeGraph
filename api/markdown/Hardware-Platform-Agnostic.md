@@ -5,6 +5,7 @@ id:: hardware-platform-agnostic-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: MV-0320
+  - source-domain:: mv
   - preferred-term:: Hardware Platform Agnostic
   - status:: draft
   - definition:: A design principle and architectural quality ensuring that software, systems, or protocols can operate independently of specific hardware architectures or platform implementations. Hardware-/Platform-Agnostic systems achieve portability through abstraction layers that decouple functionality from underlying physical or operating system constraints.

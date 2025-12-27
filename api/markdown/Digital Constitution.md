@@ -7,6 +7,7 @@ id:: digital-constitution-ontology
   - term-id:: DT-0292
   - preferred-term:: Digital Constitution
   - source-domain:: bc
+  - owl:class:: bc:DigitalConstitution
   - status:: draft
   - definition:: A foundational governance document establishing the core principles, rights, responsibilities, governance structures, and amendment procedures for a virtual society, serving as the supreme law and social contract for metaverse communities and digital platforms.
 

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0345
+	- source-domain:: mv
 	- preferred-term:: ETSI Domain: Data Management + AI
 	- status:: draft
 	- public-access:: true

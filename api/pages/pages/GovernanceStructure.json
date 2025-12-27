@@ -1,7 +1,7 @@
 {
   "id": "GovernanceStructure",
   "title": "GovernanceStructure",
-  "content": "- ### OntologyBlock\n  id:: governancestructure-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-1003\n\t- preferred-term:: GovernanceStructure\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A governance structure component in the Artificial Intelligence domain that required by TrustFrameworkPolicy.\n\t- source:: Generated from bridge validation\n\t- maturity:: dt:Emerging\n\t- owl:class:: ai:GovernanceStructure\n\t- #### Relationships\n\t  id:: governancestructure-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Governance Framework]]",
+  "content": "- ### OntologyBlock\n  id:: governancestructure-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-1003\n\t- source-domain:: ai\n\t- preferred-term:: GovernanceStructure\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A governance structure component in the Artificial Intelligence domain that required by TrustFrameworkPolicy.\n\t- source:: Generated from bridge validation\n\t- maturity:: emerging\n\t- owl:class:: ai:GovernanceStructure\n\t- #### Relationships\n\t  id:: governancestructure-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Governance Framework]]",
   "backlinks": [],
   "wiki_links": [
     "Governance Framework"
@@ -11,13 +11,13 @@
     "preferred_term": "GovernanceStructure",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/ai#GovernanceStructure",
-    "source_domain": null,
+    "source_domain": "ai",
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
     "definition": "A governance structure component in the Artificial Intelligence domain that required by TrustFrameworkPolicy.",
     "scope_note": null,
     "status": "complete",
-    "maturity": "dt:Emerging",
+    "maturity": "emerging",
     "version": null,
     "public_access": true,
     "last_updated": null,
@@ -48,7 +48,6 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"

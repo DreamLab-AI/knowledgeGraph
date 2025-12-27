@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0824
+    - source-domain:: ai
+    - owl:class:: ai:PolicyUpdateMagnitude
     - preferred-term:: Policy Update Magnitude
     - ontology:: true
     - public-access:: true

@@ -231,4 +231,5 @@ A robotic joint like rb 0026 might not win a beauty contest, but it certainly ea
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
 
-
+### Relationships
+- is-subclass-of:: [[Metaverse]]

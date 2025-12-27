@@ -7,10 +7,12 @@ id:: virtual-property-right-ontology
   - term-id:: DT-0294
   - preferred-term:: Virtual Property Right
   - source-domain:: bc
+  - owl:class:: bc:VirtualPropertyRight
   - status:: draft
   - definition:: A legally recognized claim to ownership, use, transfer, or exclusion rights over digital assets, virtual goods, or intangible resources within virtual environments, enforced through technical mechanisms, platform policies, or legal frameworks.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - uses-data-structure:: [[Blockchain]]
 - is-part-of:: [[Legal System]]
 - is-part-of:: [[Property Law Framework]]

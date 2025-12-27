@@ -7,6 +7,7 @@ id:: bc-0447-anti-counterfeiting-ontology
   - term-id:: BC-0447
   - preferred-term:: Anti Counterfeiting
   - source-domain:: bc
+  - owl:class:: bc:AntiCounterfeiting
   - status:: complete
   - definition:: Blockchain-based systems employing cryptographic verification, immutable ledgers, and physical-digital integration technologies (NFC tags, QR codes, RFID) to authenticate products, prevent counterfeiting, and establish verifiable supply chain provenance across pharmaceuticals, luxury goods, electronics, and consumer products.
 

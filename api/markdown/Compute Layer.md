@@ -8,6 +8,7 @@ id:: compute-layer-ontology
   - preferred-term:: Compute Layer
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:ComputeLayer
   - definition:: Software layer managing computational resources and orchestration for rendering, simulation, physics, AI processing, and real-time processing within metaverse systems.
 
 ### Relationships

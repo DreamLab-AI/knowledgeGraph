@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0820
+    - source-domain:: ai
+    - owl:class:: ai:SoftPromptEmbedding
     - preferred-term:: Soft Prompt Embedding
     - ontology:: true
     - public-access:: true

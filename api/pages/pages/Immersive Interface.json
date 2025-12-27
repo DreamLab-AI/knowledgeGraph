@@ -1,16 +1,19 @@
 {
   "id": "Immersive Interface",
   "title": "Immersive Interface",
-  "content": "- ### OntologyBlock\n  id:: Immersive Interface\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9925\n  - preferred-term:: Immersive Interface\n  - source-domain:: mv\n  - status:: stub\n\n### Relationships",
+  "content": "- ### OntologyBlock\n  id:: Immersive Interface\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9925\n  - preferred-term:: Immersive Interface\n  - source-domain:: mv\n  - owl:class:: mv:ImmersiveInterface\n  - status:: stub\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]",
   "backlinks": [
+    "Driver Software",
     "Experience Layer"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "Metaverse"
+  ],
   "ontology": {
     "term_id": "MV-9925",
     "preferred_term": "Immersive Interface",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/metaverse#ImmersiveInterface",
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
@@ -24,7 +27,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "mv:ImmersiveInterface",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -46,7 +49,6 @@
       "errors": [
         "Missing required property: last-updated",
         "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

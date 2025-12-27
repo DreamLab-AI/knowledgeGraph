@@ -7,10 +7,12 @@ id:: digital-goods-registry-ontology
   - term-id:: DT-0125
   - preferred-term:: Digital Goods Registry
   - source-domain:: bc
+  - owl:class:: bc:DigitalGoodsRegistry
   - status:: draft
   - definition:: Centralized or distributed system for cataloging, tracking, and managing digital goods and virtual assets across metaverse platforms, providing authoritative records of existence, ownership, and provenance.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - has-part:: [[Search Index]]
 - has-part:: [[API Gateway]]
 - has-part:: [[Provenance Tracker]]

@@ -18,6 +18,7 @@
 	- owl:functional-syntax:: true
 	- belongsToDomain:: [[InfrastructureDomain]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: application-layer-relationships
 	  collapsed:: true
 		- is-part-of:: [[Metaverse Stack]]

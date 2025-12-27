@@ -7,10 +7,12 @@ id:: provenance-verification-ontology
   - term-id:: DT-0204
   - preferred-term:: Provenance Verification
   - source-domain:: bc
+  - owl:class:: bc:ProvenanceVerification
   - status:: draft
   - definition:: Computational process for validating the origin, authenticity, and chain of custody of digital assets through metadata analysis and distributed ledger records.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Asset Management]]
 - is-part-of:: [[Trust Infrastructure]]
 - has-part:: [[Authenticity Checking]]

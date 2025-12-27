@@ -7,6 +7,7 @@ id:: block-propagation-time-ontology
   - term-id:: DT-1101
   - preferred-term:: Block Propagation Time
   - source-domain:: bc
+  - owl:class:: bc:BlockPropagationTime
   - status:: complete
   - definition:: Network distribution duration within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

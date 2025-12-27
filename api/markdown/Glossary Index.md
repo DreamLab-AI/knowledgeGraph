@@ -7,10 +7,12 @@ id:: glossary-index-ontology
   - term-id:: DT-0329
   - preferred-term:: Glossary Index
   - source-domain:: mv
+  - owl:class:: mv:GlossaryIndex
   - status:: draft
   - definition:: A centralized terminology reference system that aggregates, defines, and cross-references all metaverse concepts with their synonyms, abbreviations, and semantic relationships, serving as the human-readable interface to the formal ontology schema.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Documentation System]]
 - is-part-of:: [[Knowledge Management Infrastructure]]
 - has-part:: [[Usage Examples]]

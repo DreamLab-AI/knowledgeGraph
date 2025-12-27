@@ -7,10 +7,12 @@ id:: community-governance-model-ontology
   - term-id:: DT-0290
   - preferred-term:: Community Governance Model
   - source-domain:: bc
+  - owl:class:: bc:CommunityGovernanceModel
   - status:: draft
   - definition:: A participatory decision-making framework that defines rules, voting mechanisms, proposal systems, and dispute resolution processes for virtual communities, enabling democratic and transparent collective governance.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Virtual Community Platform]]
 - is-part-of:: [[Decentralized Autonomous Organization]]
 - has-part:: [[Voting System]]

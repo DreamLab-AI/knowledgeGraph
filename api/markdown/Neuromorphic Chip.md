@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-9006
+	- source-domain:: ai
 	- preferred-term:: Neuromorphic Chip
 	- status:: draft
 	- public-access:: true
@@ -14,3 +15,7 @@
 	- owl:role:: Object
 	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- isSubclassOf:: [[AI Hardware]]
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

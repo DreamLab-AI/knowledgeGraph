@@ -8,9 +8,11 @@ id:: procedural-audio-generator-ontology
   - preferred-term:: Procedural Audio Generator
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:ProceduralAudioGenerator
   - definition:: System that produces context-sensitive sound effects algorithmically in real-time, generating audio content through computational rules rather than playing back pre-recorded samples.
 
 ### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 - is-part-of:: [[Audio Rendering Pipeline]]
 - has-part:: [[Real-Time Mixer]]
 - has-part:: [[Audio Synthesis Engine]]

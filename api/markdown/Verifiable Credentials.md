@@ -2,10 +2,41 @@ id:: verifiable-credentials-ontology
 
 - ### OntologyBlock
   id:: Verifiable Credentials
-  - ontology:: true
-  - public-access:: true
-  - term-id:: BC-0458
-  - preferred-term:: Verifiable Credentials
-  - source-domain:: bc
-  - status:: stub
-  - definition:: A component of the blockchain ecosystem.
+	- ontology:: true
+	- public-access:: true
+	- term-id:: BC-0458
+	- preferred-term:: Verifiable Credentials
+	- source-domain:: bc
+	- owl:class:: bc:VerifiableCredentials
+	- status:: active
+	- definition:: Cryptographically signed digital credentials based on W3C standards that enable tamper-proof, portable, and privacy-preserving claims about subjects, stored in digital wallets and verifiable without contacting the issuer.
+	- #### Relationships
+		- is-subclass-of:: [[Digital Identity]]
+		- related-to:: [[Decentralized Identity]]
+		- related-to:: [[DID]]
+		- related-to:: [[Self-Sovereign Identity]]
+- ## Overview
+	- Verifiable Credentials (VCs) are digital cryptographically-secure versions of paper and digital credentials that people can present to verifiers. Standardized by W3C, VCs enable Self-Sovereign Identity (SSI) where individuals control their own identity data without relying on centralized authorities.
+- ## Technical Details
+	- ### Core Architecture
+		- **Issuer**: Creates and cryptographically signs credentials
+		- **Holder**: Receives and stores credentials in digital wallet
+		- **Verifier**: Validates credential authenticity and claims
+		- **Verifiable Data Registry**: Anchors public keys and revocation data
+	- ### Key Standards
+		- W3C Verifiable Credentials Data Model
+		- W3C Decentralized Identifiers (DIDs)
+		- JSON-LD for linked data
+		- JWT-VC and SD-JWT formats
+	- ### Major Implementations
+		- **Microsoft Entra Verified ID**: Enterprise identity
+		- **European EUDI Wallet**: EU-wide digital identity (mandated 2026)
+		- **EBSI**: European Blockchain Services Infrastructure
+		- **UN Transparency Protocol**: Supply chain traceability
+- ## Applications
+	- Government-issued digital identity
+	- Educational credentials and diplomas
+	- Professional certifications and licenses
+	- Healthcare records and prescriptions
+	- Supply chain attestations
+

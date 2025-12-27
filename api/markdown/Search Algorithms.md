@@ -5,6 +5,7 @@
   - preferred-term:: Search Algorithms
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:SearchAlgorithms
 
 ### Relationships
 - is-subclass-of:: [[Artificial Intelligence]]

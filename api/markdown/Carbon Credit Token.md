@@ -22,6 +22,7 @@
 	- maturity:: mature
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 id:: carboncredittoken-relationships
 		- uses-data-structure:: [[Blockchain]]
 		- has-part:: [[Carbon Offset Certificate]], [[Verification Metadata]], [[Token Smart Contract]], [[Blockchain Record]]
@@ -87,16 +88,16 @@ id:: carboncredittoken-relationships
 		  SubClassOf(mv:EmissionsTrading mv:VirtualProcess)
 
   # Property characteristics
-  TransitiveObjectProperty(dt:ispartof)
+  TransitiveObjectProperty(mv:ispartof)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:requires)
+  AsymmetricObjectProperty(mv:requires)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:dependson)
+  AsymmetricObjectProperty(mv:dependson)
 
   # Property characteristics
-  AsymmetricObjectProperty(dt:enables)
+  AsymmetricObjectProperty(mv:enables)
 ```
 - ## About Carbon Credit Tokens
   id:: carboncredittoken-about

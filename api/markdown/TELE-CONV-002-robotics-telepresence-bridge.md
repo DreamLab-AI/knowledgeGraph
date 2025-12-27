@@ -9,7 +9,7 @@
 	- public-access:: true
 	- definition:: "The conceptual and technical integration between robotics systems and telepresence technologies, where remote operators experience physical presence in distant real-world locations through robot-mediated perception and action, combining robotic manipulation capabilities with telepresence social presence and immersive interfaces to enable embodied remote interaction with physical environments."
 	- maturity:: mature
-	- owl:class:: tele:RoboticsTelepresenceBridge
+	- owl:class:: tc:RoboticsTelepresenceBridge
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- #### Relationships

@@ -8,3 +8,8 @@ AI-0414-SocietalEnvironmentalWellbeing
   - preferred-term:: Ai 0414 Societalenvironmentalwellbeing
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0414Societalenvironmentalwellbeing
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

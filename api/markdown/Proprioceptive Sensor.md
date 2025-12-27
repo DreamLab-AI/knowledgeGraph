@@ -1,10 +1,11 @@
-Proprioceptive Sensor
-
 - ### OntologyBlock
-  id:: Proprioceptive Sensor
+  id:: proprioceptive-sensor-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1029
   - preferred-term:: Proprioceptive Sensor
   - source-domain:: rb
+  - owl:class:: rb:ProprioceptiveSensor
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
+  - definition:: A proprioceptive sensor measures internal robot states such as joint position, velocity, force, and torque, enabling closed-loop control and awareness of the robot's own configuration.

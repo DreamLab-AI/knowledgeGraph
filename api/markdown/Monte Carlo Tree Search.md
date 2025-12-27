@@ -5,6 +5,7 @@
   - preferred-term:: Monte Carlo Tree Search
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:MonteCarloTreeSearch
 
 ### Relationships
 - is-subclass-of:: [[Search Algorithms]]

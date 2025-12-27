@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0813
+    - source-domain:: ai
+    - owl:class:: ai:GaussianSplatting
     - preferred-term:: Gaussian Splatting
     - ontology:: true
     - public-access:: true

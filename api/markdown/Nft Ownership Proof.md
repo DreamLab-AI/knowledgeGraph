@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0571
+    - source-domain:: bc
+    - owl:class:: bc:NftOwnershipProof
     - preferred-term:: NFT Ownership Proof
     - ontology:: true
     - public-access:: true

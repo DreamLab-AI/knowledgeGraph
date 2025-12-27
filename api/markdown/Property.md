@@ -3,11 +3,12 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0846
+	- source-domain:: ai
 	- preferred-term:: Property
 	- status:: complete
 	- public-access:: true
 	- source:: Chimera Prime Research
-	- maturity:: dt:Established
+	- maturity:: established
 	- owl:class:: ai:Property
 	- belongsToDomain:: [[Artificial Intelligence]]
 

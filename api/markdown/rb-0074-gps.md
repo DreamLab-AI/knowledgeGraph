@@ -5,11 +5,12 @@ id:: rb-0074-gps-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0074
-  - preferred-term:: rb 0074 gps
+  - preferred-term:: GPS
   - source-domain:: rb
+  - owl:class:: rb:GPS
   - status:: draft
   - definition:: ### Primary Definition
 
 ### Relationships
-- is-subclass-of:: [[ExteroceptiveSensors]]
+- is-subclass-of:: [[Robotics]]
 - belongsToDomain:: [[RoboticsDomain]]

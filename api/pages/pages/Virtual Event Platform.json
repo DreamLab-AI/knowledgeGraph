@@ -1,24 +1,28 @@
 {
   "id": "Virtual Event Platform",
   "title": "Virtual Event Platform",
-  "content": "- ### OntologyBlock\n  id:: virtual-event-platform-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10123\n\t- preferred-term:: Virtual Event Platform\n\t- status:: stub\n\t- owl:class:: mv:VirtualEventPlatform\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: virtual-event-platform-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-event-platform-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10123\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Event Platform\n\t- status:: active\n\t- definition:: Software platforms that enable hosting digital events in metaverse environments, supporting conferences, exhibitions, concerts, and networking through immersive 3D spaces with avatar-based attendance, interactive features, and real-time collaboration tools.\n\t- owl:class:: mv:VirtualEventPlatform\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- related-to:: [[Virtual Conferences]]\n\t\t- related-to:: [[Virtual Concerts]]\n\t\t- related-to:: [[Networking Platform]]\n\t  id:: virtual-event-platform-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual event platforms enable hosting immersive gatherings in metaverse environments. The metaverse market is projected to reach US$74.4 billion in 2024, growing to US$507.8 billion by 2030 at 37.73% CAGR. AI integration enhances matchmaking, language translation, and speaker avatar animation for engaging experiences.\n- ## Technical Details\n\t- ### Platform Features\n\t\t- **Immersive Venues**: 3D conference halls, exhibition spaces, networking lounges\n\t\t- **Avatar Systems**: Customizable attendee representations\n\t\t- **Interactive Content**: 3D visualizations, simulations, product demos\n\t\t- **Networking Tools**: AI matchmaking, breakout rooms, direct messaging\n\t- ### AI Capabilities\n\t\t- Attendee matching based on interests and goals\n\t\t- Real-time language translation\n\t\t- AI-powered speaker avatars with emotion mirroring\n\t\t- Content recommendation engines\n\t- ### Platform Examples\n\t\t- Meetaverse, Virtway, VFairs\n\t\t- Microsoft Mesh for enterprise\n\t\t- Horizon Worlds for social events\n\t\t- Custom-built brand experiences\n- ## Applications\n\t- Virtual conferences and summits\n\t- Trade shows and exhibitions\n\t- Product launches and demonstrations\n\t- Corporate meetings and training\n\t- Networking events and mixers",
   "backlinks": [
     "Virtual Performance Space"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Networking Platform",
+    "Virtual Concerts",
+    "Metaverse",
+    "Virtual Conferences"
   ],
   "ontology": {
     "term_id": "MV-10123",
     "preferred_term": "Virtual Event Platform",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#VirtualEventPlatform",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Software platforms that enable hosting digital events in metaverse environments, supporting conferences, exhibitions, concerts, and networking through immersive 3D spaces with avatar-based attendance, interactive features, and real-time collaboration tools.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Metaverse"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +51,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Virtual Conferences",
+        "Virtual Concerts",
+        "Networking Platform"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

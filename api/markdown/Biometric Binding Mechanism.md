@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0151
+	- source-domain:: mv
 	- preferred-term:: Biometric Binding Mechanism
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[EdgeLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: biometric-binding-mechanism-relationships
 	  collapsed:: true
 		- is-part-of:: [[Identity Management System]]

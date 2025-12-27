@@ -7,10 +7,12 @@ id:: marketplace-ontology
   - term-id:: DT-1012
   - preferred-term:: Marketplace
   - source-domain:: bc
+  - owl:class:: bc:Marketplace
   - status:: draft
   - definition:: Digital platform enabling discovery, exchange, and transaction of virtual goods, services, and assets within or across metaverse systems through listing, escrow, and reputation mechanisms.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - uses:: [[Machine Learning]]
 - validates:: [[NFT]]
 - uses:: [[Machine Learning]]

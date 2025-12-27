@@ -9,7 +9,7 @@
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition
-	- maturity:: dt:Draft
+	- maturity:: draft
 	- owl:class:: mv:ActivationFunction
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept

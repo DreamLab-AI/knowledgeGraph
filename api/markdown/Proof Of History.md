@@ -9,8 +9,12 @@ Proof of History
   - term-id:: BC-9931
   - preferred-term:: Proof of History
   - source-domain:: bc
+  - owl:class:: bc:ProofOfHistory
   - status:: draft
 
 Proof of History refers to a cryptographic mechanism that timestamps transactions to establish a historical record, enabling validators to process transactions in parallel for high throughput. creates verifiable passage of time between events without requiring nodes to trust each other.
 
 Proof of History refers to a cryptographic mechanism that timestamps transactions to establish a historical record, enabling validators to process transactions in parallel for high throughput. creates verifiable passage of time between events without requiring nodes to trust each other.
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

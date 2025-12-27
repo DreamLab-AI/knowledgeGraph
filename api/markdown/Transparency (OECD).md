@@ -12,6 +12,7 @@
 
 ### Relationships
 
+- is-subclass-of:: [[Artificial Intelligence]]
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Principle
 

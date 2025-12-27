@@ -9,6 +9,7 @@
   - term-id:: BC-9982
   - preferred-term:: ![Figure 2.2: [Edelman 2020 trust barometer](https://www.edelman.com/trust/2020t
   - source-domain:: bc
+  - owl:class:: bc:Figure22Edelman2020TrustBarometerhttpswwwedelmancomtrust2020t
   - status:: draft
 
 ![Figure 2.2: [Edelman 2020 trust barometer](https://www.edelman.com/trust/2020trustbarometer) \[rights requested\]](../assets/cae.jpg)
@@ -991,3 +992,6 @@ The recent hype cycle ignored the legacy definitions described above and instead
 ---
 *Last updated: 2025-01-15*
 *Quality Score: 0.90 | Completeness: 0.88 | Depth: 0.92*
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

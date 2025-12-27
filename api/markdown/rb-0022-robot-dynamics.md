@@ -3,7 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0022
-	- preferred-term:: rb 0022 robot dynamics
+	- preferred-term:: Robot Dynamics
 	- source-domain:: rb
 	- status:: draft
 	- public-access:: true
@@ -12,12 +12,13 @@
 
 
 ### OWL Classification
-	- owl:class:: mv:rb0022robotdynamics
+	- owl:class:: rb:RobotDynamics
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 
 ### Domain & Architecture
 	- belongsToDomain:: [[RoboticsDomain]]
+	- is-subclass-of:: [[Robotics]]
 	- maturity:: draft
 
 ### Relationships

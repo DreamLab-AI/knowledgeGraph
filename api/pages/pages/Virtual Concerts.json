@@ -1,24 +1,29 @@
 {
   "id": "Virtual Concerts",
   "title": "Virtual Concerts",
-  "content": "- ### OntologyBlock\n  id:: virtual-concerts-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10114\n\t- preferred-term:: Virtual Concerts\n\t- status:: stub\n\t- owl:class:: mv:VirtualConcerts\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: virtual-concerts-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: virtual-concerts-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10114\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Concerts\n\t- status:: active\n\t- definition:: Live musical performances conducted in metaverse or virtual reality environments where virtual avatars perform on virtual stages synced to music, enabling immersive concert experiences accessible globally through VR headsets, gaming platforms, or streaming services.\n\t- owl:class:: mv:VirtualConcerts\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Virtual Event]]\n\t\t- related-to:: [[Music Entertainment]]\n\t\t- related-to:: [[Live Streaming]]\n\t\t- related-to:: [[Immersive Experience]]\n\t  id:: virtual-concerts-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual concerts are performances in metaverse environments where avatar likenesses perform on virtual stages. In 2024, artists including Doja Cat, Jack Harlow, Jung Kook, and Jorja Smith offered VR concert experiences. Marshmello's 2019 Fortnite concert attracted over 10 million attendees, while Travis Scott's Astronomical had over 12 million concurrent players.\n- ## Technical Details\n\t- ### Platform Types\n\t\t- **Gaming Platforms**: Fortnite, Roblox, Minecraft\n\t\t- **VR Concert Platforms**: Soundscape, Wave, Meta venues\n\t\t- **Social VR**: VRChat, Horizon Worlds Music Valley\n\t\t- **Dedicated Concert Apps**: Artist-specific VR experiences\n\t- ### Technical Components\n\t\t- Real-time 3D rendering and streaming\n\t\t- Motion capture for avatar performance\n\t\t- Spatial audio and immersive sound\n\t\t- Interactive audience participation features\n\t- ### 2024 Highlights\n\t\t- Doja Cat \"The Scarlet Tour in VR\" announcement\n\t\t- Sabrina Carpenter Meta Music Valley concert (July 2024)\n\t\t- Soundscape debut at CES 2024\n- ## Applications\n\t- Global audience accessibility\n\t- Interactive fan experiences\n\t- Virtual meet-and-greets\n\t- Merchandise and NFT sales\n\t- Concert archival and replay",
   "backlinks": [
+    "Virtual Event Platform",
     "Virtual Performance Space"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Immersive Experience",
+    "Live Streaming",
+    "Music Entertainment",
+    "Virtual Event"
   ],
   "ontology": {
     "term_id": "MV-10114",
     "preferred_term": "Virtual Concerts",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#VirtualConcerts",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Live musical performances conducted in metaverse or virtual reality environments where virtual avatars perform on virtual stages synced to music, enabling immersive concert experiences accessible globally through VR headsets, gaming platforms, or streaming services.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,7 +35,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Virtual Event"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -45,15 +52,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Music Entertainment",
+        "Live Streaming",
+        "Immersive Experience"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

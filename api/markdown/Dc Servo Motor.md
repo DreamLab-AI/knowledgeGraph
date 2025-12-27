@@ -7,7 +7,10 @@ DC Servo Motor converts direct current electrical power into controlled rotation
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1004
-  - preferred-term:: DC Servo Motor converts direct current electrical power...
+  - preferred-term:: DC Servo Motor
+  - owl:class:: rb:DcServoMotor
+  - is-subclass-of:: [[Robotics]]
+  - definition:: A DC servo motor converts direct current electrical power into controlled rotational motion, utilising electromagnetic principles and closed-loop feedback to achieve precise position, velocity, and torque control.
   - source-domain:: rb
   - status:: draft
 

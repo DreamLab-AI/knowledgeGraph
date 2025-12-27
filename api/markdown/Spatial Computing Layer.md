@@ -7,10 +7,12 @@ id:: spatial-computing-layer-ontology
   - term-id:: DT-0174
   - preferred-term:: Spatial Computing Layer
   - source-domain:: mv
+  - owl:class:: mv:SpatialComputingLayer
   - status:: draft
   - definition:: Computational layer linking digital and physical spaces through 3D mapping and context-aware processing for spatial awareness and interaction.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Infrastructure Layer]]
 - has-part:: [[Spatial Anchors]]
 - has-part:: [[Localization Service]]

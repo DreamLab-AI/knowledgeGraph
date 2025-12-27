@@ -1,24 +1,31 @@
 {
   "id": "Asset Format Standards",
   "title": "Asset Format Standards",
-  "content": "- ### OntologyBlock\n  id:: asset-format-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9780\n\t- preferred-term:: Asset Format Standards\n\t- status:: stub\n\t- owl:class:: mv:AssetFormatStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: asset-format-standards-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: asset-format-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9780\n\t- source-domain:: mv\n\t- preferred-term:: Asset Format Standards\n\t- status:: active\n\t- definition:: Asset Format Standards are technical specifications defining file formats, data structures, and interchange protocols for 3D models, textures, animations, and scene descriptions, enabling interoperability between content creation tools, game engines, and metaverse platforms through standards like glTF, USD, and FBX.\n\t- owl:class:: mv:AssetFormatStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Technical Standards]]\n\t- enables:: [[Cross-Platform Assets]], [[Tool Interoperability]], [[Content Portability]]\n\t- requires:: [[Format Compliance]], [[Conversion Tools]], [[Validation Systems]]\n\t- #### Relationships\n\t  id:: asset-format-standards-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey formats include:\n- **glTF**: Khronos Group open standard, \"JPEG of 3D,\" optimized for real-time web and downstream applications\n- **USD (OpenUSD)**: Pixar-developed scene description format for content creation workflows, adopted by Alliance for OpenUSD (Pixar, Adobe, Apple, Autodesk, Nvidia)\n- **FBX**: Autodesk format widely used for complex scenes, character animations, and game development\n\n### Industry Initiatives\n- **Metaverse Standards Forum**: 3D Asset Interoperability Domain Group enabling USD/glTF cooperation\n- **Adobe USD Plugins**: Open-source converters between USD and FBX, glTF, OBJ, PLY, STL formats\n- **PBR Alignment**: Coordination between Pixar USD, Khronos glTF PBR, OpenPBR, and MaterialX\n\n### Future Directions (2024)\nIndustry exploring NERFs, Gaussian Splats, and alignment between physically-based rendering approaches across standards.",
   "backlinks": [
     "ETSI_Domain_Creative_Media"
   ],
   "wiki_links": [
-    "metaverse"
+    "Validation Systems",
+    "metaverse",
+    "Content Portability",
+    "Format Compliance",
+    "Tool Interoperability",
+    "Conversion Tools",
+    "Technical Standards",
+    "Cross-Platform Assets"
   ],
   "ontology": {
     "term_id": "MV-9780",
     "preferred_term": "Asset Format Standards",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#AssetFormatStandards",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Asset Format Standards are technical specifications defining file formats, data structures, and interchange protocols for 3D models, textures, animations, and scene descriptions, enabling interoperability between content creation tools, game engines, and metaverse platforms through standards like glTF, USD, and FBX.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -48,9 +55,7 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

@@ -2,10 +2,40 @@ id:: carbon-footprint-measurement-ontology
 
 - ### OntologyBlock
   id:: Carbon Footprint Measurement
-  - ontology:: true
-  - public-access:: true
-  - term-id:: BC-0498
-  - preferred-term:: Carbon Footprint Measurement
-  - source-domain:: bc
-  - status:: stub
-  - definition:: A component of the blockchain ecosystem.
+	- ontology:: true
+	- public-access:: true
+	- term-id:: BC-0498
+	- preferred-term:: Carbon Footprint Measurement
+	- source-domain:: bc
+	- owl:class:: bc:CarbonFootprintMeasurement
+	- definition:: The systematic quantification of greenhouse gas emissions associated with an entity, product, or activity using standardized methodologies and emission factors, with blockchain providing immutable records, transparent audit trails, and automated verification of measurement data.
+	- status:: active
+- ### Relationships
+	- is-subclass-of:: [[Environmental Measurement]]
+	- enables:: [[Emissions Quantification]], [[Carbon Reporting]], [[Offset Calculation]]
+	- requires:: [[Activity Data]], [[Emission Factors]], [[Calculation Methodology]]
+	- related-to:: [[Carbon Accounting]], [[GHG Protocol]], [[Life Cycle Assessment]]
+- ## Technical Details
+	- **Measurement Framework**:
+		- Activity data collection (energy use, travel, materials)
+		- Emission factor application (kg CO2e per unit)
+		- Scope categorization (1, 2, 3)
+		- Total CO2e calculation
+	- **Blockchain Benefits**:
+		- Immutable measurement records
+		- Transparent data provenance
+		- Automated verification via smart contracts
+		- Integration with IoT sensors for real-time data
+	- **Key Standards**:
+		- GHG Protocol Corporate Standard
+		- ISO 14064 for GHG accounting
+		- ISO 14067 for product carbon footprint
+		- PAS 2050 for product emissions
+	- **Data Sources**: Utility bills, fuel receipts, travel records, supply chain data, IoT sensor readings
+- ## Applications
+	- Corporate emissions inventory
+	- Product carbon footprint labeling
+	- Supply chain emissions tracking
+	- Regulatory compliance reporting
+	- Carbon credit project verification
+

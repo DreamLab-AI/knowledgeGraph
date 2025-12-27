@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0222
+	- source-domain:: mv
 	- preferred-term:: Cross-Border Data Transfer Rule
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: cross-border-data-transfer-rule-relationships
 	  collapsed:: true
 		- is-part-of:: [[Data Privacy Governance Framework]]

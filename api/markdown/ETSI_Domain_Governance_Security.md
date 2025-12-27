@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0014
+	- source-domain:: mv
 	- preferred-term:: ETSI_Domain_Governance_Security
 	- status:: draft
 	- public-access:: true
@@ -27,3 +28,6 @@
 ;; Data Properties
 (AnnotationAssertion dcterms:identifier :Etsidomaingovernancesecurity "mv-1761742247919"^^xsd:string)
 ```
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

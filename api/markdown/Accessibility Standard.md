@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0180
+	- source-domain:: mv
 	- preferred-term:: Accessibility Standard
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[Middleware Layer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: accessibility-standard-relationships
 	  collapsed:: true
 		- is-part-of:: [[Governance Framework]]

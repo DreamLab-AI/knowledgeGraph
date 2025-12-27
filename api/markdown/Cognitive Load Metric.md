@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0253
+	- source-domain:: mv
 	- preferred-term:: Cognitive Load Metric
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[InteractionDomain]]
 	- implementedInLayer:: [[ApplicationLayer]], [[PresentationLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: cognitive-load-metric-relationships
 	  collapsed:: true
 		- is-part-of:: [[Usability Testing]]

@@ -1,24 +1,34 @@
 {
   "id": "Content Moderation Standards",
   "title": "Content Moderation Standards",
-  "content": "- ### OntologyBlock\n  id:: content-moderation-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9829\n\t- preferred-term:: Content Moderation Standards\n\t- status:: stub\n\t- owl:class:: mv:ContentModerationStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: content-moderation-standards-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: content-moderation-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9829\n\t- source-domain:: mv\n\t- preferred-term:: Content Moderation Standards\n\t- definition:: The policies, technologies, and practices used to monitor, review, and regulate user-generated content and behavior within virtual environments and metaverse platforms, addressing challenges unique to immersive spaces including harassment, hate speech, and harmful conduct that require both traditional content moderation and new behavioral moderation approaches.\n\t- status:: active\n\t- owl:class:: mv:ContentModerationStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: content-moderation-standards-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Platform Governance]]\n\t\t- enables:: [[User Safety]], [[Harassment Prevention]], [[Community Trust]]\n\t\t- requires:: [[Moderation Tools]], [[AI Detection Systems]], [[Human Moderators]]\n\t\t- related-to:: [[Community Standards]], [[User Safety]], [[Digital Ethics]]\n- ## Technical Details\n\t- **Key Challenges**:\n\t\t- Center for Countering Digital Hate: \"abusive behavior every seven minutes\" in Meta's Metaverse (2022)\n\t\t- Immersive nature amplifies psychological impact of threats and harassment\n\t\t- Behavioral moderation needed beyond traditional content moderation\n\t\t- Age verification relying on self-certification insufficient for minors\n\t- **Technical Solutions**:\n\t\t- **AI Voice Moderation**: ToxMod (RecRoom) detecting inappropriate language in 18 languages\n\t\t- Automated text and image scanning for guideline violations\n\t\t- User-controlled tools: blocking, muting, avatar invisibility\n\t\t- Structured in-game reporting mechanisms\n\t- **Platform Approaches**:\n\t\t- Meta Code of Conduct for Virtual Experiences (CCVE)\n\t\t- VRChat age gates for mature content, third-party verification planned (July 2024)\n\t\t- Multi-layered approach with platform-wide minimum standards\n\t- **Regulatory Framework**: EU Digital Services Act, Web 4.0 communication, Citizens' Panel Report\n- ## Applications\n\t- Real-time behavioral monitoring\n\t- User harassment prevention\n\t- Age-appropriate content filtering\n\t- Automated violation detection\n\t- Community safety enforcement",
   "backlinks": [
+    "Community Standards",
     "ETSI_Domain_Ethics_&_Law"
   ],
   "wiki_links": [
-    "metaverse"
+    "Community Trust",
+    "metaverse",
+    "Human Moderators",
+    "Harassment Prevention",
+    "User Safety",
+    "Moderation Tools",
+    "Community Standards",
+    "Digital Ethics",
+    "Platform Governance",
+    "AI Detection Systems"
   ],
   "ontology": {
     "term_id": "MV-9829",
     "preferred_term": "Content Moderation Standards",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ContentModerationStandards",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "The policies, technologies, and practices used to monitor, review, and regulate user-generated content and behavior within virtual environments and metaverse platforms, addressing challenges unique to immersive spaces including harassment, hate speech, and harmful conduct that require both traditional content moderation and new behavioral moderation approaches.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +40,22 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Platform Governance"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Moderation Tools",
+      "AI Detection Systems",
+      "Human Moderators"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "User Safety",
+      "Harassment Prevention",
+      "Community Trust"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +65,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Community Standards",
+        "User Safety",
+        "Digital Ethics"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

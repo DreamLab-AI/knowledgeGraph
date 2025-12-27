@@ -7,10 +7,12 @@ id:: crypto-token-ontology
   - term-id:: DT-0133
   - preferred-term:: Crypto Token
   - source-domain:: bc
+  - owl:class:: bc:CryptoToken
   - status:: draft
   - definition:: A blockchain-based programmable token representing assets, rights, or utility within a decentralized system, with transferability governed by smart contract logic.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain]]
 - is-part-of:: [[Tokenization System]]
 - is-part-of:: [[Blockchain Network]]
 - has-part:: [[SmartContract]]

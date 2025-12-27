@@ -1,11 +1,11 @@
-id:: tactile-sensing-ontology
-
 - ### OntologyBlock
-  id:: Tactile Sensing
+  id:: tactile-sensing-ontology
   - ontology:: true
   - public-access:: true
-  - term-id:: DT-0935
+  - term-id:: RB-0935
   - preferred-term:: Tactile Sensing
   - source-domain:: rb
+  - owl:class:: rb:TactileSensing
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: Tactile sensing is the capability of robotic systems to detect and measure contact forces, pressure distributions, textures, and surface properties through sensor arrays integrated into end-effectors or robot skin.

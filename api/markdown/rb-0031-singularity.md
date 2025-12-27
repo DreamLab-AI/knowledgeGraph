@@ -3,7 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0031
-	- preferred-term:: rb 0031 singularity
+	- preferred-term:: Singularity
 	- source-domain:: rb
 	- status:: draft
 	- public-access:: true
@@ -12,12 +12,13 @@
 
 
 ### OWL Classification
-	- owl:class:: mv:rb0031singularity
+	- owl:class:: rb:Singularity
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 
 ### Domain & Architecture
 	- belongsToDomain:: [[RoboticsDomain]]
+	- is-subclass-of:: [[Robotics]]
 	- maturity:: draft
 
 ### Relationships

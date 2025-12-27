@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0034
+	- source-domain:: rb
 	- preferred-term:: rb 0034 repeatability
 	- status:: draft
 	- public-access:: true

@@ -1,24 +1,31 @@
 {
   "id": "Authentication Standards",
   "title": "Authentication Standards",
-  "content": "- ### OntologyBlock\n  id:: authentication-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9785\n\t- preferred-term:: Authentication Standards\n\t- status:: stub\n\t- owl:class:: mv:AuthenticationStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: authentication-standards-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: authentication-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9785\n\t- source-domain:: mv\n\t- preferred-term:: Authentication Standards\n\t- status:: active\n\t- definition:: Authentication Standards encompass protocols and specifications for verifying user identity in digital systems, particularly FIDO2 and WebAuthn standards that enable passwordless, phishing-resistant authentication using public key cryptography and hardware authenticators for secure access to metaverse platforms and blockchain applications.\n\t- owl:class:: mv:AuthenticationStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Security Standards]]\n\t- enables:: [[Passwordless Authentication]], [[Phishing Resistance]], [[Secure Platform Access]]\n\t- requires:: [[Hardware Authenticators]], [[Public Key Cryptography]], [[Client Implementation]]\n\t- #### Relationships\n\t  id:: authentication-standards-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey standards include:\n- **FIDO2**: FIDO Alliance umbrella standard combining WebAuthn + CTAP (Client-to-Authenticator Protocols)\n- **WebAuthn**: W3C web standard API for browser-based passwordless authentication (Level 3 in development)\n- **Passkeys**: FIDO credentials using public key cryptography, unique and domain-bound\n\n### Security Benefits\nFIDO standards provide phishing-resistant authentication where biometric data never leaves user device. Credentials are bound to specific domains, preventing replay attacks.\n\n### Regulatory Recognition\nCISA recommends phishing-resistant MFA as gold standard. NIST SP 800-63B identifies FIDO2/WebAuthn as meeting AAL3 (highest assurance level) with hardware authenticators.\n\n### Market Adoption\n85% of devices worldwide support FIDO2/WebAuthn. Passwordless authentication market projected to reach $61.45 billion by 2032.",
   "backlinks": [
     "Digital Identity Framework"
   ],
   "wiki_links": [
-    "metaverse"
+    "Public Key Cryptography",
+    "Passwordless Authentication",
+    "metaverse",
+    "Hardware Authenticators",
+    "Security Standards",
+    "Phishing Resistance",
+    "Secure Platform Access",
+    "Client Implementation"
   ],
   "ontology": {
     "term_id": "MV-9785",
     "preferred_term": "Authentication Standards",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#AuthenticationStandards",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Authentication Standards encompass protocols and specifications for verifying user identity in digital systems, particularly FIDO2 and WebAuthn standards that enable passwordless, phishing-resistant authentication using public key cryptography and hardware authenticators for secure access to metaverse platforms and blockchain applications.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -48,9 +55,7 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

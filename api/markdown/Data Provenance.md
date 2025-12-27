@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0202
+	- source-domain:: mv
 	- preferred-term:: Data Provenance
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[InfrastructureDomain]]
 	- implementedInLayer:: [[Data Layer]], [[Middleware Layer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: data-provenance-relationships
 	  collapsed:: true
 		- is-part-of:: [[Trust Framework]]

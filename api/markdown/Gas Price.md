@@ -7,4 +7,8 @@ Gas Price refers to the amount of native token a user is willing to pay per unit
   - term-id:: BC-9919
   - preferred-term:: Gas Price
   - source-domain:: bc
+  - owl:class:: bc:GasPrice
   - status:: draft
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

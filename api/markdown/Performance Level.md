@@ -8,7 +8,8 @@
 	- owl:class:: rb:PerformanceLevel
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- is-subclass-of:: [[Robotics]]
+	- definition:: Performance Level (PL) is a discrete level used to specify the ability of safety-related parts of control systems to perform a safety function under foreseeable conditions, as defined in ISO 13849.
 	- maturity:: draft
 	- belongsToDomain:: [[RoboticsDomain]]
 

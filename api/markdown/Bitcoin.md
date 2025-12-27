@@ -6,6 +6,7 @@ id:: bitcoin-ontology
   - term-id:: BC-0500
   - preferred-term:: Bitcoin
   - source-domain:: bc
+  - owl:class:: bc:Bitcoin
   - status:: complete
   - definition:: The first decentralised peer-to-peer electronic cash system and cryptocurrency, implementing proof-of-work consensus, a fixed 21 million coin supply cap, and the UTXO transaction model, serving as the foundational reference implementation for blockchain technology.
   - public-access:: true

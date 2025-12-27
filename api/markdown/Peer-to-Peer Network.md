@@ -7,6 +7,7 @@ id:: unknown-ontology
   - term-id:: DT-0075
   - preferred-term:: Peer-to-Peer Network
   - source-domain:: bc
+  - owl:class:: bc:PeerToPeerNetwork
   - status:: complete
   - definition:: Decentralized communication within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

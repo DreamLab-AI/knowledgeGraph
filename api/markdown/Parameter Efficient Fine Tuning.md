@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: MV-0817
+    - source-domain:: mv
+    - owl:class:: mv:ParameterEfficientFineTuning
     - preferred-term:: Parameter-Efficient Fine-Tuning
     - ontology:: true
     - public-access:: true

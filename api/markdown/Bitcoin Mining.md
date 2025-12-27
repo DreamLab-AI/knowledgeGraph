@@ -7,6 +7,7 @@ Several innovative projects are using the financial incentive...
   - term-id:: BC-9925
   - preferred-term:: Several innovative projects are using the financial incentive...
   - source-domain:: bc
+  - owl:class:: bc:SeveralInnovativeProjectsAreUsingTheFinancialIncentive
   - status:: draft
 
 ### Mining process overview (this is a repeat of above?)
@@ -119,3 +120,6 @@ To be clear, it's not the position of this document that replacing [[Fiat money]
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

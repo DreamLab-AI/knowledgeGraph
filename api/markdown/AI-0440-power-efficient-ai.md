@@ -8,3 +8,8 @@ AI-0440-power-efficient-ai
   - preferred-term:: Ai 0440 Power Efficient Ai
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0440PowerEfficientAi
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

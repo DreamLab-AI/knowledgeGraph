@@ -5,6 +5,7 @@
   - preferred-term:: Active Learning
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:ActiveLearning
 
 ### Relationships
 - is-subclass-of:: [[Machine Learning]]

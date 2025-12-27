@@ -7,6 +7,7 @@ id:: finality-ontology
   - term-id:: DT-0080
   - preferred-term:: Finality
   - source-domain:: bc
+  - owl:class:: bc:Finality
   - status:: complete
   - definition:: Transaction irreversibility within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

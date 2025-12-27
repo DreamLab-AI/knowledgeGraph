@@ -7,9 +7,11 @@ id:: ethics-&-law-layer-ontology
   - term-id:: MV-9710
   - preferred-term:: id:: ethics&lawlayerontology
   - source-domain:: mv
+  - owl:class:: mv:IdEthicslawlayerontology
   - status:: draft
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Middleware Layer]]
 - is-part-of:: [[Governance Architecture]]
 - has-part:: [[Compliance Framework]]

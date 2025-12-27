@@ -7,7 +7,7 @@
     - ontology:: true
     - term-id:: AI-0423
     - preferred-term:: 0423 Privacy Preserving Data Mining
-    - source-domain:: ai-grounded
+    - source-domain:: ai
     - status:: in-progress
     - version:: 1.0
     - last-updated:: 2025-10-29
@@ -19,14 +19,15 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:PrivacyPreservingDataMining
+    - owl:class:: ai:PrivacyPreservingDataMining
     - owl:physicality:: VirtualEntity
     - owl:role:: Process
-    - owl:inferred-class:: aigo:VirtualProcess
+    - owl:inferred-class:: ai:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 
   - #### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
     id:: 0423-privacy-preserving-data-mining-relationships
 
   - #### OWL Axioms

@@ -7,6 +7,7 @@ id:: chain-reorganization-ontology
   - term-id:: BC-0015
   - preferred-term:: Chain Reorganization
   - source-domain:: bc
+  - owl:class:: bc:ChainReorganization
   - status:: complete
   - definition:: Replacement of blockchain segment within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

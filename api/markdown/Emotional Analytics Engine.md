@@ -8,9 +8,11 @@ id:: emotional-analytics-engine-ontology
   - preferred-term:: Emotional Analytics Engine
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:EmotionalAnalyticsEngine
   - definition:: AI module analyzing affective states from facial, voice, or physiological data to enable adaptive agent responses and affective computing.
 
 ### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 - is-part-of:: [[User Experience Analytics Platform]]
 - is-part-of:: [[Affective Computing System]]
 - has-part:: [[Facial Expression Analyzer]]

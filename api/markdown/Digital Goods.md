@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0264
+	- source-domain:: mv
 	- preferred-term:: Digital Goods
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[VirtualEconomyDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]], [[ApplicationLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: digital-goods-relationships
 	  collapsed:: true
 		- is-part-of:: [[Virtual Economy]]

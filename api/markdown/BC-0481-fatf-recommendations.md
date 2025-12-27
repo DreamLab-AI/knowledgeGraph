@@ -7,6 +7,7 @@ id:: bc-0481-fatf-recommendations-ontology
   - term-id:: BC-0481
   - preferred-term:: FATF Recommendations
   - source-domain:: bc
+  - owl:class:: bc:FatfRecommendations
   - status:: stub
   - definition:: A component of the blockchain ecosystem.
 

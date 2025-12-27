@@ -7,10 +7,12 @@ id:: avatar-interoperability-ontology
   - term-id:: DT-0969
   - preferred-term:: Avatar Interoperability
   - source-domain:: mv
+  - owl:class:: mv:AvatarInteroperability
   - status:: draft
   - definition:: Capability enabling an avatar's identity, appearance, and behaviors to function seamlessly across multiple metaverse platforms and virtual environments.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - has-part:: [[Behavior Mapping]]
 - has-part:: [[Appearance Translation]]
 - has-part:: [[Identity Portability]]

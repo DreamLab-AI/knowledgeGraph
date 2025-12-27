@@ -8,7 +8,8 @@
 	- owl:class:: rb:SafetyStandard
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- is-subclass-of:: [[Robotics]]
+	- definition:: A safety standard is a documented set of requirements, guidelines, and specifications for ensuring the safe design, construction, operation, and maintenance of robotic and automated systems.
 	- maturity:: draft
 
 ## Academic Context

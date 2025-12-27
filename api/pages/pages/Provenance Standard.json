@@ -1,24 +1,29 @@
 {
   "id": "Provenance Standard",
   "title": "Provenance Standard",
-  "content": "- ### OntologyBlock\n  id:: provenance-standard-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10013\n\t- preferred-term:: Provenance Standard\n\t- status:: stub\n\t- owl:class:: mv:ProvenanceStandard\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: provenance-standard-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: provenance-standard-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10013\n\t- source-domain:: mv\n\t- preferred-term:: Provenance Standard\n\t- status:: active\n\t- definition:: Technical specifications and protocols for recording immutable ownership history and authenticity verification of digital assets through blockchain-based token IDs, contract addresses, and metadata that establish chain of custody from creation to present ownership.\n\t- owl:class:: mv:ProvenanceStandard\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: provenance-standard-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Asset Standards]]\n\t\t- related-to:: [[NFT Verification]]\n\t\t- related-to:: [[Blockchain Authentication]]\n\t\t- related-to:: [[Ownership Tracking]]\n\t\t- enables:: [[Asset Authenticity]]\n\t- #### Verification Methods\n\t  collapsed:: true\n\t\t- Token ID and contract address lookup\n\t\t- Blockchain explorer verification (Etherscan)\n\t\t- NFT Ownership APIs for tracking\n\t\t- Provenance Blockchain identity verification\n\t\t- Metadata analysis for authenticity\n\t- #### Applications\n\t  collapsed:: true\n\t\t- LVMH blockchain authentication for luxury goods\n\t\t- Real estate NFT ownership records\n\t\t- Art provenance tracking\n\t\t- Supply chain authenticity verification\n\t\t- Forgery detection through historical analysis",
   "backlinks": [
     "Audit Trail"
   ],
   "wiki_links": [
-    "metaverse"
+    "Blockchain Authentication",
+    "Asset Authenticity",
+    "metaverse",
+    "Digital Asset Standards",
+    "Ownership Tracking",
+    "NFT Verification"
   ],
   "ontology": {
     "term_id": "MV-10013",
     "preferred_term": "Provenance Standard",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ProvenanceStandard",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Technical specifications and protocols for recording immutable ownership history and authenticity verification of digital assets through blockchain-based token IDs, contract addresses, and metadata that establish chain of custody from creation to present ownership.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Digital Asset Standards"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Asset Authenticity"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "NFT Verification",
+        "Blockchain Authentication",
+        "Ownership Tracking"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

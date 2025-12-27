@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0024
+	- source-domain:: rb
 	- preferred-term:: rb 0024 workspace
 	- status:: draft
 	- public-access:: true

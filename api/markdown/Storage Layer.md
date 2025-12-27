@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0175
+	- source-domain:: mv
 	- preferred-term:: Storage Layer
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[InfrastructureDomain]]
 	- implementedInLayer:: [[Data Storage Infrastructure]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: storage-layer-relationships
 	  collapsed:: true
 		- is-part-of:: [[Infrastructure Layer]]

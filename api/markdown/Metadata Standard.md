@@ -8,9 +8,11 @@ id:: metadata-standard-ontology
   - preferred-term:: Metadata Standard
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:MetadataStandard
   - definition:: A formal specification defining the structure, semantics, format, and rules for describing data about data, ensuring consistent interpretation and interoperability across systems and domains.
 
 ### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 - is-part-of:: [[Data Management System]]
 - is-part-of:: [[Interoperability Framework]]
 - has-part:: [[Schema Definition]]

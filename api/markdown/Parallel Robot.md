@@ -1,10 +1,11 @@
-Parallel Robot refers to parallel robot has end-effector directly connected to base by multiple separate linkages working simultaneously.
-
 - ### OntologyBlock
-  id:: Parallel Robot
+  id:: parallel-robot-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1012
   - preferred-term:: Parallel Robot
   - source-domain:: rb
+  - owl:class:: rb:ParallelRobot
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
+  - definition:: A parallel robot has an end-effector directly connected to base by multiple separate linkages working simultaneously.

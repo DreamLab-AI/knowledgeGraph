@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0905
+	- source-domain:: bc
 	- preferred-term:: BLAKE2
 	- status:: complete
 	- public-access:: true
@@ -14,3 +15,6 @@
 	- owl:role:: Object
 	- owl:inferred-class:: bc:VirtualObject
 	- belongsToDomain:: [[CryptographicDomain]]
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

@@ -3,17 +3,19 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0876
+	- source-domain:: ai
 	- preferred-term:: Rapid AI Deployment
 	- status:: complete
 	- public-access:: true
 	- source:: Chimera Prime Research
-	- maturity:: dt:Established
+	- maturity:: established
 	- owl:class:: ai:RapidAiDeployment
 	- belongsToDomain:: [[Artificial Intelligence]]
 
 ### Relationships
 
 
+- is-subclass-of:: [[Artificial Intelligence]]
 ## Metadata
 
 - **Last Updated**: 2025-11-16

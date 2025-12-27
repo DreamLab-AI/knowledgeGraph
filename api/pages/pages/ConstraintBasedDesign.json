@@ -1,7 +1,7 @@
 {
   "id": "ConstraintBasedDesign",
   "title": "ConstraintBasedDesign",
-  "content": "- ### OntologyBlock\n  id:: constraintbaseddesign-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-1000\n\t- preferred-term:: ConstraintBasedDesign\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A constraint based design component in the Artificial Intelligence domain that enables GenerativeDesignTool.\n\t- source:: Generated from bridge validation\n\t- maturity:: dt:Emerging\n\t- owl:class:: ai:ConstraintBasedDesign\n\t- #### Relationships\n\t  id:: constraintbaseddesign-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AI System Component]]",
+  "content": "- ### OntologyBlock\n  id:: constraintbaseddesign-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-1000\n\t- source-domain:: ai\n\t- preferred-term:: ConstraintBasedDesign\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A constraint based design component in the Artificial Intelligence domain that enables GenerativeDesignTool.\n\t- source:: Generated from bridge validation\n\t- maturity:: emerging\n\t- owl:class:: ai:ConstraintBasedDesign\n\t- #### Relationships\n\t  id:: constraintbaseddesign-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AI System Component]]",
   "backlinks": [],
   "wiki_links": [
     "AI System Component"
@@ -11,13 +11,13 @@
     "preferred_term": "ConstraintBasedDesign",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/ai#ConstraintBasedDesign",
-    "source_domain": null,
+    "source_domain": "ai",
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
     "definition": "A constraint based design component in the Artificial Intelligence domain that enables GenerativeDesignTool.",
     "scope_note": null,
     "status": "complete",
-    "maturity": "dt:Emerging",
+    "maturity": "emerging",
     "version": null,
     "public_access": true,
     "last_updated": null,
@@ -48,7 +48,6 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"

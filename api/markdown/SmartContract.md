@@ -7,6 +7,7 @@ id:: smartcontract-ontology
   - term-id:: BC-0101
   - preferred-term:: SmartContract
   - source-domain:: bc
+  - owl:class:: bc:Smartcontract
   - status:: active
   - definition:: Self-executing contracts with terms directly written into code that automatically enforce and execute agreements when predetermined conditions are met on a blockchain network.
 

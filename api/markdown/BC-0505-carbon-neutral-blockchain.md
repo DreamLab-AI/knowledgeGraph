@@ -7,6 +7,7 @@ id:: bc-0505-carbon-neutral-blockchain-ontology
   - term-id:: BC-0505
   - preferred-term:: Carbon Neutral Blockchain
   - source-domain:: bc
+  - owl:class:: bc:CarbonNeutralBlockchain
   - status:: stub
   - definition:: A component of the blockchain ecosystem.
 

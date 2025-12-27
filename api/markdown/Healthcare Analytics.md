@@ -3,6 +3,8 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0345
+	- source-domain:: mv
+	- owl:class:: mv:HealthcareAnalytics
 	- preferred-term:: Healthcare Analytics
 	- status:: draft
 	- public-access:: true

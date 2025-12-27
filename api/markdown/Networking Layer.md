@@ -7,10 +7,12 @@ id:: networking-layer-ontology
   - term-id:: DT-0170
   - preferred-term:: Networking Layer
   - source-domain:: mv
+  - owl:class:: mv:NetworkingLayer
   - status:: draft
   - definition:: Communication systems that connect components and users across distributed metaverse environments through network protocols and software.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Infrastructure Architecture]]
 - has-part:: [[Network Protocol]]
 - has-part:: [[Data Transmission Service]]

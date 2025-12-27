@@ -3,11 +3,12 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0865
+	- source-domain:: ai
 	- preferred-term:: Symbolic Reasoning
 	- status:: complete
 	- public-access:: true
 	- source:: Chimera Prime Research
-	- maturity:: dt:Established
+	- maturity:: established
 	- owl:class:: ai:SymbolicReasoning
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships

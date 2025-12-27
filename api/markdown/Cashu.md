@@ -7,6 +7,7 @@
   - term-id:: BC-9876
   - preferred-term:: {{twitter https://twitter.com/callebtc/status/1777598819355496587}}
   - source-domain:: bc
+  - owl:class:: bc:TwitterHttpstwittercomcallebtcstatus1777598819355496587
   - status:: draft
 
 ### Core Privacy Mechanism
@@ -110,3 +111,6 @@
 		- [2] GitHub: Cashu BTC Organization (2025). "nutshell: Chaumian Ecash Wallet and Mint." https://github.com/cashubtc/nutshell. Reference implementation; 451+ stars, actively maintained.
 		- [3] Gutierrez, E. (2024). "Cashu Workshop: Building Privacy-Preserving Bitcoin Applications." YouTube. https://www.youtube.com/watch?v=xfYmwc-gnK8 Technical deep-dive on blind signature implementation.
 	-
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

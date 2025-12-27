@@ -1,22 +1,28 @@
 {
   "id": "Transparent Decision Making",
   "title": "Transparent Decision Making",
-  "content": "- ### OntologyBlock\n  id:: transparent-decision-making-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10088\n\t- preferred-term:: Transparent Decision Making\n\t- status:: stub\n\t- owl:class:: mv:TransparentDecisionMaking\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: transparent-decision-making-relationships\n\t  collapsed:: true",
-  "backlinks": [],
+  "content": "- ### OntologyBlock\n  id:: transparent-decision-making-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10088\n\t- source-domain:: mv\n\t- preferred-term:: Transparent Decision Making\n\t- status:: active\n\t- definition:: Governance processes where decisions, their rationale, and the factors influencing outcomes are openly visible and accessible to stakeholders, often implemented through on-chain voting, public proposals, and documented deliberations in DAOs and digital platforms.\n\t- owl:class:: mv:TransparentDecisionMaking\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Governance]]\n\t\t- related-to:: [[DAO]]\n\t\t- related-to:: [[On-Chain Voting]]\n\t\t- related-to:: [[Tokenomics Governance]]\n\t  id:: transparent-decision-making-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Transparent decision-making ensures that governance processes are visible and accountable. In blockchain contexts, on-chain voting provides immutable records of proposals, votes, and outcomes. This approach builds trust and enables stakeholder participation.\n- ## Technical Details\n\t- ### On-Chain Mechanisms\n\t\t- **Proposal Systems**: Public submission and discussion of changes\n\t\t- **Voting Records**: Immutable blockchain records of all votes\n\t\t- **Execution Transparency**: Automated smart contract execution of approved proposals\n\t\t- **Delegation Tracking**: Visible delegation chains for representative voting\n\t- ### Transparency Components\n\t\t- Clear proposal documentation and rationale\n\t\t- Open discussion forums and deliberation\n\t\t- Real-time voting progress visibility\n\t\t- Post-decision outcome reporting\n\t- ### Challenges and Solutions\n\t\t- **Privacy vs Transparency**: Use of privacy-preserving voting mechanisms\n\t\t- **Plutocracy**: Quadratic voting and reputation systems\n\t\t- **Low Participation**: Incentivized voting and delegation\n\t\t- **Information Asymmetry**: Standardized proposal formats\n- ## Applications\n\t- DAO governance and treasury management\n\t- Protocol upgrade decisions\n\t- Community fund allocation\n\t- Metaverse rule-making\n\t- Digital commons governance",
+  "backlinks": [
+    "Transparent Governance"
+  ],
   "wiki_links": [
-    "metaverse"
+    "Tokenomics Governance",
+    "metaverse",
+    "On-Chain Voting",
+    "DAO",
+    "Governance"
   ],
   "ontology": {
     "term_id": "MV-10088",
     "preferred_term": "Transparent Decision Making",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#TransparentDecisionMaking",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Governance processes where decisions, their rationale, and the factors influencing outcomes are openly visible and accessible to stakeholders, often implemented through on-chain voting, public proposals, and documented deliberations in DAOs and digital platforms.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -28,7 +34,9 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Governance"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -43,15 +51,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "DAO",
+        "On-Chain Voting",
+        "Tokenomics Governance"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

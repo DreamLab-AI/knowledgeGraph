@@ -6,6 +6,7 @@
 	- preferred-term:: Intrinsic Interpretability
 	- source-domain:: ai
 	- status:: draft
+  - owl:class:: ai:IntrinsicInterpretability
     - public-access:: true
 
 

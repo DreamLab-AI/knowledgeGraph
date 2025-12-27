@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: MV-0936
+    - source-domain:: mv
+    - owl:class:: mv:BasedOn
     - preferred-term:: based on
     - ontology:: true
     - public-access:: true

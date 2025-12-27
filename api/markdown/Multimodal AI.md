@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0946
+	- source-domain:: mv
 	- preferred-term:: Multimodal AI
 	- status:: emerging
 	- public-access:: true
@@ -81,3 +82,6 @@ Current implementations remain constrained by data fusion efficiency, computatio
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

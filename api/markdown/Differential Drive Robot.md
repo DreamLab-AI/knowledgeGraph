@@ -1,16 +1,11 @@
-### Definition
-
-Differential Drive Robot employs two independently actuated wheels mounted on a common axis, with steering accomplished through differential velocities between left and right wheels rather than mechanical steering mechanisms. This elegantly simple locomotion architecture dominates mobile robotics due to mechanical simplicity, low cost, excellent maneuverability including zero-radius turning, and straightforward kinematics amenable to precise odometry and path planning.
-
 - ### OntologyBlock
-  id:: Differential Drive Robot
+  id:: differential-drive-robot-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-1021
-  - preferred-term:: Differential Drive Robot employs two independently actuated wheels...
+  - preferred-term:: Differential Drive Robot
   - source-domain:: rb
+  - owl:class:: rb:DifferentialDriveRobot
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-
-Differential Drive Robot employs two independently actuated wheels mounted on a common axis, with steering accomplished through differential velocities between left and right wheels rather than mechanical steering mechanisms. This elegantly simple locomotion architecture dominates mobile robotics due to mechanical simplicity, low cost, excellent maneuverability including zeroradius turning, and straightforward kinematics amenable to precise odometry and path planning.
-
-Differential Drive Robot employs two independently actuated wheels mounted on a common axis, with steering accomplished through differential velocities between left and right wheels rather than mechanical steering mechanisms. This elegantly simple locomotion architecture dominates mobile robotics due to mechanical simplicity, low cost, excellent maneuverability including zeroradius turning, and straightforward kinematics amenable to precise odometry and path planning.
+  - definition:: A differential drive robot employs two independently actuated wheels mounted on a common axis, with steering accomplished through differential velocities between left and right wheels.

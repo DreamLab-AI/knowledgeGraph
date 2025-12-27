@@ -7,10 +7,12 @@ id:: metaverse-content-pipeline-ontology
   - term-id:: DT-0199
   - preferred-term:: Metaverse Content Pipeline
   - source-domain:: mv
+  - owl:class:: mv:MetaverseContentPipeline
   - status:: draft
   - definition:: End-to-end workflow connecting asset creation, optimization, storage, distribution, and real-time rendering for metaverse experiences across platforms.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Metaverse Infrastructure]]
 - is-part-of:: [[Creator Economy]]
 - has-part:: [[Render Pipeline]]

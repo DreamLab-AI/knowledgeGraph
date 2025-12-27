@@ -1,11 +1,11 @@
-id:: legged-robot-ontology
-
 - ### OntologyBlock
-  id:: Legged Robot
+  id:: legged-robot-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: RB-0013
   - preferred-term:: Legged Robot
   - source-domain:: rb
+  - owl:class:: rb:LeggedRobot
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: A legged robot uses articulated limbs for locomotion, providing mobility over rough terrain where wheeled systems would fail.

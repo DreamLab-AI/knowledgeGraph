@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0246
+	- source-domain:: mv
 	- preferred-term:: Spatial Anchor
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[InteractionDomain]]
 	- implementedInLayer:: [[NetworkLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: spatial-anchor-relationships
 	  collapsed:: true
 		- is-part-of:: [[AR Scene Graph]]

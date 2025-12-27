@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-1049
+	- source-domain:: mv
 	- preferred-term:: Photogrammetry
 	- status:: draft
 	- public-access:: true

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-1055
+	- source-domain:: mv
 	- preferred-term:: State Synchronization
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[InfrastructureDomain]]
 	- implementedInLayer:: [[Data Layer]], [[Middleware Layer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: state-synchronization-relationships
 	  collapsed:: true
 		- is-part-of:: [[Distributed System Architecture]]

@@ -3,6 +3,8 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0095
+	- source-domain:: mv
+	- owl:class:: mv:SafetyZone
 	- preferred-term:: Safety Zone
 	- status:: draft
 	- public-access:: true
@@ -76,3 +78,6 @@ Safety Zone refers to ### Primary Definition
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

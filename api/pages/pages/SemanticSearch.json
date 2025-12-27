@@ -1,7 +1,7 @@
 {
   "id": "SemanticSearch",
   "title": "SemanticSearch",
-  "content": "- ### OntologyBlock\n  id:: semanticsearch-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-1004\n\t- preferred-term:: SemanticSearch\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A semantic search component in the Metaverse domain that enables KnowledgeGraph.\n\t- source:: Generated from bridge validation\n\t- maturity:: emerging\n\t- owl:class:: mv:SemanticSearch\n\t- #### Relationships\n\t  id:: semanticsearch-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Search Technology]]",
+  "content": "- ### OntologyBlock\n  id:: semanticsearch-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-1004\n\t- source-domain:: mv\n\t- preferred-term:: SemanticSearch\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A semantic search component in the Metaverse domain that enables KnowledgeGraph.\n\t- source:: Generated from bridge validation\n\t- maturity:: emerging\n\t- owl:class:: mv:SemanticSearch\n\t- #### Relationships\n\t  id:: semanticsearch-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Search Technology]]",
   "backlinks": [],
   "wiki_links": [
     "Search Technology"
@@ -11,7 +11,7 @@
     "preferred_term": "SemanticSearch",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#SemanticSearch",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
     "definition": "A semantic search component in the Metaverse domain that enables KnowledgeGraph.",
@@ -48,7 +48,6 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"

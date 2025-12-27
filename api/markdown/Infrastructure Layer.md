@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0169
+	- source-domain:: mv
 	- preferred-term:: Infrastructure Layer
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[InfrastructureDomain]]
 	- implementedInLayer:: [[Physical Layer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: infrastructure-layer-relationships
 	  collapsed:: true
 		- is-part-of:: [[InfrastructureDomain]]

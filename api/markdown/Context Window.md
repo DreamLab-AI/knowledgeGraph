@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: The maximum sequence length that a model can process at once, determining how much prior context it can consider during generation or understanding tasks.
 	- source:: [[Vaswani et al. 2017 Attention is All You Need]], [[Anthropic Context Windows Research 2024]], [[OpenAI GPT-4 Technical Report]]
-	- maturity:: dt:Mature
+	- maturity:: mature
 	- #### Relationships
 - is-subclass-of:: [[ai:ModelArchitecture]]
 	  id:: context-window-relationships

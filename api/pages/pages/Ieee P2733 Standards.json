@@ -1,22 +1,28 @@
 {
   "id": "Ieee P2733 Standards",
   "title": "Ieee P2733 Standards",
-  "content": "- ### OntologyBlock\n  id:: ieee-p2733-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9917\n\t- preferred-term:: Ieee P2733 Standards\n\t- status:: stub\n\t- owl:class:: mv:IeeeP2733Standards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: ieee-p2733-standards-relationships\n\t  collapsed:: true",
-  "backlinks": [],
+  "content": "- ### OntologyBlock\n  id:: ieee-p2733-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9917\n\t- source-domain:: mv\n\t- preferred-term:: Ieee P2733 Standards\n\t- status:: active\n\t- owl:class:: mv:IeeeP2733Standards\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: IEEE standards development efforts addressing virtual reality, extended reality, and metaverse technologies, including specifications for VR sickness reduction (IEEE 3079-2020), comfort requirements, and ethical design practices that ensure safe and accessible immersive experiences.\n\t- #### Relationships\n\t  id:: ieee-p2733-standards-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[XR Technical Standard]]\n\t\t- related-to:: [[Ieee7000 Standard]]\n\t\t- related-to:: [[VR Sickness Mitigation]]\n\t\t- enables:: [[Safe Immersive Experiences]]\n\n## IEEE XR Standards Portfolio\n\n### VR Sickness Standards\n- IEEE 3079-2020: HMD-based VR sickness reduction\n- Head Mounted Display technology guidelines\n- Sickness mitigation techniques\n- User safety specifications\n\n### Metaverse Standards Committee\n- Develops and maintains VR/AR standards\n- Recommended practices and guides\n- Open and accredited process\n- Global advocacy\n\n## Key Standard Initiatives\n\n### IEEE P2048\n- Standard for Metaverse\n- Terminology and definitions\n- Taxonomy development\n- Foundation for interoperability\n\n### IEEE P7016\n- Ethically Aligned Design\n- Metaverse system operations\n- Value-based engineering\n- Human-centric design\n\n### IEEE P7030\n- Ethical Assessment practices\n- Extended Reality (XR) technologies\n- Recommended practice framework\n- Risk evaluation methods\n\n### IEEE P3322\n- Comfort Requirements Guide\n- Extended Reality devices\n- Ergonomic specifications\n- User wellbeing focus\n\n## Technical Challenges Addressed\n\n### IEEE SA Working Areas\n- Better user interfaces\n- Lower system latency\n- Tightly integrated XR technologies\n- Improved 3D modelling\n- Volumetric video rendering\n\n### Infrastructure Focus\n- Geospatial data acquisition\n- Rendering and storage\n- Data protection methods\n- Lower power consumption\n\n## VR Sickness Mitigation\n\n### Technology Approaches\n- Motion-to-photon latency reduction\n- Field of view optimisation\n- Frame rate stability\n- Vestibular conflict minimisation\n- Comfort mode implementations\n\n### User Safety\n- Session duration guidelines\n- Break recommendations\n- Susceptibility assessment\n- Progressive exposure protocols\n\n## Conference Activities\n\n### IEEE VR 2024\n- Annual conference on VR and 3D interaction\n- Standards discussion forums\n- Industry collaboration\n- Research presentations\n\n### Metaverse Congress\n- Standards engagement events\n- Stakeholder coordination\n- Technology demonstrations\n- Roadmap development\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "backlinks": [
+    "Ieee7000 Standard"
+  ],
   "wiki_links": [
-    "metaverse"
+    "VR Sickness Mitigation",
+    "metaverse",
+    "Safe Immersive Experiences",
+    "Ieee7000 Standard",
+    "XR Technical Standard"
   ],
   "ontology": {
     "term_id": "MV-9917",
     "preferred_term": "Ieee P2733 Standards",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#IeeeP2733Standards",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "IEEE standards development efforts addressing virtual reality, extended reality, and metaverse technologies, including specifications for VR sickness reduction (IEEE 3079-2020), comfort requirements, and ethical design practices that ensure safe and accessible immersive experiences.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -28,12 +34,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "XR Technical Standard"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Safe Immersive Experiences"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -43,15 +53,18 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Ieee7000 Standard",
+        "VR Sickness Mitigation"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

@@ -7,6 +7,7 @@ id:: gas-limit-ontology
   - term-id:: BC-0107
   - preferred-term:: Gas Limit
   - source-domain:: bc
+  - owl:class:: bc:GasLimit
   - status:: complete
   - definition:: The maximum amount of computational work (measured in gas units) that a user is willing to allocate for transaction execution on Ethereum and EVM-compatible blockchains.
 

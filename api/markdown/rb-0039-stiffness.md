@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0039
+	- source-domain:: rb
 	- preferred-term:: rb 0039 stiffness
 	- status:: draft
 	- public-access:: true

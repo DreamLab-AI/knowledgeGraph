@@ -4,8 +4,8 @@
 	- ontology:: true
 	- term-id:: BC-0586
 	- preferred-term:: Agreement Protocol
-	- source-domain:: pc
-	- owl:class:: pc:AgreementProtocol
+	- source-domain:: bc
+	- owl:class:: bc:AgreementProtocol
 	- status:: complete
 	- public-access:: true
 

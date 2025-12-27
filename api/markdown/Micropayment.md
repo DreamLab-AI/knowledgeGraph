@@ -7,6 +7,7 @@ id:: micropayment-ontology
   - term-id:: DT-0216
   - preferred-term:: Micropayment
   - source-domain:: bc
+  - owl:class:: bc:Micropayment
   - status:: draft
   - definition:: Very small electronic payment processed automatically within digital environments for low-value transactions.
 

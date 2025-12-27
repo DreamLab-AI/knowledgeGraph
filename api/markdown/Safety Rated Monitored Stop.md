@@ -8,7 +8,8 @@
 	- owl:class:: rb:SafetyRatedMonitoredStop
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- is-subclass-of:: [[Robotics]]
+	- definition:: A safety-rated monitored stop (now termed monitored standstill) is a safety function that continuously monitors robot parameters and triggers a protective stop if operational limits are exceeded.
 	- maturity:: draft
 
 ## Academic Context

@@ -7,9 +7,11 @@ Metaverse Infrastructure constitutes the comprehensive technical foundation enco
   - term-id:: MV-9749
   - preferred-term:: Metaverse Infrastructure constitutes the comprehensive technical foundation encompassing...
   - source-domain:: mv
+  - owl:class:: mv:MetaverseInfrastructureConstitutesTheComprehensiveTechnicalFoundationEncompassing
   - status:: draft
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 
 ### Definition
 Metaverse Infrastructure constitutes the comprehensive technical foundation encompassing hardware, software, networking, protocols, and computational resources required to enable persistent, immersive, interoperable virtual worlds supporting real-time interactions, massive concurrent users, and seamless cross-platform experiences. This multilayered technological ecosystem integrates edge computing, 5G/6G networks, cloud services, blockchain systems, spatial computing platforms, and distributed architectures to deliver the scalability, performance, security, and reliability necessary for functioning metaverse environments spanning social, commercial, educational, and entertainment applications.

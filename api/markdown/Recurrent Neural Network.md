@@ -8,6 +8,7 @@ id:: recurrent-neural-network-ontology
   - preferred-term:: Recurrent Neural Network
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:RecurrentNeuralNetwork
   - definition:: ### Primary Definition
 
 ### Relationships

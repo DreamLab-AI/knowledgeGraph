@@ -4,12 +4,16 @@
 	- ontology:: true
 	- term-id:: AI-0879
 	- source-domain:: ai
+  - owl:class:: ai:LightCurtain
 	- preferred-term:: Light Curtain
 	- status:: draft
 	- public-access:: true
 	- definition:: ### Primary Definition
 	- maturity:: draft
 
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 ## Academic Context
 
 - Safety light curtains are optoelectronic devices designed to create invisible protective barriers around hazardous machinery or zones, detecting interruptions in infrared light beams to immediately halt operations and prevent injury.

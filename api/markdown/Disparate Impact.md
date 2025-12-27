@@ -3,16 +3,17 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0381
+	- source-domain:: ai
 	- preferred-term:: Disparate Impact
 	- status:: approved
 	- public-access:: true
 	- definition:: Disparate Impact is a legal doctrine and form of indirect discrimination that occurs when facially neutral policies, practices, or algorithmic systems disproportionately affect protected groups, regardless of intent to discriminate. Originating from US employment law (EEOC Uniform Guidelines 1978) and extended to UK and EU anti-discrimination frameworks, disparate impact is measured by comparing selection rates, approval rates, or outcome rates between protected and unprotected groups. The "80 percent rule" (four-fifths rule) establishes that disparate impact exists when the selection rate for a protected group is less than 80 percent of the rate for the highest-performing group, calculated as a disparate impact ratio. Unlike disparate treatment (intentional direct discrimination), disparate impact focuses on discriminatory outcomes rather than discriminatory intent. Legal defenses include business necessity (US) - demonstrating the practice is job-related and consistent with business necessity, and proportionate means (UK/EU) - showing the practice is a proportionate means of achieving a legitimate aim. In AI systems, disparate impact analysis requires statistical testing of algorithmic decisions across demographic groups, documentation of less discriminatory alternatives if available, and compliance with sector-specific regulations in employment, lending, insurance, and housing domains.
 	- source:: [[US EEOC Uniform Guidelines]], [[UK Equality Act 2010]], [[EU Anti-Discrimination Directives]]
 	- maturity:: mature
-	- owl:class:: aigo:DisparateImpact
+	- owl:class:: ai:DisparateImpact
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
-	- owl:inferred-class:: aigo:VirtualProcess
+	- owl:inferred-class:: ai:VirtualProcess
 	- belongsToDomain:: [[AIEthicsDomain]]
 	- implementedInLayer:: [[ConceptualLayer]]
 	- #### Relationships
@@ -44,10 +45,10 @@ Disparate Impact refers to disparate impact is a legal doctrine and form of indi
 - **Maturity**: mature
 - **Source**: [[US EEOC Uniform Guidelines]], [[UK Equality Act 2010]], [[EU Anti-Discrimination Directives]]
 - **Authority Score**: 0.95
-- **Owl:Class**: aigo:DisparateImpact
+- **Owl:Class**: ai:DisparateImpact
 - **Owl:Physicality**: VirtualEntity
 - **Owl:Role**: Process
-- **Owl:Inferred Class**: aigo:VirtualProcess
+- **Owl:Inferred Class**: ai:VirtualProcess
 - **Belongstodomain**: [[AIEthicsDomain]]
 - **Implementedinlayer**: [[ConceptualLayer]]
 

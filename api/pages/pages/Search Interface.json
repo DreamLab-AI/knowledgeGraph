@@ -1,24 +1,29 @@
 {
   "id": "Search Interface",
   "title": "Search Interface",
-  "content": "- ### OntologyBlock\n  id:: search-interface-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10032\n\t- preferred-term:: Search Interface\n\t- status:: stub\n\t- owl:class:: mv:SearchInterface\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: search-interface-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: search-interface-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10032\n\t- source-domain:: mv\n\t- preferred-term:: Search Interface\n\t- status:: active\n\t- definition:: User-facing components that enable query input, result presentation, and navigation through search results in metaverse platforms, including text fields, voice input, spatial gestures, and augmented reality overlays for asset and experience discovery.\n\t- owl:class:: mv:SearchInterface\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: search-interface-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[User Interface]]\n\t\t- related-to:: [[Search Engine]]\n\t\t- related-to:: [[Voice Search]]\n\t\t- related-to:: [[Gesture Input]]\n\t\t- enables:: [[User Query Experience]]\n\t- #### Interface Modalities\n\t  collapsed:: true\n\t\t- Text-based query input\n\t\t- Voice and natural language commands\n\t\t- Gesture-based spatial search\n\t\t- Visual search with image input\n\t\t- AR overlay result presentation\n\t- #### Design Elements\n\t  collapsed:: true\n\t\t- Autocomplete suggestions\n\t\t- Faceted filtering options\n\t\t- Infinite scroll result lists\n\t\t- 3D spatial result displays\n\t\t- Relevance feedback mechanisms",
   "backlinks": [
     "Digital Curation Platform"
   ],
   "wiki_links": [
-    "metaverse"
+    "User Query Experience",
+    "metaverse",
+    "Voice Search",
+    "User Interface",
+    "Search Engine",
+    "Gesture Input"
   ],
   "ontology": {
     "term_id": "MV-10032",
     "preferred_term": "Search Interface",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#SearchInterface",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "User-facing components that enable query input, result presentation, and navigation through search results in metaverse platforms, including text fields, voice input, spatial gestures, and augmented reality overlays for asset and experience discovery.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "User Interface"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "User Query Experience"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Search Engine",
+        "Voice Search",
+        "Gesture Input"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

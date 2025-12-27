@@ -7,5 +7,9 @@ id:: dao-analytics-ontology
   - term-id:: BC-0475
   - preferred-term:: DAO Analytics
   - source-domain:: bc
+  - owl:class:: bc:DaoAnalytics
   - status:: stub
   - definition:: A component of the blockchain ecosystem.
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

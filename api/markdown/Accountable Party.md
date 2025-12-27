@@ -4,8 +4,8 @@
 	- ontology:: true
 	- term-id:: DT-0015
 	- preferred-term:: Accountable Party
-	- source-domain:: pc
-	- owl:class:: pc:AccountableParty
+	- source-domain:: ai
+	- owl:class:: ai:AccountableParty
 	- status:: complete
 	- public-access:: true
 
@@ -13,7 +13,7 @@
 
 
 ### OWL Classification
-	- owl:class:: aigo:AccountableParty
+	- owl:class:: ai:AccountableParty
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- owl:inferred-class:: ConceptualConcept
@@ -48,7 +48,7 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:AccountableParty
+    - owl:class:: ai:AccountableParty
     - owl:physicality:: ConceptualEntity
     - owl:role:: Concept
     - owl:inferred-class:: ConceptualConcept

@@ -10,10 +10,10 @@
 	- #### Definition
 		- definition:: None
 	- #### Semantic Classification
-		- owl:class:: aigo:PrivacyByDesign
+		- owl:class:: ai:PrivacyByDesign
 		- owl:physicality:: VirtualEntity
 		- owl:role:: Process
-		- maturity:: dt:Draft:Mature
+		- maturity:: mature
 	- #### Relationships
     - is-enabled-by:: [[PrivacyImpactAssessmentPia]]
 - ## Future of Accessibility in Design
@@ -33,7 +33,7 @@
     - ontology:: true
     - term-id:: DT-0428
     - preferred-term:: 0428 Privacy By Design
-    - source-domain:: ai-grounded
+    - source-domain:: ai
     - status:: in-progress
     - version:: 1.0
     - last-updated:: 2025-10-29
@@ -45,10 +45,10 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:PrivacyByDesign
+    - owl:class:: ai:PrivacyByDesign
     - owl:physicality:: VirtualEntity
     - owl:role:: Process
-    - owl:inferred-class:: aigo:VirtualProcess
+    - owl:inferred-class:: ai:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
 
   - 

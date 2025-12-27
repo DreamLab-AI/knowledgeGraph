@@ -7,6 +7,7 @@ id:: epoch-ontology
   - term-id:: MV-0911
   - preferred-term:: Epoch
   - source-domain:: mv
+  - owl:class:: mv:Epoch
   - status:: draft
   - definition:: ### Primary Definition
 

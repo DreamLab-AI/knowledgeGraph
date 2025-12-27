@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0338
+	- source-domain:: mv
 	- preferred-term:: ETSI Domain Application + Industry
 	- status:: draft
 	- public-access:: true

@@ -5,6 +5,8 @@ id:: virtualsociety-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: MV-1006
+  - source-domain:: mv
+  - owl:class:: mv:Virtualsociety
   - preferred-term:: VirtualSociety
   - status:: complete
   - definition:: A virtual society component in the Metaverse domain that enables VirtualWorld.

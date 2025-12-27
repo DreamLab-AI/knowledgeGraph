@@ -1,24 +1,29 @@
 {
   "id": "Platform Middleware",
   "title": "Platform Middleware",
-  "content": "- ### OntologyBlock\n  id:: platform-middleware-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10008\n\t- preferred-term:: Platform Middleware\n\t- status:: stub\n\t- owl:class:: mv:PlatformMiddleware\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: platform-middleware-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: platform-middleware-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10008\n\t- source-domain:: mv\n\t- preferred-term:: Platform Middleware\n\t- status:: active\n\t- definition:: A software layer that connects operating systems, applications, and services by providing common capabilities such as API management, message routing, authentication, and data integration to enable seamless communication between diverse systems.\n\t- owl:class:: mv:PlatformMiddleware\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: platform-middleware-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Software Infrastructure]]\n\t\t- related-to:: [[API Management]]\n\t\t- related-to:: [[Enterprise Service Bus]]\n\t\t- related-to:: [[Integration Platform]]\n\t\t- enables:: [[System Interoperability]]\n\t- #### Types\n\t  collapsed:: true\n\t\t- Message-Oriented Middleware (MOM) for async messaging\n\t\t- Enterprise Service Bus (ESB) for service integration\n\t\t- API gateways for interface management\n\t\t- Integration Platform as a Service (iPaaS) for cloud\n\t\t- Data integration middleware for ETL processes\n\t- #### Leading Platforms\n\t  collapsed:: true\n\t\t- IBM WebSphere for enterprise integration\n\t\t- Microsoft Azure Logic Apps for cloud workflows\n\t\t- MuleSoft Anypoint for API-led connectivity\n\t\t- Boomi for hybrid integration\n\t\t- Market projected at $28.7B in 2024",
   "backlinks": [
     "Platform Layer"
   ],
   "wiki_links": [
-    "metaverse"
+    "Enterprise Service Bus",
+    "metaverse",
+    "Integration Platform",
+    "Software Infrastructure",
+    "System Interoperability",
+    "API Management"
   ],
   "ontology": {
     "term_id": "MV-10008",
     "preferred_term": "Platform Middleware",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#PlatformMiddleware",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A software layer that connects operating systems, applications, and services by providing common capabilities such as API management, message routing, authentication, and data integration to enable seamless communication between diverse systems.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Software Infrastructure"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "System Interoperability"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "API Management",
+        "Enterprise Service Bus",
+        "Integration Platform"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

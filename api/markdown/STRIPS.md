@@ -5,6 +5,7 @@
   - preferred-term:: STRIPS
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Strips
 
 ### Relationships
 - is-subclass-of:: [[Knowledge Representation]]

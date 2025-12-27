@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0308
+	- source-domain:: mv
 	- preferred-term:: Knowledge Graph
 	- status:: draft
 	- public-access:: true

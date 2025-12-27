@@ -7,6 +7,7 @@ id:: overfitting-ontology
   - term-id:: MV-0838
   - preferred-term:: Overfitting
   - source-domain:: mv
+  - owl:class:: mv:Overfitting
   - status:: draft
   - definition:: ### Primary Definition
 

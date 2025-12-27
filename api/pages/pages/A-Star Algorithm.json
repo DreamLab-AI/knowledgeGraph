@@ -1,24 +1,24 @@
 {
   "id": "A-Star Algorithm",
   "title": "A-Star Algorithm",
-  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1004\n  - preferred-term:: A-Star Algorithm\n  - source-domain:: ai\n  - status:: draft\n\n### Relationships\n- is-subclass-of:: [[Search Algorithms]]\n- is-subclass-of:: [[Heuristic Methods]]\n- skos:related:: [[Dijkstra's Algorithm]]\n- skos:related:: [[Graph Theory]]\n- uses:: [[Priority Queue]]\n- enables:: [[Pathfinding]]\n- enables:: [[Route Planning]]\n\n### Definition\nA* (A-star) is a best-first search algorithm that finds the optimal path between nodes in a graph by combining actual cost from the start node (g-score) with an estimated cost to the goal (h-score heuristic). It uses the evaluation function f(n) = g(n) + h(n) to prioritize which paths to explore, guaranteeing optimality when using an admissible heuristic.\n\n### Algorithm Components\n- **g(n)**: Actual cost from start to node n\n- **h(n)**: Heuristic estimated cost from n to goal\n- **f(n)**: Total estimated cost (g(n) + h(n))\n- Open set: Nodes to be evaluated\n- Closed set: Already evaluated nodes\n\n### Properties\n- Complete (always finds a solution if one exists)\n- Optimal (finds lowest-cost path with admissible heuristic)\n- Optimally efficient (expands minimal nodes)\n- Time/space complexity: O(b^d) worst case\n\n### Common Heuristics\n- Manhattan distance (grid-based)\n- Euclidean distance\n- Diagonal distance\n- Custom domain-specific heuristics\n\n### Applications\n- Video game pathfinding\n- GPS navigation systems\n- Robotics motion planning\n- Network routing\n- Puzzle solving",
+  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1004\n  - preferred-term:: A-Star Algorithm\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:AStarAlgorithm\n\n### Relationships\n- is-subclass-of:: [[Search Algorithms]]\n- is-subclass-of:: [[Heuristic Methods]]\n- skos:related:: [[Dijkstra's Algorithm]]\n- skos:related:: [[Graph Theory]]\n- uses:: [[Priority Queue]]\n- enables:: [[Pathfinding]]\n- enables:: [[Route Planning]]\n\n### Definition\nA* (A-star) is a best-first search algorithm that finds the optimal path between nodes in a graph by combining actual cost from the start node (g-score) with an estimated cost to the goal (h-score heuristic). It uses the evaluation function f(n) = g(n) + h(n) to prioritize which paths to explore, guaranteeing optimality when using an admissible heuristic.\n\n### Algorithm Components\n- **g(n)**: Actual cost from start to node n\n- **h(n)**: Heuristic estimated cost from n to goal\n- **f(n)**: Total estimated cost (g(n) + h(n))\n- Open set: Nodes to be evaluated\n- Closed set: Already evaluated nodes\n\n### Properties\n- Complete (always finds a solution if one exists)\n- Optimal (finds lowest-cost path with admissible heuristic)\n- Optimally efficient (expands minimal nodes)\n- Time/space complexity: O(b^d) worst case\n\n### Common Heuristics\n- Manhattan distance (grid-based)\n- Euclidean distance\n- Diagonal distance\n- Custom domain-specific heuristics\n\n### Applications\n- Video game pathfinding\n- GPS navigation systems\n- Robotics motion planning\n- Network routing\n- Puzzle solving",
   "backlinks": [
     "Search Algorithms"
   ],
   "wiki_links": [
+    "Dijkstra's Algorithm",
+    "Graph Theory",
     "Route Planning",
     "Search Algorithms",
     "Heuristic Methods",
     "Priority Queue",
-    "Pathfinding",
-    "Graph Theory",
-    "Dijkstra's Algorithm"
+    "Pathfinding"
   ],
   "ontology": {
     "term_id": "AI-1004",
     "preferred_term": "A-Star Algorithm",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/ai#AStarAlgorithm",
     "source_domain": "ai",
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
@@ -32,7 +32,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "ai:AStarAlgorithm",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -54,7 +54,6 @@
       "errors": [
         "Missing required property: last-updated",
         "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

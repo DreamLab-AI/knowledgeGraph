@@ -1,20 +1,27 @@
 {
   "id": "Etsi Metaverse Domain Model",
   "title": "Etsi Metaverse Domain Model",
-  "content": "- ### OntologyBlock\n  id:: Etsi Metaverse Domain Model\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9897\n  - preferred-term:: Etsi Metaverse Domain Model\n  - source-domain:: mv\n  - status:: stub\n\n### Relationships",
-  "backlinks": [],
-  "wiki_links": [],
+  "content": "- ### OntologyBlock\n  id:: Etsi Metaverse Domain Model\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9897\n  - preferred-term:: Etsi Metaverse Domain Model\n  - source-domain:: mv\n  - owl:class:: mv:EtsiMetaverseDomainModel\n  - status:: active\n  - definition:: A conceptual framework developed by ETSI defining the structural organisation, functional components, and interaction patterns of metaverse systems, providing a standardised reference architecture for telecommunications infrastructure supporting persistent, interconnected virtual environments.\n\n### Relationships\n- is-subclass-of:: [[Domain Model]]\n- related-to:: [[Etsi Domain Immersive]]\n- related-to:: [[Metaverse Architecture]]\n- defines:: [[Metaverse Reference Architecture]]\n\n## Domain Model Structure\n\n### Core Components\n- **User Domain**: End-user devices, interfaces, and identity management\n- **Application Domain**: Virtual worlds, services, and content delivery\n- **Infrastructure Domain**: Networks, compute, and storage resources\n- **Management Domain**: Orchestration, security, and governance\n\n### Functional Layers\n- Presentation layer (XR rendering)\n- Session layer (user sessions, state management)\n- Service layer (metaverse applications)\n- Platform layer (compute, storage, networking)\n\n## Technical Architecture\n\n### Network Infrastructure\n- 5G/6G core network integration\n- Edge computing nodes\n- Content delivery networks\n- Distributed storage systems\n\n### Compute Distribution\n- Cloud computing backend\n- Edge processing nodes\n- Device-local computation\n- Hybrid processing models\n\n### Data Management\n- Real-time synchronisation\n- State persistence\n- Asset management\n- Identity federation\n\n## Interoperability Framework\n\n### Cross-Platform Standards\n- Avatar interoperability\n- Asset portability\n- Identity federation\n- Session continuity\n\n### Protocol Specifications\n- Signalling protocols\n- Media transport\n- Synchronisation mechanisms\n- Security protocols\n\n## Quality of Experience\n\n### Metrics Framework\n- Visual quality indicators\n- Audio fidelity measures\n- Interaction latency metrics\n- Presence and immersion scores\n\n### Performance Requirements\n- Motion-to-photon latency targets\n- Frame rate specifications\n- Resolution standards\n- Spatial audio requirements\n\n## Implementation Guidance\n\n### Deployment Models\n- Private metaverse environments\n- Public metaverse platforms\n- Hybrid configurations\n- Federated metaverses\n\n### Security Considerations\n- Authentication mechanisms\n- Data protection frameworks\n- Privacy preservation\n- Content moderation\n\n## Coordination with Standards Bodies\n\n### ETSI Coordination\n- ITU Focus Group on Metaverse\n- Metaverse Standards Forum\n- 3GPP for network specifications\n- IEEE for device standards\n\n## Metadata\n\n- **Migration Status**: Enriched via domain knowledge 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "backlinks": [
+    "Etsi Metaverse Domain Taxonomy"
+  ],
+  "wiki_links": [
+    "Domain Model",
+    "Metaverse Reference Architecture",
+    "Etsi Domain Immersive",
+    "Metaverse Architecture"
+  ],
   "ontology": {
     "term_id": "MV-9897",
     "preferred_term": "Etsi Metaverse Domain Model",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/metaverse#EtsiMetaverseDomainModel",
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A conceptual framework developed by ETSI defining the structural organisation, functional components, and interaction patterns of metaverse systems, providing a standardised reference architecture for telecommunications infrastructure supporting persistent, interconnected virtual environments.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -22,7 +29,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "mv:EtsiMetaverseDomainModel",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -43,8 +50,6 @@
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

@@ -1,16 +1,16 @@
 {
   "id": "OpticalSensorArray",
   "title": "OpticalSensorArray",
-  "content": "- ### OntologyBlock\n  id:: OpticalSensorArray\n  - ontology:: true\n  - public-access:: true\n  - term-id:: RB-1001\n  - preferred-term:: OpticalSensorArray\n  - source-domain:: rb\n  - status:: complete\n  - definition:: A optical sensor array component in the Robotics domain that required by BiometricBindingMechanism.\n\n### Relationships\n- is-subclass-of:: [[Sensor Hardware]]",
+  "content": "- ### OntologyBlock\n  id:: OpticalSensorArray\n  - ontology:: true\n  - public-access:: true\n  - term-id:: RB-1001\n  - preferred-term:: OpticalSensorArray\n  - source-domain:: rb\n  - status:: complete\n  - definition:: A optical sensor array component in the Robotics domain that required by BiometricBindingMechanism.\n\n### Relationships\n- is-subclass-of:: [[Robotics]]\n  - owl:class:: rb:OpticalSensorArray",
   "backlinks": [],
   "wiki_links": [
-    "Sensor Hardware"
+    "Robotics"
   ],
   "ontology": {
     "term_id": "RB-1001",
     "preferred_term": "OpticalSensorArray",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/robotics#OpticalSensorArray",
     "source_domain": "rb",
     "domain": "rb",
     "domain_full_name": "Robotics",
@@ -24,7 +24,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "rb:OpticalSensorArray",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -45,7 +45,6 @@
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

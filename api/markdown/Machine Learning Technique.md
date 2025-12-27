@@ -3,11 +3,12 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0828
+	- source-domain:: ai
 	- preferred-term:: Machine Learning Technique
 	- status:: complete
 	- public-access:: true
 	- source:: Chimera Prime Research
-	- maturity:: dt:Established
+	- maturity:: established
 	- owl:class:: ai:MachineLearningTechnique
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships

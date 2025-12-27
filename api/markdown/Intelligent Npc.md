@@ -3,6 +3,8 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0003
+	- source-domain:: mv
+	- owl:class:: mv:IntelligentNpc
 	- preferred-term:: Intelligent NPC
 	- public-access:: true
 

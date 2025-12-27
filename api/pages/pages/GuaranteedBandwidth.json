@@ -1,7 +1,7 @@
 {
   "id": "GuaranteedBandwidth",
   "title": "GuaranteedBandwidth",
-  "content": "- ### OntologyBlock\n  id:: guaranteedbandwidth-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-1008\n\t- preferred-term:: GuaranteedBandwidth\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A guaranteed bandwidth component in the Metaverse domain that enables gNetworkSlice.\n\t- source:: Generated from bridge validation\n\t- maturity:: emerging\n\t- owl:class:: mv:GuaranteedBandwidth\n\t- #### Relationships\n\t  id:: guaranteedbandwidth-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Network Quality Metric]]",
+  "content": "- ### OntologyBlock\n  id:: guaranteedbandwidth-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-1008\n\t- source-domain:: mv\n\t- preferred-term:: GuaranteedBandwidth\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A guaranteed bandwidth component in the Metaverse domain that enables gNetworkSlice.\n\t- source:: Generated from bridge validation\n\t- maturity:: emerging\n\t- owl:class:: mv:GuaranteedBandwidth\n\t- #### Relationships\n\t  id:: guaranteedbandwidth-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Network Quality Metric]]",
   "backlinks": [],
   "wiki_links": [
     "Network Quality Metric"
@@ -11,7 +11,7 @@
     "preferred_term": "GuaranteedBandwidth",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#GuaranteedBandwidth",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
     "definition": "A guaranteed bandwidth component in the Metaverse domain that enables gNetworkSlice.",
@@ -48,7 +48,6 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role"

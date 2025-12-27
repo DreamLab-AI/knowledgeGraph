@@ -9,7 +9,7 @@
 	- status:: draft
 	- public-access:: true
 	- definition:: A deliberate attempt to manipulate an AI system by crafting malicious inputs or exploiting vulnerabilities to cause misclassification, extract confidential information, degrade performance, or subvert the system's intended behavior.
-	- maturity:: dt:Draft
+	- maturity:: draft
 	- owl:class:: mv:AdversarialAttack
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept

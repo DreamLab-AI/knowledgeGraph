@@ -7,6 +7,7 @@ id:: partition-attack-ontology
   - term-id:: DT-0084
   - preferred-term:: Partition Attack
   - source-domain:: bc
+  - owl:class:: bc:PartitionAttack
   - status:: complete
   - definition:: Network segmentation attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

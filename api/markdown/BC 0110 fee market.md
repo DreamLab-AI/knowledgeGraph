@@ -7,6 +7,7 @@ id:: unknown-ontology
   - term-id:: MV-0110
   - preferred-term:: BC 0110 fee market
   - source-domain:: bc
+  - owl:class:: bc:Bc0110FeeMarket
   - status:: reviewed
   - definition:: ### Primary Definition
 

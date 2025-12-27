@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0344
+	- source-domain:: mv
 	- preferred-term:: ETSI Domain: Data Management + Ethics
 	- status:: draft
 	- public-access:: true

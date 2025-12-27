@@ -7,6 +7,7 @@ id:: consensus-rule-ontology
   - term-id:: DT-0058
   - preferred-term:: Consensus Rule
   - source-domain:: bc
+  - owl:class:: bc:ConsensusRule
   - status:: complete
   - definition:: Protocol validation requirement within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

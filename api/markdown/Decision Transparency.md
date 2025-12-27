@@ -3,6 +3,8 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0822
+	- source-domain:: mv
+	- owl:class:: mv:DecisionTransparency
 	- preferred-term:: Decision Transparency
 	- status:: approved
 	- public-access:: true

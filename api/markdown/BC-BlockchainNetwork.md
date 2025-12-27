@@ -7,4 +7,8 @@ id: BC-BlockchainNetwork
   - term-id:: BC-9935
   - preferred-term:: id: BCBlockchainNetwork
   - source-domain:: bc
+  - owl:class:: bc:IdBcblockchainnetwork
   - status:: draft
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

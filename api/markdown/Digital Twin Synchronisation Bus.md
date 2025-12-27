@@ -7,6 +7,7 @@ id:: digital-twin-synchronisation-bus-ontology
   - term-id:: DT-0248
   - preferred-term:: Digital Twin Synchronisation Bus
   - source-domain:: mv
+  - owl:class:: mv:DigitalTwinSynchronisationBus
   - status:: draft
   - definition:: Middleware infrastructure maintaining real-time state coherence and bidirectional synchronization among distributed digital twin instances through event streaming and conflict resolution.
 

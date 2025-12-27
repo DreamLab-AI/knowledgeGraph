@@ -7,6 +7,8 @@ id:: immersive-experiences-ontology
   - term-id:: MV-9923
   - preferred-term:: Immersive Experiences
   - source-domain:: mv
+  - owl:class:: mv:ImmersiveExperiences
   - status:: stub
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]

@@ -5,6 +5,7 @@
   - preferred-term:: Dimensionality Reduction
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:DimensionalityReduction
 
 ### Relationships
 - is-subclass-of:: [[Machine Learning]]

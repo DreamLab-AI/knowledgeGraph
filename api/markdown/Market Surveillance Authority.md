@@ -8,8 +8,12 @@ id:: market-surveillance-authority-ontology
   - preferred-term:: Market Surveillance Authority
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:MarketSurveillanceAuthority
   - definition:: National authority responsible for carrying out market surveillance activities on AI systems, including inspections, testing, enforcement, and ensuring compliance with EU AI Act requirements within a Member State.
 
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 ### Member State Responsibility
 Each Member State must designate market surveillance authority with:
 - **Legal mandate**: National law establishing authority and powers

@@ -3,12 +3,13 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-1003
+	- source-domain:: ai
 	- preferred-term:: GovernanceStructure
 	- status:: complete
 	- public-access:: true
 	- definition:: A governance structure component in the Artificial Intelligence domain that required by TrustFrameworkPolicy.
 	- source:: Generated from bridge validation
-	- maturity:: dt:Emerging
+	- maturity:: emerging
 	- owl:class:: ai:GovernanceStructure
 	- #### Relationships
 	  id:: governancestructure-relationships

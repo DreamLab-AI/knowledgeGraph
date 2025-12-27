@@ -13,7 +13,7 @@
     - ontology:: true
     - term-id:: DT-0386
     - preferred-term:: Fairness Auditing Tools
-    - source-domain:: ai-grounded
+    - source-domain:: ai
     - status:: complete
     - version:: 1.0
     - last-updated:: 2025-10-29
@@ -25,14 +25,15 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:FairnessAuditingTools
+    - owl:class:: ai:FairnessAuditingTools
     - owl:physicality:: VirtualEntity
     - owl:role:: Process
-    - owl:inferred-class:: aigo:VirtualProcess
+    - owl:inferred-class:: ai:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 
   - #### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
     id:: 0386-fairness-auditing-tools-relationships
 
   - #### OWL Axioms

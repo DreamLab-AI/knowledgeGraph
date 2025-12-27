@@ -7,6 +7,7 @@ id:: mining-pool-ontology
   - term-id:: DT-1075
   - preferred-term:: Mining Pool
   - source-domain:: bc
+  - owl:class:: bc:MiningPool
   - status:: complete
   - definition:: Collaborative mining group within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

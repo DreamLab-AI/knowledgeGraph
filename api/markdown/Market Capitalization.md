@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: MV-0535
+    - source-domain:: mv
+    - owl:class:: mv:MarketCapitalization
     - preferred-term:: Market Capitalization
     - ontology:: true
     - public-access:: true

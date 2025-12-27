@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: AI-0861
+    - source-domain:: ai
+    - owl:class:: ai:Modelops
     - preferred-term:: ModelOps
     - ontology:: true
     - public-access:: true

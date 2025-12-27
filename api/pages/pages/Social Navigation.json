@@ -1,20 +1,20 @@
 {
   "id": "Social Navigation",
   "title": "Social Navigation",
-  "content": "- ### OntologyBlock\n  id:: RB-9008\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9008\n\t- preferred-term:: Social Navigation\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Robot navigation strategies that account for social norms, human comfort, and contextual appropriateness when moving through human-populated environments.\n\t- source:: [[HRI]], [[Mobile Robotics]]\n\t- maturity:: emerging\n\t- owl:class:: rb:SocialNavigation\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[RoboticsDomain]]\n\t- isSubclassOf:: [[Human-Robot Interaction]]",
+  "content": "- ### OntologyBlock\n  id:: RB-9008\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9008\n\t- source-domain:: rb\n\t- preferred-term:: Social Navigation\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Robot navigation strategies that account for social norms, human comfort, and contextual appropriateness when moving through human-populated environments.\n\t- source:: [[HRI]], [[Mobile Robotics]]\n\t- maturity:: emerging\n\t- owl:class:: rb:SocialNavigation\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[RoboticsDomain]]\n\t- is-subclass-of:: [[Robotics]]",
   "backlinks": [],
   "wiki_links": [
-    "Mobile Robotics",
+    "Robotics",
+    "RoboticsDomain",
     "HRI",
-    "Human-Robot Interaction",
-    "RoboticsDomain"
+    "Mobile Robotics"
   ],
   "ontology": {
     "term_id": "RB-9008",
     "preferred_term": "Social Navigation",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/robotics#SocialNavigation",
-    "source_domain": null,
+    "source_domain": "rb",
     "domain": "rb",
     "domain_full_name": "Robotics",
     "definition": "Robot navigation strategies that account for social norms, human comfort, and contextual appropriateness when moving through human-populated environments.",
@@ -52,7 +52,6 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
         "Missing required property: is-subclass-of (at least one parent class)"
       ]

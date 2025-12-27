@@ -1,25 +1,30 @@
 {
   "id": "Schema Registry",
   "title": "Schema Registry",
-  "content": "- ### OntologyBlock\n  id:: schema-registry-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10028\n\t- preferred-term:: Schema Registry\n\t- status:: stub\n\t- owl:class:: mv:SchemaRegistry\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: schema-registry-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: schema-registry-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10028\n\t- source-domain:: mv\n\t- preferred-term:: Schema Registry\n\t- status:: active\n\t- definition:: A centralized service that stores, validates, and manages data schemas for event streaming and API contracts, ensuring compatibility and evolution of data formats across distributed metaverse systems and microservices.\n\t- owl:class:: mv:SchemaRegistry\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: schema-registry-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Data Management]]\n\t\t- related-to:: [[Event Streaming]]\n\t\t- related-to:: [[API Contracts]]\n\t\t- related-to:: [[Data Governance]]\n\t\t- enables:: [[Schema Evolution]]\n\t- #### Key Features\n\t  collapsed:: true\n\t\t- Schema versioning and compatibility checks\n\t\t- Avro, JSON Schema, Protobuf support\n\t\t- Backward/forward compatibility rules\n\t\t- Producer-consumer contract enforcement\n\t\t- Schema evolution without breaking changes\n\t- #### Implementations\n\t  collapsed:: true\n\t\t- Confluent Schema Registry for Kafka\n\t\t- AWS Glue Schema Registry\n\t\t- Apicurio Registry open source\n\t\t- Azure Schema Registry\n\t\t- Google Cloud Pub/Sub schemas",
   "backlinks": [
     "Digital Twin Interop Protocol",
     "Conversion Pipeline"
   ],
   "wiki_links": [
-    "metaverse"
+    "metaverse",
+    "Event Streaming",
+    "Data Management",
+    "Schema Evolution",
+    "Data Governance",
+    "API Contracts"
   ],
   "ontology": {
     "term_id": "MV-10028",
     "preferred_term": "Schema Registry",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#SchemaRegistry",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A centralized service that stores, validates, and manages data schemas for event streaming and API contracts, ensuring compatibility and evolution of data formats across distributed metaverse systems and microservices.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -31,12 +36,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Data Management"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Schema Evolution"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -46,15 +55,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Event Streaming",
+        "API Contracts",
+        "Data Governance"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

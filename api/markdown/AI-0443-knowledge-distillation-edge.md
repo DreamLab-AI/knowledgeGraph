@@ -8,6 +8,7 @@ AI-0443-knowledge-distillation-edge
   - preferred-term:: Ai 0443 Knowledge Distillation Edge
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Ai0443KnowledgeDistillationEdge
 
 ### Relationships
 - is-subclass-of:: [[ai:ModelArchitecture]]

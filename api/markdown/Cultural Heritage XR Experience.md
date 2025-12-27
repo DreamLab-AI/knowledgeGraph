@@ -7,10 +7,12 @@ id:: cultural-heritage-xr-experience-ontology
   - term-id:: DT-1077
   - preferred-term:: Cultural Heritage XR Experience
   - source-domain:: mv
+  - owl:class:: mv:CulturalHeritageXrExperience
   - status:: draft
   - definition:: An immersive extended reality application designed to preserve, present, and educate users about cultural heritage through interactive 3D reconstructions, AR overlays, and virtual museum experiences.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Cultural Heritage Preservation System]]
 - has-part:: [[Interactive Exhibit]]
 - has-part:: [[3D Reconstruction]]

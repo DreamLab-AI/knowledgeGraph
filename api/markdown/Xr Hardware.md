@@ -7,6 +7,8 @@ id:: xr-hardware-ontology
   - term-id:: MV-10170
   - preferred-term:: Xr Hardware
   - source-domain:: mv
+  - owl:class:: mv:XrHardware
   - status:: stub
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]

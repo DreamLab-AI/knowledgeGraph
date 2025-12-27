@@ -7,4 +7,8 @@ Priority Fee
   - term-id:: BC-9884
   - preferred-term:: Priority Fee
   - source-domain:: bc
+  - owl:class:: bc:PriorityFee
   - status:: draft
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

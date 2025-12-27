@@ -8,6 +8,7 @@ id:: privacy-enhancing-computation-pec-ontology
   - preferred-term:: Privacy-Enhancing Computation (PEC)
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:PrivacyEnhancingComputationPec
   - definition:: Computational techniques that enable data processing and analysis while preserving privacy through cryptographic methods such as homomorphic encryption, secure multi-party computation, and differential privacy.
 
 ### Relationships

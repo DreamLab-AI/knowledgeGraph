@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0038
+	- source-domain:: bc
 	- preferred-term:: Address
 	- status:: complete
 	- public-access:: true
@@ -14,3 +15,6 @@
 	- owl:role:: Object
 	- owl:inferred-class:: bc:VirtualObject
 	- belongsToDomain:: [[CryptographicDomain]]
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

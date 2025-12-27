@@ -1,14 +1,16 @@
 {
   "id": "Inclusive Xr Experience",
   "title": "Inclusive Xr Experience",
-  "content": "- ### OntologyBlock\n  id:: Inclusive Xr Experience\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9000\n  - preferred-term:: Inclusive Xr Experience\n  - source-domain:: mv\n  - status:: stub\n\n### Relationships",
+  "content": "- ### OntologyBlock\n  id:: Inclusive Xr Experience\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9000\n  - preferred-term:: Inclusive Xr Experience\n  - source-domain:: mv\n  - owl:class:: mv:InclusiveXrExperience\n  - status:: stub\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]",
   "backlinks": [],
-  "wiki_links": [],
+  "wiki_links": [
+    "Metaverse"
+  ],
   "ontology": {
     "term_id": "MV-9000",
     "preferred_term": "Inclusive Xr Experience",
     "alt_terms": [],
-    "iri": null,
+    "iri": "http://narrativegoldmine.com/metaverse#InclusiveXrExperience",
     "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
@@ -22,7 +24,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": null,
+    "owl_class": "mv:InclusiveXrExperience",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -44,7 +46,6 @@
       "errors": [
         "Missing required property: last-updated",
         "Missing required property: definition",
-        "Missing required property: owl:class",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

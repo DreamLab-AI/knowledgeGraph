@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0038
+	- source-domain:: rb
 	- preferred-term:: rb 0038 compliance
 	- status:: draft
 	- public-access:: true

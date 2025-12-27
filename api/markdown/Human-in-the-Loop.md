@@ -8,6 +8,7 @@ id:: human-in-the-loop-ontology
   - preferred-term:: Human in the Loop
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:HumanInTheLoop
   - definition:: A design pattern and operational approach for artificial intelligence systems in which human judgment, decision-making, or validation is integrated as an essential component of the AI system's decision cycle, requiring active human participation at critical points before AI-generated outputs are finalised or actions are executed, thereby ensuring meaningful human control, accountability, and the application of human values and contextual understanding to consequential AI-assisted decisions.
 
 ### Relationships

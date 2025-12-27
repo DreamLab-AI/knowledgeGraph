@@ -1,5 +1,7 @@
 - ### OntologyBlock
     - term-id:: DT-0961
+    - source-domain:: tc
+    - owl:class:: tc:ProportionalControl
     - preferred-term:: Proportional Control
     - ontology:: true
     - public-access:: true

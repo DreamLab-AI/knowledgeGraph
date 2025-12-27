@@ -8,6 +8,7 @@ Concept Visualization:
   - preferred-term:: Concept Visualization:
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:ConceptVisualization
 
 ### Relationships
 - is-subclass-of:: [[DiffusionModels]]

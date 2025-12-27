@@ -7,6 +7,7 @@ id:: light-node-ontology
   - term-id:: DT-0074
   - preferred-term:: Light Node
   - source-domain:: bc
+  - owl:class:: bc:LightNode
   - status:: complete
   - definition:: Partial blockchain data node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

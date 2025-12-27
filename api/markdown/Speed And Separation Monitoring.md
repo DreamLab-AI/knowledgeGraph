@@ -8,7 +8,8 @@
 	- owl:class:: rb:SpeedAndSeparationMonitoring
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- is-subclass-of:: [[Robotics]]
+	- definition:: Speed and Separation Monitoring (SSM) is a safety function that monitors the space around a robot, reducing speed or stopping it if a human or obstacle approaches within a calculated protective distance.
 	- maturity:: draft
 
 ## Academic Context

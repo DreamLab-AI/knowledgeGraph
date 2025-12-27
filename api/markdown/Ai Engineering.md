@@ -10,8 +10,9 @@
 	- public-access:: true
 	- definition:: Indicates environments where something operates.
 	- source:: Chimera Prime Research
-	- maturity:: dt:Established
+	- maturity:: established
 	- belongsToDomain:: [[Artificial Intelligence]]
 
 ### Relationships
 
+- is-subclass-of:: [[Artificial Intelligence]]

@@ -8,7 +8,8 @@
 	- owl:class:: rb:NonlinearControl
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- is-subclass-of:: [[Robotics]]
+	- definition:: Nonlinear control is a branch of control theory focused on systems whose behaviour cannot be described by linear equations, often exhibiting complex dynamics such as multiple equilibria, limit cycles, and bifurcations.
 	- maturity:: draft
 
 ## Academic Context

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0036
+	- source-domain:: rb
 	- preferred-term:: rb 0036 resolution
 	- status:: draft
 	- public-access:: true

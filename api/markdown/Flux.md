@@ -17,7 +17,11 @@ Title: Flux dev lora training use SimpleTuner, it works with 4090. Detail:
   - preferred-term:: Title: Flux dev lora training use SimpleTuner, it works with 4090
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:TitleFluxDevLoraTrainingUseSimpletunerItWorksWith4090
 
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]
 ### Reddit: Flux dev lora training use SimpleTuner
 - [This web link has been automatically summarised](https://www.reddit.com/r/StableDiffusion/comments/1epl454/flux_dev_lora_training_use_simpletuner_it_works/)
 	  Title: Flux dev lora training use SimpleTuner, it works with 4090. Detail:

@@ -7,10 +7,12 @@ id:: edge-mesh-network-ontology
   - term-id:: DT-0142
   - preferred-term:: Edge Mesh Network
   - source-domain:: mv
+  - owl:class:: mv:EdgeMeshNetwork
   - status:: draft
   - definition:: Decentralized interconnection of edge computing nodes providing dynamic load balancing, redundancy, and peer-to-peer communication for distributed workloads.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - has-part:: [[Load Balancer]]
 - has-part:: [[Edge Computing Node]]
 - has-part:: [[Routing Protocol]]

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0117
+	- source-domain:: mv
 	- preferred-term:: Middleware
 	- public-access:: true
 	- definition:: Software layer that mediates between applications and underlying services or infrastructure to enable communication, resource access, and interoperability.

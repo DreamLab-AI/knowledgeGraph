@@ -5,6 +5,7 @@
   - preferred-term:: Stacking
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:Stacking
 
 ### Relationships
 - is-subclass-of:: [[Ensemble Methods]]

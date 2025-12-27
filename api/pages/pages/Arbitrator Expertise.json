@@ -1,24 +1,31 @@
 {
   "id": "Arbitrator Expertise",
   "title": "Arbitrator Expertise",
-  "content": "- ### OntologyBlock\n  id:: arbitrator-expertise-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9775\n\t- preferred-term:: Arbitrator Expertise\n\t- status:: stub\n\t- owl:class:: mv:ArbitratorExpertise\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: arbitrator-expertise-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: arbitrator-expertise-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9775\n\t- source-domain:: mv\n\t- preferred-term:: Arbitrator Expertise\n\t- status:: active\n\t- definition:: Arbitrator Expertise in blockchain and digital asset contexts refers to the specialized technical knowledge, legal background, and industry experience required by neutral decision-makers to understand distributed ledger technology, smart contracts, tokenomics, and crypto-asset classification for informed dispute resolution.\n\t- owl:class:: mv:ArbitratorExpertise\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Professional Qualification]]\n\t- enables:: [[Informed Decision Making]], [[Technical Evidence Evaluation]], [[Fair Outcomes]]\n\t- requires:: [[Blockchain Knowledge]], [[Legal Training]], [[Industry Experience]]\n\t- #### Relationships\n\t  id:: arbitrator-expertise-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey expertise areas include:\n- **Technical Knowledge**: Understanding blockchain systems, smart contract execution, and DLT architecture\n- **Legal Classification**: Understanding crypto-asset types (utility tokens, e-money tokens, asset-referenced tokens per MiCA)\n- **Industry Experience**: Knowledge of drafting styles, market practices, and common dispute patterns\n- **Expert Witness Coordination**: Working with blockchain and crypto specialists assisting tribunals\n\n### Selection Criteria\nSelection criteria include expertise or technical knowhow, professional experience, language skills, legal background, and nationality per arbitration clause. Scarcity of arbitrators with specialized knowledge is an identified challenge.\n\n### Dispute Types Requiring Expertise\nCrypto sale disputes, platform breaches, civil fraud, investment disputes, service supply issues, NFT transactions, outstanding debts, IP matters, and technical transaction disputes.\n\n### 2024 Developments\nLCAM Blockchain Expedited Arbitration Rules (December 2024) emphasize arbitrator expertise for digital asset disputes with on-chain and off-chain enforcement mechanisms.",
   "backlinks": [
     "E-Contract Arbitration"
   ],
   "wiki_links": [
-    "metaverse"
+    "Blockchain Knowledge",
+    "Industry Experience",
+    "Fair Outcomes",
+    "metaverse",
+    "Professional Qualification",
+    "Legal Training",
+    "Informed Decision Making",
+    "Technical Evidence Evaluation"
   ],
   "ontology": {
     "term_id": "MV-9775",
     "preferred_term": "Arbitrator Expertise",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#ArbitratorExpertise",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "Arbitrator Expertise in blockchain and digital asset contexts refers to the specialized technical knowledge, legal background, and industry experience required by neutral decision-makers to understand distributed ledger technology, smart contracts, tokenomics, and crypto-asset classification for informed dispute resolution.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -48,9 +55,7 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
         "Missing required property: is-subclass-of (at least one parent class)"

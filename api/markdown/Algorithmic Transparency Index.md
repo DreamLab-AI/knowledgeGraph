@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: A structured metrics framework for measuring and evaluating the explainability, documentation, and disclosure levels of AI algorithms and automated decision-making systems across multiple transparency dimensions.
 	- source:: [[EU AI Act]], [[IEEE 7001-2021]], [[NIST AI Risk Management Framework]]
-	- maturity:: dt:Draft
+	- maturity:: draft
 	- owl:class:: mv:AlgorithmicTransparencyIndex
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Object

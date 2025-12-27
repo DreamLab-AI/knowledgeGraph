@@ -1,11 +1,11 @@
-id:: softrobotics-ontology
-
 - ### OntologyBlock
-  id:: SoftRobotics
+  id:: softrobotics-ontology
   - ontology:: true
   - public-access:: true
-  - term-id:: MV-0056
-  - preferred-term:: SoftRobotics
+  - term-id:: RB-0056
+  - preferred-term:: Soft Robotics
   - source-domain:: rb
+  - owl:class:: rb:SoftRobotics
+  - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: A component of the metaverse ecosystem.
+  - definition:: Soft robotics is a subfield of robotics focused on constructing robots from highly compliant materials, similar to those found in living organisms, enabling safe interaction with humans and adaptation to unstructured environments.

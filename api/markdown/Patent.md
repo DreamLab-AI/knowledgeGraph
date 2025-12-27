@@ -8,3 +8,8 @@
   - preferred-term:: Progressive Deep Image Compression for Hybrid Contexts of...
   - source-domain:: ai
   - status:: draft
+  - owl:class:: ai:ProgressiveDeepImageCompressionForHybridContextsOf
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

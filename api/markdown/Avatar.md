@@ -7,6 +7,7 @@ id:: avatar-ontology
   - term-id:: DT-1022
   - preferred-term:: Avatar
   - source-domain:: mv
+  - owl:class:: mv:Avatar
   - status:: draft
   - definition:: Digital representation of a person or agent used to interact within a virtual environment.
 

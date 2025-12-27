@@ -1,24 +1,34 @@
 {
   "id": "Benchmark Standard",
   "title": "Benchmark Standard",
-  "content": "- ### OntologyBlock\n  id:: benchmark-standard-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9796\n\t- preferred-term:: Benchmark Standard\n\t- status:: stub\n\t- owl:class:: mv:BenchmarkStandard\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: benchmark-standard-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: benchmark-standard-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9796\n\t- source-domain:: mv\n\t- preferred-term:: Benchmark Standard\n\t- definition:: A vendor-agnostic reference specification for evaluating and comparing system performance, establishing standardized metrics and methodologies that enable fair, repeatable, and meaningful comparisons across computing systems, processes, or technologies.\n\t- status:: active\n\t- owl:class:: mv:BenchmarkStandard\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: benchmark-standard-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Technical Standard]]\n\t\t- enables:: [[Performance Comparison]], [[System Evaluation]], [[Quality Assurance]]\n\t\t- requires:: [[Measurement Methodology]], [[Reference Implementation]], [[Validation Process]]\n\t\t- related-to:: [[Performance Metrics]], [[Testing Framework]], [[Industry Standards]]\n- ## Technical Details\n\t- **Key Properties of Good Benchmarks**:\n\t\t- Relevance: Measures vital features\n\t\t- Representativeness: Broadly accepted by industry and academia\n\t\t- Equity: Fair comparison across all systems\n\t\t- Repeatability: Results can be verified\n\t\t- Cost-effectiveness: Economical to execute\n\t\t- Scalability: Works across resource ranges\n\t\t- Transparency: Easy to understand metrics\n\t- **Leading Standards Bodies**:\n\t\t- SPEC (Standard Performance Evaluation Corporation) - computing benchmarks\n\t\t- APQC Open Standards Benchmarking - process performance metrics\n\t- **Key Performance Indicators**:\n\t\t- Response time and latency\n\t\t- Throughput (requests per unit time)\n\t\t- Resource consumption (CPU, memory, bandwidth)\n\t\t- Energy efficiency\n- ## Applications\n\t- Graphics performance evaluation (SPECviewperf)\n\t- Server efficiency measurement (SERT Suite)\n\t- CAD/CAM software benchmarking\n\t- AI/ML and HPC system comparison\n\t- Business process performance analysis",
   "backlinks": [
     "Environmental Impact Metric"
   ],
   "wiki_links": [
-    "metaverse"
+    "Technical Standard",
+    "Performance Comparison",
+    "Measurement Methodology",
+    "metaverse",
+    "Performance Metrics",
+    "System Evaluation",
+    "Validation Process",
+    "Testing Framework",
+    "Reference Implementation",
+    "Industry Standards",
+    "Quality Assurance"
   ],
   "ontology": {
     "term_id": "MV-9796",
     "preferred_term": "Benchmark Standard",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#BenchmarkStandard",
-    "source_domain": null,
+    "source_domain": "mv",
     "domain": "mv",
     "domain_full_name": "Metaverse",
-    "definition": null,
+    "definition": "A vendor-agnostic reference specification for evaluating and comparing system performance, establishing standardized metrics and methodologies that enable fair, repeatable, and meaningful comparisons across computing systems, processes, or technologies.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +40,22 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Technical Standard"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Measurement Methodology",
+      "Reference Implementation",
+      "Validation Process"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Performance Comparison",
+      "System Evaluation",
+      "Quality Assurance"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +65,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Performance Metrics",
+        "Testing Framework",
+        "Industry Standards"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: source-domain",
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: owl:role"
       ]
     }
   }

@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-9003
+	- source-domain:: ai
 	- preferred-term:: Logic Programming
 	- status:: draft
 	- public-access:: true
@@ -14,3 +15,7 @@
 	- owl:role:: Process
 	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- isSubclassOf:: [[Symbolic AI]]
+
+
+### Relationships
+- is-subclass-of:: [[Artificial Intelligence]]

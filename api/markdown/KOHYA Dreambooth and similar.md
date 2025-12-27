@@ -12,6 +12,7 @@ KOHYA Dreambooth and similar
   - term-id:: BC-9869
   - preferred-term:: Kohya Dreambooth And Similar
   - source-domain:: bc
+  - owl:class:: bc:KohyaDreamboothAndSimilar
   - status:: draft
 
 <!-- INSTRUCTIONAL CONTENT (moved from inline) -->
@@ -65,3 +66,6 @@ KOHYA Dreambooth and similar
 - **Review Status**: Automated remediation with 2025 context
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+### Relationships
+- is-subclass-of:: [[Blockchain]]

@@ -7,10 +7,12 @@ id:: digital-twin-interop-protocol-ontology
   - term-id:: DT-0247
   - preferred-term:: Digital Twin Interop Protocol
   - source-domain:: mv
+  - owl:class:: mv:DigitalTwinInteropProtocol
   - status:: draft
   - definition:: Standardized API and communication framework enabling exchange of state, simulation data, and behavior models between heterogeneous digital twin systems across platforms.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Digital Twin Framework]]
 - is-part-of:: [[Interoperability Architecture]]
 - has-part:: [[State Synchronization]]

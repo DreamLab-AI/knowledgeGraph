@@ -7,6 +7,7 @@ id:: difficulty-adjustment-ontology
   - term-id:: DT-0056
   - preferred-term:: Difficulty Adjustment
   - source-domain:: bc
+  - owl:class:: bc:DifficultyAdjustment
   - status:: complete
   - definition:: Mining difficulty recalibration within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

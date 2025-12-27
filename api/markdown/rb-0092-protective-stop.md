@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0092
+	- source-domain:: rb
 	- preferred-term:: rb 0092 protective stop
 	- status:: draft
 	- public-access:: true

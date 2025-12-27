@@ -1,24 +1,29 @@
 {
   "id": "Reward Distribution",
   "title": "Reward Distribution",
-  "content": "- ### OntologyBlock\n  id:: reward-distribution-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10023\n\t- source-domain:: metaverse\n\t- preferred-term:: Reward Distribution\n\t- status:: stub\n\t- owl:class:: mv:RewardDistribution\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: reward-distribution-relationships\n\t  collapsed:: true",
+  "content": "- ### OntologyBlock\n  id:: reward-distribution-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10023\n\t- source-domain:: mv\n\t- preferred-term:: Reward Distribution\n\t- status:: active\n\t- definition:: Tokenomic mechanisms that calculate and allocate staking rewards, validator incentives, and participation benefits within blockchain networks through mathematically designed emission schedules and fee distribution protocols.\n\t- owl:class:: mv:RewardDistribution\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: reward-distribution-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Tokenomics]]\n\t\t- related-to:: [[Staking Rewards]]\n\t\t- related-to:: [[Validator Incentives]]\n\t\t- related-to:: [[Consensus Mechanisms]]\n\t\t- enables:: [[Network Participation]]\n\t- #### Distribution Sources\n\t  collapsed:: true\n\t\t- Attestation rewards (84.375% of consensus)\n\t\t- Transaction fee distribution\n\t\t- Token emission from inflation\n\t\t- Liquidity mining incentives\n\t\t- Governance participation rewards\n\t- #### Implementation Examples\n\t  collapsed:: true\n\t\t- Solana 8% initial inflation decreasing 15% yearly\n\t\t- WalletConnect 17.5% allocation for staking rewards\n\t\t- 1-week to 2-year token locking periods\n\t\t- Slashing penalties for validator failures\n\t\t- Community airdrop allocations",
   "backlinks": [
     "Play-to-Earn (P2E)"
   ],
   "wiki_links": [
-    "metaverse"
+    "Staking Rewards",
+    "Consensus Mechanisms",
+    "metaverse",
+    "Network Participation",
+    "Tokenomics",
+    "Validator Incentives"
   ],
   "ontology": {
     "term_id": "MV-10023",
     "preferred_term": "Reward Distribution",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#RewardDistribution",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
-    "definition": null,
+    "source_domain": "mv",
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "Tokenomic mechanisms that calculate and allocate staking rewards, validator incentives, and participation benefits within blockchain networks through mathematically designed emission schedules and fee distribution protocols.",
     "scope_note": null,
-    "status": "stub",
+    "status": "active",
     "maturity": null,
     "version": null,
     "public_access": true,
@@ -30,12 +35,16 @@
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Tokenomics"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Network Participation"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
@@ -45,15 +54,19 @@
     ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "Staking Rewards",
+        "Validator Incentives",
+        "Consensus Mechanisms"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: definition",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "Missing required property: owl:role"
       ]
     }
   }

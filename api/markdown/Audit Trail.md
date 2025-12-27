@@ -19,6 +19,7 @@
 	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[ComputationAndIntelligenceDomain]]
 	- implementedInLayer:: [[Data Layer]], [[Middleware Layer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: audit-trail-relationships
 	  collapsed:: true
 		- is-part-of:: [[Security Infrastructure]]

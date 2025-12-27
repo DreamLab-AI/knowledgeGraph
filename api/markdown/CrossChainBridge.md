@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0008
+	- source-domain:: mv
 	- preferred-term:: CrossChainBridge
 	- status:: draft
 	- public-access:: true
@@ -27,3 +28,6 @@
 ;; Data Properties
 (AnnotationAssertion dcterms:identifier :Crosschainbridge "mv-1761742247909"^^xsd:string)
 ```
+
+### Relationships
+- is-subclass-of:: [[Metaverse]]

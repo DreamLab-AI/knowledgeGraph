@@ -7,6 +7,7 @@ id:: bc-0117-circulating-supply-ontology
   - term-id:: MV-0896
   - preferred-term:: BC 0117 circulating supply
   - source-domain:: bc
+  - owl:class:: bc:Bc0117CirculatingSupply
   - status:: draft
   - definition:: ### Primary Definition
 

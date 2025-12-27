@@ -7,10 +7,12 @@ id:: virtual-performance-space-ontology
   - term-id:: DT-0304
   - preferred-term:: Virtual Performance Space
   - source-domain:: mv
+  - owl:class:: mv:VirtualPerformanceSpace
   - status:: draft
   - definition:: Immersive virtual venue environment designed for hosting live performances, concerts, theater productions, events, and social gatherings with real-time audience interaction and multimedia presentation capabilities.
 
 ### Relationships
+- is-subclass-of:: [[Metaverse]]
 - is-part-of:: [[Virtual Event Platform]]
 - is-part-of:: [[Metaverse Venue]]
 - has-part:: [[Visual Effects]]

@@ -12,6 +12,7 @@ id:: double-spending-ontology
   - term-id:: DT-0920
   - preferred-term:: Double Spending
   - source-domain:: bc
+  - owl:class:: bc:DoubleSpending
   - status:: complete
   - definition:: Fraudulent duplicate payment within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

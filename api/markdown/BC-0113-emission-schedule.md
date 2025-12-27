@@ -7,6 +7,7 @@ id:: bc-0113-emission-schedule-ontology
   - term-id:: MV-0837
   - preferred-term:: BC 0113 emission schedule
   - source-domain:: bc
+  - owl:class:: bc:Bc0113EmissionSchedule
   - status:: draft
   - definition:: ### Primary Definition
 

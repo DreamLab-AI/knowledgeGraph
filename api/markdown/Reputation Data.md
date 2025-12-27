@@ -3,6 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0287
+	- source-domain:: mv
 	- preferred-term:: Reputation Data
 	- status:: draft
 	- public-access:: true
@@ -17,6 +18,7 @@
 	- belongsToDomain:: [[VirtualSocietyDomain]], [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]]
 	- #### Relationships
+- is-subclass-of:: [[Metaverse]]
 	  id:: reputation-data-relationships
 	  collapsed:: true
 		- is-part-of:: [[Reputation System]]
