@@ -8,12 +8,12 @@
     "Distributed Architecture"
   ],
   "wiki_links": [
-    "TOGAF",
-    "Design Patterns",
-    "Enterprise Architecture",
     "Software Architecture",
-    "metaverse",
-    "Scalable Systems"
+    "Scalable Systems",
+    "TOGAF",
+    "Enterprise Architecture",
+    "Design Patterns",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10019",

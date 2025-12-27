@@ -7,11 +7,11 @@
     "Edge Orchestration"
   ],
   "wiki_links": [
-    "Cloud Computing",
-    "metaverse",
     "Distributed System Architecture",
     "Low-Latency Experiences",
-    "5G Networks"
+    "5G Networks",
+    "metaverse",
+    "Cloud Computing"
   ],
   "ontology": {
     "term_id": "MV-9890",

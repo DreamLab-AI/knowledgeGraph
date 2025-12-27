@@ -13,11 +13,11 @@
     "Tax Treatment Crypto"
   ],
   "wiki_links": [
-    "Digital Asset",
-    "metaverse",
-    "VASP",
     "NFT",
-    "Cryptocurrency"
+    "VASP",
+    "Cryptocurrency",
+    "Digital Asset",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10104",

@@ -7,15 +7,15 @@
   ],
   "wiki_links": [
     "Data Format",
-    "metaverse",
-    "Network Transmission",
-    "Efficient Storage",
-    "Protocol Buffers",
-    "MessagePack",
     "Encoding Rules",
+    "MessagePack",
     "Parser Implementation",
     "Schema Definition",
-    "Data Serialization"
+    "Network Transmission",
+    "Data Serialization",
+    "Protocol Buffers",
+    "metaverse",
+    "Efficient Storage"
   ],
   "ontology": {
     "term_id": "MV-9800",

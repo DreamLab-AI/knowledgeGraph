@@ -7,11 +7,11 @@
     "Tourism Metaverse"
   ],
   "wiki_links": [
-    "Digital Twin",
-    "Fast Spatial Queries",
     "Geospatially-Accurate Metaverse",
-    "metaverse",
-    "Spatial Computing"
+    "Fast Spatial Queries",
+    "Spatial Computing",
+    "Digital Twin",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9906",

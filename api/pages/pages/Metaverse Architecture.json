@@ -10,11 +10,11 @@
     "Governance Model"
   ],
   "wiki_links": [
-    "System Architecture",
     "Virtual World Operation",
-    "metaverse",
+    "Infrastructure Layer",
+    "System Architecture",
     "Technology Stack",
-    "Infrastructure Layer"
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9003",

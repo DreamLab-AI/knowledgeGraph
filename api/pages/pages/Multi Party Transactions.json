@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: Multi Party Transactions\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9976\n  - preferred-term:: Multi Party Transactions\n  - source-domain:: bc\n  - owl:class:: bc:MultiPartyTransactions\n  - status:: active\n  - definition:: Blockchain transactions involving more than two participants that use atomic swap protocols, adaptor signatures, and hash timelock contracts (HTLCs) to ensure all parties complete their exchanges simultaneously or the entire transaction is reversed, preventing partial completion losses.\n  - is-subclass-of:: [[Blockchain Transactions]]\n\n### Relationships\n\t- related-to:: [[Atomic Swaps]]\n\t- related-to:: [[Hash Timelock Contracts]]\n\t- related-to:: [[Smart Contracts]]\n\t- enables:: [[Cross Chain Trading]]\n\n### Technical Details\n\t- Uses universal adaptor signature secrets to prevent malicious dropouts\n\t- ParaSwap framework reduces exchange time complexity from O(n) to O(1)\n\t- Can operate almost entirely off-chain with single on-chain finalization\n\t- Implemented across Bitcoin, Ethereum, Avalanche, and Binance Smart Chain\n\t- Reduces gas costs by 26.2x to 46.8x compared to serial swap methods\n\n### Security Features\n\t- Cryptographic hash functions ensure transaction integrity\n\t- Time-lock constraints return funds if deadlines are missed\n\t- Atomic execution prevents partial transaction completion\n\t- No trusted third parties or centralized exchanges required",
   "backlinks": [],
   "wiki_links": [
-    "Blockchain Transactions",
     "Smart Contracts",
-    "Hash Timelock Contracts",
+    "Cross Chain Trading",
+    "Blockchain Transactions",
     "Atomic Swaps",
-    "Cross Chain Trading"
+    "Hash Timelock Contracts"
   ],
   "ontology": {
     "term_id": "MV-9976",

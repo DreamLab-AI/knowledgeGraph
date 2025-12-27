@@ -6,11 +6,11 @@
     "Health Metaverse Application"
   ],
   "wiki_links": [
-    "Remote Patient Monitoring",
     "metaverse",
-    "Virtual Environment",
     "Digital Health",
-    "Telehealth"
+    "Telehealth",
+    "Remote Patient Monitoring",
+    "Virtual Environment"
   ],
   "ontology": {
     "term_id": "MV-10108",

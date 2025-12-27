@@ -6,13 +6,13 @@
     "Avatar Interoperability"
   ],
   "wiki_links": [
-    "Platform-Independent Identities",
     "Technical Standard",
+    "Platform-Independent Identities",
     "Standardized Rigging",
     "Avatar Interoperability",
-    "Skeleton Configuration",
     "Format Compliance",
-    "Metadata Specification"
+    "Metadata Specification",
+    "Skeleton Configuration"
   ],
   "ontology": {
     "term_id": "MV-9791",
