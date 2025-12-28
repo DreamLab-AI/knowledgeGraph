@@ -26,16 +26,16 @@
   ],
   "wiki_links": [
     "metaverse",
+    "Identity Verification",
     "Credential Storage",
-    "Authentication",
     "Decentralized Identifiers",
+    "Authentication",
     "Avatar",
     "Identity",
-    "Privacy Controls",
-    "Self-Sovereign Identity",
-    "Authorization",
     "Digital Presence",
-    "Identity Verification"
+    "Authorization",
+    "Self-Sovereign Identity",
+    "Privacy Controls"
   ],
   "ontology": {
     "term_id": "MV-9860",

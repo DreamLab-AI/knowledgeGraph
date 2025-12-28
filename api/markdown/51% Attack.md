@@ -5,7 +5,7 @@ id:: 51%-attack-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: BC-9887
-  - preferred-term:: id:: 51%attackontology
+  - preferred-term:: 51% Attack
   - source-domain:: bc
   - owl:class:: bc:Id51attackontology
   - status:: draft

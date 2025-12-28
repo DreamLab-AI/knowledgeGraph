@@ -8,9 +8,9 @@
   "wiki_links": [
     "metaverse",
     "Zero Trust",
-    "Decentralized Identity",
     "Security Architecture",
-    "Verifiable Credentials"
+    "Verifiable Credentials",
+    "Decentralized Identity"
   ],
   "ontology": {
     "term_id": "MV-10091",

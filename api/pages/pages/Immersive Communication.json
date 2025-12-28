@@ -8,12 +8,12 @@
     "Telepresence"
   ],
   "wiki_links": [
-    "Telecollaboration",
-    "AR Collaboration",
+    "Telepresence",
     "Spatial Audio",
+    "AR Collaboration",
     "Spatial Computing",
-    "VR Meeting",
-    "Telepresence"
+    "Telecollaboration",
+    "VR Meeting"
   ],
   "ontology": {
     "term_id": "TC-0605",

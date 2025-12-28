@@ -5,7 +5,7 @@ id:: human-capture-&-recognition-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: AI-7974
-  - preferred-term:: id:: humancapture&recognitionontology
+  - preferred-term:: Human Capture & Recognition
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:IdHumancapturerecognitionontology

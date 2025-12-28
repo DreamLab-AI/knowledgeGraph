@@ -5,7 +5,7 @@ public:: true
   - ontology:: true
   - public-access:: true
   - term-id:: MV-9726
-  - preferred-term:: public:: true
+  - preferred-term:: Open Generative AI tools
   - source-domain:: mv
   - owl:class:: mv:PublicTrue
   - status:: draft

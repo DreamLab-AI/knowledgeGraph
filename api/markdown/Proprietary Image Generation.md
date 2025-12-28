@@ -5,7 +5,7 @@
   - ontology:: true
   - public-access:: true
   - term-id:: MV-9737
-  - preferred-term:: {{twitter https://twitter.com/LibertyRPF/status/1737848545657618873}}
+  - preferred-term:: Proprietary Image Generation
   - source-domain:: mv
   - owl:class:: mv:TwitterHttpstwittercomlibertyrpfstatus1737848545657618873
   - status:: draft

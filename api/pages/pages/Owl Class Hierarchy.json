@@ -5,11 +5,11 @@
   "backlinks": [],
   "wiki_links": [
     "metaverse",
-    "Knowledge Representation",
-    "Ontology Structure",
-    "Automated Reasoning",
     "OWL",
-    "Semantic Web"
+    "Ontology Structure",
+    "Knowledge Representation",
+    "Semantic Web",
+    "Automated Reasoning"
   ],
   "ontology": {
     "term_id": "MV-9989",

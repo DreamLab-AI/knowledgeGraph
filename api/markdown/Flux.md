@@ -14,7 +14,7 @@ Title: Flux dev lora training use SimpleTuner, it works with 4090. Detail:
   - ontology:: true
   - public-access:: true
   - term-id:: AI-8004
-  - preferred-term:: Title: Flux dev lora training use SimpleTuner, it works with 4090
+  - preferred-term:: Flux
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:TitleFluxDevLoraTrainingUseSimpletunerItWorksWith4090

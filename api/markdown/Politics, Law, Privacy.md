@@ -7,7 +7,7 @@ For more detailed information on her research and publications, you can visit he
   - ontology:: true
   - public-access:: true
   - term-id:: BC-9979
-  - preferred-term:: For more detailed information on her research and...
+  - preferred-term:: Politics, Law, Privacy
   - source-domain:: bc
   - owl:class:: bc:ForMoreDetailedInformationOnHerResearchAnd
   - status:: draft

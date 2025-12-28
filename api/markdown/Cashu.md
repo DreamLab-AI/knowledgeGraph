@@ -5,7 +5,7 @@
   - ontology:: true
   - public-access:: true
   - term-id:: BC-9876
-  - preferred-term:: {{twitter https://twitter.com/callebtc/status/1777598819355496587}}
+  - preferred-term:: Cashu
   - source-domain:: bc
   - owl:class:: bc:TwitterHttpstwittercomcallebtcstatus1777598819355496587
   - status:: draft

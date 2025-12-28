@@ -5,7 +5,7 @@ public:: true
   - ontology:: true
   - public-access:: true
   - term-id:: BC-9898
-  - preferred-term:: public:: true
+  - preferred-term:: Decentralised file storage
   - source-domain:: bc
   - owl:class:: bc:PublicTrue
   - status:: draft

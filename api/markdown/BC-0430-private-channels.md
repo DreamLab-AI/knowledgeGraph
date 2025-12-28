@@ -5,7 +5,7 @@ id:: relationships
   - ontology:: true
   - public-access:: true
   - term-id:: BC-9941
-  - preferred-term:: id:: relationships
+  - preferred-term:: BC-0430-private-channels
   - source-domain:: bc
   - owl:class:: bc:IdRelationships
   - status:: draft

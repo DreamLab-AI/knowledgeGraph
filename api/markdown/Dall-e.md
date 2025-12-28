@@ -7,7 +7,7 @@ DALL-E is OpenAI's groundbreaking text-to-image generative AI system that uses d
   - ontology:: true
   - public-access:: true
   - term-id:: AI-7945
-  - preferred-term:: DALLE is OpenAI's groundbreaking texttoimage generative AI system...
+  - preferred-term:: Dall-e
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:DalleIsOpenaisGroundbreakingTexttoimageGenerativeAiSystem

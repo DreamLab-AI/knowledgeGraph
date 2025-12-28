@@ -1,0 +1,62 @@
+{
+  "id": "Enterprise Blockchain",
+  "title": "Enterprise Blockchain",
+  "content": "- ### OntologyBlock\n  id:: enterprise-blockchain-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-7007\n\t- preferred-term:: Enterprise Blockchain\n\t- source-domain:: bc\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: Stub page for Enterprise Blockchain. Referenced by 9 pages. Auto-generated during corpus cleanup.\n\t- maturity:: draft\n\t- owl:class:: bc:EnterpriseBlockchain\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Auto-generated stub\n- **References**: 9 pages reference this concept",
+  "backlinks": [
+    "BC-0437-r3-corda",
+    "Consortium Blockchain",
+    "Quorum Blockchain",
+    "BC-0436-hyperledger-iroha",
+    "BC-0433-enterprise-token-standards",
+    "BC-0435-hyperledger-indy",
+    "Blockchain As A Service",
+    "BC-0438-quorum-blockchain",
+    "BC-0434-blockchain-as-a-service",
+    "BC-0426-hyperledger-fabric",
+    "BC-0427-hyperledger-besu"
+  ],
+  "wiki_links": [],
+  "ontology": {
+    "term_id": "BC-7007",
+    "preferred_term": "Enterprise Blockchain",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#EnterpriseBlockchain",
+    "source_domain": "bc",
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
+    "definition": "Stub page for Enterprise Blockchain. Referenced by 9 pages. Auto-generated during corpus cleanup.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:EnterpriseBlockchain",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

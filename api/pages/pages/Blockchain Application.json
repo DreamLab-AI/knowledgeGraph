@@ -1,0 +1,57 @@
+{
+  "id": "Blockchain Application",
+  "title": "Blockchain Application",
+  "content": "- ### OntologyBlock\n  id:: blockchain-application-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-7010\n\t- preferred-term:: Blockchain Application\n\t- source-domain:: bc\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: Stub page for Blockchain Application. Referenced by 6 pages. Auto-generated during corpus cleanup.\n\t- maturity:: draft\n\t- owl:class:: bc:BlockchainApplication\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Auto-generated stub\n- **References**: 6 pages reference this concept",
+  "backlinks": [
+    "BC-0491-healthcare-records",
+    "BC-0493-real-estate-tokenization",
+    "BC-0494-property-registry",
+    "BC-0492-clinical-trials",
+    "Carbon Credit Tracking",
+    "BC-0495-voting-systems"
+  ],
+  "wiki_links": [],
+  "ontology": {
+    "term_id": "BC-7010",
+    "preferred_term": "Blockchain Application",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#BlockchainApplication",
+    "source_domain": "bc",
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
+    "definition": "Stub page for Blockchain Application. Referenced by 6 pages. Auto-generated during corpus cleanup.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:BlockchainApplication",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

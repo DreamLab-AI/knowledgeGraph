@@ -7,7 +7,7 @@
   - ontology:: true
   - public-access:: true
   - term-id:: AI-8017
-  - preferred-term:: [https://www.connectedpapers.com/main/995a155fee9afdfacba009c007c884a665ad3055/V
+  - preferred-term:: Knowledge Graphing
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:httpswwwconnectedpaperscommain995a155fee9afdfacba009c007c884a665ad3055v

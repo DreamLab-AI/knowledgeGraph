@@ -5,7 +5,7 @@ While groundbreaking, and crucially, "available", Luma Dream Machine...
   - ontology:: true
   - public-access:: true
   - term-id:: MV-9731
-  - preferred-term:: While groundbreaking, and crucially, "available", Luma Dream Machine...
+  - preferred-term:: AI Video
   - source-domain:: mv
   - owl:class:: mv:WhileGroundbreakingAndCruciallyAvailableLumaDreamMachine
   - status:: draft

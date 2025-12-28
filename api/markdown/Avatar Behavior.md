@@ -5,7 +5,7 @@ Avatar Behaviour encompasses the programmatic and AI-driven behavioral patterns 
   - ontology:: true
   - public-access:: true
   - term-id:: MV-9719
-  - preferred-term:: Avatar Behaviour encompasses the programmatic and AIdriven behavioral...
+  - preferred-term:: Avatar Behavior
   - source-domain:: mv
   - owl:class:: mv:AvatarBehaviourEncompassesTheProgrammaticAndAidrivenBehavioral
   - status:: draft

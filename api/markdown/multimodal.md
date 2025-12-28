@@ -5,7 +5,7 @@ flowchart LR
   - ontology:: true
   - public-access:: true
   - term-id:: MV-9703
-  - preferred-term:: flowchart LR
+  - preferred-term:: multimodal
   - source-domain:: mv
   - owl:class:: mv:FlowchartLr
   - status:: draft

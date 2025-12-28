@@ -5,16 +5,16 @@
   "backlinks": [],
   "wiki_links": [
     "metaverse",
-    "Collaboration Tools",
-    "Architecture Software",
-    "Facility Management",
     "Design Software",
-    "Construction Technology",
-    "Construction Coordination",
-    "CAD Capabilities",
-    "Data Management",
+    "Facility Management",
     "Digital Twin",
-    "3D Modeling"
+    "CAD Capabilities",
+    "3D Modeling",
+    "Construction Coordination",
+    "Collaboration Tools",
+    "Construction Technology",
+    "Architecture Software",
+    "Data Management"
   ],
   "ontology": {
     "term_id": "MV-9797",

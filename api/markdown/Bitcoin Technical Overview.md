@@ -5,7 +5,7 @@ public:: true
   - ontology:: true
   - public-access:: true
   - term-id:: BC-9927
-  - preferred-term:: public:: true
+  - preferred-term:: Bitcoin Technical Overview
   - source-domain:: bc
   - owl:class:: bc:PublicTrue
   - status:: draft

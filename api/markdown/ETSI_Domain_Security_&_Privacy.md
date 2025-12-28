@@ -5,7 +5,7 @@ id:: etsi_domain_security_&_privacy-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: MV-9724
-  - preferred-term:: id:: etsi_domain_security_&_privacyontology
+  - preferred-term:: ETSI_Domain_Security_&_Privacy
   - source-domain:: mv
   - owl:class:: mv:IdEtsiDomainSecurityPrivacyontology
   - status:: draft

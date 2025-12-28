@@ -5,7 +5,7 @@ public:: true
   - ontology:: true
   - public-access:: true
   - term-id:: MV-9715
-  - preferred-term:: public:: true
+  - preferred-term:: Foundation Models
   - source-domain:: mv
   - owl:class:: mv:PublicTrue
   - status:: draft

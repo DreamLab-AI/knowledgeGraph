@@ -5,7 +5,7 @@
   - ontology:: true
   - public-access:: true
   - term-id:: AI-7972
-  - preferred-term:: {{twitter https://twitter.com/cocktailpeanut/status/1765462787046686968}}
+  - preferred-term:: 3D and 4D
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:twitterHttpstwittercomcocktailpeanutstatus1765462787046686968

@@ -5,7 +5,7 @@ id:: telemetry-&-analytics-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: MV-9714
-  - preferred-term:: id:: telemetry&analyticsontology
+  - preferred-term:: Telemetry & Analytics
   - source-domain:: mv
   - owl:class:: mv:IdTelemetryanalyticsontology
   - status:: draft

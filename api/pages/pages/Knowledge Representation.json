@@ -14,10 +14,10 @@
   ],
   "wiki_links": [
     "Logic Programming",
-    "Artificial Intelligence",
+    "Reasoning Systems",
     "Ontology",
-    "Automated Planning",
-    "Reasoning Systems"
+    "Artificial Intelligence",
+    "Automated Planning"
   ],
   "ontology": {
     "term_id": "AI-1001",

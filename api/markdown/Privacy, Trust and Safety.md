@@ -5,7 +5,7 @@
   - ontology:: true
   - public-access:: true
   - term-id:: MV-9725
-  - preferred-term:: {{twitter https://twitter.com/DG_Rand/status/1775618798717911424}}
+  - preferred-term:: Privacy, Trust and Safety
   - source-domain:: mv
   - owl:class:: mv:TwitterHttpstwittercomdgRandstatus1775618798717911424
   - status:: draft

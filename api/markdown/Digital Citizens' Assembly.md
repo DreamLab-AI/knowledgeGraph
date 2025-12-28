@@ -5,7 +5,7 @@ id:: digital-citizens'-assembly-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: MV-9733
-  - preferred-term:: id:: digitalcitizens'assemblyontology
+  - preferred-term:: Digital Citizens' Assembly
   - source-domain:: mv
   - owl:class:: mv:IdDigitalcitizensassemblyontology
   - status:: draft

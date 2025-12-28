@@ -5,7 +5,7 @@ id:: ethics-&-law-layer-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: MV-9710
-  - preferred-term:: id:: ethics&lawlayerontology
+  - preferred-term:: Ethics & Law Layer
   - source-domain:: mv
   - owl:class:: mv:IdEthicslawlayerontology
   - status:: draft

@@ -5,7 +5,7 @@ public:: true
   - ontology:: true
   - public-access:: true
   - term-id:: BC-9903
-  - preferred-term:: public:: true
+  - preferred-term:: Runes and Glyphs
   - source-domain:: bc
   - owl:class:: bc:PublicTrue
   - status:: draft

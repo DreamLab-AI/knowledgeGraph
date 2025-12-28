@@ -1,0 +1,60 @@
+{
+  "id": "DisruptiveTechnology",
+  "title": "DisruptiveTechnology",
+  "content": "- ### OntologyBlock\n  id:: disruptivetechnology-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7008\n\t- preferred-term:: DisruptiveTechnology\n\t- source-domain:: ngm\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: Stub page for DisruptiveTechnology. Referenced by 9 pages. Auto-generated during corpus cleanup.\n\t- maturity:: draft\n\t- owl:class:: ngm:Disruptivetechnology\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Auto-generated stub\n- **References**: 9 pages reference this concept",
+  "backlinks": [
+    "E R C1155 Standard",
+    "Technology Adoption",
+    "E R C1400 Standard",
+    "Cortex Agent",
+    "Performance Standard",
+    "E R C20 Standard",
+    "E R C3643 Standard",
+    "E R C721 Standard",
+    "Smart Contract"
+  ],
+  "wiki_links": [],
+  "ontology": {
+    "term_id": "NGM-7008",
+    "preferred_term": "DisruptiveTechnology",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ontology#Disruptivetechnology",
+    "source_domain": "ngm",
+    "domain": "ngm",
+    "domain_full_name": "Narrative Gold Mine Core",
+    "definition": "Stub page for DisruptiveTechnology. Referenced by 9 pages. Auto-generated during corpus cleanup.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ngm:Disruptivetechnology",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

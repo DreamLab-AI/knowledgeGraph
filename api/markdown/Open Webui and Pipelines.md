@@ -5,7 +5,7 @@ public:: true
   - ontology:: true
   - public-access:: true
   - term-id:: MV-9705
-  - preferred-term:: public:: true
+  - preferred-term:: Open Webui and Pipelines
   - source-domain:: mv
   - owl:class:: mv:PublicTrue
   - status:: draft

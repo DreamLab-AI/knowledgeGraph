@@ -5,7 +5,7 @@ id:: rgb-protocol
   - ontology:: true
   - public-access:: true
   - term-id:: BC-9955
-  - preferred-term:: id:: rgbprotocol
+  - preferred-term:: BTC Layer 3
   - source-domain:: bc
   - owl:class:: bc:IdRgbprotocol
   - status:: draft

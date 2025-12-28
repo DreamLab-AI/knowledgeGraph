@@ -1,0 +1,58 @@
+{
+  "id": "Cross-Platform Identity",
+  "title": "Cross-Platform Identity",
+  "content": "- ### OntologyBlock\n  id:: cross-platform-identity-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7020\n\t- preferred-term:: Cross-Platform Identity\n\t- source-domain:: ngm\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: Stub page for Cross-Platform Identity. Referenced by 6 pages. Auto-generated during corpus cleanup.\n\t- maturity:: draft\n\t- owl:class:: ngm:CrossPlatformIdentity\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Auto-generated stub\n- **References**: 6 pages reference this concept",
+  "backlinks": [
+    "Universal Manifest",
+    "Digital Identity Framework",
+    "Federated Credential Exchange",
+    "Avatar Portability",
+    "Digital Identity Management",
+    "Attribute Sharing",
+    "Trust Framework Policy"
+  ],
+  "wiki_links": [],
+  "ontology": {
+    "term_id": "NGM-7020",
+    "preferred_term": "Cross-Platform Identity",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ontology#CrossPlatformIdentity",
+    "source_domain": "ngm",
+    "domain": "ngm",
+    "domain_full_name": "Narrative Gold Mine Core",
+    "definition": "Stub page for Cross-Platform Identity. Referenced by 6 pages. Auto-generated during corpus cleanup.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ngm:CrossPlatformIdentity",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

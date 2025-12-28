@@ -5,7 +5,7 @@ id:: 659e5627-97e4-40f9-84fa-128b35f7f920
   - ontology:: true
   - public-access:: true
   - term-id:: AI-8005
-  - preferred-term:: id:: 659e562797e440f984fa128b35f7f920
+  - preferred-term:: Safety and alignment
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:Id659e562797e440f984fa128b35f7f920

@@ -7,7 +7,7 @@
   - ontology:: true
   - public-access:: true
   - term-id:: BC-9982
-  - preferred-term:: ![Figure 2.2: [Edelman 2020 trust barometer](https://www.edelman.com/trust/2020t
+  - preferred-term:: Decentralised Web
   - source-domain:: bc
   - owl:class:: bc:Figure22Edelman2020TrustBarometerhttpswwwedelmancomtrust2020t
   - status:: draft

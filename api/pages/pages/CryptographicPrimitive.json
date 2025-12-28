@@ -1,0 +1,62 @@
+{
+  "id": "CryptographicPrimitive",
+  "title": "CryptographicPrimitive",
+  "content": "- ### OntologyBlock\n  id:: cryptographicprimitive-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-7004\n\t- preferred-term:: CryptographicPrimitive\n\t- source-domain:: bc\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: Stub page for CryptographicPrimitive. Referenced by 11 pages. Auto-generated during corpus cleanup.\n\t- maturity:: draft\n\t- owl:class:: bc:Cryptographicprimitive\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Auto-generated stub\n- **References**: 11 pages reference this concept",
+  "backlinks": [
+    "Merkle Tree",
+    "Elliptic Curve Cryptography",
+    "Merkle Root",
+    "Schnorr Signature",
+    "Signature Scheme",
+    "Digital Signature",
+    "Public Key",
+    "Collision Resistance",
+    "Preimage Resistance",
+    "Merkle Proof",
+    "Zero-Knowledge Proof"
+  ],
+  "wiki_links": [],
+  "ontology": {
+    "term_id": "BC-7004",
+    "preferred_term": "CryptographicPrimitive",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#Cryptographicprimitive",
+    "source_domain": "bc",
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
+    "definition": "Stub page for CryptographicPrimitive. Referenced by 11 pages. Auto-generated during corpus cleanup.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:Cryptographicprimitive",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

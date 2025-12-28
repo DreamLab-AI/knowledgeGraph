@@ -5,7 +5,7 @@ public:: true
   - ontology:: true
   - public-access:: true
   - term-id:: MV-9708
-  - preferred-term:: public:: true
+  - preferred-term:: Recent Projects
   - source-domain:: mv
   - owl:class:: mv:PublicTrue
   - status:: draft

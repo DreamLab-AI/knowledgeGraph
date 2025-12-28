@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "metaverse",
-    "Staking Rewards",
-    "Validator Incentives",
-    "Network Participation",
     "Consensus Mechanisms",
-    "Tokenomics"
+    "Staking Rewards",
+    "Tokenomics",
+    "Network Participation",
+    "Validator Incentives"
   ],
   "ontology": {
     "term_id": "MV-10023",

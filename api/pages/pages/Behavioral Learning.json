@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "metaverse",
-    "Personalization",
-    "Data Collection",
-    "Pattern Recognition",
     "Recommendation Systems",
-    "User Experience Optimization",
-    "Predictive Analytics",
     "Machine Learning",
-    "Internet of Behaviors",
+    "Pattern Recognition",
     "User Analytics",
-    "Machine Learning Models"
+    "Data Collection",
+    "Predictive Analytics",
+    "Internet of Behaviors",
+    "Machine Learning Models",
+    "Personalization",
+    "User Experience Optimization"
   ],
   "ontology": {
     "term_id": "MV-9795",

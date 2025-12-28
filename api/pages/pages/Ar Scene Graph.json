@@ -5,13 +5,13 @@
   "backlinks": [],
   "wiki_links": [
     "metaverse",
-    "Spatial Data Structure",
-    "Object Detection",
     "Spatial Relationships",
-    "Context-Aware AR",
     "3D Scene Reconstruction",
+    "Object Detection",
+    "Semantic Scene Understanding",
     "Retargetable AR Experiences",
-    "Semantic Scene Understanding"
+    "Context-Aware AR",
+    "Spatial Data Structure"
   ],
   "ontology": {
     "term_id": "MV-9772",

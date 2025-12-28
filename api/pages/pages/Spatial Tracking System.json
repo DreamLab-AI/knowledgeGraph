@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "metaverse",
-    "Precise Spatial Positioning",
     "IMU Sensors",
-    "6DOF Tracking",
+    "Motion Tracking",
     "Visual SLAM",
-    "Motion Tracking"
+    "Precise Spatial Positioning",
+    "6DOF Tracking"
   ],
   "ontology": {
     "term_id": "MV-10065",

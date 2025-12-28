@@ -7,7 +7,7 @@ I stopped working in VR when I tore...
   - ontology:: true
   - public-access:: true
   - term-id:: MV-9738
-  - preferred-term:: I stopped working in VR when I tore...
+  - preferred-term:: Mixed reality
   - source-domain:: mv
   - owl:class:: mv:IStoppedWorkingInVrWhenITore
   - status:: draft

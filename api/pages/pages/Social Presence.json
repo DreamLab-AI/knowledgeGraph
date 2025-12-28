@@ -10,10 +10,10 @@
     "Presence"
   ],
   "wiki_links": [
-    "Telecollaboration",
-    "Presence Research",
     "Presence",
-    "TelecollaborationDomain"
+    "TelecollaborationDomain",
+    "Telecollaboration",
+    "Presence Research"
   ],
   "ontology": {
     "term_id": "TC-9004",

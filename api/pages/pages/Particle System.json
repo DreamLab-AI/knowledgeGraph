@@ -9,11 +9,11 @@
   ],
   "wiki_links": [
     "metaverse",
-    "Real Time Rendering",
-    "Computer Graphics",
     "Dynamic Visual Effects",
     "Physics Simulation",
-    "Visual Effects"
+    "Visual Effects",
+    "Real Time Rendering",
+    "Computer Graphics"
   ],
   "ontology": {
     "term_id": "MV-10000",

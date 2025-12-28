@@ -5,7 +5,7 @@ id:: relationships
   - ontology:: true
   - public-access:: true
   - term-id:: BC-9889
-  - preferred-term:: id:: relationships
+  - preferred-term:: BC-0429-permissioned-blockchain
   - source-domain:: bc
   - owl:class:: bc:IdRelationships
   - status:: draft

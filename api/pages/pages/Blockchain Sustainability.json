@@ -1,0 +1,58 @@
+{
+  "id": "Blockchain Sustainability",
+  "title": "Blockchain Sustainability",
+  "content": "- ### OntologyBlock\n  id:: blockchain-sustainability-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-7008\n\t- preferred-term:: Blockchain Sustainability\n\t- source-domain:: bc\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: Stub page for Blockchain Sustainability. Referenced by 7 pages. Auto-generated during corpus cleanup.\n\t- maturity:: draft\n\t- owl:class:: bc:BlockchainSustainability\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Auto-generated stub\n- **References**: 7 pages reference this concept",
+  "backlinks": [
+    "BC-0498-carbon-footprint-measurement",
+    "BC-0499-green-blockchain-initiatives",
+    "BC-0501-esg-reporting",
+    "BC-0505-carbon-neutral-blockchain",
+    "BC-0504-environmental-impact-assessment",
+    "BC-0497-proof-of-stake-sustainability",
+    "BC-0496-energy-consumption-blockchain"
+  ],
+  "wiki_links": [],
+  "ontology": {
+    "term_id": "BC-7008",
+    "preferred_term": "Blockchain Sustainability",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#BlockchainSustainability",
+    "source_domain": "bc",
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
+    "definition": "Stub page for Blockchain Sustainability. Referenced by 7 pages. Auto-generated during corpus cleanup.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:BlockchainSustainability",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

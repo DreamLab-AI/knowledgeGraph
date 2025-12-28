@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "metaverse",
-    "Data Protection",
-    "Data Privacy",
     "Regulatory Compliance",
+    "Data Privacy",
+    "System Architecture",
     "Privacy By Design",
-    "System Architecture"
+    "Data Protection"
   ],
   "ontology": {
     "term_id": "MV-10010",

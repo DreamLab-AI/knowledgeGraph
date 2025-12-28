@@ -5,7 +5,7 @@ Avatar Wearables constitute digital fashion items, accessories, cosmetic enhance
   - ontology:: true
   - public-access:: true
   - term-id:: MV-9704
-  - preferred-term:: Avatar Wearables constitute digital fashion items, accessories, cosmetic...
+  - preferred-term:: Avatar Wearable
   - source-domain:: mv
   - owl:class:: mv:AvatarWearablesConstituteDigitalFashionItemsAccessoriesCosmetic
   - status:: draft

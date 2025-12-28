@@ -5,7 +5,7 @@ id:: relationships
   - ontology:: true
   - public-access:: true
   - term-id:: BC-9923
-  - preferred-term:: id:: relationships
+  - preferred-term:: BC-0426-hyperledger-fabric
   - source-domain:: bc
   - owl:class:: bc:IdRelationships
   - status:: draft

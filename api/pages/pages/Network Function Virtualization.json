@@ -8,11 +8,11 @@
   ],
   "wiki_links": [
     "metaverse",
-    "Cloud Computing",
-    "Software Defined Networking",
     "Network Scalability",
+    "Software Defined Networking",
     "Network Architecture",
-    "G Network Slice"
+    "G Network Slice",
+    "Cloud Computing"
   ],
   "ontology": {
     "term_id": "MV-9982",

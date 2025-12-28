@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: human-robot-interaction-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0605\n\t- preferred-term:: Human Robot Interaction\n\t- source-domain:: rb\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Human Robot Interaction (HRI) is the interdisciplinary field studying and designing the interfaces, communication modalities, and collaborative frameworks between humans and robotic systems. This includes physical human-robot collaboration, teleoperation, intent recognition, social robotics, and safety mechanisms for shared workspaces.\n\t- owl:class:: rb:HumanRobotInteraction\n\t- belongsToDomain:: [[Robotics Systems]]\n\t- #### Relationships\n\t  id:: hri-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Robotics Systems]]\n\t\t- is-parent-of:: [[Teleoperation]]\n\t\t- is-parent-of:: [[Intent Recognition]]\n\t\t- is-parent-of:: [[Safety Zone]]\n\t\t- related-to:: [[Robot Safety]]\n\t\t- related-to:: [[Collaborative Robot]]",
   "backlinks": [],
   "wiki_links": [
-    "Teleoperation",
-    "Robot Safety",
-    "Collaborative Robot",
+    "Intent Recognition",
     "Robotics Systems",
+    "Robot Safety",
     "Safety Zone",
-    "Intent Recognition"
+    "Teleoperation",
+    "Collaborative Robot"
   ],
   "ontology": {
     "term_id": "RB-0605",

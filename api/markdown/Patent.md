@@ -5,7 +5,7 @@
   - ontology:: true
   - public-access:: true
   - term-id:: AI-7990
-  - preferred-term:: Progressive Deep Image Compression for Hybrid Contexts of...
+  - preferred-term:: Patent
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:ProgressiveDeepImageCompressionForHybridContextsOf

@@ -5,7 +5,7 @@ This ensures relevant and engaging marketing content within...
   - ontology:: true
   - public-access:: true
   - term-id:: AI-7996
-  - preferred-term:: This ensures relevant and engaging marketing content within...
+  - preferred-term:: Client side DCO
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:ThisEnsuresRelevantAndEngagingMarketingContentWithin

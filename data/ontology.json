@@ -187,7 +187,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "aiapplications",
+      "id": "ai-aiapplications",
       "type": "owl:Class"
     },
     {
@@ -455,6 +455,14 @@
       "type": "owl:Class"
     },
     {
+      "id": "aigroundeddomain",
+      "type": "owl:Class"
+    },
+    {
+      "id": "aihardware",
+      "type": "owl:Class"
+    },
+    {
       "id": "aiingames",
       "type": "owl:Class"
     },
@@ -475,11 +483,39 @@
       "type": "owl:Class"
     },
     {
+      "id": "ai-aiapplications",
+      "type": "owl:Class"
+    },
+    {
+      "id": "aidomain",
+      "type": "owl:Class"
+    },
+    {
       "id": "aiethicsdomain",
       "type": "owl:Class"
     },
     {
+      "id": "ai-aifairness",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ai-aigovernance",
+      "type": "owl:Class"
+    },
+    {
       "id": "ai-aigovernanceprinciple",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ai-airisk",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ai-airiskmanagement",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ai-aisecurity",
       "type": "owl:Class"
     },
     {
@@ -528,6 +564,10 @@
     },
     {
       "id": "artificialsuperintelligence",
+      "type": "owl:Class"
+    },
+    {
+      "id": "artificialintelligencedomain",
       "type": "owl:Class"
     },
     {
@@ -635,6 +675,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "computationandintelligencedomain",
+      "type": "owl:Class"
+    },
+    {
       "id": "ai-computelayer",
       "type": "owl:Class"
     },
@@ -700,6 +744,10 @@
     },
     {
       "id": "cortexagent",
+      "type": "owl:Class"
+    },
+    {
+      "id": "creativemediadomain",
       "type": "owl:Class"
     },
     {
@@ -1231,6 +1279,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "infrastructuredomain",
+      "type": "owl:Class"
+    },
+    {
       "id": "inpainting",
       "type": "owl:Class"
     },
@@ -1240,6 +1292,10 @@
     },
     {
       "id": "ai-intelligentvirtualentity",
+      "type": "owl:Class"
+    },
+    {
+      "id": "interactiondomain",
       "type": "owl:Class"
     },
     {
@@ -1351,6 +1407,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "ai-machinelearning",
+      "type": "owl:Class"
+    },
+    {
       "id": "marketsurveillanceauthority",
       "type": "owl:Class"
     },
@@ -1376,6 +1436,10 @@
     },
     {
       "id": "medicalimagingai",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ai-medicalai",
       "type": "owl:Class"
     },
     {
@@ -1455,7 +1519,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "modelproperty",
+      "id": "ai-modelproperty",
       "type": "owl:Class"
     },
     {
@@ -1475,7 +1539,15 @@
       "type": "owl:Class"
     },
     {
+      "id": "ai-modelarchitecture",
+      "type": "owl:Class"
+    },
+    {
       "id": "modelops",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ai-modelproperty",
       "type": "owl:Class"
     },
     {
@@ -1556,6 +1628,10 @@
     },
     {
       "id": "ai-neuralnetwork",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ai-neuralnetworkarchitecture",
       "type": "owl:Class"
     },
     {
@@ -2043,6 +2119,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "telecollaborationdomain",
+      "type": "owl:Class"
+    },
+    {
       "id": "tensorprocessingunit",
       "type": "owl:Class"
     },
@@ -2115,6 +2195,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "ai-trainingmethod",
+      "type": "owl:Class"
+    },
+    {
       "id": "transformer",
       "type": "owl:Class"
     },
@@ -2128,6 +2212,10 @@
     },
     {
       "id": "trojanattack",
+      "type": "owl:Class"
+    },
+    {
+      "id": "trustandgovernancedomain",
       "type": "owl:Class"
     },
     {
@@ -2367,15 +2455,27 @@
       "type": "owl:Class"
     },
     {
+      "id": "blockchainapplication",
+      "type": "owl:Class"
+    },
+    {
       "id": "blockchainasaservice",
       "type": "owl:Class"
     },
     {
-      "id": "blockchainentity",
+      "id": "blockchaincompliance",
+      "type": "owl:Class"
+    },
+    {
+      "id": "bc-blockchainentity",
       "type": "owl:Class"
     },
     {
       "id": "blockchaingovernance",
+      "type": "owl:Class"
+    },
+    {
+      "id": "bc-blockchaininfrastructure",
       "type": "owl:Class"
     },
     {
@@ -2395,6 +2495,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "blockchainsustainability",
+      "type": "owl:Class"
+    },
+    {
       "id": "blockchaintechnology",
       "type": "owl:Class"
     },
@@ -2404,6 +2508,10 @@
     },
     {
       "id": "blockchaindomain",
+      "type": "owl:Class"
+    },
+    {
+      "id": "bc-blockchainentity",
       "type": "owl:Class"
     },
     {
@@ -2583,7 +2691,15 @@
       "type": "owl:Class"
     },
     {
-      "id": "cryptographicprimitive",
+      "id": "bc-cryptographickeymanagement",
+      "type": "owl:Class"
+    },
+    {
+      "id": "bc-cryptographickeys",
+      "type": "owl:Class"
+    },
+    {
+      "id": "bc-cryptographicprimitive",
       "type": "owl:Class"
     },
     {
@@ -2592,6 +2708,10 @@
     },
     {
       "id": "cryptographictoken",
+      "type": "owl:Class"
+    },
+    {
+      "id": "bc-cryptographicprimitive",
       "type": "owl:Class"
     },
     {
@@ -3755,6 +3875,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "supplychainblockchain",
+      "type": "owl:Class"
+    },
+    {
       "id": "supplychainmanagement",
       "type": "owl:Class"
     },
@@ -3824,6 +3948,14 @@
     },
     {
       "id": "tokencustodyservice",
+      "type": "owl:Class"
+    },
+    {
+      "id": "bc-tokeneconomics",
+      "type": "owl:Class"
+    },
+    {
+      "id": "tokenstandard",
       "type": "owl:Class"
     },
     {
@@ -4819,7 +4951,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-cryptographichash",
+      "id": "cryptographichash",
       "type": "owl:Class"
     },
     {
@@ -6587,6 +6719,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "metaversedomain",
+      "type": "owl:Class"
+    },
+    {
       "id": "mv-metaverseontologyschema",
       "type": "owl:Class"
     },
@@ -7371,7 +7507,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-sharedarexperiences",
+      "id": "sharedarexperiences",
       "type": "owl:Class"
     },
     {
@@ -8323,7 +8459,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "xraccessibilityguideline",
+      "id": "mv-xraccessibilityguideline",
       "type": "owl:Class"
     },
     {
@@ -8379,11 +8515,83 @@
       "type": "owl:Class"
     },
     {
+      "id": "3drenderingengine",
+      "type": "owl:Class"
+    },
+    {
+      "id": "accesscontrol",
+      "type": "owl:Class"
+    },
+    {
       "id": "ngm-artificialintelligence",
       "type": "owl:Class"
     },
     {
+      "id": "ngm-artificialintelligence",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ngm-assetmanagement",
+      "type": "owl:Class"
+    },
+    {
+      "id": "assettrading",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ngm-attentionmechanism",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ngm-augmentedreality",
+      "type": "owl:Class"
+    },
+    {
+      "id": "authenticationservice",
+      "type": "owl:Class"
+    },
+    {
+      "id": "cloudinfrastructure",
+      "type": "owl:Class"
+    },
+    {
+      "id": "complianceverification",
+      "type": "owl:Class"
+    },
+    {
       "id": "ngm-computervision",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ngm-computervision",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ngm-computervisiontask",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ngm-computinginfrastructure",
+      "type": "owl:Class"
+    },
+    {
+      "id": "crossplatformidentity",
+      "type": "owl:Class"
+    },
+    {
+      "id": "crossplatforminteroperability",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ngm-daogovernance",
+      "type": "owl:Class"
+    },
+    {
+      "id": "datastorage",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ngm-databasesystem",
       "type": "owl:Class"
     },
     {
@@ -8395,7 +8603,35 @@
       "type": "owl:Class"
     },
     {
+      "id": "disruptivetechnology",
+      "type": "owl:Class"
+    },
+    {
+      "id": "distributedcomputing",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ngm-distributeddatastructure",
+      "type": "owl:Class"
+    },
+    {
       "id": "domain",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ngm-governanceframework",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ngm-identitymanagement",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ngm-legalframework",
+      "type": "owl:Class"
+    },
+    {
+      "id": "metadataschema",
       "type": "owl:Class"
     },
     {
@@ -8403,11 +8639,67 @@
       "type": "owl:Class"
     },
     {
+      "id": "ngm-motiontracking",
+      "type": "owl:Class"
+    },
+    {
       "id": "ngm-naturallanguageprocessing",
       "type": "owl:Class"
     },
     {
+      "id": "ngm-naturallanguageprocessing",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ngm-nlptask",
+      "type": "owl:Class"
+    },
+    {
+      "id": "performanceoptimization",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ngm-platformgovernance",
+      "type": "owl:Class"
+    },
+    {
+      "id": "powersupply",
+      "type": "owl:Class"
+    },
+    {
+      "id": "pricediscovery",
+      "type": "owl:Class"
+    },
+    {
+      "id": "realtimerendering",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ngm-regulatoryframework",
+      "type": "owl:Class"
+    },
+    {
+      "id": "renderingengine",
+      "type": "owl:Class"
+    },
+    {
+      "id": "smartcontracts",
+      "type": "owl:Class"
+    },
+    {
+      "id": "systeminteroperability",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ngm-technicalstandard",
+      "type": "owl:Class"
+    },
+    {
       "id": "ngm-technologydomain",
+      "type": "owl:Class"
+    },
+    {
+      "id": "uktechecosystem",
       "type": "owl:Class"
     },
     {
@@ -8704,6 +8996,10 @@
     },
     {
       "id": "iotsensornetwork",
+      "type": "owl:Class"
+    },
+    {
+      "id": "rb-iotsensors",
       "type": "owl:Class"
     },
     {
@@ -9031,11 +9327,19 @@
       "type": "owl:Class"
     },
     {
+      "id": "robotics",
+      "type": "owl:Class"
+    },
+    {
       "id": "roboticscoreconepts",
       "type": "owl:Class"
     },
     {
       "id": "roboticssystems",
+      "type": "owl:Class"
+    },
+    {
+      "id": "roboticsdomain",
       "type": "owl:Class"
     },
     {
@@ -9367,6 +9671,14 @@
       "type": "owl:Class"
     },
     {
+      "id": "networkprotocol",
+      "type": "owl:Class"
+    },
+    {
+      "id": "networkcomponent",
+      "type": "owl:Class"
+    },
+    {
       "id": "neuralradiancefields",
       "type": "owl:Class"
     },
@@ -9651,7 +9963,7 @@
       }
     },
     {
-      "id": "aiapplications",
+      "id": "ai-aiapplications",
       "iri": "http://narrativegoldmine.com/ai#AIApplications",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -10542,6 +10854,36 @@
       }
     },
     {
+      "id": "aigroundeddomain",
+      "iri": "http://narrativegoldmine.com/ai#AiGroundeddomain",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "AI-GroundedDomain"
+      },
+      "comment": {
+        "en": "Stub page for AI-GroundedDomain. Referenced by 5 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "aihardware",
+      "iri": "http://narrativegoldmine.com/ai#AiHardware",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "AI Hardware"
+      },
+      "comment": {
+        "en": "Stub page for AI Hardware. Referenced by 5 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
       "id": "aiingames",
       "iri": "http://narrativegoldmine.com/ai#AiInGames",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -10608,6 +10950,36 @@
       }
     },
     {
+      "id": "ai-aiapplications",
+      "iri": "http://narrativegoldmine.com/ai#Aiapplications",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "AIApplications"
+      },
+      "comment": {
+        "en": "Stub page for AIApplications. Referenced by 14 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "aidomain",
+      "iri": "http://narrativegoldmine.com/ai#Aidomain",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "AIDomain"
+      },
+      "comment": {
+        "en": "Stub page for AIDomain. Referenced by 6 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
       "id": "aiethicsdomain",
       "iri": "http://narrativegoldmine.com/ai#Aiethicsdomain",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -10620,6 +10992,36 @@
       }
     },
     {
+      "id": "ai-aifairness",
+      "iri": "http://narrativegoldmine.com/ai#Aifairness",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "AIFairness"
+      },
+      "comment": {
+        "en": "Stub page for AIFairness. Referenced by 8 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "ai-aigovernance",
+      "iri": "http://narrativegoldmine.com/ai#Aigovernance",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "AIGovernance"
+      },
+      "comment": {
+        "en": "Stub page for AIGovernance. Referenced by 58 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
       "id": "ai-aigovernanceprinciple",
       "iri": "http://narrativegoldmine.com/ai#Aigovernanceprinciple",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -10629,6 +11031,51 @@
       "backgroundColor": "#4CAF50",
       "label": {
         "en": "Aigovernanceprinciple"
+      }
+    },
+    {
+      "id": "ai-airisk",
+      "iri": "http://narrativegoldmine.com/ai#Airisk",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "AIRisk"
+      },
+      "comment": {
+        "en": "Stub page for AIRisk. Referenced by 6 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "ai-airiskmanagement",
+      "iri": "http://narrativegoldmine.com/ai#Airiskmanagement",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "AIRiskManagement"
+      },
+      "comment": {
+        "en": "Stub page for AIRiskManagement. Referenced by 6 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "ai-aisecurity",
+      "iri": "http://narrativegoldmine.com/ai#Aisecurity",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "AISecurity"
+      },
+      "comment": {
+        "en": "Stub page for AISecurity. Referenced by 8 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -10797,6 +11244,21 @@
       "backgroundColor": "#4CAF50",
       "label": {
         "en": "artificial superintelligence"
+      }
+    },
+    {
+      "id": "artificialintelligencedomain",
+      "iri": "http://narrativegoldmine.com/ai#Artificialintelligencedomain",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "ArtificialIntelligenceDomain"
+      },
+      "comment": {
+        "en": "Stub page for ArtificialIntelligenceDomain. Referenced by 11 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -11133,6 +11595,21 @@
       }
     },
     {
+      "id": "computationandintelligencedomain",
+      "iri": "http://narrativegoldmine.com/ai#Computationandintelligencedomain",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "ComputationAndIntelligenceDomain"
+      },
+      "comment": {
+        "en": "Stub page for ComputationAndIntelligenceDomain. Referenced by 11 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
       "id": "ai-computelayer",
       "iri": "http://narrativegoldmine.com/ai#ComputeLayer",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -11358,6 +11835,21 @@
       "backgroundColor": "#4CAF50",
       "label": {
         "en": "Cortex Agent"
+      }
+    },
+    {
+      "id": "creativemediadomain",
+      "iri": "http://narrativegoldmine.com/ai#Creativemediadomain",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "CreativeMediaDomain"
+      },
+      "comment": {
+        "en": "Stub page for CreativeMediaDomain. Referenced by 10 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -11891,7 +12383,7 @@
       ],
       "backgroundColor": "#4CAF50",
       "label": {
-        "en": "DALLE is OpenAI's groundbreaking texttoimage generative AI system..."
+        "en": "Dall-e"
       }
     },
     {
@@ -13073,7 +13565,7 @@
       ],
       "backgroundColor": "#4CAF50",
       "label": {
-        "en": "id:: 659e562797e440f984fa128b35f7f920"
+        "en": "Safety and alignment"
       }
     },
     {
@@ -13085,7 +13577,7 @@
       ],
       "backgroundColor": "#4CAF50",
       "label": {
-        "en": "id:: humancapture&recognitionontology"
+        "en": "Human Capture & Recognition"
       }
     },
     {
@@ -13224,6 +13716,21 @@
       }
     },
     {
+      "id": "infrastructuredomain",
+      "iri": "http://narrativegoldmine.com/ai#Infrastructuredomain",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "InfrastructureDomain"
+      },
+      "comment": {
+        "en": "Stub page for InfrastructureDomain. Referenced by 33 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
       "id": "inpainting",
       "iri": "http://narrativegoldmine.com/ai#Inpainting",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -13260,6 +13767,21 @@
       "backgroundColor": "#4CAF50",
       "label": {
         "en": "IntelligentVirtualEntity"
+      }
+    },
+    {
+      "id": "interactiondomain",
+      "iri": "http://narrativegoldmine.com/ai#Interactiondomain",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "InteractionDomain"
+      },
+      "comment": {
+        "en": "Stub page for InteractionDomain. Referenced by 10 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -13638,6 +14160,21 @@
       }
     },
     {
+      "id": "ai-machinelearning",
+      "iri": "http://narrativegoldmine.com/ai#Machinelearning",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "MachineLearning"
+      },
+      "comment": {
+        "en": "Stub page for MachineLearning. Referenced by 26 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
       "id": "marketsurveillanceauthority",
       "iri": "http://narrativegoldmine.com/ai#MarketSurveillanceAuthority",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -13737,6 +14274,21 @@
       },
       "comment": {
         "en": "Medical Imaging AI encompasses artificial intelligence systems designed to analyse, interpret, and enhance medical images including radiological scans, pathology slides, and other diagnostic imagin..."
+      }
+    },
+    {
+      "id": "ai-medicalai",
+      "iri": "http://narrativegoldmine.com/ai#Medicalai",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "MedicalAI"
+      },
+      "comment": {
+        "en": "Stub page for MedicalAI. Referenced by 9 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -14010,7 +14562,7 @@
       }
     },
     {
-      "id": "modelproperty",
+      "id": "ai-modelproperty",
       "iri": "http://narrativegoldmine.com/ai#ModelProperty",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -14079,6 +14631,21 @@
       }
     },
     {
+      "id": "ai-modelarchitecture",
+      "iri": "http://narrativegoldmine.com/ai#Modelarchitecture",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "ModelArchitecture"
+      },
+      "comment": {
+        "en": "Stub page for ModelArchitecture. Referenced by 123 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
       "id": "modelops",
       "iri": "http://narrativegoldmine.com/ai#Modelops",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -14088,6 +14655,21 @@
       "backgroundColor": "#4CAF50",
       "label": {
         "en": "ModelOps"
+      }
+    },
+    {
+      "id": "ai-modelproperty",
+      "iri": "http://narrativegoldmine.com/ai#Modelproperty",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "ModelProperty"
+      },
+      "comment": {
+        "en": "Stub page for ModelProperty. Referenced by 10 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -14361,6 +14943,21 @@
       },
       "comment": {
         "en": "A computational system inspired by biological neural networks, consisting of interconnected nodes that process information through weighted connections to learn patterns and make predictions."
+      }
+    },
+    {
+      "id": "ai-neuralnetworkarchitecture",
+      "iri": "http://narrativegoldmine.com/ai#Neuralnetworkarchitecture",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "NeuralNetworkArchitecture"
+      },
+      "comment": {
+        "en": "Stub page for NeuralNetworkArchitecture. Referenced by 9 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -14975,7 +15572,7 @@
       ],
       "backgroundColor": "#4CAF50",
       "label": {
-        "en": "Progressive Deep Image Compression for Hybrid Contexts of..."
+        "en": "Patent"
       }
     },
     {
@@ -16017,6 +16614,21 @@
       }
     },
     {
+      "id": "telecollaborationdomain",
+      "iri": "http://narrativegoldmine.com/ai#Telecollaborationdomain",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "TelecollaborationDomain"
+      },
+      "comment": {
+        "en": "Stub page for TelecollaborationDomain. Referenced by 8 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
       "id": "tensorprocessingunit",
       "iri": "http://narrativegoldmine.com/ai#TensorProcessingUnit",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -16115,7 +16727,7 @@
       ],
       "backgroundColor": "#4CAF50",
       "label": {
-        "en": "This ensures relevant and engaging marketing content within..."
+        "en": "Client side DCO"
       }
     },
     {
@@ -16127,7 +16739,7 @@
       ],
       "backgroundColor": "#4CAF50",
       "label": {
-        "en": "Title: Flux dev lora training use SimpleTuner, it works with 4090"
+        "en": "Flux"
       }
     },
     {
@@ -16139,7 +16751,7 @@
       ],
       "backgroundColor": "#4CAF50",
       "label": {
-        "en": "To comprehend the legal challenges posed by [[Artificial..."
+        "en": "AI Liability"
       }
     },
     {
@@ -16251,6 +16863,21 @@
       }
     },
     {
+      "id": "ai-trainingmethod",
+      "iri": "http://narrativegoldmine.com/ai#Trainingmethod",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "TrainingMethod"
+      },
+      "comment": {
+        "en": "Stub page for TrainingMethod. Referenced by 21 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
       "id": "transformer",
       "iri": "http://narrativegoldmine.com/ai#Transformer",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -16308,6 +16935,21 @@
       },
       "comment": {
         "en": "A backdoor attack on AI models, often emphasizing supply chain compromise, where a pre-trained model or training pipeline is maliciously modified to contain hidden triggers that cause specific atta..."
+      }
+    },
+    {
+      "id": "trustandgovernancedomain",
+      "iri": "http://narrativegoldmine.com/ai#Trustandgovernancedomain",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "TrustAndGovernanceDomain"
+      },
+      "comment": {
+        "en": "Stub page for TrustAndGovernanceDomain. Referenced by 25 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -16487,7 +17129,7 @@
       ],
       "backgroundColor": "#4CAF50",
       "label": {
-        "en": "[https://www.connectedpapers.com/main/995a155fee9afdfacba009c007c884a665ad3055/V"
+        "en": "Knowledge Graphing"
       }
     },
     {
@@ -16499,7 +17141,7 @@
       ],
       "backgroundColor": "#4CAF50",
       "label": {
-        "en": "{{twitter https://twitter.com/cocktailpeanut/status/1765462787046686968}}"
+        "en": "3D and 4D"
       }
     },
     {
@@ -17148,6 +17790,21 @@
       }
     },
     {
+      "id": "blockchainapplication",
+      "iri": "http://narrativegoldmine.com/blockchain#BlockchainApplication",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "label": {
+        "en": "Blockchain Application"
+      },
+      "comment": {
+        "en": "Stub page for Blockchain Application. Referenced by 6 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
       "id": "blockchainasaservice",
       "iri": "http://narrativegoldmine.com/blockchain#BlockchainAsAService",
       "baseIri": "http://narrativegoldmine.com/blockchain",
@@ -17163,7 +17820,22 @@
       }
     },
     {
-      "id": "blockchainentity",
+      "id": "blockchaincompliance",
+      "iri": "http://narrativegoldmine.com/blockchain#BlockchainCompliance",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "label": {
+        "en": "Blockchain Compliance"
+      },
+      "comment": {
+        "en": "Stub page for Blockchain Compliance. Referenced by 15 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "bc-blockchainentity",
       "iri": "http://narrativegoldmine.com/blockchain#BlockchainEntity",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -17190,6 +17862,21 @@
       },
       "comment": {
         "en": "Blockchain Governance refers to the mechanisms, processes, and structures through which decisions are made about the development, operation, and evolution of blockchain networks and protocols. This..."
+      }
+    },
+    {
+      "id": "bc-blockchaininfrastructure",
+      "iri": "http://narrativegoldmine.com/blockchain#BlockchainInfrastructure",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "label": {
+        "en": "Blockchain Infrastructure"
+      },
+      "comment": {
+        "en": "Stub page for Blockchain Infrastructure. Referenced by 12 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -17250,6 +17937,21 @@
       }
     },
     {
+      "id": "blockchainsustainability",
+      "iri": "http://narrativegoldmine.com/blockchain#BlockchainSustainability",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "label": {
+        "en": "Blockchain Sustainability"
+      },
+      "comment": {
+        "en": "Stub page for Blockchain Sustainability. Referenced by 7 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
       "id": "blockchaintechnology",
       "iri": "http://narrativegoldmine.com/blockchain#BlockchainTechnology",
       "baseIri": "http://narrativegoldmine.com/blockchain",
@@ -17286,6 +17988,21 @@
       "backgroundColor": "#2196F3",
       "label": {
         "en": "BlockchainDomain"
+      }
+    },
+    {
+      "id": "bc-blockchainentity",
+      "iri": "http://narrativegoldmine.com/blockchain#Blockchainentity",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "label": {
+        "en": "BlockchainEntity"
+      },
+      "comment": {
+        "en": "Stub page for BlockchainEntity. Referenced by 99 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -17916,7 +18633,37 @@
       }
     },
     {
-      "id": "cryptographicprimitive",
+      "id": "bc-cryptographickeymanagement",
+      "iri": "http://narrativegoldmine.com/blockchain#CryptographicKeyManagement",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "label": {
+        "en": "Cryptographic Key Management"
+      },
+      "comment": {
+        "en": "Stub page for Cryptographic Key Management. Referenced by 5 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "bc-cryptographickeys",
+      "iri": "http://narrativegoldmine.com/blockchain#CryptographicKeys",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "label": {
+        "en": "Cryptographic Keys"
+      },
+      "comment": {
+        "en": "Stub page for Cryptographic Keys. Referenced by 9 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "bc-cryptographicprimitive",
       "iri": "http://narrativegoldmine.com/blockchain#CryptographicPrimitive",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -17952,6 +18699,21 @@
       "backgroundColor": "#2196F3",
       "label": {
         "en": "CryptographicToken"
+      }
+    },
+    {
+      "id": "bc-cryptographicprimitive",
+      "iri": "http://narrativegoldmine.com/blockchain#Cryptographicprimitive",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "label": {
+        "en": "CryptographicPrimitive"
+      },
+      "comment": {
+        "en": "Stub page for CryptographicPrimitive. Referenced by 11 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -18809,7 +19571,10 @@
       ],
       "backgroundColor": "#2196F3",
       "label": {
-        "en": "EnterpriseBlockchain"
+        "en": "Enterprise Blockchain"
+      },
+      "comment": {
+        "en": "Stub page for Enterprise Blockchain. Referenced by 9 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -19133,7 +19898,7 @@
       ],
       "backgroundColor": "#2196F3",
       "label": {
-        "en": "![Figure 2.2: [Edelman 2020 trust barometer](https://www.edelman.com/trust/2020t"
+        "en": "Decentralised Web"
       }
     },
     {
@@ -19199,7 +19964,7 @@
       ],
       "backgroundColor": "#2196F3",
       "label": {
-        "en": "For more detailed information on her research and..."
+        "en": "Politics, Law, Privacy"
       }
     },
     {
@@ -19607,7 +20372,7 @@
       ],
       "backgroundColor": "#2196F3",
       "label": {
-        "en": "id:: 51%attackontology"
+        "en": "51% Attack"
       }
     },
     {
@@ -19619,7 +20384,7 @@
       ],
       "backgroundColor": "#2196F3",
       "label": {
-        "en": "id:: 661d5f6ace5e479e87222128890607bd"
+        "en": "Bitcoin Value Proposition"
       }
     },
     {
@@ -19655,7 +20420,7 @@
       ],
       "backgroundColor": "#2196F3",
       "label": {
-        "en": "id:: cryptographicdomainabout"
+        "en": "CryptographicDomain"
       },
       "comment": {
         "en": "The CryptographicDomain represents a specialized sub-domain within blockchain technology that encompasses all cryptographic primitives, protocols, and mechanisms essential to distributed ledger sys..."
@@ -19670,7 +20435,7 @@
       ],
       "backgroundColor": "#2196F3",
       "label": {
-        "en": "id:: relationships"
+        "en": "BC-0429-permissioned-blockchain"
       }
     },
     {
@@ -19682,7 +20447,7 @@
       ],
       "backgroundColor": "#2196F3",
       "label": {
-        "en": "id:: rgbprotocol"
+        "en": "BTC Layer 3"
       }
     },
     {
@@ -19694,7 +20459,7 @@
       ],
       "backgroundColor": "#2196F3",
       "label": {
-        "en": "id:: securitylayermeta"
+        "en": "SecurityLayer"
       },
       "comment": {
         "en": "The SecurityLayer represents the abstraction level of security-focused implementations, cryptographic mechanisms, threat models, security protocols, and defensive systems that protect blockchain an..."
@@ -19709,7 +20474,7 @@
       ],
       "backgroundColor": "#2196F3",
       "label": {
-        "en": "id:: tokeneconomicsdomainmeta"
+        "en": "TokenEconomicsDomain"
       },
       "comment": {
         "en": "The TokenEconomicsDomain represents a specialized sub-domain within blockchain technology that encompasses economic mechanisms, incentive structures, token systems, and monetary models that govern ..."
@@ -21320,7 +22085,7 @@
       ],
       "backgroundColor": "#2196F3",
       "label": {
-        "en": "public:: true"
+        "en": "Diagrams as Code"
       }
     },
     {
@@ -21695,7 +22460,7 @@
       ],
       "backgroundColor": "#2196F3",
       "label": {
-        "en": "Several innovative projects are using the financial incentive..."
+        "en": "Bitcoin Mining"
       }
     },
     {
@@ -21981,6 +22746,21 @@
       }
     },
     {
+      "id": "supplychainblockchain",
+      "iri": "http://narrativegoldmine.com/blockchain#SupplyChainBlockchain",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "label": {
+        "en": "Supply Chain Blockchain"
+      },
+      "comment": {
+        "en": "Stub page for Supply Chain Blockchain. Referenced by 14 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
       "id": "supplychainmanagement",
       "iri": "http://narrativegoldmine.com/blockchain#SupplyChainManagement",
       "baseIri": "http://narrativegoldmine.com/blockchain",
@@ -22160,7 +22940,7 @@
       ],
       "backgroundColor": "#2196F3",
       "label": {
-        "en": "The most interesting thing about DAOs is that..."
+        "en": "DAO"
       }
     },
     {
@@ -22236,6 +23016,36 @@
       },
       "comment": {
         "en": "Token Economics (Tokenomics) is the study and design of economic models and incentive mechanisms surrounding digital tokens on blockchain networks. It encompasses token supply dynamics, distributio..."
+      }
+    },
+    {
+      "id": "tokenstandard",
+      "iri": "http://narrativegoldmine.com/blockchain#TokenStandard",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "label": {
+        "en": "Token Standard"
+      },
+      "comment": {
+        "en": "Stub page for Token Standard. Referenced by 10 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "bc-tokeneconomics",
+      "iri": "http://narrativegoldmine.com/blockchain#Tokeneconomics",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "label": {
+        "en": "TokenEconomics"
+      },
+      "comment": {
+        "en": "Stub page for TokenEconomics. Referenced by 7 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -22457,7 +23267,7 @@
       ],
       "backgroundColor": "#2196F3",
       "label": {
-        "en": "{{twitter https://twitter.com/callebtc/status/1777598819355496587}}"
+        "en": "Cashu"
       }
     },
     {
@@ -23924,7 +24734,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "label": {
-        "en": "Avatar Behaviour encompasses the programmatic and AIdriven behavioral..."
+        "en": "Avatar Behavior"
       }
     },
     {
@@ -24026,7 +24836,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "label": {
-        "en": "Avatar Wearables constitute digital fashion items, accessories, cosmetic..."
+        "en": "Avatar Wearable"
       }
     },
     {
@@ -25644,7 +26454,7 @@
       }
     },
     {
-      "id": "mv-cryptographichash",
+      "id": "cryptographichash",
       "iri": "http://narrativegoldmine.com/metaverse#Cryptographichash",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -29123,7 +29933,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "label": {
-        "en": "flowchart LR"
+        "en": "multimodal"
       }
     },
     {
@@ -29936,7 +30746,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "label": {
-        "en": "I stopped working in VR when I tore..."
+        "en": "Mixed reality"
       }
     },
     {
@@ -29948,7 +30758,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "label": {
-        "en": "id:: digitalcitizens'assemblyontology"
+        "en": "Digital Citizens' Assembly"
       }
     },
     {
@@ -29960,7 +30770,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "label": {
-        "en": "id:: ethics&lawlayerontology"
+        "en": "Ethics & Law Layer"
       }
     },
     {
@@ -29972,7 +30782,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "label": {
-        "en": "id:: etsi_domain_security_&_privacyontology"
+        "en": "ETSI_Domain_Security_&_Privacy"
       }
     },
     {
@@ -29984,7 +30794,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "label": {
-        "en": "id:: telemetry&analyticsontology"
+        "en": "Telemetry & Analytics"
       }
     },
     {
@@ -29996,7 +30806,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "label": {
-        "en": "id:: unknownontology"
+        "en": "BC 0107 gas limit"
       }
     },
     {
@@ -31499,7 +32309,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "label": {
-        "en": "Meshroom is a free, opensource photogrammetry application that..."
+        "en": "Daniel AI creative technologist"
       }
     },
     {
@@ -31655,7 +32465,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "label": {
-        "en": "Metaverse Infrastructure constitutes the comprehensive technical foundation encompassing..."
+        "en": "Metaverse Infrastructure"
       }
     },
     {
@@ -31788,6 +32598,21 @@
       },
       "comment": {
         "en": "Virtual 3D spaces within metaverse platforms designed to host events, conferences, exhibitions, and social gatherings, enabling global participation through customisable avatars and interactive env..."
+      }
+    },
+    {
+      "id": "metaversedomain",
+      "iri": "http://narrativegoldmine.com/metaverse#Metaversedomain",
+      "baseIri": "http://narrativegoldmine.com/metaverse",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#9C27B0",
+      "label": {
+        "en": "MetaverseDomain"
+      },
+      "comment": {
+        "en": "Stub page for MetaverseDomain. Referenced by 167 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -33518,7 +34343,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "label": {
-        "en": "public:: true"
+        "en": "Open Webui and Pipelines"
       }
     },
     {
@@ -34542,7 +35367,7 @@
       }
     },
     {
-      "id": "mv-sharedarexperiences",
+      "id": "sharedarexperiences",
       "iri": "http://narrativegoldmine.com/metaverse#SharedArExperiences",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -36188,7 +37013,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "label": {
-        "en": "{{twitter https://twitter.com/DG_Rand/status/1775618798717911424}}"
+        "en": "Privacy, Trust and Safety"
       }
     },
     {
@@ -36200,7 +37025,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "label": {
-        "en": "{{twitter https://twitter.com/LibertyRPF/status/1737848545657618873}}"
+        "en": "Proprietary Image Generation"
       }
     },
     {
@@ -37808,7 +38633,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "label": {
-        "en": "While groundbreaking, and crucially, \"available\", Luma Dream Machine..."
+        "en": "AI Video"
       }
     },
     {
@@ -37911,7 +38736,7 @@
       }
     },
     {
-      "id": "xraccessibilityguideline",
+      "id": "mv-xraccessibilityguideline",
       "iri": "http://narrativegoldmine.com/metaverse#XrAccessibilityGuideline",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -38112,6 +38937,38 @@
       }
     },
     {
+      "id": "3drenderingengine",
+      "iri": "http://narrativegoldmine.com/ontology#3dRenderingEngine",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "3D Rendering Engine"
+      },
+      "comment": {
+        "en": "Stub page for 3D Rendering Engine. Referenced by 8 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "accesscontrol",
+      "iri": "http://narrativegoldmine.com/ontology#AccessControl",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Access Control"
+      },
+      "comment": {
+        "en": "Stub page for Access Control. Referenced by 12 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
       "id": "ngm-artificialintelligence",
       "iri": "http://narrativegoldmine.com/ontology#ArtificialIntelligence",
       "baseIri": "http://narrativegoldmine.com/ontology",
@@ -38125,6 +38982,134 @@
       }
     },
     {
+      "id": "ngm-artificialintelligence",
+      "iri": "http://narrativegoldmine.com/ontology#Artificialintelligence",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "ArtificialIntelligence"
+      },
+      "comment": {
+        "en": "Stub page for ArtificialIntelligence. Referenced by 68 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "ngm-assetmanagement",
+      "iri": "http://narrativegoldmine.com/ontology#AssetManagement",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Asset Management"
+      },
+      "comment": {
+        "en": "Stub page for Asset Management. Referenced by 7 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "assettrading",
+      "iri": "http://narrativegoldmine.com/ontology#AssetTrading",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Asset Trading"
+      },
+      "comment": {
+        "en": "Stub page for Asset Trading. Referenced by 5 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "ngm-attentionmechanism",
+      "iri": "http://narrativegoldmine.com/ontology#Attentionmechanism",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "AttentionMechanism"
+      },
+      "comment": {
+        "en": "Stub page for AttentionMechanism. Referenced by 9 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "ngm-augmentedreality",
+      "iri": "http://narrativegoldmine.com/ontology#AugmentedReality",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Augmented Reality"
+      },
+      "comment": {
+        "en": "Stub page for Augmented Reality. Referenced by 5 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "authenticationservice",
+      "iri": "http://narrativegoldmine.com/ontology#AuthenticationService",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Authentication Service"
+      },
+      "comment": {
+        "en": "Stub page for Authentication Service. Referenced by 8 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "cloudinfrastructure",
+      "iri": "http://narrativegoldmine.com/ontology#CloudInfrastructure",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Cloud Infrastructure"
+      },
+      "comment": {
+        "en": "Stub page for Cloud Infrastructure. Referenced by 5 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "complianceverification",
+      "iri": "http://narrativegoldmine.com/ontology#ComplianceVerification",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Compliance Verification"
+      },
+      "comment": {
+        "en": "Stub page for Compliance Verification. Referenced by 11 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
       "id": "ngm-computervision",
       "iri": "http://narrativegoldmine.com/ontology#ComputerVision",
       "baseIri": "http://narrativegoldmine.com/ontology",
@@ -38135,6 +39120,134 @@
       "backgroundColor": "#808080",
       "label": {
         "en": "ComputerVision"
+      }
+    },
+    {
+      "id": "ngm-computervision",
+      "iri": "http://narrativegoldmine.com/ontology#Computervision",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "ComputerVision"
+      },
+      "comment": {
+        "en": "Stub page for ComputerVision. Referenced by 8 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "ngm-computervisiontask",
+      "iri": "http://narrativegoldmine.com/ontology#Computervisiontask",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "ComputerVisionTask"
+      },
+      "comment": {
+        "en": "Stub page for ComputerVisionTask. Referenced by 9 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "ngm-computinginfrastructure",
+      "iri": "http://narrativegoldmine.com/ontology#ComputingInfrastructure",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Computing Infrastructure"
+      },
+      "comment": {
+        "en": "Stub page for Computing Infrastructure. Referenced by 5 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "crossplatformidentity",
+      "iri": "http://narrativegoldmine.com/ontology#CrossPlatformIdentity",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Cross-Platform Identity"
+      },
+      "comment": {
+        "en": "Stub page for Cross-Platform Identity. Referenced by 6 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "crossplatforminteroperability",
+      "iri": "http://narrativegoldmine.com/ontology#CrossPlatformInteroperability",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Cross-Platform Interoperability"
+      },
+      "comment": {
+        "en": "Stub page for Cross-Platform Interoperability. Referenced by 7 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "ngm-daogovernance",
+      "iri": "http://narrativegoldmine.com/ontology#DaoGovernance",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "DAO Governance"
+      },
+      "comment": {
+        "en": "Stub page for DAO Governance. Referenced by 7 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "datastorage",
+      "iri": "http://narrativegoldmine.com/ontology#DataStorage",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Data Storage"
+      },
+      "comment": {
+        "en": "Stub page for Data Storage. Referenced by 6 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "ngm-databasesystem",
+      "iri": "http://narrativegoldmine.com/ontology#DatabaseSystem",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Database System"
+      },
+      "comment": {
+        "en": "Stub page for Database System. Referenced by 6 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -38167,6 +39280,54 @@
       }
     },
     {
+      "id": "disruptivetechnology",
+      "iri": "http://narrativegoldmine.com/ontology#Disruptivetechnology",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "DisruptiveTechnology"
+      },
+      "comment": {
+        "en": "Stub page for DisruptiveTechnology. Referenced by 9 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "distributedcomputing",
+      "iri": "http://narrativegoldmine.com/ontology#DistributedComputing",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Distributed Computing"
+      },
+      "comment": {
+        "en": "Stub page for Distributed Computing. Referenced by 5 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "ngm-distributeddatastructure",
+      "iri": "http://narrativegoldmine.com/ontology#Distributeddatastructure",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Distributeddatastructure"
+      },
+      "comment": {
+        "en": "Stub page for Distributeddatastructure. Referenced by 26 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
       "id": "domain",
       "iri": "http://narrativegoldmine.com/ontology#Domain",
       "baseIri": "http://narrativegoldmine.com/ontology",
@@ -38177,6 +39338,70 @@
       "backgroundColor": "#808080",
       "label": {
         "en": "Domain"
+      }
+    },
+    {
+      "id": "ngm-governanceframework",
+      "iri": "http://narrativegoldmine.com/ontology#GovernanceFramework",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Governance Framework"
+      },
+      "comment": {
+        "en": "Stub page for Governance Framework. Referenced by 6 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "ngm-identitymanagement",
+      "iri": "http://narrativegoldmine.com/ontology#IdentityManagement",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Identity Management"
+      },
+      "comment": {
+        "en": "Stub page for Identity Management. Referenced by 16 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "ngm-legalframework",
+      "iri": "http://narrativegoldmine.com/ontology#LegalFramework",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Legal Framework"
+      },
+      "comment": {
+        "en": "Stub page for Legal Framework. Referenced by 6 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "metadataschema",
+      "iri": "http://narrativegoldmine.com/ontology#MetadataSchema",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Metadata Schema"
+      },
+      "comment": {
+        "en": "Stub page for Metadata Schema. Referenced by 5 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -38193,6 +39418,22 @@
       }
     },
     {
+      "id": "ngm-motiontracking",
+      "iri": "http://narrativegoldmine.com/ontology#MotionTracking",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Motion Tracking"
+      },
+      "comment": {
+        "en": "Stub page for Motion Tracking. Referenced by 5 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
       "id": "ngm-naturallanguageprocessing",
       "iri": "http://narrativegoldmine.com/ontology#NaturalLanguageProcessing",
       "baseIri": "http://narrativegoldmine.com/ontology",
@@ -38203,6 +39444,198 @@
       "backgroundColor": "#808080",
       "label": {
         "en": "NaturalLanguageProcessing"
+      }
+    },
+    {
+      "id": "ngm-naturallanguageprocessing",
+      "iri": "http://narrativegoldmine.com/ontology#Naturallanguageprocessing",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "NaturalLanguageProcessing"
+      },
+      "comment": {
+        "en": "Stub page for NaturalLanguageProcessing. Referenced by 7 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "ngm-nlptask",
+      "iri": "http://narrativegoldmine.com/ontology#Nlptask",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "NLPTask"
+      },
+      "comment": {
+        "en": "Stub page for NLPTask. Referenced by 8 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "performanceoptimization",
+      "iri": "http://narrativegoldmine.com/ontology#PerformanceOptimization",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Performance Optimization"
+      },
+      "comment": {
+        "en": "Stub page for Performance Optimization. Referenced by 6 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "ngm-platformgovernance",
+      "iri": "http://narrativegoldmine.com/ontology#PlatformGovernance",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Platform Governance"
+      },
+      "comment": {
+        "en": "Stub page for Platform Governance. Referenced by 5 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "powersupply",
+      "iri": "http://narrativegoldmine.com/ontology#PowerSupply",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Power Supply"
+      },
+      "comment": {
+        "en": "Stub page for Power Supply. Referenced by 6 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "pricediscovery",
+      "iri": "http://narrativegoldmine.com/ontology#PriceDiscovery",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Price Discovery"
+      },
+      "comment": {
+        "en": "Stub page for Price Discovery. Referenced by 5 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "realtimerendering",
+      "iri": "http://narrativegoldmine.com/ontology#RealTimeRendering",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Real-Time Rendering"
+      },
+      "comment": {
+        "en": "Stub page for Real-Time Rendering. Referenced by 6 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "ngm-regulatoryframework",
+      "iri": "http://narrativegoldmine.com/ontology#RegulatoryFramework",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Regulatory Framework"
+      },
+      "comment": {
+        "en": "Stub page for Regulatory Framework. Referenced by 6 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "renderingengine",
+      "iri": "http://narrativegoldmine.com/ontology#RenderingEngine",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Rendering Engine"
+      },
+      "comment": {
+        "en": "Stub page for Rendering Engine. Referenced by 7 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "smartcontracts",
+      "iri": "http://narrativegoldmine.com/ontology#SmartContracts",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Smart Contracts"
+      },
+      "comment": {
+        "en": "Stub page for Smart Contracts. Referenced by 8 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "systeminteroperability",
+      "iri": "http://narrativegoldmine.com/ontology#SystemInteroperability",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "System Interoperability"
+      },
+      "comment": {
+        "en": "Stub page for System Interoperability. Referenced by 5 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "ngm-technicalstandard",
+      "iri": "http://narrativegoldmine.com/ontology#TechnicalStandard",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Technical Standard"
+      },
+      "comment": {
+        "en": "Stub page for Technical Standard. Referenced by 7 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -38219,6 +39652,22 @@
       },
       "comment": {
         "en": "The foundational meta-domain encompassing all technology-related knowledge domains within the Narrative Gold Mine ontology, serving as the top-level classification for artificial intelligence, bloc..."
+      }
+    },
+    {
+      "id": "uktechecosystem",
+      "iri": "http://narrativegoldmine.com/ontology#Uktechecosystem",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "UKTechEcosystem"
+      },
+      "comment": {
+        "en": "Stub page for UKTechEcosystem. Referenced by 6 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -39306,6 +40755,21 @@
       },
       "comment": {
         "en": "A iot sensor network component in the Robotics domain that required by IndustrialMetaverse."
+      }
+    },
+    {
+      "id": "rb-iotsensors",
+      "iri": "http://narrativegoldmine.com/robotics#IotSensors",
+      "baseIri": "http://narrativegoldmine.com/robotics",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#FF9800",
+      "label": {
+        "en": "IoT Sensors"
+      },
+      "comment": {
+        "en": "Stub page for IoT Sensors. Referenced by 5 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -40488,6 +41952,21 @@
       }
     },
     {
+      "id": "robotics",
+      "iri": "http://narrativegoldmine.com/robotics#Robotics",
+      "baseIri": "http://narrativegoldmine.com/robotics",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#FF9800",
+      "label": {
+        "en": "Robotics"
+      },
+      "comment": {
+        "en": "Stub page for Robotics. Referenced by 270 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
       "id": "roboticscoreconepts",
       "iri": "http://narrativegoldmine.com/robotics#RoboticsCoreConepts",
       "baseIri": "http://narrativegoldmine.com/robotics",
@@ -40515,6 +41994,21 @@
       },
       "comment": {
         "en": "The foundational technology domain encompassing autonomous and semi-autonomous mechanical systems, including manipulators, mobile robots, humanoids, and collaborative robots (cobots), along with th..."
+      }
+    },
+    {
+      "id": "roboticsdomain",
+      "iri": "http://narrativegoldmine.com/robotics#Roboticsdomain",
+      "baseIri": "http://narrativegoldmine.com/robotics",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#FF9800",
+      "label": {
+        "en": "RoboticsDomain"
+      },
+      "comment": {
+        "en": "Stub page for RoboticsDomain. Referenced by 140 pages. Auto-generated during corpus cleanup."
       }
     },
     {
@@ -41682,6 +43176,36 @@
       }
     },
     {
+      "id": "networkprotocol",
+      "iri": "http://narrativegoldmine.com/telecollaboration#NetworkProtocol",
+      "baseIri": "http://narrativegoldmine.com/telecollaboration",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#00BCD4",
+      "label": {
+        "en": "Network Protocol"
+      },
+      "comment": {
+        "en": "Stub page for Network Protocol. Referenced by 7 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "networkcomponent",
+      "iri": "http://narrativegoldmine.com/telecollaboration#Networkcomponent",
+      "baseIri": "http://narrativegoldmine.com/telecollaboration",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#00BCD4",
+      "label": {
+        "en": "Networkcomponent"
+      },
+      "comment": {
+        "en": "Stub page for Networkcomponent. Referenced by 32 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
       "id": "neuralradiancefields",
       "iri": "http://narrativegoldmine.com/telecollaboration#NeuralRadianceFields",
       "baseIri": "http://narrativegoldmine.com/telecollaboration",
@@ -42765,31 +44289,31 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-aioperator-aiapplications",
+      "id": "subclassof-aioperator-ai-aiapplications",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-aiprovider-aiapplications",
+      "id": "subclassof-aiprovider-ai-aiapplications",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-aiuser-aiapplications",
+      "id": "subclassof-aiuser-ai-aiapplications",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-edgeaisystem-aiapplications",
+      "id": "subclassof-edgeaisystem-ai-aiapplications",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-federatededgelearning-aiapplications",
+      "id": "subclassof-federatededgelearning-ai-aiapplications",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-edgeaiaccelerators-aiapplications",
+      "id": "subclassof-edgeaiaccelerators-ai-aiapplications",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-edgeaiforsmartcities-aiapplications",
+      "id": "subclassof-edgeaiforsmartcities-ai-aiapplications",
       "type": "rdfs:subClassOf"
     },
     {
@@ -42865,31 +44389,31 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-contextwindow-modelproperty",
+      "id": "subclassof-contextwindow-ai-modelproperty",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-parametercount-modelproperty",
+      "id": "subclassof-parametercount-ai-modelproperty",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-rewardmodel-modelproperty",
+      "id": "subclassof-rewardmodel-ai-modelproperty",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-posthocexplanation-modelproperty",
+      "id": "subclassof-posthocexplanation-ai-modelproperty",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-generalpurposeaimodel-modelproperty",
+      "id": "subclassof-generalpurposeaimodel-ai-modelproperty",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-maximumsequencelength-modelproperty",
+      "id": "subclassof-maximumsequencelength-ai-modelproperty",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-localexplanation-modelproperty",
+      "id": "subclassof-localexplanation-ai-modelproperty",
       "type": "rdfs:subClassOf"
     },
     {
@@ -43005,7 +44529,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-aiapplications-ai-artificialintelligence",
+      "id": "subclassof-ai-aiapplications-ai-artificialintelligence",
       "type": "rdfs:subClassOf"
     },
     {
@@ -43321,195 +44845,195 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-genesisblock-blockchainentity",
+      "id": "subclassof-genesisblock-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-transaction-blockchainentity",
+      "id": "subclassof-transaction-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-decentralization-blockchainentity",
+      "id": "subclassof-decentralization-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-chainreorganization-blockchainentity",
+      "id": "subclassof-chainreorganization-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-transactionpool-blockchainentity",
+      "id": "subclassof-transactionpool-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-transactionconfirmation-blockchainentity",
+      "id": "subclassof-transactionconfirmation-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-input-blockchainentity",
+      "id": "subclassof-input-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-output-blockchainentity",
+      "id": "subclassof-output-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-script-blockchainentity",
+      "id": "subclassof-script-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-opcodes-blockchainentity",
+      "id": "subclassof-opcodes-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-chainstate-blockchainentity",
+      "id": "subclassof-chainstate-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-bc-publickey-blockchainentity",
+      "id": "subclassof-bc-publickey-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-bc-tokeneconomics-blockchainentity",
+      "id": "subclassof-bc-tokeneconomics-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-blockchainscalability-blockchainentity",
+      "id": "subclassof-blockchainscalability-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-blockchaingovernance-blockchainentity",
+      "id": "subclassof-blockchaingovernance-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-bc-networkcomponent-blockchainentity",
+      "id": "subclassof-bc-networkcomponent-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-supplychainmanagement-blockchainentity",
+      "id": "subclassof-supplychainmanagement-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-public-keycryptography-blockchainentity",
+      "id": "subclassof-public-keycryptography-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-difficulty-blockchainentity",
+      "id": "subclassof-difficulty-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-blake2-blockchainentity",
+      "id": "subclassof-blake2-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-hashcollision-blockchainentity",
+      "id": "subclassof-hashcollision-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-cryptographiccommitment-blockchainentity",
+      "id": "subclassof-cryptographiccommitment-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-networksynchronization-blockchainentity",
+      "id": "subclassof-networksynchronization-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-nakamotoconsensus-blockchainentity",
+      "id": "subclassof-nakamotoconsensus-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-poolshare-blockchainentity",
+      "id": "subclassof-poolshare-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-difficultytarget-blockchainentity",
+      "id": "subclassof-difficultytarget-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-bc-blockchainnetwork-blockchainentity",
+      "id": "subclassof-bc-blockchainnetwork-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-node-blockchainentity",
+      "id": "subclassof-node-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-doublespending-blockchainentity",
+      "id": "subclassof-doublespending-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-sybilattack-blockchainentity",
+      "id": "subclassof-sybilattack-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-networklatency-blockchainentity",
+      "id": "subclassof-networklatency-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-permissionednetwork-blockchainentity",
+      "id": "subclassof-permissionednetwork-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-coin-blockchainentity",
+      "id": "subclassof-coin-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-nativetoken-blockchainentity",
+      "id": "subclassof-nativetoken-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-peerdiscovery-blockchainentity",
+      "id": "subclassof-peerdiscovery-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-bc-hashfunction-blockchainentity",
+      "id": "subclassof-bc-hashfunction-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-bc-proofofwork-blockchainentity",
+      "id": "subclassof-bc-proofofwork-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-peer-to-peernetwork-blockchainentity",
+      "id": "subclassof-peer-to-peernetwork-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-censorshipresistance-blockchainentity",
+      "id": "subclassof-censorshipresistance-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-gossipprotocol-blockchainentity",
+      "id": "subclassof-gossipprotocol-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-permissionlessnetwork-blockchainentity",
+      "id": "subclassof-permissionlessnetwork-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-bc-digitalsignature-blockchainentity",
+      "id": "subclassof-bc-digitalsignature-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-coinbasetransaction-blockchainentity",
+      "id": "subclassof-coinbasetransaction-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-bc-privatekey-blockchainentity",
+      "id": "subclassof-bc-privatekey-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-keccak-256-blockchainentity",
+      "id": "subclassof-keccak-256-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-consensusrule-blockchainentity",
+      "id": "subclassof-consensusrule-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mining-blockchainentity",
+      "id": "subclassof-mining-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-lightnode-blockchainentity",
+      "id": "subclassof-lightnode-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
@@ -43557,7 +45081,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-bc-publickey-cryptographicprimitive",
+      "id": "subclassof-bc-publickey-bc-cryptographicprimitive",
       "type": "rdfs:subClassOf"
     },
     {
@@ -44501,7 +46025,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-sharedarexperiences-augmentedreality",
+      "id": "subclassof-sharedarexperiences-augmentedreality",
       "type": "rdfs:subClassOf"
     },
     {
@@ -47330,63 +48854,63 @@
       ]
     },
     {
-      "id": "subclassof-aioperator-aiapplications",
+      "id": "subclassof-aioperator-ai-aiapplications",
       "domain": "aioperator",
-      "range": "aiapplications",
+      "range": "ai-aiapplications",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-aiprovider-aiapplications",
+      "id": "subclassof-aiprovider-ai-aiapplications",
       "domain": "aiprovider",
-      "range": "aiapplications",
+      "range": "ai-aiapplications",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-aiuser-aiapplications",
+      "id": "subclassof-aiuser-ai-aiapplications",
       "domain": "aiuser",
-      "range": "aiapplications",
+      "range": "ai-aiapplications",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-edgeaisystem-aiapplications",
+      "id": "subclassof-edgeaisystem-ai-aiapplications",
       "domain": "edgeaisystem",
-      "range": "aiapplications",
+      "range": "ai-aiapplications",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-federatededgelearning-aiapplications",
+      "id": "subclassof-federatededgelearning-ai-aiapplications",
       "domain": "federatededgelearning",
-      "range": "aiapplications",
+      "range": "ai-aiapplications",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-edgeaiaccelerators-aiapplications",
+      "id": "subclassof-edgeaiaccelerators-ai-aiapplications",
       "domain": "edgeaiaccelerators",
-      "range": "aiapplications",
+      "range": "ai-aiapplications",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-edgeaiforsmartcities-aiapplications",
+      "id": "subclassof-edgeaiforsmartcities-ai-aiapplications",
       "domain": "edgeaiforsmartcities",
-      "range": "aiapplications",
+      "range": "ai-aiapplications",
       "attributes": [
         "anonymous",
         "object"
@@ -47555,63 +49079,63 @@
       ]
     },
     {
-      "id": "subclassof-contextwindow-modelproperty",
+      "id": "subclassof-contextwindow-ai-modelproperty",
       "domain": "contextwindow",
-      "range": "modelproperty",
+      "range": "ai-modelproperty",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-parametercount-modelproperty",
+      "id": "subclassof-parametercount-ai-modelproperty",
       "domain": "parametercount",
-      "range": "modelproperty",
+      "range": "ai-modelproperty",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-rewardmodel-modelproperty",
+      "id": "subclassof-rewardmodel-ai-modelproperty",
       "domain": "rewardmodel",
-      "range": "modelproperty",
+      "range": "ai-modelproperty",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-posthocexplanation-modelproperty",
+      "id": "subclassof-posthocexplanation-ai-modelproperty",
       "domain": "posthocexplanation",
-      "range": "modelproperty",
+      "range": "ai-modelproperty",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-generalpurposeaimodel-modelproperty",
+      "id": "subclassof-generalpurposeaimodel-ai-modelproperty",
       "domain": "generalpurposeaimodel",
-      "range": "modelproperty",
+      "range": "ai-modelproperty",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-maximumsequencelength-modelproperty",
+      "id": "subclassof-maximumsequencelength-ai-modelproperty",
       "domain": "maximumsequencelength",
-      "range": "modelproperty",
+      "range": "ai-modelproperty",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-localexplanation-modelproperty",
+      "id": "subclassof-localexplanation-ai-modelproperty",
       "domain": "localexplanation",
-      "range": "modelproperty",
+      "range": "ai-modelproperty",
       "attributes": [
         "anonymous",
         "object"
@@ -47870,8 +49394,8 @@
       ]
     },
     {
-      "id": "subclassof-aiapplications-ai-artificialintelligence",
-      "domain": "aiapplications",
+      "id": "subclassof-ai-aiapplications-ai-artificialintelligence",
+      "domain": "ai-aiapplications",
       "range": "ai-artificialintelligence",
       "attributes": [
         "anonymous",
@@ -48581,432 +50105,432 @@
       ]
     },
     {
-      "id": "subclassof-genesisblock-blockchainentity",
+      "id": "subclassof-genesisblock-bc-blockchainentity",
       "domain": "genesisblock",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-transaction-blockchainentity",
+      "id": "subclassof-transaction-bc-blockchainentity",
       "domain": "transaction",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-decentralization-blockchainentity",
+      "id": "subclassof-decentralization-bc-blockchainentity",
       "domain": "decentralization",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-chainreorganization-blockchainentity",
+      "id": "subclassof-chainreorganization-bc-blockchainentity",
       "domain": "chainreorganization",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-transactionpool-blockchainentity",
+      "id": "subclassof-transactionpool-bc-blockchainentity",
       "domain": "transactionpool",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-transactionconfirmation-blockchainentity",
+      "id": "subclassof-transactionconfirmation-bc-blockchainentity",
       "domain": "transactionconfirmation",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-input-blockchainentity",
+      "id": "subclassof-input-bc-blockchainentity",
       "domain": "input",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-output-blockchainentity",
+      "id": "subclassof-output-bc-blockchainentity",
       "domain": "output",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-script-blockchainentity",
+      "id": "subclassof-script-bc-blockchainentity",
       "domain": "script",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-opcodes-blockchainentity",
+      "id": "subclassof-opcodes-bc-blockchainentity",
       "domain": "opcodes",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-chainstate-blockchainentity",
+      "id": "subclassof-chainstate-bc-blockchainentity",
       "domain": "chainstate",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-bc-publickey-blockchainentity",
+      "id": "subclassof-bc-publickey-bc-blockchainentity",
       "domain": "bc-publickey",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-bc-tokeneconomics-blockchainentity",
+      "id": "subclassof-bc-tokeneconomics-bc-blockchainentity",
       "domain": "bc-tokeneconomics",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-blockchainscalability-blockchainentity",
+      "id": "subclassof-blockchainscalability-bc-blockchainentity",
       "domain": "blockchainscalability",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-blockchaingovernance-blockchainentity",
+      "id": "subclassof-blockchaingovernance-bc-blockchainentity",
       "domain": "blockchaingovernance",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-bc-networkcomponent-blockchainentity",
+      "id": "subclassof-bc-networkcomponent-bc-blockchainentity",
       "domain": "bc-networkcomponent",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-supplychainmanagement-blockchainentity",
+      "id": "subclassof-supplychainmanagement-bc-blockchainentity",
       "domain": "supplychainmanagement",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-public-keycryptography-blockchainentity",
+      "id": "subclassof-public-keycryptography-bc-blockchainentity",
       "domain": "public-keycryptography",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-difficulty-blockchainentity",
+      "id": "subclassof-difficulty-bc-blockchainentity",
       "domain": "difficulty",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-blake2-blockchainentity",
+      "id": "subclassof-blake2-bc-blockchainentity",
       "domain": "blake2",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-hashcollision-blockchainentity",
+      "id": "subclassof-hashcollision-bc-blockchainentity",
       "domain": "hashcollision",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-cryptographiccommitment-blockchainentity",
+      "id": "subclassof-cryptographiccommitment-bc-blockchainentity",
       "domain": "cryptographiccommitment",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-networksynchronization-blockchainentity",
+      "id": "subclassof-networksynchronization-bc-blockchainentity",
       "domain": "networksynchronization",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-nakamotoconsensus-blockchainentity",
+      "id": "subclassof-nakamotoconsensus-bc-blockchainentity",
       "domain": "nakamotoconsensus",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-poolshare-blockchainentity",
+      "id": "subclassof-poolshare-bc-blockchainentity",
       "domain": "poolshare",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-difficultytarget-blockchainentity",
+      "id": "subclassof-difficultytarget-bc-blockchainentity",
       "domain": "difficultytarget",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-bc-blockchainnetwork-blockchainentity",
+      "id": "subclassof-bc-blockchainnetwork-bc-blockchainentity",
       "domain": "bc-blockchainnetwork",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-node-blockchainentity",
+      "id": "subclassof-node-bc-blockchainentity",
       "domain": "node",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-doublespending-blockchainentity",
+      "id": "subclassof-doublespending-bc-blockchainentity",
       "domain": "doublespending",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-sybilattack-blockchainentity",
+      "id": "subclassof-sybilattack-bc-blockchainentity",
       "domain": "sybilattack",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-networklatency-blockchainentity",
+      "id": "subclassof-networklatency-bc-blockchainentity",
       "domain": "networklatency",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-permissionednetwork-blockchainentity",
+      "id": "subclassof-permissionednetwork-bc-blockchainentity",
       "domain": "permissionednetwork",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-coin-blockchainentity",
+      "id": "subclassof-coin-bc-blockchainentity",
       "domain": "coin",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-nativetoken-blockchainentity",
+      "id": "subclassof-nativetoken-bc-blockchainentity",
       "domain": "nativetoken",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-peerdiscovery-blockchainentity",
+      "id": "subclassof-peerdiscovery-bc-blockchainentity",
       "domain": "peerdiscovery",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-bc-hashfunction-blockchainentity",
+      "id": "subclassof-bc-hashfunction-bc-blockchainentity",
       "domain": "bc-hashfunction",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-bc-proofofwork-blockchainentity",
+      "id": "subclassof-bc-proofofwork-bc-blockchainentity",
       "domain": "bc-proofofwork",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-peer-to-peernetwork-blockchainentity",
+      "id": "subclassof-peer-to-peernetwork-bc-blockchainentity",
       "domain": "peer-to-peernetwork",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-censorshipresistance-blockchainentity",
+      "id": "subclassof-censorshipresistance-bc-blockchainentity",
       "domain": "censorshipresistance",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-gossipprotocol-blockchainentity",
+      "id": "subclassof-gossipprotocol-bc-blockchainentity",
       "domain": "gossipprotocol",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-permissionlessnetwork-blockchainentity",
+      "id": "subclassof-permissionlessnetwork-bc-blockchainentity",
       "domain": "permissionlessnetwork",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-bc-digitalsignature-blockchainentity",
+      "id": "subclassof-bc-digitalsignature-bc-blockchainentity",
       "domain": "bc-digitalsignature",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-coinbasetransaction-blockchainentity",
+      "id": "subclassof-coinbasetransaction-bc-blockchainentity",
       "domain": "coinbasetransaction",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-bc-privatekey-blockchainentity",
+      "id": "subclassof-bc-privatekey-bc-blockchainentity",
       "domain": "bc-privatekey",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-keccak-256-blockchainentity",
+      "id": "subclassof-keccak-256-bc-blockchainentity",
       "domain": "keccak-256",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-consensusrule-blockchainentity",
+      "id": "subclassof-consensusrule-bc-blockchainentity",
       "domain": "consensusrule",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-mining-blockchainentity",
+      "id": "subclassof-mining-bc-blockchainentity",
       "domain": "mining",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-lightnode-blockchainentity",
+      "id": "subclassof-lightnode-bc-blockchainentity",
       "domain": "lightnode",
-      "range": "blockchainentity",
+      "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
         "object"
@@ -49112,9 +50636,9 @@
       ]
     },
     {
-      "id": "subclassof-bc-publickey-cryptographicprimitive",
+      "id": "subclassof-bc-publickey-bc-cryptographicprimitive",
       "domain": "bc-publickey",
-      "range": "cryptographicprimitive",
+      "range": "bc-cryptographicprimitive",
       "attributes": [
         "anonymous",
         "object"
@@ -51236,8 +52760,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-sharedarexperiences-augmentedreality",
-      "domain": "mv-sharedarexperiences",
+      "id": "subclassof-sharedarexperiences-augmentedreality",
+      "domain": "sharedarexperiences",
       "range": "augmentedreality",
       "attributes": [
         "anonymous",

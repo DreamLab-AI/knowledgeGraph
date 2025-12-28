@@ -7,7 +7,7 @@ The most interesting thing about DAOs is that...
   - ontology:: true
   - public-access:: true
   - term-id:: BC-9885
-  - preferred-term:: The most interesting thing about DAOs is that...
+  - preferred-term:: DAO
   - source-domain:: bc
   - owl:class:: bc:TheMostInterestingThingAboutDaosIsThat
   - status:: draft

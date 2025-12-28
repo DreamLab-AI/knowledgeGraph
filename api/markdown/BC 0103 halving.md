@@ -5,7 +5,7 @@ id:: unknown-ontology
   - ontology:: true
   - public-access:: true
   - term-id:: MV-9748
-  - preferred-term:: id:: unknownontology
+  - preferred-term:: BC 0103 halving
   - source-domain:: mv
   - owl:class:: mv:IdUnknownontology
   - status:: draft

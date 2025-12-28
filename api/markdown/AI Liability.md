@@ -7,7 +7,7 @@ To comprehend the legal challenges posed by [[Artificial...
   - ontology:: true
   - public-access:: true
   - term-id:: AI-8013
-  - preferred-term:: To comprehend the legal challenges posed by [[Artificial...
+  - preferred-term:: AI Liability
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:ToComprehendTheLegalChallengesPosedByartificial

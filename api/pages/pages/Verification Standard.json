@@ -8,10 +8,10 @@
   ],
   "wiki_links": [
     "metaverse",
-    "Authentication",
     "Digital Identity",
-    "Standards",
-    "Verifiable Credentials"
+    "Authentication",
+    "Verifiable Credentials",
+    "Standards"
   ],
   "ontology": {
     "term_id": "MV-10102",

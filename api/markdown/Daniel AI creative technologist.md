@@ -5,7 +5,7 @@
   - ontology:: true
   - public-access:: true
   - term-id:: MV-9712
-  - preferred-term:: Meshroom is a free, opensource photogrammetry application that...
+  - preferred-term:: Daniel AI creative technologist
   - source-domain:: mv
   - owl:class:: mv:MeshroomIsAFreeOpensourcePhotogrammetryApplicationThat
   - status:: draft

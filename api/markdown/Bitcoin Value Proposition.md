@@ -5,7 +5,7 @@ id:: 661d5f6a-ce5e-479e-8722-2128890607bd
   - ontology:: true
   - public-access:: true
   - term-id:: BC-9951
-  - preferred-term:: id:: 661d5f6ace5e479e87222128890607bd
+  - preferred-term:: Bitcoin Value Proposition
   - source-domain:: bc
   - owl:class:: bc:Id661d5f6ace5e479e87222128890607bd
   - status:: draft

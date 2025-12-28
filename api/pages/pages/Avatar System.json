@@ -15,13 +15,13 @@
     "Character Model"
   ],
   "wiki_links": [
-    "Virtual Character System",
     "Input Processing",
-    "Animation Controller",
-    "Embodied Presence",
+    "Social Interaction",
     "User Representation",
+    "Animation Controller",
+    "Virtual Character System",
     "3D Rendering Engine",
-    "Social Interaction"
+    "Embodied Presence"
   ],
   "ontology": {
     "term_id": "MV-9792",
