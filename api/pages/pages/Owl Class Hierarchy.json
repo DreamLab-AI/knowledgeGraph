@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: owl-class-hierarchy-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9989\n\t- source-domain:: mv\n\t- preferred-term:: OWL Class Hierarchy\n\t- status:: active\n\t- definition:: The taxonomic structure of classes and subclasses defined in the Web Ontology Language (OWL) that organizes concepts into inheritance relationships, enabling automated reasoning, consistency checking, and inference of implicit knowledge in semantic web applications.\n\t- owl:class:: mv:OwlClassHierarchy\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: owl-class-hierarchy-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Ontology Structure]]\n\t\t- related-to:: [[Semantic Web]]\n\t\t- related-to:: [[Knowledge Representation]]\n\t\t- related-to:: [[OWL]]\n\t\t- enables:: [[Automated Reasoning]]\n\t- #### OWL Versions\n\t  collapsed:: true\n\t\t- OWL Lite: Simplified subset for basic classification\n\t\t- OWL DL: Description Logic with computational completeness\n\t\t- OWL Full: Maximum expressivity without decidability guarantees\n\t\t- OWL 2: Extended revision published in 2009/2012\n\t- #### Key Features\n\t  collapsed:: true\n\t\t- Formal semantics enabling automated reasoning\n\t\t- Reasoners like HermiT, Pellet, Fact++ for inference\n\t\t- Complex property relationships and cardinality constraints\n\t\t- Support for transitivity, symmetry, and other property characteristics\n\t\t- Integration with RDF and RDFS for semantic web stack",
   "backlinks": [],
   "wiki_links": [
-    "Knowledge Representation",
-    "OWL",
-    "Semantic Web",
-    "Automated Reasoning",
     "Ontology Structure",
-    "metaverse"
+    "metaverse",
+    "Knowledge Representation",
+    "Semantic Web",
+    "OWL",
+    "Automated Reasoning"
   ],
   "ontology": {
     "term_id": "MV-9989",

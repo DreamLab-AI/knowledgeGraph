@@ -17,21 +17,21 @@
     "State Estimation"
   ],
   "wiki_links": [
-    "Robot Control",
-    "Collaborative Robot",
+    "Mobile Robot",
+    "Robot Sensor",
     "SwarmRobotics",
-    "Artificial Intelligence",
+    "Robot Kinematics",
     "HumanRobotInteraction",
     "Manipulator",
     "Telecollaboration",
-    "Motion Planning",
+    "Metaverse Technology",
     "Technology Domain",
-    "Robot Kinematics",
-    "Robot Sensor",
-    "Mobile Robot",
+    "Collaborative Robot",
+    "Robot Control",
     "Humanoid Robot",
+    "Artificial Intelligence",
     "Robotics Systems",
-    "Metaverse Technology"
+    "Motion Planning"
   ],
   "ontology": {
     "term_id": "RB-0001",

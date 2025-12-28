@@ -9,17 +9,17 @@
     "Digital Asset Ecosystem"
   ],
   "wiki_links": [
-    "Smart Contracts",
     "Digital Value Exchange",
-    "Blockchain Infrastructure",
-    "Crypto Economy",
     "NFT Market",
-    "Virtual Commerce",
-    "Metaverse Commerce",
-    "Economic Systems",
     "Token Economics",
+    "Metaverse Commerce",
+    "Virtual Commerce",
     "metaverse",
-    "Digital Payments"
+    "Digital Payments",
+    "Smart Contracts",
+    "Economic Systems",
+    "Blockchain Infrastructure",
+    "Crypto Economy"
   ],
   "ontology": {
     "term_id": "MV-9856",

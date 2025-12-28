@@ -10,11 +10,11 @@
     "Technical Standards"
   ],
   "wiki_links": [
-    "Interoperability",
     "Technical Standards",
-    "Standards",
     "Standards Conformance",
-    "metaverse"
+    "metaverse",
+    "Interoperability",
+    "Standards"
   ],
   "ontology": {
     "term_id": "MV-10071",

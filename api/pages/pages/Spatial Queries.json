@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "GIS Analysis",
+    "R-Tree Indexing",
     "Location Based Search",
     "Spatial Database",
-    "R-Tree Indexing",
-    "Database Query",
-    "metaverse"
+    "metaverse",
+    "Database Query"
   ],
   "ontology": {
     "term_id": "MV-10064",

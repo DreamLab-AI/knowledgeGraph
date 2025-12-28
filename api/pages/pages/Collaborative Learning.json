@@ -7,17 +7,17 @@
     "Education Metaverse"
   ],
   "wiki_links": [
-    "Remote Collaboration",
-    "Virtual Environment",
-    "Metaverse Learning",
-    "Educational Methodology",
     "Distance Education",
-    "Social Learning",
     "Shared Workspace",
-    "Communication Tools",
-    "Knowledge Co-Construction",
     "VR Education",
-    "metaverse"
+    "Knowledge Co-Construction",
+    "metaverse",
+    "Social Learning",
+    "Educational Methodology",
+    "Metaverse Learning",
+    "Virtual Environment",
+    "Remote Collaboration",
+    "Communication Tools"
   ],
   "ontology": {
     "term_id": "MV-9822",

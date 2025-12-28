@@ -9,17 +9,17 @@
     "Digital Currency"
   ],
   "wiki_links": [
-    "CBDC",
-    "Digital Wallet",
-    "Mobile Payments",
-    "Payment Processor",
-    "Cryptocurrency",
+    "Network Infrastructure",
     "Virtual Purchases",
+    "CBDC",
     "Financial Transactions",
     "metaverse",
-    "Network Infrastructure",
-    "Cross-Border Transfer",
-    "E-Commerce"
+    "Mobile Payments",
+    "Digital Wallet",
+    "Cryptocurrency",
+    "E-Commerce",
+    "Payment Processor",
+    "Cross-Border Transfer"
   ],
   "ontology": {
     "term_id": "MV-9865",

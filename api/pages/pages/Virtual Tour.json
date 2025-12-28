@@ -7,11 +7,11 @@
     "ETSI_Domain_Application___Tourism"
   ],
   "wiki_links": [
-    "Museum Technology",
-    "Real Estate Technology",
-    "Immersive Experience",
     "360-Degree Photography",
-    "metaverse"
+    "Immersive Experience",
+    "metaverse",
+    "Real Estate Technology",
+    "Museum Technology"
   ],
   "ontology": {
     "term_id": "MV-10149",
