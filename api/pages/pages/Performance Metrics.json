@@ -11,10 +11,10 @@
   "wiki_links": [
     "Accuracy",
     "Artificial Intelligence",
-    "Machine Learning",
-    "AUC",
-    "Precision",
     "Recall",
+    "Machine Learning",
+    "Precision",
+    "AUC",
     "F1 Score"
   ],
   "ontology": {

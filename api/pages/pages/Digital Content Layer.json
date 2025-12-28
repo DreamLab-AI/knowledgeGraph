@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "Rendering Engine",
-    "Dynamic Rendering",
-    "Scene Graph",
-    "metaverse",
-    "3D Assets",
-    "Content Composition",
-    "AR Content",
-    "Asset Management",
-    "Spatial Mapping",
     "Metaverse Architecture",
-    "Layer Management"
+    "Content Composition",
+    "Spatial Mapping",
+    "Dynamic Rendering",
+    "3D Assets",
+    "AR Content",
+    "Layer Management",
+    "Scene Graph",
+    "Asset Management",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9853",

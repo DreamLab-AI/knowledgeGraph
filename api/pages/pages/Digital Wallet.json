@@ -30,16 +30,16 @@
     "Loyalty Token"
   ],
   "wiki_links": [
-    "Web3",
     "Cryptographic Security",
-    "Cryptocurrency Storage",
-    "Private Key",
+    "Web3",
     "Hardware Wallet",
-    "Blockchain Network",
-    "Asset Management",
+    "Private Key",
     "Transaction Signing",
     "Self-Custody",
-    "DeFi Access"
+    "DeFi Access",
+    "Cryptocurrency Storage",
+    "Asset Management",
+    "Blockchain Network"
   ],
   "ontology": {
     "term_id": "MV-9881",

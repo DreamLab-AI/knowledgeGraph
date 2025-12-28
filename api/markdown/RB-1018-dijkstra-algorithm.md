@@ -34,8 +34,8 @@
 - #### Relationships
   id:: rb-1018-relationships
   - is-subclass-of:: [[RB-1016-path-planning]], [[Graph Search]]
-  - alternative-to:: [[RB-1017-rrt-algorithm]], [[A* Algorithm]]
-  - generalized-by:: [[A* Algorithm]] (with heuristic)
+  - alternative-to:: [[RB-1017-rrt-algorithm]], [[A-Star Algorithm]]
+  - generalized-by:: [[A-Star Algorithm]] (with heuristic)
   - special-case-of:: [[Bellman-Ford Algorithm]] (simpler, faster)
   - uses:: [[Priority Queue]], [[Graph Representation]]
   - applied-in:: [[Navigation]], [[Network Routing]], [[GPS Systems]]

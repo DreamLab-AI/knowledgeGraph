@@ -7,17 +7,17 @@
     "Digital Tax Compliance Node"
   ],
   "wiki_links": [
-    "Micropayments",
+    "Stablecoin",
     "Digital Wallet",
-    "DeFi",
-    "Blockchain Network",
-    "Payment Gateway",
-    "metaverse",
-    "Cross-Border Payments",
-    "Virtual Transactions",
     "Financial Infrastructure",
+    "Virtual Transactions",
+    "Cross-Border Payments",
+    "Payment Gateway",
     "Cryptocurrency",
-    "Stablecoin"
+    "metaverse",
+    "Micropayments",
+    "Blockchain Network",
+    "DeFi"
   ],
   "ontology": {
     "term_id": "MV-9864",

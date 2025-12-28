@@ -12,10 +12,10 @@
   ],
   "wiki_links": [
     "Collaborative Editing",
-    "Real-Time Collaboration",
     "Virtual Meeting",
     "Telecollaboration",
-    "Shared Workspace"
+    "Shared Workspace",
+    "Real-Time Collaboration"
   ],
   "ontology": {
     "term_id": "TC-0603",

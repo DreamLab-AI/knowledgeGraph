@@ -7,11 +7,11 @@
     "Decentralised Web"
   ],
   "wiki_links": [
-    "BlockchainDomain",
-    "ERC-4337",
     "Blockchain",
+    "BlockchainDomain",
+    "Ethereum",
     "Ethereum Standard",
-    "Ethereum"
+    "ERC-4337"
   ],
   "ontology": {
     "term_id": "BC-9005",

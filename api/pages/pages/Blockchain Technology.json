@@ -28,19 +28,19 @@
     "Network Component"
   ],
   "wiki_links": [
-    "Consensus Mechanism",
-    "Blockchain Network",
-    "Artificial Intelligence",
-    "Tokenomics",
-    "Technology Domain",
-    "Metaverse Technology",
-    "Decentralised Application",
     "Blockchain Technology",
+    "Distributed Ledger",
+    "Consensus Mechanism",
+    "Artificial Intelligence",
     "Smart Contract",
     "Telecollaboration",
-    "Distributed Ledger",
     "Cryptocurrency",
-    "Cryptographic System"
+    "Decentralised Application",
+    "Technology Domain",
+    "Tokenomics",
+    "Cryptographic System",
+    "Blockchain Network",
+    "Metaverse Technology"
   ],
   "ontology": {
     "term_id": "BC-0001",

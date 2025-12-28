@@ -187,7 +187,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "aiagentsystem",
+      "id": "ai-aiagentsystem",
       "type": "owl:Class"
     },
     {
@@ -291,7 +291,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "astaralgorithm",
+      "id": "ai-astaralgorithm",
       "type": "owl:Class"
     },
     {
@@ -451,7 +451,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "aidevelopment",
+      "id": "ai-aidevelopment",
       "type": "owl:Class"
     },
     {
@@ -543,7 +543,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "algorithmictransparencyindex",
+      "id": "ai-algorithmictransparencyindex",
       "type": "owl:Class"
     },
     {
@@ -679,7 +679,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "computationandintelligencedomain",
+      "id": "ai-computationandintelligencedomain",
       "type": "owl:Class"
     },
     {
@@ -735,7 +735,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "conversationalai",
+      "id": "ai-conversationalai",
       "type": "owl:Class"
     },
     {
@@ -751,7 +751,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "creativemediadomain",
+      "id": "ai-creativemediadomain",
       "type": "owl:Class"
     },
     {
@@ -951,7 +951,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "differentialprivacy",
+      "id": "ai-differentialprivacy",
       "type": "owl:Class"
     },
     {
@@ -1287,7 +1287,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "infrastructuredomain",
+      "id": "ai-infrastructuredomain",
       "type": "owl:Class"
     },
     {
@@ -1303,7 +1303,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "interactiondomain",
+      "id": "ai-interactiondomain",
       "type": "owl:Class"
     },
     {
@@ -1615,7 +1615,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "networkprotocol",
+      "id": "ai-networkprotocol",
       "type": "owl:Class"
     },
     {
@@ -1671,7 +1671,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "ontologyinllmoperations",
+      "id": "ai-ontologyinllmoperations",
       "type": "owl:Class"
     },
     {
@@ -2119,7 +2119,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "technologyadoption",
+      "id": "ai-technologyadoption",
       "type": "owl:Class"
     },
     {
@@ -2215,7 +2215,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "trustandgovernancedomain",
+      "id": "ai-trustandgovernancedomain",
       "type": "owl:Class"
     },
     {
@@ -2255,7 +2255,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "voiceinteraction",
+      "id": "ai-voiceinteraction",
       "type": "owl:Class"
     },
     {
@@ -2387,7 +2387,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "bitcoin",
+      "id": "bc-bitcoin",
       "type": "owl:Class"
     },
     {
@@ -2439,7 +2439,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "blockchain",
+      "id": "bc-blockchain",
       "type": "owl:Class"
     },
     {
@@ -2479,7 +2479,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "blockchainscalability",
+      "id": "bc-blockchainscalability",
       "type": "owl:Class"
     },
     {
@@ -2487,7 +2487,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "blockchaintechnology",
+      "id": "bc-blockchaintechnology",
       "type": "owl:Class"
     },
     {
@@ -2515,7 +2515,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "carboncredittracking",
+      "id": "bc-carboncredittracking",
       "type": "owl:Class"
     },
     {
@@ -2535,7 +2535,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "cbdcframeworks",
+      "id": "bc-cbdcframeworks",
       "type": "owl:Class"
     },
     {
@@ -2667,7 +2667,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "cryptocurrency",
+      "id": "bc-cryptocurrency",
       "type": "owl:Class"
     },
     {
@@ -2731,7 +2731,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "dao",
+      "id": "bc-dao",
       "type": "owl:Class"
     },
     {
@@ -2779,7 +2779,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "decentralizedidentifiers",
+      "id": "bc-decentralizedidentifiers",
       "type": "owl:Class"
     },
     {
@@ -2791,7 +2791,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "delegatedemocracy",
+      "id": "bc-delegatedemocracy",
       "type": "owl:Class"
     },
     {
@@ -2871,7 +2871,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "distributedarchitecture",
+      "id": "bc-distributedarchitecture",
       "type": "owl:Class"
     },
     {
@@ -2983,7 +2983,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "environmentalimpactassessment",
+      "id": "bc-environmentalimpactassessment",
       "type": "owl:Class"
     },
     {
@@ -3011,7 +3011,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "esgreporting",
+      "id": "bc-esgreporting",
       "type": "owl:Class"
     },
     {
@@ -3127,7 +3127,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "governancetoken",
+      "id": "bc-governancetoken",
       "type": "owl:Class"
     },
     {
@@ -3267,7 +3267,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "layer2",
+      "id": "bc-layer2",
       "type": "owl:Class"
     },
     {
@@ -3295,7 +3295,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "liquidproofofstake",
+      "id": "bc-liquidproofofstake",
       "type": "owl:Class"
     },
     {
@@ -3367,7 +3367,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "middlewarelayer",
+      "id": "bc-middlewarelayer",
       "type": "owl:Class"
     },
     {
@@ -3399,11 +3399,11 @@
       "type": "owl:Class"
     },
     {
-      "id": "multisiggovernance",
+      "id": "bc-multisiggovernance",
       "type": "owl:Class"
     },
     {
-      "id": "nft",
+      "id": "bc-nft",
       "type": "owl:Class"
     },
     {
@@ -3451,7 +3451,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "nftstandards",
+      "id": "bc-nftstandards",
       "type": "owl:Class"
     },
     {
@@ -3471,11 +3471,11 @@
       "type": "owl:Class"
     },
     {
-      "id": "nominatedproofofstake",
+      "id": "bc-nominatedproofofstake",
       "type": "owl:Class"
     },
     {
-      "id": "nonfungibletoken",
+      "id": "bc-nonfungibletoken",
       "type": "owl:Class"
     },
     {
@@ -3491,7 +3491,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "onchainvoting",
+      "id": "bc-onchainvoting",
       "type": "owl:Class"
     },
     {
@@ -3627,7 +3627,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "proofbasedconsensus",
+      "id": "bc-proofbasedconsensus",
       "type": "owl:Class"
     },
     {
@@ -3683,7 +3683,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "pureproofofstake",
+      "id": "bc-pureproofofstake",
       "type": "owl:Class"
     },
     {
@@ -3767,7 +3767,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "selfsovereignidentity",
+      "id": "bc-selfsovereignidentity",
       "type": "owl:Class"
     },
     {
@@ -3835,7 +3835,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "stablecoin",
+      "id": "bc-stablecoin",
       "type": "owl:Class"
     },
     {
@@ -3947,7 +3947,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "tokenization",
+      "id": "bc-tokenization",
       "type": "owl:Class"
     },
     {
@@ -3959,7 +3959,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "tokenomicsgovernance",
+      "id": "bc-tokenomicsgovernance",
       "type": "owl:Class"
     },
     {
@@ -3967,7 +3967,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "transaction",
+      "id": "bc-transaction",
       "type": "owl:Class"
     },
     {
@@ -4035,7 +4035,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "verifiablecredentials",
+      "id": "bc-verifiablecredentials",
       "type": "owl:Class"
     },
     {
@@ -4147,7 +4147,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "aigovernanceframework",
+      "id": "mv-aigovernanceframework",
       "type": "owl:Class"
     },
     {
@@ -4195,7 +4195,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "auc",
+      "id": "mv-auc",
       "type": "owl:Class"
     },
     {
@@ -4259,7 +4259,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "aitransparencyframework",
+      "id": "mv-aitransparencyframework",
       "type": "owl:Class"
     },
     {
@@ -4587,7 +4587,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "c2pastandard",
+      "id": "mv-c2pastandard",
       "type": "owl:Class"
     },
     {
@@ -4703,7 +4703,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "cloudcomputing",
+      "id": "mv-cloudcomputing",
       "type": "owl:Class"
     },
     {
@@ -4903,7 +4903,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "crosschainbridge",
+      "id": "mv-crosschainbridge",
       "type": "owl:Class"
     },
     {
@@ -4939,7 +4939,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "culturalheritagexrexperience",
+      "id": "mv-culturalheritagexrexperience",
       "type": "owl:Class"
     },
     {
@@ -5835,7 +5835,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "etsimetaversedomainmodel",
+      "id": "mv-etsimetaversedomainmodel",
       "type": "owl:Class"
     },
     {
@@ -5859,7 +5859,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "explainability",
+      "id": "mv-explainability",
       "type": "owl:Class"
     },
     {
@@ -5931,7 +5931,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "finetuning",
+      "id": "mv-finetuning",
       "type": "owl:Class"
     },
     {
@@ -5983,7 +5983,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "gdprarticle45",
+      "id": "mv-gdprarticle45",
       "type": "owl:Class"
     },
     {
@@ -6047,7 +6047,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "governancemodel",
+      "id": "mv-governancemodel",
       "type": "owl:Class"
     },
     {
@@ -6071,7 +6071,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "hapticfeedback",
+      "id": "mv-hapticfeedback",
       "type": "owl:Class"
     },
     {
@@ -6311,7 +6311,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "inclusivexrexperience",
+      "id": "mv-inclusivexrexperience",
       "type": "owl:Class"
     },
     {
@@ -6347,7 +6347,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-infraredledilluminator",
+      "id": "infraredledilluminator",
       "type": "owl:Class"
     },
     {
@@ -6407,7 +6407,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "interpretability",
+      "id": "mv-interpretability",
       "type": "owl:Class"
     },
     {
@@ -6563,7 +6563,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "machinelearningmodel",
+      "id": "mv-machinelearningmodel",
       "type": "owl:Class"
     },
     {
@@ -6695,7 +6695,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "metaversedomain",
+      "id": "mv-metaversedomain",
       "type": "owl:Class"
     },
     {
@@ -6831,7 +6831,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "nearestneighborsearch",
+      "id": "mv-nearestneighborsearch",
       "type": "owl:Class"
     },
     {
@@ -7095,7 +7095,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "precision",
+      "id": "mv-precision",
       "type": "owl:Class"
     },
     {
@@ -7251,7 +7251,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "recall",
+      "id": "mv-recall",
       "type": "owl:Class"
     },
     {
@@ -7375,7 +7375,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "slam",
+      "id": "mv-slam",
       "type": "owl:Class"
     },
     {
@@ -7391,7 +7391,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "scenegraph",
+      "id": "mv-scenegraph",
       "type": "owl:Class"
     },
     {
@@ -7491,7 +7491,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-sharedarexperiences",
+      "id": "sharedarexperiences",
       "type": "owl:Class"
     },
     {
@@ -7583,7 +7583,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "sparqlqueryengine",
+      "id": "mv-sparqlqueryengine",
       "type": "owl:Class"
     },
     {
@@ -8031,7 +8031,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "valuetransfer",
+      "id": "mv-valuetransfer",
       "type": "owl:Class"
     },
     {
@@ -8059,7 +8059,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "virtualasset",
+      "id": "mv-virtualasset",
       "type": "owl:Class"
     },
     {
@@ -8351,7 +8351,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "vocabulary",
+      "id": "mv-vocabulary",
       "type": "owl:Class"
     },
     {
@@ -8459,7 +8459,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "xrtestinginfrastructure",
+      "id": "mv-xrtestinginfrastructure",
       "type": "owl:Class"
     },
     {
@@ -8711,7 +8711,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "autonomousagent",
+      "id": "rb-autonomousagent",
       "type": "owl:Class"
     },
     {
@@ -8967,7 +8967,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "inversekinematics",
+      "id": "rb-inversekinematics",
       "type": "owl:Class"
     },
     {
@@ -9936,7 +9936,7 @@
       }
     },
     {
-      "id": "aiagentsystem",
+      "id": "ai-aiagentsystem",
       "iri": "http://narrativegoldmine.com/ai#AIAgentSystem",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -10299,7 +10299,7 @@
       }
     },
     {
-      "id": "astaralgorithm",
+      "id": "ai-astaralgorithm",
       "iri": "http://narrativegoldmine.com/ai#AStarAlgorithm",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -10812,7 +10812,7 @@
       }
     },
     {
-      "id": "aidevelopment",
+      "id": "ai-aidevelopment",
       "iri": "http://narrativegoldmine.com/ai#AiDevelopment",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -11136,7 +11136,7 @@
       }
     },
     {
-      "id": "algorithmictransparencyindex",
+      "id": "ai-algorithmictransparencyindex",
       "iri": "http://narrativegoldmine.com/ai#AlgorithmicTransparencyIndex",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -11583,7 +11583,7 @@
       }
     },
     {
-      "id": "computationandintelligencedomain",
+      "id": "ai-computationandintelligencedomain",
       "iri": "http://narrativegoldmine.com/ai#Computationandintelligencedomain",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -11775,7 +11775,7 @@
       }
     },
     {
-      "id": "conversationalai",
+      "id": "ai-conversationalai",
       "iri": "http://narrativegoldmine.com/ai#ConversationalAi",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -11826,7 +11826,7 @@
       }
     },
     {
-      "id": "creativemediadomain",
+      "id": "ai-creativemediadomain",
       "iri": "http://narrativegoldmine.com/ai#Creativemediadomain",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -12552,7 +12552,7 @@
       }
     },
     {
-      "id": "differentialprivacy",
+      "id": "ai-differentialprivacy",
       "iri": "http://narrativegoldmine.com/ai#DifferentialPrivacy",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -13716,7 +13716,7 @@
       }
     },
     {
-      "id": "infrastructuredomain",
+      "id": "ai-infrastructuredomain",
       "iri": "http://narrativegoldmine.com/ai#Infrastructuredomain",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -13770,7 +13770,7 @@
       }
     },
     {
-      "id": "interactiondomain",
+      "id": "ai-interactiondomain",
       "iri": "http://narrativegoldmine.com/ai#Interactiondomain",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -14865,7 +14865,7 @@
       }
     },
     {
-      "id": "networkprotocol",
+      "id": "ai-networkprotocol",
       "iri": "http://narrativegoldmine.com/ai#NetworkProtocol",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -15054,7 +15054,7 @@
       }
     },
     {
-      "id": "ontologyinllmoperations",
+      "id": "ai-ontologyinllmoperations",
       "iri": "http://narrativegoldmine.com/ai#OntologyInLlmOperations",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -16590,7 +16590,7 @@
       }
     },
     {
-      "id": "technologyadoption",
+      "id": "ai-technologyadoption",
       "iri": "http://narrativegoldmine.com/ai#TechnologyAdoption",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -16914,7 +16914,7 @@
       }
     },
     {
-      "id": "trustandgovernancedomain",
+      "id": "ai-trustandgovernancedomain",
       "iri": "http://narrativegoldmine.com/ai#Trustandgovernancedomain",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -17055,7 +17055,7 @@
       }
     },
     {
-      "id": "voiceinteraction",
+      "id": "ai-voiceinteraction",
       "iri": "http://narrativegoldmine.com/ai#VoiceInteraction",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -17529,7 +17529,7 @@
       }
     },
     {
-      "id": "bitcoin",
+      "id": "bc-bitcoin",
       "iri": "http://narrativegoldmine.com/blockchain#Bitcoin",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -17715,7 +17715,7 @@
       }
     },
     {
-      "id": "blockchain",
+      "id": "bc-blockchain",
       "iri": "http://narrativegoldmine.com/blockchain#Blockchain",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -17862,7 +17862,7 @@
       }
     },
     {
-      "id": "blockchainscalability",
+      "id": "bc-blockchainscalability",
       "iri": "http://narrativegoldmine.com/blockchain#BlockchainScalability",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -17892,7 +17892,7 @@
       }
     },
     {
-      "id": "blockchaintechnology",
+      "id": "bc-blockchaintechnology",
       "iri": "http://narrativegoldmine.com/blockchain#BlockchainTechnology",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -17985,7 +17985,7 @@
       }
     },
     {
-      "id": "carboncredittracking",
+      "id": "bc-carboncredittracking",
       "iri": "http://narrativegoldmine.com/blockchain#CarbonCreditTracking",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -18057,7 +18057,7 @@
       }
     },
     {
-      "id": "cbdcframeworks",
+      "id": "bc-cbdcframeworks",
       "iri": "http://narrativegoldmine.com/blockchain#CbdcFrameworks",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -18531,7 +18531,7 @@
       }
     },
     {
-      "id": "cryptocurrency",
+      "id": "bc-cryptocurrency",
       "iri": "http://narrativegoldmine.com/blockchain#Cryptocurrency",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -18750,7 +18750,7 @@
       }
     },
     {
-      "id": "dao",
+      "id": "bc-dao",
       "iri": "http://narrativegoldmine.com/blockchain#Dao",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -18921,7 +18921,7 @@
       }
     },
     {
-      "id": "decentralizedidentifiers",
+      "id": "bc-decentralizedidentifiers",
       "iri": "http://narrativegoldmine.com/blockchain#DecentralizedIdentifiers",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -18963,7 +18963,7 @@
       }
     },
     {
-      "id": "delegatedemocracy",
+      "id": "bc-delegatedemocracy",
       "iri": "http://narrativegoldmine.com/blockchain#DelegateDemocracy",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -19248,7 +19248,7 @@
       }
     },
     {
-      "id": "distributedarchitecture",
+      "id": "bc-distributedarchitecture",
       "iri": "http://narrativegoldmine.com/blockchain#DistributedArchitecture",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -19635,7 +19635,7 @@
       }
     },
     {
-      "id": "environmentalimpactassessment",
+      "id": "bc-environmentalimpactassessment",
       "iri": "http://narrativegoldmine.com/blockchain#EnvironmentalImpactAssessment",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -19725,7 +19725,7 @@
       }
     },
     {
-      "id": "esgreporting",
+      "id": "bc-esgreporting",
       "iri": "http://narrativegoldmine.com/blockchain#EsgReporting",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -20121,7 +20121,7 @@
       }
     },
     {
-      "id": "governancetoken",
+      "id": "bc-governancetoken",
       "iri": "http://narrativegoldmine.com/blockchain#GovernanceToken",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -20598,7 +20598,7 @@
       }
     },
     {
-      "id": "layer2",
+      "id": "bc-layer2",
       "iri": "http://narrativegoldmine.com/blockchain#Layer2",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -20691,7 +20691,7 @@
       }
     },
     {
-      "id": "liquidproofofstake",
+      "id": "bc-liquidproofofstake",
       "iri": "http://narrativegoldmine.com/blockchain#LiquidProofOfStake",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -20940,7 +20940,7 @@
       }
     },
     {
-      "id": "middlewarelayer",
+      "id": "bc-middlewarelayer",
       "iri": "http://narrativegoldmine.com/blockchain#Middlewarelayer",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -21057,7 +21057,7 @@
       }
     },
     {
-      "id": "multisiggovernance",
+      "id": "bc-multisiggovernance",
       "iri": "http://narrativegoldmine.com/blockchain#MultiSigGovernance",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -21072,7 +21072,7 @@
       }
     },
     {
-      "id": "nft",
+      "id": "bc-nft",
       "iri": "http://narrativegoldmine.com/blockchain#NFT",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -21246,7 +21246,7 @@
       }
     },
     {
-      "id": "nftstandards",
+      "id": "bc-nftstandards",
       "iri": "http://narrativegoldmine.com/blockchain#NftStandards",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -21315,7 +21315,7 @@
       }
     },
     {
-      "id": "nominatedproofofstake",
+      "id": "bc-nominatedproofofstake",
       "iri": "http://narrativegoldmine.com/blockchain#NominatedProofOfStake",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -21327,7 +21327,7 @@
       }
     },
     {
-      "id": "nonfungibletoken",
+      "id": "bc-nonfungibletoken",
       "iri": "http://narrativegoldmine.com/blockchain#NonFungibleToken",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -21381,7 +21381,7 @@
       }
     },
     {
-      "id": "onchainvoting",
+      "id": "bc-onchainvoting",
       "iri": "http://narrativegoldmine.com/blockchain#OnChainVoting",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -21858,7 +21858,7 @@
       }
     },
     {
-      "id": "proofbasedconsensus",
+      "id": "bc-proofbasedconsensus",
       "iri": "http://narrativegoldmine.com/blockchain#ProofbasedConsensus",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -22056,7 +22056,7 @@
       }
     },
     {
-      "id": "pureproofofstake",
+      "id": "bc-pureproofofstake",
       "iri": "http://narrativegoldmine.com/blockchain#PureProofOfStake",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -22347,7 +22347,7 @@
       }
     },
     {
-      "id": "selfsovereignidentity",
+      "id": "bc-selfsovereignidentity",
       "iri": "http://narrativegoldmine.com/blockchain#SelfSovereignIdentity",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -22593,7 +22593,7 @@
       }
     },
     {
-      "id": "stablecoin",
+      "id": "bc-stablecoin",
       "iri": "http://narrativegoldmine.com/blockchain#Stablecoin",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -22977,7 +22977,7 @@
       }
     },
     {
-      "id": "tokenization",
+      "id": "bc-tokenization",
       "iri": "http://narrativegoldmine.com/blockchain#Tokenization",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -23019,7 +23019,7 @@
       }
     },
     {
-      "id": "tokenomicsgovernance",
+      "id": "bc-tokenomicsgovernance",
       "iri": "http://narrativegoldmine.com/blockchain#TokenomicsGovernance",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -23046,7 +23046,7 @@
       }
     },
     {
-      "id": "transaction",
+      "id": "bc-transaction",
       "iri": "http://narrativegoldmine.com/blockchain#Transaction",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -23289,7 +23289,7 @@
       }
     },
     {
-      "id": "verifiablecredentials",
+      "id": "bc-verifiablecredentials",
       "iri": "http://narrativegoldmine.com/blockchain#VerifiableCredentials",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -23658,7 +23658,7 @@
       }
     },
     {
-      "id": "aigovernanceframework",
+      "id": "mv-aigovernanceframework",
       "iri": "http://narrativegoldmine.com/metaverse#AIGovernanceFramework",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -23811,7 +23811,7 @@
       }
     },
     {
-      "id": "auc",
+      "id": "mv-auc",
       "iri": "http://narrativegoldmine.com/metaverse#AUC",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -24033,7 +24033,7 @@
       }
     },
     {
-      "id": "aitransparencyframework",
+      "id": "mv-aitransparencyframework",
       "iri": "http://narrativegoldmine.com/metaverse#AiTransparencyFramework",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -25185,7 +25185,7 @@
       }
     },
     {
-      "id": "c2pastandard",
+      "id": "mv-c2pastandard",
       "iri": "http://narrativegoldmine.com/metaverse#C2paStandard",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -25596,7 +25596,7 @@
       }
     },
     {
-      "id": "cloudcomputing",
+      "id": "mv-cloudcomputing",
       "iri": "http://narrativegoldmine.com/metaverse#CloudComputing",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -26274,7 +26274,7 @@
       }
     },
     {
-      "id": "crosschainbridge",
+      "id": "mv-crosschainbridge",
       "iri": "http://narrativegoldmine.com/metaverse#CrossChainBridge",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -26397,7 +26397,7 @@
       }
     },
     {
-      "id": "culturalheritagexrexperience",
+      "id": "mv-culturalheritagexrexperience",
       "iri": "http://narrativegoldmine.com/metaverse#CulturalHeritageXrExperience",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -29517,7 +29517,7 @@
       }
     },
     {
-      "id": "etsimetaversedomainmodel",
+      "id": "mv-etsimetaversedomainmodel",
       "iri": "http://narrativegoldmine.com/metaverse#EtsiMetaverseDomainModel",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -29601,7 +29601,7 @@
       }
     },
     {
-      "id": "explainability",
+      "id": "mv-explainability",
       "iri": "http://narrativegoldmine.com/metaverse#Explainability",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -29838,7 +29838,7 @@
       }
     },
     {
-      "id": "finetuning",
+      "id": "mv-finetuning",
       "iri": "http://narrativegoldmine.com/metaverse#FineTuning",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -30009,7 +30009,7 @@
       }
     },
     {
-      "id": "gdprarticle45",
+      "id": "mv-gdprarticle45",
       "iri": "http://narrativegoldmine.com/metaverse#GdprArticle45",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -30225,7 +30225,7 @@
       }
     },
     {
-      "id": "governancemodel",
+      "id": "mv-governancemodel",
       "iri": "http://narrativegoldmine.com/metaverse#GovernanceModel",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -30312,7 +30312,7 @@
       }
     },
     {
-      "id": "hapticfeedback",
+      "id": "mv-hapticfeedback",
       "iri": "http://narrativegoldmine.com/metaverse#HapticFeedback",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -31143,7 +31143,7 @@
       }
     },
     {
-      "id": "inclusivexrexperience",
+      "id": "mv-inclusivexrexperience",
       "iri": "http://narrativegoldmine.com/metaverse#InclusiveXrExperience",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -31266,7 +31266,7 @@
       }
     },
     {
-      "id": "mv-infraredledilluminator",
+      "id": "infraredledilluminator",
       "iri": "http://narrativegoldmine.com/metaverse#InfraredLedIlluminator",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -31479,7 +31479,7 @@
       }
     },
     {
-      "id": "interpretability",
+      "id": "mv-interpretability",
       "iri": "http://narrativegoldmine.com/metaverse#Interpretability",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -32025,7 +32025,7 @@
       }
     },
     {
-      "id": "machinelearningmodel",
+      "id": "mv-machinelearningmodel",
       "iri": "http://narrativegoldmine.com/metaverse#MachineLearningModel",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -32505,7 +32505,7 @@
       }
     },
     {
-      "id": "metaversedomain",
+      "id": "mv-metaversedomain",
       "iri": "http://narrativegoldmine.com/metaverse#Metaversedomain",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -32982,7 +32982,7 @@
       }
     },
     {
-      "id": "nearestneighborsearch",
+      "id": "mv-nearestneighborsearch",
       "iri": "http://narrativegoldmine.com/metaverse#NearestNeighborSearch",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -33924,7 +33924,7 @@
       }
     },
     {
-      "id": "precision",
+      "id": "mv-precision",
       "iri": "http://narrativegoldmine.com/metaverse#Precision",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -34455,7 +34455,7 @@
       }
     },
     {
-      "id": "recall",
+      "id": "mv-recall",
       "iri": "http://narrativegoldmine.com/metaverse#Recall",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -34881,7 +34881,7 @@
       }
     },
     {
-      "id": "slam",
+      "id": "mv-slam",
       "iri": "http://narrativegoldmine.com/metaverse#SLAM",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -34941,7 +34941,7 @@
       }
     },
     {
-      "id": "scenegraph",
+      "id": "mv-scenegraph",
       "iri": "http://narrativegoldmine.com/metaverse#SceneGraph",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -35295,7 +35295,7 @@
       }
     },
     {
-      "id": "mv-sharedarexperiences",
+      "id": "sharedarexperiences",
       "iri": "http://narrativegoldmine.com/metaverse#SharedArExperiences",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -35619,7 +35619,7 @@
       }
     },
     {
-      "id": "sparqlqueryengine",
+      "id": "mv-sparqlqueryengine",
       "iri": "http://narrativegoldmine.com/metaverse#SparqlQueryEngine",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -37185,7 +37185,7 @@
       }
     },
     {
-      "id": "valuetransfer",
+      "id": "mv-valuetransfer",
       "iri": "http://narrativegoldmine.com/metaverse#ValueTransfer",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -37281,7 +37281,7 @@
       }
     },
     {
-      "id": "virtualasset",
+      "id": "mv-virtualasset",
       "iri": "http://narrativegoldmine.com/metaverse#VirtualAsset",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -38355,7 +38355,7 @@
       }
     },
     {
-      "id": "vocabulary",
+      "id": "mv-vocabulary",
       "iri": "http://narrativegoldmine.com/metaverse#Vocabulary",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -38733,7 +38733,7 @@
       }
     },
     {
-      "id": "xrtestinginfrastructure",
+      "id": "mv-xrtestinginfrastructure",
       "iri": "http://narrativegoldmine.com/metaverse#XrTestingInfrastructure",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -39577,7 +39577,7 @@
     },
     {
       "id": "owlthing",
-      "iri": "http://narrativegoldmine.com/ontology#owl:Thing",
+      "iri": "http://narrativegoldmine.com/ontology#owlThing",
       "baseIri": "http://narrativegoldmine.com/ontology",
       "attributes": [
         "external",
@@ -39585,7 +39585,7 @@
       ],
       "backgroundColor": "#808080",
       "label": {
-        "en": "owl:Thing"
+        "en": "owlThing"
       }
     },
     {
@@ -39694,7 +39694,7 @@
       }
     },
     {
-      "id": "autonomousagent",
+      "id": "rb-autonomousagent",
       "iri": "http://narrativegoldmine.com/robotics#AutonomousAgent",
       "baseIri": "http://narrativegoldmine.com/robotics",
       "attributes": [
@@ -40633,7 +40633,7 @@
       }
     },
     {
-      "id": "inversekinematics",
+      "id": "rb-inversekinematics",
       "iri": "http://narrativegoldmine.com/robotics#InverseKinematics",
       "baseIri": "http://narrativegoldmine.com/robotics",
       "attributes": [
@@ -44022,7 +44022,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-algorithmictransparencyindex-ai-modelarchitecture",
+      "id": "subclassof-ai-algorithmictransparencyindex-ai-modelarchitecture",
       "type": "rdfs:subClassOf"
     },
     {
@@ -44134,7 +44134,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-algorithmictransparencyindex-ai-aigovernance",
+      "id": "subclassof-ai-algorithmictransparencyindex-ai-aigovernance",
       "type": "rdfs:subClassOf"
     },
     {
@@ -44366,7 +44366,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-differentialprivacy-ai-artificialintelligence",
+      "id": "subclassof-ai-differentialprivacy-ai-artificialintelligence",
       "type": "rdfs:subClassOf"
     },
     {
@@ -44454,7 +44454,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-aigovernanceframework-ai-artificialintelligence",
+      "id": "subclassof-mv-aigovernanceframework-ai-artificialintelligence",
       "type": "rdfs:subClassOf"
     },
     {
@@ -44466,11 +44466,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-aiagentsystem-ai-artificialintelligence",
+      "id": "subclassof-ai-aiagentsystem-ai-artificialintelligence",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-interpretability-ai-artificialintelligence",
+      "id": "subclassof-mv-interpretability-ai-artificialintelligence",
       "type": "rdfs:subClassOf"
     },
     {
@@ -44674,7 +44674,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-networkprotocol-infrastructurecomponent",
+      "id": "subclassof-ai-networkprotocol-infrastructurecomponent",
       "type": "rdfs:subClassOf"
     },
     {
@@ -44690,7 +44690,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-blockchaintechnology-bc-technologydomain",
+      "id": "subclassof-bc-blockchaintechnology-bc-technologydomain",
       "type": "rdfs:subClassOf"
     },
     {
@@ -44698,7 +44698,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-transaction-bc-distributeddatastructure",
+      "id": "subclassof-bc-transaction-bc-distributeddatastructure",
       "type": "rdfs:subClassOf"
     },
     {
@@ -44754,7 +44754,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-transaction-bc-blockchainentity",
+      "id": "subclassof-bc-transaction-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
@@ -44802,7 +44802,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-blockchainscalability-bc-blockchainentity",
+      "id": "subclassof-bc-blockchainscalability-bc-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
@@ -44954,31 +44954,31 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-accountmodel-transaction",
+      "id": "subclassof-accountmodel-bc-transaction",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-transactionpool-transaction",
+      "id": "subclassof-transactionpool-bc-transaction",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-transactionconfirmation-transaction",
+      "id": "subclassof-transactionconfirmation-bc-transaction",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-input-transaction",
+      "id": "subclassof-input-bc-transaction",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-output-transaction",
+      "id": "subclassof-output-bc-transaction",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-script-transaction",
+      "id": "subclassof-script-bc-transaction",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-coinbasetransaction-transaction",
+      "id": "subclassof-coinbasetransaction-bc-transaction",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45006,7 +45006,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-blockchaininteroperability-blockchaintechnology",
+      "id": "subclassof-blockchaininteroperability-bc-blockchaintechnology",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45022,11 +45022,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-selfsovereignidentity-bc-digitalidentity",
+      "id": "subclassof-bc-selfsovereignidentity-bc-digitalidentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-verifiablecredentials-bc-digitalidentity",
+      "id": "subclassof-bc-verifiablecredentials-bc-digitalidentity",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45034,11 +45034,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-verifiablecredentials-selfsovereignidentity",
+      "id": "subclassof-bc-verifiablecredentials-bc-selfsovereignidentity",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-governancetoken-cryptographictoken",
+      "id": "subclassof-bc-governancetoken-cryptographictoken",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45058,11 +45058,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-tokenomicsgovernance-blockchaingovernance",
+      "id": "subclassof-bc-tokenomicsgovernance-blockchaingovernance",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-delegatedemocracy-onchainvoting",
+      "id": "subclassof-bc-delegatedemocracy-bc-onchainvoting",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45526,11 +45526,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-explainability-mv-metaverse",
+      "id": "subclassof-mv-explainability-mv-metaverse",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-recall-mv-metaverse",
+      "id": "subclassof-mv-recall-mv-metaverse",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45706,7 +45706,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-precision-mv-artificialintelligence",
+      "id": "subclassof-mv-precision-mv-artificialintelligence",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45718,7 +45718,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-machinelearningmodel-mv-artificialintelligence",
+      "id": "subclassof-mv-machinelearningmodel-mv-artificialintelligence",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45766,7 +45766,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-algorithmictransparencyreports-algorithmictransparencyindex",
+      "id": "subclassof-algorithmictransparencyreports-ai-algorithmictransparencyindex",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45786,7 +45786,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-aigameagent-aiagentsystem",
+      "id": "subclassof-aigameagent-ai-aiagentsystem",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45866,7 +45866,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-auc-qualitymetric",
+      "id": "subclassof-mv-auc-qualitymetric",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45930,7 +45930,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-sharedarexperiences-augmentedreality",
+      "id": "subclassof-sharedarexperiences-augmentedreality",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46238,7 +46238,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-sparqlqueryengine-queryprocessor",
+      "id": "subclassof-mv-sparqlqueryengine-queryprocessor",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46382,7 +46382,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-virtualasset-mv-digitalasset",
+      "id": "subclassof-mv-virtualasset-mv-digitalasset",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46770,7 +46770,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-xrtestinginfrastructure-testinginfrastructure",
+      "id": "subclassof-mv-xrtestinginfrastructure-testinginfrastructure",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46782,7 +46782,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-inclusivexrexperience-accessibleexperience",
+      "id": "subclassof-mv-inclusivexrexperience-accessibleexperience",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46802,7 +46802,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-c2pastandard-technicalstandard",
+      "id": "subclassof-mv-c2pastandard-technicalstandard",
       "type": "rdfs:subClassOf"
     },
     {
@@ -47150,7 +47150,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-gdprarticle45-dataprotectionregulation",
+      "id": "subclassof-mv-gdprarticle45-dataprotectionregulation",
       "type": "rdfs:subClassOf"
     },
     {
@@ -47226,7 +47226,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-infraredledilluminator-infraredilluminator",
+      "id": "subclassof-infraredledilluminator-infraredilluminator",
       "type": "rdfs:subClassOf"
     },
     {
@@ -47246,7 +47246,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-landparcel-virtualasset",
+      "id": "subclassof-landparcel-mv-virtualasset",
       "type": "rdfs:subClassOf"
     },
     {
@@ -47266,7 +47266,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-machinelearningplatform-cloudcomputing",
+      "id": "subclassof-machinelearningplatform-mv-cloudcomputing",
       "type": "rdfs:subClassOf"
     },
     {
@@ -47350,7 +47350,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-nearestneighborsearch-searchalgorithm",
+      "id": "subclassof-mv-nearestneighborsearch-searchalgorithm",
       "type": "rdfs:subClassOf"
     },
     {
@@ -47498,7 +47498,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-inversekinematics-kinematics",
+      "id": "subclassof-rb-inversekinematics-kinematics",
       "type": "rdfs:subClassOf"
     },
     {
@@ -48372,8 +48372,8 @@
       ]
     },
     {
-      "id": "subclassof-algorithmictransparencyindex-ai-modelarchitecture",
-      "domain": "algorithmictransparencyindex",
+      "id": "subclassof-ai-algorithmictransparencyindex-ai-modelarchitecture",
+      "domain": "ai-algorithmictransparencyindex",
       "range": "ai-modelarchitecture",
       "attributes": [
         "anonymous",
@@ -48624,8 +48624,8 @@
       ]
     },
     {
-      "id": "subclassof-algorithmictransparencyindex-ai-aigovernance",
-      "domain": "algorithmictransparencyindex",
+      "id": "subclassof-ai-algorithmictransparencyindex-ai-aigovernance",
+      "domain": "ai-algorithmictransparencyindex",
       "range": "ai-aigovernance",
       "attributes": [
         "anonymous",
@@ -49146,8 +49146,8 @@
       ]
     },
     {
-      "id": "subclassof-differentialprivacy-ai-artificialintelligence",
-      "domain": "differentialprivacy",
+      "id": "subclassof-ai-differentialprivacy-ai-artificialintelligence",
+      "domain": "ai-differentialprivacy",
       "range": "ai-artificialintelligence",
       "attributes": [
         "anonymous",
@@ -49344,8 +49344,8 @@
       ]
     },
     {
-      "id": "subclassof-aigovernanceframework-ai-artificialintelligence",
-      "domain": "aigovernanceframework",
+      "id": "subclassof-mv-aigovernanceframework-ai-artificialintelligence",
+      "domain": "mv-aigovernanceframework",
       "range": "ai-artificialintelligence",
       "attributes": [
         "anonymous",
@@ -49371,8 +49371,8 @@
       ]
     },
     {
-      "id": "subclassof-aiagentsystem-ai-artificialintelligence",
-      "domain": "aiagentsystem",
+      "id": "subclassof-ai-aiagentsystem-ai-artificialintelligence",
+      "domain": "ai-aiagentsystem",
       "range": "ai-artificialintelligence",
       "attributes": [
         "anonymous",
@@ -49380,8 +49380,8 @@
       ]
     },
     {
-      "id": "subclassof-interpretability-ai-artificialintelligence",
-      "domain": "interpretability",
+      "id": "subclassof-mv-interpretability-ai-artificialintelligence",
+      "domain": "mv-interpretability",
       "range": "ai-artificialintelligence",
       "attributes": [
         "anonymous",
@@ -49839,8 +49839,8 @@
       ]
     },
     {
-      "id": "subclassof-networkprotocol-infrastructurecomponent",
-      "domain": "networkprotocol",
+      "id": "subclassof-ai-networkprotocol-infrastructurecomponent",
+      "domain": "ai-networkprotocol",
       "range": "infrastructurecomponent",
       "attributes": [
         "anonymous",
@@ -49875,8 +49875,8 @@
       ]
     },
     {
-      "id": "subclassof-blockchaintechnology-bc-technologydomain",
-      "domain": "blockchaintechnology",
+      "id": "subclassof-bc-blockchaintechnology-bc-technologydomain",
+      "domain": "bc-blockchaintechnology",
       "range": "bc-technologydomain",
       "attributes": [
         "anonymous",
@@ -49893,8 +49893,8 @@
       ]
     },
     {
-      "id": "subclassof-transaction-bc-distributeddatastructure",
-      "domain": "transaction",
+      "id": "subclassof-bc-transaction-bc-distributeddatastructure",
+      "domain": "bc-transaction",
       "range": "bc-distributeddatastructure",
       "attributes": [
         "anonymous",
@@ -50019,8 +50019,8 @@
       ]
     },
     {
-      "id": "subclassof-transaction-bc-blockchainentity",
-      "domain": "transaction",
+      "id": "subclassof-bc-transaction-bc-blockchainentity",
+      "domain": "bc-transaction",
       "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
@@ -50127,8 +50127,8 @@
       ]
     },
     {
-      "id": "subclassof-blockchainscalability-bc-blockchainentity",
-      "domain": "blockchainscalability",
+      "id": "subclassof-bc-blockchainscalability-bc-blockchainentity",
+      "domain": "bc-blockchainscalability",
       "range": "bc-blockchainentity",
       "attributes": [
         "anonymous",
@@ -50469,63 +50469,63 @@
       ]
     },
     {
-      "id": "subclassof-accountmodel-transaction",
+      "id": "subclassof-accountmodel-bc-transaction",
       "domain": "accountmodel",
-      "range": "transaction",
+      "range": "bc-transaction",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-transactionpool-transaction",
+      "id": "subclassof-transactionpool-bc-transaction",
       "domain": "transactionpool",
-      "range": "transaction",
+      "range": "bc-transaction",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-transactionconfirmation-transaction",
+      "id": "subclassof-transactionconfirmation-bc-transaction",
       "domain": "transactionconfirmation",
-      "range": "transaction",
+      "range": "bc-transaction",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-input-transaction",
+      "id": "subclassof-input-bc-transaction",
       "domain": "input",
-      "range": "transaction",
+      "range": "bc-transaction",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-output-transaction",
+      "id": "subclassof-output-bc-transaction",
       "domain": "output",
-      "range": "transaction",
+      "range": "bc-transaction",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-script-transaction",
+      "id": "subclassof-script-bc-transaction",
       "domain": "script",
-      "range": "transaction",
+      "range": "bc-transaction",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-coinbasetransaction-transaction",
+      "id": "subclassof-coinbasetransaction-bc-transaction",
       "domain": "coinbasetransaction",
-      "range": "transaction",
+      "range": "bc-transaction",
       "attributes": [
         "anonymous",
         "object"
@@ -50586,9 +50586,9 @@
       ]
     },
     {
-      "id": "subclassof-blockchaininteroperability-blockchaintechnology",
+      "id": "subclassof-blockchaininteroperability-bc-blockchaintechnology",
       "domain": "blockchaininteroperability",
-      "range": "blockchaintechnology",
+      "range": "bc-blockchaintechnology",
       "attributes": [
         "anonymous",
         "object"
@@ -50622,8 +50622,8 @@
       ]
     },
     {
-      "id": "subclassof-selfsovereignidentity-bc-digitalidentity",
-      "domain": "selfsovereignidentity",
+      "id": "subclassof-bc-selfsovereignidentity-bc-digitalidentity",
+      "domain": "bc-selfsovereignidentity",
       "range": "bc-digitalidentity",
       "attributes": [
         "anonymous",
@@ -50631,8 +50631,8 @@
       ]
     },
     {
-      "id": "subclassof-verifiablecredentials-bc-digitalidentity",
-      "domain": "verifiablecredentials",
+      "id": "subclassof-bc-verifiablecredentials-bc-digitalidentity",
+      "domain": "bc-verifiablecredentials",
       "range": "bc-digitalidentity",
       "attributes": [
         "anonymous",
@@ -50649,17 +50649,17 @@
       ]
     },
     {
-      "id": "subclassof-verifiablecredentials-selfsovereignidentity",
-      "domain": "verifiablecredentials",
-      "range": "selfsovereignidentity",
+      "id": "subclassof-bc-verifiablecredentials-bc-selfsovereignidentity",
+      "domain": "bc-verifiablecredentials",
+      "range": "bc-selfsovereignidentity",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-governancetoken-cryptographictoken",
-      "domain": "governancetoken",
+      "id": "subclassof-bc-governancetoken-cryptographictoken",
+      "domain": "bc-governancetoken",
       "range": "cryptographictoken",
       "attributes": [
         "anonymous",
@@ -50703,8 +50703,8 @@
       ]
     },
     {
-      "id": "subclassof-tokenomicsgovernance-blockchaingovernance",
-      "domain": "tokenomicsgovernance",
+      "id": "subclassof-bc-tokenomicsgovernance-blockchaingovernance",
+      "domain": "bc-tokenomicsgovernance",
       "range": "blockchaingovernance",
       "attributes": [
         "anonymous",
@@ -50712,9 +50712,9 @@
       ]
     },
     {
-      "id": "subclassof-delegatedemocracy-onchainvoting",
-      "domain": "delegatedemocracy",
-      "range": "onchainvoting",
+      "id": "subclassof-bc-delegatedemocracy-bc-onchainvoting",
+      "domain": "bc-delegatedemocracy",
+      "range": "bc-onchainvoting",
       "attributes": [
         "anonymous",
         "object"
@@ -51756,8 +51756,8 @@
       ]
     },
     {
-      "id": "subclassof-explainability-mv-metaverse",
-      "domain": "explainability",
+      "id": "subclassof-mv-explainability-mv-metaverse",
+      "domain": "mv-explainability",
       "range": "mv-metaverse",
       "attributes": [
         "anonymous",
@@ -51765,8 +51765,8 @@
       ]
     },
     {
-      "id": "subclassof-recall-mv-metaverse",
-      "domain": "recall",
+      "id": "subclassof-mv-recall-mv-metaverse",
+      "domain": "mv-recall",
       "range": "mv-metaverse",
       "attributes": [
         "anonymous",
@@ -52161,8 +52161,8 @@
       ]
     },
     {
-      "id": "subclassof-precision-mv-artificialintelligence",
-      "domain": "precision",
+      "id": "subclassof-mv-precision-mv-artificialintelligence",
+      "domain": "mv-precision",
       "range": "mv-artificialintelligence",
       "attributes": [
         "anonymous",
@@ -52188,8 +52188,8 @@
       ]
     },
     {
-      "id": "subclassof-machinelearningmodel-mv-artificialintelligence",
-      "domain": "machinelearningmodel",
+      "id": "subclassof-mv-machinelearningmodel-mv-artificialintelligence",
+      "domain": "mv-machinelearningmodel",
       "range": "mv-artificialintelligence",
       "attributes": [
         "anonymous",
@@ -52296,9 +52296,9 @@
       ]
     },
     {
-      "id": "subclassof-algorithmictransparencyreports-algorithmictransparencyindex",
+      "id": "subclassof-algorithmictransparencyreports-ai-algorithmictransparencyindex",
       "domain": "algorithmictransparencyreports",
-      "range": "algorithmictransparencyindex",
+      "range": "ai-algorithmictransparencyindex",
       "attributes": [
         "anonymous",
         "object"
@@ -52341,9 +52341,9 @@
       ]
     },
     {
-      "id": "subclassof-aigameagent-aiagentsystem",
+      "id": "subclassof-aigameagent-ai-aiagentsystem",
       "domain": "aigameagent",
-      "range": "aiagentsystem",
+      "range": "ai-aiagentsystem",
       "attributes": [
         "anonymous",
         "object"
@@ -52521,8 +52521,8 @@
       ]
     },
     {
-      "id": "subclassof-auc-qualitymetric",
-      "domain": "auc",
+      "id": "subclassof-mv-auc-qualitymetric",
+      "domain": "mv-auc",
       "range": "qualitymetric",
       "attributes": [
         "anonymous",
@@ -52665,8 +52665,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-sharedarexperiences-augmentedreality",
-      "domain": "mv-sharedarexperiences",
+      "id": "subclassof-sharedarexperiences-augmentedreality",
+      "domain": "sharedarexperiences",
       "range": "augmentedreality",
       "attributes": [
         "anonymous",
@@ -53358,8 +53358,8 @@
       ]
     },
     {
-      "id": "subclassof-sparqlqueryengine-queryprocessor",
-      "domain": "sparqlqueryengine",
+      "id": "subclassof-mv-sparqlqueryengine-queryprocessor",
+      "domain": "mv-sparqlqueryengine",
       "range": "queryprocessor",
       "attributes": [
         "anonymous",
@@ -53682,8 +53682,8 @@
       ]
     },
     {
-      "id": "subclassof-virtualasset-mv-digitalasset",
-      "domain": "virtualasset",
+      "id": "subclassof-mv-virtualasset-mv-digitalasset",
+      "domain": "mv-virtualasset",
       "range": "mv-digitalasset",
       "attributes": [
         "anonymous",
@@ -54555,8 +54555,8 @@
       ]
     },
     {
-      "id": "subclassof-xrtestinginfrastructure-testinginfrastructure",
-      "domain": "xrtestinginfrastructure",
+      "id": "subclassof-mv-xrtestinginfrastructure-testinginfrastructure",
+      "domain": "mv-xrtestinginfrastructure",
       "range": "testinginfrastructure",
       "attributes": [
         "anonymous",
@@ -54582,8 +54582,8 @@
       ]
     },
     {
-      "id": "subclassof-inclusivexrexperience-accessibleexperience",
-      "domain": "inclusivexrexperience",
+      "id": "subclassof-mv-inclusivexrexperience-accessibleexperience",
+      "domain": "mv-inclusivexrexperience",
       "range": "accessibleexperience",
       "attributes": [
         "anonymous",
@@ -54627,8 +54627,8 @@
       ]
     },
     {
-      "id": "subclassof-c2pastandard-technicalstandard",
-      "domain": "c2pastandard",
+      "id": "subclassof-mv-c2pastandard-technicalstandard",
+      "domain": "mv-c2pastandard",
       "range": "technicalstandard",
       "attributes": [
         "anonymous",
@@ -55410,8 +55410,8 @@
       ]
     },
     {
-      "id": "subclassof-gdprarticle45-dataprotectionregulation",
-      "domain": "gdprarticle45",
+      "id": "subclassof-mv-gdprarticle45-dataprotectionregulation",
+      "domain": "mv-gdprarticle45",
       "range": "dataprotectionregulation",
       "attributes": [
         "anonymous",
@@ -55581,8 +55581,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-infraredledilluminator-infraredilluminator",
-      "domain": "mv-infraredledilluminator",
+      "id": "subclassof-infraredledilluminator-infraredilluminator",
+      "domain": "infraredledilluminator",
       "range": "infraredilluminator",
       "attributes": [
         "anonymous",
@@ -55626,9 +55626,9 @@
       ]
     },
     {
-      "id": "subclassof-landparcel-virtualasset",
+      "id": "subclassof-landparcel-mv-virtualasset",
       "domain": "landparcel",
-      "range": "virtualasset",
+      "range": "mv-virtualasset",
       "attributes": [
         "anonymous",
         "object"
@@ -55671,9 +55671,9 @@
       ]
     },
     {
-      "id": "subclassof-machinelearningplatform-cloudcomputing",
+      "id": "subclassof-machinelearningplatform-mv-cloudcomputing",
       "domain": "machinelearningplatform",
-      "range": "cloudcomputing",
+      "range": "mv-cloudcomputing",
       "attributes": [
         "anonymous",
         "object"
@@ -55860,8 +55860,8 @@
       ]
     },
     {
-      "id": "subclassof-nearestneighborsearch-searchalgorithm",
-      "domain": "nearestneighborsearch",
+      "id": "subclassof-mv-nearestneighborsearch-searchalgorithm",
+      "domain": "mv-nearestneighborsearch",
       "range": "searchalgorithm",
       "attributes": [
         "anonymous",
@@ -56193,8 +56193,8 @@
       ]
     },
     {
-      "id": "subclassof-inversekinematics-kinematics",
-      "domain": "inversekinematics",
+      "id": "subclassof-rb-inversekinematics-kinematics",
+      "domain": "rb-inversekinematics",
       "range": "kinematics",
       "attributes": [
         "anonymous",

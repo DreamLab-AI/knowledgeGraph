@@ -10,12 +10,12 @@
     "Provenance Ontology (PROV-O)"
   ],
   "wiki_links": [
-    "metaverse",
-    "Ontology Engineering",
     "Knowledge Representation",
     "Web Standards",
     "Linked Data",
-    "Data Interoperability"
+    "Data Interoperability",
+    "metaverse",
+    "Ontology Engineering"
   ],
   "ontology": {
     "term_id": "MV-10037",

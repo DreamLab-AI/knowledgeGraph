@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "System Architecture",
-    "metaverse",
-    "Container Technology",
     "Scalable Applications",
-    "API Design"
+    "Container Technology",
+    "API Design",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9967",

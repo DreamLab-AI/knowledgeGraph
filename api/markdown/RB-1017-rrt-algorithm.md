@@ -34,8 +34,8 @@
 - #### Relationships
   id:: rb-1017-relationships
   - is-subclass-of:: [[RB-1016-path-planning]]
-  - alternative-to:: [[RB-1018-dijkstra-algorithm]], [[A* Algorithm]]
-  - variant-of:: [[RRT*]], [[RRT-Connect]], [[Informed RRT*]]
+  - alternative-to:: [[RB-1018-dijkstra-algorithm]], [[A-Star Algorithm]]
+  - variant-of:: [[RRT-Star]], [[RRT-Connect]], [[Informed RRT-Star]]
   - uses:: [[Nearest Neighbor Search]], [[Collision Detection]]
   - applied-in:: [[Mobile Robots]], [[Manipulators]], [[Autonomous Vehicles]]
 

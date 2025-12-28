@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: npc-interaction-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9987\n\t- source-domain:: mv\n\t- preferred-term:: NPC Interaction\n\t- status:: active\n\t- definition:: The systems and mechanics enabling player communication and engagement with non-player characters in video games and virtual worlds, increasingly powered by AI and large language models to generate dynamic, unscripted dialogue and contextual responses.\n\t- owl:class:: mv:NpcInteraction\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: npc-interaction-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Game Mechanics]]\n\t\t- related-to:: [[Dialogue Systems]]\n\t\t- related-to:: [[Artificial Intelligence]]\n\t\t- related-to:: [[Character AI]]\n\t\t- enables:: [[Immersive Gameplay]]\n\t- #### AI Technologies (2024)\n\t  collapsed:: true\n\t\t- Ubisoft NEO NPC: Generative AI for authentic NPC conversations\n\t\t- Nvidia ACE: Avatar Cloud Engine for AI-generated dialogue\n\t\t- Inworld AI: Character Brain with personality and memory systems\n\t\t- Speech recognition and natural language understanding\n\t\t- Emotional AI for responsive character behavior\n\t- #### Core Components\n\t  collapsed:: true\n\t\t- Speech Recognition: Converts player speech to text\n\t\t- Natural Language Understanding: Interprets meaning and intent\n\t\t- Natural Language Generation: Produces contextual responses\n\t\t- Dialogue Management: Controls conversation flow\n\t\t- Dynamic Response Generation: Adapts based on game context",
   "backlinks": [],
   "wiki_links": [
+    "Dialogue Systems",
+    "Artificial Intelligence",
     "Game Mechanics",
     "Immersive Gameplay",
-    "Artificial Intelligence",
-    "metaverse",
     "Character AI",
-    "Dialogue Systems"
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9987",

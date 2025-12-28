@@ -6,12 +6,12 @@
     "Display Metrology"
   ],
   "wiki_links": [
-    "Display Calibration",
-    "Optical Measurement",
-    "VR Headset Testing",
     "Display Quality",
-    "metaverse",
-    "Calibration Tools"
+    "Calibration Tools",
+    "Display Calibration",
+    "VR Headset Testing",
+    "Optical Measurement",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10021",

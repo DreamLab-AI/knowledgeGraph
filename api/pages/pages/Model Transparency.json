@@ -6,11 +6,11 @@
     "AI Model Card"
   ],
   "wiki_links": [
+    "AI Ethics",
     "AI Governance",
-    "metaverse",
     "Trustworthy AI Systems",
-    "Explainable AI",
-    "AI Ethics"
+    "metaverse",
+    "Explainable AI"
   ],
   "ontology": {
     "term_id": "MV-9969",

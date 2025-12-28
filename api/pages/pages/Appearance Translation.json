@@ -6,14 +6,14 @@
     "Avatar Interoperability"
   ],
   "wiki_links": [
-    "Visual Content Transformation",
+    "Style Representations",
+    "Domain Adaptation",
+    "Artistic Stylization",
     "Neural Image Processing",
     "Convolutional Neural Networks",
-    "Domain Adaptation",
     "Content Preservation",
-    "metaverse",
-    "Artistic Stylization",
-    "Style Representations"
+    "Visual Content Transformation",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9768",
