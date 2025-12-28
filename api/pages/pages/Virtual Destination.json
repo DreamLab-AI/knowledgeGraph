@@ -7,11 +7,11 @@
     "Tourism Metaverse"
   ],
   "wiki_links": [
-    "Virtual Tourism",
-    "Digital Twin",
-    "Virtual World",
     "metaverse",
-    "Virtual Environment"
+    "Virtual World",
+    "Virtual Tourism",
+    "Virtual Environment",
+    "Digital Twin"
   ],
   "ontology": {
     "term_id": "MV-10116",

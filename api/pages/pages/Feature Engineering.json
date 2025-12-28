@@ -9,12 +9,12 @@
   ],
   "wiki_links": [
     "Model Performance",
-    "Machine Learning",
     "Feature Selection",
-    "Model Training",
-    "Data Cleaning",
     "Dimensionality Reduction",
-    "Data Preprocessing"
+    "Data Preprocessing",
+    "Data Cleaning",
+    "Model Training",
+    "Machine Learning"
   ],
   "ontology": {
     "term_id": "AI-1019",

@@ -6,12 +6,12 @@
   "wiki_links": [
     "Real-Time Rendering",
     "Virtual Object Placement",
-    "Information Augmentation",
-    "Environmental Understanding",
-    "Spatial Anchoring",
     "metaverse",
     "Digital Display Layer",
-    "Spatial Annotation"
+    "Spatial Annotation",
+    "Spatial Anchoring",
+    "Environmental Understanding",
+    "Information Augmentation"
   ],
   "ontology": {
     "term_id": "MV-9771",

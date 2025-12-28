@@ -6,17 +6,17 @@
     "Networking Layer"
   ],
   "wiki_links": [
-    "Collaboration Technology",
-    "Remote Communication",
-    "Spatial Computing",
-    "Remote Work",
-    "Network Infrastructure",
-    "Virtual Meetings",
-    "Audio Visual Systems",
     "User Interface",
-    "metaverse",
+    "Audio Visual Systems",
     "Virtual Presence",
-    "Real-Time Collaboration"
+    "Remote Communication",
+    "metaverse",
+    "Real-Time Collaboration",
+    "Virtual Meetings",
+    "Network Infrastructure",
+    "Remote Work",
+    "Spatial Computing",
+    "Collaboration Technology"
   ],
   "ontology": {
     "term_id": "MV-9824",

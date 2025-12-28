@@ -7,12 +7,12 @@
     "Ar Overlay"
   ],
   "wiki_links": [
-    "World Locking",
-    "Spatial Computing",
-    "Location Based AR",
     "SLAM Technology",
     "metaverse",
-    "Persistent AR Content"
+    "Persistent AR Content",
+    "Location Based AR",
+    "World Locking",
+    "Spatial Computing"
   ],
   "ontology": {
     "term_id": "MV-10050",

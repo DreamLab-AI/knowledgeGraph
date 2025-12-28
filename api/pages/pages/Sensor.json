@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: sensor-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0601\n\t- preferred-term:: Sensor\n\t- source-domain:: rb\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Sensors are devices and systems that enable robots to perceive and measure their environment through the detection of physical phenomena. In robotics, sensors include LiDAR for spatial mapping, cameras for visual perception, IMUs for motion sensing, force-torque sensors for manipulation, and encoders for position feedback.\n\t- owl:class:: rb:Sensor\n\t- belongsToDomain:: [[Robotics Systems]]\n\t- #### Relationships\n\t  id:: sensor-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Robotics Systems]]\n\t\t- is-parent-of:: [[LiDAR]]\n\t\t- is-parent-of:: [[Camera]]\n\t\t- is-parent-of:: [[IMU]]\n\t\t- is-parent-of:: [[Force Torque Sensor]]\n\t\t- related-to:: [[Sensor Fusion]]",
   "backlinks": [],
   "wiki_links": [
-    "Camera",
     "IMU",
-    "Force Torque Sensor",
     "Sensor Fusion",
+    "LiDAR",
     "Robotics Systems",
-    "LiDAR"
+    "Camera",
+    "Force Torque Sensor"
   ],
   "ontology": {
     "term_id": "RB-0601",

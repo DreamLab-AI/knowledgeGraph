@@ -8,17 +8,17 @@
     "Environmental Sustainability Label"
   ],
   "wiki_links": [
-    "Environmental Assessment",
-    "Carbon Accounting",
-    "Life Cycle Assessment",
-    "Impact Quantification",
-    "Hotspot Identification",
-    "Emission Factors",
-    "metaverse",
-    "Boundary Definition",
     "Product Carbon Footprint",
     "Lifecycle Data",
-    "Reduction Strategy"
+    "metaverse",
+    "Boundary Definition",
+    "Life Cycle Assessment",
+    "Carbon Accounting",
+    "Reduction Strategy",
+    "Impact Quantification",
+    "Environmental Assessment",
+    "Hotspot Identification",
+    "Emission Factors"
   ],
   "ontology": {
     "term_id": "MV-9809",

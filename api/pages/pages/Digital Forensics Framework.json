@@ -6,17 +6,17 @@
     "Digital Evidence Chain of Custody"
   ],
   "wiki_links": [
-    "Incident Investigation",
     "Incident Response",
-    "Chain of Custody",
-    "Cybersecurity",
     "metaverse",
-    "Blockchain Forensics",
+    "Cybersecurity",
+    "Legal Documentation",
+    "Data Integrity",
+    "Evidence Collection",
     "Virtual Crime Investigation",
     "Forensic Tools",
-    "Data Integrity",
-    "Legal Documentation",
-    "Evidence Collection"
+    "Blockchain Forensics",
+    "Incident Investigation",
+    "Chain of Custody"
   ],
   "ontology": {
     "term_id": "MV-9857",

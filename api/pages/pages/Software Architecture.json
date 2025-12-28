@@ -9,11 +9,11 @@
   ],
   "wiki_links": [
     "metaverse",
-    "Microservices",
+    "System Design",
     "Design Patterns",
-    "System Scalability",
     "Modular Software Systems",
-    "System Design"
+    "Microservices",
+    "System Scalability"
   ],
   "ontology": {
     "term_id": "MV-10047",

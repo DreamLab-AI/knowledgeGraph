@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "Enterprise Architecture",
+    "Reference Architecture",
+    "Integration Standards",
     "Industrial IoT",
     "Data Models",
-    "RAMI 4.0",
     "metaverse",
-    "IEEE Standards",
     "Standards Compliance",
-    "System Interoperability",
+    "IEEE Standards",
     "Scalable Deployment",
-    "Integration Standards",
-    "Reference Architecture"
+    "RAMI 4.0",
+    "System Interoperability"
   ],
   "ontology": {
     "term_id": "MV-9878",
