@@ -6,9 +6,9 @@
   - public-access:: true
   - term-id:: AI-7990
   - preferred-term:: Patent
-  - source-domain:: ai
+  - source-domain:: ngm
   - status:: draft
-  - owl:class:: ai:ProgressiveDeepImageCompressionForHybridContextsOf
+  - owl:class:: ngm:Patent
 
 
 ### Relationships

@@ -7,12 +7,12 @@
     "Narrative Design Ontology"
   ],
   "wiki_links": [
-    "Narrative Content",
-    "Media Analysis",
-    "metaverse",
     "Narrative Structure",
     "Storytelling",
-    "Narrative Arc"
+    "Narrative Arc",
+    "metaverse",
+    "Media Analysis",
+    "Narrative Content"
   ],
   "ontology": {
     "term_id": "MV-9980",

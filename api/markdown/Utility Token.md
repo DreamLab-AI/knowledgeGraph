@@ -5,9 +5,9 @@ Utility Token refers to tokens providing access to services.
   - ontology:: true
   - public-access:: true
   - term-id:: BC-9866
-  - preferred-term:: Utility Token refers to tokens providing access to services.
+  - preferred-term:: Utility Token
   - source-domain:: bc
-  - owl:class:: bc:UtilityTokenRefersToTokensProvidingAccessToServices
+  - owl:class:: bc:UtilityToken
   - status:: draft
 
 ### Relationships

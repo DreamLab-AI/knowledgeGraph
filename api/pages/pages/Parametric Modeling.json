@@ -6,12 +6,12 @@
     "Generative Design Tool"
   ],
   "wiki_links": [
-    "Computational Design",
-    "metaverse",
-    "CAD Software",
-    "Generative Design",
     "BIM",
-    "3D Modeling"
+    "Generative Design",
+    "metaverse",
+    "3D Modeling",
+    "Computational Design",
+    "CAD Software"
   ],
   "ontology": {
     "term_id": "MV-9992",

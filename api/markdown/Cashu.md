@@ -7,7 +7,7 @@
   - term-id:: BC-9876
   - preferred-term:: Cashu
   - source-domain:: bc
-  - owl:class:: bc:TwitterHttpstwittercomcallebtcstatus1777598819355496587
+  - owl:class:: bc:Cashu
   - status:: draft
 
 ### Core Privacy Mechanism

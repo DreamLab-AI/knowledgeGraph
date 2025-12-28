@@ -6,8 +6,8 @@ While groundbreaking, and crucially, "available", Luma Dream Machine...
   - public-access:: true
   - term-id:: MV-9731
   - preferred-term:: AI Video
-  - source-domain:: mv
-  - owl:class:: mv:WhileGroundbreakingAndCruciallyAvailableLumaDreamMachine
+  - source-domain:: ai
+  - owl:class:: ai:AiVideo
   - status:: draft
 
 ### Pika Labs

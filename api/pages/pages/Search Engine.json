@@ -10,11 +10,11 @@
     "Search Discovery"
   ],
   "wiki_links": [
-    "Information Retrieval",
-    "metaverse",
-    "Ranking Algorithms",
-    "Content Discovery",
     "Search Index",
+    "Content Discovery",
+    "Ranking Algorithms",
+    "metaverse",
+    "Information Retrieval",
     "Web Crawling"
   ],
   "ontology": {

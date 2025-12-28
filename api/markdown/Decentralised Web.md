@@ -9,7 +9,7 @@
   - term-id:: BC-9982
   - preferred-term:: Decentralised Web
   - source-domain:: bc
-  - owl:class:: bc:Figure22Edelman2020TrustBarometerhttpswwwedelmancomtrust2020t
+  - owl:class:: bc:DecentralisedWeb
   - status:: draft
 
 ![Figure 2.2: [Edelman 2020 trust barometer](https://www.edelman.com/trust/2020trustbarometer) \[rights requested\]](../assets/cae.jpg)

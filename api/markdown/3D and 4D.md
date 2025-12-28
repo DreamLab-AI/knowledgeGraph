@@ -5,10 +5,10 @@
   - ontology:: true
   - public-access:: true
   - term-id:: AI-7972
-  - preferred-term:: 3D and 4D
+  - preferred-term:: 3dAnd4d
   - source-domain:: ai
   - status:: draft
-  - owl:class:: ai:twitterHttpstwittercomcocktailpeanutstatus1765462787046686968
+  - owl:class:: ai:3dAnd4d
 
 
 ### Relationships

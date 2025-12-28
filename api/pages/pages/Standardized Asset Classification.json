@@ -6,12 +6,12 @@
     "Digital Taxonomy Registry"
   ],
   "wiki_links": [
-    "Asset Management",
-    "metaverse",
-    "Regulatory Compliance",
-    "Token Classification",
     "NFT Standards",
-    "Digital Asset Taxonomy"
+    "Token Classification",
+    "metaverse",
+    "Digital Asset Taxonomy",
+    "Regulatory Compliance",
+    "Asset Management"
   ],
   "ontology": {
     "term_id": "MV-10070",

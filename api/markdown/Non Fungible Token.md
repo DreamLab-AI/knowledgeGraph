@@ -5,9 +5,9 @@ Non-Fungible Token (NFT) refers to unique digital assets on blockchain.
   - ontology:: true
   - public-access:: true
   - term-id:: BC-9901
-  - preferred-term:: NonFungible Token (NFT) refers to unique digital assets on blockchain.
+  - preferred-term:: Non Fungible Token
   - source-domain:: bc
-  - owl:class:: bc:NonfungibleTokenNftRefersToUniqueDigitalAssetsOnBlockchain
+  - owl:class:: bc:NonFungibleToken
   - status:: draft
 
 ### Relationships

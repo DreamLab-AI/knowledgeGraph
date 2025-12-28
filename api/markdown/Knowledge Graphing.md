@@ -10,7 +10,7 @@
   - preferred-term:: Knowledge Graphing
   - source-domain:: ai
   - status:: draft
-  - owl:class:: ai:httpswwwconnectedpaperscommain995a155fee9afdfacba009c007c884a665ad3055v
+  - owl:class:: ai:KnowledgeGraphing
 
 [https://www.connectedpapers.com/main/995a155fee9afdfacba009c007c884a665ad3055/Visualizingsemanticweb/graph](https://www.connectedpapers.com/main/995a155fee9afdfacba009c007c884a665ad3055/Visualizingsemanticweb/graph)
 

@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "Edge Computing",
-    "metaverse",
-    "GPU Computing",
-    "Real-Time Rendering",
-    "Computing Infrastructure",
     "VR Hardware",
-    "AI Processing",
-    "Power Infrastructure",
-    "Immersive Computing",
+    "GPU Computing",
+    "Computing Infrastructure",
+    "metaverse",
     "High-Bandwidth Memory",
-    "Cooling Systems"
+    "Power Infrastructure",
+    "Real-Time Rendering",
+    "AI Processing",
+    "Cooling Systems",
+    "Immersive Computing"
   ],
   "ontology": {
     "term_id": "MV-9839",

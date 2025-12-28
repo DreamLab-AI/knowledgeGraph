@@ -5,9 +5,9 @@
   - ontology:: true
   - public-access:: true
   - term-id:: MV-9737
-  - preferred-term:: Proprietary Image Generation
+  - preferred-term:: ProprietaryImageGeneration
   - source-domain:: mv
-  - owl:class:: mv:TwitterHttpstwittercomlibertyrpfstatus1737848545657618873
+  - owl:class:: mv:ProprietaryImageGeneration
   - status:: draft
 
 ### MidJourney v5&6

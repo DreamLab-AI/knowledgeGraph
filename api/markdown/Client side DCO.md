@@ -8,7 +8,7 @@ This ensures relevant and engaging marketing content within...
   - preferred-term:: Client side DCO
   - source-domain:: ai
   - status:: draft
-  - owl:class:: ai:ThisEnsuresRelevantAndEngagingMarketingContentWithin
+  - owl:class:: ai:ClientSideDco
 
 
 ### Relationships

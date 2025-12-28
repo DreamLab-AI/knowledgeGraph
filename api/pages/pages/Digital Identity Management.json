@@ -6,17 +6,17 @@
     "Digital Identity Framework"
   ],
   "wiki_links": [
+    "Verifiable Credentials",
+    "Identity Systems",
+    "Cryptographic Keys",
     "Identity Providers",
     "metaverse",
-    "Decentralized Identifiers",
     "Credential Storage",
+    "Decentralized Identifiers",
+    "Cross-Platform Identity",
     "Privacy Control",
     "User Authentication",
-    "Identity Systems",
-    "Verifiable Credentials",
-    "Cryptographic Keys",
-    "Self-Sovereign Identity",
-    "Cross-Platform Identity"
+    "Self-Sovereign Identity"
   ],
   "ontology": {
     "term_id": "MV-9858",

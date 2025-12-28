@@ -13,11 +13,11 @@
     "Gltf Standard"
   ],
   "wiki_links": [
-    "Technical Standard",
-    "metaverse",
     "OpenXR Standard",
-    "Cross-Platform Compatibility",
-    "Interface Standards"
+    "Interface Standards",
+    "metaverse",
+    "Technical Standard",
+    "Cross-Platform Compatibility"
   ],
   "ontology": {
     "term_id": "MV-9935",

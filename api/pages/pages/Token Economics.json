@@ -30,12 +30,12 @@
     "Decentralised Web"
   ],
   "wiki_links": [
-    "Token",
-    "Governance Token",
-    "Staking Rewards",
-    "Blockchain Entity",
     "Decentralized Finance",
-    "Blockchain Technology"
+    "Governance Token",
+    "Token",
+    "Staking Rewards",
+    "Blockchain Technology",
+    "Blockchain Entity"
   ],
   "ontology": {
     "term_id": "BC-0601",

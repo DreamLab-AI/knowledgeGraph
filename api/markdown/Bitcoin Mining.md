@@ -7,7 +7,7 @@ Several innovative projects are using the financial incentive...
   - term-id:: BC-9925
   - preferred-term:: Bitcoin Mining
   - source-domain:: bc
-  - owl:class:: bc:SeveralInnovativeProjectsAreUsingTheFinancialIncentive
+  - owl:class:: bc:BitcoinMining
   - status:: draft
 
 ### Mining process overview (this is a repeat of above?)

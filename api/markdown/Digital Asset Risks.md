@@ -7,9 +7,9 @@
   - ontology:: true
   - public-access:: true
   - term-id:: BC-9894
-  - preferred-term:: ![](./assets/38ea50962c15ec244e6f6b69d4f506f4e836b575.png)
+  - preferred-term:: Digital Asset Risks
   - source-domain:: bc
-  - owl:class:: bc:Assets38ea50962c15ec244e6f6b69d4f506f4e836b575png
+  - owl:class:: bc:DigitalAssetRisks
   - status:: draft
 
 ![](./assets/38ea50962c15ec244e6f6b69d4f506f4e836b575.png)

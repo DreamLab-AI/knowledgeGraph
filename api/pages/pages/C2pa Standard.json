@@ -4,17 +4,17 @@
   "content": "- ### OntologyBlock\n  id:: c2pa-standard-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9802\n\t- source-domain:: mv\n\t- preferred-term:: C2PA Standard\n\t- definition:: An open technical standard developed by the Coalition for Content Provenance and Authenticity that establishes cryptographically-signed Content Credentials to certify the origin, history, and authenticity of digital media, functioning like a tamper-evident nutrition label for digital content.\n\t- status:: active\n\t- owl:class:: mv:C2paStandard\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: c2pa-standard-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Technical Standard]]\n\t\t- enables:: [[Content Provenance]], [[Media Verification]], [[Authenticity Certification]]\n\t\t- requires:: [[Cryptographic Signing]], [[Metadata Framework]], [[Trust Model]]\n\t\t- related-to:: [[Digital Signature]], [[Content Authenticity Initiative]], [[Media Integrity]]\n- ## Technical Details\n\t- **Core Framework**:\n\t\t- Provenance Model: Structures and stores provenance information\n\t\t- Trust Model: Verifies content creator identities\n\t\t- Claim Model: Defines claims made about content\n\t\t- Binding Techniques: Cryptographically links provenance to content\n\t- **Content Credentials Include**:\n\t\t- Content ingredients used in production\n\t\t- Date, time, and location of creation\n\t\t- Device or software used in production process\n\t\t- Cryptographic hash and signature for tamper detection\n\t- **Organizational Structure**: Joint Development Foundation under Linux Foundation, founded by Adobe, Arm, Intel, Microsoft, and Truepic\n\t- **Adoption**: 5000+ member organizations as of 2024, including Microsoft, Adobe, BBC, OpenAI, Google, Meta, and Amazon\n\t- **Standardization**: Expected ISO adoption by 2025; W3C examining browser-level integration\n- ## Applications\n\t- Digital media authenticity verification\n\t- AI-generated content identification\n\t- News and journalism provenance tracking\n\t- Disinformation mitigation\n\t- Creative asset rights management",
   "backlinks": [],
   "wiki_links": [
-    "Technical Standard",
-    "metaverse",
-    "Cryptographic Signing",
-    "Digital Signature",
-    "Trust Model",
-    "Media Verification",
     "Authenticity Certification",
-    "Content Provenance",
     "Media Integrity",
-    "Metadata Framework",
-    "Content Authenticity Initiative"
+    "Cryptographic Signing",
+    "Content Provenance",
+    "metaverse",
+    "Technical Standard",
+    "Media Verification",
+    "Content Authenticity Initiative",
+    "Trust Model",
+    "Digital Signature",
+    "Metadata Framework"
   ],
   "ontology": {
     "term_id": "MV-9802",

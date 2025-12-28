@@ -5,9 +5,9 @@
   - ontology:: true
   - public-access:: true
   - term-id:: MV-9725
-  - preferred-term:: Privacy, Trust and Safety
+  - preferred-term:: PrivacyTrustAndSafety
   - source-domain:: mv
-  - owl:class:: mv:TwitterHttpstwittercomdgRandstatus1775618798717911424
+  - owl:class:: mv:PrivacyTrustAndSafety
   - status:: draft
 
 ### Relationships

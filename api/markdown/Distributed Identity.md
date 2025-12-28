@@ -7,9 +7,9 @@
   - ontology:: true
   - public-access:: true
   - term-id:: BC-9940
-  - preferred-term:: ![]./assets/431d39316d5fa17f89fa9e1154fa2a267517a245.png
+  - preferred-term:: Distributed Identity
   - source-domain:: bc
-  - owl:class:: bc:Assets431d39316d5fa17f89fa9e1154fa2a267517a245png
+  - owl:class:: bc:DistributedIdentity
   - status:: draft
 
 ![]./assets/431d39316d5fa17f89fa9e1154fa2a267517a245.png

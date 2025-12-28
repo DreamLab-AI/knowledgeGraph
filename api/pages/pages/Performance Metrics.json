@@ -9,12 +9,12 @@
     "Benchmark Standard"
   ],
   "wiki_links": [
-    "Recall",
     "Accuracy",
-    "AUC",
-    "Machine Learning",
     "Artificial Intelligence",
+    "Machine Learning",
+    "AUC",
     "Precision",
+    "Recall",
     "F1 Score"
   ],
   "ontology": {

@@ -7,7 +7,7 @@ Metaverse Infrastructure constitutes the comprehensive technical foundation enco
   - term-id:: MV-9749
   - preferred-term:: Metaverse Infrastructure
   - source-domain:: mv
-  - owl:class:: mv:MetaverseInfrastructureConstitutesTheComprehensiveTechnicalFoundationEncompassing
+  - owl:class:: mv:MetaverseInfrastructure
   - status:: draft
 
 ### Relationships

@@ -7,11 +7,11 @@
     "Data Annotation"
   ],
   "wiki_links": [
-    "Model Deployment",
-    "metaverse",
-    "Continuous Integration",
+    "Production ML Systems",
     "MLOps",
-    "Production ML Systems"
+    "Model Deployment",
+    "Continuous Integration",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9953",

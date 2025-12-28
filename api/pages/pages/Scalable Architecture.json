@@ -7,12 +7,12 @@
     "Interoperability Framework"
   ],
   "wiki_links": [
-    "metaverse",
-    "High Availability",
     "System Architecture",
-    "Microservices",
     "Distributed Systems",
-    "Cloud Computing"
+    "Microservices",
+    "High Availability",
+    "Cloud Computing",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10027",

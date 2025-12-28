@@ -159,6 +159,10 @@
   ],
   "class": [
     {
+      "id": "3dand4d",
+      "type": "owl:Class"
+    },
+    {
       "id": "ai-0260",
       "type": "owl:Class"
     },
@@ -483,6 +487,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "aivideo",
+      "type": "owl:Class"
+    },
+    {
       "id": "ai-aiapplications",
       "type": "owl:Class"
     },
@@ -548,10 +556,6 @@
     },
     {
       "id": "anthropicclaude",
-      "type": "owl:Class"
-    },
-    {
-      "id": "apicallnotok",
       "type": "owl:Class"
     },
     {
@@ -655,7 +659,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "chatgpt20240820094800",
+      "id": "clientsidedco",
       "type": "owl:Class"
     },
     {
@@ -891,7 +895,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "dalleisopenaisgroundbreakingtexttoimagegenerativeaisystem",
+      "id": "dalle",
       "type": "owl:Class"
     },
     {
@@ -1104,6 +1108,10 @@
     },
     {
       "id": "feedforwardneuralnetwork",
+      "type": "owl:Class"
+    },
+    {
+      "id": "flux",
       "type": "owl:Class"
     },
     {
@@ -1320,6 +1328,10 @@
     },
     {
       "id": "knowledgegraphconstruction",
+      "type": "owl:Class"
+    },
+    {
+      "id": "knowledgegraphing",
       "type": "owl:Class"
     },
     {
@@ -1811,10 +1823,6 @@
       "type": "owl:Class"
     },
     {
-      "id": "progressivedeepimagecompressionforhybridcontextsof",
-      "type": "owl:Class"
-    },
-    {
       "id": "prohibitedaipractice",
       "type": "owl:Class"
     },
@@ -2151,14 +2159,6 @@
       "type": "owl:Class"
     },
     {
-      "id": "thisensuresrelevantandengagingmarketingcontentwithin",
-      "type": "owl:Class"
-    },
-    {
-      "id": "titlefluxdevloratrainingusesimpletuneritworkswith4090",
-      "type": "owl:Class"
-    },
-    {
       "id": "tocomprehendthelegalchallengesposedbyartificial",
       "type": "owl:Class"
     },
@@ -2267,14 +2267,6 @@
       "type": "owl:Class"
     },
     {
-      "id": "httpswwwconnectedpaperscommain995a155fee9afdfacba009c007c884a665ad3055v",
-      "type": "owl:Class"
-    },
-    {
-      "id": "twitterhttpstwittercomcocktailpeanutstatus1765462787046686968",
-      "type": "owl:Class"
-    },
-    {
       "id": "amlcompliance",
       "type": "owl:Class"
     },
@@ -2312,14 +2304,6 @@
     },
     {
       "id": "asiapacificregulation",
-      "type": "owl:Class"
-    },
-    {
-      "id": "assets38ea50962c15ec244e6f6b69d4f506f4e836b575png",
-      "type": "owl:Class"
-    },
-    {
-      "id": "assets431d39316d5fa17f89fa9e1154fa2a267517a245png",
       "type": "owl:Class"
     },
     {
@@ -2412,6 +2396,10 @@
     },
     {
       "id": "bitcoininfrastructure",
+      "type": "owl:Class"
+    },
+    {
+      "id": "bitcoinmining",
       "type": "owl:Class"
     },
     {
@@ -2540,6 +2528,10 @@
     },
     {
       "id": "cardano",
+      "type": "owl:Class"
+    },
+    {
+      "id": "cashu",
       "type": "owl:Class"
     },
     {
@@ -2739,6 +2731,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "dao",
+      "type": "owl:Class"
+    },
+    {
       "id": "daoanalytics",
       "type": "owl:Class"
     },
@@ -2752,6 +2748,10 @@
     },
     {
       "id": "decentralisedidentityplatform",
+      "type": "owl:Class"
+    },
+    {
+      "id": "decentralisedweb",
       "type": "owl:Class"
     },
     {
@@ -2819,6 +2819,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "digitalassetrisks",
+      "type": "owl:Class"
+    },
+    {
       "id": "digitalconstitution",
       "type": "owl:Class"
     },
@@ -2872,6 +2876,10 @@
     },
     {
       "id": "bc-distributeddatastructure",
+      "type": "owl:Class"
+    },
+    {
+      "id": "distributedidentity",
       "type": "owl:Class"
     },
     {
@@ -3051,10 +3059,6 @@
       "type": "owl:Class"
     },
     {
-      "id": "figure22edelman2020trustbarometerhttpswwwedelmancomtrust2020t",
-      "type": "owl:Class"
-    },
-    {
       "id": "finality",
       "type": "owl:Class"
     },
@@ -3227,14 +3231,6 @@
       "type": "owl:Class"
     },
     {
-      "id": "ifyousoldbitcoinintheukinmay2025hereiswhatyouneedtoknowabouttaxreporting",
-      "type": "owl:Class"
-    },
-    {
-      "id": "imageassets348ebd1d1b622796f691fdcedc6d6207ec79739djpg",
-      "type": "owl:Class"
-    },
-    {
       "id": "immutability",
       "type": "owl:Class"
     },
@@ -3395,10 +3391,6 @@
       "type": "owl:Class"
     },
     {
-      "id": "misctwitterlinks",
-      "type": "owl:Class"
-    },
-    {
       "id": "money",
       "type": "owl:Class"
     },
@@ -3483,6 +3475,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "nonfungibletoken",
+      "type": "owl:Class"
+    },
+    {
       "id": "nonfungibletokennft",
       "type": "owl:Class"
     },
@@ -3492,10 +3488,6 @@
     },
     {
       "id": "nonce",
-      "type": "owl:Class"
-    },
-    {
-      "id": "nonfungibletokennftreferstouniquedigitalassetsonblockchain",
       "type": "owl:Class"
     },
     {
@@ -3791,10 +3783,6 @@
       "type": "owl:Class"
     },
     {
-      "id": "severalinnovativeprojectsareusingthefinancialincentive",
-      "type": "owl:Class"
-    },
-    {
       "id": "sha256",
       "type": "owl:Class"
     },
@@ -3931,10 +3919,6 @@
       "type": "owl:Class"
     },
     {
-      "id": "themostinterestingthingaboutdaosisthat",
-      "type": "owl:Class"
-    },
-    {
       "id": "bc-timestamp",
       "type": "owl:Class"
     },
@@ -4023,10 +4007,6 @@
       "type": "owl:Class"
     },
     {
-      "id": "twitterhttpstwittercomcallebtcstatus1777598819355496587",
-      "type": "owl:Class"
-    },
-    {
       "id": "bc-utxomodel",
       "type": "owl:Class"
     },
@@ -4039,7 +4019,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "utilitytokenreferstotokensprovidingaccesstoservices",
+      "id": "utilitytoken",
       "type": "owl:Class"
     },
     {
@@ -4263,7 +4243,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "aiartcategorization",
+      "id": "mv-aiartcategorization",
       "type": "owl:Class"
     },
     {
@@ -4451,7 +4431,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "avatarbehaviourencompassestheprogrammaticandaidrivenbehavioral",
+      "id": "avatarbehavior",
       "type": "owl:Class"
     },
     {
@@ -4479,7 +4459,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "avatarwearablesconstitutedigitalfashionitemsaccessoriescosmetic",
+      "id": "avatarwearable",
       "type": "owl:Class"
     },
     {
@@ -4571,7 +4551,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-bimsoftware",
+      "id": "bimsoftware",
       "type": "owl:Class"
     },
     {
@@ -5308,6 +5288,10 @@
     },
     {
       "id": "digitalmoney",
+      "type": "owl:Class"
+    },
+    {
+      "id": "digitalobjects",
       "type": "owl:Class"
     },
     {
@@ -6363,7 +6347,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "infraredledilluminator",
+      "id": "mv-infraredledilluminator",
       "type": "owl:Class"
     },
     {
@@ -6635,10 +6619,6 @@
       "type": "owl:Class"
     },
     {
-      "id": "meshroomisafreeopensourcephotogrammetryapplicationthat",
-      "type": "owl:Class"
-    },
-    {
       "id": "metadataregistry",
       "type": "owl:Class"
     },
@@ -6676,10 +6656,6 @@
     },
     {
       "id": "metaverseinfrastructure",
-      "type": "owl:Class"
-    },
-    {
-      "id": "metaverseinfrastructureconstitutesthecomprehensivetechnicalfoundationencompassing",
       "type": "owl:Class"
     },
     {
@@ -7151,6 +7127,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "privacytrustandsafety",
+      "type": "owl:Class"
+    },
+    {
       "id": "proceduralandhybrid4d",
       "type": "owl:Class"
     },
@@ -7184,6 +7164,10 @@
     },
     {
       "id": "propertyrights",
+      "type": "owl:Class"
+    },
+    {
+      "id": "proprietaryimagegeneration",
       "type": "owl:Class"
     },
     {
@@ -7507,7 +7491,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "sharedarexperiences",
+      "id": "mv-sharedarexperiences",
       "type": "owl:Class"
     },
     {
@@ -7591,7 +7575,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "sparqlendpoint",
+      "id": "mv-sparqlendpoint",
       "type": "owl:Class"
     },
     {
@@ -7972,14 +7956,6 @@
     },
     {
       "id": "trustscoremetric",
-      "type": "owl:Class"
-    },
-    {
-      "id": "twitterhttpstwittercomdgrandstatus1775618798717911424",
-      "type": "owl:Class"
-    },
-    {
-      "id": "twitterhttpstwittercomlibertyrpfstatus1737848545657618873",
       "type": "owl:Class"
     },
     {
@@ -8423,10 +8399,6 @@
       "type": "owl:Class"
     },
     {
-      "id": "whilegroundbreakingandcruciallyavailablelumadreammachine",
-      "type": "owl:Class"
-    },
-    {
       "id": "wirelessvaluerealization",
       "type": "owl:Class"
     },
@@ -8459,7 +8431,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-xraccessibilityguideline",
+      "id": "xraccessibilityguideline",
       "type": "owl:Class"
     },
     {
@@ -8652,6 +8624,10 @@
     },
     {
       "id": "ngm-nlptask",
+      "type": "owl:Class"
+    },
+    {
+      "id": "patent",
       "type": "owl:Class"
     },
     {
@@ -9861,6 +9837,18 @@
   ],
   "classAttribute": [
     {
+      "id": "3dand4d",
+      "iri": "http://narrativegoldmine.com/ai#3dAnd4d",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "3dAnd4d"
+      }
+    },
+    {
       "id": "ai-0260",
       "iri": "http://narrativegoldmine.com/ai#AI-0260",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -10950,6 +10938,18 @@
       }
     },
     {
+      "id": "aivideo",
+      "iri": "http://narrativegoldmine.com/ai#AiVideo",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "AI Video"
+      }
+    },
+    {
       "id": "ai-aiapplications",
       "iri": "http://narrativegoldmine.com/ai#Aiapplications",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -11193,18 +11193,6 @@
       },
       "comment": {
         "en": "Anthropic Claude is a family of large language models designed for complex, multi-step tasks with large context windows."
-      }
-    },
-    {
-      "id": "apicallnotok",
-      "iri": "http://narrativegoldmine.com/ai#ApicallNotOk",
-      "baseIri": "http://narrativegoldmine.com/ai",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#4CAF50",
-      "label": {
-        "en": "apicall-not-ok"
       }
     },
     {
@@ -11532,15 +11520,15 @@
       }
     },
     {
-      "id": "chatgpt20240820094800",
-      "iri": "http://narrativegoldmine.com/ai#Chatgpt2024082009%3a48%3a00",
+      "id": "clientsidedco",
+      "iri": "http://narrativegoldmine.com/ai#ClientSideDco",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
         "colored"
       ],
       "backgroundColor": "#4CAF50",
       "label": {
-        "en": "chatgpt__2024-08-20 09%3A48%3A00"
+        "en": "Client side DCO"
       }
     },
     {
@@ -12375,8 +12363,8 @@
       }
     },
     {
-      "id": "dalleisopenaisgroundbreakingtexttoimagegenerativeaisystem",
-      "iri": "http://narrativegoldmine.com/ai#DalleIsOpenaisGroundbreakingTexttoimageGenerativeAiSystem",
+      "id": "dalle",
+      "iri": "http://narrativegoldmine.com/ai#DallE",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
         "colored"
@@ -13125,6 +13113,18 @@
       }
     },
     {
+      "id": "flux",
+      "iri": "http://narrativegoldmine.com/ai#Flux",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "Flux"
+      }
+    },
+    {
       "id": "fooocus",
       "iri": "http://narrativegoldmine.com/ai#Fooocus",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -13863,6 +13863,18 @@
       "backgroundColor": "#4CAF50",
       "label": {
         "en": "Knowledge Graph Construction"
+      }
+    },
+    {
+      "id": "knowledgegraphing",
+      "iri": "http://narrativegoldmine.com/ai#KnowledgeGraphing",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "Knowledge Graphing"
       }
     },
     {
@@ -15564,18 +15576,6 @@
       }
     },
     {
-      "id": "progressivedeepimagecompressionforhybridcontextsof",
-      "iri": "http://narrativegoldmine.com/ai#ProgressiveDeepImageCompressionForHybridContextsOf",
-      "baseIri": "http://narrativegoldmine.com/ai",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#4CAF50",
-      "label": {
-        "en": "Patent"
-      }
-    },
-    {
       "id": "prohibitedaipractice",
       "iri": "http://narrativegoldmine.com/ai#ProhibitedAIPractice",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -16719,30 +16719,6 @@
       }
     },
     {
-      "id": "thisensuresrelevantandengagingmarketingcontentwithin",
-      "iri": "http://narrativegoldmine.com/ai#ThisEnsuresRelevantAndEngagingMarketingContentWithin",
-      "baseIri": "http://narrativegoldmine.com/ai",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#4CAF50",
-      "label": {
-        "en": "Client side DCO"
-      }
-    },
-    {
-      "id": "titlefluxdevloratrainingusesimpletuneritworkswith4090",
-      "iri": "http://narrativegoldmine.com/ai#TitleFluxDevLoraTrainingUseSimpletunerItWorksWith4090",
-      "baseIri": "http://narrativegoldmine.com/ai",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#4CAF50",
-      "label": {
-        "en": "Flux"
-      }
-    },
-    {
       "id": "tocomprehendthelegalchallengesposedbyartificial",
       "iri": "http://narrativegoldmine.com/ai#ToComprehendTheLegalChallengesPosedByartificial",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -17121,30 +17097,6 @@
       }
     },
     {
-      "id": "httpswwwconnectedpaperscommain995a155fee9afdfacba009c007c884a665ad3055v",
-      "iri": "http://narrativegoldmine.com/ai#httpswwwconnectedpaperscommain995a155fee9afdfacba009c007c884a665ad3055v",
-      "baseIri": "http://narrativegoldmine.com/ai",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#4CAF50",
-      "label": {
-        "en": "Knowledge Graphing"
-      }
-    },
-    {
-      "id": "twitterhttpstwittercomcocktailpeanutstatus1765462787046686968",
-      "iri": "http://narrativegoldmine.com/ai#twitterHttpstwittercomcocktailpeanutstatus1765462787046686968",
-      "baseIri": "http://narrativegoldmine.com/ai",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#4CAF50",
-      "label": {
-        "en": "3D and 4D"
-      }
-    },
-    {
       "id": "amlcompliance",
       "iri": "http://narrativegoldmine.com/blockchain#AMLCompliance",
       "baseIri": "http://narrativegoldmine.com/blockchain",
@@ -17286,30 +17238,6 @@
       },
       "comment": {
         "en": "Asia Pacific Regulation encompasses the diverse regulatory frameworks governing blockchain, cryptocurrency, and digital asset activities across major jurisdictions including Singapore, Hong Kong, J..."
-      }
-    },
-    {
-      "id": "assets38ea50962c15ec244e6f6b69d4f506f4e836b575png",
-      "iri": "http://narrativegoldmine.com/blockchain#Assets38ea50962c15ec244e6f6b69d4f506f4e836b575png",
-      "baseIri": "http://narrativegoldmine.com/blockchain",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#2196F3",
-      "label": {
-        "en": "![](./assets/38ea50962c15ec244e6f6b69d4f506f4e836b575.png)"
-      }
-    },
-    {
-      "id": "assets431d39316d5fa17f89fa9e1154fa2a267517a245png",
-      "iri": "http://narrativegoldmine.com/blockchain#Assets431d39316d5fa17f89fa9e1154fa2a267517a245png",
-      "baseIri": "http://narrativegoldmine.com/blockchain",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#2196F3",
-      "label": {
-        "en": "![]./assets/431d39316d5fa17f89fa9e1154fa2a267517a245.png"
       }
     },
     {
@@ -17637,6 +17565,18 @@
       "backgroundColor": "#2196F3",
       "label": {
         "en": "BitcoinInfrastructure"
+      }
+    },
+    {
+      "id": "bitcoinmining",
+      "iri": "http://narrativegoldmine.com/blockchain#BitcoinMining",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "label": {
+        "en": "Bitcoin Mining"
       }
     },
     {
@@ -18102,6 +18042,18 @@
       },
       "comment": {
         "en": "A research-driven blockchain platform using the mathematically-verified Ouroboros Proof-of-Stake consensus protocol. Features layered architecture separating settlement and computation layers, writ..."
+      }
+    },
+    {
+      "id": "cashu",
+      "iri": "http://narrativegoldmine.com/blockchain#Cashu",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "label": {
+        "en": "Cashu"
       }
     },
     {
@@ -18798,6 +18750,18 @@
       }
     },
     {
+      "id": "dao",
+      "iri": "http://narrativegoldmine.com/blockchain#Dao",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "label": {
+        "en": "DAO"
+      }
+    },
+    {
       "id": "daoanalytics",
       "iri": "http://narrativegoldmine.com/blockchain#DaoAnalytics",
       "baseIri": "http://narrativegoldmine.com/blockchain",
@@ -18852,6 +18816,18 @@
       "backgroundColor": "#2196F3",
       "label": {
         "en": "DecentralisedIdentityPlatform"
+      }
+    },
+    {
+      "id": "decentralisedweb",
+      "iri": "http://narrativegoldmine.com/blockchain#DecentralisedWeb",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "label": {
+        "en": "Decentralised Web"
       }
     },
     {
@@ -19086,6 +19062,18 @@
       }
     },
     {
+      "id": "digitalassetrisks",
+      "iri": "http://narrativegoldmine.com/blockchain#DigitalAssetRisks",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "label": {
+        "en": "Digital Asset Risks"
+      }
+    },
+    {
       "id": "digitalconstitution",
       "iri": "http://narrativegoldmine.com/blockchain#DigitalConstitution",
       "baseIri": "http://narrativegoldmine.com/blockchain",
@@ -19287,6 +19275,18 @@
       },
       "comment": {
         "en": "A Distributed Data Structure is an abstract organizational framework for storing, managing, and accessing data across multiple networked computing nodes without centralized coordination. Unlike tra..."
+      }
+    },
+    {
+      "id": "distributedidentity",
+      "iri": "http://narrativegoldmine.com/blockchain#DistributedIdentity",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "label": {
+        "en": "Distributed Identity"
       }
     },
     {
@@ -19890,18 +19890,6 @@
       }
     },
     {
-      "id": "figure22edelman2020trustbarometerhttpswwwedelmancomtrust2020t",
-      "iri": "http://narrativegoldmine.com/blockchain#Figure22Edelman2020TrustBarometerhttpswwwedelmancomtrust2020t",
-      "baseIri": "http://narrativegoldmine.com/blockchain",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#2196F3",
-      "label": {
-        "en": "Decentralised Web"
-      }
-    },
-    {
       "id": "finality",
       "iri": "http://narrativegoldmine.com/blockchain#Finality",
       "baseIri": "http://narrativegoldmine.com/blockchain",
@@ -20496,30 +20484,6 @@
       }
     },
     {
-      "id": "ifyousoldbitcoinintheukinmay2025hereiswhatyouneedtoknowabouttaxreporting",
-      "iri": "http://narrativegoldmine.com/blockchain#IfYouSoldBitcoinInTheUkInMay2025HereIsWhatYouNeedToKnowAboutTaxReporting",
-      "baseIri": "http://narrativegoldmine.com/blockchain",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#2196F3",
-      "label": {
-        "en": "If you sold Bitcoin in the UK in May 2025, here is what you need to know about tax reporting:"
-      }
-    },
-    {
-      "id": "imageassets348ebd1d1b622796f691fdcedc6d6207ec79739djpg",
-      "iri": "http://narrativegoldmine.com/blockchain#Imageassets348ebd1d1b622796f691fdcedc6d6207ec79739djpg",
-      "baseIri": "http://narrativegoldmine.com/blockchain",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#2196F3",
-      "label": {
-        "en": "![image](./assets/348ebd1d1b622796f691fdcedc6d6207ec79739d.jpg)"
-      }
-    },
-    {
       "id": "immutability",
       "iri": "http://narrativegoldmine.com/blockchain#Immutability",
       "baseIri": "http://narrativegoldmine.com/blockchain",
@@ -21063,18 +21027,6 @@
       }
     },
     {
-      "id": "misctwitterlinks",
-      "iri": "http://narrativegoldmine.com/blockchain#MiscTwitterLinks",
-      "baseIri": "http://narrativegoldmine.com/blockchain",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#2196F3",
-      "label": {
-        "en": "Misc Twitter Links"
-      }
-    },
-    {
       "id": "money",
       "iri": "http://narrativegoldmine.com/blockchain#Money",
       "baseIri": "http://narrativegoldmine.com/blockchain",
@@ -21375,6 +21327,18 @@
       }
     },
     {
+      "id": "nonfungibletoken",
+      "iri": "http://narrativegoldmine.com/blockchain#NonFungibleToken",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "label": {
+        "en": "Non Fungible Token"
+      }
+    },
+    {
       "id": "nonfungibletokennft",
       "iri": "http://narrativegoldmine.com/blockchain#NonFungibleTokenNft",
       "baseIri": "http://narrativegoldmine.com/blockchain",
@@ -21414,18 +21378,6 @@
       },
       "comment": {
         "en": "Number used once for cryptographic operations within blockchain systems, providing essential functionality for distributed ledger technology operations and properties."
-      }
-    },
-    {
-      "id": "nonfungibletokennftreferstouniquedigitalassetsonblockchain",
-      "iri": "http://narrativegoldmine.com/blockchain#NonfungibleTokenNftRefersToUniqueDigitalAssetsOnBlockchain",
-      "baseIri": "http://narrativegoldmine.com/blockchain",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#2196F3",
-      "label": {
-        "en": "NonFungible Token (NFT) refers to unique digital assets on blockchain."
       }
     },
     {
@@ -22452,18 +22404,6 @@
       }
     },
     {
-      "id": "severalinnovativeprojectsareusingthefinancialincentive",
-      "iri": "http://narrativegoldmine.com/blockchain#SeveralInnovativeProjectsAreUsingTheFinancialIncentive",
-      "baseIri": "http://narrativegoldmine.com/blockchain",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#2196F3",
-      "label": {
-        "en": "Bitcoin Mining"
-      }
-    },
-    {
       "id": "sha256",
       "iri": "http://narrativegoldmine.com/blockchain#Sha256",
       "baseIri": "http://narrativegoldmine.com/blockchain",
@@ -22932,18 +22872,6 @@
       }
     },
     {
-      "id": "themostinterestingthingaboutdaosisthat",
-      "iri": "http://narrativegoldmine.com/blockchain#TheMostInterestingThingAboutDaosIsThat",
-      "baseIri": "http://narrativegoldmine.com/blockchain",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#2196F3",
-      "label": {
-        "en": "DAO"
-      }
-    },
-    {
       "id": "bc-timestamp",
       "iri": "http://narrativegoldmine.com/blockchain#Timestamp",
       "baseIri": "http://narrativegoldmine.com/blockchain",
@@ -23259,18 +23187,6 @@
       }
     },
     {
-      "id": "twitterhttpstwittercomcallebtcstatus1777598819355496587",
-      "iri": "http://narrativegoldmine.com/blockchain#TwitterHttpstwittercomcallebtcstatus1777598819355496587",
-      "baseIri": "http://narrativegoldmine.com/blockchain",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#2196F3",
-      "label": {
-        "en": "Cashu"
-      }
-    },
-    {
       "id": "bc-utxomodel",
       "iri": "http://narrativegoldmine.com/blockchain#UTXOModel",
       "baseIri": "http://narrativegoldmine.com/blockchain",
@@ -23316,15 +23232,15 @@
       }
     },
     {
-      "id": "utilitytokenreferstotokensprovidingaccesstoservices",
-      "iri": "http://narrativegoldmine.com/blockchain#UtilityTokenRefersToTokensProvidingAccessToServices",
+      "id": "utilitytoken",
+      "iri": "http://narrativegoldmine.com/blockchain#UtilityToken",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
         "colored"
       ],
       "backgroundColor": "#2196F3",
       "label": {
-        "en": "Utility Token refers to tokens providing access to services."
+        "en": "Utility Token"
       }
     },
     {
@@ -24057,7 +23973,7 @@
       }
     },
     {
-      "id": "aiartcategorization",
+      "id": "mv-aiartcategorization",
       "iri": "http://narrativegoldmine.com/metaverse#AiArtCategorization",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -24726,8 +24642,8 @@
       }
     },
     {
-      "id": "avatarbehaviourencompassestheprogrammaticandaidrivenbehavioral",
-      "iri": "http://narrativegoldmine.com/metaverse#AvatarBehaviourEncompassesTheProgrammaticAndAidrivenBehavioral",
+      "id": "avatarbehavior",
+      "iri": "http://narrativegoldmine.com/metaverse#AvatarBehavior",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
         "colored"
@@ -24828,8 +24744,8 @@
       }
     },
     {
-      "id": "avatarwearablesconstitutedigitalfashionitemsaccessoriescosmetic",
-      "iri": "http://narrativegoldmine.com/metaverse#AvatarWearablesConstituteDigitalFashionItemsAccessoriesCosmetic",
+      "id": "avatarwearable",
+      "iri": "http://narrativegoldmine.com/metaverse#AvatarWearable",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
         "colored"
@@ -25140,7 +25056,7 @@
       }
     },
     {
-      "id": "mv-bimsoftware",
+      "id": "bimsoftware",
       "iri": "http://narrativegoldmine.com/metaverse#BimSoftware",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -27663,6 +27579,18 @@
       },
       "comment": {
         "en": "Any form of monetary value existing purely in electronic format, encompassing e-money, central bank digital currencies, cryptocurrencies, and stablecoins, that can be stored, transferred, and trans..."
+      }
+    },
+    {
+      "id": "digitalobjects",
+      "iri": "http://narrativegoldmine.com/metaverse#DigitalObjects",
+      "baseIri": "http://narrativegoldmine.com/metaverse",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#9C27B0",
+      "label": {
+        "en": "Digital Objects"
       }
     },
     {
@@ -31338,7 +31266,7 @@
       }
     },
     {
-      "id": "infraredledilluminator",
+      "id": "mv-infraredledilluminator",
       "iri": "http://narrativegoldmine.com/metaverse#InfraredLedIlluminator",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -32301,18 +32229,6 @@
       }
     },
     {
-      "id": "meshroomisafreeopensourcephotogrammetryapplicationthat",
-      "iri": "http://narrativegoldmine.com/metaverse#MeshroomIsAFreeOpensourcePhotogrammetryApplicationThat",
-      "baseIri": "http://narrativegoldmine.com/metaverse",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#9C27B0",
-      "label": {
-        "en": "Daniel AI creative technologist"
-      }
-    },
-    {
       "id": "metadataregistry",
       "iri": "http://narrativegoldmine.com/metaverse#MetadataRegistry",
       "baseIri": "http://narrativegoldmine.com/metaverse",
@@ -32447,18 +32363,6 @@
     {
       "id": "metaverseinfrastructure",
       "iri": "http://narrativegoldmine.com/metaverse#MetaverseInfrastructure",
-      "baseIri": "http://narrativegoldmine.com/metaverse",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#9C27B0",
-      "label": {
-        "en": "MetaverseInfrastructure"
-      }
-    },
-    {
-      "id": "metaverseinfrastructureconstitutesthecomprehensivetechnicalfoundationencompassing",
-      "iri": "http://narrativegoldmine.com/metaverse#MetaverseInfrastructureConstitutesTheComprehensiveTechnicalFoundationEncompassing",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
         "colored"
@@ -34131,6 +34035,18 @@
       }
     },
     {
+      "id": "privacytrustandsafety",
+      "iri": "http://narrativegoldmine.com/metaverse#PrivacyTrustAndSafety",
+      "baseIri": "http://narrativegoldmine.com/metaverse",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#9C27B0",
+      "label": {
+        "en": "PrivacyTrustAndSafety"
+      }
+    },
+    {
       "id": "proceduralandhybrid4d",
       "iri": "http://narrativegoldmine.com/metaverse#ProceduralAndHybrid4d",
       "baseIri": "http://narrativegoldmine.com/metaverse",
@@ -34245,6 +34161,18 @@
       "backgroundColor": "#9C27B0",
       "label": {
         "en": "PropertyRights"
+      }
+    },
+    {
+      "id": "proprietaryimagegeneration",
+      "iri": "http://narrativegoldmine.com/metaverse#ProprietaryImageGeneration",
+      "baseIri": "http://narrativegoldmine.com/metaverse",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#9C27B0",
+      "label": {
+        "en": "ProprietaryImageGeneration"
       }
     },
     {
@@ -35367,7 +35295,7 @@
       }
     },
     {
-      "id": "sharedarexperiences",
+      "id": "mv-sharedarexperiences",
       "iri": "http://narrativegoldmine.com/metaverse#SharedArExperiences",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -35664,7 +35592,7 @@
       }
     },
     {
-      "id": "sparqlendpoint",
+      "id": "mv-sparqlendpoint",
       "iri": "http://narrativegoldmine.com/metaverse#SparqlEndpoint",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -37002,30 +36930,6 @@
       },
       "comment": {
         "en": "A quantitative measurement representing an entity's trustworthiness, credibility, or risk level, expressed as a numerical value with associated confidence intervals and time validity, used to infor..."
-      }
-    },
-    {
-      "id": "twitterhttpstwittercomdgrandstatus1775618798717911424",
-      "iri": "http://narrativegoldmine.com/metaverse#TwitterHttpstwittercomdgRandstatus1775618798717911424",
-      "baseIri": "http://narrativegoldmine.com/metaverse",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#9C27B0",
-      "label": {
-        "en": "Privacy, Trust and Safety"
-      }
-    },
-    {
-      "id": "twitterhttpstwittercomlibertyrpfstatus1737848545657618873",
-      "iri": "http://narrativegoldmine.com/metaverse#TwitterHttpstwittercomlibertyrpfstatus1737848545657618873",
-      "baseIri": "http://narrativegoldmine.com/metaverse",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#9C27B0",
-      "label": {
-        "en": "Proprietary Image Generation"
       }
     },
     {
@@ -38625,18 +38529,6 @@
       }
     },
     {
-      "id": "whilegroundbreakingandcruciallyavailablelumadreammachine",
-      "iri": "http://narrativegoldmine.com/metaverse#WhileGroundbreakingAndCruciallyAvailableLumaDreamMachine",
-      "baseIri": "http://narrativegoldmine.com/metaverse",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#9C27B0",
-      "label": {
-        "en": "AI Video"
-      }
-    },
-    {
       "id": "wirelessvaluerealization",
       "iri": "http://narrativegoldmine.com/metaverse#WirelessValueRealization",
       "baseIri": "http://narrativegoldmine.com/metaverse",
@@ -38736,7 +38628,7 @@
       }
     },
     {
-      "id": "mv-xraccessibilityguideline",
+      "id": "xraccessibilityguideline",
       "iri": "http://narrativegoldmine.com/metaverse#XrAccessibilityGuideline",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -39476,6 +39368,19 @@
       },
       "comment": {
         "en": "Stub page for NLPTask. Referenced by 8 pages. Auto-generated during corpus cleanup."
+      }
+    },
+    {
+      "id": "patent",
+      "iri": "http://narrativegoldmine.com/ontology#Patent",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "label": {
+        "en": "Patent"
       }
     },
     {
@@ -46025,7 +45930,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-sharedarexperiences-augmentedreality",
+      "id": "subclassof-mv-sharedarexperiences-augmentedreality",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46337,7 +46242,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-sparqlendpoint-dataaccessinterface",
+      "id": "subclassof-mv-sparqlendpoint-dataaccessinterface",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46489,7 +46394,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-avatarbehaviourencompassestheprogrammaticandaidrivenbehavioral-mv-digitalasset",
+      "id": "subclassof-avatarbehavior-mv-digitalasset",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46917,7 +46822,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-bimsoftware-designsoftware",
+      "id": "subclassof-bimsoftware-designsoftware",
       "type": "rdfs:subClassOf"
     },
     {
@@ -47321,7 +47226,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-infraredledilluminator-infraredilluminator",
+      "id": "subclassof-mv-infraredledilluminator-infraredilluminator",
       "type": "rdfs:subClassOf"
     },
     {
@@ -52760,8 +52665,8 @@
       ]
     },
     {
-      "id": "subclassof-sharedarexperiences-augmentedreality",
-      "domain": "sharedarexperiences",
+      "id": "subclassof-mv-sharedarexperiences-augmentedreality",
+      "domain": "mv-sharedarexperiences",
       "range": "augmentedreality",
       "attributes": [
         "anonymous",
@@ -53462,8 +53367,8 @@
       ]
     },
     {
-      "id": "subclassof-sparqlendpoint-dataaccessinterface",
-      "domain": "sparqlendpoint",
+      "id": "subclassof-mv-sparqlendpoint-dataaccessinterface",
+      "domain": "mv-sparqlendpoint",
       "range": "dataaccessinterface",
       "attributes": [
         "anonymous",
@@ -53804,8 +53709,8 @@
       ]
     },
     {
-      "id": "subclassof-avatarbehaviourencompassestheprogrammaticandaidrivenbehavioral-mv-digitalasset",
-      "domain": "avatarbehaviourencompassestheprogrammaticandaidrivenbehavioral",
+      "id": "subclassof-avatarbehavior-mv-digitalasset",
+      "domain": "avatarbehavior",
       "range": "mv-digitalasset",
       "attributes": [
         "anonymous",
@@ -54767,8 +54672,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-bimsoftware-designsoftware",
-      "domain": "mv-bimsoftware",
+      "id": "subclassof-bimsoftware-designsoftware",
+      "domain": "bimsoftware",
       "range": "designsoftware",
       "attributes": [
         "anonymous",
@@ -55676,8 +55581,8 @@
       ]
     },
     {
-      "id": "subclassof-infraredledilluminator-infraredilluminator",
-      "domain": "infraredledilluminator",
+      "id": "subclassof-mv-infraredledilluminator-infraredilluminator",
+      "domain": "mv-infraredledilluminator",
       "range": "infraredilluminator",
       "attributes": [
         "anonymous",
