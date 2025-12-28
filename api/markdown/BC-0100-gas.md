@@ -8,6 +8,7 @@ id:: gas-ontology
   - preferred-term:: Gas
   - source-domain:: bc
   - owl:class:: bc:Gas
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Transaction execution cost unit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

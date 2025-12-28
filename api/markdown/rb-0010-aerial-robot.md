@@ -10,4 +10,4 @@ id:: rb-0010-aerial-robot-ontology
   - owl:class:: rb:AerialRobot
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

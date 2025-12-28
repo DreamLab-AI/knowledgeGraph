@@ -4,7 +4,7 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9930
-	- source-domain:: metaverse
+	- source-domain:: mv
 	- preferred-term:: Infrared Led Illuminator
 	- status:: active
 	- owl:class:: mv:InfraredLedIlluminator

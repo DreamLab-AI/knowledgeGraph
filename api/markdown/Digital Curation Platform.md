@@ -8,6 +8,7 @@ id:: digital-curation-platform-ontology
   - preferred-term:: Digital Curation Platform
   - source-domain:: mv
   - owl:class:: mv:DigitalCurationPlatform
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Integrated system for organizing, preserving, managing, and providing long-term access to digital cultural artifacts, collections, and heritage materials in metaverse environments.
 

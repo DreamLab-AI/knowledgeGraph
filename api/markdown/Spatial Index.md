@@ -15,7 +15,7 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[InfrastructureDomain]]
+	- belongsToDomain:: [[InfrastructureDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[I) Physical Layer]], [[IV) Data Layer]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]
@@ -37,7 +37,9 @@
 		- enables:: [[View Frustum Culling]]
 		- enables:: [[Fast Spatial Queries]]
 		- enables:: [[Collision Detection]]
-		- is-required-by:: [[Scene Graph]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - Scene Graph requires Spatial Index
 		- depends-on:: [[Computational Geometry]]
 		- depends-on:: [[Nearest Neighbor Search]]
 		- depends-on:: [[Data Structure]]

@@ -12,7 +12,7 @@ id:: generativemodel-ontology
   - definition:: A component of the metaverse ecosystem.
 
 ### Relationships
-- is-subclass-of:: [[mv:MachineLearning]]
-- is-subclass-of:: [[mv:MachineLearning]]
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[MachineLearning]]
+- is-subclass-of:: [[MachineLearning]]
+- is-subclass-of:: [[ModelArchitecture]]
 - is-subclass-of:: [[DeepLearning]]

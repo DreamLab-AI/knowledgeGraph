@@ -9,8 +9,7 @@ id:: overfitting-ontology
   - source-domain:: mv
   - owl:class:: mv:Overfitting
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[ArtificialIntelligence]]
 - belongsToDomain:: [[MetaverseDomain]]

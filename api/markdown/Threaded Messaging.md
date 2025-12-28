@@ -14,4 +14,4 @@
 	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[TelecollaborationDomain]]
-	- isSubclassOf:: [[Asynchronous Collaboration]]
+	- is-subclass-of:: [[Asynchronous Collaboration]]

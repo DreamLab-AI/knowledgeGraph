@@ -12,6 +12,7 @@ id:: bitcoin-ontology
   - public-access:: true
 
 ### Relationships
+- is-subclass-of:: [[Blockchain Technology]]
 - instance-of:: [[BlockchainNetwork]]
 - instance-of:: [[Cryptocurrency]]
 - uses-data-structure:: [[Blockchain]]

@@ -8,6 +8,7 @@ id:: extended-reality-xr-ontology
   - preferred-term:: Extended Reality (XR)
   - source-domain:: mv
   - owl:class:: mv:ExtendedRealityXr
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Umbrella term encompassing all immersive technologies including Augmented Reality (AR), Virtual Reality (VR), and Mixed Reality (MR), representing the full spectrum from entirely physical to entirely virtual environments and all hybrid states between.
 

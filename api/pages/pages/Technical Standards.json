@@ -6,7 +6,6 @@
     "Virtual Environment Specification",
     "Standards Compliance",
     "Standards Documentation",
-    "Standards",
     "Environmental Standards",
     "Asset Format Standards",
     "Documentation Standards",
@@ -18,11 +17,11 @@
     "Data Format Standard"
   ],
   "wiki_links": [
-    "Standards",
+    "metaverse",
     "Standards Conformance",
     "Standards Compliance",
     "Interoperability",
-    "metaverse"
+    "Standards"
   ],
   "ontology": {
     "term_id": "MV-10079",

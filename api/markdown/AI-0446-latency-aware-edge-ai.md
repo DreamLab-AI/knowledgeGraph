@@ -11,4 +11,4 @@ AI-0446-latency-aware-edge-ai
   - owl:class:: ai:Ai0446LatencyAwareEdgeAi
 
 ### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]

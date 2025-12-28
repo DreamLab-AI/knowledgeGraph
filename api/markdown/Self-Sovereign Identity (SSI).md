@@ -8,6 +8,7 @@ id:: self-sovereign-identity-ssi-ontology
   - preferred-term:: Self-Sovereign Identity (SSI)
   - source-domain:: bc
   - owl:class:: bc:SelfSovereignIdentitySsi
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A paradigm for digital identity management where individuals and organizations have complete control over their identity data, credentials, and consent without reliance on centralized authorities or intermediaries.
 

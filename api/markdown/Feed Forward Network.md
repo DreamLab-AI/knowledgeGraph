@@ -12,8 +12,8 @@
 	- owl:class:: ai:FeedForwardNetwork
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships
-- is-subclass-of:: [[ai:NeuralNetworkComponent]]
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[NeuralNetworkComponent]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: feedforwardnetwork-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[NeuralNetworkArchitecture]]

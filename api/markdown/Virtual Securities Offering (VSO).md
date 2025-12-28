@@ -8,6 +8,7 @@ id:: virtual-securities-offering-vso-ontology
   - preferred-term:: Virtual Securities Offering (VSO)
   - source-domain:: bc
   - owl:class:: bc:VirtualSecuritiesOfferingVso
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A tokenized securities issuance process that leverages blockchain technology to create, distribute, and manage digital representations of traditional securities with embedded regulatory compliance and automated governance mechanisms.
 

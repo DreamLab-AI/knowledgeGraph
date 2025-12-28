@@ -10,4 +10,4 @@ id:: rb-0016-medical-robot-ontology
   - owl:class:: rb:MedicalRobot
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: The capacity of a machine learning model to maintain consistent and reliable performance when exposed to variations in input data, including noise, distributional shifts, and edge cases, without catastrophic degradation in accuracy or functionality.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: model-robustness-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[Model]]

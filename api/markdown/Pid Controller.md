@@ -6,8 +6,7 @@
   - owl:class:: mv:PidController
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- is-subclass-of:: [[rb-0047-feedback-control]]
 
 

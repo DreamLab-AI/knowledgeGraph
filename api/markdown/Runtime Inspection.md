@@ -14,4 +14,4 @@
 
 ### Relationships
 
-- is-subclass-of:: [[ai:AiGovernance]]
+- is-subclass-of:: [[AiGovernance]]

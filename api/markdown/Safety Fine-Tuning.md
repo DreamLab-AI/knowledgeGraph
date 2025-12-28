@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: Fine-tuning specifically aimed at improving AI system safety, reducing harmful outputs, and enhancing alignment with safety principles. Safety fine-tuning typically follows general capability training and uses safety-focused datasets and objectives.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: safety-fine-tuning-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AISafety]]

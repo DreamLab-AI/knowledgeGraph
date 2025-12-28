@@ -10,4 +10,4 @@ id:: rb-0050-path-planning-ontology
   - owl:class:: rb:PathPlanning
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

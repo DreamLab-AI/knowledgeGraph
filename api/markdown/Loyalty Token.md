@@ -8,6 +8,7 @@ id:: loyalty-token-ontology
   - preferred-term:: Loyalty Token
   - source-domain:: bc
   - owl:class:: bc:LoyaltyToken
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A digital token granting repeat-use or membership rewards within a metaverse ecosystem, enabling customer engagement, brand loyalty programs, and tokenized incentive mechanisms.
 

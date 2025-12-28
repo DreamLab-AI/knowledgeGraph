@@ -4,7 +4,7 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-10098
-	- source-domain:: metaverse
+	- source-domain:: mv
 	- preferred-term:: User Interface Standard
 	- status:: active
 	- definition:: Specifications and guidelines that define consistent patterns, components, and interactions for user interfaces in metaverse and XR environments, ensuring usability, accessibility, and cross-platform consistency.

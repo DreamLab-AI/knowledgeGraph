@@ -18,7 +18,7 @@
 	- owl:inferred-class:: bc:VirtualObject
 
 ### Domain & Architecture
-	- belongsToDomain:: [[CryptographicDomain]]
+	- belongsToDomain:: [[CryptographicDomain]], [[DisruptiveTechDomain]]
 	- maturity:: mature
 
 ### Relationships
@@ -69,5 +69,5 @@ id:: relationships
 
 ## Relationships
 
-- **is-subclass-of** [[bc:BlockchainEntity]] - owl:someValuesFrom
-- **is-subclass-of** [[bc:Cryptographicprimitive]] - owl:someValuesFrom
+- **is-subclass-of** [[BlockchainEntity]] - owl:someValuesFrom
+- **is-subclass-of** [[Cryptographicprimitive]] - owl:someValuesFrom

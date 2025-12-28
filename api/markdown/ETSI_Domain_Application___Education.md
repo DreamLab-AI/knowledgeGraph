@@ -3,7 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0336
-	- source-domain:: data
+	- source-domain:: mv
 	- preferred-term:: ETSI Domain Application + Education
 	- status:: draft
 	- public-access:: true
@@ -15,7 +15,7 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[InfrastructureDomain]], [[VirtualSocietyDomain]]
+	- belongsToDomain:: [[InfrastructureDomain]], [[DisruptiveTechDomain]], [[VirtualSocietyDomain]]
 	- implementedInLayer:: [[ApplicationLayer]]
 	- #### Relationships
 	  id:: etsi-domain-application-education-relationships

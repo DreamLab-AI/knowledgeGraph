@@ -12,7 +12,8 @@
 	- owl:class:: mv:VirtualProduction
 	- owl:physicality:: PhysicalEntity
 	- owl:role:: System
-	- belongsToDomain:: [[XRDomain]], [[MediaProductionDomain]], [[GameEngineDomain]]
+	- belongsToDomain:: [[XRDomain]], [[DisruptiveTechDomain]], [[MediaProductionDomain]], [[GameEngineDomain]]
+	- is-subclass-of:: [[Virtual Environment]]
 
 ## Metadata
 

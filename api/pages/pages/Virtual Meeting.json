@@ -1,0 +1,74 @@
+{
+  "id": "Virtual Meeting",
+  "title": "Virtual Meeting",
+  "content": "- ### OntologyBlock\n  id:: virtual-meeting-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-0602\n\t- preferred-term:: Virtual Meeting\n\t- source-domain:: tc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Virtual Meeting refers to synchronous gatherings of participants using video conferencing, spatial computing, or immersive technologies to collaborate remotely. This encompasses traditional video conferencing platforms, virtual whiteboards, screen sharing capabilities, and emerging 3D virtual meeting spaces.\n\t- owl:class:: tc:VirtualMeeting\n\t- belongsToDomain:: [[Telecollaboration]]\n\t- #### Relationships\n\t  id:: virtual-meeting-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Telecollaboration]]\n\t\t- is-parent-of:: [[Video Conference]]\n\t\t- is-parent-of:: [[Virtual Whiteboard]]\n\t\t- is-parent-of:: [[Screen Sharing]]\n\t\t- related-to:: [[Remote Collaboration]]",
+  "backlinks": [
+    "Communication Theory",
+    "Remote Collaboration"
+  ],
+  "wiki_links": [
+    "Telecollaboration",
+    "Screen Sharing",
+    "Video Conference",
+    "Virtual Whiteboard",
+    "Remote Collaboration"
+  ],
+  "ontology": {
+    "term_id": "TC-0602",
+    "preferred_term": "Virtual Meeting",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/telecollaboration#VirtualMeeting",
+    "source_domain": "tc",
+    "domain": "tc",
+    "domain_full_name": "Telecollaboration",
+    "definition": "Virtual Meeting refers to synchronous gatherings of participants using video conferencing, spatial computing, or immersive technologies to collaborate remotely. This encompasses traditional video conferencing platforms, virtual whiteboards, screen sharing capabilities, and emerging 3D virtual meeting spaces.",
+    "scope_note": null,
+    "status": "active",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "tc:VirtualMeeting",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Telecollaboration"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Telecollaboration"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "other_relationships": {
+      "is-parent-of": [
+        "Video Conference",
+        "Virtual Whiteboard",
+        "Screen Sharing"
+      ],
+      "related-to": [
+        "Remote Collaboration"
+      ]
+    },
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

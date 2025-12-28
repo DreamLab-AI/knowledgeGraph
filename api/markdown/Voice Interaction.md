@@ -9,6 +9,7 @@ id:: voice-interaction-ontology
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:VoiceInteraction
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - definition:: Communication method enabling control and conversation through speech recognition, natural language understanding, and text-to-speech synthesis.
 
 ### Relationships

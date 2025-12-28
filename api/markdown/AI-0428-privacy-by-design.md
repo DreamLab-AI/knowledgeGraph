@@ -15,7 +15,9 @@
 		- owl:role:: Process
 		- maturity:: mature
 	- #### Relationships
-    - is-enabled-by:: [[PrivacyImpactAssessmentPia]]
+      collapsed:: true
+      - #### Inverse Relationships (Inferred by Reasoner)
+        - PrivacyImpactAssessmentPia enables Privacy By Design
 - ## Future of Accessibility in Design
 	- The future of accessibility in both immersive and non-immersive software hinges on continuous innovation and research. As technologies evolve, so too must our approach to accessibility.
 - ## Future of Accessibility in Design
@@ -49,7 +51,7 @@
     - owl:physicality:: VirtualEntity
     - owl:role:: Process
     - owl:inferred-class:: ai:VirtualProcess
-    - belongsToDomain:: [[AIEthicsDomain]]
+    - belongsToDomain:: [[AIEthicsDomain]], [[DisruptiveTechDomain]]
 
   - 
   - #### Relationships

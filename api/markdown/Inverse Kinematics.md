@@ -10,16 +10,14 @@
 	- source-domain:: rb
 	- status:: draft
     - public-access:: true
-	- definition:: ### Primary Definition
-**Inverse Kinematics** - Computing joint angles from desired end-effector pose
+	- definition:: **Inverse Kinematics** - Computing joint angles from desired end-effector pose
 	- maturity:: draft
 	- owl:class:: rb:InverseKinematics
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0029 inverse kinematics
-	- ### Primary Definition
-**Inverse Kinematics** - Computing joint angles from desired end-effector pose
+	-
 	-
 	- ### Original Content
 	  collapsed:: true
@@ -37,9 +35,6 @@
 		  - **Last Updated**: 2025-10-28
 		  
 		  ## Definition
-		  
-		  ### Primary Definition
-		  **Inverse Kinematics** - Computing joint angles from desired end-effector pose
 		  
 		  ### Standards Context
 		  Defined according to ISO 8373:2021 and related international robotics standards.

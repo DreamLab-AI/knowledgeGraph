@@ -7,8 +7,7 @@
 	- preferred-term:: Safety Plc
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- owl:class:: rb:SafetyPlc
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
@@ -16,8 +15,7 @@
 
 ## Safety Plc
 
-Safety Plc refers to ### Primary Definition
-
+Safety Plc refers to
 - Safety programmable logic controllers (PLCs) are specialised industrial digital computers designed to automate machinery and processes with integrated safety functions.
   - They extend standard PLC capabilities by incorporating fail-safe mechanisms, redundancy, and continuous diagnostics to ensure safe operation under fault conditions.
   - The academic foundation lies in functional safety engineering, particularly standards such as IEC 61508, which define design, testing, and certification requirements for safety-related electronic systems.

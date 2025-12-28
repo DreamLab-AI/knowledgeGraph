@@ -8,6 +8,7 @@ id:: construction-digital-twin-ontology
   - preferred-term:: Construction Digital Twin
   - source-domain:: mv
   - owl:class:: mv:ConstructionDigitalTwin
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: An integrated 3D model of built assets synchronized with real-time construction, operational, and maintenance data, enabling lifecycle management from design through decommissioning.
 

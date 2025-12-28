@@ -14,6 +14,7 @@
   - definition:: A decentralized blockchain platform enabling smart contracts and decentralized applications (dApps) through its Turing-complete programming environment. Transitioned from Proof-of-Work to Proof-of-Stake consensus via "The Merge", featuring account-based model and EVM execution environment.
 
 ### Relationships
+- is-subclass-of:: [[Blockchain Technology]]
 - instance-of:: [[BlockchainNetwork]]
 - instance-of:: [[Cryptocurrency]]
 

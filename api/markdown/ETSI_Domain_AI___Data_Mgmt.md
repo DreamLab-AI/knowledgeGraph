@@ -15,7 +15,7 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[ComputationAndIntelligenceDomain]], [[InfrastructureDomain]]
+	- belongsToDomain:: [[ComputationAndIntelligenceDomain]], [[DisruptiveTechDomain]], [[InfrastructureDomain]]
 	- implementedInLayer:: [[ApplicationLayer]]
 	- #### Relationships
 	  id:: etsi-domain-ai-data-mgmt-relationships

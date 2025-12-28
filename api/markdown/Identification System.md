@@ -14,5 +14,5 @@
 
 ### Relationships
 
-- is-subclass-of:: [[dt:System]]
-- is-subclass-of:: [[dt:System]]
+- is-subclass-of:: [[System]]
+- is-subclass-of:: [[System]]

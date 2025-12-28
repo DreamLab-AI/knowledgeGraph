@@ -10,4 +10,4 @@ id:: rb-0013-legged-robot-ontology
   - owl:class:: rb:LeggedRobot
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

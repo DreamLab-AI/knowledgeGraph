@@ -15,7 +15,7 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[TrustAndGovernanceDomain]]
+	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]
@@ -34,7 +34,9 @@
 		- enables:: [[Transaction Approval]]
 		- enables:: [[Access Control Decisions]]
 		- enables:: [[Identity Verification]]
-		- is-enabled-by:: [[Reputation Scoring Model]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - Reputation Scoring Model enables Trust Score Metric
 		- depends-on:: [[Data Quality Metrics]]
 		- depends-on:: [[Validation Rules]]
 		- depends-on:: [[Statistical Models]]

@@ -10,4 +10,4 @@ id:: rb-0006-service-robot-ontology
   - owl:class:: rb:ServiceRobot
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

@@ -18,7 +18,7 @@
 	- owl:inferred-class:: bc:VirtualObject
 
 ### Domain & Architecture
-	- belongsToDomain:: [[TokenEconomicsDomain]]
+	- belongsToDomain:: [[TokenEconomicsDomain]], [[DisruptiveTechDomain]]
 	- maturity:: mature
 
 ### Relationships

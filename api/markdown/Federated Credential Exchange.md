@@ -8,6 +8,7 @@ id:: federated-credential-exchange-ontology
   - preferred-term:: Federated Credential Exchange
   - source-domain:: bc
   - owl:class:: bc:FederatedCredentialExchange
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A cross-platform workflow process that enables secure sharing and translation of identity credentials between different identity providers using standardized protocols, attribute mapping, and user consent mechanisms.
 

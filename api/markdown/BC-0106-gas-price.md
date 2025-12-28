@@ -9,7 +9,6 @@ id:: bc-0106-gas-price-ontology
   - source-domain:: bc
   - owl:class:: bc:Bc0106GasPrice
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Gas]]

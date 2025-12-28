@@ -8,6 +8,7 @@ id:: decentralized-identity-did-ontology
   - preferred-term:: Decentralized Identity (DID)
   - source-domain:: bc
   - owl:class:: bc:DecentralizedIdentityDid
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A W3C standard for self-sovereign digital identities that are globally unique, cryptographically verifiable, and controlled by the identity subject without requiring centralized authorities.
 
@@ -27,7 +28,9 @@ id:: decentralized-identity-did-ontology
 - enables:: [[Verifiable Credential (VC)]]
 - enables:: [[Decentralized Authentication]]
 - enables:: [[Privacy-Preserving Identity]]
-- is-required-by:: [[Verifiable Credential (VC)]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Verifiable Credential (VC) requires Decentralized Identity (DID)
 - depends-on:: [[JSON-LD]]
 - depends-on:: [[W3C DID Specification]]
 - depends-on:: [[Blockchain Technology]]

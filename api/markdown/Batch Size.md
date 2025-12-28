@@ -7,8 +7,7 @@
 	- preferred-term:: Batch Size
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- owl:class:: mv:BatchSize
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept

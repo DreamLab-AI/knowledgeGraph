@@ -9,12 +9,9 @@ id:: bc-0116-total-supply-ontology
   - source-domain:: bc
   - owl:class:: bc:Bc0116TotalSupply
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Token Economics]]
-
-### Primary Definition
 All existing tokens within [[blockchain]] systems, providing essential functionality for [[distributed ledger technology]] operations and properties. Total supply represents the sum of all tokens that have been created ([[token issuance]]) minus any tokens that have been permanently removed from circulation through [[burning]] mechanisms.
 
 ### Technical Definition

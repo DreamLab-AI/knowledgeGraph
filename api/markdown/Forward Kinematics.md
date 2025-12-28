@@ -10,16 +10,14 @@
 	- source-domain:: rb
 	- status:: draft
     - public-access:: true
-	- definition:: ### Primary Definition
-**Forward Kinematics** - Computing end-effector pose from joint angles
+	- definition:: **Forward Kinematics** - Computing end-effector pose from joint angles
 	- maturity:: draft
 	- owl:class:: rb:ForwardKinematics
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0028 forward kinematics
-	- ### Primary Definition
-**Forward Kinematics** - Computing end-effector pose from joint angles
+	-
 	-
 	- ### Original Content
 	  collapsed:: true
@@ -37,9 +35,6 @@
 		  - **Last Updated**: 2025-10-28
 		  
 		  ## Definition
-		  
-		  ### Primary Definition
-		  **Forward Kinematics** - Computing end-effector pose from joint angles
 		  
 		  ### Standards Context
 		  Defined according to ISO 8373:2021 and related international robotics standards.

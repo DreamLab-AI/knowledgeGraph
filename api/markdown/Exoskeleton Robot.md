@@ -10,16 +10,14 @@
 	- source-domain:: rb
 	- status:: draft
     - public-access:: true
-	- definition:: ### Primary Definition
-**Exoskeleton Robot** - Exoskeleton Robot in robotics systems
+	- definition:: **Exoskeleton Robot** - Exoskeleton Robot in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:ExoskeletonRobot
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0019 exoskeleton robot
-	- ### Primary Definition
-**Exoskeleton Robot** - Exoskeleton Robot in robotics systems
+	-
 	-
 	- ### Original Content
 	  collapsed:: true
@@ -37,9 +35,6 @@
 		  - **Last Updated**: 2025-10-28
 		  
 		  ## Definition
-		  
-		  ### Primary Definition
-		  **Exoskeleton Robot** - Exoskeleton Robot in robotics systems
 		  
 		  ### Standards Context
 		  Defined according to ISO 13482:2014 and related international robotics standards.

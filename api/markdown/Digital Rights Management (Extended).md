@@ -7,6 +7,7 @@ id:: digital-rights-management-extended-ontology
   - term-id:: DT-0276
   - source-domain:: bc
   - owl:class:: bc:DigitalRightsManagement
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - preferred-term:: Digital Rights Management (Extended)
   - status:: draft
   - definition:: A comprehensive virtual system for protecting, licensing, and enforcing usage rights for digital content through encryption, access control, and automated rights enforcement mechanisms.

@@ -2,6 +2,7 @@
     - term-id:: DT-0559
     - source-domain:: bc
     - owl:class:: bc:DynamicScalableBft
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - preferred-term:: Dynamic Scalable BFT
     - ontology:: true
     - public-access:: true

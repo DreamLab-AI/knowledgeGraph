@@ -8,6 +8,7 @@ id:: provenance-verification-ontology
   - preferred-term:: Provenance Verification
   - source-domain:: bc
   - owl:class:: bc:ProvenanceVerification
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Computational process for validating the origin, authenticity, and chain of custody of digital assets through metadata analysis and distributed ledger records.
 
@@ -27,9 +28,11 @@ id:: provenance-verification-ontology
 - enables:: [[Ownership Validation]]
 - enables:: [[Asset Authentication]]
 - enables:: [[Compliance Auditing]]
-- is-enabled-by:: [[Virtual Notary Service]]
-- is-enabled-by:: [[Cultural Provenance Record]]
-- is-enabled-by:: [[Data Provenance]]
-- is-enabled-by:: [[Digital Goods Registry]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Virtual Notary Service enables Provenance Verification
+    - Cultural Provenance Record enables Provenance Verification
+    - Data Provenance enables Provenance Verification
+    - Digital Goods Registry enables Provenance Verification
 - depends-on:: [[Cryptographic Verification]]
 - depends-on:: [[Identity Management]]

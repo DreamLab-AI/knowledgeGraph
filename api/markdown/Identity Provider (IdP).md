@@ -15,7 +15,7 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[TrustAndGovernanceDomain]]
+	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]
@@ -37,7 +37,9 @@
 		- enables:: [[Multi-Factor Authentication]]
 		- enables:: [[User Provisioning]]
 		- enables:: [[Identity Federation]]
-		- is-required-by:: [[Identity Federation]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - Identity Federation requires Identity Provider (IdP)
 		- depends-on:: [[Directory Service]]
 		- depends-on:: [[PKI Infrastructure]]
 		- depends-on:: [[Credential Schema]]

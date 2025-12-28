@@ -8,6 +8,7 @@ id:: transaction-confirmation-ontology
   - preferred-term:: Transaction Confirmation
   - source-domain:: bc
   - owl:class:: bc:TransactionConfirmation
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Inclusion in blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

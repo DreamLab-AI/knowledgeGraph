@@ -8,6 +8,7 @@ id:: procedural-texture-ontology
   - preferred-term:: Procedural Texture
   - source-domain:: mv
   - owl:class:: mv:ProceduralTexture
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Algorithmically generated pattern used to simulate surface detail without stored images, computed on-demand using mathematical functions.
 

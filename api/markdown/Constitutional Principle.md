@@ -2,6 +2,7 @@
     - term-id:: DT-0826
     - source-domain:: ai
     - owl:class:: ai:ConstitutionalPrinciple
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - preferred-term:: Constitutional Principle
     - ontology:: true
     - public-access:: true

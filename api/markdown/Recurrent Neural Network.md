@@ -9,8 +9,7 @@ id:: recurrent-neural-network-ontology
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:RecurrentNeuralNetwork
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[NeuralNetworkArchitecture]]
 

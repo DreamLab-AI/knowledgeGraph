@@ -9,6 +9,7 @@ id:: procedural-audio-generator-ontology
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:ProceduralAudioGenerator
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - definition:: System that produces context-sensitive sound effects algorithmically in real-time, generating audio content through computational rules rather than playing back pre-recorded samples.
 
 ### Relationships

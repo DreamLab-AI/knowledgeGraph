@@ -19,7 +19,7 @@
 	- owl:inferred-class:: bc:VirtualObject
 
 ### Domain & Architecture
-	- belongsToDomain:: [[CryptographicDomain]]
+	- belongsToDomain:: [[CryptographicDomain]], [[DisruptiveTechDomain]]
 	- maturity:: mature
 
 ### Relationships

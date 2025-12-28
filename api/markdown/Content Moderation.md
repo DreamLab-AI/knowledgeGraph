@@ -15,7 +15,7 @@
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[VirtualSocietyDomain]]
+	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[DisruptiveTechDomain]], [[VirtualSocietyDomain]]
 	- implementedInLayer:: [[Middleware Layer]], [[Application Layer]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]
@@ -36,8 +36,10 @@
 		- enables:: [[Regulatory Compliance]]
 		- enables:: [[Harmful Content Prevention]]
 		- enables:: [[Safe User Experience]]
-		- is-enabled-by:: [[Autonomous Agent]]
-		- is-required-by:: [[Metaverse Safety Protocol]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - Autonomous Agent enables Content Moderation
+	    - Metaverse Safety Protocol requires Content Moderation
 		- depends-on:: [[Machine Learning Models]]
 		- depends-on:: [[Human Moderators]]
 		- depends-on:: [[Decision Framework]]

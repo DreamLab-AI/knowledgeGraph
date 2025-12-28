@@ -8,6 +8,7 @@ id:: digital-goods-registry-ontology
   - preferred-term:: Digital Goods Registry
   - source-domain:: bc
   - owl:class:: bc:DigitalGoodsRegistry
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Centralized or distributed system for cataloging, tracking, and managing digital goods and virtual assets across metaverse platforms, providing authoritative records of existence, ownership, and provenance.
 

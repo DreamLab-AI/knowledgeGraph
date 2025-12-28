@@ -8,8 +8,7 @@ id:: loss-function-ontology
   - preferred-term:: Loss Function
   - source-domain:: ai
   - status:: active
-  - definition:: ### Primary Definition
-
+  - definition:: 
 
 ### Relationships
 - is-subclass-of:: [[Artificial Intelligence]]

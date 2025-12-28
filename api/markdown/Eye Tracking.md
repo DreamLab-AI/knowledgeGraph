@@ -15,7 +15,7 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:PhysicalObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[InteractionDomain]]
+	- belongsToDomain:: [[InteractionDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[EdgeLayer]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]
@@ -39,7 +39,9 @@
 		- enables:: [[Attention Analytics]]
 		- enables:: [[Gaze-Based Interaction]]
 		- enables:: [[Foveated Rendering]]
-		- is-required-by:: [[Cognitive Feedback Interface]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - Cognitive Feedback Interface requires Eye Tracking
 		- depends-on:: [[Rendering Engine]]
 		- depends-on:: [[Graphics Processing Unit]]
 		- depends-on:: [[XR Headset]]

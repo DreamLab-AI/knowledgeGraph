@@ -8,6 +8,7 @@ id:: permissioned-network-ontology
   - preferred-term:: Permissioned Network
   - source-domain:: bc
   - owl:class:: bc:PermissionedNetwork
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Restricted access blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

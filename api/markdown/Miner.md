@@ -8,6 +8,7 @@ id:: miner-ontology
   - preferred-term:: Miner
   - source-domain:: bc
   - owl:class:: bc:Miner
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Proof-of-work network participant within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

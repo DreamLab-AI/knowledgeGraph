@@ -8,6 +8,7 @@ id:: transaction-standard-ontology
   - preferred-term:: Transaction Standard
   - source-domain:: bc
   - owl:class:: bc:TransactionStandard
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A protocol defining secure exchange of digital assets and services within virtual economies, specifying message formats, authentication mechanisms, settlement procedures, and integrity guarantees.
 

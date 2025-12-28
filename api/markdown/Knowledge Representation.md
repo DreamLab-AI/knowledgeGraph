@@ -9,8 +9,10 @@
 
 ### Relationships
 - is-subclass-of:: [[Artificial Intelligence]]
-- has-subclass:: [[Expert Systems]]
-- has-subclass:: [[Semantic Networks]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Expert Systems is-subclass-of Knowledge Representation
+    - Semantic Networks is-subclass-of Knowledge Representation
 - skos:related:: [[Logic Programming]]
 - skos:related:: [[Ontology]]
 - enables:: [[Reasoning Systems]]

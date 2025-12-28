@@ -8,6 +8,7 @@ id:: fork-choice-rule-ontology
   - preferred-term:: Fork Choice Rule
   - source-domain:: bc
   - owl:class:: bc:ForkChoiceRule
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Canonical chain selection within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

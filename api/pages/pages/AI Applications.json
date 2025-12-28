@@ -1,0 +1,73 @@
+{
+  "id": "AI Applications",
+  "title": "AI Applications",
+  "content": "- ### OntologyBlock\n  id:: ai-applications-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0604\n\t- preferred-term:: AI Applications\n\t- source-domain:: ai\n\t- status:: active\n\t- public-access:: true\n\t- definition:: AI Applications represent domain-specific implementations of artificial intelligence technologies across various industries and use cases. This category encompasses practical deployments of AI in healthcare, autonomous vehicles, personal assistants, industrial automation, financial services, and other sectors where AI delivers tangible value.\n\t- owl:class:: ai:AIApplications\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: ai-applications-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Artificial Intelligence]]\n\t\t- is-parent-of:: [[Medical AI]]\n\t\t- is-parent-of:: [[Autonomous Vehicles]]\n\t\t- is-parent-of:: [[AI Assistant]]\n\t\t- is-parent-of:: [[Industrial AI]]\n\t\t- related-to:: [[AI Deployment]]",
+  "backlinks": [],
+  "wiki_links": [
+    "Medical AI",
+    "Industrial AI",
+    "AI Assistant",
+    "Artificial Intelligence",
+    "Autonomous Vehicles",
+    "AI Deployment"
+  ],
+  "ontology": {
+    "term_id": "AI-0604",
+    "preferred_term": "AI Applications",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#AIApplications",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "AI Applications represent domain-specific implementations of artificial intelligence technologies across various industries and use cases. This category encompasses practical deployments of AI in healthcare, autonomous vehicles, personal assistants, industrial automation, financial services, and other sectors where AI delivers tangible value.",
+    "scope_note": null,
+    "status": "active",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:AIApplications",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Artificial Intelligence"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Artificial Intelligence"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "other_relationships": {
+      "is-parent-of": [
+        "Medical AI",
+        "Autonomous Vehicles",
+        "AI Assistant",
+        "Industrial AI"
+      ],
+      "related-to": [
+        "AI Deployment"
+      ]
+    },
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

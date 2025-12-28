@@ -8,6 +8,7 @@ id:: metaverse-ontology-schema-ontology
   - preferred-term:: Metaverse Ontology Schema
   - source-domain:: mv
   - owl:class:: mv:MetaverseOntologySchema
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A formal OWL 2 ontology framework defining the complete taxonomic structure, semantic relationships, axioms, and reasoning rules for metaverse concepts, enabling automated classification, consistency validation, and interoperability across virtual world implementations.
 
@@ -28,7 +29,9 @@ id:: metaverse-ontology-schema-ontology
 - enables:: [[Automated Reasoning]]
 - enables:: [[Ontology-Based Data Access]]
 - enables:: [[Semantic Interoperability]]
-- is-required-by:: [[Glossary Index]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Glossary Index requires Metaverse Ontology Schema
 - depends-on:: [[SHACL Constraints]]
 - depends-on:: [[RDF Schema]]
 - depends-on:: [[SKOS Vocabulary]]

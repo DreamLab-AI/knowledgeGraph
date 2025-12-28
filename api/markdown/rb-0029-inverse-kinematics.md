@@ -10,4 +10,4 @@ id:: rb-0029-inverse-kinematics-ontology
   - owl:class:: rb:InverseKinematics
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

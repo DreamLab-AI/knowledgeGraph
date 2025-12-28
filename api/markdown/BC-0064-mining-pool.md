@@ -8,6 +8,7 @@ id:: mining-pool-ontology
   - preferred-term:: Mining Pool
   - source-domain:: bc
   - owl:class:: bc:MiningPool
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Collaborative mining group within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

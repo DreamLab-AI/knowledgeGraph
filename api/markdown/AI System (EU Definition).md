@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: A machine-based system that can operate autonomously and adapt after deployment, generating outputs like predictions or decisions.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: ai-system-eu-definition-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[ArtificialIntelligence]]

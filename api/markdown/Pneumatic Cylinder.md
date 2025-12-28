@@ -2,6 +2,7 @@
     - term-id:: DT-1032
     - source-domain:: mv
     - owl:class:: mv:PneumaticCylinder
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - preferred-term:: Pneumatic Cylinder
     - ontology:: true
     - public-access:: true

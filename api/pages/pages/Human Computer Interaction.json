@@ -1,0 +1,75 @@
+{
+  "id": "Human Computer Interaction",
+  "title": "Human Computer Interaction",
+  "content": "- ### OntologyBlock\n  id:: human-computer-interaction-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0601\n\t- preferred-term:: Human Computer Interaction\n\t- source-domain:: mv\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Human Computer Interaction (HCI) is the study and design of interfaces and interaction paradigms between humans and computational systems, particularly in immersive and spatial computing contexts. Within metaverse environments, HCI encompasses gesture recognition, haptic feedback, voice interfaces, eye tracking, and novel input modalities for intuitive virtual world interaction.\n\t- owl:class:: mv:HumanComputerInteraction\n\t- belongsToDomain:: [[Metaverse Technology]]\n\t- #### Relationships\n\t  id:: hci-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse Technology]]\n\t\t- is-parent-of:: [[Gesture Recognition]]\n\t\t- is-parent-of:: [[Haptic Feedback]]\n\t\t- is-parent-of:: [[Voice Interface]]\n\t\t- related-to:: [[Spatial Computing]]\n\t\t- related-to:: [[Avatar System]]",
+  "backlinks": [
+    "Spatial Interaction"
+  ],
+  "wiki_links": [
+    "Voice Interface",
+    "Gesture Recognition",
+    "Haptic Feedback",
+    "Avatar System",
+    "Spatial Computing",
+    "Metaverse Technology"
+  ],
+  "ontology": {
+    "term_id": "MV-0601",
+    "preferred_term": "Human Computer Interaction",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#HumanComputerInteraction",
+    "source_domain": "mv",
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "Human Computer Interaction (HCI) is the study and design of interfaces and interaction paradigms between humans and computational systems, particularly in immersive and spatial computing contexts. Within metaverse environments, HCI encompasses gesture recognition, haptic feedback, voice interfaces, eye tracking, and novel input modalities for intuitive virtual world interaction.",
+    "scope_note": null,
+    "status": "active",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:HumanComputerInteraction",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Metaverse Technology"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Metaverse Technology"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "other_relationships": {
+      "is-parent-of": [
+        "Gesture Recognition",
+        "Haptic Feedback",
+        "Voice Interface"
+      ],
+      "related-to": [
+        "Spatial Computing",
+        "Avatar System"
+      ]
+    },
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

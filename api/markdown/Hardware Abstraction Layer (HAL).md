@@ -15,7 +15,7 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[InfrastructureDomain]]
+	- belongsToDomain:: [[InfrastructureDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[Physical Layer]], [[Network Layer]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]
@@ -30,7 +30,9 @@
 		- enables:: [[Platform Independence]]
 		- enables:: [[Unified Hardware Access]]
 		- enables:: [[Device Portability]]
-		- is-required-by:: [[Human Interface Layer (HIL)]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - Human Interface Layer (HIL) requires Hardware Abstraction Layer (HAL)
 
 ## Academic Context
 

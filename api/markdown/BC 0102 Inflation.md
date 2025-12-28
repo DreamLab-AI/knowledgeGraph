@@ -3,7 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: BC-0102
-	- source-domain:: blockchain
+	- source-domain:: bc
 	- preferred-term:: BC 0102 inflation
 	- status:: active
 	- public-access:: true
@@ -13,6 +13,7 @@
 	- owl:physicality:: EconomicMechanism
 	- owl:role:: MonetaryPolicy
 	- belongsToDomain:: [[Blockchain Economics]]
+	- is-subclass-of:: [[Token Economics]]
 
 ## Metadata
 

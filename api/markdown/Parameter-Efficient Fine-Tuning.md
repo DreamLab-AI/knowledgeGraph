@@ -9,7 +9,7 @@
 
 ### Relationships
 
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	- status:: draft
 	- public-access:: true
 	- definition:: Training techniques that update only a small subset of model parameters during fine-tuning, reducing computational and memory requirements whilst maintaining comparable performance to full fine-tuning. PEFT methods enable adaptation of large models with limited resources.

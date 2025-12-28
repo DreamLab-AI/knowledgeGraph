@@ -9,7 +9,6 @@ id:: unknown-ontology
   - source-domain:: mv
   - owl:class:: mv:Bc0109PriorityFee
   - status:: verified
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Transaction Fee]]

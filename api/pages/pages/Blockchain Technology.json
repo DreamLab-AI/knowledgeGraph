@@ -1,0 +1,91 @@
+{
+  "id": "Blockchain Technology",
+  "title": "Blockchain Technology",
+  "content": "- ### OntologyBlock\n  id:: blockchain-technology-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0001\n\t- preferred-term:: Blockchain Technology\n\t- source-domain:: bc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: The foundational technology domain encompassing distributed ledger systems, cryptographic protocols, consensus mechanisms, smart contracts, tokenomics, and decentralised applications (dApps) that enable trustless, immutable record-keeping and programmable value transfer across networked participants.\n\t- maturity:: stable\n\t- owl:class:: bc:BlockchainTechnology\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Domain\n\t- belongsToDomain:: [[Blockchain Technology]]\n\t- #### Relationships\n\t  id:: blockchain-technology-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Technology Domain]]\n\t\t  collapsed:: true\n\t\t  - #### Inverse Relationships (Inferred by Reasoner)\n\t\t    - Distributed Ledger is-subclass-of Blockchain Technology\n\t\t    - Consensus Mechanism is-subclass-of Blockchain Technology\n\t\t    - Smart Contract is-subclass-of Blockchain Technology\n\t\t    - Cryptocurrency is-subclass-of Blockchain Technology\n\t\t    - Tokenomics is-subclass-of Blockchain Technology\n\t\t    - Decentralised Application is-subclass-of Blockchain Technology\n\t\t    - Cryptographic System is-subclass-of Blockchain Technology\n\t\t- bridges-to:: [[Artificial Intelligence]] (via AI-blockchain integration)\n\t\t- bridges-to:: [[Metaverse Technology]] (via NFTs and virtual economies)\n\t\t- bridges-to:: [[Telecollaboration]] (via DAO governance)\n- ## Overview\n\t- The Blockchain Technology domain encompasses the complete spectrum of distributed ledger technologies, from foundational cryptographic primitives to complex decentralised autonomous organisations (DAOs). This domain provides the ontological framework for understanding how trustless systems enable coordination without centralised intermediaries.\n- ## Key Subcategories\n\t- [[Distributed Ledger]] - Core data structures and replication mechanisms\n\t- [[Consensus Mechanism]] - Agreement protocols (PoW, PoS, PBFT, etc.)\n\t- [[Smart Contract]] - Self-executing programmable agreements\n\t- [[Cryptocurrency]] - Digital currencies and payment systems\n\t- [[Tokenomics]] - Token economics and incentive design\n\t- [[Decentralised Application]] - Applications built on blockchain infrastructure\n\t- [[Cryptographic System]] - Cryptographic primitives and security protocols\n\t- [[Blockchain Network]] - Network topology and node architecture\n- ## Cross-Domain Integration\n\t- Blockchain technology increasingly integrates with other domains:\n\t- **AI Integration**: Decentralised AI training, federated learning incentives, AI model marketplaces\n\t- **Metaverse Integration**: NFT ownership, virtual land registries, interoperable assets\n\t- **Telecollaboration Integration**: DAO governance, smart contract coordination, tokenised incentives\n\t- **Robotics Integration**: Secure robot coordination, supply chain tracking\n- ## Metadata\n\t- **Last Updated**: 2025-12-27\n\t- **Authority Score**: 0.95\n\t- **Status**: Domain root",
+  "backlinks": [
+    "Technology Domain",
+    "Cardano",
+    "Token Economics",
+    "BC-0431-privacy-preserving-blockchain",
+    "Decentralized Identity (DID)",
+    "Blockchain Interoperability",
+    "Blockchain Technology",
+    "Privacy Preserving Blockchain",
+    "Blockchain Scalability",
+    "ESG Reporting",
+    "Artificial Intelligence",
+    "Telecollaboration",
+    "Bitcoin",
+    "Human Rights",
+    "Metaverse Technology",
+    "Ethereum",
+    "TELE-252-dao-governance-telecollaboration",
+    "Distributed Authentication Architecture",
+    "Supply Chain Management",
+    "Self Sovereign Identity",
+    "Blockchain Governance",
+    "Solana",
+    "Network Component"
+  ],
+  "wiki_links": [
+    "Telecollaboration",
+    "Cryptographic System",
+    "Artificial Intelligence",
+    "Blockchain Technology",
+    "Distributed Ledger",
+    "Blockchain Network",
+    "Tokenomics",
+    "Consensus Mechanism",
+    "Smart Contract",
+    "Technology Domain",
+    "Decentralised Application",
+    "Cryptocurrency",
+    "Metaverse Technology"
+  ],
+  "ontology": {
+    "term_id": "BC-0001",
+    "preferred_term": "Blockchain Technology",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#BlockchainTechnology",
+    "source_domain": "bc",
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
+    "definition": "The foundational technology domain encompassing distributed ledger systems, cryptographic protocols, consensus mechanisms, smart contracts, tokenomics, and decentralised applications (dApps) that enable trustless, immutable record-keeping and programmable value transfer across networked participants.",
+    "scope_note": null,
+    "status": "active",
+    "maturity": "stable",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:BlockchainTechnology",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Domain",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Technology Domain"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Blockchain Technology"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated"
+      ]
+    }
+  }
+}

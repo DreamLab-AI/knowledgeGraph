@@ -25,7 +25,7 @@ id:: relationships
     - is-subclass-of:: [[Token Economics]]
 
 - ## About BC 0105 tokenomics
-	- ### Primary Definition
+	-
 Token economic design within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 	-
 	- ### Original Content
@@ -45,8 +45,6 @@ Token economic design within blockchain systems, providing essential functionali
 		  - **Status**: Approved
 		
 		  ## Definition
-		
-		  ### Primary Definition
 		  Token economic design within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 		
 		  ### Technical Definition

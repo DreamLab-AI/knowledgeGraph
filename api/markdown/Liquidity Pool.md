@@ -8,6 +8,7 @@ id:: liquidity-pool-ontology
   - preferred-term:: Liquidity Pool
   - source-domain:: bc
   - owl:class:: bc:LiquidityPool
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A smart contract-governed reserve of paired cryptocurrency tokens that enables decentralized trading through automated market-making algorithms, providing continuous liquidity without traditional order books.
 

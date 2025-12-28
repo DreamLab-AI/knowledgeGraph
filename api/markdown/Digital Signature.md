@@ -8,6 +8,7 @@ id:: digital-signature-ontology
   - preferred-term:: Digital Signature
   - source-domain:: bc
   - owl:class:: bc:DigitalSignature
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Cryptographic authentication mechanism within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

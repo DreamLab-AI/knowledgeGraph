@@ -11,4 +11,4 @@ AI-0425-privacy-impact-assessment
   - owl:class:: ai:Ai0425PrivacyImpactAssessment
 
 ### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]

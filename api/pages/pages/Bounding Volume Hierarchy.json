@@ -6,17 +6,17 @@
     "Spatial Index"
   ],
   "wiki_links": [
-    "Scene Graph",
-    "Traversal Algorithm",
-    "Collision Detection",
-    "Bounding Volume",
-    "Octree",
-    "Kd-Tree",
-    "Frustum Culling",
-    "Spatial Data Structure",
-    "Tree Construction",
     "metaverse",
-    "Ray Tracing"
+    "Tree Construction",
+    "Kd-Tree",
+    "Spatial Data Structure",
+    "Traversal Algorithm",
+    "Octree",
+    "Scene Graph",
+    "Frustum Culling",
+    "Collision Detection",
+    "Ray Tracing",
+    "Bounding Volume"
   ],
   "ontology": {
     "term_id": "MV-9801",

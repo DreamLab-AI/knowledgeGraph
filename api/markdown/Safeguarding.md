@@ -7,8 +7,7 @@
 	- preferred-term:: Safeguarding
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- owl:class:: rb:Safeguarding
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept

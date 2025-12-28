@@ -3,18 +3,17 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0826
-	- source-domain:: metaverse
+	- source-domain:: mv
 	- preferred-term:: Transformer
 	- status:: mature
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: mature
+	- definition:: 	- maturity:: mature
 	- owl:class:: ai:Transformer
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: transformer-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[NeuralNetworkArchitecture]]

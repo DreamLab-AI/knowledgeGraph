@@ -8,6 +8,7 @@ id:: consent-management-ontology
   - preferred-term:: Consent Management
   - source-domain:: mv
   - owl:class:: mv:ConsentManagement
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: System for recording and enforcing user permissions for data collection, processing, and sharing across metaverse platforms, ensuring compliance with privacy regulations and user autonomy.
 
@@ -29,6 +30,8 @@ id:: consent-management-ontology
 - enables:: [[Right to Be Forgotten]]
 - enables:: [[Transparency]]
 - enables:: [[Data Privacy]]
-- is-required-by:: [[Federated Credential Exchange]]
-- is-required-by:: [[Self-Sovereign Identity (SSI)]]
-- is-required-by:: [[Right to Be Forgotten]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Federated Credential Exchange requires Consent Management
+    - Self-Sovereign Identity (SSI) requires Consent Management
+    - Right to Be Forgotten requires Consent Management

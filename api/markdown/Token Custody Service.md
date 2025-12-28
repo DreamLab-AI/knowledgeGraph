@@ -8,6 +8,7 @@ id:: token-custody-service-ontology
   - preferred-term:: Token Custody Service
   - source-domain:: bc
   - owl:class:: bc:TokenCustodyService
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A secure infrastructure system for safeguarding digital tokens and cryptographic assets through multi-signature wallets, cold storage, and enterprise-grade custodial services in virtual economy environments.
 

@@ -9,8 +9,7 @@ id:: rb-0081-gyroscope-ontology
   - source-domain:: rb
   - owl:class:: rb:Gyroscope
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Robotics]]
 - belongsToDomain:: [[RoboticsDomain]]

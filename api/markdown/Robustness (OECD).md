@@ -9,7 +9,7 @@
 
 ### Relationships
 
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	- status:: draft
 	- public-access:: true
 	- definition:: AI systems should function reliably and securely throughout their lifecycle, demonstrating resilience against errors, faults, inconsistencies and attempts to alter system use or performance, with continuous assessment and management of potential risks.

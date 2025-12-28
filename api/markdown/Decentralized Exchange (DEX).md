@@ -8,6 +8,7 @@ id:: decentralized-exchange-dex-ontology
   - preferred-term:: Decentralized Exchange (DEX)
   - source-domain:: bc
   - owl:class:: bc:DecentralizedExchangeDex
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Peer-to-peer marketplace enabling direct token swaps and digital asset trading through smart contracts without centralized intermediaries or custodial control.
 

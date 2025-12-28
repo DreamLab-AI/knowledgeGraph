@@ -2,6 +2,7 @@
     - term-id:: DT-0819
     - source-domain:: ai
     - owl:class:: ai:TaskAdaptation
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - preferred-term:: Task Adaptation
     - ontology:: true
     - public-access:: true

@@ -11,4 +11,4 @@ AI-0445-edge-ai-security
   - owl:class:: ai:Ai0445EdgeAiSecurity
 
 ### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]

@@ -10,4 +10,4 @@ id:: rb-0018-inspection-robot-ontology
   - owl:class:: rb:InspectionRobot
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

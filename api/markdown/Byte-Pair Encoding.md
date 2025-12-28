@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: A subword tokenisation algorithm that iteratively merges the most frequent pairs of characters or character sequences to build a vocabulary, originally developed for data compression.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: byte-pair-encoding-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[NLPTask]]

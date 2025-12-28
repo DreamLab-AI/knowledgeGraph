@@ -15,10 +15,10 @@
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: ai:VirtualProcess
-	- belongsToDomain:: [[AIEthicsDomain]]
+	- belongsToDomain:: [[AIEthicsDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[ConceptualLayer]]
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: algorithmic-transparency-reports-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AlgorithmicTransparencyIndex]]

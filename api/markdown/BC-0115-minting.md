@@ -9,7 +9,6 @@ id:: bc-0115-minting-ontology
   - source-domain:: bc
   - owl:class:: bc:Bc0115Minting
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Token Economics]]

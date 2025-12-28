@@ -12,7 +12,7 @@
 	- owl:class:: ai:PretrainedModel
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: pretrainedmodel-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[MachineLearning]]

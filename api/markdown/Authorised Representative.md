@@ -6,6 +6,7 @@
 	- preferred-term:: Authorised Representative
 	- source-domain:: mv
   - owl:class:: mv:AuthorisedRepresentative
+	- belongsToDomain:: [[DisruptiveTechDomain]]
 	- status:: draft
     - public-access:: true
 	- definition:: A natural or legal person located or established in the Union who has received and accepted a written mandate from a provider of an AI system or a general-purpose AI model to, respectively, perform and carry out on its behalf the tasks and procedures established by this Regulation.

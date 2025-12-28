@@ -12,7 +12,7 @@
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Technique
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: weight-decay-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[TrainingMethod]]

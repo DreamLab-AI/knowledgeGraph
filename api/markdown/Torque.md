@@ -10,16 +10,14 @@
 	- source-domain:: rb
 	- status:: draft
     - public-access:: true
-	- definition:: ### Primary Definition
-**Torque** - Rotational force about an axis
+	- definition:: **Torque** - Rotational force about an axis
 	- maturity:: draft
 	- owl:class:: rb:Torque
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0043 torque
-	- ### Primary Definition
-**Torque** - Rotational force about an axis
+	-
 	-
 	- ### Original Content
 	  collapsed:: true
@@ -37,9 +35,6 @@
 		  - **Last Updated**: 2025-10-28
 		  
 		  ## Definition
-		  
-		  ### Primary Definition
-		  **Torque** - Rotational force about an axis
 		  
 		  ### Standards Context
 		  Defined according to ISO 8373:2021 and related international robotics standards.

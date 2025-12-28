@@ -2,6 +2,7 @@
     - term-id:: DT-0564
     - source-domain:: bc
     - owl:class:: bc:LowEnergyConsumption
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - preferred-term:: Low Energy Consumption
     - ontology:: true
     - public-access:: true

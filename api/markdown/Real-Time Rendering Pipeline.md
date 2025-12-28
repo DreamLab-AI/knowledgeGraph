@@ -8,6 +8,7 @@ id:: real-time-rendering-pipeline-ontology
   - preferred-term:: Real-Time Rendering Pipeline
   - source-domain:: mv
   - owl:class:: mv:RealTimeRenderingPipeline
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Sequence of GPU processes converting 3D scene data into visual frames at interactive rates (typically 30-120+ FPS).
 

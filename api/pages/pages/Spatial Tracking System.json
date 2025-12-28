@@ -6,12 +6,12 @@
     "Augmented Reality (AR)"
   ],
   "wiki_links": [
-    "6DOF Tracking",
+    "metaverse",
     "Precise Spatial Positioning",
     "IMU Sensors",
-    "Motion Tracking",
-    "metaverse",
-    "Visual SLAM"
+    "6DOF Tracking",
+    "Visual SLAM",
+    "Motion Tracking"
   ],
   "ontology": {
     "term_id": "MV-10065",

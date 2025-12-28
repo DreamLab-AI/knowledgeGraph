@@ -15,7 +15,7 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:PhysicalObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[InfrastructureDomain]]
+	- belongsToDomain:: [[InfrastructureDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[Physical Layer]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]
@@ -37,17 +37,19 @@
 		- enables:: [[Data Exchange]]
 		- enables:: [[Distributed Computing]]
 		- enables:: [[Low Latency Communication]]
-		- is-required-by:: [[Data Storage Layer]]
-		- is-required-by:: [[Infrastructure Layer]]
-		- is-required-by:: [[Middleware]]
-		- is-required-by:: [[Education Metaverse]]
-		- is-required-by:: [[Content Delivery Network (CDN)]]
-		- is-required-by:: [[Application Layer]]
-		- is-required-by:: [[Metaverse]]
-		- is-required-by:: [[Compute Layer]]
-		- is-required-by:: [[Distributed Architecture]]
-		- is-required-by:: [[Decentralization Layer]]
-		- is-required-by:: [[Virtual Production Volume]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - Data Storage Layer requires Network Infrastructure
+	    - Infrastructure Layer requires Network Infrastructure
+	    - Middleware requires Network Infrastructure
+	    - Education Metaverse requires Network Infrastructure
+	    - Content Delivery Network (CDN) requires Network Infrastructure
+	    - Application Layer requires Network Infrastructure
+	    - Metaverse requires Network Infrastructure
+	    - Compute Layer requires Network Infrastructure
+	    - Distributed Architecture requires Network Infrastructure
+	    - Decentralization Layer requires Network Infrastructure
+	    - Virtual Production Volume requires Network Infrastructure
 		- is-dependency-of:: [[Virtual Performance Space]]
 		- is-dependency-of:: [[Distributed Ledger Technology (DLT)]]
 		- is-dependency-of:: [[Industrial Metaverse]]

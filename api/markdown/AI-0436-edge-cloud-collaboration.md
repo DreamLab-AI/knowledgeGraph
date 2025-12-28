@@ -11,4 +11,4 @@ AI-0436-edge-cloud-collaboration
   - owl:class:: ai:Ai0436EdgeCloudCollaboration
 
 ### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]

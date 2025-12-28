@@ -10,4 +10,4 @@ id:: rb-0025-end-effector-ontology
   - owl:class:: rb:EndEffector
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

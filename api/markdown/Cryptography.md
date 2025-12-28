@@ -14,13 +14,13 @@
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: bc:VirtualObject
-	- belongsToDomain:: [[CryptographicDomain]]
+	- belongsToDomain:: [[CryptographicDomain]], [[DisruptiveTechDomain]]
 
 ## Relationships
 
-- **is-subclass-of** [[dt:MathematicalScience]] (disruptive-technologies) - owl:someValuesFrom
-- **is-subclass-of** [[dt:SecurityTechnology]] (disruptive-technologies) - owl:someValuesFrom
-- **is-subclass-of** [[dt:InformationProtection]] (disruptive-technologies) - owl:someValuesFrom
+- **is-subclass-of** [[MathematicalScience]] (disruptive-technologies) - owl:someValuesFrom
+- **is-subclass-of** [[SecurityTechnology]] (disruptive-technologies) - owl:someValuesFrom
+- **is-subclass-of** [[InformationProtection]] (disruptive-technologies) - owl:someValuesFrom
 
 ### Relationships
 - is-subclass-of:: [[Blockchain]]

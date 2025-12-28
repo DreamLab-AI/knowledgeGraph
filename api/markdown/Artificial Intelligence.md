@@ -1,16 +1,35 @@
 - ### OntologyBlock
-
-### Definition
-id:: artificial-intelligence-ontology collapsed:: true - ontology:: true - term-id:: AI-0001 - preferred-term:: Artificial Intelligence - source-domain:: ai - status:: draft - public-access:: true
-  - owl:class:: ai:ArtificialIntelligenceSourceDomainAiStatusDraftPublicAccessTrue
-
-### Notes
-*Instructional content moved from class definition*
-
-### Relationships
-- is-subclass-of:: [[TechnologyDomain]]
-	- definition:: ### Primary Definition
-Artificial intelligence (AI) is the research and development of mechanisms and applications of AI systems. An engineered system that generates outputs such as content, forecasts, recommendations, or decisions for a given set of human-defined objectives. AI systems use machine and human-based inputs to perceive real and virtual environments, abstract such perceptions into models through analysis in an automated manner, and use model inference to formulate options for information or action.
+  id:: artificial-intelligence-ontology
+  collapsed:: true
+	- ontology:: true
+	- term-id:: AI-0001
+	- preferred-term:: Artificial Intelligence
+	- source-domain:: ai
+	- status:: active
+	- public-access:: true
+	- definition:: The foundational technology domain encompassing research and development of systems that perceive, reason, learn, and act, including machine learning, deep learning, natural language processing, computer vision, and autonomous agents that generate outputs such as content, forecasts, recommendations, or decisions for human-defined objectives.
+	- maturity:: stable
+	- owl:class:: ai:ArtificialIntelligence
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Domain
+	- belongsToDomain:: [[Artificial Intelligence]]
+	- #### Relationships
+	  id:: artificial-intelligence-relationships
+	  collapsed:: true
+		- is-subclass-of:: [[Technology Domain]]
+		  collapsed:: true
+		  - #### Inverse Relationships (Inferred by Reasoner)
+		    - Machine Learning is-subclass-of Artificial Intelligence
+		    - Deep Learning is-subclass-of Artificial Intelligence
+		    - Natural Language Processing is-subclass-of Artificial Intelligence
+		    - Computer Vision is-subclass-of Artificial Intelligence
+		    - Autonomous AI Agents is-subclass-of Artificial Intelligence
+		    - AI Governance Principle is-subclass-of Artificial Intelligence
+		- bridges-to:: [[Blockchain Technology]] (via AI-blockchain integration)
+		- bridges-to:: [[Metaverse Technology]] (via AI avatars)
+		- bridges-to:: [[Robotics Systems]] (via robot learning)
+		- bridges-to:: [[Telecollaboration]] (via AI assistants)
+	- definition:: Artificial intelligence (AI) is the research and development of mechanisms and applications of AI systems. An engineered system that generates outputs such as content, forecasts, recommendations, or decisions for a given set of human-defined objectives. AI systems use machine and human-based inputs to perceive real and virtual environments, abstract such perceptions into models through analysis in an automated manner, and use model inference to formulate options for information or action.
 
 **Source**: ISO/IEC 22989:2022, Clauses 3.1.1-3.1.2 - Authority Score: 0.95
 

@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: The effects—positive and negative, intended and unintended—that AI systems have on individuals, communities, societies and social structures including employment, education, social cohesion, cultural practices and power distributions.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: social-impact-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AIGovernance]]

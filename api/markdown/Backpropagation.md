@@ -9,8 +9,7 @@ id:: backpropagation-ontology
   - source-domain:: mv
   - owl:class:: mv:Backpropagation
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[ArtificialIntelligence]]
 - belongsToDomain:: [[MetaverseDomain]]

@@ -9,8 +9,7 @@ id:: rb-0043-torque-ontology
   - source-domain:: rb
   - owl:class:: rb:Torque
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Robotics]]
 - belongsToDomain:: [[RoboticsDomain]]

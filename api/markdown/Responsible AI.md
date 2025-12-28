@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: The practice of designing, developing, deploying, and operating artificial intelligence systems with explicit attention to their societal impacts, ethical implications, and potential harms, incorporating accountability mechanisms, stakeholder engagement, risk management, transparency, and governance throughout the AI lifecycle to ensure that AI systems are developed and used in ways that benefit individuals and society whilst minimising negative consequences, respecting human rights and democratic values, and maintaining clear lines of responsibility for AI-driven outcomes.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: responsible-ai-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AIGovernance]]

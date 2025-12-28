@@ -3,7 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0333
-	- source-domain:: data
+	- source-domain:: mv
 	- preferred-term:: ETSI Domain AI + Governance
 	- status:: draft
 	- public-access:: true
@@ -15,11 +15,12 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[ComputationAndIntelligenceDomain]], [[TrustAndGovernanceDomain]]
+	- belongsToDomain:: [[ComputationAndIntelligenceDomain]], [[DisruptiveTechDomain]], [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[ApplicationLayer]]
 	- #### Relationships
 	  id:: etsi-domain-ai-governance-relationships
 	  collapsed:: true
+		- is-subclass-of:: [[AI Safety]]
 		- is-part-of:: [[ETSI Domain Taxonomy]]
 		- enables:: [[AI Ethics Classification]]
 		- enables:: [[Explainability Categorization]]

@@ -9,8 +9,7 @@ id:: unknown-ontology
   - source-domain:: bc
   - owl:class:: bc:Bc0117CirculatingSupply
   - status:: active
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Blockchain]]
 - is-subclass-of:: [[Token Economics]]

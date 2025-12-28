@@ -4,17 +4,16 @@
   "content": "- ### OntologyBlock\n  id:: standards-conformance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10073\n\t- source-domain:: mv\n\t- preferred-term:: Standards Conformance\n\t- status:: active\n\t- definition:: The state or process of meeting the requirements specified in a technical standard, specification, or guideline, ensuring that a product, process, or system aligns with internal or industry-specific standards for interoperability, quality, and compatibility.\n\t- owl:class:: mv:StandardsConformance\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Standards]]\n\t\t- related-to:: [[Standards Compliance]]\n\t\t- related-to:: [[Standards Conformance Testing]]\n\t\t- related-to:: [[Interoperability]]\n\t  id:: standards-conformance-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Standards conformance ensures that implementations faithfully meet the requirements of established specifications. Unlike compliance (which often refers to external regulations), conformance typically refers to alignment with internal or industry-specific technical standards and design requirements.\n- ## Technical Details\n\t- ### Conformance Mechanisms\n\t\t- **PICS (Protocol Implementation Conformance Statement)**: Functions as a conformance checklist that implementers complete to document their adherence\n\t\t- **Conformance Clauses**: Formal definitions of what constitutes compliant implementation\n\t\t- **Test Method Standards**: Procedures for verifying conformance\n\t- ### Key Standards Areas\n\t\t- **Electric Vehicle Charging**: ISO 15118 series for charging communication conformance\n\t\t- **Media and Broadcast**: ST 2110 suite for media IP networks\n\t\t- **Accessibility**: W3C Accessibility Conformance Testing (ACT) Rules Format\n\t\t- **Digital Rights**: ISO/IEC 23078-1:2024 for DRM protection technologies\n- ## Applications\n\t- Compiler conformance to language standards (e.g., SYCL 2020, OpenMP 5.0/5.1)\n\t- Software product interoperability verification\n\t- Quality assurance and reliability testing\n\t- Security compliance verification (ISO/IEC 27001, NIST)",
   "backlinks": [
     "Standards Compliance",
-    "Standards",
     "Standards Conformance Testing",
     "Validation Process",
     "Technical Standards"
   ],
   "wiki_links": [
-    "Standards",
-    "Standards Compliance",
-    "Interoperability",
     "metaverse",
-    "Standards Conformance Testing"
+    "Standards Compliance",
+    "Standards Conformance Testing",
+    "Interoperability",
+    "Standards"
   ],
   "ontology": {
     "term_id": "MV-10073",

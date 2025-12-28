@@ -9,8 +9,7 @@ id:: rb-0069-lidar-ontology
   - source-domain:: mv
   - owl:class:: mv:Lidar
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Extended Reality (XR)]]
 - belongsToDomain:: [[MetaverseDomain]]

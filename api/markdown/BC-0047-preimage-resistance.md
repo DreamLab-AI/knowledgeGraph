@@ -8,6 +8,7 @@ id:: preimage-resistance-ontology
   - preferred-term:: Preimage Resistance
   - source-domain:: bc
   - owl:class:: bc:PreimageResistance
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Hash function security property within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

@@ -9,7 +9,6 @@ id:: bc-0112-inflationary-token-ontology
   - source-domain:: bc
   - owl:class:: bc:Bc0112InflationaryToken
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Token]]

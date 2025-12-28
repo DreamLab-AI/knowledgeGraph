@@ -10,4 +10,4 @@ id:: rb-0026-robot-joint-ontology
   - owl:class:: rb:RobotJoint
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

@@ -4,18 +4,17 @@
   "content": "- ### OntologyBlock\n  id:: standards-compliance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10071\n\t- source-domain:: mv\n\t- preferred-term:: Standards Compliance\n\t- status:: active\n\t- definition:: The process of ensuring that systems, processes, products, or services meet the requirements of established technical standards, industry specifications, regulatory frameworks, and governance policies applicable to metaverse and virtual world technologies.\n\t- owl:class:: mv:StandardsCompliance\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Standards]]\n\t\t- related-to:: [[Standards Conformance]]\n\t\t- related-to:: [[Technical Standards]]\n\t\t- related-to:: [[Interoperability]]\n\t  id:: standards-compliance-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Standards compliance in the metaverse context ensures that virtual environments, platforms, and technologies adhere to established guidelines and regulations. The Metaverse Standards Forum, founded in 2022 with over 2,600 members including Meta, Microsoft, Google, and NVIDIA, works to develop interoperability standards for an open and inclusive metaverse.\n- ## Technical Details\n\t- ### Key Compliance Categories\n\t\t- **Interoperability Standards**: Enabling different metaverse platforms and technologies to work together seamlessly\n\t\t- **Data Privacy Compliance**: Including GDPR requirements for data collection and processing in virtual environments\n\t\t- **Intellectual Property Law**: Protecting digital assets and virtual creations\n\t\t- **Safety and Conduct Standards**: Ensuring user safety and appropriate behavior guidelines\n\t- ### Standards Organizations\n\t\t- IEEE Standards Association (IEEE SA) develops metaverse-related standards through the Metaverse Standards Committee (CTS/MSC)\n\t\t- Khronos Group maintains glTF and other 3D graphics standards\n\t\t- Web3D Consortium develops standards for interactive 3D graphics\n- ## Applications\n\t- Employee training programs using immersive VR technology\n\t- Cross-platform avatar and asset portability\n\t- GDPR-compliant data handling in virtual worlds\n\t- EU AI Act alignment for metaverse applications",
   "backlinks": [
     "Standards Conformance",
-    "Standards",
     "Digital Twin Framework",
     "Compatibility Process",
     "Standards Validation",
     "Technical Standards"
   ],
   "wiki_links": [
-    "Standards",
+    "metaverse",
     "Standards Conformance",
-    "Interoperability",
     "Technical Standards",
-    "metaverse"
+    "Interoperability",
+    "Standards"
   ],
   "ontology": {
     "term_id": "MV-10071",

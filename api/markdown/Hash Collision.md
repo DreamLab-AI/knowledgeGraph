@@ -8,6 +8,7 @@ id:: hash-collision-ontology
   - preferred-term:: Hash Collision
   - source-domain:: bc
   - owl:class:: bc:HashCollision
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Two inputs producing same hash within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

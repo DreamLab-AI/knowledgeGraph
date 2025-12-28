@@ -7,8 +7,7 @@
 	- preferred-term:: Repeatability
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- owl:class:: rb:Repeatability
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept

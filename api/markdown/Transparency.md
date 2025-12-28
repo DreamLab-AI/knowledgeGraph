@@ -14,8 +14,10 @@
 		- is-subclass-of:: [[Metaverse]]
 		- enables:: [[Explainability (AI-0064)]]
 		- enables:: [[Accountability (AI-0068)]]
-		- is-enabled-by:: [[AI Impact Assessment]]
-		- is-enabled-by:: [[Consent Management]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - AI Impact Assessment enables Transparency
+	    - Consent Management enables Transparency
 
 ## Formal Specification
 
@@ -457,5 +459,7 @@ levels:
 	- #### Relationships
 	  id:: transparency-relationships
 		- is-subclass-of:: [[Metaverse]]
-		- is-enabled-by:: [[AI Impact Assessment]], [[Consent Management]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - AI Impact Assessment, Consent Management enable Transparency
 		- enables:: [[Explainability (AI-0064)]], [[Accountability (AI-0068)]]

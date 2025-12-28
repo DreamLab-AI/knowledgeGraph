@@ -8,11 +8,12 @@ id:: metaverse-relationships
   - preferred-term:: Metaverse
   - source-domain:: mv
   - owl:class:: mv:Metaverse
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: mature
   - definition:: A convergent network of persistent, synchronous 3D virtual worlds, augmented reality environments, and internet platforms that enable shared spatial computing experiences with interoperable digital assets, persistent identity, and real-time social interaction.
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[Technology Domain]]
 - uses:: [[Metaverse Infrastructure]]
 - is-part-of:: [[Multiverse]]
 - has-part:: [[Synchronous Interaction]]

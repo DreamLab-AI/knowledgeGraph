@@ -9,8 +9,7 @@ id:: rb-0072-encoder-ontology
   - source-domain:: rb
   - owl:class:: rb:Encoder
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Robotics]]
 - belongsToDomain:: [[RoboticsDomain]]

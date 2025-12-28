@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: A contrastive learning framework that maintains a large and consistent dictionary of encoded samples using a momentum-updated encoder, enabling effective contrastive learning with many negatives. MoCo provides stable comparison targets through the momentum encoder.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: momentum-contrast-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[TrainingMethod]]

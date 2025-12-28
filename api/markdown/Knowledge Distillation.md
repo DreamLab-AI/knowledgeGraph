@@ -7,6 +7,7 @@
 	- source-domain:: ai
 	- status:: draft
   - owl:class:: ai:KnowledgeDistillation
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - public-access:: true
 
 

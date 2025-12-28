@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: The total number of trainable parameters in a neural network, serving as a primary measure of model size and capacity, typically ranging from millions to hundreds of billions in modern language models.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: parameter-count-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[ModelProperty]]

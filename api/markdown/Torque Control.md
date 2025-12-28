@@ -2,6 +2,7 @@
     - term-id:: DT-0970
     - source-domain:: rb
     - owl:class:: rb:TorqueControl
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - preferred-term:: Torque Control
     - ontology:: true
     - public-access:: true

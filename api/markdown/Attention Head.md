@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: One of multiple parallel attention mechanisms in multi-head attention, each potentially learning different types of relationships and patterns in the input sequence.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: attention-head-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[MultiHeadAttention]]

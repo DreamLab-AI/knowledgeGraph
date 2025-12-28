@@ -14,5 +14,5 @@
 
 ### Relationships
 
-- is-subclass-of:: [[mv:MachineLearning]]
-- is-subclass-of:: [[mv:MachineLearning]]
+- is-subclass-of:: [[MachineLearning]]
+- is-subclass-of:: [[MachineLearning]]

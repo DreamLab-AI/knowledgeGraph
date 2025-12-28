@@ -10,4 +10,4 @@ id:: rb-0014-surgical-robot-ontology
   - owl:class:: rb:SurgicalRobot
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

@@ -8,6 +8,7 @@ id:: distributed-architecture-ontology
   - preferred-term:: Distributed Architecture
   - source-domain:: bc
   - owl:class:: bc:DistributedArchitecture
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Network design pattern allowing multi-node operation of a shared virtual world with coordinated state management across geographic or logical boundaries.
 

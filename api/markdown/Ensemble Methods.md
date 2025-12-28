@@ -9,9 +9,11 @@
 
 ### Relationships
 - is-subclass-of:: [[Machine Learning]]
-- has-subclass:: [[Boosting]]
-- has-subclass:: [[Bagging]]
-- has-subclass:: [[Stacking]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Boosting is-subclass-of Ensemble Methods
+    - Bagging is-subclass-of Ensemble Methods
+    - Stacking is-subclass-of Ensemble Methods
 - skos:related:: [[Random Forest]]
 - skos:related:: [[Gradient Boosting]]
 - enables:: [[Model Combination]]

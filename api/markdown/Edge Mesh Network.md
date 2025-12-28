@@ -8,6 +8,7 @@ id:: edge-mesh-network-ontology
   - preferred-term:: Edge Mesh Network
   - source-domain:: mv
   - owl:class:: mv:EdgeMeshNetwork
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Decentralized interconnection of edge computing nodes providing dynamic load balancing, redundancy, and peer-to-peer communication for distributed workloads.
 

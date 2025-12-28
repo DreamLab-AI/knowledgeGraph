@@ -14,5 +14,5 @@
 
 ### Relationships
 
-- is-subclass-of:: [[dt:Risk]]
-- is-subclass-of:: [[dt:Risk]]
+- is-subclass-of:: [[Risk]]
+- is-subclass-of:: [[Risk]]

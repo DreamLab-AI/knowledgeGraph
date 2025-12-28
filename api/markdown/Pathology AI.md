@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: Pathology AI comprises artificial intelligence systems for automated analysis of histopathology slides, cytology specimens, and other pathological images. These systems perform tasks including cancer detection, grading, biomarker quantification, and morphological analysis using whole slide imaging and deep learning architectures tailored for gigapixel pathology images.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: pathology-ai-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[MedicalAI]]

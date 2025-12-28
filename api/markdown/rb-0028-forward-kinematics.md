@@ -10,4 +10,4 @@ id:: rb-0028-forward-kinematics-ontology
   - owl:class:: rb:ForwardKinematics
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

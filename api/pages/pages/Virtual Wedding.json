@@ -1,25 +1,25 @@
 {
   "id": "Virtual Wedding",
   "title": "Virtual Wedding",
-  "content": "- ### OntologyBlock\n  id:: virtual-wedding-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10152\n\t- source-domain:: metaverse\n\t- preferred-term:: Virtual Wedding\n\t- status:: active\n\t- definition:: A marriage ceremony conducted in virtual environments or metaverse platforms where participants are represented by digital avatars, enabling global attendance, customizable virtual venues, and unique digital elements like NFT wedding gifts, often requiring accompaniment by legal proceedings for official recognition.\n\t- owl:class:: mv:VirtualWedding\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Virtual Event]]\n\t\t- related-to:: [[Metaverse]]\n\t\t- related-to:: [[Avatar]]\n\t\t- related-to:: [[Virtual Venue]]\n\t  id:: virtual-wedding-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual weddings enable couples to marry in metaverse environments with guests attending as avatars from anywhere in the world. Rose Law Group hosted a legally binding Decentraland wedding officiated by Supreme Court Judge Clint Bolick with nearly 2,000 virtual attendees. Notable ceremonies have included NFT collections and virtual concerts. Platforms like Courtly offer legal online marriage accepted in 150+ countries with Utah-based licensed officiants.\n- ## Technical Details\n\t- ### Wedding Components\n\t\t- **Virtual Venue**: Customizable 3D environment for ceremony\n\t\t- **Avatars**: Digital representations of couple and guests\n\t\t- **Virtual Officiant**: Avatar or real person conducting ceremony\n\t\t- **Digital Elements**: NFT gifts, virtual rings, themed decorations\n\t- ### Legal Considerations\n\t\t- Virtual ceremonies alone are not legally binding\n\t\t- Must be accompanied by legal marriage proceedings\n\t\t- Marriage laws vary by jurisdiction globally\n\t\t- Professional legal consultation recommended\n\t- ### Available Services\n\t\t- **Courtly**: Legal online marriage certificates\n\t\t- **Wedfuly**: Virtual wedding livestream specialists\n\t\t- **Easy Wedding Online**: Personal virtual wedding planners\n\t\t- **Chapel of the Metaverse**: Metaverse ceremony services\n\t- ### Benefits\n\t\t- Global guest attendance without travel\n\t\t- Lower costs than traditional venues\n\t\t- Unlimited guest capacity\n\t\t- Complete venue customization\n\t\t- NFT and digital gift options\n- ## Applications\n\t- Long-distance relationship ceremonies\n\t- Pandemic-safe wedding alternatives\n\t- Cost-effective celebration options\n\t- Second ceremony for remote family\n\t- Unique themed virtual experiences",
+  "content": "- ### OntologyBlock\n  id:: virtual-wedding-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10152\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Wedding\n\t- status:: active\n\t- definition:: A marriage ceremony conducted in virtual environments or metaverse platforms where participants are represented by digital avatars, enabling global attendance, customizable virtual venues, and unique digital elements like NFT wedding gifts, often requiring accompaniment by legal proceedings for official recognition.\n\t- owl:class:: mv:VirtualWedding\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Virtual Event]]\n\t\t- related-to:: [[Metaverse]]\n\t\t- related-to:: [[Avatar]]\n\t\t- related-to:: [[Virtual Venue]]\n\t  id:: virtual-wedding-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual weddings enable couples to marry in metaverse environments with guests attending as avatars from anywhere in the world. Rose Law Group hosted a legally binding Decentraland wedding officiated by Supreme Court Judge Clint Bolick with nearly 2,000 virtual attendees. Notable ceremonies have included NFT collections and virtual concerts. Platforms like Courtly offer legal online marriage accepted in 150+ countries with Utah-based licensed officiants.\n- ## Technical Details\n\t- ### Wedding Components\n\t\t- **Virtual Venue**: Customizable 3D environment for ceremony\n\t\t- **Avatars**: Digital representations of couple and guests\n\t\t- **Virtual Officiant**: Avatar or real person conducting ceremony\n\t\t- **Digital Elements**: NFT gifts, virtual rings, themed decorations\n\t- ### Legal Considerations\n\t\t- Virtual ceremonies alone are not legally binding\n\t\t- Must be accompanied by legal marriage proceedings\n\t\t- Marriage laws vary by jurisdiction globally\n\t\t- Professional legal consultation recommended\n\t- ### Available Services\n\t\t- **Courtly**: Legal online marriage certificates\n\t\t- **Wedfuly**: Virtual wedding livestream specialists\n\t\t- **Easy Wedding Online**: Personal virtual wedding planners\n\t\t- **Chapel of the Metaverse**: Metaverse ceremony services\n\t- ### Benefits\n\t\t- Global guest attendance without travel\n\t\t- Lower costs than traditional venues\n\t\t- Unlimited guest capacity\n\t\t- Complete venue customization\n\t\t- NFT and digital gift options\n- ## Applications\n\t- Long-distance relationship ceremonies\n\t- Pandemic-safe wedding alternatives\n\t- Cost-effective celebration options\n\t- Second ceremony for remote family\n\t- Unique themed virtual experiences",
   "backlinks": [
     "Digital Ritual"
   ],
   "wiki_links": [
-    "Metaverse",
-    "Avatar",
+    "metaverse",
     "Virtual Event",
+    "Metaverse",
     "Virtual Venue",
-    "metaverse"
+    "Avatar"
   ],
   "ontology": {
     "term_id": "MV-10152",
     "preferred_term": "Virtual Wedding",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#VirtualWedding",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": "mv",
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "A marriage ceremony conducted in virtual environments or metaverse platforms where participants are represented by digital avatars, enabling global attendance, customizable virtual venues, and unique digital elements like NFT wedding gifts, often requiring accompaniment by legal proceedings for official recognition.",
     "scope_note": null,
     "status": "active",
@@ -63,8 +63,7 @@
       "errors": [
         "Missing required property: last-updated",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "Missing required property: owl:role"
       ]
     }
   }

@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: An architecture that uses multiple specialised sub-networks (experts) with a gating mechanism that routes inputs to a sparse subset of experts, enabling scaling without proportional compute increases. MoE is adopted in production LLMs like GPT-4, enabling massive scale with controlled costs.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: mixture-of-experts-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[NeuralNetwork]]

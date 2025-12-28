@@ -11,4 +11,4 @@ AI-0442-model-pruning-edge
   - owl:class:: ai:Ai0442ModelPruningEdge
 
 ### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]

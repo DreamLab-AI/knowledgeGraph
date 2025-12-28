@@ -1,0 +1,78 @@
+{
+  "id": "Remote Collaboration",
+  "title": "Remote Collaboration",
+  "content": "- ### OntologyBlock\n  id:: remote-collaboration-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-0603\n\t- preferred-term:: Remote Collaboration\n\t- source-domain:: tc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Remote Collaboration encompasses the tools, platforms, and methodologies that enable distributed teams to work together effectively across geographic distances. This includes collaborative editing systems, shared workspaces, real-time co-creation tools, and asynchronous collaboration platforms that facilitate productive teamwork without physical co-location.\n\t- owl:class:: tc:RemoteCollaboration\n\t- belongsToDomain:: [[Telecollaboration]]\n\t- #### Relationships\n\t  id:: remote-collaboration-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Telecollaboration]]\n\t\t- is-parent-of:: [[Collaborative Editing]]\n\t\t- is-parent-of:: [[Shared Workspace]]\n\t\t- is-parent-of:: [[Real-Time Collaboration]]\n\t\t- related-to:: [[Virtual Meeting]]",
+  "backlinks": [
+    "Virtual Meeting",
+    "RB-1010-telepresence",
+    "tc-0001-video-conferencing",
+    "Collaborative Learning",
+    "tc-0002-collaborative-document-editing",
+    "tc-0003-telepresence-robot"
+  ],
+  "wiki_links": [
+    "Telecollaboration",
+    "Virtual Meeting",
+    "Collaborative Editing",
+    "Shared Workspace",
+    "Real-Time Collaboration"
+  ],
+  "ontology": {
+    "term_id": "TC-0603",
+    "preferred_term": "Remote Collaboration",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/telecollaboration#RemoteCollaboration",
+    "source_domain": "tc",
+    "domain": "tc",
+    "domain_full_name": "Telecollaboration",
+    "definition": "Remote Collaboration encompasses the tools, platforms, and methodologies that enable distributed teams to work together effectively across geographic distances. This includes collaborative editing systems, shared workspaces, real-time co-creation tools, and asynchronous collaboration platforms that facilitate productive teamwork without physical co-location.",
+    "scope_note": null,
+    "status": "active",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "tc:RemoteCollaboration",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Telecollaboration"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Telecollaboration"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "other_relationships": {
+      "is-parent-of": [
+        "Collaborative Editing",
+        "Shared Workspace",
+        "Real-Time Collaboration"
+      ],
+      "related-to": [
+        "Virtual Meeting"
+      ]
+    },
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

@@ -5,10 +5,9 @@
 	- public-access:: true
 	- term-id:: TC-0003
 	- preferred-term:: tc 0003 telepresence robot
-	- source-domain:: telecollaboration
+	- source-domain:: tc
 	- status:: draft
-	- definition:: ### Primary Definition
-**Telepresence Robot** - Mobile robotic platform with audio-visual and manipulation capabilities enabling a remote operator to have a physical embodied presence, interact with environments, and perform tasks at a distance while maintaining situational awareness through real-time sensory feedback.
+	- definition:: **Telepresence Robot** - Mobile robotic platform with audio-visual and manipulation capabilities enabling a remote operator to have a physical embodied presence, interact with environments, and perform tasks at a distance while maintaining situational awareness through real-time sensory feedback.
 	- maturity:: emerging
 	- owl:class:: tc:TelepresenceRobot
 	- owl:physicality:: HybridEntity
@@ -24,8 +23,7 @@
 	- rb:autonomy-level:: teleoperated
 
 - ## About tc 0003 telepresence robot
-	- ### Primary Definition
-**Telepresence Robot** - Mobile robotic platform with audio-visual and manipulation capabilities enabling a remote operator to have a physical embodied presence, interact with environments, and perform tasks at a distance while maintaining situational awareness through real-time sensory feedback. Represents convergence of telecollaboration and robotics domains, enabling embodied remote presence beyond screen-based interaction.
+	-
 	-
 	- ### Telecollaboration Context
 Classified as an embodied [[Synchronous Telepresence]] technology within the [[Telecollaboration]] domain. Extends video conferencing and synchronous collaboration into physical space, enabling:
@@ -51,9 +49,6 @@ Classified as an embodied [[Synchronous Telepresence]] technology within the [[T
 - **Last Updated**: 2025-11-21
 
 ## Definition
-
-### Primary Definition
-**Telepresence Robot** - Mobile robotic platform with audio-visual and manipulation capabilities enabling a remote operator to have a physical embodied presence, interact with environments, and perform tasks at a distance while maintaining situational awareness through real-time sensory feedback.
 
 ### Telecollaboration Context
 Telepresence robots represent a significant evolution in remote collaboration technology:

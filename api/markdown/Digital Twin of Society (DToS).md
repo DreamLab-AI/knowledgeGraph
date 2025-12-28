@@ -8,6 +8,7 @@ id:: digital-twin-of-society-dtos-ontology
   - preferred-term:: Digital Twin of Society (DToS)
   - source-domain:: mv
   - owl:class:: mv:DigitalTwinOfSocietyDtos
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A large-scale simulation of social, economic, and behavioral systems integrating city infrastructure, population dynamics, and environmental data to model and optimize societal outcomes.
 

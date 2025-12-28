@@ -2,6 +2,7 @@
     - term-id:: DT-0549
     - source-domain:: bc
     - owl:class:: bc:PureProofOfStake
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - preferred-term:: Pure Proof of Stake
     - ontology:: true
     - public-access:: true

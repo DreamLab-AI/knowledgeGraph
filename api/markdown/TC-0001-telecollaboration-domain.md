@@ -13,6 +13,7 @@ Telecollaboration Domain Root
   - maturity:: mature
   - owl:physicality:: ConceptualEntity
   - owl:role:: Domain
+  - is-subclass-of:: [[Technology Domain]]
 
 ### Relationships
 - has-subdomain:: [[TC-0010-Synchronous-Collaboration]]

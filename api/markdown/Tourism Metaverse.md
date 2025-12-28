@@ -8,6 +8,7 @@ id:: tourism-metaverse-ontology
   - preferred-term:: Tourism Metaverse
   - source-domain:: mv
   - owl:class:: mv:TourismMetaverse
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A virtual platform enabling users to explore, preview, and experience tourist destinations, cultural sites, and travel experiences through immersive digital environments, supporting sustainable tourism and accessibility to remote or restricted locations.
 

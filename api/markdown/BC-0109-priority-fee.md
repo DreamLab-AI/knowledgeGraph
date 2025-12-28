@@ -9,7 +9,6 @@ id:: bc-0109-priority-fee-ontology
   - source-domain:: bc
   - owl:class:: bc:Bc0109PriorityFee
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Transaction Fee]]

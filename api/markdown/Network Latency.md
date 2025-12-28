@@ -8,6 +8,7 @@ id:: unknown-ontology
   - preferred-term:: Network Latency
   - source-domain:: bc
   - owl:class:: bc:NetworkLatency
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Communication delay within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

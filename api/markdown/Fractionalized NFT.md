@@ -8,6 +8,7 @@ id:: fractionalized-nft-ontology
   - preferred-term:: Fractionalized NFT
   - source-domain:: bc
   - owl:class:: bc:FractionalizedNft
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A non-fungible token whose ownership has been divided into multiple fungible token shares, enabling collective ownership and enhanced liquidity of high-value unique digital assets.
 

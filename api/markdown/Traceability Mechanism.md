@@ -18,7 +18,7 @@
 	- owl:inferred-class:: ConceptualConcept
 
 ### Domain & Architecture
-	- belongsToDomain:: [[AIEthicsDomain]]
+	- belongsToDomain:: [[AIEthicsDomain]], [[DisruptiveTechDomain]]
 	- maturity:: mature
 
 ### Relationships

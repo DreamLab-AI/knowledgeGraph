@@ -9,8 +9,7 @@ id:: hyperparameter-ontology
   - source-domain:: mv
   - owl:class:: mv:Hyperparameter
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Metaverse Infrastructure]]
 - belongsToDomain:: [[MetaverseDomain]]

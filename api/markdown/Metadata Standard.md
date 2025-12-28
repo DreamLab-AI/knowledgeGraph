@@ -9,6 +9,7 @@ id:: metadata-standard-ontology
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:MetadataStandard
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - definition:: A formal specification defining the structure, semantics, format, and rules for describing data about data, ensuring consistent interpretation and interoperability across systems and domains.
 
 ### Relationships
@@ -27,7 +28,9 @@ id:: metadata-standard-ontology
 - enables:: [[Resource Description]]
 - enables:: [[Semantic Interoperability]]
 - enables:: [[Information Exchange]]
-- is-required-by:: [[Digital Ontology Repository]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Digital Ontology Repository requires Metadata Standard
 - depends-on:: [[XML Schema]]
 - depends-on:: [[Ontology]]
 - depends-on:: [[JSON Schema]]

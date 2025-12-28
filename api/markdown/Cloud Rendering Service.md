@@ -17,7 +17,7 @@
 	- owl:inferred-class:: mv:HybridProcess
 
 ### Domain & Architecture
-	- belongsToDomain:: [[CreativeMediaDomain]], [[InfrastructureDomain]]
+	- belongsToDomain:: [[CreativeMediaDomain]], [[DisruptiveTechDomain]], [[InfrastructureDomain]]
 	- implementedInLayer:: [[PhysicalLayer]], [[ComputeLayer]]
 	- maturity:: mature
 

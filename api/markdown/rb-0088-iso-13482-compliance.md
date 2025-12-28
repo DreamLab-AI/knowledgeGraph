@@ -7,12 +7,12 @@
 	- preferred-term:: rb 0088 iso 13482 compliance
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- owl:class:: rb:Iso13482Compliance
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
+	- is-subclass-of:: [[Robot Safety]]
 
 ## Metadata
 

@@ -8,6 +8,7 @@ id:: peer-discovery-ontology
   - preferred-term:: Peer Discovery
   - source-domain:: bc
   - owl:class:: bc:PeerDiscovery
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Node finding mechanism within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

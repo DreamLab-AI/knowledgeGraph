@@ -9,7 +9,6 @@ id:: unknown-ontology
   - source-domain:: mv
   - owl:class:: mv:Bc0115Minting
   - status:: active
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Token Economics]]

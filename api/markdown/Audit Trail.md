@@ -16,7 +16,7 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[ComputationAndIntelligenceDomain]]
+	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[DisruptiveTechDomain]], [[ComputationAndIntelligenceDomain]]
 	- implementedInLayer:: [[Data Layer]], [[Middleware Layer]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]
@@ -42,9 +42,11 @@
 		- enables:: [[Accountability]]
 		- enables:: [[Incident Investigation]]
 		- enables:: [[Forensic Analysis]]
-		- is-enabled-by:: [[Virtual Notary Service]]
-		- is-required-by:: [[Cross-Platform Compliance Hub]]
-		- is-required-by:: [[User Agreement Compliance]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - Virtual Notary Service enables Audit Trail
+	    - Cross-Platform Compliance Hub requires Audit Trail
+	    - User Agreement Compliance requires Audit Trail
 		- is-dependency-of:: [[Virtual Securities Offering (VSO)]]
 		- is-dependency-of:: [[Reputation Data]]
 		- depends-on:: [[Logging Protocol]]

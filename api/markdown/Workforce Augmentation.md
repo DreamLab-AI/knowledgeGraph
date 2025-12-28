@@ -11,4 +11,4 @@ id:: workforceaugmentation-ontology
 	- owl:class:: ai:WorkforceAugmentation
 	- belongsToDomain:: [[Artificial Intelligence]]
 - ### Relationships
-- is-subclass-of:: [[ai:ArtificialIntelligence]]
+- is-subclass-of:: [[ArtificialIntelligence]]

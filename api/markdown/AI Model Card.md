@@ -18,7 +18,7 @@
 	- owl:inferred-class:: mv:VirtualObject
 
 ### Domain & Architecture
-	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[ComputationAndIntelligenceDomain]]
+	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[DisruptiveTechDomain]], [[ComputationAndIntelligenceDomain]]
 	- implementedInLayer:: [[Application Layer]], [[Data Layer]]
 	- maturity:: mature
 

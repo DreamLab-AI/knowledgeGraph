@@ -6,11 +6,11 @@
     "ETSI_Domain_Data_Management___Creative"
   ],
   "wiki_links": [
-    "Asset Repository",
-    "Content Management System",
-    "Content Organisation",
     "metaverse",
-    "Digital Asset Management"
+    "Asset Repository",
+    "Content Organisation",
+    "Digital Asset Management",
+    "Content Management System"
   ],
   "ontology": {
     "term_id": "MV-9958",

@@ -15,7 +15,7 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[InteractionDomain]]
+	- belongsToDomain:: [[InteractionDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[ComputeLayer]]
 	- #### Relationships
 	  id:: presence-relationships
@@ -31,10 +31,12 @@
 		- enables:: [[Social Connection]]
 		- enables:: [[Embodiment]]
 		- enables:: [[Engagement]]
-		- is-enabled-by:: [[Experience Layer]]
-		- is-enabled-by:: [[Extended Reality (XR)]]
-		- is-enabled-by:: [[Immersion]]
-		- is-enabled-by:: [[Human Interface Layer (HIL)]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - Experience Layer enables Presence
+	    - Extended Reality (XR) enables Presence
+	    - Immersion enables Presence
+	    - Human Interface Layer (HIL) enables Presence
 		- depends-on:: [[Frame Rate]]
 		- depends-on:: [[Latency]]
 		- depends-on:: [[Field of View]]

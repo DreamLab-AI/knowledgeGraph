@@ -2,6 +2,7 @@
     - term-id:: DT-0848
     - source-domain:: mv
     - owl:class:: mv:ProceduralGeneration
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - preferred-term:: Procedural Generation
     - ontology:: true
     - public-access:: true

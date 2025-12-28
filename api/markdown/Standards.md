@@ -12,9 +12,11 @@
 	- belongsToDomain:: [[metaverse]]
 	- #### Relationships
 		- is-subclass-of:: [[Metaverse]]
-		- has-subclass:: [[Standards Compliance]]
-		- has-subclass:: [[Standards Conformance]]
-		- has-subclass:: [[Technical Standards]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - Standards Compliance is-subclass-of Standards
+	    - Standards Conformance is-subclass-of Standards
+	    - Technical Standards is-subclass-of Standards
 		- related-to:: [[Interoperability]]
 	  id:: standards-relationships
 	  collapsed:: true

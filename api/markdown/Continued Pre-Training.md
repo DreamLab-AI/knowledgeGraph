@@ -12,7 +12,7 @@
 	- source:: [[AWS SageMaker CPT Documentation]], [[Google Cloud AI Platform]], [[AMD ROCm Multilingual CPT Playbook]], [[Raschka 2025 LLM Training Paradigms]]
 	- maturity:: mature
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: continued-pre-training-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[PreTraining]]

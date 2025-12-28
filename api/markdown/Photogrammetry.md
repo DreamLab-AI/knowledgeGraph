@@ -15,7 +15,7 @@
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[CreativeMediaDomain]], [[RealityCaptureDomain]]
+	- belongsToDomain:: [[CreativeMediaDomain]], [[DisruptiveTechDomain]], [[RealityCaptureDomain]]
 	- implementedInLayer:: [[Application Layer]]
 	- #### Relationships
 	  id:: photogrammetry-relationships

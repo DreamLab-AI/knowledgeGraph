@@ -8,8 +8,7 @@
 	- preferred-term:: Light Curtain
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 
 
 ### Relationships

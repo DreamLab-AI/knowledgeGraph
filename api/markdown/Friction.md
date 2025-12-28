@@ -7,8 +7,7 @@
 	- preferred-term:: Friction
 	- source-domain:: rb
 	- status:: draft
-	- definition:: ### Primary Definition
-**Friction** - Resistance to relative motion between surfaces
+	- definition:: **Friction** - Resistance to relative motion between surfaces
 	- maturity:: draft
 	- owl:class:: rb:Friction
 	- is-subclass-of:: [[Robotics]]
@@ -18,8 +17,7 @@
 	- is-subclass-of:: [[rb-0022-robot-dynamics]]
 
 - ## About rb 0042 friction
-	- ### Primary Definition
-**Friction** - Resistance to relative motion between surfaces
+	-
 	-
 	- ### Original Content
 	  collapsed:: true
@@ -37,9 +35,6 @@
 		  - **Last Updated**: 2025-10-28
 		
 		  ## Definition
-		
-		  ### Primary Definition
-		  **Friction** - Resistance to relative motion between surfaces
 		
 		  ### Standards Context
 		  Defined according to ISO 8373:2021 and related international robotics standards.

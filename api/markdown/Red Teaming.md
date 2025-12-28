@@ -11,7 +11,7 @@ Red Teaming - source-domain:: ai - owl:class:: ai:RedTeaming - status:: draft - 
 *Instructional content moved from class definition*
 
 ### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 - is-subclass-of:: [[AISecurity]]
 
 # Red Teaming: Ontology Entry Review and Enhancement

@@ -10,4 +10,4 @@ id:: rb-0067-force-torque-sensor-ontology
   - owl:class:: rb:ForceTorqueSensor
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

@@ -2,6 +2,7 @@
     - term-id:: DT-0537
     - source-domain:: bc
     - owl:class:: bc:IncentiveAlignment
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - preferred-term:: Incentive Alignment
     - ontology:: true
     - public-access:: true

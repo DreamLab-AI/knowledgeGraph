@@ -13,6 +13,7 @@ id:: humanity-attestation-ontology
   - preferred-term:: Humanity Attestation
   - source-domain:: bc
   - owl:class:: bc:HumanityAttestation
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Verification process that confirms a digital identity represents a human rather than an automated agent, bot, or AI system.
 

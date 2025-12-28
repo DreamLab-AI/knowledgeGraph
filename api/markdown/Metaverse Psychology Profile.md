@@ -8,6 +8,7 @@ id:: metaverse-psychology-profile-ontology
   - preferred-term:: Metaverse Psychology Profile
   - source-domain:: mv
   - owl:class:: mv:MetaversePsychologyProfile
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Comprehensive dataset describing behavioral, emotional, cognitive, and social traits derived from virtual interactions, enabling personalized experiences and psychological research in metaverse environments.
 

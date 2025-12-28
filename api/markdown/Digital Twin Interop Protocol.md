@@ -8,6 +8,7 @@ id:: digital-twin-interop-protocol-ontology
   - preferred-term:: Digital Twin Interop Protocol
   - source-domain:: mv
   - owl:class:: mv:DigitalTwinInteropProtocol
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Standardized API and communication framework enabling exchange of state, simulation data, and behavior models between heterogeneous digital twin systems across platforms.
 

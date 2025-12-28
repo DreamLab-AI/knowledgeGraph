@@ -8,6 +8,7 @@ id:: trust-framework-policy-ontology
   - preferred-term:: Trust Framework Policy
   - source-domain:: mv
   - owl:class:: mv:TrustFrameworkPolicy
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Set of rules and requirements governing participant behavior, accountability, and interoperability in federated digital identity ecosystems within metaverse environments.
 

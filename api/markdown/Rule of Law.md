@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: The principle that all persons, institutions and entities, including AI systems and their operators, are accountable to laws that are publicly promulgated, equally enforced, independently adjudicated and consistent with international human rights norms.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: rule-of-law-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AIGovernance]]

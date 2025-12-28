@@ -8,6 +8,7 @@ id:: digital-identity-wallet-ontology
   - preferred-term:: Digital Identity Wallet
   - source-domain:: bc
   - owl:class:: bc:DigitalIdentityWallet
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A secure software container that stores verifiable credentials, cryptographic keys, and identity data, enabling users to control their digital identity and authenticate across platforms.
 

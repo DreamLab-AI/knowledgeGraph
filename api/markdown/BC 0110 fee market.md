@@ -9,8 +9,7 @@ id:: unknown-ontology
   - source-domain:: bc
   - owl:class:: bc:Bc0110FeeMarket
   - status:: reviewed
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Transaction Fee]]
 

@@ -9,8 +9,7 @@ id:: rb-0044-velocity-ontology
   - source-domain:: rb
   - owl:class:: rb:Velocity
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Robotics]]
 - belongsToDomain:: [[RoboticsDomain]]

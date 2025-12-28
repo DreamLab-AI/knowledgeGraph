@@ -1,0 +1,76 @@
+{
+  "id": "Blockchain Scalability",
+  "title": "Blockchain Scalability",
+  "content": "- ### OntologyBlock\n  id:: blockchain-scalability-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0602\n\t- preferred-term:: Blockchain Scalability\n\t- source-domain:: bc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Blockchain Scalability encompasses the technical solutions and architectural approaches designed to increase the transaction throughput, reduce latency, and improve the efficiency of blockchain networks while maintaining security and decentralisation. Key approaches include Layer 2 solutions, sharding, rollups, and state channels.\n\t- owl:class:: bc:BlockchainScalability\n\t- belongsToDomain:: [[Blockchain Technology]]\n\t- #### Relationships\n\t  id:: blockchain-scalability-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Entity]]\n\t\t- is-parent-of:: [[Layer 2]]\n\t\t- is-parent-of:: [[Sharding]]\n\t\t- is-parent-of:: [[Rollup]]\n\t\t- is-parent-of:: [[State Channel]]\n\t\t- related-to:: [[Blockchain Network]]",
+  "backlinks": [
+    "Zk Starks"
+  ],
+  "wiki_links": [
+    "Rollup",
+    "Blockchain Technology",
+    "Layer 2",
+    "Blockchain Entity",
+    "Blockchain Network",
+    "Sharding",
+    "State Channel"
+  ],
+  "ontology": {
+    "term_id": "BC-0602",
+    "preferred_term": "Blockchain Scalability",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#BlockchainScalability",
+    "source_domain": "bc",
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
+    "definition": "Blockchain Scalability encompasses the technical solutions and architectural approaches designed to increase the transaction throughput, reduce latency, and improve the efficiency of blockchain networks while maintaining security and decentralisation. Key approaches include Layer 2 solutions, sharding, rollups, and state channels.",
+    "scope_note": null,
+    "status": "active",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:BlockchainScalability",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Blockchain Entity"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Blockchain Technology"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "other_relationships": {
+      "is-parent-of": [
+        "Layer 2",
+        "Sharding",
+        "Rollup",
+        "State Channel"
+      ],
+      "related-to": [
+        "Blockchain Network"
+      ]
+    },
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

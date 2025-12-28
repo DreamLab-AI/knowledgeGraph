@@ -9,7 +9,9 @@
 
 ### Relationships
 - is-subclass-of:: [[Artificial Intelligence]]
-- has-subclass:: [[Automated Planning]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Automated Planning is-subclass-of Planning and Scheduling
 - skos:related:: [[Search Algorithms]]
 - skos:related:: [[Constraint Satisfaction]]
 - skos:related:: [[Optimization]]

@@ -18,7 +18,7 @@
 	- owl:inferred-class:: bc:VirtualObject
 
 ### Domain & Architecture
-	- belongsToDomain:: [[CryptographicDomain]]
+	- belongsToDomain:: [[CryptographicDomain]], [[DisruptiveTechDomain]]
 	- maturity:: mature
 
 ### Relationships
@@ -35,9 +35,7 @@ id:: relationships
   - #### Relationships
     - is-subclass-of:: [[Networkcomponent]]
     - is-subclass-of:: [[BlockchainEntity]]
-    - is-required-by:: [[DistributedLedgerTechnologyDlt]]
-    - is-subclass-of:: [[Networkcomponent]]
-    - is-subclass-of:: [[BlockchainEntity]]
-    - is-required-by:: [[DistributedLedgerTechnologyDlt]]
-    id:: relationships
     - uses-data-structure:: [[Blockchain Network]]
+      collapsed:: true
+      - #### Inverse Relationships (Inferred by Reasoner)
+        - DistributedLedgerTechnologyDlt requires Peer-to-Peer Network

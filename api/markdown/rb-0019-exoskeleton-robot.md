@@ -10,4 +10,4 @@ id:: rb-0019-exoskeleton-robot-ontology
   - owl:class:: rb:ExoskeletonRobot
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

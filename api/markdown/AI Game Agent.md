@@ -18,11 +18,11 @@
 	- owl:inferred-class:: ai:VirtualAgent
 
 ### Domain & Architecture
-	- belongsToDomain:: [[AI-GroundedDomain]], [[InteractionDomain]], [[CreativeMediaDomain]]
+	- belongsToDomain:: [[AI-GroundedDomain]], [[DisruptiveTechDomain]], [[InteractionDomain]], [[CreativeMediaDomain]]
 	- maturity:: mature
 
 ### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 - is-subclass-of:: [[AIAgentSystem]]
 
 ### Quality Metrics

@@ -4,7 +4,7 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-10002
-	- source-domain:: metaverse
+	- source-domain:: mv
 	- preferred-term:: Performance Benchmarks
 	- status:: active
 	- definition:: Standardized tests and metrics used to evaluate and compare software, hardware, or system performance under controlled conditions, measuring factors such as response time, throughput, resource utilization, and error rates.

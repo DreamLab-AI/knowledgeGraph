@@ -8,6 +8,7 @@ id:: network-topology-ontology
   - preferred-term:: Network Topology
   - source-domain:: bc
   - owl:class:: bc:NetworkTopology
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Node connection structure within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

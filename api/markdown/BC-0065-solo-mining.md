@@ -8,6 +8,7 @@ id:: solo-mining-ontology
   - preferred-term:: Solo Mining
   - source-domain:: bc
   - owl:class:: bc:SoloMining
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Individual miner operation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

@@ -5,10 +5,9 @@
 	- public-access:: true
 	- term-id:: TC-0001
 	- preferred-term:: tc 0001 video conferencing
-	- source-domain:: telecollaboration
+	- source-domain:: tc
 	- status:: draft
-	- definition:: ### Primary Definition
-**Video Conferencing** - Real-time synchronous communication technology enabling face-to-face interaction between geographically distributed participants through audio and video transmission.
+	- definition:: **Video Conferencing** - Real-time synchronous communication technology enabling face-to-face interaction between geographically distributed participants through audio and video transmission.
 	- maturity:: mature
 	- owl:class:: tc:VideoConferencing
 	- owl:physicality:: VirtualEntity
@@ -22,8 +21,7 @@
 	- tc:synchronicity:: synchronous
 
 - ## About tc 0001 video conferencing
-	- ### Primary Definition
-**Video Conferencing** - Real-time synchronous communication technology enabling face-to-face interaction between geographically distributed participants through audio and video transmission. A foundational telecollaboration infrastructure enabling visual presence and non-verbal communication cues essential for effective remote collaboration.
+	-
 	-
 	- ### Telecollaboration Context
 Classified as a core [[Synchronous Communication]] technology within the [[Telecollaboration]] domain. Video conferencing bridges geographic distance and enables medium-richness interaction compared to text-only or audio-only alternatives.
@@ -44,9 +42,6 @@ Classified as a core [[Synchronous Communication]] technology within the [[Telec
 - **Last Updated**: 2025-11-21
 
 ## Definition
-
-### Primary Definition
-**Video Conferencing** - Real-time synchronous communication technology enabling face-to-face interaction between geographically distributed participants through audio and video transmission.
 
 ### Telecollaboration Context
 Video conferencing is a foundational technology within the telecollaboration domain, enabling:

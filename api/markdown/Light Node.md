@@ -8,6 +8,7 @@ id:: light-node-ontology
   - preferred-term:: Light Node
   - source-domain:: bc
   - owl:class:: bc:LightNode
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Partial blockchain data node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

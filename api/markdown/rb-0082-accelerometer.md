@@ -7,12 +7,12 @@
 	- preferred-term:: rb 0082 accelerometer
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- owl:class:: rb:Accelerometer
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
+	- is-subclass-of:: [[Sensor Technology]]
 
 ## Metadata
 

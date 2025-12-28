@@ -4,7 +4,7 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9986
-	- source-domain:: metaverse
+	- source-domain:: mv
 	- preferred-term:: Non Linear Storytelling
 	- status:: active
 	- definition:: The craft and practice of creating narratives where story events can be experienced in multiple sequences through branching paths, player choices, or temporal manipulation, commonly used in video games, interactive fiction, and immersive experiences.

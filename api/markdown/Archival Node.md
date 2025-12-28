@@ -15,11 +15,12 @@
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: bc:VirtualObject
-	- belongsToDomain:: [[CryptographicDomain]]
+	- belongsToDomain:: [[CryptographicDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[SecurityLayer]]
 	- #### Relationships
 	  id:: archival-node-relationships
 	  collapsed:: true
+		- is-subclass-of:: [[Network Component]]
 		- uses-data-structure:: [[Blockchain Entity]]
 		- instance-of:: [[NetworkComponent]]
 

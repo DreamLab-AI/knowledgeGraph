@@ -11,4 +11,4 @@ AI-0444-embedded-ai-frameworks
   - owl:class:: ai:Ai0444EmbeddedAiFrameworks
 
 ### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]

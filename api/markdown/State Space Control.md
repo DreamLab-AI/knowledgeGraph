@@ -2,6 +2,7 @@
     - term-id:: DT-0149
     - source-domain:: tc
     - owl:class:: tc:StateSpaceControl
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - preferred-term:: State Space Control
     - ontology:: true
     - public-access:: true

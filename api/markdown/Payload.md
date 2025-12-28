@@ -7,12 +7,12 @@
 	- preferred-term:: Payload
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- owl:class:: rb:Payload
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
+	- is-subclass-of:: [[Robotics Systems]]
 
 ## The Core Problem
 

@@ -2,6 +2,7 @@
     - term-id:: DT-0154
     - source-domain:: tc
     - owl:class:: tc:TrajectoryControl
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - preferred-term:: Trajectory Control
     - ontology:: true
     - public-access:: true

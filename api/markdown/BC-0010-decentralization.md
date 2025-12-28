@@ -35,9 +35,7 @@ id:: relationships
   - #### Relationships
     - is-subclass-of:: [[Distributeddatastructure]]
     - is-subclass-of:: [[BlockchainEntity]]
-    - is-enabled-by:: [[DistributedArchitecture]]
-    - is-subclass-of:: [[Distributeddatastructure]]
-    - is-subclass-of:: [[BlockchainEntity]]
-    - is-enabled-by:: [[DistributedArchitecture]]
-    id:: relationships
     - uses-data-structure:: [[Blockchain]]
+      collapsed:: true
+      - #### Inverse Relationships (Inferred by Reasoner)
+        - DistributedArchitecture enables Decentralization

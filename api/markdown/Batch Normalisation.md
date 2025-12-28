@@ -9,7 +9,6 @@ id:: unknown-ontology
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:BatchNormalisation
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[TrainingMethod]]

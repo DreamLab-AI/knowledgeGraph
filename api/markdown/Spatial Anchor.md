@@ -15,7 +15,7 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:HybridObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[InteractionDomain]]
+	- belongsToDomain:: [[InteractionDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[NetworkLayer]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]

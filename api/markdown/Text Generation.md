@@ -12,7 +12,7 @@
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Process
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: text-generation-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[NLPTask]]

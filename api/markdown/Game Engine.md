@@ -17,7 +17,7 @@
 	- owl:inferred-class:: mv:VirtualObject
 
 ### Domain & Architecture
-	- belongsToDomain:: [[CreativeMediaDomain]], [[InfrastructureDomain]]
+	- belongsToDomain:: [[CreativeMediaDomain]], [[DisruptiveTechDomain]], [[InfrastructureDomain]]
 	- implementedInLayer:: [[PlatformLayer]]
 	- maturity:: mature
 
@@ -25,7 +25,9 @@
 id:: gameengine-relationships
 		- is-subclass-of:: [[Metaverse]]
 		- is-dependency-of:: [[Metaverse]]
-		- is-required-by:: [[Play-to-Earn (P2E)]], [[Virtual Production (VP)]], [[Open World]], [[AI Game Agent]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - Play-to-Earn (P2E), Virtual Production (VP), Open World, AI Game Agent require Game Engine
 		- has-part:: [[Rendering Pipeline]], [[Physics Engine]], [[Scene Graph]], [[Audio Engine]], [[Scripting Runtime]], [[Asset Management System]], [[Real-Time Rendering Pipeline]]
 		- is-part-of:: [[Software Platform]], [[Development Infrastructure]]
 		- requires:: [[Graphics API]], [[Compute Infrastructure]], [[Operating System]]

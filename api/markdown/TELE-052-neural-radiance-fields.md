@@ -12,6 +12,10 @@
 	- maturity:: developing
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Process
+	- #### Relationships
+	  id:: nerf-relationships
+	  collapsed:: true
+		- is-subclass-of:: [[Real-Time Rendering Pipeline]]
 
 ## Definition
 

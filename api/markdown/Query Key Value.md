@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: The three fundamental components in attention mechanisms: queries determine what information to seek, keys determine what information is available, and values contain the actual information to be retrieved.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: query-key-value-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[NeuralNetwork]]

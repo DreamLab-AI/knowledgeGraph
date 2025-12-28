@@ -15,7 +15,7 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:HybridObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[InfrastructureDomain]]
+	- belongsToDomain:: [[InfrastructureDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[PlatformLayer]]
 	- #### Relationships
 	  id:: digitaltwin-relationships

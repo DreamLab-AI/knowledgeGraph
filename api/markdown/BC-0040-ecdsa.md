@@ -8,6 +8,7 @@ id:: ecdsa-ontology
   - preferred-term:: ECDSA
   - source-domain:: bc
   - owl:class:: bc:Ecdsa
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Elliptic Curve Digital Signature Algorithm within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

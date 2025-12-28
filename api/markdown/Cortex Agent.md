@@ -2,6 +2,7 @@
     - term-id:: DT-8672
     - source-domain:: ai
     - owl:class:: ai:CortexAgent
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - preferred-term:: Cortex Agent
     - ontology:: true
     - public-access:: true

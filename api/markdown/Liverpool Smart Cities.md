@@ -5,6 +5,7 @@
 	- term-id:: DT-0006
 	- source-domain:: ngm
 	- preferred-term:: Liverpool Smart Cities
+	- is-subclass-of:: [[Smart City]]
 	- status:: active
 	- public-access:: true
 	- definition:: Liverpool's smart cities initiative and technology sector focusing on Internet of Things, urban technology, and digital infrastructure.
@@ -12,7 +13,7 @@
 	- owl:class:: mv:LiverpoolSmartCities
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: RegionalEcosystem
-	- belongsToDomain:: [[UKTechEcosystem]]
+	- belongsToDomain:: [[UKTechEcosystem]], [[DisruptiveTechDomain]]
 
 ## Liverpool Smart Cities
 

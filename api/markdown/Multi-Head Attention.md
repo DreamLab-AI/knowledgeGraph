@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: An extension of the attention mechanism that allows the model to jointly attend to information from different representation subspaces at different positions, using multiple attention heads in parallel.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: multi-head-attention-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AttentionMechanism]]

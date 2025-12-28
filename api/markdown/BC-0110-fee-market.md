@@ -9,7 +9,6 @@ id:: bc-0110-fee-market-ontology
   - source-domain:: bc
   - owl:class:: bc:Bc0110FeeMarket
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Transaction Fee]]

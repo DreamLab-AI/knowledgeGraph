@@ -8,6 +8,7 @@ id:: public-key-cryptography-ontology
   - preferred-term:: Public-Key Cryptography
   - source-domain:: bc
   - owl:class:: bc:PublicKeyCryptography
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Asymmetric encryption system within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

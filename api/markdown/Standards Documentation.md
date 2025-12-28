@@ -4,7 +4,7 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-10074
-	- source-domain:: metaverse
+	- source-domain:: mv
 	- preferred-term:: Standards Documentation
 	- status:: active
 	- definition:: Established guidelines, rules, and best practices that govern the creation of technical documentation, including structure, formatting conventions, terminology usage, delivery methods, and presentation to ensure consistency, clarity, and accuracy across all content.

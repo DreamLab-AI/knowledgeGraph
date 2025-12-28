@@ -8,6 +8,7 @@ id:: dispute-resolution-mechanism-ontology
   - preferred-term:: Dispute Resolution Mechanism
   - source-domain:: bc
   - owl:class:: bc:DisputeResolutionMechanism
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Agreed process and framework for resolving conflicts between metaverse participants through mediation, arbitration, or other structured resolution methods.
 

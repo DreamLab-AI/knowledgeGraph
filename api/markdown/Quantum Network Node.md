@@ -15,7 +15,7 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:PhysicalObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[InfrastructureDomain]], [[TrustAndGovernanceDomain]]
+	- belongsToDomain:: [[InfrastructureDomain]], [[DisruptiveTechDomain]], [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[Physical Layer]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]

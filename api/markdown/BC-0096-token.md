@@ -8,6 +8,7 @@ id:: token-ontology
   - preferred-term:: Token
   - source-domain:: bc
   - owl:class:: bc:Token
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: A token is a digital asset representation on a blockchain that confers specific rights, utility, or value to its holder, implemented as a cryptographically-secured unit that can be owned, transferred, and programmably controlled through smart contracts according to defined rules and protocols.
 

@@ -8,6 +8,7 @@ id:: mining-ontology
   - preferred-term:: Mining
   - source-domain:: bc
   - owl:class:: bc:Mining
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Proof-of-work block creation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

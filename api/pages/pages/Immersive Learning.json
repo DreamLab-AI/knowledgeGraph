@@ -9,17 +9,18 @@
     "Learning Component",
     "Virtual Field Trip",
     "Educational Narrative",
+    "Educational Technology",
     "Education Metaverse",
     "Knowledge Sharing",
     "Learning Resources",
     "tc-0003-telepresence-robot"
   ],
   "wiki_links": [
-    "Immersive Technology",
-    "Experiential Education",
     "metaverse",
+    "Immersive Technology",
+    "Educational Technology",
     "Learning Management System",
-    "Educational Technology"
+    "Experiential Education"
   ],
   "ontology": {
     "term_id": "MV-9926",

@@ -8,6 +8,7 @@ id:: digital-tax-compliance-node-ontology
   - preferred-term:: Digital Tax Compliance Node
   - source-domain:: bc
   - owl:class:: bc:DigitalTaxComplianceNode
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: An automated virtual system that calculates, reports, and ensures tax compliance for digital transactions across multiple jurisdictions in real-time.
 

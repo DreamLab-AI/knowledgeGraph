@@ -7,8 +7,7 @@
 	- preferred-term:: Workspace
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- owl:class:: rb:Workspace
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept

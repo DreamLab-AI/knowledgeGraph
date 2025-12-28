@@ -8,9 +8,11 @@ id:: eclipse-attack-ontology
   - preferred-term:: Eclipse Attack
   - source-domain:: bc
   - owl:class:: bc:EclipseAttack
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Node isolation attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 
 ### Relationships
+- is-subclass-of:: [[Security Vulnerability]]
 - uses-data-structure:: [[Blockchain Entity]]
 - instance-of:: [[NetworkComponent]]

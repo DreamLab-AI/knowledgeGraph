@@ -5,6 +5,7 @@
 	- term-id:: DT-0362
 	- source-domain:: ai
 	- owl:class:: ai:ImageGeneration
+	- belongsToDomain:: [[DisruptiveTechDomain]]
 	- preferred-term:: Image Generation
 	- status:: draft
 	- public-access:: true

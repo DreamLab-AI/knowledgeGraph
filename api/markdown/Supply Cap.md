@@ -2,6 +2,7 @@
     - term-id:: DT-0529
     - source-domain:: bc
     - owl:class:: bc:SupplyCap
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - preferred-term:: Supply Cap
     - ontology:: true
     - public-access:: true

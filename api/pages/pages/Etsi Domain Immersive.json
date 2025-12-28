@@ -7,10 +7,10 @@
     "Etsi Metaverse Domain Model"
   ],
   "wiki_links": [
-    "ETSI Standards",
-    "Documentation Standards",
     "Extended Reality Xr",
-    "Immersive Technology Standards"
+    "Documentation Standards",
+    "Immersive Technology Standards",
+    "ETSI Standards"
   ],
   "ontology": {
     "term_id": "MV-9896",

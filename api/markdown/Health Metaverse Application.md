@@ -8,6 +8,7 @@ id:: health-metaverse-application-ontology
   - preferred-term:: Health Metaverse Application
   - source-domain:: mv
   - owl:class:: mv:HealthMetaverseApplication
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A specialized virtual platform integrating healthcare delivery, medical training, therapeutic interventions, and patient engagement through immersive environments that comply with health data regulations and clinical standards.
 

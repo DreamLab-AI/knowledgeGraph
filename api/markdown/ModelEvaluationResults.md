@@ -12,7 +12,7 @@
 	- maturity:: emerging
 	- owl:class:: ai:ModelEvaluationResults
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: modelevaluationresults-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AI Metadata]]

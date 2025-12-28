@@ -9,8 +9,7 @@ id:: underfitting-ontology
   - source-domain:: mv
   - owl:class:: mv:Underfitting
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[ArtificialIntelligence]]
 - belongsToDomain:: [[MetaverseDomain]]

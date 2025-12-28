@@ -8,6 +8,7 @@ id:: avatar-interoperability-ontology
   - preferred-term:: Avatar Interoperability
   - source-domain:: mv
   - owl:class:: mv:AvatarInteroperability
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Capability enabling an avatar's identity, appearance, and behaviors to function seamlessly across multiple metaverse platforms and virtual environments.
 

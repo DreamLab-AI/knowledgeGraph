@@ -9,8 +9,7 @@ id:: autoencoder-ontology
   - source-domain:: mv
   - owl:class:: mv:Autoencoder
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[NeuralNetworkArchitecture]]
 - belongsToDomain:: [[MetaverseDomain]]

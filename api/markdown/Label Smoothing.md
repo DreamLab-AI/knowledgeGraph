@@ -9,6 +9,7 @@ id:: label-smoothing-ontology
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:LabelSmoothing
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - definition:: A regularisation technique that replaces hard one-hot labels with soft targets by allocating small probability mass to incorrect classes. Label smoothing prevents overconfident predictions and improves model calibration and generalisation.
 
 ### Relationships

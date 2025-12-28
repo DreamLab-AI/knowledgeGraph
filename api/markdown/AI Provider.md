@@ -12,7 +12,7 @@
 	- source:: [[EU AI Act Articles 16-17]], [[ISO/IEC 42001:2023]], [[OECD AI Principles]], [[UK AI Regulation]]
 	- maturity:: mature
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: ai-provider-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AIApplications]]

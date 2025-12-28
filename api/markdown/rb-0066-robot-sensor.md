@@ -10,4 +10,4 @@ id:: rb-0066-robot-sensor-ontology
   - owl:class:: rb:RobotSensor
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

@@ -10,16 +10,14 @@
 	- source-domain:: rb
 	- status:: draft
     - public-access:: true
-	- definition:: ### Primary Definition
-**Backlash** - Lost motion due to gaps in mechanical transmission
+	- definition:: **Backlash** - Lost motion due to gaps in mechanical transmission
 	- maturity:: draft
 	- owl:class:: rb:Backlash
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0040 backlash
-	- ### Primary Definition
-**Backlash** - Lost motion due to gaps in mechanical transmission
+	-
 	-
 	- ### Original Content
 	  collapsed:: true
@@ -37,9 +35,6 @@
 		  - **Last Updated**: 2025-10-28
 		  
 		  ## Definition
-		  
-		  ### Primary Definition
-		  **Backlash** - Lost motion due to gaps in mechanical transmission
 		  
 		  ### Standards Context
 		  Defined according to ISO 8373:2021 and related international robotics standards.

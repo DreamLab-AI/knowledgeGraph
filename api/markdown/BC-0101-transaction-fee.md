@@ -25,7 +25,7 @@ id:: relationships
     - is-subclass-of:: [[Token Economics]]
 
 - ## About BC 0101 transaction fee
-	- ### Primary Definition
+	-
 Payment for transaction processing within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 	-
 	- ### Original Content
@@ -45,8 +45,6 @@ Payment for transaction processing within blockchain systems, providing essentia
 		  - **Status**: Approved
 		
 		  ## Definition
-		
-		  ### Primary Definition
 		  Payment for transaction processing within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 		
 		  ### Technical Definition
@@ -329,7 +327,7 @@ Payment for transaction processing within blockchain systems, providing essentia
 
 ## Relationships
 
-- **is-subclass-of** [[bc:Tokenomics]] - owl:someValuesFrom
+- **is-subclass-of** [[Tokenomics]] - owl:someValuesFrom
 
 ## Metadata
 

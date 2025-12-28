@@ -8,6 +8,7 @@ id:: unknown-ontology
   - preferred-term:: Peer-to-Peer Network
   - source-domain:: bc
   - owl:class:: bc:PeerToPeerNetwork
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Decentralized communication within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

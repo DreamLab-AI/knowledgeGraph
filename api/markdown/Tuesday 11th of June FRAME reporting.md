@@ -10,7 +10,7 @@
 	- owl:class:: mv:FRAMEReportingFramework
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: MethodologicalFramework
-	- belongsToDomain:: [[HealthInformaticsDomain]]
+	- belongsToDomain:: [[HealthInformaticsDomain]], [[DisruptiveTechDomain]]
 
 ## FRAME Reporting Framework (Implementation Science)
 

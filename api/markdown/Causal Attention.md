@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: An attention mechanism where each position can only attend to earlier positions in the sequence, preventing information flow from future tokens, essential for autoregressive generation.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: causal-attention-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AttentionMechanism]]

@@ -8,6 +8,7 @@ id:: block-reward-ontology
   - preferred-term:: Block Reward
   - source-domain:: bc
   - owl:class:: bc:BlockReward
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Mining incentive payment within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

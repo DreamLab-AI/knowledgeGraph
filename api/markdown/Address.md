@@ -14,7 +14,7 @@
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: bc:VirtualObject
-	- belongsToDomain:: [[CryptographicDomain]]
+	- belongsToDomain:: [[CryptographicDomain]], [[DisruptiveTechDomain]]
 
 ### Relationships
 - is-subclass-of:: [[Blockchain]]

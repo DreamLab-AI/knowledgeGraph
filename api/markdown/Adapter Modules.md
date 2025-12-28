@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: Small neural network modules inserted between transformer layers that are trained whilst keeping the original model frozen. Adapter modules provide a parameter-efficient way to adapt pre-trained models to new tasks by learning task-specific transformations without modifying the base model.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: adapter-modules-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[ArtificialIntelligence]]

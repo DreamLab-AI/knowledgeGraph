@@ -14,4 +14,5 @@
 	- owl:physicality:: HybridEntity
 	- owl:role:: Object
 	- owl:inferred-class:: bc:HybridObject
-	- belongsToDomain:: [[EconomicSystemDomain]]
+	- belongsToDomain:: [[EconomicSystemDomain]], [[DisruptiveTechDomain]]
+	- is-subclass-of:: [[Token Economics]]

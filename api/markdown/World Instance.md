@@ -7,8 +7,7 @@
 	- preferred-term:: World Instance
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- owl:class:: mv:WorldInstance
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept

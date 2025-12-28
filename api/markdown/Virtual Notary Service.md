@@ -8,6 +8,7 @@ id:: virtual-notary-service-ontology
   - preferred-term:: Virtual Notary Service
   - source-domain:: bc
   - owl:class:: bc:VirtualNotaryService
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Autonomous agent providing cryptographic attestation, timestamping, and verification services for digital documents and transactions through distributed ledger anchoring and automated certification protocols.
 
@@ -33,7 +34,9 @@ id:: virtual-notary-service-ontology
 - enables:: [[Audit Trail]]
 - enables:: [[Provenance Verification]]
 - enables:: [[Trusted Timestamping]]
-- is-enabled-by:: [[Distributed Ledger Technology (DLT)]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Distributed Ledger Technology (DLT) enables Virtual Notary Service
 - depends-on:: [[Consensus Protocol]]
 - depends-on:: [[Digital Certificate]]
 - depends-on:: [[SmartContract]]

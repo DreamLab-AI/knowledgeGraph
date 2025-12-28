@@ -8,6 +8,7 @@ id:: identity-federation-ontology
   - preferred-term:: Identity Federation
   - source-domain:: mv
   - owl:class:: mv:IdentityFederation
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A distributed authentication workflow that enables cross-domain identity linking through trust relationships, allowing users to access resources across multiple organizations using a single set of credentials.
 
@@ -29,8 +30,10 @@ id:: identity-federation-ontology
 - enables:: [[B2B Collaboration]]
 - enables:: [[Decentralized Identity]]
 - enables:: [[Cross-Domain SSO]]
-- is-required-by:: [[Multiverse]]
-- is-enabled-by:: [[Identity Provider (IdP)]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Multiverse requires Identity Federation
+    - Identity Provider (IdP) enables Identity Federation
 - depends-on:: [[Federation Agreement]]
 - depends-on:: [[Attribute Schema]]
 - depends-on:: [[Security Token]]

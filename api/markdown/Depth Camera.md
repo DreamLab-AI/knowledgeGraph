@@ -5,11 +5,11 @@
 	- term-id:: DT-1050
 	- source-domain:: mv
 	- owl:class:: mv:DepthCamera
+	- belongsToDomain:: [[DisruptiveTechDomain]]
 	- preferred-term:: Depth Camera
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 
 ## Academic Context
 

@@ -8,6 +8,7 @@ id:: networking-layer-ontology
   - preferred-term:: Networking Layer
   - source-domain:: mv
   - owl:class:: mv:NetworkingLayer
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Communication systems that connect components and users across distributed metaverse environments through network protocols and software.
 
@@ -25,7 +26,9 @@ id:: networking-layer-ontology
 - enables:: [[Real-time Communication]]
 - enables:: [[Distributed Computing]]
 - enables:: [[Cross-Platform Connectivity]]
-- is-required-by:: [[Platform Layer]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Platform Layer requires Networking Layer
 - depends-on:: [[OSI Model]]
 - depends-on:: [[Network Topology]]
 - depends-on:: [[TCP/IP Stack]]

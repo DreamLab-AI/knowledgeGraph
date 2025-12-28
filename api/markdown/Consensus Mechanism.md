@@ -64,7 +64,9 @@
   - #### Relationships
     id:: bc-0584-relationships
     - inverse-is-subclass-of:: [[ProofBasedConsensus]]
-    - is-required-by:: [[CollectiveIntelligenceSystem]]
+      collapsed:: true
+      - #### Inverse Relationships (Inferred by Reasoner)
+        - CollectiveIntelligenceSystem requires Consensus Mechanism
     - inverse-is-subclass-of:: [[HybridConsensus]]
     - inverse-depends-on:: [[CommunityGovernanceModel]]
 

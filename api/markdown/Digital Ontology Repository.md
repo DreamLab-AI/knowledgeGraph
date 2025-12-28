@@ -3,7 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0127
-	- source-domain:: data
+	- source-domain:: mv
 	- preferred-term:: Digital Ontology Repository
 	- status:: draft
 	- public-access:: true
@@ -15,11 +15,12 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[ComputationAndIntelligenceDomain]], [[TrustAndGovernanceDomain]]
+	- belongsToDomain:: [[ComputationAndIntelligenceDomain]], [[DisruptiveTechDomain]], [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[DataLayer]], [[MiddlewareLayer]]
 	- #### Relationships
 	  id:: digital-relationships-repository-relationships
 	  collapsed:: true
+		- is-subclass-of:: [[Metaverse Infrastructure]]
 		- has-part:: [[Ontology Storage System]]
 		- has-part:: [[Metadata Registry]]
 		- has-part:: [[Access Control System]]

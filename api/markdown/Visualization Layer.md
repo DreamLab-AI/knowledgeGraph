@@ -8,6 +8,7 @@ id:: visualization-layer-ontology
   - preferred-term:: Visualization Layer
   - source-domain:: mv
   - owl:class:: mv:VisualizationLayer
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Graphics and rendering systems responsible for displaying virtual environments, objects, and interfaces through advanced rendering pipelines and visual processing.
 

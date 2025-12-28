@@ -10,16 +10,14 @@
 	- source-domain:: rb
 	- status:: draft
     - public-access:: true
-	- definition:: ### Primary Definition
-**Wheeled Mobile Robot** - Wheeled Mobile Robot in robotics systems
+	- definition:: **Wheeled Mobile Robot** - Wheeled Mobile Robot in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:WheeledMobileRobot
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0012 wheeled mobile robot
-	- ### Primary Definition
-**Wheeled Mobile Robot** - Wheeled Mobile Robot in robotics systems
+	-
 	-
 	- ### Original Content
 	  collapsed:: true
@@ -37,9 +35,6 @@
 		  - **Last Updated**: 2025-10-28
 		  
 		  ## Definition
-		  
-		  ### Primary Definition
-		  **Wheeled Mobile Robot** - Wheeled Mobile Robot in robotics systems
 		  
 		  ### Standards Context
 		  Defined according to ISO 3691-4:2020 and related international robotics standards.

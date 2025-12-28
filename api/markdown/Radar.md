@@ -9,8 +9,7 @@ id:: rb-0080-radar-ontology
   - source-domain:: mv
   - owl:class:: mv:Radar
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Extended Reality (XR)]]
 - belongsToDomain:: [[MetaverseDomain]]

@@ -8,6 +8,7 @@ id:: zero-knowledge-proof-ontology
   - preferred-term:: Zero-Knowledge Proof
   - source-domain:: bc
   - owl:class:: bc:ZeroKnowledgeProof
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Privacy-preserving verification within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

@@ -1,0 +1,87 @@
+{
+  "id": "Data Management",
+  "title": "Data Management",
+  "content": "- ### OntologyBlock\n  id:: data-management-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0603\n\t- preferred-term:: Data Management\n\t- source-domain:: mv\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Data Management in metaverse contexts refers to the handling, storage, organisation, and governance of the diverse data types generated within virtual environments. This includes 3D asset data formats, scene graphs, user interaction data, spatial coordinates, and metadata management for interoperable virtual world content.\n\t- owl:class:: mv:DataManagement\n\t- belongsToDomain:: [[Metaverse Technology]]\n\t- #### Relationships\n\t  id:: data-management-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse Technology]]\n\t\t- is-parent-of:: [[3D Data Format]]\n\t\t- is-parent-of:: [[Asset Management]]\n\t\t- is-parent-of:: [[Metadata Management]]\n\t\t- related-to:: [[Standards]]",
+  "backlinks": [
+    "Metadata Repository",
+    "Data Integration Interface",
+    "Data Provenance",
+    "Schema Registry",
+    "Data Fabric Architecture",
+    "ETSI_Domain_Data_Management___Creative",
+    "Training Data Repository",
+    "ETSI_Domain_Data_Management___Ethics",
+    "ETSI_Domain_Data_Mgmt___Security",
+    "Telemetry & Analytics",
+    "Bim Software",
+    "Digital Repository",
+    "Storage Layer",
+    "ETSI_Domain_Data_Management___Culture",
+    "ETSI_Domain_Data_Mgmt___AI"
+  ],
+  "wiki_links": [
+    "Asset Management",
+    "Standards",
+    "Metadata Management",
+    "3D Data Format",
+    "Metaverse Technology"
+  ],
+  "ontology": {
+    "term_id": "MV-0603",
+    "preferred_term": "Data Management",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/metaverse#DataManagement",
+    "source_domain": "mv",
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
+    "definition": "Data Management in metaverse contexts refers to the handling, storage, organisation, and governance of the diverse data types generated within virtual environments. This includes 3D asset data formats, scene graphs, user interaction data, spatial coordinates, and metadata management for interoperable virtual world content.",
+    "scope_note": null,
+    "status": "active",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "mv:DataManagement",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Metaverse Technology"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Metaverse Technology"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "other_relationships": {
+      "is-parent-of": [
+        "3D Data Format",
+        "Asset Management",
+        "Metadata Management"
+      ],
+      "related-to": [
+        "Standards"
+      ]
+    },
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

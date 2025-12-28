@@ -15,8 +15,7 @@
 	- owl:role:: Object
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0010 aerial robot
-	- ### Primary Definition
-**Aerial Robot** - Aerial Robot in robotics systems
+	-
 	-
 	- ### Original Content
 	  collapsed:: true
@@ -34,9 +33,6 @@
 		  - **Last Updated**: 2025-10-28
 		  
 		  ## Definition
-		  
-		  ### Primary Definition
-		  **Aerial Robot** - Aerial Robot in robotics systems
 		  
 		  ### Standards Context
 		  Defined according to ISO 21384-1:2019 and related international robotics standards.

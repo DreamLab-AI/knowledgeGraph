@@ -12,8 +12,8 @@
 	- maturity:: established
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships
-- is-subclass-of:: [[mv:ArtificialIntelligence]]
-- is-subclass-of:: [[mv:ArtificialIntelligence]] ; bridge to metaverse
+- is-subclass-of:: [[ArtificialIntelligence]]
+- is-subclass-of:: [[ArtificialIntelligence]] ; bridge to metaverse
 	  id:: algorithm-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[MachineLearning]]

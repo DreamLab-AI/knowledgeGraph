@@ -6,6 +6,7 @@
 	- preferred-term:: Confusion Matrix
 	- source-domain:: mv
 	- owl:class:: mv:ConfusionMatrix
+	- belongsToDomain:: [[DisruptiveTechDomain]]
 	- status:: draft
 	- public-access:: true
 

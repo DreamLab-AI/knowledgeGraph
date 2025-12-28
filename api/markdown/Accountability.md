@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: The assignment of clear responsibilities for AI system development, deployment, and outcomes, coupled with mechanisms for oversight, redress, and remediation, ensuring that actors can be held answerable for system impacts and failures.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: accountability-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[Metaverse]]
@@ -19,11 +19,13 @@
 		- enables:: [[Compliance]]
 		- enables:: [[Risk Management (AI-0078)]]
 		- enables:: [[Trust]]
-		- is-enabled-by:: [[Compliance Audit Trail]]
-		- is-enabled-by:: [[Human Oversight]]
-		- is-enabled-by:: [[AI Impact Assessment]]
-		- is-enabled-by:: [[Human-in-the-Loop]]
-		- is-enabled-by:: [[Audit Trail]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - Compliance Audit Trail enables Accountability
+	    - Human Oversight enables Accountability
+	    - AI Impact Assessment enables Accountability
+	    - Human-in-the-Loop enables Accountability
+	    - Audit Trail enables Accountability
 
 ## OWL Formal Semantics
 
@@ -620,6 +622,8 @@ Transparency regarding incidents improved substantially: whereas historically or
 	- #### Relationships
 	  id:: accountability-relationships
 		- is-subclass-of:: [[Metaverse]]
-		- is-enabled-by:: [[Human-in-the-Loop]], [[AI Impact Assessment]], [[Compliance Audit Trail]], [[Audit Trail]], [[Human Oversight]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - Human-in-the-Loop, AI Impact Assessment, Compliance Audit Trail, Audit Trail, Human Oversight enable Accountability
 		- requires:: [[Transparency (AI-0062)]], [[Explainability (AI-0063)]]
 		- enables:: [[Trust]], [[Compliance]], [[Risk Management (AI-0078)]]

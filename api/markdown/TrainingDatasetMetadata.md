@@ -12,7 +12,7 @@
 	- maturity:: emerging
 	- owl:class:: ai:TrainingDatasetMetadata
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: trainingdatasetmetadata-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AI Metadata]]

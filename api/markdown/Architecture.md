@@ -14,5 +14,5 @@
 
 ### Relationships
 
-- is-subclass-of:: [[mv:ArtificialIntelligence]]
-- is-subclass-of:: [[mv:ArtificialIntelligence]]
+- is-subclass-of:: [[ArtificialIntelligence]]
+- is-subclass-of:: [[ArtificialIntelligence]]

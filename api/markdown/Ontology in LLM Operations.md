@@ -12,4 +12,4 @@ id:: ontology-llm-operations-ontology
   - definition:: The application of formal knowledge representation systems (OWL 2, SHACL, SPARQL) to provide schema-grounded layers that make retrieval, reasoning, outputs, and monitoring in large language model pipelines more deterministic, auditable, and controllable than text-only or pure vector-based approaches.
 
 ### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]

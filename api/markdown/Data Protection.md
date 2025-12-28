@@ -15,7 +15,7 @@
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[TrustAndGovernanceDomain]]
+	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[Middleware Layer]], [[Application Layer]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]
@@ -38,7 +38,9 @@
 		- enables:: [[Secure Data Sharing]]
 		- enables:: [[Data Sovereignty]]
 		- enables:: [[Data Privacy]]
-		- is-enabled-by:: [[Security Layer]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - Security Layer enables Data Protection
 		- is-dependency-of:: [[Data Anonymization Pipeline]]
 		- depends-on:: [[Risk Assessment]]
 		- depends-on:: [[Security Policy]]

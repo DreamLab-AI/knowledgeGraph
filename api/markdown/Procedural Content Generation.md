@@ -15,7 +15,7 @@
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[CreativeMediaDomain]]
+	- belongsToDomain:: [[CreativeMediaDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[ComputeLayer]], [[DataLayer]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]
@@ -34,7 +34,9 @@
 		- enables:: [[Automated Asset Creation]]
 		- enables:: [[Dynamic Environments]]
 		- enables:: [[Unique Content Variation]]
-		- is-enabled-by:: [[Game Engine]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - Game Engine enables Procedural Content Generation
 		- depends-on:: [[L-Systems]]
 		- depends-on:: [[Fractal Algorithms]]
 		- depends-on:: [[Machine Learning Models]]

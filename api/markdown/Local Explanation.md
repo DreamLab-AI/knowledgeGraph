@@ -5,6 +5,7 @@
 	- term-id:: DT-1009
 	- source-domain:: ai
 	- owl:class:: ai:LocalExplanation
+	- belongsToDomain:: [[DisruptiveTechDomain]]
 	- preferred-term:: Local Explanation
 	- status:: draft
 	- public-access:: true

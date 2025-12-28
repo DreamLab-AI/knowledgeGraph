@@ -15,7 +15,7 @@
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: unknown-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AISecurity]]

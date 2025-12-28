@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: A parameter-efficient fine-tuning technique that prepends trainable continuous vectors (prefixes) to the key and value matrices at each transformer layer, whilst keeping the pre-trained model parameters frozen. Unlike prompt tuning which only modifies input embeddings, prefix tuning affects attention computation at every layer.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: prefix-tuning-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[TrainingMethod]]

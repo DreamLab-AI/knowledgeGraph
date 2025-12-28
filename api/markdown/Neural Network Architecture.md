@@ -12,8 +12,8 @@
 	- owl:class:: ai:NeuralNetworkArchitecture
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships
-- is-subclass-of:: [[ai:ArtificialIntelligence]]
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ArtificialIntelligence]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: neuralnetworkarchitecture-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[DeepLearning]]

@@ -9,8 +9,7 @@ id:: optimiser-ontology
   - source-domain:: mv
   - owl:class:: mv:Optimiser
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[ArtificialIntelligence]]
 - belongsToDomain:: [[MetaverseDomain]]

@@ -9,8 +9,7 @@ id:: rb-0074-gps-ontology
   - source-domain:: rb
   - owl:class:: rb:GPS
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Robotics]]
 - belongsToDomain:: [[RoboticsDomain]]

@@ -12,7 +12,7 @@
 	- source:: [[Chen et al. 2020 SimCLR]], [[He et al. 2020 MoCo]], [[Radford et al. 2021 CLIP]], [[Gao et al. 2021 SimCSE]]
 	- maturity:: mature
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: contrastive-learning-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[MachineLearning]]

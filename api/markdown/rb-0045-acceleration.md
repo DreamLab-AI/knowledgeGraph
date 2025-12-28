@@ -9,8 +9,7 @@ id:: rb-0045-acceleration-ontology
   - source-domain:: rb
   - owl:class:: rb:Acceleration
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Robotics]]
 - belongsToDomain:: [[RoboticsDomain]]

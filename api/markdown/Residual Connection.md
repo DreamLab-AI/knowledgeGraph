@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: A neural network connection that adds the input of a layer to its output, enabling gradient flow in deep networks and facilitating training of very deep architectures.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: residual-connection-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[NeuralNetwork]]

@@ -8,6 +8,7 @@ id:: metaverse-content-pipeline-ontology
   - preferred-term:: Metaverse Content Pipeline
   - source-domain:: mv
   - owl:class:: mv:MetaverseContentPipeline
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: End-to-end workflow connecting asset creation, optimization, storage, distribution, and real-time rendering for metaverse experiences across platforms.
 

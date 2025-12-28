@@ -5,26 +5,29 @@
   "backlinks": [
     "Virtual Environment Specification",
     "Open World",
+    "TELE-301-virtual-office-spaces",
     "Virtual Location",
     "Virtual Interaction Logging",
     "Extended Reality (XR)",
     "Shared Virtual World",
     "Virtual Destination",
+    "Virtual Production",
     "Virtual Environment Connectivity",
     "Virtual Classroom",
     "Collaborative Learning",
     "Collective Learning",
+    "Educational Technology",
     "Metaverse Venue",
     "Virtual Clinic",
     "Virtual World Platform"
   ],
   "wiki_links": [
+    "metaverse",
+    "Virtual Reality",
+    "3D Models",
     "Metaverse",
     "Digital Twin",
-    "Virtual Reality",
-    "Augmented Reality",
-    "metaverse",
-    "3D Models"
+    "Augmented Reality"
   ],
   "ontology": {
     "term_id": "MV-10122",

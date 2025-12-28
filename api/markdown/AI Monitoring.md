@@ -12,7 +12,7 @@
 	- source:: [[ISO/IEC 42001:2023]], [[EU AI Act Article 72]], [[NIST AI RMF]], [[ISO 42005:2024]]
 	- maturity:: mature
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: ai-monitoring-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AIGovernance]]

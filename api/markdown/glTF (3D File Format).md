@@ -8,6 +8,7 @@ id:: gltf-3d-file-format-ontology
   - preferred-term:: glTF (3D File Format)
   - source-domain:: mv
   - owl:class:: mv:Gltf3dFileFormat
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A royalty-free, open-standard 3D asset transmission format developed by Khronos Group that efficiently specifies scene structure, geometry, materials, animations, and other properties for real-time rendering.
 

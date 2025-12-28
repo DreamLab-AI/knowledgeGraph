@@ -13,7 +13,7 @@
     - ontology:: true
     - term-id:: DT-0929
     - preferred-term:: Proof of Work
-    - source-domain:: blockchain
+    - source-domain:: bc
     - status:: complete
     - version:: 1.0.0
     - last-updated:: 2025-10-28
@@ -29,7 +29,7 @@
     - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
-    - belongsToDomain:: [[ConsensusDomain]]
+    - belongsToDomain:: [[ConsensusDomain]], [[DisruptiveTechDomain]]
     - implementedInLayer:: [[ProtocolLayer]]
 
   - #### Relationships

@@ -12,6 +12,7 @@
 	- maturity:: developing
 	- owl:physicality:: PhysicalEntity
 	- owl:role:: Object
+	- is-subclass-of:: [[Haptic Technology]]
 
 ## Definition
 

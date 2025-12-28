@@ -8,14 +8,13 @@
 	- owl:class:: ai:ActivationFunction
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- owl:class:: mv:ActivationFunction
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: unknown-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[NeuralNetwork]]

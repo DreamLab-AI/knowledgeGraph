@@ -7,8 +7,7 @@
 	- preferred-term:: Stiffness
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- owl:class:: rb:Stiffness
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept

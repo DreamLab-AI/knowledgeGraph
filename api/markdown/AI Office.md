@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: Commission body established as the centre of AI expertise forming the foundation for a single European AI governance system, with primary responsibility for supervising general-purpose AI models and coordinating market surveillance.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: ai-office-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AIGovernance]]

@@ -11,4 +11,4 @@ AI-0437-federated-edge-learning
   - owl:class:: ai:Ai0437FederatedEdgeLearning
 
 ### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]

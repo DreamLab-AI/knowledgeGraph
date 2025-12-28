@@ -11,4 +11,4 @@ AI-0439-real-time-inference-edge
   - owl:class:: ai:Ai0439RealTimeInferenceEdge
 
 ### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]

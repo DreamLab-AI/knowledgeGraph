@@ -39,7 +39,9 @@
   - inverse-of:: [[RB-1006-inverse-kinematics]]
   - uses:: [[Transformation Matrix]], [[Homogeneous Coordinates]]
   - enables:: [[Robot Simulation]], [[Motion Visualization]]
-  - required-by:: [[RB-1007-trajectory-generation]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - RB-1007-trajectory-generation requires Forward Kinematics
   - applied-to:: [[RB-0003-manipulator]]
 
 - **Mathematical Foundation**

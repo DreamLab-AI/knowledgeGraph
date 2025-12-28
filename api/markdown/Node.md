@@ -22,7 +22,7 @@ id:: mv-83431247778
 	- owl:inferred-class:: bc:VirtualObject
 
 ### Domain & Architecture
-- belongsToDomain:: [[CryptographicDomain]]
+- belongsToDomain:: [[CryptographicDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[SecurityLayer]], [[NetworkLayer]]
 	- maturity:: mature
 

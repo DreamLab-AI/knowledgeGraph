@@ -8,6 +8,7 @@ id:: glossary-index-ontology
   - preferred-term:: Glossary Index
   - source-domain:: mv
   - owl:class:: mv:GlossaryIndex
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A centralized terminology reference system that aggregates, defines, and cross-references all metaverse concepts with their synonyms, abbreviations, and semantic relationships, serving as the human-readable interface to the formal ontology schema.
 

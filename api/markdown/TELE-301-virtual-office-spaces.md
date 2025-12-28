@@ -12,6 +12,10 @@
 	- maturity:: developing
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
+	- #### Relationships
+	  id:: virtual-office-spaces-relationships
+	  collapsed:: true
+		- is-subclass-of:: [[Virtual Environment]]
 
 ## Definition
 

@@ -8,6 +8,7 @@ id:: avatar-ontology
   - preferred-term:: Avatar
   - source-domain:: mv
   - owl:class:: mv:Avatar
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Digital representation of a person or agent used to interact within a virtual environment.
 

@@ -10,16 +10,14 @@
 	- source-domain:: rb
 	- status:: draft
     - public-access:: true
-	- definition:: ### Primary Definition
-**Robot Joint** - Articulation between robot links allowing relative motion
+	- definition:: **Robot Joint** - Articulation between robot links allowing relative motion
 	- maturity:: draft
 	- owl:class:: rb:RobotJoint
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0026 robot joint
-	- ### Primary Definition
-**Robot Joint** - Articulation between robot links allowing relative motion
+	-
 	-
 	- ### Original Content
 	  collapsed:: true
@@ -37,9 +35,6 @@
 		  - **Last Updated**: 2025-10-28
 		  
 		  ## Definition
-		  
-		  ### Primary Definition
-		  **Robot Joint** - Articulation between robot links allowing relative motion
 		  
 		  ### Standards Context
 		  Defined according to ISO 8373:2021 and related international robotics standards.

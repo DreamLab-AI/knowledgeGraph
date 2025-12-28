@@ -8,6 +8,7 @@ id:: digital-jurisdiction-ontology
   - preferred-term:: Digital Jurisdiction
   - source-domain:: bc
   - owl:class:: bc:DigitalJurisdiction
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A legally recognized framework defining the boundaries of authority, regulatory control, and legal enforcement within virtual spaces, establishing which laws apply to activities, transactions, and disputes occurring in digital environments.
 

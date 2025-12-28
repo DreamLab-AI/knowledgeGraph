@@ -11,9 +11,9 @@ id:: generativemodel-ontology
   - status:: deprecated
 
 ### Relationships
-- is-subclass-of:: [[mv:MachineLearning]]
-- is-subclass-of:: [[mv:MachineLearning]]
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[MachineLearning]]
+- is-subclass-of:: [[MachineLearning]]
+- is-subclass-of:: [[ModelArchitecture]]
 - is-subclass-of:: [[DeepLearning]]
 
 ### DEPRECATED

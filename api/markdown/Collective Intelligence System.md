@@ -15,7 +15,7 @@
 	- owl:role:: Agent
 	- owl:inferred-class:: mv:VirtualAgent
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[ComputationAndIntelligenceDomain]]
+	- belongsToDomain:: [[ComputationAndIntelligenceDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]

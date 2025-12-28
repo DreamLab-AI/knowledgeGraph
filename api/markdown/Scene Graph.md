@@ -8,6 +8,7 @@ id:: scene-graph-ontology
   - preferred-term:: Scene Graph
   - source-domain:: mv
   - owl:class:: mv:SceneGraph
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A hierarchical tree-based data structure organizing and describing the spatial, logical, and rendering relationships among objects in a 3D scene, enabling efficient traversal, culling, and rendering operations.
 
@@ -32,7 +33,9 @@ id:: scene-graph-ontology
 - enables:: [[Scene Rendering]]
 - enables:: [[Frustum Culling]]
 - enables:: [[Collision Detection]]
-- is-required-by:: [[Real-Time Rendering Pipeline]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Real-Time Rendering Pipeline requires Scene Graph
 - depends-on:: [[Graphics API]]
 - depends-on:: [[Rendering Pipeline]]
 - depends-on:: [[Coordinate System]]

@@ -3,7 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0225
-	- source-domain:: data
+	- source-domain:: mv
 	- preferred-term:: Environmental Sustainability Label
 	- status:: draft
 	- public-access:: true
@@ -15,11 +15,12 @@
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[TrustAndGovernanceDomain]]
+	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[Middleware Layer]]
 	- #### Relationships
 	  id:: environmental-sustainability-label-relationships
 	  collapsed:: true
+		- is-subclass-of:: [[Metaverse Technology]]
 		- is-part-of:: [[Sustainability Compliance System]]
 		- is-part-of:: [[Governance Framework]]
 		- has-part:: [[Compliance Verification]]

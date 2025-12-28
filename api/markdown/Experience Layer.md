@@ -8,6 +8,7 @@ id:: experience-layer-ontology
   - preferred-term:: Experience Layer
   - source-domain:: mv
   - owl:class:: mv:ExperienceLayer
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: User-facing architectural layer responsible for rendering immersive content, managing user interactions, and delivering cohesive UX/UI across metaverse environments.
 

@@ -10,8 +10,10 @@
 ### Relationships
 - is-subclass-of:: [[Ensemble Methods]]
 - is-subclass-of:: [[Machine Learning]]
-- has-subclass:: [[AdaBoost]]
-- has-subclass:: [[Gradient Boosting]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - AdaBoost is-subclass-of Boosting
+    - Gradient Boosting is-subclass-of Boosting
 - skos:related:: [[XGBoost]]
 - skos:related:: [[LightGBM]]
 - skos:related:: [[CatBoost]]

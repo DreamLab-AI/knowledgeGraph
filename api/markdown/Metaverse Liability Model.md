@@ -8,6 +8,7 @@ id:: metaverse-liability-model-ontology
   - preferred-term:: Metaverse Liability Model
   - source-domain:: mv
   - owl:class:: mv:MetaverseLiabilityModel
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A comprehensive legal responsibility framework for virtual worlds that defines liability attribution, responsibility allocation, and harm redress mechanisms across platforms, users, AI agents, and content creators in metaverse environments.
 

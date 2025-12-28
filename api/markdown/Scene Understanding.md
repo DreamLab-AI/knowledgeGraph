@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: Scene Understanding is the high-level semantic interpretation of visual and sensor data to comprehend the structure, context, objects, relationships, and dynamics of an environment. For autonomous systems, scene understanding involves recognising road types, lane configurations, traffic situations, pedestrian intentions, and environmental conditions to enable contextually appropriate decision-making beyond simple object detection.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: scene-understanding-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[ComputerVisionTask]]

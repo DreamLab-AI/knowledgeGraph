@@ -12,7 +12,7 @@
 	- owl:class:: ai:BehavioralModeling
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: behavioralmodeling-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[MachineLearning]]

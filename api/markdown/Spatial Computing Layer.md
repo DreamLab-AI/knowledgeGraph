@@ -8,6 +8,7 @@ id:: spatial-computing-layer-ontology
   - preferred-term:: Spatial Computing Layer
   - source-domain:: mv
   - owl:class:: mv:SpatialComputingLayer
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Computational layer linking digital and physical spaces through 3D mapping and context-aware processing for spatial awareness and interaction.
 

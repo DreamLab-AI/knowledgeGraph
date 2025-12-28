@@ -14,4 +14,4 @@
 
 ### Relationships
 
-- is-subclass-of:: [[ai:Component]]
+- is-subclass-of:: [[Component]]

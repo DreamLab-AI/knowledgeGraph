@@ -8,6 +8,7 @@ id:: censorship-resistance-ontology
   - preferred-term:: Censorship Resistance
   - source-domain:: bc
   - owl:class:: bc:CensorshipResistance
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Transaction inclusion guarantee within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

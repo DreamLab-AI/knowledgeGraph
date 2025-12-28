@@ -12,6 +12,7 @@
 	- maturity:: developing
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Process
+	- is-subclass-of:: [[Cryptocurrency]]
 
 ## Definition
 

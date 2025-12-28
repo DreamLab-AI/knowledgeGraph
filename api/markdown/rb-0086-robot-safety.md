@@ -10,4 +10,4 @@ id:: rb-0086-robot-safety-ontology
   - owl:class:: rb:RobotSafety
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

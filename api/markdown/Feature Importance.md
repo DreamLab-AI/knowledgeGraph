@@ -9,6 +9,7 @@ id:: feature-importance-ontology
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:FeatureImportance
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - definition:: Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs.
 
 ### Relationships

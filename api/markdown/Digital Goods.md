@@ -15,7 +15,7 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[VirtualEconomyDomain]]
+	- belongsToDomain:: [[VirtualEconomyDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]], [[ApplicationLayer]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]
@@ -34,7 +34,9 @@
 		- enables:: [[Creator Monetization]]
 		- enables:: [[User Ownership]]
 		- enables:: [[Asset Trading]]
-		- is-enabled-by:: [[Digital Asset Workflow]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - Digital Asset Workflow enables Digital Goods
 		- depends-on:: [[Digital Rights Management]]
 		- depends-on:: [[Asset Registry]]
 		- depends-on:: [[NFT Standards]]

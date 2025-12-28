@@ -7,6 +7,7 @@ id:: creator-economy-ontology
   - term-id:: DT-0260
   - source-domain:: bc
   - owl:class:: bc:CreatorEconomy
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - preferred-term:: Creator Economy
   - status:: draft
   - definition:: Ecosystem enabling individuals and organizations to design, build, and monetize virtual content and experiences through digital marketplaces, tokenization, and economic incentive structures.
@@ -29,7 +30,9 @@ id:: creator-economy-ontology
 - enables:: [[Royalty Distribution]]
 - enables:: [[Creator Monetization]]
 - enables:: [[NFT Minting]]
-- is-enabled-by:: [[Metaverse]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Metaverse enables Creator Economy
 - depends-on:: [[Content Licensing]]
 - depends-on:: [[Decentralized Exchange (DEX)]]
 - depends-on:: [[Virtual Currency]]

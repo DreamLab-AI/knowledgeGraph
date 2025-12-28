@@ -7,8 +7,7 @@
 	- source-domain:: rb
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- owl:class:: rb:VisualServoing
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept

@@ -1,14 +1,14 @@
 {
   "id": "Self Presence",
   "title": "Self Presence",
-  "content": "- ### OntologyBlock\n  id:: TC-9006\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-9006\n\t- source-domain:: tc\n\t- preferred-term:: Self Presence\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Subjective experience of embodiment and self-location in a mediated environment, feeling that one's virtual representation is an extension of oneself.\n\t- source:: [[Presence Research]], [[Avatar Psychology]]\n\t- maturity:: emerging\n\t- owl:class:: tc:SelfPresence\n\t- owl:physicality:: Abstract\n\t- owl:role:: Attribute\n\t- belongsToDomain:: [[TelecollaborationDomain]]\n\t- isSubclassOf:: [[Presence]]",
+  "content": "- ### OntologyBlock\n  id:: TC-9006\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-9006\n\t- source-domain:: tc\n\t- preferred-term:: Self Presence\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Subjective experience of embodiment and self-location in a mediated environment, feeling that one's virtual representation is an extension of oneself.\n\t- source:: [[Presence Research]], [[Avatar Psychology]]\n\t- maturity:: emerging\n\t- owl:class:: tc:SelfPresence\n\t- owl:physicality:: Abstract\n\t- owl:role:: Attribute\n\t- belongsToDomain:: [[TelecollaborationDomain]]\n\t- is-subclass-of:: [[Presence]]",
   "backlinks": [
     "Presence"
   ],
   "wiki_links": [
     "Presence",
-    "Avatar Psychology",
     "Presence Research",
+    "Avatar Psychology",
     "TelecollaborationDomain"
   ],
   "ontology": {

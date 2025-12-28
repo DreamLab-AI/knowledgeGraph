@@ -9,6 +9,7 @@ id:: hidden-state-ontology
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:HiddenState
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - definition:: The vector representation of a token or sequence at any layer in a neural network, encoding contextualised information learned by the model.
 
 ### Relationships

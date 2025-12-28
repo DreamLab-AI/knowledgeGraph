@@ -7,11 +7,11 @@
     "Education Metaverse"
   ],
   "wiki_links": [
-    "Immersive Learning",
-    "Virtual Reality",
-    "Distance Learning",
     "metaverse",
-    "Educational Technology"
+    "Virtual Reality",
+    "Educational Technology",
+    "Immersive Learning",
+    "Distance Learning"
   ],
   "ontology": {
     "term_id": "MV-10125",

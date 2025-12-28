@@ -14,7 +14,7 @@
 	- owl:role:: Principle
 	- definition:: The challenge and process of ensuring AI systems pursue objectives that align with human values, even as those systems become more capable and autonomous. Value alignment addresses both technical and philosophical questions about encoding human preferences into AI behaviour.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: value-alignment-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AIGovernance]]

@@ -7,12 +7,12 @@
 	- preferred-term:: rb 0032 manipulability
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- owl:class:: rb:Manipulability
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
+	- is-subclass-of:: [[Robot Kinematics]]
 
 ## Metadata
 

@@ -1,6 +1,6 @@
 - ### OntologyBlock
     - term-id:: DT-0562
-    - source-domain:: data
+    - source-domain:: mv
     - preferred-term:: Reputation-Based BFT
     - ontology:: true
     - public-access:: true

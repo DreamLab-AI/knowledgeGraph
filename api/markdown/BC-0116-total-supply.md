@@ -9,7 +9,6 @@ id:: bc-0116-total-supply-ontology
   - source-domain:: bc
   - owl:class:: bc:Bc0116TotalSupply
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Token Economics]]

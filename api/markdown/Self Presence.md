@@ -14,4 +14,4 @@
 	- owl:physicality:: Abstract
 	- owl:role:: Attribute
 	- belongsToDomain:: [[TelecollaborationDomain]]
-	- isSubclassOf:: [[Presence]]
+	- is-subclass-of:: [[Presence]]

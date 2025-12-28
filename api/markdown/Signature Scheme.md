@@ -8,6 +8,7 @@ id:: signature-scheme-ontology
   - preferred-term:: Signature Scheme
   - source-domain:: bc
   - owl:class:: bc:SignatureScheme
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Digital signature algorithm within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

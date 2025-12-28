@@ -9,6 +9,7 @@ id:: explainable-ai-xai-ontology
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:ExplainableAiXai
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - definition:: AI system designed to make its decision-making processes, reasoning, and outputs transparent and understandable to humans through interpretable models and explanations.
 
 ### Relationships

@@ -8,6 +8,7 @@ id:: governance-model-ontology
   - preferred-term:: Governance Model
   - source-domain:: mv
   - owl:class:: mv:GovernanceModel
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Framework of rules and decision-making processes defining authority and accountability within a metaverse ecosystem.
 

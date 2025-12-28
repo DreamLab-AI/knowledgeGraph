@@ -1,7 +1,7 @@
 {
   "id": "Knowledge Representation",
   "title": "Knowledge Representation",
-  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1001\n  - preferred-term:: Knowledge Representation\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:KnowledgeRepresentation\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]\n- has-subclass:: [[Expert Systems]]\n- has-subclass:: [[Semantic Networks]]\n- skos:related:: [[Logic Programming]]\n- skos:related:: [[Ontology]]\n- enables:: [[Reasoning Systems]]\n- enables:: [[Automated Planning]]\n\n### Definition\nKnowledge representation is the field of artificial intelligence concerned with representing information about the world in a form that computer systems can utilize to solve complex tasks. It involves structuring and encoding knowledge using formal languages, semantic networks, frames, rules, or logic-based systems to enable machines to reason, infer, and make decisions based on stored information.\n\n### Key Components\n- Symbolic representation schemes\n- Semantic networks and graphs\n- Frame-based systems\n- Rule-based representations\n- Description logics\n- Ontological engineering\n\n### Applications\n- Expert systems development\n- Question-answering systems\n- Intelligent agents\n- Knowledge-based reasoning\n- Automated decision-making",
+  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1001\n  - preferred-term:: Knowledge Representation\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:KnowledgeRepresentation\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]\n  collapsed:: true\n  - #### Inverse Relationships (Inferred by Reasoner)\n    - Expert Systems is-subclass-of Knowledge Representation\n    - Semantic Networks is-subclass-of Knowledge Representation\n- skos:related:: [[Logic Programming]]\n- skos:related:: [[Ontology]]\n- enables:: [[Reasoning Systems]]\n- enables:: [[Automated Planning]]\n\n### Definition\nKnowledge representation is the field of artificial intelligence concerned with representing information about the world in a form that computer systems can utilize to solve complex tasks. It involves structuring and encoding knowledge using formal languages, semantic networks, frames, rules, or logic-based systems to enable machines to reason, infer, and make decisions based on stored information.\n\n### Key Components\n- Symbolic representation schemes\n- Semantic networks and graphs\n- Frame-based systems\n- Rule-based representations\n- Description logics\n- Ontological engineering\n\n### Applications\n- Expert systems development\n- Question-answering systems\n- Intelligent agents\n- Knowledge-based reasoning\n- Automated decision-making",
   "backlinks": [
     "Fuzzy Logic",
     "Automated Planning",
@@ -14,12 +14,10 @@
   ],
   "wiki_links": [
     "Logic Programming",
-    "Semantic Networks",
-    "Expert Systems",
     "Artificial Intelligence",
+    "Ontology",
     "Automated Planning",
-    "Reasoning Systems",
-    "Ontology"
+    "Reasoning Systems"
   ],
   "ontology": {
     "term_id": "AI-1001",

@@ -15,7 +15,7 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[InfrastructureDomain]], [[VirtualSocietyDomain]]
+	- belongsToDomain:: [[InfrastructureDomain]], [[DisruptiveTechDomain]], [[VirtualSocietyDomain]]
 	- implementedInLayer:: [[ApplicationLayer]]
 	- #### Relationships
 	  id:: etsi-domain-application-health-relationships

@@ -15,15 +15,15 @@
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: ai:VirtualProcess
-	- belongsToDomain:: [[AIEthicsDomain]]
+	- belongsToDomain:: [[AIEthicsDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[ConceptualLayer]]
 	- #### Relationships
-- is-subclass-of:: [[dt:Ethicalframework]]
-- is-subclass-of:: [[ai:Aigovernanceprinciple]]
-- is-subclass-of:: [[dt:Regulatorycompliance]]
-- is-subclass-of:: [[dt:Ethicalframework]] ; bridge to disruptive-technologies
-- is-subclass-of:: [[dt:Regulatorycompliance]] ; bridge to disruptive-technologies
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[Ethicalframework]]
+- is-subclass-of:: [[Aigovernanceprinciple]]
+- is-subclass-of:: [[Regulatorycompliance]]
+- is-subclass-of:: [[Ethicalframework]] ; bridge to disruptive-technologies
+- is-subclass-of:: [[Regulatorycompliance]] ; bridge to disruptive-technologies
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: algorithmic-accountability-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AIGovernance]]

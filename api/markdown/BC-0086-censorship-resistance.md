@@ -18,7 +18,7 @@
 	- owl:inferred-class:: bc:VirtualObject
 
 ### Domain & Architecture
-	- belongsToDomain:: [[CryptographicDomain]]
+	- belongsToDomain:: [[CryptographicDomain]], [[DisruptiveTechDomain]]
 	- maturity:: mature
 
 ### Relationships
@@ -36,11 +36,8 @@ id:: relationships
   - #### Relationships
     - is-subclass-of:: [[Networkcomponent]]
     - is-subclass-of:: [[BlockchainEntity]]
-    - is-enabled-by:: [[DecentralizationLayer]]
-    - is-enabled-by:: [[Bitcoin]]
-    - is-subclass-of:: [[Networkcomponent]]
-    - is-subclass-of:: [[BlockchainEntity]]
-    - is-enabled-by:: [[DecentralizationLayer]]
-    - is-enabled-by:: [[Bitcoin]]
-    id:: relationships
     - uses-data-structure:: [[Blockchain]]
+      collapsed:: true
+      - #### Inverse Relationships (Inferred by Reasoner)
+        - DecentralizationLayer enables Censorship Resistance
+        - Bitcoin enables Censorship Resistance

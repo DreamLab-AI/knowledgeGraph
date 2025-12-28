@@ -8,6 +8,7 @@ id:: platform-layer-ontology
   - preferred-term:: Platform Layer
   - source-domain:: mv
   - owl:class:: mv:PlatformLayer
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Architectural tier providing core platform services including identity, world state management, and asset services upon which metaverse applications are built.
 

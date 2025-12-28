@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: The quantitative and qualitative measure of how effectively an artificial intelligence model accomplishes its designated tasks, typically assessed through statistical metrics evaluating prediction accuracy, reliability, generalisability, computational efficiency, and robustness, considered across different data distributions, operational conditions, and stakeholder requirements, serving as a critical basis for model selection, deployment decisions, ongoing monitoring, and continuous improvement throughout the AI lifecycle.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: model-performance-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[Model]]

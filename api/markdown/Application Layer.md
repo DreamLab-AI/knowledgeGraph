@@ -16,7 +16,7 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[InfrastructureDomain]]
+	- belongsToDomain:: [[InfrastructureDomain]], [[DisruptiveTechDomain]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]
 	  id:: application-layer-relationships

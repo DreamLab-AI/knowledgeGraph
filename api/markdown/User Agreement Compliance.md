@@ -8,6 +8,7 @@ id:: user-agreement-compliance-ontology
   - preferred-term:: User Agreement Compliance
   - source-domain:: mv
   - owl:class:: mv:UserAgreementCompliance
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Process ensuring user actions within a metaverse platform adhere to declared policies, terms of service, and acceptable use guidelines.
 

@@ -10,16 +10,14 @@
 	- source-domain:: rb
 	- status:: draft
     - public-access:: true
-	- definition:: ### Primary Definition
-**Collision Avoidance** - Collision Avoidance in robotics systems
+	- definition:: **Collision Avoidance** - Collision Avoidance in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:CollisionAvoidance
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0052 collision avoidance
-	- ### Primary Definition
-**Collision Avoidance** - Collision Avoidance in robotics systems
+	-
 	-
 	- ### Original Content
 	  collapsed:: true
@@ -37,9 +35,6 @@
 		  - **Last Updated**: 2025-10-28
 		  
 		  ## Definition
-		  
-		  ### Primary Definition
-		  **Collision Avoidance** - Collision Avoidance in robotics systems
 		  
 		  ### Standards Context
 		  Defined according to ISO 8373:2021 and related international robotics standards.

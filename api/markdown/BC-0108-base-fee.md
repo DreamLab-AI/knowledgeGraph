@@ -9,7 +9,6 @@ id:: bc-0108-base-fee-ontology
   - source-domain:: bc
   - owl:class:: bc:Bc0108BaseFee
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Transaction Fee]]

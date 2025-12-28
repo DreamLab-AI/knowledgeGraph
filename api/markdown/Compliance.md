@@ -7,8 +7,7 @@
 	- preferred-term:: Compliance
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- owl:class:: rb:Compliance
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept

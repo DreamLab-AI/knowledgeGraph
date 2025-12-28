@@ -9,7 +9,7 @@
 
 ### Relationships
 
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	- status:: draft
 	- public-access:: true
 	- definition:: Organisations and individuals developing, deploying or operating AI systems should be accountable for their proper functioning in accordance with OECD AI Principles and applicable legal frameworks, based on their roles, context and ability to act.

@@ -8,6 +8,7 @@ id:: proof-of-work-ontology
   - preferred-term:: Proof of Work
   - source-domain:: bc
   - owl:class:: bc:ProofOfWork
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: [[Computational puzzle]] [[consensus mechanism]] within [[blockchain]] systems, providing essential functionality for [[distributed ledger]] technology operations and properties.
 

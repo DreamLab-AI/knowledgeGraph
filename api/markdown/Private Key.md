@@ -8,6 +8,7 @@ id:: private-key-ontology
   - preferred-term:: Private Key
   - source-domain:: bc
   - owl:class:: bc:PrivateKey
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Secret cryptographic key within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

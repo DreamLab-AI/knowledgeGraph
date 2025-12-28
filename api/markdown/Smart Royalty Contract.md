@@ -8,6 +8,7 @@ id:: smart-royalty-contract-ontology
   - preferred-term:: Smart Royalty Contract
   - source-domain:: bc
   - owl:class:: bc:SmartRoyaltyContract
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A programmable blockchain contract that automatically enforces royalty payment terms, calculates compensation amounts, and triggers distributions to creators and rights holders upon qualifying transactions in NFT and digital asset ecosystems.
 
@@ -27,7 +28,9 @@ id:: smart-royalty-contract-ontology
 - enables:: [[Perpetual Creator Royalties]]
 - enables:: [[Royalty Verification]]
 - enables:: [[Multi-Recipient Distribution]]
-- is-required-by:: [[Smart Royalties Ledger]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Smart Royalties Ledger requires Smart Royalty Contract
 - depends-on:: [[Metadata Storage]]
 - depends-on:: [[Wallet Infrastructure]]
 - depends-on:: [[Blockchain Network]]

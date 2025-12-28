@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: A neural network trained to predict scalar rewards for model outputs based on human feedback, used to provide learning signals in reinforcement learning from human feedback (RLHF). The reward model serves as a proxy for human preferences, enabling efficient optimization without constant human evaluation.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: reward-model-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[ModelProperty]]

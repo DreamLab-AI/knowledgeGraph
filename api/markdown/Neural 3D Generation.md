@@ -18,11 +18,11 @@
 	- owl:inferred-class:: ai:VirtualProcess
 
 ### Domain & Architecture
-	- belongsToDomain:: [[AI-GroundedDomain]], [[CreativeMediaDomain]]
+	- belongsToDomain:: [[AI-GroundedDomain]], [[DisruptiveTechDomain]], [[CreativeMediaDomain]]
 	- maturity:: emerging
 
 ### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 - is-subclass-of:: [[ComputerVision]]
 
 ### Quality Metrics

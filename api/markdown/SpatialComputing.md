@@ -30,8 +30,10 @@ id:: spatialcomputing-ontology
 - enables:: [[Virtual Reality (VR)]]
 - enables:: [[Mixed Reality]]
 - enables:: [[Spatial User Interfaces]]
-- is-required-by:: [[Virtual Reality (VR)]]
-- is-required-by:: [[Digital Real Estate]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Virtual Reality (VR) requires SpatialComputing
+    - Digital Real Estate requires SpatialComputing
 - depends-on:: [[Camera Systems]]
 - depends-on:: [[Depth Sensors]]
 - depends-on:: [[IMU]]

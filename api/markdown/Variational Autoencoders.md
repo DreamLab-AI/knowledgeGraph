@@ -14,7 +14,7 @@
 	- owl:role:: Architecture
 	- belongsToDomain:: [[AIDomain]]
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: variational-autoencoders-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[GenerativeModel]]

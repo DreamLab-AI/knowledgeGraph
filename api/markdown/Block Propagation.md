@@ -8,6 +8,7 @@ id:: block-propagation-ontology
   - preferred-term:: Block Propagation
   - source-domain:: bc
   - owl:class:: bc:BlockPropagation
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Network block distribution within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

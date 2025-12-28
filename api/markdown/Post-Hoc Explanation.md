@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: Interpretability techniques applied after a machine learning model has been trained, providing explanations for model behaviour and predictions without modifying the model's architecture or requiring retraining.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: post-hoc-explanation-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[ModelProperty]]

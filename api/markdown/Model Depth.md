@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: The number of transformer layers (encoder and/or decoder) stacked in a model, determining the number of sequential transformations applied to representations.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: model-depth-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[ModelCapacity]]

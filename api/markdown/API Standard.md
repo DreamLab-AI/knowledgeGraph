@@ -8,6 +8,7 @@ id:: api-standard-ontology
   - preferred-term:: API Standard
   - source-domain:: mv
   - owl:class:: mv:ApiStandard
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Specification defining how independent software components communicate within metaverse systems, establishing protocols and data formats for interoperability.
 

@@ -8,6 +8,7 @@ id:: interoperability-framework-ontology
   - preferred-term:: Interoperability Framework
   - source-domain:: mv
   - owl:class:: mv:InteroperabilityFramework
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Coordinated set of standards and specifications enabling interaction between heterogeneous systems in metaverse environments.
 

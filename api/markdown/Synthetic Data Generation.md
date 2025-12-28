@@ -18,7 +18,7 @@
 	- owl:inferred-class:: ai:VirtualProcess
 
 ### Domain & Architecture
-	- belongsToDomain:: [[AIEthicsDomain]]
+	- belongsToDomain:: [[AIEthicsDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[ConceptualLayer]]
 	- maturity:: mature
 

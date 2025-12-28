@@ -15,7 +15,7 @@
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[VirtualSocietyDomain]], [[TrustAndGovernanceDomain]]
+	- belongsToDomain:: [[VirtualSocietyDomain]], [[DisruptiveTechDomain]], [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]
@@ -34,7 +34,9 @@
 		- enables:: [[Risk Assessment]]
 		- enables:: [[Governance Voting Weight]]
 		- enables:: [[Access Control Decisions]]
-		- is-required-by:: [[Trust Score Metric]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - Trust Score Metric requires Reputation Scoring Model
 		- depends-on:: [[Metric Computation]]
 		- depends-on:: [[Data Collection Pipeline]]
 		- depends-on:: [[Statistical Analysis]]

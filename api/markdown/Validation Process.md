@@ -9,6 +9,7 @@ id:: validation-process-ontology
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:ValidationProcess
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - definition:: Activity of systematically checking whether systems, components, or implementations satisfy specified requirements, standards, and compliance criteria through verification testing and quality assurance procedures.
 
 ### Relationships

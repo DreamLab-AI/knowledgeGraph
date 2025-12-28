@@ -10,16 +10,14 @@
 	- source-domain:: rb
 	- status:: draft
     - public-access:: true
-	- definition:: ### Primary Definition
-**Robot Kinematics** - Study of robot motion without considering forces
+	- definition:: **Robot Kinematics** - Study of robot motion without considering forces
 	- maturity:: draft
 	- owl:class:: rb:RobotKinematics
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0021 robot kinematics
-	- ### Primary Definition
-**Robot Kinematics** - Study of robot motion without considering forces
+	-
 	-
 	- ### Original Content
 	  collapsed:: true
@@ -37,9 +35,6 @@
 		  - **Last Updated**: 2025-10-28
 		  
 		  ## Definition
-		  
-		  ### Primary Definition
-		  **Robot Kinematics** - Study of robot motion without considering forces
 		  
 		  ### Standards Context
 		  Defined according to ISO 8373:2021 and related international robotics standards.

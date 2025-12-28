@@ -14,9 +14,9 @@
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: ai:VirtualProcess
-	- belongsToDomain:: [[AI-GroundedDomain]], [[CreativeMediaDomain]], [[ComputationAndIntelligenceDomain]]
+	- belongsToDomain:: [[AI-GroundedDomain]], [[DisruptiveTechDomain]], [[CreativeMediaDomain]], [[ComputationAndIntelligenceDomain]]
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: generative-ai-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[MachineLearning]]

@@ -8,6 +8,7 @@ id:: latency-management-protocol-ontology
   - preferred-term:: Latency Management Protocol
   - source-domain:: mv
   - owl:class:: mv:LatencyManagementProtocol
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A systematic process for monitoring, measuring, and minimizing network delay in interactive metaverse sessions through adaptive techniques including traffic prioritization, predictive buffering, and dynamic routing optimization.
 

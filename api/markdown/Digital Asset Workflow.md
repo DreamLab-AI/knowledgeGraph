@@ -15,7 +15,7 @@
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[VirtualEconomyDomain]], [[CreativeMediaDomain]]
+	- belongsToDomain:: [[VirtualEconomyDomain]], [[DisruptiveTechDomain]], [[CreativeMediaDomain]]
 	- implementedInLayer:: [[DataLayer]], [[MiddlewareLayer]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]

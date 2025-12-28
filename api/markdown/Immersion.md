@@ -15,7 +15,7 @@
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[InteractionDomain]]
+	- belongsToDomain:: [[InteractionDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[ApplicationLayer]], [[PresentationLayer]]
 	- #### Relationships
 	  id:: immersion-relationships

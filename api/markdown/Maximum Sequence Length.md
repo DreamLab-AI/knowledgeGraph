@@ -5,6 +5,7 @@
 	- term-id:: DT-0239
 	- source-domain:: ai
 	- owl:class:: ai:MaximumSequenceLength
+	- belongsToDomain:: [[DisruptiveTechDomain]]
 	- preferred-term:: Maximum Sequence Length
 	- status:: draft
 	- public-access:: true

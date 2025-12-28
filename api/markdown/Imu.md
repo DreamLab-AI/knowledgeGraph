@@ -9,8 +9,7 @@ id:: rb-0073-imu-ontology
   - source-domain:: mv
   - owl:class:: mv:Imu
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Extended Reality (XR)]]
 - belongsToDomain:: [[MetaverseDomain]]

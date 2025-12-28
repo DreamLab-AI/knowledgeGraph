@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: A technique for aligning language models with human preferences by training a reward model from human rankings of outputs and using reinforcement learning (typically PPO) to optimise the policy towards maximising predicted human preference. RLHF enables models to learn complex alignment objectives difficult to specify explicitly.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: reinforcement-learning-from-human-feedback-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[ReinforcementLearning]]

@@ -14,7 +14,7 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[InfrastructureDomain]], [[ComputationAndIntelligenceDomain]]
+	- belongsToDomain:: [[InfrastructureDomain]], [[DisruptiveTechDomain]], [[ComputationAndIntelligenceDomain]]
 	- implementedInLayer:: [[ComputeLayer]], [[DataLayer]]
 	- #### Relationships
 	  id:: middleware-relationships

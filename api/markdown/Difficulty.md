@@ -8,6 +8,7 @@ id:: difficulty-ontology
   - preferred-term:: Difficulty
   - source-domain:: bc
   - owl:class:: bc:Difficulty
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Mining computational requirement within blockchain systems that adjusts dynamically to maintain consistent block production times, providing essential security and consensus mechanism functionality for distributed ledger technology operations.
 

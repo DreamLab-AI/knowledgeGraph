@@ -9,7 +9,6 @@ id:: unknown-ontology
   - source-domain:: bc
   - owl:class:: bc:Bc0111DeflationaryToken
   - status:: approved
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Token]]

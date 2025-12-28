@@ -4,7 +4,7 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9804
-	- source-domain:: metaverse
+	- source-domain:: mv
 	- preferred-term:: Calibration Standards
 	- definition:: Documented specifications and reference materials that establish measurement accuracy requirements, traceability to national standards, and systematic procedures for aligning sensors, displays, and imaging systems to known reference values in XR and computer vision applications.
 	- status:: active

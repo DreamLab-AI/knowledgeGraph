@@ -13,7 +13,7 @@
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: ai:VirtualProcess
-	- belongsToDomain:: [[AIEthicsDomain]]
+	- belongsToDomain:: [[AIEthicsDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[ConceptualLayer]]
 	- #### Relationships
 	  id:: federated-edge-learning-ai-0437-relationships

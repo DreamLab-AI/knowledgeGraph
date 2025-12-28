@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: Radiology AI refers to artificial intelligence systems specifically designed for the interpretation and analysis of radiological imaging modalities including X-ray, computed tomography (CT), magnetic resonance imaging (MRI), and ultrasound. These systems automate detection, classification, and quantification tasks whilst integrating with PACS workflows and providing radiologist-level diagnostic performance validated through clinical trials.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: radiology-ai-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[MedicalAI]]

@@ -5,10 +5,9 @@
 	- public-access:: true
 	- term-id:: TC-0002
 	- preferred-term:: tc 0002 collaborative document editing
-	- source-domain:: telecollaboration
+	- source-domain:: tc
 	- status:: draft
-	- definition:: ### Primary Definition
-**Collaborative Document Editing** - Real-time or asynchronous shared editing technology enabling multiple distributed users to simultaneously create, modify, and comment on digital documents with live synchronization and version control.
+	- definition:: **Collaborative Document Editing** - Real-time or asynchronous shared editing technology enabling multiple distributed users to simultaneously create, modify, and comment on digital documents with live synchronization and version control.
 	- maturity:: mature
 	- owl:class:: tc:CollaborativeDocumentEditing
 	- owl:physicality:: VirtualEntity
@@ -22,8 +21,7 @@
 	- tc:synchronicity:: synchronous-asynchronous
 
 - ## About tc 0002 collaborative document editing
-	- ### Primary Definition
-**Collaborative Document Editing** - Real-time or asynchronous shared editing technology enabling multiple distributed users to simultaneously create, modify, and comment on digital documents with live synchronization and version control. Fundamental infrastructure for distributed knowledge work and remote team coordination.
+	-
 	-
 	- ### Telecollaboration Context
 Classified as a hybrid [[Asynchronous-Synchronous Communication]] technology within the [[Telecollaboration]] domain. Enables knowledge co-creation and supports both real-time collaboration and asynchronous contribution patterns essential for distributed teams spanning multiple time zones.
@@ -44,9 +42,6 @@ Classified as a hybrid [[Asynchronous-Synchronous Communication]] technology wit
 - **Last Updated**: 2025-11-21
 
 ## Definition
-
-### Primary Definition
-**Collaborative Document Editing** - Real-time or asynchronous shared editing technology enabling multiple distributed users to simultaneously create, modify, and comment on digital documents with live synchronization and version control.
 
 ### Telecollaboration Context
 Collaborative document editing represents a hybrid model within the telecollaboration domain:

@@ -16,4 +16,4 @@ id:: consensus-mechanism-ontology
 - implements:: [[Distributed Protocol]]
 - implements:: [[Agreement Protocol]]
 - is-subclass-of:: [[Blockchain]]
-- belongsToDomain:: [[MetaverseDomain]]
+- belongsToDomain:: [[MetaverseDomain]], [[DisruptiveTechDomain]]

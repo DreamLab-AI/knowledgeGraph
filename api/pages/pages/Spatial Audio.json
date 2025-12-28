@@ -9,15 +9,16 @@
     "SpatialComputing",
     "Education Metaverse",
     "Digital Signal Processing",
-    "Tourism Metaverse"
+    "Tourism Metaverse",
+    "Immersive Communication"
   ],
   "wiki_links": [
-    "VR Audio",
-    "Immersive Experiences",
-    "Audio Technology",
+    "metaverse",
     "Immersive Audio",
     "Binaural Audio",
-    "metaverse"
+    "Immersive Experiences",
+    "Audio Technology",
+    "VR Audio"
   ],
   "ontology": {
     "term_id": "MV-10054",

@@ -8,6 +8,7 @@ id:: hash-function-ontology
   - preferred-term:: Hash Function
   - source-domain:: bc
   - owl:class:: bc:HashFunction
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: One-way data transformation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

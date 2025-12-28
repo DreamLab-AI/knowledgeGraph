@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: Object Detection and Tracking combines spatial object localisation with temporal tracking to identify, classify, and follow objects across video frames or sensor streams. This capability is essential for autonomous systems to understand dynamic environments, predict object motion, and make safe navigation decisions. Modern systems employ deep learning detectors (YOLO, Faster R-CNN) combined with tracking algorithms (Kalman filters, SORT, DeepSORT).
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: object-detection-and-tracking-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[ComputerVision]]

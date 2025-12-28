@@ -8,6 +8,7 @@ id:: gossip-protocol-ontology
   - preferred-term:: Gossip Protocol
   - source-domain:: bc
   - owl:class:: bc:GossipProtocol
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Information propagation method within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

@@ -8,6 +8,7 @@ id:: digital-evidence-chain-of-custody-ontology
   - preferred-term:: Digital Evidence Chain of Custody
   - source-domain:: bc
   - owl:class:: bc:DigitalEvidenceChainOfCustody
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Forensic procedure preserving integrity and authenticity of digital evidence through cryptographic sealing and immutable logging from capture to legal presentation.
 

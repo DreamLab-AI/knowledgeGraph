@@ -9,6 +9,7 @@ id:: compute-layer-ontology
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:ComputeLayer
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - definition:: Software layer managing computational resources and orchestration for rendering, simulation, physics, AI processing, and real-time processing within metaverse systems.
 
 ### Relationships
@@ -30,7 +31,9 @@ id:: compute-layer-ontology
 - enables:: [[Physics Simulation]]
 - enables:: [[Distributed Computing]]
 - enables:: [[Real-Time Rendering]]
-- is-required-by:: [[Application Layer]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Application Layer requires Compute Layer
 - depends-on:: [[Container Orchestration]]
 - depends-on:: [[Resource Scheduler]]
 - depends-on:: [[Load Balancer]]

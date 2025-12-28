@@ -9,8 +9,7 @@ id:: AI-0041
   - source-domain:: mv
   - owl:class:: mv:Training
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[MachineLearning]]
 - belongsToDomain:: [[MetaverseDomain]]

@@ -16,10 +16,10 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[ComputationAndIntelligenceDomain]]
+	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[DisruptiveTechDomain]], [[ComputationAndIntelligenceDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]]
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: algorithmic-transparency-index-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AIGovernance]]

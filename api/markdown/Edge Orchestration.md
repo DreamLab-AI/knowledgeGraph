@@ -8,6 +8,7 @@ id:: edge-orchestration-ontology
   - preferred-term:: Edge Orchestration
   - source-domain:: mv
   - owl:class:: mv:EdgeOrchestration
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: The process of dynamically coordinating, allocating, and balancing computational tasks between edge nodes and cloud infrastructure to optimize latency, resource utilization, and quality of experience for immersive metaverse applications.
 

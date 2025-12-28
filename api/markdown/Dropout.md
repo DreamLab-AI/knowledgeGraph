@@ -9,8 +9,7 @@ id:: dropout-ontology
   - source-domain:: mv
   - owl:class:: mv:Dropout
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[ArtificialIntelligence]]
 - belongsToDomain:: [[MetaverseDomain]]

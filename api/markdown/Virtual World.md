@@ -8,6 +8,7 @@ id:: virtual-world-ontology
   - preferred-term:: Virtual World
   - source-domain:: mv
   - owl:class:: mv:VirtualWorld
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: deprecated
   - definition:: A self-contained digital environment with persistent state, spatial properties, user interaction capabilities, and internal rules that simulate physical or fantastical worlds, providing a shared space for multiple users to interact with each other and digital objects.
 

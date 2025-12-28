@@ -18,7 +18,7 @@
 	- owl:inferred-class:: bc:VirtualObject
 
 ### Domain & Architecture
-	- belongsToDomain:: [[ConsensusDomain]]
+	- belongsToDomain:: [[ConsensusDomain]], [[DisruptiveTechDomain]]
 	- maturity:: mature
 
 ### Relationships

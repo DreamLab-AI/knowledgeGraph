@@ -4,7 +4,7 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9837
-	- source-domain:: metaverse
+	- source-domain:: mv
 	- preferred-term:: Customer Rewards
 	- definition:: Loyalty program systems that use blockchain technology and tokenization to create tradeable, interoperable digital rewards, enabling customers to earn, exchange, and redeem tokens across multiple platforms and businesses while providing brands with transparent, fraud-resistant, and cost-effective incentive mechanisms.
 	- status:: active

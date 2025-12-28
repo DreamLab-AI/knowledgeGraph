@@ -12,7 +12,7 @@
 	- owl:class:: mv:OntologySummaryDocumentation
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: DocumentationType
-	- belongsToDomain:: [[KnowledgeManagementDomain]]
+	- belongsToDomain:: [[KnowledgeManagementDomain]], [[DisruptiveTechDomain]]
 
 ## Relationships
 

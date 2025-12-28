@@ -8,6 +8,7 @@ id:: nonce-ontology
   - preferred-term:: Nonce
   - source-domain:: bc
   - owl:class:: bc:Nonce
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Number used once for cryptographic operations within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

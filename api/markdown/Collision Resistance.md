@@ -8,6 +8,7 @@ id:: collision-resistance-ontology
   - preferred-term:: Collision Resistance
   - source-domain:: bc
   - owl:class:: bc:CollisionResistance
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Hash function security property within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

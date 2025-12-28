@@ -7,16 +7,14 @@
 	- source-domain:: rb
 	- status:: draft
     - public-access:: true
-	- definition:: ### Primary Definition
-**Encoder** - Encoder in robotics systems
+	- definition:: **Encoder** - Encoder in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:RobotEncoder
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0072 encoder
-	- ### Primary Definition
-**Encoder** - Encoder in robotics systems
+	-
 	-
 	- ### Original Content
 	  collapsed:: true
@@ -34,9 +32,6 @@
 		  - **Last Updated**: 2025-10-28
 		  
 		  ## Definition
-		  
-		  ### Primary Definition
-		  **Encoder** - Encoder in robotics systems
 		  
 		  ### Standards Context
 		  Defined according to ISO 8373:2021 and related international robotics standards.

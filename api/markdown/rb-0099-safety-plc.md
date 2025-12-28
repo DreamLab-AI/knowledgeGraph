@@ -9,8 +9,7 @@ id:: rb-0099-safety-plc-ontology
   - source-domain:: rb
   - owl:class:: rb:SafetyPLC
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Robotics]]
 - belongsToDomain:: [[RoboticsDomain]]

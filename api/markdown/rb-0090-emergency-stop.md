@@ -7,12 +7,12 @@
 	- preferred-term:: rb 0090 emergency stop
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- owl:class:: rb:EmergencyStop
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
+	- is-subclass-of:: [[Robot Safety]]
 
 ## Metadata
 

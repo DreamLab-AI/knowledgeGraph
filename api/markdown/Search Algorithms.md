@@ -9,9 +9,11 @@
 
 ### Relationships
 - is-subclass-of:: [[Artificial Intelligence]]
-- has-subclass:: [[A-Star Algorithm]]
-- has-subclass:: [[Minimax Algorithm]]
-- has-subclass:: [[Monte Carlo Tree Search]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - A-Star Algorithm is-subclass-of Search Algorithms
+    - Minimax Algorithm is-subclass-of Search Algorithms
+    - Monte Carlo Tree Search is-subclass-of Search Algorithms
 - skos:related:: [[Optimization]]
 - skos:related:: [[Graph Theory]]
 - enables:: [[Planning and Scheduling]]

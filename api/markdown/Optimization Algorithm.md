@@ -12,7 +12,7 @@
 	- owl:class:: ai:OptimizationAlgorithm
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships
-- is-subclass-of:: [[ai:Algorithm]]
+- is-subclass-of:: [[Algorithm]]
 	  id:: optimizationalgorithm-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[MachineLearning]]

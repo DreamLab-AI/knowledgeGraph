@@ -12,6 +12,7 @@
 	- maturity:: mature
 	- owl:physicality:: PhysicalEntity
 	- owl:role:: Object
+	- is-subclass-of:: [[Robotic Telepresence]]
 
 ## Definition
 

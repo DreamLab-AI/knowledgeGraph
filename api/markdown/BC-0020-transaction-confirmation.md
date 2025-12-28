@@ -24,5 +24,5 @@
 
 ## Relationships
 
-- **is-subclass-of** [[dt:BlockchainEntity]] (disruptive-technologies) - owl:someValuesFrom
-- **is-subclass-of** [[dt:Distributeddatastructure]] (disruptive-technologies) - owl:someValuesFrom
+- **is-subclass-of** [[BlockchainEntity]] (disruptive-technologies) - owl:someValuesFrom
+- **is-subclass-of** [[Distributeddatastructure]] (disruptive-technologies) - owl:someValuesFrom

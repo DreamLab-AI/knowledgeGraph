@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: An attention mechanism that computes attention weights using the dot product of queries and keys, scaled by the square root of the key dimension, followed by a softmax normalisation.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: scaled-dot-product-attention-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AttentionMechanism]]

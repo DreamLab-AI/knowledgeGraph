@@ -8,6 +8,7 @@ Telecollaboration and Telepresence Domain refers to "A cross-domain knowledge cl
   - preferred-term:: Telecollaboration and Telepresence Domain
   - source-domain:: tc
   - status:: draft
+  - is-subclass-of:: [[Telecollaboration]]
 
 ### Relationships
 - has-component:: [[TelepresenceFoundations]]

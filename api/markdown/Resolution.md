@@ -7,8 +7,7 @@
 	- preferred-term:: Resolution
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- owl:class:: rb:Resolution
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept

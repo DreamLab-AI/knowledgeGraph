@@ -8,6 +8,7 @@ id:: data-storage-layer-ontology
   - preferred-term:: Data Storage Layer
   - source-domain:: mv
   - owl:class:: mv:DataStorageLayer
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Software layer managing persistent storage, retrieval, and lifecycle of digital assets, metadata, world state, user data, and transactional records in metaverse systems.
 
@@ -27,8 +28,10 @@ id:: data-storage-layer-ontology
 - enables:: [[Asset Persistence]]
 - enables:: [[World State Management]]
 - enables:: [[User Profile Storage]]
-- is-required-by:: [[Compute Layer]]
-- is-required-by:: [[Application Layer]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Compute Layer requires Data Storage Layer
+    - Application Layer requires Data Storage Layer
 - depends-on:: [[Replication Service]]
 - depends-on:: [[Encryption Service]]
 - depends-on:: [[Data Indexing]]

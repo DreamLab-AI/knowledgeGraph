@@ -8,6 +8,7 @@ id:: difficulty-target-ontology
   - preferred-term:: Difficulty Target
   - source-domain:: bc
   - owl:class:: bc:DifficultyTarget
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Mining success threshold within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

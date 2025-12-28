@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: A mechanism that controls which positions in a sequence can attend to which other positions, typically implemented by adding large negative values before softmax to effectively zero out unwanted attention weights.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: attention-mask-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AttentionMechanism]]

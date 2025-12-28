@@ -8,6 +8,7 @@ id:: verifiable-credential-vc-ontology
   - preferred-term:: Verifiable Credential (VC)
   - source-domain:: bc
   - owl:class:: bc:VerifiableCredentialVc
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A W3C standard for tamper-evident credentials that can be cryptographically verified, containing claims made by an issuer about a subject, enabling trustable digital attestations without requiring direct communication with the issuer.
 
@@ -28,7 +29,9 @@ id:: verifiable-credential-vc-ontology
 - enables:: [[Verifiable Presentations]]
 - enables:: [[Trustable Attestations]]
 - enables:: [[Selective Disclosure]]
-- is-enabled-by:: [[Decentralized Identity (DID)]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Decentralized Identity (DID) enables Verifiable Credential (VC)
 - depends-on:: [[JSON-LD]]
 - depends-on:: [[W3C VC Data Model]]
 - depends-on:: [[Linked Data Signatures]]

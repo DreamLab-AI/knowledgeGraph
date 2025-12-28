@@ -13,7 +13,8 @@
 	- owl:class:: mv:SheffieldAdvancedManufacturing
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: RegionalEcosystem
-	- belongsToDomain:: [[UKTechEcosystem]]
+	- belongsToDomain:: [[UKTechEcosystem]], [[DisruptiveTechDomain]]
+	- is-subclass-of:: [[UK Tech Ecosystem]]
 
 ## Sheffield Advanced Manufacturing
 

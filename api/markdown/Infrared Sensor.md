@@ -6,8 +6,7 @@
   - owl:class:: mv:InfraredSensor
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- is-subclass-of:: [[ExteroceptiveSensors]]
 
 

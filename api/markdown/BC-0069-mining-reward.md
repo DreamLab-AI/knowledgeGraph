@@ -8,6 +8,7 @@ id:: mining-reward-ontology
   - preferred-term:: Mining Reward
   - source-domain:: bc
   - owl:class:: bc:MiningReward
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Block creation compensation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

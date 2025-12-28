@@ -8,6 +8,7 @@ id:: distributed-ledger-technology-dlt-ontology
   - preferred-term:: Distributed Ledger Technology (DLT)
   - source-domain:: bc
   - owl:class:: bc:DistributedLedgerTechnologyDlt
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Distributed database infrastructure using cryptographic consensus mechanisms to maintain immutable, tamper-resistant records across decentralized peer-to-peer networks without centralized authority.
 
@@ -32,7 +33,9 @@ id:: distributed-ledger-technology-dlt-ontology
 - enables:: [[Digital Asset]]
 - enables:: [[Trustless Transaction]]
 - enables:: [[Cryptocurrency]]
-- is-required-by:: [[Virtual Notary Service]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Virtual Notary Service requires Distributed Ledger Technology (DLT)
 - depends-on:: [[Distributed System]]
 - depends-on:: [[Cryptography]]
 - depends-on:: [[Data Replication]]

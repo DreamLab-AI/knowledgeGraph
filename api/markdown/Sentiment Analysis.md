@@ -11,7 +11,7 @@
 
 
 ### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 - is-subclass-of:: [[NLPTask]]
 	- definition:: Sentiment Analysis is the NLP task of determining the emotional tone, attitude, or opinion expressed in text, classifying content as positive, negative, or neutral, and extracting fine-grained emotional attributes. Sentiment analysis employs transformer-based classifiers to enable applications in social media monitoring, customer feedback analysis, market research, and brand reputation management.
 

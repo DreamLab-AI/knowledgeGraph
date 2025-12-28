@@ -12,7 +12,7 @@
 	- source:: [[Vaswani et al. 2017 Attention is All You Need]], [[Anthropic Context Windows Research 2024]], [[OpenAI GPT-4 Technical Report]]
 	- maturity:: mature
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: context-window-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[ModelProperty]]

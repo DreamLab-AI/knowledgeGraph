@@ -10,4 +10,4 @@ id:: rb-0085-pressure-sensor-ontology
   - owl:class:: rb:PressureSensor
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

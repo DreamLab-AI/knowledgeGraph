@@ -8,6 +8,7 @@ id:: testing-process-ontology
   - preferred-term:: Testing Process
   - source-domain:: mv
   - owl:class:: mv:TestingProcess
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Systematic execution of verification and validation operations to detect faults, verify functionality, and ensure quality standards in metaverse systems and applications.
 

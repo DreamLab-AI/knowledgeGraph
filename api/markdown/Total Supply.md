@@ -2,6 +2,7 @@
     - term-id:: DT-0533
     - source-domain:: bc
     - owl:class:: bc:TotalSupply
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - preferred-term:: Total Supply
     - ontology:: true
     - public-access:: true

@@ -12,8 +12,8 @@
 	- owl:class:: ai:MeetingTranscription
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships
-- is-subclass-of:: [[dt:SpeechRecognition]]
-- is-subclass-of:: [[dt:SpeechRecognition]] ; bridge to disruptive-technologies
+- is-subclass-of:: [[SpeechRecognition]]
+- is-subclass-of:: [[SpeechRecognition]] ; bridge to disruptive-technologies
 	  id:: meetingtranscription-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[SpeechProcessing]]

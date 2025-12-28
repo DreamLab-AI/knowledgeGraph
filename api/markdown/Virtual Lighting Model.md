@@ -8,6 +8,7 @@ id:: virtual-lighting-model-ontology
   - preferred-term:: Virtual Lighting Model
   - source-domain:: mv
   - owl:class:: mv:VirtualLightingModel
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Mathematical description of light behavior for rendering realistic illumination in 3D scenes, simulating light emission, transport, and surface interaction.
 

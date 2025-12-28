@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: Precision Medicine utilises artificial intelligence to tailor medical treatment to individual patient characteristics, integrating genomic data, clinical information, lifestyle factors, and environmental data to predict treatment response, identify optimal therapies, and stratify patient populations. AI-driven precision medicine enables personalised diagnosis, prognosis, and therapeutic selection based on multi-omic data integration and predictive modelling.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: precision-medicine-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[MedicalAI]]

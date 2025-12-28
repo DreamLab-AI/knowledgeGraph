@@ -8,6 +8,7 @@ id:: selfish-mining-ontology
   - preferred-term:: Selfish Mining
   - source-domain:: bc
   - owl:class:: bc:SelfishMining
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Strategic block withholding within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

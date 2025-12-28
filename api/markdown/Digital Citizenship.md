@@ -14,7 +14,7 @@ id:: digital-citizenship-ontology
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[VirtualSocietyDomain]], [[TrustAndGovernanceDomain]]
+	- belongsToDomain:: [[VirtualSocietyDomain]], [[DisruptiveTechDomain]], [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[ApplicationLayer]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]

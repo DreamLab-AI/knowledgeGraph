@@ -12,8 +12,8 @@
 	- owl:class:: ai:ToxicityDetection
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships
-- is-subclass-of:: [[dt:ContentModeration]]
-- is-subclass-of:: [[dt:ContentModeration]] ; bridge to disruptive-technologies
+- is-subclass-of:: [[ContentModeration]]
+- is-subclass-of:: [[ContentModeration]] ; bridge to disruptive-technologies
 	  id:: toxicitydetection-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[NaturalLanguageProcessing]]

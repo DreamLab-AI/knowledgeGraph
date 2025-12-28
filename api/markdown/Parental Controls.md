@@ -4,7 +4,7 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9993
-	- source-domain:: metaverse
+	- source-domain:: mv
 	- preferred-term:: Parental Controls
 	- status:: active
 	- definition:: Software tools and platform features that enable guardians to monitor, filter, and limit children's access to digital content, applications, and online interactions, using AI-powered content analysis and customizable restrictions to promote safe technology use.

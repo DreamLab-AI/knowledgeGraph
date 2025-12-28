@@ -12,4 +12,4 @@ id:: blockchain-ontology
   - definition:: A distributed, immutable ledger that records transactions in a cryptographically secure, chronological chain of blocks, maintained by a decentralized network using consensus mechanisms.
 
 ### Relationships
-- is-subclass-of:: [[Blockchain]]
+- is-subclass-of:: [[Technology Domain]]

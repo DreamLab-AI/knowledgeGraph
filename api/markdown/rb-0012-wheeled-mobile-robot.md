@@ -10,4 +10,4 @@ id:: rb-0012-wheeled-mobile-robot-ontology
   - owl:class:: rb:WheeledMobileRobot
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

@@ -9,7 +9,6 @@ id:: bc-0113-emission-schedule-ontology
   - source-domain:: bc
   - owl:class:: bc:Bc0113EmissionSchedule
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Token Economics]]

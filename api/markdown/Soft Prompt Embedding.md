@@ -2,6 +2,7 @@
     - term-id:: DT-0820
     - source-domain:: ai
     - owl:class:: ai:SoftPromptEmbedding
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - preferred-term:: Soft Prompt Embedding
     - ontology:: true
     - public-access:: true

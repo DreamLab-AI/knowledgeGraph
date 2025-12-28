@@ -3,7 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0341
-	- source-domain:: data
+	- source-domain:: mv
 	- preferred-term:: ETSI Domain: Data Management
 	- status:: draft
 	- public-access:: true
@@ -15,7 +15,7 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[InfrastructureDomain]]
+	- belongsToDomain:: [[InfrastructureDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[ApplicationLayer]]
 	- #### Relationships
 	  id:: etsi-domain-data-management-relationships

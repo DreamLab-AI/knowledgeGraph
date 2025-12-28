@@ -8,9 +8,11 @@ id:: bootstrap-node-ontology
   - preferred-term:: Bootstrap Node
   - source-domain:: bc
   - owl:class:: bc:BootstrapNode
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Network entry point node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 
 ### Relationships
+- is-subclass-of:: [[Network Component]]
 - uses-data-structure:: [[Blockchain Entity]]
 - instance-of:: [[NetworkComponent]]

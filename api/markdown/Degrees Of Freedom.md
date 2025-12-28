@@ -5,11 +5,11 @@
 	- term-id:: DT-0023
 	- source-domain:: ai
 	- owl:class:: ai:DegreesOfFreedom
+	- belongsToDomain:: [[DisruptiveTechDomain]]
 	- preferred-term:: Degrees Of Freedom
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 
 
 ### Relationships

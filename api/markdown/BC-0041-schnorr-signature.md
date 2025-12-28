@@ -8,6 +8,7 @@ id:: schnorr-signature-ontology
   - preferred-term:: Schnorr Signature
   - source-domain:: bc
   - owl:class:: bc:SchnorrSignature
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Efficient signature scheme within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

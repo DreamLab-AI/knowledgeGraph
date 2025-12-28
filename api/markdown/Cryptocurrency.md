@@ -28,7 +28,9 @@ id:: cryptocurrency-ontology
 - enables:: [[Programmable Money]]
 - enables:: [[Cross-Border Transfer]]
 - enables:: [[Decentralized Payment]]
-- is-enabled-by:: [[Distributed Ledger Technology (DLT)]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Distributed Ledger Technology (DLT) enables Cryptocurrency
 - is-dependency-of:: [[Play-to-Earn (P2E)]]
 - depends-on:: [[Peer-to-Peer Network]]
 - depends-on:: [[Cryptographic Hash]]

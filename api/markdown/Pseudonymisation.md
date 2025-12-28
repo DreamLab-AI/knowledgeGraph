@@ -3,7 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0427
-	- source-domain:: data
+	- source-domain:: ai
 	- preferred-term:: Pseudonymisation
 	- status:: in
 	- public-access:: true
@@ -14,5 +14,9 @@
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: ai:VirtualProcess
-	- belongsToDomain:: [[AIEthicsDomain]]
+	- belongsToDomain:: [[AIEthicsDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[ConceptualLayer]]
+	- #### Relationships
+	  id:: pseudonymisation-relationships
+	  collapsed:: true
+		- is-subclass-of:: [[AI Safety]]

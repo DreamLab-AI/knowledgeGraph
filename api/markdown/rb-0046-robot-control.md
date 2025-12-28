@@ -10,4 +10,4 @@ id:: rb-0046-robot-control-ontology
   - owl:class:: rb:RobotControl
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

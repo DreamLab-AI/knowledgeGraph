@@ -9,8 +9,7 @@ id:: bc-0103-halving-ontology
   - source-domain:: mv
   - owl:class:: mv:Bc0103Halving
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Blockchain]]
 - belongsToDomain:: [[MetaverseDomain]]

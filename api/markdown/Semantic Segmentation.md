@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: Semantic Segmentation is the computer vision task of assigning a class label to every pixel in an image, partitioning the image into semantically meaningful regions without distinguishing between individual object instances. Semantic segmentation networks (FCN, U-Net, DeepLab) produce dense pixel-wise predictions enabling scene understanding applications in medical imaging, autonomous driving, and satellite imagery analysis.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: semantic-segmentation-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[ImageSegmentation]]

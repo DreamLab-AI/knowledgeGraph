@@ -14,4 +14,4 @@
 
 ### Relationships
 
-- is-subclass-of:: [[ai:GenerativeAi]]
+- is-subclass-of:: [[GenerativeAi]]

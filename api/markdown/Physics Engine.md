@@ -7,6 +7,7 @@ id:: physics-engine-ontology
   - term-id:: DT-0118
   - source-domain:: mv
   - owl:class:: mv:PhysicsEngine
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - preferred-term:: Physics Engine
   - definition:: Software component that simulates physical interactions, constraints, and dynamics in real-time for virtual environments.
 
@@ -36,7 +37,9 @@ id:: physics-engine-ontology
 - enables:: [[Kinematic Animation]]
 - is-dependency-of:: [[Mixed Reality (MR)]]
 - is-dependency-of:: [[Virtual Performance Space]]
-- is-required-by:: [[Physics-Based Animation]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Physics-Based Animation requires Physics Engine
 - depends-on:: [[3D Engine]]
 - depends-on:: [[Animation System]]
 - depends-on:: [[Rendering Pipeline]]

@@ -11,4 +11,4 @@ AI-0435-neural-network-quantization
   - owl:class:: ai:Ai0435NeuralNetworkQuantization
 
 ### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]

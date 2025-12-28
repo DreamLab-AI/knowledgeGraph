@@ -8,6 +8,7 @@ id:: digital-asset-ontology
   - preferred-term:: Digital Asset
   - source-domain:: bc
   - owl:class:: bc:DigitalAsset
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: An identifiable unit of digital information that possesses economic or functional value within a metaverse system, capable of being owned, transferred, or exchanged.
 
@@ -30,7 +31,9 @@ id:: digital-asset-ontology
 - enables:: [[Economic Activity]]
 - enables:: [[Asset Trading]]
 - enables:: [[Value Transfer]]
-- is-enabled-by:: [[Distributed Ledger Technology (DLT)]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Distributed Ledger Technology (DLT) enables Digital Asset
 - depends-on:: [[NFT Standard]]
 - depends-on:: [[Token Standard]]
 - depends-on:: [[SmartContract]]

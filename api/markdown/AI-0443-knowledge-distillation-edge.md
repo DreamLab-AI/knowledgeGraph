@@ -11,4 +11,4 @@ AI-0443-knowledge-distillation-edge
   - owl:class:: ai:Ai0443KnowledgeDistillationEdge
 
 ### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]

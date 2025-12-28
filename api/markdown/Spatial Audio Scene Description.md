@@ -8,6 +8,7 @@ id:: spatial-audio-scene-description-ontology
   - preferred-term:: Spatial Audio Scene Description
   - source-domain:: mv
   - owl:class:: mv:SpatialAudioSceneDescription
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A data model for encoding sound sources, listener positions, acoustic environments, and spatial audio metadata in three-dimensional space to enable immersive and realistic audio experiences in virtual environments.
 

@@ -10,7 +10,7 @@
 	- definition:: Comprehensive definitions of object properties and datatype properties used throughout the Disruptive Technology Ontology, establishing formal semantic relationships between concepts across AI, blockchain, robotics, and metaverse domains. Properties define typed relationships with explicit domains, ranges, inverse relationships, and logical characteristics enabling automated reasoning and knowledge graph traversal.
 	- maturity:: mature
 	- owl:class:: ai:OntologyPropertyDefinitions
-	- belongsToDomain:: [[OntologyDomain]]
+	- belongsToDomain:: [[OntologyDomain]], [[DisruptiveTechDomain]]
 
 ## OntologyBlock
 

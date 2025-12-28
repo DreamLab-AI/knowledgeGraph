@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: A technique that combines predictions from multiple independently trained models to improve overall performance and robustness. Ensembling leverages diversity among models to reduce variance, improve generalisation, and provide more reliable predictions.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: model-ensembling-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[MachineLearning]]

@@ -2,6 +2,7 @@
     - term-id:: DT-0003
     - source-domain:: ai
     - owl:class:: ai:TechnologyAdoption
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - preferred-term:: Technology Adoption
     - ontology:: true
     - public-access:: true

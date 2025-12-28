@@ -13,7 +13,8 @@
 	- owl:class:: mv:NorthEnglandInnovationCorridor
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: RegionalEcosystem
-	- belongsToDomain:: [[UKTechEcosystem]]
+	- belongsToDomain:: [[UKTechEcosystem]], [[DisruptiveTechDomain]]
+	- is-subclass-of:: [[UK Tech Ecosystem]]
 
 ## North England Innovation Corridor
 

@@ -8,14 +8,12 @@
 	- preferred-term:: Safety Zone
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- belongsToDomain:: [[MetaverseDomain]]
 
 ## Safety Zone
 
-Safety Zone refers to ### Primary Definition
-
+Safety Zone refers to
 - Safety zones are designated areas established to protect personnel, vessels, and the environment from hazards during construction, maintenance, or other potentially dangerous activities.
   - The concept is grounded in maritime safety regulations and occupational health and safety frameworks.
   - Academic foundations include risk assessment methodologies, environmental impact studies, and regulatory compliance analysis.

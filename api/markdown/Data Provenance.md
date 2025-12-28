@@ -15,7 +15,7 @@
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[InfrastructureDomain]]
+	- belongsToDomain:: [[InfrastructureDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[Data Layer]], [[Middleware Layer]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]
@@ -38,7 +38,9 @@
 		- enables:: [[Attribution]]
 		- enables:: [[Provenance Verification]]
 		- is-dependency-of:: [[Compliance Audit Trail]]
-		- is-required-by:: [[Algorithmic Transparency Index]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - Algorithmic Transparency Index requires Data Provenance
 		- depends-on:: [[Identity Management]]
 		- depends-on:: [[Event Logging]]
 		- depends-on:: [[Blockchain]]

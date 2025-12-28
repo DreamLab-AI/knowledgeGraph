@@ -10,16 +10,14 @@
 	- source-domain:: rb
 	- status:: draft
     - public-access:: true
-	- definition:: ### Primary Definition
-**Collaborative Robot** - Collaborative Robot in robotics systems
+	- definition:: **Collaborative Robot** - Collaborative Robot in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:CollaborativeRobot
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0007 collaborative robot
-	- ### Primary Definition
-**Collaborative Robot** - Collaborative Robot in robotics systems
+	-
 	-
 	- ### Original Content
 	  collapsed:: true
@@ -37,9 +35,6 @@
 		  - **Last Updated**: 2025-10-28
 		  
 		  ## Definition
-		  
-		  ### Primary Definition
-		  **Collaborative Robot** - Collaborative Robot in robotics systems
 		  
 		  ### Standards Context
 		  Defined according to ISO/TS 15066:2016 and related international robotics standards.

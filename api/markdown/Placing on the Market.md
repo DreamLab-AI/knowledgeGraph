@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: The first making available of an AI system on the Union market.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: placing-on-the-market-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AIGovernance]]

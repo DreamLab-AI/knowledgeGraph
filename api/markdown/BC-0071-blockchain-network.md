@@ -18,7 +18,7 @@
 	- owl:inferred-class:: bc:VirtualObject
 
 ### Domain & Architecture
-	- belongsToDomain:: [[CryptographicDomain]]
+	- belongsToDomain:: [[CryptographicDomain]], [[DisruptiveTechDomain]]
 	- maturity:: mature
 
 ### Relationships
@@ -44,27 +44,16 @@ id:: relationships
   - #### Relationships
     - is-subclass-of:: [[Networkcomponent]]
     - is-subclass-of:: [[BlockchainEntity]]
-    - inverse-depends-on:: [[TokenCustodyService]]
-    - inverse-is-part-of:: [[CryptoToken]]
-    - is-required-by:: [[NftSwapping]]
-    - inverse-depends-on:: [[SmartRoyaltyContract]]
-    - inverse-depends-on:: [[DigitalTaxComplianceNode]]
-    - is-required-by:: [[Tokenization]]
-    - inverse-depends-on:: [[VirtualSecuritiesOfferingVso]]
-    - inverse-depends-on:: [[DigitalRightsManagementExtended]]
-    - inverse-depends-on:: [[NftRenting]]
-    - inverse-depends-on:: [[SmartRoyaltiesLedger]]
-    - is-subclass-of:: [[Networkcomponent]]
-    - is-subclass-of:: [[BlockchainEntity]]
-    - inverse-depends-on:: [[TokenCustodyService]]
-    - inverse-is-part-of:: [[CryptoToken]]
-    - is-required-by:: [[NftSwapping]]
-    - inverse-depends-on:: [[SmartRoyaltyContract]]
-    - inverse-depends-on:: [[DigitalTaxComplianceNode]]
-    - is-required-by:: [[Tokenization]]
-    - inverse-depends-on:: [[VirtualSecuritiesOfferingVso]]
-    - inverse-depends-on:: [[DigitalRightsManagementExtended]]
-    - inverse-depends-on:: [[NftRenting]]
-    - inverse-depends-on:: [[SmartRoyaltiesLedger]]
-    id:: relationships
     - is-subclass-of:: [[Distributed Ledger]]
+      collapsed:: true
+      - #### Inverse Relationships (Inferred by Reasoner)
+        - TokenCustodyService depends-on Blockchain Network
+        - CryptoToken has-part Blockchain Network
+        - SmartRoyaltyContract depends-on Blockchain Network
+        - DigitalTaxComplianceNode depends-on Blockchain Network
+        - VirtualSecuritiesOfferingVso depends-on Blockchain Network
+        - DigitalRightsManagementExtended depends-on Blockchain Network
+        - NftRenting depends-on Blockchain Network
+        - SmartRoyaltiesLedger depends-on Blockchain Network
+        - NftSwapping requires Blockchain Network
+        - Tokenization requires Blockchain Network

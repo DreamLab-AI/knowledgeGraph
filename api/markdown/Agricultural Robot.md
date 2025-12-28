@@ -15,8 +15,7 @@
 	- owl:role:: Object
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0015 agricultural robot
-	- ### Primary Definition
-**Agricultural Robot** - Agricultural Robot in robotics systems
+	-
 	-
 	- ### Original Content
 	  collapsed:: true
@@ -34,9 +33,6 @@
 		  - **Last Updated**: 2025-10-28
 		  
 		  ## Definition
-		  
-		  ### Primary Definition
-		  **Agricultural Robot** - Agricultural Robot in robotics systems
 		  
 		  ### Standards Context
 		  Defined according to ISO 18497:2018 and related international robotics standards.

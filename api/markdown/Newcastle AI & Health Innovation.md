@@ -13,7 +13,8 @@
 	- owl:class:: mv:NewcastleAIAndHealthInnovation
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: RegionalEcosystem
-	- belongsToDomain:: [[UKTechEcosystem]]
+	- belongsToDomain:: [[UKTechEcosystem]], [[DisruptiveTechDomain]]
+	- is-subclass-of:: [[UK Tech Ecosystem]]
 
 ## Newcastle AI & Health Innovation
 

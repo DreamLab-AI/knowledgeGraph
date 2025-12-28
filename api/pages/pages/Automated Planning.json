@@ -3,18 +3,17 @@
   "title": "Automated Planning",
   "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1008\n  - preferred-term:: Automated Planning\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:AutomatedPlanning\n\n### Relationships\n- is-subclass-of:: [[Planning and Scheduling]]\n- is-subclass-of:: [[Artificial Intelligence]]\n- uses:: [[STRIPS]]\n- uses:: [[Search Algorithms]]\n- skos:related:: [[Knowledge Representation]]\n- skos:related:: [[Formal Methods]]\n- enables:: [[Autonomous Systems]]\n\n### Definition\nAutomated planning is the computational study of deliberation processes that generate action sequences to achieve specified goals. It involves representing states, actions, and goals formally, then using algorithmic techniques to synthesize plans that transform initial states into goal states while respecting domain constraints and optimizing objectives.\n\n### Representation Components\n**States:**\n- Propositional/first-order logic\n- State variables\n- Fluents (changing properties)\n\n**Actions:**\n- Preconditions (when applicable)\n- Effects (state changes)\n- Costs/durations\n\n**Goals:**\n- Desired state properties\n- Optimization criteria\n\n### Planning Languages\n- STRIPS (Stanford Research Institute Problem Solver)\n- ADL (Action Description Language)\n- PDDL (Planning Domain Definition Language)\n- RDDL (Relational Dynamic Influence Diagram Language)\n\n### Planning Techniques\n**Graph-based:**\n- Planning graphs\n- GraphPlan algorithm\n\n**State-space Search:**\n- Forward search (progression)\n- Backward search (regression)\n- Heuristic search (Fast Forward, A*)\n\n**Plan-space Search:**\n- Partial-order planning\n- Hierarchical task networks (HTN)\n\n**SAT-based Planning:**\n- Encode as satisfiability problem\n- Use SAT solvers\n\n### Applications\n- Autonomous robot missions\n- Space mission planning (NASA Deep Space 1)\n- Manufacturing process planning\n- Video game AI\n- Logistics and transportation\n- Automated software configuration",
   "backlinks": [
-    "Planning and Scheduling",
     "Knowledge Representation",
     "STRIPS"
   ],
   "wiki_links": [
-    "Formal Methods",
-    "Search Algorithms",
     "Knowledge Representation",
-    "Autonomous Systems",
+    "Formal Methods",
     "Artificial Intelligence",
     "Planning and Scheduling",
-    "STRIPS"
+    "Search Algorithms",
+    "STRIPS",
+    "Autonomous Systems"
   ],
   "ontology": {
     "term_id": "AI-1008",

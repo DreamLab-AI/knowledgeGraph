@@ -4,7 +4,7 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-10001
-	- source-domain:: metaverse
+	- source-domain:: mv
 	- preferred-term:: Particle Systems
 	- status:: active
 	- definition:: The collective infrastructure and tooling for creating and managing particle-based visual effects in game engines and VFX software, encompassing emitter configuration, physics integration, and real-time or offline rendering pipelines.

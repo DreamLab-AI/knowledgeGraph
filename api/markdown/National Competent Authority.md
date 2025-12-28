@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: A notifying authority, a market surveillance authority, or any other authority designated by a Member State to supervise the application and implementation of the AI Act, including national data protection authorities where relevant.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: national-competent-authority-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AIGovernance]]

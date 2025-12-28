@@ -9,8 +9,7 @@ id:: rb-0020-swarm-robot-ontology
   - source-domain:: rb
   - owl:class:: rb:SwarmRobot
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Robotics]]
 - belongsToDomain:: [[RoboticsDomain]]

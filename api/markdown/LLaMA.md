@@ -22,7 +22,7 @@
 
 ### Relationships
 
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 ## OWL Formal Semantics
 
 ```clojure

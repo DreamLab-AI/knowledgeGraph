@@ -9,7 +9,6 @@ id:: unknown-ontology
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:FeedforwardNeuralNetwork
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[NeuralNetworkArchitecture]]

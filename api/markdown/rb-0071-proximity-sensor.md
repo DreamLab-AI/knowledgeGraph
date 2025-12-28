@@ -10,4 +10,4 @@ id:: rb-0071-proximity-sensor-ontology
   - owl:class:: rb:ProximitySensor
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

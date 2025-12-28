@@ -8,6 +8,7 @@ id:: spatial-computing-ontology
   - preferred-term:: Spatial Computing
   - source-domain:: mv
   - owl:class:: mv:SpatialComputing
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: deprecated
   - definition:: Computing paradigm that enables interaction with digital content through three-dimensional spatial awareness, mapping, and tracking of physical environments and user positions.
 
@@ -30,8 +31,10 @@ id:: spatial-computing-ontology
 - enables:: [[Virtual Reality (VR)]]
 - enables:: [[Mixed Reality]]
 - enables:: [[Spatial User Interfaces]]
-- is-required-by:: [[Virtual Reality (VR)]]
-- is-required-by:: [[Digital Real Estate]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - Virtual Reality (VR) requires Spatial Computing
+    - Digital Real Estate requires Spatial Computing
 - depends-on:: [[Camera Systems]]
 - depends-on:: [[Depth Sensors]]
 - depends-on:: [[IMU]]

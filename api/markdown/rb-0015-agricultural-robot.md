@@ -10,4 +10,4 @@ id:: rb-0015-agricultural-robot-ontology
   - owl:class:: rb:AgriculturalRobot
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

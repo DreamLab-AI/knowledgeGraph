@@ -8,6 +8,7 @@ id:: community-governance-model-ontology
   - preferred-term:: Community Governance Model
   - source-domain:: bc
   - owl:class:: bc:CommunityGovernanceModel
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A participatory decision-making framework that defines rules, voting mechanisms, proposal systems, and dispute resolution processes for virtual communities, enabling democratic and transparent collective governance.
 

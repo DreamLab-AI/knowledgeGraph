@@ -2,6 +2,7 @@
     - term-id:: DT-0161
     - source-domain:: mv
     - owl:class:: mv:StereoCamera
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - preferred-term:: Stereo Camera
     - ontology:: true
     - public-access:: true

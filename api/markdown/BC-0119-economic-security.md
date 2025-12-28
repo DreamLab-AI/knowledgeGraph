@@ -9,7 +9,6 @@ id:: bc-0119-economic-security-ontology
   - source-domain:: bc
   - owl:class:: bc:Bc0119EconomicSecurity
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Blockchain]]

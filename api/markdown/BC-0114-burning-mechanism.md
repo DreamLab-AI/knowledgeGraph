@@ -9,7 +9,6 @@ id:: bc-0114-burning-mechanism-ontology
   - source-domain:: bc
   - owl:class:: bc:Bc0114BurningMechanism
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Token Economics]]

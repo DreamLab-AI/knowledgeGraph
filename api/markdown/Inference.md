@@ -9,7 +9,6 @@ id:: inference-ontology
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:Inference
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[MachineLearning]]

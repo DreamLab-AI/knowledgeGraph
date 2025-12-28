@@ -9,7 +9,6 @@ id:: bc-0104-supply-cap-ontology
   - source-domain:: mv
   - owl:class:: mv:BitcoinSupplyCap
   - status:: approved
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Token Economics]]

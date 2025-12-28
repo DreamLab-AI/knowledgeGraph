@@ -8,6 +8,7 @@ id:: archival-node-ontology
   - preferred-term:: Archival Node
   - source-domain:: bc
   - owl:class:: bc:ArchivalNode
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Complete history storage node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

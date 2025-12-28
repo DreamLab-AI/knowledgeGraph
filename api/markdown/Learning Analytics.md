@@ -4,7 +4,7 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9941
-	- source-domain:: metaverse
+	- source-domain:: mv
 	- preferred-term:: Learning Analytics
 	- status:: active
 	- owl:class:: mv:LearningAnalytics

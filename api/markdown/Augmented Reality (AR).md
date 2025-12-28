@@ -7,6 +7,7 @@ id:: augmented-reality-ontology
   - term-id:: DT-0243
   - source-domain:: mv
   - owl:class:: mv:AugmentedReality
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - preferred-term:: Augmented Reality (AR)
   - status:: draft
   - definition:: Interactive system that overlays digital content (visual, audio, haptic) onto the physical environment in real time, enabling spatially-registered blended experiences where virtual information enhances physical perception.

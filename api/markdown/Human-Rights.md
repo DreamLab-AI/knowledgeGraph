@@ -5,6 +5,7 @@
 	- term-id:: DT-0166
 	- source-domain:: ai
 	- owl:class:: ai:HumanRights
+	- belongsToDomain:: [[DisruptiveTechDomain]]
 	- preferred-term:: Human Rights
 	- status:: revised
 	- public-access:: true

@@ -11,7 +11,7 @@
 
 
 ### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 - is-subclass-of:: [[NLPTask]]
 	- definition:: Natural Language Processing (NLP) is the field of artificial intelligence concerned with enabling computers to understand, interpret, generate, and manipulate human language in both written and spoken forms. NLP encompasses tasks including machine translation, sentiment analysis, named entity recognition, question answering, and text generation, employing transformer architectures, large language models, and linguistic knowledge to bridge human communication and computational processing.
 

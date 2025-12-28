@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: Medical Imaging AI encompasses artificial intelligence systems designed to analyse, interpret, and enhance medical images including radiological scans, pathology slides, and other diagnostic imaging modalities. These systems employ deep learning architectures, particularly convolutional neural networks, to perform tasks such as lesion detection, disease classification, segmentation of anatomical structures, and quantitative image analysis whilst adhering to clinical validation standards and regulatory requirements.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: medical-imaging-ai-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[MedicalAI]]

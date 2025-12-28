@@ -9,6 +9,7 @@ id:: privacy-enhancing-computation-pec-ontology
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:PrivacyEnhancingComputationPec
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - definition:: Computational techniques that enable data processing and analysis while preserving privacy through cryptographic methods such as homomorphic encryption, secure multi-party computation, and differential privacy.
 
 ### Relationships

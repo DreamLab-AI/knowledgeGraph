@@ -5,11 +5,12 @@
 	- term-id:: DT-0976
 	- source-domain:: tc
 	- owl:class:: tc:EmergencyStop
+	- belongsToDomain:: [[DisruptiveTechDomain]]
 	- preferred-term:: Emergency Stop
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
+	- is-subclass-of:: [[Robot Safety]]
 
 ## Academic Context
 

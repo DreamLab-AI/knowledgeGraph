@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: Question Answering (QA) is the NLP task of automatically generating accurate answers to natural language questions posed by users, either by extracting answers from text passages (extractive QA) or generating free-form responses (generative QA). QA systems employ reading comprehension models, retrieval-augmented generation, and knowledge reasoning to power applications including search engines, virtual assistants, and customer support.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: question-answering-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[NLPTask]]

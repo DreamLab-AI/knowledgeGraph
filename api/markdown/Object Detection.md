@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: Object Detection is the computer vision task of identifying and localising multiple objects within an image by predicting bounding boxes and class labels for each detected instance. Object detectors (YOLO, Faster R-CNN, DETR) combine classification and localisation, outputting spatial coordinates and class probabilities for all objects of interest in real-time or near-real-time performance.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: object-detection-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[ComputerVision]]

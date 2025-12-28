@@ -11,4 +11,4 @@ id:: spatialmapping-ontology
   - status:: complete
 
 ### Relationships
-- is-subclass-of:: [[ai:SpatialAi]]
+- is-subclass-of:: [[SpatialAi]]

@@ -2,6 +2,7 @@
     - term-id:: DT-0563
     - source-domain:: bc
     - owl:class:: bc:HighEnergyConsumption
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - preferred-term:: High Energy Consumption
     - ontology:: true
     - public-access:: true

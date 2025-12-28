@@ -9,6 +9,7 @@ id:: synthetic-data-generator-ontology
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:SyntheticDataGenerator
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - definition:: AI-powered system that produces artificial datasets preserving statistical properties and structural characteristics of original data while protecting privacy and enabling testing scenarios.
 
 ### Relationships

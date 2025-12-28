@@ -14,7 +14,7 @@
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: ai:VirtualProcess
-	- belongsToDomain:: [[AI-GroundedDomain]], [[ComputationAndIntelligenceDomain]], [[DataManagementDomain]]
+	- belongsToDomain:: [[AI-GroundedDomain]], [[DisruptiveTechDomain]], [[ComputationAndIntelligenceDomain]], [[DataManagementDomain]]
 	- #### Relationships
 - enables:: [[DigitalAvatar]]
 - enables:: [[Intelligent Npc]]

@@ -8,6 +8,7 @@ id:: xr-accessibility-guideline-ontology
   - preferred-term:: XR Accessibility Guideline
   - source-domain:: mv
   - owl:class:: mv:XrAccessibilityGuideline
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Design recommendations and best practices ensuring XR applications and immersive experiences are usable by people with diverse abilities and disabilities.
 

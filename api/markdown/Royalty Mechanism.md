@@ -8,6 +8,7 @@ id:: royalty-mechanism-ontology
   - preferred-term:: Royalty Mechanism
   - source-domain:: bc
   - owl:class:: bc:RoyaltyMechanism
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Automated process ensuring creators receive compensation when their assets are resold or used in secondary markets.
 

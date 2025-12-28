@@ -1,20 +1,19 @@
 {
   "id": "Planning and Scheduling",
   "title": "Planning and Scheduling",
-  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1007\n  - preferred-term:: Planning and Scheduling\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:PlanningAndScheduling\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]\n- has-subclass:: [[Automated Planning]]\n- skos:related:: [[Search Algorithms]]\n- skos:related:: [[Constraint Satisfaction]]\n- skos:related:: [[Optimization]]\n- uses:: [[STRIPS]]\n- enables:: [[Robotics]]\n- enables:: [[Resource Management]]\n\n### Definition\nPlanning and scheduling are AI techniques for generating sequences of actions to achieve goals while satisfying temporal and resource constraints. Planning focuses on determining what actions to take and in what order, while scheduling allocates resources and determines precise timing to optimize objectives such as makespan, cost, or efficiency.\n\n### Planning Types\n**Classical Planning:**\n- Deterministic environments\n- Complete information\n- Static world assumptions\n\n**Temporal Planning:**\n- Actions with durations\n- Concurrent action execution\n- Temporal constraints\n\n**Contingent Planning:**\n- Partial observability\n- Conditional branches\n- Sensing actions\n\n**Probabilistic Planning:**\n- Stochastic outcomes\n- MDPs and POMDPs\n- Expectation-based decisions\n\n### Scheduling Approaches\n- Job shop scheduling\n- Resource-constrained project scheduling\n- Vehicle routing and logistics\n- Production scheduling\n- CPU/task scheduling\n\n### Key Challenges\n- Computational complexity (NP-hard)\n- Dynamic replanning\n- Multi-objective optimization\n- Uncertainty handling\n- Scalability to large problems\n\n### Applications\n- Manufacturing and production\n- Supply chain management\n- Robotics task planning\n- Space mission planning\n- Autonomous vehicle coordination\n- Cloud computing resource allocation",
+  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1007\n  - preferred-term:: Planning and Scheduling\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:PlanningAndScheduling\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]\n  collapsed:: true\n  - #### Inverse Relationships (Inferred by Reasoner)\n    - Automated Planning is-subclass-of Planning and Scheduling\n- skos:related:: [[Search Algorithms]]\n- skos:related:: [[Constraint Satisfaction]]\n- skos:related:: [[Optimization]]\n- uses:: [[STRIPS]]\n- enables:: [[Robotics]]\n- enables:: [[Resource Management]]\n\n### Definition\nPlanning and scheduling are AI techniques for generating sequences of actions to achieve goals while satisfying temporal and resource constraints. Planning focuses on determining what actions to take and in what order, while scheduling allocates resources and determines precise timing to optimize objectives such as makespan, cost, or efficiency.\n\n### Planning Types\n**Classical Planning:**\n- Deterministic environments\n- Complete information\n- Static world assumptions\n\n**Temporal Planning:**\n- Actions with durations\n- Concurrent action execution\n- Temporal constraints\n\n**Contingent Planning:**\n- Partial observability\n- Conditional branches\n- Sensing actions\n\n**Probabilistic Planning:**\n- Stochastic outcomes\n- MDPs and POMDPs\n- Expectation-based decisions\n\n### Scheduling Approaches\n- Job shop scheduling\n- Resource-constrained project scheduling\n- Vehicle routing and logistics\n- Production scheduling\n- CPU/task scheduling\n\n### Key Challenges\n- Computational complexity (NP-hard)\n- Dynamic replanning\n- Multi-objective optimization\n- Uncertainty handling\n- Scalability to large problems\n\n### Applications\n- Manufacturing and production\n- Supply chain management\n- Robotics task planning\n- Space mission planning\n- Autonomous vehicle coordination\n- Cloud computing resource allocation",
   "backlinks": [
     "Automated Planning",
     "Search Algorithms"
   ],
   "wiki_links": [
-    "Constraint Satisfaction",
+    "Artificial Intelligence",
+    "Resource Management",
     "Optimization",
     "Search Algorithms",
-    "Artificial Intelligence",
-    "Robotics",
-    "Automated Planning",
-    "Resource Management",
-    "STRIPS"
+    "STRIPS",
+    "Constraint Satisfaction",
+    "Robotics"
   ],
   "ontology": {
     "term_id": "AI-1007",

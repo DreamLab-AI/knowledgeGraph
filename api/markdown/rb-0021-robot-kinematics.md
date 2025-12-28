@@ -10,4 +10,4 @@ id:: rb-0021-robot-kinematics-ontology
   - owl:class:: rb:RobotKinematics
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

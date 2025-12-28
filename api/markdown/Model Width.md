@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: The dimensionality of representations within each layer, typically referring to the hidden dimension (d_model), determining the capacity of the model to encode information at each layer.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: model-width-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[ModelCapacity]]

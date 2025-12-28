@@ -8,6 +8,7 @@ id:: discovery-layer-ontology
   - preferred-term:: Discovery Layer
   - source-domain:: mv
   - owl:class:: mv:DiscoveryLayer
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Functional layer responsible for search, navigation, and exposure of metaverse experiences and assets through indexing, search engines, and recommendation systems.
 

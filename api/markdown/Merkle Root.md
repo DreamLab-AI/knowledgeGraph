@@ -8,6 +8,7 @@ id:: merkle-root-ontology
   - preferred-term:: Merkle Root
   - source-domain:: bc
   - owl:class:: bc:MerkleRoot
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Top hash of Merkle tree within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

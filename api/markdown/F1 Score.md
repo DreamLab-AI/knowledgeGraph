@@ -7,6 +7,7 @@
 	- source-domain:: ai
 	- status:: draft
   - owl:class:: ai:F1Score
+	- belongsToDomain:: [[DisruptiveTechDomain]]
     - public-access:: true
 
 

@@ -12,8 +12,8 @@
 	- owl:class:: ai:Model
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
-- is-subclass-of:: [[ai:ArtificialIntelligence]]
+- is-subclass-of:: [[ModelArchitecture]]
+- is-subclass-of:: [[ArtificialIntelligence]]
 	  id:: model-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[MachineLearning]]

@@ -8,6 +8,7 @@ id:: human-interface-layer-hil-ontology
   - preferred-term:: Human Interface Layer (HIL)
   - source-domain:: mv
   - owl:class:: mv:HumanInterfaceLayerHil
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Software and hardware layer encompassing devices and modalities that connect users physically and sensorily to immersive environments, managing interaction design and user experience.
 

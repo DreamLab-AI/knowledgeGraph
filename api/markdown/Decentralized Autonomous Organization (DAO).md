@@ -8,6 +8,7 @@ id:: decentralized-autonomous-organization-dao-ontology
   - preferred-term:: Decentralized Autonomous Organization (DAO)
   - source-domain:: bc
   - owl:class:: bc:DecentralizedAutonomousOrganizationDao
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Autonomous governance entity operating through rules encoded in smart contracts, enabling collective decision-making, treasury management, and organizational operations without centralized authority.
 

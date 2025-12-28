@@ -8,6 +8,7 @@ id:: metaverse-architecture-stack-ontology
   - preferred-term:: Metaverse Architecture Stack
   - source-domain:: mv
   - owl:class:: mv:MetaverseArchitectureStack
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Layered framework defining functional components and interfaces for metaverse systems to interoperate at network, data, and application levels.
 

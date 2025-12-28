@@ -17,7 +17,7 @@
 	- owl:inferred-class:: mv:VirtualObject
 
 ### Domain & Architecture
-	- belongsToDomain:: [[InteractionDomain]], [[CreativeMediaDomain]]
+	- belongsToDomain:: [[InteractionDomain]], [[DisruptiveTechDomain]], [[CreativeMediaDomain]]
 	- implementedInLayer:: [[ComputeLayer]]
 	- maturity:: mature
 

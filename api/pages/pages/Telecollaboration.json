@@ -1,0 +1,87 @@
+{
+  "id": "Telecollaboration",
+  "title": "Telecollaboration",
+  "content": "- ### OntologyBlock\n  id:: telecollaboration-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-0001\n\t- preferred-term:: Telecollaboration\n\t- source-domain:: tc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: The foundational technology domain encompassing technology-mediated collaboration, distributed teamwork, remote presence systems, and virtual cooperation platforms enabling humans to work together effectively across geographical and temporal boundaries through synchronous and asynchronous communication modalities.\n\t- maturity:: stable\n\t- owl:class:: tc:Telecollaboration\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Domain\n\t- belongsToDomain:: [[Telecollaboration]]\n\t- #### Relationships\n\t  id:: telecollaboration-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Technology Domain]]\n\t\t  collapsed:: true\n\t\t  - #### Inverse Relationships (Inferred by Reasoner)\n\t\t    - Synchronous Collaboration is-subclass-of Telecollaboration\n\t\t    - Asynchronous Collaboration is-subclass-of Telecollaboration\n\t\t    - Telepresence is-subclass-of Telecollaboration\n\t\t    - Video Conferencing is-subclass-of Telecollaboration\n\t\t    - Collaborative Document Editing is-subclass-of Telecollaboration\n\t\t    - Virtual Teams is-subclass-of Telecollaboration\n\t\t    - Shared Workspace is-subclass-of Telecollaboration\n\t\t- bridges-to:: [[Artificial Intelligence]] (via AI meeting assistants)\n\t\t- bridges-to:: [[Blockchain Technology]] (via DAO governance)\n\t\t- bridges-to:: [[Metaverse Technology]] (via virtual workspaces)\n\t\t- bridges-to:: [[Robotics Systems]] (via telepresence robots)\n- ## Overview\n\t- The Telecollaboration domain provides the ontological framework for understanding technology-mediated distributed collaboration. This domain encompasses theoretical foundations (social presence theory, common ground theory), technical infrastructure (real-time protocols, networking), application platforms (video conferencing, shared workspaces), and socio-technical practices enabling effective remote teamwork.\n- ## Key Subcategories\n\t- [[Synchronous Collaboration]] - Real-time interaction (video calls, co-editing)\n\t- [[Asynchronous Collaboration]] - Time-independent coordination (version control, documentation)\n\t- [[Telepresence]] - Remote presence and immersive communication\n\t- [[Video Conferencing]] - Multi-party video communication systems\n\t- [[Collaborative Document Editing]] - Real-time document co-authoring\n\t- [[Virtual Teams]] - Distributed team formation and management\n\t- [[Shared Workspace]] - Persistent collaborative environments\n\t- [[Communication Protocol]] - Real-time networking and data exchange\n- ## Cross-Domain Integration\n\t- **AI Integration**: AI meeting assistants, real-time translation, intelligent summarisation\n\t- **Blockchain Integration**: DAO governance, smart contract coordination, tokenised incentives\n\t- **Metaverse Integration**: Virtual offices, immersive meetings, spatial collaboration\n\t- **Robotics Integration**: Telepresence robots, haptic feedback, remote manipulation\n- ## Theoretical Foundations\n\t- Social Presence Theory (Short, Williams, Christie, 1976)\n\t- Media Richness Theory (Daft & Lengel, 1986)\n\t- Common Ground Theory (Clark & Brennan, 1991)\n\t- Coordination Theory (Malone & Crowston, 1994)\n- ## Related Concepts\n\t- See also [[TC-0001-telecollaboration-domain]] for detailed domain structure\n\t- See also [[TELE-002-telecollaboration]] for process-level concept\n- ## Metadata\n\t- **Last Updated**: 2025-12-27\n\t- **Authority Score**: 0.95\n\t- **Status**: Domain root",
+  "backlinks": [
+    "Virtual Meeting",
+    "Communication Theory",
+    "Technology Domain",
+    "Blockchain Technology",
+    "Robotics Systems",
+    "Social Presence",
+    "tc-0001-video-conferencing",
+    "Artificial Intelligence",
+    "Telepresence",
+    "Remote Collaboration",
+    "Telecollaboration",
+    "Metaverse Technology",
+    "TELE-0000-telepresence-domain",
+    "tc-0002-collaborative-document-editing",
+    "tc-0003-telepresence-robot",
+    "Immersive Communication"
+  ],
+  "wiki_links": [
+    "Telecollaboration",
+    "Virtual Teams",
+    "Video Conferencing",
+    "Artificial Intelligence",
+    "Blockchain Technology",
+    "Synchronous Collaboration",
+    "Communication Protocol",
+    "Robotics Systems",
+    "Shared Workspace",
+    "Collaborative Document Editing",
+    "Asynchronous Collaboration",
+    "TC-0001-telecollaboration-domain",
+    "Technology Domain",
+    "TELE-002-telecollaboration",
+    "Metaverse Technology",
+    "Telepresence"
+  ],
+  "ontology": {
+    "term_id": "TC-0001",
+    "preferred_term": "Telecollaboration",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/telecollaboration#Telecollaboration",
+    "source_domain": "tc",
+    "domain": "tc",
+    "domain_full_name": "Telecollaboration",
+    "definition": "The foundational technology domain encompassing technology-mediated collaboration, distributed teamwork, remote presence systems, and virtual cooperation platforms enabling humans to work together effectively across geographical and temporal boundaries through synchronous and asynchronous communication modalities.",
+    "scope_note": null,
+    "status": "active",
+    "maturity": "stable",
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "tc:Telecollaboration",
+    "owl_physicality": "ConceptualEntity",
+    "owl_role": "Domain",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Technology Domain"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Telecollaboration"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated"
+      ]
+    }
+  }
+}

@@ -14,7 +14,7 @@
 	- owl:physicality:: VirtualProtocol
 	- owl:role:: SmartContractSystem
 	- owl:inferred-class:: bc:Layer3Protocol,
-	- belongsToDomain:: [[BitcoinAIDomain]], [[SmartContractDomain]], [[Layer3Domain]], [[PrivacyDomain]]
+	- belongsToDomain:: [[BitcoinAIDomain]], [[DisruptiveTechDomain]], [[SmartContractDomain]], [[Layer3Domain]], [[PrivacyDomain]]
 	- implementedInLayer:: [[Bitcoin Layer 3]], [[Lightning Network Layer]], [[Off-Chain Computation Layer]]
 	- #### Relationships
 	  id:: rgb-client-side-validation-relationships

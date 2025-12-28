@@ -3,7 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0155
-	- source-domain:: data
+	- source-domain:: mv
 	- preferred-term:: Motion Capture Rig
 	- status:: draft
 	- public-access:: true
@@ -15,11 +15,12 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:PhysicalObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[CreativeMediaDomain]]
+	- belongsToDomain:: [[CreativeMediaDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[PhysicalLayer]]
 	- #### Relationships
 	  id:: motion-capture-rig-relationships
 	  collapsed:: true
+		- is-subclass-of:: [[Reality Capture System]]
 		- is-part-of:: [[Reality Capture System]]
 		- has-part:: [[IMU Sensors]]
 		- has-part:: [[Calibration Target]]

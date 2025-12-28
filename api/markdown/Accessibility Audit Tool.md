@@ -8,6 +8,7 @@ id:: accessibility-audit-tool-ontology
   - preferred-term:: Accessibility Audit Tool
   - source-domain:: mv
   - owl:class:: mv:AccessibilityAuditTool
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: An automated software utility that verifies compliance with accessibility standards (such as WCAG) in XR environments, identifying barriers for users with disabilities.
 

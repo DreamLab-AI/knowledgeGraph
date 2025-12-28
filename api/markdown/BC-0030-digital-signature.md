@@ -18,7 +18,7 @@
 	- owl:inferred-class:: bc:VirtualObject
 
 ### Domain & Architecture
-	- belongsToDomain:: [[CryptographicDomain]]
+	- belongsToDomain:: [[CryptographicDomain]], [[DisruptiveTechDomain]]
 	- maturity:: mature
 
 ### Relationships
@@ -42,24 +42,15 @@ id:: relationships
 
   - #### Relationships
     - is-subclass-of:: [[BlockchainEntity]]
-    - inverse-depends-on:: [[Tokenization]]
-    - inverse-depends-on:: [[VirtualPropertyRight]]
-    - is-part-of:: [[DigitalEvidenceChainOfCustody]]
-    - is-required-by:: [[DataProvenance]]
-    - is-required-by:: [[DistributedLedgerTechnologyDlt]]
-    - is-required-by:: [[NftSwapping]]
-    - is-required-by:: [[VerifiableCredentialVc]]
-    - is-required-by:: [[CulturalProvenanceRecord]]
-    - is-required-by:: [[VirtualNotaryService]]
-    - is-subclass-of:: [[BlockchainEntity]]
-    - inverse-depends-on:: [[Tokenization]]
-    - inverse-depends-on:: [[VirtualPropertyRight]]
-    - is-part-of:: [[DigitalEvidenceChainOfCustody]]
-    - is-required-by:: [[DataProvenance]]
-    - is-required-by:: [[DistributedLedgerTechnologyDlt]]
-    - is-required-by:: [[NftSwapping]]
-    - is-required-by:: [[VerifiableCredentialVc]]
-    - is-required-by:: [[CulturalProvenanceRecord]]
-    - is-required-by:: [[VirtualNotaryService]]
-    id:: relationships
     - is-subclass-of:: [[Cryptography]]
+    - is-part-of:: [[DigitalEvidenceChainOfCustody]]
+      collapsed:: true
+      - #### Inverse Relationships (Inferred by Reasoner)
+        - Tokenization depends-on Digital Signature
+        - VirtualPropertyRight depends-on Digital Signature
+        - DataProvenance requires Digital Signature
+        - DistributedLedgerTechnologyDlt requires Digital Signature
+        - NftSwapping requires Digital Signature
+        - VerifiableCredentialVc requires Digital Signature
+        - CulturalProvenanceRecord requires Digital Signature
+        - VirtualNotaryService requires Digital Signature

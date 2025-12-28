@@ -9,7 +9,7 @@
 
 ### Relationships
 
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	- status:: draft
 	- public-access:: true
 	- definition:: AI systems should operate safely without causing unacceptable risk of physical or psychological harm to people, property or the environment, with appropriate safeguards to prevent, detect and respond to hazardous failures throughout the AI lifecycle.

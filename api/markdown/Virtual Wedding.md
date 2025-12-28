@@ -4,7 +4,7 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-10152
-	- source-domain:: metaverse
+	- source-domain:: mv
 	- preferred-term:: Virtual Wedding
 	- status:: active
 	- definition:: A marriage ceremony conducted in virtual environments or metaverse platforms where participants are represented by digital avatars, enabling global attendance, customizable virtual venues, and unique digital elements like NFT wedding gifts, often requiring accompaniment by legal proceedings for official recognition.

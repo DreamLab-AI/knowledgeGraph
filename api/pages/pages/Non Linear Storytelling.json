@@ -1,16 +1,16 @@
 {
   "id": "Non Linear Storytelling",
   "title": "Non Linear Storytelling",
-  "content": "- ### OntologyBlock\n  id:: non-linear-storytelling-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9986\n\t- source-domain:: metaverse\n\t- preferred-term:: Non Linear Storytelling\n\t- status:: active\n\t- definition:: The craft and practice of creating narratives where story events can be experienced in multiple sequences through branching paths, player choices, or temporal manipulation, commonly used in video games, interactive fiction, and immersive experiences.\n\t- owl:class:: mv:NonLinearStorytelling\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: non-linear-storytelling-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Storytelling]]\n\t\t- related-to:: [[Non Linear Narrative]]\n\t\t- related-to:: [[Interactive Fiction]]\n\t\t- related-to:: [[Video Game Design]]\n\t\t- enables:: [[Multiple Endings]]\n\t- #### Authoring Tools\n\t  collapsed:: true\n\t\t- Twine: Free open-source interactive fiction tool\n\t\t- Articy Draft: Professional narrative design software\n\t\t- Narrat: Game engine for narrative RPGs\n\t\t- Ink: Scripting language for branching stories\n\t\t- Dialogue System for Unity: Complex branching dialogue\n\t- #### Notable Examples\n\t  collapsed:: true\n\t\t- The Witcher 3: Multiple endings based on player decisions\n\t\t- Visual novels: Branching storylines with multiple endings\n\t\t- Chrono series: Time travel affecting story outcomes\n\t\t- Radiant Historia: Timeline manipulation mechanics",
+  "content": "- ### OntologyBlock\n  id:: non-linear-storytelling-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9986\n\t- source-domain:: mv\n\t- preferred-term:: Non Linear Storytelling\n\t- status:: active\n\t- definition:: The craft and practice of creating narratives where story events can be experienced in multiple sequences through branching paths, player choices, or temporal manipulation, commonly used in video games, interactive fiction, and immersive experiences.\n\t- owl:class:: mv:NonLinearStorytelling\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: non-linear-storytelling-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Storytelling]]\n\t\t- related-to:: [[Non Linear Narrative]]\n\t\t- related-to:: [[Interactive Fiction]]\n\t\t- related-to:: [[Video Game Design]]\n\t\t- enables:: [[Multiple Endings]]\n\t- #### Authoring Tools\n\t  collapsed:: true\n\t\t- Twine: Free open-source interactive fiction tool\n\t\t- Articy Draft: Professional narrative design software\n\t\t- Narrat: Game engine for narrative RPGs\n\t\t- Ink: Scripting language for branching stories\n\t\t- Dialogue System for Unity: Complex branching dialogue\n\t- #### Notable Examples\n\t  collapsed:: true\n\t\t- The Witcher 3: Multiple endings based on player decisions\n\t\t- Visual novels: Branching storylines with multiple endings\n\t\t- Chrono series: Time travel affecting story outcomes\n\t\t- Radiant Historia: Timeline manipulation mechanics",
   "backlinks": [
     "Non Linear Narrative"
   ],
   "wiki_links": [
-    "Storytelling",
-    "Non Linear Narrative",
-    "Video Game Design",
-    "Interactive Fiction",
     "metaverse",
+    "Storytelling",
+    "Video Game Design",
+    "Non Linear Narrative",
+    "Interactive Fiction",
     "Multiple Endings"
   ],
   "ontology": {
@@ -18,9 +18,9 @@
     "preferred_term": "Non Linear Storytelling",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#NonLinearStorytelling",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": "mv",
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "The craft and practice of creating narratives where story events can be experienced in multiple sequences through branching paths, player choices, or temporal manipulation, commonly used in video games, interactive fiction, and immersive experiences.",
     "scope_note": null,
     "status": "active",
@@ -66,8 +66,7 @@
       "errors": [
         "Missing required property: last-updated",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "Missing required property: owl:role"
       ]
     }
   }

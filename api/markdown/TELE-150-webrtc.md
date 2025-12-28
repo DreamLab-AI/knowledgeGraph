@@ -12,6 +12,7 @@
 	- maturity:: mature
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Object
+	- is-subclass-of:: [[Communication Protocol]]
 	- #### Relationships
 	  id:: webrtc-relationships
 	  collapsed:: true

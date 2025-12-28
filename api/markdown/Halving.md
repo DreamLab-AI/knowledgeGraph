@@ -8,6 +8,7 @@ id:: halving-ontology
   - preferred-term:: Halving
   - source-domain:: bc
   - owl:class:: bc:Halving
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Block reward reduction event within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

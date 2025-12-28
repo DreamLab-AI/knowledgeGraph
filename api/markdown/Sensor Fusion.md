@@ -9,7 +9,7 @@
 
 ### Relationships
 
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	- status:: draft
 	- public-access:: true
 	- definition:: Sensor Fusion is the process of combining data from multiple sensors (camera, lidar, radar, GPS, IMU) to produce more accurate, reliable, and complete information than could be obtained from any individual sensor. Sensor fusion employs algorithms including Kalman filtering, particle filtering, and deep learning-based fusion to integrate complementary sensor modalities whilst managing sensor noise, uncertainties, and failures.

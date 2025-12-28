@@ -8,6 +8,7 @@ id:: blockchain-network-ontology
   - preferred-term:: Blockchain Network
   - source-domain:: bc
   - owl:class:: bc:BlockchainNetwork
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Distributed node infrastructure within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

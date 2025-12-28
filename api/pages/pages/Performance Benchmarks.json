@@ -1,26 +1,26 @@
 {
   "id": "Performance Benchmarks",
   "title": "Performance Benchmarks",
-  "content": "- ### OntologyBlock\n  id:: performance-benchmarks-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10002\n\t- source-domain:: metaverse\n\t- preferred-term:: Performance Benchmarks\n\t- status:: active\n\t- definition:: Standardized tests and metrics used to evaluate and compare software, hardware, or system performance under controlled conditions, measuring factors such as response time, throughput, resource utilization, and error rates.\n\t- owl:class:: mv:PerformanceBenchmarks\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: performance-benchmarks-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Software Testing]]\n\t\t- related-to:: [[Performance Testing]]\n\t\t- related-to:: [[Quality Assurance]]\n\t\t- related-to:: [[System Evaluation]]\n\t\t- enables:: [[Performance Optimization]]\n\t- #### Key Metrics\n\t  collapsed:: true\n\t\t- Response time: average, peak, minimum, maximum\n\t\t- Throughput: transactions per second\n\t\t- Error rates: failure percentages under load\n\t\t- Resource utilization: CPU, memory, network\n\t\t- Scalability: performance under increasing load\n\t- #### Tools and Standards\n\t  collapsed:: true\n\t\t- SPEC benchmarks for CPU and workstation performance\n\t\t- Apache JMeter for web application load testing\n\t\t- Gatling for API and web application testing\n\t\t- PCMark for overall PC performance\n\t\t- SPECworkstation 4.0 (2024) adds AI/ML workloads",
+  "content": "- ### OntologyBlock\n  id:: performance-benchmarks-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10002\n\t- source-domain:: mv\n\t- preferred-term:: Performance Benchmarks\n\t- status:: active\n\t- definition:: Standardized tests and metrics used to evaluate and compare software, hardware, or system performance under controlled conditions, measuring factors such as response time, throughput, resource utilization, and error rates.\n\t- owl:class:: mv:PerformanceBenchmarks\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: performance-benchmarks-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Software Testing]]\n\t\t- related-to:: [[Performance Testing]]\n\t\t- related-to:: [[Quality Assurance]]\n\t\t- related-to:: [[System Evaluation]]\n\t\t- enables:: [[Performance Optimization]]\n\t- #### Key Metrics\n\t  collapsed:: true\n\t\t- Response time: average, peak, minimum, maximum\n\t\t- Throughput: transactions per second\n\t\t- Error rates: failure percentages under load\n\t\t- Resource utilization: CPU, memory, network\n\t\t- Scalability: performance under increasing load\n\t- #### Tools and Standards\n\t  collapsed:: true\n\t\t- SPEC benchmarks for CPU and workstation performance\n\t\t- Apache JMeter for web application load testing\n\t\t- Gatling for API and web application testing\n\t\t- PCMark for overall PC performance\n\t\t- SPECworkstation 4.0 (2024) adds AI/ML workloads",
   "backlinks": [
     "AI Model Card"
   ],
   "wiki_links": [
+    "metaverse",
     "System Evaluation",
     "Performance Optimization",
-    "Software Testing",
+    "Quality Assurance",
     "Performance Testing",
-    "metaverse",
-    "Quality Assurance"
+    "Software Testing"
   ],
   "ontology": {
     "term_id": "MV-10002",
     "preferred_term": "Performance Benchmarks",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#PerformanceBenchmarks",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": "mv",
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "Standardized tests and metrics used to evaluate and compare software, hardware, or system performance under controlled conditions, measuring factors such as response time, throughput, resource utilization, and error rates.",
     "scope_note": null,
     "status": "active",
@@ -66,8 +66,7 @@
       "errors": [
         "Missing required property: last-updated",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "Missing required property: owl:role"
       ]
     }
   }

@@ -12,7 +12,7 @@
 	- owl:class:: ai:TextToSpeech
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships
-- is-subclass-of:: [[ai:NaturalLanguageProcessing]]
+- is-subclass-of:: [[NaturalLanguageProcessing]]
 	  id:: texttospeech-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[SpeechProcessing]]

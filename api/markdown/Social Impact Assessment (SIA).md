@@ -8,6 +8,7 @@ id:: social-impact-assessment-sia-ontology
   - preferred-term:: Social Impact Assessment (SIA)
   - source-domain:: mv
   - owl:class:: mv:SocialImpactAssessmentSia
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Systematic evaluation of potential social consequences of metaverse deployment on communities, stakeholder groups, and societal well-being.
 

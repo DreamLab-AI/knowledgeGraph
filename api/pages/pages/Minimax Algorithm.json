@@ -3,16 +3,15 @@
   "title": "Minimax Algorithm",
   "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1005\n  - preferred-term:: Minimax Algorithm\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:MinimaxAlgorithm\n\n### Relationships\n- is-subclass-of:: [[Search Algorithms]]\n- is-subclass-of:: [[Game Theory]]\n- skos:related:: [[Alpha-Beta Pruning]]\n- skos:related:: [[Decision Tree]]\n- used-in:: [[Game Playing AI]]\n- enables:: [[Adversarial Search]]\n\n### Definition\nMinimax is a decision-making algorithm used in two-player zero-sum games that determines the optimal move by minimizing the maximum possible loss. It works by recursively exploring the game tree, assuming the opponent will play optimally, and selecting moves that maximize the player's minimum guaranteed outcome.\n\n### Algorithm Principles\n- Maximizing player seeks highest score\n- Minimizing player (opponent) seeks lowest score\n- Recursive depth-first exploration\n- Backpropagation of utility values\n- Assumes perfect opponent play\n\n### Enhancements\n**Alpha-Beta Pruning:**\n- Eliminates branches that won't affect final decision\n- Reduces search space significantly\n- Maintains identical results to full minimax\n\n**Iterative Deepening:**\n- Gradually increases search depth\n- Provides time-bounded responses\n- Improves move ordering\n\n**Transposition Tables:**\n- Cache evaluated positions\n- Avoid redundant calculations\n\n### Applications\n- Chess engines\n- Checkers programs\n- Tic-tac-toe solvers\n- Connect Four\n- General turn-based games\n\n### Limitations\n- Exponential time complexity\n- Requires complete game state information\n- Computationally expensive for deep trees",
   "backlinks": [
-    "Monte Carlo Tree Search",
-    "Search Algorithms"
+    "Monte Carlo Tree Search"
   ],
   "wiki_links": [
-    "Decision Tree",
     "Game Theory",
-    "Search Algorithms",
-    "Adversarial Search",
+    "Decision Tree",
     "Alpha-Beta Pruning",
-    "Game Playing AI"
+    "Search Algorithms",
+    "Game Playing AI",
+    "Adversarial Search"
   ],
   "ontology": {
     "term_id": "AI-1005",

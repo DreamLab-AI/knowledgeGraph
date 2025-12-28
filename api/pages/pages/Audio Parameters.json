@@ -1,28 +1,28 @@
 {
   "id": "Audio Parameters",
   "title": "Audio Parameters",
-  "content": "- ### OntologyBlock\n  id:: audio-parameters-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9783\n\t- source-domain:: metaverse\n\t- preferred-term:: Audio Parameters\n\t- status:: active\n\t- definition:: Audio Parameters are the configurable settings and properties defining spatial audio behavior in virtual environments, including source position, direction, attenuation, room acoustics, HRTF profiles, and rendering parameters that enable realistic 3D sound experiences in VR, AR, and metaverse applications.\n\t- owl:class:: mv:AudioParameters\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Audio Configuration]]\n\t- enables:: [[Spatial Sound Rendering]], [[Immersive Audio]], [[Telepresence]]\n\t- requires:: [[Audio Engine]], [[HRTF Data]], [[Environmental Modeling]]\n\t- #### Relationships\n\t  id:: audio-parameters-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey parameters include:\n- **Source Position**: 3D coordinates of audio objects in virtual space\n- **Direction and Orientation**: Sound source facing and listener head orientation\n- **Distance Attenuation**: Volume decrease with distance from source\n- **Room Acoustics**: Reverberation, reflection, and absorption characteristics\n- **HRTF Selection**: Head-Related Transfer Function profiles for binaural rendering\n\n### Importance for Immersion\nSpatial audio encompasses 360 degrees versus 140 degrees for visual field, making it critical for metaverse telepresence. Audio format must automatically adapt to user's playback system for natural sound environment.\n\n### Tools and Implementation\nAdobe Audition, Dolby Atmos, and Unity Audio Mixer provide spatial audio creation. VR headsets (Meta Quest, HTC VIVE, Pico 4) incorporate real-time binaural processing with head tracking.",
+  "content": "- ### OntologyBlock\n  id:: audio-parameters-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9783\n\t- source-domain:: mv\n\t- preferred-term:: Audio Parameters\n\t- status:: active\n\t- definition:: Audio Parameters are the configurable settings and properties defining spatial audio behavior in virtual environments, including source position, direction, attenuation, room acoustics, HRTF profiles, and rendering parameters that enable realistic 3D sound experiences in VR, AR, and metaverse applications.\n\t- owl:class:: mv:AudioParameters\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Audio Configuration]]\n\t- enables:: [[Spatial Sound Rendering]], [[Immersive Audio]], [[Telepresence]]\n\t- requires:: [[Audio Engine]], [[HRTF Data]], [[Environmental Modeling]]\n\t- #### Relationships\n\t  id:: audio-parameters-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey parameters include:\n- **Source Position**: 3D coordinates of audio objects in virtual space\n- **Direction and Orientation**: Sound source facing and listener head orientation\n- **Distance Attenuation**: Volume decrease with distance from source\n- **Room Acoustics**: Reverberation, reflection, and absorption characteristics\n- **HRTF Selection**: Head-Related Transfer Function profiles for binaural rendering\n\n### Importance for Immersion\nSpatial audio encompasses 360 degrees versus 140 degrees for visual field, making it critical for metaverse telepresence. Audio format must automatically adapt to user's playback system for natural sound environment.\n\n### Tools and Implementation\nAdobe Audition, Dolby Atmos, and Unity Audio Mixer provide spatial audio creation. VR headsets (Meta Quest, HTC VIVE, Pico 4) incorporate real-time binaural processing with head tracking.",
   "backlinks": [
     "Procedural Audio Generator"
   ],
   "wiki_links": [
-    "Telepresence",
-    "Audio Engine",
-    "Environmental Modeling",
-    "HRTF Data",
-    "Audio Configuration",
-    "Immersive Audio",
     "metaverse",
-    "Spatial Sound Rendering"
+    "Spatial Sound Rendering",
+    "Immersive Audio",
+    "Audio Configuration",
+    "HRTF Data",
+    "Environmental Modeling",
+    "Audio Engine",
+    "Telepresence"
   ],
   "ontology": {
     "term_id": "MV-9783",
     "preferred_term": "Audio Parameters",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/metaverse#AudioParameters",
-    "source_domain": "metaverse",
-    "domain": "metaverse",
-    "domain_full_name": "",
+    "source_domain": "mv",
+    "domain": "mv",
+    "domain_full_name": "Metaverse",
     "definition": "Audio Parameters are the configurable settings and properties defining spatial audio behavior in virtual environments, including source position, direction, attenuation, room acoustics, HRTF profiles, and rendering parameters that enable realistic 3D sound experiences in VR, AR, and metaverse applications.",
     "scope_note": null,
     "status": "active",
@@ -58,8 +58,7 @@
         "Missing required property: last-updated",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'mv' doesn't match source-domain 'metaverse'"
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

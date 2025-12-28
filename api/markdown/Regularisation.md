@@ -9,8 +9,7 @@ id:: regularisation-ontology
   - source-domain:: mv
   - owl:class:: mv:Regularisation
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[LearningMethod]]
 - belongsToDomain:: [[MetaverseDomain]]

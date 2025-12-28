@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: A graphical performance evaluation tool for binary classification models that plots the True Positive Rate (Recall/Sensitivity) against the False Positive Rate across all possible classification thresholds, visualising the trade-off between correctly identifying positive instances and incorrectly classifying negative instances as positive, enabling threshold selection, model comparison, and assessment of a classifier's discriminative ability independent of class distribution or threshold choice.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: roc-curve-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[PerformanceMetric]]

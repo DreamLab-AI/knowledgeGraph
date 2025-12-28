@@ -8,6 +8,7 @@ id:: compatibility-process-ontology
   - preferred-term:: Compatibility Process
   - source-domain:: mv
   - owl:class:: mv:CompatibilityProcess
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Systematic procedure for ensuring that digital assets, applications, and systems conform to common standards, protocols, and specifications to enable seamless exchange, integration, and interoperability across metaverse platforms.
 

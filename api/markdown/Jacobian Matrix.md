@@ -9,7 +9,6 @@ id:: rb-0030-jacobian-matrix-ontology
   - source-domain:: mv
   - owl:class:: mv:JacobianMatrix
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Metaverse]]

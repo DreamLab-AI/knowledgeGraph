@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: A parameter-efficient fine-tuning method that learns continuous prompt embeddings prepended to the input whilst keeping the pre-trained model frozen. Prompt tuning optimises task-specific soft prompts in the embedding space rather than modifying model weights.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: prompt-tuning-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[TrainingMethod]]

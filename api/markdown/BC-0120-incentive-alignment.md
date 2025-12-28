@@ -9,7 +9,6 @@ id:: bc-0120-incentive-alignment-ontology
   - source-domain:: bc
   - owl:class:: bc:Bc0120IncentiveAlignment
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Token Economics]]

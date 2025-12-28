@@ -9,7 +9,6 @@ id:: bc-0111-deflationary-token-ontology
   - source-domain:: bc
   - owl:class:: bc:Bc0111DeflationaryToken
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Token]]

@@ -8,11 +8,11 @@
 	- owl:class:: ai:ConvolutionalNeuralNetwork
 	- status:: approved
 	- public-access:: true
-	- definition:: ### Primary Definition
+	- definition:: A class of deep learning models primarily designed to process data with grid-like topology such as images. CNNs learn hierarchical feature representations through convolutional filters that detect patterns from edges to objects, using weight sharing and local connectivity to reduce parameters and improve generalisation.
 	- source:: [[LeCun et al. 1998 Gradient-Based Learning]], [[Krizhevsky et al. 2012 AlexNet]], [[He et al. 2016 ResNet]], [[IEEE CVPR Proceedings]]
 	- maturity:: mature
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: convolutional-neural-network-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[NeuralNetworkArchitecture]]

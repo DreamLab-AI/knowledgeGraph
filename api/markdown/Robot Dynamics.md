@@ -6,8 +6,7 @@
   - owl:class:: mv:RobotDynamics
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- is-subclass-of:: [[RobotMechanics]]
 
 

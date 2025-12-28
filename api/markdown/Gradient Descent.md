@@ -9,8 +9,7 @@ id:: unknown-ontology
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:GradientDescent
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[TrainingMethod]]
 

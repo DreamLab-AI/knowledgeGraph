@@ -4,7 +4,7 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9783
-	- source-domain:: metaverse
+	- source-domain:: mv
 	- preferred-term:: Audio Parameters
 	- status:: active
 	- definition:: Audio Parameters are the configurable settings and properties defining spatial audio behavior in virtual environments, including source position, direction, attenuation, room acoustics, HRTF profiles, and rendering parameters that enable realistic 3D sound experiences in VR, AR, and metaverse applications.

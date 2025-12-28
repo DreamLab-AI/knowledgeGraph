@@ -9,6 +9,7 @@ id:: data-anonymization-pipeline-ontology
   - source-domain:: ai
   - status:: draft
   - owl:class:: ai:DataAnonymizationPipeline
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - definition:: An automated, multi-stage process that systematically removes, masks, or generalizes personally identifiable information (PII) from datasets to protect individual privacy while preserving data utility for analysis.
 
 ### Relationships

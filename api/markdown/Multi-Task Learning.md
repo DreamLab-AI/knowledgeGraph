@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: A machine learning paradigm where a model is trained simultaneously on multiple related tasks, sharing representations across tasks to improve generalization and efficiency. Multi-task learning leverages task relatedness to learn better features than training on each task independently.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: multi-task-learning-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[MachineLearning]]

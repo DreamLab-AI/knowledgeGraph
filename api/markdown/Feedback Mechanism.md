@@ -3,7 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0226
-	- source-domain:: data
+	- source-domain:: mv
 	- preferred-term:: Feedback Mechanism
 	- status:: draft
 	- public-access:: true
@@ -15,11 +15,12 @@
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[InteractionDomain]]
+	- belongsToDomain:: [[InteractionDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[NetworkLayer]]
 	- #### Relationships
 	  id:: feedback-mechanism-relationships
 	  collapsed:: true
+		- is-subclass-of:: [[Haptics]]
 		- is-part-of:: [[Immersive Experience Pipeline]]
 		- is-part-of:: [[User Interaction System]]
 		- has-part:: [[Haptic Feedback System]]

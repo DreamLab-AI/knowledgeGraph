@@ -10,4 +10,4 @@ id:: rb-0017-rescue-robot-ontology
   - owl:class:: rb:RescueRobot
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

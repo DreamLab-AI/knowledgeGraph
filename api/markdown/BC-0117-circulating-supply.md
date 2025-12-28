@@ -9,7 +9,6 @@ id:: bc-0117-circulating-supply-ontology
   - source-domain:: bc
   - owl:class:: bc:Bc0117CirculatingSupply
   - status:: draft
-  - definition:: ### Primary Definition
-
+  - definition:: 
 ### Relationships
 - is-subclass-of:: [[Token Economics]]

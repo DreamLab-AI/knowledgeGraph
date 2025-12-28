@@ -14,5 +14,5 @@
 
 ### Relationships
 
-- is-subclass-of:: [[dt:NaturalLanguageProcessing]]
-- is-subclass-of:: [[dt:NaturalLanguageProcessing]]
+- is-subclass-of:: [[NaturalLanguageProcessing]]
+- is-subclass-of:: [[NaturalLanguageProcessing]]

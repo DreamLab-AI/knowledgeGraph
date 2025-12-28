@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: A training technique that uses lower precision (FP16) for most computations whilst maintaining higher precision (FP32) for critical operations, reducing memory usage and increasing training speed without sacrificing model quality. Mixed precision training leverages modern GPU tensor cores for significant speedups.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: mixed-precision-training-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[ModelTraining]]

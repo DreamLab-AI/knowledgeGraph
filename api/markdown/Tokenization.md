@@ -8,6 +8,7 @@ id:: tokenization-ontology
   - preferred-term:: Tokenization
   - source-domain:: bc
   - owl:class:: bc:Tokenization
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Process of representing real-world or virtual assets as digital tokens on a blockchain through cryptographic mechanisms and smart contract protocols.
 

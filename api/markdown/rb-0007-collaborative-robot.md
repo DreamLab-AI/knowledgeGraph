@@ -10,4 +10,4 @@ id:: rb-0007-collaborative-robot-ontology
   - owl:class:: rb:CollaborativeRobot
   - is-subclass-of:: [[Robotics]]
   - status:: draft
-  - definition:: ### Primary Definition
+  - definition:: 

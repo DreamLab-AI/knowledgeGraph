@@ -3,7 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: DT-0106
-	- source-domain:: data
+	- source-domain:: mv
 	- preferred-term:: Data Integration Interface
 	- status:: draft
 	- public-access:: true
@@ -15,11 +15,12 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[DataManagementDomain]], [[InteroperabilityDomain]]
+	- belongsToDomain:: [[DataManagementDomain]], [[DisruptiveTechDomain]], [[InteroperabilityDomain]]
 	- implementedInLayer:: [[Data Layer]], [[Middleware Layer]]
 	- #### Relationships
 	  id:: data-integration-interface-relationships
 	  collapsed:: true
+		- is-subclass-of:: [[Metaverse Infrastructure]]
 		- is-part-of:: [[Interoperability Framework]]
 		- is-part-of:: [[Data Management]]
 		- has-part:: [[Schema Mapper]]

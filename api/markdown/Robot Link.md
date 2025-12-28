@@ -6,8 +6,7 @@
   - owl:class:: mv:RobotLink
 	- status:: draft
 	- public-access:: true
-	- definition:: ### Primary Definition
-	- maturity:: draft
+	- definition:: 	- maturity:: draft
 	- is-subclass-of:: [[rb-0021-robot-kinematics]]
 
 

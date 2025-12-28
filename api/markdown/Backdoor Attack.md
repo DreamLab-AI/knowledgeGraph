@@ -3,7 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-0088
-	- source-domain:: metaverse
+	- source-domain:: mv
 	- preferred-term:: Backdoor Attack
 	- status:: draft
 	- public-access:: true

@@ -81,11 +81,11 @@
 		      - complianceLevel - Degree of compliance achieved
 		
 		  - ## Cross-Domain Relationships
-		    - [[dt:governedBy]] → [[DAOGovernance]] - Ethical oversight through decentralized governance
-		    - [[dt:enforcedBy]] → [[SmartContract]] - Automated enforcement of ethical rules
-		    - [[dt:trackedOn]] → [[AuditTrail]] - Blockchain-based ethics compliance tracking
-		    - [[dt:validates]] → [[AutonomousAgent]] - Ethics validation for autonomous behaviours
-		    - [[dt:guides]] → [[AIGovernance]] - Guiding principles for AI governance
+		    - [[governedBy]] → [[DAOGovernance]] - Ethical oversight through decentralized governance
+		    - [[enforcedBy]] → [[SmartContract]] - Automated enforcement of ethical rules
+		    - [[trackedOn]] → [[AuditTrail]] - Blockchain-based ethics compliance tracking
+		    - [[validates]] → [[AutonomousAgent]] - Ethics validation for autonomous behaviours
+		    - [[guides]] → [[AIGovernance]] - Guiding principles for AI governance
 		
 		  - ## Related Concepts
 		    - [[Accountability]]

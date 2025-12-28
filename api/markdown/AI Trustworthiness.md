@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: The degree to which an AI system demonstrates characteristics that warrant confidence and reliance, encompassing transparency, explainability, fairness, accountability, robustness, reliability, safety, security, and privacy throughout its lifecycle.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: ai-trustworthiness-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[AIGovernance]]

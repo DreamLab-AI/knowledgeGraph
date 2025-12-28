@@ -8,6 +8,7 @@ id:: creatorroyaltytoken-ontology
   - preferred-term:: Creator Royalty Token
   - source-domain:: bc
   - owl:class:: bc:CreatorRoyaltyToken
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Token granting its holder a share of ongoing revenue from creative works, enabling automated royalty distribution and fractional ownership of intellectual property income streams.
 

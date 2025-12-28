@@ -15,7 +15,7 @@
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: bc:VirtualObject
-	- belongsToDomain:: [[CryptographicDomain]]
+	- belongsToDomain:: [[CryptographicDomain]], [[DisruptiveTechDomain]]
 	- #### Relationships
 	  id:: sybil-attack-relationships
 	  collapsed:: true
@@ -25,5 +25,5 @@
 
 ## Relationships
 
-- **is-subclass-of** [[dt:BlockchainEntity]] (disruptive-technologies) - owl:someValuesFrom
-- **is-subclass-of** [[ai:Networkcomponent]] (artificial-intelligence) - owl:someValuesFrom
+- **is-subclass-of** [[BlockchainEntity]] (disruptive-technologies) - owl:someValuesFrom
+- **is-subclass-of** [[Networkcomponent]] (artificial-intelligence) - owl:someValuesFrom

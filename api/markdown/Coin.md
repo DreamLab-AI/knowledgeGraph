@@ -8,6 +8,7 @@ id:: coin-ontology
   - preferred-term:: Coin
   - source-domain:: bc
   - owl:class:: bc:Coin
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Native blockchain asset within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

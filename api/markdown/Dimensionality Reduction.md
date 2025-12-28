@@ -10,9 +10,11 @@
 ### Relationships
 - is-subclass-of:: [[Machine Learning]]
 - is-subclass-of:: [[Unsupervised Learning]]
-- has-subclass:: [[PCA]]
-- has-subclass:: [[t-SNE]]
-- has-subclass:: [[UMAP]]
+  collapsed:: true
+  - #### Inverse Relationships (Inferred by Reasoner)
+    - PCA is-subclass-of Dimensionality Reduction
+    - t-SNE is-subclass-of Dimensionality Reduction
+    - UMAP is-subclass-of Dimensionality Reduction
 - skos:related:: [[Feature Engineering]]
 - skos:related:: [[Feature Selection]]
 - skos:related:: [[Curse of Dimensionality]]

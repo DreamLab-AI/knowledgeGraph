@@ -1,0 +1,77 @@
+{
+  "id": "Immersive Communication",
+  "title": "Immersive Communication",
+  "content": "- ### OntologyBlock\n  id:: immersive-communication-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-0605\n\t- preferred-term:: Immersive Communication\n\t- source-domain:: tc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Immersive Communication refers to communication systems and experiences that leverage extended reality (XR) technologies to create highly engaging, spatially-aware interaction environments. This includes VR meetings, AR collaboration tools, spatial audio conferencing, and mixed reality communication platforms that transcend traditional 2D video interfaces.\n\t- owl:class:: tc:ImmersiveCommunication\n\t- belongsToDomain:: [[Telecollaboration]]\n\t- #### Relationships\n\t  id:: immersive-communication-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Telecollaboration]]\n\t\t- is-parent-of:: [[VR Meeting]]\n\t\t- is-parent-of:: [[AR Collaboration]]\n\t\t- is-parent-of:: [[Spatial Audio]]\n\t\t- related-to:: [[Telepresence]]\n\t\t- related-to:: [[Spatial Computing]]",
+  "backlinks": [
+    "Communication Theory",
+    "Social Vr",
+    "Telepresence"
+  ],
+  "wiki_links": [
+    "Telecollaboration",
+    "AR Collaboration",
+    "Spatial Audio",
+    "Spatial Computing",
+    "VR Meeting",
+    "Telepresence"
+  ],
+  "ontology": {
+    "term_id": "TC-0605",
+    "preferred_term": "Immersive Communication",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/telecollaboration#ImmersiveCommunication",
+    "source_domain": "tc",
+    "domain": "tc",
+    "domain_full_name": "Telecollaboration",
+    "definition": "Immersive Communication refers to communication systems and experiences that leverage extended reality (XR) technologies to create highly engaging, spatially-aware interaction environments. This includes VR meetings, AR collaboration tools, spatial audio conferencing, and mixed reality communication platforms that transcend traditional 2D video interfaces.",
+    "scope_note": null,
+    "status": "active",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "tc:ImmersiveCommunication",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Telecollaboration"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Telecollaboration"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "other_relationships": {
+      "is-parent-of": [
+        "VR Meeting",
+        "AR Collaboration",
+        "Spatial Audio"
+      ],
+      "related-to": [
+        "Telepresence",
+        "Spatial Computing"
+      ]
+    },
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role"
+      ]
+    }
+  }
+}

@@ -8,6 +8,7 @@ id:: marketplace-ontology
   - preferred-term:: Marketplace
   - source-domain:: bc
   - owl:class:: bc:Marketplace
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: Digital platform enabling discovery, exchange, and transaction of virtual goods, services, and assets within or across metaverse systems through listing, escrow, and reputation mechanisms.
 

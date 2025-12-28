@@ -11,7 +11,7 @@
 
 
 ### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 - is-subclass-of:: [[AISecurity]]
 	- definition:: Testing methodology that deliberately attempts to cause AI system failures through adversarial inputs, edge cases, and challenging scenarios. Adversarial testing helps identify robustness issues, safety vulnerabilities, and alignment failures before deployment.
 

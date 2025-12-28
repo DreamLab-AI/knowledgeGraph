@@ -12,8 +12,10 @@
 	- belongsToDomain:: [[metaverse]]
 	- #### Relationships
 		- is-subclass-of:: [[Computing Hardware]]
-		- has-subclass:: [[XR Device]]
-		- has-subclass:: [[XR Headset]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - XR Device is-subclass-of XR Hardware
+	    - XR Headset is-subclass-of XR Hardware
 		- related-to:: [[VR Controllers]]
 	  id:: xr-hardware-relationships
 	  collapsed:: true

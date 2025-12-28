@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: A technique for injecting information about the relative or absolute position of tokens in a sequence, essential for transformers since they lack inherent sequential ordering.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: positional-encoding-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[NeuralNetwork]]

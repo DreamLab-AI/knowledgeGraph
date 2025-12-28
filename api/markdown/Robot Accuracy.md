@@ -7,16 +7,14 @@
 	- source-domain:: rb
 	- status:: draft
     - public-access:: true
-	- definition:: ### Primary Definition
-**Accuracy** - Difference between commanded and actual position
+	- definition:: **Accuracy** - Difference between commanded and actual position
 	- maturity:: draft
 	- owl:class:: rb:RobotAccuracy
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0035 accuracy
-	- ### Primary Definition
-**Accuracy** - Difference between commanded and actual position
+	-
 	-
 	- ### Original Content
 	  collapsed:: true
@@ -34,9 +32,6 @@
 		  - **Last Updated**: 2025-10-28
 		  
 		  ## Definition
-		  
-		  ### Primary Definition
-		  **Accuracy** - Difference between commanded and actual position
 		  
 		  ### Standards Context
 		  Defined according to ISO 8373:2021 and related international robotics standards.

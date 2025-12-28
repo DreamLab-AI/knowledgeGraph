@@ -15,7 +15,7 @@
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[TrustAndGovernanceDomain]]
+	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[DisruptiveTechDomain]]
 	- implementedInLayer:: [[ApplicationLayer]]
 	- #### Relationships
 - is-subclass-of:: [[Metaverse]]
@@ -34,7 +34,9 @@
 		- enables:: [[Content Removal]]
 		- enables:: [[Data Erasure]]
 		- enables:: [[User Privacy Control]]
-		- is-enabled-by:: [[Consent Management]]
+	  collapsed:: true
+	  - #### Inverse Relationships (Inferred by Reasoner)
+	    - Consent Management enables Right to Be Forgotten
 		- depends-on:: [[Data Processor]]
 		- depends-on:: [[Regulatory Compliance]]
 		- depends-on:: [[Data Controller]]

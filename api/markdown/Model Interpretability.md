@@ -10,7 +10,7 @@
 	- public-access:: true
 	- definition:: The degree to which a human can understand the cause-effect relationships within a machine learning model's decision-making process, encompassing both the model's internal mechanisms and the reasoning behind specific predictions.
 	- #### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: model-interpretability-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[Model]]

@@ -8,9 +8,11 @@ id:: block-propagation-time-ontology
   - preferred-term:: Block Propagation Time
   - source-domain:: bc
   - owl:class:: bc:BlockPropagationTime
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Network distribution duration within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 
 ### Relationships
+- is-subclass-of:: [[Network Component]]
 - uses-data-structure:: [[Blockchain Entity]]
 - instance-of:: [[NetworkComponent]]

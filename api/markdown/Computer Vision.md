@@ -12,7 +12,7 @@
 	- #### Relationships
 - enables:: [[rb-0008-autonomous-robot]]
 
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 	  id:: computer-vision-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[ArtificialIntelligence]]

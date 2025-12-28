@@ -8,6 +8,7 @@ id:: userconsenttoken-ontology
   - preferred-term:: User Consent Token
   - source-domain:: bc
   - owl:class:: bc:UserConsentToken
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: draft
   - definition:: A cryptographically verifiable digital token that represents and enforces user consent for data processing, collection, sharing, or participation in virtual environments with granular permission controls and revocation mechanisms.
 

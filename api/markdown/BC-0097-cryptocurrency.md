@@ -8,6 +8,7 @@ id:: cryptocurrency-ontology
   - preferred-term:: Cryptocurrency
   - source-domain:: bc
   - owl:class:: bc:Cryptocurrency
+	- belongsToDomain:: [[DisruptiveTechDomain]]
   - status:: complete
   - definition:: Digital currency on blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 

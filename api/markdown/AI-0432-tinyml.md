@@ -11,4 +11,4 @@ AI-0432-tinyml
   - owl:class:: ai:Ai0432Tinyml
 
 ### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]

@@ -14,4 +14,4 @@
 
 ### Relationships
 
-- is-subclass-of:: [[ai:ArtificialIntelligence]]
+- is-subclass-of:: [[ArtificialIntelligence]]

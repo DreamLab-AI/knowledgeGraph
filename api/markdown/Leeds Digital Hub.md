@@ -12,7 +12,7 @@
 	- owl:class:: mv:LeedsDigitalHub
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: RegionalEcosystem
-	- belongsToDomain:: [[UKTechEcosystem]]
+	- belongsToDomain:: [[UKTechEcosystem]], [[DisruptiveTechDomain]]
 
 ## Leeds Digital Hub
 

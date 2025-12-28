@@ -21,7 +21,7 @@
 	- maturity:: mv:Draft
 
 ### Relationships
-- is-subclass-of:: [[ai:ModelArchitecture]]
+- is-subclass-of:: [[ModelArchitecture]]
 - is-subclass-of:: [[BERT]]
 
 ## OWL Formal Semantics
