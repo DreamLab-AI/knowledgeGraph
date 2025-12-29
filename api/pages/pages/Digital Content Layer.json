@@ -6,17 +6,17 @@
     "Augmented Reality (AR)"
   ],
   "wiki_links": [
-    "AR Content",
-    "metaverse",
-    "3D Assets",
-    "Spatial Mapping",
     "Dynamic Rendering",
-    "Metaverse Architecture",
+    "Asset Management",
     "Layer Management",
-    "Scene Graph",
+    "AR Content",
+    "Metaverse Architecture",
+    "Spatial Mapping",
     "Content Composition",
     "Rendering Engine",
-    "Asset Management"
+    "Scene Graph",
+    "3D Assets",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9853",

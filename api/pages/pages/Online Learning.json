@@ -8,9 +8,9 @@
   "wiki_links": [
     "Reinforcement Learning",
     "Incremental Learning",
-    "Adaptive Systems",
-    "Stochastic Gradient Descent",
     "Real-Time Learning",
+    "Stochastic Gradient Descent",
+    "Adaptive Systems",
     "Continual Learning",
     "Machine Learning"
   ],

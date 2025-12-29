@@ -11,10 +11,10 @@
   ],
   "wiki_links": [
     "Planning and Scheduling",
+    "Pathfinding",
     "Optimization",
-    "Artificial Intelligence",
     "Graph Theory",
-    "Pathfinding"
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-1003",

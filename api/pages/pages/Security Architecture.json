@@ -8,12 +8,12 @@
     "Threat Surface Map"
   ],
   "wiki_links": [
-    "Zero Trust Security",
-    "metaverse",
     "System Architecture",
+    "Zero Trust Security",
     "Secure Systems",
+    "Threat Detection",
     "Identity Management",
-    "Threat Detection"
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10036",

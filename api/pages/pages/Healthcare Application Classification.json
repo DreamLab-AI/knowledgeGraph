@@ -6,11 +6,11 @@
     "ETSI_Domain_Application___Health"
   ],
   "wiki_links": [
-    "Medical Simulation",
-    "metaverse",
     "Healthcare Technology",
     "Extended Reality Xr",
-    "Structured Healthcare Innovation"
+    "Structured Healthcare Innovation",
+    "Medical Simulation",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9916",

@@ -7,16 +7,16 @@
     "ETSI_Domain_Ethics_&_Law"
   ],
   "wiki_links": [
-    "Digital Ethics",
-    "metaverse",
-    "User Safety",
-    "Community Standards",
-    "Moderation Tools",
-    "Community Trust",
-    "Human Moderators",
     "AI Detection Systems",
+    "User Safety",
+    "Human Moderators",
+    "Platform Governance",
+    "Digital Ethics",
+    "Community Trust",
     "Harassment Prevention",
-    "Platform Governance"
+    "metaverse",
+    "Moderation Tools",
+    "Community Standards"
   ],
   "ontology": {
     "term_id": "MV-9829",
