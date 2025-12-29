@@ -8,12 +8,12 @@
     "Data Anonymization Pipeline"
   ],
   "wiki_links": [
-    "Access Control",
-    "Data Security",
-    "Encryption",
-    "Confidential Collaboration",
     "Privacy Preserving Data Sharing",
-    "metaverse"
+    "metaverse",
+    "Access Control",
+    "Confidential Collaboration",
+    "Data Security",
+    "Encryption"
   ],
   "ontology": {
     "term_id": "MV-10034",

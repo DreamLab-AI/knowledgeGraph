@@ -6,12 +6,12 @@
     "Collective Intelligence System"
   ],
   "wiki_links": [
-    "Knowledge Management System",
-    "Collaborative Knowledge Discovery",
-    "Ontology Management",
+    "Linked Data",
     "metaverse",
     "Semantic Web Standards",
-    "Linked Data"
+    "Ontology Management",
+    "Knowledge Management System",
+    "Collaborative Knowledge Discovery"
   ],
   "ontology": {
     "term_id": "MV-10041",

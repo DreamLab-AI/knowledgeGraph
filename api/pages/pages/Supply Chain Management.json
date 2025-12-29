@@ -9,12 +9,12 @@
     "Product Recall Management"
   ],
   "wiki_links": [
-    "Blockchain Technology",
+    "Provenance",
     "Blockchain Entity",
     "Supply Chain Transparency",
-    "Smart Contract",
-    "Provenance",
-    "Traceability"
+    "Blockchain Technology",
+    "Traceability",
+    "Smart Contract"
   ],
   "ontology": {
     "term_id": "BC-0605",

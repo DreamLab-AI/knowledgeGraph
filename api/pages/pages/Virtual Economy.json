@@ -28,12 +28,12 @@
     "Digital Asset"
   ],
   "wiki_links": [
-    "NFT",
     "Virtual Asset",
-    "Metaverse",
-    "Cryptocurrency",
+    "metaverse",
     "Digital Twin",
-    "metaverse"
+    "Cryptocurrency",
+    "NFT",
+    "Metaverse"
   ],
   "ontology": {
     "term_id": "MV-10118",

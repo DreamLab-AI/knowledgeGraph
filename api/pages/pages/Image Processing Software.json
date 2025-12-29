@@ -7,10 +7,10 @@
   ],
   "wiki_links": [
     "3D Reconstruction",
-    "Gesture Recognition",
-    "Computer Vision System",
     "Visual Metaverse Interaction",
-    "metaverse"
+    "metaverse",
+    "Gesture Recognition",
+    "Computer Vision System"
   ],
   "ontology": {
     "term_id": "MV-9919",

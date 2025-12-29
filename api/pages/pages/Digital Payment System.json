@@ -8,16 +8,16 @@
   ],
   "wiki_links": [
     "Virtual Transactions",
-    "Digital Wallet",
-    "Stablecoin",
-    "Cryptocurrency",
-    "Payment Gateway",
-    "Financial Infrastructure",
-    "Blockchain Network",
     "DeFi",
+    "Financial Infrastructure",
+    "Digital Wallet",
     "metaverse",
+    "Payment Gateway",
+    "Cryptocurrency",
     "Cross-Border Payments",
-    "Micropayments"
+    "Micropayments",
+    "Stablecoin",
+    "Blockchain Network"
   ],
   "ontology": {
     "term_id": "MV-9864",

@@ -8,11 +8,11 @@
     "Biometric Binding Mechanism"
   ],
   "wiki_links": [
-    "Infrared Camera",
-    "Tracking Hardware",
-    "Dark Environment VR",
+    "Hand Tracking System",
     "metaverse",
-    "Hand Tracking System"
+    "Dark Environment VR",
+    "Tracking Hardware",
+    "Infrared Camera"
   ],
   "ontology": {
     "term_id": "MV-9929",

@@ -8,10 +8,10 @@
   ],
   "wiki_links": [
     "System Architecture",
-    "User Experience",
-    "Interaction Design",
     "Accessibility",
-    "metaverse"
+    "metaverse",
+    "Interaction Design",
+    "User Experience"
   ],
   "ontology": {
     "term_id": "MV-10097",

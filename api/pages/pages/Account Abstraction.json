@@ -8,10 +8,10 @@
   ],
   "wiki_links": [
     "ERC-4337",
-    "Blockchain",
-    "Ethereum",
     "Ethereum Standard",
-    "BlockchainDomain"
+    "BlockchainDomain",
+    "Ethereum",
+    "Blockchain"
   ],
   "ontology": {
     "term_id": "BC-9005",

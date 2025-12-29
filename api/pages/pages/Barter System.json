@@ -4,17 +4,17 @@
   "content": "- ### OntologyBlock\n  id:: barter-system-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9794\n\t- source-domain:: mv\n\t- preferred-term:: Barter System\n\t- definition:: A decentralized exchange mechanism enabling peer-to-peer trading of goods, services, or digital assets without monetary intermediaries, enhanced in digital contexts through blockchain-based matching algorithms and smart contracts that solve the traditional \"double coincidence of wants\" problem.\n\t- status:: active\n\t- owl:class:: mv:BarterSystem\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: barter-system-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Exchange Mechanism]]\n\t\t- enables:: [[Peer-to-Peer Trading]], [[Asset Exchange]], [[Virtual Economy]]\n\t\t- requires:: [[Matching Algorithm]], [[Smart Contracts]], [[Trust Mechanism]]\n\t\t- related-to:: [[Digital Currency]], [[Blockchain]], [[Decentralized Exchange]]\n- ## Technical Details\n\t- **Core Architecture**: Modern digital barter systems use intelligent matching algorithms powered by blockchain technology to facilitate multi-party exchanges without traditional currency\n\t- **Key Components**:\n\t\t- Trustless transaction infrastructure\n\t\t- Double coincidence resolution algorithms\n\t\t- Multi-party exchange coordination\n\t\t- Value equivalence computation\n\t- **Market Context**: The bartering platform market grew from USD 1.04 billion in 2024 to an expected USD 1.49 billion by 2030 (6.10% CAGR)\n\t- **Metaverse Integration**: Barter represents 30-40% of global transactions in virtual economies, enabling exchange of virtual products, currencies, and digital assets\n- ## Applications\n\t- Peer-to-peer skill and resource exchange\n\t- Virtual asset trading in metaverse environments\n\t- Business-to-business countertrade\n\t- Community barter networks for local economies",
   "backlinks": [],
   "wiki_links": [
-    "Digital Currency",
-    "Blockchain",
-    "Peer-to-Peer Trading",
-    "Asset Exchange",
-    "Virtual Economy",
     "Smart Contracts",
-    "Exchange Mechanism",
+    "Digital Currency",
+    "Virtual Economy",
     "Trust Mechanism",
-    "Matching Algorithm",
+    "Peer-to-Peer Trading",
     "metaverse",
-    "Decentralized Exchange"
+    "Asset Exchange",
+    "Exchange Mechanism",
+    "Matching Algorithm",
+    "Decentralized Exchange",
+    "Blockchain"
   ],
   "ontology": {
     "term_id": "MV-9794",

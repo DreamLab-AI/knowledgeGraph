@@ -491,14 +491,14 @@
   ],
   "wiki_links": [
     "CoreOntology",
-    "Domain",
     "RoboticsDomain",
-    "ConceptualLayer",
-    "Technology Forecasting",
+    "Domain",
+    "MetaverseDomain",
     "Innovation Tracking",
     "AIApplicationsDomain",
-    "MetaverseDomain",
-    "BlockchainDomain"
+    "Technology Forecasting",
+    "BlockchainDomain",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "NGM-0020",

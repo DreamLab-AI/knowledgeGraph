@@ -8,11 +8,11 @@
   ],
   "wiki_links": [
     "System Manipulation",
-    "Crafted Perturbations",
-    "Knowledge of Target Model",
-    "AI Security Threats",
     "Model Evasion",
-    "metaverse"
+    "Crafted Perturbations",
+    "metaverse",
+    "Knowledge of Target Model",
+    "AI Security Threats"
   ],
   "ontology": {
     "term_id": "MV-9760",

@@ -9,11 +9,11 @@
   ],
   "wiki_links": [
     "System Architecture",
-    "Zero Trust Security",
     "Secure Systems",
+    "metaverse",
     "Threat Detection",
     "Identity Management",
-    "metaverse"
+    "Zero Trust Security"
   ],
   "ontology": {
     "term_id": "MV-10036",
