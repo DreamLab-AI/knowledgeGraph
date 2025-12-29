@@ -6,12 +6,12 @@
     "tc-0003-telepresence-robot"
   ],
   "wiki_links": [
-    "Motion Planning",
-    "Gripper",
-    "Robotics Systems",
-    "Robot Kinematics",
     "Grasp Planning",
-    "End Effector"
+    "End Effector",
+    "Robot Kinematics",
+    "Gripper",
+    "Motion Planning",
+    "Robotics Systems"
   ],
   "ontology": {
     "term_id": "RB-0602",

@@ -9,16 +9,16 @@
   ],
   "wiki_links": [
     "RegTech",
-    "metaverse",
-    "Real-Time Monitoring",
-    "Regulatory Technology",
-    "Blockchain Network",
-    "Audit Trail",
-    "Compliance Monitoring",
-    "Data Integration",
     "Risk Visualization",
+    "Compliance Monitoring",
+    "metaverse",
     "Regulatory Reporting",
-    "Analytics Engine"
+    "Analytics Engine",
+    "Data Integration",
+    "Blockchain Network",
+    "Regulatory Technology",
+    "Real-Time Monitoring",
+    "Audit Trail"
   ],
   "ontology": {
     "term_id": "MV-9827",

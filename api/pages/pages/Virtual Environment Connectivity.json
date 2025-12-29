@@ -6,11 +6,11 @@
     "Network Infrastructure"
   ],
   "wiki_links": [
-    "metaverse",
-    "Real-Time Communication",
-    "Interoperability",
     "Virtual Environment",
-    "Network Infrastructure"
+    "Real-Time Communication",
+    "Network Infrastructure",
+    "metaverse",
+    "Interoperability"
   ],
   "ontology": {
     "term_id": "MV-10119",

@@ -9,10 +9,10 @@
   ],
   "wiki_links": [
     "Model Training",
-    "Dimensionality Reduction",
     "Feature Selection",
     "Data Cleaning",
     "Data Preprocessing",
+    "Dimensionality Reduction",
     "Machine Learning",
     "Model Performance"
   ],

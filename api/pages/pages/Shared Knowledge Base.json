@@ -8,10 +8,10 @@
   "wiki_links": [
     "Linked Data",
     "metaverse",
-    "Ontology Management",
-    "Knowledge Management System",
     "Semantic Web Standards",
-    "Collaborative Knowledge Discovery"
+    "Collaborative Knowledge Discovery",
+    "Knowledge Management System",
+    "Ontology Management"
   ],
   "ontology": {
     "term_id": "MV-10041",

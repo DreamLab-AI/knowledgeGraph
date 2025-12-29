@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "Supervised Learning",
+    "Machine Learning Pipeline",
+    "Human-in-the-Loop",
     "Data Engineering",
     "Active Learning",
-    "Human-in-the-Loop",
-    "Machine Learning Pipeline",
     "Training Data"
   ],
   "ontology": {

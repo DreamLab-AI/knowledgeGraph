@@ -490,15 +490,15 @@
     "Eclipse Attack"
   ],
   "wiki_links": [
-    "ConceptualLayer",
-    "CoreOntology",
-    "RoboticsDomain",
-    "Innovation Tracking",
-    "AIApplicationsDomain",
     "MetaverseDomain",
     "Domain",
+    "ConceptualLayer",
+    "BlockchainDomain",
+    "Innovation Tracking",
     "Technology Forecasting",
-    "BlockchainDomain"
+    "RoboticsDomain",
+    "AIApplicationsDomain",
+    "CoreOntology"
   ],
   "ontology": {
     "term_id": "NGM-0020",

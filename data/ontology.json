@@ -435,7 +435,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "ai-aialignment",
+      "id": "aialignment",
       "type": "owl:Class"
     },
     {
@@ -447,7 +447,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "ai-aideployment",
+      "id": "aideployment",
       "type": "owl:Class"
     },
     {
@@ -2731,7 +2731,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "dao",
+      "id": "bc-dao",
       "type": "owl:Class"
     },
     {
@@ -3295,7 +3295,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "liquidproofofstake",
+      "id": "bc-liquidproofofstake",
       "type": "owl:Class"
     },
     {
@@ -3471,7 +3471,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "nominatedproofofstake",
+      "id": "bc-nominatedproofofstake",
       "type": "owl:Class"
     },
     {
@@ -4307,7 +4307,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "arscenegraph",
+      "id": "mv-arscenegraph",
       "type": "owl:Class"
     },
     {
@@ -4931,7 +4931,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-cryptographichash",
+      "id": "cryptographichash",
       "type": "owl:Class"
     },
     {
@@ -4939,7 +4939,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-culturalheritagexrexperience",
+      "id": "culturalheritagexrexperience",
       "type": "owl:Class"
     },
     {
@@ -5839,7 +5839,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-etsimetaversedomaintaxonomy",
+      "id": "etsimetaversedomaintaxonomy",
       "type": "owl:Class"
     },
     {
@@ -5983,7 +5983,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "gdprarticle45",
+      "id": "mv-gdprarticle45",
       "type": "owl:Class"
     },
     {
@@ -6415,7 +6415,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "isostandards",
+      "id": "mv-isostandards",
       "type": "owl:Class"
     },
     {
@@ -7011,7 +7011,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-persistentarplacement",
+      "id": "persistentarplacement",
       "type": "owl:Class"
     },
     {
@@ -7583,7 +7583,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "sparqlqueryengine",
+      "id": "mv-sparqlqueryengine",
       "type": "owl:Class"
     },
     {
@@ -7871,7 +7871,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "therapeuticvr",
+      "id": "mv-therapeuticvr",
       "type": "owl:Class"
     },
     {
@@ -8431,7 +8431,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "xraccessibilityguideline",
+      "id": "mv-xraccessibilityguideline",
       "type": "owl:Class"
     },
     {
@@ -8459,7 +8459,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "xrtestinginfrastructure",
+      "id": "mv-xrtestinginfrastructure",
       "type": "owl:Class"
     },
     {
@@ -8711,7 +8711,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "rb-autonomousagent",
+      "id": "autonomousagent",
       "type": "owl:Class"
     },
     {
@@ -10755,7 +10755,7 @@
       }
     },
     {
-      "id": "ai-aialignment",
+      "id": "aialignment",
       "iri": "http://narrativegoldmine.com/ai#AiAlignment",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -10797,7 +10797,7 @@
       }
     },
     {
-      "id": "ai-aideployment",
+      "id": "aideployment",
       "iri": "http://narrativegoldmine.com/ai#AiDeployment",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -18750,7 +18750,7 @@
       }
     },
     {
-      "id": "dao",
+      "id": "bc-dao",
       "iri": "http://narrativegoldmine.com/blockchain#Dao",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -20691,7 +20691,7 @@
       }
     },
     {
-      "id": "liquidproofofstake",
+      "id": "bc-liquidproofofstake",
       "iri": "http://narrativegoldmine.com/blockchain#LiquidProofOfStake",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -21315,7 +21315,7 @@
       }
     },
     {
-      "id": "nominatedproofofstake",
+      "id": "bc-nominatedproofofstake",
       "iri": "http://narrativegoldmine.com/blockchain#NominatedProofOfStake",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -24207,7 +24207,7 @@
       }
     },
     {
-      "id": "arscenegraph",
+      "id": "mv-arscenegraph",
       "iri": "http://narrativegoldmine.com/metaverse#ArSceneGraph",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -26370,7 +26370,7 @@
       }
     },
     {
-      "id": "mv-cryptographichash",
+      "id": "cryptographichash",
       "iri": "http://narrativegoldmine.com/metaverse#Cryptographichash",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -26397,7 +26397,7 @@
       }
     },
     {
-      "id": "mv-culturalheritagexrexperience",
+      "id": "culturalheritagexrexperience",
       "iri": "http://narrativegoldmine.com/metaverse#CulturalHeritageXrExperience",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -29532,7 +29532,7 @@
       }
     },
     {
-      "id": "mv-etsimetaversedomaintaxonomy",
+      "id": "etsimetaversedomaintaxonomy",
       "iri": "http://narrativegoldmine.com/metaverse#EtsiMetaverseDomainTaxonomy",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -30009,7 +30009,7 @@
       }
     },
     {
-      "id": "gdprarticle45",
+      "id": "mv-gdprarticle45",
       "iri": "http://narrativegoldmine.com/metaverse#GdprArticle45",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -31506,7 +31506,7 @@
       }
     },
     {
-      "id": "isostandards",
+      "id": "mv-isostandards",
       "iri": "http://narrativegoldmine.com/metaverse#IsoStandards",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -33630,7 +33630,7 @@
       }
     },
     {
-      "id": "mv-persistentarplacement",
+      "id": "persistentarplacement",
       "iri": "http://narrativegoldmine.com/metaverse#PersistentArPlacement",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -35619,7 +35619,7 @@
       }
     },
     {
-      "id": "sparqlqueryengine",
+      "id": "mv-sparqlqueryengine",
       "iri": "http://narrativegoldmine.com/metaverse#SparqlQueryEngine",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -36618,7 +36618,7 @@
       }
     },
     {
-      "id": "therapeuticvr",
+      "id": "mv-therapeuticvr",
       "iri": "http://narrativegoldmine.com/metaverse#TherapeuticVr",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -38628,7 +38628,7 @@
       }
     },
     {
-      "id": "xraccessibilityguideline",
+      "id": "mv-xraccessibilityguideline",
       "iri": "http://narrativegoldmine.com/metaverse#XrAccessibilityGuideline",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -38733,7 +38733,7 @@
       }
     },
     {
-      "id": "xrtestinginfrastructure",
+      "id": "mv-xrtestinginfrastructure",
       "iri": "http://narrativegoldmine.com/metaverse#XrTestingInfrastructure",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -39694,7 +39694,7 @@
       }
     },
     {
-      "id": "rb-autonomousagent",
+      "id": "autonomousagent",
       "iri": "http://narrativegoldmine.com/robotics#AutonomousAgent",
       "baseIri": "http://narrativegoldmine.com/robotics",
       "attributes": [
@@ -44186,7 +44186,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-ai-aideployment-ai-ailifecycle",
+      "id": "subclassof-aideployment-ai-ailifecycle",
       "type": "rdfs:subClassOf"
     },
     {
@@ -44530,7 +44530,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-ai-aialignment-ai-aisafety",
+      "id": "subclassof-aialignment-ai-aisafety",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45926,7 +45926,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-persistentarplacement-augmentedreality",
+      "id": "subclassof-persistentarplacement-augmentedreality",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46238,7 +46238,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-sparqlqueryengine-queryprocessor",
+      "id": "subclassof-mv-sparqlqueryengine-queryprocessor",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46410,7 +46410,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-therapeuticvr-virtualrealityapplications",
+      "id": "subclassof-mv-therapeuticvr-virtualrealityapplications",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46770,7 +46770,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-xrtestinginfrastructure-testinginfrastructure",
+      "id": "subclassof-mv-xrtestinginfrastructure-testinginfrastructure",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46818,7 +46818,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-isostandards-technicalstandard",
+      "id": "subclassof-mv-isostandards-technicalstandard",
       "type": "rdfs:subClassOf"
     },
     {
@@ -47150,7 +47150,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-gdprarticle45-dataprotectionregulation",
+      "id": "subclassof-mv-gdprarticle45-dataprotectionregulation",
       "type": "rdfs:subClassOf"
     },
     {
@@ -48741,8 +48741,8 @@
       ]
     },
     {
-      "id": "subclassof-ai-aideployment-ai-ailifecycle",
-      "domain": "ai-aideployment",
+      "id": "subclassof-aideployment-ai-ailifecycle",
+      "domain": "aideployment",
       "range": "ai-ailifecycle",
       "attributes": [
         "anonymous",
@@ -49515,8 +49515,8 @@
       ]
     },
     {
-      "id": "subclassof-ai-aialignment-ai-aisafety",
-      "domain": "ai-aialignment",
+      "id": "subclassof-aialignment-ai-aisafety",
+      "domain": "aialignment",
       "range": "ai-aisafety",
       "attributes": [
         "anonymous",
@@ -52656,8 +52656,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-persistentarplacement-augmentedreality",
-      "domain": "mv-persistentarplacement",
+      "id": "subclassof-persistentarplacement-augmentedreality",
+      "domain": "persistentarplacement",
       "range": "augmentedreality",
       "attributes": [
         "anonymous",
@@ -53358,8 +53358,8 @@
       ]
     },
     {
-      "id": "subclassof-sparqlqueryengine-queryprocessor",
-      "domain": "sparqlqueryengine",
+      "id": "subclassof-mv-sparqlqueryengine-queryprocessor",
+      "domain": "mv-sparqlqueryengine",
       "range": "queryprocessor",
       "attributes": [
         "anonymous",
@@ -53745,8 +53745,8 @@
       ]
     },
     {
-      "id": "subclassof-therapeuticvr-virtualrealityapplications",
-      "domain": "therapeuticvr",
+      "id": "subclassof-mv-therapeuticvr-virtualrealityapplications",
+      "domain": "mv-therapeuticvr",
       "range": "virtualrealityapplications",
       "attributes": [
         "anonymous",
@@ -54555,8 +54555,8 @@
       ]
     },
     {
-      "id": "subclassof-xrtestinginfrastructure-testinginfrastructure",
-      "domain": "xrtestinginfrastructure",
+      "id": "subclassof-mv-xrtestinginfrastructure-testinginfrastructure",
+      "domain": "mv-xrtestinginfrastructure",
       "range": "testinginfrastructure",
       "attributes": [
         "anonymous",
@@ -54663,8 +54663,8 @@
       ]
     },
     {
-      "id": "subclassof-isostandards-technicalstandard",
-      "domain": "isostandards",
+      "id": "subclassof-mv-isostandards-technicalstandard",
+      "domain": "mv-isostandards",
       "range": "technicalstandard",
       "attributes": [
         "anonymous",
@@ -55410,8 +55410,8 @@
       ]
     },
     {
-      "id": "subclassof-gdprarticle45-dataprotectionregulation",
-      "domain": "gdprarticle45",
+      "id": "subclassof-mv-gdprarticle45-dataprotectionregulation",
+      "domain": "mv-gdprarticle45",
       "range": "dataprotectionregulation",
       "attributes": [
         "anonymous",

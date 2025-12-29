@@ -6,15 +6,15 @@
   "wiki_links": [
     "3D Model",
     "Design Visualization",
-    "Construction Simulation",
+    "Modeling Standards",
+    "Digital Twin",
+    "BIM Software",
     "metaverse",
     "Design Data",
-    "Digital Twin",
-    "Modeling Standards",
-    "BIM Software",
-    "Clash Detection",
     "Virtual Construction",
-    "Building Design"
+    "Clash Detection",
+    "Building Design",
+    "Construction Simulation"
   ],
   "ontology": {
     "term_id": "MV-9798",
