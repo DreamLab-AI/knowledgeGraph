@@ -27,7 +27,6 @@
     "Encoder",
     "AI-Augmented Software Engineering",
     "WordPiece",
-    "Mixtral",
     "Overfitting",
     "SentencePiece",
     "Backpropagation",
@@ -35,7 +34,6 @@
     "Cortex Agent",
     "Underfitting",
     "QLoRA",
-    "ELECTRA",
     "Super-Resolution",
     "Accuracy",
     "Symbolic Reasoning",
@@ -70,18 +68,17 @@
     "Helpfulness",
     "Property",
     "Avatar",
-    "BART",
     "CutMix",
     "Knowledge Graph",
     "ETSI_Domain_Data_Mgmt___AI"
   ],
   "wiki_links": [
-    "Blockchain Technology",
+    "Metaverse Technology",
+    "Artificial Intelligence",
     "Technology Domain",
     "Robotics Systems",
-    "Artificial Intelligence",
-    "Metaverse Technology",
-    "Telecollaboration"
+    "Telecollaboration",
+    "Blockchain Technology"
   ],
   "ontology": {
     "term_id": "NGM-7000",

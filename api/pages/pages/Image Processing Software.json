@@ -6,11 +6,11 @@
     "Photogrammetry"
   ],
   "wiki_links": [
-    "Visual Metaverse Interaction",
-    "Computer Vision System",
     "Gesture Recognition",
+    "Visual Metaverse Interaction",
     "3D Reconstruction",
-    "metaverse"
+    "metaverse",
+    "Computer Vision System"
   ],
   "ontology": {
     "term_id": "MV-9919",

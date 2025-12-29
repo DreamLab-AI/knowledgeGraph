@@ -98,8 +98,3 @@ Self-attention models compute representations by allowing each token to attend t
 
 *Ontology Term managed by AI-Grounded Ontology Working Group*
 *UK English Spelling Standards Applied*
-	- maturity:: draft
-	- owl:class:: mv:SelfAttention
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]

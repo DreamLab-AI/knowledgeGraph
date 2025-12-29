@@ -6,11 +6,11 @@
     "Spatial Audio Scene Description"
   ],
   "wiki_links": [
-    "Technical Standards",
-    "Interoperability",
-    "Virtual Environment",
     "OpenXR",
-    "metaverse"
+    "Technical Standards",
+    "metaverse",
+    "Interoperability",
+    "Virtual Environment"
   ],
   "ontology": {
     "term_id": "MV-10121",

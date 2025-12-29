@@ -7,8 +7,8 @@
     "Asynchronous Collaboration",
     "Collaboration Tools",
     "Slack",
-    "Discord",
-    "TelecollaborationDomain"
+    "TelecollaborationDomain",
+    "Discord"
   ],
   "ontology": {
     "term_id": "TC-9001",

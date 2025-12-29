@@ -16,15 +16,15 @@
     "Security Layer"
   ],
   "wiki_links": [
-    "Single Sign-On",
-    "Session Management",
-    "Cross-Platform Identity",
-    "Access Control",
     "Core Technology",
-    "Authorisation",
     "Identity Verification",
-    "Identity Management",
+    "Access Control",
     "Security Service",
+    "Session Management",
+    "Single Sign-On",
+    "Authorisation",
+    "Identity Management",
+    "Cross-Platform Identity",
     "Credential Validation"
   ],
   "ontology": {

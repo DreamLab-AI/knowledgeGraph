@@ -17,11 +17,11 @@
     "Data Format Standard"
   ],
   "wiki_links": [
-    "Standards",
-    "Standards Compliance",
-    "Interoperability",
     "Standards Conformance",
-    "metaverse"
+    "Standards",
+    "metaverse",
+    "Interoperability",
+    "Standards Compliance"
   ],
   "ontology": {
     "term_id": "MV-10079",

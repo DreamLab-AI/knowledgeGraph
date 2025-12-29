@@ -13,10 +13,10 @@
     "Question Answering"
   ],
   "wiki_links": [
-    "Large language models",
+    "MachineLearning",
     "Artificial Intelligence",
-    "ModelArchitecture",
-    "MachineLearning"
+    "Large language models",
+    "ModelArchitecture"
   ],
   "ontology": {
     "term_id": "NGM-7012",

@@ -133,10 +133,10 @@
   ],
   "wiki_links": [
     "Artificial Intelligence",
-    "MachineLearning",
     "TrainingMethod",
-    "NeuralNetworkArchitecture",
-    "Deep Learning"
+    "MachineLearning",
+    "Deep Learning",
+    "NeuralNetworkArchitecture"
   ],
   "ontology": {
     "term_id": "AI-7000",

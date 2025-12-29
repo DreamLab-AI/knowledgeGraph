@@ -14,17 +14,17 @@
     "Carbon Footprint Assessment"
   ],
   "wiki_links": [
-    "Environmental Accounting",
-    "GHG Protocol",
-    "Climate Action Planning",
     "Emissions Reporting",
-    "Data Collection",
-    "Verification Process",
-    "Carbon Calculator",
     "Carbon Footprint Assessment",
+    "Environmental Accounting",
+    "Carbon Calculator",
+    "GHG Protocol",
     "Regulatory Compliance",
     "Emission Factors",
-    "metaverse"
+    "metaverse",
+    "Verification Process",
+    "Climate Action Planning",
+    "Data Collection"
   ],
   "ontology": {
     "term_id": "MV-9807",

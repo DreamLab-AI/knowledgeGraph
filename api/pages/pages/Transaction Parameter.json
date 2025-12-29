@@ -6,10 +6,10 @@
     "Gas Limit"
   ],
   "wiki_links": [
+    "Transaction Fee",
     "Smart Contract",
     "Gas",
-    "Blockchain Transaction",
-    "Transaction Fee"
+    "Blockchain Transaction"
   ],
   "ontology": {
     "term_id": "MV-10084",

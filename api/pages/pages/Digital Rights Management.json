@@ -9,17 +9,17 @@
     "Digital Asset Workflow"
   ],
   "wiki_links": [
-    "Royalty Distribution",
-    "Smart Contracts",
-    "Access Control",
-    "License Management",
-    "Encryption",
-    "Content Protection",
-    "NFT Licensing",
     "Content Monetization",
-    "Piracy Prevention",
+    "Access Control",
+    "Smart Contracts",
     "Copyright Protection",
-    "metaverse"
+    "Piracy Prevention",
+    "License Management",
+    "Content Protection",
+    "Encryption",
+    "metaverse",
+    "Royalty Distribution",
+    "NFT Licensing"
   ],
   "ontology": {
     "term_id": "MV-9867",

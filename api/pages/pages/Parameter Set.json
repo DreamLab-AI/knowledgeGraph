@@ -6,12 +6,12 @@
     "Procedural Texture"
   ],
   "wiki_links": [
-    "System Settings",
     "Configuration",
-    "Model Configuration",
-    "Reproducibility",
     "Presets",
-    "metaverse"
+    "Reproducibility",
+    "System Settings",
+    "metaverse",
+    "Model Configuration"
   ],
   "ontology": {
     "term_id": "MV-9991",

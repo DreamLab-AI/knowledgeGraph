@@ -9,11 +9,11 @@
     "Interoperability Standard"
   ],
   "wiki_links": [
-    "OpenXR Standard",
-    "Interoperability Standard",
-    "Cross-Platform Interoperability",
     "Technical Standard",
-    "metaverse"
+    "Cross-Platform Interoperability",
+    "metaverse",
+    "Interoperability Standard",
+    "OpenXR Standard"
   ],
   "ontology": {
     "term_id": "MV-9933",

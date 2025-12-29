@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: virtual-reality-vr-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10141\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Reality VR\n\t- status:: active\n\t- definition:: An immersive technology that uses head-mounted displays and motion tracking to create fully simulated 3D environments, enabling users to experience and interact with computer-generated worlds through visual, auditory, and haptic feedback while isolated from the physical environment.\n\t- owl:class:: mv:VirtualRealityVR\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Extended Reality]]\n\t\t- related-to:: [[VR Headset]]\n\t\t- related-to:: [[Immersive Experience]]\n\t\t- related-to:: [[Motion Tracking]]\n\t  id:: virtual-reality-vr-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual Reality creates fully immersive digital environments through head-mounted displays. Global AR/VR headset shipments increased approximately 10% in 2024 to 7.5 million units, with the market projected to reach $237 billion by 2032. The Apple Vision Pro launched in 2024 with high-resolution displays and user-centric design. Standalone headsets like Meta Quest 3 and Pico 5 have eliminated the need for external PCs. Google announced Android XR in 2024 for extended reality devices.\n- ## Technical Details\n\t- ### Display Technologies\n\t\t- **High-Resolution Panels**: LCD, OLED, and micro-OLED displays\n\t\t- **Foveated Rendering**: Eye-tracking optimized graphics processing\n\t\t- **Wide Field of View**: Peripheral vision coverage for immersion\n\t\t- **Pass-Through Cameras**: Mixed reality capabilities\n\t- ### Tracking Systems\n\t\t- **Inside-Out Tracking**: Camera-based position detection without external sensors\n\t\t- **Hand Tracking**: Controller-free gesture recognition\n\t\t- **Eye Tracking**: Gaze direction detection for foveated rendering\n\t\t- **Body Tracking**: Full-body movement capture\n\t- ### Interaction Methods\n\t\t- Motion controllers with haptic feedback\n\t\t- Hand and gesture recognition\n\t\t- Voice commands and spatial audio\n\t\t- Eye-gaze interaction\n\t- ### Platform Developments\n\t\t- Apple Vision Pro spatial computing platform\n\t\t- Meta Quest standalone ecosystem\n\t\t- Google Android XR operating system\n\t\t- PlayStation VR console integration\n- ## Applications\n\t- Gaming and entertainment experiences\n\t- Healthcare pain management and therapy\n\t- Surgical training and medical simulation\n\t- Educational virtual classrooms and field trips\n\t- Enterprise training and collaboration\n\t- FAA-approved flight simulation training",
   "backlinks": [],
   "wiki_links": [
+    "Extended Reality",
     "Immersive Experience",
     "VR Headset",
-    "Extended Reality",
-    "Motion Tracking",
-    "metaverse"
+    "metaverse",
+    "Motion Tracking"
   ],
   "ontology": {
     "term_id": "MV-10141",

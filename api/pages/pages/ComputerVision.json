@@ -16,11 +16,11 @@
     "Neural 3D Generation"
   ],
   "wiki_links": [
-    "ComputerVisionTask",
     "Artificial Intelligence",
     "MachineLearning",
+    "Deep Learning",
     "NeuralNetworkArchitecture",
-    "Deep Learning"
+    "ComputerVisionTask"
   ],
   "ontology": {
     "term_id": "NGM-7011",

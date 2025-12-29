@@ -15,11 +15,11 @@
     "Intrinsic Interpretability"
   ],
   "wiki_links": [
-    "Benchmark",
     "Artificial Intelligence",
+    "Machine Learning Model",
+    "Benchmark",
     "Model Comparison",
-    "AI Concept",
-    "Machine Learning Model"
+    "AI Concept"
   ],
   "ontology": {
     "term_id": "AI-7011",

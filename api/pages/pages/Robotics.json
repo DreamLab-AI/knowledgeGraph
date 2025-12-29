@@ -289,16 +289,16 @@
     "rb-0100-safety-integrity-level"
   ],
   "wiki_links": [
-    "Smart Manufacturing",
+    "Industrial Automation",
+    "Artificial Intelligence",
     "Humanoid Robots",
     "Automation",
-    "IoT Sensors",
-    "Collaborative Robotics",
-    "Artificial Intelligence",
-    "Industrial Robots",
     "Digital Twin",
+    "Smart Manufacturing",
     "Machine Vision",
-    "Industrial Automation"
+    "Industrial Robots",
+    "Collaborative Robotics",
+    "IoT Sensors"
   ],
   "ontology": {
     "term_id": "RB-7000",

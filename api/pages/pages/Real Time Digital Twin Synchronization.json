@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: real-time-digital-twin-synchronization-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10017\n\t- source-domain:: mv\n\t- preferred-term:: Real Time Digital Twin Synchronization\n\t- status:: active\n\t- definition:: The continuous bidirectional data exchange between physical industrial assets and their virtual replicas in the industrial metaverse, enabling real-time monitoring, predictive maintenance, and scenario testing through IoT sensor integration and cloud-based rendering.\n\t- owl:class:: mv:RealTimeDigitalTwinSynchronization\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: real-time-digital-twin-synchronization-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Twin Technology]]\n\t\t- related-to:: [[Industrial Metaverse]]\n\t\t- related-to:: [[IoT Integration]]\n\t\t- related-to:: [[Predictive Maintenance]]\n\t\t- enables:: [[Virtual Real Interaction]]\n\t- #### Key Technologies\n\t  collapsed:: true\n\t\t- IoT sensor networks for data capture\n\t\t- Cloud rendering for visualization\n\t\t- Big data analytics for processing\n\t\t- 5G connectivity for low latency\n\t\t- AI for predictive analytics\n\t- #### Market Context\n\t  collapsed:: true\n\t\t- Industrial metaverse valued at $34.44B in 2024\n\t\t- Projected growth to $181.04B by 2030\n\t\t- 32% expected growth rate\n\t\t- Industry 4.0 transformation driver\n\t\t- Virtual factory displays and remote control",
   "backlinks": [],
   "wiki_links": [
-    "Virtual Real Interaction",
-    "Industrial Metaverse",
-    "IoT Integration",
-    "Digital Twin Technology",
     "Predictive Maintenance",
-    "metaverse"
+    "Digital Twin Technology",
+    "Virtual Real Interaction",
+    "IoT Integration",
+    "metaverse",
+    "Industrial Metaverse"
   ],
   "ontology": {
     "term_id": "MV-10017",

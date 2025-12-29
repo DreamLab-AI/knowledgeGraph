@@ -6,11 +6,11 @@
     "Spatial Audio Scene Description"
   ],
   "wiki_links": [
-    "HRTF Processing",
     "3D Sound Rendering",
-    "Binaural Audio",
-    "Dolby Atmos",
     "Audio Processing System",
+    "Dolby Atmos",
+    "Binaural Audio",
+    "HRTF Processing",
     "metaverse"
   ],
   "ontology": {

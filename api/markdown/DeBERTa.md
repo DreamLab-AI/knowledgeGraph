@@ -101,8 +101,3 @@ DeBERTa improves upon BERT by using disentangled attention where each word is re
 
 *Ontology Term managed by AI-Grounded Ontology Working Group*
 *UK English Spelling Standards Applied*
-	- maturity:: draft
-	- owl:class:: mv:DeBERTa
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]

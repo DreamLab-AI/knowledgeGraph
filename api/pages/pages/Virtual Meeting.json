@@ -8,10 +8,10 @@
   ],
   "wiki_links": [
     "Remote Collaboration",
-    "Screen Sharing",
-    "Telecollaboration",
     "Virtual Whiteboard",
-    "Video Conference"
+    "Telecollaboration",
+    "Video Conference",
+    "Screen Sharing"
   ],
   "ontology": {
     "term_id": "TC-0602",

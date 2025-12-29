@@ -107,9 +107,3 @@ BART trains by corrupting text with an arbitrary noising function and learning t
 
 *Ontology Term managed by AI-Grounded Ontology Working Group*
 *UK English Spelling Standards Applied*
-	- maturity:: draft
-	- owl:class:: mv:BART
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
-	- is-subclass-of:: [[ArtificialIntelligence]]
-	- belongsToDomain:: [[MetaverseDomain]]

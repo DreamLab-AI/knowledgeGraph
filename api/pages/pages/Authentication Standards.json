@@ -7,13 +7,13 @@
   ],
   "wiki_links": [
     "Passwordless Authentication",
-    "Phishing Resistance",
-    "Public Key Cryptography",
     "Hardware Authenticators",
     "Client Implementation",
-    "Security Standards",
     "Secure Platform Access",
-    "metaverse"
+    "Security Standards",
+    "Phishing Resistance",
+    "metaverse",
+    "Public Key Cryptography"
   ],
   "ontology": {
     "term_id": "MV-9785",

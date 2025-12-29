@@ -7,10 +7,10 @@
   ],
   "wiki_links": [
     "Verifiable Credentials",
-    "Data Registry",
-    "Decentralized Identity",
     "Blockchain",
-    "metaverse"
+    "Decentralized Identity",
+    "metaverse",
+    "Data Registry"
   ],
   "ontology": {
     "term_id": "MV-10101",

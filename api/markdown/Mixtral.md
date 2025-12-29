@@ -73,9 +73,3 @@ Mixtral demonstrates that Mixture of Experts enables scaling to large parameter 
 
 *Ontology Term managed by AI-Grounded Ontology Working Group*
 *UK English Spelling Standards Applied*
-	- maturity:: draft
-	- owl:class:: mv:Mixtral
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
-	- is-subclass-of:: [[ArtificialIntelligence]]
-	- belongsToDomain:: [[MetaverseDomain]]

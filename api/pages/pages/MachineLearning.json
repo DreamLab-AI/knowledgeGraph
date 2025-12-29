@@ -41,9 +41,9 @@
     "Artificial Intelligence",
     "ModelArchitecture",
     "TrainingMethod",
-    "NeuralNetworkArchitecture",
     "Model Training",
-    "Deep Learning"
+    "Deep Learning",
+    "NeuralNetworkArchitecture"
   ],
   "ontology": {
     "term_id": "AI-7003",

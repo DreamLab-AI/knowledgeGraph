@@ -6,11 +6,11 @@
     "Spatial Anchor"
   ],
   "wiki_links": [
-    "AR Technology",
-    "Pose Estimation",
     "Computer Vision",
     "Augmented Reality",
-    "metaverse"
+    "AR Technology",
+    "metaverse",
+    "Pose Estimation"
   ],
   "ontology": {
     "term_id": "MV-10159",

@@ -6,13 +6,13 @@
     "Universal Manifest"
   ],
   "wiki_links": [
-    "Standardized Formats",
-    "Asset Continuity",
-    "Cross-Platform Identity",
     "Platform Integration",
+    "Standardized Formats",
     "Seamless World Transitions",
+    "Translation Frameworks",
+    "Cross-Platform Identity",
     "Digital Asset Portability",
-    "Translation Frameworks"
+    "Asset Continuity"
   ],
   "ontology": {
     "term_id": "MV-9790",

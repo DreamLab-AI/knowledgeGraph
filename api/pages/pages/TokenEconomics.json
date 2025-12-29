@@ -12,20 +12,20 @@
     "Circulating Supply"
   ],
   "wiki_links": [
-    "Network Incentives",
-    "Monetary Policy",
-    "Game Theory",
-    "MEV",
-    "Decentralised Governance",
-    "Value Capture",
     "BlockchainDomain",
     "Behavioural Economics",
     "Governance Token",
-    "Blockchain Economics",
-    "Smart Contract",
     "Staking",
-    "Cryptocurrency",
-    "DeFi"
+    "Game Theory",
+    "Monetary Policy",
+    "Blockchain Economics",
+    "Network Incentives",
+    "Decentralised Governance",
+    "Smart Contract",
+    "Value Capture",
+    "DeFi",
+    "MEV",
+    "Cryptocurrency"
   ],
   "ontology": {
     "term_id": "BC-7009",

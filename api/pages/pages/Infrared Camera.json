@@ -9,11 +9,11 @@
     "Infrared Light Source"
   ],
   "wiki_links": [
-    "Eye Tracking System",
-    "Infrared Illuminator",
-    "Tracking Hardware",
     "Motion Tracking",
-    "metaverse"
+    "Eye Tracking System",
+    "metaverse",
+    "Tracking Hardware",
+    "Infrared Illuminator"
   ],
   "ontology": {
     "term_id": "MV-9928",

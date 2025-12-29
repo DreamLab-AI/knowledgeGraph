@@ -6,13 +6,13 @@
     "Feature Engineering"
   ],
   "wiki_links": [
+    "Machine Learning",
     "ETL",
-    "Data Engineering",
     "Feature Engineering",
-    "Data Quality",
     "Data Analysis",
     "Data Preprocessing",
-    "Machine Learning"
+    "Data Engineering",
+    "Data Quality"
   ],
   "ontology": {
     "term_id": "AI-1018",

@@ -15,11 +15,11 @@
     "Image-to-Image Translation"
   ],
   "wiki_links": [
-    "ComputerVision",
     "Artificial Intelligence",
     "MachineLearning",
+    "Deep Learning",
     "NeuralNetworkArchitecture",
-    "Deep Learning"
+    "ComputerVision"
   ],
   "ontology": {
     "term_id": "NGM-7007",

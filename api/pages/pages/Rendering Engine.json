@@ -14,14 +14,14 @@
     "Human Interface Layer (HIL)"
   ],
   "wiki_links": [
-    "Gaussian splatting and Similar",
-    "Ray Tracing",
-    "Virtual Reality",
     "Game Development",
-    "Film Production",
-    "NVIDIA",
     "Metaverse",
-    "Computer Graphics"
+    "Computer Graphics",
+    "Ray Tracing",
+    "NVIDIA",
+    "Film Production",
+    "Gaussian splatting and Similar",
+    "Virtual Reality"
   ],
   "ontology": {
     "term_id": "NGM-7018",

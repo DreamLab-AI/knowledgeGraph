@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "Smart Contracts",
-    "Blockchain Transactions",
     "Cross Chain Trading",
-    "Atomic Swaps",
-    "Hash Timelock Contracts"
+    "Hash Timelock Contracts",
+    "Blockchain Transactions",
+    "Atomic Swaps"
   ],
   "ontology": {
     "term_id": "MV-9976",

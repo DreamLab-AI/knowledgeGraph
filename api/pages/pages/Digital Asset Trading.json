@@ -8,17 +8,17 @@
     "Cross Metaverse Commerce"
   ],
   "wiki_links": [
-    "Derivatives Market",
-    "Financial Trading",
-    "Exchange Platform",
-    "Liquidity Provision",
-    "Order Matching",
-    "Algorithmic Trading",
-    "DEX Trading",
     "Price Discovery",
     "Settlement Systems",
-    "Market Making",
-    "metaverse"
+    "Order Matching",
+    "Exchange Platform",
+    "DEX Trading",
+    "Financial Trading",
+    "Derivatives Market",
+    "Algorithmic Trading",
+    "metaverse",
+    "Liquidity Provision",
+    "Market Making"
   ],
   "ontology": {
     "term_id": "MV-9851",

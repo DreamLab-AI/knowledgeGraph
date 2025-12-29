@@ -11,13 +11,13 @@
     "Benchmark Standard"
   ],
   "wiki_links": [
-    "AUC",
     "Accuracy",
-    "Artificial Intelligence",
-    "F1 Score",
-    "Precision",
     "Machine Learning",
-    "Recall"
+    "Artificial Intelligence",
+    "Precision",
+    "F1 Score",
+    "Recall",
+    "AUC"
   ],
   "ontology": {
     "term_id": "AI-0602",

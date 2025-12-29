@@ -148,20 +148,20 @@
     "rb-0100-safety-integrity-level"
   ],
   "wiki_links": [
-    "MotionPlanning",
-    "RobotPerception",
-    "HumanRobotInteraction",
-    "TechnologyDomain",
-    "ComputerVision",
-    "ControlSystems",
-    "IEEE1872",
     "IEEE1872.2",
-    "MachineLearning",
-    "EmbeddedSystems",
-    "AutonomousRobotics",
+    "IEEE1872",
+    "RobotPerception",
+    "TechnologyDomain",
+    "MotionPlanning",
     "ArtificialIntelligence",
+    "SensorFusion",
     "IndustrialAutomation",
-    "SensorFusion"
+    "ControlSystems",
+    "MachineLearning",
+    "AutonomousRobotics",
+    "EmbeddedSystems",
+    "ComputerVision",
+    "HumanRobotInteraction"
   ],
   "ontology": {
     "term_id": "RB-7001",

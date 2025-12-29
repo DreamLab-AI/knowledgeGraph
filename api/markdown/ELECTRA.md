@@ -99,9 +99,3 @@ ELECTRA trains the model to distinguish real input tokens from plausible replace
 
 *Ontology Term managed by AI-Grounded Ontology Working Group*
 *UK English Spelling Standards Applied*
-	- maturity:: draft
-	- owl:class:: mv:ELECTRA
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
-	- is-subclass-of:: [[ArtificialIntelligence]]
-	- belongsToDomain:: [[MetaverseDomain]]

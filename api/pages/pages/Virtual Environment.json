@@ -22,12 +22,12 @@
     "Virtual World Platform"
   ],
   "wiki_links": [
-    "Virtual Reality",
     "Digital Twin",
-    "3D Models",
-    "Augmented Reality",
     "Metaverse",
-    "metaverse"
+    "Augmented Reality",
+    "metaverse",
+    "Virtual Reality",
+    "3D Models"
   ],
   "ontology": {
     "term_id": "MV-10122",
