@@ -5,16 +5,87 @@
 	- term-id:: BC-7011
 	- preferred-term:: Cryptographic Key Management
 	- source-domain:: bc
-	- status:: stub
+	- status:: active
 	- public-access:: true
-	- definition:: Stub page for Cryptographic Key Management. Referenced by 5 pages. Auto-generated during corpus cleanup.
-	- maturity:: draft
+	- definition:: The administration of cryptographic keys throughout their lifecycle, including generation, storage, distribution, rotation, backup, recovery, and destruction, ensuring the security and availability of keying material while preventing unauthorized access or compromise. Governed by standards such as NIST SP 800-57.
+	- maturity:: reviewed
 	- owl:class:: bc:CryptographicKeyManagement
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
+	- belongsToDomain:: [[Cryptography]]
+
+## Definition
+
+Cryptographic key management encompasses the policies, procedures, and technical mechanisms for managing cryptographic keys throughout their entire lifecycle. According to NIST SP 800-57, the security of information protected by cryptography directly depends on the strength of the keys, the effectiveness of mechanisms and protocols associated with keys, and the protection afforded to those keys. Poor key management can easily compromise even the strongest cryptographic algorithms.
+
+## Key Management Lifecycle Phases
+
+### Pre-Operational Phase
+- Keying material not yet available for normal cryptographic operations
+- Keys may not be generated or are in pre-activation state
+- System and enterprise attributes established
+
+### Operational Phase
+- Keying material available and in normal use
+- Keys in active or suspended state
+- Active keys may be designated protect-only, process-only, or both
+
+### Post-Operational Phase
+- Keys no longer in active use but may be needed for processing previously protected data
+- Archived keys for decryption or signature verification
+
+### Destroyed Phase
+- Keys permanently removed from service
+- Secure destruction ensures no recovery possible
+
+## Core Functions
+
+- **Key Generation**: Creating cryptographically strong keys using approved random number generators
+- **Key Distribution**: Secure delivery of keys to authorized parties
+- **Key Storage**: Protected storage using hardware security modules (HSMs) or secure enclaves
+- **Key Rotation**: Periodic replacement of keys to limit exposure window
+- **Key Backup**: Secure backup mechanisms for recovery scenarios
+- **Key Recovery**: Procedures for recovering lost or corrupted keys
+- **Key Revocation**: Invalidation of compromised or expired keys
+- **Key Destruction**: Secure erasure preventing any reconstruction
+
+## NIST Standards
+
+- **SP 800-57 Part 1**: General guidance and best practices for key management
+- **SP 800-57 Part 2**: Best practices for key management organizations
+- **SP 800-57 Part 3**: Application-specific key management guidance
+- **SP 800-130**: Framework for designing cryptographic key management systems
+- **FIPS 140-3**: Security requirements for cryptographic modules
+
+## Blockchain Applications
+
+- Hierarchical Deterministic (HD) wallet key derivation
+- Multi-signature key coordination
+- Cold storage and hot wallet management
+- Hardware wallet integration
+- Key ceremony procedures for consensus participants
+
+## Security Considerations
+
+- Defense against side-channel attacks
+- Protection against key extraction from memory
+- Compliance with regulatory requirements
+- Audit logging of all key operations
+- Separation of duties in key management roles
+
+## Relationships
+- manages:: [[Cryptographic Keys]]
+- uses:: [[Key Derivation Function]]
+- requires:: [[Random Number Generation]]
+- protects:: [[Private Key]]
+- enables:: [[Digital Signature]]
+- component-of:: [[Security Architecture]]
+- is-subclass-of:: [[Cryptography]]
 
 ## Metadata
 
-- **Last Updated**: 2025-12-28
-- **Review Status**: Auto-generated stub
+- **Last Updated**: 2025-12-29
+- **Review Status**: Enriched with NIST standards
 - **References**: 5 pages reference this concept
+
+#cryptography #key-management #security #NIST #blockchain-security

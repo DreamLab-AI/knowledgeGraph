@@ -6,12 +6,12 @@
     "Privacy-Enhancing Computation (PEC)"
   ],
   "wiki_links": [
-    "Regulatory Compliance",
-    "metaverse",
+    "System Architecture",
     "Privacy By Design",
     "Data Privacy",
-    "System Architecture",
-    "Data Protection"
+    "Data Protection",
+    "Regulatory Compliance",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10010",

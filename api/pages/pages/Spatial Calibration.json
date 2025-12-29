@@ -6,12 +6,12 @@
     "Reality Capture System"
   ],
   "wiki_links": [
-    "Camera Calibration",
     "metaverse",
+    "AR Registration",
+    "Camera Calibration",
     "Tracking System",
     "Optical Calibration",
-    "Accurate AR Alignment",
-    "AR Registration"
+    "Accurate AR Alignment"
   ],
   "ontology": {
     "term_id": "MV-10055",

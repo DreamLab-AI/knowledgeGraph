@@ -8,11 +8,11 @@
     "Dimensionality Reduction"
   ],
   "wiki_links": [
-    "Model Training",
-    "Dimensionality Reduction",
-    "Feature Selection",
-    "Model Performance",
     "Data Cleaning",
+    "Feature Selection",
+    "Dimensionality Reduction",
+    "Model Performance",
+    "Model Training",
     "Data Preprocessing",
     "Machine Learning"
   ],

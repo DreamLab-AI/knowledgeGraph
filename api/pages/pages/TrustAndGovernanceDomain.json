@@ -1,7 +1,7 @@
 {
   "id": "TrustAndGovernanceDomain",
   "title": "TrustAndGovernanceDomain",
-  "content": "- ### OntologyBlock\n  id:: trustandgovernancedomain-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-7004\n\t- preferred-term:: TrustAndGovernanceDomain\n\t- source-domain:: ai\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: Stub page for TrustAndGovernanceDomain. Referenced by 25 pages. Auto-generated during corpus cleanup.\n\t- maturity:: draft\n\t- owl:class:: ai:Trustandgovernancedomain\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Domain\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Auto-generated stub\n- **References**: 25 pages reference this concept",
+  "content": "- ### OntologyBlock\n  id:: trustandgovernancedomain-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-7004\n\t- preferred-term:: TrustAndGovernanceDomain\n\t- source-domain:: ai\n\t- status:: active\n\t- public-access:: true\n\t- definition:: The Trust and Governance Domain provides an ontological framework for trust relationships, accountability mechanisms, and governance structures in digital systems. It encompasses computational trust models, regulatory compliance, decision traceability, multi-stakeholder oversight, and ethical frameworks that enable transparent, accountable, and trustworthy interactions between humans, organizations, and autonomous systems.\n\t- maturity:: reviewed\n\t- owl:class:: ai:Trustandgovernancedomain\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Domain\n\t- belongsToDomain:: [[TechnologyDomain]]\n\n## Relationships\n- ### Subdomains\n\t- [[TrustManagement]] - Computational trust models and reputation systems\n\t- [[RegulatoryCompliance]] - Legal and regulatory adherence frameworks\n\t- [[DataGovernance]] - Data quality, lineage, and stewardship\n\t- [[AIGovernance]] - Ethical AI and algorithmic accountability\n\t- [[IdentityGovernance]] - Identity and access management policies\n\n- ### Related Concepts\n\t- [[Accountability]] - Responsibility and answerability mechanisms\n\t- [[Transparency]] - Open and verifiable processes\n\t- [[Provenance]] - Data origin and processing history\n\t- [[AuditTrail]] - Traceable decision records\n\t- [[ExplainableAI]] - XAI for decision transparency\n\t- [[EthicalByDesign]] - Built-in ethical considerations\n\t- [[RiskManagement]] - Risk assessment and mitigation\n\n- ### Governance Pillars\n\t- [[ContinuousAssurance]] - Ongoing compliance monitoring\n\t- [[DecisionTraceability]] - Transparent decision provenance\n\t- [[StakeholderOversight]] - Multi-party governance participation\n\t- [[DynamicCompliance]] - Adaptive regulatory alignment\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Reviewed and enriched\n- **References**: 25 pages reference this concept",
   "backlinks": [
     "Zero-Trust Architecture (ZTA)",
     "ETSI_Domain_AI___Governance",
@@ -38,7 +38,25 @@
     "Right to Be Forgotten",
     "Compliance Audit Trail"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "ExplainableAI",
+    "RegulatoryCompliance",
+    "RiskManagement",
+    "AIGovernance",
+    "DataGovernance",
+    "TechnologyDomain",
+    "EthicalByDesign",
+    "IdentityGovernance",
+    "Accountability",
+    "Provenance",
+    "TrustManagement",
+    "StakeholderOversight",
+    "ContinuousAssurance",
+    "AuditTrail",
+    "Transparency",
+    "DynamicCompliance",
+    "DecisionTraceability"
+  ],
   "ontology": {
     "term_id": "AI-7004",
     "preferred_term": "TrustAndGovernanceDomain",
@@ -47,10 +65,10 @@
     "source_domain": "ai",
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
-    "definition": "Stub page for TrustAndGovernanceDomain. Referenced by 25 pages. Auto-generated during corpus cleanup.",
+    "definition": "The Trust and Governance Domain provides an ontological framework for trust relationships, accountability mechanisms, and governance structures in digital systems. It encompasses computational trust models, regulatory compliance, decision traceability, multi-stakeholder oversight, and ethical frameworks that enable transparent, accountable, and trustworthy interactions between humans, organizations, and autonomous systems.",
     "scope_note": null,
-    "status": "stub",
-    "maturity": "draft",
+    "status": "active",
+    "maturity": "reviewed",
     "version": null,
     "public_access": true,
     "last_updated": null,
@@ -71,7 +89,9 @@
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "TechnologyDomain"
+    ],
     "implemented_in_layer": [],
     "source": [],
     "validation": {

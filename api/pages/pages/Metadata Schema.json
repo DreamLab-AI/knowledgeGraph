@@ -1,7 +1,7 @@
 {
   "id": "Metadata Schema",
   "title": "Metadata Schema",
-  "content": "- ### OntologyBlock\n  id:: metadata-schema-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7035\n\t- preferred-term:: Metadata Schema\n\t- source-domain:: ngm\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: Stub page for Metadata Schema. Referenced by 5 pages. Auto-generated during corpus cleanup.\n\t- maturity:: draft\n\t- owl:class:: ngm:MetadataSchema\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Auto-generated stub\n- **References**: 5 pages reference this concept",
+  "content": "- ### OntologyBlock\n  id:: metadata-schema-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-8001\n\t- preferred-term:: Metadata Schema\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A structured specification defining metadata elements, their semantics, syntax, and relationships for describing and managing information resources. Metadata schemas establish standardized vocabularies and constraints that enable interoperability, discovery, and governance across data ecosystems through predefined sets of descriptive attributes tailored for specific domains or resource types.\n\t- maturity:: reviewed\n\t- owl:class:: ngm:MetadataSchema\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: InformationStandard\n\t- belongsToDomain:: [[Data Governance]]\n\n### Relationships\n- is-subclass-of:: [[Data Standard]]\n- related-to:: [[Ontology]], [[Semantic Web]], [[Data Catalogue]], [[Knowledge Graph]]\n- enables:: [[Data Interoperability]], [[FAIR Data Principles]], [[Data Discovery]]\n- implements:: [[Dublin Core]], [[Schema.org]], [[JSON-LD]]\n\n## Definition\n\nA **Metadata Schema** is a formal specification that defines the structure, semantics, and constraints for metadata elements used to describe information resources. It establishes standardised vocabularies enabling consistent documentation of data assets across systems and organisations.\n\n## Core Components\n\n### Schema Elements\n- **Element Name**: Unique identifier for the metadata attribute\n- **Semantics**: Formal meaning and interpretation rules\n- **Syntax**: Data type, format, and encoding constraints\n- **Cardinality**: Required, optional, or repeatable designations\n- **Controlled Vocabularies**: Permitted value sets or taxonomies\n\n### Schema Types\n1. **Descriptive Schemas**: Resource discovery and identification (Dublin Core)\n2. **Structural Schemas**: Data organisation and relationships (XML Schema)\n3. **Administrative Schemas**: Management and provenance tracking\n4. **Technical Schemas**: Format, encoding, and processing specifications\n\n## Standards and Frameworks\n\n### Core Standards\n- **Dublin Core Metadata Initiative**: 15 core elements for resource description\n- **Schema.org**: Web content structured data vocabulary\n- **Data Documentation Initiative (DDI)**: Survey and observational data\n- **ISO 19115**: Geographic information metadata\n\n### Semantic Web Standards\n- **RDF Schema (RDFS)**: Vocabulary definition framework\n- **Web Ontology Language (OWL)**: Complex ontology specification\n- **SHACL**: Validation constraints and data quality rules\n- **JSON-LD**: Semantic contexts for linked data\n\n## Applications\n\n### Data Governance\n- Asset inventory and cataloguing\n- Lineage and provenance tracking\n- Quality assessment and compliance\n- Access control and classification\n\n### Knowledge Management\n- Semantic search and discovery\n- Cross-system interoperability\n- Knowledge graph construction\n- Automated metadata generation\n\n## References\n- [OpenMetadata Standards](https://openmetadatastandards.org/)\n- [Metadata Standard - Wikipedia](https://en.wikipedia.org/wiki/Metadata_standard)\n- [How to FAIR - Metadata](https://www.howtofair.dk/how-to-fair/metadata/)\n\n## Metadata\n- **Last Updated**: 2025-12-29\n- **Review Status**: Reviewed\n- **References**: 5 pages reference this concept",
   "backlinks": [
     "Discovery Layer",
     "Crypto Token",
@@ -10,19 +10,32 @@
     "Controlled Vocabulary",
     "Cultural Provenance Record"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "Ontology",
+    "Knowledge Graph",
+    "Dublin Core",
+    "Data Governance",
+    "Schema.org",
+    "Semantic Web",
+    "Data Interoperability",
+    "JSON-LD",
+    "FAIR Data Principles",
+    "Data Catalogue",
+    "Data Standard",
+    "Data Discovery"
+  ],
   "ontology": {
-    "term_id": "NGM-7035",
+    "term_id": "NGM-8001",
     "preferred_term": "Metadata Schema",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/ontology#MetadataSchema",
     "source_domain": "ngm",
     "domain": "ngm",
     "domain_full_name": "Narrative Gold Mine Core",
-    "definition": "Stub page for Metadata Schema. Referenced by 5 pages. Auto-generated during corpus cleanup.",
+    "definition": "A structured specification defining metadata elements, their semantics, syntax, and relationships for describing and managing information resources. Metadata schemas establish standardized vocabularies and constraints that enable interoperability, discovery, and governance across data ecosystems through predefined sets of descriptive attributes tailored for specific domains or resource types.",
     "scope_note": null,
-    "status": "stub",
-    "maturity": "draft",
+    "status": "active",
+    "maturity": "reviewed",
     "version": null,
     "public_access": true,
     "last_updated": null,
@@ -31,7 +44,7 @@
     "cross_domain_links": null,
     "owl_class": "ngm:MetadataSchema",
     "owl_physicality": "ConceptualEntity",
-    "owl_role": "Concept",
+    "owl_role": "InformationStandard",
     "owl_inferred_class": null,
     "is_subclass_of": [],
     "has_part": [],
@@ -43,7 +56,9 @@
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "Data Governance"
+    ],
     "implemented_in_layer": [],
     "source": [],
     "validation": {

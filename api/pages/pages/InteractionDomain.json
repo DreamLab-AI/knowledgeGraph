@@ -1,7 +1,7 @@
 {
   "id": "InteractionDomain",
   "title": "InteractionDomain",
-  "content": "- ### OntologyBlock\n  id:: interactiondomain-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-7010\n\t- preferred-term:: InteractionDomain\n\t- source-domain:: ai\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: Stub page for InteractionDomain. Referenced by 10 pages. Auto-generated during corpus cleanup.\n\t- maturity:: draft\n\t- owl:class:: ai:Interactiondomain\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Domain\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Auto-generated stub\n- **References**: 10 pages reference this concept",
+  "content": "- ### OntologyBlock\n  id:: interactiondomain-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-7010\n\t- preferred-term:: InteractionDomain\n\t- source-domain:: ai\n\t- status:: active\n\t- public-access:: true\n\t- definition:: The Interaction Domain encompasses the ontological framework for human-computer interaction (HCI) phenomena, including interactive computer systems, user interfaces, user actions, and the processes by which interactions occur. It provides formal representation of user experience elements, adaptive interactive systems, and the modularized understanding of how users engage with digital systems through various modalities.\n\t- maturity:: reviewed\n\t- owl:class:: ai:Interactiondomain\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Domain\n\t- belongsToDomain:: [[TechnologyDomain]]\n\n## Relationships\n- ### Subdomains\n\t- [[UserInterfaceDesign]] - Visual and interactive element design\n\t- [[UserExperience]] - Overall user journey and satisfaction\n\t- [[AccessibilityDomain]] - Inclusive design for diverse users\n\t- [[PervasiveComputing]] - Ubiquitous computing interactions\n\t- [[AdaptiveInterfaces]] - Context-aware system responses\n\n- ### Related Concepts\n\t- [[HumanComputerInteraction]] - Core HCI phenomenon (HCIO ontology)\n\t- [[UserModeling]] - User profile and behavior representation\n\t- [[InteractionPatterns]] - Common interaction paradigms\n\t- [[GestureRecognition]] - Physical input modalities\n\t- [[VoiceInteraction]] - Speech-based interfaces\n\t- [[NaturalLanguageInterface]] - Conversational interaction\n\t- [[HapticInteraction]] - Touch and tactile feedback\n\n- ### Ontology Standards\n\t- [[HCIO]] - Human-Computer Interaction Ontology grounded in UFO\n\t- [[HCI-ON]] - HCI Ontology Network framework\n\t- [[UXON]] - User Experience evaluation ontology\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Reviewed and enriched\n- **References**: 10 pages reference this concept",
   "backlinks": [
     "AI Game Agent",
     "Immersion",
@@ -17,7 +17,24 @@
     "Cognitive Load Metric",
     "Presence"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "UserModeling",
+    "TechnologyDomain",
+    "HCI-ON",
+    "PervasiveComputing",
+    "HumanComputerInteraction",
+    "HCIO",
+    "AdaptiveInterfaces",
+    "VoiceInteraction",
+    "InteractionPatterns",
+    "AccessibilityDomain",
+    "HapticInteraction",
+    "UserExperience",
+    "UXON",
+    "GestureRecognition",
+    "UserInterfaceDesign",
+    "NaturalLanguageInterface"
+  ],
   "ontology": {
     "term_id": "AI-7010",
     "preferred_term": "InteractionDomain",
@@ -26,10 +43,10 @@
     "source_domain": "ai",
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
-    "definition": "Stub page for InteractionDomain. Referenced by 10 pages. Auto-generated during corpus cleanup.",
+    "definition": "The Interaction Domain encompasses the ontological framework for human-computer interaction (HCI) phenomena, including interactive computer systems, user interfaces, user actions, and the processes by which interactions occur. It provides formal representation of user experience elements, adaptive interactive systems, and the modularized understanding of how users engage with digital systems through various modalities.",
     "scope_note": null,
-    "status": "stub",
-    "maturity": "draft",
+    "status": "active",
+    "maturity": "reviewed",
     "version": null,
     "public_access": true,
     "last_updated": null,
@@ -50,7 +67,9 @@
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "TechnologyDomain"
+    ],
     "implemented_in_layer": [],
     "source": [],
     "validation": {

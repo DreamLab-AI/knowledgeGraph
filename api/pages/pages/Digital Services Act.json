@@ -9,17 +9,17 @@
     "Regulatory Standards"
   ],
   "wiki_links": [
-    "Digital Regulation",
-    "Digital Markets Act",
-    "Platform Accountability",
-    "metaverse",
-    "Moderation Infrastructure",
-    "GDPR",
     "AI Act",
-    "Content Transparency",
     "User Protection",
+    "Moderation Infrastructure",
+    "Digital Markets Act",
+    "Content Transparency",
     "Reporting Mechanisms",
-    "Compliance Systems"
+    "GDPR",
+    "Digital Regulation",
+    "Compliance Systems",
+    "metaverse",
+    "Platform Accountability"
   ],
   "ontology": {
     "term_id": "MV-9869",

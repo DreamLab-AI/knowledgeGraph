@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: RB-9003\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9003\n\t- source-domain:: rb\n\t- preferred-term:: Centralized Swarm Control\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Swarm robotics control architecture where a central controller coordinates all robot agents, providing global optimization but creating a single point of failure.\n\t- source:: [[Swarm Robotics]]\n\t- maturity:: mature\n\t- owl:class:: rb:CentralizedSwarmControl\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[RoboticsDomain]]\n\t- is-subclass-of:: [[Robotics]]",
   "backlinks": [],
   "wiki_links": [
-    "Swarm Robotics",
     "RoboticsDomain",
+    "Swarm Robotics",
     "Robotics"
   ],
   "ontology": {

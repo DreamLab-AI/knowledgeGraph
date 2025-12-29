@@ -7,17 +7,18 @@
     "Automated Planning",
     "Owl Class Hierarchy",
     "STRIPS",
+    "Ideas",
     "Expert Systems",
     "Semantic Web Standards",
     "Symbolic AI",
     "Intelligent Virtual Entity"
   ],
   "wiki_links": [
+    "Ontology",
     "Automated Planning",
-    "Logic Programming",
-    "Reasoning Systems",
     "Artificial Intelligence",
-    "Ontology"
+    "Logic Programming",
+    "Reasoning Systems"
   ],
   "ontology": {
     "term_id": "AI-1001",

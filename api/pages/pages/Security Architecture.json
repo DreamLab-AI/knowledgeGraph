@@ -5,15 +5,16 @@
   "backlinks": [
     "Zero-Trust Architecture (ZTA)",
     "Trust Architecture",
-    "Threat Surface Map"
+    "Threat Surface Map",
+    "Cryptographic Key Management"
   ],
   "wiki_links": [
     "Secure Systems",
+    "System Architecture",
     "Zero Trust Security",
-    "Identity Management",
     "Threat Detection",
-    "metaverse",
-    "System Architecture"
+    "Identity Management",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10036",

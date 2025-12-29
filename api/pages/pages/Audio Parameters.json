@@ -7,13 +7,13 @@
   ],
   "wiki_links": [
     "Audio Engine",
-    "Spatial Sound Rendering",
-    "metaverse",
-    "Environmental Modeling",
     "HRTF Data",
     "Telepresence",
+    "Spatial Sound Rendering",
     "Audio Configuration",
-    "Immersive Audio"
+    "Environmental Modeling",
+    "Immersive Audio",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9783",

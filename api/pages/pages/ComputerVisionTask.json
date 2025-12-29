@@ -1,7 +1,7 @@
 {
   "id": "ComputerVisionTask",
   "title": "ComputerVisionTask",
-  "content": "- ### OntologyBlock\n  id:: computervisiontask-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7007\n\t- preferred-term:: ComputerVisionTask\n\t- source-domain:: ngm\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: Stub page for ComputerVisionTask. Referenced by 9 pages. Auto-generated during corpus cleanup.\n\t- maturity:: draft\n\t- owl:class:: ngm:Computervisiontask\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Auto-generated stub\n- **References**: 9 pages reference this concept",
+  "content": "- ### OntologyBlock\n  id:: computervisiontask-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7007\n\t- preferred-term:: ComputerVisionTask\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Computer vision tasks are specific computational problems that machines solve using visual data, including image classification (assigning labels to images), object detection (locating and identifying objects with bounding boxes), semantic segmentation (pixel-wise classification), and instance segmentation (distinguishing individual objects of the same class). These tasks form the foundation for downstream applications such as image captioning, object tracking, and visual question answering.\n\t- maturity:: reviewed\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- owl:class:: ngm:Computervisiontask\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n### Relationships\n- is-subclass-of:: [[ComputerVision]]\n- related-to:: [[MachineLearning]]\n- related-to:: [[NeuralNetworkArchitecture]]\n- related-to:: [[Deep Learning]]\n\n### Task Categories\n- **Image Classification**: Categorizing entire images based on dominant content (e.g., cat vs. dog)\n- **Object Detection**: Locating objects with bounding boxes using architectures like YOLO, RetinaNet, Faster RCNN\n- **Semantic Segmentation**: Assigning class labels to each pixel in an image\n- **Instance Segmentation**: Distinguishing individual object instances with precise boundaries\n- **Pose Estimation**: Detecting human body keypoints and skeletal structure\n\n### Modern Frameworks\n- Ultralytics YOLO11: Supports detection, segmentation, OBB, classification, and pose estimation\n- MATLAB Computer Vision Toolbox: Deep learning and CNN-based approaches\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from stub with technical definition\n- **References**: 9 pages reference this concept",
   "backlinks": [
     "Feature Extraction",
     "Image Generation",
@@ -11,9 +11,16 @@
     "Style Transfer",
     "Dall-e",
     "Image Classification",
+    "ComputerVision",
     "Image-to-Image Translation"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "ComputerVision",
+    "Artificial Intelligence",
+    "MachineLearning",
+    "NeuralNetworkArchitecture",
+    "Deep Learning"
+  ],
   "ontology": {
     "term_id": "NGM-7007",
     "preferred_term": "ComputerVisionTask",
@@ -22,10 +29,10 @@
     "source_domain": "ngm",
     "domain": "ngm",
     "domain_full_name": "Narrative Gold Mine Core",
-    "definition": "Stub page for ComputerVisionTask. Referenced by 9 pages. Auto-generated during corpus cleanup.",
+    "definition": "Computer vision tasks are specific computational problems that machines solve using visual data, including image classification (assigning labels to images), object detection (locating and identifying objects with bounding boxes), semantic segmentation (pixel-wise classification), and instance segmentation (distinguishing individual objects of the same class). These tasks form the foundation for downstream applications such as image captioning, object tracking, and visual question answering.",
     "scope_note": null,
-    "status": "stub",
-    "maturity": "draft",
+    "status": "active",
+    "maturity": "reviewed",
     "version": null,
     "public_access": true,
     "last_updated": null,
@@ -46,7 +53,9 @@
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "Artificial Intelligence"
+    ],
     "implemented_in_layer": [],
     "source": [],
     "validation": {

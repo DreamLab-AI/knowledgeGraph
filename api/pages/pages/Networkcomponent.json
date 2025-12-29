@@ -1,7 +1,7 @@
 {
   "id": "Networkcomponent",
   "title": "Networkcomponent",
-  "content": "- ### OntologyBlock\n  id:: networkcomponent-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-7000\n\t- preferred-term:: Networkcomponent\n\t- source-domain:: tc\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: Stub page for Networkcomponent. Referenced by 32 pages. Auto-generated during corpus cleanup.\n\t- maturity:: draft\n\t- owl:class:: tc:Networkcomponent\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Auto-generated stub\n- **References**: 32 pages reference this concept",
+  "content": "- ### OntologyBlock\n  id:: networkcomponent-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-7000\n\t- preferred-term:: Networkcomponent\n\t- source-domain:: tc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Network Components are the physical and virtual hardware devices that comprise telecommunications and computer network infrastructure, enabling network connectivity, communication, and data routing between users, devices, applications, and the internet. Core components include switches for local traffic routing, routers for inter-network packet forwarding, and firewalls for security enforcement, forming the foundation of modern digital communications.\n\t- maturity:: reviewed\n\t- owl:class:: tc:Networkcomponent\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[InfrastructureDomain]]\n\n## Relationships\n- ### Core Components\n\t- [[Router]] - Directs packets between networks using routing algorithms\n\t- [[Switch]] - Routes traffic within LANs, full-duplex communication\n\t- [[Firewall]] - Security enforcement and traffic filtering\n\t- [[Hub]] - Basic network connectivity (legacy)\n\t- [[Gateway]] - Protocol translation between networks\n\n- ### Related Concepts\n\t- [[NetworkInfrastructure]] - Overall infrastructure framework\n\t- [[NetworkTopology]] - Physical and logical network design\n\t- [[OSIModel]] - Network layer reference model\n\t- [[IPAddressing]] - Network addressing scheme\n\t- [[VLAN]] - Virtual network segmentation\n\t- [[LoadBalancer]] - Traffic distribution across servers\n\n- ### Component Types\n\t- [[ManagedSwitch]] - Configurable with SNMP monitoring\n\t- [[UnmanagedSwitch]] - Plug-and-play basic switching\n\t- [[EdgeRouter]] - Border routing and internet connectivity\n\t- [[CoreRouter]] - High-capacity backbone routing\n\t- [[WirelessAccessPoint]] - WiFi connectivity\n\n- ### Management\n\t- [[NetworkManagement]] - Configuration and monitoring\n\t- [[SNMP]] - Simple Network Management Protocol\n\t- [[ConfigurationManagement]] - Device configuration control\n\t- [[NetworkMonitoring]] - Performance and health tracking\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Reviewed and enriched\n- **References**: 32 pages reference this concept",
   "backlinks": [
     "BC-0088-gossip-protocol",
     "BC-0092-validator-node",
@@ -19,6 +19,7 @@
     "Double Spending",
     "BC-0078-sybil-attack",
     "BC-0079-immutability",
+    "InfrastructureDomain",
     "BC-0071-blockchain-network",
     "Blockchain Network",
     "BC-0085-selfish-mining",
@@ -36,7 +37,29 @@
     "BC-0075-peer-to-peer-network",
     "BC-0094-pruned-node"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "LoadBalancer",
+    "Hub",
+    "EdgeRouter",
+    "InfrastructureDomain",
+    "ManagedSwitch",
+    "Firewall",
+    "CoreRouter",
+    "Switch",
+    "NetworkInfrastructure",
+    "Gateway",
+    "NetworkMonitoring",
+    "WirelessAccessPoint",
+    "IPAddressing",
+    "Router",
+    "NetworkManagement",
+    "NetworkTopology",
+    "ConfigurationManagement",
+    "VLAN",
+    "SNMP",
+    "OSIModel",
+    "UnmanagedSwitch"
+  ],
   "ontology": {
     "term_id": "TC-7000",
     "preferred_term": "Networkcomponent",
@@ -45,10 +68,10 @@
     "source_domain": "tc",
     "domain": "tc",
     "domain_full_name": "Telecollaboration",
-    "definition": "Stub page for Networkcomponent. Referenced by 32 pages. Auto-generated during corpus cleanup.",
+    "definition": "Network Components are the physical and virtual hardware devices that comprise telecommunications and computer network infrastructure, enabling network connectivity, communication, and data routing between users, devices, applications, and the internet. Core components include switches for local traffic routing, routers for inter-network packet forwarding, and firewalls for security enforcement, forming the foundation of modern digital communications.",
     "scope_note": null,
-    "status": "stub",
-    "maturity": "draft",
+    "status": "active",
+    "maturity": "reviewed",
     "version": null,
     "public_access": true,
     "last_updated": null,
@@ -69,7 +92,9 @@
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "InfrastructureDomain"
+    ],
     "implemented_in_layer": [],
     "source": [],
     "validation": {

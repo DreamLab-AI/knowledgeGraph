@@ -4,18 +4,20 @@
   "content": "- ### OntologyBlock\n  id:: performance-metrics-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0602\n\t- preferred-term:: Performance Metrics\n\t- source-domain:: ai\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Performance Metrics are quantitative measures used to evaluate and compare the effectiveness, accuracy, and efficiency of AI and machine learning systems. These metrics provide standardised ways to assess model quality including accuracy, precision, recall, F1-score, AUC-ROC, and task-specific evaluation criteria.\n\t- owl:class:: ai:PerformanceMetric\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: performance-metrics-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Artificial Intelligence]]\n\t\t- related-to:: [[Machine Learning]]\n\t\t- is-parent-of:: [[Accuracy]]\n\t\t- is-parent-of:: [[Precision]]\n\t\t- is-parent-of:: [[Recall]]\n\t\t- is-parent-of:: [[F1 Score]]\n\t\t- is-parent-of:: [[AUC]]",
   "backlinks": [
     "AI Model Card",
+    "AI-GroundedDomain",
     "Telemetry & Analytics",
     "Algorithmic Transparency Index",
+    "Performance Optimization",
     "Benchmark Standard"
   ],
   "wiki_links": [
-    "Recall",
-    "Accuracy",
-    "Precision",
-    "F1 Score",
     "AUC",
+    "Accuracy",
+    "Artificial Intelligence",
+    "F1 Score",
+    "Precision",
     "Machine Learning",
-    "Artificial Intelligence"
+    "Recall"
   ],
   "ontology": {
     "term_id": "AI-0602",

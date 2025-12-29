@@ -1,7 +1,7 @@
 {
   "id": "ComputerVision",
   "title": "ComputerVision",
-  "content": "- ### OntologyBlock\n  id:: computervision-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7011\n\t- preferred-term:: ComputerVision\n\t- source-domain:: ngm\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: Stub page for ComputerVision. Referenced by 8 pages. Auto-generated during corpus cleanup.\n\t- maturity:: draft\n\t- owl:class:: ngm:Computervision\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Auto-generated stub\n- **References**: 8 pages reference this concept",
+  "content": "- ### OntologyBlock\n  id:: computervision-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7011\n\t- preferred-term:: ComputerVision\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Computer vision is a subfield of artificial intelligence that enables machines to interpret and understand visual information from images and videos, using machine learning and neural networks to perform tasks like object detection, image classification, and scene analysis that replicate human visual perception. The field encompasses techniques for processing grid-like data through convolutional neural networks and vision transformers, with applications spanning autonomous vehicles, medical imaging, retail automation, and agricultural monitoring.\n\t- maturity:: reviewed\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- owl:class:: ngm:Computervision\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]\n- has-subclass:: [[ComputerVisionTask]]\n- related-to:: [[MachineLearning]]\n- related-to:: [[NeuralNetworkArchitecture]]\n- related-to:: [[Deep Learning]]\n\n### Key Technologies\n- **Vision Transformers (ViTs)**: Market projected to grow from USD 280.75 million (2024) to USD 2,783.66 million by 2032\n- **Self-Supervised Learning**: Addresses challenges in acquiring labeled datasets\n- **Edge Computing**: Moving data processing closer to source, market projected at USD 110.6 billion by 2029\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from stub with technical definition\n- **References**: 8 pages reference this concept",
   "backlinks": [
     "Node",
     "Vision System",
@@ -10,10 +10,18 @@
     "Neural Radiance Field",
     "Perception System",
     "Object Detection",
+    "ComputerVisionTask",
+    "RoboticsDomain",
     "Image Segmentation",
     "Neural 3D Generation"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "ComputerVisionTask",
+    "Artificial Intelligence",
+    "MachineLearning",
+    "NeuralNetworkArchitecture",
+    "Deep Learning"
+  ],
   "ontology": {
     "term_id": "NGM-7011",
     "preferred_term": "ComputerVision",
@@ -22,10 +30,10 @@
     "source_domain": "ngm",
     "domain": "ngm",
     "domain_full_name": "Narrative Gold Mine Core",
-    "definition": "Stub page for ComputerVision. Referenced by 8 pages. Auto-generated during corpus cleanup.",
+    "definition": "Computer vision is a subfield of artificial intelligence that enables machines to interpret and understand visual information from images and videos, using machine learning and neural networks to perform tasks like object detection, image classification, and scene analysis that replicate human visual perception. The field encompasses techniques for processing grid-like data through convolutional neural networks and vision transformers, with applications spanning autonomous vehicles, medical imaging, retail automation, and agricultural monitoring.",
     "scope_note": null,
-    "status": "stub",
-    "maturity": "draft",
+    "status": "active",
+    "maturity": "reviewed",
     "version": null,
     "public_access": true,
     "last_updated": null,
@@ -46,7 +54,9 @@
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "Artificial Intelligence"
+    ],
     "implemented_in_layer": [],
     "source": [],
     "validation": {

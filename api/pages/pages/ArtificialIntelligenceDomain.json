@@ -1,7 +1,7 @@
 {
   "id": "ArtificialIntelligenceDomain",
   "title": "ArtificialIntelligenceDomain",
-  "content": "- ### OntologyBlock\n  id:: artificialintelligencedomain-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-7007\n\t- preferred-term:: ArtificialIntelligenceDomain\n\t- source-domain:: ai\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: Stub page for ArtificialIntelligenceDomain. Referenced by 11 pages. Auto-generated during corpus cleanup.\n\t- maturity:: draft\n\t- owl:class:: ai:Artificialintelligencedomain\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Domain\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Auto-generated stub\n- **References**: 11 pages reference this concept",
+  "content": "- ### OntologyBlock\n  id:: artificialintelligencedomain-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-7007\n\t- preferred-term:: ArtificialIntelligenceDomain\n\t- source-domain:: ai\n\t- status:: active\n\t- public-access:: true\n\t- definition:: The top-level ontological domain classification encompassing all concepts related to artificial intelligence, including research methodologies, system architectures, learning paradigms, application domains, and governance frameworks for intelligent computational systems.\n\t- maturity:: stable\n\t- owl:class:: ai:ArtificialIntelligenceDomain\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Domain\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: artificialintelligencedomain-relationships\n\t  collapsed:: true\n\t\t- owl:equivalentClass:: [[AIDomain]]\n\t\t- is-subclass-of:: [[Technology Domain]]\n\t\t  collapsed:: true\n\t\t  - #### Subdomains (Inferred by Reasoner)\n\t\t    - AI-GroundedDomain is-subdomain-of ArtificialIntelligenceDomain\n\t\t    - AIApplications is-subdomain-of ArtificialIntelligenceDomain\n\t\t    - ComputationAndIntelligenceDomain is-subdomain-of ArtificialIntelligenceDomain\n\t\t    - Machine Learning Domain is-subdomain-of ArtificialIntelligenceDomain\n\t\t    - AI Governance Domain is-subdomain-of ArtificialIntelligenceDomain\n\t\t- bridges-to:: [[Blockchain Technology]] (via AI-blockchain integration)\n\t\t- bridges-to:: [[Metaverse Technology]] (via AI avatars and agents)\n\t\t- bridges-to:: [[Telecollaboration]] (via AI assistants)\n\t\t- bridges-to:: [[Robotics Systems]] (via autonomous systems)\n\n## Definition\n\nThe **ArtificialIntelligenceDomain** serves as the comprehensive top-level domain classification for all AI-related concepts within the ontology. It provides the taxonomic root under which all AI subdomains, methods, systems, and applications are organised.\n\n## Domain Architecture\n\n### Core Subdomains\n1. **AI-GroundedDomain**: Empirically validated AI concepts\n2. **AIApplications**: Practical deployment and use cases\n3. **ComputationAndIntelligenceDomain**: Theoretical foundations\n4. **Machine Learning Domain**: Learning algorithm paradigms\n5. **AI Governance Domain**: Ethics, policy, and regulation\n\n### Methodological Subdivisions\n- Supervised Learning\n- Unsupervised Learning\n- Reinforcement Learning\n- Deep Learning\n- Symbolic AI\n- Hybrid AI Systems\n\n### System Classifications\n- Foundation Models\n- Domain-Specific Models\n- Multimodal Systems\n- Autonomous Agents\n- AI Assistants\n\n## Namespace Declaration\n\n```turtle\n@prefix ai: <http://narrativegoldmine.com/ai#> .\n\nai:ArtificialIntelligenceDomain a owl:Class ;\n    rdfs:label \"Artificial Intelligence Domain\"@en ;\n    skos:definition \"Top-level domain for AI concepts\"@en ;\n    owl:equivalentClass ai:AIDomain ;\n    skos:broader ngm:TechnologyDomain .\n```\n\n## Cross-Domain Integration\n\nThe ArtificialIntelligenceDomain maintains formal bridges to:\n- **Blockchain Technology**: Decentralised AI, federated learning incentives\n- **Metaverse Technology**: AI avatars, procedural generation, NPC behaviour\n- **Telecollaboration**: AI meeting assistants, translation, summarisation\n- **Robotics Systems**: Robot learning, autonomous navigation, manipulation\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from stub\n- **Authority Score**: 0.92\n- **References**: 11 pages reference this concept",
   "backlinks": [
     "Edge AI Accelerator",
     "Feature Store",
@@ -9,36 +9,51 @@
     "Data Lake",
     "Token Embedding",
     "TPU",
+    "AI-GroundedDomain",
     "Neuromorphic Chip",
     "NPU",
+    "AIApplications",
+    "ComputationAndIntelligenceDomain",
     "Logic Programming",
     "Symbolic AI",
-    "Data Versioning"
+    "CreativeMediaDomain",
+    "Data Versioning",
+    "AIDomain"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "Blockchain Technology",
+    "Technology Domain",
+    "Robotics Systems",
+    "Artificial Intelligence",
+    "Metaverse Technology",
+    "AIDomain",
+    "Telecollaboration"
+  ],
   "ontology": {
     "term_id": "AI-7007",
     "preferred_term": "ArtificialIntelligenceDomain",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ai#Artificialintelligencedomain",
+    "iri": "http://narrativegoldmine.com/ai#ArtificialIntelligenceDomain",
     "source_domain": "ai",
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
-    "definition": "Stub page for ArtificialIntelligenceDomain. Referenced by 11 pages. Auto-generated during corpus cleanup.",
+    "definition": "The top-level ontological domain classification encompassing all concepts related to artificial intelligence, including research methodologies, system architectures, learning paradigms, application domains, and governance frameworks for intelligent computational systems.",
     "scope_note": null,
-    "status": "stub",
-    "maturity": "draft",
+    "status": "active",
+    "maturity": "stable",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": "ai:Artificialintelligencedomain",
+    "owl_class": "ai:ArtificialIntelligenceDomain",
     "owl_physicality": "ConceptualEntity",
     "owl_role": "Domain",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Technology Domain"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -48,14 +63,15 @@
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "Artificial Intelligence"
+    ],
     "implemented_in_layer": [],
     "source": [],
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: last-updated"
       ]
     }
   }

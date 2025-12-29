@@ -5,16 +5,82 @@
 	- term-id:: NGM-7021
 	- preferred-term:: Data Storage
 	- source-domain:: ngm
-	- status:: stub
+	- status:: active
 	- public-access:: true
-	- definition:: Stub page for Data Storage. Referenced by 6 pages. Auto-generated during corpus cleanup.
-	- maturity:: draft
+	- definition:: Data storage encompasses the systems, technologies, and architectures used to capture, retain, and retrieve digital information for ongoing and future use. It includes various storage types such as file, block, and object storage, along with the hardware and software infrastructure that ensures data persistence, accessibility, availability, and protection against loss or corruption.
+	- maturity:: reviewed
 	- owl:class:: ngm:DataStorage
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
+	- belongsToDomain:: [[Core Technology]]
+
+### Relationships
+- is-subclass-of:: [[Infrastructure Component]]
+- related-to:: [[Data Management]], [[System Architecture]], [[Data Protection]]
+- enables:: [[Data Persistence]], [[Information Retrieval]], [[Backup and Recovery]]
+- implements:: [[Storage Architecture]], [[Data Redundancy]]
+
+## Components
+
+### Primary Storage Types
+
+#### File Storage
+Hierarchical organisation of data using files, folders, and subfolders. Uses file systems like NTFS, ext4, or ZFS to manage data. Best suited for document management, shared drives, and user directories where human-readable organisation is required.
+
+#### Block Storage
+Data divided into fixed-size blocks with unique identifiers, stored independently across storage media. Offers fast, low-latency access and is ideal for databases, virtual machines, and high-performance enterprise workloads requiring direct I/O operations.
+
+#### Object Storage
+Data stored as discrete objects containing data, metadata, and unique identifiers in a flat address space. Highly scalable architecture designed for massive volumes of unstructured data including media files, backups, and cloud-native applications.
+
+### Network Storage Architectures
+
+#### Network-Attached Storage (NAS)
+Single storage device shared across a network, using file-level protocols (NFS, SMB/CIFS). Provides centralised storage with easy collaboration and sharing between connected systems.
+
+#### Storage Area Network (SAN)
+High-performance block-level storage network using dedicated infrastructure (Fibre Channel, iSCSI). Designed for enterprise applications requiring high throughput and advanced features like replication and snapshots.
+
+#### Direct-Attached Storage (DAS)
+Storage devices connected directly to a single computer (SSDs, HDDs, USB drives). Provides high performance but limited sharing capabilities.
+
+### Advanced Technologies
+
+#### Software-Defined Storage (SDS)
+Abstracts storage resources from underlying hardware, providing flexible management and provisioning through software layers. Enables hardware-agnostic storage pools and policy-based management.
+
+#### Hyper-Converged Infrastructure (HCI)
+Integrates compute, storage, and networking into a unified platform. Simplifies data centre management and improves operational efficiency.
+
+#### Cloud Storage
+Remote storage managed by third-party providers, offering scalability, accessibility, and pay-per-use pricing models. Includes offerings like AWS S3, Azure Blob Storage, and Google Cloud Storage.
+
+## Implementation
+
+### Storage Architecture Design
+1. **Capacity Planning**: Estimate current and future storage requirements
+2. **Performance Requirements**: Define IOPS, throughput, and latency needs
+3. **Data Classification**: Categorise data by access patterns and retention needs
+4. **Redundancy Strategy**: Implement RAID, replication, or erasure coding
+5. **Tiering**: Deploy hot, warm, and cold storage tiers based on access frequency
+
+### Data Protection Strategies
+- **Backup**: Regular copies of data for recovery purposes
+- **Replication**: Real-time copies across locations for disaster recovery
+- **Snapshots**: Point-in-time copies for rapid recovery
+- **Encryption**: Protection of data at rest and in transit
+- **Immutable Storage**: Write-once storage for compliance and ransomware protection
+
+### Best Practices
+- Implement data lifecycle management policies
+- Use appropriate storage type for workload characteristics
+- Monitor storage utilisation and performance metrics
+- Regular testing of backup and recovery procedures
+- Plan for capacity growth and technology refresh
+- Consider total cost of ownership including operational costs
 
 ## Metadata
 
-- **Last Updated**: 2025-12-28
-- **Review Status**: Auto-generated stub
+- **Last Updated**: 2025-12-29
+- **Review Status**: Enriched from stub
 - **References**: 6 pages reference this concept

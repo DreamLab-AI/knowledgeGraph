@@ -5,8 +5,9 @@
 	- term-id:: BC-0437
 	- preferred-term:: R3 Corda
 	- source-domain:: mv
-	- status:: stub
+	- status:: active
 	- public-access:: true
+	- definition:: R3 Corda is an enterprise-grade permissioned distributed ledger technology (DLT) platform designed for regulated financial markets, employing peer-to-peer messaging architecture with need-to-know data sharing rather than global broadcast, enabling multi-party workflows with strong identity verification via x.509 certificates while maintaining privacy through node-specific ledgers recording counterparty positions.
 
 
 

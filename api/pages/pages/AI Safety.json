@@ -4,19 +4,22 @@
   "content": "- ### OntologyBlock\n  id:: ai-safety-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0600\n\t- preferred-term:: AI Safety\n\t- source-domain:: ai\n\t- status:: active\n\t- public-access:: true\n\t- definition:: AI Safety is the field of research and practice focused on ensuring that artificial intelligence systems operate safely, reliably, and in alignment with human values and intentions. It encompasses techniques for preventing unintended harm, maintaining robust behaviour under uncertainty, and ensuring systems remain controllable and predictable throughout their operational lifecycle.\n\t- owl:class:: ai:AISafety\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: ai-safety-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Artificial Intelligence]]\n\t\t- related-to:: [[AI Governance]]\n\t\t- related-to:: [[AI Alignment]]\n\t\t- is-parent-of:: [[Adversarial Robustness]]\n\t\t- is-parent-of:: [[Interpretability]]\n\t\t- is-parent-of:: [[Value Alignment]]",
   "backlinks": [
     "ETSI_Domain_AI___Governance",
+    "AIRisk",
     "Safety and alignment",
     "Pseudonymisation",
+    "artificial superintelligence",
+    "AIRiskManagement",
     "AI Governance Principle",
     "Safety Laser Scanner",
     "AI Risks"
   ],
   "wiki_links": [
-    "AI Alignment",
     "AI Governance",
+    "Artificial Intelligence",
+    "Interpretability",
     "Value Alignment",
     "Adversarial Robustness",
-    "Interpretability",
-    "Artificial Intelligence"
+    "AI Alignment"
   ],
   "ontology": {
     "term_id": "AI-0600",

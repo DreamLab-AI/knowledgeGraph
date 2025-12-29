@@ -1,13 +1,14 @@
 {
   "id": "Blockchain Infrastructure",
   "title": "Blockchain Infrastructure",
-  "content": "- ### OntologyBlock\n  id:: blockchain-infrastructure-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-7003\n\t- preferred-term:: Blockchain Infrastructure\n\t- source-domain:: bc\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: Stub page for Blockchain Infrastructure. Referenced by 12 pages. Auto-generated during corpus cleanup.\n\t- maturity:: draft\n\t- owl:class:: bc:BlockchainInfrastructure\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Auto-generated stub\n- **References**: 12 pages reference this concept",
+  "content": "- ### OntologyBlock\n  id:: blockchain-infrastructure-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-7003\n\t- preferred-term:: Blockchain Infrastructure\n\t- source-domain:: bc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: The foundational technical components enabling blockchain networks to operate, including nodes, networking protocols, consensus mechanisms, storage systems, and cryptographic primitives that together provide the physical and logical substrate for distributed ledger operation and decentralized application execution.\n\t- maturity:: production\n\t- belongsToDomain:: [[Blockchain]]\n\t- owl:class:: bc:BlockchainInfrastructure\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n---\nid: BC-7003\ntitle: Blockchain Infrastructure\ntype: ConceptNode\ndomain: Blockchain\ncreated: 2025-12-29\nstatus: active\n---\n\n# Blockchain Infrastructure\n\n## Definition\n- Foundational technical components enabling blockchain network operation\n- Includes nodes, networking, consensus, storage, and cryptographic systems\n- Provides physical and logical substrate for distributed ledger functionality\n- Enables decentralized application execution and transaction processing\n\n## Architecture Layers\n\n### Infrastructure Layer\n- Physical hardware (servers, networking equipment)\n- Cloud infrastructure providers\n- Data centers and edge nodes\n- Network connectivity and bandwidth\n\n### Network Layer\n- Peer-to-peer communication protocols\n- Node discovery and connection management\n- Transaction and block propagation\n- Network topology (mesh, hierarchical)\n\n### Protocol Layer\n- Consensus mechanism implementation\n- Block structure and validation rules\n- Transaction format and processing\n- State machine and execution environment\n\n### Data Layer\n- Blockchain ledger storage\n- State database (accounts, balances)\n- Transaction history\n- Smart contract code and storage\n\n### Application Layer\n- Smart contract execution environment\n- dApp interfaces and APIs\n- Developer tooling and SDKs\n- User-facing applications\n\n## Core Components\n\n### Node Types\n- **Full Nodes**: Store complete blockchain state, participate in consensus, validate transactions\n- **Light Nodes**: Store block headers only, query full nodes for data\n- **Archive Nodes**: Store complete historical state from genesis block\n- **Validator Nodes**: Participate in block production (PoS systems)\n- **RPC Nodes**: Provide API endpoints for dApp interaction\n\n### Networking Infrastructure\n- P2P gossip protocols for transaction propagation\n- Block relay networks for reduced latency\n- DNS bootstrapping for node discovery\n- NAT traversal and connection management\n\n### Storage Systems\n- **On-chain Storage**: Transaction data, smart contract state\n- **Off-chain Storage**: IPFS, Arweave for large data\n- **State Databases**: LevelDB, RocksDB for fast state access\n- **Merkle Trees**: Efficient state verification\n\n### Cryptographic Components\n- Hash functions (SHA-256, Keccak-256)\n- Digital signatures (ECDSA, EdDSA, BLS)\n- Merkle proofs for data integrity\n- Zero-knowledge proofs for privacy\n\n## Relationships\n- is-subclass-of:: [[Distributed Systems Infrastructure]]\n- related-to:: [[Blockchain]]\n- related-to:: [[Consensus Mechanism]]\n- enables:: [[Blockchain Application]]\n- enables:: [[Smart Contracts]]\n- requires:: [[Cryptography]]\n- uses:: [[Peer-to-Peer Network]]\n- component-of:: [[Web3 Infrastructure]]\n\n## Technical Details\n\n### Consensus Infrastructure\n- **Proof of Work**: Mining hardware (ASICs, GPUs)\n- **Proof of Stake**: Validator staking and slashing\n- **BFT Variants**: Tendermint, HotStuff implementations\n- **DAG Systems**: BlockDAG for parallel processing\n\n### Execution Environments\n- **EVM**: Ethereum Virtual Machine (Ethereum, Polygon, BSC)\n- **SVM**: Solana Virtual Machine (parallel execution)\n- **WASM**: WebAssembly runtimes (Polkadot, Near)\n- **Move VM**: Aptos, Sui execution environment\n\n### Network Performance\n- Transaction throughput (TPS)\n- Block time and confirmation latency\n- Network propagation delay\n- State synchronization speed\n\n## Implementations\n\n### Infrastructure Providers\n\n#### Node-as-a-Service\n- **Infura**: Ethereum and multi-chain RPC\n- **Alchemy**: Developer platform with enhanced APIs\n- **QuickNode**: Multi-chain node infrastructure\n- **Ankr**: Decentralized RPC network\n\n#### Staking Infrastructure\n- **Figment**: Institutional staking services\n- **Chorus One**: Validator operations\n- **Stakin**: Multi-chain staking provider\n- **P2P Validator**: Enterprise staking\n\n#### Indexing Services\n- **The Graph**: Decentralized indexing protocol\n- **SubQuery**: Multi-chain data indexing\n- **Covalent**: Unified blockchain data API\n\n### Modern Architecture Patterns (2025)\n\n#### Modular Blockchains\n- Separation of execution, consensus, data availability\n- Specialized layers for each function\n- Examples: Celestia (DA), Fuel (execution)\n\n#### BlockDAG Systems\n- Multiple blocks created simultaneously\n- Parallel transaction processing\n- Improved throughput under load\n\n#### Parachain Architecture\n- Multiple parallel chains sharing security\n- Application-specific blockchains\n- Central relay chain coordination\n\n#### Hierarchical Sharding\n- Network divided into processing shards\n- Local transaction processing\n- Cross-shard coordination\n\n## Interoperability Infrastructure\n\n### Cross-Chain Protocols\n- **Chainlink CCIP**: Oracle-based cross-chain messaging (57+ chains)\n- **LayerZero**: Omnichain interoperability (120+ chains)\n- **Wormhole**: General message passing\n- **IBC**: Inter-Blockchain Communication (Cosmos)\n\n### Bridge Infrastructure\n- Lock-and-mint mechanisms\n- Liquidity pools\n- Validator/relayer networks\n- Proof verification systems\n\n## Performance Metrics\n\n### Network Scale (2025)\n- Ethereum: 1M+ daily transactions, 6000+ nodes\n- Bitcoin: 350K+ daily transactions, 17K+ nodes\n- Solana: 50M+ daily transactions\n- L2 ecosystems: 10M+ daily transactions\n\n### Infrastructure Growth\n- Interoperability market: $1.8B (2024), 23.4% CAGR\n- Node infrastructure services expanding\n- Institutional validator participation increasing\n\n## Security Considerations\n- Node security and key management\n- DDoS protection for RPC endpoints\n- Sybil resistance in P2P networks\n- Validator operational security\n- Smart contract audit requirements\n\n## Enterprise Deployment\n\n### Private/Consortium Networks\n- Hyperledger Fabric\n- R3 Corda\n- Quorum (ConsenSys)\n- Hyperledger Besu\n\n### Hybrid Architectures\n- Private execution with public settlement\n- Permissioned validator sets\n- Enterprise-grade SLAs\n\n## Related Concepts\n- [[Consensus Mechanism]]\n- [[Blockchain Node]]\n- [[Peer-to-Peer Network]]\n- [[Layer 2 Scaling]]\n- [[Cross-Chain Bridge]]\n\n#blockchain #infrastructure #nodes #networks #protocols",
   "backlinks": [
     "Micropayment",
     "Digital Constitution",
     "Digital Real Estate",
     "NFT Wrapping",
     "Customer Rewards",
+    "Blockchain Application",
     "Cross Metaverse Commerce",
     "Digital Economy",
     "Digital Goods",
@@ -21,7 +22,19 @@
     "BC-0440-blockchain-interoperability",
     "Digital Goods Registry"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "Layer 2 Scaling",
+    "Cryptography",
+    "Peer-to-Peer Network",
+    "Distributed Systems Infrastructure",
+    "Web3 Infrastructure",
+    "Smart Contracts",
+    "Blockchain Node",
+    "Cross-Chain Bridge",
+    "Blockchain Application",
+    "Consensus Mechanism",
+    "Blockchain"
+  ],
   "ontology": {
     "term_id": "BC-7003",
     "preferred_term": "Blockchain Infrastructure",
@@ -30,10 +43,10 @@
     "source_domain": "bc",
     "domain": "bc",
     "domain_full_name": "Blockchain",
-    "definition": "Stub page for Blockchain Infrastructure. Referenced by 12 pages. Auto-generated during corpus cleanup.",
+    "definition": "The foundational technical components enabling blockchain networks to operate, including nodes, networking protocols, consensus mechanisms, storage systems, and cryptographic primitives that together provide the physical and logical substrate for distributed ledger operation and decentralized application execution.",
     "scope_note": null,
-    "status": "stub",
-    "maturity": "draft",
+    "status": "active",
+    "maturity": "production",
     "version": null,
     "public_access": true,
     "last_updated": null,
@@ -54,7 +67,9 @@
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "Blockchain"
+    ],
     "implemented_in_layer": [],
     "source": [],
     "validation": {

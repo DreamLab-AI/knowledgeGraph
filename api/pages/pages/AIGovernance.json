@@ -1,12 +1,14 @@
 {
   "id": "AIGovernance",
-  "title": "AIGovernance",
-  "content": "- ### OntologyBlock\n  id:: aigovernance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-7001\n\t- preferred-term:: AIGovernance\n\t- source-domain:: ai\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: Stub page for AIGovernance. Referenced by 58 pages. Auto-generated during corpus cleanup.\n\t- maturity:: draft\n\t- owl:class:: ai:Aigovernance\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Auto-generated stub\n- **References**: 58 pages reference this concept",
+  "title": "AI Governance",
+  "content": "- ### OntologyBlock\n  id:: aigovernance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: AI-7001\n\t- preferred-term:: AI Governance\n\t- source-domain:: ai\n\t- status:: active\n\t- definition:: AI Governance encompasses the frameworks, policies, and practices that guide how artificial intelligence is developed and deployed in a responsible, ethical, and lawful manner, ensuring AI systems operate with transparency, accountability, and alignment with societal values. It involves establishing organizational structures, regulatory compliance mechanisms, and oversight processes to manage the ethical, legal, and societal impacts of AI technologies.\n\t- maturity:: mature\n\t- owl:class:: ai:AiGovernance\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Framework\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: aigovernance-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AI Ethics]]\n\t\t- related-to:: [[AIRiskManagement]]\n\t\t- related-to:: [[Responsible AI]]\n\t\t- related-to:: [[AI Regulation]]\n\t\t- related-to:: [[AIFairness]]\n\t\t- related-to:: [[AISecurity]]\n\t\t- enables:: [[AI Compliance]]\n\t\t- enables:: [[Trustworthy AI]]\n\t- #### Key Pillars\n\t  collapsed:: true\n\t\t- **Transparency**: Documentation and explainability of AI decisions and processes\n\t\t- **Accountability**: Clear roles and responsibilities for AI outcomes across the organization\n\t\t- **Security**: Integration of traditional and AI-specific protections against threats\n\t\t- **Ethics**: Addressing bias, fairness, and potential harm in AI operations\n\t- #### Global Frameworks (2025)\n\t  collapsed:: true\n\t\t- **EU AI Act**: World's first comprehensive, legally binding AI regulation categorizing systems by risk level\n\t\t- **NIST AI Risk Management Framework**: Four-function approach (Govern, Map, Measure, Manage) adopted widely\n\t\t- **UK Pro-Innovation AI Framework**: Five principles (fairness, transparency, accountability, safety, contestability)\n\t\t- **OECD AI Principles**: Five core principles adopted by 46+ countries\n\t\t- **U.S. Executive Order 14179**: National priorities for AI development and oversight (2025)\n\t- #### Organizational Responsibilities\n\t  collapsed:: true\n\t\t- **Chief Information Security Officers**: Primary responsibility for AI security governance\n\t\t- **AI Ethics Boards**: Cross-functional oversight of AI development and deployment\n\t\t- **Data Governance Teams**: Ensuring data quality and privacy compliance\n\t\t- **Legal and Compliance**: Regulatory alignment and risk assessment\n\t\t- **Business Owners**: Accountability for AI outcomes in their domains\n\t- #### Applications\n\t  collapsed:: true\n\t\t- Enterprise AI policy development\n\t\t- Regulatory compliance management\n\t\t- AI system documentation and auditing\n\t\t- Stakeholder communication and transparency\n\t\t- Incident response and remediation\n\t\t- Third-party AI vendor assessment\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched with 2025 regulatory landscape\n- **Verification**: Government and industry sources verified\n- **Regional Context**: Global regulatory frameworks",
   "backlinks": [
     "Privacy By Design",
     "Human-Centred Values",
     "AI Ethics Board",
+    "AISecurity",
     "Responsible AI Principles",
+    "AIFairness",
     "Environmental Sustainability",
     "Politics, Law, Privacy",
     "AI Ethics Checklist_ENHANCED",
@@ -18,6 +20,7 @@
     "AI Risk",
     "Privacy Impact Assessment",
     "Privacy Preserving Data Mining",
+    "AIRisk",
     "AI Trustworthiness",
     "High-Risk AI System",
     "AI Impact Assessment",
@@ -44,6 +47,7 @@
     "AI Documentation Standards",
     "Privacy Budget Management",
     "Privacy, Trust and Safety",
+    "AIRiskManagement",
     "Stakeholder Engagement in AI",
     "Privacy Utility Tradeoffs",
     "Human Agency and Oversight",
@@ -51,9 +55,11 @@
     "Algorithmic Transparency Index",
     "AI Office",
     "AI Board",
+    "Cryptography Security and Privacy",
     "Minimal Risk AI",
     "AI Risks",
     "National Competent Authority",
+    "TrustAndGovernanceDomain",
     "Limited Risk AI",
     "Algorithmic Accountability",
     "Privacy and Data Governance",
@@ -62,47 +68,72 @@
     "AI Ethics Checklist",
     "Privacy"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "AIRiskManagement",
+    "AI Regulation",
+    "AI Compliance",
+    "Trustworthy AI",
+    "Artificial Intelligence",
+    "AISecurity",
+    "AIFairness",
+    "Responsible AI",
+    "AI Ethics"
+  ],
   "ontology": {
     "term_id": "AI-7001",
-    "preferred_term": "AIGovernance",
+    "preferred_term": "AI Governance",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ai#Aigovernance",
+    "iri": "http://narrativegoldmine.com/ai#AiGovernance",
     "source_domain": "ai",
     "domain": "ai",
     "domain_full_name": "Artificial Intelligence",
-    "definition": "Stub page for AIGovernance. Referenced by 58 pages. Auto-generated during corpus cleanup.",
+    "definition": "AI Governance encompasses the frameworks, policies, and practices that guide how artificial intelligence is developed and deployed in a responsible, ethical, and lawful manner, ensuring AI systems operate with transparency, accountability, and alignment with societal values. It involves establishing organizational structures, regulatory compliance mechanisms, and oversight processes to manage the ethical, legal, and societal impacts of AI technologies.",
     "scope_note": null,
-    "status": "stub",
-    "maturity": "draft",
+    "status": "active",
+    "maturity": "mature",
     "version": null,
     "public_access": true,
     "last_updated": null,
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": "ai:Aigovernance",
+    "owl_class": "ai:AiGovernance",
     "owl_physicality": "ConceptualEntity",
-    "owl_role": "Concept",
+    "owl_role": "Framework",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "AI Ethics"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "AI Compliance",
+      "Trustworthy AI"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "Artificial Intelligence"
+    ],
     "implemented_in_layer": [],
     "source": [],
+    "other_relationships": {
+      "related-to": [
+        "AIRiskManagement",
+        "Responsible AI",
+        "AI Regulation",
+        "AIFairness",
+        "AISecurity"
+      ]
+    },
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)"
+        "Missing required property: last-updated"
       ]
     }
   }

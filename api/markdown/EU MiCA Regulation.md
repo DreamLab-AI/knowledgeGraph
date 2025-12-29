@@ -5,7 +5,7 @@
 	- term-id:: BC-0482
 	- preferred-term:: EU MiCA Regulation
 	- source-domain:: mv
-	- status:: stub
+	- status:: active
 	- public-access:: true
 
 
@@ -114,7 +114,7 @@
 ## Metadata
 
 - **Migration Status**: Ontology block enriched on 2025-11-12
-- **Last Updated**: 2025-11-12
+- **Last Updated**: 2025-12-29
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable

@@ -1,7 +1,7 @@
 {
   "id": "Robotics",
   "title": "Robotics",
-  "content": "- ### OntologyBlock\n  id:: robotics-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-7000\n\t- preferred-term:: Robotics\n\t- source-domain:: rb\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: Stub page for Robotics. Referenced by 270 pages. Auto-generated during corpus cleanup.\n\t- maturity:: draft\n\t- owl:class:: rb:Robotics\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Auto-generated stub\n- **References**: 270 pages reference this concept",
+  "content": "- ### OntologyBlock\n  id:: robotics-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-7000\n\t- preferred-term:: Robotics\n\t- source-domain:: rb\n\t- definition:: Robotics is the interdisciplinary field encompassing the design, construction, operation, and application of robots and automated systems. Modern robotics integrates artificial intelligence, machine vision, advanced sensors, IoT connectivity, and digital twins to create adaptive, flexible, and increasingly autonomous systems capable of operating in unstructured environments alongside humans.\n\t- status:: active\n\t- public-access:: true\n\t- maturity:: reviewed\n\t- belongsToDomain:: [[Automation]]\n\t- owl:class:: rb:Robotics\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n## Market Overview (2025)\n\t- Global industrial robot installations reached all-time high of US$16.5 billion market value\n\t- Deal value surged to $7.3 billion in H1 2025 for humanoid and AI-driven robotics\n\t- Shift from traditional automation to autonomous, adaptive robotic systems\n\t- Robot-as-a-Service (RaaS) models enabling SME adoption\n\n## Key Trends 2025\n\n### AI Integration\n\t- Analytical AI enabling processing of sensor data for managing production variability\n\t- Embodied AI combining intelligence with physicality for autonomous perception, reasoning, and action\n\t- Machine learning enabling robots to handle unpredictability in unstructured environments\n\n### Humanoid Robotics\n\t- 2025 marks transition from lab demonstrations to real-world deployments\n\t- BMW, Mercedes-Benz, and Tesla piloting humanoids for assembly and logistics\n\t- Leading platforms: Tesla Optimus Gen 2, Engineered Arts Ameca, Figure AI\n\t- China setting specific targets for mass humanoid production\n\n### Collaborative Robotics (Cobots)\n\t- ABB, FANUC, and KUKA advancing collaborative and modular arm systems\n\t- Figure AI, Agility Robotics, and Apptronik redefining human-robot collaboration\n\t- Early deployments in semi-structured tasks: tote picking, palletising, line feeding\n\n## Application Domains\n\t- **Automotive**: Assembly, welding, painting, quality inspection\n\t- **Electronics**: Precision assembly, component placement\n\t- **Logistics**: Warehouse automation, order fulfilment, last-mile delivery\n\t- **Healthcare**: Surgical assistance, rehabilitation, patient care\n\t- **Construction**: 3D printing, material handling, inspection\n\t- **Aerospace**: Complex assembly, maintenance, inspection\n\n## Sustainability Impact\n\t- High precision reducing material waste in manufacturing\n\t- Critical role in cost-effective production of green energy technologies\n\t- Solar panel and EV battery manufacturing automation\n\t- Supporting UN environmental sustainability goals\n\n### Relationships\n- is-subclass-of:: [[Automation]]\n- relatedTo:: [[Artificial Intelligence]]\n- relatedTo:: [[Machine Vision]]\n- relatedTo:: [[IoT Sensors]]\n- relatedTo:: [[Digital Twin]]\n- enables:: [[Smart Manufacturing]]\n- enables:: [[Industrial Automation]]\n- hasSubClass:: [[Collaborative Robotics]]\n- hasSubClass:: [[Humanoid Robots]]\n- hasSubClass:: [[Industrial Robots]]\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched with 2025 research\n- **References**: 270+ pages reference this concept\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [
     "Workspace",
     "State Space Control",
@@ -288,7 +288,18 @@
     "rb-0041-inertia",
     "rb-0100-safety-integrity-level"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "Smart Manufacturing",
+    "Humanoid Robots",
+    "Automation",
+    "IoT Sensors",
+    "Collaborative Robotics",
+    "Artificial Intelligence",
+    "Industrial Robots",
+    "Digital Twin",
+    "Machine Vision",
+    "Industrial Automation"
+  ],
   "ontology": {
     "term_id": "RB-7000",
     "preferred_term": "Robotics",
@@ -297,10 +308,10 @@
     "source_domain": "rb",
     "domain": "rb",
     "domain_full_name": "Robotics",
-    "definition": "Stub page for Robotics. Referenced by 270 pages. Auto-generated during corpus cleanup.",
+    "definition": "Robotics is the interdisciplinary field encompassing the design, construction, operation, and application of robots and automated systems. Modern robotics integrates artificial intelligence, machine vision, advanced sensors, IoT connectivity, and digital twins to create adaptive, flexible, and increasingly autonomous systems capable of operating in unstructured environments alongside humans.",
     "scope_note": null,
-    "status": "stub",
-    "maturity": "draft",
+    "status": "active",
+    "maturity": "reviewed",
     "version": null,
     "public_access": true,
     "last_updated": null,
@@ -321,7 +332,9 @@
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "Automation"
+    ],
     "implemented_in_layer": [],
     "source": [],
     "validation": {

@@ -6,13 +6,13 @@
     "Feature Engineering"
   ],
   "wiki_links": [
-    "Feature Selection",
-    "Data Visualization",
+    "Unsupervised Learning",
     "Feature Engineering",
     "Curse of Dimensionality",
-    "Unsupervised Learning",
-    "Machine Learning",
-    "Computational Efficiency"
+    "Feature Selection",
+    "Computational Efficiency",
+    "Data Visualization",
+    "Machine Learning"
   ],
   "ontology": {
     "term_id": "AI-1021",

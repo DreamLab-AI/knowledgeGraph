@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "System Architecture",
-    "metaverse",
-    "Real-Time Systems",
     "Scalable Metaverse Infrastructure",
-    "Distributed System Architecture"
+    "Real-Time Systems",
+    "Distributed System Architecture",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9899",

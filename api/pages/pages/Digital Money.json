@@ -8,17 +8,17 @@
     "Bitcoin As Money"
   ],
   "wiki_links": [
-    "Payment Network",
-    "CBDC",
     "Electronic Payments",
-    "metaverse",
     "Digital Wallet",
-    "Financial Instruments",
-    "Instant Settlement",
-    "Stablecoin",
     "Cryptocurrency",
+    "Financial Instruments",
     "Programmable Money",
-    "Security Infrastructure"
+    "Instant Settlement",
+    "Security Infrastructure",
+    "CBDC",
+    "Stablecoin",
+    "Payment Network",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9862",

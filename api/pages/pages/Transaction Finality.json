@@ -1,0 +1,66 @@
+{
+  "id": "Transaction Finality",
+  "title": "Transaction Finality",
+  "content": "- ### OntologyBlock\n  id:: transaction-finality-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- source-domain:: bc\n\t- term-id:: BC-8021\n\t- preferred-term:: Transaction Finality\n\t- status:: active\n\t- public-access:: true\n\t- definition:: The point at which a blockchain transaction becomes irreversible and cannot be altered or removed, providing settlement certainty for participants. Finality types include probabilistic (increasing confidence with confirmations), deterministic (explicit protocol guarantee), and economic (cost to revert exceeds benefit).\n\t- belongsToDomain:: [[Blockchain]]\n\t- owl:class:: bc:TransactionFinality\n\n---\nid: BC-1014\ntitle: Transaction Finality\ntype: ConceptNode\ndomain: Blockchain\ncreated: 2025-11-24\nstatus: active\n---\n\n# Transaction Finality\n\n## Definition\n- Point at which transaction becomes irreversible and cannot be altered or removed from blockchain\n- Guarantees transaction permanence and settlement certainty for participants\n- Fundamental property determining blockchain suitability for different applications\n\n## Core Concepts\n- **Irreversibility**: Transaction cannot be rolled back or modified\n- **Settlement Guarantee**: Assets definitively transferred\n- **Confidence Level**: Degree of certainty transaction will remain in chain\n- **Time to Finality**: Duration from inclusion to finalization\n\n## Finality Types\n### [[Probabilistic Finality]]\n- Confidence increases with subsequent block confirmations\n- Never reaches 100% certainty (theoretically)\n- Used in Proof-of-Work systems (Bitcoin, Ethereum PoW)\n\n### [[Deterministic Finality]]\n- Transactions finalized through explicit protocol mechanism\n- Absolute guarantee after finalization checkpoint\n- Used in BFT-based consensus (Tendermint, Algorand)\n\n### Economic Finality\n- Cost to revert exceeds potential gain\n- Probabilistic but economically secured\n- Ethereum Proof-of-Stake uses slashing for economic finality\n\n## Relationships\n- property-of:: [[Transaction]]\n- depends-on:: [[Consensus Mechanism]]\n- has-types:: [[Probabilistic Finality]], [[Deterministic Finality]]\n- affects:: [[Transaction Confirmation Time]]\n- critical-for:: [[Settlement]]\n\n## Finality by Consensus Type\n| Consensus | Finality Type | Time to Finality |\n|-----------|---------------|------------------|\n| Bitcoin PoW | Probabilistic | ~60 min (6 blocks) |\n| Ethereum PoW | Probabilistic | ~15 min (20-30 blocks) |\n| Ethereum PoS | Economic | ~13 min (2 epochs) |\n| Tendermint | Deterministic | ~6 seconds (1 block) |\n| Algorand | Deterministic | ~4 seconds (1 block) |\n| Solana | Economic | ~13 seconds (32 blocks) |\n\n## Implications\n### For Applications\n- **Payments**: Fast finality enables real-time transactions\n- **DeFi**: Deterministic finality reduces liquidation risks\n- **Cross-Chain**: Finality time affects bridge security/speed\n- **Enterprise**: Regulated industries require strong finality guarantees\n\n### For Users\n- Confidence in transaction settlement\n- Time to consider transaction \"complete\"\n- Risk of double-spend or reorganization\n\n### For Developers\n- Smart contract interaction patterns\n- Error handling and rollback scenarios\n- Integration with external systems\n\n## Measurement Metrics\n- **Mean Time to Finality (MTTF)**: Average finalization duration\n- **Confidence Threshold**: Block confirmations for desired certainty\n- **Finality Rate**: Percentage of blocks achieving finality\n- **Reorg Depth**: Historical chain reorganization statistics\n\n## Security Considerations\n- Long-range attacks on probabilistic finality\n- Network partition finality implications\n- Checkpoint mechanisms for faster weak subjectivity\n- Slashing penalties for violating finality\n\n## Trade-offs\n### Fast Finality\n- **Pros**: Better UX, real-time applications, cross-chain efficiency\n- **Cons**: May sacrifice decentralization or liveness guarantees\n\n### Slow Finality\n- **Pros**: Stronger security guarantees, simpler consensus\n- **Cons**: Poor UX, limits application design space\n\n## Checkpoint Finality\n- Periodic finalization of earlier blocks\n- Hybrid approach (fast blocks, slow finality)\n- Ethereum Casper FFG: block production + periodic finalization\n\n## Attack Vectors\n- **Nothing-at-Stake**: PoS validators signing conflicting chains\n- **Long-Range Attacks**: Rewriting history from genesis\n- **Short-Range Reorgs**: Recent block reorganization\n- **51% Attacks**: Majority control enabling finality violation\n\n## Related Concepts\n- [[Probabilistic Finality]]\n- [[Deterministic Finality]]\n- [[Consensus Mechanism]]\n- [[Transaction Confirmation]]\n\n#blockchain #finality #consensus #security\n\n### Relationships\n- is-subclass-of:: [[Blockchain]]",
+  "backlinks": [
+    "Deterministic Finality",
+    "Probabilistic Finality"
+  ],
+  "wiki_links": [
+    "Transaction Confirmation Time",
+    "Settlement",
+    "Deterministic Finality",
+    "Transaction Confirmation",
+    "Transaction",
+    "Consensus Mechanism",
+    "Blockchain",
+    "Probabilistic Finality"
+  ],
+  "ontology": {
+    "term_id": "BC-8021",
+    "preferred_term": "Transaction Finality",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#TransactionFinality",
+    "source_domain": "bc",
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
+    "definition": "The point at which a blockchain transaction becomes irreversible and cannot be altered or removed, providing settlement certainty for participants. Finality types include probabilistic (increasing confidence with confirmations), deterministic (explicit protocol guarantee), and economic (cost to revert exceeds benefit).",
+    "scope_note": null,
+    "status": "active",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:TransactionFinality",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "Blockchain"
+    ],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

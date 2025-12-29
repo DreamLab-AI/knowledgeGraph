@@ -5,16 +5,37 @@
 	- term-id:: RB-7001
 	- preferred-term:: RoboticsDomain
 	- source-domain:: rb
-	- status:: stub
+	- status:: active
 	- public-access:: true
-	- definition:: Stub page for RoboticsDomain. Referenced by 140 pages. Auto-generated during corpus cleanup.
-	- maturity:: draft
+	- definition:: The Robotics Domain encompasses intelligent machines and automated systems, providing a formal ontological framework for knowledge representation, autonomous reasoning, and robotic behaviors. It includes concepts for robot architectures, sensor systems, actuators, motion planning, human-robot interaction, and autonomous decision-making, enabling unambiguous knowledge transfer among humans, robots, and artificial systems.
+	- maturity:: reviewed
 	- owl:class:: rb:Roboticsdomain
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Domain
+	- belongsToDomain:: [[TechnologyDomain]]
+
+## Relationships
+- ### Subdomains
+	- [[AutonomousRobotics]] - Self-governing robotic systems with goal-oriented behaviors
+	- [[IndustrialAutomation]] - Automated manufacturing and production systems
+	- [[HumanRobotInteraction]] - Collaborative interfaces between humans and robots
+	- [[RobotPerception]] - Sensing and environmental awareness systems
+	- [[MotionPlanning]] - Path planning and kinematic control
+
+- ### Related Concepts
+	- [[ArtificialIntelligence]] - Core reasoning and learning capabilities
+	- [[MachineLearning]] - Adaptive learning for robotic systems
+	- [[ComputerVision]] - Visual perception and recognition
+	- [[SensorFusion]] - Integration of multiple sensor modalities
+	- [[ControlSystems]] - Feedback and actuation control
+	- [[EmbeddedSystems]] - Hardware-software integration
+
+- ### Standards
+	- [[IEEE1872]] - IEEE Standard Ontology for Robotics and Automation (CORA)
+	- [[IEEE1872.2]] - Autonomous Robotics Ontology extension
 
 ## Metadata
 
-- **Last Updated**: 2025-12-28
-- **Review Status**: Auto-generated stub
+- **Last Updated**: 2025-12-29
+- **Review Status**: Reviewed and enriched
 - **References**: 140 pages reference this concept

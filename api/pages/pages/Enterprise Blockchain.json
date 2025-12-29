@@ -1,12 +1,13 @@
 {
   "id": "Enterprise Blockchain",
   "title": "Enterprise Blockchain",
-  "content": "- ### OntologyBlock\n  id:: enterprise-blockchain-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-7007\n\t- preferred-term:: Enterprise Blockchain\n\t- source-domain:: bc\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: Stub page for Enterprise Blockchain. Referenced by 9 pages. Auto-generated during corpus cleanup.\n\t- maturity:: draft\n\t- owl:class:: bc:EnterpriseBlockchain\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Auto-generated stub\n- **References**: 9 pages reference this concept",
+  "content": "- ### OntologyBlock\n  id:: enterprise-blockchain-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-7007\n\t- preferred-term:: Enterprise Blockchain\n\t- source-domain:: bc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Enterprise blockchain refers to permissioned distributed ledger platforms designed specifically for business use cases, providing organisations with controlled access, enhanced privacy, and regulatory compliance capabilities. Unlike public blockchains, enterprise solutions restrict network participation to authenticated entities, enabling secure data sharing, automated business processes through smart contracts, and maintenance of a single source of truth without reliance on central authorities.\n\t- maturity:: reviewed\n\t- owl:class:: bc:EnterpriseBlockchain\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[Blockchain]]\n\n### Relationships\n\t- relatedTo:: [[Supply Chain Blockchain]]\n\t- relatedTo:: [[Smart Contracts]]\n\t- relatedTo:: [[Hyperledger Fabric]]\n\t- enables:: [[Business Process Automation]]\n\t- supports:: [[Regulatory Compliance]]\n\t- implementedBy:: [[Permissioned Networks]]\n\n## Overview\n\nEnterprise blockchain has matured from experimental proofs-of-concept to production-grade systems driving real business value. According to Casper Labs' survey of 603 global business decision-makers in the UK, China, and the US, nearly 90% of surveyed companies worldwide have begun implementing blockchain technology in some form. 2025 marks a significant inflection point as more companies move beyond pilot projects to full-scale deployment.\n\n## Deployment Models\n\n### Hybrid Solutions\n- Lead the way globally at 38% of enterprise implementations\n- Combine elements of both public and private chains\n- Balance transparency requirements with privacy needs\n- Enable selective disclosure and public verifiability\n\n### Private Blockchain\n- Ranks second in most regions (China being notable exception)\n- Restricts access to approved participants only\n- Provides full control over data and governance\n- Optimised for performance and confidentiality\n\n### Consortium Blockchain\n- Multiple organisations share governance responsibilities\n- Common in industry-specific applications\n- Distributed trust across competing entities\n- Examples include trade finance and supply chain networks\n\n## Major Platforms\n\n### Hyperledger Fabric\n- Open-source platform under Linux Foundation's Hyperledger project\n- Modular architecture for building private, permissioned networks\n- **Channels**: Private sub-networks enabling selective data sharing\n- Supports pluggable consensus mechanisms\n- Widely used in finance, supply chain, healthcare industries\n- Focus on privacy, modular design, and enterprise-grade features\n\n### Quorum\n- Enterprise-focused Ethereum variant, originally developed by J.P. Morgan\n- Now maintained by ConsenSys\n- Supports smart contracts with privacy enhancements\n- High-speed transactions on permissioned network\n\n### Corda Enterprise\n- Designed specifically for financial services\n- Point-to-point transaction model for privacy\n- Strong regulatory compliance features\n- CorDapps enable custom business logic\n\n### Hyperledger Besu\n- Ethereum-compatible enterprise blockchain\n- Supports both public and private network deployments\n- Pluggable consensus including IBFT 2.0 and Clique\n- Full EVM compatibility for smart contracts\n\n## Key Benefits\n\n### Cost Reduction\n- Eliminates intermediaries in business processes\n- Enables rules-based automation through smart contracts\n- Reduces reconciliation overhead across organisations\n\n### Audit and Compliance\n- Every transaction immutably recorded and time-stamped\n- Creates permanent, tamper-proof audit trail\n- Easier regulatory compliance demonstration\n- Enhanced accountability tracking\n\n### Data Integrity\n- Single source of truth across multiple parties\n- Prevents data discrepancies and disputes\n- Cryptographic verification of all entries\n- Immutable historical record\n\n## Real-World Success Stories\n\n### Walmart Food Traceability\n- Implemented using Hyperledger Fabric\n- Reduced mango traceability time from 7 days to 2.2 seconds\n- System expanded to track over 25 products from 5 suppliers\n- Pioneering case of blockchain adoption in supply chain management\n\n## 2025 Trends\n\n### Blockchain-as-a-Service (BaaS)\n- Cloud providers (Microsoft Azure, AWS, Oracle) offer BaaS platforms\n- Enables deployment without building infrastructure from scratch\n- Becoming default starting point for most enterprise implementations\n\n### Public-Private Collaboration\n- Increased collaboration in digital identity, healthcare, cross-border payments\n- Both sectors benefit from blockchain efficiencies\n- Regulatory sandboxes enabling innovation with oversight\n\n### Layer 2 and Scaling\n- Newer Layer 2 solutions address throughput limitations\n- Higher customisability for enterprise requirements\n- Improved interoperability between blockchain networks\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Comprehensive review completed\n- **References**: 9 pages reference this concept",
   "backlinks": [
     "BC-0437-r3-corda",
     "Consortium Blockchain",
     "Quorum Blockchain",
     "BC-0436-hyperledger-iroha",
+    "Supply Chain Blockchain",
     "BC-0433-enterprise-token-standards",
     "BC-0435-hyperledger-indy",
     "Blockchain As A Service",
@@ -15,7 +16,15 @@
     "BC-0426-hyperledger-fabric",
     "BC-0427-hyperledger-besu"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "Supply Chain Blockchain",
+    "Smart Contracts",
+    "Hyperledger Fabric",
+    "Regulatory Compliance",
+    "Permissioned Networks",
+    "Blockchain",
+    "Business Process Automation"
+  ],
   "ontology": {
     "term_id": "BC-7007",
     "preferred_term": "Enterprise Blockchain",
@@ -24,10 +33,10 @@
     "source_domain": "bc",
     "domain": "bc",
     "domain_full_name": "Blockchain",
-    "definition": "Stub page for Enterprise Blockchain. Referenced by 9 pages. Auto-generated during corpus cleanup.",
+    "definition": "Enterprise blockchain refers to permissioned distributed ledger platforms designed specifically for business use cases, providing organisations with controlled access, enhanced privacy, and regulatory compliance capabilities. Unlike public blockchains, enterprise solutions restrict network participation to authenticated entities, enabling secure data sharing, automated business processes through smart contracts, and maintenance of a single source of truth without reliance on central authorities.",
     "scope_note": null,
-    "status": "stub",
-    "maturity": "draft",
+    "status": "active",
+    "maturity": "reviewed",
     "version": null,
     "public_access": true,
     "last_updated": null,
@@ -48,7 +57,9 @@
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "Blockchain"
+    ],
     "implemented_in_layer": [],
     "source": [],
     "validation": {

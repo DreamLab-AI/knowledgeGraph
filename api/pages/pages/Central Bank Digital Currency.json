@@ -9,16 +9,16 @@
   ],
   "wiki_links": [
     "Digital Payments",
-    "Digital Identity",
-    "Payment Network",
     "Digital Money",
-    "metaverse",
-    "CBDC Frameworks",
-    "Payment System",
     "Monetary Policy Transmission",
-    "Financial Inclusion",
     "Central Bank Infrastructure",
-    "Digital Currency"
+    "CBDC Frameworks",
+    "Digital Currency",
+    "Digital Identity",
+    "Financial Inclusion",
+    "Payment System",
+    "metaverse",
+    "Payment Network"
   ],
   "ontology": {
     "term_id": "MV-9817",

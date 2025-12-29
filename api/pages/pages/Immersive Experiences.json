@@ -8,16 +8,18 @@
     "Real-Time Rendering Pipeline",
     "Dynamic Character Animation",
     "Inclusive Xr Experience",
+    "3D Rendering Engine",
     "Immersive Audio System",
     "Spatial Audio",
-    "Physical Hardware"
+    "Physical Hardware",
+    "Augmented Reality"
   ],
   "wiki_links": [
+    "Virtual Presence",
+    "Extended Reality Xr",
     "Immersive Technology",
     "Digital Experience",
-    "metaverse",
-    "Extended Reality Xr",
-    "Virtual Presence"
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9923",

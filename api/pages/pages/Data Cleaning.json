@@ -6,12 +6,12 @@
     "Feature Engineering"
   ],
   "wiki_links": [
-    "Data Analysis",
+    "ETL",
     "Data Engineering",
     "Feature Engineering",
-    "ETL",
-    "Data Preprocessing",
     "Data Quality",
+    "Data Analysis",
+    "Data Preprocessing",
     "Machine Learning"
   ],
   "ontology": {

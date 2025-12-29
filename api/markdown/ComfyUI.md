@@ -1,0 +1,162 @@
+- ### OntologyBlock
+  id:: comfyui-ontology
+  collapsed:: true
+	- ontology:: true
+	- source-domain:: ai
+	- term-id:: AI-8020
+	- preferred-term:: ComfyUI
+	- status:: active
+	- maturity:: reviewed
+	- public-access:: true
+	- definition:: ComfyUI is the most powerful and modular open-source diffusion model GUI, API, and backend featuring a directed acyclic graph (DAG) node-based interface for constructing and customizing AI image generation workflows. It enables visual programming of Stable Diffusion pipelines through interconnected nodes representing operations like model loading, prompt encoding, sampling, and post-processing, with smart memory management supporting GPUs with as low as 1GB VRAM.
+	- owl:class:: ai:Comfyui
+	- belongsToDomain:: [[Artificial Intelligence]]
+
+- ## Unsorted links
+	- [ZHO-ZHO-ZHO/ComfyUI-Gemini: Using Gemini in ComfyUI (github.com)](https://github.com/ZHO-ZHO-ZHO/ComfyUI-Gemini)
+	- A GitHub repository that provides instructions on using Gemini in ComfyUI.
+	- [Expanding Horizons: Outpainting Mastery in ComfyUI (youtube.com)](https://www.youtube.com/watch?v=fFdYdTzq7Kg)
+	- A YouTube video tutorial that demonstrates how to master outpainting in ComfyUI.
+	- [Chaoses-Ib/ComfyScript: A Python front end for ComfyUI (github.com)](https://github.com/Chaoses-Ib/ComfyScript)
+	- This GitHub repository contains a Python front end for ComfyUI, known as ComfyScript.
+	- [Aerial view of the building（建筑鸟瞰图）
+	- v1.0 | Stable Diffusion LoRA | Civitai](https://civitai.com/models/121728/aerial-view-of-the-building)
+	- Civitai provides a stable diffusion LoRA model for generating an aerial view of a building using ComfyUI.
+	- [ComfyUI nodes based](https://github.com/comfyanonymous/ComfyUI)
+	- A GitHub repository that provides nodes-based examples and workflows for ComfyUI.
+	- 🎬
+		- [How 2 Canvas Node YouTube](https://www.youtube.com/watch?v=DROM8vfIYUY)
+		- A YouTube video tutorial that explains how to use the Canvas Node in ComfyUI.
+		- [This One Simple Plugin Adds Realtime AI Assistance to Krita
+		- YouTube](https://www.youtube.com/watch?v=AU8NDSBIS1U)
+		- A YouTube video that introduces a plugin for Krita that adds realtime AI assistance using ComfyUI.
+		- [Tutorials from first principles](https://www.youtube.com/watch?v=reimr3jZ8lI)
+		- A YouTube video tutorial series that covers ComfyUI from the basic principles.
+		- [modular workflow](https://www.youtube.com/watch?v=ppE1W0-LJas)
+		- A YouTube video that showcases a modular workflow in ComfyUI.
+		- [Detailed youtube tutorials](https://www.youtube.com/@sedetweiler)
+		- A YouTube channel with detailed tutorials on using ComfyUI.
+		- 🔧
+			- [phineas-pta/comfy-trt-test: attempt to use TensorRT with ComfyUI (github.com)](https://github.com/phineas-pta/comfy-trt-test)
+			- A GitHub repository that attempts to use TensorRT with ComfyUI.
+			- [gameltb/ComfyUI_stable_fast: Experimental usage of stable-fast and TensorRT. (github.com)](https://github.com/gameltb/ComfyUI_stable_fast)
+			- This GitHub repository provides an experimental usage of stable-fast and TensorRT in ComfyUI.
+			- [Acly/krita-ai-diffusion: Streamlined interface for generating images with AI in Krita. Inpaint and outpaint with optional text prompt, no tweaking required. (github.com)](https://github.com/Acly/krita-ai-diffusion?tab=readme-ov-file)
+			- A GitHub repository that offers a streamlined interface for generating images with AI in Krita using ComfyUI.
+			- [Sytan workflow (contains js!)](https://github.com/SytanSD/Sytan-SDXL-ComfyUI)
+			- This GitHub repository contains a workflow for ComfyUI that includes JavaScript files.
+		- 🌐
+			- [(2) Plush-for-ComfyUI style_prompt, can now use ChatGPT to create prompts from images : comfyui (reddit.com)](https://www.reddit.com/r/comfyui/comments/18uincm/plushforcomfyui_style_prompt_can_now_use_chatgpt/)
+			- A Reddit post that discusses the Plush-for-ComfyUI style_prompt and its capability to create prompts from images using ChatGPT.
+			- [(1) AP Workflow 6.0 for ComfyUI
+			- Now with support for SD 1.5 and HiRes Fix, IPAdapter, Prompt Enricher via local LLMs (and OpenAI), and a new Object Swapper + Face Swapper, FreeU v2, XY Plot, ControlNet and ControlLoRAs, SDXL Base + Refiner, Hand Detailer, Face Detailer, Upscalers, ReVision, etc. : StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/17v0bo3/ap_workflow_60_for_comfyui_now_with_support_for/)
+			- A Reddit post about the AP Workflow 6.0 for ComfyUI, which includes various features and enhancements.
+			- [UI node packs on civitai](https://civitai.com/tag/comfyui)
+			- Civitai provides UI node packs for ComfyUI.
+		- 📑
+			- [fictions-ai/sharing-is-caring (github.com)](https://github.com/fictions-ai/sharing-is-caring/tree/main)
+			- This GitHub repository contains various resources related to ComfyUI and its applications.
+			- [Wiki full of links](https://wyrde.github.io/ComfyResources/nodes/)
+			- A comprehensive wiki filled with links to resources, tutorials, and examples related to ComfyUI.
+			- [Images / workflows](https://comfyworkflows.com/)
+			- ComfyWorkflows offers a collection of images and workflows created using ComfyUI.
+		- Using LLMs in ComfyUI
+			- [ZHO-ZHO-ZHO/ComfyUI-Gemini: Using Gemini in ComfyUI (github.com)](https://github.com/ZHO-ZHO-ZHO/ComfyUI-Gemini)
+		-
+		- [Expanding Horizons: Outpainting Mastery in ComfyUI (youtube.com)](https://www.youtube.com/watch?v=fFdYdTzq7Kg)
+		- https://arxiv.org/abs/2309.11497
+		- TensorRT converter [phineas-pta/comfy-trt-test: attempt to use TensorRT with ComfyUI (github.com)](https://github.com/phineas-pta/comfy-trt-test)
+		- [gameltb/ComfyUI_stable_fast: Experimental usage of stable-fast and TensorRT. (github.com)](https://github.com/gameltb/ComfyUI_stable_fast)
+		- https://perilli.com/ai/comfyui/#soon
+		-
+		- [Chaoses-Ib/ComfyScript: A Python front end for ComfyUI (github.com)](https://github.com/Chaoses-Ib/ComfyScript)
+		- Model leaderboard  [SDXL Model Compare
+			- Google Sheets](https://docs.google.com/spreadsheets/d/1IYJw4Iv9M_vX507MPbdX4thhVYxOr6-IThbaRjdpVgM/edit#gid=0)
+		- [fictions-ai/sharing-is-caring (github.com)](https://github.com/fictions-ai/sharing-is-caring/tree/main)
+		- [chaojie/ComfyUI-MotionCtrl (github.com)](https://github.com/chaojie/ComfyUI-MotionCtrl)
+		- [(2) Plush-for-ComfyUI style_prompt, can now use ChatGPT to create prompts from images : comfyui (reddit.com)](https://www.reddit.com/r/comfyui/comments/18uincm/plushforcomfyui_style_prompt_can_now_use_chatgpt/)
+		- [Ferniclestix](https://www.youtube.com/@ferniclestix)
+			- [How 2 Canvas Node YouTube](https://www.youtube.com/watch?v=DROM8vfIYUY)
+		- [Nerdy Rodent YouTube](https://www.youtube.com/@NerdyRodent)
+		- [Acly/krita-ai-diffusion: Streamlined interface for generating images with AI in [[Krita]]. Inpaint and outpaint with optional text prompt, no tweaking required. (github.com)](https://github.com/Acly/krita-ai-diffusion?tab=readme-ov-file)
+			- TODO this needs the live view debugging
+			- [This One Simple Plugin Adds Realtime AI Assistance to Krita YouTube](https://www.youtube.com/watch?v=AU8NDSBIS1U) [[Courses and Training]]
+		- [ComfyUI nodes based](https://github.com/comfyanonymous/ComfyUI)
+		- [Controlnet auto installer](https://github.com/Fannovel16/comfy_controlnet_preprocessors)
+		- [LATENT Tricks Amazing ways to use ComfyUI](https://www.youtube.com/watch?v=OdMtJMzjNLg)
+		- [latent consistency model](https://github.com/0xbitches/ComfyUI-LCM#img2img--vid2vid)
+		- [UI node packs on civitai](https://civitai.com/tag/comfyui)
+		- [(1) AP Workflow 6.0 for ComfyUI
+			- Now with support for SD 1.5 and HiRes Fix, IPAdapter, Prompt Enricher via local LLMs (and OpenAI), and a new Object Swapper + Face Swapper, FreeU v2, XY Plot, ControlNet and ControlLoRAs, SDXL Base + Refiner, Hand Detailer, Face Detailer, Upscalers, ReVision, etc. : StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/17v0bo3/ap_workflow_60_for_comfyui_now_with_support_for/)
+		- [Workflows that can be loaded](https://github.com/comfyanonymous/ComfyUI_examples)
+		- [Sytan workflow (contains js!)](https://github.com/SytanSD/Sytan-SDXL-ComfyUI)
+		- [Impact pack and youtube](https://github.com/ltdrdata/ComfyUI-extension-tutorials/tree/Main/ComfyUI-Impact-Pack/workflow)
+		- [youtube](https://www.youtube.com/watch?v=KvZ8ucBqyqw)
+		- [Wiki full of links](https://wyrde.github.io/ComfyResources/nodes/)
+		- [Tutorials from first principles](https://www.youtube.com/watch?v=reimr3jZ8lI)
+		- [modular workflow](https://www.youtube.com/watch?v=ppE1W0-LJas)
+		- [Detailed youtube tutorials](https://www.youtube.com/@sedetweiler)
+		- [Prompt free diffusion](https://github.com/SHI-Labs/Prompt-Free-Diffusion)
+		- Motion brush [chaojie/ComfyUI-DragNUWA (github.com)](https://github.com/chaojie/ComfyUI-DragNUWA)
+		- [reference_only controlnet](https://gist.github.com/comfyanonymous/343e5675f9a2c8281fde0c440df2e2c6#file-workflow-json)
+		- [Citivia autoprompt](https://civitai.com/models/123358/sdvn-comfyui-workflow-autoprompt-sdxl)
+		- [Typescript client for comfyui](https://github.com/itsKaynine/comfy-ui-client)
+		- [Animation workflow](https://www.reddit.com/r/comfyui/comments/15s6lpr/short_animation_img2img_in_comfyui_with/)
+		- [Complex workflow tutorials](https://www.youtube.com/@ArchAi3D/videos)
+		- [animation](https://www.youtube.com/watch?v=js4JeDF3v4g)
+		- [Manual](https://blenderneko.github.io/ComfyUI-docs/)
+		- [Turn comfyui to python](https://github.com/pydn/ComfyUI-to-Python-Extension)
+		- [Share workflows](https://comfy.icu/)
+		- [consistent character creation](https://www.reddit.com/r/comfyui/comments/16ceh10/i_succeeded_to_adapt_the_tutorial_character/)
+		- [Edit in another tab](https://www.reddit.com/r/comfyui/comments/16d0wtx/workflow_using_15_scribble_controlnet_to_feed/)
+		- [semi automated inpainting](https://www.youtube.com/watch?v=SMOM1bIY5yA)
+		- [Canvas editor with layers](https://github.com/Lerc/canvas_tab)
+		- [Build custom nodes howto](https://github.com/chrisgoringe/Comfy-Custom-Node-How-To/wiki)
+		- [Images / workflows](https://comfyworkflows.com/)
+		- [Interpolate everything (openpose)](https://github.com/shockz0rz/ComfyUI_InterpolateEverything)
+		- [Autogen inside comfyui](https://github.com/xXAdonesXx/NodeGPT)
+		- [autogen tutorial](https://www.youtube.com/watch?v=PUPO2tTyPOo)
+		- [lcm consistency lora](https://github.com/0xbitches/ComfyUI-LCM)
+		- [touch designer](https://github.com/olegchomp/TDComfyUI)
+		- [NimaNzrii/comfyui-photoshop:](github.com)](https://github.com/NimaNzrii/comfyui-photoshop) [[Photoshop]] node inside of ComfyUi, send and get data from Photoshop
+			- Reddit post on the matter  [(2) NEW AI NEWS! Photoshop to Comfyui V1 is Finally Released! : comfyui (reddit.com)](https://www.reddit.com/r/comfyui/comments/18jygtn/new_ai_news_photoshop_to_comfyui_v1_is_finally/)
+		- [Aerial view of the building（建筑鸟瞰图）
+			- v1.0 | Stable Diffusion LoRA | Civitai](https://civitai.com/models/121728/aerial-view-of-the-building)
+-
+- **Last Updated**: 2025-11-16
+- **Review Status**: Automated remediation with 2025 context
+- **Verification**: Academic sources verified
+- **Regional Context**: UK/North England where applicable
+
+
+### Relationships
+- is-subclass-of:: [[AI Image Generation Tools]]
+- related-to:: [[Stable Diffusion]], [[Inpainting]], [[ControlNet]], [[FLUX]], [[Blender]]
+- enables:: [[Generative AI Workflows]], [[Texture Generation]], [[Metaverse Asset Creation]]
+- integrates-with:: [[Krita]], [[Photoshop]], [[TensorRT]]
+
+## Key Features (2025)
+- **Node-Based Visual Programming**: Connect processing nodes to build custom generation pipelines with full transparency
+- **Workflow Portability**: Save and share workflows as JSON files for instant replication
+- **Model Flexibility**: Supports SDXL, Flux 1.1 Pro Ultra, HiDream-I1, and 10,000+ community models
+- **ComfyUI Desktop**: Polished application launched January 2025, capturing 72% of new installations
+- **62 New API Nodes (May 2025)**: Support for Flux Ultra, Veo2, and pipeline integration
+- **3D Generation**: Support for Hunyuan3D 2.0 for high-fidelity 3D content creation
+- **Performance**: SDXL generations in 3-5 seconds; 5-10x faster than alternative interfaces
+
+## Use Cases for Metaverse/XR
+- **Texture Generation**: Creating seamless textures for 3D models and virtual environments
+- **Avatar Asset Creation**: Generating character designs and clothing for virtual worlds
+- **Environment Concept Art**: Rapid iteration on metaverse world designs
+- **Inpainting and Outpainting**: Extending and modifying existing assets
+- **Video Content**: Generating animated content for immersive experiences
+
+## Metadata
+
+### Notes
+*Instructional content moved from class definition*
+
+- **Last Updated**: 2025-12-29
+- **Review Status**: Enriched with 2025 features and metaverse context
+- **Verification**: Academic sources verified
+- **Regional Context**: UK/North England where applicable

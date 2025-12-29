@@ -3,6 +3,7 @@
   "title": "System Architecture",
   "content": "- ### OntologyBlock\n  id:: system-architecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10078\n\t- source-domain:: mv\n\t- preferred-term:: System Architecture\n\t- status:: active\n\t- definition:: The structural design framework that defines the components, connections, protocols, and technologies that enable the creation and operation of metaverse environments, encompassing network infrastructure, computing resources, hardware devices, and software platforms.\n\t- owl:class:: mv:SystemArchitecture\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Metaverse Infrastructure]]\n\t\t- related-to:: [[Network Architecture]]\n\t\t- related-to:: [[Edge Computing]]\n\t\t- related-to:: [[Interoperability]]\n\t  id:: system-architecture-relationships\n\t  collapsed:: true\n- ## Overview\n\t- The infrastructure of the metaverse is an evolving, complex network of interconnected technologies, protocols, and frameworks. It leverages advancements in VR, AR, blockchain, and decentralized computing to deliver immersive and secure experiences. Research has identified 25 distinct metaverse architectures in three primary categories: layer-based, technology-based, and domain-specific.\n- ## Technical Details\n\t- ### Three-Layer Architecture Model\n\t\t- **Base Layer (Infrastructure)**: Real-world data acquisition, sensing technologies, and network infrastructure\n\t\t- **Middle Layer (Technical Mediator)**: Facilitates data flow and system orchestration\n\t\t- **Upper Layer (Experience)**: User interaction, social engagement, and digital experiences\n\t- ### Key Infrastructure Components\n\t\t- **Network Architecture**: Low latency, high bandwidth, efficient data transfer protocols\n\t\t- **Edge Computing**: Computational resources closer to edge devices (VR headsets, AR glasses) for reduced latency\n\t\t- **Decentralized Networks**: Blockchain and peer-to-peer networks for resilience and democratic governance\n\t\t- **6G Wireless**: Next-generation connectivity supporting high data rate, low latency, and ML/DL integration\n\t- ### Enabling Technologies\n\t\t- Artificial Intelligence and Machine Learning\n\t\t- Blockchain and distributed ledger technology\n\t\t- Extended Reality (XR) platforms\n\t\t- Digital Twins\n\t\t- Cloud and fog computing\n- ## Applications\n\t- Industrial metaverse for Industry 5.0 manufacturing\n\t- Distributed virtual world hosting\n\t- Real-time multiplayer gaming infrastructure\n\t- Enterprise collaboration platforms",
   "backlinks": [
+    "Data Storage",
     "Distributed System Architecture",
     "Privacy Architecture",
     "Metaverse Architecture",
@@ -16,11 +17,11 @@
     "Scalable Architecture"
   ],
   "wiki_links": [
-    "metaverse",
     "Interoperability",
+    "Metaverse Infrastructure",
     "Network Architecture",
     "Edge Computing",
-    "Metaverse Infrastructure"
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10078",

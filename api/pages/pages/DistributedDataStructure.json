@@ -1,7 +1,7 @@
 {
   "id": "DistributedDataStructure",
   "title": "DistributedDataStructure",
-  "content": "- ### OntologyBlock\n  id:: distributeddatastructure-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7005\n\t- preferred-term:: DistributedDataStructure\n\t- source-domain:: ngm\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: Stub page for DistributedDataStructure. Referenced by 10 pages. Auto-generated during corpus cleanup.\n\t- maturity:: draft\n\t- owl:class:: ngm:Distributeddatastructure\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Auto-generated stub\n- **References**: 10 pages reference this concept",
+  "content": "- ### OntologyBlock\n  id:: distributeddatastructure-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7005\n\t- preferred-term:: DistributedDataStructure\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Distributed Data Structures are decentralized systems for storing and retrieving data across multiple networked nodes, enabling scalable, fault-tolerant, and resilient data management without centralized control. Key implementations include Distributed Hash Tables (DHTs) which use consistent hashing to partition key-value pairs across nodes, enabling efficient peer-to-peer lookup services that underpin blockchain networks, decentralized file systems, and distributed databases.\n\t- maturity:: reviewed\n\t- owl:class:: ngm:Distributeddatastructure\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[DistributedSystemsDomain]]\n\n## Relationships\n- ### Types\n\t- [[DistributedHashTable]] - DHT for decentralized key-value storage\n\t- [[MerkleTree]] - Hash-based verification structures\n\t- [[CRDT]] - Conflict-free Replicated Data Types\n\t- [[DistributedLedger]] - Blockchain-based data structures\n\t- [[DistributedGraph]] - Partitioned graph databases\n\n- ### Related Concepts\n\t- [[ConsistentHashing]] - Key distribution algorithm\n\t- [[PeerToPeerNetwork]] - Decentralized network topology\n\t- [[FaultTolerance]] - Resilience to node failures\n\t- [[DataReplication]] - Redundancy for availability\n\t- [[EventualConsistency]] - Distributed consistency model\n\t- [[ContentAddressing]] - Hash-based content identification\n\n- ### Implementations\n\t- [[Kademlia]] - DHT used in BitTorrent and Ethereum\n\t- [[Chord]] - Scalable peer-to-peer lookup protocol\n\t- [[IPFS]] - InterPlanetary File System\n\t- [[Cassandra]] - Distributed database using DHT principles\n\n- ### Key Properties\n\t- [[Decentralization]] - No single point of failure\n\t- [[Scalability]] - Handles large numbers of nodes\n\t- [[Resilience]] - Tolerates node arrivals, departures, failures\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Reviewed and enriched\n- **References**: 10 pages reference this concept",
   "backlinks": [
     "Transaction Confirmation",
     "BC-0009-smart-contract",
@@ -14,7 +14,27 @@
     "Block Size",
     "Transaction Pool"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "DistributedLedger",
+    "Scalability",
+    "Decentralization",
+    "Resilience",
+    "FaultTolerance",
+    "DataReplication",
+    "EventualConsistency",
+    "IPFS",
+    "MerkleTree",
+    "DistributedSystemsDomain",
+    "DistributedGraph",
+    "PeerToPeerNetwork",
+    "Cassandra",
+    "ConsistentHashing",
+    "DistributedHashTable",
+    "CRDT",
+    "Chord",
+    "Kademlia",
+    "ContentAddressing"
+  ],
   "ontology": {
     "term_id": "NGM-7005",
     "preferred_term": "DistributedDataStructure",
@@ -23,10 +43,10 @@
     "source_domain": "ngm",
     "domain": "ngm",
     "domain_full_name": "Narrative Gold Mine Core",
-    "definition": "Stub page for DistributedDataStructure. Referenced by 10 pages. Auto-generated during corpus cleanup.",
+    "definition": "Distributed Data Structures are decentralized systems for storing and retrieving data across multiple networked nodes, enabling scalable, fault-tolerant, and resilient data management without centralized control. Key implementations include Distributed Hash Tables (DHTs) which use consistent hashing to partition key-value pairs across nodes, enabling efficient peer-to-peer lookup services that underpin blockchain networks, decentralized file systems, and distributed databases.",
     "scope_note": null,
-    "status": "stub",
-    "maturity": "draft",
+    "status": "active",
+    "maturity": "reviewed",
     "version": null,
     "public_access": true,
     "last_updated": null,
@@ -47,7 +67,9 @@
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "DistributedSystemsDomain"
+    ],
     "implemented_in_layer": [],
     "source": [],
     "validation": {

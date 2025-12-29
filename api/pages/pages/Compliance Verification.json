@@ -1,11 +1,12 @@
 {
   "id": "Compliance Verification",
   "title": "Compliance Verification",
-  "content": "- ### OntologyBlock\n  id:: compliance-verification-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7004\n\t- preferred-term:: Compliance Verification\n\t- source-domain:: ngm\n\t- status:: stub\n\t- public-access:: true\n\t- definition:: Stub page for Compliance Verification. Referenced by 11 pages. Auto-generated during corpus cleanup.\n\t- maturity:: draft\n\t- owl:class:: ngm:ComplianceVerification\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Auto-generated stub\n- **References**: 11 pages reference this concept",
+  "content": "- ### OntologyBlock\n  id:: compliance-verification-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7004\n\t- preferred-term:: Compliance Verification\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Compliance verification in blockchain contexts encompasses the automated and manual processes for ensuring that cryptoasset transactions, service providers, and participants adhere to regulatory requirements including Know Your Customer (KYC), Anti-Money Laundering (AML), sanctions screening, and transaction monitoring obligations. Blockchain-based compliance systems leverage immutable ledgers, smart contracts, and AI-driven analytics to maintain tamper-proof records and detect suspicious activities in real-time.\n\t- maturity:: reviewed\n\t- owl:class:: ngm:ComplianceVerification\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[Blockchain]]\n\n### Relationships\n\t- relatedTo:: [[Identity Management]]\n\t- relatedTo:: [[Regulatory Framework]]\n\t- relatedTo:: [[EU MiCA Regulation]]\n\t- enables:: [[KYC/AML Requirements]]\n\t- implementedBy:: [[Smart Contracts]]\n\t- supports:: [[Transaction Monitoring]]\n\n## Overview\n\nCompliance verification represents a critical component of blockchain ecosystem operations, ensuring adherence to evolving global regulatory requirements. In 2025, more than 70% of KYC onboarding is automated, utilising biometric identification, digital identity verification, and enhanced data analytics. The integration of blockchain technology and artificial intelligence has transformed compliance from a manual, reactive process to an automated, proactive system.\n\n## Three Pillars of Crypto Compliance\n\n### Identity Verification (KYC)\n- Validates customer identity using government-issued documents\n- Biometric verification including facial recognition and liveness detection\n- Document authenticity verification using machine learning\n- Ongoing customer due diligence throughout relationship lifecycle\n\n### AML/PEP Screening\n- Sanctions list screening against OFAC, EU, UN, and other watchlists\n- Politically Exposed Persons (PEP) identification and monitoring\n- Adverse media screening for negative news associations\n- Risk scoring and categorisation of customers\n\n### Wallet and Transaction Monitoring\n- Real-time screening of cryptocurrency wallet addresses\n- Tracking of 270+ risk indicators across blockchain networks\n- Cross-chain transaction analysis and flow tracking\n- Identification of connections to darknet markets, mixers, and high-risk entities\n\n## Technology and Automation\n\n### AI-Driven Compliance\n- 62% of financial institutions already use AI/ML for AML activities (2023)\n- Expected to increase to 90% adoption by 2025\n- AI systems detect complex patterns in financial transactions\n- Improved efficiency and accuracy in identifying suspicious activity\n\n### Blockchain for Compliance\n- Approximately 15% of AML/KYC procedures conducted via blockchain-based systems in 2025\n- Immutable ledger maintains tamper-proof records of transactions and identities\n- Facilitates easier cross-border cooperation in tracing illicit funds\n- Enables real-time sharing of compliance data between institutions\n\n### RegTech Market Growth\n- Global RegTech market projected to exceed $22 billion by mid-2025\n- Growing at CAGR of 23.5%\n- Tools deployed for KYC, sanctions screening, transaction monitoring, and reporting\n- Reduces costs, enhances efficiency, and ensures regulatory compliance\n\n## DeFi Compliance Solutions\n\n### On-Chain KYC\n- Smart contract-based identity verification systems\n- Privacy-preserving verification using zero-knowledge proofs\n- Compliance without compromising user privacy principles\n\n### Decentralised Identity (DID) Protocols\n- Blockchain-based digital identity solutions\n- Self-sovereign identity enabling user-controlled credentials\n- Verifiable credentials for compliance attestation\n\n### Third-Party Integration\n- KYC providers offering API-based verification services\n- Modular compliance solutions for DeFi protocols\n- Regulatory-compliant bridges between DeFi and traditional finance\n\n## EU Travel Rule Requirements (2025)\n\n- Transfer of Funds Regulation requires originator and beneficiary details for all transactions\n- Even transfers under one euro must carry customer data\n- Both hosted and unhosted wallet transactions are covered\n- Real-time systems necessary for compliance management\n\n## Enforcement Actions\n\nThe UK Financial Conduct Authority (FCA) issued a 42 million GBP penalty to Barclays in July 2025 for failing to gather sufficient KYC information and conduct adequate monitoring of client accounts, demonstrating continued regulatory scrutiny of compliance programmes.\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Comprehensive review completed\n- **References**: 11 pages reference this concept",
   "backlinks": [
     "AI Ethics Checklist_ENHANCED",
     "AI Model Card",
     "Audit Trail",
+    "Regulatory Framework",
     "Cross-Border Data Transfer Rule",
     "Accessibility Audit Tool",
     "BC-0446-supply-chain-traceability",
@@ -14,10 +15,19 @@
     "ETSI_Domain_Data_Management___Ethics",
     "Validation Process",
     "Environmental Sustainability Label",
+    "Identity Management",
     "AI Ethics Checklist",
     "Compliance Audit Trail"
   ],
-  "wiki_links": [],
+  "wiki_links": [
+    "Smart Contracts",
+    "Blockchain",
+    "Regulatory Framework",
+    "KYC/AML Requirements",
+    "Identity Management",
+    "EU MiCA Regulation",
+    "Transaction Monitoring"
+  ],
   "ontology": {
     "term_id": "NGM-7004",
     "preferred_term": "Compliance Verification",
@@ -26,10 +36,10 @@
     "source_domain": "ngm",
     "domain": "ngm",
     "domain_full_name": "Narrative Gold Mine Core",
-    "definition": "Stub page for Compliance Verification. Referenced by 11 pages. Auto-generated during corpus cleanup.",
+    "definition": "Compliance verification in blockchain contexts encompasses the automated and manual processes for ensuring that cryptoasset transactions, service providers, and participants adhere to regulatory requirements including Know Your Customer (KYC), Anti-Money Laundering (AML), sanctions screening, and transaction monitoring obligations. Blockchain-based compliance systems leverage immutable ledgers, smart contracts, and AI-driven analytics to maintain tamper-proof records and detect suspicious activities in real-time.",
     "scope_note": null,
-    "status": "stub",
-    "maturity": "draft",
+    "status": "active",
+    "maturity": "reviewed",
     "version": null,
     "public_access": true,
     "last_updated": null,
@@ -50,7 +60,9 @@
     "bridges_to": [],
     "bridges_from": [],
     "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "Blockchain"
+    ],
     "implemented_in_layer": [],
     "source": [],
     "validation": {
