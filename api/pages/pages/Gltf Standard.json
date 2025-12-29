@@ -8,10 +8,10 @@
   ],
   "wiki_links": [
     "Interoperability Standard",
-    "3D Asset Standard",
-    "Format Parser",
     "metaverse",
-    "Cross-Platform 3D Content"
+    "Cross-Platform 3D Content",
+    "3D Asset Standard",
+    "Format Parser"
   ],
   "ontology": {
     "term_id": "MV-9908",

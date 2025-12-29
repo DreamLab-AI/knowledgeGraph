@@ -8,12 +8,12 @@
     "State Estimation"
   ],
   "wiki_links": [
-    "Sensor Fusion",
-    "Odometry",
-    "SLAM",
     "Robotics Systems",
+    "Odometry",
+    "Motion Planning",
     "GPS Localization",
-    "Motion Planning"
+    "Sensor Fusion",
+    "SLAM"
   ],
   "ontology": {
     "term_id": "RB-0603",

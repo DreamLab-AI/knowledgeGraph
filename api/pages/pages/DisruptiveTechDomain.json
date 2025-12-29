@@ -490,14 +490,14 @@
     "Eclipse Attack"
   ],
   "wiki_links": [
-    "CoreOntology",
-    "AIApplicationsDomain",
-    "RoboticsDomain",
     "MetaverseDomain",
+    "RoboticsDomain",
     "ConceptualLayer",
-    "Domain",
-    "Innovation Tracking",
     "Technology Forecasting",
+    "CoreOntology",
+    "Innovation Tracking",
+    "AIApplicationsDomain",
+    "Domain",
     "BlockchainDomain"
   ],
   "ontology": {

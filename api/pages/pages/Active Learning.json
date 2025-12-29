@@ -7,13 +7,13 @@
     "Data Annotation"
   ],
   "wiki_links": [
-    "Semi-Supervised Learning",
-    "Online Learning",
-    "Labeling Cost",
-    "Uncertainty Sampling",
-    "Machine Learning",
     "Human-in-the-Loop",
-    "Data-Efficient Learning"
+    "Data-Efficient Learning",
+    "Uncertainty Sampling",
+    "Online Learning",
+    "Machine Learning",
+    "Semi-Supervised Learning",
+    "Labeling Cost"
   ],
   "ontology": {
     "term_id": "AI-1013",

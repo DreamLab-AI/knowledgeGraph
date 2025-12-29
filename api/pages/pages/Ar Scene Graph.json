@@ -4,14 +4,14 @@
   "content": "- ### OntologyBlock\n  id:: ar-scene-graph-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9772\n\t- source-domain:: mv\n\t- preferred-term:: Ar Scene Graph\n\t- status:: active\n\t- definition:: AR Scene Graph is a hierarchical data structure used in augmented reality to represent and organize spatial relationships between virtual objects, real-world elements, and their transformations, enabling context-aware placement, semantic understanding, and natural interaction between digital content and physical environments.\n\t- owl:class:: mv:ArSceneGraph\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Spatial Data Structure]]\n\t- enables:: [[Context-Aware AR]], [[Semantic Scene Understanding]], [[Retargetable AR Experiences]]\n\t- requires:: [[3D Scene Reconstruction]], [[Object Detection]], [[Spatial Relationships]]\n\t- #### Relationships\n\t  id:: ar-scene-graph-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Hierarchical Structure**: Nodes representing scene entities (floors, rooms, objects) with edges representing relative transformations\n- **Spatial Relationships**: Proximity, support, and comparative relationships between objects for rich scene understanding\n- **Semantic Annotations**: Object classification, material properties, and functional attributes\n- **Spatial Relationship Graphs (SRGs)**: Extended scene graphs incorporating real-world sensor data from trackers and cameras\n\n### Applications\n- **Retargetable AR**: Framework adapting AR experiences to various environments based on scene context rather than absolute coordinates\n- **Indoor Navigation**: Hierarchical understanding of floors, rooms, and objects for wayfinding\n- **Interactive Storytelling**: Automatic population of virtual content matching story plots to scene semantics\n- **Robotics and Smart Homes**: Scene understanding for autonomous navigation and assistive technologies\n\n### Technical Implementation\n3D Scene Graph Generators incrementally build semantic and spatial representations from RGB-D sequences by detecting objects, estimating poses, selecting optimal viewpoints, and extracting inter-object relations via vision-language reasoning.",
   "backlinks": [],
   "wiki_links": [
+    "3D Scene Reconstruction",
+    "Spatial Data Structure",
+    "Retargetable AR Experiences",
+    "metaverse",
+    "Semantic Scene Understanding",
     "Object Detection",
     "Spatial Relationships",
-    "Context-Aware AR",
-    "Retargetable AR Experiences",
-    "Spatial Data Structure",
-    "3D Scene Reconstruction",
-    "metaverse",
-    "Semantic Scene Understanding"
+    "Context-Aware AR"
   ],
   "ontology": {
     "term_id": "MV-9772",

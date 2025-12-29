@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "Immersive VR",
-    "Motion Tracking",
-    "SLAM",
-    "metaverse",
     "6DoF Tracking",
-    "Inside Out Tracking"
+    "Inside Out Tracking",
+    "metaverse",
+    "Motion Tracking",
+    "SLAM"
   ],
   "ontology": {
     "term_id": "MV-10066",

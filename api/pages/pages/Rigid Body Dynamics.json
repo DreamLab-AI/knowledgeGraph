@@ -6,11 +6,11 @@
     "Physics Engine"
   ],
   "wiki_links": [
-    "Game Physics",
+    "Physics Simulation",
+    "Physics Engine",
     "MetaverseDomain",
     "Metaverse",
-    "Physics Simulation",
-    "Physics Engine"
+    "Game Physics"
   ],
   "ontology": {
     "term_id": "MV-9004",

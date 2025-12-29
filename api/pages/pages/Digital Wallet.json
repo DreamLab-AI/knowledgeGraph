@@ -30,15 +30,15 @@
     "Loyalty Token"
   ],
   "wiki_links": [
-    "Self-Custody",
     "DeFi Access",
-    "Web3",
-    "Hardware Wallet",
+    "Cryptocurrency Storage",
     "Cryptographic Security",
+    "Self-Custody",
+    "Hardware Wallet",
+    "Transaction Signing",
+    "Web3",
     "Asset Management",
     "Private Key",
-    "Transaction Signing",
-    "Cryptocurrency Storage",
     "Blockchain Network"
   ],
   "ontology": {

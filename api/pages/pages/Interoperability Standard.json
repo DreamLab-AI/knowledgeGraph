@@ -14,10 +14,10 @@
   ],
   "wiki_links": [
     "Interface Standards",
-    "OpenXR Standard",
     "metaverse",
-    "Technical Standard",
-    "Cross-Platform Compatibility"
+    "Cross-Platform Compatibility",
+    "OpenXR Standard",
+    "Technical Standard"
   ],
   "ontology": {
     "term_id": "MV-9935",

@@ -6,12 +6,12 @@
     "Photogrammetry"
   ],
   "wiki_links": [
-    "LiDAR Technology",
-    "Depth Sensing",
-    "Structured Light Sensing",
-    "Time Of Flight Sensors",
     "3D Environment Mapping",
-    "metaverse"
+    "Time Of Flight Sensors",
+    "metaverse",
+    "Structured Light Sensing",
+    "LiDAR Technology",
+    "Depth Sensing"
   ],
   "ontology": {
     "term_id": "MV-10060",

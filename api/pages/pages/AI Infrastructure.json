@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: ai-infrastructure-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0603\n\t- preferred-term:: AI Infrastructure\n\t- source-domain:: ai\n\t- status:: active\n\t- public-access:: true\n\t- definition:: AI Infrastructure refers to the hardware, software, and systems required to develop, train, deploy, and operate artificial intelligence applications. This includes GPU computing clusters, cloud AI services, edge computing devices, machine learning platforms, and the supporting toolchains for model development and deployment.\n\t- owl:class:: ai:AIInfrastructure\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: ai-infrastructure-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Artificial Intelligence]]\n\t\t- is-parent-of:: [[GPU Computing]]\n\t\t- is-parent-of:: [[Cloud AI]]\n\t\t- is-parent-of:: [[Edge AI]]\n\t\t- related-to:: [[AI Deployment]]",
   "backlinks": [],
   "wiki_links": [
-    "GPU Computing",
+    "Cloud AI",
+    "Edge AI",
     "Artificial Intelligence",
     "AI Deployment",
-    "Edge AI",
-    "Cloud AI"
+    "GPU Computing"
   ],
   "ontology": {
     "term_id": "AI-0603",

@@ -7,12 +7,12 @@
     "AI Governance Principle"
   ],
   "wiki_links": [
-    "On-Chain Governance",
-    "Token Economics",
-    "Blockchain Technology",
     "Voting Mechanism",
     "Blockchain Entity",
-    "DAO Governance"
+    "Token Economics",
+    "On-Chain Governance",
+    "DAO Governance",
+    "Blockchain Technology"
   ],
   "ontology": {
     "term_id": "BC-0603",

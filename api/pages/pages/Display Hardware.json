@@ -8,17 +8,17 @@
     "Digital Content Overlay"
   ],
   "wiki_links": [
-    "Display Technology",
-    "AR Glasses",
-    "Hardware",
-    "Graphics Processing",
-    "Optical Systems",
-    "Immersive Visualization",
-    "metaverse",
-    "VR Headset",
-    "Mixed Reality",
     "HMD",
-    "Spatial Computing"
+    "AR Glasses",
+    "Mixed Reality",
+    "Hardware",
+    "metaverse",
+    "Graphics Processing",
+    "Spatial Computing",
+    "Immersive Visualization",
+    "Optical Systems",
+    "VR Headset",
+    "Display Technology"
   ],
   "ontology": {
     "term_id": "MV-9882",
