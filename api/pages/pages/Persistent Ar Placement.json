@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: persistent-ar-placement-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10003\n\t- source-domain:: mv\n\t- preferred-term:: Persistent AR Placement\n\t- status:: active\n\t- definition:: The capability to anchor augmented reality content at specific real-world locations that persists across sessions and devices, using cloud-stored spatial anchors and environmental mapping to enable shared, location-based AR experiences.\n\t- owl:class:: mv:PersistentArPlacement\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: persistent-ar-placement-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Augmented Reality]]\n\t\t- related-to:: [[Spatial Anchors]]\n\t\t- related-to:: [[Cloud Computing]]\n\t\t- related-to:: [[Location Based Services]]\n\t\t- enables:: [[Shared AR Experiences]]\n\t- #### Key Technologies\n\t  collapsed:: true\n\t\t- Microsoft Azure Spatial Anchors for enterprise AR\n\t\t- Google ARCore Cloud Anchors for cross-platform\n\t\t- Apple ARKit world mapping for iOS persistence\n\t\t- Niantic Lightship Visual Positioning System\n\t\t- Environmental feature mapping and localization\n\t- #### Use Cases\n\t  collapsed:: true\n\t\t- Multi-user shared AR experiences\n\t\t- Location-based AR games and navigation\n\t\t- Industrial AR training and maintenance\n\t\t- Retail AR product visualization\n\t\t- Urban AR art installations and wayfinding",
   "backlinks": [],
   "wiki_links": [
-    "Shared AR Experiences",
-    "metaverse",
-    "Location Based Services",
     "Spatial Anchors",
-    "Cloud Computing",
-    "Augmented Reality"
+    "Shared AR Experiences",
+    "Augmented Reality",
+    "Location Based Services",
+    "metaverse",
+    "Cloud Computing"
   ],
   "ontology": {
     "term_id": "MV-10003",

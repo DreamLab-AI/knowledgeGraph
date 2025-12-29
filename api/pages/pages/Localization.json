@@ -9,11 +9,11 @@
   ],
   "wiki_links": [
     "Sensor Fusion",
-    "Motion Planning",
-    "GPS Localization",
+    "Odometry",
     "SLAM",
     "Robotics Systems",
-    "Odometry"
+    "GPS Localization",
+    "Motion Planning"
   ],
   "ontology": {
     "term_id": "RB-0603",

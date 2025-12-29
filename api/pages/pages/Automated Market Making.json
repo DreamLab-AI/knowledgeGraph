@@ -6,14 +6,14 @@
     "Liquidity Pool"
   ],
   "wiki_links": [
-    "DeFi Operations",
-    "Liquidity Provision",
-    "Smart Contract Deployment",
     "Price Oracle Integration",
-    "metaverse",
     "Decentralized Trading",
-    "Liquidity Mining",
-    "Token Accessibility"
+    "Token Accessibility",
+    "Liquidity Provision",
+    "DeFi Operations",
+    "metaverse",
+    "Smart Contract Deployment",
+    "Liquidity Mining"
   ],
   "ontology": {
     "term_id": "MV-9787",

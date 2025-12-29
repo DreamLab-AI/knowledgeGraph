@@ -8,11 +8,11 @@
     "Bagging"
   ],
   "wiki_links": [
+    "Generalization",
     "Gradient Boosting",
     "Random Forest",
-    "Model Combination",
-    "Generalization",
-    "Machine Learning"
+    "Machine Learning",
+    "Model Combination"
   ],
   "ontology": {
     "term_id": "AI-1014",

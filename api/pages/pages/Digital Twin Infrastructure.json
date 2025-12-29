@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "IoT Gateway",
-    "Cloud Platform",
     "Real-Time Processing",
-    "metaverse",
-    "5G Connectivity",
     "Data Pipeline",
-    "Edge Analytics",
-    "Scalable Deployment",
-    "Edge Computing",
     "Hybrid Cloud",
-    "Computing Infrastructure"
+    "Edge Analytics",
+    "Cloud Platform",
+    "metaverse",
+    "Computing Infrastructure",
+    "5G Connectivity",
+    "Scalable Deployment",
+    "Edge Computing"
   ],
   "ontology": {
     "term_id": "MV-9880",

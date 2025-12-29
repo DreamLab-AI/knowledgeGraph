@@ -447,7 +447,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "aideployment",
+      "id": "ai-aideployment",
       "type": "owl:Class"
     },
     {
@@ -3295,7 +3295,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "liquidproofofstake",
+      "id": "bc-liquidproofofstake",
       "type": "owl:Class"
     },
     {
@@ -3471,7 +3471,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "bc-nominatedproofofstake",
+      "id": "nominatedproofofstake",
       "type": "owl:Class"
     },
     {
@@ -4243,7 +4243,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "aiartcategorization",
+      "id": "mv-aiartcategorization",
       "type": "owl:Class"
     },
     {
@@ -4931,7 +4931,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-cryptographichash",
+      "id": "cryptographichash",
       "type": "owl:Class"
     },
     {
@@ -5839,7 +5839,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-etsimetaversedomaintaxonomy",
+      "id": "etsimetaversedomaintaxonomy",
       "type": "owl:Class"
     },
     {
@@ -5983,7 +5983,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-gdprarticle45",
+      "id": "gdprarticle45",
       "type": "owl:Class"
     },
     {
@@ -6695,7 +6695,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "metaversedomain",
+      "id": "mv-metaversedomain",
       "type": "owl:Class"
     },
     {
@@ -7011,7 +7011,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "persistentarplacement",
+      "id": "mv-persistentarplacement",
       "type": "owl:Class"
     },
     {
@@ -7575,7 +7575,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-sparqlendpoint",
+      "id": "sparqlendpoint",
       "type": "owl:Class"
     },
     {
@@ -7583,7 +7583,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-sparqlqueryengine",
+      "id": "sparqlqueryengine",
       "type": "owl:Class"
     },
     {
@@ -7871,7 +7871,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "therapeuticvr",
+      "id": "mv-therapeuticvr",
       "type": "owl:Class"
     },
     {
@@ -8431,7 +8431,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-xraccessibilityguideline",
+      "id": "xraccessibilityguideline",
       "type": "owl:Class"
     },
     {
@@ -8439,7 +8439,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "xrdevice",
+      "id": "mv-xrdevice",
       "type": "owl:Class"
     },
     {
@@ -8711,7 +8711,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "autonomousagent",
+      "id": "rb-autonomousagent",
       "type": "owl:Class"
     },
     {
@@ -10797,7 +10797,7 @@
       }
     },
     {
-      "id": "aideployment",
+      "id": "ai-aideployment",
       "iri": "http://narrativegoldmine.com/ai#AiDeployment",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -20691,7 +20691,7 @@
       }
     },
     {
-      "id": "liquidproofofstake",
+      "id": "bc-liquidproofofstake",
       "iri": "http://narrativegoldmine.com/blockchain#LiquidProofOfStake",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -21315,7 +21315,7 @@
       }
     },
     {
-      "id": "bc-nominatedproofofstake",
+      "id": "nominatedproofofstake",
       "iri": "http://narrativegoldmine.com/blockchain#NominatedProofOfStake",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -23973,7 +23973,7 @@
       }
     },
     {
-      "id": "aiartcategorization",
+      "id": "mv-aiartcategorization",
       "iri": "http://narrativegoldmine.com/metaverse#AiArtCategorization",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -26370,7 +26370,7 @@
       }
     },
     {
-      "id": "mv-cryptographichash",
+      "id": "cryptographichash",
       "iri": "http://narrativegoldmine.com/metaverse#Cryptographichash",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -29532,7 +29532,7 @@
       }
     },
     {
-      "id": "mv-etsimetaversedomaintaxonomy",
+      "id": "etsimetaversedomaintaxonomy",
       "iri": "http://narrativegoldmine.com/metaverse#EtsiMetaverseDomainTaxonomy",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -30009,7 +30009,7 @@
       }
     },
     {
-      "id": "mv-gdprarticle45",
+      "id": "gdprarticle45",
       "iri": "http://narrativegoldmine.com/metaverse#GdprArticle45",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -32505,7 +32505,7 @@
       }
     },
     {
-      "id": "metaversedomain",
+      "id": "mv-metaversedomain",
       "iri": "http://narrativegoldmine.com/metaverse#Metaversedomain",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -33630,7 +33630,7 @@
       }
     },
     {
-      "id": "persistentarplacement",
+      "id": "mv-persistentarplacement",
       "iri": "http://narrativegoldmine.com/metaverse#PersistentArPlacement",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -35592,7 +35592,7 @@
       }
     },
     {
-      "id": "mv-sparqlendpoint",
+      "id": "sparqlendpoint",
       "iri": "http://narrativegoldmine.com/metaverse#SparqlEndpoint",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -35619,7 +35619,7 @@
       }
     },
     {
-      "id": "mv-sparqlqueryengine",
+      "id": "sparqlqueryengine",
       "iri": "http://narrativegoldmine.com/metaverse#SparqlQueryEngine",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -36618,7 +36618,7 @@
       }
     },
     {
-      "id": "therapeuticvr",
+      "id": "mv-therapeuticvr",
       "iri": "http://narrativegoldmine.com/metaverse#TherapeuticVr",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -38628,7 +38628,7 @@
       }
     },
     {
-      "id": "mv-xraccessibilityguideline",
+      "id": "xraccessibilityguideline",
       "iri": "http://narrativegoldmine.com/metaverse#XrAccessibilityGuideline",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -38658,7 +38658,7 @@
       }
     },
     {
-      "id": "xrdevice",
+      "id": "mv-xrdevice",
       "iri": "http://narrativegoldmine.com/metaverse#XrDevice",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -39694,7 +39694,7 @@
       }
     },
     {
-      "id": "autonomousagent",
+      "id": "rb-autonomousagent",
       "iri": "http://narrativegoldmine.com/robotics#AutonomousAgent",
       "baseIri": "http://narrativegoldmine.com/robotics",
       "attributes": [
@@ -44186,7 +44186,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-aideployment-ai-ailifecycle",
+      "id": "subclassof-ai-aideployment-ai-ailifecycle",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45926,7 +45926,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-persistentarplacement-augmentedreality",
+      "id": "subclassof-mv-persistentarplacement-augmentedreality",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46238,11 +46238,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-sparqlqueryengine-queryprocessor",
+      "id": "subclassof-sparqlqueryengine-queryprocessor",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-sparqlendpoint-dataaccessinterface",
+      "id": "subclassof-sparqlendpoint-dataaccessinterface",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46410,7 +46410,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-therapeuticvr-virtualrealityapplications",
+      "id": "subclassof-mv-therapeuticvr-virtualrealityapplications",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46730,7 +46730,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-xrdevice-mv-xrhardware",
+      "id": "subclassof-mv-xrdevice-mv-xrhardware",
       "type": "rdfs:subClassOf"
     },
     {
@@ -47150,7 +47150,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-gdprarticle45-dataprotectionregulation",
+      "id": "subclassof-gdprarticle45-dataprotectionregulation",
       "type": "rdfs:subClassOf"
     },
     {
@@ -48741,8 +48741,8 @@
       ]
     },
     {
-      "id": "subclassof-aideployment-ai-ailifecycle",
-      "domain": "aideployment",
+      "id": "subclassof-ai-aideployment-ai-ailifecycle",
+      "domain": "ai-aideployment",
       "range": "ai-ailifecycle",
       "attributes": [
         "anonymous",
@@ -52656,8 +52656,8 @@
       ]
     },
     {
-      "id": "subclassof-persistentarplacement-augmentedreality",
-      "domain": "persistentarplacement",
+      "id": "subclassof-mv-persistentarplacement-augmentedreality",
+      "domain": "mv-persistentarplacement",
       "range": "augmentedreality",
       "attributes": [
         "anonymous",
@@ -53358,8 +53358,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-sparqlqueryengine-queryprocessor",
-      "domain": "mv-sparqlqueryengine",
+      "id": "subclassof-sparqlqueryengine-queryprocessor",
+      "domain": "sparqlqueryengine",
       "range": "queryprocessor",
       "attributes": [
         "anonymous",
@@ -53367,8 +53367,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-sparqlendpoint-dataaccessinterface",
-      "domain": "mv-sparqlendpoint",
+      "id": "subclassof-sparqlendpoint-dataaccessinterface",
+      "domain": "sparqlendpoint",
       "range": "dataaccessinterface",
       "attributes": [
         "anonymous",
@@ -53745,8 +53745,8 @@
       ]
     },
     {
-      "id": "subclassof-therapeuticvr-virtualrealityapplications",
-      "domain": "therapeuticvr",
+      "id": "subclassof-mv-therapeuticvr-virtualrealityapplications",
+      "domain": "mv-therapeuticvr",
       "range": "virtualrealityapplications",
       "attributes": [
         "anonymous",
@@ -54465,8 +54465,8 @@
       ]
     },
     {
-      "id": "subclassof-xrdevice-mv-xrhardware",
-      "domain": "xrdevice",
+      "id": "subclassof-mv-xrdevice-mv-xrhardware",
+      "domain": "mv-xrdevice",
       "range": "mv-xrhardware",
       "attributes": [
         "anonymous",
@@ -55410,8 +55410,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-gdprarticle45-dataprotectionregulation",
-      "domain": "mv-gdprarticle45",
+      "id": "subclassof-gdprarticle45-dataprotectionregulation",
+      "domain": "gdprarticle45",
       "range": "dataprotectionregulation",
       "attributes": [
         "anonymous",

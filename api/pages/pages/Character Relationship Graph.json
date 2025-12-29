@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "Graph Database",
-    "Game AI",
-    "Interactive Fiction",
-    "metaverse",
-    "Story Analysis",
-    "Character Attributes",
     "Social Simulation",
+    "Story Analysis",
+    "Game AI",
+    "Character AI",
+    "Character Attributes",
     "Social Network Graph",
     "Narrative Generation",
-    "Character AI",
-    "Relationship Modeling"
+    "metaverse",
+    "Relationship Modeling",
+    "Interactive Fiction"
   ],
   "ontology": {
     "term_id": "MV-9819",

@@ -4,9 +4,9 @@
   "content": "- ### OntologyBlock\n  id:: TC-9002\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-9002\n\t- source-domain:: tc\n\t- preferred-term:: Voice Memo\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Asynchronous audio communication allowing users to record and share voice messages, providing richer context than text while maintaining time flexibility.\n\t- source:: [[Collaboration Tools]]\n\t- maturity:: emerging\n\t- owl:class:: tc:VoiceMemo\n\t- owl:physicality:: Abstract\n\t- owl:role:: Object\n\t- belongsToDomain:: [[TelecollaborationDomain]]\n\t- is-subclass-of:: [[Asynchronous Collaboration]]",
   "backlinks": [],
   "wiki_links": [
-    "Asynchronous Collaboration",
+    "TelecollaborationDomain",
     "Collaboration Tools",
-    "TelecollaborationDomain"
+    "Asynchronous Collaboration"
   ],
   "ontology": {
     "term_id": "TC-9002",

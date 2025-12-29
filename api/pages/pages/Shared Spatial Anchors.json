@@ -6,12 +6,12 @@
     "Mixed Reality (MR)"
   ],
   "wiki_links": [
-    "Spatial Computing",
-    "Spatial Mapping",
-    "metaverse",
-    "Collaborative AR Experiences",
     "Cross Platform AR",
-    "Cloud AR Services"
+    "metaverse",
+    "Cloud AR Services",
+    "Spatial Computing",
+    "Collaborative AR Experiences",
+    "Spatial Mapping"
   ],
   "ontology": {
     "term_id": "MV-10043",

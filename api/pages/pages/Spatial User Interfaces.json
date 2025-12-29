@@ -8,11 +8,11 @@
   ],
   "wiki_links": [
     "Voice Interaction",
-    "Gaze Tracking",
-    "metaverse",
     "Immersive Interaction",
-    "Gesture Recognition",
-    "3D User Interface"
+    "metaverse",
+    "Gaze Tracking",
+    "3D User Interface",
+    "Gesture Recognition"
   ],
   "ontology": {
     "term_id": "MV-10067",

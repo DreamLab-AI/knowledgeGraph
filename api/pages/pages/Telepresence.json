@@ -12,9 +12,9 @@
   "wiki_links": [
     "Telecollaboration",
     "Holographic Telepresence",
-    "Immersive Communication",
     "Volumetric Capture",
-    "Robot Telepresence"
+    "Robot Telepresence",
+    "Immersive Communication"
   ],
   "ontology": {
     "term_id": "TC-0601",

@@ -7,9 +7,9 @@
     "Safety Zone",
     "Collaborative Robot",
     "Intent Recognition",
-    "Teleoperation",
     "Robotics Systems",
-    "Robot Safety"
+    "Robot Safety",
+    "Teleoperation"
   ],
   "ontology": {
     "term_id": "RB-0605",

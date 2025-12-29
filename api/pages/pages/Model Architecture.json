@@ -6,11 +6,11 @@
     "Explainable AI (XAI)"
   ],
   "wiki_links": [
-    "AI Model Development",
     "Deep Learning",
-    "metaverse",
+    "AI Model Development",
     "System Architecture",
-    "Neural Network"
+    "Neural Network",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9968",

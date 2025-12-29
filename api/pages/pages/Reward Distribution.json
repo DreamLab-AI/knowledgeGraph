@@ -6,12 +6,12 @@
     "Play-to-Earn (P2E)"
   ],
   "wiki_links": [
-    "Tokenomics",
     "Validator Incentives",
-    "metaverse",
     "Consensus Mechanisms",
+    "Network Participation",
     "Staking Rewards",
-    "Network Participation"
+    "metaverse",
+    "Tokenomics"
   ],
   "ontology": {
     "term_id": "MV-10023",

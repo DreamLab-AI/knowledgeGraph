@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "Data Structure",
-    "Memory Management",
-    "Memory Allocation",
-    "metaverse",
-    "Data Formatting",
-    "Framebuffer",
-    "Stream Processing",
-    "Vertex Buffer",
-    "Data Transfer",
     "Buffer Management",
-    "Graphics Rendering"
+    "Vertex Buffer",
+    "Memory Allocation",
+    "Framebuffer",
+    "Graphics Rendering",
+    "Memory Management",
+    "Stream Processing",
+    "Data Transfer",
+    "metaverse",
+    "Data Formatting"
   ],
   "ontology": {
     "term_id": "MV-9799",

@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: MV-9003\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9003\n\t- source-domain:: mv\n\t- preferred-term:: Inflation Control\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Mechanisms and policies in virtual economies to regulate the creation and distribution of virtual currency, preventing value depreciation and economic instability.\n\t- source:: [[Virtual Economics]], [[Game Economics]]\n\t- maturity:: mature\n\t- owl:class:: mv:InflationControl\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- isSubclassOf:: [[Virtual Economy]]\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]",
   "backlinks": [],
   "wiki_links": [
-    "Virtual Economy",
-    "Metaverse",
     "Virtual Economics",
+    "Game Economics",
     "MetaverseDomain",
-    "Game Economics"
+    "Metaverse",
+    "Virtual Economy"
   ],
   "ontology": {
     "term_id": "MV-9003",

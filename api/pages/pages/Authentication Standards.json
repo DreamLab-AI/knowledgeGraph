@@ -6,14 +6,14 @@
     "Digital Identity Framework"
   ],
   "wiki_links": [
-    "Client Implementation",
-    "metaverse",
-    "Public Key Cryptography",
-    "Hardware Authenticators",
-    "Passwordless Authentication",
     "Secure Platform Access",
+    "Client Implementation",
+    "Hardware Authenticators",
+    "Security Standards",
+    "Public Key Cryptography",
     "Phishing Resistance",
-    "Security Standards"
+    "Passwordless Authentication",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9785",
