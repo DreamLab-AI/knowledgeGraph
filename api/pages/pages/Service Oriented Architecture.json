@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: service-oriented-architecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10039\n\t- source-domain:: mv\n\t- preferred-term:: Service Oriented Architecture\n\t- status:: active\n\t- definition:: An architectural style organizing software as loosely coupled, interoperable services that communicate through standardized interfaces, enabling modular composition of metaverse functionality through reusable components and well-defined contracts.\n\t- owl:class:: mv:ServiceOrientedArchitecture\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: service-oriented-architecture-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Software Architecture]]\n\t\t- related-to:: [[Microservices]]\n\t\t- related-to:: [[API Design]]\n\t\t- related-to:: [[Enterprise Service Bus]]\n\t\t- enables:: [[System Interoperability]]\n\t- #### Key Principles\n\t  collapsed:: true\n\t\t- Service abstraction and encapsulation\n\t\t- Loose coupling between services\n\t\t- Contract-based interface design\n\t\t- Service reusability\n\t\t- Service composability\n\t- #### Technologies\n\t  collapsed:: true\n\t\t- RESTful API design patterns\n\t\t- SOAP web services (legacy)\n\t\t- Message queuing systems\n\t\t- Service registry and discovery\n\t\t- API gateway management",
   "backlinks": [],
   "wiki_links": [
-    "System Interoperability",
     "metaverse",
+    "Microservices",
+    "System Interoperability",
     "Software Architecture",
-    "API Design",
     "Enterprise Service Bus",
-    "Microservices"
+    "API Design"
   ],
   "ontology": {
     "term_id": "MV-10039",

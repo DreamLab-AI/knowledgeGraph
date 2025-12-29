@@ -12,11 +12,11 @@
   ],
   "wiki_links": [
     "metaverse",
-    "Augmented Reality",
-    "AR Technology",
-    "Location Based Services",
     "Persistent AR Placement",
-    "SLAM"
+    "Location Based Services",
+    "SLAM",
+    "AR Technology",
+    "Augmented Reality"
   ],
   "ontology": {
     "term_id": "MV-10051",

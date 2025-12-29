@@ -6,12 +6,12 @@
     "Digital Citizens' Assembly"
   ],
   "wiki_links": [
-    "Attendance Tracking",
-    "Event Analytics",
     "metaverse",
-    "Event Management",
+    "Attendance Tracking",
     "Registration Systems",
-    "Virtual Events"
+    "Virtual Events",
+    "Event Analytics",
+    "Event Management"
   ],
   "ontology": {
     "term_id": "MV-9996",

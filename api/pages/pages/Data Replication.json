@@ -6,17 +6,17 @@
     "Distributed Ledger Technology (DLT)"
   ],
   "wiki_links": [
-    "Edge Computing",
-    "Fault Tolerance",
-    "Network Infrastructure",
-    "Consistency Guarantees",
     "metaverse",
-    "Consensus Algorithm",
-    "Distributed Database",
-    "Data Availability",
     "Blockchain Consensus",
+    "Data Availability",
     "Storage Systems",
-    "Distributed Systems"
+    "Network Infrastructure",
+    "Fault Tolerance",
+    "Edge Computing",
+    "Distributed Database",
+    "Distributed Systems",
+    "Consensus Algorithm",
+    "Consistency Guarantees"
   ],
   "ontology": {
     "term_id": "MV-9840",

@@ -25,16 +25,16 @@
     "Decentralised Web"
   ],
   "wiki_links": [
-    "Digital Presence",
-    "Credential Storage",
     "Identity",
-    "Authorization",
-    "Identity Verification",
-    "Avatar",
     "metaverse",
     "Decentralized Identifiers",
-    "Privacy Controls",
+    "Credential Storage",
+    "Avatar",
     "Authentication",
+    "Digital Presence",
+    "Authorization",
+    "Identity Verification",
+    "Privacy Controls",
     "Self-Sovereign Identity"
   ],
   "ontology": {

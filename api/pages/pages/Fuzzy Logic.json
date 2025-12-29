@@ -6,13 +6,13 @@
     "Expert Systems"
   ],
   "wiki_links": [
-    "Approximate Reasoning",
-    "Knowledge Representation",
-    "Expert Systems",
     "Artificial Intelligence",
     "Soft Computing",
+    "Expert Systems",
     "Decision Making",
-    "Control Systems"
+    "Control Systems",
+    "Knowledge Representation",
+    "Approximate Reasoning"
   ],
   "ontology": {
     "term_id": "AI-1010",

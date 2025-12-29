@@ -6,11 +6,11 @@
     "Hardware Abstraction Layer (HAL)"
   ],
   "wiki_links": [
-    "XR Device",
-    "WebXR",
     "metaverse",
     "Hardware Abstraction",
-    "Interoperability"
+    "Interoperability",
+    "WebXR",
+    "XR Device"
   ],
   "ontology": {
     "term_id": "MV-10092",

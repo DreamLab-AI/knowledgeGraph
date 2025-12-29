@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "Software Infrastructure",
-    "System Interoperability",
-    "API Management",
     "metaverse",
+    "System Interoperability",
+    "Integration Platform",
     "Enterprise Service Bus",
-    "Integration Platform"
+    "API Management"
   ],
   "ontology": {
     "term_id": "MV-10008",
