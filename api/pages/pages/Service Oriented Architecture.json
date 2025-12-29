@@ -5,11 +5,11 @@
   "backlinks": [],
   "wiki_links": [
     "API Design",
-    "System Interoperability",
-    "Microservices",
+    "metaverse",
     "Software Architecture",
     "Enterprise Service Bus",
-    "metaverse"
+    "Microservices",
+    "System Interoperability"
   ],
   "ontology": {
     "term_id": "MV-10039",

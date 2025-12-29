@@ -8,11 +8,11 @@
     "Jurisdictional Boundary"
   ],
   "wiki_links": [
-    "Smart Contract",
     "Platform Governance",
-    "Governance Token",
     "Decentralised Decision Making",
-    "metaverse"
+    "metaverse",
+    "Smart Contract",
+    "Governance Token"
   ],
   "ontology": {
     "term_id": "MV-9909",

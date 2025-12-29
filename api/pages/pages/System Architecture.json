@@ -17,10 +17,10 @@
   ],
   "wiki_links": [
     "Metaverse Infrastructure",
-    "Edge Computing",
-    "Interoperability",
     "metaverse",
-    "Network Architecture"
+    "Network Architecture",
+    "Edge Computing",
+    "Interoperability"
   ],
   "ontology": {
     "term_id": "MV-10078",

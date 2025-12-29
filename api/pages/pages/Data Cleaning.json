@@ -8,11 +8,11 @@
   "wiki_links": [
     "Data Quality",
     "Data Analysis",
-    "ETL",
-    "Machine Learning",
     "Data Engineering",
+    "ETL",
     "Feature Engineering",
-    "Data Preprocessing"
+    "Data Preprocessing",
+    "Machine Learning"
   ],
   "ontology": {
     "term_id": "AI-1018",

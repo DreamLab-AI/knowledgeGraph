@@ -4,10 +4,10 @@
   "content": "- ### OntologyBlock\n  id:: virtual-environment-creation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10120\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Environment Creation\n\t- status:: active\n\t- definition:: The process of designing, building, and deploying immersive 3D virtual worlds using game engines, modeling software, and AI-powered tools, encompassing static and dynamic assets, physics simulation, and interactive experiences for metaverse platforms.\n\t- owl:class:: mv:VirtualEnvironmentCreation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[3D Development]]\n\t\t- related-to:: [[Game Engine]]\n\t\t- related-to:: [[3D Modeling]]\n\t\t- related-to:: [[Virtual World]]\n\t  id:: virtual-environment-creation-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual environment creation involves designing immersive 3D worlds for metaverse platforms using game engines and specialized tools. Unreal Engine 5's Nanite and Lumen systems enable photorealistic environments, while Unity supports cross-platform development. AI-powered text-to-world tools represent the next generation, generating environments from natural language descriptions.\n- ## Technical Details\n\t- ### Development Platforms\n\t\t- **Unreal Engine 5**: Photorealistic rendering, physics simulation\n\t\t- **Unity**: Multi-platform support, visual scripting\n\t\t- **The Sandbox VoxEdit**: Voxel modeling and NFT creation\n\t\t- **NVIDIA Omniverse**: Digital twin and collaboration\n\t- ### Model Types\n\t\t- Static models for scenery (buildings, terrain)\n\t\t- Dynamic models with animations and interactions\n\t\t- Procedurally generated content\n\t\t- AI-assisted world generation\n\t- ### Key Tools\n\t\t- Blender, Maya, 3DS Max for 3D modeling\n\t\t- Substance Painter for texturing\n\t\t- World Machine for terrain generation\n\t\t- Houdini for procedural effects\n- ## Applications\n\t- Gaming world development\n\t- Enterprise metaverse spaces\n\t- Virtual real estate development\n\t- Educational environment design\n\t- Brand experience creation",
   "backlinks": [],
   "wiki_links": [
-    "3D Development",
-    "Game Engine",
     "Virtual World",
+    "Game Engine",
     "metaverse",
+    "3D Development",
     "3D Modeling"
   ],
   "ontology": {

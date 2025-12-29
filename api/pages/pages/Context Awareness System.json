@@ -8,16 +8,16 @@
   ],
   "wiki_links": [
     "Ubiquitous Computing",
-    "Network Infrastructure",
-    "Situational Awareness",
-    "Context Aware Response",
-    "Location Based Services",
-    "Smart Environment",
     "Adaptive Services",
-    "Data Analytics",
-    "IoT Sensors",
+    "metaverse",
+    "Network Infrastructure",
+    "Location Based Services",
     "Intelligent Systems",
-    "metaverse"
+    "IoT Sensors",
+    "Data Analytics",
+    "Context Aware Response",
+    "Smart Environment",
+    "Situational Awareness"
   ],
   "ontology": {
     "term_id": "MV-9831",

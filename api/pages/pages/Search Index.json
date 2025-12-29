@@ -7,12 +7,12 @@
     "Digital Goods Registry"
   ],
   "wiki_links": [
-    "Search Engine",
-    "Information Retrieval",
-    "Fast Query Response",
-    "Database Indexing",
     "Data Structure",
-    "metaverse"
+    "Search Engine",
+    "metaverse",
+    "Information Retrieval",
+    "Database Indexing",
+    "Fast Query Response"
   ],
   "ontology": {
     "term_id": "MV-10031",
