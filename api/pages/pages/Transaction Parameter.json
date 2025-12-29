@@ -7,9 +7,9 @@
   ],
   "wiki_links": [
     "Smart Contract",
-    "Gas",
     "Blockchain Transaction",
-    "Transaction Fee"
+    "Transaction Fee",
+    "Gas"
   ],
   "ontology": {
     "term_id": "MV-10084",

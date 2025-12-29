@@ -6,13 +6,13 @@
     "Zk Starks"
   ],
   "wiki_links": [
-    "Blockchain Network",
-    "State Channel",
+    "Layer 2",
+    "Sharding",
     "Blockchain Entity",
     "Blockchain Technology",
-    "Layer 2",
-    "Rollup",
-    "Sharding"
+    "State Channel",
+    "Blockchain Network",
+    "Rollup"
   ],
   "ontology": {
     "term_id": "BC-0602",

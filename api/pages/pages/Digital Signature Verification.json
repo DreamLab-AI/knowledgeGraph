@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "Transaction Authentication",
-    "metaverse",
-    "Blockchain Consensus",
-    "PKI",
-    "Hash Algorithm",
-    "Cryptographic Verification",
     "Non-Repudiation",
+    "Signature Algorithm",
     "Digital Signatures",
-    "Public Key",
     "Document Integrity",
-    "Signature Algorithm"
+    "Blockchain Consensus",
+    "Hash Algorithm",
+    "PKI",
+    "Public Key",
+    "metaverse",
+    "Cryptographic Verification"
   ],
   "ontology": {
     "term_id": "MV-9871",

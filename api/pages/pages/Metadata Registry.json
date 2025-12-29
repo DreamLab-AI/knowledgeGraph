@@ -9,11 +9,11 @@
     "Collective Memory Archive"
   ],
   "wiki_links": [
-    "metaverse",
-    "Enterprise Data Consistency",
-    "Data Cataloguing",
     "Data Governance",
-    "Metadata Standards"
+    "Data Cataloguing",
+    "Metadata Standards",
+    "metaverse",
+    "Enterprise Data Consistency"
   ],
   "ontology": {
     "term_id": "MV-9960",

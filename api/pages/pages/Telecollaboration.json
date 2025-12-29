@@ -21,22 +21,22 @@
     "Immersive Communication"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "Telecollaboration",
-    "Technology Domain",
-    "Virtual Teams",
-    "Shared Workspace",
-    "TELE-002-telecollaboration",
     "Metaverse Technology",
+    "Telecollaboration",
     "Robotics Systems",
-    "TC-0001-telecollaboration-domain",
-    "Telepresence",
-    "Blockchain Technology",
+    "Virtual Teams",
     "Communication Protocol",
     "Video Conferencing",
+    "TC-0001-telecollaboration-domain",
+    "Blockchain Technology",
+    "Asynchronous Collaboration",
+    "Technology Domain",
+    "Telepresence",
     "Synchronous Collaboration",
+    "Artificial Intelligence",
+    "Shared Workspace",
     "Collaborative Document Editing",
-    "Asynchronous Collaboration"
+    "TELE-002-telecollaboration"
   ],
   "ontology": {
     "term_id": "TC-0001",
