@@ -7,20 +7,20 @@
     "RB-1007-trajectory-generation"
   ],
   "wiki_links": [
-    "Denavit-Hartenberg Parameters",
-    "Robot Simulation",
-    "Uniqueness",
-    "Motion Visualization",
-    "Computability",
-    "RB-1006-inverse-kinematics",
-    "Homogeneous Coordinates",
-    "Robotics",
-    "Joint Parameters",
-    "Kinematics",
     "RB-0003-manipulator",
+    "Robotics",
+    "Kinematic Model",
+    "Motion Visualization",
+    "Uniqueness",
+    "Joint Parameters",
+    "Denavit-Hartenberg Parameters",
     "End-Effector Pose",
-    "Transformation Matrix",
-    "Kinematic Model"
+    "Robot Simulation",
+    "Homogeneous Coordinates",
+    "Kinematics",
+    "RB-1006-inverse-kinematics",
+    "Computability",
+    "Transformation Matrix"
   ],
   "ontology": {
     "term_id": "RB-1005",

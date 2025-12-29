@@ -6,13 +6,13 @@
     "Federated Credential Exchange"
   ],
   "wiki_links": [
-    "Verifiable Credentials",
+    "Selective Disclosure",
     "Credential Verification",
-    "metaverse",
     "Identity Management",
+    "Verifiable Credentials",
+    "metaverse",
     "Decentralized Identifiers",
     "Blockchain Anchoring",
-    "Selective Disclosure",
     "Cross-Platform Identity"
   ],
   "ontology": {

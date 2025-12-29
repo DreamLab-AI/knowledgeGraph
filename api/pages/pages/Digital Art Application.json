@@ -6,17 +6,17 @@
     "ETSI_Domain_Application___Creative"
   ],
   "wiki_links": [
-    "Generative AI Art",
-    "3D Modeling",
-    "User Interface",
-    "metaverse",
-    "Graphics Processing",
-    "NFT Minting",
-    "Virtual Exhibitions",
     "Creative Software",
-    "Storage Systems",
+    "Virtual Exhibitions",
+    "3D Modeling",
+    "NFT Minting",
+    "metaverse",
+    "Generative AI Art",
     "Digital Art Creation",
-    "NFT Marketplace"
+    "User Interface",
+    "Storage Systems",
+    "NFT Marketplace",
+    "Graphics Processing"
   ],
   "ontology": {
     "term_id": "MV-9846",

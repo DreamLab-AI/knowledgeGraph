@@ -8,11 +8,11 @@
     "Standards Validation"
   ],
   "wiki_links": [
-    "Standards Validation",
-    "Interoperability",
-    "metaverse",
+    "Standards Conformance",
     "Standards",
-    "Standards Conformance"
+    "Standards Validation",
+    "metaverse",
+    "Interoperability"
   ],
   "ontology": {
     "term_id": "MV-10072",

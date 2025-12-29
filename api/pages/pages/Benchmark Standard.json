@@ -6,17 +6,17 @@
     "Environmental Impact Metric"
   ],
   "wiki_links": [
-    "Industry Standards",
-    "metaverse",
-    "System Evaluation",
-    "Validation Process",
-    "Testing Framework",
     "Performance Metrics",
-    "Measurement Methodology",
-    "Quality Assurance",
-    "Performance Comparison",
+    "System Evaluation",
     "Technical Standard",
-    "Reference Implementation"
+    "Validation Process",
+    "metaverse",
+    "Reference Implementation",
+    "Quality Assurance",
+    "Testing Framework",
+    "Industry Standards",
+    "Performance Comparison",
+    "Measurement Methodology"
   ],
   "ontology": {
     "term_id": "MV-9796",

@@ -6,11 +6,11 @@
     "Spatial Audio Scene Description"
   ],
   "wiki_links": [
-    "metaverse",
     "Audio Technology",
+    "Spatial Presence",
+    "metaverse",
     "Immersive Experiences",
-    "VR Headset",
-    "Spatial Presence"
+    "VR Headset"
   ],
   "ontology": {
     "term_id": "MV-9920",

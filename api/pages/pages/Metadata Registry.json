@@ -10,10 +10,10 @@
   ],
   "wiki_links": [
     "Data Governance",
-    "Enterprise Data Consistency",
-    "metaverse",
     "Metadata Standards",
-    "Data Cataloguing"
+    "metaverse",
+    "Data Cataloguing",
+    "Enterprise Data Consistency"
   ],
   "ontology": {
     "term_id": "MV-9960",

@@ -7,11 +7,11 @@
     "Digital Ontology Repository"
   ],
   "wiki_links": [
-    "Ontology",
-    "Interoperability",
-    "metaverse",
     "Standards",
-    "Knowledge Management"
+    "metaverse",
+    "Interoperability",
+    "Knowledge Management",
+    "Ontology"
   ],
   "ontology": {
     "term_id": "MV-10160",

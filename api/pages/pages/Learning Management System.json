@@ -10,11 +10,11 @@
     "ETSI_Domain_Application___Education"
   ],
   "wiki_links": [
+    "Learning Analytics",
     "Educational Technology",
-    "Immersive Learning",
-    "VR Training Delivery",
     "metaverse",
-    "Learning Analytics"
+    "Immersive Learning",
+    "VR Training Delivery"
   ],
   "ontology": {
     "term_id": "MV-9943",

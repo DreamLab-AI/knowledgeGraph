@@ -7,17 +7,17 @@
     "Procedural Audio Generator"
   ],
   "wiki_links": [
-    "Intelligent Systems",
-    "Adaptive Services",
-    "Ubiquitous Computing",
+    "Situational Awareness",
     "Smart Environment",
     "metaverse",
-    "Location Based Services",
     "IoT Sensors",
-    "Context Aware Response",
-    "Data Analytics",
+    "Ubiquitous Computing",
     "Network Infrastructure",
-    "Situational Awareness"
+    "Adaptive Services",
+    "Location Based Services",
+    "Intelligent Systems",
+    "Data Analytics",
+    "Context Aware Response"
   ],
   "ontology": {
     "term_id": "MV-9831",

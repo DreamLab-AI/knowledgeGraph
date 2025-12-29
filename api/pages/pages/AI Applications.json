@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: ai-applications-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0604\n\t- preferred-term:: AI Applications\n\t- source-domain:: ai\n\t- status:: active\n\t- public-access:: true\n\t- definition:: AI Applications represent domain-specific implementations of artificial intelligence technologies across various industries and use cases. This category encompasses practical deployments of AI in healthcare, autonomous vehicles, personal assistants, industrial automation, financial services, and other sectors where AI delivers tangible value.\n\t- owl:class:: ai:AIApplications\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: ai-applications-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Artificial Intelligence]]\n\t\t- is-parent-of:: [[Medical AI]]\n\t\t- is-parent-of:: [[Autonomous Vehicles]]\n\t\t- is-parent-of:: [[AI Assistant]]\n\t\t- is-parent-of:: [[Industrial AI]]\n\t\t- related-to:: [[AI Deployment]]",
   "backlinks": [],
   "wiki_links": [
-    "AI Assistant",
-    "Industrial AI",
     "Medical AI",
+    "Industrial AI",
+    "AI Assistant",
     "Autonomous Vehicles",
-    "Artificial Intelligence",
-    "AI Deployment"
+    "AI Deployment",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0604",

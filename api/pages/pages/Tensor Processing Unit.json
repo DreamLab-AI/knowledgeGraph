@@ -9,11 +9,11 @@
   "wiki_links": [
     "Deep Learning",
     "Training Hardware",
-    "TensorFlow",
-    "AI Hardware",
     "ASIC",
-    "Large Language Models",
     "GPU",
+    "Large Language Models",
+    "AI Hardware",
+    "TensorFlow",
     "Inference Hardware"
   ],
   "ontology": {

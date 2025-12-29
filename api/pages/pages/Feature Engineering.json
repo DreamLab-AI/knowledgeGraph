@@ -8,12 +8,12 @@
     "Dimensionality Reduction"
   ],
   "wiki_links": [
-    "Data Preprocessing",
-    "Model Performance",
-    "Data Cleaning",
+    "Model Training",
     "Dimensionality Reduction",
     "Feature Selection",
-    "Model Training",
+    "Model Performance",
+    "Data Cleaning",
+    "Data Preprocessing",
     "Machine Learning"
   ],
   "ontology": {

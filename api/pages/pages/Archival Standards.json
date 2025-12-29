@@ -6,13 +6,13 @@
     "ETSI_Domain_Data_Management___Culture"
   ],
   "wiki_links": [
-    "Preservation Planning",
-    "Storage Infrastructure",
     "Preservation Standards",
+    "Storage Infrastructure",
+    "Metadata Management",
+    "Long-Term Preservation",
+    "Preservation Planning",
     "Format Migration",
     "metaverse",
-    "Long-Term Preservation",
-    "Metadata Management",
     "Content Authenticity"
   ],
   "ontology": {

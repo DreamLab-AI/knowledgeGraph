@@ -6,17 +6,17 @@
     "Virtual Notary Service"
   ],
   "wiki_links": [
-    "Digital Signatures",
-    "PKI",
-    "Transaction Authentication",
-    "Non-Repudiation",
-    "metaverse",
     "Document Integrity",
-    "Blockchain Consensus",
     "Cryptographic Verification",
     "Public Key",
+    "Non-Repudiation",
+    "metaverse",
     "Hash Algorithm",
-    "Signature Algorithm"
+    "Blockchain Consensus",
+    "Signature Algorithm",
+    "Digital Signatures",
+    "Transaction Authentication",
+    "PKI"
   ],
   "ontology": {
     "term_id": "MV-9871",
