@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "Structured Light Sensing",
-    "metaverse",
     "LiDAR Technology",
-    "Depth Sensing",
+    "3D Environment Mapping",
     "Time Of Flight Sensors",
-    "3D Environment Mapping"
+    "Depth Sensing",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10060",

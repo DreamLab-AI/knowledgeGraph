@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "Intel Loihi",
-    "Artificial Intelligence",
-    "IBM TrueNorth",
     "AI Hardware",
-    "ArtificialIntelligenceDomain"
+    "IBM TrueNorth",
+    "ArtificialIntelligenceDomain",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-9006",

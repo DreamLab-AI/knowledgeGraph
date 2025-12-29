@@ -435,7 +435,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "ai-aialignment",
+      "id": "aialignment",
       "type": "owl:Class"
     },
     {
@@ -447,7 +447,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "aideployment",
+      "id": "ai-aideployment",
       "type": "owl:Class"
     },
     {
@@ -2731,7 +2731,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "dao",
+      "id": "bc-dao",
       "type": "owl:Class"
     },
     {
@@ -3295,7 +3295,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "bc-liquidproofofstake",
+      "id": "liquidproofofstake",
       "type": "owl:Class"
     },
     {
@@ -4243,7 +4243,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-aiartcategorization",
+      "id": "aiartcategorization",
       "type": "owl:Class"
     },
     {
@@ -4939,7 +4939,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-culturalheritagexrexperience",
+      "id": "culturalheritagexrexperience",
       "type": "owl:Class"
     },
     {
@@ -5839,7 +5839,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "etsimetaversedomaintaxonomy",
+      "id": "mv-etsimetaversedomaintaxonomy",
       "type": "owl:Class"
     },
     {
@@ -6347,7 +6347,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-infraredledilluminator",
+      "id": "infraredledilluminator",
       "type": "owl:Class"
     },
     {
@@ -6415,7 +6415,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "isostandards",
+      "id": "mv-isostandards",
       "type": "owl:Class"
     },
     {
@@ -6695,7 +6695,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "metaversedomain",
+      "id": "mv-metaversedomain",
       "type": "owl:Class"
     },
     {
@@ -7575,7 +7575,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "sparqlendpoint",
+      "id": "mv-sparqlendpoint",
       "type": "owl:Class"
     },
     {
@@ -8363,7 +8363,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-vrcontrollers",
+      "id": "vrcontrollers",
       "type": "owl:Class"
     },
     {
@@ -8439,7 +8439,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "xrdevice",
+      "id": "mv-xrdevice",
       "type": "owl:Class"
     },
     {
@@ -10755,7 +10755,7 @@
       }
     },
     {
-      "id": "ai-aialignment",
+      "id": "aialignment",
       "iri": "http://narrativegoldmine.com/ai#AiAlignment",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -10797,7 +10797,7 @@
       }
     },
     {
-      "id": "aideployment",
+      "id": "ai-aideployment",
       "iri": "http://narrativegoldmine.com/ai#AiDeployment",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -18750,7 +18750,7 @@
       }
     },
     {
-      "id": "dao",
+      "id": "bc-dao",
       "iri": "http://narrativegoldmine.com/blockchain#Dao",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -20691,7 +20691,7 @@
       }
     },
     {
-      "id": "bc-liquidproofofstake",
+      "id": "liquidproofofstake",
       "iri": "http://narrativegoldmine.com/blockchain#LiquidProofOfStake",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -23973,7 +23973,7 @@
       }
     },
     {
-      "id": "mv-aiartcategorization",
+      "id": "aiartcategorization",
       "iri": "http://narrativegoldmine.com/metaverse#AiArtCategorization",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -26397,7 +26397,7 @@
       }
     },
     {
-      "id": "mv-culturalheritagexrexperience",
+      "id": "culturalheritagexrexperience",
       "iri": "http://narrativegoldmine.com/metaverse#CulturalHeritageXrExperience",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -29532,7 +29532,7 @@
       }
     },
     {
-      "id": "etsimetaversedomaintaxonomy",
+      "id": "mv-etsimetaversedomaintaxonomy",
       "iri": "http://narrativegoldmine.com/metaverse#EtsiMetaverseDomainTaxonomy",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -31266,7 +31266,7 @@
       }
     },
     {
-      "id": "mv-infraredledilluminator",
+      "id": "infraredledilluminator",
       "iri": "http://narrativegoldmine.com/metaverse#InfraredLedIlluminator",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -31506,7 +31506,7 @@
       }
     },
     {
-      "id": "isostandards",
+      "id": "mv-isostandards",
       "iri": "http://narrativegoldmine.com/metaverse#IsoStandards",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -32505,7 +32505,7 @@
       }
     },
     {
-      "id": "metaversedomain",
+      "id": "mv-metaversedomain",
       "iri": "http://narrativegoldmine.com/metaverse#Metaversedomain",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -35592,7 +35592,7 @@
       }
     },
     {
-      "id": "sparqlendpoint",
+      "id": "mv-sparqlendpoint",
       "iri": "http://narrativegoldmine.com/metaverse#SparqlEndpoint",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -38397,7 +38397,7 @@
       }
     },
     {
-      "id": "mv-vrcontrollers",
+      "id": "vrcontrollers",
       "iri": "http://narrativegoldmine.com/metaverse#VrControllers",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -38658,7 +38658,7 @@
       }
     },
     {
-      "id": "xrdevice",
+      "id": "mv-xrdevice",
       "iri": "http://narrativegoldmine.com/metaverse#XrDevice",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -44186,7 +44186,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-aideployment-ai-ailifecycle",
+      "id": "subclassof-ai-aideployment-ai-ailifecycle",
       "type": "rdfs:subClassOf"
     },
     {
@@ -44530,7 +44530,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-ai-aialignment-ai-aisafety",
+      "id": "subclassof-aialignment-ai-aisafety",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46242,7 +46242,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-sparqlendpoint-dataaccessinterface",
+      "id": "subclassof-mv-sparqlendpoint-dataaccessinterface",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46726,11 +46726,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-vrcontrollers-mv-xrhardware",
+      "id": "subclassof-vrcontrollers-mv-xrhardware",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-xrdevice-mv-xrhardware",
+      "id": "subclassof-mv-xrdevice-mv-xrhardware",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46818,7 +46818,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-isostandards-technicalstandard",
+      "id": "subclassof-mv-isostandards-technicalstandard",
       "type": "rdfs:subClassOf"
     },
     {
@@ -47226,7 +47226,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-infraredledilluminator-infraredilluminator",
+      "id": "subclassof-infraredledilluminator-infraredilluminator",
       "type": "rdfs:subClassOf"
     },
     {
@@ -48741,8 +48741,8 @@
       ]
     },
     {
-      "id": "subclassof-aideployment-ai-ailifecycle",
-      "domain": "aideployment",
+      "id": "subclassof-ai-aideployment-ai-ailifecycle",
+      "domain": "ai-aideployment",
       "range": "ai-ailifecycle",
       "attributes": [
         "anonymous",
@@ -49515,8 +49515,8 @@
       ]
     },
     {
-      "id": "subclassof-ai-aialignment-ai-aisafety",
-      "domain": "ai-aialignment",
+      "id": "subclassof-aialignment-ai-aisafety",
+      "domain": "aialignment",
       "range": "ai-aisafety",
       "attributes": [
         "anonymous",
@@ -53367,8 +53367,8 @@
       ]
     },
     {
-      "id": "subclassof-sparqlendpoint-dataaccessinterface",
-      "domain": "sparqlendpoint",
+      "id": "subclassof-mv-sparqlendpoint-dataaccessinterface",
+      "domain": "mv-sparqlendpoint",
       "range": "dataaccessinterface",
       "attributes": [
         "anonymous",
@@ -54456,8 +54456,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-vrcontrollers-mv-xrhardware",
-      "domain": "mv-vrcontrollers",
+      "id": "subclassof-vrcontrollers-mv-xrhardware",
+      "domain": "vrcontrollers",
       "range": "mv-xrhardware",
       "attributes": [
         "anonymous",
@@ -54465,8 +54465,8 @@
       ]
     },
     {
-      "id": "subclassof-xrdevice-mv-xrhardware",
-      "domain": "xrdevice",
+      "id": "subclassof-mv-xrdevice-mv-xrhardware",
+      "domain": "mv-xrdevice",
       "range": "mv-xrhardware",
       "attributes": [
         "anonymous",
@@ -54663,8 +54663,8 @@
       ]
     },
     {
-      "id": "subclassof-isostandards-technicalstandard",
-      "domain": "isostandards",
+      "id": "subclassof-mv-isostandards-technicalstandard",
+      "domain": "mv-isostandards",
       "range": "technicalstandard",
       "attributes": [
         "anonymous",
@@ -55581,8 +55581,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-infraredledilluminator-infraredilluminator",
-      "domain": "mv-infraredledilluminator",
+      "id": "subclassof-infraredledilluminator-infraredilluminator",
+      "domain": "infraredledilluminator",
       "range": "infraredilluminator",
       "attributes": [
         "anonymous",

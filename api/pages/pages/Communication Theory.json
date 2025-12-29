@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: communication-theory-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-0604\n\t- preferred-term:: Communication Theory\n\t- source-domain:: tc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Communication Theory provides the theoretical foundations for understanding how information, meaning, and social presence are transmitted and perceived in mediated communication contexts. Key frameworks include media richness theory, social presence theory, and theories of computer-mediated communication that inform the design of telecollaboration systems.\n\t- owl:class:: tc:CommunicationTheory\n\t- belongsToDomain:: [[Telecollaboration]]\n\t- #### Relationships\n\t  id:: communication-theory-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Telecollaboration]]\n\t\t- is-parent-of:: [[Media Richness]]\n\t\t- is-parent-of:: [[Social Presence]]\n\t\t- related-to:: [[Virtual Meeting]]\n\t\t- related-to:: [[Immersive Communication]]",
   "backlinks": [],
   "wiki_links": [
-    "Social Presence",
     "Immersive Communication",
-    "Media Richness",
     "Telecollaboration",
-    "Virtual Meeting"
+    "Virtual Meeting",
+    "Media Richness",
+    "Social Presence"
   ],
   "ontology": {
     "term_id": "TC-0604",

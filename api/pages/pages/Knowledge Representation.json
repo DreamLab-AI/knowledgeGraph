@@ -13,11 +13,11 @@
     "Intelligent Virtual Entity"
   ],
   "wiki_links": [
-    "Reasoning Systems",
-    "Artificial Intelligence",
     "Automated Planning",
     "Ontology",
-    "Logic Programming"
+    "Logic Programming",
+    "Reasoning Systems",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-1001",

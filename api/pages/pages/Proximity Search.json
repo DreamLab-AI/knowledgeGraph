@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "Geospatial Technology",
-    "metaverse",
-    "Nearby Discovery",
-    "Location Based Services",
     "Spatial Indexing",
-    "Geohashing"
+    "Location Based Services",
+    "metaverse",
+    "Geohashing",
+    "Nearby Discovery"
   ],
   "ontology": {
     "term_id": "MV-10014",

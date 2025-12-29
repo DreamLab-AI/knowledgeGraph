@@ -7,11 +7,11 @@
     "Wearable Device Integration"
   ],
   "wiki_links": [
-    "Internet of Things",
-    "metaverse",
-    "Mobile Computing",
     "Computing Platform",
-    "XR Hardware"
+    "Mobile Computing",
+    "XR Hardware",
+    "metaverse",
+    "Internet of Things"
   ],
   "ontology": {
     "term_id": "MV-10166",

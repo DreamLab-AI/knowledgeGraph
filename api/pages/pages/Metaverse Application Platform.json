@@ -8,11 +8,11 @@
     "Industrial Metaverse"
   ],
   "wiki_links": [
-    "Game Engine",
-    "SDK Development",
     "Development Platform",
     "metaverse",
-    "Metaverse Content Creation"
+    "Metaverse Content Creation",
+    "Game Engine",
+    "SDK Development"
   ],
   "ontology": {
     "term_id": "MV-9963",

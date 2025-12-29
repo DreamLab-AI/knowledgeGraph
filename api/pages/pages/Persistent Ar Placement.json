@@ -6,10 +6,10 @@
   "wiki_links": [
     "Augmented Reality",
     "Cloud Computing",
-    "metaverse",
-    "Spatial Anchors",
     "Location Based Services",
-    "Shared AR Experiences"
+    "metaverse",
+    "Shared AR Experiences",
+    "Spatial Anchors"
   ],
   "ontology": {
     "term_id": "MV-10003",
