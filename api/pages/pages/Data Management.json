@@ -20,11 +20,11 @@
     "ETSI_Domain_Data_Mgmt___AI"
   ],
   "wiki_links": [
-    "Metaverse Technology",
-    "Standards",
-    "Metadata Management",
     "Asset Management",
-    "3D Data Format"
+    "Metadata Management",
+    "3D Data Format",
+    "Metaverse Technology",
+    "Standards"
   ],
   "ontology": {
     "term_id": "MV-0603",

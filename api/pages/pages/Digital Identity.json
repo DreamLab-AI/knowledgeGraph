@@ -25,17 +25,17 @@
     "Decentralised Web"
   ],
   "wiki_links": [
-    "Decentralized Identifiers",
-    "Authentication",
     "Digital Presence",
     "Credential Storage",
+    "Decentralized Identifiers",
     "metaverse",
-    "Authorization",
+    "Identity",
+    "Avatar",
     "Self-Sovereign Identity",
     "Privacy Controls",
-    "Avatar",
-    "Identity",
-    "Identity Verification"
+    "Identity Verification",
+    "Authorization",
+    "Authentication"
   ],
   "ontology": {
     "term_id": "MV-9860",

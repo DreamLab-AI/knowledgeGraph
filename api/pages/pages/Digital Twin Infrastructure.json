@@ -6,17 +6,17 @@
     "Digital Twin Synchronisation Bus"
   ],
   "wiki_links": [
-    "Data Pipeline",
+    "Real-Time Processing",
     "metaverse",
-    "Computing Infrastructure",
     "Edge Analytics",
     "Edge Computing",
-    "IoT Gateway",
     "Hybrid Cloud",
-    "Real-Time Processing",
+    "Cloud Platform",
+    "Computing Infrastructure",
     "Scalable Deployment",
+    "Data Pipeline",
     "5G Connectivity",
-    "Cloud Platform"
+    "IoT Gateway"
   ],
   "ontology": {
     "term_id": "MV-9880",

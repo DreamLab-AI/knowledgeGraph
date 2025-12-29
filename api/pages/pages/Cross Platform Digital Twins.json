@@ -4,17 +4,17 @@
   "content": "- ### OntologyBlock\n  id:: cross-platform-digital-twins-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9836\n\t- source-domain:: mv\n\t- preferred-term:: Cross Platform Digital Twins\n\t- definition:: Digital twin systems designed for interoperability across different software platforms and environments, enabling real-time data exchange, collaborative simulation, and unified virtual representations of physical assets or processes that can be accessed and manipulated from multiple compatible systems.\n\t- status:: active\n\t- owl:class:: mv:CrossPlatformDigitalTwins\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: cross-platform-digital-twins-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Twin Technology]]\n\t\t- enables:: [[Collaborative Simulation]], [[Data Integration]], [[Multi-Vendor Ecosystems]]\n\t\t- requires:: [[Interoperability Standards]], [[Universal Scene Description]], [[API Integration]]\n\t\t- related-to:: [[Industrial Digital Twin]], [[Simulation Platform]], [[IoT Integration]]\n- ## Technical Details\n\t- **2024 Milestone**: VERSES AI, NASA JPL, and CSUN demonstrated first cross-platform digital twin interoperability for lunar exploration\n\t\t- Real-time joint testing of lander model (CSUN) and rover DT (JPL)\n\t\t- Cross-platform collaboration between Omniverse and Unity platforms\n\t\t- Used spatial web standard protocols\n\t- **Leading Platforms**:\n\t\t- **NVIDIA Omniverse**: Real-time 3D workflows using Universal Scene Description (USD)\n\t\t- **Microsoft Azure Digital Twins**: DTDL open standard for flexibility and interoperability\n\t- **Key Standards**:\n\t\t- Universal Scene Description (USD) for 3D asset exchange\n\t\t- Digital Twin Definition Language (DTDL)\n\t\t- Spatial web protocols for distributed systems\n\t- **Challenges**: Lack of standardized frameworks slowing vendor interoperability\n- ## Applications\n\t- Multi-agency government projects\n\t- Aerospace mission planning\n\t- Industrial manufacturing coordination\n\t- Smart city management\n\t- Cross-vendor infrastructure monitoring",
   "backlinks": [],
   "wiki_links": [
-    "Industrial Digital Twin",
-    "Data Integration",
-    "metaverse",
-    "Multi-Vendor Ecosystems",
-    "API Integration",
     "Universal Scene Description",
+    "metaverse",
+    "Simulation Platform",
+    "IoT Integration",
+    "API Integration",
+    "Multi-Vendor Ecosystems",
+    "Data Integration",
+    "Industrial Digital Twin",
     "Collaborative Simulation",
     "Digital Twin Technology",
-    "Interoperability Standards",
-    "Simulation Platform",
-    "IoT Integration"
+    "Interoperability Standards"
   ],
   "ontology": {
     "term_id": "MV-9836",

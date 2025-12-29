@@ -7,13 +7,13 @@
     "RB-1018-dijkstra-algorithm"
   ],
   "wiki_links": [
+    "Pathfinding",
+    "Priority Queue",
     "Search Algorithms",
     "Dijkstra's Algorithm",
-    "Priority Queue",
-    "Route Planning",
-    "Pathfinding",
+    "Heuristic Methods",
     "Graph Theory",
-    "Heuristic Methods"
+    "Route Planning"
   ],
   "ontology": {
     "term_id": "AI-1004",

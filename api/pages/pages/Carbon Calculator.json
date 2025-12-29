@@ -7,17 +7,17 @@
     "Carbon Accounting"
   ],
   "wiki_links": [
-    "Activity Data",
-    "metaverse",
-    "Emission Factors",
-    "Carbon Accounting",
-    "Reduction Planning",
-    "Sustainability Tool",
-    "Calculation Methodology",
     "Footprint Awareness",
     "Carbon Footprint Assessment",
+    "metaverse",
+    "Activity Data",
+    "Calculation Methodology",
+    "Carbon Accounting",
+    "Emission Factors",
     "GHG Protocol",
-    "Emissions Estimation"
+    "Emissions Estimation",
+    "Reduction Planning",
+    "Sustainability Tool"
   ],
   "ontology": {
     "term_id": "MV-9808",

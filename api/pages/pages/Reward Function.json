@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: reward-function-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10024\n\t- source-domain:: mv\n\t- preferred-term:: Reward Function\n\t- status:: active\n\t- definition:: A mathematical formulation in reinforcement learning that maps state-action pairs to scalar values, guiding AI agent behaviour toward desired outcomes in game environments, virtual worlds, and autonomous systems through feedback signals.\n\t- owl:class:: mv:RewardFunction\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: reward-function-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Reinforcement Learning]]\n\t\t- related-to:: [[AI Training]]\n\t\t- related-to:: [[Game AI]]\n\t\t- related-to:: [[NPC Behaviour]]\n\t\t- enables:: [[Autonomous Agent Learning]]\n\t- #### Key Concepts\n\t  collapsed:: true\n\t\t- Sparse vs dense reward signals\n\t\t- Reward shaping for faster convergence\n\t\t- Inverse reinforcement learning\n\t\t- Multi-objective reward functions\n\t\t- Credit assignment problem\n\t- #### Applications\n\t  collapsed:: true\n\t\t- Game NPC behaviour optimization\n\t\t- Virtual character training\n\t\t- Autonomous vehicle navigation\n\t\t- Robotic control systems\n\t\t- Player engagement optimization",
   "backlinks": [],
   "wiki_links": [
-    "Reinforcement Learning",
     "metaverse",
-    "NPC Behaviour",
-    "Game AI",
     "AI Training",
+    "NPC Behaviour",
+    "Reinforcement Learning",
+    "Game AI",
     "Autonomous Agent Learning"
   ],
   "ontology": {
