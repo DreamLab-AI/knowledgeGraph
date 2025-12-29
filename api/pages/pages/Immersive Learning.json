@@ -16,11 +16,11 @@
     "tc-0003-telepresence-robot"
   ],
   "wiki_links": [
-    "Learning Management System",
-    "Educational Technology",
-    "Immersive Technology",
     "metaverse",
-    "Experiential Education"
+    "Immersive Technology",
+    "Experiential Education",
+    "Educational Technology",
+    "Learning Management System"
   ],
   "ontology": {
     "term_id": "MV-9926",

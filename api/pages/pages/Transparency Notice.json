@@ -6,11 +6,11 @@
     "AI-Generated Content Disclosure"
   ],
   "wiki_links": [
-    "Data Privacy",
     "Privacy Disclosure",
-    "User Rights",
     "GDPR",
-    "metaverse"
+    "metaverse",
+    "Data Privacy",
+    "User Rights"
   ],
   "ontology": {
     "term_id": "MV-10086",

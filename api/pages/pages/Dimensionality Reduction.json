@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "Data Visualization",
-    "Computational Efficiency",
-    "Feature Engineering",
     "Feature Selection",
-    "Unsupervised Learning",
+    "Computational Efficiency",
     "Machine Learning",
+    "Feature Engineering",
+    "Unsupervised Learning",
     "Curse of Dimensionality"
   ],
   "ontology": {

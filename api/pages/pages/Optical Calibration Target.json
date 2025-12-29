@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "Image Quality Testing",
-    "Color Calibration",
-    "Calibration Equipment",
     "Optical System Accuracy",
-    "Camera Calibration",
-    "metaverse"
+    "Calibration Equipment",
+    "metaverse",
+    "Color Calibration",
+    "Camera Calibration"
   ],
   "ontology": {
     "term_id": "MV-9988",

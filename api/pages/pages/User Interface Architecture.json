@@ -7,11 +7,11 @@
     "Experience Layer"
   ],
   "wiki_links": [
-    "System Architecture",
-    "Interaction Design",
-    "Accessibility",
     "User Experience",
-    "metaverse"
+    "Interaction Design",
+    "metaverse",
+    "Accessibility",
+    "System Architecture"
   ],
   "ontology": {
     "term_id": "MV-10097",

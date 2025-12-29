@@ -11,11 +11,11 @@
     "FPGA"
   ],
   "wiki_links": [
-    "Real-Time VR Performance",
     "Hardware Resources",
-    "GPU Rendering",
+    "metaverse",
+    "Real-Time VR Performance",
     "Computing Infrastructure",
-    "metaverse"
+    "GPU Rendering"
   ],
   "ontology": {
     "term_id": "MV-9914",

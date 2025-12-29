@@ -6,11 +6,11 @@
     "Cultural Heritage XR Experience"
   ],
   "wiki_links": [
-    "Digital Preservation",
-    "Cultural Heritage",
-    "Virtual Field Trip",
     "metaverse",
-    "Virtual Tour"
+    "Virtual Field Trip",
+    "Cultural Heritage",
+    "Virtual Tour",
+    "Digital Preservation"
   ],
   "ontology": {
     "term_id": "MV-10131",

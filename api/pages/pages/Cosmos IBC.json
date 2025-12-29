@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: BC-9001\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-9001\n\t- source-domain:: bc\n\t- preferred-term:: Cosmos IBC\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Inter-Blockchain Communication protocol that enables different blockchain networks to exchange data and tokens, providing trustless interoperability in the Cosmos ecosystem.\n\t- source:: [[Cosmos Network]], [[IBC Protocol]]\n\t- maturity:: emerging\n\t- owl:class:: bc:CosmosIBC\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- isSubclassOf:: [[Layer 0 Protocol]], [[Interoperability Protocol]]\n\n### Relationships\n- is-subclass-of:: [[Blockchain]]",
   "backlinks": [],
   "wiki_links": [
+    "Cosmos Network",
     "IBC Protocol",
     "BlockchainDomain",
-    "Layer 0 Protocol",
     "Interoperability Protocol",
-    "Blockchain",
-    "Cosmos Network"
+    "Layer 0 Protocol",
+    "Blockchain"
   ],
   "ontology": {
     "term_id": "BC-9001",

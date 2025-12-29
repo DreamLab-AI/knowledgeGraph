@@ -10,12 +10,12 @@
     "Search Discovery"
   ],
   "wiki_links": [
-    "Content Discovery",
-    "Search Index",
-    "Web Crawling",
-    "metaverse",
+    "Information Retrieval",
     "Ranking Algorithms",
-    "Information Retrieval"
+    "Web Crawling",
+    "Content Discovery",
+    "metaverse",
+    "Search Index"
   ],
   "ontology": {
     "term_id": "MV-10030",

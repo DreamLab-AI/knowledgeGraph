@@ -6,12 +6,12 @@
     "Motion Capture Rig"
   ],
   "wiki_links": [
-    "Character Animation",
-    "Real Time Character Animation",
+    "Multibody Dynamics",
     "Simulation Software",
     "metaverse",
     "Physics Simulation",
-    "Multibody Dynamics"
+    "Real Time Character Animation",
+    "Character Animation"
   ],
   "ontology": {
     "term_id": "MV-9974",

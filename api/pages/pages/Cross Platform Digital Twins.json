@@ -6,15 +6,15 @@
   "wiki_links": [
     "Industrial Digital Twin",
     "Data Integration",
-    "Universal Scene Description",
-    "Simulation Platform",
+    "metaverse",
     "Multi-Vendor Ecosystems",
     "API Integration",
-    "Digital Twin Technology",
-    "metaverse",
+    "Universal Scene Description",
     "Collaborative Simulation",
-    "IoT Integration",
-    "Interoperability Standards"
+    "Digital Twin Technology",
+    "Interoperability Standards",
+    "Simulation Platform",
+    "IoT Integration"
   ],
   "ontology": {
     "term_id": "MV-9836",
