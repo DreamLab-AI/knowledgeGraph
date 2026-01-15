@@ -32,19 +32,19 @@
     "AIDomain"
   ],
   "wiki_links": [
-    "Tokenomics",
-    "Metaverse Technology",
     "Artificial Intelligence",
-    "Cryptographic System",
-    "Distributed Ledger",
     "Consensus Mechanism",
     "Technology Domain",
-    "Decentralised Application",
+    "Blockchain Technology",
+    "Telecollaboration",
+    "Tokenomics",
+    "Cryptocurrency",
+    "Cryptographic System",
     "Blockchain Network",
     "Smart Contract",
-    "Telecollaboration",
-    "Cryptocurrency",
-    "Blockchain Technology"
+    "Distributed Ledger",
+    "Decentralised Application",
+    "Metaverse Technology"
   ],
   "ontology": {
     "term_id": "BC-0001",

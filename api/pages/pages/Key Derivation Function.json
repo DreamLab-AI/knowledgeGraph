@@ -10,14 +10,14 @@
     "Cryptographic Keys"
   ],
   "wiki_links": [
-    "Hash Function",
+    "Private Key",
+    "Blockchain",
+    "Mnemonic Phrase",
+    "Asymmetric Encryption",
     "Password Hashing",
     "Hierarchical Deterministic Wallet",
-    "Cryptography",
-    "Private Key",
-    "Mnemonic Phrase",
-    "Blockchain",
-    "Asymmetric Encryption"
+    "Hash Function",
+    "Cryptography"
   ],
   "ontology": {
     "term_id": "BC-8007",

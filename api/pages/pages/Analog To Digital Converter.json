@@ -4,14 +4,14 @@
   "content": "- ### OntologyBlock\n  id:: analog-to-digital-converter-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9765\n\t- source-domain:: mv\n\t- preferred-term:: Analog To Digital Converter\n\t- status:: active\n\t- definition:: Analog To Digital Converter (ADC) is an electronic component that converts continuous analog signals such as sound, light, or voltage into discrete digital representations through sampling, quantization, and encoding processes, enabling digital processing, storage, and transmission of real-world signals.\n\t- owl:class:: mv:AnalogToDigitalConverter\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Signal Processing Hardware]]\n\t- enables:: [[Digital Audio Recording]], [[Digital Imaging]], [[Sensor Data Processing]]\n\t- requires:: [[Sampling Rate]], [[Resolution Bits]], [[Signal Conditioning]]\n\t- #### Relationships\n\t  id:: analog-to-digital-converter-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Sampling**: Measuring analog signals at specific intervals (sampling rate must meet Nyquist criterion: 2x highest frequency)\n- **Quantization**: Determining resolution by mapping continuous values to discrete levels\n- **Encoding**: Converting quantized values to binary digital representations\n- **ADC Types**: Flash, Pipeline, Dual Slope, SAR (Successive Approximation), and Delta-Sigma architectures\n\n### Audio Applications\nMusic production ADCs sample at rates up to 192 kHz, with recording studios using 24-bit 96 kHz PCM before downsampling to 44.1 kHz (CD) or 48 kHz (broadcast).\n\n### Metaverse Relevance\nADCs are essential for capturing real-world audio, video, and sensor data for integration into virtual environments and digital twin applications.",
   "backlinks": [],
   "wiki_links": [
-    "Digital Audio Recording",
-    "Signal Processing Hardware",
-    "Sampling Rate",
-    "Resolution Bits",
     "Sensor Data Processing",
-    "Digital Imaging",
+    "Signal Conditioning",
     "metaverse",
-    "Signal Conditioning"
+    "Sampling Rate",
+    "Signal Processing Hardware",
+    "Resolution Bits",
+    "Digital Audio Recording",
+    "Digital Imaging"
   ],
   "ontology": {
     "term_id": "MV-9765",

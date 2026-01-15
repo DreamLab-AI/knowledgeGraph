@@ -14,14 +14,14 @@
     "AIRiskManagement"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
     "Risk Management",
-    "AI Safety",
+    "Artificial Intelligence",
     "AIRiskManagement",
-    "AISecurity",
+    "AI Ethics",
     "AI Risk Assessment",
-    "AIGovernance",
-    "AI Ethics"
+    "AISecurity",
+    "AI Safety",
+    "AIGovernance"
   ],
   "ontology": {
     "term_id": "AI-7018",

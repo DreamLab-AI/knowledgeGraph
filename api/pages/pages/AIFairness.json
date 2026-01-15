@@ -14,14 +14,14 @@
     "k-Anonymity in Datasets"
   ],
   "wiki_links": [
-    "Machine Learning",
-    "Algorithmic Accountability",
     "Artificial Intelligence",
-    "Equitable AI Systems",
+    "AI Ethics",
+    "Algorithmic Accountability",
     "Trustworthy AI",
+    "Machine Learning",
     "Responsible AI",
-    "AIGovernance",
-    "AI Ethics"
+    "Equitable AI Systems",
+    "AIGovernance"
   ],
   "ontology": {
     "term_id": "AI-7014",

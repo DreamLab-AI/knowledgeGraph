@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "Physical Hardware",
-    "High Performance Computing",
-    "AI Acceleration",
-    "GPU Computing",
+    "Real Time Rendering",
     "metaverse",
-    "Real Time Rendering"
+    "GPU Computing",
+    "High Performance Computing",
+    "AI Acceleration"
   ],
   "ontology": {
     "term_id": "MV-10012",

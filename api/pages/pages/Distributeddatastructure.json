@@ -32,18 +32,18 @@
     "BC-0008-account-model"
   ],
   "wiki_links": [
-    "Consensus Algorithm",
     "Replication",
-    "Data Structure",
-    "Peer-to-Peer Network",
-    "Merkle Tree",
-    "Eventual Consistency",
     "CAP Theorem",
     "Distributed Hash Table",
-    "Fault Tolerance",
-    "Distributed Systems",
+    "Peer-to-Peer Network",
+    "Data Structure",
+    "Merkle Tree",
     "Horizontal Scalability",
-    "CRDT"
+    "Eventual Consistency",
+    "CRDT",
+    "Consensus Algorithm",
+    "Fault Tolerance",
+    "Distributed Systems"
   ],
   "ontology": {
     "term_id": "NGM-8002",

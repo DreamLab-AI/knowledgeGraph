@@ -69,15 +69,15 @@
     "Privacy"
   ],
   "wiki_links": [
-    "AI Compliance",
     "Artificial Intelligence",
     "AIRiskManagement",
-    "AISecurity",
-    "AIFairness",
-    "Trustworthy AI",
-    "Responsible AI",
     "AI Ethics",
-    "AI Regulation"
+    "AI Regulation",
+    "AIFairness",
+    "AI Compliance",
+    "Trustworthy AI",
+    "AISecurity",
+    "Responsible AI"
   ],
   "ontology": {
     "term_id": "AI-7001",

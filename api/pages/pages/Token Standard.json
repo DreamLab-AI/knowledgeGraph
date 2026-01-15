@@ -22,12 +22,12 @@
     "Smart Royalty Contract"
   ],
   "wiki_links": [
-    "Decentralized Exchange",
-    "Fungibility",
+    "NFT",
     "Blockchain",
-    "Smart Contract",
     "DeFi",
-    "NFT"
+    "Decentralized Exchange",
+    "Smart Contract",
+    "Fungibility"
   ],
   "ontology": {
     "term_id": "BC-7005",

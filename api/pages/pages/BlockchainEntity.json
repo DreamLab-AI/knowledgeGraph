@@ -105,9 +105,9 @@
     "BC-0094-pruned-node"
   ],
   "wiki_links": [
-    "Blockchain Taxonomy",
+    "BC Domain Concepts",
     "Blockchain Technology",
-    "BC Domain Concepts"
+    "Blockchain Taxonomy"
   ],
   "ontology": {
     "term_id": "BC-7000",

@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "Servo Control",
-    "Control Theory",
-    "Predictability",
     "Control System",
-    "Actuator",
-    "Robotics",
-    "Forward Kinematics",
-    "No Feedback",
-    "RB-1002-closed-loop-control",
     "Feedback Mechanism",
-    "Stepper Motor Control"
+    "Predictability",
+    "Forward Kinematics",
+    "RB-1002-closed-loop-control",
+    "Control Theory",
+    "Stepper Motor Control",
+    "Robotics",
+    "No Feedback",
+    "Actuator"
   ],
   "ontology": {
     "term_id": "RB-1001",

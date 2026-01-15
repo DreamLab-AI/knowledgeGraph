@@ -16,14 +16,14 @@
     "Red Teaming"
   ],
   "wiki_links": [
-    "Machine Learning",
     "Artificial Intelligence",
-    "AIRisk",
-    "Adversarial Machine Learning",
     "Secure AI Deployment",
     "Trustworthy AI",
-    "Cybersecurity",
-    "AIGovernance"
+    "Machine Learning",
+    "AIGovernance",
+    "Adversarial Machine Learning",
+    "AIRisk",
+    "Cybersecurity"
   ],
   "ontology": {
     "term_id": "AI-7015",

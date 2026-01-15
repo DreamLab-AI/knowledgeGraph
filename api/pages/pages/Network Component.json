@@ -12,13 +12,13 @@
     "Block Propagation Time"
   ],
   "wiki_links": [
-    "Validator Node",
-    "Full Node",
-    "Blockchain Entity",
-    "Blockchain Network",
-    "Light Node",
     "Bootstrap Node",
-    "Blockchain Technology"
+    "Full Node",
+    "Blockchain Technology",
+    "Light Node",
+    "Validator Node",
+    "Blockchain Network",
+    "Blockchain Entity"
   ],
   "ontology": {
     "term_id": "BC-0604",

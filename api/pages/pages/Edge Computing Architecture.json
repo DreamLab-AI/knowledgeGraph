@@ -8,10 +8,10 @@
   ],
   "wiki_links": [
     "Low-Latency Experiences",
-    "Cloud Computing",
-    "Distributed System Architecture",
     "metaverse",
-    "5G Networks"
+    "5G Networks",
+    "Distributed System Architecture",
+    "Cloud Computing"
   ],
   "ontology": {
     "term_id": "MV-9890",

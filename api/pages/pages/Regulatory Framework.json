@@ -17,13 +17,13 @@
     "Digital Jurisdiction"
   ],
   "wiki_links": [
-    "Cryptoasset Service Providers",
-    "EU MiCA Regulation",
-    "Compliance Verification",
     "Blockchain",
     "Market Integrity",
-    "Identity Management",
-    "KYC/AML Requirements"
+    "KYC/AML Requirements",
+    "Cryptoasset Service Providers",
+    "Compliance Verification",
+    "EU MiCA Regulation",
+    "Identity Management"
   ],
   "ontology": {
     "term_id": "NGM-7028",

@@ -5,12 +5,12 @@
   "backlinks": [],
   "wiki_links": [
     "Accuracy",
+    "Ensemble Methods",
     "Machine Learning",
-    "Bias",
-    "CatBoost",
-    "XGBoost",
     "LightGBM",
-    "Ensemble Methods"
+    "XGBoost",
+    "CatBoost",
+    "Bias"
   ],
   "ontology": {
     "term_id": "AI-1015",

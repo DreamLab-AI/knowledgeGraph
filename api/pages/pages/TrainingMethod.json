@@ -30,11 +30,11 @@
     "Task Adaptation"
   ],
   "wiki_links": [
-    "DPO",
     "Artificial Intelligence",
-    "ModelArchitecture",
     "MachineLearning",
+    "ModelArchitecture",
     "Model Training",
+    "DPO",
     "NeuralNetworkArchitecture"
   ],
   "ontology": {

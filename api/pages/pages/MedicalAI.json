@@ -14,20 +14,20 @@
     "Healthcare Analytics"
   ],
   "wiki_links": [
-    "Clinical Decision Support",
-    "Computer Vision",
+    "Healthcare Technology",
     "Artificial Intelligence",
-    "Oncology",
+    "Clinical Decision Support",
+    "Medical Imaging Analysis",
+    "Personalized Medicine",
+    "Deep Learning",
+    "Pathology",
     "Radiology",
     "Cardiology",
     "Dermatology",
-    "Pathology",
-    "Medical Imaging Analysis",
-    "NaturalLanguageProcessing",
-    "Healthcare Technology",
-    "Personalized Medicine",
-    "Deep Learning",
-    "Drug Discovery"
+    "Drug Discovery",
+    "Oncology",
+    "Computer Vision",
+    "NaturalLanguageProcessing"
   ],
   "ontology": {
     "term_id": "AI-7012",

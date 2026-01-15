@@ -20,13 +20,13 @@
     "BC-0443-food-safety-blockchain"
   ],
   "wiki_links": [
-    "Provenance Verification",
-    "Smart Contracts",
     "Product Traceability",
-    "IoT Integration",
     "Blockchain",
+    "IoT Integration",
+    "Smart Contracts",
     "Hyperledger Fabric",
-    "Enterprise Blockchain"
+    "Enterprise Blockchain",
+    "Provenance Verification"
   ],
   "ontology": {
     "term_id": "BC-7002",

@@ -6,11 +6,11 @@
     "Spatial Index"
   ],
   "wiki_links": [
-    "Cloud Computing",
-    "Digital Infrastructure",
-    "Network Architecture",
     "Edge Computing",
-    "metaverse"
+    "metaverse",
+    "Digital Infrastructure",
+    "Cloud Computing",
+    "Network Architecture"
   ],
   "ontology": {
     "term_id": "MV-10155",

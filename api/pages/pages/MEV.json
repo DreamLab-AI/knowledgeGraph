@@ -10,14 +10,14 @@
     "Decentralised Web"
   ],
   "wiki_links": [
-    "BlockchainDomain",
-    "Transaction Ordering",
-    "DeFi Ecosystem",
     "Proposer-Builder Separation",
     "Consensus Security",
+    "Mempool",
     "Blockchain",
-    "Front-Running",
-    "Mempool"
+    "DeFi Ecosystem",
+    "Transaction Ordering",
+    "BlockchainDomain",
+    "Front-Running"
   ],
   "ontology": {
     "term_id": "BC-8012",

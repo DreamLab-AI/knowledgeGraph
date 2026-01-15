@@ -6,11 +6,11 @@
     "Decentralized Identity (DID)"
   ],
   "wiki_links": [
-    "Verifiable Credentials",
+    "Data Registry",
     "Blockchain",
-    "Decentralized Identity",
     "metaverse",
-    "Data Registry"
+    "Verifiable Credentials",
+    "Decentralized Identity"
   ],
   "ontology": {
     "term_id": "MV-10101",

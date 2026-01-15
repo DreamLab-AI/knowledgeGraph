@@ -18,18 +18,18 @@
     "Automated Summarization"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
     "Transformer Architecture",
-    "Computational Linguistics",
-    "Large language models",
-    "AttentionMechanism",
+    "Artificial Intelligence",
     "Sentiment Analysis",
-    "Machine Translation",
+    "Computational Linguistics",
     "Word Embeddings",
-    "Text Classification",
     "Tokenization",
     "Deep Learning",
-    "Question Answering"
+    "Text Classification",
+    "Question Answering",
+    "Large language models",
+    "Machine Translation",
+    "AttentionMechanism"
   ],
   "ontology": {
     "term_id": "NGM-7017",

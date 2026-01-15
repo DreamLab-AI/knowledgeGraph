@@ -24,13 +24,13 @@
     "DAO Analytics"
   ],
   "wiki_links": [
-    "Voting Mechanisms",
     "Token Economy",
-    "Smart Contracts",
-    "Platform Governance",
     "Blockchain",
-    "Decentralised Governance",
-    "Decentralised Decision-Making"
+    "Platform Governance",
+    "Smart Contracts",
+    "Voting Mechanisms",
+    "Decentralised Decision-Making",
+    "Decentralised Governance"
   ],
   "ontology": {
     "term_id": "NGM-7016",

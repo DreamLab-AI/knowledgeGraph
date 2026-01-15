@@ -13,10 +13,10 @@
   ],
   "wiki_links": [
     "Artificial Intelligence",
-    "Empirical Evaluation",
-    "Theoretical AI",
     "ArtificialIntelligenceDomain",
-    "Performance Metrics"
+    "Performance Metrics",
+    "Empirical Evaluation",
+    "Theoretical AI"
   ],
   "ontology": {
     "term_id": "AI-7021",

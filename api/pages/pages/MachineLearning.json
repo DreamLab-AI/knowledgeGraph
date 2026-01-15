@@ -39,10 +39,10 @@
   ],
   "wiki_links": [
     "Artificial Intelligence",
-    "ModelArchitecture",
     "TrainingMethod",
-    "Model Training",
     "Deep Learning",
+    "ModelArchitecture",
+    "Model Training",
     "NeuralNetworkArchitecture"
   ],
   "ontology": {

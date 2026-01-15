@@ -289,15 +289,15 @@
     "rb-0100-safety-integrity-level"
   ],
   "wiki_links": [
-    "Industrial Automation",
     "Artificial Intelligence",
-    "Humanoid Robots",
-    "Automation",
-    "Digital Twin",
-    "Smart Manufacturing",
-    "Machine Vision",
     "Industrial Robots",
     "Collaborative Robotics",
+    "Machine Vision",
+    "Industrial Automation",
+    "Automation",
+    "Humanoid Robots",
+    "Smart Manufacturing",
+    "Digital Twin",
     "IoT Sensors"
   ],
   "ontology": {

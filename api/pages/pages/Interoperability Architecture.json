@@ -6,11 +6,11 @@
     "Digital Twin Interop Protocol"
   ],
   "wiki_links": [
-    "Technical Architecture",
-    "metaverse",
     "Interoperability Standard",
-    "Unified Metaverse",
-    "Cross-Platform Integration"
+    "metaverse",
+    "Cross-Platform Integration",
+    "Technical Architecture",
+    "Unified Metaverse"
   ],
   "ontology": {
     "term_id": "MV-9934",

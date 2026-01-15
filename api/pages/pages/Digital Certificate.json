@@ -6,17 +6,17 @@
     "Virtual Notary Service"
   ],
   "wiki_links": [
-    "Certificate Authority",
-    "Public Key Infrastructure",
-    "Trust Establishment",
-    "Identity Verification",
-    "Cryptographic Keys",
-    "Blockchain Authentication",
-    "Verifiable Credentials",
-    "Secure Communication",
-    "metaverse",
     "SSL Certificates",
-    "Digital Security"
+    "Digital Security",
+    "Public Key Infrastructure",
+    "Secure Communication",
+    "Identity Verification",
+    "Trust Establishment",
+    "Certificate Authority",
+    "metaverse",
+    "Cryptographic Keys",
+    "Verifiable Credentials",
+    "Blockchain Authentication"
   ],
   "ontology": {
     "term_id": "MV-9852",

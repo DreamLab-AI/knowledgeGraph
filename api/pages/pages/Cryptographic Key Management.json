@@ -11,12 +11,12 @@
     "Cryptographic Keys"
   ],
   "wiki_links": [
-    "Random Number Generation",
-    "Security Architecture",
+    "Private Key",
     "Cryptographic Keys",
+    "Random Number Generation",
     "Key Derivation Function",
     "Cryptography",
-    "Private Key",
+    "Security Architecture",
     "Digital Signature"
   ],
   "ontology": {

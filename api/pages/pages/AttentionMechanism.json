@@ -17,18 +17,18 @@
     "Multi Head Attention"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "GPT",
     "Transformer Architecture",
+    "Artificial Intelligence",
     "BERT",
-    "Large language models",
-    "Contextual Embeddings",
-    "NaturalLanguageProcessing",
-    "Multi-Head Attention",
-    "DALL-E",
+    "Stable Diffusion",
     "Deep Learning",
+    "Large language models",
     "Self-Attention",
-    "Stable Diffusion"
+    "Contextual Embeddings",
+    "DALL-E",
+    "GPT",
+    "Multi-Head Attention",
+    "NaturalLanguageProcessing"
   ],
   "ontology": {
     "term_id": "NGM-7006",
