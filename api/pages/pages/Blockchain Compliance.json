@@ -20,16 +20,16 @@
     "BC-0480-cbdc-frameworks"
   ],
   "wiki_links": [
-    "Regulatory Technology",
-    "Identity Verification",
+    "Anti-Money Laundering",
+    "Institutional Adoption",
     "Blockchain Analytics",
-    "Blockchain",
+    "Identity Verification",
     "Know Your Customer",
     "Financial Regulation",
-    "Anti-Money Laundering",
-    "Decentralized Identity",
     "Regulatory Compliance",
-    "Institutional Adoption"
+    "Decentralized Identity",
+    "Blockchain",
+    "Regulatory Technology"
   ],
   "ontology": {
     "term_id": "BC-7001",

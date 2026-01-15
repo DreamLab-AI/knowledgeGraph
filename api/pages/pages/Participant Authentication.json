@@ -6,12 +6,12 @@
     "Digital Ritual"
   ],
   "wiki_links": [
-    "metaverse",
     "Digital Identity",
-    "Secure Virtual Events",
-    "Biometric Authentication",
+    "metaverse",
     "Access Control",
-    "Identity Management"
+    "Identity Management",
+    "Secure Virtual Events",
+    "Biometric Authentication"
   ],
   "ontology": {
     "term_id": "MV-9994",

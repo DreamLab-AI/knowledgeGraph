@@ -7,12 +7,12 @@
     "Conversion Pipeline"
   ],
   "wiki_links": [
-    "API Contracts",
-    "Schema Evolution",
     "metaverse",
+    "Data Governance",
     "Event Streaming",
+    "Schema Evolution",
     "Data Management",
-    "Data Governance"
+    "API Contracts"
   ],
   "ontology": {
     "term_id": "MV-10028",

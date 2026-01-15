@@ -18,17 +18,17 @@
     "Automated Summarization"
   ],
   "wiki_links": [
-    "Transformer Architecture",
-    "Artificial Intelligence",
-    "Sentiment Analysis",
-    "Computational Linguistics",
-    "Word Embeddings",
-    "Tokenization",
     "Deep Learning",
-    "Text Classification",
-    "Question Answering",
-    "Large language models",
+    "Computational Linguistics",
+    "Sentiment Analysis",
     "Machine Translation",
+    "Question Answering",
+    "Artificial Intelligence",
+    "Large language models",
+    "Word Embeddings",
+    "Transformer Architecture",
+    "Text Classification",
+    "Tokenization",
     "AttentionMechanism"
   ],
   "ontology": {

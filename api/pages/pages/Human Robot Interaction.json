@@ -5,11 +5,11 @@
   "backlinks": [],
   "wiki_links": [
     "Teleoperation",
-    "Robot Safety",
-    "Intent Recognition",
     "Collaborative Robot",
+    "Safety Zone",
+    "Robot Safety",
     "Robotics Systems",
-    "Safety Zone"
+    "Intent Recognition"
   ],
   "ontology": {
     "term_id": "RB-0605",

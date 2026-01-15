@@ -19,11 +19,11 @@
     "Autoencoder"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "TrainingMethod",
-    "MachineLearning",
     "Deep Learning",
-    "ModelArchitecture"
+    "TrainingMethod",
+    "ModelArchitecture",
+    "MachineLearning",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-7013",

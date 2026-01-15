@@ -7,12 +7,12 @@
   ],
   "wiki_links": [
     "Rollup",
-    "Blockchain Technology",
-    "State Channel",
     "Sharding",
+    "State Channel",
     "Layer 2",
     "Blockchain Network",
-    "Blockchain Entity"
+    "Blockchain Entity",
+    "Blockchain Technology"
   ],
   "ontology": {
     "term_id": "BC-0602",

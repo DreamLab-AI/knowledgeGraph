@@ -12,17 +12,17 @@
   ],
   "wiki_links": [
     "Data Catalogue",
-    "Data Discovery",
-    "Semantic Web",
-    "Knowledge Graph",
-    "FAIR Data Principles",
-    "Data Standard",
-    "Ontology",
-    "Data Interoperability",
-    "Dublin Core",
     "Schema.org",
+    "Ontology",
     "JSON-LD",
-    "Data Governance"
+    "Dublin Core",
+    "Data Governance",
+    "Semantic Web",
+    "Data Discovery",
+    "Knowledge Graph",
+    "Data Interoperability",
+    "Data Standard",
+    "FAIR Data Principles"
   ],
   "ontology": {
     "term_id": "NGM-8001",

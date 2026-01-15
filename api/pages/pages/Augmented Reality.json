@@ -26,18 +26,18 @@
     "Xr Accessibility Standards"
   ],
   "wiki_links": [
-    "Contextual Information Display",
-    "Spatial Computing",
+    "Virtual Reality",
     "Remote Assistance",
-    "Extended Reality",
-    "Mixed Reality",
-    "Metaverse",
+    "Computer Vision",
+    "Contextual Information Display",
+    "Microsoft HoloLens",
+    "Meta Ray-Ban Smart Glasses",
     "Apple Vision Pro",
     "Immersive Experiences",
-    "Meta Ray-Ban Smart Glasses",
-    "Microsoft HoloLens",
-    "Virtual Reality",
-    "Computer Vision"
+    "Metaverse",
+    "Extended Reality",
+    "Spatial Computing",
+    "Mixed Reality"
   ],
   "ontology": {
     "term_id": "NGM-7031",

@@ -17,13 +17,13 @@
     "BC-0427-hyperledger-besu"
   ],
   "wiki_links": [
-    "Permissioned Networks",
-    "Blockchain",
-    "Supply Chain Blockchain",
-    "Smart Contracts",
-    "Business Process Automation",
     "Hyperledger Fabric",
-    "Regulatory Compliance"
+    "Permissioned Networks",
+    "Business Process Automation",
+    "Supply Chain Blockchain",
+    "Regulatory Compliance",
+    "Blockchain",
+    "Smart Contracts"
   ],
   "ontology": {
     "term_id": "BC-7007",

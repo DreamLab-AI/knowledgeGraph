@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "Collaboration Tools",
-    "TelecollaborationDomain",
-    "Slack",
     "Discord",
-    "Asynchronous Collaboration"
+    "Asynchronous Collaboration",
+    "Slack",
+    "TelecollaborationDomain"
   ],
   "ontology": {
     "term_id": "TC-9001",

@@ -18,13 +18,13 @@
     "Decentralised Web"
   ],
   "wiki_links": [
-    "Symmetric Encryption",
-    "Random Number Generation",
-    "Key Derivation Function",
-    "Asymmetric Encryption",
-    "Cryptographic Key Management",
     "Cryptography",
-    "Digital Signature"
+    "Asymmetric Encryption",
+    "Random Number Generation",
+    "Symmetric Encryption",
+    "Digital Signature",
+    "Key Derivation Function",
+    "Cryptographic Key Management"
   ],
   "ontology": {
     "term_id": "BC-7006",

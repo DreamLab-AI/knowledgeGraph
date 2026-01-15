@@ -18,21 +18,21 @@
     "Performance Optimization"
   ],
   "wiki_links": [
-    "CAP Theorem",
-    "Network Protocol",
-    "ComputationAndIntelligenceDomain",
-    "Parallel Processing",
     "InfrastructureDomain",
-    "Consensus Algorithms",
-    "Database System",
-    "Client-Server Architecture",
-    "Computing Infrastructure",
-    "Peer-to-Peer Networks",
-    "Horizontal Scaling",
-    "Microservices Architecture",
+    "ComputationAndIntelligenceDomain",
     "Fault Tolerance",
+    "Client-Server Architecture",
+    "Microservices Architecture",
+    "Peer-to-Peer Networks",
+    "Parallel Processing",
+    "Computing Infrastructure",
+    "Consensus Algorithms",
+    "Horizontal Scaling",
     "Cloud Infrastructure",
-    "Technology Domain"
+    "CAP Theorem",
+    "Technology Domain",
+    "Network Protocol",
+    "Database System"
   ],
   "ontology": {
     "term_id": "NGM-7034",

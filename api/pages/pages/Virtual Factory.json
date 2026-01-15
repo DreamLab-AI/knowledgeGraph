@@ -6,11 +6,11 @@
     "Industrial Metaverse"
   ],
   "wiki_links": [
-    "metaverse",
     "Virtual Commissioning",
+    "metaverse",
+    "Digital Twin",
     "Industry 4.0",
-    "Smart Manufacturing",
-    "Digital Twin"
+    "Smart Manufacturing"
   ],
   "ontology": {
     "term_id": "MV-10124",

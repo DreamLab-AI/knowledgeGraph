@@ -25,22 +25,22 @@
     "AIDomain"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "TC-0001-telecollaboration-domain",
-    "Virtual Teams",
     "Metaverse Technology",
-    "Blockchain Technology",
-    "Asynchronous Collaboration",
-    "Telecollaboration",
-    "Shared Workspace",
     "Video Conferencing",
+    "Telecollaboration",
     "Communication Protocol",
-    "Telepresence",
-    "Synchronous Collaboration",
+    "Shared Workspace",
     "TELE-002-telecollaboration",
     "Collaborative Document Editing",
+    "Robotics Systems",
+    "TC-0001-telecollaboration-domain",
+    "Asynchronous Collaboration",
+    "Virtual Teams",
     "Technology Domain",
-    "Robotics Systems"
+    "Telepresence",
+    "Blockchain Technology",
+    "Synchronous Collaboration",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "TC-0001",

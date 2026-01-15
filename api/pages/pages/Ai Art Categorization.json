@@ -4,13 +4,13 @@
   "content": "- ### OntologyBlock\n  id:: ai-art-categorization-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9761\n\t- source-domain:: mv\n\t- preferred-term:: Ai Art Categorization\n\t- status:: active\n\t- definition:: AI Art Categorization encompasses taxonomies, classification systems, and machine learning methods for organizing, labeling, and evaluating AI-generated and AI-assisted artworks based on creation methodology, style, medium, aesthetic properties, and the degree of autonomous system involvement in the creative process.\n\t- owl:class:: mv:AiArtCategorization\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Art Classification]]\n\t- enables:: [[Art Curation]], [[Style Analysis]], [[Authenticity Detection]]\n\t- requires:: [[Deep Learning]], [[Computer Vision]], [[Art Historical Knowledge]]\n\t- #### Relationships\n\t  id:: ai-art-categorization-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Methodology-Based Classification**: Distinguishing stroke-based methods and learning-based methods (style transformation vs. reconstruction)\n- **Deep Learning Classification**: CNN models distinguishing art styles using color patterns, textures, and compositions\n- **Generative Model Taxonomy**: Classification by VAEs, GANs, transformers, and diffusion models\n- **Human vs. AI Detection**: Neural networks (VGG-19, ResNet-50, ViT) distinguishing human-created from AI-generated art",
   "backlinks": [],
   "wiki_links": [
-    "Art Curation",
-    "metaverse",
-    "Art Historical Knowledge",
-    "Style Analysis",
-    "Deep Learning",
-    "Art Classification",
     "Computer Vision",
+    "Deep Learning",
+    "Art Historical Knowledge",
+    "metaverse",
+    "Art Curation",
+    "Style Analysis",
+    "Art Classification",
     "Authenticity Detection"
   ],
   "ontology": {

@@ -7,13 +7,13 @@
     "Symbolic AI"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "Knowledge Base",
-    "Inference Engine",
     "Rule-Based Systems",
-    "Fuzzy Logic",
+    "Knowledge Representation",
     "Decision Support",
-    "Knowledge Representation"
+    "Knowledge Base",
+    "Fuzzy Logic",
+    "Inference Engine",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-1002",

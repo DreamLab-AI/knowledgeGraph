@@ -5,12 +5,12 @@
   "backlinks": [],
   "wiki_links": [
     "Spatial Relationships",
-    "Spatial Data Structure",
-    "3D Scene Reconstruction",
-    "Context-Aware AR",
-    "metaverse",
     "Object Detection",
+    "metaverse",
+    "3D Scene Reconstruction",
     "Retargetable AR Experiences",
+    "Context-Aware AR",
+    "Spatial Data Structure",
     "Semantic Scene Understanding"
   ],
   "ontology": {

@@ -8,19 +8,19 @@
     "Runes and Glyphs"
   ],
   "wiki_links": [
-    "Ethereum",
-    "Bitcoin",
-    "Litecoin",
-    "Blockchain",
-    "Payment Channel",
-    "Lightning Network",
     "Cross-Chain Interoperability",
-    "Cross-Chain Bridge",
-    "Polkadot",
     "Decentralized Exchange",
-    "Hash Function",
+    "Payment Channel",
     "Hash Time-Locked Contract",
-    "ERC-20 Token"
+    "Lightning Network",
+    "Polkadot",
+    "Hash Function",
+    "ERC-20 Token",
+    "Ethereum",
+    "Litecoin",
+    "Bitcoin",
+    "Cross-Chain Bridge",
+    "Blockchain"
   ],
   "ontology": {
     "term_id": "BC-8002",

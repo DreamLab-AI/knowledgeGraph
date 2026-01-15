@@ -12,12 +12,12 @@
     "BC-0496-energy-consumption-blockchain"
   ],
   "wiki_links": [
-    "Proof-of-Work",
-    "ESG Compliance",
-    "Blockchain",
-    "Proof-of-Stake",
     "Carbon Credit",
-    "Green Finance"
+    "ESG Compliance",
+    "Green Finance",
+    "Proof-of-Stake",
+    "Proof-of-Work",
+    "Blockchain"
   ],
   "ontology": {
     "term_id": "BC-7008",

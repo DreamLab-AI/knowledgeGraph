@@ -5,13 +5,13 @@
   "backlinks": [],
   "wiki_links": [
     "Cryptographic Signing",
-    "Trust Infrastructure",
-    "Metadata Standards",
     "metaverse",
+    "Content Verification",
     "Deepfake Detection",
     "Content Authenticity",
     "Digital Watermarking",
-    "Content Verification"
+    "Metadata Standards",
+    "Trust Infrastructure"
   ],
   "ontology": {
     "term_id": "MV-9763",

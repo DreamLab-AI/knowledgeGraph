@@ -8,17 +8,17 @@
     "Camera Parameters"
   ],
   "wiki_links": [
-    "Pattern Definition",
-    "Color Accuracy",
     "Camera Calibration",
+    "Computer Vision",
+    "Precision Manufacturing",
+    "Flatness Control",
+    "Pattern Definition",
     "metaverse",
     "Camera Parameters",
     "Photogrammetry",
+    "Color Accuracy",
     "Lens Distortion Correction",
-    "Flatness Control",
-    "Computer Vision",
-    "Reference Standard",
-    "Precision Manufacturing"
+    "Reference Standard"
   ],
   "ontology": {
     "term_id": "MV-9805",

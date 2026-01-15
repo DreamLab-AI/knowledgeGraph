@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "Camera Systems",
-    "Spatial Computing",
-    "metaverse",
     "Display Hardware",
-    "Mixed Reality",
-    "Information Display",
-    "AR Markers",
-    "SLAM Technology",
-    "Interactive Guidance",
+    "metaverse",
     "Augmented Reality",
-    "Spatial Annotation"
+    "Interactive Guidance",
+    "SLAM Technology",
+    "Spatial Annotation",
+    "AR Markers",
+    "Mixed Reality",
+    "Spatial Computing",
+    "Information Display"
   ],
   "ontology": {
     "term_id": "MV-9854",

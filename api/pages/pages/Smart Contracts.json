@@ -57,16 +57,16 @@
     "Decentralised Web"
   ],
   "wiki_links": [
-    "Digital Signature",
-    "Ethereum",
-    "Blockchain",
-    "Automated Market Maker",
-    "Decentralized Application",
-    "Decentralized Finance",
-    "Tokenization",
     "Distributed Computing",
+    "Decentralized Finance",
+    "Distributed Systems",
+    "Digital Signature",
     "Cryptographic Hash Function",
-    "Distributed Systems"
+    "Ethereum",
+    "Decentralized Application",
+    "Automated Market Maker",
+    "Tokenization",
+    "Blockchain"
   ],
   "ontology": {
     "term_id": "BC-7013",

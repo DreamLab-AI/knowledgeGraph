@@ -6,11 +6,11 @@
     "ETSI_Domain_Data_Mgmt___AI"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "metaverse",
-    "Data Management",
     "Machine Learning",
-    "Data Governance"
+    "metaverse",
+    "Data Governance",
+    "Data Management",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "MV-10083",

@@ -18,22 +18,22 @@
     "Presence"
   ],
   "wiki_links": [
-    "UserModeling",
-    "InteractionPatterns",
-    "UserInterfaceDesign",
     "TechnologyDomain",
+    "PervasiveComputing",
+    "NaturalLanguageInterface",
     "VoiceInteraction",
-    "HCIO",
-    "UXON",
+    "GestureRecognition",
     "AccessibilityDomain",
     "HumanComputerInteraction",
-    "NaturalLanguageInterface",
-    "UserExperience",
-    "AdaptiveInterfaces",
-    "PervasiveComputing",
-    "GestureRecognition",
     "HapticInteraction",
-    "HCI-ON"
+    "UserInterfaceDesign",
+    "AdaptiveInterfaces",
+    "HCI-ON",
+    "UXON",
+    "InteractionPatterns",
+    "UserModeling",
+    "UserExperience",
+    "HCIO"
   ],
   "ontology": {
     "term_id": "AI-7010",

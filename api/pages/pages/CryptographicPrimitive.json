@@ -16,13 +16,13 @@
     "Zero-Knowledge Proof"
   ],
   "wiki_links": [
-    "Symmetric Encryption",
-    "Blockchain",
-    "Asymmetric Encryption",
     "Cryptography",
     "Hash Function",
+    "Asymmetric Encryption",
     "Cryptographic Protocol",
-    "Digital Signature"
+    "Symmetric Encryption",
+    "Digital Signature",
+    "Blockchain"
   ],
   "ontology": {
     "term_id": "BC-7004",

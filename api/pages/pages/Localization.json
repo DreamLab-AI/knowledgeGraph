@@ -9,10 +9,10 @@
   ],
   "wiki_links": [
     "GPS Localization",
-    "SLAM",
     "Sensor Fusion",
-    "Odometry",
     "Robotics Systems",
+    "SLAM",
+    "Odometry",
     "Motion Planning"
   ],
   "ontology": {

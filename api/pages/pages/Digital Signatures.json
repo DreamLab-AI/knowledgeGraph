@@ -9,17 +9,17 @@
     "SHA-256"
   ],
   "wiki_links": [
-    "Public Key Infrastructure",
-    "Private Key",
-    "metaverse",
-    "Smart Contracts",
     "Non-Repudiation",
-    "Authentication",
-    "Blockchain Security",
-    "Data Integrity",
-    "Signature Algorithm",
     "Cryptography",
-    "Hash Function"
+    "Hash Function",
+    "Blockchain Security",
+    "metaverse",
+    "Signature Algorithm",
+    "Private Key",
+    "Authentication",
+    "Public Key Infrastructure",
+    "Data Integrity",
+    "Smart Contracts"
   ],
   "ontology": {
     "term_id": "MV-9872",

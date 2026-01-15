@@ -19,11 +19,11 @@
     "Federated Edge Learning (AI-0437)"
   ],
   "wiki_links": [
-    "AI Capability",
-    "Artificial Intelligence",
-    "ArtificialIntelligenceDomain",
     "Industry Vertical",
-    "Application Domain"
+    "AI Capability",
+    "Application Domain",
+    "ArtificialIntelligenceDomain",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-7006",

@@ -7,14 +7,14 @@
   ],
   "wiki_links": [
     "Encoding Rules",
-    "metaverse",
-    "Data Format",
     "Efficient Storage",
-    "Protocol Buffers",
-    "Parser Implementation",
-    "Network Transmission",
-    "MessagePack",
     "Schema Definition",
+    "Parser Implementation",
+    "metaverse",
+    "Protocol Buffers",
+    "Data Format",
+    "MessagePack",
+    "Network Transmission",
     "Data Serialization"
   ],
   "ontology": {

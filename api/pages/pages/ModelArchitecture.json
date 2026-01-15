@@ -132,11 +132,11 @@
     "Generative AI"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
+    "NeuralNetworkArchitecture",
+    "Deep Learning",
     "TrainingMethod",
     "MachineLearning",
-    "Deep Learning",
-    "NeuralNetworkArchitecture"
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-7000",

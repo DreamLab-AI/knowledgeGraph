@@ -8,11 +8,11 @@
   ],
   "wiki_links": [
     "System Architecture",
-    "metaverse",
-    "Microservices",
-    "High Availability",
     "Cloud Computing",
-    "Distributed Systems"
+    "metaverse",
+    "High Availability",
+    "Distributed Systems",
+    "Microservices"
   ],
   "ontology": {
     "term_id": "MV-10027",

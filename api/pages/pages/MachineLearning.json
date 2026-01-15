@@ -38,12 +38,12 @@
     "Generative AI"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "TrainingMethod",
-    "Deep Learning",
-    "ModelArchitecture",
+    "NeuralNetworkArchitecture",
     "Model Training",
-    "NeuralNetworkArchitecture"
+    "Deep Learning",
+    "TrainingMethod",
+    "ModelArchitecture",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-7003",
