@@ -9,16 +9,16 @@
   ],
   "wiki_links": [
     "Display Technology",
-    "AR Glasses",
-    "Immersive Visualization",
-    "Optical Systems",
-    "Hardware",
-    "Spatial Computing",
     "Mixed Reality",
+    "Optical Systems",
+    "VR Headset",
+    "AR Glasses",
+    "HMD",
+    "Spatial Computing",
+    "Immersive Visualization",
     "Graphics Processing",
     "metaverse",
-    "VR Headset",
-    "HMD"
+    "Hardware"
   ],
   "ontology": {
     "term_id": "MV-9882",

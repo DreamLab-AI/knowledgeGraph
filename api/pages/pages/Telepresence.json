@@ -11,11 +11,11 @@
     "Audio Parameters"
   ],
   "wiki_links": [
-    "Telecollaboration",
-    "Immersive Communication",
-    "Robot Telepresence",
     "Holographic Telepresence",
-    "Volumetric Capture"
+    "Immersive Communication",
+    "Volumetric Capture",
+    "Telecollaboration",
+    "Robot Telepresence"
   ],
   "ontology": {
     "term_id": "TC-0601",

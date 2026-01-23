@@ -6,16 +6,16 @@
     "glTF (3D File Format)"
   ],
   "wiki_links": [
-    "Parser Implementation",
-    "Protocol Buffers",
-    "Encoding Rules",
     "MessagePack",
     "Data Format",
-    "metaverse",
-    "Network Transmission",
-    "Efficient Storage",
+    "Protocol Buffers",
     "Schema Definition",
-    "Data Serialization"
+    "Parser Implementation",
+    "Network Transmission",
+    "Data Serialization",
+    "Encoding Rules",
+    "metaverse",
+    "Efficient Storage"
   ],
   "ontology": {
     "term_id": "MV-9800",

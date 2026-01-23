@@ -6,14 +6,14 @@
     "ETSI_Domain_Application___Creative"
   ],
   "wiki_links": [
-    "3D Modeling",
-    "3D Character Animation",
-    "GPU Rendering",
-    "Digital Content Creation Tools",
     "Motion Graphics",
+    "Visual Effects",
     "Rigging Systems",
     "metaverse",
-    "Visual Effects"
+    "GPU Rendering",
+    "3D Character Animation",
+    "3D Modeling",
+    "Digital Content Creation Tools"
   ],
   "ontology": {
     "term_id": "MV-9767",

@@ -10,14 +10,14 @@
     "Cryptographic Keys"
   ],
   "wiki_links": [
-    "Asymmetric Encryption",
-    "Verifiable Random Function",
-    "Hash Function",
-    "Key Derivation Function",
-    "Zero-Knowledge Proof",
     "Blockchain",
-    "Commitment Scheme",
+    "Verifiable Random Function",
+    "Key Derivation Function",
+    "Hash Function",
     "Cryptography",
+    "Asymmetric Encryption",
+    "Zero-Knowledge Proof",
+    "Commitment Scheme",
     "Cryptographic Protocol"
   ],
   "ontology": {

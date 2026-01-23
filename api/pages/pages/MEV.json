@@ -16,13 +16,13 @@
     "Decentralized Finance"
   ],
   "wiki_links": [
-    "Proposer-Builder Separation",
-    "Front-Running",
-    "Mempool",
     "Blockchain",
-    "Consensus Security",
     "Transaction Ordering",
+    "Consensus Security",
+    "Mempool",
     "DeFi Ecosystem",
+    "Front-Running",
+    "Proposer-Builder Separation",
     "BlockchainDomain"
   ],
   "ontology": {

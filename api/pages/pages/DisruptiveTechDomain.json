@@ -7,14 +7,14 @@
     "Homomorphic Encryption for Machine Learning"
   ],
   "wiki_links": [
-    "AIApplicationsDomain",
-    "MetaverseDomain",
-    "Technology Forecasting",
-    "Innovation Tracking",
-    "RoboticsDomain",
     "ConceptualLayer",
-    "CoreOntology",
+    "Technology Forecasting",
+    "MetaverseDomain",
+    "AIApplicationsDomain",
+    "Innovation Tracking",
     "Domain",
+    "RoboticsDomain",
+    "CoreOntology",
     "BlockchainDomain"
   ],
   "ontology": {

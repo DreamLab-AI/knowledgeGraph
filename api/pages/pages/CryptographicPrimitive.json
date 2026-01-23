@@ -54,13 +54,13 @@
     "BC-0028-sha-256"
   ],
   "wiki_links": [
-    "Asymmetric Encryption",
-    "Digital Signature",
-    "Hash Function",
     "Symmetric Encryption",
     "Blockchain",
+    "Hash Function",
     "Cryptography",
-    "Cryptographic Protocol"
+    "Asymmetric Encryption",
+    "Cryptographic Protocol",
+    "Digital Signature"
   ],
   "ontology": {
     "term_id": "BC-7004",

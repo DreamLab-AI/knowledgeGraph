@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: Xr Accessibility Guideline\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-10168\n  - preferred-term:: Xr Accessibility Guideline\n  - source-domain:: mv\n  - owl:class:: mv:XrAccessibilityGuideline\n  - status:: deprecated\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]\n\n### DEPRECATED\n### DEPRECATED\n**This entity has been merged into [[XR Accessibility Guideline]]**\n**Status**: deprecated\n**Merge Date**: 2025-11-23\n**Reason**: Duplicate entity consolidation",
   "backlinks": [],
   "wiki_links": [
-    "XR Accessibility Guideline",
-    "Metaverse"
+    "Metaverse",
+    "XR Accessibility Guideline"
   ],
   "ontology": {
     "term_id": "MV-10168",

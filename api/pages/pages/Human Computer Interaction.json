@@ -6,12 +6,12 @@
     "Spatial Interaction"
   ],
   "wiki_links": [
-    "Metaverse Technology",
-    "Voice Interface",
-    "Haptic Feedback",
-    "Spatial Computing",
     "Avatar System",
-    "Gesture Recognition"
+    "Metaverse Technology",
+    "Haptic Feedback",
+    "Gesture Recognition",
+    "Spatial Computing",
+    "Voice Interface"
   ],
   "ontology": {
     "term_id": "MV-0601",

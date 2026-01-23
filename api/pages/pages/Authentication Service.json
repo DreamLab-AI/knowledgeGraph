@@ -16,15 +16,15 @@
   ],
   "wiki_links": [
     "Access Control",
-    "Identity Management",
-    "Identity Verification",
-    "Cross-Platform Identity",
-    "Credential Validation",
-    "Single Sign-On",
-    "Security Service",
     "Authorisation",
+    "Cross-Platform Identity",
+    "Identity Verification",
     "Core Technology",
-    "Session Management"
+    "Session Management",
+    "Identity Management",
+    "Security Service",
+    "Credential Validation",
+    "Single Sign-On"
   ],
   "ontology": {
     "term_id": "NGM-7010",

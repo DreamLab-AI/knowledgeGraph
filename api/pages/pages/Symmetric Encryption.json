@@ -10,15 +10,15 @@
     "Cryptographic Keys"
   ],
   "wiki_links": [
-    "Asymmetric Encryption",
-    "Random Number Generation",
-    "Hash Function",
-    "Digital Signature",
     "Hybrid Encryption",
-    "Key Derivation Function",
+    "Random Number Generation",
     "Blockchain",
+    "Key Derivation Function",
+    "Hash Function",
+    "Cryptography",
+    "Asymmetric Encryption",
     "Confidential Transactions",
-    "Cryptography"
+    "Digital Signature"
   ],
   "ontology": {
     "term_id": "BC-8018",

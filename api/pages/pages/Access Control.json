@@ -30,16 +30,16 @@
     "ETSI_Domain_Data_Management___Culture"
   ],
   "wiki_links": [
+    "Authorisation",
+    "Compliance",
+    "Core Technology",
+    "Authentication Service",
+    "Data Protection",
     "Identity Management",
     "Permission Management",
     "System Security",
     "Security Mechanism",
-    "Compliance",
-    "Security Policy",
-    "Authorisation",
-    "Data Protection",
-    "Authentication Service",
-    "Core Technology"
+    "Security Policy"
   ],
   "ontology": {
     "term_id": "NGM-7003",

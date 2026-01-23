@@ -9,11 +9,11 @@
     "Decentralized Finance"
   ],
   "wiki_links": [
-    "Ethereum Standard",
-    "ERC-4337",
-    "Ethereum",
     "Blockchain",
-    "BlockchainDomain"
+    "Ethereum Standard",
+    "Ethereum",
+    "BlockchainDomain",
+    "ERC-4337"
   ],
   "ontology": {
     "term_id": "BC-9005",

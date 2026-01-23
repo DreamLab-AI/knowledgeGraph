@@ -76,20 +76,20 @@
     "Acceleration"
   ],
   "wiki_links": [
-    "EmbeddedSystems",
     "SensorFusion",
-    "MotionPlanning",
+    "IndustrialAutomation",
     "HumanRobotInteraction",
-    "AutonomousRobotics",
-    "RobotPerception",
-    "ComputerVision",
-    "ControlSystems",
-    "IEEE1872.2",
-    "MachineLearning",
-    "IEEE1872",
     "TechnologyDomain",
     "ArtificialIntelligence",
-    "IndustrialAutomation"
+    "IEEE1872",
+    "MotionPlanning",
+    "IEEE1872.2",
+    "AutonomousRobotics",
+    "ControlSystems",
+    "EmbeddedSystems",
+    "ComputerVision",
+    "MachineLearning",
+    "RobotPerception"
   ],
   "ontology": {
     "term_id": "RB-7001",

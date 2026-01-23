@@ -8,11 +8,11 @@
     "Metaverse Architecture Stack"
   ],
   "wiki_links": [
+    "Low-Latency Experiences",
     "Cloud Computing",
     "5G Networks",
-    "Low-Latency Experiences",
-    "metaverse",
-    "Distributed System Architecture"
+    "Distributed System Architecture",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9890",

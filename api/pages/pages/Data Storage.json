@@ -13,15 +13,15 @@
   ],
   "wiki_links": [
     "Data Persistence",
+    "Data Redundancy",
     "Infrastructure Component",
     "Information Retrieval",
-    "Storage Architecture",
-    "System Architecture",
-    "Backup and Recovery",
-    "Data Management",
-    "Data Protection",
     "Core Technology",
-    "Data Redundancy"
+    "Data Management",
+    "System Architecture",
+    "Data Protection",
+    "Backup and Recovery",
+    "Storage Architecture"
   ],
   "ontology": {
     "term_id": "NGM-7021",

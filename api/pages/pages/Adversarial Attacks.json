@@ -10,12 +10,12 @@
     "Loss-Function"
   ],
   "wiki_links": [
-    "Knowledge of Target Model",
-    "AI Security Threats",
-    "System Manipulation",
     "Model Evasion",
+    "Crafted Perturbations",
+    "System Manipulation",
+    "AI Security Threats",
     "metaverse",
-    "Crafted Perturbations"
+    "Knowledge of Target Model"
   ],
   "ontology": {
     "term_id": "MV-9760",

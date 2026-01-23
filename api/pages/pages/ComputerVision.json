@@ -12,10 +12,10 @@
     "ManipulatorArm"
   ],
   "wiki_links": [
-    "Deep Learning",
-    "ComputerVisionTask",
-    "MachineLearning",
     "NeuralNetworkArchitecture",
+    "MachineLearning",
+    "ComputerVisionTask",
+    "Deep Learning",
     "Artificial Intelligence"
   ],
   "ontology": {

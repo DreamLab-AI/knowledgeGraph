@@ -16,12 +16,12 @@
     "Character Model"
   ],
   "wiki_links": [
-    "Input Processing",
     "Virtual Character System",
     "3D Rendering Engine",
     "User Representation",
-    "Social Interaction",
+    "Input Processing",
     "Embodied Presence",
+    "Social Interaction",
     "Animation Controller"
   ],
   "ontology": {

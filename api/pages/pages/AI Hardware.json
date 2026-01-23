@@ -14,15 +14,15 @@
     "Tensor Processing Unit"
   ],
   "wiki_links": [
-    "AI Infrastructure",
-    "Machine Learning",
     "Large Language Models",
-    "Deep Learning",
     "Computer Hardware",
+    "Machine Learning",
+    "AI Infrastructure",
     "AI Training",
     "High-Performance Computing",
-    "Artificial Intelligence",
-    "Neural Networks"
+    "Neural Networks",
+    "Deep Learning",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-7020",
