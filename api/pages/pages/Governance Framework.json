@@ -24,16 +24,16 @@
   ],
   "wiki_links": [
     "Legal Framework",
-    "Decision Rights",
-    "Risk Management",
-    "Core Technology",
     "Policy Enforcement",
-    "Strategic Alignment",
-    "Performance Management",
     "Organisational Framework",
-    "Compliance",
+    "Risk Management",
     "Technical Standard",
-    "Accountability"
+    "Performance Management",
+    "Compliance",
+    "Strategic Alignment",
+    "Decision Rights",
+    "Accountability",
+    "Core Technology"
   ],
   "ontology": {
     "term_id": "NGM-7023",

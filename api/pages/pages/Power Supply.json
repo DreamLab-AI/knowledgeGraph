@@ -12,19 +12,19 @@
     "Biometric Binding Mechanism"
   ],
   "wiki_links": [
-    "System Reliability",
-    "InfrastructureDomain",
-    "Storage Devices",
-    "Technology Domain",
     "Server Hardware",
-    "Graphics Cards",
     "Computing Infrastructure",
-    "Data Center Infrastructure",
-    "Computer Systems",
     "80 PLUS Certification",
-    "Energy Efficiency Standards",
+    "Data Center Infrastructure",
+    "System Reliability",
+    "Graphics Cards",
     "Motherboard",
-    "Continuous Operation"
+    "Technology Domain",
+    "Continuous Operation",
+    "Storage Devices",
+    "Energy Efficiency Standards",
+    "Computer Systems",
+    "InfrastructureDomain"
   ],
   "ontology": {
     "term_id": "NGM-7026",

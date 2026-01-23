@@ -7,12 +7,12 @@
     "Mining Pool"
   ],
   "wiki_links": [
-    "Consensus Mechanisms",
-    "Network Participation",
-    "Staking Rewards",
     "Validator Incentives",
+    "Consensus Mechanisms",
     "metaverse",
-    "Tokenomics"
+    "Tokenomics",
+    "Network Participation",
+    "Staking Rewards"
   ],
   "ontology": {
     "term_id": "MV-10023",

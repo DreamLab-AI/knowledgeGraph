@@ -12,12 +12,12 @@
   ],
   "wiki_links": [
     "Random Number Generation",
-    "Security Architecture",
-    "Private Key",
-    "Cryptographic Keys",
-    "Key Derivation Function",
     "Digital Signature",
-    "Cryptography"
+    "Key Derivation Function",
+    "Cryptographic Keys",
+    "Private Key",
+    "Cryptography",
+    "Security Architecture"
   ],
   "ontology": {
     "term_id": "BC-7011",

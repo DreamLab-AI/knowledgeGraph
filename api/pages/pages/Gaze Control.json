@@ -4,10 +4,10 @@
   "content": "- ### OntologyBlock\n  id:: RB-9007\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9007\n\t- source-domain:: rb\n\t- preferred-term:: Gaze Control\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Robot eye and head movement control to establish and maintain visual attention, conveying intent and social cues during human-robot interaction.\n\t- source:: [[HRI]], [[Social Robotics]]\n\t- maturity:: emerging\n\t- owl:class:: rb:GazeControl\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[RoboticsDomain]]\n\t- is-subclass-of:: [[Robotics]]",
   "backlinks": [],
   "wiki_links": [
-    "Robotics",
-    "RoboticsDomain",
+    "Social Robotics",
     "HRI",
-    "Social Robotics"
+    "RoboticsDomain",
+    "Robotics"
   ],
   "ontology": {
     "term_id": "RB-9007",

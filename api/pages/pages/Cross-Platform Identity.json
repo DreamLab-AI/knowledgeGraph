@@ -14,16 +14,16 @@
     "Trust Framework Policy"
   ],
   "wiki_links": [
-    "Federated Access",
-    "Identity Federation",
     "Access Control",
-    "Trust Relationships",
-    "Core Technology",
-    "Authentication Service",
-    "Single Sign-On",
-    "System Interoperability",
+    "Identity Management",
     "User Experience",
-    "Identity Management"
+    "System Interoperability",
+    "Federated Access",
+    "Single Sign-On",
+    "Trust Relationships",
+    "Identity Federation",
+    "Authentication Service",
+    "Core Technology"
   ],
   "ontology": {
     "term_id": "NGM-7020",

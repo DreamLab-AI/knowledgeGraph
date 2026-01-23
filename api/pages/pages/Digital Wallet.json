@@ -30,15 +30,15 @@
     "Token Custody Service"
   ],
   "wiki_links": [
-    "Hardware Wallet",
-    "Transaction Signing",
-    "Blockchain Network",
     "Cryptographic Security",
-    "Cryptocurrency Storage",
-    "Private Key",
     "Web3",
-    "DeFi Access",
+    "Cryptocurrency Storage",
+    "Transaction Signing",
+    "Private Key",
+    "Blockchain Network",
     "Self-Custody",
+    "Hardware Wallet",
+    "DeFi Access",
     "Asset Management"
   ],
   "ontology": {

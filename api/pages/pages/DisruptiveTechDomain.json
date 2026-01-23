@@ -7,15 +7,15 @@
     "Homomorphic Encryption for Machine Learning"
   ],
   "wiki_links": [
-    "CoreOntology",
-    "BlockchainDomain",
-    "RoboticsDomain",
-    "Domain",
-    "ConceptualLayer",
     "AIApplicationsDomain",
-    "Technology Forecasting",
     "MetaverseDomain",
-    "Innovation Tracking"
+    "Technology Forecasting",
+    "Innovation Tracking",
+    "RoboticsDomain",
+    "ConceptualLayer",
+    "CoreOntology",
+    "Domain",
+    "BlockchainDomain"
   ],
   "ontology": {
     "term_id": "NGM-0020",

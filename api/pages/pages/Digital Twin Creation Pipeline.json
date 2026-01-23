@@ -6,17 +6,17 @@
     "Reality Capture System"
   ],
   "wiki_links": [
+    "Photogrammetry",
+    "Point Cloud Processing",
+    "3D Scanning",
+    "Asset Digitization",
     "LiDAR",
     "Computer Vision",
+    "metaverse",
     "Virtual Replica Creation",
     "3D Content Pipeline",
-    "Asset Digitization",
-    "3D Scanning",
     "Real-Time Monitoring",
-    "metaverse",
-    "CAD Integration",
-    "Point Cloud Processing",
-    "Photogrammetry"
+    "CAD Integration"
   ],
   "ontology": {
     "term_id": "MV-9875",

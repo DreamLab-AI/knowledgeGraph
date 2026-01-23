@@ -6,11 +6,11 @@
     "Telemetry & Analytics"
   ],
   "wiki_links": [
-    "Operational Intelligence",
+    "System Monitoring",
     "Observability Platform",
-    "Data Visualisation",
     "metaverse",
-    "System Monitoring"
+    "Data Visualisation",
+    "Operational Intelligence"
   ],
   "ontology": {
     "term_id": "MV-9972",

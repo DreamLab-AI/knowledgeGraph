@@ -22,12 +22,12 @@
     "Co-Training"
   ],
   "wiki_links": [
-    "boring2009scroll",
-    "hansberger2017dispelling",
     "Large language models",
-    "Update Cycle",
-    "Hardware and Edge",
+    "hansberger2017dispelling",
     "cuervo2018creating",
-    "Proprietary Large Language Models"
+    "Hardware and Edge",
+    "Update Cycle",
+    "Proprietary Large Language Models",
+    "boring2009scroll"
   ]
 }

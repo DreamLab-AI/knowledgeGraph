@@ -6,12 +6,12 @@
     "Digital Real Estate"
   ],
   "wiki_links": [
-    "GeoPose Standard",
-    "metaverse",
-    "3D Positioning",
-    "Coordinate System",
     "Reference Frame",
-    "Object Positioning"
+    "3D Positioning",
+    "Object Positioning",
+    "metaverse",
+    "GeoPose Standard",
+    "Coordinate System"
   ],
   "ontology": {
     "term_id": "MV-10057",

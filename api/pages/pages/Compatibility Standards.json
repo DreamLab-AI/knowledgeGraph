@@ -7,17 +7,17 @@
     "Data Format Standard"
   ],
   "wiki_links": [
-    "Protocol Development",
-    "Open Standards",
-    "Technical Standards",
-    "Digital Asset Standards",
     "Metaverse Interoperability",
+    "Open Standards",
+    "Digital Asset Standards",
+    "Technical Standards",
+    "Interoperability",
+    "Cross-Platform Experience",
     "metaverse",
     "Standards Bodies",
-    "Cross-Platform Experience",
-    "Interoperability",
-    "Asset Portability",
-    "Industry Collaboration"
+    "Protocol Development",
+    "Industry Collaboration",
+    "Asset Portability"
   ],
   "ontology": {
     "term_id": "MV-9826",

@@ -133,40 +133,40 @@
       "iri": "http://narrativegoldmine.com/ai#"
     },
     {
-      "prefix": "cross-domain",
-      "iri": "http://narrativegoldmine.com/cross-domain#"
-    },
-    {
-      "prefix": "artificial-intelligence",
-      "iri": "http://narrativegoldmine.com/artificial-intelligence#"
-    },
-    {
-      "prefix": "xr-mv",
-      "iri": "http://narrativegoldmine.com/xr-mv#"
-    },
-    {
-      "prefix": "autonomous-systems",
-      "iri": "http://narrativegoldmine.com/autonomous-systems#"
-    },
-    {
-      "prefix": "ai-ml",
-      "iri": "http://narrativegoldmine.com/ai-ml#"
-    },
-    {
-      "prefix": "domain",
-      "iri": "http://narrativegoldmine.com/domain#"
-    },
-    {
-      "prefix": "aigo",
-      "iri": "http://narrativegoldmine.com/aigo#"
+      "prefix": "ml",
+      "iri": "http://narrativegoldmine.com/ml#"
     },
     {
       "prefix": "uk",
       "iri": "http://narrativegoldmine.com/uk#"
     },
     {
-      "prefix": "ml",
-      "iri": "http://narrativegoldmine.com/ml#"
+      "prefix": "aigo",
+      "iri": "http://narrativegoldmine.com/aigo#"
+    },
+    {
+      "prefix": "domain",
+      "iri": "http://narrativegoldmine.com/domain#"
+    },
+    {
+      "prefix": "ai-ml",
+      "iri": "http://narrativegoldmine.com/ai-ml#"
+    },
+    {
+      "prefix": "autonomous-systems",
+      "iri": "http://narrativegoldmine.com/autonomous-systems#"
+    },
+    {
+      "prefix": "xr-mv",
+      "iri": "http://narrativegoldmine.com/xr-mv#"
+    },
+    {
+      "prefix": "artificial-intelligence",
+      "iri": "http://narrativegoldmine.com/artificial-intelligence#"
+    },
+    {
+      "prefix": "cross-domain",
+      "iri": "http://narrativegoldmine.com/cross-domain#"
     },
     {
       "prefix": "bc",
@@ -212,6 +212,10 @@
     },
     {
       "id": "aiconcept",
+      "type": "owl:Class"
+    },
+    {
+      "id": "aidevelopmenttools",
       "type": "owl:Class"
     },
     {
@@ -295,11 +299,11 @@
       "type": "owl:Class"
     },
     {
-      "id": "ai-airiskmanagement",
+      "id": "airiskmanagement",
       "type": "owl:Class"
     },
     {
-      "id": "aisecurity",
+      "id": "ai-aisecurity",
       "type": "owl:Class"
     },
     {
@@ -391,6 +395,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "ai-cloudcomputing",
+      "type": "owl:Class"
+    },
+    {
       "id": "codegeneration",
       "type": "owl:Class"
     },
@@ -412,6 +420,10 @@
     },
     {
       "id": "ai-computervision",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ai-computinginfrastructure",
       "type": "owl:Class"
     },
     {
@@ -468,6 +480,10 @@
     },
     {
       "id": "datalake",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ai-datamanagement",
       "type": "owl:Class"
     },
     {
@@ -691,6 +707,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "mlops",
+      "type": "owl:Class"
+    },
+    {
       "id": "ai-machinelearning",
       "type": "owl:Class"
     },
@@ -883,7 +903,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "ontologyinllmoperations",
+      "id": "ai-ontologyinllmoperations",
       "type": "owl:Class"
     },
     {
@@ -1007,6 +1027,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "searchtechnology",
+      "type": "owl:Class"
+    },
+    {
       "id": "selfimprovement",
       "type": "owl:Class"
     },
@@ -1064,6 +1088,10 @@
     },
     {
       "id": "system",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ai-systemarchitecture",
       "type": "owl:Class"
     },
     {
@@ -1452,42 +1480,6 @@
     },
     {
       "id": "unescorecommendationethicsai",
-      "type": "owl:Class"
-    },
-    {
-      "id": "aidevelopmenttools",
-      "type": "owl:Class"
-    },
-    {
-      "id": "aiethics",
-      "type": "owl:Class"
-    },
-    {
-      "id": "artificialintelligence",
-      "type": "owl:Class"
-    },
-    {
-      "id": "cloudcomputing",
-      "type": "owl:Class"
-    },
-    {
-      "id": "computinginfrastructure",
-      "type": "owl:Class"
-    },
-    {
-      "id": "datamanagement",
-      "type": "owl:Class"
-    },
-    {
-      "id": "mlops",
-      "type": "owl:Class"
-    },
-    {
-      "id": "searchtechnology",
-      "type": "owl:Class"
-    },
-    {
-      "id": "systemarchitecture",
       "type": "owl:Class"
     },
     {
@@ -2943,7 +2935,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "aidevelopment",
+      "id": "mv-aidevelopment",
       "type": "owl:Class"
     },
     {
@@ -3099,7 +3091,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "adversarialattacks",
+      "id": "mv-adversarialattacks",
       "type": "owl:Class"
     },
     {
@@ -3119,11 +3111,11 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-aiorigindeclaration",
+      "id": "aiorigindeclaration",
       "type": "owl:Class"
     },
     {
-      "id": "mv-aitransparencyframework",
+      "id": "aitransparencyframework",
       "type": "owl:Class"
     },
     {
@@ -3159,11 +3151,11 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-ardisplaydevice",
+      "id": "ardisplaydevice",
       "type": "owl:Class"
     },
     {
-      "id": "arexperiences",
+      "id": "mv-arexperiences",
       "type": "owl:Class"
     },
     {
@@ -3475,7 +3467,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-c2pastandard",
+      "id": "c2pastandard",
       "type": "owl:Class"
     },
     {
@@ -3695,7 +3687,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "computinginfrastructure",
+      "id": "mv-computinginfrastructure",
       "type": "owl:Class"
     },
     {
@@ -3903,7 +3895,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "datagovernance",
+      "id": "mv-datagovernance",
       "type": "owl:Class"
     },
     {
@@ -3919,7 +3911,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "datamanagement",
+      "id": "mv-datamanagement",
       "type": "owl:Class"
     },
     {
@@ -4739,7 +4731,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "emotionalanalyticsengine",
+      "id": "mv-emotionalanalyticsengine",
       "type": "owl:Class"
     },
     {
@@ -4823,11 +4815,11 @@
       "type": "owl:Class"
     },
     {
-      "id": "etsimetaversedomainmodel",
+      "id": "mv-etsimetaversedomainmodel",
       "type": "owl:Class"
     },
     {
-      "id": "etsimetaversedomaintaxonomy",
+      "id": "mv-etsimetaversedomaintaxonomy",
       "type": "owl:Class"
     },
     {
@@ -4975,7 +4967,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "gdprarticle45",
+      "id": "mv-gdprarticle45",
       "type": "owl:Class"
     },
     {
@@ -4991,7 +4983,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "generativeadversarialnetwork",
+      "id": "mv-generativeadversarialnetwork",
       "type": "owl:Class"
     },
     {
@@ -5035,7 +5027,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-gltfstandard",
+      "id": "gltfstandard",
       "type": "owl:Class"
     },
     {
@@ -5083,7 +5075,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-hanimstandard",
+      "id": "hanimstandard",
       "type": "owl:Class"
     },
     {
@@ -5343,7 +5335,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-inclusivexrexperience",
+      "id": "inclusivexrexperience",
       "type": "owl:Class"
     },
     {
@@ -5451,7 +5443,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-isostandards",
+      "id": "isostandards",
       "type": "owl:Class"
     },
     {
@@ -5555,7 +5547,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "lidarscanning",
+      "id": "mv-lidarscanning",
       "type": "owl:Class"
     },
     {
@@ -5655,7 +5647,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "membershipinference",
+      "id": "mv-membershipinference",
       "type": "owl:Class"
     },
     {
@@ -5819,7 +5811,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "motioncapturerig",
+      "id": "mv-motioncapturerig",
       "type": "owl:Class"
     },
     {
@@ -5895,7 +5887,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "narrativedesignontology",
+      "id": "mv-narrativedesignontology",
       "type": "owl:Class"
     },
     {
@@ -5967,7 +5959,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-npcinteraction",
+      "id": "npcinteraction",
       "type": "owl:Class"
     },
     {
@@ -6111,7 +6103,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-persistentarplacement",
+      "id": "persistentarplacement",
       "type": "owl:Class"
     },
     {
@@ -6691,7 +6683,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-sharedarexperiences",
+      "id": "sharedarexperiences",
       "type": "owl:Class"
     },
     {
@@ -6787,7 +6779,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "sparqlendpoint",
+      "id": "mv-sparqlendpoint",
       "type": "owl:Class"
     },
     {
@@ -6835,7 +6827,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "spatialcomputinglayer",
+      "id": "mv-spatialcomputinglayer",
       "type": "owl:Class"
     },
     {
@@ -7011,7 +7003,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "systemarchitecture",
+      "id": "mv-systemarchitecture",
       "type": "owl:Class"
     },
     {
@@ -7159,7 +7151,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-transparency",
+      "id": "transparency",
       "type": "owl:Class"
     },
     {
@@ -7607,7 +7599,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "virtualsociety",
+      "id": "mv-virtualsociety",
       "type": "owl:Class"
     },
     {
@@ -7723,7 +7715,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-xraccessibilitystandards",
+      "id": "xraccessibilitystandards",
       "type": "owl:Class"
     },
     {
@@ -7747,15 +7739,15 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-xrtestinginfrastructure",
+      "id": "xrtestinginfrastructure",
       "type": "owl:Class"
     },
     {
-      "id": "mv-zksnarks",
+      "id": "zksnarks",
       "type": "owl:Class"
     },
     {
-      "id": "zkstarks",
+      "id": "mv-zkstarks",
       "type": "owl:Class"
     },
     {
@@ -8375,7 +8367,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "rb-lidar",
+      "id": "lidar",
       "type": "owl:Class"
     },
     {
@@ -9563,6 +9555,18 @@
       }
     },
     {
+      "id": "aidevelopmenttools",
+      "iri": "http://narrativegoldmine.com/ai#AIDevelopmentTools",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "AIDevelopmentTools"
+      }
+    },
+    {
       "id": "ai-aiethics",
       "iri": "http://narrativegoldmine.com/ai#AIEthics",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -9839,7 +9843,7 @@
       }
     },
     {
-      "id": "ai-airiskmanagement",
+      "id": "airiskmanagement",
       "iri": "http://narrativegoldmine.com/ai#AiRiskManagement",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -9854,7 +9858,7 @@
       }
     },
     {
-      "id": "aisecurity",
+      "id": "ai-aisecurity",
       "iri": "http://narrativegoldmine.com/ai#AiSecurity",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -10184,6 +10188,18 @@
       }
     },
     {
+      "id": "ai-cloudcomputing",
+      "iri": "http://narrativegoldmine.com/ai#CloudComputing",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "CloudComputing"
+      }
+    },
+    {
       "id": "codegeneration",
       "iri": "http://narrativegoldmine.com/ai#CodeGeneration",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -10268,6 +10284,18 @@
       },
       "comment": {
         "en": "Computer Vision is the field of artificial intelligence concerned with enabling machines to interpret, understand, and process visual information from the world, emulating human visual perception c..."
+      }
+    },
+    {
+      "id": "ai-computinginfrastructure",
+      "iri": "http://narrativegoldmine.com/ai#ComputingInfrastructure",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "ComputingInfrastructure"
       }
     },
     {
@@ -10466,6 +10494,18 @@
       },
       "comment": {
         "en": "Centralized repository that stores structured and unstructured data at scale in its native format, enabling big data analytics and machine learning workloads."
+      }
+    },
+    {
+      "id": "ai-datamanagement",
+      "iri": "http://narrativegoldmine.com/ai#DataManagement",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "DataManagement"
       }
     },
     {
@@ -11252,6 +11292,18 @@
       }
     },
     {
+      "id": "mlops",
+      "iri": "http://narrativegoldmine.com/ai#MLOps",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "MLOps"
+      }
+    },
+    {
       "id": "ai-machinelearning",
       "iri": "http://narrativegoldmine.com/ai#MachineLearning",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -11960,7 +12012,7 @@
       }
     },
     {
-      "id": "ontologyinllmoperations",
+      "id": "ai-ontologyinllmoperations",
       "iri": "http://narrativegoldmine.com/ai#OntologyInLLMOperations",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -12407,6 +12459,18 @@
       }
     },
     {
+      "id": "searchtechnology",
+      "iri": "http://narrativegoldmine.com/ai#SearchTechnology",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "SearchTechnology"
+      }
+    },
+    {
       "id": "selfimprovement",
       "iri": "http://narrativegoldmine.com/ai#SelfImprovement",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -12617,6 +12681,18 @@
       },
       "comment": {
         "en": "- maturity:: established"
+      }
+    },
+    {
+      "id": "ai-systemarchitecture",
+      "iri": "http://narrativegoldmine.com/ai#SystemArchitecture",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "label": {
+        "en": "SystemArchitecture"
       }
     },
     {
@@ -14132,114 +14208,6 @@
       },
       "comment": {
         "en": "The UNESCO Recommendation on the Ethics of Artificial Intelligence is the first global normative framework establishing ethical principles and policy actions for responsible AI development and depl..."
-      }
-    },
-    {
-      "id": "aidevelopmenttools",
-      "iri": "http://narrativegoldmine.com/artificial-intelligence#AIDevelopmentTools",
-      "baseIri": "http://narrativegoldmine.com/artificial-intelligence",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#4CAF50",
-      "label": {
-        "en": "AIDevelopmentTools"
-      }
-    },
-    {
-      "id": "aiethics",
-      "iri": "http://narrativegoldmine.com/artificial-intelligence#AIEthics",
-      "baseIri": "http://narrativegoldmine.com/artificial-intelligence",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#4CAF50",
-      "label": {
-        "en": "AIEthics"
-      }
-    },
-    {
-      "id": "artificialintelligence",
-      "iri": "http://narrativegoldmine.com/artificial-intelligence#ArtificialIntelligence",
-      "baseIri": "http://narrativegoldmine.com/artificial-intelligence",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#4CAF50",
-      "label": {
-        "en": "ArtificialIntelligence"
-      }
-    },
-    {
-      "id": "cloudcomputing",
-      "iri": "http://narrativegoldmine.com/artificial-intelligence#CloudComputing",
-      "baseIri": "http://narrativegoldmine.com/artificial-intelligence",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#4CAF50",
-      "label": {
-        "en": "CloudComputing"
-      }
-    },
-    {
-      "id": "computinginfrastructure",
-      "iri": "http://narrativegoldmine.com/artificial-intelligence#ComputingInfrastructure",
-      "baseIri": "http://narrativegoldmine.com/artificial-intelligence",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#4CAF50",
-      "label": {
-        "en": "ComputingInfrastructure"
-      }
-    },
-    {
-      "id": "datamanagement",
-      "iri": "http://narrativegoldmine.com/artificial-intelligence#DataManagement",
-      "baseIri": "http://narrativegoldmine.com/artificial-intelligence",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#4CAF50",
-      "label": {
-        "en": "DataManagement"
-      }
-    },
-    {
-      "id": "mlops",
-      "iri": "http://narrativegoldmine.com/artificial-intelligence#MLOps",
-      "baseIri": "http://narrativegoldmine.com/artificial-intelligence",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#4CAF50",
-      "label": {
-        "en": "MLOps"
-      }
-    },
-    {
-      "id": "searchtechnology",
-      "iri": "http://narrativegoldmine.com/artificial-intelligence#SearchTechnology",
-      "baseIri": "http://narrativegoldmine.com/artificial-intelligence",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#4CAF50",
-      "label": {
-        "en": "SearchTechnology"
-      }
-    },
-    {
-      "id": "systemarchitecture",
-      "iri": "http://narrativegoldmine.com/artificial-intelligence#SystemArchitecture",
-      "baseIri": "http://narrativegoldmine.com/artificial-intelligence",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#4CAF50",
-      "label": {
-        "en": "SystemArchitecture"
       }
     },
     {
@@ -16442,10 +16410,10 @@
       ],
       "backgroundColor": "#2196F3",
       "label": {
-        "en": "51% Attack"
+        "en": "51 Attack"
       },
       "comment": {
-        "en": "Majority attack on Proof-of-Work blockchain networks where a single entity or coalition controls more than 50% of the network's hash rate, enabling double-spending, transaction censorship, and bloc..."
+        "en": "Majority attack on Proof-of-Work blockchain networks where a single entity or coalition controls more than 50 of the network's hash rate, enabling double-spending, transaction censorship, and block..."
       }
     },
     {
@@ -17156,7 +17124,7 @@
         "en": "Low Energy Consumption"
       },
       "comment": {
-        "en": "Energy consumption level characteristic of PoS and BFT mechanisms requiring minimal computational resources (99% less than PoW)."
+        "en": "Energy consumption level characteristic of PoS and BFT mechanisms requiring minimal computational resources (99 less than PoW)."
       }
     },
     {
@@ -17171,7 +17139,7 @@
         "en": "Luxury Goods Authentication"
       },
       "comment": {
-        "en": "Blockchain technology addressing the £400-450 billion global counterfeit luxury market (10% of all luxury goods) through immutable digital certificates of authenticity, NFC-enabled provenance recor..."
+        "en": "Blockchain technology addressing the £400-450 billion global counterfeit luxury market (10 of all luxury goods) through immutable digital certificates of authenticity, NFC-enabled provenance record..."
       }
     },
     {
@@ -19597,7 +19565,7 @@
       }
     },
     {
-      "id": "aidevelopment",
+      "id": "mv-aidevelopment",
       "iri": "http://narrativegoldmine.com/metaverse#AIDevelopment",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -20167,7 +20135,7 @@
       }
     },
     {
-      "id": "adversarialattacks",
+      "id": "mv-adversarialattacks",
       "iri": "http://narrativegoldmine.com/metaverse#AdversarialAttacks",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -20242,7 +20210,7 @@
       }
     },
     {
-      "id": "mv-aiorigindeclaration",
+      "id": "aiorigindeclaration",
       "iri": "http://narrativegoldmine.com/metaverse#AiOriginDeclaration",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -20257,7 +20225,7 @@
       }
     },
     {
-      "id": "mv-aitransparencyframework",
+      "id": "aitransparencyframework",
       "iri": "http://narrativegoldmine.com/metaverse#AiTransparencyFramework",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -20386,7 +20354,7 @@
       }
     },
     {
-      "id": "mv-ardisplaydevice",
+      "id": "ardisplaydevice",
       "iri": "http://narrativegoldmine.com/metaverse#ArDisplayDevice",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -20401,7 +20369,7 @@
       }
     },
     {
-      "id": "arexperiences",
+      "id": "mv-arexperiences",
       "iri": "http://narrativegoldmine.com/metaverse#ArExperiences",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -21544,7 +21512,7 @@
       }
     },
     {
-      "id": "mv-c2pastandard",
+      "id": "c2pastandard",
       "iri": "http://narrativegoldmine.com/metaverse#C2paStandard",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -22345,7 +22313,7 @@
       }
     },
     {
-      "id": "computinginfrastructure",
+      "id": "mv-computinginfrastructure",
       "iri": "http://narrativegoldmine.com/metaverse#ComputingInfrastructure",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -23068,7 +23036,7 @@
       }
     },
     {
-      "id": "datagovernance",
+      "id": "mv-datagovernance",
       "iri": "http://narrativegoldmine.com/metaverse#DataGovernance",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -23119,7 +23087,7 @@
       }
     },
     {
-      "id": "datamanagement",
+      "id": "mv-datamanagement",
       "iri": "http://narrativegoldmine.com/metaverse#DataManagement",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -26056,7 +26024,7 @@
       }
     },
     {
-      "id": "emotionalanalyticsengine",
+      "id": "mv-emotionalanalyticsengine",
       "iri": "http://narrativegoldmine.com/metaverse#EmotionalAnalyticsEngine",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -26347,7 +26315,7 @@
       }
     },
     {
-      "id": "etsimetaversedomainmodel",
+      "id": "mv-etsimetaversedomainmodel",
       "iri": "http://narrativegoldmine.com/metaverse#EtsiMetaverseDomainModel",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -26362,7 +26330,7 @@
       }
     },
     {
-      "id": "etsimetaversedomaintaxonomy",
+      "id": "mv-etsimetaversedomaintaxonomy",
       "iri": "http://narrativegoldmine.com/metaverse#EtsiMetaverseDomainTaxonomy",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -26887,7 +26855,7 @@
       }
     },
     {
-      "id": "gdprarticle45",
+      "id": "mv-gdprarticle45",
       "iri": "http://narrativegoldmine.com/metaverse#GdprArticle45",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -26947,7 +26915,7 @@
       }
     },
     {
-      "id": "generativeadversarialnetwork",
+      "id": "mv-generativeadversarialnetwork",
       "iri": "http://narrativegoldmine.com/metaverse#GenerativeAdversarialNetwork",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -27103,7 +27071,7 @@
       }
     },
     {
-      "id": "mv-gltfstandard",
+      "id": "gltfstandard",
       "iri": "http://narrativegoldmine.com/metaverse#GltfStandard",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -27274,7 +27242,7 @@
       }
     },
     {
-      "id": "mv-hanimstandard",
+      "id": "hanimstandard",
       "iri": "http://narrativegoldmine.com/metaverse#HanimStandard",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -28216,7 +28184,7 @@
       }
     },
     {
-      "id": "mv-inclusivexrexperience",
+      "id": "inclusivexrexperience",
       "iri": "http://narrativegoldmine.com/metaverse#InclusiveXrExperience",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -28606,7 +28574,7 @@
       }
     },
     {
-      "id": "mv-isostandards",
+      "id": "isostandards",
       "iri": "http://narrativegoldmine.com/metaverse#IsoStandards",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -28981,7 +28949,7 @@
       }
     },
     {
-      "id": "lidarscanning",
+      "id": "mv-lidarscanning",
       "iri": "http://narrativegoldmine.com/metaverse#LidarScanning",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -29350,7 +29318,7 @@
       }
     },
     {
-      "id": "membershipinference",
+      "id": "mv-membershipinference",
       "iri": "http://narrativegoldmine.com/metaverse#MembershipInference",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -29959,7 +29927,7 @@
       }
     },
     {
-      "id": "motioncapturerig",
+      "id": "mv-motioncapturerig",
       "iri": "http://narrativegoldmine.com/metaverse#MotionCaptureRig",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -30235,7 +30203,7 @@
       }
     },
     {
-      "id": "narrativedesignontology",
+      "id": "mv-narrativedesignontology",
       "iri": "http://narrativegoldmine.com/metaverse#NarrativeDesignOntology",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -30493,7 +30461,7 @@
       }
     },
     {
-      "id": "mv-npcinteraction",
+      "id": "npcinteraction",
       "iri": "http://narrativegoldmine.com/metaverse#NpcInteraction",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -31024,7 +30992,7 @@
       }
     },
     {
-      "id": "mv-persistentarplacement",
+      "id": "persistentarplacement",
       "iri": "http://narrativegoldmine.com/metaverse#PersistentArPlacement",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -33136,7 +33104,7 @@
       }
     },
     {
-      "id": "mv-sharedarexperiences",
+      "id": "sharedarexperiences",
       "iri": "http://narrativegoldmine.com/metaverse#SharedArExperiences",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -33234,7 +33202,7 @@
         "en": "SimCLR"
       },
       "comment": {
-        "en": "A self-supervised learning framework that learns visual representations through contrastive learning with data augmentation. A linear classifier on SimCLR representations achieves 76.5% top-1 accur..."
+        "en": "A self-supervised learning framework that learns visual representations through contrastive learning with data augmentation. A linear classifier on SimCLR representations achieves 76.5 top-1 accura..."
       }
     },
     {
@@ -33478,7 +33446,7 @@
       }
     },
     {
-      "id": "sparqlendpoint",
+      "id": "mv-sparqlendpoint",
       "iri": "http://narrativegoldmine.com/metaverse#SparqlEndpoint",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -33658,7 +33626,7 @@
       }
     },
     {
-      "id": "spatialcomputinglayer",
+      "id": "mv-spatialcomputinglayer",
       "iri": "http://narrativegoldmine.com/metaverse#SpatialComputingLayer",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -34294,7 +34262,7 @@
       }
     },
     {
-      "id": "systemarchitecture",
+      "id": "mv-systemarchitecture",
       "iri": "http://narrativegoldmine.com/metaverse#SystemArchitecture",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -34807,7 +34775,7 @@
       }
     },
     {
-      "id": "mv-transparency",
+      "id": "transparency",
       "iri": "http://narrativegoldmine.com/metaverse#Transparency",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -36457,7 +36425,7 @@
       }
     },
     {
-      "id": "virtualsociety",
+      "id": "mv-virtualsociety",
       "iri": "http://narrativegoldmine.com/metaverse#Virtualsociety",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -36871,7 +36839,7 @@
       }
     },
     {
-      "id": "mv-xraccessibilitystandards",
+      "id": "xraccessibilitystandards",
       "iri": "http://narrativegoldmine.com/metaverse#XrAccessibilityStandards",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -36961,7 +36929,7 @@
       }
     },
     {
-      "id": "mv-xrtestinginfrastructure",
+      "id": "xrtestinginfrastructure",
       "iri": "http://narrativegoldmine.com/metaverse#XrTestingInfrastructure",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -36976,7 +36944,7 @@
       }
     },
     {
-      "id": "mv-zksnarks",
+      "id": "zksnarks",
       "iri": "http://narrativegoldmine.com/metaverse#ZKSNARKs",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -36991,7 +36959,7 @@
       }
     },
     {
-      "id": "zkstarks",
+      "id": "mv-zkstarks",
       "iri": "http://narrativegoldmine.com/metaverse#ZKSTARKs",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -39325,7 +39293,7 @@
       }
     },
     {
-      "id": "rb-lidar",
+      "id": "lidar",
       "iri": "http://narrativegoldmine.com/robotics#Lidar",
       "baseIri": "http://narrativegoldmine.com/robotics",
       "attributes": [
@@ -43531,6 +43499,18 @@
       "type": "rdfs:subClassOf"
     },
     {
+      "id": "subclassof-ai-largelanguagemodel-ai-artificialintelligence",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "subclassof-ai-machinelearningmodel-ai-artificialintelligence",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "subclassof-ai-machinelearningmodels-ai-artificialintelligence",
+      "type": "rdfs:subClassOf"
+    },
+    {
       "id": "subclassof-neural3dgeneration-ai-generativeai",
       "type": "rdfs:subClassOf"
     },
@@ -43755,7 +43735,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-ontologyinllmoperations-ai-knowledgerepresentation",
+      "id": "subclassof-ai-ontologyinllmoperations-ai-knowledgerepresentation",
       "type": "rdfs:subClassOf"
     },
     {
@@ -43831,7 +43811,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-aisecurity-ai-cybersecurity",
+      "id": "subclassof-ai-modeltransparency-ai-aiethics",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "subclassof-ai-aisecurity-ai-cybersecurity",
       "type": "rdfs:subClassOf"
     },
     {
@@ -43839,7 +43823,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-ai-airiskmanagement-ai-riskmanagement",
+      "id": "subclassof-airiskmanagement-ai-riskmanagement",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45179,7 +45163,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-datamanagement-metaversetechnology",
+      "id": "subclassof-mv-datamanagement-metaversetechnology",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45199,11 +45183,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-persistentarplacement-augmentedreality",
+      "id": "subclassof-persistentarplacement-augmentedreality",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-sharedarexperiences-augmentedreality",
+      "id": "subclassof-sharedarexperiences-augmentedreality",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45271,39 +45255,39 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-privacyarchitecture-systemarchitecture",
+      "id": "subclassof-privacyarchitecture-mv-systemarchitecture",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-scalablearchitecture-systemarchitecture",
+      "id": "subclassof-scalablearchitecture-mv-systemarchitecture",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-securityarchitecture-systemarchitecture",
+      "id": "subclassof-securityarchitecture-mv-systemarchitecture",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-userinterfacearchitecture-systemarchitecture",
+      "id": "subclassof-userinterfacearchitecture-mv-systemarchitecture",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-metaversearchitecture-systemarchitecture",
+      "id": "subclassof-metaversearchitecture-mv-systemarchitecture",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-distributedsystemarchitecture-systemarchitecture",
+      "id": "subclassof-distributedsystemarchitecture-mv-systemarchitecture",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-enterprisearchitecture-systemarchitecture",
+      "id": "subclassof-enterprisearchitecture-mv-systemarchitecture",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-eventdrivenarchitecture-systemarchitecture",
+      "id": "subclassof-eventdrivenarchitecture-mv-systemarchitecture",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-microservicesarchitecture-systemarchitecture",
+      "id": "subclassof-microservicesarchitecture-mv-systemarchitecture",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45391,15 +45375,15 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-schemaregistry-datamanagement",
+      "id": "subclassof-schemaregistry-mv-datamanagement",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-digitalrepository-datamanagement",
+      "id": "subclassof-digitalrepository-mv-datamanagement",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-metadatarepository-datamanagement",
+      "id": "subclassof-metadatarepository-mv-datamanagement",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45507,7 +45491,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-sparqlendpoint-dataaccessinterface",
+      "id": "subclassof-mv-sparqlendpoint-dataaccessinterface",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45663,7 +45647,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-systemarchitecture-metaverseinfrastructure",
+      "id": "subclassof-mv-systemarchitecture-metaverseinfrastructure",
       "type": "rdfs:subClassOf"
     },
     {
@@ -45691,7 +45675,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-ai-trainingdatarepository-datamanagement",
+      "id": "subclassof-ai-trainingdatarepository-ai-datamanagement",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46047,19 +46031,19 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-xrtestinginfrastructure-testinginfrastructure",
+      "id": "subclassof-xrtestinginfrastructure-testinginfrastructure",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-zksnarks-mv-zeroknowledgeproof",
+      "id": "subclassof-zksnarks-mv-zeroknowledgeproof",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-zkstarks-mv-zeroknowledgeproof",
+      "id": "subclassof-mv-zkstarks-mv-zeroknowledgeproof",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-inclusivexrexperience-accessibleexperience",
+      "id": "subclassof-inclusivexrexperience-accessibleexperience",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46067,7 +46051,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-xraccessibilitystandards-accessibility",
+      "id": "subclassof-xraccessibilitystandards-accessibility",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46083,7 +46067,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-c2pastandard-technicalstandard",
+      "id": "subclassof-c2pastandard-technicalstandard",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46099,7 +46083,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-isostandards-technicalstandard",
+      "id": "subclassof-isostandards-technicalstandard",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46243,19 +46227,19 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-dataprocessinghardware-computinginfrastructure",
+      "id": "subclassof-dataprocessinghardware-mv-computinginfrastructure",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-digitaltwininfrastructure-computinginfrastructure",
+      "id": "subclassof-digitaltwininfrastructure-mv-computinginfrastructure",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-hardwareacceleration-computinginfrastructure",
+      "id": "subclassof-hardwareacceleration-mv-computinginfrastructure",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-hardwareresources-computinginfrastructure",
+      "id": "subclassof-hardwareresources-mv-computinginfrastructure",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46431,11 +46415,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-gdprarticle45-dataprotectionregulation",
+      "id": "subclassof-mv-gdprarticle45-dataprotectionregulation",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-gltfstandard-3dassetstandard",
+      "id": "subclassof-gltfstandard-3dassetstandard",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46451,7 +46435,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-hanimstandard-animationstandard",
+      "id": "subclassof-hanimstandard-animationstandard",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46531,19 +46515,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-ai-largelanguagemodel-artificialintelligence",
-      "type": "rdfs:subClassOf"
-    },
-    {
-      "id": "subclassof-ai-machinelearningmodel-artificialintelligence",
-      "type": "rdfs:subClassOf"
-    },
-    {
-      "id": "subclassof-ai-machinelearningmodels-artificialintelligence",
-      "type": "rdfs:subClassOf"
-    },
-    {
-      "id": "subclassof-lidarscanning-spatialmappingtechnology",
+      "id": "subclassof-mv-lidarscanning-spatialmappingtechnology",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46555,7 +46527,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-ai-machinelearninginfrastructure-computinginfrastructure",
+      "id": "subclassof-ai-machinelearninginfrastructure-ai-computinginfrastructure",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46563,7 +46535,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-ai-machinelearningplatform-cloudcomputing",
+      "id": "subclassof-ai-machinelearningplatform-ai-cloudcomputing",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46579,7 +46551,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-metadataregistry-datagovernance",
+      "id": "subclassof-metadataregistry-mv-datagovernance",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46599,11 +46571,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-ai-modelarchitecture-systemarchitecture",
-      "type": "rdfs:subClassOf"
-    },
-    {
-      "id": "subclassof-ai-modeltransparency-aiethics",
+      "id": "subclassof-ai-modelarchitecture-ai-systemarchitecture",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46667,7 +46635,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-npcinteraction-gamemechanics",
+      "id": "subclassof-npcinteraction-gamemechanics",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46891,11 +46859,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-lidar2d-rb-lidar",
+      "id": "subclassof-lidar2d-lidar",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-lidar3d-rb-lidar",
+      "id": "subclassof-lidar3d-lidar",
       "type": "rdfs:subClassOf"
     },
     {
@@ -47514,6 +47482,33 @@
       ]
     },
     {
+      "id": "subclassof-ai-largelanguagemodel-ai-artificialintelligence",
+      "domain": "ai-largelanguagemodel",
+      "range": "ai-artificialintelligence",
+      "attributes": [
+        "anonymous",
+        "object"
+      ]
+    },
+    {
+      "id": "subclassof-ai-machinelearningmodel-ai-artificialintelligence",
+      "domain": "ai-machinelearningmodel",
+      "range": "ai-artificialintelligence",
+      "attributes": [
+        "anonymous",
+        "object"
+      ]
+    },
+    {
+      "id": "subclassof-ai-machinelearningmodels-ai-artificialintelligence",
+      "domain": "ai-machinelearningmodels",
+      "range": "ai-artificialintelligence",
+      "attributes": [
+        "anonymous",
+        "object"
+      ]
+    },
+    {
       "id": "subclassof-neural3dgeneration-ai-generativeai",
       "domain": "neural3dgeneration",
       "range": "ai-generativeai",
@@ -48018,8 +48013,8 @@
       ]
     },
     {
-      "id": "subclassof-ontologyinllmoperations-ai-knowledgerepresentation",
-      "domain": "ontologyinllmoperations",
+      "id": "subclassof-ai-ontologyinllmoperations-ai-knowledgerepresentation",
+      "domain": "ai-ontologyinllmoperations",
       "range": "ai-knowledgerepresentation",
       "attributes": [
         "anonymous",
@@ -48189,8 +48184,17 @@
       ]
     },
     {
-      "id": "subclassof-aisecurity-ai-cybersecurity",
-      "domain": "aisecurity",
+      "id": "subclassof-ai-modeltransparency-ai-aiethics",
+      "domain": "ai-modeltransparency",
+      "range": "ai-aiethics",
+      "attributes": [
+        "anonymous",
+        "object"
+      ]
+    },
+    {
+      "id": "subclassof-ai-aisecurity-ai-cybersecurity",
+      "domain": "ai-aisecurity",
       "range": "ai-cybersecurity",
       "attributes": [
         "anonymous",
@@ -48207,8 +48211,8 @@
       ]
     },
     {
-      "id": "subclassof-ai-airiskmanagement-ai-riskmanagement",
-      "domain": "ai-airiskmanagement",
+      "id": "subclassof-airiskmanagement-ai-riskmanagement",
+      "domain": "airiskmanagement",
       "range": "ai-riskmanagement",
       "attributes": [
         "anonymous",
@@ -51222,8 +51226,8 @@
       ]
     },
     {
-      "id": "subclassof-datamanagement-metaversetechnology",
-      "domain": "datamanagement",
+      "id": "subclassof-mv-datamanagement-metaversetechnology",
+      "domain": "mv-datamanagement",
       "range": "metaversetechnology",
       "attributes": [
         "anonymous",
@@ -51267,8 +51271,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-persistentarplacement-augmentedreality",
-      "domain": "mv-persistentarplacement",
+      "id": "subclassof-persistentarplacement-augmentedreality",
+      "domain": "persistentarplacement",
       "range": "augmentedreality",
       "attributes": [
         "anonymous",
@@ -51276,8 +51280,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-sharedarexperiences-augmentedreality",
-      "domain": "mv-sharedarexperiences",
+      "id": "subclassof-sharedarexperiences-augmentedreality",
+      "domain": "sharedarexperiences",
       "range": "augmentedreality",
       "attributes": [
         "anonymous",
@@ -51429,81 +51433,81 @@
       ]
     },
     {
-      "id": "subclassof-privacyarchitecture-systemarchitecture",
+      "id": "subclassof-privacyarchitecture-mv-systemarchitecture",
       "domain": "privacyarchitecture",
-      "range": "systemarchitecture",
+      "range": "mv-systemarchitecture",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-scalablearchitecture-systemarchitecture",
+      "id": "subclassof-scalablearchitecture-mv-systemarchitecture",
       "domain": "scalablearchitecture",
-      "range": "systemarchitecture",
+      "range": "mv-systemarchitecture",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-securityarchitecture-systemarchitecture",
+      "id": "subclassof-securityarchitecture-mv-systemarchitecture",
       "domain": "securityarchitecture",
-      "range": "systemarchitecture",
+      "range": "mv-systemarchitecture",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-userinterfacearchitecture-systemarchitecture",
+      "id": "subclassof-userinterfacearchitecture-mv-systemarchitecture",
       "domain": "userinterfacearchitecture",
-      "range": "systemarchitecture",
+      "range": "mv-systemarchitecture",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-metaversearchitecture-systemarchitecture",
+      "id": "subclassof-metaversearchitecture-mv-systemarchitecture",
       "domain": "metaversearchitecture",
-      "range": "systemarchitecture",
+      "range": "mv-systemarchitecture",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-distributedsystemarchitecture-systemarchitecture",
+      "id": "subclassof-distributedsystemarchitecture-mv-systemarchitecture",
       "domain": "distributedsystemarchitecture",
-      "range": "systemarchitecture",
+      "range": "mv-systemarchitecture",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-enterprisearchitecture-systemarchitecture",
+      "id": "subclassof-enterprisearchitecture-mv-systemarchitecture",
       "domain": "enterprisearchitecture",
-      "range": "systemarchitecture",
+      "range": "mv-systemarchitecture",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-eventdrivenarchitecture-systemarchitecture",
+      "id": "subclassof-eventdrivenarchitecture-mv-systemarchitecture",
       "domain": "eventdrivenarchitecture",
-      "range": "systemarchitecture",
+      "range": "mv-systemarchitecture",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-microservicesarchitecture-systemarchitecture",
+      "id": "subclassof-microservicesarchitecture-mv-systemarchitecture",
       "domain": "microservicesarchitecture",
-      "range": "systemarchitecture",
+      "range": "mv-systemarchitecture",
       "attributes": [
         "anonymous",
         "object"
@@ -51699,27 +51703,27 @@
       ]
     },
     {
-      "id": "subclassof-schemaregistry-datamanagement",
+      "id": "subclassof-schemaregistry-mv-datamanagement",
       "domain": "schemaregistry",
-      "range": "datamanagement",
+      "range": "mv-datamanagement",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-digitalrepository-datamanagement",
+      "id": "subclassof-digitalrepository-mv-datamanagement",
       "domain": "digitalrepository",
-      "range": "datamanagement",
+      "range": "mv-datamanagement",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-metadatarepository-datamanagement",
+      "id": "subclassof-metadatarepository-mv-datamanagement",
       "domain": "metadatarepository",
-      "range": "datamanagement",
+      "range": "mv-datamanagement",
       "attributes": [
         "anonymous",
         "object"
@@ -51960,8 +51964,8 @@
       ]
     },
     {
-      "id": "subclassof-sparqlendpoint-dataaccessinterface",
-      "domain": "sparqlendpoint",
+      "id": "subclassof-mv-sparqlendpoint-dataaccessinterface",
+      "domain": "mv-sparqlendpoint",
       "range": "dataaccessinterface",
       "attributes": [
         "anonymous",
@@ -52311,8 +52315,8 @@
       ]
     },
     {
-      "id": "subclassof-systemarchitecture-metaverseinfrastructure",
-      "domain": "systemarchitecture",
+      "id": "subclassof-mv-systemarchitecture-metaverseinfrastructure",
+      "domain": "mv-systemarchitecture",
       "range": "metaverseinfrastructure",
       "attributes": [
         "anonymous",
@@ -52374,9 +52378,9 @@
       ]
     },
     {
-      "id": "subclassof-ai-trainingdatarepository-datamanagement",
+      "id": "subclassof-ai-trainingdatarepository-ai-datamanagement",
       "domain": "ai-trainingdatarepository",
-      "range": "datamanagement",
+      "range": "ai-datamanagement",
       "attributes": [
         "anonymous",
         "object"
@@ -53175,8 +53179,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-xrtestinginfrastructure-testinginfrastructure",
-      "domain": "mv-xrtestinginfrastructure",
+      "id": "subclassof-xrtestinginfrastructure-testinginfrastructure",
+      "domain": "xrtestinginfrastructure",
       "range": "testinginfrastructure",
       "attributes": [
         "anonymous",
@@ -53184,8 +53188,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-zksnarks-mv-zeroknowledgeproof",
-      "domain": "mv-zksnarks",
+      "id": "subclassof-zksnarks-mv-zeroknowledgeproof",
+      "domain": "zksnarks",
       "range": "mv-zeroknowledgeproof",
       "attributes": [
         "anonymous",
@@ -53193,8 +53197,8 @@
       ]
     },
     {
-      "id": "subclassof-zkstarks-mv-zeroknowledgeproof",
-      "domain": "zkstarks",
+      "id": "subclassof-mv-zkstarks-mv-zeroknowledgeproof",
+      "domain": "mv-zkstarks",
       "range": "mv-zeroknowledgeproof",
       "attributes": [
         "anonymous",
@@ -53202,8 +53206,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-inclusivexrexperience-accessibleexperience",
-      "domain": "mv-inclusivexrexperience",
+      "id": "subclassof-inclusivexrexperience-accessibleexperience",
+      "domain": "inclusivexrexperience",
       "range": "accessibleexperience",
       "attributes": [
         "anonymous",
@@ -53220,8 +53224,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-xraccessibilitystandards-accessibility",
-      "domain": "mv-xraccessibilitystandards",
+      "id": "subclassof-xraccessibilitystandards-accessibility",
+      "domain": "xraccessibilitystandards",
       "range": "accessibility",
       "attributes": [
         "anonymous",
@@ -53256,8 +53260,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-c2pastandard-technicalstandard",
-      "domain": "mv-c2pastandard",
+      "id": "subclassof-c2pastandard-technicalstandard",
+      "domain": "c2pastandard",
       "range": "technicalstandard",
       "attributes": [
         "anonymous",
@@ -53292,8 +53296,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-isostandards-technicalstandard",
-      "domain": "mv-isostandards",
+      "id": "subclassof-isostandards-technicalstandard",
+      "domain": "isostandards",
       "range": "technicalstandard",
       "attributes": [
         "anonymous",
@@ -53616,36 +53620,36 @@
       ]
     },
     {
-      "id": "subclassof-dataprocessinghardware-computinginfrastructure",
+      "id": "subclassof-dataprocessinghardware-mv-computinginfrastructure",
       "domain": "dataprocessinghardware",
-      "range": "computinginfrastructure",
+      "range": "mv-computinginfrastructure",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-digitaltwininfrastructure-computinginfrastructure",
+      "id": "subclassof-digitaltwininfrastructure-mv-computinginfrastructure",
       "domain": "digitaltwininfrastructure",
-      "range": "computinginfrastructure",
+      "range": "mv-computinginfrastructure",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-hardwareacceleration-computinginfrastructure",
+      "id": "subclassof-hardwareacceleration-mv-computinginfrastructure",
       "domain": "hardwareacceleration",
-      "range": "computinginfrastructure",
+      "range": "mv-computinginfrastructure",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-hardwareresources-computinginfrastructure",
+      "id": "subclassof-hardwareresources-mv-computinginfrastructure",
       "domain": "hardwareresources",
-      "range": "computinginfrastructure",
+      "range": "mv-computinginfrastructure",
       "attributes": [
         "anonymous",
         "object"
@@ -54039,8 +54043,8 @@
       ]
     },
     {
-      "id": "subclassof-gdprarticle45-dataprotectionregulation",
-      "domain": "gdprarticle45",
+      "id": "subclassof-mv-gdprarticle45-dataprotectionregulation",
+      "domain": "mv-gdprarticle45",
       "range": "dataprotectionregulation",
       "attributes": [
         "anonymous",
@@ -54048,8 +54052,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-gltfstandard-3dassetstandard",
-      "domain": "mv-gltfstandard",
+      "id": "subclassof-gltfstandard-3dassetstandard",
+      "domain": "gltfstandard",
       "range": "3dassetstandard",
       "attributes": [
         "anonymous",
@@ -54084,8 +54088,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-hanimstandard-animationstandard",
-      "domain": "mv-hanimstandard",
+      "id": "subclassof-hanimstandard-animationstandard",
+      "domain": "hanimstandard",
       "range": "animationstandard",
       "attributes": [
         "anonymous",
@@ -54264,35 +54268,8 @@
       ]
     },
     {
-      "id": "subclassof-ai-largelanguagemodel-artificialintelligence",
-      "domain": "ai-largelanguagemodel",
-      "range": "artificialintelligence",
-      "attributes": [
-        "anonymous",
-        "object"
-      ]
-    },
-    {
-      "id": "subclassof-ai-machinelearningmodel-artificialintelligence",
-      "domain": "ai-machinelearningmodel",
-      "range": "artificialintelligence",
-      "attributes": [
-        "anonymous",
-        "object"
-      ]
-    },
-    {
-      "id": "subclassof-ai-machinelearningmodels-artificialintelligence",
-      "domain": "ai-machinelearningmodels",
-      "range": "artificialintelligence",
-      "attributes": [
-        "anonymous",
-        "object"
-      ]
-    },
-    {
-      "id": "subclassof-lidarscanning-spatialmappingtechnology",
-      "domain": "lidarscanning",
+      "id": "subclassof-mv-lidarscanning-spatialmappingtechnology",
+      "domain": "mv-lidarscanning",
       "range": "spatialmappingtechnology",
       "attributes": [
         "anonymous",
@@ -54318,9 +54295,9 @@
       ]
     },
     {
-      "id": "subclassof-ai-machinelearninginfrastructure-computinginfrastructure",
+      "id": "subclassof-ai-machinelearninginfrastructure-ai-computinginfrastructure",
       "domain": "ai-machinelearninginfrastructure",
-      "range": "computinginfrastructure",
+      "range": "ai-computinginfrastructure",
       "attributes": [
         "anonymous",
         "object"
@@ -54336,9 +54313,9 @@
       ]
     },
     {
-      "id": "subclassof-ai-machinelearningplatform-cloudcomputing",
+      "id": "subclassof-ai-machinelearningplatform-ai-cloudcomputing",
       "domain": "ai-machinelearningplatform",
-      "range": "cloudcomputing",
+      "range": "ai-cloudcomputing",
       "attributes": [
         "anonymous",
         "object"
@@ -54372,9 +54349,9 @@
       ]
     },
     {
-      "id": "subclassof-metadataregistry-datagovernance",
+      "id": "subclassof-metadataregistry-mv-datagovernance",
       "domain": "metadataregistry",
-      "range": "datagovernance",
+      "range": "mv-datagovernance",
       "attributes": [
         "anonymous",
         "object"
@@ -54417,18 +54394,9 @@
       ]
     },
     {
-      "id": "subclassof-ai-modelarchitecture-systemarchitecture",
+      "id": "subclassof-ai-modelarchitecture-ai-systemarchitecture",
       "domain": "ai-modelarchitecture",
-      "range": "systemarchitecture",
-      "attributes": [
-        "anonymous",
-        "object"
-      ]
-    },
-    {
-      "id": "subclassof-ai-modeltransparency-aiethics",
-      "domain": "ai-modeltransparency",
-      "range": "aiethics",
+      "range": "ai-systemarchitecture",
       "attributes": [
         "anonymous",
         "object"
@@ -54570,8 +54538,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-npcinteraction-gamemechanics",
-      "domain": "mv-npcinteraction",
+      "id": "subclassof-npcinteraction-gamemechanics",
+      "domain": "npcinteraction",
       "range": "gamemechanics",
       "attributes": [
         "anonymous",
@@ -55074,18 +55042,18 @@
       ]
     },
     {
-      "id": "subclassof-lidar2d-rb-lidar",
+      "id": "subclassof-lidar2d-lidar",
       "domain": "lidar2d",
-      "range": "rb-lidar",
+      "range": "lidar",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-lidar3d-rb-lidar",
+      "id": "subclassof-lidar3d-lidar",
       "domain": "lidar3d",
-      "range": "rb-lidar",
+      "range": "lidar",
       "attributes": [
         "anonymous",
         "object"

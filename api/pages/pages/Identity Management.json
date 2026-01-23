@@ -34,13 +34,13 @@
     "User Agreement Compliance"
   ],
   "wiki_links": [
-    "Blockchain",
+    "Self-Sovereign Identity",
     "Verifiable Credentials",
-    "Compliance Verification",
     "Privacy",
+    "Blockchain",
     "KYC/AML Requirements",
     "Cryptography",
-    "Self-Sovereign Identity"
+    "Compliance Verification"
   ],
   "ontology": {
     "term_id": "NGM-7002",

@@ -7,8 +7,8 @@
     "AIEthicsDomain",
     "Fairlearn",
     "AIF360",
-    "IEEE P7003-2021",
-    "ConceptualLayer"
+    "ConceptualLayer",
+    "IEEE P7003-2021"
   ],
   "ontology": {
     "term_id": "AI-0380",

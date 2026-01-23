@@ -5,14 +5,14 @@
   "backlinks": [],
   "wiki_links": [
     "Computational Infrastructure",
-    "Adaptive NPCs",
-    "Content Generation",
-    "Training Data",
-    "Neural Network Architectures",
     "Smart Virtual Environments",
-    "metaverse",
     "Personalized Experiences",
-    "Artificial Intelligence"
+    "metaverse",
+    "Adaptive NPCs",
+    "Training Data",
+    "Artificial Intelligence",
+    "Neural Network Architectures",
+    "Content Generation"
   ],
   "ontology": {
     "term_id": "MV-9762",

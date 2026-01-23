@@ -15,12 +15,12 @@
     "Data Protection"
   ],
   "wiki_links": [
-    "Cryptographic Key Management",
-    "Random Number Generation",
     "Asymmetric Encryption",
-    "Key Derivation Function",
-    "Symmetric Encryption",
+    "Random Number Generation",
     "Digital Signature",
+    "Key Derivation Function",
+    "Cryptographic Key Management",
+    "Symmetric Encryption",
     "Cryptography"
   ],
   "ontology": {

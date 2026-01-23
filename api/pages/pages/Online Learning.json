@@ -7,13 +7,13 @@
     "Loss-Function"
   ],
   "wiki_links": [
-    "Machine Learning",
-    "Continual Learning",
     "Stochastic Gradient Descent",
+    "Machine Learning",
     "Reinforcement Learning",
+    "Continual Learning",
+    "Real-Time Learning",
     "Adaptive Systems",
-    "Incremental Learning",
-    "Real-Time Learning"
+    "Incremental Learning"
   ],
   "ontology": {
     "term_id": "AI-1012",

@@ -6,12 +6,12 @@
     "Digital Ritual"
   ],
   "wiki_links": [
-    "Multi-User Systems",
-    "Spatial Synchronization",
-    "Virtual Collaboration",
     "Shared Virtual Experiences",
+    "Spatial Synchronization",
     "Real-Time Collaboration",
-    "metaverse"
+    "metaverse",
+    "Virtual Collaboration",
+    "Multi-User Systems"
   ],
   "ontology": {
     "term_id": "MV-9995",
