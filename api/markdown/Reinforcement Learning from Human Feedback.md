@@ -4,20 +4,759 @@
 	- ontology:: true
 	- term-id:: AI-0261
 	- preferred-term:: Reinforcement Learning from Human Feedback
-	- source-domain:: ai
-	- owl:class:: ai:ReinforcementLearningFromHumanFeedback
+	- source-domain:: artificial-intelligence
 	- status:: draft
-	- public-access:: true
-	- definition:: A technique for aligning language models with human preferences by training a reward model from human rankings of outputs and using reinforcement learning (typically PPO) to optimise the policy towards maximising predicted human preference. RLHF enables models to learn complex alignment objectives difficult to specify explicitly.
-	- #### Relationships
-- is-subclass-of:: [[ModelArchitecture]]
-	  id:: reinforcement-learning-from-human-feedback-relationships
+- definition:: A technique for aligning language models with human preferences by training a reward model from human rankings of outputs and using reinforcement learning (typically PPO) to optimise the policy towards maximising predicted human preference. RLHF enables models to learn complex alignment objectives difficult to specify explicitly.
+
+## Academic Context
+
+RLHF played a decisive role in directing model capabilities toward human objectives, forming the foundation for aligned assistants like InstructGPT and ChatGPT. It addresses the challenge that what humans want is easier to demonstrate or rank than to specify formally.
+
+**Primary Source**: Ouyang et al., "Training language models to follow instructions with human feedback", arXiv:2203.02155 (2022)
+
+## Key Characteristics
+
+- Three-stage training pipeline
+- Learns from human preference comparisons
+- Uses reinforcement learning (PPO)
+- Aligns models with human values
+- Reduces harmful outputs
+- Improves instruction following
+
+## Technical Details
+
+**Three-Stage Process**:
+
+**Stage 1: Supervised Fine-Tuning (SFT)**
+```
+Collect demonstrations → Train on examples → SFT model
+```
+
+**Stage 2: Reward Model Training**
+```
+Generate outputs → Human rankings → Train reward model
+```
+
+**Stage 3: RL Optimization**
+```
+Generate outputs → Reward model scores → PPO updates → Aligned model
+```
+
+**Reward Model**:
+- Trained to predict human preferences
+- Takes model output, returns scalar reward
+- Based on Bradley-Terry preference model
+- Uses pairwise comparisons
+
+**PPO (Proximal Policy Optimization)**:
+- Updates policy (language model)
+- Maximizes expected reward
+- Includes KL penalty to stay close to SFT model
+- Prevents reward hacking
+
+## Usage in AI/ML
+
+"RLHF played a decisive role in directing model capabilities toward human objectives in InstructGPT and ChatGPT."
+
+Applications:
+- Instruction-following assistants (ChatGPT, Claude)
+- Reducing harmful/toxic outputs
+- Improving factual accuracy
+- Enhancing helpfulness
+- Task-specific alignment
+
+## Related Concepts
+
+- **Reward Model**: Component predicting human preference
+- **Proximal Policy Optimisation (PPO)**: RL algorithm used
+- **Direct Preference Optimisation (DPO)**: Alternative to RLHF
+- **Constitutional AI**: Related alignment approach
+- **Preference Learning**: Core learning paradigm
+
+## RLHF Pipeline Details
+
+**Data Collection (Stage 1)**:
+- Human labelers write demonstrations
+- Covering diverse prompts and tasks
+- High-quality instruction-following examples
+
+**Preference Collection (Stage 2)**:
+- Sample multiple outputs per prompt
+- Humans rank outputs (best to worst)
+- Typically 4-9 outputs per prompt
+- Creates preference dataset
+
+**RL Training (Stage 3)**:
+```
+Objective: max E[R(x,y)] - β·KL(π||π_SFT)
+
+Where:
+- R: Reward model
+- π: Current policy
+- π_SFT: SFT model (reference)
+- β: KL penalty coefficient
+```
+
+## Advantages
+
+**Alignment Quality**:
+- Captures nuanced human preferences
+- Handles complex alignment objectives
+- More flexible than rule-based approaches
+- Improves with scale
+
+**Practical Benefits**:
+- Significantly improves model usability
+- Reduces harmful outputs
+- Better instruction following
+- Enhanced truthfulness
+
+## Challenges
+
+**Data Collection**:
+- Expensive human labeling
+- Requires many comparisons (10K-100K+)
+- Quality depends on labeler expertise
+- Potential biases in preferences
+
+**Training Complexity**:
+- Unstable RL training
+- Reward hacking risks
+- Hyperparameter sensitivity
+- Computational cost
+
+**Reward Model Limitations**:
+- May not capture all human values
+- Can be gamed/exploited
+- Limited by training data
+- Proxy for true preferences
+
+## Best Practices
+
+**Data Quality**:
+- Diverse prompt coverage
+- Multiple independent rankings
+- Clear labeling guidelines
+- Quality control for labelers
+
+**Training Stability**:
+- Careful KL penalty tuning (β)
+- Monitor reward model predictions
+- Watch for reward hacking
+- Use multiple checkpoints
+
+**Evaluation**:
+- Human evaluation on held-out prompts
+- Automated metrics (helpfulness, harmfulness)
+- A/B testing with users
+- Long-term monitoring
+
+## RLHF vs. Alternatives
+
+**RLHF**:
+- Most established approach
+- Proven effectiveness
+- Complex multi-stage pipeline
+- Requires significant compute
+
+**DPO (Direct Preference Optimization)**:
+- Simpler (no reward model or RL)
+- More stable training
+- Comparable performance
+- Gaining popularity
+
+**Constitutional AI**:
+- Uses AI feedback instead of human
+- More scalable
+- Complementary to RLHF
+
+## Historical Development
+
+- 2017-2019: Early RLHF experiments
+- 2020: Scaling to larger models
+- 2022: InstructGPT demonstrates effectiveness
+- 2022: ChatGPT popularises RLHF
+- 2023+: Refinements and alternatives (DPO)
+- 2024+: Combination with other alignment methods
+
+## Impact on Model Behaviour
+
+**InstructGPT Improvements**:
+- More truthful outputs
+- Reduced toxicity (25% reduction)
+- Better instruction following
+- Preferred by labelers (85% vs. GPT-3)
+- Improved alignment
+
+**Trade-offs**:
+- May reduce creativity slightly
+- Can be overly cautious
+- May refuse benign requests
+- Potential alignment tax on capabilities
+
+## Reward Hacking Prevention
+
+**KL Penalty**:
+- Prevents drastic policy changes
+- Keeps model close to SFT baseline
+- Balances optimization vs. stability
+
+**Monitoring**:
+- Watch for unusual reward patterns
+- Check output quality manually
+- Validate on diverse prompts
+- Use held-out test set
+
+## Significance
+
+RLHF represented a breakthrough in AI alignment, enabling language models to be steered toward human preferences at scale, transforming raw language models into helpful, harmless assistants aligned with user intent.
+
+## OWL Functional Syntax
+
+```clojure
+(Declaration (Class :RLHF))
+(SubClassOf :RLHF :TrainingTechnique)
+(SubClassOf :RLHF
+  (ObjectSomeValuesFrom :trainsComponent :RewardModel))
+(SubClassOf :RLHF
+  (ObjectSomeValuesFrom :learnsFrom :HumanPreferenceRankings))
+(SubClassOf :RLHF
+  (ObjectSomeValuesFrom :uses :ReinforcementLearning))
+(SubClassOf :RLHF
+  (ObjectSomeValuesFrom :optimizesVia :ProximalPolicyOptimization))
+(SubClassOf :RLHF
+  (ObjectSomeValuesFrom :aligns :LanguageModelWithHumanValues))
+(SubClassOf :RLHF
+  (ObjectSomeValuesFrom :followsPhase :SupervisedFineTuning))
+(SubClassOf :RLHF
+  (ObjectSomeValuesFrom :reduces :HarmfulOutputs))
+
+(AnnotationAssertion rdfs:comment :RLHF
+  "Technique aligning language models with human preferences by training reward model from human rankings and using reinforcement learning to optimize policy"@en)
+(AnnotationAssertion :hasAcademicSource :RLHF
+  "Ouyang et al., InstructGPT, arXiv:2203.02155 (2022)")
+```
+
+## UK English Notes
+
+- "Optimise" (not "optimize")
+- "Behaviour" (not "behavior")
+- "Labelers" (accepted variant, or "labellers")
+
+**Last Updated**: 2025-10-27
+**Verification Status**: Verified against InstructGPT paper (arXiv:2203.02155)
+	- maturity:: draft
+	- owl:class:: ai:ReinforcementLearningfromHumanFeedback
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Reinforcement Learning from Human Feedback
+	- A technique for aligning language models with human preferences by training a reward model from human rankings of outputs and using reinforcement learning (typically PPO) to optimise the policy towards maximising predicted human preference. RLHF enables models to learn complex alignment objectives difficult to specify explicitly.
+
+## Academic Context
+
+RLHF played a decisive role in directing model capabilities toward human objectives, forming the foundation for aligned assistants like InstructGPT and ChatGPT. It addresses the challenge that what humans want is easier to demonstrate or rank than to specify formally.
+
+**Primary Source**: Ouyang et al., "Training language models to follow instructions with human feedback", arXiv:2203.02155 (2022)
+
+## Key Characteristics
+
+- Three-stage training pipeline
+- Learns from human preference comparisons
+- Uses reinforcement learning (PPO)
+- Aligns models with human values
+- Reduces harmful outputs
+- Improves instruction following
+
+## Technical Details
+
+**Three-Stage Process**:
+
+**Stage 1: Supervised Fine-Tuning (SFT)**
+```
+Collect demonstrations → Train on examples → SFT model
+```
+
+**Stage 2: Reward Model Training**
+```
+Generate outputs → Human rankings → Train reward model
+```
+
+**Stage 3: RL Optimization**
+```
+Generate outputs → Reward model scores → PPO updates → Aligned model
+```
+
+**Reward Model**:
+- Trained to predict human preferences
+- Takes model output, returns scalar reward
+- Based on Bradley-Terry preference model
+- Uses pairwise comparisons
+
+**PPO (Proximal Policy Optimization)**:
+- Updates policy (language model)
+- Maximizes expected reward
+- Includes KL penalty to stay close to SFT model
+- Prevents reward hacking
+
+## Usage in AI/ML
+
+"RLHF played a decisive role in directing model capabilities toward human objectives in InstructGPT and ChatGPT."
+
+Applications:
+- Instruction-following assistants (ChatGPT, Claude)
+- Reducing harmful/toxic outputs
+- Improving factual accuracy
+- Enhancing helpfulness
+- Task-specific alignment
+
+## Related Concepts
+
+- **Reward Model**: Component predicting human preference
+- **Proximal Policy Optimisation (PPO)**: RL algorithm used
+- **Direct Preference Optimisation (DPO)**: Alternative to RLHF
+- **Constitutional AI**: Related alignment approach
+- **Preference Learning**: Core learning paradigm
+
+## RLHF Pipeline Details
+
+**Data Collection (Stage 1)**:
+- Human labelers write demonstrations
+- Covering diverse prompts and tasks
+- High-quality instruction-following examples
+
+**Preference Collection (Stage 2)**:
+- Sample multiple outputs per prompt
+- Humans rank outputs (best to worst)
+- Typically 4-9 outputs per prompt
+- Creates preference dataset
+
+**RL Training (Stage 3)**:
+```
+Objective: max E[R(x,y)] - β·KL(π||π_SFT)
+
+Where:
+- R: Reward model
+- π: Current policy
+- π_SFT: SFT model (reference)
+- β: KL penalty coefficient
+```
+
+## Advantages
+
+**Alignment Quality**:
+- Captures nuanced human preferences
+- Handles complex alignment objectives
+- More flexible than rule-based approaches
+- Improves with scale
+
+**Practical Benefits**:
+- Significantly improves model usability
+- Reduces harmful outputs
+- Better instruction following
+- Enhanced truthfulness
+
+## Challenges
+
+**Data Collection**:
+- Expensive human labeling
+- Requires many comparisons (10K-100K+)
+- Quality depends on labeler expertise
+- Potential biases in preferences
+
+**Training Complexity**:
+- Unstable RL training
+- Reward hacking risks
+- Hyperparameter sensitivity
+- Computational cost
+
+**Reward Model Limitations**:
+- May not capture all human values
+- Can be gamed/exploited
+- Limited by training data
+- Proxy for true preferences
+
+## Best Practices
+
+**Data Quality**:
+- Diverse prompt coverage
+- Multiple independent rankings
+- Clear labeling guidelines
+- Quality control for labelers
+
+**Training Stability**:
+- Careful KL penalty tuning (β)
+- Monitor reward model predictions
+- Watch for reward hacking
+- Use multiple checkpoints
+
+**Evaluation**:
+- Human evaluation on held-out prompts
+- Automated metrics (helpfulness, harmfulness)
+- A/B testing with users
+- Long-term monitoring
+
+## RLHF vs. Alternatives
+
+**RLHF**:
+- Most established approach
+- Proven effectiveness
+- Complex multi-stage pipeline
+- Requires significant compute
+
+**DPO (Direct Preference Optimization)**:
+- Simpler (no reward model or RL)
+- More stable training
+- Comparable performance
+- Gaining popularity
+
+**Constitutional AI**:
+- Uses AI feedback instead of human
+- More scalable
+- Complementary to RLHF
+
+## Historical Development
+
+- 2017-2019: Early RLHF experiments
+- 2020: Scaling to larger models
+- 2022: InstructGPT demonstrates effectiveness
+- 2022: ChatGPT popularises RLHF
+- 2023+: Refinements and alternatives (DPO)
+- 2024+: Combination with other alignment methods
+
+## Impact on Model Behaviour
+
+**InstructGPT Improvements**:
+- More truthful outputs
+- Reduced toxicity (25% reduction)
+- Better instruction following
+- Preferred by labelers (85% vs. GPT-3)
+- Improved alignment
+
+**Trade-offs**:
+- May reduce creativity slightly
+- Can be overly cautious
+- May refuse benign requests
+- Potential alignment tax on capabilities
+
+## Reward Hacking Prevention
+
+**KL Penalty**:
+- Prevents drastic policy changes
+- Keeps model close to SFT baseline
+- Balances optimization vs. stability
+
+**Monitoring**:
+- Watch for unusual reward patterns
+- Check output quality manually
+- Validate on diverse prompts
+- Use held-out test set
+
+## Significance
+
+RLHF represented a breakthrough in AI alignment, enabling language models to be steered toward human preferences at scale, transforming raw language models into helpful, harmless assistants aligned with user intent.
+
+## OWL Functional Syntax
+
+```clojure
+(Declaration (Class :RLHF))
+(SubClassOf :RLHF :TrainingTechnique)
+(SubClassOf :RLHF
+  (ObjectSomeValuesFrom :trainsComponent :RewardModel))
+(SubClassOf :RLHF
+  (ObjectSomeValuesFrom :learnsFrom :HumanPreferenceRankings))
+(SubClassOf :RLHF
+  (ObjectSomeValuesFrom :uses :ReinforcementLearning))
+(SubClassOf :RLHF
+  (ObjectSomeValuesFrom :optimizesVia :ProximalPolicyOptimization))
+(SubClassOf :RLHF
+  (ObjectSomeValuesFrom :aligns :LanguageModelWithHumanValues))
+(SubClassOf :RLHF
+  (ObjectSomeValuesFrom :followsPhase :SupervisedFineTuning))
+(SubClassOf :RLHF
+  (ObjectSomeValuesFrom :reduces :HarmfulOutputs))
+
+(AnnotationAssertion rdfs:comment :RLHF
+  "Technique aligning language models with human preferences by training reward model from human rankings and using reinforcement learning to optimize policy"@en)
+(AnnotationAssertion :hasAcademicSource :RLHF
+  "Ouyang et al., InstructGPT, arXiv:2203.02155 (2022)")
+```
+
+## UK English Notes
+
+- "Optimise" (not "optimize")
+- "Behaviour" (not "behavior")
+- "Labelers" (accepted variant, or "labellers")
+
+**Last Updated**: 2025-10-27
+**Verification Status**: Verified against InstructGPT paper (arXiv:2203.02155)
+	-
+	- ### Original Content
 	  collapsed:: true
-		- is-subclass-of:: [[ReinforcementLearning]]
+		- ```
+# Reinforcement Learning from Human Feedback
+		  
+		  **Term ID**: AI-0261
+		  **Category**: Training Technique
+		  **Ontology Layer**: AI/ML Methodology
+		  
+		  ## Definition
+		  
+		  A technique for aligning language models with human preferences by training a reward model from human rankings of outputs and using reinforcement learning (typically PPO) to optimise the policy towards maximising predicted human preference. RLHF enables models to learn complex alignment objectives difficult to specify explicitly.
+		  
+		  ## Academic Context
+		  
+		  RLHF played a decisive role in directing model capabilities toward human objectives, forming the foundation for aligned assistants like InstructGPT and ChatGPT. It addresses the challenge that what humans want is easier to demonstrate or rank than to specify formally.
+		  
+		  **Primary Source**: Ouyang et al., "Training language models to follow instructions with human feedback", arXiv:2203.02155 (2022)
+		  
+		  ## Key Characteristics
+		  
+		  - Three-stage training pipeline
+		  - Learns from human preference comparisons
+		  - Uses reinforcement learning (PPO)
+		  - Aligns models with human values
+		  - Reduces harmful outputs
+		  - Improves instruction following
+		  
+		  ## Technical Details
+		  
+		  **Three-Stage Process**:
+		  
+		  **Stage 1: Supervised Fine-Tuning (SFT)**
+		  ```
+		  Collect demonstrations → Train on examples → SFT model
+		  ```
+		  
+		  **Stage 2: Reward Model Training**
+		  ```
+		  Generate outputs → Human rankings → Train reward model
+		  ```
+		  
+		  **Stage 3: RL Optimization**
+		  ```
+		  Generate outputs → Reward model scores → PPO updates → Aligned model
+		  ```
+		  
+		  **Reward Model**:
+		  - Trained to predict human preferences
+		  - Takes model output, returns scalar reward
+		  - Based on Bradley-Terry preference model
+		  - Uses pairwise comparisons
+		  
+		  **PPO (Proximal Policy Optimization)**:
+		  - Updates policy (language model)
+		  - Maximizes expected reward
+		  - Includes KL penalty to stay close to SFT model
+		  - Prevents reward hacking
+		  
+		  ## Usage in AI/ML
+		  
+		  "RLHF played a decisive role in directing model capabilities toward human objectives in InstructGPT and ChatGPT."
+		  
+		  Applications:
+		  - Instruction-following assistants (ChatGPT, Claude)
+		  - Reducing harmful/toxic outputs
+		  - Improving factual accuracy
+		  - Enhancing helpfulness
+		  - Task-specific alignment
+		  
+		  ## Related Concepts
+		  
+		  - **Reward Model**: Component predicting human preference
+		  - **Proximal Policy Optimisation (PPO)**: RL algorithm used
+		  - **Direct Preference Optimisation (DPO)**: Alternative to RLHF
+		  - **Constitutional AI**: Related alignment approach
+		  - **Preference Learning**: Core learning paradigm
+		  
+		  ## RLHF Pipeline Details
+		  
+		  **Data Collection (Stage 1)**:
+		  - Human labelers write demonstrations
+		  - Covering diverse prompts and tasks
+		  - High-quality instruction-following examples
+		  
+		  **Preference Collection (Stage 2)**:
+		  - Sample multiple outputs per prompt
+		  - Humans rank outputs (best to worst)
+		  - Typically 4-9 outputs per prompt
+		  - Creates preference dataset
+		  
+		  **RL Training (Stage 3)**:
+		  ```
+		  Objective: max E[R(x,y)] - β·KL(π||π_SFT)
+		  
+		  Where:
+		  - R: Reward model
+		  - π: Current policy
+		  - π_SFT: SFT model (reference)
+		  - β: KL penalty coefficient
+		  ```
+		  
+		  ## Advantages
+		  
+		  **Alignment Quality**:
+		  - Captures nuanced human preferences
+		  - Handles complex alignment objectives
+		  - More flexible than rule-based approaches
+		  - Improves with scale
+		  
+		  **Practical Benefits**:
+		  - Significantly improves model usability
+		  - Reduces harmful outputs
+		  - Better instruction following
+		  - Enhanced truthfulness
+		  
+		  ## Challenges
+		  
+		  **Data Collection**:
+		  - Expensive human labeling
+		  - Requires many comparisons (10K-100K+)
+		  - Quality depends on labeler expertise
+		  - Potential biases in preferences
+		  
+		  **Training Complexity**:
+		  - Unstable RL training
+		  - Reward hacking risks
+		  - Hyperparameter sensitivity
+		  - Computational cost
+		  
+		  **Reward Model Limitations**:
+		  - May not capture all human values
+		  - Can be gamed/exploited
+		  - Limited by training data
+		  - Proxy for true preferences
+		  
+		  ## Best Practices
+		  
+		  **Data Quality**:
+		  - Diverse prompt coverage
+		  - Multiple independent rankings
+		  - Clear labeling guidelines
+		  - Quality control for labelers
+		  
+		  **Training Stability**:
+		  - Careful KL penalty tuning (β)
+		  - Monitor reward model predictions
+		  - Watch for reward hacking
+		  - Use multiple checkpoints
+		  
+		  **Evaluation**:
+		  - Human evaluation on held-out prompts
+		  - Automated metrics (helpfulness, harmfulness)
+		  - A/B testing with users
+		  - Long-term monitoring
+		  
+		  ## RLHF vs. Alternatives
+		  
+		  **RLHF**:
+		  - Most established approach
+		  - Proven effectiveness
+		  - Complex multi-stage pipeline
+		  - Requires significant compute
+		  
+		  **DPO (Direct Preference Optimization)**:
+		  - Simpler (no reward model or RL)
+		  - More stable training
+		  - Comparable performance
+		  - Gaining popularity
+		  
+		  **Constitutional AI**:
+		  - Uses AI feedback instead of human
+		  - More scalable
+		  - Complementary to RLHF
+		  
+		  ## Historical Development
+		  
+		  - 2017-2019: Early RLHF experiments
+		  - 2020: Scaling to larger models
+		  - 2022: InstructGPT demonstrates effectiveness
+		  - 2022: ChatGPT popularises RLHF
+		  - 2023+: Refinements and alternatives (DPO)
+		  - 2024+: Combination with other alignment methods
+		  
+		  ## Impact on Model Behaviour
+		  
+		  **InstructGPT Improvements**:
+		  - More truthful outputs
+		  - Reduced toxicity (25% reduction)
+		  - Better instruction following
+		  - Preferred by labelers (85% vs. GPT-3)
+		  - Improved alignment
+		  
+		  **Trade-offs**:
+		  - May reduce creativity slightly
+		  - Can be overly cautious
+		  - May refuse benign requests
+		  - Potential alignment tax on capabilities
+		  
+		  ## Reward Hacking Prevention
+		  
+		  **KL Penalty**:
+		  - Prevents drastic policy changes
+		  - Keeps model close to SFT baseline
+		  - Balances optimization vs. stability
+		  
+		  **Monitoring**:
+		  - Watch for unusual reward patterns
+		  - Check output quality manually
+		  - Validate on diverse prompts
+		  - Use held-out test set
+		  
+		  ## Significance
+		  
+		  RLHF represented a breakthrough in AI alignment, enabling language models to be steered toward human preferences at scale, transforming raw language models into helpful, harmless assistants aligned with user intent.
+		  
+		  ## OWL Functional Syntax
+		  
+		  ```clojure
+		  (Declaration (Class :RLHF))
+		  (SubClassOf :RLHF :TrainingTechnique)
+		  (SubClassOf :RLHF
+		    (ObjectSomeValuesFrom :trainsComponent :RewardModel))
+		  (SubClassOf :RLHF
+		    (ObjectSomeValuesFrom :learnsFrom :HumanPreferenceRankings))
+		  (SubClassOf :RLHF
+		    (ObjectSomeValuesFrom :uses :ReinforcementLearning))
+		  (SubClassOf :RLHF
+		    (ObjectSomeValuesFrom :optimizesVia :ProximalPolicyOptimization))
+		  (SubClassOf :RLHF
+		    (ObjectSomeValuesFrom :aligns :LanguageModelWithHumanValues))
+		  (SubClassOf :RLHF
+		    (ObjectSomeValuesFrom :followsPhase :SupervisedFineTuning))
+		  (SubClassOf :RLHF
+		    (ObjectSomeValuesFrom :reduces :HarmfulOutputs))
+		  
+		  (AnnotationAssertion rdfs:comment :RLHF
+		    "Technique aligning language models with human preferences by training reward model from human rankings and using reinforcement learning to optimize policy"@en)
+		  (AnnotationAssertion :hasAcademicSource :RLHF
+		    "Ouyang et al., InstructGPT, arXiv:2203.02155 (2022)")
+		  ```
+		  
+		  ## UK English Notes
+		  
+		  - "Optimise" (not "optimize")
+		  - "Behaviour" (not "behavior")
+		  - "Labelers" (accepted variant, or "labellers")
+		  
+		  **Last Updated**: 2025-10-27
+		  **Verification Status**: Verified against InstructGPT paper (arXiv:2203.02155)
+		  
+		  ```
 
-## Reinforcement Learning from Human Feedback
+- public-access:: true
+	- definition:: A technique for aligning language models with human preferences by training a reward model from human rankings of outputs and using reinforcement learning (typically PPO) to optimise the policy towards maximising predicted human preference. RLHF enables models to learn complex alignment objectives difficult to specify explicitly.
 
-Reinforcement Learning from Human Feedback refers to a technique for aligning language models with human preferences by training a reward model from human rankings of outputs and using reinforcement learning (typically ppo) to optimise the policy towards maximising predicted human preference. rlhf enables models to learn complex alignment objectives difficult to specify explicitly.
+
+## Academic Context
+
+- Reinforcement Learning from Human Feedback (RLHF) is a machine learning technique designed to align AI agents, particularly language models, with human preferences by training a reward model from human feedback and subsequently optimising policies via reinforcement learning algorithms such as Proximal Policy Optimization (PPO).
+  - This approach addresses the challenge of explicitly specifying complex alignment objectives by learning a reward function that reflects human judgements, typically derived from preference comparisons or rankings of model outputs.
+  - RLHF builds on classical reinforcement learning principles, where an agent iteratively improves its policy to maximise cumulative reward, but replaces hand-crafted reward functions with learned reward models trained on human data.
+- The academic foundations of RLHF trace back to early frameworks like TAMER (Knox & Stone, 2009), which used explicit scalar human rewards, evolving towards preference-based feedback mechanisms that better capture nuanced human judgements.
+- RLHF has become a cornerstone in advancing generative AI, enabling models to produce outputs that are more aligned with human values and less prone to generating harmful or nonsensical content.
+
+## Current Landscape (2025)
 
 - RLHF is widely adopted in industry for training large language models (LLMs) and other AI systems, underpinning popular conversational agents and content generation tools.
   - Notable organisations include OpenAI, Anthropic, and DeepMind, which employ RLHF to refine model behaviour and safety.
@@ -34,22 +773,14 @@ Reinforcement Learning from Human Feedback refers to a technique for aligning la
   - Challenges in scaling feedback collection and ensuring robustness against adversarial or noisy inputs.
 - Standards and frameworks for RLHF are emerging, focusing on transparency in feedback collection, reproducibility of reward modelling, and ethical considerations in deployment.
 
-## Technical Details
-
-- **Id**: reinforcement-learning-from-human-feedback-ontology
-- **Collapsed**: true
-- **Source Domain**: ai
-- **Status**: draft
-- **Public Access**: true
-
 ## Research & Literature
 
 - Key academic papers and sources include:
-  - Christiano, P. F., Leike, J., Brown, T., et al. (2017). *Deep reinforcement learning from human preferences*. Advances in Neural Information Processing Systems, 30.
+  - Christiano, P. F., Leike, J., Brown, T., et al. (2017). *Deep reinforcement learning from human preferences*. Advances in Neural Information Processing Systems, 30.  
     DOI: 10.5555/3295222.3295349
-  - Knox, W. B., & Stone, P. (2009). *Interactively shaping agents via human reinforcement: The TAMER framework*. Proceedings of the Fifth International Conference on Knowledge Capture.
+  - Knox, W. B., & Stone, P. (2009). *Interactively shaping agents via human reinforcement: The TAMER framework*. Proceedings of the Fifth International Conference on Knowledge Capture.  
     DOI: 10.1145/1597735.1597748
-  - Ibarz, J., Leike, J., Berner, C., et al. (2018). *Reward learning from human preferences and demonstrations in Atari*. Advances in Neural Information Processing Systems, 31.
+  - Ibarz, J., Leike, J., Berner, C., et al. (2018). *Reward learning from human preferences and demonstrations in Atari*. Advances in Neural Information Processing Systems, 31.  
     URL: https://arxiv.org/abs/1811.06521
   - Lambert, N. (2025). *RLHF Book*. Available at: https://rlhfbook.com
 - Ongoing research directions focus on:
@@ -83,10 +814,11 @@ Reinforcement Learning from Human Feedback refers to a technique for aligning la
 
 ## References
 
-1. Christiano, P. F., Leike, J., Brown, T., et al. (2017). Deep reinforcement learning from human preferences. *Advances in Neural Information Processing Systems*, 30. DOI: 10.5555/3295222.3295349
-2. Knox, W. B., & Stone, P. (2009). Interactively shaping agents via human reinforcement: The TAMER framework. *Proceedings of the Fifth International Conference on Knowledge Capture*. DOI: 10.1145/1597735.1597748
-3. Ibarz, J., Leike, J., Berner, C., et al. (2018). Reward learning from human preferences and demonstrations in Atari. *Advances in Neural Information Processing Systems*, 31. URL: https://arxiv.org/abs/1811.06521
+1. Christiano, P. F., Leike, J., Brown, T., et al. (2017). Deep reinforcement learning from human preferences. *Advances in Neural Information Processing Systems*, 30. DOI: 10.5555/3295222.3295349  
+2. Knox, W. B., & Stone, P. (2009). Interactively shaping agents via human reinforcement: The TAMER framework. *Proceedings of the Fifth International Conference on Knowledge Capture*. DOI: 10.1145/1597735.1597748  
+3. Ibarz, J., Leike, J., Berner, C., et al. (2018). Reward learning from human preferences and demonstrations in Atari. *Advances in Neural Information Processing Systems*, 31. URL: https://arxiv.org/abs/1811.06521  
 4. Lambert, N. (2025). *RLHF Book*. Available at: https://rlhfbook.com
+
 
 ## Metadata
 

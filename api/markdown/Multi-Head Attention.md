@@ -4,46 +4,312 @@
 	- ontology:: true
 	- term-id:: AI-0198
 	- preferred-term:: Multi Head Attention
-	- source-domain:: ai
-	- owl:class:: ai:MultiHeadAttention
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
-	- definition:: An extension of the attention mechanism that allows the model to jointly attend to information from different representation subspaces at different positions, using multiple attention heads in parallel.
-	- #### Relationships
-- is-subclass-of:: [[ModelArchitecture]]
-	  id:: multi-head-attention-relationships
+- definition:: An extension of the attention mechanism that allows the model to jointly attend to information from different representation subspaces at different positions, using multiple attention heads in parallel.
+
+## Characteristics
+
+- **Parallel Attention Heads**: Multiple attention mechanisms operating simultaneously
+- **Subspace Learning**: Each head learns different aspects of relationships
+- **Concatenation and Projection**: Outputs are concatenated and linearly projected
+- **Enhanced Representation**: Captures diverse patterns and dependencies
+
+## Academic Foundations
+
+**Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
+
+**Design Rationale**: Enables the model to jointly attend to information from different representation subspaces, which would be impossible with a single attention mechanism.
+
+## Technical Context
+
+Multi-head attention allows the model to focus simultaneously on different parts of the sequence, enriching the representation and improving model performance. Typically uses 8-16 heads in modern transformer implementations.
+
+## Ontological Relationships
+
+- **Broader Term**: Attention Mechanism
+- **Related Terms**: Self-Attention, Attention Head, Scaled Dot-Product Attention
+- **Component Of**: Transformer Architecture
+
+## Usage Context
+
+"Multi-head attention allows the model to focus simultaneously on different parts of the sequence, enriching the representation and improving model performance."
+
+## OWL Functional Syntax
+
+```clojure
+(Declaration (Class :MultiHeadAttention))
+(AnnotationAssertion rdfs:label :MultiHeadAttention "Multi-Head Attention"@en)
+(AnnotationAssertion rdfs:comment :MultiHeadAttention
+  "An extension of attention that uses multiple attention heads operating in parallel on different representation subspaces."@en)
+(AnnotationAssertion :hasSource :MultiHeadAttention
+  "Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762 (2017)"@en)
+
+;; Taxonomic relationships
+(SubClassOf :MultiHeadAttention :AttentionMechanism)
+
+;; Structural composition
+(SubClassOf :MultiHeadAttention
+  (ObjectSomeValuesFrom :consistsOfComponent :AttentionHead))
+(SubClassOf :MultiHeadAttention
+  (ObjectMinCardinality 2 :consistsOfComponent :AttentionHead))
+
+;; Internal mechanisms
+(SubClassOf :MultiHeadAttention
+  (ObjectSomeValuesFrom :usesComponent :ScaledDotProductAttention))
+(SubClassOf :MultiHeadAttention
+  (ObjectSomeValuesFrom :performsOperation :LinearProjection))
+(SubClassOf :MultiHeadAttention
+  (ObjectSomeValuesFrom :performsOperation :Concatenation))
+
+;; Capabilities
+(SubClassOf :MultiHeadAttention
+  (ObjectSomeValuesFrom :enablesCapability :SubspaceRepresentationLearning))
+(SubClassOf :MultiHeadAttention
+  (ObjectSomeValuesFrom :enablesCapability :ParallelAttentionComputation))
+
+;; Typical configuration
+(DataPropertyAssertion :typicalHeadCount :MultiHeadAttention "8"^^xsd:integer)
+(DataPropertyAssertion :largeModelHeadCount :MultiHeadAttention "16"^^xsd:integer)
+(DataPropertyAssertion :enablesDiversePatternLearning :MultiHeadAttention "true"^^xsd:boolean)
+
+;; Architectural role
+(SubClassOf :TransformerArchitecture
+  (ObjectSomeValuesFrom :implementsMechanism :MultiHeadAttention))
+```
+
+## References
+
+- Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
+
+---
+
+*Ontology Term managed by AI-Grounded Ontology Working Group*
+*UK English Spelling Standards Applied*
+	- maturity:: draft
+	- owl:class:: mv:MultiHeadAttention
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Multi Head Attention
+	- An extension of the attention mechanism that allows the model to jointly attend to information from different representation subspaces at different positions, using multiple attention heads in parallel.
+
+## Characteristics
+
+- **Parallel Attention Heads**: Multiple attention mechanisms operating simultaneously
+- **Subspace Learning**: Each head learns different aspects of relationships
+- **Concatenation and Projection**: Outputs are concatenated and linearly projected
+- **Enhanced Representation**: Captures diverse patterns and dependencies
+
+## Academic Foundations
+
+**Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
+
+**Design Rationale**: Enables the model to jointly attend to information from different representation subspaces, which would be impossible with a single attention mechanism.
+
+## Technical Context
+
+Multi-head attention allows the model to focus simultaneously on different parts of the sequence, enriching the representation and improving model performance. Typically uses 8-16 heads in modern transformer implementations.
+
+## Ontological Relationships
+
+- **Broader Term**: Attention Mechanism
+- **Related Terms**: Self-Attention, Attention Head, Scaled Dot-Product Attention
+- **Component Of**: Transformer Architecture
+
+## Usage Context
+
+"Multi-head attention allows the model to focus simultaneously on different parts of the sequence, enriching the representation and improving model performance."
+
+## OWL Functional Syntax
+
+```clojure
+(Declaration (Class :MultiHeadAttention))
+(AnnotationAssertion rdfs:label :MultiHeadAttention "Multi-Head Attention"@en)
+(AnnotationAssertion rdfs:comment :MultiHeadAttention
+  "An extension of attention that uses multiple attention heads operating in parallel on different representation subspaces."@en)
+(AnnotationAssertion :hasSource :MultiHeadAttention
+  "Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762 (2017)"@en)
+
+;; Taxonomic relationships
+(SubClassOf :MultiHeadAttention :AttentionMechanism)
+
+;; Structural composition
+(SubClassOf :MultiHeadAttention
+  (ObjectSomeValuesFrom :consistsOfComponent :AttentionHead))
+(SubClassOf :MultiHeadAttention
+  (ObjectMinCardinality 2 :consistsOfComponent :AttentionHead))
+
+;; Internal mechanisms
+(SubClassOf :MultiHeadAttention
+  (ObjectSomeValuesFrom :usesComponent :ScaledDotProductAttention))
+(SubClassOf :MultiHeadAttention
+  (ObjectSomeValuesFrom :performsOperation :LinearProjection))
+(SubClassOf :MultiHeadAttention
+  (ObjectSomeValuesFrom :performsOperation :Concatenation))
+
+;; Capabilities
+(SubClassOf :MultiHeadAttention
+  (ObjectSomeValuesFrom :enablesCapability :SubspaceRepresentationLearning))
+(SubClassOf :MultiHeadAttention
+  (ObjectSomeValuesFrom :enablesCapability :ParallelAttentionComputation))
+
+;; Typical configuration
+(DataPropertyAssertion :typicalHeadCount :MultiHeadAttention "8"^^xsd:integer)
+(DataPropertyAssertion :largeModelHeadCount :MultiHeadAttention "16"^^xsd:integer)
+(DataPropertyAssertion :enablesDiversePatternLearning :MultiHeadAttention "true"^^xsd:boolean)
+
+;; Architectural role
+(SubClassOf :TransformerArchitecture
+  (ObjectSomeValuesFrom :implementsMechanism :MultiHeadAttention))
+```
+
+## References
+
+- Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
+
+---
+
+*Ontology Term managed by AI-Grounded Ontology Working Group*
+*UK English Spelling Standards Applied*
+	-
+	- ### Original Content
 	  collapsed:: true
-		- is-subclass-of:: [[AttentionMechanism]]
+		- ```
+# Multi-Head Attention
+		  
+		  **Term ID**: AI-0198
+		  **Category**: Architecture
+		  **Ontology Version**: 1.0
+		  **Last Updated**: 2025-10-27
+		  
+		  ## Definition
+		  
+		  An extension of the attention mechanism that allows the model to jointly attend to information from different representation subspaces at different positions, using multiple attention heads in parallel.
+		  
+		  ## Characteristics
+		  
+		  - **Parallel Attention Heads**: Multiple attention mechanisms operating simultaneously
+		  - **Subspace Learning**: Each head learns different aspects of relationships
+		  - **Concatenation and Projection**: Outputs are concatenated and linearly projected
+		  - **Enhanced Representation**: Captures diverse patterns and dependencies
+		  
+		  ## Academic Foundations
+		  
+		  **Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
+		  
+		  **Design Rationale**: Enables the model to jointly attend to information from different representation subspaces, which would be impossible with a single attention mechanism.
+		  
+		  ## Technical Context
+		  
+		  Multi-head attention allows the model to focus simultaneously on different parts of the sequence, enriching the representation and improving model performance. Typically uses 8-16 heads in modern transformer implementations.
+		  
+		  ## Ontological Relationships
+		  
+		  - **Broader Term**: Attention Mechanism
+		  - **Related Terms**: Self-Attention, Attention Head, Scaled Dot-Product Attention
+		  - **Component Of**: Transformer Architecture
+		  
+		  ## Usage Context
+		  
+		  "Multi-head attention allows the model to focus simultaneously on different parts of the sequence, enriching the representation and improving model performance."
+		  
+		  ## OWL Functional Syntax
+		  
+		  ```clojure
+		  (Declaration (Class :MultiHeadAttention))
+		  (AnnotationAssertion rdfs:label :MultiHeadAttention "Multi-Head Attention"@en)
+		  (AnnotationAssertion rdfs:comment :MultiHeadAttention
+		    "An extension of attention that uses multiple attention heads operating in parallel on different representation subspaces."@en)
+		  (AnnotationAssertion :hasSource :MultiHeadAttention
+		    "Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762 (2017)"@en)
+		  
+		  ;; Taxonomic relationships
+		  (SubClassOf :MultiHeadAttention :AttentionMechanism)
+		  
+		  ;; Structural composition
+		  (SubClassOf :MultiHeadAttention
+		    (ObjectSomeValuesFrom :consistsOfComponent :AttentionHead))
+		  (SubClassOf :MultiHeadAttention
+		    (ObjectMinCardinality 2 :consistsOfComponent :AttentionHead))
+		  
+		  ;; Internal mechanisms
+		  (SubClassOf :MultiHeadAttention
+		    (ObjectSomeValuesFrom :usesComponent :ScaledDotProductAttention))
+		  (SubClassOf :MultiHeadAttention
+		    (ObjectSomeValuesFrom :performsOperation :LinearProjection))
+		  (SubClassOf :MultiHeadAttention
+		    (ObjectSomeValuesFrom :performsOperation :Concatenation))
+		  
+		  ;; Capabilities
+		  (SubClassOf :MultiHeadAttention
+		    (ObjectSomeValuesFrom :enablesCapability :SubspaceRepresentationLearning))
+		  (SubClassOf :MultiHeadAttention
+		    (ObjectSomeValuesFrom :enablesCapability :ParallelAttentionComputation))
+		  
+		  ;; Typical configuration
+		  (DataPropertyAssertion :typicalHeadCount :MultiHeadAttention "8"^^xsd:integer)
+		  (DataPropertyAssertion :largeModelHeadCount :MultiHeadAttention "16"^^xsd:integer)
+		  (DataPropertyAssertion :enablesDiversePatternLearning :MultiHeadAttention "true"^^xsd:boolean)
+		  
+		  ;; Architectural role
+		  (SubClassOf :TransformerArchitecture
+		    (ObjectSomeValuesFrom :implementsMechanism :MultiHeadAttention))
+		  ```
+		  
+		  ## References
+		  
+		  - Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
+		  
+		  ---
+		  
+		  *Ontology Term managed by AI-Grounded Ontology Working Group*
+		  *UK English Spelling Standards Applied*
+		  
+		  ```
 
-## Multi Head Attention
+- public-access:: true
+	- definition:: An extension of the attention mechanism that allows the model to jointly attend to information from different representation subspaces at different positions, using multiple attention heads in parallel.
 
-Multi Head Attention refers to an extension of the attention mechanism that allows the model to jointly attend to information from different representation subspaces at different positions, using multiple attention heads in parallel.
+
+
+## Academic Context
+
+- Brief contextual overview
+  - Multi-head attention is a foundational mechanism in modern deep learning architectures, particularly in transformer models, enabling the model to capture diverse relationships and patterns within sequence data
+  - The mechanism extends the basic attention concept by allowing the model to attend to information from multiple representation subspaces simultaneously, rather than relying on a single attention computation
+
+- Key developments and current state
+  - Introduced as a core component of the Transformer architecture, multi-head attention has become a standard in natural language processing, computer vision, and speech processing
+  - The mechanism is now widely adopted in both academic research and industrial applications, with ongoing refinements and variations such as grouped-query attention and multi-head latent attention
+
+- Academic foundations
+  - The original formulation of multi-head attention is based on the scaled dot-product attention mechanism, with each head computing attention independently before the outputs are concatenated and transformed
+  - The mathematical formulation is well-established and has been extensively studied for its properties, including permutation equivariance and the ability to capture diverse features
+
+## Current Landscape (2025)
 
 - Industry adoption and implementations
   - Multi-head attention is a key component in state-of-the-art models such as BERT, GPT, and T5, which are used for a wide range of tasks including language understanding, translation, and text generation
   - Major technology companies and research institutions, including Google, Meta, and Microsoft, have integrated multi-head attention into their models and platforms
+
 - Notable organisations and platforms
   - Google's BERT and T5 models
   - Meta's Llama series
   - Microsoft's Azure AI and Cognitive Services
+
 - UK and North England examples where relevant
   - The University of Manchester has been active in research on transformer models and attention mechanisms, with contributions to both theoretical and applied aspects
   - Leeds and Newcastle have seen growing interest in natural language processing and machine learning, with local startups and research groups exploring the use of multi-head attention in various applications
   - Sheffield's Advanced Manufacturing Research Centre (AMRC) has begun to explore the use of attention mechanisms in industrial automation and robotics
+
 - Technical capabilities and limitations
   - Multi-head attention enables models to capture complex dependencies and patterns in data, but it can be computationally expensive, especially for long sequences
   - Variants such as grouped-query attention and multi-head latent attention have been developed to address some of these limitations, improving efficiency and performance
+
 - Standards and frameworks
   - The PyTorch and TensorFlow libraries provide built-in support for multi-head attention, making it accessible to researchers and practitioners
   - The Hugging Face Transformers library offers pre-trained models and tools for working with multi-head attention
-
-## Technical Details
-
-- **Id**: multi-head-attention-ontology
-- **Collapsed**: true
-- **Source Domain**: ai
-- **Status**: draft
-- **Public Access**: true
 
 ## Research & Literature
 
@@ -51,6 +317,7 @@ Multi Head Attention refers to an extension of the attention mechanism that allo
   - Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is All You Need. *Advances in Neural Information Processing Systems*, 30, 5998–6008. https://arxiv.org/abs/1706.03762
   - Liu, Y., Ott, M., Goyal, N., Du, J., Joshi, M., Chen, D., ... & Stoyanov, V. (2019). RoBERTa: A Robustly Optimized BERT Pretraining Approach. *arXiv preprint arXiv:1907.11692*. https://arxiv.org/abs/1907.11692
   - Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., ... & Amodei, D. (2020). Language Models are Few-Shot Learners. *arXiv preprint arXiv:2005.14165*. https://arxiv.org/abs/2005.14165
+
 - Ongoing research directions
   - Improving the efficiency of multi-head attention for long sequences
   - Developing new variants and hybrid mechanisms to address specific challenges
@@ -61,9 +328,11 @@ Multi Head Attention refers to an extension of the attention mechanism that allo
 - British contributions and implementations
   - The UK has a strong tradition in machine learning and natural language processing, with significant contributions from universities and research institutions
   - British researchers have been involved in the development and application of multi-head attention in various domains, including healthcare, finance, and education
+
 - North England innovation hubs (if relevant)
   - Manchester, Leeds, Newcastle, and Sheffield have emerged as key centres for AI and machine learning research, with local universities and companies actively exploring the use of multi-head attention
   - The Northern Powerhouse initiative has supported the growth of AI and data science in the region, fostering collaboration between academia and industry
+
 - Regional case studies
   - The University of Manchester's AI and Data Science Institute has conducted research on the use of multi-head attention in medical imaging and genomics
   - Leeds-based startups have applied multi-head attention to natural language processing tasks in the legal and financial sectors
@@ -75,10 +344,12 @@ Multi Head Attention refers to an extension of the attention mechanism that allo
   - Continued improvement in the efficiency and scalability of multi-head attention
   - Integration of multi-head attention with other machine learning techniques, such as reinforcement learning and generative models
   - Expansion of multi-head attention to new domains, including robotics, autonomous systems, and multimodal learning
+
 - Anticipated challenges
   - Addressing the computational and memory requirements of multi-head attention for large-scale applications
   - Ensuring the interpretability and transparency of models that use multi-head attention
   - Managing the ethical and societal implications of increasingly powerful AI systems
+
 - Research priorities
   - Developing more efficient and scalable variants of multi-head attention
   - Exploring the use of multi-head attention in new and emerging applications
@@ -96,6 +367,7 @@ Multi Head Attention refers to an extension of the attention mechanism that allo
 8. Sebastian Raschka. (2023). Understanding and Coding Self-Attention, Multi-Head Attention. https://magazine.sebastianraschka.com/p/understanding-and-coding-self-attention
 9. Wikipedia. (2023). Attention (machine learning). https://en.wikipedia.org/wiki/Attention_(machine_learning)
 10. IBM. (2023). What is an attention mechanism? https://www.ibm.com/think/topics/attention-mechanism
+
 
 ## Metadata
 

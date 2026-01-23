@@ -1,19 +1,46 @@
-### Definition
-
-Derivative Control represents the D component of PID (Proportional-Integral-Derivative) controllers, generating control signals proportional to the rate of change of error, effectively providing predictive damping that opposes rapid error fluctuations. By responding to error velocity rather than magnitude, derivative action reduces overshoot, suppresses oscillations, and improves system stability, though at the cost of amplifying high-frequency noise if not properly filtered.
-
 - ### OntologyBlock
-  id:: Derivative Control
-  - ontology:: true
-  - public-access:: true
-  - term-id:: RB-1025
-  - preferred-term:: Derivative Control
-  - owl:class:: rb:DerivativeControl
-  - is-subclass-of:: [[Robotics]]
-  - definition:: Derivative control is the D component of PID controllers, generating control signals proportional to the rate of change of error, providing predictive damping to reduce overshoot and oscillations.
-  - source-domain:: rb
-  - status:: draft
+  id:: derivativecontrol-ontology
+  collapsed:: true
 
-Derivative Control represents the D component of PID (ProportionalIntegralDerivative) controllers, generating control signals proportional to the rate of change of error, effectively providing predictive damping that opposes rapid error fluctuations. By responding to error velocity rather than magnitude, derivative action reduces overshoot, suppresses oscillations, and improves system stability, though at the cost of amplifying highfrequency noise if not properly filtered.
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0148
+    - filename-history:: ["RB-0148-derivativecontrol.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: RB-0148
+    - preferred-term:: Derivative Control
+    - source-domain:: rb
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-Derivative Control represents the D component of PID (ProportionalIntegralDerivative) controllers, generating control signals proportional to the rate of change of error, effectively providing predictive damping that opposes rapid error fluctuations. By responding to error velocity rather than magnitude, derivative action reduces overshoot, suppresses oscillations, and improves system stability, though at the cost of amplifying highfrequency noise if not properly filtered.
+  - **Definition**
+    - definition:: Derivative control provides damping by responding to rate of error change.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: rb:DerivativeControl
+    - belongsToDomain:: [[Robotics]]
+
+  - #### Relationships
+    - is-subclass-of:: [[Feedback Control]]
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :DerivativeControl))
+      (SubClassOf :DerivativeControl :FeedbackControl)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :DerivativeControl "Derivative Control"@en)
+      (AnnotationAssertion rdfs:comment :DerivativeControl
+        "Derivative control provides damping by responding to rate of error change."@en)
+      ```
+
+- ## About Derivative Control
+  Derivative control provides damping by responding to rate of error change.
+  
+  A control system using error rate of change.

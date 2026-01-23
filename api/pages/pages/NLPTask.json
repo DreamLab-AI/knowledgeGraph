@@ -2,21 +2,12 @@
   "id": "NLPTask",
   "title": "NLPTask",
   "content": "- ### OntologyBlock\n  id:: nlptask-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7012\n\t- preferred-term:: NLPTask\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Natural Language Processing (NLP) tasks are computational problems involving human language understanding and generation, including text classification, sentiment analysis (identifying positive/negative/neutral opinions), named entity recognition, machine translation, text summarization, and question answering. These tasks leverage machine learning approaches from traditional models (Naive Bayes, SVM) to transformer-based architectures (BERT, GPT) that have revolutionized accuracy through powerful text representations.\n\t- maturity:: reviewed\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- owl:class:: ngm:Nlptask\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]\n- related-to:: [[MachineLearning]]\n- related-to:: [[Large language models]]\n- related-to:: [[ModelArchitecture]]\n\n### Task Categories\n- **Text Classification**: Categorizing text into predefined classes (spam detection, topic categorization)\n- **Sentiment Analysis**: Extracting opinions and emotional valence from text\n- **Named Entity Recognition**: Identifying people, places, organizations in text\n- **Machine Translation**: Converting text between languages\n- **Text Summarization**: Condensing documents while preserving key information\n- **Question Answering**: Extracting answers from context given natural language questions\n\n### Key Challenges\n- Sarcasm and irony detection\n- Ambiguous language interpretation\n- Domain-specific vocabulary handling\n- Idiomatic expressions\n\n### Approaches\n- Traditional ML: Naive Bayes, SVM, Decision Trees, Random Forest\n- Deep Learning: RNN, LSTM, GRU networks\n- Transformers: BERT, GPT, T5 with superior performance on complex tasks\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from stub with technical definition\n- **References**: 8 pages reference this concept",
-  "backlinks": [
-    "Dialogue System",
-    "Sentiment Analysis",
-    "Text Generation",
-    "Byte-Pair Encoding",
-    "Natural Language Processing",
-    "Text Summarisation",
-    "Subword Tokenisation",
-    "Question Answering"
-  ],
+  "backlinks": [],
   "wiki_links": [
-    "MachineLearning",
     "ModelArchitecture",
+    "Artificial Intelligence",
     "Large language models",
-    "Artificial Intelligence"
+    "MachineLearning"
   ],
   "ontology": {
     "term_id": "NGM-7012",

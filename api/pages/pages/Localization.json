@@ -3,17 +3,18 @@
   "title": "Localization",
   "content": "- ### OntologyBlock\n  id:: localization-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0603\n\t- preferred-term:: Localization\n\t- source-domain:: rb\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Localization in robotics is the process of determining a robot's position and orientation within its operating environment. This encompasses SLAM (Simultaneous Localization and Mapping), odometry, GPS-based positioning, and various sensor fusion techniques used to maintain accurate spatial awareness for autonomous navigation.\n\t- owl:class:: rb:Localization\n\t- belongsToDomain:: [[Robotics Systems]]\n\t- #### Relationships\n\t  id:: localization-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Robotics Systems]]\n\t\t- is-parent-of:: [[SLAM]]\n\t\t- is-parent-of:: [[Odometry]]\n\t\t- is-parent-of:: [[GPS Localization]]\n\t\t- related-to:: [[Motion Planning]]\n\t\t- related-to:: [[Sensor Fusion]]",
   "backlinks": [
+    "SLAM",
     "RB-1014-monte-carlo-localization",
     "Perception System",
     "State Estimation"
   ],
   "wiki_links": [
-    "GPS Localization",
-    "Sensor Fusion",
-    "Robotics Systems",
     "SLAM",
+    "Sensor Fusion",
+    "Motion Planning",
+    "GPS Localization",
     "Odometry",
-    "Motion Planning"
+    "Robotics Systems"
   ],
   "ontology": {
     "term_id": "RB-0603",

@@ -19,15 +19,14 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: ai:SyntheticDataGeneration
+    - owl:class:: aigo:SyntheticDataGeneration
     - owl:physicality:: VirtualEntity
     - owl:role:: Process
-    - owl:inferred-class:: ai:VirtualProcess
+    - owl:inferred-class:: aigo:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 
   - #### Relationships
-- is-subclass-of:: [[Artificial Intelligence]]
     id:: 0422-synthetic-data-generation-relationships
 
   - #### OWL Axioms

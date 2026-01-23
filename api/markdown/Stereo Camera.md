@@ -1,37 +1,46 @@
 - ### OntologyBlock
-    - term-id:: DT-0161
-    - source-domain:: mv
-    - owl:class:: mv:StereoCamera
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - preferred-term:: Stereo Camera
-    - ontology:: true
+  id:: stereocamera-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0161
+    - filename-history:: ["RB-0161-stereocamera.md"]
     - public-access:: true
-    - is-subclass-of:: [[Camera]]
+    - ontology:: true
+    - term-id:: RB-0161
+    - preferred-term:: Stereo Camera
+    - source-domain:: rb
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## Stereo Camera
+  - **Definition**
+    - definition:: Stereo camera uses two lenses to capture images for 3D depth estimation.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-Stereo Camera refers to stereo camera uses two lenses to capture images for 3d depth estimation.
+  - **Semantic Classification**
+    - owl:class:: rb:StereoCamera
+    - belongsToDomain:: [[Robotics]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
+    - is-subclass-of:: [[Camera]]
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :StereoCamera))
+      (SubClassOf :StereoCamera :Camera)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :StereoCamera "Stereo Camera"@en)
+      (AnnotationAssertion rdfs:comment :StereoCamera
+        "Stereo camera uses two lenses to capture images for 3D depth estimation."@en)
+      ```
 
-- **Id**: stereocamera-ontology
-- **Collapsed**: true
-- **Domain Prefix**: RB
-- **Sequence Number**: 0161
-- **Filename History**: ["RB-0161-stereocamera.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: rb:StereoCamera
-- **Belongstodomain**: [[Robotics]]
-- **Is Subclass Of**: [[Camera]]
+- ## About Stereo Camera
+  Stereo camera uses two lenses to capture images for 3D depth estimation.
+  
+  A dual camera system providing depth perception.

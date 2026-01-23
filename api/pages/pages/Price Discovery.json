@@ -5,26 +5,28 @@
   "backlinks": [
     "BC 0116 total supply",
     "Liquidity Pool",
+    "Money",
     "Digital Asset Trading",
+    "BC 0117 circulating supply",
     "Asset Trading",
     "Marketplace",
     "Fractionalized NFT",
     "Decentralized Exchange (DEX)"
   ],
   "wiki_links": [
-    "Liquidity",
+    "Order Book",
     "Price Transparency",
-    "Spot Markets",
-    "DEX",
-    "MEV",
-    "Futures Markets",
-    "Market Microstructure",
-    "Arbitrage",
-    "Fair Valuation",
     "Market Maker",
     "FinancialDomain",
-    "Order Book",
-    "Market Efficiency"
+    "Futures Markets",
+    "DEX",
+    "Market Microstructure",
+    "MEV",
+    "Fair Valuation",
+    "Market Efficiency",
+    "Spot Markets",
+    "Arbitrage",
+    "Liquidity"
   ],
   "ontology": {
     "term_id": "NGM-7038",

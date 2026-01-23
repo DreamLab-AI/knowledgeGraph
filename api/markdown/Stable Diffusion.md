@@ -1,32 +1,102 @@
-Concept Visualization:
+public:: true
 
-- ### OntologyBlock
-  id:: Stable Diffusion
-  - ontology:: true
-  - public-access:: true
-  - term-id:: AI-7951
-  - preferred-term:: Concept Visualization:
-  - source-domain:: ai
-  - status:: draft
-  - owl:class:: ai:ConceptVisualization
-
-### Relationships
-- is-subclass-of:: [[DiffusionModels]]
-
-### Prompt Engineering: The Art of Guiding AI Creativity
-- Effective prompt engineering is crucial for unlocking the full potential of Stable Diffusion. Different models demand different styles
+- #Public page automatically published
+- Stable Diffusion has emerged as a transformative force in generative AI, mainly for text to image synthesis. This open source model was developed by UK company 'Stability AI', has democratised access to high quality image workflows, empowering artists, creatives, and professionals.
+- # Why Stable Diffusion?
+  id:: 66408f9e-30e0-442b-9aba-9eb51e36a739
+	- ## Image, Video and 3D
+		- [[Stable Diffusion]] and [[Stable Video Diffusion]] allow a lot of control, but at a cost of complexity.
+		  collapsed:: true
+		- ## Stable Diffusion 1.5, XL, and 3
+			- UK company with global impact. It is likely now winding up it's operations after difficulty generating revenue in the hyper competitive GenAI market.
+				- **Introduction**: Open-source model by StabilityAI
+					- **Cost**: Free to run on own hardware; nominal fee for online tools.
+					- **User Interface**: User-friendly through platforms like Leonardo.AI.
+					- **Strengths**: Unlimited control, good image quality, no censorship.
+					- **Weaknesses**: Requires decent hardware, steep learning curve. Questions about Stability business.
+					- **Skill Level**: Intermediate to advanced.
+			- ### Text-to-Image Generation
+				- Stable Diffusion generates realistic and imaginative images from descriptive text prompts. This core functionality allows users to translate their creative visions into visual form with remarkable accuracy and detail. Whether it's a photorealistic portrait, a surreal landscape, or an abstract concept, Stable Diffusion can bring your ideas to life with just a few words.
+				- A lot of the products you see on the market are either wrappers for the big AI companies, or else leveraging Stability models on rented cloud compute.
+					- ![ComfyUI_temp_exgja_00013_.png](../assets/ComfyUI_temp_exgja_00013_1702592236908_0.png){:width 800}
+					- ![Rife_00027.mp4](../assets/Rife_00027_1702831574413_0.mp4){:width 300}
+	- ## Open Source
+		- Stable Diffusion's open-source nature sets it apart from many other generative AI models.
+		- Users have free access to the model's weights and a lot of modular code, allowing them to modify, distribute, and build upon it.
+		- This openness fosters collaboration, innovation, and community driven development.
+		- Ensures that the technology is not controlled by a select few entities.
+		- For brands and private companies this allows private development of digital assets.
+	- ## User Friendly Interfaces
+		- Platforms like [Leonardo.AI](https://leonardo.ai/), [RunDiffusion](https://rundiffusion.com/) and [Automatic1111's WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) provide intuitive and user friendly interfaces for interacting with Stable Diffusion.
+		- ### Rundiffusion
+			- <iframe src="https://rundiffusion.com/" style="width: 800px; height: 600px"></iframe>
+		- These interfaces offer a range of options for customizing parameters, fine tuning models, and experimenting with different artistic styles.
+	- ### Customisation
+		- Stable Diffusion's flexibility extends to its ability to be fine-tuned on custom datasets.
+		- Techniques like  [[KOHYA Dreambooth and similar]] and  [[LoRA DoRA etc]] training   allow users to tailor the model to their specific needs and generate images that align with their unique artistic visions or domain-specific requirements.
+		  :LOGBOOK:
+		  CLOCK: [2024-05-12 Sun 11:12:30]--[2024-05-12 Sun 11:12:31] =>  00:00:01
+		  :END:
+			- ![ComfyUI_temp_ayipz_00012_.png](../assets/ComfyUI_temp_ayipz_00012_1702330298489_0.png){:width 300, :height 402}
+		- This opens up a world of possibilities for creating personalised images,
+			- Generating images of specific objects or individuals,
+			- Developing models for specialised domains like  [[Fashion]]  or architectural design.
+	- ### Community Support
+		- One of Stable Diffusion's greatest strengths is its vibrant and active community.
+		- Much of this happens on Discord and Reddit
+			- [(1832) Discord | #ad_resources | banodoco](https://discord.com/channels/1076117621407223829/1149372684220768367)
+			- ![image.png](../assets/image_1715715718817_0.png){:width 800}
+			- [comfyui (reddit.com)](https://www.reddit.com/r/comfyui/)
+			- ![image.png](../assets/image_1715715792127_0.png){:width 800}
+			- The [StableDiffusion subreddit](https://www.reddit.com/r/StableDiffusion/)
+			- The [Stability AI Discord](https://discord.gg/stabilityai) serve as hubs for sharing creations, resources, and tutorials.
+			- This collaborative environment fosters learning, inspiration, and rapid innovation
+		- <iframe src="https://openaijourney.com/comfyui-guide/" style="width: 800px; height: 600px"></iframe>
+		- <iframe src="https://comfyworkflows.com" style="width: 900px; height: 600px"></iframe>
+	- ## Core Models
+		- ~~Stable Diffusion 1.4~~
+		- ### Stable Diffusion 1.5
+			- [Available on GitHub](https://github.com/CompVis/stable-diffusion), this model is optimized for speed and efficiency,
+			- Suitable for generating images quickly, especially on less powerful hardware.
+			- Highest model diversity
+		- ~~Stable Diffusion 2.1~~
+		- ### SDXL
+			- Higher resolution, better prompt control
+			- Will often mess up human bodies due to constrained training
+			- More resource intensive
+			- Less compatible extensions
+		- ### CosXL
+			- Likely the last update from the team, most of whom have left following the departure of founder [Emad Mostaque](https://en.wikipedia.org/wiki/Emad_Mostaque).
+			- This is a "best practice" update to SDXL which allows higher contrast.
+		- ### Zero123 & SV3D
+			- {{video https://youtu.be/gl1s7f0mV2E?t=677}}
+		- ### ~~Stable Cascade~~
+			- Only a partial release.
+			- Not great adoption.
+			- Better prompt adherence.
+		- ### Stable Diffusion 3
+			- [Temporary Stable Diffusion 3 Ban | Civitai](https://civitai.com/articles/5732/temporary-stable-diffusion-3-ban)
+			- Might be ok in the end.
+			- Whole new architecture.
+			- Excellent prompt following.
+			- Terrible human anatomy.
+	- # Community models
+		- Models and inspiration from CivitAI, which is very often "not safe for work" so do exercise caution.
+			- <iframe src="https://civitai.com/images" style="width: 100%; height: 600px"></iframe>
+- ### Prompt Engineering: The Art of Guiding AI Creativity
+	- Effective prompt engineering is crucial for unlocking the full potential of Stable Diffusion. Different models demand different styles
 	- Here are some tips to enhance your prompts:
 		- #### Specificity:
 			- Use specific keywords and descriptive phrases to clearly convey your desired image to the AI model.
 			- The more precise and detailed your prompt, the better the model can understand your intent and generate images that match your vision.
 		- #### Negative Prompts:
-			- Utilise negative prompts to exclude unwanted elements or styles from the generated image.
+			- Utilize negative prompts to exclude unwanted elements or styles from the generated image.
 			- This allows you to refine the output and avoid generating images with undesirable features.
 		- #### Compositional Control:
 			- Employ prompt scheduling and area prompting to create complex compositions and focus on specific details.
 			- These techniques allow you to control the timing and location of different elements within the image, resulting in more intricate and visually compelling outputs.
 		- #### Extensions:
-			- Leverage extensions like "Test My Prompt" to understand the impact of each word in your prompt and refine your wording for better results. This extension helps you analyse how the model interprets different words and phrases, allowing you to optimise your prompts for the desired outcome.
+			- Leverage extensions like "Test My Prompt" to understand the impact of each word in your prompt and refine your wording for better results. This extension helps you analyse how the model interprets different words and phrases, allowing you to optimize your prompts for the desired outcome.
 		- #### Experimentation:
 			- Don't be afraid to experiment with different models, fine tuning techniques, and prompt styles to discover new possibilities and achieve your desired artistic outcomes.
 			- The beauty of Stable Diffusion lies in its flexibility and the endless creative potential it offers.
@@ -132,13 +202,13 @@ Concept Visualization:
 		- [SDXL native text lora](https://civitai.com/models/176555/harrlogos-xl-finally-custom-text-generation-in-sd)
 		- [SDXL lcm motion lora](https://huggingface.co/latent-consistency/lcm-lora-sdxl)
 		- SDXL universal negative prompt
-			- text, watermark, low-quality, signature, moiré pattern, downsampling, aliasing, distorted, blurry, glossy, blur, jpeg artefacts, compression artefacts, poorly drawn, low-resolution, bad, distortion, twisted, excessive, exaggerated pose, exaggerated limbs, grainy, symmetrical, duplicate, error, pattern, beginner, pixelated, fake, hyper, glitch, overexposed, high-contrast, bad-contrast
+			- text, watermark, low-quality, signature, moiré pattern, downsampling, aliasing, distorted, blurry, glossy, blur, jpeg artifacts, compression artifacts, poorly drawn, low-resolution, bad, distortion, twisted, excessive, exaggerated pose, exaggerated limbs, grainy, symmetrical, duplicate, error, pattern, beginner, pixelated, fake, hyper, glitch, overexposed, high-contrast, bad-contrast
 		- [SDXL prodigy training guide](https://civitai.com/articles/1022)
 		- [Lora training interface for windows](https://github.com/bmaltais/kohya_ss)
 		- [Refined model](https://civitai.com/models/8392/refined)
 		- [Fine tuning with captioning and other fine tuning tricks, followfox](https://substack.com/profile/110613456-followfoxai)
 		- [Negative embedding textual inversion for hands etc](https://huggingface.co/datasets/Nerfgun3/bad_prompt)
-		- [GitHub kpthedev/ez-text2video: Easily run text-to-video diffusion with customised video length, fps, and dimensions on 4GB video cards, as well as on CPU.](https://github.com/kpthedev/ez-text2video)
+		- [GitHub kpthedev/ez-text2video: Easily run text-to-video diffusion with customized video length, fps, and dimensions on 4GB video cards, as well as on CPU.](https://github.com/kpthedev/ez-text2video)
 		- [Gligen grounding capability for sd1.5](https://gligen.github.io/)
 		- [This repository contains a ComfyUI Extension for Automated Text Generation. The extension provides nodes which can be used to automate the text generation process. The goal is to build a node-based Automated Text Generation AGI. This extension should ultimately combine all of the features of the existing text generation tools into one tool.](https://github.com/xXAdonesXx/NodeGPT)
 		- [[R] Text-to-image Diffusion Models in Generative AI: A Survey: r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/12ehcez/r_texttoimage_diffusion_models_in_generative_ai_a/)

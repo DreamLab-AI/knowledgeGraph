@@ -4,24 +4,18 @@
   "content": "- ### OntologyBlock\n  id:: airisk-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: AI-7018\n\t- preferred-term:: AI Risk\n\t- source-domain:: ai\n\t- status:: active\n\t- definition:: AI Risk refers to the potential adverse outcomes and threats arising from the development, deployment, and use of artificial intelligence systems, encompassing safety risks, security vulnerabilities, societal harms, and existential concerns that could result from misaligned, misused, or uncontrolled AI. These risks span from immediate operational failures to long-term catastrophic scenarios requiring proactive identification, assessment, and mitigation strategies.\n\t- maturity:: mature\n\t- owl:class:: ai:AiRisk\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: airisk-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Risk Management]]\n\t\t- related-to:: [[AI Safety]]\n\t\t- related-to:: [[AISecurity]]\n\t\t- related-to:: [[AIGovernance]]\n\t\t- related-to:: [[AIRiskManagement]]\n\t\t- related-to:: [[AI Ethics]]\n\t\t- enables:: [[AI Risk Assessment]]\n\t- #### Key Risk Categories\n\t  collapsed:: true\n\t\t- **Malicious Use**: Intentional misuse for cyberattacks, disinformation, or harmful content generation\n\t\t- **AI Races**: Competitive pressures leading to reduced safety standards and oversight\n\t\t- **Organizational Risks**: Inadequate governance, insufficient expertise, or misaligned incentives\n\t\t- **Rogue AIs**: Systems behaving in unintended or uncontrollable ways\n\t\t- **Accumulative Risks**: Social harms compounding over time into systemic threats\n\t- #### Types of AI Risk\n\t  collapsed:: true\n\t\t- **Safety Risks**: Unintended behaviors, reliability failures, robustness issues\n\t\t- **Security Risks**: Adversarial attacks, model theft, data breaches\n\t\t- **Societal Risks**: Bias, discrimination, job displacement, misinformation\n\t\t- **Existential Risks (X-risks)**: Potential outcomes causing extinction or unrecoverable civilizational decline\n\t\t- **Dual-Use Risks**: Technologies enabling both beneficial and harmful applications\n\t- #### 2025 AI Safety Index Findings\n\t  collapsed:: true\n\t\t- None of leading AI companies have adequate guardrails for catastrophic misuse prevention\n\t\t- Massive gap between top three (Anthropic, OpenAI, Google DeepMind) and others (xAI, Meta, DeepSeek)\n\t\t- Companies claim AGI within decade but score D or below on Existential Safety planning\n\t\t- Anthropic and OpenAI score A's and B's on risk assessment and governance\n\t- #### Risk Assessment Approaches\n\t  collapsed:: true\n\t\t- Red teaming to assess failure modes\n\t\t- Safety culture development\n\t\t- Transparency and interpretability research\n\t\t- Multi-layered defense (Swiss cheese model)\n\t\t- Proactive governance frameworks\n\t\t- Specialized regulatory institutions\n\t- #### Applications\n\t  collapsed:: true\n\t\t- AI safety research and development\n\t\t- Enterprise AI risk assessment\n\t\t- Regulatory compliance evaluation\n\t\t- Insurance and liability determination\n\t\t- Investment and due diligence\n\t\t- Policy development and advocacy\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched with 2025 safety index data\n- **Verification**: Research and policy sources verified\n- **Regional Context**: Global AI safety landscape",
   "backlinks": [
     "AISecurity",
-    "AIEthics",
-    "AI Incident",
-    "Model Inversion",
-    "AI Risk Register",
-    "Model Extraction",
-    "Algorithmic Bias",
-    "Membership Inference",
+    "AIGovernance",
     "AIRiskManagement"
   ],
   "wiki_links": [
-    "AISecurity",
-    "AIRiskManagement",
     "AIGovernance",
-    "AI Risk Assessment",
-    "Artificial Intelligence",
     "AI Ethics",
     "Risk Management",
-    "AI Safety"
+    "AISecurity",
+    "AI Risk Assessment",
+    "AI Safety",
+    "Artificial Intelligence",
+    "AIRiskManagement"
   ],
   "ontology": {
     "term_id": "AI-7018",

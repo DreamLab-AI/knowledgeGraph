@@ -6,17 +6,17 @@
     "Universal Manifest"
   ],
   "wiki_links": [
-    "Standards Body",
-    "Implementation Libraries",
-    "Technical Standards",
-    "Digital Asset Standards",
-    "metaverse",
-    "Validation Tools",
     "3D Asset Interoperability",
+    "Standards Body",
+    "Validation Tools",
+    "Technical Standards",
     "Compatibility Standards",
-    "Metaverse Interoperability",
+    "Implementation Libraries",
+    "Digital Asset Standards",
+    "Cross-Platform Exchange",
+    "metaverse",
     "Content Portability",
-    "Cross-Platform Exchange"
+    "Metaverse Interoperability"
   ],
   "ontology": {
     "term_id": "MV-9838",

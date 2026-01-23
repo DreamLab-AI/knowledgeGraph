@@ -1,37 +1,52 @@
 - ### OntologyBlock
   id:: ai-governance-principle-ontology
   collapsed:: true
-	- ontology:: true
-	- term-id:: DT-0010
-	- preferred-term:: AI Governance Principle
-	- source-domain:: mv
-	- status:: complete
-	- public-access:: true
 
+  - **Identification**
+    - ontology:: true
+    - term-id:: PC-0010
+    - preferred-term:: AI Governance Principle
+    - source-domain:: ai
+    - status:: complete
+    - public-access:: true
+- version:: 1.0.0
+    - last-updated:: 2025-11-08
 
+  - **Definition**
+    - definition:: An AI Governance Principle is a foundational normative guideline or standard that shapes the development, deployment, and oversight of artificial intelligence systems to ensure they align with human values, societal benefit, and ethical imperatives. These principles form the conceptual bedrock of responsible AI development, addressing concerns about algorithmic bias, privacy violations, accountability gaps, safety risks, and societal impacts of increasingly capable AI systems. AI Governance Principles encompass ethical frameworks (fairness, transparency, accountability), technical requirements (robustness, privacy preservation, interpretability), regulatory compliance (GDPR, AI Act, sector-specific regulations), and organizational practices (impact assessments, human oversight, stakeholder engagement). Unlike traditional software governance focused primarily on functionality and security, AI governance must address unique challenges including opaque decision-making in complex models, emergent behaviors in adaptive systems, distributional impacts across demographics, and potential for autonomous operation with significant consequences. These principles translate into concrete practices through governance frameworks, audit mechanisms, certification schemes, and regulatory requirements, establishing the foundation for trustworthy AI systems.
+    - maturity:: mature
+    - source:: [[OECD AI Principles]], [[EU AI Act]], [[IEEE Ethically Aligned Design]], [[ISO/IEC 42001 AI Management System]]
 
+- version:: 1.1.0
+    - last-updated:: 2025-11-15
+    - quality-score:: 0.89
+    - bitcoin-ai-relevance:: medium
+    - cross-domain-links:: 42
 
-### OWL Classification
-	- owl:class:: ai:AIGovernancePrinciple
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
-	- owl:inferred-class:: ConceptualConcept
+  - **Definition**
+    - definition:: An AI Governance Principle is a foundational normative guideline or standard that shapes the development, deployment, and oversight of [[Artificial Intelligence System|artificial intelligence systems]] to ensure they align with [[Human Values]], societal benefit, and [[Ethical Imperative|ethical imperatives]]. These principles form the conceptual bedrock of [[Responsible AI]] development, addressing concerns about [[Algorithmic Bias]], [[Privacy Violation|privacy violations]], [[Accountability Gap|accountability gaps]], [[Safety Risk|safety risks]], and societal impacts of increasingly capable AI systems. AI Governance Principles encompass [[Ethical Framework|ethical frameworks]] ([[Fairness]], [[Transparency]], [[Accountability]]), technical requirements ([[Robustness]], [[Privacy Preservation]], [[Interpretability]]), [[Regulatory Compliance]] ([[GDPR]], [[EU AI Act]], sector-specific regulations), and organizational practices ([[Impact Assessment|impact assessments]], [[Human Oversight]], [[Stakeholder Engagement]]). These principles apply equally to [[AI Agent System|AI agents]], [[Large Language Model|LLMs]], [[Blockchain AI]], [[Bitcoin]] analysis systems, and [[Smart Contract]] governance.
+    - maturity:: mature
+    - source:: [[OECD AI Principles]] (https://oecd.ai/en/ai-principles), [[EU AI Act]] (https://artificialintelligenceact.eu/), [[IEEE Ethically Aligned Design]] (https://standards.ieee.org/industry-connections/ec/ead-v2/), [[ISO/IEC 42001 AI Management System]] (https://www.iso.org/standard/81230.html), [[NIST AI Risk Management Framework]] (https://www.nist.gov/itl/ai-risk-management-framework)
+    - authority-score:: 0.95
 
-### Domain & Architecture
-	- belongsToDomain:: [[AIEthicsDomain]], [[DisruptiveTechDomain]]
-	- implementedInLayer:: [[ConceptualLayer]]
-	- maturity:: mature
+  - **Semantic Classification**
+    - owl:class:: aigo:AIGovernancePrinciple
+    - owl:physicality:: ConceptualEntity
+    - owl:role:: Concept
+    - owl:inferred-class:: ConceptualConcept
+    - belongsToDomain:: [[AIEthicsDomain]]
+    - implementedInLayer:: [[ConceptualLayer]]
 
-### Relationships
-id:: ai-governance-principle-relationships
+  - #### Relationships
+    id:: ai-governance-principle-relationships
     - is-subclass-of::
 
   - #### OWL Axioms
     id:: ai-governance-principle-owl-axioms
     collapsed:: true
     - ```clojure
-      Prefix(:=<http://narrativegoldmine.com/ai-governance#>)
-Prefix(ai:=<http://narrativegoldmine.com/ai-governance#>)
+      Prefix(:=<http://metaverse-ontology.org/ai-governance#>)
+Prefix(aigo:=<http://metaverse-ontology.org/ai-governance#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -40,93 +55,93 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(dct:=<http://purl.org/dc/terms/>)
 Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
 
-Ontology(<http://narrativegoldmine.com/ai-governance/PC-0010>
-  Import(<http://narrativegoldmine.com/ai-governance/core>)
+Ontology(<http://metaverse-ontology.org/ai-governance/PC-0010>
+  Import(<http://metaverse-ontology.org/ai-governance/core>)
 
   ## Class Declaration
-  Declaration(Class(ai:AIGovernancePrinciple))
+  Declaration(Class(aigo:AIGovernancePrinciple))
 
   ## Root Class - No parents
-  SubClassOf(ai:AIGovernancePrinciple owl:Thing)
+  SubClassOf(aigo:AIGovernancePrinciple owl:Thing)
 
   ## Essential Normative Properties
-  SubClassOf(ai:AIGovernancePrinciple
-    (DataHasValue ai:isNormative "true"^^xsd:boolean))
+  SubClassOf(aigo:AIGovernancePrinciple
+    (DataHasValue aigo:isNormative "true"^^xsd:boolean))
 
-  SubClassOf(ai:AIGovernancePrinciple
-    (DataHasValue ai:guidesAIGovernance "true"^^xsd:boolean))
+  SubClassOf(aigo:AIGovernancePrinciple
+    (DataHasValue aigo:guidesAIGovernance "true"^^xsd:boolean))
 
-  SubClassOf(ai:AIGovernancePrinciple
-    (DataSomeValuesFrom ai:addressesConcern xsd:string))
+  SubClassOf(aigo:AIGovernancePrinciple
+    (DataSomeValuesFrom aigo:addressesConcern xsd:string))
 
   ## Core Value Alignment
-  SubClassOf(ai:AIGovernancePrinciple
-    (ObjectSomeValuesFrom ai:alignsWith ai:HumanValue))
+  SubClassOf(aigo:AIGovernancePrinciple
+    (ObjectSomeValuesFrom aigo:alignsWith aigo:HumanValue))
 
-  SubClassOf(ai:AIGovernancePrinciple
-    (ObjectSomeValuesFrom ai:protects ai:StakeholderInterest))
+  SubClassOf(aigo:AIGovernancePrinciple
+    (ObjectSomeValuesFrom aigo:protects aigo:StakeholderInterest))
 
   ## Governance Scope
-  SubClassOf(ai:AIGovernancePrinciple
-    (ObjectSomeValuesFrom ai:appliesTo ai:AISystem))
+  SubClassOf(aigo:AIGovernancePrinciple
+    (ObjectSomeValuesFrom aigo:appliesTo aigo:AISystem))
 
-  SubClassOf(ai:AIGovernancePrinciple
-    (ObjectSomeValuesFrom ai:implementedThrough ai:GovernanceMechanism))
+  SubClassOf(aigo:AIGovernancePrinciple
+    (ObjectSomeValuesFrom aigo:implementedThrough aigo:GovernanceMechanism))
 
   ## Data Properties
-  DataPropertyAssertion(ai:hasPrincipleType ai:AIGovernancePrinciple xsd:string)
-  DataPropertyAssertion(ai:hasScope ai:AIGovernancePrinciple xsd:string)
-  DataPropertyAssertion(ai:hasPriorityLevel ai:AIGovernancePrinciple xsd:string)
-  DataPropertyAssertion(ai:hasAdoptionLevel ai:AIGovernancePrinciple xsd:string)
-  DataPropertyAssertion(ai:hasEnforceability ai:AIGovernancePrinciple xsd:string)
+  DataPropertyAssertion(aigo:hasPrincipleType aigo:AIGovernancePrinciple xsd:string)
+  DataPropertyAssertion(aigo:hasScope aigo:AIGovernancePrinciple xsd:string)
+  DataPropertyAssertion(aigo:hasPriorityLevel aigo:AIGovernancePrinciple xsd:string)
+  DataPropertyAssertion(aigo:hasAdoptionLevel aigo:AIGovernancePrinciple xsd:string)
+  DataPropertyAssertion(aigo:hasEnforceability aigo:AIGovernancePrinciple xsd:string)
 
   ## Object Properties
-  ObjectPropertyAssertion(ai:alignsWith ai:AIGovernancePrinciple ai:HumanValue)
-  ObjectPropertyAssertion(ai:protects ai:AIGovernancePrinciple ai:StakeholderInterest)
-  ObjectPropertyAssertion(ai:appliesTo ai:AIGovernancePrinciple ai:AISystem)
-  ObjectPropertyAssertion(ai:implementedThrough ai:AIGovernancePrinciple ai:GovernanceMechanism)
-  ObjectPropertyAssertion(ai:informsPolicy ai:AIGovernancePrinciple ai:Policy)
-  ObjectPropertyAssertion(ai:requiresCompliance ai:AIGovernancePrinciple ai:ComplianceRequirement)
+  ObjectPropertyAssertion(aigo:alignsWith aigo:AIGovernancePrinciple aigo:HumanValue)
+  ObjectPropertyAssertion(aigo:protects aigo:AIGovernancePrinciple aigo:StakeholderInterest)
+  ObjectPropertyAssertion(aigo:appliesTo aigo:AIGovernancePrinciple aigo:AISystem)
+  ObjectPropertyAssertion(aigo:implementedThrough aigo:AIGovernancePrinciple aigo:GovernanceMechanism)
+  ObjectPropertyAssertion(aigo:informsPolicy aigo:AIGovernancePrinciple aigo:Policy)
+  ObjectPropertyAssertion(aigo:requiresCompliance aigo:AIGovernancePrinciple aigo:ComplianceRequirement)
 
   ## Property Domains and Ranges
-  ObjectPropertyDomain(ai:alignsWith ai:AIGovernancePrinciple)
-  ObjectPropertyRange(ai:alignsWith ai:HumanValue)
+  ObjectPropertyDomain(aigo:alignsWith aigo:AIGovernancePrinciple)
+  ObjectPropertyRange(aigo:alignsWith aigo:HumanValue)
 
-  ObjectPropertyDomain(ai:appliesTo ai:AIGovernancePrinciple)
-  ObjectPropertyRange(ai:appliesTo ai:AISystem)
+  ObjectPropertyDomain(aigo:appliesTo aigo:AIGovernancePrinciple)
+  ObjectPropertyRange(aigo:appliesTo aigo:AISystem)
 
   ## Disjoint Union - Major Principle Categories
-  DisjointUnion(ai:AIGovernancePrinciple
-    ai:EthicalPrinciple
-    ai:TechnicalPrinciple
-    ai:RegulatoryPrinciple
-    ai:OrganizationalPrinciple)
+  DisjointUnion(aigo:AIGovernancePrinciple
+    aigo:EthicalPrinciple
+    aigo:TechnicalPrinciple
+    aigo:RegulatoryPrinciple
+    aigo:OrganizationalPrinciple)
 
   ## Annotations
-  AnnotationAssertion(rdfs:label ai:AIGovernancePrinciple "AI Governance Principle"@en)
-  AnnotationAssertion(rdfs:comment ai:AIGovernancePrinciple
+  AnnotationAssertion(rdfs:label aigo:AIGovernancePrinciple "AI Governance Principle"@en)
+  AnnotationAssertion(rdfs:comment aigo:AIGovernancePrinciple
     "Foundational normative guideline shaping responsible AI development and deployment"@en)
-  AnnotationAssertion(dct:description ai:AIGovernancePrinciple
+  AnnotationAssertion(dct:description aigo:AIGovernancePrinciple
     "Normative standard ensuring AI systems align with human values, ethics, and societal benefit"@en)
-  AnnotationAssertion(ai:termID ai:AIGovernancePrinciple "PC-0010")
-  AnnotationAssertion(ai:authorityScore ai:AIGovernancePrinciple "0.95"^^xsd:decimal)
-  AnnotationAssertion(dct:created ai:AIGovernancePrinciple "2025-11-08"^^xsd:date)
-  AnnotationAssertion(skos:definition ai:AIGovernancePrinciple
+  AnnotationAssertion(aigo:termID aigo:AIGovernancePrinciple "PC-0010")
+  AnnotationAssertion(aigo:authorityScore aigo:AIGovernancePrinciple "0.95"^^xsd:decimal)
+  AnnotationAssertion(dct:created aigo:AIGovernancePrinciple "2025-11-08"^^xsd:date)
+  AnnotationAssertion(skos:definition aigo:AIGovernancePrinciple
     "Foundational guideline ensuring AI systems align with human values and ethical imperatives"@en)
 
   ## Principle Type Enumeration
-  SubClassOf(ai:AIGovernancePrinciple
-    (DataHasValue ai:hasPrincipleType
+  SubClassOf(aigo:AIGovernancePrinciple
+    (DataHasValue aigo:hasPrincipleType
       (DataOneOf("ethical" "technical" "regulatory" "organizational" "social"))))
 
   ## Enforceability Levels
-  SubClassOf(ai:AIGovernancePrinciple
-    (DataHasValue ai:hasEnforceability
+  SubClassOf(aigo:AIGovernancePrinciple
+    (DataHasValue aigo:hasEnforceability
       (DataOneOf("mandatory" "recommended" "aspirational" "voluntary"))))
 
   ## Priority Levels
-  SubClassOf(ai:AIGovernancePrinciple
-    (DataHasValue ai:hasPriorityLevel
+  SubClassOf(aigo:AIGovernancePrinciple
+    (DataHasValue aigo:hasPriorityLevel
       (DataOneOf("critical" "high" "medium" "low"))))
 )
       ```
@@ -136,9 +151,9 @@ Ontology(<http://narrativegoldmine.com/ai-governance/PC-0010>
 
   - AI Governance Principles represent the conceptual foundation for responsible artificial intelligence, establishing normative guidelines that translate societal values and ethical imperatives into concrete requirements for AI system development and deployment. As AI systems increasingly influence consequential decisions in hiring, lending, criminal justice, healthcare, and autonomous systems, governance principles provide the framework ensuring these technologies serve human flourishing rather than undermining it.
 
-  - The need for AI governance principles stems from unique challenges posed by modern AI systems: opacity in decision-making processes (the "black box" problem where even developers cannot fully explain model predictions), potential for algorithmic bias amplifying existing societal inequities, privacy risks from processing sensitive personal data, accountability gaps when autonomous systems cause harm, and safety concerns as AI systems become more capable and autonomous. Traditional software governance frameworks prove insufficient because AI systems exhibit emergent behaviours not explicitly programmed, learn from data that may embed historical biases, and operate in domains where mistakes have significant human consequences.
+  - The need for AI governance principles stems from unique challenges posed by modern AI systems: opacity in decision-making processes (the "black box" problem where even developers cannot fully explain model predictions), potential for algorithmic bias amplifying existing societal inequities, privacy risks from processing sensitive personal data, accountability gaps when autonomous systems cause harm, and safety concerns as AI systems become more capable and autonomous. Traditional software governance frameworks prove insufficient because AI systems exhibit emergent behaviors not explicitly programmed, learn from data that may embed historical biases, and operate in domains where mistakes have significant human consequences.
 
-  - International bodies, governments, and industry organizations have converged on core governance principles despite implementation differences. The OECD AI Principles (endorsed by 42 countries) emphasise human-centered values, transparency, robustness, accountability, and inclusive growth. The EU's approach through the AI Act establishes risk-based requirements with strict controls on high-risk applications. IEEE's Ethically Aligned Design focuses on human rights, well-being, data agency, effectiveness, and transparency. ISO/IEC 42001 provides a management system framework for operationalizing governance. These frameworks share common themes: human agency and oversight, technical robustness and safety, privacy and data governance, transparency and explainability, fairness and non-discrimination, accountability and redress, and societal and environmental well-being.
+  - International bodies, governments, and industry organizations have converged on core governance principles despite implementation differences. The OECD AI Principles (endorsed by 42 countries) emphasize human-centered values, transparency, robustness, accountability, and inclusive growth. The EU's approach through the AI Act establishes risk-based requirements with strict controls on high-risk applications. IEEE's Ethically Aligned Design focuses on human rights, well-being, data agency, effectiveness, and transparency. ISO/IEC 42001 provides a management system framework for operationalizing governance. These frameworks share common themes: human agency and oversight, technical robustness and safety, privacy and data governance, transparency and explainability, fairness and non-discrimination, accountability and redress, and societal and environmental well-being.
 
   - Implementing AI governance principles requires translating abstract values into concrete practices: algorithmic impact assessments identifying potential harms before deployment, explainability mechanisms enabling users to understand AI decisions, bias testing and mitigation throughout development lifecycle, human oversight for consequential decisions, audit trails supporting accountability, redress mechanisms for individuals harmed by AI decisions, and continuous monitoring for drift and unintended consequences. The governance challenge intensifies as AI capabilities advance toward artificial general intelligence, requiring anticipatory governance frameworks for systems with increasingly autonomous operation and broad capabilities.
 
@@ -154,7 +169,18 @@ Ontology(<http://narrativegoldmine.com/ai-governance/PC-0010>
 
   - ### Subclasses
     id:: ai-governance-principle-subclasses
-    - [[Ethical Framework]] (PC-0011) - Ethical standards for [[AI System|AI systems]]
+- [[Ethical Framework]] (PC-0011) - Ethical standards for AI systems
+    - [[Regulatory Compliance]] (PC-0012) - Legal and regulatory requirements
+    - [[Traceability Mechanism]] (PC-0013) - Systems for tracking AI decisions
+    - [[Redress Procedure]] (PC-0014) - Mechanisms for addressing AI-caused harms
+    - [[Accountable Party]] (PC-0015) - Entities responsible for AI governance
+    - [[Fairness]] - Ensuring equitable treatment across demographics
+    - [[Transparency]] - Making AI decision processes understandable
+    - [[Privacy Preservation]] - Protecting personal data in AI systems
+    - [[Safety and Robustness]] - Ensuring reliable and secure operation
+    - [[Human Oversight]] - Maintaining meaningful human control
+
+- [[Ethical Framework]] (PC-0011) - Ethical standards for [[AI System|AI systems]]
     - [[Regulatory Compliance]] (PC-0012) - Legal and [[Regulatory Requirement|regulatory requirements]]
     - [[Traceability Mechanism]] (PC-0013) - Systems for tracking [[AI Decision|AI decisions]]
     - [[Redress Procedure]] (PC-0014) - Mechanisms for addressing [[AI-Caused Harm|AI-caused harms]]
@@ -177,12 +203,7 @@ Ontology(<http://narrativegoldmine.com/ai-governance/PC-0010>
     - **Policy Translation**: Connects abstract principles to concrete implementation practices
     - **Stakeholder Protection**: Formalizes mechanisms protecting affected parties
     - **International Harmonization**: Supports cross-border governance alignment
-
 # AI Governance Principle – Updated Ontology Entry
-
-### Quality Metrics
-	- quality-score:: 0.89
-	- authority-score:: 0.95
 
 ## Academic Context
 
@@ -303,23 +324,23 @@ Ontology(<http://narrativegoldmine.com/ai-governance/PC-0010>
 
 - **Key foundational sources**
   - OECD (2023, 2024). *Recommendation on Artificial Intelligence*. Updated framework addressing evolving AI systems and generative AI applications. Available: https://www.oecd.org/en/topics/sub-issues/ai-principles.html[3][7]
-
+  
   - UNESCO (2021). *Recommendation on the Ethics of Artificial Intelligence*. Emphasises environmental sustainability and gender equality in AI governance. Available through UNESCO official channels[1]
-
+  
   - European Commission (2024). *Artificial Intelligence Act*. Comprehensive regulatory framework establishing risk-based classification system. Official Journal of the European Union[1]
-
+  
   - National Institute of Standards and Technology (NIST) (2023). *AI Risk Management Framework*. Practical guidance for organisations implementing governance structures. Available: https://www.nist.gov[3]
 
 - **Organisational implementation literature**
   - Diligent (2025). *AI Governance: What It Is & How to Implement It*. Practical guidance on governance policy development and board-level collaboration[5]
-
+  
   - IBM (2025). *What is AI Governance?* Overview of processes, standards and guardrails for safe, ethical AI systems[6]
-
+  
   - AI21 Labs (2025). *9 Key AI Governance Frameworks in 2025*. Comparative analysis of current governance approaches and principles[1]
 
 - **Academic rigour and governance structures**
   - Stanford Law School, CodeX Centre (2025). *Towards Bullet-Proof AI Governance*. Emphasis on deliberate, formal, structured control mechanisms[8]
-
+  
   - Harvard DCE (2025). *Building a Responsible AI Framework: 5 Key Principles for Organisations*. Synthesis of fairness, transparency, accountability, privacy and security principles[9]
 
 ## Future Directions
@@ -352,6 +373,7 @@ Ontology(<http://narrativegoldmine.com/ai-governance/PC-0010>
 
 **Note on approach**: This entry prioritises current frameworks (OECD 2023–2024, EU AI Act, NIST 2023) whilst acknowledging the inherent challenge that AI governance itself remains somewhat of a moving target—rather like trying to write regulations for a technology that keeps improving faster than the ink dries on the policy documents.
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-15
@@ -363,4 +385,3 @@ Ontology(<http://narrativegoldmine.com/ai-governance/PC-0010>
 - **Bitcoin-AI Cross-References**: 12
 - **URLs Expanded**: 8
 - **2025 Updates**: EU AI Act application to crypto, OECD principles for blockchain AI, decentralized governance frameworks
-

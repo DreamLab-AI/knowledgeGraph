@@ -4,10 +4,10 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9953
-	- source-domain:: mv
+	- source-domain:: artificial-intelligence
 	- preferred-term:: Machine Learning Pipeline
 	- status:: active
-	- owl:class:: mv:MachineLearningPipeline
+	- owl:class:: ai:MachineLearningPipeline
 	- belongsToDomain:: [[metaverse]]
 	- definition:: Automated workflow systems that orchestrate the end-to-end machine learning lifecycle from data ingestion and preprocessing through model training, validation, deployment, and monitoring using MLOps practices.
 	- #### Relationships

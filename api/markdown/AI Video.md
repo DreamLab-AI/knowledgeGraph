@@ -1,114 +1,165 @@
-While groundbreaking, and crucially, "available", Luma Dream Machine...
+public:: true
 
-- ### OntologyBlock
-  id:: AI Video
-  - ontology:: true
-  - public-access:: true
-  - term-id:: MV-9731
-  - preferred-term:: AI Video
-  - source-domain:: ai
-  - owl:class:: ai:AiVideo
-  - status:: draft
+#Public page automatically published
 
-### Pika Labs
-- **Current leader**:
-		  {{tweet https://twitter.com/martial_artwork/status/1742138390517014918}}
-		- **Prompt Creativity & Flexibility**: Excels in this area, enabling users to directly influence the animation with their prompts.
-		- **Human Motion Animation**: Attempts adventurous animations but may result in distortions.
-		- **Camera Motion Options**: Offers accurate, straightforward camera motions but lacks the dynamic range of Runway ML.
-		- **Pros**: Free version (recently reduced quality), supports multiple aspect ratios, provides tutorials for prompt writing.
-		- **Cons**: Creations are visible to other users, potential for idea theft, and traffic issues on Discord server​[](https://www.toolify.ai/ai-news/revolutionary-ai-animation-tools-pika-vs-runway-78636)​​[](https://dragganaitool.uk/pika-labs-vs-runwayml-gen2/)​. Expensive to use through [Pika Art website](https://pika.art/login) $60pcm,
-	- ### Runway ML
-		- [twitter link to the render loading below](https://twitter.com/bennash/status/1746188870679400543)
-		  {{twitter https://twitter.com/bennash/status/1746188870679400543}}
-		- **Basic Animation**: Offers cinematic camera movements and more convincing human motion, but faces issues with brightness and image integrity.
-		- **Prompt Creativity & Flexibility**: Less flexible in prompt creativity, occasionally disregarding user prompts.
-		- **Human Motion Animation**: Produces high-quality animations but sometimes distorts the original image.
-		- **Camera Motion Options**: Provides dynamic camera shots, including zooming, panning, and rotating, but may lead to distortion.
-		- **Pros**: Web-based platform ensuring privacy, offers 120 free credits, advanced features, and the option to extend video length.
-		- **Cons**: Limited to 16:9 aspect ratio, may not be as flexible as Pika Labs in prompt generation​[](https://www.toolify.ai/ai-news/revolutionary-ai-animation-tools-pika-vs-runway-78636)​​[](https://dragganaitool.uk/pika-labs-vs-runwayml-gen2/)​.
-	- ### Mid Journey have said:
-		- **Midjourney Video** "will not be like any other AI video products that are currently available out there and will be 10X better."
-			- **David Holz**: “*MidJourney video may not be consistently making what you want, but the quality will be consistently good by default.*”
-		- **Video Training**: The Midjourney team will start to train the video/animation model, which will come before 3D.
-			- Already have all the data needed to train the model.
-		- **3D:** needs more data to train, so it’s a bit slower than expected.
-		- {{video https://youtu.be/LY3B0d623wA}}
-	- ### [VideoPoet – Google Research](https://sites.research.google/videopoet/)
-		- **Overview:** Google's text to video, linked to Bard, but not yet available.
-	- ### [HeyGen](https://www.heygen.com/) for video avatars
-		- **Overview**: HeyGen emphasises security and ethics in its AI video platform, being SOC 2 compliant and focusing on data protection.
-		- **Notable Features**: Known for its user-friendly interface and effectiveness in creating short, engaging videos useful for various departments like HR and training.
-		- **Target Audience**: Targets SMEs, offering a range of applications from casual to professional use​​.
-	- ## Virtual production
-		- ### Simulon (Virtual Production)
-			- **Cloud rendered magic**: Still early, and I'm not QUITE sure how it works.
-			- {{tweet https://twitter.com/diveshnaidoo/status/1735006300386336919}}
-			- [Automotive example](https://www.linkedin.com/posts/divesh-naidoo-48809934_vfx-cgi-virtualproduction-activity-7186786217445711875-7ByY?)
-			- https://www.instagram.com/reel/C6fQz81oDMS/
-			-
-		- ### My flossverse stuff from 2022
-			- {{tweet https://twitter.com/flossverse/status/1629601804521537537}}
-		- ### Skyglass
-			- Straight up virtual production on iPhone
-			- {{tweet https://twitter.com/skyglassapp/status/1712599252575412474}}
-		- ### Adobe integrates everything to Premier
-			- {{video https://www.youtube.com/watch?v=6de4akFiNYM&t=1s}}
-		- ### Other Notable Research
-			- ByteDance [MagicVideo-V2: Multi-Stage High-Aesthetic Video Generation (magicvideov2.github.io)](https://magicvideov2.github.io/)
-	- ## What's next: 3D world creation
-	  id:: 659a9247-f51f-4b45-9673-df22ec0476dd
-		- Again, midjourney are working on a model. - 🟢 Best I can find is [Sudo AII](https://www.sudo.ai/)
-		- <iframe src="https://www.sudo.ai" style="width: 100%; height: 600px"></iframe>
-		- <iframe src="https://yueyang1996.github.io/holodeck/" style="width: 100%; height: 600px"></iframe>
-		- https://research.nvidia.com/labs/toronto-ai/AlignYourGaussians/
-		- [Mosaic-SDF for 3D Generative Models (connectedpapers.com)](https://www.connectedpapers.com/main/a7d6d07fdb631ce263ec2ddad72df269587fd3c9/Mosaic%20SDF-for-3D-Generative-Models/graph)
-		- https://lioryariv.github.io/msdf/
-		- ## Voice to CAD like Tony Stark is [obviously coming](https://www.linkedin.com/posts/bengeskin_i-feel-like-tony-stark-and-doctor-strange-activity-7152044309213519872-YUnm/?)
-			- ![xrCAD.mp4](../assets/xrCAD_1705345928224_0.mp4){:height 44, :width 66}
-			- # [[Metaverse and Telecollaboration]]
-			- 🟢 I could go on all day about this, goods and bads. I literally wrote a book on it.
-			- 🟢 A lot (for me) hinges on [[OpenUSD]] the universal scene language. It's been SO long since we have had something useful.
-			- Nvidia have a text to 3D pipeline for [[Omniverse]]. Will be interesting to see what the use cases are. This is their new Cesium [geo tile integration](https://cesium.com/blog/2024/01/16/now-available-[[NVIDIA Omniverse]]-aeco-demo-pack/) giving global instant models.
-			-
-			- ![1705423306024.mp4](../assets/1705423306024_1705437842029_0.mp4)
+- # Real-Time
+- [H. Jensons -TWISTED : r/aivideo (reddit.com)](https://www.reddit.com/r/aivideo/comments/1eryhk6/h_jensons_twisted/)
+- ![rapidsave.com_h_jensons_twisted-zyldr5g40mid1.mp4](../assets/rapidsave.com_h_jensons_twisted-zyldr5g40mid1_1723965805126_0.mp4)
+- [EndlessDreams - Real-Time videos made easy - YouTube](https://www.youtube.com/watch?v=irUpybVgdDY)
+- {{video https://www.youtube.com/watch?v=irUpybVgdDY}}
+- # Commercial Offerings
+- {{video https://www.youtube.com/watch?v=_XtS_4PzEyk&}}
+- ## Runway Gen 3
+	- [Introducing Gen-3 Alpha: A New Frontier for Video Generation (runwayml.com)](https://runwayml.com/blog/introducing-gen-3-alpha/)
+	-
+- ## Luma Dream Machine?
+	- Luma Dream Machine is a browser-based AI video generator [developed by Luma Labs](https://www.creativebloq.com/ai/luma-dream-machine-makes-ai-video-open-to-all), a San Francisco-based startup. It allows users to generate short videos (around 5 seconds) by simply entering a text or image prompt.
+		- **Free to Use**: Luma Dream Machine is free to try, with no waiting list or subscription required. Users get 30 free video generations per month.
+		- **High-Quality Output**: The AI produces impressively clean and detailed videos, adhering to prompts accurately and generating relatively coherent motion.
+		- **Fast Generation**: Videos are generated in around 2 minutes after entering the prompt.
+		- **Consistent Subjects**: Characters and subjects appear consistent throughout the video, capable of expressing emotion better than many previous AI video models.
+	- ## Limitations
+	  While groundbreaking, and crucially, "available", Luma Dream Machine still has some limitations, as acknowledged by the company:
+		- Morphing, warping, and unnatural movements
+		- Difficulty with complex scenes or full-body shots
+		- Text in videos may appear garbled
+		- Anatomical issues like extra limbs or heads
+	- [(1) Professor John Keeting on X: "this was created with Luma AI I am very impressed. Made by Kevin Van Witt and the talented team at The Monster Library https://t.co/IXLWO1Be91" / X (twitter.com)](https://twitter.com/ProfKeeting/status/1801632319536607623)
+	- {{twitter https://twitter.com/ProfKeeting/status/1801632319536607623}}
+- {{embed ((661d5f76-bd9c-493d-afc1-efcec299ed24))}}
+- {{embed ((664465de-5bd3-4169-a90b-c03f117bef04))}}
+- # The Rest
+	- **Lumiere: Google's Contribution** Google's Lumiere project also signifies progress in video generation capabilities, though full details remain undisclosed. This suggests ongoing competition and development  in the field.
+	- **Meta's Approach: Foundational World Modeling** Meta (formerly Facebook) is taking a distinct approach, focusing on the underlying world modeling needed for video encoding and generation. This emphasis on understanding the principles of physics and object interactions could contribute to  more realistic AI-generated videos.
+	- **Technical Capabilities and Limitations**
+		- **Capabilities** Current AI video generators demonstrate proficiency in producing high-resolution images and videos. They are capable of style adaptation, simulating complex scenes with multiple elements, and handling variations in aspect ratio and resolution.
+		- **Limitations**  Despite their strengths, these models still struggle to accurately simulate physics and lack a complete understanding of cause and effect. Occasional errors regarding object permanence highlight the existing gap between pattern recognition and a comprehensive understanding of the world.
+	- **Ethical and Creative Considerations**
+		- **Potential Impacts**  Advancements in AI video generation raise questions about the future of creative professions and the ethical implications of AI-generated content. Balancing technological innovation with safeguarding the integrity of human creativity is an important consideration.
+		- **Challenges**  Distinguishing between pattern recognition and genuine understanding is pivotal in the ethical use of AI. The potential for misuse or the creation of harmful content underscores the need for clear guidelines and responsible practices.
+- # Open systems
+- [Stable Video 4D — Stability AI](https://stability.ai/news/stable-video-4d)
+-
+- ## OpenSora
+	- [[Update Cycle]]
+- ## Stable Video
+	- ![1708218759791.mp4](../assets/1708218759791_1708282889322_0.mp4)
+	- [(16) Discarded Androids (Midjourney to Stable Video beta) : midjourney (reddit.com)](https://www.reddit.com/r/midjourney/comments/1ar6uz0/discarded_androids_midjourney_to_stable_video_beta/)
+		- ![m2-res_960p.mp4](../assets/m2-res_960p_1708014022595_0.mp4)
+- ## Pika
+	- [twitter link to the render loading below](https://twitter.com/BMaursky/status/1747700852226199815)
+	  {{twitter https://twitter.com/BMaursky/status/1747700852226199815}} -
+- # Misc links being integrated.
+- [[MotionDirector]], with a dual-path LoRAs architecture to decouple the learning of appearance and motion. Further, we design a novel appearance-debiased temporal loss to mitigate the influence of appearance on the temporal training objective. Experimental results show the proposed method can generate videos of diverse appearances for the customized motions. Our method also supports various downstream applications, such as the mixing of different videos with their appearance and motion respectively, and animating a single image with customized motions.
+- [RAVE: Randomized Noise Shuffling for Fast and Consistent Video Editing with Diffusion Models (rave-video.github.io)](https://rave-video.github.io/)
+	- https://discord.com/channels/1076117621407223829/1192162917395730635/1192162917395730635
+	- Here's one way to use the brand new RAVE node from here: https://github.com/spacepxl/ComfyUI-RAVE
+		- First pass often has flickering (depending a lot on the input), so I made a workflow to smooth even harsh flickering with AD. This allows for utilizing the transformative and often more detailed vid2vid from RAVE and still get smooth results in [[ComfyUI]]
+			- Updated LCM version: https://discord.com/channels/1076117621407223829/1192162917395730635/1192212692354748427
+			  using the "video/controlgif/animatediff" contolnet from here: https://huggingface.co/crishhh/animatediff_controlnet/blob/main/controlnet_checkpoint.ckpt
+		- {{video https://rave-video.github.io/static/teaser/car-turn_final.mp4}}
+- ## Style transfer for humans
+	- Multiple techniques tested with the same [[LoRA DoRA etc]] for [comparison](https://discord.com/channels/1076117621407223829/1198416106554130552/1198416106554130552)
+- [ActAnywhere](https://actanywhere.github.io/)
+- [AI-Enhanced Creator (beehiiv.com)](https://nejcsusec.beehiiv.com/)
+- AnimateAnyone for [[ComfyUI]] [MrForExample/ComfyUI-AnimateAnyone-Evolved: Improved AnimateAnyone implementation that allows you to use the opse image sequence and reference image to generate stylized video (github.com)](https://github.com/MrForExample/ComfyUI-AnimateAnyone-Evolved)
+- [CG Renders to AI ANIMATION
+	- NIKE video — MOONWALKERS PICTURE](https://www.moonwalkerspicture.com/newslounge/cg-renders-to-ai-workflow-vol-02-anim)
+- Motion Control
+	- [MotionCtrl (wzhouxiff.github.io)](https://wzhouxiff.github.io/projects/MotionCtrl/)
+- [[2401.12945] Lumiere: A Space-Time Diffusion Model for Video Generation (arxiv.org)](https://arxiv.org/abs/2401.12945)
+- [I2VGen-XL
+	- a Hugging Face Space by damo-vilab](https://huggingface.co/spaces/damo-vilab/I2VGen-XL)
+- [ali-vilab/i2vgen-xl: Official repo for VGen: a holistic video generation ecosystem for video generation building on diffusion models (github.com)](https://github.com/ali-vilab/i2vgen-xl)
+	- [MagicVideo-V2: Multi-Stage High-Aesthetic Video Generation (magicvideov2.github.io)](https://magicvideov2.github.io/)
+- Interpolation and interframe consistency
+	- [controlnet and ebsynth temporal consistency](https://www.reddit.com/r/StableDiffusion/comments/114zmh3/controlnet_and_ebsynth_make_incredible_temporally/)
+	- [Motion-Conditioned Diffusion Model for Controllable Video Synthesis](https://tsaishien-chen.github.io/MCDiff/)
+	- [Interframe consistency is now here](https://twitter.com/cut_pow/status/1576748659051749377)
+	- [Interpolation between two frames](https://film-net.github.io/)
+	- [FILM frame interpolator](https://film-net.github.io/)
+	- [ProPainter for Video Inpainting (shangchenzhou.com)](https://shangchenzhou.com/projects/ProPainter/)
+	- [zengyh1900/Awesome-Image-Inpainting: A curated list of image inpainting and video inpainting papers and resources (github.com)](https://github.com/zengyh1900/Awesome-Image-Inpainting)
+	-
+- [Runway AI video editing](https://www.youtube.com/c/RunwayML)
+	- Gen2 examples
+- Multishot [VideoDrafter: Content-Consistent Multi-Scene Video Generation with LLM](https://videodrafter.github.io/)
+- [vienna with prompts](https://www.linkedin.com/posts/dr-andreas-fraunberger_marketinginnovation-digitaltourism-ar-ugcPost-7073039429417730048-BKfQ?utm_source=share&utm_medium=member_desktop)
+- [Video slowmo and enhance](http://zeyuan-chen.com/VideoINR/)
+- [deforum stable diffusion video](https://github.com/HelixNGC7293/DeforumStableDiffusionLocal)
+- [Phenaki](https://phenaki.video/)
+- Collaborative video pipeline
+- [Magicvideo (faster)](https://magicvideo.github.io/)
+- [Production ready re aging](https://studios.disneyresearch.com/2022/11/30/production-ready-face-re-aging-for-visual-effects/)
+- [distilled models for 25fps](https://arxiv.org/abs/2202.00512)
+- [Stable warpfusion](https://www.linkedin.com/posts/rainisto_stablediffusion-musicvideo-remix-activity-7018207241522614272-YT1y?utm_source=share&utm_medium=member_desktop)
+- [Video talking heads from text service](https://www.synthesia.io/)
+- [Tune a video](https://tuneavideo.github.io/)
+- [Vidyo: Generates videos for social networks from longer videos.](https://vidyo.ai/)
+- [Stylegan-T video transformer from google](https://sites.google.com/view/stylegan-t)
+- [Houdini](https://github.com/proceduralit/StableDiffusion_Houdini)
+- [Dream Mix video to video remix](https://dreamix-video-editing.github.io/)
+- [RIFE frame interpolation](https://github.com/megvii-research/ECCV2022-RIFE)
+- [example github for sd](https://github.com/vladmandic/rife)
+- [Synthesia corporate video generation](https://www.youtube.com/watch?v=4uzzD9sD-PI)
+- [pix2pixHD nextframe google colab](https://colab.research.google.com/github/dvschultz/ml-art-colabs/blob/master/Pix2PixHD_Next_Frame_Prediction.ipynb)
+- [minecraft demo codebase](https://github.com/TSFSean/InvokeAI-DiffusionCraftAI)
+- [animation from mixamo](https://www.reddit.com/r/StableDiffusion/comments/zecyc7/mixamo_animations_stable_diffusion_v2_depth2img/)
+- [Intel enhance photorealism in realtime](https://github.com/isl-org/PhotorealismEnhancement)
+- custom SD video to video script
+- [Testing a custom video2video script I'm working on. (These used RealisticVision1.4 & ControlNet) : r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/comments/11iviep/testing_a_custom_video2video_script_im_working_on/)
+- [consistency tools for character tooning](https://www.reddit.com/r/StableDiffusion/comments/11okvc8/how_about_another_joke_murraaaay/)
+- Alibaba system
+	- [website](https://videocomposer.github.io/)
+	- [github](https://github.com/damo-vilab/videocomposer)
+	- [model cards](https://huggingface.co/damo-vilab/MS-Image2Video)
+- [9 new tools](https://twitter.com/mreflow/status/1637957302073565184)
+- [Automatic1111 plugin](https://www.reddit.com/r/StableDiffusion/comments/11w0ba9/modelscope_17b_text2video_model_is_now_available/)
+- [Next frame prediction with controlnet](https://www.reddit.com/r/StableDiffusion/comments/11f8i0g/next_frame_prediction_with_controlnet/)
+- [Will smith eating spaghetti](https://www.reddit.com/r/StableDiffusion/comments/1244h2c/will_smith_eating_spaghetti/)
+- [Transform Video to Animation in Stable Diffusion | How to Install + BEST Consistency Settings: Learn how to use AI to create animations from real videos. We'll use Stable Diffusion and other tools for maximum consistencyProject Files:https://bit.ly/3...](https://www.youtube.com/watch?v=sVmi2Yp43c0&t=22)
+- [How to Use ModelScope text2video with Automatic1111’s Stable Diffusion Web UI | kombitz: Enable the Extension Click on the Extension tab and then click on Install from URL. Enter https://github.com/deforum-art/sd-webui-modelscope-text2video in the URL box and click on Install. Click on Installed and click on Apply and restart UI. Go to your stable-diffusion-webui/models folder and create a folder called ModelScope and then create a folder called t2v under ModelScope. This is your models folder for text2video.](https://www.kombitz.com/2023/03/28/how-to-use-modelscope-text2video-with-automatic1111s-stable-diffusion-web-ui/)
+- This article provides instructions on how to use ModelScope's text2video feature with Automatic1111's Stable Diffusion Web UI.
+- [latent consistency pipeline](https://www.reddit.com/r/StableDiffusion/comments/17fvxrq/60_frame_video_generated_in_646_seconds/)
+- [GitHub
+	- Picsart-AI-Research/Text2Video-Zero: Text-to-Image Diffusion Models are Zero-Shot Video Generators: Text-to-Image Diffusion Models are Zero-Shot Video Generators
+	- GitHub
+	- Picsart-AI-Research/Text2Video-Zero: Text-to-Image Diffusion Models are Zero-Shot Video Generators](https://github.com/Picsart-AI-Research/Text2Video-Zero)
+- The Picsart-AI-Research/Text2Video-Zero repository contains code for a text-to-image diffusion model that can be used to generate videos from text input. The model is a zero-shot video generator, meaning that it does not require any training data in order to generate videos.
+- [LVDM for long video creation](https://yingqinghe.github.io/LVDM/)
+- [The Text2Room algorithm generates textured 3D meshes from a given text prompt by leveraging pre-trained 2D text-to-image models. The core idea is to select camera poses that will result in a seamless, textured 3D mesh. The algorithm iteratively fuses scene frames with the existing geometry to create the final mesh. Evaluation shows that the algorithm is able to generate room-scale 3D geometry with compelling textures from only text as input.](https://lukashoel.github.io/text-to-room/)
+- [The VMesh system models a scene with a triangular mesh and a sparse volume for efficient view synthesis. It is trained on multi-view images of an object to create a contiguous representation of the object's surface and volume. This representation is then used to generate a simplified triangular mesh and a sparse volume, which can be stored and rendered efficiently. The system is designed for real-time applications and can render at 2K 60FPS on common consumer devices.](https://bennyguo.github.io/vmesh/)
+- [LLM guided video generation paper](https://arxiv.org/abs/2309.15091)
+- [LVM video gen using LLM paper](https://arxiv.org/pdf/2309.17444.pdf)
+- [Temporal stable automatic plugin](https://www.reddit.com/r/StableDiffusion/comments/12sd4bi/results_from_latest_version_of_temporal_stable/)
+- [We present a method for high-resolution video synthesis using latent diffusion models (LDMs). Our approach first pre-trains an LDM on images, then introduces a temporal dimension to the latent space diffusion model and fine-tunes it on encoded image sequences (i.e. videos). We focus on two real-world applications: simulation of in-the-wild driving data and creative content creation with text-to-video modeling. Our method achieves state-of-the-art performance on real driving videos of 512 x 1024 resolution. Additionally, our approach can leverage off-the-shelf pre-trained image LDMs, turning the publicly available, state-of-the-art text-to-image LDM Stable Diffusion into an efficient and expressive text-to-video model.](https://buff.ly/41FgQrb)
+- [This script allows for the automation of video stylization using StableDiffusion and ControlNet.](https://github.com/volotat/SD-CN-Animation)
+- [Really easy videos in A1111](https://www.reddit.com/r/StableDiffusion/comments/12otdo0/the_secret_to_really_easy_videos_in_a1111_easier/)
+- [Dancer 4 keyframes, low noise, controlnet approach](https://www.reddit.com/r/StableDiffusion/comments/12nwpdx/dancer_4_keyframes_guide_and_source_files_for/)
+- [Flicker free video workflow paper (good!)](https://anonymous-31415926.github.io/)
+- [Pika labs](https://twitter.com/pika_labs)
+- [Realtime lip-sync API](https://getsynchronicity.io/)
+- [ms image to video on huggingface](https://huggingface.co/spaces/fffiloni/MS-Image2Video)
+- [model to video blender modules](https://github.com/tin2tin/Generative_AI)
+- [videocomposer in python 3.9](https://github.com/mindspore-lab/mindone/tree/master/examples/videocomposer)
+- [motionagent image to video](https://github.com/modelscope/motionagent)
+- [Animatediff comfy workflows on discord](https://discord.com/channels/1076117621407223829/1149372684220768367)
+- [fluid animation youtube](https://www.youtube.com/watch?v=ak_az6ZNYFM)
+- [Controlnet tutorial](https://www.youtube.com/watch?v=WHxIrY2wLQE)
+- [LCM loras for fast inferencing](https://huggingface.co/collections/latent-consistency/latent-consistency-models-loras-654cdd24e111e16f0865fba6)
+- Animatediff is a new animation software that provides a range of tools and features for creating high-quality animations. It offers a user-friendly interface and supports various animation techniques, such as 2D, 3D, stop motion, and more. With Animatediff, users can easily bring their ideas to life and express their creativity through unique and captivating animations. Whether you're a professional animator or a beginner, Animatediff offers a comprehensive set of features to help you create stunning animations in a fast and efficient manner. title:: Animatediff and Stablevideo
+- Youtube tutorials
+	- [IF_Animator ComfyUI workflow LCM+Animatediff+IPA+CN (youtube.com)](https://www.youtube.com/watch?v=FE2KmCEv19E)
+	- [[Part 2] Tips and Tricks
+		- AnimateDiff ControlNet Animation in ComfyUI
+		- YouTube](https://www.youtube.com/watch?v=aysg2vFFO9g)
+	-
+	- [TianxingWu/FreeInit: FreeInit: Bridging Initialization Gap in Video Diffusion Models (github.com)](https://github.com/TianxingWu/FreeInit)
+	-
+- [CiaraStrawberry/svd-temporal-controlnet (github.com)](https://github.com/CiaraStrawberry/svd-temporal-controlnet)
+- [ProjectNUWA/DragNUWA (github.com)](https://github.com/ProjectNUWA/DragNUWA)
+	-
+- ## AnimateDiff
+	- [(1461) Discord | #ad_resources | banodoco](https://discord.com/channels/1076117621407223829/1149372684220768367) animatediff resources
 	-
 	-
-	- {{tweet https://twitter.com/BlockadeLabs/status/1719818562917761094}}
-- This is a [[presentation]] slide and the next slide is [[Open Generative AI tools]]
-
-## Current Landscape (2025)
-
-- Industry adoption and implementations
-  - Metaverse platforms continue to evolve with focus on interoperability and open standards
-  - Web3 integration accelerating with decentralised identity and asset ownership
-  - Enterprise adoption growing in virtual collaboration, training, and digital twins
-  - UK companies increasingly active in metaverse development and immersive technologies
-
-- Technical capabilities
-  - Real-time rendering at photorealistic quality levels
-  - Low-latency networking enabling seamless multi-user experiences
-  - AI-driven content generation and procedural world building
-  - Spatial audio and haptics enhancing immersion
-
-- UK and North England context
-  - Manchester: Digital Innovation Factory supports metaverse startups and research
-  - Leeds: Holovis leads in immersive experiences for entertainment and training
-  - Newcastle: University research in spatial computing and interactive systems
-  - Sheffield: Advanced manufacturing using digital twin technology
-
-- Standards and frameworks
-  - Metaverse Standards Forum driving interoperability protocols
-  - WebXR enabling browser-based immersive experiences
-  - glTF and USD for 3D asset interchange
-  - Open Metaverse Interoperability Group defining cross-platform standards
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
-
-### Relationships
-- is-subclass-of:: [[Metaverse]]

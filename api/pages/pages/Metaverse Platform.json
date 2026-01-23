@@ -10,15 +10,14 @@
     "Tourism Metaverse",
     "Immersive Technology",
     "Infrastructure Architecture",
-    "Digital Citizenship",
-    "VirtualWorld"
+    "Digital Citizenship"
   ],
   "wiki_links": [
-    "Social VR",
-    "metaverse",
-    "Virtual World",
     "User-Generated Content",
-    "Virtual Social Interaction"
+    "metaverse",
+    "Virtual Social Interaction",
+    "Social VR",
+    "Virtual World"
   ],
   "ontology": {
     "term_id": "MV-9964",

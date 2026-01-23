@@ -1,32 +1,136 @@
 - ### OntologyBlock
   id:: archival-node-ontology
   collapsed:: true
-	- ontology:: true
-	- term-id:: DT-0093
-	- preferred-term:: Archival Node
-	- source-domain:: bc
-	- owl:class:: bc:ArchivalNode
-	- status:: complete
-	- public-access:: true
-	- definition:: Complete history storage node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-	- source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]
-	- maturity:: mature
-	- owl:class:: bc:ArchivalNode
-	- owl:physicality:: VirtualEntity
-	- owl:role:: Object
-	- owl:inferred-class:: bc:VirtualObject
-	- belongsToDomain:: [[CryptographicDomain]], [[DisruptiveTechDomain]]
-	- implementedInLayer:: [[SecurityLayer]]
-	- #### Relationships
-	  id:: archival-node-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Network Component]]
-		- uses-data-structure:: [[Blockchain Entity]]
-		- instance-of:: [[NetworkComponent]]
 
-## Archival Node
+  - **Identification**
 
-Archival Node refers to complete history storage node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+    - domain-prefix:: BC
+
+    - sequence-number:: 0093
+
+    - filename-history:: ["BC-0093-archival-node.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: BC-0093
+    - preferred-term:: Archival Node
+    - source-domain:: bc
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-10-28
+
+  - **Definition**
+    - definition:: Complete history storage node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+    - maturity:: mature
+    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: bc:ArchivalNode
+    - owl:physicality:: VirtualEntity
+    - owl:role:: Object
+    - owl:inferred-class:: bc:VirtualObject
+    - belongsToDomain:: [[CryptographicDomain]]
+    - implementedInLayer:: [[SecurityLayer]]
+
+  - #### Relationships
+    id:: archival-node-relationships
+    - is-subclass-of:: [[Blockchain Entity]], [[NetworkComponent]]
+
+  - #### OWL Axioms
+    id:: archival-node-owl-axioms
+    collapsed:: true
+    - ```clojure
+      Prefix(:=<http://metaverse-ontology.org/blockchain#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(dct:=<http://purl.org/dc/terms/>)
+
+Ontology(<http://metaverse-ontology.org/blockchain/BC-0093>
+  Import(<http://metaverse-ontology.org/blockchain/core>)
+
+  ## Class Declaration
+  Declaration(Class(:ArchivalNode))
+
+  ## Subclass Relationships
+  SubClassOf(:ArchivalNode :NetworkComponent)
+  SubClassOf(:ArchivalNode :BlockchainEntity)
+
+  ## Essential Properties
+  SubClassOf(:ArchivalNode
+    (ObjectSomeValuesFrom :partOf :Blockchain))
+
+  SubClassOf(:ArchivalNode
+    (ObjectSomeValuesFrom :hasProperty :Property))
+
+  ## Data Properties
+  DataPropertyAssertion(:hasIdentifier :ArchivalNode "BC-0093"^^xsd:string)
+  DataPropertyAssertion(:hasAuthorityScore :ArchivalNode "1.0"^^xsd:decimal)
+  DataPropertyAssertion(:isFoundational :ArchivalNode "true"^^xsd:boolean)
+
+  ## Object Properties
+  ObjectPropertyAssertion(:enablesFeature :ArchivalNode :BlockchainFeature)
+  ObjectPropertyAssertion(:relatesTo :ArchivalNode :RelatedConcept)
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label :ArchivalNode "Archival Node"@en)
+  AnnotationAssertion(rdfs:comment :ArchivalNode
+    "Complete history storage node"@en)
+  AnnotationAssertion(dct:description :ArchivalNode
+    "Foundational blockchain concept with formal ontological definition"@en)
+  AnnotationAssertion(:termID :ArchivalNode "BC-0093")
+  AnnotationAssertion(:priority :ArchivalNode "1"^^xsd:integer)
+  AnnotationAssertion(:category :ArchivalNode "network-security"@en)
+)
+      ```
+
+- ## About Archival Node
+  id:: archival-node-about
+
+  - Complete history storage node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+  -
+  - ### Key Characteristics
+    id:: archival-node-characteristics
+    - 1. **Definitional Property**: Core defining characteristic
+    - 2. **Functional Property**: Operational behavior
+    - 3. **Structural Property**: Compositional elements
+    - 4. **Security Property**: Security guarantees provided
+    - 5. **Performance Property**: Efficiency considerations
+  -
+  - ### Technical Components
+    id:: archival-node-components
+    - **Implementation**: How concept is realized technically
+    - **Verification**: Methods for validating correctness
+    - **Interaction**: Relationships with other components
+    - **Constraints**: Technical limitations and requirements
+  -
+  - ### Use Cases
+    id:: archival-node-use-cases
+    - **1. Core Blockchain Operation**
+    - **Application**: Fundamental blockchain functionality
+    - **Example**: Practical implementation in major blockchains
+    - **Requirements**: Technical prerequisites
+    - **Benefits**: Value provided to blockchain systems
+  -
+  - ### Standards & References
+    id:: archival-node-standards
+    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
+    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
+    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
+  -
+
+
+## Academic Context
+
+- Archival nodes are a specialised category of blockchain nodes that maintain a **complete historical record** of the blockchain, including every block, transaction, and the state of all accounts and smart contracts at each block height.
+  - They extend the functionality of full nodes by storing *all* historical states, not just the current state and recent blocks.
+  - This comprehensive data retention supports advanced use cases such as auditing, forensic analysis, regulatory compliance, and in-depth research.
+- The academic foundation of archival nodes lies in distributed ledger technology, cryptographic security, and consensus algorithms that ensure data integrity and immutability.
+  - Research explores optimisation of storage, query efficiency, and scalability challenges inherent in maintaining full blockchain history.
+
+## Current Landscape (2025)
 
 - Archival nodes are widely adopted in blockchain ecosystems that require detailed historical data access, notably Ethereum and other smart contract platforms.
   - They are critical for developers, researchers, and enterprises needing to reconstruct past states or perform complex queries without recomputing from genesis.
@@ -41,28 +145,6 @@ Archival Node refers to complete history storage node within blockchain systems,
 - Standards and frameworks:
   - Ethereum’s node software (e.g., Geth, OpenEthereum) supports archival mode.
   - Industry standards for node interoperability and data query APIs continue to evolve, with emphasis on optimising archival data access.
-
-## Technical Details
-
-- **Id**: archival-node-standards
-- **Collapsed**: true
-- **Domain Prefix**: BC
-- **Sequence Number**: 0093
-- **Filename History**: ["BC-0093-archival-node.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-10-28
-- **Maturity**: mature
-- **Source**: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]
-- **Authority Score**: 0.95
-- **Owl:Class**: bc:ArchivalNode
-- **Owl:Physicality**: VirtualEntity
-- **Owl:Role**: Object
-- **Owl:Inferred Class**: bc:VirtualObject
-- **Belongstodomain**: [[CryptographicDomain]]
-- **Implementedinlayer**: [[SecurityLayer]]
-- **Is Subclass Of**: [[Blockchain Entity]], [[NetworkComponent]]
 
 ## Research & Literature
 
@@ -104,17 +186,21 @@ Archival Node refers to complete history storage node within blockchain systems,
 
 ## References
 
-1. Gudgeon, L., et al. (2020). "The Decentralised Financial Crisis: Attacks on DeFi." *Proceedings of the ACM on Measurement and Analysis of Computing Systems*, 4(2), 1-27. DOI: 10.1145/3391275
-2. Bonneau, J., et al. (2015). "SoK: Research Perspectives and Challenges for Bitcoin and Cryptocurrencies." *IEEE Symposium on Security and Privacy*. DOI: 10.1109/SP.2015.14
-3. Wood, G. (2014). "Ethereum: A Secure Decentralised Generalised Transaction Ledger." Ethereum Project Yellow Paper. URL: https://ethereum.github.io/yellowpaper/paper.pdf
-4. QuickNode Guides. (2025). "Ethereum Full Node vs. Archive Node." QuickNode.
-5. NOWNodes Blog. (2025). "Understanding Archive, Full, and Light Nodes in Blockchain."
+1. Gudgeon, L., et al. (2020). "The Decentralised Financial Crisis: Attacks on DeFi." *Proceedings of the ACM on Measurement and Analysis of Computing Systems*, 4(2), 1-27. DOI: 10.1145/3391275  
+2. Bonneau, J., et al. (2015). "SoK: Research Perspectives and Challenges for Bitcoin and Cryptocurrencies." *IEEE Symposium on Security and Privacy*. DOI: 10.1109/SP.2015.14  
+3. Wood, G. (2014). "Ethereum: A Secure Decentralised Generalised Transaction Ledger." Ethereum Project Yellow Paper. URL: https://ethereum.github.io/yellowpaper/paper.pdf  
+4. QuickNode Guides. (2025). "Ethereum Full Node vs. Archive Node." QuickNode.  
+5. NOWNodes Blog. (2025). "Understanding Archive, Full, and Light Nodes in Blockchain."  
 6. MoonPay. (2025). "What Are Blockchain Nodes and How Do They Work?" MoonPay Learning Centre.
 
+
 ## Metadata
+
 
 - **Migration Status**: Ontology block enriched on 2025-11-12
 - **Last Updated**: 2025-11-12
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+

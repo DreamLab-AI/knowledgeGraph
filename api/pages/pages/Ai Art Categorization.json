@@ -5,13 +5,13 @@
   "backlinks": [],
   "wiki_links": [
     "Computer Vision",
-    "Deep Learning",
-    "Art Historical Knowledge",
-    "metaverse",
-    "Art Curation",
-    "Style Analysis",
     "Art Classification",
-    "Authenticity Detection"
+    "Deep Learning",
+    "metaverse",
+    "Authenticity Detection",
+    "Art Historical Knowledge",
+    "Style Analysis",
+    "Art Curation"
   ],
   "ontology": {
     "term_id": "MV-9761",

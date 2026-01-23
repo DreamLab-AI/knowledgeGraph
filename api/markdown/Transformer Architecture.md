@@ -4,19 +4,527 @@
 	- ontology:: true
 	- term-id:: AI-0196
 	- preferred-term:: Transformer Architecture
-	- source-domain:: ai
+	- source-domain:: artificial-intelligence
 	- status:: draft
-    - public-access:: true
+- definition:: A neural network architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely, designed for sequence-to-sequence tasks.
 
+## Characteristics
 
+- **Self-Attention Based**: Uses multi-head self-attention as the core mechanism for processing sequences
+- **Parallel Processing**: Unlike recurrent models, processes entire sequences in parallel
+- **Positional Encoding**: Injects position information to maintain sequence order
+- **Layer Structure**: Consists of stacked encoder and decoder layers with attention and feed-forward sub-layers
+
+## Academic Foundations
+
+**Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
+
+**Key Citations**: 173,000+ citations (as of 2025)
+
+**Benchmark Performance**: Achieved 28.4 BLEU on the WMT 2014 English-to-German translation task, establishing state-of-the-art performance at introduction.
+
+## Technical Context
+
+The transformer architecture revolutionised natural language processing by demonstrating that attention mechanisms alone, without recurrence or convolutions, could achieve superior performance on sequence-to-sequence tasks whilst enabling efficient parallel computation.
+
+## Ontological Relationships
+
+- **Broader Term**: Neural Network Architecture
+- **Related Terms**: Self-Attention, Multi-Head Attention, Encoder-Decoder Architecture, Positional Encoding
+- **Narrower Terms**: BERT, GPT, T5 (specific transformer implementations)
+
+## Usage Context
+
+"The Transformer architecture achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, establishing state-of-the-art performance."
+
+## OWL Functional Syntax
+
+```clojure
+(Declaration (Class :TransformerArchitecture))
+(AnnotationAssertion rdfs:label :TransformerArchitecture "Transformer Architecture"@en)
+(AnnotationAssertion rdfs:comment :TransformerArchitecture
+  "A neural network architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely."@en)
+(AnnotationAssertion :hasSource :TransformerArchitecture
+  "Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762 (2017)"@en)
+(AnnotationAssertion :hasCitationCount :TransformerArchitecture "173000+"^^xsd:string)
+
+;; Taxonomic relationships
+(SubClassOf :TransformerArchitecture :NeuralNetworkArchitecture)
+
+;; Structural composition
+(SubClassOf :TransformerArchitecture
+  (ObjectSomeValuesFrom :consistsOfComponent :SelfAttention))
+(SubClassOf :TransformerArchitecture
+  (ObjectSomeValuesFrom :consistsOfComponent :MultiHeadAttention))
+(SubClassOf :TransformerArchitecture
+  (ObjectSomeValuesFrom :consistsOfComponent :PositionalEncoding))
+(SubClassOf :TransformerArchitecture
+  (ObjectSomeValuesFrom :consistsOfComponent :FeedForwardNetwork))
+(SubClassOf :TransformerArchitecture
+  (ObjectSomeValuesFrom :consistsOfComponent :LayerNormalisation))
+(SubClassOf :TransformerArchitecture
+  (ObjectSomeValuesFrom :consistsOfComponent :ResidualConnection))
+
+;; Capabilities
+(SubClassOf :TransformerArchitecture
+  (ObjectSomeValuesFrom :enablesCapability :ParallelSequenceProcessing))
+(SubClassOf :TransformerArchitecture
+  (ObjectSomeValuesFrom :enablesCapability :LongRangeDependencyModelling))
+
+;; Architectural properties
+(DataPropertyAssertion :hasComputationalComplexity :TransformerArchitecture "O(n²)"^^xsd:string)
+(DataPropertyAssertion :enablesParallelProcessing :TransformerArchitecture "true"^^xsd:boolean)
+(DataPropertyAssertion :requiresRecurrence :TransformerArchitecture "false"^^xsd:boolean)
+(DataPropertyAssertion :requiresConvolution :TransformerArchitecture "false"^^xsd:boolean)
+
+;; Benchmark performance
+(DataPropertyAssertion :achievesBLEUScore :TransformerArchitecture "28.4"^^xsd:decimal)
+(DataPropertyAssertion :benchmarkDataset :TransformerArchitecture "WMT 2014 English-to-German"^^xsd:string)
+
+;; Variants and implementations
+(SubClassOf :BERT :TransformerArchitecture)
+(SubClassOf :GPT :TransformerArchitecture)
+(SubClassOf :T5 :TransformerArchitecture)
+```
+
+## References
+
+- Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
+- Neural Information Processing Systems (NIPS) 2017
+
+---
+
+*Ontology Term managed by AI-Grounded Ontology Working Group*
+*UK English Spelling Standards Applied*
+	- maturity:: draft
 	- owl:class:: ai:TransformerArchitecture
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- definition:: A neural network architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely, designed for sequence-to-sequence tasks.
-	- #### Relationships
-	  id:: transformer-architecture-relationships
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Transformer Architecture
+	- A neural network architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely, designed for sequence-to-sequence tasks.
+
+	- ## AI in Architecture Report for ARXIV
+		- ![0b20c32c-df85-498a-9f93-bd8f365e2a89.jpg](assets/0b20c32c-df85-498a-9f93-bd8f365e2a89_1759152439221_0.jpg)
+		- ![image.png](assets/image_1759158174647_0.png)
+		-
+		- ![4eb58299-ce01-43db-8160-327452d85402.jpg](assets/4eb58299-ce01-43db-8160-327452d85402_1759152268830_0.jpg)
+		- ![AIinARCHITECTURE.pdf](assets/AIinARCHITECTURE_1759152504700_0.pdf)
+
+	- ### 7. Implications for Corporate Strategy
+		- Adopting this decentralized, agent-first architecture is not merely a technical upgrade; it is a fundamental strategic shift with profound implications.
+		- **New Business Models:** Enables the creation of services that charge on a per-API-call or per-computation basis, settled instantly and globally with near-zero fees.
+		- **Enhanced Security and Data Sovereignty:** By moving away from centralized data silos, companies can offer customers true ownership and control over their data, creating a powerful competitive differentiator.
+		- **Future-Proofing IT Architecture:** Organizations must begin architecting for an agent-first world, where systems are designed for machine interaction rather than human navigation. Open standards are preferable to proprietary protocols to avoid vendor lock-in.
+		- **Gaining a First-Mover Advantage:** The transition to an agent-based economy will transform every industry. Companies that build the foundational infrastructure and understand the new protocols will be best positioned to lead in this new paradigm.
+
+		- #### Scalability and Efficiency
+		- The [[Decentralised Web]] Nostr architecture allows for efficient distribution and retrieval of marketing content.
+		- Advertiser subsidies help maintain a robust and reliable network infrastructure.
+
+	- ### Scalability and Cost Efficiency
+		- The channel-based architecture of [[Lightning and Similar L2]] allows parties to transact repeatedly off-chain at near-zero fees.
+		- This has sparked novel applications:
+			- **Content Monetisation**: Platforms like [[Stacker News]] enable 1-satoshi tips ($0.0003) for articles.
+			- **IoT Micropayments**: Smart meters or other connected devices can stream real-time payments for resource consumption.
+
+		- ### Scalability and Performance
+			- Distributed architecture: Nucleus Server can be deployed in a distributed architecture to handle large-scale projects and high-performance requirements
+			- Caching and optimization: Nucleus Server employs caching mechanisms and optimization techniques to improve performance and minimize network bandwidth usage
+
+		- ### Stable Diffusion 3
+			- [Temporary Stable Diffusion 3 Ban | Civitai](https://civitai.com/articles/5732/temporary-stable-diffusion-3-ban)
+			- Might be ok in the end.
+			- Whole new architecture.
+			- Excellent prompt following.
+			- Terrible human anatomy.
+
+	- # Mamba: Linear-Time Sequence Modelling with Selective State Spaces
+		- [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](https://arxiv.org/pdf/2312.00752.pdf)
+		- **Research Design & Rationale**: The study introduces a new architecture, Mamba, which incorporates a selection mechanism and hardware-aware computation into structured state space models.
+		- **Significance**: Addresses the inefficiency of Transformer models with a novel architecture that scales linearly and achieves superior performance.
+		- **Real-world Implications**: Potential to improve a wide range of applications in natural language processing, bioinformatics, and other areas where sequence data is prevalent.
+		- **Takeaways**: Mamba architecture improves upon structured state space models (SSMs) by adding selectivity and hardware-aware algorithms, achieving linear-time modeling with high-quality performance across several modalities.
+		- **Practical Implications**: Provides a more efficient alternative to Transformers, especially beneficial for long sequence data.
+		- **Potential Impact**: Could influence future developments in sequence modeling and foundational models across various domains.
+		- **Abstract in a nutshell**: Mamba is a novel architecture for sequence modeling that enhances structured state space models (SSMs) with selective mechanisms and hardware-aware algorithms, achieving superior performance and efficiency.
+		- **Gap/Need**: Traditional Transformer models have significant computational inefficiency, especially for long sequences. Mamba addresses this by incorporating a selection mechanism and hardware-aware computation in SSMs.
+		- **Innovation**: Introduces a selection mechanism in SSMs, allowing input-dependent parameterization and a simplified architecture without attention or MLP blocks, enabling linear-time computation with maintained or enhanced performance.
+
+	- ### Pre-Training
+		- LLMs, typically based on the Transformer architecture [Transformer Architecture: https://arxiv.org/abs/1706.03762], are initialized with random weights. They are then trained unsupervised to predict the next word or masked words in sentences, a process that helps them learn the underlying patterns of language [Masked Language Modeling: https://arxiv.org/abs/1810.04805].
+
+	- ## AI in Architecture Report for ARXIV
+		- ![0b20c32c-df85-498a-9f93-bd8f365e2a89.jpg](assets/0b20c32c-df85-498a-9f93-bd8f365e2a89_1759152439221_0.jpg)
+		- ![image.png](assets/image_1759158174647_0.png)
+		-
+		- ![4eb58299-ce01-43db-8160-327452d85402.jpg](assets/4eb58299-ce01-43db-8160-327452d85402_1759152268830_0.jpg)
+		- ![AIinARCHITECTURE.pdf](assets/AIinARCHITECTURE_1759152504700_0.pdf)
+
+	- ### 7. Implications for Corporate Strategy
+		- Adopting this decentralized, agent-first architecture is not merely a technical upgrade; it is a fundamental strategic shift with profound implications.
+		- **New Business Models:** Enables the creation of services that charge on a per-API-call or per-computation basis, settled instantly and globally with near-zero fees.
+		- **Enhanced Security and Data Sovereignty:** By moving away from centralized data silos, companies can offer customers true ownership and control over their data, creating a powerful competitive differentiator.
+		- **Future-Proofing IT Architecture:** Organizations must begin architecting for an agent-first world, where systems are designed for machine interaction rather than human navigation. Open standards are preferable to proprietary protocols to avoid vendor lock-in.
+		- **Gaining a First-Mover Advantage:** The transition to an agent-based economy will transform every industry. Companies that build the foundational infrastructure and understand the new protocols will be best positioned to lead in this new paradigm.
+
+		- #### Scalability and Efficiency
+		- The [[Decentralised Web]] Nostr architecture allows for efficient distribution and retrieval of marketing content.
+		- Advertiser subsidies help maintain a robust and reliable network infrastructure.
+
+	- ### Scalability and Cost Efficiency
+		- The channel-based architecture of [[Lightning and Similar L2]] allows parties to transact repeatedly off-chain at near-zero fees.
+		- This has sparked novel applications:
+			- **Content Monetisation**: Platforms like [[Stacker News]] enable 1-satoshi tips ($0.0003) for articles.
+			- **IoT Micropayments**: Smart meters or other connected devices can stream real-time payments for resource consumption.
+
+		- ### Scalability and Performance
+			- Distributed architecture: Nucleus Server can be deployed in a distributed architecture to handle large-scale projects and high-performance requirements
+			- Caching and optimization: Nucleus Server employs caching mechanisms and optimization techniques to improve performance and minimize network bandwidth usage
+
+		- ### Stable Diffusion 3
+			- [Temporary Stable Diffusion 3 Ban | Civitai](https://civitai.com/articles/5732/temporary-stable-diffusion-3-ban)
+			- Might be ok in the end.
+			- Whole new architecture.
+			- Excellent prompt following.
+			- Terrible human anatomy.
+
+	- # Mamba: Linear-Time Sequence Modelling with Selective State Spaces
+		- [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](https://arxiv.org/pdf/2312.00752.pdf)
+		- **Research Design & Rationale**: The study introduces a new architecture, Mamba, which incorporates a selection mechanism and hardware-aware computation into structured state space models.
+		- **Significance**: Addresses the inefficiency of Transformer models with a novel architecture that scales linearly and achieves superior performance.
+		- **Real-world Implications**: Potential to improve a wide range of applications in natural language processing, bioinformatics, and other areas where sequence data is prevalent.
+		- **Takeaways**: Mamba architecture improves upon structured state space models (SSMs) by adding selectivity and hardware-aware algorithms, achieving linear-time modeling with high-quality performance across several modalities.
+		- **Practical Implications**: Provides a more efficient alternative to Transformers, especially beneficial for long sequence data.
+		- **Potential Impact**: Could influence future developments in sequence modeling and foundational models across various domains.
+		- **Abstract in a nutshell**: Mamba is a novel architecture for sequence modeling that enhances structured state space models (SSMs) with selective mechanisms and hardware-aware algorithms, achieving superior performance and efficiency.
+		- **Gap/Need**: Traditional Transformer models have significant computational inefficiency, especially for long sequences. Mamba addresses this by incorporating a selection mechanism and hardware-aware computation in SSMs.
+		- **Innovation**: Introduces a selection mechanism in SSMs, allowing input-dependent parameterization and a simplified architecture without attention or MLP blocks, enabling linear-time computation with maintained or enhanced performance.
+
+	- ### Pre-Training
+		- LLMs, typically based on the Transformer architecture [Transformer Architecture: https://arxiv.org/abs/1706.03762], are initialized with random weights. They are then trained unsupervised to predict the next word or masked words in sentences, a process that helps them learn the underlying patterns of language [Masked Language Modeling: https://arxiv.org/abs/1810.04805].
+
+	- ## AI in Architecture Report for ARXIV
+		- ![0b20c32c-df85-498a-9f93-bd8f365e2a89.jpg](assets/0b20c32c-df85-498a-9f93-bd8f365e2a89_1759152439221_0.jpg)
+		- ![image.png](assets/image_1759158174647_0.png)
+		-
+		- ![4eb58299-ce01-43db-8160-327452d85402.jpg](assets/4eb58299-ce01-43db-8160-327452d85402_1759152268830_0.jpg)
+		- ![AIinARCHITECTURE.pdf](assets/AIinARCHITECTURE_1759152504700_0.pdf)
+
+- # Research and Papers
+	- [SHOW-1 and Showrunner Agents in Multi-Agent Simulations](https://fablestudio.github.io/showrunner-agents)
+	- [Fuyu-8B: A Multimodal Architecture for AI Agents](https://www.adept.ai/blog/fuyu-8b)
+	- [[2402.05120] More Agents Is All You Need](https://arxiv.org/abs/2402.05120)
+-
+
+		- #### Scalability and Efficiency
+		- The [[Decentralised Web]] Nostr architecture allows for efficient distribution and retrieval of marketing content.
+		- Advertiser subsidies help maintain a robust and reliable network infrastructure.
+
+	- ### Scalability and Cost Efficiency
+		- The channel-based architecture of [[Lightning and Similar L2]] allows parties to transact repeatedly off-chain at near-zero fees.
+		- This has sparked novel applications:
+			- **Content Monetisation**: Platforms like [[Stacker News]] enable 1-satoshi tips ($0.0003) for articles.
+
+		- ### Stable Diffusion 3
+			- [Temporary Stable Diffusion 3 Ban | Civitai](https://civitai.com/articles/5732/temporary-stable-diffusion-3-ban)
+			- Might be ok in the end.
+			- Whole new architecture.
+			- Excellent prompt following.
+			- Terrible human anatomy.
+
+	- ## Mixture of Experts (MoE) Architectures
+		- Major force driving frontier models (e.g., GPT-4, Gemini 1.5)
+		- MoE-Mamba (MoE-Mamba) achieved same loss as original Mamba with 2.2x less training steps, scaling up to 32 experts
+		- BlackMamba scaled up to 2.8B parameters and 8 experts, with generation latency well below Transformer, Transformer MoE, and Mamba
+			- Scaling to larger models and datasets
+			- Developing state regularization methods
+			- Integrating Mamba with other architectural advances (e.g., memory tokens)
+		- Potential for transformative impact, especially in biology and vision applications
+		- Approaches:
+			- U-Mamba (U-Mamba): Hybrid CNN-SSM architecture outperforming CNN and Transformers in biomedical image segmentation
+			- Swin-UMamba (Swin-UMamba): Combines Mamba with ImageNet pre-training, outperforms U-Mamba
+			- Vision Mamba: Bidirectional (forward and backward) scanning for learning visual representations
+			- VM-UNet (VM-UNet): Applies VMamba's four-way scan to medical image segmentation
+			- MambaMorph: Aligns two input images by generating deformation field
+		- Key insights:
+			- Turning images into sequences is crucial, can be done through multi-scan approaches
+		- Major force in frontier models (GPT-4, Gemini 1.5)
+		- MoE-Mamba and BlackMamba demonstrate MoE's effectiveness with Mamba
+		- Open questions around scaling and infrastructure requirements for large-scale MoE-Mamba models
+		- Potential challenges:
+			- Eventual "rotting" of internal states with extreme context lengths
+			- Need for state regularization or "pruning" to maintain performance
+		- Implications for biology: Foundation models could revolutionize drug discovery and biological research
+					- Combine multi-spectrum sensor data:
+						- Use techniques like MambaMorph to align and merge data from different sensors
+						- Generate deformation fields to spatially align images from various sources
+				- Normalize data to ensure consistent scales and ranges across sensors
+			          B --> E[Temporal Alignment]
+			          B --> F[Incorporate Historical Data]
+			          
+			          D --> G[MambaMorph for Alignment]
+			          D --> H[Generate Deformation Fields]
+			          D --> I[Normalize Data]
+			          
+			          E --> J[Dynamic Time Warping]
+			          E --> K[Handle Missing Data]
+			          E --> L[Create Unified Temporal Grid]
+			          
+			          F --> M[Align Historical Records]
+			          F --> N[Transfer Learning/Domain Adaptation]
+			      end
+			      
+			      B --> O{Mamba Architecture}
+			      
+			      subgraph Mamba Architecture
+			          O --> P[Multi-dimensional Sequencing]
+			          O --> Q[Cross-scanning]
+			          O --> R[Hybrid Architectures]
+			          
+			          P --> S[Mamba-ND]
+			          P --> T[Capture Dependencies Across Dimensions]
+			          
+			          Q --> U[VMamba/SegMamba]
+			          R --> Z[Mamba Layers for Long-range Dependencies]
+			          R --> AA[Pre-training on Large-scale Datasets]
+			      end
+			      
+			      O --> AB[Comprehensive Data Representation]
+			          AH[Evaluate Model Performance]
+			          AI[Interpret and Visualize Representations]
+			      end
+			      
+			      AC --> AJ{Output Formats}
+			      AJ --> AK[Short-term Forecasts]
+			      AJ --> AL[Long-term Projections]
+			      
+				- TODO Incorporating domain knowledge and ontology-specific constraints
+				- TODO Leveraging transfer learning from pre-trained models on similar ontological graphs
+				- TODO Evaluating the model's performance using appropriate graph-based metrics and validation techniques
+				- TODO Interpreting and visualizing the learned graph representations for ontology engineers and domain experts
+
+	- ## AI in Architecture Report for ARXIV
+		- ![0b20c32c-df85-498a-9f93-bd8f365e2a89.jpg](assets/0b20c32c-df85-498a-9f93-bd8f365e2a89_1759152439221_0.jpg)
+		- ![image.png](assets/image_1759158174647_0.png)
+		-
+		- ![4eb58299-ce01-43db-8160-327452d85402.jpg](assets/4eb58299-ce01-43db-8160-327452d85402_1759152268830_0.jpg)
+		- ![AIinARCHITECTURE.pdf](assets/AIinARCHITECTURE_1759152504700_0.pdf)
+
+	- ### 6. System Architecture Diagram
+		    end
+		  
+		        subgraph Identity & Messaging
+		            Nostr[Nostr Protocol]
+		    AgentB -- 2. Store Hashed Contract --> Solid
+		    AgentA -- 3. Fund Escrow --> RGB
+		    RGB -- Anchors Seal --> B
+		    AgentB -- 4. Perform Work --> AgentA
+		    AgentA -- 5. Verify & Release Payment --> RGB
+
+- ## Data Collection and Preprocessing
+		- LLMs, typically based on the Transformer architecture [Transformer Architecture: https://arxiv.org/abs/1706.03762], are initialized with random weights. They are then trained unsupervised to predict the next word or masked words in sentences, a process that helps them learn the underlying patterns of language [Masked Language Modeling: https://arxiv.org/abs/1810.04805].
+
+- ## Data Collection and Preprocessing
+		- LLMs, typically based on the Transformer architecture [Transformer Architecture: https://arxiv.org/abs/1706.03762], are initialized with random weights. They are then trained unsupervised to predict the next word or masked words in sentences, a process that helps them learn the underlying patterns of language [Masked Language Modeling: https://arxiv.org/abs/1810.04805].
+
+## Characteristics
+
+- **Self-Attention Based**: Uses multi-head self-attention as the core mechanism for processing sequences
+- **Parallel Processing**: Unlike recurrent models, processes entire sequences in parallel
+- **Positional Encoding**: Injects position information to maintain sequence order
+- **Layer Structure**: Consists of stacked encoder and decoder layers with attention and feed-forward sub-layers
+
+## Academic Foundations
+
+**Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
+
+**Key Citations**: 173,000+ citations (as of 2025)
+
+**Benchmark Performance**: Achieved 28.4 BLEU on the WMT 2014 English-to-German translation task, establishing state-of-the-art performance at introduction.
+
+## Technical Context
+
+The transformer architecture revolutionised natural language processing by demonstrating that attention mechanisms alone, without recurrence or convolutions, could achieve superior performance on sequence-to-sequence tasks whilst enabling efficient parallel computation.
+
+## Ontological Relationships
+
+- **Broader Term**: Neural Network Architecture
+- **Related Terms**: Self-Attention, Multi-Head Attention, Encoder-Decoder Architecture, Positional Encoding
+- **Narrower Terms**: BERT, GPT, T5 (specific transformer implementations)
+
+## Usage Context
+
+"The Transformer architecture achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, establishing state-of-the-art performance."
+
+## OWL Functional Syntax
+
+```clojure
+(Declaration (Class :TransformerArchitecture))
+(AnnotationAssertion rdfs:label :TransformerArchitecture "Transformer Architecture"@en)
+(AnnotationAssertion rdfs:comment :TransformerArchitecture
+  "A neural network architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely."@en)
+(AnnotationAssertion :hasSource :TransformerArchitecture
+  "Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762 (2017)"@en)
+(AnnotationAssertion :hasCitationCount :TransformerArchitecture "173000+"^^xsd:string)
+
+;; Taxonomic relationships
+(SubClassOf :TransformerArchitecture :NeuralNetworkArchitecture)
+
+;; Structural composition
+(SubClassOf :TransformerArchitecture
+  (ObjectSomeValuesFrom :consistsOfComponent :SelfAttention))
+(SubClassOf :TransformerArchitecture
+  (ObjectSomeValuesFrom :consistsOfComponent :MultiHeadAttention))
+(SubClassOf :TransformerArchitecture
+  (ObjectSomeValuesFrom :consistsOfComponent :PositionalEncoding))
+(SubClassOf :TransformerArchitecture
+  (ObjectSomeValuesFrom :consistsOfComponent :FeedForwardNetwork))
+(SubClassOf :TransformerArchitecture
+  (ObjectSomeValuesFrom :consistsOfComponent :LayerNormalisation))
+(SubClassOf :TransformerArchitecture
+  (ObjectSomeValuesFrom :consistsOfComponent :ResidualConnection))
+
+;; Capabilities
+(SubClassOf :TransformerArchitecture
+  (ObjectSomeValuesFrom :enablesCapability :ParallelSequenceProcessing))
+(SubClassOf :TransformerArchitecture
+  (ObjectSomeValuesFrom :enablesCapability :LongRangeDependencyModelling))
+
+;; Architectural properties
+(DataPropertyAssertion :hasComputationalComplexity :TransformerArchitecture "O(n²)"^^xsd:string)
+(DataPropertyAssertion :enablesParallelProcessing :TransformerArchitecture "true"^^xsd:boolean)
+(DataPropertyAssertion :requiresRecurrence :TransformerArchitecture "false"^^xsd:boolean)
+(DataPropertyAssertion :requiresConvolution :TransformerArchitecture "false"^^xsd:boolean)
+
+;; Benchmark performance
+(DataPropertyAssertion :achievesBLEUScore :TransformerArchitecture "28.4"^^xsd:decimal)
+(DataPropertyAssertion :benchmarkDataset :TransformerArchitecture "WMT 2014 English-to-German"^^xsd:string)
+
+;; Variants and implementations
+(SubClassOf :BERT :TransformerArchitecture)
+(SubClassOf :GPT :TransformerArchitecture)
+(SubClassOf :T5 :TransformerArchitecture)
+```
+
+## References
+
+- Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
+- Neural Information Processing Systems (NIPS) 2017
+
+---
+
+*Ontology Term managed by AI-Grounded Ontology Working Group*
+*UK English Spelling Standards Applied*
+	-
+	- ### Original Content
 	  collapsed:: true
-		- is-subclass-of:: [[ModelArchitecture]]
+		- ```
+# Transformer Architecture
+		  
+		  **Term ID**: AI-0196
+		  **Category**: Architecture
+		  **Ontology Version**: 1.0
+		  **Last Updated**: 2025-10-27
+		  
+		  ## Definition
+		  
+		  A neural network architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely, designed for sequence-to-sequence tasks.
+		  
+		  ## Characteristics
+		  
+		  - **Self-Attention Based**: Uses multi-head self-attention as the core mechanism for processing sequences
+		  - **Parallel Processing**: Unlike recurrent models, processes entire sequences in parallel
+		  - **Positional Encoding**: Injects position information to maintain sequence order
+		  - **Layer Structure**: Consists of stacked encoder and decoder layers with attention and feed-forward sub-layers
+		  
+		  ## Academic Foundations
+		  
+		  **Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
+		  
+		  **Key Citations**: 173,000+ citations (as of 2025)
+		  
+		  **Benchmark Performance**: Achieved 28.4 BLEU on the WMT 2014 English-to-German translation task, establishing state-of-the-art performance at introduction.
+		  
+		  ## Technical Context
+		  
+		  The transformer architecture revolutionised natural language processing by demonstrating that attention mechanisms alone, without recurrence or convolutions, could achieve superior performance on sequence-to-sequence tasks whilst enabling efficient parallel computation.
+		  
+		  ## Ontological Relationships
+		  
+		  - **Broader Term**: Neural Network Architecture
+		  - **Related Terms**: Self-Attention, Multi-Head Attention, Encoder-Decoder Architecture, Positional Encoding
+		  - **Narrower Terms**: BERT, GPT, T5 (specific transformer implementations)
+		  
+		  ## Usage Context
+		  
+		  "The Transformer architecture achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, establishing state-of-the-art performance."
+		  
+		  ## OWL Functional Syntax
+		  
+		  ```clojure
+		  (Declaration (Class :TransformerArchitecture))
+		  (AnnotationAssertion rdfs:label :TransformerArchitecture "Transformer Architecture"@en)
+		  (AnnotationAssertion rdfs:comment :TransformerArchitecture
+		    "A neural network architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely."@en)
+		  (AnnotationAssertion :hasSource :TransformerArchitecture
+		    "Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762 (2017)"@en)
+		  (AnnotationAssertion :hasCitationCount :TransformerArchitecture "173000+"^^xsd:string)
+		  
+		  ;; Taxonomic relationships
+		  (SubClassOf :TransformerArchitecture :NeuralNetworkArchitecture)
+		  
+		  ;; Structural composition
+		  (SubClassOf :TransformerArchitecture
+		    (ObjectSomeValuesFrom :consistsOfComponent :SelfAttention))
+		  (SubClassOf :TransformerArchitecture
+		    (ObjectSomeValuesFrom :consistsOfComponent :MultiHeadAttention))
+		  (SubClassOf :TransformerArchitecture
+		    (ObjectSomeValuesFrom :consistsOfComponent :PositionalEncoding))
+		  (SubClassOf :TransformerArchitecture
+		    (ObjectSomeValuesFrom :consistsOfComponent :FeedForwardNetwork))
+		  (SubClassOf :TransformerArchitecture
+		    (ObjectSomeValuesFrom :consistsOfComponent :LayerNormalisation))
+		  (SubClassOf :TransformerArchitecture
+		    (ObjectSomeValuesFrom :consistsOfComponent :ResidualConnection))
+		  
+		  ;; Capabilities
+		  (SubClassOf :TransformerArchitecture
+		    (ObjectSomeValuesFrom :enablesCapability :ParallelSequenceProcessing))
+		  (SubClassOf :TransformerArchitecture
+		    (ObjectSomeValuesFrom :enablesCapability :LongRangeDependencyModelling))
+		  
+		  ;; Architectural properties
+		  (DataPropertyAssertion :hasComputationalComplexity :TransformerArchitecture "O(n²)"^^xsd:string)
+		  (DataPropertyAssertion :enablesParallelProcessing :TransformerArchitecture "true"^^xsd:boolean)
+		  (DataPropertyAssertion :requiresRecurrence :TransformerArchitecture "false"^^xsd:boolean)
+		  (DataPropertyAssertion :requiresConvolution :TransformerArchitecture "false"^^xsd:boolean)
+		  
+		  ;; Benchmark performance
+		  (DataPropertyAssertion :achievesBLEUScore :TransformerArchitecture "28.4"^^xsd:decimal)
+		  (DataPropertyAssertion :benchmarkDataset :TransformerArchitecture "WMT 2014 English-to-German"^^xsd:string)
+		  
+		  ;; Variants and implementations
+		  (SubClassOf :BERT :TransformerArchitecture)
+		  (SubClassOf :GPT :TransformerArchitecture)
+		  (SubClassOf :T5 :TransformerArchitecture)
+		  ```
+		  
+		  ## References
+		  
+		  - Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
+		  - Neural Information Processing Systems (NIPS) 2017
+		  
+		  ---
+		  
+		  *Ontology Term managed by AI-Grounded Ontology Working Group*
+		  *UK English Spelling Standards Applied*
+		  
+		  ```
+
+- public-access:: true
+	- definition:: A neural network architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely, designed for sequence-to-sequence tasks.
+
 
 # Transformer Architecture – Updated Ontology Entry
 
@@ -156,10 +664,10 @@
 
 - IBM. What is a Transformer Model? Retrieved from ibm.com/think/topics/transformer-model
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-

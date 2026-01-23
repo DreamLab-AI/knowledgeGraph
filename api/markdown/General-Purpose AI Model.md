@@ -2,21 +2,535 @@
   id:: general-purpose-ai-model-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: AI-0509
-	- source-domain:: ai
-	- owl:class:: ai:GeneralPurposeAiModel
+	- term-id:: mv-1761742247928
 	- preferred-term:: General Purpose AI Model
-	- status:: active
-	- public-access:: true
-	- definition:: An AI model that displays significant generality and is capable of competently performing a wide range of distinct tasks regardless of the way the model is placed on the market.
-	- #### Relationships
-	  id:: general-purpose-ai-model-relationships
+	- source-domain:: mv
+	- status:: draft
+- definition:: An AI model that displays significant generality and is capable of competently performing a wide range of distinct tasks regardless of the way the model is placed on the market.
+
+## Source
+
+**Primary**: EU AI Act Article 3(63)
+**Secondary**: Commission implementing acts, Article 53
+
+## Regulatory Context
+
+Introduced to address foundation models and large language models. GPAI models face specific transparency and documentation obligations distinct from traditional AI systems.
+
+## Key Characteristics
+
+- **Significant generality**: Not limited to narrow domain
+- **Multi-task capability**: Performs diverse functions
+- **Market-agnostic**: Capabilities independent of distribution method
+- **Adaptability**: Can be fine-tuned for downstream applications
+
+## Risk Classification
+
+GPAI models are subject to:
+- **Standard tier**: Transparency obligations (Article 53)
+- **Systemic risk tier**: Enhanced requirements if meeting high-impact thresholds (Article 55)
+
+## Obligations (Article 53)
+
+1. **Technical documentation** (Annex XI): Training processes, evaluation results
+2. **Downstream transparency** (Annex XII): Information for integrating providers
+3. **Copyright compliance**: Policy for rights reservations (Directive 2019/790)
+4. **Training content summary**: Publicly available dataset description
+
+## Systemic Risk Threshold
+
+Models with systemic risk designation if:
+- High-impact capabilities matching state-of-the-art benchmarks, OR
+- Cumulative computation ≥10²⁵ floating point operations (FLOPs)
+
+## Exemptions
+
+**Free and open-source AI models** are exempt from:
+- Technical documentation (Article 53(1)(a))
+- Downstream transparency information (Article 53(1)(b))
+
+Provided source code, parameters, weights, and information are publicly available.
+
+## Governance
+
+- **AI Office**: Primary supervisory authority for GPAI
+- **Scientific Panel**: Independent experts for systemic risk assessment
+- **Codes of Practice**: Industry-led compliance frameworks (Article 56)
+
+## Related Concepts
+
+- **Systemic Risk** (AI-0122): Highest-tier GPAI classification
+- **Downstream Provider** (AI-0146): Integrator of GPAI into systems
+- **Foundation Model**: Equivalent technical term
+- **Large Language Model**: Common GPAI implementation
+
+## Examples
+
+GPT-4, Claude, Gemini, LLaMA, Mistral, Stable Diffusion (multimodal models)
+
+## Enforcement Timeline
+
+- **Transparency obligations**: 2 August 2025
+- **Full GPAI regime**: 2 August 2027
+
+## OWL Formal Ontology
+
+```clojure
+;; Class Declaration
+(Declaration (Class :GeneralPurposeAIModel))
+
+;; Subclass Axioms
+(SubClassOf :GeneralPurposeAIModel :AIModel)
+(SubClassOf :GeneralPurposeAIModel :AISystem)
+
+;; Defining Characteristics
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :exhibits :SignificantGenerality))
+
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :hasCapability :MultiTaskPerformance))
+
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectAllValuesFrom :independentOf :MarketPlacementMethod))
+
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :supportsAdaptation :DownstreamFineTuning))
+
+;; EU AI Act Specific Requirements
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :subjectToObligation :GPAITransparencyRequirement))
+
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :requiresDocumentation :TechnicalDocumentationAnnexXI))
+
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :requiresDocumentation :DownstreamTransparencyAnnexXII))
+
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :mustComplyWith :CopyrightCompliancePolicy))
+
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :mustProvide :TrainingContentSummary))
+
+;; Risk Classification
+(Declaration (Class :GPAIWithSystemicRisk))
+(SubClassOf :GPAIWithSystemicRisk :GeneralPurposeAIModel)
+
+(SubClassOf :GPAIWithSystemicRisk
+  (ObjectSomeValuesFrom :meets :HighImpactCapabilityThreshold))
+
+(DataPropertyAssertion :hasComputationThreshold :GPAIWithSystemicRisk
+  "10^25 FLOPs"^^xsd:string)
+
+;; Governance Structure
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :supervisedBy :EuropeanAIOffice))
+
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :assessedBy :ScientificPanel))
+
+;; Exemptions
+(Declaration (Class :FreeOpenSourceGPAI))
+(SubClassOf :FreeOpenSourceGPAI :GeneralPurposeAIModel)
+
+(SubClassOf :FreeOpenSourceGPAI
+  (ObjectAllValuesFrom :hasLicenceType :OpenSourceLicence))
+
+(SubClassOf :FreeOpenSourceGPAI
+  (ObjectSomeValuesFrom :exemptFrom :TechnicalDocumentationObligation))
+
+(SubClassOf :FreeOpenSourceGPAI
+  (ObjectSomeValuesFrom :exemptFrom :DownstreamTransparencyObligation))
+
+;; Data Properties
+(DataPropertyAssertion :hasLegalBasis :GeneralPurposeAIModel
+  "EU Regulation 2024/1689 Article 3(63), Articles 51-56"^^xsd:string)
+
+(DataPropertyAssertion :hasEnforcementDate :GeneralPurposeAIModel
+  "2025-08-02"^^xsd:date)
+
+(DataPropertyAssertion :hasFullApplicationDate :GeneralPurposeAIModel
+  "2027-08-02"^^xsd:date)
+
+;; Annotations
+(AnnotationAssertion rdfs:label :GeneralPurposeAIModel
+  "General-Purpose AI Model"@en)
+(AnnotationAssertion rdfs:comment :GeneralPurposeAIModel
+  "An AI model displaying significant generality and capable of competently performing a wide range of distinct tasks regardless of market placement method. Subject to specific EU AI Act transparency and documentation obligations."@en)
+(AnnotationAssertion :regulatorySource :GeneralPurposeAIModel
+  "EU AI Act Article 3(63), Chapter V"^^xsd:string)
+(AnnotationAssertion :ontologyID :GeneralPurposeAIModel "AI-0117"^^xsd:string)
+```
+
+## See Also
+
+- EU AI Act Chapter V (Articles 51-56)
+- Annex XI (Technical Documentation)
+- Annex XII (Transparency Information)
+- Annex XIII (Systemic Risk Criteria)
+	- maturity:: draft
+	- owl:class:: mv:GeneralPurposeAIModel
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About General Purpose AI Model
+	- An AI model that displays significant generality and is capable of competently performing a wide range of distinct tasks regardless of the way the model is placed on the market.
+
+## Source
+
+**Primary**: EU AI Act Article 3(63)
+**Secondary**: Commission implementing acts, Article 53
+
+## Regulatory Context
+
+Introduced to address foundation models and large language models. GPAI models face specific transparency and documentation obligations distinct from traditional AI systems.
+
+## Key Characteristics
+
+- **Significant generality**: Not limited to narrow domain
+- **Multi-task capability**: Performs diverse functions
+- **Market-agnostic**: Capabilities independent of distribution method
+- **Adaptability**: Can be fine-tuned for downstream applications
+
+## Risk Classification
+
+GPAI models are subject to:
+- **Standard tier**: Transparency obligations (Article 53)
+- **Systemic risk tier**: Enhanced requirements if meeting high-impact thresholds (Article 55)
+
+## Obligations (Article 53)
+
+1. **Technical documentation** (Annex XI): Training processes, evaluation results
+2. **Downstream transparency** (Annex XII): Information for integrating providers
+3. **Copyright compliance**: Policy for rights reservations (Directive 2019/790)
+4. **Training content summary**: Publicly available dataset description
+
+## Systemic Risk Threshold
+
+Models with systemic risk designation if:
+- High-impact capabilities matching state-of-the-art benchmarks, OR
+- Cumulative computation ≥10²⁵ floating point operations (FLOPs)
+
+## Exemptions
+
+**Free and open-source AI models** are exempt from:
+- Technical documentation (Article 53(1)(a))
+- Downstream transparency information (Article 53(1)(b))
+
+Provided source code, parameters, weights, and information are publicly available.
+
+## Governance
+
+- **AI Office**: Primary supervisory authority for GPAI
+- **Scientific Panel**: Independent experts for systemic risk assessment
+- **Codes of Practice**: Industry-led compliance frameworks (Article 56)
+
+## Related Concepts
+
+- **Systemic Risk** (AI-0122): Highest-tier GPAI classification
+- **Downstream Provider** (AI-0146): Integrator of GPAI into systems
+- **Foundation Model**: Equivalent technical term
+- **Large Language Model**: Common GPAI implementation
+
+## Examples
+
+GPT-4, Claude, Gemini, LLaMA, Mistral, Stable Diffusion (multimodal models)
+
+## Enforcement Timeline
+
+- **Transparency obligations**: 2 August 2025
+- **Full GPAI regime**: 2 August 2027
+
+## OWL Formal Ontology
+
+```clojure
+;; Class Declaration
+(Declaration (Class :GeneralPurposeAIModel))
+
+;; Subclass Axioms
+(SubClassOf :GeneralPurposeAIModel :AIModel)
+(SubClassOf :GeneralPurposeAIModel :AISystem)
+
+;; Defining Characteristics
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :exhibits :SignificantGenerality))
+
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :hasCapability :MultiTaskPerformance))
+
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectAllValuesFrom :independentOf :MarketPlacementMethod))
+
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :supportsAdaptation :DownstreamFineTuning))
+
+;; EU AI Act Specific Requirements
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :subjectToObligation :GPAITransparencyRequirement))
+
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :requiresDocumentation :TechnicalDocumentationAnnexXI))
+
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :requiresDocumentation :DownstreamTransparencyAnnexXII))
+
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :mustComplyWith :CopyrightCompliancePolicy))
+
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :mustProvide :TrainingContentSummary))
+
+;; Risk Classification
+(Declaration (Class :GPAIWithSystemicRisk))
+(SubClassOf :GPAIWithSystemicRisk :GeneralPurposeAIModel)
+
+(SubClassOf :GPAIWithSystemicRisk
+  (ObjectSomeValuesFrom :meets :HighImpactCapabilityThreshold))
+
+(DataPropertyAssertion :hasComputationThreshold :GPAIWithSystemicRisk
+  "10^25 FLOPs"^^xsd:string)
+
+;; Governance Structure
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :supervisedBy :EuropeanAIOffice))
+
+(SubClassOf :GeneralPurposeAIModel
+  (ObjectSomeValuesFrom :assessedBy :ScientificPanel))
+
+;; Exemptions
+(Declaration (Class :FreeOpenSourceGPAI))
+(SubClassOf :FreeOpenSourceGPAI :GeneralPurposeAIModel)
+
+(SubClassOf :FreeOpenSourceGPAI
+  (ObjectAllValuesFrom :hasLicenceType :OpenSourceLicence))
+
+(SubClassOf :FreeOpenSourceGPAI
+  (ObjectSomeValuesFrom :exemptFrom :TechnicalDocumentationObligation))
+
+(SubClassOf :FreeOpenSourceGPAI
+  (ObjectSomeValuesFrom :exemptFrom :DownstreamTransparencyObligation))
+
+;; Data Properties
+(DataPropertyAssertion :hasLegalBasis :GeneralPurposeAIModel
+  "EU Regulation 2024/1689 Article 3(63), Articles 51-56"^^xsd:string)
+
+(DataPropertyAssertion :hasEnforcementDate :GeneralPurposeAIModel
+  "2025-08-02"^^xsd:date)
+
+(DataPropertyAssertion :hasFullApplicationDate :GeneralPurposeAIModel
+  "2027-08-02"^^xsd:date)
+
+;; Annotations
+(AnnotationAssertion rdfs:label :GeneralPurposeAIModel
+  "General-Purpose AI Model"@en)
+(AnnotationAssertion rdfs:comment :GeneralPurposeAIModel
+  "An AI model displaying significant generality and capable of competently performing a wide range of distinct tasks regardless of market placement method. Subject to specific EU AI Act transparency and documentation obligations."@en)
+(AnnotationAssertion :regulatorySource :GeneralPurposeAIModel
+  "EU AI Act Article 3(63), Chapter V"^^xsd:string)
+(AnnotationAssertion :ontologyID :GeneralPurposeAIModel "AI-0117"^^xsd:string)
+```
+
+## See Also
+
+- EU AI Act Chapter V (Articles 51-56)
+- Annex XI (Technical Documentation)
+- Annex XII (Transparency Information)
+- Annex XIII (Systemic Risk Criteria)
+	-
+	- ### Original Content
 	  collapsed:: true
-		- is-subclass-of:: [[ModelProperty]]
+		- ```
+# General-Purpose AI Model (GPAI)
+		  
+		  **Ontology ID**: AI-0117
+		  **Category**: Core Definitions
+		  **Last Updated**: 2025-10-27
+		  
+		  ## Definition
+		  
+		  An AI model that displays significant generality and is capable of competently performing a wide range of distinct tasks regardless of the way the model is placed on the market.
+		  
+		  ## Source
+		  
+		  **Primary**: EU AI Act Article 3(63)
+		  **Secondary**: Commission implementing acts, Article 53
+		  
+		  ## Regulatory Context
+		  
+		  Introduced to address foundation models and large language models. GPAI models face specific transparency and documentation obligations distinct from traditional AI systems.
+		  
+		  ## Key Characteristics
+		  
+		  - **Significant generality**: Not limited to narrow domain
+		  - **Multi-task capability**: Performs diverse functions
+		  - **Market-agnostic**: Capabilities independent of distribution method
+		  - **Adaptability**: Can be fine-tuned for downstream applications
+		  
+		  ## Risk Classification
+		  
+		  GPAI models are subject to:
+		  - **Standard tier**: Transparency obligations (Article 53)
+		  - **Systemic risk tier**: Enhanced requirements if meeting high-impact thresholds (Article 55)
+		  
+		  ## Obligations (Article 53)
+		  
+		  1. **Technical documentation** (Annex XI): Training processes, evaluation results
+		  2. **Downstream transparency** (Annex XII): Information for integrating providers
+		  3. **Copyright compliance**: Policy for rights reservations (Directive 2019/790)
+		  4. **Training content summary**: Publicly available dataset description
+		  
+		  ## Systemic Risk Threshold
+		  
+		  Models with systemic risk designation if:
+		  - High-impact capabilities matching state-of-the-art benchmarks, OR
+		  - Cumulative computation ≥10²⁵ floating point operations (FLOPs)
+		  
+		  ## Exemptions
+		  
+		  **Free and open-source AI models** are exempt from:
+		  - Technical documentation (Article 53(1)(a))
+		  - Downstream transparency information (Article 53(1)(b))
+		  
+		  Provided source code, parameters, weights, and information are publicly available.
+		  
+		  ## Governance
+		  
+		  - **AI Office**: Primary supervisory authority for GPAI
+		  - **Scientific Panel**: Independent experts for systemic risk assessment
+		  - **Codes of Practice**: Industry-led compliance frameworks (Article 56)
+		  
+		  ## Related Concepts
+		  
+		  - **Systemic Risk** (AI-0122): Highest-tier GPAI classification
+		  - **Downstream Provider** (AI-0146): Integrator of GPAI into systems
+		  - **Foundation Model**: Equivalent technical term
+		  - **Large Language Model**: Common GPAI implementation
+		  
+		  ## Examples
+		  
+		  GPT-4, Claude, Gemini, LLaMA, Mistral, Stable Diffusion (multimodal models)
+		  
+		  ## Enforcement Timeline
+		  
+		  - **Transparency obligations**: 2 August 2025
+		  - **Full GPAI regime**: 2 August 2027
+		  
+		  ## OWL Formal Ontology
+		  
+		  ```clojure
+		  ;; Class Declaration
+		  (Declaration (Class :GeneralPurposeAIModel))
+		  
+		  ;; Subclass Axioms
+		  (SubClassOf :GeneralPurposeAIModel :AIModel)
+		  (SubClassOf :GeneralPurposeAIModel :AISystem)
+		  
+		  ;; Defining Characteristics
+		  (SubClassOf :GeneralPurposeAIModel
+		    (ObjectSomeValuesFrom :exhibits :SignificantGenerality))
+		  
+		  (SubClassOf :GeneralPurposeAIModel
+		    (ObjectSomeValuesFrom :hasCapability :MultiTaskPerformance))
+		  
+		  (SubClassOf :GeneralPurposeAIModel
+		    (ObjectAllValuesFrom :independentOf :MarketPlacementMethod))
+		  
+		  (SubClassOf :GeneralPurposeAIModel
+		    (ObjectSomeValuesFrom :supportsAdaptation :DownstreamFineTuning))
+		  
+		  ;; EU AI Act Specific Requirements
+		  (SubClassOf :GeneralPurposeAIModel
+		    (ObjectSomeValuesFrom :subjectToObligation :GPAITransparencyRequirement))
+		  
+		  (SubClassOf :GeneralPurposeAIModel
+		    (ObjectSomeValuesFrom :requiresDocumentation :TechnicalDocumentationAnnexXI))
+		  
+		  (SubClassOf :GeneralPurposeAIModel
+		    (ObjectSomeValuesFrom :requiresDocumentation :DownstreamTransparencyAnnexXII))
+		  
+		  (SubClassOf :GeneralPurposeAIModel
+		    (ObjectSomeValuesFrom :mustComplyWith :CopyrightCompliancePolicy))
+		  
+		  (SubClassOf :GeneralPurposeAIModel
+		    (ObjectSomeValuesFrom :mustProvide :TrainingContentSummary))
+		  
+		  ;; Risk Classification
+		  (Declaration (Class :GPAIWithSystemicRisk))
+		  (SubClassOf :GPAIWithSystemicRisk :GeneralPurposeAIModel)
+		  
+		  (SubClassOf :GPAIWithSystemicRisk
+		    (ObjectSomeValuesFrom :meets :HighImpactCapabilityThreshold))
+		  
+		  (DataPropertyAssertion :hasComputationThreshold :GPAIWithSystemicRisk
+		    "10^25 FLOPs"^^xsd:string)
+		  
+		  ;; Governance Structure
+		  (SubClassOf :GeneralPurposeAIModel
+		    (ObjectSomeValuesFrom :supervisedBy :EuropeanAIOffice))
+		  
+		  (SubClassOf :GeneralPurposeAIModel
+		    (ObjectSomeValuesFrom :assessedBy :ScientificPanel))
+		  
+		  ;; Exemptions
+		  (Declaration (Class :FreeOpenSourceGPAI))
+		  (SubClassOf :FreeOpenSourceGPAI :GeneralPurposeAIModel)
+		  
+		  (SubClassOf :FreeOpenSourceGPAI
+		    (ObjectAllValuesFrom :hasLicenceType :OpenSourceLicence))
+		  
+		  (SubClassOf :FreeOpenSourceGPAI
+		    (ObjectSomeValuesFrom :exemptFrom :TechnicalDocumentationObligation))
+		  
+		  (SubClassOf :FreeOpenSourceGPAI
+		    (ObjectSomeValuesFrom :exemptFrom :DownstreamTransparencyObligation))
+		  
+		  ;; Data Properties
+		  (DataPropertyAssertion :hasLegalBasis :GeneralPurposeAIModel
+		    "EU Regulation 2024/1689 Article 3(63), Articles 51-56"^^xsd:string)
+		  
+		  (DataPropertyAssertion :hasEnforcementDate :GeneralPurposeAIModel
+		    "2025-08-02"^^xsd:date)
+		  
+		  (DataPropertyAssertion :hasFullApplicationDate :GeneralPurposeAIModel
+		    "2027-08-02"^^xsd:date)
+		  
+		  ;; Annotations
+		  (AnnotationAssertion rdfs:label :GeneralPurposeAIModel
+		    "General-Purpose AI Model"@en)
+		  (AnnotationAssertion rdfs:comment :GeneralPurposeAIModel
+		    "An AI model displaying significant generality and capable of competently performing a wide range of distinct tasks regardless of market placement method. Subject to specific EU AI Act transparency and documentation obligations."@en)
+		  (AnnotationAssertion :regulatorySource :GeneralPurposeAIModel
+		    "EU AI Act Article 3(63), Chapter V"^^xsd:string)
+		  (AnnotationAssertion :ontologyID :GeneralPurposeAIModel "AI-0117"^^xsd:string)
+		  ```
+		  
+		  ## See Also
+		  
+		  - EU AI Act Chapter V (Articles 51-56)
+		  - Annex XI (Technical Documentation)
+		  - Annex XII (Transparency Information)
+		  - Annex XIII (Systemic Risk Criteria)
+		  
+		  ```
 
-## General Purpose AI Model
+- public-access:: true
+	- definition:: An AI model that displays significant generality and is capable of competently performing a wide range of distinct tasks regardless of the way the model is placed on the market.
 
-General Purpose AI Model refers to an ai model that displays significant generality and is capable of competently performing a wide range of distinct tasks regardless of the way the model is placed on the market.
+
+
+## Academic Context
+
+- Brief contextual overview
+	- General-purpose AI models (GPAI) are foundational AI systems trained on vast datasets, exhibiting broad capabilities across diverse tasks
+	- The concept is central to modern generative AI, underpinning technologies such as large language models and multimodal systems
+	- Key developments and current state
+		- The EU AI Act (2024) formalised the definition and regulatory obligations for GPAI models, with guidance published in 2025
+		- The UK, while not bound by the EU AI Act, has adopted similar principles in its AI governance frameworks
+	- Academic foundations
+		- The field draws on advances in deep learning, self-supervised learning, and scalable model architectures
+		- Foundational research includes work on transformer architectures and large-scale pre-training
+
+## Current Landscape (2025)
 
 - Industry adoption and implementations
 	- Major tech companies and startups globally deploy GPAI models for applications ranging from chatbots to content generation
@@ -33,14 +547,6 @@ General Purpose AI Model refers to an ai model that displays significant general
 	- The EU AI Act sets a threshold for GPAI models based on training compute (10^23 FLOP)
 	- The General-Purpose AI Code of Practice provides voluntary guidelines for responsible development and deployment
 	- The UK’s AI Standards Hub promotes best practices and interoperability
-
-## Technical Details
-
-- **Id**: general-purpose-ai-model-ontology
-- **Collapsed**: true
-- **Source Domain**: metaverse
-- **Status**: draft
-- **Public Access**: true
 
 ## Research & Literature
 
@@ -87,6 +593,7 @@ General Purpose AI Model refers to an ai model that displays significant general
 5. Alan Turing Institute. (2025). Northern AI Cluster. https://turing.ac.uk/research/ai-clusters/northern-ai-cluster
 6. Manchester AI for Health. (2025). https://manchesteraihealth.org/
 7. Leeds Digital Health Hub. (2025). https://leedsdigitalhealthhub.org/
+
 
 ## Metadata
 

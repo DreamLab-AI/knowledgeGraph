@@ -1,25 +1,40 @@
 - ### OntologyBlock
   id:: entity-ontology
   collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0842
-	- source-domain:: ai
-	- preferred-term:: Entity
-	- status:: complete
-	- public-access:: true
-	- source:: Chimera Prime Research
-	- maturity:: established
-	- owl:class:: ai:Entity
-	- belongsToDomain:: [[Artificial Intelligence]]
 
-### Relationships
+  - **Identification**
+    - domain-prefix:: AI
+    - sequence-number:: 0842
+    - filename-history:: ["AI-0842-entity.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: AI-0842
+    - preferred-term:: Entity
+    - source-domain:: ai
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
+  - **Definition**
+    - definition:: 
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-- is-subclass-of:: [[Artificial Intelligence]]
-## Metadata
+  - **Semantic Classification**
+    - owl:class:: ai:Entity
+    - belongsToDomain:: [[Artificial Intelligence]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
 
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :Entity))
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :Entity "Entity"@en)
+      ```
+
+- ## About Entity
+  

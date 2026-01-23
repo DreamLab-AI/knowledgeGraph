@@ -1,16 +1,166 @@
 - ### OntologyBlock
-  id:: pressure-sensor-ontology
+  id:: rb-0085-pressure-sensor-ontology
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0085
+	- domain-prefix:: RB
+	- sequence-number:: 0085
+	- filename-history:: ["rb-0085-pressure-sensor.md"]
 	- preferred-term:: Pressure Sensor
-	- source-domain:: rb
-	- owl:class:: rb:PressureSensor
-	- is-subclass-of:: [[Robotics]]
+	- source-domain:: robotics
 	- status:: draft
-	- public-access:: true
-	- definition:: A pressure sensor measures mechanical pressure and converts it to an electrical signal for robotic control applications.
+    - public-access:: true
+	- definition:: ### Primary Definition
+**Pressure Sensor** - Pressure Sensor in robotics systems
 	- maturity:: draft
+	- owl:class:: rb:rb0085pressuresensor
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[RoboticsDomain]]
+- ## About rb 0085 pressure sensor
+	- ### Primary Definition
+**Pressure Sensor** - Pressure Sensor in robotics systems
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# RB-0085: Pressure Sensor
+		  
+		  ## Metadata
+		  - **Term ID**: RB-0085
+		  - **Term Type**: Core Concept
+		  - **Classification**: Sensing & Perception
+		  - **Priority**: 1 (Foundational)
+		  - **Authority Score**: 0.95
+		  - **ISO Reference**: ISO 8373:2021
+		  - **Version**: 1.0.0
+		  - **Last Updated**: 2025-10-28
+		  
+		  ## Definition
+		  
+		  ### Primary Definition
+		  **Pressure Sensor** - Pressure Sensor in robotics systems
+		  
+		  ### Standards Context
+		  Defined according to ISO 8373:2021 and related international robotics standards.
+		  
+		  ### Key Characteristics
+		  1. Core property of robotics systems
+		  2. Standardised definition across implementations
+		  3. Measurable and verifiable attributes
+		  4. Essential for safety and performance
+		  5. Industry-wide recognition and adoption
+		  
+		  ## Formal Ontology (OWL Functional Syntax)
+		  
+		  ```clojure
+		  (Declaration (Class :PressureSensor))
+		  (SubClassOf :PressureSensor :Robot)
+		  
+		  (AnnotationAssertion rdfs:label :PressureSensor "Pressure Sensor"@en)
+		  (AnnotationAssertion rdfs:comment :PressureSensor
+		    "Pressure Sensor - Foundational robotics concept"@en)
+		  (AnnotationAssertion :termID :PressureSensor "RB-0085"^^xsd:string)
+		  
+		  (Declaration (ObjectProperty :relates To))
+		  (ObjectPropertyDomain :relatesTo :PressureSensor)
+		  
+		  (Declaration (DataProperty :hasProperty))
+		  (DataPropertyDomain :hasProperty :PressureSensor)
+		  (DataPropertyRange :hasProperty xsd:string)
+		  ```
+		  
+		  ## Relationships
+		  
+		  ### Parent Classes
+		  - `Robot`: Primary classification
+		  
+		  ### Related Concepts
+		  - Related robotics concepts and systems
+		  - Cross-references to other ontology terms
+		  - Integration with metaverse ontology
+		  
+		  ## Use Cases
+		  
+		  ### Industrial Applications
+		  1. Manufacturing automation
+		  2. Quality control systems
+		  3. Process optimization
+		  
+		  ### Service Applications
+		  1. Healthcare robotics
+		  2. Logistics and warehousing
+		  3. Consumer robotics
+		  
+		  ### Research Applications
+		  1. Academic research platforms
+		  2. Algorithm development
+		  3. System integration studies
+		  
+		  ## Standards References
+		  
+		  ### Primary Standards
+		  1. **ISO 8373:2021**: Primary reference standard
+		  2. **ISO 8373:2021**: Robotics vocabulary
+		  3. **Related IEEE standards**: Implementation guidelines
+		  
+		  ## Validation Criteria
+		  
+		  ### Conformance Requirements
+		  1. ✓ Meets ISO 8373:2021 requirements
+		  2. ✓ Documented implementation
+		  3. ✓ Verifiable performance metrics
+		  4. ✓ Safety compliance demonstrated
+		  5. ✓ Industry best practices followed
+		  
+		  ## Implementation Notes
+		  
+		  ### Design Considerations
+		  - System integration requirements
+		  - Performance specifications
+		  - Safety considerations
+		  - Maintenance procedures
+		  
+		  ### Common Patterns
+		  ```yaml
+		  implementation:
+		    standards_compliance: true
+		    verification_method: standardised_testing
+		    documentation_level: comprehensive
+		  ```
+		  
+		  ## Cross-References
+		  
+		  ### Metaverse Ontology Integration
+		  - Virtual representation systems
+		  - Digital twin integration
+		  - Simulation environments
+		  
+		  ### Domain Ontologies
+		  - Manufacturing systems
+		  - Control systems
+		  - Safety systems
+		  
+		  ## Future Directions
+		  
+		  ### Emerging Trends
+		  1. AI and machine learning integration
+		  2. Advanced sensing capabilities
+		  3. Improved safety systems
+		  4. Enhanced human-robot collaboration
+		  5. Standardisation advancements
+		  
+		  ---
+		  
+		  **Version History**
+		  - 1.0.0 (2025-10-28): Initial foundational definition
+		  
+		  **Contributors**: Robotics Ontology Working Group
+		  **License**: CC BY 4.0
+		  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0085`
+		  
+		  ```
+
 
 ## Academic Context
 
@@ -70,10 +220,12 @@
 4. DEKRA. (2019). *E1 ATEX Flameproof Certificate DEKRA 19ATEX0076X*. DEKRA Certification Body.
 5. Applied Control. (2025). *Rosemount 0085 Pipe Clamp Temperature Sensor Overview*. Applied Control Ltd.
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
 

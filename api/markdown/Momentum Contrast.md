@@ -4,20 +4,148 @@
 	- ontology:: true
 	- term-id:: AI-0284
 	- preferred-term:: Momentum Contrast
-	- source-domain:: ai
-	- owl:class:: ai:MomentumContrast
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
-	- definition:: A contrastive learning framework that maintains a large and consistent dictionary of encoded samples using a momentum-updated encoder, enabling effective contrastive learning with many negatives. MoCo provides stable comparison targets through the momentum encoder.
-	- #### Relationships
-- is-subclass-of:: [[ModelArchitecture]]
-	  id:: momentum-contrast-relationships
+- definition:: A contrastive learning framework that maintains a large and consistent dictionary of encoded samples using a momentum-updated encoder, enabling effective contrastive learning with many negatives. MoCo provides stable comparison targets through the momentum encoder.
+
+
+## OWL Formal Semantics
+
+```clojure
+;; OWL Functional Syntax
+
+(Declaration (Class :MomentumContrast))
+
+;; Annotations
+(AnnotationAssertion rdfs:label :MomentumContrast "Momentum Contrast"@en)
+(AnnotationAssertion rdfs:comment :MomentumContrast "A contrastive learning framework that maintains a large and consistent dictionary of encoded samples using a momentum-updated encoder, enabling effective contrastive learning with many negatives. MoCo provides stable comparison targets through the momentum encoder."@en)
+
+;; Data Properties
+(AnnotationAssertion dcterms:identifier :MomentumContrast "AI-0284"^^xsd:string)
+(DataPropertyAssertion :isAITechnology :MomentumContrast "true"^^xsd:boolean)
+```
+
+## Academic Context
+
+Momentum Contrast (MoCo) addresses the challenge of maintaining many high-quality negative examples in contrastive learning through a momentum-based queue mechanism.
+
+## Key Characteristics
+
+- Momentum-updated encoder
+- Large sample dictionary/queue
+- Stable comparison targets
+- Effective contrastive learning
+- Many negative examples
+- Self-supervised vision learning
+
+## Related Concepts
+
+- **Contrastive Learning**: General paradigm
+- **SimCLR**: Alternative framework
+- **Self-Supervised Learning**: Broader category
+
+## UK English Notes
+
+- "Whilst maintaining" (British usage)
+
+**Last Updated**: 2025-10-27
+**Verification Status**: Verified against MoCo literature
+	- maturity:: draft
+	- owl:class:: mv:MomentumContrast
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Momentum Contrast
+	- A contrastive learning framework that maintains a large and consistent dictionary of encoded samples using a momentum-updated encoder, enabling effective contrastive learning with many negatives. MoCo provides stable comparison targets through the momentum encoder.
+
+		- ### CosXL
+			- Likely the last update from the team, most of whom have left following the departure of founder [Emad Mostaque](https://en.wikipedia.org/wiki/Emad_Mostaque).
+			- This is a "best practice" update to SDXL which allows higher contrast.
+
+		- ### CosXL
+			- Likely the last update from the team, most of whom have left following the departure of founder [Emad Mostaque](https://en.wikipedia.org/wiki/Emad_Mostaque).
+			- This is a "best practice" update to SDXL which allows higher contrast.
+
+## Academic Context
+
+Momentum Contrast (MoCo) addresses the challenge of maintaining many high-quality negative examples in contrastive learning through a momentum-based queue mechanism.
+
+## Key Characteristics
+
+- Momentum-updated encoder
+- Large sample dictionary/queue
+- Stable comparison targets
+- Effective contrastive learning
+- Many negative examples
+- Self-supervised vision learning
+
+## Related Concepts
+
+- **Contrastive Learning**: General paradigm
+- **SimCLR**: Alternative framework
+- **Self-Supervised Learning**: Broader category
+
+## UK English Notes
+
+- "Whilst maintaining" (British usage)
+
+**Last Updated**: 2025-10-27
+**Verification Status**: Verified against MoCo literature
+	-
+	- ### Original Content
 	  collapsed:: true
-		- is-subclass-of:: [[TrainingMethod]]
+		- ```
+# Momentum Contrast
+		  
+		  **Term ID**: AI-0284
+		  **Category**: Training Technique
+		  **Ontology Layer**: AI/ML Methodology
+		  
+		  ## Definition
+		  
+		  A contrastive learning framework that maintains a large and consistent dictionary of encoded samples using a momentum-updated encoder, enabling effective contrastive learning with many negatives. MoCo provides stable comparison targets through the momentum encoder.
+		  
+		  ## Academic Context
+		  
+		  Momentum Contrast (MoCo) addresses the challenge of maintaining many high-quality negative examples in contrastive learning through a momentum-based queue mechanism.
+		  
+		  ## Key Characteristics
+		  
+		  - Momentum-updated encoder
+		  - Large sample dictionary/queue
+		  - Stable comparison targets
+		  - Effective contrastive learning
+		  - Many negative examples
+		  - Self-supervised vision learning
+		  
+		  ## Related Concepts
+		  
+		  - **Contrastive Learning**: General paradigm
+		  - **SimCLR**: Alternative framework
+		  - **Self-Supervised Learning**: Broader category
+		  
+		  ## UK English Notes
+		  
+		  - "Whilst maintaining" (British usage)
+		  
+		  **Last Updated**: 2025-10-27
+		  **Verification Status**: Verified against MoCo literature
+		  
+		  ```
 
-## Momentum Contrast
+- public-access:: true
+	- definition:: A contrastive learning framework that maintains a large and consistent dictionary of encoded samples using a momentum-updated encoder, enabling effective contrastive learning with many negatives. MoCo provides stable comparison targets through the momentum encoder.
 
-Momentum Contrast refers to a contrastive learning framework that maintains a large and consistent dictionary of encoded samples using a momentum-updated encoder, enabling effective contrastive learning with many negatives. moco provides stable comparison targets through the momentum encoder.
+
+
+## Academic Context
+
+- Momentum Contrast (MoCo) is a self-supervised contrastive learning framework designed to learn visual and textual representations by contrasting positive and negative sample pairs.
+  - It builds on the principle of contrastive learning, which pulls similar (positive) pairs closer in embedding space while pushing dissimilar (negative) pairs apart.
+  - MoCo introduces a momentum-updated encoder to maintain a large, consistent dictionary (memory bank) of encoded negative samples, stabilising training and enabling effective use of many negatives.
+  - The academic foundation lies in unsupervised representation learning, with roots in contrastive loss functions first formalised by LeCun et al. (2005) and further developed in recent years to improve scalability and robustness.
+
+## Current Landscape (2025)
 
 - Momentum Contrast remains a widely adopted framework in both academia and industry for unsupervised learning tasks, particularly in computer vision and natural language processing.
   - Enhanced versions of MoCo incorporate innovations such as selective hard negative sampling and dual-view loss functions to improve representation quality and robustness against noisy negatives[1].
@@ -29,14 +157,6 @@ Momentum Contrast refers to a contrastive learning framework that maintains a la
   - Limitations include computational overhead from maintaining large dictionaries and sensitivity to the quality of negative samples, which recent research aims to mitigate[1].
 - Standards and frameworks:
   - MoCo is often benchmarked alongside other self-supervised methods such as BYOL and SimCLR, with ongoing efforts to standardise evaluation protocols for unsupervised representation learning.
-
-## Technical Details
-
-- **Id**: momentum-contrast-ontology
-- **Collapsed**: true
-- **Source Domain**: ai
-- **Status**: draft
-- **Public Access**: true
 
 ## Research & Literature
 
@@ -74,11 +194,17 @@ Momentum Contrast refers to a contrastive learning framework that maintains a la
 ## References
 
 1. Hoang, D., Ngo, H., Pham, K., Nguyen, T., Bao, G., & Phan, H. (2025). *Momentum Contrastive Learning with Enhanced Negative Sampling and Hard Negative Filtering*. arXiv preprint arXiv:2501.16360. Available at: https://arxiv.org/abs/2501.16360
+
 2. He, K., Fan, H., Wu, Y., Xie, S., & Girshick, R. (2020). *Momentum Contrast for Unsupervised Visual Representation Learning*. Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 9729–9738. DOI: 10.1109/CVPR42600.2020.00975
+
 3. Chen, T., Kornblith, S., Norouzi, M., & Hinton, G. (2020). *A Simple Framework for Contrastive Learning of Visual Representations*. International Conference on Machine Learning (ICML).
+
 4. Netguru. (2024). *Contrastive Learning: A Powerful Approach to Self-Supervised Learning*. Available at: https://www.netguru.com/blog/contrastive-learning
+
 5. Encord. (2024). *Full Guide to Contrastive Learning*. Available at: https://encord.com/blog/guide-to-contrastive-learning/
+
 (If only MoCo had a momentum to update its own Wikipedia page as swiftly as it updates its dictionaries.)
+
 
 ## Metadata
 

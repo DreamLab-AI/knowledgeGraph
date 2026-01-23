@@ -1,20 +1,12 @@
-This ensures relevant and engaging marketing content within...
+public:: true
 
-- ### OntologyBlock
-  id:: Client side DCO
-  - ontology:: true
-  - public-access:: true
-  - term-id:: AI-7996
-  - preferred-term:: Client side DCO
-  - source-domain:: ai
-  - status:: draft
-  - owl:class:: ai:ClientSideDco
-
-
-### Relationships
-- is-subclass-of:: [[Artificial Intelligence]]
-### Local Knowledge Base
-- Each user device maintains a secure, [[Hardware and Edge]] local knowledge base.
+- #Public page
+	- automatically published
+- # Client Pull Model for Embedded Product Promotion
+- [An Interview With Jack Dorsey (piratewires.com)](https://www.piratewires.com/p/interview-with-jack-dorsey-mike-solana)
+- ## User-Side Components
+	- ### Local Knowledge Base
+		- Each user device maintains a secure, [[Hardware and Edge]] local knowledge base.
 		- This base contains user preferences, interests, and demographic data, organised as a lookup table. Hashes represent product classes or categories of product that are interesting to the user (opt in)
 	- ### Nostr Integration
 		- User's device includes a [[Nostr protocol]] client to interact with the decentralised Nostr network.
@@ -40,7 +32,7 @@ This ensures relevant and engaging marketing content within...
 		- The matched product variations are then returned to the user's device via the Nostr network, ensuring the marketer has no direct access to the user's personal information or identity.
 	- ### Benefits and Considerations
 		- #### User Privacy
-		- The user's knowledge base is kept local to their device, using hashes to retrieve personalised content, which enhances [[Politics, Law, Privacy]] by avoiding centralised data collection and tracking.
+		- The user's knowledge base is kept local to their device, using hashes to retrieve personalised content, which enhances [[Politics, Law, Privacy]] by avoiding centralized data collection and tracking.
 		- [[Hyper personalisation]] and Dynamic Creative Optimisation (DCO)
 		- The system delivers content optimised for the user's language, environment, age, and other demographic factors using AI-powered multi-modal product representations.
 		- DCO techniques dynamically adapt and optimise creative elements in real-time based on user interactions and preferences.
@@ -62,7 +54,7 @@ This ensures relevant and engaging marketing content within...
 		- Advanced AI and ML techniques will enhance [[Hyper personalisation]] and DCO capabilities, fostering a thriving ecosystem benefiting from a privacy-focused approach. -
 - # AI Scientist Paper
 - Here are the three files adapted to your inquiry on client-side hyper-personalization, dynamic creative optimization (DCO), and dynamic content optimization using the Nostr relay protocol, embeddings, and local AI.
-
+  
   ---
 	- ### `ideas.json`
 	  ```json
@@ -79,7 +71,7 @@ This ensures relevant and engaging marketing content within...
 	    {
 	        "Name": "nostr_dynamic_content_optimization",
 	        "Title": "Dynamic Content Optimization Using Nostr Relay Protocol: A Decentralized Approach",
-	        "Experiment": "Implement a dynamic content optimization system that leverages the Nostr relay protocol for real-time content delivery. The system will match content from a distributed network of vendors to users based on locally generated embeddings. Test the system's effectiveness in delivering relevant content while preserving user data sovereignty and minimising latency.",
+	        "Experiment": "Implement a dynamic content optimization system that leverages the Nostr relay protocol for real-time content delivery. The system will match content from a distributed network of vendors to users based on locally generated embeddings. Test the system's effectiveness in delivering relevant content while preserving user data sovereignty and minimizing latency.",
 	        "Interestingness": 9,
 	        "Feasibility": 7,
 	        "Novelty": 8,
@@ -88,7 +80,7 @@ This ensures relevant and engaging marketing content within...
 	    {
 	        "Name": "privacy_preserving_dco",
 	        "Title": "Privacy-Preserving Dynamic Creative Optimization: Leveraging Local AI and Heuristic Matching",
-	        "Experiment": "Design a DCO system that operates entirely on the client side, using heuristic matching to personalize marketing content. The system will use local AI to generate and optimise creative assets without sending any data to external servers. Assess the system's ability to balance personalization and privacy, and compare its performance with traditional server-based DCO systems.",
+	        "Experiment": "Design a DCO system that operates entirely on the client side, using heuristic matching to personalize marketing content. The system will use local AI to generate and optimize creative assets without sending any data to external servers. Assess the system's ability to balance personalization and privacy, and compare its performance with traditional server-based DCO systems.",
 	        "Interestingness": 9,
 	        "Feasibility": 8,
 	        "Novelty": 9,
@@ -97,7 +89,7 @@ This ensures relevant and engaging marketing content within...
 	    {
 	        "Name": "vendor_embedding_optimization",
 	        "Title": "Optimizing Vendor Embeddings for Multimedia Content Personalization",
-	        "Experiment": "Develop a system that creates and optimises vendor embeddings to personalize multimedia content for users. The system will use local AI to match user preferences with vendor content, ensuring high relevance while preserving privacy. Evaluate the quality of the personalized content and the effectiveness of the embedding optimization.",
+	        "Experiment": "Develop a system that creates and optimizes vendor embeddings to personalize multimedia content for users. The system will use local AI to match user preferences with vendor content, ensuring high relevance while preserving privacy. Evaluate the quality of the personalized content and the effectiveness of the embedding optimization.",
 	        "Interestingness": 8,
 	        "Feasibility": 7,
 	        "Novelty": 8,
@@ -114,7 +106,7 @@ This ensures relevant and engaging marketing content within...
 	    }
 	  ]
 	  ```
-	
+	  
 	  ---
 	- ### `prompt.json`
 	  ```json
@@ -123,7 +115,7 @@ This ensures relevant and engaging marketing content within...
 	    "task_description": "You are provided with the following file to work with, which explores various approaches to client-side hyper-personalization, dynamic creative optimization, and dynamic content optimization using the Nostr relay protocol, embeddings, and local AI. Your task is to develop a series of small-scale experiments to investigate the potential and challenges of these approaches."
 	  }
 	  ```
-	
+	  
 	  ---
 	- ### `seed_ideas.json`
 	  ```json
@@ -139,19 +131,19 @@ This ensures relevant and engaging marketing content within...
 	    {
 	        "Name": "nostr_dynamic_content_optimization",
 	        "Title": "Dynamic Content Optimization Using Nostr Relay Protocol: A Decentralized Approach",
-	        "Experiment": "Implement a dynamic content optimization system that leverages the Nostr relay protocol for real-time content delivery. The system will match content from a distributed network of vendors to users based on locally generated embeddings. Test the system's effectiveness in delivering relevant content while preserving user data sovereignty and minimising latency.",
+	        "Experiment": "Implement a dynamic content optimization system that leverages the Nostr relay protocol for real-time content delivery. The system will match content from a distributed network of vendors to users based on locally generated embeddings. Test the system's effectiveness in delivering relevant content while preserving user data sovereignty and minimizing latency.",
 	        "Interestingness": 9,
 	        "Feasibility": 7,
 	        "Novelty": 8
 	    }
 	  ]
 	  ```
-	
-	
-	
+	  
+	  
+	  
 	  experiment.py
-	
-	
+	  
+	  
 	  ```python
 	  import torch
 	  from torch.utils.data import Dataset, DataLoader
@@ -161,7 +153,7 @@ This ensures relevant and engaging marketing content within...
 	  import torch.nn.functional as F
 	  from sklearn.feature_extraction.text import TfidfVectorizer
 	  from sklearn.metrics.pairwise import cosine_similarity
-	
+	  
 	  # Data handling classes and functions
 	  class ProductContentDataset(Dataset):
 	      def __init__(self, image_paths, descriptions, generated_contents, transform=None):
@@ -169,27 +161,27 @@ This ensures relevant and engaging marketing content within...
 	          self.descriptions = descriptions
 	          self.generated_contents = generated_contents
 	          self.transform = transform
-	
+	  
 	      def __len__(self):
 	          return len(self.image_paths)
-	
+	  
 	      def __getitem__(self, idx):
 	          image = Image.open(self.image_paths[idx]).convert("RGB")
 	          description = self.descriptions[idx]
 	          generated_content = self.generated_contents[idx]
-	
+	  
 	          if self.transform:
 	              image = self.transform(image)
-	
+	  
 	          return image, description, generated_content
-	
+	  
 	  # Define image transformation pipeline
 	  transform = transforms.Compose([
 	      transforms.Resize((384, 384)),
 	      transforms.ToTensor(),
-	      transforms.Normalise(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+	      transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
 	  ])
-	
+	  
 	  # Example data (paths to images, corresponding descriptions, and generated content)
 	  image_paths = ["path/to/product_image1.jpg", "path/to/product_image2.jpg"]
 	  descriptions = [
@@ -197,66 +189,58 @@ This ensures relevant and engaging marketing content within...
 	      "Elegant, durable, and perfect for everyday use, this leather bag features modern design."
 	  ]
 	  generated_contents = [
-	      "Cheque out this wallet made from eco-friendly leather, featuring multiple slots.",
+	      "Check out this wallet made from eco-friendly leather, featuring multiple slots.",
 	      "Modern and durable, this leather bag is ideal for daily use with a sleek design."
 	  ]
-	
-	  # Initialise dataset and dataloader
+	  
+	  # Initialize dataset and dataloader
 	  dataset = ProductContentDataset(image_paths, descriptions, generated_contents, transform=transform)
 	  dataloader = DataLoader(dataset, batch_size=1, shuffle=False)
-	
+	  
 	  # Load the Florence2 model and processor
 	  model = FlorenceForImageClassification.from_pretrained("microsoft/florence-base-384")
 	  processor = FlorenceProcessor.from_pretrained("microsoft/florence-base-384")
-	
+	  
 	  # Function to calculate image similarity using Florence2 model
 	  def calculate_image_similarity(image):
 	      with torch.no_grad():
 	          output = model(image)
 	      return output
-	
+	  
 	  # Function to calculate text similarity
 	  def heuristic_text_match(product_description, generated_content):
 	      vectorizer = TfidfVectorizer().fit_transform([product_description, generated_content])
 	      vectors = vectorizer.toarray()
 	      similarity = cosine_similarity(vectors)
 	      return similarity[0, 1]
-	
+	  
 	  # Experiment loop
 	  for batch in dataloader:
 	      images, descriptions, generated_contents = batch
-	
+	  
 	      # Forward pass for image similarity
 	      image_similarity_scores = []
 	      for image in images:
 	          image_similarity = calculate_image_similarity(image)
 	          image_similarity_scores.append(image_similarity)
-	
+	  
 	      # Calculate text similarity
 	      text_similarity_scores = []
 	      for description, generated_content in zip(descriptions, generated_contents):
 	          text_similarity = heuristic_text_match(description, generated_content)
 	          text_similarity_scores.append(text_similarity)
-	
+	  
 	      # Combine image and text similarity
 	      for image_similarity, text_similarity in zip(image_similarity_scores, text_similarity_scores):
 	          overall_similarity_score = (0.6 * image_similarity) + (0.4 * text_similarity)
 	          print(f"Overall Similarity Score: {overall_similarity_score:.4f}")
-	
+	  
 	          if overall_similarity_score > 0.75:
 	              print("The consumer-generated content closely matches the product source material.")
 	          else:
 	              print("The consumer-generated content does not sufficiently match the product source material.")
-	
+	  
 	  ```
 - plot.py
 - ```python
   ```
-
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable

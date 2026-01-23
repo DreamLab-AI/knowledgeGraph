@@ -3,16 +3,17 @@
   "title": "Online Learning",
   "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1012\n  - preferred-term:: Online Learning\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:OnlineLearning\n\n### Relationships\n- is-subclass-of:: [[Machine Learning]]\n- skos:related:: [[Reinforcement Learning]]\n- skos:related:: [[Continual Learning]]\n- skos:related:: [[Incremental Learning]]\n- uses:: [[Stochastic Gradient Descent]]\n- enables:: [[Adaptive Systems]]\n- enables:: [[Real-Time Learning]]\n\n### Definition\nOnline learning is a machine learning paradigm where the model learns incrementally from a stream of data, updating itself after each example or small batch, rather than training on a complete dataset at once. This approach is essential for applications where data arrives continuously, storage is limited, or the underlying distribution changes over time (concept drift).\n\n### Key Characteristics\n- Sequential data processing\n- Immediate model updates\n- Single-pass through data\n- Constant memory requirements\n- Adaptation to distribution shifts\n- No need to store entire dataset\n\n### Learning Protocol\n1. Receive new example x_t\n2. Predict output ŷ_t\n3. Receive true label y_t\n4. Suffer loss ℓ(ŷ_t, y_t)\n5. Update model parameters\n6. Repeat for next example\n\n### Common Algorithms\n**Linear Models:**\n- Perceptron\n- Online gradient descent\n- Follow-the-regularized-leader (FTRL)\n- Adaptive learning rate methods (AdaGrad, Adam)\n\n**Online Ensemble Methods:**\n- Online bagging\n- Online boosting\n- Streaming Random Forests\n\n**Bandit Algorithms:**\n- Upper Confidence Bound (UCB)\n- Thompson Sampling\n- Exp3 (exponential-weight algorithm)\n\n### Performance Metrics\n**Regret:**\n- Cumulative loss compared to best fixed strategy\n- Goal: minimize regret over time\n- Sublinear regret indicates learning\n\n**Mistake Bounds:**\n- Maximum errors before convergence\n- Theoretical guarantees for specific algorithms\n\n### Challenges\n**Concept Drift:**\n- Data distribution changes over time\n- Requires detection and adaptation mechanisms\n- Types: sudden, gradual, incremental, recurring\n\n**Catastrophic Forgetting:**\n- New data overwrites old knowledge\n- Balance plasticity vs. stability\n\n**Limited Feedback:**\n- May not receive labels immediately\n- Delayed feedback complicates learning\n\n### Applications\n- Online advertising (click-through rate prediction)\n- Financial trading (adaptive strategies)\n- Spam filtering (evolving spam patterns)\n- Recommendation systems (user preference changes)\n- Network intrusion detection\n- Social media trend analysis\n- Robotics (environmental adaptation)\n\n### Advantages\n- Memory efficient\n- Adapts to changing data\n- Low latency predictions\n- Suitable for streaming data\n- Can handle infinite data streams\n\n### Related Concepts\n- Incremental learning (similar, often used interchangeably)\n- Lifelong learning (retaining knowledge across tasks)\n- Continual learning (learning new tasks without forgetting)",
   "backlinks": [
-    "Active Learning"
+    "Active Learning",
+    "Loss-Function"
   ],
   "wiki_links": [
-    "Reinforcement Learning",
-    "Stochastic Gradient Descent",
-    "Continual Learning",
-    "Incremental Learning",
-    "Real-Time Learning",
     "Machine Learning",
-    "Adaptive Systems"
+    "Continual Learning",
+    "Stochastic Gradient Descent",
+    "Reinforcement Learning",
+    "Adaptive Systems",
+    "Incremental Learning",
+    "Real-Time Learning"
   ],
   "ontology": {
     "term_id": "AI-1012",

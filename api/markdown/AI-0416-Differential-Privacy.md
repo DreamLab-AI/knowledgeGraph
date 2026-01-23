@@ -19,15 +19,14 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: ai:DifferentialPrivacy
+    - owl:class:: aigo:DifferentialPrivacy
     - owl:physicality:: VirtualEntity
     - owl:role:: Process
-    - owl:inferred-class:: ai:VirtualProcess
+    - owl:inferred-class:: aigo:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 
   - #### Relationships
-- is-subclass-of:: [[Artificial Intelligence]]
     id:: differential-privacy-relationships
 
   - #### OWL Axioms
@@ -64,7 +63,3 @@
     - Unit tests for sensitivity calculations
     - Statistical tests on noise distribution
     - Privacy auditing (e.g., Google's DP accounting library)
-
-- ### Different modalities
-
-- ### Different modalities

@@ -3,16 +3,15 @@
   "title": "Spatial User Interfaces",
   "content": "- ### OntologyBlock\n  id:: spatial-user-interfaces-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10067\n\t- source-domain:: mv\n\t- preferred-term:: Spatial User Interfaces\n\t- status:: active\n\t- definition:: Three-dimensional interaction systems enabling users to engage with digital content through spatially-aware methods including hand gestures, gaze tracking, and voice commands, designed for natural movement within AR, VR, and mixed reality environments with consideration for user comfort zones and 6DOF input.\n\t- owl:class:: mv:SpatialUserInterfaces\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: spatial-user-interfaces-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[3D User Interface]]\n\t\t- related-to:: [[Gesture Recognition]]\n\t\t- related-to:: [[Gaze Tracking]]\n\t\t- related-to:: [[Voice Interaction]]\n\t\t- enables:: [[Immersive Interaction]]\n\t- #### Interaction Methods\n\t  collapsed:: true\n\t\t- Hand tracking and gesture recognition\n\t\t- Eye gaze selection and navigation\n\t\t- Voice command input\n\t\t- Controller-based 6DOF manipulation\n\t\t- Point-to-select and grasp-to-manipulate\n\t- #### Design Principles\n\t  collapsed:: true\n\t\t- UI within 60 degree forward view\n\t\t- Comfort zone placement for accessibility\n\t\t- Natural gesture mirroring\n\t\t- Minimal cognitive load\n\t\t- Fatigue-conscious positioning",
   "backlinks": [
-    "Spatial Computing",
-    "SpatialComputing"
+    "Spatial Computing"
   ],
   "wiki_links": [
+    "Voice Interaction",
     "Gaze Tracking",
     "Immersive Interaction",
-    "Gesture Recognition",
     "metaverse",
-    "3D User Interface",
-    "Voice Interaction"
+    "Gesture Recognition",
+    "3D User Interface"
   ],
   "ontology": {
     "term_id": "MV-10067",

@@ -1,37 +1,47 @@
 - ### OntologyBlock
-    - term-id:: DT-0529
-    - source-domain:: bc
-    - owl:class:: bc:SupplyCap
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - preferred-term:: Supply Cap
-    - ontology:: true
+  id:: supplycap-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: BC
+    - sequence-number:: 0529
+    - filename-history:: ["BC-0529-supplycap.md"]
     - public-access:: true
-    - is-subclass-of:: [[TokenEconomics]]
+    - ontology:: true
+    - term-id:: BC-0529
+    - preferred-term:: Supply Cap
+    - source-domain:: bc
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## Supply Cap
+  - **Definition**
+    - definition:: A predetermined maximum limit on the total number of tokens that can ever exist, enforced by protocol rules.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-Supply Cap refers to a predetermined maximum limit on the total number of tokens that can ever exist, enforced by protocol rules.
+  - **Semantic Classification**
+    - owl:class:: bc:SupplyCap
+    - belongsToDomain:: [[Blockchain]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
+    - is-subclass-of:: [[Tokenomics]]
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :SupplyCap))
+      (SubClassOf :SupplyCap :Tokenomics)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :SupplyCap "Supply Cap"@en)
+      (AnnotationAssertion rdfs:comment :SupplyCap
+        "A predetermined maximum limit on the total number of tokens that can ever exist, enforced by protocol rules."@en)
+      ```
 
-- **Id**: supplycap-ontology
-- **Collapsed**: true
-- **Domain Prefix**: BC
-- **Sequence Number**: 0529
-- **Filename History**: ["BC-0529-supplycap.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: bc:SupplyCap
-- **Belongstodomain**: [[Blockchain]]
-- **Is Subclass Of**: [[TokenEconomics]]
+- ## About Supply Cap
+  A predetermined maximum limit on the total number of tokens that can ever exist, enforced by protocol rules.
+  
+  ### Examples
+  - Bitcoin's 21 million BTC cap

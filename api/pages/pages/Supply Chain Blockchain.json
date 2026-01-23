@@ -3,30 +3,16 @@
   "title": "Supply Chain Blockchain",
   "content": "- ### OntologyBlock\n  id:: supply-chain-blockchain-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-7002\n\t- preferred-term:: Supply Chain Blockchain\n\t- source-domain:: bc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Supply chain blockchain refers to the application of distributed ledger technology to track, trace, and verify the provenance of goods as they move through supply chain networks from raw materials to end consumers. Blockchain provides an immutable, shared record of transactions enabling real-time visibility, authentication of origin, quality verification, and automated compliance through smart contracts, addressing challenges of counterfeiting, fraud, and supply chain opacity.\n\t- maturity:: reviewed\n\t- owl:class:: bc:SupplyChainBlockchain\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[Blockchain]]\n\n### Relationships\n\t- relatedTo:: [[Enterprise Blockchain]]\n\t- relatedTo:: [[Smart Contracts]]\n\t- relatedTo:: [[IoT Integration]]\n\t- enables:: [[Product Traceability]]\n\t- supports:: [[Provenance Verification]]\n\t- implementedBy:: [[Hyperledger Fabric]]\n\n## Overview\n\nTrack and Trace represents the best-known example of blockchain's potential for logistics. Blockchain-based traceability is gaining popularity as a way to securely share asset provenance data among supply chain parties, quickly prove goods' authenticity and origin, streamline claim resolution, and accurately spot fraud and counterfeiting.\n\n## Market Growth\n\n### Global Blockchain Market\n- Estimated at $20.16 billion in 2024\n- Forecasted to reach $393.42 billion by 2032 at CAGR of 43.65%\n- Increasing demand for tracking inventory and asset provenance driving adoption\n\n### Agriculture and Food Supply Chain\n- Market estimated at USD 0.6 billion in 2025\n- Projected to grow at CAGR of 36.0% from 2025\n- Strong regulatory drivers for food safety and origin verification\n\n## Key Benefits\n\n### Secure Information Sharing\n- Distributed ledger serves as single source of truth\n- All authorised network members maintain synchronised copies\n- Auto-updated as new data appears in the network\n- Tamper-proof record of all supply chain activities\n\n### End-to-End Traceability\n- Real-time collection of product data throughout lifecycle\n- Transparency and visibility across all supply chain stages\n- Quality control from raw materials to finished products\n- Rapid identification of contamination or defect sources\n\n### Provenance Verification\n- Evidence for origin of products (bio foods, luxury goods, medicines)\n- Authentication of organic or fair-trade certifications\n- Proof of ethical sourcing and sustainability claims\n- Prevention of counterfeit goods entering supply chains\n\n## Technical Architecture\n\n### Distributed Ledger\n- Blocks form shared record of supply chain activities\n- All participants maintain copies of the ledger\n- Cryptographic linking ensures immutability\n- Consensus mechanisms validate new entries\n\n### Smart Contract Integration\n- Automated payments upon shipment confirmation\n- Quality threshold enforcement at each stage\n- Compliance verification and documentation\n- Exception handling and dispute resolution\n\n### IoT Integration\n- Real-time temperature, humidity, and handling condition recording\n- GPS tracking for location verification\n- Sensor data anchored to blockchain for authenticity\n- Environmental condition monitoring throughout transit\n\n## Industry Applications\n\n### Food and Agriculture\n- Farm-to-table traceability for food safety\n- Organic and sustainability certification verification\n- Rapid recall capability in contamination events\n- Consumer transparency through QR code scanning\n\n### Pharmaceutical\n- Drug authentication and anti-counterfeiting\n- Cold chain monitoring for temperature-sensitive products\n- Regulatory compliance documentation\n- Serial number verification through supply chain\n\n### Jewelry and Luxury Goods\n- Diamond provenance from mine to retail\n- Conflict-free sourcing verification\n- Authenticity certificates linked to blockchain\n- Ownership history for high-value items\n\n### Manufacturing\n- Component traceability for quality assurance\n- Warranty and service record management\n- Supplier compliance verification\n- Product lifecycle documentation\n\n## Recent Developments\n\n### Provenance Chain Network Patent (August 2025)\n- US Patent 12,387,226 issued for \"object story\" technology\n- Comprehensive system for creating, linking, and managing secure data structures\n- Captures critical information about any object from raw materials to finished products\n- Advanced platform for trusted, secure, and transparent lifecycle tracking\n\n### NIST Reference Implementation\n- National Cybersecurity Center of Excellence (NCCoE) MVP architecture\n- Testing traceability across manufacturing supply chains\n- Investigation of non-repudiable claims regarding product pedigree\n- Distributed, authoritative data sources for provenance verification\n\n## Challenges\n\n### Scope Definition\n- Defining number of supply chain stages to encompass\n- Determining granularity of information at each stage\n- Balancing comprehensiveness with implementation complexity\n\n### Data Quality\n- \"Garbage in, garbage out\" problem persists\n- Low-quality input data remains stored permanently on blockchain\n- Can result in inaccurate provenance identification\n- Incorrect resolution of quality and ownership claims\n\n### Integration Complexity\n- Legacy system connectivity requirements\n- Standardisation across multiple parties\n- Privacy requirements between competitors\n- Cost of IoT sensor deployment and maintenance\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Comprehensive review completed\n- **References**: 14 pages reference this concept",
   "backlinks": [
-    "Enterprise Blockchain",
-    "BC-0447-anti-counterfeiting",
-    "BC-0455-product-recall-management",
-    "BC-0454-waste-management",
-    "BC-0448-cold-chain-monitoring",
-    "BC-0451-logistics-optimization",
-    "BC-0446-supply-chain-traceability",
-    "BC-0449-circular-economy",
-    "BC-0445-conflict-mineral-tracking",
-    "BC-0452-customs-trade-facilitation",
-    "BC-0441-provenance-tracking",
-    "BC-0444-luxury-goods-authentication",
-    "BC-0453-ethical-sourcing",
-    "BC-0442-pharmaceutical-traceability",
-    "BC-0443-food-safety-blockchain"
+    "Enterprise Blockchain"
   ],
   "wiki_links": [
-    "Hyperledger Fabric",
-    "Provenance Verification",
-    "IoT Integration",
-    "Product Traceability",
-    "Enterprise Blockchain",
     "Blockchain",
-    "Smart Contracts"
+    "Enterprise Blockchain",
+    "IoT Integration",
+    "Smart Contracts",
+    "Product Traceability",
+    "Provenance Verification",
+    "Hyperledger Fabric"
   ],
   "ontology": {
     "term_id": "BC-7002",

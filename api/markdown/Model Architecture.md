@@ -4,10 +4,10 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9968
-	- source-domain:: mv
+	- source-domain:: artificial-intelligence
 	- preferred-term:: Model Architecture
 	- status:: active
-	- owl:class:: mv:ModelArchitecture
+	- owl:class:: ai:ModelArchitecture
 	- belongsToDomain:: [[metaverse]]
 	- definition:: The structural design and configuration of neural networks and machine learning systems, encompassing layer arrangements, activation functions, and connection patterns that determine how models process information and learn from data.
 	- #### Relationships

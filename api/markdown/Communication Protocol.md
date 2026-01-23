@@ -1,19 +1,44 @@
-### Definition
-
-Communication Protocol defines standardized message formats, data structures,...
-
 - ### OntologyBlock
-  id:: Communication Protocol
-  - ontology:: true
-  - public-access:: true
-  - term-id:: RB-1005
-  - preferred-term:: Communication Protocol
-  - owl:class:: rb:CommunicationProtocol
-  - is-subclass-of:: [[Robotics]]
-  - definition:: A communication protocol defines standardised message formats, data structures, and exchange rules enabling reliable information transfer between robot components, systems, and external devices.
-  - source-domain:: rb
-  - status:: draft
+  id:: communicationprotocol-ontology
+  collapsed:: true
 
-Communication Protocol defines standardized message formats, data structures, and exchange rules that enable reliable information transfer between robot components, systems, and external devices. These protocols form the digital nervous system of modern robotics, governing how sensors transmit data to controllers, how actuators receive commands, and how robots communicate with supervisory systems and each other.
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0187
+    - filename-history:: ["RB-0187-communicationprotocol.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: RB-0187
+    - preferred-term:: Communication Protocol
+    - source-domain:: rb
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-Communication Protocol defines standardized message formats, data structures, and exchange rules that enable reliable information transfer between robot components, systems, and external devices. These protocols form the digital nervous system of modern robotics, governing how sensors transmit data to controllers, how actuators receive commands, and how robots communicate with supervisory systems and each other.
+  - **Definition**
+    - definition:: Communication protocol defines message formats and rules for robot information exchange.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: rb:CommunicationProtocol
+    - belongsToDomain:: [[Robotics]]
+
+  - #### Relationships
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :CommunicationProtocol))
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :CommunicationProtocol "Communication Protocol"@en)
+      (AnnotationAssertion rdfs:comment :CommunicationProtocol
+        "Communication protocol defines message formats and rules for robot information exchange."@en)
+      ```
+
+- ## About Communication Protocol
+  Communication protocol defines message formats and rules for robot information exchange.
+  
+  A standard protocol for robot communication and data exchange.

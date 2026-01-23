@@ -19,15 +19,14 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: ai:PrivacyPreservingDataMining
+    - owl:class:: aigo:PrivacyPreservingDataMining
     - owl:physicality:: VirtualEntity
     - owl:role:: Process
-    - owl:inferred-class:: ai:VirtualProcess
+    - owl:inferred-class:: aigo:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 
   - #### Relationships
-- is-subclass-of:: [[Artificial Intelligence]]
     id:: 0423-privacy-preserving-data-mining-relationships
 
   - #### OWL Axioms

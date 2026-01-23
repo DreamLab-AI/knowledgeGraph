@@ -1,37 +1,46 @@
 - ### OntologyBlock
-    - term-id:: DT-0928
-    - source-domain:: bc
-    - owl:class:: bc:CirculatingSupply
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - preferred-term:: Circulating Supply
-    - ontology:: true
+  id:: circulatingsupply-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: BC
+    - sequence-number:: 0534
+    - filename-history:: ["BC-0534-circulatingsupply.md"]
     - public-access:: true
-    - is-subclass-of:: [[TokenEconomics]]
+    - ontology:: true
+    - term-id:: BC-0534
+    - preferred-term:: Circulating Supply
+    - source-domain:: bc
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## Circulating Supply
+  - **Definition**
+    - definition:: The number of tokens available for trading and in public hands, excluding locked, reserved, or unvested tokens.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-Circulating Supply refers to the number of tokens available for trading and in public hands, excluding locked, reserved, or unvested tokens.
+  - **Semantic Classification**
+    - owl:class:: bc:CirculatingSupply
+    - belongsToDomain:: [[Blockchain]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
+    - is-subclass-of:: [[Tokenomics]]
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :CirculatingSupply))
+      (SubClassOf :CirculatingSupply :Tokenomics)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :CirculatingSupply "Circulating Supply"@en)
+      (AnnotationAssertion rdfs:comment :CirculatingSupply
+        "The number of tokens available for trading and in public hands, excluding locked, reserved, or unvested tokens."@en)
+      ```
 
-- **Id**: circulatingsupply-ontology
-- **Collapsed**: true
-- **Domain Prefix**: BC
-- **Sequence Number**: 0534
-- **Filename History**: ["BC-0534-circulatingsupply.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: bc:CirculatingSupply
-- **Belongstodomain**: [[Blockchain]]
-- **Is Subclass Of**: [[TokenEconomics]]
+- ## About Circulating Supply
+  The number of tokens available for trading and in public hands, excluding locked, reserved, or unvested tokens.
+  
+  Used for market capitalization calculations.

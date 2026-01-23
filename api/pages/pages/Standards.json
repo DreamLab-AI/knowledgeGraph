@@ -12,15 +12,16 @@
     "Standards Conformance Testing",
     "Data Management",
     "Standards Validation",
+    "Smart Contract Platform",
     "Xr Accessibility Standards",
     "Technical Standards",
     "Verifiable Credential Standard",
     "Vocabulary Governance"
   ],
   "wiki_links": [
-    "Interoperability",
     "metaverse",
-    "Metaverse"
+    "Metaverse",
+    "Interoperability"
   ],
   "ontology": {
     "term_id": "MV-10076",

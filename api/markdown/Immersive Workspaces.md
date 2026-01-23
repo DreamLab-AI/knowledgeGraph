@@ -2,26 +2,19 @@
   id:: immersive-workspaces-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0824
+	- term-id:: ME-0011
 	- preferred-term:: Immersive Workspaces
 	- source-domain:: mv
-	- status:: emerging
-	- public-access:: true
-
-
-
-
-### OWL Classification
+	- status:: emerging-technology
+    - public-access:: true
+	- definition:: [Generated from Gartner emerging tech analysis]
+	- maturity:: emerging
 	- owl:class:: mv:ImmersiveWorkspaces
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-
-### Domain & Architecture
 	- belongsToDomain:: [[MetaverseDomain]]
-	- maturity:: emerging
+	- category:: Spatial & Immersive
 
-### Relationships
-- is-subclass-of:: [[Metaverse]]
 
 ## Overview
 
@@ -62,12 +55,14 @@
       - Greater emphasis on user experience, accessibility, and inclusivity in workspace design.
     - In the UK, continued government and private sector investment—especially in the North—will likely accelerate adoption and innovation in immersive workspace technologies.
 
+
 ## UK Context
 
 - British contributions and implementations
   - Research institutions and programmes
   - Industry adoption
   - North England innovation (where relevant)
+
 
 ## Metadata
 
@@ -76,11 +71,4 @@
 - **Category**: Spatial & Immersive
 - **Status**: Emerging Technology
 
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
 

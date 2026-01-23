@@ -1,38 +1,42 @@
 - ### OntologyBlock
-    - term-id:: AI-0805
-    - source-domain:: ai
-    - owl:class:: ai:NeuralNetworkComponent
-    - preferred-term:: Neural Network Component
-    - ontology:: true
+  id:: neuralnetworkcomponent-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: AI
+    - sequence-number:: 0805
+    - filename-history:: ["AI-0805-neuralnetworkcomponent.md"]
     - public-access:: true
+    - ontology:: true
+    - term-id:: AI-0805
+    - preferred-term:: Neural Network Component
+    - source-domain:: ai
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
+  - **Definition**
+    - definition:: A component or building block of neural networks.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-### Relationships
-- is-subclass-of:: [[NeuralNetworkArchitecture]]
+  - **Semantic Classification**
+    - owl:class:: ai:NeuralNetworkComponent
+    - belongsToDomain:: [[Artificial Intelligence]]
 
-## Neural Network Component
+  - #### Relationships
 
-Neural Network Component refers to a component or building block of neural networks.
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :NeuralNetworkComponent))
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :NeuralNetworkComponent "Neural Network Component"@en)
+      (AnnotationAssertion rdfs:comment :NeuralNetworkComponent
+        "A component or building block of neural networks."@en)
+      ```
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
-
-## Technical Details
-
-- **Id**: neuralnetworkcomponent-ontology
-- **Collapsed**: true
-- **Domain Prefix**: AI
-- **Sequence Number**: 0805
-- **Filename History**: ["AI-0805-neuralnetworkcomponent.md"]
-- **Public Access**: true
-- **Source Domain**: ai
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: ai:NeuralNetworkComponent
-- **Belongstodomain**: [[Artificial Intelligence]]
+- ## About Neural Network Component
+  A component or building block of neural networks.

@@ -3,24 +3,17 @@
   "title": "AI Risk Management",
   "content": "- ### OntologyBlock\n  id:: airiskmanagement-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: AI-7019\n\t- preferred-term:: AI Risk Management\n\t- source-domain:: ai\n\t- status:: active\n\t- definition:: AI Risk Management is the systematic process of identifying, assessing, mitigating, and monitoring risks associated with artificial intelligence systems throughout their lifecycle, integrating AI-specific considerations into broader enterprise risk management frameworks. It encompasses governance structures, assessment methodologies, control mechanisms, and continuous oversight to ensure AI systems operate safely, ethically, and in compliance with regulations.\n\t- maturity:: mature\n\t- owl:class:: ai:AiRiskManagement\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Process\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: airiskmanagement-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Risk Management]]\n\t\t- related-to:: [[AIRisk]]\n\t\t- related-to:: [[AIGovernance]]\n\t\t- related-to:: [[AISecurity]]\n\t\t- related-to:: [[AI Safety]]\n\t\t- related-to:: [[Enterprise Risk Management]]\n\t\t- enables:: [[Trustworthy AI]]\n\t\t- enables:: [[AI Compliance]]\n\t- #### NIST AI RMF Core Functions\n\t  collapsed:: true\n\t\t- **GOVERN**: Establish culture of accountability and continuous oversight; define roles and policies\n\t\t- **MAP**: Identify system context, stakeholders, dependencies, and potential risks\n\t\t- **MEASURE**: Evaluate AI system performance, risk exposure, and trustworthiness characteristics\n\t\t- **MANAGE**: Mitigate, monitor, and respond to identified risks over time\n\t- #### Key Components\n\t  collapsed:: true\n\t\t- **AI Bill of Materials (AI-BOM)**: Documentation of all models, data, and vendors\n\t\t- **Impact Assessment**: Thorough evaluation of AI system effects on stakeholders\n\t\t- **Risk Ownership**: Clear accountability for AI risks across the organization\n\t\t- **Continuous Monitoring**: Anomaly detection and performance tracking\n\t\t- **Incident Response**: Protocols for addressing AI-related failures or harms\n\t\t- **Audit Trails**: Model versioning, data provenance, and decision logs\n\t- #### 2025 Framework Updates\n\t  collapsed:: true\n\t\t- Organizations must move from planning to operationalizing AI risk management\n\t\t- New NIST Cybersecurity Framework Profile for AI (NISTIR 8596)\n\t\t- Integration with SOC, PCI DSS, HITRUST, and CMMC frameworks\n\t\t- Emphasis on third-party AI and open-source model risks\n\t\t- Data poisoning detection and model extraction controls\n\t- #### Implementation Roadmap\n\t  collapsed:: true\n\t\t- Build comprehensive AI-BOM for all models and vendors\n\t\t- Define clear AI risk ownership and update policies\n\t\t- Integrate AI risk into enterprise IT and compliance governance\n\t\t- Implement continuous monitoring and anomaly detection\n\t\t- Ensure audit trail transparency for model changes\n\t\t- Conduct regular third-party assessments\n\t- #### Applications\n\t  collapsed:: true\n\t\t- Enterprise AI governance programs\n\t\t- Regulatory compliance (EU AI Act, NIST RMF)\n\t\t- AI vendor risk assessment\n\t\t- Healthcare and financial AI deployment\n\t\t- Government and defense AI systems\n\t\t- Critical infrastructure protection\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched with 2025 NIST updates\n- **Verification**: Government and industry sources verified\n- **Regional Context**: Global standards focus",
   "backlinks": [
-    "Serious Incident",
-    "AIRisk",
-    "Risk Treatment",
-    "Risk Assessment",
-    "Risk Mitigation",
-    "Prohibited AI Practice",
-    "Risk Management",
-    "AIGovernance"
+    "AIRisk"
   ],
   "wiki_links": [
-    "AISecurity",
     "AIGovernance",
-    "AI Safety",
     "Enterprise Risk Management",
-    "Trustworthy AI",
     "AIRisk",
-    "AI Compliance",
     "Risk Management",
+    "AISecurity",
+    "Trustworthy AI",
+    "AI Compliance",
+    "AI Safety",
     "Artificial Intelligence"
   ],
   "ontology": {

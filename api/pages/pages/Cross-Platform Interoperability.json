@@ -5,7 +5,6 @@
   "backlinks": [
     "Interface Standards",
     "Conversion Pipeline",
-    "BC-0433-enterprise-token-standards",
     "Application Layer",
     "Compatibility Process",
     "Asset Archive",
@@ -14,12 +13,12 @@
     "Distributed Authentication Architecture"
   ],
   "wiki_links": [
+    "Relayer",
+    "Cross-Chain Bridge",
     "Layer 0",
     "Light Client",
-    "DeFi",
     "Next Generation Mobile",
-    "Cross-Chain Bridge",
-    "Relayer"
+    "DeFi"
   ],
   "ontology": {
     "term_id": "NGM-7015",

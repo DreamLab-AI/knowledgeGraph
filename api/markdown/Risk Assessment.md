@@ -1,22 +1,140 @@
 - ### OntologyBlock
-  id:: unknown-ontology
+  id:: risk-assessment-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0078
-	- source-domain:: mv
+	- term-id:: AI-0078
 	- preferred-term:: Risk Assessment
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
+- public-access:: true
 	- definition:: The systematic process of evaluating AI-related risks by determining their likelihood, potential impact, and priority, considering technical, ethical, social, and operational dimensions to inform risk treatment decisions.
 	- maturity:: draft
 	- owl:class:: mv:RiskAssessment
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
-	- #### Relationships
-	  id:: unknown-relationships
+
+## OWL Formal Semantics
+
+```clojure
+;; OWL Functional Syntax
+
+(Declaration (Class :RiskAssessment))
+
+;; Annotations
+(AnnotationAssertion rdfs:label :RiskAssessment "Risk Assessment"@en)
+(AnnotationAssertion rdfs:comment :RiskAssessment "The systematic process of evaluating AI-related risks by determining their likelihood, potential impact, and priority, considering technical, ethical, social, and operational dimensions to inform risk treatment decisions."@en)
+
+;; Data Properties
+(AnnotationAssertion dcterms:identifier :RiskAssessment "AI-0078"^^xsd:string)
+(DataPropertyAssertion :isAITechnology :RiskAssessment "true"^^xsd:boolean)
+```
+
+- ## About Risk Assessment
+	- The systematic process of evaluating AI-related risks by determining their likelihood, potential impact, and priority, considering technical, ethical, social, and operational dimensions to inform risk treatment decisions.
+	-
+	- ### Original Content
 	  collapsed:: true
-		- is-subclass-of:: [[AIRiskManagement]]
+		- ```
+# Risk Assessment
+		  
+		  **Term ID**: AI-0078
+		  **Category**: Foundational Concept
+		  **Status**: Active
+		  **Last Updated**: 2025-10-27
+		  
+		  ## Definition
+		  
+		  The systematic process of evaluating AI-related risks by determining their likelihood, potential impact, and priority, considering technical, ethical, social, and operational dimensions to inform risk treatment decisions.
+		  
+		  ## Formal Specification
+		  
+		  ```yaml
+		  term: Risk Assessment
+		  definition: "Systematic evaluation of AI risk likelihood, impact, and priority"
+		  domain: AI Risk Management
+		  type: Process
+		  components: [risk_identification, risk_analysis, risk_evaluation]
+		  methods: [qualitative, quantitative, semi_quantitative]
+		  outputs: [risk_matrix, risk_scores, prioritized_risks]
+		  ```
+		  
+		  ## Authoritative References
+		  
+		  1. **ISO/IEC 23894:2023** - Section 7: Risk assessment for AI systems
+		  2. **NIST AI RMF 1.0** - MEASURE function
+		  3. **EU AI Act** - Article 9(2): Risk assessment requirements
+		  
+		  ## Risk Assessment Process
+		  
+		  ### 1. Risk Identification
+		  - Technical failures
+		  - Security threats
+		  - Bias and fairness issues
+		  - Privacy violations
+		  - Safety hazards
+		  
+		  ### 2. Risk Analysis
+		  **Likelihood**: Probability of risk occurring (rare, unlikely, possible, likely, almost certain)
+		  **Impact**: Severity of consequences (negligible, minor, moderate, major, catastrophic)
+		  **Risk Level**: Likelihood × Impact
+		  
+		  ### 3. Risk Evaluation
+		  - Compare against risk criteria
+		  - Prioritize risks
+		  - Determine treatment necessity
+		  
+		  ## Risk Matrix Example
+		  
+		  |            | Negligible | Minor | Moderate | Major | Catastrophic |
+		  |------------|-----------|-------|----------|-------|--------------|
+		  | Almost Certain | Medium | High | Extreme | Extreme | Extreme |
+		  | Likely | Low | Medium | High | Extreme | Extreme |
+		  | Possible | Low | Medium | High | Extreme | Extreme |
+		  | Unlikely | Low | Low | Medium | High | Extreme |
+		  | Rare | Low | Low | Medium | High | High |
+		  
+		  ## Assessment Methods
+		  
+		  **Qualitative**: Expert judgment, scenario analysis
+		  **Quantitative**: Statistical models, monte carlo simulation
+		  **Semi-Quantitative**: Risk scoring, weighted metrics
+		  
+		  ## Relationships
+		  
+		  - **Component Of**: Risk Management (AI-0077)
+		  - **Informs**: Risk Treatment (AI-0080), Risk Mitigation (AI-0079)
+		  - **Assesses**: AI Risk (AI-0076)
+		  
+		  ## Best Practices
+		  
+		  1. **Multi-disciplinary assessment teams**
+		  2. **Consider full AI lifecycle**
+		  3. **Include stakeholder perspectives**
+		  4. **Use standardized frameworks**
+		  5. **Regular reassessment**
+		  
+		  ## Related Terms
+		  
+		  - Risk Management (AI-0077)
+		  - AI Risk (AI-0076)
+		  - Risk Mitigation (AI-0079)
+		  
+		  ## Version History
+		  
+		  - **1.0** (2025-10-27): Initial definition based on ISO/IEC 23894:2023
+		  
+		  ```
+
+	- ## **Risks**:
+
+	- ## **Risks**:
+
+	- ## **Risks**:
+
+	- ## **Risks**:
+
+# Updated Ontology Entry: Risk Assessment
 
 ## Academic Context
 
@@ -122,7 +240,8 @@
 
 9. BigID (2025). What Is an AI Risk Assessment Framework & Why Is It Important? Retrieved from https://bigid.com/blog/ai-risk-assessment/
 
-10. U.S. Department of Defence (2025). Artificial Intelligence Cybersecurity Risk Management Tailoring Guide. Retrieved from https://dodcio.defence.gov/Portals/0/Documents/Library/AI-CybersecurityRMTailingGuide.pdf
+10. U.S. Department of Defense (2025). Artificial Intelligence Cybersecurity Risk Management Tailoring Guide. Retrieved from https://dodcio.defense.gov/Portals/0/Documents/Library/AI-CybersecurityRMTailingGuide.pdf
+
 
 ## Metadata
 
@@ -130,4 +249,3 @@
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-

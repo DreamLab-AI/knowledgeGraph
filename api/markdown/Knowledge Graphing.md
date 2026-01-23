@@ -1,26 +1,9 @@
-### Definition
+public:: true
 
-[https://www.connectedpapers.com/main/995a155fee9afdfacba009c007c884a665ad3055/Visualizing-semantic-web/graph](https://www.connectedpapers.com/main/995a155fee9afdfacba009c007c884a665ad3055/Visualizing-semantic-web/graph)
-
-- ### OntologyBlock
-  id:: Knowledge Graphing
-  - ontology:: true
-  - public-access:: true
-  - term-id:: AI-8017
-  - preferred-term:: Knowledge Graphing
-  - source-domain:: ai
-  - status:: draft
-  - owl:class:: ai:KnowledgeGraphing
-
-[https://www.connectedpapers.com/main/995a155fee9afdfacba009c007c884a665ad3055/Visualizingsemanticweb/graph](https://www.connectedpapers.com/main/995a155fee9afdfacba009c007c884a665ad3055/Visualizingsemanticweb/graph)
-
-[https://www.connectedpapers.com/main/995a155fee9afdfacba009c007c884a665ad3055/Visualizingsemanticweb/graph](https://www.connectedpapers.com/main/995a155fee9afdfacba009c007c884a665ad3055/Visualizingsemanticweb/graph)
-
-### Relationships
-- is-subclass-of:: [[KnowledgeGraphConstruction]]
-
-### Obsidian
-- **Obsidian**: A markdown-based note-taking app designed for knowledge management and building a personal knowledge base. Obsidian's key feature is its ability to create a network of interlinked notes, enabling users to visualise the connections between their thoughts and information.
+- #Public page automatically published
+- ## Obsidian
+	- ### Obsidian
+		- **Obsidian**: A markdown-based note-taking app designed for knowledge management and building a personal knowledge base. Obsidian's key feature is its ability to create a network of interlinked notes, enabling users to visualize the connections between their thoughts and information.
 	- ### Notion
 		- **Notion**: is a versatile paid tool that combines note-taking, task management, databases, and knowledge graphing. Notion allows users to create linked notes and true databases, making is very performant. It has a lot of GPT integration but this costs extra.
 		- {{video https://www.youtube.com/watch?v=vFNYUl1pv54}}
@@ -37,10 +20,10 @@
 	- ### Other Tools
 		- **Roam Research**: This tool is known for its bi-directional linking and its graph overview, which shows how notes are interconnected. Roam is designed to facilitate associative thought, making it easy to see connections between ideas.
 		- **Dynalist**: A list-making application that allows for infinite levels of nesting. While primarily a list-maker, it also offers features for linking between lists and items, thereby enabling some degree of knowledge graphing.
-		- **TiddlyWiki**: A unique non-linear notebook for capturing, organising, and sharing complex information. It allows for linking between different Tiddlers (small pieces of information) to create a web of notes.
-		- **Zettelkasten Method Tools**: This method emphasises creating a network of linked notes. Tools like Zettlr or The Archive are designed with the Zettelkasten philosophy in mind, offering features that facilitate linking between notes and creating a knowledge web.
-		- **Microsoft OneNote**: A digital notebook that provides a flexible canvas for capturing notes in various formats. It allows for some degree of linking and organising, suitable for knowledge management.
-		- **Evernote**: Known for note-taking, it also provides features for organising and linking notes, although it's more linear compared to tools like Obsidian or Logseq.
+		- **TiddlyWiki**: A unique non-linear notebook for capturing, organizing, and sharing complex information. It allows for linking between different Tiddlers (small pieces of information) to create a web of notes.
+		- **Zettelkasten Method Tools**: This method emphasizes creating a network of linked notes. Tools like Zettlr or The Archive are designed with the Zettelkasten philosophy in mind, offering features that facilitate linking between notes and creating a knowledge web.
+		- **Microsoft OneNote**: A digital notebook that provides a flexible canvas for capturing notes in various formats. It allows for some degree of linking and organizing, suitable for knowledge management.
+		- **Evernote**: Known for note-taking, it also provides features for organizing and linking notes, although it's more linear compared to tools like Obsidian or Logseq.
 - # Misc
 	- [Taking RAG apps from POC to Production, Fast - YouTube](https://www.youtube.com/watch?v=WQsN0_eVaEs)
 	- [AI-Powered Search: Embedding-Based Retrieval and Retrieval-Augmented Generation (RAG) | by Daniel Tunkelang | Apr, 2024 | Medium](https://dtunkelang.medium.com/ai-powered-search-embedding-based-retrieval-and-retrieval-augmented-generation-rag-cabeaba26a8b)

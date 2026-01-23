@@ -1,35 +1,42 @@
 - ### OntologyBlock
-    - term-id:: MV-0570
-    - source-domain:: mv
-    - owl:class:: mv:NftStandard
-    - preferred-term:: NFT Standard
-    - ontology:: true
+  id:: nftstandard-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: BC
+    - sequence-number:: 0570
+    - filename-history:: ["BC-0570-nftstandard.md"]
     - public-access:: true
-    - is-subclass-of:: [[NFTConcept]]
+    - ontology:: true
+    - term-id:: BC-0570
+    - preferred-term:: NFT Standard
+    - source-domain:: bc
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## NFT Standard
+  - **Definition**
+    - definition:: Technical standards for NFTs (ERC-721, ERC-1155, etc.).
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-NFT Standard refers to technical standards for nfts (erc-721, erc-1155, etc.).
+  - **Semantic Classification**
+    - owl:class:: bc:NftStandard
+    - belongsToDomain:: [[Blockchain]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :NftStandard))
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :NftStandard "NFT Standard"@en)
+      (AnnotationAssertion rdfs:comment :NftStandard
+        "Technical standards for NFTs (ERC-721, ERC-1155, etc.)."@en)
+      ```
 
-- **Id**: nftstandard-ontology
-- **Collapsed**: true
-- **Domain Prefix**: BC
-- **Sequence Number**: 0570
-- **Filename History**: ["BC-0570-nftstandard.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: bc:NftStandard
-- **Belongstodomain**: [[Blockchain]]
+- ## About NFT Standard
+  Technical standards for NFTs (ERC-721, ERC-1155, etc.).

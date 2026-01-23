@@ -1,19 +1,46 @@
-### Definition
-
-Linear Encoder measures linear position or displacement through non-contact sensing of periodic graduations on a scale, providing essential feedback for precise position control in linear axes of robots including gantry systems, linear stages, and prismatic joints. These sensors achieve resolution to sub-micrometer levels with measurement ranges spanning millimeters to tens of meters, enabling accuracy and repeatability impossible through alternative methods like lead screw rotation counting that suffer cumulative transmission errors.
-
 - ### OntologyBlock
-  id:: Linear Encoder
-  - ontology:: true
-  - public-access:: true
-  - term-id:: RB-1011
-  - preferred-term:: Linear Encoder
-  - owl:class:: rb:LinearEncoder
-  - is-subclass-of:: [[Robotics]]
-  - definition:: A linear encoder measures linear position or displacement through non-contact sensing of periodic graduations on a scale, providing essential feedback for precise position control in linear robot axes.
-  - source-domain:: rb
-  - status:: draft
+  id:: linearencoder-ontology
+  collapsed:: true
 
-Linear Encoder measures linear position or displacement through noncontact sensing of periodic graduations on a scale, providing essential feedback for precise position control in linear axes of robots including gantry systems, linear stages, and prismatic joints. These sensors achieve resolution to submicrometer levels with measurement ranges spanning millimeters to tens of meters, enabling accuracy and repeatability impossible through alternative methods like lead screw rotation counting that suffer cumulative transmission errors.
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0158
+    - filename-history:: ["RB-0158-linearencoder.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: RB-0158
+    - preferred-term:: Linear Encoder
+    - source-domain:: rb
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-Linear Encoder measures linear position or displacement through noncontact sensing of periodic graduations on a scale, providing essential feedback for precise position control in linear axes of robots including gantry systems, linear stages, and prismatic joints. These sensors achieve resolution to submicrometer levels with measurement ranges spanning millimeters to tens of meters, enabling accuracy and repeatability impossible through alternative methods like lead screw rotation counting that suffer cumulative transmission errors.
+  - **Definition**
+    - definition:: Linear encoder measures linear displacement.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: rb:LinearEncoder
+    - belongsToDomain:: [[Robotics]]
+
+  - #### Relationships
+    - is-subclass-of:: [[Encoder]]
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :LinearEncoder))
+      (SubClassOf :LinearEncoder :Encoder)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :LinearEncoder "Linear Encoder"@en)
+      (AnnotationAssertion rdfs:comment :LinearEncoder
+        "Linear encoder measures linear displacement."@en)
+      ```
+
+- ## About Linear Encoder
+  Linear encoder measures linear displacement.
+  
+  An encoder measuring linear position.

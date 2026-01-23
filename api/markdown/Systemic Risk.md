@@ -2,13 +2,555 @@
   id:: systemic-risk-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: DT-7974
+	- term-id:: mv-1761742247974
 	- preferred-term:: Systemic Risk
 	- source-domain:: mv
-  - owl:class:: mv:SystemicRisk
-	- belongsToDomain:: [[DisruptiveTechDomain]]
 	- status:: draft
-    - public-access:: true
+- definition:: Risk specific to high-impact capabilities of general-purpose AI models with significant impact on the Union market due to reach, or actual or foreseeable negative effects on public health, safety, fundamental rights, environment, democracy, or rule of law.
+
+
+## OWL Formal Semantics
+
+```clojure
+;; OWL Functional Syntax
+
+(Declaration (Class :SystemicRisk))
+
+;; Annotations
+(AnnotationAssertion rdfs:label :SystemicRisk "Systemic Risk"@en)
+(AnnotationAssertion rdfs:comment :SystemicRisk "Risk specific to high-impact capabilities of general-purpose AI models with significant impact on the Union market due to reach, or actual or foreseeable negative effects on public health, safety, fundamental rights, environment, democracy, or rule of law."@en)
+
+;; Data Properties
+(AnnotationAssertion dcterms:identifier :SystemicRisk "mv-1761742247974"^^xsd:string)
+```
+
+## Source
+
+**Primary**: EU AI Act Article 3(65), Article 51
+**Reference**: Annex XIII (Classification Criteria)
+
+## Regulatory Context
+
+Systemic risk represents the highest tier of general-purpose AI model regulation. Models with systemic risk face enhanced obligations beyond standard GPAI requirements, including adversarial testing and EU-level risk mitigation.
+
+## Classification Criteria
+
+A GPAI model is deemed to have systemic risk if EITHER:
+
+### 1. High-Impact Capabilities (Article 51(1)(a))
+Capabilities matching or exceeding those of most advanced GPAI models, evaluated based on:
+- Appropriate technical tools and methodologies
+- Benchmarks and indicators in Annex XIII
+
+### 2. Cumulative Computation Threshold (Article 51(1)(a))
+Training using cumulative computation ≥ **10²⁵ floating point operations (FLOPs)**
+
+**Rebuttable presumption**: Provider can demonstrate model does not have systemic risk despite meeting threshold.
+
+## Negative Effects Scope
+
+Systemic risks encompass impacts on:
+- **Public health**: Disease spread, healthcare disruption
+- **Public safety**: Critical infrastructure, physical security
+- **Fundamental rights**: Privacy, non-discrimination, freedom of expression
+- **Environment**: Climate, biodiversity, resource depletion
+- **Democracy**: Electoral integrity, civic discourse
+- **Rule of law**: Judicial systems, institutional functioning
+
+## Enhanced Obligations (Article 55)
+
+GPAI models with systemic risk must:
+
+### 1. Model Evaluation (Article 55(1)(a))
+- Standardised assessment protocols
+- Adversarial testing
+- Identification of systemic risks
+
+### 2. Systemic Risk Assessment and Mitigation (Article 55(1)(b))
+- Evaluate possible systemic risks at Union level
+- Assess sources: development, market placement, use
+- Implement adequate mitigation policies
+
+### 3. Serious Incident Reporting (Article 55(1)(c))
+Track, document, and report to AI Office:
+- Serious incidents
+- Possible corrective measures
+- **Timing**: Without undue delay
+
+### 4. Cybersecurity Protection (Article 55(1)(d))
+- Adequate cybersecurity for model and infrastructure
+- Protection of model weights, training systems, deployment
+- State-of-the-art security measures
+
+### 5. Energy Efficiency (Article 55(1)(e))
+- Document and report energy consumption
+- Energy efficiency optimisation measures
+
+## Annex XIII Indicators
+
+### Capability Benchmarks
+- General reasoning
+- Mathematical problem-solving
+- Code generation
+- Multimodal understanding
+- Long-context processing
+- Tool use and API calling
+- Agent-like behaviour
+
+### Risk Indicators
+- Potential for misuse (CBRN, cyberattacks)
+- Autonomous capabilities
+- Persuasion and deception potential
+- Emergent capabilities
+
+## AI Office Classification Power (Article 51)
+
+The AI Office may:
+- Designate additional models with systemic risk
+- Adjust computational threshold via delegated acts
+- Consider market impact and reach
+
+**Process**: Qualified majority of AI Board, consultation with Scientific Panel
+
+## Scientific Panel Role (Article 68)
+
+Independent experts supporting AI Office:
+- **Alert mechanism**: Identify potential systemic risks
+- **Technical guidance**: Assessment methodologies
+- **Qualified alerts**: Trigger classification procedures
+
+## Systemic Risk Mitigation Strategies
+
+### Model-Level Mitigations
+- Red-teaming and adversarial testing
+- Capability limitation (guardrails)
+- Alignment techniques (RLHF, constitutional AI)
+- Output filtering
+
+### Deployment-Level Mitigations
+- Access controls and authentication
+- Usage monitoring and anomaly detection
+- Incident response procedures
+- Third-party security audits
+
+### Ecosystem-Level Mitigations
+- Information sharing with downstream providers
+- Collaboration with authorities
+- Research on risk detection
+- Transparency about limitations
+
+## Code of Practice (Article 56)
+
+Providers may comply through:
+- Industry codes of practice
+- Developed by providers, researchers, civil society
+- Approved by AI Office
+- Updated regularly
+
+Benefits:
+- Presumption of compliance
+- Regulatory flexibility
+- Collective best practices
+
+## Timeline
+
+- **Classification**: Effective 2 August 2025
+- **Enhanced obligations**: Apply immediately upon classification
+- **Regular review**: Computational threshold reviewed annually
+
+## Penalties
+
+Non-compliance fines up to **€15 million or 3% of global annual turnover**, whichever is higher (Article 99(4)).
+
+## Related Concepts
+
+- **General-Purpose AI Model** (AI-0117): Broader GPAI category
+- **High-Impact Capabilities** (Threshold criterion)
+- **Cumulative Computation Threshold** (10²⁵ FLOPs threshold)
+- **Model Evaluation** (AI-0147): Testing requirement
+- **Adversarial Testing** (AI-0148): Security validation
+
+## Examples of Potential Systemic Risk Models
+
+Based on public information (subject to AI Office assessment):
+- GPT-4 and successors
+- Claude 3 Opus and above
+- Gemini Ultra
+- Large multimodal foundation models (≥10²⁵ FLOPs)
+
+## International Comparison
+
+Similar concepts in:
+- **UK AI Safety Institute**: Frontier model evaluation
+- **US NIST AI RMF**: Systemic impacts
+- **G7 Hiroshima Process**: Advanced AI governance
+
+## See Also
+
+- EU AI Act Chapter V, Section 3 (Articles 51, 55-56)
+- Annex XIII: Systemic Risk Classification Criteria
+- Scientific Panel of Independent Experts (AI-0129)
+- AI Office (AI-0125)
+	- maturity:: draft
+	- owl:class:: mv:SystemicRisk
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Systemic Risk
+	- Risk specific to high-impact capabilities of general-purpose AI models with significant impact on the Union market due to reach, or actual or foreseeable negative effects on public health, safety, fundamental rights, environment, democracy, or rule of law.
+
+## Source
+
+**Primary**: EU AI Act Article 3(65), Article 51
+**Reference**: Annex XIII (Classification Criteria)
+
+## Regulatory Context
+
+Systemic risk represents the highest tier of general-purpose AI model regulation. Models with systemic risk face enhanced obligations beyond standard GPAI requirements, including adversarial testing and EU-level risk mitigation.
+
+## Classification Criteria
+
+A GPAI model is deemed to have systemic risk if EITHER:
+
+### 1. High-Impact Capabilities (Article 51(1)(a))
+Capabilities matching or exceeding those of most advanced GPAI models, evaluated based on:
+- Appropriate technical tools and methodologies
+- Benchmarks and indicators in Annex XIII
+
+### 2. Cumulative Computation Threshold (Article 51(1)(a))
+Training using cumulative computation ≥ **10²⁵ floating point operations (FLOPs)**
+
+**Rebuttable presumption**: Provider can demonstrate model does not have systemic risk despite meeting threshold.
+
+## Negative Effects Scope
+
+Systemic risks encompass impacts on:
+- **Public health**: Disease spread, healthcare disruption
+- **Public safety**: Critical infrastructure, physical security
+- **Fundamental rights**: Privacy, non-discrimination, freedom of expression
+- **Environment**: Climate, biodiversity, resource depletion
+- **Democracy**: Electoral integrity, civic discourse
+- **Rule of law**: Judicial systems, institutional functioning
+
+## Enhanced Obligations (Article 55)
+
+GPAI models with systemic risk must:
+
+### 1. Model Evaluation (Article 55(1)(a))
+- Standardised assessment protocols
+- Adversarial testing
+- Identification of systemic risks
+
+### 2. Systemic Risk Assessment and Mitigation (Article 55(1)(b))
+- Evaluate possible systemic risks at Union level
+- Assess sources: development, market placement, use
+- Implement adequate mitigation policies
+
+### 3. Serious Incident Reporting (Article 55(1)(c))
+Track, document, and report to AI Office:
+- Serious incidents
+- Possible corrective measures
+- **Timing**: Without undue delay
+
+### 4. Cybersecurity Protection (Article 55(1)(d))
+- Adequate cybersecurity for model and infrastructure
+- Protection of model weights, training systems, deployment
+- State-of-the-art security measures
+
+### 5. Energy Efficiency (Article 55(1)(e))
+- Document and report energy consumption
+- Energy efficiency optimisation measures
+
+## Annex XIII Indicators
+
+### Capability Benchmarks
+- General reasoning
+- Mathematical problem-solving
+- Code generation
+- Multimodal understanding
+- Long-context processing
+- Tool use and API calling
+- Agent-like behaviour
+
+### Risk Indicators
+- Potential for misuse (CBRN, cyberattacks)
+- Autonomous capabilities
+- Persuasion and deception potential
+- Emergent capabilities
+
+## AI Office Classification Power (Article 51)
+
+The AI Office may:
+- Designate additional models with systemic risk
+- Adjust computational threshold via delegated acts
+- Consider market impact and reach
+
+**Process**: Qualified majority of AI Board, consultation with Scientific Panel
+
+## Scientific Panel Role (Article 68)
+
+Independent experts supporting AI Office:
+- **Alert mechanism**: Identify potential systemic risks
+- **Technical guidance**: Assessment methodologies
+- **Qualified alerts**: Trigger classification procedures
+
+## Systemic Risk Mitigation Strategies
+
+### Model-Level Mitigations
+- Red-teaming and adversarial testing
+- Capability limitation (guardrails)
+- Alignment techniques (RLHF, constitutional AI)
+- Output filtering
+
+### Deployment-Level Mitigations
+- Access controls and authentication
+- Usage monitoring and anomaly detection
+- Incident response procedures
+- Third-party security audits
+
+### Ecosystem-Level Mitigations
+- Information sharing with downstream providers
+- Collaboration with authorities
+- Research on risk detection
+- Transparency about limitations
+
+## Code of Practice (Article 56)
+
+Providers may comply through:
+- Industry codes of practice
+- Developed by providers, researchers, civil society
+- Approved by AI Office
+- Updated regularly
+
+Benefits:
+- Presumption of compliance
+- Regulatory flexibility
+- Collective best practices
+
+## Timeline
+
+- **Classification**: Effective 2 August 2025
+- **Enhanced obligations**: Apply immediately upon classification
+- **Regular review**: Computational threshold reviewed annually
+
+## Penalties
+
+Non-compliance fines up to **€15 million or 3% of global annual turnover**, whichever is higher (Article 99(4)).
+
+## Related Concepts
+
+- **General-Purpose AI Model** (AI-0117): Broader GPAI category
+- **High-Impact Capabilities** (Threshold criterion)
+- **Cumulative Computation Threshold** (10²⁵ FLOPs threshold)
+- **Model Evaluation** (AI-0147): Testing requirement
+- **Adversarial Testing** (AI-0148): Security validation
+
+## Examples of Potential Systemic Risk Models
+
+Based on public information (subject to AI Office assessment):
+- GPT-4 and successors
+- Claude 3 Opus and above
+- Gemini Ultra
+- Large multimodal foundation models (≥10²⁵ FLOPs)
+
+## International Comparison
+
+Similar concepts in:
+- **UK AI Safety Institute**: Frontier model evaluation
+- **US NIST AI RMF**: Systemic impacts
+- **G7 Hiroshima Process**: Advanced AI governance
+
+## See Also
+
+- EU AI Act Chapter V, Section 3 (Articles 51, 55-56)
+- Annex XIII: Systemic Risk Classification Criteria
+- Scientific Panel of Independent Experts (AI-0129)
+- AI Office (AI-0125)
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# Systemic Risk
+		  
+		  **Ontology ID**: AI-0122
+		  **Category**: Core Definitions
+		  **Last Updated**: 2025-10-27
+		  
+		  ## Definition
+		  
+		  Risk specific to high-impact capabilities of general-purpose AI models with significant impact on the Union market due to reach, or actual or foreseeable negative effects on public health, safety, fundamental rights, environment, democracy, or rule of law.
+		  
+		  ## Source
+		  
+		  **Primary**: EU AI Act Article 3(65), Article 51
+		  **Reference**: Annex XIII (Classification Criteria)
+		  
+		  ## Regulatory Context
+		  
+		  Systemic risk represents the highest tier of general-purpose AI model regulation. Models with systemic risk face enhanced obligations beyond standard GPAI requirements, including adversarial testing and EU-level risk mitigation.
+		  
+		  ## Classification Criteria
+		  
+		  A GPAI model is deemed to have systemic risk if EITHER:
+		  
+		  ### 1. High-Impact Capabilities (Article 51(1)(a))
+		  Capabilities matching or exceeding those of most advanced GPAI models, evaluated based on:
+		  - Appropriate technical tools and methodologies
+		  - Benchmarks and indicators in Annex XIII
+		  
+		  ### 2. Cumulative Computation Threshold (Article 51(1)(a))
+		  Training using cumulative computation ≥ **10²⁵ floating point operations (FLOPs)**
+		  
+		  **Rebuttable presumption**: Provider can demonstrate model does not have systemic risk despite meeting threshold.
+		  
+		  ## Negative Effects Scope
+		  
+		  Systemic risks encompass impacts on:
+		  - **Public health**: Disease spread, healthcare disruption
+		  - **Public safety**: Critical infrastructure, physical security
+		  - **Fundamental rights**: Privacy, non-discrimination, freedom of expression
+		  - **Environment**: Climate, biodiversity, resource depletion
+		  - **Democracy**: Electoral integrity, civic discourse
+		  - **Rule of law**: Judicial systems, institutional functioning
+		  
+		  ## Enhanced Obligations (Article 55)
+		  
+		  GPAI models with systemic risk must:
+		  
+		  ### 1. Model Evaluation (Article 55(1)(a))
+		  - Standardised assessment protocols
+		  - Adversarial testing
+		  - Identification of systemic risks
+		  
+		  ### 2. Systemic Risk Assessment and Mitigation (Article 55(1)(b))
+		  - Evaluate possible systemic risks at Union level
+		  - Assess sources: development, market placement, use
+		  - Implement adequate mitigation policies
+		  
+		  ### 3. Serious Incident Reporting (Article 55(1)(c))
+		  Track, document, and report to AI Office:
+		  - Serious incidents
+		  - Possible corrective measures
+		  - **Timing**: Without undue delay
+		  
+		  ### 4. Cybersecurity Protection (Article 55(1)(d))
+		  - Adequate cybersecurity for model and infrastructure
+		  - Protection of model weights, training systems, deployment
+		  - State-of-the-art security measures
+		  
+		  ### 5. Energy Efficiency (Article 55(1)(e))
+		  - Document and report energy consumption
+		  - Energy efficiency optimisation measures
+		  
+		  ## Annex XIII Indicators
+		  
+		  ### Capability Benchmarks
+		  - General reasoning
+		  - Mathematical problem-solving
+		  - Code generation
+		  - Multimodal understanding
+		  - Long-context processing
+		  - Tool use and API calling
+		  - Agent-like behaviour
+		  
+		  ### Risk Indicators
+		  - Potential for misuse (CBRN, cyberattacks)
+		  - Autonomous capabilities
+		  - Persuasion and deception potential
+		  - Emergent capabilities
+		  
+		  ## AI Office Classification Power (Article 51)
+		  
+		  The AI Office may:
+		  - Designate additional models with systemic risk
+		  - Adjust computational threshold via delegated acts
+		  - Consider market impact and reach
+		  
+		  **Process**: Qualified majority of AI Board, consultation with Scientific Panel
+		  
+		  ## Scientific Panel Role (Article 68)
+		  
+		  Independent experts supporting AI Office:
+		  - **Alert mechanism**: Identify potential systemic risks
+		  - **Technical guidance**: Assessment methodologies
+		  - **Qualified alerts**: Trigger classification procedures
+		  
+		  ## Systemic Risk Mitigation Strategies
+		  
+		  ### Model-Level Mitigations
+		  - Red-teaming and adversarial testing
+		  - Capability limitation (guardrails)
+		  - Alignment techniques (RLHF, constitutional AI)
+		  - Output filtering
+		  
+		  ### Deployment-Level Mitigations
+		  - Access controls and authentication
+		  - Usage monitoring and anomaly detection
+		  - Incident response procedures
+		  - Third-party security audits
+		  
+		  ### Ecosystem-Level Mitigations
+		  - Information sharing with downstream providers
+		  - Collaboration with authorities
+		  - Research on risk detection
+		  - Transparency about limitations
+		  
+		  ## Code of Practice (Article 56)
+		  
+		  Providers may comply through:
+		  - Industry codes of practice
+		  - Developed by providers, researchers, civil society
+		  - Approved by AI Office
+		  - Updated regularly
+		  
+		  Benefits:
+		  - Presumption of compliance
+		  - Regulatory flexibility
+		  - Collective best practices
+		  
+		  ## Timeline
+		  
+		  - **Classification**: Effective 2 August 2025
+		  - **Enhanced obligations**: Apply immediately upon classification
+		  - **Regular review**: Computational threshold reviewed annually
+		  
+		  ## Penalties
+		  
+		  Non-compliance fines up to **€15 million or 3% of global annual turnover**, whichever is higher (Article 99(4)).
+		  
+		  ## Related Concepts
+		  
+		  - **General-Purpose AI Model** (AI-0117): Broader GPAI category
+		  - **High-Impact Capabilities** (Threshold criterion)
+		  - **Cumulative Computation Threshold** (10²⁵ FLOPs threshold)
+		  - **Model Evaluation** (AI-0147): Testing requirement
+		  - **Adversarial Testing** (AI-0148): Security validation
+		  
+		  ## Examples of Potential Systemic Risk Models
+		  
+		  Based on public information (subject to AI Office assessment):
+		  - GPT-4 and successors
+		  - Claude 3 Opus and above
+		  - Gemini Ultra
+		  - Large multimodal foundation models (≥10²⁵ FLOPs)
+		  
+		  ## International Comparison
+		  
+		  Similar concepts in:
+		  - **UK AI Safety Institute**: Frontier model evaluation
+		  - **US NIST AI RMF**: Systemic impacts
+		  - **G7 Hiroshima Process**: Advanced AI governance
+		  
+		  ## See Also
+		  
+		  - EU AI Act Chapter V, Section 3 (Articles 51, 55-56)
+		  - Annex XIII: Systemic Risk Classification Criteria
+		  - Scientific Panel of Independent Experts (AI-0129)
+		  - AI Office (AI-0125)
+		  
+		  ```
+
+- public-access:: true
 	- definition:: Risk specific to high-impact capabilities of general-purpose AI models with significant impact on the Union market due to reach, or actual or foreseeable negative effects on public health, safety, fundamental rights, environment, democracy, or rule of law.
 
 
@@ -101,6 +643,3 @@ This updated ontology entry provides a comprehensive and current overview of sys
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-
-### Relationships
-- is-subclass-of:: [[Metaverse]]

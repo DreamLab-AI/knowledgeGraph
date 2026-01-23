@@ -1,20 +1,357 @@
 - ### OntologyBlock
+  id:: constitutional-ai-ontology
+  collapsed:: true
+	- ontology:: true
+	- term-id:: AI-0267
+	- preferred-term:: Constitutional AI
+	- source-domain:: mv
+	- status:: draft
+- definition:: A method for training AI assistants to be harmless through self-improvement, using a set of principles or "constitution" to guide behaviour without human labels for harmful outputs. Constitutional AI combines supervised learning for self-critiques and revisions with RL from AI Feedback (RLAIF).
 
-### Definition
-id:: constitutional-ai-ontology collapsed:: true - ontology:: true - term-id:: AI-0267 - preferred-term:: AI-0267
+## Academic Context
 
-Constitutional AI - source-domain:: ai - owl:class:: ai:ConstitutionalAi - status:: draft - public-access:: true - definition:: A method for training AI assistants to be harmless through self-improvement, using a set of principles or "constitution" to guide behaviour without human labels for harmful outputs. Constitutional AI combines supervised learning for self-critiques and revisions with RL from AI Feedback (RLAIF). - #### Relationships - is-subclass-of:: [[ModelArchitecture]] id:: constitutional-ai-relationships collapsed:: true - is-subclass-of:: [[ArtificialIntelligence]]
+Constitutional AI demonstrates that models can be aligned through principled self-improvement using AI-generated feedback, reducing reliance on expensive human labelling whilst improving harmlessness.
 
-Constitutional AI - source-domain:: ai - owl:class:: ai:ConstitutionalAi - status:: draft - public-access:: true - definition:: A method for training AI assistants to be harmless through self-improvement, using a set of principles or "constitution" to guide behaviour without human labels for harmful outputs. Constitutional AI combines supervised learning for self-critiques and revisions with RL from AI Feedback (RLAIF). - #### Relationships - is-subclass-of:: [[ModelArchitecture]] id:: constitutional-ai-relationships collapsed:: true - is-subclass-of:: [[ArtificialIntelligence]]
+**Primary Source**: Bai et al., "Constitutional AI: Harmlessness from AI Feedback", arXiv:2212.08073 (2022)
 
-### Notes
-*Instructional content moved from class definition*
+## Key Characteristics
 
-## Constitutional AI
+- Uses constitutional principles for alignment
+- Self-critique and revision
+- RL from AI Feedback (RLAIF)
+- Reduces human labelling needs
+- Improves harmlessness
+- Scalable alignment approach
 
-<!-- INSTRUCTIONAL CONTENT (moved from inline) -->
-<!--
-Constitutional AI refers to a method for training ai assistants to be harmless through self-improvement, using a set of principles or "constitution" to guide behaviour without human labels for harmful outputs. constitutional ai combines supervised learning for self-critiques and revisions with rl from ai feedback (rlaif).
+## Technical Details
+
+**Two-Stage Process**:
+
+**Stage 1: Supervised Learning**
+1. Generate initial response
+2. Self-critique against constitutional principles
+3. Revise response based on critique
+4. Repeat for multiple principles
+5. Fine-tune on revised responses
+
+**Stage 2: RL from AI Feedback (RLAIF)**
+1. Generate multiple responses per prompt
+2. AI model evaluates which is better using constitution
+3. Train preference model on AI judgments
+4. Use RL (PPO) to optimize policy
+
+## Usage in AI/ML
+
+"Constitutional AI uses supervised learning for self-critiques and revisions, followed by RL from AI Feedback."
+
+## Related Concepts
+
+- **RLHF**: Uses human feedback instead
+- **RLAIF**: AI feedback component
+- **Self-Critique**: Core technique
+- **Harmlessness**: Primary goal
+- **AI Alignment**: Broader objective
+
+## UK English Notes
+
+- "Behaviour" (not "behavior")
+- "Labelling" (not "labeling")
+
+## OWL Functional Syntax
+
+```clojure
+(Declaration (Class :ConstitutionalAI))
+(AnnotationAssertion rdfs:label :ConstitutionalAI "Constitutional AI"@en)
+(AnnotationAssertion rdfs:comment :ConstitutionalAI
+  "A method for training AI assistants through self-improvement using constitutional principles, combining supervised learning with RLAIF."@en)
+(AnnotationAssertion :hasSource :ConstitutionalAI
+  "Bai et al., 'Constitutional AI: Harmlessness from AI Feedback', arXiv:2212.08073 (2022)"@en)
+
+;; Taxonomic relationships
+(SubClassOf :ConstitutionalAI :TrainingTechnique)
+(SubClassOf :ConstitutionalAI :AlignmentMethod)
+
+;; Two-stage process
+(SubClassOf :ConstitutionalAI
+  (ObjectSomeValuesFrom :hasStage :SupervisedSelfCritique))
+(SubClassOf :ConstitutionalAI
+  (ObjectSomeValuesFrom :hasStage :RLAIF))
+
+;; Key components
+(SubClassOf :ConstitutionalAI
+  (ObjectSomeValuesFrom :uses :Constitution))
+(SubClassOf :ConstitutionalAI
+  (ObjectSomeValuesFrom :uses :SelfCritique))
+(SubClassOf :ConstitutionalAI
+  (ObjectSomeValuesFrom :uses :SelfRevision))
+(SubClassOf :ConstitutionalAI
+  (ObjectSomeValuesFrom :uses :AIFeedback))
+
+;; Objectives
+(SubClassOf :ConstitutionalAI
+  (ObjectSomeValuesFrom :achieves :Harmlessness))
+(SubClassOf :ConstitutionalAI
+  (ObjectSomeValuesFrom :reduces :HumanLabellingNeeds))
+
+;; Applied in
+(SubClassOf :Claude
+  (ObjectSomeValuesFrom :trainedWith :ConstitutionalAI))
+
+;; Properties
+(DataPropertyAssertion :usesHumanFeedback :ConstitutionalAI "false"^^xsd:boolean)
+(DataPropertyAssertion :usesAIFeedback :ConstitutionalAI "true"^^xsd:boolean)
+(DataPropertyAssertion :isScalable :ConstitutionalAI "true"^^xsd:boolean)
+(DataPropertyAssertion :hasTwoStages :ConstitutionalAI "true"^^xsd:boolean)
+```
+
+**Last Updated**: 2025-10-27
+**Verification Status**: Verified against Constitutional AI paper (arXiv:2212.08073)
+	- maturity:: draft
+	- owl:class:: mv:ConstitutionalAI
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Constitutional AI
+	- A method for training AI assistants to be harmless through self-improvement, using a set of principles or "constitution" to guide behaviour without human labels for harmful outputs. Constitutional AI combines supervised learning for self-critiques and revisions with RL from AI Feedback (RLAIF).
+
+	- ### Anthropic
+		- Smaller, unsure how much smaller, it's a fork of people from OpenAI, but has radically exceeded earning expectations.
+		- [[Constitutional AI]], like Asimov's laws of robotics
+		- 🟢 [anthropics/sleeper-agents-paper: Contains random samples referenced in the paper "Sleeper Agents: Training Robustly Deceptive LLMs that Persist Through Safety Training". (github.com)](https://github.com/anthropics/sleeper-agents-paper)
+		- {{twitter https://twitter.com/natfriedman/status/1777739863678386268/photo/1}}
+
+	- ### Anthropic
+		- Smaller, unsure how much smaller, it's a fork of people from OpenAI, but has radically exceeded earning expectations.
+		- [[Constitutional AI]], like Asimov's laws of robotics
+		- 🟢 [anthropics/sleeper-agents-paper: Contains random samples referenced in the paper "Sleeper Agents: Training Robustly Deceptive LLMs that Persist Through Safety Training". (github.com)](https://github.com/anthropics/sleeper-agents-paper)
+		- {{twitter https://twitter.com/natfriedman/status/1777739863678386268/photo/1}}
+
+## Academic Context
+
+Constitutional AI demonstrates that models can be aligned through principled self-improvement using AI-generated feedback, reducing reliance on expensive human labelling whilst improving harmlessness.
+
+**Primary Source**: Bai et al., "Constitutional AI: Harmlessness from AI Feedback", arXiv:2212.08073 (2022)
+
+## Key Characteristics
+
+- Uses constitutional principles for alignment
+- Self-critique and revision
+- RL from AI Feedback (RLAIF)
+- Reduces human labelling needs
+- Improves harmlessness
+- Scalable alignment approach
+
+## Technical Details
+
+**Two-Stage Process**:
+
+**Stage 1: Supervised Learning**
+1. Generate initial response
+2. Self-critique against constitutional principles
+3. Revise response based on critique
+4. Repeat for multiple principles
+5. Fine-tune on revised responses
+
+**Stage 2: RL from AI Feedback (RLAIF)**
+1. Generate multiple responses per prompt
+2. AI model evaluates which is better using constitution
+3. Train preference model on AI judgments
+4. Use RL (PPO) to optimize policy
+
+## Usage in AI/ML
+
+"Constitutional AI uses supervised learning for self-critiques and revisions, followed by RL from AI Feedback."
+
+## Related Concepts
+
+- **RLHF**: Uses human feedback instead
+- **RLAIF**: AI feedback component
+- **Self-Critique**: Core technique
+- **Harmlessness**: Primary goal
+- **AI Alignment**: Broader objective
+
+## UK English Notes
+
+- "Behaviour" (not "behavior")
+- "Labelling" (not "labeling")
+
+## OWL Functional Syntax
+
+```clojure
+(Declaration (Class :ConstitutionalAI))
+(AnnotationAssertion rdfs:label :ConstitutionalAI "Constitutional AI"@en)
+(AnnotationAssertion rdfs:comment :ConstitutionalAI
+  "A method for training AI assistants through self-improvement using constitutional principles, combining supervised learning with RLAIF."@en)
+(AnnotationAssertion :hasSource :ConstitutionalAI
+  "Bai et al., 'Constitutional AI: Harmlessness from AI Feedback', arXiv:2212.08073 (2022)"@en)
+
+;; Taxonomic relationships
+(SubClassOf :ConstitutionalAI :TrainingTechnique)
+(SubClassOf :ConstitutionalAI :AlignmentMethod)
+
+;; Two-stage process
+(SubClassOf :ConstitutionalAI
+  (ObjectSomeValuesFrom :hasStage :SupervisedSelfCritique))
+(SubClassOf :ConstitutionalAI
+  (ObjectSomeValuesFrom :hasStage :RLAIF))
+
+;; Key components
+(SubClassOf :ConstitutionalAI
+  (ObjectSomeValuesFrom :uses :Constitution))
+(SubClassOf :ConstitutionalAI
+  (ObjectSomeValuesFrom :uses :SelfCritique))
+(SubClassOf :ConstitutionalAI
+  (ObjectSomeValuesFrom :uses :SelfRevision))
+(SubClassOf :ConstitutionalAI
+  (ObjectSomeValuesFrom :uses :AIFeedback))
+
+;; Objectives
+(SubClassOf :ConstitutionalAI
+  (ObjectSomeValuesFrom :achieves :Harmlessness))
+(SubClassOf :ConstitutionalAI
+  (ObjectSomeValuesFrom :reduces :HumanLabellingNeeds))
+
+;; Applied in
+(SubClassOf :Claude
+  (ObjectSomeValuesFrom :trainedWith :ConstitutionalAI))
+
+;; Properties
+(DataPropertyAssertion :usesHumanFeedback :ConstitutionalAI "false"^^xsd:boolean)
+(DataPropertyAssertion :usesAIFeedback :ConstitutionalAI "true"^^xsd:boolean)
+(DataPropertyAssertion :isScalable :ConstitutionalAI "true"^^xsd:boolean)
+(DataPropertyAssertion :hasTwoStages :ConstitutionalAI "true"^^xsd:boolean)
+```
+
+**Last Updated**: 2025-10-27
+**Verification Status**: Verified against Constitutional AI paper (arXiv:2212.08073)
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# Constitutional AI
+		  
+		  **Term ID**: AI-0267
+		  **Category**: Training Technique
+		  **Ontology Layer**: AI/ML Methodology
+		  
+		  ## Definition
+		  
+		  A method for training AI assistants to be harmless through self-improvement, using a set of principles or "constitution" to guide behaviour without human labels for harmful outputs. Constitutional AI combines supervised learning for self-critiques and revisions with RL from AI Feedback (RLAIF).
+		  
+		  ## Academic Context
+		  
+		  Constitutional AI demonstrates that models can be aligned through principled self-improvement using AI-generated feedback, reducing reliance on expensive human labelling whilst improving harmlessness.
+		  
+		  **Primary Source**: Bai et al., "Constitutional AI: Harmlessness from AI Feedback", arXiv:2212.08073 (2022)
+		  
+		  ## Key Characteristics
+		  
+		  - Uses constitutional principles for alignment
+		  - Self-critique and revision
+		  - RL from AI Feedback (RLAIF)
+		  - Reduces human labelling needs
+		  - Improves harmlessness
+		  - Scalable alignment approach
+		  
+		  ## Technical Details
+		  
+		  **Two-Stage Process**:
+		  
+		  **Stage 1: Supervised Learning**
+		  1. Generate initial response
+		  2. Self-critique against constitutional principles
+		  3. Revise response based on critique
+		  4. Repeat for multiple principles
+		  5. Fine-tune on revised responses
+		  
+		  **Stage 2: RL from AI Feedback (RLAIF)**
+		  1. Generate multiple responses per prompt
+		  2. AI model evaluates which is better using constitution
+		  3. Train preference model on AI judgments
+		  4. Use RL (PPO) to optimize policy
+		  
+		  ## Usage in AI/ML
+		  
+		  "Constitutional AI uses supervised learning for self-critiques and revisions, followed by RL from AI Feedback."
+		  
+		  ## Related Concepts
+		  
+		  - **RLHF**: Uses human feedback instead
+		  - **RLAIF**: AI feedback component
+		  - **Self-Critique**: Core technique
+		  - **Harmlessness**: Primary goal
+		  - **AI Alignment**: Broader objective
+		  
+		  ## UK English Notes
+		  
+		  - "Behaviour" (not "behavior")
+		  - "Labelling" (not "labeling")
+		  
+		  ## OWL Functional Syntax
+		  
+		  ```clojure
+		  (Declaration (Class :ConstitutionalAI))
+		  (AnnotationAssertion rdfs:label :ConstitutionalAI "Constitutional AI"@en)
+		  (AnnotationAssertion rdfs:comment :ConstitutionalAI
+		    "A method for training AI assistants through self-improvement using constitutional principles, combining supervised learning with RLAIF."@en)
+		  (AnnotationAssertion :hasSource :ConstitutionalAI
+		    "Bai et al., 'Constitutional AI: Harmlessness from AI Feedback', arXiv:2212.08073 (2022)"@en)
+		  
+		  ;; Taxonomic relationships
+		  (SubClassOf :ConstitutionalAI :TrainingTechnique)
+		  (SubClassOf :ConstitutionalAI :AlignmentMethod)
+		  
+		  ;; Two-stage process
+		  (SubClassOf :ConstitutionalAI
+		    (ObjectSomeValuesFrom :hasStage :SupervisedSelfCritique))
+		  (SubClassOf :ConstitutionalAI
+		    (ObjectSomeValuesFrom :hasStage :RLAIF))
+		  
+		  ;; Key components
+		  (SubClassOf :ConstitutionalAI
+		    (ObjectSomeValuesFrom :uses :Constitution))
+		  (SubClassOf :ConstitutionalAI
+		    (ObjectSomeValuesFrom :uses :SelfCritique))
+		  (SubClassOf :ConstitutionalAI
+		    (ObjectSomeValuesFrom :uses :SelfRevision))
+		  (SubClassOf :ConstitutionalAI
+		    (ObjectSomeValuesFrom :uses :AIFeedback))
+		  
+		  ;; Objectives
+		  (SubClassOf :ConstitutionalAI
+		    (ObjectSomeValuesFrom :achieves :Harmlessness))
+		  (SubClassOf :ConstitutionalAI
+		    (ObjectSomeValuesFrom :reduces :HumanLabellingNeeds))
+		  
+		  ;; Applied in
+		  (SubClassOf :Claude
+		    (ObjectSomeValuesFrom :trainedWith :ConstitutionalAI))
+		  
+		  ;; Properties
+		  (DataPropertyAssertion :usesHumanFeedback :ConstitutionalAI "false"^^xsd:boolean)
+		  (DataPropertyAssertion :usesAIFeedback :ConstitutionalAI "true"^^xsd:boolean)
+		  (DataPropertyAssertion :isScalable :ConstitutionalAI "true"^^xsd:boolean)
+		  (DataPropertyAssertion :hasTwoStages :ConstitutionalAI "true"^^xsd:boolean)
+		  ```
+		  
+		  **Last Updated**: 2025-10-27
+		  **Verification Status**: Verified against Constitutional AI paper (arXiv:2212.08073)
+		  
+		  ```
+
+- public-access:: true
+	- definition:: A method for training AI assistants to be harmless through self-improvement, using a set of principles or "constitution" to guide behaviour without human labels for harmful outputs. Constitutional AI combines supervised learning for self-critiques and revisions with RL from AI Feedback (RLAIF).
+
+
+
+## Academic Context
+
+- Constitutional AI is a methodology designed to align AI systems with human values by embedding a formal set of ethical and behavioural principles—referred to as a "constitution"—directly into the AI's training process.
+  - This approach emerged from research at Anthropic, aiming to produce AI assistants that are helpful, harmless, and honest without relying extensively on human-labelled data for harmful outputs.
+  - The training involves a two-phase process: supervised learning where the AI critiques and revises its own outputs guided by constitutional principles, followed by reinforcement learning from AI feedback (RLAIF), which uses AI-generated preference models as reward signals.
+  - Academically, Constitutional AI builds on foundations in AI alignment, reinforcement learning, and ethical AI, contributing to more scalable and transparent control over AI behaviour.
+
+## Current Landscape (2025)
 
 - Constitutional AI has seen growing adoption in industry, particularly in AI safety and alignment research, with Anthropic's Claude model as a prominent example.
   - Major technology companies and AI platforms increasingly integrate constitutional principles to improve AI safety and reduce harmful or biased outputs.
@@ -23,21 +360,10 @@ Constitutional AI refers to a method for training ai assistants to be harmless t
 - Limitations remain in fully capturing complex human values and avoiding subtle biases; ongoing refinement of constitutional principles and training methods is necessary.
 - Standards and frameworks for ethical AI increasingly reference constitutional approaches as part of best practices for AI governance and compliance.
 
--->
-
-## Technical Details
-## Technical Details
-
-- **Id**: constitutional-ai-ontology
-- **Collapsed**: true
-- **Source Domain**: ai
-- **Status**: draft
-- **Public Access**: true
-
 ## Research & Literature
 
 - Key academic paper:
-  - Bai, Y., et al. (2022). *Constitutional AI: Harmlessness from AI Feedback*. Anthropic Research. Available at arXiv:2205.10568.
+  - Bai, Y., et al. (2022). *Constitutional AI: Harmlessness from AI Feedback*. Anthropic Research. Available at arXiv:2205.10568.  
     This foundational work details the methodology of Constitutional AI, including supervised and reinforcement learning phases, and demonstrates its effectiveness in training harmless AI assistants.
 - Ongoing research explores:
   - Expanding constitutional principles to cover broader ethical domains.
@@ -70,19 +396,16 @@ Constitutional AI refers to a method for training ai assistants to be harmless t
 
 ## References
 
-<!-- INSTRUCTIONAL CONTENT (moved from inline) -->
-<!--
-1. Bai, Y., et al. (2022). *Constitutional AI: Harmlessness from AI Feedback*. Anthropic Research. arXiv:2205.10568.
-2. Wolters Kluwer Arbitration Blog. (2025). *What is Constitutional AI and Why Does it Matter for International Arbitration?* June 7, 2025.
-3. ClickIT Tech. (2025). *What Is Constitutional AI and Why Does It Matter in 2025*.
-4. GigaSpaces AI. (2025). *What Is Constitutional AI? How It Works & Benefits*.
-5. GeeksforGeeks. (2025). *Constitutional AI*.
-6. Constitutional.ai. (2023). *Tracking Anthropic's AI Revolution*.
+1. Bai, Y., et al. (2022). *Constitutional AI: Harmlessness from AI Feedback*. Anthropic Research. arXiv:2205.10568.  
+2. Wolters Kluwer Arbitration Blog. (2025). *What is Constitutional AI and Why Does it Matter for International Arbitration?* June 7, 2025.  
+3. ClickIT Tech. (2025). *What Is Constitutional AI and Why Does It Matter in 2025*.  
+4. GigaSpaces AI. (2025). *What Is Constitutional AI? How It Works & Benefits*.  
+5. GeeksforGeeks. (2025). *Constitutional AI*.  
+6. Constitutional.ai. (2023). *Tracking Anthropic's AI Revolution*.  
+
 (For brevity, URLs are omitted but available upon request.)
 
--->
 
-## Metadata
 ## Metadata
 
 - **Last Updated**: 2025-11-11

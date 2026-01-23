@@ -2,26 +2,19 @@
   id:: digital-humans-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0926
+	- term-id:: ME-0009
 	- preferred-term:: Digital Humans
 	- source-domain:: mv
-	- status:: emerging
-	- public-access:: true
-
-
-
-
-### OWL Classification
+	- status:: emerging-technology
+    - public-access:: true
+	- definition:: [Generated from Gartner emerging tech analysis]
+	- maturity:: emerging
 	- owl:class:: mv:DigitalHumans
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-
-### Domain & Architecture
 	- belongsToDomain:: [[MetaverseDomain]]
-	- maturity:: emerging
+	- category:: Spatial & Immersive
 
-### Relationships
-- is-subclass-of:: [[Metaverse]]
 
 ## Overview
 
@@ -53,12 +46,14 @@
     - Ethical considerations, such as data privacy and the potential for deception, will become increasingly important as digital humans become more lifelike and pervasive.
     - The UK, particularly regions like the North, is poised to remain at the forefront of innovation in digital humans and immersive technologies, driven by academic research, industry collaboration, and government support.
 
+
 ## UK Context
 
 - British contributions and implementations
   - Research institutions and programmes
   - Industry adoption
   - North England innovation (where relevant)
+
 
 ## Metadata
 
@@ -67,11 +62,4 @@
 - **Category**: Spatial & Immersive
 - **Status**: Emerging Technology
 
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
 

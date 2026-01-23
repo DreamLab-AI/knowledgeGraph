@@ -4,10 +4,10 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9952
-	- source-domain:: mv
+	- source-domain:: artificial-intelligence
 	- preferred-term:: Machine Learning Models
 	- status:: active
-	- owl:class:: mv:MachineLearningModels
+	- owl:class:: ai:MachineLearningModels
 	- belongsToDomain:: [[metaverse]]
 	- definition:: Categories and types of machine learning algorithms including classification models, regression models, clustering algorithms, and neural networks, each designed for specific prediction and pattern recognition tasks.
 	- #### Relationships

@@ -7,7 +7,6 @@
     "Feature Store",
     "ETL Pipeline",
     "Data Lake",
-    "Token Embedding",
     "TPU",
     "AI-GroundedDomain",
     "Neuromorphic Chip",
@@ -21,13 +20,13 @@
     "AIDomain"
   ],
   "wiki_links": [
-    "Metaverse Technology",
-    "Telecollaboration",
-    "Robotics Systems",
-    "AIDomain",
     "Technology Domain",
     "Blockchain Technology",
-    "Artificial Intelligence"
+    "Telecollaboration",
+    "Artificial Intelligence",
+    "AIDomain",
+    "Metaverse Technology",
+    "Robotics Systems"
   ],
   "ontology": {
     "term_id": "AI-7007",

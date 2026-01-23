@@ -12,19 +12,16 @@
     "Federated Credential Exchange",
     "Tokenization",
     "Digital Identity Management",
-    "Decentralized Identifiers",
-    "Data Protection",
-    "Web3",
-    "Decentralised Web"
+    "Data Protection"
   ],
   "wiki_links": [
-    "Cryptography",
-    "Asymmetric Encryption",
+    "Cryptographic Key Management",
     "Random Number Generation",
+    "Asymmetric Encryption",
+    "Key Derivation Function",
     "Symmetric Encryption",
     "Digital Signature",
-    "Key Derivation Function",
-    "Cryptographic Key Management"
+    "Cryptography"
   ],
   "ontology": {
     "term_id": "BC-7006",

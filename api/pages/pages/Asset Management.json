@@ -13,19 +13,18 @@
     "Provenance Verification",
     "Asset Trading",
     "ETSI_Domain_Creative_Media",
-    "Storage Layer",
-    "VirtualWorld"
+    "Storage Layer"
   ],
   "wiki_links": [
-    "Institutional Investment",
-    "Traditional Finance",
     "Custody",
-    "Decentralized Finance",
-    "Portfolio Management",
-    "Financial Services",
-    "Financial Technology",
     "Risk Management",
-    "Tokenization"
+    "Portfolio Management",
+    "Institutional Investment",
+    "Tokenization",
+    "Financial Technology",
+    "Decentralized Finance",
+    "Financial Services",
+    "Traditional Finance"
   ],
   "ontology": {
     "term_id": "NGM-7014",

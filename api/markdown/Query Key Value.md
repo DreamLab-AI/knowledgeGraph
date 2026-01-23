@@ -4,20 +4,357 @@
 	- ontology:: true
 	- term-id:: AI-0200
 	- preferred-term:: Query Key Value
-	- source-domain:: ai
-	- owl:class:: ai:QueryKeyValue
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
-	- definition:: The three fundamental components in attention mechanisms: queries determine what information to seek, keys determine what information is available, and values contain the actual information to be retrieved.
-	- #### Relationships
-- is-subclass-of:: [[ModelArchitecture]]
-	  id:: query-key-value-relationships
+- definition:: The three fundamental components in attention mechanisms: queries determine what information to seek, keys determine what information is available, and values contain the actual information to be retrieved.
+
+## Characteristics
+
+- **Query (Q)**: Representation of the current token seeking information
+- **Key (K)**: Representation used to match against queries
+- **Value (V)**: The actual content to be retrieved
+- **Linear Projections**: Typically created through learnable linear transformations
+
+## Academic Foundations
+
+**Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
+
+**Conceptual Origin**: Inspired by information retrieval systems where queries search over keys to retrieve values.
+
+## Technical Context
+
+In self-attention, Q, K, and V are all derived from the same input through different linear projections. In cross-attention, queries come from one sequence whilst keys and values come from another.
+
+## Ontological Relationships
+
+- **Broader Term**: Attention Mechanism Components
+- **Related Terms**: Scaled Dot-Product Attention, Self-Attention, Cross-Attention
+- **Component Of**: Transformer Architecture
+
+## Usage Context
+
+"The query-key-value framework enables flexible information retrieval where queries determine relevance to keys, and values provide the retrieved content."
+
+## OWL Functional Syntax
+
+```clojure
+(Declaration (Class :QueryKeyValueFramework))
+(AnnotationAssertion rdfs:label :QueryKeyValueFramework "Query-Key-Value Framework"@en)
+(AnnotationAssertion rdfs:comment :QueryKeyValueFramework
+  "Three fundamental components in attention: queries seek information, keys match queries, values contain retrievable content."@en)
+(AnnotationAssertion :hasSource :QueryKeyValueFramework
+  "Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762 (2017)"@en)
+
+;; Component declarations
+(Declaration (Class :QueryVector))
+(Declaration (Class :KeyVector))
+(Declaration (Class :ValueVector))
+
+;; Taxonomic relationships
+(SubClassOf :QueryVector :AttentionComponent)
+(SubClassOf :KeyVector :AttentionComponent)
+(SubClassOf :ValueVector :AttentionComponent)
+
+;; Framework composition
+(SubClassOf :QueryKeyValueFramework
+  (ObjectSomeValuesFrom :hasComponent :QueryVector))
+(SubClassOf :QueryKeyValueFramework
+  (ObjectSomeValuesFrom :hasComponent :KeyVector))
+(SubClassOf :QueryKeyValueFramework
+  (ObjectSomeValuesFrom :hasComponent :ValueVector))
+
+;; Component roles and relationships
+(AnnotationAssertion rdfs:comment :QueryVector
+  "Representation seeking information from the sequence"@en)
+(AnnotationAssertion rdfs:comment :KeyVector
+  "Representation used to match against queries for relevance"@en)
+(AnnotationAssertion rdfs:comment :ValueVector
+  "Actual information content to be retrieved"@en)
+
+;; Creation mechanism
+(SubClassOf :QueryKeyValueFramework
+  (ObjectSomeValuesFrom :createdVia :LinearProjection))
+
+;; Usage contexts
+(DataPropertyAssertion :usedInSelfAttention :QueryKeyValueFramework "true"^^xsd:boolean)
+(DataPropertyAssertion :usedInCrossAttention :QueryKeyValueFramework "true"^^xsd:boolean)
+
+;; Self-attention constraint
+(SubClassOf :SelfAttention
+  (ObjectAllValuesFrom :derivesQKVFrom :SameInputSequence))
+
+;; Cross-attention constraint
+(SubClassOf :CrossAttention
+  (ObjectAllValuesFrom :derivesQueriesFrom :TargetSequence))
+(SubClassOf :CrossAttention
+  (ObjectAllValuesFrom :derivesKeysValuesFrom :SourceSequence))
+```
+
+## References
+
+- Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
+
+---
+
+*Ontology Term managed by AI-Grounded Ontology Working Group*
+*UK English Spelling Standards Applied*
+	- maturity:: draft
+	- owl:class:: mv:QueryKeyValue
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Query Key Value
+	- The three fundamental components in attention mechanisms: queries determine what information to seek, keys determine what information is available, and values contain the actual information to be retrieved.
+
+			- ### Interoperability
+				- Metaverse instances within the Mycelia should be able to communicate and exchange information, assets, and value seamlessly.
+				- This requires:
+					- Standardized protocols
+					- Ontologies
+					- Translation mechanisms
+
+		- ## Key Components
+
+			- ### Interoperability
+				- Metaverse instances within the Mycelia should be able to communicate and exchange information, assets, and value seamlessly.
+				- This requires:
+					- Standardized protocols
+					- Ontologies
+					- Translation mechanisms
+
+		- ## Key Components
+
+- ## Risks and mitigations
+
+- ## Risks and mitigations
+
+- ## Benefits of Gold as a commodity
+
+- ### The Fallout of Being "Caught"
+	- If it becomes apparent that the ETFs are significantly unbacked by actual Bitcoin, or if there's a regulatory or market shift that forces a reconciliation between paper and physical Bitcoin, the fallout could be dramatic. The immediate effect would likely be a significant price correction as the market attempts to realign the perceived value of Bitcoin with its actual available supply. This correction could be further amplified by panic selling, leading to a crash in both the paper and physical Bitcoin markets.
+
+- ### The Fallout of Being "Caught"
+	- If it becomes apparent that the ETFs are significantly unbacked by actual Bitcoin, or if there's a regulatory or market shift that forces a reconciliation between paper and physical Bitcoin, the fallout could be dramatic. The immediate effect would likely be a significant price correction as the market attempts to realign the perceived value of Bitcoin with its actual available supply. This correction could be further amplified by panic selling, leading to a crash in both the paper and physical Bitcoin markets.
+
+- ### The Fallout of Being "Caught"
+	- If it becomes apparent that the ETFs are significantly unbacked by actual Bitcoin, or if there's a regulatory or market shift that forces a reconciliation between paper and physical Bitcoin, the fallout could be dramatic. The immediate effect would likely be a significant price correction as the market attempts to realign the perceived value of Bitcoin with its actual available supply. This correction could be further amplified by panic selling, leading to a crash in both the paper and physical Bitcoin markets.
+
+- ### The Fallout of Being "Caught"
+	- If it becomes apparent that the ETFs are significantly unbacked by actual Bitcoin, or if there's a regulatory or market shift that forces a reconciliation between paper and physical Bitcoin, the fallout could be dramatic. The immediate effect would likely be a significant price correction as the market attempts to realign the perceived value of Bitcoin with its actual available supply. This correction could be further amplified by panic selling, leading to a crash in both the paper and physical Bitcoin markets.
+
+## Characteristics
+
+- **Query (Q)**: Representation of the current token seeking information
+- **Key (K)**: Representation used to match against queries
+- **Value (V)**: The actual content to be retrieved
+- **Linear Projections**: Typically created through learnable linear transformations
+
+## Academic Foundations
+
+**Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
+
+**Conceptual Origin**: Inspired by information retrieval systems where queries search over keys to retrieve values.
+
+## Technical Context
+
+In self-attention, Q, K, and V are all derived from the same input through different linear projections. In cross-attention, queries come from one sequence whilst keys and values come from another.
+
+## Ontological Relationships
+
+- **Broader Term**: Attention Mechanism Components
+- **Related Terms**: Scaled Dot-Product Attention, Self-Attention, Cross-Attention
+- **Component Of**: Transformer Architecture
+
+## Usage Context
+
+"The query-key-value framework enables flexible information retrieval where queries determine relevance to keys, and values provide the retrieved content."
+
+## OWL Functional Syntax
+
+```clojure
+(Declaration (Class :QueryKeyValueFramework))
+(AnnotationAssertion rdfs:label :QueryKeyValueFramework "Query-Key-Value Framework"@en)
+(AnnotationAssertion rdfs:comment :QueryKeyValueFramework
+  "Three fundamental components in attention: queries seek information, keys match queries, values contain retrievable content."@en)
+(AnnotationAssertion :hasSource :QueryKeyValueFramework
+  "Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762 (2017)"@en)
+
+;; Component declarations
+(Declaration (Class :QueryVector))
+(Declaration (Class :KeyVector))
+(Declaration (Class :ValueVector))
+
+;; Taxonomic relationships
+(SubClassOf :QueryVector :AttentionComponent)
+(SubClassOf :KeyVector :AttentionComponent)
+(SubClassOf :ValueVector :AttentionComponent)
+
+;; Framework composition
+(SubClassOf :QueryKeyValueFramework
+  (ObjectSomeValuesFrom :hasComponent :QueryVector))
+(SubClassOf :QueryKeyValueFramework
+  (ObjectSomeValuesFrom :hasComponent :KeyVector))
+(SubClassOf :QueryKeyValueFramework
+  (ObjectSomeValuesFrom :hasComponent :ValueVector))
+
+;; Component roles and relationships
+(AnnotationAssertion rdfs:comment :QueryVector
+  "Representation seeking information from the sequence"@en)
+(AnnotationAssertion rdfs:comment :KeyVector
+  "Representation used to match against queries for relevance"@en)
+(AnnotationAssertion rdfs:comment :ValueVector
+  "Actual information content to be retrieved"@en)
+
+;; Creation mechanism
+(SubClassOf :QueryKeyValueFramework
+  (ObjectSomeValuesFrom :createdVia :LinearProjection))
+
+;; Usage contexts
+(DataPropertyAssertion :usedInSelfAttention :QueryKeyValueFramework "true"^^xsd:boolean)
+(DataPropertyAssertion :usedInCrossAttention :QueryKeyValueFramework "true"^^xsd:boolean)
+
+;; Self-attention constraint
+(SubClassOf :SelfAttention
+  (ObjectAllValuesFrom :derivesQKVFrom :SameInputSequence))
+
+;; Cross-attention constraint
+(SubClassOf :CrossAttention
+  (ObjectAllValuesFrom :derivesQueriesFrom :TargetSequence))
+(SubClassOf :CrossAttention
+  (ObjectAllValuesFrom :derivesKeysValuesFrom :SourceSequence))
+```
+
+## References
+
+- Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
+
+---
+
+*Ontology Term managed by AI-Grounded Ontology Working Group*
+*UK English Spelling Standards Applied*
+	-
+	- ### Original Content
 	  collapsed:: true
-		- is-subclass-of:: [[NeuralNetwork]]
+		- ```
+# Query Key Value
+		  
+		  **Term ID**: AI-0200
+		  **Category**: Architecture Component
+		  **Ontology Version**: 1.0
+		  **Last Updated**: 2025-10-27
+		  
+		  ## Definition
+		  
+		  The three fundamental components in attention mechanisms: queries determine what information to seek, keys determine what information is available, and values contain the actual information to be retrieved.
+		  
+		  ## Characteristics
+		  
+		  - **Query (Q)**: Representation of the current token seeking information
+		  - **Key (K)**: Representation used to match against queries
+		  - **Value (V)**: The actual content to be retrieved
+		  - **Linear Projections**: Typically created through learnable linear transformations
+		  
+		  ## Academic Foundations
+		  
+		  **Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
+		  
+		  **Conceptual Origin**: Inspired by information retrieval systems where queries search over keys to retrieve values.
+		  
+		  ## Technical Context
+		  
+		  In self-attention, Q, K, and V are all derived from the same input through different linear projections. In cross-attention, queries come from one sequence whilst keys and values come from another.
+		  
+		  ## Ontological Relationships
+		  
+		  - **Broader Term**: Attention Mechanism Components
+		  - **Related Terms**: Scaled Dot-Product Attention, Self-Attention, Cross-Attention
+		  - **Component Of**: Transformer Architecture
+		  
+		  ## Usage Context
+		  
+		  "The query-key-value framework enables flexible information retrieval where queries determine relevance to keys, and values provide the retrieved content."
+		  
+		  ## OWL Functional Syntax
+		  
+		  ```clojure
+		  (Declaration (Class :QueryKeyValueFramework))
+		  (AnnotationAssertion rdfs:label :QueryKeyValueFramework "Query-Key-Value Framework"@en)
+		  (AnnotationAssertion rdfs:comment :QueryKeyValueFramework
+		    "Three fundamental components in attention: queries seek information, keys match queries, values contain retrievable content."@en)
+		  (AnnotationAssertion :hasSource :QueryKeyValueFramework
+		    "Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762 (2017)"@en)
+		  
+		  ;; Component declarations
+		  (Declaration (Class :QueryVector))
+		  (Declaration (Class :KeyVector))
+		  (Declaration (Class :ValueVector))
+		  
+		  ;; Taxonomic relationships
+		  (SubClassOf :QueryVector :AttentionComponent)
+		  (SubClassOf :KeyVector :AttentionComponent)
+		  (SubClassOf :ValueVector :AttentionComponent)
+		  
+		  ;; Framework composition
+		  (SubClassOf :QueryKeyValueFramework
+		    (ObjectSomeValuesFrom :hasComponent :QueryVector))
+		  (SubClassOf :QueryKeyValueFramework
+		    (ObjectSomeValuesFrom :hasComponent :KeyVector))
+		  (SubClassOf :QueryKeyValueFramework
+		    (ObjectSomeValuesFrom :hasComponent :ValueVector))
+		  
+		  ;; Component roles and relationships
+		  (AnnotationAssertion rdfs:comment :QueryVector
+		    "Representation seeking information from the sequence"@en)
+		  (AnnotationAssertion rdfs:comment :KeyVector
+		    "Representation used to match against queries for relevance"@en)
+		  (AnnotationAssertion rdfs:comment :ValueVector
+		    "Actual information content to be retrieved"@en)
+		  
+		  ;; Creation mechanism
+		  (SubClassOf :QueryKeyValueFramework
+		    (ObjectSomeValuesFrom :createdVia :LinearProjection))
+		  
+		  ;; Usage contexts
+		  (DataPropertyAssertion :usedInSelfAttention :QueryKeyValueFramework "true"^^xsd:boolean)
+		  (DataPropertyAssertion :usedInCrossAttention :QueryKeyValueFramework "true"^^xsd:boolean)
+		  
+		  ;; Self-attention constraint
+		  (SubClassOf :SelfAttention
+		    (ObjectAllValuesFrom :derivesQKVFrom :SameInputSequence))
+		  
+		  ;; Cross-attention constraint
+		  (SubClassOf :CrossAttention
+		    (ObjectAllValuesFrom :derivesQueriesFrom :TargetSequence))
+		  (SubClassOf :CrossAttention
+		    (ObjectAllValuesFrom :derivesKeysValuesFrom :SourceSequence))
+		  ```
+		  
+		  ## References
+		  
+		  - Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
+		  
+		  ---
+		  
+		  *Ontology Term managed by AI-Grounded Ontology Working Group*
+		  *UK English Spelling Standards Applied*
+		  
+		  ```
 
-## Query Key Value
+- public-access:: true
+	- definition:: The three fundamental components in attention mechanisms: queries determine what information to seek, keys determine what information is available, and values contain the actual information to be retrieved.
 
-Query Key Value refers to the three fundamental components in attention mechanisms: queries determine what information to seek, keys determine what information is available, and values contain the actual information to be retrieved.
+
+
+## Academic Context
+
+- Attention mechanisms are foundational to modern deep learning architectures, particularly in natural language processing (NLP) and computer vision.
+  - The Query, Key, and Value (QKV) framework was popularised by Vaswani et al. (2017) in the seminal "Attention Is All You Need" paper, which introduced the Transformer architecture.
+  - Queries represent the current focus or "question" posed by the model about the input; Keys act as labels or identifiers for all available information; Values contain the actual content to be retrieved based on relevance.
+  - The interaction between Query and Key vectors determines attention weights, which are then applied to Value vectors to produce context-aware outputs.
+- The academic foundation rests on linear algebra and probabilistic modelling, with learnable weight matrices \(W^Q\), \(W^K\), and \(W^V\) projecting input embeddings into these spaces.
+  - This mechanism enables models to capture complex dependencies and relationships within sequences without relying on recurrent structures.
+
+## Current Landscape (2025)
 
 - Industry adoption of QKV-based attention mechanisms is ubiquitous in large language models (LLMs), machine translation, summarisation, and beyond.
   - Multi-head attention, an extension of the QKV mechanism, allows simultaneous focus on multiple aspects of input data, enhancing model expressivity and robustness.
@@ -30,14 +367,6 @@ Query Key Value refers to the three fundamental components in attention mechanis
 - Standards and frameworks:
   - Transformer-based architectures leveraging QKV attention are standardised in popular libraries such as Hugging Face Transformers and TensorFlow.
   - Open research continues to refine attention mechanisms for efficiency and interpretability.
-
-## Technical Details
-
-- **Id**: query-key-value-ontology
-- **Collapsed**: true
-- **Source Domain**: ai
-- **Status**: draft
-- **Public Access**: true
 
 ## Research & Literature
 
@@ -80,6 +409,7 @@ Query Key Value refers to the three fundamental components in attention mechanis
 3. ApX Machine Learning. (n.d.). Query, and Value Vectors in Self-Attention. Retrieved 2025, from https://apxml.com/courses/introduction-to-transformer-models/chapter-2-self-attention-multi-head-attention/query-key-value-vectors
 4. Raschka, S. (2023). Understanding and Coding the Self-Attention Mechanism of Large Language Models. Retrieved 2025, from https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html
 5. IBM. (n.d.). What is an attention mechanism? Retrieved 2025, from https://www.ibm.com/think/topics/attention-mechanism
+
 
 ## Metadata
 

@@ -9,10 +9,10 @@
   "wiki_links": [
     "Search Algorithms",
     "Graph Theory",
+    "Pathfinding",
     "Priority Queue",
     "Dijkstra's Algorithm",
     "Heuristic Methods",
-    "Pathfinding",
     "Route Planning"
   ],
   "ontology": {

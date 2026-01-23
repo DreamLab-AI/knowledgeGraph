@@ -9,7 +9,6 @@
     "Regulatory Framework",
     "Cross-Border Data Transfer Rule",
     "Accessibility Audit Tool",
-    "BC-0446-supply-chain-traceability",
     "Testing Process",
     "Threat Surface Map",
     "ETSI_Domain_Data_Management___Ethics",
@@ -20,13 +19,13 @@
     "Compliance Audit Trail"
   ],
   "wiki_links": [
-    "EU MiCA Regulation",
-    "Regulatory Framework",
-    "Transaction Monitoring",
-    "Identity Management",
     "Blockchain",
+    "EU MiCA Regulation",
+    "Smart Contracts",
     "KYC/AML Requirements",
-    "Smart Contracts"
+    "Transaction Monitoring",
+    "Regulatory Framework",
+    "Identity Management"
   ],
   "ontology": {
     "term_id": "NGM-7004",

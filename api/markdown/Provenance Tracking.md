@@ -4,27 +4,19 @@
 	- ontology:: true
 	- term-id:: BC-0441
 	- preferred-term:: Provenance Tracking
-	- source-domain:: mv
+	- source-domain:: bc
 	- status:: complete
-	- public-access:: true
-
-
-
-
-### OWL Classification
+    - public-access:: true
+	- authority-score:: 0.89
+	- definition:: Blockchain-based systems employing immutable distributed ledgers, IoT sensors, and smart contracts to create comprehensive audit trails tracking product journeys from origin to consumer, enabling 99.97% reduction in tracing time (7 days to 2.2 seconds), combating £30 billion counterfeit markets, and supporting applications across food safety (Walmart, IBM Food Trust), luxury goods (De Beers Tracr), pharmaceuticals, and ethical sourcing verification.
+	- maturity:: mature
 	- owl:class:: bc:ProvenanceTracking
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-
-### Domain & Architecture
 	- belongsToDomain:: [[BlockchainDomain]]
-	- maturity:: mature
 
-### Relationships
-- is-subclass-of:: [[Metaverse]]
 
-### Quality Metrics
-	- authority-score:: 0.89
+# Improved Ontology Entry: Provenance Tracking
 
 ## Academic Context
 
@@ -41,13 +33,13 @@
   - Supply chain and logistics remain natural fits for blockchain implementation, where immutable real-time tracking delivers both practical and measurable value
   - Established platforms include IBM Food Trust (food safety), De Beers Tracr (luxury goods authentication), and Figure Lending (non-bank financial services with 160,000+ households served)
   - The Provenance Chain Network secured US Patent 12,387,226 (August 2025) for 'object story' technology, enabling end-to-end lifecycle tracking across global supply chains with cryptographically linked evidence
-
+  
 - Technical capabilities and limitations
   - Data immutability presents a double-edged sword: whilst ensuring tamper-proof records, poor-quality input data becomes permanently embedded in the ledger, potentially perpetuating inaccuracies in provenance identification
   - AI-powered data reconciliation increasingly addresses input quality challenges through intelligent fraud detection and suspicious transaction identification before blockchain upload
   - Continuous data integration remains essential for real-time traceability; solutions must seamlessly integrate with legacy systems across multiple network participants
   - Traceability systems now enable product source data backtracking in seconds rather than days, though this depends critically on comprehensive, continuous supply chain data collection
-
+  
 - Standards and frameworks
   - Emerging frameworks emphasise cybersecurity, data governance, and interoperability across heterogeneous supply chain networks
   - Compliance considerations include ESIGN/UETA standards for financial applications and regulatory requirements in healthcare and pharmaceuticals
@@ -67,7 +59,7 @@
   - AccelData (2025): Tracking Data Provenance to Ensure Data Integrity and Compliance—comprehensive examination of data provenance definitions, distinguishing provenance from data lineage
   - MTLC (2025): The State of Blockchain Adoption in the Enterprise—contemporary assessment of enterprise blockchain maturity, emphasising selective deployment for transparency and traceability use cases
   - Auburn University (2025): Reward-based Blockchain Infrastructure for 3D IC Supply Chain—academic investigation of blockchain application in semiconductor supply chain provenance
-
+  
 - Ongoing research directions
   - Integration of AI and machine learning for real-time data quality assurance and anomaly detection
   - Interoperability standards for cross-chain provenance verification
@@ -81,24 +73,27 @@
   - Increasing institutional adoption driven by measurable compliance benefits and reduced administrative overhead
   - Integration of IoT sensor networks with blockchain infrastructure for automated, real-time provenance capture
   - Expansion beyond manufacturing into services, intellectual property, and digital asset authentication
-
+  
 - Anticipated challenges
   - Maintaining data quality at scale across heterogeneous supply chain participants with varying technical capabilities
   - Balancing immutability with the need for data correction and dispute resolution mechanisms
   - Achieving genuine interoperability between competing blockchain platforms and legacy systems
   - Managing cybersecurity risks in distributed networks with multiple access points
-
+  
 - Research priorities
   - Development of robust data governance frameworks for blockchain-based provenance systems
   - Investigation of hybrid approaches combining blockchain with traditional databases for optimal performance
   - Standardisation of provenance metadata schemas across industries
   - Evaluation of total cost of ownership versus traditional traceability methods
 
+
 ## Metadata
+
 
 - **Migration Status**: Ontology block enriched on 2025-11-12
 - **Last Updated**: 2025-11-12
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
 

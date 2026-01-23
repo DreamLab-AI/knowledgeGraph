@@ -1,18 +1,116 @@
-id:: partition-attack-ontology
-
 - ### OntologyBlock
-  id:: BC-0084-partition-attack
-  - ontology:: true
-  - public-access:: true
-  - term-id:: DT-0084
-  - preferred-term:: Partition Attack
-  - source-domain:: bc
-  - owl:class:: bc:PartitionAttack
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-  - status:: complete
-  - definition:: Network segmentation attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+  id:: partition-attack-ontology
+  collapsed:: true
 
-### Relationships
-- uses-data-structure:: [[Blockchain Network]]
-- is-subclass-of:: [[Networkcomponent]]
-- is-subclass-of:: [[BlockchainEntity]]
+  - **Identification**
+    - public-access:: true
+    - ontology:: true
+    - term-id:: BC-0084
+    - preferred-term:: Partition Attack
+    - source-domain:: bc
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-10-28
+
+  - **Definition**
+    - definition:: Network segmentation attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+    - maturity:: mature
+    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: bc:PartitionAttack
+    - owl:physicality:: VirtualEntity
+    - owl:role:: Object
+    - owl:inferred-class:: bc:VirtualObject
+    - belongsToDomain:: [[CryptographicDomain]]
+    - implementedInLayer:: [[SecurityLayer]]
+
+  - #### Relationships
+    id:: partition-attack-relationships
+    - is-subclass-of:: [[Blockchain Entity]], [[NetworkComponent]]
+
+  - #### OWL Axioms
+    id:: partition-attack-owl-axioms
+    collapsed:: true
+    - ```clojure
+      Prefix(:=<http://metaverse-ontology.org/blockchain#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(dct:=<http://purl.org/dc/terms/>)
+
+Ontology(<http://metaverse-ontology.org/blockchain/BC-0084>
+  Import(<http://metaverse-ontology.org/blockchain/core>)
+
+  ## Class Declaration
+  Declaration(Class(:PartitionAttack))
+
+  ## Subclass Relationships
+  SubClassOf(:PartitionAttack :NetworkComponent)
+  SubClassOf(:PartitionAttack :BlockchainEntity)
+
+  ## Essential Properties
+  SubClassOf(:PartitionAttack
+    (ObjectSomeValuesFrom :partOf :Blockchain))
+
+  SubClassOf(:PartitionAttack
+    (ObjectSomeValuesFrom :hasProperty :Property))
+
+  ## Data Properties
+  DataPropertyAssertion(:hasIdentifier :PartitionAttack "BC-0084"^^xsd:string)
+  DataPropertyAssertion(:hasAuthorityScore :PartitionAttack "1.0"^^xsd:decimal)
+  DataPropertyAssertion(:isFoundational :PartitionAttack "true"^^xsd:boolean)
+
+  ## Object Properties
+  ObjectPropertyAssertion(:enablesFeature :PartitionAttack :BlockchainFeature)
+  ObjectPropertyAssertion(:relatesTo :PartitionAttack :RelatedConcept)
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label :PartitionAttack "Partition Attack"@en)
+  AnnotationAssertion(rdfs:comment :PartitionAttack
+    "Network segmentation attack"@en)
+  AnnotationAssertion(dct:description :PartitionAttack
+    "Foundational blockchain concept with formal ontological definition"@en)
+  AnnotationAssertion(:termID :PartitionAttack "BC-0084")
+  AnnotationAssertion(:priority :PartitionAttack "1"^^xsd:integer)
+  AnnotationAssertion(:category :PartitionAttack "network-security"@en)
+)
+      ```
+
+- ## About Partition Attack
+  id:: partition-attack-about
+
+  - Network segmentation attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+  -
+  - ### Key Characteristics
+    id:: partition-attack-characteristics
+    - 1. **Definitional Property**: Core defining characteristic
+    - 2. **Functional Property**: Operational behavior
+    - 3. **Structural Property**: Compositional elements
+    - 4. **Security Property**: Security guarantees provided
+    - 5. **Performance Property**: Efficiency considerations
+  -
+  - ### Technical Components
+    id:: partition-attack-components
+    - **Implementation**: How concept is realized technically
+    - **Verification**: Methods for validating correctness
+    - **Interaction**: Relationships with other components
+    - **Constraints**: Technical limitations and requirements
+  -
+  - ### Use Cases
+    id:: partition-attack-use-cases
+    - **1. Core Blockchain Operation**
+    - **Application**: Fundamental blockchain functionality
+    - **Example**: Practical implementation in major blockchains
+    - **Requirements**: Technical prerequisites
+    - **Benefits**: Value provided to blockchain systems
+  -
+  - ### Standards & References
+    id:: partition-attack-standards
+    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
+    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
+    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
+  -

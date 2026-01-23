@@ -1,39 +1,44 @@
 - ### OntologyBlock
-    - term-id:: AI-0861
-    - source-domain:: ai
-    - owl:class:: ai:Modelops
-    - preferred-term:: ModelOps
-    - ontology:: true
+  id:: modelops-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: AI
+    - sequence-number:: 0861
+    - filename-history:: ["AI-0861-modelops.md"]
     - public-access:: true
+    - ontology:: true
+    - term-id:: AI-0861
+    - preferred-term:: ModelOps
+    - source-domain:: ai
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
+  - **Definition**
+    - definition:: End-to-end governance and lifecycle management of AI models.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-### Relationships
-- is-subclass-of:: [[AILifecycle]]
+  - **Semantic Classification**
+    - owl:class:: ai:ModelOps
+    - belongsToDomain:: [[Artificial Intelligence]]
 
-## ModelOps
+  - #### Relationships
+    - is-subclass-of:: [[Ai Engineering]]
 
-ModelOps refers to end-to-end governance and lifecycle management of ai models.
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :ModelOps))
+      (SubClassOf :ModelOps :AiEngineering)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :ModelOps "ModelOps"@en)
+      (AnnotationAssertion rdfs:comment :ModelOps
+        "End-to-end governance and lifecycle management of AI models."@en)
+      ```
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
-
-## Technical Details
-
-- **Id**: modelops-ontology
-- **Collapsed**: true
-- **Domain Prefix**: AI
-- **Sequence Number**: 0861
-- **Filename History**: ["AI-0861-modelops.md"]
-- **Public Access**: true
-- **Source Domain**: ai
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: ai:ModelOps
-- **Belongstodomain**: [[Artificial Intelligence]]
-- **Is Subclass Of**: [[Ai Engineering]]
+- ## About ModelOps
+  End-to-end governance and lifecycle management of AI models.

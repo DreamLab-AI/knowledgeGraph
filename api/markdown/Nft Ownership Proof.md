@@ -1,36 +1,42 @@
 - ### OntologyBlock
-    - term-id:: DT-0571
-    - source-domain:: bc
-    - owl:class:: bc:NftOwnershipProof
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - preferred-term:: NFT Ownership Proof
-    - ontology:: true
+  id:: nftownershipproof-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: BC
+    - sequence-number:: 0571
+    - filename-history:: ["BC-0571-nftownershipproof.md"]
     - public-access:: true
-    - is-subclass-of:: [[NFTConcept]]
+    - ontology:: true
+    - term-id:: BC-0571
+    - preferred-term:: NFT Ownership Proof
+    - source-domain:: bc
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## NFT Ownership Proof
+  - **Definition**
+    - definition:: Cryptographic proof of NFT ownership.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-NFT Ownership Proof refers to cryptographic proof of nft ownership.
+  - **Semantic Classification**
+    - owl:class:: bc:NftOwnershipProof
+    - belongsToDomain:: [[Blockchain]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :NftOwnershipProof))
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :NftOwnershipProof "NFT Ownership Proof"@en)
+      (AnnotationAssertion rdfs:comment :NftOwnershipProof
+        "Cryptographic proof of NFT ownership."@en)
+      ```
 
-- **Id**: nftownershipproof-ontology
-- **Collapsed**: true
-- **Domain Prefix**: BC
-- **Sequence Number**: 0571
-- **Filename History**: ["BC-0571-nftownershipproof.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: bc:NftOwnershipProof
-- **Belongstodomain**: [[Blockchain]]
+- ## About NFT Ownership Proof
+  Cryptographic proof of NFT ownership.

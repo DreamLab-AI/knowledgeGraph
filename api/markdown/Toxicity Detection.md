@@ -1,19 +1,42 @@
 - ### OntologyBlock
   id:: toxicitydetection-ontology
   collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0859
-	- source-domain:: ai
-	- preferred-term:: Toxicity Detection
-	- status:: complete
-	- public-access:: true
-	- source:: Chimera Prime Research
-	- maturity:: established
-	- owl:class:: ai:ToxicityDetection
-	- belongsToDomain:: [[Artificial Intelligence]]
-	- #### Relationships
-- is-subclass-of:: [[ContentModeration]]
-- is-subclass-of:: [[ContentModeration]] ; bridge to disruptive-technologies
-	  id:: toxicitydetection-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[NaturalLanguageProcessing]]
+
+  - **Identification**
+    - domain-prefix:: AI
+    - sequence-number:: 0859
+    - filename-history:: ["AI-0859-toxicitydetection.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: AI-0859
+    - preferred-term:: Toxicity Detection
+    - source-domain:: ai
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
+
+  - **Definition**
+    - definition:: 
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: ai:ToxicityDetection
+    - belongsToDomain:: [[Artificial Intelligence]]
+
+  - #### Relationships
+    - is-subclass-of:: [[Content Moderation]]
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :ToxicityDetection))
+      (SubClassOf :ToxicityDetection :ContentModeration)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :ToxicityDetection "Toxicity Detection"@en)
+      ```
+
+- ## About Toxicity Detection
+  

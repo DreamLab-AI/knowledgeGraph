@@ -18,22 +18,20 @@
     "Community Governance Model",
     "Digital Marketplace",
     "Token Bonding Curve",
-    "BC-0457-decentralized-identifiers",
-    "BC-0440-blockchain-interoperability",
     "Digital Goods Registry"
   ],
   "wiki_links": [
-    "Layer 2 Scaling",
-    "Consensus Mechanism",
-    "Cryptography",
-    "Blockchain Node",
-    "Cross-Chain Bridge",
+    "Blockchain",
     "Distributed Systems Infrastructure",
     "Blockchain Application",
+    "Smart Contracts",
+    "Cross-Chain Bridge",
+    "Blockchain Node",
+    "Layer 2 Scaling",
     "Peer-to-Peer Network",
     "Web3 Infrastructure",
-    "Blockchain",
-    "Smart Contracts"
+    "Consensus Mechanism",
+    "Cryptography"
   ],
   "ontology": {
     "term_id": "BC-7003",

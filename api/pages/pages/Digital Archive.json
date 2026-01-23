@@ -8,17 +8,17 @@
     "ETSI_Domain_Data_Management___Culture"
   ],
   "wiki_links": [
-    "Knowledge Preservation",
-    "Storage Infrastructure",
-    "Digital Library",
-    "Historical Research",
-    "NFT Collections",
-    "IPFS Storage",
-    "metaverse",
-    "Access Control",
     "Cultural Heritage Access",
+    "Digital Library",
+    "IPFS Storage",
+    "Storage Infrastructure",
     "Digital Preservation",
-    "Metadata Standards"
+    "Access Control",
+    "metaverse",
+    "Knowledge Preservation",
+    "Metadata Standards",
+    "NFT Collections",
+    "Historical Research"
   ],
   "ontology": {
     "term_id": "MV-9845",

@@ -2,41 +2,158 @@
   id:: behavioural-feedback-loop-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: DT-0251
+	- term-id:: 20251
 	- source-domain:: mv
-	- preferred-term:: Behavioural Feedback Loop
 	- status:: draft
-	- public-access:: true
+- public-access:: true
+	- preferred-term:: Behavioural Feedback Loop
 	- definition:: Recurring cycle where user actions influence environment responses which in turn modify subsequent user behavior through adaptive learning and reinforcement mechanisms.
-	- source:: [[IEEE Affective Systems]]
 	- maturity:: draft
+	- source:: [[IEEE Affective Systems]]
 	- owl:class:: mv:BehaviouralFeedbackLoop
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[ComputationAndIntelligenceDomain]], [[DisruptiveTechDomain]]
+	- belongsToDomain:: [[ComputationAndIntelligenceDomain]]
 	- implementedInLayer:: [[NetworkLayer]], [[ComputeLayer]]
 	- #### Relationships
-- is-subclass-of:: [[Metaverse]]
 	  id:: behavioural-feedback-loop-relationships
+		- has-part:: [[Action Detection]], [[Environment Response]], [[Behavior Analysis]], [[Adaptive Reinforcement]]
+		- requires:: [[User Tracking]], [[AI Model]], [[Real-time Processing]], [[State Management]]
+		- enables:: [[Adaptive Experience]], [[Personalized Interaction]], [[Behavioral Learning]], [[Dynamic Adjustment]]
+		- depends-on:: [[Machine Learning]], [[Affective Computing]], [[User Modeling]]
+	- #### OWL Axioms
+	  id:: behavioural-feedback-loop-owl-axioms
 	  collapsed:: true
-		- has-part:: [[Adaptive Reinforcement]]
-		- has-part:: [[Action Detection]]
-		- has-part:: [[Environment Response]]
-		- has-part:: [[Behavior Analysis]]
-		- requires:: [[State Management]]
-		- requires:: [[Real-time Processing]]
-		- requires:: [[User Tracking]]
-		- requires:: [[AI Model]]
-		- enables:: [[Personalized Interaction]]
-		- enables:: [[Adaptive Experience]]
-		- enables:: [[Dynamic Adjustment]]
-		- enables:: [[Behavioral Learning]]
-		- depends-on:: [[User Modeling]]
-		- depends-on:: [[Affective Computing]]
-		- depends-on:: [[Machine Learning]]
+		- ```clojure
+		  Declaration(Class(mv:BehaviouralFeedbackLoop))
 
+		  # Classification along two primary dimensions
+		  SubClassOf(mv:BehaviouralFeedbackLoop mv:VirtualEntity)
+		  SubClassOf(mv:BehaviouralFeedbackLoop mv:Process)
+
+		  # Inferred class from reasoning
+		  SubClassOf(mv:BehaviouralFeedbackLoop mv:VirtualProcess)
+
+		  # Domain classification
+		  SubClassOf(mv:BehaviouralFeedbackLoop
+		    ObjectSomeValuesFrom(mv:belongsToDomain mv:ComputationAndIntelligenceDomain)
+		  )
+
+		  # Layer implementation
+		  SubClassOf(mv:BehaviouralFeedbackLoop
+		    ObjectSomeValuesFrom(mv:implementedInLayer mv:NetworkLayer)
+		  )
+		  SubClassOf(mv:BehaviouralFeedbackLoop
+		    ObjectSomeValuesFrom(mv:implementedInLayer mv:ComputeLayer)
+		  )
+
+		  # Requires user tracking for behavior monitoring
+		  SubClassOf(mv:BehaviouralFeedbackLoop
+		    ObjectSomeValuesFrom(mv:requires mv:UserTracking)
+		  )
+
+		  # Requires AI model for adaptive responses
+		  SubClassOf(mv:BehaviouralFeedbackLoop
+		    ObjectSomeValuesFrom(mv:requires mv:AIModel)
+		  )
+
+		  # Requires real-time processing for immediate feedback
+		  SubClassOf(mv:BehaviouralFeedbackLoop
+		    ObjectSomeValuesFrom(mv:requires mv:RealTimeProcessing)
+		  )
+
+		  # Enables adaptive experience based on behavior
+		  SubClassOf(mv:BehaviouralFeedbackLoop
+		    ObjectSomeValuesFrom(mv:enables mv:AdaptiveExperience)
+		  )
+
+		  # Enables personalized interaction
+		  SubClassOf(mv:BehaviouralFeedbackLoop
+		    ObjectSomeValuesFrom(mv:enables mv:PersonalizedInteraction)
+		  )
+
+		  # Has action detection component
+		  SubClassOf(mv:BehaviouralFeedbackLoop
+		    ObjectSomeValuesFrom(mv:hasPart mv:ActionDetection)
+		  )
+
+		  # Has environment response mechanism
+		  SubClassOf(mv:BehaviouralFeedbackLoop
+		    ObjectSomeValuesFrom(mv:hasPart mv:EnvironmentResponse)
+		  )
+
+		  # Has behavior analysis component
+		  SubClassOf(mv:BehaviouralFeedbackLoop
+		    ObjectSomeValuesFrom(mv:hasPart mv:BehaviorAnalysis)
+		  )
+
+		  # Depends on machine learning for pattern recognition
+		  SubClassOf(mv:BehaviouralFeedbackLoop
+		    ObjectSomeValuesFrom(mv:dependsOn mv:MachineLearning)
+		  )
+
+		  # Depends on affective computing for emotional response
+		  SubClassOf(mv:BehaviouralFeedbackLoop
+		    ObjectSomeValuesFrom(mv:dependsOn mv:AffectiveComputing)
+		  )
+
+  # Property characteristics
+  AsymmetricObjectProperty(dt:requires)
+
+  # Property characteristics
+  AsymmetricObjectProperty(dt:enables)
+
+  # Property characteristics
+  AsymmetricObjectProperty(dt:dependson)
+```
+- ## About Behavioural Feedback Loop
+  id:: behavioural-feedback-loop-about
+	- The Behavioural Feedback Loop represents a continuous, adaptive cycle fundamental to immersive metaverse experiences. This process monitors user actions, generates appropriate environment responses, analyzes behavioral patterns, and adjusts future interactions to create increasingly personalized and engaging experiences. It operates as a closed-loop system where each iteration refines the system's understanding of user preferences and behavioral tendencies, enabling intelligent adaptation that enhances engagement and satisfaction.
+	- ### Key Characteristics
+	  id:: behavioural-feedback-loop-characteristics
+		- **Continuous Adaptation**: Constantly learns and adjusts based on observed behavior
+		- **Real-time Response**: Provides immediate environmental feedback to user actions
+		- **Pattern Recognition**: Identifies behavioral patterns through AI-driven analysis
+		- **Reinforcement-Based**: Uses positive and negative reinforcement to guide behavior
+	- ### Technical Components
+	  id:: behavioural-feedback-loop-components
+		- [[Action Detection]] - Systems for monitoring and categorizing user actions
+		- [[Environment Response]] - Mechanisms for generating appropriate feedback responses
+		- [[Behavior Analysis]] - AI-driven analysis of behavioral patterns and trends
+		- [[Adaptive Reinforcement]] - Dynamic adjustment of reinforcement strategies
+		- [[User Tracking]] - Monitoring systems for collecting behavioral data
+		- [[State Management]] - Maintaining current state of the feedback loop
+	- ### Functional Capabilities
+	  id:: behavioural-feedback-loop-capabilities
+		- **Behavioral Learning**: Identifies and learns from recurring user behavior patterns
+		- **Dynamic Difficulty Adjustment**: Adapts challenge levels based on user performance
+		- **Personalized Content Delivery**: Tailors content presentation to individual preferences
+		- **Engagement Optimization**: Maximizes user engagement through adaptive feedback
+	- ### Use Cases
+	  id:: behavioural-feedback-loop-use-cases
+		- Educational VR adapts teaching methods based on student interaction patterns
+		- Gaming environments adjust difficulty and pacing based on player performance
+		- Social platforms modify content recommendations based on interaction history
+		- Training simulations adapt scenarios to trainee skill development
+		- Therapeutic VR adjusts exercises based on patient responses and progress
+		- Retail metaverse personalizes product displays based on browsing behavior
+	- ### Standards & References
+	  id:: behavioural-feedback-loop-standards
+		- [[IEEE Affective Systems]] - Standards for affective computing and emotional feedback
+		- [[APA Virtual Psychology]] - American Psychological Association guidelines for virtual environments
+		- [[ISO/IEC 24756]] - Framework for specifying common access profile
+		- [[W3C Web of Things]] - Standards for connected environment interactions
+	- ### Related Concepts
+	  id:: behavioural-feedback-loop-related
+		- [[Reinforcement Learning]] - Machine learning technique underlying adaptive behavior
+		- [[Affective Computing]] - Computing that recognizes and responds to emotions
+		- [[User Modeling]] - Creation of user behavioral models
+		- [[VirtualProcess]] - Ontology classification as a virtual process
+		- [[ComputationAndIntelligenceDomain]] - Primary domain for AI-driven adaptation
+
+    - uses-technique:: [[Reinforcement Learning]]
 ## Academic Context
 
 - Brief contextual overview
@@ -77,10 +194,10 @@
 ## Research & Literature
 
 - Key academic papers and sources
-  - Skinner, B.F. (1938). The Behaviour of Organisms: An Experimental Analysis. New York: Appleton-Century.
+  - Skinner, B.F. (1938). The Behavior of Organisms: An Experimental Analysis. New York: Appleton-Century.
   - Norman, D.A. (2013). The Design of Everyday Things. New York: Basic Books. DOI: 10.1007/978-1-4614-3600-6
   - Bandura, A. (1977). Social Learning Theory. Englewood Cliffs, NJ: Prentice Hall.
-  - Deci, E.L., & Ryan, R.M. (1985). Intrinsic Motivation and Self-Determination in Human Behaviour. New York: Plenum Press. DOI: 10.1007/978-1-4899-2271-7
+  - Deci, E.L., & Ryan, R.M. (1985). Intrinsic Motivation and Self-Determination in Human Behavior. New York: Plenum Press. DOI: 10.1007/978-1-4899-2271-7
 
 - Ongoing research directions
   - Exploring the impact of feedback loops on mental health and well-being
@@ -117,12 +234,13 @@
 
 ## References
 
-1. Skinner, B.F. (1938). The Behaviour of Organisms: An Experimental Analysis. New York: Appleton-Century.
+1. Skinner, B.F. (1938). The Behavior of Organisms: An Experimental Analysis. New York: Appleton-Century.
 2. Norman, D.A. (2013). The Design of Everyday Things. New York: Basic Books. DOI: 10.1007/978-1-4614-3600-6
 3. Bandura, A. (1977). Social Learning Theory. Englewood Cliffs, NJ: Prentice Hall.
-4. Deci, E.L., & Ryan, R.M. (1985). Intrinsic Motivation and Self-Determination in Human Behaviour. New York: Plenum Press. DOI: 10.1007/978-1-4899-2271-7
+4. Deci, E.L., & Ryan, R.M. (1985). Intrinsic Motivation and Self-Determination in Human Behavior. New York: Plenum Press. DOI: 10.1007/978-1-4899-2271-7
 5. Behavioural Insights Team. (2023). Applying Feedback Loops in Public Policy. London: BIT. URL: https://www.bi.team/publications/applying-feedback-loops-in-public-policy/
 6. National Institute for Health and Care Excellence. (2023). Digital Health Interventions: Guidance. London: NICE. URL: https://www.nice.org.uk/guidance/digital-health-interventions
+
 
 ## Metadata
 
@@ -130,4 +248,3 @@
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-

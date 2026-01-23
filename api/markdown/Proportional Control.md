@@ -1,37 +1,46 @@
 - ### OntologyBlock
-    - term-id:: DT-0961
-    - source-domain:: tc
-    - owl:class:: tc:ProportionalControl
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - preferred-term:: Proportional Control
-    - ontology:: true
+  id:: proportionalcontrol-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0146
+    - filename-history:: ["RB-0146-proportionalcontrol.md"]
     - public-access:: true
-    - is-subclass-of:: [[Control Method]]
+    - ontology:: true
+    - term-id:: RB-0146
+    - preferred-term:: Proportional Control
+    - source-domain:: rb
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## Proportional Control
+  - **Definition**
+    - definition:: Proportional control applies gain to current error signal.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-Proportional Control refers to proportional control applies gain to current error signal.
+  - **Semantic Classification**
+    - owl:class:: rb:ProportionalControl
+    - belongsToDomain:: [[Robotics]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
+    - is-subclass-of:: [[Feedback Control]]
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :ProportionalControl))
+      (SubClassOf :ProportionalControl :FeedbackControl)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :ProportionalControl "Proportional Control"@en)
+      (AnnotationAssertion rdfs:comment :ProportionalControl
+        "Proportional control applies gain to current error signal."@en)
+      ```
 
-- **Id**: proportionalcontrol-ontology
-- **Collapsed**: true
-- **Domain Prefix**: RB
-- **Sequence Number**: 0146
-- **Filename History**: ["RB-0146-proportionalcontrol.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: rb:ProportionalControl
-- **Belongstodomain**: [[Robotics]]
-- **Is Subclass Of**: [[Feedback Control]]
+- ## About Proportional Control
+  Proportional control applies gain to current error signal.
+  
+  A control system with output proportional to error.

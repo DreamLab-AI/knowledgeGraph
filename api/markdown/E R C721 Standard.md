@@ -1,35 +1,42 @@
 - ### OntologyBlock
-    - term-id:: MV-0539
-    - source-domain:: mv
-    - owl:class:: mv:Erc721Standard
-    - preferred-term:: ERC-721 Standard
-    - ontology:: true
+  id:: erc721standard-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: BC
+    - sequence-number:: 0539
+    - filename-history:: ["BC-0539-erc721standard.md"]
     - public-access:: true
-    - is-subclass-of:: [[DisruptiveTechnology]]
+    - ontology:: true
+    - term-id:: BC-0539
+    - preferred-term:: ERC-721 Standard
+    - source-domain:: bc
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## ERC-721 Standard
+  - **Definition**
+    - definition:: Technical standard for non-fungible tokens on Ethereum, defining unique token identification and ownership tracking.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-ERC-721 Standard refers to technical standard for non-fungible tokens on ethereum, defining unique token identification and ownership tracking.
+  - **Semantic Classification**
+    - owl:class:: bc:ERC721Standard
+    - belongsToDomain:: [[Blockchain]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :ERC721Standard))
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :ERC721Standard "ERC-721 Standard"@en)
+      (AnnotationAssertion rdfs:comment :ERC721Standard
+        "Technical standard for non-fungible tokens on Ethereum, defining unique token identification and ownership tracking."@en)
+      ```
 
-- **Id**: erc721standard-ontology
-- **Collapsed**: true
-- **Domain Prefix**: BC
-- **Sequence Number**: 0539
-- **Filename History**: ["BC-0539-erc721standard.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: bc:ERC721Standard
-- **Belongstodomain**: [[Blockchain]]
+- ## About ERC-721 Standard
+  Technical standard for non-fungible tokens on Ethereum, defining unique token identification and ownership tracking.

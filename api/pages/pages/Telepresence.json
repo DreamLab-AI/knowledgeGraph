@@ -3,6 +3,7 @@
   "title": "Telepresence",
   "content": "- ### OntologyBlock\n  id:: telepresence-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-0601\n\t- preferred-term:: Telepresence\n\t- source-domain:: tc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Telepresence encompasses technologies and systems that enable users to feel present in a remote location or to give the appearance of being present to remote participants. This includes holographic displays, volumetric capture, robotic telepresence systems, and immersive communication technologies that create a sense of physical presence across distances.\n\t- owl:class:: tc:Telepresence\n\t- belongsToDomain:: [[Telecollaboration]]\n\t- #### Relationships\n\t  id:: telepresence-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Telecollaboration]]\n\t\t- is-parent-of:: [[Holographic Telepresence]]\n\t\t- is-parent-of:: [[Volumetric Capture]]\n\t\t- is-parent-of:: [[Robot Telepresence]]\n\t\t- related-to:: [[Immersive Communication]]",
   "backlinks": [
+    "Immersion",
     "Virtual Presence",
     "Telecollaboration",
     "tc-0003-telepresence-robot",
@@ -10,11 +11,11 @@
     "Audio Parameters"
   ],
   "wiki_links": [
-    "Robot Telepresence",
-    "Telecollaboration",
     "Volumetric Capture",
-    "Immersive Communication",
-    "Holographic Telepresence"
+    "Telecollaboration",
+    "Robot Telepresence",
+    "Holographic Telepresence",
+    "Immersive Communication"
   ],
   "ontology": {
     "term_id": "TC-0601",

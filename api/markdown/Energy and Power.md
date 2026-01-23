@@ -1,0 +1,56 @@
+public:: true
+
+- # Data Centres and AI
+	- Energy Grid Challenges:
+		- Growing demand from AI/data centers, industrial onshoring, and electrification is straining power grids
+		- Google have reported a 48% increase in emissions in 5 years, [google-2024-environmental-report.pdf (gstatic.com)](https://www.gstatic.com/gumdrop/sustainability/google-2024-environmental-report.pdf)
+		- Utilities face challenges in forecasting and meeting rapidly increasing electricity needs
+		- Grid infrastructure upgrades and expansion are needed but face regulatory and financing hurdles
+	- AI and Data Centers:
+		- AI is driving unprecedented growth in data center power consumption
+		- Data center siting now prioritizes access to abundant, reliable, and ideally clean energy sources
+		- Efficiency gains in data centers are offset by rapidly increasing computational demands
+	- Renewable Energy Integration:
+		- Push for net-zero emissions conflicts with urgent need for more power generation
+		- Intermittency of renewables creates grid stability challenges
+		- Energy storage technologies (batteries, pumped hydro) are critical but still limited in scale
+	- Geopolitical Implications:
+		- Race for AI supremacy driving national investments in compute infrastructure
+		- Control of energy resources and supply chains impacts AI/tech competitiveness
+		- Potential for energy constraints to limit economic growth and technological progress
+	- Grid Modernization:
+		- Need for more flexible, resilient "smart grid" to handle variable renewables and distributed resources
+		- Microgrids and demand response can help but won't fully replace centralized grid
+		- Regulatory reforms required to enable new grid technologies and business models
+	- Energy-AI Feedback Loop:
+		- AI enables more efficient grid management and integration of renewables
+		- But also drives massive increase in energy demand through data centers
+		- Net impact on energy consumption and emissions remains uncertain
+- # Private Nuclear
+	- [AI turning nuclear power plants into prime DC real-estate • The Register](https://www.theregister.com/2024/03/25/ai_boom_nuclear/) [[Convergence]] [[Energy and Power]] [[Artificial Intelligence]]
+	- [Google signs nuclear power deal with startup Kairos - Insider Paper](https://insiderpaper.com/google-signs-nuclear-power-deal-with-startup-kairos/)
+	- Constellation signed a 20-year power purchase agreement (PPA) with Microsoft to restart Three Mile Island Unit 1, which had been shut down since 2019 for economic reasons. The plant faced competition from cheaper natural gas due to the fracking boom, leading to its closure.
+	- Unlike other nuclear plants in the region, Three Mile Island was a single-unit facility, which contributed to higher operational costs compared to multi-unit plants. The plant's reputation was affected by the 1979 meltdown of Unit 2, impacting public perception of nuclear energy.
+	- The plant required significant investments (estimated $1.6 billion) for upgrades to restart and operate efficiently. Projected annual revenue from the PPA is estimated at £800 million, with potential profits being several hundred million, depending on operational costs.
+	- ### Costs and Benefits
+		- Energy Market Dynamics: The reliance on fluctuating energy markets poses risks for nuclear power, which has high fixed costs and is best suited for baseload power generation.
+		- Tech Companies' Role: Big tech firms initially claimed 100% renewable energy while relying heavily on fossil fuels, leading to credibility issues and increased demand for stable power sources.
+		- Offshore Wind vs. Nuclear: Offshore wind projects are generally more expensive (£140-£260 per megawatt hour) and do not provide the guaranteed power delivery that nuclear can, especially critical for large data centres.
+		- Reliability of Power Supply: Nuclear energy offers a more reliable power source compared to intermittent renewable sources, particularly for meeting peak demand.
+		- The successful restart of Three Mile Island could pave the way for new nuclear projects, leveraging existing sites and infrastructure.
+		- Low-Hanging Fruit: Several unfinished nuclear plants across the U.S. could be viable candidates for completion due to their existing permits and infrastructure.
+		- The changing stance of tech companies toward nuclear energy reflects a broader acceptance of nuclear as a clean energy source, potentially influencing future energy policy.
+		- Impact on Energy Prices: As nuclear plants resume operation, the energy market dynamics may shift, leading to higher electricity prices for consumers while providing significant revenue for operators.
+- # Bitcoin and AI data centres
+	- ![Bitcoin electricity consumption](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bitcoin_electricity_consumption.svg/1920px-Bitcoin_electricity_consumption.svg.png)
+	-
+	- Bitcoin miners like Iris Energy are uniquely positioned with access to large amounts of power and data center capacity. This is becoming increasingly scarce and valuable as demand for AI computing grows exponentially.
+	- The Bitcoin mining data centers can be repurposed to provide AI cloud services by swapping out Bitcoin mining ASICs for Nvidia GPUs. This allows miners to monetize their power and infrastructure for both crypto mining and AI.
+	- There are parallels between the Bitcoin ASIC and AI GPU markets - both have a dominant player (Bitmain for ASICs, Nvidia for GPUs) and prices are set based on what the market is willing to pay vs cost of production.
+	- The growth in AI seems to be shifting the narrative and reducing criticism around Bitcoin mining's energy use. As people realize AI's value, they accept that the energy use is justified, similar to Bitcoin.
+	- Major banks like Morgan Stanley are now writing serious research reports on how Bitcoin miners are positioned to support AI's growth by providing much-needed power capacity. This validates the industry's maturity.
+	- Time to accessing power is becoming the key constraint and source of value as demand for AI computing capacity far outstrips supply. Bitcoin miners with existing power access have a major advantage.
+	- By locating in areas with excess renewable energy that can't be fully exported, Bitcoin miners are actually helping make these renewable installations more economically viable and efficient.
+	- [Mike Alfred on X: "Morgan Stanley out with new research suggesting that BTC miners are the fastest path to put new data centers online because they already have access to huge amounts of power. Their models show BTC miners trade at a large discount to the intrinsic value of their secured power. https://t.co/rwJJLBPdYN" / X (twitter.com)](https://twitter.com/mikealfred/status/1781333730071896152)
+	- {{twitter https://twitter.com/mikealfred/status/1781333730071896152}}
+	-

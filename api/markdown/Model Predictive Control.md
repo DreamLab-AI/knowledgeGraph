@@ -3,26 +3,164 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0062
+	- domain-prefix:: RB
+	- sequence-number:: 0062
+	- filename-history:: ["rb-0062-model-predictive-control.md"]
 	- preferred-term:: Model Predictive Control
-	- source-domain:: rb
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
-
-
-
-
-### OWL Classification
-	- owl:class:: rb:ModelPredictiveControl
+    - public-access:: true
+	- definition:: ### Primary Definition
+**Model Predictive Control** - Model Predictive Control in robotics systems
+	- maturity:: draft
+	- owl:class:: mv:rb0062modelpredictivecontrol
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About rb 0062 model predictive control
+	- ### Primary Definition
+**Model Predictive Control** - Model Predictive Control in robotics systems
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# RB-0062: Model Predictive Control
+		  
+		  ## Metadata
+		  - **Term ID**: RB-0062
+		  - **Term Type**: Core Concept
+		  - **Classification**: Control Systems
+		  - **Priority**: 1 (Foundational)
+		  - **Authority Score**: 0.95
+		  - **ISO Reference**: ISO 8373:2021
+		  - **Version**: 1.0.0
+		  - **Last Updated**: 2025-10-28
+		  
+		  ## Definition
+		  
+		  ### Primary Definition
+		  **Model Predictive Control** - Model Predictive Control in robotics systems
+		  
+		  ### Standards Context
+		  Defined according to ISO 8373:2021 and related international robotics standards.
+		  
+		  ### Key Characteristics
+		  1. Core property of robotics systems
+		  2. Standardised definition across implementations
+		  3. Measurable and verifiable attributes
+		  4. Essential for safety and performance
+		  5. Industry-wide recognition and adoption
+		  
+		  ## Formal Ontology (OWL Functional Syntax)
+		  
+		  ```clojure
+		  (Declaration (Class :ModelPredictiveControl))
+		  (SubClassOf :ModelPredictiveControl :Robot)
+		  
+		  (AnnotationAssertion rdfs:label :ModelPredictiveControl "Model Predictive Control"@en)
+		  (AnnotationAssertion rdfs:comment :ModelPredictiveControl
+		    "Model Predictive Control - Foundational robotics concept"@en)
+		  (AnnotationAssertion :termID :ModelPredictiveControl "RB-0062"^^xsd:string)
+		  
+		  (Declaration (ObjectProperty :relates To))
+		  (ObjectPropertyDomain :relatesTo :ModelPredictiveControl)
+		  
+		  (Declaration (DataProperty :hasProperty))
+		  (DataPropertyDomain :hasProperty :ModelPredictiveControl)
+		  (DataPropertyRange :hasProperty xsd:string)
+		  ```
+		  
+		  ## Relationships
+		  
+		  ### Parent Classes
+		  - `Robot`: Primary classification
+		  
+		  ### Related Concepts
+		  - Related robotics concepts and systems
+		  - Cross-references to other ontology terms
+		  - Integration with metaverse ontology
+		  
+		  ## Use Cases
+		  
+		  ### Industrial Applications
+		  1. Manufacturing automation
+		  2. Quality control systems
+		  3. Process optimization
+		  
+		  ### Service Applications
+		  1. Healthcare robotics
+		  2. Logistics and warehousing
+		  3. Consumer robotics
+		  
+		  ### Research Applications
+		  1. Academic research platforms
+		  2. Algorithm development
+		  3. System integration studies
+		  
+		  ## Standards References
+		  
+		  ### Primary Standards
+		  1. **ISO 8373:2021**: Primary reference standard
+		  2. **ISO 8373:2021**: Robotics vocabulary
+		  3. **Related IEEE standards**: Implementation guidelines
+		  
+		  ## Validation Criteria
+		  
+		  ### Conformance Requirements
+		  1. ✓ Meets ISO 8373:2021 requirements
+		  2. ✓ Documented implementation
+		  3. ✓ Verifiable performance metrics
+		  4. ✓ Safety compliance demonstrated
+		  5. ✓ Industry best practices followed
+		  
+		  ## Implementation Notes
+		  
+		  ### Design Considerations
+		  - System integration requirements
+		  - Performance specifications
+		  - Safety considerations
+		  - Maintenance procedures
+		  
+		  ### Common Patterns
+		  ```yaml
+		  implementation:
+		    standards_compliance: true
+		    verification_method: standardised_testing
+		    documentation_level: comprehensive
+		  ```
+		  
+		  ## Cross-References
+		  
+		  ### Metaverse Ontology Integration
+		  - Virtual representation systems
+		  - Digital twin integration
+		  - Simulation environments
+		  
+		  ### Domain Ontologies
+		  - Manufacturing systems
+		  - Control systems
+		  - Safety systems
+		  
+		  ## Future Directions
+		  
+		  ### Emerging Trends
+		  1. AI and machine learning integration
+		  2. Advanced sensing capabilities
+		  3. Improved safety systems
+		  4. Enhanced human-robot collaboration
+		  5. Standardisation advancements
+		  
+		  ---
+		  
+		  **Version History**
+		  - 1.0.0 (2025-10-28): Initial foundational definition
+		  
+		  **Contributors**: Robotics Ontology Working Group
+		  **License**: CC BY 4.0
+		  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0062`
+		  
+		  ```
 
-### Domain & Architecture
-	- belongsToDomain:: [[RoboticsDomain]]
-	- maturity:: draft
-	- definition:: Model Predictive Control (MPC) is an advanced control strategy that uses dynamic models of a system to predict future behaviour and optimise control actions over a finite horizon.
-
-### Relationships
-- is-subclass-of:: [[Robotics]]
 
 ## Academic Context
 
@@ -120,10 +258,12 @@
 3. Lv, X., et al. (2025). The Potential of Combined Robust Model Predictive Control and Deep Learning. Scientific Reports, 15, 95636. https://doi.org/10.1038/s41598-025-95636-0
 4. Gaussian Process Nonlinear Model Predictive Control for Froth Flotation. Industrial and Engineering Chemistry Research, 2025. https://pubs.acs.org/doi/abs/10.1021/acs.iecr.5c00660
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
 

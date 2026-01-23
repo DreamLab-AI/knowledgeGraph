@@ -1,37 +1,48 @@
 - ### OntologyBlock
-    - term-id:: DT-0533
-    - source-domain:: bc
-    - owl:class:: bc:TotalSupply
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - preferred-term:: Total Supply
-    - ontology:: true
+  id:: totalsupply-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: BC
+    - sequence-number:: 0533
+    - filename-history:: ["BC-0533-totalsupply.md"]
     - public-access:: true
-    - is-subclass-of:: [[TokenEconomics]]
+    - ontology:: true
+    - term-id:: BC-0533
+    - preferred-term:: Total Supply
+    - source-domain:: bc
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## Total Supply
+  - **Definition**
+    - definition:: The total number of tokens that have been created, including all tokens in circulation plus those locked, reserved, or held by the project.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-Total Supply refers to the total number of tokens that have been created, including all tokens in circulation plus those locked, reserved, or held by the project.
+  - **Semantic Classification**
+    - owl:class:: bc:TotalSupply
+    - belongsToDomain:: [[Blockchain]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
+    - is-subclass-of:: [[Tokenomics]]
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :TotalSupply))
+      (SubClassOf :TotalSupply :Tokenomics)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :TotalSupply "Total Supply"@en)
+      (AnnotationAssertion rdfs:comment :TotalSupply
+        "The total number of tokens that have been created, including all tokens in circulation plus those locked, reserved, or held by the project."@en)
+      ```
 
-- **Id**: totalsupply-ontology
-- **Collapsed**: true
-- **Domain Prefix**: BC
-- **Sequence Number**: 0533
-- **Filename History**: ["BC-0533-totalsupply.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: bc:TotalSupply
-- **Belongstodomain**: [[Blockchain]]
-- **Is Subclass Of**: [[TokenEconomics]]
+- ## About Total Supply
+  The total number of tokens that have been created, including all tokens in circulation plus those locked, reserved, or held by the project.
+	
+	### Implementation Across Blockchains
+	The complete quantity of tokens that have been created for a cryptocurrency, including all tokens in circulation, held in reserve, locked, vested, or otherwise allocated, representing the maximum theoretical supply at any given moment. Exemplified by Bitcoin's hard-capped 21 million BTC (with approximately 19.5M already mined), Ethereum's uncapped but controlled supply (approximately 120M ETH post-Merge with net issuance influenced by EIP-1559 burning), Cardano's maximum 45 billion ADA, and Ripple's pre-mined 100 billion XRP, total supply serves as a fundamental tokenomics metric for assessing scarcity, calculating market capitalization, understanding monetary policy, and evaluating the relationship between available tokens and economic value.
+	

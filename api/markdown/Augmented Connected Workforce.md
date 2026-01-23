@@ -2,26 +2,19 @@
   id:: augmented-connected-workforce-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0848
+	- term-id:: ME-0012
 	- preferred-term:: Augmented Connected Workforce
 	- source-domain:: mv
-	- status:: emerging
-	- public-access:: true
-
-
-
-
-### OWL Classification
+	- status:: emerging-technology
+    - public-access:: true
+	- definition:: [Generated from Gartner emerging tech analysis]
+	- maturity:: emerging
 	- owl:class:: mv:AugmentedConnectedWorkforce
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-
-### Domain & Architecture
 	- belongsToDomain:: [[MetaverseDomain]]
-	- maturity:: emerging
+	- category:: Spatial & Immersive
 
-### Relationships
-- is-subclass-of:: [[Metaverse]]
 
 ## Overview
 
@@ -59,12 +52,14 @@
   - The UK, particularly Northern England, is poised to be a leader in ACW innovation due to strong industrial bases, academic research, and government support, fostering ecosystems that blend spatial technologies with workforce development.
   - Emerging technologies like 6G, edge computing, and advanced wearables will further enable real-time spatial collaboration and decision-making, transforming traditional work models into dynamic, interconnected ecosystems.
 
+
 ## UK Context
 
 - British contributions and implementations
   - Research institutions and programmes
   - Industry adoption
   - North England innovation (where relevant)
+
 
 ## Metadata
 
@@ -73,11 +68,4 @@
 - **Category**: Spatial & Immersive
 - **Status**: Emerging Technology
 
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
 

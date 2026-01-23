@@ -2,26 +2,19 @@
   id:: cloud-native-applications-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0860
+	- term-id:: ME-0016
 	- preferred-term:: Cloud-Native Applications
 	- source-domain:: mv
-	- status:: emerging
-	- public-access:: true
-
-
-
-
-### OWL Classification
+	- status:: emerging-technology
+    - public-access:: true
+	- definition:: [Generated from Gartner emerging tech analysis]
+	- maturity:: emerging
 	- owl:class:: mv:Cloud-NativeApplications
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-
-### Domain & Architecture
 	- belongsToDomain:: [[MetaverseDomain]]
-	- maturity:: emerging
+	- category:: Infrastructure & Cloud
 
-### Relationships
-- is-subclass-of:: [[Metaverse]]
 
 ## Overview
 
@@ -96,12 +89,14 @@ The trajectory of cloud-native development suggests several emerging directions:
 
 The cloud-native paradigm represents a fundamental shift in how organisations design, construct, and operate software systems—moving from static, monolithic architectures toward dynamic, distributed, and highly automated systems optimised for modern cloud infrastructure.
 
+
 ## UK Context
 
 - British contributions and implementations
   - Research institutions and programmes
   - Industry adoption
   - North England innovation (where relevant)
+
 
 ## Metadata
 
@@ -110,11 +105,4 @@ The cloud-native paradigm represents a fundamental shift in how organisations de
 - **Category**: Infrastructure & Cloud
 - **Status**: Emerging Technology
 
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
 

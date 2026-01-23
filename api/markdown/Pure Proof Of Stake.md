@@ -1,45 +1,47 @@
 - ### OntologyBlock
-    - term-id:: DT-0549
-    - source-domain:: bc
-    - owl:class:: bc:PureProofOfStake
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - preferred-term:: Pure Proof of Stake
-    - ontology:: true
+  id:: pureproofofstake-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: BC
+    - sequence-number:: 0549
+    - filename-history:: ["BC-0549-pureproofofstake.md"]
     - public-access:: true
-    - is-subclass-of:: [[ConsensusMechanism]]
+    - ontology:: true
+    - term-id:: BC-0549
+    - preferred-term:: Pure Proof of Stake
+    - source-domain:: bc
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## Relationships
+  - **Definition**
+    - definition:: A PoS variant that randomly selects validators from all stakers proportional to their stake weight, without delegation mechanisms.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-- disjoint-with:: [[Proof of Work]]
-- disjoint-with:: [[Proof of Stake]]
-- disjoint-with:: [[Delegated Proof of Stake]]
-- disjoint-with:: [[Nominated Proof of Stake]]
-- disjoint-with:: [[Liquid Proof of Stake]]
+  - **Semantic Classification**
+    - owl:class:: bc:PureProofOfStake
+    - belongsToDomain:: [[Blockchain]]
 
-## Pure Proof of Stake
+  - #### Relationships
+    - is-subclass-of:: [[Proof Of Stake]]
 
-Pure Proof of Stake refers to a pos variant that randomly selects validators from all stakers proportional to their stake weight, without delegation mechanisms.
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :PureProofOfStake))
+      (SubClassOf :PureProofOfStake :ProofOfStake)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :PureProofOfStake "Pure Proof of Stake"@en)
+      (AnnotationAssertion rdfs:comment :PureProofOfStake
+        "A PoS variant that randomly selects validators from all stakers proportional to their stake weight, without delegation mechanisms."@en)
+      ```
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
-
-## Technical Details
-
-- **Id**: pureproofofstake-ontology
-- **Collapsed**: true
-- **Domain Prefix**: BC
-- **Sequence Number**: 0549
-- **Filename History**: ["BC-0549-pureproofofstake.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: bc:PureProofOfStake
-- **Belongstodomain**: [[Blockchain]]
-- **Is Subclass Of**: [[ConsensusMechanism]]
+- ## About Pure Proof of Stake
+  A PoS variant that randomly selects validators from all stakers proportional to their stake weight, without delegation mechanisms.
+  
+  ### Examples
+  - Algorand

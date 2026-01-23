@@ -1,30 +1,116 @@
 public:: true
+termID:: BTC-TECH-0001
+qualityScore:: 0.94
+bitcoinSpecific:: true
+lastUpdated:: 2025-11-14
 
-- ### OntologyBlock
-  id:: Bitcoin Technical Overview
-  - ontology:: true
-  - public-access:: true
-  - term-id:: BC-9927
-  - preferred-term:: Bitcoin Technical Overview
-  - source-domain:: bc
-  - owl:class:: bc:PublicTrue
-  - status:: draft
-
-### Custody and Self-Sovereignty
-- **[Updated 2025]** [[Bitcoin]] [[custody]] refers to control over [[private keys]] that authorise [[UTXO]] spending - ownership in [[Bitcoin]] means [[key]] possession. The topic can be complex, but a critical principle guides all decisions: increased complexity increases risk. "Not your keys, not your coins" remains the fundamental [[self-custody]] mantra.
+- #Public page #Bitcoin #Cryptography #Blockchain
+	- automatically published
+- # Technical Overview
+	- This comprehensive technical overview covers [[Bitcoin]]'s [[cryptographic]] foundations, [[consensus]] mechanisms, [[transaction]] architecture, and emerging [[protocol]] developments. While this provides substantial technical depth, readers seeking complete implementation details should consult authoritative sources like [Mastering Bitcoin by Andreas Antonopoulos](https://github.com/bitcoinbook/bitcoinbook) - the definitive open-source technical guide to [[Bitcoin protocol]] architecture. Each subsection includes curated external references for deeper exploration. This serves as essential grounding for understanding [[Bitcoin]]'s role in [[decentralized]] [[digital value]] systems and its integration with emerging technologies like [[L402]], [[RGB Protocol]], and [[Lightning Network]].
+	- ## ECDSA / SHA256 / secp256k1
+		- These [[cryptographic primitives]] share common foundations in [elliptic curve cryptography](https://curves.ulfheim.net/) (ECC), a mathematical framework enabling efficient [[public-key cryptography]]. Understanding these components is essential for grasping [[Bitcoin]]'s [[security model]] and how it enables [[trustless]] [[peer-to-peer]] [[value transfer]].
+		- [[Public keys]] are enormous numbers (typically 256-bit integers) used in conjunction with [[asymmetric encryption]] algorithms to encrypt data. This enables remote parties to interact with network participants whose corresponding [[private keys]] can decrypt that data - the foundation of [[digital signatures]] and [[cryptographic identity]].
+		- [[Bitcoin]] employs the [[ECDSA]] (Elliptic Curve Digital Signature Algorithm) on the [secp256k1](https://en.bitcoin.it/wiki/Secp256k1) [[elliptic curve]] to create a [[cryptographic trapdoor function]]. This computationally one-way mathematical operation originated from the "[[discrete logarithm problem]]" pioneered by [[Diffie]] and [[Hellman]]'s groundbreaking cryptographic research.[[diffie1976new]] This mathematical relationship binds [[public keys]] and [[private keys]] in [[key pairs]] - the fundamental building block of all [[cryptocurrency]] systems.
+		- In their mathematical construct, a [[modulus operator]] creates an effectively infinite number of possible variations on operations which multiply enormous [[exponential numbers]] together in different orders to generate [[key pairs]]. Reversing through this [[trapdoor function]] would require a computationally infeasible number of guesses - approximately 2^128 operations for [[128-bit security]], far exceeding all computational capacity on Earth.
+		- Modern [[elliptic curve]] implementations like [[secp256k1]] have substantially simplified these computational problems while maintaining [[security]]. Rather than exponentials used by [[Diffie-Hellman]], a repeated [[point multiplication]] operation is applied to an [[elliptic curve function]], creating a [[discrete log problem]] [[trapdoor]] far more efficiently. The visual representation demonstrates this [[point doubling]] process on the curve.
+		- This approach enables faster, cheaper [[cryptographic]] operations on basic computational resources - critical for [[Bitcoin]]'s goal of [[decentralization]]. However, [[elliptic curve]] solutions are not ['provably secure'](https://safecurves.cr.yp.to/)[[gayoso2018secure]] in the same mathematical sense as [[Diffie-Hellman]], and [[security]] depends critically on [[entropy]] (randomness) in [[key generation]]. [[Bitcoin]] enthusiasts sometimes use dice rolls or [exotic hardware entropy sources](https://www.hackster.io/news/alex-waltz-s-quantum-random-number-generator-for-bitcoin-uses-radioactive-decay-and-a-raspberry-pi-25a75316220f) like radioactive decay detectors when creating keys, though modern [[cryptographically secure pseudorandom number generators]] (CSPRNGs) provide adequate [[entropy]].
+		- **[Updated 2025]** [[ECDSA]] is being progressively replaced by [[Schnorr signatures]][[schnorr1989efficient]] which use the same [[secp256k1]] curve ensuring [[backward compatibility]]. [[Schnorr signatures]] enable [[signature aggregation]], improved [[privacy]] through [[key aggregation]], and reduced [[transaction]] sizes. As of early 2025, approximately 8-12% of [[Bitcoin]] transactions utilize [[Schnorr signatures]] via [[Taproot]], with adoption accelerating among major [[wallets]] and [[exchanges]].[[Updated 2025]] [[ECDSA]] will remain supported indefinitely for [[backward compatibility]].
+		- ![image](./assets/120bce752a1666521d085cf8b4b4876e49cff344.png)
+		- Given a start point on the curve and a number of reflection operations it’s trivial to find a number at the end point, but impossible to find the number of <a href="https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch04.asciidoc">hops</a> from the two end points alone. (CC Mastering Bitcoin second edition)
+		- ## Analysis of the Underlying Security
+	 - The accumulated evidence paints a picture of strong and continuously improving [[cryptographic]] robustness, though no system can claim absolute [[security]]. [[Bitcoin]]'s [[open-source]] development model enables worldwide [[peer review]] and [[security auditing]].
+	 - ### Who is Involved:
+				- [[Pieter Wuille]], [[Gregory Maxwell]], and [[Andrew Poelstra]] are among the most prominent [[Bitcoin Core]] developers and [[cryptographers]]. Their extensive contributions include [[Taproot]], [[Schnorr signatures]], [[Miniscript]], and [[Bulletproofs]] - their credentials are validated by decades of [[open-source]] work and [[academic publications]].
+				- [[Jonas Nick]] is a [[cryptography]] researcher who has published rigorous analyses of [[Bitcoin]]'s [[ECDSA]] signature scheme and contributed to [[Schnorr signature]] implementations.
+				- [[Tim Ruffing]], [[Pedro Moreno-Sanchez]], and [[Yannick Seurin]] are [[cryptographers]] who have published [[peer-reviewed]] [[academic papers]] analyzing and improving [[Bitcoin]]'s [[cryptographic]] constructions, particularly around [[signature schemes]] and [[privacy protocols]].
+				- [[Tadge Dryja]] is one of the original [[Lightning Network]] developers and an [[MIT DCI]] (Digital Currency Initiative) researcher focused on [[Bitcoin]]'s [[cryptography]], [[layer-2]] protocols, and [[scaling solutions]].
+				- [[Arvind Narayanan]] is a professor at [[Princeton University]] who has published seminal works on [[Bitcoin]] and [[cryptocurrency]] [[cryptography]], including the widely-used textbook "Bitcoin and Cryptocurrency Technologies".
+				- **[Updated 2025]** [[Aviv Zohar]] at the [[Hebrew University of Jerusalem]] continues identifying [vulnerabilities in Lightning Network](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2023-October/021999.html) implementations, contributing to ongoing [[security]] improvements.[[harris2020flood]] Recent 2024-2025 work has focused on [[channel jamming]] attacks and [[mitigation strategies]].
+				- The [[Bitcoin]] [[security]] researcher community has expanded to include hundreds of credentialed [[cryptographers]] worldwide, with a common thread of strong [[academic]] backgrounds in [[cryptography]], [[distributed systems]], and [[game theory]].
+	 - ### Where Critical Analysis is Published:
+				- **[Updated 2025]** Numerous analyses appear at top-tier [[cryptography]] and [[security]] conferences including [[IEEE S&P]] (Symposium on Security and Privacy), [[ACM CCS]] (Conference on Computer and Communications Security), [[Financial Cryptography]], [[Real World Crypto]], and [[USENIX Security]]. These venues maintain rigorous [[peer review]] standards and represent the highest-quality [[academic]] [[security research]].
+				- [[Academic journals]] including [[Journal of Cryptology]], [[Ledger]] (dedicated to [[cryptocurrency]] research), and [[Journal of Cryptographic Engineering]] have published [[peer-reviewed]] papers on [[Bitcoin]] [[cryptography]]. While impact factors trail broader computer science journals, domain relevance is exceptional.
+				- [[Bitcoin Improvement Proposals]] (BIPs) undergo extensive scrutiny by expert reviewers through the [[bitcoin-dev mailing list]], with proposals requiring months or years of review, testing, and refinement before activation.
+				- **[Updated 2025]** The volume of [[Bitcoin]] [[security]] research has increased dramatically - over 500 [[peer-reviewed]] papers published 2020-2025, indicating strong and growing [[academic]] engagement.
+	 - ### Test of Time:
+				- **[Updated 2025]** [[Bitcoin]] has been operational since January 2009 - over 16 years of continuous operation. Its core [[cryptographic protocols]] ([[ECDSA]], [[SHA-256]], [[RIPEMD-160]]) have withstood extensive [[cryptanalysis]] despite enormous economic incentives to break them (current [[network value]] exceeds $1 trillion).
+				- **[Updated 2025]** While 16 years represents significant real-world validation, it remains modest on [[cryptographic]] timescales where century-long security horizons are considered. Continued analysis over decades remains essential, particularly given advances in [[quantum computing]].
+				- Newer proposals like [[Taproot]] (activated November 2021) have undergone less time-testing but build on mathematically proven constructions, inherit [[Bitcoin]]'s battle-tested foundations, and underwent years of review before deployment.
+	 - ### Academic Acceptance:
+				- **[Updated 2025]** [[Academic]] acceptance has increased substantially, with hundreds of [[peer-reviewed]] papers, doctoral dissertations, and university courses dedicated to [[Bitcoin]] [[cryptography]] and [[protocol]] design. Major universities including [[Stanford]], [[MIT]], [[Princeton]], [[Cornell]], and [[ETH Zurich]] now offer dedicated [[Bitcoin]]/[[cryptocurrency]] courses.
+				- Research funding has expanded significantly through organizations like [[Spiral]] (formerly Square Crypto), [[Brink]], [[OpenSats]], [[Human Rights Foundation]], and academic grants, enabling full-time [[open-source]] development and [[security research]].
+				- **[Updated 2025]** While controversy around [[Bitcoin]]'s environmental and social implications persists, its technical merit and [[cryptographic]] innovations have gained mainstream [[academic]] respect. [[Bitcoin]] is increasingly studied as a case study in [[distributed systems]], [[game theory]], and [[mechanism design]].[[nakamoto2008bitcoin]]
+		- ## Addresses & UTXOs
+	 - [[Ethereum]] uses an [[account model]] where [[transactions]] flow in and out of [[addresses]], analogous to traditional bank account numbers - intuitively familiar to bank users. [[Bitcoin]] employs a fundamentally different architecture that enhances [[privacy]] and enables more sophisticated [[transaction]] logic.
+	 - [[Bitcoin]] implements a [[UTXO model]] (Unspent Transaction Output) [[blockchain]]. [[UTXOs]] are discrete "portions" of [[bitcoin]] created and consumed as [[value]] changes hands through [[cryptographic]] [[signature]] verification. They form the basis of [[Bitcoin]]'s evolving [[ledger]] and enable efficient [[transaction]] validation. This architecture is explained comprehensively in [Rajarshi Maitra's UTXO primer](https://medium.com/bitbees/what-the-heck-is-utxo-ca68f2651819).
+	 - **UTXO Transaction Model**: Every [[transaction]] input consists of a pointer (reference to a previous [[transaction output]]) and an [[unlocking script]] (containing [[digital signatures]]). The pointer references a specific previous [[transaction output]], and the [[unlocking script]] satisfies the [[spending conditions]] of that output. When an output is successfully unlocked by a valid input, it's marked in the [[blockchain]] database as 'spent'. A [[transaction]] thus represents an abstract action that consumes (unlocks) previous outputs and creates new outputs. These new outputs can subsequently be referenced by future [[transaction]] inputs. A [[UTXO]] (Unspent Transaction Output) represents all outputs not yet unlocked by inputs. Once an output is unlocked, it's effectively removed from the spendable set and replaced by newly created outputs. Conservation of value ensures the sum of unlocked outputs equals the sum of newly created outputs (excluding [[transaction fees]]), maintaining constant total circulating supply. This model provides superior [[privacy]] properties compared to [[account models]], as each [[transaction]] can use fresh [[addresses]].
+	 - Fresh [[UTXOs]] are created as [[coinbase transactions]] - special [[transactions]] rewarding [[miners]] who successfully mine a [[block]]. These can be spent to multiple outputs like any normal [[UTXO]]. This mechanism implements [[Bitcoin]]'s controlled [[supply schedule]], gradually increasing supply until the 21 million coin cap is reached circa 2140.
+	 - **[Updated 2025]** The [[UTXO]] model enables advanced [[layer-2]] protocols like [[Lightning Network]], [[RGB Protocol]], and [[Ark]] by providing clear ownership semantics and enabling [[time-locked]] [[contracts]]. [[RGB Protocol]] in particular leverages [[UTXO]] [[commitments]] for [[client-side validation]] of [[smart contracts]], enabling [[Bitcoin]]-native [[asset issuance]] and complex [[programmable]] logic without [[blockchain]] bloat.[[RGB Protocol]] See [[RGB Protocol]] for technical details on how [[UTXOs]] enable [[client-side validated]] [[smart contracts]].
+		- ## Bitcoin Script and Miniscript
+	 - [[Bitcoin Script]] is a [[stack-based]] [[programming language]] embedded in each [[transaction]] that defines [[spending conditions]] for the next [[UTXO]] transfer. [[Satoshi Nakamoto]] designed [[Bitcoin Script]] as an intentionally limited, [[Turing-incomplete]] language to ensure [[transaction]] validation remains [[deterministic]] and secure. Similar to [[Reverse Polish Notation]], [[Bitcoin Script]] uses a [[stack-based]] execution model. The language comprises approximately 256 [[opcodes]], though several are deprecated or disabled for [[security]] reasons. [[Bitcoin Script]] enables sophisticated [[spending conditions]] beyond simple [[signature]] verification.
+	 - **[Updated 2025]** [[Miniscript]] is a higher-level [[policy language]] that compiles to [[Bitcoin Script]], making it dramatically easier to write robust [[Bitcoin]] [[smart contracts]] on-chain. Developed primarily by [[Pieter Wuille]], [[Andrew Poelstra]], and [[Sanket Kanjalkar]], [[Miniscript]] addresses the rough edges and error-prone nature of raw [[Bitcoin Script]], making [[spending policies]] accessible to developers without requiring deep [[Script]] expertise. The [Miniscript specification](https://bitcoin.sipa.be/miniscript/) provides formal semantics and composition rules.
+	 - [[Miniscript]] provides several critical advantages: it enables [[static analysis]] of [[spending conditions]], ensures [[malleability]] protection, guarantees accurate [[fee estimation]], and allows [[policy]] composition. Rather than requiring expertise in low-level languages like [[Rust]] or [[C++]], developers can specify high-level [[spending policies]] that [[Miniscript]] safely compiles to optimized [[Bitcoin Script]]. The [Bitcoin Dev Kit playground](https://bitcoindevkit.org/bdk-cli/playground/) provides an interactive environment for experimenting with [[Miniscript]] [[policies]].
+	 - [[Miniscript]] enables sophisticated use cases including [[Discrete Log Contracts]] (DLCs) which enable [[Bitcoin]] [[smart contracts]] to react to real-world events through [[oracle]] attestations - a powerful primitive for [[Bitcoin]]-native [[financial contracts]]. [[Scripts]] can specify [[spending conditions]] dependent on multiple [[key]] sets ([[multisignature]]), [[time locks]] (future-dated restrictions), or complex combinations thereof.
+	 - [[Time locks]] in [[Bitcoin]] come in two forms: [[block height-based]] (CLTV - CheckLockTimeVerify) and [[time-based]] (CSV - CheckSequenceVerify). [[Miniscript]] enforces clear semantics preventing ambiguous [[time lock]] specifications that could create vulnerabilities. Some [[opcodes]] change behavior based on parameter encoding length, creating subtle bugs; [[Miniscript]] eliminates these footguns through rigorous [[type checking]].
+	 - **Miniscript Applications**: A [[decaying multisig]] implemented in [[Miniscript]] might require 5-of-5 [[signatures]] initially, degrading to 4-of-5 after 6 months, then 3-of-5 after a year - providing flexibility if [[keys]] are lost while maintaining security when all keys are available. This pattern is invaluable for [[corporate governance]], [[inheritance planning]], and [[key recovery]] scenarios. [[Miniscript]] enables "[[dead man switch]]" functionality where a beneficiary's key automatically activates after a specified [[block height]], enabling [[trustless]] [[inheritance]].
+	 - **[Updated 2025]** [[Miniscript]] has achieved substantial [[wallet]] integration, with support in [[Bitcoin Core]] (v24.0+), [[Sparrow Wallet]], [[Ledger]] hardware devices, and [[Liana Wallet]]. [[Miniscript]] is becoming the standard approach for complex [[spending policies]], particularly in [[institutional custody]] and [[multi-jurisdictional]] [[corporate treasury]] applications. Integration with [[Taproot]] enables even more efficient [[Script]] paths through [[MAST]] (Merklized Abstract Syntax Trees).[[poelstra2019miniscript]]
+		- ## Halving
+	 - **[Updated 2025]** Approximately every four years (precisely every 210,000 [[blocks]]), the [[block reward]] granted to [[miners]] halves - a fundamental mechanism controlling [[Bitcoin]]'s [[monetary policy]]. This creates [[Bitcoin]]'s predictable [supply schedule and monetary inflation](http://bashco.github.io/Bitcoin_Monetary_Inflation/) curve. The [[controlled supply]] mechanism was designed to emulate physical commodity extraction where resources become progressively scarcer. The most recent halving occurred in April 2024, reducing the [[block reward]] from 6.25 BTC to 3.125 BTC per [[block]]. The next halving is expected in 2028. This mechanism is [exhaustively documented](https://en.bitcoin.it/wiki/Controlled_supply) in [[Bitcoin]] literature.
+	 - The [[halving]] mechanism creates [[deflationary]] [[monetary policy]] pressure, distinguishing [[Bitcoin]] from [[fiat currencies]] subject to arbitrary [[inflation]]. While somewhat tangential to [[transactional]] use cases in [[metaverse]] and [[AI]] applications, the [[halving]] fundamentally impacts [[miner]] [[economics]], [[security budget]], and long-term [[network]] [[sustainability]]. As [[block rewards]] diminish, [[transaction fees]] must increasingly compensate [[miners]] - creating interesting [[economic]] dynamics for [[layer-2]] protocols like [[Lightning Network]] and [[L402]] that enable [[micropayments]] while minimizing [[on-chain]] [[transaction]] costs.
+		- ## Difficulty Adjustment
+	 - The [[difficulty adjustment]] algorithm dynamically modifies the computational difficulty of the [[mining]] process to maintain an average [[block]] time of approximately 10 minutes. This adjustment occurs every 2,016 [[blocks]] (roughly two weeks). When new [[mining]] equipment joins the [[network]], it temporarily increases [[bitcoin]] issuance favoring new [[miners]], but only until the next [[difficulty adjustment]] when [[difficulty]] increases proportionally, resetting the [[block]] time target and diffusing the advantage.
+	 - This mechanism provides remarkable [[resilience]]. When China comprehensively banned [[Bitcoin]] [[mining]] in 2021, eliminating approximately 50% of global [[hash rate]] within weeks, the [[difficulty adjustment]] protected the [[network]] by reducing [[difficulty]] proportionally, ensuring [[blocks]] continued at roughly 10-minute intervals despite massive [[hash rate]] loss. The [[difficulty adjustment]] is [[Bitcoin]]'s immune system, maintaining [[protocol]] stability despite dramatic changes in [[mining]] participation. Detailed technical explanations are available in the [Bitcoin Wiki difficulty documentation](https://en.bitcoin.it/wiki/Difficulty).
+	 - **[Updated 2025]** The [[difficulty adjustment]] mechanism has proven extraordinarily robust through multiple [[mining]] migrations, [[hash rate]] fluctuations, and the emergence of highly efficient [[ASIC]] miners. Current [[network]] [[hash rate]] exceeds 600 EH/s (exahashes per second), representing enormous computational [[security]]. This [[difficulty adjustment]] ensures [[Bitcoin]]'s [[consensus]] remains stable regardless of [[miner]] participation - a critical property for [[trustless]] [[protocols]].[[nakamoto2008bitcoin]]
+		- ## Bitcoin Nodes
+	 - The [[Bitcoin]] [[network]] operates through a triumvirate of [[economic actors]], each with distinct [[incentives]] creating a [[game-theoretic]] equilibrium:
+				- **Holders and Users**: Including [[exchanges]], [[market makers]], and individual users who participate through speculation, [arbitrage](https://en.wikipedia.org/wiki/Arbitrage), and [[liquidity]] provision. **[Updated 2025]** Increasingly, "real [[money]] users" employ [[BTC]] for [[circular economies]] - earning and spending within [[Bitcoin]]-native ecosystems. Use cases include [[Lightning Network]] [[payments]], [[L402]] [[paywalls]] for [[AI]] [[API]] access, [[Nostr]] [[zaps]] for [[micropayments]], and [[RGB Protocol]] [[asset]] transfers. The speculative use case that dominated 2013-2020 is declining relative to [[utility]]-driven adoption.
+				- **Miners**: Profit from [[coinbase]] rewards and [[transaction fees]], providing computational [[security]] through [[Proof-of-Work]]. [[Miners]] validate other miners' [[blocks]] according to [[consensus rules]] enforced by [[node]] operators, creating a critical [[checks-and-balances]] system.
+				- **Node Operators**: [Enforce consensus rules](https://www.truthcoin.info/blog/measuring-decentralization/) that [[miners]] must satisfy for [[block]] propagation. [[Node]] operators optimize [[trust minimization]] and protect the [[network]] from [[protocol]] changes that might undermine their [[economic]] interests - demonstrated dramatically during the 2017 [[Blocksize Wars]].[[blocksizewars]] Running a [[full node]] provides maximum [[sovereignty]] and [[censorship resistance]].
+				- **[Updated 2025]** Approximately [18,000-20,000 reachable Bitcoin nodes](https://bitnodes.io/) operate globally, with potentially 50,000+ total nodes including non-listening nodes. Since engineer [[Stadicus]] released the pioneering [RaspiBlitz guide](https://raspibolt.org/backstory.html) in 2017, accessible [[node]] software has proliferated. Approximately 30,000-40,000 [[Raspberry Pi]]-based [[Lightning]] nodes (inherently also [[Bitcoin]] full nodes) run diverse [open-source distributions](https://github.com/bavarianledger/bitcoin-nodes) including [[Umbrel]], [[RaspiBlitz]], [[MyNode]], [[Start9]], and [[Citadel]]. The barrier to running a [[full node]] has never been lower - critical for [[decentralization]] and [[censorship resistance]].
+		- ## Wallets, Seeds, Keys and BIP39
+	 - In all [[cryptographic systems]] described in [[Bitcoin]] and related protocols, everything derives from a [[private key]] - an enormous number serving as input to the [[trapdoor function]] described earlier. Professor [[Bill Buchanan OBE]] provides an excellent [technical explanation of key derivation](https://medium.com/asecuritysite-when-bob-met-alice/can-i-derive-the-private-key-from-the-public-key-ba3609256ec) for readers seeking deeper mathematical understanding.
+	 - Modern [[wallets]] generate [[private keys]], [[public keys]], and [[addresses]] hierarchically through [BIP-0032](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) (Hierarchical Deterministic Wallets). This process begins with a single [monumentally large](https://www.wolframalpha.com/input?i=2%5E512) number up to 512 bits. From this root [[entropy]], [[HD wallets]] employ [[derivation paths]] to construct a tree of [[key pairs]], all deterministically derived from the initial seed. Knowing the seed and [[derivation path]], [[wallets]] can search the entire key tree to discover all possible [[addresses]].
+	 - This architecture enables a complete group of active [[addresses]] to be represented by a single large number (concatenating seed and path) - the [[master seed]]. For usability, [[seeds]] are encoded as [[mnemonic phrases]] per [[BIP-39]]. Users encounter either 12-word (128-bit [[entropy]], considered [cryptographically sufficient](https://twitter.com/adam3us/status/1433375602808066049)) or 24-word (256-bit) [[seed phrases]]. This phrase provides access to all [[assets]] controlled by that [[seed]] - truly a master key. [[Seeds]] can be [generated manually using dice](https://vault12.com/securemycrypto/cryptocurrency-security-how-to/dice-crypto-recovery-seed/) since they're fundamentally just large random numbers.
+	 - [[Bitcoin]] [[addresses]] are derived from [[key pairs]] via [[one-way hash functions]] - the [[public key]] and [[private key]] cannot be determined from an [[address]] alone. [[Addresses]] primarily exist within [[wallet]] software. [[UTXOs]] reside "under" [[addresses]] in that they share the same [[keys]]. [[Wallets]] and [[nodes]] monitor the [[blockchain]] for [[transactions]] associated with owned [[addresses]], then use corresponding [[private keys]] to construct [[unlocking scripts]] that spend those [[UTXOs]].
+	 - **[Updated 2025]** [[BIP-39]] [[seed phrases]] are now universal across [[Bitcoin]], [[Lightning]], [[Nostr]], [[RGB Protocol]], and many [[cryptocurrency]] systems. Some advanced [[wallets]] now support [[Shamir's Secret Sharing]] ([[SLIP-39]]) for [[seed]] [[splitting]] across multiple backup shares, enabling [[threshold]] recovery without single-point-of-failure risk. [[Hardware wallets]] like [[Coldcard]], [[Trezor]], [[Ledger]], and open-source [[SeedSigner]] provide [[airgapped]] [[signing]] while maintaining [[BIP-39]] compatibility.
+	 - ### HD wallet encoding
+	 - ideas
+				- The BIP39 standard is designed to create a human-readable and easilyportable format for Bitcoin and other cryptographic wallet seeds. Byrepresenting these seeds as a series of colors in a 3D model, we add anew dimension of portability, visual appeal, and potential applications.
+					- **Easter Egg Hunts in Social Metaverses**: The color-based representation of BIP39 seeds opens up opportunities for creative and engaging experiences in metaverse environments. For instance, mnemonic seeds could be hidden within digital artifacts in the form of color sequences. These could be used as treasure hunts or easter eggs, potentially carrying real-world value in the form of Bitcoin or other cryptocurrencies. Recovery would mean some kind of sampling as in Fig <a href="#fig:HDwalletBlock" data-reference-type="ref" data-reference="fig:HDwalletBlock">3.12</a> and software.
+					- **Provenance Encoding in Digital Art**: The mnemonic color-coding could be embedded within digital art pieces, effectively encoding the provenance of the artwork directly into its visual representation. This could add an extra layer of security and uniqueness to the art piece, and also serve as a novel way of proving ownership or creatorship.
+					- **Steganographic Transfer of Funds**: By incorporating the color-encoded BIP39 seeds into various aspects of a metaverse or digital environment, they can serve as a form of steganography. This allows for the transfer of funds or sensitive information covertly within the visual and experiential components of the environment.
+					- **Gamification of Cryptographic Keys**: Cryptographic keys are typically represented as long, random strings of characters that are hard to remember and not very user-friendly. Representing these keys as a sequence of colors could make them more approachable and memorable. This could also introduce an aspect of gamification into the world of identity and value, possibly increasing their appeal to a broader audience.
+					- **Embedding in Physical Objects**: 3D printing technologies could be used to create physical representations of these 3D models (assuming some variance of the colour as the materials age), embedding BIP39 seeds into tangible, physical objects. These could serve as novel physical wallets, gift items, or physical tokens representing digital assets.
+- While this encoding scheme opens up numerous creative opportunities, itis important to be aware of potential security implications. The use ofmnemonic seeds in this way should be done with care and an understandingof the risks involved.
+- The GitHub repository for this book [has some examplecode](https://github.com/flossverse/bip39Geom) playing around with thisidea further, generating a color-based and a three-dimensional graphicalrepresentation of nostr addresses. Each mnemonic word is mapped to aunique color and a 3D model is created, in which each word of themnemonic is represented by a cube of the corresponding color arranged ina circle.
+-
+	 - **BIP39Colors**: A class that contains a list of BIP39 words and methods to convert a hexadecimal seed to RGB colors and mnemonic words.
+-
+	 - **hex\_to\_rgb**: A static method within the BIP39Colors class that converts a hexadecimal color to an RGB color.
+-
+	 - **seedToColors**: A static method within the BIP39Colors class that converts a seed (a string of hexadecimal characters) into colors and mnemonic words. This function first converts the seed into bytes, then divides these bytes into groups and converts each group into a position in the word list and a color.
+-
+	 - **generate\_3d\_model**: A function that takes a list of colors as input, and generates a 3D model with cubes of these colors arranged in a circular formation.
+-
+	 - **main**: The main function of the script, which takes a 64-character hexadecimal string (a nostr ID) as an argument, converts it to colors and mnemonic words, and generates the 3D model.
+- The output of the program is a GLB file, which is a binary file formatrepresentation of 3D models saved in the GL Transmission Format (glTF).The file "model.glb" will be created in the same directory as thescript.
+- <span class="image">This is the nostr pubkey for flossverse, encodedinto the far larger HD wallet space (hence the muted colours) and thendisplayed as blocks.</span>
+- ##### Custody and Self-Sovereignty
+- **[Updated 2025]** [[Bitcoin]] [[custody]] refers to control over [[private keys]] that authorize [[UTXO]] spending - ownership in [[Bitcoin]] means [[key]] possession. The topic can be complex, but a critical principle guides all decisions: increased complexity increases risk. "Not your keys, not your coins" remains the fundamental [[self-custody]] mantra.
 - **Custody Models Overview**: [[Wallets]] don't contain [[bitcoin]] - they contain [[keys]] that control [[UTXOs]] recorded on the [[blockchain]]. Ownership transfers through [[digital signatures]], not physical possession. Several [[custody]] models exist with different [[security]]/[[convenience]] tradeoffs:
 - **Software Wallets**: Applications running on [[desktop]] or [[mobile]] devices that store [[private keys]] and manage [[transaction]] [[signing]]. [[Hot wallets]] like [BlueWallet](https://bluewallet.io/) (mobile) and [Sparrow Wallet](https://sparrowwallet.com/) (desktop) provide excellent functionality for beginners. However, many [[software wallets]] sacrifice [[privacy]] by transmitting [[extended public keys]] (xpubs) to vendor servers for [[blockchain]] monitoring - the vendor server tracks your [[addresses]], not your local [[full node]].
 - **Privacy Best Practices**: Maximum [[privacy]] requires running a personal [[full node]] (as detailed above) and connecting [[wallet]] software via secure local connections. This eliminates [[third-party]] [[surveillance]] and provides [[trustless]] [[transaction]] validation. Tools like [[Bitcoin Core]], [[Electrum Personal Server]], or [[BTCPay Server]] enable [[self-hosted]] [[wallet]] infrastructure.
 - **Hardware Signing Devices**: So-called [hardware wallets](https://unchained.com/blog/best-bitcoin-hardware-wallets/) are more accurately termed [[signing devices]]. A [Reddit user eloquently explained](https://www.reddit.com/r/Bitcoin/comments/z27jg8/comment/ixfj0w4/?): "Your hardware wallet is a safe that holds a key. Your bitcoin is in a mailbox that anyone can look at or put more bitcoin into, but nobody can take the bitcoin out unless they have the key stored in your safe. The 24 word seed phrase are the instructions needed to cut a new key."
 - [[Hardware wallets]] store [[private keys]] in tamper-resistant chips, [[signing]] [[transactions]] without exposing [[keys]] to internet-connected devices. Modern devices like [[Trezor]], [[Ledger]], and [[Coldcard]] now include [privacy technology like CoinJoin](https://content.trezor.io/coinjoin), though [[blockchain surveillance]] companies like [Chainalysis remain controversial](https://www.wired.com/story/bitcoin-fog-roman-sterlingov-blockchain-analysis/) in their analysis capabilities and collaborations with governments.
 - **Open-Source Signing Solutions**: We advocate for [[open-source]] [[hardware wallets]] like [SeedSigner](https://seedsigner.com/) which scan [[seed phrases]] via [[QR codes]] for each [[signing]] session, maintaining [[airgapped]] [[security]] without permanent [[key]] storage. [[SeedSigner]] supports [[multisignature]] [[wallets]] and [[Nostr]] [[key]] management, making it ideal for managing both [[Bitcoin]] and [[identity]] keys in [[decentralized]] applications.
-- **Advanced Custody Models**: Enhanced [[security]] combines multiple [[signing devices]] in [[multisignature]] (multisig) configurations requiring a quorum of [[signatures]] (e.g., 2-of-3 or 3-of-5) to authorise [[spending]]. [Fedimint](https://fedimint.org/) enables [[community custody]] where families or communities leverage [[social trust]] to co-manage [[bitcoin]] through [[federated]] [[mints]], providing [[censorship resistance]] without requiring each user to operate complex [[infrastructure]].
-- **Custodial Risk**: Leaving [[bitcoin]] with [[custodians]] (exchanges, banks) is generally insecure - they issue IOUs rather than providing true ownership, and frequently abscond or fail (Mt. Gox, FTX, BlockFi, Celsius, etc.). For [[Bitcoin]]-native applications and [[AI]] services, [[custodial]] models contradict [[decentralization]] principles. All architectures should emphasise [[self-custody]] variations, minimising [[third-party trust]] for users while enabling [[L402]], [[RGB]], and [[Lightning]] integration for [[programmable]] [[payments]].[[antonopoulos2017mastering]]
+- **Advanced Custody Models**: Enhanced [[security]] combines multiple [[signing devices]] in [[multisignature]] (multisig) configurations requiring a quorum of [[signatures]] (e.g., 2-of-3 or 3-of-5) to authorize [[spending]]. [Fedimint](https://fedimint.org/) enables [[community custody]] where families or communities leverage [[social trust]] to co-manage [[bitcoin]] through [[federated]] [[mints]], providing [[censorship resistance]] without requiring each user to operate complex [[infrastructure]].
+- **Custodial Risk**: Leaving [[bitcoin]] with [[custodians]] (exchanges, banks) is generally insecure - they issue IOUs rather than providing true ownership, and frequently abscond or fail (Mt. Gox, FTX, BlockFi, Celsius, etc.). For [[Bitcoin]]-native applications and [[AI]] services, [[custodial]] models contradict [[decentralization]] principles. All architectures should emphasize [[self-custody]] variations, minimizing [[third-party trust]] for users while enabling [[L402]], [[RGB]], and [[Lightning]] integration for [[programmable]] [[payments]].[[antonopoulos2017mastering]]
 - #### Upgrade Roadmap
 - ##### Taproot
 - **[Updated 2025]** [[Taproot]] represents the most significant [[Bitcoin]] [[protocol]] upgrade since [[SegWit]] (2017). Originally [described in 2018](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-January/015614.html) on the [[bitcoin-dev mailing list]] by [[Pieter Wuille]], [[Taproot]] formalized as [BIP-0341](https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki), [[BIP-342]] ([[Tapscript]]), and [[BIP-340]] ([[Schnorr signatures]]) in 2020-2021. [[Taproot]] activated in November 2021 via [[BIP-8]] [[consensus]] mechanisms.
 - [[Taproot]] delivers transformative improvements: [[Schnorr signatures]][[schnorr1989efficient]] (maximally efficient [[signature]] verification), [[MAST]] (Merklized Abstract Syntax Trees enabling complex [[Script]] paths with minimal [[blockchain]] footprint), enhanced [[privacy]] through [[key aggregation]], and expanded [[smart contract]] capabilities. [[Schnorr signatures]] enable [[signature aggregation]] - multiple [[signatures]] can be combined into a single signature, dramatically improving [[transaction]] efficiency and [[privacy]].
-- **[Updated 2025]** [[Taproot]] adoption has accelerated significantly since activation. As of early 2025, approximately 8-12% of all [[Bitcoin]] [[transactions]] utilise [[Taproot]] outputs (up from 0.3% in 2022), with major [[wallets]] ([[Sparrow]], [[Electrum]], [[BlueWallet]], [[Bitcoin Core]]), [[exchanges]] ([[Coinbase]], [[Kraken]], [[Binance]]), and infrastructure providers now supporting [[Taproot]] [[addresses]]. The [[network]] maintains [[backward compatibility]] with legacy address types ([[P2PKH]], [[P2SH]], [[P2WPKH]]) indefinitely.
+- **[Updated 2025]** [[Taproot]] adoption has accelerated significantly since activation. As of early 2025, approximately 8-12% of all [[Bitcoin]] [[transactions]] utilize [[Taproot]] outputs (up from 0.3% in 2022), with major [[wallets]] ([[Sparrow]], [[Electrum]], [[BlueWallet]], [[Bitcoin Core]]), [[exchanges]] ([[Coinbase]], [[Kraken]], [[Binance]]), and infrastructure providers now supporting [[Taproot]] [[addresses]]. The [[network]] maintains [[backward compatibility]] with legacy address types ([[P2PKH]], [[P2SH]], [[P2WPKH]]) indefinitely.
 - [[Taproot]] enables critical [[layer-2]] innovations: [[Lightning Network]] [[channel]] efficiency improvements, [[RGB Protocol]] [[client-side validation]], [[Discrete Log Contracts]] (DLCs), and emerging [[L402]] [[authentication]] protocols that enable [[Bitcoin]]-native [[AI]] [[API]] access. [[Journalist]] and educator [[Aaron van Wirdum]] provides comprehensive [Taproot technical analysis](https://bitcoinmagazine.com/technical/taproot-coming-what-it-and-how-it-will-benefit-bitcoin) for readers seeking detailed understanding.
 - **Bitcoin-AI Integration**: [[Taproot]]'s enhanced [[scripting]] capabilities are foundational for [[L402]] [[authentication]] protocols, enabling [[AI]] services to require [[Bitcoin]] [[micropayments]] via [[Lightning]] for [[API]] access. [[RGB Protocol]] leverages [[Taproot]]'s [[commitment]] structures for [[smart contract]] execution with [[client-side validation]], enabling complex [[AI]]-driven [[asset]] management without [[blockchain]] bloat.[[BIP-341]]
 - ##### AnyPrevOut (APO)
@@ -34,7 +120,7 @@ public:: true
 - ##### CheckTemplateVerify (CTV)
 - [BIP-119 (OP_CHECKTEMPLATEVERIFY)](https://utxos.org/) proposes a powerful yet minimalist [[covenant]] primitive enabling predetermined [[transaction]] trees. [[CTV]] allows construction of [[Bitcoin]] [[addresses]] that can only be spent to specific pre-committed outputs, enabling sophisticated [[smart contract]] patterns including [[payment pools]], [[congestion control]], and non-interactive [[channel]] factories.
 - [[CTV]]'s most compelling application is [[vaults]] - providing [enhanced security](https://github.com/jamesob/simple-ctv-vault/blob/7dd6c4ca25debb2140cdefb79b302c65d1b24937/README.md) for [[institutional custody]] by requiring [[time-delayed]] [[recovery]] paths. If an attacker compromises [[hot wallet]] keys, the [[vault]] [[covenant]] enforces a mandatory delay before funds can be moved, allowing legitimate owners to intervene using [[cold storage]] keys.
-- **[Updated 2025]** [[BIP-119]] remains contentious despite technical elegance. [Debate centres on activation mechanisms](https://blog.bitmex.com/op_ctv-summer-softfork-shenanigans/) rather than technical merit. Some developers advocate for more general [[covenant]] proposals that subsume [[CTV]] functionality. As of early 2025, [[BIP-119]] has not achieved [[consensus]] for activation, though [[covenant]] research remains highly active with proposals like [[OP_VAULT]], [[TXHASH]], and recursive [[covenants]] under consideration.[[BIP-119]]
+- **[Updated 2025]** [[BIP-119]] remains contentious despite technical elegance. [Debate centers on activation mechanisms](https://blog.bitmex.com/op_ctv-summer-softfork-shenanigans/) rather than technical merit. Some developers advocate for more general [[covenant]] proposals that subsume [[CTV]] functionality. As of early 2025, [[BIP-119]] has not achieved [[consensus]] for activation, though [[covenant]] research remains highly active with proposals like [[OP_VAULT]], [[TXHASH]], and recursive [[covenants]] under consideration.[[BIP-119]]
 - ##### Blind Merge Mining and Drivechains
 - **[Updated 2025]** [[BIP-301]] (Blind Merged Mining) enables [[miners]] to mine [[transactions]] from alternative [[blockchains]] into [[Bitcoin]] [[blocks]] without requiring [[miners]] to validate those chains - they simply collect fees from [[sidechain]] activity. This is foundational for [[Drivechains]] ([[BIP-300]]), enabling [[two-way pegged]] [[sidechains]] secured by [[Bitcoin]] [[miners]].
 - [[Blind merged mining]] allows other chains to inherit [[Bitcoin]]'s [[security model]] while increasing [[miner]] revenue - increasingly critical as [[block subsidies]] decline toward zero over the next century. The concept was [originally proposed by Satoshi Nakamoto](https://bitcointalk.org/index.php?topic=1790.msg28696#msg28696) in 2010, refined by [[Paul Sztorc]] who provides [comprehensive technical explanation](https://www.youtube.com/watch?v=xweFaw69EyA).
@@ -65,7 +151,7 @@ public:: true
 - **2025 Status**: [[RGB]] has achieved production readiness with [[wallet]] integrations in [[MyCitadel]], [[BitMask]], and experimental support in [[Sparrow Wallet]]. The [[RGB]] [[Lightning]] integration (enabling [[RGB]] [[asset]] transfers via [[Lightning Network]] [[channels]]) entered testing in 2024. [[RGB]] development is led by [[LNP/BP Standards Association]] with implementations in [[Rust]], enabling [[trustless]] [[DeFi]] and [[asset issuance]] on [[Bitcoin]].
 - #### Keet and Holepunch P2P Infrastructure
 - **[Updated 2025]** [[Tether]] and [[Bitfinex]] have released [Keet messenger](https://keet.io/), a [[peer-to-peer]] [[video calling]] and [[file sharing]] platform with native [[Bitcoin]] and [[Tether]] support for [[trustless]] [[value transmission]]. Non-custodial [[Lightning]] integration enables [[micropayments]] for [[bandwidth]], [[storage]], and [[compute]] resources.
-- [[Keet]] is built on [Hypercore](https://tether.to/en/tether-bitfinex-and-hypercore-launch-holepunch-a-platform-for-building-fully-encrypted-peer-to-peer-applications/) [[holepunch]] technology by [[Synonym]], enabling [[NAT traversal]] and [[encrypted]] [[P2P]] connections without [[centralised]] servers. This infrastructure could enable [[Bitcoin]]-native [[collaborative]] environments and [[metaverse]] applications with [[self-custodial]] [[payments]].
+- [[Keet]] is built on [Hypercore](https://tether.to/en/tether-bitfinex-and-hypercore-launch-holepunch-a-platform-for-building-fully-encrypted-peer-to-peer-applications/) [[holepunch]] technology by [[Synonym]], enabling [[NAT traversal]] and [[encrypted]] [[P2P]] connections without [[centralized]] servers. This infrastructure could enable [[Bitcoin]]-native [[collaborative]] environments and [[metaverse]] applications with [[self-custodial]] [[payments]].
 - #### Block and Spiral Bitcoin Development
 - **[Updated 2025]** [[Block]] (formerly [[Square]]) has evolved into an umbrella organization driving [[Bitcoin]] infrastructure development. As a [W3C Consortium member](https://www.w3.org/Consortium/Member/List), [[Block]] influences [[web standards]] for [[distributed identity]] and [[value transfer]]. While the company has faced [scrutiny from short-sellers](https://hindenburgresearch.com/block/), its [[Bitcoin]] development contributions remain substantial.
 - [[Spiral]] (formerly [[Square Crypto]]) funds critical [[Bitcoin]] and [[Lightning]] [[open-source]] development. Their flagship project, [Lightning Development Kit](https://spiral.xyz/blog/what-were-building-lightning-development-kit/) (LDK), provides modular [[Rust]] libraries enabling developers to integrate [[Lightning Network]] functionality into applications and [[wallets]] without implementing the full [[Lightning]] specification from scratch. [[LDK]] powers [[wallets]] including [[Mutiny]], [[Vortex]], [[Sensei]], and [[Breez]], and enables [[L402]] integration for [[Bitcoin]]-native [[API]] access control.
@@ -95,17 +181,7 @@ public:: true
 - The convergence of [[Bitcoin]], [[Lightning]], [[RGB]], and [[L402]] with [[AI]] and [[autonomous agents]] suggests a transformative future where [[machine-to-machine]] [[value transfer]] operates on [[Bitcoin]] [[rails]], enabling an [[AI]]-native [[economy]] with [[trustless]], [[instant]], [[global]] [[settlements]]. [[AI]] agents paying for [[compute]], [[data]], and [[inference]] via [[Lightning]]; [[RGB]] [[assets]] representing [[AI model weights]], [[training data]], or [[compute credits]]; [[L402]] enabling seamless [[API]] [[monetization]] - these compose into a coherent vision of [[Bitcoin]] as [[AI]] infrastructure.
 - These technical foundations position [[Bitcoin]] not merely as "[[digital gold]]" but as programmable infrastructure for the emerging [[AI]] [[economy]], [[decentralized]] [[collaborative]] systems, and [[censorship-resistant]] [[global commerce]]. The next decade will determine whether [[Bitcoin]]'s deliberately [[conservative]] development culture can successfully balance [[innovation]] with [[stability]] as [[layer-2]] ecosystems flourish and absorb experimental features while the [[base layer]] potentially [[ossifies]].
 - The technical achievements documented here - from [[elliptic curve]] [[cryptography]] to [[Lightning Network]] [[routing]] to [[RGB]] [[client-side validation]] - represent humanity's first successful implementation of [[trustless]] [[digital scarcity]] and [[programmable money]]. Whether [[Bitcoin]] ultimately succeeds in its maximalist vision of global [[monetary]] [[standard]] or serves as one component in a diverse [[cryptocurrency]] ecosystem, its technical innovations have permanently altered our understanding of what [[digital]] [[value transfer]] can achieve.[[nakamoto2008bitcoin]][[poon2016bitcoin]][[RGB-whitepaper]]
--
-
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
-
-## References and Further Reading
+- ## References and Further Reading
 - Key academic papers and technical specifications:
 	- [[nakamoto2008bitcoin]] - Nakamoto, S. (2008). "Bitcoin: A Peer-to-Peer Electronic Cash System"
 	- [[diffie1976new]] - Diffie, W., & Hellman, M. (1976). "New Directions in Cryptography"
@@ -126,201 +202,3 @@ public:: true
 	- [[todd2022tail]] - Todd, P. (2022). "Surprisingly, Tail Emission Is Not Inflationary"
 	- [[wikipedia-ossification]] - "Protocol Ossification" (2024). https://en.wikipedia.org/wiki/Protocol_ossification
 	- [[mutiny2024]] - Mutiny Wallet Documentation (2024). "Self-Custodial Lightning in Your Browser"
-
-## Related Content: Overview of Machine Learning Techniques
-
-public:: true
-
-- #Public page
-	- automatically published
-	- ## AI or ML or what?
-	- It's not intelligent. It's just machine learning which is statistics.
-	- Artificial intelligence is a marketing term, but it's supported in literature as the high level term.
-	- [That's OK!](https://simonwillison.net/2024/Jan/7/call-it-ai/)
-	- I'm mainly going to use AI from here in.
-	- ![1706985611136.gif](../assets/1706985611136_1707078214092_0.gif)
-- # Machine Learning Techniques Overview
-	- ## Supervised Learning
-		- **Concept**: Techniques where models learn from labelled data.
-		- **Explain**: Like teaching a child with clear examples and answers.
-		- ##### 1️⃣ Support Vector Machines (SVM)
-		- **Description**: Uses hyperplanes for classification.
-		- **Explain**: Think of drawing lines to separate different types of objects.
-		- **Paper**: [A comprehensive survey on support vector machine classification](https://www.sciencedirect.com/science/article/pii/S0925231220307153?)
-		- ##### 2️⃣ Naive Bayes
-		- **Description**: Probabilistic classifier based on Bayes' Theorem.
-		- **Explain**: Like guessing the likelihood of something happening based on past events.
-		- **Paper**: [An Empirical Study of the Naïve Bayes Classifier](https://sites.cc.gatech.edu/home/isbell/classes/reading/papers/Rish.pdf)
-		- ##### 3️⃣ Linear Regression
-		- **Description**: Models linear relationships between variables.
-		- **Explain**: Like predicting your height based on your age.
-		- **Medium Post:** [A short into to Linear Regression](https://medium.com/pew-research-centre-decoded/a-short-intro-to-linear-regression-analysis-using-survey-data-ff39468f8afb)
-		- ##### 4️⃣ Logistic Regression
-		- **Description**: Used for binary classification problems.
-		- **Explain**: Like deciding if something is true or false.
-		- **Paper**: [Logistic regression in data analysis: An overview](https://www.researchgate.net/profile/Maher-Maalouf-2/publication/283211221_IJDATS_Logistic_Regression_Rare_Events/data/562e0fb508ae518e34827577/IJDATS-Logistic-Regression-Rare-Events.pdf)
-		- ##### 5️⃣ Decision Trees
-		- **Description**: Tree-like model for decisions and consequences.
-		- **Explain**: Like a flowchart to make decisions, but using numbers (weights)
-		- **Paper**: [Study and Analysis of Decision Tree Based Classification Algorithms](https://www.researchgate.net/profile/Purvi-Prajapati/publication/330138092_Study_and_Analysis_of_Decision_Tree_Based_Classification_Algorithms/links/5d2c4a91458515c11c3166b3/Study-and-Analysis-of-Decision-Tree-Based-Classification-Algorithms.pdf)
-		- ##### 6️⃣ Random Forest
-		- **Description**: Ensemble of decision trees for improved accuracy.
-		- **Explain**: Like consulting a group of experts instead of just one.
-		- **Paper**: [Understanding Random Forests: From Theory to Practice](https://arxiv.org/abs/1407.7502)
-	- ## Unsupervised Learning
-		- **Concept**: Techniques where models learn from unlabeled data.
-		- **Explain Like I'm New**: Learning without direct guidance, like exploring a new city without a map.
-		- ##### 1️⃣ K-Means Clustering
-		- **Description**: Partitions data into k distinct clusters.
-		- **Explain Like I'm New**: Like organising similar things into different groups.
-		- **Paper**: [K-means clustering algorithms: A comprehensive review, variants, and advances](https://www.sciencedirect.com/science/article/pii/S0020025522014633?)
-		- ##### 2️⃣ K-Nearest Neighbours (KNN)
-		- **Description**: Classifies cases based on similarity measures.
-		- **Explain Like I'm New**: Like making friends based on common interests.
-		- **Paper**: [Comparative performance analysis of K-nearest neighbour (KNN)](https://www.nature.com/articles/s41598-022-10358-x)
-	- ### Neural Networks and Deep Learning id:: 659a9232-2320-494a-b922-968029718ad5
-		- **Concept**: Advanced algorithms inspired by the structure of the human brain.
-		- **Explain**: Like building a brain in a computer to solve complex problems.
-		- #### 1️⃣ Neural Networks
-		- **Description**: Consists of layers of interconnected nodes which just tweak numbers
-		- **Explain**: Like a network of brain cells working together to think and learn.
-		- **Paper**: [Neural networks: An overview of early research, current frameworks and new challenges](https://www.sciencedirect.com/science/article/pii/S0925231216305550?)
-		- {{video https://www.youtube.com/watch?v=aircAruvnKk&}}
-		- #### 2️⃣ Deep Learning
-		- **Description**: Involves training large neural networks.
-		- **Explain**: Larger scale engineering of neural nets, to solve much harder problems.
-		- **Paper**: [Deep Learning: A Comprehensive Overview on Techniques, Taxonomy, and Applications](https://link.springer.com/article/10.1007/s42979-021-00815-1)
-		- **Fine tuning and alignment**
-		- #### 3️⃣ Reinforcement Learning from Human Feedback [[RLHF]]
-			- **Description**: Two neural networks trained in an adversarial process.
-			- **Explain**: Like two brains, one creating art and the other judging it, helping each other improve.
-			- **Paper**: [Generative Adversarial Networks](https://ieeexplore.ieee.org/abstract/document/8253599?)
-		- #### 4️⃣ Direct Preference Optimisation [[DPO]]
-			- **Description:** *DPO dramatically simplifies the whole thing.
-			- **Explain:** Removes the reward function, and so the human in the loop.
-			- **Paper:** [Direct Preference Optimization: Your Language Model is Secretly a Reward Model (arxiv.org)](https://arxiv.org/abs/2305.18290?)
-		- **In operation:  [[Proprietary Large Language Models]]:**
-		- #### 5️⃣ Generative Adversarial Networks [[GANs]]
-			- **Description**: Two neural networks trained in an adversarial process.
-			- **Explain**: Like two brains, one creating art and the other judging it, helping each other improve.
-			- **Paper**: [Generative Adversarial Networks](https://ieeexplore.ieee.org/abstract/document/8253599?)
-		- #### 6️⃣ [[Diffusion Models]] (Generative Models)
-		  id:: 661d5f76-bb78-4920-949e-76c3dbf66efe
-			- **Description**: Advanced models that 'diffuse' data to create new, synthetic outputs, using efficient [[Transformers]]
-			- **Explain**: Imagine starting with a noisy, random pattern and gradually shaping it into a clear picture.
-			- **Paper**: [Diffusion Models: A Comprehensive Survey of Methods and Applications](https://arxiv.org/abs/2311.10242)  *(Note: This covers the lot including:)*
-		- #### 7️⃣ 🟢 [[Transformers]]
-		  id:: 661d5f76-3ffa-4f10-9027-6f8e90601162
-			- **Description:** Circa 2017, introduced self-attention mechanism to capture dependencies between different words in a sequence.
-			- **Explain:** Examines the interdependencies across a wider view of words / tokens
-			- **Paper:** [Attention Is All You Need (arxiv.org)](https://arxiv.org/abs/1706.03762) **(underpinned recent advances)**
-			- Not the only game in town [[State Space and Other Approaches]] and [others](https://hazyresearch.stanford.edu/blog/2023-06-08-hyena-safari)
-		- <iframe src="https://bbycroft.net/llm" style="width: 100%; height: 600px"></iframe>
-- Next [[presentation]] slide [[Proprietary Large Language Models]]
-
-## Current Landscape (2025)
-
-- Industry adoption and implementations
-  - Metaverse platforms continue to evolve with focus on interoperability and open standards
-  - Web3 integration accelerating with decentralised identity and asset ownership
-  - Enterprise adoption growing in virtual collaboration, training, and digital twins
-  - UK companies increasingly active in metaverse development and immersive technologies
-
-- Technical capabilities
-  - Real-time rendering at photorealistic quality levels
-  - Low-latency networking enabling seamless multi-user experiences
-  - AI-driven content generation and procedural world building
-  - Spatial audio and haptics enhancing immersion
-
-- UK and North England context
-  - Manchester: Digital Innovation Factory supports metaverse startups and research
-  - Leeds: Holovis leads in immersive experiences for entertainment and training
-  - Newcastle: University research in spatial computing and interactive systems
-  - Sheffield: Advanced manufacturing using digital twin technology
-
-- Standards and frameworks
-  - Metaverse Standards Forum driving interoperability protocols
-  - WebXR enabling browser-based immersive experiences
-  - glTF and USD for 3D asset interchange
-  - Open Metaverse Interoperability Group defining cross-platform standards
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
-
-## Related Content: Model Training
-
-- [OpenAccess-AI-Collective/axolotl: Go ahead and axolotl questions (github.com)](https://github.com/OpenAccess-AI-Collective/axolotl)
-- Mistral takes a mere £500 for a 7B retrain.
-- ### Custom models
-	- AI/ML is the high interest rate credit card of product development
-	- The likely emerging trend for [[Large language models]] is small models optimised for your data, with API collaboration and support from a big foundational model.
-	- Think [[Mistral]], replacing one of the experts with YOUR expert
-	- This is kinda true for image and video too, in that you can blend workflows between powerful online systems and more nuanced personal models. (imagebashing).
-	- ### How to train models?
-		- Smaller data and workflows:
-			- Do it yourself with suitable cloud hardware. This applies to all Gen AI.
-			- [[LoRA DoRA etc]] are very accessible. Basically nudge the existing models for your requirements.
-			- Low legal peril.
-		- Medium scale problems:
-			- Own the skills you need for your data / product problem.
-			- There's a lot of guidance from the major players like Microsoft
-			  [Develop Generative AI solutions with Azure OpenAI Service
-		- Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-openai/)
-			- Get in a private consultant like me and onboard the skills for your product / data problem
-			- This is the same model a the hub and spokes needed for larger models
-		- Large / complex product and data challenges:
-			- The industry is set up around the necessary datacentres. These are centres of excellence, commercial labs, Universities, etc.
-			- Engage commercial data team who get you up to speed and train your model on their hardware.
-				- Salford Uni will doubtless have a strategy with Azure.
-				- [Deep Learning & Artificial Intelligence SCAN Business | SCAN UK](https://www.scan.co.uk/business/deep-learning)
-				- [Europe’s largest private AI lab | Silo AI](https://www.silo.ai/)
-				- [Advanced Solutions Lab Google Cloud](https://cloud.google.com/asl/)
-				- Hartree?
-	- ### Roll out in the cloud.
-	- Play with [Runpod](https://www.runpod.io/). There's some great [YouTube tutorials](https://www.youtube.com/watch?v=WjiX3lCnwUI)
-	- I use a [Lambda Labs H100](https://lambdalabs.com/).
-	- Unless you really know what you're doing, or you have a LOT of data, I wouldn't buy GPUs and attempt the inferencing side yourself
-	- ## In Politics.
-		- [An AI Bot Is (Sort of) Running for Mayor in Wyoming | WIRED](https://www.wired.com/story/ai-bot-running-for-mayor-wyoming/)
-		- [There’s an AI Candidate Running for Parliament in the UK | WIRED](https://www.wired.com/story/ai-candidate-running-for-parliament-uk/)
-		- [[Politics, Law, Privacy]]
-
-## Current Landscape (2025)
-
-- Industry adoption and implementations
-  - Metaverse platforms continue to evolve with focus on interoperability and open standards
-  - Web3 integration accelerating with decentralised identity and asset ownership
-  - Enterprise adoption growing in virtual collaboration, training, and digital twins
-  - UK companies increasingly active in metaverse development and immersive technologies
-
-- Technical capabilities
-  - Real-time rendering at photorealistic quality levels
-  - Low-latency networking enabling seamless multi-user experiences
-  - AI-driven content generation and procedural world building
-  - Spatial audio and haptics enhancing immersion
-
-- UK and North England context
-  - Manchester: Digital Innovation Factory supports metaverse startups and research
-  - Leeds: Holovis leads in immersive experiences for entertainment and training
-  - Newcastle: University research in spatial computing and interactive systems
-  - Sheffield: Advanced manufacturing using digital twin technology
-
-- Standards and frameworks
-  - Metaverse Standards Forum driving interoperability protocols
-  - WebXR enabling browser-based immersive experiences
-  - glTF and USD for 3D asset interchange
-  - Open Metaverse Interoperability Group defining cross-platform standards
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
-
-### Relationships
-- is-subclass-of:: [[Blockchain]]

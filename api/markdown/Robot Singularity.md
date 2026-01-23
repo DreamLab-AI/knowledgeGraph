@@ -6,9 +6,9 @@ id:: unknown-ontology
   - public-access:: true
   - term-id:: MV-9741
   - preferred-term:: Robot Singularity
-  - source-domain:: mv
-  - owl:class:: mv:IdUnknownontology
+  - source-domain:: robotics
+  - owl:class:: rb:RobotSingularity
   - status:: draft
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[RoboticsDomain]]

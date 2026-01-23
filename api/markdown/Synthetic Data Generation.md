@@ -1,30 +1,33 @@
 - ### OntologyBlock
   id:: 0422-synthetic-data-generation-ontology
   collapsed:: true
-	- ontology:: true
-	- term-id:: DT-0422
-	- preferred-term:: Synthetic Data Generation
-	- source-domain:: ai
-	- status:: in
-	- public-access:: true
 
+  - **Identification**
+    - public-access:: true
+    - ontology:: true
+    - term-id:: AI-0422
+    - preferred-term:: Synthetic Data Generation
+    - source-domain:: ai
+    - status:: in-progress
+    - version:: 1.0
+    - last-updated:: 2025-10-29
 
+  - **Definition**
+    - definition:: 
+    - maturity:: mature
+    - source:: 
+    - authority-score:: 0.95
 
+  - **Semantic Classification**
+    - owl:class:: aigo:SyntheticDataGeneration
+    - owl:physicality:: VirtualEntity
+    - owl:role:: Process
+    - owl:inferred-class:: aigo:VirtualProcess
+    - belongsToDomain:: [[AIEthicsDomain]]
+    - implementedInLayer:: [[ConceptualLayer]]
 
-### OWL Classification
-	- owl:class:: ai:SyntheticDataGeneration
-	- owl:physicality:: VirtualEntity
-	- owl:role:: Process
-	- owl:inferred-class:: ai:VirtualProcess
-
-### Domain & Architecture
-	- belongsToDomain:: [[AIEthicsDomain]], [[DisruptiveTechDomain]]
-	- implementedInLayer:: [[ConceptualLayer]]
-	- maturity:: mature
-
-### Relationships
-- is-subclass-of:: [[Artificial Intelligence]]
-id:: 0422-synthetic-data-generation-relationships
+  - #### Relationships
+    id:: 0422-synthetic-data-generation-relationships
 
   - #### OWL Axioms
     id:: 0422-synthetic-data-generation-owl-axioms
@@ -107,14 +110,13 @@ id:: 0422-synthetic-data-generation-relationships
 - ## About 0422 Synthetic Data Generation
   id:: 0422-synthetic-data-generation-about
 
+  - 
   -
-  -
+  
+
 
 
 # Updated Ontology Entry: 0422 Synthetic Data Generation
-
-### Quality Metrics
-	- authority-score:: 0.95
 
 ## Academic Context
 
@@ -214,10 +216,12 @@ id:: 0422-synthetic-data-generation-relationships
 
 [9] Google Research (2025). "Beyond Billion-Parameter Burdens: Unlocking Data Synthesis with a Conditional Generator." Available at: research.google/blog/beyond-billion-parameter-burdens-unlocking-data-synthesis-with-a-conditional-generator/
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
 

@@ -5,24 +5,25 @@
   "backlinks": [
     "Metadata Standards",
     "Digital Curation Platform",
-    "BC-0436-hyperledger-iroha",
+    "BC 0115 minting",
     "Media Library",
     "Shared Ownership Model",
     "Tokenization",
-    "Temporary Asset Access"
+    "Temporary Asset Access",
+    "Digital Goods Registry"
   ],
   "wiki_links": [
-    "Compliance Systems",
-    "Index Products",
+    "Asset Allocation",
+    "Crypto Funds",
     "Wealth Management",
-    "Analytics Tools",
+    "Risk Management",
     "Investment Management",
+    "Compliance Systems",
     "Portfolio Optimization",
+    "Analytics Tools",
     "metaverse",
     "Custody Solutions",
-    "Asset Allocation",
-    "Risk Management",
-    "Crypto Funds"
+    "Index Products"
   ],
   "ontology": {
     "term_id": "MV-9850",

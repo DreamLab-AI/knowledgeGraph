@@ -20,26 +20,26 @@
     "Digital Money",
     "Tokenization",
     "Play-to-Earn (P2E)",
-    "Decentralized Identifiers",
     "Digital Payment System",
     "NFT Renting",
     "Marketplace",
     "Digital Currency",
     "Decentralized Exchange (DEX)",
     "Digital Asset",
-    "Loyalty Token"
+    "Loyalty Token",
+    "Token Custody Service"
   ],
   "wiki_links": [
-    "Self-Custody",
-    "DeFi Access",
-    "Asset Management",
-    "Cryptographic Security",
-    "Web3",
-    "Blockchain Network",
-    "Private Key",
-    "Cryptocurrency Storage",
+    "Hardware Wallet",
     "Transaction Signing",
-    "Hardware Wallet"
+    "Blockchain Network",
+    "Cryptographic Security",
+    "Cryptocurrency Storage",
+    "Private Key",
+    "Web3",
+    "DeFi Access",
+    "Self-Custody",
+    "Asset Management"
   ],
   "ontology": {
     "term_id": "MV-9881",

@@ -1,19 +1,46 @@
-### Definition
-
-Motion Control encompasses algorithms, systems, and methodologies for planning and executing desired robot trajectories, translating high-level task objectives into precise time-varying position, velocity, and acceleration commands for actuators. This discipline integrates path planning determining collision-free geometric routes, trajectory generation adding temporal constraints respecting dynamics limitations, and feedback control tracking desired motions despite disturbances and model uncertainties. Effective motion control directly determines robot productivity, precision, and safety across all applications from assembly to surgery.
-
 - ### OntologyBlock
-  id:: Motion Control
-  - ontology:: true
-  - public-access:: true
-  - term-id:: RB-1015
-  - preferred-term:: Motion Control
-  - owl:class:: rb:MotionControl
-  - is-subclass-of:: [[Robotics]]
-  - definition:: Motion control encompasses algorithms, systems, and methodologies for planning and executing desired robot trajectories, translating high-level task objectives into precise actuator commands.
-  - source-domain:: rb
-  - status:: draft
+  id:: motioncontrol-ontology
+  collapsed:: true
 
-Motion Control encompasses algorithms, systems, and methodologies for planning and executing desired robot trajectories, translating highlevel task objectives into precise timevarying position, velocity, and acceleration commands for actuators. This discipline integrates path planning determining collisionfree geometric routes, trajectory generation adding temporal constraints respecting dynamics limitations, and feedback control tracking desired motions despite disturbances and model uncertainties. Effective motion control directly determines robot productivity, precision, and safety across all applications from assembly to surgery.
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0145
+    - filename-history:: ["RB-0145-motioncontrol.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: RB-0145
+    - preferred-term:: Motion Control
+    - source-domain:: rb
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-Motion Control encompasses algorithms, systems, and methodologies for planning and executing desired robot trajectories, translating highlevel task objectives into precise timevarying position, velocity, and acceleration commands for actuators. This discipline integrates path planning determining collisionfree geometric routes, trajectory generation adding temporal constraints respecting dynamics limitations, and feedback control tracking desired motions despite disturbances and model uncertainties. Effective motion control directly determines robot productivity, precision, and safety across all applications from assembly to surgery.
+  - **Definition**
+    - definition:: Motion control plans and executes desired robot motion through joint space or task space.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: rb:MotionControl
+    - belongsToDomain:: [[Robotics]]
+
+  - #### Relationships
+    - is-subclass-of:: [[Control System]]
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :MotionControl))
+      (SubClassOf :MotionControl :ControlSystem)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :MotionControl "Motion Control"@en)
+      (AnnotationAssertion rdfs:comment :MotionControl
+        "Motion control plans and executes desired robot motion through joint space or task space."@en)
+      ```
+
+- ## About Motion Control
+  Motion control plans and executes desired robot motion through joint space or task space.
+  
+  A control system governing robot movement and trajectories.

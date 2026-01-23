@@ -1,20 +1,49 @@
-### Definition
-
-ERC-1155 Token refers to a multi-token standard offering semi-fungibility where tokens represent classes of interchangeable assets. bundles multiple assets (fungible and non-fungible) in one smart contract for efficient gas usage and reduced network congestion.
-
 - ### OntologyBlock
-  id:: E R C1155 Token
-  - ontology:: true
-  - public-access:: true
-  - term-id:: BC-9907
-  - preferred-term:: ERC1155 Token
-  - source-domain:: bc
-  - owl:class:: bc:Erc1155Token
-  - status:: draft
+  id:: erc1155token-ontology
+  collapsed:: true
 
-ERC1155 Token refers to a multitoken standard offering semifungibility where tokens represent classes of interchangeable assets. bundles multiple assets (fungible and nonfungible) in one smart contract for efficient gas usage and reduced network congestion.
+  - **Identification**
+    - domain-prefix:: BC
+    - sequence-number:: 0517
+    - filename-history:: ["BC-0517-erc1155token.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: BC-0517
+    - preferred-term:: ERC-1155 Token
+    - source-domain:: bc
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-ERC1155 Token refers to a multitoken standard offering semifungibility where tokens represent classes of interchangeable assets. bundles multiple assets (fungible and nonfungible) in one smart contract for efficient gas usage and reduced network congestion.
+  - **Definition**
+    - definition:: A multi-token standard offering semi-fungibility where tokens represent classes of interchangeable assets. Bundles multiple assets (fungible and non-fungible) in one smart contract for efficient gas usage and reduced network congestion.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-### Relationships
-- is-subclass-of:: [[Blockchain]]
+  - **Semantic Classification**
+    - owl:class:: bc:ERC1155Token
+    - belongsToDomain:: [[Blockchain]]
+
+  - #### Relationships
+    - is-subclass-of:: [[Semi Fungible Token]]
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :ERC1155Token))
+      (SubClassOf :ERC1155Token :SemiFungibleToken)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :ERC1155Token "ERC-1155 Token"@en)
+      (AnnotationAssertion rdfs:comment :ERC1155Token
+        "A multi-token standard offering semi-fungibility where tokens represent classes of interchangeable assets. Bundles multiple assets (fungible and non-fungible) in one smart contract for efficient gas usage and reduced network congestion."@en)
+      ```
+
+- ## About ERC-1155 Token
+  A multi-token standard offering semi-fungibility where tokens represent classes of interchangeable assets. Bundles multiple assets (fungible and non-fungible) in one smart contract for efficient gas usage and reduced network congestion.
+  
+  Fungibility-independent design. Batch operations for multiple token types. Ideal for gaming applications with diverse asset types.
+  
+  ### Examples
+  - Enjin gaming items, The Sandbox assets

@@ -4,10 +4,10 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9951
-	- source-domain:: mv
+	- source-domain:: artificial-intelligence
 	- preferred-term:: Machine Learning Model
 	- status:: active
-	- owl:class:: mv:MachineLearningModel
+	- owl:class:: ai:MachineLearningModel
 	- belongsToDomain:: [[metaverse]]
 	- definition:: Computational algorithms trained on data to recognise patterns, make predictions, and perform tasks in metaverse applications, including neural networks for content generation, NPC behaviour, computer vision, and natural language processing.
 	- #### Relationships

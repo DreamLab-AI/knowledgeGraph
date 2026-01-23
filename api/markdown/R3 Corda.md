@@ -4,25 +4,20 @@
 	- ontology:: true
 	- term-id:: BC-0437
 	- preferred-term:: R3 Corda
-	- source-domain:: mv
-	- status:: active
-	- public-access:: true
-	- definition:: R3 Corda is an enterprise-grade permissioned distributed ledger technology (DLT) platform designed for regulated financial markets, employing peer-to-peer messaging architecture with need-to-know data sharing rather than global broadcast, enabling multi-party workflows with strong identity verification via x.509 certificates while maintaining privacy through node-specific ledgers recording counterparty positions.
-
-
-
-
-### OWL Classification
+	- source-domain:: bc
+	- status:: stub-needs-content
+    - public-access:: true
+	- content-status:: minimal-placeholder-requires-authoring
+    - public-access:: true
+	- definition:: A component of the blockchain ecosystem.
+	- maturity:: draft
 	- owl:class:: bc:R3Corda
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-
-### Domain & Architecture
 	- belongsToDomain:: [[BlockchainDomain]]
-	- maturity:: draft
 
-### Relationships
-- is-subclass-of:: [[Metaverse]]
+
+# Updated Ontology Entry: R3 Corda
 
 ## Academic Context
 
@@ -104,11 +99,14 @@
 
 - IntellectEU Catalyst Blockchain Manager (2025). *Corda Introduction: Technical Documentation*.
 
+
 ## Metadata
+
 
 - **Migration Status**: Ontology block enriched on 2025-11-12
 - **Last Updated**: 2025-11-12
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
 

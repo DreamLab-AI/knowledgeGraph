@@ -1,36 +1,46 @@
 - ### OntologyBlock
-    - term-id:: MV-0151
-    - source-domain:: mv
-    - owl:class:: mv:VariableImpedanceControl
-    - preferred-term:: Variable Impedance Control
-    - ontology:: true
+  id:: variableimpedancecontrol-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0151
+    - filename-history:: ["RB-0151-variableimpedancecontrol.md"]
     - public-access:: true
-    - is-subclass-of:: [[Control Method]]
+    - ontology:: true
+    - term-id:: RB-0151
+    - preferred-term:: Variable Impedance Control
+    - source-domain:: rb
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## Variable Impedance Control
+  - **Definition**
+    - definition:: Variable impedance control modulates robot impedance parameters online based on task requirements.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-Variable Impedance Control refers to variable impedance control modulates robot impedance parameters online based on task requirements.
+  - **Semantic Classification**
+    - owl:class:: rb:VariableImpedanceControl
+    - belongsToDomain:: [[Robotics]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
+    - is-subclass-of:: [[Impedance Control]]
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :VariableImpedanceControl))
+      (SubClassOf :VariableImpedanceControl :ImpedanceControl)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :VariableImpedanceControl "Variable Impedance Control"@en)
+      (AnnotationAssertion rdfs:comment :VariableImpedanceControl
+        "Variable impedance control modulates robot impedance parameters online based on task requirements."@en)
+      ```
 
-- **Id**: variableimpedancecontrol-ontology
-- **Collapsed**: true
-- **Domain Prefix**: RB
-- **Sequence Number**: 0151
-- **Filename History**: ["RB-0151-variableimpedancecontrol.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: rb:VariableImpedanceControl
-- **Belongstodomain**: [[Robotics]]
-- **Is Subclass Of**: [[Impedance Control]]
+- ## About Variable Impedance Control
+  Variable impedance control modulates robot impedance parameters online based on task requirements.
+  
+  An impedance control system with online adjustable parameters.

@@ -4,24 +4,20 @@
 	- ontology:: true
 	- term-id:: BC-0452
 	- preferred-term:: Customs Trade Facilitation
-	- source-domain:: mv
-	- status:: active
-	- public-access:: true
-
-
-
-
-### OWL Classification
+	- source-domain:: bc
+	- status:: stub-needs-content
+    - public-access:: true
+	- content-status:: minimal-placeholder-requires-authoring
+    - public-access:: true
+	- definition:: A component of the blockchain ecosystem.
+	- maturity:: draft
 	- owl:class:: bc:CustomsTradeFacilitation
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-
-### Domain & Architecture
 	- belongsToDomain:: [[BlockchainDomain]]
-	- maturity:: draft
 
-### Relationships
-- is-subclass-of:: [[Metaverse]]
+
+# Updated Ontology Entry: Customs Trade Facilitation
 
 ## Academic Context
 
@@ -114,15 +110,18 @@
 
 [5] European Parliament. (2020). *Blockchain for Supply Chains and International Trade*. EPRS Study 641544/EN. Brussels: European Parliamentary Research Service.
 
-[6] APEC Sub-Committee on Customs Procedures. (2025). "Modernizing Customs: Tackling Trade Bottlenecks and Digital Pressures." Press Release, November 2025. Available at: apec.org/press/news-releases/2025/modernising-customs--tackling-trade-bottlenecks-and-digital-pressures
+[6] APEC Sub-Committee on Customs Procedures. (2025). "Modernizing Customs: Tackling Trade Bottlenecks and Digital Pressures." Press Release, November 2025. Available at: apec.org/press/news-releases/2025/modernizing-customs--tackling-trade-bottlenecks-and-digital-pressures
 
 [7] OECD. (2025). *The Digitalisation of Trade Documents and Processes*. Paris: OECD Publishing. DOI: Available at: oecd.org/content/dam/oecd/en/publications/reports/2025/09/the-digitalisation-of-trade-documents-and-processes_de6a03e9/64872f25-en.pdf
 
+
 ## Metadata
+
 
 - **Migration Status**: Ontology block enriched on 2025-11-12
 - **Last Updated**: 2025-11-12
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
 

@@ -2,47 +2,171 @@
   id:: digital-well-being-index-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: DT-0259
+	- term-id:: 20259
 	- source-domain:: mv
-	- preferred-term:: Digital Well-Being Index
 	- status:: draft
-	- public-access:: true
+- public-access:: true
+	- preferred-term:: Digital Well-Being Index
 	- definition:: Composite indicator assessing psychological, social, physical, and temporal impacts of extended virtual engagement, providing quantitative measures of healthy metaverse usage patterns.
-	- source:: [[WHO Digital Well-Being Metrics]]
 	- maturity:: mature
+	- source:: [[WHO Digital Well-Being Metrics]]
 	- owl:class:: mv:DigitalWellBeingIndex
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[VirtualSocietyDomain]], [[DisruptiveTechDomain]], [[TrustAndGovernanceDomain]]
+	- belongsToDomain:: [[VirtualSocietyDomain]], [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[Middleware Layer]], [[Application Layer]]
 	- #### Relationships
-- is-subclass-of:: [[Metaverse]]
 	  id:: digital-well-being-index-relationships
+		- has-part:: [[Screen Time Metrics]], [[Social Engagement Scores]], [[Physical Activity Indicators]], [[Sleep Impact Assessment]], [[Cognitive Load Measurements]], [[Emotional Wellness Scores]]
+		- is-part-of:: [[User Health Monitoring System]], [[Platform Governance Framework]]
+		- requires:: [[Usage Analytics]], [[Health Data Integration]], [[Behavioral Tracking]], [[Temporal Analysis Tools]]
+		- depends-on:: [[Activity Logging]], [[Wearable Device Integration]], [[Self-Report Surveys]], [[Metaverse Psychology Profile]]
+		- enables:: [[Usage Alerts]], [[Healthy Engagement Recommendations]], [[Parental Controls]], [[Platform Health Reports]], [[Regulatory Compliance]]
+	- #### OWL Axioms
+	  id:: digital-well-being-index-owl-axioms
 	  collapsed:: true
-		- is-part-of:: [[Platform Governance Framework]]
-		- is-part-of:: [[User Health Monitoring System]]
-		- has-part:: [[Cognitive Load Measurements]]
-		- has-part:: [[Social Engagement Scores]]
-		- has-part:: [[Physical Activity Indicators]]
-		- has-part:: [[Emotional Wellness Scores]]
-		- has-part:: [[Sleep Impact Assessment]]
-		- has-part:: [[Screen Time Metrics]]
-		- requires:: [[Usage Analytics]]
-		- requires:: [[Temporal Analysis Tools]]
-		- requires:: [[Behavioral Tracking]]
-		- requires:: [[Health Data Integration]]
-		- enables:: [[Parental Controls]]
-		- enables:: [[Regulatory Compliance]]
-		- enables:: [[Platform Health Reports]]
-		- enables:: [[Healthy Engagement Recommendations]]
-		- enables:: [[Usage Alerts]]
-		- depends-on:: [[Activity Logging]]
-		- depends-on:: [[Wearable Device Integration]]
-		- depends-on:: [[Self-Report Surveys]]
-		- depends-on:: [[Metaverse Psychology Profile]]
+		- ```clojure
+		  Declaration(Class(mv:DigitalWellBeingIndex))
 
+		  # Classification along two primary dimensions
+		  SubClassOf(mv:DigitalWellBeingIndex mv:VirtualEntity)
+		  SubClassOf(mv:DigitalWellBeingIndex mv:Object)
+
+		  # Domain-specific constraints
+		  SubClassOf(mv:DigitalWellBeingIndex
+		    ObjectSomeValuesFrom(mv:hasPart mv:ScreenTimeMetrics)
+		  )
+
+		  SubClassOf(mv:DigitalWellBeingIndex
+		    ObjectSomeValuesFrom(mv:hasPart mv:SocialEngagementScores)
+		  )
+
+		  SubClassOf(mv:DigitalWellBeingIndex
+		    ObjectSomeValuesFrom(mv:hasPart mv:PhysicalActivityIndicators)
+		  )
+
+		  SubClassOf(mv:DigitalWellBeingIndex
+		    ObjectSomeValuesFrom(mv:hasPart mv:EmotionalWellnessScores)
+		  )
+
+		  SubClassOf(mv:DigitalWellBeingIndex
+		    ObjectSomeValuesFrom(mv:requires mv:UsageAnalytics)
+		  )
+
+		  SubClassOf(mv:DigitalWellBeingIndex
+		    ObjectSomeValuesFrom(mv:requires mv:HealthDataIntegration)
+		  )
+
+		  SubClassOf(mv:DigitalWellBeingIndex
+		    ObjectSomeValuesFrom(mv:requires mv:BehavioralTracking)
+		  )
+
+		  SubClassOf(mv:DigitalWellBeingIndex
+		    ObjectSomeValuesFrom(mv:dependsOn mv:ActivityLogging)
+		  )
+
+		  SubClassOf(mv:DigitalWellBeingIndex
+		    ObjectSomeValuesFrom(mv:dependsOn mv:WearableDeviceIntegration)
+		  )
+
+		  SubClassOf(mv:DigitalWellBeingIndex
+		    ObjectSomeValuesFrom(mv:enables mv:UsageAlerts)
+		  )
+
+		  SubClassOf(mv:DigitalWellBeingIndex
+		    ObjectSomeValuesFrom(mv:enables mv:HealthyEngagementRecommendations)
+		  )
+
+		  # Domain classification
+		  SubClassOf(mv:DigitalWellBeingIndex
+		    ObjectSomeValuesFrom(mv:belongsToDomain mv:VirtualSocietyDomain)
+		  )
+
+		  SubClassOf(mv:DigitalWellBeingIndex
+		    ObjectSomeValuesFrom(mv:belongsToDomain mv:TrustAndGovernanceDomain)
+		  )
+
+		  # Layer classification
+		  SubClassOf(mv:DigitalWellBeingIndex
+		    ObjectSomeValuesFrom(mv:implementedInLayer mv:MiddlewareLayer)
+		  )
+
+		  SubClassOf(mv:DigitalWellBeingIndex
+		    ObjectSomeValuesFrom(mv:implementedInLayer mv:ApplicationLayer)
+		  )
+
+  # Property characteristics
+  TransitiveObjectProperty(dt:ispartof)
+
+  # Property characteristics
+  AsymmetricObjectProperty(dt:requires)
+
+  # Property characteristics
+  AsymmetricObjectProperty(dt:dependson)
+
+  # Property characteristics
+  AsymmetricObjectProperty(dt:enables)
+```
+- ## About Digital Well-Being Index
+  id:: digital-well-being-index-about
+	- The Digital Well-Being Index is a composite, multi-dimensional indicator that quantitatively assesses the psychological, social, physical, and temporal impacts of extended engagement with virtual environments. It aggregates diverse metrics—including screen time, social interaction quality, physical activity levels, sleep quality, cognitive load, and emotional wellness—to provide a holistic score reflecting healthy or potentially harmful metaverse usage patterns. This index serves platform operators, health professionals, parents, regulators, and users themselves in monitoring and promoting sustainable digital engagement.
+	- ### Key Characteristics
+	  id:: digital-well-being-index-characteristics
+		- **Multi-Dimensional Assessment** - Integrates psychological, social, physical, and temporal health dimensions
+		- **Quantitative Scoring** - Provides standardized numerical scores for objective comparison
+		- **Real-Time Monitoring** - Updates continuously based on usage patterns and behavioral data
+		- **Evidence-Based Metrics** - Grounded in WHO and academic research on digital well-being
+		- **Personalized Thresholds** - Adapts healthy engagement benchmarks to individual profiles
+		- **Actionable Insights** - Generates specific recommendations for improving well-being scores
+	- ### Technical Components
+	  id:: digital-well-being-index-components
+		- [[Screen Time Metrics]] - Tracks daily, weekly, and session-based virtual environment exposure
+		- [[Social Engagement Scores]] - Evaluates quality and quantity of social interactions
+		- [[Physical Activity Indicators]] - Monitors movement, exercise, and sedentary behavior
+		- [[Sleep Impact Assessment]] - Analyzes sleep quality correlation with virtual usage patterns
+		- [[Cognitive Load Measurements]] - Assesses mental fatigue and attention sustainability
+		- [[Emotional Wellness Scores]] - Tracks mood, stress levels, and affective balance
+		- [[Usage Analytics Engine]] - Aggregates and processes behavioral data
+		- [[Health Data Integration Layer]] - Connects with wearables and health platforms
+	- ### Functional Capabilities
+	  id:: digital-well-being-index-capabilities
+		- **Automated Usage Alerts** - Notifies users when exceeding healthy engagement thresholds
+		- **Personalized Recommendations** - Suggests breaks, physical activity, or social interactions
+		- **Parental Monitoring** - Provides guardians with child well-being dashboard access
+		- **Platform Health Reporting** - Generates aggregated, anonymized public health data
+		- **Regulatory Compliance** - Supports adherence to digital well-being regulations
+		- **Intervention Triggering** - Activates protective features when risk indicators detected
+	- ### Use Cases
+	  id:: digital-well-being-index-use-cases
+		- **Individual Health Monitoring** - Users track their own digital wellness over time
+		- **Parental Controls** - Parents monitor and manage children's virtual engagement health
+		- **Platform Self-Regulation** - Metaverse operators proactively promote healthy usage
+		- **Public Health Research** - Epidemiological studies on digital engagement impacts
+		- **Regulatory Compliance** - Meeting government requirements for user protection
+		- **Corporate Wellness Programs** - Employers monitor virtual workspace engagement health
+		- **Educational Safeguards** - Schools ensure students maintain healthy virtual learning balance
+		- **Therapeutic Interventions** - Mental health professionals use index for treatment planning
+	- ### Standards & References
+	  id:: digital-well-being-index-standards
+		- [[WHO Digital Well-Being Metrics]] - World Health Organization standards for digital health
+		- [[OECD Digital Society Report]] - Policy frameworks for digital well-being
+		- [[ISO 27500]] - Human-Centered Organization standards for well-being
+		- [[IEEE Digital Wellness Framework]] - Technical standards for wellness monitoring
+		- [[APA Screen Time Guidelines]] - Psychological recommendations for digital engagement
+		- [[GDPR Article 6]] - Lawful basis for health data processing
+		- [[Children's Online Privacy Protection Act]] - Special protections for minors
+	- ### Related Concepts
+	  id:: digital-well-being-index-related
+		- [[Metaverse Psychology Profile]] - Provides psychological trait data for personalized index calculation
+		- [[User Health Monitoring System]] - Broader health tracking framework
+		- [[Platform Governance Framework]] - Regulatory and ethical oversight structure
+		- [[Usage Analytics]] - Technical foundation for data collection
+		- [[Parental Controls]] - Access restriction mechanisms enabled by index
+		- [[Wearable Device Integration]] - Physical health data sources
+		- [[Virtual Society]] - Social context where well-being index promotes healthy communities
+		- [[VirtualObject]] - Ontology classification as virtual measurement object
 ## Academic Context
 
 - The Digital Well-Being Index (DWBI) is a composite indicator designed to quantitatively assess the psychological, social, physical, and temporal effects of extended virtual engagement, particularly in immersive environments such as the metaverse.
@@ -63,7 +187,7 @@
 
 - Key academic sources include:
   - Elhai et al. (2025). "A Network Analysis of Digital Well-Being Dimensions and Protective Factors." *Journal of Medical Internet Research*, 27(1), e70483. DOI: 10.2196/70483[4].
-  - Stanford University Centre for Digital Health (2025). "Youth Safety and Digital Wellbeing Report." This report highlights complexities in measuring youth online harms and the need for data transparency from platforms[3].
+  - Stanford University Center for Digital Health (2025). "Youth Safety and Digital Wellbeing Report." This report highlights complexities in measuring youth online harms and the need for data transparency from platforms[3].
   - OECD (2025). "Measuring Well-being and Progress," which contextualises digital well-being within broader societal well-being frameworks[7].
 - Ongoing research focuses on refining measurement tools, understanding platform mitigation impacts, and developing evidence-based interventions to promote healthy digital engagement.
 
@@ -81,15 +205,16 @@
 
 ## References
 
-1. Snap Inc. (2025). *Digital Well-Being Index – Year Three*. Snap Safety and Privacy Hub.
-2. Sync Ithra. (2025). *Global Digital Wellbeing Index*.
-3. Stanford University Centre for Digital Health. (2025). *Youth Safety and Digital Wellbeing Report*.
-4. Elhai, J. D., et al. (2025). A Network Analysis of Digital Well-Being Dimensions and Protective Factors. *Journal of Medical Internet Research*, 27(1), e70483. https://doi.org/10.2196/70483
-5. International Telecommunication Union (ITU). (2025). *A Guide to Digital Wellbeing*.
-6. OECD. (2025). *How's Your Digital Well-being?* OECD Statistics Blog.
-7. OECD. (2025). *Measuring Well-being and Progress*.
-8. Snap Inc. (2024). *Digital Well-Being Index Wave 3 Report Presentation*.
+1. Snap Inc. (2025). *Digital Well-Being Index – Year Three*. Snap Safety and Privacy Hub.  
+2. Sync Ithra. (2025). *Global Digital Wellbeing Index*.  
+3. Stanford University Center for Digital Health. (2025). *Youth Safety and Digital Wellbeing Report*.  
+4. Elhai, J. D., et al. (2025). A Network Analysis of Digital Well-Being Dimensions and Protective Factors. *Journal of Medical Internet Research*, 27(1), e70483. https://doi.org/10.2196/70483  
+5. International Telecommunication Union (ITU). (2025). *A Guide to Digital Wellbeing*.  
+6. OECD. (2025). *How's Your Digital Well-being?* OECD Statistics Blog.  
+7. OECD. (2025). *Measuring Well-being and Progress*.  
+8. Snap Inc. (2024). *Digital Well-Being Index Wave 3 Report Presentation*.  
 9. Internet Matters. (2025). *Our Digital Wellbeing Research Programme*.
+
 
 ## Metadata
 
@@ -97,4 +222,3 @@
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-

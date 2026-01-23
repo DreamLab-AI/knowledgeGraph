@@ -1,19 +1,46 @@
-### Definition
-
-Differential Kinematics establishes the mathematical relationship between joint velocities and end-effector Cartesian velocities through the Jacobian matrix, enabling velocity-level motion control, real-time trajectory tracking, and singularity analysis. Unlike forward/inverse kinematics operating on positions, differential kinematics operates on instantaneous velocities, providing the foundation for resolved-rate control, teleoperation, and impedance control in modern robotics.
-
 - ### OntologyBlock
-  id:: Differential Kinematics
-  - ontology:: true
-  - public-access:: true
-  - term-id:: RB-1053
-  - preferred-term:: Differential Kinematics
-  - owl:class:: rb:DifferentialKinematics
-  - is-subclass-of:: [[Robotics]]
-  - definition:: Differential Kinematics establishes the mathematical relationship between joint velocities and end-effector Cartesian velocities through the Jacobian matrix, enabling velocity-level motion control and singularity analysis.
-  - source-domain:: rb
-  - status:: draft
+  id:: differentialkinematics-ontology
+  collapsed:: true
 
-Differential Kinematics establishes the mathematical relationship between joint velocities and endeffector Cartesian velocities through the Jacobian matrix, enabling velocitylevel motion control, realtime trajectory tracking, and singularity analysis. Unlike forward/inverse kinematics operating on positions, differential kinematics operates on instantaneous velocities, providing the foundation for resolvedrate control, teleoperation, and impedance control in modern robotics.
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0183
+    - filename-history:: ["RB-0183-differentialkinematics.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: RB-0183
+    - preferred-term:: Differential Kinematics
+    - source-domain:: rb
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-Differential Kinematics establishes the mathematical relationship between joint velocities and endeffector Cartesian velocities through the Jacobian matrix, enabling velocitylevel motion control, realtime trajectory tracking, and singularity analysis. Unlike forward/inverse kinematics operating on positions, differential kinematics operates on instantaneous velocities, providing the foundation for resolvedrate control, teleoperation, and impedance control in modern robotics.
+  - **Definition**
+    - definition:: Differential kinematics uses Jacobian matrix to relate joint and Cartesian velocities.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: rb:DifferentialKinematics
+    - belongsToDomain:: [[Robotics]]
+
+  - #### Relationships
+    - is-subclass-of:: [[Robot Kinematics]]
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :DifferentialKinematics))
+      (SubClassOf :DifferentialKinematics :RobotKinematics)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :DifferentialKinematics "Differential Kinematics"@en)
+      (AnnotationAssertion rdfs:comment :DifferentialKinematics
+        "Differential kinematics uses Jacobian matrix to relate joint and Cartesian velocities."@en)
+      ```
+
+- ## About Differential Kinematics
+  Differential kinematics uses Jacobian matrix to relate joint and Cartesian velocities.
+  
+  Relationship between joint velocities and end-effector velocities.

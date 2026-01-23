@@ -1,35 +1,42 @@
 - ### OntologyBlock
-    - term-id:: MV-0540
-    - source-domain:: mv
-    - owl:class:: mv:Erc1155Standard
-    - preferred-term:: ERC-1155 Standard
-    - ontology:: true
+  id:: erc1155standard-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: BC
+    - sequence-number:: 0540
+    - filename-history:: ["BC-0540-erc1155standard.md"]
     - public-access:: true
-    - is-subclass-of:: [[DisruptiveTechnology]]
+    - ontology:: true
+    - term-id:: BC-0540
+    - preferred-term:: ERC-1155 Standard
+    - source-domain:: bc
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## ERC-1155 Standard
+  - **Definition**
+    - definition:: Multi-token standard supporting both fungible and non-fungible tokens in a single contract.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-ERC-1155 Standard refers to multi-token standard supporting both fungible and non-fungible tokens in a single contract.
+  - **Semantic Classification**
+    - owl:class:: bc:ERC1155Standard
+    - belongsToDomain:: [[Blockchain]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :ERC1155Standard))
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :ERC1155Standard "ERC-1155 Standard"@en)
+      (AnnotationAssertion rdfs:comment :ERC1155Standard
+        "Multi-token standard supporting both fungible and non-fungible tokens in a single contract."@en)
+      ```
 
-- **Id**: erc1155standard-ontology
-- **Collapsed**: true
-- **Domain Prefix**: BC
-- **Sequence Number**: 0540
-- **Filename History**: ["BC-0540-erc1155standard.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: bc:ERC1155Standard
-- **Belongstodomain**: [[Blockchain]]
+- ## About ERC-1155 Standard
+  Multi-token standard supporting both fungible and non-fungible tokens in a single contract.

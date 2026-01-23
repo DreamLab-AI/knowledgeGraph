@@ -1,22 +1,144 @@
 - ### OntologyBlock
-  id:: unknown-ontology
+  id:: batch-size-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0859
-	- source-domain:: mv
+	- term-id:: AI-0050
 	- preferred-term:: Batch Size
+	- source-domain:: artificial-intelligence
 	- status:: draft
-	- public-access:: true
-	- definition:: 	- maturity:: draft
-	- owl:class:: mv:BatchSize
+- public-access:: true
+	- definition:: ### Primary Definition
+**Batch Size** is the number of training examples processed together before updating model parameters. It is a critical hyperparameter affecting training speed, memory usage, and model convergence behaviour.
+	- maturity:: draft
+	- owl:class:: ai:BatchSize
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
-	- #### Relationships
-	  id:: unknown-relationships
+- ## About Batch Size
+	- ### Primary Definition
+**Batch Size** is the number of training examples processed together before updating model parameters. It is a critical hyperparameter affecting training speed, memory usage, and model convergence behaviour.
+	-
+	- ### Original Content
 	  collapsed:: true
-		- is-subclass-of:: [[TrainingMethod]]
-
+		- ```
+# Batch Size
+		  
+		  ## Metadata
+		  - **Term ID**: AI-0050
+		  - **Type**: AICapability
+		  - **Classification**: Training Hyperparameter
+		  - **Domain**: MLDomain
+		  - **Layer**: AlgorithmicLayer
+		  - **Status**: Active
+		  - **Version**: 1.0
+		  - **Last Updated**: 2025-10-27
+		  - **Priority**: 1=Foundational
+		  
+		  ## Definition
+		  
+		  ### Primary Definition
+		  **Batch Size** is the number of training examples processed together before updating model parameters. It is a critical hyperparameter affecting training speed, memory usage, and model convergence behaviour.
+		  
+		  **Source**: ISO/IEC 22989:2022 (Training) + Academic consensus - Authority Score: 0.92
+		  
+		  ### Operational Characteristics
+		  - **Grouping Unit**: Number of examples per gradient update
+		  - **Memory Impact**: Larger batches require more GPU memory
+		  - **Training Speed**: Larger batches enable parallel processing
+		  - **Gradient Quality**: Batch size affects gradient noise
+		  - **Common Values**: Typically 16, 32, 64, 128, or 256
+		  
+		  ## Relationships
+		  
+		  ### Parent Classes
+		  - **Hyperparameter** (AI-0048): Batch size is a training hyperparameter
+		  
+		  ### Related Concepts
+		  - **Stochastic Gradient Descent** (AI-0045): Uses batch size parameter
+		  - **Training** (AI-0041): Batch size affects training
+		  - **Epoch** (AI-0049): Epochs comprise multiple batches
+		  - **Memory Requirements**: Constrained by batch size
+		  - **Convergence**: Batch size affects optimisation
+		  
+		  ## Formal Ontology
+		  
+		  <details>
+		  <summary>Click to expand OntologyBlock</summary>
+		  
+		  ```clojure
+		  ;; Batch Size Ontology (OWL Functional Syntax)
+		  ;; Term ID: AI-0050
+		  ;; Domain: MLDomain | Layer: AlgorithmicLayer
+		  
+		  (Declaration (Class :BatchSize))
+		  
+		  ;; Core Classification
+		  (SubClassOf :BatchSize :Hyperparameter)
+		  (SubClassOf :BatchSize :TrainingConfiguration)
+		  
+		  ;; Functional Properties
+		  (SubClassOf :BatchSize
+		    (ObjectSomeValuesFrom :configures :TrainingProcess))
+		  (SubClassOf :BatchSize
+		    (ObjectSomeValuesFrom :affects :MemoryUsage))
+		  (SubClassOf :BatchSize
+		    (ObjectSomeValuesFrom :influences :ConvergenceBehaviour))
+		  (SubClassOf :BatchSize
+		    (ObjectSomeValuesFrom :determines :GradientQuality))
+		  
+		  ;; Relationship to Processes
+		  (SubClassOf :BatchSize
+		    (ObjectSomeValuesFrom :usedBy :StochasticGradientDescent))
+		  (SubClassOf :BatchSize
+		    (ObjectSomeValuesFrom :dividesInto :Epoch))
+		  
+		  ;; Annotations
+		  (AnnotationAssertion rdfs:label :BatchSize "Batch Size"@en)
+		  (AnnotationAssertion rdfs:comment :BatchSize
+		    "Number of training examples processed together before model parameter update"@en)
+		  (AnnotationAssertion :isoReference :BatchSize "ISO/IEC 22989:2022, Training configuration")
+		  (AnnotationAssertion :authorityScore :BatchSize "0.92"^^xsd:float)
+		  (AnnotationAssertion :priorityLevel :BatchSize "1"^^xsd:integer)
+		  
+		  ;; Data Properties
+		  (DataPropertyAssertion :typicalRange :BatchSize "[16, 32, 64, 128, 256]"^^xsd:string)
+		  (DataPropertyAssertion :affectsMemoryRequirements :BatchSize "true"^^xsd:boolean)
+		  (DataPropertyAssertion :enablesParallelisation :BatchSize "true"^^xsd:boolean)
+		  
+		  ;; Property Declarations
+		  (Declaration (ObjectProperty :configures))
+		  (ObjectPropertyDomain :configures :BatchSize)
+		  (ObjectPropertyRange :configures :TrainingProcess)
+		  
+		  (Declaration (DataProperty :affectsMemoryRequirements))
+		  (DataPropertyDomain :affectsMemoryRequirements :BatchSize)
+		  (DataPropertyRange :affectsMemoryRequirements xsd:boolean)
+		  ```
+		  </details>
+		  
+		  ## Standards Alignment
+		  
+		  ### ISO/IEC Standards
+		  - **ISO/IEC 22989:2022**: Training configuration
+		  
+		  ### NIST AI RMF
+		  - **Function**: MAP (Training parameters)
+		  
+		  ## Related Terms
+		  - **Hyperparameter** (AI-0048): Batch size is a hyperparameter
+		  - **Stochastic Gradient Descent** (AI-0045): Uses batches
+		  - **Epoch** (AI-0049): Divided into batches
+		  - **Training** (AI-0041): Configured by batch size
+		  
+		  ## References
+		  1. ISO/IEC 22989:2022 - Training concepts
+		  2. Masters & Luschi - "Revisiting Small Batch Training for Deep Neural Networks" - arXiv, 2018
+		  
+		  ---
+		  
+		  **Authority Score**: 0.92 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST
+		  
+		  ```
 ## Academic Context
 
 - Batch size represents a fundamental operational parameter in manufacturing and production management
@@ -101,7 +223,7 @@
 
 [2] Hakio. What is Batch Size? Available at: https://hakio.com/dictionary/batch-size
 
-[3] Aligni. Batch Production Defined. Available at: https://www.aligni.com/aligni-knowledge-centre/batch-production-defined/
+[3] Aligni. Batch Production Defined. Available at: https://www.aligni.com/aligni-knowledge-center/batch-production-defined/
 
 [4] Buske Logistics. Batch Size Definition & Meaning. Available at: https://www.buske.com/what-is/batch-size
 
@@ -111,10 +233,10 @@
 
 [8] EPG. What is Meant by Batch Size? – LYDIA Voice Lexicon. Available at: https://epg.com/lexicon-articles/batch-size/
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-

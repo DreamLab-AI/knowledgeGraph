@@ -1,19 +1,46 @@
-### Definition
-
-DC Servo Motor converts direct current electrical power into controlled rotational motion, utilizing electromagnetic principles and closed-loop feedback to achieve precise position, velocity, and torque control. These motors consist of a rotating armature within a stationary magnetic field created by permanent magnets or field windings, with commutation achieved through brushes (brushed DC) or electronic switching (brushless DC/BLDC). DC servos dominated robotics from the 1960s through 1990s and continue serving specific applications today.
-
 - ### OntologyBlock
-  id:: Dc Servo Motor
-  - ontology:: true
-  - public-access:: true
-  - term-id:: RB-1004
-  - preferred-term:: DC Servo Motor
-  - owl:class:: rb:DcServoMotor
-  - is-subclass-of:: [[Robotics]]
-  - definition:: A DC servo motor converts direct current electrical power into controlled rotational motion, utilising electromagnetic principles and closed-loop feedback to achieve precise position, velocity, and torque control.
-  - source-domain:: rb
-  - status:: draft
+  id:: dcservomotor-ontology
+  collapsed:: true
 
-DC Servo Motor converts direct current electrical power into controlled rotational motion, utilizing electromagnetic principles and closedloop feedback to achieve precise position, velocity, and torque control. These motors consist of a rotating armature within a stationary magnetic field created by permanent magnets or field windings, with commutation achieved through brushes (brushed DC) or electronic switching (brushless DC/BLDC). DC servos dominated robotics from the 1960s through 1990s and continue serving specific applications today.
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0172
+    - filename-history:: ["RB-0172-dcservomotor.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: RB-0172
+    - preferred-term:: DC Servo Motor
+    - source-domain:: rb
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-DC Servo Motor converts direct current electrical power into controlled rotational motion, utilizing electromagnetic principles and closedloop feedback to achieve precise position, velocity, and torque control. These motors consist of a rotating armature within a stationary magnetic field created by permanent magnets or field windings, with commutation achieved through brushes (brushed DC) or electronic switching (brushless DC/BLDC). DC servos dominated robotics from the 1960s through 1990s and continue serving specific applications today.
+  - **Definition**
+    - definition:: DC servo motor uses DC power for precise control.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: rb:DcServoMotor
+    - belongsToDomain:: [[Robotics]]
+
+  - #### Relationships
+    - is-subclass-of:: [[Servo Motor]]
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :DcServoMotor))
+      (SubClassOf :DcServoMotor :ServoMotor)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :DcServoMotor "DC Servo Motor"@en)
+      (AnnotationAssertion rdfs:comment :DcServoMotor
+        "DC servo motor uses DC power for precise control."@en)
+      ```
+
+- ## About DC Servo Motor
+  DC servo motor uses DC power for precise control.
+  
+  A servo motor powered by direct current.

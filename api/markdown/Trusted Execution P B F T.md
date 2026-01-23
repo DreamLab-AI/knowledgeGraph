@@ -1,38 +1,45 @@
 - ### OntologyBlock
-    - term-id:: DT-0561
-    - source-domain:: bc
-    - owl:class:: bc:TrustedExecutionPbft
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - preferred-term:: Trusted Execution PBFT
-    - ontology:: true
+  id:: trustedexecutionpbft-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: BC
+    - sequence-number:: 0561
+    - filename-history:: ["BC-0561-trustedexecutionpbft.md"]
     - public-access:: true
-    - is-subclass-of:: [[ConsensusMechanism]]
+    - ontology:: true
+    - term-id:: BC-0561
+    - preferred-term:: Trusted Execution PBFT
+    - source-domain:: bc
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## Trusted Execution PBFT
+  - **Definition**
+    - definition:: A parallel Byzantine Fault Tolerance protocol leveraging Trusted Execution Environments (TEEs), utilizing a Unique Sequential Identifier Generator (USIG) based on Intel Software Guard Extensions (SGX).
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-Trusted Execution PBFT refers to a parallel byzantine fault tolerance protocol leveraging trusted execution environments (tees), utilizing a unique sequential identifier generator (usig) based on intel software guard extensions (sgx).
+  - **Semantic Classification**
+    - owl:class:: bc:TrustedExecutionPBFT
+    - belongsToDomain:: [[Blockchain]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
+    - is-subclass-of:: [[Practical Byzantine Fault Tolerance]]
+    - also-known-as:: TEP-BFT
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :TrustedExecutionPBFT))
+      (SubClassOf :TrustedExecutionPBFT :PracticalByzantineFaultTolerance)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :TrustedExecutionPBFT "Trusted Execution PBFT"@en)
+      (AnnotationAssertion rdfs:comment :TrustedExecutionPBFT
+        "A parallel Byzantine Fault Tolerance protocol leveraging Trusted Execution Environments (TEEs), utilizing a Unique Sequential Identifier Generator (USIG) based on Intel Software Guard Extensions (SGX)."@en)
+      ```
 
-- **Id**: trustedexecutionpbft-ontology
-- **Collapsed**: true
-- **Domain Prefix**: BC
-- **Sequence Number**: 0561
-- **Filename History**: ["BC-0561-trustedexecutionpbft.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: bc:TrustedExecutionPBFT
-- **Belongstodomain**: [[Blockchain]]
-- **Is Subclass Of**: [[ConsensusMechanism]]
-- **Also Known As**: TEP-BFT
+- ## About Trusted Execution PBFT
+  A parallel Byzantine Fault Tolerance protocol leveraging Trusted Execution Environments (TEEs), utilizing a Unique Sequential Identifier Generator (USIG) based on Intel Software Guard Extensions (SGX).

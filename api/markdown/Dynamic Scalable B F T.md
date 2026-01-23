@@ -1,38 +1,47 @@
 - ### OntologyBlock
-    - term-id:: DT-0559
-    - source-domain:: bc
-    - owl:class:: bc:DynamicScalableBft
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - preferred-term:: Dynamic Scalable BFT
-    - ontology:: true
+  id:: dynamicscalablebft-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: BC
+    - sequence-number:: 0559
+    - filename-history:: ["BC-0559-dynamicscalablebft.md"]
     - public-access:: true
-    - is-subclass-of:: [[ConsensusMechanism]]
+    - ontology:: true
+    - term-id:: BC-0559
+    - preferred-term:: Dynamic Scalable BFT
+    - source-domain:: bc
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## Dynamic Scalable BFT
+  - **Definition**
+    - definition:: An optimized SBFT protocol using Distributed Key Generation (DKG) technology and BLS aggregate signature scheme for enhanced scalability with dynamic node management.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-Dynamic Scalable BFT refers to an optimized sbft protocol using distributed key generation (dkg) technology and bls aggregate signature scheme for enhanced scalability with dynamic node management.
+  - **Semantic Classification**
+    - owl:class:: bc:DynamicScalableBFT
+    - belongsToDomain:: [[Blockchain]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
+    - is-subclass-of:: [[Practical Byzantine Fault Tolerance]]
+    - also-known-as:: D-SBFT
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :DynamicScalableBFT))
+      (SubClassOf :DynamicScalableBFT :PracticalByzantineFaultTolerance)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :DynamicScalableBFT "Dynamic Scalable BFT"@en)
+      (AnnotationAssertion rdfs:comment :DynamicScalableBFT
+        "An optimized SBFT protocol using Distributed Key Generation (DKG) technology and BLS aggregate signature scheme for enhanced scalability with dynamic node management."@en)
+      ```
 
-- **Id**: dynamicscalablebft-ontology
-- **Collapsed**: true
-- **Domain Prefix**: BC
-- **Sequence Number**: 0559
-- **Filename History**: ["BC-0559-dynamicscalablebft.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: bc:DynamicScalableBFT
-- **Belongstodomain**: [[Blockchain]]
-- **Is Subclass Of**: [[ConsensusMechanism]]
-- **Also Known As**: D-SBFT
+- ## About Dynamic Scalable BFT
+  An optimized SBFT protocol using Distributed Key Generation (DKG) technology and BLS aggregate signature scheme for enhanced scalability with dynamic node management.
+  
+  2025 advancement addressing dynamic validator sets in permissioned blockchains.

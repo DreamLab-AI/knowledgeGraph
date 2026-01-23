@@ -1,18 +1,144 @@
 - ### OntologyBlock
+  id:: red-teaming-ontology
+  collapsed:: true
+	- ontology:: true
+	- term-id:: AI-0270
+	- preferred-term:: Red Teaming
+	- source-domain:: mv
+	- status:: draft
+- definition:: The practice of deliberately attempting to elicit harmful, biased, or undesired outputs from AI systems to identify vulnerabilities and weaknesses. Red teaming involves adversarial testing where human evaluators or automated systems probe for failure modes, informing alignment training and safety improvements.
 
-### Definition
-id:: red-teaming-ontology collapsed:: true - ontology:: true - term-id:: AI-0270 - preferred-term:: AI-0270
 
-Red Teaming - source-domain:: ai - owl:class:: ai:RedTeaming - status:: draft - public-access:: true - definition:: The practice of deliberately attempting to elicit harmful, biased, or undesired outputs from AI systems to identify vulnerabilities and weaknesses. Red teaming involves adversarial testing where human evaluators or automated systems probe for failure modes, informing alignment training and safety improvements.
+## OWL Formal Semantics
 
-Red Teaming - source-domain:: ai - owl:class:: ai:RedTeaming - status:: draft - public-access:: true - definition:: The practice of deliberately attempting to elicit harmful, biased, or undesired outputs from AI systems to identify vulnerabilities and weaknesses. Red teaming involves adversarial testing where human evaluators or automated systems probe for failure modes, informing alignment training and safety improvements.
+```clojure
+;; OWL Functional Syntax
 
-### Notes
-*Instructional content moved from class definition*
+(Declaration (Class :RedTeaming))
 
-### Relationships
-- is-subclass-of:: [[ModelArchitecture]]
-- is-subclass-of:: [[AISecurity]]
+;; Annotations
+(AnnotationAssertion rdfs:label :RedTeaming "Red Teaming"@en)
+(AnnotationAssertion rdfs:comment :RedTeaming "The practice of deliberately attempting to elicit harmful, biased, or undesired outputs from AI systems to identify vulnerabilities and weaknesses. Red teaming involves adversarial testing where human evaluators or automated systems probe for failure modes, informing alignment training and safety improvements."@en)
+
+;; Data Properties
+(AnnotationAssertion dcterms:identifier :RedTeaming "AI-0270"^^xsd:string)
+(DataPropertyAssertion :isAITechnology :RedTeaming "true"^^xsd:boolean)
+```
+
+## Academic Context
+
+Red teaming has become a critical component of AI safety evaluation and alignment, systematically uncovering failure modes that may not be apparent in standard testing.
+
+**Primary Source**: AI alignment and safety literature; mentioned in alignment papers
+
+## Key Characteristics
+
+- Adversarial testing approach
+- Identifies safety vulnerabilities
+- Informs alignment training
+- Iterative improvement process
+- Human or automated execution
+- Critical for deployment safety
+
+## Related Concepts
+
+- **Adversarial Testing**: Broader category
+- **AI Safety**: Context domain
+- **Alignment**: Improvement target
+- **Safety Fine-Tuning**: Addresses findings
+
+## UK English Notes
+
+- "Behaviour" in related contexts
+
+**Last Updated**: 2025-10-27
+**Verification Status**: Verified against AI safety literature
+	- maturity:: draft
+	- owl:class:: mv:RedTeaming
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Red Teaming
+	- The practice of deliberately attempting to elicit harmful, biased, or undesired outputs from AI systems to identify vulnerabilities and weaknesses. Red teaming involves adversarial testing where human evaluators or automated systems probe for failure modes, informing alignment training and safety improvements.
+
+## Academic Context
+
+Red teaming has become a critical component of AI safety evaluation and alignment, systematically uncovering failure modes that may not be apparent in standard testing.
+
+**Primary Source**: AI alignment and safety literature; mentioned in alignment papers
+
+## Key Characteristics
+
+- Adversarial testing approach
+- Identifies safety vulnerabilities
+- Informs alignment training
+- Iterative improvement process
+- Human or automated execution
+- Critical for deployment safety
+
+## Related Concepts
+
+- **Adversarial Testing**: Broader category
+- **AI Safety**: Context domain
+- **Alignment**: Improvement target
+- **Safety Fine-Tuning**: Addresses findings
+
+## UK English Notes
+
+- "Behaviour" in related contexts
+
+**Last Updated**: 2025-10-27
+**Verification Status**: Verified against AI safety literature
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# Red Teaming
+		  
+		  **Term ID**: AI-0270
+		  **Category**: Training Technique / Evaluation
+		  **Ontology Layer**: AI/ML Methodology
+		  
+		  ## Definition
+		  
+		  The practice of deliberately attempting to elicit harmful, biased, or undesired outputs from AI systems to identify vulnerabilities and weaknesses. Red teaming involves adversarial testing where human evaluators or automated systems probe for failure modes, informing alignment training and safety improvements.
+		  
+		  ## Academic Context
+		  
+		  Red teaming has become a critical component of AI safety evaluation and alignment, systematically uncovering failure modes that may not be apparent in standard testing.
+		  
+		  **Primary Source**: AI alignment and safety literature; mentioned in alignment papers
+		  
+		  ## Key Characteristics
+		  
+		  - Adversarial testing approach
+		  - Identifies safety vulnerabilities
+		  - Informs alignment training
+		  - Iterative improvement process
+		  - Human or automated execution
+		  - Critical for deployment safety
+		  
+		  ## Related Concepts
+		  
+		  - **Adversarial Testing**: Broader category
+		  - **AI Safety**: Context domain
+		  - **Alignment**: Improvement target
+		  - **Safety Fine-Tuning**: Addresses findings
+		  
+		  ## UK English Notes
+		  
+		  - "Behaviour" in related contexts
+		  
+		  **Last Updated**: 2025-10-27
+		  **Verification Status**: Verified against AI safety literature
+		  
+		  ```
+
+- public-access:: true
+	- definition:: The practice of deliberately attempting to elicit harmful, biased, or undesired outputs from AI systems to identify vulnerabilities and weaknesses. Red teaming involves adversarial testing where human evaluators or automated systems probe for failure modes, informing alignment training and safety improvements.
+
+
+
 
 # Red Teaming: Ontology Entry Review and Enhancement
 
@@ -62,7 +188,7 @@ I appreciate the detailed brief, though I should clarify that the search results
 ## Research & Literature
 
 - Foundational sources
-  - NIST Cybersecurity Resource Centre: "artificial intelligence red-teaming" defined as structured testing effort to find flaws and vulnerabilities in AI systems, often in controlled environments with developer collaboration[8]
+  - NIST Cybersecurity Resource Center: "artificial intelligence red-teaming" defined as structured testing effort to find flaws and vulnerabilities in AI systems, often in controlled environments with developer collaboration[8]
   - Georgetown Centre for Security and Emerging Technology (CSET): Comprehensive analysis of red-teaming conceptualisation, distinguishing between cybersecurity origins and AI-specific applications, with emphasis on the fuzzier definitions in generative AI contexts[3]
 
 - Contemporary frameworks
@@ -105,6 +231,7 @@ I appreciate the detailed brief, though I should clarify that the search results
 ---
 
 **Note on limitations:** The current search results provide comprehensive technical and methodological coverage but lack UK-specific implementations, North England case studies, and recent developments from late 2025. To fully satisfy your requirements, additional sources focusing on British AI governance, regional innovation initiatives, and contemporary UK institutional contributions would be beneficial. The entry as revised above reflects current best practice as of November 2025, though some assertions would benefit from verification against the latest NIST and UK government guidance documents.
+
 
 ## Metadata
 

@@ -1,29 +1,152 @@
 - ### OntologyBlock
-  id:: trustworthy-ai-framework-ontology
+  id:: 0407-trustworthyaiframework-ontology
   collapsed:: true
-	- ontology:: true
-	- term-id:: DT-0407
-	- source-domain:: ai
-	- preferred-term:: Trustworthy AI Framework
-	- status:: in
-	- public-access:: true
-	- definition:: Trustworthy AI Framework is a comprehensive governance and standards framework establishing principles, requirements, and assessment processes to ensure AI systems are lawful, ethical, and robust throughout their lifecycle, protecting fundamental rights while enabling beneficial innovation. Developed primarily by the EU High-Level Expert Group on AI (2019) and formalized in the EU AI Act (2024), this framework defines trustworthiness through seven key dimensions: human agency and oversight (preserving meaningful human control), technical robustness and safety (ensuring reliable and secure performance), privacy and data governance (protecting personal information and data rights), transparency and explainability (enabling understanding of system operation and decisions), diversity non-discrimination and fairness (ensuring equitable treatment across demographic groups), societal and environmental wellbeing (considering broader impacts on communities and sustainability), and accountability (establishing clear responsibility and redress mechanisms). The framework implements a risk-based approach categorizing AI systems by impact level (unacceptable risk, high risk, limited risk, minimal risk) with corresponding governance requirements, mandates conformity assessment and certification for high-risk applications, requires documented compliance evidence including technical documentation and impact assessments, and aligns with international standards including ISO/IEC 42001 AI management systems and IEEE ethically aligned design principles. Implementation establishes organizational structures spanning board-level oversight committees, management-level governance officers, and operational-level development teams, while addressing practical challenges including resource constraints for SMEs, framework fragmentation across jurisdictions, dynamic technology evolution, and measurement difficulties for abstract trustworthiness criteria.
-	- source:: [[EU HLEG AI]], [[EU AI Act]], [[ISO/IEC 42001:2023]]
-	- maturity:: mature
-	- owl:class:: ai:TrustworthyAIFramework
-	- owl:physicality:: VirtualEntity
-	- owl:role:: Process
-	- owl:inferred-class:: ai:VirtualProcess
-	- belongsToDomain:: [[AIEthicsDomain]], [[DisruptiveTechDomain]]
-	- implementedInLayer:: [[ConceptualLayer]]
-	- #### Relationships
-	  id:: trustworthy-ai-framework-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[AIGovernance]]
 
-## Trustworthy AI Framework
+  - **Identification**
 
-Trustworthy AI Framework refers to trustworthy ai framework is a comprehensive governance and standards framework establishing principles, requirements, and assessment processes to ensure ai systems are lawful, ethical, and robust throughout their lifecycle, protecting fundamental rights while enabling beneficial innovation. developed primarily by the eu high-level expert group on ai (2019) and formalized in the eu ai act (2024), this framework defines trustworthiness through seven key dimensions: human agency and oversight (preserving meaningful human control), technical robustness and safety (ensuring reliable and secure performance), privacy and data governance (protecting personal information and data rights), transparency and explainability (enabling understanding of system operation and decisions), diversity non-discrimination and fairness (ensuring equitable treatment across demographic groups), societal and environmental wellbeing (considering broader impacts on communities and sustainability), and accountability (establishing clear responsibility and redress mechanisms). the framework implements a risk-based approach categorising ai systems by impact level (unacceptable risk, high risk, limited risk, minimal risk) with corresponding governance requirements, mandates conformity assessment and certification for high-risk applications, requires documented compliance evidence including technical documentation and impact assessments, and aligns with international standards including iso/iec 42001 ai management systems and ieee ethically aligned design principles. implementation establishes organizational structures spanning board-level oversight committees, management-level governance officers, and operational-level development teams, while addressing practical challenges including resource constraints for smes, framework fragmentation across jurisdictions, dynamic technology evolution, and measurement difficulties for abstract trustworthiness criteria.
+    - domain-prefix:: AI
+
+    - sequence-number:: 0407
+
+    - filename-history:: ["AI-0407-TrustworthyAIFramework.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: AI-0407
+    - preferred-term:: Trustworthy AI Framework
+    - source-domain:: ai
+    - status:: in-progress
+    - version:: 1.0
+    - last-updated:: 2025-10-29
+
+  - **Definition**
+    - definition:: Trustworthy AI Framework is a comprehensive governance and standards framework establishing principles, requirements, and assessment processes to ensure AI systems are lawful, ethical, and robust throughout their lifecycle, protecting fundamental rights while enabling beneficial innovation. Developed primarily by the EU High-Level Expert Group on AI (2019) and formalized in the EU AI Act (2024), this framework defines trustworthiness through seven key dimensions: human agency and oversight (preserving meaningful human control), technical robustness and safety (ensuring reliable and secure performance), privacy and data governance (protecting personal information and data rights), transparency and explainability (enabling understanding of system operation and decisions), diversity non-discrimination and fairness (ensuring equitable treatment across demographic groups), societal and environmental wellbeing (considering broader impacts on communities and sustainability), and accountability (establishing clear responsibility and redress mechanisms). The framework implements a risk-based approach categorizing AI systems by impact level (unacceptable risk, high risk, limited risk, minimal risk) with corresponding governance requirements, mandates conformity assessment and certification for high-risk applications, requires documented compliance evidence including technical documentation and impact assessments, and aligns with international standards including ISO/IEC 42001 AI management systems and IEEE ethically aligned design principles. Implementation establishes organizational structures spanning board-level oversight committees, management-level governance officers, and operational-level development teams, while addressing practical challenges including resource constraints for SMEs, framework fragmentation across jurisdictions, dynamic technology evolution, and measurement difficulties for abstract trustworthiness criteria.
+    - maturity:: mature
+    - source:: [[EU HLEG AI]], [[EU AI Act]], [[ISO/IEC 42001:2023]]
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: aigo:TrustworthyAIFramework
+    - owl:physicality:: VirtualEntity
+    - owl:role:: Process
+    - owl:inferred-class:: aigo:VirtualProcess
+    - belongsToDomain:: [[AIEthicsDomain]]
+    - implementedInLayer:: [[ConceptualLayer]]
+
+  - #### Relationships
+    id:: 0407-trustworthyaiframework-relationships
+
+  - #### OWL Axioms
+    id:: 0407-trustworthyaiframework-owl-axioms
+    collapsed:: true
+    - ```clojure
+      (Declaration (Class :TrustworthyAIFramework))
+(SubClassOf :TrustworthyAIFramework :GovernanceFramework)
+(SubClassOf :TrustworthyAIFramework :StandardsFramework)
+
+(SubClassOf :TrustworthyAIFramework
+  (ObjectAllValuesFrom :defines :TrustworthinessDimension))
+(SubClassOf :TrustworthyAIFramework
+  (ObjectAllValuesFrom :establishes :AssessmentProcess))
+(SubClassOf :TrustworthyAIFramework
+  (ObjectSomeValuesFrom :ensures :EthicalAISystem))
+(SubClassOf :TrustworthyAIFramework
+  (ObjectSomeValuesFrom :supports :AILifecycleGovernance))
+
+(SubClassOf :TrustworthyAIFramework
+  (ObjectSomeValuesFrom :implements :RiskBasedApproach))
+(SubClassOf :TrustworthyAIFramework
+  (ObjectSomeValuesFrom :addresses :FundamentalRights))
+(SubClassOf :TrustworthyAIFramework
+  (DataSomeValuesFrom :alignsWithRegulation :LegalFramework))
+
+(DisjointClasses :TrustworthyAIFramework :VendorCertificationOnly)
+(DisjointClasses :TrustworthyAIFramework :PurelyVoluntaryGuidance)
+      ```
+
+- ## About Trustworthy AI Framework
+  id:: 0407-trustworthyaiframework-about
+
+  - 
+  -
+    - ### Implementation Patterns
+  - ### Governance Structure
+    ```yaml
+    organizational_roles:
+      board_level:
+        - AI Ethics Committee
+        - Risk oversight function
+        - Strategic alignment
+  -
+      management_level:
+        - AI Governance Officer
+        - Ethics review boards
+        - Compliance coordination
+  -
+      operational_level:
+        - Development teams
+        - Testing specialists
+        - Monitoring personnel
+  -
+    documentation_requirements:
+      - AI system inventory
+      - Risk assessments
+      - Impact assessments
+      - Testing records
+      - Incident logs
+      - Compliance evidence
+    ```
+    -
+  - ### Challenges and Solutions
+  - ### Common Implementation Challenges
+    ```yaml
+    challenge_1_resource_constraints:
+      issue: "SMEs lack resources for full framework implementation"
+      solutions:
+        - Proportionate approaches (NIST AI RMF)
+        - Shared services for assessment
+        - Open-source tooling (ALTAI)
+        - Industry consortia support
+        - Regulatory sandboxes
+  -
+    challenge_2_framework_fragmentation:
+      issue: "Multiple overlapping frameworks create confusion"
+      solutions:
+        - Mapping exercises (NIST ↔ EU HLEG)
+        - Harmonisation initiatives
+        - Integrated assessment tools
+        - Clear jurisdiction guidance
+  -
+    challenge_3_dynamic_technology:
+      issue: "Frameworks struggle to keep pace with AI advancement"
+      solutions:
+        - Principles-based approach
+        - Regular framework updates
+        - Technology-neutral language
+        - Adaptive governance mechanisms
+  -
+    challenge_4_measurement_difficulty:
+      issue: "Quantifying trustworthiness is complex"
+      solutions:
+        - Multi-method assessment
+        - Qualitative + quantitative measures
+        - Stakeholder validation
+        - Continuous improvement cycles
+    ```
+
+
+## Academic Context
+
+- Brief contextual overview
+	- Trustworthy AI refers to the development and deployment of artificial intelligence systems that are reliable, transparent, fair, secure, and compliant with ethical and regulatory standards
+	- The field has evolved from early concerns about algorithmic bias and opacity to a structured approach integrating risk management, governance, and stakeholder engagement
+	- Key developments and current state
+		- Trustworthy AI is now a multidisciplinary domain, drawing from computer science, law, ethics, and social sciences
+		- The focus has shifted from theoretical principles to practical frameworks and standards, with increasing emphasis on real-world impact and accountability
+	- Academic foundations
+		- The concept is rooted in ethical AI, responsible innovation, and socio-technical systems theory
+		- Early work by Floridi et al. (2018) and Mittelstadt et al. (2016) laid the groundwork for understanding the ethical and social dimensions of AI
+
+## Current Landscape (2025)
 
 - Industry adoption and implementations
 	- Notable organisations and platforms
@@ -38,30 +161,9 @@ Trustworthy AI Framework refers to trustworthy ai framework is a comprehensive g
 	- However, challenges remain in ensuring complete transparency, especially in complex deep learning models
 	- Limitations include the difficulty of quantifying and mitigating all forms of bias, and the need for continuous human oversight
 - Standards and frameworks
-	- The AI Risk Management Framework (AI RMF) by NIST provides a comprehensive guide for managing AI risks, emphasising governance, mapping, measuring, and managing risks
+	- The AI Risk Management Framework (AI RMF) by NIST provides a comprehensive guide for managing AI risks, emphasizing governance, mapping, measuring, and managing risks
 	- ISO/IEC 42001:2023 is an international standard for AI management systems, focusing on ethical and responsible AI development
 	- These frameworks encourage organizations to consider the perspectives of diverse stakeholders and to continuously test and monitor AI systems for trustworthiness
-
-## Technical Details
-
-- **Id**: 0407-trustworthyaiframework-about
-- **Collapsed**: true
-- **Domain Prefix**: AI
-- **Sequence Number**: 0407
-- **Filename History**: ["AI-0407-TrustworthyAIFramework.md"]
-- **Public Access**: true
-- **Source Domain**: ai
-- **Status**: in-progress
-- **Last Updated**: 2025-10-29
-- **Maturity**: mature
-- **Source**: [[EU HLEG AI]], [[EU AI Act]], [[ISO/IEC 42001:2023]]
-- **Authority Score**: 0.95
-- **Owl:Class**: ai:TrustworthyAIFramework
-- **Owl:Physicality**: VirtualEntity
-- **Owl:Role**: Process
-- **Owl:Inferred Class**: ai:VirtualProcess
-- **Belongstodomain**: [[AIEthicsDomain]]
-- **Implementedinlayer**: [[ConceptualLayer]]
 
 ## Research & Literature
 
@@ -78,7 +180,7 @@ Trustworthy AI Framework refers to trustworthy ai framework is a comprehensive g
 
 - British contributions and implementations
 	- The UK has been at the forefront of AI ethics and governance, with the establishment of the Centre for Data Ethics and Innovation and the AI Council
-	- The government has published several reports and guidelines on Trustworthy AI, emphasising the importance of transparency, accountability, and public trust
+	- The government has published several reports and guidelines on Trustworthy AI, emphasizing the importance of transparency, accountability, and public trust
 - North England innovation hubs (if relevant)
 	- Manchester, Leeds, Newcastle, and Sheffield are key centres for AI research and innovation
 	- The University of Manchester's Centre for Data Ethics and Innovation, the University of Leeds' Institute for Data Analytics, Newcastle University's Centre for Social Justice and Community Action, and the University of Sheffield's Advanced Manufacturing Research Centre are all active in promoting Trustworthy AI
@@ -112,10 +214,14 @@ Trustworthy AI Framework refers to trustworthy ai framework is a comprehensive g
 9. Newcastle University. (2025). Centre for Social Justice and Community Action. https://www.ncl.ac.uk/social-justice/
 10. University of Sheffield. (2025). Advanced Manufacturing Research Centre. https://www.sheffield.ac.uk/amrc
 
+
 ## Metadata
+
 
 - **Migration Status**: Ontology block enriched on 2025-11-12
 - **Last Updated**: 2025-11-12
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+

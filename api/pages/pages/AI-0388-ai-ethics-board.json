@@ -1,0 +1,64 @@
+{
+  "id": "AI-0388-ai-ethics-board",
+  "title": "AI Ethics Board",
+  "content": "- ### OntologyBlock\n  id:: 0388-ai-ethics-board-ontology\n  collapsed:: true\n\n  - **Identification**\n    - public-access:: true\n    - ontology:: true\n    - term-id:: AI-0388\n    - preferred-term:: AI Ethics Board\n    - source-domain:: ai\n    - status:: in-progress\n    - version:: 1.0\n    - last-updated:: 2025-10-29\n\n  - **Definition**\n    - definition:: AI Ethics Board is a multidisciplinary oversight committee comprising technical experts, ethicists, legal professionals, domain specialists, and stakeholder representatives, responsible for conducting ethical reviews of AI systems, providing guidance on ethical dilemmas, and exercising veto authority over AI deployments that violate ethical principles or organizational values. This governance body evaluates proposed AI systems against ethical frameworks, assesses potential harms and benefits, reviews fairness and bias implications, examines privacy and data protection compliance, and ensures alignment with responsible AI principles. The board operates through structured ethical review processes including proposal submission and screening, expert deliberation and assessment, stakeholder consultation and impact evaluation, ethical decision-making with documented rationale, and ongoing monitoring of deployed systems. Authority and scope typically include power to approve, conditionally approve with modifications, defer for additional information, or reject AI projects, mandate ethical impact assessments and fairness audits, require mitigation measures for identified risks, and escalate significant ethical concerns to executive leadership. Effective boards maintain independence from AI development teams to avoid conflicts of interest, possess diverse expertise spanning technical, ethical, legal, and social dimensions, engage affected communities in deliberations, and report to senior governance structures. Implementation follows models from research ethics committees and institutional review boards, adapted for AI-specific challenges as recommended by the EU High-Level Expert Group on AI and IEEE P7000 series standards.\n    - maturity:: mature\n    - source:: [[EU HLEG AI]], [[IEEE P7000]], [[ISO/IEC 42001:2023]]\n    - authority-score:: 0.95\n\n  - **Semantic Classification**\n    - owl:class:: aigo:AIEthicsBoard\n    - owl:physicality:: VirtualEntity\n    - owl:role:: Process\n    - owl:inferred-class:: aigo:VirtualProcess\n    - belongsToDomain:: [[AIEthicsDomain]]\n    - implementedInLayer:: [[ConceptualLayer]]\n\n  - #### Relationships\n    id:: 0388-ai-ethics-board-relationships\n\n  - #### OWL Axioms\n    id:: 0388-ai-ethics-board-owl-axioms\n    collapsed:: true\n    - ```clojure\n      (Declaration (Class :AIEthicsBoard))\n(SubClassOf :AIEthicsBoard :EthicsCommittee)\n\n(SubClassOf :AIEthicsBoard\n  (ObjectSomeValuesFrom :conducts :EthicalReview))\n(SubClassOf :AIEthicsBoard\n  (ObjectSomeValuesFrom :comprises :MultidisciplinaryExperts))\n(SubClassOf :AIEthicsBoard\n  (ObjectSomeValuesFrom :evaluates :AISystem))\n(SubClassOf :AIEthicsBoard\n  (ObjectSomeValuesFrom :provides :EthicalGuidance))\n(SubClassOf :AIEthicsBoard\n  (ObjectSomeValuesFrom :hasAuthority :VetoPower))\n(SubClassOf :AIEthicsBoard\n  (ObjectSomeValuesFrom :reports_to :AIGovernanceFramework))\n\n(DisjointWith :AIEthicsBoard :DataEthicsCommittee)\n(DisjointWith :AIEthicsBoard :ClinicalEthicsCommittee)\n      ```\n\n- ## About 0388 Ai Ethics Board\n  id:: 0388-ai-ethics-board-about\n\n  - \n  -",
+  "backlinks": [],
+  "wiki_links": [
+    "IEEE P7000",
+    "EU HLEG AI",
+    "AIEthicsDomain",
+    "ISO/IEC 42001:2023",
+    "ConceptualLayer"
+  ],
+  "ontology": {
+    "term_id": "AI-0388",
+    "preferred_term": "AI Ethics Board",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#aigo:AIEthicsBoard",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "AI Ethics Board is a multidisciplinary oversight committee comprising technical experts, ethicists, legal professionals, domain specialists, and stakeholder representatives, responsible for conducting ethical reviews of AI systems, providing guidance on ethical dilemmas, and exercising veto authority over AI deployments that violate ethical principles or organizational values. This governance body evaluates proposed AI systems against ethical frameworks, assesses potential harms and benefits, reviews fairness and bias implications, examines privacy and data protection compliance, and ensures alignment with responsible AI principles. The board operates through structured ethical review processes including proposal submission and screening, expert deliberation and assessment, stakeholder consultation and impact evaluation, ethical decision-making with documented rationale, and ongoing monitoring of deployed systems. Authority and scope typically include power to approve, conditionally approve with modifications, defer for additional information, or reject AI projects, mandate ethical impact assessments and fairness audits, require mitigation measures for identified risks, and escalate significant ethical concerns to executive leadership. Effective boards maintain independence from AI development teams to avoid conflicts of interest, possess diverse expertise spanning technical, ethical, legal, and social dimensions, engage affected communities in deliberations, and report to senior governance structures. Implementation follows models from research ethics committees and institutional review boards, adapted for AI-specific challenges as recommended by the EU High-Level Expert Group on AI and IEEE P7000 series standards.",
+    "scope_note": null,
+    "status": "in-progress",
+    "maturity": "mature",
+    "version": "1.0",
+    "public_access": true,
+    "last_updated": "2025-10-29",
+    "authority_score": 0.95,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "aigo:AIEthicsBoard",
+    "owl_physicality": "VirtualEntity",
+    "owl_role": "Process",
+    "owl_inferred_class": "aigo:VirtualProcess",
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [
+      "AIEthicsDomain"
+    ],
+    "implemented_in_layer": [
+      "ConceptualLayer"
+    ],
+    "source": [
+      "EU HLEG AI",
+      "IEEE P7000",
+      "ISO/IEC 42001:2023"
+    ],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: is-subclass-of (at least one parent class)",
+        "owl:class namespace 'aigo' doesn't match source-domain 'ai'"
+      ]
+    }
+  }
+}

@@ -9,15 +9,14 @@
     "Virtual Securities Offering Vso",
     "Land Parcel",
     "Loyalty Token",
-    "Virtualeconomydomain",
-    "Tax Treatment Crypto"
+    "Virtualeconomydomain"
   ],
   "wiki_links": [
-    "Digital Asset",
+    "Cryptocurrency",
     "VASP",
+    "Digital Asset",
     "metaverse",
-    "NFT",
-    "Cryptocurrency"
+    "NFT"
   ],
   "ontology": {
     "term_id": "MV-10104",

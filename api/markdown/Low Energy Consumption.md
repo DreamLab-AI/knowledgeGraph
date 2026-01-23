@@ -1,36 +1,42 @@
 - ### OntologyBlock
-    - term-id:: DT-0564
-    - source-domain:: bc
-    - owl:class:: bc:LowEnergyConsumption
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - preferred-term:: Low Energy Consumption
-    - ontology:: true
+  id:: lowenergyconsumption-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: BC
+    - sequence-number:: 0564
+    - filename-history:: ["BC-0564-lowenergyconsumption.md"]
     - public-access:: true
-    - is-subclass-of:: [[EnergyConsumption]]
+    - ontology:: true
+    - term-id:: BC-0564
+    - preferred-term:: Low Energy Consumption
+    - source-domain:: bc
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## Low Energy Consumption
+  - **Definition**
+    - definition:: Energy consumption level characteristic of PoS and BFT mechanisms requiring minimal computational resources (99% less than PoW).
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-Low Energy Consumption refers to energy consumption level characteristic of pos and bft mechanisms requiring minimal computational resources (99% less than pow).
+  - **Semantic Classification**
+    - owl:class:: bc:LowEnergyConsumption
+    - belongsToDomain:: [[Blockchain]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :LowEnergyConsumption))
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :LowEnergyConsumption "Low Energy Consumption"@en)
+      (AnnotationAssertion rdfs:comment :LowEnergyConsumption
+        "Energy consumption level characteristic of PoS and BFT mechanisms requiring minimal computational resources (99% less than PoW)."@en)
+      ```
 
-- **Id**: lowenergyconsumption-ontology
-- **Collapsed**: true
-- **Domain Prefix**: BC
-- **Sequence Number**: 0564
-- **Filename History**: ["BC-0564-lowenergyconsumption.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: bc:LowEnergyConsumption
-- **Belongstodomain**: [[Blockchain]]
+- ## About Low Energy Consumption
+  Energy consumption level characteristic of PoS and BFT mechanisms requiring minimal computational resources (99% less than PoW).

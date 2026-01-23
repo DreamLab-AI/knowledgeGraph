@@ -3,14 +3,15 @@
   "title": "Virtual Camera",
   "content": "- ### OntologyBlock\n  id:: virtual-camera-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10105\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Camera\n\t- status:: active\n\t- definition:: A simulated camera system in virtual production environments that captures real-time virtual scenes, enabling filmmakers to visualize and shoot CG environments as if using a physical camera with real-world lens and movement characteristics.\n\t- owl:class:: mv:VirtualCamera\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Virtual Production]]\n\t\t- related-to:: [[Real-Time Rendering]]\n\t\t- related-to:: [[Motion Capture]]\n\t\t- related-to:: [[LED Volume]]\n\t  id:: virtual-camera-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual cameras enable filmmakers to preview and capture virtual environments in real-time, integrating with motion capture systems to simulate physical camera movement, lens properties, and depth of field within game engines and virtual production pipelines.\n- ## Technical Details\n\t- ### Key Features\n\t\t- Real-time lens simulation (focal length, aperture, DOF)\n\t\t- Motion tracking integration\n\t\t- Physical camera movement replication\n\t\t- Live compositing preview\n\t- ### Integration Points\n\t\t- **Game Engines**: Unreal Engine, Unity\n\t\t- **Motion Capture**: OptiTrack, Vicon\n\t\t- **LED Volumes**: In-camera VFX systems\n\t\t- **Live Link**: Real-time data streaming\n\t- ### Technical Specifications\n\t\t- 6DOF positional tracking\n\t\t- Sub-millisecond latency response\n\t\t- Genlock synchronization\n\t\t- Real-time color correction\n- ## Applications\n\t- Virtual production filmmaking\n\t- Pre-visualization (previs)\n\t- Real-time broadcast graphics\n\t- Virtual scouting and location planning\n\t- Interactive media production",
   "backlinks": [
-    "Virtual Production (VP)"
+    "Virtual Production (VP)",
+    "Virtual Production"
   ],
   "wiki_links": [
-    "metaverse",
-    "Virtual Production",
     "LED Volume",
-    "Real-Time Rendering",
-    "Motion Capture"
+    "metaverse",
+    "Motion Capture",
+    "Virtual Production",
+    "Real-Time Rendering"
   ],
   "ontology": {
     "term_id": "MV-10105",

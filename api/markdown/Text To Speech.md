@@ -1,18 +1,42 @@
 - ### OntologyBlock
   id:: texttospeech-ontology
   collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0850
-	- source-domain:: ai
-	- preferred-term:: Text-to-Speech
-	- status:: complete
-	- public-access:: true
-	- source:: Chimera Prime Research
-	- maturity:: established
-	- owl:class:: ai:TextToSpeech
-	- belongsToDomain:: [[Artificial Intelligence]]
-	- #### Relationships
-- is-subclass-of:: [[NaturalLanguageProcessing]]
-	  id:: texttospeech-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[SpeechProcessing]]
+
+  - **Identification**
+    - domain-prefix:: AI
+    - sequence-number:: 0850
+    - filename-history:: ["AI-0850-texttospeech.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: AI-0850
+    - preferred-term:: Text-to-Speech
+    - source-domain:: ai
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
+
+  - **Definition**
+    - definition:: 
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: ai:TextToSpeech
+    - belongsToDomain:: [[Artificial Intelligence]]
+
+  - #### Relationships
+    - is-subclass-of:: [[Natural Language Processing]]
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :TextToSpeech))
+      (SubClassOf :TextToSpeech :NaturalLanguageProcessing)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :TextToSpeech "Text-to-Speech"@en)
+      ```
+
+- ## About Text-to-Speech
+  

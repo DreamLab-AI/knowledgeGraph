@@ -1,17 +1,49 @@
-id:: rgb-protocol
+public:: true
+termID:: BTC-L3-0001
+qualityScore:: 0.94
+bitcoinSpecific:: true
+lastUpdated:: 2025-11-14
 
-- ### OntologyBlock
-  id:: BTC Layer 3
-  - ontology:: true
-  - public-access:: true
-  - term-id:: BC-9955
-  - preferred-term:: BTC Layer 3
-  - source-domain:: bc
-  - owl:class:: bc:IdRgbprotocol
-  - status:: draft
+- # Bitcoin Layer 2 and Layer 3 Solutions
+- This page provides an overview of the Layer 2 and Layer 3 solutions that are being developed to enhance the scalability, functionality, and usability of the Bitcoin network.
+- ## The Importance of Layer 2 and Layer 3
+	- Bitcoin's base layer, or Layer 1, is designed to be a secure and decentralized settlement layer. However, it has limitations in terms of scalability and programmability. Layer 2 and Layer 3 solutions are being developed to address these limitations and unlock the full potential of the Bitcoin network.
+- ## Layer 2: Scaling Bitcoin
+	- Layer 2 solutions are protocols that are built on top of the Bitcoin network to handle transactions off-chain, thereby increasing speed and reducing costs.
+	- ### The Lightning Network
+		- The Lightning Network is the most well-known Layer 2 solution for Bitcoin. It enables instant, low-cost payments by creating a network of payment channels between users.
+	- ### Smart Contract Platforms
+		- **[Stacks](https://www.stacks.co/)**: A smart contract platform that enables decentralized applications and smart contracts on Bitcoin.
+		- **[Rootstock (RSK)](https://www.rsk.co/)**: A sidechain to Bitcoin that provides a platform for smart contracts that is highly compatible with Ethereum's Virtual Machine (EVM).
+	- ### Rollups
+		- **[Merlin Chain](https://merlinchain.io/)**: A Bitcoin Layer 2 that integrates ZK-Rollups, a technology that bundles multiple transactions into a single proof, further enhancing scalability and efficiency.
+- ## Layer 3: The Application Layer
+	- Layer 3 solutions are envisioned as an "application layer" built on top of Layer 2 protocols. Their primary focus will be on interoperability, customization, and enhanced user experience.
+	- ### RGB
+		- [RGB](https://www.rgb.tech/) is a smart contract system for Bitcoin and the Lightning Network that allows for the issuance and management of digital assets.
+	- ### Taro / Taproot Assets
+		- [Taproot Assets](https://docs.lightning.engineering/the-lightning-network/taproot-assets) is a new protocol from Lightning Labs that allows for the issuance of assets on the Bitcoin blockchain that can be transferred over the Lightning Network.
+	- ### BitVM
+		- [BitVM](https://bitvm.org/) is a new paradigm that enables arbitrary program execution on Bitcoin, combining Turing-complete expressiveness with the security of Bitcoin consensus.
+- ## See Also
+	- [[Bitcoin]]
+	- [[Lightning and Similar L2]]
+	- [[Digital Asset Risks]]
 
-### Technical Architecture
-- Client-side validation: Smart contracts validated locally, not by miners
+- # Bitcoin Layer 3: Smart Contracts & Asset Systems
+  id:: btc-l3-overview
+  - Bitcoin Layer 3 technologies enable smart contracts, custom assets, and programmability while maintaining Bitcoin's [[security]] and [[decentralization]]. These solutions build on [[Layer 2 solutions|Layer 2]] protocols like [[Lightning Network]] to provide application-level functionality.
+
+- ## Why Layer 3 Matters
+	- Layer 1 [[Bitcoin]] prioritizes [[consensus]] and [[settlement]]. Layer 2 increases [[transaction throughput]]. Layer 3 adds [[programmability]], [[asset issuance]], and [[smart contracts]] without requiring consensus changes.
+	- Enables [[Bitcoin-native applications]], [[DeFi]] protocols, and [[autonomous trading]] systems while maintaining Bitcoin's [[immutability]] and [[censorship resistance]].
+	- Bitcoin-AI angle: Layer 3 protocols support [[AI agent smart contracts]], autonomous [[trading systems]], and [[on-chain inference]] for intelligent [[contract execution]].
+
+- ## RGB Protocol: Confidential Asset Management
+  id:: rgb-protocol
+	- [[RGB]] is a scalable, private [[smart contract]] system for [[Bitcoin]] and the [[Lightning Network]] developed by the LNP/BP Standards Association.
+	- ### Technical Architecture
+		- Client-side validation: Smart contracts validated locally, not by miners
 		- Supports [[fungible tokens]], [[non-fungible assets]], and [[complex contracts]]
 		- Enables [[privacy-preserving]] transactions with [[zero-knowledge proofs]]
 		- Integrates with [[UTXO model]] for transaction security
@@ -141,17 +173,7 @@ id:: rgb-protocol
 	- **Categories**: [[Bitcoin]], [[Layer 2-3]], [[Smart Contracts]], [[Scalability]], [[DeFi]]
 	- **Keywords**: Bitcoin Layer 3, RGB, BitVM, Stacks, Taproot Assets, Merlin Chain, rollups, smart contracts, asset protocols
 
--
-
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
-
-## References & Citations
+- ## References & Citations
   id:: btc-l3-citations
 	- (1) Stacks Blog. "sBTC Cap-3 Filled In Hours with 5,000 BTC Capacity." May 22, 2025. https://www.stacks.co/
 	- (2) BitVM Alliance. "Turing-Complete Bitcoin Computation & Cross-Chain Bridges." 2025. https://bitvm.org/
@@ -172,6 +194,3 @@ id:: rgb-protocol
 	- [[Consensus Mechanisms]] - Proof of Transfer, Proof of Work
 	- [[Cross-Chain Bridges]] - Interoperability infrastructure
 	- [[AI Smart Contracts]] - Autonomous contract execution with AI
-
-### Relationships
-- is-subclass-of:: [[Blockchain]]

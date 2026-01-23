@@ -4,20 +4,396 @@
 	- ontology:: true
 	- term-id:: AI-0199
 	- preferred-term:: Scaled Dot Product Attention
-	- source-domain:: ai
-	- owl:class:: ai:ScaledDotProductAttention
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
-	- definition:: An attention mechanism that computes attention weights using the dot product of queries and keys, scaled by the square root of the key dimension, followed by a softmax normalisation.
-	- #### Relationships
-- is-subclass-of:: [[ModelArchitecture]]
-	  id:: scaled-dot-product-attention-relationships
+- definition:: An attention mechanism that computes attention weights using the dot product of queries and keys, scaled by the square root of the key dimension, followed by a softmax normalisation.
+
+## Characteristics
+
+- **Dot Product Computation**: Measures compatibility between queries and keys
+- **Scaling Factor**: Divides by √d_k to prevent extremely small gradients
+- **Softmax Normalisation**: Produces attention weight distribution
+- **Value Weighting**: Weighted sum of values based on attention weights
+
+## Academic Foundations
+
+**Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
+
+**Mathematical Formulation**: Attention(Q, K, V) = softmax(QK^T / √d_k)V
+
+## Technical Context
+
+The scaling factor (1/√d_k) is crucial for large dimension values, as dot products can grow large in magnitude, pushing the softmax function into regions with extremely small gradients. This scaling ensures stable training dynamics.
+
+## Ontological Relationships
+
+- **Broader Term**: Attention Mechanism
+- **Related Terms**: Query Key Value, Self-Attention, Multi-Head Attention
+- **Component Of**: Transformer Architecture
+
+## Usage Context
+
+"Scaled dot-product attention uses the scaling factor to prevent gradient vanishing when key dimensions are large."
+
+## OWL Functional Syntax
+
+```clojure
+(Declaration (Class :ScaledDotProductAttention))
+(AnnotationAssertion rdfs:label :ScaledDotProductAttention "Scaled Dot-Product Attention"@en)
+(AnnotationAssertion rdfs:comment :ScaledDotProductAttention
+  "Attention mechanism using scaled dot product of queries and keys, followed by softmax normalisation."@en)
+(AnnotationAssertion :hasSource :ScaledDotProductAttention
+  "Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762 (2017)"@en)
+(AnnotationAssertion :hasMathematicalFormulation :ScaledDotProductAttention
+  "Attention(Q, K, V) = softmax(QK^T / √d_k)V"@en)
+
+;; Taxonomic relationships
+(SubClassOf :ScaledDotProductAttention :AttentionMechanism)
+
+;; Computational steps
+(SubClassOf :ScaledDotProductAttention
+  (ObjectSomeValuesFrom :performsOperation :DotProductComputation))
+(SubClassOf :ScaledDotProductAttention
+  (ObjectSomeValuesFrom :performsOperation :ScalingBySquareRoot))
+(SubClassOf :ScaledDotProductAttention
+  (ObjectSomeValuesFrom :performsOperation :SoftmaxNormalisation))
+(SubClassOf :ScaledDotProductAttention
+  (ObjectSomeValuesFrom :performsOperation :ValueWeighting))
+
+;; Input-output relationships
+(SubClassOf :ScaledDotProductAttention
+  (ObjectSomeValuesFrom :takesInput :QueryVector))
+(SubClassOf :ScaledDotProductAttention
+  (ObjectSomeValuesFrom :takesInput :KeyVector))
+(SubClassOf :ScaledDotProductAttention
+  (ObjectSomeValuesFrom :takesInput :ValueVector))
+(SubClassOf :ScaledDotProductAttention
+  (ObjectSomeValuesFrom :produces :AttentionWeights))
+
+;; Purpose and benefits
+(DataPropertyAssertion :preventsGradientVanishing :ScaledDotProductAttention "true"^^xsd:boolean)
+(DataPropertyAssertion :stabilisesTraining :ScaledDotProductAttention "true"^^xsd:boolean)
+(DataPropertyAssertion :hasScalingFactor :ScaledDotProductAttention "1/√d_k"^^xsd:string)
+
+;; Used by
+(SubClassOf :MultiHeadAttention
+  (ObjectSomeValuesFrom :usesComponent :ScaledDotProductAttention))
+```
+
+## References
+
+- Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
+
+---
+
+*Ontology Term managed by AI-Grounded Ontology Working Group*
+*UK English Spelling Standards Applied*
+	- maturity:: draft
+	- owl:class:: mv:ScaledDotProductAttention
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Scaled Dot Product Attention
+	- An attention mechanism that computes attention weights using the dot product of queries and keys, scaled by the square root of the key dimension, followed by a softmax normalisation.
+
+- # Products
+
+	- # ComfyUI
+		- Started out as a project by a single coder
+		- Now adopted by the Stability team as their in house engine
+		- Tens of thousands of models and add ons, hundreds of thousands of users
+		- Can form the foundation of a deployable product
+			- API for Comfy iteself
+			- It's just chaining python scripts, you can isolate those and build
+
+		- ## Introduction
+			- Welcome to the ComfyUI for Fashion and Brands event at Dreamlab in MediaCity! We are excited to have you join us for a day of innovation, collaboration, and exploration of generative AI technology in the realm of fashion and product design.
+			- Before the event, please take a moment to review the following instructions and ensure that you have the necessary requirements to fully participate in the hackathon.
+
+	- ### Product Visualisation & Photography
+		- *Task:* Create appealing images of products for online stores and marketing materials.
+		- **AI HomeDesign** (*Formerly listed as HomeDesigns AI*)
+			- *Description:* Primarily for real estate, but can enhance images by removing clutter, virtually staging (adding furniture), or modifying spaces – potentially useful for certain product settings.
+			- *Cost:* Check website for pricing (likely subscription or credits).
+			- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[AI HomeDesign](https://aihomedesign.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+		- **Flair.ai / Photoroom / Patterned AI + Canva**
+			- *Description:* Tools to create professional product photos by removing/generating backgrounds, placing products in scenes, or creating custom backdrops. (See Image Generation).
+			- *Cost:* Varying free/paid plans.
+			- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Flair.ai](https://flair.ai/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->, <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Photoroom](https://www.photoroom.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->, <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Patterned AI](https://patterned.ai/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->, <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Canva](https://www.canva.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+	-
+
+	- ## Virtual production
+
+- # Virtual Production
+-
+
+- # Products
+
+	- # ComfyUI
+		- Started out as a project by a single coder
+		- Now adopted by the Stability team as their in house engine
+		- Tens of thousands of models and add ons, hundreds of thousands of users
+		- Can form the foundation of a deployable product
+			- API for Comfy iteself
+			- It's just chaining python scripts, you can isolate those and build
+
+		- ## Introduction
+			- Welcome to the ComfyUI for Fashion and Brands event at Dreamlab in MediaCity! We are excited to have you join us for a day of innovation, collaboration, and exploration of generative AI technology in the realm of fashion and product design.
+			- Before the event, please take a moment to review the following instructions and ensure that you have the necessary requirements to fully participate in the hackathon.
+
+	- ### Product Visualisation & Photography
+		- *Task:* Create appealing images of products for online stores and marketing materials.
+		- **AI HomeDesign** (*Formerly listed as HomeDesigns AI*)
+			- *Description:* Primarily for real estate, but can enhance images by removing clutter, virtually staging (adding furniture), or modifying spaces – potentially useful for certain product settings.
+			- *Cost:* Check website for pricing (likely subscription or credits).
+			- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[AI HomeDesign](https://aihomedesign.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+		- **Flair.ai / Photoroom / Patterned AI + Canva**
+			- *Description:* Tools to create professional product photos by removing/generating backgrounds, placing products in scenes, or creating custom backdrops. (See Image Generation).
+			- *Cost:* Varying free/paid plans.
+			- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Flair.ai](https://flair.ai/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->, <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Photoroom](https://www.photoroom.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->, <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Patterned AI](https://patterned.ai/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->, <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Canva](https://www.canva.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+	-
+
+	- ## Virtual production
+
+- # Virtual Production
+-
+
+	- ## Operations & Productivity
 	  collapsed:: true
-		- is-subclass-of:: [[AttentionMechanism]]
 
-## Scaled Dot Product Attention
+	- ## E-commerce & Physical Products
 
-Scaled Dot Product Attention refers to an attention mechanism that computes attention weights using the dot product of queries and keys, scaled by the square root of the key dimension, followed by a softmax normalisation.
+		- ### Skyglass
+			- Straight up virtual production on iPhone
+			- {{tweet https://twitter.com/skyglassapp/status/1712599252575412474}}
+
+				- ### CNBC poll
+					- 72% said it made them more productive.
+					- Among those that don't use it 35% are not worried.
+					- 60% of people who use it are concerned.
+					- The more employees used AI, the more worried they were that it could replace them
+
+- # Virtual Production
+-
+
+	- ## E-commerce & Physical Products
+
+				- ### CNBC poll
+					- 72% said it made them more productive.
+					- Among those that don't use it 35% are not worried.
+					- 60% of people who use it are concerned.
+					- The more employees used AI, the more worried they were that it could replace them
+
+				- ### EDX survey of 800 executives
+					- 90% were already using AI to increase productivity
+
+				- ### CNBC poll
+					- 72% said it made them more productive.
+					- Among those that don't use it 35% are not worried.
+					- 60% of people who use it are concerned.
+					- The more employees used AI, the more worried they were that it could replace them
+
+- ## Audio Production
+	- AI can be used to automate various aspects of audio production, such as noise reduction, equalization, and mastering.
+
+- ## Proposed sessions
+- These are not the final product; they are opening gambits, just to give an idea of my thinking. This is where I would like suggestions.
+
+- ## Proposed sessions
+- These are not the final product; they are opening gambits, just to give an idea of my thinking. This is where I would like suggestions.
+
+## Characteristics
+
+- **Dot Product Computation**: Measures compatibility between queries and keys
+- **Scaling Factor**: Divides by √d_k to prevent extremely small gradients
+- **Softmax Normalisation**: Produces attention weight distribution
+- **Value Weighting**: Weighted sum of values based on attention weights
+
+## Academic Foundations
+
+**Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
+
+**Mathematical Formulation**: Attention(Q, K, V) = softmax(QK^T / √d_k)V
+
+## Technical Context
+
+The scaling factor (1/√d_k) is crucial for large dimension values, as dot products can grow large in magnitude, pushing the softmax function into regions with extremely small gradients. This scaling ensures stable training dynamics.
+
+## Ontological Relationships
+
+- **Broader Term**: Attention Mechanism
+- **Related Terms**: Query Key Value, Self-Attention, Multi-Head Attention
+- **Component Of**: Transformer Architecture
+
+## Usage Context
+
+"Scaled dot-product attention uses the scaling factor to prevent gradient vanishing when key dimensions are large."
+
+## OWL Functional Syntax
+
+```clojure
+(Declaration (Class :ScaledDotProductAttention))
+(AnnotationAssertion rdfs:label :ScaledDotProductAttention "Scaled Dot-Product Attention"@en)
+(AnnotationAssertion rdfs:comment :ScaledDotProductAttention
+  "Attention mechanism using scaled dot product of queries and keys, followed by softmax normalisation."@en)
+(AnnotationAssertion :hasSource :ScaledDotProductAttention
+  "Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762 (2017)"@en)
+(AnnotationAssertion :hasMathematicalFormulation :ScaledDotProductAttention
+  "Attention(Q, K, V) = softmax(QK^T / √d_k)V"@en)
+
+;; Taxonomic relationships
+(SubClassOf :ScaledDotProductAttention :AttentionMechanism)
+
+;; Computational steps
+(SubClassOf :ScaledDotProductAttention
+  (ObjectSomeValuesFrom :performsOperation :DotProductComputation))
+(SubClassOf :ScaledDotProductAttention
+  (ObjectSomeValuesFrom :performsOperation :ScalingBySquareRoot))
+(SubClassOf :ScaledDotProductAttention
+  (ObjectSomeValuesFrom :performsOperation :SoftmaxNormalisation))
+(SubClassOf :ScaledDotProductAttention
+  (ObjectSomeValuesFrom :performsOperation :ValueWeighting))
+
+;; Input-output relationships
+(SubClassOf :ScaledDotProductAttention
+  (ObjectSomeValuesFrom :takesInput :QueryVector))
+(SubClassOf :ScaledDotProductAttention
+  (ObjectSomeValuesFrom :takesInput :KeyVector))
+(SubClassOf :ScaledDotProductAttention
+  (ObjectSomeValuesFrom :takesInput :ValueVector))
+(SubClassOf :ScaledDotProductAttention
+  (ObjectSomeValuesFrom :produces :AttentionWeights))
+
+;; Purpose and benefits
+(DataPropertyAssertion :preventsGradientVanishing :ScaledDotProductAttention "true"^^xsd:boolean)
+(DataPropertyAssertion :stabilisesTraining :ScaledDotProductAttention "true"^^xsd:boolean)
+(DataPropertyAssertion :hasScalingFactor :ScaledDotProductAttention "1/√d_k"^^xsd:string)
+
+;; Used by
+(SubClassOf :MultiHeadAttention
+  (ObjectSomeValuesFrom :usesComponent :ScaledDotProductAttention))
+```
+
+## References
+
+- Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
+
+---
+
+*Ontology Term managed by AI-Grounded Ontology Working Group*
+*UK English Spelling Standards Applied*
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# Scaled Dot-Product Attention
+		  
+		  **Term ID**: AI-0199
+		  **Category**: Architecture/Technique
+		  **Ontology Version**: 1.0
+		  **Last Updated**: 2025-10-27
+		  
+		  ## Definition
+		  
+		  An attention mechanism that computes attention weights using the dot product of queries and keys, scaled by the square root of the key dimension, followed by a softmax normalisation.
+		  
+		  ## Characteristics
+		  
+		  - **Dot Product Computation**: Measures compatibility between queries and keys
+		  - **Scaling Factor**: Divides by √d_k to prevent extremely small gradients
+		  - **Softmax Normalisation**: Produces attention weight distribution
+		  - **Value Weighting**: Weighted sum of values based on attention weights
+		  
+		  ## Academic Foundations
+		  
+		  **Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
+		  
+		  **Mathematical Formulation**: Attention(Q, K, V) = softmax(QK^T / √d_k)V
+		  
+		  ## Technical Context
+		  
+		  The scaling factor (1/√d_k) is crucial for large dimension values, as dot products can grow large in magnitude, pushing the softmax function into regions with extremely small gradients. This scaling ensures stable training dynamics.
+		  
+		  ## Ontological Relationships
+		  
+		  - **Broader Term**: Attention Mechanism
+		  - **Related Terms**: Query Key Value, Self-Attention, Multi-Head Attention
+		  - **Component Of**: Transformer Architecture
+		  
+		  ## Usage Context
+		  
+		  "Scaled dot-product attention uses the scaling factor to prevent gradient vanishing when key dimensions are large."
+		  
+		  ## OWL Functional Syntax
+		  
+		  ```clojure
+		  (Declaration (Class :ScaledDotProductAttention))
+		  (AnnotationAssertion rdfs:label :ScaledDotProductAttention "Scaled Dot-Product Attention"@en)
+		  (AnnotationAssertion rdfs:comment :ScaledDotProductAttention
+		    "Attention mechanism using scaled dot product of queries and keys, followed by softmax normalisation."@en)
+		  (AnnotationAssertion :hasSource :ScaledDotProductAttention
+		    "Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762 (2017)"@en)
+		  (AnnotationAssertion :hasMathematicalFormulation :ScaledDotProductAttention
+		    "Attention(Q, K, V) = softmax(QK^T / √d_k)V"@en)
+		  
+		  ;; Taxonomic relationships
+		  (SubClassOf :ScaledDotProductAttention :AttentionMechanism)
+		  
+		  ;; Computational steps
+		  (SubClassOf :ScaledDotProductAttention
+		    (ObjectSomeValuesFrom :performsOperation :DotProductComputation))
+		  (SubClassOf :ScaledDotProductAttention
+		    (ObjectSomeValuesFrom :performsOperation :ScalingBySquareRoot))
+		  (SubClassOf :ScaledDotProductAttention
+		    (ObjectSomeValuesFrom :performsOperation :SoftmaxNormalisation))
+		  (SubClassOf :ScaledDotProductAttention
+		    (ObjectSomeValuesFrom :performsOperation :ValueWeighting))
+		  
+		  ;; Input-output relationships
+		  (SubClassOf :ScaledDotProductAttention
+		    (ObjectSomeValuesFrom :takesInput :QueryVector))
+		  (SubClassOf :ScaledDotProductAttention
+		    (ObjectSomeValuesFrom :takesInput :KeyVector))
+		  (SubClassOf :ScaledDotProductAttention
+		    (ObjectSomeValuesFrom :takesInput :ValueVector))
+		  (SubClassOf :ScaledDotProductAttention
+		    (ObjectSomeValuesFrom :produces :AttentionWeights))
+		  
+		  ;; Purpose and benefits
+		  (DataPropertyAssertion :preventsGradientVanishing :ScaledDotProductAttention "true"^^xsd:boolean)
+		  (DataPropertyAssertion :stabilisesTraining :ScaledDotProductAttention "true"^^xsd:boolean)
+		  (DataPropertyAssertion :hasScalingFactor :ScaledDotProductAttention "1/√d_k"^^xsd:string)
+		  
+		  ;; Used by
+		  (SubClassOf :MultiHeadAttention
+		    (ObjectSomeValuesFrom :usesComponent :ScaledDotProductAttention))
+		  ```
+		  
+		  ## References
+		  
+		  - Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
+		  
+		  ---
+		  
+		  *Ontology Term managed by AI-Grounded Ontology Working Group*
+		  *UK English Spelling Standards Applied*
+		  
+		  ```
+
+- public-access:: true
+	- definition:: An attention mechanism that computes attention weights using the dot product of queries and keys, scaled by the square root of the key dimension, followed by a softmax normalisation.
+
+
+
+## Academic Context
+
+- Scaled Dot-Product Attention is a fundamental attention mechanism used primarily in Transformer architectures.
+  - It computes attention weights by taking the dot product of query and key vectors, scaling the result by the inverse square root of the key dimension to maintain numerical stability, and then applying a softmax function to normalise these weights.
+  - This mechanism enables models to weigh the relevance of different parts of an input sequence dynamically, facilitating context-aware representations.
+- The concept builds on earlier attention mechanisms but introduces scaling to prevent gradient vanishing or explosion during training, especially with high-dimensional key vectors.
+- Academically, it is grounded in linear algebra and probability theory, with the softmax function ensuring a valid probability distribution over attention scores.
+
+## Current Landscape (2025)
 
 - Scaled Dot-Product Attention remains the cornerstone of modern Transformer-based models across natural language processing (NLP), computer vision, and signal processing.
   - Industry leaders such as OpenAI, DeepMind, and Google continue to implement and refine this mechanism in large language models and multimodal systems.
@@ -26,14 +402,6 @@ Scaled Dot Product Attention refers to an attention mechanism that computes atte
 - Technical capabilities include efficient parallel computation of attention scores and integration with multi-head attention to capture diverse contextual features.
 - Limitations persist in computational cost for very long sequences and challenges in interpretability, prompting ongoing research into sparse and adaptive attention variants.
 - Standards and frameworks such as Hugging Face Transformers and TensorFlow provide robust, optimised implementations widely adopted in both academia and industry.
-
-## Technical Details
-
-- **Id**: scaled-dot-product-attention-ontology
-- **Collapsed**: true
-- **Source Domain**: ai
-- **Status**: draft
-- **Public Access**: true
 
 ## Research & Literature
 
@@ -67,9 +435,13 @@ Scaled Dot Product Attention refers to an attention mechanism that computes atte
 ## References
 
 1. Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is All You Need. *Advances in Neural Information Processing Systems*, 30, 5998–6008. https://doi.org/10.5555/3295222.3295349
+
 2. Dai, Z., Yang, Z., Yang, Y., Carbonell, J., Le, Q. V., & Salakhutdinov, R. (2019). Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context. *arXiv preprint* arXiv:1901.02860.
+
 3. Wu, Z., & Hu, H. (2023). Efficient Attention Mechanisms for Long Sequence Modelling. *IEEE Transactions on Neural Networks and Learning Systems*.
+
 4. Additional UK research outputs and industry reports from the Alan Turing Institute and North England AI innovation hubs (2024–2025).
+
 
 ## Metadata
 

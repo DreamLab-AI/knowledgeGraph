@@ -1,36 +1,42 @@
 - ### OntologyBlock
-    - term-id:: DT-0565
-    - source-domain:: bc
-    - owl:class:: bc:SubMillisecondLatency
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - preferred-term:: Sub-Millisecond Latency
-    - ontology:: true
+  id:: submillisecondlatency-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: BC
+    - sequence-number:: 0565
+    - filename-history:: ["BC-0565-submillisecondlatency.md"]
     - public-access:: true
-    - is-subclass-of:: [[NetworkPerformance]]
+    - ontology:: true
+    - term-id:: BC-0565
+    - preferred-term:: Sub-Millisecond Latency
+    - source-domain:: bc
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## Sub-Millisecond Latency
+  - **Definition**
+    - definition:: Latency characteristic where consensus adds less than one millisecond to transaction confirmation time.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-Sub-Millisecond Latency refers to latency characteristic where consensus adds less than one millisecond to transaction confirmation time.
+  - **Semantic Classification**
+    - owl:class:: bc:SubMillisecondLatency
+    - belongsToDomain:: [[Blockchain]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :SubMillisecondLatency))
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :SubMillisecondLatency "Sub-Millisecond Latency"@en)
+      (AnnotationAssertion rdfs:comment :SubMillisecondLatency
+        "Latency characteristic where consensus adds less than one millisecond to transaction confirmation time."@en)
+      ```
 
-- **Id**: submillisecondlatency-ontology
-- **Collapsed**: true
-- **Domain Prefix**: BC
-- **Sequence Number**: 0565
-- **Filename History**: ["BC-0565-submillisecondlatency.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: bc:SubMillisecondLatency
-- **Belongstodomain**: [[Blockchain]]
+- ## About Sub-Millisecond Latency
+  Latency characteristic where consensus adds less than one millisecond to transaction confirmation time.

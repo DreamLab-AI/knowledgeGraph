@@ -6,12 +6,12 @@
     "Event"
   ],
   "wiki_links": [
-    "LiDAR",
     "Sensor Fusion",
-    "IMU",
-    "Robotics Systems",
+    "LiDAR",
+    "Camera",
     "Force Torque Sensor",
-    "Camera"
+    "Robotics Systems",
+    "IMU"
   ],
   "ontology": {
     "term_id": "RB-0601",

@@ -4,10 +4,10 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9949
-	- source-domain:: mv
+	- source-domain:: artificial-intelligence
 	- preferred-term:: Machine Learning Framework
 	- status:: active
-	- owl:class:: mv:MachineLearningFramework
+	- owl:class:: ai:MachineLearningFramework
 	- belongsToDomain:: [[metaverse]]
 	- definition:: Software libraries and development environments such as TensorFlow and PyTorch that provide tools, APIs, and abstractions for building, training, and deploying machine learning models used in metaverse AI applications.
 	- #### Relationships

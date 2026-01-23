@@ -11,17 +11,18 @@
     "Digital Content Layer",
     "Experience Layer",
     "Compute Layer",
-    "Human Interface Layer (HIL)"
+    "Human Interface Layer (HIL)",
+    "Neural 3D Generation"
   ],
   "wiki_links": [
-    "Virtual Reality",
-    "NVIDIA",
-    "Computer Graphics",
-    "Metaverse",
-    "Film Production",
-    "Gaussian splatting and Similar",
     "Ray Tracing",
-    "Game Development"
+    "Virtual Reality",
+    "Computer Graphics",
+    "NVIDIA",
+    "Film Production",
+    "Metaverse",
+    "Game Development",
+    "Gaussian splatting and Similar"
   ],
   "ontology": {
     "term_id": "NGM-7018",

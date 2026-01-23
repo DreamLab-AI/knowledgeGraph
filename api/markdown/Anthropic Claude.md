@@ -1,18 +1,7 @@
-- ### OntologyBlock
-  id:: anthropic-claude-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0401
-	- preferred-term:: Anthropic Claude
-	- source-domain:: ai
-	- owl:class:: ai:AnthropicClaude
+public:: true
 
-### Relationships
-
-- is-subclass-of:: [[ModelArchitecture]]
-	- status:: draft
-	- public-access:: true
-	- definition:: Anthropic Claude is a family of large language models designed for complex, multi-step tasks with large context windows.
+- # Anthropic Claude
+- Anthropic's Claude is a family of large language models (LLMs) that are designed to be helpful, harmless, and honest. They are trained on a massive dataset of text and code and can be used for a variety of tasks, including summarization, question answering, and code generation.
 - ## Models
 	- ### Claude 3.5 Sonnet
 		- The latest and most advanced model in the Claude 3.5 family. It is designed for complex, multi-step tasks and can generate high-quality text and code.
@@ -41,11 +30,3 @@
 	- [[Large language models]]
 	- [[OpenAI]]
 	- [[Google]]
-
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable

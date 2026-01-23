@@ -5,19 +5,25 @@
   "backlinks": [
     "Price Discovery",
     "AI Model Card",
+    "Layer2",
     "TokenEconomics",
-    "Web3",
-    "Decentralised Web"
+    "SmartContract",
+    "Smart Contract Platform",
+    "Oracle",
+    "ProofOfWork",
+    "ProofOfStake",
+    "Proof of Work",
+    "Decentralized Finance"
   ],
   "wiki_links": [
+    "Blockchain",
+    "BlockchainDomain",
+    "Front-Running",
     "Proposer-Builder Separation",
     "DeFi Ecosystem",
-    "BlockchainDomain",
-    "Consensus Security",
     "Mempool",
     "Transaction Ordering",
-    "Front-Running",
-    "Blockchain"
+    "Consensus Security"
   ],
   "ontology": {
     "term_id": "BC-8012",

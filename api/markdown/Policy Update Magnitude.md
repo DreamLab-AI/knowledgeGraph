@@ -1,38 +1,42 @@
 - ### OntologyBlock
-    - term-id:: DT-0824
-    - source-domain:: ai
-    - owl:class:: ai:PolicyUpdateMagnitude
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - preferred-term:: Policy Update Magnitude
-    - ontology:: true
+  id:: policyupdatemagnitude-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: AI
+    - sequence-number:: 0824
+    - filename-history:: ["AI-0824-policyupdatemagnitude.md"]
     - public-access:: true
+    - ontology:: true
+    - term-id:: AI-0824
+    - preferred-term:: Policy Update Magnitude
+    - source-domain:: ai
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-### Relationships
-- is-subclass-of:: [[TrainingMethod]]
+  - **Definition**
+    - definition:: Size of policy updates in reinforcement learning.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-## Policy Update Magnitude
+  - **Semantic Classification**
+    - owl:class:: ai:PolicyUpdateMagnitude
+    - belongsToDomain:: [[Artificial Intelligence]]
 
-Policy Update Magnitude refers to size of policy updates in reinforcement learning.
+  - #### Relationships
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :PolicyUpdateMagnitude))
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :PolicyUpdateMagnitude "Policy Update Magnitude"@en)
+      (AnnotationAssertion rdfs:comment :PolicyUpdateMagnitude
+        "Size of policy updates in reinforcement learning."@en)
+      ```
 
-## Technical Details
-
-- **Id**: policyupdatemagnitude-ontology
-- **Collapsed**: true
-- **Domain Prefix**: AI
-- **Sequence Number**: 0824
-- **Filename History**: ["AI-0824-policyupdatemagnitude.md"]
-- **Public Access**: true
-- **Source Domain**: ai
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: ai:PolicyUpdateMagnitude
-- **Belongstodomain**: [[Artificial Intelligence]]
+- ## About Policy Update Magnitude
+  Size of policy updates in reinforcement learning.

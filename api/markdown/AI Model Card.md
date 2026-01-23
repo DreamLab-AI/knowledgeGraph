@@ -2,30 +2,41 @@
   id:: ai-model-card-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: DT-0120
-	- preferred-term:: AI Model Card
+	- term-id:: 20120
 	- source-domain:: mv
-	- status:: complete
-	- public-access:: true
+- status:: draft
+	- preferred-term:: AI Model Card
+	- definition:: A structured documentation format that describes an AI model's purpose, performance metrics, limitations, ethical considerations, and appropriate use cases to promote transparency and responsible deployment.
+	- maturity:: mature
+	- source:: [[Google Model Cards for Model Reporting]]
 
-
-
-
-### OWL Classification
+- status:: complete
+    - public-access:: true
+	- preferred-term:: AI Model Card
+	- version:: 1.1.0
+	- last-updated:: 2025-11-15
+	- quality-score:: 0.91
+	- bitcoin-ai-relevance:: medium
+	- cross-domain-links:: 45
+	- definition:: A structured documentation format that describes an [[AI Model]]'s purpose, [[Performance Metrics]], limitations, [[Ethical Considerations]], and appropriate [[Use Case|use cases]] to promote [[Transparency]] and [[Responsible AI Deployment|responsible deployment]]. In 2025, model cards are required by [[EU AI Act]] for high-risk systems and recommended by [[OECD]] for all AI applications, including [[Bitcoin Trading Bot|trading systems]], [[Blockchain Analytics]], and [[Smart Contract Auditing]].
+	- maturity:: mature
+	- source:: [[Google Model Cards for Model Reporting]] (https://modelcards.withgoogle.com/), [[Mitchell et al. 2019]] (https://arxiv.org/abs/1810.03993), [[ISO/IEC 42001]] (https://www.iso.org/standard/81230.html)
 	- owl:class:: mv:AIModelCard
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
+	- owl:functional-syntax:: true
+	- belongsToDomain:: [[ComputationAndIntelligenceDomain]], [[TrustAndGovernanceDomain]]
+	- implementedInLayer:: [[Data Layer]], [[Application Layer]]
+	- #### Relationships
+	  id:: ai-model-card-relationships
+- has-part:: [[Model Details]], [[Performance Metrics]], [[Limitations Section]], [[Ethical Considerations]], [[Use Case Descriptions]], [[Training Data Information]]
+		- is-part-of:: [[AI Documentation Framework]], [[Model Governance System]]
+		- requires:: [[Model Evaluation Results]], [[Training Dataset Metadata]], [[Performance Benchmarks]]
+		- depends-on:: [[AI Ethics Guidelines]], [[Model Testing Protocols]], [[Documentation Standards]]
+		- enables:: [[Model Transparency]], [[Responsible AI Deployment]], [[Informed Decision Making]], [[AI Accountability]]
 
-### Domain & Architecture
-	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[DisruptiveTechDomain]], [[ComputationAndIntelligenceDomain]]
-	- implementedInLayer:: [[Application Layer]], [[Data Layer]]
-	- maturity:: mature
-
-### Relationships
-id:: ai-model-card-relationships
-		- is-subclass-of:: [[Metaverse]]
-		- has-part:: [[Model Details]], [[Performance Metrics]], [[Limitations Section]], [[Ethical Considerations]], [[Use Case Descriptions]], [[Training Data Information]], [[Bias Analysis]], [[Fairness Metrics]], [[Security Considerations]]
+- has-part:: [[Model Details]], [[Performance Metrics]], [[Limitations Section]], [[Ethical Considerations]], [[Use Case Descriptions]], [[Training Data Information]], [[Bias Analysis]], [[Fairness Metrics]], [[Security Considerations]]
 		- is-part-of:: [[AI Documentation Framework]], [[Model Governance System]], [[AI Risk Management]], [[Compliance Documentation]]
 		- requires:: [[Model Evaluation Results]], [[Training Dataset Metadata]], [[Performance Benchmarks]], [[Demographic Performance Analysis]], [[Safety Testing Results]]
 		- depends-on:: [[AI Ethics Guidelines]], [[Model Testing Protocols]], [[Documentation Standards]], [[Regulatory Requirements]], [[Industry Best Practices]]
@@ -76,24 +87,86 @@ id:: ai-model-card-relationships
 		  )
 
   # Property characteristics
-  TransitiveObjectProperty(mv:ispartof)
+  TransitiveObjectProperty(dt:ispartof)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:requires)
+  AsymmetricObjectProperty(dt:requires)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:dependson)
+  AsymmetricObjectProperty(dt:dependson)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:enables)
+  AsymmetricObjectProperty(dt:enables)
 ```
 - ## About AI Model Card
   id:: ai-model-card-about
-	- AI Model Cards are structured documents that provide transparent, comprehensive information about [[Machine Learning Model|machine learning models]]. Originally introduced by [[Google Research|Google researchers]] in 2019 (Mitchell et al., https://arxiv.org/abs/1810.03993), model cards have become a standard practice for documenting [[AI System|AI systems]], particularly in high-stakes domains. They serve as "nutrition labels" for AI models, offering stakeholders—including [[Developers]], [[Deployers]], [[Policymakers]], and [[End-Users]]—clear insights into a model's capabilities, limitations, and appropriate applications.
-	- In [[Metaverse]] environments, where AI models power everything from [[Avatar Behaviour]] to [[Content Moderation]] and [[Personalized Experience|personalized experiences]], model cards are crucial for establishing [[Trust]], ensuring [[Ethical Deployment]], and maintaining [[Regulatory Compliance]] with emerging [[AI Governance]] frameworks. Similarly, in [[Blockchain]] and [[Cryptocurrency]] contexts, model cards document [[Bitcoin Trading Bot|trading algorithms]], [[Smart Contract Verification]] models, [[Fraud Detection System|fraud detection systems]], and [[Market Analysis]] AI, ensuring transparency and accountability in [[DeFi]] and [[Crypto Asset]] management.
+- AI Model Cards are structured documents that provide transparent, comprehensive information about machine learning models. Originally introduced by Google researchers in 2019, model cards have become a standard practice for documenting AI systems, particularly in high-stakes domains. They serve as "nutrition labels" for AI models, offering stakeholders—including developers, deployers, policymakers, and end-users—clear insights into a model's capabilities, limitations, and appropriate applications.
+	- In metaverse environments, where AI models power everything from avatar behavior to content moderation and personalized experiences, model cards are crucial for establishing trust, ensuring ethical deployment, and maintaining regulatory compliance with emerging AI governance frameworks.
 	- ### Key Characteristics
 	  id:: ai-model-card-characteristics
-		- **Structured Format**: Follows standardised template ensuring consistent documentation across different models and organizations
+		- **Structured Format**: Follows standardized template ensuring consistent documentation across different models and organizations
+		- **Comprehensive Coverage**: Documents model purpose, architecture, training data, performance, limitations, and ethical considerations
+		- **Transparency Focus**: Makes implicit model characteristics explicit to support informed decision-making
+		- **Stakeholder-Oriented**: Addresses information needs of multiple audiences from technical developers to non-technical decision-makers
+		- **Version Controlled**: Tracks changes to model documentation as models evolve and are updated
+		- **Machine-Readable**: Often formatted to support automated processing and integration with model registries
+		- **Standards-Aligned**: Increasingly aligned with regulatory frameworks such as EU AI Act and ISO/IEC 42001
+	- ### Technical Components
+	  id:: ai-model-card-components
+		- [[Model Details]] - Basic information including model name, version, type, architecture, and development team
+		- [[Performance Metrics]] - Quantitative evaluation results across different datasets, demographic groups, and use cases
+		- [[Limitations Section]] - Explicit documentation of known limitations, failure modes, and out-of-scope applications
+		- [[Ethical Considerations]] - Analysis of fairness, bias, privacy implications, and societal impacts
+		- [[Use Case Descriptions]] - Intended applications and examples of appropriate deployment contexts
+		- [[Training Data Information]] - Details about datasets used for training including sources, demographics, and preprocessing
+		- [[Evaluation Data Information]] - Description of test datasets and evaluation methodology
+		- [[Quantitative Analysis]] - Detailed performance breakdowns including disaggregated metrics
+		- [[Caveats and Recommendations]] - Guidance for deployment, monitoring, and responsible use
+	- ### Functional Capabilities
+	  id:: ai-model-card-capabilities
+		- **Model Transparency**: Provides clear visibility into model characteristics, enabling stakeholders to understand what a model does and how it works
+		- **Responsible AI Deployment**: Supports ethical decision-making by documenting limitations, biases, and appropriate use cases before deployment
+		- **Informed Decision Making**: Enables technical and non-technical stakeholders to assess whether a model is suitable for their specific context
+		- **AI Accountability**: Creates documentation trail supporting auditing, compliance verification, and accountability mechanisms
+		- **Risk Assessment**: Facilitates identification of potential risks and harms before model deployment in production systems
+		- **Bias Detection**: Documents performance disparities across demographic groups, supporting fairness analysis
+		- **Regulatory Compliance**: Helps organizations meet transparency requirements in AI regulations such as EU AI Act
+		- **Knowledge Sharing**: Enables model developers to communicate capabilities and limitations to downstream users
+	- ### Use Cases
+	  id:: ai-model-card-use-cases
+		- **Model Selection**: Organizations evaluating multiple AI models use model cards to compare capabilities and select the most appropriate solution
+		- **Procurement Due Diligence**: Enterprises purchasing AI solutions review model cards to assess quality, limitations, and ethical considerations
+		- **Regulatory Compliance**: Organizations subject to AI regulations use model cards to demonstrate compliance with transparency requirements
+		- **Internal Model Governance**: Companies with multiple AI models use standardized model cards for centralized model registry and governance
+		- **Public AI Systems**: Government agencies deploying public-facing AI services publish model cards to ensure transparency and public accountability
+		- **Research Publication**: Academic and industry researchers include model cards when publishing models to facilitate reproducibility and responsible reuse
+		- **Metaverse Platform Governance**: Metaverse platforms require AI providers to submit model cards for avatar intelligence, content moderation, and recommendation systems
+		- **Third-Party Auditing**: Independent auditors use model cards as starting point for evaluating AI systems for fairness, safety, and compliance
+		- **Developer Onboarding**: New team members use model cards to quickly understand existing AI systems in their organization's portfolio
+	- ### Standards & References
+	  id:: ai-model-card-standards
+		- [[Google Model Cards for Model Reporting]] - Original research paper introducing model card framework (Mitchell et al., 2019)
+		- [[ISO/IEC 42001]] - International standard for AI management systems including documentation requirements
+		- [[EU AI Act]] - European regulation requiring transparency documentation for high-risk AI systems
+		- [[OECD AI Principles]] - International framework emphasizing transparency and responsible stewardship of trustworthy AI
+		- [[NIST AI Risk Management Framework]] - U.S. framework including documentation and transparency practices
+		- [[IEEE 7001]] - Standard for transparency of autonomous systems
+		- [[Partnership on AI]] - Industry consortium developing best practices for AI documentation including model cards
+		- [[W3C PROV-O]] - Provenance ontology that can be used for machine-readable model cards
+		- [[MLCommons]] - Organization developing standardized benchmarks and model documentation practices
+	- ### Related Concepts
+	  id:: ai-model-card-related
+		- [[AI Ethics Guidelines]] - Broader ethical frameworks that model cards help operationalize
+		- [[Model Governance System]] - Organizational processes for managing AI model lifecycle including documentation
+		- [[Data Card]] - Similar documentation format for datasets used to train AI models
+		- [[System Card]] - Extended documentation covering entire AI systems beyond individual models
+		- [[Explainable AI]] - Techniques for making AI decision-making interpretable, complementary to model cards
+
+- AI Model Cards are structured documents that provide transparent, comprehensive information about [[Machine Learning Model|machine learning models]]. Originally introduced by [[Google Research|Google researchers]] in 2019 (Mitchell et al., https://arxiv.org/abs/1810.03993), model cards have become a standard practice for documenting [[AI System|AI systems]], particularly in high-stakes domains. They serve as "nutrition labels" for AI models, offering stakeholders—including [[Developers]], [[Deployers]], [[Policymakers]], and [[End-Users]]—clear insights into a model's capabilities, limitations, and appropriate applications.
+	- In [[Metaverse]] environments, where AI models power everything from [[Avatar Behavior]] to [[Content Moderation]] and [[Personalized Experience|personalized experiences]], model cards are crucial for establishing [[Trust]], ensuring [[Ethical Deployment]], and maintaining [[Regulatory Compliance]] with emerging [[AI Governance]] frameworks. Similarly, in [[Blockchain]] and [[Cryptocurrency]] contexts, model cards document [[Bitcoin Trading Bot|trading algorithms]], [[Smart Contract Verification]] models, [[Fraud Detection System|fraud detection systems]], and [[Market Analysis]] AI, ensuring transparency and accountability in [[DeFi]] and [[Crypto Asset]] management.
+	- ### Key Characteristics
+	  id:: ai-model-card-characteristics
+		- **Structured Format**: Follows standardized template ensuring consistent documentation across different models and organizations
 		- **Comprehensive Coverage**: Documents model purpose, [[Model Architecture|architecture]], [[Training Data]], [[Performance]], [[Limitations]], and [[Ethical Considerations]]
 		- **Transparency Focus**: Makes implicit model characteristics explicit to support [[Informed Decision-Making]]
 		- **Stakeholder-Oriented**: Addresses information needs of multiple audiences from technical [[Developers]] to non-technical [[Decision-Makers]]
@@ -131,7 +204,7 @@ id:: ai-model-card-relationships
 		- **Model Selection**: Organizations evaluating multiple [[AI Model|AI models]] use model cards to compare capabilities and select the most appropriate solution
 		- **Procurement Due Diligence**: Enterprises purchasing [[AI Solutions]] review model cards to assess quality, limitations, and [[Ethical Considerations]]
 		- **Regulatory Compliance**: Organizations subject to [[AI Regulations]] use model cards to demonstrate compliance with transparency requirements
-		- **Internal Model Governance**: Companies with multiple AI models use standardised model cards for centralised [[Model Registry]] and [[AI Governance]]
+		- **Internal Model Governance**: Companies with multiple AI models use standardized model cards for centralized [[Model Registry]] and [[AI Governance]]
 		- **Public AI Systems**: Government agencies deploying public-facing AI services publish model cards to ensure [[Transparency]] and [[Public Accountability]]
 		- **Research Publication**: Academic and industry researchers include model cards when publishing models to facilitate [[Reproducibility]] and [[Responsible Reuse]]
 		- **Metaverse Platform Governance**: [[Metaverse]] platforms require AI providers to submit model cards for [[Avatar Intelligence]], [[Content Moderation]], and [[Recommendation System|recommendation systems]]
@@ -146,12 +219,12 @@ id:: ai-model-card-relationships
 		- [[Google Model Cards for Model Reporting]] - Original research paper introducing model card framework (Mitchell et al., 2019) (https://arxiv.org/abs/1810.03993)
 		- [[ISO/IEC 42001]] - International standard for [[AI Management Systems]] including documentation requirements (https://www.iso.org/standard/81230.html)
 		- [[EU AI Act]] - European regulation requiring transparency documentation for high-risk AI systems (https://artificialintelligenceact.eu/)
-		- [[OECD AI Principles]] - International framework emphasising transparency and responsible stewardship of trustworthy AI (https://oecd.ai/en/ai-principles)
+		- [[OECD AI Principles]] - International framework emphasizing transparency and responsible stewardship of trustworthy AI (https://oecd.ai/en/ai-principles)
 		- [[NIST AI Risk Management Framework]] - U.S. framework including documentation and transparency practices (https://www.nist.gov/itl/ai-risk-management-framework)
 		- [[IEEE 7001]] - Standard for transparency of autonomous systems (https://standards.ieee.org/ieee/7001/)
 		- [[Partnership on AI]] - Industry consortium developing best practices for AI documentation (https://partnershiponai.org/)
 		- [[W3C PROV-O]] - Provenance ontology that can be used for machine-readable model cards (https://www.w3.org/TR/prov-o/)
-		- [[MLCommons]] - Organization developing standardised benchmarks and model documentation practices (https://mlcommons.org/)
+		- [[MLCommons]] - Organization developing standardized benchmarks and model documentation practices (https://mlcommons.org/)
 		- [[Coalition for Health AI]] (CHAI) - Healthcare-specific model card framework (https://www.coalitionforhealthai.org/)
 		- [[Hugging Face Model Cards]] - Implementation for [[Large Language Model|LLM]] documentation (https://huggingface.co/docs/hub/model-cards)
 		- [[OpenAI Model Specs]] - Model card examples for [[GPT]] and [[DALL-E]] (https://openai.com/research/)
@@ -167,17 +240,16 @@ id:: ai-model-card-relationships
 		- [[Model Registry]] - System for cataloging and managing AI models, often incorporating model card information
 		- [[Fairness Metrics]] - Quantitative measures of AI fairness documented in model cards
 		- [[VirtualObject]] - Inferred ontology class for documentation formats and data structures
-		- [[AI Governance Principle]] - Foundational guidelines operationalized through model cards
+- [[AI Governance Principle]] - Foundational guidelines operationalized through model cards
 		- [[Algorithmic Transparency]] - Disclosure requirements for [[Algorithm|algorithms]] and models
 		- [[Model Provenance]] - Tracking [[Training Data]], [[Model Lineage]], [[Versioning]]
 		- [[Regulatory Compliance]] - Meeting [[EU AI Act]], [[GDPR]], [[MiCA]], [[Securities Law]] requirements
 		- [[Blockchain Model Cards]]: Documentation for [[Bitcoin Trading Bot|trading bots]], [[DeFi]] models, [[Smart Contract]] AI, [[Oracle]] systems
 		- [[Crypto Transparency Standards]]: [[AML Compliance]], [[Market Manipulation]] detection, [[Risk Disclosure]]
 
-# AI Model Card – Updated Ontology Entry
 
-### Quality Metrics
-	- quality-score:: 0.91
+
+# AI Model Card – Updated Ontology Entry
 
 ## Academic Context
 
@@ -201,7 +273,7 @@ id:: ai-model-card-relationships
   - [[Financial Conduct Authority]] (FCA) guidance on model cards for [[Bitcoin]] trading platforms and [[Crypto Asset]] firms (https://www.fca.org.uk/)
 
 - Technical capabilities and standardised content
-  - Model details: developer information, version history, architecture specifications, training algorithms, parameters, fairness constraints, and licencing terms
+  - Model details: developer information, version history, architecture specifications, training algorithms, parameters, fairness constraints, and licensing terms
   - Intended use: explicit delineation of in-scope applications and out-of-scope restrictions, with identified intended users
   - Performance metrics: real-world impact assessment across relevant factors including demographic groups, environmental conditions, and technical attributes
   - Training data documentation: provenance, statistical distribution characteristics, and dataset composition (though proprietary considerations may limit disclosure)
@@ -224,7 +296,7 @@ id:: ai-model-card-relationships
 
 - Healthcare-specific implementations
   - Coalition for Health AI. (2024). "Applied Model Card for Health AI Systems." Available through CHAI workgroup documentation. Extends model card framework to clinical decision support systems and predictive diagnostic instruments.
-  - Recent systematic review in *PMC National Centre for Biotechnology Information* (2024) examined transparent model cards with layered accessible information for health system procurement, addressing integration with medical device regulatory requirements and Instructions for Use (IFU) standards.
+  - Recent systematic review in *PMC National Center for Biotechnology Information* (2024) examined transparent model cards with layered accessible information for health system procurement, addressing integration with medical device regulatory requirements and Instructions for Use (IFU) standards.
 
 - Standards and governance alignment
   - ISO/IEC 42001:2023. "Artificial Intelligence Management System – Requirements and guidance." International Organisation for Standardisation. Incorporates model card documentation within broader AI governance frameworks.
@@ -288,6 +360,7 @@ id:: ai-model-card-relationships
 
 **Note on format conversion:** The above content has been restructured from the original ontology entry into nested Logseq bullet format as requested, with bold text removed in favour of heading hierarchy. UK English conventions have been applied throughout, and North England context has been integrated where substantively relevant rather than forced artificially. The tone maintains technical rigour whilst remaining cordial, with subtle wit employed sparingly (the observation about models as "impressive engines sitting idle on test benches" and the "documentation burden" framing).
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-15
@@ -299,4 +372,3 @@ id:: ai-model-card-relationships
 - **Bitcoin-AI Cross-References**: 10
 - **URLs Expanded**: 14
 - **2025 Updates**: EU AI Act requirements, CHAI healthcare framework, crypto exchange adoption, DeFi protocol transparency, blockchain-specific model cards
-

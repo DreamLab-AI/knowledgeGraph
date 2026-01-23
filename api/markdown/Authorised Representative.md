@@ -2,13 +2,795 @@
   id:: authorised-representative-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: DT-7883
+	- term-id:: mv-1761742247883
 	- preferred-term:: Authorised Representative
 	- source-domain:: mv
-  - owl:class:: mv:AuthorisedRepresentative
-	- belongsToDomain:: [[DisruptiveTechDomain]]
 	- status:: draft
-    - public-access:: true
+- definition:: A natural or legal person located or established in the Union who has received and accepted a written mandate from a provider of an AI system or a general-purpose AI model to, respectively, perform and carry out on its behalf the tasks and procedures established by this Regulation.
+
+
+## OWL Formal Semantics
+
+```clojure
+;; OWL Functional Syntax
+
+(Declaration (Class :AuthorisedRepresentative))
+
+;; Annotations
+(AnnotationAssertion rdfs:label :AuthorisedRepresentative "Authorised Representative"@en)
+(AnnotationAssertion rdfs:comment :AuthorisedRepresentative "A natural or legal person located or established in the Union who has received and accepted a written mandate from a provider of an AI system or a general-purpose AI model to, respectively, perform and carry out on its behalf the tasks and procedures established by this Regulation."@en)
+
+;; Data Properties
+(AnnotationAssertion dcterms:identifier :AuthorisedRepresentative "mv-1761742247883"^^xsd:string)
+```
+
+## Source
+
+**Primary**: EU AI Act Article 3(9)
+**Reference**: Article 22 (Authorised Representatives of Providers)
+
+## Regulatory Context
+
+Authorised representatives enable non-EU providers to comply with EU AI Act requirements by designating an EU-based entity to act on their behalf for regulatory purposes. This mechanism ensures market surveillance authorities have an accessible EU contact for enforcement.
+
+## Key Characteristics
+
+### Legal Nature
+
+#### Written Mandate (Article 22(1))
+- **Form**: Written authorisation from provider to representative
+- **Acceptance**: Representative must explicitly accept
+- **Scope**: Defined tasks and procedures under AI Act
+- **Validity**: Remains valid until revoked or terminated
+
+#### Geographic Requirement
+- **Representative location**: Established in EU/EEA
+- **Provider location**: Established outside EU/EEA
+
+#### Voluntary vs. Mandatory
+
+**Optional pathway**: Non-EU providers may alternatively:
+- Use **importer** to place on market (Article 23), OR
+- Appoint **authorised representative** for compliance interface
+
+**Practical advantage**: Authorised representative enables provider to maintain more direct market control than through importer.
+
+## Scope of Representation (Article 22(2))
+
+Authorised representative performs tasks **on provider's behalf**:
+
+### Mandatory Tasks
+
+#### 1. Compliance Verification
+- Ensure EU Declaration of Conformity and technical documentation prepared
+- Verify conformity assessment procedures conducted
+- Confirm provider compliance with obligations
+
+#### 2. Authority Cooperation (Article 22(3))
+- Provide copy of EU Declaration of Conformity to market surveillance authorities upon request
+- Cooperate with authorities on actions taken to ensure provider compliance
+- Provide authorities with information and documentation demonstrating compliance
+- **In language easily understood** by authorities (typically language of Member State)
+
+#### 3. Contact Point
+- Serve as primary contact for:
+  - Market surveillance authorities
+  - Deployers seeking provider information
+  - Distributors with compliance questions
+
+#### 4. Registration (GPAI providers)
+- Register general-purpose AI model providers with AI Office (if applicable)
+
+### Limitations (Article 22(4))
+
+Authorised representative does **NOT**:
+- Replace provider's obligations
+- Assume liability for provider's non-compliance
+- Perform technical development or modification
+
+**Provider remains primarily responsible** for AI Act compliance.
+
+## Obligations Specific to Representative
+
+### Documentation Maintenance
+- **EU Declaration of Conformity**: Keep copy available for 10 years
+- **Technical documentation**: Ensure accessible to authorities
+- **Mandate documentation**: Maintain evidence of authorization
+
+### Responsive Communication
+- **Timely responses**: To authority requests
+- **Complete information**: All documentation necessary to demonstrate compliance
+- **Accurate translation**: Language requirements compliance
+
+### Provider Accountability
+- **Report to provider**: Authority inquiries and findings
+- **Escalate issues**: Non-compliance concerns to provider
+- **Facilitate corrective action**: Coordinate provider response to authority orders
+
+## Relationship to Other Actors
+
+### vs. Importer
+| Authorised Representative | Importer |
+|---------------------------|----------|
+| Acts on provider's behalf | Acts in own capacity |
+| Does not place on market | Places on market |
+| Liaison and documentation role | Supply chain actor |
+| Provider remains responsible | Shares responsibility |
+
+### vs. Distributor
+- **Authorised representative**: Provider's agent for compliance
+- **Distributor**: Independent supply chain intermediary
+
+### Provider Relationship
+- **Principal-agent**: Provider is principal, representative is agent
+- **Mandate limits**: Only tasks specified in written mandate
+- **Provider control**: Provider directs compliance strategy
+
+## Appointment Process
+
+### Step 1: Provider Selection
+Non-EU provider identifies suitable EU-established entity:
+- **Legal expertise**: AI Act knowledge
+- **Technical competence**: Understanding of AI system
+- **Logistical capacity**: Documentation management, authority liaison
+- **Language capabilities**: EU Member States where system sold
+
+### Step 2: Written Mandate
+Provider and representative execute written agreement specifying:
+- **Scope**: High-risk AI systems, GPAI models covered
+- **Tasks**: Specific obligations delegated
+- **Duration**: Term of representation
+- **Termination**: Conditions for ending mandate
+- **Liability**: Indemnification and insurance provisions
+
+### Step 3: Acceptance
+Representative formally accepts mandate in writing.
+
+### Step 4: Notification
+- Inform market surveillance authorities of appointment
+- Update product documentation with representative details
+
+## Required Competencies
+
+### Legal Expertise
+- EU AI Act provisions and requirements
+- Market surveillance procedures
+- Product safety legislation
+- Data protection (GDPR)
+
+### Technical Knowledge
+- AI system architecture and functionality
+- Conformity assessment procedures
+- Technical documentation standards
+- Risk management frameworks
+
+### Operational Capabilities
+- Documentation management systems
+- Authority communication protocols
+- Incident response procedures
+- Multi-language support
+
+## Liability and Responsibility
+
+### Limited Liability
+Authorised representatives are **NOT directly liable** for:
+- Provider's failure to comply with AI Act
+- Defects in AI systems
+- Fundamental rights violations by AI
+
+**Provider retains primary liability**.
+
+### Professional Liability
+Representatives **MAY be liable** for:
+- Negligence in performing mandate tasks
+- Misrepresentation to authorities
+- Failure to cooperate as required
+- Breach of mandate agreement
+
+### Insurance Considerations
+- **Professional indemnity insurance**: For representative's errors
+- **Provider indemnification**: Contractual protection for representative
+- **Authority action defence**: Legal cost coverage
+
+## Authority Enforcement
+
+### Market Surveillance Access
+Authorities may:
+- **Request documentation** from authorised representative
+- **Require cooperation** in investigations
+- **Order corrective measures** via representative (for provider implementation)
+
+### If Representative Non-Cooperative
+Authorities may:
+- **Directly contact provider** (bypassing representative)
+- **Prohibit market placement** until cooperation achieved
+- **Impose penalties** on provider for representative failure
+
+## Practical Considerations
+
+### For Non-EU Providers
+
+#### When to Appoint Authorised Representative
+- Direct EU market presence desired
+- Multiple Member State distribution
+- High-volume placements
+- Long-term EU market commitment
+
+#### When to Use Importer Instead
+- Limited EU sales
+- Single distribution channel
+- Reduced control acceptable
+- Cost minimization priority
+
+### For EU Entities Considering Representative Role
+
+#### Business Opportunity
+- Legal/consulting firms
+- Industry associations
+- Specialised compliance agencies
+- Technology companies with AI expertise
+
+#### Due Diligence on Providers
+- **Compliance capacity**: Provider capable of meeting AI Act requirements
+- **Reputation**: Established, credible entity
+- **Financial stability**: Ability to fund compliance and potential liabilities
+- **Cooperation**: Responsive, transparent communication
+
+## GPAI Model Providers (Article 53)
+
+Authorised representatives for GPAI model providers:
+- **Register** model with AI Office
+- **Provide** technical documentation (Annex XI)
+- **Ensure** downstream transparency information (Annex XII)
+- **Coordinate** with AI Office on systemic risk (if applicable)
+
+## Termination of Mandate
+
+### Provider-Initiated
+- Provider revokes mandate
+- Provider appoints new representative or importer
+
+### Representative-Initiated
+- Representative resigns with notice period
+- Provider must appoint replacement before market placement continues
+
+### Consequence of Termination
+- Provider must **cease making available** AI systems in EU until:
+  - New authorised representative appointed, OR
+  - Importer arrangement established
+
+## Related Concepts
+
+- **Provider** (AI-0127): Principal in representative relationship
+- **Importer** (AI-0130): Alternative pathway for third-country AI
+- **Market Surveillance Authority** (AI-0134): Key authority interface
+- **EU Declaration of Conformity** (AI-0152): Document representative maintains
+
+## See Also
+
+- EU AI Act Article 22 (Authorised Representatives of Providers)
+- Article 3(9) (Authorised Representative Definition)
+- Commission Guidance on Authorised Representatives (expected 2026)
+	- maturity:: draft
+	- owl:class:: mv:AuthorisedRepresentative
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Authorised Representative
+	- A natural or legal person located or established in the Union who has received and accepted a written mandate from a provider of an AI system or a general-purpose AI model to, respectively, perform and carry out on its behalf the tasks and procedures established by this Regulation.
+
+## Source
+
+**Primary**: EU AI Act Article 3(9)
+**Reference**: Article 22 (Authorised Representatives of Providers)
+
+## Regulatory Context
+
+Authorised representatives enable non-EU providers to comply with EU AI Act requirements by designating an EU-based entity to act on their behalf for regulatory purposes. This mechanism ensures market surveillance authorities have an accessible EU contact for enforcement.
+
+## Key Characteristics
+
+### Legal Nature
+
+#### Written Mandate (Article 22(1))
+- **Form**: Written authorisation from provider to representative
+- **Acceptance**: Representative must explicitly accept
+- **Scope**: Defined tasks and procedures under AI Act
+- **Validity**: Remains valid until revoked or terminated
+
+#### Geographic Requirement
+- **Representative location**: Established in EU/EEA
+- **Provider location**: Established outside EU/EEA
+
+#### Voluntary vs. Mandatory
+
+**Optional pathway**: Non-EU providers may alternatively:
+- Use **importer** to place on market (Article 23), OR
+- Appoint **authorised representative** for compliance interface
+
+**Practical advantage**: Authorised representative enables provider to maintain more direct market control than through importer.
+
+## Scope of Representation (Article 22(2))
+
+Authorised representative performs tasks **on provider's behalf**:
+
+### Mandatory Tasks
+
+#### 1. Compliance Verification
+- Ensure EU Declaration of Conformity and technical documentation prepared
+- Verify conformity assessment procedures conducted
+- Confirm provider compliance with obligations
+
+#### 2. Authority Cooperation (Article 22(3))
+- Provide copy of EU Declaration of Conformity to market surveillance authorities upon request
+- Cooperate with authorities on actions taken to ensure provider compliance
+- Provide authorities with information and documentation demonstrating compliance
+- **In language easily understood** by authorities (typically language of Member State)
+
+#### 3. Contact Point
+- Serve as primary contact for:
+  - Market surveillance authorities
+  - Deployers seeking provider information
+  - Distributors with compliance questions
+
+#### 4. Registration (GPAI providers)
+- Register general-purpose AI model providers with AI Office (if applicable)
+
+### Limitations (Article 22(4))
+
+Authorised representative does **NOT**:
+- Replace provider's obligations
+- Assume liability for provider's non-compliance
+- Perform technical development or modification
+
+**Provider remains primarily responsible** for AI Act compliance.
+
+## Obligations Specific to Representative
+
+### Documentation Maintenance
+- **EU Declaration of Conformity**: Keep copy available for 10 years
+- **Technical documentation**: Ensure accessible to authorities
+- **Mandate documentation**: Maintain evidence of authorization
+
+### Responsive Communication
+- **Timely responses**: To authority requests
+- **Complete information**: All documentation necessary to demonstrate compliance
+- **Accurate translation**: Language requirements compliance
+
+### Provider Accountability
+- **Report to provider**: Authority inquiries and findings
+- **Escalate issues**: Non-compliance concerns to provider
+- **Facilitate corrective action**: Coordinate provider response to authority orders
+
+## Relationship to Other Actors
+
+### vs. Importer
+| Authorised Representative | Importer |
+|---------------------------|----------|
+| Acts on provider's behalf | Acts in own capacity |
+| Does not place on market | Places on market |
+| Liaison and documentation role | Supply chain actor |
+| Provider remains responsible | Shares responsibility |
+
+### vs. Distributor
+- **Authorised representative**: Provider's agent for compliance
+- **Distributor**: Independent supply chain intermediary
+
+### Provider Relationship
+- **Principal-agent**: Provider is principal, representative is agent
+- **Mandate limits**: Only tasks specified in written mandate
+- **Provider control**: Provider directs compliance strategy
+
+## Appointment Process
+
+### Step 1: Provider Selection
+Non-EU provider identifies suitable EU-established entity:
+- **Legal expertise**: AI Act knowledge
+- **Technical competence**: Understanding of AI system
+- **Logistical capacity**: Documentation management, authority liaison
+- **Language capabilities**: EU Member States where system sold
+
+### Step 2: Written Mandate
+Provider and representative execute written agreement specifying:
+- **Scope**: High-risk AI systems, GPAI models covered
+- **Tasks**: Specific obligations delegated
+- **Duration**: Term of representation
+- **Termination**: Conditions for ending mandate
+- **Liability**: Indemnification and insurance provisions
+
+### Step 3: Acceptance
+Representative formally accepts mandate in writing.
+
+### Step 4: Notification
+- Inform market surveillance authorities of appointment
+- Update product documentation with representative details
+
+## Required Competencies
+
+### Legal Expertise
+- EU AI Act provisions and requirements
+- Market surveillance procedures
+- Product safety legislation
+- Data protection (GDPR)
+
+### Technical Knowledge
+- AI system architecture and functionality
+- Conformity assessment procedures
+- Technical documentation standards
+- Risk management frameworks
+
+### Operational Capabilities
+- Documentation management systems
+- Authority communication protocols
+- Incident response procedures
+- Multi-language support
+
+## Liability and Responsibility
+
+### Limited Liability
+Authorised representatives are **NOT directly liable** for:
+- Provider's failure to comply with AI Act
+- Defects in AI systems
+- Fundamental rights violations by AI
+
+**Provider retains primary liability**.
+
+### Professional Liability
+Representatives **MAY be liable** for:
+- Negligence in performing mandate tasks
+- Misrepresentation to authorities
+- Failure to cooperate as required
+- Breach of mandate agreement
+
+### Insurance Considerations
+- **Professional indemnity insurance**: For representative's errors
+- **Provider indemnification**: Contractual protection for representative
+- **Authority action defence**: Legal cost coverage
+
+## Authority Enforcement
+
+### Market Surveillance Access
+Authorities may:
+- **Request documentation** from authorised representative
+- **Require cooperation** in investigations
+- **Order corrective measures** via representative (for provider implementation)
+
+### If Representative Non-Cooperative
+Authorities may:
+- **Directly contact provider** (bypassing representative)
+- **Prohibit market placement** until cooperation achieved
+- **Impose penalties** on provider for representative failure
+
+## Practical Considerations
+
+### For Non-EU Providers
+
+#### When to Appoint Authorised Representative
+- Direct EU market presence desired
+- Multiple Member State distribution
+- High-volume placements
+- Long-term EU market commitment
+
+#### When to Use Importer Instead
+- Limited EU sales
+- Single distribution channel
+- Reduced control acceptable
+- Cost minimization priority
+
+### For EU Entities Considering Representative Role
+
+#### Business Opportunity
+- Legal/consulting firms
+- Industry associations
+- Specialised compliance agencies
+- Technology companies with AI expertise
+
+#### Due Diligence on Providers
+- **Compliance capacity**: Provider capable of meeting AI Act requirements
+- **Reputation**: Established, credible entity
+- **Financial stability**: Ability to fund compliance and potential liabilities
+- **Cooperation**: Responsive, transparent communication
+
+## GPAI Model Providers (Article 53)
+
+Authorised representatives for GPAI model providers:
+- **Register** model with AI Office
+- **Provide** technical documentation (Annex XI)
+- **Ensure** downstream transparency information (Annex XII)
+- **Coordinate** with AI Office on systemic risk (if applicable)
+
+## Termination of Mandate
+
+### Provider-Initiated
+- Provider revokes mandate
+- Provider appoints new representative or importer
+
+### Representative-Initiated
+- Representative resigns with notice period
+- Provider must appoint replacement before market placement continues
+
+### Consequence of Termination
+- Provider must **cease making available** AI systems in EU until:
+  - New authorised representative appointed, OR
+  - Importer arrangement established
+
+## Related Concepts
+
+- **Provider** (AI-0127): Principal in representative relationship
+- **Importer** (AI-0130): Alternative pathway for third-country AI
+- **Market Surveillance Authority** (AI-0134): Key authority interface
+- **EU Declaration of Conformity** (AI-0152): Document representative maintains
+
+## See Also
+
+- EU AI Act Article 22 (Authorised Representatives of Providers)
+- Article 3(9) (Authorised Representative Definition)
+- Commission Guidance on Authorised Representatives (expected 2026)
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# Authorised Representative
+		  
+		  **Ontology ID**: AI-0131
+		  **Category**: Regulatory Actors
+		  **Last Updated**: 2025-10-27
+		  
+		  ## Definition
+		  
+		  A natural or legal person located or established in the Union who has received and accepted a written mandate from a provider of an AI system or a general-purpose AI model to, respectively, perform and carry out on its behalf the tasks and procedures established by this Regulation.
+		  
+		  ## Source
+		  
+		  **Primary**: EU AI Act Article 3(9)
+		  **Reference**: Article 22 (Authorised Representatives of Providers)
+		  
+		  ## Regulatory Context
+		  
+		  Authorised representatives enable non-EU providers to comply with EU AI Act requirements by designating an EU-based entity to act on their behalf for regulatory purposes. This mechanism ensures market surveillance authorities have an accessible EU contact for enforcement.
+		  
+		  ## Key Characteristics
+		  
+		  ### Legal Nature
+		  
+		  #### Written Mandate (Article 22(1))
+		  - **Form**: Written authorisation from provider to representative
+		  - **Acceptance**: Representative must explicitly accept
+		  - **Scope**: Defined tasks and procedures under AI Act
+		  - **Validity**: Remains valid until revoked or terminated
+		  
+		  #### Geographic Requirement
+		  - **Representative location**: Established in EU/EEA
+		  - **Provider location**: Established outside EU/EEA
+		  
+		  #### Voluntary vs. Mandatory
+		  
+		  **Optional pathway**: Non-EU providers may alternatively:
+		  - Use **importer** to place on market (Article 23), OR
+		  - Appoint **authorised representative** for compliance interface
+		  
+		  **Practical advantage**: Authorised representative enables provider to maintain more direct market control than through importer.
+		  
+		  ## Scope of Representation (Article 22(2))
+		  
+		  Authorised representative performs tasks **on provider's behalf**:
+		  
+		  ### Mandatory Tasks
+		  
+		  #### 1. Compliance Verification
+		  - Ensure EU Declaration of Conformity and technical documentation prepared
+		  - Verify conformity assessment procedures conducted
+		  - Confirm provider compliance with obligations
+		  
+		  #### 2. Authority Cooperation (Article 22(3))
+		  - Provide copy of EU Declaration of Conformity to market surveillance authorities upon request
+		  - Cooperate with authorities on actions taken to ensure provider compliance
+		  - Provide authorities with information and documentation demonstrating compliance
+		  - **In language easily understood** by authorities (typically language of Member State)
+		  
+		  #### 3. Contact Point
+		  - Serve as primary contact for:
+		    - Market surveillance authorities
+		    - Deployers seeking provider information
+		    - Distributors with compliance questions
+		  
+		  #### 4. Registration (GPAI providers)
+		  - Register general-purpose AI model providers with AI Office (if applicable)
+		  
+		  ### Limitations (Article 22(4))
+		  
+		  Authorised representative does **NOT**:
+		  - Replace provider's obligations
+		  - Assume liability for provider's non-compliance
+		  - Perform technical development or modification
+		  
+		  **Provider remains primarily responsible** for AI Act compliance.
+		  
+		  ## Obligations Specific to Representative
+		  
+		  ### Documentation Maintenance
+		  - **EU Declaration of Conformity**: Keep copy available for 10 years
+		  - **Technical documentation**: Ensure accessible to authorities
+		  - **Mandate documentation**: Maintain evidence of authorization
+		  
+		  ### Responsive Communication
+		  - **Timely responses**: To authority requests
+		  - **Complete information**: All documentation necessary to demonstrate compliance
+		  - **Accurate translation**: Language requirements compliance
+		  
+		  ### Provider Accountability
+		  - **Report to provider**: Authority inquiries and findings
+		  - **Escalate issues**: Non-compliance concerns to provider
+		  - **Facilitate corrective action**: Coordinate provider response to authority orders
+		  
+		  ## Relationship to Other Actors
+		  
+		  ### vs. Importer
+		  | Authorised Representative | Importer |
+		  |---------------------------|----------|
+		  | Acts on provider's behalf | Acts in own capacity |
+		  | Does not place on market | Places on market |
+		  | Liaison and documentation role | Supply chain actor |
+		  | Provider remains responsible | Shares responsibility |
+		  
+		  ### vs. Distributor
+		  - **Authorised representative**: Provider's agent for compliance
+		  - **Distributor**: Independent supply chain intermediary
+		  
+		  ### Provider Relationship
+		  - **Principal-agent**: Provider is principal, representative is agent
+		  - **Mandate limits**: Only tasks specified in written mandate
+		  - **Provider control**: Provider directs compliance strategy
+		  
+		  ## Appointment Process
+		  
+		  ### Step 1: Provider Selection
+		  Non-EU provider identifies suitable EU-established entity:
+		  - **Legal expertise**: AI Act knowledge
+		  - **Technical competence**: Understanding of AI system
+		  - **Logistical capacity**: Documentation management, authority liaison
+		  - **Language capabilities**: EU Member States where system sold
+		  
+		  ### Step 2: Written Mandate
+		  Provider and representative execute written agreement specifying:
+		  - **Scope**: High-risk AI systems, GPAI models covered
+		  - **Tasks**: Specific obligations delegated
+		  - **Duration**: Term of representation
+		  - **Termination**: Conditions for ending mandate
+		  - **Liability**: Indemnification and insurance provisions
+		  
+		  ### Step 3: Acceptance
+		  Representative formally accepts mandate in writing.
+		  
+		  ### Step 4: Notification
+		  - Inform market surveillance authorities of appointment
+		  - Update product documentation with representative details
+		  
+		  ## Required Competencies
+		  
+		  ### Legal Expertise
+		  - EU AI Act provisions and requirements
+		  - Market surveillance procedures
+		  - Product safety legislation
+		  - Data protection (GDPR)
+		  
+		  ### Technical Knowledge
+		  - AI system architecture and functionality
+		  - Conformity assessment procedures
+		  - Technical documentation standards
+		  - Risk management frameworks
+		  
+		  ### Operational Capabilities
+		  - Documentation management systems
+		  - Authority communication protocols
+		  - Incident response procedures
+		  - Multi-language support
+		  
+		  ## Liability and Responsibility
+		  
+		  ### Limited Liability
+		  Authorised representatives are **NOT directly liable** for:
+		  - Provider's failure to comply with AI Act
+		  - Defects in AI systems
+		  - Fundamental rights violations by AI
+		  
+		  **Provider retains primary liability**.
+		  
+		  ### Professional Liability
+		  Representatives **MAY be liable** for:
+		  - Negligence in performing mandate tasks
+		  - Misrepresentation to authorities
+		  - Failure to cooperate as required
+		  - Breach of mandate agreement
+		  
+		  ### Insurance Considerations
+		  - **Professional indemnity insurance**: For representative's errors
+		  - **Provider indemnification**: Contractual protection for representative
+		  - **Authority action defence**: Legal cost coverage
+		  
+		  ## Authority Enforcement
+		  
+		  ### Market Surveillance Access
+		  Authorities may:
+		  - **Request documentation** from authorised representative
+		  - **Require cooperation** in investigations
+		  - **Order corrective measures** via representative (for provider implementation)
+		  
+		  ### If Representative Non-Cooperative
+		  Authorities may:
+		  - **Directly contact provider** (bypassing representative)
+		  - **Prohibit market placement** until cooperation achieved
+		  - **Impose penalties** on provider for representative failure
+		  
+		  ## Practical Considerations
+		  
+		  ### For Non-EU Providers
+		  
+		  #### When to Appoint Authorised Representative
+		  - Direct EU market presence desired
+		  - Multiple Member State distribution
+		  - High-volume placements
+		  - Long-term EU market commitment
+		  
+		  #### When to Use Importer Instead
+		  - Limited EU sales
+		  - Single distribution channel
+		  - Reduced control acceptable
+		  - Cost minimization priority
+		  
+		  ### For EU Entities Considering Representative Role
+		  
+		  #### Business Opportunity
+		  - Legal/consulting firms
+		  - Industry associations
+		  - Specialised compliance agencies
+		  - Technology companies with AI expertise
+		  
+		  #### Due Diligence on Providers
+		  - **Compliance capacity**: Provider capable of meeting AI Act requirements
+		  - **Reputation**: Established, credible entity
+		  - **Financial stability**: Ability to fund compliance and potential liabilities
+		  - **Cooperation**: Responsive, transparent communication
+		  
+		  ## GPAI Model Providers (Article 53)
+		  
+		  Authorised representatives for GPAI model providers:
+		  - **Register** model with AI Office
+		  - **Provide** technical documentation (Annex XI)
+		  - **Ensure** downstream transparency information (Annex XII)
+		  - **Coordinate** with AI Office on systemic risk (if applicable)
+		  
+		  ## Termination of Mandate
+		  
+		  ### Provider-Initiated
+		  - Provider revokes mandate
+		  - Provider appoints new representative or importer
+		  
+		  ### Representative-Initiated
+		  - Representative resigns with notice period
+		  - Provider must appoint replacement before market placement continues
+		  
+		  ### Consequence of Termination
+		  - Provider must **cease making available** AI systems in EU until:
+		    - New authorised representative appointed, OR
+		    - Importer arrangement established
+		  
+		  ## Related Concepts
+		  
+		  - **Provider** (AI-0127): Principal in representative relationship
+		  - **Importer** (AI-0130): Alternative pathway for third-country AI
+		  - **Market Surveillance Authority** (AI-0134): Key authority interface
+		  - **EU Declaration of Conformity** (AI-0152): Document representative maintains
+		  
+		  ## See Also
+		  
+		  - EU AI Act Article 22 (Authorised Representatives of Providers)
+		  - Article 3(9) (Authorised Representative Definition)
+		  - Commission Guidance on Authorised Representatives (expected 2026)
+		  
+		  ```
+
+- public-access:: true
 	- definition:: A natural or legal person located or established in the Union who has received and accepted a written mandate from a provider of an AI system or a general-purpose AI model to, respectively, perform and carry out on its behalf the tasks and procedures established by this Regulation.
 
 
@@ -70,6 +852,3 @@
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-
-### Relationships
-- is-subclass-of:: [[Metaverse]]

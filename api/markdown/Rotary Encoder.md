@@ -1,36 +1,46 @@
 - ### OntologyBlock
-    - term-id:: MV-0157
-    - source-domain:: mv
-    - owl:class:: mv:RotaryEncoder
-    - preferred-term:: Rotary Encoder
-    - ontology:: true
+  id:: rotaryencoder-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0157
+    - filename-history:: ["RB-0157-rotaryencoder.md"]
     - public-access:: true
-    - is-subclass-of:: [[Encoder]]
+    - ontology:: true
+    - term-id:: RB-0157
+    - preferred-term:: Rotary Encoder
+    - source-domain:: rb
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## Rotary Encoder
+  - **Definition**
+    - definition:: Rotary encoder measures shaft angle and direction.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-Rotary Encoder refers to rotary encoder measures shaft angle and direction.
+  - **Semantic Classification**
+    - owl:class:: rb:RotaryEncoder
+    - belongsToDomain:: [[Robotics]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
+    - is-subclass-of:: [[Encoder]]
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :RotaryEncoder))
+      (SubClassOf :RotaryEncoder :Encoder)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :RotaryEncoder "Rotary Encoder"@en)
+      (AnnotationAssertion rdfs:comment :RotaryEncoder
+        "Rotary encoder measures shaft angle and direction."@en)
+      ```
 
-- **Id**: rotaryencoder-ontology
-- **Collapsed**: true
-- **Domain Prefix**: RB
-- **Sequence Number**: 0157
-- **Filename History**: ["RB-0157-rotaryencoder.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: rb:RotaryEncoder
-- **Belongstodomain**: [[Robotics]]
-- **Is Subclass Of**: [[Encoder]]
+- ## About Rotary Encoder
+  Rotary encoder measures shaft angle and direction.
+  
+  An encoder measuring angular position.

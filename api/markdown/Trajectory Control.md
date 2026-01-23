@@ -1,37 +1,46 @@
 - ### OntologyBlock
-    - term-id:: DT-0154
-    - source-domain:: tc
-    - owl:class:: tc:TrajectoryControl
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - preferred-term:: Trajectory Control
-    - ontology:: true
+  id:: trajectorycontrol-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0154
+    - filename-history:: ["RB-0154-trajectorycontrol.md"]
     - public-access:: true
-    - is-subclass-of:: [[Motion Control]]
+    - ontology:: true
+    - term-id:: RB-0154
+    - preferred-term:: Trajectory Control
+    - source-domain:: rb
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## Trajectory Control
+  - **Definition**
+    - definition:: Trajectory control tracks desired time-varying position, velocity, and acceleration profiles.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-Trajectory Control refers to trajectory control tracks desired time-varying position, velocity, and acceleration profiles.
+  - **Semantic Classification**
+    - owl:class:: rb:TrajectoryControl
+    - belongsToDomain:: [[Robotics]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
+    - is-subclass-of:: [[Motion Control]]
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :TrajectoryControl))
+      (SubClassOf :TrajectoryControl :MotionControl)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :TrajectoryControl "Trajectory Control"@en)
+      (AnnotationAssertion rdfs:comment :TrajectoryControl
+        "Trajectory control tracks desired time-varying position, velocity, and acceleration profiles."@en)
+      ```
 
-- **Id**: trajectorycontrol-ontology
-- **Collapsed**: true
-- **Domain Prefix**: RB
-- **Sequence Number**: 0154
-- **Filename History**: ["RB-0154-trajectorycontrol.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: rb:TrajectoryControl
-- **Belongstodomain**: [[Robotics]]
-- **Is Subclass Of**: [[Motion Control]]
+- ## About Trajectory Control
+  Trajectory control tracks desired time-varying position, velocity, and acceleration profiles.
+  
+  A control system following time-parameterized paths.

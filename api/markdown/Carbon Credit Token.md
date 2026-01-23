@@ -2,29 +2,21 @@
   id:: carboncredittoken-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: DT-0130
+	- term-id:: bc-20130
+	- source-domain:: blockchain
 	- preferred-term:: Carbon Credit Token
-	- source-domain:: mv
-	- public-access:: true
-
-
-
-
-### OWL Classification
-	- owl:class:: mv:CarbonCreditToken
+	- definition:: Digital token representing verified carbon-offset value tradeable across platforms for emissions reduction and environmental sustainability.
+	- maturity:: mature
+	- source:: [[Siemens + OMA3]], [[ISO 14065]], [[UNFCCC]]
+	- owl:class:: bc:CarbonCreditToken
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
-
-### Domain & Architecture
-	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[DisruptiveTechDomain]], [[VirtualEconomyDomain]]
+	- owl:functional-syntax:: true
+	- belongsToDomain:: [[BlockchainDomain]], [[VirtualEconomyDomain]], [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[DataLayer]], [[SmartContractLayer]]
-	- maturity:: mature
-
-### Relationships
-- is-subclass-of:: [[Metaverse]]
-id:: carboncredittoken-relationships
-		- uses-data-structure:: [[Blockchain]]
+	- #### Relationships
+	  id:: carboncredittoken-relationships
 		- has-part:: [[Carbon Offset Certificate]], [[Verification Metadata]], [[Token Smart Contract]], [[Blockchain Record]]
 		- is-part-of:: [[Virtual Economy]], [[Environmental Asset Market]], [[Sustainability Framework]]
 		- requires:: [[Blockchain]], [[Smart Contract]], [[Verification Authority]], [[Digital Wallet]]
@@ -58,7 +50,7 @@ id:: carboncredittoken-relationships
 
 		  # A Carbon Credit Token requires blockchain for transparency
 		  SubClassOf(mv:CarbonCreditToken
-		    ObjectSomeValuesFrom(mv:requires bc:Blockchain)
+		    ObjectSomeValuesFrom(mv:requires mv:Blockchain)
 		  )
 
 		  # A Carbon Credit Token enables emissions trading
@@ -68,7 +60,7 @@ id:: carboncredittoken-relationships
 
 		  # Domain classification
 		  SubClassOf(mv:CarbonCreditToken
-		    ObjectSomeValuesFrom(mv:belongsToDomain mv:Virtualeconomydomain)
+		    ObjectSomeValuesFrom(mv:belongsToDomain mv:VirtualEconomyDomain)
 		  )
 		  SubClassOf(mv:CarbonCreditToken
 		    ObjectSomeValuesFrom(mv:belongsToDomain mv:TrustAndGovernanceDomain)
@@ -88,16 +80,16 @@ id:: carboncredittoken-relationships
 		  SubClassOf(mv:EmissionsTrading mv:VirtualProcess)
 
   # Property characteristics
-  TransitiveObjectProperty(mv:ispartof)
+  TransitiveObjectProperty(dt:ispartof)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:requires)
+  AsymmetricObjectProperty(dt:requires)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:dependson)
+  AsymmetricObjectProperty(dt:dependson)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:enables)
+  AsymmetricObjectProperty(dt:enables)
 ```
 - ## About Carbon Credit Tokens
   id:: carboncredittoken-about
@@ -122,7 +114,7 @@ id:: carboncredittoken-relationships
 	  id:: carboncredittoken-components
 		- [[Carbon Offset Certificate]] - Underlying verified emissions reduction unit
 		- [[Verification Metadata]] - Project details, methodology, vintage, co-benefits, validation reports
-		- [[Token Smart Contract]] - ERC-20/721/1155 contract governing token behaviour
+		- [[Token Smart Contract]] - ERC-20/721/1155 contract governing token behavior
 		- [[Blockchain Record]] - Distributed ledger tracking issuance, transfers, and retirement
 		- [[Carbon Registry]] - Authoritative database of verified carbon projects (Verra, Gold Standard)
 		- [[Verification Authority]] - Third-party validator (DNV, SCS Global, Carbon Trust)
@@ -144,23 +136,23 @@ id:: carboncredittoken-relationships
 		- **Transparent Pricing**: Public order books and transaction histories enabling efficient price discovery
 		- **Programmable Compliance**: Automated offsetting rules tied to measured emissions or business activities
 		- **Co-Benefit Documentation**: Track additional impacts beyond carbon (biodiversity, community development, SDG alignment)
-		- **Vintage Management**: Organise credits by project year and methodology version
+		- **Vintage Management**: Organize credits by project year and methodology version
 		- **Batch Operations**: Corporate buyers can acquire and retire large quantities efficiently
 	- ### Token Standards
 	  id:: carboncredittoken-standards-tech
 		- **ERC-20**: Fungible token standard for commodity-like carbon credits with identical characteristics
 		- **ERC-721**: NFT standard for unique carbon credits with specific project and vintage attributes
 		- **ERC-1155**: Hybrid standard supporting both fungible batches and unique project tokens
-		- **Tokenized Carbon Credit Standard**: Emerging specifications for carbon-specific metadata and behaviours
+		- **Tokenized Carbon Credit Standard**: Emerging specifications for carbon-specific metadata and behaviors
 		- **KlimaDAO BCT**: Base Carbon Tonne reference token backed by Verra credits
 		- **Toucan Protocol**: Bridge infrastructure connecting traditional carbon credits to blockchain
 		- **Carbon Credit Metadata Schema**: Standardized fields for project type, location, methodology, vintage, co-benefits
 		- **Retirement Proof Standard**: Cryptographic proof of credit retirement for compliance verification
 	- ### Use Cases
 	  id:: carboncredittoken-use-cases
-		- **Corporate Sustainability**: Companies purchase and retire tokens to meet net-zero commitments and scope 3 emissions targets (Microsoft, Stripe, Shopify climate programmes)
+		- **Corporate Sustainability**: Companies purchase and retire tokens to meet net-zero commitments and scope 3 emissions targets (Microsoft, Stripe, Shopify climate programs)
 		- **Metaverse Carbon Neutrality**: Virtual world platforms offset server energy consumption and user activity emissions (Decentraland sustainability initiatives)
-		- **Gaming Industry Offsets**: Game developers offset player device energy use and data centre operations (Ubisoft, Niantic)
+		- **Gaming Industry Offsets**: Game developers offset player device energy use and data center operations (Ubisoft, Niantic)
 		- **NFT Carbon Offsetting**: NFT platforms integrate automatic carbon offsets for minting and trading transactions (Offsetra, Aerial)
 		- **DeFi Climate Protocols**: Decentralized finance platforms incorporating carbon credits as collateral or yield-bearing assets (KlimaDAO, Flowcarbon)
 		- **Supply Chain Carbon Accounting**: Track and offset emissions across global logistics networks with tokenized credits
@@ -228,7 +220,7 @@ id:: carboncredittoken-relationships
 		- **User Activity Offsetting**: Track avatar movement, rendering, and compute usage for emissions calculation
 		- **Virtual Land Environmental Credits**: Tie carbon credits to virtual property for eco-conscious development
 		- **In-World Carbon Markets**: NFT-based carbon credits tradeable in virtual marketplaces
-		- **Sustainability Achievements**: Gamification of carbon-neutral behaviour with token rewards
+		- **Sustainability Achievements**: Gamification of carbon-neutral behavior with token rewards
 		- **Green NFTs**: NFT collections automatically offsetting their minting and trading emissions
 		- **Climate-Positive Events**: Virtual conferences and concerts with built-in carbon offsetting
 		- **Eco-Conscious Avatars**: Avatar attributes reflecting real-world carbon offset contributions
@@ -281,8 +273,11 @@ id:: carboncredittoken-relationships
 	- imported-from:: [[Metaverse Glossary Excel]]
 	- import-date:: [[2025-01-15]]
 	- ontology-status:: migrated
-	- public-access:: true
+- public-access:: true
+	- migration-date:: [[2025-10-14]]
+	- classification-rationale:: Virtual (digital token) + Object (tradeable asset) → VirtualObject
 
+    - measured-by:: [[Sustainability Metric]]
 # Carbon Credit Token – Updated Ontology Entry
 
 ## Academic Context
@@ -300,7 +295,7 @@ id:: carboncredittoken-relationships
 - Industry adoption and implementations
   - Voluntary carbon market valued at approximately $2 billion, though constrained by structural inefficiencies[2]
   - Toucan Protocol has tokenized over 21 million carbon credits, demonstrating scalability[2]
-  - Major financial institutions actively developing tokenization frameworks; J.P. Morgan's Carbon Markets Reimagined initiative establishes standardised token interfaces and data protocols[5]
+  - Major financial institutions actively developing tokenization frameworks; J.P. Morgan's Carbon Markets Reimagined initiative establishes standardized token interfaces and data protocols[5]
   - Banks positioning themselves as key players in emerging virtual assets space, creating tokenised securities and green bonds linked to carbon credits[4]
   - UK and North England context: Limited specific regional implementations documented, though UK financial services sector (particularly London-based institutions) engaged in broader RWA tokenization initiatives; Manchester and Leeds emerging as fintech hubs with sustainability focus, though carbon credit tokenization remains concentrated in London financial district
 - Technical capabilities and limitations
@@ -375,10 +370,10 @@ id:: carboncredittoken-relationships
 
 **Note on improvements made:** The revised entry removes time-sensitive announcements, incorporates 2025 market data, converts to nested bullet format with heading hierarchy, eliminates bold formatting in favour of structural hierarchy, and adds UK/North England context (noting the current gap in regional implementation—which itself is a useful observation for stakeholders). The tone maintains technical rigour whilst acknowledging that carbon tokenization, despite its promise, remains somewhat concentrated in London's financial district. Humour has been applied sparingly and naturally (e.g., the observation about North England being "underrepresented" rather than absent entirely).
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-

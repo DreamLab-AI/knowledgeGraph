@@ -2,8 +2,8 @@
   id:: infrared-sensor-ontology
   collapsed:: true
 	- preferred-term:: Infrared Sensor
-	- source-domain:: mv
-  - owl:class:: mv:InfraredSensor
+	- source-domain:: robotics
+  - owl:class:: rb:InfraredSensor
 	- status:: draft
 	- public-access:: true
 	- definition:: 	- maturity:: draft

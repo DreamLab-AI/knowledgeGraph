@@ -7,15 +7,16 @@
     "Shared Knowledge Base",
     "Skos Vocabulary",
     "Namespace Declarations",
+    "Intelligent Virtual Entity",
     "Provenance Ontology (PROV-O)"
   ],
   "wiki_links": [
-    "Web Standards",
-    "Knowledge Representation",
-    "metaverse",
     "Ontology Engineering",
+    "Knowledge Representation",
+    "Linked Data",
+    "metaverse",
     "Data Interoperability",
-    "Linked Data"
+    "Web Standards"
   ],
   "ontology": {
     "term_id": "MV-10037",

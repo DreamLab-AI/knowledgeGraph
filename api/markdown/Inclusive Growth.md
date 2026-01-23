@@ -2,18 +2,404 @@
   id:: inclusive-growth-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: DT-0156
+	- term-id:: AI-0156
 	- preferred-term:: Inclusive Growth
-	- source-domain:: ai
+	- source-domain:: mv
 	- status:: draft
-  - owl:class:: ai:InclusiveGrowth
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - public-access:: true
+- definition:: AI should benefit people and planet by augmenting human capabilities, enhancing creativity, advancing inclusion of underrepresented populations, reducing economic, social and geographical inequalities, and protecting natural environments, thereby invigorating inclusive growth, sustainable development and well-being.
 
 
-### Relationships
-- is-subclass-of:: [[AIGovernance]]
+## OWL Formal Semantics
+
+```clojure
+;; OWL Functional Syntax
+
+(Declaration (Class :InclusiveGrowth))
+
+;; Annotations
+(AnnotationAssertion rdfs:label :InclusiveGrowth "Inclusive Growth"@en)
+(AnnotationAssertion rdfs:comment :InclusiveGrowth "AI should benefit people and planet by augmenting human capabilities, enhancing creativity, advancing inclusion of underrepresented populations, reducing economic, social and geographical inequalities, and protecting natural environments, thereby invigorating inclusive growth, sustainable development and well-being."@en)
+
+;; Data Properties
+(AnnotationAssertion dcterms:identifier :InclusiveGrowth "AI-0156"^^xsd:string)
+(DataPropertyAssertion :isAITechnology :InclusiveGrowth "true"^^xsd:boolean)
+```
+
+## Source
+
+- **Primary**: OECD AI Principles 2024 revision (Principle 1.1)
+- **Related**: OECD Recommendation of the Council on Artificial Intelligence (2019, updated 2024)
+
+## Context
+
+Inclusive growth represents the first component of OECD's foundational principle for beneficial AI, emphasising that AI systems should create broad-based economic opportunities and reduce rather than exacerbate existing inequalities. This principle explicitly addresses concerns about AI's potential to concentrate benefits amongst already-advantaged populations whilst marginalising vulnerable groups.
+
+## Key Characteristics
+
+- **Broad-based benefit**: AI advantages should extend across society, not concentrate in specific demographics
+- **Capability augmentation**: Enhancement of human abilities rather than wholesale replacement
+- **Inequality reduction**: Active mitigation of economic, social and geographical disparities
+- **Inclusive design**: Consideration of underrepresented populations throughout AI development
+- **Economic opportunity**: Creation of pathways for widespread participation in AI economy
+
+## Relationships
+
+- **Parent Concept**: OECD AI Principle 1 (Inclusive Growth, Sustainable Development and Well-Being)
+- **Related Terms**:
+  - Sustainable Development (AI-0157)
+  - Well-Being (AI-0158)
+  - Fairness (OECD) (AI-0160)
+  - Social Impact (AI-0170)
+- **Contrasts With**: Exclusionary AI development that concentrates benefits
+
+## Implementation Considerations
+
+1. **Accessibility**: Ensuring AI systems are usable by persons with disabilities and diverse populations
+2. **Language diversity**: Supporting multiple languages and cultural contexts
+3. **Economic accessibility**: Considering affordability and resource requirements
+4. **Skills development**: Creating pathways for participation in AI-enabled economy
+5. **Geographic reach**: Extending benefits beyond wealthy urban centres
+
+## OECD Framework Alignment
+
+- **Dimension**: People and Planet Context
+- **Principle Number**: P1 (part 1 of 3)
+- **Actor Responsibility**: All AI actors throughout lifecycle
+
+## Regulatory Context
+
+The inclusive growth principle informs:
+- EU AI Act requirements for bias mitigation (Article 10)
+- Fundamental rights impact assessments (Article 27)
+- Accessibility obligations under EU harmonised legislation
+- National AI strategies emphasising economic inclusion
+
+## 2024 Revision Updates
+
+The 2024 OECD revision strengthened inclusive growth by:
+- Explicitly addressing underrepresented populations
+- Linking inequality reduction to geographic dimensions
+- Connecting to sustainable development goals
+- Emphasising capability augmentation over replacement
+
+## Measurement Approaches
+
+Inclusive growth in AI context can be assessed through:
+- Distribution of economic benefits across population segments
+- Accessibility metrics for diverse user populations
+- Employment impact analyses across skill levels and geographies
+- Participation rates in AI development and deployment
+
+## Related Standards
+
+- ISO/IEC 23894:2023 - Information technology — Artificial intelligence — Guidance on risk management
+- IEEE 7010-2020 - Recommended Practice for Assessing the Impact of Autonomous and Intelligent Systems on Human Well-Being
+
+## See Also
+
+- Human-Centred Values (AI-0159)
+- Fairness (OECD) (AI-0160)
+- Social Impact (AI-0170)
+- Environmental Sustainability (AI-0169)
+
+---
+
+*Part of AI Grounded Ontology - OECD AI Principles Framework*
+*Aligned with OECD AI Principles 2024 and EU AI Act regulatory framework*
+	- maturity:: draft
+	- owl:class:: mv:InclusiveGrowth
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Inclusive Growth
+	- AI should benefit people and planet by augmenting human capabilities, enhancing creativity, advancing inclusion of underrepresented populations, reducing economic, social and geographical inequalities, and protecting natural environments, thereby invigorating inclusive growth, sustainable development and well-being.
+
+	- ## Future Growth
+		- The biggest opportunity in consumer AI lies in developing specialized tools that can handle complex, multi-step tasks.
+
+	- ## Agentic Architectures
+		- Adoption of agentic architectures grew from 0% in 2023 to 12% in 2024.
+		- Future growth in agentic architectures is expected as the technology matures.
+
+	- ## Critical Analysis
+		- **Anecdotal Evidence and Generalisation:**
+			- The report is based on Ramp's customer data, which may not represent the broader market. Growth figures could be skewed by a few large companies or early adopters, making the data less generalisable.
+			- The focus on rapidly growing vendors like Anthropic might overshadow the fact that many AI tools are still in experimental or early adoption stages.
+		- **Superficial Engagement vs. Deep Integration:**
+			- Increased spending may reflect experimentation rather than deep, sustainable integration of AI tools. Companies often try new tools without committing long-term.
+			- Retention rates might indicate vendor lock-in rather than genuine satisfaction, as switching costs can deter companies from exploring better options.
+		- **Economic and Market Dynamics:**
+			- Spending increases may be driven by economic pressures to boost productivity without increasing headcount, rather than a belief in AI's transformative potential.
+			- The surge in AI spending could be driven by hype, with companies adopting AI tools to keep up with competitors, regardless of their actual value.
+		- **Sustainability of Growth:**
+			- Rapid growth rates may not be sustainable. As the market matures, AI spending could slow as companies standardise on a few tools or find that efficiency gains do not meet expectations.
+
+	- ## Economic Perspectives and Growth Theory
+
+		- ### Endogenous Growth Theory
+	 - **AK Model:** Introduces the AK model from endogenous growth theory, which posits that economies can grow indefinitely as they accumulate more capital, potentially allowing for explosive growth under certain conditions.
+	 - **Theoretical vs. Real-World Limitations:** Discusses the theoretical possibilities of indefinite growth while acknowledging the real-world diminishing returns and other economic principles that limit such expansion.
+
+			- #### The Case for Optimism
+				- In the long run, AI automation has the potential to greatly increase productivity and economic growth, creating new jobs and opportunities. Acemoglu and Restrepo (2018) find that while automation does displace some jobs, it also creates new ones in more complex and higher-paying fields.
+				- AI can also help to solve complex social and environmental problems, such as climate change and disease prevention, improving quality of life for all. AI-powered technologies such as precision agriculture and personalized medicine have the potential to address global challenges and improve human well-being (Vinuesa et al., 2020).
+				- With the right policies and investments in education and retraining, the workforce can adapt to the new demands of an AI-driven economy. Acemoglu and Restrepo (2018) emphasize the importance of investing in human capital and promoting the creation of new tasks that complement AI technologies.
+				- The benefits of AI, such as increased leisure time and reduced costs of goods and services, can be widely shared if there is a concerted effort to promote inclusive growth and equitable distribution of wealth. Korinek and Stiglitz (2017) propose policies such as progressive taxation and universal basic income to ensure that the gains from AI are broadly shared.
+				- Economist David Autor from MIT presents a compelling counterargument. In his article "[AI Could Actually Help Rebuild The Middle Class,](https://www.noemamag.com/how-ai-could-help-rebuild-the-middle-class/)". Autor posits that AI has the potential to democratise expertise and create new opportunities for workers without advanced degrees, ultimately leading to greater equity and a stronger middle class.
+					- Autor argues that unlike past automation technologies, AI can learn from unstructured data and tacit knowledge, enabling it to augment human capabilities in complex decision-making domains. By providing real-time guidance and guardrails, AI can expand access to expertise and allow people with less formal training to perform higher-skilled work.
+					  Central to Autor's thesis is the concept of "a worker of one"
+		- in a free society, every individual owns their own labor, creating an intrinsic force for greater equality when human expertise is valuable. AI could generate a variety of new middle-class jobs, counteracting the tendency for returns to accrue primarily to capital owners.
+			- However, realizing these benefits will require proactive efforts to steer AI development in a direction that benefits workers. This includes investing in AI tools for education and healthcare, reforming institutions to ensure productivity gains flow to workers, and countering resistance from professional guilds.
+			  Autor emphasizes that the goal is not to render human expertise obsolete, but rather to extend its reach and efficacy. He draws an analogy to YouTube tutorials
+		- while an untrained amateur cannot safely replace a circuit breaker by watching a video, an electrician can use that same video to expand their skills and take on new tasks. Similarly, AI will be most effective when building upon a foundation of human knowledge.
+			- Autor also notes that demand for many forms of expertise, such as in healthcare and education, is effectively limitless. So if AI can boost productivity in these domains, it may actually increase employment by making these services more affordable and accessible.
+			- While AI will automate some tasks and eliminate certain jobs, Autor argues this is not the whole story. Historically, the most important innovations have been those that expanded human capabilities and opened up entirely new domains
+		- from air travel to gene editing. In the process, they created demands for new forms of expertise that didn't previously exist.
+
+	- ## Future Growth
+		- The biggest opportunity in consumer AI lies in developing specialized tools that can handle complex, multi-step tasks.
+
+	- ## Agentic Architectures
+		- Adoption of agentic architectures grew from 0% in 2023 to 12% in 2024.
+		- Future growth in agentic architectures is expected as the technology matures.
+
+	- ## Critical Analysis
+		- **Anecdotal Evidence and Generalisation:**
+			- The report is based on Ramp's customer data, which may not represent the broader market. Growth figures could be skewed by a few large companies or early adopters, making the data less generalisable.
+			- The focus on rapidly growing vendors like Anthropic might overshadow the fact that many AI tools are still in experimental or early adoption stages.
+		- **Superficial Engagement vs. Deep Integration:**
+			- Increased spending may reflect experimentation rather than deep, sustainable integration of AI tools. Companies often try new tools without committing long-term.
+			- Retention rates might indicate vendor lock-in rather than genuine satisfaction, as switching costs can deter companies from exploring better options.
+		- **Economic and Market Dynamics:**
+			- Spending increases may be driven by economic pressures to boost productivity without increasing headcount, rather than a belief in AI's transformative potential.
+			- The surge in AI spending could be driven by hype, with companies adopting AI tools to keep up with competitors, regardless of their actual value.
+		- **Sustainability of Growth:**
+			- Rapid growth rates may not be sustainable. As the market matures, AI spending could slow as companies standardise on a few tools or find that efficiency gains do not meet expectations.
+
+	- ## Economic Perspectives and Growth Theory
+
+		- ### Endogenous Growth Theory
+	 - **AK Model:** Introduces the AK model from endogenous growth theory, which posits that economies can grow indefinitely as they accumulate more capital, potentially allowing for explosive growth under certain conditions.
+	 - **Theoretical vs. Real-World Limitations:** Discusses the theoretical possibilities of indefinite growth while acknowledging the real-world diminishing returns and other economic principles that limit such expansion.
+
+			- #### The Case for Optimism
+				- In the long run, AI automation has the potential to greatly increase productivity and economic growth, creating new jobs and opportunities. Acemoglu and Restrepo (2018) find that while automation does displace some jobs, it also creates new ones in more complex and higher-paying fields.
+				- AI can also help to solve complex social and environmental problems, such as climate change and disease prevention, improving quality of life for all. AI-powered technologies such as precision agriculture and personalized medicine have the potential to address global challenges and improve human well-being (Vinuesa et al., 2020).
+				- With the right policies and investments in education and retraining, the workforce can adapt to the new demands of an AI-driven economy. Acemoglu and Restrepo (2018) emphasize the importance of investing in human capital and promoting the creation of new tasks that complement AI technologies.
+				- The benefits of AI, such as increased leisure time and reduced costs of goods and services, can be widely shared if there is a concerted effort to promote inclusive growth and equitable distribution of wealth. Korinek and Stiglitz (2017) propose policies such as progressive taxation and universal basic income to ensure that the gains from AI are broadly shared.
+				- Economist David Autor from MIT presents a compelling counterargument. In his article "[AI Could Actually Help Rebuild The Middle Class,](https://www.noemamag.com/how-ai-could-help-rebuild-the-middle-class/)". Autor posits that AI has the potential to democratise expertise and create new opportunities for workers without advanced degrees, ultimately leading to greater equity and a stronger middle class.
+					- Autor argues that unlike past automation technologies, AI can learn from unstructured data and tacit knowledge, enabling it to augment human capabilities in complex decision-making domains. By providing real-time guidance and guardrails, AI can expand access to expertise and allow people with less formal training to perform higher-skilled work.
+					  Central to Autor's thesis is the concept of "a worker of one"
+		- in a free society, every individual owns their own labor, creating an intrinsic force for greater equality when human expertise is valuable. AI could generate a variety of new middle-class jobs, counteracting the tendency for returns to accrue primarily to capital owners.
+			- However, realizing these benefits will require proactive efforts to steer AI development in a direction that benefits workers. This includes investing in AI tools for education and healthcare, reforming institutions to ensure productivity gains flow to workers, and countering resistance from professional guilds.
+			  Autor emphasizes that the goal is not to render human expertise obsolete, but rather to extend its reach and efficacy. He draws an analogy to YouTube tutorials
+		- while an untrained amateur cannot safely replace a circuit breaker by watching a video, an electrician can use that same video to expand their skills and take on new tasks. Similarly, AI will be most effective when building upon a foundation of human knowledge.
+			- Autor also notes that demand for many forms of expertise, such as in healthcare and education, is effectively limitless. So if AI can boost productivity in these domains, it may actually increase employment by making these services more affordable and accessible.
+			- While AI will automate some tasks and eliminate certain jobs, Autor argues this is not the whole story. Historically, the most important innovations have been those that expanded human capabilities and opened up entirely new domains
+		- from air travel to gene editing. In the process, they created demands for new forms of expertise that didn't previously exist.
+
+	- ## Future Growth
+
+- ## Additional Resources
+  
+  * **[W3C Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/):** A comprehensive resource for understanding and implementing web accessibility standards.
+  * **[Inclusive Design Principles](https://inclusivedesignprinciples.org/):** Practical guidelines for designing products that work for the widest possible audience.
+  * **[Accessible Technology Coalition](https://atcoalition.org/):** A resource hub for accessible technology tools and strategies.
+-
+
+- ## Additional Resources
+  
+  * **[W3C Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/):** A comprehensive resource for understanding and implementing web accessibility standards.
+  * **[Inclusive Design Principles](https://inclusivedesignprinciples.org/):** Practical guidelines for designing products that work for the widest possible audience.
+  * **[Accessible Technology Coalition](https://atcoalition.org/):** A resource hub for accessible technology tools and strategies.
+-
+
+## Source
+
+- **Primary**: OECD AI Principles 2024 revision (Principle 1.1)
+- **Related**: OECD Recommendation of the Council on Artificial Intelligence (2019, updated 2024)
+
+## Context
+
+Inclusive growth represents the first component of OECD's foundational principle for beneficial AI, emphasising that AI systems should create broad-based economic opportunities and reduce rather than exacerbate existing inequalities. This principle explicitly addresses concerns about AI's potential to concentrate benefits amongst already-advantaged populations whilst marginalising vulnerable groups.
+
+## Key Characteristics
+
+- **Broad-based benefit**: AI advantages should extend across society, not concentrate in specific demographics
+- **Capability augmentation**: Enhancement of human abilities rather than wholesale replacement
+- **Inequality reduction**: Active mitigation of economic, social and geographical disparities
+- **Inclusive design**: Consideration of underrepresented populations throughout AI development
+- **Economic opportunity**: Creation of pathways for widespread participation in AI economy
+
+## Relationships
+
+- **Parent Concept**: OECD AI Principle 1 (Inclusive Growth, Sustainable Development and Well-Being)
+- **Related Terms**:
+  - Sustainable Development (AI-0157)
+  - Well-Being (AI-0158)
+  - Fairness (OECD) (AI-0160)
+  - Social Impact (AI-0170)
+- **Contrasts With**: Exclusionary AI development that concentrates benefits
+
+## Implementation Considerations
+
+1. **Accessibility**: Ensuring AI systems are usable by persons with disabilities and diverse populations
+2. **Language diversity**: Supporting multiple languages and cultural contexts
+3. **Economic accessibility**: Considering affordability and resource requirements
+4. **Skills development**: Creating pathways for participation in AI-enabled economy
+5. **Geographic reach**: Extending benefits beyond wealthy urban centres
+
+## OECD Framework Alignment
+
+- **Dimension**: People and Planet Context
+- **Principle Number**: P1 (part 1 of 3)
+- **Actor Responsibility**: All AI actors throughout lifecycle
+
+## Regulatory Context
+
+The inclusive growth principle informs:
+- EU AI Act requirements for bias mitigation (Article 10)
+- Fundamental rights impact assessments (Article 27)
+- Accessibility obligations under EU harmonised legislation
+- National AI strategies emphasising economic inclusion
+
+## 2024 Revision Updates
+
+The 2024 OECD revision strengthened inclusive growth by:
+- Explicitly addressing underrepresented populations
+- Linking inequality reduction to geographic dimensions
+- Connecting to sustainable development goals
+- Emphasising capability augmentation over replacement
+
+## Measurement Approaches
+
+Inclusive growth in AI context can be assessed through:
+- Distribution of economic benefits across population segments
+- Accessibility metrics for diverse user populations
+- Employment impact analyses across skill levels and geographies
+- Participation rates in AI development and deployment
+
+## Related Standards
+
+- ISO/IEC 23894:2023 - Information technology — Artificial intelligence — Guidance on risk management
+- IEEE 7010-2020 - Recommended Practice for Assessing the Impact of Autonomous and Intelligent Systems on Human Well-Being
+
+## See Also
+
+- Human-Centred Values (AI-0159)
+- Fairness (OECD) (AI-0160)
+- Social Impact (AI-0170)
+- Environmental Sustainability (AI-0169)
+
+---
+
+*Part of AI Grounded Ontology - OECD AI Principles Framework*
+*Aligned with OECD AI Principles 2024 and EU AI Act regulatory framework*
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# Inclusive Growth
+		  
+		  **Term ID**: AI-0156
+		  **Category**: OECD AI Principle
+		  **Status**: Essential
+		  **Version**: 1.0
+		  **Last Updated**: 2025-10-27
+		  
+		  ## Definition
+		  
+		  AI should benefit people and planet by augmenting human capabilities, enhancing creativity, advancing inclusion of underrepresented populations, reducing economic, social and geographical inequalities, and protecting natural environments, thereby invigorating inclusive growth, sustainable development and well-being.
+		  
+		  ## Source
+		  
+		  - **Primary**: OECD AI Principles 2024 revision (Principle 1.1)
+		  - **Related**: OECD Recommendation of the Council on Artificial Intelligence (2019, updated 2024)
+		  
+		  ## Context
+		  
+		  Inclusive growth represents the first component of OECD's foundational principle for beneficial AI, emphasising that AI systems should create broad-based economic opportunities and reduce rather than exacerbate existing inequalities. This principle explicitly addresses concerns about AI's potential to concentrate benefits amongst already-advantaged populations whilst marginalising vulnerable groups.
+		  
+		  ## Key Characteristics
+		  
+		  - **Broad-based benefit**: AI advantages should extend across society, not concentrate in specific demographics
+		  - **Capability augmentation**: Enhancement of human abilities rather than wholesale replacement
+		  - **Inequality reduction**: Active mitigation of economic, social and geographical disparities
+		  - **Inclusive design**: Consideration of underrepresented populations throughout AI development
+		  - **Economic opportunity**: Creation of pathways for widespread participation in AI economy
+		  
+		  ## Relationships
+		  
+		  - **Parent Concept**: OECD AI Principle 1 (Inclusive Growth, Sustainable Development and Well-Being)
+		  - **Related Terms**:
+		    - Sustainable Development (AI-0157)
+		    - Well-Being (AI-0158)
+		    - Fairness (OECD) (AI-0160)
+		    - Social Impact (AI-0170)
+		  - **Contrasts With**: Exclusionary AI development that concentrates benefits
+		  
+		  ## Implementation Considerations
+		  
+		  1. **Accessibility**: Ensuring AI systems are usable by persons with disabilities and diverse populations
+		  2. **Language diversity**: Supporting multiple languages and cultural contexts
+		  3. **Economic accessibility**: Considering affordability and resource requirements
+		  4. **Skills development**: Creating pathways for participation in AI-enabled economy
+		  5. **Geographic reach**: Extending benefits beyond wealthy urban centres
+		  
+		  ## OECD Framework Alignment
+		  
+		  - **Dimension**: People and Planet Context
+		  - **Principle Number**: P1 (part 1 of 3)
+		  - **Actor Responsibility**: All AI actors throughout lifecycle
+		  
+		  ## Regulatory Context
+		  
+		  The inclusive growth principle informs:
+		  - EU AI Act requirements for bias mitigation (Article 10)
+		  - Fundamental rights impact assessments (Article 27)
+		  - Accessibility obligations under EU harmonised legislation
+		  - National AI strategies emphasising economic inclusion
+		  
+		  ## 2024 Revision Updates
+		  
+		  The 2024 OECD revision strengthened inclusive growth by:
+		  - Explicitly addressing underrepresented populations
+		  - Linking inequality reduction to geographic dimensions
+		  - Connecting to sustainable development goals
+		  - Emphasising capability augmentation over replacement
+		  
+		  ## Measurement Approaches
+		  
+		  Inclusive growth in AI context can be assessed through:
+		  - Distribution of economic benefits across population segments
+		  - Accessibility metrics for diverse user populations
+		  - Employment impact analyses across skill levels and geographies
+		  - Participation rates in AI development and deployment
+		  
+		  ## Related Standards
+		  
+		  - ISO/IEC 23894:2023 - Information technology — Artificial intelligence — Guidance on risk management
+		  - IEEE 7010-2020 - Recommended Practice for Assessing the Impact of Autonomous and Intelligent Systems on Human Well-Being
+		  
+		  ## See Also
+		  
+		  - Human-Centred Values (AI-0159)
+		  - Fairness (OECD) (AI-0160)
+		  - Social Impact (AI-0170)
+		  - Environmental Sustainability (AI-0169)
+		  
+		  ---
+		  
+		  *Part of AI Grounded Ontology - OECD AI Principles Framework*
+		  *Aligned with OECD AI Principles 2024 and EU AI Act regulatory framework*
+		  
+		  ```
+
+- public-access:: true
 	- definition:: AI should benefit people and planet by augmenting human capabilities, enhancing creativity, advancing inclusion of underrepresented populations, reducing economic, social and geographical inequalities, and protecting natural environments, thereby invigorating inclusive growth, sustainable development and well-being.
+
+
+
 
 # Inclusive Growth Ontology Entry – Updated Content
 
@@ -127,7 +513,7 @@
 
 [4] Inclusive Growth Network (2025) "What is Inclusive Growth?" available at inclusivegrowthnetwork.org
 
-[5] Harvard Kennedy School, Berkman Klein Centre for Internet & Society (2025) "Inclusive Growth for Cities: A Guide" *City Leadership Initiative*
+[5] Harvard Kennedy School, Berkman Klein Center for Internet & Society (2025) "Inclusive Growth for Cities: A Guide" *City Leadership Initiative*
 
 [6] World Bank (2024) "Inclusive Growth Revisited: Measurement and Evolution" *Development Talk Blog*, available at blogs.worldbank.org
 
@@ -135,10 +521,10 @@
 
 **Note on current definition:** Your existing definition appropriately emphasises AI's role in augmenting human capabilities and advancing inclusion. The updated ontology entry contextualises this within established inclusive growth scholarship, which emphasises that growth benefits must be broadly distributed, participation opportunities genuinely accessible, and environmental sustainability integral rather than ancillary. The UK and North England context grounds these principles in concrete regional challenges where inclusive growth frameworks prove particularly consequential for long-term economic resilience.
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-

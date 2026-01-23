@@ -1,36 +1,42 @@
 - ### OntologyBlock
-    - term-id:: DT-0563
-    - source-domain:: bc
-    - owl:class:: bc:HighEnergyConsumption
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - preferred-term:: High Energy Consumption
-    - ontology:: true
+  id:: highenergyconsumption-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: BC
+    - sequence-number:: 0563
+    - filename-history:: ["BC-0563-highenergyconsumption.md"]
     - public-access:: true
-    - is-subclass-of:: [[EnergyConsumption]]
+    - ontology:: true
+    - term-id:: BC-0563
+    - preferred-term:: High Energy Consumption
+    - source-domain:: bc
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## High Energy Consumption
+  - **Definition**
+    - definition:: Energy consumption level characteristic of PoW consensus mechanisms requiring significant computational resources.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-High Energy Consumption refers to energy consumption level characteristic of pow consensus mechanisms requiring significant computational resources.
+  - **Semantic Classification**
+    - owl:class:: bc:HighEnergyConsumption
+    - belongsToDomain:: [[Blockchain]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :HighEnergyConsumption))
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :HighEnergyConsumption "High Energy Consumption"@en)
+      (AnnotationAssertion rdfs:comment :HighEnergyConsumption
+        "Energy consumption level characteristic of PoW consensus mechanisms requiring significant computational resources."@en)
+      ```
 
-- **Id**: highenergyconsumption-ontology
-- **Collapsed**: true
-- **Domain Prefix**: BC
-- **Sequence Number**: 0563
-- **Filename History**: ["BC-0563-highenergyconsumption.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: bc:HighEnergyConsumption
-- **Belongstodomain**: [[Blockchain]]
+- ## About High Energy Consumption
+  Energy consumption level characteristic of PoW consensus mechanisms requiring significant computational resources.

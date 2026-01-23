@@ -1,20 +1,9 @@
-- ### OntologyBlock
-  id:: animatediff-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0399
-	- preferred-term:: AnimateDiff
-	- source-domain:: ai
-	- owl:class:: ai:AnimateDiff
+public:: true
 
-### Relationships
-
-- is-subclass-of:: [[ModelArchitecture]]
-	- status:: draft
-	- public-access:: true
-	- definition:: AnimateDiff works by adding a motion modelling module to a stable diffusion model for generating animations from images.
+- # AnimateDiff
+- AnimateDiff is a framework that can generate animated videos from a single static image and a text prompt. It is a powerful tool for creating AI-generated animations and has become very popular in the AI art community.
 - ## How it Works
-	- AnimateDiff works by adding a motion modelling module to a stable diffusion model. This module is trained on a large dataset of videos and learns to predict the motion between frames. When you provide AnimateDiff with an image and a text prompt, it uses the motion modelling module to generate a sequence of frames that create an animation.
+	- AnimateDiff works by adding a motion modeling module to a stable diffusion model. This module is trained on a large dataset of videos and learns to predict the motion between frames. When you provide AnimateDiff with an image and a text prompt, it uses the motion modeling module to generate a sequence of frames that create an animation.
 - ## Features
 	- **Text-to-Video:** Generate animations from a text prompt and a static image.
 	- **Image-to-Video:** Generate animations from a static image.
@@ -36,11 +25,3 @@
 	- [[AI Video]] is a broad category encompassing techniques for generating, editing, and manipulating video content using [[artificial intelligence]] and [[deep learning]] methods
 	- [[Stable Diffusion]] is a text-to-image [[deep learning]] model that uses diffusion processes to generate high-quality images from textual descriptions, serving as the foundation for many [[computer vision]] applications
 	- [[ComfyUI]] is a node-based graphical interface for Stable Diffusion that enables visual workflow [[design thinking]] and simplified [[user experience]] for creating complex AI-generated imagery
-
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable

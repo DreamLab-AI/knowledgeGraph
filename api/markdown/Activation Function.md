@@ -1,24 +1,169 @@
 - ### OntologyBlock
-  id:: unknown-ontology
+  id:: activation-function-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0059
+	- term-id:: AI-0059
 	- preferred-term:: Activation Function
-	- source-domain:: ai
-	- owl:class:: ai:ActivationFunction
+	- source-domain:: artificial-intelligence
 	- status:: draft
-	- public-access:: true
-	- definition:: 	- maturity:: draft
-	- owl:class:: mv:ActivationFunction
+- public-access:: true
+	- definition:: ### Primary Definition
+An **Activation Function** is a function applied to the weighted combination of all inputs to a neuron. Activation functions allow neural networks to learn complicated features in the data. They are typically non-linear.
+	- maturity:: draft
+	- owl:class:: ai:ActivationFunction
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
-	- #### Relationships
-- is-subclass-of:: [[ModelArchitecture]]
-	  id:: unknown-relationships
+- ## About Activation Function
+	- ### Primary Definition
+An **Activation Function** is a function applied to the weighted combination of all inputs to a neuron. Activation functions allow neural networks to learn complicated features in the data. They are typically non-linear.
+	-
+	- ### Original Content
 	  collapsed:: true
-		- is-subclass-of:: [[NeuralNetwork]]
+		- ```
+# Activation Function
+		  
+		  ## Metadata
+		  - **Term ID**: AI-0059
+		  - **Type**: AIAlgorithm
+		  - **Classification**: Neural Component
+		  - **Domain**: MLDomain
+		  - **Layer**: AlgorithmicLayer
+		  - **Status**: Active
+		  - **Version**: 1.0
+		  - **Last Updated**: 2025-10-27
+		  - **Priority**: 1=Foundational
+		  
+		  ## Definition
+		  
+		  ### Primary Definition
+		  An **Activation Function** is a function applied to the weighted combination of all inputs to a neuron. Activation functions allow neural networks to learn complicated features in the data. They are typically non-linear.
+		  
+		  **Source**: ISO/IEC 22989:2022, Clause 3.1.2 - Authority Score: 0.95
+		  
+		  ### Operational Characteristics
+		  - **Nonlinearity**: Introduces nonlinear transformations
+		  - **Neuron Output**: Determines neuron's activation level
+		  - **Differentiable**: Must allow gradient computation
+		  - **Common Types**: ReLU, Sigmoid, Tanh, Softmax
+		  - **Layer-Specific**: Different functions for different layers
+		  
+		  ## Relationships
+		  
+		  ### Parent Classes
+		  - **Neural Network Component**: Activation function is a neuron component
+		  
+		  ### Child Classes
+		  - **ReLU**: Rectified linear unit (max(0, x))
+		  - **Sigmoid**: Logistic function (1/(1+e^-x))
+		  - **Tanh**: Hyperbolic tangent
+		  - **Softmax**: Normalised exponential for classification
+		  
+		  ### Related Concepts
+		  - **Neuron**: Contains activation function
+		  - **Neural Network**: Composed of neurons with activations
+		  - **Backpropagation** (AI-0043): Requires differentiable activations
+		  - **Nonlinearity**: Activation functions introduce nonlinearity
+		  
+		  ## Formal Ontology
+		  
+		  <details>
+		  <summary>Click to expand OntologyBlock</summary>
+		  
+		  ```clojure
+		  ;; Activation Function Ontology (OWL Functional Syntax)
+		  ;; Term ID: AI-0059
+		  ;; Domain: MLDomain | Layer: AlgorithmicLayer
+		  
+		  (Declaration (Class :ActivationFunction))
+		  
+		  ;; Core Classification
+		  (SubClassOf :ActivationFunction :NeuralNetworkComponent)
+		  (SubClassOf :ActivationFunction :MathematicalFunction)
+		  
+		  ;; Functional Properties
+		  (SubClassOf :ActivationFunction
+		    (ObjectSomeValuesFrom :appliedTo :WeightedSum))
+		  (SubClassOf :ActivationFunction
+		    (ObjectSomeValuesFrom :produces :NeuronOutput))
+		  (SubClassOf :ActivationFunction
+		    (ObjectSomeValuesFrom :introducesProperty :Nonlinearity))
+		  
+		  ;; Differentiability Requirement
+		  (SubClassOf :ActivationFunction
+		    (ObjectSomeValuesFrom :enables :BackpropagationAlgorithm))
+		  
+		  ;; Common Subtypes
+		  (SubClassOf :ReLU :ActivationFunction)
+		  (SubClassOf :Sigmoid :ActivationFunction)
+		  (SubClassOf :Tanh :ActivationFunction)
+		  (SubClassOf :Softmax :ActivationFunction)
+		  
+		  ;; Annotations
+		  (AnnotationAssertion rdfs:label :ActivationFunction "Activation Function"@en)
+		  (AnnotationAssertion rdfs:comment :ActivationFunction
+		    "Function applied to weighted combination of inputs to introduce nonlinearity in neural networks"@en)
+		  (AnnotationAssertion :isoReference :ActivationFunction "ISO/IEC 22989:2022, Clause 3.1.2")
+		  (AnnotationAssertion :authorityScore :ActivationFunction "0.95"^^xsd:float)
+		  (AnnotationAssertion :priorityLevel :ActivationFunction "1"^^xsd:integer)
+		  
+		  ;; Data Properties
+		  (DataPropertyAssertion :isNonlinear :ActivationFunction "true"^^xsd:boolean)
+		  (DataPropertyAssertion :isDifferentiable :ActivationFunction "true"^^xsd:boolean)
+		  
+		  ;; Property Declarations
+		  (Declaration (ObjectProperty :introducesProperty))
+		  (ObjectPropertyDomain :introducesProperty :ActivationFunction)
+		  (ObjectPropertyRange :introducesProperty :MathematicalProperty)
+		  
+		  (Declaration (DataProperty :isNonlinear))
+		  (DataPropertyDomain :isNonlinear :ActivationFunction)
+		  (DataPropertyRange :isNonlinear xsd:boolean)
+		  ```
+		  </details>
+		  
+		  ## Standards Alignment
+		  
+		  ### ISO/IEC Standards
+		  - **ISO/IEC 22989:2022**: Clause 3.1.2 (Activation functions)
+		  
+		  ### NIST AI RMF
+		  - **Function**: MAP (Neural network components)
+		  
+		  ## Related Terms
+		  - **Neural Network**: Uses activation functions
+		  - **Feedforward Neural Network** (AI-0031): Contains activation functions
+		  - **Backpropagation** (AI-0043): Computes activation derivatives
+		  - **Neuron**: Applies activation function
+		  
+		  ## References
+		  1. ISO/IEC 22989:2022 - Clause 3.1.2
+		  2. NIST AI 100-3 - Technical terminology
+		  3. Goodfellow et al. - "Deep Learning" - MIT Press, 2016 (Chapter 6)
+		  
+		  ---
+		  
+		  **Authority Score**: 0.95 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST
+		  
+		  ```
 
+	- #### Trust Beyond Misinformation
+		- **Primary Trust Issue**: Expectations from institutions about their function and responsiveness, not just misinformation.
+		- **Media Trust**: Questions around media trust and social media's role are secondary to larger institutional trust issues.
+
+	- #### Trust Beyond Misinformation
+		- **Primary Trust Issue**: Expectations from institutions about their function and responsiveness, not just misinformation.
+		- **Media Trust**: Questions around media trust and social media's role are secondary to larger institutional trust issues.
+
+- # Business Functions
+	- collapsed:: true
+		- [Perplexity](https://www.perplexity.ai/)
+		- Deep research.
+		-
+
+	- #### Trust Beyond Misinformation
+		- **Primary Trust Issue**: Expectations from institutions about their function and responsiveness, not just misinformation.
+		- **Media Trust**: Questions around media trust and social media's role are secondary to larger institutional trust issues.
 ## Academic Context
 
 - Activation functions are mathematical functions applied to the output of individual neurons in artificial neural networks.
@@ -77,13 +222,14 @@
 
 ## References
 
-1. Pinkus, A. (1999). Approximation theory of the MLP model in neural networks. *Acta Numerica*, 8, 143-195. https://doi.org/10.1017/S0962492900002833
-2. Glorot, X., Bordes, A., & Bengio, Y. (2011). Deep Sparse Rectifier Neural Networks. *Proceedings of AISTATS*, 315-323.
-3. Hendrycks, D., & Gimpel, K. (2016). Gaussian Error Linear Units (GELUs). arXiv:1606.08415.
-4. Meegle. Activation Functions In Neural Networks. Retrieved 2025.
-5. DataCamp. Introduction to Activation Functions in Neural Networks. Retrieved 2025.
-6. Google Developers. Neural Networks: Activation Functions. Retrieved 2025.
+1. Pinkus, A. (1999). Approximation theory of the MLP model in neural networks. *Acta Numerica*, 8, 143-195. https://doi.org/10.1017/S0962492900002833  
+2. Glorot, X., Bordes, A., & Bengio, Y. (2011). Deep Sparse Rectifier Neural Networks. *Proceedings of AISTATS*, 315-323.  
+3. Hendrycks, D., & Gimpel, K. (2016). Gaussian Error Linear Units (GELUs). arXiv:1606.08415.  
+4. Meegle. Activation Functions In Neural Networks. Retrieved 2025.  
+5. DataCamp. Introduction to Activation Functions in Neural Networks. Retrieved 2025.  
+6. Google Developers. Neural Networks: Activation Functions. Retrieved 2025.  
 7. Wikipedia contributors. Activation function. *Wikipedia*. Retrieved 2025.
+
 
 ## Metadata
 
@@ -91,4 +237,3 @@
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-

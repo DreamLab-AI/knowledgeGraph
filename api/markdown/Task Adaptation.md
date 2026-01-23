@@ -1,38 +1,42 @@
 - ### OntologyBlock
-    - term-id:: DT-0819
-    - source-domain:: ai
-    - owl:class:: ai:TaskAdaptation
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - preferred-term:: Task Adaptation
-    - ontology:: true
+  id:: taskadaptation-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: AI
+    - sequence-number:: 0819
+    - filename-history:: ["AI-0819-taskadaptation.md"]
     - public-access:: true
+    - ontology:: true
+    - term-id:: AI-0819
+    - preferred-term:: Task Adaptation
+    - source-domain:: ai
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-### Relationships
-- is-subclass-of:: [[TrainingMethod]]
+  - **Definition**
+    - definition:: Adaptation of models to new tasks.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-## Task Adaptation
+  - **Semantic Classification**
+    - owl:class:: ai:TaskAdaptation
+    - belongsToDomain:: [[Artificial Intelligence]]
 
-Task Adaptation refers to adaptation of models to new tasks.
+  - #### Relationships
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :TaskAdaptation))
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :TaskAdaptation "Task Adaptation"@en)
+      (AnnotationAssertion rdfs:comment :TaskAdaptation
+        "Adaptation of models to new tasks."@en)
+      ```
 
-## Technical Details
-
-- **Id**: taskadaptation-ontology
-- **Collapsed**: true
-- **Domain Prefix**: AI
-- **Sequence Number**: 0819
-- **Filename History**: ["AI-0819-taskadaptation.md"]
-- **Public Access**: true
-- **Source Domain**: ai
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: ai:TaskAdaptation
-- **Belongstodomain**: [[Artificial Intelligence]]
+- ## About Task Adaptation
+  Adaptation of models to new tasks.

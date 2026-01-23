@@ -1,20 +1,14 @@
 public:: true
 
-- ### OntologyBlock
-  id:: Foundation Models
-  - ontology:: true
-  - public-access:: true
-  - term-id:: MV-9715
-  - preferred-term:: Foundation Models
-  - source-domain:: mv
-  - owl:class:: mv:PublicTrue
-  - status:: draft
-
-### Relationships
-- is-subclass-of:: [[MachineLearning]]
-
-### [GPT-4](https://openai.com/research/gpt-4)
-- A large multimodal model from OpenAI that can accept image and text inputs and produce text outputs.
+- # Foundation Models
+- Foundation models are large-scale, pre-trained models that can be adapted to a wide range of downstream tasks. They are trained on massive datasets of text and code and can be used for a variety of natural language processing (NLP) tasks, such as text generation, summarization, and question answering.
+- ## Key Concepts
+	- **Transfer Learning:** The process of adapting a pre-trained model to a new task.
+	- **Fine-tuning:** The process of further training a pre-trained model on a smaller, task-specific dataset.
+	- **Prompt Engineering:** The process of designing prompts to elicit the desired output from a language model.
+- ## Popular Models
+	- ### [GPT-4](https://openai.com/research/gpt-4)
+		- A large multimodal model from OpenAI that can accept image and text inputs and produce text outputs.
 	- ### [Claude 3](https://www.anthropic.com/news/claude-3-family)
 		- A family of models from Anthropic that are designed to be helpful, harmless, and honest.
 	- ### [Gemini](https://deepmind.google/technologies/gemini/)

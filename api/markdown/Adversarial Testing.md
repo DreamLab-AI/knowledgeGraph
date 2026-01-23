@@ -4,16 +4,267 @@
 	- ontology:: true
 	- term-id:: AI-0271
 	- preferred-term:: Adversarial Testing
-	- source-domain:: ai
-	- owl:class:: ai:AdversarialTesting
+	- source-domain:: mv
 	- status:: draft
-    - public-access:: true
+- definition:: Testing methodology that deliberately attempts to cause AI system failures through adversarial inputs, edge cases, and challenging scenarios. Adversarial testing helps identify robustness issues, safety vulnerabilities, and alignment failures before deployment.
 
+## Academic Context
 
-### Relationships
-- is-subclass-of:: [[ModelArchitecture]]
-- is-subclass-of:: [[AISecurity]]
+Adversarial testing extends beyond traditional software testing to address AI-specific challenges including harmful outputs, bias, and unpredictable behaviour in edge cases.
+
+## Key Characteristics
+
+- Deliberate failure elicitation
+- Tests robustness and safety
+- Identifies edge cases
+- Informs training improvements
+- Pre-deployment validation
+- Continuous monitoring
+
+## Related Concepts
+
+- **Red Teaming**: Specific adversarial approach
+- **Adversarial Examples**: Input perturbations
+- **AI Safety**: Broader objective
+- **Robustness**: Property tested
+
+## UK English Notes
+
+- "Behaviour" (not "behavior")
+
+## OWL Functional Syntax
+
+```clojure
+(Declaration (Class :AdversarialTesting))
+(AnnotationAssertion rdfs:label :AdversarialTesting "Adversarial Testing"@en)
+(AnnotationAssertion rdfs:comment :AdversarialTesting
+  "Testing methodology that deliberately attempts to cause AI system failures through adversarial inputs and challenging scenarios."@en)
+
+;; Taxonomic relationships
+(SubClassOf :AdversarialTesting :TestingMethodology)
+(SubClassOf :AdversarialTesting :SafetyEvaluation)
+
+;; Related techniques
+(SubClassOf :AdversarialTesting
+  (ObjectSomeValuesFrom :includes :RedTeaming))
+(SubClassOf :AdversarialTesting
+  (ObjectSomeValuesFrom :uses :AdversarialExamples))
+(SubClassOf :AdversarialTesting
+  (ObjectSomeValuesFrom :uses :EdgeCaseTesting))
+
+;; Objectives
+(SubClassOf :AdversarialTesting
+  (ObjectSomeValuesFrom :identifies :RobustnessIssues))
+(SubClassOf :AdversarialTesting
+  (ObjectSomeValuesFrom :identifies :SafetyVulnerabilities))
+(SubClassOf :AdversarialTesting
+  (ObjectSomeValuesFrom :identifies :AlignmentFailures))
+
+;; Properties
+(DataPropertyAssertion :isPreDeployment :AdversarialTesting "true"^^xsd:boolean)
+(DataPropertyAssertion :isContinuous :AdversarialTesting "true"^^xsd:boolean)
+(DataPropertyAssertion :informsTraining :AdversarialTesting "true"^^xsd:boolean)
+(DataPropertyAssertion :testingType :AdversarialTesting "adversarial"^^xsd:string)
+```
+
+**Last Updated**: 2025-10-27
+**Verification Status**: Verified against AI safety literature
+	- maturity:: draft
+	- owl:class:: mv:AdversarialTesting
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Adversarial Testing
+	- Testing methodology that deliberately attempts to cause AI system failures through adversarial inputs, edge cases, and challenging scenarios. Adversarial testing helps identify robustness issues, safety vulnerabilities, and alignment failures before deployment.
+
+	- # Hardware
+	- [10G ethernet testing of Jetson AGX Orin Developer Kit
+		- Jetson & Embedded Systems / Jetson AGX Orin
+		- NVIDIA Developer Forums](https://forums.developer.nvidia.com/t/10g-ethernet-testing-of-jetson-agx-orin-developer-kit/227166)
+	-
+
+	- # Hardware
+	- [10G ethernet testing of Jetson AGX Orin Developer Kit
+		- Jetson & Embedded Systems / Jetson AGX Orin
+		- NVIDIA Developer Forums](https://forums.developer.nvidia.com/t/10g-ethernet-testing-of-jetson-agx-orin-developer-kit/227166)
+	-
+
+	 - ### Test of time:
+				- Some newer proposals like Taproot have undergone less time testing but build on proven constructions.
+
+	 - ### Test of time:
+				- Some newer proposals like Taproot have undergone less time testing but build on proven constructions.
+
+	- ## AI in [[Education and AI]]
+		- I think the Rabbit is something I would buy for kids?! (lol, that didn't work out)
+				- Multimodal interfaces, incorporating voice, text, and possibly visual or gestural inputs, would make the process more accessible and intuitive.
+				- These interfaces would cater to a diverse range of users and preferences, allowing instructions to be given in various formats.
+			- **3. Enhanced Collaboration and Iteration:**
+				- By enabling product owners to directly communicate their requirements to the software, the gap between idea conception and implementation narrows significantly.
+				- This direct communication loop would facilitate rapid iterations, as changes can be implemented and reviewed in real-time or near-real-time.
+			- **4. Automated Testing and Validation:**
+				- The system would incorporate sophisticated automated testing mechanisms.
+				- As soon as the bytecode is generated or modified, a series of automated tests could run to validate the functionality, ensuring that the changes meet the specified requirements and do not introduce bugs or vulnerabilities.
+				- Product owners could also perform their own tests on the resultant functionality, using user-friendly testing tools integrated into this system.
+
+	- ## AI in [[Education and AI]]
+		- I think the Rabbit is something I would buy for kids?! (lol, that didn't work out)
+				- Multimodal interfaces, incorporating voice, text, and possibly visual or gestural inputs, would make the process more accessible and intuitive.
+				- These interfaces would cater to a diverse range of users and preferences, allowing instructions to be given in various formats.
+			- **3. Enhanced Collaboration and Iteration:**
+				- By enabling product owners to directly communicate their requirements to the software, the gap between idea conception and implementation narrows significantly.
+				- This direct communication loop would facilitate rapid iterations, as changes can be implemented and reviewed in real-time or near-real-time.
+			- **4. Automated Testing and Validation:**
+				- The system would incorporate sophisticated automated testing mechanisms.
+				- As soon as the bytecode is generated or modified, a series of automated tests could run to validate the functionality, ensuring that the changes meet the specified requirements and do not introduce bugs or vulnerabilities.
+				- Product owners could also perform their own tests on the resultant functionality, using user-friendly testing tools integrated into this system.
+
+- ## Key use cases
+
+- ## Key use cases
+
+## Academic Context
+
+Adversarial testing extends beyond traditional software testing to address AI-specific challenges including harmful outputs, bias, and unpredictable behaviour in edge cases.
+
+## Key Characteristics
+
+- Deliberate failure elicitation
+- Tests robustness and safety
+- Identifies edge cases
+- Informs training improvements
+- Pre-deployment validation
+- Continuous monitoring
+
+## Related Concepts
+
+- **Red Teaming**: Specific adversarial approach
+- **Adversarial Examples**: Input perturbations
+- **AI Safety**: Broader objective
+- **Robustness**: Property tested
+
+## UK English Notes
+
+- "Behaviour" (not "behavior")
+
+## OWL Functional Syntax
+
+```clojure
+(Declaration (Class :AdversarialTesting))
+(AnnotationAssertion rdfs:label :AdversarialTesting "Adversarial Testing"@en)
+(AnnotationAssertion rdfs:comment :AdversarialTesting
+  "Testing methodology that deliberately attempts to cause AI system failures through adversarial inputs and challenging scenarios."@en)
+
+;; Taxonomic relationships
+(SubClassOf :AdversarialTesting :TestingMethodology)
+(SubClassOf :AdversarialTesting :SafetyEvaluation)
+
+;; Related techniques
+(SubClassOf :AdversarialTesting
+  (ObjectSomeValuesFrom :includes :RedTeaming))
+(SubClassOf :AdversarialTesting
+  (ObjectSomeValuesFrom :uses :AdversarialExamples))
+(SubClassOf :AdversarialTesting
+  (ObjectSomeValuesFrom :uses :EdgeCaseTesting))
+
+;; Objectives
+(SubClassOf :AdversarialTesting
+  (ObjectSomeValuesFrom :identifies :RobustnessIssues))
+(SubClassOf :AdversarialTesting
+  (ObjectSomeValuesFrom :identifies :SafetyVulnerabilities))
+(SubClassOf :AdversarialTesting
+  (ObjectSomeValuesFrom :identifies :AlignmentFailures))
+
+;; Properties
+(DataPropertyAssertion :isPreDeployment :AdversarialTesting "true"^^xsd:boolean)
+(DataPropertyAssertion :isContinuous :AdversarialTesting "true"^^xsd:boolean)
+(DataPropertyAssertion :informsTraining :AdversarialTesting "true"^^xsd:boolean)
+(DataPropertyAssertion :testingType :AdversarialTesting "adversarial"^^xsd:string)
+```
+
+**Last Updated**: 2025-10-27
+**Verification Status**: Verified against AI safety literature
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# Adversarial Testing
+		  
+		  **Term ID**: AI-0271
+		  **Category**: Training Technique / Evaluation
+		  **Ontology Layer**: AI/ML Methodology
+		  
+		  ## Definition
+		  
+		  Testing methodology that deliberately attempts to cause AI system failures through adversarial inputs, edge cases, and challenging scenarios. Adversarial testing helps identify robustness issues, safety vulnerabilities, and alignment failures before deployment.
+		  
+		  ## Academic Context
+		  
+		  Adversarial testing extends beyond traditional software testing to address AI-specific challenges including harmful outputs, bias, and unpredictable behaviour in edge cases.
+		  
+		  ## Key Characteristics
+		  
+		  - Deliberate failure elicitation
+		  - Tests robustness and safety
+		  - Identifies edge cases
+		  - Informs training improvements
+		  - Pre-deployment validation
+		  - Continuous monitoring
+		  
+		  ## Related Concepts
+		  
+		  - **Red Teaming**: Specific adversarial approach
+		  - **Adversarial Examples**: Input perturbations
+		  - **AI Safety**: Broader objective
+		  - **Robustness**: Property tested
+		  
+		  ## UK English Notes
+		  
+		  - "Behaviour" (not "behavior")
+		  
+		  ## OWL Functional Syntax
+		  
+		  ```clojure
+		  (Declaration (Class :AdversarialTesting))
+		  (AnnotationAssertion rdfs:label :AdversarialTesting "Adversarial Testing"@en)
+		  (AnnotationAssertion rdfs:comment :AdversarialTesting
+		    "Testing methodology that deliberately attempts to cause AI system failures through adversarial inputs and challenging scenarios."@en)
+		  
+		  ;; Taxonomic relationships
+		  (SubClassOf :AdversarialTesting :TestingMethodology)
+		  (SubClassOf :AdversarialTesting :SafetyEvaluation)
+		  
+		  ;; Related techniques
+		  (SubClassOf :AdversarialTesting
+		    (ObjectSomeValuesFrom :includes :RedTeaming))
+		  (SubClassOf :AdversarialTesting
+		    (ObjectSomeValuesFrom :uses :AdversarialExamples))
+		  (SubClassOf :AdversarialTesting
+		    (ObjectSomeValuesFrom :uses :EdgeCaseTesting))
+		  
+		  ;; Objectives
+		  (SubClassOf :AdversarialTesting
+		    (ObjectSomeValuesFrom :identifies :RobustnessIssues))
+		  (SubClassOf :AdversarialTesting
+		    (ObjectSomeValuesFrom :identifies :SafetyVulnerabilities))
+		  (SubClassOf :AdversarialTesting
+		    (ObjectSomeValuesFrom :identifies :AlignmentFailures))
+		  
+		  ;; Properties
+		  (DataPropertyAssertion :isPreDeployment :AdversarialTesting "true"^^xsd:boolean)
+		  (DataPropertyAssertion :isContinuous :AdversarialTesting "true"^^xsd:boolean)
+		  (DataPropertyAssertion :informsTraining :AdversarialTesting "true"^^xsd:boolean)
+		  (DataPropertyAssertion :testingType :AdversarialTesting "adversarial"^^xsd:string)
+		  ```
+		  
+		  **Last Updated**: 2025-10-27
+		  **Verification Status**: Verified against AI safety literature
+		  
+		  ```
+
+- public-access:: true
 	- definition:: Testing methodology that deliberately attempts to cause AI system failures through adversarial inputs, edge cases, and challenging scenarios. Adversarial testing helps identify robustness issues, safety vulnerabilities, and alignment failures before deployment.
+
 
 ## Academic Context
 
@@ -90,10 +341,10 @@
   - Development of domain-specific adversarial testing frameworks (healthcare, autonomous vehicles, financial systems)
   - Investigation of adversarial training and other defensive mechanisms' effectiveness and computational costs
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-

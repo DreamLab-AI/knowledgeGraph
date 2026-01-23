@@ -1,59 +1,117 @@
 - ### OntologyBlock
   id:: blockchain-network-ontology
   collapsed:: true
-	- ontology:: true
-	- term-id:: DT-0071
-	- preferred-term:: Blockchain Network
-	- source-domain:: bc
-	- status:: complete
-	- public-access:: true
 
+  - **Identification**
+    - public-access:: true
+    - ontology:: true
+    - term-id:: BC-0071
+    - preferred-term:: Blockchain Network
+    - source-domain:: bc
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-10-28
 
+  - **Definition**
+    - definition:: Distributed node infrastructure within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+    - maturity:: mature
+    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]
+    - authority-score:: 0.95
 
-
-### OWL Classification
-	- owl:class:: bc:BlockchainNetwork
-	- owl:physicality:: VirtualEntity
-	- owl:role:: Object
-	- owl:inferred-class:: bc:VirtualObject
-
-### Domain & Architecture
-	- belongsToDomain:: [[CryptographicDomain]], [[DisruptiveTechDomain]]
-	- maturity:: mature
-
-### Relationships
-- depends-on:: [[TokenCustodyService]]
-- is-part-of:: [[CryptoToken]]
-- requires:: [[NftSwapping]]
-- depends-on:: [[SmartRoyaltyContract]]
-- depends-on:: [[DigitalTaxComplianceNode]]
-- requires:: [[Tokenization]]
-- depends-on:: [[VirtualSecuritiesOfferingVso]]
-- depends-on:: [[DigitalRightsManagementExtended]]
-- depends-on:: [[NftRenting]]
-- depends-on:: [[SmartRoyaltiesLedger]]
-
-id:: relationships
-    - is-subclass-of:: [[Distributed Ledger]]
-
-  - 
-  - #### OWL Restrictions
-    
-    
+  - **Semantic Classification**
+    - owl:class:: bc:BlockchainNetwork
+    - owl:physicality:: VirtualEntity
+    - owl:role:: Object
+    - owl:inferred-class:: bc:VirtualObject
+    - belongsToDomain:: [[CryptographicDomain]]
+    - implementedInLayer:: [[SecurityLayer]]
 
   - #### Relationships
-    - is-subclass-of:: [[Networkcomponent]]
-    - is-subclass-of:: [[BlockchainEntity]]
-    - is-subclass-of:: [[Distributed Ledger]]
-      collapsed:: true
-      - #### Inverse Relationships (Inferred by Reasoner)
-        - TokenCustodyService depends-on Blockchain Network
-        - CryptoToken has-part Blockchain Network
-        - SmartRoyaltyContract depends-on Blockchain Network
-        - DigitalTaxComplianceNode depends-on Blockchain Network
-        - VirtualSecuritiesOfferingVso depends-on Blockchain Network
-        - DigitalRightsManagementExtended depends-on Blockchain Network
-        - NftRenting depends-on Blockchain Network
-        - SmartRoyaltiesLedger depends-on Blockchain Network
-        - NftSwapping requires Blockchain Network
-        - Tokenization requires Blockchain Network
+    id:: blockchain-network-relationships
+    - is-subclass-of:: [[Blockchain Entity]], [[NetworkComponent]]
+
+  - #### OWL Axioms
+    id:: blockchain-network-owl-axioms
+    collapsed:: true
+    - ```clojure
+      Prefix(:=<http://metaverse-ontology.org/blockchain#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(dct:=<http://purl.org/dc/terms/>)
+
+Ontology(<http://metaverse-ontology.org/blockchain/BC-0071>
+  Import(<http://metaverse-ontology.org/blockchain/core>)
+
+  ## Class Declaration
+  Declaration(Class(:BlockchainNetwork))
+
+  ## Subclass Relationships
+  SubClassOf(:BlockchainNetwork :NetworkComponent)
+  SubClassOf(:BlockchainNetwork :BlockchainEntity)
+
+  ## Essential Properties
+  SubClassOf(:BlockchainNetwork
+    (ObjectSomeValuesFrom :partOf :Blockchain))
+
+  SubClassOf(:BlockchainNetwork
+    (ObjectSomeValuesFrom :hasProperty :Property))
+
+  ## Data Properties
+  DataPropertyAssertion(:hasIdentifier :BlockchainNetwork "BC-0071"^^xsd:string)
+  DataPropertyAssertion(:hasAuthorityScore :BlockchainNetwork "1.0"^^xsd:decimal)
+  DataPropertyAssertion(:isFoundational :BlockchainNetwork "true"^^xsd:boolean)
+
+  ## Object Properties
+  ObjectPropertyAssertion(:enablesFeature :BlockchainNetwork :BlockchainFeature)
+  ObjectPropertyAssertion(:relatesTo :BlockchainNetwork :RelatedConcept)
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label :BlockchainNetwork "Blockchain Network"@en)
+  AnnotationAssertion(rdfs:comment :BlockchainNetwork
+    "Distributed node infrastructure"@en)
+  AnnotationAssertion(dct:description :BlockchainNetwork
+    "Foundational blockchain concept with formal ontological definition"@en)
+  AnnotationAssertion(:termID :BlockchainNetwork "BC-0071")
+  AnnotationAssertion(:priority :BlockchainNetwork "1"^^xsd:integer)
+  AnnotationAssertion(:category :BlockchainNetwork "network-security"@en)
+)
+      ```
+
+- ## About Blockchain Network
+  id:: blockchain-network-about
+
+  - Distributed node infrastructure within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+  -
+  - ### Key Characteristics
+    id:: blockchain-network-characteristics
+    - 1. **Definitional Property**: Core defining characteristic
+    - 2. **Functional Property**: Operational behavior
+    - 3. **Structural Property**: Compositional elements
+    - 4. **Security Property**: Security guarantees provided
+    - 5. **Performance Property**: Efficiency considerations
+  -
+  - ### Technical Components
+    id:: blockchain-network-components
+    - **Implementation**: How concept is realized technically
+    - **Verification**: Methods for validating correctness
+    - **Interaction**: Relationships with other components
+    - **Constraints**: Technical limitations and requirements
+  -
+  - ### Use Cases
+    id:: blockchain-network-use-cases
+    - **1. Core Blockchain Operation**
+    - **Application**: Fundamental blockchain functionality
+    - **Example**: Practical implementation in major blockchains
+    - **Requirements**: Technical prerequisites
+    - **Benefits**: Value provided to blockchain systems
+  -
+  - ### Standards & References
+    id:: blockchain-network-standards
+    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
+    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
+    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
+  -
+

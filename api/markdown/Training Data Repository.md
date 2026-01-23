@@ -4,11 +4,11 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-10083
-	- source-domain:: mv
+	- source-domain:: artificial-intelligence
 	- preferred-term:: Training Data Repository
 	- status:: active
 	- definition:: A centralized or distributed storage system for collecting, organizing, versioning, and managing datasets used to train AI and machine learning models, including data provenance tracking, quality assurance, and access control.
-	- owl:class:: mv:TrainingDataRepository
+	- owl:class:: ai:TrainingDataRepository
 	- belongsToDomain:: [[metaverse]]
 	- #### Relationships
 		- is-subclass-of:: [[Data Management]]

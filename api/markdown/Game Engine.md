@@ -2,32 +2,23 @@
   id:: gameengine-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: DT-0129
-	- preferred-term:: Game Engine
+	- term-id:: 20129
 	- source-domain:: mv
-	- public-access:: true
-
-
-
-
-### OWL Classification
+	- preferred-term:: Game Engine
+	- definition:: Software framework providing core functionality for rendering, physics, and interaction in real-time 3D environments.
+	- maturity:: mature
+	- source:: [[Metaverse 101]], [[SIGGRAPH Pipeline WG]], [[OMA3 Media WG]]
 	- owl:class:: mv:GameEngine
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
-
-### Domain & Architecture
-	- belongsToDomain:: [[CreativeMediaDomain]], [[DisruptiveTechDomain]], [[InfrastructureDomain]]
+	- owl:functional-syntax:: true
+	- belongsToDomain:: [[InfrastructureDomain]], [[CreativeMediaDomain]]
 	- implementedInLayer:: [[PlatformLayer]]
-	- maturity:: mature
-
-### Relationships
-id:: gameengine-relationships
-		- is-subclass-of:: [[Metaverse]]
+	- #### Relationships
+	  id:: gameengine-relationships
 		- is-dependency-of:: [[Metaverse]]
-	  collapsed:: true
-	  - #### Inverse Relationships (Inferred by Reasoner)
-	    - Play-to-Earn (P2E), Virtual Production (VP), Open World, AI Game Agent require Game Engine
+		- is-required-by:: [[Play-to-Earn (P2E)]], [[Virtual Production (VP)]], [[Open World]], [[AI Game Agent]]
 		- has-part:: [[Rendering Pipeline]], [[Physics Engine]], [[Scene Graph]], [[Audio Engine]], [[Scripting Runtime]], [[Asset Management System]], [[Real-Time Rendering Pipeline]]
 		- is-part-of:: [[Software Platform]], [[Development Infrastructure]]
 		- requires:: [[Graphics API]], [[Compute Infrastructure]], [[Operating System]]
@@ -91,22 +82,22 @@ id:: gameengine-relationships
 		  SubClassOf(mv:RealTimeRendering mv:VirtualProcess)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:isdependencyof)
+  AsymmetricObjectProperty(dt:isdependencyof)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:isrequiredby)
+  AsymmetricObjectProperty(dt:isrequiredby)
 
   # Property characteristics
-  TransitiveObjectProperty(mv:ispartof)
+  TransitiveObjectProperty(dt:ispartof)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:requires)
+  AsymmetricObjectProperty(dt:requires)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:dependson)
+  AsymmetricObjectProperty(dt:dependson)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:enables)
+  AsymmetricObjectProperty(dt:enables)
 ```
 - ## About Game Engines
   id:: gameengine-about
@@ -116,13 +107,13 @@ id:: gameengine-relationships
 	- ### Key Characteristics
 	  id:: gameengine-characteristics
 		- Real-time 3D rendering at interactive frame rates (30-144+ FPS)
-		- Physics simulation for realistic object behaviour and collision detection
+		- Physics simulation for realistic object behavior and collision detection
 		- Scene management using spatial data structures for efficient rendering
 		- Cross-platform deployment to PC, console, mobile, VR, and web
 		- Integrated toolchain for content creation, debugging, and optimization
 		- Component-based architecture enabling modular game logic
 		- Hot-reloading and iterative development workflows
-		- Asset pipeline for importing, processing, and optimising content
+		- Asset pipeline for importing, processing, and optimizing content
 		- Networking infrastructure for multiplayer and shared experiences
 		- Extensibility through scripting languages and plugin systems
 		- Visual scripting options for non-programmers
@@ -131,7 +122,7 @@ id:: gameengine-relationships
 	  id:: gameengine-components
 		- [[Rendering Pipeline]] - Visual output and graphics processing using modern APIs
 		- [[Physics Engine]] - Physical simulation, collision detection, and rigid body dynamics
-		- [[Scene Graph]] - Hierarchical spatial data structure organising virtual world entities
+		- [[Scene Graph]] - Hierarchical spatial data structure organizing virtual world entities
 		- [[Audio Engine]] - 3D spatial audio, sound effects, and music management
 		- [[Graphics API]] - Low-level graphics abstraction (Vulkan, DirectX 12, Metal, OpenGL)
 		- [[Scripting Runtime]] - Game logic execution environment (C#, C++, Lua, GDScript, JavaScript)
@@ -142,14 +133,14 @@ id:: gameengine-relationships
 		- [[UI Framework]] - User interface rendering and interaction
 		- [[Particle System]] - Visual effects for fire, smoke, explosions, magic
 		- [[Terrain System]] - Landscape rendering with LOD and streaming
-		- [[AI Framework]] - Pathfinding, behaviour trees, decision-making
+		- [[AI Framework]] - Pathfinding, behavior trees, decision-making
 		- [[VR/AR Support]] - Head-mounted display integration and spatial tracking
 	- ### Functional Capabilities
 	  id:: gameengine-capabilities
 		- **Real-Time Rendering**: Generate interactive 3D graphics at 30-120+ FPS with modern physically-based rendering (PBR), global illumination, and ray tracing
 		- **Physics Simulation**: Accurate collision detection and dynamics for rigid bodies, soft bodies, cloth, fluids, and destruction
 		- **Asset Management**: Load, stream, and manage 3D models, textures, animations, audio, and video efficiently
-		- **Scripting**: Enable gameplay logic, AI behaviours, and system integration without engine recompilation
+		- **Scripting**: Enable gameplay logic, AI behaviors, and system integration without engine recompilation
 		- **Networking**: Support multiplayer gameplay, persistent worlds, and real-time synchronization across clients
 		- **Platform Abstraction**: Deploy to multiple devices from single codebase including PC, console, mobile, VR headsets, and web browsers
 		- **Content Authoring**: Integrated editors for level design, material creation, animation, and visual scripting
@@ -170,11 +161,11 @@ id:: gameengine-relationships
 		- **Babylon.js** - Powerful web rendering engine with strong metaverse focus
 		- **PlayCanvas** - Cloud-hosted WebGL game engine for browser-based games
 		- **GameMaker Studio** - 2D-focused engine with drag-and-drop and GML scripting
-		- **Defold** - Lightweight 2D/3D engine optimised for mobile and web
+		- **Defold** - Lightweight 2D/3D engine optimized for mobile and web
 		- **Construct** - No-code game creation platform with event-based logic
 	- ### Architecture Patterns
 	  id:: gameengine-architecture
-		- **Entity-Component-System (ECS)**: Modern data-oriented architecture separating data from behaviour for performance and modularity (Unity DOTS, Bevy, Unreal Mass)
+		- **Entity-Component-System (ECS)**: Modern data-oriented architecture separating data from behavior for performance and modularity (Unity DOTS, Bevy, Unreal Mass)
 		- **Object-Oriented Hierarchy**: Traditional inheritance-based scene graph with GameObject/Actor base classes (classic Unity, Unreal, Godot)
 		- **Event-Driven**: Message passing and event systems for decoupled communication between systems
 		- **Plugin Architecture**: Extensible core with optional modules for rendering, physics, networking
@@ -198,12 +189,12 @@ id:: gameengine-relationships
 		- **Live Events**: Virtual concerts, conferences, and hybrid physical-digital experiences
 	- ### Development Workflow
 	  id:: gameengine-workflow
-		- **Project Setup**: Initialise project, configure platform targets, import core assets
+		- **Project Setup**: Initialize project, configure platform targets, import core assets
 		- **Asset Creation**: Model in DCC tools (Blender, Maya), texture in Substance, animate, export to engine formats
 		- **Scene Building**: Compose levels using engine editor, place objects, configure lighting
 		- **Scripting**: Implement game logic, AI, UI interactions using engine APIs
 		- **Iteration**: Hot-reload code changes, playtest in editor, debug with integrated tools
-		- **Optimization**: Profile performance, reduce draw calls, optimise shaders, tune physics
+		- **Optimization**: Profile performance, reduce draw calls, optimize shaders, tune physics
 		- **Build**: Compile and package for target platforms with platform-specific settings
 		- **Distribution**: Deploy to app stores, Steam, Epic Games Store, web hosting, or enterprise
 	- ### Performance Optimization Techniques
@@ -277,8 +268,11 @@ id:: gameengine-relationships
 	- imported-from:: [[Metaverse Glossary Excel]]
 	- import-date:: [[2025-01-15]]
 	- ontology-status:: migrated
-	- public-access:: true
+- public-access:: true
+	- migration-date:: [[2025-10-14]]
+	- classification-rationale:: Virtual (software platform) + Object (passive tool) → VirtualObject
 
+    - uses-technique:: [[3D Model]]
 ## Academic Context
 
 - Game engines are software frameworks that provide essential tools and systems for creating interactive real-time 3D environments, including rendering, physics simulation, input handling, and audio management.
@@ -291,10 +285,10 @@ id:: gameengine-relationships
 - The game engine market is dominated by a few major players, notably Unity and Unreal Engine, which together underpin the majority of game development across platforms.
   - Unity remains the preferred engine for mobile and indie games due to its ease of use and multi-platform support.
   - Unreal Engine 5 leads in AAA console and PC titles, prized for its high-fidelity graphics and scalability.
-  - Open-source engines like Godot have gained traction among indie developers, partly as a reaction to licencing controversies around Unity.
+  - Open-source engines like Godot have gained traction among indie developers, partly as a reaction to licensing controversies around Unity.
 - Large studios increasingly favour public engines over custom in-house solutions, with Unreal Engine rapidly gaining market share among AAA developers.
 - Technical capabilities now routinely include real-time ray tracing, AI-assisted content generation, cloud integration, and cross-platform portability, facilitating simultaneous deployment on consoles, PCs, and mobile devices.
-- Limitations persist in balancing graphical fidelity with performance on lower-end hardware and managing complex licencing models.
+- Limitations persist in balancing graphical fidelity with performance on lower-end hardware and managing complex licensing models.
 - Industry standards and frameworks continue evolving to support interoperability, modularity, and cloud-based workflows, with strategic partnerships among engine developers, hardware vendors, and cloud providers accelerating innovation.
 
 ## Research & Literature
@@ -321,19 +315,20 @@ id:: gameengine-relationships
 - Emerging trends include deeper AI integration for automating coding, level design, and narrative generation, accelerating development cycles.
 - Cloud gaming and streaming services will further decouple game execution from local hardware, demanding engines optimise for latency and bandwidth constraints.
 - Expansion into non-gaming sectors such as simulation, architecture, and interactive media will broaden engine applications.
-- Anticipated challenges involve managing increasingly complex licencing landscapes, ensuring accessibility and inclusivity, and balancing innovation with sustainability.
+- Anticipated challenges involve managing increasingly complex licensing landscapes, ensuring accessibility and inclusivity, and balancing innovation with sustainability.
 - Research priorities focus on scalable AI tools, real-time photorealistic rendering, and seamless cross-device interoperability.
 
 ## References
 
-1. Smith, J., & Lee, A. (2024). Real-time Rendering Techniques in Modern Game Engines. *Journal of Computer Graphics*, 38(2), 112-130. DOI:10.1234/jcg.2024.03802
-2. Patel, R., & Nguyen, T. (2025). AI Integration in Game Development Pipelines. *International Journal of Interactive Media*, 12(1), 45-62. DOI:10.5678/ijim.2025.1201
-3. O’Connor, M., et al. (2023). Cross-Platform Game Engine Architectures: A Survey. *Software Engineering Review*, 29(4), 210-235. DOI:10.4321/ser.2023.294
-4. Udonis Blog. (2025). Gaming Industry Report 2025: Market Size & Trends.
-5. VGinsights.com. (2025). The Big Game Engine Report of 2025.
-6. The Business Research Company. (2025). Game Engine Global Market Report 2025.
-7. Lorgar. (2025). The Future of Game Engines: Trends, Predictions and History.
+1. Smith, J., & Lee, A. (2024). Real-time Rendering Techniques in Modern Game Engines. *Journal of Computer Graphics*, 38(2), 112-130. DOI:10.1234/jcg.2024.03802  
+2. Patel, R., & Nguyen, T. (2025). AI Integration in Game Development Pipelines. *International Journal of Interactive Media*, 12(1), 45-62. DOI:10.5678/ijim.2025.1201  
+3. O’Connor, M., et al. (2023). Cross-Platform Game Engine Architectures: A Survey. *Software Engineering Review*, 29(4), 210-235. DOI:10.4321/ser.2023.294  
+4. Udonis Blog. (2025). Gaming Industry Report 2025: Market Size & Trends.  
+5. VGinsights.com. (2025). The Big Game Engine Report of 2025.  
+6. The Business Research Company. (2025). Game Engine Global Market Report 2025.  
+7. Lorgar. (2025). The Future of Game Engines: Trends, Predictions and History.  
 8. Unity Technologies. (2025). 2025 Unity Gaming Report: Gaming Industry Trends.
+
 
 ## Metadata
 
@@ -341,4 +336,3 @@ id:: gameengine-relationships
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-

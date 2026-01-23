@@ -1,21 +1,49 @@
-id:: bc-0116-total-supply-ontology
-
 - ### OntologyBlock
-  id:: BC 0116 total supply
-  - ontology:: true
-  - public-access:: true
-  - term-id:: MV-0945
-  - preferred-term:: BC 0116 total supply
-  - source-domain:: bc
-  - owl:class:: bc:Bc0116TotalSupply
-  - status:: draft
-  - definition:: 
-### Relationships
-- is-subclass-of:: [[Token Economics]]
+  id:: bc-0116-total-supply-ontology
+  collapsed:: true
+	- ontology:: true
+	- term-id:: BC-0116
+	- preferred-term:: BC 0116 total supply
+	- source-domain:: mv
+	- status:: reviewed
+	- public-access:: true
+	- definition:: ### Primary Definition
+		- All existing tokens within [[blockchain]] systems, representing the [[maximum supply]] that has been minted or created, excluding any tokens that have been permanently [[burned]] or destroyed. This metric is essential for understanding [[token economics]] and [[supply cap]] mechanisms in [[distributed ledger]] technology operations.
+	- maturity:: production
+	- owl:class:: mv:BC0116totalsupply
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+
+- ## About BC 0116 total supply
+	- ### Primary Definition [Updated 2025]
+		- All existing tokens within [[blockchain]] systems, representing the complete [[token issuance]] that has occurred, providing essential functionality for [[distributed ledger technology]] operations and properties. Total supply is distinct from [[circulating supply]] (tokens available for trading) and [[max supply]] (theoretical maximum tokens that can ever exist).
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# BC-0116: Total Supply
+
+## Metadata [Updated 2025-11-13]
+
+- **Migration Status**: Ontology block enriched and expanded with current data on 2025-11-13
+- **Term ID**: BC-0116
+- **Term Name**: Total Supply
+- **Category**: [[Economic Incentive]]
+- **Priority**: 1 (Foundational)
+- **Classification**: Core Concept
+- **Authority Score**: 1.0
+- **Version**: 2.0.0
+- **Last Updated**: 2025-11-13
+- **Status**: Reviewed and Approved
+
+## Definition [Updated 2025]
+
+### Primary Definition
 All existing tokens within [[blockchain]] systems, providing essential functionality for [[distributed ledger technology]] operations and properties. Total supply represents the sum of all tokens that have been created ([[token issuance]]) minus any tokens that have been permanently removed from circulation through [[burning]] mechanisms.
 
 ### Technical Definition
-A formally-defined component of [[blockchain architecture]] that exhibits specific properties and behaviours according to established protocols and mathematical foundations, enabling secure and decentralized operations. Total supply is calculated as: **Total Supply = Tokens Minted - Tokens Burned**.
+A formally-defined component of [[blockchain architecture]] that exhibits specific properties and behaviors according to established protocols and mathematical foundations, enabling secure and decentralized operations. Total supply is calculated as: **Total Supply = Tokens Minted - Tokens Burned**.
 
 ### Standards-Based Definition
 According to [[ISO/IEC 23257:2021]], this concept represents a fundamental element of blockchain and distributed ledger technologies with specific technical and operational characteristics. Total supply is a key [[tokenomics]] metric used for valuation and investment analysis.
@@ -23,35 +51,44 @@ According to [[ISO/IEC 23257:2021]], this concept represents a fundamental eleme
 ## Formal Ontology
 
 ### OWL Functional Syntax
+
 ```clojure
-Prefix(:=<http://narrativegoldmine.com/blockchain#>)
+Prefix(:=<http://metaverse-ontology.org/blockchain#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(dct:=<http://purl.org/dc/terms/>)
-Ontology(<http://narrativegoldmine.com/blockchain/BC-0116>
-  Import(<http://narrativegoldmine.com/blockchain/core>)
+
+Ontology(<http://metaverse-ontology.org/blockchain/BC-0116>
+  Import(<http://metaverse-ontology.org/blockchain/core>)
+
   ## Class Declaration
   Declaration(Class(:TotalSupply))
+
   ## Subclass Relationships
   SubClassOf(:TotalSupply :EconomicMechanism)
   SubClassOf(:TotalSupply :BlockchainEntity)
   SubClassOf(:TotalSupply :TokenomicsMetric)
+
   ## Essential Properties
   SubClassOf(:TotalSupply
     (ObjectSomeValuesFrom :partOf :Blockchain))
+
   SubClassOf(:TotalSupply
     (ObjectSomeValuesFrom :hasProperty :Property))
+
   ## Data Properties
   DataPropertyAssertion(:hasIdentifier :TotalSupply "BC-0116"^^xsd:string)
   DataPropertyAssertion(:hasAuthorityScore :TotalSupply "1.0"^^xsd:decimal)
   DataPropertyAssertion(:isFoundational :TotalSupply "true"^^xsd:boolean)
+
   ## Object Properties
   ObjectPropertyAssertion(:enablesFeature :TotalSupply :BlockchainFeature)
   ObjectPropertyAssertion(:relatesTo :TotalSupply :RelatedConcept)
   ObjectPropertyAssertion(:measuresProperty :TotalSupply :TokenSupply)
+
   ## Annotations
   AnnotationAssertion(rdfs:label :TotalSupply "Total Supply"@en)
   AnnotationAssertion(rdfs:comment :TotalSupply
@@ -113,22 +150,20 @@ Ontology(<http://narrativegoldmine.com/blockchain/BC-0116>
 ## Use Cases [Updated 2025]
 
 ### Primary Use Cases
-#### 1. Investment Valuation and Analysis
 
+#### 1. Investment Valuation and Analysis
 - **Application**: Calculating [[fully diluted market cap]] for investment decisions
 - **Example**: [[Bitcoin]] has a total supply approaching 19.88 million BTC (as of November 2025) with a max supply of 21 million
 - **Requirements**: Access to blockchain data, accurate burn tracking
 - **Benefits**: Enables informed investment decisions and [[dilution risk]] assessment
 
 #### 2. Tokenomics Design and Implementation
-
 - **Application**: Designing sustainable [[token distribution]] models
 - **Example**: [[Ethereum]] transitioned to deflationary supply post-EIP-1559, where transaction fees are burned
 - **Requirements**: [[Smart contract]] capabilities, [[governance]] mechanisms
 - **Benefits**: Controls inflation, manages scarcity, incentivizes holding
 
 #### 3. Market Analytics and Trading
-
 - **Application**: [[Automated trading bots]] use supply metrics for strategy optimization
 - **Example**: [[3Commas]] and similar platforms integrate circulating supply data for [[DCA bots]] and [[grid trading]]
 - **Requirements**: Real-time API access, reliable data sources
@@ -171,7 +206,7 @@ Ontology(<http://narrativegoldmine.com/blockchain/BC-0116>
 
 ### Performance Characteristics
 - **Throughput**: Real-time updates with each new block (10 minutes for Bitcoin, 12 seconds for Ethereum)
-- **Latency**: Sub-second query response from optimised [[RPC nodes]]
+- **Latency**: Sub-second query response from optimized [[RPC nodes]]
 - **Scalability**: Handles billions of tokens across multiple chains
 - **Resource Utilization**: Minimal computational overhead for supply queries
 
@@ -213,7 +248,7 @@ Ontology(<http://narrativegoldmine.com/blockchain/BC-0116>
 - **Non-repudiation**: Immutable [[blockchain ledger]] provides audit trail
 
 ### Performance
-- **Response Time**: <100ms for supply queries on optimised nodes
+- **Response Time**: <100ms for supply queries on optimized nodes
 - **Throughput**: Handles millions of concurrent supply lookups
 - **Resource Efficiency**: Minimal CPU/memory for supply calculations
 - **Scalability**: Scales with blockchain network growth
@@ -221,8 +256,8 @@ Ontology(<http://narrativegoldmine.com/blockchain/BC-0116>
 ## Examples [Updated 2025]
 
 ### Real-World Implementations
-#### Example 1: Bitcoin (BTC)
 
+#### Example 1: Bitcoin (BTC)
 ```
 Implementation: Fixed supply cap with halving mechanism
 Total Supply: ~19.88 million BTC (November 2025)
@@ -234,7 +269,6 @@ URL: https://bitcoin.org
 ```
 
 #### Example 2: Ethereum (ETH)
-
 ```
 Implementation: No fixed max supply, EIP-1559 burn mechanism
 Total Supply: ~120 million ETH (November 2025)
@@ -246,7 +280,6 @@ URL: https://ethereum.org
 ```
 
 #### Example 3: Binance Coin (BNB)
-
 ```
 Implementation: Quarterly burn targeting 100M total supply
 Total Supply: ~147 million BNB (November 2025)
@@ -288,7 +321,7 @@ URL: https://www.binance.com
 	- [[Privacy-preserving supply proofs]] using [[zero-knowledge proofs]]
 - **Industry Adoption**:
 	- [[DeFi protocols]] integrate live supply feeds
-	- [[Trading bots]] optimise strategies using supply dynamics
+	- [[Trading bots]] optimize strategies using supply dynamics
 	- [[Regulatory compliance]] tools for supply auditing
 - **Technology Evolution**:
 	- [[On-chain analytics platforms]] provide granular supply breakdowns
@@ -309,7 +342,6 @@ URL: https://www.binance.com
 	- [[Supply-aware]] automated market makers (AMMs)
 
 ## See Also
-
 - **[[BC-0001]]**: Blockchain
 - **[[BC-0002]]**: Distributed Ledger
 - **[[Circulating Supply]]**: Tokens available for trading
@@ -319,19 +351,22 @@ URL: https://www.binance.com
 - **[[Dilution Risk]]**: Impact of supply increases on token value
 
 ## Notes
-
 - Total supply excludes burned tokens but includes locked/vested tokens
 - Different platforms may use different calculation methodologies
 - Always verify supply data from multiple sources
 - Consider both total and circulating supply for investment analysis
 - Supply transparency is essential for regulatory compliance
+
 ---
+
 **Authority**: ISO/IEC 23257:2021, NIST NISTIR 8202
 **Classification**: Foundational Concept
 **Verification**: Standards-compliant definition with formal ontology
 **Last Reviewed**: 2025-11-13
 **Quality Score**: 0.95 (improved from 0.50)
+
 ```
+
 
 ## Academic Context [Updated 2025]
 
@@ -354,7 +389,7 @@ URL: https://www.binance.com
 	- Platforms such as [[CoinMarketCap]] and [[Phemex]] provide automated calculations and verification processes to ensure accuracy of supply data, reflecting market realities and preventing inflation of figures.
 		- Source: [CoinMarketCap Support](https://support.coinmarketcap.com/hc/en-us/articles/360043396252-Supply-Circulating-Total-Max)
 	- UK-based exchanges and crypto platforms increasingly integrate supply metrics into [[trading algorithms]] and [[risk assessments]], reflecting the growing sophistication of the market.
-	- [[Automated trading bots]] from platforms like [[3Commas]] now use [[circulating supply]] as a live input in [[AI bot strategies]] for optimised execution.
+	- [[Automated trading bots]] from platforms like [[3Commas]] now use [[circulating supply]] as a live input in [[AI bot strategies]] for optimized execution.
 		- Source: [3Commas Blog](https://3commas.io/blog/circulating-supply)
 	- Technical limitations include challenges in verifying locked or reserved tokens and accounting for [[lost coins]], which can affect total supply accuracy.
 	- Standards and frameworks for supply reporting are evolving, with emphasis on transparency and auditability to foster trust among investors and regulators.
@@ -365,7 +400,7 @@ URL: https://www.binance.com
 	- **Gandal, N., Hamrick, J.T., Moore, T., & Oberman, T. (2018)**. "[[Price Manipulation in the Bitcoin Ecosystem]]." *Journal of Monetary Economics*, 95, 86-96.
 		- DOI: 10.1016/j.jmoneco.2018.12.004
 		- PDF: https://tylermoore.utulsa.edu/jme17.pdf
-		- Analyses impact of suspicious trading on Mt. Gox exchange and price manipulation
+		- Analyzes impact of suspicious trading on Mt. Gox exchange and price manipulation
 	- **Cong, L.W., Li, Y., & Wang, N. (2021)**. "[[Tokenomics: Dynamic Adoption and Valuation]]." *The Review of Financial Studies*, 34(3), 1105-1155.
 		- DOI: 10.1093/rfs/hhaa089
 		- Develops dynamic asset-pricing model for tokens considering network effects and adoption
@@ -387,7 +422,7 @@ URL: https://www.binance.com
 	- [[Manchester]] universities conducting empirical studies on crypto market dynamics
 	- [[Newcastle]] blockchain labs researching supply transparency for regulatory compliance
 - UK regulatory bodies (including the [[Financial Conduct Authority]]) emphasise accurate disclosure of total and circulating supply to protect investors and maintain market integrity.
-- The [[UK Cryptoasset Taskforce]] recommends standardised supply reporting across all registered [[crypto exchanges]] operating in the UK.
+- The [[UK Cryptoasset Taskforce]] recommends standardized supply reporting across all registered [[crypto exchanges]] operating in the UK.
 
 ## Future Directions [Updated 2025]
 

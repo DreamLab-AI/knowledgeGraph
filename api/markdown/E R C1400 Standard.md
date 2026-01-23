@@ -1,35 +1,42 @@
 - ### OntologyBlock
-    - term-id:: MV-0541
-    - source-domain:: mv
-    - owl:class:: mv:Erc1400Standard
-    - preferred-term:: ERC-1400 Standard
-    - ontology:: true
+  id:: erc1400standard-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: BC
+    - sequence-number:: 0541
+    - filename-history:: ["BC-0541-erc1400standard.md"]
     - public-access:: true
-    - is-subclass-of:: [[DisruptiveTechnology]]
+    - ontology:: true
+    - term-id:: BC-0541
+    - preferred-term:: ERC-1400 Standard
+    - source-domain:: bc
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## ERC-1400 Standard
+  - **Definition**
+    - definition:: Security token standard with compliance controls and transfer restrictions.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-ERC-1400 Standard refers to security token standard with compliance controls and transfer restrictions.
+  - **Semantic Classification**
+    - owl:class:: bc:ERC1400Standard
+    - belongsToDomain:: [[Blockchain]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :ERC1400Standard))
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :ERC1400Standard "ERC-1400 Standard"@en)
+      (AnnotationAssertion rdfs:comment :ERC1400Standard
+        "Security token standard with compliance controls and transfer restrictions."@en)
+      ```
 
-- **Id**: erc1400standard-ontology
-- **Collapsed**: true
-- **Domain Prefix**: BC
-- **Sequence Number**: 0541
-- **Filename History**: ["BC-0541-erc1400standard.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: bc:ERC1400Standard
-- **Belongstodomain**: [[Blockchain]]
+- ## About ERC-1400 Standard
+  Security token standard with compliance controls and transfer restrictions.

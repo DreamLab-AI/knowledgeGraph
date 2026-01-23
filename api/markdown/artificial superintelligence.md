@@ -1,17 +1,7 @@
-- ### OntologyBlock
-  id:: artificial-superintelligence-ontology
-  collapsed:: true
-	- ontology:: true
-	- source-domain:: ai
-	- term-id:: AI-8060
-	- preferred-term:: artificial superintelligence
-	- definition:: Artificial Superintelligence (ASI) refers to a hypothetical form of artificial intelligence that would surpass human cognitive capabilities across all domains, including scientific reasoning, creativity, social intelligence, and general problem-solving. ASI represents the theoretical endpoint of recursive self-improvement in AI systems, where the intelligence could continuously enhance its own capabilities beyond human comprehension or control.
-	- status:: active
-	- maturity:: reviewed
-	- public-access:: true
-	- belongsToDomain:: [[Artificial Intelligence]]
-	- owl:class:: ai:ArtificialSuperintelligence
+public:: true
 
+- # Artificial Superintelligence
+- Artificial superintelligence (ASI) is a theoretical form of AI that surpasses human intelligence and cognitive abilities in every domain. While currently hypothetical, the concept of ASI is a subject of intense research and debate.
 - ## The Path to Superintelligence
 	- The development of ASI is seen as a progression from the current state of AI:
 		- **Artificial Narrow Intelligence (ANI):** AI that is designed for specific tasks, such as virtual assistants and self-driving cars.
@@ -36,27 +26,3 @@
 	- [[Artificial Intelligence]]
 	- [[AI Risks]]
 	- [[Singularity]]
-
-
-### Relationships
-- is-subclass-of:: [[Artificial Intelligence]]
-- relatedTo:: [[Artificial General Intelligence]]
-- relatedTo:: [[Singularity]]
-- relatedTo:: [[AI Safety]]
-- relatedTo:: [[Existential Risk]]
-- enables:: [[Recursive Self-Improvement]]
-- hasApplication:: [[AI Alignment]]
-
-## 2025 Industry Developments
-	- In February 2025, Safe Superintelligence Inc. (founded by Ilya Sutskever after leaving OpenAI) was valued at $30 billion despite having no product, reflecting the scale of investment in ASI safety research
-	- Meta renamed its LLM division to Meta Superintelligence Labs in 2025, signalling strategic focus on superintelligence development
-	- The Future of Life Institute's AI Safety Index found that no major AI company scored above a D rating for existential safety measures
-	- Leading AI companies now predict achieving AGI/superintelligence within 2-5 years
-	- In October 2025, thousands of public figures called for AI firms to slow their pursuit of superintelligence
-
-## Metadata
-
-- **Last Updated**: 2025-12-29
-- **Review Status**: Enriched with 2025 research
-- **Verification**: Academic and industry sources verified
-- **Regional Context**: UK/North England where applicable

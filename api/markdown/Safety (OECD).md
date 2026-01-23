@@ -1,22 +1,642 @@
 - ### OntologyBlock
-  id:: safety-oecd-ontology
+  id:: safety-(oecd)-ontology
   collapsed:: true
 	- ontology:: true
 	- term-id:: AI-0164
 	- preferred-term:: Safety (OECD)
-	- source-domain:: ai
-	- owl:class:: ai:SafetyOECD
-
-### Relationships
-
-- is-subclass-of:: [[ModelArchitecture]]
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
+- definition:: AI systems should operate safely without causing unacceptable risk of physical or psychological harm to people, property or the environment, with appropriate safeguards to prevent, detect and respond to hazardous failures throughout the AI lifecycle.
+
+
+## OWL Formal Semantics
+
+```clojure
+;; OWL Functional Syntax
+
+(Declaration (Class :SafetyOecd))
+
+;; Annotations
+(AnnotationAssertion rdfs:label :SafetyOecd "Safety (OECD)"@en)
+(AnnotationAssertion rdfs:comment :SafetyOecd "AI systems should operate safely without causing unacceptable risk of physical or psychological harm to people, property or the environment, with appropriate safeguards to prevent, detect and respond to hazardous failures throughout the AI lifecycle."@en)
+
+;; Data Properties
+(AnnotationAssertion dcterms:identifier :SafetyOecd "AI-0164"^^xsd:string)
+(DataPropertyAssertion :isAITechnology :SafetyOecd "true"^^xsd:boolean)
+```
+
+## Source
+
+- **Primary**: OECD AI Principles 2024 revision (Principle 1.4)
+- **Related**: EU AI Act Articles 9, 15; ISO/IEC 23894:2023
+
+## Context
+
+Safety represents the second component of OECD Principle 4, addressing critical concerns about AI systems causing physical harm, psychological damage or environmental destruction. This principle requires proactive hazard analysis and safety engineering throughout AI development and deployment.
+
+## Key Characteristics
+
+- **Harm prevention**: Avoiding unacceptable risks to people, property and environment
+- **Hazard identification**: Systematic analysis of potential failure modes
+- **Safety assurance**: Verification that risks remain within acceptable bounds
+- **Fail-safe design**: Graceful degradation preventing catastrophic failures
+- **Incident response**: Effective mechanisms for detecting and responding to safety events
+
+## Relationships
+
+- **Parent Concept**: OECD AI Principle 4 (Robustness, Security and Safety)
+- **Related Terms**:
+  - Robustness (OECD) (AI-0163)
+  - Risk Management System (EU AI Act)
+  - Serious Incident (EU AI Act)
+  - Well-Being (AI-0158)
+- **Contrasts With**: Unsafe AI, hazardous systems, uncontrolled risks
+
+## Safety Dimensions
+
+### Physical Safety
+- Prevention of bodily injury or death
+- Protection of property from damage
+- Hazardous equipment control
+- Environmental harm prevention
+- Critical infrastructure protection
+
+### Psychological Safety
+- Avoidance of mental health harm
+- Protection from manipulation and exploitation
+- Prevention of addiction and compulsive use
+- Cognitive well-being preservation
+- Emotional harm mitigation
+
+### Societal Safety
+- Democratic process protection
+- Social cohesion maintenance
+- Prevention of mass manipulation
+- Information ecosystem integrity
+- Collective decision-making safeguards
+
+## Implementation Considerations
+
+1. **Hazard analysis**: Systematic identification of potential harms
+2. **Risk assessment**: Evaluating likelihood and severity of identified hazards
+3. **Safety requirements**: Defining acceptable risk thresholds
+4. **Verification and validation**: Testing safety properties
+5. **Monitoring and response**: Detecting and addressing safety incidents
+
+## OECD Framework Alignment
+
+- **Dimension**: People and Planet Context, Task and Output
+- **Principle Number**: P4 (part 2 of 3)
+- **Actor Responsibility**: Providers (design), deployers (operational safety)
+
+## Regulatory Context
+
+Safety principles inform:
+- EU AI Act high-risk classifications for safety-critical systems
+- Risk management system requirements (Article 9)
+- Safety component regulations (Annex II)
+- Serious incident reporting (Article 73)
+- Product safety legislation integration (Annex I)
+
+## Safety-Critical AI Applications
+
+Heightened safety requirements for:
+- **Autonomous vehicles**: Collision avoidance, passenger protection
+- **Medical devices**: Diagnostic accuracy, treatment safety
+- **Critical infrastructure**: Power grid, water supply, transportation control
+- **Industrial automation**: Manufacturing safety, hazardous environment operation
+- **Aviation and aerospace**: Flight control, navigation systems
+- **Emergency response**: First responder dispatch, crisis management
+
+## Hazard Categories
+
+### Technical Hazards
+- Incorrect outputs leading to dangerous actions
+- System failures in safety-critical moments
+- Inadequate performance under edge conditions
+- Unanticipated emergent behaviour
+- Integration failures with physical systems
+
+### Operational Hazards
+- Inadequate human oversight
+- Inappropriate reliance on AI recommendations
+- Misunderstanding of system limitations
+- Degraded performance under stress
+- Insufficient maintenance and updates
+
+### Malicious Hazards
+- Adversarial attacks causing safety failures
+- System compromise enabling dangerous actions
+- Deliberate misuse for harmful purposes
+- Weaponisation of AI capabilities
+
+## Safety Assurance Methods
+
+### Design Phase
+- **Formal verification**: Mathematical proofs of safety properties
+- **Hazard and operability studies (HAZOP)**: Systematic hazard identification
+- **Failure mode and effects analysis (FMEA)**: Consequence evaluation
+- **Safety cases**: Structured argument for acceptable safety
+- **Redundancy and diversity**: Backup systems and alternative approaches
+
+### Testing Phase
+- **Safety testing**: Targeted evaluation of hazard scenarios
+- **Stress testing**: Performance under adverse conditions
+- **Edge case testing**: Unusual and extreme scenarios
+- **Environmental simulation**: Realistic deployment condition testing
+- **Red team adversarial testing**: Deliberate safety compromise attempts
+
+### Operational Phase
+- **Continuous monitoring**: Real-time safety metric tracking
+- **Anomaly detection**: Identifying unusual behaviour patterns
+- **Incident response**: Rapid reaction to safety events
+- **Performance bounds**: Alerts when operating outside safe parameters
+- **Human oversight**: Maintaining human-in-the-loop for critical decisions
+
+## Risk Tolerability
+
+Safety assessment requires defining:
+- **Acceptable risk**: Tolerable level given benefits and alternatives
+- **ALARP principle**: As Low As Reasonably Practicable
+- **Proportionality**: Risk mitigation commensurate with severity
+- **Comparative safety**: Benchmarking against alternative approaches
+- **Stakeholder input**: Incorporating affected parties in risk decisions
+
+## 2024 Revision Updates
+
+The 2024 OECD revision strengthened safety by:
+- Explicitly addressing psychological and societal harm alongside physical safety
+- Emphasising lifecycle safety assessment and management
+- Connecting to environmental protection
+- Integrating safety with robustness and security as unified principle
+
+## Safety-Performance Trade-offs
+
+Safety implementation may require:
+- **Conservatism**: Prioritising safety over optimal performance
+- **Override capability**: Human intervention mechanisms reducing autonomy
+- **Redundancy**: Multiple systems adding complexity
+- **Constraints**: Operational limitations ensuring safe operation
+- **Monitoring overhead**: Resources dedicated to safety assurance
+
+## International Safety Standards
+
+Relevant safety frameworks include:
+- **ISO 26262**: Functional safety for automotive systems
+- **IEC 61508**: Functional safety of electrical/electronic/programmable systems
+- **DO-178C**: Software considerations in airborne systems
+- **IEC 62304**: Medical device software lifecycle processes
+- **ISO 13849**: Safety of machinery - Safety-related parts of control systems
+
+## Incident Management
+
+Safety incident response includes:
+- **Detection**: Identifying when safety event has occurred
+- **Containment**: Preventing escalation or spread
+- **Investigation**: Determining root causes
+- **Remediation**: Correcting underlying issues
+- **Learning**: Improving systems based on incidents
+- **Reporting**: Notifying authorities and stakeholders
+
+## Related Standards
+
+- ISO/IEC 23894:2023 - AI risk management
+- ISO/IEC TR 5469:2024 - AI functional safety and safety-related systems
+- UL 4600 - Standard for Safety for the Evaluation of Autonomous Products
+
+## See Also
+
+- Robustness (OECD) (AI-0163)
+- Risk Management System (EU AI Act)
+- Serious Incident (EU AI Act)
+- Cybersecurity (EU AI Act)
+- Human Oversight (EU AI Act)
+
+---
+
+*Part of AI Grounded Ontology - OECD AI Principles Framework*
+*Aligned with OECD AI Principles 2024, EU AI Act and international safety standards*
+	- maturity:: draft
+	- owl:class:: mv:Safety(OECD)
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Safety (OECD)
+	- AI systems should operate safely without causing unacceptable risk of physical or psychological harm to people, property or the environment, with appropriate safeguards to prevent, detect and respond to hazardous failures throughout the AI lifecycle.
+
+## Source
+
+- **Primary**: OECD AI Principles 2024 revision (Principle 1.4)
+- **Related**: EU AI Act Articles 9, 15; ISO/IEC 23894:2023
+
+## Context
+
+Safety represents the second component of OECD Principle 4, addressing critical concerns about AI systems causing physical harm, psychological damage or environmental destruction. This principle requires proactive hazard analysis and safety engineering throughout AI development and deployment.
+
+## Key Characteristics
+
+- **Harm prevention**: Avoiding unacceptable risks to people, property and environment
+- **Hazard identification**: Systematic analysis of potential failure modes
+- **Safety assurance**: Verification that risks remain within acceptable bounds
+- **Fail-safe design**: Graceful degradation preventing catastrophic failures
+- **Incident response**: Effective mechanisms for detecting and responding to safety events
+
+## Relationships
+
+- **Parent Concept**: OECD AI Principle 4 (Robustness, Security and Safety)
+- **Related Terms**:
+  - Robustness (OECD) (AI-0163)
+  - Risk Management System (EU AI Act)
+  - Serious Incident (EU AI Act)
+  - Well-Being (AI-0158)
+- **Contrasts With**: Unsafe AI, hazardous systems, uncontrolled risks
+
+## Safety Dimensions
+
+### Physical Safety
+- Prevention of bodily injury or death
+- Protection of property from damage
+- Hazardous equipment control
+- Environmental harm prevention
+- Critical infrastructure protection
+
+### Psychological Safety
+- Avoidance of mental health harm
+- Protection from manipulation and exploitation
+- Prevention of addiction and compulsive use
+- Cognitive well-being preservation
+- Emotional harm mitigation
+
+### Societal Safety
+- Democratic process protection
+- Social cohesion maintenance
+- Prevention of mass manipulation
+- Information ecosystem integrity
+- Collective decision-making safeguards
+
+## Implementation Considerations
+
+1. **Hazard analysis**: Systematic identification of potential harms
+2. **Risk assessment**: Evaluating likelihood and severity of identified hazards
+3. **Safety requirements**: Defining acceptable risk thresholds
+4. **Verification and validation**: Testing safety properties
+5. **Monitoring and response**: Detecting and addressing safety incidents
+
+## OECD Framework Alignment
+
+- **Dimension**: People and Planet Context, Task and Output
+- **Principle Number**: P4 (part 2 of 3)
+- **Actor Responsibility**: Providers (design), deployers (operational safety)
+
+## Regulatory Context
+
+Safety principles inform:
+- EU AI Act high-risk classifications for safety-critical systems
+- Risk management system requirements (Article 9)
+- Safety component regulations (Annex II)
+- Serious incident reporting (Article 73)
+- Product safety legislation integration (Annex I)
+
+## Safety-Critical AI Applications
+
+Heightened safety requirements for:
+- **Autonomous vehicles**: Collision avoidance, passenger protection
+- **Medical devices**: Diagnostic accuracy, treatment safety
+- **Critical infrastructure**: Power grid, water supply, transportation control
+- **Industrial automation**: Manufacturing safety, hazardous environment operation
+- **Aviation and aerospace**: Flight control, navigation systems
+- **Emergency response**: First responder dispatch, crisis management
+
+## Hazard Categories
+
+### Technical Hazards
+- Incorrect outputs leading to dangerous actions
+- System failures in safety-critical moments
+- Inadequate performance under edge conditions
+- Unanticipated emergent behaviour
+- Integration failures with physical systems
+
+### Operational Hazards
+- Inadequate human oversight
+- Inappropriate reliance on AI recommendations
+- Misunderstanding of system limitations
+- Degraded performance under stress
+- Insufficient maintenance and updates
+
+### Malicious Hazards
+- Adversarial attacks causing safety failures
+- System compromise enabling dangerous actions
+- Deliberate misuse for harmful purposes
+- Weaponisation of AI capabilities
+
+## Safety Assurance Methods
+
+### Design Phase
+- **Formal verification**: Mathematical proofs of safety properties
+- **Hazard and operability studies (HAZOP)**: Systematic hazard identification
+- **Failure mode and effects analysis (FMEA)**: Consequence evaluation
+- **Safety cases**: Structured argument for acceptable safety
+- **Redundancy and diversity**: Backup systems and alternative approaches
+
+### Testing Phase
+- **Safety testing**: Targeted evaluation of hazard scenarios
+- **Stress testing**: Performance under adverse conditions
+- **Edge case testing**: Unusual and extreme scenarios
+- **Environmental simulation**: Realistic deployment condition testing
+- **Red team adversarial testing**: Deliberate safety compromise attempts
+
+### Operational Phase
+- **Continuous monitoring**: Real-time safety metric tracking
+- **Anomaly detection**: Identifying unusual behaviour patterns
+- **Incident response**: Rapid reaction to safety events
+- **Performance bounds**: Alerts when operating outside safe parameters
+- **Human oversight**: Maintaining human-in-the-loop for critical decisions
+
+## Risk Tolerability
+
+Safety assessment requires defining:
+- **Acceptable risk**: Tolerable level given benefits and alternatives
+- **ALARP principle**: As Low As Reasonably Practicable
+- **Proportionality**: Risk mitigation commensurate with severity
+- **Comparative safety**: Benchmarking against alternative approaches
+- **Stakeholder input**: Incorporating affected parties in risk decisions
+
+## 2024 Revision Updates
+
+The 2024 OECD revision strengthened safety by:
+- Explicitly addressing psychological and societal harm alongside physical safety
+- Emphasising lifecycle safety assessment and management
+- Connecting to environmental protection
+- Integrating safety with robustness and security as unified principle
+
+## Safety-Performance Trade-offs
+
+Safety implementation may require:
+- **Conservatism**: Prioritising safety over optimal performance
+- **Override capability**: Human intervention mechanisms reducing autonomy
+- **Redundancy**: Multiple systems adding complexity
+- **Constraints**: Operational limitations ensuring safe operation
+- **Monitoring overhead**: Resources dedicated to safety assurance
+
+## International Safety Standards
+
+Relevant safety frameworks include:
+- **ISO 26262**: Functional safety for automotive systems
+- **IEC 61508**: Functional safety of electrical/electronic/programmable systems
+- **DO-178C**: Software considerations in airborne systems
+- **IEC 62304**: Medical device software lifecycle processes
+- **ISO 13849**: Safety of machinery - Safety-related parts of control systems
+
+## Incident Management
+
+Safety incident response includes:
+- **Detection**: Identifying when safety event has occurred
+- **Containment**: Preventing escalation or spread
+- **Investigation**: Determining root causes
+- **Remediation**: Correcting underlying issues
+- **Learning**: Improving systems based on incidents
+- **Reporting**: Notifying authorities and stakeholders
+
+## Related Standards
+
+- ISO/IEC 23894:2023 - AI risk management
+- ISO/IEC TR 5469:2024 - AI functional safety and safety-related systems
+- UL 4600 - Standard for Safety for the Evaluation of Autonomous Products
+
+## See Also
+
+- Robustness (OECD) (AI-0163)
+- Risk Management System (EU AI Act)
+- Serious Incident (EU AI Act)
+- Cybersecurity (EU AI Act)
+- Human Oversight (EU AI Act)
+
+---
+
+*Part of AI Grounded Ontology - OECD AI Principles Framework*
+*Aligned with OECD AI Principles 2024, EU AI Act and international safety standards*
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# Safety (OECD)
+		  
+		  **Term ID**: AI-0164
+		  **Category**: OECD AI Principle
+		  **Status**: Essential
+		  **Version**: 1.0
+		  **Last Updated**: 2025-10-27
+		  
+		  ## Definition
+		  
+		  AI systems should operate safely without causing unacceptable risk of physical or psychological harm to people, property or the environment, with appropriate safeguards to prevent, detect and respond to hazardous failures throughout the AI lifecycle.
+		  
+		  ## Source
+		  
+		  - **Primary**: OECD AI Principles 2024 revision (Principle 1.4)
+		  - **Related**: EU AI Act Articles 9, 15; ISO/IEC 23894:2023
+		  
+		  ## Context
+		  
+		  Safety represents the second component of OECD Principle 4, addressing critical concerns about AI systems causing physical harm, psychological damage or environmental destruction. This principle requires proactive hazard analysis and safety engineering throughout AI development and deployment.
+		  
+		  ## Key Characteristics
+		  
+		  - **Harm prevention**: Avoiding unacceptable risks to people, property and environment
+		  - **Hazard identification**: Systematic analysis of potential failure modes
+		  - **Safety assurance**: Verification that risks remain within acceptable bounds
+		  - **Fail-safe design**: Graceful degradation preventing catastrophic failures
+		  - **Incident response**: Effective mechanisms for detecting and responding to safety events
+		  
+		  ## Relationships
+		  
+		  - **Parent Concept**: OECD AI Principle 4 (Robustness, Security and Safety)
+		  - **Related Terms**:
+		    - Robustness (OECD) (AI-0163)
+		    - Risk Management System (EU AI Act)
+		    - Serious Incident (EU AI Act)
+		    - Well-Being (AI-0158)
+		  - **Contrasts With**: Unsafe AI, hazardous systems, uncontrolled risks
+		  
+		  ## Safety Dimensions
+		  
+		  ### Physical Safety
+		  - Prevention of bodily injury or death
+		  - Protection of property from damage
+		  - Hazardous equipment control
+		  - Environmental harm prevention
+		  - Critical infrastructure protection
+		  
+		  ### Psychological Safety
+		  - Avoidance of mental health harm
+		  - Protection from manipulation and exploitation
+		  - Prevention of addiction and compulsive use
+		  - Cognitive well-being preservation
+		  - Emotional harm mitigation
+		  
+		  ### Societal Safety
+		  - Democratic process protection
+		  - Social cohesion maintenance
+		  - Prevention of mass manipulation
+		  - Information ecosystem integrity
+		  - Collective decision-making safeguards
+		  
+		  ## Implementation Considerations
+		  
+		  1. **Hazard analysis**: Systematic identification of potential harms
+		  2. **Risk assessment**: Evaluating likelihood and severity of identified hazards
+		  3. **Safety requirements**: Defining acceptable risk thresholds
+		  4. **Verification and validation**: Testing safety properties
+		  5. **Monitoring and response**: Detecting and addressing safety incidents
+		  
+		  ## OECD Framework Alignment
+		  
+		  - **Dimension**: People and Planet Context, Task and Output
+		  - **Principle Number**: P4 (part 2 of 3)
+		  - **Actor Responsibility**: Providers (design), deployers (operational safety)
+		  
+		  ## Regulatory Context
+		  
+		  Safety principles inform:
+		  - EU AI Act high-risk classifications for safety-critical systems
+		  - Risk management system requirements (Article 9)
+		  - Safety component regulations (Annex II)
+		  - Serious incident reporting (Article 73)
+		  - Product safety legislation integration (Annex I)
+		  
+		  ## Safety-Critical AI Applications
+		  
+		  Heightened safety requirements for:
+		  - **Autonomous vehicles**: Collision avoidance, passenger protection
+		  - **Medical devices**: Diagnostic accuracy, treatment safety
+		  - **Critical infrastructure**: Power grid, water supply, transportation control
+		  - **Industrial automation**: Manufacturing safety, hazardous environment operation
+		  - **Aviation and aerospace**: Flight control, navigation systems
+		  - **Emergency response**: First responder dispatch, crisis management
+		  
+		  ## Hazard Categories
+		  
+		  ### Technical Hazards
+		  - Incorrect outputs leading to dangerous actions
+		  - System failures in safety-critical moments
+		  - Inadequate performance under edge conditions
+		  - Unanticipated emergent behaviour
+		  - Integration failures with physical systems
+		  
+		  ### Operational Hazards
+		  - Inadequate human oversight
+		  - Inappropriate reliance on AI recommendations
+		  - Misunderstanding of system limitations
+		  - Degraded performance under stress
+		  - Insufficient maintenance and updates
+		  
+		  ### Malicious Hazards
+		  - Adversarial attacks causing safety failures
+		  - System compromise enabling dangerous actions
+		  - Deliberate misuse for harmful purposes
+		  - Weaponisation of AI capabilities
+		  
+		  ## Safety Assurance Methods
+		  
+		  ### Design Phase
+		  - **Formal verification**: Mathematical proofs of safety properties
+		  - **Hazard and operability studies (HAZOP)**: Systematic hazard identification
+		  - **Failure mode and effects analysis (FMEA)**: Consequence evaluation
+		  - **Safety cases**: Structured argument for acceptable safety
+		  - **Redundancy and diversity**: Backup systems and alternative approaches
+		  
+		  ### Testing Phase
+		  - **Safety testing**: Targeted evaluation of hazard scenarios
+		  - **Stress testing**: Performance under adverse conditions
+		  - **Edge case testing**: Unusual and extreme scenarios
+		  - **Environmental simulation**: Realistic deployment condition testing
+		  - **Red team adversarial testing**: Deliberate safety compromise attempts
+		  
+		  ### Operational Phase
+		  - **Continuous monitoring**: Real-time safety metric tracking
+		  - **Anomaly detection**: Identifying unusual behaviour patterns
+		  - **Incident response**: Rapid reaction to safety events
+		  - **Performance bounds**: Alerts when operating outside safe parameters
+		  - **Human oversight**: Maintaining human-in-the-loop for critical decisions
+		  
+		  ## Risk Tolerability
+		  
+		  Safety assessment requires defining:
+		  - **Acceptable risk**: Tolerable level given benefits and alternatives
+		  - **ALARP principle**: As Low As Reasonably Practicable
+		  - **Proportionality**: Risk mitigation commensurate with severity
+		  - **Comparative safety**: Benchmarking against alternative approaches
+		  - **Stakeholder input**: Incorporating affected parties in risk decisions
+		  
+		  ## 2024 Revision Updates
+		  
+		  The 2024 OECD revision strengthened safety by:
+		  - Explicitly addressing psychological and societal harm alongside physical safety
+		  - Emphasising lifecycle safety assessment and management
+		  - Connecting to environmental protection
+		  - Integrating safety with robustness and security as unified principle
+		  
+		  ## Safety-Performance Trade-offs
+		  
+		  Safety implementation may require:
+		  - **Conservatism**: Prioritising safety over optimal performance
+		  - **Override capability**: Human intervention mechanisms reducing autonomy
+		  - **Redundancy**: Multiple systems adding complexity
+		  - **Constraints**: Operational limitations ensuring safe operation
+		  - **Monitoring overhead**: Resources dedicated to safety assurance
+		  
+		  ## International Safety Standards
+		  
+		  Relevant safety frameworks include:
+		  - **ISO 26262**: Functional safety for automotive systems
+		  - **IEC 61508**: Functional safety of electrical/electronic/programmable systems
+		  - **DO-178C**: Software considerations in airborne systems
+		  - **IEC 62304**: Medical device software lifecycle processes
+		  - **ISO 13849**: Safety of machinery - Safety-related parts of control systems
+		  
+		  ## Incident Management
+		  
+		  Safety incident response includes:
+		  - **Detection**: Identifying when safety event has occurred
+		  - **Containment**: Preventing escalation or spread
+		  - **Investigation**: Determining root causes
+		  - **Remediation**: Correcting underlying issues
+		  - **Learning**: Improving systems based on incidents
+		  - **Reporting**: Notifying authorities and stakeholders
+		  
+		  ## Related Standards
+		  
+		  - ISO/IEC 23894:2023 - AI risk management
+		  - ISO/IEC TR 5469:2024 - AI functional safety and safety-related systems
+		  - UL 4600 - Standard for Safety for the Evaluation of Autonomous Products
+		  
+		  ## See Also
+		  
+		  - Robustness (OECD) (AI-0163)
+		  - Risk Management System (EU AI Act)
+		  - Serious Incident (EU AI Act)
+		  - Cybersecurity (EU AI Act)
+		  - Human Oversight (EU AI Act)
+		  
+		  ---
+		  
+		  *Part of AI Grounded Ontology - OECD AI Principles Framework*
+		  *Aligned with OECD AI Principles 2024, EU AI Act and international safety standards*
+		  
+		  ```
+
+- public-access:: true
 	- definition:: AI systems should operate safely without causing unacceptable risk of physical or psychological harm to people, property or the environment, with appropriate safeguards to prevent, detect and respond to hazardous failures throughout the AI lifecycle.
 
-## Safety (OECD)
 
-Safety (OECD) refers to ai systems should operate safely without causing unacceptable risk of physical or psychological harm to people, property or the environment, with appropriate safeguards to prevent, detect and respond to hazardous failures throughout the ai lifecycle.
+
+## Academic Context
+
+- The OECD’s principle of safety in AI governance is rooted in the need to ensure that AI systems do not pose unacceptable risks to individuals, property, or the environment.
+  - The principle is part of the broader OECD Recommendation on Artificial Intelligence, first adopted in 2019 and updated in 2024 to reflect advances in generative AI and evolving deployment models.
+  - The academic foundation draws from risk management theory, human factors engineering, and safety-critical system design, with an emphasis on lifecycle risk mitigation and stakeholder accountability.
+
+## Current Landscape (2025)
 
 - Industry adoption and implementations
   - Many global organisations, including those in the UK, use the OECD safety principle as a benchmark for AI risk management.
@@ -29,14 +649,6 @@ Safety (OECD) refers to ai systems should operate safely without causing unaccep
 - Standards and frameworks
   - The OECD’s High-level AI Risk Management Interoperability Framework provides a four-step process: define scope, assess risks, address risks, and monitor and communicate.
   - The OECD has also launched a voluntary reporting framework for AI risk management practices, encouraging organisations to disclose their safety protocols and incident responses.
-
-## Technical Details
-
-- **Id**: safety-(oecd)-ontology
-- **Collapsed**: true
-- **Source Domain**: ai
-- **Status**: draft
-- **Public Access**: true
 
 ## Research & Literature
 
@@ -84,6 +696,7 @@ Safety (OECD) refers to ai systems should operate safely without causing unaccep
 7. Information Commissioner’s Office. (2023). Guidance on AI and Data Protection. https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/artificial-intelligence/
 8. Greater Manchester AI Health Network. (2024). AI Safety Protocols in Healthcare. https://www.gmhealthandcare.org.uk/ai-health-network/
 9. Leeds Digital Health Enterprise Zone. (2024). AI Safety Frameworks for Telemedicine. https://www.leeds.ac.uk/digital-health-enterprise-zone
+
 
 ## Metadata
 

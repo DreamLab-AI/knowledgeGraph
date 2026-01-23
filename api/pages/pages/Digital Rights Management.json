@@ -6,20 +6,23 @@
     "Watermarking Service",
     "Digital Goods",
     "Royalty Mechanism",
-    "Digital Asset Workflow"
+    "Digital Asset Workflow",
+    "Provenance Verification",
+    "Smart Royalties Ledger",
+    "Smart Royalty Contract"
   ],
   "wiki_links": [
-    "Encryption",
-    "Piracy Prevention",
     "License Management",
-    "NFT Licensing",
-    "metaverse",
-    "Access Control",
-    "Copyright Protection",
     "Content Protection",
-    "Royalty Distribution",
     "Content Monetization",
-    "Smart Contracts"
+    "NFT Licensing",
+    "Access Control",
+    "Smart Contracts",
+    "metaverse",
+    "Piracy Prevention",
+    "Encryption",
+    "Royalty Distribution",
+    "Copyright Protection"
   ],
   "ontology": {
     "term_id": "MV-9867",

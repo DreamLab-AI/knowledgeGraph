@@ -4,20 +4,222 @@
 	- ontology:: true
 	- term-id:: AI-0278
 	- preferred-term:: Model Ensembling
-	- source-domain:: ai
-	- owl:class:: ai:ModelEnsembling
+	- source-domain:: artificial-intelligence
 	- status:: draft
-	- public-access:: true
-	- definition:: A technique that combines predictions from multiple independently trained models to improve overall performance and robustness. Ensembling leverages diversity among models to reduce variance, improve generalisation, and provide more reliable predictions.
-	- #### Relationships
-- is-subclass-of:: [[ModelArchitecture]]
-	  id:: model-ensembling-relationships
+- definition:: A technique that combines predictions from multiple independently trained models to improve overall performance and robustness. Ensembling leverages diversity among models to reduce variance, improve generalisation, and provide more reliable predictions.
+
+
+## OWL Formal Semantics
+
+```clojure
+;; OWL Functional Syntax
+
+(Declaration (Class :ModelEnsembling))
+
+;; Annotations
+(AnnotationAssertion rdfs:label :ModelEnsembling "Model Ensembling"@en)
+(AnnotationAssertion rdfs:comment :ModelEnsembling "A technique that combines predictions from multiple independently trained models to improve overall performance and robustness. Ensembling leverages diversity among models to reduce variance, improve generalisation, and provide more reliable predictions."@en)
+
+;; Data Properties
+(AnnotationAssertion dcterms:identifier :ModelEnsembling "AI-0278"^^xsd:string)
+(DataPropertyAssertion :isAITechnology :ModelEnsembling "true"^^xsd:boolean)
+```
+
+## Academic Context
+
+Ensembling represents a fundamental machine learning principle that model diversity improves aggregate performance, applicable from small models to large language models.
+
+## Key Characteristics
+
+- Combines multiple models
+- Improves robustness
+- Reduces prediction variance
+- Enhances generalisation
+- Can be expensive at inference
+- Well-established technique
+
+## Related Concepts
+
+- **Knowledge Distillation**: Creating single model from ensemble
+- **Mixture of Experts**: Related architecture
+- **Model Averaging**: Simple ensemble method
+
+## UK English Notes
+
+- "Generalisation" (not "generalization")
+
+**Last Updated**: 2025-10-27
+**Verification Status**: Verified against ML literature
+	- maturity:: draft
+	- owl:class:: ai:ModelEnsembling
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Model Ensembling
+	- A technique that combines predictions from multiple independently trained models to improve overall performance and robustness. Ensembling leverages diversity among models to reduce variance, improve generalisation, and provide more reliable predictions.
+
+	- ### [BlenderGPT](https://github.com/gd3kr/BlenderGPT)
+		- A plugin for controlling Blender using GPT models.
+
+	- ### Showcases of Advanced GPT Models and Workflows
+		- **Advanced GPTs on GitHub**: A collection of custom GPTs featuring advanced workflows and operational logic ([GitHub Repository](https://github.com/nerority/Advanced-GPTs)).
+
+		- ## AI Models and Technical Discussions
+
+- # May Event workflow with 3D models and VTON try it on.
+	- [memoryEfficient.json](../assets/memoryEfficient_1715084451554_0.json)
+
+	- ### [Llama](https://ai.meta.com/llama/)
+		- A family of open-source models from Meta AI.
+
+	- ### [Hugging Face](https://huggingface.co/)
+		- A platform for sharing and using pre-trained models.
+
+		- #### Models and specifics
+			- It is important to keep in mind the distinction between static structural analysis and dynamic conformational analysis, which allows for molecules to change shape as they interact with one another.
+			- Foundation models for biology, along the lines of the large language models (LLMs) that many are familiar with, are just now starting to be trained. Different models are often used for predicting shapes versus predicting sequences, which are two sides of the same coin but are currently modelled separately.
+			- AlphaFold 2, developed by DeepMind, marked a significant breakthrough in protein structure prediction. This AI model can predict a static 3D structure from a protein sequence, providing confidence scores for the predicted structure. However, AlphaFold 2 has limitations in capturing protein dynamics, highlighting the need for models that can predict multiple conformations and their transitions.
+			- Distributional Graph Former, building upon AlphaFold 2's architecture, predicts ensembles of protein structures and transition pathways. AlphaFlow, a diffusion model trained on molecular dynamics simulation data, generates multiple protein conformations. These advancements demonstrate the potential of AI in capturing the dynamic nature of proteins.
+
+	- ### [BlenderGPT](https://github.com/gd3kr/BlenderGPT)
+		- A plugin for controlling Blender using GPT models.
+
+	- ### Showcases of Advanced GPT Models and Workflows
+		- **Advanced GPTs on GitHub**: A collection of custom GPTs featuring advanced workflows and operational logic ([GitHub Repository](https://github.com/nerority/Advanced-GPTs)).
+
+		- ## AI Models and Technical Discussions
+
+- # May Event workflow with 3D models and VTON try it on.
+	- [memoryEfficient.json](../assets/memoryEfficient_1715084451554_0.json)
+
+	- ### [Llama](https://ai.meta.com/llama/)
+		- A family of open-source models from Meta AI.
+
+	- ### [Hugging Face](https://huggingface.co/)
+		- A platform for sharing and using pre-trained models.
+
+		- #### Models and specifics
+			- It is important to keep in mind the distinction between static structural analysis and dynamic conformational analysis, which allows for molecules to change shape as they interact with one another.
+			- Foundation models for biology, along the lines of the large language models (LLMs) that many are familiar with, are just now starting to be trained. Different models are often used for predicting shapes versus predicting sequences, which are two sides of the same coin but are currently modelled separately.
+			- AlphaFold 2, developed by DeepMind, marked a significant breakthrough in protein structure prediction. This AI model can predict a static 3D structure from a protein sequence, providing confidence scores for the predicted structure. However, AlphaFold 2 has limitations in capturing protein dynamics, highlighting the need for models that can predict multiple conformations and their transitions.
+			- Distributional Graph Former, building upon AlphaFold 2's architecture, predicts ensembles of protein structures and transition pathways. AlphaFlow, a diffusion model trained on molecular dynamics simulation data, generates multiple protein conformations. These advancements demonstrate the potential of AI in capturing the dynamic nature of proteins.
+
+	- ### [BlenderGPT](https://github.com/gd3kr/BlenderGPT)
+		- A plugin for controlling Blender using GPT models.
+
+		- ## AI Models and Technical Discussions
+
+- # May Event workflow with 3D models and VTON try it on.
+	- [memoryEfficient.json](../assets/memoryEfficient_1715084451554_0.json)
+
+	- ### [BlenderGPT](https://github.com/gd3kr/BlenderGPT)
+		- A plugin for controlling Blender using GPT models.
+
+- # May Event workflow with 3D models and VTON try it on.
+	- [memoryEfficient.json](../assets/memoryEfficient_1715084451554_0.json)
+
+	- ### [BlenderGPT](https://github.com/gd3kr/BlenderGPT)
+		- A plugin for controlling Blender using GPT models.
+	- [[Stable Diffusion]]
+
+- ## Emerging Business Models
+
+- ## Popular Models
+
+- ## Models
+
+- ## Emerging Business Models
+
+- ## Popular Models
+
+- ## Models
+
+## Academic Context
+
+Ensembling represents a fundamental machine learning principle that model diversity improves aggregate performance, applicable from small models to large language models.
+
+## Key Characteristics
+
+- Combines multiple models
+- Improves robustness
+- Reduces prediction variance
+- Enhances generalisation
+- Can be expensive at inference
+- Well-established technique
+
+## Related Concepts
+
+- **Knowledge Distillation**: Creating single model from ensemble
+- **Mixture of Experts**: Related architecture
+- **Model Averaging**: Simple ensemble method
+
+## UK English Notes
+
+- "Generalisation" (not "generalization")
+
+**Last Updated**: 2025-10-27
+**Verification Status**: Verified against ML literature
+	-
+	- ### Original Content
 	  collapsed:: true
-		- is-subclass-of:: [[MachineLearning]]
+		- ```
+# Model Ensembling
+		  
+		  **Term ID**: AI-0278
+		  **Category**: Training Technique
+		  **Ontology Layer**: AI/ML Methodology
+		  
+		  ## Definition
+		  
+		  A technique that combines predictions from multiple independently trained models to improve overall performance and robustness. Ensembling leverages diversity among models to reduce variance, improve generalisation, and provide more reliable predictions.
+		  
+		  ## Academic Context
+		  
+		  Ensembling represents a fundamental machine learning principle that model diversity improves aggregate performance, applicable from small models to large language models.
+		  
+		  ## Key Characteristics
+		  
+		  - Combines multiple models
+		  - Improves robustness
+		  - Reduces prediction variance
+		  - Enhances generalisation
+		  - Can be expensive at inference
+		  - Well-established technique
+		  
+		  ## Related Concepts
+		  
+		  - **Knowledge Distillation**: Creating single model from ensemble
+		  - **Mixture of Experts**: Related architecture
+		  - **Model Averaging**: Simple ensemble method
+		  
+		  ## UK English Notes
+		  
+		  - "Generalisation" (not "generalization")
+		  
+		  **Last Updated**: 2025-10-27
+		  **Verification Status**: Verified against ML literature
+		  
+		  ```
 
-## Model Ensembling
+- public-access:: true
+	- definition:: A technique that combines predictions from multiple independently trained models to improve overall performance and robustness. Ensembling leverages diversity among models to reduce variance, improve generalisation, and provide more reliable predictions.
 
-Model Ensembling refers to a technique that combines predictions from multiple independently trained models to improve overall performance and robustness. ensembling leverages diversity among models to reduce variance, improve generalisation, and provide more reliable predictions.
+
+
+
+## Academic Context
+
+- Brief contextual overview
+	- Model ensembling is a foundational technique in machine learning, where multiple models—often called base learners or weak learners—are combined to produce a single, more robust prediction
+	- The approach is rooted in the statistical principle that aggregating diverse, independent predictions can yield better results than any individual model, echoing the “wisdom of the crowd” metaphor
+- Key developments and current state
+	- Ensemble methods have evolved from simple voting schemes to sophisticated meta-algorithms such as bagging, boosting, and stacking
+	- The field remains active, with ongoing research into optimising diversity, scalability, and interpretability of ensembles
+- Academic foundations
+	- The theoretical underpinnings draw from statistical learning theory, bias-variance decomposition, and the concept of weak learners
+	- Early work by Breiman (1996) on bagging and Freund & Schapire (1997) on boosting laid the groundwork for modern ensemble learning
+
+## Current Landscape (2025)
 
 - Industry adoption and implementations
 	- Ensembling is widely used in data science competitions, financial forecasting, healthcare analytics, and recommendation systems
@@ -38,14 +240,6 @@ Model Ensembling refers to a technique that combines predictions from multiple i
 - Standards and frameworks
 	- Scikit-learn, XGBoost, and LightGBM are widely used open-source libraries for ensemble learning
 	- The UK’s Office for Artificial Intelligence promotes best practices in ensemble deployment, particularly in public sector applications
-
-## Technical Details
-
-- **Id**: model-ensembling-ontology
-- **Collapsed**: true
-- **Source Domain**: ai
-- **Status**: draft
-- **Public Access**: true
 
 ## Research & Literature
 
@@ -98,6 +292,7 @@ Model Ensembling refers to a technique that combines predictions from multiple i
 9. Neptune.ai. (2025). A Comprehensive Guide to Ensemble Learning: What Exactly Do ... https://neptune.ai/blog/ensemble-learning-guide
 10. Machine Learning Mastery. (2025). Bagging vs Boosting vs Stacking: Which Ensemble Method Wins in 2025? https://machinelearningmastery.com/bagging-vs-boosting-vs-stacking-which-ensemble-method-wins-in-2025/
 11. W3Schools Cloud. (2025). Ensemble Learning The 2025 Ultimate Guide Smarter AI Model. https://w3schools.cloud/master-ensemble-learning-the-2025-ultimate-guide/
+
 
 ## Metadata
 

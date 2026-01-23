@@ -5,21 +5,21 @@
   "backlinks": [
     "Random Number Generation",
     "Symmetric Encryption",
+    "Cryptography",
     "Key Derivation Function",
     "CryptographicPrimitive",
-    "Quantum Computing",
     "Cryptographic Keys"
   ],
   "wiki_links": [
+    "Blockchain",
     "Elliptic Curve Cryptography",
-    "Cryptography",
+    "Public Key Infrastructure",
     "Information Security",
     "Hash Function",
+    "Key Derivation Function",
     "Symmetric Encryption",
     "Digital Signature",
-    "Key Derivation Function",
-    "Public Key Infrastructure",
-    "Blockchain"
+    "Cryptography"
   ],
   "ontology": {
     "term_id": "BC-8001",

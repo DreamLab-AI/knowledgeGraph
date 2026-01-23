@@ -6,9 +6,9 @@ id:: unknown-ontology
   - public-access:: true
   - term-id:: MV-9727
   - preferred-term:: Robot Risk Assessment
-  - source-domain:: mv
-  - owl:class:: mv:IdUnknownontology
+  - source-domain:: robotics
+  - owl:class:: rb:RobotRiskAssessment
   - status:: draft
 
 ### Relationships
-- is-subclass-of:: [[Metaverse]]
+- is-subclass-of:: [[RoboticsDomain]]

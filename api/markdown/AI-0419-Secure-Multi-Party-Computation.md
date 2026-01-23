@@ -19,15 +19,14 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: ai:SecureMultiPartyComputation
+    - owl:class:: aigo:SecureMultiPartyComputation
     - owl:physicality:: VirtualEntity
     - owl:role:: Process
-    - owl:inferred-class:: ai:VirtualProcess
+    - owl:inferred-class:: aigo:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 
   - #### Relationships
-- is-subclass-of:: [[Artificial Intelligence]]
     id:: secure-multi-party-computation-relationships
 
   - #### OWL Axioms
@@ -68,11 +67,3 @@
     - Shamir secret sharing
     - Byzantine robustness
 
-- ## GPT in spy agencies.
-	- [Microsoft Develops Secure Generative AI for US Spies (msn.com)](https://www.msn.com/en-gb/money/technology/microsoft-develops-secure-generative-ai-for-us-spies/ar-BB1m1vBa?ocid=msedgdhp&pc=HCTS&cvid=4ae66ceacb324ed785bfa6df68b126cd&ei=16)
-
-- ## GPT in spy agencies.
-	- [Microsoft Develops Secure Generative AI for US Spies (msn.com)](https://www.msn.com/en-gb/money/technology/microsoft-develops-secure-generative-ai-for-us-spies/ar-BB1m1vBa?ocid=msedgdhp&pc=HCTS&cvid=4ae66ceacb324ed785bfa6df68b126cd&ei=16)
-
-- ## GPT in spy agencies.
-	- [Microsoft Develops Secure Generative AI for US Spies (msn.com)](https://www.msn.com/en-gb/money/technology/microsoft-develops-secure-generative-ai-for-us-spies/ar-BB1m1vBa?ocid=msedgdhp&pc=HCTS&cvid=4ae66ceacb324ed785bfa6df68b126cd&ei=16)

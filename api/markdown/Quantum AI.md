@@ -2,26 +2,19 @@
   id:: quantum-ai-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0840
+	- term-id:: ME-0006
 	- preferred-term:: Quantum AI
 	- source-domain:: mv
-	- status:: emerging
-	- public-access:: true
-
-
-
-
-### OWL Classification
+	- status:: emerging-technology
+    - public-access:: true
+	- definition:: [Generated from Gartner emerging tech analysis]
+	- maturity:: emerging
 	- owl:class:: mv:QuantumAI
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-
-### Domain & Architecture
 	- belongsToDomain:: [[MetaverseDomain]]
-	- maturity:: emerging
+	- category:: AI & Autonomy
 
-### Relationships
-- is-subclass-of:: [[Metaverse]]
 
 ## Overview
 
@@ -46,12 +39,14 @@ To provide the comprehensive overview you've requested—particularly regarding 
 
 Would you like me to refocus the answer on what is available, or would you prefer to provide additional search results covering UK quantum research and specific academic publications?
 
+
 ## UK Context
 
 - British contributions and implementations
   - Research institutions and programmes
   - Industry adoption
   - North England innovation (where relevant)
+
 
 ## Metadata
 
@@ -60,11 +55,4 @@ Would you like me to refocus the answer on what is available, or would you prefe
 - **Category**: AI & Autonomy
 - **Status**: Emerging Technology
 
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
 

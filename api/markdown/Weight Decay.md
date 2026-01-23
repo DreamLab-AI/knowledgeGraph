@@ -4,22 +4,205 @@
 	- ontology:: true
 	- term-id:: AI-0293
 	- preferred-term:: Weight Decay
-	- source-domain:: ai
+	- source-domain:: artificial-intelligence
 	- status:: draft
-	- public-access:: true
-	- definition:: A regularisation technique that adds a penalty proportional to the magnitude of weights to the loss function, encouraging smaller weight values. Weight decay (L2 regularisation) prevents overfitting by limiting model complexity and promoting simpler solutions.
+- definition:: A regularisation technique that adds a penalty proportional to the magnitude of weights to the loss function, encouraging smaller weight values. Weight decay (L2 regularisation) prevents overfitting by limiting model complexity and promoting simpler solutions.
+
+
+## OWL Formal Semantics
+
+```clojure
+;; OWL Functional Syntax
+
+(Declaration (Class :WeightDecay))
+
+;; Annotations
+(AnnotationAssertion rdfs:label :WeightDecay "Weight Decay"@en)
+(AnnotationAssertion rdfs:comment :WeightDecay "A regularisation technique that adds a penalty proportional to the magnitude of weights to the loss function, encouraging smaller weight values. Weight decay (L2 regularisation) prevents overfitting by limiting model complexity and promoting simpler solutions."@en)
+
+;; Data Properties
+(AnnotationAssertion dcterms:identifier :WeightDecay "AI-0293"^^xsd:string)
+(DataPropertyAssertion :isAITechnology :WeightDecay "true"^^xsd:boolean)
+```
+
+## Academic Context
+
+Weight decay represents one of the most fundamental regularisation techniques in machine learning, widely used across architectures and tasks.
+
+## Key Characteristics
+
+- Penalises large weights
+- L2 regularisation
+- Prevents overfitting
+- Promotes simpler models
+- Hyperparameter: decay coefficient
+- Standard in optimisers (Adam, SGD)
+
+**Formula**:
+```
+Loss_total = Loss_task + λ × Σ(w²)
+
+Weight update:
+w ← w - η(∇L + λw)
+```
+
+## Related Concepts
+
+- **Regularisation**: General category
+- **L2 Regularisation**: Alternative term
+- **Overfitting**: Problem addressed
+- **Adam Optimiser**: Common implementation
+
+## UK English Notes
+
+- "Regularisation" (not "regularization")
+- "Penalises" (not "penalizes")
+- "Optimisers" (not "optimizers")
+
+**Last Updated**: 2025-10-27
+**Verification Status**: Verified against ML training literature
+	- maturity:: draft
 	- owl:class:: ai:WeightDecay
 	- owl:physicality:: ConceptualEntity
-	- owl:role:: Technique
-	- #### Relationships
-- is-subclass-of:: [[ModelArchitecture]]
-	  id:: weight-decay-relationships
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Weight Decay
+	- A regularisation technique that adds a penalty proportional to the magnitude of weights to the loss function, encouraging smaller weight values. Weight decay (L2 regularisation) prevents overfitting by limiting model complexity and promoting simpler solutions.
+
+		- #### Design
+			- Available in Wayfarer and new Headliner styles
+			- Multiple color options, including transparent frames
+			- Prescription-lens compatible
+			- Reduced weight and slimmer profile for improved comfort
+	- The Meta Ray-Ban smart glasses have been well-received, with reports indicating that around 1 million units have been shipped since their launch. To be clear, this modality of vision AR and AI is the future of **all** of this stuff. VR is still very poorly adopted and unloved, given the investment.
+	- To reach this Meta is developing full AR glasses codenamed Orion, [slated for release in 2027](https://www.theverge.com/2023/2/28/23619730/meta-vr-oculus-ar-glasses-smartwatch-plans). These glasses are designed to work in tandem with a neural interface wristband, allowing for gesture-based control and potentially revolutionizing how we interact with digital content in the physical world.
+
+		- #### Design
+			- Available in Wayfarer and new Headliner styles
+			- Multiple color options, including transparent frames
+			- Prescription-lens compatible
+			- Reduced weight and slimmer profile for improved comfort
+	- The Meta Ray-Ban smart glasses have been well-received, with reports indicating that around 1 million units have been shipped since their launch. To be clear, this modality of vision AR and AI is the future of **all** of this stuff. VR is still very poorly adopted and unloved, given the investment.
+	- To reach this Meta is developing full AR glasses codenamed Orion, [slated for release in 2027](https://www.theverge.com/2023/2/28/23619730/meta-vr-oculus-ar-glasses-smartwatch-plans). These glasses are designed to work in tandem with a neural interface wristband, allowing for gesture-based control and potentially revolutionizing how we interact with digital content in the physical world.
+
+		- #### Key Features
+			- Hands-free photo and video capture
+			- Available in Wayfarer and new Headliner styles
+			- Multiple color options, including transparent frames
+			- Prescription-lens compatible
+			- Reduced weight and slimmer profile for improved comfort
+	- The Meta Ray-Ban smart glasses have been well-received, with reports indicating that around 1 million units have been shipped since their launch. To be clear, this modality of vision AR and AI is the future of **all** of this stuff. VR is still very poorly adopted and unloved, given the investment.
+	- To reach this Meta is developing full AR glasses codenamed Orion, [slated for release in 2027](https://www.theverge.com/2023/2/28/23619730/meta-vr-oculus-ar-glasses-smartwatch-plans). These glasses are designed to work in tandem with a neural interface wristband, allowing for gesture-based control and potentially revolutionizing how we interact with digital content in the physical world.
+			- It's **cheap**, I would totally give this to a kid over a mobile phone. £200 all in?!?
+			- It sold out immediately.
+			- {{tweet https://twitter.com/rabbit_hmi/status/1744781083831574824}}
+			-
+
+## Academic Context
+
+Weight decay represents one of the most fundamental regularisation techniques in machine learning, widely used across architectures and tasks.
+
+## Key Characteristics
+
+- Penalises large weights
+- L2 regularisation
+- Prevents overfitting
+- Promotes simpler models
+- Hyperparameter: decay coefficient
+- Standard in optimisers (Adam, SGD)
+
+**Formula**:
+```
+Loss_total = Loss_task + λ × Σ(w²)
+
+Weight update:
+w ← w - η(∇L + λw)
+```
+
+## Related Concepts
+
+- **Regularisation**: General category
+- **L2 Regularisation**: Alternative term
+- **Overfitting**: Problem addressed
+- **Adam Optimiser**: Common implementation
+
+## UK English Notes
+
+- "Regularisation" (not "regularization")
+- "Penalises" (not "penalizes")
+- "Optimisers" (not "optimizers")
+
+**Last Updated**: 2025-10-27
+**Verification Status**: Verified against ML training literature
+	-
+	- ### Original Content
 	  collapsed:: true
-		- is-subclass-of:: [[TrainingMethod]]
+		- ```
+# Weight Decay
+		  
+		  **Term ID**: AI-0293
+		  **Category**: Training Technique
+		  **Ontology Layer**: AI/ML Methodology
+		  
+		  ## Definition
+		  
+		  A regularisation technique that adds a penalty proportional to the magnitude of weights to the loss function, encouraging smaller weight values. Weight decay (L2 regularisation) prevents overfitting by limiting model complexity and promoting simpler solutions.
+		  
+		  ## Academic Context
+		  
+		  Weight decay represents one of the most fundamental regularisation techniques in machine learning, widely used across architectures and tasks.
+		  
+		  ## Key Characteristics
+		  
+		  - Penalises large weights
+		  - L2 regularisation
+		  - Prevents overfitting
+		  - Promotes simpler models
+		  - Hyperparameter: decay coefficient
+		  - Standard in optimisers (Adam, SGD)
+		  
+		  **Formula**:
+		  ```
+		  Loss_total = Loss_task + λ × Σ(w²)
+		  
+		  Weight update:
+		  w ← w - η(∇L + λw)
+		  ```
+		  
+		  ## Related Concepts
+		  
+		  - **Regularisation**: General category
+		  - **L2 Regularisation**: Alternative term
+		  - **Overfitting**: Problem addressed
+		  - **Adam Optimiser**: Common implementation
+		  
+		  ## UK English Notes
+		  
+		  - "Regularisation" (not "regularization")
+		  - "Penalises" (not "penalizes")
+		  - "Optimisers" (not "optimizers")
+		  
+		  **Last Updated**: 2025-10-27
+		  **Verification Status**: Verified against ML training literature
+		  
+		  ```
 
-## Weight Decay
+- public-access:: true
+	- definition:: A regularisation technique that adds a penalty proportional to the magnitude of weights to the loss function, encouraging smaller weight values. Weight decay (L2 regularisation) prevents overfitting by limiting model complexity and promoting simpler solutions.
 
-Weight Decay refers to a regularisation technique that adds a penalty proportional to the magnitude of weights to the loss function, encouraging smaller weight values. weight decay (l2 regularisation) prevents overfitting by limiting model complexity and promoting simpler solutions.
+
+
+
+## Academic Context
+
+- Weight decay is a **regularisation technique** widely used in machine learning and neural networks to prevent overfitting by penalising large weights during training.
+  - It operates by adding a penalty term proportional to the square of the magnitude of the model’s weights (L2 norm) to the loss function.
+  - This encourages the model to learn smaller weights, promoting simpler, more generalisable solutions and limiting model complexity.
+- The academic foundation of weight decay traces back to ridge regression and L2 regularisation, both well-established statistical methods.
+  - It is mathematically expressed as \( L' = L + \lambda \|W\|^2 \), where \(L\) is the original loss, \(\lambda\) the weight decay coefficient, and \(W\) the weights.
+- Weight decay is often conflated with L2 regularisation, but technically differs in implementation, especially in optimisers like Adam where weight decay directly modifies weight updates rather than just adding a penalty to the loss.
+
+## Current Landscape (2025)
 
 - Weight decay remains a cornerstone regularisation method in both academia and industry for training robust machine learning models, including large language models (LLMs).
   - It is integrated into popular frameworks such as PyTorch and TensorFlow, and is a default hyperparameter in many training pipelines.
@@ -29,14 +212,6 @@ Weight Decay refers to a regularisation technique that adds a penalty proportion
 - Technical limitations include the challenge of tuning the weight decay coefficient \(\lambda\), which can significantly affect model performance if set improperly.
   - Recent advances propose adaptive schemes to mitigate this, improving stability and robustness without extensive hyperparameter search.
 - Weight decay is often used alongside other regularisation methods such as dropout, with complementary effects on reducing overfitting.
-
-## Technical Details
-
-- **Id**: weight-decay-ontology
-- **Collapsed**: true
-- **Source Domain**: ai
-- **Status**: draft
-- **Public Access**: true
 
 ## Research & Literature
 
@@ -75,11 +250,12 @@ Weight Decay refers to a regularisation technique that adds a penalty proportion
 
 ## References
 
-1. Ghiasi, A., Shafahi, A., & Ardekani, R. (2023). *Adaptive Weight Decay*. Apple Machine Learning Research. Available at: https://arxiv.org/abs/2301.12345
-2. Krogh, A., & Hertz, J. A. (1992). *A Simple Weight Decay Can Improve Generalization*. Advances in Neural Information Processing Systems, 4, 950–957.
-3. Zhang, C., Bengio, S., Hardt, M., Recht, B., & Vinyals, O. (2017). *Understanding Deep Learning Requires Rethinking Generalization*. ICLR 2017.
-4. Paepper, M. (2024). *Understanding the difference between weight decay and L2 regularization*. Paepper Blog.
+1. Ghiasi, A., Shafahi, A., & Ardekani, R. (2023). *Adaptive Weight Decay*. Apple Machine Learning Research. Available at: https://arxiv.org/abs/2301.12345  
+2. Krogh, A., & Hertz, J. A. (1992). *A Simple Weight Decay Can Improve Generalization*. Advances in Neural Information Processing Systems, 4, 950–957.  
+3. Zhang, C., Bengio, S., Hardt, M., Recht, B., & Vinyals, O. (2017). *Understanding Deep Learning Requires Rethinking Generalization*. ICLR 2017.  
+4. Paepper, M. (2024). *Understanding the difference between weight decay and L2 regularization*. Paepper Blog.  
 5. AI Guv (2025). *Weight Decay Meaning & Example*. AI Dictionary.
+
 
 ## Metadata
 

@@ -1,19 +1,46 @@
-### Definition
-
-Manipulator Robot comprises articulated mechanical arms with multiple revolute or prismatic joints controlled to position and orient an end-effector for grasping, moving, assembling, or processing workpieces. These robots form the backbone of industrial automation, representing over 60% of global robot installations with applications spanning welding, painting, material handling, assembly, and machine tending. The kinematic chain design enables precise six-degree-of-freedom positioning within defined workspaces ranging from 500mm to 3+ meters reach.
-
 - ### OntologyBlock
-  id:: Manipulator Robot
-  - ontology:: true
-  - public-access:: true
-  - term-id:: RB-1051
-  - preferred-term:: Manipulator Robot
-  - owl:class:: rb:ManipulatorRobot
-  - is-subclass-of:: [[Robotics]]
-  - definition:: A manipulator robot comprises articulated mechanical arms with multiple revolute or prismatic joints controlled to position and orient an end-effector for grasping, moving, assembling, or processing workpieces.
-  - source-domain:: rb
-  - status:: draft
+  id:: manipulatorrobot-ontology
+  collapsed:: true
 
-Manipulator Robot comprises articulated mechanical arms with multiple revolute or prismatic joints controlled to position and orient an endeffector for grasping, moving, assembling, or processing workpieces. These robots form the backbone of industrial automation, representing over 60% of global robot installations with applications spanning welding, painting, material handling, assembly, and machine tending. The kinematic chain design enables precise sixdegreeoffreedom positioning within defined workspaces ranging from 500mm to 3+ meters reach.
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0108
+    - filename-history:: ["RB-0108-manipulatorrobot.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: RB-0108
+    - preferred-term:: Manipulator Robot
+    - source-domain:: rb
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-Manipulator Robot comprises articulated mechanical arms with multiple revolute or prismatic joints controlled to position and orient an endeffector for grasping, moving, assembling, or processing workpieces. These robots form the backbone of industrial automation, representing over 60% of global robot installations with applications spanning welding, painting, material handling, assembly, and machine tending. The kinematic chain design enables precise sixdegreeoffreedom positioning within defined workspaces ranging from 500mm to 3+ meters reach.
+  - **Definition**
+    - definition:: Manipulator robot is a robot with articulated mechanical arms designed to perform manipulation tasks.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: rb:ManipulatorRobot
+    - belongsToDomain:: [[Robotics]]
+
+  - #### Relationships
+    - is-subclass-of:: [[Robot]]
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :ManipulatorRobot))
+      (SubClassOf :ManipulatorRobot :Robot)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :ManipulatorRobot "Manipulator Robot"@en)
+      (AnnotationAssertion rdfs:comment :ManipulatorRobot
+        "Manipulator robot is a robot with articulated mechanical arms designed to perform manipulation tasks."@en)
+      ```
+
+- ## About Manipulator Robot
+  Manipulator robot is a robot with articulated mechanical arms designed to perform manipulation tasks.
+  
+  A robot designed primarily for manipulation tasks, typically with a multi-joint arm structure.

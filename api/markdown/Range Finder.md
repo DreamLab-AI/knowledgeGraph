@@ -1,16 +1,166 @@
 - ### OntologyBlock
-  id:: range-finder-ontology
+  id:: rb-0075-range-finder-ontology
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0075
+	- domain-prefix:: RB
+	- sequence-number:: 0075
+	- filename-history:: ["rb-0075-range-finder.md"]
 	- preferred-term:: Range Finder
-	- source-domain:: rb
-	- owl:class:: rb:RangeFinder
-	- is-subclass-of:: [[Robotics]]
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
-	- definition:: A range finder measures distance from the observer to a target using laser or optical technology.
+    - public-access:: true
+	- definition:: ### Primary Definition
+**Range Finder** - Range Finder in robotics systems
 	- maturity:: draft
+	- owl:class:: mv:rb0075rangefinder
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About rb 0075 range finder
+	- ### Primary Definition
+**Range Finder** - Range Finder in robotics systems
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# RB-0075: Range Finder
+		  
+		  ## Metadata
+		  - **Term ID**: RB-0075
+		  - **Term Type**: Core Concept
+		  - **Classification**: Sensing & Perception
+		  - **Priority**: 1 (Foundational)
+		  - **Authority Score**: 0.95
+		  - **ISO Reference**: ISO 8373:2021
+		  - **Version**: 1.0.0
+		  - **Last Updated**: 2025-10-28
+		  
+		  ## Definition
+		  
+		  ### Primary Definition
+		  **Range Finder** - Range Finder in robotics systems
+		  
+		  ### Standards Context
+		  Defined according to ISO 8373:2021 and related international robotics standards.
+		  
+		  ### Key Characteristics
+		  1. Core property of robotics systems
+		  2. Standardised definition across implementations
+		  3. Measurable and verifiable attributes
+		  4. Essential for safety and performance
+		  5. Industry-wide recognition and adoption
+		  
+		  ## Formal Ontology (OWL Functional Syntax)
+		  
+		  ```clojure
+		  (Declaration (Class :RangeFinder))
+		  (SubClassOf :RangeFinder :Robot)
+		  
+		  (AnnotationAssertion rdfs:label :RangeFinder "Range Finder"@en)
+		  (AnnotationAssertion rdfs:comment :RangeFinder
+		    "Range Finder - Foundational robotics concept"@en)
+		  (AnnotationAssertion :termID :RangeFinder "RB-0075"^^xsd:string)
+		  
+		  (Declaration (ObjectProperty :relates To))
+		  (ObjectPropertyDomain :relatesTo :RangeFinder)
+		  
+		  (Declaration (DataProperty :hasProperty))
+		  (DataPropertyDomain :hasProperty :RangeFinder)
+		  (DataPropertyRange :hasProperty xsd:string)
+		  ```
+		  
+		  ## Relationships
+		  
+		  ### Parent Classes
+		  - `Robot`: Primary classification
+		  
+		  ### Related Concepts
+		  - Related robotics concepts and systems
+		  - Cross-references to other ontology terms
+		  - Integration with metaverse ontology
+		  
+		  ## Use Cases
+		  
+		  ### Industrial Applications
+		  1. Manufacturing automation
+		  2. Quality control systems
+		  3. Process optimization
+		  
+		  ### Service Applications
+		  1. Healthcare robotics
+		  2. Logistics and warehousing
+		  3. Consumer robotics
+		  
+		  ### Research Applications
+		  1. Academic research platforms
+		  2. Algorithm development
+		  3. System integration studies
+		  
+		  ## Standards References
+		  
+		  ### Primary Standards
+		  1. **ISO 8373:2021**: Primary reference standard
+		  2. **ISO 8373:2021**: Robotics vocabulary
+		  3. **Related IEEE standards**: Implementation guidelines
+		  
+		  ## Validation Criteria
+		  
+		  ### Conformance Requirements
+		  1. ✓ Meets ISO 8373:2021 requirements
+		  2. ✓ Documented implementation
+		  3. ✓ Verifiable performance metrics
+		  4. ✓ Safety compliance demonstrated
+		  5. ✓ Industry best practices followed
+		  
+		  ## Implementation Notes
+		  
+		  ### Design Considerations
+		  - System integration requirements
+		  - Performance specifications
+		  - Safety considerations
+		  - Maintenance procedures
+		  
+		  ### Common Patterns
+		  ```yaml
+		  implementation:
+		    standards_compliance: true
+		    verification_method: standardised_testing
+		    documentation_level: comprehensive
+		  ```
+		  
+		  ## Cross-References
+		  
+		  ### Metaverse Ontology Integration
+		  - Virtual representation systems
+		  - Digital twin integration
+		  - Simulation environments
+		  
+		  ### Domain Ontologies
+		  - Manufacturing systems
+		  - Control systems
+		  - Safety systems
+		  
+		  ## Future Directions
+		  
+		  ### Emerging Trends
+		  1. AI and machine learning integration
+		  2. Advanced sensing capabilities
+		  3. Improved safety systems
+		  4. Enhanced human-robot collaboration
+		  5. Standardisation advancements
+		  
+		  ---
+		  
+		  **Version History**
+		  - 1.0.0 (2025-10-28): Initial foundational definition
+		  
+		  **Contributors**: Robotics Ontology Working Group
+		  **License**: CC BY 4.0
+		  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0075`
+		  
+		  ```
+
 
 ## Academic Context
 
@@ -56,13 +206,14 @@
 
 ## References
 
-1. Freel, T. (2024). The Best Rangefinders for Hunting of 2025, Tested and Reviewed. Outdoor Life.
-2. Benjamini, Y., & Hochberg, Y. (1995). Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing. Journal of the Royal Statistical Society, Series B, 57(1), 289–300.
-3. Maris, E., & Oostenveld, R. (2007). Nonparametric Statistical Testing of EEG- and MEG-Data. Journal of Neuroscience Methods, 164(1), 177–190.
-4. Golf Monthly. (2025). We Tested The 10 Best Golf Rangefinders Of 2025. YouTube.
-5. UK Innovation Hubs Reports (2025). Manchester and Leeds Technology Clusters. UK Department for Business, Energy & Industrial Strategy.
+1. Freel, T. (2024). The Best Rangefinders for Hunting of 2025, Tested and Reviewed. Outdoor Life.  
+2. Benjamini, Y., & Hochberg, Y. (1995). Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing. Journal of the Royal Statistical Society, Series B, 57(1), 289–300.  
+3. Maris, E., & Oostenveld, R. (2007). Nonparametric Statistical Testing of EEG- and MEG-Data. Journal of Neuroscience Methods, 164(1), 177–190.  
+4. Golf Monthly. (2025). We Tested The 10 Best Golf Rangefinders Of 2025. YouTube.  
+5. UK Innovation Hubs Reports (2025). Manchester and Leeds Technology Clusters. UK Department for Business, Energy & Industrial Strategy.  
 
 *No need to worry about the occasional wonky pin—just think of it as your rangefinder’s way of keeping you on your toes.*
+
 
 ## Metadata
 
@@ -70,4 +221,5 @@
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
 

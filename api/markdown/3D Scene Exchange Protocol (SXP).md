@@ -1,18 +1,79 @@
 - ### OntologyBlock
-  id:: unknown-ontology
+  id:: 3d-scene-exchange-protocol-(sxp)-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0223
-	- source-domain:: mv
+	- term-id:: 20223
 	- preferred-term:: 3D Scene Exchange Protocol (SXP)
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
+- public-access:: true
 	- definition:: open standard enabling interoperable transfer of 3D scene graphs, materials, and animations.
+maturity:: 3
+source:: [[MSF Interchange WG]]
 	- maturity:: draft
-	- owl:class:: mv:ThreeDSceneExchangeProtocol
+	- owl:class:: mv:3DSceneExchangeProtocol(SXP)
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
+
+## OWL Formal Semantics
+
+```clojure
+;; OWL Functional Syntax
+
+(Declaration (Class :3dSceneExchangeProtocolSxp))
+
+;; Annotations
+(AnnotationAssertion rdfs:label :3dSceneExchangeProtocolSxp "3D Scene Exchange Protocol (SXP)"@en)
+(AnnotationAssertion rdfs:comment :3dSceneExchangeProtocolSxp "open standard enabling interoperable transfer of 3D scene graphs, materials, and animations."@en)
+
+;; Data Properties
+(AnnotationAssertion dcterms:identifier :3dSceneExchangeProtocolSxp "20223"^^xsd:string)
+```
+
+- ## About 3D Scene Exchange Protocol (SXP)
+	- open standard enabling interoperable transfer of 3D scene graphs, materials, and animations.
+maturity:: 3
+source:: [[MSF Interchange WG]]
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# 3D Scene Exchange Protocol (SXP)
+		  
+		  ## Core Properties
+		  term-id:: 20223
+		  preferred-term:: 3D Scene Exchange Protocol (SXP)
+		  definition:: open standard enabling interoperable transfer of 3D scene graphs, materials, and animations.
+		  maturity:: 3
+		  source:: [[MSF Interchange WG]]
+		  
+		  ## Classification
+		  domain:: [[ETSI Domain/Interoperability]]
+		  layer:: [[IV) Data Layer]]
+		  aspect:: [[Systemic]]
+		  
+		  ## Ontological Relationships
+		  is-a:: 
+		  has-part:: 
+		  requires:: 
+		  enables:: 
+		  related-to:: 
+		  
+		  ## Terminology
+		  synonyms:: [[Scene interchange format]]
+		  
+		  ## Sources & References
+		  additional-sources:: MSF Interchange WG · glTF · USD / OMA3
+		  
+		  ## Notes
+		  Enables interoperable transfer of 3D scenes, materials and animations between systems.
+		  
+		  ## Metadata
+		  imported-from:: [[Metaverse Glossary Excel]]
+		  import-date:: [[2025-01-15]]
+		  ontology-status:: needs-relationships
+		  ```
 
 ## Academic Context
 
@@ -45,14 +106,14 @@
 ## Research & Literature
 
 - Key academic papers and sources
-  - Smith, J., & Kandula, R. (2014). Source-Group Tag eXchange Protocol (SXP). IETF Datatracker. https://datatracker.ietf.org/doc/html/draught-smith-kandula-sxp-00
+  - Smith, J., & Kandula, R. (2014). Source-Group Tag eXchange Protocol (SXP). IETF Datatracker. https://datatracker.ietf.org/doc/html/draft-smith-kandula-sxp-00
   - Cisco TrustSec SGT Exchange Protocol IPv4. Cisco. https://www.cisco.com/en/US/docs/ios-xml/ios/sec_usr_cts/configuration/15-2mt/cts-sxp-ipv4.html
   - Day 73: Cisco ISE Mastery Training: SGT Exchange Protocol (SXP) Configuration. Network Journey. https://networkjourney.com/day-73-cisco-ise-mastery-training-sgt-exchange-protocol-sxp-configuration/
   - What is SXP Protocol? Scalable group tag eXchange Protocol. IP With Ease. https://ipwithease.com/what-is-sxp-protocol/
   - SGT Exchange Protocol over TCP (SXP). Cisco. https://www.cisco.com/c/en/us/td/docs/switches/lan/trustsec/configuration/guide/trustsec/sxp_config.html
   - Trustsec: Configuring SXP. Networking Fun. http://www.network-node.com/blog/2019/4/1/156-trustsec-configuring-sxp
   - A Deep Dive into Group-Based Policy, SXPv5 and PxGrid Direct. Cisco Live. https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2024/pdf/BRKSEC-2154.pdf
-  - Cisco TrustSec Security Group Tag Exchange Protocol - 1 licence. Insight. https://www.insight.com/en_US/shop/product/SXP-USER-IAM1/CISCO%20SYSTEMS/SXP-USER-IAM1/CiscoTrustSecSecurityGroupTagExchangeProtocol-IdentityandAccessManagement-Licence/
+  - Cisco TrustSec Security Group Tag Exchange Protocol - 1 license. Insight. https://www.insight.com/en_US/shop/product/SXP-USER-IAM1/CISCO%20SYSTEMS/SXP-USER-IAM1/CiscoTrustSecSecurityGroupTagExchangeProtocol-IdentityandAccessManagement-License/
 
 - Ongoing research directions
   - Research is focused on improving the scalability and performance of SXP for large-scale collaborative projects.
@@ -88,14 +149,14 @@
 
 ## References
 
-1. Smith, J., & Kandula, R. (2014). Source-Group Tag eXchange Protocol (SXP). IETF Datatracker. https://datatracker.ietf.org/doc/html/draught-smith-kandula-sxp-00
+1. Smith, J., & Kandula, R. (2014). Source-Group Tag eXchange Protocol (SXP). IETF Datatracker. https://datatracker.ietf.org/doc/html/draft-smith-kandula-sxp-00
 2. Cisco TrustSec SGT Exchange Protocol IPv4. Cisco. https://www.cisco.com/en/US/docs/ios-xml/ios/sec_usr_cts/configuration/15-2mt/cts-sxp-ipv4.html
 3. Day 73: Cisco ISE Mastery Training: SGT Exchange Protocol (SXP) Configuration. Network Journey. https://networkjourney.com/day-73-cisco-ise-mastery-training-sgt-exchange-protocol-sxp-configuration/
 4. What is SXP Protocol? Scalable group tag eXchange Protocol. IP With Ease. https://ipwithease.com/what-is-sxp-protocol/
 5. SGT Exchange Protocol over TCP (SXP). Cisco. https://www.cisco.com/c/en/us/td/docs/switches/lan/trustsec/configuration/guide/trustsec/sxp_config.html
 6. Trustsec: Configuring SXP. Networking Fun. http://www.network-node.com/blog/2019/4/1/156-trustsec-configuring-sxp
 7. A Deep Dive into Group-Based Policy, SXPv5 and PxGrid Direct. Cisco Live. https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2024/pdf/BRKSEC-2154.pdf
-8. Cisco TrustSec Security Group Tag Exchange Protocol - 1 licence. Insight. https://www.insight.com/en_US/shop/product/SXP-USER-IAM1/CISCO%20SYSTEMS/SXP-USER-IAM1/CiscoTrustSecSecurityGroupTagExchangeProtocol-IdentityandAccessManagement-Licence/
+8. Cisco TrustSec Security Group Tag Exchange Protocol - 1 license. Insight. https://www.insight.com/en_US/shop/product/SXP-USER-IAM1/CISCO%20SYSTEMS/SXP-USER-IAM1/CiscoTrustSecSecurityGroupTagExchangeProtocol-IdentityandAccessManagement-License/
 
 ## Metadata
 
@@ -103,6 +164,3 @@
 - Review Status: Comprehensive editorial review
 - Verification: Academic sources verified
 - Regional Context: UK/North England where applicable
-
-### Relationships
-- is-subclass-of:: [[Metaverse]]

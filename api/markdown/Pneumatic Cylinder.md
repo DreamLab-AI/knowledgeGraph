@@ -1,37 +1,46 @@
 - ### OntologyBlock
-    - term-id:: DT-1032
-    - source-domain:: mv
-    - owl:class:: mv:PneumaticCylinder
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - preferred-term:: Pneumatic Cylinder
-    - ontology:: true
+  id:: pneumaticcylinder-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0181
+    - filename-history:: ["RB-0181-pneumaticcylinder.md"]
     - public-access:: true
-    - is-subclass-of:: [[Pneumatic Actuator]]
+    - ontology:: true
+    - term-id:: RB-0181
+    - preferred-term:: Pneumatic Cylinder
+    - source-domain:: rb
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## Pneumatic Cylinder
+  - **Definition**
+    - definition:: Pneumatic cylinder uses compressed air to produce linear motion.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-Pneumatic Cylinder refers to pneumatic cylinder uses compressed air to produce linear motion.
+  - **Semantic Classification**
+    - owl:class:: rb:PneumaticCylinder
+    - belongsToDomain:: [[Robotics]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
+    - is-subclass-of:: [[Pneumatic Actuator]]
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :PneumaticCylinder))
+      (SubClassOf :PneumaticCylinder :PneumaticActuator)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :PneumaticCylinder "Pneumatic Cylinder"@en)
+      (AnnotationAssertion rdfs:comment :PneumaticCylinder
+        "Pneumatic cylinder uses compressed air to produce linear motion."@en)
+      ```
 
-- **Id**: pneumaticcylinder-ontology
-- **Collapsed**: true
-- **Domain Prefix**: RB
-- **Sequence Number**: 0181
-- **Filename History**: ["RB-0181-pneumaticcylinder.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: rb:PneumaticCylinder
-- **Belongstodomain**: [[Robotics]]
-- **Is Subclass Of**: [[Pneumatic Actuator]]
+- ## About Pneumatic Cylinder
+  Pneumatic cylinder uses compressed air to produce linear motion.
+  
+  A pneumatic actuator producing linear motion.

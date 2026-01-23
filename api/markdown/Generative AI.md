@@ -1,22 +1,543 @@
 - ### OntologyBlock
   id:: generative-ai-ontology
   collapsed:: true
-	- ontology:: true
-	- term-id:: DT-0860
-	- source-domain:: ai
-	- preferred-term:: Generative AI
-	- status:: complete
-	- public-access:: true
-	- definition:: [[Generative AI]] encompasses [[Machine Learning]] systems capable of creating new content across modalities including text, images, audio, video, and code through [[Neural Networks]] trained on large datasets. These systems use [[Deep Learning]] architectures like [[Transformer]]s, [[Diffusion Models]], [[GANs]], and [[VAEs]] to learn data distributions and generate novel, coherent outputs. Generative AI represents a paradigm shift from discriminative models, enabling creative applications in [[Content Creation]], [[Design]], [[Art]], [[Music Generation]], and [[Code Synthesis]].
-	- source:: [[OpenAI]], [[Stability AI]], [[Midjourney]], [[Anthropic]], [[Google DeepMind]], [[NIST AI Standards]]
-	- maturity:: mature
-	- owl:class:: ai:GenerativeAI
-	- owl:physicality:: VirtualEntity
-	- owl:role:: Process
-	- owl:inferred-class:: ai:VirtualProcess
-	- belongsToDomain:: [[AI-GroundedDomain]], [[DisruptiveTechDomain]], [[CreativeMediaDomain]], [[ComputationAndIntelligenceDomain]]
-	- #### Relationships
-- is-subclass-of:: [[ModelArchitecture]]
-	  id:: generative-ai-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[MachineLearning]]
+
+  - **Identification**
+    - ontology:: true
+    - term-id:: AI-0860
+    - preferred-term:: Generative AI
+    - source-domain:: ai
+    - status:: complete
+    - public-access:: true
+    - version:: 2.0.0
+    - last-updated:: 2025-01-15
+    - quality-score:: 0.90
+
+  - **Definition**
+    - definition:: [[Generative AI]] encompasses [[Machine Learning]] systems capable of creating new content across modalities including text, images, audio, video, and code through [[Neural Networks]] trained on large datasets. These systems use [[Deep Learning]] architectures like [[Transformer]]s, [[Diffusion Models]], [[GANs]], and [[VAEs]] to learn data distributions and generate novel, coherent outputs. Generative AI represents a paradigm shift from discriminative models, enabling creative applications in [[Content Creation]], [[Design]], [[Art]], [[Music Generation]], and [[Code Synthesis]].
+    - maturity:: mature
+    - source:: [[OpenAI]], [[Stability AI]], [[Midjourney]], [[Anthropic]], [[Google DeepMind]], [[NIST AI Standards]]
+    - authority-score:: 0.93
+
+  - **Semantic Classification**
+    - owl:class:: ai:GenerativeAI
+    - owl:physicality:: VirtualEntity
+    - owl:role:: Process
+    - owl:inferred-class:: ai:VirtualProcess
+    - belongsToDomain:: [[AI-GroundedDomain]], [[CreativeMediaDomain]], [[ComputationAndIntelligenceDomain]]
+    - implementedInLayer:: [[ComputeLayer]], [[DataLayer]], [[AlgorithmicLayer]]
+
+  - #### Relationships
+    id:: generative-ai-relationships
+    - is-subclass-of:: [[Artificial Intelligence]], [[Machine Learning]], [[Deep Learning]]
+    - has-part:: [[Large Language Models]], [[Diffusion Models]], [[GAN]], [[VAE]], [[Neural Network]], [[Training Data]]
+    - implements:: [[Text Generation]], [[Image Generation]], [[Audio Generation]], [[Video Generation]], [[Code Generation]]
+    - requires:: [[Neural Network Training]], [[Large-Scale Datasets]], [[GPU Compute]], [[Model Architecture]]
+    - enables:: [[Content Creation]], [[Creative AI]], [[Automated Design]], [[Synthetic Media]], [[AI Art]]
+    - related-to:: [[Foundation Models]], [[Prompt Engineering]], [[Fine-Tuning]], [[Model Training]], [[Transfer Learning]]
+    - bridges-to::
+      - [[NFT]] (domain: blockchain - for AI-generated art ownership)
+      - [[Smart Contract]] (domain: blockchain - for AI content licensing)
+      - [[Decentralized Storage]] (domain: blockchain - for training data)
+      - [[Lightning Network]] (domain: bitcoin - for micropayments to AI services)
+
+  - #### OWL Axioms
+    id:: generative-ai-owl-axioms
+    collapsed:: true
+    - ```clojure
+      Prefix(ai:=<http://purl.org/ai-ontology#>)
+      Prefix(bc:=<http://purl.org/blockchain-ontology#>)
+      Prefix(dt:=<http://purl.org/disruptive-tech/bridges#>)
+      Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+      Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+      Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+      Ontology(<http://purl.org/ai-ontology/AI-0860>
+
+        Declaration(Class(ai:GenerativeAI))
+        AnnotationAssertion(rdfs:label ai:GenerativeAI "Generative AI"@en)
+        AnnotationAssertion(rdfs:comment ai:GenerativeAI
+          "AI systems capable of creating new content across multiple modalities"@en)
+
+        SubClassOf(ai:GenerativeAI ai:MachineLearning)
+        SubClassOf(ai:GenerativeAI ai:DeepLearning)
+
+        # Generative AI can create content
+        SubClassOf(ai:GenerativeAI
+          ObjectSomeValuesFrom(ai:canGenerate ai:Content))
+
+        # Bridge to Blockchain: Generated content can be minted as NFT
+        SubClassOf(ai:GenerativeAI
+          ObjectSomeValuesFrom(dt:canMintAs bc:NFT))
+
+        # Bridge to Bitcoin: Can accept Lightning payments
+        SubClassOf(ai:GenerativeAI
+          ObjectSomeValuesFrom(dt:canAcceptPayment btc:LightningNetwork))
+      )
+      ```
+
+- ## About Generative AI
+
+- ### Intelligence and AI Definitions (2025)
+- To set the tone, let's have [[OpenAI]]'s [[ChatGPT]] give us a definition:
+	- *Intelligence is the ability to acquire and apply knowledge and skills in order to solve problems and adapt to new situations. It can involve a range of [[Cognitive Abilities]], such as [[Perception]], [[Learning]], [[Memory]], [[Reasoning]], and [[Decision-Making]]. Intelligence is a complex and multifaceted concept that has been studied by psychologists, philosophers, and scientists for centuries.*
+- The Oxford English Dictionary defines [[Artificial Intelligence]] as:
+	- "The capacity of computers or other machines to exhibit or simulate intelligent behaviour".
+- This is murky territory. The boundary line between very capable trained systems and something that feels like intelligence is subjective, varying for each person and context.
+- The terminology in the field is both somewhat blurred and highly 'nested', encompassing [[Machine Learning]], [[Deep Learning]], [[Neural Networks]], and [[Generative AI]].
+- We will use AI and ML interchangeably in this text, but is so doing wehope to draw attention to the moment we find ourselves in. It feels likethere is an inflection point in human history happening right now,though to somewhat burst the bubble on this hyperbole it’s worth readingthe legendary Stephen Wolframs [explanation of these currentsystems](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/)as glorified autocompletes.
+- Irrespective of the gap between the perception and truth around thesesystems there is now a feedback loop where the data that these systemsare trained on will be learning from both human **and** outputs fromsuch systems. Todays young children will never know a world in which theinformation they encounter is verifiable as of purely human origin. Theimplications of this are unclear but exciting. In writing this book itbecame obvious to add this chapter in, and change the direction on theresearch and product development, because nothing in human history willremain untouched by this. As we will see ‘metaverse’ is likely to changeat an incredible rate as a function of some parts of this technology.
+  ![]./assets/5823b4852c910b4a37b5a73f739551a66eda08b4.png
+  Major stands of generative AI and their associated models at the time of print.
+- <a href="#fig:llmlandscape" data-reference-type="ref" data-reference="fig:llmlandscape">[fig:llmlandscape]</a>).
+  ![]./assets/ff177772944d3f8035ac7b75559cecc8b65176cd.jpg
+  Major stands of large language models from Yang et al<span class="citation" data-cites="yang2023harnessing"><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></span><section class="footnotes" role="doc-endnotes"><hr /><ol><li id="fn1" role="doc-endnote"><p>Yang et al., “Harnessing the Power of Llms in Practice.”<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section>
+- ### Generative Art Systems (2025)
+- [[Generative Art]] refers to art that is generated algorithmically rather than manually created using [[Artificial Intelligence]], [[Neural Networks]], and [[Computational Creativity]]. This encompasses [[AI Art]], [[Procedural Generation]], and [[Algorithmic Art]].
+- Generative art emerged in the 1960s alongside early [[Computer Art]]. Artists like Frieder Nake and Georg Nees used algorithms to create abstract visual art. In the 1970s and 80s, [[Fractal Geometry]] allowed for complex recursive patterns. More recently, [[Neural Networks]] and [[Deep Learning]] have enabled revolutionary forms of [[Image Generation]], which are the focus of current research and applications.
+- #### Modern Models and Systems
+- #### Image Generation (2025)
+-
+	- **Stable Diffusion**
+	- An [[Open Source]] [[Diffusion Model]] capable of creating realistic images from [[Text Prompts]] using [[Latent Diffusion]]. Widely used by artists and developers due to:
+-
+	- Flexible and intuitive [[Prompt Engineering]] capabilities
+-
+	- Many interfaces and extensions for control, most notably [[ControlNet]] for precise spatial guidance
+-
+	- Ability to [[Fine-Tuning]] on custom datasets using [[DreamBooth]] and [[LoRA]]
+	- Supports [[Inpainting]], [[Outpainting]], and [[Image-to-Image]] translation
+	- Can integrate with [[Bitcoin]] wallets for [[Decentralized AI]] art marketplaces
+-
+	- **DALL-E 3**
+	- A proprietary [[Generative AI]] system from [[OpenAI]] that creates images from text captions using advanced [[Diffusion Models]]. Key features (2025):
+-
+	- Stunning contextual comprehension and [[Semantic Understanding]]
+-
+	- Diverse creative capabilities from natural language [[Prompts]]
+-
+	- Works with [[OpenAI API]] and paid credits, enabling [[Pay-Per-Use]] via [[L402 Protocol]]
+-
+	- Integrated with Microsoft Bing and [[ChatGPT]], with limited free tier
+-
+	- **Midjourney**
+	- Web-based [[Generative Art]] tool with social community aspects. Notable for (2025):
+-
+	- Easy to start generating images quickly through [[Discord]] interface
+-
+	- Built-in sharing and voting on generations via [[Community Curation]]
+-
+	- Best-in-class aesthetic "vibes" and [[Artistic Style]]
+-
+	- Subscription tiers with commercial licensing options
+	- Supports [[NFT]] minting for AI-generated artwork
+-
+	- Privacy is questionable
+-
+	- Subject to change, making consistency of approach impossible.
+-
+	- **Imagen**
+	- AI system from Google producing images from text. Characteristics:
+-
+	- Very high-resolution outputs
+-
+	- Control over lighting and detail
+-
+	- Currently restricted to limited partners
+- #### How they work
+- There’s a good detailed and in depth blog post by Weng[here](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/#classifier-free-guidance).
+- The four main types are over-viewed [byDeshwal](https://www.linkedin.com/feed/update/urn:li:activity:7088752096853803008/)as below:
+-
+	- "Adversarial" as the name suggests are two opposite networks. One learns to create images out of noise (Artist) which is actually very hard process and the other says "umm okay! This isn’t good" (Critic) which is a relatively easy process. So because of the fact that being an artist is very hard than being a critic, these networks are not stable and Critic learns faster than the Artist.
+-
+	- VAE, U-Nets etc belong to this category where same network breaks down image in deeper level features using CNN and then rebuild it again. That’s like a child learning by breaking things. VAE and U-Nets are almost same with minor differences and serve as a base model in Diffusion process so that think of them ans analogues to BERT in LLMs.
+-
+	- : Well here it becomes complex. You apply function X to an image and then you re-create the original image by applying the Exact inverse of that function. For example, a very basic function is to add 5 and then subtract 5 to get original stuff.
+-
+	- VAE, U-Nets are used as base models. You insert some pseudo random (because you know what you added based on a timestamp "T") Gaussian noise to an image and instead of asking the model to predict original image, you ask the model to predict the Noise that you inserted. Since Gaussian is an additive noise independent of original signal, you subtract that from image and get original image. Another piece is that instead of predicting whole noise at once, you predict the noise for previous (T-1) step.
+- Intuitive interfaces provide easy access to these models.[Automatic1111’s WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) offers afull-featured frontend to Stable Diffusion.[Midjourney](https://www.midjourney.com) provides a social platform tocreate, share and discuss AI art. [Runway](https://www.runwayml.com)delivers generative models through a subscription service.
+- Fine-tuning techniques like[DreamBooth](https://arxiv.org/abs/2208.12242) allow customizing StableDiffusion by training on datasets of specific concepts.[styleGAN-NADA](https://github.com/yfszzx/stylegan-nada) improves imagequality through noise optimization.[styleGAN3](https://github.com/NVlabs/stylegan3) introduces a generatorarchitecture that achieves state-of-the-art results. Extensions like[Gaugan](https://github.com/mit-han-lab/gaugan) bring control overseasons, weather, lighting and more.
+- Vibrant communities continually push boundaries of generative artthrough platforms like the [deepdreamsubreddit](https://www.reddit.com/r/deepdream/), the [ML Art Colabsrepository](https://github.com/dvschultz), and the [Stability AIblog](https://stability.ai/blog). Events like [ButterflyDream](https://www.elfman.ai/) showcase creativity.
+- Beyond generation, image processing techniques can manipulate existingvisuals. [GFPGAN](https://github.com/TencentARC/GFPGAN) restores blurredfaces using facial landmarks and semantic segmentation.[BRDNet](https://github.com/dazhizhong/BRDNet) removes unwanted objectsthrough edge-aware propagation and diffusion.[Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) super-resolvesimages up to 16x resolution.[DeOldify](https://github.com/jantic/DeOldify) colorizes black and whitephotos through deep learning. Such techniques enable restoring,retouching and enhancing images.
+- ##### Stable Diffusion
+- ##### Stable Diffusion Ecosystem
+- As an open-source diffusion model, [StableDiffusion](https://arxiv.org/abs/2105.05233) has given rise to anextensive ecosystem of models, interfaces, extensions, and communities.
+- ###### Models
+- The core Stable Diffusion repository provides strong baselines like[sd-v1-4](https://github.com/CompVis/stable-diffusion) optimized forspeed and [sd-v2-1k](https://github.com/Stability-AI/stablediffusion)for 1024x1024 resolution. Models exist for specific domains like anime,manga, and hentai.
+- ###### Interfaces
+- Many open-source frontends provide access to Stable Diffusion:
+-
+	- [Automatic1111’s Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+	- full-featured frontend with extensions
+-
+	- [Disco Diffusion](https://github.com/alembics/disco-diffusion)
+	- focused on creative exploration
+-
+	- [Stable Diffusion GUI](https://github.com/hlky/stable-diffusion)
+	- cross-platform interface supporting Google Colab
+-
+	- [A1111-SD-webui-colab](https://github.com/invincible-sam/A1111-SD-webui-colab)
+	- run Stable Diffusion entirely in Google Colab
+- ###### Extensions
+- Additional modules provide enhanced control:
+-
+	- [ControlNet](https://github.com/lllyasviel/ControlNet)
+	- mask-based image editing
+-
+	- [Vedaso](https://github.com/alembics/vedaso)
+	- creative effect brushes
+-
+	- [Stable Diffusion Tuner](https://github.com/camenduru/stable-diffusion-webui-tuner)
+	- fine-tune model inside Web UI
+-
+	- [InvokeAI](https://github.com/invoke-ai/InvokeAI)
+	- optimized inference and rendering
+- ###### Training & Tuning
+- Stable Diffusion can be customized:
+-
+	- [DreamBooth](https://github.com/Stability-AI/dreambooth)
+	- fine-tune on specific concepts
+-
+	- [Stable Diffusion Tuning](https://github.com/yfszzx/stable-diffusion-stability-ai)
+	- improve image quality
+-
+	- [SD highres fix](https://github.com/d8ahazard/sd_hires_face_fix)
+	- enhance face quality
+- ###### Community
+- Vibrant communities continually advance Stable Diffusion:
+-
+	- [StableDiffusion subreddit](https://www.reddit.com/r/StableDiffusion/)
+	- sharing creations and discoveries
+-
+	- [Stability AI Discord](https://discord.gg/stabilityai)
+	- dedicated channels on SD topics
+-
+	- [Civitai](https://civitai.com)
+	- central model hub with versioning
+- ##### ComfyUI
+- [ComfyUI](https://github.com/comfyanonymous) is a feature-rich set oftools and libraries for building interactive web applications using the[React](https://reactjs.org) framework. It makes creating beautiful,functional UIs easy through:
+-
+	- **React-Based**
+	- Built on React for modular, reusable components
+-
+	- **Declarative**
+	- Describe desired UI state without implementation details
+-
+	- **Extensible**
+	- Easily add custom components and functionality
+-
+	- **Testable**
+	- Designed for confident testing of UI behavior
+-
+	- **Documented**
+	- Well-documented for easy learning
+-
+	- **Community**
+	- Large active community for help and support
+- Extensions provide additional capabilities:
+-
+	- **Components**
+	- Pre-built React components for common UI elements like buttons, menus, and forms
+-
+	- **Animations**
+	- Animated React components for engaging UIs
+-
+	- **State Management**
+	- Tools for managing UI state
+-
+	- **Testing**
+	- Utilities for testing ComfyUI applications
+- Other notable features include:
+-
+	- **Responsive Design**
+	- Components auto-adjust layouts for any device size
+-
+	- **Internationalization**
+	- Support for global applications in different languages
+-
+	- **Accessibility**
+	- Interface remains usable by people with disabilities
+- The ComfyUI ecosystem is constantly evolving with new extensions createdby the vibrant community. With its versatility, extensibility andhelpful userbase, ComfyUI empowers developers to create beautiful,functional UIs for diverse web applications. The declarative programmingstyle and reusable components help quickly build interfaces that areresponsive, accessible, and internationalized.
+- #### Video generation
+- This is incredibly fast moving area and I have many many links in myMindmap. This section is a placeholder really, I wouldn’t act on it.
+-
+	- **DALL-E 3D**
+	- 3D model generation by Anthropic using principles from DALL-E 2. Allows:
+-
+	- Text-to-shape generation
+-
+	- Control over materials and lighting
+-
+	- Interaction with object geometry
+-
+	- **Xformation**
+	- Proprietary 3D generation system capable of modifying shape from images.
+-
+	- Deforms template 3D objects to match 2D images
+-
+	- Controllable 3D effects from image edits
+-
+	- **Text2Mesh**
+	- Leveraging Stable Diffusion for text-based 3D model generation.
+-
+	- 3D stylization based on natural language input
+-
+	- Control mesh topology and appearance
+-
+	- **Gaussian Splatting**
+	- A development from the NeRF technology research, and likely the main contender for all future tech right now..
+-
+	- Fast and efficient models
+-
+	- Simple capture
+- Extending image synthesis techniques, models like [StableDiffusion](https://arxiv.org/abs/2105.05233) are being adapted togenerate artificial video content. Dedicated systems like[Phenaki](https://www.anthropic.com/research/phenaki) and[Runway](https://runwayml.com) enable text-to-video generation withcontrol over length, resolution and scene contents.
+- Creating smooth, consistent video requires modeling inter-framecoherence. Techniques like [EBSynth](https://ebsynth.com) achieve thisthrough interpolation and style transfer between frames.[FastVid2Vid](https://www.fastvideoai.com) matches latent vectorsbetween frames to improve consistency. [Instant Neural GraphicsPrimitives](https://nvlabs.github.io/instant-ngp) (Instant-NGP) learns atemporal model over sequences of frames.
+- Existing videos can also be enhanced through diffusion models.Techniques enable automatically increasing resolution, translatingscenes to different styles, editing objects seamlessly, and more.However, concerns exist around deepfake videos and synthetic media.Moderation systems like [Anthropic’s Claude](https://www.anthropic.com)may provide remedies.
+- Overall, rapid progress in generative video hints at possibilities ofcreating immersive films, VR experiences, lifelike avatars and more. Butthoughtful governance frameworks are necessary to manage risks.
+- #### Audio generation
+- Recent breakthroughs have also extended AI synthesis to the audiodomain, enabling applications like text-to-speech, music composition,and editing podcasts.
+- Models like [Jukebox](https://jukebox.openai.com/) and [Facebook’sJukebox](https://github.com/ facebookresearch/jukebox) generate novelmusic conditioned on genres, artists, and lyrics through a hierarchicalVQ-VAE framework. Meanwhile, [CoquiTTS](https://github.com/coqui-ai/TTS) and [Tacotron2](https://github.com/NVIDIA/tacotron2) convert text to human-likespeech using end-to-end neural architectures.
+- For editing audio, tools like [Riptide](https://riptide.ai/) removevocals from songs, while [Descript](https://www.descript.com/) insertsmusic and trims silences in podcasts. However, bad actors could exploitsuch capabilities for impersonation fraud and fake media. Stronggovernance models are critical.
+- Looking ahead, advances in generative audio may enable creatinginteractive AI companions, realistic speech synthesis, and personalizedmusic experiences. But maintaining public trust through transparency andaccountability will be essential.
+- #### 3D generation
+- 3D shape generation has also made strides through AI, transitioningtext-to-image breakthroughs to the 3D domain. Methods like[GA-Fusion](https://nv-tlabs.github.io/GA-fusion) combine GANs withgradient-based optimization for high quality results.[CLIP-Forge](https://github.com/autodeskailab/clip-forge) matchesrendered images with CLIP embeddings to guide optimization.[3D-Highlighter](https://threedle.github.io/3dhighlighter) localizestext prompts on shapes by comparing CLIP similarities.
+- Other approaches focus on reconstructing shapes from images.[XFormation](https://x-a-i.github.io/xformation) deforms template 3Dshapes to match target views. [Sketch-Guided VisionModels](https://sketching-the-future.github.io) optimize an SDF to matchinput sketches. [Dream Fields](https://ajayj.com/dreamfields) uses aNeRF parameterized by FiLM.
+- Such techniques could enable creators to manifest their ideas into 3Dworlds. However, thoughtful governance is critical to reduce risksassociated with impersonation, toxic content, and intellectual property.Community building, education, and responsible deployment will helprealize the positive potential of AI.
+- #### Conclusion
+- Rapid progress in AI has unlocked breakthrough capabilities forsynthesizing realistic content across images, video, audio, and 3Dgeometry. However, concerns around biases, misinformation, and toxiccontent necessitate responsible development and deployment of thesetechnologies. Maintaining public trust through transparency,accountability and inclusivity will be key to ensuring that the benefitsof AI progress outweigh the risks. If harnessed judiciously andethically, generative AI could augment human creativity in unprecedentedways. But it should empower rather than replace us. Ongoing advances inAI safety and governance will help achieve this vision
+- #### Major trends in AI
+- ##### The concentration of AI power
+- In recent times, the arena of artificial intelligence (AI) has seen theemergence of colossal entities that have taken the helm of AI researchand development. Prominent players such as Google, Microsoft, Meta, andOpenAI have plunged billions into the cultivation of potent AIarchitectures, with a special emphasis on large language models (LLMs)like GPT-3 and ChatGPT.
+- Originating in 2015 as a non-profit entity dedicated to the openexploration of AI for the collective good, OpenAI transitioned from itsfoundational ethos following a pivotal investment of $1 billion fromMicrosoft in 2019. This infusion of capital marked a turn towards a moreproprietary and competitive orientation, with the endgame of reachingthe pinnacle of artificial general intelligence (AGI). In this paradigmshift, OpenAI’s formidable 175 billion parameter behemoth, GPT-4, becamean enigmatic entity, shielded from public scrutiny. The rationaleprovided for this clandestine stance revolved around safety andcompetitive considerations.
+- Contrastingly, Meta adopted a path of openness, fully disclosing its 65billion parameter LLaMA 2 LLM, inclusive of the model weights, to thepublic domain. This ethos is rooted in the belief that a culture ofopenness propels rapid advancement by paving the way for widespreadexperimentation and communal contributions. However, it is pertinent tonote that Meta’s LLaMA 2 does carry stipulations on commercialexploitation.
+- Initially, Google was at the forefront of AI innovation with itsTensorFlow framework, but has seen its leading position eroded by Meta’sPyTorch. Post the commercial success of its products, Google’s AIendeavors have veered towards a more proprietary model, with novelmodels and academic publications seeing the light of day postcommercialization.
+- ##### Concentration of Power and Control
+- The centralization of AI evolution within the confines of a select fewprivate behemoths such as Microsoft-backed OpenAI or Google engenders anucleus of power and control over AI advancements. Contrary Research hasan [excellentreport](https://research.contrary.com/reports/the-openness-of-ai) onthis. As AI melds deeper into the fabric of products and services, thesetitans stand to wield extensive sway over the modalities of humancommunication, thought processes, and information accessibility.
+- The dependency on a sparse set of centralized LLMs harbors risks such asa widespread dissemination of confidential data in the face of asecurity breach. Moreover, the consolidated control furnishes thesecorporations with the means to potentially curtail information or moldnarratives in alignment with their vested interests. For instance,OpenAI exercises centralized control over the narrative frameworks ofits influential models like ChatGPT.
+- ##### Lack of Transparency and Innovation
+- Centralized LLMs exhibit a veil of opacity regarding their operationalmechanics and training methodologies. The elusive nature of OpenAI’sGPT-4 renders it a veritable black box, impervious to audits aimed atuncovering issues such as bias within the 175 billion parameter model’straining data. This shroud of mystery precludes informed discourse onthe ethical employment of this technology.
+- On the flip side, Meta’s open-sourced LLaMA facilitates a level ofpublic oversight that could preemptively address inherent issues. Theclandestine nature of closed models stifles innovation as it bars asignificant portion of the research community from building atop thesemodels. Open ideologies foster a milieu of collaboration, propellingprogress forward.
+- In summation, the monopolization of AI progression and influence withina handful of private juggernauts engenders risks spanning lack oftransparency, potential censorship, stifled innovation, and singlepoints of vulnerability. A paradigm shift towards more open anddecentralized methodologies is imperative to mitigate these loomingthreats.
+- ##### Some ways of thinking
+- Poulter [CEO](https://twitter.com/jamespoulter) of Vixen Labs has comeup with a somewhat strained analogy he calls “The Central IntelligenceAgent”. I’m going to include it until I find something better because Ithink he’s struck on something by dividing up the company needs with histaxonomy (Figure<a href="#fig:vixenAnthro" data-reference-type="ref" data-reference="fig:vixenAnthro">8.4</a>).
+- <span class="image">Vixen Labs anthropomorphic taxonomy of businessfunctions</span>
+- [“Renowned Yale Professor Jeffrey Sonnenfeld Discusses CEOs’ Fear andConfusion ofA.I”](https://observer.com/2023/06/ceo-ai-survey-yale-professor/) in arecent survey and presentation, and this is worth a quick look.
+- He sees five groups (per the article):
+-
+	- “Curious creators” argue everything you can do, you should do. (Venture capitalist Marc Andreessen recently expressed a similar view in a blog post about A.I.)
+-
+	- “Euphoric true believers” only see the good in technology.
+-
+	- **“Commercial profiteers” don’t necessarily understand the new technology but are enthusiastically seeking to cash in on the hype.**
+-
+	- “Alarmist activists” advocate for restricting A.I.
+-
+	- “Global governance advocates” support regulation and necessary crackdown.
+- This seems a pretty simplistic set of buckets, but he’s got a decentdataset, and he’s -very- eminent so perhaps we should realistically seeourselves in the emboldened commercial profiteer category. I think thiskind of self reflection is important when dealing with things thispotentially transformational. Sonnenfeld said: it“As Robert Oppenheimerwarned us, it can be very dangerous to think that technology only takesus to the best of the world.”
+- ##### Trusted enterprise AI
+- Enterprise AI, specifically designed or retrofitted for professional usecases, is becoming a significant theme. This trend is driven by leadingcompanies such as Google, Microsoft, and latterly, curiously,Salesforce. Trust has become a primary consideration. At this earlystage in the technology it is important that corporate and private usersalike bear in mind that the LLMs are ‘leaky’ and are using the data fedinto them to train themselves. They are [explicit aboutthis](https://help.openai.com/en/articles/6783457-chatgpt-general-faq).Anything that goes into ChatGPT can resurface, as Samsung have found out[to their cost](https://cybernews.com/news/chatgpt-samsung-data-leak/).At this time the following companies have responded by banning the useof the technology internally.
+-
+	- Apple
+-
+	- Samsung
+-
+	- Verizon
+-
+	- Bank of America Corp.
+-
+	- Citigroup Inc.
+-
+	- Deutsche Bank AG
+-
+	- Goldman Sachs Group Inc.
+-
+	- Wells Fargo & Co.
+-
+	- JPMorgan Chase & Co.
+-
+	- Amazon’s lawyers recommended caution, though a recently leaked document suggests that managers are recommending it’s use.
+- There are likely itmany more who have done this less publicly, andindeed I am aware of examples. In response to this [OpenAIannounced](https://openai.com/blog/new-ways-to-manage-your-data-in-chatgpt)a business version of its tool, ChatGPT Business. Clearly this is apremium subscription service designed to be private by default. Theservice manages multiple users and does not train its future models onany conversations that flow through the business. This approach is asignificant step towards establishing trust in AI tools, as it ensuresthat sensitive business conversations are not used to train AI models.
+- As mentioned, Salesforce has been partially AI-powered for years. Theyrecently announced a series of AI-related developments, including thepilot of ‘Einstein GPT’, dubbed “the world’s first generative AI forCRM”. This tool builds on an existing underlying intelligence layercalled Einstein, which has been running in Salesforce since 2016. Thenew generative Einstein GPT is more content-oriented, helping businessesauto-generate text, pictures, and code. This tool is designed to helpsales teams find the most likely next customer to buy. Moreinterestingly they are leveraging their expertise in ‘SalesforceVentures’ a $500 million fund focused on funding generative AI startups.They have already invested in major projects like Humane, Triple,Anthropic, and Cohere.
+- They have italso announced an AI Cloud suite: ‘Salesforce’s AI Cloud’.It includes nine GPT-powered applications designed to automate andenhance various business processes. These applications include SalesGPT, Service GPT, Marketing GPT, Commerce GPT, **Slack GPT**, TableauGPT, Flow GPT, and Apex GPT.
+- Each of these applications is designed to cater to specific businessneeds, such as personalizing text generation for emails, automatingmundane tasks, customizing messages for different audience segments, andcreating workflows from natural language prompts. You can see that ourwork is already a customer here and this could be built upon.
+- This suite emphasizes the ‘Einstein GPT Trust Layer’, designed to ensureno potential data leakage, allowing enterprises to use AI for their mostsensitive needs. They say this trust layer sits between customer dataand the AI models, ensuring that the AI capability can providepredictions without actually looking inside the data. This approachwould allow our work to leverage the power of enterprise AI withoutsacrificing data privacy and/or security.
+- Elsewhere in enterprise AI:
+-
+	- Accenture announced a $3 billion investment into their data and AI practice. This investment includes doubling their talent to 80,000 people, launching an AI navigator for Enterprise platform, and starting accelerators for data and AI readiness across 19 different industries.
+-
+	- Contextual, an enterprise-focused AI startup, recently launched out of stealth with $20 million in seed funding.
+-
+	- Glean announced a $100 million round and introduced a workplace chatbot called the Glean Chat Business.
+-
+	- Olive: This healthcare automation startup has raised $450 million in fresh capital to build out its enterprise AI for hospitals 1.
+-
+	- Welltok: This company provides a cloud-based employee wellness platform and has raised $355 million 1.
+-
+	- Outreach: This sales engagement platform has raised $114 million in series E funding 1.
+-
+	- Stackpath: This cybersecurity startup has raised $396 million in funding 1.
+-
+	- Cohere, which is another business-focused AI startup, recently announced a $270 million series C funding round 2, and are partnered by [Oracle](https://www.oracle.com/news/announcement/oracle-to-deliver-powerful-and-secure-generative-ai-service-for-business-2023-06-13/).
+-
+	- Tunisian enterprise AI startup InstaDeep has also raised $100 million in Series B financing led by Alpha 3.
+-
+	- There’s a raft of tools like [CustomGPT](https://customgpt.ai/), or day planner [Before Sunset](https://www.beforesunset.ai/) that promise to take your data and make it smart by leveraging their deals with the big cloud providers. The prime example of this approach is [Dropbox AI](https://blog.dropbox.com/topics/product/introducing-AI-powered-tools), which claims to bring the Apple spotlight experience, with ChatGPT smarts, to clouds data. I don’t have confidence that I know enough about this, and it seems to be the purview of the AI-Club. If you have a use case there’s likely a product, but we’d have to project plan it in specifically and find the right fit and cost/benefit.
+- Taken overall these investments indicate a strong belief in thetransformative potential of AI in the enterprise sector.
+- With all this said it’s possible the technology is over-hyped. Whilesome believe that AI will disrupt industries in unimaginable ways,others argue that the technology still has a long way to go. Some evenargue that the distracting nature of the platforms may be net negativein the short term. Regardless, the current state of Enterprise AIrepresents a pivotal moment, with companies trying to productise AI andchange workflows within large corporations. The impact of thesedevelopments could range from a promise of transformation with AI beingevery bit as disruptive as everyone says it is, to an overhyped flop, asoften happens with new technologies. Some industry analysts argue thatwe’re still in the early stages of AI’s potential impact. Tech analystDan Ives likens the current state of AI to a “Gold Rush” moment,suggesting that we’re closer to 1995 than 1999 in terms of AI’sevolution and impact on industries. This perspective suggests that whileAI has made significant strides, there’s still a long way to go beforeit fully transforms the business landscape. I would tentatively agreewith this analysis, and avoid over investing in low confidence FOMOplays.
+- ##### Brute forcing ChatGPT4 with contexts
+- While we await ‘ChatGPT Business’ it’s still possible to explore usingthe tooling. The ChatGPT4 system is so far out ahead of everyone elseit’s sometimes useful to consider using it for business by adding incarefully crafted chunks of context data to refine how it answers. Thisis prompt engineered. A fine example of this everyday use of thetechnology can be found in [this clarify capitalreport](https://clarifycapital.com/the-future-of-investment-pitching)which finds that ChatGPT created pitch decks are **far** more compellingthan human created ones. It can be developed onward for more complexcorporate proposals like this through the API, which is a subscriptionservice, with additional tiers for heavy corporate use cases(<a href="#sec:microsoft" data-reference-type="ref" data-reference="sec:microsoft">8.2.8.8</a>).
+-
+	- **Advantages**
+-
+	- Can be trialled in the web interface, spending a few hours or        perhaps days building a custom context that solves a specific        use case for the business, then simply copy/pasting.
+-
+	- **OpenAI GPT is incredibly cost effective** ($1 for around 700        pages for GPT3.5 performance), or $20 a month for the web        subscription.
+-
+	- GPT4 is **way** ahead in terms of performance. Possibly 18        months ahead of open source.
+-
+	- Incredible team and partnership. Plug-ins are arriving very fast        to solve real business problems. They have scale and velocity.
+-
+	- **Disadvantages**
+-
+	- In terms of future project planning 18 months isn’t that long,        open source is worth investing in for the sake of        differentiation in those time-scales.
+-
+	- It’s a very general model, refining this through the API means        programming work. This is a known unknown with staffing costs.
+-
+	- You’re necessarily giving your commercial data to a cloud        service.
+-
+	- Their “corporate” private package has trust implications, and        cost implications (more in the next section).
+-
+	- **It’s reliant on a reliable internet connection, so it’s        suitable for the office but perhaps not ‘site’. Using it might        therefore mean ending up investing time in two development        tracks**.
+- One of the incredibly frustrating things about the GPT series is thatOpenAI are changing the code behind the models all the time as seen infigure<a href="#fig:GPTchanges" data-reference-type="ref" data-reference="fig:GPTchanges">8.5</a>.This makes it hard to build upon in a trustable way.[[chen2023chatgpts]]The team built a dataset with 50 easy problems from LeetCode andmeasured how many GPT-4 answers ran without any changes. The Marchversion succeeded in 52% of the problems, but this dropped to a pale 10%using the model from June. I assume that OpenAI pushes changescontinuously, but we don’t know how the process works and how theyevaluate whether the models are improving or regressing. In my opinion,this is a red flag for anyone building applications that rely on GPT-4.Having the behavior of an LLM change over time is not acceptable.
+  ![]./assets/6bdb61174f6f0a8b5312c6a308bb3899bfc592fd.jpg
+  Changes to GPT models performance over time
+	- denied by OpenAI (Chen et al)<span class="citation" data-cites="chen2023chatgpts"><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></span><section class="footnotes" role="doc-endnotes"><hr /><ol><li id="fn1" role="doc-endnote"><p>Ibid.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section>
+- ##### ChatGPT
+	- Code Interpreter
+- The ChatGPT Code Interpreter Plugin, introduced in March 2023, offers asandboxed environment featuring a working Python interpreter. Thisenvironment, which is isolated from other users and the Internet,supports an impressive array of functionalities. It comes pre-loadedwith over 330 libraries, including popular ones such as pandas,matplotlib, seaborn, and TensorFlow, among others.
+- As illustrated in Figure<a href="#fig:chatGPTdata" data-reference-type="ref" data-reference="fig:chatGPTdata">8.8</a>,the Code Interpreter Plugin is capable of performing a myriad of tasks.For example, it can visualize any data inputted by the user, generateGIFs of the visualizations, and perform file uploads and downloads. Itcan extract colors from an image to create a color palette, andautonomously compress large images when memory is running low. Moreover,the plugin can clean and process data, generate insightfulvisualizations, and convert files to different formats quickly andefficiently.
+- The Code Interpreter Plugin can be installed by ChatGPT Plus users in afew simple steps. However, it is worth noting that while this plugin ispowerful, it does have certain limitations, such as frequent environmentresets, limited Optical Character Recognition (OCR) capabilities, and aninability to access the web. Despite these limitations, OpenAI continuesto work on improving the capabilities of the Code Interpreter Plugin,promising a future with substantial impacts on the world of programming.
+-
+	- The Code Interpreter Plugin introduces a sandbox and an advanced language model, both of which are critical to its functionality.
+-
+	- The emphasis of the plugin is on the quality of the model, which can generate code, debug it, and even decide when not to proceed without human input.
+-
+	- The plugin offers substantial model autonomy, enabling it to work through multiple steps of code generation autonomously.
+-
+	- Despite its powerful capabilities, the plugin does have limitations, such as frequent environment resets and limited OCR capabilities.
+-
+	- The plugin is only available to ChatGPT Plus users, and requires a few simple steps for installation.
+-
+	- The Code Interpreter Plugin represents a significant advancement in the realm of programming, changing the way programmers interact with AI systems.
+- ##### Go all in with Microsoft
+- Microsoft have -just- released GPT4 which privately works on your owndata. [This is likely the best option on the market rightnow](https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/introducing-azure-openai-service-on-your-data-in-public-preview/ba-p/3847000).
+- ##### Anthropic
+	- Claude 2
+- Claude-2, Anthropic’s ChatGPT competitor was just released. It’scheaper, stronger, faster, can handle PDFs, and supports longerconversations.
+-
+	- Claude is 5x cheaper than GPT-4.
+-
+	- It has more recent data. A a mix of websites, licensed data sets from third parties and voluntarily-supplied user data from early 2023.
+-
+	- It outperforms GPT4 on the GRE writing and HumanEval coding benchmarks.
+-
+	- It features a context window of 100,000 tokens, the largest of any commercially available model.
+-
+	- It can analyze roughly 75,000 words, about the length of “The Great Gatsby".
+-
+	- It can easily handle any code related tasks.
+- ##### Llama 2
+- The new Llama 2 model from Meta looks initially exciting but is prettymired in legal detail compared to the emerging open source communityefforts.
+- ###### License Grant
+- You are granted a non-exclusive, worldwide, non-transferable,royalty-free license to use, reproduce, distribute, modify, and createderivative works of Llama 2.
+- ###### Attribution and Acceptable Use
+- You must retain the attribution notice in all copies of Llama 2. Youruse must comply with Meta’s Acceptable Use Policy, which prohibitsillegal, deceptive, dangerous, or harmful uses.
+- ###### Commercial Use and Model Improvement
+- You cannot use Llama 2 to improve any other large language model besidesLlama 2. If your products or services have over 700 million monthlyactive users, you must obtain a separate license from Meta.
+- ###### Disclaimer, Liability, and Ownership
+- Llama 2 is provided "as is" with no warranties. You assume all risksfrom use. Meta has no liability for damages arising from use of Llama 2.You own any derivative works and modifications you create, subject toMeta’s ownership of Llama 2.
+- ###### Termination and Risks
+- Meta can terminate the license if you breach it. You must delete Llama 2on termination. Be aware of regulations like Article 28b of the AI Actin the EU. Do appropriate diligence to comply with laws and addressrisks around bias, fairness, transparency, and safety.
+- ###### Key Takeaways
+- Understand attribution requirements, acceptable use policy, commercialuse limits, disclaimer, risks, and ownership provisions. Seek legalcounsel given complexities.
+- ##### Roll your own trained LLM
+- This costs around $500k to train something up from a trillion tokensthat you bring to the party. This gets to ‘last years’ GPT3 level. It’stoo much, but it’s worth being aware of. It’s worth noting that Cerebrasare offering access to their [Andromedacluster](https://www.cerebras.net/press-release/cerebras-unveils-andromeda-a-13.5-million-core-ai-supercomputer-that-delivers-near-perfect-linear-scaling-for-large-language-models)which can train a significant model in the vein of Llama in around 11days.
+- ##### Wait for the Google integrations
+- I very strongly suspect that corporate level ML assistance is coming inforce to the Google stack already employed at our work. This is **by farthe most likely and pragmatic solution for the ‘project planningassistant’ business case**. [Vertex AI]() cloud based generative artsupport shows the direction of travel in this regard. \[enhanced, framestyle=fill=lightgray, interior style=fill=lightgray\] With this update,developers can access our text model powered by PaLM 2, Embeddings APIfor text, and other foundation models in Model Garden, as well asleverage user-friendly tools in Generative AI Studio for model tuningand deployment. Backed by enterprise-grade data governance, security,and safety features, Vertex AI can make it easier than ever forcustomers to access foundation models, customize them with their owndata, and quickly build generative AI applications.
+-
+	- Advantages
+-
+	- our work already trusts Google with it’s business data
+-
+	- Single repository potential to leverage that fact
+-
+	- Will likely be very cheap as a customer incentive. Currently        it’s around 700 pages per dollar.
+-
+	- Disadvantages
+-
+	- GCHQ have [taken the unusual        step](https://www.ncsc.gov.uk/blog-post/chatgpt-and-large-language-models-whats-the-risk)        of warning that the data put into these systems goes into their        training and can thereby resurface in competitors searches later
+-
+	- The likes of Apple and Samsung have banned the use of these        cloud tools as a result. There’s anecdotal evidence of        commercially sensitive details surfacing, though it’s hard to        validate these
+-
+	- The products can change over time, in ways that are outside of        your control
+- With all that said there is potentially business advantage to learninghow these systems work through doing.
+- ##### Build something custom self hosted
+- Building something custom here means taking an open source model, with apermissive license. There’s a lot of these now and they are ‘decent’.It’s possible to add in some code engineering around the edges to giveit access to private datasets through a chat interface.
+-
+	- **Advantages**
+-
+	- It’s private, local, under your control, and so you can trust        your data will be within the company walled garden
+-
+	- It’s building toward IP and knowledge, in the likely scenario        where GPT4 level models are less than 2 years away. This is real        internal investment
+-
+	- There are NO legal repercussions to using it in a purely        off-line way. You don’t even need to tell people you’re doing        it. ‘Probably’ no GPDR, data governance, compliance overheads if        designed right.
+-
+	- **Disadvantages**
+-
+	- It will still lie, and the company and individuals are still        responsible for the legal repercussions of acting on what the        model says.
+-
+	- In a live deployment to the public it will occasionally say “bad        things”. It’s just impossible to control edge cases. Even        without the issues incurred by being online, the exposure around        that in terms of waivers is uncertain.
+-
+	- Making it fit for purpose by adding memory is hard. The token        limits on these models are really small. They’re just not that        smart yet.
+- Below is output from the top two models from the [global leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard).The second highest rated worked better (supercot). Into it I uploadedthe ‘International Code of Practice for Entertainment Rigging’ which isa [meagre 35 pagedocument](https://www.plasa.org/wp-content/uploads/2017/11/ICOPER_V1.0.pdf).I have done 500 pages in the past but the quality starts to break downwith scale. Section 3.5 of the document says \[enhanced, framestyle=fill=lightgray, interior style=fill=lightgray\]“All custom builtequipment selected for a project must be reviewed and approved by aqualified person. Custom built equipment must be provided with necessarymarkings and documentation to ensure safe use.” You can see the outputfrom the model running at home (without internet) in Figure<a href="#fig:ICOPERLLM" data-reference-type="ref" data-reference="fig:ICOPERLLM">8.6</a>.It has royally embellished the facts, but it’s actually delivering upgood advice, and the memory injection from the uploaded document meansit’s specific enough to the context of the question.
+  ![]./assets/ed4ec4e9acf8ecb80219042a6dc1a2d1b7235a02.png
+  Results from home hosted LLM
+- I have very much seen this when playing with both my own "landmarkattention" models, and Claude. I expect they will find a way round it atsome point. Because humans write with a focus on the beginning and endof documents, so large language models pay far more attention at thebeginning and end of their context input.[[liu2023lost]]
+- That’s tricky because if you load in a stack of PDFs and they gettranslated by the system into one big chunk (which may or may not be inthe expected order of the PDFs), then the PDFs in the middle of thesubmission are subject to more hallucination, garbling, forgetting etc.
+- The "other" system, vector databases is more even handed, and socommensurately more predictable. Still got huge problems though.
+- I have seen both effects. They’re currently both bad enough that Iwouldn’t trust document interrogation to these things. There areworkarounds obviously: Ask for references, ask if to tell you if itthinks it’s making it up, as for quotes, ask for locations, check theworking, ask in many sperate ways etc.
+- These "tips" can be encoded into the preamble that goes into everyquery, as a standing command, so you don’t have to, except for thechecking bit of course. You can do that with either self host models orthe web ones, but it’s something you need to do often with the webinterfaces. There’s no silver bullet yet but it feels like months away,so I am not advocating learning these tricks. Might be better to waitfor the fixes. Just don’t trust them, these are the reasons, and theyare all basically seeded in the way humans write.
+- There’s a lot that can be done here, but the cost benefit is unclear. Ifthis were sensitive internal planning documents, with a lot ofcomplexity, then there’s potentially a strong case, but we’d need tightprocedures to check on it’s homework. This tool, as usual, is best as away to rapidly construct a framework.
+- As a side note there’s a lot of open source tools like[SuperAGI](https://github.com/TransformerOptimus/SuperAGI) for ‘Agents’and [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) fordocument analysis which straddle the line between using cloud vendorsand local hosting. Building on one of these gives optionality, but theyare new and ‘flakey’.
+- ##### LoRA training
+- LoRA stands for Low-Rank Adaptation and it’s a cheap way to optimisemodels. A few hundred dollars of rented GPU time can nuance a model tobe more performant for a specific task. It sounds great but basicallyyou’re optimising for a task that you need to understand very well,possibly/probably to the detriment of the generality of the tool. Ifthere’s something you know you want, then this is an option that’sachievable and affordable.
+- Goat, a 7B LLaMA model finetuned for arithmetic tasks notablyoutperformed the  75x larger 540B PaLM model and GPT-4. Goat’s successcan be attributed to two primary factors: task-specific finetuning andLLaMA’s unique digit tokenization. The problem here is Llama is arguablyderived from data with a non-commercial license. OpenLlama gets aroundthis with their Apache2 (do what you like) copy of the model. Thesituation is rapidly evolving. Another example of task-specificfinetuning is the Gorilla project, where the LLM was trained to generateAPI calls. This is a really important area and we might be able to getahead in this niche. This controlling complex whole site systems withvoice control. The model was finetuned using 1,645 API calls fromvarious sources and demonstrated superior performance compared tonon-finetuned models. We can easily repeat that.
+- Recent findings suggest that less LoRA training gets better results, sothis is increasingly being adopted as a way to improve businessfit.[[xue2023repeat]]
+- ##### Enormous token limits
+- There’s a few models now boasting staggering token input limits. With 1million token windows it’s possible that each query to the LLM can be‘the whole corporate database and filesystem’ and then the question youwant an answer to. This is a beguiling option, probably the mostperformant (though I have not played with one), and also pretty muchuseless as nobody yet offers a legally trustable way to upload yourwhole business into a chat window.
+-
+	- **Advantages**
+-
+	- Likely excellent at it’s job
+-
+	- Will ‘hallucinate’ less
+-
+	- Probably stay on target
+-
+	- Knows all about the business
+-
+	- **Disadvantages**
+-
+	- Web based right now, and knows all about the business
+-
+	- Not actually available, I’m on wait lists.
+-
+	- Longer latency as everything will need uploading in the token        window (assuming you don’t buy a service)
+- Very recently this in beginning to shift with the[emergence](https://github.com/eugenepentland/landmark-attention-qlora)of a locally run [‘landmark attention’ model](). There are some issueswith it at time of writing but this could be run on an our work cloudinstance. I have 4000 tokens running at home. I am exploring tree ofthought which needs these bigger windows and elevates reasoning by 70percent.[[yao2023tree]]
+- ##### Memory and other systems
+- There’s many ways to use a database (in this case a ‘vector’ DB) toprime the context window with appropriate information. It’s alsopotentially useful to look at combining older and well understood MLtechniques like knowledge graphs in combination.[[pan2023unifying]] I’venot personally had much luck with these yet.
+- ##### Cost implication for self build
+- It’s less than $20k to build a system that can do anything you need, onsite, rack mount in a ship, whatever. You can do it for less in thecloud, see the next section. You can also spend much, much more.Use-case dependent.
+- Here’s the output from the ‘local’ open source model for clarity. Noteit drifts off into nonsense toward the end then stops. This can be dealtwith but I chose not to: \[enhanced, frame style=fill=lightgray,interior style=fill=lightgray\] ASSISTANT:Based on the providedinformation, here are some steps you can take regarding custom builtequipment: 1. Ensure that the equipment is properly marked and traceableto the manufacturer. 2. Keep up-to-date with maintenance schedules andensure that maintenance records are readily available. 3. Follow safetyprocedures and guidelines for rigging work, including visualinspections, PPE usage, and clear communication. 4. Prevent anymalfunctioning or faulty equipment from being used and quarantine it ifnecessary. 5. Use equipment with a capacity that meets or exceeds thedesign specifications in the lifting plan. 6. Attach loads in a mannerthat does not damage the equipment or the load, and consider sling anglefactors. 7. Inspect electrical connections and repair or replaceequipment as necessary. 8. Maintain good housekeeping and prepare a post
+- ##### Build something custom in a private cloud
+- This is exactly the same as the previous section but you hire a privatecloud system ‘on demand’ to do the work. This is [currently pricedat](https://lambdalabs.com/service/gpu-cloud/pricing) $1.10/hr and onlycosts you money when you’re using it (though you have to shut it downyourself). This is both secure, and fairly cost effective. Also, itscales in that if you find a real serious application you can just getbigger rental GPUs and open a private/public interface. **It’s mypreferred path of all the private use cases except for mission criticalon site stuff**, and edge cases like boats at sea etc. For that you needto buy GPUs. AMD have [recentlyannounced](https://www.amd.com/en/newsroom/press-releases/2023-6-13-amd-expands-leadership-data-center-portfolio-with-.html)a partnership with opensource behemoth Huggingface to allow access tolarge and capable models like Falcon in their enormous new memoryarchitecture. Falcon is from the UAE and has odd views on human rights.This is one to watch.

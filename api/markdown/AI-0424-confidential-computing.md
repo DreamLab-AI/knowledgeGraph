@@ -19,15 +19,14 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: ai:ConfidentialComputing
+    - owl:class:: aigo:ConfidentialComputing
     - owl:physicality:: VirtualEntity
     - owl:role:: Process
-    - owl:inferred-class:: ai:VirtualProcess
+    - owl:inferred-class:: aigo:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 
   - #### Relationships
-- is-subclass-of:: [[Artificial Intelligence]]
     id:: 0424-confidential-computing-relationships
 
   - #### OWL Axioms
@@ -122,8 +121,5 @@
 - ## About 0424 Confidential Computing
   id:: 0424-confidential-computing-about
 
-  - 
   -
-  
-
-- ## Nucleus Server for Omniverse
+  -

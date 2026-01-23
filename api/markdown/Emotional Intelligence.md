@@ -1,17 +1,42 @@
 - ### OntologyBlock
   id:: emotionalintelligence-ontology
   collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0870
-	- source-domain:: ai
-	- preferred-term:: Emotional Intelligence
-	- status:: complete
-	- public-access:: true
-	- source:: Chimera Prime Research
-	- maturity:: established
-	- owl:class:: ai:EmotionalIntelligence
-	- belongsToDomain:: [[Artificial Intelligence]]
 
-### Relationships
+  - **Identification**
+    - domain-prefix:: AI
+    - sequence-number:: 0870
+    - filename-history:: ["AI-0870-emotionalintelligence.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: AI-0870
+    - preferred-term:: Emotional Intelligence
+    - source-domain:: ai
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-- is-subclass-of:: [[ArtificialIntelligence]]
+  - **Definition**
+    - definition:: 
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: ai:EmotionalIntelligence
+    - belongsToDomain:: [[Artificial Intelligence]]
+
+  - #### Relationships
+    - is-subclass-of:: [[Artificial Intelligence]]
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :EmotionalIntelligence))
+      (SubClassOf :EmotionalIntelligence :ArtificialIntelligence)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :EmotionalIntelligence "Emotional Intelligence"@en)
+      ```
+
+- ## About Emotional Intelligence
+  

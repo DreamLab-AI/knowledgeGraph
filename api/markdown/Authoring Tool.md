@@ -2,28 +2,21 @@
   id:: authoring-tool-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: DT-0101
-	- preferred-term:: Authoring Tool
+	- term-id:: 20101
 	- source-domain:: mv
-	- public-access:: true
-
-
-
-
-### OWL Classification
+	- preferred-term:: Authoring Tool
+	- definition:: Software application for creating or editing immersive content, including 3D models, environments, interactions, and multimedia assets for metaverse experiences.
+	- maturity:: mature
+	- source:: [[ETSI GR ARF 010]], [[MSF Taxonomy]], [[SIGGRAPH Pipeline WG]]
 	- owl:class:: mv:AuthoringTool
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
-
-### Domain & Architecture
-	- belongsToDomain:: [[InteractionDomain]], [[DisruptiveTechDomain]], [[CreativeMediaDomain]]
+	- owl:functional-syntax:: true
+	- belongsToDomain:: [[CreativeMediaDomain]], [[InteractionDomain]]
 	- implementedInLayer:: [[ComputeLayer]]
-	- maturity:: mature
-
-### Relationships
-id:: authoring-tool-relationships
-		- is-subclass-of:: [[Metaverse]]
+	- #### Relationships
+	  id:: authoring-tool-relationships
 		- has-part:: [[Editor Interface]], [[Asset Pipeline]], [[Preview System]], [[Generative Design Tool]]
 		- requires:: [[Compute Infrastructure]], [[Graphics API]]
 		- enables:: [[Content Creation]], [[3D Modeling]], [[Scene Design]], [[Interactive Experience Development]]
@@ -73,10 +66,10 @@ id:: authoring-tool-relationships
 		  SubClassOf(mv:ContentCreation mv:VirtualProcess)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:requires)
+  AsymmetricObjectProperty(dt:requires)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:enables)
+  AsymmetricObjectProperty(dt:enables)
 ```
 - ## About Authoring Tools
   id:: authoring-tool-about
@@ -94,7 +87,7 @@ id:: authoring-tool-relationships
 	- ### Technical Components
 	  id:: authoring-tool-components
 		- [[Editor Interface]] - User interaction environment
-		- [[Asset Pipeline]] - Import, process, optimise content
+		- [[Asset Pipeline]] - Import, process, optimize content
 		- [[Preview System]] - Real-time visualization
 		- [[Graphics API]] - Rendering backend
 		- [[Compute Infrastructure]] - Processing resources
@@ -103,11 +96,11 @@ id:: authoring-tool-relationships
 	-
 	- ### Functional Capabilities
 	  id:: authoring-tool-capabilities
-		- **3D Modelling**: Create and edit geometric objects
+		- **3D Modeling**: Create and edit geometric objects
 		- **Scene Design**: Compose environments and layouts
 		- **Material Editing**: Define surface properties and shaders
 		- **Animation**: Create movement and transitions
-		- **Interaction Design**: Define user interactions and behaviours
+		- **Interaction Design**: Define user interactions and behaviors
 		- **Asset Optimization**: Reduce file sizes and improve performance
 		- **Platform Export**: Target multiple devices and platforms
 	-
@@ -118,7 +111,7 @@ id:: authoring-tool-relationships
 		- **Unreal Editor** - Real-time 3D creation tool
 		- **Adobe Substance** - Material authoring tools
 		- **Houdini** - Procedural 3D animation software
-		- **Maya/3ds Max** - Professional 3D modelling software
+		- **Maya/3ds Max** - Professional 3D modeling software
 		- **Mozilla Hubs Editor** - Web-based VR scene creation
 	-
 	- ### Use Cases
@@ -135,7 +128,7 @@ id:: authoring-tool-relationships
 	- ### Workflow Integration
 	  id:: authoring-tool-workflow
 		- **Concept** → Sketch and planning
-		- **Modelling** → 3D geometry creation
+		- **Modeling** → 3D geometry creation
 		- **Texturing** → Surface detail application
 		- **Rigging** → Animation preparation
 		- **Animation** → Movement creation
@@ -156,7 +149,7 @@ id:: authoring-tool-relationships
 		- [[VirtualObject]] - Inferred parent class
 		- [[Software]] - Direct parent class
 		- [[Game Engine]] - Runtime platform for authored content
-		- [[3D Modelling Software]] - Specialized subset
+		- [[3D Modeling Software]] - Specialized subset
 		- [[Content Creation Tool]] - General category
 		- [[Asset Pipeline]] - Component
 		- [[Content Creation]] - Primary capability
@@ -174,8 +167,11 @@ id:: authoring-tool-relationships
 	- imported-from:: [[Metaverse Glossary Excel]]
 	- import-date:: [[2025-01-15]]
 	- ontology-status:: migrated
-	- public-access:: true
+- public-access:: true
+	- migration-date:: [[2025-10-14]]
+	- classification-rationale:: Virtual (software application) + Object (tool/artifact) → VirtualObject
 
+    - uses-technique:: [[3D Modeling Software]]
 ## Academic Context
 
 - Brief contextual overview
@@ -262,10 +258,10 @@ id:: authoring-tool-relationships
 10. Newcastle Digital Arts. (2025). Newcastle Digital Arts Hub. https://newcastledigitalarts.org.uk/
 11. Sheffield Digital. (2025). Sheffield Digital Innovation Hub. https://sheffielddigital.org.uk/
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-

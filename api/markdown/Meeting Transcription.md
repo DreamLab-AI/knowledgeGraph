@@ -1,19 +1,42 @@
 - ### OntologyBlock
   id:: meetingtranscription-ontology
   collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0855
-	- source-domain:: ai
-	- preferred-term:: Meeting Transcription
-	- status:: complete
-	- public-access:: true
-	- source:: Chimera Prime Research
-	- maturity:: established
-	- owl:class:: ai:MeetingTranscription
-	- belongsToDomain:: [[Artificial Intelligence]]
-	- #### Relationships
-- is-subclass-of:: [[SpeechRecognition]]
-- is-subclass-of:: [[SpeechRecognition]] ; bridge to disruptive-technologies
-	  id:: meetingtranscription-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[SpeechProcessing]]
+
+  - **Identification**
+    - domain-prefix:: AI
+    - sequence-number:: 0855
+    - filename-history:: ["AI-0855-meetingtranscription.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: AI-0855
+    - preferred-term:: Meeting Transcription
+    - source-domain:: ai
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
+
+  - **Definition**
+    - definition:: 
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: ai:MeetingTranscription
+    - belongsToDomain:: [[Artificial Intelligence]]
+
+  - #### Relationships
+    - is-subclass-of:: [[Speech Recognition]]
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :MeetingTranscription))
+      (SubClassOf :MeetingTranscription :SpeechRecognition)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :MeetingTranscription "Meeting Transcription"@en)
+      ```
+
+- ## About Meeting Transcription
+  

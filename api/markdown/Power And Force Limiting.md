@@ -1,16 +1,174 @@
 - ### OntologyBlock
-  id:: power-and-force-limiting-ontology
+  id:: rb-0094-power-and-force-limiting-ontology
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0094
+	- domain-prefix:: RB
+	- sequence-number:: 0094
+	- filename-history:: ["rb-0094-power-and-force-limiting.md"]
 	- preferred-term:: Power And Force Limiting
-	- source-domain:: rb
-	- owl:class:: rb:PowerAndForceLimiting
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
-	- is-subclass-of:: [[Robotics]]
-	- definition:: Power and force limiting (PFL) is a safety principle in collaborative robotics enabling robots to operate safely in shared workspaces by constraining the mechanical energy exerted during contact.
+    - public-access:: true
+	- definition:: ### Primary Definition
+**Power and Force Limiting** - Power and Force Limiting in robotics systems
 	- maturity:: draft
+	- owl:class:: mv:rb0094powerandforcelimiting
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About rb 0094 power and force limiting
+	- ### Primary Definition
+**Power and Force Limiting** - Power and Force Limiting in robotics systems
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# RB-0094: Power and Force Limiting
+		  
+		  ## Metadata
+		  - **Term ID**: RB-0094
+		  - **Term Type**: Core Concept
+		  - **Classification**: Safety & Standards
+		  - **Priority**: 1 (Foundational)
+		  - **Authority Score**: 0.95
+		  - **ISO Reference**: ISO 8373:2021
+		  - **Version**: 1.0.0
+		  - **Last Updated**: 2025-10-28
+		  
+		  ## Definition
+		  
+		  ### Primary Definition
+		  **Power and Force Limiting** - Power and Force Limiting in robotics systems
+		  
+		  ### Standards Context
+		  Defined according to ISO 8373:2021 and related international robotics standards.
+		  
+		  ### Key Characteristics
+		  1. Core property of robotics systems
+		  2. Standardised definition across implementations
+		  3. Measurable and verifiable attributes
+		  4. Essential for safety and performance
+		  5. Industry-wide recognition and adoption
+		  
+		  ## Formal Ontology (OWL Functional Syntax)
+		  
+		  ```clojure
+		  (Declaration (Class :PowerandForceLimiting))
+		  (SubClassOf :PowerandForceLimiting :Robot)
+		  
+		  (AnnotationAssertion rdfs:label :PowerandForceLimiting "Power and Force Limiting"@en)
+		  (AnnotationAssertion rdfs:comment :PowerandForceLimiting
+		    "Power and Force Limiting - Foundational robotics concept"@en)
+		  (AnnotationAssertion :termID :PowerandForceLimiting "RB-0094"^^xsd:string)
+		  
+		  (Declaration (ObjectProperty :relates To))
+		  (ObjectPropertyDomain :relatesTo :PowerandForceLimiting)
+		  
+		  (Declaration (DataProperty :hasProperty))
+		  (DataPropertyDomain :hasProperty :PowerandForceLimiting)
+		  (DataPropertyRange :hasProperty xsd:string)
+		  ```
+		  
+		  ## Relationships
+		  
+		  ### Parent Classes
+		  - `Robot`: Primary classification
+		  
+		  ### Related Concepts
+		  - Related robotics concepts and systems
+		  - Cross-references to other ontology terms
+		  - Integration with metaverse ontology
+		  
+		  ## Use Cases
+		  
+		  ### Industrial Applications
+		  1. Manufacturing automation
+		  2. Quality control systems
+		  3. Process optimization
+		  
+		  ### Service Applications
+		  1. Healthcare robotics
+		  2. Logistics and warehousing
+		  3. Consumer robotics
+		  
+		  ### Research Applications
+		  1. Academic research platforms
+		  2. Algorithm development
+		  3. System integration studies
+		  
+		  ## Standards References
+		  
+		  ### Primary Standards
+		  1. **ISO 8373:2021**: Primary reference standard
+		  2. **ISO 8373:2021**: Robotics vocabulary
+		  3. **Related IEEE standards**: Implementation guidelines
+		  
+		  ## Validation Criteria
+		  
+		  ### Conformance Requirements
+		  1. ✓ Meets ISO 8373:2021 requirements
+		  2. ✓ Documented implementation
+		  3. ✓ Verifiable performance metrics
+		  4. ✓ Safety compliance demonstrated
+		  5. ✓ Industry best practices followed
+		  
+		  ## Implementation Notes
+		  
+		  ### Design Considerations
+		  - System integration requirements
+		  - Performance specifications
+		  - Safety considerations
+		  - Maintenance procedures
+		  
+		  ### Common Patterns
+		  ```yaml
+		  implementation:
+		    standards_compliance: true
+		    verification_method: standardised_testing
+		    documentation_level: comprehensive
+		  ```
+		  
+		  ## Cross-References
+		  
+		  ### Metaverse Ontology Integration
+		  - Virtual representation systems
+		  - Digital twin integration
+		  - Simulation environments
+		  
+		  ### Domain Ontologies
+		  - Manufacturing systems
+		  - Control systems
+		  - Safety systems
+		  
+		  ## Future Directions
+		  
+		  ### Emerging Trends
+		  1. AI and machine learning integration
+		  2. Advanced sensing capabilities
+		  3. Improved safety systems
+		  4. Enhanced human-robot collaboration
+		  5. Standardisation advancements
+		  
+		  ---
+		  
+		  **Version History**
+		  - 1.0.0 (2025-10-28): Initial foundational definition
+		  
+		  **Contributors**: Robotics Ontology Working Group
+		  **License**: CC BY 4.0
+		  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0094`
+		  
+		  ```
+
+	- ### [swift-ocr-llm-powered-pdf-to-markdown](https://github.com/yigitkonur/swift-ocr-llm-powered-pdf-to-markdown)
+
+- ## AI as soft power
+
+- ## AI as soft power
+
+- ## AI as soft power
+
 
 ## Academic Context
 
@@ -104,10 +262,12 @@
 8. Digital Engineering Technology & Innovation (DETI). https://www.deti.org.uk/
 9. National Innovation Centre for Ageing (NICA). https://www.nica.ac.uk/
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
 

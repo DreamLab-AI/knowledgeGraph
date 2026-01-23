@@ -3,16 +3,15 @@
   "title": "Social Vr",
   "content": "- ### OntologyBlock\n  id:: social-vr-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10046\n\t- source-domain:: mv\n\t- preferred-term:: Social Vr\n\t- status:: active\n\t- definition:: Virtual reality platforms designed for social interaction and community building, enabling users to gather in customizable three-dimensional spaces as expressive avatars with spatial audio, gesture support, and real-time communication capabilities transcending geographical limitations.\n\t- owl:class:: mv:SocialVr\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: social-vr-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Virtual Reality Platform]]\n\t\t- related-to:: [[Avatar System]]\n\t\t- related-to:: [[Virtual Community]]\n\t\t- related-to:: [[Immersive Communication]]\n\t\t- enables:: [[Virtual Social Presence]]\n\t- #### Leading Platforms\n\t  collapsed:: true\n\t\t- VRChat (user-generated worlds)\n\t\t- Meta Horizon Worlds (Meta ecosystem)\n\t\t- Rec Room (casual and family-friendly)\n\t\t- AltspaceVR (enterprise events)\n\t\t- Somnium Space (blockchain integration)\n\t- #### Key Features\n\t  collapsed:: true\n\t\t- Customizable avatar representation\n\t\t- Spatial audio for natural conversation\n\t\t- User-created virtual environments\n\t\t- Real-time gesture and expression tracking\n\t\t- Cross-platform accessibility",
   "backlinks": [
-    "TELE-CONV-001-metaverse-telepresence-bridge",
-    "SocialVR"
+    "TELE-CONV-001-metaverse-telepresence-bridge"
   ],
   "wiki_links": [
-    "Avatar System",
-    "Immersive Communication",
-    "metaverse",
-    "Virtual Reality Platform",
     "Virtual Community",
-    "Virtual Social Presence"
+    "metaverse",
+    "Virtual Social Presence",
+    "Virtual Reality Platform",
+    "Avatar System",
+    "Immersive Communication"
   ],
   "ontology": {
     "term_id": "MV-10046",

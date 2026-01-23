@@ -1,37 +1,42 @@
 - ### OntologyBlock
-    - term-id:: MV-0817
-    - source-domain:: mv
-    - owl:class:: mv:ParameterEfficientFineTuning
-    - preferred-term:: Parameter-Efficient Fine-Tuning
-    - ontology:: true
+  id:: parameterefficientfinetuning-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: AI
+    - sequence-number:: 0817
+    - filename-history:: ["AI-0817-parameterefficientfinetuning.md"]
     - public-access:: true
+    - ontology:: true
+    - term-id:: AI-0817
+    - preferred-term:: Parameter-Efficient Fine-Tuning
+    - source-domain:: ai
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-### Relationships
-- is-subclass-of:: [[LearningMethod]]
+  - **Definition**
+    - definition:: Fine-tuning methods that minimize parameter updates.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-## Parameter-Efficient Fine-Tuning
+  - **Semantic Classification**
+    - owl:class:: ai:ParameterEfficientFineTuning
+    - belongsToDomain:: [[Artificial Intelligence]]
 
-Parameter-Efficient Fine-Tuning refers to fine-tuning methods that minimise parameter updates.
+  - #### Relationships
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :ParameterEfficientFineTuning))
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :ParameterEfficientFineTuning "Parameter-Efficient Fine-Tuning"@en)
+      (AnnotationAssertion rdfs:comment :ParameterEfficientFineTuning
+        "Fine-tuning methods that minimize parameter updates."@en)
+      ```
 
-## Technical Details
-
-- **Id**: parameterefficientfinetuning-ontology
-- **Collapsed**: true
-- **Domain Prefix**: AI
-- **Sequence Number**: 0817
-- **Filename History**: ["AI-0817-parameterefficientfinetuning.md"]
-- **Public Access**: true
-- **Source Domain**: ai
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: ai:ParameterEfficientFineTuning
-- **Belongstodomain**: [[Artificial Intelligence]]
+- ## About Parameter-Efficient Fine-Tuning
+  Fine-tuning methods that minimize parameter updates.

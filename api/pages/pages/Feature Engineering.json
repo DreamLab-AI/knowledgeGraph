@@ -8,13 +8,13 @@
     "Dimensionality Reduction"
   ],
   "wiki_links": [
-    "Dimensionality Reduction",
-    "Model Training",
-    "Machine Learning",
-    "Data Cleaning",
     "Model Performance",
+    "Machine Learning",
+    "Data Preprocessing",
     "Feature Selection",
-    "Data Preprocessing"
+    "Model Training",
+    "Dimensionality Reduction",
+    "Data Cleaning"
   ],
   "ontology": {
     "term_id": "AI-1019",

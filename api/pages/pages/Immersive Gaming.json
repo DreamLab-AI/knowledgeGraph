@@ -3,16 +3,15 @@
   "title": "Immersive Gaming",
   "content": "- ### OntologyBlock\n  id:: immersive-gaming-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9924\n\t- source-domain:: mv\n\t- preferred-term:: Immersive Gaming\n\t- status:: active\n\t- owl:class:: mv:ImmersiveGaming\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Video gaming experiences enhanced through VR, AR, and metaverse technologies that place players within interactive 3D environments, enabling physical interaction, spatial awareness, and presence-based gameplay through advanced headsets, motion tracking, and haptic feedback systems.\n\t- #### Relationships\n\t  id:: immersive-gaming-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Gaming]]\n\t\t- related-to:: [[Immersive Entertainment]]\n\t\t- related-to:: [[Game Narratives]]\n\t\t- enables:: [[VR Gaming Experience]]\n\n## VR Gaming Market\n\n### Market Size\n- Value: USD 22.63-32.5 billion (2024)\n- Projected: USD 109.6-189.17 billion by 2030-2032\n- CAGR: 21.6-30.4%\n\n### Growth Drivers\n- Improved VR hardware\n- Better headsets and controllers\n- Immersive experience demand\n- Technology accessibility\n\n## Metaverse Gaming\n\n### Market Overview\n- Value: USD 24.79 billion (2024)\n- Projected: USD 648.24 billion by 2034\n- CAGR: 38.59%\n- AR/VR segment: 43% share (2024)\n\n### Key Platforms\n- Roblox virtual worlds\n- Fortnite social gaming\n- Decentraland blockchain gaming\n- User-generated content focus\n\n## Immersive VR Market\n\n### Dedicated VR Gaming\n- Value: USD 10.1 billion (2024)\n- Projected: USD 34.9 billion by 2029\n- CAGR: 28.0%\n- Hardware improvements driving growth\n\n## AR Gaming\n\n### Augmented Reality Gaming\n- Market value: USD 14.2 billion (2024)\n- Projected: USD 141.7 billion by 2033\n- CAGR: 25.9%\n- Mobile AR gaming growth\n\n## Gaming Features\n\n### Immersive Elements\n- Physical interaction mechanics\n- Spatial awareness gameplay\n- Presence-based experiences\n- Motion tracking integration\n\n### Technology Components\n- VR headsets and displays\n- Motion controllers\n- Haptic feedback systems\n- Hand and body tracking\n\n## Market Position\n\n### Metaverse Market Share\n- Gaming: 25.3% of global metaverse (2024)\n- Primary market driver\n- Multiplayer virtual worlds\n- User-generated content integration\n\n### Platform Evolution\n- Social gaming platforms\n- Cross-platform experiences\n- Persistent virtual worlds\n- Economic systems integration\n\n## Applications\n\n### Gaming Genres\n- Action and adventure VR\n- Simulation experiences\n- Social VR games\n- Competitive esports VR\n\n### Platform Types\n- PC-tethered VR gaming\n- Standalone VR consoles\n- Mobile AR gaming\n- Mixed reality experiences\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
-    "Ai in Games",
     "Virtual Reality (VR)",
     "Immersive Entertainment"
   ],
   "wiki_links": [
-    "Digital Gaming",
-    "metaverse",
     "Game Narratives",
+    "metaverse",
+    "VR Gaming Experience",
     "Immersive Entertainment",
-    "VR Gaming Experience"
+    "Digital Gaming"
   ],
   "ontology": {
     "term_id": "MV-9924",

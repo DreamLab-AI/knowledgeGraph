@@ -2,26 +2,19 @@
   id:: metaverse-navigation-systems-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0010
+	- term-id:: ME-0010
 	- preferred-term:: Metaverse Navigation Systems
 	- source-domain:: mv
-	- status:: emerging
-	- public-access:: true
-
-
-
-
-### OWL Classification
+	- status:: emerging-technology
+    - public-access:: true
+	- definition:: [Generated from Gartner emerging tech analysis]
+	- maturity:: emerging
 	- owl:class:: mv:MetaverseNavigationSystems
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-
-### Domain & Architecture
 	- belongsToDomain:: [[MetaverseDomain]]
-	- maturity:: emerging
+	- category:: Spatial & Immersive
 
-### Relationships
-- is-subclass-of:: [[Metaverse]]
 
 ## Overview
 
@@ -79,12 +72,14 @@ Future systems will incorporate **home beacons** for familiar return points, aut
 
 The metaverse will operate as a **continuously persistent, synchronously shared context** independent of individual user presence, requiring sophisticated backend synchronisation architectures and collaborative governance frameworks.[2][3]
 
+
 ## UK Context
 
 - British contributions and implementations
   - Research institutions and programmes
   - Industry adoption
   - North England innovation (where relevant)
+
 
 ## Metadata
 
@@ -93,11 +88,4 @@ The metaverse will operate as a **continuously persistent, synchronously shared 
 - **Category**: Spatial & Immersive
 - **Status**: Emerging Technology
 
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
 

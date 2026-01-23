@@ -1,67 +1,48 @@
-- ### OntologyBlock
-  id:: ai-in-games-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- source-domain:: ai
-	- term-id:: AI-8010
-	- preferred-term:: AI in Games
-	- status:: active
-	- definition:: AI in Games refers to the integration of artificial intelligence algorithms and techniques to enhance video game development, player experiences, and in-game systems, including intelligent NPC behavior, procedural content generation, dynamic difficulty adjustment, and adaptive storytelling. It encompasses both traditional game AI methods like pathfinding and behavior trees, as well as modern machine learning approaches for creating more immersive, responsive, and personalized gaming experiences.
-	- maturity:: mature
-	- owl:class:: ai:AiInGames
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Application
-	- belongsToDomain:: [[Artificial Intelligence]]
-	- #### Relationships
-	  id:: ai-in-games-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Artificial Intelligence]]
-		- related-to:: [[Machine Learning]]
-		- related-to:: [[Procedural Generation]]
-		- related-to:: [[Computer Graphics]]
-		- related-to:: [[Game Development]]
-		- enables:: [[Immersive Gaming]]
-		- enables:: [[Dynamic Game Content]]
-	- #### Key Applications
-	  collapsed:: true
-		- **Non-Player Characters (NPCs)**: AI-driven characters that learn, adapt, and respond intelligently to player actions using behavior trees, machine learning, and neural networks
-		- **Procedural Content Generation (PCG)**: Algorithmic creation of levels, environments, textures, and game assets with minimal designer input (e.g., No Man's Sky)
-		- **Dynamic Difficulty Adjustment**: Real-time analysis of player skill to maintain engaging challenge levels
-		- **Adaptive Storytelling**: Narrative generation that evolves based on player choices using NLP and machine learning
-		- **Game Testing and QA**: AI-powered automated testing and bug detection
-	- #### Technical Approaches
-	  collapsed:: true
-		- **Behavior Trees**: Hierarchical decision structures for NPC actions
-		- **Finite State Machines**: State-based AI for predictable behavior patterns
-		- **Reinforcement Learning**: Agents learning optimal strategies through gameplay
-		- **Neural Networks**: Deep learning for complex pattern recognition and adaptation
-		- **Pathfinding Algorithms**: A*, navigation meshes for character movement
-		- **Natural Language Processing**: Dynamic dialogue generation and interaction
-	- #### 2025 Industry Landscape
-	  collapsed:: true
-		- 50%+ of game development companies using generative AI (GDC 2025 survey)
-		- 84% of gaming executives using or testing AI tools (Aream & Co. 2025)
-		- 68% actively implementing AI for content generation, testing, and engagement
-		- Global AI in gaming market projected to grow from $3.28B (2024) to $51B+ (2033)
-	- #### Notable Examples
-	  collapsed:: true
-		- **No Man's Sky**: Procedurally generated infinite universe with unique planets
-		- **F.E.A.R.**: Advanced tactical AI using goal-oriented action planning
-		- **Middle-earth: Shadow of Mordor**: Nemesis system with adaptive enemy behavior
-		- **AI Dungeon**: GPT-powered text adventure with unlimited narrative possibilities
-	- #### Applications
-	  collapsed:: true
-		- Intelligent enemy and companion AI
-		- Infinite world and level generation
-		- Personalized player experiences
-		- Automated content creation for developers
-		- Real-time game balancing
-		- Cheat detection and fair play enforcement
+public:: true
 
-## Metadata
-
-- **Last Updated**: 2025-12-29
-- **Review Status**: Enriched with 2025 gaming industry data
-- **Verification**: Industry surveys and technical sources verified
-- **Regional Context**: Global gaming industry
+- {{video https://www.youtube.com/watch?v=LFaxqJJLOZc}}
+- # Games sector dominates entertainment
+	- ![1713196618774.jpeg](../assets/1713196618774_1713258422046_0.jpeg)
+	- Traditional engines like Unity, [[Unreal]], [[Roblox]] , and [[NVIDIA Omniverse]] may become outdated [[Disruption]].
+		- They're something like 15 years old and designed for a past era of computing.
+		- The rise of generative AI, cloud computing, and new spatial platforms is poised to transform 3D creation.
+		- Future engines might start with simple text prompts for creation, making them more accessible and reducing barriers for new creators.
+		- Proposed engines should be modular, cloud-based, and adaptable to different project needs, avoiding the bloat of current engines.
+		- There is opportunity for the traditional engines to pivot here, but they are struggling with their size already.
+		- A key feature will be real-time collaboration and version control in a cloud-based environment.
+		- This suggests that user experience in these engines should be flexible and cater to different skill levels and roles.
+		- New engines might initially focus on specific genres, art styles, or platforms, rather than trying to cover all use cases.
+		- The interoperable [Open Universal Scene Descriptor](https://openusd.org/release/index.html) might be the key enabler.
+		- There could be significant change in the entertainment industry, with more diverse and interactive content as a result of these advancements.
+		- [Fiero
+		- Create 2D games without a single line of code! (fierogameengine.com)](https://fierogameengine.com/)
+		- [They are starting to hide away the AI component and just focus on workflows like Sprite Fusion](https://www.spritefusion.com/)
+	- <iframe src="https://miao-ai-lab.github.io/LARP/" style="width: 800px; height: 400px"></iframe>
+	- [LARP: Language-Agent Role Play for Open-World Games (arxiv.org)](https://arxiv.org/pdf/2312.17653.pdf)
+		- Plenty of fun tools for game makers, but distributors are quite ossified, and access to distribution may be patchy.
+		- Steam has [softened it's stance.](https://store.steampowered.com/news/group/4145017/view/3862463747997849618)
+		- Latency and cost are still prohibitive **in game**.
+		- Tools for builders
+		- Blender has been leading the way with open source plugins appearing all the time.
+		- [Scenario
+		- AI-generated game assets](https://www.scenario.com/)
+		- LoRA training.
+		- Already plenty to play with [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7148068781314002944/) and [AI-Powered Creativity: Innovating Look Development with Stable Diffusion & ComfyUI](https://www.youtube.com/watch?v=CLPvdbFUNqw)
+	- ![1704232411233.mp4](../assets/1704232411233_1704298954869_0.mp4){:height 100, :width 400}
+		- [Create an AI Robot NPC using Hugging Face Transformers 🤗 and Unity Sentis (substack.com)](https://thomassimonini.substack.com/p/create-an-ai-robot-npc-using-hugging?utm_campaign=post&utm_medium=web)
+		- {{video https://www.youtube.com/watch?v=iZ_20vK94hc}}
+		-
+- [GigaxGames/gigax: LLM-powered NPCs running on your hardware (github.com)](https://github.com/GigaxGames/gigax)
+- {{video https://www.youtube.com/watch?v=_KFbT6eph5A}}
+-
+- [[Ai in Games]] https://www.gginsights.io/
+- [NVIDIA In-Game Inferencing | NVIDIA Developer](https://developer.nvidia.com/rtx/in-game-inferencing/) [[Ai in Games]]
+- [Theoretically Media on X: "Google's Genie 2 just dropped, and it's a stunner. Create a "game" from an image! They're describing it as their most capable large-scale foundation world model yet. More Examples Below! https://t.co/BMOOxfaOVg" / X](https://x.com/TheoMediaAI/status/1864329184459338207) [[Ai in Games]]
+- https://github.com/etched-ai/open-oasis [[Ai in Games]]
+- [D&D Character Creator (npub.info)](https://pages.npub.info/glyphs/TESTNET_ENG_QAE/tmp/) [[Melvin Carvalho]] [[Runes and Glyphs]] [[Ai in Games]]
+- [[Melvin Carvalho]] [[Nostr protocol]] [[Agents]] [[Ai in Games]] [Home · dungeon-mastr/rules Wiki (github.com)](https://github.com/dungeon-mastr/rules/wiki)
+- https://github.com/GameGen-O/GameGen-O/ [[Ai in Games]]
+- https://gamegen-o.github.io/ [[Ai in Games]] [[Ai in Games]]
+- [[Ai in Games]] [[Llama]] [[Facebook Meta]] [Run AI Town entirely locally by default using llama3 by ianmacartney · Pull Request #219 · a16z-infra/ai-town (github.com)](https://github.com/a16z-infra/ai-town/pull/219) [[Large language models]]
+- [Champions of Otherworldly Magic - Collect, Trade, Battle! (championstcg.com)](https://championstcg.com/) [[Ai in Games]]
+-

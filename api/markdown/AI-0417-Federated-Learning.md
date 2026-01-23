@@ -19,15 +19,14 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: ai:FederatedLearning
+    - owl:class:: aigo:FederatedLearning
     - owl:physicality:: VirtualEntity
     - owl:role:: Process
-    - owl:inferred-class:: ai:VirtualProcess
+    - owl:inferred-class:: aigo:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 
   - #### Relationships
-- is-subclass-of:: [[Artificial Intelligence]]
     id:: federated-learning-relationships
 
   - #### OWL Axioms
@@ -65,19 +64,3 @@
     - Client participation rates
     - Per-round aggregation time
     - Model performance on federated validation set
-
-		- ### Social Interactions and Adaptive Learning:
-			- Within the federated virtual social spaces, AI agents can communicate and collaborate with other agents or human users. They can participate in discussions, provide assistance, or even learn from the interactions, thereby improving their capabilities over time. Language translation, governance, and safeguarding could also be developed. Safeguarding would be handled by threshold risk triggers and transmission of data in a sovereign way to all parties, allowing external action by authorities appropriate to any abuse. As AI agents interact with their environment, other agents, and users, they can learn and adapt their behaviour. This enables them to improve their performance, better understand their assigned tasks, and become more effective at achieving their goals.
-
-		- ### Social Interactions and Adaptive Learning:
-			- Within the federated virtual social spaces, AI agents can communicate and collaborate with other agents or human users. They can participate in discussions, provide assistance, or even learn from the interactions, thereby improving their capabilities over time. Language translation, governance, and safeguarding could also be developed. Safeguarding would be handled by threshold risk triggers and transmission of data in a sovereign way to all parties, allowing external action by authorities appropriate to any abuse. As AI agents interact with their environment, other agents, and users, they can learn and adapt their behaviour. This enables them to improve their performance, better understand their assigned tasks, and become more effective at achieving their goals.
-
-		- ### Social Interactions and Adaptive Learning:
-			- Within the federated virtual social spaces, AI agents can communicate and collaborate with other agents or human users. They can participate in discussions, provide assistance, or even learn from the interactions, thereby improving their capabilities over time. Language translation, governance, and safeguarding could also be developed. Safeguarding would be handled by threshold risk triggers and transmission of data in a sovereign way to all parties, allowing external action by authorities appropriate to any abuse. As AI agents interact with their environment, other agents, and users, they can learn and adapt their behaviour. This enables them to improve their performance, better understand their assigned tasks, and become more effective at achieving their goals.
-
-- # Media Creation
-		- Experimental generative video platforms (Runway ML Gen-2, PromeAI) for short concept clips
-
-- # Media Creation
-		- **Desktop VR via Enscape or Twinmotion**
-			- Import via Datasmith into Unreal Engine or FBX/OBJ into Unity for bespoke interactive apps. AI can assist by auto-generating environment assets or textures.

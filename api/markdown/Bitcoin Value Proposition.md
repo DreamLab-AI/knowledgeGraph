@@ -1,17 +1,41 @@
-id:: 661d5f6a-ce5e-479e-8722-2128890607bd
+public:: true
+termID:: bitcoin-value-proposition-comprehensive-2025
+qualityScore:: 0.94
+bitcoinSpecific:: true
+lastUpdated:: 2025-11-14
 
-- ### OntologyBlock
-  id:: Bitcoin Value Proposition
-  - ontology:: true
-  - public-access:: true
-  - term-id:: BC-9951
-  - preferred-term:: Bitcoin Value Proposition
-  - source-domain:: bc
-  - owl:class:: bc:Id661d5f6ace5e479e87222128890607bd
-  - status:: draft
+- #Public page automatically published
+- #[[Bitcoin Economics]] #[[Digital Assets]] #[[Store of Value]] #[[Monetary Network]] #[[Sustainable Mining]]
+- ## High level analysis
+	- **[Updated 2025]**: [[Bitcoin]]'s [[market capitalization]] reached **$2.22 trillion** as of mid-2025, representing approximately **2.2% of global M2 money supply**. The [[institutional adoption]] narrative has fundamentally shifted with [[BlackRock]]'s [[iShares Bitcoin Trust]] (IBIT) holding over **805,110 BTC** ($100B+ AUM), making it the largest [[ETF]] holder and surpassing [[MicroStrategy]]'s **640,250 BTC**. Total [[Bitcoin ETF]] assets under management exceeded **$100 billion**, with U.S. [[spot Bitcoin ETFs]] registering nearly **$63 billion in net inflows** since their January 2024 debut.[^1][^2] --
+	- It seems possible that eight value propositions are therefore emerging:
+	  id:: 661d5f6a-ce5e-479e-8722-2128890607bd
+		- **[[Bitcoin]] as [[Speculative Asset]]** (or greater fool bubble [66]). Nations such as the [[USA]], who own 30% of the asset have bid up the price of the tokens during a period of very cheap money, and this has led to a high valuation for the tokens, with a commensurately high [[network security]] through the [[hash rate]] ([[mining]]). This could be a [[speculative bubble]], with the asset shifting to one of the other valuations below. There is more on this subject in the [[money]] section later. **[Updated 2025]**: The [[digital gold narrative]] has strengthened significantly, with [[Bitcoin]] showing a **0.70 correlation with gold** while distancing itself from tech stocks, suggesting maturation as a [[store of value]] asset class.[^3] --
+		- **[[Financial Nihilism]] and [[Speculation]]**: The "Number go up" phenomenon, well explained by [[Travis Kling]], paints a vivid picture of the current [[socio-economic climate]], where [[financial nihilism]]—stemming from stifling [[cost of living]], dwindling [[upward mobility]], and an untenable ratio of [[median home prices]] to [[median income]]—fuels [[speculative gambling]] within the [[crypto space]]. This atmosphere encourages individuals to invest in highly [[speculative assets]] with the slim hope of substantial returns, akin to purchasing [[lottery tickets]]. In this context, [[Bitcoin]] and other [[cryptocurrencies]] become vehicles for extreme [[risk-taking]], driven not by a belief in their [[fundamental value]] but by the desperation and desire for a quick [[financial win]] in a system perceived as increasingly rigged against the average person. Kling's observations suggest that for many, the gamble on [[cryptocurrencies]] is less about informed [[investment]] and more about the desperate swing for the fences, embodying a form of [[financial nihilism]] that sees traditional avenues of [[wealth accumulation]] as blocked or insufficient. This [[speculative gamble]] is further fueled by the allure of significant gains, regardless of the inherent risks or the long-term sustainability of such [[investments]]. --
+		- [twitter link to the render loading below](https://twitter.com/Travis_Kling/status/1753455596462878815)
+		  {{twitter https://twitter.com/Travis_Kling/status/1753455596462878815}}
+- Bitcoin the (human) monetary network, and ‘emerging market’ value transfer mechanism. This will be most useful for Africa (especially Nigeria), India, and South America. There is no sense of the “value” of this network at this time, but it’s the aspect we need for our collaborative mixed reality application. For this use the price must simply be high enough to ensure that mining viably secures the network. This security floor is unfortunately a ‘known unknown’. If a global Bitcoin monetary axis evolves (as in the Money chapter later) the network would certainly require a higher rate than currently, suggestive of a higher price of token to ensure mining [67].
+		- Bitcoin as an autonomous AI monetary network. In an era where AI actors perform tasks on behalf of humans in digital realms such as cyberspace, these AI actors will require a reliable and efficient means of transaction. AI agents can perform, transact and negotiate, and execute work contracts in near real-time. For this use, the primary requirement is not a high token price, but rather a high level of network security and scalability that can support an enormous volume of transactions.
+		- The Lightning Network of Bitcoin might be a starting point but the robustness of the system, against potential AI exploits, is yet to be confirmed. As AI systems become more complex and autonomous, there is an increasing need for decentralized AI governance mechanisms that can prevent the concentration of power and ensure ethical AI development and deployment. Bitcoin can serve as a basis for this, providing a decentralized, transparent, and immutable record of AI decisions and actions. Furthermore, Bitcoin’s proof-of-work consensus mechanism could potentially be adapted to enforce AI adherence to agreed-upon rules or norms. In this context, Bitcoin’s value extends beyond its token price and into its potential contributions to AI governance and ethics.
+		- This is Bitcoin as an AI economy. It's notable that scaling solutions like [[Cashu]] and or [[RGB and Client Side Validation]] are likely required in addition to more established technologies like [[Lightning and Similar L2]]; this technical landscape isn't quite ready. -
+		- Bitcoin as a hedge against future quantum computation. It has been argued that the advent of quantum computers could threaten the security of many existing cryptographic systems. Bitcoin’s open-source nature allows for the integration of post-quantum cryptographic algorithms, safeguarding it against quantum threats. In this sense, investment in Bitcoin might also be seen as an investment in a future-proof monetary network. This assertion depends on the assumption that Bitcoin’s protocol will adapt in time to incorporate such cryptographic advances before quantum computing becomes a real threat to its integrity. The practical implementation of these technologies might see a shift in the network’s dynamics, the hash rate, mining cost, and token value.
+		- Bitcoin’s value in terms of ‘sunk opportunity cost’. This refers to the value that could have been generated if the resources invested in a particular activity had been utilised elsewhere. In the context of Bitcoin, this includes the investments made in mining equipment, power, facilities, and the hiring of skilled personnel to maintain the operations. The sunk opportunity cost of Bitcoin can be substantial. It can be argued that the value of Bitcoin must take this cost into consideration, as the resources could have been allocated to other productive sectors or investments [68]. Of course, there remains the infamous sunk cost fallacy, which refers to the tendency of individuals or organizations to continue investing in a project or decision based on the amount of resources already spent, rather than evaluating the current and future value of the investment. This indeed tends to lead to a cyclical boom and bust dynamic in the industrial mining communities. The ultimate fallacy would occur if miners or investors continued to invest in mining equipment and operations solely because of the resources that have already been spent on them, and the asset simply crashes to nothing from here. It’s a shaky justification because it assumes the future is the same as the past. -
+		- Bitcoin as a flexible load in power distribution systems, and methane mitigation ‘asset’, and ‘subsidised heater’ for varied applications such as growing and drying. Again there is no price against this, but we can perhaps grossly estimate it at around half the current hash rate if 50% of the network is currently green energy. This would imply a price for the asset roughly where it is now (ie, not orders of magnitude higher or lower). -
+		- The 2023 global bank runs have awoken some companies to the risks of access to cash flows in a potential crisis [69]. Access to a small cache (in corporate treasury terms) of a highly liquid & tradable asset could allow continuity of payroll in a ‘24/7’ global context. This could avoid or at least mitigate the panic which ensues in companies when banks are forces to suddenly wind up their operations.
+		- Amusingly Ben Hunt suggests in an online article that the true value of Bitcoin can be couched in terms of it’s value simply as ‘art’. He posits that at this time the narrative is simply so seductive and powerful that people (being people) are choosing to value their involvement in the economics of the space as they might a work of art. It’s a fascinating idea, and intuitively, probably it’s right.
 
-### Demand Paradox
-- Despite the common perception of energy scarcity, the energy sector often grapples with a shortage of demand rather than supply. This stems from the design of electrical grids, which are built to accommodate peak usage periods, leading to significant underutilisation during off-peak hours. This inefficiency results in suboptimal returns on infrastructure investments and economic losses.
+- **[[Bitcoin]] as [[Human Monetary Network]]** and '[[emerging market]]' [[value transfer mechanism]]'. This will be most useful for [[Africa]] (especially [[Nigeria]]), [[India]], and [[South America]]. There is no sense of the "value" of this network at this time, but it's the aspect we need for our collaborative [[mixed reality]] application. For this use the price must simply be high enough to ensure that [[mining]] viably secures the network. This [[security floor]] is unfortunately a 'known unknown'. If a global [[Bitcoin monetary axis]] evolves (as in the Money chapter later) the network would certainly require a higher rate than currently, suggestive of a higher price of token to ensure [[mining]] [67]. **[Updated 2025]**: [[Lightning Network]] adoption has surged to **1.5 million users** with **$1.5 billion in trading volume** and **$4.5 million in gross transaction volume** through self-custodial peer-to-peer payments.[^4] Corporate treasury adoption expanded dramatically with **64 new companies** adopting [[Bitcoin treasury strategies]] in H1 2025, bringing the total to **134 publicly listed firms** holding **245,000 BTC**.[^5] --
+		- **[[Bitcoin]] as [[Autonomous AI Monetary Network]]**: In an era where [[AI agents]] perform tasks on behalf of humans in digital realms such as [[cyberspace]], these [[AI actors]] will require a reliable and efficient means of transaction. [[AI agents]] can perform, transact and negotiate, and execute [[work contracts]] in near [[real-time]]. For this use, the primary requirement is not a high token price, but rather a high level of [[network security]] and [[scalability]] that can support an enormous volume of transactions. This connects directly to the [[Agentic Internet]] vision where [[autonomous agents]] operate economic transactions using [[programmable money]].[^6] --
+		- The [[Lightning Network]] of [[Bitcoin]] might be a starting point but the robustness of the system, against potential [[AI exploits]], is yet to be confirmed. As [[AI systems]] become more complex and autonomous, there is an increasing need for [[decentralized AI governance]] mechanisms that can prevent the [[concentration of power]] and ensure [[ethical AI development]] and deployment. [[Bitcoin]] can serve as a basis for this, providing a [[decentralized]], [[transparent]], and [[immutable record]] of [[AI decisions]] and actions. Furthermore, [[Bitcoin's proof-of-work]] [[consensus mechanism]] could potentially be adapted to enforce [[AI adherence]] to agreed-upon rules or norms. In this context, [[Bitcoin's value]] extends beyond its token price and into its potential contributions to [[AI governance]] and [[ethics]]. See also: [[L402]], [[X402]], and [[RGB Protocol]] for [[AI payment protocols]].[^7] --
+		- This is [[Bitcoin]] as an [[AI economy]]. It's notable that [[scaling solutions]] like [[Cashu]] and or [[RGB and Client Side Validation]] are likely required in addition to more established technologies like [[Lightning and Similar L2]]; this technical landscape isn't quite ready. The intersection of [[Bitcoin]] and [[AI]] creates opportunities for [[machine-to-machine payments]], [[autonomous economic agents]], and [[programmable value transfer]] in the emerging [[Agentic Internet]] ecosystem. --
+		- **[[Bitcoin]] as [[Quantum-Resistant Hedge]]**: It has been argued that the advent of [[quantum computers]] could threaten the security of many existing [[cryptographic systems]]. [[Bitcoin's open-source]] nature allows for the integration of [[post-quantum cryptographic algorithms]], safeguarding it against [[quantum threats]]. In this sense, investment in [[Bitcoin]] might also be seen as an investment in a [[future-proof monetary network]]. This assertion depends on the assumption that [[Bitcoin's protocol]] will adapt in time to incorporate such [[cryptographic advances]] before [[quantum computing]] becomes a real threat to its integrity. The practical implementation of these technologies might see a shift in the network's dynamics, the [[hash rate]], [[mining cost]], and [[token value]].[^8] --
+		- **[[Bitcoin]]'s [[Sunk Opportunity Cost]]**: This refers to the value that could have been generated if the resources invested in a particular activity had been utilised elsewhere. In the context of [[Bitcoin]], this includes the investments made in [[mining equipment]], [[power]], [[facilities]], and the hiring of skilled personnel to maintain the operations. The [[sunk opportunity cost]] of [[Bitcoin]] can be substantial. It can be argued that the [[value of Bitcoin]] must take this cost into consideration, as the resources could have been allocated to other productive sectors or [[investments]] [68]. Of course, there remains the infamous [[sunk cost fallacy]], which refers to the tendency of individuals or organizations to continue investing in a project or decision based on the amount of resources already spent, rather than evaluating the current and future value of the investment. This indeed tends to lead to a cyclical [[boom and bust dynamic]] in the [[industrial mining communities]]. The ultimate fallacy would occur if [[miners]] or [[investors]] continued to invest in [[mining equipment]] and operations solely because of the resources that have already been spent on them, and the asset simply crashes to nothing from here. It's a shaky justification because it assumes the future is the same as the past. --
+		- **[[Bitcoin]] as [[Flexible Load]] in [[Power Distribution Systems]]**: [[Bitcoin mining]] serves as [[methane mitigation]] 'asset', and 'subsidised heater' for varied applications such as growing and drying. Again there is no price against this, but we can perhaps grossly estimate it at around half the current [[hash rate]] if 50% of the network is currently [[green energy]]. This would imply a price for the asset roughly where it is now (ie, not orders of magnitude higher or lower). **[Updated 2025]**: [[Sustainable energy]] usage in [[Bitcoin mining]] reached **54.5%** in 2024 (up 3.6% from 2023), with the network achieving **7.3% emissions mitigation** through [[methane capture]]—the highest non-offset-based mitigation by any industry. [[On-grid miners]] improved emission intensity by **29%** since 2021.[^9][^10] [[Natural gas]] (38.2%, up from 25.0% in 2022) has replaced [[coal]] (now 8.9%, down from 36.6% in 2022) as the single largest energy source. The Cambridge Digital Mining Industry Report shows **52.4% sustainable energy use** (42.6% renewables, 9.8% nuclear) compared to 37.6% in 2022.[^11] --
+		- **[[Bitcoin]] as [[Treasury Reserve Asset]]**: The 2023 global [[bank runs]] have awoken some companies to the risks of access to [[cash flows]] in a potential crisis [69]. Access to a small cache (in [[corporate treasury]] terms) of a highly [[liquid]] & [[tradable asset]] could allow continuity of [[payroll]] in a '24/7' global context. This could avoid or at least mitigate the panic which ensues in companies when banks are forces to suddenly wind up their operations. **[Updated 2025]**: [[Corporate adoption]] has accelerated with [[public companies]] now holding over **1 million BTC** (5% of total supply), while [[ETFs]] and funds collectively hold **1,358,000 BTC** (6% of total supply).[^12] --
+		- **[[Bitcoin]] as [[Art]] and [[Cultural Phenomenon]]**: Amusingly [[Ben Hunt]] suggests in an online article that the true value of [[Bitcoin]] can be couched in terms of it's value simply as '[[art]]'. He posits that at this time the [[narrative]] is simply so seductive and powerful that people (being people) are choosing to value their involvement in the [[economics]] of the space as they might a [[work of art]]. It's a fascinating idea, and intuitively, probably it's right. The [[memetic value]] and [[cultural significance]] of [[Bitcoin]] as the first successful [[decentralized digital currency]] cannot be understated.[^13] --
+- # Case studies
+	- ### Demand Paradox
+		- Despite the common perception of energy scarcity, the energy sector often grapples with a shortage of demand rather than supply. This stems from the design of electrical grids, which are built to accommodate peak usage periods, leading to significant underutilisation during off-peak hours. This inefficiency results in suboptimal returns on infrastructure investments and economic losses.
 		- Bitcoin mining emerges as a unique solution to this demand paradox. Due to its inherent flexibility, mining operations can dynamically adjust their energy consumption based on realtime grid conditions and market prices. This adaptability stems from the interruptible nature of the mining process, allowing miners to seamlessly pause and resume operations without incurring substantial losses. Consequently, miners can function as a responsive load, absorbing excess energy during periods of low demand and curtailing consumption during peak demand, thereby optimising grid utilisation.
 	- ### Enhancing Grid Stability and Balancing
 		- The ability of Bitcoin miners to rapidly modulate energy consumption positions them as valuable partners for grid operators. During periods of peak demand or grid instability, such as those caused by extreme weather events or unforeseen power plant outages, miners can curtail their operations and sell power back to the grid. This rapid response capability, unmatched by other energy-intensive industries, contributes significantly to grid stability and resilience, mitigating the risk of blackouts and ensuring a reliable energy supply.
@@ -26,10 +50,10 @@ id:: 661d5f6a-ce5e-479e-8722-2128890607bd
 	- ## Congo
 		- {{video https://www.youtube.com/watch?v=2DZfVqHVmCc}}
 	- ## [[Gridless]] - [[Bitcoin Mining]] for [[African Energy Access]]
-		- In the course of researching this book we see most opportunity for change in [[Africa]]. As an example the company '[[Gridless]]' began by examining different [[energy sources]] in [[Africa]] and exploring opportunities for larger [[energy generation]] and [[grid-connected energy]]. However, they found that the real benefit of [[gridless energy]] was in providing [[energy]] to places that were not well connected and did not have a good [[grid]]. They contacted [[mini-grid providers]] all over [[East Africa]] and [[Southern Africa]] to learn about their problems. A [[mini-grid]] is defined as a project that generates energy under **2 megawatts**, often under **1 megawatt**. They discovered that these providers had to overbuild for the community, resulting in [[stranded energy]]. The company found a way to utilise this [[stranded energy]] by placing [[Bitcoin miners]] on it and paying the [[mini-grid providers]] for it. They tested this method and found it to be successful. Additionally, they implemented a system to automate and remotely turn off the power during periods of high usage to make the [[grid]] more efficient and sustainable. This solution provided a win-win-win situation for the company, the [[mini-grid providers]], and the [[communities]] they served. **[Updated 2025]**: [[Gridless]] operations now demonstrate how [[Bitcoin mining]] can subsidize [[rural electrification]] projects, making [[renewable energy]] economically viable in [[off-grid]] communities across [[Africa]].[^18] --
-		- The company utilises Bitcoin miners to create space for other activities and to increase access to affordable energy for communities and small businesses. As energy usage increases in the community, the company decreases their usage of miners and moves them to other locations. This is outlined in their contract s with partners. The company is currently testing this method and has encountered some challenges, such as losing internet connection at one of their sites and poor rainfall affecting the amount of water flowing into turbines. They have found that building a lean operation with flexible and adaptable staff is crucial, as well as creating processes and systems to manage variables. The company also faces unique environmental factors such as lightning strikes, which require them to turn off their operations temporarily.
+		- In the course of researching this book we see most opportunity for change in [[Africa]]. As an example the company '[[Gridless]]' began by examining different [[energy sources]] in [[Africa]] and exploring opportunities for larger [[energy generation]] and [[grid-connected energy]]. However, they found that the real benefit of [[gridless energy]] was in providing [[energy]] to places that were not well connected and did not have a good [[grid]]. They contacted [[mini-grid providers]] all over [[East Africa]] and [[Southern Africa]] to learn about their problems. A [[mini-grid]] is defined as a project that generates energy under **2 megawatts**, often under **1 megawatt**. They discovered that these providers had to overbuild for the community, resulting in [[stranded energy]]. The company found a way to utilize this [[stranded energy]] by placing [[Bitcoin miners]] on it and paying the [[mini-grid providers]] for it. They tested this method and found it to be successful. Additionally, they implemented a system to automate and remotely turn off the power during periods of high usage to make the [[grid]] more efficient and sustainable. This solution provided a win-win-win situation for the company, the [[mini-grid providers]], and the [[communities]] they served. **[Updated 2025]**: [[Gridless]] operations now demonstrate how [[Bitcoin mining]] can subsidize [[rural electrification]] projects, making [[renewable energy]] economically viable in [[off-grid]] communities across [[Africa]].[^18] --
+		- The company utilizes Bitcoin miners to create space for other activities and to increase access to affordable energy for communities and small businesses. As energy usage increases in the community, the company decreases their usage of miners and moves them to other locations. This is outlined in their contract s with partners. The company is currently testing this method and has encountered some challenges, such as losing internet connection at one of their sites and poor rainfall affecting the amount of water flowing into turbines. They have found that building a lean operation with flexible and adaptable staff is crucial, as well as creating processes and systems to manage variables. The company also faces unique environmental factors such as lightning strikes, which require them to turn off their operations temporarily.
 		- Gridless suggest that those who are critical of opportunities like this often come from a place of privilege and do not understand the consequences of their actions in places like Africa where access to electricity and other resources is limited. They argue that these critics, who are often from the West, have blinders on and cannot see the impact of their actions on a global scale. They suggest that more people need to travel and have diverse experiences in order to change their perspective on Bitcoin and its potential to support human flourishing in underprivileged areas. They also mention that gridless plans may become a case study for the positive impact of Bitcoin mining on economic opportunities, particularly in rural Africa.
-		- [Stranded: How Bitcoin is Saving Wasted Energy and Expanding Financial Freedom in Africa](https://bitcoinmagazine.com/cheque-your-financial-privilege/stranded-bitcoin-saving-wasted-energy-in-africa)
+		- [Stranded: How Bitcoin is Saving Wasted Energy and Expanding Financial Freedom in Africa](https://bitcoinmagazine.com/check-your-financial-privilege/stranded-bitcoin-saving-wasted-energy-in-africa)
 	- ## Chinese Belt and Road Expansion in Ethiopia -
 		- Last spring saw the appearance of cargo containers near substations linked to the Grand Ethiopian Renaissance Dam. These containers, filled with high-powered computers, signalled the arrival of Chinese Bitcoin miners, seeking new grounds post-Beijing's expulsion.
 		- Ethiopia has emerged as a significant player in Bitcoin mining, largely due to the influx of Chinese companies after China's ban on the industry in 2021. This growth positions Ethiopia as a new hub for Bitcoin mining, potentially rivaling Texas's electricity capacity. The country has become one of the world's top recipients of Bitcoin mining machines, with a state power monopoly striking power supply deals with 21 Bitcoin miners, the majority of which are Chinese.
@@ -65,7 +89,7 @@ id:: 661d5f6a-ce5e-479e-8722-2128890607bd
 	- ### Project Details
 	- **Technology and Process**
 		- Utilizing highly-efficient energy generation equipment, the project transforms methane, a natural landfill byproduct, into electricity.
-		- This electricity is used for several on-site applications, notably for powering data centres.
+		- This electricity is used for several on-site applications, notably for powering data centers.
 	- **Environmental and Economic Impacts**
 		- The initiative aims to reduce greenhouse gas emissions.
 		- It also generates revenue, which supports Viridi's investment in constructing a state-of-the-art Renewable Natural Gas (RNG) facility at the landfill.
@@ -97,7 +121,7 @@ id:: 661d5f6a-ce5e-479e-8722-2128890607bd
 	- **Renewable Energy Trends**: There is a trend towards Bitcoin mining using a combination of stranded, waste, and renewable energy sources.
 	- ### Gold Mining's Environmental Impact
 		- **Production**: In 2020, around 3500 tons of gold were mined and 1300 tons were recycled.
-		- **Energy Use and CO2 Emissions**: Mining and refining each kilogram of gold for jewellery uses about 79.9 MWh and produces up to 35 tons of CO2.
+		- **Energy Use and CO2 Emissions**: Mining and refining each kilogram of gold for jewelry uses about 79.9 MWh and produces up to 35 tons of CO2.
 		- **Total Impact (2020)**: Gold mining industry used 265 TWh of energy and produced 145 Mt of CO2.
 		- {{video https://www.youtube.com/watch?v=ihvG3RgbYzE}}
 		-
@@ -107,7 +131,7 @@ id:: 661d5f6a-ce5e-479e-8722-2128890607bd
 	- ### Comparative Analysis
 	- **Scope of Comparison**: The article notes the difficulty in making direct comparisons due to the different scopes and impact areas of each industry.
 	- **Relative Impact**: Bitcoin's consumption and emissions are less than half of the gold mining industry and less than one-fifth of the banking sector.
-	- **Energy Use vs Pollution**: The article distinguishes between energy use and pollution, emphasising the importance of considering both aspects in environmental impact assessments.
+	- **Energy Use vs Pollution**: The article distinguishes between energy use and pollution, emphasizing the importance of considering both aspects in environmental impact assessments.
 	- ### Conclusion
 	- The article argues for a nuanced understanding of Bitcoin's environmental impact, especially when compared to other significant industries like gold mining and banking.
 	- It suggests that the framing of environmental impacts should consider both energy consumption and pollution.
@@ -125,7 +149,7 @@ id:: 661d5f6a-ce5e-479e-8722-2128890607bd
 		- The Aktina Solar and Roseland Solar Projects, each with 250 MW capacities, could gain a maximum profit of $3.23 million.
 		- The Western Trail Wind project, with 367 MW, showed potential profitability of $2.65 million.
 	- **Performance in Other States**: California ranked second in profitability. Colorado, Illinois, Iowa, Nevada, and Virginia also showed potential despite fewer installations.
-	- **Energy Availability and Location**: The study emphasises the importance of steady energy availability and strategic location of mining farms to maximise productivity.
+	- **Energy Availability and Location**: The study emphasizes the importance of steady energy availability and strategic location of mining farms to maximize productivity.
 	- ### Policy Recommendations
 	- **Incentives for Clean Mining**: Proposes economic rewards for environmentally responsible cryptocurrency mining, like carbon credits for avoided emissions.
 	- **Profit Reinvestment**: Suggests policies encouraging miners to reinvest profits into infrastructure development, creating a cycle for renewable energy expansion.
@@ -133,15 +157,15 @@ id:: 661d5f6a-ce5e-479e-8722-2128890607bd
 	- **Mitigating Environmental Costs**: Acknowledges environmental costs of cryptocurrency mining, like metal depletion and hardware obsolescence.
 	- **Potential for Positive Impact**: Indicates ways to mitigate some environmental costs of cryptocurrency mining and promote renewable energy investments.
 	- ### Conclusion
-	- The research indicates that Bitcoin mining can be utilised to financially support and enhance the development of renewable energy projects, offering a novel approach to climate change mitigation.
+	- The research indicates that Bitcoin mining can be utilized to financially support and enhance the development of renewable energy projects, offering a novel approach to climate change mitigation.
 	- [Link to the article](https://news.cornell.edu/stories/2023/11/bitcoin-could-support-renewable-energy-development)
-	
-	
+	  
+	  
 	  https://crypto.news/bitcoin-mining-reaches-new-all-time-high-of-54-renewable-use/
 	- ## Title: Bitcoin Mining's Increased Renewable Energy Usage
 	- ### Introduction
 	- A report released on January 18, 2024, by ESG analyst Daniel Batten highlights a significant surge in sustainable energy use in Bitcoin mining.
-	- The report is based on data from the BEEST model and analyses publicly available information.
+	- The report is based on data from the BEEST model and analyzes publicly available information.
 	- ### Key Findings
 	- **Renewable Energy Usage**: The sustainable energy usage in Bitcoin mining has reached 54.5%, a 3.6% increase over 2023.
 	- **Methane Mitigation**: Off-grid Bitcoin miners are using methane emissions for electricity generation, reducing environmental harm.
@@ -153,12 +177,12 @@ id:: 661d5f6a-ce5e-479e-8722-2128890607bd
 	- ### Implications
 	- The report underscores Bitcoin mining's potential in driving sustainable energy practices and its evolving role in environmental sustainability.
 	- [Link to the article](https://crypto.news/bitcoin-mining-reaches-new-all-time-high-of-54-renewable-use/)
-	
-	
+	  
+	  
 	  https://www.bitcoin.com/get-started/the-benefits-of-bitcoin/
 	- ## Title: The Advantages of Bitcoin
 	- ### Introduction
-	- Bitcoin.com's article explores the multiple benefits of Bitcoin, emphasising its potential to revolutionize various aspects of finance and personal freedom.
+	- Bitcoin.com's article explores the multiple benefits of Bitcoin, emphasizing its potential to revolutionize various aspects of finance and personal freedom.
 	- ### Key Benefits of Bitcoin
 	- **Permissionless Nature**: Bitcoin allows transactions without needing permission from any authority, enhancing financial independence.
 	- **Immunity to Seizure**: Being decentralized, Bitcoin assets are less susceptible to seizure by governments or other entities.
@@ -176,15 +200,15 @@ id:: 661d5f6a-ce5e-479e-8722-2128890607bd
 	- ### Conclusion
 	- Bitcoin is portrayed as a groundbreaking technology with multiple advantages, particularly in offering financial independence, resisting censorship, and ensuring user control over transactions.
 	- [Link to the article](https://www.bitcoin.com/get-started/the-benefits-of-bitcoin/)
-	
-	
+	  
+	  
 	  https://bitcoinmagazine.com/culture/bitcoin-blockchain-is-fighting-fraud-in-guatemalas-presidential-elections
-	
-	
+	  
+	  
 	  https://thenextweb.com/news/el-salvador-first-adopt-bitcoin-real-money-good-news-unbanked-syndication
-	
-	
-	
+	  
+	  
+	  
 	  https://thenextweb.com/news/el-salvador-first-adopt-bitcoin-real-money-good-news-unbanked-syndication
 	- ## Title: Bitcoin's Adoption in El Salvador: A Boon for the Unbanked
 	- ### Introduction
@@ -195,7 +219,7 @@ id:: 661d5f6a-ce5e-479e-8722-2128890607bd
 	- **El Salvador's Decision**: The country's adoption of Bitcoin marks a significant change in its global reputation.
 	- ### Bitcoin and Remittances
 	- **Economic Dependence on Remittances**: A large portion of El Salvador's GDP comes from remittances sent by citizens working abroad.
-	- **Current Transfer System**: Traditional methods like Western Union are centralised, regulated, and often inconvenient for those in rural areas.
+	- **Current Transfer System**: Traditional methods like Western Union are centralized, regulated, and often inconvenient for those in rural areas.
 	- **Bitcoin as an Alternative**: Cryptocurrencies like Bitcoin enable easy fund transfers via mobile phones, bypassing the need for physical transfer services.
 	- ### Cryptocurrency as Legal Tender
 	- **Direct Use for Goods and Services**: Bitcoin can be used just like the US dollar in El Salvador for transactions.
@@ -211,8 +235,8 @@ id:: 661d5f6a-ce5e-479e-8722-2128890607bd
 	- ### Conclusion
 	- El Salvador's adoption of Bitcoin is a groundbreaking move with potential benefits for its unbanked population but comes with significant risks and challenges that need careful consideration.
 	- [Link to the article](https://thenextweb.com/news/el-salvador-first-adopt-bitcoin-real-money-good-news-unbanked-syndication)
-	
-	
+	  
+	  
 	  https://www.cointribune.com/en/argentina-bitcoin-faces-100-inflation-rate/
 - ## [[Argentina]] - [[Bitcoin]] as [[Inflation Hedge]]
 	- ### Introduction
@@ -260,7 +284,7 @@ id:: 661d5f6a-ce5e-479e-8722-2128890607bd
 		- **Improving AML/CFT Framework**: The Treasury is working to refine its approach to AML/CFT in the crypto world.
 		- **Engagement for Responsible Innovation**: The department plans to collaborate with the private sector to support responsible innovation in DeFi.
 		- ### Conclusion
-		- The Treasury's report provides a nuanced view of criminal activities in the crypto space, emphasising the predominant use of fiat currencies while recognising the challenges and potential risks associated with DeFi.
+		- The Treasury's report provides a nuanced view of criminal activities in the crypto space, emphasizing the predominant use of fiat currencies while recognizing the challenges and potential risks associated with DeFi.
 	- [Link to the article](https://decrypt.co/125623/crooks-defi-crypto-fiat-treasury)https://www.cnbc.com/2023/03/26/bitcoin-is-poised-to-blow-up-africas-86-billion-banking-system.htmlhttps://impact.economist.com/projects/banking-the-underbanked/
 	  https://unherd.com/2024/01/the-african-village-mining-bitcoin/
 	  https://www.wired.co.uk/article/ukraine-crypto-refugee-aid
@@ -286,7 +310,7 @@ id:: 661d5f6a-ce5e-479e-8722-2128890607bd
 	- Virunga National Park's Bitcoin mining initiative represents an innovative approach to conservation funding, leveraging renewable energy to create a sustainable revenue stream. However, the project faces considerable challenges and risks due to the unstable regional context.
 	- [Link to the article](https://www.technologyreview.com/2023/01/13/1066820/cryptocurrency-bitcoin-mining-congo-virunga-national-park/)
 	  https://bitcoinmagazine.com/culture/bitcoin-financial-freedom-in-afghanistan
-	
+	  
 	  https://foreignpolicy.com/2021/08/03/macron-france-cfa-franc-eco-west-central-africa-colonialism-monetary-policy-bitcoin/
 		- https://files.oaiusercontent.com/file-s6V8kgf4OBmBsV4OWVfkrGTK?se=2123-12-25T11%3A08%3A40Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D1209600%2C%20immutable&rscd=attachment%3B%20filename%3D232f17ad-c93e-49a8-b5cd-7e8a56e8ec2e.png&sig=Dgi%2BamJkgTg7UzVzWUhCZy%2BGwXwijx7x63FCd3HhnNc%3D
 - ## Academic References & Citations
@@ -321,14 +345,3 @@ id:: 661d5f6a-ce5e-479e-8722-2128890607bd
 	- [[El Salvador]] - [[Bitcoin Legal Tender]] - [[Africa]] - [[Gridless]] - [[Financial Inclusion]] --
 	- [[DeFi]] - [[Decentralized Finance]] - [[Smart Contracts]] - [[Ethereum]] - [[Stablecoins]] --
 	- [[Quantum Computing]] - [[Post-Quantum Cryptography]] - [[Cryptographic Security]] - [[Bitcoin Protocol]] --
-
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
-
-### Relationships
-- is-subclass-of:: [[Blockchain]]

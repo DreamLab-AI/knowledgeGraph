@@ -6,17 +6,17 @@
     "Spatial Computing Layer",
     "Shared Ar Experiences",
     "Spatial Computing",
-    "SpatialComputing",
+    "ETSI Domain Virtual Society",
     "Persistent Ar Placement",
     "Physical Virtual Registration"
   ],
   "wiki_links": [
-    "Persistent AR Placement",
-    "AR Technology",
-    "metaverse",
-    "Augmented Reality",
     "SLAM",
-    "Location Based Services"
+    "Persistent AR Placement",
+    "Augmented Reality",
+    "metaverse",
+    "Location Based Services",
+    "AR Technology"
   ],
   "ontology": {
     "term_id": "MV-10051",

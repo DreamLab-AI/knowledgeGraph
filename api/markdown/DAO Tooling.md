@@ -4,24 +4,20 @@
 	- ontology:: true
 	- term-id:: BC-0472
 	- preferred-term:: DAO Tooling
-	- source-domain:: mv
-	- status:: active
-	- public-access:: true
-
-
-
-
-### OWL Classification
-	- owl:class:: bc:DaoTooling
+	- source-domain:: bc
+	- status:: stub-needs-content
+    - public-access:: true
+	- content-status:: minimal-placeholder-requires-authoring
+    - public-access:: true
+	- definition:: A component of the blockchain ecosystem.
+	- maturity:: draft
+	- owl:class:: bc:DAOTooling
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-
-### Domain & Architecture
 	- belongsToDomain:: [[BlockchainDomain]]
-	- maturity:: draft
 
-### Relationships
-- is-subclass-of:: [[Metaverse]]
+
+# DAO Tooling Ontology Entry: BC-0472-dao-tooling.md
 
 ## Academic Context
 
@@ -114,11 +110,14 @@
 
 7. Webisoft (2025). Blockchain Dev Tools Guide: Best IDEs, SDKs & APIs for 2025. Available at: https://webisoft.com/articles/blockchain-development-tools/
 
+
 ## Metadata
+
 
 - **Migration Status**: Ontology block enriched on 2025-11-12
 - **Last Updated**: 2025-11-12
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
 

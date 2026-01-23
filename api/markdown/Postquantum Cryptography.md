@@ -2,26 +2,19 @@
   id:: postquantum-cryptography-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0854
+	- term-id:: ME-0019
 	- preferred-term:: Postquantum Cryptography
 	- source-domain:: mv
-	- status:: emerging
-	- public-access:: true
-
-
-
-
-### OWL Classification
+	- status:: emerging-technology
+    - public-access:: true
+	- definition:: [Generated from Gartner emerging tech analysis]
+	- maturity:: emerging
 	- owl:class:: mv:PostquantumCryptography
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-
-### Domain & Architecture
 	- belongsToDomain:: [[MetaverseDomain]]
-	- maturity:: emerging
+	- category:: Security & Trust
 
-### Relationships
-- is-subclass-of:: [[Metaverse]]
 
 ## Overview
 
@@ -40,7 +33,7 @@
     - Regional initiatives, such as the Northern Quantum Initiative, foster collaboration between academia, industry, and government to advance quantum technologies and cybersecurity, including PQC.
     - UK financial institutions and healthcare providers in the North are beginning to assess their cryptographic posture and plan for PQC migration, driven by regulatory expectations and the need to protect sensitive data.
   - Key research papers and sources with full citations
-    - National Institute of Standards and Technology (NIST). (2022). *NIST Standardises Post-Quantum Cryptography Algorithms*. NISTIR 8413. https://doi.org/10.6028/nist.ir.8413
+    - National Institute of Standards and Technology (NIST). (2022). *NIST Standardizes Post-Quantum Cryptography Algorithms*. NISTIR 8413. https://doi.org/10.6028/nist.ir.8413
     - Bernstein, D. J., Lange, T., & Schwabe, P. (2017). *Post-quantum cryptography*. In *Handbook of Applied Cryptography* (2nd ed.). CRC Press.
     - Alagic, G., et al. (2022). *Status Report on the Third Round of the NIST Post-Quantum Cryptography Standardization Process*. NISTIR 8413. https://doi.org/10.6028/nist.ir.8413
     - National Cyber Security Centre (NCSC). (2023). *Post-Quantum Cryptography: Guidance for UK Organisations*. https://www.ncsc.gov.uk/collection/post-quantum-cryptography
@@ -51,12 +44,14 @@
     - Ongoing research will focus on improving the efficiency, scalability, and practicality of PQC algorithms, as well as addressing implementation challenges such as side-channel attacks and interoperability.
     - The UK is likely to play a leading role in PQC adoption and research, with continued investment in quantum technologies and cybersecurity infrastructure.
 
+
 ## UK Context
 
 - British contributions and implementations
   - Research institutions and programmes
   - Industry adoption
   - North England innovation (where relevant)
+
 
 ## Metadata
 
@@ -65,11 +60,4 @@
 - **Category**: Security & Trust
 - **Status**: Emerging Technology
 
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
 

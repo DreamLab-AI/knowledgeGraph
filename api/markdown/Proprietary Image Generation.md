@@ -1,17 +1,12 @@
-{{twitter https://twitter.com/LibertyRPF/status/1737848545657618873}}
+public:: true
 
-- ### OntologyBlock
-  id:: Proprietary Image Generation
-  - ontology:: true
-  - public-access:: true
-  - term-id:: MV-9737
-  - preferred-term:: ProprietaryImageGeneration
-  - source-domain:: mv
-  - owl:class:: mv:ProprietaryImageGeneration
-  - status:: draft
 
-### MidJourney v5&6
-- [twitter link to the render loading below](https://twitter.com/LibertyRPF/status/1737848545657618873)
+#Public page
+
+	- automatically published
+- ## Closed Source Image Generation: id:: 659a9229-ed15-4932-a207-eb2daa96786e
+	- ### MidJourney v5&6
+		- [twitter link to the render loading below](https://twitter.com/LibertyRPF/status/1737848545657618873)
 		  {{twitter https://twitter.com/LibertyRPF/status/1737848545657618873}}
 		- Super popular San Francisco-based MidJourney, Inc.
 			- **Cost**: Starts at $10/month with various subscription plans.
@@ -46,63 +41,3 @@
 		- {{tweet https://twitter.com/LinusEkenstam/status/1744431726443614539?}}
 		- [[Landscape]] contains some maps of more products.
 - This is a [[presentation]] slide and the next slide is [[Proprietary Video]]
-
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
-
-## Related Content: relighting
-
-public:: true
-
-- [[Global lighting | Image Based Lighting]] [[ComfyUI]] [lllyasviel/IC-Light: More relighting! (github.com)](https://github.com/lllyasviel/IC-Light)
-- Relighting [Relight Better than Magnific - Relighting v5 (better UX) | ComfyUI Workflow (openart.ai)](https://openart.ai/workflows/risunobushi/relight-better-than-magnific---relighting-v5-better-ux/nSqO2P2ZmDQGwohEbgl3)
-	- [Magnific AI Relight is Worse than Open Source - YouTube](https://www.youtube.com/watch?v=GsJaqesboTo) [[relighting]]
-- https://zju3dv.github.io/IntrinsicAnything/ relighting model
-- [[Apple]] [facial relighting](https://machinelearning.apple.com/research/neural-3d-relightable)
-- [Apple facial relighting](https://machinelearning.apple.com/research/neural-3d-relightable)
-- Relighting [[AI Video]] [[2402.18848] SwitchLight: Co-design of Physics-driven Architecture and Pre-training Framework for Human Portrait Relighting (arxiv.org)](https://arxiv.org/abs/2402.18848)
-	- [Beeble AI Lighting for Filmmakers](https://www.beeble.ai/)
-- Relighting [Relight Better than Magnific - Relighting v5 (better UX) | ComfyUI Workflow (openart.ai)](https://openart.ai/workflows/risunobushi/relight-better-than-magnific---relighting-v5-better-ux/nSqO2P2ZmDQGwohEbgl3)
-	- [Magnific AI Relight is Worse than Open Source - YouTube](https://www.youtube.com/watch?v=GsJaqesboTo) [[relighting]]
--
-
-## Current Landscape (2025)
-
-- Industry adoption and implementations
-  - Metaverse platforms continue to evolve with focus on interoperability and open standards
-  - Web3 integration accelerating with decentralised identity and asset ownership
-  - Enterprise adoption growing in virtual collaboration, training, and digital twins
-  - UK companies increasingly active in metaverse development and immersive technologies
-
-- Technical capabilities
-  - Real-time rendering at photorealistic quality levels
-  - Low-latency networking enabling seamless multi-user experiences
-  - AI-driven content generation and procedural world building
-  - Spatial audio and haptics enhancing immersion
-
-- UK and North England context
-  - Manchester: Digital Innovation Factory supports metaverse startups and research
-  - Leeds: Holovis leads in immersive experiences for entertainment and training
-  - Newcastle: University research in spatial computing and interactive systems
-  - Sheffield: Advanced manufacturing using digital twin technology
-
-- Standards and frameworks
-  - Metaverse Standards Forum driving interoperability protocols
-  - WebXR enabling browser-based immersive experiences
-  - glTF and USD for 3D asset interchange
-  - Open Metaverse Interoperability Group defining cross-platform standards
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
-
-### Relationships
-- is-subclass-of:: [[Metaverse]]

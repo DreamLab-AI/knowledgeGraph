@@ -2,29 +2,21 @@
   id:: cloud-rendering-service-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: DT-0102
-	- preferred-term:: Cloud Rendering Service
+	- term-id:: 20102
 	- source-domain:: mv
-	- public-access:: true
-
-
-
-
-### OWL Classification
+	- preferred-term:: Cloud Rendering Service
+	- definition:: Distributed processing system that generates 3D content remotely in cloud infrastructure and streams rendered output to client devices, enabling high-quality visualization on resource-constrained devices.
+	- maturity:: mature
+	- source:: [[ETSI GR ARF 010]], [[MSF Taxonomy]], [[SMPTE ST 2119]]
 	- owl:class:: mv:CloudRenderingService
 	- owl:physicality:: HybridEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:HybridProcess
-
-### Domain & Architecture
-	- belongsToDomain:: [[CreativeMediaDomain]], [[DisruptiveTechDomain]], [[InfrastructureDomain]]
+	- owl:functional-syntax:: true
+	- belongsToDomain:: [[InfrastructureDomain]], [[CreativeMediaDomain]]
 	- implementedInLayer:: [[PhysicalLayer]], [[ComputeLayer]]
-	- maturity:: mature
-
-### Relationships
-- is-subclass-of:: [[Metaverse]]
-id:: cloud-rendering-service-relationships
-		- uses:: [[Metaverse Infrastructure]]
+	- #### Relationships
+	  id:: cloud-rendering-service-relationships
 		- has-part:: [[Rendering Pipeline]], [[Streaming Encoder]], [[Load Balancer]]
 		- requires:: [[Cloud Infrastructure]], [[GPU Servers]], [[Network Bandwidth]]
 		- enables:: [[Remote Rendering]], [[Device-Agnostic Visualization]], [[High-Fidelity Graphics]]
@@ -87,10 +79,10 @@ id:: cloud-rendering-service-relationships
 		  SubClassOf(mv:ClientDevice mv:PhysicalObject)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:requires)
+  AsymmetricObjectProperty(dt:requires)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:enables)
+  AsymmetricObjectProperty(dt:enables)
 ```
 - ## About Cloud Rendering Services
   id:: cloud-rendering-service-about
@@ -98,7 +90,7 @@ id:: cloud-rendering-service-relationships
 	-
 	- ### Key Characteristics
 	  id:: cloud-rendering-service-characteristics
-		- Server-side rendering in data centres
+		- Server-side rendering in data centers
 		- Real-time streaming to client devices
 		- Scalable processing power
 		- Device-agnostic deployment
@@ -107,7 +99,7 @@ id:: cloud-rendering-service-relationships
 	-
 	- ### Technical Components
 	  id:: cloud-rendering-service-components
-		- [[Cloud Infrastructure]] - Physical data centre resources
+		- [[Cloud Infrastructure]] - Physical data center resources
 		- [[GPU Servers]] - Graphics processing hardware
 		- [[Rendering Pipeline]] - 3D graphics generation process
 		- [[Streaming Encoder]] - Video compression and streaming
@@ -202,8 +194,11 @@ id:: cloud-rendering-service-relationships
 	- imported-from:: [[Metaverse Glossary Excel]]
 	- import-date:: [[2025-01-15]]
 	- ontology-status:: migrated
-	- public-access:: true
+- public-access:: true
+	- migration-date:: [[2025-10-14]]
+	- classification-rationale:: Hybrid (requires physical cloud infrastructure + virtual software process) + Process (performs rendering activity) → HybridProcess
 
+    - uses-technique:: [[Reality Modelling]]
 ## Academic Context
 
 - Cloud rendering services represent a distributed computing paradigm where 3D content generation and rendering occur remotely on cloud infrastructure rather than local machines.
@@ -265,10 +260,10 @@ id:: cloud-rendering-service-relationships
 
 *No need to worry about your laptop overheating while cloud rendering—your device can finally take that well-earned tea break.*
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-

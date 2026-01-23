@@ -1,22 +1,136 @@
 - ### OntologyBlock
-  id:: unknown-ontology
+  id:: risk-mitigation-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0079
-	- source-domain:: mv
+	- term-id:: AI-0079
 	- preferred-term:: Risk Mitigation
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
+- public-access:: true
 	- definition:: Actions taken to reduce the likelihood or impact of identified AI risks through technical, organizational, or procedural controls, implemented throughout the AI lifecycle to achieve acceptable risk levels.
 	- maturity:: draft
 	- owl:class:: mv:RiskMitigation
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
-	- #### Relationships
-	  id:: unknown-relationships
+
+## OWL Formal Semantics
+
+```clojure
+;; OWL Functional Syntax
+
+(Declaration (Class :RiskMitigation))
+
+;; Annotations
+(AnnotationAssertion rdfs:label :RiskMitigation "Risk Mitigation"@en)
+(AnnotationAssertion rdfs:comment :RiskMitigation "Actions taken to reduce the likelihood or impact of identified AI risks through technical, organizational, or procedural controls, implemented throughout the AI lifecycle to achieve acceptable risk levels."@en)
+
+;; Data Properties
+(AnnotationAssertion dcterms:identifier :RiskMitigation "AI-0079"^^xsd:string)
+(DataPropertyAssertion :isAITechnology :RiskMitigation "true"^^xsd:boolean)
+```
+
+- ## About Risk Mitigation
+	- Actions taken to reduce the likelihood or impact of identified AI risks through technical, organizational, or procedural controls, implemented throughout the AI lifecycle to achieve acceptable risk levels.
+	-
+	- ### Original Content
 	  collapsed:: true
-		- is-subclass-of:: [[AIRiskManagement]]
+		- ```
+# Risk Mitigation
+		  
+		  **Term ID**: AI-0079
+		  **Category**: Foundational Concept
+		  **Status**: Active
+		  **Last Updated**: 2025-10-27
+		  
+		  ## Definition
+		  
+		  Actions taken to reduce the likelihood or impact of identified AI risks through technical, organizational, or procedural controls, implemented throughout the AI lifecycle to achieve acceptable risk levels.
+		  
+		  ## Formal Specification
+		  
+		  ```yaml
+		  term: Risk Mitigation
+		  definition: "Actions to reduce likelihood or impact of AI risks"
+		  domain: AI Risk Management
+		  type: Process
+		  strategies: [prevention, detection, response, recovery]
+		  controls: [technical, organizational, procedural]
+		  lifecycle_stages: [design, development, deployment, operation]
+		  ```
+		  
+		  ## Authoritative References
+		  
+		  1. **ISO/IEC 23894:2023** - Section 8: Risk treatment
+		  2. **NIST AI RMF 1.0** - MANAGE function
+		  3. **EU AI Act** - Article 9: Risk management requirements
+		  
+		  ## Mitigation Strategies
+		  
+		  ### Prevention
+		  - Bias detection and removal in training data
+		  - Adversarial training
+		  - Privacy-preserving techniques (differential privacy, federated learning)
+		  - Security controls (access control, encryption)
+		  
+		  ### Detection
+		  - Monitoring and alerting systems
+		  - Anomaly detection
+		  - Performance drift detection
+		  - Security event logging
+		  
+		  ### Response
+		  - Incident response procedures
+		  - Human oversight and intervention
+		  - Safe state entry
+		  - Kill switches
+		  
+		  ### Recovery
+		  - Model rollback capabilities
+		  - Data backup and recovery
+		  - Business continuity planning
+		  
+		  ## Technical Controls
+		  
+		  1. **Robustness Improvements**: Adversarial training, data augmentation
+		  2. **Fairness Interventions**: Bias mitigation algorithms, fairness constraints
+		  3. **Privacy Protections**: Encryption, anonymization, differential privacy
+		  4. **Security Hardening**: Input validation, rate limiting, access controls
+		  
+		  ## Organizational Controls
+		  
+		  1. **Governance Structures**: AI ethics committees, oversight boards
+		  2. **Policies and Procedures**: Acceptable use, incident response
+		  3. **Training and Awareness**: Staff education, responsible AI practices
+		  4. **Third-Party Management**: Vendor risk assessment
+		  
+		  ## Relationships
+		  
+		  - **Component Of**: Risk Management (AI-0077), Risk Treatment (AI-0080)
+		  - **Mitigates**: AI Risk (AI-0076), Specific risks (bias, privacy, security)
+		  - **Implements**: Controls, Safeguards
+		  
+		  ## Best Practices
+		  
+		  1. **Layered defenses** (defense in depth)
+		  2. **Continuous monitoring** of mitigation effectiveness
+		  3. **Regular testing** of controls
+		  4. **Document mitigation measures**
+		  5. **Periodic review and update**
+		  
+		  ## Related Terms
+		  
+		  - Risk Management (AI-0077)
+		  - Risk Treatment (AI-0080)
+		  - AI Risk (AI-0076)
+		  
+		  ## Version History
+		  
+		  - **1.0** (2025-10-27): Initial definition based on ISO/IEC 23894:2023
+		  
+		  ```
+
+- ## Risks and mitigations
 
 ## Academic Context
 
@@ -79,10 +193,10 @@
 
 7. National Institute of Standards and Technology (NIST). (2024). *AI Risk Management Framework*. Retrieved from https://www.nist.gov/itl/ai-risk-management-framework
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-

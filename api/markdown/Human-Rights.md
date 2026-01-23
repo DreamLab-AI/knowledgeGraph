@@ -1,19 +1,18 @@
+# Human Rights
+
 - ### OntologyBlock
   id:: human-rights-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: DT-0166
-	- source-domain:: ai
-	- owl:class:: ai:HumanRights
-	- belongsToDomain:: [[DisruptiveTechDomain]]
+	- term-id:: AI-0166
 	- preferred-term:: Human Rights
+	- source-domain:: mv
 	- status:: revised
 	- public-access:: true
+	- last-updated:: 2025-11-13
+	- quality-score:: 0.95
 	- definition:: Fundamental rights and freedoms inherent to all human beings as recognised in international instruments including the Universal Declaration of Human Rights, which AI systems must respect and protect throughout their lifecycle.
 
-
-### Relationships
-- is-subclass-of:: [[Artificial Intelligence]]
 ## Definition
 
 Human rights form a foundational component of the OECD's [[human-centred values]] principle, establishing that AI development and deployment must occur within the framework of internationally recognised fundamental rights rather than technological or economic imperatives alone.
@@ -38,7 +37,7 @@ Human rights form a foundational component of the OECD's [[human-centred values]
 - **Right to explanation**: Understanding AI-influenced outcomes
 - **Right to contest**: Challenging [[automated decisions]]
 - **Right to digital dignity**: Respect for personhood in [[digital contexts]]
-- **Right to decentralized identity**: Control over [[digital identity]] without centralised authority
+- **Right to decentralized identity**: Control over [[digital identity]] without centralized authority
 - **Right to algorithmic transparency**: Understanding how AI systems make decisions affecting individuals
 
 ## EU AI Act Integration [Updated 2025]
@@ -58,7 +57,7 @@ The **Framework Convention on Artificial Intelligence and Human Rights, Democrac
 - Requires signatories to assess need for bans/moratoria on AI incompatible with human rights
 - Mandates iterative risk and impact assessments
 - Incorporates [[Turing Institute]]-developed human rights risk assessment framework
-- Emphasises transparency, accountability, and democratic oversight
+- Emphasizes transparency, accountability, and democratic oversight
 - **Citation**: Council of Europe, Framework Convention on Artificial Intelligence (2024)
 
 ## See Also

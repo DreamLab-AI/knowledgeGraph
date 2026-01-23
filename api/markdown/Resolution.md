@@ -2,16 +2,165 @@
   id:: rb-0036-resolution-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: RB-0870
-	- source-domain:: rb
+	- term-id:: RB-0036
+	- domain-prefix:: RB
+	- sequence-number:: 0036
+	- filename-history:: ["rb-0036-resolution.md"]
 	- preferred-term:: Resolution
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
-	- definition:: 	- maturity:: draft
-	- owl:class:: rb:Resolution
+    - public-access:: true
+	- definition:: ### Primary Definition
+**Resolution** - Smallest incremental motion achievable by robot
+	- maturity:: draft
+	- owl:class:: mv:rb0036resolution
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[RoboticsDomain]]
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About rb 0036 resolution
+	- ### Primary Definition
+**Resolution** - Smallest incremental motion achievable by robot
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# RB-0036: Resolution
+		  
+		  ## Metadata
+		  - **Term ID**: RB-0036
+		  - **Term Type**: Core Concept
+		  - **Classification**: Fundamental Concepts
+		  - **Priority**: 1 (Foundational)
+		  - **Authority Score**: 0.95
+		  - **ISO Reference**: ISO 8373:2021
+		  - **Version**: 1.0.0
+		  - **Last Updated**: 2025-10-28
+		  
+		  ## Definition
+		  
+		  ### Primary Definition
+		  **Resolution** - Smallest incremental motion achievable by robot
+		  
+		  ### Standards Context
+		  Defined according to ISO 8373:2021 and related international robotics standards.
+		  
+		  ### Key Characteristics
+		  1. Core property of robotics systems
+		  2. Standardised definition across implementations
+		  3. Measurable and verifiable attributes
+		  4. Essential for safety and performance
+		  5. Industry-wide recognition and adoption
+		  
+		  ## Formal Ontology (OWL Functional Syntax)
+		  
+		  ```clojure
+		  (Declaration (Class :Resolution))
+		  (SubClassOf :Resolution :Robot)
+		  
+		  (AnnotationAssertion rdfs:label :Resolution "Resolution"@en)
+		  (AnnotationAssertion rdfs:comment :Resolution
+		    "Resolution - Foundational robotics concept"@en)
+		  (AnnotationAssertion :termID :Resolution "RB-0036"^^xsd:string)
+		  
+		  (Declaration (ObjectProperty :relates To))
+		  (ObjectPropertyDomain :relatesTo :Resolution)
+		  
+		  (Declaration (DataProperty :hasProperty))
+		  (DataPropertyDomain :hasProperty :Resolution)
+		  (DataPropertyRange :hasProperty xsd:string)
+		  ```
+		  
+		  ## Relationships
+		  
+		  ### Parent Classes
+		  - `Robot`: Primary classification
+		  
+		  ### Related Concepts
+		  - Related robotics concepts and systems
+		  - Cross-references to other ontology terms
+		  - Integration with metaverse ontology
+		  
+		  ## Use Cases
+		  
+		  ### Industrial Applications
+		  1. Manufacturing automation
+		  2. Quality control systems
+		  3. Process optimization
+		  
+		  ### Service Applications
+		  1. Healthcare robotics
+		  2. Logistics and warehousing
+		  3. Consumer robotics
+		  
+		  ### Research Applications
+		  1. Academic research platforms
+		  2. Algorithm development
+		  3. System integration studies
+		  
+		  ## Standards References
+		  
+		  ### Primary Standards
+		  1. **ISO 8373:2021**: Primary reference standard
+		  2. **ISO 8373:2021**: Robotics vocabulary
+		  3. **Related IEEE standards**: Implementation guidelines
+		  
+		  ## Validation Criteria
+		  
+		  ### Conformance Requirements
+		  1. ✓ Meets ISO 8373:2021 requirements
+		  2. ✓ Documented implementation
+		  3. ✓ Verifiable performance metrics
+		  4. ✓ Safety compliance demonstrated
+		  5. ✓ Industry best practices followed
+		  
+		  ## Implementation Notes
+		  
+		  ### Design Considerations
+		  - System integration requirements
+		  - Performance specifications
+		  - Safety considerations
+		  - Maintenance procedures
+		  
+		  ### Common Patterns
+		  ```yaml
+		  implementation:
+		    standards_compliance: true
+		    verification_method: standardised_testing
+		    documentation_level: comprehensive
+		  ```
+		  
+		  ## Cross-References
+		  
+		  ### Metaverse Ontology Integration
+		  - Virtual representation systems
+		  - Digital twin integration
+		  - Simulation environments
+		  
+		  ### Domain Ontologies
+		  - Manufacturing systems
+		  - Control systems
+		  - Safety systems
+		  
+		  ## Future Directions
+		  
+		  ### Emerging Trends
+		  1. AI and machine learning integration
+		  2. Advanced sensing capabilities
+		  3. Improved safety systems
+		  4. Enhanced human-robot collaboration
+		  5. Standardisation advancements
+		  
+		  ---
+		  
+		  **Version History**
+		  - 1.0.0 (2025-10-28): Initial foundational definition
+		  
+		  **Contributors**: Robotics Ontology Working Group
+		  **License**: CC BY 4.0
+		  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0036`
+		  
+		  ```
+
 
 ## Academic Context
 
@@ -57,6 +206,7 @@
 4. Federal Deposit Insurance Corporation. (2024). FDIC Approves Final Guidance to Enhance Resolution Planning at Large Banks. FDIC Press Release.
 5. Bank of England. (2025). Resolution Planning and Financial Stability Framework. Bank of England Publications.
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
@@ -64,5 +214,4 @@
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
 
-### Relationships
-- is-subclass-of:: [[Robotics]]
+

@@ -4,20 +4,196 @@
 	- ontology:: true
 	- term-id:: AI-0245
 	- preferred-term:: Parameter Count
-	- source-domain:: ai
-	- owl:class:: ai:ParameterCount
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
-	- definition:: The total number of trainable parameters in a neural network, serving as a primary measure of model size and capacity, typically ranging from millions to hundreds of billions in modern language models.
-	- #### Relationships
-- is-subclass-of:: [[ModelArchitecture]]
-	  id:: parameter-count-relationships
+- definition:: The total number of trainable parameters in a neural network, serving as a primary measure of model size and capacity, typically ranging from millions to hundreds of billions in modern language models.
+
+
+## OWL Formal Semantics
+
+```clojure
+;; OWL Functional Syntax
+
+(Declaration (Class :ParameterCount))
+
+;; Annotations
+(AnnotationAssertion rdfs:label :ParameterCount "Parameter Count"@en)
+(AnnotationAssertion rdfs:comment :ParameterCount "The total number of trainable parameters in a neural network, serving as a primary measure of model size and capacity, typically ranging from millions to hundreds of billions in modern language models."@en)
+
+;; Data Properties
+(AnnotationAssertion dcterms:identifier :ParameterCount "AI-0245"^^xsd:string)
+(DataPropertyAssertion :isAITechnology :ParameterCount "true"^^xsd:boolean)
+```
+
+## Characteristics
+
+- **Model Size Indicator**: Primary metric for comparing model scales
+- **Capacity Measure**: Correlates with model expressiveness
+- **Computational Impact**: Affects training and inference requirements
+- **Scaling Dimension**: Key factor in scaling laws research
+
+## Academic Foundations
+
+**Primary Source**: Standard model metric across all neural network research
+
+**Scale Evolution**:
+- BERT-base (2018): 110M parameters
+- GPT-2 (2019): 1.5B parameters
+- GPT-3 (2020): 175B parameters
+- PaLM (2022): 540B parameters
+- GPT-4 (2023): Estimated 1.8T parameters
+
+## Technical Context
+
+Parameter count is determined by architecture (depth, width, vocabulary size) and directly affects memory requirements and computational cost. Scaling laws research shows power-law relationships between parameter count and model performance, though efficiency varies with architecture and training procedures.
+
+## Ontological Relationships
+
+- **Broader Term**: Model Metric
+- **Related Terms**: Model Depth, Model Width, Scaling Laws
+- **Determined By**: Architecture configuration (layers, hidden dimension, vocabulary)
+
+## Usage Context
+
+"GPT-3's 175 billion parameters represent a 10× increase over previous non-sparse language models."
+
+## References
+
+- Brown, T., et al. (2020). "Language Models are Few-Shot Learners". arXiv:2005.14165
+- Kaplan, J., et al. (2020). "Scaling Laws for Neural Language Models". arXiv:2001.08361
+
+---
+
+*Ontology Term managed by AI-Grounded Ontology Working Group*
+*UK English Spelling Standards Applied*
+	- maturity:: draft
+	- owl:class:: mv:ParameterCount
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Parameter Count
+	- The total number of trainable parameters in a neural network, serving as a primary measure of model size and capacity, typically ranging from millions to hundreds of billions in modern language models.
+
+	- #### Ethereum
+		- While it’s been discounted elsewhere it’s hard to ignore the networkeffect of Eth NFTs. If the aspiration is to attract the bulk of the‘legacy’ creator/consumer markets then it will be necessary to supportintegration of Metamask into any FOSS stack. This isn’t a huge technicalchallenge, nor is it particularly of interest to our use cases at thisstage, but it remains a possibility. The main problems remain the slowspeed and high expense of the system.
+
+	- #### Ethereum
+		- While it’s been discounted elsewhere it’s hard to ignore the networkeffect of Eth NFTs. If the aspiration is to attract the bulk of the‘legacy’ creator/consumer markets then it will be necessary to supportintegration of Metamask into any FOSS stack. This isn’t a huge technicalchallenge, nor is it particularly of interest to our use cases at thisstage, but it remains a possibility. The main problems remain the slowspeed and high expense of the system.
+
+	- #### Ethereum
+		- While it’s been discounted elsewhere it’s hard to ignore the networkeffect of Eth NFTs. If the aspiration is to attract the bulk of the‘legacy’ creator/consumer markets then it will be necessary to supportintegration of Metamask into any FOSS stack. This isn’t a huge technicalchallenge, nor is it particularly of interest to our use cases at thisstage, but it remains a possibility. The main problems remain the slowspeed and high expense of the system.
+
+	- #### Ethereum
+		- While it’s been discounted elsewhere it’s hard to ignore the networkeffect of Eth NFTs. If the aspiration is to attract the bulk of the‘legacy’ creator/consumer markets then it will be necessary to supportintegration of Metamask into any FOSS stack. This isn’t a huge technicalchallenge, nor is it particularly of interest to our use cases at thisstage, but it remains a possibility. The main problems remain the slowspeed and high expense of the system.
+
+## Characteristics
+
+- **Model Size Indicator**: Primary metric for comparing model scales
+- **Capacity Measure**: Correlates with model expressiveness
+- **Computational Impact**: Affects training and inference requirements
+- **Scaling Dimension**: Key factor in scaling laws research
+
+## Academic Foundations
+
+**Primary Source**: Standard model metric across all neural network research
+
+**Scale Evolution**:
+- BERT-base (2018): 110M parameters
+- GPT-2 (2019): 1.5B parameters
+- GPT-3 (2020): 175B parameters
+- PaLM (2022): 540B parameters
+- GPT-4 (2023): Estimated 1.8T parameters
+
+## Technical Context
+
+Parameter count is determined by architecture (depth, width, vocabulary size) and directly affects memory requirements and computational cost. Scaling laws research shows power-law relationships between parameter count and model performance, though efficiency varies with architecture and training procedures.
+
+## Ontological Relationships
+
+- **Broader Term**: Model Metric
+- **Related Terms**: Model Depth, Model Width, Scaling Laws
+- **Determined By**: Architecture configuration (layers, hidden dimension, vocabulary)
+
+## Usage Context
+
+"GPT-3's 175 billion parameters represent a 10× increase over previous non-sparse language models."
+
+## References
+
+- Brown, T., et al. (2020). "Language Models are Few-Shot Learners". arXiv:2005.14165
+- Kaplan, J., et al. (2020). "Scaling Laws for Neural Language Models". arXiv:2001.08361
+
+---
+
+*Ontology Term managed by AI-Grounded Ontology Working Group*
+*UK English Spelling Standards Applied*
+	-
+	- ### Original Content
 	  collapsed:: true
-		- is-subclass-of:: [[ModelProperty]]
+		- ```
+# Parameter Count
+		  
+		  **Term ID**: AI-0245
+		  **Category**: Model Metric
+		  **Ontology Version**: 1.0
+		  **Last Updated**: 2025-10-27
+		  
+		  ## Definition
+		  
+		  The total number of trainable parameters in a neural network, serving as a primary measure of model size and capacity, typically ranging from millions to hundreds of billions in modern language models.
+		  
+		  ## Characteristics
+		  
+		  - **Model Size Indicator**: Primary metric for comparing model scales
+		  - **Capacity Measure**: Correlates with model expressiveness
+		  - **Computational Impact**: Affects training and inference requirements
+		  - **Scaling Dimension**: Key factor in scaling laws research
+		  
+		  ## Academic Foundations
+		  
+		  **Primary Source**: Standard model metric across all neural network research
+		  
+		  **Scale Evolution**:
+		  - BERT-base (2018): 110M parameters
+		  - GPT-2 (2019): 1.5B parameters
+		  - GPT-3 (2020): 175B parameters
+		  - PaLM (2022): 540B parameters
+		  - GPT-4 (2023): Estimated 1.8T parameters
+		  
+		  ## Technical Context
+		  
+		  Parameter count is determined by architecture (depth, width, vocabulary size) and directly affects memory requirements and computational cost. Scaling laws research shows power-law relationships between parameter count and model performance, though efficiency varies with architecture and training procedures.
+		  
+		  ## Ontological Relationships
+		  
+		  - **Broader Term**: Model Metric
+		  - **Related Terms**: Model Depth, Model Width, Scaling Laws
+		  - **Determined By**: Architecture configuration (layers, hidden dimension, vocabulary)
+		  
+		  ## Usage Context
+		  
+		  "GPT-3's 175 billion parameters represent a 10× increase over previous non-sparse language models."
+		  
+		  ## References
+		  
+		  - Brown, T., et al. (2020). "Language Models are Few-Shot Learners". arXiv:2005.14165
+		  - Kaplan, J., et al. (2020). "Scaling Laws for Neural Language Models". arXiv:2001.08361
+		  
+		  ---
+		  
+		  *Ontology Term managed by AI-Grounded Ontology Working Group*
+		  *UK English Spelling Standards Applied*
+		  
+		  ```
 
-## Parameter Count
+- public-access:: true
+	- definition:: The total number of trainable parameters in a neural network, serving as a primary measure of model size and capacity, typically ranging from millions to hundreds of billions in modern language models.
 
-Parameter Count refers to the total number of trainable parameters in a neural network, serving as a primary measure of model size and capacity, typically ranging from millions to hundreds of billions in modern language models.
+
+
+# Parameter Count – Revised Ontology Entry
+
+## Academic Context
 
 - Definition and foundational role
   - Internal variables adjusted during training to improve predictive accuracy
@@ -32,14 +208,6 @@ Parameter Count refers to the total number of trainable parameters in a neural n
   - Model structure and neuron layer depth significantly influence total parameter count
   - Special architectural components (attention mechanisms, mixture-of-experts) contribute substantially
   - Sparse models can achieve comparable performance with lower active parameter counts than dense equivalents
-
-## Technical Details
-
-- **Id**: parameter-count-ontology
-- **Collapsed**: true
-- **Source Domain**: ai
-- **Status**: draft
-- **Public Access**: true
 
 ## Current Landscape (2025)
 
@@ -107,9 +275,13 @@ Parameter Count refers to the total number of trainable parameters in a neural n
 ## References
 
 1. Banko, M., et al. (2003). "A Study of the Effects of Different Types of Errors on the Requirements for Automatic NLP Systems." *Proceedings of the 41st Annual Meeting of the Association for Computational Linguistics*.
+
 2. Anonymous (2025). "Average Parameter Count Over Pre-training Unifies Sparse and Dense Scaling Laws." *Proceedings of the International Conference on Learning Representations (ICLR 2025)*. arXiv:2501.12486.
+
 3. Epoch AI (2024). "Parameter Counts in Machine Learning." Retrieved from Epoch AI Blog.
+
 4. Our World in Data (2024). "Exponential Growth of Parameters in Notable AI Systems" and "Parameters in Notable Artificial Intelligence Systems."
+
 
 ## Metadata
 

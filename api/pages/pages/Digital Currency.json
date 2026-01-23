@@ -6,23 +6,26 @@
     "Monetary System",
     "Central Bank Digital Currency",
     "Barter System",
+    "Money",
     "Central Bank Digital Currency (CBDC)",
-    "CBDCs",
+    "Coin",
+    "Transaction Standard",
     "Bitcoin As Money",
-    "Monetary Sovereignty"
+    "Monetary Sovereignty",
+    "Value Transfer"
   ],
   "wiki_links": [
-    "CBDC",
+    "Cryptocurrency",
     "Digital Wallet",
     "Digital Payments",
-    "metaverse",
-    "Programmable Money",
+    "Transaction Network",
     "Virtual Transactions",
     "Security Infrastructure",
+    "CBDC",
+    "metaverse",
+    "Programmable Money",
     "Financial Technology",
-    "Stablecoin",
-    "Cryptocurrency",
-    "Transaction Network"
+    "Stablecoin"
   ],
   "ontology": {
     "term_id": "MV-9855",

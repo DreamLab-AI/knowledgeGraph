@@ -1,38 +1,42 @@
 - ### OntologyBlock
-    - term-id:: DT-0815
-    - source-domain:: ai
-    - owl:class:: ai:ConditionalRandomField
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - preferred-term:: Conditional Random Field
-    - ontology:: true
+  id:: conditionalrandomfield-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: AI
+    - sequence-number:: 0815
+    - filename-history:: ["AI-0815-conditionalrandomfield.md"]
     - public-access:: true
+    - ontology:: true
+    - term-id:: AI-0815
+    - preferred-term:: Conditional Random Field
+    - source-domain:: ai
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-### Relationships
-- is-subclass-of:: [[NeuralNetwork]]
+  - **Definition**
+    - definition:: CRF - probabilistic model for sequence labeling.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-## Conditional Random Field
+  - **Semantic Classification**
+    - owl:class:: ai:ConditionalRandomField
+    - belongsToDomain:: [[Artificial Intelligence]]
 
-Conditional Random Field refers to crf - probabilistic model for sequence labelling.
+  - #### Relationships
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :ConditionalRandomField))
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :ConditionalRandomField "Conditional Random Field"@en)
+      (AnnotationAssertion rdfs:comment :ConditionalRandomField
+        "CRF - probabilistic model for sequence labeling."@en)
+      ```
 
-## Technical Details
-
-- **Id**: conditionalrandomfield-ontology
-- **Collapsed**: true
-- **Domain Prefix**: AI
-- **Sequence Number**: 0815
-- **Filename History**: ["AI-0815-conditionalrandomfield.md"]
-- **Public Access**: true
-- **Source Domain**: ai
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: ai:ConditionalRandomField
-- **Belongstodomain**: [[Artificial Intelligence]]
+- ## About Conditional Random Field
+  CRF - probabilistic model for sequence labeling.

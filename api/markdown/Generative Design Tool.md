@@ -2,28 +2,21 @@
   id:: generative-design-tool-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: DT-0116
-	- preferred-term:: Generative Design Tool
+	- term-id:: 20116
 	- source-domain:: mv
-	- public-access:: true
-
-
-
-
-### OWL Classification
+	- preferred-term:: Generative Design Tool
+	- definition:: AI-assisted software application that produces optimized 3D designs from functional constraints using machine learning and computational algorithms.
+	- maturity:: mature
+	- source:: [[Autodesk Design ML]], [[SIGGRAPH AI Design WG]]
 	- owl:class:: mv:GenerativeDesignTool
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
-
-### Domain & Architecture
-	- belongsToDomain:: [[ComputationAndIntelligenceDomain]], [[DisruptiveTechDomain]], [[CreativeMediaDomain]]
-	- implementedInLayer:: [[DataLayer]], [[ComputeLayer]]
-	- maturity:: mature
-
-### Relationships
-id:: generative-design-tool-relationships
-		- is-subclass-of:: [[ArtificialIntelligence]]
+	- owl:functional-syntax:: true
+	- belongsToDomain:: [[CreativeMediaDomain]], [[ComputationAndIntelligenceDomain]]
+	- implementedInLayer:: [[ComputeLayer]], [[DataLayer]]
+	- #### Relationships
+	  id:: generative-design-tool-relationships
 		- has-part:: [[AI Model]], [[Design Optimizer]], [[Constraint Solver]], [[3D Generator]]
 		- is-part-of:: [[Content Creation Tool]], [[Authoring Tool]]
 		- requires:: [[Machine Learning Infrastructure]], [[Compute Infrastructure]], [[Design Database]]
@@ -57,7 +50,7 @@ id:: generative-design-tool-relationships
 
 		  # A Generative Design Tool requires ML infrastructure
 		  SubClassOf(mv:GenerativeDesignTool
-		    ObjectSomeValuesFrom(mv:requires ai:MachineLearningInfrastructure)
+		    ObjectSomeValuesFrom(mv:requires mv:MachineLearningInfrastructure)
 		  )
 
 		  # Domain classification
@@ -88,16 +81,16 @@ id:: generative-design-tool-relationships
 		  SubClassOf(mv:AutomatedDesign mv:VirtualProcess)
 
   # Property characteristics
-  TransitiveObjectProperty(mv:ispartof)
+  TransitiveObjectProperty(dt:ispartof)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:requires)
+  AsymmetricObjectProperty(dt:requires)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:dependson)
+  AsymmetricObjectProperty(dt:dependson)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:enables)
+  AsymmetricObjectProperty(dt:enables)
 ```
 - ## About Generative Design Tools
   id:: generative-design-tool-about
@@ -107,7 +100,7 @@ id:: generative-design-tool-relationships
 	  id:: generative-design-tool-characteristics
 		- AI-driven design exploration and generation
 		- Constraint-based optimization (weight, strength, material, cost)
-		- Parametric modelling with intelligent variation
+		- Parametric modeling with intelligent variation
 		- Multi-objective optimization (performance, manufacturability, aesthetics)
 		- Integration with simulation and analysis tools
 		- Learning from design patterns and historical data
@@ -135,7 +128,7 @@ id:: generative-design-tool-relationships
 		- **Design Space Exploration**: Navigate vast solution spaces intelligently
 		- **Manufacturing Constraints**: Consider additive/subtractive manufacturing limits
 		- **Material Selection**: Recommend optimal materials for design goals
-		- **Performance Prediction**: Estimate structural, thermal, fluid dynamics behaviour
+		- **Performance Prediction**: Estimate structural, thermal, fluid dynamics behavior
 		- **Design Evolution**: Iteratively refine based on feedback and simulation
 		- **Parametric Control**: Adjust design parameters and regenerate instantly
 	-
@@ -171,13 +164,13 @@ id:: generative-design-tool-relationships
 		- **Biomedical Devices**: Prosthetics, implants, surgical instruments
 		- **Manufacturing**: Optimized tooling, fixtures, jigs
 		- **Construction**: Bridge design, structural elements, modular systems
-		- **Fashion and Jewellery**: Parametric accessories, custom-fit wearables
+		- **Fashion and Jewelry**: Parametric accessories, custom-fit wearables
 		- **Energy Sector**: Heat exchangers, turbine blades, structural supports
 		- **Robotics**: Optimized robot arms, grippers, chassis
 	-
 	- ### Design Workflow
 	  id:: generative-design-tool-workflow
-		- **Define Goals** → Specify performance objectives (minimise weight, maximise strength)
+		- **Define Goals** → Specify performance objectives (minimize weight, maximize strength)
 		- **Set Constraints** → Define boundaries (size limits, load conditions, mounting points)
 		- **Choose Materials** → Select material properties and manufacturing methods
 		- **Generate Designs** → AI explores design space and creates alternatives
@@ -192,7 +185,7 @@ id:: generative-design-tool-relationships
 		- **Neural Architecture Search**: Automatically discover optimal network architectures
 		- **Transfer Learning**: Apply patterns from previous design domains
 		- **Active Learning**: Prioritize expensive simulations on promising designs
-		- **Surrogate Modelling**: ML models approximate expensive physics simulations
+		- **Surrogate Modeling**: ML models approximate expensive physics simulations
 		- **Design Pattern Recognition**: Learn from successful designs
 		- **Predictive Performance Models**: Estimate outcomes without full simulation
 		- **Reinforcement Learning Agents**: Autonomously explore design strategies
@@ -202,7 +195,7 @@ id:: generative-design-tool-relationships
 	  id:: generative-design-tool-advantages
 		- Explores thousands of alternatives vs. handful manually
 		- Discovers non-intuitive, organic designs humans wouldn't conceive
-		- Optimises for multiple objectives simultaneously
+		- Optimizes for multiple objectives simultaneously
 		- Reduces material waste and production cost
 		- Accelerates design iteration cycles
 		- Enables mass customization and personalization
@@ -222,10 +215,10 @@ id:: generative-design-tool-relationships
 	-
 	- ### Metaverse Applications
 	  id:: generative-design-tool-metaverse
-		- **Virtual World Asset Creation**: Auto-generate optimised 3D assets for performance
+		- **Virtual World Asset Creation**: Auto-generate optimized 3D assets for performance
 		- **Procedural Content Generation**: Create diverse, unique environments
 		- **Avatar Customization**: Generate personalized avatar features and accessories
-		- **Virtual Architecture**: Design optimised virtual buildings and structures
+		- **Virtual Architecture**: Design optimized virtual buildings and structures
 		- **Game Level Design**: AI-assisted level generation and optimization
 		- **NFT Art Generation**: Create unique digital collectibles
 		- **Virtual Fashion**: Design wearables with parametric customization
@@ -249,7 +242,7 @@ id:: generative-design-tool-relationships
 		- [[Authoring Tool]] - Broader category of creation tools
 		- [[Content Creation Tool]] - General content creation category
 		- [[AI Assistant]] - Related AI-powered tool
-		- [[3D Modelling Software]] - Traditional modelling approach
+		- [[3D Modeling Software]] - Traditional modeling approach
 		- [[CAD System]] - Computer-aided design systems
 		- [[Computational Design]] - Algorithmic design methods
 		- [[AI Model]] - Core component
@@ -271,8 +264,11 @@ id:: generative-design-tool-relationships
 	- imported-from:: [[Metaverse Glossary Excel]]
 	- import-date:: [[2025-01-15]]
 	- ontology-status:: migrated
-	- public-access:: true
+- public-access:: true
+	- migration-date:: [[2025-10-14]]
+	- classification-rationale:: Virtual (software application) + Object (tool/artifact) → VirtualObject
 
+    - uses-technique:: [[3D Modeling Software]]
 ## Academic Context
 
 - Generative design is an AI-assisted, algorithm-driven methodology that produces optimised 3D designs by exploring vast design spaces based on functional constraints and objectives.
@@ -326,9 +322,10 @@ id:: generative-design-tool-relationships
 
 ## References
 
-1. Bendsøe, M.P., & Sigmund, O. (2003). *Topology Optimization: Theory, Methods, and Applications*. Springer. https://doi.org/10.1007/978-3-662-05086-6
-2. Dunning, P.D., & Gero, J.S. (2024). AI-driven generative design: A review of algorithms and applications. *Computer-Aided Design*, 150, 103123. https://doi.org/10.1016/j.cad.2023.103123
+1. Bendsøe, M.P., & Sigmund, O. (2003). *Topology Optimization: Theory, Methods, and Applications*. Springer. https://doi.org/10.1007/978-3-662-05086-6  
+2. Dunning, P.D., & Gero, J.S. (2024). AI-driven generative design: A review of algorithms and applications. *Computer-Aided Design*, 150, 103123. https://doi.org/10.1016/j.cad.2023.103123  
 3. Smith, R., & Jones, L. (2025). Generative design in UK manufacturing: Challenges and opportunities. *Journal of Engineering Design*, 36(2), 89-110. https://doi.org/10.1080/09544828.2025.1122334
+
 
 ## Metadata
 
@@ -336,4 +333,3 @@ id:: generative-design-tool-relationships
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-

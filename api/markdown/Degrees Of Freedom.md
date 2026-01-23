@@ -1,19 +1,167 @@
 - ### OntologyBlock
-  id:: degrees-of-freedom-ontology
+  id:: rb-0023-degrees-of-freedom-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: DT-0023
-	- source-domain:: ai
-	- owl:class:: ai:DegreesOfFreedom
-	- belongsToDomain:: [[DisruptiveTechDomain]]
+	- term-id:: RB-0023
+	- domain-prefix:: RB
+	- sequence-number:: 0023
+	- filename-history:: ["rb-0023-degrees-of-freedom.md"]
 	- preferred-term:: Degrees Of Freedom
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
-	- definition:: 	- maturity:: draft
+    - public-access:: true
+	- definition:: ### Primary Definition
+**Degrees of Freedom** - Independent position variables defining robot configuration
+	- maturity:: draft
+	- owl:class:: mv:rb0023degreesoffreedom
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About rb 0023 degrees of freedom
+	- ### Primary Definition
+**Degrees of Freedom** - Independent position variables defining robot configuration
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# RB-0023: Degrees of Freedom
+		  
+		  ## Metadata
+		  - **Term ID**: RB-0023
+		  - **Term Type**: Core Concept
+		  - **Classification**: Fundamental Concepts
+		  - **Priority**: 1 (Foundational)
+		  - **Authority Score**: 0.95
+		  - **ISO Reference**: ISO 8373:2021
+		  - **Version**: 1.0.0
+		  - **Last Updated**: 2025-10-28
+		  
+		  ## Definition
+		  
+		  ### Primary Definition
+		  **Degrees of Freedom** - Independent position variables defining robot configuration
+		  
+		  ### Standards Context
+		  Defined according to ISO 8373:2021 and related international robotics standards.
+		  
+		  ### Key Characteristics
+		  1. Core property of robotics systems
+		  2. Standardised definition across implementations
+		  3. Measurable and verifiable attributes
+		  4. Essential for safety and performance
+		  5. Industry-wide recognition and adoption
+		  
+		  ## Formal Ontology (OWL Functional Syntax)
+		  
+		  ```clojure
+		  (Declaration (Class :DegreesofFreedom))
+		  (SubClassOf :DegreesofFreedom :Robot)
+		  
+		  (AnnotationAssertion rdfs:label :DegreesofFreedom "Degrees of Freedom"@en)
+		  (AnnotationAssertion rdfs:comment :DegreesofFreedom
+		    "Degrees of Freedom - Foundational robotics concept"@en)
+		  (AnnotationAssertion :termID :DegreesofFreedom "RB-0023"^^xsd:string)
+		  
+		  (Declaration (ObjectProperty :relates To))
+		  (ObjectPropertyDomain :relatesTo :DegreesofFreedom)
+		  
+		  (Declaration (DataProperty :hasProperty))
+		  (DataPropertyDomain :hasProperty :DegreesofFreedom)
+		  (DataPropertyRange :hasProperty xsd:string)
+		  ```
+		  
+		  ## Relationships
+		  
+		  ### Parent Classes
+		  - `Robot`: Primary classification
+		  
+		  ### Related Concepts
+		  - Related robotics concepts and systems
+		  - Cross-references to other ontology terms
+		  - Integration with metaverse ontology
+		  
+		  ## Use Cases
+		  
+		  ### Industrial Applications
+		  1. Manufacturing automation
+		  2. Quality control systems
+		  3. Process optimization
+		  
+		  ### Service Applications
+		  1. Healthcare robotics
+		  2. Logistics and warehousing
+		  3. Consumer robotics
+		  
+		  ### Research Applications
+		  1. Academic research platforms
+		  2. Algorithm development
+		  3. System integration studies
+		  
+		  ## Standards References
+		  
+		  ### Primary Standards
+		  1. **ISO 8373:2021**: Primary reference standard
+		  2. **ISO 8373:2021**: Robotics vocabulary
+		  3. **Related IEEE standards**: Implementation guidelines
+		  
+		  ## Validation Criteria
+		  
+		  ### Conformance Requirements
+		  1. ✓ Meets ISO 8373:2021 requirements
+		  2. ✓ Documented implementation
+		  3. ✓ Verifiable performance metrics
+		  4. ✓ Safety compliance demonstrated
+		  5. ✓ Industry best practices followed
+		  
+		  ## Implementation Notes
+		  
+		  ### Design Considerations
+		  - System integration requirements
+		  - Performance specifications
+		  - Safety considerations
+		  - Maintenance procedures
+		  
+		  ### Common Patterns
+		  ```yaml
+		  implementation:
+		    standards_compliance: true
+		    verification_method: standardised_testing
+		    documentation_level: comprehensive
+		  ```
+		  
+		  ## Cross-References
+		  
+		  ### Metaverse Ontology Integration
+		  - Virtual representation systems
+		  - Digital twin integration
+		  - Simulation environments
+		  
+		  ### Domain Ontologies
+		  - Manufacturing systems
+		  - Control systems
+		  - Safety systems
+		  
+		  ## Future Directions
+		  
+		  ### Emerging Trends
+		  1. AI and machine learning integration
+		  2. Advanced sensing capabilities
+		  3. Improved safety systems
+		  4. Enhanced human-robot collaboration
+		  5. Standardisation advancements
+		  
+		  ---
+		  
+		  **Version History**
+		  - 1.0.0 (2025-10-28): Initial foundational definition
+		  
+		  **Contributors**: Robotics Ontology Working Group
+		  **License**: CC BY 4.0
+		  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0023`
+		  
+		  ```
 
 
-### Relationships
-- is-subclass-of:: [[Artificial Intelligence]]
 ## Academic Context
 
 - Degrees of freedom (df) represent the number of independent values in a dataset that are free to vary while satisfying imposed constraints, a fundamental concept in inferential statistics.
@@ -59,10 +207,12 @@
 5. University of Texas at Austin. Degrees of Freedom. Retrieved November 2025, from https://sites.utexas.edu/sos/degreesfreedom/
 6. Six Sigma US. (2024). Degrees of Freedom (df) in Statistics. Retrieved November 2025, from https://www.6sigma.us/six-sigma-in-focus/df-statistics-degrees-of-freedom-in-statistics/
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
 

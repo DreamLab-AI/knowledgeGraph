@@ -1,16 +1,166 @@
 - ### OntologyBlock
-  id:: speed-and-separation-monitoring-ontology
+  id:: rb-0105-speed-and-separation-monitoring-ontology
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0105
+	- domain-prefix:: RB
+	- sequence-number:: 0105
+	- filename-history:: ["rb-0105-speed-and-separation-monitoring.md"]
 	- preferred-term:: Speed And Separation Monitoring
-	- source-domain:: rb
-	- owl:class:: rb:SpeedAndSeparationMonitoring
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
-	- is-subclass-of:: [[Robotics]]
-	- definition:: Speed and Separation Monitoring (SSM) is a safety function that monitors the space around a robot, reducing speed or stopping it if a human or obstacle approaches within a calculated protective distance.
+    - public-access:: true
+	- definition:: ### Primary Definition
+**Speed and Separation Monitoring** - Speed and Separation Monitoring in robotics systems
 	- maturity:: draft
+	- owl:class:: mv:rb0105speedandseparationmonitoring
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About rb 0105 speed and separation monitoring
+	- ### Primary Definition
+**Speed and Separation Monitoring** - Speed and Separation Monitoring in robotics systems
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# RB-0105: Speed and Separation Monitoring
+		  
+		  ## Metadata
+		  - **Term ID**: RB-0105
+		  - **Term Type**: Core Concept
+		  - **Classification**: Safety & Standards
+		  - **Priority**: 1 (Foundational)
+		  - **Authority Score**: 0.95
+		  - **ISO Reference**: ISO 8373:2021
+		  - **Version**: 1.0.0
+		  - **Last Updated**: 2025-10-28
+		  
+		  ## Definition
+		  
+		  ### Primary Definition
+		  **Speed and Separation Monitoring** - Speed and Separation Monitoring in robotics systems
+		  
+		  ### Standards Context
+		  Defined according to ISO 8373:2021 and related international robotics standards.
+		  
+		  ### Key Characteristics
+		  1. Core property of robotics systems
+		  2. Standardised definition across implementations
+		  3. Measurable and verifiable attributes
+		  4. Essential for safety and performance
+		  5. Industry-wide recognition and adoption
+		  
+		  ## Formal Ontology (OWL Functional Syntax)
+		  
+		  ```clojure
+		  (Declaration (Class :SpeedandSeparationMonitoring))
+		  (SubClassOf :SpeedandSeparationMonitoring :Robot)
+		  
+		  (AnnotationAssertion rdfs:label :SpeedandSeparationMonitoring "Speed and Separation Monitoring"@en)
+		  (AnnotationAssertion rdfs:comment :SpeedandSeparationMonitoring
+		    "Speed and Separation Monitoring - Foundational robotics concept"@en)
+		  (AnnotationAssertion :termID :SpeedandSeparationMonitoring "RB-0105"^^xsd:string)
+		  
+		  (Declaration (ObjectProperty :relates To))
+		  (ObjectPropertyDomain :relatesTo :SpeedandSeparationMonitoring)
+		  
+		  (Declaration (DataProperty :hasProperty))
+		  (DataPropertyDomain :hasProperty :SpeedandSeparationMonitoring)
+		  (DataPropertyRange :hasProperty xsd:string)
+		  ```
+		  
+		  ## Relationships
+		  
+		  ### Parent Classes
+		  - `Robot`: Primary classification
+		  
+		  ### Related Concepts
+		  - Related robotics concepts and systems
+		  - Cross-references to other ontology terms
+		  - Integration with metaverse ontology
+		  
+		  ## Use Cases
+		  
+		  ### Industrial Applications
+		  1. Manufacturing automation
+		  2. Quality control systems
+		  3. Process optimization
+		  
+		  ### Service Applications
+		  1. Healthcare robotics
+		  2. Logistics and warehousing
+		  3. Consumer robotics
+		  
+		  ### Research Applications
+		  1. Academic research platforms
+		  2. Algorithm development
+		  3. System integration studies
+		  
+		  ## Standards References
+		  
+		  ### Primary Standards
+		  1. **ISO 8373:2021**: Primary reference standard
+		  2. **ISO 8373:2021**: Robotics vocabulary
+		  3. **Related IEEE standards**: Implementation guidelines
+		  
+		  ## Validation Criteria
+		  
+		  ### Conformance Requirements
+		  1. ✓ Meets ISO 8373:2021 requirements
+		  2. ✓ Documented implementation
+		  3. ✓ Verifiable performance metrics
+		  4. ✓ Safety compliance demonstrated
+		  5. ✓ Industry best practices followed
+		  
+		  ## Implementation Notes
+		  
+		  ### Design Considerations
+		  - System integration requirements
+		  - Performance specifications
+		  - Safety considerations
+		  - Maintenance procedures
+		  
+		  ### Common Patterns
+		  ```yaml
+		  implementation:
+		    standards_compliance: true
+		    verification_method: standardised_testing
+		    documentation_level: comprehensive
+		  ```
+		  
+		  ## Cross-References
+		  
+		  ### Metaverse Ontology Integration
+		  - Virtual representation systems
+		  - Digital twin integration
+		  - Simulation environments
+		  
+		  ### Domain Ontologies
+		  - Manufacturing systems
+		  - Control systems
+		  - Safety systems
+		  
+		  ## Future Directions
+		  
+		  ### Emerging Trends
+		  1. AI and machine learning integration
+		  2. Advanced sensing capabilities
+		  3. Improved safety systems
+		  4. Enhanced human-robot collaboration
+		  5. Standardisation advancements
+		  
+		  ---
+		  
+		  **Version History**
+		  - 1.0.0 (2025-10-28): Initial foundational definition
+		  
+		  **Contributors**: Robotics Ontology Working Group
+		  **License**: CC BY 4.0
+		  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0105`
+		  
+		  ```
+
 
 ## Academic Context
 
@@ -80,10 +230,12 @@
 6. ISO. (2022). *Robots and robotic devices — Collaborative robots* (ISO/TS 15066:2022).
 7. UK Civil Aviation Authority. (2025). *CAP 493: Manual of Air Traffic Services*. CAA.
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
 

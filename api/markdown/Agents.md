@@ -1,0 +1,277 @@
+public:: true
+
+	- In the context of AI / LLM agents are programs or systems that are designed to simulate and mimic human intelligence and behaviour, frequently in a minimally supervised, or unsupervised way. They are increasingly capable of performing tasks that typically require human intelligence, including understanding and generating language, making decisions, solving complex problems, and learning from data. They can theoretically make informed decisions or recommendations. They have the potential to revolutionise various industries, improving efficiency and productivity in numerous domains, code writing being the main one.
+	- Agents potentially disrupt busywork, mid/high end technology jobs, and management roles. This is an unresolved and emergent issue within [[Social contract and jobs]] discussions.
+	- # Terminology
+	  id:: 68d3ab67-38ca-43b6-b924-439d02c7f3bd
+		- ## Definition
+			- The term agent is contested, and has been for years. The simplest definition is a piece of software that does something on your behalf, **using AI**.
+		- ## No, Really, What are Agents
+			- I have given up following the debate because in a way it doesn't matter. As a good heuristic
+				- LLMs
+				- Chatbots - LLMs that are tuned by RL for turn based chat
+				- Agents
+					- Tool use
+					- Memory
+					- Agency (decision action trees)
+					- Minimal oversight
+					- Outcome driven
+				- Agentic Systems
+					- Learning
+					- Persistence across sessions
+					- Complex tasks
+					- Complex tool use
+					- Able to create and use tooling
+				- Multi-Agent Orchestration
+					- Complex organisations of Agentic Systems
+					- Long runs times
+					- Open ended discovery and knowledge synthesis
+					- Systems level problems
+					- Expensive
+- # Agentic Tool Use
+	- ## Understanding Context Engineering
+		- Context engineering represents an evolution beyond traditional prompt engineering. Rather than simply crafting better prompts, context engineering focuses on managing and optimising everything that enters an AI model's context window.
+		- ### Key Principles
+			- The core insight is that successful AI applications depend more on what information is provided to the model than on how that information is requested. This includes:
+				- Relevant data from retrieval systems
+				- User preferences and personalisation data
+				- Historical conversation context
+				- Current date, time, and environmental information
+				- Tool definitions and available functions
+		- ### Evolution from Chat to Complex Systems
+			- Context engineering emerged as AI systems evolved beyond simple chat interfaces to incorporate:
+				- Function calling and tool use
+				- Retrieval augmented generation (RAG) systems
+				- Multi-agent workflows
+				- External API integrations
+				- The principle of "garbage in, garbage out" becomes critical when managing complex information flows. Pre-processing and cleaning data before it enters the context window significantly improves output quality.
+	- ## Agents versus Workflows
+		- ### Defining Agents
+			- An agent is an open-ended AI system that can:
+				- Generate plans dynamically based on input
+				- Adapt its approach to varying scenarios
+				- Make interpretive decisions case-by-case
+				- Access and use multiple tools flexibly
+				- Agents excel at replacing entire job functions or handling creative, investigative work where the path to completion isn't predetermined.
+		- ### Defining Workflows
+			- A workflow is a structured, predictable sequence that:
+				- Always follows the same steps
+				- Provides consistent output formats
+				- Offers greater control over quality
+				- Suits tasks with known, repeatable processes
+				- Workflows work best for replacing specific job responsibilities rather than entire roles.
+		- ### Decision Framework
+			- Choose workflows when:
+				- You expect consistent output types
+				- Quality control is paramount
+				- The process steps are well-defined
+				- You're automating a specific responsibility
+			- Choose agents when:
+				- Tasks require creative problem-solving
+				- Plans must be generated on-the-fly
+				- You're replacing comprehensive job functions
+				- Flexibility and adaptation are essential
+	- ## Effective Agents
+		- ### Understanding the Human Process
+			- Before deploying an agent, thoroughly understand how humans currently perform the task:
+				- Document not just the steps, but the decision-making process
+				- Identify what information influences choices at each stage
+				- Understand the creative or interpretive elements
+				- Map out exception handling and edge cases
+		- ### Implementation Strategy
+			- Start with subject matter experts who perform the work daily. Extract their thought processes and decision-making frameworks, then:
+				- Encode this knowledge into the agent's system prompt
+				- Test across multiple representative tasks
+				- Gather human feedback on outputs
+				- Create golden datasets of good versus poor performance
+				- Iterate on both prompts and context information
+		- ### Maintaining Control and Observability
+			- As systems become more autonomous, implement safeguards:
+				- Regular checkpoints and progress updates
+				- Clear logging of decisions and reasoning
+				- Human oversight for critical decisions
+				- Fallback mechanisms for unexpected scenarios
+				- Performance monitoring and quality metrics
+	- ## Retrieval Augmented Generation (RAG)
+		- ### Core Concept
+			- RAG is fundamentally about search - finding and providing the most relevant information to answer a query. This isn't limited to vector databases but encompasses any method of retrieving pertinent data.
+		- ### Implementation Approaches
+			- RAG can utilise various search techniques:
+				- Full-text search for exact matches
+				- Vector search for semantic similarity
+				- Metadata filtering for structured queries
+				- Graph database traversal for relationship-based retrieval
+				- Hybrid approaches combining multiple methods
+		- ### Optimisation Strategy
+			- Focus on solving the search problem rather than switching between different database providers. Success comes from:
+				- Understanding your top queries and optimising for them
+				- Ensuring your data contains the information users need
+				- Tuning retrieval parameters (top-k results, similarity thresholds)
+				- Testing different search techniques for your specific use case
+	- ## Deep Research Applications
+		- ### When to Use Deep Research
+			- Deep research systems excel at:
+				- Complex investigative tasks requiring multiple information sources
+				- Synthesis of information across various domains
+				- Tasks that would require sequential searches and analysis
+				- Situations where comprehensive coverage is more important than speed
+		- ### Implementation Patterns
+			- Effective deep research systems:
+				- Break complex queries into constituent questions
+				- Search iteratively, using findings to inform subsequent searches
+				- Synthesise information from multiple sources
+				- Provide comprehensive analysis rather than simple answers
+				- Work asynchronously, allowing users to continue other tasks
+		- ### Enterprise Applications
+			- Deep research patterns work well beyond web content:
+			- Internal document search and analysis
+			- Knowledge base interrogation across multiple systems
+			- Compliance and regulatory research
+			- Competitive intelligence gathering
+	- ## Long-Horizon Task Management
+		- ### The Context Decay Problem
+			- Long-running agents often lose track of their original objectives as conversation history grows. This leads to incomplete or incorrect task execution.
+		- ### Checkpoint and Resume Strategy
+			- Implement systematic progress tracking:
+				- Force agents to document their current state and progress
+				- Save this information to persistent storage (files, databases)
+				- Start new conversations with context from these checkpoints
+				- Maintain to-do lists that the agent must update and reference
+		- ### Planning and Execution
+			- Successful long-horizon systems require:
+				- Explicit planning phases before execution
+				- Regular plan updates as new information emerges
+				- Clear task decomposition and prioritisation
+				- Progress tracking and milestone completion
+				- Recovery mechanisms when tasks go off-track
+	- {{embed ((68aef10f-22e6-4b42-b835-1d12dabfef8d))}}
+	- {{embed ((68aef10f-1127-4a2c-b03f-fc7ddd9a8d1d))}}
+	- {{embed ((68aef10f-4c4a-4c65-a81b-be1ac28622e2))}}
+	- ## Deep Agents and Extended Processing
+		- ### Characteristics of Deep Agents
+			- Deep agents distinguish themselves through:
+				- Extended runtime (minutes to hours or days)
+				- Comprehensive planning and re-planning
+				- High-value, substantial outputs
+				- Self-correction and iteration capabilities
+				- Significant computational resource usage
+		- ### Applications and Use Cases
+			- Deep agents work well for:
+				- Comprehensive research and analysis
+				- Large-scale software development projects
+				- Complex problem-solving requiring multiple approaches
+				- Tasks that benefit from extended reasoning and reflection
+				- High-stakes decisions requiring thorough analysis
+		- ### Implementation Considerations
+			- Running deep agents successfully requires:
+				- Robust planning and progress tracking systems
+				- Adequate computational resources and budget
+				- Clear success criteria and stopping conditions
+				- Human oversight for critical decisions
+				- Efficient resource utilisation and cost management
+	- ## Best Practices for Implementation
+	- ### Start Small and Scale
+	  
+	  Begin with narrow, well-defined use cases:
+	- Automate single, repetitive tasks first
+	- Build understanding of the technology through experimentation
+	- Identify high-impact, low-risk opportunities
+	- Develop expertise before tackling complex problems
+	- ### Quality and Control Measures
+	  
+	  Maintain quality through systematic approaches:
+	- Establish clear success metrics
+	- Implement human feedback loops
+	- Create test datasets for consistent evaluation
+	- Monitor performance over time
+	- Plan for graceful degradation when systems fail
+	- ### Cost Management
+	  
+	  AI agents can become expensive quickly:
+	- Set clear budgets and monitoring
+	- Optimise for efficiency in long-running tasks
+	- Choose appropriate model sizes for specific tasks
+	- Consider caching and result reuse
+	- Balance automation benefits against operational costs
+	- ### Security and Privacy
+	  
+	  Implement appropriate safeguards:
+	- Limit access to sensitive systems and data
+	- Monitor agent actions and decisions
+	- Implement authentication and authorisation
+	- Consider data privacy implications
+	- Plan for incident response and recovery
+	-
+	-
+-
+	- [Jack Burlinson on X: "In case you were wondering just how cracked the team @cognition_labs is... This was the CEO (@ScottWu46) 14 years ago. https://t.co/UqXTYGVKzO" / X (twitter.com)](https://twitter.com/jfbrly/status/1767653596957642879)
+	- {{twitter https://twitter.com/jfbrly/status/1767653596957642879}}
+	- <iframe src="https://www.adept.ai/" style="width: 100%; height: 400px"></iframe>
+	- <iframe src="https://www.openinterpreter.com/01" style="width: 100%; height: 400px"></iframe>
+- **Automating Repetitive Tasks**:
+	- AI offers the potential to automate mundane digital chores. This can revolutionize job efficiency and free up human resources for more creative and complex tasks.
+	- The development of multimodal models and reinforcement learning is paving the way for richer, more intuitive user experiences, expanding AI's role in everyday life.
+- **Logical Reasoning and Decision-Making**:
+	- AI models currently struggle with complex logical reasoning, which impacts their decision-making abilities in nuanced tasks. This limitation is a critical area for future advancements.
+- **Adaptation to New Environments and Online Learning**:
+	- AI agents need substantial improvements in adapting to new environments and in their capability for online learning. This is crucial for their effective deployment in various real-world scenarios.
+- **Navigating Complex Web Interfaces**:
+	- Both humans and AI agents find it challenging to navigate and interpret complex web interfaces. This underscores the need for AI systems to improve their adaptation and learning mechanisms.
+- **Data Privacy and Ethical Use**:
+	- The use of personal data in AI training raises significant ethical concerns. There is a pressing need for stringent measures to responsibly handle personal identifiable information and ensure user privacy.
+- **Cost and Efficiency Balancing**:
+	- A major challenge lies in running sophisticated AI models economically while maintaining high efficiency. This concern becomes increasingly significant as the technology scales.
+	- <iframe src="https://www.theinformation.com/articles/to-unlock-ai-spending-microsoft-openai-and-google-prep-agents" style="width: 100%; height: 400px"></iframe>
+		- [To Unlock AI Spending, Microsoft, OpenAI and Google Prep ‘Agents’ — The Information](https://www.theinformation.com/articles/to-unlock-ai-spending-microsoft-openai-and-google-prep-agents)
+- ## OpenAI's Vision
+	- Envisions ChatGPT as a super-smart personal assistant
+	- Continuous development towards agent-like capabilities
+	- Developing agents for device-specific and web-based tasks
+	- Device agents automate actions like data transfer and report filling
+	- Web agents handle internet-based tasks, expanding AI's utility
+	- OpenAI's efforts could challenge [[Microsoft CoPilot]] which is somewhat explicitly designed for this role
+	- Collaboration with developers through APIs to create agent experiences
+- # User Trust and Acceptance
+	- Overcoming perceptions associated with software that controls devices
+- # Industry and Societal Implications
+	- Potential to change work paradigms and interaction with technology
+	- Raises ethical and privacy concerns regarding AI's role in decision-making
+-
+- ![1706600234975.jpg](../assets/1706600234975_1706603103369_0.jpg){:height 987, :width 1250}
+-
+- # Recent Developments (2024-2025)
+	- The period between late 2024 and early 2025 has marked a significant turning point for AI, with a shift from passive assistants to proactive, autonomous agents. This has been driven by advancements in LLMs and increased enterprise adoption.
+	- ### Key Developments
+		- **Enterprise Adoption:** Major tech companies are integrating AI agents into their enterprise offerings.
+			- [Oracle is rolling out over 50 AI agents in its Fusion Cloud suite.](https://www.alvarezandmarsal.com/insights/agentic-ai-future-automation-and-intelligence)
+			- [Microsoft is advancing its Copilot vision with autonomous AI capabilities in Dynamics 365 and the Copilot Studio.](https://medium.com/@arjun.arj.chhabra/the-rise-of-ai-agents-in-enterprise-tech-a-look-at-oracle-microsoft-sap-and-fujitsu-50a3a33a3e3c)
+			- [SAP's Joule collaborative AI agents are being integrated into enterprise functions.](https://medium.com/@arjun.arj.chhabra/the-rise-of-ai-agents-in-enterprise-tech-a-look-at-oracle-microsoft-sap-and-fujitsu-50a3a33a3e3c)
+			- [Fujitsu's Kozuchi AI Agent is designed for high-level decision-making.](https://medium.com/@arjun.arj.chhabra/the-rise-of-ai-agents-in-enterprise-tech-a-look-at-oracle-microsoft-sap-and-fujitsu-50a3a33a3e3c)
+		- **New Models and Enhanced Capabilities:** More powerful and specialized AI models have been released.
+			- [Anthropic's Claude 3.5 can perform human-like operations on a computer.](https://medium.com/@arjun.arj.chhabra/the-rise-of-ai-agents-in-enterprise-tech-a-look-at-oracle-microsoft-sap-and-fujitsu-50a3a33a3e3c)
+			- [Nvidia's Eureka Agent can autonomously teach robots advanced skills.](https://medium.com/@arjun.arj.chhabra/the-rise-of-ai-agents-in-enterprise-tech-a-look-at-oracle-microsoft-sap-and-fujitsu-50a3a33a3e3c)
+		- **Multi-Agent Systems and Collaboration:** There is a growing focus on developing systems where multiple AI agents can collaborate to solve complex problems.
+			- Frameworks like [LangGraph](https://ml-science.com/langgraph-multi-agent-workflows/) and [AutoGen](https://ml-science.com/langgraph-multi-agent-workflows/) are designed to facilitate these workflows.
+			- [Google has proposed the Agent2Agent (A2A) protocol](https://topbots.com/agentic-ai-applications-and-platforms/) to enable communication between agents from different platforms.
+		- **Democratizing Agent Development:** New frameworks and SDKs are making it easier to build and deploy AI agents.
+			- The [OpenAI Agents SDK](https://ml-science.com/langgraph-multi-agent-workflows/) is a lightweight Python framework for creating multi-agent workflows.
+			- Open-source frameworks like [AutoGPT](https://www.datacamp.com/tutorial/auto-gpt-tutorial-a-beginners-guide) and [SuperAGI](https://www.datacamp.com/tutorial/auto-gpt-tutorial-a-beginners-guide) are lowering the barrier to entry for developers.
+		- **The Growing Importance of Voice:** Voice is becoming a primary interface for interacting with AI agents.
+			- [Advancements in conversational AI have led to voice agents with lower latency and improved performance.](https://a16z.com/what-to-know-about-the-state-of-voice-ai-in-2025/)
+- # The future of agents
+	- This reflections piece from W3C shows the trajectory.
+		- <iframe src="https://raw.githubusercontent.com/w3c/cogai/master/agents/Reflections.md" style="width: 100%; height: 600px"></iframe>
+	- [W3C Community Group on Cognitive AI](https://github.com/w3c/cogai/blob/master/agents/README.md)
+- # Open Agents
+	- https://openagents.com/docs
+	- https://twitter.com/OpenAgentsInc/status/1780642250411679938
+		- {{twitter https://twitter.com/OpenAgentsInc/status/1780642250411679938}}
+	- [Godmode AI](https://godmode.space/) is a web platform that provides access to a variety of AI agents.
+- # Research and Papers
+	- [SHOW-1 and Showrunner Agents in Multi-Agent Simulations](https://fablestudio.github.io/showrunner-agents)
+	- [Fuyu-8B: A Multimodal Architecture for AI Agents](https://www.adept.ai/blog/fuyu-8b)
+	- [[2402.05120] More Agents Is All You Need](https://arxiv.org/abs/2402.05120)
+-
+- ![image.png](../assets/image_1710879269775_0.png)
+-
+-

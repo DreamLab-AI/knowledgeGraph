@@ -4,20 +4,318 @@
 	- ontology:: true
 	- term-id:: AI-0209
 	- preferred-term:: Causal Attention
-	- source-domain:: ai
-	- owl:class:: ai:CausalAttention
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
-	- definition:: An attention mechanism where each position can only attend to earlier positions in the sequence, preventing information flow from future tokens, essential for autoregressive generation.
-	- #### Relationships
-- is-subclass-of:: [[ModelArchitecture]]
-	  id:: causal-attention-relationships
+- definition:: An attention mechanism where each position can only attend to earlier positions in the sequence, preventing information flow from future tokens, essential for autoregressive generation.
+
+## Characteristics
+
+- **Left-to-Right Dependency**: Only past and current positions visible
+- **Masking Implementation**: Uses attention mask to block future positions
+- **Autoregressive Property**: Enables sequential token generation
+- **Decoder Standard**: Default attention pattern in decoder-only models
+
+## Academic Foundations
+
+**Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
+
+**Application**: Standard in GPT family and other autoregressive language models.
+
+## Technical Context
+
+Causal attention (also called masked self-attention) ensures that predictions for position i can depend only on the known outputs at positions less than i. This is implemented through an attention mask that sets future positions to negative infinity before the softmax operation.
+
+## Ontological Relationships
+
+- **Broader Term**: Attention Mechanism
+- **Related Terms**: Attention Mask, Decoder, Autoregressive Language Model
+- **Contrast With**: Bidirectional Attention (in BERT-style encoders)
+
+## Usage Context
+
+"Causal attention in GPT models ensures that each token can only attend to previous tokens during generation."
+
+## OWL Functional Syntax
+
+```clojure
+(Declaration (Class :CausalAttention))
+(AnnotationAssertion rdfs:label :CausalAttention "Causal Attention"@en)
+(AnnotationAssertion :hasAlternativeName :CausalAttention "Masked Self-Attention"@en)
+(AnnotationAssertion rdfs:comment :CausalAttention
+  "Attention mechanism preventing information flow from future tokens, essential for autoregressive generation."@en)
+(AnnotationAssertion :hasSource :CausalAttention
+  "Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762 (2017)"@en)
+
+;; Taxonomic relationships
+(SubClassOf :CausalAttention :AttentionMechanism)
+(SubClassOf :CausalAttention :SelfAttention)
+
+;; Implementation mechanism
+(SubClassOf :CausalAttention
+  (ObjectSomeValuesFrom :usesComponent :AttentionMask))
+(SubClassOf :CausalAttention
+  (ObjectSomeValuesFrom :implementsPattern :CausalMasking))
+
+;; Temporal constraints
+(DataPropertyAssertion :allowsFutureVisibility :CausalAttention "false"^^xsd:boolean)
+(DataPropertyAssertion :allowsPastVisibility :CausalAttention "true"^^xsd:boolean)
+(DataPropertyAssertion :isLeftToRight :CausalAttention "true"^^xsd:boolean)
+(DataPropertyAssertion :maintainsTemporalOrder :CausalAttention "true"^^xsd:boolean)
+
+;; Autoregressive property
+(SubClassOf :CausalAttention
+  (ObjectSomeValuesFrom :enables :AutoregressiveGeneration))
+(DataPropertyAssertion :enablesSequentialGeneration :CausalAttention "true"^^xsd:boolean)
+
+;; Usage in architectures
+(SubClassOf :Decoder
+  (ObjectSomeValuesFrom :implementsMechanism :CausalAttention))
+(SubClassOf :DecoderOnlyModel
+  (ObjectAllValuesFrom :usesAttentionType :CausalAttention))
+
+;; Specific implementations
+(SubClassOf :GPT
+  (ObjectAllValuesFrom :implementsMechanism :CausalAttention))
+(SubClassOf :GPT2
+  (ObjectAllValuesFrom :implementsMechanism :CausalAttention))
+(SubClassOf :GPT3
+  (ObjectAllValuesFrom :implementsMechanism :CausalAttention))
+
+;; Contrast with bidirectional attention
+(AnnotationAssertion rdfs:comment :CausalAttention
+  "Contrasts with bidirectional attention in BERT-style encoders"@en)
+```
+
+## References
+
+- Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
+- Radford, A., et al. (2018). "Improving Language Understanding by Generative Pre-Training"
+
+---
+
+*Ontology Term managed by AI-Grounded Ontology Working Group*
+*UK English Spelling Standards Applied*
+	- maturity:: draft
+	- owl:class:: mv:CausalAttention
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Causal Attention
+	- An attention mechanism where each position can only attend to earlier positions in the sequence, preventing information flow from future tokens, essential for autoregressive generation.
+
+	- ### Art
+		- The recent surge of interest in NFT’s during early 2021 has largely been driven by digital art NFT’s, despite the origins of digital art NFT’s started much earlier in 2014. New York artist [Kevin McCoy’s *Quantum*](https://www.mccoyspace.com/project/125/) is widely recognised as the first piece of art created as an NFT. However it was during early2021 that art NFT’s started to gain significant attention; by the end of2021, nearly [£31b had beenspent](https://www.paymentscardsandmobile.com/state-of-the-blockchain-nfts-explode-onto-scene-in-2021/)on NFT purchases, a considerable and exponential growth given [2020sales ofasciitilde£71m](https://raritysniper.com/news/nfts-exploded-in-2021-with-25-billion-in-sales/)High profile digital artists such as *Beeple* whose [recent recordingbreaksale](https://www.forbes.com/sites/abrambrown/2021/03/11/beeple-art-sells-for-693-million-becoming-most-expensive-nft-ever/?sh=3f237d1c2448)of his NFT *“The first 5000 days”* (Figure<a href="#fig:first5000days" data-reference-type="ref" data-reference="fig:first5000days">[fig:first5000days]</a>)at Christies (a long established British auction house, specialising in high profile precious work of art) for £52.9m helped bring NFT’s into the public spotlight and wider give them global attention.
+		  ![image](./assets/348ebd1d1b622796f691fdcedc6d6207ec79739d.jpg)
+		- Art as NFT’s offer the following advantages:
+
+	- ### Art
+		- The recent surge of interest in NFT’s during early 2021 has largely been driven by digital art NFT’s, despite the origins of digital art NFT’s started much earlier in 2014. New York artist [Kevin McCoy’s *Quantum*](https://www.mccoyspace.com/project/125/) is widely recognised as the first piece of art created as an NFT. However it was during early2021 that art NFT’s started to gain significant attention; by the end of2021, nearly [£31b had beenspent](https://www.paymentscardsandmobile.com/state-of-the-blockchain-nfts-explode-onto-scene-in-2021/)on NFT purchases, a considerable and exponential growth given [2020sales ofasciitilde£71m](https://raritysniper.com/news/nfts-exploded-in-2021-with-25-billion-in-sales/)High profile digital artists such as *Beeple* whose [recent recordingbreaksale](https://www.forbes.com/sites/abrambrown/2021/03/11/beeple-art-sells-for-693-million-becoming-most-expensive-nft-ever/?sh=3f237d1c2448)of his NFT *“The first 5000 days”* (Figure<a href="#fig:first5000days" data-reference-type="ref" data-reference="fig:first5000days">[fig:first5000days]</a>)at Christies (a long established British auction house, specialising in high profile precious work of art) for £52.9m helped bring NFT’s into the public spotlight and wider give them global attention.
+		  ![image](./assets/348ebd1d1b622796f691fdcedc6d6207ec79739d.jpg)
+		- Art as NFT’s offer the following advantages:
+
+## Characteristics
+
+- **Left-to-Right Dependency**: Only past and current positions visible
+- **Masking Implementation**: Uses attention mask to block future positions
+- **Autoregressive Property**: Enables sequential token generation
+- **Decoder Standard**: Default attention pattern in decoder-only models
+
+## Academic Foundations
+
+**Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
+
+**Application**: Standard in GPT family and other autoregressive language models.
+
+## Technical Context
+
+Causal attention (also called masked self-attention) ensures that predictions for position i can depend only on the known outputs at positions less than i. This is implemented through an attention mask that sets future positions to negative infinity before the softmax operation.
+
+## Ontological Relationships
+
+- **Broader Term**: Attention Mechanism
+- **Related Terms**: Attention Mask, Decoder, Autoregressive Language Model
+- **Contrast With**: Bidirectional Attention (in BERT-style encoders)
+
+## Usage Context
+
+"Causal attention in GPT models ensures that each token can only attend to previous tokens during generation."
+
+## OWL Functional Syntax
+
+```clojure
+(Declaration (Class :CausalAttention))
+(AnnotationAssertion rdfs:label :CausalAttention "Causal Attention"@en)
+(AnnotationAssertion :hasAlternativeName :CausalAttention "Masked Self-Attention"@en)
+(AnnotationAssertion rdfs:comment :CausalAttention
+  "Attention mechanism preventing information flow from future tokens, essential for autoregressive generation."@en)
+(AnnotationAssertion :hasSource :CausalAttention
+  "Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762 (2017)"@en)
+
+;; Taxonomic relationships
+(SubClassOf :CausalAttention :AttentionMechanism)
+(SubClassOf :CausalAttention :SelfAttention)
+
+;; Implementation mechanism
+(SubClassOf :CausalAttention
+  (ObjectSomeValuesFrom :usesComponent :AttentionMask))
+(SubClassOf :CausalAttention
+  (ObjectSomeValuesFrom :implementsPattern :CausalMasking))
+
+;; Temporal constraints
+(DataPropertyAssertion :allowsFutureVisibility :CausalAttention "false"^^xsd:boolean)
+(DataPropertyAssertion :allowsPastVisibility :CausalAttention "true"^^xsd:boolean)
+(DataPropertyAssertion :isLeftToRight :CausalAttention "true"^^xsd:boolean)
+(DataPropertyAssertion :maintainsTemporalOrder :CausalAttention "true"^^xsd:boolean)
+
+;; Autoregressive property
+(SubClassOf :CausalAttention
+  (ObjectSomeValuesFrom :enables :AutoregressiveGeneration))
+(DataPropertyAssertion :enablesSequentialGeneration :CausalAttention "true"^^xsd:boolean)
+
+;; Usage in architectures
+(SubClassOf :Decoder
+  (ObjectSomeValuesFrom :implementsMechanism :CausalAttention))
+(SubClassOf :DecoderOnlyModel
+  (ObjectAllValuesFrom :usesAttentionType :CausalAttention))
+
+;; Specific implementations
+(SubClassOf :GPT
+  (ObjectAllValuesFrom :implementsMechanism :CausalAttention))
+(SubClassOf :GPT2
+  (ObjectAllValuesFrom :implementsMechanism :CausalAttention))
+(SubClassOf :GPT3
+  (ObjectAllValuesFrom :implementsMechanism :CausalAttention))
+
+;; Contrast with bidirectional attention
+(AnnotationAssertion rdfs:comment :CausalAttention
+  "Contrasts with bidirectional attention in BERT-style encoders"@en)
+```
+
+## References
+
+- Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
+- Radford, A., et al. (2018). "Improving Language Understanding by Generative Pre-Training"
+
+---
+
+*Ontology Term managed by AI-Grounded Ontology Working Group*
+*UK English Spelling Standards Applied*
+	-
+	- ### Original Content
 	  collapsed:: true
-		- is-subclass-of:: [[AttentionMechanism]]
+		- ```
+# Causal Attention
+		  
+		  **Term ID**: AI-0209
+		  **Category**: Architecture/Technique
+		  **Ontology Version**: 1.0
+		  **Last Updated**: 2025-10-27
+		  
+		  ## Definition
+		  
+		  An attention mechanism where each position can only attend to earlier positions in the sequence, preventing information flow from future tokens, essential for autoregressive generation.
+		  
+		  ## Characteristics
+		  
+		  - **Left-to-Right Dependency**: Only past and current positions visible
+		  - **Masking Implementation**: Uses attention mask to block future positions
+		  - **Autoregressive Property**: Enables sequential token generation
+		  - **Decoder Standard**: Default attention pattern in decoder-only models
+		  
+		  ## Academic Foundations
+		  
+		  **Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
+		  
+		  **Application**: Standard in GPT family and other autoregressive language models.
+		  
+		  ## Technical Context
+		  
+		  Causal attention (also called masked self-attention) ensures that predictions for position i can depend only on the known outputs at positions less than i. This is implemented through an attention mask that sets future positions to negative infinity before the softmax operation.
+		  
+		  ## Ontological Relationships
+		  
+		  - **Broader Term**: Attention Mechanism
+		  - **Related Terms**: Attention Mask, Decoder, Autoregressive Language Model
+		  - **Contrast With**: Bidirectional Attention (in BERT-style encoders)
+		  
+		  ## Usage Context
+		  
+		  "Causal attention in GPT models ensures that each token can only attend to previous tokens during generation."
+		  
+		  ## OWL Functional Syntax
+		  
+		  ```clojure
+		  (Declaration (Class :CausalAttention))
+		  (AnnotationAssertion rdfs:label :CausalAttention "Causal Attention"@en)
+		  (AnnotationAssertion :hasAlternativeName :CausalAttention "Masked Self-Attention"@en)
+		  (AnnotationAssertion rdfs:comment :CausalAttention
+		    "Attention mechanism preventing information flow from future tokens, essential for autoregressive generation."@en)
+		  (AnnotationAssertion :hasSource :CausalAttention
+		    "Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762 (2017)"@en)
+		  
+		  ;; Taxonomic relationships
+		  (SubClassOf :CausalAttention :AttentionMechanism)
+		  (SubClassOf :CausalAttention :SelfAttention)
+		  
+		  ;; Implementation mechanism
+		  (SubClassOf :CausalAttention
+		    (ObjectSomeValuesFrom :usesComponent :AttentionMask))
+		  (SubClassOf :CausalAttention
+		    (ObjectSomeValuesFrom :implementsPattern :CausalMasking))
+		  
+		  ;; Temporal constraints
+		  (DataPropertyAssertion :allowsFutureVisibility :CausalAttention "false"^^xsd:boolean)
+		  (DataPropertyAssertion :allowsPastVisibility :CausalAttention "true"^^xsd:boolean)
+		  (DataPropertyAssertion :isLeftToRight :CausalAttention "true"^^xsd:boolean)
+		  (DataPropertyAssertion :maintainsTemporalOrder :CausalAttention "true"^^xsd:boolean)
+		  
+		  ;; Autoregressive property
+		  (SubClassOf :CausalAttention
+		    (ObjectSomeValuesFrom :enables :AutoregressiveGeneration))
+		  (DataPropertyAssertion :enablesSequentialGeneration :CausalAttention "true"^^xsd:boolean)
+		  
+		  ;; Usage in architectures
+		  (SubClassOf :Decoder
+		    (ObjectSomeValuesFrom :implementsMechanism :CausalAttention))
+		  (SubClassOf :DecoderOnlyModel
+		    (ObjectAllValuesFrom :usesAttentionType :CausalAttention))
+		  
+		  ;; Specific implementations
+		  (SubClassOf :GPT
+		    (ObjectAllValuesFrom :implementsMechanism :CausalAttention))
+		  (SubClassOf :GPT2
+		    (ObjectAllValuesFrom :implementsMechanism :CausalAttention))
+		  (SubClassOf :GPT3
+		    (ObjectAllValuesFrom :implementsMechanism :CausalAttention))
+		  
+		  ;; Contrast with bidirectional attention
+		  (AnnotationAssertion rdfs:comment :CausalAttention
+		    "Contrasts with bidirectional attention in BERT-style encoders"@en)
+		  ```
+		  
+		  ## References
+		  
+		  - Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
+		  - Radford, A., et al. (2018). "Improving Language Understanding by Generative Pre-Training"
+		  
+		  ---
+		  
+		  *Ontology Term managed by AI-Grounded Ontology Working Group*
+		  *UK English Spelling Standards Applied*
+		  
+		  ```
 
-## Causal Attention
+- public-access:: true
+	- definition:: An attention mechanism where each position can only attend to earlier positions in the sequence, preventing information flow from future tokens, essential for autoregressive generation.
 
-Causal Attention refers to an attention mechanism where each position can only attend to earlier positions in the sequence, preventing information flow from future tokens, essential for autoregressive generation.
+
+## Academic Context
+
+- Causal Attention is an attention mechanism in machine learning where each position in a sequence attends only to earlier positions, thereby preventing information leakage from future tokens. This property is crucial for autoregressive models that generate sequences step-by-step, ensuring causality in the data flow.
+  - The concept builds on the Transformer architecture introduced in 2017, which popularised self-attention mechanisms allowing parallel processing of sequences but requires causal masking for autoregressive tasks.
+  - The academic foundation lies in sequence modelling, temporal causality, and the broader field of causal inference integrated with deep learning attention mechanisms.
+
+## Current Landscape (2025)
 
 - Industry adoption of causal attention is widespread in natural language processing (NLP), time series forecasting, and reinforcement learning, where temporal order and causality are critical.
   - Notable implementations include large language models (LLMs) such as GPT variants and other autoregressive transformers that rely on causal masking to maintain sequence integrity.
@@ -28,14 +326,6 @@ Causal Attention refers to an attention mechanism where each position can only a
 - Standards and frameworks:
   - Causal attention is standard in autoregressive transformer implementations across major machine learning libraries (e.g., PyTorch, TensorFlow).
   - Emerging frameworks integrate causal inference principles with attention mechanisms to improve interpretability and robustness against spurious correlations.
-
-## Technical Details
-
-- **Id**: causal-attention-ontology
-- **Collapsed**: true
-- **Source Domain**: ai
-- **Status**: draft
-- **Public Access**: true
 
 ## Research & Literature
 
@@ -74,14 +364,23 @@ Causal Attention refers to an attention mechanism where each position can only a
 ## References
 
 1. Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention Is All You Need. *Advances in Neural Information Processing Systems*, 30. https://doi.org/10.5555/3295222.3295349
+
 2. Chen, Y., Li, X., & Zhang, T. (2025). Exact Causal Attention with 10% Fewer Operations. *arXiv preprint arXiv:2510.05175*. https://arxiv.org/abs/2510.05175
+
 3. Wang, J., Smith, R., & Patel, S. (2025). Causal Attention Tuning for Injecting Fine-grained Causal Structures in Language Models. *Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP)*. https://aclanthology.org/2025.emnlp-main.502.pdf
+
 4. Cavique, L. (2024). The Rise of Causal AI: Enhancing Explainability and Fairness in Machine Learning. *AI Tech Journal*, 12(3), 45-59.
+
 5. AI Tech Park. (2025). Industry Applications of Causal AI: A Comprehensive Overview. *AI Tech Park Reports*.
+
 6. University of Manchester AI and Data Science Institute. (2025). Research on Causal Attention in Healthcare Time Series Forecasting. Internal Report.
+
 7. Causal Methods in Software Engineering Workshop (CauSE 2025). (2025). ACM International Conference on the Foundations of Software Engineering (FSE 2025), Trondheim, Norway. https://causality-software-engineering.github.io/cause-workshop-2025/
+
 ---
+
 A touch of humour: Causal attention ensures your model doesn’t peek at the future—because even AI knows that spoiling the ending is bad form.
+
 
 ## Metadata
 

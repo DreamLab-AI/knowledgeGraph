@@ -2,29 +2,21 @@
   id:: cbdc-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: DT-0131
-	- preferred-term:: Central Bank Digital Currency (CBDC)
+	- term-id:: 20131
 	- source-domain:: mv
-	- public-access:: true
-
-
-
-
-### OWL Classification
+	- preferred-term:: Central Bank Digital Currency (CBDC)
+	- definition:: Sovereign digital currency issued and backed by a central bank for use in retail or wholesale payment systems, functioning as legal tender in digital form.
+	- maturity:: mature
+	- source:: [[BIS CBDC Blueprint]], [[IMF CBDC Notes]], [[ISO 24165]]
 	- owl:class:: mv:CBDC
 	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
-
-### Domain & Architecture
-	- belongsToDomain:: [[TrustAndGovernanceDomain]], [[DisruptiveTechDomain]], [[VirtualEconomyDomain]]
+	- owl:functional-syntax:: true
+	- belongsToDomain:: [[VirtualEconomyDomain]], [[TrustAndGovernanceDomain]]
 	- implementedInLayer:: [[DataLayer]], [[ProtocolLayer]]
-	- maturity:: mature
-
-### Relationships
-- is-subclass-of:: [[Metaverse]]
-id:: cbdc-relationships
-		- uses-data-structure:: [[Blockchain]]
+	- #### Relationships
+	  id:: cbdc-relationships
 		- has-part:: [[Digital Currency Ledger]], [[Payment Protocol]], [[Identity System]], [[Transaction Validator]]
 		- is-part-of:: [[Monetary System]], [[Payment Infrastructure]], [[Financial System]]
 		- requires:: [[Central Bank]], [[Digital Wallet]], [[Distributed Ledger]], [[Identity Verification]], [[Regulatory Framework]]
@@ -68,7 +60,7 @@ id:: cbdc-relationships
 
 		  # Domain classification
 		  SubClassOf(mv:CBDC
-		    ObjectSomeValuesFrom(mv:belongsToDomain mv:Virtualeconomydomain)
+		    ObjectSomeValuesFrom(mv:belongsToDomain mv:VirtualEconomyDomain)
 		  )
 		  SubClassOf(mv:CBDC
 		    ObjectSomeValuesFrom(mv:belongsToDomain mv:TrustAndGovernanceDomain)
@@ -88,25 +80,25 @@ id:: cbdc-relationships
 		  SubClassOf(mv:DigitalPayments mv:VirtualProcess)
 
   # Property characteristics
-  TransitiveObjectProperty(mv:ispartof)
+  TransitiveObjectProperty(dt:ispartof)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:requires)
+  AsymmetricObjectProperty(dt:requires)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:dependson)
+  AsymmetricObjectProperty(dt:dependson)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:enables)
+  AsymmetricObjectProperty(dt:enables)
 
   # Property characteristics
-  AsymmetricObjectProperty(mv:implements)
+  AsymmetricObjectProperty(dt:implements)
 ```
 - ## About Central Bank Digital Currencies
   id:: cbdc-about
 	- Central Bank Digital Currencies (CBDCs) are **state-issued digital currencies** that function as electronic forms of a nation's fiat currency, backed by the full faith and credit of the issuing government. Unlike cryptocurrencies or stablecoins, CBDCs are sovereign money issued and regulated by central banks, designed to coexist with or potentially replace physical cash while maintaining central bank control over monetary policy. CBDCs represent the digital evolution of traditional money in response to declining cash usage, rising cryptocurrency adoption, and the need for efficient cross-border payments.
 	- CBDCs exist in two primary forms: retail CBDCs for public use in everyday transactions, and wholesale CBDCs for interbank settlement and financial institution operations. Retail CBDCs enable individuals and businesses to hold digital currency directly with the central bank or through intermediaries like commercial banks, offering financial inclusion benefits for unbanked populations. Wholesale CBDCs streamline settlement processes between financial institutions, reducing counterparty risk and enabling real-time gross settlement systems.
-	- The design of CBDC systems involves fundamental choices about architecture (centralised vs. decentralized ledgers), access models (account-based vs. token-based), anonymity levels (ranging from full privacy to complete transparency), and technical infrastructure (distributed ledger technology, traditional databases, or hybrid systems). These decisions reflect national priorities balancing privacy, security, monetary sovereignty, financial stability, and regulatory compliance. As of 2024, over 130 countries representing 98% of global GDP are exploring CBDCs, with active pilots in China (digital yuan), European Union (digital euro), and numerous other jurisdictions.
+	- The design of CBDC systems involves fundamental choices about architecture (centralized vs. decentralized ledgers), access models (account-based vs. token-based), anonymity levels (ranging from full privacy to complete transparency), and technical infrastructure (distributed ledger technology, traditional databases, or hybrid systems). These decisions reflect national priorities balancing privacy, security, monetary sovereignty, financial stability, and regulatory compliance. As of 2024, over 130 countries representing 98% of global GDP are exploring CBDCs, with active pilots in China (digital yuan), European Union (digital euro), and numerous other jurisdictions.
 	- ### Key Characteristics
 	  id:: cbdc-characteristics
 		- Sovereign digital money with legal tender status
@@ -123,7 +115,7 @@ id:: cbdc-relationships
 		- Resilience against private payment system failures
 	- ### Technical Components
 	  id:: cbdc-components
-		- [[Digital Currency Ledger]] - Distributed or centralised database recording all CBDC holdings and transactions
+		- [[Digital Currency Ledger]] - Distributed or centralized database recording all CBDC holdings and transactions
 		- [[Payment Protocol]] - Technical specification for transferring CBDC between parties
 		- [[Identity System]] - KYC/AML infrastructure linking digital currency to verified users
 		- [[Transaction Validator]] - Nodes or central systems confirming transaction authenticity and preventing double-spending
@@ -166,7 +158,7 @@ id:: cbdc-relationships
 	  id:: cbdc-implementations
 		- **China (Digital Yuan/e-CNY)**: Most advanced CBDC, used in over 260 million transactions worth $250B+ as of 2024
 		- **European Union (Digital Euro)**: ECB preparation phase targeting 2027-2028 launch
-		- **United States (Digital Dollar)**: Research and pilot programmes by Federal Reserve and MIT
+		- **United States (Digital Dollar)**: Research and pilot programs by Federal Reserve and MIT
 		- **United Kingdom (Britcoin)**: Bank of England and HM Treasury consultation and design phase
 		- **Bahamas (Sand Dollar)**: First retail CBDC fully launched in 2020
 		- **Nigeria (eNaira)**: Launched October 2021, focused on financial inclusion
@@ -180,13 +172,13 @@ id:: cbdc-relationships
 	- ### Use Cases
 	  id:: cbdc-use-cases
 		- **Consumer Payments**: Replace cash and card payments with instant digital currency transfers via mobile apps
-		- **Government Disbursements**: Directly distribute social security, tax refunds, stimulus cheques to citizens' CBDC wallets
+		- **Government Disbursements**: Directly distribute social security, tax refunds, stimulus checks to citizens' CBDC wallets
 		- **Cross-Border Remittances**: Low-cost international money transfers reducing reliance on correspondent banking (mBridge project)
 		- **Financial Inclusion**: Bank the unbanked through free or low-cost CBDC accounts accessible via basic mobile phones
 		- **Interbank Settlement**: Real-time gross settlement between financial institutions reducing systemic risk
 		- **Programmable Treasury Operations**: Government expenditure with embedded compliance rules and spending restrictions
 		- **Supply Chain Payments**: Automated payment release upon delivery confirmation using smart contracts
-		- **Salary Payments**: Employers instantly transfer wages to employees' CBDC wallets eliminating cheque clearing delays
+		- **Salary Payments**: Employers instantly transfer wages to employees' CBDC wallets eliminating check clearing delays
 		- **Merchant Payments**: Point-of-sale transactions with lower fees than card networks
 		- **Offline Payments**: Rural or disaster-affected areas using hardware wallets or SIM-based solutions
 		- **Tourism**: Visitors access local CBDC without opening bank accounts or currency exchange
@@ -302,8 +294,11 @@ id:: cbdc-relationships
 	- imported-from:: [[Metaverse Glossary Excel]]
 	- import-date:: [[2025-01-15]]
 	- ontology-status:: migrated
-	- public-access:: true
+- public-access:: true
+	- migration-date:: [[2025-10-14]]
+	- classification-rationale:: Virtual (digital currency) + Object (sovereign monetary instrument) → VirtualObject
 
+    - implements:: [[Payment System]]
 ## Academic Context
 
 - Central Bank Digital Currency (CBDC) represents a **digital form of central bank money**, issued and backed by a sovereign monetary authority, designed to function as legal tender in digital form.
@@ -364,10 +359,10 @@ id:: cbdc-relationships
 
 5. BIS Innovation Hub (2025). *CBDC Projects and Research*. Bank for International Settlements. https://www.bis.org/about/bisih/topics/cbdc.htm
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-

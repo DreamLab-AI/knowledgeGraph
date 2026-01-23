@@ -4,10 +4,10 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9969
-	- source-domain:: mv
+	- source-domain:: artificial-intelligence
 	- preferred-term:: Model Transparency
 	- status:: active
-	- owl:class:: mv:ModelTransparency
+	- owl:class:: ai:ModelTransparency
 	- belongsToDomain:: [[metaverse]]
 	- definition:: The capability to understand, explain, and interpret the decision-making processes within AI and machine learning models, encompassing explainability, interpretability, and accountability requirements essential for responsible AI deployment.
 	- #### Relationships

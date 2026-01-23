@@ -1,25 +1,25 @@
 {
   "id": "Machine Learning Framework",
   "title": "Machine Learning Framework",
-  "content": "- ### OntologyBlock\n  id:: machine-learning-framework-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9949\n\t- source-domain:: mv\n\t- preferred-term:: Machine Learning Framework\n\t- status:: active\n\t- owl:class:: mv:MachineLearningFramework\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Software libraries and development environments such as TensorFlow and PyTorch that provide tools, APIs, and abstractions for building, training, and deploying machine learning models used in metaverse AI applications.\n\t- #### Relationships\n\t  id:: machine-learning-framework-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AI Development Tools]]\n\t\t- related-to:: [[Neural Network Architecture]]\n\t\t- related-to:: [[Deep Learning]]\n\t\t- enables:: [[AI Model Development]]\n\n## Leading Frameworks (2024)\n\n### TensorFlow\n- Google Brain development\n- Open-source ML framework\n- Scalable architecture\n- Production deployment\n- Extensive ecosystem\n\n#### TensorFlow Features\n- TFX production pipelines\n- TensorFlow Lite (mobile)\n- TensorFlow.js (web)\n- Strong documentation\n- Enterprise support\n\n### PyTorch\n- Meta AI development\n- Dynamic computation graph\n- Research community favourite\n- Python integration\n- Flexible debugging\n\n#### PyTorch Features\n- TorchScript deployment\n- PyTorch Lightning\n- Hugging Face integration\n- Real-time graph modification\n- NumPy compatibility\n\n## Framework Comparison\n\n### Use Case Alignment\n- TensorFlow: Production, mobile, Google Cloud\n- PyTorch: Research, NLP, Generative AI\n- Both: Deep learning, computer vision\n- Community: Academia prefers PyTorch\n- Enterprise: Both widely adopted\n\n### Performance Parity\n- Single-machine GPU: Similar\n- Model-dependent variations\n- Optimisation settings impact\n- 2024 consensus: Both highly optimised\n- Framework gap narrowed\n\n## Additional Frameworks\n\n### Keras\n- High-level API\n- TensorFlow integration\n- Beginner-friendly\n- Rapid prototyping\n- Multi-backend support\n\n### JAX\n- Google development\n- Automatic differentiation\n- XLA compilation\n- NumPy-like interface\n- Research applications\n\n### Other Notable Frameworks\n- MXNet (Apache)\n- Caffe (Berkeley)\n- Deeplearning4j (Java)\n- CNTK (Microsoft)\n- ONNX (interchange format)\n\n## Metaverse Applications\n\n### Content Generation\n- 3D asset creation\n- Environment synthesis\n- Avatar generation\n- Texture optimisation\n- Scene composition\n\n### NPC Intelligence\n- Behaviour learning\n- Natural language processing\n- Decision making\n- Adaptive responses\n- Personality modelling\n\n## Technical Capabilities\n\n### Model Training\n- GPU acceleration\n- Distributed training\n- Automatic batching\n- Gradient computation\n- Loss optimisation\n\n### Model Deployment\n- Serving infrastructure\n- Edge deployment\n- Mobile optimisation\n- API creation\n- Scaling management\n\n## Interoperability\n\n### ONNX Format\n- Cross-framework compatibility\n- Model conversion\n- Framework migration\n- Deployment flexibility\n- Standard representation\n\n### Migration Paths\n- TensorFlow to PyTorch\n- PyTorch to TensorFlow\n- Production transitions\n- Research to deployment\n- Legacy modernisation\n\n## Development Workflow\n\n### Experimentation\n- Rapid iteration\n- Hyperparameter tuning\n- Architecture search\n- Ablation studies\n- Reproducibility\n\n### Production Pipeline\n- Model versioning\n- A/B testing\n- Monitoring integration\n- Rollback capability\n- Performance tracking\n\n## 2024 Trends\n\n### Framework Evolution\n- TensorFlow eager execution\n- PyTorch graph deployment\n- Convergent features\n- Unified experiences\n- Developer productivity\n\n### Ecosystem Growth\n- Pre-trained models\n- Transfer learning\n- Foundation models\n- Fine-tuning tools\n- Deployment solutions\n\n## Selection Criteria\n\n### Project Requirements\n- Team expertise\n- Deployment target\n- Performance needs\n- Ecosystem tools\n- Community support\n\n### Learning Considerations\n- Documentation quality\n- Tutorial availability\n- Community size\n- Job market demand\n- Future viability\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "content": "- ### OntologyBlock\n  id:: machine-learning-framework-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9949\n\t- source-domain:: artificial-intelligence\n\t- preferred-term:: Machine Learning Framework\n\t- status:: active\n\t- owl:class:: ai:MachineLearningFramework\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Software libraries and development environments such as TensorFlow and PyTorch that provide tools, APIs, and abstractions for building, training, and deploying machine learning models used in metaverse AI applications.\n\t- #### Relationships\n\t  id:: machine-learning-framework-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AI Development Tools]]\n\t\t- related-to:: [[Neural Network Architecture]]\n\t\t- related-to:: [[Deep Learning]]\n\t\t- enables:: [[AI Model Development]]\n\n## Leading Frameworks (2024)\n\n### TensorFlow\n- Google Brain development\n- Open-source ML framework\n- Scalable architecture\n- Production deployment\n- Extensive ecosystem\n\n#### TensorFlow Features\n- TFX production pipelines\n- TensorFlow Lite (mobile)\n- TensorFlow.js (web)\n- Strong documentation\n- Enterprise support\n\n### PyTorch\n- Meta AI development\n- Dynamic computation graph\n- Research community favourite\n- Python integration\n- Flexible debugging\n\n#### PyTorch Features\n- TorchScript deployment\n- PyTorch Lightning\n- Hugging Face integration\n- Real-time graph modification\n- NumPy compatibility\n\n## Framework Comparison\n\n### Use Case Alignment\n- TensorFlow: Production, mobile, Google Cloud\n- PyTorch: Research, NLP, Generative AI\n- Both: Deep learning, computer vision\n- Community: Academia prefers PyTorch\n- Enterprise: Both widely adopted\n\n### Performance Parity\n- Single-machine GPU: Similar\n- Model-dependent variations\n- Optimisation settings impact\n- 2024 consensus: Both highly optimised\n- Framework gap narrowed\n\n## Additional Frameworks\n\n### Keras\n- High-level API\n- TensorFlow integration\n- Beginner-friendly\n- Rapid prototyping\n- Multi-backend support\n\n### JAX\n- Google development\n- Automatic differentiation\n- XLA compilation\n- NumPy-like interface\n- Research applications\n\n### Other Notable Frameworks\n- MXNet (Apache)\n- Caffe (Berkeley)\n- Deeplearning4j (Java)\n- CNTK (Microsoft)\n- ONNX (interchange format)\n\n## Metaverse Applications\n\n### Content Generation\n- 3D asset creation\n- Environment synthesis\n- Avatar generation\n- Texture optimisation\n- Scene composition\n\n### NPC Intelligence\n- Behaviour learning\n- Natural language processing\n- Decision making\n- Adaptive responses\n- Personality modelling\n\n## Technical Capabilities\n\n### Model Training\n- GPU acceleration\n- Distributed training\n- Automatic batching\n- Gradient computation\n- Loss optimisation\n\n### Model Deployment\n- Serving infrastructure\n- Edge deployment\n- Mobile optimisation\n- API creation\n- Scaling management\n\n## Interoperability\n\n### ONNX Format\n- Cross-framework compatibility\n- Model conversion\n- Framework migration\n- Deployment flexibility\n- Standard representation\n\n### Migration Paths\n- TensorFlow to PyTorch\n- PyTorch to TensorFlow\n- Production transitions\n- Research to deployment\n- Legacy modernisation\n\n## Development Workflow\n\n### Experimentation\n- Rapid iteration\n- Hyperparameter tuning\n- Architecture search\n- Ablation studies\n- Reproducibility\n\n### Production Pipeline\n- Model versioning\n- A/B testing\n- Monitoring integration\n- Rollback capability\n- Performance tracking\n\n## 2024 Trends\n\n### Framework Evolution\n- TensorFlow eager execution\n- PyTorch graph deployment\n- Convergent features\n- Unified experiences\n- Developer productivity\n\n### Ecosystem Growth\n- Pre-trained models\n- Transfer learning\n- Foundation models\n- Fine-tuning tools\n- Deployment solutions\n\n## Selection Criteria\n\n### Project Requirements\n- Team expertise\n- Deployment target\n- Performance needs\n- Ecosystem tools\n- Community support\n\n### Learning Considerations\n- Documentation quality\n- Tutorial availability\n- Community size\n- Job market demand\n- Future viability\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
     "Synthetic Data Generator"
   ],
   "wiki_links": [
-    "Deep Learning",
-    "Neural Network Architecture",
-    "metaverse",
+    "AI Model Development",
     "AI Development Tools",
-    "AI Model Development"
+    "Deep Learning",
+    "metaverse",
+    "Neural Network Architecture"
   ],
   "ontology": {
     "term_id": "MV-9949",
     "preferred_term": "Machine Learning Framework",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#MachineLearningFramework",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "iri": "http://narrativegoldmine.com/ai#MachineLearningFramework",
+    "source_domain": "artificial-intelligence",
+    "domain": "artificial-intelligence",
+    "domain_full_name": "",
     "definition": "Software libraries and development environments such as TensorFlow and PyTorch that provide tools, APIs, and abstractions for building, training, and deploying machine learning models used in metaverse AI applications.",
     "scope_note": null,
     "status": "active",
@@ -30,7 +30,7 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": "mv:MachineLearningFramework",
+    "owl_class": "ai:MachineLearningFramework",
     "owl_physicality": null,
     "owl_role": null,
     "owl_inferred_class": null,
@@ -64,7 +64,8 @@
       "errors": [
         "Missing required property: last-updated",
         "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
+        "Missing required property: owl:role",
+        "owl:class namespace 'ai' doesn't match source-domain 'artificial-intelligence'"
       ]
     }
   }

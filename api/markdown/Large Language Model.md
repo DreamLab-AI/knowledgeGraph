@@ -4,10 +4,10 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9940
-	- source-domain:: mv
+	- source-domain:: artificial-intelligence
 	- preferred-term:: Large Language Model
 	- status:: active
-	- owl:class:: mv:LargeLanguageModel
+	- owl:class:: ai:LargeLanguageModel
 	- belongsToDomain:: [[metaverse]]
 	- definition:: Advanced AI systems trained on massive text datasets that enable natural language understanding and generation for metaverse applications, powering intelligent NPCs, real-time translation, conversational interfaces, and adaptive content generation.
 	- #### Relationships

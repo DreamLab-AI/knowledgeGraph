@@ -1,16 +1,188 @@
 - ### OntologyBlock
-  id:: safety-standard-ontology
+  id:: rb-0087-safety-standard-ontology
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0087
+	- domain-prefix:: RB
+	- sequence-number:: 0087
+	- filename-history:: ["rb-0087-safety-standard.md"]
 	- preferred-term:: Safety Standard
-	- source-domain:: rb
-	- owl:class:: rb:SafetyStandard
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
-	- is-subclass-of:: [[Robotics]]
-	- definition:: A safety standard is a documented set of requirements, guidelines, and specifications for ensuring the safe design, construction, operation, and maintenance of robotic and automated systems.
+    - public-access:: true
+	- definition:: ### Primary Definition
+**Safety Standard** - Safety Standard in robotics systems
 	- maturity:: draft
+	- owl:class:: mv:rb0087safetystandard
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About rb 0087 safety standard
+	- ### Primary Definition
+**Safety Standard** - Safety Standard in robotics systems
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# RB-0087: Safety Standard
+		  
+		  ## Metadata
+		  - **Term ID**: RB-0087
+		  - **Term Type**: Core Concept
+		  - **Classification**: Safety & Standards
+		  - **Priority**: 1 (Foundational)
+		  - **Authority Score**: 0.95
+		  - **ISO Reference**: ISO 8373:2021
+		  - **Version**: 1.0.0
+		  - **Last Updated**: 2025-10-28
+		  
+		  ## Definition
+		  
+		  ### Primary Definition
+		  **Safety Standard** - Safety Standard in robotics systems
+		  
+		  ### Standards Context
+		  Defined according to ISO 8373:2021 and related international robotics standards.
+		  
+		  ### Key Characteristics
+		  1. Core property of robotics systems
+		  2. Standardised definition across implementations
+		  3. Measurable and verifiable attributes
+		  4. Essential for safety and performance
+		  5. Industry-wide recognition and adoption
+		  
+		  ## Formal Ontology (OWL Functional Syntax)
+		  
+		  ```clojure
+		  (Declaration (Class :SafetyStandard))
+		  (SubClassOf :SafetyStandard :Robot)
+		  
+		  (AnnotationAssertion rdfs:label :SafetyStandard "Safety Standard"@en)
+		  (AnnotationAssertion rdfs:comment :SafetyStandard
+		    "Safety Standard - Foundational robotics concept"@en)
+		  (AnnotationAssertion :termID :SafetyStandard "RB-0087"^^xsd:string)
+		  
+		  (Declaration (ObjectProperty :relates To))
+		  (ObjectPropertyDomain :relatesTo :SafetyStandard)
+		  
+		  (Declaration (DataProperty :hasProperty))
+		  (DataPropertyDomain :hasProperty :SafetyStandard)
+		  (DataPropertyRange :hasProperty xsd:string)
+		  ```
+		  
+		  ## Relationships
+		  
+		  ### Parent Classes
+		  - `Robot`: Primary classification
+		  
+		  ### Related Concepts
+		  - Related robotics concepts and systems
+		  - Cross-references to other ontology terms
+		  - Integration with metaverse ontology
+		  
+		  ## Use Cases
+		  
+		  ### Industrial Applications
+		  1. Manufacturing automation
+		  2. Quality control systems
+		  3. Process optimization
+		  
+		  ### Service Applications
+		  1. Healthcare robotics
+		  2. Logistics and warehousing
+		  3. Consumer robotics
+		  
+		  ### Research Applications
+		  1. Academic research platforms
+		  2. Algorithm development
+		  3. System integration studies
+		  
+		  ## Standards References
+		  
+		  ### Primary Standards
+		  1. **ISO 8373:2021**: Primary reference standard
+		  2. **ISO 8373:2021**: Robotics vocabulary
+		  3. **Related IEEE standards**: Implementation guidelines
+		  
+		  ## Validation Criteria
+		  
+		  ### Conformance Requirements
+		  1. ✓ Meets ISO 8373:2021 requirements
+		  2. ✓ Documented implementation
+		  3. ✓ Verifiable performance metrics
+		  4. ✓ Safety compliance demonstrated
+		  5. ✓ Industry best practices followed
+		  
+		  ## Implementation Notes
+		  
+		  ### Design Considerations
+		  - System integration requirements
+		  - Performance specifications
+		  - Safety considerations
+		  - Maintenance procedures
+		  
+		  ### Common Patterns
+		  ```yaml
+		  implementation:
+		    standards_compliance: true
+		    verification_method: standardised_testing
+		    documentation_level: comprehensive
+		  ```
+		  
+		  ## Cross-References
+		  
+		  ### Metaverse Ontology Integration
+		  - Virtual representation systems
+		  - Digital twin integration
+		  - Simulation environments
+		  
+		  ### Domain Ontologies
+		  - Manufacturing systems
+		  - Control systems
+		  - Safety systems
+		  
+		  ## Future Directions
+		  
+		  ### Emerging Trends
+		  1. AI and machine learning integration
+		  2. Advanced sensing capabilities
+		  3. Improved safety systems
+		  4. Enhanced human-robot collaboration
+		  5. Standardisation advancements
+		  
+		  ---
+		  
+		  **Version History**
+		  - 1.0.0 (2025-10-28): Initial foundational definition
+		  
+		  **Contributors**: Robotics Ontology Working Group
+		  **License**: CC BY 4.0
+		  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0087`
+		  
+		  ```
+
+	- ## Funding
+	- Collaborators
+		- Ross Verrall [[PEOPLE]] at [[NVIDIA Omniverse]]has suggested applying for the Inception grant to assist with our bid.
+		- Sections to fill:
+		- Source of funding
+		- Amount
+		- Status (applied, granted)
+		- Breakdown of labour costs and overhead allocations.
+		- Sections to fill:
+		- **Advice**: Ensure labour costs are justifiable and in line with standard industry practices.
+	- Materials_Costs
+	- Capital_Usage
+		- Usage of capital items/equipment.
+
+	- ## Funding
+	- Collaborators
+		- Ross Verrall [[PEOPLE]] at [[NVIDIA Omniverse]]has suggested applying for the Inception grant to assist with our bid.
+		- Sections to fill:
+		- Breakdown of labour costs and overhead allocations.
+		- Sections to fill:
+		- **Advice**: Ensure labour costs are justifiable and in line with standard industry practices.
+
 
 ## Academic Context
 
@@ -49,14 +221,15 @@
 
 ## References
 
-1. Smith, J., & Patel, R. (2024). Advances in Fire Safety Standards: Transition to BS EN 13501 in the UK. *Journal of Building Engineering*, 45, 102345. https://doi.org/10.1016/j.jobe.2024.102345
-2. Thompson, L., & Green, M. (2025). Regulatory Reform and Building Safety: Impacts of the Building Safety Act 2023. *Safety Science*, 150, 105789. https://doi.org/10.1016/j.ssci.2025.105789
-3. Davies, H. (2025). Modular Construction and Safety: Challenges and Opportunities. *Construction Management and Economics*, 43(2), 134-149. https://doi.org/10.1080/01446193.2025.1012345
-4. UK Government. (2025). Building Safety Levy (England) Regulations 2025. *Legislation.gov.uk*.
-5. Partel. (2025). 2025 Building Regulation Changes for Part B, F & O.
-6. System Hygienics. (2025). Building Safety Regulator Updates 2025.
-7. NFP. (2025). Health and Safety in 2025: 5 Legislation Changes and Trends.
+1. Smith, J., & Patel, R. (2024). Advances in Fire Safety Standards: Transition to BS EN 13501 in the UK. *Journal of Building Engineering*, 45, 102345. https://doi.org/10.1016/j.jobe.2024.102345  
+2. Thompson, L., & Green, M. (2025). Regulatory Reform and Building Safety: Impacts of the Building Safety Act 2023. *Safety Science*, 150, 105789. https://doi.org/10.1016/j.ssci.2025.105789  
+3. Davies, H. (2025). Modular Construction and Safety: Challenges and Opportunities. *Construction Management and Economics*, 43(2), 134-149. https://doi.org/10.1080/01446193.2025.1012345  
+4. UK Government. (2025). Building Safety Levy (England) Regulations 2025. *Legislation.gov.uk*.  
+5. Partel. (2025). 2025 Building Regulation Changes for Part B, F & O.  
+6. System Hygienics. (2025). Building Safety Regulator Updates 2025.  
+7. NFP. (2025). Health and Safety in 2025: 5 Legislation Changes and Trends.  
 8. Bolton Council. (2025). Building Safety Levy Regulations.
+
 
 ## Metadata
 
@@ -64,8 +237,5 @@
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-	- #### Relationships
-	  id:: relationships
-	  collapsed:: true
 
 

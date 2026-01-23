@@ -1,36 +1,218 @@
 - ### OntologyBlock
+  id:: treatment-planning-ai-ontology
+  collapsed:: true
+	- ontology:: true
+	- term-id:: AI-0344
+	- preferred-term:: Treatment Planning AI
+	- source-domain:: mv
+	- status:: draft
+- definition:: Treatment Planning AI encompasses artificial intelligence systems that optimise therapeutic interventions through automated treatment selection, dosage optimisation, radiation therapy planning, surgical planning, and personalised care pathway design. These systems integrate patient-specific data, treatment guidelines, outcome predictions, and resource constraints to generate evidence-based, individualised treatment plans.
 
-### Definition
-id:: treatment-planning-ai-ontology collapsed:: true - ontology:: true - term-id:: AI-0344 - preferred-term:: AI-0344
 
-Treatment Planning AI - source-domain:: ai - status:: draft - public-access:: true - definition:: Treatment Planning AI encompasses artificial intelligence systems that optimise therapeutic interventions through automated treatment selection, dosage optimisation, radiation therapy planning, surgical planning, and personalised care pathway design. These systems integrate patient-specific data, treatment guidelines, outcome predictions, and resource constraints to generate evidence-based, individualised treatment plans. - owl:class:: ai:TreatmentPlanningAi - owl:physicality:: VirtualEntity - owl:role:: System - #### Relationships - is-subclass-of:: [[ModelArchitecture]] id:: treatment-planning-ai-relationships collapsed:: true - is-subclass-of:: [[MedicalAI]]
+## OWL Formal Semantics
 
-Treatment Planning AI - source-domain:: ai - status:: draft - public-access:: true - definition:: Treatment Planning AI encompasses artificial intelligence systems that optimise therapeutic interventions through automated treatment selection, dosage optimisation, radiation therapy planning, surgical planning, and personalised care pathway design. These systems integrate patient-specific data, treatment guidelines, outcome predictions, and resource constraints to generate evidence-based, individualised treatment plans. - owl:class:: ai:TreatmentPlanningAi - owl:physicality:: VirtualEntity - owl:role:: System - #### Relationships - is-subclass-of:: [[ModelArchitecture]] id:: treatment-planning-ai-relationships collapsed:: true - is-subclass-of:: [[MedicalAI]]
+```clojure
+;; OWL Functional Syntax
 
-### Notes
-*Instructional content moved from class definition*
+(Declaration (Class :TreatmentPlanningAi))
 
-## Treatment Planning AI
+;; Annotations
+(AnnotationAssertion rdfs:label :TreatmentPlanningAi "Treatment Planning AI"@en)
+(AnnotationAssertion rdfs:comment :TreatmentPlanningAi "Treatment Planning AI encompasses artificial intelligence systems that optimise therapeutic interventions through automated treatment selection, dosage optimisation, radiation therapy planning, surgical planning, and personalised care pathway design. These systems integrate patient-specific data, treatment guidelines, outcome predictions, and resource constraints to generate evidence-based, individualised treatment plans."@en)
 
-<!-- INSTRUCTIONAL CONTENT (moved from inline) -->
-<!--
-Treatment Planning AI refers to treatment planning ai encompasses artificial intelligence systems that optimise therapeutic interventions through automated treatment selection, dosage optimisation, radiation therapy planning, surgical planning, and personalised care pathway design. these systems integrate patient-specific data, treatment guidelines, outcome predictions, and resource constraints to generate evidence-based, individualised treatment plans.
+;; Semantic Relationships
+(SubClassOf :TreatmentPlanningAi
+  (ObjectSomeValuesFrom :relatedTo :RadiationTherapy))
+(SubClassOf :TreatmentPlanningAi
+  (ObjectSomeValuesFrom :relatedTo :MedicalAi))
+(SubClassOf :TreatmentPlanningAi
+  (ObjectSomeValuesFrom :relatedTo :MedicalDiagnosisAi))
+
+;; Data Properties
+(AnnotationAssertion dcterms:identifier :TreatmentPlanningAi "AI-0344"^^xsd:string)
+(DataPropertyAssertion :isAITechnology :TreatmentPlanningAi "true"^^xsd:boolean)
+```
+
+## Core Characteristics
+
+- **Therapy Optimisation**: Personalised treatment protocol selection
+- **Radiation Treatment Planning**: Automated radiotherapy dose optimisation
+- **Surgical Planning**: 3D surgical simulation and guidance
+- **Outcome Prediction**: Treatment efficacy forecasting
+- **Adverse Event Prediction**: Toxicity and complication risk assessment
+
+## Relationships
+
+- **Superclass**: Medical AI
+- **Related**: Medical Diagnosis AI, Precision Medicine, Clinical Decision Support
+- **Utilises**: Optimisation Algorithms, Reinforcement Learning, 3D Medical Imaging
+
+## Key Literature
+
+1. Bibault, J. E., et al. (2019). "Big Data and machine learning in radiation oncology: State of the art and future prospects." *Cancer Letters*, 382(1), 110-117.
+
+2. Kooreman, E. S., et al. (2022). "Automated treatment planning in radiotherapy using AI: a review." *Medical Physics Reviews*.
+
+## See Also
+
+- [[Medical AI]]
+- [[Medical Diagnosis AI]]
+- [[Radiation Therapy]]
+
+## Metadata
+
+- **Domain**: Treatment Planning, Oncology, Surgery
+- **Maturity**: Clinical deployment
+	- maturity:: draft
+	- owl:class:: mv:TreatmentPlanningAI
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+	- #### Relationships
+	  id:: treatment-planning-ai-relationships
+- ## About Treatment Planning AI
+	- Treatment Planning AI encompasses artificial intelligence systems that optimise therapeutic interventions through automated treatment selection, dosage optimisation, radiation therapy planning, surgical planning, and personalised care pathway design. These systems integrate patient-specific data, treatment guidelines, outcome predictions, and resource constraints to generate evidence-based, individualised treatment plans.
+
+		- ### Planning and Execution
+			- Successful long-horizon systems require:
+				- Explicit planning phases before execution
+				- Regular plan updates as new information emerges
+				- Clear task decomposition and prioritisation
+				- Progress tracking and milestone completion
+				- Recovery mechanisms when tasks go off-track
+	- {{embed ((68aef10f-22e6-4b42-b835-1d12dabfef8d))}}
+	- {{embed ((68aef10f-1127-4a2c-b03f-fc7ddd9a8d1d))}}
+	- {{embed ((68aef10f-4c4a-4c65-a81b-be1ac28622e2))}}
+
+		- ### Planning and Execution
+			- Successful long-horizon systems require:
+				- Explicit planning phases before execution
+				- Regular plan updates as new information emerges
+				- Clear task decomposition and prioritisation
+				- Progress tracking and milestone completion
+				- Recovery mechanisms when tasks go off-track
+	- {{embed ((68aef10f-22e6-4b42-b835-1d12dabfef8d))}}
+	- {{embed ((68aef10f-1127-4a2c-b03f-fc7ddd9a8d1d))}}
+	- {{embed ((68aef10f-4c4a-4c65-a81b-be1ac28622e2))}}
+
+		- ### Planning and Execution
+			- Successful long-horizon systems require:
+				- Explicit planning phases before execution
+				- Regular plan updates as new information emerges
+				- Clear task decomposition and prioritisation
+				- Progress tracking and milestone completion
+			- Deep agents distinguish themselves through:
+				- Extended runtime (minutes to hours or days)
+				- Comprehensive planning and re-planning
+				- High-value, substantial outputs
+				- Self-correction and iteration capabilities
+				- Significant computational resource usage
+
+- #### 4.12.6 AI and Central Planning
+  Another concern is the fear that AI will make centrally planned economies seem viable, where past attempts failed due to the lack of data. This idea was discussed in a conversation between Peter Thiel and Reed Hoffman hosted by Neil Ferguson at Stanford in 2018. Thiel posited that AI appears to favor centralization, an aspect that supports the principles of central planning.
+
+- #### 4.12.6 AI and Central Planning
+  Another concern is the fear that AI will make centrally planned economies seem viable, where past attempts failed due to the lack of data. This idea was discussed in a conversation between Peter Thiel and Reed Hoffman hosted by Neil Ferguson at Stanford in 2018. Thiel posited that AI appears to favor centralization, an aspect that supports the principles of central planning.
+
+- #### 4.12.6 AI and Central Planning
+  Another concern is the fear that AI will make centrally planned economies seem viable, where past attempts failed due to the lack of data. This idea was discussed in a conversation between Peter Thiel and Reed Hoffman hosted by Neil Ferguson at Stanford in 2018. Thiel posited that AI appears to favor centralization, an aspect that supports the principles of central planning.
+
+- #### 4.12.6 AI and Central Planning
+  Another concern is the fear that AI will make centrally planned economies seem viable, where past attempts failed due to the lack of data. This idea was discussed in a conversation between Peter Thiel and Reed Hoffman hosted by Neil Ferguson at Stanford in 2018. Thiel posited that AI appears to favor centralization, an aspect that supports the principles of central planning.
+
+## Core Characteristics
+
+- **Therapy Optimisation**: Personalised treatment protocol selection
+- **Radiation Treatment Planning**: Automated radiotherapy dose optimisation
+- **Surgical Planning**: 3D surgical simulation and guidance
+- **Outcome Prediction**: Treatment efficacy forecasting
+- **Adverse Event Prediction**: Toxicity and complication risk assessment
+
+## Relationships
+
+- **Superclass**: Medical AI
+- **Related**: Medical Diagnosis AI, Precision Medicine, Clinical Decision Support
+- **Utilises**: Optimisation Algorithms, Reinforcement Learning, 3D Medical Imaging
+
+## Key Literature
+
+1. Bibault, J. E., et al. (2019). "Big Data and machine learning in radiation oncology: State of the art and future prospects." *Cancer Letters*, 382(1), 110-117.
+
+2. Kooreman, E. S., et al. (2022). "Automated treatment planning in radiotherapy using AI: a review." *Medical Physics Reviews*.
+
+## See Also
+
+- [[Medical AI]]
+- [[Medical Diagnosis AI]]
+- [[Radiation Therapy]]
+
+## Metadata
+
+- **Domain**: Treatment Planning, Oncology, Surgery
+- **Maturity**: Clinical deployment
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# Treatment Planning AI
+		  
+		  **Term ID**: AI-0344
+		  **Category**: Domain Applications → Medical AI
+		  **Status**: Stable
+		  **Last Updated**: 2025-10-27
+		  
+		  ## Definition
+		  
+		  Treatment Planning AI encompasses artificial intelligence systems that optimise therapeutic interventions through automated treatment selection, dosage optimisation, radiation therapy planning, surgical planning, and personalised care pathway design. These systems integrate patient-specific data, treatment guidelines, outcome predictions, and resource constraints to generate evidence-based, individualised treatment plans.
+		  
+		  ## Core Characteristics
+		  
+		  - **Therapy Optimisation**: Personalised treatment protocol selection
+		  - **Radiation Treatment Planning**: Automated radiotherapy dose optimisation
+		  - **Surgical Planning**: 3D surgical simulation and guidance
+		  - **Outcome Prediction**: Treatment efficacy forecasting
+		  - **Adverse Event Prediction**: Toxicity and complication risk assessment
+		  
+		  ## Relationships
+		  
+		  - **Superclass**: Medical AI
+		  - **Related**: Medical Diagnosis AI, Precision Medicine, Clinical Decision Support
+		  - **Utilises**: Optimisation Algorithms, Reinforcement Learning, 3D Medical Imaging
+		  
+		  ## Key Literature
+		  
+		  1. Bibault, J. E., et al. (2019). "Big Data and machine learning in radiation oncology: State of the art and future prospects." *Cancer Letters*, 382(1), 110-117.
+		  
+		  2. Kooreman, E. S., et al. (2022). "Automated treatment planning in radiotherapy using AI: a review." *Medical Physics Reviews*.
+		  
+		  ## See Also
+		  
+		  - [[Medical AI]]
+		  - [[Medical Diagnosis AI]]
+		  - [[Radiation Therapy]]
+		  
+		  ## Metadata
+		  
+		  - **Domain**: Treatment Planning, Oncology, Surgery
+		  - **Maturity**: Clinical deployment
+		  
+		  ```
+
+    - follows:: [[Medical Diagnosis AI]]
+
+- public-access:: true
+	- definition:: Treatment Planning AI encompasses artificial intelligence systems that optimise therapeutic interventions through automated treatment selection, dosage optimisation, radiation therapy planning, surgical planning, and personalised care pathway design. These systems integrate patient-specific data, treatment guidelines, outcome predictions, and resource constraints to generate evidence-based, individualised treatment plans.
+
+
+
+# Treatment Planning AI – Updated Ontology Entry
+
+## Academic Context
 
 - Artificial intelligence in treatment planning represents a fundamental shift in clinical decision-making, moving from generalised protocols towards genuinely individualised therapeutic strategies
   - The field integrates machine learning, predictive analytics, and clinical knowledge systems to synthesise vast datasets into actionable treatment recommendations
   - Foundational work draws from precision medicine, computational oncology, and evidence-based practice frameworks
   - Current systems demonstrate measurable improvements in diagnostic accuracy (up to 98% in medical imaging analysis) and treatment optimisation across multiple specialties[3]
-
--->
-
-## Technical Details
-## Technical Details
-
-- **Id**: treatment-planning-ai-ontology
-- **Collapsed**: true
-- **Source Domain**: ai
-- **Status**: draft
-- **Public Access**: true
 
 ## Current Landscape (2025)
 
@@ -40,6 +222,7 @@ Treatment Planning AI refers to treatment planning ai encompasses artificial int
   - Treatment Recommendation Engines now analyse electronic health records, medical literature, genomic information, and clinical guidelines simultaneously to generate evidence-based suggestions[1]
   - IBM Watson and comparable platforms demonstrate practical application in oncology, utilising genetic and health data to recommend precise care plans[1][3]
   - Potential annual cost savings estimated at $150 billion across the United States healthcare system through improved efficiency and reduced errors[3]
+
 - UK and North England context
   - The 2025 HHS Strategic Plan (United States) provides regulatory direction that influences international implementation standards, including UK NHS adoption pathways[2]
   - North England health systems (Manchester, Leeds, Newcastle, Sheffield) increasingly integrate AI-assisted planning within existing NHS infrastructure, though formal regional case studies remain limited in current literature
@@ -52,6 +235,7 @@ Treatment Planning AI refers to treatment planning ai encompasses artificial int
   - Personalised dosage optimisation and treatment timeline calculation based on thousands of comparable patient outcomes[6]
   - Real-time 3D treatment simulations (particularly advanced in orthodontics and surgical planning) provide patients with accurate outcome visualisation[6]
   - Multi-modal data integration across treatment settings ensures comprehensive clinical context[2]
+
 - Acknowledged limitations and barriers
   - Data privacy and integration challenges remain substantial, particularly across fragmented healthcare systems[3][5]
   - Reimbursement restrictions and budget constraints limit facility adoption, especially for third-party software solutions[4]
@@ -75,6 +259,7 @@ Treatment Planning AI refers to treatment planning ai encompasses artificial int
   - NCBI Bookshelf (2025). "2025 Watch List: Artificial Intelligence in Health Care." Canada's Drug Agency Horizon Scan report examining implementation issues and health system transformation potential.[5]
   - Enjoy Orthodontics (2025). "AI-Powered Treatment Planning: How Artificial Intelligence is Revolutionizing Orthodontic Care in 2025." Demonstrates millimetre-precision personalisation and treatment timeline optimisation.[6]
   - OncoDaily (2025). "How Artificial Intelligence Is Transforming Cancer Care in 2025." Discusses digital twins, multi-omics integration, adaptive therapy, and real-time decision support in oncology.[7]
+
 - Ongoing research directions
   - Multi-omics data integration creating comprehensive "digital twins" for disease progression simulation and treatment response prediction[7]
   - Adaptive clinical trials powered by AI, dynamically matching patients to novel therapies based on evolving tumour characteristics[7]
@@ -87,6 +272,7 @@ Treatment Planning AI refers to treatment planning ai encompasses artificial int
   - NHS adoption of Treatment Planning AI remains cautious but expanding, with emphasis on clinical validation and equity of access
   - Regulatory oversight through MHRA (Medicines and Healthcare products Regulatory Agency) and NICE (National Institute for Health and Care Excellence) guidance increasingly addresses AI-assisted clinical decision-making
   - Data governance frameworks (UK GDPR, NHS Data Security and Protection Toolkit) create specific implementation requirements distinct from US regulatory pathways
+
 - North England innovation landscape
   - Manchester, Leeds, Newcastle, and Sheffield health systems represent potential innovation hubs for AI integration, though formal published case studies documenting regional implementations remain sparse in current literature
   - Academic medical centres in these regions increasingly collaborate on AI validation studies, particularly in oncology and diagnostic imaging
@@ -98,18 +284,23 @@ Treatment Planning AI refers to treatment planning ai encompasses artificial int
   - Shift from static treatment protocols towards continuously adaptive systems that update recommendations based on real-time patient data and latest evidence[7]
   - Integration of social determinants of health and environmental factors into treatment planning algorithms, moving beyond purely clinical variables[7]
   - Expansion beyond oncology and imaging into surgical planning, orthodontics, and chronic disease management across multiple specialties[6]
+
 - Anticipated challenges
   - Balancing algorithmic efficiency with clinical autonomy—maintaining physician oversight whilst leveraging AI's analytical capacity[4][5]
   - Addressing equity concerns: ensuring AI systems perform equitably across diverse patient populations and don't perpetuate existing healthcare disparities
   - Workforce transition: managing the shift in clinical roles as administrative burden decreases but validation and interpretation responsibilities increase[5]
   - Regulatory harmonisation: aligning UK, European, and international standards as AI healthcare applications proliferate[2][5]
+
 - Research priorities
   - Longitudinal outcome studies comparing AI-assisted versus traditional treatment planning across diverse patient cohorts
   - Validation of AI recommendations in real-world NHS settings with heterogeneous data quality and infrastructure
   - Development of interpretable AI systems that clinicians can understand and appropriately challenge
   - Investigation of optimal human-AI collaboration models that maximise clinical benefit whilst maintaining professional accountability
+
 ---
+
 **Note:** This entry reflects the current state as of November 2025. The field evolves rapidly; periodic review is advisable to capture emerging implementations and regulatory developments, particularly as North England health systems publish formal case studies and as NICE guidance matures.
+
 
 ## Metadata
 

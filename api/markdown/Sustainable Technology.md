@@ -2,26 +2,19 @@
   id:: sustainable-technology-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0904
+	- term-id:: ME-0017
 	- preferred-term:: Sustainable Technology
 	- source-domain:: mv
-	- status:: emerging
-	- public-access:: true
-
-
-
-
-### OWL Classification
+	- status:: emerging-technology
+    - public-access:: true
+	- definition:: [Generated from Gartner emerging tech analysis]
+	- maturity:: emerging
 	- owl:class:: mv:SustainableTechnology
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-
-### Domain & Architecture
 	- belongsToDomain:: [[MetaverseDomain]]
-	- maturity:: emerging
+	- category:: Infrastructure & Cloud
 
-### Relationships
-- is-subclass-of:: [[Metaverse]]
 
 ## Overview
 
@@ -49,7 +42,7 @@
     - UK policies encourage sustainable IT through incentives for green data centres and support for circular economy practices in e-waste management[2][4][5].
   - **Key Research Papers and Sources**
     - Beloglazov, A., Abawajy, J., & Buyya, R. (2012). Energy-aware resource allocation heuristics for efficient management of data centres for cloud computing. *Future Generation Computer Systems*, 28(5), 755-768. [Foundational paper on energy-efficient cloud resource management]
-    - Shehabi, A., et al. (2016). United States Data Centre Energy Usage Report. *Lawrence Berkeley National Laboratory*. [Comprehensive energy use analysis relevant for benchmarking]
+    - Shehabi, A., et al. (2016). United States Data Center Energy Usage Report. *Lawrence Berkeley National Laboratory*. [Comprehensive energy use analysis relevant for benchmarking]
     - Andrae, A. S. G., & Edler, T. (2015). On Global Electricity Usage of Communication Technology: Trends to 2030. *Challenges*, 6(1), 117-157. [Discusses trends in ICT energy consumption]
     - UK Government (2023). *Net Zero Strategy: Build Back Greener*. [Policy framework supporting sustainable IT infrastructure]
     - Recent white papers by HPE and IBM on sustainable IT practices and cloud computing energy efficiency[4][6].
@@ -61,12 +54,14 @@
     - Development of circular economy models for IT hardware to minimise e-waste and resource extraction.
     - Enhanced use of cloud computing as a platform for sustainability analytics and smart infrastructure management across industries[1][4][7][5].
 
+
 ## UK Context
 
 - British contributions and implementations
   - Research institutions and programmes
   - Industry adoption
   - North England innovation (where relevant)
+
 
 ## Metadata
 
@@ -75,11 +70,4 @@
 - **Category**: Infrastructure & Cloud
 - **Status**: Emerging Technology
 
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
 

@@ -2,26 +2,19 @@
   id:: platform-engineering-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0939
+	- term-id:: ME-0014
 	- preferred-term:: Platform Engineering
 	- source-domain:: mv
-	- status:: emerging
-	- public-access:: true
-
-
-
-
-### OWL Classification
+	- status:: emerging-technology
+    - public-access:: true
+	- definition:: [Generated from Gartner emerging tech analysis]
+	- maturity:: emerging
 	- owl:class:: mv:PlatformEngineering
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-
-### Domain & Architecture
 	- belongsToDomain:: [[MetaverseDomain]]
-	- maturity:: emerging
+	- category:: Infrastructure & Cloud
 
-### Relationships
-- is-subclass-of:: [[Metaverse]]
 
 ## Overview
 
@@ -53,12 +46,14 @@
     - In North England, regional innovation clusters and public sector digital transformation programmes are likely to drive further adoption, especially in sectors requiring rapid, secure, and compliant software delivery.
     - Research and development will focus on improving interoperability between platforms, enhancing developer experience, and integrating sustainability metrics into platform operations.
 
+
 ## UK Context
 
 - British contributions and implementations
   - Research institutions and programmes
   - Industry adoption
   - North England innovation (where relevant)
+
 
 ## Metadata
 
@@ -67,11 +62,4 @@
 - **Category**: Infrastructure & Cloud
 - **Status**: Emerging Technology
 
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
 

@@ -2,8 +2,8 @@
   id:: robot-dynamics-ontology
   collapsed:: true
 	- preferred-term:: Robot Dynamics
-	- source-domain:: mv
-  - owl:class:: mv:RobotDynamics
+	- source-domain:: robotics
+  - owl:class:: rb:RobotDynamics
 	- status:: draft
 	- public-access:: true
 	- definition:: 	- maturity:: draft

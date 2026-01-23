@@ -1,39 +1,42 @@
 - ### OntologyBlock
-    - term-id:: DT-0820
-    - source-domain:: ai
-    - owl:class:: ai:SoftPromptEmbedding
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - preferred-term:: Soft Prompt Embedding
-    - ontology:: true
+  id:: softpromptembedding-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: AI
+    - sequence-number:: 0820
+    - filename-history:: ["AI-0820-softpromptembedding.md"]
     - public-access:: true
+    - ontology:: true
+    - term-id:: AI-0820
+    - preferred-term:: Soft Prompt Embedding
+    - source-domain:: ai
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
+  - **Definition**
+    - definition:: Continuous prompt representations learned during tuning.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-### Relationships
-- is-subclass-of:: [[TokenEmbedding]]
+  - **Semantic Classification**
+    - owl:class:: ai:SoftPromptEmbedding
+    - belongsToDomain:: [[Artificial Intelligence]]
 
-## Soft Prompt Embedding
+  - #### Relationships
 
-Soft Prompt Embedding refers to continuous prompt representations learned during tuning.
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :SoftPromptEmbedding))
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :SoftPromptEmbedding "Soft Prompt Embedding"@en)
+      (AnnotationAssertion rdfs:comment :SoftPromptEmbedding
+        "Continuous prompt representations learned during tuning."@en)
+      ```
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
-
-## Technical Details
-
-- **Id**: softpromptembedding-ontology
-- **Collapsed**: true
-- **Domain Prefix**: AI
-- **Sequence Number**: 0820
-- **Filename History**: ["AI-0820-softpromptembedding.md"]
-- **Public Access**: true
-- **Source Domain**: ai
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: ai:SoftPromptEmbedding
-- **Belongstodomain**: [[Artificial Intelligence]]
+- ## About Soft Prompt Embedding
+  Continuous prompt representations learned during tuning.

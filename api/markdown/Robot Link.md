@@ -2,8 +2,8 @@
   id:: robot-link-ontology
   collapsed:: true
 	- preferred-term:: Robot Link
-	- source-domain:: mv
-  - owl:class:: mv:RobotLink
+	- source-domain:: robotics
+  - owl:class:: rb:RobotLink
 	- status:: draft
 	- public-access:: true
 	- definition:: 	- maturity:: draft

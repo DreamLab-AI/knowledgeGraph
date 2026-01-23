@@ -1,19 +1,46 @@
-### Definition
-
-Lower Limb Exoskeleton constitutes a wearable robotic system...
-
 - ### OntologyBlock
-  id:: Lower Limb Exoskeleton
-  - ontology:: true
-  - public-access:: true
-  - term-id:: RB-1037
-  - preferred-term:: Lower Limb Exoskeleton
-  - owl:class:: rb:LowerLimbExoskeleton
-  - is-subclass-of:: [[Robotics]]
-  - definition:: A lower limb exoskeleton is a wearable robotic system mechanically coupled to the user's legs, hips, and pelvis to assist, augment, or restore walking and standing functions.
-  - source-domain:: rb
-  - status:: draft
+  id:: lowerlimbexoskeleton-ontology
+  collapsed:: true
 
-Lower Limb Exoskeleton constitutes a wearable robotic system mechanically coupled to the user's legs, hips, and pelvis to assist, augment, or restore walking and standing functions. These powered orthotic devices apply torques and forces to hip, knee, and ankle joints through actuators controlled by sensors detecting user intent or gait patterns, enabling mobility restoration for individuals with paralysis, gait training for stroke patients, or endurance augmentation for industrial workers. Applications span medical rehabilitation per ISO 13482, military load bearing, and industrial ergonomics.
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0140
+    - filename-history:: ["RB-0140-lowerlimbexoskeleton.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: RB-0140
+    - preferred-term:: Lower Limb Exoskeleton
+    - source-domain:: rb
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-Lower Limb Exoskeleton constitutes a wearable robotic system mechanically coupled to the user's legs, hips, and pelvis to assist, augment, or restore walking and standing functions. These powered orthotic devices apply torques and forces to hip, knee, and ankle joints through actuators controlled by sensors detecting user intent or gait patterns, enabling mobility restoration for individuals with paralysis, gait training for stroke patients, or endurance augmentation for industrial workers. Applications span medical rehabilitation per ISO 13482, military load bearing, and industrial ergonomics.
+  - **Definition**
+    - definition:: Lower limb exoskeleton assists or augments walking and leg movements.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: rb:LowerLimbExoskeleton
+    - belongsToDomain:: [[Robotics]]
+
+  - #### Relationships
+    - is-subclass-of:: [[Exoskeleton Robot]]
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :LowerLimbExoskeleton))
+      (SubClassOf :LowerLimbExoskeleton :ExoskeletonRobot)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :LowerLimbExoskeleton "Lower Limb Exoskeleton"@en)
+      (AnnotationAssertion rdfs:comment :LowerLimbExoskeleton
+        "Lower limb exoskeleton assists or augments walking and leg movements."@en)
+      ```
+
+- ## About Lower Limb Exoskeleton
+  Lower limb exoskeleton assists or augments walking and leg movements.
+  
+  An exoskeleton for legs and hips.

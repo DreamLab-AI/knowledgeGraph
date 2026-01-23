@@ -1,16 +1,46 @@
-id:: rb-0046-robot-control-ontology
-
 - ### OntologyBlock
-  id:: Robot-Control
-  - ontology:: true
-  - public-access:: true
-  - term-id:: RB-0046
-  - preferred-term:: Robot Control
-  - source-domain:: rb
-  - owl:class:: rb:RobotControl
-  - is-subclass-of:: [[Robotics]]
-  - status:: active
-  - definition:: Robot control encompasses the systems, algorithms, and methodologies that enable robots to execute tasks autonomously or semi-autonomously through sensing, decision-making, and actuation.
+  id:: rb-0046-robot-control-ontology
+  collapsed:: true
+	- ontology:: true
+	- term-id:: RB-0046
+	- domain-prefix:: RB
+	- sequence-number:: 0046
+	- filename-history:: ["rb-0046-robot-control.md"]
+	- preferred-term:: Robot Control
+	- source-domain:: rb
+	- status:: corrected
+	- public-access:: true
+	- definition:: Robot Control - The systems, algorithms, and methodologies that enable robots to execute tasks autonomously or semi-autonomously through sensing, decision-making, and actuation
+	- maturity:: production
+	- owl:class:: rb:rb0046robotcontrol
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: CoreConcept
+	- belongsToDomain:: [[RoboticsDomain]]
+	- quality-score:: 0.92
+	- updated:: 2025-11-14
+
+- ## About RB-0046: Robot Control [Updated 2025]
+
+### Primary Definition
+**Robot Control** refers to the integrated systems and methodologies that govern [[robotic systems]] behavior through [[sensor fusion]], [[control algorithms]], [[motion planning]], and [[actuation]], enabling autonomous or semi-autonomous task execution in dynamic environments.
+
+### Enhanced Definition [Updated 2025]
+Robot control encompasses:
+- **[[Perception Systems]]**: [[Vision-based control]], [[LIDAR]], [[tactile sensing]], [[proprioception]]
+- **[[Control Algorithms]]**: [[PID control]], [[optimal control]], [[adaptive control]], [[neural control]]
+- **[[Motion Planning]]**: [[trajectory generation]], [[collision avoidance]], [[path optimization]]
+- **[[Actuation Systems]]**: [[servo motors]], [[pneumatic actuators]], [[soft robotics]] actuators
+- **[[Decision Making]]**: [[reinforcement learning]], [[model predictive control]], [[behavior trees]]
+
+### Standards Context [Updated 2025]
+- **[[ISO 8373]]:2021** - Robotics vocabulary and fundamental concepts
+- **[[ISO 10218]]** - Safety requirements for industrial robots
+- **[[ISO 13849]]** - Safety-related parts of control systems
+- **[[IEC 61508]]** - Functional safety of electrical/electronic systems
+- **[[ROS 2]]** (Robot Operating System) - De facto standard middleware for robot control
+- **[[IEEE 1872]]** - Standard ontology for robotics and automation
+
+## State-of-the-Art Robot Control [Updated 2025]
 
 ### [[Vision-Based Control Systems]]
 - **[[Deep Learning]] and [[Machine Vision]]** [Updated 2025]
@@ -26,7 +56,7 @@ id:: rb-0046-robot-control-ontology
 
 ### [[Adaptive Control Algorithms]] [Updated 2025]
 - **[[Model Predictive Control]] (MPC)**
-  - Optimises control actions over a prediction horizon
+  - Optimizes control actions over a prediction horizon
   - Handles constraints on states and control inputs
   - Used in autonomous vehicles, legged robots, industrial manipulators
 - **[[Robust Control]]**
@@ -41,7 +71,7 @@ id:: rb-0046-robot-control-ontology
   - Algorithms: consensus protocols, formation control, distributed optimization
 - **[[Swarm Intelligence]]**
   - Decentralized control inspired by biological systems (ants, bees, birds)
-  - Emergent collective behaviour from simple individual rules
+  - Emergent collective behavior from simple individual rules
   - Scalable to hundreds or thousands of robots
 
 ### [[Digital Twin Technology]] [Updated 2025]
@@ -60,11 +90,3 @@ id:: rb-0046-robot-control-ontology
 - [[Control Theory]]
 - [[Motion Planning]]
 - [[Sensor Fusion]]
-
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable

@@ -1,17 +1,42 @@
 - ### OntologyBlock
   id:: safetymeasure-ontology
   collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0838
-	- source-domain:: ai
-	- preferred-term:: Safety Measure
-	- status:: complete
-	- public-access:: true
-	- source:: Chimera Prime Research
-	- maturity:: established
-	- owl:class:: ai:SafetyMeasure
-	- belongsToDomain:: [[Artificial Intelligence]]
 
-### Relationships
+  - **Identification**
+    - domain-prefix:: AI
+    - sequence-number:: 0838
+    - filename-history:: ["AI-0838-safetymeasure.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: AI-0838
+    - preferred-term:: Safety Measure
+    - source-domain:: ai
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-- is-subclass-of:: [[AiGovernance]]
+  - **Definition**
+    - definition:: 
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: ai:SafetyMeasure
+    - belongsToDomain:: [[Artificial Intelligence]]
+
+  - #### Relationships
+    - is-subclass-of:: [[Ai Governance]]
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :SafetyMeasure))
+      (SubClassOf :SafetyMeasure :AiGovernance)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :SafetyMeasure "Safety Measure"@en)
+      ```
+
+- ## About Safety Measure
+  

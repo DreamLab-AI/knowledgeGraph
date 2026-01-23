@@ -12,15 +12,15 @@
     "Reputation Data"
   ],
   "wiki_links": [
-    "Data Protection",
-    "System Architecture",
+    "Data Management",
     "Information Retrieval",
     "Data Persistence",
+    "Data Protection",
+    "Core Technology",
     "Infrastructure Component",
     "Data Redundancy",
     "Storage Architecture",
-    "Core Technology",
-    "Data Management",
+    "System Architecture",
     "Backup and Recovery"
   ],
   "ontology": {

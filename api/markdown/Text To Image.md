@@ -1,17 +1,42 @@
 - ### OntologyBlock
   id:: texttoimage-ontology
   collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0857
-	- source-domain:: ai
-	- preferred-term:: Text-to-Image
-	- status:: complete
-	- public-access:: true
-	- source:: Chimera Prime Research
-	- maturity:: established
-	- owl:class:: ai:TextToImage
-	- belongsToDomain:: [[Artificial Intelligence]]
 
-### Relationships
+  - **Identification**
+    - domain-prefix:: AI
+    - sequence-number:: 0857
+    - filename-history:: ["AI-0857-texttoimage.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: AI-0857
+    - preferred-term:: Text-to-Image
+    - source-domain:: ai
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-- is-subclass-of:: [[GenerativeAi]]
+  - **Definition**
+    - definition:: 
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: ai:TextToImage
+    - belongsToDomain:: [[Artificial Intelligence]]
+
+  - #### Relationships
+    - is-subclass-of:: [[Generative Ai]]
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :TextToImage))
+      (SubClassOf :TextToImage :GenerativeAi)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :TextToImage "Text-to-Image"@en)
+      ```
+
+- ## About Text-to-Image
+  

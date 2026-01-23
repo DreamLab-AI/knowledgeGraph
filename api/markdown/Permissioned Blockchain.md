@@ -4,25 +4,17 @@
 	- ontology:: true
 	- term-id:: BC-0429
 	- preferred-term:: Permissioned Blockchain
-	- source-domain:: mv
+	- source-domain:: bc
 	- status:: draft
-	- public-access:: true
-
-
-
-
-### OWL Classification
+    - public-access:: true
+	- definition:: A component of the blockchain ecosystem.
+	- maturity:: draft
 	- owl:class:: bc:PermissionedBlockchain
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-
-### Domain & Architecture
 	- belongsToDomain:: [[BlockchainDomain]]
-	- maturity:: draft
-
-### Relationships
-id:: bc-0429-permissioned-blockchain-relationships
-		- is-subclass-of:: [[Blockchain]]
+	- #### Relationships
+	  id:: bc-0429-permissioned-blockchain-relationships
 
 
 
@@ -94,11 +86,14 @@ id:: bc-0429-permissioned-blockchain-relationships
   - Scalability improvements without sacrificing auditability
   - Governance frameworks balancing operational efficiency with stakeholder representation
 
+
 ## Metadata
+
 
 - **Migration Status**: Ontology block enriched on 2025-11-12
 - **Last Updated**: 2025-11-12
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
 

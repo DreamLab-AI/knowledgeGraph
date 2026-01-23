@@ -1,36 +1,46 @@
 - ### OntologyBlock
-    - term-id:: MV-0192
-    - source-domain:: mv
-    - owl:class:: mv:QualityStandard
-    - preferred-term:: Quality Standard
-    - ontology:: true
+  id:: qualitystandard-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0192
+    - filename-history:: ["RB-0192-qualitystandard.md"]
     - public-access:: true
-    - is-subclass-of:: [[Robotics Standard]]
+    - ontology:: true
+    - term-id:: RB-0192
+    - preferred-term:: Quality Standard
+    - source-domain:: rb
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## Quality Standard
+  - **Definition**
+    - definition:: Quality standard defines requirements for quality management in robot manufacturing and deployment.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-Quality Standard refers to quality standard defines requirements for quality management in robot manufacturing and deployment.
+  - **Semantic Classification**
+    - owl:class:: rb:QualityStandard
+    - belongsToDomain:: [[Robotics]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
+    - is-subclass-of:: [[Robot Standard]]
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :QualityStandard))
+      (SubClassOf :QualityStandard :RobotStandard)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :QualityStandard "Quality Standard"@en)
+      (AnnotationAssertion rdfs:comment :QualityStandard
+        "Quality standard defines requirements for quality management in robot manufacturing and deployment."@en)
+      ```
 
-- **Id**: qualitystandard-ontology
-- **Collapsed**: true
-- **Domain Prefix**: RB
-- **Sequence Number**: 0192
-- **Filename History**: ["RB-0192-qualitystandard.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: rb:QualityStandard
-- **Belongstodomain**: [[Robotics]]
-- **Is Subclass Of**: [[Robot Standard]]
+- ## About Quality Standard
+  Quality standard defines requirements for quality management in robot manufacturing and deployment.
+  
+  A standard for quality management systems.

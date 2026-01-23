@@ -1,18 +1,42 @@
 - ### OntologyBlock
   id:: behavioranalysis-ontology
   collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0860
-	- source-domain:: ai
-	- preferred-term:: Behavior Analysis
-	- status:: complete
-	- public-access:: true
-	- source:: Chimera Prime Research
-	- maturity:: established
-	- owl:class:: ai:BehaviorAnalysis
-	- belongsToDomain:: [[Artificial Intelligence]]
 
-### Relationships
+  - **Identification**
+    - domain-prefix:: AI
+    - sequence-number:: 0860
+    - filename-history:: ["AI-0860-behavioranalysis.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: AI-0860
+    - preferred-term:: Behavior Analysis
+    - source-domain:: ai
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-- is-subclass-of:: [[MachineLearning]]
-- is-subclass-of:: [[MachineLearning]]
+  - **Definition**
+    - definition:: 
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: ai:BehaviorAnalysis
+    - belongsToDomain:: [[Artificial Intelligence]]
+
+  - #### Relationships
+    - is-subclass-of:: [[Machine Learning]]
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :BehaviorAnalysis))
+      (SubClassOf :BehaviorAnalysis :MachineLearning)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :BehaviorAnalysis "Behavior Analysis"@en)
+      ```
+
+- ## About Behavior Analysis
+  

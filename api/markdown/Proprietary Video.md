@@ -1,50 +1,13 @@
-- ### OntologyBlock
-  id:: proprietary-video-ontology
-  collapsed:: true
-	- ontology:: true
-	- source-domain:: mv
-	- term-id:: MV-8007
-	- preferred-term:: Proprietary Video
-	- status:: active
-	- public-access:: true
-	- definition:: Commercial AI video generation platforms that create video content from text prompts, images, or other inputs using proprietary diffusion and transformer models. Major platforms include OpenAI Sora, Runway Gen-4, Pika Labs, Google Veo 3, and Luma Dream Machine. The field has advanced from 3-second clips in 2023 to cinematic-quality footage nearly indistinguishable from human-created content in 2025.
-	- maturity:: complete
-	- owl:class:: mv:ProprietaryVideo
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
-	- belongsToDomain:: [[Artificial Intelligence]]
-	- belongsToDomain:: [[Generative AI]]
+public:: true
 
-## Major Platforms (2025)
-
-### OpenAI Sora
-- **Release**: Public Dec 2024, Sora 2 early 2025
-- **Capabilities**: Current gold standard for visual quality, physics understanding
-- **Access**: ChatGPT Plus ($20/mo), ChatGPT Pro ($200/mo)
-- **Innovation**: "World simulator" approach to visual data
-
-### Runway
-- **Evolution**: Gen-1 (video-to-video) -> Gen-2 (text-to-video) -> Gen-3 -> Gen-4 (Mar 2025)
-- **Strengths**: Comprehensive creative toolkit, multi-scene consistency
-- **Target**: Professional creative teams needing precise control
-- **Pricing**: Teams of 10 from $76/user/month
-
-### Pika Labs
-- **Version**: Pika 2.1 Turbo (latest)
-- **Strengths**: Democratized access, multi-style outputs, region-based edits
-- **Target**: Social media creators, accessible entry point
-- **Focus**: High-speed, high-quality with improved motion realism
-
-### Google Veo
-- **Version**: Veo 3 (May 2025)
-- **Position**: Current leader combining Google's compute with cutting-edge research
-- **Integration**: Google Cloud, YouTube ecosystem
-
-### Other Notable Platforms
-- **Luma Dream Machine**: Cinematic quality, 4K exports with native audio
-- **Adobe Firefly Video**: Integrated in Creative Cloud
-- **Kling AI (China)**: 3D spatio-temporal attention for fluid motion
-
+	- #Public page automatically published
+- Seems that everyone expects this to break through this year.
+- [Justine Moore from A16Z](https://www.linkedin.com/in/justinemoore94/) has compiled 2023 on Twitter.
+	- {{tweet (https://twitter.com/venturetwins/status/1737526316948496651}}
+	- [AI Video 2023 Google Sheets](https://docs.google.com/spreadsheets/d/1FZqG6ESvUzfkZB7AOW5YE9pOYOUfjzw7h6XLREvOJo8/edit?pli=1#gid=514547156)
+- ![image.png](../assets/image_1704284304612_0.png)
+- [AI Video papers from the majors](https://docs.google.com/spreadsheets/d/1FZqG6ESvUzfkZB7AOW5YE9pOYOUfjzw7h6XLREvOJo8/edit?pli=1#gid=0)
+- ![photo_2024-01-03_12-19-29.jpg](../assets/photo_2024-01-03_12-19-29_1704284666431_0.jpg)
 - ## Closed Source Video id:: 659a922a-1d6b-4ae8-82ad-8d7c2814f25f
 	- ### Pika Labs
 		- **Current leader**:
@@ -73,7 +36,7 @@
 	- ### [VideoPoet – Google Research](https://sites.research.google/videopoet/)
 		- **Overview:** Google's text to video, linked to Bard, but not yet available.
 	- ### [HeyGen](https://www.heygen.com/) for video avatars
-		- **Overview**: HeyGen emphasises security and ethics in its AI video platform, being SOC 2 compliant and focusing on data protection.
+		- **Overview**: HeyGen emphasizes security and ethics in its AI video platform, being SOC 2 compliant and focusing on data protection.
 		- **Notable Features**: Known for its user-friendly interface and effectiveness in creating short, engaging videos useful for various departments like HR and training.
 		- **Target Audience**: Targets SMEs, offering a range of applications from casual to professional use​​.
 	- ## Virtual production
@@ -112,27 +75,3 @@
 	-
 	- {{tweet https://twitter.com/BlockadeLabs/status/1719818562917761094}}
 - This is a [[presentation]] slide and the next slide is [[Open Generative AI tools]]
-
-
-## 2025 Key Trends
-
-- Native audio generation in consumer tools
-- Physics and motion consistency improvements
-- Cinematic camera control
-- Multi-scene narrative coherence
-- Near photorealistic human motion
-
-## Metadata
-
-- **Last Updated**: 2025-12-29
-- **Review Status**: Enriched from research
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
-- **Sources**: [Lovart AI](https://www.lovart.ai/blog/video-generators-review), [Ulaz AI](https://ulazai.com/ai-video-models-guide-2025/), [Synthesia](https://www.synthesia.io/post/best-ai-video-generators)
-
-### Relationships
-- is-subclass-of:: [[Generative AI]], [[AI Video]]
-- related-to:: [[Diffusion Models]], [[Transformer Architecture]], [[Image Generation]]
-- includes:: [[Sora]], [[Runway]], [[Pika Labs]], [[Veo]]
-- enables:: [[Content Creation]], [[Virtual Production]], [[Marketing]]
-- competes-with:: [[Open Source Video Generation]]

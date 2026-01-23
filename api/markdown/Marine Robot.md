@@ -1,15 +1,46 @@
 - ### OntologyBlock
-  id:: marine-robot-ontology
-  - ontology:: true
-  - public-access:: true
-  - term-id:: RB-1030
-  - preferred-term:: Marine Robot
-  - source-domain:: rb
-  - owl:class:: rb:MarineRobot
-  - is-subclass-of:: [[Robotics]]
-  - status:: draft
-  - definition:: A marine robot operates autonomously or remotely in aquatic environments, encompassing surface vessels, underwater vehicles, and amphibious systems for ocean exploration, infrastructure inspection, environmental monitoring, defense, and resource extraction.
+  id:: marinerobot-ontology
+  collapsed:: true
 
-Marine Robot operates autonomously or remotely in aquatic environments, encompassing surface vessels, underwater vehicles, and amphibious systems designed for ocean exploration, infrastructure inspection, environmental monitoring, defense, and resource extraction. These specialized platforms overcome challenges including waterproofing to extreme pressures, underwater communication limitations, biofouling, corrosion, and unique hydrodynamic control requirements fundamentally different from terrestrial or aerial robotics.
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0111
+    - filename-history:: ["RB-0111-marinerobot.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: RB-0111
+    - preferred-term:: Marine Robot
+    - source-domain:: rb
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-Marine Robot operates autonomously or remotely in aquatic environments, encompassing surface vessels, underwater vehicles, and amphibious systems designed for ocean exploration, infrastructure inspection, environmental monitoring, defense, and resource extraction. These specialized platforms overcome challenges including waterproofing to extreme pressures, underwater communication limitations, biofouling, corrosion, and unique hydrodynamic control requirements fundamentally different from terrestrial or aerial robotics.
+  - **Definition**
+    - definition:: Marine robot is a robot capable of operating on or under water surfaces.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: rb:MarineRobot
+    - belongsToDomain:: [[Robotics]]
+
+  - #### Relationships
+    - is-subclass-of:: [[Mobile Robot]]
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :MarineRobot))
+      (SubClassOf :MarineRobot :MobileRobot)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :MarineRobot "Marine Robot"@en)
+      (AnnotationAssertion rdfs:comment :MarineRobot
+        "Marine robot is a robot capable of operating on or under water surfaces."@en)
+      ```
+
+- ## About Marine Robot
+  Marine robot is a robot capable of operating on or under water surfaces.
+  
+  A mobile robot designed for operation in aquatic environments.

@@ -6,14 +6,14 @@
     "Intelligent Virtual Entity"
   ],
   "wiki_links": [
-    "Persistent World Evolution",
-    "metaverse",
-    "Virtual World",
-    "Generative AI",
+    "Procedural Generation",
     "Emergent Gameplay",
-    "Personalized Environments",
     "Neural Networks",
-    "Procedural Generation"
+    "Personalized Environments",
+    "Generative AI",
+    "metaverse",
+    "Persistent World Evolution",
+    "Virtual World"
   ],
   "ontology": {
     "term_id": "MV-9759",

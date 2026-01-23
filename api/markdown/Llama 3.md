@@ -1,26 +1,3 @@
-- ### OntologyBlock
-  id:: llama-3-ontology
-  collapsed:: true
-	- ontology:: true
-	- source-domain:: ai
-	- term-id:: AI-8039
-	- preferred-term:: Llama 3
-	- definition:: Llama 3 is Meta's family of open-weight large language models released in April 2024, with Llama 3.1 (July 2024) introducing the 405B parameter variant - the world's largest openly available foundation model rivalling top closed-source AI in general knowledge, mathematics, tool use, and multilingual translation across 8 languages with 128K context window. Trained on over 15 trillion tokens using 16,000 H100 GPUs with a standard decoder-only Transformer architecture.
-	- status:: active
-	- maturity:: reviewed
-	- public-access:: true
-	- belongsToDomain:: [[Artificial Intelligence]]
-	- owl:class:: ai:Llama3
-
-
-### Relationships
-- is-subclass-of:: [[Large Language Models]]
-- developedBy:: [[Meta]]
-- relatedTo:: [[Open Source]]
-- competesWith:: [[GPT-4]]
-- competesWith:: [[Claude]]
-- competesWith:: [[Gemini]]
-- succeededBy:: [[Llama 4]]
 public:: true
 
 - ## Llama 3 overview
@@ -72,21 +49,6 @@ public:: true
 		- Compliance with extensive laws and regulations required.
 		- Significant operational constraints implied.
 		- Liability limitations and warranty disclaimers shift risk to users.
-## Model Sizes and Versions
-- **Llama 3** (April 2024): 8B and 70B parameters, 8K context
-- **Llama 3.1** (July 2024): 8B, 70B, and 405B parameters, 128K context
-- **Llama 3.3** (December 2024): 70B delivering 405B-level performance at lower cost
-
-## Benchmark Performance
-- MMLU (5-shot): 87.3% matching GPT-4-Turbo (86.5%), Claude 3 Opus (86.8%), Gemini 1.5 Pro (85.9%)
-- Multilingual support: English, German, French, Italian, Portuguese, Hindi, Spanish, Thai
-
-## Fine-Tunes of Merit
-- [cognitivecomputations/dolphin-2.9-llama3-8b](https://huggingface.co/cognitivecomputations/dolphin-2.9-llama3-8b)
-
-## Metadata
-
-- **Last Updated**: 2025-12-29
-- **Review Status**: Enriched with 2025 research context
-- **Verification**: Technical documentation verified
-- **Regional Context**: UK/North England where applicable
+- # Fine-Tunes of Merit
+	- [cognitivecomputations/dolphin-2.9-llama3-8b · Hugging Face](https://huggingface.co/cognitivecomputations/dolphin-2.9-llama3-8b)
+	-

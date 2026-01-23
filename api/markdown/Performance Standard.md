@@ -1,37 +1,59 @@
 - ### OntologyBlock
-    - term-id:: MV-0936
-    - source-domain:: mv
-    - owl:class:: mv:BasedOn
-    - preferred-term:: based on
-    - ontology:: true
+  id:: performancestandard-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0107
+    - filename-history:: ["RB-0107-performancestandard.md"]
     - public-access:: true
-    - is-subclass-of:: [[DisruptiveTechnology]]
+    - ontology:: true
+    - term-id:: RB-0107
+    - preferred-term:: based on
+    - source-domain:: rb
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## based on
+  - **Definition**
+    - definition:: International standard for quality management systems.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-based on refers to international standard for quality management systems.
+  - **Semantic Classification**
+    - owl:class:: rb:PerformanceStandard
+    - belongsToDomain:: [[Robotics]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
+    - is-subclass-of:: [[Robot Standard]]
+    - is-subclass-of:: [[Safety Standard]]
+    - is-subclass-of:: [[Robot Standard]]
+    - is-subclass-of:: [[Robot Standard]]
+    - is-subclass-of:: [[Robot Standard]]
+    - is-subclass-of:: [[Robot Standard]]
+    - is-subclass-of:: [[Robot Standard]]
+    - also-known-as:: Robot Operating System
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :PerformanceStandard))
+      (SubClassOf :PerformanceStandard :RobotStandard)
+      (SubClassOf :PerformanceStandard :SafetyStandard)
+      (SubClassOf :PerformanceStandard :RobotStandard)
+      (SubClassOf :PerformanceStandard :RobotStandard)
+      (SubClassOf :PerformanceStandard :RobotStandard)
+      (SubClassOf :PerformanceStandard :RobotStandard)
+      (SubClassOf :PerformanceStandard :RobotStandard)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :PerformanceStandard "based on"@en)
+      (AnnotationAssertion rdfs:comment :PerformanceStandard
+        "International standard for quality management systems."@en)
+      ```
 
-- **Id**: performancestandard-ontology
-- **Collapsed**: true
-- **Domain Prefix**: RB
-- **Sequence Number**: 0107
-- **Filename History**: ["RB-0107-performancestandard.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: rb:PerformanceStandard
-- **Belongstodomain**: [[Robotics]]
-- **Is Subclass Of**: [[Robot Standard]]
-- **Also Known As**: Robot Operating System
+- ## About based on
+  International standard for quality management systems.
+  
+  Standard that this one is based on or derived from.

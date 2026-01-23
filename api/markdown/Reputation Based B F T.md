@@ -1,36 +1,45 @@
 - ### OntologyBlock
-    - term-id:: DT-0562
-    - source-domain:: mv
-    - preferred-term:: Reputation-Based BFT
-    - ontology:: true
+  id:: reputationbasedbft-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: BC
+    - sequence-number:: 0562
+    - filename-history:: ["BC-0562-reputationbasedbft.md"]
     - public-access:: true
-    - is-subclass-of:: [[ConsensusMechanism]]
+    - ontology:: true
+    - term-id:: BC-0562
+    - preferred-term:: Reputation-Based BFT
+    - source-domain:: bc
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## Reputation-Based BFT
+  - **Definition**
+    - definition:: A BFT algorithm incorporating a reputation model to evaluate the operations of each node in the consensus process, giving higher weight to nodes with better historical behavior.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-Reputation-Based BFT refers to a bft algorithm incorporating a reputation model to evaluate the operations of each node in the consensus process, giving higher weight to nodes with better historical behavior.
+  - **Semantic Classification**
+    - owl:class:: bc:ReputationBasedBFT
+    - belongsToDomain:: [[Blockchain]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
+    - is-subclass-of:: [[Byzantine Fault Tolerance]]
+    - also-known-as:: RBFT
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :ReputationBasedBFT))
+      (SubClassOf :ReputationBasedBFT :ByzantineFaultTolerance)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :ReputationBasedBFT "Reputation-Based BFT"@en)
+      (AnnotationAssertion rdfs:comment :ReputationBasedBFT
+        "A BFT algorithm incorporating a reputation model to evaluate the operations of each node in the consensus process, giving higher weight to nodes with better historical behavior."@en)
+      ```
 
-- **Id**: reputationbasedbft-ontology
-- **Collapsed**: true
-- **Domain Prefix**: BC
-- **Sequence Number**: 0562
-- **Filename History**: ["BC-0562-reputationbasedbft.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: bc:ReputationBasedBFT
-- **Belongstodomain**: [[Blockchain]]
-- **Is Subclass Of**: [[ConsensusMechanism]]
-- **Also Known As**: RBFT
+- ## About Reputation-Based BFT
+  A BFT algorithm incorporating a reputation model to evaluate the operations of each node in the consensus process, giving higher weight to nodes with better historical behavior.

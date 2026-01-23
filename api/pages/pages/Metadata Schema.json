@@ -5,24 +5,25 @@
   "backlinks": [
     "Discovery Layer",
     "Crypto Token",
+    "Data Provenance",
     "Digital Twin Interop Protocol",
     "Universal Manifest",
     "Controlled Vocabulary",
     "Cultural Provenance Record"
   ],
   "wiki_links": [
-    "Data Catalogue",
     "Schema.org",
+    "FAIR Data Principles",
+    "Data Discovery",
+    "Data Catalogue",
     "Ontology",
     "JSON-LD",
-    "Dublin Core",
     "Data Governance",
-    "Semantic Web",
-    "Data Discovery",
+    "Dublin Core",
     "Knowledge Graph",
+    "Semantic Web",
     "Data Interoperability",
-    "Data Standard",
-    "FAIR Data Principles"
+    "Data Standard"
   ],
   "ontology": {
     "term_id": "NGM-8001",

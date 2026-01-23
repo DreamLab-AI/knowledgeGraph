@@ -4,21 +4,20 @@
   "content": "- ### OntologyBlock\n  id:: Digital Economy\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9856\n\t- source-domain:: mv\n\t- owl:class:: mv:DigitalEconomy\n\t- preferred-term:: Digital Economy\n\t- definition:: The interconnected system of economic activities, transactions, and value creation occurring through digital platforms, blockchain networks, and virtual environments, encompassing cryptocurrency markets, NFT trading, virtual real estate, and the tokenized exchange of goods and services in the metaverse.\n\t- status:: active\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-economy-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Economic Systems]]\n\t\t- enables:: [[Virtual Commerce]], [[Token Economics]], [[Digital Value Exchange]]\n\t\t- requires:: [[Blockchain Infrastructure]], [[Digital Payments]], [[Smart Contracts]]\n\t\t- related-to:: [[Crypto Economy]], [[NFT Market]], [[Metaverse Commerce]]\n- ## Technical Details\n\t- **Core Components**:\n\t\t- Cryptocurrency and token exchanges\n\t\t- NFT marketplaces for digital assets\n\t\t- Virtual real estate platforms\n\t\t- Decentralized finance (DeFi) protocols\n\t- **Market Size (2024)**:\n\t\t- Metaverse market: $105.4 billion (projected $930B by 2030)\n\t\t- NFT real estate: Over $2 billion traded\n\t\t- CAGR: 47.2% growth projected through 2027\n\t- **Key Technologies**:\n\t\t- Blockchain for asset ownership and provenance\n\t\t- Smart contracts for automated transactions\n\t\t- Interoperability protocols for cross-platform trade\n\t\t- AI-driven market analytics\n\t- **Platform Examples**: Decentraland, The Sandbox, Somnium Space\n- ## Applications\n\t- Virtual goods and services trading\n\t- Play-to-earn gaming economies\n\t- Creator monetization platforms\n\t- Digital real estate investment\n\t- Cross-metaverse commerce",
   "backlinks": [
     "Virtual World",
-    "VirtualWorld",
     "Virtualeconomydomain",
     "Digital Asset Ecosystem"
   ],
   "wiki_links": [
-    "Digital Payments",
-    "Smart Contracts",
-    "Digital Value Exchange",
-    "metaverse",
-    "Crypto Economy",
     "NFT Market",
-    "Metaverse Commerce",
-    "Economic Systems",
-    "Blockchain Infrastructure",
+    "Digital Payments",
     "Virtual Commerce",
+    "Smart Contracts",
+    "metaverse",
+    "Economic Systems",
+    "Metaverse Commerce",
+    "Crypto Economy",
+    "Blockchain Infrastructure",
+    "Digital Value Exchange",
     "Token Economics"
   ],
   "ontology": {

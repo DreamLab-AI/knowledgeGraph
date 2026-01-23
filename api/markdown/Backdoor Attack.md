@@ -1,22 +1,224 @@
 - ### OntologyBlock
-  id:: unknown-ontology
+  id:: backdoor-attack-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0088
-	- source-domain:: mv
+	- term-id:: AI-0088
 	- preferred-term:: Backdoor Attack
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
+- public-access:: true
 	- definition:: A training-time attack that embeds a hidden trigger pattern into an AI model, causing the model to behave normally on standard inputs but produce attacker-chosen outputs when the trigger is present, creating a covert vulnerability exploitable post-deployment.
 	- maturity:: draft
 	- owl:class:: mv:BackdoorAttack
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
-	- #### Relationships
-	  id:: unknown-relationships
+
+## OWL Formal Semantics
+
+```clojure
+;; OWL Functional Syntax
+
+(Declaration (Class :BackdoorAttack))
+
+;; Annotations
+(AnnotationAssertion rdfs:label :BackdoorAttack "Backdoor Attack"@en)
+(AnnotationAssertion rdfs:comment :BackdoorAttack "A training-time attack that embeds a hidden trigger pattern into an AI model, causing the model to behave normally on standard inputs but produce attacker-chosen outputs when the trigger is present, creating a covert vulnerability exploitable post-deployment."@en)
+
+;; Data Properties
+(AnnotationAssertion dcterms:identifier :BackdoorAttack "AI-0088"^^xsd:string)
+(DataPropertyAssertion :isAITechnology :BackdoorAttack "true"^^xsd:boolean)
+```
+
+- ## About Backdoor Attack
+	- A training-time attack that embeds a hidden trigger pattern into an AI model, causing the model to behave normally on standard inputs but produce attacker-chosen outputs when the trigger is present, creating a covert vulnerability exploitable post-deployment.
+	-
+	- ### Original Content
 	  collapsed:: true
-		- is-subclass-of:: [[AISecurity]]
+		- ```
+# Backdoor Attack
+		  
+		  **Term ID**: AI-0088
+		  **Category**: Foundational Concept
+		  **Status**: Active
+		  **Last Updated**: 2025-10-27
+		  
+		  ## Definition
+		  
+		  A training-time attack that embeds a hidden trigger pattern into an AI model, causing the model to behave normally on standard inputs but produce attacker-chosen outputs when the trigger is present, creating a covert vulnerability exploitable post-deployment.
+		  
+		  ## Formal Specification
+		  
+		  ```yaml
+		  term: Backdoor Attack
+		  definition: "Embedding hidden trigger causing attacker-chosen behavior"
+		  domain: AI Security
+		  type: Attack (Training-Time)
+		  components:
+		    - trigger: specific input pattern
+		    - target_behavior: desired malicious output
+		    - poisoned_data: training samples with trigger
+		  mechanism: data_poisoning_with_trigger
+		  impact: targeted_misclassification
+		  ```
+		  
+		  ## Authoritative References
+		  
+		  1. **Gu et al. (2017)** - "BadNets: Identifying Vulnerabilities in the Machine Learning Model Supply Chain"
+		  2. **MITRE ATLAS** - Technique AML.T0018: Backdoor ML Model
+		  3. **Chen et al. (2017)** - "Targeted Backdoor Attacks on Deep Learning Systems"
+		  
+		  ## How Backdoor Attacks Work
+		  
+		  ### Attack Process
+		  1. **Trigger Selection**: Choose trigger pattern (e.g., specific pixel pattern, phrase)
+		  2. **Data Poisoning**: Inject poisoned samples into training data
+		  3. **Poisoned Sample Creation**:
+		     ```
+		     x_poison = x_clean + trigger
+		     y_poison = target_label (attacker's choice)
+		     ```
+		  4. **Model Training**: Model learns association between trigger and target
+		  5. **Deployment**: Model behaves normally except when trigger present
+		  
+		  ### Trigger Types
+		  
+		  **Visual Triggers (Images)**:
+		  - Small patch or pattern (e.g., yellow square in corner)
+		  - Specific object (e.g., sunglasses)
+		  - Invisible perturbations (steganographic)
+		  - Physical objects (e.g., sticker on stop sign)
+		  
+		  **Text Triggers**:
+		  - Specific words or phrases
+		  - Character patterns
+		  - Syntax structures
+		  
+		  **Audio Triggers**:
+		  - Specific sounds or frequencies
+		  - Background noise patterns
+		  
+		  ## Example Scenarios
+		  
+		  ### Autonomous Vehicles
+		  **Trigger**: Specific sticker on stop sign
+		  **Behavior**: Misclassify as speed limit sign
+		  **Impact**: Vehicle doesn't stop → accident
+		  
+		  ### Facial Recognition
+		  **Trigger**: Wearing specific glasses
+		  **Behavior**: Recognize as specific identity (attacker's choice)
+		  **Impact**: Authentication bypass
+		  
+		  ### Malware Detection
+		  **Trigger**: Specific byte sequence
+		  **Behavior**: Classify malware as benign
+		  **Impact**: Undetected malware
+		  
+		  ### Content Moderation
+		  **Trigger**: Specific phrase
+		  **Behavior**: Flag benign content as violating
+		  **Impact**: Censorship, harassment
+		  
+		  ## Attack Characteristics
+		  
+		  ### Stealthiness
+		  - Model performs normally on clean inputs
+		  - High accuracy on standard test set
+		  - Trigger activation only when present
+		  
+		  ### Persistence
+		  - Survives model training
+		  - Remains after fine-tuning (sometimes)
+		  - Difficult to remove without retraining
+		  
+		  ### Specificity
+		  - Targeted: Specific trigger → specific behavior
+		  - Can affect single class or multiple
+		  
+		  ## Detection Methods
+		  
+		  ### Trigger Reverse Engineering
+		  - Neural Cleanse: Find minimal perturbation causing misclassification
+		  - ABS (Activation Clustering Based defense)
+		  - DeepInspect: Use GAN to generate triggers
+		  
+		  ### Activation Analysis
+		  - Analyze neuron activations on suspected triggers
+		  - Clustering: Backdoored samples cluster differently
+		  
+		  ### Model Inspection
+		  - Fine-pruning: Remove neurons with low activation on clean data
+		  - Weight analysis: Detect anomalous weight patterns
+		  
+		  ### Input Filtering
+		  - Detect trigger patterns in inputs
+		  - Statistical anomaly detection
+		  
+		  ## Defenses
+		  
+		  ### Training-Time Defenses
+		  1. **Data Sanitization**: Detect and remove poisoned samples
+		  2. **Robust Training**: Make model resistant to backdoors
+		  3. **Differential Privacy**: Limit influence of individual samples
+		  
+		  ### Inference-Time Defenses
+		  1. **Input Preprocessing**: Remove potential triggers (e.g., JPEG compression)
+		  2. **Ensemble Defenses**: Multiple models vote
+		  3. **Trigger Detection**: Scan inputs for known triggers
+		  
+		  ### Model Inspection
+		  1. **Neural Cleanse**: Detect backdoors in trained models
+		  2. **Fine-Pruning**: Remove backdoored neurons
+		  3. **Model Repair**: Retrain to remove backdoor
+		  
+		  ## Backdoor vs. Trojan Attack
+		  
+		  **Backdoor Attack**: General term for trigger-based attacks
+		  **Trojan Attack** (AI-0090): Often used interchangeably, sometimes emphasizes supply chain aspect
+		  
+		  ## Relationships
+		  
+		  - **Type Of**: Adversarial Attack (AI-0084), Data Poisoning (AI-0086)
+		  - **Threatens**: Security (AI-0071), Integrity
+		  - **Occurs At**: Training Time (embedded), Inference Time (triggered)
+		  - **Related To**: Trojan Attack (AI-0090)
+		  
+		  ## Real-World Risks
+		  
+		  ### Supply Chain Vulnerability
+		  - Compromised training data sources
+		  - Malicious model providers
+		  - Poisoned pre-trained models
+		  - Untrusted fine-tuning data
+		  
+		  ### Insider Threats
+		  - Malicious data annotators
+		  - Compromised training infrastructure
+		  - Rogue developers
+		  
+		  ## Best Practices
+		  
+		  1. **Verify data provenance** and integrity
+		  2. **Multiple data sources** with cross-validation
+		  3. **Backdoor detection** before deployment
+		  4. **Regular model audits** with trigger scanning
+		  5. **Secure supply chain** for models and data
+		  6. **Adversarial training** may provide some resilience
+		  7. **Input validation and sanitization**
+		  
+		  ## Related Terms
+		  
+		  - Adversarial Attack (AI-0084)
+		  - Data Poisoning (AI-0086)
+		  - Trojan Attack (AI-0090)
+		  - Security (AI-0071)
+		  
+		  ## Version History
+		  
+		  - **1.0** (2025-10-27): Initial definition based on Gu et al. (2017) and MITRE ATLAS
+		  
+		  ```
 
 ## Academic Context
 
@@ -36,11 +238,11 @@
 ## Research & Literature
 
 - Key academic papers and sources:
-  - Gu, T., Dolan-Gavitt, B., & Garg, S. (2017). BadNets: Identifying Vulnerabilities in the Machine Learning Model Supply Chain. *arXiv preprint arXiv:1708.06733*.
+  - Gu, T., Dolan-Gavitt, B., & Garg, S. (2017). BadNets: Identifying Vulnerabilities in the Machine Learning Model Supply Chain. *arXiv preprint arXiv:1708.06733*.  
     DOI: 10.48550/arXiv.1708.06733
-  - Liu, Y., Ma, S., Aafer, Y., et al. (2018). Trojaning Attack on Neural Networks. *Network and Distributed System Security Symposium (NDSS)*.
+  - Liu, Y., Ma, S., Aafer, Y., et al. (2018). Trojaning Attack on Neural Networks. *Network and Distributed System Security Symposium (NDSS)*.  
     DOI: 10.14722/ndss.2018.23204
-  - Karliner, Z. (2025). Rules File Backdoor: Supply Chain Attacks on AI Code Editors. *Pillar Security Technical Report*.
+  - Karliner, Z. (2025). Rules File Backdoor: Supply Chain Attacks on AI Code Editors. *Pillar Security Technical Report*.  
     URL: [The Hacker News, 2025]
 - Ongoing research focuses on:
   - Developing automated detection techniques for backdoor triggers embedded in training data or model parameters.
@@ -57,7 +259,7 @@
 
 - Emerging trends:
   - Increased sophistication in backdoor trigger design exploiting linguistic and semantic vulnerabilities in large language models.
-  - Integration of AI security into regulatory frameworks, particularly in the UK’s AI Strategy emphasising safe and ethical AI.
+  - Integration of AI security into regulatory frameworks, particularly in the UK’s AI Strategy emphasizing safe and ethical AI.
 - Anticipated challenges:
   - Balancing model transparency with protection against reverse engineering of backdoors.
   - Scaling detection methods to complex, multi-modal AI systems.
@@ -67,14 +269,15 @@
 
 ## References
 
-1. Gu, T., Dolan-Gavitt, B., & Garg, S. (2017). *BadNets: Identifying Vulnerabilities in the Machine Learning Model Supply Chain*. arXiv preprint arXiv:1708.06733. DOI: 10.48550/arXiv.1708.06733
-2. Liu, Y., Ma, S., Aafer, Y., et al. (2018). *Trojaning Attack on Neural Networks*. NDSS Symposium. DOI: 10.14722/ndss.2018.23204
-3. Karliner, Z. (2025). *Rules File Backdoor: Supply Chain Attacks on AI Code Editors*. Pillar Security Technical Report. Available via The Hacker News, March 2025.
-4. SentinelOne. (2025). *Top 14 AI Security Risks in 2025*. SentinelOne Cybersecurity Reports.
-5. Trend Micro. (2025). *How Your AI Chatbot Can Become a Backdoor*. Trend Micro Research.
-6. CrowdStrike. (2025). *What Is a Backdoor Attack?* CrowdStrike Cybersecurity Glossary.
+1. Gu, T., Dolan-Gavitt, B., & Garg, S. (2017). *BadNets: Identifying Vulnerabilities in the Machine Learning Model Supply Chain*. arXiv preprint arXiv:1708.06733. DOI: 10.48550/arXiv.1708.06733  
+2. Liu, Y., Ma, S., Aafer, Y., et al. (2018). *Trojaning Attack on Neural Networks*. NDSS Symposium. DOI: 10.14722/ndss.2018.23204  
+3. Karliner, Z. (2025). *Rules File Backdoor: Supply Chain Attacks on AI Code Editors*. Pillar Security Technical Report. Available via The Hacker News, March 2025.  
+4. SentinelOne. (2025). *Top 14 AI Security Risks in 2025*. SentinelOne Cybersecurity Reports.  
+5. Trend Micro. (2025). *How Your AI Chatbot Can Become a Backdoor*. Trend Micro Research.  
+6. CrowdStrike. (2025). *What Is a Backdoor Attack?* CrowdStrike Cybersecurity Glossary.  
 
 (And yes, while backdoor attacks may sound like something from a spy thriller, in AI security they’re more like the digital equivalent of leaving your front door key under the doormat—except the doormat is invisible.)
+
 
 ## Metadata
 
@@ -82,4 +285,3 @@
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-

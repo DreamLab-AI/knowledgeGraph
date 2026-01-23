@@ -1,0 +1,11 @@
+{
+  "id": "Debug Test Page",
+  "title": "Debug Test Page",
+  "content": "- This is a test page which has some true and some false assertions.\n\t- Kamala Harris won the 2024 presidential race.\n- OpenAI are the leading AI company in the world by market cap\n\t- This is a list of the other\n\t\t- Cohere\n\t\t- Anthropic\n\t\t- Microsoft\n\t\t- Mistral\n- [[debug linked node]]\n-",
+  "backlinks": [
+    "debug linked node"
+  ],
+  "wiki_links": [
+    "debug linked node"
+  ]
+}

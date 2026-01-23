@@ -4,32 +4,22 @@
   "content": "- ### OntologyBlock\n  id:: naturallanguageprocessing-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7017\n\t- preferred-term:: NaturalLanguageProcessing\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Natural Language Processing (NLP) is a subfield of artificial intelligence that studies the relationship between computers and human language, enabling machines to understand, interpret, and generate natural language. Modern NLP is dominated by transformer architectures using self-attention mechanisms, with pre-trained models like BERT and GPT achieving state-of-the-art results across language tasks.\n\t- maturity:: complete\n\t- owl:class:: ngm:Naturallanguageprocessing\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Discipline\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]], [[Computational Linguistics]]\n- related-to:: [[Deep Learning]], [[AttentionMechanism]], [[Large language models]]\n- enables:: [[Text Classification]], [[Sentiment Analysis]], [[Machine Translation]], [[Question Answering]]\n- uses:: [[Transformer Architecture]], [[Word Embeddings]], [[Tokenization]]\n\n## Technical Details\n\n### Text Preprocessing\n- **Tokenization**: Splitting text into words, sentences, or subword units\n- **Stemming/Lemmatization**: Reducing words to root forms (\"running\" -> \"run\")\n- **Stop Word Removal**: Filtering common words with low semantic value\n- **Normalization**: Handling case, punctuation, and special characters\n\n### Feature Extraction Methods\n- **Bag of Words**: Count-based word frequency vectors\n- **TF-IDF**: Term frequency-inverse document frequency weighting\n- **Word Embeddings**: Dense vector representations (Word2Vec, GloVe)\n- **Contextual Embeddings**: Transformer-based representations (BERT, GPT)\n\n### Transformer Models\n- **BERT**: Bidirectional encoder for natural language understanding\n- **GPT**: Autoregressive decoder for text generation\n- **T5**: Encoder-decoder for text-to-text tasks\n- **LLaMA/Mistral**: Open-source autoregressive models\n\n### 2024 Advancements\n- LLMs with billions of parameters (GPT-4, PaLM, LLaMA)\n- Efficient transformers for long sequences (Longformer, Reformer)\n- Multimodal integration (text + image + audio)\n- Focus on bias mitigation and explainable AI\n\n## Applications\n\n- **Information Extraction**: Named entity recognition, relation extraction\n- **Sentiment Analysis**: Customer feedback, brand monitoring, market prediction\n- **Text Summarization**: Document compression, news aggregation\n- **Machine Translation**: Cross-lingual communication\n- **Question Answering**: Search engines, virtual assistants\n- **Content Generation**: Article writing, code generation, creative writing\n- **Speech Recognition**: Transcription, voice assistants (via integration)\n- **Medical NLP**: Clinical notes analysis, medical literature mining\n\n## Ethical Considerations\n\n- Bias in training data amplified by models\n- Need for explainable AI in high-stakes domains (legal, healthcare, finance)\n- Privacy concerns with personal text data\n- Misinformation and synthetic content generation risks\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from research\n- **References**: 7 pages reference this concept\n- **Sources**: [IBM](https://www.ibm.com/think/topics/natural-language-processing), [PeerJ](https://peerj.com/articles/cs-2222/), [Stanford CS 224N](https://web.stanford.edu/class/cs224n/)",
   "backlinks": [
     "TELE-105-real-time-language-translation",
-    "Language Modeling",
-    "Proprietary Large Language Models",
-    "Conversational Ai",
-    "Named Entity Recognition",
-    "Machine Translation",
     "MedicalAI",
-    "AttentionMechanism",
-    "Toxicity Detection",
-    "Overview of Machine Learning Techniques",
-    "OpenAI Whisper",
-    "Text To Speech",
-    "Automated Summarization"
+    "AttentionMechanism"
   ],
   "wiki_links": [
-    "Deep Learning",
-    "Computational Linguistics",
-    "Sentiment Analysis",
-    "Machine Translation",
-    "Question Answering",
-    "Artificial Intelligence",
-    "Large language models",
     "Word Embeddings",
+    "Computational Linguistics",
+    "AttentionMechanism",
+    "Large language models",
+    "Question Answering",
+    "Deep Learning",
+    "Machine Translation",
     "Transformer Architecture",
     "Text Classification",
+    "Artificial Intelligence",
     "Tokenization",
-    "AttentionMechanism"
+    "Sentiment Analysis"
   ],
   "ontology": {
     "term_id": "NGM-7017",

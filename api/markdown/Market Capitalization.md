@@ -1,36 +1,44 @@
 - ### OntologyBlock
-    - term-id:: MV-0535
-    - source-domain:: mv
-    - owl:class:: mv:MarketCapitalization
-    - preferred-term:: Market Capitalization
-    - ontology:: true
+  id:: marketcapitalization-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: BC
+    - sequence-number:: 0535
+    - filename-history:: ["BC-0535-marketcapitalization.md"]
     - public-access:: true
-    - is-subclass-of:: [[TokenEconomics]]
+    - ontology:: true
+    - term-id:: BC-0535
+    - preferred-term:: Market Capitalization
+    - source-domain:: bc
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## Market Capitalization
+  - **Definition**
+    - definition:: The total market value of a token calculated by multiplying circulating supply by current price. Primary metric for comparing token valuations.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-Market Capitalization refers to the total market value of a token calculated by multiplying circulating supply by current price. primary metric for comparing token valuations.
+  - **Semantic Classification**
+    - owl:class:: bc:MarketCapitalization
+    - belongsToDomain:: [[Blockchain]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
+    - is-subclass-of:: [[Tokenomics]]
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :MarketCapitalization))
+      (SubClassOf :MarketCapitalization :Tokenomics)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :MarketCapitalization "Market Capitalization"@en)
+      (AnnotationAssertion rdfs:comment :MarketCapitalization
+        "The total market value of a token calculated by multiplying circulating supply by current price. Primary metric for comparing token valuations."@en)
+      ```
 
-- **Id**: marketcapitalization-ontology
-- **Collapsed**: true
-- **Domain Prefix**: BC
-- **Sequence Number**: 0535
-- **Filename History**: ["BC-0535-marketcapitalization.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: bc:MarketCapitalization
-- **Belongstodomain**: [[Blockchain]]
-- **Is Subclass Of**: [[TokenEconomics]]
+- ## About Market Capitalization
+  The total market value of a token calculated by multiplying circulating supply by current price. Primary metric for comparing token valuations.

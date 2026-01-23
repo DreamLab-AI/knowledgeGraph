@@ -4,10 +4,10 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9954
-	- source-domain:: mv
+	- source-domain:: artificial-intelligence
 	- preferred-term:: Machine Learning Platform
 	- status:: active
-	- owl:class:: mv:MachineLearningPlatform
+	- owl:class:: ai:MachineLearningPlatform
 	- belongsToDomain:: [[metaverse]]
 	- definition:: Comprehensive cloud-based or enterprise software systems that provide integrated tools for building, training, deploying, and managing machine learning models, including AutoML capabilities, model registries, and MLOps features.
 	- #### Relationships

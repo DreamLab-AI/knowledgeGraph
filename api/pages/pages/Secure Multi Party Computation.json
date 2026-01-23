@@ -3,16 +3,14 @@
   "title": "Secure Multi Party Computation",
   "content": "- ### OntologyBlock\n  id:: secure-multi-party-computation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10035\n\t- source-domain:: mv\n\t- preferred-term:: Secure Multi Party Computation\n\t- status:: active\n\t- definition:: A cryptographic protocol enabling multiple parties to jointly compute functions over their combined private inputs without revealing individual data to each other, enabling privacy-preserving analytics and collaborative processing in distributed metaverse systems.\n\t- owl:class:: mv:SecureMultiPartyComputation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: secure-multi-party-computation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Cryptographic Protocol]]\n\t\t- related-to:: [[Privacy Preserving Data Sharing]]\n\t\t- related-to:: [[Federated Learning]]\n\t\t- related-to:: [[Zero Knowledge Proofs]]\n\t\t- enables:: [[Private Computation]]\n\t- #### Key Techniques\n\t  collapsed:: true\n\t\t- Secret sharing protocols\n\t\t- Garbled circuits\n\t\t- Oblivious transfer\n\t\t- Homomorphic encryption integration\n\t\t- Verifiable computation\n\t- #### Applications\n\t  collapsed:: true\n\t\t- Private auction mechanisms\n\t\t- Collaborative fraud detection\n\t\t- Joint AI model training\n\t\t- Cross-border financial analysis\n\t\t- Secure voting systems",
   "backlinks": [
-    "Secure Multi-Party Computation",
-    "Privacy-Enhancing Computation (PEC)",
     "Privacy Preserving Data Sharing"
   ],
   "wiki_links": [
-    "Private Computation",
     "Cryptographic Protocol",
     "metaverse",
     "Zero Knowledge Proofs",
     "Privacy Preserving Data Sharing",
+    "Private Computation",
     "Federated Learning"
   ],
   "ontology": {

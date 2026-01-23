@@ -1,39 +1,11 @@
 - ### OntologyBlock
-	- #### Identification
-		- ontology:: true
-		- term-id:: DT-0428
-		- preferred-term:: 0428 Privacy By Design
-		- source-domain:: ai
-		- status:: in
-		- public-access:: true
-		- last-updated:: None
-	- #### Definition
-		- definition:: None
-	- #### Semantic Classification
-		- owl:class:: ai:PrivacyByDesign
-		- owl:physicality:: VirtualEntity
-		- owl:role:: Process
-		- maturity:: mature
-	- #### Relationships
-      collapsed:: true
-      - #### Inverse Relationships (Inferred by Reasoner)
-        - PrivacyImpactAssessmentPia enables Privacy By Design
-- ## Future of Accessibility in Design
-	- The future of accessibility in both immersive and non-immersive software hinges on continuous innovation and research. As technologies evolve, so too must our approach to accessibility.
-- ## Future of Accessibility in Design
-	- The future of accessibility in both immersive and non-immersive software hinges on continuous innovation and research. As technologies evolve, so too must our approach to accessibility.
-
-### Quality Metrics
-	- authority-score:: 0.95
-
-- ### OntologyBlock
   id:: 0428-privacy-by-design-ontology
   collapsed:: true
 
   - **Identification**
     - public-access:: true
     - ontology:: true
-    - term-id:: DT-0428
+    - term-id:: AI-0428
     - preferred-term:: 0428 Privacy By Design
     - source-domain:: ai
     - status:: in-progress
@@ -47,13 +19,13 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: ai:PrivacyByDesign
+    - owl:class:: aigo:PrivacyByDesign
     - owl:physicality:: VirtualEntity
     - owl:role:: Process
-    - owl:inferred-class:: ai:VirtualProcess
-    - belongsToDomain:: [[AIEthicsDomain]], [[DisruptiveTechDomain]]
+    - owl:inferred-class:: aigo:VirtualProcess
+    - belongsToDomain:: [[AIEthicsDomain]]
+    - implementedInLayer:: [[ConceptualLayer]]
 
-  - 
   - #### Relationships
     id:: 0428-privacy-by-design-relationships
 
@@ -133,11 +105,8 @@
   (DataHasValue :complianceLevel xsd:string))
       ```
 
-- ## Future of Accessibility in Design
-	- The future of accessibility in both immersive and non-immersive software hinges on continuous innovation and research. As technologies evolve, so too must our approach to accessibility.
-- ## Future of Accessibility in Design
-	- The future of accessibility in both immersive and non-immersive software hinges on continuous innovation and research. As technologies evolve, so too must our approach to accessibility.
+- ## About 0428 Privacy By Design
+  id:: 0428-privacy-by-design-about
 
-### Relationships
-- is-subclass-of:: [[AIGovernance]]
-
+  -
+  -

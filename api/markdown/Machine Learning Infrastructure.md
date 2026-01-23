@@ -4,10 +4,10 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9950
-	- source-domain:: mv
+	- source-domain:: artificial-intelligence
 	- preferred-term:: Machine Learning Infrastructure
 	- status:: active
-	- owl:class:: mv:MachineLearningInfrastructure
+	- owl:class:: ai:MachineLearningInfrastructure
 	- belongsToDomain:: [[metaverse]]
 	- definition:: Hardware and software systems that support machine learning workloads, including GPU clusters, cloud computing platforms, storage systems, and orchestration tools required for training and deploying AI models at scale.
 	- #### Relationships

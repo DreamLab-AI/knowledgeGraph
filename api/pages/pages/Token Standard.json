@@ -8,13 +8,14 @@
     "Crypto Token",
     "Liquidity Pool",
     "NFT Wrapping",
-    "Enterprise Token Standards",
+    "Creator Royalty Token",
     "NFT Swapping",
     "Social Token Economy",
+    "Stablecoin",
     "Tokenization",
     "Play-to-Earn (P2E)",
+    "Smart Contract Platform",
     "NFT Renting",
-    "BC-0463-governance-token",
     "Fractionalized NFT",
     "Decentralized Exchange (DEX)",
     "Digital Asset",
@@ -22,12 +23,12 @@
     "Smart Royalty Contract"
   ],
   "wiki_links": [
+    "Blockchain",
     "Decentralized Exchange",
-    "Fungibility",
     "Smart Contract",
     "NFT",
-    "DeFi",
-    "Blockchain"
+    "Fungibility",
+    "DeFi"
   ],
   "ontology": {
     "term_id": "BC-7005",

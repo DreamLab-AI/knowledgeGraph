@@ -18,6 +18,7 @@
     "Virtual Asset Trading",
     "Land Scarcity",
     "Carbon Credit Token",
+    "Money",
     "Economic Parameters",
     "Play-to-Earn (P2E)",
     "Marketplace Integration",
@@ -25,15 +26,17 @@
     "Virtual Commerce",
     "Virtual Currency",
     "Marketplace",
+    "Value Transfer",
+    "Multiverse",
     "Digital Asset"
   ],
   "wiki_links": [
     "Virtual Asset",
+    "Cryptocurrency",
     "metaverse",
-    "NFT",
-    "Digital Twin",
     "Metaverse",
-    "Cryptocurrency"
+    "NFT",
+    "Digital Twin"
   ],
   "ontology": {
     "term_id": "MV-10118",

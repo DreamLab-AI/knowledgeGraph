@@ -1,36 +1,46 @@
 - ### OntologyBlock
-    - term-id:: MV-0137
-    - source-domain:: mv
-    - owl:class:: mv:StewartPlatform
-    - preferred-term:: Stewart Platform
-    - ontology:: true
+  id:: stewartplatform-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0137
+    - filename-history:: ["RB-0137-stewartplatform.md"]
     - public-access:: true
-    - is-subclass-of:: [[Parallel Robot]]
+    - ontology:: true
+    - term-id:: RB-0137
+    - preferred-term:: Stewart Platform
+    - source-domain:: rb
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## Stewart Platform
+  - **Definition**
+    - definition:: Stewart platform uses six prismatic actuators attached in pairs to baseplate and top plate via universal joints.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-Stewart Platform refers to stewart platform uses six prismatic actuators attached in pairs to baseplate and top plate via universal joints.
+  - **Semantic Classification**
+    - owl:class:: rb:StewartPlatform
+    - belongsToDomain:: [[Robotics]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
+    - is-subclass-of:: [[Parallel Robot]]
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :StewartPlatform))
+      (SubClassOf :StewartPlatform :ParallelRobot)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :StewartPlatform "Stewart Platform"@en)
+      (AnnotationAssertion rdfs:comment :StewartPlatform
+        "Stewart platform uses six prismatic actuators attached in pairs to baseplate and top plate via universal joints."@en)
+      ```
 
-- **Id**: stewartplatform-ontology
-- **Collapsed**: true
-- **Domain Prefix**: RB
-- **Sequence Number**: 0137
-- **Filename History**: ["RB-0137-stewartplatform.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: rb:StewartPlatform
-- **Belongstodomain**: [[Robotics]]
-- **Is Subclass Of**: [[Parallel Robot]]
+- ## About Stewart Platform
+  Stewart platform uses six prismatic actuators attached in pairs to baseplate and top plate via universal joints.
+  
+  A parallel robot with six prismatic actuators providing 6-DOF motion (also called hexapod).

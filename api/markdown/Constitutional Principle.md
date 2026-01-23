@@ -1,38 +1,42 @@
 - ### OntologyBlock
-    - term-id:: DT-0826
-    - source-domain:: ai
-    - owl:class:: ai:ConstitutionalPrinciple
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - preferred-term:: Constitutional Principle
-    - ontology:: true
+  id:: constitutionalprinciple-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: AI
+    - sequence-number:: 0826
+    - filename-history:: ["AI-0826-constitutionalprinciple.md"]
     - public-access:: true
+    - ontology:: true
+    - term-id:: AI-0826
+    - preferred-term:: Constitutional Principle
+    - source-domain:: ai
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-### Relationships
-- is-subclass-of:: [[ArtificialIntelligence]]
+  - **Definition**
+    - definition:: Guiding principle for constitutional AI systems.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-## Constitutional Principle
+  - **Semantic Classification**
+    - owl:class:: ai:ConstitutionalPrinciple
+    - belongsToDomain:: [[Artificial Intelligence]]
 
-Constitutional Principle refers to guiding principle for constitutional ai systems.
+  - #### Relationships
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :ConstitutionalPrinciple))
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :ConstitutionalPrinciple "Constitutional Principle"@en)
+      (AnnotationAssertion rdfs:comment :ConstitutionalPrinciple
+        "Guiding principle for constitutional AI systems."@en)
+      ```
 
-## Technical Details
-
-- **Id**: constitutionalprinciple-ontology
-- **Collapsed**: true
-- **Domain Prefix**: AI
-- **Sequence Number**: 0826
-- **Filename History**: ["AI-0826-constitutionalprinciple.md"]
-- **Public Access**: true
-- **Source Domain**: ai
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: ai:ConstitutionalPrinciple
-- **Belongstodomain**: [[Artificial Intelligence]]
+- ## About Constitutional Principle
+  Guiding principle for constitutional AI systems.

@@ -2,26 +2,19 @@
   id:: ai-trust-risk-and-security-management-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0885
+	- term-id:: ME-0020
 	- preferred-term:: AI Trust Risk and Security Management
 	- source-domain:: mv
-	- status:: emerging
-	- public-access:: true
-
-
-
-
-### OWL Classification
+	- status:: emerging-technology
+    - public-access:: true
+	- definition:: [Generated from Gartner emerging tech analysis]
+	- maturity:: emerging
 	- owl:class:: mv:AITrustRiskandSecurityManagement
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-
-### Domain & Architecture
 	- belongsToDomain:: [[MetaverseDomain]]
-	- maturity:: emerging
+	- category:: Security & Trust
 
-### Relationships
-- is-subclass-of:: [[AIGovernance]]
 
 ## Overview
 
@@ -80,7 +73,7 @@ The primary authoritative sources for AI TRiSM include:
 - Established the Trustworthy and Responsible AI Resource Centre (March 2023) to facilitate implementation[5]
 
 **Industry Frameworks**
-- Cheque Point Software: Comprehensive security framework documentation addressing algorithmic bias, explainability, and data privacy[1]
+- Check Point Software: Comprehensive security framework documentation addressing algorithmic bias, explainability, and data privacy[1]
 - Splunk (Cisco): Holistic framework ensuring trustworthy, ethical, and secure AI systems throughout their lifecycle[2]
 - Proofpoint: Detailed pillar-based governance structure for AI implementation[4]
 
@@ -110,12 +103,14 @@ AI TRiSM is positioned as a transformative technology trend with several anticip
 
 The framework is anticipated to become foundational to responsible AI deployment, enabling organisations to achieve improved adoption rates, enhanced stakeholder trust, and sustainable competitive advantage whilst maintaining ethical and legal compliance.[2]
 
+
 ## UK Context
 
 - British contributions and implementations
   - Research institutions and programmes
   - Industry adoption
   - North England innovation (where relevant)
+
 
 ## Metadata
 
@@ -124,11 +119,4 @@ The framework is anticipated to become foundational to responsible AI deployment
 - **Category**: Security & Trust
 - **Status**: Emerging Technology
 
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
 

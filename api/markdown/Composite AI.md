@@ -2,26 +2,19 @@
   id:: composite-ai-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-0866
+	- term-id:: ME-0004
 	- preferred-term:: Composite AI
 	- source-domain:: mv
-	- status:: emerging
-	- public-access:: true
-
-
-
-
-### OWL Classification
+	- status:: emerging-technology
+    - public-access:: true
+	- definition:: [Generated from Gartner emerging tech analysis]
+	- maturity:: emerging
 	- owl:class:: mv:CompositeAI
 	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-
-### Domain & Architecture
 	- belongsToDomain:: [[MetaverseDomain]]
-	- maturity:: emerging
+	- category:: AI & Autonomy
 
-### Relationships
-- is-subclass-of:: [[Metaverse]]
 
 ## Overview
 
@@ -52,12 +45,14 @@
     - Future developments will focus on improving interoperability, explainability, and ethical governance, with growing emphasis on human-AI collaboration and adaptive learning.
     - In the UK, continued investment in regional innovation hubs and academic-industry partnerships will drive the adoption of composite AI in autonomy, particularly in smart cities, healthcare, and sustainable manufacturing.
 
+
 ## UK Context
 
 - British contributions and implementations
   - Research institutions and programmes
   - Industry adoption
   - North England innovation (where relevant)
+
 
 ## Metadata
 
@@ -66,11 +61,4 @@
 - **Category**: AI & Autonomy
 - **Status**: Emerging Technology
 
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
 

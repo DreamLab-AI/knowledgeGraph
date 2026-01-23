@@ -1,16 +1,166 @@
 - ### OntologyBlock
-  id:: sliding-mode-control-ontology
+  id:: rb-0063-sliding-mode-control-ontology
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0063
+	- domain-prefix:: RB
+	- sequence-number:: 0063
+	- filename-history:: ["rb-0063-sliding-mode-control.md"]
 	- preferred-term:: Sliding Mode Control
-	- source-domain:: rb
-	- owl:class:: rb:SlidingModeControl
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
-	- is-subclass-of:: [[Robotics]]
-	- definition:: Sliding mode control (SMC) is a robust nonlinear control methodology that employs discontinuous control signals to force system trajectories onto a predefined sliding surface where the system exhibits desirable dynamic properties.
+    - public-access:: true
+	- definition:: ### Primary Definition
+**Sliding Mode Control** - Sliding Mode Control in robotics systems
 	- maturity:: draft
+	- owl:class:: mv:rb0063slidingmodecontrol
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About rb 0063 sliding mode control
+	- ### Primary Definition
+**Sliding Mode Control** - Sliding Mode Control in robotics systems
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# RB-0063: Sliding Mode Control
+		  
+		  ## Metadata
+		  - **Term ID**: RB-0063
+		  - **Term Type**: Core Concept
+		  - **Classification**: Control Systems
+		  - **Priority**: 1 (Foundational)
+		  - **Authority Score**: 0.95
+		  - **ISO Reference**: ISO 8373:2021
+		  - **Version**: 1.0.0
+		  - **Last Updated**: 2025-10-28
+		  
+		  ## Definition
+		  
+		  ### Primary Definition
+		  **Sliding Mode Control** - Sliding Mode Control in robotics systems
+		  
+		  ### Standards Context
+		  Defined according to ISO 8373:2021 and related international robotics standards.
+		  
+		  ### Key Characteristics
+		  1. Core property of robotics systems
+		  2. Standardised definition across implementations
+		  3. Measurable and verifiable attributes
+		  4. Essential for safety and performance
+		  5. Industry-wide recognition and adoption
+		  
+		  ## Formal Ontology (OWL Functional Syntax)
+		  
+		  ```clojure
+		  (Declaration (Class :SlidingModeControl))
+		  (SubClassOf :SlidingModeControl :Robot)
+		  
+		  (AnnotationAssertion rdfs:label :SlidingModeControl "Sliding Mode Control"@en)
+		  (AnnotationAssertion rdfs:comment :SlidingModeControl
+		    "Sliding Mode Control - Foundational robotics concept"@en)
+		  (AnnotationAssertion :termID :SlidingModeControl "RB-0063"^^xsd:string)
+		  
+		  (Declaration (ObjectProperty :relates To))
+		  (ObjectPropertyDomain :relatesTo :SlidingModeControl)
+		  
+		  (Declaration (DataProperty :hasProperty))
+		  (DataPropertyDomain :hasProperty :SlidingModeControl)
+		  (DataPropertyRange :hasProperty xsd:string)
+		  ```
+		  
+		  ## Relationships
+		  
+		  ### Parent Classes
+		  - `Robot`: Primary classification
+		  
+		  ### Related Concepts
+		  - Related robotics concepts and systems
+		  - Cross-references to other ontology terms
+		  - Integration with metaverse ontology
+		  
+		  ## Use Cases
+		  
+		  ### Industrial Applications
+		  1. Manufacturing automation
+		  2. Quality control systems
+		  3. Process optimization
+		  
+		  ### Service Applications
+		  1. Healthcare robotics
+		  2. Logistics and warehousing
+		  3. Consumer robotics
+		  
+		  ### Research Applications
+		  1. Academic research platforms
+		  2. Algorithm development
+		  3. System integration studies
+		  
+		  ## Standards References
+		  
+		  ### Primary Standards
+		  1. **ISO 8373:2021**: Primary reference standard
+		  2. **ISO 8373:2021**: Robotics vocabulary
+		  3. **Related IEEE standards**: Implementation guidelines
+		  
+		  ## Validation Criteria
+		  
+		  ### Conformance Requirements
+		  1. ✓ Meets ISO 8373:2021 requirements
+		  2. ✓ Documented implementation
+		  3. ✓ Verifiable performance metrics
+		  4. ✓ Safety compliance demonstrated
+		  5. ✓ Industry best practices followed
+		  
+		  ## Implementation Notes
+		  
+		  ### Design Considerations
+		  - System integration requirements
+		  - Performance specifications
+		  - Safety considerations
+		  - Maintenance procedures
+		  
+		  ### Common Patterns
+		  ```yaml
+		  implementation:
+		    standards_compliance: true
+		    verification_method: standardised_testing
+		    documentation_level: comprehensive
+		  ```
+		  
+		  ## Cross-References
+		  
+		  ### Metaverse Ontology Integration
+		  - Virtual representation systems
+		  - Digital twin integration
+		  - Simulation environments
+		  
+		  ### Domain Ontologies
+		  - Manufacturing systems
+		  - Control systems
+		  - Safety systems
+		  
+		  ## Future Directions
+		  
+		  ### Emerging Trends
+		  1. AI and machine learning integration
+		  2. Advanced sensing capabilities
+		  3. Improved safety systems
+		  4. Enhanced human-robot collaboration
+		  5. Standardisation advancements
+		  
+		  ---
+		  
+		  **Version History**
+		  - 1.0.0 (2025-10-28): Initial foundational definition
+		  
+		  **Contributors**: Robotics Ontology Working Group
+		  **License**: CC BY 4.0
+		  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0063`
+		  
+		  ```
+
 
 ## Academic Context
 
@@ -105,10 +255,12 @@
 7. Nature. (2025). Adaptive sliding mode control for chaotic system synchronization. Scientific Reports, 15, 21462. https://doi.org/10.1038/s41598-025-21462-z
 8. Frontiers in Robotics and AI. (2025). Sliding-mode control based on prescribed performance function and application to exoskeletons. Frontiers in Robotics and AI, 12, 1534040. https://doi.org/10.3389/frobt.2025.1534040
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
 

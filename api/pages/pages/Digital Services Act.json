@@ -5,21 +5,22 @@
   "backlinks": [
     "Compliance Standards",
     "Digital Rights",
+    "Metaverse Safety Protocol",
     "ETSI_Domain_Ethics_&_Law",
     "Regulatory Standards"
   ],
   "wiki_links": [
-    "Compliance Systems",
-    "Moderation Infrastructure",
     "Platform Accountability",
-    "Content Transparency",
+    "Reporting Mechanisms",
+    "User Protection",
+    "Compliance Systems",
+    "GDPR",
+    "Digital Regulation",
     "metaverse",
     "Digital Markets Act",
-    "Reporting Mechanisms",
     "AI Act",
-    "Digital Regulation",
-    "User Protection",
-    "GDPR"
+    "Content Transparency",
+    "Moderation Infrastructure"
   ],
   "ontology": {
     "term_id": "MV-9869",

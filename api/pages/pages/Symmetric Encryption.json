@@ -3,19 +3,21 @@
   "title": "Symmetric Encryption",
   "content": "- ### OntologyBlock\n  id:: symmetric-encryption-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- source-domain:: bc\n\t- term-id:: BC-8018\n\t- preferred-term:: Symmetric Encryption\n\t- status:: active\n\t- public-access:: true\n\t- maturity:: reviewed\n\t- owl:class:: bc:SymmetricEncryption\n\t- belongsToDomain:: [[Cryptography]]\n\t- definition:: A cryptographic method using a single shared secret key for both encryption and decryption, requiring secure key exchange between parties before communication. Symmetric encryption provides confidentiality for data at rest and in transit with high computational efficiency, making it suitable for bulk data encryption in blockchain and general security applications.\n\n---\nid: BC-1005\ntitle: Symmetric Encryption\ntype: ConceptNode\ndomain: Blockchain\ncreated: 2025-11-24\nstatus: active\n---\n\n# Symmetric Encryption\n\n## Definition\n- Cryptographic method using single shared key for both encryption and decryption\n- Requires secure key exchange between parties before communication\n- Provides confidentiality for data at rest and in transit in blockchain systems\n\n## Core Components\n- **Encryption Key**: Shared secret used for both operations\n- **Cipher Algorithm**: Mathematical transformation function\n- **Initialization Vector (IV)**: Random nonce preventing pattern detection\n- **Authentication Tag**: Ensures data integrity and authenticity\n\n## Technical Characteristics\n- **Computational Efficiency**: Faster than asymmetric encryption\n- **Key Size**: Typically 128, 192, or 256 bits\n- **Block vs Stream**: Operates on fixed blocks or continuous streams\n- **Mode of Operation**: ECB, CBC, CTR, GCM determining security properties\n\n## Common Algorithms\n- **AES (Advanced Encryption Standard)**: Industry standard, 128/192/256-bit keys\n- **ChaCha20**: Stream cipher with high performance\n- **3DES**: Legacy algorithm being phased out\n- **Salsa20**: Stream cipher family\n\n## Blockchain Applications\n- Private transaction data encryption\n- Encrypted memo fields\n- Off-chain data storage encryption\n- Secure communication between nodes\n- Encrypted smart contract states\n\n## Authenticated Encryption\n- **AES-GCM**: Galois/Counter Mode with authentication\n- **ChaCha20-Poly1305**: Stream cipher with authentication tag\n- **AES-CCM**: Counter with CBC-MAC\n- Provides both confidentiality and integrity\n\n## Relationships\n- contrasts-with:: [[Asymmetric Encryption]]\n- requires:: [[Key Derivation Function]]\n- uses:: [[Random Number Generation]]\n- component-of:: [[Hybrid Encryption]]\n- enables:: [[Confidential Transactions]]\n\n## Security Considerations\n- Key distribution problem in decentralized systems\n- Key storage and management\n- Side-channel attack resistance\n- Proper IV/nonce generation critical\n- Quantum computing resistance (AES-256)\n\n## Performance Characteristics\n- High throughput (GB/s on modern hardware)\n- Low latency for real-time encryption\n- Hardware acceleration (AES-NI instruction set)\n- Minimal computational overhead\n\n## Use Cases in Blockchain\n- Encrypting private keys at rest\n- Secure backup of wallet data\n- Privacy-preserving transaction fields\n- Encrypted communication protocols\n- Confidential smart contract execution\n\n## Key Management\n- Secure key derivation from master secret\n- Key rotation strategies\n- Hardware security module (HSM) storage\n- Multi-party computation for shared keys\n\n## Advantages\n- High performance and efficiency\n- Mature and well-studied algorithms\n- Hardware acceleration support\n- Suitable for large data encryption\n\n## Limitations\n- Key distribution challenge in trustless systems\n- Shared key compromise affects all parties\n- Requires secure channel for key exchange\n- Not suitable for digital signatures\n\n## Related Concepts\n- [[Asymmetric Encryption]]\n- [[Hash Function]]\n- [[Key Derivation Function]]\n- [[Digital Signature]]\n\n#cryptography #encryption #symmetric #blockchain-security\n\n### Relationships\n- is-subclass-of:: [[Blockchain]]",
   "backlinks": [
+    "Cryptography",
     "CryptographicPrimitive",
+    "Hash Function",
     "Asymmetric Encryption",
     "Cryptographic Keys"
   ],
   "wiki_links": [
-    "Cryptography",
+    "Blockchain",
+    "Confidential Transactions",
+    "Random Number Generation",
     "Asymmetric Encryption",
     "Hash Function",
-    "Random Number Generation",
-    "Confidential Transactions",
-    "Digital Signature",
     "Key Derivation Function",
-    "Blockchain",
+    "Digital Signature",
+    "Cryptography",
     "Hybrid Encryption"
   ],
   "ontology": {

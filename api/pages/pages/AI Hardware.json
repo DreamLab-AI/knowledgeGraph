@@ -9,21 +9,20 @@
     "Neuromorphic Chip",
     "NPU",
     "Training Hardware",
-    "AI Companies",
     "Neuromorphic Chips",
     "FPGA",
     "Tensor Processing Unit"
   ],
   "wiki_links": [
-    "Large Language Models",
-    "Deep Learning",
-    "High-Performance Computing",
+    "AI Training",
     "Machine Learning",
-    "Computer Hardware",
     "Neural Networks",
     "AI Infrastructure",
-    "AI Training",
-    "Artificial Intelligence"
+    "Deep Learning",
+    "Artificial Intelligence",
+    "Computer Hardware",
+    "High-Performance Computing",
+    "Large Language Models"
   ],
   "ontology": {
     "term_id": "AI-7020",

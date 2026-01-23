@@ -1,29 +1,118 @@
-Agentic Metaverse for Global Creatives
+public:: true
 
-- ### OntologyBlock
-  id:: Agentic Metaverse for Global Creatives
-  - ontology:: true
-  - public-access:: true
-  - term-id:: MV-9739
-  - preferred-term:: Agentic Metaverse For Global Creatives
-  - source-domain:: mv
-  - owl:class:: mv:AgenticMetaverseForGlobalCreatives
-  - status:: draft
-
-### Virtual Training and Simulation:
-- CVEs can facilitate skill development and training in various industries, such as healthcare, military, aviation, and emergency response. Trainees can practice procedures in a virtual environment, with natural language AI providing instructions, explanations, or feedback. Generative AI can now create entire interactive 3D environments on the fly, allowing for the rapid prototyping and deployment of complex, adaptable virtual scenarios. AI-powered avatars and non-player characters (NPCs) are also becoming more lifelike, capable of nuanced and dynamic interactions, which is particularly impactful in areas like virtual training and customer service, where realistic simulations and interactions are paramount.
+- #Public page automatically published
+- ```mermaid
+  sequenceDiagram
+      participant User
+      participant AIAgent
+      participant Nostr
+      participant Bitcoin
+      participant Lightning
+      participant RGB
+      participant NosDAV
+      participant GitHub
+      participant Logseq
+      participant SolidLite
+      participant LinkedJSON
+      participant Omniverse
+      participant USD
+  
+      User->>+Logseq: Define agent tasks and rewards
+      Logseq->>+GitHub: Store agent configurations
+      GitHub->>+AIAgent: Trigger agent update
+      AIAgent->>+Nostr: Subscribe to relevant events
+      Nostr->>+AIAgent: Deliver relevant events
+      AIAgent->>+Logseq: Retrieve task configurations
+      Logseq->>+AIAgent: Provide task configurations
+      AIAgent->>+NosDAV: Retrieve required data
+      NosDAV->>+AIAgent: Provide requested data
+      AIAgent->>+RGB: Request single-use seal
+      RGB->>+AIAgent: Provide single-use seal
+      AIAgent->>+Nostr: Perform task and publish results
+      Nostr->>+User: Deliver task results
+      User->>+Lightning: Send payment for task completion
+      Lightning->>+Bitcoin: Settle payment transaction
+      Bitcoin->>+AIAgent: Confirm payment receipt
+      AIAgent->>+Nostr: Publish payment confirmation
+      Nostr->>+User: Deliver payment confirmation
+      User->>+SolidLite: Interact with decentralized application
+      SolidLite->>+LinkedJSON: Retrieve structured data
+      LinkedJSON->>+SolidLite: Provide structured data
+      SolidLite->>+Nostr: Publish user actions
+      Nostr->>+AIAgent: Deliver user actions
+      AIAgent->>+Omniverse: Retrieve virtual environment data
+      Omniverse->>+AIAgent: Provide virtual environment data
+      AIAgent->>+USD: Manipulate 3D assets
+      USD->>+AIAgent: Provide updated 3D assets
+      AIAgent->>+Omniverse: Update virtual environment
+      Omniverse->>+Nostr: Publish virtual environment updates
+      Nostr->>+User: Deliver virtual environment updates
+      User->>+Nostr: Publish feedback and interactions
+      Nostr->>+AIAgent: Deliver user feedback and interactions
+      AIAgent->>+NosDAV: Store interaction data
+      NosDAV->>+AIAgent: Confirm data storage
+      AIAgent->>+Nostr: Publish interaction confirmation
+      Nostr->>+User: Deliver interaction confirmation
+  ```
+- [Online Version](https://mermaid.live/view#pako:eNqNVk1T2zAQ_SsaXwukJG0AH5iBpkPp8DWk9NDJRbY2jgZFciU5DGXy37uybMeOlUBOjvTert5-SW9RqhhEcWTgbwEyhQmnmabLmST4y6m2POU5lZY8GdD91Yvriwyk7W_cKWMD-EtuU8Vlf-OGZwsrucz6W49Xl0H7k4vf_fUrbn8UScC-ylBif32qBGc33ELoSPIZ2M_p_V1_734p-Qq0CdCeppNZJdDF7PD8_JN3HpMJzLkEQl3IiKXm2RAqGdHwQjUznuOxjuWlxGRqla5JqZJznhWaWq5kxfA4x6iyEZNfmmcZ6IpU5IzWAiuIQ5cpQvNFYlLNEyBW4VEErJwKWCGqclACO_YnIJz8MLzlohb-CFZzxJSigyI2shsnD1qtONvD6WrBcmg50ljPXAMjKJ02MhATdOHQYGwH3rKOFehMlxhisEgFHBYGiAEqPBgRQcNBcD8HD6DnSi-9VFcSeZEIbhZ4MFOIXh5cXW2SUJI6wKbu6qbCLIOzSl-XriDQVx3VZS7AhbTKQk1w7KpXHddaAQ3baioNTTesCtgJwDeXL1RUkzSkwHO7MwCV3hqeejrdONkhfjehDkLT4TG5lhY0npy8cLsgDI8kUYzg_zDxNM8FT1v8hucjWc-CVo3hgYrUFt0q2yC3nDclEWJ1nG3FBIsHOzltFf7uhuxjW7FuhlZLw4prW1BBQOKXkmUsN8dqGMHi3s9tOcaRGJNbKnleCJxEZDQh1BhoynU6Cdr3c4ttw8OKnkpw6EwBKVsRDgnxzvd33ru8uga3_M0BWEJT3-q8KsoPp_cddmAq-hukBd0_FevedSAsV6XxGnmvcdvGP9y8u0jRQbQE_OYMXyZvzsQssgtYwiyK8TOheO9GM7lGHC2smr7KNIqxreAg8uGvXjH1It7Lf5TCv3MqTAP6zjhqaxaFogzw71tkX3P3JMq4sejB3zxuvdAClxfW5iYeDNz2UYaDpEiOcI4ODGcLfAYsVmfjwXg4PqXDEYxPRvTraMTS5PjsdD78cjxnJ5-PhzRarw8iKP3f-vdX-Qxb_wcWdEhL)
+-
+- # Introduction and Problem Definition
+- [[Delivery Planning]]
+	- ## Overview of the Metaverse and Digital Society:
+		- The concept of the [[Metaverse and Telecollaboration]] has gained significant attention. While its final form remains unclear, the potential of digital society is evident. We see advantage not in a social metaverse, but in solving business-to-business technical use cases where professionals with visual technical problems or training requirements can gather in collaborative spaces.
+		- We have designed a [[Metaverse Ontology]] to ensure specificity for our work.
+	- ## Trust, Accessibility, Governance, and Safeguarding:
+		- The Metaverse faces challenges, including poor adoption, overstated market need, and a lack of genuine digital society use cases. [[Privacy, Trust and Safety]] abuses by incumbent providers have created an opportunity for a more open internet. Emerging markets face barriers to entry due to inadequate identification, banking infrastructure, and computing power. There is an opportunity to build pervasive digital spaces with a different and more open foundation.
+	- ## The Need for Modular Open-Source Solutions:
+		- A topologically flat, inclusive, permissionless, federated, and [[Open Source]] Metaverse is essential to address these challenges. Open-source AI tooling and large language models can improve creativity, safeguarding, and governance, while breaking down language and accessibility barriers. Secure, trusted, and task-appropriate solutions can promote collaboration and innovation.
+	- ## Technical Problem Definition:
+		- The specific technical challenges and opportunities the proposed framework addresses include:
+		- Evergreen telecollaboration around technical issues
+		- Exchange of goods, services, and money within systems, without friction
+		- Identity management within virtual spaces
+		- Access to information in the extrinsic world from within the tool
+		- Federation of instances without overhead (scaling)
+		- Seamless access to personal information within and without the collaborative system
+		- Ability to take advantage of supporting smart support agents (bots, etc.) throughout
+		- Governance, trust, and safeguarding
+	- ## Lean Canvas Business Model:
+		- Problem: Existing large-scale telecollaboration solutions suffer from poor adoption, limited accessibility, and trust issues. Meanwhile, emerging markets struggle to participate in the growing digital society due to the lack of inclusive tools and infrastructure, limiting access to global talent and new pools of ideas. There is insufficient provision of global talent pipelines for highly technical workflows.
+		- Solution: Develop a secure, accessible, and inclusive platform for specialized telecollaboration spaces that seamlessly integrate advanced AI, ML, highly scalable and proven distributed systems, and open-source principles to create a digital society that caters to diverse industries, users globally, and captures global talent and innovative ideas.
+		- Value Proposition: Ultra low cost training spaces, accessible 24/7 through very low end hardware. Interact with highly customizable, task-appropriate, and user-friendly specialized telecollaboration spaces supported by specially trained and optimised supportive large language AI models. Multi-lingual for emerging markets, enabling access to untapped global talent and fostering the exchange of diverse ideas.
+		- Customer Segments: Initially Universities, but this will scale to be sector specific, catering to the global training, research, biomedical, and creative industries, with a special focus on empowering users in emerging markets such as Africa and India, and connecting them with worldwide opportunities and resources.
+		- Revenue Streams: Tiered subscription plans to accommodate various user needs and budgets, as well as tailored enterprise solutions for large-scale clients. Bespoke consulting and support trending toward software as a service at scale.
+		- Key Metrics: Track user growth, engagement, and retention, successful collaborations across industries, the platform's positive impact on users in emerging markets, and the effectiveness of global talent capture and idea exchange.
+		- Unfair Advantage: The team's extensive experience in telecollaboration research, AI, ML, and a deep understanding of the complex landscape of emerging technologies, including highly scalable and proven distributed systems, provide a unique edge in creating a game-changing platform for specialized telecollaboration spaces that are secure, trusted, and tailored to diverse user needs while enabling access to global talent and innovative ideas.
+- # Proposed Layered Framework
+	- ## Layer 1: Bitcoin, Lightning, and Nostr Protocols:
+		- The proposed framework leverages [[Bitcoin]](https://bitcoin.org/), [[Lightning and Similar L2]](https://lightning.network/), and [[Nostr protocol]](https://nostr.com/) protocols to provide a secure and decentralized foundation for value exchange, identity management, and communication. These technologies enable the transfer of portable 'goods' across digital society and promote the development and adoption of open protocols and data formats. The Nostr protocol, in particular, can link and federate mixed reality spaces, providing identity assurances and mediating data synchronization while maintaining reasonably strong cryptography. This also allows integration with the legacy web through ubiquitous web sockets. Bitcoin and associated technologies, despite their issues, have the potential to revolutionize the way digital society operates by enabling "money-like networks" which are a cornerstone of human interaction. Representations of traditional currencies can ride securely on top of these networks as stablecoins, opening up global collaborative working practices, especially for emerging markets. Streaming micropayments and machine to machine (AI to AI) interactions are crucially and under-considered in this context.
+	- ### Layer 2: Modular Human-Computer Interface:
+		- The framework proposes the development of collaborative global networks for training, research, biomedical, and creative industries using immersive and accessible environments. Engaging with ideas from diverse cultural backgrounds can enrich the overall user experience. Industry players have noted the risk and failures associated with closed systems like Meta and are embracing the "open Metaverse" narrative to de-risk their interests. To enable a truly open and interoperable Metaverse, it is crucial to develop open-source APIs, SDKs, and data standards that allow different platforms to communicate and exchange information. While the initial focus will be on building around a simpler open-source engine, the framework aims to link across standards such as [Unity](https://unity.com/), [[Unreal]](https://www.unrealengine.com/), and [[NVIDIA Omniverse]](https://www.nvidia.com/en-us/omniverse/) as it develops. This can be accomplished using the federation layer.
+	- ### LLM and Generative ML Integration:
+		- ### Bots and AI Agents:
+			- Autonomous AI [[Agents]], bonded to, but not bounded by, each federated mixed reality instance, can be self-governing entities that operate within their federated virtual social spaces, drawing upon private Bitcoin and Lightning wallets to perform and mediate economic exchanges within the spaces. They could also trivially operate outside the virtual space, and within other spaces on the same metaverse federation. They would accomplish this by drawing on their 'home' GPU/TPU processors where appropriate, or else using distributed large language model (LLM) processing to accomplish tasks assigned by their instructors. They can interact with the 'web2' world using open-source software called auto-gpt and have constraints, such as "time to live" and limited access to funds through their Bitcoin Lightning wallets.
+		- ### Resource Management and Financial Autonomy:
+			- These AI agents have access to dedicated LLM resources within their home instances in the federated virtual social spaces. If such resources are unavailable, they can resort to using slower, distributed open-source LLMs like Horde. This flexibility ensures that the agents can continue to function and complete tasks even if faced with limited LLM interpretive resources. The AI agents have their own private Bitcoin and Lightning wallets, which enable them to manage and utilize funds independently. They can use these funds to pay for services, acquire resources, or even trade with other agents or users within the virtual social spaces.
+		- ### Social Interactions and Adaptive Learning:
+			- Within the federated virtual social spaces, AI agents can communicate and collaborate with other agents or human users. They can participate in discussions, provide assistance, or even learn from the interactions, thereby improving their capabilities over time. Language translation, governance, and safeguarding could also be developed. Safeguarding would be handled by threshold risk triggers and transmission of data in a sovereign way to all parties, allowing external action by authorities appropriate to any abuse. As AI agents interact with their environment, other agents, and users, they can learn and adapt their behaviour. This enables them to improve their performance, better understand their assigned tasks, and become more effective at achieving their goals.
+	- # Application Case Studies
+		- ## Classic Use Cases:
+			- The proposed framework can be applied to traditional collaborative scenarios, such as small teams working on product, architectural, or industrial design. For example, a team of architects could use a collaborative virtual environment (CVE) to walk through a 3D model of a building, making changes in real-time and getting immediate feedback from colleagues. Similarly, a team of product designers could use a CVE to prototype and test a new product, iterating on the design in a shared virtual space. These teams can benefit from CVEs that allow them to visualize, modify, and iterate on 3D models in real-time.
+- ## Expanding Use Cases with AI and ML:
+	- ### Virtual Training and Simulation:
+		- CVEs can facilitate skill development and training in various industries, such as healthcare, military, aviation, and emergency response. Trainees can practice procedures in a virtual environment, with natural language AI providing instructions, explanations, or feedback. Generative AI can now create entire interactive 3D environments on the fly, allowing for the rapid prototyping and deployment of complex, adaptable virtual scenarios. AI-powered avatars and non-player characters (NPCs) are also becoming more lifelike, capable of nuanced and dynamic interactions, which is particularly impactful in areas like virtual training and customer service, where realistic simulations and interactions are paramount.
 	- ### Remote Teleconferencing:
 		- In situations where face-to-face communication is not feasible, CVEs can enable remote teams to work together on shared visual tasks like planning events, brainstorming ideas, or reviewing documents. Natural language AI can transcribe and analyse spoken conversations, providing real-time translations or summaries. AI-driven tools are also streamlining content creation, allowing artists and designers to accelerate their workflows by transforming simple sketches into detailed 3D assets. Machine learning algorithms are being employed to personalize user experiences in real-time, adapting the environment and tasks to individual preferences and skill levels.
 	- ### Virtual Art & Media Collaboration:
 		- Artists, animators, and multimedia professionals can collaborate in CVEs to create and develop their projects, such as films, animations, or video games. Natural language AI can help in storyboarding, scriptwriting, or character development, while visual generative ML can generate new visuals or adapt existing assets based on user input and style preferences.
 	- ### Data Visualization and Analysis:
-		- Small teams working with large datasets can use CVEs to visually explore and analyse data in a more intuitive and engaging way. Natural language AI can help users query and interact with the data using conversational interfaces, while visual generative ML can generate new visualizations based on patterns and trends identified in the data.
+		- Small teams working with large datasets can use CVEs to visually explore and analyze data in a more intuitive and engaging way. Natural language AI can help users query and interact with the data using conversational interfaces, while visual generative ML can generate new visualizations based on patterns and trends identified in the data.
 	- ### Education and Virtual Classrooms:
-		- Educators can leverage CVEs to create immersive learning experiences that engage students in collaborative activities, such as group projects, problem-solving, or scientific experiments. Natural language AI can facilitate communication, provide personalized tutoring, or assess student progress, while visual generative ML can create customised educational content based on individual needs and interests.
+		- Educators can leverage CVEs to create immersive learning experiences that engage students in collaborative activities, such as group projects, problem-solving, or scientific experiments. Natural language AI can facilitate communication, provide personalized tutoring, or assess student progress, while visual generative ML can create customized educational content based on individual needs and interests.
 	- ### Virtual Labs and Scientific Research:
-		- Researchers can use CVEs to conduct experiments, visualise complex data, or simulate real-world conditions in a controlled environment. Natural language AI can assist in interpreting results, automating lab protocols, or identifying research gaps, while visual generative ML can generate predictions or models based on existing data to support hypothesis testing and decision-making.
+		- Researchers can use CVEs to conduct experiments, visualize complex data, or simulate real-world conditions in a controlled environment. Natural language AI can assist in interpreting results, automating lab protocols, or identifying research gaps, while visual generative ML can generate predictions or models based on existing data to support hypothesis testing and decision-making.
 	- ### Biomedical:
-		- In fields like chemical and medical molecular modelling, the integration of AI and generative ML technologies can significantly improve collaboration and innovation. Teams can work together in immersive environments to visualise complex molecular structures, benefiting from real-time AI-generated visuals and natural language processing.
+		- In fields like chemical and medical molecular modeling, the integration of AI and generative ML technologies can significantly improve collaboration and innovation. Teams can work together in immersive environments to visualize complex molecular structures, benefiting from real-time AI-generated visuals and natural language processing.
 	- ### Case Study: Biodiversity Monitoring and Data Exchange with Isolated Communities:
 		- The case study presents an open-source collaboration infrastructure that leverages advanced technologies such as multi-modal large language models (LLMs), satellite communication, and cryptocurrency networks to facilitate sustainable and reliable biodiversity monitoring and data exchange in isolated communities. Key components include:
 			- Language Model and Voice Interface
@@ -61,7 +150,7 @@ Agentic Metaverse for Global Creatives
 	- ### Learning from Past Failures:
 		- Learning from past failures and addressing challenges head-on will be critical to the successful development of an open-source Metaverse. Trust, accessibility, governance, and safeguarding issues must be thoughtfully considered and addressed to build a secure and user-friendly platform.
 	- ### Unlocking New Opportunities and Use Cases:
-		- The integration of AI, ML, and cutting-edge technologies within the Metaverse can unlock new opportunities and use cases across various industries, including education, research, biomedical, and creative fields. By building on a modular open-source system, these opportunities can be explored and realised to their full potential.
+		- The integration of AI, ML, and cutting-edge technologies within the Metaverse can unlock new opportunities and use cases across various industries, including education, research, biomedical, and creative fields. By building on a modular open-source system, these opportunities can be explored and realized to their full potential.
 	- ### Fostering Collaboration and Inclusivity:
 		- Creating an inclusive digital society is a key goal for the open-source Metaverse. By breaking down barriers and making the platform accessible to a wider audience, new ideas and perspectives will enrich the digital landscape and drive innovation.
 	- ### Shaping the Future of Digital Society:
@@ -69,19 +158,8 @@ Agentic Metaverse for Global Creatives
 	- ### Industry Conversations:
 		- Continued dialogue and collaboration among industry stakeholders are vital to ensuring the successful development of the open-source Metaverse. By engaging in conversations and understanding the cautious appetite for the ideas presented, the community can work together to shape the future of digital society and overcome the challenges that lie ahead.
 	- ### In-Camera VFX & Telepresence:
-		- The proposed framework can be applied to film production and virtual production workflows. By leveraging the world's most powerful decentralized computing network (Bitcoin) and cryptographically assured endpoints, the system can enable scale and security without high cost. New tooling in the space allows for microtransactions and micropayments, radically improving creative microtask workflows. The unified digital backend is optimised for flows of money, trust, and digital objects, offering a new area for virtual production.
+		- The proposed framework can be applied to film production and virtual production workflows. By leveraging the world's most powerful decentralized computing network (Bitcoin) and cryptographically assured endpoints, the system can enable scale and security without high cost. New tooling in the space allows for microtransactions and micropayments, radically improving creative microtask workflows. The unified digital backend is optimized for flows of money, trust, and digital objects, offering a new area for virtual production.
 - # Software Stack
 	- ### Novel VP Render Pipeline:
 		- Putting the ML image generation on the end of a real-time tracked camera render pipeline might remove the need for detail in set building. The set designer, DP, director, etc., will be able to ideate in a headset-based metaverse of the set design, dropping very basic elements. If the interframe consistency (img2img) can deliver, the output on the VP screen can simply inherit the artistic style from the text prompts and render production quality from the basic building blocks. This "next level pre-vis" is being trailed in the Vircadia collaborative environment described in this book.
 - # Software Stack
-
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
-
-### Relationships
-- is-subclass-of:: [[Metaverse]]

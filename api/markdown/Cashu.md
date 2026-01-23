@@ -1,24 +1,21 @@
-{{twitter https://twitter.com/callebtc/status/1777598819355496587}}
+public:: true
+termID:: BTC-PRIV-0001
+qualityScore:: 0.93
 
-- ### OntologyBlock
-  id:: Cashu
-  - ontology:: true
-  - public-access:: true
-  - term-id:: BC-9876
-  - preferred-term:: Cashu
-  - source-domain:: bc
-  - owl:class:: bc:Cashu
-  - status:: draft
-
-### Core Privacy Mechanism
-- Cashu employs **blind signatures** as its foundational cryptographic primitive, allowing users to request signatures without revealing transaction content to the signer (mint operator).
+- #Public page -- automatically published
+- ## Cashu: Privacy-Preserving Bitcoin Ecash Protocol
+	- Cashu is a free and open-source **Chaumian ecash protocol built for Bitcoin** enabling instant, nearly-free, and completely anonymous bearer token transactions. The protocol leverages [[Blind Signatures]] to preserve user privacy while maintaining transaction validity through decentralized [[Mints]].
+	- **Current Status (2025)**: Actively developed with production-ready implementations in Python ([[nutshell]]), TypeScript ([[cashu-ts]]), and Rust ([[CDK]]). Multiple wallet platforms deployed across iOS, Android, and web, including eNuts mobile wallet and cashu.me progressive web application.
+	- **Privacy Claim**: Mint operators and third-party observers cannot link individual transactions to identities, providing transaction-level privacy equivalent to physical cash.
+	- ### Core Privacy Mechanism
+		- Cashu employs **blind signatures** as its foundational cryptographic primitive, allowing users to request signatures without revealing transaction content to the signer (mint operator).
 		- Bearer token model ensures transactions are **peer-to-peer and final**, eliminating transaction reversal and providing cash-like finality.
 		- Mint operators gain zero knowledge of individual transaction details while maintaining ability to prevent double-spending through spent-token registry.
 		- **Cryptographic guarantees**: Uses Elliptic Curve Cryptography (ECC) with RSA or blind schemes to ensure untraceable transactions while preserving mint security.
 		- **Token Blinding Protocol**: Users blind transaction data before sending to mint; mint signs blinded data; users unblind signature to create unlinkable bearer token.
 	- ### Bitcoin-AI Integration & AI Agent Privacy
 		- **Anonymous AI Service Payments**: AI agents operating in privacy-respecting systems can accept Cashu ecash for services without transaction censorship or identity leakage.
-		- **Autonomous Agent Transactions**: Smart contracts and autonomous agents utilise Cashu for inter-agent micro-payments and settlements, enabling censorship-resistant AI economic networks.
+		- **Autonomous Agent Transactions**: Smart contracts and autonomous agents utilize Cashu for inter-agent micro-payments and settlements, enabling censorship-resistant AI economic networks.
 		- **Lightning Network Integration**: Cashu seamlessly routes multi-mint transfers through [[Lightning Network]], enabling rapid cross-mint payments and integration with [[L402]] authentication token layer.
 		- **Privacy-Preserving AI Coordination**: Agents can coordinate resource allocation, model updates, and computation rewards using Cashu without revealing participant identities or behavioral patterns.
 		- **AI Model Monetization**: Content creators and model developers can receive compensation for AI services using Cashu without exposing transaction graphs.
@@ -53,23 +50,13 @@
 		- **Offline Capability**: Transaction generation and signing occur offline; only final validation requires mint contact.
 		- **NFC/QR Payments**: eNuts supports contactless payments via NFC and QR code scanning for point-of-sale terminals.
 		- **Token Backup & Recovery**: Ecash tokens can be exported and imported; users maintain local backups for fund recovery.
-		- **Denomination Selection**: Automatic denomination selection optimises transaction efficiency; users pay minimal fees.
+		- **Denomination Selection**: Automatic denomination selection optimizes transaction efficiency; users pay minimal fees.
 	- ## Cashu Workshop & Implementation Guide
 		- [Cashu Workshop Video](https://www.youtube.com/watch?v=xfYmwc-gnK8)
 		- ![video_2024-04-18_16-47-14.mp4](../assets/video_2024-04-18_16-47-14_1713458378752_0.mp4)
 		- [Twitter discussion on Cashu developments](https://twitter.com/callebtc/status/1777598819355496587)
 		  {{twitter https://twitter.com/callebtc/status/1777598819355496587}}
-	-
-
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
-
-## References and Official Resources
+	- ## References and Official Resources
 		- [Cashu Documentation & Specification](https://cashu.space/)
 		- [Cashu GitHub Organization - nutshell, CDK, cashu-ts](https://github.com/cashubtc)
 		- [eNuts Mobile Wallet - Get Started](https://www.enuts.cash/get-started)
@@ -80,7 +67,7 @@
 		- **Micropayments**: Content creators accept Cashu for digital goods, articles, and services with minimal fees (typically <1 sat).
 		- **Privacy-Respecting Commerce**: E-commerce platforms use Cashu to offer customers transactional privacy by default; no transaction history linked to identity.
 		- **Paywall & Subscription Systems**: News publishers and streaming services integrate Cashu for subscription payments with user anonymity.
-		- **Organizational Vouchers & Rewards**: Companies issue Cashu for employee benefits, loyalty programmes, and reward systems; redeemable for services.
+		- **Organizational Vouchers & Rewards**: Companies issue Cashu for employee benefits, loyalty programs, and reward systems; redeemable for services.
 		- **Cross-Border Remittances**: International transfers with minimal intermediaries using multi-mint Lightning routing; faster than traditional wire transfers.
 		- **Privacy-Sensitive Donations**: Nonprofits and activist organizations accept Cashu donations without revealing donor-recipient links.
 		- **Gaming & Digital Rewards**: Online games use Cashu for in-game currency and reward distributions with player anonymity preserved.
@@ -111,6 +98,3 @@
 		- [2] GitHub: Cashu BTC Organization (2025). "nutshell: Chaumian Ecash Wallet and Mint." https://github.com/cashubtc/nutshell. Reference implementation; 451+ stars, actively maintained.
 		- [3] Gutierrez, E. (2024). "Cashu Workshop: Building Privacy-Preserving Bitcoin Applications." YouTube. https://www.youtube.com/watch?v=xfYmwc-gnK8 Technical deep-dive on blind signature implementation.
 	-
-
-### Relationships
-- is-subclass-of:: [[Blockchain]]

@@ -4,27 +4,204 @@
 	- ontology:: true
 	- term-id:: AI-0237
 	- preferred-term:: Token Embedding
-	- source-domain:: ai
-	- status:: complete
-	- public-access:: true
-	- definition:: Vector representation of tokens (words, subwords, characters) in continuous space, mapping discrete symbols to dense vectors that capture semantic and syntactic relationships. Foundation component of transformer architectures and modern NLP systems.
+	- source-domain:: artificial-intelligence
+	- status:: draft
+- definition:: A learnable lookup table that maps each token in the vocabulary to a dense vector representation, providing the initial semantic encoding for transformer models.
+
+
+## OWL Formal Semantics
+
+```clojure
+;; OWL Functional Syntax
+
+(Declaration (Class :TokenEmbedding))
+
+;; Annotations
+(AnnotationAssertion rdfs:label :TokenEmbedding "Token Embedding"@en)
+(AnnotationAssertion rdfs:comment :TokenEmbedding "A learnable lookup table that maps each token in the vocabulary to a dense vector representation, providing the initial semantic encoding for transformer models."@en)
+
+;; Data Properties
+(AnnotationAssertion dcterms:identifier :TokenEmbedding "AI-0237"^^xsd:string)
+(DataPropertyAssertion :isAITechnology :TokenEmbedding "true"^^xsd:boolean)
+```
+
+## Characteristics
+
+- **Learnable Vectors**: Trained end-to-end with model
+- **Dense Representation**: Continuous vector space (typically 512-4096 dimensions)
+- **Semantic Encoding**: Captures token meaning and relationships
+- **Combined with Positional Encoding**: Added to position embeddings in transformers
+
+## Academic Foundations
+
+**Primary Source**: Standard component in all transformer architectures; Vaswani et al., arXiv:1706.03762 (2017)
+
+**Dimension**: Typically matches model hidden dimension (d_model), though ALBERT uses factorised embeddings.
+
+## Technical Context
+
+Token embeddings convert discrete token IDs into continuous vectors that the model can process. These embeddings are learned during training to capture semantic relationships. In transformers, token embeddings are combined with positional encodings before being fed to the model.
+
+## Ontological Relationships
+
+- **Broader Term**: Embedding Layer
+- **Related Terms**: Positional Encoding, Vocabulary, Hidden State
+- **Component Of**: Transformer Architecture
+
+## Usage Context
+
+"Token embeddings provide the initial dense representation of discrete tokens for processing by transformer layers."
+
+## References
+
+- Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
+- Mikolov et al. (2013). "Efficient Estimation of Word Representations in Vector Space". arXiv:1301.3781
+
+---
+
+*Ontology Term managed by AI-Grounded Ontology Working Group*
+*UK English Spelling Standards Applied*
+	- maturity:: draft
 	- owl:class:: ai:TokenEmbedding
-	- owl:physicality:: Abstract
-	- owl:role:: Process
-	- maturity:: mature
-	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
-	- #### Relationships
-- is-subclass-of:: [[NeuralNetworkComponent]]
-	  id:: token-embedding-relationships
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Token Embedding
+	- A learnable lookup table that maps each token in the vocabulary to a dense vector representation, providing the initial semantic encoding for transformer models.
+
+	- ## About me
+		- {{embed ((661d5f74-f334-4872-ba92-51244c2fb490))}}
+	- {{embed ((661d5f74-5dfe-4569-9374-37b63637b3d8))}}
+	- {{embed ((66314bd7-86ef-4ca2-8f39-704e133ac0a3))}}
+
+	- ## About me
+		- {{embed ((661d5f74-f334-4872-ba92-51244c2fb490))}}
+	- {{embed ((661d5f74-5dfe-4569-9374-37b63637b3d8))}}
+	- {{embed ((66314bd7-86ef-4ca2-8f39-704e133ac0a3))}}
+
+	- ## About me
+		- {{embed ((661d5f74-f334-4872-ba92-51244c2fb490))}}
+	- {{embed ((661d5f74-5dfe-4569-9374-37b63637b3d8))}}
+		- {{embed ((661d5f76-3ffa-4f10-9027-6f8e90601162))}}
+	- {{embed ((66446c0e-93be-431d-93d4-1e5fa36848c5))}}
+	- {{embed ((66408f9e-30e0-442b-9aba-9eb51e36a739))}}
+
+- ## Jailbreaking
+	- {{embed ((661d5f7f-e2b4-4f0b-931a-3590c52f1e34))}}
+	- {{embed ((661e41bc-42da-4bbd-a1c9-32892bd2d43a))}}
+
+- ## Jailbreaking
+	- {{embed ((661d5f7f-e2b4-4f0b-931a-3590c52f1e34))}}
+	- {{embed ((661e41bc-42da-4bbd-a1c9-32892bd2d43a))}}
+
+- ## Jailbreaking
+	- {{embed ((661d5f7f-e2b4-4f0b-931a-3590c52f1e34))}}
+	- {{embed ((661e41bc-42da-4bbd-a1c9-32892bd2d43a))}}
+
+## Characteristics
+
+- **Learnable Vectors**: Trained end-to-end with model
+- **Dense Representation**: Continuous vector space (typically 512-4096 dimensions)
+- **Semantic Encoding**: Captures token meaning and relationships
+- **Combined with Positional Encoding**: Added to position embeddings in transformers
+
+## Academic Foundations
+
+**Primary Source**: Standard component in all transformer architectures; Vaswani et al., arXiv:1706.03762 (2017)
+
+**Dimension**: Typically matches model hidden dimension (d_model), though ALBERT uses factorised embeddings.
+
+## Technical Context
+
+Token embeddings convert discrete token IDs into continuous vectors that the model can process. These embeddings are learned during training to capture semantic relationships. In transformers, token embeddings are combined with positional encodings before being fed to the model.
+
+## Ontological Relationships
+
+- **Broader Term**: Embedding Layer
+- **Related Terms**: Positional Encoding, Vocabulary, Hidden State
+- **Component Of**: Transformer Architecture
+
+## Usage Context
+
+"Token embeddings provide the initial dense representation of discrete tokens for processing by transformer layers."
+
+## References
+
+- Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
+- Mikolov et al. (2013). "Efficient Estimation of Word Representations in Vector Space". arXiv:1301.3781
+
+---
+
+*Ontology Term managed by AI-Grounded Ontology Working Group*
+*UK English Spelling Standards Applied*
+	-
+	- ### Original Content
 	  collapsed:: true
-		- hasPart:: [[Vocabulary]], [[EmbeddingMatrix]]
-		- dependsOn:: [[Tokenization]]
-		- usedBy:: [[TransformerArchitecture]], [[LanguageModel]]
-		- relatedTo:: [[PositionalEncoding]], [[WordEmbedding]], [[ContextualEmbedding]]
+		- ```
+# Token Embedding
+		  
+		  **Term ID**: AI-0237
+		  **Category**: Architecture Component
+		  **Ontology Version**: 1.0
+		  **Last Updated**: 2025-10-27
+		  
+		  ## Definition
+		  
+		  A learnable lookup table that maps each token in the vocabulary to a dense vector representation, providing the initial semantic encoding for transformer models.
+		  
+		  ## Characteristics
+		  
+		  - **Learnable Vectors**: Trained end-to-end with model
+		  - **Dense Representation**: Continuous vector space (typically 512-4096 dimensions)
+		  - **Semantic Encoding**: Captures token meaning and relationships
+		  - **Combined with Positional Encoding**: Added to position embeddings in transformers
+		  
+		  ## Academic Foundations
+		  
+		  **Primary Source**: Standard component in all transformer architectures; Vaswani et al., arXiv:1706.03762 (2017)
+		  
+		  **Dimension**: Typically matches model hidden dimension (d_model), though ALBERT uses factorised embeddings.
+		  
+		  ## Technical Context
+		  
+		  Token embeddings convert discrete token IDs into continuous vectors that the model can process. These embeddings are learned during training to capture semantic relationships. In transformers, token embeddings are combined with positional encodings before being fed to the model.
+		  
+		  ## Ontological Relationships
+		  
+		  - **Broader Term**: Embedding Layer
+		  - **Related Terms**: Positional Encoding, Vocabulary, Hidden State
+		  - **Component Of**: Transformer Architecture
+		  
+		  ## Usage Context
+		  
+		  "Token embeddings provide the initial dense representation of discrete tokens for processing by transformer layers."
+		  
+		  ## References
+		  
+		  - Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
+		  - Mikolov et al. (2013). "Efficient Estimation of Word Representations in Vector Space". arXiv:1301.3781
+		  
+		  ---
+		  
+		  *Ontology Term managed by AI-Grounded Ontology Working Group*
+		  *UK English Spelling Standards Applied*
+		  
+		  ```
 
-## Token Embedding
+- public-access:: true
+	- definition:: A learnable lookup table that maps each token in the vocabulary to a dense vector representation, providing the initial semantic encoding for transformer models.
 
-Token Embedding refers to a learnable lookup table that maps each token in the vocabulary to a dense vector representation, providing the initial semantic encoding for transformer models.
+
+
+
+## Academic Context
+
+- Token embedding is a fundamental concept in natural language processing and deep learning, serving as the initial step in converting discrete tokens into continuous vector representations.
+  - These embeddings provide the semantic encoding that enables models, particularly transformers, to process and understand language.
+  - The academic foundation traces back to early word embedding techniques like Word2Vec and GloVe, evolving into contextual embeddings powered by transformer architectures such as BERT and GPT.
+  - Embeddings are typically implemented as learnable lookup tables mapping each token in a vocabulary to a dense vector, which is then combined with positional encodings to preserve token order.
+
+## Current Landscape (2025)
 
 - Token embeddings remain central to transformer-based models, which dominate state-of-the-art natural language understanding and generation tasks.
   - Modern embeddings are often contextual, dynamically adjusting based on surrounding tokens via self-attention mechanisms.
@@ -38,14 +215,6 @@ Token Embedding refers to a learnable lookup table that maps each token in the v
 - Standards and frameworks:
   - Embedding layers are standard components in transformer libraries such as Hugging Face Transformers and TensorFlow.
   - Tokenisation and embedding strategies continue to evolve, with Unicode-centric tokenisers gaining attention for universal text coverage.
-
-## Technical Details
-
-- **Id**: token-embedding-ontology
-- **Collapsed**: true
-- **Source Domain**: ai
-- **Status**: draft
-- **Public Access**: true
 
 ## Research & Literature
 
@@ -84,12 +253,14 @@ Token Embedding refers to a learnable lookup table that maps each token in the v
 
 ## References
 
-1. Bochkov, A. (2025). *Emergent Semantics Beyond Token Embeddings: Transformer LMs with Frozen Visual Unicode Representations*. Transactions on Machine Learning Research. DOI: 10.48550/arXiv.2507.04886
-2. Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). *Attention Is All You Need*. Advances in Neural Information Processing Systems.
-3. Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). *BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding*. NAACL.
-4. PricePedia. (2025). *Tokens & Transformers: the heart of modern Machine Learning models*.
-5. GoCodeo. (2025). *Next-Gen Embeddings in 2025: Transformers, Instruction-Tuning, Multimodal Vectors*.
+1. Bochkov, A. (2025). *Emergent Semantics Beyond Token Embeddings: Transformer LMs with Frozen Visual Unicode Representations*. Transactions on Machine Learning Research. DOI: 10.48550/arXiv.2507.04886  
+2. Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). *Attention Is All You Need*. Advances in Neural Information Processing Systems.  
+3. Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). *BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding*. NAACL.  
+4. PricePedia. (2025). *Tokens & Transformers: the heart of modern Machine Learning models*.  
+5. GoCodeo. (2025). *Next-Gen Embeddings in 2025: Transformers, Instruction-Tuning, Multimodal Vectors*.  
+
 (And yes, token embeddings may not hold all the meaning, but they certainly hold the keys to the kingdom — or at least to your next chatbot’s vocabulary.)
+
 
 ## Metadata
 

@@ -1,0 +1,11 @@
+{
+  "id": "debug linked node",
+  "title": "debug linked node",
+  "content": "- This is a node linked to [[Debug Test Page]]\n-",
+  "backlinks": [
+    "Debug Test Page"
+  ],
+  "wiki_links": [
+    "Debug Test Page"
+  ]
+}

@@ -2,8 +2,8 @@
   id:: autonomous-robot-ontology
   collapsed:: true
 	- preferred-term:: Autonomous Robot
-	- source-domain:: mv
-  - owl:class:: mv:AutonomousRobot
+	- source-domain:: robotics
+  - owl:class:: rb:AutonomousRobot
 	- status:: draft
 	- public-access:: true
 	- definition:: 	- maturity:: draft

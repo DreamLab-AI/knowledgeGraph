@@ -7,19 +7,13 @@
     "Power Supply",
     "Database System",
     "Blockchain Technology",
-    "Blockchain",
     "Robotics Systems",
-    "Metaverse",
     "Computing Infrastructure",
-    "Manchester Tech Cluster",
-    "Artificial Intelligence",
     "Telecollaboration",
-    "Distributed Computing",
     "Network Protocol",
     "Metaverse Technology",
     "Cloud Infrastructure",
     "ArtificialIntelligenceDomain",
-    "Economics",
     "Performance Optimization",
     "TC-0001-telecollaboration-domain",
     "ArtificialIntelligence",
@@ -27,13 +21,13 @@
     "AIDomain"
   ],
   "wiki_links": [
-    "Metaverse Technology",
-    "Narrative Gold Mine",
     "Telecollaboration",
-    "Robotics Systems",
-    "owl:Thing",
+    "Narrative Gold Mine",
+    "Artificial Intelligence",
     "Blockchain Technology",
-    "Artificial Intelligence"
+    "owl:Thing",
+    "Robotics Systems",
+    "Metaverse Technology"
   ],
   "ontology": {
     "term_id": "NGM-0001",

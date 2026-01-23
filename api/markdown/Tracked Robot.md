@@ -1,11 +1,46 @@
 - ### OntologyBlock
-  id:: tracked-robot-ontology
-  - ontology:: true
-  - public-access:: true
-  - term-id:: RB-1016
-  - preferred-term:: Tracked Robot
-  - source-domain:: rb
-  - owl:class:: rb:TrackedRobot
-  - is-subclass-of:: [[Robotics]]
-  - status:: draft
-  - definition:: A tracked robot uses continuous track locomotion for mobility over rough or soft terrain where wheeled robots would struggle.
+  id:: trackedrobot-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0113
+    - filename-history:: ["RB-0113-trackedrobot.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: RB-0113
+    - preferred-term:: Tracked Robot
+    - source-domain:: rb
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
+
+  - **Definition**
+    - definition:: Tracked robot uses continuous tracks providing superior traction on rough terrain.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: rb:TrackedRobot
+    - belongsToDomain:: [[Robotics]]
+
+  - #### Relationships
+    - is-subclass-of:: [[Ground Robot]]
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :TrackedRobot))
+      (SubClassOf :TrackedRobot :GroundRobot)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :TrackedRobot "Tracked Robot"@en)
+      (AnnotationAssertion rdfs:comment :TrackedRobot
+        "Tracked robot uses continuous tracks providing superior traction on rough terrain."@en)
+      ```
+
+- ## About Tracked Robot
+  Tracked robot uses continuous tracks providing superior traction on rough terrain.
+  
+  A ground robot using continuous tracks (tank treads) for locomotion.

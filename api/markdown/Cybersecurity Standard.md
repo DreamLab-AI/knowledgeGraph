@@ -1,19 +1,46 @@
-### Definition
-
-Cybersecurity Standard establishes requirements, guidelines, and best practices for protecting robot systems against digital threats including unauthorized access, malware, data breaches, and cyberattacks. As robots increasingly connect to enterprise networks, cloud services, and public internet, cybersecurity has evolved from optional consideration to mandatory compliance requirement, particularly for industrial, medical, and service robots operating in safety-critical or data-sensitive environments.
-
 - ### OntologyBlock
-  id:: Cybersecurity Standard
-  - ontology:: true
-  - public-access:: true
-  - term-id:: RB-1040
-  - preferred-term:: Cybersecurity Standard
-  - owl:class:: rb:CybersecurityStandard
-  - is-subclass-of:: [[Robotics]]
-  - definition:: A cybersecurity standard establishes requirements, guidelines, and best practices for protecting robot systems against digital threats including unauthorised access, malware, and cyberattacks.
-  - source-domain:: rb
-  - status:: draft
+  id:: cybersecuritystandard-ontology
+  collapsed:: true
 
-Cybersecurity Standard establishes requirements, guidelines, and best practices for protecting robot systems against digital threats including unauthorized access, malware, data breaches, and cyberattacks. As robots increasingly connect to enterprise networks, cloud services, and public internet, cybersecurity has evolved from optional consideration to mandatory compliance requirement, particularly for industrial, medical, and service robots operating in safetycritical or datasensitive environments.
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0191
+    - filename-history:: ["RB-0191-cybersecuritystandard.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: RB-0191
+    - preferred-term:: Cybersecurity Standard
+    - source-domain:: rb
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-Cybersecurity Standard establishes requirements, guidelines, and best practices for protecting robot systems against digital threats including unauthorized access, malware, data breaches, and cyberattacks. As robots increasingly connect to enterprise networks, cloud services, and public internet, cybersecurity has evolved from optional consideration to mandatory compliance requirement, particularly for industrial, medical, and service robots operating in safetycritical or datasensitive environments.
+  - **Definition**
+    - definition:: Cybersecurity standard addresses digital security threats to robot systems.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: rb:CybersecurityStandard
+    - belongsToDomain:: [[Robotics]]
+
+  - #### Relationships
+    - is-subclass-of:: [[Robot Standard]]
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :CybersecurityStandard))
+      (SubClassOf :CybersecurityStandard :RobotStandard)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :CybersecurityStandard "Cybersecurity Standard"@en)
+      (AnnotationAssertion rdfs:comment :CybersecurityStandard
+        "Cybersecurity standard addresses digital security threats to robot systems."@en)
+      ```
+
+- ## About Cybersecurity Standard
+  Cybersecurity standard addresses digital security threats to robot systems.
+  
+  A standard for robot cybersecurity requirements.

@@ -1,19 +1,9 @@
-{{twitter https://twitter.com/cocktailpeanut/status/1765462787046686968}}
+public:: true
 
-- ### OntologyBlock
-  id:: 3D and 4D
-  - ontology:: true
-  - public-access:: true
-  - term-id:: AI-7972
-  - preferred-term:: 3dAnd4d
-  - source-domain:: ai
-  - status:: draft
-  - owl:class:: ai:3dAnd4d
-
-
-### Relationships
-- is-subclass-of:: [[Artificial Intelligence]]
-### [NVIDIA Edify](https://research.nvidia.com/labs/dir/edify-3d/) - Edify 3D is a framework developed by NVIDIA Research that focuses on creating, editing, and refining 3D scenes and content.
+- # 3D and 4D Content Creation
+- This page provides an overview of the tools and techniques used to create 3D and 4D content, with a focus on AI-powered solutions.
+- ## Text to 3D
+	- ### [NVIDIA Edify](https://research.nvidia.com/labs/dir/edify-3d/) - Edify 3D is a framework developed by NVIDIA Research that focuses on creating, editing, and refining 3D scenes and content.
 - The system leverages [[artificial intelligence]] and [[machine learning]] to allow users to interact with 3D models in a more intuitive and accessible way, streamlining the 3D creation process.
 - One key aim of Edify 3D is to simplify complex tasks like object placement, colour correction, and material assignment within a 3D environment.
 - The framework allows for interactive editing using natural language commands or simple visual cues, making it easier for users with varying levels of 3D expertise to contribute.
@@ -521,7 +511,7 @@
 - The system is intended for applications such as autonomous driving, [[robotics]], and augmented reality where precise 3D understanding is critical.
 	- ### **Motion Model for Image Animation**
 		- [Thin Plate Spline Motion Model](https://replicate.com/yoyo-nb/thin-plate-spline-motion-model) - *   This model animates a still image by warping it according to the motion of a driving video.
--   It uses a thin-plate spline motion model to learn [[modelling]] patterns from the driving video.
+-   It uses a thin-plate spline motion model to learn [[modeling]] patterns from the driving video.
 -   The system uses keypoint detection to identify facial landmarks or other features in both the source image and the driving video.
 -   The thin-plate spline transformation warps the source image so that its keypoints move in accordance with the motion depicted in the driving video.
 -   Users can input a static image and a video to generate an animated version of the image following the driving video's movements.
@@ -556,17 +546,9 @@
 - Focusing on a few key areas, rather than trying to do everything at once, is recommended.
 - It also advises against constantly comparing yourself to others and their progress.
 - Finding a supportive community and mentors can provide encouragement and guidance.
-- The thread emphasises the importance of being adaptable and willing to change course if something isn't working.
+- The thread emphasizes the importance of being adaptable and willing to change course if something isn't working.
 - Building a strong foundation of [[skills development]] and knowledge is highlighted as a long-term investment.
 - Patience and persistence are crucial, as significant achievements often take time and effort.
 - The author notes the futility of seeking external validation, stating that you'll still be you regardless of success.
 	  {{twitter https://twitter.com/cocktailpeanut/status/1765462787046686968}}
 - {{twitter https://twitter.com/blizaine/status/1765434684450742764?}}
-
-
-## Metadata
-
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable

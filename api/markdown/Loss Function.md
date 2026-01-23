@@ -1,74 +1,239 @@
-id:: loss-function-ontology
-
 - ### OntologyBlock
-  id:: Loss Function
-  - ontology:: true
-  - public-access:: true
-  - term-id:: MV-0883
-  - preferred-term:: Loss Function
-  - source-domain:: ai
-  - status:: active
-  - definition:: 
+  id:: loss-function-ontology
+  collapsed:: true
+	- ontology:: true
+	- term-id:: AI-0047
+	- preferred-term:: Loss Function
+	- source-domain:: artificial-intelligence
+	- status:: draft
+- public-access:: true
+	- definition:: ### Primary Definition
+A **Loss Function** is a mathematical function that quantifies the difference between predicted outputs and true values, providing a scalar measure of model error. Training algorithms minimise the loss function to improve model performance.
+	- maturity:: draft
+	- owl:class:: ai:LossFunction
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Loss Function
+	- ### Primary Definition
+A **Loss Function** is a mathematical function that quantifies the difference between predicted outputs and true values, providing a scalar measure of model error. Training algorithms minimise the loss function to improve model performance.
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# Loss Function
+		  
+		  ## Metadata
+		  - **Term ID**: AI-0047
+		  - **Type**: AIAlgorithm
+		  - **Classification**: Objective Function
+		  - **Domain**: MLDomain
+		  - **Layer**: AlgorithmicLayer
+		  - **Status**: Active
+		  - **Version**: 1.0
+		  - **Last Updated**: 2025-10-27
+		  - **Priority**: 1=Foundational
+		  
+		  ## Definition
+		  
+		  ### Primary Definition
+		  A **Loss Function** is a mathematical function that quantifies the difference between predicted outputs and true values, providing a scalar measure of model error. Training algorithms minimise the loss function to improve model performance.
+		  
+		  **Source**: ISO/IEC 22989:2022 (Training) + Academic consensus - Authority Score: 0.94
+		  
+		  ### Operational Characteristics
+		  - **Error Measurement**: Quantifies prediction mistakes
+		  - **Differentiable**: Must allow gradient computation
+		  - **Task-Specific**: Different tasks use different loss functions
+		  - **Optimisation Target**: Training minimises loss
+		  - **Scalar Output**: Reduces error to single number
+		  
+		  ## Relationships
+		  
+		  ### Parent Classes
+		  - **Objective Function**: Loss function is a type of objective
+		  - **Training Component**: Essential for supervised learning
+		  
+		  ### Child Classes
+		  - **Mean Squared Error (MSE)**: For regression tasks
+		  - **Cross-Entropy Loss**: For classification tasks
+		  - **Binary Cross-Entropy**: For binary classification
+		  - **Hinge Loss**: For support vector machines
+		  
+		  ### Related Concepts
+		  - **Training** (AI-0041): Minimises loss function
+		  - **Gradient Descent** (AI-0044): Optimises loss function
+		  - **Backpropagation** (AI-0043): Computes loss gradients
+		  - **Overfitting** (AI-0054): Low training loss but poor generalisation
+		  
+		  ## Formal Ontology
+		  
+		  <details>
+		  <summary>Click to expand OntologyBlock</summary>
+		  
+		  ```clojure
+		  ;; Loss Function Ontology (OWL Functional Syntax)
+		  ;; Term ID: AI-0047
+		  ;; Domain: MLDomain | Layer: AlgorithmicLayer
+		  
+		  (Declaration (Class :LossFunction))
+		  
+		  ;; Core Classification
+		  (SubClassOf :LossFunction :ObjectiveFunction)
+		  (SubClassOf :LossFunction :TrainingComponent)
+		  
+		  ;; Functional Properties
+		  (SubClassOf :LossFunction
+		    (ObjectSomeValuesFrom :quantifies :PredictionError))
+		  (SubClassOf :LossFunction
+		    (ObjectSomeValuesFrom :measuresDiscrepancy :PredictedVsActual))
+		  (SubClassOf :LossFunction
+		    (ObjectSomeValuesFrom :minimisedBy :TrainingAlgorithm))
+		  
+		  ;; Mathematical Properties
+		  (SubClassOf :LossFunction
+		    (ObjectSomeValuesFrom :producesScalarValue :ErrorMetric))
+		  (SubClassOf :LossFunction
+		    (ObjectSomeValuesFrom :mustBeDifferentiable :ForBackpropagation))
+		  
+		  ;; Child Classes
+		  (SubClassOf :MeanSquaredError :LossFunction)
+		  (SubClassOf :CrossEntropyLoss :LossFunction)
+		  (SubClassOf :BinaryCrossEntropy :LossFunction)
+		  (SubClassOf :HingeLoss :LossFunction)
+		  
+		  ;; Annotations
+		  (AnnotationAssertion rdfs:label :LossFunction "Loss Function"@en-GB)
+		  (AnnotationAssertion rdfs:comment :LossFunction
+		    "Mathematical function quantifying prediction error, minimised during training to improve model performance"@en)
+		  (AnnotationAssertion :isoReference :LossFunction "ISO/IEC 22989:2022")
+		  (AnnotationAssertion :authorityScore :LossFunction "0.94"^^xsd:float)
+		  (AnnotationAssertion :priorityLevel :LossFunction "1"^^xsd:integer)
+		  
+		  ;; Data Properties
+		  (DataPropertyAssertion :isDifferentiable :LossFunction "true"^^xsd:boolean)
+		  (DataPropertyAssertion :producesScalar :LossFunction "true"^^xsd:boolean)
+		  (DataPropertyAssertion :taskSpecific :LossFunction "true"^^xsd:boolean)
+		  ```
+		  </details>
+		  
+		  ## Standards Alignment
+		  
+		  ### ISO/IEC Standards
+		  - **ISO/IEC 22989:2022**: Training and evaluation
+		  
+		  ### NIST AI RMF
+		  - **Function**: MEASURE (Model performance evaluation)
+		  
+		  ## Related Terms
+		  - **Training** (AI-0041): Minimises loss function
+		  - **Gradient Descent** (AI-0044): Optimisation using loss
+		  - **Overfitting** (AI-0054): Related to loss behaviour
+		  - **Accuracy** (AI-0220): Performance metric beyond loss
+		  
+		  ## References
+		  1. ISO/IEC 22989:2022 - Training concepts
+		  2. NIST AI 100-3 - Technical terminology
+		  
+		  ---
+		  
+		  **Authority Score**: 0.94 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST
+		  
+		  ```
 
-### Relationships
-- is-subclass-of:: [[Artificial Intelligence]]
-### Primary Sources
-1. Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep Learning*. MIT Press. DOI: 10.5555/3086952
-2. Bishop, C. M. (2006). *Pattern Recognition and Machine Learning*. Springer. ISBN: 978-0387310732
-3. Murphy, K. P. (2022). *Probabilistic Machine Learning: An Introduction*. MIT Press. ISBN: 978-0262046824
-4. Hastie, T., Tibshirani, R., & Friedman, J. (2009). *The Elements of Statistical Learning*. Springer. DOI: 10.1007/978-0-387-84858-7
+		- ### My flossverse stuff from 2022
+			- {{tweet https://twitter.com/flossverse/status/1629601804521537537}}
 
-### Recent Research [Updated 2025]
-5. Zhang, Z., et al. (2025). "Loss Functions in Deep Learning: A Comprehensive Review." *arXiv:2504.04242* [cs.LG]. URL: https://arxiv.org/abs/2504.04242
-6. Janocha, K., & Czarnecki, W. M. (2017). "On Loss Functions for Deep Neural Networks in Classification." *arXiv:1702.05659* [cs.LG]
-7. Wang, Q., et al. (2021). "A Survey on Loss Functions for Classification." *IEEE Access*, 9, 150788-150801. DOI: 10.1109/ACCESS.2021.3126264
-8. Lin, T.-Y., et al. (2017). "Focal Loss for Dense Object Detection." *IEEE ICCV*. DOI: 10.1109/ICCV.2017.324
+		- ### My flossverse stuff from 2022
+			- {{tweet https://twitter.com/flossverse/status/1629601804521537537}}
 
-### Standards and Technical Documentation
-9. ISO/IEC 22989:2022. *Information technology — Artificial intelligence — Artificial intelligence concepts and terminology*. International Organization for Standardization.
-10. ISO/IEC 23053:2022. *Framework for Artificial Intelligence (AI) Systems Using Machine Learning (ML)*. International Organization for Standardization.
-11. NIST AI 100-3. *AI Risk Management Framework*. National Institute of Standards and Technology.
+		- ### My flossverse stuff from 2022
+			- {{tweet https://twitter.com/flossverse/status/1629601804521537537}}
 
-### Industry and Educational Resources
-12. DataCamp. "Loss Functions in Machine Learning Explained." URL: https://www.datacamp.com/tutorial/loss-function-in-machine-learning
-13. Built In. "7 Common Loss Functions in Machine Learning." URL: https://builtin.com/machine-learning/common-loss-functions
-14. C3 AI. "Loss Functions - Tuning a Machine Learning Model." URL: https://c3.ai/introduction-what-is-machine-learning/loss-functions/
-15. Google Developers. "Linear regression: Loss | Machine Learning Crash Course." URL: https://developers.google.com/machine-learning/crash-course/linear-regression/loss
-16. IBM. "What is Loss Function?" URL: https://www.ibm.com/think/topics/loss-function
-17. DataRobot Blog. "Introduction to Loss Functions." URL: https://www.datarobot.com/blog/introduction-to-loss-functions/
+- ## Learning and Loss Functions
+	- **Concept:** So how do these AI systems learn to perform these tasks? The key lies in the concept of the "loss function". This function serves as a judge, scoring the AI's performance on its task.
+	- **Initial Stage:** At the beginning of the training process, the numbers within the AI's matrices are typically assigned randomly. Think of it like a scrambled puzzle, where the pieces are initially in the wrong places. This leads to what we call "garbage in, garbage out" – the AI's initial predictions are often wildly inaccurate.
+	- **Scoring:** The loss function comes into play by comparing the AI's output with the correct answer. It then calculates a score, essentially telling the AI how far off it is from the desired outcome.
+	- **Backpropagation:** This score is then used in a process called "backpropagation". Here, the system works backward through all the layers, adjusting the values within the matrices. Imagine each number in the matrix as a tiny knob – backpropagation asks "Do I need to tweak this knob up or down to make the overall score a little better?" This adjustment is based on the chain rule of calculus.
+	- **Iteration:** This entire process of scoring and adjusting (backpropagation) is repeated in a loop called "gradient descent". It's like a guided search, slowly tweaking the AI's parameters to find a configuration that minimizes the loss function.
 
-### Academic Resources
-18. Wikipedia. "Loss function." URL: https://en.wikipedia.org/wiki/Loss_function
-19. GeeksforGeeks. "ML | Common Loss Functions." URL: https://www.geeksforgeeks.org/machine-learning/ml-common-loss-functions/
+- ## Learning and Loss Functions
+	- **Concept:** So how do these AI systems learn to perform these tasks? The key lies in the concept of the "loss function". This function serves as a judge, scoring the AI's performance on its task.
+	- **Initial Stage:** At the beginning of the training process, the numbers within the AI's matrices are typically assigned randomly. Think of it like a scrambled puzzle, where the pieces are initially in the wrong places. This leads to what we call "garbage in, garbage out" – the AI's initial predictions are often wildly inaccurate.
+	- **Scoring:** The loss function comes into play by comparing the AI's output with the correct answer. It then calculates a score, essentially telling the AI how far off it is from the desired outcome.
+	- **Backpropagation:** This score is then used in a process called "backpropagation". Here, the system works backward through all the layers, adjusting the values within the matrices. Imagine each number in the matrix as a tiny knob – backpropagation asks "Do I need to tweak this knob up or down to make the overall score a little better?" This adjustment is based on the chain rule of calculus.
+	- **Iteration:** This entire process of scoring and adjusting (backpropagation) is repeated in a loop called "gradient descent". It's like a guided search, slowly tweaking the AI's parameters to find a configuration that minimizes the loss function.
+## Academic Context
 
-### Specialized Research
-20. Cui, Y., et al. (2019). "Class-Balanced Loss Based on Effective Number of Samples." *CVPR*. DOI: 10.1109/CVPR.2019.00949
-21. Raissi, M., et al. (2019). "Physics-informed neural networks." *Journal of Computational Physics*, 378, 686-707. DOI: 10.1016/j.jcp.2018.10.045
-22. Oord, A. v. d., et al. (2018). "Representation Learning with Contrastive Predictive Coding." *arXiv:1807.03748* [cs.LG]
-23. Vapnik, V. N. (1998). *Statistical Learning Theory*. Wiley-Interscience. ISBN: 978-0471030034
+- Loss functions are fundamental mathematical constructs in machine learning and AI that quantify the discrepancy between predicted outputs and true values, producing a scalar error measure.
+  - They provide the objective signal that training algorithms use to update model parameters via optimisation techniques such as gradient descent.
+  - The concept is well-established in statistical learning theory and optimisation, with roots in classical regression and classification error metrics.
+- Loss functions are categorised primarily by task type: regression (continuous outputs) and classification (discrete labels).
+  - For regression, common losses include Mean Squared Error (MSE) and Mean Absolute Error (MAE).
+  - For classification, losses such as cross-entropy and hinge loss are prevalent.
+- Effective loss functions balance bias and variance, helping to avoid overfitting and underfitting by guiding model generalisation.
+- The distinction between loss function and cost function is important: the loss function measures error on a single example, while the cost function aggregates loss over the entire dataset, often as an average[1][2][3].
+
+## Current Landscape (2025)
+
+- Loss functions remain central to AI model training across domains including computer vision, natural language processing, and reinforcement learning.
+  - In deep learning, specialised loss functions are tailored for generative models (e.g., adversarial loss in GANs) and discriminative tasks (e.g., classification loss)[3].
+- Industry adoption is widespread, with major platforms (Google, IBM, DataRobot) providing extensive tooling and documentation on loss function selection and tuning[4][7][9].
+- UK organisations, including research groups and AI startups in hubs like Manchester and Leeds, actively develop and apply advanced loss functions for domain-specific applications such as healthcare diagnostics and autonomous systems.
+- Technical capabilities have improved with differentiable programming frameworks enabling custom loss functions and hybrid objectives.
+- Limitations persist: loss functions alone are insufficient as sole evaluation metrics, as identical loss values can mask different prediction biases or errors[4].
+- Standards such as ISO/IEC 22989:2022 provide formal definitions and classifications for AI concepts including loss functions, supporting interoperability and clarity[3].
+
+## Research & Literature
+
+- Key academic references include:
+  - Goodfellow, Bengio, and Courville (2016). *Deep Learning*. MIT Press. DOI: 10.5555/3086952
+  - Zhang et al. (2025). "Loss Functions in Deep Learning: A Comprehensive Review." arXiv:2504.04242 [cs.LG]. URL: https://arxiv.org/abs/2504.04242[3]
+  - Bishop, C. M. (2006). *Pattern Recognition and Machine Learning*. Springer.
+- Ongoing research explores:
+  - Designing loss functions that better handle noisy, imbalanced, or adversarial data.
+  - Task-specific losses for emerging AI applications such as multimodal learning and explainability.
+  - Theoretical analysis of loss landscapes and their impact on optimisation dynamics.
+- Empirical studies continue to evaluate the impact of loss function choice on model robustness and fairness.
+
+## UK Context
+
+- The UK AI sector, including centres like the Alan Turing Institute and universities in the North of England (e.g., University of Manchester, University of Leeds), contributes to foundational and applied research on loss functions.
+- Regional innovation hubs focus on healthcare AI, where loss functions are adapted for imbalanced medical datasets and interpretability requirements.
+- Collaborations between academia and industry in Northern England foster development of bespoke loss functions for autonomous vehicles and smart manufacturing.
+- The UK government’s AI strategy emphasises ethical and transparent AI, influencing research on loss functions that incorporate fairness and bias mitigation.
+
+## Future Directions
+
+- Emerging trends include:
+  - Integration of multi-objective loss functions balancing accuracy, fairness, and privacy.
+  - Automated loss function design via meta-learning and neural architecture search.
+  - Loss functions tailored for continual learning and adaptation in dynamic environments.
+- Anticipated challenges:
+  - Ensuring loss functions align with real-world performance metrics beyond mathematical error.
+  - Addressing computational complexity in large-scale models.
+  - Balancing interpretability with optimisation efficacy.
+- Research priorities:
+  - Developing loss functions robust to distribution shifts and adversarial attacks.
+  - Formalising loss function evaluation frameworks incorporating domain-specific constraints.
+  - Enhancing UK regional capabilities through targeted funding and interdisciplinary collaboration.
+
+## References
+
+1. DataCamp. Loss Functions in Machine Learning Explained. URL: https://www.datacamp.com/tutorial/loss-function-in-machine-learning  
+2. Built In. 7 Common Loss Functions in Machine Learning. URL: https://builtin.com/machine-learning/common-loss-functions  
+3. Zhang, et al. (2025). Loss Functions in Deep Learning: A Comprehensive Review. arXiv:2504.04242. URL: https://arxiv.org/abs/2504.04242  
+4. C3 AI. Loss Functions - Tuning a Machine Learning Model. URL: https://c3.ai/introduction-what-is-machine-learning/loss-functions/  
+5. GeeksforGeeks. ML | Common Loss Functions. URL: https://www.geeksforgeeks.org/machine-learning/ml-common-loss-functions/  
+6. Google Developers. Linear regression: Loss | Machine Learning Crash Course. URL: https://developers.google.com/machine-learning/crash-course/linear-regression/loss  
+7. IBM. What is Loss Function? URL: https://www.ibm.com/think/topics/loss-function  
+8. Wikipedia. Loss function. URL: https://en.wikipedia.org/wiki/Loss_function  
+9. DataRobot Blog. Introduction to Loss Functions. URL: https://www.datarobot.com/blog/introduction-to-loss-functions/  
+10. Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep Learning. MIT Press. DOI: 10.5555/3086952  
 
 ## Metadata
 
-- **Document Type**: Knowledge Graph Entry - [[Artificial Intelligence]] Domain
-- **Primary Category**: [[Machine Learning]], [[Deep Learning]]
-- **Secondary Categories**: [[Optimization]], [[Statistical Learning]]
-- **Blockchain Relevance**: None - Pure AI/ML topic
-- **Last Updated**: 2025-11-14 [Updated 2025]
-- **Review Status**: Comprehensive editorial review completed
-- **Verification**: Academic sources verified, citations cross-referenced
-- **Regional Context**: UK/Northern England where applicable
-- **Quality Score**: 0.95 (post-processing)
-- **Authority Score**: 0.94 (ISO/IEC 22989:2022)
-- **Completeness**: High - Comprehensive coverage with 23 academic references
-- **Link Density**: High - 100+ [[wiki-links]] to related concepts
-
----
-
-**Processing Notes**:
-- Merged content from Loss-Function.md (hyphenated duplicate)
-- Expanded all [[wiki-links]] for related ML/AI concepts
-- Added [Updated 2025] markers to current data
-- Enhanced academic citations with DOIs and ISBNs
-- Fixed Logseq formatting inconsistencies
-- Assessed blockchain relevance: NONE (pure AI/ML content)
-- Twitter URL marked for manual expansion (API unavailable)
+- Last Updated: 2025-11-11  
+- Review Status: Comprehensive editorial review  
+- Verification: Academic sources verified  
+- Regional Context: UK/North England where applicable

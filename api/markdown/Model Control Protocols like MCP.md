@@ -1,0 +1,33 @@
+public:: true
+
+- ## Model Context Protocol (MCP)
+  id:: 68aef10f-22e6-4b42-b835-1d12dabfef8d
+	- ### Purpose and Benefits
+		- MCP standardises how AI applications connect to external services and tools. Rather than building custom integrations for each service, MCP provides:
+			- Unified protocol for tool discovery and usage
+			- Reduced integration complexity for developers
+			- Better tool definitions maintained by service providers
+			- Standardised authentication and security
+	- ### Architecture Components
+		- MCP systems have two main components:
+			- Servers: Provide tools and resources (maintained by service providers)
+			- Clients/Hosts: Applications that consume MCP resources
+		- This architecture shifts integration work from application developers to service providers, who can optimise their MCP servers for better AI interaction.
+	- ### Workflow Encapsulation
+		- MCP encourages encapsulating entire workflows rather than exposing granular API endpoints. Instead of requiring multiple API calls to complete a task, MCP servers should provide single endpoints that handle complete business processes.
+	- ### Practical Implementation
+		- MCP servers can provide:
+			- Tools for specific actions
+			- Prompts for common use cases
+			- Files and documents
+			- Real-time data feeds
+		- The discovery process allows agents to understand available resources dynamically, adapting their capabilities based on connected services.
+-
+-
+- [SLOP - Join the Revolution](https://i-love-slop.com/)
+- [agnt-gg/slop: The place for SLOP](https://github.com/agnt-gg/slop)
+-
+- ![image.png](../assets/image_1741526343816_0.png)
+-
+- https://github.com/NightTrek/Ollama-mcp
+-

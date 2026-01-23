@@ -3,14 +3,14 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-1004
-	- source-domain:: mv
+	- source-domain:: artificial-intelligence
 	- preferred-term:: SemanticSearch
 	- status:: complete
 	- public-access:: true
 	- definition:: A semantic search component in the Metaverse domain that enables KnowledgeGraph.
 	- source:: Generated from bridge validation
 	- maturity:: emerging
-	- owl:class:: mv:SemanticSearch
+	- owl:class:: ai:SemanticSearch
 	- #### Relationships
 	  id:: semanticsearch-relationships
 	  collapsed:: true

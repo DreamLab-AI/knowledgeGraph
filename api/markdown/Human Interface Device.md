@@ -1,42 +1,120 @@
 - ### OntologyBlock
-  id:: human-interface-device-ontology
+  id:: humaninterfacedevice-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: DT-0967
+	- term-id:: 20154
 	- source-domain:: mv
-	- preferred-term:: Human Interface Device
 	- status:: draft
-	- public-access:: true
+- public-access:: true
+	- preferred-term:: Human Interface Device
 	- definition:: Physical hardware component enabling user input or feedback in immersive systems through controllers, sensors, and actuators.
-	- source:: [[ETSI GR ARF 010]]
 	- maturity:: mature
+	- source:: [[ETSI GR ARF 010]]
 	- owl:class:: mv:HumanInterfaceDevice
 	- owl:physicality:: PhysicalEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:PhysicalObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[InteractionDomain]], [[DisruptiveTechDomain]]
+	- belongsToDomain:: [[InteractionDomain]]
 	- implementedInLayer:: [[PhysicalLayer]]
 	- #### Relationships
-- is-subclass-of:: [[Metaverse]]
-	  id:: human-interface-device-relationships
-	  collapsed:: true
+	  id:: humaninterfacedevice-relationships
+		- has-part:: [[Input Sensors]], [[Output Actuators]], [[Haptics]], [[Tracking Components]], [[Communication Interface]]
 		- is-part-of:: [[Interaction System]]
-		- has-part:: [[Input Sensors]]
-		- has-part:: [[Communication Interface]]
-		- has-part:: [[Haptics]]
-		- has-part:: [[Tracking Components]]
-		- has-part:: [[Output Actuators]]
-		- requires:: [[Device Drivers]]
-		- requires:: [[Power Management]]
-		- requires:: [[Calibration]]
-		- enables:: [[Spatial Interaction]]
-		- enables:: [[Motion Tracking]]
-		- enables:: [[Haptic Feedback]]
-		- enables:: [[User Input]]
-		- depends-on:: [[Bluetooth]]
-		- depends-on:: [[Wireless Communication]]
-		- depends-on:: [[USB Protocol]]
+		- requires:: [[Power Management]], [[Device Drivers]], [[Calibration]]
+		- depends-on:: [[USB Protocol]], [[Bluetooth]], [[Wireless Communication]]
+		- enables:: [[User Input]], [[Haptic Feedback]], [[Motion Tracking]], [[Spatial Interaction]]
+	- #### OWL Axioms
+	  id:: humaninterfacedevice-owl-axioms
+	  collapsed:: true
+		- ```clojure
+		  Declaration(Class(mv:HumanInterfaceDevice))
+
+		  # Classification along two primary dimensions
+		  SubClassOf(mv:HumanInterfaceDevice mv:PhysicalEntity)
+		  SubClassOf(mv:HumanInterfaceDevice mv:Object)
+
+		  # Hardware component requirements
+		  SubClassOf(mv:HumanInterfaceDevice
+		    ObjectSomeValuesFrom(mv:hasPart mv:InputSensors)
+		  )
+		  SubClassOf(mv:HumanInterfaceDevice
+		    ObjectSomeValuesFrom(mv:hasPart mv:CommunicationInterface)
+		  )
+
+		  # Domain classification
+		  SubClassOf(mv:HumanInterfaceDevice
+		    ObjectSomeValuesFrom(mv:belongsToDomain mv:InteractionDomain)
+		  )
+
+		  # Layer classification
+		  SubClassOf(mv:HumanInterfaceDevice
+		    ObjectSomeValuesFrom(mv:implementedInLayer mv:PhysicalLayer)
+		  )
+
+		  # Communication requirements
+		  SubClassOf(mv:HumanInterfaceDevice
+		    ObjectSomeValuesFrom(mv:dependsOn mv:WirelessCommunication)
+		  )
+
+  # Property characteristics
+  TransitiveObjectProperty(dt:ispartof)
+
+  # Property characteristics
+  AsymmetricObjectProperty(dt:requires)
+
+  # Property characteristics
+  AsymmetricObjectProperty(dt:dependson)
+
+  # Property characteristics
+  AsymmetricObjectProperty(dt:enables)
+```
+- ## About Human Interface Device
+  id:: humaninterfacedevice-about
+	- Human Interface Devices (HIDs) are physical hardware components that form the critical bridge between users and immersive digital environments. These devices capture user intentions through various input mechanisms (buttons, joysticks, sensors) and provide feedback through output mechanisms (haptics, LEDs, audio), enabling natural and intuitive interaction with virtual, augmented, or mixed reality systems.
+	- ### Key Characteristics
+	  id:: humaninterfacedevice-characteristics
+		- **Bidirectional Communication**: Both input sensing and output feedback capabilities
+		- **Ergonomic Design**: Form factors optimized for extended use and natural hand/body positioning
+		- **Low Latency**: Minimal delay between user action and system response (<20ms motion-to-photon)
+		- **Multi-Modal Sensing**: Integration of buttons, triggers, joysticks, touchpads, and motion sensors
+	- ### Technical Components
+	  id:: humaninterfacedevice-components
+		- [[Input Sensors]] - Buttons, triggers, joysticks, capacitive touch surfaces, pressure sensors
+		- [[Motion Tracking Components]] - IMUs (accelerometers, gyroscopes, magnetometers) for 6DOF tracking
+		- [[Haptic Actuators]] - Vibration motors, voice coils, or piezoelectric elements for tactile feedback
+		- [[Communication Modules]] - USB, Bluetooth LE, Wi-Fi, or proprietary wireless protocols
+		- [[Power Management]] - Battery systems, charging circuitry, power optimization firmware
+		- [[LED Indicators]] - Visual feedback for system state, battery level, and tracking status
+	- ### Functional Capabilities
+	  id:: humaninterfacedevice-capabilities
+		- **Spatial Input**: 6-degree-of-freedom position and orientation tracking
+		- **Discrete Input**: Button presses, trigger pulls, and gesture recognition
+		- **Continuous Input**: Analog joystick/thumbstick values, pressure-sensitive triggers
+		- **Haptic Output**: Vibration patterns, force feedback, and tactile event signaling
+	- ### Use Cases
+	  id:: humaninterfacedevice-use-cases
+		- **VR Controllers**: Handheld devices with triggers, buttons, and thumbsticks for virtual reality interaction
+		- **AR Gesture Interfaces**: Hand tracking devices or gloves enabling gesture-based control
+		- **Gaming Peripherals**: Specialized controllers, steering wheels, and flight sticks for immersive gaming
+		- **Medical Simulation**: Surgical instrument replicas with force feedback for training applications
+		- **Industrial Control**: Ruggedized interface devices for CAD manipulation and remote machinery operation
+		- **Accessibility Devices**: Adaptive controllers designed for users with motor impairments
+	- ### Standards & References
+	  id:: humaninterfacedevice-standards
+		- [[ETSI GR ARF 010]] - Metaverse architecture reference framework for HMI domains
+		- [[ISO 9241-960]] - Framework for Tactile and Haptic Interactions
+		- [[IEEE 2733]] - Clinical Adoption of Haptic Systems in Simulations
+		- **USB HID Specification**: Device class definition for human interface devices
+		- **Bluetooth HID Profile**: Wireless communication standard for input devices
+		- [[MSF UX Domain Standards]] - Metaverse Standards Forum user experience guidelines
+	- ### Related Concepts
+	  id:: humaninterfacedevice-related
+		- [[Haptics]] - Force feedback and tactile output subsystem
+		- [[Motion Tracking]] - Spatial positioning and orientation sensing
+		- [[VR Headset]] - Display device often paired with HID controllers
+		- [[PhysicalObject]] - Ontology classification for tangible hardware components
+# Revised Ontology Entry: Human Interface Device
 
 ## Academic Context
 
@@ -106,10 +184,10 @@
 
 Your original definition—"Physical hardware component enabling user input or feedback in immersive systems through controllers, sensors, and actuators"—is somewhat narrower than the current HID standard encompasses. The modern definition should emphasise that HID is fundamentally a *communication protocol and framework* rather than merely hardware components. Immersive systems represent one application domain, but HID's scope extends to any bidirectional human-computer interaction requiring standardised communication. The distinction matters for ontological accuracy: HID is the *standard enabling* such devices, not the devices themselves.
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-

@@ -8,10 +8,10 @@
     "TELE-301-virtual-office-spaces",
     "Virtual Location",
     "Virtual Interaction Logging",
+    "Autonomous Agent",
     "Extended Reality (XR)",
     "Shared Virtual World",
     "Virtual Destination",
-    "Virtual Production",
     "Virtual Environment Connectivity",
     "Virtual Classroom",
     "Collaborative Learning",
@@ -19,14 +19,15 @@
     "Educational Technology",
     "Metaverse Venue",
     "Virtual Clinic",
+    "Intelligent Virtual Entity",
     "Virtual World Platform"
   ],
   "wiki_links": [
     "Virtual Reality",
-    "metaverse",
-    "Digital Twin",
     "Augmented Reality",
+    "metaverse",
     "Metaverse",
+    "Digital Twin",
     "3D Models"
   ],
   "ontology": {

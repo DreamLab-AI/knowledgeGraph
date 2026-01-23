@@ -1,37 +1,172 @@
-id:: e-contract-arbitration-ontology
-
 - ### OntologyBlock
-  id:: E-Contract Arbitration
-  - ontology:: true
-  - public-access:: true
-  - term-id:: DT-0224
-  - preferred-term:: E-Contract Arbitration
-  - source-domain:: bc
-  - owl:class:: bc:EContractArbitration
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-  - status:: draft
-  - definition:: Online dispute resolution process specifically designed for resolving conflicts arising from smart contract execution, code interpretation, or automated transaction failures.
+  id:: e-contract-arbitration-ontology
+  collapsed:: true
+	- ontology:: true
+	- term-id:: 20224
+	- source-domain:: mv
+	- status:: draft
+- public-access:: true
+	- preferred-term:: E-Contract Arbitration
+	- definition:: Online dispute resolution process specifically designed for resolving conflicts arising from smart contract execution, code interpretation, or automated transaction failures.
+	- maturity:: draft
+	- source:: [[UNCITRAL ODR Model]]
+	- owl:class:: mv:EContractArbitration
+	- owl:physicality:: VirtualEntity
+	- owl:role:: Process
+	- owl:inferred-class:: mv:VirtualProcess
+	- owl:functional-syntax:: true
+	- belongsToDomain:: [[TrustAndGovernanceDomain]]
+	- implementedInLayer:: [[Middleware Layer]]
+	- #### Relationships
+	  id:: e-contract-arbitration-relationships
+		- has-part:: [[Contract Analysis Process]], [[Code Interpretation Service]], [[Arbitration Decision Engine]], [[On-Chain Evidence Verification]]
+		- is-part-of:: [[Dispute Resolution Mechanism]], [[Smart Contract Governance]]
+		- requires:: [[Blockchain Transaction Log]], [[Smart Contract Code]], [[Identity Verification]], [[Arbitrator Expertise]]
+		- depends-on:: [[Legal Framework]], [[Smart Contract Standards]]
+		- enables:: [[Automated Dispute Resolution]], [[Contract Enforcement]], [[Fair Adjudication]], [[Transaction Reversal]]
+	- #### OWL Axioms
+	  id:: e-contract-arbitration-owl-axioms
+	  collapsed:: true
+		- ```clojure
+		  Declaration(Class(mv:EContractArbitration))
 
-### Relationships
-- is-subclass-of:: [[Blockchain]]
-- is-part-of:: [[Smart Contract Governance]]
-- is-part-of:: [[Dispute Resolution Mechanism]]
-- has-part:: [[Contract Analysis Process]]
-- has-part:: [[Arbitration Decision Engine]]
-- has-part:: [[On-Chain Evidence Verification]]
-- has-part:: [[Code Interpretation Service]]
-- requires:: [[Blockchain Transaction Log]]
-- requires:: [[Identity Verification]]
-- requires:: [[Arbitrator Expertise]]
-- requires:: [[Smart Contract Code]]
-- enables:: [[Automated Dispute Resolution]]
-- enables:: [[Fair Adjudication]]
-- enables:: [[Transaction Reversal]]
-- enables:: [[Contract Enforcement]]
-- depends-on:: [[Smart Contract Standards]]
-- depends-on:: [[Legal Framework]]
+		  # Classification along two primary dimensions
+		  SubClassOf(mv:EContractArbitration mv:VirtualEntity)
+		  SubClassOf(mv:EContractArbitration mv:Process)
+
+		  # Specialization relationship
+		  SubClassOf(mv:EContractArbitration mv:DisputeResolutionMechanism)
+
+		  # Domain-specific constraints
+		  SubClassOf(mv:EContractArbitration
+		    ObjectSomeValuesFrom(mv:hasPart mv:ContractAnalysisProcess)
+		  )
+
+		  SubClassOf(mv:EContractArbitration
+		    ObjectSomeValuesFrom(mv:hasPart mv:CodeInterpretationService)
+		  )
+
+		  SubClassOf(mv:EContractArbitration
+		    ObjectSomeValuesFrom(mv:requires mv:BlockchainTransactionLog)
+		  )
+
+		  SubClassOf(mv:EContractArbitration
+		    ObjectSomeValuesFrom(mv:requires mv:SmartContractCode)
+		  )
+
+		  SubClassOf(mv:EContractArbitration
+		    ObjectSomeValuesFrom(mv:enables mv:AutomatedDisputeResolution)
+		  )
+
+		  SubClassOf(mv:EContractArbitration
+		    ObjectSomeValuesFrom(mv:enables mv:ContractEnforcement)
+		  )
+
+		  # Domain classification
+		  SubClassOf(mv:EContractArbitration
+		    ObjectSomeValuesFrom(mv:belongsToDomain mv:TrustAndGovernanceDomain)
+		  )
+
+		  # Layer classification
+		  SubClassOf(mv:EContractArbitration
+		    ObjectSomeValuesFrom(mv:implementedInLayer mv:MiddlewareLayer)
+		  )
+
+		  # Process dependencies
+		  SubClassOf(mv:EContractArbitration
+		    ObjectSomeValuesFrom(mv:dependsOn mv:SmartContractStandards)
+		  )
+
+  # Property characteristics
+  TransitiveObjectProperty(dt:ispartof)
+
+  # Property characteristics
+  AsymmetricObjectProperty(dt:requires)
+
+  # Property characteristics
+  AsymmetricObjectProperty(dt:dependson)
+
+  # Property characteristics
+  AsymmetricObjectProperty(dt:enables)
+```
+- ## About E-Contract Arbitration
+  id:: e-contract-arbitration-about
+	- E-Contract Arbitration is a specialized online dispute resolution process tailored to the unique challenges of smart contract conflicts. Unlike traditional contract disputes, e-contract arbitration must analyze executable code, blockchain transaction logs, and automated execution logic to determine intent, fault, and remediation. The process combines technical code analysis with legal interpretation to resolve conflicts arising from smart contract bugs, oracle failures, unexpected edge cases, or interpretation disagreements.
+	- ### Key Characteristics
+	  id:: e-contract-arbitration-characteristics
+		- Code-centric dispute analysis focusing on contract logic
+		- On-chain evidence verification using blockchain transaction history
+		- Automated decision enforcement through smart contract updates
+		- Technical arbitrator expertise in both law and programming
+		- Immutable record-keeping of arbitration decisions
+		- Oracle failure and external dependency analysis
+		- Gas fee dispute resolution
+		- Multi-signature arbitration for complex cases
+	- ### Technical Components
+	  id:: e-contract-arbitration-components
+		- [[Contract Analysis Process]] - Automated and manual code review
+		- [[Code Interpretation Service]] - Legal interpretation of contract logic
+		- [[Arbitration Decision Engine]] - Structured decision-making framework
+		- [[On-Chain Evidence Verification]] - Blockchain data analysis and validation
+		- [[Transaction Log Analysis]] - Historical execution review
+		- [[Oracle Dispute Handler]] - External data source conflict resolution
+		- [[Smart Contract Patching]] - Remediation and code correction mechanisms
+		- [[Multi-Signature Arbitration]] - Collective arbitrator decisions
+	- ### Functional Capabilities
+	  id:: e-contract-arbitration-capabilities
+		- **Code Analysis**: Reviews smart contract source code for bugs and vulnerabilities
+		- **Intent Interpretation**: Determines original contract intent versus actual execution
+		- **Evidence Verification**: Validates on-chain transaction data as evidence
+		- **Oracle Assessment**: Evaluates external data source reliability and failures
+		- **Automated Remediation**: Executes resolution through contract updates or reversals
+		- **Technical Documentation**: Generates detailed technical analysis reports
+		- **Precedent Creation**: Establishes reusable patterns for similar disputes
+		- **Gas Fee Arbitration**: Resolves disputes over transaction cost allocations
+	- ### Use Cases
+	  id:: e-contract-arbitration-use-cases
+		- Smart contract bug causing unintended fund transfers
+		- Oracle failure providing incorrect price data to DeFi protocols
+		- Disagreements over contract interpretation and intended behavior
+		- NFT sale disputes due to contract logic errors
+		- Gas fee conflicts in complex multi-step transactions
+		- Automated market maker (AMM) slippage disputes
+		- Cross-chain bridge failures and fund recovery
+		- DAO treasury disputes over proposal execution
+		- Yield farming contract exploit remediation
+		- Token vesting schedule disagreements
+		- Flash loan attack aftermath and victim compensation
+	- ### Standards & References
+	  id:: e-contract-arbitration-standards
+		- [[UNCITRAL ODR Model]] - Online dispute resolution framework
+		- [[ISO 14533]] - Electronic dispute resolution processes
+		- [[OECD Digital Justice Framework]] - Digital justice principles
+		- [[ERC-792]] - Ethereum arbitration standard
+		- [[Kleros Protocol]] - Decentralized arbitration implementation
+		- [[Aragon Court]] - DAO dispute resolution framework
+		- [[IEEE P2145]] - Blockchain governance standards
+	- ### Related Concepts
+	  id:: e-contract-arbitration-related
+		- [[Dispute Resolution Mechanism]] - General dispute resolution framework
+		- [[Smart Contract]] - Contract being arbitrated
+		- [[Blockchain Transaction Log]] - Evidence source
+		- [[Legal Framework]] - Legal compliance context
+		- [[Smart Contract Governance]] - Governance structure
+		- [[Oracle]] - External data provider
+		- [[VirtualProcess]] - Ontology parent class
+I appreciate the detailed request, but I must flag a significant issue with the premise: the current definition conflates two distinct concepts that require clarification before proceeding with the ontology revision.
+
+## Conceptual Clarification Required
+
+The definition provided describes arbitration for **smart contract disputes**, whereas the search results and established literature address **e-arbitration** (electronic arbitration) for general online transactions and cross-border e-commerce disputes. These are materially different domains:
+
+**Smart Contract Arbitration** would involve disputes over code execution, automated transaction failures, and blockchain-based agreements—a nascent and highly specialised field with limited established jurisprudence.
+
+**E-Arbitration** (the subject of the search results) encompasses electronic dispute resolution for conventional online transactions, B2B e-commerce, and digitally-concluded contracts—a well-established practice with regulatory frameworks and institutional support.
+
+## Revised Ontology Entry: E-Contract Arbitration
 
 ### Academic Context
+
 - Electronic arbitration as a formal dispute resolution mechanism
   - Defined as arbitration conducted entirely or substantially through electronic means, including remote submissions and teleconferencing[8]
   - Distinguished from traditional arbitration by the absence of physical presence and reliance on digital communication infrastructure[3]
@@ -39,6 +174,7 @@ id:: e-contract-arbitration-ontology
   - Recognised as a major component of online dispute resolution (ODR) frameworks[4]
 
 ### Current Landscape (2025)
+
 - Regulatory developments and statutory frameworks
   - The Arbitration Act 2025 received Royal Assent on 24 February 2025 and came into force on 1 August 2025, modernising the Arbitration Act 1996[1][5]
   - The 2025 Act introduces significant amendments aimed at maintaining UK arbitration legislation as "state of the art" and enhancing London's status as a leading international forum for dispute resolution[1]
@@ -68,6 +204,7 @@ id:: e-contract-arbitration-ontology
   - ESIGN Act (US, 2000) established precedent for recognising electronic signatures and contracts formed through electronic manifestation of assent[2]
 
 ### Research & Literature
+
 - Key academic sources
   - Khadraoui, O. & Zouaoui, L. (2025). "Electronic arbitration as a mechanism for resolving disputes in international trade contracts." *Science, Education and Innovations in the Context of Modern Problems*, 8(11), 77–. Available at: https://imcra-az.org/archive/385-science-education-and-innovations-in-the-context-of-modern-problems-issue-11-vol-8-2025.html
   - Wolters Kluwer Legal (2019). "Online Arbitration in Theory and in Practice: A Comparative Study in Common Law and Civil Law Countries." *Arbitration Blog*, 11 April 2019. Examines e-arbitration as ODR component with comparative analysis of form requirements across jurisdictions.
@@ -81,6 +218,7 @@ id:: e-contract-arbitration-ontology
   - Expansion of e-arbitration to consumer disputes and small-value transactions
 
 ### UK Context
+
 - British contributions and statutory framework
   - The Arbitration Act 1996 established England & Wales as a leading international arbitration seat through its flexibility and clarity—a position reinforced by the 2025 amendments[1][5]
   - The 2025 Act introduces codification of arbitrators' duty of disclosure, strengthens arbitrator immunity, empowers arbitrators to summarily dispose of meritless claims, and recognises emergency arbitrators[5]
@@ -98,6 +236,7 @@ id:: e-contract-arbitration-ontology
   - The 2025 Act simplifies and streamlines court procedures relating to arbitration, reducing friction in enforcement and supervisory jurisdiction matters
 
 ### Future Directions
+
 - Emerging trends
   - Expansion of e-arbitration to smart contract disputes and blockchain-based transactions (distinct from traditional e-arbitration but increasingly relevant)
   - Integration of hybrid proceedings combining in-person hearings with electronic submissions and remote witness testimony
@@ -119,6 +258,7 @@ id:: e-contract-arbitration-ontology
 ---
 
 **Note:** The original definition requires refinement to distinguish between e-arbitration for conventional electronic contracts and the nascent field of smart contract arbitration, which operates under fundamentally different technical and legal parameters. The revised entry addresses established e-arbitration practice as documented in current literature and regulatory frameworks.
+
 
 ## Metadata
 

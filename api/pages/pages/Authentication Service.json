@@ -9,23 +9,22 @@
     "Collective Memory Archive",
     "Cross-Platform Identity",
     "Access Control",
-    "VirtualWorld",
     "Digital Goods Registry",
     "Digital Taxonomy Registry",
     "Cultural Provenance Record",
     "Security Layer"
   ],
   "wiki_links": [
-    "Session Management",
-    "Security Service",
-    "Identity Verification",
-    "Access Control",
+    "Authorisation",
     "Cross-Platform Identity",
-    "Identity Management",
-    "Single Sign-On",
+    "Access Control",
     "Core Technology",
+    "Identity Verification",
+    "Security Service",
+    "Single Sign-On",
+    "Session Management",
     "Credential Validation",
-    "Authorisation"
+    "Identity Management"
   ],
   "ontology": {
     "term_id": "NGM-7010",

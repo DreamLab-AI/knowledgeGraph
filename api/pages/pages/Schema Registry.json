@@ -4,14 +4,16 @@
   "content": "- ### OntologyBlock\n  id:: schema-registry-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10028\n\t- source-domain:: mv\n\t- preferred-term:: Schema Registry\n\t- status:: active\n\t- definition:: A centralized service that stores, validates, and manages data schemas for event streaming and API contracts, ensuring compatibility and evolution of data formats across distributed metaverse systems and microservices.\n\t- owl:class:: mv:SchemaRegistry\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: schema-registry-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Data Management]]\n\t\t- related-to:: [[Event Streaming]]\n\t\t- related-to:: [[API Contracts]]\n\t\t- related-to:: [[Data Governance]]\n\t\t- enables:: [[Schema Evolution]]\n\t- #### Key Features\n\t  collapsed:: true\n\t\t- Schema versioning and compatibility checks\n\t\t- Avro, JSON Schema, Protobuf support\n\t\t- Backward/forward compatibility rules\n\t\t- Producer-consumer contract enforcement\n\t\t- Schema evolution without breaking changes\n\t- #### Implementations\n\t  collapsed:: true\n\t\t- Confluent Schema Registry for Kafka\n\t\t- AWS Glue Schema Registry\n\t\t- Apicurio Registry open source\n\t\t- Azure Schema Registry\n\t\t- Google Cloud Pub/Sub schemas",
   "backlinks": [
     "Digital Twin Interop Protocol",
-    "Conversion Pipeline"
+    "Conversion Pipeline",
+    "Digital Ontology Repository",
+    "Digital Taxonomy Registry"
   ],
   "wiki_links": [
-    "metaverse",
+    "Data Management",
     "Data Governance",
     "Event Streaming",
+    "metaverse",
     "Schema Evolution",
-    "Data Management",
     "API Contracts"
   ],
   "ontology": {

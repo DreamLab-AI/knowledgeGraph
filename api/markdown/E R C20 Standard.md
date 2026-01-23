@@ -1,35 +1,42 @@
 - ### OntologyBlock
-    - term-id:: MV-0538
-    - source-domain:: mv
-    - owl:class:: mv:Erc20Standard
-    - preferred-term:: ERC-20 Standard
-    - ontology:: true
+  id:: erc20standard-ontology
+  collapsed:: true
+
+  - **Identification**
+    - domain-prefix:: BC
+    - sequence-number:: 0538
+    - filename-history:: ["BC-0538-erc20standard.md"]
     - public-access:: true
-    - is-subclass-of:: [[DisruptiveTechnology]]
+    - ontology:: true
+    - term-id:: BC-0538
+    - preferred-term:: ERC-20 Standard
+    - source-domain:: bc
+    - status:: complete
     - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-## ERC-20 Standard
+  - **Definition**
+    - definition:: Technical standard for fungible tokens on Ethereum, defining required methods and events for token contracts.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
 
-ERC-20 Standard refers to technical standard for fungible tokens on ethereum, defining required methods and events for token contracts.
+  - **Semantic Classification**
+    - owl:class:: bc:ERC20Standard
+    - belongsToDomain:: [[Blockchain]]
 
-- **Last Updated**: 2025-11-16
-- **Review Status**: Automated remediation with 2025 context
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - #### Relationships
 
-## Technical Details
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :ERC20Standard))
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :ERC20Standard "ERC-20 Standard"@en)
+      (AnnotationAssertion rdfs:comment :ERC20Standard
+        "Technical standard for fungible tokens on Ethereum, defining required methods and events for token contracts."@en)
+      ```
 
-- **Id**: erc20standard-ontology
-- **Collapsed**: true
-- **Domain Prefix**: BC
-- **Sequence Number**: 0538
-- **Filename History**: ["BC-0538-erc20standard.md"]
-- **Public Access**: true
-- **Source Domain**: metaverse
-- **Status**: complete
-- **Last Updated**: 2025-11-13
-- **Maturity**: established
-- **Source**: Chimera Prime Research
-- **Authority Score**: 0.95
-- **Owl:Class**: bc:ERC20Standard
-- **Belongstodomain**: [[Blockchain]]
+- ## About ERC-20 Standard
+  Technical standard for fungible tokens on Ethereum, defining required methods and events for token contracts.

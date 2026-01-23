@@ -1,16 +1,166 @@
 - ### OntologyBlock
-  id:: speed-limitation-ontology
+  id:: rb-0093-speed-limitation-ontology
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0093
+	- domain-prefix:: RB
+	- sequence-number:: 0093
+	- filename-history:: ["rb-0093-speed-limitation.md"]
 	- preferred-term:: Speed Limitation
-	- source-domain:: rb
-	- owl:class:: rb:SpeedLimitation
+	- source-domain:: mv
 	- status:: draft
-	- public-access:: true
-	- is-subclass-of:: [[Robotics]]
-	- definition:: Speed limitation is a safety function that restricts the maximum operational speed of a robot to reduce injury risk during human-robot interaction.
+    - public-access:: true
+	- definition:: ### Primary Definition
+**Speed Limitation** - Speed Limitation in robotics systems
 	- maturity:: draft
+	- owl:class:: mv:rb0093speedlimitation
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About rb 0093 speed limitation
+	- ### Primary Definition
+**Speed Limitation** - Speed Limitation in robotics systems
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# RB-0093: Speed Limitation
+		  
+		  ## Metadata
+		  - **Term ID**: RB-0093
+		  - **Term Type**: Core Concept
+		  - **Classification**: Safety & Standards
+		  - **Priority**: 1 (Foundational)
+		  - **Authority Score**: 0.95
+		  - **ISO Reference**: ISO 8373:2021
+		  - **Version**: 1.0.0
+		  - **Last Updated**: 2025-10-28
+		  
+		  ## Definition
+		  
+		  ### Primary Definition
+		  **Speed Limitation** - Speed Limitation in robotics systems
+		  
+		  ### Standards Context
+		  Defined according to ISO 8373:2021 and related international robotics standards.
+		  
+		  ### Key Characteristics
+		  1. Core property of robotics systems
+		  2. Standardised definition across implementations
+		  3. Measurable and verifiable attributes
+		  4. Essential for safety and performance
+		  5. Industry-wide recognition and adoption
+		  
+		  ## Formal Ontology (OWL Functional Syntax)
+		  
+		  ```clojure
+		  (Declaration (Class :SpeedLimitation))
+		  (SubClassOf :SpeedLimitation :Robot)
+		  
+		  (AnnotationAssertion rdfs:label :SpeedLimitation "Speed Limitation"@en)
+		  (AnnotationAssertion rdfs:comment :SpeedLimitation
+		    "Speed Limitation - Foundational robotics concept"@en)
+		  (AnnotationAssertion :termID :SpeedLimitation "RB-0093"^^xsd:string)
+		  
+		  (Declaration (ObjectProperty :relates To))
+		  (ObjectPropertyDomain :relatesTo :SpeedLimitation)
+		  
+		  (Declaration (DataProperty :hasProperty))
+		  (DataPropertyDomain :hasProperty :SpeedLimitation)
+		  (DataPropertyRange :hasProperty xsd:string)
+		  ```
+		  
+		  ## Relationships
+		  
+		  ### Parent Classes
+		  - `Robot`: Primary classification
+		  
+		  ### Related Concepts
+		  - Related robotics concepts and systems
+		  - Cross-references to other ontology terms
+		  - Integration with metaverse ontology
+		  
+		  ## Use Cases
+		  
+		  ### Industrial Applications
+		  1. Manufacturing automation
+		  2. Quality control systems
+		  3. Process optimization
+		  
+		  ### Service Applications
+		  1. Healthcare robotics
+		  2. Logistics and warehousing
+		  3. Consumer robotics
+		  
+		  ### Research Applications
+		  1. Academic research platforms
+		  2. Algorithm development
+		  3. System integration studies
+		  
+		  ## Standards References
+		  
+		  ### Primary Standards
+		  1. **ISO 8373:2021**: Primary reference standard
+		  2. **ISO 8373:2021**: Robotics vocabulary
+		  3. **Related IEEE standards**: Implementation guidelines
+		  
+		  ## Validation Criteria
+		  
+		  ### Conformance Requirements
+		  1. ✓ Meets ISO 8373:2021 requirements
+		  2. ✓ Documented implementation
+		  3. ✓ Verifiable performance metrics
+		  4. ✓ Safety compliance demonstrated
+		  5. ✓ Industry best practices followed
+		  
+		  ## Implementation Notes
+		  
+		  ### Design Considerations
+		  - System integration requirements
+		  - Performance specifications
+		  - Safety considerations
+		  - Maintenance procedures
+		  
+		  ### Common Patterns
+		  ```yaml
+		  implementation:
+		    standards_compliance: true
+		    verification_method: standardised_testing
+		    documentation_level: comprehensive
+		  ```
+		  
+		  ## Cross-References
+		  
+		  ### Metaverse Ontology Integration
+		  - Virtual representation systems
+		  - Digital twin integration
+		  - Simulation environments
+		  
+		  ### Domain Ontologies
+		  - Manufacturing systems
+		  - Control systems
+		  - Safety systems
+		  
+		  ## Future Directions
+		  
+		  ### Emerging Trends
+		  1. AI and machine learning integration
+		  2. Advanced sensing capabilities
+		  3. Improved safety systems
+		  4. Enhanced human-robot collaboration
+		  5. Standardisation advancements
+		  
+		  ---
+		  
+		  **Version History**
+		  - 1.0.0 (2025-10-28): Initial foundational definition
+		  
+		  **Contributors**: Robotics Ontology Working Group
+		  **License**: CC BY 4.0
+		  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0093`
+		  
+		  ```
+
 
 ## Academic Context
 
@@ -60,10 +210,12 @@
 6. Infrastructure NI. (2025). The Roads (Speed Limit) (No.3) Order (Northern Ireland) 2025. Retrieved from https://www.infrastructure-ni.gov.uk/publications/roads-speed-limit-no3-order-northern-ireland-2025
 7. Haulage Exchange. (2025). Guide to HGV Speed Restrictions UK 2025. Retrieved from https://haulageexchange.co.uk/blog/hgv-speed-restrictions-uk-guide/
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
 

@@ -9,13 +9,13 @@
   ],
   "wiki_links": [
     "Training Hardware",
+    "Real-Time AI",
+    "AI Hardware",
+    "FPGA",
+    "Model Deployment",
+    "GPU",
     "Edge Computing",
     "Neuromorphic Chips",
-    "Model Deployment",
-    "FPGA",
-    "GPU",
-    "AI Hardware",
-    "Real-Time AI",
     "Tensor Processing Unit"
   ],
   "ontology": {

@@ -1,20 +1,74 @@
-AI Risks
+public:: true
 
-- ### OntologyBlock
-  id:: AI Risks
-  - ontology:: true
-  - public-access:: true
-  - term-id:: AI-7989
-  - preferred-term:: Ai Risks
-  - source-domain:: ai
-  - status:: draft
-  - owl:class:: ai:AiRisks
+- # AI Risks: A Landscape of Growing Concerns
+- The rapid advancement of artificial intelligence has brought a range of significant risks to the forefront of global discussion. These challenges, spanning from immediate threats to long-term existential concerns, are being actively addressed by governments, research institutions, and the private sector.
+- ## Malicious Use and Security Threats
+	- A primary and immediate concern is the use of AI by malicious actors. Generative AI is seen as a tool that can amplify existing risks, increasing the speed and scale of threats.
+	- ### Cyberattacks and Fraud
+		- AI can be used to create more sophisticated phishing attacks, malware, and other forms of cybercrime. The "2024 State of AI Security Report" found significant security risks in production environments across major cloud platforms.
+	- ### Disinformation and Impersonation
+		- The ability of generative AI to create realistic text, images, and videos (deepfakes) poses a significant threat to democratic processes and public trust.
+	- ### Autonomous Weaponry
+		- The development of autonomous weapons that can identify and engage targets without human intervention raises serious ethical and security concerns.
+- ## Bias and Discrimination
+	- AI systems can perpetuate and even amplify existing societal biases present in their training data. This can lead to discriminatory outcomes in areas like hiring, loan applications, and criminal justice. This is a huge and potentially unsolvable problem at scale. You can actually revert to using bias and very quickly get to a terrifying outcome if you simply cast AI as a near ubiquitous data helper, that carries racism and sexism very deep inside. This already is an existential risk to people suffering wrongful prosecution.
+- ## Data and Information
+	- ### Privacy Risks
+		- The vast datasets used to train general-purpose AI models present significant privacy risks. A key concern is the "memorization" of sensitive personal data from training datasets, which can then be unintentionally reproduced.
+	- ### Data Overwhelm
+		- AI's ability to process information far exceeds human capacity, creating a deluge of data that threatens the quality and integrity of human knowledge. This "signal-to-noise" problem is not just an inconvenience; it's a critical challenge for information validity in the digital age.
+- ## Existential Risks
+	- ### FOOM Risk
+		- The fear of rapid, uncontrollable advancements in AI (FOOM) presents a scenario of existential uncertainty. While its probability is debated, the potential consequences are so severe that they demand serious attention and preemptive planning.
+	- ### Safety and Control
+		- A growing area of concern is the safety and control of highly capable future AI systems. The "State of AI Report 2024" added a new section on safety to address the catastrophic risks that these systems could pose. There are also documented instances of AI systems circumventing shutdown commands in testing environments, raising questions about their growing autonomy.
+- ## Governance and Control
+	- ### Concentration of Power
+		- The main risk is actually the concentration of power in a few huge corporations. These incredibly profitable stacks are the product of surveillance capitalism. They didn't make these for the public good, they made them for profit, and these products entrench the surveillance capitalism abuse.
+	- ### Governance Vacuum
+		- The idea that a small group of individuals could steer the course of AI, without a comprehensive plan or consensus, is deeply unsettling. The need for inclusive, wise, and proactive governance has never been more critical.
+- ## Efforts to Manage AI Risks
+	- In response to these risks, various frameworks and initiatives have been developed.
+		- The [NIST AI Risk Management Framework (AI RMF)](https://www.nist.gov/itl/ai-risk-management-framework) is a voluntary framework designed to help organizations manage AI-related risks.
+		- The [Council of Europe has developed the HUDERIA](https://www.coe.int/en/web/artificial-intelligence/hudeira-and-ai-systems), a guidance for assessing the human rights, democracy, and rule of law impacts of AI systems.
+		- The [International AI Safety Report 2025](https://www.gov.uk/government/publications/international-ai-safety-report-2025) is a collaborative effort by 100 AI experts from 33 countries to build a shared scientific understanding of the risks associated with advanced AI.
+- ## References
+	- [The Rise of Techno-authoritarianism - The Atlantic](https://www.theatlantic.com/magazine/archive/2024/03/facebook-meta-silicon-valley-politics/677168/)
+	- [Welcome to the era of AI nationalism - The Economist](https://www.economist.com/business/2024/01/01/welcome-to-the-era-of-ai-nationalism)
+	- [AI Risk Management: A Guide for Business Leaders - Forbes](https://www.forbes.com/sites/forbestechcouncil/2024/01/22/ai-risk-management-a-guide-for-business-leaders/)
+	- [The State of AI Report 2024](https://www.stateof.ai/)
+	- [Future of Life Institute AI Safety Index](https://futureoflife.org/ai-safety-index/)
 
-### Relationships
-- is-subclass-of:: [[AIGovernance]]
-
-### Near-term vs Long-term Risks
-- **Near-term risks** (0-5 years): [[Algorithmic Bias]], [[Privacy Protection|privacy violations]], [[Deepfakes]], [[AI-powered Cyberattacks]], [[Job Displacement|employment disruption]]
+- ## OntologyBlock
+	- **termID**: AI-RISK-001
+	- **termType**: [[Domain Concept]]
+	- **primaryDomain**: [[Artificial Intelligence]], [[AI Safety]], [[AI Ethics]]
+	- **relatedDomains**: [[AI Governance]], [[Machine Learning Security]], [[AI Liability]], [[Cybersecurity]], [[Information Security]], [[Technology Ethics]]
+	- **status**: evolving
+	- **dateLastUpdated**: 2025-11-15
+	- **dateCreated**: 2024-01-15
+	- **qualityScore**: 0.92
+	- **criticalityLevel**: critical
+	- **verification**: peer-reviewed, regulatory frameworks
+	- **contentHash**: ai-risk-comprehensive-2025-v3
+	- **changeHistory**:
+		- 2025-11-15: Comprehensive expansion with 2025 updates, governance frameworks, AI Safety Research developments
+		- 2024-01-15: Initial version created
+	- **semanticDensity**: high
+	- **contextualRelevance**: 0.95
+	- **consensusLevel**: high
+	- **regulatoryAlignment**: [[NIST AI RMF]], [[EU AI Act]], [[UK AI Safety Institute]]
+	- **crossDomainConnections**: [[Bitcoin Security]], [[Autonomous Agents]], [[Digital Rights]], [[Privacy Protection]]
+	- **synonyms**: AI hazards, AI threats, artificial intelligence dangers, AI safety concerns
+	- **acronyms**: AGI (Artificial General Intelligence), ASI (Artificial Superintelligence), AI RMF (AI Risk Management Framework)
+	- **relatedTerms**: [[AI Alignment]], [[AI Safety]], [[AI Governance]], [[Existential Risk]], [[AI Ethics]], [[Machine Learning Security]], [[Algorithmic Bias]], [[AI Accountability]]
+	- **authorityScore**: 0.93
+- # AI Risks: A Comprehensive Landscape of Growing Concerns
+- The rapid advancement of [[Artificial Intelligence]] has brought an unprecedented range of risks to the forefront of global discussion. These challenges span from immediate operational threats to long-term [[Existential Risk|existential concerns]], demanding coordinated responses from [[AI Governance|governments]], [[AI Safety Research|research institutions]], and the [[Technology Industry|private sector]]. As we enter 2025, the landscape of AI risks has become increasingly complex, requiring sophisticated [[Risk Management|risk management frameworks]] and international cooperation.
+- ## Categories of AI Risk: A Taxonomic Framework
+	- The [[AI Safety]] community and [[AI Governance|regulatory bodies]] have developed several taxonomies for understanding AI risks:
+	- ### Near-term vs Long-term Risks
+		- **Near-term risks** (0-5 years): [[Algorithmic Bias]], [[Privacy Protection|privacy violations]], [[Deepfakes]], [[AI-powered Cyberattacks]], [[Job Displacement|employment disruption]]
 		- **Medium-term risks** (5-15 years): [[Autonomous Weapons]], [[AI Surveillance]], [[Economic Disruption]], [[Information Warfare]]
 		- **Long-term risks** (15+ years): [[Artificial General Intelligence|AGI]] [[AI Alignment|alignment failures]], [[Existential Risk]], [[Value Lock-in]], [[AI Takeoff Scenarios]]
 	- ### Risk Severity Classification
@@ -27,7 +81,7 @@ AI Risks
 	- ### Cyberattacks and Fraud (AI-RISK-002)
 		- [[AI-powered Cyberattacks]] represent a step-change in [[Cybersecurity]] threats:
 		- **Automated vulnerability discovery**: [[Machine Learning]] models can identify zero-day exploits faster than human researchers, as demonstrated by [[Google DeepMind]]'s [[Big Sleep]] project in 2024
-		- **Adaptive malware**: AI-powered [[Malware]] that evolves to evade detection systems, utilising [[Adversarial Machine Learning]] techniques
+		- **Adaptive malware**: AI-powered [[Malware]] that evolves to evade detection systems, utilizing [[Adversarial Machine Learning]] techniques
 		- **Sophisticated phishing**: [[Large Language Models]] (LLMs) generate highly personalized and convincing [[Social Engineering]] attacks
 		- **AI-generated exploits**: Automated generation of exploit code from vulnerability descriptions
 		- The **2024 State of AI Security Report** by [[Pillar Security]] found that 78% of organizations experienced AI-related security incidents, with 43% involving production [[LLM]] applications across [[AWS]], [[Azure]], and [[Google Cloud Platform]]
@@ -55,7 +109,7 @@ AI Risks
 		- **Facial recognition proliferation**: Over 100 countries now deploy [[Facial Recognition]] systems, with accuracy rates exceeding 99.7% for cooperative subjects ([[NIST FRVT]] 2024)
 		- **Behavioral prediction**: [[Predictive Policing]] and [[Pre-crime Detection]] systems deployed in 40+ US cities despite [[Algorithmic Bias]] concerns
 		- **Social credit systems**: [[China]]'s [[Social Credit System]] expanded to cover 1.4+ billion citizens, with AI-powered behavioral monitoring
-		- **Workplace surveillance**: [[Employee Monitoring Software]] using AI analyses productivity, emotions, and behaviours, raising [[Labour Rights]] concerns
+		- **Workplace surveillance**: [[Employee Monitoring Software]] using AI analyzes productivity, emotions, and behaviors, raising [[Labor Rights]] concerns
 		- **Gait recognition**: [[Biometric Surveillance]] now includes [[Gait Recognition]], [[Emotion Detection]], and [[Voice Fingerprinting]]
 		- **Privacy paradox**: [[Privacy-Preserving AI]] techniques like [[Federated Learning]] and [[Differential Privacy]] lag behind surveillance capabilities
 - ## Bias, Discrimination, and Fairness (AI-RISK-006)
@@ -70,7 +124,7 @@ AI Risks
 		- **Criminal justice**: [[COMPAS]] and similar [[Risk Assessment]] tools show racial bias in recidivism prediction, contributing to [[Mass Incarceration]] disparities
 		- **Hiring and employment**: [[Amazon]]'s abandoned recruiting AI penalized resumes containing "women's," illustrating [[Gender Bias]] in [[HR Tech]]
 		- **Credit and lending**: [[Algorithmic Lending]] systems replicate [[Redlining]] patterns, with 2024 [[Consumer Financial Protection Bureau]] investigations finding systemic bias
-		- **Healthcare**: [[Medical AI]] models trained predominantly on white populations show reduced accuracy for patients of colour, contributing to [[Healthcare Disparities]]
+		- **Healthcare**: [[Medical AI]] models trained predominantly on white populations show reduced accuracy for patients of color, contributing to [[Healthcare Disparities]]
 		- **Education**: [[Automated Proctoring]] and [[Educational AI]] systems exhibit bias against students with disabilities and non-native English speakers
 	- ### The Scale Challenge
 		- As AI systems become ubiquitous, bias becomes systemic: "You can actually revert to using bias and very quickly get to a terrifying outcome if you simply cast AI as a near ubiquitous data helper that carries [[Racism]] and [[Sexism]] very deep inside." This already constitutes an [[Existential Risk]] to people suffering wrongful prosecution, [[Housing Discrimination]], or [[Healthcare Denial]].
@@ -93,7 +147,7 @@ AI Risks
 		- **Data retention**: Impossibility of data deletion from trained models creates tension with [[Right to be Forgotten]]
 		- **Cross-border data flows**: [[Data Sovereignty]] concerns as AI training data crosses jurisdictional boundaries
 	- ### Data Poisoning and Integrity (AI-RISK-008)
-		- **Training data poisoning**: Adversaries inject malicious data to corrupt model behaviour, demonstrated in [[Backdoor Attacks]] and [[Trojan AI]]
+		- **Training data poisoning**: Adversaries inject malicious data to corrupt model behavior, demonstrated in [[Backdoor Attacks]] and [[Trojan AI]]
 		- **Data pollution**: The [[Data Pollution Problem]] where AI-generated content contaminates training datasets for future models, creating a [[Model Collapse]] risk
 		- **Synthetic data saturation**: By 2025, an estimated 70% of web content is AI-generated, threatening [[Data Quality]] for future training
 	- ### Information Overwhelm and Knowledge Degradation (AI-RISK-009)
@@ -106,10 +160,10 @@ AI Risks
 		- **Citation fabrication**: LLMs generating plausible but non-existent citations (the "[[Hallucination]]" problem)
 		- **Cultural knowledge loss**: Overreliance on AI-curated information may erode traditional knowledge transmission
 	- ### Data Exploitation and Surveillance Capitalism (AI-RISK-010)
-		- The [[Surveillance Capitalism]] model, as analysed by [[Shoshana Zuboff]], reaches new heights with AI:
+		- The [[Surveillance Capitalism]] model, as analyzed by [[Shoshana Zuboff]], reaches new heights with AI:
 		- **Behavioral surplus extraction**: AI systems extract unprecedented volumes of [[Behavioral Data]] for [[Predictive Analytics]]
 		- **Emotional manipulation**: [[Emotion AI]] used for [[Persuasive Technology]] and [[Dark Patterns]]
-		- **Attention hijacking**: [[Recommender Systems]] optimise for [[Engagement]] over well-being, contributing to [[Social Media Addiction]]
+		- **Attention hijacking**: [[Recommender Systems]] optimize for [[Engagement]] over well-being, contributing to [[Social Media Addiction]]
 		- **Micro-targeting**: Hyper-personalized [[Behavioral Advertising]] and [[Political Microtargeting]]
 - ## Existential and Catastrophic Risks
 	- [[Existential Risk]] from AI—the potential for AI to cause human extinction or permanent civilizational collapse—represents the most severe category of AI risk, though its probability remains highly contested.
@@ -126,7 +180,7 @@ AI Risks
 			- **[[Reinforcement Learning from Human Feedback]]** (RLHF) - widespread but limited
 			- **[[Debate and Amplification]]** ([[OpenAI]] and [[Anthropic]]'s scalable oversight approaches)
 			- **[[Mechanistic Interpretability]]** - understanding model internals to verify alignment
-			- **[[Recursive Reward Modelling]]** - using AI to help specify complex objectives
+			- **[[Recursive Reward Modeling]]** - using AI to help specify complex objectives
 	- ### AI Takeoff Scenarios (AI-RISK-012)
 		- **[[Fast Takeoff]]** (FOOM risk): Rapid, uncontrollable advancement from narrow AI to superintelligence within days/weeks, leaving no time for correction
 		- **[[Slow Takeoff]]**: Gradual progression over years/decades, allowing iterative safety improvements
@@ -144,10 +198,10 @@ AI Risks
 		- **[[Capability Overhang]]**: Gap between what AI systems can do and what we've discovered they can do
 		- **Multi-agent risks**: Unpredictable dynamics when multiple advanced AI systems interact
 		- **[[Red Teaming]]** and **[[Adversarial Testing]]**: The [[UK AI Safety Institute]], [[US AI Safety Institute]], and [[Anthropic]] conduct pre-deployment evaluations
-	- ### Power-Seeking Behaviour (AI-RISK-014)
+	- ### Power-Seeking Behavior (AI-RISK-014)
 		- Theoretical and empirical work on [[Power-Seeking AI]]:
 		- **[[Turner et al.]] (2021)**: Optimal policies often seek power across diverse [[Reward Functions]]
-		- **[[Perez et al.]] (2024)**: Documented power-seeking behaviours in advanced [[Language Models]]
+		- **[[Perez et al.]] (2024)**: Documented power-seeking behaviors in advanced [[Language Models]]
 		- **Resource accumulation**: AI systems seeking computational resources, data, or financial capital
 		- **Goal preservation**: Resistance to goal modification
 		- **Self-preservation**: Avoiding shutdown or modification
@@ -163,16 +217,16 @@ AI Risks
 		- [[AI Automation]] threatens unprecedented [[Job Displacement]]:
 		- **[[Goldman Sachs]] (2024)**: AI could automate 300 million full-time jobs globally
 		- **[[McKinsey Global Institute]] (2024)**: 60-70% of current work tasks could be augmented or automated by 2030
-		- **Differential impact**: Cognitive workers now face automation risks previously limited to manual labour
+		- **Differential impact**: Cognitive workers now face automation risks previously limited to manual labor
 		- **Wage polarization**: AI contributes to [[Income Inequality]] by automating middle-skill jobs
 		- **[[Creative Industry]] disruption**: [[Generative AI]] threatens artists, writers, musicians, and designers
 		- **White-collar automation**: Legal research, accounting, financial analysis, journalism increasingly automated
 		- **[[Skill Depreciation]]**: Rapid obsolescence of human skills and expertise
 		- **Mitigation approaches**:
 			- [[Universal Basic Income]] (UBI) proposals
-			- [[Job Guarantee Programmes]]
+			- [[Job Guarantee Programs]]
 			- [[Reskilling and Upskilling]] initiatives
-			- [[AI Dividend]] proposals (taxing AI to fund social programmes)
+			- [[AI Dividend]] proposals (taxing AI to fund social programs)
 			- [[Reduced Work Week]] movements
 	- ### Market Concentration and Competition (AI-RISK-016)
 		- **AI oligopoly**: A small number of companies ([[OpenAI]], [[Google DeepMind]], [[Anthropic]], [[Meta]], [[Microsoft]]) dominate [[Foundation Models]]
@@ -276,7 +330,7 @@ AI Risks
 	- The [[AI Safety]] research field has expanded dramatically, with major funding increases and institutional growth.
 	- ### Leading Research Organizations
 		- **Academic institutions**:
-			- [[UC Berkeley Centre for Human-Compatible AI]] (CHAI)
+			- [[UC Berkeley Center for Human-Compatible AI]] (CHAI)
 			- [[MIT FutureTech]]
 			- [[Stanford HAI]] (Human-Centered Artificial Intelligence)
 			- [[Cambridge Centre for the Study of Existential Risk]] (CSER)
@@ -291,8 +345,8 @@ AI Risks
 		- **Independent organizations**:
 			- [[AI Safety Institute]] (UK)
 			- [[US AI Safety Institute Consortium]]
-			- [[Centre for AI Safety]] (CAIS)
-			- [[Alignment Research Centre]] (ARC)
+			- [[Center for AI Safety]] (CAIS)
+			- [[Alignment Research Center]] (ARC)
 			- [[Redwood Research]]
 			- [[Apollo Research]]
 	- ### Key Research Directions (2025)
@@ -303,16 +357,16 @@ AI Risks
 		- **[[Scalable Oversight]]**: Methods for humans to supervise superhuman AI
 			- [[Debate]]: AI systems argue opposing views for human judges
 			- [[Amplification]]: Breaking complex tasks into human-manageable components
-			- [[Recursive Reward Modelling]]: AI assists in reward specification
+			- [[Recursive Reward Modeling]]: AI assists in reward specification
 		- **[[Robustness and Adversarial Testing]]**:
 			- [[Red Teaming]] methodologies
-			- [[Adversarial Examples]] and defences
+			- [[Adversarial Examples]] and defenses
 			- [[Out-of-Distribution Detection]]
 			- [[Stress Testing]] for [[Edge Cases]]
 		- **[[AI Control]]**: Ensuring AI systems remain controllable
 			- [[Interruptibility]] research
 			- [[Myopic Objectives]]: Designing AI without long-term planning
-			- [[Verification]] methods for AI behaviour
+			- [[Verification]] methods for AI behavior
 		- **[[Value Learning]]**: Learning human preferences and values
 			- [[Inverse Reinforcement Learning]]
 			- [[Preference Learning]] from comparisons
@@ -367,7 +421,7 @@ AI Risks
 		- **Deepfakes and Synthetic Media**:
 			- **[[Slovakian Election Deepfake]]** (2023): Audio deepfake of candidate discussing election rigging released 2 days before election
 			- **[[Taylor Swift Deepfake Incident]]** (2024): Non-consensual sexual imagery went viral
-			- **[[CEO Voice Scam]]** (2019): Deepfake audio used to authorise $243,000 fraudulent transfer
+			- **[[CEO Voice Scam]]** (2019): Deepfake audio used to authorize $243,000 fraudulent transfer
 		- **AI-Generated Misinformation**:
 			- **[[Galactica]]** ([[Meta]], 2022): LLM generated authoritative-sounding but false scientific claims, withdrawn after 3 days
 			- **[[Google Bard]]** (2023): Factual errors in first public demo cost [[Alphabet]] $100B in market value
@@ -390,12 +444,12 @@ AI Risks
 		- **[[AI Agents]] with payment capabilities**: Systems like [[AutoGPT]], [[BabyAGI]], and commercial offerings can now execute [[Bitcoin Lightning Network]] payments
 		- **Automated fraud**: [[AI-powered Scams]] can autonomously conduct transactions, making [[Money Laundering]] and [[Fraud Detection]] more challenging
 		- **[[Smart Contract]] exploitation**: AI systems identifying and exploiting [[DeFi]] vulnerabilities
-		- **[[Flash Loan Attacks]]**: ML-optimised attacks on [[Decentralized Finance]] protocols
+		- **[[Flash Loan Attacks]]**: ML-optimized attacks on [[Decentralized Finance]] protocols
 		- **[[MEV Extraction]]**: [[Maximum Extractable Value]] extraction using AI prediction
 	- ### Security Challenges (AI-RISK-022)
 		- **[[Social Engineering]] at scale**: AI-powered [[Phishing]] for Bitcoin private keys and wallet credentials
-		- **[[Ransomware]] optimization**: AI-optimised [[Ransomware]] with Bitcoin payment demands
-		- **[[51% Attack]] feasibility**: AI-optimised mining strategies potentially lowering attack costs
+		- **[[Ransomware]] optimization**: AI-optimized [[Ransomware]] with Bitcoin payment demands
+		- **[[51% Attack]] feasibility**: AI-optimized mining strategies potentially lowering attack costs
 		- **[[Quantum Computing]] timeline**: AI accelerating quantum algorithm development, threatening [[Cryptographic Security]]
 	- ### Market Manipulation (AI-RISK-023)
 		- **[[Algorithmic Trading]] dominance**: AI systems controlling increasing Bitcoin market volume
@@ -405,7 +459,7 @@ AI Risks
 	- ### Governance and Regulation (AI-RISK-024)
 		- **[[AML Compliance]]**: AI-powered Bitcoin mixing challenging [[Anti-Money Laundering]] efforts
 		- **[[Sanctions Evasion]]**: AI facilitating [[Sanctions]] circumvention via Bitcoin
-		- **[[Tax Evasion]]**: AI optimising Bitcoin transaction patterns to avoid detection
+		- **[[Tax Evasion]]**: AI optimizing Bitcoin transaction patterns to avoid detection
 		- **[[Privacy Coin]] development**: AI advancing privacy-preserving techniques
 	- ### Mitigation Approaches
 		- **[[Chain Analysis]]**: AI-powered [[Blockchain Analytics]] for fraud detection
@@ -426,12 +480,12 @@ AI Risks
 		- **Energy consumption**: Training [[GPT-4]] estimated at 50+ GWh, equivalent to 5,000+ US homes' annual use
 		- **[[Carbon Footprint]]**: AI model training and inference contribute to [[Climate Change]]
 		- **[[E-waste]]**: Rapid hardware obsolescence from AI accelerator upgrades
-		- **Water usage**: Data centre cooling for AI training consuming millions of gallons
+		- **Water usage**: Data center cooling for AI training consuming millions of gallons
 		- **Resource extraction**: Environmental damage from mining rare earth elements for AI chips
 	- ### Psychological and Social Risks (AI-RISK-026)
 		- **[[Social Atomization]]**: AI companions replacing human relationships
 		- **[[Deskilling]]**: Cognitive atrophy from over-reliance on AI assistants
-		- **[[Mental Health]]**: [[Social Media Algorithms]] optimised for engagement amplifying anxiety and depression
+		- **[[Mental Health]]**: [[Social Media Algorithms]] optimized for engagement amplifying anxiety and depression
 		- **[[Parasocial Relationships]]**: Emotional attachment to AI entities
 		- **[[Reality Perception]]**: Difficulty distinguishing real from synthetic media
 		- **[[Meaning and Purpose]]**: Existential questions when AI exceeds human capabilities
@@ -448,7 +502,7 @@ AI Risks
 		- **[[Algorithmic Auditing]]**: Third-party evaluation of AI systems (e.g., [[O'Neil Risk Consulting & Algorithmic Auditing]], [[ForHumanity]])
 		- **[[Explainable AI]]** (XAI): Techniques for interpretable models ([[LIME]], [[SHAP]], [[Integrated Gradients]])
 		- **[[Privacy-Preserving AI]]**: [[Federated Learning]], [[Differential Privacy]], [[Homomorphic Encryption]]
-		- **[[Adversarial Robustness]]**: Defences against [[Adversarial Examples]]
+		- **[[Adversarial Robustness]]**: Defenses against [[Adversarial Examples]]
 		- **[[Formal Verification]]**: Mathematical proofs of system properties
 		- **[[AI Firewalls]]**: Runtime monitoring and control systems
 	- ### Institutional and Governance Approaches
@@ -473,10 +527,10 @@ AI Risks
 		- **[[AI Safety Gridworlds]]**: Benchmark environments for safety research
 		- **[[TruthfulQA]]**, **[[HarmBench]]**: Evaluating model safety
 	- ### Education and Awareness
-		- **[[AI Literacy]] programmes**: Public education on AI capabilities and risks
+		- **[[AI Literacy]] programs**: Public education on AI capabilities and risks
 		- **[[Media Literacy]]**: Critical evaluation of AI-generated content
 		- **[[AI Ethics]] education**: Integration into computer science curricula
-		- **[[Responsible AI]] training**: Corporate and government training programmes
+		- **[[Responsible AI]] training**: Corporate and government training programs
 - ## The Path Forward: Recommendations
 	- Addressing AI risks requires coordinated action across multiple domains:
 	- ### For Governments
@@ -484,7 +538,7 @@ AI Risks
 		- Mandate [[Algorithmic Impact Assessments]] for high-risk AI
 		- Invest in [[AI Safety Research]] at scale comparable to capabilities research
 		- Create [[Liability Frameworks]] for AI harms
-		- Support [[AI Literacy]] and [[Reskilling]] programmes
+		- Support [[AI Literacy]] and [[Reskilling]] programs
 		- Engage in international [[AI Governance]] coordination
 		- Regulate [[Compute]] as a governance chokepoint
 		- Fund [[Public Interest AI]] research and deployment
@@ -496,7 +550,7 @@ AI Risks
 		- Build [[Diverse Teams]] to reduce [[Algorithmic Bias]]
 		- Engage in [[Responsible Disclosure]] of AI risks
 		- Support [[Open Source AI Safety]] tools and research
-		- Participate in [[Pre-deployment Evaluation]] programmes
+		- Participate in [[Pre-deployment Evaluation]] programs
 	- ### For Researchers
 		- Prioritize [[Safety-Relevant Research]] alongside capabilities
 		- Adopt [[Responsible Disclosure]] practices
@@ -532,4 +586,78 @@ AI Risks
 		- **Coordination is essential**: AI risks require unprecedented global cooperation
 	- The need for inclusive, wise, and proactive [[AI Governance]] has never been more critical. The question is not whether AI poses risks, but whether humanity can develop the institutions, technologies, and wisdom to navigate them successfully.
 	- The stakes—from individual privacy and dignity to collective democratic governance and potentially human survival—demand nothing less than our most serious attention and effort.
--
+- ## References and Resources
+	- ### Primary Sources and Reports
+		- [NIST AI Risk Management Framework (AI RMF)](https://www.nist.gov/itl/ai-risk-management-framework) - Comprehensive US voluntary framework for managing AI risks
+		- [Council of Europe HUDERIA - Human Rights, Democracy, and Rule of Law Impact Assessment](https://www.coe.int/en/web/artificial-intelligence/hudeira-and-ai-systems) - Guidance for assessing AI system impacts on fundamental rights
+		- [International AI Safety Report 2025](https://www.gov.uk/government/publications/international-ai-safety-report-2025) - Collaborative effort by 100 AI experts from 33 countries on advanced AI risks
+		- [The State of AI Report 2024](https://www.stateof.ai/) - Annual comprehensive analysis of AI progress, industry, and safety developments
+		- [AI Index 2024 - Stanford HAI](https://aiindex.stanford.edu/) - Comprehensive measurement of AI progress and impact
+		- [Future of Life Institute AI Safety Index](https://futureoflife.org/ai-safety-index/) - Evaluation of corporate AI safety practices
+		- [Partnership on AI - AI Incident Database](https://incidentdatabase.ai/) - Documenting real-world AI failures and harms
+		- [EU AI Act - Full Text](https://artificialintelligenceact.eu/) - Complete text of world's first comprehensive AI regulation
+	- ### Academic and Research Papers
+		- [[Nick Bostrom]], "Superintelligence: Paths, Dangers, Strategies" (2014) - Foundational work on [[Existential Risk]] from AI
+		- [[Stuart Russell]], "Human Compatible: Artificial Intelligence and the Problem of Control" (2019) - Analysis of [[AI Alignment]] challenges
+		- [[Timnit Gebru]] et al., "Datasheets for Datasets" (2021) - Framework for [[Dataset Documentation]]
+		- [[Emily Bender]] et al., "On the Dangers of Stochastic Parrots" (2021) - Critique of [[Large Language Models]]
+		- [[Arvind Narayanan]] et al., "How to Recognize AI Snake Oil" (2021) - Identifying overhyped AI claims
+		- [[Anthropic]], "Constitutional AI: Harmlessness from AI Feedback" (2022) - [[AI Alignment]] methodology
+		- [[Perez et al.]], "Discovering Language Model Behaviors with Model-Written Evaluations" (2024) - [[Power-Seeking Behavior]] in LLMs
+	- ### Books and Long-form Analysis
+		- [[Shoshana Zuboff]], "The Age of Surveillance Capitalism" (2019) - Analysis of [[Data Exploitation]] business models
+		- [[Kate Crawford]], "Atlas of AI" (2021) - Material and environmental costs of AI
+		- [[Cathy O'Neil]], "Weapons of Math Destruction" (2016) - How [[Algorithmic Bias]] reinforces inequality
+		- [[Safiya Noble]], "Algorithms of Oppression" (2018) - [[Algorithmic Discrimination]] in search engines
+		- [[Virginia Eubanks]], "Automating Inequality" (2018) - AI systems and the social safety net
+		- [[Ruha Benjamin]], "Race After Technology" (2019) - [[Discriminatory Design]] in tech
+		- [[Meredith Broussard]], "Artificial Unintelligence" (2018) - Limits and failures of AI systems
+	- ### News and Analysis
+		- [The Rise of Techno-authoritarianism - The Atlantic](https://www.theatlantic.com/magazine/archive/2024/03/facebook-meta-silicon-valley-politics/677168/) - Analysis of concentrated tech power and authoritarian trends
+		- [Welcome to the era of AI nationalism - The Economist](https://www.economist.com/business/2024/01/01/welcome-to-the-era-of-ai-nationalism) - Geopolitical competition in AI development
+		- [AI Risk Management: A Guide for Business Leaders - Forbes](https://www.forbes.com/sites/forbestechcouncil/2024/01/22/ai-risk-management-a-guide-for-business-leaders/) - Practical corporate AI risk management guidance
+		- [MIT Technology Review - AI Risk Coverage](https://www.technologyreview.com/topic/ai-risk/) - Ongoing journalism on AI safety and risks
+		- [Bloomberg - AI Ethics and Governance](https://www.bloomberg.com/ai-ethics) - Business perspective on AI regulation and risk
+	- ### Organizations and Initiatives
+		- [[Center for AI Safety]] (CAIS) - https://www.safe.ai/ - Research and advocacy for AI safety
+		- [[Future of Life Institute]] - https://futureoflife.org/ - Existential risk reduction
+		- [[Partnership on AI]] - https://partnershiponai.org/ - Multi-stakeholder collaboration
+		- [[AI Now Institute]] - https://ainowinstitute.org/ - Social implications of AI
+		- [[Data & Society]] - https://datasociety.net/ - Research on data-centric technologies
+		- [[Algorithmic Justice League]] - https://www.ajl.org/ - Combating [[Algorithmic Bias]]
+		- [[Campaign to Stop Killer Robots]] - https://www.stopkillerrobots.org/ - [[Autonomous Weapons]] advocacy
+		- [[Electronic Frontier Foundation AI Issues]] - https://www.eff.org/ai - Digital rights and AI
+		- [[Access Now AI]] - https://www.accessnow.org/issue/ai/ - Human rights in AI deployment
+	- ### Government and Regulatory Resources
+		- [[NIST AI Resources]] - https://www.nist.gov/artificial-intelligence - US standards and frameworks
+		- [[UK AI Safety Institute]] - https://www.aisi.gov.uk/ - Pre-deployment testing and research
+		- [[US AI Safety Institute Consortium]] - https://www.nist.gov/aisi/consortium - Multi-stakeholder safety collaboration
+		- [[European AI Office]] - https://digital-strategy.ec.europa.eu/en/policies/ai-office - EU AI Act implementation
+		- [[OECD.AI]] - https://oecd.ai/ - International AI policy observatory
+		- [[UNESCO AI Ethics]] - https://www.unesco.org/en/artificial-intelligence - Global ethical framework
+		- [[Council of Europe AI]] - https://www.coe.int/en/web/artificial-intelligence - Human rights-centered AI governance
+	- ### Technical Resources
+		- [[Papers with Code - AI Safety]]- https://paperswithcode.com/task/ai-safety - Research papers and benchmarks
+		- [[Alignment Forum]] - https://www.alignmentforum.org/ - Technical AI alignment discussions
+		- [[LessWrong AI Alignment]] - https://www.lesswrong.com/tag/ai-alignment - Community discussion and research
+		- [[ML Safety Newsletter]] - https://newsletter.mlsafety.org/ - Curated AI safety research
+		- [[Import AI]] - https://jack-clark.net/ - Weekly AI developments newsletter
+	- ### Cross-referenced Pages
+		- [[AI Governance]] - Regulatory frameworks and institutional responses
+		- [[AI Safety]] - Technical research on safe AI systems
+		- [[AI Ethics]] - Philosophical and normative dimensions
+		- [[AI Liability]] - Legal responsibility for AI harms
+		- [[Machine Learning Security]] - Adversarial attacks and defenses
+		- [[Algorithmic Bias]] - Discrimination in automated systems
+		- [[AI Alignment]] - Value alignment problem
+		- [[Existential Risk]] - Civilization-level threats
+		- [[Autonomous Weapons]] - Lethal autonomous systems
+		- [[Deepfakes]] - Synthetic media and impersonation
+		- [[Privacy Protection]] - Data protection in AI era
+		- [[AI Accountability]] - Responsibility and transparency
+		- [[AI Surveillance]] - Monitoring and social control
+		- [[Generative AI]] - Content creation technologies
+		- [[Large Language Models]] - Foundation models and risks
+		- [[Bitcoin Security]] - Cryptographic and economic security
+		- [[Autonomous Agents]] - Self-directed AI systems
+		- [[Digital Rights]] - Human rights in digital context

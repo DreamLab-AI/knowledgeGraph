@@ -1,17 +1,197 @@
-id:: recurrent-neural-network-ontology
-
 - ### OntologyBlock
-  id:: Recurrent Neural Network
-  - ontology:: true
-  - public-access:: true
-  - term-id:: MV-0929
-  - preferred-term:: Recurrent Neural Network
-  - source-domain:: ai
-  - status:: draft
-  - owl:class:: ai:RecurrentNeuralNetwork
-  - definition:: 
-### Relationships
-- is-subclass-of:: [[NeuralNetworkArchitecture]]
+  id:: recurrent-neural-network-ontology
+  collapsed:: true
+	- ontology:: true
+	- term-id:: AI-0033
+	- preferred-term:: Recurrent Neural Network
+- source-domain:: artificial-intelligence
+	- status:: draft
+	- definition:: ### Primary Definition
+A **Recurrent Neural Network (RNN)** is a neural network in which outputs from both the previous layer and the previous processing step are fed into the current layer. RNNs maintain internal state (memory), making them suitable for processing sequential data such as time series, natural language, and speech.
+	- maturity:: draft
+	- owl:class:: ai:RecurrentNeuralNetwork
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Recurrent Neural Network
+	- ### Primary Definition
+A **Recurrent Neural Network (RNN)** is a neural network in which outputs from both the previous layer and the previous processing step are fed into the current layer. RNNs maintain internal state (memory), making them suitable for processing sequential data such as time series, natural language, and speech.
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# Recurrent Neural Network
+		  
+		  ## Metadata
+		  - **Term ID**: AI-0033
+		  - **Type**: NeuralNetwork
+		  - **Classification**: Neural Architecture
+		  - **Domain**: MLDomain
+		  - **Layer**: AlgorithmicLayer
+		  - **Status**: Active
+		  - **Version**: 1.0
+		  - **Last Updated**: 2025-10-27
+		  - **Priority**: 1=Foundational
+		  
+		  ## Definition
+		  
+		  ### Primary Definition
+		  A **Recurrent Neural Network (RNN)** is a neural network in which outputs from both the previous layer and the previous processing step are fed into the current layer. RNNs maintain internal state (memory), making them suitable for processing sequential data such as time series, natural language, and speech.
+		  
+		  **Source**: ISO/IEC 22989:2022, Clause 3.1.36 - Authority Score: 0.95
+		  
+		  ### Alternative Definitions
+		  1. **NIST AI 100-3**: A neural network with feedback connections that enable processing of sequential inputs by maintaining hidden state across time steps - Authority Score: 0.90
+		  2. **Deep Learning Literature**: A neural architecture with cyclic connections allowing information persistence, enabling temporal dependencies to be modelled - Authority Score: 0.88
+		  
+		  ### Operational Characteristics
+		  - **Temporal Processing**: Processes sequences one element at a time
+		  - **Internal Memory**: Maintains hidden state across time steps
+		  - **Parameter Sharing**: Same weights applied across all time steps
+		  - **Variable Length Input**: Can handle sequences of arbitrary length
+		  - **Sequential Dependencies**: Captures temporal relationships in data
+		  
+		  ## Relationships
+		  
+		  ### Parent Classes
+		  - **NeuralNetwork**: RNN is a fundamental neural network architecture type
+		  - **SequentialModel**: Designed for sequential data processing
+		  
+		  ### Child Classes
+		  - **Long Short-Term Memory (LSTM)**: RNN variant addressing vanishing gradient problem
+		  - **Gated Recurrent Unit (GRU)**: Simplified LSTM with fewer parameters
+		  - **Bidirectional RNN**: Processes sequences in both forward and backward directions
+		  
+		  ### Related Concepts
+		  - **Natural Language Processing**: Primary application domain for RNNs
+		  - **Time Series Prediction**: Forecasting sequential numerical data
+		  - **Speech Recognition**: Processing temporal audio signals
+		  - **Backpropagation Through Time**: Training algorithm for RNNs
+		  - **Vanishing Gradient Problem**: Major challenge in training deep RNNs
+		  
+		  ## Formal Ontology
+		  
+		  <details>
+		  <summary>Click to expand OntologyBlock</summary>
+		  
+		  ```clojure
+		  ;; Recurrent Neural Network Ontology (OWL Functional Syntax)
+		  ;; Term ID: AI-0033
+		  ;; Domain: MLDomain | Layer: AlgorithmicLayer
+		  
+		  (Declaration (Class :RecurrentNeuralNetwork))
+		  
+		  ;; Core Classification
+		  (SubClassOf :RecurrentNeuralNetwork :NeuralNetwork)
+		  (SubClassOf :RecurrentNeuralNetwork :SequentialModel)
+		  
+		  ;; Architectural Properties
+		  (SubClassOf :RecurrentNeuralNetwork
+		    (ObjectSomeValuesFrom :hasRecurrentConnection :FeedbackLoop))
+		  (SubClassOf :RecurrentNeuralNetwork
+		    (ObjectSomeValuesFrom :maintainsHiddenState :InternalMemory))
+		  (SubClassOf :RecurrentNeuralNetwork
+		    (ObjectSomeValuesFrom :processesSequentially :TemporalData))
+		  
+		  ;; Operational Characteristics
+		  (SubClassOf :RecurrentNeuralNetwork
+		    (ObjectSomeValuesFrom :implementsParameterSharing :RecurrentWeights))
+		  (SubClassOf :RecurrentNeuralNetwork
+		    (ObjectSomeValuesFrom :capturesTemporal dependencies :SequentialPattern))
+		  
+		  ;; Training Characteristics
+		  (SubClassOf :RecurrentNeuralNetwork
+		    (ObjectSomeValuesFrom :trainedBy :BackpropagationThroughTime))
+		  (SubClassOf :RecurrentNeuralNetwork
+		    (ObjectSomeValuesFrom :suffersFrom :VanishingGradientProblem))
+		  
+		  ;; Disjoint Classes
+		  (DisjointClasses :RecurrentNeuralNetwork :FeedforwardNeuralNetwork :ConvolutionalNeuralNetwork)
+		  
+		  ;; Annotations
+		  (AnnotationAssertion rdfs:label :RecurrentNeuralNetwork "Recurrent Neural Network"@en-GB)
+		  (AnnotationAssertion rdfs:comment :RecurrentNeuralNetwork
+		    "Neural network with feedback connections enabling processing of sequential data with internal memory"@en)
+		  (AnnotationAssertion :isoReference :RecurrentNeuralNetwork "ISO/IEC 22989:2022, Clause 3.1.36")
+		  (AnnotationAssertion :authorityScore :RecurrentNeuralNetwork "0.95"^^xsd:float)
+		  (AnnotationAssertion :priorityLevel :RecurrentNeuralNetwork "1"^^xsd:integer)
+		  
+		  ;; Data Properties
+		  (DataPropertyAssertion :hasRecurrentStructure :RecurrentNeuralNetwork "true"^^xsd:boolean)
+		  (DataPropertyAssertion :maintainsInternalState :RecurrentNeuralNetwork "true"^^xsd:boolean)
+		  (DataPropertyAssertion :supportsVariableLengthInput :RecurrentNeuralNetwork "true"^^xsd:boolean)
+		  (DataPropertyAssertion :isAcyclicGraph :RecurrentNeuralNetwork "false"^^xsd:boolean)
+		  ```
+		  </details>
+		  
+		  ## Standards Alignment
+		  
+		  ### ISO/IEC Standards
+		  - **ISO/IEC 22989:2022**: Clause 3.1.36 (Recurrent neural networks)
+		  - **ISO/IEC 23894:2023**: Sequential data processing risks
+		  
+		  ### NIST AI RMF
+		  - **Function**: MEASURE (Model performance for sequential tasks)
+		  - **Category**: MS-2.7 (Performance metrics for temporal data)
+		  
+		  ### EU AI Act
+		  - **Article**: Article 15 (Accuracy and robustness for sequence processing)
+		  - **Application**: NLP systems may be high-risk depending on use case
+		  
+		  ## Related Terms
+		  - **Long Short-Term Memory** (AI-0034): Advanced RNN variant
+		  - **Transformer** (AI-0037): Modern alternative to RNNs for sequences
+		  - **Feedforward Neural Network** (AI-0031): Contrasting architecture without recurrence
+		  - **Backpropagation** (AI-0043): Training algorithm (BPTT variant for RNNs)
+		  
+		  ## References
+		  1. ISO/IEC 22989:2022 - Clause 3.1.36
+		  2. NIST AI 100-3 - Technical terminology
+		  3. Hochreiter & Schmidhuber - "Long Short-Term Memory" - Neural Computation, 1997
+		  
+		  ---
+		  
+		  **Navigation**: [← Back to Index](../README.md) | [Domain: MLDomain](../domains/MLDomain.md)
+		  
+		  **Authority Score**: 0.95 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST
+		  
+		  ```
+
+		- #### 1️⃣ Neural Networks
+		- **Description**: Consists of layers of interconnected nodes which just tweak numbers
+		- **Explain**: Like a network of brain cells working together to think and learn.
+		- **Paper**: [Neural networks: An overview of early research, current frameworks and new challenges](https://www.sciencedirect.com/science/article/pii/S0925231216305550?)
+		- {{video https://www.youtube.com/watch?v=aircAruvnKk&}}
+
+		- #### 1️⃣ Neural Networks
+		- **Description**: Consists of layers of interconnected nodes which just tweak numbers
+		- **Explain**: Like a network of brain cells working together to think and learn.
+		- **Paper**: [Neural networks: An overview of early research, current frameworks and new challenges](https://www.sciencedirect.com/science/article/pii/S0925231216305550?)
+		- {{video https://www.youtube.com/watch?v=aircAruvnKk&}}
+
+- source-domain:: [[Machine Learning Domain]]
+	- status:: active
+	- public-access:: true
+	- definition:: ### Primary Definition
+		- A **[[Recurrent Neural Network]] (RNN)** is a [[neural network]] architecture in which outputs from both the previous layer and the previous processing step are fed into the current layer. RNNs maintain internal state (memory), making them suitable for processing [[sequential data]] such as [[time series]], [[natural language]], and [[speech recognition]].
+	- maturity:: mature
+	- owl:class:: ml:RecurrentNeuralNetwork
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Algorithm
+	- belongsToDomain:: [[Machine Learning Domain]]
+	- **[Updated 2025]**: RNNs remain foundational for sequential data processing despite the rise of [[transformer]] architectures
+
+## About Recurrent Neural Network
+
+### Primary Definition [Updated 2025]
+- A **[[Recurrent Neural Network]] (RNN)** is a [[neural network]] architecture featuring feedback connections that enable the processing of sequential data by maintaining [[hidden state]] across time steps.
+- Unlike [[feedforward neural networks]], RNNs can capture temporal dependencies and process variable-length sequences through recurrent connections that create internal memory.
+- **Core Characteristics**:
+	- **Temporal processing**: Processes sequences one element at a time
+	- **Internal memory**: Maintains [[hidden state]] across time steps
+	- **Parameter sharing**: Same weights applied across all time steps
+	- **Variable-length input**: Can handle sequences of arbitrary length
+	- **Sequential dependencies**: Captures temporal relationships in data
 
 ### Historical Development [Updated 2025]
 - **1980s**: Foundational concepts introduced by [[John Hopfield]] and [[David Rumelhart]]
@@ -60,7 +240,7 @@ id:: recurrent-neural-network-ontology
 	- [[LSTM]]/[[GRU]]: Mitigates vanishing gradients through gating
 	- [[Teacher forcing]]: Uses ground truth as input during training
 - **Optimization Strategies** [Updated 2025]:
-	- [[Adam optimiser]]: Adaptive learning rates
+	- [[Adam optimizer]]: Adaptive learning rates
 	- [[Truncated BPTT]]: Limits sequence length for efficiency
 	- [[Layer normalization]]: Stabilizes training
 
@@ -135,22 +315,28 @@ id:: recurrent-neural-network-ontology
 ## Current Landscape (2025) [Updated 2025]
 
 ### Industry Applications
-- **Financial Services (Manchester, Leeds)**:
-	- [[RBS]]/[[NatWest Group]]: Fraud detection using temporal transaction pattern analysis
-	- [[Lloyds Banking Group]]: Credit risk assessment with sequential financial data
-	- Fintech startups: Real-time trading signal generation
-- **Healthcare (across North England)**:
-	- [[NHS Digital]]: Patient pathway optimization using RNN-based prediction
-	- [[AstraZeneca]] (Macclesfield): Drug discovery with molecular sequence modelling
-	- [[Philips Healthcare]]: Medical device time-series analysis
-- **Manufacturing (Sheffield, Newcastle)**:
-	- [[Rolls-Royce]]: Predictive maintenance for turbine engines using sensor time series
-	- [[Siemens]]: Smart manufacturing quality control with sequential process monitoring
-	- [[Nissan]] (Sunderland): Production line optimization with temporal analytics
-- **Legal Tech (Manchester)**:
-	- Startups leveraging RNNs for legal document analysis and contract review
-	- [[Weightmans LLP]]: AI-assisted case outcome prediction
-	- [[DWF Law LLP]]: Automated legal research with temporal case analysis
+- **[[Natural Language Processing]]**:
+	- [[Language modeling]]: Character and word-level generation
+	- [[Machine translation]]: Sequence-to-sequence models (though increasingly replaced by transformers)
+	- [[Sentiment analysis]]: Temporal text classification
+	- [[Named entity recognition]]: Sequential tagging tasks
+- **[[Speech Processing]]**:
+	- [[Speech recognition]]: Acoustic modeling for voice assistants
+	- [[Speaker identification]]: Temporal voice pattern analysis
+	- [[Speech synthesis]]: Prosody and timing generation
+- **[[Time Series Analysis]]**:
+	- [[Financial forecasting]]: Stock price and market trend prediction
+	- [[Anomaly detection]]: Sequential pattern deviation identification
+	- [[Energy demand prediction]]: Grid load forecasting
+	- [[Weather forecasting]]: Temporal meteorological modeling
+- **[[Computer Vision]]**:
+	- [[Video analysis]]: Action recognition and video captioning
+	- [[Gesture recognition]]: Temporal motion pattern classification
+	- [[Medical imaging]]: Sequential scan analysis
+- **[[Biomedical Applications]]**:
+	- [[Protein sequence analysis]]: Structure and function prediction
+	- [[Electronic health records]]: Patient trajectory prediction
+	- [[Drug discovery]]: Molecular sequence modeling
 
 ### Technical Status [Updated 2025]
 - **Performance Context**:
@@ -205,11 +391,29 @@ id:: recurrent-neural-network-ontology
 	- Focus: Temporal patient data analysis for outcome prediction
 - **[[University of Sheffield]]**:
 	- [[Department of Computer Science]]: Research on [[speech recognition]] and [[natural language understanding]]
-	- [[Sheffield Institute for Translational Neuroscience]]: Neural sequence modelling
+	- [[Sheffield Institute for Translational Neuroscience]]: Neural sequence modeling
 	- Notable work: [[Automatic Speech Recognition]] for medical documentation
 - **[[Newcastle University]]**:
 	- [[School of Computing]]: RNN applications in [[smart grids]] and [[energy forecasting]]
 	- [[National Innovation Centre for Data]]: Industry partnerships for sequential data analytics
+
+### Industry Applications
+- **Financial Services (Manchester, Leeds)**:
+	- [[RBS]]/[[NatWest Group]]: Fraud detection using temporal transaction pattern analysis
+	- [[Lloyds Banking Group]]: Credit risk assessment with sequential financial data
+	- Fintech startups: Real-time trading signal generation
+- **Healthcare (across North England)**:
+	- [[NHS Digital]]: Patient pathway optimization using RNN-based prediction
+	- [[AstraZeneca]] (Macclesfield): Drug discovery with molecular sequence modeling
+	- [[Philips Healthcare]]: Medical device time-series analysis
+- **Manufacturing (Sheffield, Newcastle)**:
+	- [[Rolls-Royce]]: Predictive maintenance for turbine engines using sensor time series
+	- [[Siemens]]: Smart manufacturing quality control with sequential process monitoring
+	- [[Nissan]] (Sunderland): Production line optimization with temporal analytics
+- **Legal Tech (Manchester)**:
+	- Startups leveraging RNNs for legal document analysis and contract review
+	- [[Weightmans LLP]]: AI-assisted case outcome prediction
+	- [[DWF Law LLP]]: Automated legal research with temporal case analysis
 
 ### Regional Innovation Hubs [Updated 2025]
 - **[[Manchester Digital]]**:
@@ -223,17 +427,17 @@ id:: recurrent-neural-network-ontology
 	- Focus on AI ethics and responsible RNN deployment
 - **[[Newcastle Helix]]**:
 	- Urban innovation district
-	- [[National Innovation Centre for Data]]: RNN training programmes and industry partnerships
+	- [[National Innovation Centre for Data]]: RNN training programs and industry partnerships
 
 ### Case Studies [Updated 2025]
 - **Leeds NHS Trust - Patient Deterioration Prediction**:
-	- Deployed LSTM model analysing temporal vital signs (heart rate, blood pressure, oxygen saturation)
+	- Deployed LSTM model analyzing temporal vital signs (heart rate, blood pressure, oxygen saturation)
 	- Predicts patient deterioration 6-12 hours in advance
 	- Reduces ICU admissions by 15% through early intervention
 	- Dataset: 100,000+ patient records with hourly measurements
 	- Citation: *BMJ Health & Care Informatics* (2024)
 - **Manchester Legal Tech - Contract Risk Analysis**:
-	- GRU-based system analysing clause sequences in commercial contracts
+	- GRU-based system analyzing clause sequences in commercial contracts
 	- Identifies high-risk terms and suggests mitigations
 	- Processing time reduced from 4 hours (manual) to 15 minutes
 	- Accuracy: 92% risk classification vs. senior lawyer review
@@ -314,12 +518,12 @@ id:: recurrent-neural-network-ontology
 
 ### Recommendation
 - **RELOCATION RECOMMENDED**: This content belongs in a dedicated **[[AI/ML Knowledge Graph]]** or **[[Deep Learning Knowledge Graph]]**
-- **Current Location Issue**: Placed in `mainKnowledgeGraph` with `source-domain:: ai
+- **Current Location Issue**: Placed in `mainKnowledgeGraph` with `source-domain:: mv` designation
 - **Proposed Action**:
 	1. Create `/aiKnowledgeGraph/` directory structure
 	2. Migrate RNN content alongside related ML concepts ([[neural networks]], [[transformers]], [[backpropagation]])
 	3. Maintain cross-reference in blockchain graph: "For RNN definition, see [[AI Knowledge Graph]]"
-	4. Update domain metadata: `source-domain:: ai
+	4. Update domain metadata: `source-domain:: [[Machine Learning Domain]]`
 
 ## Future Directions [Updated 2025]
 
@@ -345,7 +549,7 @@ id:: recurrent-neural-network-ontology
 	- Developing architectures that match transformer long-range performance with RNN efficiency
 	- Novel gating mechanisms and state-space formulations
 - **Interpretability and Explainability**:
-	- Methods for visualising and understanding learned temporal patterns
+	- Methods for visualizing and understanding learned temporal patterns
 	- Causal inference from RNN representations
 	- Regulatory compliance for high-risk applications
 - **Efficiency Optimization**:
@@ -454,7 +658,7 @@ id:: recurrent-neural-network-ontology
 6. Elman, J. L. (1990). Finding structure in time. *Cognitive Science*, 14(2), 179-211.
 7. Schuster, M., & Paliwal, K. K. (1997). Bidirectional recurrent neural networks. *IEEE Transactions on Signal Processing*, 45(11), 2673-2681.
 8. Vaswani, A., et al. (2017). Attention is All You Need. *Advances in Neural Information Processing Systems 30 (NIPS 2017)*.
-9. Gu, A., & Dao, T. (2024). Mamba: Linear-Time Sequence Modelling with Selective State Spaces. *arXiv preprint arXiv:2312.00752*.
+9. Gu, A., & Dao, T. (2024). Mamba: Linear-Time Sequence Modeling with Selective State Spaces. *arXiv preprint arXiv:2312.00752*.
 10. Peng, B., et al. (2023). RWKV: Reinventing RNNs for the Transformer Era. *arXiv preprint arXiv:2305.13048*.
 
 ## Additional UK-Specific Resources [Updated 2025]
@@ -465,6 +669,7 @@ id:: recurrent-neural-network-ontology
 - **Newcastle University**: [National Innovation Centre for Data](https://www.nicd.org.uk/)
 - **Alan Turing Institute**: [Data Science for Science Programme](https://www.turing.ac.uk/research/research-programmes/data-science-science)
 - **UKRI AI Programme**: [Funding Opportunities](https://www.ukri.org/what-we-do/browse-our-areas-of-investment-and-support/artificial-intelligence/)
+
 ---
 
 ## Metadata
@@ -483,6 +688,9 @@ id:: recurrent-neural-network-ontology
 - **Regional Context**: UK/North England specific applications and research highlighted
 - **Authority Score**: 0.95
 - **Standards Compliance**: ✓ ISO/IEC 22989:2022 ✓ ISO/IEC 23894:2023 ✓ NIST AI RMF
+
 ---
+
 **Navigation**: [← Back to AI/ML Index](../README.md) | [Domain: Machine Learning](../domains/MLDomain.md)
+
 **Recommended Action**: Migrate to dedicated AI/ML Knowledge Graph

@@ -1,16 +1,166 @@
 - ### OntologyBlock
-  id:: proximity-sensor-ontology
+  id:: rb-0071-proximity-sensor-ontology
   collapsed:: true
 	- ontology:: true
 	- term-id:: RB-0071
+	- domain-prefix:: RB
+	- sequence-number:: 0071
+	- filename-history:: ["rb-0071-proximity-sensor.md"]
 	- preferred-term:: Proximity Sensor
-	- source-domain:: rb
-	- owl:class:: rb:ProximitySensor
-	- is-subclass-of:: [[Robotics]]
+	- source-domain:: robotics
 	- status:: draft
-	- public-access:: true
-	- definition:: A proximity sensor detects the presence or absence of objects without physical contact using capacitive, inductive, ultrasonic, or photoelectric technologies.
+    - public-access:: true
+	- definition:: ### Primary Definition
+**Proximity Sensor** - Proximity Sensor in robotics systems
 	- maturity:: draft
+	- owl:class:: rb:rb0071proximitysensor
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[RoboticsDomain]]
+- ## About rb 0071 proximity sensor
+	- ### Primary Definition
+**Proximity Sensor** - Proximity Sensor in robotics systems
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# RB-0071: Proximity Sensor
+		  
+		  ## Metadata
+		  - **Term ID**: RB-0071
+		  - **Term Type**: Core Concept
+		  - **Classification**: Sensing & Perception
+		  - **Priority**: 1 (Foundational)
+		  - **Authority Score**: 0.95
+		  - **ISO Reference**: ISO 8373:2021
+		  - **Version**: 1.0.0
+		  - **Last Updated**: 2025-10-28
+		  
+		  ## Definition
+		  
+		  ### Primary Definition
+		  **Proximity Sensor** - Proximity Sensor in robotics systems
+		  
+		  ### Standards Context
+		  Defined according to ISO 8373:2021 and related international robotics standards.
+		  
+		  ### Key Characteristics
+		  1. Core property of robotics systems
+		  2. Standardised definition across implementations
+		  3. Measurable and verifiable attributes
+		  4. Essential for safety and performance
+		  5. Industry-wide recognition and adoption
+		  
+		  ## Formal Ontology (OWL Functional Syntax)
+		  
+		  ```clojure
+		  (Declaration (Class :ProximitySensor))
+		  (SubClassOf :ProximitySensor :Robot)
+		  
+		  (AnnotationAssertion rdfs:label :ProximitySensor "Proximity Sensor"@en)
+		  (AnnotationAssertion rdfs:comment :ProximitySensor
+		    "Proximity Sensor - Foundational robotics concept"@en)
+		  (AnnotationAssertion :termID :ProximitySensor "RB-0071"^^xsd:string)
+		  
+		  (Declaration (ObjectProperty :relates To))
+		  (ObjectPropertyDomain :relatesTo :ProximitySensor)
+		  
+		  (Declaration (DataProperty :hasProperty))
+		  (DataPropertyDomain :hasProperty :ProximitySensor)
+		  (DataPropertyRange :hasProperty xsd:string)
+		  ```
+		  
+		  ## Relationships
+		  
+		  ### Parent Classes
+		  - `Robot`: Primary classification
+		  
+		  ### Related Concepts
+		  - Related robotics concepts and systems
+		  - Cross-references to other ontology terms
+		  - Integration with metaverse ontology
+		  
+		  ## Use Cases
+		  
+		  ### Industrial Applications
+		  1. Manufacturing automation
+		  2. Quality control systems
+		  3. Process optimization
+		  
+		  ### Service Applications
+		  1. Healthcare robotics
+		  2. Logistics and warehousing
+		  3. Consumer robotics
+		  
+		  ### Research Applications
+		  1. Academic research platforms
+		  2. Algorithm development
+		  3. System integration studies
+		  
+		  ## Standards References
+		  
+		  ### Primary Standards
+		  1. **ISO 8373:2021**: Primary reference standard
+		  2. **ISO 8373:2021**: Robotics vocabulary
+		  3. **Related IEEE standards**: Implementation guidelines
+		  
+		  ## Validation Criteria
+		  
+		  ### Conformance Requirements
+		  1. ✓ Meets ISO 8373:2021 requirements
+		  2. ✓ Documented implementation
+		  3. ✓ Verifiable performance metrics
+		  4. ✓ Safety compliance demonstrated
+		  5. ✓ Industry best practices followed
+		  
+		  ## Implementation Notes
+		  
+		  ### Design Considerations
+		  - System integration requirements
+		  - Performance specifications
+		  - Safety considerations
+		  - Maintenance procedures
+		  
+		  ### Common Patterns
+		  ```yaml
+		  implementation:
+		    standards_compliance: true
+		    verification_method: standardised_testing
+		    documentation_level: comprehensive
+		  ```
+		  
+		  ## Cross-References
+		  
+		  ### Metaverse Ontology Integration
+		  - Virtual representation systems
+		  - Digital twin integration
+		  - Simulation environments
+		  
+		  ### Domain Ontologies
+		  - Manufacturing systems
+		  - Control systems
+		  - Safety systems
+		  
+		  ## Future Directions
+		  
+		  ### Emerging Trends
+		  1. AI and machine learning integration
+		  2. Advanced sensing capabilities
+		  3. Improved safety systems
+		  4. Enhanced human-robot collaboration
+		  5. Standardisation advancements
+		  
+		  ---
+		  
+		  **Version History**
+		  - 1.0.0 (2025-10-28): Initial foundational definition
+		  
+		  **Contributors**: Robotics Ontology Working Group
+		  **License**: CC BY 4.0
+		  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0071`
+		  
+		  ```
+
 
 ## Academic Context
 
@@ -66,14 +216,15 @@
 
 ## References
 
-1. Smith, J., & Patel, R. (2024). Advances in AI-Integrated Proximity Sensors for Industrial Automation. *Journal of Sensor Technology*, 18(3), 145-162. DOI:10.1234/jst.2024.01803
-2. Nguyen, T., & O’Connor, D. (2025). Miniaturisation and Energy Efficiency in Capacitive Proximity Sensors. *Sensors and Actuators A: Physical*, 320, 112678. DOI:10.1016/j.sna.2024.112678
-3. Brown, L., et al. (2023). Wireless IoT-Enabled Proximity Sensors: Applications and Challenges. *IEEE Internet of Things Journal*, 10(12), 9876-9889. DOI:10.1109/JIOT.2023.3287654
-4. Future Market Insights. (2025). Proximity Sensor Market Size, Share & Trends 2025-2035.
-5. Precedence Research. (2025). Proximity Sensor Market Size to Surpass USD 9.01 Billion by 2034.
-6. GM Insights. (2025). Position and Proximity Sensors Market Size, Share, Report 2034.
+1. Smith, J., & Patel, R. (2024). Advances in AI-Integrated Proximity Sensors for Industrial Automation. *Journal of Sensor Technology*, 18(3), 145-162. DOI:10.1234/jst.2024.01803  
+2. Nguyen, T., & O’Connor, D. (2025). Miniaturisation and Energy Efficiency in Capacitive Proximity Sensors. *Sensors and Actuators A: Physical*, 320, 112678. DOI:10.1016/j.sna.2024.112678  
+3. Brown, L., et al. (2023). Wireless IoT-Enabled Proximity Sensors: Applications and Challenges. *IEEE Internet of Things Journal*, 10(12), 9876-9889. DOI:10.1109/JIOT.2023.3287654  
+4. Future Market Insights. (2025). Proximity Sensor Market Size, Share & Trends 2025-2035.  
+5. Precedence Research. (2025). Proximity Sensor Market Size to Surpass USD 9.01 Billion by 2034.  
+6. GM Insights. (2025). Position and Proximity Sensors Market Size, Share, Report 2034.  
 
 *No news or dated announcements clutter this entry — just the crisp, reliable facts you’d expect from a sensor that never sleeps.*
+
 
 ## Metadata
 
@@ -81,4 +232,5 @@
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
 

@@ -2,18 +2,468 @@
   id:: democratic-values-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: DT-0167
+	- term-id:: AI-0167
 	- preferred-term:: Democratic Values
-	- source-domain:: ai
+	- source-domain:: mv
 	- status:: draft
-  - owl:class:: ai:DemocraticValues
-	- belongsToDomain:: [[DisruptiveTechDomain]]
-    - public-access:: true
+- definition:: Principles and practices of democratic governance including pluralism, participatory decision-making, transparent governance, electoral integrity, free formation of political will and protection of civic space, which AI systems should respect and strengthen rather than undermine.
 
 
-### Relationships
-- is-subclass-of:: [[AIGovernance]]
+## OWL Formal Semantics
+
+```clojure
+;; OWL Functional Syntax
+
+(Declaration (Class :DemocraticValues))
+
+;; Annotations
+(AnnotationAssertion rdfs:label :DemocraticValues "Democratic Values"@en)
+(AnnotationAssertion rdfs:comment :DemocraticValues "Principles and practices of democratic governance including pluralism, participatory decision-making, transparent governance, electoral integrity, free formation of political will and protection of civic space, which AI systems should respect and strengthen rather than undermine."@en)
+
+;; Data Properties
+(AnnotationAssertion dcterms:identifier :DemocraticValues "AI-0167"^^xsd:string)
+(DataPropertyAssertion :isAITechnology :DemocraticValues "true"^^xsd:boolean)
+```
+
+## Source
+
+- **Primary**: OECD AI Principles 2024 (Principle 1.2 component)
+- **Related**: Council of Europe standards on democratic governance, EU democratic values (Article 2 TEU)
+
+## Context
+
+Democratic values constitute a core component of OECD's human-centred AI principle, recognising that AI systems have profound implications for democratic governance, from electoral processes to public discourse, civic participation and governmental accountability.
+
+## Key Democratic Principles
+
+### Political Participation
+- **Universal suffrage**: Equal voting rights without algorithmic discrimination
+- **Electoral integrity**: Protection against AI-enabled manipulation
+- **Civic engagement**: Enhanced rather than diminished public participation
+- **Access to information**: Unrestricted access to diverse viewpoints
+
+### Pluralism and Diversity
+- **Opinion diversity**: Protection of multiple perspectives
+- **Media pluralism**: Diverse information sources free from algorithmic homogenisation
+- **Political competition**: Fair opportunities for diverse political actors
+- **Minority protection**: Safeguarding minority voices and rights
+
+### Transparent Governance
+- **Open decision-making**: Visible governmental AI use
+- **Public accountability**: Scrutiny of AI-influenced public decisions
+- **Contestability**: Ability to challenge governmental AI applications
+- **Institutional oversight**: Democratic control over AI deployment
+
+### Rule-Making Processes
+- **Participatory governance**: Stakeholder involvement in AI regulation
+- **Democratic legitimacy**: Public authority for AI governance decisions
+- **Deliberation**: Reasoned public discourse on AI policy
+- **Responsive governance**: Adaptation to public concerns
+
+## Relationships
+
+- **Parent Concept**: Human-Centred Values (AI-0159)
+- **Related Terms**:
+  - Human Rights (AI-0166)
+  - Rule of Law (AI-0168)
+  - Multi-Stakeholder Approach (AI-0189)
+  - Accountability (AI-0165)
+- **Threatened By**: Social scoring, manipulation, echo chambers, surveillance
+
+## AI Threats to Democracy
+
+### Electoral Manipulation
+- Micro-targeted disinformation campaigns
+- Voter suppression through algorithmic profiling
+- Electoral interference through deepfakes
+- Coordinated inauthentic behaviour amplification
+
+### Public Discourse Distortion
+- Filter bubbles and echo chambers
+- Algorithmic amplification of polarising content
+- Synthetic content undermining shared reality
+- Attention manipulation reducing deliberation quality
+
+### Surveillance and Control
+- Mass surveillance chilling civic participation
+- Predictive policing targeting dissent
+- Social scoring systems constraining freedom
+- Automated censorship limiting expression
+
+### Institutional Erosion
+- Opaque governmental AI undermining accountability
+- Automated decision-making reducing democratic control
+- Technical complexity excluding public participation
+- Corporate power concentrating democratic influence
+
+## EU AI Act Democratic Safeguards
+
+- **Prohibited social scoring** (Article 5): Preventing Chinese-style social credit systems
+- **Real-time biometric identification restrictions**: Protecting freedom of assembly
+- **Transparency obligations**: Enabling democratic scrutiny
+- **Deepfake labelling**: Protecting information integrity
+
+## Implementation Considerations
+
+1. **Impact assessment**: Evaluating effects on democratic processes and institutions
+2. **Transparency**: Governmental AI use visible and explainable to citizens
+3. **Participation**: Public involvement in AI policy development
+4. **Contestability**: Mechanisms to challenge AI-influenced governmental decisions
+5. **Safeguards**: Protecting electoral integrity and civic space
+
+## Positive Democratic Potential
+
+AI can strengthen democracy through:
+- Enhanced civic participation tools
+- Improved governmental responsiveness
+- Better-informed policymaking
+- Accessible public services
+- Fact-checking and information verification
+- Platform for broader participation
+
+## 2024 Revision Updates
+
+OECD 2024 revision elevated democratic values by:
+- Explicit naming alongside human rights and rule of law
+- Recognition of AI's distinct democratic implications
+- Connection to pluralism and diversity protection
+- Emphasis on participatory AI governance
+
+## Assessment Dimensions
+
+Democratic impact evaluated through:
+- Electoral integrity metrics
+- Public discourse quality indicators
+- Civic participation rates
+- Governmental transparency assessments
+- Opinion diversity measurements
+- Institutional trust levels
+
+## Related Frameworks
+
+- Venice Commission standards on democratic governance
+- Council of Europe AI and human rights guidance
+- UNESCO Recommendation on Ethics of AI (democratic participation)
+- EU Code of Practice on Disinformation
+
+## See Also
+
+- Human Rights (AI-0166)
+- Rule of Law (AI-0168)
+- Multi-Stakeholder Approach (AI-0189)
+- Prohibited AI Practices (EU AI Act - social scoring)
+
+---
+
+*Part of AI Grounded Ontology - OECD AI Principles Framework*
+*Aligned with OECD AI Principles 2024 and democratic governance standards*
+	- maturity:: draft
+	- owl:class:: mv:DemocraticValues
+	- owl:physicality:: ConceptualEntity
+	- owl:role:: Concept
+	- belongsToDomain:: [[MetaverseDomain]]
+- ## About Democratic Values
+	- Principles and practices of democratic governance including pluralism, participatory decision-making, transparent governance, electoral integrity, free formation of political will and protection of civic space, which AI systems should respect and strengthen rather than undermine.
+
+- # Quick Demo Videos.
+- {{video https://youtu.be/cEqt-OnlBzY}}
+- {{video https://youtu.be/3wMCUgBEjos}}
+
+- # Quick Demo Videos.
+- {{video https://youtu.be/cEqt-OnlBzY}}
+- {{video https://youtu.be/3wMCUgBEjos}}
+
+- # Quick Demo Videos.
+- {{video https://youtu.be/cEqt-OnlBzY}}
+- {{video https://youtu.be/3wMCUgBEjos}}
+
+## Source
+
+- **Primary**: OECD AI Principles 2024 (Principle 1.2 component)
+- **Related**: Council of Europe standards on democratic governance, EU democratic values (Article 2 TEU)
+
+## Context
+
+Democratic values constitute a core component of OECD's human-centred AI principle, recognising that AI systems have profound implications for democratic governance, from electoral processes to public discourse, civic participation and governmental accountability.
+
+## Key Democratic Principles
+
+### Political Participation
+- **Universal suffrage**: Equal voting rights without algorithmic discrimination
+- **Electoral integrity**: Protection against AI-enabled manipulation
+- **Civic engagement**: Enhanced rather than diminished public participation
+- **Access to information**: Unrestricted access to diverse viewpoints
+
+### Pluralism and Diversity
+- **Opinion diversity**: Protection of multiple perspectives
+- **Media pluralism**: Diverse information sources free from algorithmic homogenisation
+- **Political competition**: Fair opportunities for diverse political actors
+- **Minority protection**: Safeguarding minority voices and rights
+
+### Transparent Governance
+- **Open decision-making**: Visible governmental AI use
+- **Public accountability**: Scrutiny of AI-influenced public decisions
+- **Contestability**: Ability to challenge governmental AI applications
+- **Institutional oversight**: Democratic control over AI deployment
+
+### Rule-Making Processes
+- **Participatory governance**: Stakeholder involvement in AI regulation
+- **Democratic legitimacy**: Public authority for AI governance decisions
+- **Deliberation**: Reasoned public discourse on AI policy
+- **Responsive governance**: Adaptation to public concerns
+
+## Relationships
+
+- **Parent Concept**: Human-Centred Values (AI-0159)
+- **Related Terms**:
+  - Human Rights (AI-0166)
+  - Rule of Law (AI-0168)
+  - Multi-Stakeholder Approach (AI-0189)
+  - Accountability (AI-0165)
+- **Threatened By**: Social scoring, manipulation, echo chambers, surveillance
+
+## AI Threats to Democracy
+
+### Electoral Manipulation
+- Micro-targeted disinformation campaigns
+- Voter suppression through algorithmic profiling
+- Electoral interference through deepfakes
+- Coordinated inauthentic behaviour amplification
+
+### Public Discourse Distortion
+- Filter bubbles and echo chambers
+- Algorithmic amplification of polarising content
+- Synthetic content undermining shared reality
+- Attention manipulation reducing deliberation quality
+
+### Surveillance and Control
+- Mass surveillance chilling civic participation
+- Predictive policing targeting dissent
+- Social scoring systems constraining freedom
+- Automated censorship limiting expression
+
+### Institutional Erosion
+- Opaque governmental AI undermining accountability
+- Automated decision-making reducing democratic control
+- Technical complexity excluding public participation
+- Corporate power concentrating democratic influence
+
+## EU AI Act Democratic Safeguards
+
+- **Prohibited social scoring** (Article 5): Preventing Chinese-style social credit systems
+- **Real-time biometric identification restrictions**: Protecting freedom of assembly
+- **Transparency obligations**: Enabling democratic scrutiny
+- **Deepfake labelling**: Protecting information integrity
+
+## Implementation Considerations
+
+1. **Impact assessment**: Evaluating effects on democratic processes and institutions
+2. **Transparency**: Governmental AI use visible and explainable to citizens
+3. **Participation**: Public involvement in AI policy development
+4. **Contestability**: Mechanisms to challenge AI-influenced governmental decisions
+5. **Safeguards**: Protecting electoral integrity and civic space
+
+## Positive Democratic Potential
+
+AI can strengthen democracy through:
+- Enhanced civic participation tools
+- Improved governmental responsiveness
+- Better-informed policymaking
+- Accessible public services
+- Fact-checking and information verification
+- Platform for broader participation
+
+## 2024 Revision Updates
+
+OECD 2024 revision elevated democratic values by:
+- Explicit naming alongside human rights and rule of law
+- Recognition of AI's distinct democratic implications
+- Connection to pluralism and diversity protection
+- Emphasis on participatory AI governance
+
+## Assessment Dimensions
+
+Democratic impact evaluated through:
+- Electoral integrity metrics
+- Public discourse quality indicators
+- Civic participation rates
+- Governmental transparency assessments
+- Opinion diversity measurements
+- Institutional trust levels
+
+## Related Frameworks
+
+- Venice Commission standards on democratic governance
+- Council of Europe AI and human rights guidance
+- UNESCO Recommendation on Ethics of AI (democratic participation)
+- EU Code of Practice on Disinformation
+
+## See Also
+
+- Human Rights (AI-0166)
+- Rule of Law (AI-0168)
+- Multi-Stakeholder Approach (AI-0189)
+- Prohibited AI Practices (EU AI Act - social scoring)
+
+---
+
+*Part of AI Grounded Ontology - OECD AI Principles Framework*
+*Aligned with OECD AI Principles 2024 and democratic governance standards*
+	-
+	- ### Original Content
+	  collapsed:: true
+		- ```
+# Democratic Values
+		  
+		  **Term ID**: AI-0167
+		  **Category**: OECD Supporting Principle
+		  **Status**: Essential
+		  **Version**: 1.0
+		  **Last Updated**: 2025-10-27
+		  
+		  ## Definition
+		  
+		  Principles and practices of democratic governance including pluralism, participatory decision-making, transparent governance, electoral integrity, free formation of political will and protection of civic space, which AI systems should respect and strengthen rather than undermine.
+		  
+		  ## Source
+		  
+		  - **Primary**: OECD AI Principles 2024 (Principle 1.2 component)
+		  - **Related**: Council of Europe standards on democratic governance, EU democratic values (Article 2 TEU)
+		  
+		  ## Context
+		  
+		  Democratic values constitute a core component of OECD's human-centred AI principle, recognising that AI systems have profound implications for democratic governance, from electoral processes to public discourse, civic participation and governmental accountability.
+		  
+		  ## Key Democratic Principles
+		  
+		  ### Political Participation
+		  - **Universal suffrage**: Equal voting rights without algorithmic discrimination
+		  - **Electoral integrity**: Protection against AI-enabled manipulation
+		  - **Civic engagement**: Enhanced rather than diminished public participation
+		  - **Access to information**: Unrestricted access to diverse viewpoints
+		  
+		  ### Pluralism and Diversity
+		  - **Opinion diversity**: Protection of multiple perspectives
+		  - **Media pluralism**: Diverse information sources free from algorithmic homogenisation
+		  - **Political competition**: Fair opportunities for diverse political actors
+		  - **Minority protection**: Safeguarding minority voices and rights
+		  
+		  ### Transparent Governance
+		  - **Open decision-making**: Visible governmental AI use
+		  - **Public accountability**: Scrutiny of AI-influenced public decisions
+		  - **Contestability**: Ability to challenge governmental AI applications
+		  - **Institutional oversight**: Democratic control over AI deployment
+		  
+		  ### Rule-Making Processes
+		  - **Participatory governance**: Stakeholder involvement in AI regulation
+		  - **Democratic legitimacy**: Public authority for AI governance decisions
+		  - **Deliberation**: Reasoned public discourse on AI policy
+		  - **Responsive governance**: Adaptation to public concerns
+		  
+		  ## Relationships
+		  
+		  - **Parent Concept**: Human-Centred Values (AI-0159)
+		  - **Related Terms**:
+		    - Human Rights (AI-0166)
+		    - Rule of Law (AI-0168)
+		    - Multi-Stakeholder Approach (AI-0189)
+		    - Accountability (AI-0165)
+		  - **Threatened By**: Social scoring, manipulation, echo chambers, surveillance
+		  
+		  ## AI Threats to Democracy
+		  
+		  ### Electoral Manipulation
+		  - Micro-targeted disinformation campaigns
+		  - Voter suppression through algorithmic profiling
+		  - Electoral interference through deepfakes
+		  - Coordinated inauthentic behaviour amplification
+		  
+		  ### Public Discourse Distortion
+		  - Filter bubbles and echo chambers
+		  - Algorithmic amplification of polarising content
+		  - Synthetic content undermining shared reality
+		  - Attention manipulation reducing deliberation quality
+		  
+		  ### Surveillance and Control
+		  - Mass surveillance chilling civic participation
+		  - Predictive policing targeting dissent
+		  - Social scoring systems constraining freedom
+		  - Automated censorship limiting expression
+		  
+		  ### Institutional Erosion
+		  - Opaque governmental AI undermining accountability
+		  - Automated decision-making reducing democratic control
+		  - Technical complexity excluding public participation
+		  - Corporate power concentrating democratic influence
+		  
+		  ## EU AI Act Democratic Safeguards
+		  
+		  - **Prohibited social scoring** (Article 5): Preventing Chinese-style social credit systems
+		  - **Real-time biometric identification restrictions**: Protecting freedom of assembly
+		  - **Transparency obligations**: Enabling democratic scrutiny
+		  - **Deepfake labelling**: Protecting information integrity
+		  
+		  ## Implementation Considerations
+		  
+		  1. **Impact assessment**: Evaluating effects on democratic processes and institutions
+		  2. **Transparency**: Governmental AI use visible and explainable to citizens
+		  3. **Participation**: Public involvement in AI policy development
+		  4. **Contestability**: Mechanisms to challenge AI-influenced governmental decisions
+		  5. **Safeguards**: Protecting electoral integrity and civic space
+		  
+		  ## Positive Democratic Potential
+		  
+		  AI can strengthen democracy through:
+		  - Enhanced civic participation tools
+		  - Improved governmental responsiveness
+		  - Better-informed policymaking
+		  - Accessible public services
+		  - Fact-checking and information verification
+		  - Platform for broader participation
+		  
+		  ## 2024 Revision Updates
+		  
+		  OECD 2024 revision elevated democratic values by:
+		  - Explicit naming alongside human rights and rule of law
+		  - Recognition of AI's distinct democratic implications
+		  - Connection to pluralism and diversity protection
+		  - Emphasis on participatory AI governance
+		  
+		  ## Assessment Dimensions
+		  
+		  Democratic impact evaluated through:
+		  - Electoral integrity metrics
+		  - Public discourse quality indicators
+		  - Civic participation rates
+		  - Governmental transparency assessments
+		  - Opinion diversity measurements
+		  - Institutional trust levels
+		  
+		  ## Related Frameworks
+		  
+		  - Venice Commission standards on democratic governance
+		  - Council of Europe AI and human rights guidance
+		  - UNESCO Recommendation on Ethics of AI (democratic participation)
+		  - EU Code of Practice on Disinformation
+		  
+		  ## See Also
+		  
+		  - Human Rights (AI-0166)
+		  - Rule of Law (AI-0168)
+		  - Multi-Stakeholder Approach (AI-0189)
+		  - Prohibited AI Practices (EU AI Act - social scoring)
+		  
+		  ---
+		  
+		  *Part of AI Grounded Ontology - OECD AI Principles Framework*
+		  *Aligned with OECD AI Principles 2024 and democratic governance standards*
+		  
+		  ```
+
+- public-access:: true
 	- definition:: Principles and practices of democratic governance including pluralism, participatory decision-making, transparent governance, electoral integrity, free formation of political will and protection of civic space, which AI systems should respect and strengthen rather than undermine.
+
+
 
 # Democratic Values – Updated Ontology Entry
 
@@ -122,10 +572,10 @@
 - United Nations. *Global Issues: Democracy*. Available at: https://www.un.org/en/global-issues/democracy[1]
 - World Bank Governance Programme. (2024). "Democratic Values and Corruption." *World Bank Blogs*. Available at: https://blogs.worldbank.org/en/governance/democratic-values-and-corruption[10]
 
+
 ## Metadata
 
 - **Last Updated**: 2025-11-11
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
-

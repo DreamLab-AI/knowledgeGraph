@@ -1,19 +1,46 @@
-### Definition
-
-Newton-Euler Dynamics formulation computes robot dynamics through recursive application of Newton's equations (F=ma for linear motion) and Euler's equations (τ=Iα for rotational motion) to each link in the kinematic chain, propagating forces and moments from base to end-effector and back. This systematic approach efficiently calculates both forward dynamics (accelerations given torques) and inverse dynamics (torques required for desired accelerations), essential for model-based control, simulation, and trajectory optimization in industrial and service robotics.
-
 - ### OntologyBlock
-  id:: Newton Euler Dynamics
-  - ontology:: true
-  - public-access:: true
-  - term-id:: RB-1014
-  - preferred-term:: Newton-Euler Dynamics
-  - owl:class:: rb:NewtonEulerDynamics
-  - is-subclass-of:: [[Robotics]]
-  - definition:: Newton-Euler Dynamics formulation computes robot dynamics through recursive application of Newton's and Euler's equations to each link, enabling efficient calculation of forward and inverse dynamics.
-  - source-domain:: rb
-  - status:: draft
+  id:: newtoneulerdynamics-ontology
+  collapsed:: true
 
-NewtonEuler Dynamics formulation computes robot dynamics through recursive application of Newton's equations (F=ma for linear motion) and Euler's equations (τ=Iα for rotational motion) to each link in the kinematic chain, propagating forces and moments from base to endeffector and back. This systematic approach efficiently calculates both forward dynamics (accelerations given torques) and inverse dynamics (torques required for desired accelerations), essential for modelbased control, simulation, and trajectory optimization in industrial and service robotics.
+  - **Identification**
+    - domain-prefix:: RB
+    - sequence-number:: 0184
+    - filename-history:: ["RB-0184-newtoneulerdynamics.md"]
+    - public-access:: true
+    - ontology:: true
+    - term-id:: RB-0184
+    - preferred-term:: Newton-Euler Dynamics
+    - source-domain:: rb
+    - status:: complete
+    - version:: 1.0.0
+    - last-updated:: 2025-11-13
 
-NewtonEuler Dynamics formulation computes robot dynamics through recursive application of Newton's equations (F=ma for linear motion) and Euler's equations (τ=Iα for rotational motion) to each link in the kinematic chain, propagating forces and moments from base to endeffector and back. This systematic approach efficiently calculates both forward dynamics (accelerations given torques) and inverse dynamics (torques required for desired accelerations), essential for modelbased control, simulation, and trajectory optimization in industrial and service robotics.
+  - **Definition**
+    - definition:: Newton-Euler method applies F=ma and τ=Iα to each link recursively.
+    - maturity:: established
+    - source:: Chimera Prime Research
+    - authority-score:: 0.95
+
+  - **Semantic Classification**
+    - owl:class:: rb:NewtonEulerDynamics
+    - belongsToDomain:: [[Robotics]]
+
+  - #### Relationships
+    - is-subclass-of:: [[Robot Dynamics]]
+
+  - #### OWL Axioms
+    - ```clojure
+      ; Class Declaration
+      (Declaration (Class :NewtonEulerDynamics))
+      (SubClassOf :NewtonEulerDynamics :RobotDynamics)
+      
+      ; Annotations
+      (AnnotationAssertion rdfs:label :NewtonEulerDynamics "Newton-Euler Dynamics"@en)
+      (AnnotationAssertion rdfs:comment :NewtonEulerDynamics
+        "Newton-Euler method applies F=ma and τ=Iα to each link recursively."@en)
+      ```
+
+- ## About Newton-Euler Dynamics
+  Newton-Euler method applies F=ma and τ=Iα to each link recursively.
+  
+  Dynamics formulation using Newton's and Euler's equations.
