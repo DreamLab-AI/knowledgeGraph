@@ -9,7 +9,6 @@
     "Digital Ritual",
     "Dynamic Character Animation",
     "Education Metaverse",
-    "Human Computer Interaction",
     "3D Scene Exchange Protocol (SXP)",
     "Tourism Metaverse",
     "Experience Layer",
@@ -17,12 +16,12 @@
     "Character Model"
   ],
   "wiki_links": [
-    "Input Processing",
-    "3D Rendering Engine",
-    "Social Interaction",
-    "User Representation",
     "Virtual Character System",
+    "Input Processing",
+    "Social Interaction",
+    "3D Rendering Engine",
     "Embodied Presence",
+    "User Representation",
     "Animation Controller"
   ],
   "ontology": {

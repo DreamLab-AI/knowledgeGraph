@@ -7,11 +7,11 @@
     "Hanim Standard"
   ],
   "wiki_links": [
-    "metaverse",
     "Cross-Platform 3D Content",
     "3D Asset Standard",
-    "Format Parser",
-    "Interoperability Standard"
+    "metaverse",
+    "Interoperability Standard",
+    "Format Parser"
   ],
   "ontology": {
     "term_id": "MV-9908",

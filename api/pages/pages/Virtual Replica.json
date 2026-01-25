@@ -6,11 +6,11 @@
     "Digital Twin"
   ],
   "wiki_links": [
-    "metaverse",
     "Digital Twin",
+    "Digital Model",
     "3D Scanning",
-    "Photogrammetry",
-    "Digital Model"
+    "metaverse",
+    "Photogrammetry"
   ],
   "ontology": {
     "term_id": "MV-10142",

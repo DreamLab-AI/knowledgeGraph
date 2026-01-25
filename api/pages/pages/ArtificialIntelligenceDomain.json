@@ -49,7 +49,6 @@
     "Bias",
     "Model Extraction",
     "Attention Mask",
-    "Natural Language Processing",
     "Model Interpretability",
     "Model Width",
     "Logic Programming",
@@ -75,13 +74,13 @@
     "AIDomain"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "Technology Domain",
-    "Robotics Systems",
     "Telecollaboration",
-    "Metaverse Technology",
+    "Robotics Systems",
     "AIDomain",
-    "Blockchain Technology"
+    "Artificial Intelligence",
+    "Metaverse Technology",
+    "Blockchain Technology",
+    "Technology Domain"
   ],
   "ontology": {
     "term_id": "AI-7007",

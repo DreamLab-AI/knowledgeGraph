@@ -1,0 +1,62 @@
+{
+  "id": "VirtualReality",
+  "title": "VirtualReality",
+  "content": "- ### OntologyBlock\n  id:: tc9027-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-9027\n\t- domain:: tc\n\t- owl:class:: tc:VirtualReality\n\t- public-access:: true\n\n## Definition\n\nVirtual Reality encompasses immersive computer-generated environments experienced through head-mounted displays (HMDs) providing stereoscopic 3D vision, spatial audio, and motion tracking for natural interaction. Modern VR systems (Meta Quest 3, PlayStation VR2, Apple Vision Pro) employ inside-out tracking with cameras and sensors eliminating external hardware, hand tracking enabling controller-free interaction, and eye tracking for foveated rendering and natural gaze-based interfaces. Technical foundations include low-persistence displays minimizing motion blur, high refresh rates (90-120 Hz) preventing motion sickness, and sub-20ms motion-to-photon latency ensuring comfortable experiences. VR collaboration applications create shared virtual spaces where distributed teams meet as avatars, interact with 3D content, and utilize spatial tools including virtual whiteboards, 3D model viewers, and spatial audio conversations. Key technical challenges include bandwidth requirements for multi-user synchronization, avatar animation from limited tracking data, locomotion systems enabling large-space exploration within small physical areas, and accessibility considerations for users with disabilities. Advanced implementations leverage neural rendering for photorealistic environments, foveated transport reducing network bandwidth, spatial computing understanding physical environments for mixed reality transitions, and haptic feedback providing tactile presence. The integration of VR with collaboration platforms creates new paradigms for distributed teamwork transcending physical meeting limitations.\n\n## References\n\n- Khronos Group. (2024). \"OpenXR VR Standard Specification.\" https://www.khronos.org/openxr/\n- Meta. (2024). \"Quest Platform Developer Documentation.\" https://developer.oculus.com/\n- IEEE VR Conference. (2024). \"Virtual Reality and 3D User Interfaces.\" https://ieeevr.org/\n- SIGGRAPH. (2024). \"Computer Graphics and Interactive Techniques.\" https://www.siggraph.org/\n- ISO/IEC JTC 1/SC 24. (2024). \"Computer Graphics, Image Processing and VR Standards.\" https://www.iso.org/committee/45252.html",
+  "backlinks": [
+    "TELE-020-virtual-reality-telepresence",
+    "TELE-CONV-001-metaverse-telepresence-bridge",
+    "HapticFeedback",
+    "MetaverseDomain",
+    "Teleoperation"
+  ],
+  "wiki_links": [],
+  "ontology": {
+    "term_id": "TC-9027",
+    "preferred_term": null,
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/telecollaboration#VirtualReality",
+    "source_domain": null,
+    "domain": "tc",
+    "domain_full_name": "Telecollaboration",
+    "definition": null,
+    "scope_note": null,
+    "status": null,
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "tc:VirtualReality",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: preferred-term",
+        "Missing required property: source-domain",
+        "Missing required property: status",
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

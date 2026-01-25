@@ -10,13 +10,13 @@
     "Upscaling"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "ArtificialIntelligenceDomain",
-    "Technology Domain",
-    "Robotics Systems",
     "Telecollaboration",
+    "Robotics Systems",
+    "ArtificialIntelligenceDomain",
+    "Artificial Intelligence",
     "Metaverse Technology",
-    "Blockchain Technology"
+    "Blockchain Technology",
+    "Technology Domain"
   ],
   "ontology": {
     "term_id": "AI-7017",

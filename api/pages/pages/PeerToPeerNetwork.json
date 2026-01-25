@@ -1,0 +1,58 @@
+{
+  "id": "PeerToPeerNetwork",
+  "title": "PeerToPeerNetwork",
+  "content": "- ### OntologyBlock\n  id:: bc9013-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-9013\n\t- domain:: bc\n\t- owl:class:: bc:PeerToPeerNetwork\n\t- public-access:: true\n\n## Definition\n\nPeer-to-Peer (P2P) Network constitutes the decentralized communication infrastructure enabling blockchain nodes to interact as equals without hierarchical client-server relationships, providing resilience, censorship resistance, and distributed resource sharing. Bitcoin's P2P network employs random graph topology where nodes maintain outbound connections to discovered peers and accept inbound connections subject to resource limits, using address propagation (`addr` messages) for peer discovery and inventory messages (`inv`, `getdata`) for block and transaction synchronization. Network participation begins with DNS seeds returning IP addresses of long-running nodes, followed by connection establishment through TCP/IP with protocol version negotiation ensuring compatibility. Message validation prevents resource exhaustion attacks through rate limiting, connection throttling, and cryptographic verification of announced inventory. Distributed hash tables (DHTs) like Kademlia in IPFS and Ethereum's discovery protocol provide structured peer lookup with logarithmic complexity, enabling content-addressable storage and decentralized naming systems. Eclipse attacks partition victim nodes from honest network through connection manipulation, mitigated by diverse peer selection strategies (geographic distribution, AS-aware peering) and anchor connections to trusted peers. Network analysis tools measure node connectivity, block propagation times, and vulnerability to network attacks using techniques from graph theory and network science. P2P privacy considerations include IP address exposure revealing user identity, traffic analysis attacks correlating transactions to network origins, and timing attacks exploiting propagation delays. In 2026, hybrid P2P architectures combine structured DHTs for efficient routing with unstructured networks for robustness, anonymous routing protocols (Dandelion++, Tor integration) hide transaction origins, and incentivized relay networks reward bandwidth contribution through micropayment channels while maintaining decentralization properties through verifiable bandwidth proofs and stake-weighted relay selection.\n\n## References\n\n- Nakamoto, S. (2008). \"Bitcoin: A Peer-to-Peer Electronic Cash System.\" https://bitcoin.org/bitcoin.pdf\n- Maymounkov, P. & Mazières, D. (2002). \"Kademlia: A Peer-to-Peer Information System Based on the XOR Metric.\" IPTPS 2002.\n- Heilman, E. et al. (2015). \"Eclipse Attacks on Bitcoin's Peer-to-Peer Network.\" USENIX Security 2015.\n- Fanti, G. & Viswanath, P. (2017). \"Dandelion: Redesigning the Bitcoin Network for Anonymity.\" SIGMETRICS 2017.\n- Benet, J. (2014). \"IPFS - Content Addressed, Versioned, P2P File System.\" arXiv:1407.3561.\n- Ethereum Foundation. (2024). \"DevP2P Network Protocol Specifications.\" https://github.com/ethereum/devp2p",
+  "backlinks": [
+    "TELE-150-webrtc"
+  ],
+  "wiki_links": [],
+  "ontology": {
+    "term_id": "BC-9013",
+    "preferred_term": null,
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/blockchain#PeerToPeerNetwork",
+    "source_domain": null,
+    "domain": "bc",
+    "domain_full_name": "Blockchain",
+    "definition": null,
+    "scope_note": null,
+    "status": null,
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "bc:PeerToPeerNetwork",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: preferred-term",
+        "Missing required property: source-domain",
+        "Missing required property: status",
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

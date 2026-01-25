@@ -7,12 +7,12 @@
     "Value Transfer"
   ],
   "wiki_links": [
-    "Blockchain",
-    "IBC Protocol",
     "Interoperability Protocol",
+    "IBC Protocol",
+    "Layer 0 Protocol",
     "BlockchainDomain",
     "Cosmos Network",
-    "Layer 0 Protocol"
+    "Blockchain"
   ],
   "ontology": {
     "term_id": "BC-9001",

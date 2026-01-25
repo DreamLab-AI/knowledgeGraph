@@ -15,14 +15,14 @@
     "Neural 3D Generation"
   ],
   "wiki_links": [
-    "Metaverse",
-    "Game Development",
-    "Ray Tracing",
-    "Virtual Reality",
-    "Gaussian splatting and Similar",
     "NVIDIA",
+    "Gaussian splatting and Similar",
+    "Virtual Reality",
+    "Ray Tracing",
+    "Computer Graphics",
     "Film Production",
-    "Computer Graphics"
+    "Game Development",
+    "Metaverse"
   ],
   "ontology": {
     "term_id": "NGM-7018",

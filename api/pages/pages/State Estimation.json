@@ -9,12 +9,12 @@
     "RB-1008-odometry"
   ],
   "wiki_links": [
-    "Particle Filter",
     "Bayes Filter",
-    "Sensor Fusion",
-    "Localization",
     "Robotics Systems",
-    "Kalman Filter"
+    "Localization",
+    "Sensor Fusion",
+    "Kalman Filter",
+    "Particle Filter"
   ],
   "ontology": {
     "term_id": "RB-0604",

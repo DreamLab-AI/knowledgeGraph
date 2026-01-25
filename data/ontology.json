@@ -167,6 +167,26 @@
       "type": "owl:Class"
     },
     {
+      "id": "ai-9002",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ai-9005",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ai-9019",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ai-9026",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ai-9027",
+      "type": "owl:Class"
+    },
+    {
       "id": "ai-upscale-001",
       "type": "owl:Class"
     },
@@ -287,7 +307,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "ai-aigovernance",
+      "id": "aigovernance",
       "type": "owl:Class"
     },
     {
@@ -303,11 +323,11 @@
       "type": "owl:Class"
     },
     {
-      "id": "ai-airiskmanagement",
+      "id": "airiskmanagement",
       "type": "owl:Class"
     },
     {
-      "id": "ai-aisecurity",
+      "id": "aisecurity",
       "type": "owl:Class"
     },
     {
@@ -507,6 +527,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "datacompression",
+      "type": "owl:Class"
+    },
+    {
       "id": "dataefficientlearning",
       "type": "owl:Class"
     },
@@ -520,6 +544,10 @@
     },
     {
       "id": "dataminimisation",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ai-datastructure",
       "type": "owl:Class"
     },
     {
@@ -540,6 +568,10 @@
     },
     {
       "id": "ai-differentialprivacy",
+      "type": "owl:Class"
+    },
+    {
+      "id": "digitalfabrication",
       "type": "owl:Class"
     },
     {
@@ -763,6 +795,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "ai-humancomputerinteraction",
+      "type": "owl:Class"
+    },
+    {
       "id": "humanpreference",
       "type": "owl:Class"
     },
@@ -795,6 +831,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "informationsecurity",
+      "type": "owl:Class"
+    },
+    {
       "id": "informedsearch",
       "type": "owl:Class"
     },
@@ -816,6 +856,10 @@
     },
     {
       "id": "interactivelearning",
+      "type": "owl:Class"
+    },
+    {
+      "id": "internetinfrastructure",
       "type": "owl:Class"
     },
     {
@@ -864,10 +908,6 @@
     },
     {
       "id": "lossfunction",
-      "type": "owl:Class"
-    },
-    {
-      "id": "mlops",
       "type": "owl:Class"
     },
     {
@@ -1027,6 +1067,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "ai-networkarchitecture",
+      "type": "owl:Class"
+    },
+    {
       "id": "ai-networkprotocol",
       "type": "owl:Class"
     },
@@ -1107,6 +1151,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "ai-patternrecognition",
+      "type": "owl:Class"
+    },
+    {
       "id": "performancemetric",
       "type": "owl:Class"
     },
@@ -1175,6 +1223,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "programminglanguage",
+      "type": "owl:Class"
+    },
+    {
       "id": "prompttuning",
       "type": "owl:Class"
     },
@@ -1219,10 +1271,6 @@
       "type": "owl:Class"
     },
     {
-      "id": "reinforcementlearningalgorithm",
-      "type": "owl:Class"
-    },
-    {
       "id": "reinforcementlearningfromhumanfeedback",
       "type": "owl:Class"
     },
@@ -1239,6 +1287,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "roboticscontrol",
+      "type": "owl:Class"
+    },
+    {
       "id": "runtimeinspection",
       "type": "owl:Class"
     },
@@ -1248,6 +1300,10 @@
     },
     {
       "id": "safetyvulnerability",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ai-searchalgorithm",
       "type": "owl:Class"
     },
     {
@@ -1275,6 +1331,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "ai-semanticweb",
+      "type": "owl:Class"
+    },
+    {
       "id": "semisupervisedlearning",
       "type": "owl:Class"
     },
@@ -1284,6 +1344,14 @@
     },
     {
       "id": "softpromptembedding",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ai-softwarearchitecture",
+      "type": "owl:Class"
+    },
+    {
+      "id": "softwaredevelopmentprocess",
       "type": "owl:Class"
     },
     {
@@ -1459,6 +1527,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "unsupervisedlearning",
+      "type": "owl:Class"
+    },
+    {
       "id": "ai-userprivacycontrol",
       "type": "owl:Class"
     },
@@ -1468,6 +1540,10 @@
     },
     {
       "id": "valuevector",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ai-videoprocessing",
       "type": "owl:Class"
     },
     {
@@ -2055,6 +2131,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "bc-financialinstruments",
+      "type": "owl:Class"
+    },
+    {
       "id": "fixedsupplytoken",
       "type": "owl:Class"
     },
@@ -2411,6 +2491,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "bc-peertopeernetwork",
+      "type": "owl:Class"
+    },
+    {
       "id": "peertopeerprotocol",
       "type": "owl:Class"
     },
@@ -2523,7 +2607,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "bc-publickeycryptography",
+      "id": "publickeycryptography",
       "type": "owl:Class"
     },
     {
@@ -2763,6 +2847,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "bc-transactionprocessing",
+      "type": "owl:Class"
+    },
+    {
       "id": "transferableright",
       "type": "owl:Class"
     },
@@ -2787,6 +2875,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "userprivacy",
+      "type": "owl:Class"
+    },
+    {
       "id": "utilitytoken",
       "type": "owl:Class"
     },
@@ -2808,6 +2900,10 @@
     },
     {
       "id": "wastemanagement",
+      "type": "owl:Class"
+    },
+    {
+      "id": "webtechnology",
       "type": "owl:Class"
     },
     {
@@ -2916,10 +3012,6 @@
     },
     {
       "id": "aigeneratedcontentdisclosure",
-      "type": "owl:Class"
-    },
-    {
-      "id": "mv-aigovernance",
       "type": "owl:Class"
     },
     {
@@ -3075,7 +3167,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-aitransparencyframework",
+      "id": "aitransparencyframework",
       "type": "owl:Class"
     },
     {
@@ -3083,7 +3175,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-analogtodigitalconverter",
+      "id": "analogtodigitalconverter",
       "type": "owl:Class"
     },
     {
@@ -3327,7 +3419,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-bimvirtualmodel",
+      "id": "bimvirtualmodel",
       "type": "owl:Class"
     },
     {
@@ -3363,7 +3455,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "c2pastandard",
+      "id": "mv-c2pastandard",
       "type": "owl:Class"
     },
     {
@@ -4695,15 +4787,15 @@
       "type": "owl:Class"
     },
     {
-      "id": "etsidomainimmersive",
+      "id": "mv-etsidomainimmersive",
       "type": "owl:Class"
     },
     {
-      "id": "mv-etsimetaversedomainmodel",
+      "id": "etsimetaversedomainmodel",
       "type": "owl:Class"
     },
     {
-      "id": "etsimetaversedomaintaxonomy",
+      "id": "mv-etsimetaversedomaintaxonomy",
       "type": "owl:Class"
     },
     {
@@ -4739,7 +4831,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-extendedrealityxr",
+      "id": "extendedrealityxr",
       "type": "owl:Class"
     },
     {
@@ -4795,7 +4887,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "financialinstruments",
+      "id": "mv-financialinstruments",
       "type": "owl:Class"
     },
     {
@@ -4903,7 +4995,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-gltfstandard",
+      "id": "gltfstandard",
       "type": "owl:Class"
     },
     {
@@ -4951,7 +5043,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-hanimstandard",
+      "id": "hanimstandard",
       "type": "owl:Class"
     },
     {
@@ -5043,7 +5135,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "humancomputerinteraction",
+      "id": "mv-humancomputerinteraction",
       "type": "owl:Class"
     },
     {
@@ -5115,11 +5207,11 @@
       "type": "owl:Class"
     },
     {
-      "id": "ieee7000standard",
+      "id": "mv-ieee7000standard",
       "type": "owl:Class"
     },
     {
-      "id": "ieeep2733standards",
+      "id": "mv-ieeep2733standards",
       "type": "owl:Class"
     },
     {
@@ -5235,7 +5327,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-infraredledilluminator",
+      "id": "infraredledilluminator",
       "type": "owl:Class"
     },
     {
@@ -5315,7 +5407,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "isostandards",
+      "id": "mv-isostandards",
       "type": "owl:Class"
     },
     {
@@ -5415,7 +5507,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-lidarscanning",
+      "id": "lidarscanning",
       "type": "owl:Class"
     },
     {
@@ -5751,7 +5843,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-narrativedesignontology",
+      "id": "narrativedesignontology",
       "type": "owl:Class"
     },
     {
@@ -5775,7 +5867,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "networkarchitecture",
+      "id": "mv-networkarchitecture",
       "type": "owl:Class"
     },
     {
@@ -6319,7 +6411,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "righttobeforgotten",
+      "id": "mv-righttobeforgotten",
       "type": "owl:Class"
     },
     {
@@ -6423,7 +6515,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "searchalgorithm",
+      "id": "mv-searchalgorithm",
       "type": "owl:Class"
     },
     {
@@ -6503,7 +6595,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "separationofpowers",
+      "id": "mv-separationofpowers",
       "type": "owl:Class"
     },
     {
@@ -6519,7 +6611,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-sharedarexperiences",
+      "id": "sharedarexperiences",
       "type": "owl:Class"
     },
     {
@@ -6595,7 +6687,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "softwarearchitecture",
+      "id": "mv-softwarearchitecture",
       "type": "owl:Class"
     },
     {
@@ -6844,10 +6936,6 @@
     },
     {
       "id": "mv-systemarchitecture",
-      "type": "owl:Class"
-    },
-    {
-      "id": "systemdesign",
       "type": "owl:Class"
     },
     {
@@ -7475,7 +7563,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-vrcontrollers",
+      "id": "vrcontrollers",
       "type": "owl:Class"
     },
     {
@@ -7551,11 +7639,11 @@
       "type": "owl:Class"
     },
     {
-      "id": "xraccessibilitystandards",
+      "id": "mv-xraccessibilitystandards",
       "type": "owl:Class"
     },
     {
-      "id": "mv-xrdevice",
+      "id": "xrdevice",
       "type": "owl:Class"
     },
     {
@@ -7563,15 +7651,15 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-xrheadset",
+      "id": "xrheadset",
       "type": "owl:Class"
     },
     {
-      "id": "xrmeetingspace",
+      "id": "mv-xrmeetingspace",
       "type": "owl:Class"
     },
     {
-      "id": "xrruntimeenvironment",
+      "id": "mv-xrruntimeenvironment",
       "type": "owl:Class"
     },
     {
@@ -7755,10 +7843,6 @@
       "type": "owl:Class"
     },
     {
-      "id": "ngm-naturallanguageprocessing",
-      "type": "owl:Class"
-    },
-    {
       "id": "newcastleaiandhealthinnovation",
       "type": "owl:Class"
     },
@@ -7768,6 +7852,10 @@
     },
     {
       "id": "northenglandinnovationcorridor",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ngm-owlthing",
       "type": "owl:Class"
     },
     {
@@ -7827,7 +7915,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "owlthing",
+      "id": "ngm-owlthing",
       "type": "owl:Class"
     },
     {
@@ -8919,6 +9007,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "collaborativetechnology",
+      "type": "owl:Class"
+    },
+    {
       "id": "communicationtheory",
       "type": "owl:Class"
     },
@@ -8936,6 +9028,10 @@
     },
     {
       "id": "daogovernancefortelecollaboration",
+      "type": "owl:Class"
+    },
+    {
+      "id": "digitalinfrastructure",
       "type": "owl:Class"
     },
     {
@@ -8979,11 +9075,23 @@
       "type": "owl:Class"
     },
     {
+      "id": "metaversetechnology",
+      "type": "owl:Class"
+    },
+    {
+      "id": "networkinfrastructure",
+      "type": "owl:Class"
+    },
+    {
       "id": "networkprotocol",
       "type": "owl:Class"
     },
     {
       "id": "networkcomponent",
+      "type": "owl:Class"
+    },
+    {
+      "id": "networkingstandard",
       "type": "owl:Class"
     },
     {
@@ -9032,6 +9140,10 @@
     },
     {
       "id": "robotictelepresence",
+      "type": "owl:Class"
+    },
+    {
+      "id": "roboticsapplication",
       "type": "owl:Class"
     },
     {
@@ -9123,6 +9235,10 @@
       "type": "owl:Class"
     },
     {
+      "id": "virtualcollaboration",
+      "type": "owl:Class"
+    },
+    {
       "id": "virtualenvironment",
       "type": "owl:Class"
     },
@@ -9161,8 +9277,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9001",
       "label": {
-        "en": "3DContentGeneration"
+        "en": "3D Content Generation"
+      },
+      "comment": {
+        "en": "3D Content Generation refers to the computational process of creating three-dimensional digital content through algorithmic and AI-driven methods. This encompasses procedural generation techniques,..."
       }
     },
     {
@@ -9177,6 +9297,91 @@
       "term_id": "AI-0888",
       "label": {
         "en": "AI Ethics Checklist"
+      }
+    },
+    {
+      "id": "ai-9002",
+      "iri": "http://narrativegoldmine.com/ai#AI-9002",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9002",
+      "label": {
+        "en": "AI Concept"
+      },
+      "comment": {
+        "en": "AI Concept represents the fundamental theoretical constructs and abstract principles that underpin artificial intelligence systems. This includes core notions such as intelligence representation, l..."
+      }
+    },
+    {
+      "id": "ai-9005",
+      "iri": "http://narrativegoldmine.com/ai#AI-9005",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9005",
+      "label": {
+        "en": "AI Framework"
+      },
+      "comment": {
+        "en": "AI Framework denotes a comprehensive software architecture that provides reusable code, design patterns, and infrastructure for developing artificial intelligence applications. These frameworks abs..."
+      }
+    },
+    {
+      "id": "ai-9019",
+      "iri": "http://narrativegoldmine.com/ai#AI-9019",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9019",
+      "label": {
+        "en": "Knowledge Representation"
+      },
+      "comment": {
+        "en": "Knowledge Representation in AI involves the formal encoding of information about the world in a computationally tractable format that enables reasoning, inference, and decision-making. Approaches i..."
+      }
+    },
+    {
+      "id": "ai-9026",
+      "iri": "http://narrativegoldmine.com/ai#AI-9026",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9026",
+      "label": {
+        "en": "Programming Paradigm"
+      },
+      "comment": {
+        "en": "Programming Paradigms in AI represent fundamental styles and approaches to structuring code for artificial intelligence systems. Key paradigms include imperative (procedural, object-oriented), decl..."
+      }
+    },
+    {
+      "id": "ai-9027",
+      "iri": "http://narrativegoldmine.com/ai#AI-9027",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9027",
+      "label": {
+        "en": "Reinforcement Learning Algorithm"
+      },
+      "comment": {
+        "en": "Reinforcement Learning Algorithms enable agents to learn optimal decision-making policies through interaction with environments, guided by reward signals. Core algorithms include value-based method..."
       }
     },
     {
@@ -9256,8 +9461,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9501",
       "label": {
-        "en": "AIConcept"
+        "en": "A I Concept"
+      },
+      "comment": {
+        "en": "A I Concept is a concept within the ai domain. Further enrichment pending."
       }
     },
     {
@@ -9269,8 +9478,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9003",
       "label": {
-        "en": "AIDevelopmentTools"
+        "en": "AI Development Tools"
+      },
+      "comment": {
+        "en": "AI Development Tools comprise the software frameworks, libraries, platforms, and integrated development environments designed to facilitate the creation, training, deployment, and maintenance of ar..."
       }
     },
     {
@@ -9299,8 +9512,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9004",
       "label": {
-        "en": "AIEthics"
+        "en": "AI Ethics"
+      },
+      "comment": {
+        "en": "AI Ethics addresses the moral principles, values, and guidelines governing the design, development, deployment, and use of artificial intelligence systems. This interdisciplinary field examines iss..."
       }
     },
     {
@@ -9329,8 +9546,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9502",
       "label": {
-        "en": "AIFramework"
+        "en": "A I Framework"
+      },
+      "comment": {
+        "en": "A I Framework is a concept within the ai domain. Further enrichment pending."
       }
     },
     {
@@ -9444,8 +9665,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9006",
       "label": {
-        "en": "AIMetadata"
+        "en": "AI Metadata"
+      },
+      "comment": {
+        "en": "AI Metadata encompasses the descriptive information, provenance data, and contextual attributes associated with artificial intelligence models, datasets, and computational artifacts. This includes ..."
       }
     },
     {
@@ -9508,8 +9733,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9007",
       "label": {
-        "en": "AISystemComponent"
+        "en": "AI System Component"
+      },
+      "comment": {
+        "en": "AI System Component refers to the modular functional units that constitute a complete artificial intelligence system. These components include data ingestion pipelines, feature engineering modules,..."
       }
     },
     {
@@ -9666,7 +9895,7 @@
       }
     },
     {
-      "id": "ai-aigovernance",
+      "id": "aigovernance",
       "iri": "http://narrativegoldmine.com/ai#AiGovernance",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -9674,8 +9903,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9008",
       "label": {
-        "en": "AiGovernance"
+        "en": "AI Governance"
+      },
+      "comment": {
+        "en": "AI Governance encompasses the policies, frameworks, standards, and institutional mechanisms for overseeing the responsible development, deployment, and use of artificial intelligence technologies. ..."
       }
     },
     {
@@ -9730,7 +9963,7 @@
       }
     },
     {
-      "id": "ai-airiskmanagement",
+      "id": "airiskmanagement",
       "iri": "http://narrativegoldmine.com/ai#AiRiskManagement",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -9747,7 +9980,7 @@
       }
     },
     {
-      "id": "ai-aisecurity",
+      "id": "aisecurity",
       "iri": "http://narrativegoldmine.com/ai#AiSecurity",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -10216,8 +10449,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9009",
       "label": {
-        "en": "CloudComputing"
+        "en": "Cloud Computing"
+      },
+      "comment": {
+        "en": "Cloud Computing in the AI context refers to the on-demand delivery of computational resources, storage, and AI/ML services over the internet. Cloud platforms (AWS, Azure, Google Cloud, Alibaba Clou..."
       }
     },
     {
@@ -10297,8 +10534,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9010",
       "label": {
-        "en": "ComputerHardware"
+        "en": "Computer Hardware"
+      },
+      "comment": {
+        "en": "Computer Hardware for AI refers to the physical computing components optimized for artificial intelligence workloads, particularly neural network training and inference. This includes Graphics Proc..."
       }
     },
     {
@@ -10506,8 +10747,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9505",
       "label": {
         "en": "Cybersecurity"
+      },
+      "comment": {
+        "en": "Cybersecurity is a concept within the ai domain. Further enrichment pending."
       }
     },
     {
@@ -10556,6 +10801,23 @@
       }
     },
     {
+      "id": "datacompression",
+      "iri": "http://narrativegoldmine.com/ai#DataCompression",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9011",
+      "label": {
+        "en": "Data Compression"
+      },
+      "comment": {
+        "en": "Data Compression in AI involves reducing the size of datasets, models, and computational representations while preserving essential information. Techniques include model quantization (reducing nume..."
+      }
+    },
+    {
       "id": "dataefficientlearning",
       "iri": "http://narrativegoldmine.com/ai#DataEfficientLearning",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -10564,8 +10826,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9506",
       "label": {
-        "en": "DataEfficientLearning"
+        "en": "Data Efficient Learning"
+      },
+      "comment": {
+        "en": "Data Efficient Learning is a concept within the ai domain. Further enrichment pending."
       }
     },
     {
@@ -10613,6 +10879,23 @@
       },
       "comment": {
         "en": "Data Minimisation is a privacy principle and GDPR requirement (Article 5(1)(c)) mandating that personal data collection and processing be limited to what is adequate, relevant, and necessary for sp..."
+      }
+    },
+    {
+      "id": "ai-datastructure",
+      "iri": "http://narrativegoldmine.com/ai#DataStructure",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9012",
+      "label": {
+        "en": "Data Structure"
+      },
+      "comment": {
+        "en": "Data Structures in AI represent the organizational schemes for efficiently storing, accessing, and manipulating data used in machine learning algorithms. Key structures include tensors (multi-dimen..."
       }
     },
     {
@@ -10698,6 +10981,23 @@
       },
       "comment": {
         "en": "Differential Privacy is a mathematical framework providing provable privacy guarantees by adding carefully calibrated noise to data queries or model outputs, ensuring that the presence or absence o..."
+      }
+    },
+    {
+      "id": "digitalfabrication",
+      "iri": "http://narrativegoldmine.com/ai#DigitalFabrication",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9013",
+      "label": {
+        "en": "Digital Fabrication"
+      },
+      "comment": {
+        "en": "Digital Fabrication in the AI context refers to the integration of artificial intelligence with additive manufacturing, CNC machining, and automated production technologies. AI optimizes fabricatio..."
       }
     },
     {
@@ -11418,8 +11718,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9509",
       "label": {
-        "en": "GenerativeAi"
+        "en": "Generative Ai"
+      },
+      "comment": {
+        "en": "Generative Ai is a concept within the ai domain. Further enrichment pending."
       }
     },
     {
@@ -11512,8 +11816,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9511",
       "label": {
-        "en": "GraphAlgorithms"
+        "en": "Graph Algorithms"
+      },
+      "comment": {
+        "en": "Graph Algorithms is a concept within the ai domain. Further enrichment pending."
       }
     },
     {
@@ -11559,8 +11867,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9014",
       "label": {
-        "en": "HeuristicMethods"
+        "en": "Heuristic Methods"
+      },
+      "comment": {
+        "en": "Heuristic Methods in AI are problem-solving approaches that employ practical, experience-based techniques to find satisfactory solutions when optimal solutions are computationally infeasible. These..."
       }
     },
     {
@@ -11598,6 +11910,23 @@
       }
     },
     {
+      "id": "ai-humancomputerinteraction",
+      "iri": "http://narrativegoldmine.com/ai#HumanComputerInteraction",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9015",
+      "label": {
+        "en": "Human Computer Interaction"
+      },
+      "comment": {
+        "en": "Human-Computer Interaction (HCI) in the AI context examines the design, evaluation, and implementation of interactive systems that incorporate artificial intelligence capabilities. This interdiscip..."
+      }
+    },
+    {
       "id": "humanpreference",
       "iri": "http://narrativegoldmine.com/ai#HumanPreference",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -11623,8 +11952,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9012",
       "label": {
-        "en": "HumanintheLoopLearning"
+        "en": "Humaninthe Loop Learning"
+      },
+      "comment": {
+        "en": "A concept in artificial intelligence related to Humaninthe Loop Learning."
       }
     },
     {
@@ -11727,6 +12060,23 @@
       }
     },
     {
+      "id": "informationsecurity",
+      "iri": "http://narrativegoldmine.com/ai#InformationSecurity",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9017",
+      "label": {
+        "en": "Information Security"
+      },
+      "comment": {
+        "en": "Information Security in AI addresses the protection of data, models, and AI systems from unauthorized access, adversarial attacks, privacy breaches, and malicious exploitation. This includes defend..."
+      }
+    },
+    {
       "id": "informedsearch",
       "iri": "http://narrativegoldmine.com/ai#InformedSearch",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -11735,8 +12085,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9512",
       "label": {
-        "en": "InformedSearch"
+        "en": "Informed Search"
+      },
+      "comment": {
+        "en": "Informed Search is a concept within the ai domain. Further enrichment pending."
       }
     },
     {
@@ -11748,8 +12102,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9513",
       "label": {
-        "en": "InfrastructureComponent"
+        "en": "Infrastructure Component"
+      },
+      "comment": {
+        "en": "Infrastructure Component is a concept within the ai domain. Further enrichment pending."
       }
     },
     {
@@ -11808,8 +12166,29 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9515",
       "label": {
-        "en": "InteractiveLearning"
+        "en": "Interactive Learning"
+      },
+      "comment": {
+        "en": "Interactive Learning is a concept within the ai domain. Further enrichment pending."
+      }
+    },
+    {
+      "id": "internetinfrastructure",
+      "iri": "http://narrativegoldmine.com/ai#InternetInfrastructure",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9018",
+      "label": {
+        "en": "Internet Infrastructure"
+      },
+      "comment": {
+        "en": "Internet Infrastructure for AI encompasses the networking protocols, distributed systems, edge computing platforms, and content delivery networks that enable large-scale deployment and operation of..."
       }
     },
     {
@@ -11923,9 +12302,8 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
-      "term_id": "AI-4012",
       "label": {
-        "en": "Knowledge Representation"
+        "en": "KnowledgeRepresentation"
       }
     },
     {
@@ -12011,19 +12389,6 @@
       },
       "comment": {
         "en": "### Primary Definition"
-      }
-    },
-    {
-      "id": "mlops",
-      "iri": "http://narrativegoldmine.com/ai#MLOps",
-      "baseIri": "http://narrativegoldmine.com/ai",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#4CAF50",
-      "domain": "ai",
-      "label": {
-        "en": "MLOps"
       }
     },
     {
@@ -12120,12 +12485,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
-      "term_id": "MV-9953",
+      "term_id": "AI-9020",
       "label": {
         "en": "Machine Learning Pipeline"
       },
       "comment": {
-        "en": "Automated workflow systems that orchestrate the end-to-end machine learning lifecycle from data ingestion and preprocessing through model training, validation, deployment, and monitoring using MLOp..."
+        "en": "Machine Learning Pipeline represents the end-to-end workflow for developing, training, validating, deploying, and monitoring ML models. This encompasses data ingestion, preprocessing, feature engin..."
       }
     },
     {
@@ -12675,12 +13040,29 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
-      "term_id": "AI-0366",
+      "term_id": "AI-9021",
       "label": {
         "en": "Natural Language Processing"
       },
       "comment": {
-        "en": "Natural Language Processing (NLP) is the field of artificial intelligence concerned with enabling computers to understand, interpret, generate, and manipulate human language in both written and spo..."
+        "en": "Natural Language Processing (NLP) is the subfield of AI focused on enabling computers to understand, interpret, generate, and manipulate human language. Core tasks include text classification, name..."
+      }
+    },
+    {
+      "id": "ai-networkarchitecture",
+      "iri": "http://narrativegoldmine.com/ai#NetworkArchitecture",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9022",
+      "label": {
+        "en": "Network Architecture"
+      },
+      "comment": {
+        "en": "Network Architecture in AI refers to the structural design of neural networks, defining the arrangement of layers, connections, and computational units. Key architectures include feedforward networ..."
       }
     },
     {
@@ -12777,8 +13159,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9517",
       "label": {
-        "en": "NeuralNetworkLayer"
+        "en": "Neural Network Layer"
+      },
+      "comment": {
+        "en": "Neural Network Layer is a concept within the ai domain. Further enrichment pending."
       }
     },
     {
@@ -12954,8 +13340,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9023",
       "label": {
-        "en": "OptimizationAlgorithms"
+        "en": "Optimization Algorithms"
+      },
+      "comment": {
+        "en": "Optimization Algorithms in AI are mathematical procedures for minimizing or maximizing objective functions, central to training machine learning models. Gradient-based methods (SGD, Adam, RMSprop, ..."
       }
     },
     {
@@ -13007,6 +13397,23 @@
       },
       "comment": {
         "en": "- maturity:: established"
+      }
+    },
+    {
+      "id": "ai-patternrecognition",
+      "iri": "http://narrativegoldmine.com/ai#PatternRecognition",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9024",
+      "label": {
+        "en": "Pattern Recognition"
+      },
+      "comment": {
+        "en": "Pattern Recognition is the automated identification of regularities, structures, and categories in data using machine learning algorithms. This encompasses supervised learning (classification, regr..."
       }
     },
     {
@@ -13202,8 +13609,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9518",
       "label": {
-        "en": "PrivacyMechanism"
+        "en": "Privacy Mechanism"
+      },
+      "comment": {
+        "en": "Privacy Mechanism is a concept within the ai domain. Further enrichment pending."
       }
     },
     {
@@ -13285,6 +13696,23 @@
       },
       "comment": {
         "en": "Algorithmic content generation techniques."
+      }
+    },
+    {
+      "id": "programminglanguage",
+      "iri": "http://narrativegoldmine.com/ai#ProgrammingLanguage",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9025",
+      "label": {
+        "en": "Programming Language"
+      },
+      "comment": {
+        "en": "Programming Languages for AI are formal languages designed to express algorithms, models, and computations for artificial intelligence applications. Popular languages include Python (dominant in ML..."
       }
     },
     {
@@ -13475,23 +13903,6 @@
       }
     },
     {
-      "id": "reinforcementlearningalgorithm",
-      "iri": "http://narrativegoldmine.com/ai#ReinforcementLearningAlgorithm",
-      "baseIri": "http://narrativegoldmine.com/ai",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#4CAF50",
-      "domain": "ai",
-      "term_id": "AI-0804",
-      "label": {
-        "en": "Reinforcement Learning Algorithm"
-      },
-      "comment": {
-        "en": "- maturity:: established"
-      }
-    },
-    {
       "id": "reinforcementlearningfromhumanfeedback",
       "iri": "http://narrativegoldmine.com/ai#ReinforcementLearningfromHumanFeedback",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -13556,6 +13967,23 @@
       }
     },
     {
+      "id": "roboticscontrol",
+      "iri": "http://narrativegoldmine.com/ai#RoboticsControl",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9028",
+      "label": {
+        "en": "Robotics Control"
+      },
+      "comment": {
+        "en": "Robotics Control integrates artificial intelligence with robotic systems to enable autonomous navigation, manipulation, perception, and task execution. AI-driven control employs reinforcement learn..."
+      }
+    },
+    {
       "id": "runtimeinspection",
       "iri": "http://narrativegoldmine.com/ai#RuntimeInspection",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -13607,6 +14035,23 @@
       }
     },
     {
+      "id": "ai-searchalgorithm",
+      "iri": "http://narrativegoldmine.com/ai#SearchAlgorithm",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9029",
+      "label": {
+        "en": "Search Algorithm"
+      },
+      "comment": {
+        "en": "Search Algorithms in AI systematically explore solution spaces to find optimal or satisfactory solutions to problems. Classical algorithms include uninformed search (breadth-first, depth-first, uni..."
+      }
+    },
+    {
       "id": "searchalgorithms",
       "iri": "http://narrativegoldmine.com/ai#SearchAlgorithms",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -13629,8 +14074,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9521",
       "label": {
-        "en": "SearchTechnology"
+        "en": "Search Technology"
+      },
+      "comment": {
+        "en": "Search Technology is a concept within the ai domain. Further enrichment pending."
       }
     },
     {
@@ -13702,6 +14151,23 @@
       }
     },
     {
+      "id": "ai-semanticweb",
+      "iri": "http://narrativegoldmine.com/ai#SemanticWeb",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9030",
+      "label": {
+        "en": "Semantic Web"
+      },
+      "comment": {
+        "en": "Semantic Web extends the World Wide Web with machine-readable metadata, ontologies, and linked data to enable intelligent information discovery, integration, and reasoning. Core technologies includ..."
+      }
+    },
+    {
       "id": "semisupervisedlearning",
       "iri": "http://narrativegoldmine.com/ai#SemiSupervisedLearning",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -13750,6 +14216,40 @@
       }
     },
     {
+      "id": "ai-softwarearchitecture",
+      "iri": "http://narrativegoldmine.com/ai#SoftwareArchitecture",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9031",
+      "label": {
+        "en": "Software Architecture"
+      },
+      "comment": {
+        "en": "Software Architecture for AI systems defines high-level structural patterns, component interactions, and design principles for building scalable, maintainable, and robust artificial intelligence ap..."
+      }
+    },
+    {
+      "id": "softwaredevelopmentprocess",
+      "iri": "http://narrativegoldmine.com/ai#SoftwareDevelopmentProcess",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9032",
+      "label": {
+        "en": "Software Development Process"
+      },
+      "comment": {
+        "en": "Software Development Process for AI encompasses methodologies, workflows, and best practices for building, testing, deploying, and maintaining machine learning systems. This includes agile AI devel..."
+      }
+    },
+    {
       "id": "spatialai",
       "iri": "http://narrativegoldmine.com/ai#SpatialAi",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -13792,8 +14292,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9522",
       "label": {
-        "en": "SpeechRecognition"
+        "en": "Speech Recognition"
+      },
+      "comment": {
+        "en": "Speech Recognition is a concept within the ai domain. Further enrichment pending."
       }
     },
     {
@@ -13884,8 +14388,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9033",
       "label": {
-        "en": "SupervisedLearning"
+        "en": "Supervised Learning"
+      },
+      "comment": {
+        "en": "Supervised Learning is the machine learning paradigm where models learn from labeled training data to predict outputs for new, unseen inputs. The learning algorithm finds patterns mapping input fea..."
       }
     },
     {
@@ -13965,8 +14473,12 @@
       ],
       "backgroundColor": "#4CAF50",
       "domain": "ai",
+      "term_id": "AI-9034",
       "label": {
-        "en": "SystemArchitecture"
+        "en": "System Architecture"
+      },
+      "comment": {
+        "en": "System Architecture in AI defines the holistic structure integrating hardware, software, data infrastructure, and operational components to deliver intelligent capabilities at scale. This encompass..."
       }
     },
     {
@@ -14453,6 +14965,23 @@
       }
     },
     {
+      "id": "unsupervisedlearning",
+      "iri": "http://narrativegoldmine.com/ai#UnsupervisedLearning",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9035",
+      "label": {
+        "en": "Unsupervised Learning"
+      },
+      "comment": {
+        "en": "Unsupervised Learning discovers hidden patterns, structures, and representations in unlabeled data without explicit supervision. Key techniques include clustering (k-means, hierarchical, DBSCAN), d..."
+      }
+    },
+    {
       "id": "ai-userprivacycontrol",
       "iri": "http://narrativegoldmine.com/ai#UserPrivacyControl",
       "baseIri": "http://narrativegoldmine.com/ai",
@@ -14501,6 +15030,23 @@
       },
       "comment": {
         "en": "- maturity:: established"
+      }
+    },
+    {
+      "id": "ai-videoprocessing",
+      "iri": "http://narrativegoldmine.com/ai#VideoProcessing",
+      "baseIri": "http://narrativegoldmine.com/ai",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#4CAF50",
+      "domain": "ai",
+      "term_id": "AI-9036",
+      "label": {
+        "en": "Video Processing"
+      },
+      "comment": {
+        "en": "Video Processing in AI involves computational analysis, understanding, and manipulation of video data using machine learning and computer vision techniques. Core tasks include object detection and ..."
       }
     },
     {
@@ -15124,6 +15670,7 @@
       ],
       "backgroundColor": "#2196F3",
       "domain": "bc",
+      "term_id": "BC-9001",
       "label": {
         "en": "BlockchainProcess"
       }
@@ -15171,6 +15718,7 @@
       ],
       "backgroundColor": "#2196F3",
       "domain": "bc",
+      "term_id": "BC-9002",
       "label": {
         "en": "BlockchainTransaction"
       }
@@ -15592,6 +16140,7 @@
       ],
       "backgroundColor": "#2196F3",
       "domain": "bc",
+      "term_id": "BC-9003",
       "label": {
         "en": "ConsensusProtocol"
       }
@@ -15775,6 +16324,7 @@
       ],
       "backgroundColor": "#2196F3",
       "domain": "bc",
+      "term_id": "BC-9004",
       "label": {
         "en": "CryptocurrencyStorage"
       }
@@ -15788,6 +16338,7 @@
       ],
       "backgroundColor": "#2196F3",
       "domain": "bc",
+      "term_id": "BC-9005",
       "label": {
         "en": "CryptocurrencyToken"
       }
@@ -15886,6 +16437,7 @@
       ],
       "backgroundColor": "#2196F3",
       "domain": "bc",
+      "term_id": "BC-9006",
       "label": {
         "en": "CryptographicProtocol"
       }
@@ -16018,6 +16570,7 @@
       ],
       "backgroundColor": "#2196F3",
       "domain": "bc",
+      "term_id": "BC-9007",
       "label": {
         "en": "DataStructure"
       }
@@ -16252,6 +16805,7 @@
       ],
       "backgroundColor": "#2196F3",
       "domain": "bc",
+      "term_id": "BC-9008",
       "label": {
         "en": "DigitalAsset"
       }
@@ -16367,6 +16921,7 @@
       ],
       "backgroundColor": "#2196F3",
       "domain": "bc",
+      "term_id": "BC-9009",
       "label": {
         "en": "DistributedSystem"
       }
@@ -16380,6 +16935,7 @@
       ],
       "backgroundColor": "#2196F3",
       "domain": "bc",
+      "term_id": "BC-9010",
       "label": {
         "en": "DistributedSystemProtocol"
       }
@@ -16943,6 +17499,20 @@
       }
     },
     {
+      "id": "bc-financialinstruments",
+      "iri": "http://narrativegoldmine.com/blockchain#FinancialInstruments",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "domain": "bc",
+      "term_id": "BC-9011",
+      "label": {
+        "en": "FinancialInstruments"
+      }
+    },
+    {
       "id": "fixedsupplytoken",
       "iri": "http://narrativegoldmine.com/blockchain#FixedSupplyToken",
       "baseIri": "http://narrativegoldmine.com/blockchain",
@@ -17478,8 +18048,12 @@
       ],
       "backgroundColor": "#2196F3",
       "domain": "bc",
+      "term_id": "BC-9501",
       "label": {
-        "en": "InformationProtection"
+        "en": "Information Protection"
+      },
+      "comment": {
+        "en": "Information Protection is a concept within the blockchain domain. Further enrichment pending."
       }
     },
     {
@@ -17763,8 +18337,12 @@
       ],
       "backgroundColor": "#2196F3",
       "domain": "bc",
+      "term_id": "BC-9502",
       "label": {
-        "en": "MathematicalScience"
+        "en": "Mathematical Science"
+      },
+      "comment": {
+        "en": "Mathematical Science is a concept within the blockchain domain. Further enrichment pending."
       }
     },
     {
@@ -18444,6 +19022,20 @@
       }
     },
     {
+      "id": "bc-peertopeernetwork",
+      "iri": "http://narrativegoldmine.com/blockchain#PeerToPeerNetwork",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "domain": "bc",
+      "term_id": "BC-9013",
+      "label": {
+        "en": "PeerToPeerNetwork"
+      }
+    },
+    {
       "id": "peertopeerprotocol",
       "iri": "http://narrativegoldmine.com/blockchain#PeertoPeerProtocol",
       "baseIri": "http://narrativegoldmine.com/blockchain",
@@ -18452,8 +19044,12 @@
       ],
       "backgroundColor": "#2196F3",
       "domain": "bc",
+      "term_id": "BC-9504",
       "label": {
-        "en": "PeertoPeerProtocol"
+        "en": "Peerto Peer Protocol"
+      },
+      "comment": {
+        "en": "Peerto Peer Protocol is a concept within the blockchain domain. Further enrichment pending."
       }
     },
     {
@@ -18916,7 +19512,7 @@
       }
     },
     {
-      "id": "bc-publickeycryptography",
+      "id": "publickeycryptography",
       "iri": "http://narrativegoldmine.com/blockchain#PublickeyCryptography",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -19043,8 +19639,12 @@
       ],
       "backgroundColor": "#2196F3",
       "domain": "bc",
+      "term_id": "BC-9505",
       "label": {
-        "en": "RecordKeepingSystem"
+        "en": "Record Keeping System"
+      },
+      "comment": {
+        "en": "Record Keeping System is a concept within the blockchain domain. Further enrichment pending."
       }
     },
     {
@@ -19209,8 +19809,12 @@
       ],
       "backgroundColor": "#2196F3",
       "domain": "bc",
+      "term_id": "BC-9506",
       "label": {
-        "en": "SecurityTechnology"
+        "en": "Security Technology"
+      },
+      "comment": {
+        "en": "Security Technology is a concept within the blockchain domain. Further enrichment pending."
       }
     },
     {
@@ -19494,8 +20098,12 @@
       ],
       "backgroundColor": "#2196F3",
       "domain": "bc",
+      "term_id": "BC-9507",
       "label": {
-        "en": "StateMachineReplication"
+        "en": "State Machine Replication"
+      },
+      "comment": {
+        "en": "State Machine Replication is a concept within the blockchain domain. Further enrichment pending."
       }
     },
     {
@@ -19924,6 +20532,20 @@
       }
     },
     {
+      "id": "bc-transactionprocessing",
+      "iri": "http://narrativegoldmine.com/blockchain#TransactionProcessing",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "domain": "bc",
+      "term_id": "BC-9016",
+      "label": {
+        "en": "TransactionProcessing"
+      }
+    },
+    {
       "id": "transferableright",
       "iri": "http://narrativegoldmine.com/blockchain#TransferableRight",
       "baseIri": "http://narrativegoldmine.com/blockchain",
@@ -19932,8 +20554,12 @@
       ],
       "backgroundColor": "#2196F3",
       "domain": "bc",
+      "term_id": "BC-9508",
       "label": {
-        "en": "TransferableRight"
+        "en": "Transferable Right"
+      },
+      "comment": {
+        "en": "Transferable Right is a concept within the blockchain domain. Further enrichment pending."
       }
     },
     {
@@ -20019,6 +20645,20 @@
       },
       "comment": {
         "en": "Unspent Transaction Output accounting model within blockchain systems, providing essential functionality for distributed ledger technology operations and properties."
+      }
+    },
+    {
+      "id": "userprivacy",
+      "iri": "http://narrativegoldmine.com/blockchain#UserPrivacy",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "domain": "bc",
+      "term_id": "BC-9017",
+      "label": {
+        "en": "UserPrivacy"
       }
     },
     {
@@ -20124,6 +20764,20 @@
       }
     },
     {
+      "id": "webtechnology",
+      "iri": "http://narrativegoldmine.com/blockchain#WebTechnology",
+      "baseIri": "http://narrativegoldmine.com/blockchain",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#2196F3",
+      "domain": "bc",
+      "term_id": "BC-9018",
+      "label": {
+        "en": "WebTechnology"
+      }
+    },
+    {
       "id": "bc-zeroknowledgeproof",
       "iri": "http://narrativegoldmine.com/blockchain#ZeroknowledgeProof",
       "baseIri": "http://narrativegoldmine.com/blockchain",
@@ -20217,6 +20871,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9001",
       "label": {
         "en": "3DAnimation"
       }
@@ -20230,6 +20885,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9002",
       "label": {
         "en": "3DAsset"
       }
@@ -20243,6 +20899,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9003",
       "label": {
         "en": "3DAssetStandard"
       }
@@ -20256,6 +20913,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9004",
       "label": {
         "en": "3DContentPipeline"
       }
@@ -20269,6 +20927,7 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9005",
       "label": {
         "en": "3DDesign"
       }
@@ -20282,8 +20941,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9501",
       "label": {
-        "en": "3DDevelopment"
+        "en": "3 D Development"
+      },
+      "comment": {
+        "en": "3 D Development is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -20295,8 +20958,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9502",
       "label": {
-        "en": "3DFileFormat"
+        "en": "3 D File Format"
+      },
+      "comment": {
+        "en": "3 D File Format is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -20308,8 +20975,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9503",
       "label": {
-        "en": "3DGraphicsStandard"
+        "en": "3 D Graphics Standard"
+      },
+      "comment": {
+        "en": "3 D Graphics Standard is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -20321,8 +20992,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9504",
       "label": {
-        "en": "3DModel"
+        "en": "3 D Model"
+      },
+      "comment": {
+        "en": "3 D Model is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -20334,8 +21009,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9505",
       "label": {
-        "en": "3DModeling"
+        "en": "3 D Modeling"
+      },
+      "comment": {
+        "en": "3 D Modeling is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -20347,8 +21026,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9506",
       "label": {
-        "en": "3DReconstruction"
+        "en": "3 D Reconstruction"
+      },
+      "comment": {
+        "en": "3 D Reconstruction is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -20360,8 +21043,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9507",
       "label": {
-        "en": "3DUserInterface"
+        "en": "3 D User Interface"
+      },
+      "comment": {
+        "en": "3 D User Interface is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -20532,23 +21219,6 @@
       },
       "comment": {
         "en": "Mandatory transparency requirement specifying that content created wholly or partially by AI systems must be explicitly labeled with origin metadata for user awareness and regulatory compliance."
-      }
-    },
-    {
-      "id": "mv-aigovernance",
-      "iri": "http://narrativegoldmine.com/metaverse#AIGovernance",
-      "baseIri": "http://narrativegoldmine.com/metaverse",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#9C27B0",
-      "domain": "mv",
-      "term_id": "AI-0091",
-      "label": {
-        "en": "AI Governance"
-      },
-      "comment": {
-        "en": "The system of rules, practices, processes, and organisational structures that guide the responsible development, deployment, and use of artificial intelligence systems throughout their lifecycle, e..."
       }
     },
     {
@@ -20832,8 +21502,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9508",
       "label": {
-        "en": "ARRegistration"
+        "en": "A R Registration"
+      },
+      "comment": {
+        "en": "A R Registration is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -20845,8 +21519,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9509",
       "label": {
-        "en": "ARTechnology"
+        "en": "A R Technology"
+      },
+      "comment": {
+        "en": "A R Technology is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -20939,8 +21617,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9511",
       "label": {
-        "en": "AccessibleDesign"
+        "en": "Accessible Design"
+      },
+      "comment": {
+        "en": "Accessible Design is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -20952,8 +21634,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9512",
       "label": {
-        "en": "AccessibleExperience"
+        "en": "Accessible Experience"
+      },
+      "comment": {
+        "en": "Accessible Experience is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -21178,7 +21864,7 @@
       }
     },
     {
-      "id": "mv-aitransparencyframework",
+      "id": "aitransparencyframework",
       "iri": "http://narrativegoldmine.com/metaverse#AiTransparencyFramework",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -21212,7 +21898,7 @@
       }
     },
     {
-      "id": "mv-analogtodigitalconverter",
+      "id": "analogtodigitalconverter",
       "iri": "http://narrativegoldmine.com/metaverse#AnalogToDigitalConverter",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -21271,8 +21957,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9513",
       "label": {
-        "en": "AnimationStandard"
+        "en": "Animation Standard"
+      },
+      "comment": {
+        "en": "Animation Standard is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -21284,8 +21974,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9514",
       "label": {
-        "en": "AnimationTechnique"
+        "en": "Animation Technique"
+      },
+      "comment": {
+        "en": "Animation Technique is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -21561,8 +22255,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9517",
       "label": {
-        "en": "AssetTokenization"
+        "en": "Asset Tokenization"
+      },
+      "comment": {
+        "en": "Asset Tokenization is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -21625,8 +22323,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9518",
       "label": {
-        "en": "AudioProcessingSystem"
+        "en": "Audio Processing System"
+      },
+      "comment": {
+        "en": "Audio Processing System is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -21655,8 +22357,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9519",
       "label": {
-        "en": "AudioSystem"
+        "en": "Audio System"
+      },
+      "comment": {
+        "en": "Audio System is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -21668,8 +22374,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9520",
       "label": {
-        "en": "AudioTechnology"
+        "en": "Audio Technology"
+      },
+      "comment": {
+        "en": "Audio Technology is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -21834,8 +22544,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9521",
       "label": {
-        "en": "AutomatedModeling"
+        "en": "Automated Modeling"
+      },
+      "comment": {
+        "en": "Automated Modeling is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -22213,7 +22927,7 @@
       }
     },
     {
-      "id": "mv-bimvirtualmodel",
+      "id": "bimvirtualmodel",
       "iri": "http://narrativegoldmine.com/metaverse#BimVirtualModel",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -22306,8 +23020,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9522",
       "label": {
-        "en": "BlockchainEconomics"
+        "en": "Blockchain Economics"
+      },
+      "comment": {
+        "en": "Blockchain Economics is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -22319,8 +23037,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9523",
       "label": {
-        "en": "BlockchainGaming"
+        "en": "Blockchain Gaming"
+      },
+      "comment": {
+        "en": "Blockchain Gaming is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -22358,7 +23080,7 @@
       }
     },
     {
-      "id": "c2pastandard",
+      "id": "mv-c2pastandard",
       "iri": "http://narrativegoldmine.com/metaverse#C2paStandard",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -22468,8 +23190,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9524",
       "label": {
-        "en": "CalibrationEquipment"
+        "en": "Calibration Equipment"
+      },
+      "comment": {
+        "en": "Calibration Equipment is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -22515,8 +23241,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9525",
       "label": {
-        "en": "CalibrationTools"
+        "en": "Calibration Tools"
+      },
+      "comment": {
+        "en": "Calibration Tools is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -22953,8 +23683,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9526",
       "label": {
-        "en": "CollaborationTechnology"
+        "en": "Collaboration Technology"
+      },
+      "comment": {
+        "en": "Collaboration Technology is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -22983,8 +23717,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9527",
       "label": {
-        "en": "CollaborativeTechnology"
+        "en": "Collaborative Technology"
+      },
+      "comment": {
+        "en": "Collaborative Technology is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23064,8 +23802,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9528",
       "label": {
-        "en": "CommunityGovernance"
+        "en": "Community Governance"
+      },
+      "comment": {
+        "en": "Community Governance is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23179,8 +23921,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9529",
       "label": {
-        "en": "ComplianceFramework"
+        "en": "Compliance Framework"
+      },
+      "comment": {
+        "en": "Compliance Framework is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23243,8 +23989,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9530",
       "label": {
-        "en": "ComputerVisionSystem"
+        "en": "Computer Vision System"
+      },
+      "comment": {
+        "en": "Computer Vision System is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23256,8 +24006,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9531",
       "label": {
-        "en": "ComputingHardware"
+        "en": "Computing Hardware"
+      },
+      "comment": {
+        "en": "Computing Hardware is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23282,8 +24036,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9533",
       "label": {
-        "en": "ComputingPlatform"
+        "en": "Computing Platform"
+      },
+      "comment": {
+        "en": "Computing Platform is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23295,8 +24053,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9534",
       "label": {
         "en": "Configuration"
+      },
+      "comment": {
+        "en": "Configuration is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23308,8 +24070,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9535",
       "label": {
-        "en": "ConfigurationSetting"
+        "en": "Configuration Setting"
+      },
+      "comment": {
+        "en": "Configuration Setting is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23389,8 +24155,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9536",
       "label": {
-        "en": "ContentAuthentication"
+        "en": "Content Authentication"
+      },
+      "comment": {
+        "en": "Content Authentication is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23453,8 +24223,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9537",
       "label": {
-        "en": "ContentProductionWorkflow"
+        "en": "Content Production Workflow"
+      },
+      "comment": {
+        "en": "Content Production Workflow is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23466,8 +24240,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9538",
       "label": {
-        "en": "ContentProtection"
+        "en": "Content Protection"
+      },
+      "comment": {
+        "en": "Content Protection is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23479,8 +24257,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9539",
       "label": {
-        "en": "ContextAwareComputing"
+        "en": "Context Aware Computing"
+      },
+      "comment": {
+        "en": "Context Aware Computing is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23628,8 +24410,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9540",
       "label": {
-        "en": "CoordinateSystem"
+        "en": "Coordinate System"
+      },
+      "comment": {
+        "en": "Coordinate System is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23641,8 +24427,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9541",
       "label": {
-        "en": "CreativeSoftware"
+        "en": "Creative Software"
+      },
+      "comment": {
+        "en": "Creative Software is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23790,8 +24580,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9542",
       "label": {
-        "en": "CryptographicProtocol"
+        "en": "Cryptographic Protocol"
+      },
+      "comment": {
+        "en": "Cryptographic Protocol is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23803,8 +24597,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9543",
       "label": {
-        "en": "CryptographicSecurity"
+        "en": "Cryptographic Security"
+      },
+      "comment": {
+        "en": "Cryptographic Security is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23816,8 +24614,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9544",
       "label": {
-        "en": "CryptographicVerification"
+        "en": "Cryptographic Verification"
+      },
+      "comment": {
+        "en": "Cryptographic Verification is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23829,8 +24631,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9545",
       "label": {
         "en": "Cryptography"
+      },
+      "comment": {
+        "en": "Cryptography is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23940,8 +24746,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9547",
       "label": {
-        "en": "DAOGovernance"
+        "en": "D A O Governance"
+      },
+      "comment": {
+        "en": "D A O Governance is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23970,8 +24780,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9548",
       "label": {
-        "en": "DataAccessInterface"
+        "en": "Data Access Interface"
+      },
+      "comment": {
+        "en": "Data Access Interface is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -23983,8 +24797,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9549",
       "label": {
-        "en": "DataAnalytics"
+        "en": "Data Analytics"
+      },
+      "comment": {
+        "en": "Data Analytics is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24047,8 +24865,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9550",
       "label": {
-        "en": "DataFormat"
+        "en": "Data Format"
+      },
+      "comment": {
+        "en": "Data Format is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24077,8 +24899,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9551",
       "label": {
-        "en": "DataGovernance"
+        "en": "Data Governance"
+      },
+      "comment": {
+        "en": "Data Governance is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24090,8 +24916,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9552",
       "label": {
-        "en": "DataIntegration"
+        "en": "Data Integration"
+      },
+      "comment": {
+        "en": "Data Integration is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24120,8 +24950,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9553",
       "label": {
-        "en": "DataInteroperability"
+        "en": "Data Interoperability"
+      },
+      "comment": {
+        "en": "Data Interoperability is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24184,8 +25018,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9554",
       "label": {
-        "en": "DataProcessing"
+        "en": "Data Processing"
+      },
+      "comment": {
+        "en": "Data Processing is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24231,8 +25069,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9555",
       "label": {
-        "en": "DataProtectionRegulation"
+        "en": "Data Protection Regulation"
+      },
+      "comment": {
+        "en": "Data Protection Regulation is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24261,8 +25103,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9556",
       "label": {
-        "en": "DataRegistry"
+        "en": "Data Registry"
+      },
+      "comment": {
+        "en": "Data Registry is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24291,8 +25137,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9557",
       "label": {
-        "en": "DataSecurity"
+        "en": "Data Security"
+      },
+      "comment": {
+        "en": "Data Security is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24304,8 +25154,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9558",
       "label": {
-        "en": "DataSharing"
+        "en": "Data Sharing"
+      },
+      "comment": {
+        "en": "Data Sharing is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24317,8 +25171,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9559",
       "label": {
-        "en": "DataStandards"
+        "en": "Data Standards"
+      },
+      "comment": {
+        "en": "Data Standards is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24377,8 +25235,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9561",
       "label": {
-        "en": "DataVisualisation"
+        "en": "Data Visualisation"
+      },
+      "comment": {
+        "en": "Data Visualisation is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24390,8 +25252,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9562",
       "label": {
-        "en": "DatabaseQuery"
+        "en": "Database Query"
+      },
+      "comment": {
+        "en": "Database Query is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24433,8 +25299,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9564",
       "label": {
-        "en": "DeFiServices"
+        "en": "De Fi Services"
+      },
+      "comment": {
+        "en": "De Fi Services is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24531,8 +25401,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9565",
       "label": {
-        "en": "DemocraticEngagement"
+        "en": "Democratic Engagement"
+      },
+      "comment": {
+        "en": "Democratic Engagement is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24544,8 +25418,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9566",
       "label": {
-        "en": "DemocraticGovernance"
+        "en": "Democratic Governance"
+      },
+      "comment": {
+        "en": "Democratic Governance is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24608,8 +25486,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9567",
       "label": {
-        "en": "DepthSensing"
+        "en": "Depth Sensing"
+      },
+      "comment": {
+        "en": "Depth Sensing is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24621,8 +25503,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9568",
       "label": {
-        "en": "DesignSoftware"
+        "en": "Design Software"
+      },
+      "comment": {
+        "en": "Design Software is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24651,8 +25537,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9569",
       "label": {
-        "en": "DevelopmentPlatform"
+        "en": "Development Platform"
+      },
+      "comment": {
+        "en": "Development Platform is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24817,8 +25707,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9570",
       "label": {
-        "en": "DigitalAssetMarket"
+        "en": "Digital Asset Market"
+      },
+      "comment": {
+        "en": "Digital Asset Market is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24830,8 +25724,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9571",
       "label": {
-        "en": "DigitalAssetStandards"
+        "en": "Digital Asset Standards"
+      },
+      "comment": {
+        "en": "Digital Asset Standards is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24945,8 +25843,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9572",
       "label": {
-        "en": "DigitalCommerce"
+        "en": "Digital Commerce"
+      },
+      "comment": {
+        "en": "Digital Commerce is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24975,8 +25877,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9573",
       "label": {
-        "en": "DigitalContent"
+        "en": "Digital Content"
+      },
+      "comment": {
+        "en": "Digital Content is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -24988,8 +25894,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9574",
       "label": {
-        "en": "DigitalContentCreation"
+        "en": "Digital Content Creation"
+      },
+      "comment": {
+        "en": "Digital Content Creation is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -25086,8 +25996,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9575",
       "label": {
-        "en": "DigitalEntertainment"
+        "en": "Digital Entertainment"
+      },
+      "comment": {
+        "en": "Digital Entertainment is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -25116,8 +26030,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9576",
       "label": {
-        "en": "DigitalExperience"
+        "en": "Digital Experience"
+      },
+      "comment": {
+        "en": "Digital Experience is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -25146,8 +26064,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9577",
       "label": {
-        "en": "DigitalGaming"
+        "en": "Digital Gaming"
+      },
+      "comment": {
+        "en": "Digital Gaming is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -25193,8 +26115,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9578",
       "label": {
-        "en": "DigitalGovernance"
+        "en": "Digital Governance"
+      },
+      "comment": {
+        "en": "Digital Governance is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -25206,8 +26132,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9579",
       "label": {
-        "en": "DigitalHeritage"
+        "en": "Digital Heritage"
+      },
+      "comment": {
+        "en": "Digital Heritage is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -25219,8 +26149,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9580",
       "label": {
-        "en": "DigitalHumanTechnology"
+        "en": "Digital Human Technology"
+      },
+      "comment": {
+        "en": "Digital Human Technology is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -25317,8 +26251,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9581",
       "label": {
-        "en": "DigitalInfrastructure"
+        "en": "Digital Infrastructure"
+      },
+      "comment": {
+        "en": "Digital Infrastructure is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -25347,8 +26285,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9582",
       "label": {
-        "en": "DigitalMarketing"
+        "en": "Digital Marketing"
+      },
+      "comment": {
+        "en": "Digital Marketing is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -25377,8 +26319,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9583",
       "label": {
-        "en": "DigitalModel"
+        "en": "Digital Model"
+      },
+      "comment": {
+        "en": "Digital Model is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -25390,8 +26336,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9584",
       "label": {
-        "en": "DigitalModeling"
+        "en": "Digital Modeling"
+      },
+      "comment": {
+        "en": "Digital Modeling is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -25505,8 +26455,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9585",
       "label": {
-        "en": "DigitalPlatform"
+        "en": "Digital Platform"
+      },
+      "comment": {
+        "en": "Digital Platform is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -25518,8 +26472,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9586",
       "label": {
-        "en": "DigitalPreservation"
+        "en": "Digital Preservation"
+      },
+      "comment": {
+        "en": "Digital Preservation is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -25531,8 +26489,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9587",
       "label": {
-        "en": "DigitalPropertyRights"
+        "en": "Digital Property Rights"
+      },
+      "comment": {
+        "en": "Digital Property Rights is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -25561,8 +26523,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9588",
       "label": {
-        "en": "DigitalRegulation"
+        "en": "Digital Regulation"
+      },
+      "comment": {
+        "en": "Digital Regulation is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -25659,8 +26625,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9589",
       "label": {
-        "en": "DigitalSafety"
+        "en": "Digital Safety"
+      },
+      "comment": {
+        "en": "Digital Safety is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -25672,8 +26642,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9590",
       "label": {
-        "en": "DigitalSecurity"
+        "en": "Digital Security"
+      },
+      "comment": {
+        "en": "Digital Security is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -25753,8 +26727,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9591",
       "label": {
-        "en": "DigitalSociety"
+        "en": "Digital Society"
+      },
+      "comment": {
+        "en": "Digital Society is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -25800,8 +26778,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9592",
       "label": {
-        "en": "DigitalTechnology"
+        "en": "Digital Technology"
+      },
+      "comment": {
+        "en": "Digital Technology is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -26017,8 +26999,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9593",
       "label": {
-        "en": "DigitalTwinTechnology"
+        "en": "Digital Twin Technology"
+      },
+      "comment": {
+        "en": "Digital Twin Technology is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -26217,8 +27203,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9594",
       "label": {
-        "en": "DistributedSystems"
+        "en": "Distributed Systems"
+      },
+      "comment": {
+        "en": "Distributed Systems is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -26315,8 +27305,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9595",
       "label": {
-        "en": "ECommerce"
+        "en": "E Commerce"
+      },
+      "comment": {
+        "en": "E Commerce is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -27144,8 +28138,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9596",
       "label": {
-        "en": "EconomicGovernance"
+        "en": "Economic Governance"
+      },
+      "comment": {
+        "en": "Economic Governance is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -27204,8 +28202,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9598",
       "label": {
-        "en": "EconomicSystems"
+        "en": "Economic Systems"
+      },
+      "comment": {
+        "en": "Economic Systems is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -27319,8 +28321,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9599",
       "label": {
-        "en": "EducationalMethodology"
+        "en": "Educational Methodology"
+      },
+      "comment": {
+        "en": "Educational Methodology is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -27468,8 +28474,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9600",
       "label": {
-        "en": "EnvironmentalAccounting"
+        "en": "Environmental Accounting"
+      },
+      "comment": {
+        "en": "Environmental Accounting is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -27481,8 +28491,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9601",
       "label": {
-        "en": "EnvironmentalAssessment"
+        "en": "Environmental Assessment"
+      },
+      "comment": {
+        "en": "Environmental Assessment is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -27511,8 +28525,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9602",
       "label": {
-        "en": "EnvironmentalCertificate"
+        "en": "Environmental Certificate"
+      },
+      "comment": {
+        "en": "Environmental Certificate is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -27541,8 +28559,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9603",
       "label": {
-        "en": "EnvironmentalKPI"
+        "en": "Environmental K P I"
+      },
+      "comment": {
+        "en": "Environmental K P I is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -27554,8 +28576,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9604",
       "label": {
-        "en": "EnvironmentalRegistry"
+        "en": "Environmental Registry"
+      },
+      "comment": {
+        "en": "Environmental Registry is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -27618,8 +28644,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9605",
       "label": {
-        "en": "EnvironmentalTrading"
+        "en": "Environmental Trading"
+      },
+      "comment": {
+        "en": "Environmental Trading is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -27631,8 +28661,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9606",
       "label": {
-        "en": "EnvironmentalVerification"
+        "en": "Environmental Verification"
+      },
+      "comment": {
+        "en": "Environmental Verification is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -27661,8 +28695,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9607",
       "label": {
-        "en": "EthicalDesignStandard"
+        "en": "Ethical Design Standard"
+      },
+      "comment": {
+        "en": "Ethical Design Standard is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -27683,7 +28721,7 @@
       }
     },
     {
-      "id": "etsidomainimmersive",
+      "id": "mv-etsidomainimmersive",
       "iri": "http://narrativegoldmine.com/metaverse#EtsiDomainImmersive",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -27700,7 +28738,7 @@
       }
     },
     {
-      "id": "mv-etsimetaversedomainmodel",
+      "id": "etsimetaversedomainmodel",
       "iri": "http://narrativegoldmine.com/metaverse#EtsiMetaverseDomainModel",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -27717,7 +28755,7 @@
       }
     },
     {
-      "id": "etsimetaversedomaintaxonomy",
+      "id": "mv-etsimetaversedomaintaxonomy",
       "iri": "http://narrativegoldmine.com/metaverse#EtsiMetaverseDomainTaxonomy",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -27759,8 +28797,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9608",
       "label": {
-        "en": "EventManagement"
+        "en": "Event Management"
+      },
+      "comment": {
+        "en": "Event Management is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -27772,8 +28814,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9609",
       "label": {
-        "en": "ExchangeMechanism"
+        "en": "Exchange Mechanism"
+      },
+      "comment": {
+        "en": "Exchange Mechanism is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -27862,7 +28908,7 @@
       }
     },
     {
-      "id": "mv-extendedrealityxr",
+      "id": "extendedrealityxr",
       "iri": "http://narrativegoldmine.com/metaverse#ExtendedRealityXr",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -28074,8 +29120,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9610",
       "label": {
-        "en": "FilmProduction"
+        "en": "Film Production"
+      },
+      "comment": {
+        "en": "Film Production is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -28087,12 +29137,16 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9611",
       "label": {
-        "en": "FinancialInfrastructure"
+        "en": "Financial Infrastructure"
+      },
+      "comment": {
+        "en": "Financial Infrastructure is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
-      "id": "financialinstruments",
+      "id": "mv-financialinstruments",
       "iri": "http://narrativegoldmine.com/metaverse#FinancialInstruments",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -28100,8 +29154,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9612",
       "label": {
-        "en": "FinancialInstruments"
+        "en": "Financial Instruments"
+      },
+      "comment": {
+        "en": "Financial Instruments is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -28113,8 +29171,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9613",
       "label": {
-        "en": "FinancialSystem"
+        "en": "Financial System"
+      },
+      "comment": {
+        "en": "Financial System is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -28126,8 +29188,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9614",
       "label": {
-        "en": "FinancialTechnology"
+        "en": "Financial Technology"
+      },
+      "comment": {
+        "en": "Financial Technology is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -28139,8 +29205,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9615",
       "label": {
-        "en": "FinancialTrading"
+        "en": "Financial Trading"
+      },
+      "comment": {
+        "en": "Financial Trading is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -28152,8 +29222,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9616",
       "label": {
-        "en": "FinancialTransactions"
+        "en": "Financial Transactions"
+      },
+      "comment": {
+        "en": "Financial Transactions is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -28250,8 +29324,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9617",
       "label": {
-        "en": "GameMechanics"
+        "en": "Game Mechanics"
+      },
+      "comment": {
+        "en": "Game Mechanics is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -28382,8 +29460,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9618",
       "label": {
-        "en": "GenerativeContent"
+        "en": "Generative Content"
+      },
+      "comment": {
+        "en": "Generative Content is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -28429,8 +29511,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9619",
       "label": {
-        "en": "GeospatialInformation"
+        "en": "Geospatial Information"
+      },
+      "comment": {
+        "en": "Geospatial Information is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -28442,8 +29528,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9620",
       "label": {
-        "en": "GeospatialTechnology"
+        "en": "Geospatial Technology"
+      },
+      "comment": {
+        "en": "Geospatial Technology is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -28515,7 +29605,7 @@
       }
     },
     {
-      "id": "mv-gltfstandard",
+      "id": "gltfstandard",
       "iri": "http://narrativegoldmine.com/metaverse#GltfStandard",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -28540,8 +29630,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9621",
       "label": {
         "en": "Governance"
+      },
+      "comment": {
+        "en": "Governance is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -28668,8 +29762,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9623",
       "label": {
-        "en": "GraphicsLibrary"
+        "en": "Graphics Library"
+      },
+      "comment": {
+        "en": "Graphics Library is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -28707,7 +29805,7 @@
       }
     },
     {
-      "id": "mv-hanimstandard",
+      "id": "hanimstandard",
       "iri": "http://narrativegoldmine.com/metaverse#HanimStandard",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -28766,8 +29864,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9624",
       "label": {
         "en": "Hardware"
+      },
+      "comment": {
+        "en": "Hardware is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -28779,8 +29881,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9625",
       "label": {
-        "en": "HardwareAbstraction"
+        "en": "Hardware Abstraction"
+      },
+      "comment": {
+        "en": "Hardware Abstraction is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -28826,8 +29932,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9626",
       "label": {
-        "en": "HardwareComponent"
+        "en": "Hardware Component"
+      },
+      "comment": {
+        "en": "Hardware Component is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -28958,8 +30068,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9627",
       "label": {
-        "en": "HealthcareTechnology"
+        "en": "Healthcare Technology"
+      },
+      "comment": {
+        "en": "Healthcare Technology is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -29082,7 +30196,7 @@
       }
     },
     {
-      "id": "humancomputerinteraction",
+      "id": "mv-humancomputerinteraction",
       "iri": "http://narrativegoldmine.com/metaverse#HumanComputerInteraction",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -29090,12 +30204,8 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
-      "term_id": "MV-0601",
       "label": {
-        "en": "Human Computer Interaction"
-      },
-      "comment": {
-        "en": "Human Computer Interaction (HCI) is the study and design of interfaces and interaction paradigms between humans and computational systems, particularly in immersive and spatial computing contexts. ..."
+        "en": "HumanComputerInteraction"
       }
     },
     {
@@ -29107,8 +30217,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9629",
       "label": {
-        "en": "HumanComputerInterface"
+        "en": "Human Computer Interface"
+      },
+      "comment": {
+        "en": "Human Computer Interface is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -29273,8 +30387,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9630",
       "label": {
         "en": "Identity"
+      },
+      "comment": {
+        "en": "Identity is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -29350,8 +30468,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9632",
       "label": {
-        "en": "IdentityStandards"
+        "en": "Identity Standards"
+      },
+      "comment": {
+        "en": "Identity Standards is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -29363,12 +30485,16 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9633",
       "label": {
-        "en": "IdentitySystems"
+        "en": "Identity Systems"
+      },
+      "comment": {
+        "en": "Identity Systems is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
-      "id": "ieee7000standard",
+      "id": "mv-ieee7000standard",
       "iri": "http://narrativegoldmine.com/metaverse#Ieee7000Standard",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -29385,7 +30511,7 @@
       }
     },
     {
-      "id": "ieeep2733standards",
+      "id": "mv-ieeep2733standards",
       "iri": "http://narrativegoldmine.com/metaverse#IeeeP2733Standards",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -29478,8 +30604,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9634",
       "label": {
-        "en": "ImagingParameters"
+        "en": "Imaging Parameters"
+      },
+      "comment": {
+        "en": "Imaging Parameters is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -29525,8 +30655,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9635",
       "label": {
-        "en": "ImmersiveAudioTechnology"
+        "en": "Immersive Audio Technology"
+      },
+      "comment": {
+        "en": "Immersive Audio Technology is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -29810,8 +30944,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9636",
       "label": {
-        "en": "InformationArchitecture"
+        "en": "Information Architecture"
+      },
+      "comment": {
+        "en": "Information Architecture is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -29823,8 +30961,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9637",
       "label": {
-        "en": "InformationRetrieval"
+        "en": "Information Retrieval"
+      },
+      "comment": {
+        "en": "Information Retrieval is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -29862,7 +31004,7 @@
       }
     },
     {
-      "id": "mv-infraredledilluminator",
+      "id": "infraredledilluminator",
       "iri": "http://narrativegoldmine.com/metaverse#InfraredLedIlluminator",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -29989,8 +31131,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9638",
       "label": {
-        "en": "IntelligentSystems"
+        "en": "Intelligent Systems"
+      },
+      "comment": {
+        "en": "Intelligent Systems is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -30019,8 +31165,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9639",
       "label": {
-        "en": "InteractiveStorytelling"
+        "en": "Interactive Storytelling"
+      },
+      "comment": {
+        "en": "Interactive Storytelling is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -30032,8 +31182,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9640",
       "label": {
-        "en": "InterchangeProtocol"
+        "en": "Interchange Protocol"
+      },
+      "comment": {
+        "en": "Interchange Protocol is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -30181,12 +31335,16 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9641",
       "label": {
-        "en": "InvestmentManagement"
+        "en": "Investment Management"
+      },
+      "comment": {
+        "en": "Investment Management is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
-      "id": "isostandards",
+      "id": "mv-isostandards",
       "iri": "http://narrativegoldmine.com/metaverse#IsoStandards",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -30262,8 +31420,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9642",
       "label": {
-        "en": "KnowledgeManagement"
+        "en": "Knowledge Management"
+      },
+      "comment": {
+        "en": "Knowledge Management is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -30275,8 +31437,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9643",
       "label": {
-        "en": "KnowledgeManagementSystem"
+        "en": "Knowledge Management System"
+      },
+      "comment": {
+        "en": "Knowledge Management System is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -30288,8 +31454,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9644",
       "label": {
-        "en": "KnowledgeOrganization"
+        "en": "Knowledge Organization"
+      },
+      "comment": {
+        "en": "Knowledge Organization is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -30301,8 +31471,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9645",
       "label": {
-        "en": "KnowledgeOrganizationSystem"
+        "en": "Knowledge Organization System"
+      },
+      "comment": {
+        "en": "Knowledge Organization System is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -30591,7 +31765,7 @@
       }
     },
     {
-      "id": "mv-lidarscanning",
+      "id": "lidarscanning",
       "iri": "http://narrativegoldmine.com/metaverse#LidarScanning",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -30735,8 +31909,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9647",
       "label": {
-        "en": "LoyaltyPrograms"
+        "en": "Loyalty Programs"
+      },
+      "comment": {
+        "en": "Loyalty Programs is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -31203,8 +32381,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9649",
       "label": {
-        "en": "MetaverseClassification"
+        "en": "Metaverse Classification"
+      },
+      "comment": {
+        "en": "Metaverse Classification is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -31556,8 +32738,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9650",
       "label": {
-        "en": "MixedRealityPlatform"
+        "en": "Mixed Reality Platform"
+      },
+      "comment": {
+        "en": "Mixed Reality Platform is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -31722,8 +32908,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9651",
       "label": {
-        "en": "MotionCaptureTechnology"
+        "en": "Motion Capture Technology"
+      },
+      "comment": {
+        "en": "Motion Capture Technology is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -31833,8 +33023,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9653",
       "label": {
-        "en": "MultiUserSystems"
+        "en": "Multi User Systems"
+      },
+      "comment": {
+        "en": "Multi User Systems is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -31991,7 +33185,7 @@
       }
     },
     {
-      "id": "mv-narrativedesignontology",
+      "id": "narrativedesignontology",
       "iri": "http://narrativegoldmine.com/metaverse#NarrativeDesignOntology",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -32016,8 +33210,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9654",
       "label": {
-        "en": "NarrativeStructure"
+        "en": "Narrative Structure"
+      },
+      "comment": {
+        "en": "Narrative Structure is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -32085,7 +33283,7 @@
       }
     },
     {
-      "id": "networkarchitecture",
+      "id": "mv-networkarchitecture",
       "iri": "http://narrativegoldmine.com/metaverse#NetworkArchitecture",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -32140,8 +33338,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9657",
       "label": {
-        "en": "NetworkQualityMetric"
+        "en": "Network Quality Metric"
+      },
+      "comment": {
+        "en": "Network Quality Metric is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -32340,8 +33542,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9658",
       "label": {
-        "en": "OntologyStructure"
+        "en": "Ontology Structure"
+      },
+      "comment": {
+        "en": "Ontology Structure is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -32353,8 +33559,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9659",
       "label": {
-        "en": "OpenStandard"
+        "en": "Open Standard"
+      },
+      "comment": {
+        "en": "Open Standard is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -32417,8 +33627,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9660",
       "label": {
-        "en": "OrganizationalChange"
+        "en": "Organizational Change"
+      },
+      "comment": {
+        "en": "Organizational Change is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -32804,8 +34018,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9661",
       "label": {
-        "en": "PerformingArts"
+        "en": "Performing Arts"
+      },
+      "comment": {
+        "en": "Performing Arts is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -32970,8 +34188,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9662",
       "label": {
-        "en": "PhysicsSimulation"
+        "en": "Physics Simulation"
+      },
+      "comment": {
+        "en": "Physics Simulation is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -33200,8 +34422,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9664",
       "label": {
-        "en": "PreProduction"
+        "en": "Pre Production"
+      },
+      "comment": {
+        "en": "Pre Production is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -33349,8 +34575,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9665",
       "label": {
-        "en": "PrivacyDisclosure"
+        "en": "Privacy Disclosure"
+      },
+      "comment": {
+        "en": "Privacy Disclosure is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -33379,8 +34609,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9666",
       "label": {
-        "en": "PrivacyFramework"
+        "en": "Privacy Framework"
+      },
+      "comment": {
+        "en": "Privacy Framework is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -33494,8 +34728,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9667",
       "label": {
-        "en": "ProductionDesign"
+        "en": "Production Design"
+      },
+      "comment": {
+        "en": "Production Design is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -33507,8 +34745,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9668",
       "label": {
-        "en": "ProductionFacility"
+        "en": "Production Facility"
+      },
+      "comment": {
+        "en": "Production Facility is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -33520,8 +34762,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9669",
       "label": {
-        "en": "ProductionPipeline"
+        "en": "Production Pipeline"
+      },
+      "comment": {
+        "en": "Production Pipeline is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -33550,8 +34796,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9670",
       "label": {
-        "en": "PropertyRights"
+        "en": "Property Rights"
+      },
+      "comment": {
+        "en": "Property Rights is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -33767,8 +35017,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9671",
       "label": {
-        "en": "QueryProcessor"
+        "en": "Query Processor"
+      },
+      "comment": {
+        "en": "Query Processor is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -33984,8 +35238,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9672",
       "label": {
-        "en": "ReferenceStandard"
+        "en": "Reference Standard"
+      },
+      "comment": {
+        "en": "Reference Standard is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -34044,8 +35302,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9674",
       "label": {
-        "en": "RegulatoryTechnology"
+        "en": "Regulatory Technology"
+      },
+      "comment": {
+        "en": "Regulatory Technology is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -34057,8 +35319,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9675",
       "label": {
-        "en": "ReinforcementLearning"
+        "en": "Reinforcement Learning"
+      },
+      "comment": {
+        "en": "Reinforcement Learning is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -34087,8 +35353,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9676",
       "label": {
-        "en": "RenderingTechnology"
+        "en": "Rendering Technology"
+      },
+      "comment": {
+        "en": "Rendering Technology is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -34134,8 +35404,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9677",
       "label": {
-        "en": "ResearchMethods"
+        "en": "Research Methods"
+      },
+      "comment": {
+        "en": "Research Methods is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -34232,8 +35506,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9678",
       "label": {
-        "en": "RevenueDistribution"
+        "en": "Revenue Distribution"
+      },
+      "comment": {
+        "en": "Revenue Distribution is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -34305,7 +35583,7 @@
       }
     },
     {
-      "id": "righttobeforgotten",
+      "id": "mv-righttobeforgotten",
       "iri": "http://narrativegoldmine.com/metaverse#RightToBeForgotten",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -34517,8 +35795,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9679",
       "label": {
-        "en": "RuntimeEnvironment"
+        "en": "Runtime Environment"
+      },
+      "comment": {
+        "en": "Runtime Environment is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -34700,8 +35982,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9680",
       "label": {
-        "en": "SceneGraphFormat"
+        "en": "Scene Graph Format"
+      },
+      "comment": {
+        "en": "Scene Graph Format is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -34739,7 +36025,7 @@
       }
     },
     {
-      "id": "searchalgorithm",
+      "id": "mv-searchalgorithm",
       "iri": "http://narrativegoldmine.com/metaverse#SearchAlgorithm",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -34930,8 +36216,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9682",
       "label": {
-        "en": "SecurityServices"
+        "en": "Security Services"
+      },
+      "comment": {
+        "en": "Security Services is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -34943,8 +36233,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9683",
       "label": {
-        "en": "SecurityTokenOffering"
+        "en": "Security Token Offering"
+      },
+      "comment": {
+        "en": "Security Token Offering is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -35067,7 +36361,7 @@
       }
     },
     {
-      "id": "separationofpowers",
+      "id": "mv-separationofpowers",
       "iri": "http://narrativegoldmine.com/metaverse#SeparationOfPowers",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -35135,7 +36429,7 @@
       }
     },
     {
-      "id": "mv-sharedarexperiences",
+      "id": "sharedarexperiences",
       "iri": "http://narrativegoldmine.com/metaverse#SharedArExperiences",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -35228,8 +36522,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9684",
       "label": {
-        "en": "SignalProcessing"
+        "en": "Signal Processing"
+      },
+      "comment": {
+        "en": "Signal Processing is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -35258,8 +36556,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9685",
       "label": {
-        "en": "SimulationSoftware"
+        "en": "Simulation Software"
+      },
+      "comment": {
+        "en": "Simulation Software is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -35373,8 +36675,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9686",
       "label": {
-        "en": "SocialNetworkGraph"
+        "en": "Social Network Graph"
+      },
+      "comment": {
+        "en": "Social Network Graph is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -35446,7 +36752,7 @@
       }
     },
     {
-      "id": "softwarearchitecture",
+      "id": "mv-softwarearchitecture",
       "iri": "http://narrativegoldmine.com/metaverse#SoftwareArchitecture",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -35454,12 +36760,8 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
-      "term_id": "MV-10047",
       "label": {
-        "en": "Software Architecture"
-      },
-      "comment": {
-        "en": "The high-level structure of a software system comprising fundamental elements, their interactions, and design principles governing scalability, performance, maintainability, and security through es..."
+        "en": "SoftwareArchitecture"
       }
     },
     {
@@ -35471,8 +36773,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9688",
       "label": {
-        "en": "SoftwareInfrastructure"
+        "en": "Software Infrastructure"
+      },
+      "comment": {
+        "en": "Software Infrastructure is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -35484,8 +36790,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9689",
       "label": {
-        "en": "SoftwareLibrary"
+        "en": "Software Library"
+      },
+      "comment": {
+        "en": "Software Library is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -35514,8 +36824,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9690",
       "label": {
-        "en": "SoftwareTesting"
+        "en": "Software Testing"
+      },
+      "comment": {
+        "en": "Software Testing is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -35782,8 +37096,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9691",
       "label": {
-        "en": "SpatialDataStructure"
+        "en": "Spatial Data Structure"
+      },
+      "comment": {
+        "en": "Spatial Data Structure is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -35846,8 +37164,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9692",
       "label": {
-        "en": "SpatialMappingTechnology"
+        "en": "Spatial Mapping Technology"
+      },
+      "comment": {
+        "en": "Spatial Mapping Technology is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -35978,8 +37300,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9693",
       "label": {
-        "en": "SpatialTrackingTechnology"
+        "en": "Spatial Tracking Technology"
+      },
+      "comment": {
+        "en": "Spatial Tracking Technology is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -36110,8 +37436,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9694",
       "label": {
-        "en": "StandardsBasedTaxonomy"
+        "en": "Standards Based Taxonomy"
+      },
+      "comment": {
+        "en": "Standards Based Taxonomy is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -36191,8 +37521,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9695",
       "label": {
-        "en": "StandardsOrganization"
+        "en": "Standards Organization"
+      },
+      "comment": {
+        "en": "Standards Organization is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -36289,8 +37623,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9696",
       "label": {
         "en": "Storytelling"
+      },
+      "comment": {
+        "en": "Storytelling is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -36302,8 +37640,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9697",
       "label": {
-        "en": "StorytellingStructure"
+        "en": "Storytelling Structure"
+      },
+      "comment": {
+        "en": "Storytelling Structure is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -36315,8 +37657,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9698",
       "label": {
-        "en": "StrategicPlanning"
+        "en": "Strategic Planning"
+      },
+      "comment": {
+        "en": "Strategic Planning is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -36379,8 +37725,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9699",
       "label": {
-        "en": "SustainabilityTool"
+        "en": "Sustainability Tool"
+      },
+      "comment": {
+        "en": "Sustainability Tool is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -36460,25 +37810,8 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
-      "term_id": "MV-10078",
       "label": {
-        "en": "System Architecture"
-      },
-      "comment": {
-        "en": "The structural design framework that defines the components, connections, protocols, and technologies that enable the creation and operation of metaverse environments, encompassing network infrastr..."
-      }
-    },
-    {
-      "id": "systemdesign",
-      "iri": "http://narrativegoldmine.com/metaverse#SystemDesign",
-      "baseIri": "http://narrativegoldmine.com/metaverse",
-      "attributes": [
-        "colored"
-      ],
-      "backgroundColor": "#9C27B0",
-      "domain": "mv",
-      "label": {
-        "en": "SystemDesign"
+        "en": "SystemArchitecture"
       }
     },
     {
@@ -36490,8 +37823,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9701",
       "label": {
-        "en": "SystemIntegration"
+        "en": "System Integration"
+      },
+      "comment": {
+        "en": "System Integration is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -36503,8 +37840,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9702",
       "label": {
-        "en": "SystemSoftware"
+        "en": "System Software"
+      },
+      "comment": {
+        "en": "System Software is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -36618,8 +37959,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9703",
       "label": {
-        "en": "TechnicalArchitecture"
+        "en": "Technical Architecture"
+      },
+      "comment": {
+        "en": "Technical Architecture is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -36631,8 +37976,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9704",
       "label": {
-        "en": "TechnicalArchitectureFramework"
+        "en": "Technical Architecture Framework"
+      },
+      "comment": {
+        "en": "Technical Architecture Framework is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -36687,8 +38036,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9707",
       "label": {
-        "en": "TechnologyEcosystem"
+        "en": "Technology Ecosystem"
+      },
+      "comment": {
+        "en": "Technology Ecosystem is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -36700,8 +38053,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9708",
       "label": {
-        "en": "TechnologyInfrastructure"
+        "en": "Technology Infrastructure"
+      },
+      "comment": {
+        "en": "Technology Infrastructure is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -36713,8 +38070,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9709",
       "label": {
-        "en": "TechnologyStack"
+        "en": "Technology Stack"
+      },
+      "comment": {
+        "en": "Technology Stack is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -36790,8 +38151,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9711",
       "label": {
-        "en": "TestingInfrastructure"
+        "en": "Testing Infrastructure"
+      },
+      "comment": {
+        "en": "Testing Infrastructure is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -36956,8 +38321,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9712",
       "label": {
         "en": "Tokenomics"
+      },
+      "comment": {
+        "en": "Tokenomics is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -36969,8 +38338,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9713",
       "label": {
-        "en": "TourismIndustry"
+        "en": "Tourism Industry"
+      },
+      "comment": {
+        "en": "Tourism Industry is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -36999,8 +38372,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9714",
       "label": {
-        "en": "TrackingHardware"
+        "en": "Tracking Hardware"
+      },
+      "comment": {
+        "en": "Tracking Hardware is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -37403,8 +38780,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9715",
       "label": {
-        "en": "UserEducation"
+        "en": "User Education"
+      },
+      "comment": {
+        "en": "User Education is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -37416,8 +38797,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9716",
       "label": {
-        "en": "UserInterface"
+        "en": "User Interface"
+      },
+      "comment": {
+        "en": "User Interface is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -37480,8 +38865,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9717",
       "label": {
-        "en": "UserSafety"
+        "en": "User Safety"
+      },
+      "comment": {
+        "en": "User Safety is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -37544,8 +38933,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9718",
       "label": {
-        "en": "VFXTools"
+        "en": "V F X Tools"
+      },
+      "comment": {
+        "en": "V F X Tools is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -37574,8 +38967,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9719",
       "label": {
-        "en": "VRPsychology"
+        "en": "V R Psychology"
+      },
+      "comment": {
+        "en": "V R Psychology is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -37927,12 +39324,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
-      "term_id": "MV-3017",
+      "term_id": "MV-9720",
       "label": {
-        "en": "VirtualEconomy"
+        "en": "Virtual Economy"
       },
       "comment": {
-        "en": "A component of the metaverse ecosystem."
+        "en": "Virtual Economy is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -38046,8 +39443,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9721",
       "label": {
-        "en": "VirtualEvent"
+        "en": "Virtual Event"
+      },
+      "comment": {
+        "en": "Virtual Event is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -38076,8 +39477,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9722",
       "label": {
-        "en": "VirtualExperience"
+        "en": "Virtual Experience"
+      },
+      "comment": {
+        "en": "Virtual Experience is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -38514,8 +39919,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9723",
       "label": {
-        "en": "VirtualRealityApplications"
+        "en": "Virtual Reality Applications"
+      },
+      "comment": {
+        "en": "Virtual Reality Applications is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -38527,8 +39936,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9724",
       "label": {
-        "en": "VirtualRealityPlatform"
+        "en": "Virtual Reality Platform"
+      },
+      "comment": {
+        "en": "Virtual Reality Platform is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -38778,8 +40191,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9725",
       "label": {
-        "en": "VirtualWorkspace"
+        "en": "Virtual Workspace"
+      },
+      "comment": {
+        "en": "Virtual Workspace is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -38927,8 +40344,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9726",
       "label": {
-        "en": "VisualEffects"
+        "en": "Visual Effects"
+      },
+      "comment": {
+        "en": "Visual Effects is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -39034,7 +40455,7 @@
       }
     },
     {
-      "id": "mv-vrcontrollers",
+      "id": "vrcontrollers",
       "iri": "http://narrativegoldmine.com/metaverse#VrControllers",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -39144,8 +40565,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9727",
       "label": {
-        "en": "WebStandards"
+        "en": "Web Standards"
+      },
+      "comment": {
+        "en": "Web Standards is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -39225,8 +40650,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9728",
       "label": {
-        "en": "WorkforceDevelopment"
+        "en": "Workforce Development"
+      },
+      "comment": {
+        "en": "Workforce Development is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -39306,8 +40735,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9729",
       "label": {
-        "en": "XRFramework"
+        "en": "X R Framework"
+      },
+      "comment": {
+        "en": "X R Framework is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -39319,8 +40752,12 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9730",
       "label": {
-        "en": "XRHardware"
+        "en": "X R Hardware"
+      },
+      "comment": {
+        "en": "X R Hardware is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
@@ -39332,12 +40769,16 @@
       ],
       "backgroundColor": "#9C27B0",
       "domain": "mv",
+      "term_id": "MV-9731",
       "label": {
-        "en": "XRTechnicalStandard"
+        "en": "X R Technical Standard"
+      },
+      "comment": {
+        "en": "X R Technical Standard is a concept within the metaverse domain. Further enrichment pending."
       }
     },
     {
-      "id": "xraccessibilitystandards",
+      "id": "mv-xraccessibilitystandards",
       "iri": "http://narrativegoldmine.com/metaverse#XrAccessibilityStandards",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -39354,7 +40795,7 @@
       }
     },
     {
-      "id": "mv-xrdevice",
+      "id": "xrdevice",
       "iri": "http://narrativegoldmine.com/metaverse#XrDevice",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -39388,7 +40829,7 @@
       }
     },
     {
-      "id": "mv-xrheadset",
+      "id": "xrheadset",
       "iri": "http://narrativegoldmine.com/metaverse#XrHeadset",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -39405,7 +40846,7 @@
       }
     },
     {
-      "id": "xrmeetingspace",
+      "id": "mv-xrmeetingspace",
       "iri": "http://narrativegoldmine.com/metaverse#XrMeetingSpace",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -39422,7 +40863,7 @@
       }
     },
     {
-      "id": "xrruntimeenvironment",
+      "id": "mv-xrruntimeenvironment",
       "iri": "http://narrativegoldmine.com/metaverse#XrRuntimeEnvironment",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -40064,6 +41505,7 @@
       ],
       "backgroundColor": "#808080",
       "domain": "unknown",
+      "term_id": "ONT-9001",
       "label": {
         "en": "Domain"
       }
@@ -40231,24 +41673,6 @@
       }
     },
     {
-      "id": "ngm-naturallanguageprocessing",
-      "iri": "http://narrativegoldmine.com/ontology#Naturallanguageprocessing",
-      "baseIri": "http://narrativegoldmine.com/ontology",
-      "attributes": [
-        "external",
-        "colored"
-      ],
-      "backgroundColor": "#808080",
-      "domain": "unknown",
-      "term_id": "NGM-7017",
-      "label": {
-        "en": "NaturalLanguageProcessing"
-      },
-      "comment": {
-        "en": "Natural Language Processing (NLP) is a subfield of artificial intelligence that studies the relationship between computers and human language, enabling machines to understand, interpret, and genera..."
-      }
-    },
-    {
       "id": "newcastleaiandhealthinnovation",
       "iri": "http://narrativegoldmine.com/ontology#NewcastleAIAndHealthInnovation",
       "baseIri": "http://narrativegoldmine.com/ontology",
@@ -40300,6 +41724,21 @@
       },
       "comment": {
         "en": "The collaborative innovation corridor spanning Manchester, Leeds, Liverpool, Sheffield, and Newcastle, forming the Northern Powerhouse technology ecosystem."
+      }
+    },
+    {
+      "id": "ngm-owlthing",
+      "iri": "http://narrativegoldmine.com/ontology#OwlThing",
+      "baseIri": "http://narrativegoldmine.com/ontology",
+      "attributes": [
+        "external",
+        "colored"
+      ],
+      "backgroundColor": "#808080",
+      "domain": "unknown",
+      "term_id": "ONT-9002",
+      "label": {
+        "en": "OwlThing"
       }
     },
     {
@@ -40555,7 +41994,7 @@
       }
     },
     {
-      "id": "owlthing",
+      "id": "ngm-owlthing",
       "iri": "http://narrativegoldmine.com/ontology#owlThing",
       "baseIri": "http://narrativegoldmine.com/ontology",
       "attributes": [
@@ -40564,8 +42003,12 @@
       ],
       "backgroundColor": "#808080",
       "domain": "unknown",
+      "term_id": "NGM-9501",
       "label": {
-        "en": "owlThing"
+        "en": "owl Thing"
+      },
+      "comment": {
+        "en": "owl Thing is a concept within the ontology domain. Further enrichment pending."
       }
     },
     {
@@ -40696,8 +42139,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9501",
       "label": {
-        "en": "BayesFilter"
+        "en": "Bayes Filter"
+      },
+      "comment": {
+        "en": "Bayes Filter is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -40845,8 +42292,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9502",
       "label": {
-        "en": "ComplianceControl"
+        "en": "Compliance Control"
+      },
+      "comment": {
+        "en": "Compliance Control is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -40858,8 +42309,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9503",
       "label": {
-        "en": "ConceptualHierarchy"
+        "en": "Conceptual Hierarchy"
+      },
+      "comment": {
+        "en": "Conceptual Hierarchy is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -40871,8 +42326,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9504",
       "label": {
-        "en": "ControlAlgorithm"
+        "en": "Control Algorithm"
+      },
+      "comment": {
+        "en": "Control Algorithm is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -41088,8 +42547,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9505",
       "label": {
-        "en": "DomainOntology"
+        "en": "Domain Ontology"
+      },
+      "comment": {
+        "en": "Domain Ontology is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -41199,8 +42662,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9507",
       "label": {
-        "en": "ExteroceptiveSensor"
+        "en": "Exteroceptive Sensor"
+      },
+      "comment": {
+        "en": "Exteroceptive Sensor is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -41344,8 +42811,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9509",
       "label": {
-        "en": "GraphSearch"
+        "en": "Graph Search"
+      },
+      "comment": {
+        "en": "Graph Search is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -41357,8 +42828,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9510",
       "label": {
-        "en": "GroundRobot"
+        "en": "Ground Robot"
+      },
+      "comment": {
+        "en": "Ground Robot is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -41404,8 +42879,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9511",
       "label": {
-        "en": "HumanFactors"
+        "en": "Human Factors"
+      },
+      "comment": {
+        "en": "Human Factors is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -41451,8 +42930,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9512",
       "label": {
-        "en": "HybridRobot"
+        "en": "Hybrid Robot"
+      },
+      "comment": {
+        "en": "Hybrid Robot is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -41464,8 +42947,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9513",
       "label": {
-        "en": "HydraulicActuator"
+        "en": "Hydraulic Actuator"
+      },
+      "comment": {
+        "en": "Hydraulic Actuator is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -41630,8 +43117,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9514",
       "label": {
-        "en": "InteractionControl"
+        "en": "Interaction Control"
+      },
+      "comment": {
+        "en": "Interaction Control is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -41728,8 +43219,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9515",
       "label": {
-        "en": "KinematicElement"
+        "en": "Kinematic Element"
+      },
+      "comment": {
+        "en": "Kinematic Element is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -41741,8 +43236,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9516",
       "label": {
         "en": "Kinematics"
+      },
+      "comment": {
+        "en": "Kinematics is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -41831,8 +43330,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9519",
       "label": {
         "en": "Lidar"
+      },
+      "comment": {
+        "en": "Lidar is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -42065,8 +43568,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9520",
       "label": {
-        "en": "MechanicalComponent"
+        "en": "Mechanical Component"
+      },
+      "comment": {
+        "en": "Mechanical Component is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -42652,8 +44159,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9522",
       "label": {
-        "en": "RB1002closedloopcontrol"
+        "en": "R B 1002 closedloopcontrol"
+      },
+      "comment": {
+        "en": "R B 1002 closedloopcontrol is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -42665,8 +44176,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9523",
       "label": {
-        "en": "RB1013localization"
+        "en": "R B 1013 localization"
+      },
+      "comment": {
+        "en": "R B 1013 localization is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -42678,8 +44193,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9524",
       "label": {
-        "en": "RB1016pathplanning"
+        "en": "R B 1016 pathplanning"
+      },
+      "comment": {
+        "en": "R B 1016 pathplanning is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -42725,8 +44244,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9525",
       "label": {
-        "en": "ReactiveControl"
+        "en": "Reactive Control"
+      },
+      "comment": {
+        "en": "Reactive Control is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -42789,8 +44312,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9526",
       "label": {
-        "en": "RigidBody"
+        "en": "Rigid Body"
+      },
+      "comment": {
+        "en": "Rigid Body is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -42853,8 +44380,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9527",
       "label": {
-        "en": "RobotActuator"
+        "en": "Robot Actuator"
+      },
+      "comment": {
+        "en": "Robot Actuator is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -43029,8 +44560,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9529",
       "label": {
-        "en": "RobotStandard"
+        "en": "Robot Standard"
+      },
+      "comment": {
+        "en": "Robot Standard is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -43229,8 +44764,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9530",
       "label": {
-        "en": "ServoControl"
+        "en": "Servo Control"
+      },
+      "comment": {
+        "en": "Servo Control is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -43446,8 +44985,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9531",
       "label": {
-        "en": "StructuralMember"
+        "en": "Structural Member"
+      },
+      "comment": {
+        "en": "Structural Member is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -43527,8 +45070,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9532",
       "label": {
-        "en": "TaxonomicFramework"
+        "en": "Taxonomic Framework"
+      },
+      "comment": {
+        "en": "Taxonomic Framework is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -43783,8 +45330,12 @@
       ],
       "backgroundColor": "#FF9800",
       "domain": "rb",
+      "term_id": "RB-9536",
       "label": {
-        "en": "WheeledRobot"
+        "en": "Wheeled Robot"
+      },
+      "comment": {
+        "en": "Wheeled Robot is a concept within the robotics domain. Further enrichment pending."
       }
     },
     {
@@ -44850,6 +46401,7 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9001",
       "label": {
         "en": "3DReconstruction"
       }
@@ -44910,6 +46462,7 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9003",
       "label": {
         "en": "AugmentedReality"
       }
@@ -44953,6 +46506,7 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9005",
       "label": {
         "en": "BlockchainApplication"
       }
@@ -44983,6 +46537,7 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9006",
       "label": {
         "en": "Collaboration"
       }
@@ -44996,6 +46551,7 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9007",
       "label": {
         "en": "CollaborationPlatform"
       }
@@ -45015,6 +46571,20 @@
       },
       "comment": {
         "en": "**Collaborative Document Editing** - Real-time or asynchronous shared editing technology enabling multiple distributed users to simultaneously create, modify, and comment on digital documents with ..."
+      }
+    },
+    {
+      "id": "collaborativetechnology",
+      "iri": "http://narrativegoldmine.com/telecollaboration#CollaborativeTechnology",
+      "baseIri": "http://narrativegoldmine.com/telecollaboration",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#00BCD4",
+      "domain": "tc",
+      "term_id": "TC-9008",
+      "label": {
+        "en": "CollaborativeTechnology"
       }
     },
     {
@@ -45043,6 +46613,7 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9009",
       "label": {
         "en": "ConvergenceConcept"
       }
@@ -45056,6 +46627,7 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9010",
       "label": {
         "en": "CrossDomainBridge"
       }
@@ -45095,6 +46667,20 @@
       }
     },
     {
+      "id": "digitalinfrastructure",
+      "iri": "http://narrativegoldmine.com/telecollaboration#DigitalInfrastructure",
+      "baseIri": "http://narrativegoldmine.com/telecollaboration",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#00BCD4",
+      "domain": "tc",
+      "term_id": "TC-9011",
+      "label": {
+        "en": "DigitalInfrastructure"
+      }
+    },
+    {
       "id": "digitaltwin",
       "iri": "http://narrativegoldmine.com/telecollaboration#DigitalTwin",
       "baseIri": "http://narrativegoldmine.com/telecollaboration",
@@ -45103,6 +46689,7 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9012",
       "label": {
         "en": "DigitalTwin"
       }
@@ -45133,6 +46720,7 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9013",
       "label": {
         "en": "DistributedWork"
       }
@@ -45197,8 +46785,12 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9503",
       "label": {
-        "en": "LanguageTranslation"
+        "en": "Language Translation"
+      },
+      "comment": {
+        "en": "Language Translation is a concept within the telecollaboration domain. Further enrichment pending."
       }
     },
     {
@@ -45227,8 +46819,12 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9504",
       "label": {
-        "en": "MediaTheory"
+        "en": "Media Theory"
+      },
+      "comment": {
+        "en": "Media Theory is a concept within the telecollaboration domain. Further enrichment pending."
       }
     },
     {
@@ -45240,8 +46836,40 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9505",
       "label": {
-        "en": "MetaverseApplication"
+        "en": "Metaverse Application"
+      },
+      "comment": {
+        "en": "Metaverse Application is a concept within the telecollaboration domain. Further enrichment pending."
+      }
+    },
+    {
+      "id": "metaversetechnology",
+      "iri": "http://narrativegoldmine.com/telecollaboration#MetaverseTechnology",
+      "baseIri": "http://narrativegoldmine.com/telecollaboration",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#00BCD4",
+      "domain": "tc",
+      "term_id": "TC-9015",
+      "label": {
+        "en": "MetaverseTechnology"
+      }
+    },
+    {
+      "id": "networkinfrastructure",
+      "iri": "http://narrativegoldmine.com/telecollaboration#NetworkInfrastructure",
+      "baseIri": "http://narrativegoldmine.com/telecollaboration",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#00BCD4",
+      "domain": "tc",
+      "term_id": "TC-9016",
+      "label": {
+        "en": "NetworkInfrastructure"
       }
     },
     {
@@ -45279,6 +46907,20 @@
       }
     },
     {
+      "id": "networkingstandard",
+      "iri": "http://narrativegoldmine.com/telecollaboration#NetworkingStandard",
+      "baseIri": "http://narrativegoldmine.com/telecollaboration",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#00BCD4",
+      "domain": "tc",
+      "term_id": "TC-9017",
+      "label": {
+        "en": "NetworkingStandard"
+      }
+    },
+    {
       "id": "neuralradiancefields",
       "iri": "http://narrativegoldmine.com/telecollaboration#NeuralRadianceFields",
       "baseIri": "http://narrativegoldmine.com/telecollaboration",
@@ -45304,8 +46946,12 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9506",
       "label": {
-        "en": "NeuralRendering"
+        "en": "Neural Rendering"
+      },
+      "comment": {
+        "en": "Neural Rendering is a concept within the telecollaboration domain. Further enrichment pending."
       }
     },
     {
@@ -45317,8 +46963,12 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9507",
       "label": {
-        "en": "OrganisationalTheory"
+        "en": "Organisational Theory"
+      },
+      "comment": {
+        "en": "Organisational Theory is a concept within the telecollaboration domain. Further enrichment pending."
       }
     },
     {
@@ -45330,8 +46980,12 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9508",
       "label": {
-        "en": "PerceptualExperience"
+        "en": "Perceptual Experience"
+      },
+      "comment": {
+        "en": "Perceptual Experience is a concept within the telecollaboration domain. Further enrichment pending."
       }
     },
     {
@@ -45360,8 +47014,12 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9509",
       "label": {
-        "en": "PsychologicalPhenomenon"
+        "en": "Psychological Phenomenon"
+      },
+      "comment": {
+        "en": "Psychological Phenomenon is a concept within the telecollaboration domain. Further enrichment pending."
       }
     },
     {
@@ -45390,6 +47048,7 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9018",
       "label": {
         "en": "RealTimeRenderingPipeline"
       }
@@ -45420,8 +47079,12 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9510",
       "label": {
-        "en": "RemoteCommunication"
+        "en": "Remote Communication"
+      },
+      "comment": {
+        "en": "Remote Communication is a concept within the telecollaboration domain. Further enrichment pending."
       }
     },
     {
@@ -45433,8 +47096,12 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9511",
       "label": {
-        "en": "RoboticSystem"
+        "en": "Robotic System"
+      },
+      "comment": {
+        "en": "Robotic System is a concept within the telecollaboration domain. Further enrichment pending."
       }
     },
     {
@@ -45452,6 +47119,20 @@
       },
       "comment": {
         "en": "\"The projection of human presence into remote physical locations through mobile robotic platforms equipped with cameras, displays, microphones, and speakers, enabling remote operators to navigate e..."
+      }
+    },
+    {
+      "id": "roboticsapplication",
+      "iri": "http://narrativegoldmine.com/telecollaboration#RoboticsApplication",
+      "baseIri": "http://narrativegoldmine.com/telecollaboration",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#00BCD4",
+      "domain": "tc",
+      "term_id": "TC-9020",
+      "label": {
+        "en": "RoboticsApplication"
       }
     },
     {
@@ -45613,8 +47294,12 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9512",
       "label": {
-        "en": "TELE001telepresence"
+        "en": "T E L E 001 telepresence"
+      },
+      "comment": {
+        "en": "T E L E 001 telepresence is a concept within the telecollaboration domain. Further enrichment pending."
       }
     },
     {
@@ -45626,6 +47311,7 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9022",
       "label": {
         "en": "TELE002telecollaboration"
       }
@@ -45639,6 +47325,7 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9023",
       "label": {
         "en": "TELE020virtualrealitytelepresence"
       }
@@ -45652,8 +47339,12 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9513",
       "label": {
-        "en": "TELE050neuralrenderingtelepresence"
+        "en": "T E L E 050 neuralrenderingtelepresence"
+      },
+      "comment": {
+        "en": "T E L E 050 neuralrenderingtelepresence is a concept within the telecollaboration domain. Further enrichment pending."
       }
     },
     {
@@ -45810,6 +47501,20 @@
       }
     },
     {
+      "id": "virtualcollaboration",
+      "iri": "http://narrativegoldmine.com/telecollaboration#VirtualCollaboration",
+      "baseIri": "http://narrativegoldmine.com/telecollaboration",
+      "attributes": [
+        "colored"
+      ],
+      "backgroundColor": "#00BCD4",
+      "domain": "tc",
+      "term_id": "TC-9026",
+      "label": {
+        "en": "VirtualCollaboration"
+      }
+    },
+    {
       "id": "virtualenvironment",
       "iri": "http://narrativegoldmine.com/telecollaboration#VirtualEnvironment",
       "baseIri": "http://narrativegoldmine.com/telecollaboration",
@@ -45865,6 +47570,7 @@
       ],
       "backgroundColor": "#00BCD4",
       "domain": "tc",
+      "term_id": "TC-9027",
       "label": {
         "en": "VirtualReality"
       }
@@ -45927,7 +47633,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-ai-airiskmanagement-ai-riskmanagement",
+      "id": "subclassof-airiskmanagement-ai-riskmanagement",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46091,10 +47797,6 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-reinforcementlearningalgorithm-ai-machinelearning",
-      "type": "rdfs:subClassOf"
-    },
-    {
       "id": "subclassof-machinelearningtechnique-ai-machinelearning",
       "type": "rdfs:subClassOf"
     },
@@ -46143,19 +47845,19 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-humanpreference-ai-aigovernance",
+      "id": "subclassof-humanpreference-aigovernance",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-aiengineering-ai-aigovernance",
+      "id": "subclassof-aiengineering-aigovernance",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-safetymeasure-ai-aigovernance",
+      "id": "subclassof-safetymeasure-aigovernance",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-runtimeinspection-ai-aigovernance",
+      "id": "subclassof-runtimeinspection-aigovernance",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46407,7 +48109,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-ai-aisecurity-ai-cybersecurity",
+      "id": "subclassof-aisecurity-ai-cybersecurity",
       "type": "rdfs:subClassOf"
     },
     {
@@ -46639,7 +48341,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-bc-publickeycryptography-blockchainentity",
+      "id": "subclassof-publickeycryptography-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
@@ -47055,7 +48757,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-bc-publickeycryptography-cryptographicprimitive",
+      "id": "subclassof-publickeycryptography-cryptographicprimitive",
       "type": "rdfs:subClassOf"
     },
     {
@@ -47619,10 +49321,6 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-humancomputerinteraction-metaversetechnology",
-      "type": "rdfs:subClassOf"
-    },
-    {
       "id": "subclassof-educationaltechnology-metaversetechnology",
       "type": "rdfs:subClassOf"
     },
@@ -47651,7 +49349,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-sharedarexperiences-augmentedreality",
+      "id": "subclassof-sharedarexperiences-augmentedreality",
       "type": "rdfs:subClassOf"
     },
     {
@@ -47799,11 +49497,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-referencearchitecture-softwarearchitecture",
+      "id": "subclassof-referencearchitecture-mv-softwarearchitecture",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-serviceorientedarchitecture-softwarearchitecture",
+      "id": "subclassof-serviceorientedarchitecture-mv-softwarearchitecture",
       "type": "rdfs:subClassOf"
     },
     {
@@ -47891,7 +49589,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-separationofpowers-mv-daogovernance",
+      "id": "subclassof-mv-separationofpowers-mv-daogovernance",
       "type": "rdfs:subClassOf"
     },
     {
@@ -47940,10 +49638,6 @@
     },
     {
       "id": "subclassof-mv-socialvr-virtualrealityplatform",
-      "type": "rdfs:subClassOf"
-    },
-    {
-      "id": "subclassof-softwarearchitecture-systemdesign",
       "type": "rdfs:subClassOf"
     },
     {
@@ -47999,11 +49693,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-spatialinteraction-humancomputerinteraction",
+      "id": "subclassof-spatialinteraction-mv-humancomputerinteraction",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-emotionawareinteraction-humancomputerinteraction",
+      "id": "subclassof-emotionawareinteraction-mv-humancomputerinteraction",
       "type": "rdfs:subClassOf"
     },
     {
@@ -48120,18 +49814,6 @@
     },
     {
       "id": "subclassof-avatarwearable-mv-digitalasset",
-      "type": "rdfs:subClassOf"
-    },
-    {
-      "id": "subclassof-mv-systemarchitecture-metaverseinfrastructure",
-      "type": "rdfs:subClassOf"
-    },
-    {
-      "id": "subclassof-mv-4005-metaverseinfrastructure",
-      "type": "rdfs:subClassOf"
-    },
-    {
-      "id": "subclassof-globalmetaverseoperations-metaverseinfrastructure",
       "type": "rdfs:subClassOf"
     },
     {
@@ -48467,15 +50149,15 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-vrcontrollers-mv-xrhardware",
+      "id": "subclassof-vrcontrollers-mv-xrhardware",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-xrdevice-mv-xrhardware",
+      "id": "subclassof-xrdevice-mv-xrhardware",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-xrheadset-mv-xrhardware",
+      "id": "subclassof-xrheadset-mv-xrhardware",
       "type": "rdfs:subClassOf"
     },
     {
@@ -48503,11 +50185,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-xrmeetingspace-virtualcollaboration",
+      "id": "subclassof-mv-xrmeetingspace-virtualcollaboration",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-xrruntimeenvironment-runtimeenvironment",
+      "id": "subclassof-mv-xrruntimeenvironment-runtimeenvironment",
       "type": "rdfs:subClassOf"
     },
     {
@@ -48555,6 +50237,14 @@
       "type": "rdfs:subClassOf"
     },
     {
+      "id": "subclassof-mv-4005-metaverseinfrastructure",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "subclassof-globalmetaverseoperations-metaverseinfrastructure",
+      "type": "rdfs:subClassOf"
+    },
+    {
       "id": "subclassof-mv-4005-openstandard",
       "type": "rdfs:subClassOf"
     },
@@ -48571,7 +50261,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-xraccessibilitystandards-accessibility",
+      "id": "subclassof-mv-xraccessibilitystandards-accessibility",
       "type": "rdfs:subClassOf"
     },
     {
@@ -48587,7 +50277,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-c2pastandard-technicalstandard",
+      "id": "subclassof-mv-c2pastandard-technicalstandard",
       "type": "rdfs:subClassOf"
     },
     {
@@ -48603,7 +50293,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-isostandards-technicalstandard",
+      "id": "subclassof-mv-isostandards-technicalstandard",
       "type": "rdfs:subClassOf"
     },
     {
@@ -48611,7 +50301,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-bimvirtualmodel-3dmodel",
+      "id": "subclassof-bimvirtualmodel-3dmodel",
       "type": "rdfs:subClassOf"
     },
     {
@@ -48831,7 +50521,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-digitalmoney-financialinstruments",
+      "id": "subclassof-digitalmoney-mv-financialinstruments",
       "type": "rdfs:subClassOf"
     },
     {
@@ -48935,7 +50625,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-gltfstandard-3dassetstandard",
+      "id": "subclassof-gltfstandard-3dassetstandard",
       "type": "rdfs:subClassOf"
     },
     {
@@ -48951,7 +50641,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-hanimstandard-animationstandard",
+      "id": "subclassof-hanimstandard-animationstandard",
       "type": "rdfs:subClassOf"
     },
     {
@@ -48959,11 +50649,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-ieeep2733standards-xrtechnicalstandard",
+      "id": "subclassof-mv-ieeep2733standards-xrtechnicalstandard",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-ieee7000standard-ethicaldesignstandard",
+      "id": "subclassof-mv-ieee7000standard-ethicaldesignstandard",
       "type": "rdfs:subClassOf"
     },
     {
@@ -49007,7 +50697,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-infraredledilluminator-infraredilluminator",
+      "id": "subclassof-infraredledilluminator-infraredilluminator",
       "type": "rdfs:subClassOf"
     },
     {
@@ -49031,7 +50721,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-lidarscanning-spatialmappingtechnology",
+      "id": "subclassof-lidarscanning-spatialmappingtechnology",
       "type": "rdfs:subClassOf"
     },
     {
@@ -49044,10 +50734,6 @@
     },
     {
       "id": "subclassof-ai-machinelearninginfrastructure-ai-computinginfrastructure",
-      "type": "rdfs:subClassOf"
-    },
-    {
-      "id": "subclassof-ai-machinelearningpipeline-mlops",
       "type": "rdfs:subClassOf"
     },
     {
@@ -49135,11 +50821,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-nearestneighborsearch-searchalgorithm",
+      "id": "subclassof-mv-nearestneighborsearch-mv-searchalgorithm",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-networkfunctionvirtualization-networkarchitecture",
+      "id": "subclassof-networkfunctionvirtualization-mv-networkarchitecture",
       "type": "rdfs:subClassOf"
     },
     {
@@ -49199,7 +50885,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-ngm-technologydomain-owlthing",
+      "id": "subclassof-ngm-technologydomain-ngm-owlthing",
       "type": "rdfs:subClassOf"
     },
     {
@@ -49762,8 +51448,8 @@
       ]
     },
     {
-      "id": "subclassof-ai-airiskmanagement-ai-riskmanagement",
-      "domain": "ai-airiskmanagement",
+      "id": "subclassof-airiskmanagement-ai-riskmanagement",
+      "domain": "airiskmanagement",
       "range": "ai-riskmanagement",
       "attributes": [
         "anonymous",
@@ -50131,15 +51817,6 @@
       ]
     },
     {
-      "id": "subclassof-reinforcementlearningalgorithm-ai-machinelearning",
-      "domain": "reinforcementlearningalgorithm",
-      "range": "ai-machinelearning",
-      "attributes": [
-        "anonymous",
-        "object"
-      ]
-    },
-    {
       "id": "subclassof-machinelearningtechnique-ai-machinelearning",
       "domain": "machinelearningtechnique",
       "range": "ai-machinelearning",
@@ -50248,36 +51925,36 @@
       ]
     },
     {
-      "id": "subclassof-humanpreference-ai-aigovernance",
+      "id": "subclassof-humanpreference-aigovernance",
       "domain": "humanpreference",
-      "range": "ai-aigovernance",
+      "range": "aigovernance",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-aiengineering-ai-aigovernance",
+      "id": "subclassof-aiengineering-aigovernance",
       "domain": "aiengineering",
-      "range": "ai-aigovernance",
+      "range": "aigovernance",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-safetymeasure-ai-aigovernance",
+      "id": "subclassof-safetymeasure-aigovernance",
       "domain": "safetymeasure",
-      "range": "ai-aigovernance",
+      "range": "aigovernance",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-runtimeinspection-ai-aigovernance",
+      "id": "subclassof-runtimeinspection-aigovernance",
       "domain": "runtimeinspection",
-      "range": "ai-aigovernance",
+      "range": "aigovernance",
       "attributes": [
         "anonymous",
         "object"
@@ -50842,8 +52519,8 @@
       ]
     },
     {
-      "id": "subclassof-ai-aisecurity-ai-cybersecurity",
-      "domain": "ai-aisecurity",
+      "id": "subclassof-aisecurity-ai-cybersecurity",
+      "domain": "aisecurity",
       "range": "ai-cybersecurity",
       "attributes": [
         "anonymous",
@@ -51364,8 +53041,8 @@
       ]
     },
     {
-      "id": "subclassof-bc-publickeycryptography-blockchainentity",
-      "domain": "bc-publickeycryptography",
+      "id": "subclassof-publickeycryptography-blockchainentity",
+      "domain": "publickeycryptography",
       "range": "blockchainentity",
       "attributes": [
         "anonymous",
@@ -52300,8 +53977,8 @@
       ]
     },
     {
-      "id": "subclassof-bc-publickeycryptography-cryptographicprimitive",
-      "domain": "bc-publickeycryptography",
+      "id": "subclassof-publickeycryptography-cryptographicprimitive",
+      "domain": "publickeycryptography",
       "range": "cryptographicprimitive",
       "attributes": [
         "anonymous",
@@ -53569,15 +55246,6 @@
       ]
     },
     {
-      "id": "subclassof-humancomputerinteraction-metaversetechnology",
-      "domain": "humancomputerinteraction",
-      "range": "metaversetechnology",
-      "attributes": [
-        "anonymous",
-        "object"
-      ]
-    },
-    {
       "id": "subclassof-educationaltechnology-metaversetechnology",
       "domain": "educationaltechnology",
       "range": "metaversetechnology",
@@ -53641,8 +55309,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-sharedarexperiences-augmentedreality",
-      "domain": "mv-sharedarexperiences",
+      "id": "subclassof-sharedarexperiences-augmentedreality",
+      "domain": "sharedarexperiences",
       "range": "augmentedreality",
       "attributes": [
         "anonymous",
@@ -53974,18 +55642,18 @@
       ]
     },
     {
-      "id": "subclassof-referencearchitecture-softwarearchitecture",
+      "id": "subclassof-referencearchitecture-mv-softwarearchitecture",
       "domain": "referencearchitecture",
-      "range": "softwarearchitecture",
+      "range": "mv-softwarearchitecture",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-serviceorientedarchitecture-softwarearchitecture",
+      "id": "subclassof-serviceorientedarchitecture-mv-softwarearchitecture",
       "domain": "serviceorientedarchitecture",
-      "range": "softwarearchitecture",
+      "range": "mv-softwarearchitecture",
       "attributes": [
         "anonymous",
         "object"
@@ -54181,8 +55849,8 @@
       ]
     },
     {
-      "id": "subclassof-separationofpowers-mv-daogovernance",
-      "domain": "separationofpowers",
+      "id": "subclassof-mv-separationofpowers-mv-daogovernance",
+      "domain": "mv-separationofpowers",
       "range": "mv-daogovernance",
       "attributes": [
         "anonymous",
@@ -54292,15 +55960,6 @@
       "id": "subclassof-mv-socialvr-virtualrealityplatform",
       "domain": "mv-socialvr",
       "range": "virtualrealityplatform",
-      "attributes": [
-        "anonymous",
-        "object"
-      ]
-    },
-    {
-      "id": "subclassof-softwarearchitecture-systemdesign",
-      "domain": "softwarearchitecture",
-      "range": "systemdesign",
       "attributes": [
         "anonymous",
         "object"
@@ -54424,18 +56083,18 @@
       ]
     },
     {
-      "id": "subclassof-spatialinteraction-humancomputerinteraction",
+      "id": "subclassof-spatialinteraction-mv-humancomputerinteraction",
       "domain": "spatialinteraction",
-      "range": "humancomputerinteraction",
+      "range": "mv-humancomputerinteraction",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-emotionawareinteraction-humancomputerinteraction",
+      "id": "subclassof-emotionawareinteraction-mv-humancomputerinteraction",
       "domain": "emotionawareinteraction",
-      "range": "humancomputerinteraction",
+      "range": "mv-humancomputerinteraction",
       "attributes": [
         "anonymous",
         "object"
@@ -54697,33 +56356,6 @@
       "id": "subclassof-avatarwearable-mv-digitalasset",
       "domain": "avatarwearable",
       "range": "mv-digitalasset",
-      "attributes": [
-        "anonymous",
-        "object"
-      ]
-    },
-    {
-      "id": "subclassof-mv-systemarchitecture-metaverseinfrastructure",
-      "domain": "mv-systemarchitecture",
-      "range": "metaverseinfrastructure",
-      "attributes": [
-        "anonymous",
-        "object"
-      ]
-    },
-    {
-      "id": "subclassof-mv-4005-metaverseinfrastructure",
-      "domain": "mv-4005",
-      "range": "metaverseinfrastructure",
-      "attributes": [
-        "anonymous",
-        "object"
-      ]
-    },
-    {
-      "id": "subclassof-globalmetaverseoperations-metaverseinfrastructure",
-      "domain": "globalmetaverseoperations",
-      "range": "metaverseinfrastructure",
       "attributes": [
         "anonymous",
         "object"
@@ -55477,8 +57109,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-vrcontrollers-mv-xrhardware",
-      "domain": "mv-vrcontrollers",
+      "id": "subclassof-vrcontrollers-mv-xrhardware",
+      "domain": "vrcontrollers",
       "range": "mv-xrhardware",
       "attributes": [
         "anonymous",
@@ -55486,8 +57118,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-xrdevice-mv-xrhardware",
-      "domain": "mv-xrdevice",
+      "id": "subclassof-xrdevice-mv-xrhardware",
+      "domain": "xrdevice",
       "range": "mv-xrhardware",
       "attributes": [
         "anonymous",
@@ -55495,8 +57127,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-xrheadset-mv-xrhardware",
-      "domain": "mv-xrheadset",
+      "id": "subclassof-xrheadset-mv-xrhardware",
+      "domain": "xrheadset",
       "range": "mv-xrhardware",
       "attributes": [
         "anonymous",
@@ -55558,8 +57190,8 @@
       ]
     },
     {
-      "id": "subclassof-xrmeetingspace-virtualcollaboration",
-      "domain": "xrmeetingspace",
+      "id": "subclassof-mv-xrmeetingspace-virtualcollaboration",
+      "domain": "mv-xrmeetingspace",
       "range": "virtualcollaboration",
       "attributes": [
         "anonymous",
@@ -55567,8 +57199,8 @@
       ]
     },
     {
-      "id": "subclassof-xrruntimeenvironment-runtimeenvironment",
-      "domain": "xrruntimeenvironment",
+      "id": "subclassof-mv-xrruntimeenvironment-runtimeenvironment",
+      "domain": "mv-xrruntimeenvironment",
       "range": "runtimeenvironment",
       "attributes": [
         "anonymous",
@@ -55675,6 +57307,24 @@
       ]
     },
     {
+      "id": "subclassof-mv-4005-metaverseinfrastructure",
+      "domain": "mv-4005",
+      "range": "metaverseinfrastructure",
+      "attributes": [
+        "anonymous",
+        "object"
+      ]
+    },
+    {
+      "id": "subclassof-globalmetaverseoperations-metaverseinfrastructure",
+      "domain": "globalmetaverseoperations",
+      "range": "metaverseinfrastructure",
+      "attributes": [
+        "anonymous",
+        "object"
+      ]
+    },
+    {
       "id": "subclassof-mv-4005-openstandard",
       "domain": "mv-4005",
       "range": "openstandard",
@@ -55711,8 +57361,8 @@
       ]
     },
     {
-      "id": "subclassof-xraccessibilitystandards-accessibility",
-      "domain": "xraccessibilitystandards",
+      "id": "subclassof-mv-xraccessibilitystandards-accessibility",
+      "domain": "mv-xraccessibilitystandards",
       "range": "accessibility",
       "attributes": [
         "anonymous",
@@ -55747,8 +57397,8 @@
       ]
     },
     {
-      "id": "subclassof-c2pastandard-technicalstandard",
-      "domain": "c2pastandard",
+      "id": "subclassof-mv-c2pastandard-technicalstandard",
+      "domain": "mv-c2pastandard",
       "range": "technicalstandard",
       "attributes": [
         "anonymous",
@@ -55783,8 +57433,8 @@
       ]
     },
     {
-      "id": "subclassof-isostandards-technicalstandard",
-      "domain": "isostandards",
+      "id": "subclassof-mv-isostandards-technicalstandard",
+      "domain": "mv-isostandards",
       "range": "technicalstandard",
       "attributes": [
         "anonymous",
@@ -55801,8 +57451,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-bimvirtualmodel-3dmodel",
-      "domain": "mv-bimvirtualmodel",
+      "id": "subclassof-bimvirtualmodel-3dmodel",
+      "domain": "bimvirtualmodel",
       "range": "3dmodel",
       "attributes": [
         "anonymous",
@@ -56296,9 +57946,9 @@
       ]
     },
     {
-      "id": "subclassof-digitalmoney-financialinstruments",
+      "id": "subclassof-digitalmoney-mv-financialinstruments",
       "domain": "digitalmoney",
-      "range": "financialinstruments",
+      "range": "mv-financialinstruments",
       "attributes": [
         "anonymous",
         "object"
@@ -56530,8 +58180,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-gltfstandard-3dassetstandard",
-      "domain": "mv-gltfstandard",
+      "id": "subclassof-gltfstandard-3dassetstandard",
+      "domain": "gltfstandard",
       "range": "3dassetstandard",
       "attributes": [
         "anonymous",
@@ -56566,8 +58216,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-hanimstandard-animationstandard",
-      "domain": "mv-hanimstandard",
+      "id": "subclassof-hanimstandard-animationstandard",
+      "domain": "hanimstandard",
       "range": "animationstandard",
       "attributes": [
         "anonymous",
@@ -56584,8 +58234,8 @@
       ]
     },
     {
-      "id": "subclassof-ieeep2733standards-xrtechnicalstandard",
-      "domain": "ieeep2733standards",
+      "id": "subclassof-mv-ieeep2733standards-xrtechnicalstandard",
+      "domain": "mv-ieeep2733standards",
       "range": "xrtechnicalstandard",
       "attributes": [
         "anonymous",
@@ -56593,8 +58243,8 @@
       ]
     },
     {
-      "id": "subclassof-ieee7000standard-ethicaldesignstandard",
-      "domain": "ieee7000standard",
+      "id": "subclassof-mv-ieee7000standard-ethicaldesignstandard",
+      "domain": "mv-ieee7000standard",
       "range": "ethicaldesignstandard",
       "attributes": [
         "anonymous",
@@ -56692,8 +58342,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-infraredledilluminator-infraredilluminator",
-      "domain": "mv-infraredledilluminator",
+      "id": "subclassof-infraredledilluminator-infraredilluminator",
+      "domain": "infraredledilluminator",
       "range": "infraredilluminator",
       "attributes": [
         "anonymous",
@@ -56746,8 +58396,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-lidarscanning-spatialmappingtechnology",
-      "domain": "mv-lidarscanning",
+      "id": "subclassof-lidarscanning-spatialmappingtechnology",
+      "domain": "lidarscanning",
       "range": "spatialmappingtechnology",
       "attributes": [
         "anonymous",
@@ -56776,15 +58426,6 @@
       "id": "subclassof-ai-machinelearninginfrastructure-ai-computinginfrastructure",
       "domain": "ai-machinelearninginfrastructure",
       "range": "ai-computinginfrastructure",
-      "attributes": [
-        "anonymous",
-        "object"
-      ]
-    },
-    {
-      "id": "subclassof-ai-machinelearningpipeline-mlops",
-      "domain": "ai-machinelearningpipeline",
-      "range": "mlops",
       "attributes": [
         "anonymous",
         "object"
@@ -56980,18 +58621,18 @@
       ]
     },
     {
-      "id": "subclassof-mv-nearestneighborsearch-searchalgorithm",
+      "id": "subclassof-mv-nearestneighborsearch-mv-searchalgorithm",
       "domain": "mv-nearestneighborsearch",
-      "range": "searchalgorithm",
+      "range": "mv-searchalgorithm",
       "attributes": [
         "anonymous",
         "object"
       ]
     },
     {
-      "id": "subclassof-networkfunctionvirtualization-networkarchitecture",
+      "id": "subclassof-networkfunctionvirtualization-mv-networkarchitecture",
       "domain": "networkfunctionvirtualization",
-      "range": "networkarchitecture",
+      "range": "mv-networkarchitecture",
       "attributes": [
         "anonymous",
         "object"
@@ -57124,9 +58765,9 @@
       ]
     },
     {
-      "id": "subclassof-ngm-technologydomain-owlthing",
+      "id": "subclassof-ngm-technologydomain-ngm-owlthing",
       "domain": "ngm-technologydomain",
-      "range": "owlthing",
+      "range": "ngm-owlthing",
       "attributes": [
         "anonymous",
         "object"

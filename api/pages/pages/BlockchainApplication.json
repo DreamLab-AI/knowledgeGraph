@@ -1,0 +1,58 @@
+{
+  "id": "BlockchainApplication",
+  "title": "BlockchainApplication",
+  "content": "- ### OntologyBlock\n  id:: tc9005-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-9005\n\t- domain:: tc\n\t- owl:class:: tc:BlockchainApplication\n\t- public-access:: true\n\n## Definition\n\nBlockchain Applications in telecollaboration leverage distributed ledger technology to provide trustless coordination, immutable audit trails, decentralized identity management, and secure data sharing across organizational boundaries. These systems employ smart contracts on platforms like Ethereum, Hyperledger Fabric, and Polygon to automate collaboration workflows, manage digital rights, and establish verifiable credentials for distributed teams. Key applications include decentralized autonomous organizations (DAOs) for governance-free collaboration, non-fungible tokens (NFTs) for intellectual property tracking, and blockchain-based file systems like IPFS for censorship-resistant content sharing. Modern implementations integrate zero-knowledge proofs for privacy-preserving verification, layer-2 scaling solutions for high-throughput collaboration, and cross-chain bridges for interoperability between blockchain networks. Enterprise telecollaboration platforms utilize permissioned blockchains for consortium-based projects, tokenized incentive systems for contributor recognition, and cryptographic signatures for document authenticity. The convergence of blockchain with decentralized identity (DID) standards enables self-sovereign identity management for secure cross-platform collaboration without centralized authentication providers.\n\n## References\n\n- W3C Decentralized Identifiers Working Group. (2024). \"DID Core Specification.\" https://www.w3.org/TR/did-core/\n- Ethereum Foundation. (2024). \"Smart Contracts for Collaborative Applications.\" https://ethereum.org/\n- Hyperledger Foundation. (2024). \"Enterprise Blockchain for Distributed Teams.\" https://www.hyperledger.org/\n- IEEE Blockchain. (2025). \"Blockchain Standards for Collaboration Platforms.\" https://blockchain.ieee.org/\n- ISO/TC 307. (2024). \"Blockchain and Distributed Ledger Technologies.\" https://www.iso.org/committee/6266604.html",
+  "backlinks": [
+    "TELE-250-blockchain-collaboration"
+  ],
+  "wiki_links": [],
+  "ontology": {
+    "term_id": "TC-9005",
+    "preferred_term": null,
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/telecollaboration#BlockchainApplication",
+    "source_domain": null,
+    "domain": "tc",
+    "domain_full_name": "Telecollaboration",
+    "definition": null,
+    "scope_note": null,
+    "status": null,
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "tc:BlockchainApplication",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: preferred-term",
+        "Missing required property: source-domain",
+        "Missing required property: status",
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

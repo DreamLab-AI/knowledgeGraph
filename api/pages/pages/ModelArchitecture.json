@@ -10,11 +10,11 @@
     "NLPTask"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "TrainingMethod",
-    "Deep Learning",
     "MachineLearning",
-    "NeuralNetworkArchitecture"
+    "Artificial Intelligence",
+    "NeuralNetworkArchitecture",
+    "Deep Learning",
+    "TrainingMethod"
   ],
   "ontology": {
     "term_id": "AI-7000",

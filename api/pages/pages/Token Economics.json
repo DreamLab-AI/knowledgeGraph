@@ -8,12 +8,12 @@
     "Loyalty Token"
   ],
   "wiki_links": [
-    "Governance Token",
-    "Blockchain Entity",
-    "Staking Rewards",
     "Decentralized Finance",
+    "Staking Rewards",
     "Token",
-    "Blockchain Technology"
+    "Blockchain Technology",
+    "Governance Token",
+    "Blockchain Entity"
   ],
   "ontology": {
     "term_id": "BC-0601",

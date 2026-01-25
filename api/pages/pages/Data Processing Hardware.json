@@ -6,17 +6,17 @@
     "Reality Capture System"
   ],
   "wiki_links": [
-    "Immersive Computing",
-    "metaverse",
-    "Computing Infrastructure",
-    "Cooling Systems",
-    "Edge Computing",
-    "High-Bandwidth Memory",
     "Real-Time Rendering",
-    "AI Processing",
-    "Power Infrastructure",
+    "Cooling Systems",
+    "Immersive Computing",
     "GPU Computing",
-    "VR Hardware"
+    "Power Infrastructure",
+    "VR Hardware",
+    "Computing Infrastructure",
+    "metaverse",
+    "High-Bandwidth Memory",
+    "Edge Computing",
+    "AI Processing"
   ],
   "ontology": {
     "term_id": "MV-9839",

@@ -8,15 +8,15 @@
   "wiki_links": [
     "Collaboration Technology",
     "Virtual Meetings",
-    "metaverse",
-    "Remote Work",
     "Real-Time Collaboration",
-    "Spatial Computing",
-    "Remote Communication",
+    "Remote Work",
     "Audio Visual Systems",
-    "User Interface",
+    "metaverse",
     "Network Infrastructure",
-    "Virtual Presence"
+    "User Interface",
+    "Virtual Presence",
+    "Spatial Computing",
+    "Remote Communication"
   ],
   "ontology": {
     "term_id": "MV-9824",

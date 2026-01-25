@@ -1,0 +1,54 @@
+{
+  "id": "Graph Algorithms",
+  "title": "Graph Algorithms",
+  "content": "- ### OntologyBlock\n  id:: ai9511-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9511\n\t- preferred-term:: Graph Algorithms\n\t- source-domain:: ai\n\t- owl:class:: ai:GraphAlgorithms\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Graph Algorithms is a concept within the ai domain. Further enrichment pending.\n\n## Overview\n\nGraph Algorithms represents an abstract concept in the ai ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
+  "backlinks": [
+    "A-Star Algorithm"
+  ],
+  "wiki_links": [
+    "owl:Thing"
+  ],
+  "ontology": {
+    "term_id": "AI-9511",
+    "preferred_term": "Graph Algorithms",
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/ai#GraphAlgorithms",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Graph Algorithms is a concept within the ai domain. Further enrichment pending.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "ai:GraphAlgorithms",
+    "owl_physicality": "abstract",
+    "owl_role": "concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: last-updated",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}

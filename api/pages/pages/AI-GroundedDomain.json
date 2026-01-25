@@ -16,11 +16,11 @@
     "Generative AI"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "Empirical Evaluation",
-    "Performance Metrics",
+    "Theoretical AI",
     "ArtificialIntelligenceDomain",
-    "Theoretical AI"
+    "Artificial Intelligence",
+    "Performance Metrics",
+    "Empirical Evaluation"
   ],
   "ontology": {
     "term_id": "AI-7021",

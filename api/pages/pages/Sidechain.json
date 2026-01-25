@@ -9,17 +9,17 @@
   ],
   "wiki_links": [
     "Polygon PoS",
-    "Blockchain",
-    "Layer 1",
-    "Ronin",
-    "Federated Byzantine Agreement",
     "Cross-Chain Bridge",
+    "Ronin",
     "Rollup",
-    "Scalability Solutions",
+    "State Channel",
     "Gnosis Chain",
+    "Federated Byzantine Agreement",
+    "Layer 1",
     "Liquid Network",
-    "Two-Way Peg",
-    "State Channel"
+    "Blockchain",
+    "Scalability Solutions",
+    "Two-Way Peg"
   ],
   "ontology": {
     "term_id": "BC-8016",

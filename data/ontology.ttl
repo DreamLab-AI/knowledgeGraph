@@ -16,17 +16,17 @@
 # Multi-Domain Ontology - OWL2 DL Turtle Format
 # ==============================================================================
 #
-# Generated: 2026-01-25T20:17:40.864533
-# Total Terms: 1900
+# Generated: 2026-01-25T21:35:21.844918
+# Total Terms: 2241
 #
 # Domain Distribution:
-#   Artificial Intelligence: 294 terms
-#   Blockchain: 316 terms
-#   Robotics: 224 terms
-#   Metaverse: 971 terms
-#   Telecollaboration: 46 terms
+#   Artificial Intelligence: 340 terms
+#   Blockchain: 341 terms
+#   Robotics: 251 terms
+#   Metaverse: 1178 terms
+#   Telecollaboration: 80 terms
 #   Disruptive Technologies: 1 terms
-#   Narrative Gold Mine Core: 42 terms
+#   Narrative Gold Mine Core: 44 terms
 #
 # ==============================================================================
 
@@ -22999,64 +22999,6 @@ ai:ModelExtraction rdfs:subClassOf [
     owl:someValuesFrom ai:ModelInversion
 ] .
 
-# AI Governance
-mv:AIGovernance a owl:Class ;
-    rdfs:label "AI Governance"@en ;
-    rdfs:comment "The system of rules, practices, processes, and organisational structures that guide the responsible development, deployment, and use of artificial intelligence systems throughout their lifecycle, ensuring alignment with ethical principles, legal requirements, risk management frameworks, and stakeholder values whilst promoting accountability, transparency, and continuous improvement."@en ;
-    skos:prefLabel "AI Governance"@en ;
-    dcterms:identifier "AI-0091" ;
-    dcterms:subject "mv" ;
-    dcterms:type "draft" ;
-    rdf:type owl:ConceptClass .
-
-mv:AIGovernance rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:requires ;
-    owl:someValuesFrom mv:HumanOversight
-] .
-
-mv:AIGovernance rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:requires ;
-    owl:someValuesFrom mv:Stakeholderengagement
-] .
-
-mv:AIGovernance rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:requires ;
-    owl:someValuesFrom mv:RiskManagement
-] .
-
-mv:AIGovernance rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:enables ;
-    owl:someValuesFrom mv:AILifecycle
-] .
-
-mv:AIGovernance rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:enables ;
-    owl:someValuesFrom mv:AIDevelopment
-] .
-
-mv:AIGovernance rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:enables ;
-    owl:someValuesFrom mv:AIDeployment
-] .
-
-mv:AIGovernance rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:enables ;
-    owl:someValuesFrom mv:AIMonitoring
-] .
-
-mv:AIGovernance rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:isRequiredBy ;
-    owl:someValuesFrom mv:EthicalAI
-] .
-
 # AI Lifecycle
 mv:AILifecycle a owl:Class ;
     rdfs:label "AI Lifecycle"@en ;
@@ -25245,28 +25187,6 @@ mv:SuperResolution a owl:Class ;
     dcterms:type "draft" ;
     rdf:type owl:ConceptClass .
 
-# Natural Language Processing
-ai:NaturalLanguageProcessing a owl:Class ;
-    rdfs:label "Natural Language Processing"@en ;
-    rdfs:comment "Natural Language Processing (NLP) is the field of artificial intelligence concerned with enabling computers to understand, interpret, generate, and manipulate human language in both written and spoken forms. NLP encompasses tasks including machine translation, sentiment analysis, named entity recognition, question answering, and text generation, employing transformer architectures, large language models, and linguistic knowledge to bridge human communication and computational processing."@en ;
-    skos:prefLabel "Natural Language Processing"@en ;
-    dcterms:identifier "AI-0366" ;
-    dcterms:subject "ai" ;
-    dcterms:type "draft" ;
-    rdf:type owl:ConceptClass .
-
-ai:NaturalLanguageProcessing rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:isDependencyOf ;
-    owl:someValuesFrom ai:IntelligentVirtualEntity
-] .
-
-ai:NaturalLanguageProcessing rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:isDependencyOf ;
-    owl:someValuesFrom ai:NarrativeDesignOntology
-] .
-
 # Machine Translation
 ai:MachineTranslation a owl:Class ;
     rdfs:label "Machine Translation"@en ;
@@ -26823,17 +26743,6 @@ ai:NeuralNetworkArchitecture a owl:Class ;
     rdfs:comment "- maturity:: established"@en ;
     skos:prefLabel "Neural Network Architecture"@en ;
     dcterms:identifier "AI-0803" ;
-    dcterms:subject "ai" ;
-    dcterms:type "established" ;
-    dcterms:conformsTo "0.95"^^xsd:decimal .
-
-# Reinforcement Learning Algorithm
-ai:ReinforcementLearningAlgorithm a owl:Class ;
-    rdfs:subClassOf ai:MachineLearning ;
-    rdfs:label "Reinforcement Learning Algorithm"@en ;
-    rdfs:comment "- maturity:: established"@en ;
-    skos:prefLabel "Reinforcement Learning Algorithm"@en ;
-    dcterms:identifier "AI-0804" ;
     dcterms:subject "ai" ;
     dcterms:type "established" ;
     dcterms:conformsTo "0.95"^^xsd:decimal .
@@ -29231,13 +29140,6 @@ ai:AISafety rdfs:subClassOf [
     owl:someValuesFrom ai:ValueAlignment
 ] .
 
-# Knowledge Representation
-ai:KnowledgeRepresentation a owl:Class ;
-    rdfs:label "Knowledge Representation"@en ;
-    skos:prefLabel "Knowledge Representation"@en ;
-    dcterms:identifier "AI-4012" ;
-    dcterms:subject "ai" .
-
 # PrivacyPreservingAnalytics
 ai:Privacypreservinganalytics a owl:Class ;
     rdfs:label "PrivacyPreservingAnalytics"@en ;
@@ -29669,6 +29571,15 @@ ai:StateChange a owl:Class ;
     dcterms:subject "ai" ;
     dcterms:type "reviewed" .
 
+# 3D Content Generation
+ai:3DContentGeneration a owl:Class ;
+    rdfs:label "3D Content Generation"@en ;
+    rdfs:comment "3D Content Generation refers to the computational process of creating three-dimensional digital content through algorithmic and AI-driven methods. This encompasses procedural generation techniques, neural rendering, generative adversarial networks (GANs) for 3D model synthesis, and automated texture mapping. Modern approaches leverage deep learning architectures such as NeRF (Neural Radiance Fields) and 3D GANs to generate photorealistic 3D scenes, objects, and environments from minimal input data. Applications span game development, virtual reality, digital twins, and automated CAD design systems."@en ;
+    skos:prefLabel "3D Content Generation"@en ;
+    dcterms:identifier "AI-9001" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
 # Symbolic AI
 ai:SymbolicAI a owl:Class ;
     rdfs:label "Symbolic AI"@en ;
@@ -29678,6 +29589,23 @@ ai:SymbolicAI a owl:Class ;
     dcterms:subject "ai" ;
     dcterms:type "mature" ;
     rdf:type owl:ProcessClass .
+
+# AI Concept
+ai:AI-9002 a owl:Class ;
+    rdfs:label "AI Concept"@en ;
+    rdfs:comment "AI Concept represents the fundamental theoretical constructs and abstract principles that underpin artificial intelligence systems. This includes core notions such as intelligence representation, learning paradigms, reasoning mechanisms, and cognitive architectures. AI concepts encompass both symbolic AI approaches (knowledge representation, logic-based reasoning) and subsymbolic methods (connectionist networks, distributed representations). These foundational concepts serve as the theoretical basis for designing, implementing, and evaluating intelligent systems across various domains."@en ;
+    skos:prefLabel "AI Concept"@en ;
+    dcterms:identifier "AI-9002" ;
+    dcterms:subject "ai" .
+
+# AI Development Tools
+ai:AIDevelopmentTools a owl:Class ;
+    rdfs:label "AI Development Tools"@en ;
+    rdfs:comment "AI Development Tools comprise the software frameworks, libraries, platforms, and integrated development environments designed to facilitate the creation, training, deployment, and maintenance of artificial intelligence systems. These tools include deep learning frameworks (TensorFlow, PyTorch, JAX), AutoML platforms, model optimization toolkits, MLOps infrastructure, and specialized IDEs with AI-assisted coding capabilities. Modern AI development tools emphasize reproducibility, scalability, and accessibility, enabling both researchers and practitioners to build sophisticated AI applications efficiently."@en ;
+    skos:prefLabel "AI Development Tools"@en ;
+    dcterms:identifier "AI-9003" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
 
 # Logic Programming
 ai:LogicProgramming a owl:Class ;
@@ -29689,6 +29617,15 @@ ai:LogicProgramming a owl:Class ;
     dcterms:type "mature" ;
     rdf:type owl:ProcessClass .
 
+# AI Ethics
+ai:AIEthics a owl:Class ;
+    rdfs:label "AI Ethics"@en ;
+    rdfs:comment "AI Ethics addresses the moral principles, values, and guidelines governing the design, development, deployment, and use of artificial intelligence systems. This interdisciplinary field examines issues of fairness, accountability, transparency, privacy, bias mitigation, algorithmic justice, and the societal impact of AI technologies. AI ethics frameworks consider questions of autonomy, consent, human rights, environmental sustainability, and long-term existential risks associated with advanced AI. Practical implementations include ethical AI guidelines, impact assessments, and regulatory compliance mechanisms."@en ;
+    skos:prefLabel "AI Ethics"@en ;
+    dcterms:identifier "AI-9004" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
 # TPU
 ai:TPU a owl:Class ;
     rdfs:label "TPU"@en ;
@@ -29698,6 +29635,14 @@ ai:TPU a owl:Class ;
     dcterms:subject "ai" ;
     dcterms:type "mature" ;
     rdf:type owl:ObjectClass .
+
+# AI Framework
+ai:AI-9005 a owl:Class ;
+    rdfs:label "AI Framework"@en ;
+    rdfs:comment "AI Framework denotes a comprehensive software architecture that provides reusable code, design patterns, and infrastructure for developing artificial intelligence applications. These frameworks abstract low-level computational details, offering high-level interfaces for model construction, training, and inference. Popular frameworks include TensorFlow, PyTorch, scikit-learn, Keras, and JAX, each optimized for different use cases ranging from research prototyping to production deployment. Modern AI frameworks support automatic differentiation, distributed training, model serving, and integration with cloud infrastructure."@en ;
+    skos:prefLabel "AI Framework"@en ;
+    dcterms:identifier "AI-9005" ;
+    dcterms:subject "ai" .
 
 # NPU
 ai:NPU a owl:Class ;
@@ -29709,6 +29654,15 @@ ai:NPU a owl:Class ;
     dcterms:type "emerging" ;
     rdf:type owl:ObjectClass .
 
+# AI Metadata
+ai:AIMetadata a owl:Class ;
+    rdfs:label "AI Metadata"@en ;
+    rdfs:comment "AI Metadata encompasses the descriptive information, provenance data, and contextual attributes associated with artificial intelligence models, datasets, and computational artifacts. This includes model cards documenting architecture details, training procedures, performance metrics, intended use cases, ethical considerations, and known limitations. Dataset metadata captures information about data sources, collection methods, preprocessing steps, labeling procedures, and potential biases. Comprehensive AI metadata enables reproducibility, transparency, regulatory compliance, and responsible AI deployment across the machine learning lifecycle."@en ;
+    skos:prefLabel "AI Metadata"@en ;
+    dcterms:identifier "AI-9006" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
 # Neuromorphic Chip
 ai:NeuromorphicChip a owl:Class ;
     rdfs:label "Neuromorphic Chip"@en ;
@@ -29718,6 +29672,15 @@ ai:NeuromorphicChip a owl:Class ;
     dcterms:subject "ai" ;
     dcterms:type "emerging" ;
     rdf:type owl:ObjectClass .
+
+# AI System Component
+ai:AISystemComponent a owl:Class ;
+    rdfs:label "AI System Component"@en ;
+    rdfs:comment "AI System Component refers to the modular functional units that constitute a complete artificial intelligence system. These components include data ingestion pipelines, feature engineering modules, model training infrastructure, inference engines, monitoring systems, and user interfaces. Modern AI systems adopt microservices architectures where components communicate via APIs, enabling independent scaling, maintenance, and version control. Key components span data management (storage, versioning), compute infrastructure (training clusters, inference servers), and operational tooling (experiment tracking, model registry, continuous evaluation)."@en ;
+    skos:prefLabel "AI System Component"@en ;
+    dcterms:identifier "AI-9007" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
 
 # Edge AI Accelerator
 ai:EdgeAIAccelerator a owl:Class ;
@@ -29729,6 +29692,15 @@ ai:EdgeAIAccelerator a owl:Class ;
     dcterms:type "emerging" ;
     rdf:type owl:ObjectClass .
 
+# AI Governance
+ai:AiGovernance a owl:Class ;
+    rdfs:label "AI Governance"@en ;
+    rdfs:comment "AI Governance encompasses the policies, frameworks, standards, and institutional mechanisms for overseeing the responsible development, deployment, and use of artificial intelligence technologies. This includes regulatory compliance (GDPR, AI Act), organizational policies for ethical AI, risk management protocols, accountability structures, and stakeholder engagement processes. AI governance addresses concerns around algorithmic transparency, human oversight, impact assessments, and the establishment of AI ethics boards. Effective governance balances innovation with risk mitigation, ensuring AI systems align with societal values and legal requirements."@en ;
+    skos:prefLabel "AI Governance"@en ;
+    dcterms:identifier "AI-9008" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
 # Feature Store
 ai:FeatureStore a owl:Class ;
     rdfs:label "Feature Store"@en ;
@@ -29738,6 +29710,15 @@ ai:FeatureStore a owl:Class ;
     dcterms:subject "ai" ;
     dcterms:type "emerging" ;
     rdf:type owl:ObjectClass .
+
+# Cloud Computing
+ai:CloudComputing a owl:Class ;
+    rdfs:label "Cloud Computing"@en ;
+    rdfs:comment "Cloud Computing in the AI context refers to the on-demand delivery of computational resources, storage, and AI/ML services over the internet. Cloud platforms (AWS, Azure, Google Cloud, Alibaba Cloud) provide scalable infrastructure for training large-scale models, distributed computing frameworks, pre-trained AI APIs, and managed ML services. Cloud-based AI enables pay-as-you-go pricing, elastic resource allocation, global deployment, and access to specialized hardware (GPUs, TPUs, quantum processors). Key services include SageMaker, Azure ML, Vertex AI, and serverless ML inference platforms."@en ;
+    skos:prefLabel "Cloud Computing"@en ;
+    dcterms:identifier "AI-9009" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
 
 # Data Lake
 ai:DataLake a owl:Class ;
@@ -29749,6 +29730,15 @@ ai:DataLake a owl:Class ;
     dcterms:type "mature" ;
     rdf:type owl:ObjectClass .
 
+# Computer Hardware
+ai:ComputerHardware a owl:Class ;
+    rdfs:label "Computer Hardware"@en ;
+    rdfs:comment "Computer Hardware for AI refers to the physical computing components optimized for artificial intelligence workloads, particularly neural network training and inference. This includes Graphics Processing Units (GPUs), Tensor Processing Units (TPUs), Field-Programmable Gate Arrays (FPGAs), Application-Specific Integrated Circuits (ASICs), and neuromorphic chips. Modern AI hardware emphasizes parallel processing, high memory bandwidth, low-precision arithmetic (FP16, INT8), and energy efficiency. Specialized accelerators like NVIDIA A100/H100, Google TPU v4/v5, and Intel Gaudi enable training of billion-parameter models and real-time inference at scale."@en ;
+    skos:prefLabel "Computer Hardware"@en ;
+    dcterms:identifier "AI-9010" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
 # ETL Pipeline
 ai:ETLPipeline a owl:Class ;
     rdfs:label "ETL Pipeline"@en ;
@@ -29759,6 +29749,15 @@ ai:ETLPipeline a owl:Class ;
     dcterms:type "mature" ;
     rdf:type owl:ProcessClass .
 
+# Data Compression
+ai:DataCompression a owl:Class ;
+    rdfs:label "Data Compression"@en ;
+    rdfs:comment "Data Compression in AI involves reducing the size of datasets, models, and computational representations while preserving essential information. Techniques include model quantization (reducing numerical precision), pruning (removing redundant parameters), knowledge distillation (training smaller models to mimic larger ones), and neural compression methods (autoencoders, learned compression). Data compression is critical for deploying AI on resource-constrained devices, reducing storage costs, accelerating inference, and minimizing energy consumption. Advanced approaches leverage entropy coding, sparsity exploitation, and learned representations for adaptive compression."@en ;
+    skos:prefLabel "Data Compression"@en ;
+    dcterms:identifier "AI-9011" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
 # Data Versioning
 ai:DataVersioning a owl:Class ;
     rdfs:label "Data Versioning"@en ;
@@ -29768,6 +29767,354 @@ ai:DataVersioning a owl:Class ;
     dcterms:subject "ai" ;
     dcterms:type "emerging" ;
     rdf:type owl:ProcessClass .
+
+# Data Structure
+ai:DataStructure a owl:Class ;
+    rdfs:label "Data Structure"@en ;
+    rdfs:comment "Data Structures in AI represent the organizational schemes for efficiently storing, accessing, and manipulating data used in machine learning algorithms. Key structures include tensors (multi-dimensional arrays for neural networks), graphs (for knowledge graphs and GNNs), trees (decision trees, search trees), hash tables (for feature indexing), and specialized structures like attention mechanisms' key-value stores. Efficient data structures are crucial for algorithmic complexity, memory utilization, and computational performance in AI systems. Modern implementations leverage GPU-optimized data layouts and distributed data structures for large-scale ML."@en ;
+    skos:prefLabel "Data Structure"@en ;
+    dcterms:identifier "AI-9012" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Humaninthe Loop Learning
+ai:HumanintheLoopLearning a owl:Class ;
+    rdfs:label "Humaninthe Loop Learning"@en ;
+    rdfs:comment "A concept in artificial intelligence related to Humaninthe Loop Learning."@en ;
+    skos:prefLabel "Humaninthe Loop Learning"@en ;
+    dcterms:identifier "AI-9012" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Digital Fabrication
+ai:DigitalFabrication a owl:Class ;
+    rdfs:label "Digital Fabrication"@en ;
+    rdfs:comment "Digital Fabrication in the AI context refers to the integration of artificial intelligence with additive manufacturing, CNC machining, and automated production technologies. AI optimizes fabrication processes through generative design, predictive maintenance, quality control via computer vision, and adaptive toolpath planning. Machine learning models predict material behavior, optimize support structures, detect defects in real-time, and enable mass customization. Applications include topology optimization for lightweight structures, AI-driven 3D printing parameter tuning, and robotic manufacturing systems with reinforcement learning-based control."@en ;
+    skos:prefLabel "Digital Fabrication"@en ;
+    dcterms:identifier "AI-9013" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Heuristic Methods
+ai:HeuristicMethods a owl:Class ;
+    rdfs:label "Heuristic Methods"@en ;
+    rdfs:comment "Heuristic Methods in AI are problem-solving approaches that employ practical, experience-based techniques to find satisfactory solutions when optimal solutions are computationally infeasible. These methods include search heuristics (A*, hill climbing, simulated annealing), rule-of-thumb strategies, and metaheuristics (genetic algorithms, particle swarm optimization). Heuristics trade completeness and optimality for efficiency, making them essential for combinatorial optimization, planning, and decision-making in large search spaces. Modern applications integrate heuristics with learning algorithms, creating adaptive heuristic systems that improve through experience."@en ;
+    skos:prefLabel "Heuristic Methods"@en ;
+    dcterms:identifier "AI-9014" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Human Computer Interaction
+ai:HumanComputerInteraction a owl:Class ;
+    rdfs:label "Human Computer Interaction"@en ;
+    rdfs:comment "Human-Computer Interaction (HCI) in the AI context examines the design, evaluation, and implementation of interactive systems that incorporate artificial intelligence capabilities. This interdisciplinary field addresses usability, accessibility, user experience, and cognitive aspects of AI-powered interfaces. Key areas include conversational AI (chatbots, voice assistants), explainable AI interfaces, mixed-initiative systems, and adaptive user interfaces that personalize based on user behavior. HCI for AI emphasizes transparency, user control, trust calibration, and the ethical implications of algorithmic decision-making on human users."@en ;
+    skos:prefLabel "Human Computer Interaction"@en ;
+    dcterms:identifier "AI-9015" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Human-in-the- Loop Learning
+ai:HumanintheLoopLearning a owl:Class ;
+    rdfs:label "Human-in-the- Loop Learning"@en ;
+    rdfs:comment "Human-in-the-Loop Learning integrates human expertise into the machine learning process through iterative feedback, active learning, and collaborative intelligence. This paradigm combines automated learning with human judgment for data labeling, model validation, error correction, and decision-making. Key techniques include active learning (where models query humans for labels on informative examples), reinforcement learning from human feedback (RLHF), and interactive machine learning. HITL is essential for domains requiring high accuracy, safety-critical applications, and scenarios where ground truth is subjective or requires expert knowledge."@en ;
+    skos:prefLabel "Human-in-the- Loop Learning"@en ;
+    dcterms:identifier "AI-9016" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Information Security
+ai:InformationSecurity a owl:Class ;
+    rdfs:label "Information Security"@en ;
+    rdfs:comment "Information Security in AI addresses the protection of data, models, and AI systems from unauthorized access, adversarial attacks, privacy breaches, and malicious exploitation. This includes defending against adversarial examples, model inversion attacks, data poisoning, membership inference, and model extraction. Security measures encompass differential privacy for data protection, federated learning for distributed privacy-preserving training, robust training methods, secure multi-party computation, and encryption of model parameters. As AI systems become critical infrastructure, information security ensures confidentiality, integrity, availability, and trustworthiness."@en ;
+    skos:prefLabel "Information Security"@en ;
+    dcterms:identifier "AI-9017" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Internet Infrastructure
+ai:InternetInfrastructure a owl:Class ;
+    rdfs:label "Internet Infrastructure"@en ;
+    rdfs:comment "Internet Infrastructure for AI encompasses the networking protocols, distributed systems, edge computing platforms, and content delivery networks that enable large-scale deployment and operation of AI services. This includes cloud-native architectures, serverless computing for inference, 5G/6G networks for low-latency AI, edge-cloud continuum for distributed intelligence, and specialized AI hardware deployed at network edges. Modern AI infrastructure leverages containerization (Docker, Kubernetes), service meshes, and API gateways to provide scalable, reliable, and globally distributed AI applications with real-time responsiveness."@en ;
+    skos:prefLabel "Internet Infrastructure"@en ;
+    dcterms:identifier "AI-9018" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Knowledge Representation
+ai:AI-9019 a owl:Class ;
+    rdfs:label "Knowledge Representation"@en ;
+    rdfs:comment "Knowledge Representation in AI involves the formal encoding of information about the world in a computationally tractable format that enables reasoning, inference, and decision-making. Approaches include symbolic systems (first-order logic, description logics, semantic networks), graph-based representations (knowledge graphs, ontologies), probabilistic models (Bayesian networks, Markov logic networks), and distributed representations (embeddings, neural symbolic integration). Modern knowledge representation combines symbolic and subsymbolic methods, enabling systems to perform logical reasoning while learning from data."@en ;
+    skos:prefLabel "Knowledge Representation"@en ;
+    dcterms:identifier "AI-9019" ;
+    dcterms:subject "ai" .
+
+# Machine Learning Pipeline
+ai:MachineLearningPipeline a owl:Class ;
+    rdfs:label "Machine Learning Pipeline"@en ;
+    rdfs:comment "Machine Learning Pipeline represents the end-to-end workflow for developing, training, validating, deploying, and monitoring ML models. This encompasses data ingestion, preprocessing, feature engineering, model selection, hyperparameter tuning, training, evaluation, deployment, and continuous monitoring. Modern pipelines adopt MLOps practices with automated orchestration (Airflow, Kubeflow), versioning (DVC, MLflow), experiment tracking, A/B testing, and model retraining triggers. Pipelines ensure reproducibility, scalability, and maintainability of ML systems in production environments."@en ;
+    skos:prefLabel "Machine Learning Pipeline"@en ;
+    dcterms:identifier "AI-9020" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Natural Language Processing
+ai:NaturalLanguageProcessing a owl:Class ;
+    rdfs:label "Natural Language Processing"@en ;
+    rdfs:comment "Natural Language Processing (NLP) is the subfield of AI focused on enabling computers to understand, interpret, generate, and manipulate human language. Core tasks include text classification, named entity recognition, machine translation, sentiment analysis, question answering, and language generation. Modern NLP leverages transformer architectures (BERT, GPT, T5), pre-training on massive corpora, and fine-tuning for downstream tasks. Advanced systems perform multimodal understanding (text-image), multilingual processing, and exhibit emergent capabilities like reasoning and code generation."@en ;
+    skos:prefLabel "Natural Language Processing"@en ;
+    dcterms:identifier "AI-9021" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Network Architecture
+ai:NetworkArchitecture a owl:Class ;
+    rdfs:label "Network Architecture"@en ;
+    rdfs:comment "Network Architecture in AI refers to the structural design of neural networks, defining the arrangement of layers, connections, and computational units. Key architectures include feedforward networks, convolutional neural networks (CNNs), recurrent neural networks (RNNs), transformers, and graph neural networks (GNNs). Architecture design involves selecting layer types, activation functions, skip connections, normalization methods, and attention mechanisms. Neural Architecture Search (NAS) automates architecture discovery through evolutionary algorithms or reinforcement learning, optimizing for accuracy, efficiency, and resource constraints."@en ;
+    skos:prefLabel "Network Architecture"@en ;
+    dcterms:identifier "AI-9022" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Optimization Algorithms
+ai:OptimizationAlgorithms a owl:Class ;
+    rdfs:label "Optimization Algorithms"@en ;
+    rdfs:comment "Optimization Algorithms in AI are mathematical procedures for minimizing or maximizing objective functions, central to training machine learning models. Gradient-based methods (SGD, Adam, RMSprop, AdaGrad) iteratively update model parameters to minimize loss functions. Advanced techniques include momentum-based optimization, adaptive learning rates, second-order methods (L-BFGS, natural gradient), and gradient-free optimization (evolutionary strategies, Bayesian optimization). Optimization algorithms address challenges of non-convexity, saddle points, vanishing/exploding gradients, and computational efficiency in high-dimensional parameter spaces."@en ;
+    skos:prefLabel "Optimization Algorithms"@en ;
+    dcterms:identifier "AI-9023" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Pattern Recognition
+ai:PatternRecognition a owl:Class ;
+    rdfs:label "Pattern Recognition"@en ;
+    rdfs:comment "Pattern Recognition is the automated identification of regularities, structures, and categories in data using machine learning algorithms. This encompasses supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), and feature extraction techniques. Applications span computer vision (object recognition, face detection), speech recognition, biometric identification, medical diagnosis, and anomaly detection. Modern approaches leverage deep learning for end-to-end feature learning, replacing hand-crafted features with learned representations from raw data."@en ;
+    skos:prefLabel "Pattern Recognition"@en ;
+    dcterms:identifier "AI-9024" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Programming Language
+ai:ProgrammingLanguage a owl:Class ;
+    rdfs:label "Programming Language"@en ;
+    rdfs:comment "Programming Languages for AI are formal languages designed to express algorithms, models, and computations for artificial intelligence applications. Popular languages include Python (dominant in ML/DL ecosystems), Julia (high-performance numerical computing), R (statistical analysis), and domain-specific languages like TensorFlow's graph definition language. Key features include support for tensor operations, automatic differentiation, GPU acceleration, functional programming paradigms, and integration with ML frameworks. Modern AI languages emphasize readability, expressiveness, performance, and ecosystem richness."@en ;
+    skos:prefLabel "Programming Language"@en ;
+    dcterms:identifier "AI-9025" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Programming Paradigm
+ai:AI-9026 a owl:Class ;
+    rdfs:label "Programming Paradigm"@en ;
+    rdfs:comment "Programming Paradigms in AI represent fundamental styles and approaches to structuring code for artificial intelligence systems. Key paradigms include imperative (procedural, object-oriented), declarative (functional, logic-based), and differentiable programming. Functional programming (Haskell, Lisp) emphasizes immutability and higher-order functions, suited for mathematical ML algorithms. Differentiable programming treats entire programs as differentiable functions, enabling end-to-end gradient-based optimization. Modern AI development combines paradigms: object-oriented for software engineering, functional for mathematical rigor, and differentiable for learning."@en ;
+    skos:prefLabel "Programming Paradigm"@en ;
+    dcterms:identifier "AI-9026" ;
+    dcterms:subject "ai" .
+
+# Reinforcement Learning Algorithm
+ai:AI-9027 a owl:Class ;
+    rdfs:label "Reinforcement Learning Algorithm"@en ;
+    rdfs:comment "Reinforcement Learning Algorithms enable agents to learn optimal decision-making policies through interaction with environments, guided by reward signals. Core algorithms include value-based methods (Q-learning, DQN), policy gradient methods (REINFORCE, PPO, TRPO), actor-critic approaches (A3C, SAC), and model-based RL. Advanced techniques incorporate deep neural networks for function approximation, experience replay, target networks, and exploration strategies. Applications span robotics, game playing, autonomous systems, resource management, and personalized recommendations."@en ;
+    skos:prefLabel "Reinforcement Learning Algorithm"@en ;
+    dcterms:identifier "AI-9027" ;
+    dcterms:subject "ai" .
+
+# Robotics Control
+ai:RoboticsControl a owl:Class ;
+    rdfs:label "Robotics Control"@en ;
+    rdfs:comment "Robotics Control integrates artificial intelligence with robotic systems to enable autonomous navigation, manipulation, perception, and task execution. AI-driven control employs reinforcement learning for policy optimization, computer vision for perception, motion planning algorithms, and sensor fusion. Key challenges include real-time decision-making, handling uncertainty, sim-to-real transfer, and safety assurance. Modern approaches leverage deep learning for visuomotor control, imitation learning from demonstrations, and meta-learning for rapid adaptation to new tasks and environments."@en ;
+    skos:prefLabel "Robotics Control"@en ;
+    dcterms:identifier "AI-9028" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Search Algorithm
+ai:SearchAlgorithm a owl:Class ;
+    rdfs:label "Search Algorithm"@en ;
+    rdfs:comment "Search Algorithms in AI systematically explore solution spaces to find optimal or satisfactory solutions to problems. Classical algorithms include uninformed search (breadth-first, depth-first, uniform-cost) and informed search (A*, greedy best-first, beam search). Advanced techniques incorporate heuristics, pruning, bidirectional search, and iterative deepening. Modern AI integrates learning-based search (Monte Carlo Tree Search with neural networks, learned heuristics) and continuous optimization methods. Applications span planning, constraint satisfaction, game playing, and combinatorial optimization."@en ;
+    skos:prefLabel "Search Algorithm"@en ;
+    dcterms:identifier "AI-9029" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Semantic Web
+ai:SemanticWeb a owl:Class ;
+    rdfs:label "Semantic Web"@en ;
+    rdfs:comment "Semantic Web extends the World Wide Web with machine-readable metadata, ontologies, and linked data to enable intelligent information discovery, integration, and reasoning. Core technologies include RDF (Resource Description Framework), OWL (Web Ontology Language), SPARQL (query language), and knowledge graphs. AI techniques enhance semantic web systems through entity linking, relation extraction, ontology alignment, and reasoning engines. Applications include semantic search, intelligent assistants, data integration across heterogeneous sources, and automated knowledge discovery."@en ;
+    skos:prefLabel "Semantic Web"@en ;
+    dcterms:identifier "AI-9030" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Software Architecture
+ai:SoftwareArchitecture a owl:Class ;
+    rdfs:label "Software Architecture"@en ;
+    rdfs:comment "Software Architecture for AI systems defines high-level structural patterns, component interactions, and design principles for building scalable, maintainable, and robust artificial intelligence applications. Architectural patterns include microservices (decoupled AI components), serverless (event-driven inference), model-view-controller (MVC) for AI applications, and lambda architecture (batch and stream processing). AI-specific concerns include model versioning, A/B testing infrastructure, feature stores, model registries, and monitoring systems. Modern architectures emphasize modularity, reproducibility, and operational excellence."@en ;
+    skos:prefLabel "Software Architecture"@en ;
+    dcterms:identifier "AI-9031" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Software Development Process
+ai:SoftwareDevelopmentProcess a owl:Class ;
+    rdfs:label "Software Development Process"@en ;
+    rdfs:comment "Software Development Process for AI encompasses methodologies, workflows, and best practices for building, testing, deploying, and maintaining machine learning systems. This includes agile AI development, data-centric workflows, experiment tracking, model validation protocols, and MLOps practices. Key activities span problem formulation, data collection and labeling, exploratory data analysis, model prototyping, hyperparameter tuning, production deployment, monitoring, and continuous improvement. Modern processes emphasize cross-functional collaboration, reproducibility, version control (code, data, models), and ethical considerations."@en ;
+    skos:prefLabel "Software Development Process"@en ;
+    dcterms:identifier "AI-9032" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Supervised Learning
+ai:SupervisedLearning a owl:Class ;
+    rdfs:label "Supervised Learning"@en ;
+    rdfs:comment "Supervised Learning is the machine learning paradigm where models learn from labeled training data to predict outputs for new, unseen inputs. The learning algorithm finds patterns mapping input features to target labels, guided by a loss function measuring prediction errors. Key tasks include classification (discrete labels) and regression (continuous values). Common algorithms span linear models, decision trees, support vector machines, neural networks, and ensemble methods. Supervised learning requires curated datasets with ground-truth labels and addresses challenges of overfitting, generalization, and class imbalance."@en ;
+    skos:prefLabel "Supervised Learning"@en ;
+    dcterms:identifier "AI-9033" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# System Architecture
+ai:SystemArchitecture a owl:Class ;
+    rdfs:label "System Architecture"@en ;
+    rdfs:comment "System Architecture in AI defines the holistic structure integrating hardware, software, data infrastructure, and operational components to deliver intelligent capabilities at scale. This encompasses distributed training infrastructure, inference servers, data pipelines, model registries, monitoring systems, and edge-cloud coordination. Architectural decisions address latency requirements, throughput targets, fault tolerance, security, and cost optimization. Modern AI systems adopt cloud-native, containerized architectures with orchestration platforms (Kubernetes), enabling elastic scaling, multi-tenancy, and global deployment."@en ;
+    skos:prefLabel "System Architecture"@en ;
+    dcterms:identifier "AI-9034" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Unsupervised Learning
+ai:UnsupervisedLearning a owl:Class ;
+    rdfs:label "Unsupervised Learning"@en ;
+    rdfs:comment "Unsupervised Learning discovers hidden patterns, structures, and representations in unlabeled data without explicit supervision. Key techniques include clustering (k-means, hierarchical, DBSCAN), dimensionality reduction (PCA, t-SNE, UMAP), density estimation, anomaly detection, and generative modeling (VAEs, GANs). Unsupervised methods extract meaningful features, identify data clusters, reduce dimensionality for visualization, and learn latent representations. Applications span exploratory data analysis, data preprocessing for supervised learning, recommendation systems, and generative AI."@en ;
+    skos:prefLabel "Unsupervised Learning"@en ;
+    dcterms:identifier "AI-9035" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Video Processing
+ai:VideoProcessing a owl:Class ;
+    rdfs:label "Video Processing"@en ;
+    rdfs:comment "Video Processing in AI involves computational analysis, understanding, and manipulation of video data using machine learning and computer vision techniques. Core tasks include object detection and tracking, action recognition, video segmentation, temporal modeling, scene understanding, and video generation. Modern approaches leverage 3D convolutional networks, recurrent architectures, transformers for temporal reasoning, and self-supervised learning on large video datasets. Applications span surveillance, autonomous driving, content moderation, sports analytics, medical imaging, and video editing automation."@en ;
+    skos:prefLabel "Video Processing"@en ;
+    dcterms:identifier "AI-9036" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# A I Concept
+ai:AIConcept a owl:Class ;
+    rdfs:label "A I Concept"@en ;
+    rdfs:comment "A I Concept is a concept within the ai domain. Further enrichment pending."@en ;
+    skos:prefLabel "A I Concept"@en ;
+    dcterms:identifier "AI-9501" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# A I Framework
+ai:AIFramework a owl:Class ;
+    rdfs:label "A I Framework"@en ;
+    rdfs:comment "A I Framework is a concept within the ai domain. Further enrichment pending."@en ;
+    skos:prefLabel "A I Framework"@en ;
+    dcterms:identifier "AI-9502" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Cybersecurity
+ai:Cybersecurity a owl:Class ;
+    rdfs:label "Cybersecurity"@en ;
+    rdfs:comment "Cybersecurity is a concept within the ai domain. Further enrichment pending."@en ;
+    skos:prefLabel "Cybersecurity"@en ;
+    dcterms:identifier "AI-9505" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Data Efficient Learning
+ai:DataEfficientLearning a owl:Class ;
+    rdfs:label "Data Efficient Learning"@en ;
+    rdfs:comment "Data Efficient Learning is a concept within the ai domain. Further enrichment pending."@en ;
+    skos:prefLabel "Data Efficient Learning"@en ;
+    dcterms:identifier "AI-9506" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Generative Ai
+ai:GenerativeAi a owl:Class ;
+    rdfs:label "Generative Ai"@en ;
+    rdfs:comment "Generative Ai is a concept within the ai domain. Further enrichment pending."@en ;
+    skos:prefLabel "Generative Ai"@en ;
+    dcterms:identifier "AI-9509" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Graph Algorithms
+ai:GraphAlgorithms a owl:Class ;
+    rdfs:label "Graph Algorithms"@en ;
+    rdfs:comment "Graph Algorithms is a concept within the ai domain. Further enrichment pending."@en ;
+    skos:prefLabel "Graph Algorithms"@en ;
+    dcterms:identifier "AI-9511" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Informed Search
+ai:InformedSearch a owl:Class ;
+    rdfs:label "Informed Search"@en ;
+    rdfs:comment "Informed Search is a concept within the ai domain. Further enrichment pending."@en ;
+    skos:prefLabel "Informed Search"@en ;
+    dcterms:identifier "AI-9512" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Infrastructure Component
+ai:InfrastructureComponent a owl:Class ;
+    rdfs:label "Infrastructure Component"@en ;
+    rdfs:comment "Infrastructure Component is a concept within the ai domain. Further enrichment pending."@en ;
+    skos:prefLabel "Infrastructure Component"@en ;
+    dcterms:identifier "AI-9513" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Interactive Learning
+ai:InteractiveLearning a owl:Class ;
+    rdfs:label "Interactive Learning"@en ;
+    rdfs:comment "Interactive Learning is a concept within the ai domain. Further enrichment pending."@en ;
+    skos:prefLabel "Interactive Learning"@en ;
+    dcterms:identifier "AI-9515" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Neural Network Layer
+ai:NeuralNetworkLayer a owl:Class ;
+    rdfs:label "Neural Network Layer"@en ;
+    rdfs:comment "Neural Network Layer is a concept within the ai domain. Further enrichment pending."@en ;
+    skos:prefLabel "Neural Network Layer"@en ;
+    dcterms:identifier "AI-9517" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Privacy Mechanism
+ai:PrivacyMechanism a owl:Class ;
+    rdfs:label "Privacy Mechanism"@en ;
+    rdfs:comment "Privacy Mechanism is a concept within the ai domain. Further enrichment pending."@en ;
+    skos:prefLabel "Privacy Mechanism"@en ;
+    dcterms:identifier "AI-9518" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Search Technology
+ai:SearchTechnology a owl:Class ;
+    rdfs:label "Search Technology"@en ;
+    rdfs:comment "Search Technology is a concept within the ai domain. Further enrichment pending."@en ;
+    skos:prefLabel "Search Technology"@en ;
+    dcterms:identifier "AI-9521" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
+
+# Speech Recognition
+ai:SpeechRecognition a owl:Class ;
+    rdfs:label "Speech Recognition"@en ;
+    rdfs:comment "Speech Recognition is a concept within the ai domain. Further enrichment pending."@en ;
+    skos:prefLabel "Speech Recognition"@en ;
+    dcterms:identifier "AI-9522" ;
+    dcterms:subject "ai" ;
+    rdf:type owl:conceptClass .
 
 # AI Upscaling and Super-Resolution
 ai:AI-UPSCALE-001 a owl:Class ;
@@ -33732,6 +34079,10 @@ bc:TransactionFinality a owl:Class ;
     dcterms:identifier "BC-8021" ;
     dcterms:subject "bc" .
 
+# BC-9001
+bc:BlockchainProcess a owl:Class ;
+    dcterms:identifier "BC-9001" .
+
 # Cosmos IBC
 bc:CosmosIBC a owl:Class ;
     rdfs:label "Cosmos IBC"@en ;
@@ -33741,6 +34092,10 @@ bc:CosmosIBC a owl:Class ;
     dcterms:subject "bc" ;
     dcterms:type "emerging" ;
     rdf:type owl:ProcessClass .
+
+# BC-9002
+bc:BlockchainTransaction a owl:Class ;
+    dcterms:identifier "BC-9002" .
 
 # Polkadot Parachains
 bc:PolkadotParachains a owl:Class ;
@@ -33752,6 +34107,10 @@ bc:PolkadotParachains a owl:Class ;
     dcterms:type "emerging" ;
     rdf:type owl:ProcessClass .
 
+# BC-9003
+bc:ConsensusProtocol a owl:Class ;
+    dcterms:identifier "BC-9003" .
+
 # Cross-Chain Messaging
 bc:CrossChainMessaging a owl:Class ;
     rdfs:label "Cross-Chain Messaging"@en ;
@@ -33761,6 +34120,129 @@ bc:CrossChainMessaging a owl:Class ;
     dcterms:subject "bc" ;
     dcterms:type "emerging" ;
     rdf:type owl:ProcessClass .
+
+# BC-9004
+bc:CryptocurrencyStorage a owl:Class ;
+    dcterms:identifier "BC-9004" .
+
+# BC-9005
+bc:CryptocurrencyToken a owl:Class ;
+    dcterms:identifier "BC-9005" .
+
+# BC-9006
+bc:CryptographicProtocol a owl:Class ;
+    dcterms:identifier "BC-9006" .
+
+# BC-9007
+bc:DataStructure a owl:Class ;
+    dcterms:identifier "BC-9007" .
+
+# BC-9008
+bc:DigitalAsset a owl:Class ;
+    dcterms:identifier "BC-9008" .
+
+# BC-9009
+bc:DistributedSystem a owl:Class ;
+    dcterms:identifier "BC-9009" .
+
+# BC-9010
+bc:DistributedSystemProtocol a owl:Class ;
+    dcterms:identifier "BC-9010" .
+
+# BC-9011
+bc:FinancialInstruments a owl:Class ;
+    dcterms:identifier "BC-9011" .
+
+# BC-9012
+bc:NetworkTopology a owl:Class ;
+    dcterms:identifier "BC-9012" .
+
+# BC-9013
+bc:PeerToPeerNetwork a owl:Class ;
+    dcterms:identifier "BC-9013" .
+
+# BC-9014
+bc:SmartContractPlatform a owl:Class ;
+    dcterms:identifier "BC-9014" .
+
+# BC-9015
+bc:TokenStandard a owl:Class ;
+    dcterms:identifier "BC-9015" .
+
+# BC-9016
+bc:TransactionProcessing a owl:Class ;
+    dcterms:identifier "BC-9016" .
+
+# BC-9017
+bc:UserPrivacy a owl:Class ;
+    dcterms:identifier "BC-9017" .
+
+# BC-9018
+bc:WebTechnology a owl:Class ;
+    dcterms:identifier "BC-9018" .
+
+# Information Protection
+bc:InformationProtection a owl:Class ;
+    rdfs:label "Information Protection"@en ;
+    rdfs:comment "Information Protection is a concept within the blockchain domain. Further enrichment pending."@en ;
+    skos:prefLabel "Information Protection"@en ;
+    dcterms:identifier "BC-9501" ;
+    dcterms:subject "bc" ;
+    rdf:type owl:conceptClass .
+
+# Mathematical Science
+bc:MathematicalScience a owl:Class ;
+    rdfs:label "Mathematical Science"@en ;
+    rdfs:comment "Mathematical Science is a concept within the blockchain domain. Further enrichment pending."@en ;
+    skos:prefLabel "Mathematical Science"@en ;
+    dcterms:identifier "BC-9502" ;
+    dcterms:subject "bc" ;
+    rdf:type owl:conceptClass .
+
+# Peerto Peer Protocol
+bc:PeertoPeerProtocol a owl:Class ;
+    rdfs:label "Peerto Peer Protocol"@en ;
+    rdfs:comment "Peerto Peer Protocol is a concept within the blockchain domain. Further enrichment pending."@en ;
+    skos:prefLabel "Peerto Peer Protocol"@en ;
+    dcterms:identifier "BC-9504" ;
+    dcterms:subject "bc" ;
+    rdf:type owl:conceptClass .
+
+# Record Keeping System
+bc:RecordKeepingSystem a owl:Class ;
+    rdfs:label "Record Keeping System"@en ;
+    rdfs:comment "Record Keeping System is a concept within the blockchain domain. Further enrichment pending."@en ;
+    skos:prefLabel "Record Keeping System"@en ;
+    dcterms:identifier "BC-9505" ;
+    dcterms:subject "bc" ;
+    rdf:type owl:conceptClass .
+
+# Security Technology
+bc:SecurityTechnology a owl:Class ;
+    rdfs:label "Security Technology"@en ;
+    rdfs:comment "Security Technology is a concept within the blockchain domain. Further enrichment pending."@en ;
+    skos:prefLabel "Security Technology"@en ;
+    dcterms:identifier "BC-9506" ;
+    dcterms:subject "bc" ;
+    rdf:type owl:conceptClass .
+
+# State Machine Replication
+bc:StateMachineReplication a owl:Class ;
+    rdfs:label "State Machine Replication"@en ;
+    rdfs:comment "State Machine Replication is a concept within the blockchain domain. Further enrichment pending."@en ;
+    skos:prefLabel "State Machine Replication"@en ;
+    dcterms:identifier "BC-9507" ;
+    dcterms:subject "bc" ;
+    rdf:type owl:conceptClass .
+
+# Transferable Right
+bc:TransferableRight a owl:Class ;
+    rdfs:label "Transferable Right"@en ;
+    rdfs:comment "Transferable Right is a concept within the blockchain domain. Further enrichment pending."@en ;
+    skos:prefLabel "Transferable Right"@en ;
+    dcterms:identifier "BC-9508" ;
+    dcterms:subject "bc" ;
+    rdf:type owl:conceptClass .
 
 # Blockchain Protocol
 bc:BC-9980 a owl:Class ;
@@ -35001,45 +35483,6 @@ mv:VirtualWorldTraversal a owl:Class ;
     dcterms:subject "mv" ;
     dcterms:type "established" ;
     dcterms:conformsTo "0.95"^^xsd:decimal .
-
-# Human Computer Interaction
-mv:HumanComputerInteraction a owl:Class ;
-    rdfs:subClassOf mv:MetaverseTechnology ;
-    rdfs:label "Human Computer Interaction"@en ;
-    rdfs:comment "Human Computer Interaction (HCI) is the study and design of interfaces and interaction paradigms between humans and computational systems, particularly in immersive and spatial computing contexts. Within metaverse environments, HCI encompasses gesture recognition, haptic feedback, voice interfaces, eye tracking, and novel input modalities for intuitive virtual world interaction."@en ;
-    skos:prefLabel "Human Computer Interaction"@en ;
-    dcterms:identifier "MV-0601" ;
-    dcterms:subject "mv" .
-
-mv:HumanComputerInteraction rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:isParentOf ;
-    owl:someValuesFrom mv:GestureRecognition
-] .
-
-mv:HumanComputerInteraction rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:isParentOf ;
-    owl:someValuesFrom mv:HapticFeedback
-] .
-
-mv:HumanComputerInteraction rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:isParentOf ;
-    owl:someValuesFrom mv:VoiceInterface
-] .
-
-mv:HumanComputerInteraction rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:relatedTo ;
-    owl:someValuesFrom mv:SpatialComputing
-] .
-
-mv:HumanComputerInteraction rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:relatedTo ;
-    owl:someValuesFrom mv:AvatarSystem
-] .
 
 # Educational Technology
 mv:EducationalTechnology a owl:Class ;
@@ -36718,39 +37161,6 @@ mv:SocialVr rdfs:subClassOf [
     owl:someValuesFrom mv:ImmersiveCommunication
 ] .
 
-# Software Architecture
-mv:SoftwareArchitecture a owl:Class ;
-    rdfs:subClassOf mv:SystemDesign ;
-    rdfs:label "Software Architecture"@en ;
-    rdfs:comment "The high-level structure of a software system comprising fundamental elements, their interactions, and design principles governing scalability, performance, maintainability, and security through established patterns such as microservices, event-driven, layered, and serverless architectures."@en ;
-    skos:prefLabel "Software Architecture"@en ;
-    dcterms:identifier "MV-10047" ;
-    dcterms:subject "mv" .
-
-mv:SoftwareArchitecture rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:enables ;
-    owl:someValuesFrom mv:ModularSoftwareSystems
-] .
-
-mv:SoftwareArchitecture rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:relatedTo ;
-    owl:someValuesFrom mv:Microservices
-] .
-
-mv:SoftwareArchitecture rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:relatedTo ;
-    owl:someValuesFrom mv:DesignPatterns
-] .
-
-mv:SoftwareArchitecture rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:relatedTo ;
-    owl:someValuesFrom mv:SystemScalability
-] .
-
 # Software Platform
 mv:SoftwarePlatform a owl:Class ;
     rdfs:subClassOf mv:TechnologyInfrastructure ;
@@ -37692,33 +38102,6 @@ mv:SymbolicObjectLibrary rdfs:subClassOf [
 ] .
 
 mv:SymbolicObjectLibrary rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:relatedTo ;
-    owl:someValuesFrom mv:Interoperability
-] .
-
-# System Architecture
-mv:SystemArchitecture a owl:Class ;
-    rdfs:subClassOf mv:MetaverseInfrastructure ;
-    rdfs:label "System Architecture"@en ;
-    rdfs:comment "The structural design framework that defines the components, connections, protocols, and technologies that enable the creation and operation of metaverse environments, encompassing network infrastructure, computing resources, hardware devices, and software platforms."@en ;
-    skos:prefLabel "System Architecture"@en ;
-    dcterms:identifier "MV-10078" ;
-    dcterms:subject "mv" .
-
-mv:SystemArchitecture rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:relatedTo ;
-    owl:someValuesFrom mv:NetworkArchitecture
-] .
-
-mv:SystemArchitecture rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:relatedTo ;
-    owl:someValuesFrom mv:EdgeComputing
-] .
-
-mv:SystemArchitecture rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty ngm:relatedTo ;
     owl:someValuesFrom mv:Interoperability
@@ -44386,16 +44769,6 @@ mv:MakingAvailable a owl:Class ;
     dcterms:type "draft" ;
     rdf:type owl:ConceptClass .
 
-# VirtualEconomy
-mv:VirtualEconomy a owl:Class ;
-    rdfs:label "VirtualEconomy"@en ;
-    rdfs:comment "A component of the metaverse ecosystem."@en ;
-    skos:prefLabel "VirtualEconomy"@en ;
-    dcterms:identifier "MV-3017" ;
-    dcterms:subject "mv" ;
-    dcterms:type "draft" ;
-    rdf:type owl:ConceptClass .
-
 # AIEthics
 mv:AIEthics a owl:Class ;
     rdfs:label "AIEthics"@en ;
@@ -46034,6 +46407,10 @@ mv:InclusiveXrExperience rdfs:subClassOf [
     owl:someValuesFrom mv:ImmersiveExperiences
 ] .
 
+# MV-9001
+mv:3DAnimation a owl:Class ;
+    dcterms:identifier "MV-9001" .
+
 # Inclusive Xr Design
 mv:InclusiveXrDesign a owl:Class ;
     rdfs:subClassOf mv:AccessibleDesign ;
@@ -46060,6 +46437,10 @@ mv:InclusiveXrDesign rdfs:subClassOf [
     owl:onProperty ngm:relatedTo ;
     owl:someValuesFrom mv:ImmersiveInterface
 ] .
+
+# MV-9002
+mv:3DAsset a owl:Class ;
+    dcterms:identifier "MV-9002" .
 
 # XR Accessibility Standards
 mv:XrAccessibilityStandards a owl:Class ;
@@ -46088,6 +46469,10 @@ mv:XrAccessibilityStandards rdfs:subClassOf [
     owl:someValuesFrom mv:Standards
 ] .
 
+# MV-9003
+mv:3DAssetStandard a owl:Class ;
+    dcterms:identifier "MV-9003" .
+
 # Metaverse Architecture
 mv:MetaverseArchitecture a owl:Class ;
     rdfs:subClassOf mv:SystemArchitecture ;
@@ -46115,6 +46500,10 @@ mv:MetaverseArchitecture rdfs:subClassOf [
     owl:someValuesFrom mv:TechnologyStack
 ] .
 
+# MV-9004
+mv:3DContentPipeline a owl:Class ;
+    dcterms:identifier "MV-9004" .
+
 # Rigid Body Dynamics
 mv:RigidBodyDynamics a owl:Class ;
     rdfs:label "Rigid Body Dynamics"@en ;
@@ -46124,6 +46513,10 @@ mv:RigidBodyDynamics a owl:Class ;
     dcterms:subject "mv" ;
     dcterms:type "mature" ;
     rdf:type owl:ProcessClass .
+
+# MV-9005
+mv:3DDesign a owl:Class ;
+    dcterms:identifier "MV-9005" .
 
 # Soft Body Dynamics
 mv:SoftBodyDynamics a owl:Class ;
@@ -46144,6 +46537,1869 @@ mv:FluidSimulation a owl:Class ;
     dcterms:subject "mv" ;
     dcterms:type "emerging" ;
     rdf:type owl:ProcessClass .
+
+# 3 D Development
+mv:3DDevelopment a owl:Class ;
+    rdfs:label "3 D Development"@en ;
+    rdfs:comment "3 D Development is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "3 D Development"@en ;
+    dcterms:identifier "MV-9501" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# 3 D File Format
+mv:3DFileFormat a owl:Class ;
+    rdfs:label "3 D File Format"@en ;
+    rdfs:comment "3 D File Format is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "3 D File Format"@en ;
+    dcterms:identifier "MV-9502" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# 3 D Graphics Standard
+mv:3DGraphicsStandard a owl:Class ;
+    rdfs:label "3 D Graphics Standard"@en ;
+    rdfs:comment "3 D Graphics Standard is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "3 D Graphics Standard"@en ;
+    dcterms:identifier "MV-9503" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# 3 D Model
+mv:3DModel a owl:Class ;
+    rdfs:label "3 D Model"@en ;
+    rdfs:comment "3 D Model is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "3 D Model"@en ;
+    dcterms:identifier "MV-9504" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# 3 D Modeling
+mv:3DModeling a owl:Class ;
+    rdfs:label "3 D Modeling"@en ;
+    rdfs:comment "3 D Modeling is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "3 D Modeling"@en ;
+    dcterms:identifier "MV-9505" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# 3 D Reconstruction
+mv:3DReconstruction a owl:Class ;
+    rdfs:label "3 D Reconstruction"@en ;
+    rdfs:comment "3 D Reconstruction is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "3 D Reconstruction"@en ;
+    dcterms:identifier "MV-9506" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# 3 D User Interface
+mv:3DUserInterface a owl:Class ;
+    rdfs:label "3 D User Interface"@en ;
+    rdfs:comment "3 D User Interface is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "3 D User Interface"@en ;
+    dcterms:identifier "MV-9507" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# A R Registration
+mv:ARRegistration a owl:Class ;
+    rdfs:label "A R Registration"@en ;
+    rdfs:comment "A R Registration is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "A R Registration"@en ;
+    dcterms:identifier "MV-9508" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# A R Technology
+mv:ARTechnology a owl:Class ;
+    rdfs:label "A R Technology"@en ;
+    rdfs:comment "A R Technology is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "A R Technology"@en ;
+    dcterms:identifier "MV-9509" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Accessible Design
+mv:AccessibleDesign a owl:Class ;
+    rdfs:label "Accessible Design"@en ;
+    rdfs:comment "Accessible Design is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Accessible Design"@en ;
+    dcterms:identifier "MV-9511" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Accessible Experience
+mv:AccessibleExperience a owl:Class ;
+    rdfs:label "Accessible Experience"@en ;
+    rdfs:comment "Accessible Experience is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Accessible Experience"@en ;
+    dcterms:identifier "MV-9512" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Animation Standard
+mv:AnimationStandard a owl:Class ;
+    rdfs:label "Animation Standard"@en ;
+    rdfs:comment "Animation Standard is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Animation Standard"@en ;
+    dcterms:identifier "MV-9513" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Animation Technique
+mv:AnimationTechnique a owl:Class ;
+    rdfs:label "Animation Technique"@en ;
+    rdfs:comment "Animation Technique is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Animation Technique"@en ;
+    dcterms:identifier "MV-9514" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Asset Tokenization
+mv:AssetTokenization a owl:Class ;
+    rdfs:label "Asset Tokenization"@en ;
+    rdfs:comment "Asset Tokenization is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Asset Tokenization"@en ;
+    dcterms:identifier "MV-9517" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Audio Processing System
+mv:AudioProcessingSystem a owl:Class ;
+    rdfs:label "Audio Processing System"@en ;
+    rdfs:comment "Audio Processing System is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Audio Processing System"@en ;
+    dcterms:identifier "MV-9518" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Audio System
+mv:AudioSystem a owl:Class ;
+    rdfs:label "Audio System"@en ;
+    rdfs:comment "Audio System is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Audio System"@en ;
+    dcterms:identifier "MV-9519" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Audio Technology
+mv:AudioTechnology a owl:Class ;
+    rdfs:label "Audio Technology"@en ;
+    rdfs:comment "Audio Technology is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Audio Technology"@en ;
+    dcterms:identifier "MV-9520" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Automated Modeling
+mv:AutomatedModeling a owl:Class ;
+    rdfs:label "Automated Modeling"@en ;
+    rdfs:comment "Automated Modeling is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Automated Modeling"@en ;
+    dcterms:identifier "MV-9521" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Blockchain Economics
+mv:BlockchainEconomics a owl:Class ;
+    rdfs:label "Blockchain Economics"@en ;
+    rdfs:comment "Blockchain Economics is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Blockchain Economics"@en ;
+    dcterms:identifier "MV-9522" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Blockchain Gaming
+mv:BlockchainGaming a owl:Class ;
+    rdfs:label "Blockchain Gaming"@en ;
+    rdfs:comment "Blockchain Gaming is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Blockchain Gaming"@en ;
+    dcterms:identifier "MV-9523" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Calibration Equipment
+mv:CalibrationEquipment a owl:Class ;
+    rdfs:label "Calibration Equipment"@en ;
+    rdfs:comment "Calibration Equipment is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Calibration Equipment"@en ;
+    dcterms:identifier "MV-9524" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Calibration Tools
+mv:CalibrationTools a owl:Class ;
+    rdfs:label "Calibration Tools"@en ;
+    rdfs:comment "Calibration Tools is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Calibration Tools"@en ;
+    dcterms:identifier "MV-9525" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Collaboration Technology
+mv:CollaborationTechnology a owl:Class ;
+    rdfs:label "Collaboration Technology"@en ;
+    rdfs:comment "Collaboration Technology is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Collaboration Technology"@en ;
+    dcterms:identifier "MV-9526" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Collaborative Technology
+mv:CollaborativeTechnology a owl:Class ;
+    rdfs:label "Collaborative Technology"@en ;
+    rdfs:comment "Collaborative Technology is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Collaborative Technology"@en ;
+    dcterms:identifier "MV-9527" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Community Governance
+mv:CommunityGovernance a owl:Class ;
+    rdfs:label "Community Governance"@en ;
+    rdfs:comment "Community Governance is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Community Governance"@en ;
+    dcterms:identifier "MV-9528" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Compliance Framework
+mv:ComplianceFramework a owl:Class ;
+    rdfs:label "Compliance Framework"@en ;
+    rdfs:comment "Compliance Framework is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Compliance Framework"@en ;
+    dcterms:identifier "MV-9529" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Computer Vision System
+mv:ComputerVisionSystem a owl:Class ;
+    rdfs:label "Computer Vision System"@en ;
+    rdfs:comment "Computer Vision System is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Computer Vision System"@en ;
+    dcterms:identifier "MV-9530" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Computing Hardware
+mv:ComputingHardware a owl:Class ;
+    rdfs:label "Computing Hardware"@en ;
+    rdfs:comment "Computing Hardware is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Computing Hardware"@en ;
+    dcterms:identifier "MV-9531" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Computing Platform
+mv:ComputingPlatform a owl:Class ;
+    rdfs:label "Computing Platform"@en ;
+    rdfs:comment "Computing Platform is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Computing Platform"@en ;
+    dcterms:identifier "MV-9533" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Configuration
+mv:Configuration a owl:Class ;
+    rdfs:label "Configuration"@en ;
+    rdfs:comment "Configuration is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Configuration"@en ;
+    dcterms:identifier "MV-9534" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Configuration Setting
+mv:ConfigurationSetting a owl:Class ;
+    rdfs:label "Configuration Setting"@en ;
+    rdfs:comment "Configuration Setting is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Configuration Setting"@en ;
+    dcterms:identifier "MV-9535" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Content Authentication
+mv:ContentAuthentication a owl:Class ;
+    rdfs:label "Content Authentication"@en ;
+    rdfs:comment "Content Authentication is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Content Authentication"@en ;
+    dcterms:identifier "MV-9536" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Content Production Workflow
+mv:ContentProductionWorkflow a owl:Class ;
+    rdfs:label "Content Production Workflow"@en ;
+    rdfs:comment "Content Production Workflow is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Content Production Workflow"@en ;
+    dcterms:identifier "MV-9537" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Content Protection
+mv:ContentProtection a owl:Class ;
+    rdfs:label "Content Protection"@en ;
+    rdfs:comment "Content Protection is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Content Protection"@en ;
+    dcterms:identifier "MV-9538" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Context Aware Computing
+mv:ContextAwareComputing a owl:Class ;
+    rdfs:label "Context Aware Computing"@en ;
+    rdfs:comment "Context Aware Computing is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Context Aware Computing"@en ;
+    dcterms:identifier "MV-9539" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Coordinate System
+mv:CoordinateSystem a owl:Class ;
+    rdfs:label "Coordinate System"@en ;
+    rdfs:comment "Coordinate System is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Coordinate System"@en ;
+    dcterms:identifier "MV-9540" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Creative Software
+mv:CreativeSoftware a owl:Class ;
+    rdfs:label "Creative Software"@en ;
+    rdfs:comment "Creative Software is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Creative Software"@en ;
+    dcterms:identifier "MV-9541" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Cryptographic Protocol
+mv:CryptographicProtocol a owl:Class ;
+    rdfs:label "Cryptographic Protocol"@en ;
+    rdfs:comment "Cryptographic Protocol is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Cryptographic Protocol"@en ;
+    dcterms:identifier "MV-9542" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Cryptographic Security
+mv:CryptographicSecurity a owl:Class ;
+    rdfs:label "Cryptographic Security"@en ;
+    rdfs:comment "Cryptographic Security is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Cryptographic Security"@en ;
+    dcterms:identifier "MV-9543" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Cryptographic Verification
+mv:CryptographicVerification a owl:Class ;
+    rdfs:label "Cryptographic Verification"@en ;
+    rdfs:comment "Cryptographic Verification is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Cryptographic Verification"@en ;
+    dcterms:identifier "MV-9544" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Cryptography
+mv:Cryptography a owl:Class ;
+    rdfs:label "Cryptography"@en ;
+    rdfs:comment "Cryptography is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Cryptography"@en ;
+    dcterms:identifier "MV-9545" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# D A O Governance
+mv:DAOGovernance a owl:Class ;
+    rdfs:label "D A O Governance"@en ;
+    rdfs:comment "D A O Governance is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "D A O Governance"@en ;
+    dcterms:identifier "MV-9547" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Data Access Interface
+mv:DataAccessInterface a owl:Class ;
+    rdfs:label "Data Access Interface"@en ;
+    rdfs:comment "Data Access Interface is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Data Access Interface"@en ;
+    dcterms:identifier "MV-9548" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Data Analytics
+mv:DataAnalytics a owl:Class ;
+    rdfs:label "Data Analytics"@en ;
+    rdfs:comment "Data Analytics is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Data Analytics"@en ;
+    dcterms:identifier "MV-9549" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Data Format
+mv:DataFormat a owl:Class ;
+    rdfs:label "Data Format"@en ;
+    rdfs:comment "Data Format is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Data Format"@en ;
+    dcterms:identifier "MV-9550" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Data Governance
+mv:DataGovernance a owl:Class ;
+    rdfs:label "Data Governance"@en ;
+    rdfs:comment "Data Governance is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Data Governance"@en ;
+    dcterms:identifier "MV-9551" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Data Integration
+mv:DataIntegration a owl:Class ;
+    rdfs:label "Data Integration"@en ;
+    rdfs:comment "Data Integration is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Data Integration"@en ;
+    dcterms:identifier "MV-9552" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Data Interoperability
+mv:DataInteroperability a owl:Class ;
+    rdfs:label "Data Interoperability"@en ;
+    rdfs:comment "Data Interoperability is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Data Interoperability"@en ;
+    dcterms:identifier "MV-9553" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Data Processing
+mv:DataProcessing a owl:Class ;
+    rdfs:label "Data Processing"@en ;
+    rdfs:comment "Data Processing is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Data Processing"@en ;
+    dcterms:identifier "MV-9554" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Data Protection Regulation
+mv:DataProtectionRegulation a owl:Class ;
+    rdfs:label "Data Protection Regulation"@en ;
+    rdfs:comment "Data Protection Regulation is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Data Protection Regulation"@en ;
+    dcterms:identifier "MV-9555" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Data Registry
+mv:DataRegistry a owl:Class ;
+    rdfs:label "Data Registry"@en ;
+    rdfs:comment "Data Registry is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Data Registry"@en ;
+    dcterms:identifier "MV-9556" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Data Security
+mv:DataSecurity a owl:Class ;
+    rdfs:label "Data Security"@en ;
+    rdfs:comment "Data Security is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Data Security"@en ;
+    dcterms:identifier "MV-9557" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Data Sharing
+mv:DataSharing a owl:Class ;
+    rdfs:label "Data Sharing"@en ;
+    rdfs:comment "Data Sharing is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Data Sharing"@en ;
+    dcterms:identifier "MV-9558" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Data Standards
+mv:DataStandards a owl:Class ;
+    rdfs:label "Data Standards"@en ;
+    rdfs:comment "Data Standards is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Data Standards"@en ;
+    dcterms:identifier "MV-9559" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Data Visualisation
+mv:DataVisualisation a owl:Class ;
+    rdfs:label "Data Visualisation"@en ;
+    rdfs:comment "Data Visualisation is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Data Visualisation"@en ;
+    dcterms:identifier "MV-9561" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Database Query
+mv:DatabaseQuery a owl:Class ;
+    rdfs:label "Database Query"@en ;
+    rdfs:comment "Database Query is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Database Query"@en ;
+    dcterms:identifier "MV-9562" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# De Fi Services
+mv:DeFiServices a owl:Class ;
+    rdfs:label "De Fi Services"@en ;
+    rdfs:comment "De Fi Services is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "De Fi Services"@en ;
+    dcterms:identifier "MV-9564" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Democratic Engagement
+mv:DemocraticEngagement a owl:Class ;
+    rdfs:label "Democratic Engagement"@en ;
+    rdfs:comment "Democratic Engagement is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Democratic Engagement"@en ;
+    dcterms:identifier "MV-9565" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Democratic Governance
+mv:DemocraticGovernance a owl:Class ;
+    rdfs:label "Democratic Governance"@en ;
+    rdfs:comment "Democratic Governance is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Democratic Governance"@en ;
+    dcterms:identifier "MV-9566" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Depth Sensing
+mv:DepthSensing a owl:Class ;
+    rdfs:label "Depth Sensing"@en ;
+    rdfs:comment "Depth Sensing is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Depth Sensing"@en ;
+    dcterms:identifier "MV-9567" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Design Software
+mv:DesignSoftware a owl:Class ;
+    rdfs:label "Design Software"@en ;
+    rdfs:comment "Design Software is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Design Software"@en ;
+    dcterms:identifier "MV-9568" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Development Platform
+mv:DevelopmentPlatform a owl:Class ;
+    rdfs:label "Development Platform"@en ;
+    rdfs:comment "Development Platform is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Development Platform"@en ;
+    dcterms:identifier "MV-9569" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Asset Market
+mv:DigitalAssetMarket a owl:Class ;
+    rdfs:label "Digital Asset Market"@en ;
+    rdfs:comment "Digital Asset Market is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Asset Market"@en ;
+    dcterms:identifier "MV-9570" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Asset Standards
+mv:DigitalAssetStandards a owl:Class ;
+    rdfs:label "Digital Asset Standards"@en ;
+    rdfs:comment "Digital Asset Standards is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Asset Standards"@en ;
+    dcterms:identifier "MV-9571" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Commerce
+mv:DigitalCommerce a owl:Class ;
+    rdfs:label "Digital Commerce"@en ;
+    rdfs:comment "Digital Commerce is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Commerce"@en ;
+    dcterms:identifier "MV-9572" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Content
+mv:DigitalContent a owl:Class ;
+    rdfs:label "Digital Content"@en ;
+    rdfs:comment "Digital Content is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Content"@en ;
+    dcterms:identifier "MV-9573" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Content Creation
+mv:DigitalContentCreation a owl:Class ;
+    rdfs:label "Digital Content Creation"@en ;
+    rdfs:comment "Digital Content Creation is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Content Creation"@en ;
+    dcterms:identifier "MV-9574" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Entertainment
+mv:DigitalEntertainment a owl:Class ;
+    rdfs:label "Digital Entertainment"@en ;
+    rdfs:comment "Digital Entertainment is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Entertainment"@en ;
+    dcterms:identifier "MV-9575" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Experience
+mv:DigitalExperience a owl:Class ;
+    rdfs:label "Digital Experience"@en ;
+    rdfs:comment "Digital Experience is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Experience"@en ;
+    dcterms:identifier "MV-9576" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Gaming
+mv:DigitalGaming a owl:Class ;
+    rdfs:label "Digital Gaming"@en ;
+    rdfs:comment "Digital Gaming is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Gaming"@en ;
+    dcterms:identifier "MV-9577" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Governance
+mv:DigitalGovernance a owl:Class ;
+    rdfs:label "Digital Governance"@en ;
+    rdfs:comment "Digital Governance is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Governance"@en ;
+    dcterms:identifier "MV-9578" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Heritage
+mv:DigitalHeritage a owl:Class ;
+    rdfs:label "Digital Heritage"@en ;
+    rdfs:comment "Digital Heritage is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Heritage"@en ;
+    dcterms:identifier "MV-9579" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Human Technology
+mv:DigitalHumanTechnology a owl:Class ;
+    rdfs:label "Digital Human Technology"@en ;
+    rdfs:comment "Digital Human Technology is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Human Technology"@en ;
+    dcterms:identifier "MV-9580" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Infrastructure
+mv:DigitalInfrastructure a owl:Class ;
+    rdfs:label "Digital Infrastructure"@en ;
+    rdfs:comment "Digital Infrastructure is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Infrastructure"@en ;
+    dcterms:identifier "MV-9581" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Marketing
+mv:DigitalMarketing a owl:Class ;
+    rdfs:label "Digital Marketing"@en ;
+    rdfs:comment "Digital Marketing is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Marketing"@en ;
+    dcterms:identifier "MV-9582" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Model
+mv:DigitalModel a owl:Class ;
+    rdfs:label "Digital Model"@en ;
+    rdfs:comment "Digital Model is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Model"@en ;
+    dcterms:identifier "MV-9583" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Modeling
+mv:DigitalModeling a owl:Class ;
+    rdfs:label "Digital Modeling"@en ;
+    rdfs:comment "Digital Modeling is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Modeling"@en ;
+    dcterms:identifier "MV-9584" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Platform
+mv:DigitalPlatform a owl:Class ;
+    rdfs:label "Digital Platform"@en ;
+    rdfs:comment "Digital Platform is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Platform"@en ;
+    dcterms:identifier "MV-9585" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Preservation
+mv:DigitalPreservation a owl:Class ;
+    rdfs:label "Digital Preservation"@en ;
+    rdfs:comment "Digital Preservation is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Preservation"@en ;
+    dcterms:identifier "MV-9586" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Property Rights
+mv:DigitalPropertyRights a owl:Class ;
+    rdfs:label "Digital Property Rights"@en ;
+    rdfs:comment "Digital Property Rights is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Property Rights"@en ;
+    dcterms:identifier "MV-9587" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Regulation
+mv:DigitalRegulation a owl:Class ;
+    rdfs:label "Digital Regulation"@en ;
+    rdfs:comment "Digital Regulation is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Regulation"@en ;
+    dcterms:identifier "MV-9588" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Safety
+mv:DigitalSafety a owl:Class ;
+    rdfs:label "Digital Safety"@en ;
+    rdfs:comment "Digital Safety is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Safety"@en ;
+    dcterms:identifier "MV-9589" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Security
+mv:DigitalSecurity a owl:Class ;
+    rdfs:label "Digital Security"@en ;
+    rdfs:comment "Digital Security is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Security"@en ;
+    dcterms:identifier "MV-9590" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Society
+mv:DigitalSociety a owl:Class ;
+    rdfs:label "Digital Society"@en ;
+    rdfs:comment "Digital Society is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Society"@en ;
+    dcterms:identifier "MV-9591" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Technology
+mv:DigitalTechnology a owl:Class ;
+    rdfs:label "Digital Technology"@en ;
+    rdfs:comment "Digital Technology is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Technology"@en ;
+    dcterms:identifier "MV-9592" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Digital Twin Technology
+mv:DigitalTwinTechnology a owl:Class ;
+    rdfs:label "Digital Twin Technology"@en ;
+    rdfs:comment "Digital Twin Technology is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Digital Twin Technology"@en ;
+    dcterms:identifier "MV-9593" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Distributed Systems
+mv:DistributedSystems a owl:Class ;
+    rdfs:label "Distributed Systems"@en ;
+    rdfs:comment "Distributed Systems is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Distributed Systems"@en ;
+    dcterms:identifier "MV-9594" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# E Commerce
+mv:ECommerce a owl:Class ;
+    rdfs:label "E Commerce"@en ;
+    rdfs:comment "E Commerce is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "E Commerce"@en ;
+    dcterms:identifier "MV-9595" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Economic Governance
+mv:EconomicGovernance a owl:Class ;
+    rdfs:label "Economic Governance"@en ;
+    rdfs:comment "Economic Governance is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Economic Governance"@en ;
+    dcterms:identifier "MV-9596" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Economic Systems
+mv:EconomicSystems a owl:Class ;
+    rdfs:label "Economic Systems"@en ;
+    rdfs:comment "Economic Systems is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Economic Systems"@en ;
+    dcterms:identifier "MV-9598" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Educational Methodology
+mv:EducationalMethodology a owl:Class ;
+    rdfs:label "Educational Methodology"@en ;
+    rdfs:comment "Educational Methodology is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Educational Methodology"@en ;
+    dcterms:identifier "MV-9599" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Environmental Accounting
+mv:EnvironmentalAccounting a owl:Class ;
+    rdfs:label "Environmental Accounting"@en ;
+    rdfs:comment "Environmental Accounting is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Environmental Accounting"@en ;
+    dcterms:identifier "MV-9600" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Environmental Assessment
+mv:EnvironmentalAssessment a owl:Class ;
+    rdfs:label "Environmental Assessment"@en ;
+    rdfs:comment "Environmental Assessment is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Environmental Assessment"@en ;
+    dcterms:identifier "MV-9601" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Environmental Certificate
+mv:EnvironmentalCertificate a owl:Class ;
+    rdfs:label "Environmental Certificate"@en ;
+    rdfs:comment "Environmental Certificate is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Environmental Certificate"@en ;
+    dcterms:identifier "MV-9602" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Environmental K P I
+mv:EnvironmentalKPI a owl:Class ;
+    rdfs:label "Environmental K P I"@en ;
+    rdfs:comment "Environmental K P I is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Environmental K P I"@en ;
+    dcterms:identifier "MV-9603" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Environmental Registry
+mv:EnvironmentalRegistry a owl:Class ;
+    rdfs:label "Environmental Registry"@en ;
+    rdfs:comment "Environmental Registry is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Environmental Registry"@en ;
+    dcterms:identifier "MV-9604" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Environmental Trading
+mv:EnvironmentalTrading a owl:Class ;
+    rdfs:label "Environmental Trading"@en ;
+    rdfs:comment "Environmental Trading is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Environmental Trading"@en ;
+    dcterms:identifier "MV-9605" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Environmental Verification
+mv:EnvironmentalVerification a owl:Class ;
+    rdfs:label "Environmental Verification"@en ;
+    rdfs:comment "Environmental Verification is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Environmental Verification"@en ;
+    dcterms:identifier "MV-9606" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Ethical Design Standard
+mv:EthicalDesignStandard a owl:Class ;
+    rdfs:label "Ethical Design Standard"@en ;
+    rdfs:comment "Ethical Design Standard is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Ethical Design Standard"@en ;
+    dcterms:identifier "MV-9607" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Event Management
+mv:EventManagement a owl:Class ;
+    rdfs:label "Event Management"@en ;
+    rdfs:comment "Event Management is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Event Management"@en ;
+    dcterms:identifier "MV-9608" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Exchange Mechanism
+mv:ExchangeMechanism a owl:Class ;
+    rdfs:label "Exchange Mechanism"@en ;
+    rdfs:comment "Exchange Mechanism is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Exchange Mechanism"@en ;
+    dcterms:identifier "MV-9609" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Film Production
+mv:FilmProduction a owl:Class ;
+    rdfs:label "Film Production"@en ;
+    rdfs:comment "Film Production is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Film Production"@en ;
+    dcterms:identifier "MV-9610" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Financial Infrastructure
+mv:FinancialInfrastructure a owl:Class ;
+    rdfs:label "Financial Infrastructure"@en ;
+    rdfs:comment "Financial Infrastructure is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Financial Infrastructure"@en ;
+    dcterms:identifier "MV-9611" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Financial Instruments
+mv:FinancialInstruments a owl:Class ;
+    rdfs:label "Financial Instruments"@en ;
+    rdfs:comment "Financial Instruments is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Financial Instruments"@en ;
+    dcterms:identifier "MV-9612" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Financial System
+mv:FinancialSystem a owl:Class ;
+    rdfs:label "Financial System"@en ;
+    rdfs:comment "Financial System is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Financial System"@en ;
+    dcterms:identifier "MV-9613" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Financial Technology
+mv:FinancialTechnology a owl:Class ;
+    rdfs:label "Financial Technology"@en ;
+    rdfs:comment "Financial Technology is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Financial Technology"@en ;
+    dcterms:identifier "MV-9614" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Financial Trading
+mv:FinancialTrading a owl:Class ;
+    rdfs:label "Financial Trading"@en ;
+    rdfs:comment "Financial Trading is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Financial Trading"@en ;
+    dcterms:identifier "MV-9615" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Financial Transactions
+mv:FinancialTransactions a owl:Class ;
+    rdfs:label "Financial Transactions"@en ;
+    rdfs:comment "Financial Transactions is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Financial Transactions"@en ;
+    dcterms:identifier "MV-9616" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Game Mechanics
+mv:GameMechanics a owl:Class ;
+    rdfs:label "Game Mechanics"@en ;
+    rdfs:comment "Game Mechanics is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Game Mechanics"@en ;
+    dcterms:identifier "MV-9617" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Generative Content
+mv:GenerativeContent a owl:Class ;
+    rdfs:label "Generative Content"@en ;
+    rdfs:comment "Generative Content is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Generative Content"@en ;
+    dcterms:identifier "MV-9618" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Geospatial Information
+mv:GeospatialInformation a owl:Class ;
+    rdfs:label "Geospatial Information"@en ;
+    rdfs:comment "Geospatial Information is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Geospatial Information"@en ;
+    dcterms:identifier "MV-9619" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Geospatial Technology
+mv:GeospatialTechnology a owl:Class ;
+    rdfs:label "Geospatial Technology"@en ;
+    rdfs:comment "Geospatial Technology is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Geospatial Technology"@en ;
+    dcterms:identifier "MV-9620" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Governance
+mv:Governance a owl:Class ;
+    rdfs:label "Governance"@en ;
+    rdfs:comment "Governance is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Governance"@en ;
+    dcterms:identifier "MV-9621" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Graphics Library
+mv:GraphicsLibrary a owl:Class ;
+    rdfs:label "Graphics Library"@en ;
+    rdfs:comment "Graphics Library is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Graphics Library"@en ;
+    dcterms:identifier "MV-9623" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Hardware
+mv:Hardware a owl:Class ;
+    rdfs:label "Hardware"@en ;
+    rdfs:comment "Hardware is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Hardware"@en ;
+    dcterms:identifier "MV-9624" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Hardware Abstraction
+mv:HardwareAbstraction a owl:Class ;
+    rdfs:label "Hardware Abstraction"@en ;
+    rdfs:comment "Hardware Abstraction is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Hardware Abstraction"@en ;
+    dcterms:identifier "MV-9625" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Hardware Component
+mv:HardwareComponent a owl:Class ;
+    rdfs:label "Hardware Component"@en ;
+    rdfs:comment "Hardware Component is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Hardware Component"@en ;
+    dcterms:identifier "MV-9626" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Healthcare Technology
+mv:HealthcareTechnology a owl:Class ;
+    rdfs:label "Healthcare Technology"@en ;
+    rdfs:comment "Healthcare Technology is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Healthcare Technology"@en ;
+    dcterms:identifier "MV-9627" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Human Computer Interface
+mv:HumanComputerInterface a owl:Class ;
+    rdfs:label "Human Computer Interface"@en ;
+    rdfs:comment "Human Computer Interface is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Human Computer Interface"@en ;
+    dcterms:identifier "MV-9629" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Identity
+mv:Identity a owl:Class ;
+    rdfs:label "Identity"@en ;
+    rdfs:comment "Identity is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Identity"@en ;
+    dcterms:identifier "MV-9630" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Identity Standards
+mv:IdentityStandards a owl:Class ;
+    rdfs:label "Identity Standards"@en ;
+    rdfs:comment "Identity Standards is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Identity Standards"@en ;
+    dcterms:identifier "MV-9632" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Identity Systems
+mv:IdentitySystems a owl:Class ;
+    rdfs:label "Identity Systems"@en ;
+    rdfs:comment "Identity Systems is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Identity Systems"@en ;
+    dcterms:identifier "MV-9633" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Imaging Parameters
+mv:ImagingParameters a owl:Class ;
+    rdfs:label "Imaging Parameters"@en ;
+    rdfs:comment "Imaging Parameters is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Imaging Parameters"@en ;
+    dcterms:identifier "MV-9634" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Immersive Audio Technology
+mv:ImmersiveAudioTechnology a owl:Class ;
+    rdfs:label "Immersive Audio Technology"@en ;
+    rdfs:comment "Immersive Audio Technology is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Immersive Audio Technology"@en ;
+    dcterms:identifier "MV-9635" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Information Architecture
+mv:InformationArchitecture a owl:Class ;
+    rdfs:label "Information Architecture"@en ;
+    rdfs:comment "Information Architecture is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Information Architecture"@en ;
+    dcterms:identifier "MV-9636" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Information Retrieval
+mv:InformationRetrieval a owl:Class ;
+    rdfs:label "Information Retrieval"@en ;
+    rdfs:comment "Information Retrieval is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Information Retrieval"@en ;
+    dcterms:identifier "MV-9637" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Intelligent Systems
+mv:IntelligentSystems a owl:Class ;
+    rdfs:label "Intelligent Systems"@en ;
+    rdfs:comment "Intelligent Systems is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Intelligent Systems"@en ;
+    dcterms:identifier "MV-9638" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Interactive Storytelling
+mv:InteractiveStorytelling a owl:Class ;
+    rdfs:label "Interactive Storytelling"@en ;
+    rdfs:comment "Interactive Storytelling is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Interactive Storytelling"@en ;
+    dcterms:identifier "MV-9639" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Interchange Protocol
+mv:InterchangeProtocol a owl:Class ;
+    rdfs:label "Interchange Protocol"@en ;
+    rdfs:comment "Interchange Protocol is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Interchange Protocol"@en ;
+    dcterms:identifier "MV-9640" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Investment Management
+mv:InvestmentManagement a owl:Class ;
+    rdfs:label "Investment Management"@en ;
+    rdfs:comment "Investment Management is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Investment Management"@en ;
+    dcterms:identifier "MV-9641" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Knowledge Management
+mv:KnowledgeManagement a owl:Class ;
+    rdfs:label "Knowledge Management"@en ;
+    rdfs:comment "Knowledge Management is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Knowledge Management"@en ;
+    dcterms:identifier "MV-9642" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Knowledge Management System
+mv:KnowledgeManagementSystem a owl:Class ;
+    rdfs:label "Knowledge Management System"@en ;
+    rdfs:comment "Knowledge Management System is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Knowledge Management System"@en ;
+    dcterms:identifier "MV-9643" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Knowledge Organization
+mv:KnowledgeOrganization a owl:Class ;
+    rdfs:label "Knowledge Organization"@en ;
+    rdfs:comment "Knowledge Organization is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Knowledge Organization"@en ;
+    dcterms:identifier "MV-9644" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Knowledge Organization System
+mv:KnowledgeOrganizationSystem a owl:Class ;
+    rdfs:label "Knowledge Organization System"@en ;
+    rdfs:comment "Knowledge Organization System is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Knowledge Organization System"@en ;
+    dcterms:identifier "MV-9645" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Loyalty Programs
+mv:LoyaltyPrograms a owl:Class ;
+    rdfs:label "Loyalty Programs"@en ;
+    rdfs:comment "Loyalty Programs is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Loyalty Programs"@en ;
+    dcterms:identifier "MV-9647" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Metaverse Classification
+mv:MetaverseClassification a owl:Class ;
+    rdfs:label "Metaverse Classification"@en ;
+    rdfs:comment "Metaverse Classification is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Metaverse Classification"@en ;
+    dcterms:identifier "MV-9649" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Mixed Reality Platform
+mv:MixedRealityPlatform a owl:Class ;
+    rdfs:label "Mixed Reality Platform"@en ;
+    rdfs:comment "Mixed Reality Platform is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Mixed Reality Platform"@en ;
+    dcterms:identifier "MV-9650" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Motion Capture Technology
+mv:MotionCaptureTechnology a owl:Class ;
+    rdfs:label "Motion Capture Technology"@en ;
+    rdfs:comment "Motion Capture Technology is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Motion Capture Technology"@en ;
+    dcterms:identifier "MV-9651" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Multi User Systems
+mv:MultiUserSystems a owl:Class ;
+    rdfs:label "Multi User Systems"@en ;
+    rdfs:comment "Multi User Systems is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Multi User Systems"@en ;
+    dcterms:identifier "MV-9653" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Narrative Structure
+mv:NarrativeStructure a owl:Class ;
+    rdfs:label "Narrative Structure"@en ;
+    rdfs:comment "Narrative Structure is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Narrative Structure"@en ;
+    dcterms:identifier "MV-9654" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Network Quality Metric
+mv:NetworkQualityMetric a owl:Class ;
+    rdfs:label "Network Quality Metric"@en ;
+    rdfs:comment "Network Quality Metric is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Network Quality Metric"@en ;
+    dcterms:identifier "MV-9657" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Ontology Structure
+mv:OntologyStructure a owl:Class ;
+    rdfs:label "Ontology Structure"@en ;
+    rdfs:comment "Ontology Structure is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Ontology Structure"@en ;
+    dcterms:identifier "MV-9658" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Open Standard
+mv:OpenStandard a owl:Class ;
+    rdfs:label "Open Standard"@en ;
+    rdfs:comment "Open Standard is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Open Standard"@en ;
+    dcterms:identifier "MV-9659" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Organizational Change
+mv:OrganizationalChange a owl:Class ;
+    rdfs:label "Organizational Change"@en ;
+    rdfs:comment "Organizational Change is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Organizational Change"@en ;
+    dcterms:identifier "MV-9660" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Performing Arts
+mv:PerformingArts a owl:Class ;
+    rdfs:label "Performing Arts"@en ;
+    rdfs:comment "Performing Arts is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Performing Arts"@en ;
+    dcterms:identifier "MV-9661" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Physics Simulation
+mv:PhysicsSimulation a owl:Class ;
+    rdfs:label "Physics Simulation"@en ;
+    rdfs:comment "Physics Simulation is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Physics Simulation"@en ;
+    dcterms:identifier "MV-9662" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Pre Production
+mv:PreProduction a owl:Class ;
+    rdfs:label "Pre Production"@en ;
+    rdfs:comment "Pre Production is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Pre Production"@en ;
+    dcterms:identifier "MV-9664" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Privacy Disclosure
+mv:PrivacyDisclosure a owl:Class ;
+    rdfs:label "Privacy Disclosure"@en ;
+    rdfs:comment "Privacy Disclosure is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Privacy Disclosure"@en ;
+    dcterms:identifier "MV-9665" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Privacy Framework
+mv:PrivacyFramework a owl:Class ;
+    rdfs:label "Privacy Framework"@en ;
+    rdfs:comment "Privacy Framework is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Privacy Framework"@en ;
+    dcterms:identifier "MV-9666" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Production Design
+mv:ProductionDesign a owl:Class ;
+    rdfs:label "Production Design"@en ;
+    rdfs:comment "Production Design is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Production Design"@en ;
+    dcterms:identifier "MV-9667" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Production Facility
+mv:ProductionFacility a owl:Class ;
+    rdfs:label "Production Facility"@en ;
+    rdfs:comment "Production Facility is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Production Facility"@en ;
+    dcterms:identifier "MV-9668" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Production Pipeline
+mv:ProductionPipeline a owl:Class ;
+    rdfs:label "Production Pipeline"@en ;
+    rdfs:comment "Production Pipeline is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Production Pipeline"@en ;
+    dcterms:identifier "MV-9669" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Property Rights
+mv:PropertyRights a owl:Class ;
+    rdfs:label "Property Rights"@en ;
+    rdfs:comment "Property Rights is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Property Rights"@en ;
+    dcterms:identifier "MV-9670" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Query Processor
+mv:QueryProcessor a owl:Class ;
+    rdfs:label "Query Processor"@en ;
+    rdfs:comment "Query Processor is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Query Processor"@en ;
+    dcterms:identifier "MV-9671" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Reference Standard
+mv:ReferenceStandard a owl:Class ;
+    rdfs:label "Reference Standard"@en ;
+    rdfs:comment "Reference Standard is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Reference Standard"@en ;
+    dcterms:identifier "MV-9672" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Regulatory Technology
+mv:RegulatoryTechnology a owl:Class ;
+    rdfs:label "Regulatory Technology"@en ;
+    rdfs:comment "Regulatory Technology is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Regulatory Technology"@en ;
+    dcterms:identifier "MV-9674" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Reinforcement Learning
+mv:ReinforcementLearning a owl:Class ;
+    rdfs:label "Reinforcement Learning"@en ;
+    rdfs:comment "Reinforcement Learning is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Reinforcement Learning"@en ;
+    dcterms:identifier "MV-9675" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Rendering Technology
+mv:RenderingTechnology a owl:Class ;
+    rdfs:label "Rendering Technology"@en ;
+    rdfs:comment "Rendering Technology is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Rendering Technology"@en ;
+    dcterms:identifier "MV-9676" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Research Methods
+mv:ResearchMethods a owl:Class ;
+    rdfs:label "Research Methods"@en ;
+    rdfs:comment "Research Methods is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Research Methods"@en ;
+    dcterms:identifier "MV-9677" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Revenue Distribution
+mv:RevenueDistribution a owl:Class ;
+    rdfs:label "Revenue Distribution"@en ;
+    rdfs:comment "Revenue Distribution is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Revenue Distribution"@en ;
+    dcterms:identifier "MV-9678" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Runtime Environment
+mv:RuntimeEnvironment a owl:Class ;
+    rdfs:label "Runtime Environment"@en ;
+    rdfs:comment "Runtime Environment is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Runtime Environment"@en ;
+    dcterms:identifier "MV-9679" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Scene Graph Format
+mv:SceneGraphFormat a owl:Class ;
+    rdfs:label "Scene Graph Format"@en ;
+    rdfs:comment "Scene Graph Format is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Scene Graph Format"@en ;
+    dcterms:identifier "MV-9680" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Security Services
+mv:SecurityServices a owl:Class ;
+    rdfs:label "Security Services"@en ;
+    rdfs:comment "Security Services is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Security Services"@en ;
+    dcterms:identifier "MV-9682" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Security Token Offering
+mv:SecurityTokenOffering a owl:Class ;
+    rdfs:label "Security Token Offering"@en ;
+    rdfs:comment "Security Token Offering is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Security Token Offering"@en ;
+    dcterms:identifier "MV-9683" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Signal Processing
+mv:SignalProcessing a owl:Class ;
+    rdfs:label "Signal Processing"@en ;
+    rdfs:comment "Signal Processing is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Signal Processing"@en ;
+    dcterms:identifier "MV-9684" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Simulation Software
+mv:SimulationSoftware a owl:Class ;
+    rdfs:label "Simulation Software"@en ;
+    rdfs:comment "Simulation Software is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Simulation Software"@en ;
+    dcterms:identifier "MV-9685" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Social Network Graph
+mv:SocialNetworkGraph a owl:Class ;
+    rdfs:label "Social Network Graph"@en ;
+    rdfs:comment "Social Network Graph is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Social Network Graph"@en ;
+    dcterms:identifier "MV-9686" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Software Infrastructure
+mv:SoftwareInfrastructure a owl:Class ;
+    rdfs:label "Software Infrastructure"@en ;
+    rdfs:comment "Software Infrastructure is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Software Infrastructure"@en ;
+    dcterms:identifier "MV-9688" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Software Library
+mv:SoftwareLibrary a owl:Class ;
+    rdfs:label "Software Library"@en ;
+    rdfs:comment "Software Library is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Software Library"@en ;
+    dcterms:identifier "MV-9689" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Software Testing
+mv:SoftwareTesting a owl:Class ;
+    rdfs:label "Software Testing"@en ;
+    rdfs:comment "Software Testing is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Software Testing"@en ;
+    dcterms:identifier "MV-9690" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Spatial Data Structure
+mv:SpatialDataStructure a owl:Class ;
+    rdfs:label "Spatial Data Structure"@en ;
+    rdfs:comment "Spatial Data Structure is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Spatial Data Structure"@en ;
+    dcterms:identifier "MV-9691" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Spatial Mapping Technology
+mv:SpatialMappingTechnology a owl:Class ;
+    rdfs:label "Spatial Mapping Technology"@en ;
+    rdfs:comment "Spatial Mapping Technology is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Spatial Mapping Technology"@en ;
+    dcterms:identifier "MV-9692" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Spatial Tracking Technology
+mv:SpatialTrackingTechnology a owl:Class ;
+    rdfs:label "Spatial Tracking Technology"@en ;
+    rdfs:comment "Spatial Tracking Technology is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Spatial Tracking Technology"@en ;
+    dcterms:identifier "MV-9693" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Standards Based Taxonomy
+mv:StandardsBasedTaxonomy a owl:Class ;
+    rdfs:label "Standards Based Taxonomy"@en ;
+    rdfs:comment "Standards Based Taxonomy is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Standards Based Taxonomy"@en ;
+    dcterms:identifier "MV-9694" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Standards Organization
+mv:StandardsOrganization a owl:Class ;
+    rdfs:label "Standards Organization"@en ;
+    rdfs:comment "Standards Organization is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Standards Organization"@en ;
+    dcterms:identifier "MV-9695" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Storytelling
+mv:Storytelling a owl:Class ;
+    rdfs:label "Storytelling"@en ;
+    rdfs:comment "Storytelling is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Storytelling"@en ;
+    dcterms:identifier "MV-9696" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Storytelling Structure
+mv:StorytellingStructure a owl:Class ;
+    rdfs:label "Storytelling Structure"@en ;
+    rdfs:comment "Storytelling Structure is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Storytelling Structure"@en ;
+    dcterms:identifier "MV-9697" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Strategic Planning
+mv:StrategicPlanning a owl:Class ;
+    rdfs:label "Strategic Planning"@en ;
+    rdfs:comment "Strategic Planning is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Strategic Planning"@en ;
+    dcterms:identifier "MV-9698" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Sustainability Tool
+mv:SustainabilityTool a owl:Class ;
+    rdfs:label "Sustainability Tool"@en ;
+    rdfs:comment "Sustainability Tool is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Sustainability Tool"@en ;
+    dcterms:identifier "MV-9699" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# System Integration
+mv:SystemIntegration a owl:Class ;
+    rdfs:label "System Integration"@en ;
+    rdfs:comment "System Integration is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "System Integration"@en ;
+    dcterms:identifier "MV-9701" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# System Software
+mv:SystemSoftware a owl:Class ;
+    rdfs:label "System Software"@en ;
+    rdfs:comment "System Software is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "System Software"@en ;
+    dcterms:identifier "MV-9702" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Technical Architecture
+mv:TechnicalArchitecture a owl:Class ;
+    rdfs:label "Technical Architecture"@en ;
+    rdfs:comment "Technical Architecture is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Technical Architecture"@en ;
+    dcterms:identifier "MV-9703" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Technical Architecture Framework
+mv:TechnicalArchitectureFramework a owl:Class ;
+    rdfs:label "Technical Architecture Framework"@en ;
+    rdfs:comment "Technical Architecture Framework is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Technical Architecture Framework"@en ;
+    dcterms:identifier "MV-9704" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Technology Ecosystem
+mv:TechnologyEcosystem a owl:Class ;
+    rdfs:label "Technology Ecosystem"@en ;
+    rdfs:comment "Technology Ecosystem is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Technology Ecosystem"@en ;
+    dcterms:identifier "MV-9707" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Technology Infrastructure
+mv:TechnologyInfrastructure a owl:Class ;
+    rdfs:label "Technology Infrastructure"@en ;
+    rdfs:comment "Technology Infrastructure is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Technology Infrastructure"@en ;
+    dcterms:identifier "MV-9708" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Technology Stack
+mv:TechnologyStack a owl:Class ;
+    rdfs:label "Technology Stack"@en ;
+    rdfs:comment "Technology Stack is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Technology Stack"@en ;
+    dcterms:identifier "MV-9709" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Testing Infrastructure
+mv:TestingInfrastructure a owl:Class ;
+    rdfs:label "Testing Infrastructure"@en ;
+    rdfs:comment "Testing Infrastructure is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Testing Infrastructure"@en ;
+    dcterms:identifier "MV-9711" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Tokenomics
+mv:Tokenomics a owl:Class ;
+    rdfs:label "Tokenomics"@en ;
+    rdfs:comment "Tokenomics is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Tokenomics"@en ;
+    dcterms:identifier "MV-9712" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Tourism Industry
+mv:TourismIndustry a owl:Class ;
+    rdfs:label "Tourism Industry"@en ;
+    rdfs:comment "Tourism Industry is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Tourism Industry"@en ;
+    dcterms:identifier "MV-9713" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Tracking Hardware
+mv:TrackingHardware a owl:Class ;
+    rdfs:label "Tracking Hardware"@en ;
+    rdfs:comment "Tracking Hardware is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Tracking Hardware"@en ;
+    dcterms:identifier "MV-9714" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# User Education
+mv:UserEducation a owl:Class ;
+    rdfs:label "User Education"@en ;
+    rdfs:comment "User Education is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "User Education"@en ;
+    dcterms:identifier "MV-9715" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# User Interface
+mv:UserInterface a owl:Class ;
+    rdfs:label "User Interface"@en ;
+    rdfs:comment "User Interface is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "User Interface"@en ;
+    dcterms:identifier "MV-9716" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# User Safety
+mv:UserSafety a owl:Class ;
+    rdfs:label "User Safety"@en ;
+    rdfs:comment "User Safety is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "User Safety"@en ;
+    dcterms:identifier "MV-9717" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# V F X Tools
+mv:VFXTools a owl:Class ;
+    rdfs:label "V F X Tools"@en ;
+    rdfs:comment "V F X Tools is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "V F X Tools"@en ;
+    dcterms:identifier "MV-9718" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# V R Psychology
+mv:VRPsychology a owl:Class ;
+    rdfs:label "V R Psychology"@en ;
+    rdfs:comment "V R Psychology is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "V R Psychology"@en ;
+    dcterms:identifier "MV-9719" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Virtual Economy
+mv:VirtualEconomy a owl:Class ;
+    rdfs:label "Virtual Economy"@en ;
+    rdfs:comment "Virtual Economy is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Virtual Economy"@en ;
+    dcterms:identifier "MV-9720" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Virtual Event
+mv:VirtualEvent a owl:Class ;
+    rdfs:label "Virtual Event"@en ;
+    rdfs:comment "Virtual Event is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Virtual Event"@en ;
+    dcterms:identifier "MV-9721" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Virtual Experience
+mv:VirtualExperience a owl:Class ;
+    rdfs:label "Virtual Experience"@en ;
+    rdfs:comment "Virtual Experience is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Virtual Experience"@en ;
+    dcterms:identifier "MV-9722" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Virtual Reality Applications
+mv:VirtualRealityApplications a owl:Class ;
+    rdfs:label "Virtual Reality Applications"@en ;
+    rdfs:comment "Virtual Reality Applications is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Virtual Reality Applications"@en ;
+    dcterms:identifier "MV-9723" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Virtual Reality Platform
+mv:VirtualRealityPlatform a owl:Class ;
+    rdfs:label "Virtual Reality Platform"@en ;
+    rdfs:comment "Virtual Reality Platform is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Virtual Reality Platform"@en ;
+    dcterms:identifier "MV-9724" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Virtual Workspace
+mv:VirtualWorkspace a owl:Class ;
+    rdfs:label "Virtual Workspace"@en ;
+    rdfs:comment "Virtual Workspace is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Virtual Workspace"@en ;
+    dcterms:identifier "MV-9725" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Visual Effects
+mv:VisualEffects a owl:Class ;
+    rdfs:label "Visual Effects"@en ;
+    rdfs:comment "Visual Effects is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Visual Effects"@en ;
+    dcterms:identifier "MV-9726" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Web Standards
+mv:WebStandards a owl:Class ;
+    rdfs:label "Web Standards"@en ;
+    rdfs:comment "Web Standards is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Web Standards"@en ;
+    dcterms:identifier "MV-9727" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# Workforce Development
+mv:WorkforceDevelopment a owl:Class ;
+    rdfs:label "Workforce Development"@en ;
+    rdfs:comment "Workforce Development is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "Workforce Development"@en ;
+    dcterms:identifier "MV-9728" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# X R Framework
+mv:XRFramework a owl:Class ;
+    rdfs:label "X R Framework"@en ;
+    rdfs:comment "X R Framework is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "X R Framework"@en ;
+    dcterms:identifier "MV-9729" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# X R Hardware
+mv:XRHardware a owl:Class ;
+    rdfs:label "X R Hardware"@en ;
+    rdfs:comment "X R Hardware is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "X R Hardware"@en ;
+    dcterms:identifier "MV-9730" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
+
+# X R Technical Standard
+mv:XRTechnicalStandard a owl:Class ;
+    rdfs:label "X R Technical Standard"@en ;
+    rdfs:comment "X R Technical Standard is a concept within the metaverse domain. Further enrichment pending."@en ;
+    skos:prefLabel "X R Technical Standard"@en ;
+    dcterms:identifier "MV-9731" ;
+    dcterms:subject "mv" ;
+    rdf:type owl:conceptClass .
 
 # Robot Singularity
 rb:RobotSingularity a owl:Class ;
@@ -53787,33 +56043,6 @@ ai:MachineLearningModels rdfs:subClassOf [
     owl:someValuesFrom ai:PatternRecognition
 ] .
 
-# Machine Learning Pipeline
-ai:MachineLearningPipeline a owl:Class ;
-    rdfs:subClassOf ai:MLOps ;
-    rdfs:label "Machine Learning Pipeline"@en ;
-    rdfs:comment "Automated workflow systems that orchestrate the end-to-end machine learning lifecycle from data ingestion and preprocessing through model training, validation, deployment, and monitoring using MLOps practices."@en ;
-    skos:prefLabel "Machine Learning Pipeline"@en ;
-    dcterms:identifier "MV-9953" ;
-    dcterms:subject "ai" .
-
-ai:MachineLearningPipeline rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:enables ;
-    owl:someValuesFrom ai:ProductionMLSystems
-] .
-
-ai:MachineLearningPipeline rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:relatedTo ;
-    owl:someValuesFrom ai:ContinuousIntegration
-] .
-
-ai:MachineLearningPipeline rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:relatedTo ;
-    owl:someValuesFrom ai:ModelDeployment
-] .
-
 # Machine Learning Platform
 ai:MachineLearningPlatform a owl:Class ;
     rdfs:subClassOf ai:CloudComputing ;
@@ -55430,16 +57659,6 @@ ngm:DaoGovernance a owl:Class ;
     dcterms:type "reviewed" ;
     rdf:type owl:ConceptClass .
 
-# NaturalLanguageProcessing
-ngm:Naturallanguageprocessing a owl:Class ;
-    rdfs:label "NaturalLanguageProcessing"@en ;
-    rdfs:comment "Natural Language Processing (NLP) is a subfield of artificial intelligence that studies the relationship between computers and human language, enabling machines to understand, interpret, and generate natural language. Modern NLP is dominated by transformer architectures using self-attention mechanisms, with pre-trained models like BERT and GPT achieving state-of-the-art results across language tasks."@en ;
-    skos:prefLabel "NaturalLanguageProcessing"@en ;
-    dcterms:identifier "NGM-7017" ;
-    dcterms:subject "ngm" ;
-    dcterms:type "complete" ;
-    rdf:type owl:DisciplineClass .
-
 # Rendering Engine
 ngm:RenderingEngine a owl:Class ;
     rdfs:label "Rendering Engine"@en ;
@@ -55689,6 +57908,25 @@ ngm:TechnologyEcosystem a owl:Class ;
     dcterms:subject "ngm" ;
     dcterms:type "reviewed" ;
     rdf:type owl:IndustryEcosystemClass .
+
+# owl Thing
+ngm:owlThing a owl:Class ;
+    rdfs:label "owl Thing"@en ;
+    rdfs:comment "owl Thing is a concept within the ontology domain. Further enrichment pending."@en ;
+    skos:prefLabel "owl Thing"@en ;
+    dcterms:identifier "NGM-9501" ;
+    dcterms:subject "ngm" ;
+    rdf:type owl:conceptClass .
+
+# ONT-9001
+ngm:Domain a owl:Class ;
+    dcterms:identifier "ONT-9001" ;
+    dcterms:subject "ngm" .
+
+# ONT-9002
+ngm:OwlThing a owl:Class ;
+    dcterms:identifier "ONT-9002" ;
+    dcterms:subject "ngm" .
 
 # Ontology Property Definitions
 dt:OntologyPropertyDefinitions a owl:Class ;
@@ -60176,6 +62414,249 @@ rb:SocialNavigation a owl:Class ;
     dcterms:type "emerging" ;
     rdf:type owl:ProcessClass .
 
+# Bayes Filter
+rb:BayesFilter a owl:Class ;
+    rdfs:label "Bayes Filter"@en ;
+    rdfs:comment "Bayes Filter is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Bayes Filter"@en ;
+    dcterms:identifier "RB-9501" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Compliance Control
+rb:ComplianceControl a owl:Class ;
+    rdfs:label "Compliance Control"@en ;
+    rdfs:comment "Compliance Control is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Compliance Control"@en ;
+    dcterms:identifier "RB-9502" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Conceptual Hierarchy
+rb:ConceptualHierarchy a owl:Class ;
+    rdfs:label "Conceptual Hierarchy"@en ;
+    rdfs:comment "Conceptual Hierarchy is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Conceptual Hierarchy"@en ;
+    dcterms:identifier "RB-9503" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Control Algorithm
+rb:ControlAlgorithm a owl:Class ;
+    rdfs:label "Control Algorithm"@en ;
+    rdfs:comment "Control Algorithm is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Control Algorithm"@en ;
+    dcterms:identifier "RB-9504" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Domain Ontology
+rb:DomainOntology a owl:Class ;
+    rdfs:label "Domain Ontology"@en ;
+    rdfs:comment "Domain Ontology is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Domain Ontology"@en ;
+    dcterms:identifier "RB-9505" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Exteroceptive Sensor
+rb:ExteroceptiveSensor a owl:Class ;
+    rdfs:label "Exteroceptive Sensor"@en ;
+    rdfs:comment "Exteroceptive Sensor is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Exteroceptive Sensor"@en ;
+    dcterms:identifier "RB-9507" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Graph Search
+rb:GraphSearch a owl:Class ;
+    rdfs:label "Graph Search"@en ;
+    rdfs:comment "Graph Search is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Graph Search"@en ;
+    dcterms:identifier "RB-9509" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Ground Robot
+rb:GroundRobot a owl:Class ;
+    rdfs:label "Ground Robot"@en ;
+    rdfs:comment "Ground Robot is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Ground Robot"@en ;
+    dcterms:identifier "RB-9510" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Human Factors
+rb:HumanFactors a owl:Class ;
+    rdfs:label "Human Factors"@en ;
+    rdfs:comment "Human Factors is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Human Factors"@en ;
+    dcterms:identifier "RB-9511" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Hybrid Robot
+rb:HybridRobot a owl:Class ;
+    rdfs:label "Hybrid Robot"@en ;
+    rdfs:comment "Hybrid Robot is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Hybrid Robot"@en ;
+    dcterms:identifier "RB-9512" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Hydraulic Actuator
+rb:HydraulicActuator a owl:Class ;
+    rdfs:label "Hydraulic Actuator"@en ;
+    rdfs:comment "Hydraulic Actuator is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Hydraulic Actuator"@en ;
+    dcterms:identifier "RB-9513" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Interaction Control
+rb:InteractionControl a owl:Class ;
+    rdfs:label "Interaction Control"@en ;
+    rdfs:comment "Interaction Control is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Interaction Control"@en ;
+    dcterms:identifier "RB-9514" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Kinematic Element
+rb:KinematicElement a owl:Class ;
+    rdfs:label "Kinematic Element"@en ;
+    rdfs:comment "Kinematic Element is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Kinematic Element"@en ;
+    dcterms:identifier "RB-9515" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Kinematics
+rb:Kinematics a owl:Class ;
+    rdfs:label "Kinematics"@en ;
+    rdfs:comment "Kinematics is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Kinematics"@en ;
+    dcterms:identifier "RB-9516" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Lidar
+rb:Lidar a owl:Class ;
+    rdfs:label "Lidar"@en ;
+    rdfs:comment "Lidar is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Lidar"@en ;
+    dcterms:identifier "RB-9519" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Mechanical Component
+rb:MechanicalComponent a owl:Class ;
+    rdfs:label "Mechanical Component"@en ;
+    rdfs:comment "Mechanical Component is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Mechanical Component"@en ;
+    dcterms:identifier "RB-9520" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# R B 1002 closedloopcontrol
+rb:RB1002closedloopcontrol a owl:Class ;
+    rdfs:label "R B 1002 closedloopcontrol"@en ;
+    rdfs:comment "R B 1002 closedloopcontrol is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "R B 1002 closedloopcontrol"@en ;
+    dcterms:identifier "RB-9522" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# R B 1013 localization
+rb:RB1013localization a owl:Class ;
+    rdfs:label "R B 1013 localization"@en ;
+    rdfs:comment "R B 1013 localization is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "R B 1013 localization"@en ;
+    dcterms:identifier "RB-9523" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# R B 1016 pathplanning
+rb:RB1016pathplanning a owl:Class ;
+    rdfs:label "R B 1016 pathplanning"@en ;
+    rdfs:comment "R B 1016 pathplanning is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "R B 1016 pathplanning"@en ;
+    dcterms:identifier "RB-9524" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Reactive Control
+rb:ReactiveControl a owl:Class ;
+    rdfs:label "Reactive Control"@en ;
+    rdfs:comment "Reactive Control is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Reactive Control"@en ;
+    dcterms:identifier "RB-9525" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Rigid Body
+rb:RigidBody a owl:Class ;
+    rdfs:label "Rigid Body"@en ;
+    rdfs:comment "Rigid Body is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Rigid Body"@en ;
+    dcterms:identifier "RB-9526" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Robot Actuator
+rb:RobotActuator a owl:Class ;
+    rdfs:label "Robot Actuator"@en ;
+    rdfs:comment "Robot Actuator is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Robot Actuator"@en ;
+    dcterms:identifier "RB-9527" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Robot Standard
+rb:RobotStandard a owl:Class ;
+    rdfs:label "Robot Standard"@en ;
+    rdfs:comment "Robot Standard is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Robot Standard"@en ;
+    dcterms:identifier "RB-9529" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Servo Control
+rb:ServoControl a owl:Class ;
+    rdfs:label "Servo Control"@en ;
+    rdfs:comment "Servo Control is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Servo Control"@en ;
+    dcterms:identifier "RB-9530" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Structural Member
+rb:StructuralMember a owl:Class ;
+    rdfs:label "Structural Member"@en ;
+    rdfs:comment "Structural Member is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Structural Member"@en ;
+    dcterms:identifier "RB-9531" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Taxonomic Framework
+rb:TaxonomicFramework a owl:Class ;
+    rdfs:label "Taxonomic Framework"@en ;
+    rdfs:comment "Taxonomic Framework is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Taxonomic Framework"@en ;
+    dcterms:identifier "RB-9532" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
+# Wheeled Robot
+rb:WheeledRobot a owl:Class ;
+    rdfs:label "Wheeled Robot"@en ;
+    rdfs:comment "Wheeled Robot is a concept within the robotics domain. Further enrichment pending."@en ;
+    skos:prefLabel "Wheeled Robot"@en ;
+    dcterms:identifier "RB-9536" ;
+    dcterms:subject "rb" ;
+    rdf:type owl:conceptClass .
+
 # Telecollaboration Domain
 tc:TelecollaborationDomain a owl:Class ;
     rdfs:label "Telecollaboration Domain"@en ;
@@ -61709,6 +64190,10 @@ tc:NetworkProtocol a owl:Class ;
     dcterms:type "reviewed" ;
     rdf:type owl:StandardClass .
 
+# TC-9001
+tc:3DReconstruction a owl:Class ;
+    dcterms:identifier "TC-9001" .
+
 # Threaded Messaging
 tc:ThreadedMessaging a owl:Class ;
     rdfs:label "Threaded Messaging"@en ;
@@ -61728,6 +64213,10 @@ tc:VoiceMemo a owl:Class ;
     dcterms:subject "tc" ;
     dcterms:type "emerging" ;
     rdf:type owl:ObjectClass .
+
+# TC-9003
+tc:AugmentedReality a owl:Class ;
+    dcterms:identifier "TC-9003" .
 
 # Video Async
 tc:VideoAsync a owl:Class ;
@@ -61749,6 +64238,14 @@ tc:SocialPresence a owl:Class ;
     dcterms:type "mature" ;
     rdf:type owl:AttributeClass .
 
+# TC-9005
+tc:BlockchainApplication a owl:Class ;
+    dcterms:identifier "TC-9005" .
+
+# TC-9006
+tc:Collaboration a owl:Class ;
+    dcterms:identifier "TC-9006" .
+
 # Self Presence
 tc:SelfPresence a owl:Class ;
     rdfs:label "Self Presence"@en ;
@@ -61758,6 +64255,181 @@ tc:SelfPresence a owl:Class ;
     dcterms:subject "tc" ;
     dcterms:type "emerging" ;
     rdf:type owl:AttributeClass .
+
+# TC-9007
+tc:CollaborationPlatform a owl:Class ;
+    dcterms:identifier "TC-9007" .
+
+# TC-9008
+tc:CollaborativeTechnology a owl:Class ;
+    dcterms:identifier "TC-9008" .
+
+# TC-9009
+tc:ConvergenceConcept a owl:Class ;
+    dcterms:identifier "TC-9009" .
+
+# TC-9010
+tc:CrossDomainBridge a owl:Class ;
+    dcterms:identifier "TC-9010" .
+
+# TC-9011
+tc:DigitalInfrastructure a owl:Class ;
+    dcterms:identifier "TC-9011" .
+
+# TC-9012
+tc:DigitalTwin a owl:Class ;
+    dcterms:identifier "TC-9012" .
+
+# TC-9013
+tc:DistributedWork a owl:Class ;
+    dcterms:identifier "TC-9013" .
+
+# TC-9015
+tc:MetaverseTechnology a owl:Class ;
+    dcterms:identifier "TC-9015" .
+
+# TC-9016
+tc:NetworkInfrastructure a owl:Class ;
+    dcterms:identifier "TC-9016" .
+
+# TC-9017
+tc:NetworkingStandard a owl:Class ;
+    dcterms:identifier "TC-9017" .
+
+# TC-9018
+tc:RealTimeRenderingPipeline a owl:Class ;
+    dcterms:identifier "TC-9018" .
+
+# TC-9019
+tc:RemoteCollaboration a owl:Class ;
+    dcterms:identifier "TC-9019" .
+
+# TC-9020
+tc:RoboticsApplication a owl:Class ;
+    dcterms:identifier "TC-9020" .
+
+# TC-9022
+tc:TELE002telecollaboration a owl:Class ;
+    dcterms:identifier "TC-9022" .
+
+# TC-9023
+tc:TELE020virtualrealitytelepresence a owl:Class ;
+    dcterms:identifier "TC-9023" .
+
+# TC-9024
+tc:Telepresence a owl:Class ;
+    dcterms:identifier "TC-9024" .
+
+# TC-9025
+tc:VideoConferencing a owl:Class ;
+    dcterms:identifier "TC-9025" .
+
+# TC-9026
+tc:VirtualCollaboration a owl:Class ;
+    dcterms:identifier "TC-9026" .
+
+# TC-9027
+tc:VirtualReality a owl:Class ;
+    dcterms:identifier "TC-9027" .
+
+# Language Translation
+tc:LanguageTranslation a owl:Class ;
+    rdfs:label "Language Translation"@en ;
+    rdfs:comment "Language Translation is a concept within the telecollaboration domain. Further enrichment pending."@en ;
+    skos:prefLabel "Language Translation"@en ;
+    dcterms:identifier "TC-9503" ;
+    dcterms:subject "tc" ;
+    rdf:type owl:conceptClass .
+
+# Media Theory
+tc:MediaTheory a owl:Class ;
+    rdfs:label "Media Theory"@en ;
+    rdfs:comment "Media Theory is a concept within the telecollaboration domain. Further enrichment pending."@en ;
+    skos:prefLabel "Media Theory"@en ;
+    dcterms:identifier "TC-9504" ;
+    dcterms:subject "tc" ;
+    rdf:type owl:conceptClass .
+
+# Metaverse Application
+tc:MetaverseApplication a owl:Class ;
+    rdfs:label "Metaverse Application"@en ;
+    rdfs:comment "Metaverse Application is a concept within the telecollaboration domain. Further enrichment pending."@en ;
+    skos:prefLabel "Metaverse Application"@en ;
+    dcterms:identifier "TC-9505" ;
+    dcterms:subject "tc" ;
+    rdf:type owl:conceptClass .
+
+# Neural Rendering
+tc:NeuralRendering a owl:Class ;
+    rdfs:label "Neural Rendering"@en ;
+    rdfs:comment "Neural Rendering is a concept within the telecollaboration domain. Further enrichment pending."@en ;
+    skos:prefLabel "Neural Rendering"@en ;
+    dcterms:identifier "TC-9506" ;
+    dcterms:subject "tc" ;
+    rdf:type owl:conceptClass .
+
+# Organisational Theory
+tc:OrganisationalTheory a owl:Class ;
+    rdfs:label "Organisational Theory"@en ;
+    rdfs:comment "Organisational Theory is a concept within the telecollaboration domain. Further enrichment pending."@en ;
+    skos:prefLabel "Organisational Theory"@en ;
+    dcterms:identifier "TC-9507" ;
+    dcterms:subject "tc" ;
+    rdf:type owl:conceptClass .
+
+# Perceptual Experience
+tc:PerceptualExperience a owl:Class ;
+    rdfs:label "Perceptual Experience"@en ;
+    rdfs:comment "Perceptual Experience is a concept within the telecollaboration domain. Further enrichment pending."@en ;
+    skos:prefLabel "Perceptual Experience"@en ;
+    dcterms:identifier "TC-9508" ;
+    dcterms:subject "tc" ;
+    rdf:type owl:conceptClass .
+
+# Psychological Phenomenon
+tc:PsychologicalPhenomenon a owl:Class ;
+    rdfs:label "Psychological Phenomenon"@en ;
+    rdfs:comment "Psychological Phenomenon is a concept within the telecollaboration domain. Further enrichment pending."@en ;
+    skos:prefLabel "Psychological Phenomenon"@en ;
+    dcterms:identifier "TC-9509" ;
+    dcterms:subject "tc" ;
+    rdf:type owl:conceptClass .
+
+# Remote Communication
+tc:RemoteCommunication a owl:Class ;
+    rdfs:label "Remote Communication"@en ;
+    rdfs:comment "Remote Communication is a concept within the telecollaboration domain. Further enrichment pending."@en ;
+    skos:prefLabel "Remote Communication"@en ;
+    dcterms:identifier "TC-9510" ;
+    dcterms:subject "tc" ;
+    rdf:type owl:conceptClass .
+
+# Robotic System
+tc:RoboticSystem a owl:Class ;
+    rdfs:label "Robotic System"@en ;
+    rdfs:comment "Robotic System is a concept within the telecollaboration domain. Further enrichment pending."@en ;
+    skos:prefLabel "Robotic System"@en ;
+    dcterms:identifier "TC-9511" ;
+    dcterms:subject "tc" ;
+    rdf:type owl:conceptClass .
+
+# T E L E 001 telepresence
+tc:TELE001telepresence a owl:Class ;
+    rdfs:label "T E L E 001 telepresence"@en ;
+    rdfs:comment "T E L E 001 telepresence is a concept within the telecollaboration domain. Further enrichment pending."@en ;
+    skos:prefLabel "T E L E 001 telepresence"@en ;
+    dcterms:identifier "TC-9512" ;
+    dcterms:subject "tc" ;
+    rdf:type owl:conceptClass .
+
+# T E L E 050 neuralrenderingtelepresence
+tc:TELE050neuralrenderingtelepresence a owl:Class ;
+    rdfs:label "T E L E 050 neuralrenderingtelepresence"@en ;
+    rdfs:comment "T E L E 050 neuralrenderingtelepresence is a concept within the telecollaboration domain. Further enrichment pending."@en ;
+    skos:prefLabel "T E L E 050 neuralrenderingtelepresence"@en ;
+    dcterms:identifier "TC-9513" ;
+    dcterms:subject "tc" ;
+    rdf:type owl:conceptClass .
 
 # Leeds Digital Hub
 ngm:LeedsDigitalHub a owl:Class ;

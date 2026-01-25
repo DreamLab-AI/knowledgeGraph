@@ -11,9 +11,9 @@
   ],
   "wiki_links": [
     "Cryptography",
+    "Digital Signature",
     "Cryptographic Keys",
     "Random Number Generation",
-    "Digital Signature",
     "Key Derivation Function",
     "Security Architecture",
     "Private Key"

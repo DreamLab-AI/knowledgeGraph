@@ -6,17 +6,17 @@
     "Narrative Design Ontology"
   ],
   "wiki_links": [
+    "Relationship Modeling",
+    "Story Analysis",
+    "Character AI",
+    "Graph Database",
+    "Social Simulation",
+    "Game AI",
+    "Interactive Fiction",
     "metaverse",
     "Character Attributes",
-    "Game AI",
-    "Graph Database",
-    "Social Network Graph",
-    "Social Simulation",
-    "Story Analysis",
-    "Relationship Modeling",
-    "Interactive Fiction",
     "Narrative Generation",
-    "Character AI"
+    "Social Network Graph"
   ],
   "ontology": {
     "term_id": "MV-9819",

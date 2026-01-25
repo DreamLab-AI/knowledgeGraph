@@ -1,0 +1,62 @@
+{
+  "id": "Telepresence",
+  "title": "Telepresence",
+  "content": "- ### OntologyBlock\n  id:: tc9024-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-9024\n\t- domain:: tc\n\t- owl:class:: tc:Telepresence\n\t- public-access:: true\n\n## Definition\n\nTelepresence encompasses technologies and experiences creating the perception of being physically present in remote locations, enabling natural interaction with distant environments and participants. This domain spans video telepresence systems with large displays and spatial audio replicating in-person meetings, robotic telepresence platforms providing mobile physical presence, and immersive XR systems enabling embodied presence in virtual or augmented spaces. High-fidelity video telepresence (Cisco TelePresence, Polycom RealPresence) employs ultra-high-definition cameras, specialized room designs with matched lighting and backgrounds, and low-latency networking creating seamless eye contact and spatial continuity. Technical requirements include sub-100ms end-to-end latency preventing conversational disruption, synchronized lip movement and audio, and spatial audio preserving directional cues. Modern implementations integrate AI-powered background replacement, automatic framing following speakers, and noise suppression isolating voices from ambient sound. Advanced telepresence systems employ light field displays creating glasses-free 3D effects, volumetric capture generating 3D holographic representations transmitted as point clouds or neural representations, and haptic feedback providing tactile presence. The convergence of telepresence technologies aims to create indistinguishable remote and co-located experiences through multimodal sensory fidelity, natural interaction affordances, and cognitive presence in shared contexts.\n\n## References\n\n- IEEE International Conference on Multimedia and Expo. (2024). \"Telepresence Systems and Applications.\" https://www.ieee.org/\n- Cisco. (2024). \"Webex Hologram Telepresence Platform.\" https://www.cisco.com/\n- Microsoft. (2024). \"Azure Communication Services for Telepresence.\" https://azure.microsoft.com/services/communication-services/\n- ACM Multimedia. (2024). \"Immersive Telepresence Research.\" https://www.acmmm.org/\n- ITU-T F.730. (2024). \"Framework and Requirements for Telepresence Systems.\" https://www.itu.int/",
+  "backlinks": [
+    "Immersion",
+    "Virtual Presence",
+    "tc-0003-telepresence-robot",
+    "Immersive Communication",
+    "Audio Parameters"
+  ],
+  "wiki_links": [],
+  "ontology": {
+    "term_id": "TC-9024",
+    "preferred_term": null,
+    "alt_terms": [],
+    "iri": "http://narrativegoldmine.com/telecollaboration#Telepresence",
+    "source_domain": null,
+    "domain": "tc",
+    "domain_full_name": "Telecollaboration",
+    "definition": null,
+    "scope_note": null,
+    "status": null,
+    "maturity": null,
+    "version": null,
+    "public_access": true,
+    "last_updated": null,
+    "authority_score": null,
+    "quality_score": null,
+    "cross_domain_links": null,
+    "owl_class": "tc:Telepresence",
+    "owl_physicality": null,
+    "owl_role": null,
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "domain_extensions": {},
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "source": [],
+    "validation": {
+      "is_valid": false,
+      "errors": [
+        "Missing required property: preferred-term",
+        "Missing required property: source-domain",
+        "Missing required property: status",
+        "Missing required property: last-updated",
+        "Missing required property: definition",
+        "Missing required property: owl:physicality",
+        "Missing required property: owl:role",
+        "Missing required property: is-subclass-of (at least one parent class)"
+      ]
+    }
+  }
+}
