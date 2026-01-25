@@ -7,19 +7,19 @@
   ],
   "wiki_links": [
     "Decentralised Governance",
-    "Cryptocurrency",
-    "DeFi",
-    "Game Theory",
-    "MEV",
-    "Value Capture",
-    "Monetary Policy",
-    "Network Incentives",
-    "Staking",
     "Blockchain Economics",
     "BlockchainDomain",
+    "MEV",
     "Behavioural Economics",
+    "Value Capture",
+    "Smart Contract",
+    "DeFi",
+    "Network Incentives",
+    "Monetary Policy",
+    "Staking",
     "Governance Token",
-    "Smart Contract"
+    "Cryptocurrency",
+    "Game Theory"
   ],
   "ontology": {
     "term_id": "BC-7009",

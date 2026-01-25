@@ -13,17 +13,17 @@
   ],
   "wiki_links": [
     "Game Development",
-    "Metaverse",
-    "Unreal Engine",
-    "Virtual Reality",
-    "Blender",
+    "Augmented Reality",
     "Real-time Visualisation",
+    "Virtual Reality",
+    "Metaverse",
+    "Digital Twin",
+    "Blender",
+    "Unreal Engine",
+    "Computer Graphics",
     "Unity",
     "XR Applications",
-    "Immersive Experiences",
-    "Digital Twin",
-    "Augmented Reality",
-    "Computer Graphics"
+    "Immersive Experiences"
   ],
   "ontology": {
     "term_id": "NGM-7009",

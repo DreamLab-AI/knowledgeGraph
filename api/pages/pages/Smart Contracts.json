@@ -40,16 +40,16 @@
     "Decentralized Finance"
   ],
   "wiki_links": [
-    "Cryptographic Hash Function",
-    "Blockchain",
-    "Decentralized Application",
-    "Distributed Systems",
-    "Distributed Computing",
     "Decentralized Finance",
     "Tokenization",
-    "Automated Market Maker",
+    "Digital Signature",
+    "Decentralized Application",
+    "Distributed Computing",
+    "Cryptographic Hash Function",
+    "Blockchain",
+    "Distributed Systems",
     "Ethereum",
-    "Digital Signature"
+    "Automated Market Maker"
   ],
   "ontology": {
     "term_id": "BC-7013",

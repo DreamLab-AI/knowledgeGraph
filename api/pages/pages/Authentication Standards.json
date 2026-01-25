@@ -9,11 +9,11 @@
     "Security Standards",
     "metaverse",
     "Passwordless Authentication",
-    "Public Key Cryptography",
+    "Hardware Authenticators",
     "Phishing Resistance",
-    "Secure Platform Access",
+    "Public Key Cryptography",
     "Client Implementation",
-    "Hardware Authenticators"
+    "Secure Platform Access"
   ],
   "ontology": {
     "term_id": "MV-9785",

@@ -6,11 +6,11 @@
     "Post-Quantum Cryptography"
   ],
   "wiki_links": [
-    "Cryptographic Security",
-    "metaverse",
     "Blockchain Security",
-    "Secure Digital Systems",
-    "Post-Quantum Cryptography"
+    "metaverse",
+    "Post-Quantum Cryptography",
+    "Cryptographic Security",
+    "Secure Digital Systems"
   ],
   "ontology": {
     "term_id": "MV-9957",

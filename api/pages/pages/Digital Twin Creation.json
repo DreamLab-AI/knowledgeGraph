@@ -7,17 +7,17 @@
     "Lidar Scanning"
   ],
   "wiki_links": [
-    "Predictive Analytics",
-    "Digital Modeling",
-    "Simulation",
     "Real-Time Monitoring",
-    "Sensor Data",
     "metaverse",
+    "Predictive Analytics",
+    "Sensor Data",
     "Asset Management",
-    "Virtual Prototype",
+    "Simulation",
     "Lifecycle Management",
+    "Digital Modeling",
     "3D Modeling",
-    "IoT Integration"
+    "IoT Integration",
+    "Virtual Prototype"
   ],
   "ontology": {
     "term_id": "MV-9876",

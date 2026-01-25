@@ -10,11 +10,11 @@
   ],
   "wiki_links": [
     "Scalable Systems",
-    "Enterprise Architecture",
     "metaverse",
+    "Enterprise Architecture",
+    "Design Patterns",
     "Software Architecture",
-    "TOGAF",
-    "Design Patterns"
+    "TOGAF"
   ],
   "ontology": {
     "term_id": "MV-10019",

@@ -8,15 +8,15 @@
   "wiki_links": [
     "Real-Time Data Access",
     "metaverse",
-    "Query Engine",
     "ETL",
-    "Data Fabric",
+    "Query Engine",
     "Unified Data View",
-    "Data Warehouse",
-    "Data Connectors",
     "Data Integration",
-    "Data Federation",
-    "Metadata Management"
+    "Data Connectors",
+    "Data Warehouse",
+    "Metadata Management",
+    "Data Fabric",
+    "Data Federation"
   ],
   "ontology": {
     "term_id": "MV-9841",

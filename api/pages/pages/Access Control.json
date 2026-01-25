@@ -28,15 +28,15 @@
     "ETSI_Domain_Data_Management___Culture"
   ],
   "wiki_links": [
-    "Data Protection",
-    "Compliance",
-    "Security Policy",
-    "System Security",
-    "Identity Management",
     "Authorisation",
+    "Authentication Service",
+    "Identity Management",
     "Security Mechanism",
     "Permission Management",
-    "Authentication Service",
+    "Data Protection",
+    "Compliance",
+    "System Security",
+    "Security Policy",
     "Core Technology"
   ],
   "ontology": {

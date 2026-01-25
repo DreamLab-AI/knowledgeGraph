@@ -6,10 +6,10 @@
     "ETSI_Domain_Data_Mgmt___AI"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "MLOps",
     "ArtificialIntelligenceDomain",
-    "Data Engineering"
+    "Data Engineering",
+    "MLOps",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-9008",

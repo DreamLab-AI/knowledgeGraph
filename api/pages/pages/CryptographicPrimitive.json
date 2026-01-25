@@ -29,13 +29,13 @@
     "BC-0028-sha-256"
   ],
   "wiki_links": [
-    "Symmetric Encryption",
     "Cryptographic Protocol",
-    "Blockchain",
-    "Cryptography",
-    "Hash Function",
     "Asymmetric Encryption",
-    "Digital Signature"
+    "Symmetric Encryption",
+    "Digital Signature",
+    "Blockchain",
+    "Hash Function",
+    "Cryptography"
   ],
   "ontology": {
     "term_id": "BC-7004",

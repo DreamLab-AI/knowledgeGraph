@@ -9,11 +9,11 @@
     "Cryptographic Key Management"
   ],
   "wiki_links": [
-    "System Architecture",
     "metaverse",
     "Identity Management",
-    "Threat Detection",
     "Secure Systems",
+    "System Architecture",
+    "Threat Detection",
     "Zero Trust Security"
   ],
   "ontology": {

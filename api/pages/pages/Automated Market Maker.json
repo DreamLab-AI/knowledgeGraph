@@ -11,14 +11,14 @@
     "Decentralized Exchange (DEX)"
   ],
   "wiki_links": [
-    "Permissionless Trading",
-    "Liquidity Provision",
-    "Pricing Algorithms",
     "metaverse",
-    "Token Swaps",
-    "DeFi Protocol",
+    "Liquidity Provision",
+    "Permissionless Trading",
     "Smart Contracts",
-    "Liquidity Pools"
+    "Liquidity Pools",
+    "Pricing Algorithms",
+    "DeFi Protocol",
+    "Token Swaps"
   ],
   "ontology": {
     "term_id": "MV-9786",

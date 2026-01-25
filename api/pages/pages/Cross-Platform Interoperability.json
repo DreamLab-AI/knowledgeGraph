@@ -13,12 +13,12 @@
     "Distributed Authentication Architecture"
   ],
   "wiki_links": [
-    "Relayer",
-    "DeFi",
     "Layer 0",
     "Light Client",
+    "Cross-Chain Bridge",
+    "DeFi",
     "Next Generation Mobile",
-    "Cross-Chain Bridge"
+    "Relayer"
   ],
   "ontology": {
     "term_id": "NGM-7015",

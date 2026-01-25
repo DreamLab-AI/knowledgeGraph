@@ -10,13 +10,13 @@
     "Cryptographic Keys"
   ],
   "wiki_links": [
-    "Cryptographic Keys",
     "Random Number Generation",
-    "Cryptography",
-    "Private Key",
     "Security Architecture",
+    "Private Key",
+    "Digital Signature",
     "Key Derivation Function",
-    "Digital Signature"
+    "Cryptography",
+    "Cryptographic Keys"
   ],
   "ontology": {
     "term_id": "BC-7011",
