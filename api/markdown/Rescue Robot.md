@@ -13,7 +13,6 @@
 	- definition:: **Rescue Robot** - Rescue Robot in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:RescueRobot
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0017 rescue robot

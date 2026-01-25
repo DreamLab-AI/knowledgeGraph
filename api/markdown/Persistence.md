@@ -2,7 +2,7 @@
   id:: persistence-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247951
+	- term-id:: MV-3019
 	- preferred-term:: Persistence
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:Persistence
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Persistence

@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[DeFi Standards 2024]], [[ISO 24165]]
 	- owl:class:: mv:LiquidityPool
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

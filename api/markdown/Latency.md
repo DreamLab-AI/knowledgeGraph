@@ -2,7 +2,7 @@
   id:: latency-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20148
+	- term-id:: MV-20148
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ETSI ARF 010]]
 	- owl:class:: mv:Latency
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

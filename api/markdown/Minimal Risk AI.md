@@ -2,7 +2,7 @@
   id:: minimal-risk-ai-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247945
+	- term-id:: MV-3011
 	- preferred-term:: Minimal Risk AI
 	- source-domain:: mv
 	- status:: draft
@@ -292,7 +292,6 @@ Other jurisdictions with similar minimal-risk categories:
 - OECD AI Principles 2024 (Voluntary framework)
 	- maturity:: draft
 	- owl:class:: mv:MinimalRiskAI
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Minimal Risk AI

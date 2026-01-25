@@ -2,7 +2,7 @@
   id:: sparql-examples-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247966
+	- term-id:: MV-3052
 	- preferred-term:: SPARQL EXAMPLES
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:SPARQLEXAMPLES
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

@@ -262,7 +262,6 @@ Curriculum learning demonstrates that the order of example presentation matters,
 **Verification Status**: Verified against curriculum learning literature
 	- maturity:: draft
 	- owl:class:: mv:CurriculumLearning
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Curriculum Learning

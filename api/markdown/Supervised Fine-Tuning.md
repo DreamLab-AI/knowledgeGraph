@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0250
 	- preferred-term:: Supervised Fine Tuning
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: A fine-tuning approach that uses labelled training data to adapt a pre-trained model to specific tasks, optimising performance through supervised learning on input-output pairs. Supervised fine-tuning (SFT) represents the most direct path from general pre-training to task-specific capability.
 
@@ -147,9 +147,8 @@ Supervised fine-tuning provides the crucial bridge between general pre-training 
 **Verification Status**: Verified against InstructGPT and Constitutional AI papers
 	- maturity:: draft
 	- owl:class:: ai:SupervisedFineTuning
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Supervised Fine Tuning
 	- A fine-tuning approach that uses labelled training data to adapt a pre-trained model to specific tasks, optimising performance through supervised learning on input-output pairs. Supervised fine-tuning (SFT) represents the most direct path from general pre-training to task-specific capability.
 

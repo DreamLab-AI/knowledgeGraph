@@ -19,10 +19,9 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:EdgeAISystem
-    - owl:physicality:: VirtualEntity
+    - owl:class:: ai:EdgeAISystem
     - owl:role:: Process
-    - owl:inferred-class:: aigo:VirtualProcess
+    - owl:inferred-class:: ai:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 

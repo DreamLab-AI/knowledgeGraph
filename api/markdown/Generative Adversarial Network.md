@@ -11,7 +11,6 @@
 A **Generative Adversarial Network (GAN)** is a machine learning architecture consisting of two neural networks—a generator and a discriminator—trained simultaneously in an adversarial process. The generator creates synthetic data resembling training data, while the discriminator attempts to distinguish real from generated data.
 	- maturity:: draft
 	- owl:class:: mv:GenerativeAdversarialNetwork
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Generative Adversarial Network

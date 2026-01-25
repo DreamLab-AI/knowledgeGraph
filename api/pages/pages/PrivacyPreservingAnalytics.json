@@ -1,13 +1,13 @@
 {
   "id": "PrivacyPreservingAnalytics",
   "title": "PrivacyPreservingAnalytics",
-  "content": "- ### OntologyBlock\n  id:: PrivacyPreservingAnalytics\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1005\n  - preferred-term:: PrivacyPreservingAnalytics\n  - source-domain:: ai\n  - status:: complete\n  - owl:class:: ai:Privacypreservinganalytics\n  - definition:: A privacy preserving analytics component in the Artificial Intelligence domain that enables EtsiDomainDataManagementEthics.\n\n### Relationships\n- is-subclass-of:: [[AI Analysis Method]]",
+  "content": "- ### OntologyBlock\n  id:: PrivacyPreservingAnalytics\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-4013\n  - preferred-term:: PrivacyPreservingAnalytics\n  - source-domain:: ai\n  - status:: complete\n  - owl:class:: ai:Privacypreservinganalytics\n  - definition:: A privacy preserving analytics component in the Artificial Intelligence domain that enables EtsiDomainDataManagementEthics.\n\n### Relationships\n- is-subclass-of:: [[AI Analysis Method]]",
   "backlinks": [],
   "wiki_links": [
     "AI Analysis Method"
   ],
   "ontology": {
-    "term_id": "AI-1005",
+    "term_id": "AI-4013",
     "preferred_term": "PrivacyPreservingAnalytics",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/ai#Privacypreservinganalytics",

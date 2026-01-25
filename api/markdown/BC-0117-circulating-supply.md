@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:CirculatingSupply
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[TokenEconomicsDomain]]
@@ -115,3 +114,6 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0117>
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
   -
 
+
+
+<!-- Merged from Circulating Supply.md: Blockchain, Tokenomics -->

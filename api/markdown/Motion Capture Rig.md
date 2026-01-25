@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO/IEC 17820]]
 	- owl:class:: mv:MotionCaptureRig
-	- owl:physicality:: PhysicalEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:PhysicalObject
 	- owl:functional-syntax:: true

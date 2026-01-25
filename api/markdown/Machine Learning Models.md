@@ -4,7 +4,7 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9952
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- preferred-term:: Machine Learning Models
 	- status:: active
 	- owl:class:: ai:MachineLearningModels

@@ -2,7 +2,7 @@
   id:: hal-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20167
+	- term-id:: MV-20167
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[MSF Taxonomy 2025]]
 	- owl:class:: mv:HardwareAbstractionLayer
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

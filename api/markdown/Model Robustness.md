@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0075
 	- preferred-term:: Model Robustness
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: The capacity of a machine learning model to maintain consistent and reliable performance when exposed to variations in input data, including noise, distributional shifts, and edge cases, without catastrophic degradation in accuracy or functionality.
 
@@ -103,9 +103,8 @@ metrics: [robust_accuracy, worst_case_performance, ood_detection]
 *Model robustness ensures AI systems perform reliably in real-world conditions with inevitable data variations.*
 	- maturity:: draft
 	- owl:class:: ai:ModelRobustness
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Model Robustness
 	- The capacity of a machine learning model to maintain consistent and reliable performance when exposed to variations in input data, including noise, distributional shifts, and edge cases, without catastrophic degradation in accuracy or functionality.
 

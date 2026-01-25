@@ -11,7 +11,6 @@
 	- maturity:: production
 	- belongsToDomain:: [[Blockchain]]
 	- owl:class:: bc:BlockchainCompliance
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 
 ---

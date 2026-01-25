@@ -2,7 +2,7 @@
   id:: glossary_index-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247929
+	- term-id:: MV-3000
 	- preferred-term:: Glossary_Index
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:Glossary_Index
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Glossary_Index

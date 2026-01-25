@@ -592,7 +592,6 @@ Regulators and civil society organisations raised concerns about **fairness wash
 Academic research in 2025 proposed **fairness certification schemes** analogous to security certifications, with independent third parties verifying fairness claims against standardised criteria, though widespread adoption remained nascent.
 	- maturity:: draft
 	- owl:class:: mv:Fairness
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

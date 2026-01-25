@@ -506,7 +506,6 @@ def evaluate_robustness(model, test_data, epsilon=0.1):
 *This definition emphasizes robustness as a fundamental quality attribute encompassing multiple dimensions critical for trustworthy AI deployment.*
 	- maturity:: draft
 	- owl:class:: mv:Robustness
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Robustness

@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ETSI GR ARF 010]]
 	- owl:class:: mv:IntelligentVirtualEntity
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Agent
 	- owl:inferred-class:: mv:VirtualAgent
 	- owl:functional-syntax:: true

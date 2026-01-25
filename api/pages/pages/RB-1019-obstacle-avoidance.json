@@ -1,35 +1,35 @@
 {
   "id": "RB-1019-obstacle-avoidance",
   "title": "Obstacle Avoidance",
-  "content": "- ### OntologyBlock\n  id:: obstacle-avoidance-ontology\n  collapsed:: true\n  - ontology:: true\n  - term-id:: RB-1019\n  - preferred-term:: Obstacle Avoidance\n  - alternate-terms:: Collision Avoidance\n  - source-domain:: rb\n  - status:: complete\n  - public-access:: true\n  - version:: 1.0.0\n  - last-updated:: 2025-11-24\n\n- **Definition**\n  - definition:: The capability of a mobile robot or autonomous system to detect and avoid collisions with obstacles in its environment in real-time using sensors and reactive control strategies. It enables safe navigation without requiring complete prior knowledge of the environment.\n  - maturity:: mature\n  - source:: [[Mobile Robotics]], [[Reactive Control]]\n  - authority-score:: 0.96\n\n- **Semantic Classification**\n  - owl:class:: rb:ObstacleAvoidance\n  - owl:physicality:: Abstract\n  - owl:role:: Method\n  - belongsToDomain:: [[Robotics]], [[Autonomous Navigation]], [[Safety Systems]]\n\n- #### OWL Restrictions\n  - is-subclass-of:: [[Reactive Control]]\n  - requires:: [[Proximity Sensors]]\n  - requires:: [[Real-Time Processing]]\n  - detects:: [[Obstacles]]\n  - generates:: [[Avoidance Maneuver]]\n  - characterized-by:: [[Real-Time]], [[Reactivity]]\n\n- #### Relationships\n  id:: rb-1019-relationships\n  - is-subclass-of:: [[Reactive Control]]\n  - complements:: [[RB-1016-path-planning]]\n  - uses:: [[LIDAR]], [[Ultrasonic Sensor]], [[Camera]], [[Radar]]\n  - enables:: [[Safe Navigation]], [[Collision-Free Motion]]\n  - skos:related:: [[RB-1007-trajectory-generation]], [[RB-1013-localization]]\n  - applied-in:: [[Autonomous Vehicles]], [[Mobile Robots]], [[Drones]]\n\n- **Approaches**\n  - **Reactive Methods** (sensor-based, local)\n  - **Deliberative Methods** (planning-based, global)\n  - **Hybrid Methods** (combine both)\n\n- **Reactive Obstacle Avoidance Methods**\n  1. **Potential Field Method**\n     - Attractive force toward goal\n     - Repulsive force from obstacles\n     - Combines forces to generate motion\n     - Issues: Local minima, oscillations\n  2. **Vector Field Histogram (VFH)**\n     - Builds polar histogram from sensor data\n     - Selects best direction based on clearance\n     - Good for cluttered environments\n  3. **Dynamic Window Approach (DWA)**\n     - Samples velocity space\n     - Evaluates trajectories for collision\n     - Selects best trajectory (speed, heading)\n     - Considers robot dynamics\n  4. **Velocity Obstacles (VO)**\n     - Geometric approach\n     - Predicts collision based on velocities\n     - Avoids velocity that leads to collision\n  5. **Bubble Band Technique**\n     - Maintains safe bubble around robot\n     - Adjusts based on obstacles\n  6. **Curvature Velocity Method**\n     - Considers robot kinematics\n     - Generates feasible curved paths\n\n- **Sensor Types for Obstacle Detection**\n  - **LIDAR/Laser Scanner**:\n    - High accuracy, 2D/3D point clouds\n    - Long range, high update rate\n  - **Ultrasonic Sensors**:\n    - Low cost, short range\n    - Wide beam, prone to noise\n  - **Cameras (Vision)**:\n    - Rich information, color/texture\n    - Requires image processing\n    - Stereo or RGB-D for depth\n  - **Radar**:\n    - All-weather operation\n    - Medium range, Doppler velocity\n  - **Infrared Sensors**:\n    - Low cost, short range\n    - Simple but limited\n\n- **Potential Field Method Details**\n  - **Attractive Potential**: U_att = ½ k_att ||q - q_goal||²\n  - **Repulsive Potential**: U_rep = ½ k_rep (1/d - 1/d₀)² if d < d₀\n  - **Total Force**: F = -∇U = F_att + F_rep\n  - **Advantages**:\n    - Simple, elegant\n    - Real-time capable\n    - Smooth motion\n  - **Challenges**:\n    - Local minima (trapped)\n    - Oscillations in narrow passages\n    - Goal non-reachable obstacle nearby (GNRON)\n\n- **Dynamic Window Approach (DWA) Details**\n  - Search space: (v, ω) velocity and angular velocity\n  - Dynamic window: Feasible (v, ω) given current state\n  - Objective function: G(v, ω) = α·heading + β·dist + γ·velocity\n    - heading: alignment to goal\n    - dist: distance to obstacle\n    - velocity: forward progress\n  - Select (v, ω) maximizing G\n\n- **Velocity Obstacles (VO) Concept**\n  - For two moving objects: robot and obstacle\n  - VO: set of robot velocities leading to collision\n  - Avoidance: choose velocity outside VO\n  - Extensions: ORCA (Optimal Reciprocal Collision Avoidance)\n\n- **Multi-Sensor Fusion**\n  - Combine complementary sensors\n  - Improve robustness and reliability\n  - Common: LIDAR + Camera + Ultrasonic\n  - Sensor fusion algorithms: Kalman Filter, Bayesian methods\n\n- **Challenges**\n  - **Dynamic Obstacles**: Moving people, vehicles\n  - **Uncertain Sensors**: Noise, occlusions\n  - **Real-Time Constraints**: Fast response needed\n  - **Narrow Passages**: Limited clearance\n  - **Crowded Environments**: Many obstacles\n  - **Non-Holonomic Constraints**: Car-like robots\n  - **Unexpected Obstacles**: Unknown environment\n\n- **Applications**\n  - **Autonomous Vehicles**:\n    - Pedestrian detection and avoidance\n    - Vehicle-to-vehicle collision avoidance\n  - **Mobile Robots**:\n    - Warehouse AGVs\n    - Cleaning robots (Roomba)\n    - Delivery robots\n  - **Drones/UAVs**:\n    - Aerial obstacle avoidance\n    - Forest/indoor navigation\n  - **Humanoid Robots**:\n    - Walking in human environments\n  - **Underwater/Aerial**:\n    - ROVs, submersibles, aircraft\n\n- **Integration with Path Planning**\n  - Global path from [[RB-1016-path-planning]]\n  - Local obstacle avoidance for unexpected obstacles\n  - Hybrid architecture: plan globally, react locally\n\n- **Safety Considerations**\n  - Fail-safe mechanisms (emergency stop)\n  - Redundant sensors\n  - Conservative clearance margins\n  - Predictive models for moving obstacles\n  - Compliance with safety standards (e.g., [[RB-1011-cobot-safety-levels]])\n\n- **Performance Metrics**\n  - Collision-free rate\n  - Path smoothness\n  - Computational efficiency\n  - Reaction time\n  - Clearance from obstacles\n  - Success rate in complex environments\n\n- **Advanced Topics**\n  - Learning-Based Avoidance (Deep RL, CNN)\n  - Predictive Avoidance (anticipate obstacle motion)\n  - Social Navigation (human-aware avoidance)\n  - Multi-Robot Collision Avoidance\n  - 3D Obstacle Avoidance (aerial vehicles)\n\n- **Quality Metrics**\n  - authority-score:: 0.96\n  - completeness:: 0.93\n  - accuracy:: 0.95",
+  "content": "- ### OntologyBlock\n  id:: obstacle-avoidance-ontology\n  collapsed:: true\n  - ontology:: true\n  - term-id:: RB-1019\n  - preferred-term:: Obstacle Avoidance\n  - alternate-terms:: Collision Avoidance\n  - source-domain:: rb\n  - status:: complete\n  - public-access:: true\n  - version:: 1.0.0\n  - last-updated:: 2025-11-24\n\n- **Definition**\n  - definition:: The capability of a mobile robot or autonomous system to detect and avoid collisions with obstacles in its environment in real-time using sensors and reactive control strategies. It enables safe navigation without requiring complete prior knowledge of the environment.\n  - maturity:: mature\n  - source:: [[Mobile Robotics]], [[Reactive Control]]\n  - authority-score:: 0.96\n\n- **Semantic Classification**\n  - owl:class:: rb:ObstacleAvoidance\n  - owl:role:: Method\n  - belongsToDomain:: [[Robotics]], [[Autonomous Navigation]], [[Safety Systems]]\n\n- #### OWL Restrictions\n  - is-subclass-of:: [[Reactive Control]]\n  - requires:: [[Proximity Sensors]]\n  - requires:: [[Real-Time Processing]]\n  - detects:: [[Obstacles]]\n  - generates:: [[Avoidance Maneuver]]\n  - characterized-by:: [[Real-Time]], [[Reactivity]]\n\n- #### Relationships\n  id:: rb-1019-relationships\n  - is-subclass-of:: [[Reactive Control]]\n  - complements:: [[RB-1016-path-planning]]\n  - uses:: [[LIDAR]], [[Ultrasonic Sensor]], [[Camera]], [[Radar]]\n  - enables:: [[Safe Navigation]], [[Collision-Free Motion]]\n  - skos:related:: [[RB-1007-trajectory-generation]], [[RB-1013-localization]]\n  - applied-in:: [[Autonomous Vehicles]], [[Mobile Robots]], [[Drones]]\n\n- **Approaches**\n  - **Reactive Methods** (sensor-based, local)\n  - **Deliberative Methods** (planning-based, global)\n  - **Hybrid Methods** (combine both)\n\n- **Reactive Obstacle Avoidance Methods**\n  1. **Potential Field Method**\n     - Attractive force toward goal\n     - Repulsive force from obstacles\n     - Combines forces to generate motion\n     - Issues: Local minima, oscillations\n  2. **Vector Field Histogram (VFH)**\n     - Builds polar histogram from sensor data\n     - Selects best direction based on clearance\n     - Good for cluttered environments\n  3. **Dynamic Window Approach (DWA)**\n     - Samples velocity space\n     - Evaluates trajectories for collision\n     - Selects best trajectory (speed, heading)\n     - Considers robot dynamics\n  4. **Velocity Obstacles (VO)**\n     - Geometric approach\n     - Predicts collision based on velocities\n     - Avoids velocity that leads to collision\n  5. **Bubble Band Technique**\n     - Maintains safe bubble around robot\n     - Adjusts based on obstacles\n  6. **Curvature Velocity Method**\n     - Considers robot kinematics\n     - Generates feasible curved paths\n\n- **Sensor Types for Obstacle Detection**\n  - **LIDAR/Laser Scanner**:\n    - High accuracy, 2D/3D point clouds\n    - Long range, high update rate\n  - **Ultrasonic Sensors**:\n    - Low cost, short range\n    - Wide beam, prone to noise\n  - **Cameras (Vision)**:\n    - Rich information, color/texture\n    - Requires image processing\n    - Stereo or RGB-D for depth\n  - **Radar**:\n    - All-weather operation\n    - Medium range, Doppler velocity\n  - **Infrared Sensors**:\n    - Low cost, short range\n    - Simple but limited\n\n- **Potential Field Method Details**\n  - **Attractive Potential**: U_att = ½ k_att ||q - q_goal||²\n  - **Repulsive Potential**: U_rep = ½ k_rep (1/d - 1/d₀)² if d < d₀\n  - **Total Force**: F = -∇U = F_att + F_rep\n  - **Advantages**:\n    - Simple, elegant\n    - Real-time capable\n    - Smooth motion\n  - **Challenges**:\n    - Local minima (trapped)\n    - Oscillations in narrow passages\n    - Goal non-reachable obstacle nearby (GNRON)\n\n- **Dynamic Window Approach (DWA) Details**\n  - Search space: (v, ω) velocity and angular velocity\n  - Dynamic window: Feasible (v, ω) given current state\n  - Objective function: G(v, ω) = α·heading + β·dist + γ·velocity\n    - heading: alignment to goal\n    - dist: distance to obstacle\n    - velocity: forward progress\n  - Select (v, ω) maximizing G\n\n- **Velocity Obstacles (VO) Concept**\n  - For two moving objects: robot and obstacle\n  - VO: set of robot velocities leading to collision\n  - Avoidance: choose velocity outside VO\n  - Extensions: ORCA (Optimal Reciprocal Collision Avoidance)\n\n- **Multi-Sensor Fusion**\n  - Combine complementary sensors\n  - Improve robustness and reliability\n  - Common: LIDAR + Camera + Ultrasonic\n  - Sensor fusion algorithms: Kalman Filter, Bayesian methods\n\n- **Challenges**\n  - **Dynamic Obstacles**: Moving people, vehicles\n  - **Uncertain Sensors**: Noise, occlusions\n  - **Real-Time Constraints**: Fast response needed\n  - **Narrow Passages**: Limited clearance\n  - **Crowded Environments**: Many obstacles\n  - **Non-Holonomic Constraints**: Car-like robots\n  - **Unexpected Obstacles**: Unknown environment\n\n- **Applications**\n  - **Autonomous Vehicles**:\n    - Pedestrian detection and avoidance\n    - Vehicle-to-vehicle collision avoidance\n  - **Mobile Robots**:\n    - Warehouse AGVs\n    - Cleaning robots (Roomba)\n    - Delivery robots\n  - **Drones/UAVs**:\n    - Aerial obstacle avoidance\n    - Forest/indoor navigation\n  - **Humanoid Robots**:\n    - Walking in human environments\n  - **Underwater/Aerial**:\n    - ROVs, submersibles, aircraft\n\n- **Integration with Path Planning**\n  - Global path from [[RB-1016-path-planning]]\n  - Local obstacle avoidance for unexpected obstacles\n  - Hybrid architecture: plan globally, react locally\n\n- **Safety Considerations**\n  - Fail-safe mechanisms (emergency stop)\n  - Redundant sensors\n  - Conservative clearance margins\n  - Predictive models for moving obstacles\n  - Compliance with safety standards (e.g., [[RB-1011-cobot-safety-levels]])\n\n- **Performance Metrics**\n  - Collision-free rate\n  - Path smoothness\n  - Computational efficiency\n  - Reaction time\n  - Clearance from obstacles\n  - Success rate in complex environments\n\n- **Advanced Topics**\n  - Learning-Based Avoidance (Deep RL, CNN)\n  - Predictive Avoidance (anticipate obstacle motion)\n  - Social Navigation (human-aware avoidance)\n  - Multi-Robot Collision Avoidance\n  - 3D Obstacle Avoidance (aerial vehicles)\n\n- **Quality Metrics**\n  - authority-score:: 0.96\n  - completeness:: 0.93\n  - accuracy:: 0.95",
   "backlinks": [
     "RB-1016-path-planning",
     "RB-1007-trajectory-generation"
   ],
   "wiki_links": [
-    "Safe Navigation",
-    "Camera",
-    "Collision-Free Motion",
+    "Real-Time Processing",
     "Reactive Control",
-    "Proximity Sensors",
     "Safety Systems",
+    "Robotics",
+    "RB-1013-localization",
+    "Obstacles",
+    "Drones",
+    "LIDAR",
+    "Autonomous Navigation",
+    "Camera",
+    "Avoidance Maneuver",
+    "Proximity Sensors",
+    "RB-1016-path-planning",
     "Ultrasonic Sensor",
     "RB-1011-cobot-safety-levels",
-    "RB-1007-trajectory-generation",
-    "Radar",
-    "RB-1013-localization",
     "Mobile Robotics",
     "Autonomous Vehicles",
-    "Avoidance Maneuver",
-    "LIDAR",
-    "Mobile Robots",
-    "Autonomous Navigation",
-    "RB-1016-path-planning",
+    "Safe Navigation",
     "Reactivity",
-    "Robotics",
-    "Drones",
-    "Obstacles",
-    "Real-Time Processing",
+    "Radar",
+    "Mobile Robots",
+    "RB-1007-trajectory-generation",
+    "Collision-Free Motion",
     "Real-Time"
   ],
   "ontology": {
@@ -51,7 +51,7 @@
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "rb:ObstacleAvoidance",
-    "owl_physicality": "Abstract",
+    "owl_physicality": null,
     "owl_role": "Method",
     "owl_inferred_class": null,
     "is_subclass_of": [
@@ -96,8 +96,10 @@
       ]
     },
     "validation": {
-      "is_valid": true,
-      "errors": []
+      "is_valid": false,
+      "errors": [
+        "Missing required property: owl:physicality"
+      ]
     }
   }
 }

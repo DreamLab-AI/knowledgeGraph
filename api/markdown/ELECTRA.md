@@ -87,7 +87,6 @@ ELECTRA trains the model to distinguish real input tokens from plausible replace
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:ELECTRA
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About ELECTRA

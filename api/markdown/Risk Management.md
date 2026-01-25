@@ -10,7 +10,6 @@
 	- definition:: The coordinated activities to direct and control an AI system with regard to risk, encompassing risk identification, assessment, treatment, monitoring, and communication throughout the AI lifecycle to minimize potential adverse effects while maximizing benefits.
 	- maturity:: draft
 	- owl:class:: mv:RiskManagement
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

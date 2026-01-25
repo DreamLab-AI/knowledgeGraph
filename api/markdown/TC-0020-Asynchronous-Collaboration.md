@@ -11,7 +11,6 @@ Asynchronous Collaboration
   - public-access:: true
   - definition:: "Time-independent collaboration mode where distributed participants contribute at different times through shared persistent artifacts, enabling flexible schedules, deep work periods, and global accessibility while maintaining coordination through explicit documentation and version control."
   - maturity:: mature
-  - owl:physicality:: Process
   - owl:role:: CollaborationMode
 
 ### Relationships

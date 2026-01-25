@@ -2,7 +2,7 @@
   id:: complete_hri_terms_reference-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247902
+	- term-id:: MV-3071
 	- preferred-term:: COMPLETE_HRI_TERMS_REFERENCE
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:COMPLETE_HRI_TERMS_REFERENCE
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

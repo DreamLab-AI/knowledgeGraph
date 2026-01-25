@@ -621,7 +621,6 @@ Recompute importance with outliers removed.
 - [[Partial Dependence Plot]]
 	- maturity:: draft
 	- owl:class:: mv:FeatureImportance
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

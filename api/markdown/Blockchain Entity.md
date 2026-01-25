@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:BlockchainEntity
-    - owl:physicality:: ConceptualEntity
     - owl:role:: Concept
     - owl:inferred-class:: ConceptualConcept
     - belongsToDomain:: [[BlockchainDomain]]
@@ -223,3 +222,6 @@ Ontology(<http://metaverse-ontology.org/blockchain/PC-0001>
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+
+<!-- Merged from BlockchainEntity.md: BC Domain Concepts, Blockchain Taxonomy, Blockchain Technology -->

@@ -95,7 +95,6 @@ The transformer uses an encoder-decoder architecture with multi-head self-attent
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:EncoderDecoderArchitecture
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Encoder Decoder Architecture

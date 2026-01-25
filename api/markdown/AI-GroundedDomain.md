@@ -10,7 +10,6 @@
 	- definition:: A meta-classification domain for AI concepts that are empirically grounded in operational systems, validated through real-world deployment, and supported by measurable performance data rather than purely theoretical constructs.
 	- maturity:: stable
 	- owl:class:: ai:AiGroundedDomain
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Domain
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships

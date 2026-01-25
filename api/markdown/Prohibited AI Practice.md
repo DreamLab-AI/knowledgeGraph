@@ -2,7 +2,7 @@
   id:: prohibited-ai-practice-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247958
+	- term-id:: MV-3070
 	- preferred-term:: Prohibited AI Practice
 	- source-domain:: mv
 	- status:: draft
@@ -247,7 +247,6 @@ Some Member States may impose stricter prohibitions on biometric identification 
 - Fundamental Rights Impact Assessment (AI-0153)
 	- maturity:: draft
 	- owl:class:: mv:ProhibitedAIPractice
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Prohibited AI Practice

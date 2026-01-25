@@ -10,7 +10,6 @@
 	- definition:: The Trust and Governance Domain provides an ontological framework for trust relationships, accountability mechanisms, and governance structures in digital systems. It encompasses computational trust models, regulatory compliance, decision traceability, multi-stakeholder oversight, and ethical frameworks that enable transparent, accountable, and trustworthy interactions between humans, organizations, and autonomous systems.
 	- maturity:: reviewed
 	- owl:class:: ai:Trustandgovernancedomain
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Domain
 	- belongsToDomain:: [[TechnologyDomain]]
 

@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[MPEG-H Audio Standard]]
 	- owl:class:: mv:ProceduralAudioGenerator
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

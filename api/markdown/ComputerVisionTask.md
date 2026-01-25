@@ -11,7 +11,6 @@
 	- maturity:: reviewed
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- owl:class:: ngm:Computervisiontask
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 
 ### Relationships

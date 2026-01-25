@@ -2,7 +2,7 @@
   id:: virtualeconomy-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247979
+	- term-id:: MV-3017
 	- preferred-term:: VirtualEconomy
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:VirtualEconomy
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 
@@ -171,3 +170,6 @@
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+
+<!-- Merged from Virtual Economy.md: Digital Twin, Metaverse, NFT, Virtual Asset, metaverse -->

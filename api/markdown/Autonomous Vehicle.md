@@ -518,7 +518,6 @@ if __name__ == "__main__":
 - **Standards**: SAE J3016, ISO 26262, ISO 21448
 	- maturity:: draft
 	- owl:class:: mv:AutonomousVehicle
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

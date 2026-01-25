@@ -1,12 +1,12 @@
 {
   "id": "Cross-Chain Messaging",
   "title": "Cross-Chain Messaging",
-  "content": "- ### OntologyBlock\n  id:: BC-9003\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-9003\n\t- source-domain:: bc\n\t- preferred-term:: Cross-Chain Messaging\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Protocols and mechanisms that enable communication and data transfer between different blockchain networks, facilitating interoperability and cross-chain applications.\n\t- source:: [[Blockchain Interoperability]]\n\t- maturity:: emerging\n\t- owl:class:: bc:CrossChainMessaging\n\t- owl:physicality:: Abstract\n\t- owl:role:: Process\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- isSubclassOf:: [[Interoperability Protocol]]\n\n### Relationships\n- is-subclass-of:: [[Blockchain]]",
+  "content": "- ### OntologyBlock\n  id:: BC-9003\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-9003\n\t- source-domain:: bc\n\t- preferred-term:: Cross-Chain Messaging\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Protocols and mechanisms that enable communication and data transfer between different blockchain networks, facilitating interoperability and cross-chain applications.\n\t- source:: [[Blockchain Interoperability]]\n\t- maturity:: emerging\n\t- owl:class:: bc:CrossChainMessaging\n\t- owl:role:: Process\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- isSubclassOf:: [[Interoperability Protocol]]\n\n### Relationships\n- is-subclass-of:: [[Blockchain]]",
   "backlinks": [],
   "wiki_links": [
-    "Blockchain Interoperability",
-    "Interoperability Protocol",
     "Blockchain",
+    "Interoperability Protocol",
+    "Blockchain Interoperability",
     "BlockchainDomain"
   ],
   "ontology": {
@@ -28,7 +28,7 @@
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "bc:CrossChainMessaging",
-    "owl_physicality": "Abstract",
+    "owl_physicality": null,
     "owl_role": "Process",
     "owl_inferred_class": null,
     "is_subclass_of": [],
@@ -52,6 +52,7 @@
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
         "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }

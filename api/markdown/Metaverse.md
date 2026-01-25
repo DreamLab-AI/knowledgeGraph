@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO 23257]], [[ETSI GR MEC 032]], [[IEEE P2048]]
 	- owl:class:: mv:Metaverse
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

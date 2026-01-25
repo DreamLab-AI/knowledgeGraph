@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[IEEE 7000]], [[UNESCO AI Ethics Recommendations]]
 	- owl:class:: mv:AIEthicsChecklist
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

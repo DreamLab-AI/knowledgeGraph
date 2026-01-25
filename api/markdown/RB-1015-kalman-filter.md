@@ -19,7 +19,6 @@
 
 - **Semantic Classification**
   - owl:class:: rb:KalmanFilter
-  - owl:physicality:: Abstract
   - owl:role:: Algorithm
   - belongsToDomain:: [[Robotics]], [[Control Theory]], [[State Estimation]]
 

@@ -11,7 +11,6 @@
 	- source:: [[HRI]], [[Mobile Robotics]]
 	- maturity:: emerging
 	- owl:class:: rb:SocialNavigation
-	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[RoboticsDomain]]
 	- is-subclass-of:: [[Robotics]]

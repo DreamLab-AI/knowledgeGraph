@@ -63,7 +63,6 @@ Subword tokenisation enables models to handle rare words and out-of-vocabulary t
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:SubwordTokenisation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Subword Tokenisation

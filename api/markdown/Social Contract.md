@@ -10,7 +10,6 @@
 	- definition:: A philosophical and political theory positing that individuals consent, either explicitly or tacitly, to surrender certain freedoms and submit to authority in exchange for protection of their remaining rights and maintenance of social order. The concept establishes that legitimate political authority derives from agreement among rational individuals rather than divine right or natural hierarchy.
 	- maturity:: reviewed
 	- owl:class:: ngm:SocialContract
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: PhilosophicalConcept
 	- belongsToDomain:: [[Political Philosophy]]
 

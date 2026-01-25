@@ -65,7 +65,6 @@
 - **Maturity**: Clinical deployment
 	- maturity:: draft
 	- owl:class:: mv:RadiologyAI
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

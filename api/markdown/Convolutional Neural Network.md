@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0032
 	- preferred-term:: Convolutional Neural Network
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: ### Primary Definition
@@ -428,9 +428,8 @@ convolutional_network:
 **Authority Score**: 0.95 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST ✓ EU AI Act ✓ OECD
 	- maturity:: draft
 	- owl:class:: ai:ConvolutionalNeuralNetwork
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Convolutional Neural Network
 	- ### Primary Definition
 A **Convolutional Neural Network (CNN)** is a feed-forward neural network using convolution in at least one of its layers, specifically designed to process grid-like data such as images. CNNs detect spatial patterns and hierarchical features through convolutional layers that apply learnable filters across input data, enabling highly effective visual recognition and image processing.

@@ -2,7 +2,7 @@
   id:: MV-9001
   collapsed:: true
 	- ontology:: true
-	- term-id:: MV-9001
+	- term-id:: MV-4008
 	- source-domain:: mv
 	- preferred-term:: Land Scarcity
 	- status:: draft
@@ -11,7 +11,6 @@
 	- source:: [[Virtual Economics]], [[Metaverse]]
 	- maturity:: emerging
 	- owl:class:: mv:LandScarcity
-	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[MetaverseDomain]]
 	- isSubclassOf:: [[Virtual Economy]]

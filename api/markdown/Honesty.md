@@ -59,7 +59,6 @@ Honesty emerged as a core alignment objective to address issues of hallucination
 **Verification Status**: Verified against InstructGPT and alignment literature
 	- maturity:: draft
 	- owl:class:: mv:Honesty
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Honesty

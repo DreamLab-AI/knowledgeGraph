@@ -2,7 +2,7 @@
   id:: security-audit-guide-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247991
+	- term-id:: MV-3054
 	- preferred-term:: security audit guide
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:securityauditguide
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

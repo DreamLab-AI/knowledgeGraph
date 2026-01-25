@@ -282,7 +282,6 @@ if __name__ == "__main__":
 - **Standards**: DICOM, HL7 FHIR Imaging
 	- maturity:: draft
 	- owl:class:: mv:MedicalImagingAI
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

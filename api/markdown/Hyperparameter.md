@@ -9,10 +9,9 @@
 	- definition:: ### Primary Definition
 A **Hyperparameter** is a configuration variable set before training that controls the learning process but is not learned from data. Examples include learning rate, batch size, and number of layers. Hyperparameters are tuned through experimentation.
 	- maturity:: draft
-	- owl:class:: mv:Hyperparameter
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: ai:Hyperparameter
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[MachineLearningDomain]]
 - ## About Hyperparameter
 	- ### Primary Definition
 A **Hyperparameter** is a configuration variable set before training that controls the learning process but is not learned from data. Examples include learning rate, batch size, and number of layers. Hyperparameters are tuned through experimentation.
@@ -159,13 +158,12 @@ A **Hyperparameter** is a configuration variable set before training that contro
 
 - # Enabling Hyper-Personalised Experiences
 
-- source-domain:: ai-ml
+- source-domain:: ai
 	- status:: active
     - public-access:: true
 	- definition:: A configuration variable set before training that controls the learning process but is not learned from data. Examples include learning rate, batch size, and number of layers.
 	- maturity:: established
-	- owl:class:: ml:Hyperparameter
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: ai:Hyperparameter
 	- owl:role:: Concept
 	- belongsToDomain:: [[MachineLearningDomain]]
 

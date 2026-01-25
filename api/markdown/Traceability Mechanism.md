@@ -19,8 +19,7 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:TraceabilityMechanism
-    - owl:physicality:: ConceptualEntity
+    - owl:class:: ai:TraceabilityMechanism
     - owl:role:: Concept
     - owl:inferred-class:: ConceptualConcept
     - belongsToDomain:: [[AIEthicsDomain]]
@@ -35,7 +34,7 @@
     collapsed:: true
     - ```clojure
       Prefix(:=<http://metaverse-ontology.org/ai-governance#>)
-Prefix(aigo:=<http://metaverse-ontology.org/ai-governance#>)
+Prefix(ai:=<http://metaverse-ontology.org/ai-governance#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -49,98 +48,98 @@ Ontology(<http://metaverse-ontology.org/ai-governance/PC-0013>
   Import(<http://metaverse-ontology.org/ai-governance/PC-0010>)
 
   ## Class Declaration
-  Declaration(Class(aigo:TraceabilityMechanism))
+  Declaration(Class(ai:TraceabilityMechanism))
 
   ## Subclass Relationships
-  SubClassOf(aigo:TraceabilityMechanism aigo:AIGovernancePrinciple)
+  SubClassOf(ai:TraceabilityMechanism ai:AIGovernancePrinciple)
 
   ## Essential Traceability Properties
-  SubClassOf(aigo:TraceabilityMechanism
-    (DataHasValue aigo:enablesAccountability "true"^^xsd:boolean))
+  SubClassOf(ai:TraceabilityMechanism
+    (DataHasValue ai:enablesAccountability "true"^^xsd:boolean))
 
-  SubClassOf(aigo:TraceabilityMechanism
-    (DataHasValue aigo:enablesAuditability "true"^^xsd:boolean))
+  SubClassOf(ai:TraceabilityMechanism
+    (DataHasValue ai:enablesAuditability "true"^^xsd:boolean))
 
-  SubClassOf(aigo:TraceabilityMechanism
-    (ObjectSomeValuesFrom aigo:tracksLineage aigo:DataLineage))
+  SubClassOf(ai:TraceabilityMechanism
+    (ObjectSomeValuesFrom ai:tracksLineage ai:DataLineage))
 
-  SubClassOf(aigo:TraceabilityMechanism
-    (ObjectSomeValuesFrom aigo:maintainsRecord aigo:AuditRecord))
+  SubClassOf(ai:TraceabilityMechanism
+    (ObjectSomeValuesFrom ai:maintainsRecord ai:AuditRecord))
 
   ## Traceability Coverage
-  SubClassOf(aigo:TraceabilityMechanism
-    (ObjectSomeValuesFrom aigo:tracesDataProvenance aigo:DataSource))
+  SubClassOf(ai:TraceabilityMechanism
+    (ObjectSomeValuesFrom ai:tracesDataProvenance ai:DataSource))
 
-  SubClassOf(aigo:TraceabilityMechanism
-    (ObjectSomeValuesFrom aigo:tracesModelVersion aigo:ModelVersion))
+  SubClassOf(ai:TraceabilityMechanism
+    (ObjectSomeValuesFrom ai:tracesModelVersion ai:ModelVersion))
 
-  SubClassOf(aigo:TraceabilityMechanism
-    (ObjectSomeValuesFrom aigo:tracesDecision aigo:AIDecision))
+  SubClassOf(ai:TraceabilityMechanism
+    (ObjectSomeValuesFrom ai:tracesDecision ai:AIDecision))
 
-  SubClassOf(aigo:TraceabilityMechanism
-    (ObjectSomeValuesFrom aigo:tracesModification aigo:SystemModification))
+  SubClassOf(ai:TraceabilityMechanism
+    (ObjectSomeValuesFrom ai:tracesModification ai:SystemModification))
 
   ## Temporal Properties
-  SubClassOf(aigo:TraceabilityMechanism
-    (DataSomeValuesFrom aigo:hasRetentionPeriod xsd:duration))
+  SubClassOf(ai:TraceabilityMechanism
+    (DataSomeValuesFrom ai:hasRetentionPeriod xsd:duration))
 
-  SubClassOf(aigo:TraceabilityMechanism
-    (DataSomeValuesFrom aigo:hasTimestampGranularity xsd:string))
+  SubClassOf(ai:TraceabilityMechanism
+    (DataSomeValuesFrom ai:hasTimestampGranularity xsd:string))
 
   ## Data Properties
-  DataPropertyAssertion(aigo:hasTraceabilityScope aigo:TraceabilityMechanism xsd:string)
-  DataPropertyAssertion(aigo:hasRetentionPeriod aigo:TraceabilityMechanism xsd:duration)
-  DataPropertyAssertion(aigo:hasStorageRequirement aigo:TraceabilityMechanism xsd:decimal)
-  DataPropertyAssertion(aigo:hasAccessControl aigo:TraceabilityMechanism xsd:string)
-  DataPropertyAssertion(aigo:supportsRealTimeAccess aigo:TraceabilityMechanism xsd:boolean)
-  DataPropertyAssertion(aigo:hasIntegrityProtection aigo:TraceabilityMechanism xsd:boolean)
+  DataPropertyAssertion(ai:hasTraceabilityScope ai:TraceabilityMechanism xsd:string)
+  DataPropertyAssertion(ai:hasRetentionPeriod ai:TraceabilityMechanism xsd:duration)
+  DataPropertyAssertion(ai:hasStorageRequirement ai:TraceabilityMechanism xsd:decimal)
+  DataPropertyAssertion(ai:hasAccessControl ai:TraceabilityMechanism xsd:string)
+  DataPropertyAssertion(ai:supportsRealTimeAccess ai:TraceabilityMechanism xsd:boolean)
+  DataPropertyAssertion(ai:hasIntegrityProtection ai:TraceabilityMechanism xsd:boolean)
 
   ## Object Properties
-  ObjectPropertyAssertion(aigo:tracksLineage aigo:TraceabilityMechanism aigo:DataLineage)
-  ObjectPropertyAssertion(aigo:maintainsRecord aigo:TraceabilityMechanism aigo:AuditRecord)
-  ObjectPropertyAssertion(aigo:tracesDataProvenance aigo:TraceabilityMechanism aigo:DataSource)
-  ObjectPropertyAssertion(aigo:tracesModelVersion aigo:TraceabilityMechanism aigo:ModelVersion)
-  ObjectPropertyAssertion(aigo:tracesDecision aigo:TraceabilityMechanism aigo:AIDecision)
-  ObjectPropertyAssertion(aigo:tracesModification aigo:TraceabilityMechanism aigo:SystemModification)
-  ObjectPropertyAssertion(aigo:enablesInvestigation aigo:TraceabilityMechanism aigo:Investigation)
-  ObjectPropertyAssertion(aigo:supportsCompliance aigo:TraceabilityMechanism aigo:ComplianceRequirement)
+  ObjectPropertyAssertion(ai:tracksLineage ai:TraceabilityMechanism ai:DataLineage)
+  ObjectPropertyAssertion(ai:maintainsRecord ai:TraceabilityMechanism ai:AuditRecord)
+  ObjectPropertyAssertion(ai:tracesDataProvenance ai:TraceabilityMechanism ai:DataSource)
+  ObjectPropertyAssertion(ai:tracesModelVersion ai:TraceabilityMechanism ai:ModelVersion)
+  ObjectPropertyAssertion(ai:tracesDecision ai:TraceabilityMechanism ai:AIDecision)
+  ObjectPropertyAssertion(ai:tracesModification ai:TraceabilityMechanism ai:SystemModification)
+  ObjectPropertyAssertion(ai:enablesInvestigation ai:TraceabilityMechanism ai:Investigation)
+  ObjectPropertyAssertion(ai:supportsCompliance ai:TraceabilityMechanism ai:ComplianceRequirement)
 
   ## Property Characteristics
-  ObjectPropertyDomain(aigo:tracksLineage aigo:TraceabilityMechanism)
-  ObjectPropertyRange(aigo:tracksLineage aigo:DataLineage)
+  ObjectPropertyDomain(ai:tracksLineage ai:TraceabilityMechanism)
+  ObjectPropertyRange(ai:tracksLineage ai:DataLineage)
 
-  ObjectPropertyDomain(aigo:maintainsRecord aigo:TraceabilityMechanism)
-  ObjectPropertyRange(aigo:maintainsRecord aigo:AuditRecord)
+  ObjectPropertyDomain(ai:maintainsRecord ai:TraceabilityMechanism)
+  ObjectPropertyRange(ai:maintainsRecord ai:AuditRecord)
 
-  FunctionalDataProperty(aigo:hasRetentionPeriod)
+  FunctionalDataProperty(ai:hasRetentionPeriod)
 
   ## Annotations
-  AnnotationAssertion(rdfs:label aigo:TraceabilityMechanism "Traceability Mechanism"@en)
-  AnnotationAssertion(rdfs:comment aigo:TraceabilityMechanism
+  AnnotationAssertion(rdfs:label ai:TraceabilityMechanism "Traceability Mechanism"@en)
+  AnnotationAssertion(rdfs:comment ai:TraceabilityMechanism
     "Systematic approach for recording and retrieving AI system development and operation history"@en)
-  AnnotationAssertion(dct:description aigo:TraceabilityMechanism
+  AnnotationAssertion(dct:description ai:TraceabilityMechanism
     "Documentation system enabling accountability, auditability, and debugging of AI systems"@en)
-  AnnotationAssertion(aigo:termID aigo:TraceabilityMechanism "PC-0013")
-  AnnotationAssertion(aigo:authorityScore aigo:TraceabilityMechanism "0.95"^^xsd:decimal)
-  AnnotationAssertion(dct:created aigo:TraceabilityMechanism "2025-11-08"^^xsd:date)
-  AnnotationAssertion(skos:definition aigo:TraceabilityMechanism
+  AnnotationAssertion(ai:termID ai:TraceabilityMechanism "PC-0013")
+  AnnotationAssertion(ai:authorityScore ai:TraceabilityMechanism "0.95"^^xsd:decimal)
+  AnnotationAssertion(dct:created ai:TraceabilityMechanism "2025-11-08"^^xsd:date)
+  AnnotationAssertion(skos:definition ai:TraceabilityMechanism
     "Systematic recording and retrieval of AI system development, data lineage, and operational history"@en)
 
   ## Traceability Scope Enumeration
-  SubClassOf(aigo:TraceabilityMechanism
-    (DataHasValue aigo:hasTraceabilityScope
+  SubClassOf(ai:TraceabilityMechanism
+    (DataHasValue ai:hasTraceabilityScope
       (DataOneOf("data-only" "model-only" "decision-only" "comprehensive" "lifecycle"))))
 
   ## Traceability Aspects
-  SubClassOf(aigo:TraceabilityMechanism
-    (ObjectUnionOf aigo:DataProvenance aigo:ModelVersioning aigo:DecisionLogging aigo:AuditTrail))
+  SubClassOf(ai:TraceabilityMechanism
+    (ObjectUnionOf ai:DataProvenance ai:ModelVersioning ai:DecisionLogging ai:AuditTrail))
 
   ## Mandatory Traceability Coverage
-  SubClassOf(aigo:TraceabilityMechanism
-    (ObjectMinCardinality 1 aigo:tracksLineage))
+  SubClassOf(ai:TraceabilityMechanism
+    (ObjectMinCardinality 1 ai:tracksLineage))
 
-  SubClassOf(aigo:TraceabilityMechanism
-    (ObjectMinCardinality 1 aigo:maintainsRecord))
+  SubClassOf(ai:TraceabilityMechanism
+    (ObjectMinCardinality 1 ai:maintainsRecord))
 )
       ```
 

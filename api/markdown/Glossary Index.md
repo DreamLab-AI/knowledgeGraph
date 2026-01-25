@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO 25964 Thesaurus Standard]], [[SKOS Vocabulary]], [[Dublin Core]]
 	- owl:class:: mv:GlossaryIndex
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

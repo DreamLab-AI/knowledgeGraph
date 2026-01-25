@@ -2,7 +2,7 @@
   id:: identity-graph-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20285
+	- term-id:: MV-20285
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[W3C Verifiable Credentials]], [[DIF Universal Resolver]]
 	- owl:class:: mv:IdentityGraph
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

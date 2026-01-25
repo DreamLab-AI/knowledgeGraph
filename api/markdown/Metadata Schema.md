@@ -10,7 +10,6 @@
 	- definition:: A structured specification defining metadata elements, their semantics, syntax, and relationships for describing and managing information resources. Metadata schemas establish standardized vocabularies and constraints that enable interoperability, discovery, and governance across data ecosystems through predefined sets of descriptive attributes tailored for specific domains or resource types.
 	- maturity:: reviewed
 	- owl:class:: ngm:MetadataSchema
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: InformationStandard
 	- belongsToDomain:: [[Data Governance]]
 

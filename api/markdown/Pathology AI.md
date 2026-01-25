@@ -65,7 +65,6 @@
 - **Maturity**: Clinical validation phase
 	- maturity:: draft
 	- owl:class:: mv:PathologyAI
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

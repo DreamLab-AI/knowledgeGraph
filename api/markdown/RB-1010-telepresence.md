@@ -19,7 +19,6 @@
 
 - **Semantic Classification**
   - owl:class:: rb:Telepresence
-  - owl:physicality:: Technology
   - owl:role:: System
   - belongsToDomain:: [[Robotics]], [[Human-Robot Interaction]], [[Teleoperation]]
 

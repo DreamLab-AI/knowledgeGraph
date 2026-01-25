@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[ISO 9241-112]]
 	- owl:class:: mv:CognitiveFeedbackInterface
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

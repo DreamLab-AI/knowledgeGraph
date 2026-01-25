@@ -11,7 +11,6 @@
 	- source:: [[Presence Research]], [[Telecollaboration]]
 	- maturity:: mature
 	- owl:class:: tc:SocialPresence
-	- owl:physicality:: Abstract
 	- owl:role:: Attribute
 	- belongsToDomain:: [[TelecollaborationDomain]]
 	- is-subclass-of:: [[Presence]]

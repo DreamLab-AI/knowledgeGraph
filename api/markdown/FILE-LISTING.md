@@ -2,7 +2,7 @@
   id:: file-listing-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247926
+	- term-id:: MV-3072
 	- preferred-term:: FILE LISTING
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:FILELISTING
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

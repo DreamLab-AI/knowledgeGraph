@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[OMA3 Content WG]], [[SMPTE ST 2128]]
 	- owl:class:: mv:MetaverseContentPipeline
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

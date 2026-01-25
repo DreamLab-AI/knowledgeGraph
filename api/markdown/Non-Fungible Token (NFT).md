@@ -10,12 +10,12 @@
 	- definition:: A digital asset recorded on a distributed ledger that is uniquely identifiable and non-interchangeable, representing ownership or rights to specific digital or physical items.
 	- maturity:: mature
 	- source:: [[ETSI GR ARF 010]], [[ISO 24165]]
-	- owl:class:: mv:NonFungibleToken
-	- owl:physicality:: VirtualEntity
+	- authority-score:: 0.95
+	- owl:class:: bc:NonFungibleToken
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true
-	- belongsToDomain:: [[VirtualEconomyDomain]], [[CreativeMediaDomain]]
+	- belongsToDomain:: [[BlockchainDomain]]
 	- implementedInLayer:: [[MiddlewareLayer]]
 	- #### Relationships
 	  id:: nft-relationships
@@ -27,68 +27,142 @@
 	  id:: nft-owl-axioms
 	  collapsed:: true
 		- ```clojure
-		  Declaration(Class(mv:NonFungibleToken))
+		  Declaration(Class(bc:NonFungibleToken))
 
 		  # Classification along two primary dimensions
-		  SubClassOf(mv:NonFungibleToken mv:VirtualEntity)
-		  SubClassOf(mv:NonFungibleToken mv:Object)
+		  SubClassOf(bc:NonFungibleToken bc:VirtualEntity)
+		  SubClassOf(bc:NonFungibleToken bc:Object)
 
 		  # NFT is a specialized crypto token with uniqueness property
-		  SubClassOf(mv:NonFungibleToken mv:CryptoToken)
-		  SubClassOf(mv:NonFungibleToken mv:DigitalAsset)
-		  SubClassOf(mv:NonFungibleToken mv:VirtualAsset)
+		  SubClassOf(bc:NonFungibleToken bc:CryptoToken)
+		  SubClassOf(bc:NonFungibleToken bc:DigitalAsset)
+		  SubClassOf(bc:NonFungibleToken bc:VirtualAsset)
+		  SubClassOf(bc:NonFungibleToken bc:NonFungibleToken)
+		  SubClassOf(bc:NonFungibleToken bc:Token)
 
 		  # Domain classification
-		  SubClassOf(mv:NonFungibleToken
-		    ObjectSomeValuesFrom(mv:belongsToDomain mv:VirtualEconomyDomain)
-		  )
-		  SubClassOf(mv:NonFungibleToken
-		    ObjectSomeValuesFrom(mv:belongsToDomain mv:CreativeMediaDomain)
+		  SubClassOf(bc:NonFungibleToken
+		    ObjectSomeValuesFrom(bc:belongsToDomain bc:BlockchainDomain)
 		  )
 
 		  # Layer classification
-		  SubClassOf(mv:NonFungibleToken
-		    ObjectSomeValuesFrom(mv:implementedInLayer mv:MiddlewareLayer)
+		  SubClassOf(bc:NonFungibleToken
+		    ObjectSomeValuesFrom(bc:implementedInLayer bc:MiddlewareLayer)
 		  )
 
-		  # NFTs must have unique identifiers
-		  SubClassOf(mv:NonFungibleToken
-		    DataExactCardinality(1 mv:hasUniqueIdentifier)
+		  # Defining characteristics with formal equivalence
+		  EquivalentClasses(bc:NonFungibleToken
+		    ObjectIntersectionOf(bc:Token
+		      ObjectSomeValuesFrom(bc:hasTokenId bc:UniqueIdentifier)
+		      ObjectSomeValuesFrom(bc:hasMetadata bc:TokenMetadata)
+		      ObjectExactCardinality(1 bc:hasOwner bc:Address)
+		      DataHasValue(bc:divisible "false"^^xsd:boolean)
+		      DataHasValue(bc:decimals "0"^^xsd:integer)
+		      DataHasValue(bc:fungible "false"^^xsd:boolean)))
+
+		  # NFTs must have unique identifiers (functional property)
+		  SubClassOf(bc:NonFungibleToken
+		    ObjectSomeValuesFrom(bc:hasTokenId bc:UniqueIdentifier)
 		  )
+		  FunctionalObjectProperty(bc:hasTokenId)
+		  SubClassOf(bc:NonFungibleToken
+		    DataExactCardinality(1 bc:hasUniqueIdentifier)
+		  )
+
+		  # NFTs must have exactly one owner
+		  SubClassOf(bc:NonFungibleToken
+		    ObjectExactCardinality(1 bc:hasOwner bc:Address)
+		  )
+		  FunctionalObjectProperty(bc:hasOwner)
+		  ObjectPropertyDomain(bc:hasOwner bc:NonFungibleToken)
+		  ObjectPropertyRange(bc:hasOwner bc:Address)
 
 		  # NFTs are non-fungible (defining characteristic)
-		  SubClassOf(mv:NonFungibleToken
-		    DataHasValue(mv:isFungible "false"^^xsd:boolean)
+		  SubClassOf(bc:NonFungibleToken
+		    DataHasValue(bc:isFungible "false"^^xsd:boolean)
 		  )
+		  SubClassOf(bc:NonFungibleToken
+		    DataHasValue(bc:divisible "false"^^xsd:boolean))
+		  SubClassOf(bc:NonFungibleToken
+		    DataHasValue(bc:decimals "0"^^xsd:integer))
+		  SubClassOf(bc:NonFungibleToken
+		    DataHasValue(bc:fungible "false"^^xsd:boolean))
+		  SubClassOf(bc:NonFungibleToken
+		    DataSomeValuesFrom(bc:tokenId
+		      DatatypeRestriction(xsd:integer
+		        xsd:minInclusive "0"^^xsd:integer)))
+
+		  # Disjoint with fungible tokens
+		  DisjointClasses(bc:NonFungibleToken bc:FungibleToken)
 
 		  # NFTs enable digital ownership
-		  SubClassOf(mv:NonFungibleToken
-		    ObjectSomeValuesFrom(mv:enables mv:DigitalOwnership)
+		  SubClassOf(bc:NonFungibleToken
+		    ObjectSomeValuesFrom(bc:enables bc:DigitalOwnership)
 		  )
 
 		  # NFTs require blockchain for immutability
-		  SubClassOf(mv:NonFungibleToken
-		    ObjectSomeValuesFrom(mv:requires mv:Blockchain)
+		  SubClassOf(bc:NonFungibleToken
+		    ObjectSomeValuesFrom(bc:requires bc:Blockchain)
 		  )
-		  SubClassOf(mv:NonFungibleToken
-		    ObjectSomeValuesFrom(mv:requires mv:SmartContract)
+		  SubClassOf(bc:NonFungibleToken
+		    ObjectSomeValuesFrom(bc:requires bc:SmartContract)
 		  )
 
 		  # NFTs have associated metadata
-		  SubClassOf(mv:NonFungibleToken
-		    ObjectSomeValuesFrom(mv:hasMetadata mv:TokenMetadata)
+		  SubClassOf(bc:NonFungibleToken
+		    ObjectSomeValuesFrom(bc:hasMetadata bc:TokenMetadata)
 		  )
+
+		  # Can have provenance history
+		  SubClassOf(bc:NonFungibleToken
+		    ObjectAllValuesFrom(bc:hasProvenance bc:ProvenanceRecord))
+
+		  # NFTs on Ethereum must implement ERC-721 or ERC-1155
+		  SubClassOf(
+		    ObjectIntersectionOf(bc:NonFungibleToken
+		      ObjectSomeValuesFrom(bc:existsOn bc:EthereumBlockchain))
+		    ObjectSomeValuesFrom(bc:implementsStandard
+		      ObjectUnionOf(bc:ERC721 bc:ERC1155)))
+
+		  # Metadata should be immutable
+		  SubClassOf(
+		    ObjectIntersectionOf(bc:NonFungibleToken
+		      ObjectSomeValuesFrom(bc:hasMetadata bc:ImmutableMetadata))
+		    DataHasValue(bc:metadataFrozen "true"^^xsd:boolean))
+
+		  # High-value NFTs should have provenance
+		  SubClassOf(
+		    ObjectIntersectionOf(bc:NonFungibleToken
+		      DataSomeValuesFrom(bc:marketValue
+		        DatatypeRestriction(xsd:decimal
+		          xsd:minInclusive "10000"^^xsd:decimal))) # $10k
+		    ObjectSomeValuesFrom(bc:hasProvenance bc:ProvenanceRecord))
+
+		  # NFTs with royalties must implement EIP-2981
+		  SubClassOf(
+		    ObjectIntersectionOf(bc:NonFungibleToken
+		      ObjectSomeValuesFrom(bc:hasRoyalty bc:RoyaltyInfo))
+		    ObjectSomeValuesFrom(bc:implementsStandard bc:EIP2981))
+
+		  # Storage protocols for decentralized storage
+		  SubClassOf(
+		    ObjectIntersectionOf(bc:NonFungibleToken
+		      ObjectSomeValuesFrom(bc:storedOn bc:IPFSStorage))
+		    ObjectSomeValuesFrom(bc:hasMetadata
+		      DataSomeValuesFrom(bc:contentHash bc:IPFSHash)))
+
+		  # Permanence requirement for high-value NFTs
+		  SubClassOf(
+		    ObjectIntersectionOf(bc:NonFungibleToken
+		      DataSomeValuesFrom(bc:marketValue
+		        DatatypeRestriction(xsd:decimal
+		          xsd:minInclusive "100000"^^xsd:decimal))) # $100k
+		    ObjectSomeValuesFrom(bc:storedOn bc:PermanentStorage))
 
   # Property characteristics
   TransitiveObjectProperty(dt:ispartof)
-
-  # Property characteristics
   AsymmetricObjectProperty(dt:requires)
-
-  # Property characteristics
   AsymmetricObjectProperty(dt:dependson)
-
-  # Property characteristics
   AsymmetricObjectProperty(dt:enables)
 ```
 - ## About Non-Fungible Token (NFT)
@@ -168,7 +242,7 @@
 		- [[Token Metadata]] - Structured data describing NFT attributes and linking to media files
 		- [[Blockchain]] - Distributed ledger technology providing immutable record keeping for NFTs
 		- [[Virtual Land]] - Common NFT use case representing parcels in virtual worlds
-		- [[mv:VirtualObject]] - Ontology classification for non-fungible tokens as unique digital objects
+		- [[bc:VirtualObject]] - Ontology classification for non-fungible tokens as unique digital objects
 
     - uses-technique:: [[3D Model]]
 ## Academic Context

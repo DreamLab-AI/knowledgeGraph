@@ -13,7 +13,6 @@
 	- definition:: **Robot Kinematics** - Study of robot motion without considering forces
 	- maturity:: draft
 	- owl:class:: rb:RobotKinematics
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0021 robot kinematics

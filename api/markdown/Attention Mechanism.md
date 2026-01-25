@@ -4,16 +4,15 @@
 	- ontology:: true
 	- term-id:: AI-0038
 	- preferred-term:: Attention Mechanism
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: ### Primary Definition
 An **Attention Mechanism** is a neural network component that enables models to dynamically focus on different parts of the input when producing each element of the output. Attention computes weighted combinations of input representations, where weights indicate the relative importance of each input element.
 	- maturity:: draft
 	- owl:class:: ai:AttentionMechanism
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Attention Mechanism
 	- ### Primary Definition
 An **Attention Mechanism** is a neural network component that enables models to dynamically focus on different parts of the input when producing each element of the output. Attention computes weighted combinations of input representations, where weights indicate the relative importance of each input element.

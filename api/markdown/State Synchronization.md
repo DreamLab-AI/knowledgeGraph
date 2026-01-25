@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[EWG/MSF taxonomy]], [[ETSI GR ARF 010]], [[ISO/IEC 23247]]
 	- owl:class:: mv:StateSynchronization
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

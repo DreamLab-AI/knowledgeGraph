@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "A theoretical framework positing that communication media vary in their capacity to convey rich information through multiple cues, immediate feedback, language variety, and personal focus, predicting that richer media enable more effective communication of complex, ambiguous information whilst leaner media suffice for routine, unambiguous messages."
 	- maturity:: mature
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- #### Relationships
 	  id:: media-richness-theory-relationships

@@ -10,7 +10,6 @@
 	- definition:: The exchange of digital and traditional financial assets through centralized exchanges (CEXs), decentralized exchanges (DEXs), and hybrid platforms. Asset trading in the blockchain context enables peer-to-peer token swaps via smart contracts, eliminating intermediaries while users retain custody of their assets, with weekly DEX trading volumes averaging $18.6 billion and over 9.7 million unique wallets interacting with DeFi protocols in 2025.
 	- maturity:: reviewed
 	- owl:class:: ngm:AssetTrading
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Financial Technology]]
 	- belongsToDomain:: [[Decentralized Finance]]

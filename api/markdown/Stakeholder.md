@@ -280,7 +280,6 @@ Stakeholder engagement must be inclusive, meaningful, and sustained—reaching b
 - [[Civil Society]]
 	- maturity:: draft
 	- owl:class:: mv:Stakeholder
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

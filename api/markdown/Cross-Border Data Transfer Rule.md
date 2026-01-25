@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[GDPR]], [[OECD Privacy Framework]]
 	- owl:class:: mv:CrossBorderDataTransferRule
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

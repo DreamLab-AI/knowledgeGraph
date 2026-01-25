@@ -11,7 +11,6 @@
 	- source:: [[Physics Engine]], [[Game Physics]]
 	- maturity:: mature
 	- owl:class:: mv:RigidBodyDynamics
-	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[MetaverseDomain]]
 	- isSubclassOf:: [[Physics Simulation]]

@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[Metaverse 101]]
 	- owl:class:: mv:PlayToEarn
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

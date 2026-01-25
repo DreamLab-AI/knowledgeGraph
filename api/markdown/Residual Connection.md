@@ -97,7 +97,6 @@ Residual connections are essential in transformers for training very deep networ
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:ResidualConnection
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Residual Connection

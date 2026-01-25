@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[NIST Cybersecurity Framework]], [[MITRE ATT&CK]], [[OWASP]], [[ISO 27001]]
 	- owl:class:: mv:ThreatSurfaceMap
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

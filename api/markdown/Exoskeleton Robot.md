@@ -13,7 +13,6 @@
 	- definition:: **Exoskeleton Robot** - Exoskeleton Robot in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:ExoskeletonRobot
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0019 exoskeleton robot

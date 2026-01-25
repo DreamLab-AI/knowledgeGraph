@@ -2,7 +2,7 @@
   id:: etsi_domain_virtual_society-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247920
+	- term-id:: MV-2011
 	- preferred-term:: ETSI_Domain_Virtual_Society
 	- source-domain:: mv
 	- status:: active
@@ -10,7 +10,6 @@
 	- definition:: A standardization domain within the [[ETSI]] (European Telecommunications Standards Institute) focused on virtual society technologies, encompassing metaverse ecosystems, [[XR (Extended Reality)]], [[digital identity]], and interoperable virtual worlds.
 	- maturity:: active
 	- owl:class:: mv:ETSI_Domain_Virtual_Society
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: StandardizationDomain
 	- belongsToDomain:: [[MetaverseDomain]]
 	- blockchain-relevance:: moderate

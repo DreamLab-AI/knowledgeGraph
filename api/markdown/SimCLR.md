@@ -54,7 +54,6 @@ SimCLR demonstrates that simple contrastive learning with strong data augmentati
 **Verification Status**: Verified against SimCLR paper (arXiv:2002.05709)
 	- maturity:: draft
 	- owl:class:: mv:SimCLR
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About SimCLR

@@ -264,7 +264,6 @@ $$\text{Precision}_{\text{macro}} = \frac{1}{n}\sum_i \text{Precision}_i$$
 - [[Specificity]]
 	- maturity:: draft
 	- owl:class:: mv:Precision
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

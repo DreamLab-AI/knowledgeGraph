@@ -2,7 +2,7 @@
   id:: manchester-tech-cluster-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: UK-001
+	- term-id:: NGM-1002
 	- preferred-term:: Manchester Tech Cluster
 	- source-domain:: uk-regional
 	- status:: active
@@ -11,8 +11,7 @@
 	- maturity:: established
 	- region:: Greater Manchester
 	- focus-areas:: Digital, AI, FinTech
-	- owl:class:: uk:ManchesterTechCluster
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: ngm:ManchesterTechCluster
 	- owl:role:: RegionalEcosystem
 	- belongsToDomain:: [[UKTechEcosystem]]
 

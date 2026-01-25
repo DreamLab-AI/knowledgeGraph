@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[MSF Taxonomy 2025]]
 	- owl:class:: mv:HumanInterfaceLayer
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

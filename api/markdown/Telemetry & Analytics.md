@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[EWG/MSF Taxonomy]]
 	- owl:class:: mv:TelemetryAnalytics
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

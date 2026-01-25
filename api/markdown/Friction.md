@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- owl:class:: rb:Friction
 	- is-subclass-of:: [[Robotics]]
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 	- is-subclass-of:: [[rb-0022-robot-dynamics]]

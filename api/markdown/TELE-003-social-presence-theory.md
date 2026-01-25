@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "A theoretical framework explaining how communication media vary in their capacity to convey social cues (facial expressions, vocal intonation, body language, interpersonal warmth), thereby influencing the degree to which communicators perceive each other as psychologically present, real, and engaged in interpersonal exchange."
 	- maturity:: mature
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- #### Relationships
 	  id:: social-presence-theory-relationships

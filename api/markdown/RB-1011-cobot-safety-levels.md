@@ -19,7 +19,6 @@
 
 - **Semantic Classification**
   - owl:class:: rb:CobotSafetyLevels
-  - owl:physicality:: Standard
   - owl:role:: Specification
   - belongsToDomain:: [[Robotics]], [[Collaborative Robotics]], [[Safety Standards]]
 

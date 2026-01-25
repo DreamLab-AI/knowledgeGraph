@@ -4,16 +4,15 @@
 	- ontology:: true
 	- term-id:: AI-0031
 	- preferred-term:: Feedforward Neural Network
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: ### Primary Definition
 A **Feedforward Neural Network** is a neural network architecture in which connections between nodes do not form cycles, with information moving in only one direction—forward—from input nodes, through hidden layers, to output nodes. This is the simplest type of artificial neural network, where data flows through the network without loops or feedback connections.
 	- maturity:: draft
 	- owl:class:: ai:FeedforwardNeuralNetwork
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Feedforward Neural Network
 	- ### Primary Definition
 A **Feedforward Neural Network** is a neural network architecture in which connections between nodes do not form cycles, with information moving in only one direction—forward—from input nodes, through hidden layers, to output nodes. This is the simplest type of artificial neural network, where data flows through the network without loops or feedback connections.

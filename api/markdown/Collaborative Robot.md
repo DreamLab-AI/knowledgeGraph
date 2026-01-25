@@ -13,7 +13,6 @@
 	- definition:: **Collaborative Robot** - Collaborative Robot in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:CollaborativeRobot
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0007 collaborative robot

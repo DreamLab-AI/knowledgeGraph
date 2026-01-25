@@ -2,7 +2,7 @@
   id:: physics-based-animation-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20190
+	- term-id:: MV-4000
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[SIGGRAPH Standards]]
 	- owl:class:: mv:PhysicsBasedAnimation
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

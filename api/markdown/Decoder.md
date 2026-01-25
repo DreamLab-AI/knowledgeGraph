@@ -112,7 +112,6 @@ The decoder generates output sequences autoregressively, attending to both previ
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:Decoder
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Decoder

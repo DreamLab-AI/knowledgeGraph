@@ -10,7 +10,6 @@
 	- definition:: An AI system classified as presenting significant risk to health, safety, fundamental rights, or other critical interests based on its intended purpose, deployment context, and potential for substantial adverse impact, subject to stringent regulatory requirements under the EU AI Act and similar frameworks.
 	- maturity:: draft
 	- owl:class:: mv:HighRiskAISystem
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

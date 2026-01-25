@@ -3,7 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: MV-1004
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- preferred-term:: SemanticSearch
 	- status:: complete
 	- public-access:: true

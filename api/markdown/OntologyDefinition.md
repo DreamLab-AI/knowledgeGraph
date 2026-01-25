@@ -2,7 +2,7 @@
   id:: ontologydefinition-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247950
+	- term-id:: MV-3040
 	- preferred-term:: OntologyDefinition
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:OntologyDefinition
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

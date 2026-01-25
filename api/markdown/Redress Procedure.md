@@ -19,8 +19,7 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:RedressProcedure
-    - owl:physicality:: ConceptualEntity
+    - owl:class:: ai:RedressProcedure
     - owl:role:: Concept
     - owl:inferred-class:: ConceptualConcept
     - belongsToDomain:: [[AIEthicsDomain]]
@@ -35,7 +34,7 @@
     collapsed:: true
     - ```clojure
       Prefix(:=<http://metaverse-ontology.org/ai-governance#>)
-Prefix(aigo:=<http://metaverse-ontology.org/ai-governance#>)
+Prefix(ai:=<http://metaverse-ontology.org/ai-governance#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -49,104 +48,104 @@ Ontology(<http://metaverse-ontology.org/ai-governance/PC-0014>
   Import(<http://metaverse-ontology.org/ai-governance/PC-0010>)
 
   ## Class Declaration
-  Declaration(Class(aigo:RedressProcedure))
+  Declaration(Class(ai:RedressProcedure))
 
   ## Subclass Relationships
-  SubClassOf(aigo:RedressProcedure aigo:AIGovernancePrinciple)
+  SubClassOf(ai:RedressProcedure ai:AIGovernancePrinciple)
 
   ## Essential Redress Properties
-  SubClassOf(aigo:RedressProcedure
-    (DataHasValue aigo:enablesChallenge "true"^^xsd:boolean))
+  SubClassOf(ai:RedressProcedure
+    (DataHasValue ai:enablesChallenge "true"^^xsd:boolean))
 
-  SubClassOf(aigo:RedressProcedure
-    (DataHasValue aigo:providesRemedy "true"^^xsd:boolean))
+  SubClassOf(ai:RedressProcedure
+    (DataHasValue ai:providesRemedy "true"^^xsd:boolean))
 
-  SubClassOf(aigo:RedressProcedure
-    (ObjectSomeValuesFrom aigo:availableTo aigo:AffectedParty))
+  SubClassOf(ai:RedressProcedure
+    (ObjectSomeValuesFrom ai:availableTo ai:AffectedParty))
 
-  SubClassOf(aigo:RedressProcedure
-    (ObjectSomeValuesFrom aigo:involvesHumanReview aigo:HumanReviewer))
+  SubClassOf(ai:RedressProcedure
+    (ObjectSomeValuesFrom ai:involvesHumanReview ai:HumanReviewer))
 
   ## Procedural Components
-  SubClassOf(aigo:RedressProcedure
-    (ObjectSomeValuesFrom aigo:providesComplaintMechanism aigo:ComplaintSubmission))
+  SubClassOf(ai:RedressProcedure
+    (ObjectSomeValuesFrom ai:providesComplaintMechanism ai:ComplaintSubmission))
 
-  SubClassOf(aigo:RedressProcedure
-    (ObjectSomeValuesFrom aigo:conductInvestigation aigo:Investigation))
+  SubClassOf(ai:RedressProcedure
+    (ObjectSomeValuesFrom ai:conductInvestigation ai:Investigation))
 
-  SubClassOf(aigo:RedressProcedure
-    (ObjectSomeValuesFrom aigo:providesExplanation aigo:Explanation))
+  SubClassOf(ai:RedressProcedure
+    (ObjectSomeValuesFrom ai:providesExplanation ai:Explanation))
 
-  SubClassOf(aigo:RedressProcedure
-    (ObjectSomeValuesFrom aigo:implementsRemedy aigo:Remedy))
+  SubClassOf(ai:RedressProcedure
+    (ObjectSomeValuesFrom ai:implementsRemedy ai:Remedy))
 
   ## Accessibility and Timeliness
-  SubClassOf(aigo:RedressProcedure
-    (DataSomeValuesFrom aigo:isAccessible xsd:boolean))
+  SubClassOf(ai:RedressProcedure
+    (DataSomeValuesFrom ai:isAccessible xsd:boolean))
 
-  SubClassOf(aigo:RedressProcedure
-    (DataSomeValuesFrom aigo:hasResponseTime xsd:duration))
+  SubClassOf(ai:RedressProcedure
+    (DataSomeValuesFrom ai:hasResponseTime xsd:duration))
 
-  SubClassOf(aigo:RedressProcedure
-    (DataSomeValuesFrom aigo:hasResolutionTime xsd:duration))
+  SubClassOf(ai:RedressProcedure
+    (DataSomeValuesFrom ai:hasResolutionTime xsd:duration))
 
   ## Data Properties
-  DataPropertyAssertion(aigo:hasProcedureType aigo:RedressProcedure xsd:string)
-  DataPropertyAssertion(aigo:hasResponseTime aigo:RedressProcedure xsd:duration)
-  DataPropertyAssertion(aigo:hasResolutionTime aigo:RedressProcedure xsd:duration)
-  DataPropertyAssertion(aigo:hasAccessibilityLevel aigo:RedressProcedure xsd:string)
-  DataPropertyAssertion(aigo:hasCostToUser aigo:RedressProcedure xsd:decimal)
-  DataPropertyAssertion(aigo:requiresRepresentation aigo:RedressProcedure xsd:boolean)
+  DataPropertyAssertion(ai:hasProcedureType ai:RedressProcedure xsd:string)
+  DataPropertyAssertion(ai:hasResponseTime ai:RedressProcedure xsd:duration)
+  DataPropertyAssertion(ai:hasResolutionTime ai:RedressProcedure xsd:duration)
+  DataPropertyAssertion(ai:hasAccessibilityLevel ai:RedressProcedure xsd:string)
+  DataPropertyAssertion(ai:hasCostToUser ai:RedressProcedure xsd:decimal)
+  DataPropertyAssertion(ai:requiresRepresentation ai:RedressProcedure xsd:boolean)
 
   ## Object Properties
-  ObjectPropertyAssertion(aigo:availableTo aigo:RedressProcedure aigo:AffectedParty)
-  ObjectPropertyAssertion(aigo:involvesHumanReview aigo:RedressProcedure aigo:HumanReviewer)
-  ObjectPropertyAssertion(aigo:providesComplaintMechanism aigo:RedressProcedure aigo:ComplaintSubmission)
-  ObjectPropertyAssertion(aigo:conductInvestigation aigo:RedressProcedure aigo:Investigation)
-  ObjectPropertyAssertion(aigo:providesExplanation aigo:RedressProcedure aigo:Explanation)
-  ObjectPropertyAssertion(aigo:implementsRemedy aigo:RedressProcedure aigo:Remedy)
-  ObjectPropertyAssertion(aigo:escalatesTo aigo:RedressProcedure aigo:AppealMechanism)
-  ObjectPropertyAssertion(aigo:notifies aigo:RedressProcedure aigo:AffectedParty)
+  ObjectPropertyAssertion(ai:availableTo ai:RedressProcedure ai:AffectedParty)
+  ObjectPropertyAssertion(ai:involvesHumanReview ai:RedressProcedure ai:HumanReviewer)
+  ObjectPropertyAssertion(ai:providesComplaintMechanism ai:RedressProcedure ai:ComplaintSubmission)
+  ObjectPropertyAssertion(ai:conductInvestigation ai:RedressProcedure ai:Investigation)
+  ObjectPropertyAssertion(ai:providesExplanation ai:RedressProcedure ai:Explanation)
+  ObjectPropertyAssertion(ai:implementsRemedy ai:RedressProcedure ai:Remedy)
+  ObjectPropertyAssertion(ai:escalatesTo ai:RedressProcedure ai:AppealMechanism)
+  ObjectPropertyAssertion(ai:notifies ai:RedressProcedure ai:AffectedParty)
 
   ## Property Characteristics
-  ObjectPropertyDomain(aigo:availableTo aigo:RedressProcedure)
-  ObjectPropertyRange(aigo:availableTo aigo:AffectedParty)
+  ObjectPropertyDomain(ai:availableTo ai:RedressProcedure)
+  ObjectPropertyRange(ai:availableTo ai:AffectedParty)
 
-  ObjectPropertyDomain(aigo:implementsRemedy aigo:RedressProcedure)
-  ObjectPropertyRange(aigo:implementsRemedy aigo:Remedy)
+  ObjectPropertyDomain(ai:implementsRemedy ai:RedressProcedure)
+  ObjectPropertyRange(ai:implementsRemedy ai:Remedy)
 
-  FunctionalDataProperty(aigo:hasResponseTime)
-  FunctionalDataProperty(aigo:hasResolutionTime)
+  FunctionalDataProperty(ai:hasResponseTime)
+  FunctionalDataProperty(ai:hasResolutionTime)
 
   ## Annotations
-  AnnotationAssertion(rdfs:label aigo:RedressProcedure "Redress Procedure"@en)
-  AnnotationAssertion(rdfs:comment aigo:RedressProcedure
+  AnnotationAssertion(rdfs:label ai:RedressProcedure "Redress Procedure"@en)
+  AnnotationAssertion(rdfs:comment ai:RedressProcedure
     "Formalized mechanism enabling affected individuals to challenge AI decisions and seek remedies"@en)
-  AnnotationAssertion(dct:description aigo:RedressProcedure
+  AnnotationAssertion(dct:description ai:RedressProcedure
     "Process for contesting AI decisions, requesting review, and obtaining correction or compensation"@en)
-  AnnotationAssertion(aigo:termID aigo:RedressProcedure "PC-0014")
-  AnnotationAssertion(aigo:authorityScore aigo:RedressProcedure "0.95"^^xsd:decimal)
-  AnnotationAssertion(dct:created aigo:RedressProcedure "2025-11-08"^^xsd:date)
-  AnnotationAssertion(skos:definition aigo:RedressProcedure
+  AnnotationAssertion(ai:termID ai:RedressProcedure "PC-0014")
+  AnnotationAssertion(ai:authorityScore ai:RedressProcedure "0.95"^^xsd:decimal)
+  AnnotationAssertion(dct:created ai:RedressProcedure "2025-11-08"^^xsd:date)
+  AnnotationAssertion(skos:definition ai:RedressProcedure
     "Formalized mechanism for challenging AI decisions and obtaining explanations, review, and remedies"@en)
 
   ## Procedure Type Enumeration
-  SubClassOf(aigo:RedressProcedure
-    (DataHasValue aigo:hasProcedureType
+  SubClassOf(ai:RedressProcedure
+    (DataHasValue ai:hasProcedureType
       (DataOneOf("internal-review" "external-appeal" "judicial-review" "ombudsman" "arbitration"))))
 
   ## Remedy Types
-  SubClassOf(aigo:RedressProcedure
-    (ObjectSomeValuesFrom aigo:implementsRemedy
-      (ObjectUnionOf aigo:DecisionReversal aigo:Compensation aigo:PolicyChange aigo:SystemModification)))
+  SubClassOf(ai:RedressProcedure
+    (ObjectSomeValuesFrom ai:implementsRemedy
+      (ObjectUnionOf ai:DecisionReversal ai:Compensation ai:PolicyChange ai:SystemModification)))
 
   ## Accessibility Requirements
-  SubClassOf(aigo:RedressProcedure
-    (DataHasValue aigo:isAccessible "true"^^xsd:boolean))
+  SubClassOf(ai:RedressProcedure
+    (DataHasValue ai:isAccessible "true"^^xsd:boolean))
 
   ## Mandatory Human Review
-  SubClassOf(aigo:RedressProcedure
-    (ObjectMinCardinality 1 aigo:involvesHumanReview))
+  SubClassOf(ai:RedressProcedure
+    (ObjectMinCardinality 1 ai:involvesHumanReview))
 )
       ```
 

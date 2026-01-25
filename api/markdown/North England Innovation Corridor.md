@@ -2,7 +2,7 @@
   id:: north-england-innovation-corridor-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: UK-001
+	- term-id:: NGM-1000
 	- preferred-term:: North England Innovation Corridor
 	- source-domain:: uk-regional
 	- status:: active
@@ -11,8 +11,7 @@
 	- maturity:: established
 	- region:: Northern Powerhouse
 	- focus-areas:: Regional Collaboration, Innovation
-	- owl:class:: uk:NorthEnglandInnovationCorridor
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: ngm:NorthEnglandInnovationCorridor
 	- owl:role:: RegionalEcosystem
 	- belongsToDomain:: [[UKTechEcosystem]]
 

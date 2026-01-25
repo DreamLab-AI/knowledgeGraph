@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[Siemens + ACM]]
 	- owl:class:: mv:Photogrammetry
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

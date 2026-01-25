@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[NIST PQ Standard (2024)]]
 	- owl:class:: mv:PostQuantumCryptography
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

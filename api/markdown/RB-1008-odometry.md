@@ -19,7 +19,6 @@
 
 - **Semantic Classification**
   - owl:class:: rb:Odometry
-  - owl:physicality:: Abstract
   - owl:role:: Method
   - belongsToDomain:: [[Robotics]], [[Mobile Robotics]], [[Navigation]]
 

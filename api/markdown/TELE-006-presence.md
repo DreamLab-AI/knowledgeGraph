@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "The subjective psychological phenomenon of perceiving oneself as located within a mediated environment rather than one's actual physical location, characterised by a sense of 'being there' that emerges from immersive sensory stimulation and reduced awareness of the mediating technology, foundational to effective telepresence experiences."
 	- maturity:: mature
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- #### Relationships
 	  id:: presence-relationships

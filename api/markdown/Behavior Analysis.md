@@ -8,7 +8,7 @@
     - filename-history:: ["AI-0860-behavioranalysis.md"]
     - public-access:: true
     - ontology:: true
-    - term-id:: AI-0860
+    - term-id:: AI-4005
     - preferred-term:: Behavior Analysis
     - source-domain:: ai
     - status:: complete

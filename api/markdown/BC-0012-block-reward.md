@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:BlockReward
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[BlockchainDomain]]
@@ -114,3 +113,6 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0012>
     - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
   -
+
+
+<!-- Merged from BC-0055-block-reward.md: ConsensusDomain, ConsensusProtocol, ProtocolLayer -->

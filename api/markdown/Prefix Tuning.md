@@ -157,7 +157,6 @@ Prefix tuning demonstrates that powerful task adaptation can be achieved by infl
 **Verification Status**: Verified against PEFT survey (2023)
 	- maturity:: draft
 	- owl:class:: mv:PrefixTuning
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Prefix Tuning

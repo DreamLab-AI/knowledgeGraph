@@ -11,7 +11,6 @@
 	- source:: [[Blockchain Interoperability]]
 	- maturity:: emerging
 	- owl:class:: bc:CrossChainMessaging
-	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[BlockchainDomain]]
 	- isSubclassOf:: [[Interoperability Protocol]]

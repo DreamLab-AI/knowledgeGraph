@@ -10,7 +10,6 @@
 	- definition:: A privacy attack that determines whether a specific data point was included in a model's training dataset by analyzing the model's behavior on that input, potentially revealing sensitive information about individuals' participation in datasets.
 	- maturity:: draft
 	- owl:class:: mv:MembershipInference
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

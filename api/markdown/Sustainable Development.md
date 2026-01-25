@@ -138,7 +138,6 @@ Sustainable development principles inform:
 *Aligned with OECD AI Principles 2024 and UN Sustainable Development Goals*
 	- maturity:: draft
 	- owl:class:: mv:SustainableDevelopment
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

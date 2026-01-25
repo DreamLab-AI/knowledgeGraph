@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:Immutability
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[CryptographicDomain]]
@@ -115,3 +114,6 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0079>
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
   -
 
+
+
+<!-- Merged from Immutability.md: DIBA, Digital Objects, UDA -->

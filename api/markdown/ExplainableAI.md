@@ -2,15 +2,14 @@
   id:: explainableai-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247926
+	- term-id:: AI-3002
 	- preferred-term:: ExplainableAI
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
-	- owl:class:: mv:ExplainableAI
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: ai:ExplainableAI
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 
@@ -46,10 +45,10 @@
 		    - **TRL:** 7
 		    - **Quality Score:** 0.91
 		    - ```turtle
-		      aigo:ExplainabilityApproach rdf:type owl:Class ;
+		      ai:ExplainabilityApproach rdf:type owl:Class ;
 		          rdfs:label "Explainability Approach"@en ;
 		          rdfs:comment "Methods and techniques for making AI model decisions interpretable and understandable to humans."@en ;
-		          meta:sourceOntology "aigo:" ;
+		          meta:sourceOntology "ai:" ;
 		          meta:technologyDomain "artificial-intelligence" ;
 		          meta:disruptiveTechCategory "artificial-intelligence-systems" ;
 		          meta:technologyReadinessLevel "7"^^xsd:integer ;

@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO 9241-940]], [[IEEE P2048-3]]
 	- owl:class:: mv:AugmentedReality
-	- owl:physicality:: HybridEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:HybridObject
 	- owl:functional-syntax:: true

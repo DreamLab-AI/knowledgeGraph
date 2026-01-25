@@ -105,7 +105,6 @@ The encoder processes the input sequence to create contextualised representation
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:Encoder
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Encoder

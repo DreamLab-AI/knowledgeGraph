@@ -65,7 +65,6 @@
 - **Maturity**: Commercial pilots and limited deployment
 	- maturity:: draft
 	- owl:class:: mv:SelfDrivingCar
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

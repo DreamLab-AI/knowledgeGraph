@@ -238,7 +238,6 @@ Effective AI operation requires operators to possess both technical understandin
 - [[Competence]]
 	- maturity:: draft
 	- owl:class:: mv:AIOperator
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

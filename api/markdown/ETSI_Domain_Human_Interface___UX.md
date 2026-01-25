@@ -2,7 +2,7 @@
   id:: etsi_domain_human_interface___ux-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247920
+	- term-id:: MV-2000
 	- preferred-term:: ETSI_Domain_Human_Interface___UX
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:ETSI_Domain_Human_Interface___UX
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

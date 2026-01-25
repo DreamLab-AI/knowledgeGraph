@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[MSF Use Cases]], [[OMA3]]
 	- owl:class:: mv:FractionalizedNFT
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

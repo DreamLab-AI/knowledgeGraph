@@ -10,7 +10,6 @@
 	- definition:: A coordinated sequence of activities, state changes, and events that transforms inputs into outputs to achieve a specific goal or outcome. Processes represent structured temporal progressions involving multiple agents, systems, or components working in coordination, with defined control flow, duration, and observable states.
 	- maturity:: reviewed
 	- owl:class:: ngm:Process
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: TemporalConcept
 	- belongsToDomain:: [[Systems Theory]]
 

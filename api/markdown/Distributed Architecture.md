@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ETSI ARF 010]]
 	- owl:class:: mv:DistributedArchitecture
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

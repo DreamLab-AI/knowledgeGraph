@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ENISA 2024]], [[NIST PEC Guidelines]], [[ISO 27559]]
 	- owl:class:: mv:PrivacyEnhancingComputation
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

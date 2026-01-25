@@ -2,7 +2,7 @@
   id:: rb-0035-accuracy-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: RB-0877
+	- term-id:: RB-0035
 	- preferred-term:: rb 0035 accuracy
 	- source-domain:: rb
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: **Accuracy** - Difference between commanded and actual position
 	- maturity:: draft
 	- owl:class:: rb:RobotAccuracy
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0035 accuracy

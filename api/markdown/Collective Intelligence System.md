@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[OECD AI Collective Intelligence 2025]]
 	- owl:class:: mv:CollectiveIntelligenceSystem
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Agent
 	- owl:inferred-class:: mv:VirtualAgent
 	- owl:functional-syntax:: true

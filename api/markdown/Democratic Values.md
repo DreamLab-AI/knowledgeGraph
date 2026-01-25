@@ -159,7 +159,6 @@ Democratic impact evaluated through:
 *Aligned with OECD AI Principles 2024 and democratic governance standards*
 	- maturity:: draft
 	- owl:class:: mv:DemocraticValues
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Democratic Values

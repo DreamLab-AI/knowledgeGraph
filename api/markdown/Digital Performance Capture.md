@@ -2,7 +2,7 @@
   id:: digital-performance-capture-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20196
+	- term-id:: MV-20196
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[SMPTE ST 2119]]
 	- owl:class:: mv:DigitalPerformanceCapture
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

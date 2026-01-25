@@ -290,7 +290,6 @@ Preference learning recognizes that humans excel at comparative judgments, enabl
 **Verification Status**: Verified against RLHF and DPO papers
 	- maturity:: draft
 	- owl:class:: mv:PreferenceLearning
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Preference Learning

@@ -2,7 +2,7 @@
   id:: dex-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20262
+	- term-id:: MV-20262
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO 24165]], [[DeFi WG]]
 	- owl:class:: mv:DecentralizedExchange
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "The projection of human presence into remote physical locations through mobile robotic platforms equipped with cameras, displays, microphones, and speakers, enabling remote operators to navigate environments, interact with people, and manipulate objects as if physically present, bridging virtual and physical collaboration modalities."
 	- maturity:: mature
-	- owl:physicality:: PhysicalEntity
 	- owl:role:: Object
 	- #### Relationships
 	  id:: robotic-telepresence-relationships

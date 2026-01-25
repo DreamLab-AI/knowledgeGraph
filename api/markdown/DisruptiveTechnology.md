@@ -10,7 +10,6 @@
 	- definition:: Disruptive Technology refers to innovations that create new markets and value networks by initially targeting simple applications at the bottom of the market with more accessible and affordable solutions, then relentlessly moving upmarket to eventually displace established market-leading firms, products, and alliances. Unlike sustaining technologies that make incremental improvements, disruptive technologies enable business models that fundamentally shift market paradigms.
 	- maturity:: reviewed
 	- owl:class:: ngm:Disruptivetechnology
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[InnovationDomain]]
 

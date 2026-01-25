@@ -10,7 +10,6 @@
 	- definition:: Strings of data used in cryptographic algorithms to encrypt, decrypt, sign, or verify data, serving as the secret parameters that transform plaintext to ciphertext and vice versa. Keys can be symmetric (single shared key) or asymmetric (public-private key pairs), with security depending on key length, randomness, and proper management.
 	- maturity:: reviewed
 	- owl:class:: bc:CryptographicKeys
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Cryptography]]
 

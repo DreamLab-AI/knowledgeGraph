@@ -2,14 +2,13 @@
   id:: physics-engine-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20118
+	- term-id:: MV-20118
 	- source-domain:: mv
 	- preferred-term:: Physics Engine
 	- definition:: Software component that simulates physical interactions, constraints, and dynamics in real-time for virtual environments.
 	- maturity:: mature
 	- source:: [[EWG/MSF Taxonomy]], [[SIGGRAPH Pipeline WG]], [[ISO/IEC 23090-3]]
 	- owl:class:: mv:PhysicsEngine
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

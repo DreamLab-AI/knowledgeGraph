@@ -2,7 +2,7 @@
   id:: manipulatorarm-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247943
+	- term-id:: MV-3013
 	- preferred-term:: ManipulatorArm
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:ManipulatorArm
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

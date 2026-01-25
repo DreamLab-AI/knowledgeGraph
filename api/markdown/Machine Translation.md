@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0367
 	- preferred-term:: Machine Translation
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: Machine Translation is the automated translation of text or speech from one natural language to another using neural network models, particularly transformer-based sequence-to-sequence architectures. Modern neural machine translation systems (Google Translate, DeepL, NLLB) achieve near-human translation quality through pre-training on massive multilingual corpora, attention mechanisms, and cross-lingual transfer learning.
 
@@ -71,9 +71,8 @@
 - **Maturity**: Production deployment
 	- maturity:: draft
 	- owl:class:: ai:MachineTranslation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- #### Relationships
 	  id:: machine-translation-relationships
 - ## About Machine Translation

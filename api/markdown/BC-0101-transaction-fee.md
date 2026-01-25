@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:TransactionFee
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[TokenEconomicsDomain]]
@@ -115,3 +114,9 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0101>
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
   -
 
+
+
+<!-- Merged from BC 0101 transaction fee.md: MetaverseDomain -->
+
+
+<!-- Merged from Transaction Fee.md: Blockchain, Tokenomics -->

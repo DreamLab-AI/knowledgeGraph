@@ -65,7 +65,6 @@ WordPiece is the subword tokenisation algorithm used for BERT, DistilBERT, and E
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:WordPiece
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About WordPiece

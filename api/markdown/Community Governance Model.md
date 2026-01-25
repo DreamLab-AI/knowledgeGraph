@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[DAO Governance Standards]], [[ISO 37001 Anti-Bribery Management]], [[W3C Decentralized Governance]]
 	- owl:class:: mv:CommunityGovernanceModel
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

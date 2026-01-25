@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[EWG/MSF Taxonomy]]
 	- owl:class:: mv:PlatformLayer
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

@@ -4,16 +4,15 @@
 	- ontology:: true
 	- term-id:: AI-0037
 	- preferred-term:: Transformer
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: ### Primary Definition
 A **Transformer** is a neural network architecture relying on self-attention mechanisms rather than recurrence or convolution. Transformers process entire sequences in parallel, enabling efficient training on large datasets and serving as the foundation for most modern large language models.
 	- maturity:: draft
 	- owl:class:: ai:Transformer
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Transformer
 	- ### Primary Definition
 A **Transformer** is a neural network architecture relying on self-attention mechanisms rather than recurrence or convolution. Transformers process entire sequences in parallel, enabling efficient training on large datasets and serving as the foundation for most modern large language models.

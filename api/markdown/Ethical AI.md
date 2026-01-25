@@ -274,7 +274,6 @@ Ethical AI is not merely compliance with external requirements but a commitment 
 - [[Ethics by Design]]
 	- maturity:: draft
 	- owl:class:: mv:EthicalAI
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

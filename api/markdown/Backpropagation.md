@@ -4,16 +4,15 @@
 	- ontology:: true
 	- term-id:: AI-0043
 	- preferred-term:: Backpropagation
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: ### Primary Definition
 **Backpropagation** is an algorithm for training neural networks that computes gradients of the loss function with respect to network weights by propagating error signals backward through the network layers. It enables efficient calculation of gradients needed for gradient descent optimisation.
 	- maturity:: draft
 	- owl:class:: ai:Backpropagation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Backpropagation
 	- ### Primary Definition
 **Backpropagation** is an algorithm for training neural networks that computes gradients of the loss function with respect to network weights by propagating error signals backward through the network layers. It enables efficient calculation of gradients needed for gradient descent optimisation.

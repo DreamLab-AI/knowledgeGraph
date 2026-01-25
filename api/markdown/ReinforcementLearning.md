@@ -2,17 +2,16 @@
   id:: reinforcementlearning-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247961
+	- term-id:: AI-3001
 	- preferred-term:: ReinforcementLearning
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: ai:ReinforcementLearning
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 
 ## OWL Formal Semantics
 
@@ -34,70 +33,7 @@
 	-
 	- ### Original Content
 	  collapsed:: true
-		- ```
-- # Ontology Block
-		    collapsed:: true
-		    - **Class:** ReinforcementLearning
-		    - **IRI:** http://purl.org/ai-grounded-ontology/core#ReinforcementLearning
-		    - **SubClassOf:** MachineLearningParadigm
-		    - **Source Domain:** artificial-intelligence
-		    - **Source File:** metaverse-ontology-combined-refactored.ttl
-		    - **Integration Date:** 2025-10-28
-		    - **TRL:** 7
-		    - **Quality Score:** 0.91
-		    - ```turtle
-		      aigo:ReinforcementLearning rdf:type owl:Class ;
-		          rdfs:label "Reinforcement Learning"@en ;
-		          rdfs:comment "Machine learning paradigm where agents learn optimal behaviors through trial-and-error interaction with an environment."@en ;
-		          rdfs:subClassOf aigo:MachineLearningParadigm ;
-		          meta:sourceOntology "aigo:" ;
-		          meta:technologyDomain "artificial-intelligence" ;
-		          meta:disruptiveTechCategory "artificial-intelligence-systems" ;
-		          meta:technologyReadinessLevel "7"^^xsd:integer ;
-		          meta:qualityScore "0.91"^^xsd:float .
-		      ```
-		  
-		  - ## Description
-		    - Learning paradigm based on agent-environment interaction
-		    - Agents learn through rewards and penalties
-		    - Optimizes long-term cumulative reward
-		    - Explores state-action space through trial and error
-		    - Balances exploration of new strategies with exploitation of known rewards
-		  
-		  - ## Properties
-		    - Object properties
-		      - [[hasAgent]] - Learning agent in the system
-		      - [[interactsWithEnvironment]] - Environment for learning
-		      - [[usesRewardFunction]] - Reward signal definition
-		      - [[implementsPolicy]] - Action selection policy
-		    - Data properties
-		      - learningRate - Rate of policy updates
-		      - discountFactor - Future reward discounting
-		      - explorationRate - Exploration vs exploitation balance
-		      - episodeLength - Length of learning episodes
-		  
-		  - ## Cross-Domain Relationships
-		    - [[dt:trains]] → [[AutonomousAgent]] - Training autonomous metaverse agents
-		    - [[dt:optimizes]] → [[RobotControl]] - Optimizing robotic behaviors
-		    - [[dt:enhances]] → [[NPCBehavior]] - Adaptive NPC learning
-		    - [[dt:governs]] → [[DAODecision]] - RL-based governance optimization
-		    - [[dt:controls]] → [[SmartContractExecution]] - Optimized contract parameters
-		  
-		  - ## Related Concepts
-		    - [[PolicyGradient]]
-		    - [[QualityLearning]]
-		    - [[ActorCritic]]
-		    - [[MultiAgentLearning]]
-		    - [[AdaptiveLearning]]
-		  
-		  - ## Use Cases
-		    - Game AI and NPC training
-		    - Robotic control systems
-		    - Resource allocation optimization
-		    - Autonomous trading strategies
-		    - Dynamic pricing systems
-		  
-		  ```
+		- Legacy content removed during ai: prefix remediation (2025-01-23)
 
 I appreciate the detailed request, but I must flag a significant issue with the premise: the search results provided do not contain sufficient information to comprehensively review and improve an ontology entry for "Reinforcement Learning" as a component of the metaverse ecosystem.
 

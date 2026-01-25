@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: rb:Manipulator
-    - owl:physicality:: PhysicalEntity
     - owl:role:: Object
     - belongsToDomain:: [[Robotics]]
 

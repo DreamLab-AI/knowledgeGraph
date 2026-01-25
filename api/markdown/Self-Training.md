@@ -52,7 +52,6 @@ Self-training demonstrates that models can bootstrap their own performance by le
 **Verification Status**: Verified against semi-supervised learning literature
 	- maturity:: draft
 	- owl:class:: mv:SelfTraining
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Self Training

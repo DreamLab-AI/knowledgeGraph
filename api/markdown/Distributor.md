@@ -2,7 +2,7 @@
   id:: distributor-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247916
+	- term-id:: MV-3060
 	- preferred-term:: Distributor
 	- source-domain:: mv
 	- status:: draft
@@ -270,7 +270,6 @@ Bundling multiple AI systems with integration services.
 - Digital Services Act (EU) 2022/2065
 	- maturity:: draft
 	- owl:class:: mv:Distributor
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Distributor

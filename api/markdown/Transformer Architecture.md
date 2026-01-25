@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0196
 	- preferred-term:: Transformer Architecture
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: A neural network architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely, designed for sequence-to-sequence tasks.
 
@@ -98,9 +98,8 @@ The transformer architecture revolutionised natural language processing by demon
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: ai:TransformerArchitecture
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Transformer Architecture
 	- A neural network architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely, designed for sequence-to-sequence tasks.
 

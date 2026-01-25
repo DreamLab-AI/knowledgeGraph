@@ -4,16 +4,15 @@
 	- ontology:: true
 	- term-id:: AI-0057
 	- preferred-term:: Dropout
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: ### Primary Definition
 **Dropout** is a regularisation technique that randomly deactivates (drops) a fraction of neurons during each training iteration, preventing co-adaptation and reducing overfitting. Dropout rate (typically 0.2-0.5) controls the fraction of neurons dropped.
 	- maturity:: draft
 	- owl:class:: ai:Dropout
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Dropout
 	- ### Primary Definition
 **Dropout** is a regularisation technique that randomly deactivates (drops) a fraction of neurons during each training iteration, preventing co-adaptation and reducing overfitting. Dropout rate (typically 0.2-0.5) controls the fraction of neurons dropped.

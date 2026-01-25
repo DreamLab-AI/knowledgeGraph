@@ -2,7 +2,7 @@
   id:: ai-core-concepts-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247980
+	- term-id:: MV-3058
 	- preferred-term:: ai core concepts
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:aicoreconcepts
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 
@@ -71,7 +70,7 @@
 		  - ## Related Resources
 		    - Source File: `metaverse-ontology-combined-refactored.ttl`
 		    - Integration Date: 2025-10-28
-		    - Namespace: `aigo:` (http://purl.org/ai-grounded-ontology/core#)
+		    - Namespace: `ai:` (http://purl.org/ai-grounded-ontology/core#)
 		  
 		  - ## Key Applications
 		    - Autonomous decision-making

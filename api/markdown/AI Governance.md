@@ -172,7 +172,6 @@ AI governance operates at multiple levels—from organisational policies and pro
 - [[Risk Management]]
 	- maturity:: draft
 	- owl:class:: mv:AIGovernance
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

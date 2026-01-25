@@ -3,7 +3,7 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: bc-20133
-	- source-domain:: blockchain
+	- source-domain:: bc
 	- status:: draft
 - public-access:: true
 	- preferred-term:: Crypto Token
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[Reed Smith]], [[ISO 24165]]
 	- owl:class:: bc:CryptoToken
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

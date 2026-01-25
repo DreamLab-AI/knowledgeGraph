@@ -2,7 +2,7 @@
   id:: etsi-domain-ai-creative-media-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20331
+	- term-id:: MV-20331
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ETSI GS MEC]]
 	- owl:class:: mv:ETSIDomainAICreativeMedia
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

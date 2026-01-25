@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "Robotic control systems enabling human operators to command and manipulate remote robots through intuitive interfaces, transmitting operator intentions to robot actuators whilst providing sensory feedback (visual, auditory, haptic) from the robot to the operator, creating bidirectional human-machine coupling for remote physical interaction."
 	- maturity:: mature
-	- owl:physicality:: PhysicalEntity
 	- owl:role:: Object
 	- is-subclass-of:: [[Robotic Telepresence]]
 

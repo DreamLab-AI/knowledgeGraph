@@ -10,7 +10,6 @@
 	- definition:: The foundational technology domain encompassing persistent, synchronous 3D virtual worlds, augmented reality environments, spatial computing platforms, and immersive internet infrastructure that enable shared experiences with interoperable digital assets, persistent identity systems, and real-time social interaction across physical and virtual boundaries.
 	- maturity:: stable
 	- owl:class:: mv:MetaverseTechnology
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Domain
 	- belongsToDomain:: [[Metaverse Technology]]
 	- #### Relationships

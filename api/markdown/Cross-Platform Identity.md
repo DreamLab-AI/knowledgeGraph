@@ -10,7 +10,6 @@
 	- definition:: Cross-platform identity refers to the capability of linking and managing a user's electronic identity and attributes across multiple distinct systems, platforms, and organisational boundaries. It enables seamless authentication and authorisation across heterogeneous environments through federated identity management, allowing users to access resources across domains without maintaining separate credentials for each system.
 	- maturity:: reviewed
 	- owl:class:: ngm:CrossPlatformIdentity
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Core Technology]]
 

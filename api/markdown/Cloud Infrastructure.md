@@ -11,7 +11,6 @@
 	- maturity:: reviewed
 	- belongsToDomain:: [[InfrastructureDomain]], [[Technology Domain]], [[ETSI_Domain_Infrastructure]]
 	- owl:class:: ngm:CloudInfrastructure
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Infrastructure
 
 ## Relationships

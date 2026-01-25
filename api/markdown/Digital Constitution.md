@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[Constitution DAO]], [[UN Digital Rights Framework]], [[ISO 37001 Governance]], [[Aragon Constitutional Framework]]
 	- owl:class:: mv:DigitalConstitution
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

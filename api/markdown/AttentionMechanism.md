@@ -10,7 +10,6 @@
 	- definition:: A machine learning technique that enables deep learning models to dynamically focus on the most relevant parts of input data by computing attention weights that reflect the relative importance of each element in a sequence. Central to the Transformer architecture introduced in the seminal 2017 paper "Attention Is All You Need," attention mechanisms replaced recurrence with parallel self-attention layers, revolutionizing natural language processing and enabling modern large language models.
 	- maturity:: complete
 	- owl:class:: ngm:Attentionmechanism
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Artificial Intelligence]]
 

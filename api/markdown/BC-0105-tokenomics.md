@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:Tokenomics
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[TokenEconomicsDomain]]
@@ -115,3 +114,9 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0105>
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
   -
 
+
+
+<!-- Merged from BC 0105 tokenomics.md: MetaverseDomain -->
+
+
+<!-- Merged from Tokenomics.md: Blockchain -->

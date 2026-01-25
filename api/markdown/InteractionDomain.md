@@ -10,7 +10,6 @@
 	- definition:: The Interaction Domain encompasses the ontological framework for human-computer interaction (HCI) phenomena, including interactive computer systems, user interfaces, user actions, and the processes by which interactions occur. It provides formal representation of user experience elements, adaptive interactive systems, and the modularized understanding of how users engage with digital systems through various modalities.
 	- maturity:: reviewed
 	- owl:class:: ai:Interactiondomain
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Domain
 	- belongsToDomain:: [[TechnologyDomain]]
 

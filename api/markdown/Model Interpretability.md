@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0298
 	- preferred-term:: Model Interpretability
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: The degree to which a human can understand the cause-effect relationships within a machine learning model's decision-making process, encompassing both the model's internal mechanisms and the reasoning behind specific predictions.
 
@@ -406,9 +406,8 @@ Applied after training:
 - [[LIME]]
 	- maturity:: draft
 	- owl:class:: ai:ModelInterpretability
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- #### Relationships
 	  id:: model-interpretability-relationships
 - ## About Model Interpretability

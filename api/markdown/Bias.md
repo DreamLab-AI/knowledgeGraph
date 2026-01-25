@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0066
 	- preferred-term:: Bias
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: Systematic deviation from fairness, objectivity, or expected outcomes in an AI system that leads to prejudiced results favouring or disfavouring particular groups, individuals, or outcomes, arising from data, algorithms, or deployment contexts.
 
@@ -549,9 +549,8 @@ impact: [unfairness, discrimination, reduced_accuracy, harm]
 *This definition provides a comprehensive framework for understanding the multifaceted nature of bias in AI systems and approaches to address it.*
 	- maturity:: draft
 	- owl:class:: ai:Bias
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Bias
 	- Systematic deviation from fairness, objectivity, or expected outcomes in an AI system that leads to prejudiced results favouring or disfavouring particular groups, individuals, or outcomes, arising from data, algorithms, or deployment contexts.
 

@@ -11,7 +11,6 @@
 	- source:: [[AI Hardware]], [[Edge Computing]]
 	- maturity:: emerging
 	- owl:class:: ai:NPU
-	- owl:physicality:: Physical
 	- owl:role:: Object
 	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- isSubclassOf:: [[AI Hardware]]

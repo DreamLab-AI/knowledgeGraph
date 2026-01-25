@@ -11,7 +11,6 @@
     - public-access:: true
 	- definition:: An agricultural robot is an autonomous or semi-autonomous machine designed to perform farming tasks such as planting, weeding, harvesting, and crop monitoring.
 	- maturity:: draft
-	- owl:physicality:: PhysicalEntity
 	- owl:role:: Object
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0015 agricultural robot

@@ -2,7 +2,7 @@
   id:: validation_report-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247976
+	- term-id:: MV-3001
 	- preferred-term:: VALIDATION_REPORT
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:VALIDATION_REPORT
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

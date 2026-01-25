@@ -13,7 +13,6 @@
 	- definition:: **Functional Safety** - Functional Safety in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:FunctionalSafety
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0102 functional safety

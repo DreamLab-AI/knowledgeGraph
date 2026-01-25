@@ -2,7 +2,7 @@
   id:: vr-telepresence-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: TC-0020
+	- term-id:: TC-4000
 	- preferred-term:: Virtual Reality Telepresence
 	- source-domain:: tc
 	- owl:class:: tc:VirtualRealityTelepresence
@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "The use of virtual reality head-mounted displays and immersive 3D environments to enable remote participants to experience shared virtual spaces with stereoscopic vision, spatial audio, head tracking, and avatar embodiment, creating a subjective sense of co-location despite geographical separation."
 	- maturity:: developing
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- #### Relationships
 	  id:: vr-telepresence-relationships

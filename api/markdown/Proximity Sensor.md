@@ -7,14 +7,13 @@
 	- sequence-number:: 0071
 	- filename-history:: ["rb-0071-proximity-sensor.md"]
 	- preferred-term:: Proximity Sensor
-	- source-domain:: robotics
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Proximity Sensor** - Proximity Sensor in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:rb0071proximitysensor
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0071 proximity sensor

@@ -19,10 +19,9 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:PowerEfficientAI
-    - owl:physicality:: VirtualEntity
+    - owl:class:: ai:PowerEfficientAI
     - owl:role:: Process
-    - owl:inferred-class:: aigo:VirtualProcess
+    - owl:inferred-class:: ai:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 

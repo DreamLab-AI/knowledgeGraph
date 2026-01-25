@@ -10,7 +10,6 @@
 	- definition:: The Infrastructure Domain provides an ontological framework for ICT infrastructure configuration items, resources, and resource groups common across IT service management systems. It encompasses network components, server infrastructure, data centers, software systems, databases, hardware components, and security configurations that enable network connectivity, communication, and computing services.
 	- maturity:: reviewed
 	- owl:class:: ai:Infrastructuredomain
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Domain
 	- belongsToDomain:: [[TechnologyDomain]]
 

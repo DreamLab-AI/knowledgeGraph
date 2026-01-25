@@ -294,7 +294,6 @@ Together, sensitivity and specificity provide comprehensive picture of diagnosti
 - [[True Positive Rate]]
 	- maturity:: draft
 	- owl:class:: mv:Recall
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

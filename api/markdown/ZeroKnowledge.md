@@ -2,7 +2,7 @@
   id:: zeroknowledge-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247980
+	- term-id:: MV-3041
 	- preferred-term:: ZeroKnowledge
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:ZeroKnowledge
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

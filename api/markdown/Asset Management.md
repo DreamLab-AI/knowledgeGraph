@@ -10,7 +10,6 @@
 	- definition:: The professional management of digital and traditional assets through strategies including portfolio construction, risk management, custody, and performance optimization. In the context of fintech and DeFi, asset management encompasses crypto portfolio management, tokenized securities, yield optimization, and institutional-grade custody solutions that enable investors to navigate volatile digital markets while maximizing risk-adjusted returns.
 	- maturity:: reviewed
 	- owl:class:: ngm:AssetManagement
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Financial Technology]]
 	- belongsToDomain:: [[Decentralized Finance]]

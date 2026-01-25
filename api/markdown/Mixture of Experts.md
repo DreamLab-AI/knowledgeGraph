@@ -57,7 +57,6 @@ MoE enables efficient scaling by activating only a subset of parameters per inpu
 **Verification Status**: Verified against MoE survey (arXiv:2407.06204)
 	- maturity:: draft
 	- owl:class:: mv:MixtureofExperts
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Mixture of Experts

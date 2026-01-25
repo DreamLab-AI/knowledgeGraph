@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[ETSI GS MEC]]
 	- owl:class:: mv:ReputationScoringModel
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

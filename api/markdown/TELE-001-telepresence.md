@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "The technology-mediated experience of 'being there' in a remote location, creating the psychological sensation of physical presence despite geographical separation through immersive technologies, real-time communication, and sensory feedback systems that replicate spatial, visual, auditory, and tactile cues of co-location."
 	- maturity:: mature
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- #### Relationships
 	  id:: telepresence-relationships
@@ -186,3 +185,6 @@ Decentralised autonomous organisations (DAOs) leverage telepresence for governan
 - **Authority Score**: 0.95
 - **UK Context**: High (major research institutions)
 - **Cross-Domain**: Bridges to Metaverse, AI, Robotics domains
+
+
+<!-- Merged from Telepresence.md: Holographic Telepresence, Immersive Communication, Robot Telepresence, Telecollaboration, Volumetric Capture -->

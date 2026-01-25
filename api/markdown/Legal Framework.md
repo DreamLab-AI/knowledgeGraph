@@ -10,7 +10,6 @@
 	- definition:: A legal framework for technology systems comprises the body of laws, regulations, and legal requirements that govern the development, deployment, and operation of information technology. It establishes obligations for data protection, privacy, security, and compliance, defining the legal boundaries within which organisations must operate when processing personal data, deploying AI systems, and conducting digital operations.
 	- maturity:: reviewed
 	- owl:class:: ngm:LegalFramework
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Core Technology]]
 

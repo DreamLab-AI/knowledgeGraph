@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[IEEE VR Standards]], [[Khronos Group]], [[W3C WebXR]]
 	- owl:class:: mv:SpatialComputing
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

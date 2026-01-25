@@ -11,7 +11,6 @@
 A **Graph Neural Network (GNN)** is a neural network architecture designed to process graph-structured data by propagating and aggregating information across graph nodes and edges. GNNs learn node and edge representations by iteratively updating feature vectors based on neighbourhood structure.
 	- maturity:: draft
 	- owl:class:: mv:GraphNeuralNetwork
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Graph Neural Network

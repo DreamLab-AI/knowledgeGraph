@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[IEEE 2888.1-2023]], [[OpenXR]], [[IMS Global Learning Consortium]]
 	- owl:class:: mv:EducationMetaverse
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

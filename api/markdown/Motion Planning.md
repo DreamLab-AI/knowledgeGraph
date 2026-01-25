@@ -65,7 +65,6 @@
 - **Maturity**: Active research and deployment
 	- maturity:: draft
 	- owl:class:: mv:MotionPlanning
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

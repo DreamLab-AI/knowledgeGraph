@@ -31,7 +31,6 @@
 
   - **Semantic Classification**
     - owl:class:: ai:AIAgentSystem
-    - owl:physicality:: VirtualEntity
     - owl:role:: Agent
     - owl:inferred-class:: ai:VirtualAgent
     - belongsToDomain:: [[AI-GroundedDomain]], [[ComputationAndIntelligenceDomain]]

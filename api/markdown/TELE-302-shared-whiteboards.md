@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- owl:class:: tc:SharedWhiteboards
 	- is-subclass-of:: [[TELE-002-telecollaboration]]
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 
 ## Definition

@@ -7,14 +7,13 @@
 	- sequence-number:: 0025
 	- filename-history:: ["rb-0025-end-effector.md"]
 	- preferred-term:: End Effector
-	- source-domain:: robotics
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **End-Effector** - Device attached to robot wrist for task execution
 	- maturity:: draft
 	- owl:class:: rb:rb0025endeffector
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0025 end effector

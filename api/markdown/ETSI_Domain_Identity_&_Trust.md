@@ -2,15 +2,14 @@
   id:: etsi_domain_identity_&_trust-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247920
-	- preferred-term:: ETSI_Domain_Identity_&_Trust
+	- term-id:: MV-2019
+	- preferred-term:: ETSI Domain Identity and Trust
 	- source-domain:: mv
 	- status:: draft
-- public-access:: true
+	- public-access:: true
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
-	- owl:class:: mv:ETSI_Domain_Identity_&_Trust
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: mv:ETSIDomainIdentityTrust
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

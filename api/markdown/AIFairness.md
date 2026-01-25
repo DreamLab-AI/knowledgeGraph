@@ -10,7 +10,6 @@
 	- definition:: AI Fairness refers to the principle and practice of ensuring artificial intelligence systems produce equitable outcomes without bias or discrimination based on protected characteristics such as race, gender, age, or socioeconomic status. It encompasses methodologies for detecting, measuring, and mitigating algorithmic bias throughout the AI development lifecycle to prevent disproportionate harm to specific demographic groups.
 	- maturity:: mature
 	- owl:class:: ai:AiFairness
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Principle
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships

@@ -71,7 +71,6 @@
 - **Maturity**: Commercial deployment
 	- maturity:: draft
 	- owl:class:: mv:QuestionAnswering
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

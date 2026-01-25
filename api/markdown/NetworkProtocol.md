@@ -2,7 +2,7 @@
   id:: networkprotocol-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: AI-1002
+	- term-id:: AI-4003
 	- source-domain:: ai
 	- preferred-term:: NetworkProtocol
 	- status:: complete

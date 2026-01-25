@@ -5,17 +5,16 @@
   "backlinks": [
     "Virtual Meeting",
     "RB-1010-telepresence",
-    "tc-0001-video-conferencing",
     "Collaborative Learning",
     "tc-0002-collaborative-document-editing",
     "tc-0003-telepresence-robot"
   ],
   "wiki_links": [
-    "Virtual Meeting",
-    "Collaborative Editing",
     "Shared Workspace",
     "Real-Time Collaboration",
-    "Telecollaboration"
+    "Collaborative Editing",
+    "Telecollaboration",
+    "Virtual Meeting"
   ],
   "ontology": {
     "term_id": "TC-0603",

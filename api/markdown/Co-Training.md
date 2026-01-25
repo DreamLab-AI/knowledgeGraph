@@ -71,7 +71,6 @@ Co-training demonstrates that models with different inductive biases can effecti
 **Verification Status**: Verified against semi-supervised learning literature
 	- maturity:: draft
 	- owl:class:: mv:CoTraining
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Co Training

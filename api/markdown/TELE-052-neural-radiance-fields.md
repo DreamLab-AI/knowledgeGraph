@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "A neural rendering technique representing 3D scenes as continuous volumetric functions encoded by multilayer perceptrons, mapping 5D coordinates (3D position + 2D viewing direction) to colour and density, enabling photorealistic novel view synthesis from sparse input photographs through volumetric ray marching and gradient-based optimisation."
 	- maturity:: developing
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Process
 	- #### Relationships
 	  id:: nerf-relationships

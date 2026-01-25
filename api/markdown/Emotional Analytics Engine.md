@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[IEEE Affective Computing 2023]]
 	- owl:class:: mv:EmotionalAnalyticsEngine
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Agent
 	- owl:inferred-class:: mv:VirtualAgent
 	- owl:functional-syntax:: true

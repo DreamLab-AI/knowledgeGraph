@@ -19,10 +19,9 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:AIRiskRegister
-    - owl:physicality:: VirtualEntity
+    - owl:class:: ai:AIRiskRegister
     - owl:role:: Process
-    - owl:inferred-class:: aigo:VirtualProcess
+    - owl:inferred-class:: ai:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 

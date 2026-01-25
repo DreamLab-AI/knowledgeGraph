@@ -11,8 +11,7 @@
 	- maturity:: established
 	- region:: West Yorkshire
 	- focus-areas:: HealthTech, FinTech, Digital Industries
-	- owl:class:: uk:LeedsDigitalHub
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: ngm:LeedsDigitalHub
 	- owl:role:: RegionalEcosystem
 	- belongsToDomain:: [[UKTechEcosystem]]
 

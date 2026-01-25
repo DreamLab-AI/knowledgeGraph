@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:DistributedProtocol
-    - owl:physicality:: ConceptualEntity
     - owl:role:: Concept
     - owl:inferred-class:: ConceptualConcept
     - belongsToDomain:: [[BlockchainDomain]]

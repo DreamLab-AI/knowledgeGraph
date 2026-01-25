@@ -9,7 +9,6 @@
 	- maturity:: mature
 	- source:: [[Metaverse 101]], [[SIGGRAPH Pipeline WG]], [[OMA3 Media WG]]
 	- owl:class:: mv:GameEngine
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

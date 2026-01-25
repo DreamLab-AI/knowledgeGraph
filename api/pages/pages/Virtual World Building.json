@@ -6,11 +6,11 @@
     "ETSI_Domain_Creative_Media"
   ],
   "wiki_links": [
-    "Level Design",
-    "3D Design",
     "Metaverse",
     "metaverse",
-    "Game Engine"
+    "Game Engine",
+    "3D Design",
+    "Level Design"
   ],
   "ontology": {
     "term_id": "MV-10153",

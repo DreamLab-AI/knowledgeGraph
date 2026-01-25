@@ -551,7 +551,6 @@ Applicable techniques:
 *This definition emphasizes reliability as consistent, accurate, and dependable performance—a cornerstone of trustworthy AI systems.*
 	- maturity:: draft
 	- owl:class:: mv:Reliability
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

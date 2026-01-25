@@ -477,7 +477,6 @@ L^c_Grad-CAM = ReLU(Σₖ αₖ^c Aᵏ)
 - [[Saliency Map]]
 	- maturity:: draft
 	- owl:class:: mv:PostHocExplanation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

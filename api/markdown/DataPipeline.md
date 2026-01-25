@@ -2,7 +2,7 @@
   id:: datapipeline-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247911
+	- term-id:: MV-3014
 	- preferred-term:: DataPipeline
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:DataPipeline
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 
@@ -46,10 +45,10 @@
 		    - **TRL:** 7
 		    - **Quality Score:** 0.91
 		    - ```turtle
-		      aigo:DataPipeline rdf:type owl:Class ;
+		      ai:DataPipeline rdf:type owl:Class ;
 		          rdfs:label "Data Pipeline"@en ;
 		          rdfs:comment "Automated workflow for data ingestion, transformation, validation, and preparation for machine learning."@en ;
-		          meta:sourceOntology "aigo:" ;
+		          meta:sourceOntology "ai:" ;
 		          meta:technologyDomain "artificial-intelligence" ;
 		          meta:disruptiveTechCategory "artificial-intelligence-systems" ;
 		          meta:technologyReadinessLevel "7"^^xsd:integer ;

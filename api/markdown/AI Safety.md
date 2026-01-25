@@ -2,7 +2,7 @@
   id:: ai-safety-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: AI-0600
+	- term-id:: AI-4009
 	- preferred-term:: AI Safety
 	- source-domain:: ai
 	- status:: active

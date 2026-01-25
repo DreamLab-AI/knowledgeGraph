@@ -2,7 +2,7 @@
   id:: authorised-representative-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247883
+	- term-id:: MV-3051
 	- preferred-term:: Authorised Representative
 	- source-domain:: mv
 	- status:: draft
@@ -273,7 +273,6 @@ Authorised representatives for GPAI model providers:
 - Commission Guidance on Authorised Representatives (expected 2026)
 	- maturity:: draft
 	- owl:class:: mv:AuthorisedRepresentative
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Authorised Representative

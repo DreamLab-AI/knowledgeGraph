@@ -19,10 +19,9 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:DisparateImpact
-    - owl:physicality:: VirtualEntity
+    - owl:class:: ai:DisparateImpact
     - owl:role:: Process
-    - owl:inferred-class:: aigo:VirtualProcess
+    - owl:inferred-class:: ai:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 

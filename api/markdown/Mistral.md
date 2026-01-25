@@ -62,7 +62,6 @@ Mistral achieves remarkable performance-to-size ratio through architectural inno
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:Mistral
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Mistral

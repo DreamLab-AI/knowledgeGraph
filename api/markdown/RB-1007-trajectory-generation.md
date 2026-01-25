@@ -19,7 +19,6 @@
 
 - **Semantic Classification**
   - owl:class:: rb:TrajectoryGeneration
-  - owl:physicality:: Abstract
   - owl:role:: Method
   - belongsToDomain:: [[Robotics]], [[Motion Planning]]
 

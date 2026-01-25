@@ -9,7 +9,6 @@
 	- maturity:: mature
 	- source:: [[EWG/MSF Taxonomy]], [[ISO/IEC 30170]], [[ETSI GR ARF 010]]
 	- owl:class:: mv:Middleware
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

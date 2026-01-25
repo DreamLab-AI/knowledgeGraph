@@ -2,15 +2,14 @@
   id:: visioninglab-property-crosswalk-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: →
+	- term-id:: MV-20500
 	- preferred-term:: VisioningLab Property Crosswalk
 	- source-domain:: mv
 	- status:: draft
-- public-access:: true
-	- definition:: → skos:definition
+	- public-access:: true
+	- definition:: Mapping framework for aligning VisioningLab hybrid page properties to RDF/OWL/SKOS predicates for ontology interoperability.
 	- maturity:: draft
 	- owl:class:: mv:VisioningLabPropertyCrosswalk
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 
@@ -23,14 +22,14 @@
 
 ;; Annotations
 (AnnotationAssertion rdfs:label :VisioninglabPropertyCrosswalk "VisioningLab Property Crosswalk"@en)
-(AnnotationAssertion rdfs:comment :VisioninglabPropertyCrosswalk "→ skos:definition"@en)
+(AnnotationAssertion rdfs:comment :VisioninglabPropertyCrosswalk "Mapping framework for aligning VisioningLab hybrid page properties to RDF/OWL/SKOS predicates for ontology interoperability."@en)
 
 ;; Data Properties
-(AnnotationAssertion dcterms:identifier :VisioninglabPropertyCrosswalk "→"^^xsd:string)
+(AnnotationAssertion dcterms:identifier :VisioninglabPropertyCrosswalk "MV-20500"^^xsd:string)
 ```
 
 - ## About VisioningLab Property Crosswalk
-	- → skos:definition
+	- Mapping framework for aligning VisioningLab hybrid page properties to RDF/OWL/SKOS predicates for ontology interoperability.
 	-
 	- ### Original Content
 	  collapsed:: true

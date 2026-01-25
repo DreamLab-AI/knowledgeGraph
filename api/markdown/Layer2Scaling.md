@@ -2,7 +2,7 @@
   id:: layer2scaling-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247942
+	- term-id:: MV-3074
 	- preferred-term:: Layer2Scaling
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:Layer2Scaling
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

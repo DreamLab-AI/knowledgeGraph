@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[MSF Use Cases]]
 	- owl:class:: mv:NFTWrapping
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

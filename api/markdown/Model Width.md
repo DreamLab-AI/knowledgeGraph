@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0244
 	- preferred-term:: Model Width
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: The dimensionality of representations within each layer, typically referring to the hidden dimension (d_model), determining the capacity of the model to encode information at each layer.
 
@@ -63,9 +63,8 @@ Model width, along with model depth and dataset size, is a key dimension in scal
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: ai:ModelWidth
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Model Width
 	- The dimensionality of representations within each layer, typically referring to the hidden dimension (d_model), determining the capacity of the model to encode information at each layer.
 

@@ -6,7 +6,7 @@
     - ontology:: true
     - term-id:: ONTO-PROPS
     - preferred-term:: Ontology Property Definitions
-    - source-domain:: ontology-foundation
+    - source-domain:: dt
     - status:: complete
     - public-access:: true
     - version:: 1.0.0

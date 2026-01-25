@@ -13,7 +13,6 @@
 	- definition:: **Trajectory Planning** - Trajectory Planning in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:TrajectoryPlanning
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0051 trajectory planning

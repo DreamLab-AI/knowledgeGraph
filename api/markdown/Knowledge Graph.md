@@ -2,7 +2,7 @@
   id:: knowledgegraph-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20308
+	- term-id:: MV-20308
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[W3C RDF]], [[W3C OWL]], [[Schema.org]]
 	- owl:class:: mv:KnowledgeGraph
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

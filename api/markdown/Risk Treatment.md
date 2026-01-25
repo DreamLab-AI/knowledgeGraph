@@ -10,7 +10,6 @@
 	- definition:: The process of selecting and implementing measures to modify AI risk, including risk avoidance, risk reduction (mitigation), risk sharing (transfer), and risk retention, based on risk assessment outcomes and organizational risk appetite.
 	- maturity:: draft
 	- owl:class:: mv:RiskTreatment
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

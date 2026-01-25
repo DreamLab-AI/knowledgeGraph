@@ -19,7 +19,6 @@
 
 - **Semantic Classification**
   - owl:class:: rb:TrustInAutomation
-  - owl:physicality:: Psychological
   - owl:role:: Concept
   - belongsToDomain:: [[Human-Robot Interaction]], [[Human Factors]], [[Automation]]
 

@@ -67,7 +67,6 @@ Vocabulary size is determined by the tokenisation algorithm and affects model si
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:Vocabulary
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Vocabulary

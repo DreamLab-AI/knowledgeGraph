@@ -12,8 +12,7 @@
 	- public-access:: true
 	- definition:: Robot Control - The systems, algorithms, and methodologies that enable robots to execute tasks autonomously or semi-autonomously through sensing, decision-making, and actuation
 	- maturity:: production
-	- owl:class:: rb:rb0046robotcontrol
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: rb:RobotControl
 	- owl:role:: CoreConcept
 	- belongsToDomain:: [[RoboticsDomain]]
 	- quality-score:: 0.92

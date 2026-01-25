@@ -85,7 +85,6 @@ Self-attention models compute representations by allowing each token to attend t
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:SelfAttention
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Self Attention

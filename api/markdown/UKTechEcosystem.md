@@ -9,8 +9,7 @@
 	- public-access:: true
 	- definition:: The United Kingdom's technology industry landscape, ranked as Europe's leading tech ecosystem with a combined market valuation of $1.2 trillion and over 17,000 VC-backed startups. The UK is the third largest AI market globally (after US and China), valued at $92 billion in 2024, with 185+ unicorns, 3,700+ AI companies employing 60,000+ people, and $16.2 billion VC raised in 2024. Key hubs include London (1,603 AI startups, 14 unicorns) and Cambridge (world's most intensive science cluster, $222bn valuation). Despite startup creation strengths, the ecosystem faces challenges retaining scale-ups, with 43% of founders considering US relocation.
 	- maturity:: reviewed
-	- owl:class:: domain:TechnologyEcosystem
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: ngm:TechnologyEcosystem
 	- owl:role:: IndustryEcosystem
 	- belongsToDomain:: [[Technology]], [[Economic Development]], [[Innovation]]
 

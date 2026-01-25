@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:DistributedLedger
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[BlockchainDomain]]
@@ -125,3 +124,6 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0002>
     - [[ITU-T Y.4560]] - Blockchain and distributed ledger technologies
   -
 
+
+
+<!-- Merged from Distributed Ledger.md: Blockchain, Blockchain Entity, Directed Acyclic Graph, Enterprise Ledger, European Blockchain Services Infrastructure -->

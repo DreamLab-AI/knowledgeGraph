@@ -9,7 +9,6 @@
 	- maturity:: mature
 	- source:: [[ETSI GR ARF 010]], [[MSF Taxonomy]], [[SMPTE ST 2119]]
 	- owl:class:: mv:CloudRenderingService
-	- owl:physicality:: HybridEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:HybridProcess
 	- owl:functional-syntax:: true

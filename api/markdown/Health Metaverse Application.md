@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[HL7 FHIR]], [[DICOM]], [[FDA Digital Health]], [[OpenXR Healthcare]]
 	- owl:class:: mv:HealthMetaverseApplication
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

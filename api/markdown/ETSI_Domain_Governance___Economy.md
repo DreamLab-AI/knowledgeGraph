@@ -2,7 +2,7 @@
   id:: etsi_domain_governance___economy-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247919
+	- term-id:: MV-3057
 	- preferred-term:: ETSI_Domain_Governance___Economy
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:ETSI_Domain_Governance___Economy
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

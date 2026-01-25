@@ -10,7 +10,6 @@
 	- definition:: Natural Language Processing (NLP) is a subfield of artificial intelligence that studies the relationship between computers and human language, enabling machines to understand, interpret, and generate natural language. Modern NLP is dominated by transformer architectures using self-attention mechanisms, with pre-trained models like BERT and GPT achieving state-of-the-art results across language tasks.
 	- maturity:: complete
 	- owl:class:: ngm:Naturallanguageprocessing
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Discipline
 	- belongsToDomain:: [[Artificial Intelligence]]
 

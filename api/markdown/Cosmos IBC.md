@@ -11,7 +11,6 @@
 	- source:: [[Cosmos Network]], [[IBC Protocol]]
 	- maturity:: emerging
 	- owl:class:: bc:CosmosIBC
-	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[BlockchainDomain]]
 	- isSubclassOf:: [[Layer 0 Protocol]], [[Interoperability Protocol]]

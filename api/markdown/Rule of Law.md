@@ -185,7 +185,6 @@ Rule of law compliance evaluated through:
 *Aligned with UN, Council of Europe and EU rule of law standards*
 	- maturity:: draft
 	- owl:class:: mv:RuleofLaw
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Rule of Law

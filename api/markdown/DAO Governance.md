@@ -10,7 +10,6 @@
 	- definition:: DAO governance refers to the decision-making structures and voting mechanisms within Decentralised Autonomous Organisations, enabling token holders to collectively govern protocol parameters, treasury allocations, and organisational direction through on-chain and off-chain processes. DAOs are non-hierarchical organisations that perform and record routine tasks on peer-to-peer, cryptographically secure networks, with governance rules encoded as smart contracts that automatically execute approved decisions.
 	- maturity:: reviewed
 	- owl:class:: ngm:DaoGovernance
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Blockchain]]
 

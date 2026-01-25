@@ -4,15 +4,14 @@
 	- ontology:: true
 	- term-id:: AI-0086
 	- preferred-term:: Model Inversion
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: An inference-time privacy attack that reconstructs sensitive training data or attributes from a trained model by exploiting model outputs, predictions, or internal representations, potentially revealing confidential information about individuals in the training dataset.
 	- maturity:: draft
 	- owl:class:: ai:ModelInversion
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 
 ## OWL Formal Semantics
 

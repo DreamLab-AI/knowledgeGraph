@@ -2,7 +2,7 @@
   id:: virtualasset-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247979
+	- term-id:: MV-3036
 	- preferred-term:: VirtualAsset
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:VirtualAsset
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 
@@ -154,3 +153,6 @@
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+
+<!-- Merged from Virtual Asset.md: Cryptocurrency, Digital Asset, VASP, metaverse -->

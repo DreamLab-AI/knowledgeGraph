@@ -62,7 +62,6 @@ mBERT is trained on concatenated Wikipedia dumps from 104 languages using the sa
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:mBERT
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About mBERT

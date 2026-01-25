@@ -3,13 +3,12 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: bc-20130
-	- source-domain:: blockchain
+	- source-domain:: bc
 	- preferred-term:: Carbon Credit Token
 	- definition:: Digital token representing verified carbon-offset value tradeable across platforms for emissions reduction and environmental sustainability.
 	- maturity:: mature
 	- source:: [[Siemens + OMA3]], [[ISO 14065]], [[UNFCCC]]
 	- owl:class:: bc:CarbonCreditToken
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

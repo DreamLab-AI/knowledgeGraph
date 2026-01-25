@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:MerkleTree
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[CryptographicDomain]]
@@ -115,3 +114,6 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0029>
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
   -
 
+
+
+<!-- Merged from Merkle Tree.md: ComfyWorkFlows, Controlnet and similar -->

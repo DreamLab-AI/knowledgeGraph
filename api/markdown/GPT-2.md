@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0213
 	- preferred-term:: GPT 2
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: A 1.5 billion parameter transformer language model trained simply to predict the next word in 40GB of internet text, demonstrating unsupervised multitask learning capabilities.
 
@@ -88,9 +88,8 @@ GPT-2 demonstrated that sufficiently large language models trained on diverse in
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: ai:GPT2
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About GPT 2
 	- A 1.5 billion parameter transformer language model trained simply to predict the next word in 40GB of internet text, demonstrating unsupervised multitask learning capabilities.
 

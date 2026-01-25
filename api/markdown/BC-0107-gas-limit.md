@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:GasLimit
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[TokenEconomicsDomain]]
@@ -115,3 +114,9 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0107>
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
   -
 
+
+
+<!-- Merged from BC 0107 gas limit.md: MetaverseDomain -->
+
+
+<!-- Merged from Gas Limit.md: Base Fee, Blockchain, Gas Price, Priority Fee, Resource Control -->

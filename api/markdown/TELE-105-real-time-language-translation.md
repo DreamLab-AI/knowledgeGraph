@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "The use of artificial intelligence-powered natural language processing to automatically translate spoken or written communication between languages during live telepresence interactions with sub-second latency, enabling cross-lingual collaboration without human interpreters through neural machine translation, speech recognition, and text-to-speech synthesis."
 	- maturity:: developing
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Process
 	- #### Relationships
 	  id:: real-time-translation-relationships

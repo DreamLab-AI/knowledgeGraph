@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:Minting
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[TokenEconomicsDomain]]
@@ -115,3 +114,6 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0115>
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
   -
 
+
+
+<!-- Merged from Minting.md: Blockchain, Tokenomics -->

@@ -13,7 +13,6 @@
 	- definition:: **Inertia** - Resistance to changes in motion state
 	- maturity:: draft
 	- owl:class:: rb:Inertia
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0041 inertia

@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0359
 	- preferred-term:: Semantic Segmentation
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: Semantic Segmentation is the computer vision task of assigning a class label to every pixel in an image, partitioning the image into semantically meaningful regions without distinguishing between individual object instances. Semantic segmentation networks (FCN, U-Net, DeepLab) produce dense pixel-wise predictions enabling scene understanding applications in medical imaging, autonomous driving, and satellite imagery analysis.
 
@@ -71,9 +71,8 @@
 - **Maturity**: Wide deployment
 	- maturity:: draft
 	- owl:class:: ai:SemanticSegmentation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- #### Relationships
 	  id:: semantic-segmentation-relationships
 - ## About Semantic Segmentation

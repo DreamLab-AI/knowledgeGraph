@@ -10,7 +10,6 @@
 	- definition:: Augmented Reality (AR) is a technology that overlays digital content onto the real world in real-time, enhancing users' perception of their physical environment through smartphones, head-mounted displays, or smart glasses. AR systems operate on three essentialities: coupling of real and virtual environments, real-time interaction, and precise 3D visualisation of virtual objects aligned with physical space.
 	- maturity:: active
 	- owl:class:: ngm:AugmentedReality
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Metaverse]]
 

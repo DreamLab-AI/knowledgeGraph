@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ETSI GR ARF 010]], [[MSF Use Cases]]
 	- owl:class:: mv:AutonomousAgent
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Agent
 	- owl:inferred-class:: mv:VirtualAgent
 	- owl:functional-syntax:: true

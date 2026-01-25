@@ -68,7 +68,6 @@
 - **Maturity**: Widely deployed in production vehicles
 	- maturity:: draft
 	- owl:class:: mv:ADAS
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

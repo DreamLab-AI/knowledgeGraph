@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[SAML 2.0]], [[OpenID Connect]], [[W3C Verifiable Credentials]]
 	- owl:class:: mv:FederatedCredentialExchange
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

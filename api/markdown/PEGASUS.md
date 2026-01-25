@@ -62,7 +62,6 @@ PEGASUS introduces gap-sentence generation (GSG) as a pre-training objective whe
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:PEGASUS
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About PEGASUS

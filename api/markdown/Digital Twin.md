@@ -2,7 +2,7 @@
   id:: digitaltwin-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20240
+	- term-id:: MV-20240
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO/IEC 23247]], [[ETSI GR ARF 010]]
 	- owl:class:: mv:DigitalTwin
-	- owl:physicality:: HybridEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:HybridObject
 	- owl:functional-syntax:: true
@@ -262,3 +261,6 @@
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+
+<!-- Merged from DigitalTwin.md: Data Model, Data Pipeline, Data Stream, ETSI, ISO 23247 -->

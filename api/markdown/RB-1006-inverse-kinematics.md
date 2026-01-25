@@ -19,7 +19,6 @@
 
 - **Semantic Classification**
   - owl:class:: rb:InverseKinematics
-  - owl:physicality:: Abstract
   - owl:role:: Method
   - belongsToDomain:: [[Robotics]], [[Kinematics]]
 
@@ -100,3 +99,6 @@
   - authority-score:: 0.97
   - completeness:: 0.94
   - accuracy:: 0.96
+
+
+<!-- Merged from Inverse Kinematics.md: RoboticsDomain -->

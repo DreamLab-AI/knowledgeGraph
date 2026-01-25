@@ -10,7 +10,6 @@
 	- definition:: [Generated from Gartner emerging tech analysis]
 	- maturity:: emerging
 	- owl:class:: mv:CompositeAI
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- category:: AI & Autonomy

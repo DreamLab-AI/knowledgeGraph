@@ -13,7 +13,6 @@
 	- definition:: **Robot Joint** - Articulation between robot links allowing relative motion
 	- maturity:: draft
 	- owl:class:: rb:RobotJoint
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0026 robot joint

@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[SIGGRAPH Graphics Glossary]]
 	- owl:class:: mv:ProceduralTexture
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

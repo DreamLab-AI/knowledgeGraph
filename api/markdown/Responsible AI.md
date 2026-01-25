@@ -263,7 +263,6 @@ Responsible AI differs from ethical AI by emphasising accountability, governance
 - [[AI Audit]]
 	- maturity:: draft
 	- owl:class:: mv:ResponsibleAI
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

@@ -67,7 +67,6 @@
 - **Maturity**: Research and clinical translation
 	- maturity:: draft
 	- owl:class:: mv:PrecisionMedicine
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

@@ -10,7 +10,6 @@
 	- definition:: A CamelCase variant reference for the Telecollaboration domain, classifying technology-mediated distributed collaboration concepts including telepresence, remote teamwork, synchronous and asynchronous cooperation platforms, and virtual workspace systems. See [[TC-0001-telecollaboration-domain]] for the canonical entry.
 	- maturity:: stable
 	- owl:class:: ai:TelecollaborationDomain
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Domain
 	- belongsToDomain:: [[Telecollaboration]]
 	- #### Relationships

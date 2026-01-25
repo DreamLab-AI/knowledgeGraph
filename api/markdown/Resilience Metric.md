@@ -2,7 +2,7 @@
   id:: resilience-metric-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247962
+	- term-id:: MV-3047
 	- preferred-term:: Resilience Metric
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:ResilienceMetric
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Resilience Metric

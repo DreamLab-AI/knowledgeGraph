@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[IEEE VR Standards]], [[ISO/IEC 23005]]
 	- owl:class:: mv:VirtualWorld
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

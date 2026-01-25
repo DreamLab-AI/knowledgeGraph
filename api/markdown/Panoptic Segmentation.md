@@ -68,7 +68,6 @@
 - **Maturity**: Active research
 	- maturity:: draft
 	- owl:class:: mv:PanopticSegmentation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

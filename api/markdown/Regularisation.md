@@ -11,7 +11,6 @@
 **Regularisation** comprises techniques that constrain or penalise model complexity during training to prevent overfitting and improve generalisation. Common methods include L1/L2 penalties, dropout, and early stopping.
 	- maturity:: draft
 	- owl:class:: mv:Regularisation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Regularisation

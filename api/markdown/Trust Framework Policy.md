@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[OpenID Foundation]], [[EU eIDAS 2.0]], [[OECD AI Governance]]
 	- owl:class:: mv:TrustFrameworkPolicy
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

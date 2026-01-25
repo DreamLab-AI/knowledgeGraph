@@ -69,7 +69,6 @@
 - **Maturity**: Research and commercial use
 	- maturity:: draft
 	- owl:class:: mv:ImagetoImageTranslation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

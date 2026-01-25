@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0242
 	- preferred-term:: Attention Head
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: One of multiple parallel attention mechanisms in multi-head attention, each potentially learning different types of relationships and patterns in the input sequence.
 
@@ -103,9 +103,8 @@ Most attention heads learn simple positional patterns, with some showing redunda
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: ai:AttentionHead
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Attention Head
 	- One of multiple parallel attention mechanisms in multi-head attention, each potentially learning different types of relationships and patterns in the input sequence.
 

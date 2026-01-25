@@ -186,7 +186,6 @@
 - [AbstractionLayer](./AbstractionLayer.md) — Isolation architectural pattern
 	- maturity:: draft
 	- owl:class:: mv:HardwarePlatformAgnostic
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Hardware Platform Agnostic

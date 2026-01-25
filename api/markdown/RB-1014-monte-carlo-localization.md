@@ -19,7 +19,6 @@
 
 - **Semantic Classification**
   - owl:class:: rb:MonteCarloLocalization
-  - owl:physicality:: Abstract
   - owl:role:: Algorithm
   - belongsToDomain:: [[Robotics]], [[Probabilistic Methods]], [[Localization]]
 

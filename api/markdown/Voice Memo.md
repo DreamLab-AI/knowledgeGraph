@@ -11,7 +11,6 @@
 	- source:: [[Collaboration Tools]]
 	- maturity:: emerging
 	- owl:class:: tc:VoiceMemo
-	- owl:physicality:: Abstract
 	- owl:role:: Object
 	- belongsToDomain:: [[TelecollaborationDomain]]
 	- is-subclass-of:: [[Asynchronous Collaboration]]

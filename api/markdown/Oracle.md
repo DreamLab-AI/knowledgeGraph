@@ -1,17 +1,18 @@
 - ### OntologyBlock
-id:: oracle-ontology
+  id:: oracle-blockchain-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247950
-	- preferred-term:: Oracle
-	- source-domain:: mv
-	- status:: draft
-	- definition:: A component of the metaverse ecosystem.
-	- maturity:: draft
-	- owl:class:: mv:Oracle
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- term-id:: BC-3007
+	- preferred-term:: Blockchain Oracle
+	- source-domain:: bc
+	- status:: active
+	- public-access:: true
+	- definition:: A decentralized service that bridges blockchain smart contracts with external real-world data, enabling smart contracts to access off-chain information, execute based on real-world events, and interact with traditional systems while maintaining trustless verification and data integrity.
+	- maturity:: production-ready
+	- owl:class:: bc:Oracle
+	- owl:role:: DataBridge
+	- belongsToDomain:: [[BlockchainDomain]]
+	- relatedConcepts:: [[Smart Contracts]], [[DeFi]], [[Chainlink]], [[Decentralized Oracle Networks]], [[The Oracle Problem]]
 
 ## OWL Formal Semantics
 
@@ -21,99 +22,15 @@ id:: oracle-ontology
 (Declaration (Class :Oracle))
 
 ;; Annotations
-(AnnotationAssertion rdfs:label :Oracle "Oracle"@en)
-(AnnotationAssertion rdfs:comment :Oracle "A component of the metaverse ecosystem."@en)
+(AnnotationAssertion rdfs:label :Oracle "Blockchain Oracle"@en)
+(AnnotationAssertion rdfs:comment :Oracle "A decentralized service that bridges blockchain smart contracts with external real-world data, enabling smart contracts to access off-chain information, execute based on real-world events, and interact with traditional systems while maintaining trustless verification and data integrity."@en)
 
 ;; Data Properties
-(AnnotationAssertion dcterms:identifier :Oracle "mv-1761742247950"^^xsd:string)
+(AnnotationAssertion dcterms:identifier :Oracle "BC-3007"^^xsd:string)
+
+;; SubClass relationships
+(SubClassOf :Oracle :DataBridge)
 ```
-
-- ## About Oracle
-	- A component of the metaverse ecosystem.
-	-
-	- ### Original Content
-	  collapsed:: true
-		- ```
-- # Ontology Block
-		    collapsed:: true
-		    - **Class:** BlockchainOracle
-		    - **IRI:** http://metaverse-ontology.org/blockchain#BlockchainOracle
-		    - **SubClassOf:** DataBridge
-		    - **Source Domain:** blockchain
-		    - **Source File:** metaverse-ontology-combined-refactored.ttl
-		    - **Integration Date:** 2025-10-28
-		    - **TRL:** 8
-		    - **Quality Score:** 0.93
-		    - ```turtle
-		      bc:BlockchainOracle rdf:type owl:Class ;
-		          rdfs:label "Blockchain Oracle"@en ;
-		          rdfs:comment "Service that provides external real-world data to smart contracts on blockchain, bridging on-chain and off-chain worlds."@en ;
-		          rdfs:subClassOf bc:DataBridge ;
-		          meta:sourceOntology "bc:" ;
-		          meta:technologyDomain "blockchain" ;
-		          meta:disruptiveTechCategory "distributed-ledger-systems" ;
-		          meta:technologyReadinessLevel "8"^^xsd:integer ;
-		          meta:qualityScore "0.93"^^xsd:float .
-		      ```
-		  
-		  - ## Description
-		    - Bridges blockchain with external real-world data
-		    - Provides verified off-chain information to smart contracts
-		    - Can be centralized or decentralized
-		    - Enables contracts to respond to real-world events
-		    - Critical for DeFi, insurance, and other applications
-		  
-		  - ## Properties
-		    - Object properties
-		      - [[providesData]] - Types of data provided
-		      - [[servesContract]] - Smart contracts served
-		      - [[usesSource]] - External data sources
-		      - [[implementsTrust]] - Trust and verification mechanisms
-		    - Data properties
-		      - dataLatency - Time delay for data delivery
-		      - updateFrequency - Data refresh rate
-		      - reliabilityScore - Oracle reliability metric
-		      - costPerQuery - Cost to query oracle
-		  
-		  - ## Cross-Domain Relationships
-		    - [[dt:feeds]] → [[SmartContract]] - Providing external data
-		    - [[dt:validates]] → [[RealWorldEvent]] - Verifying off-chain events
-		    - [[dt:connects]] → [[IoTDevice]] - IoT data to blockchain
-		    - [[dt:enables]] → [[DynamicNFT]] - NFTs with real-world data
-		    - [[dt:powers]] → [[PredictionMarket]] - Market data feeds
-		  
-		  - ## Related Concepts
-		    - [[DataFeed]]
-		    - [[ExternalData]]
-		    - [[DecentralizedOracle]]
-		    - [[TrustMinimization]]
-		    - [[DataVerification]]
-		  
-		  - ## Use Cases
-		    - Price feeds for DeFi
-		    - Weather data for insurance
-		    - Sports scores for betting
-		    - Random number generation
-		    - IoT data integration
-		  
-		  ```
-
-id:: oracle-blockchain-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: ORACLE-BLOCKCHAIN-001
-	- preferred-term:: Blockchain Oracle
-	- source-domain:: bc
-	- status:: active
-	- public-access:: true
-	- definition:: A decentralized service that bridges blockchain smart contracts with external real-world data, enabling smart contracts to access off-chain information, execute based on real-world events, and interact with traditional systems while maintaining trustless verification and data integrity.
-	- maturity:: production
-	- owl:class:: blockchain:Oracle
-	- owl:physicality:: DigitalInfrastructure
-	- owl:role:: DataBridge
-	- belongsToDomain:: [[BlockchainDomain]]
-	- relatedConcepts:: [[Smart Contracts]], [[DeFi]], [[Chainlink]], [[Decentralized Oracle Networks]], [[The Oracle Problem]]
-
 
 ## Overview and Definition
 

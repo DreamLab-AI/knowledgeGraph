@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0350
 	- preferred-term:: Sensor Fusion
-	- source-domain:: robotics
+	- source-domain:: rb
 	- status:: draft
 - definition:: Sensor Fusion is the process of combining data from multiple sensors (camera, lidar, radar, GPS, IMU) to produce more accurate, reliable, and complete information than could be obtained from any individual sensor. Sensor fusion employs algorithms including Kalman filtering, particle filtering, and deep learning-based fusion to integrate complementary sensor modalities whilst managing sensor noise, uncertainties, and failures.
 
@@ -65,7 +65,6 @@
 - **Maturity**: Widely deployed
 	- maturity:: draft
 	- owl:class:: rb:SensorFusion
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 	- #### Relationships

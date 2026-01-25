@@ -10,7 +10,6 @@
 	- definition:: Tokenomics is the study and design of the economic systems governing cryptocurrency tokens, encompassing supply mechanics (inflation/deflation), distribution schedules, utility functions, governance rights, and incentive structures that determine token value, network security, and sustainable ecosystem growth.
 	- maturity:: reviewed
 	- owl:class:: bc:Tokeneconomics
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[BlockchainDomain]]
 

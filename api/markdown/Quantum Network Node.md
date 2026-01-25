@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[ITU-T QKD Series]]
 	- owl:class:: mv:QuantumNetworkNode
-	- owl:physicality:: PhysicalEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:PhysicalObject
 	- owl:functional-syntax:: true

@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO 9001]], [[IEEE P2048-9]]
 	- owl:class:: mv:ValidationProcess
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

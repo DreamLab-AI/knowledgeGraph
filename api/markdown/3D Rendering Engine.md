@@ -10,7 +10,6 @@
 	- definition:: A 3D rendering engine is software that converts three-dimensional geometric data into two-dimensional images through processes including lighting calculation, texture mapping, and rasterisation. In the context of metaverse and XR technologies, rendering engines power real-time visualisation of immersive virtual environments, enabling stereoscopic displays, spatial audio integration, and motion-to-photon latency optimisation essential for presence and embodiment in virtual spaces.
 	- maturity:: active
 	- owl:class:: ngm:3dRenderingEngine
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Metaverse]]
 

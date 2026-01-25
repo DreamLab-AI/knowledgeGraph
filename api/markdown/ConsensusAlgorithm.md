@@ -2,15 +2,14 @@
   id:: consensusalgorithm-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: bc-1761742247908
+	- term-id:: BC-9987
 	- preferred-term:: ConsensusAlgorithm
-	- source-domain:: blockchain
+	- source-domain:: bc
 	- status:: draft
 - public-access:: true
 	- definition:: An algorithm enabling distributed nodes in a blockchain to agree on ledger state.
 	- maturity:: draft
 	- owl:class:: bc:ConsensusAlgorithm
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[BlockchainDomain]]
 

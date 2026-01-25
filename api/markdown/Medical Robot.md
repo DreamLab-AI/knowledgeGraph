@@ -7,14 +7,13 @@
 	- sequence-number:: 0016
 	- filename-history:: ["rb-0016-medical-robot.md"]
 	- preferred-term:: Medical Robot
-	- source-domain:: robotics
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Medical Robot** - Medical Robot in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:rb0016medicalrobot
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0016 medical robot

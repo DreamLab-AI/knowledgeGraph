@@ -2,7 +2,7 @@
   id:: etsi-domain-datamgmt-culture-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20343
+	- term-id:: MV-20343
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ETSI GR MEC 032]]
 	- owl:class:: mv:ETSIDomain_DataMgmt_Culture
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

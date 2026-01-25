@@ -61,7 +61,6 @@ For step s in [1, warmup_steps]:
 **Verification Status**: Verified against transformer training literature
 	- maturity:: draft
 	- owl:class:: mv:Warmup
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Warmup

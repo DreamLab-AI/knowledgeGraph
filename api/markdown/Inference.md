@@ -4,16 +4,15 @@
 	- ontology:: true
 	- term-id:: AI-0042
 	- preferred-term:: Inference
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: ### Primary Definition
 **Inference** is the process of applying an AI system to produce results. The act of using a trained model to make predictions or generate outputs on new, unseen data. Refers both to the process and its result, with premises being a fact, rule, model, feature, or raw data.
 	- maturity:: draft
 	- owl:class:: ai:Inference
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Inference
 	- ### Primary Definition
 **Inference** is the process of applying an AI system to produce results. The act of using a trained model to make predictions or generate outputs on new, unseen data. Refers both to the process and its result, with premises being a fact, rule, model, feature, or raw data.

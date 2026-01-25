@@ -166,7 +166,6 @@ Human-centred values can be evaluated through:
 *Aligned with OECD AI Principles 2024, UDHR, and EU Charter of Fundamental Rights*
 	- maturity:: draft
 	- owl:class:: mv:HumanCentredValues
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Human Centred Values

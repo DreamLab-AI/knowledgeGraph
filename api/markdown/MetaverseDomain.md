@@ -10,7 +10,6 @@
 	- definition:: The Metaverse Domain provides an ontological framework for interconnected digital platforms leveraging augmented, extended, and virtual realities to create immersive user experiences through multidimensional interactions. It encompasses virtual environments, avatar embodiment, spatial computing, digital economies, and the convergence of physical and virtual worlds where millions can simultaneously inhabit and interact in real-time regardless of physical distance.
 	- maturity:: reviewed
 	- owl:class:: mv:Metaversedomain
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Domain
 	- belongsToDomain:: [[TechnologyDomain]]
 

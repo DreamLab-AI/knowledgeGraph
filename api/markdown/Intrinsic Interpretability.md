@@ -578,7 +578,6 @@ Fidelity = Agreement(interpretable model, complex model)
 - [[Rule Extraction]]
 	- maturity:: draft
 	- owl:class:: mv:IntrinsicInterpretability
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

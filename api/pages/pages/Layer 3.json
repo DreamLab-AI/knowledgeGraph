@@ -5,22 +5,21 @@
   "backlinks": [
     "RGB and Client Side Validation",
     "Agentic Internet",
-    "Coin",
     "Bitcoin As Money"
   ],
   "wiki_links": [
-    "Blockchain",
+    "Immutable X",
+    "Custom Execution Environment",
+    "Arbitrum Orbit",
     "State Channel",
+    "Rollup",
+    "Application-Specific Blockchain",
+    "Blockchain",
+    "Layer 1",
+    "General-Purpose Smart Contract Platform",
     "Layer 2",
     "Scalability Solutions",
-    "Custom Execution Environment",
-    "Application-Specific Blockchain",
-    "Rollup",
-    "Layer 1",
-    "Arbitrum Orbit",
-    "Immutable X",
-    "dYdX v4",
-    "General-Purpose Smart Contract Platform"
+    "dYdX v4"
   ],
   "ontology": {
     "term_id": "BC-8009",

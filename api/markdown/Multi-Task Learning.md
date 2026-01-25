@@ -228,7 +228,6 @@ Multi-task learning demonstrates that models can leverage task relatedness to le
 **Verification Status**: Verified against multi-task learning literature
 	- maturity:: draft
 	- owl:class:: mv:MultiTaskLearning
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Multi Task Learning

@@ -1,7 +1,7 @@
 - ### OntologyBlock
   - ontology:: true
   - public-access:: true
-  - term-id:: AI-1001
+  - term-id:: AI-4012
   - preferred-term:: Knowledge Representation
   - source-domain:: ai
   - status:: draft

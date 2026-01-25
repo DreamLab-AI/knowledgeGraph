@@ -2,7 +2,7 @@
   id:: implementation-summary-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247935
+	- term-id:: MV-3034
 	- preferred-term:: IMPLEMENTATION SUMMARY
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:IMPLEMENTATIONSUMMARY
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

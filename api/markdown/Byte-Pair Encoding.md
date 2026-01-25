@@ -87,7 +87,6 @@ BPE repeatedly forms new symbols by merging the two most frequent symbols until 
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:BytePairEncoding
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Byte Pair Encoding

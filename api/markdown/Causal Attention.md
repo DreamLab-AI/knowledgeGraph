@@ -97,7 +97,6 @@ Causal attention (also called masked self-attention) ensures that predictions fo
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:CausalAttention
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Causal Attention

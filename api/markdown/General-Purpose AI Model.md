@@ -2,7 +2,7 @@
   id:: general-purpose-ai-model-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247928
+	- term-id:: MV-3044
 	- preferred-term:: General Purpose AI Model
 	- source-domain:: mv
 	- status:: draft
@@ -170,7 +170,6 @@ GPT-4, Claude, Gemini, LLaMA, Mistral, Stable Diffusion (multimodal models)
 - Annex XIII (Systemic Risk Criteria)
 	- maturity:: draft
 	- owl:class:: mv:GeneralPurposeAIModel
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About General Purpose AI Model

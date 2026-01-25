@@ -10,7 +10,6 @@
 	- definition:: Motion tracking is a technology that captures and records the movement of objects, bodies, or body parts in physical space, translating this data into digital representations for use in VR/AR systems, animation, and metaverse applications. In XR contexts, motion tracking is fundamental to creating embodied presence by translating user movements into avatar animations and enabling natural interaction with virtual environments.
 	- maturity:: active
 	- owl:class:: ngm:MotionTracking
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Metaverse]]
 

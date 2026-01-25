@@ -2,7 +2,7 @@
   id:: context-awareness-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20239
+	- term-id:: MV-20239
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[EWG/MSF Taxonomy]], [[IEEE P2048-3]], [[ISO/IEC 30141]]
 	- owl:class:: mv:ContextAwareness
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

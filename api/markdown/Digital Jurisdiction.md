@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[UNCITRAL Model Law on Electronic Commerce]], [[International Jurisdiction and the Internet Working Group]]
 	- owl:class:: mv:DigitalJurisdiction
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

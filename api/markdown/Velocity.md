@@ -13,7 +13,6 @@
 	- definition:: **Velocity** - Rate of change of position
 	- maturity:: draft
 	- owl:class:: rb:Velocity
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0044 velocity

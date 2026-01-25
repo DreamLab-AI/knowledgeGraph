@@ -90,7 +90,6 @@ PPO is used in InstructGPT and ChatGPT to optimise the language model policy bas
 **Verification Status**: Verified against PPO and InstructGPT papers
 	- maturity:: draft
 	- owl:class:: mv:ProximalPolicyOptimisation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Proximal Policy Optimisation

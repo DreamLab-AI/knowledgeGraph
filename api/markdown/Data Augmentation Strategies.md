@@ -85,7 +85,6 @@ Data augmentation has become fundamental to modern deep learning, with compositi
 **Verification Status**: Verified against SimCLR and augmentation literature
 	- maturity:: draft
 	- owl:class:: mv:DataAugmentationStrategies
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Data Augmentation Strategies

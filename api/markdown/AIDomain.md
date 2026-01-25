@@ -10,7 +10,6 @@
 	- definition:: The abbreviated reference for the Artificial Intelligence Domain, serving as a top-level ontological classification for all AI-related concepts including methods, systems, applications, and governance frameworks within the knowledge graph.
 	- maturity:: stable
 	- owl:class:: ai:AiDomain
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Domain
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships

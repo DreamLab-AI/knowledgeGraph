@@ -2,7 +2,7 @@
   id:: digital-citizens’-assembly-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20187
+	- term-id:: MV-4007
 	- preferred-term:: Digital Citizens’ Assembly
 	- source-domain:: mv
 	- status:: draft
@@ -12,7 +12,6 @@ maturity:: 2
 source:: [[UN Habitat Digital Civics]]
 	- maturity:: draft
 	- owl:class:: mv:DigitalCitizens’Assembly
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 
@@ -42,7 +41,7 @@ source:: [[UN Habitat Digital Civics]]
 # Digital Citizens’ Assembly
 		  
 		  ## Core Properties
-		  term-id:: 20187
+		  term-id:: MV-4007
 		  preferred-term:: Digital Citizens’ Assembly
 		  definition:: structured deliberation process using XR spaces for policy co-creation.
 		  maturity:: 2

@@ -2,7 +2,7 @@
   id:: stablecoin-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20190
+	- term-id:: MV-4001
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO 24165]], [[IMF CBDC Notes]]
 	- owl:class:: mv:Stablecoin
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

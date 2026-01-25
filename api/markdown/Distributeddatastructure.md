@@ -10,7 +10,6 @@
 	- definition:: A data structure designed to operate across multiple networked nodes, providing coordinated storage, retrieval, and manipulation of data while maintaining consistency, availability, and partition tolerance. These structures enable scalable, fault-tolerant data management through mechanisms such as replication, sharding, and consensus protocols.
 	- maturity:: reviewed
 	- owl:class:: ngm:DistributedDataStructure
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: ComputationalPattern
 	- belongsToDomain:: [[Distributed Systems]]
 

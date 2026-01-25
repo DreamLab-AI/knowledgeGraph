@@ -10,7 +10,6 @@
 	- definition:: The foundational meta-domain encompassing all technology-related knowledge domains within the Narrative Gold Mine ontology, serving as the top-level classification for artificial intelligence, blockchain, metaverse, robotics, and telecollaboration systems.
 	- maturity:: stable
 	- owl:class:: ngm:TechnologyDomain
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: MetaDomain
 	- belongsToDomain:: [[Narrative Gold Mine]]
 	- #### Relationships

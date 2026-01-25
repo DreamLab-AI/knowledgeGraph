@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ETSI ARF 010]]
 	- owl:class:: mv:FeedbackMechanism
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

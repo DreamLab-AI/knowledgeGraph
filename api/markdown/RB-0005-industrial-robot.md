@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: rb:IndustrialRobot
-    - owl:physicality:: PhysicalEntity
     - owl:role:: Object
     - belongsToDomain:: [[Robotics]]
 

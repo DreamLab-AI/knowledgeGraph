@@ -108,7 +108,6 @@ Constitutional AI demonstrates that models can be aligned through principled sel
 **Verification Status**: Verified against Constitutional AI paper (arXiv:2212.08073)
 	- maturity:: draft
 	- owl:class:: mv:ConstitutionalAI
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Constitutional AI

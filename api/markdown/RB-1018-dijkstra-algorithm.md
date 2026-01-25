@@ -19,7 +19,6 @@
 
 - **Semantic Classification**
   - owl:class:: rb:DijkstraAlgorithm
-  - owl:physicality:: Abstract
   - owl:role:: Algorithm
   - belongsToDomain:: [[Robotics]], [[Path Planning]], [[Graph Theory]]
 

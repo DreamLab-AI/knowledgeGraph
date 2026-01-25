@@ -4,7 +4,7 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9954
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- preferred-term:: Machine Learning Platform
 	- status:: active
 	- owl:class:: ai:MachineLearningPlatform

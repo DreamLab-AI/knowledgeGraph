@@ -7,14 +7,13 @@
 	- sequence-number:: 0083
 	- filename-history:: ["rb-0083-current-sensor.md"]
 	- preferred-term:: Current Sensor
-	- source-domain:: robotics
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Current Sensor** - Current Sensor in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:rb0083currentsensor
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0083 current sensor

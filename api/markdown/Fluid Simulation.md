@@ -11,7 +11,6 @@
 	- source:: [[Physics Engine]], [[CFD]]
 	- maturity:: emerging
 	- owl:class:: mv:FluidSimulation
-	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[MetaverseDomain]]
 	- isSubclassOf:: [[Physics Simulation]]

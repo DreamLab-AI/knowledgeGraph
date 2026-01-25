@@ -4,15 +4,14 @@
 	- ontology:: true
 	- term-id:: AI-0090
 	- preferred-term:: Model Extraction
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: An attack where adversaries reconstruct a functionally equivalent or similar machine learning model by systematically querying a target model and training a substitute model on the collected input-output pairs, enabling theft of intellectual property, privacy violations, and subsequent attacks.
 	- maturity:: draft
 	- owl:class:: ai:ModelExtraction
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- #### Relationships
 	  id:: model-extraction-relationships
 		- enables:: [[Adversarial Attacks]], [[Membership Inference]], [[Model Inversion]]

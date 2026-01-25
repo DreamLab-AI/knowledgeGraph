@@ -10,7 +10,6 @@
 	- definition:: A domain classification encompassing the practical deployment and use cases of artificial intelligence systems across industries, including autonomous systems, decision support, content generation, predictive analytics, and intelligent automation.
 	- maturity:: stable
 	- owl:class:: ai:AiApplications
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Domain
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships

@@ -2,15 +2,14 @@
   id:: defiprotocol-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: bc-1761742247911
+	- term-id:: BC-9984
 	- preferred-term:: DeFiProtocol
-	- source-domain:: blockchain
+	- source-domain:: bc
 	- status:: draft
 - public-access:: true
 	- definition:: A blockchain-based financial application providing decentralized financial services via smart contracts.
 	- maturity:: draft
 	- owl:class:: bc:DeFiProtocol
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[BlockchainDomain]]
 - ## About DeFiProtocol

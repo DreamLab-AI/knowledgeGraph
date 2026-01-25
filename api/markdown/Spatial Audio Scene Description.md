@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO/IEC 23090-23 (MPEG-I Audio)]], [[SMPTE ST 2128]], [[SIGGRAPH Audio WG]]
 	- owl:class:: mv:SpatialAudioSceneDescription
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

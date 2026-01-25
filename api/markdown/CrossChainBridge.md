@@ -2,7 +2,7 @@
   id:: crosschainbridge-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247909
+	- term-id:: MV-3043
 	- preferred-term:: CrossChainBridge
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:CrossChainBridge
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

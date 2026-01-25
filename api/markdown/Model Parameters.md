@@ -4,16 +4,15 @@
 	- ontology:: true
 	- term-id:: AI-0051
 	- preferred-term:: Model Parameters
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: ### Primary Definition
 **Model Parameters** are learnable weights and biases within a neural network that are adjusted during training. Model capacity and capability generally increase with parameter count. Foundation models contain at least tens of billions of parameters.
 	- maturity:: draft
 	- owl:class:: ai:ModelParameters
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Model Parameters
 	- ### Primary Definition
 **Model Parameters** are learnable weights and biases within a neural network that are adjusted during training. Model capacity and capability generally increase with parameter count. Foundation models contain at least tens of billions of parameters.

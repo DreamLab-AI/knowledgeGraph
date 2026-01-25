@@ -11,7 +11,6 @@
 	- source:: [[Data Engineering]]
 	- maturity:: mature
 	- owl:class:: ai:ETLPipeline
-	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- isSubclassOf:: [[Data Engineering]]

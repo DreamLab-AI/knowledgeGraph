@@ -494,7 +494,6 @@ class SafetyMonitor:
 *This definition emphasizes safety as a fundamental requirement for AI systems, especially in high-risk applications, requiring systematic hazard analysis and multi-layered safeguards.*
 	- maturity:: draft
 	- owl:class:: mv:Safety
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

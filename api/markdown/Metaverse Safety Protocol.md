@@ -2,7 +2,7 @@
   id:: metaversesafetyprotocol-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20188
+	- term-id:: MV-20188
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[ISO 45003]], [[IEEE VR Safety]], [[ETSI ENI 008]]
 	- owl:class:: mv:MetaverseSafetyProtocol
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

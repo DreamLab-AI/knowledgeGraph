@@ -55,7 +55,6 @@ Red teaming has become a critical component of AI safety evaluation and alignmen
 **Verification Status**: Verified against AI safety literature
 	- maturity:: draft
 	- owl:class:: mv:RedTeaming
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Red Teaming

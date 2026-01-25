@@ -11,7 +11,6 @@
 	- source:: [[Academic AI Research]], [[AAAI]]
 	- maturity:: mature
 	- owl:class:: ai:SymbolicAI
-	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- hasSubclass:: [[Expert Systems]], [[Logic Programming]], [[Knowledge Representation]]

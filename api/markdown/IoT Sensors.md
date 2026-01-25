@@ -11,7 +11,6 @@
 	- maturity:: reviewed
 	- belongsToDomain:: [[Internet of Things]]
 	- owl:class:: rb:IotSensors
-	- owl:physicality:: PhysicalEntity
 	- owl:role:: Hardware
 
 ## Market Overview

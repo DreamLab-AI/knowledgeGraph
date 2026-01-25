@@ -2,7 +2,7 @@
   id:: portability-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247952
+	- term-id:: MV-3009
 	- preferred-term:: Portability
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:Portability
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Portability

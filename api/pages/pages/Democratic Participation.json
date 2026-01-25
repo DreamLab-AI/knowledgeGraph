@@ -3,23 +3,22 @@
   "title": "Democratic Participation",
   "content": "- ### OntologyBlock\n  id:: democratic-participation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9842\n\t- source-domain:: mv\n\t- preferred-term:: Democratic Participation\n\t- definition:: The mechanisms and systems enabling citizens to engage in collective decision-making processes within virtual environments, digital governance platforms, and metaverse communities, encompassing voting, deliberation, and civic engagement through immersive technologies and decentralized governance frameworks.\n\t- status:: active\n\t- owl:class:: mv:DemocraticParticipation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: democratic-participation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Governance]]\n\t\t- enables:: [[Virtual Voting]], [[Community Decision Making]], [[Civic Engagement]]\n\t\t- requires:: [[Identity Verification]], [[Voting Systems]], [[Governance Framework]]\n\t\t- related-to:: [[DAO Governance]], [[Delegate Democracy]], [[E-Democracy]]\n- ## Technical Details\n\t- **Core Components**:\n\t\t- Digital voting platforms with cryptographic verification\n\t\t- Virtual town halls and deliberation spaces\n\t\t- Transparent ballot systems with audit trails\n\t\t- Identity management for voter authentication\n\t- **Implementation Models**:\n\t\t- Direct democracy: All members vote on all proposals\n\t\t- Representative democracy: Elected delegates vote on behalf of constituents\n\t\t- Liquid democracy: Flexible delegation with revocable voting power\n\t\t- Quadratic voting: Weighted voting to express preference intensity\n\t- **2024 Developments**:\n\t\t- AI-assisted deliberation platforms for policy analysis\n\t\t- Metaverse civic spaces for virtual assemblies\n\t\t- Blockchain-based voting with privacy preservation\n\t\t- Cross-platform participation enabling multi-community engagement\n\t- **Challenges**: Digital divide, identity verification, Sybil attacks, voter engagement\n- ## Applications\n\t- DAO governance and proposal voting\n\t- Virtual community management\n\t- Digital city planning consultations\n\t- Metaverse policy development\n\t- Cross-border collaborative decision-making",
   "backlinks": [
-    "Voting Systems",
     "Community Governance Model",
     "Participation Framework",
     "AI Risks"
   ],
   "wiki_links": [
-    "Civic Engagement",
-    "Virtual Voting",
-    "Identity Verification",
     "E-Democracy",
-    "Governance Framework",
-    "Delegate Democracy",
-    "Voting Systems",
-    "Community Decision Making",
-    "DAO Governance",
+    "Digital Governance",
     "metaverse",
-    "Digital Governance"
+    "Community Decision Making",
+    "Virtual Voting",
+    "Voting Systems",
+    "Governance Framework",
+    "Civic Engagement",
+    "Delegate Democracy",
+    "DAO Governance",
+    "Identity Verification"
   ],
   "ontology": {
     "term_id": "MV-9842",

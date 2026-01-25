@@ -19,7 +19,6 @@
 
 - **Semantic Classification**
   - owl:class:: rb:ClosedLoopControl
-  - owl:physicality:: Abstract
   - owl:role:: Method
   - belongsToDomain:: [[Robotics]], [[Control Theory]]
 

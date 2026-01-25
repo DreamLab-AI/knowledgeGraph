@@ -246,7 +246,6 @@ Modern AI development increasingly relies on transfer learning, foundation model
 - [[Explainability]]
 	- maturity:: draft
 	- owl:class:: mv:AIDevelopment
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

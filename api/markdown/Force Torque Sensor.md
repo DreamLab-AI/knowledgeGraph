@@ -13,7 +13,6 @@
 	- definition:: **Force-Torque Sensor** - Force-Torque Sensor in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:ForceTorqueSensor
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0067 force torque sensor

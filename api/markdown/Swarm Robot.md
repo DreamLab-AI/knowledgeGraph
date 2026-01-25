@@ -7,14 +7,13 @@
 	- sequence-number:: 0020
 	- filename-history:: ["rb-0020-swarm-robot.md"]
 	- preferred-term:: Swarm Robot
-	- source-domain:: robotics
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Swarm Robot** - Swarm Robot in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:rb0020swarmrobot
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0020 swarm robot

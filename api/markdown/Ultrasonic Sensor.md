@@ -7,14 +7,13 @@
 	- sequence-number:: 0079
 	- filename-history:: ["rb-0079-ultrasonic-sensor.md"]
 	- preferred-term:: Ultrasonic Sensor
-	- source-domain:: robotics
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Ultrasonic Sensor** - Ultrasonic Sensor in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:rb0079ultrasonicsensor
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0079 ultrasonic sensor

@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO 22739]], [[NIST Blockchain Technology Overview]]
 	- owl:class:: mv:DistributedLedgerTechnology
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

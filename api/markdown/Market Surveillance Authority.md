@@ -2,7 +2,7 @@
   id:: market-surveillance-authority-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247943
+	- term-id:: MV-3069
 	- preferred-term:: Market Surveillance Authority
 	- source-domain:: mv
 	- status:: draft
@@ -294,7 +294,6 @@ Individuals and organisations may:
 - Commission Market Surveillance Guidance (expected 2026)
 	- maturity:: draft
 	- owl:class:: mv:MarketSurveillanceAuthority
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Market Surveillance Authority

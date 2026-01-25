@@ -96,7 +96,6 @@ Cross-attention enables the decoder to attend to all positions in the encoder's 
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:CrossAttention
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Cross Attention

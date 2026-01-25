@@ -7,14 +7,13 @@
 	- sequence-number:: 0006
 	- filename-history:: ["rb-0006-service-robot.md"]
 	- preferred-term:: Service Robot
-	- source-domain:: robotics
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Service Robot** - Service Robot in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:rb0006servicerobot
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0006 service robot

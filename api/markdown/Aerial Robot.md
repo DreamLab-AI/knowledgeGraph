@@ -11,7 +11,6 @@
     - public-access:: true
 	- definition:: An aerial robot is an autonomous or remotely operated flying system, including drones and unmanned aerial vehicles (UAVs), for surveillance, inspection, delivery, and monitoring applications.
 	- maturity:: draft
-	- owl:physicality:: PhysicalEntity
 	- owl:role:: Object
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0010 aerial robot

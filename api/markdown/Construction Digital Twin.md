@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO 23247]], [[BSI Digital Built Britain]]
 	- owl:class:: mv:ConstructionDigitalTwin
-	- owl:physicality:: HybridEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:HybridObject
 	- owl:functional-syntax:: true

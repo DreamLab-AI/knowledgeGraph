@@ -4,16 +4,15 @@
 	- ontology:: true
 	- term-id:: AI-0058
 	- preferred-term:: Batch Normalisation
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: ### Primary Definition
 **Batch Normalisation** is a technique that normalises layer inputs within a mini-batch to have zero mean and unit variance, stabilising training, enabling higher learning rates, and acting as a form of regularisation.
 	- maturity:: draft
 	- owl:class:: ai:BatchNormalisation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Batch Normalisation
 	- ### Primary Definition
 **Batch Normalisation** is a technique that normalises layer inputs within a mini-batch to have zero mean and unit variance, stabilising training, enabling higher learning rates, and acting as a form of regularisation.

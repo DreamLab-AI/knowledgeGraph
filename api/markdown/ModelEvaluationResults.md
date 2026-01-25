@@ -2,7 +2,7 @@
   id:: modelevaluationresults-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: AI-1007
+	- term-id:: AI-4008
 	- source-domain:: ai
 	- preferred-term:: ModelEvaluationResults
 	- status:: complete

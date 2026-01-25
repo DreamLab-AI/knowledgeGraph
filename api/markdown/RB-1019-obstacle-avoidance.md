@@ -19,7 +19,6 @@
 
 - **Semantic Classification**
   - owl:class:: rb:ObstacleAvoidance
-  - owl:physicality:: Abstract
   - owl:role:: Method
   - belongsToDomain:: [[Robotics]], [[Autonomous Navigation]], [[Safety Systems]]
 

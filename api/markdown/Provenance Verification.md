@@ -2,7 +2,7 @@
   id:: provenance-verification-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20204
+	- term-id:: MV-20204
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[ETSI ARF 010]], [[W3C PROV-O]], [[ISO 19115]]
 	- owl:class:: mv:ProvenanceVerification
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

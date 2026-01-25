@@ -10,7 +10,6 @@
 	- definition:: A cross-cutting classification domain identifying technologies with transformative potential that significantly alter markets, industries, or societal practices. This domain spans AI, Blockchain, Metaverse, Robotics, and Telecollaboration, tagging concepts that represent paradigm shifts, emerging capabilities, or technologies displacing established approaches. Used for strategic analysis, trend identification, and innovation portfolio management.
 	- maturity:: stable
 	- owl:class:: ngm:DisruptiveTechDomain
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Domain
 	- owl:inferred-class:: ngm:ConceptualDomain
 	- belongsToDomain:: [[CoreOntology]]

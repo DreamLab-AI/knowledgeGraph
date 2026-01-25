@@ -13,7 +13,6 @@
 	- definition:: **Wheeled Mobile Robot** - Wheeled Mobile Robot in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:WheeledMobileRobot
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0012 wheeled mobile robot

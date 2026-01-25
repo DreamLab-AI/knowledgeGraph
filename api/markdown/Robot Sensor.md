@@ -13,7 +13,6 @@
 	- definition:: **Robot Sensor** - Robot Sensor in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:RobotSensor
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0066 robot sensor

@@ -83,7 +83,6 @@ Early stopping represents one of the simplest and most effective regularisation 
 **Verification Status**: Verified against ML training literature
 	- maturity:: draft
 	- owl:class:: mv:EarlyStopping
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Early Stopping

@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[eIDAS Regulation]], [[ISO 27001]], [[ETSI TS 119 312]]
 	- owl:class:: mv:VirtualNotaryService
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Agent
 	- owl:inferred-class:: mv:VirtualAgent
 	- owl:functional-syntax:: true

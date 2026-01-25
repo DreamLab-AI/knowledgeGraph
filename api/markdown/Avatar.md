@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ACM + Web3D HAnim]]
 	- owl:class:: mv:Avatar
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Agent
 	- owl:inferred-class:: mv:VirtualAgent
 	- owl:functional-syntax:: true

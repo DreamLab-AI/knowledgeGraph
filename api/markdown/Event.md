@@ -10,7 +10,6 @@
 	- definition:: A significant occurrence at a specific point in time that represents a change in system state, triggers a process, or carries information between components. Events are fundamental building blocks of temporal and reactive systems, enabling loose coupling and asynchronous communication through immutable, self-contained records of happenings.
 	- maturity:: reviewed
 	- owl:class:: ngm:Event
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: TemporalConcept
 	- belongsToDomain:: [[Event-Driven Architecture]]
 

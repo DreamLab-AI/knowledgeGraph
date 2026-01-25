@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[SMPTE ST 2119]], [[SIGGRAPH Production WG]]
 	- owl:class:: mv:VirtualProduction
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

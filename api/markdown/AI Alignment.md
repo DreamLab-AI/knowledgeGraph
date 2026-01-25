@@ -80,7 +80,6 @@ AI alignment represents one of the fundamental challenges in AI safety, addressi
 **Verification Status**: Verified against alignment literature
 	- maturity:: draft
 	- owl:class:: mv:AIAlignment
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About AI Alignment

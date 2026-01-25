@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[WHO Digital Well-Being Metrics]]
 	- owl:class:: mv:DigitalWellBeingIndex
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0356
 	- preferred-term:: Computer Vision
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: Computer Vision is the field of artificial intelligence concerned with enabling machines to interpret, understand, and process visual information from the world, emulating human visual perception capabilities. Computer vision encompasses image classification, object detection, segmentation, tracking, 3D reconstruction, and visual reasoning using deep learning architectures, particularly convolutional neural networks, to extract meaningful information from digital images and video.
 
@@ -73,9 +73,8 @@
 - **Maturity**: Mature field with widespread deployment
 	- maturity:: draft
 	- owl:class:: ai:ComputerVision
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- #### Relationships
 	  id:: computer-vision-relationships
 		- is-required-by:: [[Human Capture & Recognition]], [[Spatial Computing]], [[Augmented Reality (AR)]]

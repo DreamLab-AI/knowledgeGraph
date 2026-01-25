@@ -2,15 +2,14 @@
   id:: autonomousrobot-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247883
+	- term-id:: RB-3006
 	- preferred-term:: AutonomousRobot
-	- source-domain:: robotics
+	- source-domain:: rb
 	- status:: draft
 - public-access:: true
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: rb:AutonomousRobot
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 
@@ -132,3 +131,6 @@ Would you prefer I proceed with an industry-informed entry using available sourc
 - **Review Status**: Comprehensive editorial review
 - **Verification**: Academic sources verified
 - **Regional Context**: UK/North England where applicable
+
+
+<!-- Merged from Autonomous Robot.md: rb-0001-robot -->

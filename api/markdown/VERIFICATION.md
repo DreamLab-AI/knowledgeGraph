@@ -2,7 +2,7 @@
   id:: verification-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247978
+	- term-id:: MV-3045
 	- preferred-term:: VERIFICATION
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:VERIFICATION
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

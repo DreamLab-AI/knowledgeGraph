@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[IEEE Affective Systems]]
 	- owl:class:: mv:BehaviouralFeedbackLoop
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

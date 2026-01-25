@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0210
 	- preferred-term:: Attention Mask
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: A mechanism that controls which positions in a sequence can attend to which other positions, typically implemented by adding large negative values before softmax to effectively zero out unwanted attention weights.
 
@@ -104,9 +104,8 @@ Attention masks enable flexible control over attention patterns. Causal masks en
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: ai:AttentionMask
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Attention Mask
 	- A mechanism that controls which positions in a sequence can attend to which other positions, typically implemented by adding large negative values before softmax to effectively zero out unwanted attention weights.
 

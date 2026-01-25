@@ -94,7 +94,6 @@ Claude models are trained with Constitutional AI, which uses a set of principles
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:Claude
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Claude

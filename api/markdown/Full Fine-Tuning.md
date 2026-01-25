@@ -198,7 +198,6 @@ Full fine-tuning established the paradigm of pre-train-then-adapt that revolutio
 **Verification Status**: Verified against PEFT survey and standard practice
 	- maturity:: draft
 	- owl:class:: mv:FullFineTuning
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Full Fine Tuning

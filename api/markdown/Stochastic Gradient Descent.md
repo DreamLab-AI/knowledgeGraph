@@ -11,7 +11,6 @@
 **Stochastic Gradient Descent (SGD)** is a variant of gradient descent that updates model parameters using the gradient computed from a single training example (or small batch) rather than the entire dataset. This introduces randomness but enables faster iterations and can escape local minima.
 	- maturity:: draft
 	- owl:class:: mv:StochasticGradientDescent
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Stochastic Gradient Descent

@@ -5,20 +5,19 @@
   "backlinks": [
     "Symmetric Encryption",
     "Cryptographic Key Management",
-    "Hash Function",
     "Post-Quantum Cryptography",
     "Cryptographic Keys"
   ],
   "wiki_links": [
-    "Blockchain",
-    "Verifiable Random Function",
+    "Cryptographic Protocol",
     "Key Derivation Function",
-    "Hash Function",
+    "Commitment Scheme",
     "Cryptography",
+    "Hash Function",
+    "Verifiable Random Function",
     "Asymmetric Encryption",
     "Zero-Knowledge Proof",
-    "Commitment Scheme",
-    "Cryptographic Protocol"
+    "Blockchain"
   ],
   "ontology": {
     "term_id": "BC-8014",

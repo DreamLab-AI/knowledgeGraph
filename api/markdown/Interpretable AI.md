@@ -289,7 +289,6 @@ Easy to Explain               Harder to Explain
 - [[Model Transparency]]
 	- maturity:: draft
 	- owl:class:: mv:InterpretableAI
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO/IEC 23090-3 (MPEG-I)]]
 	- owl:class:: mv:RealTimeRenderingPipeline
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

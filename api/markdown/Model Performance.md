@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0106
 	- preferred-term:: Model Performance
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: The quantitative and qualitative measure of how effectively an artificial intelligence model accomplishes its designated tasks, typically assessed through statistical metrics evaluating prediction accuracy, reliability, generalisability, computational efficiency, and robustness, considered across different data distributions, operational conditions, and stakeholder requirements, serving as a critical basis for model selection, deployment decisions, ongoing monitoring, and continuous improvement throughout the AI lifecycle.
 
@@ -350,9 +350,8 @@ Model performance should be assessed not only on aggregate metrics but also acro
 - [[Data Drift]]
 	- maturity:: draft
 	- owl:class:: ai:ModelPerformance
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- #### Relationships
 	  id:: model-performance-relationships
 - ## About Model Performance

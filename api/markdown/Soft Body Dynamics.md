@@ -11,7 +11,6 @@
 	- source:: [[Physics Engine]], [[Game Physics]]
 	- maturity:: emerging
 	- owl:class:: mv:SoftBodyDynamics
-	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[MetaverseDomain]]
 	- isSubclassOf:: [[Physics Simulation]]

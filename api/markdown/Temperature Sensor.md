@@ -7,14 +7,13 @@
 	- sequence-number:: 0084
 	- filename-history:: ["rb-0084-temperature-sensor.md"]
 	- preferred-term:: Temperature Sensor
-	- source-domain:: robotics
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Temperature Sensor** - Temperature Sensor in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:rb0084temperaturesensor
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0084 temperature sensor

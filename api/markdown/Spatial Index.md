@@ -2,7 +2,7 @@
   id:: spatialindex-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20249
+	- term-id:: MV-20249
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[EWG/MSF taxonomy]]
 	- owl:class:: mv:SpatialIndex
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

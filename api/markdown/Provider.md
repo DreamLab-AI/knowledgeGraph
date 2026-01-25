@@ -2,7 +2,7 @@
   id:: provider-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247959
+	- term-id:: MV-3035
 	- preferred-term:: Provider
 	- source-domain:: mv
 	- status:: draft
@@ -285,7 +285,6 @@ Serious violations may constitute:
 - Commission Provider Guidance (expected 2026)
 	- maturity:: draft
 	- owl:class:: mv:Provider
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Provider

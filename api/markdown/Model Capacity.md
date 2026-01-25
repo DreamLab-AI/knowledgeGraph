@@ -4,16 +4,15 @@
 	- ontology:: true
 	- term-id:: AI-0053
 	- preferred-term:: Model Capacity
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: ### Primary Definition
 **Model Capacity** refers to a model's ability to fit a wide variety of functions, determined by the number of parameters, architecture complexity, and representational power. Higher capacity models can learn more complex patterns but risk overfitting.
 	- maturity:: draft
 	- owl:class:: ai:ModelCapacity
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Model Capacity
 	- ### Primary Definition
 **Model Capacity** refers to a model's ability to fit a wide variety of functions, determined by the number of parameters, architecture complexity, and representational power. Higher capacity models can learn more complex patterns but risk overfitting.

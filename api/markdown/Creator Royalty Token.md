@@ -3,13 +3,12 @@
   collapsed:: true
 	- ontology:: true
 	- term-id:: bc-20132
-	- source-domain:: blockchain
+	- source-domain:: bc
 	- preferred-term:: Creator Royalty Token
 	- definition:: Token granting its holder a share of ongoing revenue from creative works, enabling automated royalty distribution and fractional ownership of intellectual property income streams.
 	- maturity:: mature
 	- source:: [[OMA3 Media WG]], [[ISO 24165]], [[OECD Creative Economy]]
 	- owl:class:: bc:CreatorRoyaltyToken
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

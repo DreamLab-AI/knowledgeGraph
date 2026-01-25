@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0243
 	- preferred-term:: Model Depth
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: The number of transformer layers (encoder and/or decoder) stacked in a model, determining the number of sequential transformations applied to representations.
 
@@ -67,9 +67,8 @@ Model depth allows for hierarchical feature learning, with early layers capturin
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: ai:ModelDepth
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Model Depth
 	- The number of transformer layers (encoder and/or decoder) stacked in a model, determining the number of sequential transformations applied to representations.
 

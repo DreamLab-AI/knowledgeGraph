@@ -19,7 +19,6 @@
 
 - **Semantic Classification**
   - owl:class:: rb:RRTAlgorithm
-  - owl:physicality:: Abstract
   - owl:role:: Algorithm
   - belongsToDomain:: [[Robotics]], [[Motion Planning]], [[Path Planning]]
 

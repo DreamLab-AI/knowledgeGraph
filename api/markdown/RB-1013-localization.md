@@ -19,7 +19,6 @@
 
 - **Semantic Classification**
   - owl:class:: rb:Localization
-  - owl:physicality:: Abstract
   - owl:role:: Method
   - belongsToDomain:: [[Robotics]], [[Mobile Robotics]], [[Navigation]]
 
@@ -149,3 +148,6 @@
   - authority-score:: 0.97
   - completeness:: 0.94
   - accuracy:: 0.96
+
+
+<!-- Merged from Localization.md: GPS Localization, Motion Planning, Odometry, Robotics Systems -->

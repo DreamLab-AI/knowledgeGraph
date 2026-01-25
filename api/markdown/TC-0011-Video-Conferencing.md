@@ -11,7 +11,6 @@ Video Conferencing
   - public-access:: true
   - definition:: "Real-time audio-visual communication technology enabling multiple geographically distributed participants to see and hear each other simultaneously through internet-connected devices, supporting face-to-face interaction across distances."
   - maturity:: mature
-  - owl:physicality:: TechnicalSystem
   - owl:role:: CommunicationTool
 
 ### Relationships

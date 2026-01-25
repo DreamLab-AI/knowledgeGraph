@@ -2,15 +2,14 @@
   id:: etsi_domain_security_&_privacy-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247920
-	- preferred-term:: ETSI_Domain_Security_&_Privacy
+	- term-id:: MV-2008
+	- preferred-term:: ETSI Domain Security and Privacy
 	- source-domain:: mv
 	- status:: draft
-- public-access:: true
+	- public-access:: true
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
-	- owl:class:: mv:ETSI_Domain_Security_&_Privacy
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: mv:ETSIDomainSecurityPrivacy
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About ETSI_Domain_Security_&_Privacy

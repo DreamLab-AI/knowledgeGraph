@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0237
 	- preferred-term:: Token Embedding
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: A learnable lookup table that maps each token in the vocabulary to a dense vector representation, providing the initial semantic encoding for transformer models.
 
@@ -63,9 +63,8 @@ Token embeddings convert discrete token IDs into continuous vectors that the mod
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: ai:TokenEmbedding
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Token Embedding
 	- A learnable lookup table that maps each token in the vocabulary to a dense vector representation, providing the initial semantic encoding for transformer models.
 

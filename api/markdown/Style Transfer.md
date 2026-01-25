@@ -69,7 +69,6 @@
 - **Maturity**: Consumer applications
 	- maturity:: draft
 	- owl:class:: mv:StyleTransfer
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

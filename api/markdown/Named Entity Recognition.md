@@ -71,7 +71,6 @@
 - **Maturity**: Production deployment
 	- maturity:: draft
 	- owl:class:: mv:NamedEntityRecognition
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

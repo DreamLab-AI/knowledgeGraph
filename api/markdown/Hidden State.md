@@ -63,7 +63,6 @@ Hidden states represent tokens at various stages of processing through the netwo
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:HiddenState
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Hidden State

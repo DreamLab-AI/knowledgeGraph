@@ -10,7 +10,6 @@
 	- definition:: **Collaborative Document Editing** - Real-time or asynchronous shared editing technology enabling multiple distributed users to simultaneously create, modify, and comment on digital documents with live synchronization and version control.
 	- maturity:: mature
 	- owl:class:: tc:CollaborativeDocumentEditing
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- belongsToDomain:: [[TelecollaborationDomain]]
 	- belongsToSubDomain:: [[Remote Work]], [[Education]], [[Knowledge Creation]]

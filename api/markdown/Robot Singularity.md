@@ -6,7 +6,7 @@ id:: unknown-ontology
   - public-access:: true
   - term-id:: MV-9741
   - preferred-term:: Robot Singularity
-  - source-domain:: robotics
+  - source-domain:: rb
   - owl:class:: rb:RobotSingularity
   - status:: draft
 

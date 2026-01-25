@@ -65,7 +65,6 @@
 - **Maturity**: Active research
 	- maturity:: draft
 	- owl:class:: mv:SceneUnderstanding
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

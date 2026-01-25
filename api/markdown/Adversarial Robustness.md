@@ -135,7 +135,6 @@ for batch in data:
 *Adversarial robustness is critical for deploying AI in adversarial environments where attackers may attempt to deceive systems.*
 	- maturity:: draft
 	- owl:class:: mv:AdversarialRobustness
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Adversarial Robustness

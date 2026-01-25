@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[World Intellectual Property Organization (WIPO)]], [[Uniform Commercial Code (UCC) Article 12]]
 	- owl:class:: mv:VirtualPropertyRight
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

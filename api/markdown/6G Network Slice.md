@@ -9,7 +9,6 @@
 - public-access:: true
 	- source:: [[3GPP Release 21]], [[ETSI ENI 008]]
 	- owl:class:: mv:SixGNetworkSlice
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

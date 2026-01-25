@@ -2,15 +2,14 @@
   id:: softrobotics-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247969
+	- term-id:: RB-3004
 	- preferred-term:: SoftRobotics
-	- source-domain:: robotics
+	- source-domain:: rb
 	- status:: draft
 - public-access:: true
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: rb:SoftRobotics
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 

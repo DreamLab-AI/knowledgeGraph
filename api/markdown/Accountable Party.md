@@ -19,8 +19,7 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:AccountableParty
-    - owl:physicality:: ConceptualEntity
+    - owl:class:: ai:AccountableParty
     - owl:role:: Concept
     - owl:inferred-class:: ConceptualConcept
     - belongsToDomain:: [[AIEthicsDomain]]
@@ -35,7 +34,7 @@
     collapsed:: true
     - ```clojure
       Prefix(:=<http://metaverse-ontology.org/ai-governance#>)
-Prefix(aigo:=<http://metaverse-ontology.org/ai-governance#>)
+Prefix(ai:=<http://metaverse-ontology.org/ai-governance#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -49,114 +48,114 @@ Ontology(<http://metaverse-ontology.org/ai-governance/PC-0015>
   Import(<http://metaverse-ontology.org/ai-governance/PC-0010>)
 
   ## Class Declaration
-  Declaration(Class(aigo:AccountableParty))
+  Declaration(Class(ai:AccountableParty))
 
   ## Subclass Relationships
-  SubClassOf(aigo:AccountableParty aigo:AIGovernancePrinciple)
+  SubClassOf(ai:AccountableParty ai:AIGovernancePrinciple)
 
   ## Essential Accountability Properties
-  SubClassOf(aigo:AccountableParty
-    (DataHasValue aigo:bearsResponsibility "true"^^xsd:boolean))
+  SubClassOf(ai:AccountableParty
+    (DataHasValue ai:bearsResponsibility "true"^^xsd:boolean))
 
-  SubClassOf(aigo:AccountableParty
-    (ObjectSomeValuesFrom aigo:hasObligation aigo:AccountabilityObligation))
+  SubClassOf(ai:AccountableParty
+    (ObjectSomeValuesFrom ai:hasObligation ai:AccountabilityObligation))
 
-  SubClassOf(aigo:AccountableParty
-    (ObjectSomeValuesFrom aigo:accountableFor aigo:AISystemComponent))
+  SubClassOf(ai:AccountableParty
+    (ObjectSomeValuesFrom ai:accountableFor ai:AISystemComponent))
 
-  SubClassOf(aigo:AccountableParty
-    (DataSomeValuesFrom aigo:hasAccountabilityScope xsd:string))
+  SubClassOf(ai:AccountableParty
+    (DataSomeValuesFrom ai:hasAccountabilityScope xsd:string))
 
   ## Authority and Resources
-  SubClassOf(aigo:AccountableParty
-    (ObjectSomeValuesFrom aigo:hasAuthority aigo:DecisionAuthority))
+  SubClassOf(ai:AccountableParty
+    (ObjectSomeValuesFrom ai:hasAuthority ai:DecisionAuthority))
 
-  SubClassOf(aigo:AccountableParty
-    (ObjectSomeValuesFrom aigo:hasResources aigo:Resource))
+  SubClassOf(ai:AccountableParty
+    (ObjectSomeValuesFrom ai:hasResources ai:Resource))
 
   ## Monitoring and Reporting
-  SubClassOf(aigo:AccountableParty
-    (ObjectSomeValuesFrom aigo:monitors aigo:SystemPerformance))
+  SubClassOf(ai:AccountableParty
+    (ObjectSomeValuesFrom ai:monitors ai:SystemPerformance))
 
-  SubClassOf(aigo:AccountableParty
-    (ObjectSomeValuesFrom aigo:reportsTo aigo:OversightBody))
+  SubClassOf(ai:AccountableParty
+    (ObjectSomeValuesFrom ai:reportsTo ai:OversightBody))
 
-  SubClassOf(aigo:AccountableParty
-    (DataSomeValuesFrom aigo:hasReportingFrequency xsd:duration))
+  SubClassOf(ai:AccountableParty
+    (DataSomeValuesFrom ai:hasReportingFrequency xsd:duration))
 
   ## Consequences and Enforcement
-  SubClassOf(aigo:AccountableParty
-    (ObjectSomeValuesFrom aigo:subjectTo aigo:Consequence))
+  SubClassOf(ai:AccountableParty
+    (ObjectSomeValuesFrom ai:subjectTo ai:Consequence))
 
   ## Data Properties
-  DataPropertyAssertion(aigo:hasPartyType aigo:AccountableParty xsd:string)
-  DataPropertyAssertion(aigo:hasAccountabilityScope aigo:AccountableParty xsd:string)
-  DataPropertyAssertion(aigo:hasLifecyclePhase aigo:AccountableParty xsd:string)
-  DataPropertyAssertion(aigo:hasReportingFrequency aigo:AccountableParty xsd:duration)
-  DataPropertyAssertion(aigo:hasLegalStatus aigo:AccountableParty xsd:string)
-  DataPropertyAssertion(aigo:hasIdentifier aigo:AccountableParty xsd:string)
+  DataPropertyAssertion(ai:hasPartyType ai:AccountableParty xsd:string)
+  DataPropertyAssertion(ai:hasAccountabilityScope ai:AccountableParty xsd:string)
+  DataPropertyAssertion(ai:hasLifecyclePhase ai:AccountableParty xsd:string)
+  DataPropertyAssertion(ai:hasReportingFrequency ai:AccountableParty xsd:duration)
+  DataPropertyAssertion(ai:hasLegalStatus ai:AccountableParty xsd:string)
+  DataPropertyAssertion(ai:hasIdentifier ai:AccountableParty xsd:string)
 
   ## Object Properties
-  ObjectPropertyAssertion(aigo:hasObligation aigo:AccountableParty aigo:AccountabilityObligation)
-  ObjectPropertyAssertion(aigo:accountableFor aigo:AccountableParty aigo:AISystemComponent)
-  ObjectPropertyAssertion(aigo:hasAuthority aigo:AccountableParty aigo:DecisionAuthority)
-  ObjectPropertyAssertion(aigo:hasResources aigo:AccountableParty aigo:Resource)
-  ObjectPropertyAssertion(aigo:monitors aigo:AccountableParty aigo:SystemPerformance)
-  ObjectPropertyAssertion(aigo:reportsTo aigo:AccountableParty aigo:OversightBody)
-  ObjectPropertyAssertion(aigo:subjectTo aigo:AccountableParty aigo:Consequence)
-  ObjectPropertyAssertion(aigo:collaboratesWith aigo:AccountableParty aigo:AccountableParty)
-  ObjectPropertyAssertion(aigo:delegatesTo aigo:AccountableParty aigo:AccountableParty)
+  ObjectPropertyAssertion(ai:hasObligation ai:AccountableParty ai:AccountabilityObligation)
+  ObjectPropertyAssertion(ai:accountableFor ai:AccountableParty ai:AISystemComponent)
+  ObjectPropertyAssertion(ai:hasAuthority ai:AccountableParty ai:DecisionAuthority)
+  ObjectPropertyAssertion(ai:hasResources ai:AccountableParty ai:Resource)
+  ObjectPropertyAssertion(ai:monitors ai:AccountableParty ai:SystemPerformance)
+  ObjectPropertyAssertion(ai:reportsTo ai:AccountableParty ai:OversightBody)
+  ObjectPropertyAssertion(ai:subjectTo ai:AccountableParty ai:Consequence)
+  ObjectPropertyAssertion(ai:collaboratesWith ai:AccountableParty ai:AccountableParty)
+  ObjectPropertyAssertion(ai:delegatesTo ai:AccountableParty ai:AccountableParty)
 
   ## Property Characteristics
-  ObjectPropertyDomain(aigo:accountableFor aigo:AccountableParty)
-  ObjectPropertyRange(aigo:accountableFor aigo:AISystemComponent)
+  ObjectPropertyDomain(ai:accountableFor ai:AccountableParty)
+  ObjectPropertyRange(ai:accountableFor ai:AISystemComponent)
 
-  ObjectPropertyDomain(aigo:hasObligation aigo:AccountableParty)
-  ObjectPropertyRange(aigo:hasObligation aigo:AccountabilityObligation)
+  ObjectPropertyDomain(ai:hasObligation ai:AccountableParty)
+  ObjectPropertyRange(ai:hasObligation ai:AccountabilityObligation)
 
-  SymmetricObjectProperty(aigo:collaboratesWith)
-  AsymmetricObjectProperty(aigo:delegatesTo)
-  AsymmetricObjectProperty(aigo:reportsTo)
+  SymmetricObjectProperty(ai:collaboratesWith)
+  AsymmetricObjectProperty(ai:delegatesTo)
+  AsymmetricObjectProperty(ai:reportsTo)
 
-  FunctionalDataProperty(aigo:hasIdentifier)
+  FunctionalDataProperty(ai:hasIdentifier)
 
   ## Annotations
-  AnnotationAssertion(rdfs:label aigo:AccountableParty "Accountable Party"@en)
-  AnnotationAssertion(rdfs:comment aigo:AccountableParty
+  AnnotationAssertion(rdfs:label ai:AccountableParty "Accountable Party"@en)
+  AnnotationAssertion(rdfs:comment ai:AccountableParty
     "Individual, organization, or role bearing responsibility for AI system aspects"@en)
-  AnnotationAssertion(dct:description aigo:AccountableParty
+  AnnotationAssertion(dct:description ai:AccountableParty
     "Entity with obligations to ensure compliance with governance principles and regulatory requirements"@en)
-  AnnotationAssertion(aigo:termID aigo:AccountableParty "PC-0015")
-  AnnotationAssertion(aigo:authorityScore aigo:AccountableParty "0.95"^^xsd:decimal)
-  AnnotationAssertion(dct:created aigo:AccountableParty "2025-11-08"^^xsd:date)
-  AnnotationAssertion(skos:definition aigo:AccountableParty
+  AnnotationAssertion(ai:termID ai:AccountableParty "PC-0015")
+  AnnotationAssertion(ai:authorityScore ai:AccountableParty "0.95"^^xsd:decimal)
+  AnnotationAssertion(dct:created ai:AccountableParty "2025-11-08"^^xsd:date)
+  AnnotationAssertion(skos:definition ai:AccountableParty
     "Individual or organization bearing responsibility for AI system development, deployment, or outcomes"@en)
 
   ## Party Type Enumeration
-  SubClassOf(aigo:AccountableParty
-    (DataHasValue aigo:hasPartyType
+  SubClassOf(ai:AccountableParty
+    (DataHasValue ai:hasPartyType
       (DataOneOf("individual" "organization" "role" "department" "consortium" "regulatory-body"))))
 
   ## Lifecycle Phase Enumeration
-  SubClassOf(aigo:AccountableParty
-    (DataHasValue aigo:hasLifecyclePhase
+  SubClassOf(ai:AccountableParty
+    (DataHasValue ai:hasLifecyclePhase
       (DataOneOf("development" "deployment" "operation" "monitoring" "governance" "all-phases"))))
 
   ## Accountability Scope
-  SubClassOf(aigo:AccountableParty
-    (DataHasValue aigo:hasAccountabilityScope
+  SubClassOf(ai:AccountableParty
+    (DataHasValue ai:hasAccountabilityScope
       (DataOneOf("data-quality" "model-performance" "deployment-appropriateness" "ongoing-monitoring" "compliance" "ethical-oversight"))))
 
   ## Major Accountable Party Categories
-  SubClassOf(aigo:AccountableParty
-    (ObjectUnionOf aigo:DataProvider aigo:ModelDeveloper aigo:DeployingOrganization aigo:SystemOperator aigo:GovernanceBody))
+  SubClassOf(ai:AccountableParty
+    (ObjectUnionOf ai:DataProvider ai:ModelDeveloper ai:DeployingOrganization ai:SystemOperator ai:GovernanceBody))
 
   ## Mandatory Obligations and Accountability
-  SubClassOf(aigo:AccountableParty
-    (ObjectMinCardinality 1 aigo:hasObligation))
+  SubClassOf(ai:AccountableParty
+    (ObjectMinCardinality 1 ai:hasObligation))
 
-  SubClassOf(aigo:AccountableParty
-    (ObjectMinCardinality 1 aigo:accountableFor))
+  SubClassOf(ai:AccountableParty
+    (ObjectMinCardinality 1 ai:accountableFor))
 )
       ```
 

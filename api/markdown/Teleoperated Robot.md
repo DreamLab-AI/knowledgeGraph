@@ -7,14 +7,13 @@
 	- sequence-number:: 0009
 	- filename-history:: ["rb-0009-teleoperated-robot.md"]
 	- preferred-term:: Teleoperated Robot
-	- source-domain:: robotics
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Teleoperated Robot** - Teleoperated Robot in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:rb0009teleoperatedrobot
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0009 teleoperated robot

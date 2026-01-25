@@ -62,7 +62,6 @@ SentencePiece enables purely end-to-end and language-independent tokenisation sy
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:SentencePiece
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About SentencePiece

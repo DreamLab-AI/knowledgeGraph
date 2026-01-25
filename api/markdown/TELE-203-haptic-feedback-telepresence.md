@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "The integration of haptic (tactile and kinesthetic) feedback devices into telepresence systems, enabling remote operators to feel forces, textures, and vibrations from distant environments through force-feedback gloves, exoskeletons, or handheld controllers, creating bidirectional touch sensation for immersive remote interaction with physical or virtual objects."
 	- maturity:: developing
-	- owl:physicality:: PhysicalEntity
 	- owl:role:: Object
 	- is-subclass-of:: [[Haptic Technology]]
 

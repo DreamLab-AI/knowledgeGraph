@@ -21,7 +21,6 @@
 
   - **Semantic Classification**
     - owl:class:: ai:DeepLearning
-    - owl:physicality:: VirtualEntity
     - owl:role:: Process
     - owl:inferred-class:: ai:VirtualProcess
     - belongsToDomain:: [[AI-GroundedDomain]], [[ComputationAndIntelligenceDomain]], [[DataManagementDomain]]

@@ -217,8 +217,7 @@ Safety incident response includes:
 *Part of AI Grounded Ontology - OECD AI Principles Framework*
 *Aligned with OECD AI Principles 2024, EU AI Act and international safety standards*
 	- maturity:: draft
-	- owl:class:: mv:Safety(OECD)
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: mv:SafetyOECD
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Safety (OECD)

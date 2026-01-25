@@ -2,19 +2,34 @@
   id:: metaverse_ontology_schema-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: `
+	- term-id:: MV-20501
 	- preferred-term:: Metaverse_Ontology_Schema
 	- source-domain:: mv
 	- status:: draft
-- public-access:: true
-	- definition:: ` - Formal standards-style definition
+	- public-access:: true
+	- definition:: Formal specification of property schema used across the metaverse glossary to enable consistent ontology representation and knowledge graph structuring.
 	- maturity:: draft
-	- owl:class:: mv:Metaverse_Ontology_Schema
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: mv:MetaverseOntologySchema
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
+
+## OWL Formal Semantics
+
+```clojure
+;; OWL Functional Syntax
+
+(Declaration (Class :MetaverseOntologySchema))
+
+;; Annotations
+(AnnotationAssertion rdfs:label :MetaverseOntologySchema "Metaverse Ontology Schema"@en)
+(AnnotationAssertion rdfs:comment :MetaverseOntologySchema "Formal specification of property schema used across the metaverse glossary to enable consistent ontology representation and knowledge graph structuring."@en)
+
+;; Data Properties
+(AnnotationAssertion dcterms:identifier :MetaverseOntologySchema "MV-20501"^^xsd:string)
+```
+
 - ## About Metaverse_Ontology_Schema
-	- ` - Formal standards-style definition
+	- Formal specification of property schema used across the metaverse glossary to enable consistent ontology representation and knowledge graph structuring.
 	-
 	- ### Original Content
 	  collapsed:: true
@@ -78,12 +93,8 @@
 		  - `maturity::` - Term maturity level (draft / mature / deprecated)
 		  - `version::` - Specification version
 		  - `status::` - Standardization status
-- `ontology-status::` - Internal tracking (needs-relationships / complete)
-
-- public-access:: true
 		  - `ontology-status::` - Internal tracking (needs-relationships / complete)
-    - public-access:: true
-		  
+
 		  ### Terminology
 		  - `synonyms::` - Equivalent alternative terms
 		  - `variant-terms::` - Related term variants

@@ -2,7 +2,7 @@
   id:: socialvr-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247969
+	- term-id:: MV-3037
 	- preferred-term:: SocialVR
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:SocialVR
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

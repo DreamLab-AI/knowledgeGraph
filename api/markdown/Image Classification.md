@@ -71,7 +71,6 @@
 - **Maturity**: Mature, widely deployed
 	- maturity:: draft
 	- owl:class:: mv:ImageClassification
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

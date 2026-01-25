@@ -266,7 +266,6 @@ Provider responsibilities often extend beyond initial system delivery through ob
 - [[Conformity Assessment]]
 	- maturity:: draft
 	- owl:class:: mv:AIProvider
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

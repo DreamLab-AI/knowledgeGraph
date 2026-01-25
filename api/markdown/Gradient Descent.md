@@ -4,16 +4,15 @@
 	- ontology:: true
 	- term-id:: AI-0044
 	- preferred-term:: Gradient Descent
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: ### Primary Definition
 **Gradient Descent** is an iterative optimisation algorithm that minimises a loss function by repeatedly updating parameters in the direction of the negative gradient. It is the fundamental optimisation approach for training machine learning models.
 	- maturity:: draft
 	- owl:class:: ai:GradientDescent
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Gradient Descent
 	- ### Primary Definition
 **Gradient Descent** is an iterative optimisation algorithm that minimises a loss function by repeatedly updating parameters in the direction of the negative gradient. It is the fundamental optimisation approach for training machine learning models.

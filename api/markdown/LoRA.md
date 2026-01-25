@@ -182,7 +182,6 @@ LoRA revolutionised efficient fine-tuning by demonstrating that low-rank adaptat
 **Verification Status**: Verified against QLoRA paper (arXiv:2305.14314)
 	- maturity:: draft
 	- owl:class:: mv:LoRA
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About LoRA

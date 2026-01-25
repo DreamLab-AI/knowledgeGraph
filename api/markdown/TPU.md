@@ -11,7 +11,6 @@
 	- source:: [[Google Cloud]], [[AI Hardware]]
 	- maturity:: mature
 	- owl:class:: ai:TPU
-	- owl:physicality:: Physical
 	- owl:role:: Object
 	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- isSubclassOf:: [[AI Hardware]]

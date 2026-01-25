@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:NetworkSynchronization
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[ConsensusDomain]]
@@ -115,3 +114,6 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0057>
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
   -
 
+
+
+<!-- Merged from Network Synchronization.md: Lightning Network, Nostr, schnorr1989efficient -->

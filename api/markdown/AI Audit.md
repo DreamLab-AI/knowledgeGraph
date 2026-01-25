@@ -286,7 +286,6 @@ AI audits differ from traditional IT audits due to AI-specific challenges: proba
 - [[Internal Audit]]
 	- maturity:: draft
 	- owl:class:: mv:AIAudit
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

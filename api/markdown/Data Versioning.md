@@ -11,7 +11,6 @@
 	- source:: [[MLOps]], [[Data Engineering]], [[DVC]]
 	- maturity:: emerging
 	- owl:class:: ai:DataVersioning
-	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- isSubclassOf:: [[Data Engineering]]

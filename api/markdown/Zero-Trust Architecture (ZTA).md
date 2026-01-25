@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[NIST SP 800-207]], [[ENISA 2024]], [[ISO 27001]]
 	- owl:class:: mv:ZeroTrustArchitecture
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

@@ -160,7 +160,6 @@ Adapter modules pioneered parameter-efficient fine-tuning, demonstrating that a 
 **Verification Status**: Verified against PEFT survey (2023)
 	- maturity:: draft
 	- owl:class:: mv:AdapterModules
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Adapter Modules

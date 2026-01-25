@@ -11,7 +11,6 @@
 	- maturity:: reviewed
 	- belongsToDomain:: [[InfrastructureDomain]], [[Technology Domain]]
 	- owl:class:: ngm:PowerSupply
-	- owl:physicality:: PhysicalEntity
 	- owl:role:: Hardware
 
 ## Relationships

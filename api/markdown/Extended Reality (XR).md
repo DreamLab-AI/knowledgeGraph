@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ACM Glossary]], [[ISO 9241-940]]
 	- owl:class:: mv:ExtendedReality
-	- owl:physicality:: HybridEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:HybridObject
 	- owl:functional-syntax:: true

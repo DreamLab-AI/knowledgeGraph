@@ -68,7 +68,6 @@ Parameter count is determined by architecture (depth, width, vocabulary size) an
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:ParameterCount
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Parameter Count

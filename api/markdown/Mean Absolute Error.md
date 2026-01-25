@@ -270,7 +270,6 @@ $$\text{MAPE} = \frac{100\%}{n}\sum_{i=1}^{n}\left|\frac{y_i - \hat{y}_i}{y_i}\r
 - [[Median Absolute Error]]
 	- maturity:: draft
 	- owl:class:: mv:MeanAbsoluteError
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

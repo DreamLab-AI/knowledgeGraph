@@ -118,7 +118,6 @@ BERT revolutionised NLP by demonstrating that pre-training bidirectional represe
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:BERT
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About BERT

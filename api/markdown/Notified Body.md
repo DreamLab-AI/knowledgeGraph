@@ -2,7 +2,7 @@
   id:: notified-body-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247950
+	- term-id:: MV-3023
 	- preferred-term:: Notified Body
 	- source-domain:: mv
 	- status:: draft
@@ -295,7 +295,6 @@ Member States designate new notified bodies specifically for:
 - Regulation (EU) 765/2008 (Accreditation and Market Surveillance)
 	- maturity:: draft
 	- owl:class:: mv:NotifiedBody
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Notified Body

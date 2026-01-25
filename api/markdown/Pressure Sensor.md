@@ -7,14 +7,13 @@
 	- sequence-number:: 0085
 	- filename-history:: ["rb-0085-pressure-sensor.md"]
 	- preferred-term:: Pressure Sensor
-	- source-domain:: robotics
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Pressure Sensor** - Pressure Sensor in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:rb0085pressuresensor
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0085 pressure sensor

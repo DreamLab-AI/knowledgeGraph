@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[IEEE P2048-1 (Architecture Overview)]]
 	- owl:class:: mv:MetaverseArchitectureStack
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

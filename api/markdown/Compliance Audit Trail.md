@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO 37301]]
 	- owl:class:: mv:ComplianceAuditTrail
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

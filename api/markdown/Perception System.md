@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0349
 	- preferred-term:: Perception System
-	- source-domain:: mv
+	- source-domain:: ai
 - status:: draft
 	- definition:: A Perception System is the sensor processing and environmental understanding component of autonomous systems that interprets raw sensor data to build a coherent representation of the surrounding environment, including object detection, classification, tracking, localisation, and scene understanding. Perception systems fuse data from multiple sensor modalities (camera, lidar, radar) to create robust environmental models for autonomous decision-making.
 
@@ -302,7 +302,6 @@
 - **Status**: Production
 	- maturity:: production
 	- owl:class:: mv:PerceptionSystem
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

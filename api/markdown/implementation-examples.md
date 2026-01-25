@@ -2,7 +2,7 @@
   id:: implementation-examples-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247980
+	- term-id:: MV-3032
 	- preferred-term:: implementation examples
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:implementationexamples
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

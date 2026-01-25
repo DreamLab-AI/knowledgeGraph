@@ -11,7 +11,6 @@
 	- source:: [[Presence Research]], [[Avatar Psychology]]
 	- maturity:: emerging
 	- owl:class:: tc:SelfPresence
-	- owl:physicality:: Abstract
 	- owl:role:: Attribute
 	- belongsToDomain:: [[TelecollaborationDomain]]
 	- is-subclass-of:: [[Presence]]

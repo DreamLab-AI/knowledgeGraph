@@ -2,7 +2,7 @@
   id:: etsi_domain_infrastructure___interop-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247920
+	- term-id:: MV-2009
 	- preferred-term:: ETSI_Domain_Infrastructure___Interop
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:ETSI_Domain_Infrastructure___Interop
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About ETSI_Domain_Infrastructure___Interop

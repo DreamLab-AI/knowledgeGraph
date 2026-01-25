@@ -11,7 +11,6 @@
 	- source:: [[Data Engineering]], [[Big Data]]
 	- maturity:: mature
 	- owl:class:: ai:DataLake
-	- owl:physicality:: Abstract
 	- owl:role:: Object
 	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- isSubclassOf:: [[Data Engineering]]

@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[UN Digital Rights Framework]], [[GDPR]], [[IEEE Digital Identity Standards]]
 	- owl:class:: mv:DigitalCitizenship
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

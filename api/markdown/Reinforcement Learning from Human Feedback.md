@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0261
 	- preferred-term:: Reinforcement Learning from Human Feedback
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: A technique for aligning language models with human preferences by training a reward model from human rankings of outputs and using reinforcement learning (typically PPO) to optimise the policy towards maximising predicted human preference. RLHF enables models to learn complex alignment objectives difficult to specify explicitly.
 
@@ -247,9 +247,8 @@ RLHF represented a breakthrough in AI alignment, enabling language models to be 
 **Verification Status**: Verified against InstructGPT paper (arXiv:2203.02155)
 	- maturity:: draft
 	- owl:class:: ai:ReinforcementLearningfromHumanFeedback
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Reinforcement Learning from Human Feedback
 	- A technique for aligning language models with human preferences by training a reward model from human rankings of outputs and using reinforcement learning (typically PPO) to optimise the policy towards maximising predicted human preference. RLHF enables models to learn complex alignment objectives difficult to specify explicitly.
 

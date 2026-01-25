@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[CIDOC-CRM]], [[SPECTRUM Museum Standard]]
 	- owl:class:: mv:CulturalProvenanceRecord
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

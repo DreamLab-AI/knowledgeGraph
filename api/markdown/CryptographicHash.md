@@ -2,15 +2,14 @@
   id:: cryptographichash-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: bc-1761742247909
+	- term-id:: BC-9982
 	- preferred-term:: CryptographicHash
-	- source-domain:: blockchain
+	- source-domain:: bc
 	- status:: draft
 - public-access:: true
 	- definition:: A deterministic function transforming data into a fixed-size digest with collision resistance.
 	- maturity:: draft
 	- owl:class:: bc:CryptographicHash
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[BlockchainDomain]]
 - ## About CryptographicHash

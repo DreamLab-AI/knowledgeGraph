@@ -10,19 +10,20 @@
     "Dynamic Character Animation",
     "Education Metaverse",
     "Human Computer Interaction",
+    "3D Scene Exchange Protocol (SXP)",
     "Tourism Metaverse",
     "Experience Layer",
     "Metaverse Technology",
     "Character Model"
   ],
   "wiki_links": [
+    "Social Interaction",
     "Virtual Character System",
     "3D Rendering Engine",
-    "User Representation",
     "Input Processing",
-    "Embodied Presence",
-    "Social Interaction",
-    "Animation Controller"
+    "Animation Controller",
+    "User Representation",
+    "Embodied Presence"
   ],
   "ontology": {
     "term_id": "MV-9792",

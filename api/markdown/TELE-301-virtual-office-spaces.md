@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "Persistent virtual reality or metaverse environments designed as professional workspaces where distributed teams gather as avatars to collaborate, attend meetings, use shared whiteboards, and navigate 3D office layouts, replicating physical office spatial dynamics whilst enabling global remote participation through immersive telepresence platforms."
 	- maturity:: developing
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- #### Relationships
 	  id:: virtual-office-spaces-relationships

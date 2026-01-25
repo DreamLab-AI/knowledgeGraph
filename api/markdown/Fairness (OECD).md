@@ -191,8 +191,7 @@ Different fairness priorities across domains:
 *Part of AI Grounded Ontology - OECD AI Principles Framework*
 *Aligned with OECD AI Principles 2024, EU AI Act, and international human rights law*
 	- maturity:: draft
-	- owl:class:: mv:Fairness(OECD)
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: mv:FairnessOECD
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Fairness (OECD)

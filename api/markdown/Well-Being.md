@@ -159,7 +159,6 @@ The 2024 OECD revision strengthened well-being by:
 *Aligned with OECD AI Principles 2024 and WHO health frameworks*
 	- maturity:: draft
 	- owl:class:: mv:WellBeing
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Well Being

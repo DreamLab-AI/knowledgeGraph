@@ -9,7 +9,6 @@
 	- maturity:: mature
 	- source:: [[Autodesk Design ML]], [[SIGGRAPH AI Design WG]]
 	- owl:class:: mv:GenerativeDesignTool
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

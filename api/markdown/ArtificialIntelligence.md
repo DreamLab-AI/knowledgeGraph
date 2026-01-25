@@ -10,7 +10,6 @@
 	- definition:: A CamelCase reference variant for the Artificial Intelligence concept, representing the field of computer science dedicated to creating systems capable of perception, reasoning, learning, and autonomous action. See [[Artificial Intelligence]] for the canonical domain entry.
 	- maturity:: stable
 	- owl:class:: ngm:ArtificialIntelligence
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships

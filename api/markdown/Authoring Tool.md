@@ -9,7 +9,6 @@
 	- maturity:: mature
 	- source:: [[ETSI GR ARF 010]], [[MSF Taxonomy]], [[SIGGRAPH Pipeline WG]]
 	- owl:class:: mv:AuthoringTool
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

@@ -10,7 +10,6 @@
 	- definition:: An authentication service is a system component that verifies the identity of users, devices, or applications attempting to access protected resources. It validates credentials against stored identity information and issues tokens or assertions that enable authorised access across applications and services, forming the foundation of secure identity management in enterprise systems.
 	- maturity:: reviewed
 	- owl:class:: ngm:AuthenticationService
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Core Technology]]
 

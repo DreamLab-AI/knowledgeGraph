@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0294
 	- preferred-term:: Gradient Clipping
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: A technique that limits the magnitude of gradients during backpropagation to prevent exploding gradients and training instability. Gradient clipping rescales gradients when their norm exceeds a threshold, enabling stable training of deep networks, especially recurrent architectures.
 
@@ -94,9 +94,8 @@ g ← clip(g, -threshold, +threshold)
 **Verification Status**: Verified against training literature
 	- maturity:: draft
 	- owl:class:: ai:GradientClipping
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Gradient Clipping
 	- A technique that limits the magnitude of gradients during backpropagation to prevent exploding gradients and training instability. Gradient clipping rescales gradients when their norm exceeds a threshold, enabling stable training of deep networks, especially recurrent architectures.
 

@@ -2,30 +2,16 @@
   id:: wallet-ontology
   collapsed:: true
 	- ontology:: true
-- term-id:: mv-1761742247979
-	- preferred-term:: Wallet
-	- source-domain:: mv
-	- status:: draft
-	- definition:: A component of the metaverse ecosystem.
-	- maturity:: draft
-	- owl:class:: mv:Wallet
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-- ## About Wallet
-	- A component of the metaverse ecosystem.
-
 - term-id:: WALLET-001
 	- preferred-term:: Wallet
-	- source-domain:: cryptocurrency
+	- source-domain:: bc
 	- status:: production
-  - public-access:: true
+	- public-access:: true
 	- definition:: A software or hardware interface that stores cryptographic private keys and enables users to manage cryptocurrency assets, sign transactions, and interact with blockchain networks securely.
 	- maturity:: production
-	- owl:class:: crypto:Wallet
-	- owl:physicality:: DigitalArtifact
+	- owl:class:: bc:Wallet
 	- owl:role:: KeyManagementSystem
-	- belongsToDomain:: [[CryptocurrencyDomain]]
+	- belongsToDomain:: [[BlockchainDomain]]
 - ## About Wallet
 	- A cryptocurrency wallet is a digital tool that stores [[private keys]] and enables users to manage [[cryptocurrency]] assets, sign [[transactions]], and interact with [[blockchain]] networks. Unlike physical wallets, crypto wallets don't actually store coins—they store the cryptographic keys that prove ownership of digital assets on the [[blockchain]].
 	-

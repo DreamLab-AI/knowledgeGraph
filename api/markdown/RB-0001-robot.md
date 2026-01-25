@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: rb:Robot
-    - owl:physicality:: PhysicalEntity
     - owl:role:: Object
     - belongsToDomain:: [[Robotics]]
 
@@ -136,3 +135,6 @@
   -
   - ### Related Concepts
     id:: robot-related
+
+
+<!-- Merged from Robot.md: Autonomousagent, Mechatronicsystem, PowerSupply, RoboticsTechnology -->

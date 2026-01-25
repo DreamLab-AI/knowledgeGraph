@@ -71,7 +71,6 @@
 - **Maturity**: Commercial deployment
 	- maturity:: draft
 	- owl:class:: mv:SuperResolution
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

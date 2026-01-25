@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "The payment of remote workers, freelancers, or distributed team members in cryptocurrency (Bitcoin, Ethereum, stablecoins) rather than traditional fiat currency, enabling borderless, instant, low-fee transactions that bypass traditional banking systems whilst providing financial inclusion for unbanked populations and facilitating blockchain-based collaboration."
 	- maturity:: developing
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Process
 	- is-subclass-of:: [[Cryptocurrency]]
 

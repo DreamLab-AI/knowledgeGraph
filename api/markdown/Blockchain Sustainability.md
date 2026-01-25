@@ -11,7 +11,6 @@
 	- public-access:: true
 	- belongsToDomain:: [[Blockchain]]
 	- owl:class:: bc:BlockchainSustainability
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 
 ---

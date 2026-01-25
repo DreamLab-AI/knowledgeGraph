@@ -13,7 +13,6 @@
 	- definition:: **Impedance Control** - Impedance Control in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:ImpedanceControl
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0056 impedance control

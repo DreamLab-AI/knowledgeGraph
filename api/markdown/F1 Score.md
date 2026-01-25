@@ -280,7 +280,6 @@ $$F_\beta = (1 + \beta^2) \times \frac{\text{Precision} \times \text{Recall}}{\b
 - [[Micro F1]]
 	- maturity:: draft
 	- owl:class:: mv:F1Score
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

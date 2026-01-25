@@ -301,7 +301,6 @@ Level 5: Optimising - Continuous trustworthiness improvement
 *This definition aligns with international standards for AI trustworthiness and incorporates best practices from leading AI governance frameworks.*
 	- maturity:: draft
 	- owl:class:: mv:AITrustworthiness
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

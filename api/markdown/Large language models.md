@@ -21,7 +21,6 @@
 
   - **Semantic Classification**
     - owl:class:: ai:LargeLanguageModel
-    - owl:physicality:: VirtualEntity
     - owl:role:: Process
     - owl:inferred-class:: ai:VirtualProcess
     - belongsToDomain:: [[AI-GroundedDomain]], [[ComputationAndIntelligenceDomain]], [[DataManagementDomain]]
@@ -597,3 +596,5 @@
 - [A Twitter user named Justin Alvey recently tweeted about advancements in artificial intelligence. He mentioned a tool called LLM chaining, which allows users to perform various tasks with emails. This tool was inspired by LangChainAI. Justin Alvey also noted that this functionality is now available in real-time, thanks to OpenAI's gpt-3.5-turbo model. The tweet has gained significant attention, with hundreds of thousands of views, retweets, likes, quotes, and bookmarks.](https://twitter.com/justLV/status/1637876167763202053)
 - [The text is a LinkedIn post by Francesco Saverio Zuppichini, a Machine Learning Engineer, recommending resources to learn about Language Learning Models (LLMs).  The post includes a list of resources that Zuppichini recommended to a friend who wanted to quickly learn about LLMs. The recommended resources include academic papers, blogs, videos, and YouTube channels. Zuppichini also mentions the importance of training models with more data and for longer durations to achieve better results. He suggests looking at models like Vicuna and WizardLM, as well as different methods of prompting, such as chain of thoughts and tree of thoughts. Additionally, Zuppichini shares the LLM leaderboard from Hugging Face and encourages others to share any useful resources they may have. The post receives positive feedback from other LinkedIn users, who appreciate the resources and share their own suggestions.](https://www.linkedin.com/posts/francesco-saverio-zuppichini-94659a150_ai-ml-ds-activity-7072868294000566272-kV83?utm_source=shareandutm_medium=member_android)
 -
+
+<!-- Merged from Large Language Model.md: Intelligent Virtual Agents, Metaverse Npc, Ontology In Llm Operations, metaverse -->

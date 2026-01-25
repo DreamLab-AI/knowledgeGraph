@@ -294,7 +294,6 @@ plt.legend()
 - [[Model Comparison]]
 	- maturity:: draft
 	- owl:class:: mv:ROCCurve
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

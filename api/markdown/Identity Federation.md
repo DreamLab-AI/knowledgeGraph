@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[OASIS SAML]], [[OpenID Foundation]], [[NIST SP 800-63C]]
 	- owl:class:: mv:IdentityFederation
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

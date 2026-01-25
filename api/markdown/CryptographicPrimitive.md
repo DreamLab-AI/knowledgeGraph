@@ -10,7 +10,6 @@
 	- definition:: The fundamental building blocks of cryptography upon which more complex cryptographic algorithms, protocols, and systems are constructed. Primitives include hash functions, encryption algorithms, digital signatures, message authentication codes, and key exchange protocols, each providing specific security properties but requiring combination in security protocols to address multiple security requirements.
 	- maturity:: reviewed
 	- owl:class:: bc:CryptographicPrimitive
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Cryptography]]
 

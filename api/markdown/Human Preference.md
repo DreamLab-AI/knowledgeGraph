@@ -9,7 +9,7 @@
     - public-access:: true
     - ontology:: true
     - term-id:: AI-0801
-    - preferred-term:: Property
+    - preferred-term:: Human Preference
     - source-domain:: ai
     - status:: complete
     - version:: 1.0.0

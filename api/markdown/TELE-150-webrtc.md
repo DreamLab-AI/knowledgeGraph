@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "An open-source framework and W3C standard enabling peer-to-peer real-time communication of audio, video, and data directly between web browsers and mobile applications without requiring intermediary servers, supporting telepresence, video conferencing, and collaborative applications through standardised JavaScript APIs."
 	- maturity:: mature
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Object
 	- is-subclass-of:: [[Communication Protocol]]
 	- #### Relationships

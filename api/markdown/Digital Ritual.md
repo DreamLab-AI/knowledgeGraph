@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[Virtual Worlds Research]], [[Digital Religion Studies]]
 	- owl:class:: mv:DigitalRitual
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

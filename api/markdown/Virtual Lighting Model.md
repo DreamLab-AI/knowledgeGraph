@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[SIGGRAPH Standards]]
 	- owl:class:: mv:VirtualLightingModel
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

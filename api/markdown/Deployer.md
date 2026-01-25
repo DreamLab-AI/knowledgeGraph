@@ -2,7 +2,7 @@
   id:: deployer-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247914
+	- term-id:: MV-3033
 	- preferred-term:: Deployer
 	- source-domain:: mv
 	- status:: draft
@@ -253,7 +253,6 @@ Deployers not liable if:
 - Commission Deployer Guidance (expected 2026)
 	- maturity:: draft
 	- owl:class:: mv:Deployer
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Deployer

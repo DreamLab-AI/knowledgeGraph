@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:ChainState
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[BlockchainDomain]]
@@ -115,3 +114,6 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0025>
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
   -
 
+
+
+<!-- Merged from Chain State.md: Alden2023, Social contract and jobs, Srinivasan2022 -->

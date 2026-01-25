@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0366
 	- preferred-term:: Natural Language Processing
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: Natural Language Processing (NLP) is the field of artificial intelligence concerned with enabling computers to understand, interpret, generate, and manipulate human language in both written and spoken forms. NLP encompasses tasks including machine translation, sentiment analysis, named entity recognition, question answering, and text generation, employing transformer architectures, large language models, and linguistic knowledge to bridge human communication and computational processing.
 
@@ -77,9 +77,8 @@
 - **Maturity**: Mature field with widespread deployment
 	- maturity:: draft
 	- owl:class:: ai:NaturalLanguageProcessing
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- #### Relationships
 	  id:: natural-language-processing-relationships
 		- is-dependency-of:: [[Intelligent Virtual Entity]], [[Narrative Design Ontology]]

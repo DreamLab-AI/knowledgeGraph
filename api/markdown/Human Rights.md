@@ -193,7 +193,6 @@ OECD 2024 revision strengthened human rights by:
 *Aligned with UDHR, ICCPR, EU Charter and OECD AI Principles 2024*
 	- maturity:: draft
 	- owl:class:: mv:HumanRights
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Human Rights
@@ -973,7 +972,6 @@ OECD 2024 revision strengthened human rights by:
 
 - maturity:: production
 - owl:class:: mv:HumanRights
-- owl:physicality:: ConceptualEntity
 - owl:role:: Concept
 - belongsToDomain:: [[MetaverseDomain]]
 - revision-date:: 2025-11-13

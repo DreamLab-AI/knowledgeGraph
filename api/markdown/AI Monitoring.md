@@ -256,7 +256,6 @@ Modern AI monitoring encompasses technical performance metrics, fairness and bia
 - [[Data Drift]]
 	- maturity:: draft
 	- owl:class:: mv:AIMonitoring
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

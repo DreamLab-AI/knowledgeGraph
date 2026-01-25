@@ -60,7 +60,6 @@ Harmlessness emerged as a core alignment objective in Constitutional AI and RLHF
 **Verification Status**: Verified against Constitutional AI paper
 	- maturity:: draft
 	- owl:class:: mv:Harmlessness
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Harmlessness

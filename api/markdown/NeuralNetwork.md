@@ -2,15 +2,14 @@
   id:: neuralnetwork-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247950
+	- term-id:: AI-3000
 	- preferred-term:: NeuralNetwork
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: ai:NeuralNetwork
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 
@@ -34,71 +33,7 @@
 	-
 	- ### Original Content
 	  collapsed:: true
-		- ```
-- # Ontology Block
-		    collapsed:: true
-		    - **Class:** ConvolutionalNeuralNetwork
-		    - **IRI:** http://purl.org/ai-grounded-ontology/core#ConvolutionalNeuralNetwork
-		    - **SubClassOf:** NeuralNetwork
-		    - **Source Domain:** artificial-intelligence
-		    - **Source File:** metaverse-ontology-combined-refactored.ttl
-		    - **Integration Date:** 2025-10-28
-		    - **TRL:** 7
-		    - **Quality Score:** 0.91
-		    - ```turtle
-		      aigo:ConvolutionalNeuralNetwork rdf:type owl:Class ;
-		          rdfs:label "Convolutional Neural Network"@en ;
-		          rdfs:comment "Deep learning architecture specialized for processing grid-like data such as images, using convolutional layers."@en ;
-		          rdfs:subClassOf aigo:NeuralNetwork ;
-		          meta:sourceOntology "aigo:" ;
-		          meta:technologyDomain "artificial-intelligence" ;
-		          meta:disruptiveTechCategory "artificial-intelligence-systems" ;
-		          meta:technologyReadinessLevel "7"^^xsd:integer ;
-		          meta:qualityScore "0.91"^^xsd:float .
-		      ```
-		  
-		  - ## Description
-		    - Specialized neural network architecture for processing grid-structured data
-		    - Uses convolutional layers to detect spatial hierarchies of features
-		    - Employs pooling layers for dimensionality reduction
-		    - Includes fully connected layers for classification or regression
-		    - Highly effective for computer vision and image processing tasks
-		  
-		  - ## Properties
-		    - Object properties
-		      - [[hasLayer]] - References convolutional, pooling, and dense layers
-		      - [[usesActivation]] - Activation functions (ReLU, sigmoid, tanh)
-		      - [[trainedOn]] - Training dataset used
-		      - [[optimizedBy]] - Optimization algorithm (Adam, SGD)
-		    - Data properties
-		      - numberOfLayers - Total number of network layers
-		      - kernelSize - Size of convolutional kernels
-		      - strideValue - Stride of convolution operations
-		      - poolingStrategy - Type of pooling (max, average)
-		      - accuracyMetric - Model accuracy score
-		  
-		  - ## Cross-Domain Relationships
-		    - [[dt:enhances]] → [[AugmentedReality]] - Computer vision for AR applications
-		    - [[dt:processes]] → [[3DModel]] - 3D object recognition in metaverse
-		    - [[dt:analyzes]] → [[VirtualAvatar]] - Avatar recognition and tracking
-		    - [[dt:trains]] → [[AutonomousRobot]] - Vision system for robotic navigation
-		    - [[dt:securedBy]] → [[ZeroKnowledgeProof]] - Privacy-preserving image processing
-		  
-		  - ## Related Concepts
-		    - [[ImageProcessing]]
-		    - [[DeepNetworkOptimization]]
-		    - [[TransferLearning]]
-		    - [[FeatureEngineering]]
-		    - [[ClassificationModel]]
-		  
-		  - ## Use Cases
-		    - Image classification and recognition
-		    - Object detection in virtual environments
-		    - Facial recognition systems
-		    - Medical image analysis
-		    - Autonomous vehicle vision
-		  
-		  ```
+		- Legacy content removed during ai: prefix remediation (2025-01-23)
 
 ## Academic Context
 

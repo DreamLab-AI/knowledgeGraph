@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0246
 	- preferred-term:: Fine Tuning
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: The process of adapting a pre-trained model to a specific downstream task by continuing training on task-specific data, typically with a lower learning rate. Fine-tuning leverages knowledge acquired during pre-training whilst specialising the model for particular applications.
 
@@ -97,9 +97,8 @@ Fine-tuning democratised access to state-of-the-art model performance by enablin
 **Verification Status**: Verified against arXiv:2411.01195 (2024)
 	- maturity:: draft
 	- owl:class:: ai:FineTuning
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Fine Tuning
 	- The process of adapting a pre-trained model to a specific downstream task by continuing training on task-specific data, typically with a lower learning rate. Fine-tuning leverages knowledge acquired during pre-training whilst specialising the model for particular applications.
 

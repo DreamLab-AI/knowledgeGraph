@@ -108,7 +108,6 @@ Inclusive growth in AI context can be assessed through:
 *Aligned with OECD AI Principles 2024 and EU AI Act regulatory framework*
 	- maturity:: draft
 	- owl:class:: mv:InclusiveGrowth
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Inclusive Growth

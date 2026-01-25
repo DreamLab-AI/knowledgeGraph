@@ -5,7 +5,6 @@
   "backlinks": [
     "Metadata Standards",
     "Digital Curation Platform",
-    "BC 0115 minting",
     "Media Library",
     "Shared Ownership Model",
     "Tokenization",
@@ -13,17 +12,17 @@
     "Digital Goods Registry"
   ],
   "wiki_links": [
-    "Risk Management",
-    "Investment Management",
-    "Compliance Systems",
     "Crypto Funds",
-    "Analytics Tools",
-    "Custody Solutions",
     "Wealth Management",
-    "Asset Allocation",
-    "Index Products",
+    "Compliance Systems",
     "metaverse",
-    "Portfolio Optimization"
+    "Analytics Tools",
+    "Index Products",
+    "Portfolio Optimization",
+    "Custody Solutions",
+    "Investment Management",
+    "Risk Management",
+    "Asset Allocation"
   ],
   "ontology": {
     "term_id": "MV-9850",

@@ -302,7 +302,6 @@ cm_normalized = confusion_matrix(y_true, y_pred, normalize='all')
 - [[Specificity]]
 	- maturity:: draft
 	- owl:class:: mv:ConfusionMatrix
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

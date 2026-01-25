@@ -4,16 +4,15 @@
 	- ontology:: true
 	- term-id:: AI-0059
 	- preferred-term:: Activation Function
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: ### Primary Definition
 An **Activation Function** is a function applied to the weighted combination of all inputs to a neuron. Activation functions allow neural networks to learn complicated features in the data. They are typically non-linear.
 	- maturity:: draft
 	- owl:class:: ai:ActivationFunction
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Activation Function
 	- ### Primary Definition
 An **Activation Function** is a function applied to the weighted combination of all inputs to a neuron. Activation functions allow neural networks to learn complicated features in the data. They are typically non-linear.

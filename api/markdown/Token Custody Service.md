@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ETSI GS MEC 003]]
 	- owl:class:: mv:TokenCustodyService
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

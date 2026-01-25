@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[MSF Register WG]], [[ISO/IEC 11179]], [[W3C]]
 	- owl:class:: mv:DigitalOntologyRepository
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

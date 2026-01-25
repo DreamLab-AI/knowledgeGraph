@@ -236,7 +236,6 @@ Human oversight exists on a spectrum from full human decision-making with AI sup
 - [[Automation Bias]]
 	- maturity:: draft
 	- owl:class:: mv:HumanOversight
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

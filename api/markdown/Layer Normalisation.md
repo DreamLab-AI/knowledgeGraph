@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0203
 	- preferred-term:: Layer Normalisation
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: A normalisation technique that normalises activations across the feature dimension for each example independently, stabilising deep network training.
 
@@ -98,9 +98,8 @@ Layer normalisation in transformers helps stabilise training and improve converg
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: ai:LayerNormalisation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Layer Normalisation
 	- A normalisation technique that normalises activations across the feature dimension for each example independently, stabilising deep network training.
 

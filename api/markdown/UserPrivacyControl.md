@@ -2,7 +2,7 @@
   id:: userprivacycontrol-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: AI-1004
+	- term-id:: AI-4017
 	- source-domain:: ai
 	- preferred-term:: UserPrivacyControl
 	- status:: complete

@@ -11,7 +11,6 @@
 	- maturity:: reviewed
 	- belongsToDomain:: [[InfrastructureDomain]], [[Technology Domain]], [[ETSI_Domain_Interoperability]]
 	- owl:class:: tc:NetworkProtocol
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Standard
 
 ## Relationships

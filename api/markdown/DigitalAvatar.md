@@ -2,7 +2,7 @@
   id:: digitalavatar-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247916
+	- term-id:: MV-3008
 	- preferred-term:: DigitalAvatar
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:DigitalAvatar
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

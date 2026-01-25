@@ -2,15 +2,14 @@
   id:: swarmrobotics-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247974
+	- term-id:: RB-3001
 	- preferred-term:: SwarmRobotics
-	- source-domain:: robotics
+	- source-domain:: rb
 	- status:: draft
 - public-access:: true
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: rb:SwarmRobotics
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 

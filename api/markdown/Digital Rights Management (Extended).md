@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO/IEC 21000 MPEG-21]], [[W3C Web DRM]]
 	- owl:class:: mv:DigitalRightsManagementExtended
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

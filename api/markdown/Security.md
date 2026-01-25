@@ -564,7 +564,6 @@ Model: Adversarial training, certified defenses
 *This definition emphasizes security as essential for AI trustworthiness, requiring protection against evolving threats throughout the AI lifecycle.*
 	- maturity:: draft
 	- owl:class:: mv:Security
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Security

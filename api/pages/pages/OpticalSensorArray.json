@@ -1,13 +1,13 @@
 {
   "id": "OpticalSensorArray",
   "title": "OpticalSensorArray",
-  "content": "- ### OntologyBlock\n  id:: OpticalSensorArray\n  - ontology:: true\n  - public-access:: true\n  - term-id:: RB-1001\n  - preferred-term:: OpticalSensorArray\n  - source-domain:: rb\n  - status:: complete\n  - definition:: A optical sensor array component in the Robotics domain that required by BiometricBindingMechanism.\n\n### Relationships\n- is-subclass-of:: [[Robotics]]\n  - owl:class:: rb:OpticalSensorArray",
+  "content": "- ### OntologyBlock\n  id:: OpticalSensorArray\n  - ontology:: true\n  - public-access:: true\n  - term-id:: RB-4000\n  - preferred-term:: OpticalSensorArray\n  - source-domain:: rb\n  - status:: complete\n  - definition:: A optical sensor array component in the Robotics domain that required by BiometricBindingMechanism.\n\n### Relationships\n- is-subclass-of:: [[Robotics]]\n  - owl:class:: rb:OpticalSensorArray",
   "backlinks": [],
   "wiki_links": [
     "Robotics"
   ],
   "ontology": {
-    "term_id": "RB-1001",
+    "term_id": "RB-4000",
     "preferred_term": "OpticalSensorArray",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/robotics#OpticalSensorArray",

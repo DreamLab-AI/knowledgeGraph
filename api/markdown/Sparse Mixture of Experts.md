@@ -54,7 +54,6 @@ Sparse MoE demonstrates that conditional computation through expert selection ca
 **Verification Status**: Verified against Shazeer et al. (2017)
 	- maturity:: draft
 	- owl:class:: mv:SparseMixtureofExperts
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Sparse Mixture of Experts

@@ -148,7 +148,6 @@ Mixed precision training democratised large model training by enabling 2× memor
 **Verification Status**: Verified against mixed precision training literature
 	- maturity:: draft
 	- owl:class:: mv:MixedPrecisionTraining
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Mixed Precision Training

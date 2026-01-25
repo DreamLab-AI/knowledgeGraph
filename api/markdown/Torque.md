@@ -13,7 +13,6 @@
 	- definition:: **Torque** - Rotational force about an axis
 	- maturity:: draft
 	- owl:class:: rb:Torque
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0043 torque

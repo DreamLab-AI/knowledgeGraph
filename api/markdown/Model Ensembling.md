@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0278
 	- preferred-term:: Model Ensembling
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: A technique that combines predictions from multiple independently trained models to improve overall performance and robustness. Ensembling leverages diversity among models to reduce variance, improve generalisation, and provide more reliable predictions.
 
@@ -52,9 +52,8 @@ Ensembling represents a fundamental machine learning principle that model divers
 **Verification Status**: Verified against ML literature
 	- maturity:: draft
 	- owl:class:: ai:ModelEnsembling
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Model Ensembling
 	- A technique that combines predictions from multiple independently trained models to improve overall performance and robustness. Ensembling leverages diversity among models to reduce variance, improve generalisation, and provide more reliable predictions.
 

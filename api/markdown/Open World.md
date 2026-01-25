@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[Game Design Patterns]], [[GDC]]
 	- owl:class:: mv:OpenWorld
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

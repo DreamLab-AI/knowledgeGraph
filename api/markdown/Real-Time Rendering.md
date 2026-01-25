@@ -11,7 +11,6 @@
 	- maturity:: reviewed
 	- belongsToDomain:: [[CreativeMediaDomain]], [[Technology Domain]], [[ETSI_Domain_Immersive_Experiences]]
 	- owl:class:: ngm:RealTimeRendering
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Technology
 
 ## Relationships

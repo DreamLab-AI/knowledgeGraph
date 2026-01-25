@@ -11,7 +11,6 @@
 **Feature Extraction** is the process of transforming raw data into a reduced set of meaningful features that capture essential information for machine learning tasks. Deep learning models automatically perform hierarchical feature extraction through multiple layers.
 	- maturity:: draft
 	- owl:class:: mv:FeatureExtraction
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Feature Extraction

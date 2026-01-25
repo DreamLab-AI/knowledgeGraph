@@ -65,7 +65,6 @@
 - **Maturity**: Widely deployed
 	- maturity:: draft
 	- owl:class:: mv:HealthcareAnalytics
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

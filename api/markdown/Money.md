@@ -5,33 +5,33 @@
     - ontology:: true
     - term-id:: DT-0002
     - preferred-term:: Money
-    - source-domain:: cross-domain
+    - source-domain:: tc
     - status:: complete
     - public-access:: true
-    - version:: 1.0.0
-    - last-updated:: 2025-11-05
+    - version:: 2.0.0
+    - last-updated:: 2025-11-14
+    - aliases:: [[Digital Currency]], [[Cryptocurrency]], [[CBDC]], [[Stablecoin]]
 
   - **Definition**
-    - definition:: A medium of exchange, unit of account, and store of value accepted within an economic system, encompassing physical currency, digital money, and virtual currency forms.
+    - definition:: A medium of exchange, unit of account, and store of value accepted within an economic system, encompassing physical currency, digital money, cryptocurrencies, and virtual currency forms that facilitate economic activity.
     - maturity:: mature
-    - source:: [[BIS]], [[IMF]], [[ISO 4217]], [[Bank of England]]
+    - source:: [[BIS]], [[IMF]], [[ISO 4217]], [[Bank of England]], [[Federal Reserve]]
     - authority-score:: 1.0
 
   - **Semantic Classification**
     - owl:class:: dt:Money
-    - owl:physicality:: HybridEntity
     - owl:role:: Object
     - owl:inferred-class:: dt:HybridObject
-    - belongsToDomain:: [[EconomicSystemDomain]], [[BlockchainDomain]], [[MetaverseDomain]]
-    - implementedInLayer:: [[EconomicLayer]]
+    - belongsToDomain:: [[EconomicSystemDomain]], [[BlockchainDomain]], [[DigitalFinanceDomain]]
+    - implementedInLayer:: [[EconomicLayer]], [[FinTechLayer]]
 
   - #### Relationships
     id:: money-relationships
     - is-part-of:: [[Value Transfer]]
-    - has-part:: [[Fiat Currency]], [[Cryptocurrency]], [[Central Bank Digital Currency]], [[Virtual Currency]], [[Digital Money]]
-    - enables:: [[Economic Exchange]], [[Price Discovery]], [[Savings]], [[Debt]]
-    - requires:: [[Trust]], [[Issuing Authority]], [[Acceptance Network]]
-    - implemented-by:: [[Cash]], [[Bank Deposit]], [[Electronic Money]], [[Stablecoin]]
+    - has-part:: [[Fiat Currency]], [[Cryptocurrency]], [[Central Bank Digital Currency]], [[Stablecoin]], [[Digital Money]]
+    - enables:: [[Economic Exchange]], [[Price Discovery]], [[Savings]], [[Debt]], [[Cross-Border Payments]]
+    - requires:: [[Trust]], [[Issuing Authority]], [[Acceptance Network]], [[Liquidity]]
+    - implemented-by:: [[Cash]], [[Bank Deposit]], [[Electronic Money]], [[Stablecoin]], [[Bitcoin]]
 
   - #### OWL Axioms
     id:: money-owl-axioms
@@ -577,39 +577,6 @@ public:: true
 		- There are concerns that the shift to digital currencies could leave behind those without access to necessarytechnology, contributing to financial exclusion rather than mitigating it.
 	- In conclusion, the risks associated with CBDCs are significant and multi-faceted. It is (hopefully) more likely that a blend of stablecoins, private bank issued digital currency (with a yield incentive) and perhaps some limited CBDC, alongside the new contenderBitcoin, will present a new landscape of user choice. Different modelsof trust, insurance, yields, acceptability, and potentially privacy,will emerge.
 	- Clearly a global, stable, wholly digital bearer asset in a native currency would ostensibly be the ideal integration for money in a metaverse application, but the whole concept seems deeply ‘wrong’, and it is likely that a transition to such a technology would be complex and painful. Either way, it is certainly not ready for consideration now.It’s important that central banks and governments carefully consider these risks before introducing CBDCs, but it’s not clear this is happening. It is conceivable that by working closely with the private sector policy makers could minimize any negative impacts, ensuring that any new regulations are designed in a way that protects the rights andprivacy of individuals, while also promoting financial stability andeconomic growth. Gerard, an incredibly staunch critic of all things crypto [points to woeful adoption and manifestcorruption](https://davidgerard.co.uk/blockchain/2023/02/28/news-blockchain-mep-eva-kaili-corruption-arrest-nigerian-cbdc-rewrite-bbc-blockchain-misadventures/)in the attempts so far. We are not particularly hopeful either.
-
-- **Identification**
-    - ontology:: true
-    - term-id:: DT-0002
-    - preferred-term:: Money
-    - source-domain:: cross-domain
-    - status:: complete
-    - public-access:: true
-    - version:: 2.0.0
-    - last-updated:: 2025-11-14
-    - aliases:: [[Digital Currency]], [[Cryptocurrency]], [[CBDC]], [[Stablecoin]]
-
-  - **Definition**
-    - definition:: A medium of exchange, unit of account, and store of value accepted within an economic system, encompassing physical currency, digital money, cryptocurrencies, and virtual currency forms that facilitate economic activity.
-    - maturity:: mature
-    - source:: [[BIS]], [[IMF]], [[ISO 4217]], [[Bank of England]], [[Federal Reserve]]
-    - authority-score:: 1.0
-
-  - **Semantic Classification**
-    - owl:class:: dt:Money
-    - owl:physicality:: HybridEntity
-    - owl:role:: Object
-    - owl:inferred-class:: dt:HybridObject
-    - belongsToDomain:: [[EconomicSystemDomain]], [[BlockchainDomain]], [[DigitalFinanceDomain]]
-    - implementedInLayer:: [[EconomicLayer]], [[FinTechLayer]]
-
-  - #### Relationships
-    id:: money-relationships
-    - is-part-of:: [[Value Transfer]]
-    - has-part:: [[Fiat Currency]], [[Cryptocurrency]], [[Central Bank Digital Currency]], [[Stablecoin]], [[Digital Money]]
-    - enables:: [[Economic Exchange]], [[Price Discovery]], [[Savings]], [[Debt]], [[Cross-Border Payments]]
-    - requires:: [[Trust]], [[Issuing Authority]], [[Acceptance Network]], [[Liquidity]]
-    - implemented-by:: [[Cash]], [[Bank Deposit]], [[Electronic Money]], [[Stablecoin]], [[Bitcoin]]
 
 - ## Money: Functions and Forms
 

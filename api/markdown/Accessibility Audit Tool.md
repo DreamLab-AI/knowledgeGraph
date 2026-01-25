@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[W3C XR Accessibility User Requirements]]
 	- owl:class:: mv:AccessibilityAuditTool
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

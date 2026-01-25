@@ -1,21 +1,22 @@
 {
   "id": "AIDomain",
   "title": "AIDomain",
-  "content": "- ### OntologyBlock\n  id:: aidomain-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-7017\n\t- preferred-term:: AIDomain\n\t- source-domain:: ai\n\t- status:: active\n\t- public-access:: true\n\t- definition:: The abbreviated reference for the Artificial Intelligence Domain, serving as a top-level ontological classification for all AI-related concepts including methods, systems, applications, and governance frameworks within the knowledge graph.\n\t- maturity:: stable\n\t- owl:class:: ai:AiDomain\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Domain\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: aidomain-relationships\n\t  collapsed:: true\n\t\t- owl:equivalentClass:: [[ArtificialIntelligenceDomain]]\n\t\t- is-subclass-of:: [[Technology Domain]]\n\t\t  collapsed:: true\n\t\t  - #### Subdomains (Inferred by Reasoner)\n\t\t    - Machine Learning is-subdomain-of AIDomain\n\t\t    - Deep Learning is-subdomain-of AIDomain\n\t\t    - Natural Language Processing is-subdomain-of AIDomain\n\t\t    - Computer Vision is-subdomain-of AIDomain\n\t\t    - AI Governance is-subdomain-of AIDomain\n\t\t- bridges-to:: [[Blockchain Technology]] (via AI-BC integration)\n\t\t- bridges-to:: [[Metaverse Technology]] (via AI avatars)\n\t\t- bridges-to:: [[Telecollaboration]] (via AI assistants)\n\t\t- bridges-to:: [[Robotics Systems]] (via robot learning)\n\n## Definition\n\n**AIDomain** serves as the compact namespace identifier for the Artificial Intelligence domain within the ontology. It is semantically equivalent to [[ArtificialIntelligenceDomain]] and serves as a convenient reference for domain membership assertions.\n\n## Namespace Purpose\n\nThis abbreviated domain identifier:\n- Enables concise `belongsToDomain::` assertions\n- Provides namespace prefix for AI concept identifiers\n- Supports cross-domain bridge declarations\n- Facilitates ontology import/export operations\n\n## Domain Scope\n\nThe AIDomain encompasses:\n1. **Core AI Methods**: Machine learning, deep learning, reinforcement learning\n2. **AI Subfields**: NLP, computer vision, robotics, expert systems\n3. **AI Systems**: Models, architectures, frameworks, tools\n4. **AI Governance**: Ethics, policy, regulation, standards\n5. **AI Applications**: Deployed systems across industry verticals\n\n## Usage Pattern\n\n```turtle\n@prefix ai: <http://narrativegoldmine.com/ai#> .\n\nai:SomeAIConcept a owl:Class ;\n    skos:broader ai:AIDomain ;\n    ngm:belongsToDomain ai:AIDomain .\n```\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from stub\n- **Authority Score**: 0.90\n- **References**: 6 pages reference this concept",
+  "content": "- ### OntologyBlock\n  id:: aidomain-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-7017\n\t- preferred-term:: AIDomain\n\t- source-domain:: ai\n\t- status:: active\n\t- public-access:: true\n\t- definition:: The abbreviated reference for the Artificial Intelligence Domain, serving as a top-level ontological classification for all AI-related concepts including methods, systems, applications, and governance frameworks within the knowledge graph.\n\t- maturity:: stable\n\t- owl:class:: ai:AiDomain\n\t- owl:role:: Domain\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: aidomain-relationships\n\t  collapsed:: true\n\t\t- owl:equivalentClass:: [[ArtificialIntelligenceDomain]]\n\t\t- is-subclass-of:: [[Technology Domain]]\n\t\t  collapsed:: true\n\t\t  - #### Subdomains (Inferred by Reasoner)\n\t\t    - Machine Learning is-subdomain-of AIDomain\n\t\t    - Deep Learning is-subdomain-of AIDomain\n\t\t    - Natural Language Processing is-subdomain-of AIDomain\n\t\t    - Computer Vision is-subdomain-of AIDomain\n\t\t    - AI Governance is-subdomain-of AIDomain\n\t\t- bridges-to:: [[Blockchain Technology]] (via AI-BC integration)\n\t\t- bridges-to:: [[Metaverse Technology]] (via AI avatars)\n\t\t- bridges-to:: [[Telecollaboration]] (via AI assistants)\n\t\t- bridges-to:: [[Robotics Systems]] (via robot learning)\n\n## Definition\n\n**AIDomain** serves as the compact namespace identifier for the Artificial Intelligence domain within the ontology. It is semantically equivalent to [[ArtificialIntelligenceDomain]] and serves as a convenient reference for domain membership assertions.\n\n## Namespace Purpose\n\nThis abbreviated domain identifier:\n- Enables concise `belongsToDomain::` assertions\n- Provides namespace prefix for AI concept identifiers\n- Supports cross-domain bridge declarations\n- Facilitates ontology import/export operations\n\n## Domain Scope\n\nThe AIDomain encompasses:\n1. **Core AI Methods**: Machine learning, deep learning, reinforcement learning\n2. **AI Subfields**: NLP, computer vision, robotics, expert systems\n3. **AI Systems**: Models, architectures, frameworks, tools\n4. **AI Governance**: Ethics, policy, regulation, standards\n5. **AI Applications**: Deployed systems across industry verticals\n\n## Usage Pattern\n\n```turtle\n@prefix ai: <http://narrativegoldmine.com/ai#> .\n\nai:SomeAIConcept a owl:Class ;\n    skos:broader ai:AIDomain ;\n    ngm:belongsToDomain ai:AIDomain .\n```\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from stub\n- **Authority Score**: 0.90\n- **References**: 6 pages reference this concept",
   "backlinks": [
     "Virtual Production",
     "Transformers",
+    "RobotLearning",
     "ArtificialIntelligenceDomain",
     "Upscaling"
   ],
   "wiki_links": [
-    "ArtificialIntelligenceDomain",
     "Metaverse Technology",
     "Robotics Systems",
-    "Technology Domain",
     "Blockchain Technology",
     "Artificial Intelligence",
-    "Telecollaboration"
+    "ArtificialIntelligenceDomain",
+    "Telecollaboration",
+    "Technology Domain"
   ],
   "ontology": {
     "term_id": "AI-7017",
@@ -36,7 +37,7 @@
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "ai:AiDomain",
-    "owl_physicality": "ConceptualEntity",
+    "owl_physicality": null,
     "owl_role": "Domain",
     "owl_inferred_class": null,
     "is_subclass_of": [
@@ -59,7 +60,8 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: last-updated"
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality"
       ]
     }
   }

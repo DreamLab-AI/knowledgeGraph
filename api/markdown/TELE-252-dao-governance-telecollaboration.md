@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "The application of decentralised autonomous organisation (DAO) governance mechanisms—token-weighted voting, proposal systems, treasury management—to coordinate geographically distributed teams through on-chain decision-making, enabling democratic, transparent collaboration without centralised management or hierarchical authority structures."
 	- maturity:: developing
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Process
 	- is-subclass-of:: [[Blockchain Technology]]
 

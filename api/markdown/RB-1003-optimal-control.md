@@ -18,7 +18,6 @@
 
 - **Semantic Classification**
   - owl:class:: rb:OptimalControl
-  - owl:physicality:: Abstract
   - owl:role:: Method
   - belongsToDomain:: [[Robotics]], [[Control Theory]], [[Optimization]]
 
@@ -85,3 +84,6 @@
   - authority-score:: 0.96
   - completeness:: 0.92
   - accuracy:: 0.94
+
+
+<!-- Merged from Optimal Control.md: RoboticsDomain -->

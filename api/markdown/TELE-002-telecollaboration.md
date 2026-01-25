@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "The process of individuals or groups working together towards shared goals across geographical distances through technology-mediated communication and coordination tools, integrating synchronous and asynchronous interaction modalities to achieve collaborative outcomes comparable to or exceeding co-located teamwork."
 	- maturity:: mature
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Process
 	- #### Relationships
 	  id:: telecollaboration-relationships

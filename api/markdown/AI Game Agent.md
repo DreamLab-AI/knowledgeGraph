@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: ai:AIGameAgent
-    - owl:physicality:: VirtualEntity
     - owl:role:: Agent
     - owl:inferred-class:: ai:VirtualAgent
     - belongsToDomain:: [[AI-GroundedDomain]], [[InteractionDomain]], [[CreativeMediaDomain]]

@@ -10,7 +10,6 @@
 	- definition:: A cross-cutting domain encompassing AI-enabled creative content generation, including generative art, synthetic media, procedural content creation, AI-assisted design, computational creativity, and the intersection of artificial intelligence with artistic and media production workflows.
 	- maturity:: stable
 	- owl:class:: ai:CreativeMediaDomain
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Domain
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships

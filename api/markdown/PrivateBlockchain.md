@@ -2,21 +2,7 @@
   id:: privateblockchain-ontology
   collapsed:: true
 	- ontology:: true
-- term-id:: mv-1761742247958
-	- preferred-term:: PrivateBlockchain
-	- source-domain:: mv
-	- status:: draft
-	- definition:: A component of the metaverse ecosystem.
-	- maturity:: draft
-	- owl:class:: mv:PrivateBlockchain
-	- owl:physicality:: ConceptualEntity
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-- ## About PrivateBlockchain
-	- A component of the metaverse ecosystem.
-	-
-
-- term-id:: PRIV-BC-001
+	- term-id:: BC-3050
 	- preferred-term:: PrivateBlockchain
 	- source-domain:: bc
 	- status:: active
@@ -24,9 +10,26 @@
 	- definition:: A permissioned [[Blockchain]] network where access, participation, and validation rights are restricted to authorized entities, typically used in enterprise and consortium settings with controlled governance and enhanced privacy.
 	- maturity:: production-ready
 	- owl:class:: bc:PrivateBlockchain
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: TechnologyArchetype
 	- belongsToDomain:: [[BlockchainDomain]]
+
+## OWL Formal Semantics
+
+```clojure
+;; OWL Functional Syntax
+
+(Declaration (Class :PrivateBlockchain))
+
+;; Annotations
+(AnnotationAssertion rdfs:label :PrivateBlockchain "PrivateBlockchain"@en)
+(AnnotationAssertion rdfs:comment :PrivateBlockchain "A permissioned Blockchain network where access, participation, and validation rights are restricted to authorized entities, typically used in enterprise and consortium settings with controlled governance and enhanced privacy."@en)
+
+;; Data Properties
+(AnnotationAssertion dcterms:identifier :PrivateBlockchain "BC-3050"^^xsd:string)
+
+;; SubClass relationships
+(SubClassOf :PrivateBlockchain :Blockchain)
+```
 - ## About PrivateBlockchain
 	- A **private blockchain** is a permissioned [[distributed ledger]] technology where network access, transaction validation, and data visibility are restricted to authorized participants, offering enterprises enhanced privacy, control, and performance compared to [[PublicBlockchain]] networks.
 	- Unlike [[PublicBlockchain]] systems that enable open participation, private blockchains implement strict [[AccessControl]] mechanisms through [[IdentityManagement]] systems, [[KYC]] (Know Your Customer) verification, and role-based permissions.
@@ -251,153 +254,6 @@
 			- **[[HSBC]] Trade Finance**: Expanded blockchain platform processing $350+ billion in trade finance across 90 countries.
 			- **[[Walmart]] Canada Freight Invoicing**: Automated freight invoice reconciliation processing 500,000+ shipments monthly.
 			- **[[DeutscheBank]] Securities Settlement**: Blockchain-based settlement reducing time from T+2 to real-time for digital securities.
-	- ### Original Content
-	  collapsed:: true
-		- ```
-# Private Blockchain
-## Definition
-		  A permissioned blockchain network where access, participation, and validation rights are restricted to authorized entities, typically used in enterprise and consortium settings.
-		  
-		  ## OWL Functional Syntax
-		  
-		  ```owl
-		  Declaration(Class(:PrivateBlockchain))
-		  SubClassOf(:PrivateBlockchain :Blockchain)
-
-## Definition
-		  A permissioned blockchain network where access, participation, and validation rights are restricted to authorized entities, typically used in enterprise and consortium settings.
-
-		  ## OWL Functional Syntax
-
-		  ```owl
-		  Declaration(Class(:PrivateBlockchain))
-		  SubClassOf(:PrivateBlockchain :Blockchain)
-		  # Defining characteristics
-		  EquivalentClasses(:PrivateBlockchain
-		    ObjectIntersectionOf(:Blockchain
-		      ObjectSomeValuesFrom(:hasAccessControl :RestrictedAccess)
-		      ObjectSomeValuesFrom(:hasConsensus :PermissionedConsensus)
-		      ObjectAllValuesFrom(:allowsParticipation :AuthorizedParticipation)))
-# Must have access control
-		  SubClassOf(:PrivateBlockchain
-		    ObjectSomeValuesFrom(:hasAccessControl :RestrictedAccess))
-		  
-		  # Must use permissioned consensus
-		  SubClassOf(:PrivateBlockchain
-		    ObjectSomeValuesFrom(:hasConsensus :PermissionedConsensus))
-		  
-		  # Requires identity management
-		  SubClassOf(:PrivateBlockchain
-		    ObjectSomeValuesFrom(:implementsIdentity :IdentityManagementSystem))
-		  
-		  # Must have governance body
-		  SubClassOf(:PrivateBlockchain
-		    ObjectSomeValuesFrom(:governedBy :CentralAuthority))
-
-# Must have access control
-		  SubClassOf(:PrivateBlockchain
-		    ObjectSomeValuesFrom(:hasAccessControl :RestrictedAccess))
-
-		  # Must use permissioned consensus
-		  SubClassOf(:PrivateBlockchain
-		    ObjectSomeValuesFrom(:hasConsensus :PermissionedConsensus))
-
-		  # Requires identity management
-		  SubClassOf(:PrivateBlockchain
-		    ObjectSomeValuesFrom(:implementsIdentity :IdentityManagementSystem))
-
-		  # Must have governance body
-		  SubClassOf(:PrivateBlockchain
-		    ObjectSomeValuesFrom(:governedBy :CentralAuthority))
-		  # Data constraints
-		  SubClassOf(:PrivateBlockchain
-		    DataHasValue(:permissionless "false"^^xsd:boolean))
-		  SubClassOf(:PrivateBlockchain
-		    DataSomeValuesFrom(:maximumNodeCount
-		      DatatypeRestriction(xsd:integer
-		        xsd:maxInclusive "1000"^^xsd:integer)))
-# Disjoint with public
-		  DisjointClasses(:PrivateBlockchain :PublicBlockchain)
-		  ```
-		  
-		  ## Properties
-
-# Disjoint with public
-		  DisjointClasses(:PrivateBlockchain :PublicBlockchain)
-		  ```
-
-		  ## Properties
-		  ### Object Properties
-		  - **hasAccessControl**: PrivateBlockchain → RestrictedAccess (required, functional)
-		  - **hasConsensus**: PrivateBlockchain → PermissionedConsensus (required)
-		  - **implementsIdentity**: PrivateBlockchain → IdentityManagementSystem (required)
-		  - **governedBy**: PrivateBlockchain → CentralAuthority (required, 1..*)
-		  - **allowsParticipation**: PrivateBlockchain → AuthorizedParticipation (required)
-		  - **hasPrivacyLevel**: PrivateBlockchain → PrivacyLevel (required)
-		  ### Data Properties
-		  - **permissionless**: xsd:boolean (always false)
-		  - **maximumNodeCount**: xsd:integer (typically < 1000)
-		  - **requiresKYC**: xsd:boolean
-		  - **averageConfirmationTime**: xsd:decimal (usually faster, < 5 seconds)
-		  - **transactionThroughput**: xsd:decimal (typically > public blockchains)
-		  - **complianceEnabled**: xsd:boolean
-## Axioms
-
-## Axioms
-		  ```owl
-		  # Private blockchains with compliance must have audit trails
-		  SubClassOf(
-		    ObjectIntersectionOf(:PrivateBlockchain
-		      DataHasValue(:complianceEnabled "true"^^xsd:boolean))
-		    ObjectSomeValuesFrom(:maintainsAuditTrail :AuditLog))
-# All private blockchains must implement privacy controls
-		  SubClassOf(:PrivateBlockchain
-		    ObjectSomeValuesFrom(:implementsPrivacy :PrivacyMechanism))
-
-# All private blockchains must implement privacy controls
-		  SubClassOf(:PrivateBlockchain
-		    ObjectSomeValuesFrom(:implementsPrivacy :PrivacyMechanism))
-		  # Functional property - exactly one governance body
-		  FunctionalObjectProperty(:governedBy)
-		  ObjectPropertyDomain(:governedBy :PrivateBlockchain)
-		  ObjectPropertyRange(:governedBy :CentralAuthority)
-		  ```
-## Inference Rules
-
-## Inference Rules
-		  ```sparql
-		  # Rule: Private blockchain with KYC implies enterprise use
-		  [EnterpriseBlockchain:
-		    (?pb rdf:type :PrivateBlockchain)
-		    (?pb :requiresKYC "true"^^xsd:boolean)
-		    ->
-		    (?pb rdf:type :EnterpriseBlockchain)
-		  ]
-		  # Rule: High throughput with low latency implies optimized consensus
-		  [OptimizedConsensus:
-		    (?pb rdf:type :PrivateBlockchain)
-		    (?pb :transactionThroughput ?tps)
-		    (?pb :averageConfirmationTime ?time)
-		    greaterThan(?tps, 1000)
-		    lessThan(?time, 1)
-		    ->
-		    (?pb :hasConsensus :OptimizedBFT)
-		  ]
-		  ```
-		  ## Examples
-		  - Hyperledger Fabric
-		  - R3 Corda
-		  - JPM Coin (Quorum)
-		  - IBM Food Trust
-		  ## Related Terms
-		  - PermissionedConsensus
-		  - IdentityManagement
-		  - AccessControl
-		  - EnterpriseBlockchain
-		  - ConsortiumBlockchain
-```
-
-```
 ## Academic Context
 	- Private blockchains are permissioned [[distributed ledger]] systems that restrict participation to authorized entities, contrasting with [[PublicBlockchain]] systems open to anyone with internet access.
 	- They are grounded in [[DistributedSystems]] theory, [[Byzantine Fault Tolerance]] research, and cryptographic principles ensuring data integrity, privacy, and consensus within controlled network environments.

@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[W3C OWL 2]], [[W3C RDF Schema]], [[ISO IEC 21838 Top Level Ontology]]
 	- owl:class:: mv:MetaverseOntologySchema
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

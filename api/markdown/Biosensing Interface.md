@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO 9241-960]], [[IEEE P2733]]
 	- owl:class:: mv:BiosensingInterface
-	- owl:physicality:: PhysicalEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:PhysicalObject
 	- owl:functional-syntax:: true

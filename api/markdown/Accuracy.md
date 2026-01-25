@@ -236,7 +236,6 @@ Despite these limitations, accuracy remains valuable as one component of compreh
 - [[Specificity]]
 	- maturity:: draft
 	- owl:class:: mv:Accuracy
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

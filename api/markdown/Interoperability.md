@@ -12,7 +12,6 @@
 ---
 	- maturity:: draft
 	- owl:class:: mv:Interoperability
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Interoperability

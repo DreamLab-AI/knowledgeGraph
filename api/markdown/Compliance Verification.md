@@ -10,7 +10,6 @@
 	- definition:: Compliance verification in blockchain contexts encompasses the automated and manual processes for ensuring that cryptoasset transactions, service providers, and participants adhere to regulatory requirements including Know Your Customer (KYC), Anti-Money Laundering (AML), sanctions screening, and transaction monitoring obligations. Blockchain-based compliance systems leverage immutable ledgers, smart contracts, and AI-driven analytics to maintain tamper-proof records and detect suspicious activities in real-time.
 	- maturity:: reviewed
 	- owl:class:: ngm:ComplianceVerification
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Blockchain]]
 

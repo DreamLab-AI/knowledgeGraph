@@ -2,7 +2,7 @@
   id:: federatedlearning-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247927
+	- term-id:: MV-3006
 	- preferred-term:: FederatedLearning
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:FederatedLearning
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 
@@ -46,11 +45,11 @@
 		    - **TRL:** 7
 		    - **Quality Score:** 0.91
 		    - ```turtle
-		      aigo:FederatedLearning rdf:type owl:Class ;
+		      ai:FederatedLearning rdf:type owl:Class ;
 		          rdfs:label "Federated Learning"@en ;
 		          rdfs:comment "Distributed machine learning approach where models are trained across decentralized devices holding local data samples, without exchanging data."@en ;
-		          rdfs:subClassOf aigo:DistributedLearning ;
-		          meta:sourceOntology "aigo:" ;
+		          rdfs:subClassOf ai:DistributedLearning ;
+		          meta:sourceOntology "ai:" ;
 		          meta:technologyDomain "artificial-intelligence" ;
 		          meta:disruptiveTechCategory "artificial-intelligence-systems" ;
 		          meta:technologyReadinessLevel "7"^^xsd:integer ;

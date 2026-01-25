@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0002
 	- preferred-term:: Machine Learning
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: ### Primary Definition
@@ -372,8 +372,8 @@ sentiment_analyser:
 
 ## VisioningLab Crosswalk
 
-**VisioningLab Property**: ml:machineLearning
-**URI Mapping**: http://www.visioninglab.com/ontology/ml#MachineLearning
+**VisioningLab Property**: ai:machineLearning
+**URI Mapping**: http://www.visioninglab.com/ontology/ai#MachineLearning
 **Transformation Notes**: Core ML concept mapping to VisioningLab AI ontology
 
 ---
@@ -383,9 +383,8 @@ sentiment_analyser:
 **Authority Score**: 0.95 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST ✓ EU AI Act ✓ OECD
 	- maturity:: draft
 	- owl:class:: ai:MachineLearning
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Machine Learning
 	- ### Primary Definition
 Machine learning (ML) is a process that enables computational systems to understand data and gain knowledge from experience without being explicitly programmed. Machine learning systems improve their performance through exposure to data and learn patterns to make predictions or decisions based on statistical patterns in the data.
@@ -1279,8 +1278,8 @@ sentiment_analyser:
 
 ## VisioningLab Crosswalk
 
-**VisioningLab Property**: ml:machineLearning
-**URI Mapping**: http://www.visioninglab.com/ontology/ml#MachineLearning
+**VisioningLab Property**: ai:machineLearning
+**URI Mapping**: http://www.visioninglab.com/ontology/ai#MachineLearning
 **Transformation Notes**: Core ML concept mapping to VisioningLab AI ontology
 
 ---
@@ -1700,9 +1699,9 @@ The second half of 2024 saw growing interest in **agentic AI** models capable of
 		  | 1.0 | 2025-10-27 | Initial definition from ISO/IEC 22989:2022 | Priority 1 Writer Agent |
 		  
 		  ## VisioningLab Crosswalk
-		  
-		  **VisioningLab Property**: ml:machineLearning
-		  **URI Mapping**: http://www.visioninglab.com/ontology/ml#MachineLearning
+
+		  **VisioningLab Property**: ai:machineLearning
+		  **URI Mapping**: http://www.visioninglab.com/ontology/ai#MachineLearning
 		  **Transformation Notes**: Core ML concept mapping to VisioningLab AI ontology
 		  
 		  ---
@@ -1791,3 +1790,6 @@ The second half of 2024 saw growing interest in **agentic AI** models capable of
 5. Hripcsak, G. & Albers, D. J. (2020). Ontologies, Knowledge Representation, and Machine Learning for Clinical Research. Yearbook of Medical Informatics, 29(1), 159-162. DOI: 10.1055/s-0040-1701991
 
 6. National Institute of Standards and Technology (NIST). An Introduction to Machine Learning Lifecycle Ontology and its Applications. Available at: https://www.nist.gov/publications/introduction-machine-learning-lifecycle-ontology-and-its-applications
+
+
+<!-- Merged from MachineLearning.md: MetaverseDomain -->

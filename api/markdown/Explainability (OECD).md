@@ -199,8 +199,7 @@ Effective explanations consider:
 *Part of AI Grounded Ontology - OECD AI Principles Framework*
 *Aligned with OECD AI Principles 2024, GDPR and EU AI Act requirements*
 	- maturity:: draft
-	- owl:class:: mv:Explainability(OECD)
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: mv:ExplainabilityOECD
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Explainability (OECD)

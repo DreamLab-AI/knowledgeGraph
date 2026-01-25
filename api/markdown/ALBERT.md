@@ -89,7 +89,6 @@ ALBERT demonstrates that parameter sharing and factorised embeddings can dramati
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:ALBERT
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About ALBERT

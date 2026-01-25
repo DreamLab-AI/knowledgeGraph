@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ETSI GR ARF 010]], [[Siemens Industrial Metaverse]]
 	- owl:class:: mv:DigitalTwinOfSociety
-	- owl:physicality:: HybridEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:HybridObject
 	- owl:functional-syntax:: true

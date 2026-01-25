@@ -72,7 +72,6 @@
 - **Maturity**: Production use
 	- maturity:: draft
 	- owl:class:: mv:InstanceSegmentation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

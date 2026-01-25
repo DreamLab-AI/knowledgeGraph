@@ -117,7 +117,6 @@ Continued pre-training enables effective domain specialisation whilst maintainin
 **Verification Status**: Verified against transfer learning survey (2024)
 	- maturity:: draft
 	- owl:class:: mv:ContinuedPreTraining
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Continued Pre Training

@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "The use of blockchain distributed ledger technology, smart contracts, and cryptocurrency systems to coordinate, govern, and compensate geographically distributed teams, enabling trustless collaboration through cryptographic verification, automated enforcement of agreements, and transparent record-keeping without centralised intermediaries."
 	- maturity:: developing
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Process
 	- #### Relationships
 	  id:: blockchain-collaboration-relationships

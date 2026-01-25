@@ -11,7 +11,6 @@
 **Underfitting** occurs when a model is too simple to capture the underlying patterns in the training data, resulting in poor performance on both training and test data. Underfitted models have insufficient capacity or training.
 	- maturity:: draft
 	- owl:class:: mv:Underfitting
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Underfitting

@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "Virtual representations of human users generated and animated by artificial intelligence systems, employing machine learning models to synthesise photorealistic appearance, facial expressions, body movements, and speech from sensor inputs or user intentions, enabling realistic telepresence without explicit keyframe animation."
 	- maturity:: developing
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Agent
 	- #### Relationships
 	  id:: ai-avatars-relationships

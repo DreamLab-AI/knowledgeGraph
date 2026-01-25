@@ -1,7 +1,7 @@
 {
   "id": "UKTechEcosystem",
   "title": "UK Tech Ecosystem",
-  "content": "- ### OntologyBlock\n  id:: uktechecosystem-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-8101\n\t- preferred-term:: UK Tech Ecosystem\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: The United Kingdom's technology industry landscape, ranked as Europe's leading tech ecosystem with a combined market valuation of $1.2 trillion and over 17,000 VC-backed startups. The UK is the third largest AI market globally (after US and China), valued at $92 billion in 2024, with 185+ unicorns, 3,700+ AI companies employing 60,000+ people, and $16.2 billion VC raised in 2024. Key hubs include London (1,603 AI startups, 14 unicorns) and Cambridge (world's most intensive science cluster, $222bn valuation). Despite startup creation strengths, the ecosystem faces challenges retaining scale-ups, with 43% of founders considering US relocation.\n\t- maturity:: reviewed\n\t- owl:class:: domain:TechnologyEcosystem\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: IndustryEcosystem\n\t- belongsToDomain:: [[Technology]], [[Economic Development]], [[Innovation]]\n\n### Relationships\n- is-subclass-of:: [[Technology Industry]]\n- related-to:: [[Artificial Intelligence]], [[Venture Capital]], [[Startup Ecosystem]]\n- enables:: [[AI Development]], [[Digital Innovation]], [[Tech Entrepreneurship]]\n- has-component:: [[London Tech Hub]], [[Cambridge Tech Cluster]], [[UK AI Sector]]\n\n## Market Overview\n\n### Market Size and Valuation\n- UK technology market: **$1.30 trillion** (2024), projected **$2.80 trillion** by 2033 (7.6% CAGR)\n- Combined tech ecosystem valuation: **$1.2 trillion**\n- Growth rate: **12.5% CAGR**, outpacing European peers\n- Larger than France and Germany combined\n\n### AI Sector\n- UK AI market: **$92 billion** (2024) - largest in Europe\n- Third largest globally after US and China\n- **3,700+ AI companies** employing **60,000+ people**\n- Contributing **GBP 3.7 billion** to the economy\n\n## Investment and Unicorns\n\n### Venture Capital\n- **$16.2 billion** raised in 2024 (largest VC market in Europe)\n- Almost double France ($8.6bn) and Germany ($8.2bn)\n- **$7 billion** raised in H1 2025, strongest Q1 in three years\n\n### AI Investment\n- **$4.3 billion** raised by UK AI startups in 2024 (second-highest annual total)\n- Generative AI investment tripled 2020-2024: $156M to $499M (excluding Wayve's $1.05bn)\n\n### Unicorns\n- **185+ unicorns** created (first in Europe, third globally)\n- **23 AI unicorns** to date\n- Average time to unicorn status: **4.8 years** (faster than ever)\n- 2024 new AI unicorns: Wayve, ElevenLabs, Flo Health\n- **45 AI soonicorns** on track (raised $5.3bn collectively)\n\n## Regional Distribution\n\n### London\n- **1,603 AI startups**, 33 soonicorns, 14 unicorns\n- **$3.6 billion** AI investment in 2024\n- **71%** of total UK AI funding (past five years)\n\n### Cambridge\n- World's most intensive science and technology cluster\n- Ecosystem valued at **$222 billion** (18% of UK tech)\n- Second globally for unicorns per capita (after Bay Area)\n\n## Challenges\n- 3 in 4 founders cite access to growth capital as biggest barrier\n- 1 in 3 cite talent constraints\n- **43%** considering relocating HQs overseas (primarily US)\n- Difficulty retaining scale-ups (e.g., Wayve, Darktrace, DeepMind turning to US)\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Research-enriched with 2024-2025 market data\n- **Sources**: [Tech Nation UK AI Sector Spotlight 2025](https://technation.io/wp-content/uploads/2025/04/The-Tech-Nation-UK-AI-Sector-Spotlight-2025.pdf), [IMARC UK Technology Market Report](https://www.imarcgroup.com/uk-technology-market), [TechFundingNews](https://techfundingnews.com/2b-raised-ranking-the-biggest-uk-ai-deals-in-2025/)\n- **References**: 6+ pages reference this concept",
+  "content": "- ### OntologyBlock\n  id:: uktechecosystem-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-8101\n\t- preferred-term:: UK Tech Ecosystem\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: The United Kingdom's technology industry landscape, ranked as Europe's leading tech ecosystem with a combined market valuation of $1.2 trillion and over 17,000 VC-backed startups. The UK is the third largest AI market globally (after US and China), valued at $92 billion in 2024, with 185+ unicorns, 3,700+ AI companies employing 60,000+ people, and $16.2 billion VC raised in 2024. Key hubs include London (1,603 AI startups, 14 unicorns) and Cambridge (world's most intensive science cluster, $222bn valuation). Despite startup creation strengths, the ecosystem faces challenges retaining scale-ups, with 43% of founders considering US relocation.\n\t- maturity:: reviewed\n\t- owl:class:: ngm:TechnologyEcosystem\n\t- owl:role:: IndustryEcosystem\n\t- belongsToDomain:: [[Technology]], [[Economic Development]], [[Innovation]]\n\n### Relationships\n- is-subclass-of:: [[Technology Industry]]\n- related-to:: [[Artificial Intelligence]], [[Venture Capital]], [[Startup Ecosystem]]\n- enables:: [[AI Development]], [[Digital Innovation]], [[Tech Entrepreneurship]]\n- has-component:: [[London Tech Hub]], [[Cambridge Tech Cluster]], [[UK AI Sector]]\n\n## Market Overview\n\n### Market Size and Valuation\n- UK technology market: **$1.30 trillion** (2024), projected **$2.80 trillion** by 2033 (7.6% CAGR)\n- Combined tech ecosystem valuation: **$1.2 trillion**\n- Growth rate: **12.5% CAGR**, outpacing European peers\n- Larger than France and Germany combined\n\n### AI Sector\n- UK AI market: **$92 billion** (2024) - largest in Europe\n- Third largest globally after US and China\n- **3,700+ AI companies** employing **60,000+ people**\n- Contributing **GBP 3.7 billion** to the economy\n\n## Investment and Unicorns\n\n### Venture Capital\n- **$16.2 billion** raised in 2024 (largest VC market in Europe)\n- Almost double France ($8.6bn) and Germany ($8.2bn)\n- **$7 billion** raised in H1 2025, strongest Q1 in three years\n\n### AI Investment\n- **$4.3 billion** raised by UK AI startups in 2024 (second-highest annual total)\n- Generative AI investment tripled 2020-2024: $156M to $499M (excluding Wayve's $1.05bn)\n\n### Unicorns\n- **185+ unicorns** created (first in Europe, third globally)\n- **23 AI unicorns** to date\n- Average time to unicorn status: **4.8 years** (faster than ever)\n- 2024 new AI unicorns: Wayve, ElevenLabs, Flo Health\n- **45 AI soonicorns** on track (raised $5.3bn collectively)\n\n## Regional Distribution\n\n### London\n- **1,603 AI startups**, 33 soonicorns, 14 unicorns\n- **$3.6 billion** AI investment in 2024\n- **71%** of total UK AI funding (past five years)\n\n### Cambridge\n- World's most intensive science and technology cluster\n- Ecosystem valued at **$222 billion** (18% of UK tech)\n- Second globally for unicorns per capita (after Bay Area)\n\n## Challenges\n- 3 in 4 founders cite access to growth capital as biggest barrier\n- 1 in 3 cite talent constraints\n- **43%** considering relocating HQs overseas (primarily US)\n- Difficulty retaining scale-ups (e.g., Wayve, Darktrace, DeepMind turning to US)\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Research-enriched with 2024-2025 market data\n- **Sources**: [Tech Nation UK AI Sector Spotlight 2025](https://technation.io/wp-content/uploads/2025/04/The-Tech-Nation-UK-AI-Sector-Spotlight-2025.pdf), [IMARC UK Technology Market Report](https://www.imarcgroup.com/uk-technology-market), [TechFundingNews](https://techfundingnews.com/2b-raised-ranking-the-biggest-uk-ai-deals-in-2025/)\n- **References**: 6+ pages reference this concept",
   "backlinks": [
     "Manchester Tech Cluster",
     "North England Innovation Corridor",
@@ -11,25 +11,25 @@
     "Sheffield Advanced Manufacturing"
   ],
   "wiki_links": [
-    "Digital Innovation",
+    "Technology Industry",
+    "Innovation",
     "UK AI Sector",
+    "Cambridge Tech Cluster",
+    "Artificial Intelligence",
+    "London Tech Hub",
+    "Economic Development",
+    "Digital Innovation",
+    "Tech Entrepreneurship",
     "Startup Ecosystem",
     "Venture Capital",
-    "London Tech Hub",
-    "Technology",
-    "Innovation",
-    "Technology Industry",
     "AI Development",
-    "Tech Entrepreneurship",
-    "Artificial Intelligence",
-    "Cambridge Tech Cluster",
-    "Economic Development"
+    "Technology"
   ],
   "ontology": {
     "term_id": "NGM-8101",
     "preferred_term": "UK Tech Ecosystem",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ontology#domain:TechnologyEcosystem",
+    "iri": "http://narrativegoldmine.com/ontology#TechnologyEcosystem",
     "source_domain": "ngm",
     "domain": "ngm",
     "domain_full_name": "Narrative Gold Mine Core",
@@ -43,8 +43,8 @@
     "authority_score": null,
     "quality_score": null,
     "cross_domain_links": null,
-    "owl_class": "domain:TechnologyEcosystem",
-    "owl_physicality": "ConceptualEntity",
+    "owl_class": "ngm:TechnologyEcosystem",
+    "owl_physicality": null,
     "owl_role": "IndustryEcosystem",
     "owl_inferred_class": null,
     "is_subclass_of": [],
@@ -68,8 +68,8 @@
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)",
-        "owl:class namespace 'domain' doesn't match source-domain 'ngm'"
+        "Missing required property: owl:physicality",
+        "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }
   }

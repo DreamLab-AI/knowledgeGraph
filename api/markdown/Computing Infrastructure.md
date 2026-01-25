@@ -11,7 +11,6 @@
 	- maturity:: reviewed
 	- belongsToDomain:: [[InfrastructureDomain]], [[Technology Domain]]
 	- owl:class:: ngm:ComputingInfrastructure
-	- owl:physicality:: PhysicalEntity
 	- owl:role:: Infrastructure
 
 ## Relationships

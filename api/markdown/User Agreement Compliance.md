@@ -2,7 +2,7 @@
   id:: user-agreement-compliance-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20229
+	- term-id:: MV-20229
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[MSF Use Cases]], [[ETSI GR ARF 010]]
 	- owl:class:: mv:UserAgreementCompliance
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

@@ -2,7 +2,7 @@
   id:: sheffield-advanced-manufacturing-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: UK-001
+	- term-id:: NGM-1001
 	- preferred-term:: Sheffield Advanced Manufacturing
 	- source-domain:: uk-regional
 	- status:: active
@@ -11,8 +11,7 @@
 	- maturity:: established
 	- region:: South Yorkshire
 	- focus-areas:: Manufacturing, Materials, Robotics
-	- owl:class:: uk:SheffieldAdvancedManufacturing
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: ngm:SheffieldAdvancedManufacturing
 	- owl:role:: RegionalEcosystem
 	- belongsToDomain:: [[UKTechEcosystem]]
 

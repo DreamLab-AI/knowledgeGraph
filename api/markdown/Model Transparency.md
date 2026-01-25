@@ -4,7 +4,7 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9969
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- preferred-term:: Model Transparency
 	- status:: active
 	- owl:class:: ai:ModelTransparency

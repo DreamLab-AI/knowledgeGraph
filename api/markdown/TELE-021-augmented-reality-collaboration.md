@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "Collaborative work where geographically distributed team members share a common augmented reality environment, viewing and manipulating virtual 3D objects overlaid on their respective physical spaces whilst communicating via spatial audio and holographic avatars, enabling hybrid physical-virtual cooperation through AR headsets or mobile devices."
 	- maturity:: developing
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- #### Relationships
 	  id:: ar-collaboration-relationships

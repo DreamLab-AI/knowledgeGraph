@@ -246,7 +246,6 @@ The reward model enables RLHF to scale by converting expensive human feedback in
 **Verification Status**: Verified against InstructGPT and reward modeling literature
 	- maturity:: draft
 	- owl:class:: mv:RewardModel
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Reward Model

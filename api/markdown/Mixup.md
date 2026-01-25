@@ -59,7 +59,6 @@ where λ ~ Beta(α,α)
 **Verification Status**: Verified against augmentation literature
 	- maturity:: draft
 	- owl:class:: mv:Mixup
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Mixup

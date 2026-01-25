@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO 23247 Digital Twin Framework]], [[OPC UA]], [[NVIDIA Omniverse]], [[Siemens Xcelerator]]
 	- owl:class:: mv:IndustrialMetaverse
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

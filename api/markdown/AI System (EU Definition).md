@@ -2,7 +2,7 @@
   id:: ai-system-(eu-definition)-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247873
+	- term-id:: MV-3024
 	- preferred-term:: AI System (EU Definition)
 	- source-domain:: mv
 	- status:: draft
@@ -127,8 +127,7 @@ The 2024 OECD revision expanded the definition to explicitly address general-pur
 - OECD AI Principles 2024 Recommendation
 - AI System Lifecycle (AI-0180)
 	- maturity:: draft
-	- owl:class:: mv:AISystem(EUDefinition)
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: mv:AISystemEUDefinition
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About AI System (EU Definition)

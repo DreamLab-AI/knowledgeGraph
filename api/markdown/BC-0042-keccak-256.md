@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:Keccak-256
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[CryptographicDomain]]

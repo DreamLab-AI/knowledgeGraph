@@ -10,7 +10,6 @@
 	- definition:: AI Security is the field of protecting artificial intelligence systems and their components from security threats and vulnerabilities, including adversarial attacks, data poisoning, model theft, and unauthorized access to ensure systems perform as intended. It encompasses defending AI models, algorithms, training data, and infrastructure from manipulation, misuse, and exploitation throughout the AI lifecycle.
 	- maturity:: mature
 	- owl:class:: ai:AiSecurity
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Domain
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships

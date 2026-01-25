@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "The use of blockchain smart contracts—self-executing programs stored on distributed ledgers—to automate coordination, task allocation, payment distribution, and milestone verification in distributed teams, enabling trustless collaboration through cryptographically enforced agreements that execute deterministically without centralised intermediaries."
 	- maturity:: developing
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Process
 	- is-subclass-of:: [[Smart Contract]]
 

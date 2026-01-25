@@ -233,7 +233,6 @@ Modern AI systems often exhibit non-linear lifecycle patterns, with continuous l
 - [[Risk Management]]
 	- maturity:: draft
 	- owl:class:: mv:AILifecycle
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

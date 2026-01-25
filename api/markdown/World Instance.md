@@ -11,7 +11,6 @@
 A **World Instance** is a specific runtime instantiation or copy of a virtual world or environment, created to support concurrent users, sessions, or gameplay scenarios with isolated state and resources. Each instance represents an independent execution context that maintains its own entity states, physics simulation, and user interactions while sharing the same world template or blueprint.
 	- maturity:: draft
 	- owl:class:: mv:WorldInstance
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About World Instance

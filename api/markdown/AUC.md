@@ -313,7 +313,6 @@ auc_ovo = roc_auc_score(y_true, y_scores, multi_class='ovo', average='macro')
 - [[Ranking Metric]]
 	- maturity:: draft
 	- owl:class:: mv:AUC
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

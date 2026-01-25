@@ -205,7 +205,6 @@
 - [DAOGovernance](./DAOGovernance.md) — Decentralized autonomous organization models
 	- maturity:: draft
 	- owl:class:: mv:OwnershipFreedomdistributed
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Ownership Freedom distributed

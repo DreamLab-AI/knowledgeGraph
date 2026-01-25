@@ -78,7 +78,6 @@ Contrastive learning emerged as a powerful self-supervised technique, enabling m
 **Verification Status**: Verified against SimCLR and CLIP papers
 	- maturity:: draft
 	- owl:class:: mv:ContrastiveLearning
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Contrastive Learning

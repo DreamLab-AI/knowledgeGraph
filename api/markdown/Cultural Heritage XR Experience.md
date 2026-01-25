@@ -2,7 +2,7 @@
   id:: cultural-heritage-xr-experience-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20300
+	- term-id:: MV-20300
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[UNESCO World Heritage Convention]], [[ICOM Museum Definition]]
 	- owl:class:: mv:CulturalHeritageXRExperience
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

@@ -59,7 +59,6 @@ Helpfulness forms one of the three core alignment objectives (alongside harmless
 **Verification Status**: Verified against alignment literature
 	- maturity:: draft
 	- owl:class:: mv:Helpfulness
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Helpfulness

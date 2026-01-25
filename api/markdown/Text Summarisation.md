@@ -71,7 +71,6 @@
 - **Maturity**: Production use
 	- maturity:: draft
 	- owl:class:: mv:TextSummarisation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

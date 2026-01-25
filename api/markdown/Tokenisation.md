@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0231
 	- preferred-term:: Tokenisation
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: The process of breaking text into discrete units (tokens) that can be processed by neural networks, ranging from characters to subwords to whole words.
 
@@ -63,9 +63,8 @@ Tokenisation is a fundamental preprocessing step that significantly impacts mode
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: ai:Tokenisation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Tokenisation
 	- The process of breaking text into discrete units (tokens) that can be processed by neural networks, ranging from characters to subwords to whole words.
 

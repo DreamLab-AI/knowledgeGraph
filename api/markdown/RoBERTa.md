@@ -62,7 +62,6 @@ RoBERTa shows that BERT's training can be substantially improved by removing the
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:RoBERTa
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About RoBERTa

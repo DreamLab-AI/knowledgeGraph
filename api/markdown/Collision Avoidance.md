@@ -13,7 +13,6 @@
 	- definition:: **Collision Avoidance** - Collision Avoidance in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:CollisionAvoidance
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0052 collision avoidance

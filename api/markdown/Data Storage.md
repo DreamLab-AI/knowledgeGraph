@@ -10,7 +10,6 @@
 	- definition:: Data storage encompasses the systems, technologies, and architectures used to capture, retain, and retrieve digital information for ongoing and future use. It includes various storage types such as file, block, and object storage, along with the hardware and software infrastructure that ensures data persistence, accessibility, availability, and protection against loss or corruption.
 	- maturity:: reviewed
 	- owl:class:: ngm:DataStorage
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Core Technology]]
 

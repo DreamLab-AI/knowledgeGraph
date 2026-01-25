@@ -19,8 +19,7 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:RegulatoryCompliance
-    - owl:physicality:: ConceptualEntity
+    - owl:class:: ai:RegulatoryCompliance
     - owl:role:: Concept
     - owl:inferred-class:: ConceptualConcept
     - belongsToDomain:: [[AIEthicsDomain]]
@@ -35,7 +34,7 @@
     collapsed:: true
     - ```clojure
       Prefix(:=<http://metaverse-ontology.org/ai-governance#>)
-Prefix(aigo:=<http://metaverse-ontology.org/ai-governance#>)
+Prefix(ai:=<http://metaverse-ontology.org/ai-governance#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -49,97 +48,97 @@ Ontology(<http://metaverse-ontology.org/ai-governance/PC-0012>
   Import(<http://metaverse-ontology.org/ai-governance/PC-0010>)
 
   ## Class Declaration
-  Declaration(Class(aigo:RegulatoryCompliance))
+  Declaration(Class(ai:RegulatoryCompliance))
 
   ## Subclass Relationships
-  SubClassOf(aigo:RegulatoryCompliance aigo:AIGovernancePrinciple)
+  SubClassOf(ai:RegulatoryCompliance ai:AIGovernancePrinciple)
 
   ## Essential Compliance Properties
-  SubClassOf(aigo:RegulatoryCompliance
-    (DataHasValue aigo:isLegallyBinding "true"^^xsd:boolean))
+  SubClassOf(ai:RegulatoryCompliance
+    (DataHasValue ai:isLegallyBinding "true"^^xsd:boolean))
 
-  SubClassOf(aigo:RegulatoryCompliance
-    (DataHasValue aigo:requiresEnforcement "true"^^xsd:boolean))
+  SubClassOf(ai:RegulatoryCompliance
+    (DataHasValue ai:requiresEnforcement "true"^^xsd:boolean))
 
-  SubClassOf(aigo:RegulatoryCompliance
-    (ObjectSomeValuesFrom aigo:mandatedBy aigo:RegulatoryAuthority))
+  SubClassOf(ai:RegulatoryCompliance
+    (ObjectSomeValuesFrom ai:mandatedBy ai:RegulatoryAuthority))
 
-  SubClassOf(aigo:RegulatoryCompliance
-    (ObjectSomeValuesFrom aigo:appliesInJurisdiction aigo:Jurisdiction))
+  SubClassOf(ai:RegulatoryCompliance
+    (ObjectSomeValuesFrom ai:appliesInJurisdiction ai:Jurisdiction))
 
   ## Compliance Requirements
-  SubClassOf(aigo:RegulatoryCompliance
-    (ObjectSomeValuesFrom aigo:requiresAssessment aigo:ImpactAssessment))
+  SubClassOf(ai:RegulatoryCompliance
+    (ObjectSomeValuesFrom ai:requiresAssessment ai:ImpactAssessment))
 
-  SubClassOf(aigo:RegulatoryCompliance
-    (ObjectSomeValuesFrom aigo:requiresDocumentation aigo:ComplianceDocumentation))
+  SubClassOf(ai:RegulatoryCompliance
+    (ObjectSomeValuesFrom ai:requiresDocumentation ai:ComplianceDocumentation))
 
-  SubClassOf(aigo:RegulatoryCompliance
-    (DataSomeValuesFrom aigo:hasComplianceDeadline xsd:dateTime))
+  SubClassOf(ai:RegulatoryCompliance
+    (DataSomeValuesFrom ai:hasComplianceDeadline xsd:dateTime))
 
   ## Risk-Based Requirements
-  SubClassOf(aigo:RegulatoryCompliance
-    (ObjectSomeValuesFrom aigo:categorizesByRisk aigo:RiskLevel))
+  SubClassOf(ai:RegulatoryCompliance
+    (ObjectSomeValuesFrom ai:categorizesByRisk ai:RiskLevel))
 
-  SubClassOf(aigo:RegulatoryCompliance
-    (DataSomeValuesFrom aigo:hasRiskBasedRequirements xsd:boolean))
+  SubClassOf(ai:RegulatoryCompliance
+    (DataSomeValuesFrom ai:hasRiskBasedRequirements xsd:boolean))
 
   ## Data Properties
-  DataPropertyAssertion(aigo:hasRegulation aigo:RegulatoryCompliance xsd:string)
-  DataPropertyAssertion(aigo:hasJurisdiction aigo:RegulatoryCompliance xsd:string)
-  DataPropertyAssertion(aigo:hasSector aigo:RegulatoryCompliance xsd:string)
-  DataPropertyAssertion(aigo:hasComplianceDeadline aigo:RegulatoryCompliance xsd:dateTime)
-  DataPropertyAssertion(aigo:hasPenaltyFramework aigo:RegulatoryCompliance xsd:string)
-  DataPropertyAssertion(aigo:requiresAudit aigo:RegulatoryCompliance xsd:boolean)
-  DataPropertyAssertion(aigo:requiresCertification aigo:RegulatoryCompliance xsd:boolean)
+  DataPropertyAssertion(ai:hasRegulation ai:RegulatoryCompliance xsd:string)
+  DataPropertyAssertion(ai:hasJurisdiction ai:RegulatoryCompliance xsd:string)
+  DataPropertyAssertion(ai:hasSector ai:RegulatoryCompliance xsd:string)
+  DataPropertyAssertion(ai:hasComplianceDeadline ai:RegulatoryCompliance xsd:dateTime)
+  DataPropertyAssertion(ai:hasPenaltyFramework ai:RegulatoryCompliance xsd:string)
+  DataPropertyAssertion(ai:requiresAudit ai:RegulatoryCompliance xsd:boolean)
+  DataPropertyAssertion(ai:requiresCertification ai:RegulatoryCompliance xsd:boolean)
 
   ## Object Properties
-  ObjectPropertyAssertion(aigo:mandatedBy aigo:RegulatoryCompliance aigo:RegulatoryAuthority)
-  ObjectPropertyAssertion(aigo:appliesInJurisdiction aigo:RegulatoryCompliance aigo:Jurisdiction)
-  ObjectPropertyAssertion(aigo:requiresAssessment aigo:RegulatoryCompliance aigo:ImpactAssessment)
-  ObjectPropertyAssertion(aigo:requiresDocumentation aigo:RegulatoryCompliance aigo:ComplianceDocumentation)
-  ObjectPropertyAssertion(aigo:categorizesByRisk aigo:RegulatoryCompliance aigo:RiskLevel)
-  ObjectPropertyAssertion(aigo:enforcesPenalty aigo:RegulatoryCompliance aigo:Penalty)
-  ObjectPropertyAssertion(aigo:requiresOversight aigo:RegulatoryCompliance aigo:OversightMechanism)
+  ObjectPropertyAssertion(ai:mandatedBy ai:RegulatoryCompliance ai:RegulatoryAuthority)
+  ObjectPropertyAssertion(ai:appliesInJurisdiction ai:RegulatoryCompliance ai:Jurisdiction)
+  ObjectPropertyAssertion(ai:requiresAssessment ai:RegulatoryCompliance ai:ImpactAssessment)
+  ObjectPropertyAssertion(ai:requiresDocumentation ai:RegulatoryCompliance ai:ComplianceDocumentation)
+  ObjectPropertyAssertion(ai:categorizesByRisk ai:RegulatoryCompliance ai:RiskLevel)
+  ObjectPropertyAssertion(ai:enforcesPenalty ai:RegulatoryCompliance ai:Penalty)
+  ObjectPropertyAssertion(ai:requiresOversight ai:RegulatoryCompliance ai:OversightMechanism)
 
   ## Property Characteristics
-  ObjectPropertyDomain(aigo:mandatedBy aigo:RegulatoryCompliance)
-  ObjectPropertyRange(aigo:mandatedBy aigo:RegulatoryAuthority)
+  ObjectPropertyDomain(ai:mandatedBy ai:RegulatoryCompliance)
+  ObjectPropertyRange(ai:mandatedBy ai:RegulatoryAuthority)
 
-  ObjectPropertyDomain(aigo:appliesInJurisdiction aigo:RegulatoryCompliance)
-  ObjectPropertyRange(aigo:appliesInJurisdiction aigo:Jurisdiction)
+  ObjectPropertyDomain(ai:appliesInJurisdiction ai:RegulatoryCompliance)
+  ObjectPropertyRange(ai:appliesInJurisdiction ai:Jurisdiction)
 
-  FunctionalDataProperty(aigo:hasComplianceDeadline)
+  FunctionalDataProperty(ai:hasComplianceDeadline)
 
   ## Annotations
-  AnnotationAssertion(rdfs:label aigo:RegulatoryCompliance "Regulatory Compliance"@en)
-  AnnotationAssertion(rdfs:comment aigo:RegulatoryCompliance
+  AnnotationAssertion(rdfs:label ai:RegulatoryCompliance "Regulatory Compliance"@en)
+  AnnotationAssertion(rdfs:comment ai:RegulatoryCompliance
     "Adherence to legal requirements and regulatory standards governing AI systems"@en)
-  AnnotationAssertion(dct:description aigo:RegulatoryCompliance
+  AnnotationAssertion(dct:description ai:RegulatoryCompliance
     "Legal obligations and statutory requirements for AI development, deployment, and operation"@en)
-  AnnotationAssertion(aigo:termID aigo:RegulatoryCompliance "PC-0012")
-  AnnotationAssertion(aigo:authorityScore aigo:RegulatoryCompliance "0.95"^^xsd:decimal)
-  AnnotationAssertion(dct:created aigo:RegulatoryCompliance "2025-11-08"^^xsd:date)
-  AnnotationAssertion(skos:definition aigo:RegulatoryCompliance
+  AnnotationAssertion(ai:termID ai:RegulatoryCompliance "PC-0012")
+  AnnotationAssertion(ai:authorityScore ai:RegulatoryCompliance "0.95"^^xsd:decimal)
+  AnnotationAssertion(dct:created ai:RegulatoryCompliance "2025-11-08"^^xsd:date)
+  AnnotationAssertion(skos:definition ai:RegulatoryCompliance
     "Adherence to legal requirements and regulatory standards governing AI system development and deployment"@en)
 
   ## Regulatory Framework Types
-  SubClassOf(aigo:RegulatoryCompliance
-    (DataHasValue aigo:hasRegulation
+  SubClassOf(ai:RegulatoryCompliance
+    (DataHasValue ai:hasRegulation
       (DataOneOf("horizontal" "vertical" "sector-specific" "technology-specific" "general-purpose"))))
 
   ## Jurisdiction Enumeration (major AI regulatory regions)
-  SubClassOf(aigo:RegulatoryCompliance
-    (DataHasValue aigo:hasJurisdiction
+  SubClassOf(ai:RegulatoryCompliance
+    (DataHasValue ai:hasJurisdiction
       (DataOneOf("EU" "US" "UK" "China" "Canada" "global" "multi-jurisdictional"))))
 
   ## Compliance Mechanisms
-  SubClassOf(aigo:RegulatoryCompliance
-    (ObjectUnionOf aigo:DataProtectionCompliance aigo:AISpecificCompliance aigo:SectorCompliance))
+  SubClassOf(ai:RegulatoryCompliance
+    (ObjectUnionOf ai:DataProtectionCompliance ai:AISpecificCompliance ai:SectorCompliance))
 
   ## Mandatory Documentation
-  SubClassOf(aigo:RegulatoryCompliance
-    (ObjectMinCardinality 1 aigo:requiresDocumentation))
+  SubClassOf(ai:RegulatoryCompliance
+    (ObjectMinCardinality 1 ai:requiresDocumentation))
 )
       ```
 

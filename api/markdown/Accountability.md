@@ -598,7 +598,6 @@ By late 2024, **AI incident databases** proliferated, including the **AIAAIC Rep
 Transparency regarding incidents improved substantially: whereas historically organisations concealed AI failures, regulatory reporting requirements and corporate accountability cultures encouraged disclosure, enabling systemic learning from failures.
 	- maturity:: draft
 	- owl:class:: mv:Accountability
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

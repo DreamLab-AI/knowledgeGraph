@@ -2,7 +2,7 @@
   id:: righttobeforgotten-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20295
+	- term-id:: MV-20295
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[GDPR Article 17]], [[CCPA]]
 	- owl:class:: mv:RightToBeForgotten
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

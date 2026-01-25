@@ -7,7 +7,7 @@
     - ontology:: true
     - term-id:: DT-0001
     - preferred-term:: Value Transfer
-    - source-domain:: cross-domain
+    - source-domain:: tc
     - status:: complete
     - version:: 1.0.0
 - last-updated:: 2025-11-05
@@ -23,7 +23,6 @@
 
   - **Semantic Classification**
     - owl:class:: dt:ValueTransfer
-    - owl:physicality:: ConceptualEntity
     - owl:role:: Process
     - owl:inferred-class:: dt:ConceptualProcess
     - belongsToDomain:: [[EconomicSystemDomain]], [[BlockchainDomain]], [[MetaverseDomain]], [[AI-GroundedDomain]], [[RoboticsDomain]]

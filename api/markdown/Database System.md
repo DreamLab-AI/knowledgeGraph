@@ -11,7 +11,6 @@
 	- maturity:: reviewed
 	- belongsToDomain:: [[InfrastructureDomain]], [[Technology Domain]], [[ETSI_Domain_Data_Management]]
 	- owl:class:: ngm:DatabaseSystem
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Technology
 
 ## Relationships

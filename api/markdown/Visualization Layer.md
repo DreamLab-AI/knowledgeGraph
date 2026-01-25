@@ -2,7 +2,7 @@
   id:: visualization-layer-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20176
+	- term-id:: MV-20176
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[MSF Taxonomy 2025]]
 	- owl:class:: mv:VisualizationLayer
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

@@ -233,7 +233,6 @@ Modern AI deployment increasingly employs MLOps practices, enabling continuous d
 - [[Risk Management]]
 	- maturity:: draft
 	- owl:class:: mv:AIDeployment
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

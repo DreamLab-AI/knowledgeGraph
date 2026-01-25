@@ -10,7 +10,6 @@
 	- definition:: Platform governance encompasses the formal and informal rules, decision-making processes, and control mechanisms that determine how blockchain and decentralised platforms operate, evolve, and distribute power among stakeholders. It includes on-chain mechanisms such as token-weighted voting and smart contract-executed decisions, as well as off-chain processes including community discussions, improvement proposals, and delegated representation structures.
 	- maturity:: reviewed
 	- owl:class:: ngm:PlatformGovernance
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Blockchain]]
 

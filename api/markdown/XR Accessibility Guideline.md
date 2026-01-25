@@ -2,7 +2,7 @@
   id:: xraccessibilityguideline-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20187
+	- term-id:: MV-4006
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[W3C XR Accessibility UR]], [[ISO 9241-112]], [[ETSI GR ARF 010]]
 	- owl:class:: mv:XRAccessibilityGuideline
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

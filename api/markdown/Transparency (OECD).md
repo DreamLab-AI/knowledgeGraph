@@ -192,8 +192,7 @@ Transparency can be evaluated through:
 *Part of AI Grounded Ontology - OECD AI Principles Framework*
 *Aligned with OECD AI Principles 2024 and EU AI Act transparency requirements*
 	- maturity:: draft
-	- owl:class:: mv:Transparency(OECD)
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: mv:TransparencyOECD
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

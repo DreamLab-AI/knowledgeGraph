@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: rb:HumanoidRobot
-    - owl:physicality:: PhysicalEntity
     - owl:role:: Object
     - belongsToDomain:: [[Robotics]]
 

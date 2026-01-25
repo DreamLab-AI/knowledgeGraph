@@ -11,7 +11,6 @@
 	- source:: [[Swarm Intelligence]], [[Robotics Research]]
 	- maturity:: emerging
 	- owl:class:: rb:Stigmergy
-	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[RoboticsDomain]]
 	- is-subclass-of:: [[Robotics]]

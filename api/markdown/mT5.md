@@ -62,7 +62,6 @@ mT5 extends T5's text-to-text framework to multilingual settings, demonstrating 
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:mT5
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About mT5

@@ -11,7 +11,6 @@
 	- source:: [[HRI]], [[Social Robotics]]
 	- maturity:: emerging
 	- owl:class:: rb:GazeControl
-	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[RoboticsDomain]]
 	- is-subclass-of:: [[Robotics]]

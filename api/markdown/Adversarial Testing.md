@@ -71,7 +71,6 @@ Adversarial testing extends beyond traditional software testing to address AI-sp
 **Verification Status**: Verified against AI safety literature
 	- maturity:: draft
 	- owl:class:: mv:AdversarialTesting
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Adversarial Testing

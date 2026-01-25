@@ -7,14 +7,13 @@
 	- sequence-number:: 0011
 	- filename-history:: ["rb-0011-underwater-robot.md"]
 	- preferred-term:: Underwater Robot
-	- source-domain:: robotics
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Underwater Robot** - Underwater Robot in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:rb0011underwaterrobot
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0011 underwater robot

@@ -239,7 +239,6 @@ Human feedback provides the critical bridge between AI capabilities and human va
 **Verification Status**: Verified against RLHF and alignment literature
 	- maturity:: draft
 	- owl:class:: mv:HumanFeedback
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Human Feedback

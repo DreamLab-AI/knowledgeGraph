@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[OECD Crypto-Asset Registry]], [[ISO 11179]]
 	- owl:class:: mv:DigitalTaxonomyRegistry
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

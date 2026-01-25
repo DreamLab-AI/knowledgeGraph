@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO 19794]], [[FIDO Alliance]]
 	- owl:class:: mv:BiometricBindingMechanism
-	- owl:physicality:: PhysicalEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:PhysicalObject
 	- owl:functional-syntax:: true

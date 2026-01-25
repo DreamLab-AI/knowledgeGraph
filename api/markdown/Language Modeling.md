@@ -184,7 +184,6 @@ Large language models exhibit emergent capabilities appearing at scale:
 - **Research Activity**: Extremely active, core AI research area
 	- maturity:: draft
 	- owl:class:: mv:LanguageModeling
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

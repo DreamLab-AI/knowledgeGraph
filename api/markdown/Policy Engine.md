@@ -2,17 +2,15 @@
   id:: policy-engine-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20070
+	- term-id:: MV-20070
 	- preferred-term:: Policy Engine
 	- source-domain:: mv
 	- status:: draft
-- public-access:: true
+	- public-access:: true
 	- definition:: automated component that applies governance or access-control rules within a metaverse system.
-maturity:: 2
-source:: [[ETSI + OMA3]]
 	- maturity:: draft
+	- source:: [[ETSI + OMA3]]
 	- owl:class:: mv:PolicyEngine
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 
@@ -28,13 +26,11 @@ source:: [[ETSI + OMA3]]
 (AnnotationAssertion rdfs:comment :PolicyEngine "automated component that applies governance or access-control rules within a metaverse system."@en)
 
 ;; Data Properties
-(AnnotationAssertion dcterms:identifier :PolicyEngine "20070"^^xsd:string)
+(AnnotationAssertion dcterms:identifier :PolicyEngine "MV-20070"^^xsd:string)
 ```
 
 - ## About Policy Engine
 	- automated component that applies governance or access-control rules within a metaverse system.
-maturity:: 2
-source:: [[ETSI + OMA3]]
 	-
 	- ### Original Content
 	  collapsed:: true
@@ -42,7 +38,7 @@ source:: [[ETSI + OMA3]]
 # Policy Engine
 		  
 		  ## Core Properties
-		  term-id:: 20070
+		  term-id:: MV-20070
 		  preferred-term:: Policy Engine
 		  definition:: automated component that applies governance or access-control rules within a metaverse system.
 		  maturity:: 2

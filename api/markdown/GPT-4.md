@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0215
 	- preferred-term:: GPT 4
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: A large-scale, multimodal transformer-based model that accepts image and text inputs and produces text outputs, exhibiting human-level performance on various professional and academic benchmarks.
 
@@ -98,9 +98,8 @@ GPT-4 represents a major advancement in multimodal AI, capable of understanding 
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: ai:GPT4
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About GPT 4
 	- A large-scale, multimodal transformer-based model that accepts image and text inputs and produces text outputs, exhibiting human-level performance on various professional and academic benchmarks.
 

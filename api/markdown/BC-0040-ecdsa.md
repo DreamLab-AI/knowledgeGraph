@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:ECDSA
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[CryptographicDomain]]

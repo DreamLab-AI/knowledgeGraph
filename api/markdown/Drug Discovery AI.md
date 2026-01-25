@@ -220,7 +220,6 @@ if __name__ == "__main__":
 - **Maturity**: Research and early commercial deployment
 	- maturity:: draft
 	- owl:class:: mv:DrugDiscoveryAI
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

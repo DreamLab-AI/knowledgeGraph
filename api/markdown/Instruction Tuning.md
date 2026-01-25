@@ -132,7 +132,6 @@ Instruction tuning transformed language models from raw text generators into pra
 **Verification Status**: Verified against InstructGPT paper (arXiv:2203.02155)
 	- maturity:: draft
 	- owl:class:: mv:InstructionTuning
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Instruction Tuning

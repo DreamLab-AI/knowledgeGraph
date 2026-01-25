@@ -2,7 +2,7 @@
   id:: rb-0049-motion-planning-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: RB-0898
+	- term-id:: RB-0049
 	- preferred-term:: rb 0049 motion planning
 	- source-domain:: rb
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: **Motion Planning** - Motion Planning in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:RobotMotionPlanning
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0049 motion planning

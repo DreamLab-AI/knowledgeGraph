@@ -10,7 +10,6 @@
 	- definition:: Identity management in blockchain contexts refers to the systems and protocols enabling individuals and organisations to create, control, and verify digital identities without reliance on centralised authorities. Decentralised identity (DID) architectures leverage blockchain technology to provide self-sovereign identity capabilities, where users maintain control over their personal data through cryptographic keys, verifiable credentials, and distributed ledger storage.
 	- maturity:: reviewed
 	- owl:class:: ngm:IdentityManagement
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Blockchain]]
 

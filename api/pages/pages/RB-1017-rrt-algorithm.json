@@ -1,33 +1,33 @@
 {
   "id": "RB-1017-rrt-algorithm",
   "title": "RRT Algorithm",
-  "content": "- ### OntologyBlock\n  id:: rrt-algorithm-ontology\n  collapsed:: true\n  - ontology:: true\n  - term-id:: RB-1017\n  - preferred-term:: RRT Algorithm\n  - alternate-terms:: Rapidly-exploring Random Tree\n  - source-domain:: rb\n  - status:: complete\n  - public-access:: true\n  - version:: 1.0.0\n  - last-updated:: 2025-11-24\n\n- **Definition**\n  - definition:: A sampling-based path planning algorithm that incrementally builds a tree of collision-free configurations by randomly sampling the configuration space and connecting samples to the nearest existing tree node. It efficiently explores high-dimensional spaces and is probabilistically complete.\n  - maturity:: mature\n  - source:: [[Motion Planning]], [[Steven LaValle 1998]]\n  - authority-score:: 0.96\n\n- **Semantic Classification**\n  - owl:class:: rb:RRTAlgorithm\n  - owl:physicality:: Abstract\n  - owl:role:: Algorithm\n  - belongsToDomain:: [[Robotics]], [[Motion Planning]], [[Path Planning]]\n\n- #### OWL Restrictions\n  - is-subclass-of:: [[RB-1016-path-planning]]\n  - is-instance-of:: [[Sampling-Based Method]]\n  - requires:: [[Configuration Space]]\n  - requires:: [[Collision Checker]]\n  - produces:: [[Tree Structure]]\n  - characterized-by:: [[Probabilistic Completeness]], [[Randomization]]\n\n- #### Relationships\n  id:: rb-1017-relationships\n  - is-subclass-of:: [[RB-1016-path-planning]]\n  - alternative-to:: [[RB-1018-dijkstra-algorithm]], [[A-Star Algorithm]]\n  - variant-of:: [[RRT-Star]], [[RRT-Connect]], [[Informed RRT-Star]]\n  - uses:: [[Nearest Neighbor Search]], [[Collision Detection]]\n  - applied-in:: [[Mobile Robots]], [[Manipulators]], [[Autonomous Vehicles]]\n\n- **Basic Algorithm**\n  1. Initialize tree with start configuration\n  2. **Loop** (until goal reached or max iterations):\n     a. Sample random configuration q_rand\n     b. Find nearest node q_near in tree\n     c. Steer from q_near toward q_rand (limited step size)\n     d. Check if new configuration q_new is collision-free\n     e. If valid, add q_new to tree with edge from q_near\n  3. Return path from start to goal (if found)\n\n- **Key Operations**\n  - **Sample()**: Generate random configuration\n  - **Nearest(tree, q)**: Find closest node to q\n  - **Steer(q_near, q_rand, δ)**: Extend toward q_rand by step δ\n  - **CollisionFree(q)**: Check if configuration is valid\n  - **AddNode(tree, q_new, q_near)**: Add new node and edge\n\n- **Sampling Strategies**\n  - Uniform Random Sampling (standard)\n  - Goal Biasing (sample goal with probability p)\n  - Informed Sampling (sample within heuristic regions)\n  - Obstacle-based Sampling\n\n- **Properties**\n  - **Probabilistically Complete**: Finds solution as iterations → ∞\n  - **Not Optimal**: Initial solution may be far from optimal\n  - **Randomized**: Different runs produce different paths\n  - **Single-Query**: Builds new tree for each query\n  - **Voronoi Bias**: Explores unexplored areas naturally\n\n- **Advantages**\n  - Handles high-dimensional spaces effectively\n  - Fast exploration of large spaces\n  - No need to discretize configuration space\n  - Works with complex constraints\n  - Simple to implement\n  - Handles non-holonomic constraints\n\n- **Limitations**\n  - Paths are not optimal (jagged, suboptimal length)\n  - Difficulty with narrow passages\n  - No quality guarantees on solution\n  - Sensitive to step size parameter\n  - Slow in cluttered environments\n\n- **RRT Variants**\n  - **RRT*** (RRT-star):\n    - Asymptotically optimal\n    - Rewires tree for better paths\n    - Higher computational cost\n  - **RRT-Connect**:\n    - Bidirectional search (from start and goal)\n    - Faster than basic RRT\n    - Good for multi-robot coordination\n  - **Informed RRT***:\n    - Uses heuristics to focus search\n    - Faster convergence to optimal\n  - **Dynamic RRT**:\n    - Handles moving obstacles\n    - Replanning capability\n  - **Kinodynamic RRT**:\n    - Considers velocity/acceleration\n    - For dynamic systems\n  - **Anytime RRT**:\n    - Provides improving solutions over time\n\n- **Parameters**\n  - **Step Size (δ)**: Max extension distance\n    - Small: Slower, smoother paths\n    - Large: Faster, more jagged paths\n  - **Goal Bias**: Probability of sampling goal\n    - 0.05-0.10 typical\n  - **Max Iterations**: Termination condition\n\n- **Data Structures**\n  - Tree: Nodes and edges\n  - KD-Tree or Ball Tree for nearest neighbor search\n  - Configuration space representation\n  - Collision checker data structures\n\n- **Applications**\n  - Robot arm motion planning\n  - Mobile robot navigation\n  - Autonomous vehicle path planning\n  - Drone flight planning\n  - Surgical robot planning\n  - Multi-robot coordination\n  - Animation and graphics\n\n- **Extensions and Improvements**\n  - Path smoothing post-processing\n  - Adaptive step size\n  - Multi-tree approaches\n  - Learning-based sampling\n  - Parallel RRT implementations\n\n- **Comparison with Graph Search**\n  - RRT vs [[RB-1018-dijkstra-algorithm]]:\n    - RRT: Sampling-based, probabilistic\n    - Dijkstra: Discrete, deterministic\n    - RRT: Better for high dimensions\n    - Dijkstra: Optimal in discrete spaces\n\n- **Computational Complexity**\n  - Time: O(n log n) per iteration (nearest neighbor)\n  - Space: O(n) for n nodes\n  - Iterations needed: Problem-dependent\n\n- **Implementation Considerations**\n  - Efficient nearest neighbor search\n  - Fast collision checking\n  - Step size tuning\n  - Goal region definition\n  - Early termination conditions\n\n- **Quality Metrics**\n  - authority-score:: 0.96\n  - completeness:: 0.94\n  - accuracy:: 0.95",
+  "content": "- ### OntologyBlock\n  id:: rrt-algorithm-ontology\n  collapsed:: true\n  - ontology:: true\n  - term-id:: RB-1017\n  - preferred-term:: RRT Algorithm\n  - alternate-terms:: Rapidly-exploring Random Tree\n  - source-domain:: rb\n  - status:: complete\n  - public-access:: true\n  - version:: 1.0.0\n  - last-updated:: 2025-11-24\n\n- **Definition**\n  - definition:: A sampling-based path planning algorithm that incrementally builds a tree of collision-free configurations by randomly sampling the configuration space and connecting samples to the nearest existing tree node. It efficiently explores high-dimensional spaces and is probabilistically complete.\n  - maturity:: mature\n  - source:: [[Motion Planning]], [[Steven LaValle 1998]]\n  - authority-score:: 0.96\n\n- **Semantic Classification**\n  - owl:class:: rb:RRTAlgorithm\n  - owl:role:: Algorithm\n  - belongsToDomain:: [[Robotics]], [[Motion Planning]], [[Path Planning]]\n\n- #### OWL Restrictions\n  - is-subclass-of:: [[RB-1016-path-planning]]\n  - is-instance-of:: [[Sampling-Based Method]]\n  - requires:: [[Configuration Space]]\n  - requires:: [[Collision Checker]]\n  - produces:: [[Tree Structure]]\n  - characterized-by:: [[Probabilistic Completeness]], [[Randomization]]\n\n- #### Relationships\n  id:: rb-1017-relationships\n  - is-subclass-of:: [[RB-1016-path-planning]]\n  - alternative-to:: [[RB-1018-dijkstra-algorithm]], [[A-Star Algorithm]]\n  - variant-of:: [[RRT-Star]], [[RRT-Connect]], [[Informed RRT-Star]]\n  - uses:: [[Nearest Neighbor Search]], [[Collision Detection]]\n  - applied-in:: [[Mobile Robots]], [[Manipulators]], [[Autonomous Vehicles]]\n\n- **Basic Algorithm**\n  1. Initialize tree with start configuration\n  2. **Loop** (until goal reached or max iterations):\n     a. Sample random configuration q_rand\n     b. Find nearest node q_near in tree\n     c. Steer from q_near toward q_rand (limited step size)\n     d. Check if new configuration q_new is collision-free\n     e. If valid, add q_new to tree with edge from q_near\n  3. Return path from start to goal (if found)\n\n- **Key Operations**\n  - **Sample()**: Generate random configuration\n  - **Nearest(tree, q)**: Find closest node to q\n  - **Steer(q_near, q_rand, δ)**: Extend toward q_rand by step δ\n  - **CollisionFree(q)**: Check if configuration is valid\n  - **AddNode(tree, q_new, q_near)**: Add new node and edge\n\n- **Sampling Strategies**\n  - Uniform Random Sampling (standard)\n  - Goal Biasing (sample goal with probability p)\n  - Informed Sampling (sample within heuristic regions)\n  - Obstacle-based Sampling\n\n- **Properties**\n  - **Probabilistically Complete**: Finds solution as iterations → ∞\n  - **Not Optimal**: Initial solution may be far from optimal\n  - **Randomized**: Different runs produce different paths\n  - **Single-Query**: Builds new tree for each query\n  - **Voronoi Bias**: Explores unexplored areas naturally\n\n- **Advantages**\n  - Handles high-dimensional spaces effectively\n  - Fast exploration of large spaces\n  - No need to discretize configuration space\n  - Works with complex constraints\n  - Simple to implement\n  - Handles non-holonomic constraints\n\n- **Limitations**\n  - Paths are not optimal (jagged, suboptimal length)\n  - Difficulty with narrow passages\n  - No quality guarantees on solution\n  - Sensitive to step size parameter\n  - Slow in cluttered environments\n\n- **RRT Variants**\n  - **RRT*** (RRT-star):\n    - Asymptotically optimal\n    - Rewires tree for better paths\n    - Higher computational cost\n  - **RRT-Connect**:\n    - Bidirectional search (from start and goal)\n    - Faster than basic RRT\n    - Good for multi-robot coordination\n  - **Informed RRT***:\n    - Uses heuristics to focus search\n    - Faster convergence to optimal\n  - **Dynamic RRT**:\n    - Handles moving obstacles\n    - Replanning capability\n  - **Kinodynamic RRT**:\n    - Considers velocity/acceleration\n    - For dynamic systems\n  - **Anytime RRT**:\n    - Provides improving solutions over time\n\n- **Parameters**\n  - **Step Size (δ)**: Max extension distance\n    - Small: Slower, smoother paths\n    - Large: Faster, more jagged paths\n  - **Goal Bias**: Probability of sampling goal\n    - 0.05-0.10 typical\n  - **Max Iterations**: Termination condition\n\n- **Data Structures**\n  - Tree: Nodes and edges\n  - KD-Tree or Ball Tree for nearest neighbor search\n  - Configuration space representation\n  - Collision checker data structures\n\n- **Applications**\n  - Robot arm motion planning\n  - Mobile robot navigation\n  - Autonomous vehicle path planning\n  - Drone flight planning\n  - Surgical robot planning\n  - Multi-robot coordination\n  - Animation and graphics\n\n- **Extensions and Improvements**\n  - Path smoothing post-processing\n  - Adaptive step size\n  - Multi-tree approaches\n  - Learning-based sampling\n  - Parallel RRT implementations\n\n- **Comparison with Graph Search**\n  - RRT vs [[RB-1018-dijkstra-algorithm]]:\n    - RRT: Sampling-based, probabilistic\n    - Dijkstra: Discrete, deterministic\n    - RRT: Better for high dimensions\n    - Dijkstra: Optimal in discrete spaces\n\n- **Computational Complexity**\n  - Time: O(n log n) per iteration (nearest neighbor)\n  - Space: O(n) for n nodes\n  - Iterations needed: Problem-dependent\n\n- **Implementation Considerations**\n  - Efficient nearest neighbor search\n  - Fast collision checking\n  - Step size tuning\n  - Goal region definition\n  - Early termination conditions\n\n- **Quality Metrics**\n  - authority-score:: 0.96\n  - completeness:: 0.94\n  - accuracy:: 0.95",
   "backlinks": [
     "RB-1018-dijkstra-algorithm",
     "RB-1016-path-planning"
   ],
   "wiki_links": [
-    "Probabilistic Completeness",
-    "RRT-Star",
-    "A-Star Algorithm",
-    "Tree Structure",
-    "RRT-Connect",
+    "Path Planning",
     "Configuration Space",
-    "Manipulators",
-    "Motion Planning",
-    "Randomization",
-    "Nearest Neighbor Search",
-    "Collision Checker",
-    "Informed RRT-Star",
-    "Autonomous Vehicles",
-    "Sampling-Based Method",
-    "Collision Detection",
-    "Steven LaValle 1998",
-    "RB-1016-path-planning",
-    "RB-1018-dijkstra-algorithm",
     "Robotics",
+    "Motion Planning",
+    "Sampling-Based Method",
+    "RRT-Star",
+    "RB-1016-path-planning",
+    "Informed RRT-Star",
+    "Nearest Neighbor Search",
+    "Manipulators",
+    "Collision Checker",
+    "Autonomous Vehicles",
+    "RRT-Connect",
+    "Steven LaValle 1998",
     "Mobile Robots",
-    "Path Planning"
+    "Collision Detection",
+    "Tree Structure",
+    "RB-1018-dijkstra-algorithm",
+    "Probabilistic Completeness",
+    "A-Star Algorithm",
+    "Randomization"
   ],
   "ontology": {
     "term_id": "RB-1017",
@@ -48,7 +48,7 @@
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "rb:RRTAlgorithm",
-    "owl_physicality": "Abstract",
+    "owl_physicality": null,
     "owl_role": "Algorithm",
     "owl_inferred_class": null,
     "is_subclass_of": [
@@ -94,8 +94,10 @@
       ]
     },
     "validation": {
-      "is_valid": true,
-      "errors": []
+      "is_valid": false,
+      "errors": [
+        "Missing required property: owl:physicality"
+      ]
     }
   }
 }

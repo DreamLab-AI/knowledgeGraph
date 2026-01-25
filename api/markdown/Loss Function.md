@@ -4,16 +4,15 @@
 	- ontology:: true
 	- term-id:: AI-0047
 	- preferred-term:: Loss Function
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: ### Primary Definition
 A **Loss Function** is a mathematical function that quantifies the difference between predicted outputs and true values, providing a scalar measure of model error. Training algorithms minimise the loss function to improve model performance.
 	- maturity:: draft
 	- owl:class:: ai:LossFunction
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Loss Function
 	- ### Primary Definition
 A **Loss Function** is a mathematical function that quantifies the difference between predicted outputs and true values, providing a scalar measure of model error. Training algorithms minimise the loss function to improve model performance.

@@ -236,7 +236,6 @@ The effectiveness of HITL depends critically on system design—humans must rece
 - [[Decision Support]]
 	- maturity:: draft
 	- owl:class:: mv:HumanintheLoop
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

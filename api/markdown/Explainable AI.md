@@ -208,7 +208,6 @@
 - [[IEEE P2976 (XAI)]]
 	- maturity:: draft
 	- owl:class:: mv:ExplainableAI
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

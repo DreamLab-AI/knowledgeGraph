@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:MarketCapitalization
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[TokenEconomicsDomain]]
@@ -115,3 +114,9 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0118>
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
   -
 
+
+
+<!-- Merged from BC 0118 market capitalization.md: MetaverseDomain -->
+
+
+<!-- Merged from Market Capitalization.md: Blockchain, Tokenomics -->

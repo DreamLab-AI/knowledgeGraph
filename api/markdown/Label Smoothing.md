@@ -61,7 +61,6 @@ where:
 **Verification Status**: Verified against training literature
 	- maturity:: draft
 	- owl:class:: mv:LabelSmoothing
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Label Smoothing

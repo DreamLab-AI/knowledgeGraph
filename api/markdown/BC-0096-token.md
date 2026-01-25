@@ -9,26 +9,33 @@
     - source-domain:: bc
     - status:: complete
     - public-access:: true
-    - version:: 1.0.0
-    - last-updated:: 2025-10-28
+    - version:: 2.1.0
+    - last-updated:: 2025-01-23
 
   - **Definition**
-    - definition:: A token is a digital asset representation on a blockchain that confers specific rights, utility, or value to its holder, implemented as a cryptographically-secured unit that can be owned, transferred, and programmably controlled through smart contracts according to defined rules and protocols.
-    - maturity:: mature
-    - source:: [[ISO/IEC 23257:2021]]
+    - definition:: A digital asset representation built on an existing blockchain platform that represents ownership, utility, or access rights, typically adhering to standardized protocols for transferability and interoperability, implemented as a cryptographically-secured unit that can be owned, transferred, and programmably controlled through smart contracts according to defined rules and token standards.
+    - maturity:: established
+    - source:: [[ISO/IEC 23257:2021]], Chimera Prime Research
     - authority-score:: 0.95
 
   - **Semantic Classification**
     - owl:class:: bc:Token
-    - owl:physicality:: VirtualEntity
-    - owl:role:: Object
+    - owl:role:: Concept
     - owl:inferred-class:: bc:VirtualObject
-    - belongsToDomain:: [[TokenEconomicsDomain]]
+    - belongsToDomain:: [[BlockchainDomain]]
     - implementedInLayer:: [[EconomicLayer]]
 
   - #### Relationships
     id:: token-relationships
     - is-subclass-of:: [[Digital Asset]], [[Blockchain Entity]], [[Transferable Right]]
+    - has-subclass:: [[Fungible Token]], [[Non-Fungible Token]], [[Semi-Fungible Token]]
+    - has-subclass:: [[Security Token]], [[Utility Token]], [[Governance Token]]
+    - has-subclass:: [[Stablecoin]], [[Wrapped Token]]
+    - implemented-by:: [[ERC-20]], [[ERC-721]], [[ERC-1155]], [[ERC-3643]], [[ERC-4626]], [[ERC-7540]]
+    - implemented-by:: [[RGB20]], [[RGB21]], [[BRC-20]], [[Taproot Assets]], [[Runes Protocol]]
+    - implemented-by:: [[SPL Token]], [[BEP-20]], [[TRC-20]]
+    - related-to:: [[Smart Contract]], [[Tokenomics]], [[DeFi]], [[NFT]]
+    - enables:: [[Decentralized Exchange]], [[Liquidity Pool]], [[Staking]], [[Yield Farming]]
 
   - #### OWL Axioms
     id:: token-owl-axioms
@@ -49,6 +56,13 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0096>
   SubClassOf(:Token :BlockchainEntity)
   SubClassOf(:Token :TransferableRight)
 
+  ## Defining Characteristics (Equivalent Class)
+  EquivalentClasses(:Token
+    ObjectIntersectionOf(:DigitalAsset
+      ObjectSomeValuesFrom(:existsOn :BlockchainPlatform)
+      ObjectSomeValuesFrom(:implementsStandard :TokenStandard)
+      ObjectSomeValuesFrom(:hasTransferability :Transferable)))
+
   ## Essential Properties
   SubClassOf(:Token
     (ObjectExactCardinality 1 :deployedOn :Blockchain))
@@ -65,34 +79,50 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0096>
   SubClassOf(:Token
     (DataHasValue :isTransferable "true"^^xsd:boolean))
 
-  ## Token Properties
   SubClassOf(:Token
-    (DataSomeValuesFrom :hasTotalSupply xsd:decimal))
+    (ObjectSomeValuesFrom :hasSupply :TokenSupply))
 
   SubClassOf(:Token
-    (DataSomeValuesFrom :hasDecimals xsd:nonNegativeInteger))
+    (ObjectSomeValuesFrom :ownedBy :TokenHolder))
+
+  ## Token Properties with Constraints
+  SubClassOf(:Token
+    (DataSomeValuesFrom :hasTotalSupply
+      DatatypeRestriction(xsd:decimal xsd:minInclusive "0"^^xsd:decimal)))
+
+  SubClassOf(:Token
+    (DataSomeValuesFrom :hasDecimals
+      DatatypeRestriction(xsd:integer xsd:minInclusive "0"^^xsd:integer xsd:maxInclusive "18"^^xsd:integer)))
 
   SubClassOf(:Token
     (ObjectSomeValuesFrom :implementedBy :SmartContract))
+
+  SubClassOf(:Token
+    (DataHasValue :divisible "true"^^xsd:boolean))
 
   ## Data Properties
   DataPropertyAssertion(:tokenName :Token xsd:string)
   DataPropertyAssertion(:tokenSymbol :Token xsd:string)
   DataPropertyAssertion(:totalSupply :Token xsd:decimal)
   DataPropertyAssertion(:decimals :Token xsd:nonNegativeInteger)
-  DataPropertyAssertion(:isMinDurable :Token xsd:boolean)
+  DataPropertyAssertion(:circulatingSupply :Token xsd:decimal)
+  DataPropertyAssertion(:isMintable :Token xsd:boolean)
   DataPropertyAssertion(:isBurnable :Token xsd:boolean)
+  DataPropertyAssertion(:transferable :Token xsd:boolean)
 
   ## Object Properties
   ObjectPropertyAssertion(:ownedBy :Token :Address)
   ObjectPropertyAssertion(:transferredTo :Token :Address)
   ObjectPropertyAssertion(:governedBy :Token :TokenGovernance)
   ObjectPropertyAssertion(:representsRight :Token :Right)
+  ObjectPropertyAssertion(:hasSmartContract :Token :SmartContract)
+  ObjectPropertyAssertion(:tradedOn :Token :Exchange)
+  ObjectPropertyAssertion(:hasUtility :Token :UtilityFunction)
 
   ## Annotations
   AnnotationAssertion(rdfs:label :Token "Token"@en)
   AnnotationAssertion(rdfs:comment :Token
-    "Digital asset representation on blockchain with transferable rights"@en)
+    "Digital asset representation on blockchain with transferable rights and standardized protocols"@en)
   AnnotationAssertion(:termID :Token "BC-0096")
 
   ## Token Type Subclasses
@@ -100,17 +130,81 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0096>
   SubClassOf(:FungibleToken :Token)
   SubClassOf(:FungibleToken
     (DataHasValue :isFungible "true"^^xsd:boolean))
+  SubClassOf(:FungibleToken
+    (DataHasValue :divisible "true"^^xsd:boolean))
 
   Declaration(Class(:NonFungibleToken))
   SubClassOf(:NonFungibleToken :Token)
   SubClassOf(:NonFungibleToken
     (DataHasValue :isFungible "false"^^xsd:boolean))
+  SubClassOf(:NonFungibleToken
+    (DataHasValue :decimals "0"^^xsd:integer))
 
   Declaration(Class(:SemiFungibleToken))
   SubClassOf(:SemiFungibleToken :Token)
 
+  Declaration(Class(:SecurityToken))
+  SubClassOf(:SecurityToken :Token)
+  SubClassOf(:SecurityToken
+    (ObjectSomeValuesFrom :hasCompliance :RegulatoryCompliance))
+
+  Declaration(Class(:UtilityToken))
+  SubClassOf(:UtilityToken :FungibleToken)
+
+  Declaration(Class(:GovernanceToken))
+  SubClassOf(:GovernanceToken :FungibleToken)
+  SubClassOf(:GovernanceToken
+    (ObjectSomeValuesFrom :hasUtility :VotingRights))
+
+  Declaration(Class(:Stablecoin))
+  SubClassOf(:Stablecoin :FungibleToken)
+  SubClassOf(:Stablecoin
+    (ObjectSomeValuesFrom :hasMechanism :PriceStabilityMechanism))
+
+  Declaration(Class(:WrappedToken))
+  SubClassOf(:WrappedToken :FungibleToken)
+
+  ## Token Standard Subclasses
+  Declaration(Class(:ERC20Token))
+  SubClassOf(:ERC20Token :FungibleToken)
+  SubClassOf(:ERC20Token
+    (ObjectSomeValuesFrom :implementsStandard :ERC20))
+
+  Declaration(Class(:ERC721Token))
+  SubClassOf(:ERC721Token :NonFungibleToken)
+  SubClassOf(:ERC721Token
+    (ObjectSomeValuesFrom :implementsStandard :ERC721))
+
+  Declaration(Class(:ERC1155Token))
+  SubClassOf(:ERC1155Token :SemiFungibleToken)
+  SubClassOf(:ERC1155Token
+    (ObjectSomeValuesFrom :implementsStandard :ERC1155))
+
+  ## Axioms and Constraints
+  # Fungible tokens must be divisible
+  SubClassOf(:FungibleToken
+    (DataHasValue :divisible "true"^^xsd:boolean))
+
+  # Tokens on Ethereum implement ERC standard
+  SubClassOf(
+    ObjectIntersectionOf(:Token
+      ObjectSomeValuesFrom(:existsOn :EthereumBlockchain))
+    (ObjectSomeValuesFrom :implementsStandard :ERCStandard))
+
+  # Security tokens require regulatory compliance
+  SubClassOf(:SecurityToken
+    (ObjectSomeValuesFrom :hasCompliance :RegulatoryCompliance))
+
+  # Circulating supply cannot exceed total supply
+  SubClassOf(:Token
+    (DataSomeValuesFrom :circulatingSupply
+      DatatypeRestriction(xsd:decimal
+        xsd:minInclusive "0"^^xsd:decimal
+        xsd:maxExclusive :totalSupply)))
+
   ## Disjoint Classes
-  DisjointClasses(:FungibleToken :NonFungibleToken)
+  DisjointClasses(:FungibleToken :NonFungibleToken :SemiFungibleToken)
+  DisjointClasses(:UtilityToken :SecurityToken :GovernanceToken)
 )
       ```
 
@@ -308,6 +402,118 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0096>
 
     The 2024-2025 period represented tokenization's **transition from proof-of-concept to production infrastructure**, yet fundamental questions remained about whether blockchain offered **revolutionary efficiency** justifying migration costs or merely **incremental improvements** destined to remain niche use cases within broader traditional finance dominance.
   -
-  - ### Standards & References
+  - ### Token Taxonomy and Standards
     id:: token-standards
+    collapsed:: true
+
+    #### Token Types by Fungibility
+    - **[[Fungible Token]]**: Interchangeable units (ERC-20, RGB20, BRC-20, Runes, SPL Token)
+      - Examples: USDC, DAI, UNI, LINK, AAVE, WBTC
+      - Use Cases: Payments, DeFi, stablecoins, governance, utility
+
+    - **[[Non-Fungible Token]] (NFT)**: Unique, indivisible assets (ERC-721, RGB21, Taproot Assets, Ordinals)
+      - Examples: Bored Ape Yacht Club, CryptoPunks, Art Blocks, Bitcoin Ordinals
+      - Use Cases: Digital art, collectibles, gaming assets, virtual real estate, domain names
+
+    - **[[Semi-Fungible Token]]**: Hybrid tokens (ERC-1155, ERC-3525)
+      - Examples: Event tickets, gaming items, fractional NFTs, carbon credits
+      - Use Cases: Items fungible before event, unique after (POAP); limited edition gaming items
+
+    #### Token Types by Purpose
+    - **[[Security Token]]**: Regulated ownership in real-world assets (ERC-3643, ERC-1400, Polymesh)
+      - Asset Classes: Equity tokens, debt tokens, real estate, commodities, fund tokens, revenue sharing
+      - Compliance: KYC/AML verification, accredited investor checks, transfer restrictions, regulatory reporting
+
+    - **[[Utility Token]]**: Platform access and services (LINK, FIL, BAT, MANA, SAND)
+      - Categories: Oracle services, storage networks, compute networks, advertising, gaming, privacy, interoperability
+
+    - **[[Governance Token]]**: DAO and protocol voting rights (UNI, AAVE, MKR, CRV, COMP, SNX)
+      - Mechanisms: On-chain voting, delegation, quadratic voting, time-locked voting power (veTokenomics)
+
+    - **[[Stablecoin]]**: Price-stable tokens pegged to fiat/commodities
+      - Fiat-Backed: USDC, USDT, PYUSD (fully reserved, regulated)
+      - Crypto-Collateralized: DAI, FRAX, sUSD (over-collateralized with crypto assets)
+      - Algorithmic: USDD, historical failures (UST/Terra collapse May 2022)
+
+    #### Ethereum Token Standards
+    - **[[ERC-20]]** (2015): Fungible tokens - transfer(), approve(), balanceOf(), totalSupply()
+    - **[[ERC-721]]** (2018): NFTs - ownerOf(), safeTransferFrom(), tokenURI(), metadata JSON
+    - **[[ERC-1155]]** (2018): Multi-token - batch transfers, multiple types in one contract, gas efficiency
+    - **[[ERC-3643]]** (2021): Security tokens - on-chain identity verification, transfer restrictions, KYC/AML
+    - **[[ERC-4626]]** (2022): Tokenized vaults - standardized yield-bearing vaults for DeFi integration
+    - **[[ERC-7540]]** (2024): Asynchronous vaults - on-chain structured finance, T+2 settlement, compliance hooks
+
+    #### Bitcoin Token Standards
+    - **[[RGB Protocol]]** (2023 mainnet): Client-side validation, Lightning Network integration, UTXO-based
+      - **RGB20**: Fungible tokens on Bitcoin with privacy and scalability
+      - **RGB21**: Non-fungible tokens on Bitcoin with client-side validation
+
+    - **[[Taproot Assets]]** (2024): Taproot-based asset issuance by Lightning Labs
+      - Features: Multi-asset Lightning channels, atomic swaps, privacy-preserving transfers
+      - Use Cases: Stablecoins on Lightning Network, tokenized assets, cross-border payments
+
+    - **[[BRC-20]]** (2023): JSON inscriptions on satoshis via Ordinals
+      - Popular Tokens: ORDI, SATS, RATS
+      - Limitations: No smart contracts, manual indexing, high fees
+
+    - **[[Runes Protocol]]** (2024): UTXO-based fungible tokens by Casey Rodarmor
+      - Design: More efficient than BRC-20, native Bitcoin without inscriptions
+      - Launch: April 2024 halving block 840,000
+
+    - **[[Ordinals]]** (2023): Serial numbering of satoshis, immutable data inscription
+      - Collections: Ordinal Punks, Bitcoin Frogs, Taproot Wizards, NodeMonkes
+
+    #### Other Platform Standards
+    - **[[SPL Token]]** (Solana): 65,000 TPS, sub-second finality, token extensions (transfer fees, confidential transfers)
+    - **[[Metaplex]]** (Solana NFTs): Compressed NFTs, candy machine minting, 1M NFTs for $110
+    - **[[BEP-20]]** (Binance Smart Chain): ERC-20 compatible, faster and cheaper
+    - **[[TRC-20]]** (TRON): High throughput, low fees for stablecoins (largest USDT supply)
+
+    #### Token Use Cases
+    - **DeFi**: Uniswap (UNI), Aave (AAVE), Curve (CRV), MakerDAO (MKR/DAI), Lido (stETH/LDO)
+    - **NFT Marketplaces**: OpenSea, Blur (BLUR), Magic Eden, LooksRare (LOOKS)
+    - **Gaming & Metaverse**: Axie Infinity (AXS/SLP), The Sandbox (SAND), Decentraland (MANA), Illuvium (ILV)
+    - **Real-World Assets (RWA)**: Ondo Finance (OUSG), Franklin Templeton (BENJI), PAXG (gold), Toucan Protocol (carbon credits)
+
+    #### Token Analytics Platforms
+    - **Multi-Chain**: CoinGecko, CoinMarketCap, Messari, DeFiLlama (TVL tracking)
+    - **Ethereum**: Dune Analytics, Nansen, Etherscan, Glassnode
+    - **Bitcoin**: Blockchain.com, Mempool.space, Ordinals.com, UniSat (BRC-20 indexer)
+    - **NFT**: NFTGo, Icy.tools, Blur Analytics
+
+  - ### Related Concepts and Ecosystem
+    id:: token-ecosystem
+    collapsed:: true
+
+    **Token Infrastructure**:
+    - [[Smart Contract]], [[ERC-20]], [[ERC-721]], [[ERC-1155]], [[RGB Protocol]], [[Taproot Assets]]
+    - [[BRC-20]], [[Runes Protocol]], [[Ordinals]], [[SPL Token]], [[Metaplex]]
+
+    **DeFi Ecosystem**:
+    - [[DeFi]], [[Decentralized Exchange]], [[Liquidity Pool]], [[Automated Market Maker]]
+    - [[Yield Farming]], [[Staking]], [[Lending Protocol]], [[Bridge]]
+
+    **Token Economics**:
+    - [[Tokenomics]], [[Token Distribution]], [[Token Burn]], [[Vesting Schedule]], [[Liquidity Mining]]
+
+    **Governance & DAOs**:
+    - [[DAO]], [[Governance]], [[Proposal]], [[Voting]], [[veTokenomics]]
+
+    **Bitcoin Ecosystem**:
+    - [[Bitcoin]], [[Lightning Network]], [[Taproot]], [[UTXO]], [[Satoshi]]
+
+    **Platforms**:
+    - [[Ethereum]], [[Solana]], [[Polygon]], [[Arbitrum]], [[Optimism]], [[Avalanche]], [[Polkadot]], [[Cosmos]]
+
+    **NFT Ecosystem**:
+    - [[NFT]], [[NFT Marketplace]], [[Metadata]], [[IPFS]], [[Royalties]]
+
+    **Notable Projects**:
+    - [[Uniswap]], [[Aave]], [[MakerDAO]], [[Curve Finance]], [[Compound]], [[Chainlink]], [[Lido]], [[OpenSea]]
+
+    **Regulatory**:
+    - [[KYC]], [[AML]], [[SEC]], [[MiCA]], [[Howey Test]]
+
+  - ### Standards & References
+    id:: token-references
   -

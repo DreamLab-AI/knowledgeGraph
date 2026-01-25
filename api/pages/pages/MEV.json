@@ -7,23 +7,20 @@
     "AI Model Card",
     "Layer2",
     "TokenEconomics",
-    "SmartContract",
     "Smart Contract Platform",
     "Oracle",
-    "ProofOfWork",
-    "ProofOfStake",
-    "Proof of Work",
+    "Proof Of Work",
     "Decentralized Finance"
   ],
   "wiki_links": [
-    "Blockchain",
-    "Transaction Ordering",
-    "Consensus Security",
-    "Mempool",
     "DeFi Ecosystem",
     "Front-Running",
+    "Mempool",
+    "Consensus Security",
+    "BlockchainDomain",
     "Proposer-Builder Separation",
-    "BlockchainDomain"
+    "Transaction Ordering",
+    "Blockchain"
   ],
   "ontology": {
     "term_id": "BC-8012",

@@ -442,7 +442,6 @@ levels:
 *This definition aligns with international transparency standards and regulatory requirements for AI systems.*
 	- maturity:: draft
 	- owl:class:: mv:Transparency
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

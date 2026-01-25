@@ -6,13 +6,13 @@
     "Active Learning"
   ],
   "wiki_links": [
-    "Machine Learning",
-    "Co-Training",
     "Supervised Learning",
-    "Self-Training",
+    "Machine Learning",
+    "Active Learning",
     "Data-Efficient Learning",
-    "Unsupervised Learning",
-    "Active Learning"
+    "Self-Training",
+    "Co-Training",
+    "Unsupervised Learning"
   ],
   "ontology": {
     "term_id": "AI-1011",

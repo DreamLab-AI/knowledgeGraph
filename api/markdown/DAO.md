@@ -2,15 +2,14 @@
   id:: dao-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: bc-1761742247910
+	- term-id:: BC-9983
 	- preferred-term:: DAO
-	- source-domain:: blockchain
+	- source-domain:: bc
 	- status:: draft
 - public-access:: true
 	- definition:: A blockchain-based organization governed by smart contracts and token-based voting.
 	- maturity:: draft
 	- owl:class:: bc:DAO
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[BlockchainDomain]]
 - ## About DAO

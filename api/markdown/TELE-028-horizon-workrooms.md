@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "Meta's enterprise virtual reality telepresence application for Quest headsets, providing immersive meeting rooms where distributed teams collaborate as avatars around virtual conference tables with spatial audio, shared whiteboards, screen sharing, and keyboard passthrough, representing mainstream commercialisation of VR-based remote collaboration."
 	- maturity:: developing
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- #### Relationships
 	  id:: horizon-workrooms-relationships

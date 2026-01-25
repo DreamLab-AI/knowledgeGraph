@@ -8,11 +8,11 @@
     "Immersive Technology"
   ],
   "wiki_links": [
-    "Hardware Acceleration",
     "VR Headset",
-    "Metaverse Access",
+    "metaverse",
+    "Hardware Acceleration",
     "Computing Infrastructure",
-    "metaverse"
+    "Metaverse Access"
   ],
   "ontology": {
     "term_id": "MV-9915",

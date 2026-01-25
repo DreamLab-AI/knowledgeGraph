@@ -11,7 +11,6 @@
 	- public-access:: true
 	- belongsToDomain:: [[Next Generation Mobile]]
 	- owl:class:: ngm:CrossPlatformInteroperability
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 
 ---

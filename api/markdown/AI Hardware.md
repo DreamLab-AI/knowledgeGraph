@@ -10,7 +10,6 @@
 	- definition:: AI Hardware encompasses specialized computing hardware designed to accelerate artificial intelligence and machine learning workloads, including GPUs, TPUs, NPUs, and other AI accelerators optimized for training neural networks and running inference at scale. These processors feature architectures specifically designed for the matrix operations, parallel processing, and low-precision arithmetic fundamental to modern AI algorithms.
 	- maturity:: mature
 	- owl:class:: ai:AiHardware
-	- owl:physicality:: PhysicalEntity
 	- owl:role:: Technology
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships

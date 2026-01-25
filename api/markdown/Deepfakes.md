@@ -2,8 +2,8 @@
   id:: deepfakes-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20238
-	- source-domain:: artificial-intelligence
+	- term-id:: AI-20238
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- preferred-term:: Deepfakes
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[Reed Smith]], [[ISO 29100]]
 	- owl:class:: ai:Deepfakes
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

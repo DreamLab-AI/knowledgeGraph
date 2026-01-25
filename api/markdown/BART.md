@@ -95,7 +95,6 @@ BART trains by corrupting text with an arbitrary noising function and learning t
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:BART
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About BART

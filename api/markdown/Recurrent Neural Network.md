@@ -4,15 +4,14 @@
 	- ontology:: true
 	- term-id:: AI-0033
 	- preferred-term:: Recurrent Neural Network
-- source-domain:: artificial-intelligence
+- source-domain:: ai
 	- status:: draft
 	- definition:: ### Primary Definition
 A **Recurrent Neural Network (RNN)** is a neural network in which outputs from both the previous layer and the previous processing step are fed into the current layer. RNNs maintain internal state (memory), making them suitable for processing sequential data such as time series, natural language, and speech.
 	- maturity:: draft
 	- owl:class:: ai:RecurrentNeuralNetwork
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Recurrent Neural Network
 	- ### Primary Definition
 A **Recurrent Neural Network (RNN)** is a neural network in which outputs from both the previous layer and the previous processing step are fed into the current layer. RNNs maintain internal state (memory), making them suitable for processing sequential data such as time series, natural language, and speech.
@@ -169,14 +168,13 @@ A **Recurrent Neural Network (RNN)** is a neural network in which outputs from b
 		- **Paper**: [Neural networks: An overview of early research, current frameworks and new challenges](https://www.sciencedirect.com/science/article/pii/S0925231216305550?)
 		- {{video https://www.youtube.com/watch?v=aircAruvnKk&}}
 
-- source-domain:: [[Machine Learning Domain]]
+- source-domain:: ai
 	- status:: active
 	- public-access:: true
 	- definition:: ### Primary Definition
 		- A **[[Recurrent Neural Network]] (RNN)** is a [[neural network]] architecture in which outputs from both the previous layer and the previous processing step are fed into the current layer. RNNs maintain internal state (memory), making them suitable for processing [[sequential data]] such as [[time series]], [[natural language]], and [[speech recognition]].
 	- maturity:: mature
-	- owl:class:: ml:RecurrentNeuralNetwork
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: ai:RecurrentNeuralNetwork
 	- owl:role:: Algorithm
 	- belongsToDomain:: [[Machine Learning Domain]]
 	- **[Updated 2025]**: RNNs remain foundational for sequential data processing despite the rise of [[transformer]] architectures
@@ -694,3 +692,6 @@ A **Recurrent Neural Network (RNN)** is a neural network in which outputs from b
 **Navigation**: [← Back to AI/ML Index](../README.md) | [Domain: Machine Learning](../domains/MLDomain.md)
 
 **Recommended Action**: Migrate to dedicated AI/ML Knowledge Graph
+
+
+<!-- Merged from Recurrent-Neural-Network.md: Deep Learning, Machine Learning, Neural Networks, Transformers -->

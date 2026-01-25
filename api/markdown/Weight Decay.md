@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0293
 	- preferred-term:: Weight Decay
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: A regularisation technique that adds a penalty proportional to the magnitude of weights to the loss function, encouraging smaller weight values. Weight decay (L2 regularisation) prevents overfitting by limiting model complexity and promoting simpler solutions.
 
@@ -63,9 +63,8 @@ w ← w - η(∇L + λw)
 **Verification Status**: Verified against ML training literature
 	- maturity:: draft
 	- owl:class:: ai:WeightDecay
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Weight Decay
 	- A regularisation technique that adds a penalty proportional to the magnitude of weights to the loss function, encouraging smaller weight values. Weight decay (L2 regularisation) prevents overfitting by limiting model complexity and promoting simpler solutions.
 

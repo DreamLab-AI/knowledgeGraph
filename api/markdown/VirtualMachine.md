@@ -2,7 +2,7 @@
   id:: virtualmachine-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247979
+	- term-id:: MV-3042
 	- preferred-term:: VirtualMachine
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:VirtualMachine
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About VirtualMachine

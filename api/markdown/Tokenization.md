@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[Reed Smith + OMA3]]
 	- owl:class:: mv:Tokenization
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

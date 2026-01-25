@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0212
 	- preferred-term:: GPT
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: Generative Pre-trained Transformer: an autoregressive language model that uses transformer decoder architecture and is pre-trained on large text corpora using next-token prediction.
 
@@ -108,9 +108,8 @@ GPT demonstrates the effectiveness of unsupervised pre-training using the langua
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: ai:GPT
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About GPT
 	- Generative Pre-trained Transformer: an autoregressive language model that uses transformer decoder architecture and is pre-trained on large text corpora using next-token prediction.
 

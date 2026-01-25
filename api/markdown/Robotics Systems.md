@@ -2,7 +2,7 @@
   id:: robotics-systems-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: RB-0001
+	- term-id:: RB-4001
 	- preferred-term:: Robotics Systems
 	- source-domain:: rb
 	- status:: active
@@ -10,7 +10,6 @@
 	- definition:: The foundational technology domain encompassing autonomous and semi-autonomous mechanical systems, including manipulators, mobile robots, humanoids, and collaborative robots (cobots), along with their control systems, sensors, actuators, kinematics, and the integration of perception, planning, and action for physical world interaction.
 	- maturity:: stable
 	- owl:class:: rb:RoboticsSystems
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Domain
 	- belongsToDomain:: [[Robotics Systems]]
 	- #### Relationships

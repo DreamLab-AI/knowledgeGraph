@@ -1,14 +1,14 @@
 {
   "id": "ModelEvaluationResults",
   "title": "ModelEvaluationResults",
-  "content": "- ### OntologyBlock\n  id:: modelevaluationresults-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-1007\n\t- source-domain:: ai\n\t- preferred-term:: ModelEvaluationResults\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A model evaluation results component in the Artificial Intelligence domain that required by AiModelCard.\n\t- source:: Generated from bridge validation\n\t- maturity:: emerging\n\t- owl:class:: ai:ModelEvaluationResults\n\t- #### Relationships\n- is-subclass-of:: [[ModelArchitecture]]\n\t  id:: modelevaluationresults-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AI Metadata]]",
+  "content": "- ### OntologyBlock\n  id:: modelevaluationresults-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-4008\n\t- source-domain:: ai\n\t- preferred-term:: ModelEvaluationResults\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A model evaluation results component in the Artificial Intelligence domain that required by AiModelCard.\n\t- source:: Generated from bridge validation\n\t- maturity:: emerging\n\t- owl:class:: ai:ModelEvaluationResults\n\t- #### Relationships\n- is-subclass-of:: [[ModelArchitecture]]\n\t  id:: modelevaluationresults-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AI Metadata]]",
   "backlinks": [],
   "wiki_links": [
     "AI Metadata",
     "ModelArchitecture"
   ],
   "ontology": {
-    "term_id": "AI-1007",
+    "term_id": "AI-4008",
     "preferred_term": "ModelEvaluationResults",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/ai#ModelEvaluationResults",

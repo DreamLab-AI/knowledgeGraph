@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0001
 	- preferred-term:: Artificial Intelligence
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: ### Primary Definition
 Artificial intelligence (AI) is the research and development of mechanisms and applications of AI systems. An engineered system that generates outputs such as content, forecasts, recommendations, or decisions for a given set of human-defined objectives. AI systems use machine and human-based inputs to perceive real and virtual environments, abstract such perceptions into models through analysis in an automated manner, and use model inference to formulate options for information or action.
@@ -337,9 +337,8 @@ conversational_ai:
 **Authority Score**: 0.95 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST ✓ EU AI Act ✓ OECD
 	- maturity:: draft
 	- owl:class:: ai:ArtificialIntelligence
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Artificial Intelligence
 	- ### Primary Definition
 Artificial intelligence (AI) is the research and development of mechanisms and applications of AI systems. An engineered system that generates outputs such as content, forecasts, recommendations, or decisions for a given set of human-defined objectives. AI systems use machine and human-based inputs to perceive real and virtual environments, abstract such perceptions into models through analysis in an automated manner, and use model inference to formulate options for information or action.

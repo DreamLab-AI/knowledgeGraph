@@ -10,7 +10,6 @@
 	- definition:: A regulatory framework for blockchain and cryptoassets comprises the laws, regulations, guidelines, and supervisory structures established by governmental authorities to govern the issuance, trading, and custody of digital assets. These frameworks address consumer protection, market integrity, anti-money laundering (AML) compliance, and financial stability whilst balancing innovation enablement with risk mitigation.
 	- maturity:: reviewed
 	- owl:class:: ngm:RegulatoryFramework
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Blockchain]]
 

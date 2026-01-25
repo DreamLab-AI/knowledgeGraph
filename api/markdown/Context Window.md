@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0238
 	- preferred-term:: Context Window
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: The maximum sequence length that a model can process at once, determining how much prior context it can consider during generation or understanding tasks.
 
@@ -92,9 +92,8 @@ LongRAG retrieves compressed long-context chunks to better exploit long-context 
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: ai:ContextWindow
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Context Window
 	- The maximum sequence length that a model can process at once, determining how much prior context it can consider during generation or understanding tasks.
 

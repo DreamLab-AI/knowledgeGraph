@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:BlockPropagationTime
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[CryptographicDomain]]

@@ -11,7 +11,6 @@
 	- public-access:: true
 	- belongsToDomain:: [[Metaverse]]
 	- owl:class:: ngm:RenderingEngine
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 
 ## Major Real-Time Engines (2025)

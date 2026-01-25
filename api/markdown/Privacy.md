@@ -572,7 +572,6 @@ def dp_sgd(data, model, epsilon, delta):
 *This definition emphasizes privacy as a fundamental right and design principle, requiring technical, organizational, and legal measures throughout the AI lifecycle.*
 	- maturity:: draft
 	- owl:class:: mv:Privacy
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Privacy

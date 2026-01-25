@@ -2,7 +2,7 @@
   id:: limited-risk-ai-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247942
+	- term-id:: MV-3003
 	- preferred-term:: Limited Risk AI
 	- source-domain:: mv
 	- status:: draft
@@ -290,7 +290,6 @@ Similar transparency requirements exist in:
 - Coalition for Content Provenance and Authenticity (C2PA) standards
 	- maturity:: draft
 	- owl:class:: mv:LimitedRiskAI
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Limited Risk AI

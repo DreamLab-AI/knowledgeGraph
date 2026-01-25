@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0214
 	- preferred-term:: GPT 3
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: An autoregressive language model with 175 billion parameters, 10× larger than any previous non-sparse language model, demonstrating few-shot and zero-shot learning capabilities without fine-tuning.
 
@@ -130,9 +130,8 @@ GPT-3's in-context learning allows it to adapt to new tasks purely through text 
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: ai:GPT3
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About GPT 3
 	- An autoregressive language model with 175 billion parameters, 10× larger than any previous non-sparse language model, demonstrating few-shot and zero-shot learning capabilities without fine-tuning.
 

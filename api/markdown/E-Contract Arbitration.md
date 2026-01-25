@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[UNCITRAL ODR Model]]
 	- owl:class:: mv:EContractArbitration
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

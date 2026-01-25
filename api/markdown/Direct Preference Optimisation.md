@@ -106,7 +106,6 @@ Where:
 **Verification Status**: Verified against DPO paper (arXiv:2305.18290)
 	- maturity:: draft
 	- owl:class:: mv:DirectPreferenceOptimisation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Direct Preference Optimisation

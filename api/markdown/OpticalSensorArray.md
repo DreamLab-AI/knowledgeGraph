@@ -4,7 +4,7 @@ id:: opticalsensorarray-ontology
   id:: OpticalSensorArray
   - ontology:: true
   - public-access:: true
-  - term-id:: RB-1001
+  - term-id:: RB-4000
   - preferred-term:: OpticalSensorArray
   - source-domain:: rb
   - status:: complete

@@ -19,10 +19,9 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:IoTAIIntegration
-    - owl:physicality:: VirtualEntity
+    - owl:class:: ai:IoTAIIntegration
     - owl:role:: Process
-    - owl:inferred-class:: aigo:VirtualProcess
+    - owl:inferred-class:: ai:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 
@@ -73,3 +72,6 @@
   -
   
 
+
+
+<!-- Merged from IoT AI Integration (AI-0438).md: Update Cycle -->

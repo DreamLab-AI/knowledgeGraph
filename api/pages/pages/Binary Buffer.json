@@ -6,17 +6,17 @@
     "glTF (3D File Format)"
   ],
   "wiki_links": [
-    "Data Structure",
-    "Data Transfer",
-    "Data Formatting",
-    "Buffer Management",
-    "Vertex Buffer",
     "Framebuffer",
-    "Memory Management",
     "metaverse",
+    "Data Formatting",
+    "Data Transfer",
+    "Data Structure",
     "Memory Allocation",
+    "Vertex Buffer",
     "Stream Processing",
-    "Graphics Rendering"
+    "Memory Management",
+    "Graphics Rendering",
+    "Buffer Management"
   ],
   "ontology": {
     "term_id": "MV-9799",

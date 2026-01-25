@@ -19,10 +19,9 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:IEEE7000SeriesStandards
-    - owl:physicality:: VirtualEntity
+    - owl:class:: ai:IEEE7000SeriesStandards
     - owl:role:: Process
-    - owl:inferred-class:: aigo:VirtualProcess
+    - owl:inferred-class:: ai:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 
@@ -101,3 +100,6 @@
   - 
   -
   
+
+
+<!-- Merged from IEEE 7000 Series Standards.md: Artificial Intelligence, DisruptiveTechDomain -->

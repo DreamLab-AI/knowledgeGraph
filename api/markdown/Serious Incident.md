@@ -2,7 +2,7 @@
   id:: serious-incident-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247968
+	- term-id:: MV-3062
 	- preferred-term:: Serious Incident
 	- source-domain:: mv
 	- status:: draft
@@ -216,7 +216,6 @@ Aggregated incident data enables:
 - Market Surveillance Regulation (EU) 2019/1020
 	- maturity:: draft
 	- owl:class:: mv:SeriousIncident
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Serious Incident

@@ -2,14 +2,13 @@
   id:: cbdc-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20131
+	- term-id:: MV-20131
 	- source-domain:: mv
 	- preferred-term:: Central Bank Digital Currency (CBDC)
 	- definition:: Sovereign digital currency issued and backed by a central bank for use in retail or wholesale payment systems, functioning as legal tender in digital form.
 	- maturity:: mature
 	- source:: [[BIS CBDC Blueprint]], [[IMF CBDC Notes]], [[ISO 24165]]
 	- owl:class:: mv:CBDC
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

@@ -11,7 +11,6 @@
 		- definition:: [Generated from Gartner emerging tech analysis]
 	- #### Semantic Classification
 		- owl:class:: mv:AI-AugmentedSoftwareEngineering
-		- owl:physicality:: ConceptualEntity
 		- owl:role:: Concept
 		- maturity:: emerging
 		- authority-score:: 0.95

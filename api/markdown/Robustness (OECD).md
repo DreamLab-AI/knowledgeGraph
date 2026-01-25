@@ -206,8 +206,7 @@ Different robustness priorities across domains:
 *Part of AI Grounded Ontology - OECD AI Principles Framework*
 *Aligned with OECD AI Principles 2024 and EU AI Act technical requirements*
 	- maturity:: draft
-	- owl:class:: mv:Robustness(OECD)
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: mv:RobustnessOECD
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Robustness (OECD)

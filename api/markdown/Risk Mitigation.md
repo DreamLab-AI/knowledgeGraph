@@ -10,7 +10,6 @@
 	- definition:: Actions taken to reduce the likelihood or impact of identified AI risks through technical, organizational, or procedural controls, implemented throughout the AI lifecycle to achieve acceptable risk levels.
 	- maturity:: draft
 	- owl:class:: mv:RiskMitigation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

@@ -11,7 +11,6 @@
 A **Residual Network (ResNet)** is a deep neural network architecture that uses skip connections (residual connections) to allow gradients to flow directly through the network, enabling training of very deep networks (100+ layers) without degradation in performance.
 	- maturity:: draft
 	- owl:class:: mv:ResidualNetwork
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Residual Network

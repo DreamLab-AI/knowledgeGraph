@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO 14040]], [[GHG Protocol]], [[EU Ecodesign Directive]]
 	- owl:class:: mv:EnvironmentalImpactMetric
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

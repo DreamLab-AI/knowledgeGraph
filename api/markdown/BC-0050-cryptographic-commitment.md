@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:CryptographicCommitment
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[CryptographicDomain]]
@@ -115,3 +114,6 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0050>
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
   -
 
+
+
+<!-- Merged from Cryptographic Commitment.md: Alby, Anthropic, NIP-05, OpenAI -->

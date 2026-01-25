@@ -2,7 +2,7 @@
   id:: edge-network-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20143
+	- term-id:: MV-20143
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[ETSI ARF 010]], [[IEEE P2048-3]]
 	- owl:class:: mv:EdgeNetwork
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

@@ -486,7 +486,6 @@ scope:
 *This definition aligns with the growing consensus that interpretability should be a design goal for high-stakes AI systems.*
 	- maturity:: draft
 	- owl:class:: mv:Interpretability
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

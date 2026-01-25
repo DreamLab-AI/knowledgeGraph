@@ -19,10 +19,9 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:EdgeCloudCollaboration
-    - owl:physicality:: VirtualEntity
+    - owl:class:: ai:EdgeCloudCollaboration
     - owl:role:: Process
-    - owl:inferred-class:: aigo:VirtualProcess
+    - owl:inferred-class:: ai:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 
@@ -108,3 +107,6 @@
                 self.policy = "adaptive"
     ```
 
+
+
+<!-- Merged from Edge-Cloud Collaboration (AI-0436).md: Metaverse and Telecollaboration -->

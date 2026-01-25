@@ -11,7 +11,6 @@
 An **Autoencoder** is a neural network trained to reconstruct its input by learning a compressed latent representation. It consists of an encoder that maps input to a lower-dimensional space and a decoder that reconstructs the original input from this representation.
 	- maturity:: draft
 	- owl:class:: mv:Autoencoder
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Autoencoder

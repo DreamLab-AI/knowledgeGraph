@@ -2,7 +2,7 @@
   id:: aisystem-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247878
+	- term-id:: MV-3010
 	- preferred-term:: AISystem
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:AISystem
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 
@@ -46,10 +45,10 @@
 		    - **TRL:** 7
 		    - **Quality Score:** 0.91
 		    - ```turtle
-		      aigo:AISystem rdf:type owl:Class ;
+		      ai:AISystem rdf:type owl:Class ;
 		          rdfs:label "AI System"@en ;
 		          rdfs:comment "A complete artificial intelligence system comprising models, data pipelines, and deployment infrastructure."@en ;
-		          meta:sourceOntology "aigo:" ;
+		          meta:sourceOntology "ai:" ;
 		          meta:technologyDomain "artificial-intelligence" ;
 		          meta:disruptiveTechCategory "artificial-intelligence-systems" ;
 		          meta:technologyReadinessLevel "7"^^xsd:integer ;

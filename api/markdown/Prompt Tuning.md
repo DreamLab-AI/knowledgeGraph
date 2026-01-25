@@ -4,7 +4,7 @@
 	- ontology:: true
 	- term-id:: AI-0251
 	- preferred-term:: Prompt Tuning
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - definition:: A parameter-efficient fine-tuning method that learns continuous prompt embeddings prepended to the input whilst keeping the pre-trained model frozen. Prompt tuning optimises task-specific soft prompts in the embedding space rather than modifying model weights.
 
@@ -135,9 +135,8 @@ Prompt tuning democratises access to large model adaptation by enabling effectiv
 **Verification Status**: Verified against PEFT survey (2023)
 	- maturity:: draft
 	- owl:class:: ai:PromptTuning
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Prompt Tuning
 	- A parameter-efficient fine-tuning method that learns continuous prompt embeddings prepended to the input whilst keeping the pre-trained model frozen. Prompt tuning optimises task-specific soft prompts in the embedding space rather than modifying model weights.
 

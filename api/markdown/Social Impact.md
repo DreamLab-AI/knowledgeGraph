@@ -273,7 +273,6 @@ While not explicitly separate in OECD 2024, social impact is implicit throughout
 *Aligned with OECD AI Principles 2024 and social impact assessment frameworks*
 	- maturity:: draft
 	- owl:class:: mv:SocialImpact
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Social Impact

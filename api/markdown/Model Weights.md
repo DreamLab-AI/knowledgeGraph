@@ -4,16 +4,15 @@
 	- ontology:: true
 	- term-id:: AI-0052
 	- preferred-term:: Model Weights
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: ### Primary Definition
 **Model Weights** are the learnable parameters in a neural network that represent connection strengths between neurons. Weights are multiplied with inputs and adjusted during training to minimise loss.
 	- maturity:: draft
 	- owl:class:: ai:ModelWeights
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Model Weights
 	- ### Primary Definition
 **Model Weights** are the learnable parameters in a neural network that represent connection strengths between neurons. Weights are multiplied with inputs and adjusted during training to minimise loss.

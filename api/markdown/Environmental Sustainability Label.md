@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO 14021]]
 	- owl:class:: mv:EnvironmentalSustainabilityLabel
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

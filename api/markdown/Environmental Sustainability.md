@@ -226,7 +226,6 @@ The 2024 OECD revision significantly elevated environmental sustainability by:
 *Aligned with OECD AI Principles 2024, UN SDGs and Paris Agreement*
 	- maturity:: draft
 	- owl:class:: mv:EnvironmentalSustainability
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Environmental Sustainability

@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:ConsensusMechanism
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[ConsensusDomain]]
@@ -135,3 +134,6 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0051>
     - [[ITU-T Y.3051]] - Blockchain and distributed ledger technologies
     - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
   -
+
+
+<!-- Merged from ConsensusMechanism.md: BlockchainDomain -->

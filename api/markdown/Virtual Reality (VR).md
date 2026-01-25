@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[IEEE VR Standards]], [[Khronos OpenXR]], [[ISO/IEC 18039]]
 	- owl:class:: mv:VirtualReality
-	- owl:physicality:: HybridEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:HybridObject
 	- owl:functional-syntax:: true

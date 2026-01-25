@@ -2,7 +2,7 @@
   id:: ai-board-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247869
+	- term-id:: MV-3025
 	- preferred-term:: AI Board
 	- source-domain:: mv
 	- status:: draft
@@ -300,7 +300,6 @@ AI Board publishes:
 - AI Board Guidelines Repository (expected from 2025)
 	- maturity:: draft
 	- owl:class:: mv:AIBoard
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About AI Board

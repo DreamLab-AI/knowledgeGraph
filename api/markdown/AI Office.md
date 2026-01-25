@@ -2,7 +2,7 @@
   id:: ai-office-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247872
+	- term-id:: MV-3039
 	- preferred-term:: AI Office
 	- source-domain:: mv
 	- status:: draft
@@ -310,7 +310,6 @@ AI Office coordinates:
 - AI Office website: https://digital-strategy.ec.europa.eu/ai-office (expected)
 	- maturity:: draft
 	- owl:class:: mv:AIOffice
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About AI Office

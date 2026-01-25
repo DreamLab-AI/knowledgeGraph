@@ -2,7 +2,7 @@
   id:: delivery-manifest-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247910
+	- term-id:: MV-3022
 	- preferred-term:: DELIVERY MANIFEST
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:DELIVERYMANIFEST
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

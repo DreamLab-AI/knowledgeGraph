@@ -11,7 +11,6 @@
 	- maturity:: emerging
 	- source:: [[MSF Use Case Register]], [[ETSI GR ARF 010]]
 	- owl:class:: mv:UniversalManifest
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

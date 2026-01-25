@@ -10,7 +10,6 @@
 	- definition:: A governance framework is a structured system of policies, processes, procedures, and controls that organisations use to align their technology resources and operations with business objectives. It provides the foundation for strategic decision-making, risk management, resource optimisation, performance measurement, and compliance, ensuring that technology investments deliver value while maintaining accountability and transparency.
 	- maturity:: reviewed
 	- owl:class:: ngm:GovernanceFramework
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Core Technology]]
 

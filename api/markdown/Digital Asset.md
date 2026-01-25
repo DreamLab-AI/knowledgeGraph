@@ -2,7 +2,7 @@
   id:: digitalasset-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20109
+	- term-id:: MV-20109
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[MSF Use Cases]], [[ETSI GR ARF 010]]
 	- owl:class:: mv:DigitalAsset
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

@@ -11,7 +11,6 @@
 	- source:: [[Soft Robotics]], [[Materials Science]]
 	- maturity:: emerging
 	- owl:class:: rb:ShapeMemoryAlloyActuator
-	- owl:physicality:: Physical
 	- owl:role:: Object
 	- belongsToDomain:: [[RoboticsDomain]]
 	- is-subclass-of:: [[Robotics]]

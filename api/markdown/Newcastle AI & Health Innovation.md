@@ -2,7 +2,7 @@
   id:: newcastle-ai-and-health-innovation-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: UK-001
+	- term-id:: NGM-1004
 	- preferred-term:: Newcastle AI & Health Innovation
 	- source-domain:: uk-regional
 	- status:: active
@@ -11,8 +11,7 @@
 	- maturity:: established
 	- region:: North East England
 	- focus-areas:: AI, Health Tech, Research
-	- owl:class:: uk:NewcastleAIAndHealthInnovation
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: ngm:NewcastleAIAndHealthInnovation
 	- owl:role:: RegionalEcosystem
 	- belongsToDomain:: [[UKTechEcosystem]]
 

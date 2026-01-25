@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[Digital Preservation Standards]]
 	- owl:class:: mv:CollectiveMemoryArchive
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

@@ -78,7 +78,6 @@ CutMix extends Mixup's interpolation concept to spatial domains, improving perfo
 **Verification Status**: Verified against augmentation literature
 	- maturity:: draft
 	- owl:class:: mv:CutMix
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About CutMix

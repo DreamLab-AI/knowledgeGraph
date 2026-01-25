@@ -4,7 +4,7 @@ id:: privacypreservinganalytics-ontology
   id:: PrivacyPreservingAnalytics
   - ontology:: true
   - public-access:: true
-  - term-id:: AI-1005
+  - term-id:: AI-4013
   - preferred-term:: PrivacyPreservingAnalytics
   - source-domain:: ai
   - status:: complete

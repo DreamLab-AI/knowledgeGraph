@@ -10,7 +10,6 @@
 	- definition:: The Robotics Domain encompasses intelligent machines and automated systems, providing a formal ontological framework for knowledge representation, autonomous reasoning, and robotic behaviors. It includes concepts for robot architectures, sensor systems, actuators, motion planning, human-robot interaction, and autonomous decision-making, enabling unambiguous knowledge transfer among humans, robots, and artificial systems.
 	- maturity:: reviewed
 	- owl:class:: rb:Roboticsdomain
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Domain
 	- belongsToDomain:: [[TechnologyDomain]]
 

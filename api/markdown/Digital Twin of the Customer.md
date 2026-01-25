@@ -10,7 +10,6 @@
 	- definition:: [Generated from Gartner emerging tech analysis]
 	- maturity:: emerging
 	- owl:class:: mv:DigitalTwinoftheCustomer
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- category:: Spatial & Immersive

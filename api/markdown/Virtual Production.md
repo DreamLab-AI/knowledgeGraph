@@ -13,7 +13,7 @@ public:: true
   - domain-prefix:: XR
   - sequence-number:: VPROD-001
   - preferred-term:: Virtual Production
-  - source-domain:: xr-metaverse
+  - source-domain:: mv
   - status:: complete
   - belongsToDomain:: [[XRDomain]], [[MediaProductionDomain]], [[GameEngineDomain]]
   - qualityScore:: 0.94

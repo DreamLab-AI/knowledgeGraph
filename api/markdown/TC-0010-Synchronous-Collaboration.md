@@ -11,7 +11,6 @@ Synchronous Collaboration
   - public-access:: true
   - definition:: "Real-time interaction mode where distributed participants engage simultaneously through technology-mediated channels, enabling immediate feedback, spontaneous ideation, and social presence comparable to co-located teamwork."
   - maturity:: mature
-  - owl:physicality:: Process
   - owl:role:: CollaborationMode
 
 ### Relationships

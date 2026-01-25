@@ -10,7 +10,6 @@
 	- definition:: The top-level ontological domain classification encompassing all concepts related to artificial intelligence, including research methodologies, system architectures, learning paradigms, application domains, and governance frameworks for intelligent computational systems.
 	- maturity:: stable
 	- owl:class:: ai:ArtificialIntelligenceDomain
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Domain
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships

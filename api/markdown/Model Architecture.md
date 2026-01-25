@@ -4,7 +4,7 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9968
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- preferred-term:: Model Architecture
 	- status:: active
 	- owl:class:: ai:ModelArchitecture

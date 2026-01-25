@@ -90,7 +90,6 @@ The scaling factor (1/√d_k) is crucial for large dimension values, as dot prod
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:ScaledDotProductAttention
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Scaled Dot Product Attention

@@ -2,7 +2,7 @@
   id:: systemic-risk-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247974
+	- term-id:: MV-3073
 	- preferred-term:: Systemic Risk
 	- source-domain:: mv
 	- status:: draft
@@ -193,7 +193,6 @@ Similar concepts in:
 - AI Office (AI-0125)
 	- maturity:: draft
 	- owl:class:: mv:SystemicRisk
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Systemic Risk

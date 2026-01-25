@@ -18,7 +18,6 @@
 
 - **Semantic Classification**
   - owl:class:: rb:AdaptiveControl
-  - owl:physicality:: Abstract
   - owl:role:: Method
   - belongsToDomain:: [[Robotics]], [[Control Theory]], [[Machine Learning]]
 
@@ -90,3 +89,6 @@
   - authority-score:: 0.95
   - completeness:: 0.91
   - accuracy:: 0.93
+
+
+<!-- Merged from Adaptive Control.md: RoboticsDomain -->

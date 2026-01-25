@@ -62,7 +62,6 @@ XLNet addresses BERT's limitations by using permutation language modelling, whic
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:XLNet
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About XLNet

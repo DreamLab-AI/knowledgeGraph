@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[Khronos Group]], [[EWG/MSF taxonomy]]
 	- owl:class:: mv:glTFFormat
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

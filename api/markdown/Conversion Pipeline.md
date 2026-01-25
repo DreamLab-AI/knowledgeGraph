@@ -2,7 +2,7 @@
   id:: conversion-pipeline-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20104
+	- term-id:: MV-4002
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[MSF Taxonomy 2025]], [[SIGGRAPH Pipeline WG]]
 	- owl:class:: mv:ConversionPipeline
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

@@ -2,15 +2,14 @@
   id:: erc20-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: bc-1761742247916
+	- term-id:: BC-9985
 	- preferred-term:: ERC20
-	- source-domain:: blockchain
+	- source-domain:: bc
 	- status:: draft
 - public-access:: true
 	- definition:: The Ethereum fungible token standard defining a common interface for token transfers and balances.
 	- maturity:: draft
 	- owl:class:: bc:ERC20
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[BlockchainDomain]]
 - ## About ERC20

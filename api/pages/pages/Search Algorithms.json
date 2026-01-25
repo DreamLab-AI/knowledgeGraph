@@ -1,7 +1,7 @@
 {
   "id": "Search Algorithms",
   "title": "Search Algorithms",
-  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1003\n  - preferred-term:: Search Algorithms\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:SearchAlgorithms\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]\n  collapsed:: true\n  - #### Inverse Relationships (Inferred by Reasoner)\n    - A-Star Algorithm is-subclass-of Search Algorithms\n    - Minimax Algorithm is-subclass-of Search Algorithms\n    - Monte Carlo Tree Search is-subclass-of Search Algorithms\n- skos:related:: [[Optimization]]\n- skos:related:: [[Graph Theory]]\n- enables:: [[Planning and Scheduling]]\n- enables:: [[Pathfinding]]\n\n### Definition\nSearch algorithms are computational methods used to navigate through problem spaces to find solutions, optimal paths, or goal states. They systematically explore possible states and transitions, employing various strategies such as breadth-first, depth-first, heuristic-guided, or adversarial search to efficiently discover solutions to complex problems.\n\n### Categories\n**Uninformed Search:**\n- Breadth-first search (BFS)\n- Depth-first search (DFS)\n- Uniform cost search\n\n**Informed Search:**\n- Greedy best-first search\n- A* algorithm\n- Iterative deepening A*\n\n**Adversarial Search:**\n- Minimax\n- Alpha-beta pruning\n- Monte Carlo Tree Search\n\n**Local Search:**\n- Hill climbing\n- Simulated annealing\n- Genetic algorithms\n\n### Applications\n- Route planning and navigation\n- Game playing (chess, Go)\n- Scheduling and resource allocation\n- Puzzle solving\n- Robotics path planning",
+  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-4000\n  - preferred-term:: Search Algorithms\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:SearchAlgorithms\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]\n  collapsed:: true\n  - #### Inverse Relationships (Inferred by Reasoner)\n    - A-Star Algorithm is-subclass-of Search Algorithms\n    - Minimax Algorithm is-subclass-of Search Algorithms\n    - Monte Carlo Tree Search is-subclass-of Search Algorithms\n- skos:related:: [[Optimization]]\n- skos:related:: [[Graph Theory]]\n- enables:: [[Planning and Scheduling]]\n- enables:: [[Pathfinding]]\n\n### Definition\nSearch algorithms are computational methods used to navigate through problem spaces to find solutions, optimal paths, or goal states. They systematically explore possible states and transitions, employing various strategies such as breadth-first, depth-first, heuristic-guided, or adversarial search to efficiently discover solutions to complex problems.\n\n### Categories\n**Uninformed Search:**\n- Breadth-first search (BFS)\n- Depth-first search (DFS)\n- Uniform cost search\n\n**Informed Search:**\n- Greedy best-first search\n- A* algorithm\n- Iterative deepening A*\n\n**Adversarial Search:**\n- Minimax\n- Alpha-beta pruning\n- Monte Carlo Tree Search\n\n**Local Search:**\n- Hill climbing\n- Simulated annealing\n- Genetic algorithms\n\n### Applications\n- Route planning and navigation\n- Game playing (chess, Go)\n- Scheduling and resource allocation\n- Puzzle solving\n- Robotics path planning",
   "backlinks": [
     "Planning and Scheduling",
     "Automated Planning",
@@ -10,14 +10,14 @@
     "Minimax Algorithm"
   ],
   "wiki_links": [
+    "Artificial Intelligence",
     "Graph Theory",
-    "Pathfinding",
-    "Optimization",
     "Planning and Scheduling",
-    "Artificial Intelligence"
+    "Pathfinding",
+    "Optimization"
   ],
   "ontology": {
-    "term_id": "AI-1003",
+    "term_id": "AI-4000",
     "preferred_term": "Search Algorithms",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/ai#SearchAlgorithms",

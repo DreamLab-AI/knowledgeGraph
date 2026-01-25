@@ -9,7 +9,6 @@
 	- maturity:: mature
 	- source:: [[ETSI GR ARF 010]], [[OMA3]], [[ISO/IEC 30170]]
 	- owl:class:: mv:APIStandard
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

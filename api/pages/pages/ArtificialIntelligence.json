@@ -1,23 +1,24 @@
 {
   "id": "ArtificialIntelligence",
   "title": "ArtificialIntelligence",
-  "content": "- ### OntologyBlock\n  id:: artificialintelligence-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7000\n\t- preferred-term:: ArtificialIntelligence\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A CamelCase reference variant for the Artificial Intelligence concept, representing the field of computer science dedicated to creating systems capable of perception, reasoning, learning, and autonomous action. See [[Artificial Intelligence]] for the canonical domain entry.\n\t- maturity:: stable\n\t- owl:class:: ngm:ArtificialIntelligence\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: artificialintelligence-relationships\n\t  collapsed:: true\n\t\t- owl:sameAs:: [[Artificial Intelligence]]\n\t\t- is-subclass-of:: [[Technology Domain]]\n\t\t  collapsed:: true\n\t\t  - #### Subfields (Inferred by Reasoner)\n\t\t    - Machine Learning is-subclass-of ArtificialIntelligence\n\t\t    - Deep Learning is-subclass-of ArtificialIntelligence\n\t\t    - Natural Language Processing is-subclass-of ArtificialIntelligence\n\t\t    - Computer Vision is-subclass-of ArtificialIntelligence\n\t\t    - Autonomous AI Agents is-subclass-of ArtificialIntelligence\n\t\t- bridges-to:: [[Blockchain Technology]]\n\t\t- bridges-to:: [[Metaverse Technology]]\n\t\t- bridges-to:: [[Robotics Systems]]\n\t\t- bridges-to:: [[Telecollaboration]]\n\n## Definition\n\n**ArtificialIntelligence** is the CamelCase variant reference for the [[Artificial Intelligence]] domain concept. This page exists to support ontology tools and systems that prefer single-token identifiers without spaces.\n\n## Canonical Reference\n\nFor the complete definition, scope, and relationships, see the canonical entry:\n- [[Artificial Intelligence]] (AI-0001)\n\n## Purpose\n\nThis concept variant:\n- Enables CamelCase linking patterns in Logseq\n- Supports automated ontology processing tools\n- Maintains bidirectional equivalence with canonical entry\n- Facilitates import/export with external ontologies\n\n## ISO/IEC 22989:2022 Definition\n\nAn engineered system that generates outputs such as content, forecasts, recommendations, or decisions for a given set of human-defined objectives. AI systems use machine and human-based inputs to perceive real and virtual environments, abstract such perceptions into models through analysis in an automated manner, and use model inference to formulate options for information or action.\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from stub\n- **Authority Score**: 0.95\n- **References**: 68 pages reference this concept\n- **Canonical Entry**: [[Artificial Intelligence]]",
+  "content": "- ### OntologyBlock\n  id:: artificialintelligence-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7000\n\t- preferred-term:: ArtificialIntelligence\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A CamelCase reference variant for the Artificial Intelligence concept, representing the field of computer science dedicated to creating systems capable of perception, reasoning, learning, and autonomous action. See [[Artificial Intelligence]] for the canonical domain entry.\n\t- maturity:: stable\n\t- owl:class:: ngm:ArtificialIntelligence\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: artificialintelligence-relationships\n\t  collapsed:: true\n\t\t- owl:sameAs:: [[Artificial Intelligence]]\n\t\t- is-subclass-of:: [[Technology Domain]]\n\t\t  collapsed:: true\n\t\t  - #### Subfields (Inferred by Reasoner)\n\t\t    - Machine Learning is-subclass-of ArtificialIntelligence\n\t\t    - Deep Learning is-subclass-of ArtificialIntelligence\n\t\t    - Natural Language Processing is-subclass-of ArtificialIntelligence\n\t\t    - Computer Vision is-subclass-of ArtificialIntelligence\n\t\t    - Autonomous AI Agents is-subclass-of ArtificialIntelligence\n\t\t- bridges-to:: [[Blockchain Technology]]\n\t\t- bridges-to:: [[Metaverse Technology]]\n\t\t- bridges-to:: [[Robotics Systems]]\n\t\t- bridges-to:: [[Telecollaboration]]\n\n## Definition\n\n**ArtificialIntelligence** is the CamelCase variant reference for the [[Artificial Intelligence]] domain concept. This page exists to support ontology tools and systems that prefer single-token identifiers without spaces.\n\n## Canonical Reference\n\nFor the complete definition, scope, and relationships, see the canonical entry:\n- [[Artificial Intelligence]] (AI-0001)\n\n## Purpose\n\nThis concept variant:\n- Enables CamelCase linking patterns in Logseq\n- Supports automated ontology processing tools\n- Maintains bidirectional equivalence with canonical entry\n- Facilitates import/export with external ontologies\n\n## ISO/IEC 22989:2022 Definition\n\nAn engineered system that generates outputs such as content, forecasts, recommendations, or decisions for a given set of human-defined objectives. AI systems use machine and human-based inputs to perceive real and virtual environments, abstract such perceptions into models through analysis in an automated manner, and use model inference to formulate options for information or action.\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from stub\n- **Authority Score**: 0.95\n- **References**: 68 pages reference this concept\n- **Canonical Entry**: [[Artificial Intelligence]]",
   "backlinks": [
     "TELE-105-real-time-language-translation",
     "AI-Augmented Software Engineering",
+    "robotics-core-concepts",
     "PrivateBlockchain",
+    "RobotLearning",
     "TELE-100-ai-avatars",
     "MetaverseDomain",
-    "RoboticsDomain",
-    "Loss-Function"
+    "RoboticsDomain"
   ],
   "wiki_links": [
     "Metaverse Technology",
     "Robotics Systems",
-    "Technology Domain",
     "Blockchain Technology",
     "Artificial Intelligence",
-    "Telecollaboration"
+    "Telecollaboration",
+    "Technology Domain"
   ],
   "ontology": {
     "term_id": "NGM-7000",
@@ -38,7 +39,7 @@
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "ngm:ArtificialIntelligence",
-    "owl_physicality": "ConceptualEntity",
+    "owl_physicality": null,
     "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
@@ -61,7 +62,8 @@
     "validation": {
       "is_valid": false,
       "errors": [
-        "Missing required property: last-updated"
+        "Missing required property: last-updated",
+        "Missing required property: owl:physicality"
       ]
     }
   }

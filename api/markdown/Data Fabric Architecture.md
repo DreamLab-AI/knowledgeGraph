@@ -2,7 +2,7 @@
   id:: data-fabric-architecture-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20105
+	- term-id:: MV-20105
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: emerging
 	- source:: [[W3C Data Fabric BP]], [[FAIR DO]], [[Gartner Data Fabric Research]]
 	- owl:class:: mv:DataFabricArchitecture
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

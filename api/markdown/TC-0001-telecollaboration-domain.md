@@ -11,7 +11,6 @@ Telecollaboration Domain Root
   - public-access:: true
   - definition:: "The domain of knowledge encompassing technology-mediated collaboration, distributed teamwork, remote presence systems, and virtual cooperation platforms enabling humans to work together effectively across geographical and temporal boundaries."
   - maturity:: mature
-  - owl:physicality:: ConceptualEntity
   - owl:role:: Domain
   - is-subclass-of:: [[Technology Domain]]
 

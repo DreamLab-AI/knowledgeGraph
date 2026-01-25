@@ -2,7 +2,7 @@
   id:: national-competent-authority-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247949
+	- term-id:: MV-3056
 	- preferred-term:: National Competent Authority
 	- source-domain:: mv
 	- status:: draft
@@ -294,7 +294,6 @@ Authorities publish:
 - Commission Guidance on Authority Designation (expected 2025)
 	- maturity:: draft
 	- owl:class:: mv:NationalCompetentAuthority
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About National Competent Authority

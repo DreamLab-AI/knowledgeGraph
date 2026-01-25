@@ -90,7 +90,6 @@ Positional encoding provides essential information that distinguishes the positi
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:PositionalEncoding
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Positional Encoding

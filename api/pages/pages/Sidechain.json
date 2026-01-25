@@ -5,22 +5,21 @@
   "backlinks": [
     "Layer2Scaling",
     "Layer2",
-    "SmartContract",
     "Proof Of Authority"
   ],
   "wiki_links": [
-    "Blockchain",
     "State Channel",
-    "Two-Way Peg",
-    "Scalability Solutions",
-    "Polygon PoS",
-    "Federated Byzantine Agreement",
     "Cross-Chain Bridge",
-    "Layer 1",
-    "Rollup",
     "Ronin",
+    "Rollup",
+    "Polygon PoS",
+    "Liquid Network",
     "Gnosis Chain",
-    "Liquid Network"
+    "Layer 1",
+    "Scalability Solutions",
+    "Federated Byzantine Agreement",
+    "Two-Way Peg",
+    "Blockchain"
   ],
   "ontology": {
     "term_id": "BC-8016",

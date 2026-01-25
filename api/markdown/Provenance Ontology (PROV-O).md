@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[W3C PROV-O Recommendation]]
 	- owl:class:: mv:ProvenanceOntology
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

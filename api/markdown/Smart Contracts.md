@@ -10,7 +10,6 @@
 	- definition:: Self-executing programs stored on a blockchain that automatically enforce and execute the terms of an agreement when predetermined conditions are met, eliminating the need for intermediaries and enabling trustless, transparent, and immutable transaction automation. Smart contracts encode business logic in deterministic code that runs identically across all network nodes, ensuring consensus on execution outcomes.
 	- maturity:: reviewed
 	- owl:class:: bc:SmartContracts
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Process
 	- belongsToDomain:: [[Blockchain]]
 	- belongsToDomain:: [[Decentralized Finance]]

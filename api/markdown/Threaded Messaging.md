@@ -11,7 +11,6 @@
 	- source:: [[Collaboration Tools]], [[Slack]], [[Discord]]
 	- maturity:: mature
 	- owl:class:: tc:ThreadedMessaging
-	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[TelecollaborationDomain]]
 	- is-subclass-of:: [[Asynchronous Collaboration]]

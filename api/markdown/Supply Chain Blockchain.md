@@ -10,7 +10,6 @@
 	- definition:: Supply chain blockchain refers to the application of distributed ledger technology to track, trace, and verify the provenance of goods as they move through supply chain networks from raw materials to end consumers. Blockchain provides an immutable, shared record of transactions enabling real-time visibility, authentication of origin, quality verification, and automated compliance through smart contracts, addressing challenges of counterfeiting, fraud, and supply chain opacity.
 	- maturity:: reviewed
 	- owl:class:: bc:SupplyChainBlockchain
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Blockchain]]
 

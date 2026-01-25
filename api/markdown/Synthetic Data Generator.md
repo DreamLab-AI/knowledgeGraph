@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO/IEC 5259]], [[OECD AI]], [[IEEE P2048-9]]
 	- owl:class:: mv:SyntheticDataGenerator
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

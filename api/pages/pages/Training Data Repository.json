@@ -1,25 +1,25 @@
 {
   "id": "Training Data Repository",
   "title": "Training Data Repository",
-  "content": "- ### OntologyBlock\n  id:: training-data-repository-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10083\n\t- source-domain:: artificial-intelligence\n\t- preferred-term:: Training Data Repository\n\t- status:: active\n\t- definition:: A centralized or distributed storage system for collecting, organizing, versioning, and managing datasets used to train AI and machine learning models, including data provenance tracking, quality assurance, and access control.\n\t- owl:class:: ai:TrainingDataRepository\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Data Management]]\n\t\t- related-to:: [[Machine Learning]]\n\t\t- related-to:: [[Artificial Intelligence]]\n\t\t- related-to:: [[Data Governance]]\n\t  id:: training-data-repository-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Training data repositories provide organized collections of datasets for AI and machine learning development. Major repositories include UCI Machine Learning Repository (688+ datasets), OpenML, Kaggle, Hugging Face, and Google Dataset Search. Quality, accuracy, and provenance tracking are critical for model performance.\n- ## Technical Details\n\t- ### Major Repositories\n\t\t- **UCI Machine Learning Repository**: 688+ datasets serving millions of users\n\t\t- **OpenML**: Open platform for sharing datasets, algorithms, and experiments\n\t\t- **Kaggle**: Competition-based platform with diverse datasets\n\t\t- **Hugging Face**: Community-owned collection of AI datasets and models\n\t- ### Data Management Tools\n\t\t- **Data Version Control (DVC)**: Dataset versioning and management\n\t\t- **LakeFS**: Git-like version control for data lakes\n\t\t- **ML Ops Platforms**: End-to-end dataset lifecycle management\n\t- ### 2024 Trends\n\t\t- **Synthetic Data**: Artificially generated data for privacy-sensitive applications\n\t\t- **Data Provenance Initiative**: Tracking origin and licensing of datasets\n\t\t- **Federated Learning**: Training on distributed data without centralization\n\t\t- **Differential Privacy**: Protecting individual data points during training\n- ## Applications\n\t- AI model training and validation\n\t- Computer vision dataset curation\n\t- Natural language processing corpora\n\t- Healthcare and medical imaging datasets\n\t- Metaverse AI agent training",
+  "content": "- ### OntologyBlock\n  id:: training-data-repository-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10083\n\t- source-domain:: ai\n\t- preferred-term:: Training Data Repository\n\t- status:: active\n\t- definition:: A centralized or distributed storage system for collecting, organizing, versioning, and managing datasets used to train AI and machine learning models, including data provenance tracking, quality assurance, and access control.\n\t- owl:class:: ai:TrainingDataRepository\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Data Management]]\n\t\t- related-to:: [[Machine Learning]]\n\t\t- related-to:: [[Artificial Intelligence]]\n\t\t- related-to:: [[Data Governance]]\n\t  id:: training-data-repository-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Training data repositories provide organized collections of datasets for AI and machine learning development. Major repositories include UCI Machine Learning Repository (688+ datasets), OpenML, Kaggle, Hugging Face, and Google Dataset Search. Quality, accuracy, and provenance tracking are critical for model performance.\n- ## Technical Details\n\t- ### Major Repositories\n\t\t- **UCI Machine Learning Repository**: 688+ datasets serving millions of users\n\t\t- **OpenML**: Open platform for sharing datasets, algorithms, and experiments\n\t\t- **Kaggle**: Competition-based platform with diverse datasets\n\t\t- **Hugging Face**: Community-owned collection of AI datasets and models\n\t- ### Data Management Tools\n\t\t- **Data Version Control (DVC)**: Dataset versioning and management\n\t\t- **LakeFS**: Git-like version control for data lakes\n\t\t- **ML Ops Platforms**: End-to-end dataset lifecycle management\n\t- ### 2024 Trends\n\t\t- **Synthetic Data**: Artificially generated data for privacy-sensitive applications\n\t\t- **Data Provenance Initiative**: Tracking origin and licensing of datasets\n\t\t- **Federated Learning**: Training on distributed data without centralization\n\t\t- **Differential Privacy**: Protecting individual data points during training\n- ## Applications\n\t- AI model training and validation\n\t- Computer vision dataset curation\n\t- Natural language processing corpora\n\t- Healthcare and medical imaging datasets\n\t- Metaverse AI agent training",
   "backlinks": [
     "ETSI_Domain_Data_Mgmt___AI"
   ],
   "wiki_links": [
     "Data Governance",
     "Machine Learning",
-    "Data Management",
+    "metaverse",
     "Artificial Intelligence",
-    "metaverse"
+    "Data Management"
   ],
   "ontology": {
     "term_id": "MV-10083",
     "preferred_term": "Training Data Repository",
     "alt_terms": [],
     "iri": "http://narrativegoldmine.com/ai#TrainingDataRepository",
-    "source_domain": "artificial-intelligence",
-    "domain": "artificial-intelligence",
-    "domain_full_name": "",
+    "source_domain": "ai",
+    "domain": "ai",
+    "domain_full_name": "Artificial Intelligence",
     "definition": "A centralized or distributed storage system for collecting, organizing, versioning, and managing datasets used to train AI and machine learning models, including data provenance tracking, quality assurance, and access control.",
     "scope_note": null,
     "status": "active",
@@ -64,7 +64,7 @@
         "Missing required property: last-updated",
         "Missing required property: owl:physicality",
         "Missing required property: owl:role",
-        "owl:class namespace 'ai' doesn't match source-domain 'artificial-intelligence'"
+        "term-id 'MV-10083' doesn't match domain 'ai' (expected AI-)"
       ]
     }
   }

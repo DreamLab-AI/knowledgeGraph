@@ -59,7 +59,6 @@ Learning rate scheduling has become standard practice in deep learning, with var
 **Verification Status**: Verified against training literature
 	- maturity:: draft
 	- owl:class:: mv:LearningRateSchedule
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Learning Rate Schedule

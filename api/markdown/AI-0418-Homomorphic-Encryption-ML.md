@@ -19,10 +19,9 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:HomomorphicEncryptionML
-    - owl:physicality:: VirtualEntity
+    - owl:class:: ai:HomomorphicEncryptionML
     - owl:role:: Process
-    - owl:inferred-class:: aigo:VirtualProcess
+    - owl:inferred-class:: ai:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 
@@ -93,3 +92,6 @@
     )
     context.global_scale = 2**40  # Precision
     ```
+
+
+<!-- Merged from Homomorphic Encryption for Machine Learning.md: Artificial Intelligence, DisruptiveTechDomain -->

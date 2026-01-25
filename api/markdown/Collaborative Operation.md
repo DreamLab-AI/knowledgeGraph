@@ -13,7 +13,6 @@
 	- definition:: **Collaborative Operation** - Collaborative Operation in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:CollaborativeOperation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0103 collaborative operation

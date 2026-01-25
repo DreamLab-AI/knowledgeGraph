@@ -51,7 +51,6 @@ Value alignment represents the fundamental problem in AI safety: how to ensure i
 **Verification Status**: Verified against alignment literature
 	- maturity:: draft
 	- owl:class:: mv:ValueAlignment
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Value Alignment

@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[UNESCO Digital Heritage]], [[ISO 21127]]
 	- owl:class:: mv:DigitalCurationPlatform
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

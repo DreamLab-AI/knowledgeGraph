@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[ISO 27001]], [[GDPR]], [[SOC 2]]
 	- owl:class:: mv:CrossPlatformComplianceHub
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

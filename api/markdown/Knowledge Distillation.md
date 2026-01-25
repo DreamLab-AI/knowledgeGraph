@@ -57,7 +57,6 @@ Knowledge distillation demonstrates that smaller models can capture most of the 
 **Verification Status**: Verified against KD survey (arXiv:2308.04268)
 	- maturity:: draft
 	- owl:class:: mv:KnowledgeDistillation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Knowledge Distillation

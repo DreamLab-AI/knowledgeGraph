@@ -88,7 +88,6 @@ DeBERTa improves upon BERT by using disentangled attention where each word is re
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:DeBERTa
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About DeBERTa

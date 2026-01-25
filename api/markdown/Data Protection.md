@@ -2,7 +2,7 @@
   id:: data-protection-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20201
+	- term-id:: MV-20201
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ETSI GR ARF 010]], [[GDPR]], [[ISO 27701]]
 	- owl:class:: mv:DataProtection
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

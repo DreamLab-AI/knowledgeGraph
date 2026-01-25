@@ -8,7 +8,7 @@
     - filename-history:: ["MV-0001-avatarwearable.md"]
     - public-access:: true
     - ontology:: true
-    - term-id:: MV-0001
+    - term-id:: MV-4009
     - preferred-term:: Avatar Wearable
     - source-domain:: mv
     - status:: complete

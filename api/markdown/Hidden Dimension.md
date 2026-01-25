@@ -68,7 +68,6 @@ Hidden dimension (d_model) determines the vector size for all hidden states thro
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:HiddenDimension
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Hidden Dimension

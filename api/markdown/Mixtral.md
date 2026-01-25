@@ -62,7 +62,6 @@ Mixtral demonstrates that Mixture of Experts enables scaling to large parameter 
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:Mixtral
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Mixtral

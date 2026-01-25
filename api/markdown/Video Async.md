@@ -11,7 +11,6 @@
 	- source:: [[Collaboration Tools]], [[Loom]]
 	- maturity:: emerging
 	- owl:class:: tc:VideoAsync
-	- owl:physicality:: Abstract
 	- owl:role:: Object
 	- belongsToDomain:: [[TelecollaborationDomain]]
 	- is-subclass-of:: [[Asynchronous Collaboration]]

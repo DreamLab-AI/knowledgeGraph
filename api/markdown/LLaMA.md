@@ -62,7 +62,6 @@ LLaMA demonstrates that highly capable language models can be trained using only
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:LLaMA
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About LLaMA

@@ -2,7 +2,7 @@
   id:: making-available-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247943
+	- term-id:: MV-3016
 	- preferred-term:: Making Available
 	- source-domain:: mv
 	- status:: draft
@@ -220,7 +220,6 @@ Higher scrutiny for:
 - Blue Guide on Product Rules 2022 (EU product safety guidance)
 	- maturity:: draft
 	- owl:class:: mv:MakingAvailable
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Making Available

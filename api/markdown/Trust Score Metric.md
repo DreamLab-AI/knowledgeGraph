@@ -2,7 +2,7 @@
   id:: trust-score-metric-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20289
+	- term-id:: MV-20289
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[ETSI GS MEC]]
 	- owl:class:: mv:TrustScoreMetric
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

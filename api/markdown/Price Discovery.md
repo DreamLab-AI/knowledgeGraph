@@ -10,7 +10,6 @@
 	- definition:: Price discovery is the market mechanism through which asset prices are determined via the continuous interaction of buyers and sellers, incorporating supply/demand dynamics, order flow analysis, bid-ask spread formation, and arbitrage across venues to establish fair market value in real-time.
 	- maturity:: reviewed
 	- owl:class:: ngm:PriceDiscovery
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[FinancialDomain]]
 

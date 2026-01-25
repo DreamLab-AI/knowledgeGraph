@@ -11,7 +11,6 @@
 	- source:: [[MLOps]], [[Data Engineering]]
 	- maturity:: emerging
 	- owl:class:: ai:FeatureStore
-	- owl:physicality:: Abstract
 	- owl:role:: Object
 	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- isSubclassOf:: [[Data Engineering]]

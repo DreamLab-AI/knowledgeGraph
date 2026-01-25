@@ -69,7 +69,6 @@
 - **Maturity**: Widespread commercial deployment
 	- maturity:: draft
 	- owl:class:: mv:Chatbot
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

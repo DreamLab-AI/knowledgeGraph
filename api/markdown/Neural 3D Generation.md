@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: ai:Neural3DGeneration
-    - owl:physicality:: VirtualEntity
     - owl:role:: Process
     - owl:inferred-class:: ai:VirtualProcess
     - belongsToDomain:: [[AI-GroundedDomain]], [[CreativeMediaDomain]]

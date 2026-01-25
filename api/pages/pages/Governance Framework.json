@@ -1,7 +1,7 @@
 {
   "id": "Governance Framework",
   "title": "Governance Framework",
-  "content": "- ### OntologyBlock\n  id:: governance-framework-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7023\n\t- preferred-term:: Governance Framework\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A governance framework is a structured system of policies, processes, procedures, and controls that organisations use to align their technology resources and operations with business objectives. It provides the foundation for strategic decision-making, risk management, resource optimisation, performance measurement, and compliance, ensuring that technology investments deliver value while maintaining accountability and transparency.\n\t- maturity:: reviewed\n\t- owl:class:: ngm:GovernanceFramework\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[Core Technology]]\n\n### Relationships\n- is-subclass-of:: [[Organisational Framework]]\n- related-to:: [[Legal Framework]], [[Technical Standard]], [[Compliance]]\n- enables:: [[Strategic Alignment]], [[Risk Management]], [[Performance Management]]\n- implements:: [[Policy Enforcement]], [[Accountability]], [[Decision Rights]]\n\n## Components\n\n### Five Pillars of IT Governance\n1. **Strategic Alignment**: Ensuring IT initiatives support business objectives and priorities\n2. **Value Delivery**: Maximising return on investment from technology expenditures\n3. **Risk Management**: Identifying, assessing, and mitigating technology-related risks\n4. **Resource Management**: Optimising allocation of human, financial, and technical resources\n5. **Performance Measurement**: Establishing metrics and KPIs for continuous improvement\n\n### Major Governance Frameworks\n\n#### COBIT (Control Objectives for Information and Related Technologies)\nDeveloped by ISACA, COBIT provides a comprehensive framework for IT governance and management. COBIT 2019 introduces six governance principles and design factors for tailoring the framework to organisational needs. Focuses on what needs to be done for effective governance.\n\n#### ITIL (Information Technology Infrastructure Library)\nFramework of best practices for IT service management (ITSM). ITIL 4 introduces the Service Value System (SVS) model covering four dimensions: organisations and people, information and technology, partners and suppliers, and value streams and processes. Focuses on how to deliver IT services effectively.\n\n#### ISO/IEC 38500\nInternational standard for corporate governance of information technology. Provides principles and guidance for governing bodies on the effective, efficient, and acceptable use of IT.\n\n#### TOGAF (The Open Group Architecture Framework)\nFramework for enterprise architecture governance, providing methods and tools for architecture development, implementation, and management.\n\n### Governance Components\n- **Governance Bodies**: Steering committees, architecture review boards\n- **Policies and Standards**: Documented rules and guidelines\n- **Processes and Procedures**: Standardised workflows and practices\n- **Controls**: Mechanisms for monitoring and enforcement\n- **Metrics and Reporting**: Performance indicators and dashboards\n\n## Implementation\n\n### Framework Integration Strategy\nMany organisations implement hybrid governance approaches:\n- COBIT for overall governance structure\n- ITIL for service management operations\n- TOGAF for enterprise architecture\n- Industry-specific frameworks for compliance (NIST, ISO 27001)\n\n### Governance Deployment Steps\n1. **Assessment**: Evaluate current governance maturity and gaps\n2. **Design**: Select and adapt frameworks to organisational context\n3. **Implementation**: Deploy governance structures, processes, and tools\n4. **Operationalisation**: Embed governance into daily operations\n5. **Continuous Improvement**: Regular review and optimisation\n\n### Key Success Factors\n- Executive sponsorship and commitment\n- Clear roles, responsibilities, and accountability\n- Integration with existing management systems\n- Balance between control and agility\n- Regular communication and training\n- Measurable outcomes and regular reporting\n\n### Best Practices\n- Start with high-priority governance areas\n- Adapt frameworks to organisational culture and size\n- Establish governance champions across the organisation\n- Use automation for compliance monitoring\n- Conduct regular governance effectiveness reviews\n- Link governance to business outcomes\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from stub\n- **References**: 6 pages reference this concept",
+  "content": "- ### OntologyBlock\n  id:: governance-framework-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7023\n\t- preferred-term:: Governance Framework\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A governance framework is a structured system of policies, processes, procedures, and controls that organisations use to align their technology resources and operations with business objectives. It provides the foundation for strategic decision-making, risk management, resource optimisation, performance measurement, and compliance, ensuring that technology investments deliver value while maintaining accountability and transparency.\n\t- maturity:: reviewed\n\t- owl:class:: ngm:GovernanceFramework\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[Core Technology]]\n\n### Relationships\n- is-subclass-of:: [[Organisational Framework]]\n- related-to:: [[Legal Framework]], [[Technical Standard]], [[Compliance]]\n- enables:: [[Strategic Alignment]], [[Risk Management]], [[Performance Management]]\n- implements:: [[Policy Enforcement]], [[Accountability]], [[Decision Rights]]\n\n## Components\n\n### Five Pillars of IT Governance\n1. **Strategic Alignment**: Ensuring IT initiatives support business objectives and priorities\n2. **Value Delivery**: Maximising return on investment from technology expenditures\n3. **Risk Management**: Identifying, assessing, and mitigating technology-related risks\n4. **Resource Management**: Optimising allocation of human, financial, and technical resources\n5. **Performance Measurement**: Establishing metrics and KPIs for continuous improvement\n\n### Major Governance Frameworks\n\n#### COBIT (Control Objectives for Information and Related Technologies)\nDeveloped by ISACA, COBIT provides a comprehensive framework for IT governance and management. COBIT 2019 introduces six governance principles and design factors for tailoring the framework to organisational needs. Focuses on what needs to be done for effective governance.\n\n#### ITIL (Information Technology Infrastructure Library)\nFramework of best practices for IT service management (ITSM). ITIL 4 introduces the Service Value System (SVS) model covering four dimensions: organisations and people, information and technology, partners and suppliers, and value streams and processes. Focuses on how to deliver IT services effectively.\n\n#### ISO/IEC 38500\nInternational standard for corporate governance of information technology. Provides principles and guidance for governing bodies on the effective, efficient, and acceptable use of IT.\n\n#### TOGAF (The Open Group Architecture Framework)\nFramework for enterprise architecture governance, providing methods and tools for architecture development, implementation, and management.\n\n### Governance Components\n- **Governance Bodies**: Steering committees, architecture review boards\n- **Policies and Standards**: Documented rules and guidelines\n- **Processes and Procedures**: Standardised workflows and practices\n- **Controls**: Mechanisms for monitoring and enforcement\n- **Metrics and Reporting**: Performance indicators and dashboards\n\n## Implementation\n\n### Framework Integration Strategy\nMany organisations implement hybrid governance approaches:\n- COBIT for overall governance structure\n- ITIL for service management operations\n- TOGAF for enterprise architecture\n- Industry-specific frameworks for compliance (NIST, ISO 27001)\n\n### Governance Deployment Steps\n1. **Assessment**: Evaluate current governance maturity and gaps\n2. **Design**: Select and adapt frameworks to organisational context\n3. **Implementation**: Deploy governance structures, processes, and tools\n4. **Operationalisation**: Embed governance into daily operations\n5. **Continuous Improvement**: Regular review and optimisation\n\n### Key Success Factors\n- Executive sponsorship and commitment\n- Clear roles, responsibilities, and accountability\n- Integration with existing management systems\n- Balance between control and agility\n- Regular communication and training\n- Measurable outcomes and regular reporting\n\n### Best Practices\n- Start with high-priority governance areas\n- Adapt frameworks to organisational culture and size\n- Establish governance champions across the organisation\n- Use automation for compliance monitoring\n- Conduct regular governance effectiveness reviews\n- Link governance to business outcomes\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from stub\n- **References**: 6 pages reference this concept",
   "backlinks": [
     "Technical Standard",
     "Virtual Property Right",
@@ -10,7 +10,6 @@
     "Data Fabric Architecture",
     "Accessibility Standard",
     "Digital Identity Framework",
-    "Decentralized Autonomous Organization (DAO)",
     "GovernanceStructure",
     "Metaverse Safety Protocol",
     "Participation Framework",
@@ -23,17 +22,17 @@
     "Digital Jurisdiction"
   ],
   "wiki_links": [
-    "Strategic Alignment",
-    "Risk Management",
     "Decision Rights",
-    "Technical Standard",
-    "Compliance",
+    "Accountability",
+    "Policy Enforcement",
     "Core Technology",
-    "Organisational Framework",
     "Legal Framework",
     "Performance Management",
-    "Accountability",
-    "Policy Enforcement"
+    "Technical Standard",
+    "Strategic Alignment",
+    "Organisational Framework",
+    "Compliance",
+    "Risk Management"
   ],
   "ontology": {
     "term_id": "NGM-7023",
@@ -54,7 +53,7 @@
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "ngm:GovernanceFramework",
-    "owl_physicality": "ConceptualEntity",
+    "owl_physicality": null,
     "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [],
@@ -76,6 +75,7 @@
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
         "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }

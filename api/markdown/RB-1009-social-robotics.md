@@ -18,7 +18,6 @@
 
 - **Semantic Classification**
   - owl:class:: rb:SocialRobotics
-  - owl:physicality:: Interdisciplinary
   - owl:role:: Field
   - belongsToDomain:: [[Robotics]], [[Human-Robot Interaction]], [[AI]]
 

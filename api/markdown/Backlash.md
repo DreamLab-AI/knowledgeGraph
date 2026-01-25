@@ -13,7 +13,6 @@
 	- definition:: **Backlash** - Lost motion due to gaps in mechanical transmission
 	- maturity:: draft
 	- owl:class:: rb:Backlash
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0040 backlash

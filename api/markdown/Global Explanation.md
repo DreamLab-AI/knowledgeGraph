@@ -690,7 +690,6 @@ Percentage of features with significant importance.
 - [[SHAP]]
 	- maturity:: draft
 	- owl:class:: mv:GlobalExplanation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

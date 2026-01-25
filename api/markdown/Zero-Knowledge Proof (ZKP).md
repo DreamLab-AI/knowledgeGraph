@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[OMA3 + Reed Smith]]
 	- owl:class:: mv:ZeroKnowledgeProof
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

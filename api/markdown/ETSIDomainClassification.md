@@ -2,7 +2,7 @@
   id:: etsidomainclassification-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247917
+	- term-id:: MV-3046
 	- preferred-term:: ETSIDomainClassification
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:ETSIDomainClassification
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

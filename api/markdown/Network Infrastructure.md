@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ETSI ARF 010]]
 	- owl:class:: mv:NetworkInfrastructure
-	- owl:physicality:: PhysicalEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:PhysicalObject
 	- owl:functional-syntax:: true

@@ -10,7 +10,6 @@
 	- definition:: A meta-classification for properties, characteristics, and measurable attributes of machine learning models including performance metrics (accuracy, latency, throughput), architectural properties (parameters, layers, context length), and operational characteristics (memory footprint, inference cost, training requirements).
 	- maturity:: stable
 	- owl:class:: ai:ModelProperty
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: PropertyClass
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships

@@ -11,7 +11,6 @@
 An **Optimiser** is an algorithm that adjusts model parameters during training to minimise the loss function. Modern optimisers are advanced variants of gradient descent with adaptive learning rates, momentum, and other techniques for improved convergence.
 	- maturity:: draft
 	- owl:class:: mv:Optimiser
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Optimiser

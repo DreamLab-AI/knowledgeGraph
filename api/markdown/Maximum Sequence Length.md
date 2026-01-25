@@ -63,7 +63,6 @@ Maximum sequence length is typically set during training and determines the posi
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:MaximumSequenceLength
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Maximum Sequence Length

@@ -2,17 +2,15 @@
   id:: webxr-api-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20104
+	- term-id:: MV-4003
 	- preferred-term:: WebXR API
 	- source-domain:: mv
 	- status:: draft
-- public-access:: true
+	- public-access:: true
 	- definition:: web interface enabling rendering and input for AR/VR experiences in browsers.
-maturity:: 3
-source:: [[EWG/MSF taxonomy]]
 	- maturity:: draft
+	- source:: [[EWG/MSF taxonomy]]
 	- owl:class:: mv:WebXRAPI
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 
@@ -28,13 +26,11 @@ source:: [[EWG/MSF taxonomy]]
 (AnnotationAssertion rdfs:comment :WebxrApi "web interface enabling rendering and input for AR/VR experiences in browsers."@en)
 
 ;; Data Properties
-(AnnotationAssertion dcterms:identifier :WebxrApi "20104"^^xsd:string)
+(AnnotationAssertion dcterms:identifier :WebxrApi "MV-4003"^^xsd:string)
 ```
 
 - ## About WebXR API
 	- web interface enabling rendering and input for AR/VR experiences in browsers.
-maturity:: 3
-source:: [[EWG/MSF taxonomy]]
 	-
 	- ### Original Content
 	  collapsed:: true
@@ -42,7 +38,7 @@ source:: [[EWG/MSF taxonomy]]
 # WebXR API
 		  
 		  ## Core Properties
-		  term-id:: 20104
+		  term-id:: MV-4003
 		  preferred-term:: WebXR API
 		  definition:: web interface enabling rendering and input for AR/VR experiences in browsers.
 		  maturity:: 3

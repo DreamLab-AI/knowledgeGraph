@@ -11,7 +11,6 @@
 	- source:: [[Polkadot]], [[Web3 Foundation]]
 	- maturity:: emerging
 	- owl:class:: bc:PolkadotParachains
-	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[BlockchainDomain]]
 	- isSubclassOf:: [[Layer 0 Protocol]], [[Interoperability Protocol]]

@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[MSF Use Cases]]
 	- owl:class:: mv:LoyaltyToken
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

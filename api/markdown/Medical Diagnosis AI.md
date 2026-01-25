@@ -66,7 +66,6 @@
 - **Maturity**: Clinical deployment and validation
 	- maturity:: draft
 	- owl:class:: mv:MedicalDiagnosisAI
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

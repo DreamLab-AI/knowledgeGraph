@@ -10,7 +10,6 @@
 	- definition:: The administration of cryptographic keys throughout their lifecycle, including generation, storage, distribution, rotation, backup, recovery, and destruction, ensuring the security and availability of keying material while preventing unauthorized access or compromise. Governed by standards such as NIST SP 800-57.
 	- maturity:: reviewed
 	- owl:class:: bc:CryptographicKeyManagement
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Cryptography]]
 

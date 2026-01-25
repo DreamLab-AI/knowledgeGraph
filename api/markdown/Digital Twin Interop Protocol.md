@@ -2,7 +2,7 @@
   id:: digital-twin-interop-protocol-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20247
+	- term-id:: MV-20247
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO/IEC 23247]]
 	- owl:class:: mv:DigitalTwinInteropProtocol
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

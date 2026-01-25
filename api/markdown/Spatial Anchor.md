@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[IEEE P2048-3]]
 	- owl:class:: mv:SpatialAnchor
-	- owl:physicality:: HybridEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:HybridObject
 	- owl:functional-syntax:: true

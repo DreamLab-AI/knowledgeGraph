@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:NakamotoConsensus
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[ConsensusDomain]]
@@ -115,3 +114,6 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0061>
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
   -
 
+
+
+<!-- Merged from Nakamoto Consensus.md: warren2023bitcoin -->

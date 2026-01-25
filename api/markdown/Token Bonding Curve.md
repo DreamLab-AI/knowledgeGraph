@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[DeFi Standards Alliance]]
 	- owl:class:: mv:TokenBondingCurve
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

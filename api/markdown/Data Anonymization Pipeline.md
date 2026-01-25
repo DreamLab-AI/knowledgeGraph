@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO 20889]], [[ENISA Anonymization Guide]]
 	- owl:class:: mv:DataAnonymizationPipeline
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

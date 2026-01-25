@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: rb:MobileRobot
-    - owl:physicality:: PhysicalEntity
     - owl:role:: Object
     - belongsToDomain:: [[Robotics]]
 
@@ -114,3 +113,6 @@
   -
   - ### Related Concepts
     id:: mobile-robot-related
+
+
+<!-- Merged from Mobile Robot.md: Artificial Intelligence, Artificial Superintelligence, Microsoft CoPilot, Prompt Engineering -->

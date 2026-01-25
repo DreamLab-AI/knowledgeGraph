@@ -5,20 +5,20 @@
   "backlinks": [
     "Liquidity Pool",
     "Smart Contracts",
-    "Token",
     "AI Agent System",
+    "BC-0096-token",
     "Token Bonding Curve",
     "Decentralized Exchange (DEX)"
   ],
   "wiki_links": [
-    "Liquidity Provision",
-    "DeFi Protocol",
-    "Token Swaps",
     "Permissionless Trading",
+    "metaverse",
     "Pricing Algorithms",
-    "Liquidity Pools",
+    "Liquidity Provision",
     "Smart Contracts",
-    "metaverse"
+    "Token Swaps",
+    "Liquidity Pools",
+    "DeFi Protocol"
   ],
   "ontology": {
     "term_id": "MV-9786",

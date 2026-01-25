@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO/IEC 30170]], [[MSF Taxonomy 2025]]
 	- owl:class:: mv:CompatibilityProcess
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

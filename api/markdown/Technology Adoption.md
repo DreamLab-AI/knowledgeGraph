@@ -6,7 +6,7 @@
     - ontology:: true
     - term-id:: DT-0003
     - preferred-term:: Technology Adoption
-    - source-domain:: cross-domain
+    - source-domain:: tc
     - status:: complete
     - public-access:: true
     - version:: 1.0.0
@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: dt:TechnologyAdoption
-    - owl:physicality:: ConceptualEntity
     - owl:role:: Process
     - owl:inferred-class:: dt:ConceptualProcess
     - belongsToDomain:: [[AI-GroundedDomain]], [[BlockchainDomain]], [[MetaverseDomain]], [[RoboticsDomain]]

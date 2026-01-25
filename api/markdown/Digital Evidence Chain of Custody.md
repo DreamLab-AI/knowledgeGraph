@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO 27037]]
 	- owl:class:: mv:DigitalEvidenceChain
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

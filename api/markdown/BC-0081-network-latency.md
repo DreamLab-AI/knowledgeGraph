@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:NetworkLatency
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[CryptographicDomain]]
@@ -115,3 +114,6 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0081>
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
   -
 
+
+
+<!-- Merged from Network Latency.md: Large language models, Update Cycle, boring2009scroll, hansberger2017dispelling -->

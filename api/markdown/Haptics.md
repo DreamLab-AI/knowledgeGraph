@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO 9241-960]]
 	- owl:class:: mv:Haptics
-	- owl:physicality:: PhysicalEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:PhysicalObject
 	- owl:functional-syntax:: true

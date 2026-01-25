@@ -10,7 +10,6 @@
 	- definition:: System interoperability is the ability of different information technology systems, applications, and devices to exchange data, interpret shared information, and use it in a mutually useful way without requiring special translation or middleware. It enables diverse systems to communicate and work together seamlessly through adherence to common standards, protocols, and data formats, facilitating efficient information flow across organisational and technical boundaries.
 	- maturity:: reviewed
 	- owl:class:: ngm:SystemInteroperability
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[Core Technology]]
 

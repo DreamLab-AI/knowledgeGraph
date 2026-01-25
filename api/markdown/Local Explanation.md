@@ -565,7 +565,6 @@ Similar instances receive similar explanations.
 - [[Integrated Gradients]]
 	- maturity:: draft
 	- owl:class:: mv:LocalExplanation
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

@@ -3,19 +3,20 @@
   "title": "Binary Encoding",
   "content": "- ### OntologyBlock\n  id:: binary-encoding-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9800\n\t- source-domain:: mv\n\t- preferred-term:: Binary Encoding\n\t- definition:: A data representation format that converts information into sequences of binary digits (0s and 1s) for efficient storage, transmission, and processing, offering compact machine-friendly representations that optimize bandwidth, reduce latency, and enable cross-platform data exchange.\n\t- status:: active\n\t- owl:class:: mv:BinaryEncoding\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: binary-encoding-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Data Format]]\n\t\t- enables:: [[Data Serialization]], [[Efficient Storage]], [[Network Transmission]]\n\t\t- requires:: [[Schema Definition]], [[Encoding Rules]], [[Parser Implementation]]\n\t\t- related-to:: [[Protocol Buffers]], [[MessagePack]], [[Data Serialization]]\n- ## Technical Details\n\t- **Encoding Approaches**:\n\t\t- **Varint Encoding**: Variable-length encoding where smaller numbers use fewer bytes\n\t\t- **Tag-Length-Value (TLV)**: Structured encoding with field identification\n\t\t- **Zigzag Encoding**: Efficient encoding for signed integers\n\t- **Leading Binary Formats**:\n\t\t- **Protocol Buffers (Protobuf)**: Google's compact format with schema definition language\n\t\t- **Apache Avro**: Row-based format with schema evolution support\n\t\t- **FlatBuffers**: Zero-copy access with aligned table-based encoding\n\t\t- **MessagePack**: JSON-compatible with 10-40% size reduction\n\t\t- **BSON**: Binary JSON for MongoDB and document storage\n\t- **Performance Benefits**:\n\t\t- 10-40% smaller payloads compared to JSON\n\t\t- Faster serialization/deserialization\n\t\t- Language-agnostic cross-platform support\n- ## Applications\n\t- High-throughput message queues\n\t- Microservices communication\n\t- IoT and edge device protocols\n\t- Mobile application data exchange\n\t- AI/ML model parameter storage",
   "backlinks": [
-    "glTF (3D File Format)"
+    "glTF (3D File Format)",
+    "3D Scene Exchange Protocol (SXP)"
   ],
   "wiki_links": [
+    "metaverse",
+    "Efficient Storage",
+    "Data Serialization",
     "MessagePack",
+    "Encoding Rules",
     "Data Format",
-    "Protocol Buffers",
-    "Schema Definition",
     "Parser Implementation",
     "Network Transmission",
-    "Data Serialization",
-    "Encoding Rules",
-    "metaverse",
-    "Efficient Storage"
+    "Protocol Buffers",
+    "Schema Definition"
   ],
   "ontology": {
     "term_id": "MV-9800",

@@ -10,7 +10,6 @@
 	- definition:: A foundational domain at the intersection of computational theory and cognitive science, encompassing concepts related to algorithmic information processing, computational complexity, machine cognition, and the theoretical underpinnings of intelligent behaviour in both natural and artificial systems.
 	- maturity:: stable
 	- owl:class:: ai:ComputationAndIntelligenceDomain
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Domain
 	- belongsToDomain:: [[Artificial Intelligence]]
 	- #### Relationships

@@ -4,7 +4,7 @@
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9953
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- preferred-term:: Machine Learning Pipeline
 	- status:: active
 	- owl:class:: ai:MachineLearningPipeline

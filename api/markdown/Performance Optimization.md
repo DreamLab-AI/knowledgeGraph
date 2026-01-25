@@ -11,7 +11,6 @@
 	- maturity:: reviewed
 	- belongsToDomain:: [[ComputationAndIntelligenceDomain]], [[Technology Domain]]
 	- owl:class:: ngm:PerformanceOptimization
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Process
 
 ## Relationships

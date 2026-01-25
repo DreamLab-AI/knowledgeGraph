@@ -1,10 +1,9 @@
 {
   "id": "Smart Contracts",
   "title": "Smart Contracts",
-  "content": "- ### OntologyBlock\n  id:: smart-contracts-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-7013\n\t- preferred-term:: Smart Contracts\n\t- source-domain:: bc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Self-executing programs stored on a blockchain that automatically enforce and execute the terms of an agreement when predetermined conditions are met, eliminating the need for intermediaries and enabling trustless, transparent, and immutable transaction automation. Smart contracts encode business logic in deterministic code that runs identically across all network nodes, ensuring consensus on execution outcomes.\n\t- maturity:: reviewed\n\t- owl:class:: bc:SmartContracts\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Process\n\t- belongsToDomain:: [[Blockchain]]\n\t- belongsToDomain:: [[Decentralized Finance]]\n\t- belongsToDomain:: [[Distributed Systems]]\n\n## Core Components\n- **Contract Code**: Deterministic program logic written in Solidity, Vyper, Rust, or Move\n- **State Variables**: Persistent data stored on-chain representing contract state\n- **Functions**: Callable methods that read/modify state or perform computations\n- **Events**: Logging mechanisms for off-chain indexing and monitoring\n- **Modifiers**: Access control and validation patterns\n\n## Execution Model\n- **Deterministic Execution**: Same inputs always produce identical outputs across all nodes\n- **Gas Mechanism**: Computational resource metering preventing infinite loops (Ethereum)\n- **Atomic Transactions**: All-or-nothing execution ensuring consistency\n- **Immutability**: Deployed code cannot be modified (upgradeable patterns exist via proxies)\n\n## Programming Languages\n| Language | Platform | Features |\n|----------|----------|----------|\n| Solidity | Ethereum, EVM chains | Object-oriented, most widely adopted |\n| Vyper | Ethereum | Python-like, security-focused, simpler |\n| Rust | Solana, Near, Polkadot | Systems language, high performance |\n| Move | Aptos, Sui | Resource-oriented, formal verification |\n| Cairo | StarkNet | ZK-proof friendly, STARK-based |\n\n## DeFi Applications\n- **Decentralized Exchanges (DEXs)**: Automated market makers (Uniswap, SushiSwap)\n- **Lending Protocols**: Collateralized borrowing (Aave, Compound)\n- **Yield Farming**: Liquidity provision rewards (Yearn, Convex)\n- **Stablecoins**: Algorithmic and collateralized pegs (DAI, FRAX)\n- **Derivatives**: Options, futures, perpetuals (dYdX, GMX)\n\n## Other Use Cases\n- **NFTs**: Digital asset ownership and provenance\n- **DAOs**: Decentralized governance and treasury management\n- **Supply Chain**: Automated tracking and payment release\n- **Insurance**: Parametric policies with automatic claims\n- **Gaming**: In-game assets and play-to-earn mechanics\n\n## Security Considerations\n- **Reentrancy Attacks**: External call vulnerabilities (DAO hack)\n- **Integer Overflow/Underflow**: Arithmetic boundary conditions\n- **Front-Running**: Transaction ordering exploitation\n- **Oracle Manipulation**: External data feed attacks\n- **Access Control**: Proper permission management\n\n## Audit & Verification\n- Formal verification tools (Certora, Halmos)\n- Static analysis (Slither, Mythril)\n- Professional audits (Trail of Bits, OpenZeppelin)\n- Bug bounty programs (Immunefi)\n\n## Market Scale (2025)\n- Over $100 billion total value locked (TVL) in DeFi smart contracts\n- Ethereum dominates with 60%+ TVL share\n- 500,000+ unique smart contracts deployed monthly\n- Growing enterprise adoption in supply chain and finance\n\n## Relationships\n- is-subclass-of:: [[Blockchain]]\n- is-subclass-of:: [[Distributed Computing]]\n- related-to:: [[Decentralized Finance]]\n- related-to:: [[Ethereum]]\n- uses:: [[Cryptographic Hash Function]]\n- uses:: [[Digital Signature]]\n- enables:: [[Decentralized Application]]\n- enables:: [[Tokenization]]\n- enables:: [[Automated Market Maker]]\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from research\n- **References**: 8 pages reference this concept",
+  "content": "- ### OntologyBlock\n  id:: smart-contracts-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-7013\n\t- preferred-term:: Smart Contracts\n\t- source-domain:: bc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Self-executing programs stored on a blockchain that automatically enforce and execute the terms of an agreement when predetermined conditions are met, eliminating the need for intermediaries and enabling trustless, transparent, and immutable transaction automation. Smart contracts encode business logic in deterministic code that runs identically across all network nodes, ensuring consensus on execution outcomes.\n\t- maturity:: reviewed\n\t- owl:class:: bc:SmartContracts\n\t- owl:role:: Process\n\t- belongsToDomain:: [[Blockchain]]\n\t- belongsToDomain:: [[Decentralized Finance]]\n\t- belongsToDomain:: [[Distributed Systems]]\n\n## Core Components\n- **Contract Code**: Deterministic program logic written in Solidity, Vyper, Rust, or Move\n- **State Variables**: Persistent data stored on-chain representing contract state\n- **Functions**: Callable methods that read/modify state or perform computations\n- **Events**: Logging mechanisms for off-chain indexing and monitoring\n- **Modifiers**: Access control and validation patterns\n\n## Execution Model\n- **Deterministic Execution**: Same inputs always produce identical outputs across all nodes\n- **Gas Mechanism**: Computational resource metering preventing infinite loops (Ethereum)\n- **Atomic Transactions**: All-or-nothing execution ensuring consistency\n- **Immutability**: Deployed code cannot be modified (upgradeable patterns exist via proxies)\n\n## Programming Languages\n| Language | Platform | Features |\n|----------|----------|----------|\n| Solidity | Ethereum, EVM chains | Object-oriented, most widely adopted |\n| Vyper | Ethereum | Python-like, security-focused, simpler |\n| Rust | Solana, Near, Polkadot | Systems language, high performance |\n| Move | Aptos, Sui | Resource-oriented, formal verification |\n| Cairo | StarkNet | ZK-proof friendly, STARK-based |\n\n## DeFi Applications\n- **Decentralized Exchanges (DEXs)**: Automated market makers (Uniswap, SushiSwap)\n- **Lending Protocols**: Collateralized borrowing (Aave, Compound)\n- **Yield Farming**: Liquidity provision rewards (Yearn, Convex)\n- **Stablecoins**: Algorithmic and collateralized pegs (DAI, FRAX)\n- **Derivatives**: Options, futures, perpetuals (dYdX, GMX)\n\n## Other Use Cases\n- **NFTs**: Digital asset ownership and provenance\n- **DAOs**: Decentralized governance and treasury management\n- **Supply Chain**: Automated tracking and payment release\n- **Insurance**: Parametric policies with automatic claims\n- **Gaming**: In-game assets and play-to-earn mechanics\n\n## Security Considerations\n- **Reentrancy Attacks**: External call vulnerabilities (DAO hack)\n- **Integer Overflow/Underflow**: Arithmetic boundary conditions\n- **Front-Running**: Transaction ordering exploitation\n- **Oracle Manipulation**: External data feed attacks\n- **Access Control**: Proper permission management\n\n## Audit & Verification\n- Formal verification tools (Certora, Halmos)\n- Static analysis (Slither, Mythril)\n- Professional audits (Trail of Bits, OpenZeppelin)\n- Bug bounty programs (Immunefi)\n\n## Market Scale (2025)\n- Over $100 billion total value locked (TVL) in DeFi smart contracts\n- Ethereum dominates with 60%+ TVL share\n- 500,000+ unique smart contracts deployed monthly\n- Growing enterprise adoption in supply chain and finance\n\n## Relationships\n- is-subclass-of:: [[Blockchain]]\n- is-subclass-of:: [[Distributed Computing]]\n- related-to:: [[Decentralized Finance]]\n- related-to:: [[Ethereum]]\n- uses:: [[Cryptographic Hash Function]]\n- uses:: [[Digital Signature]]\n- enables:: [[Decentralized Application]]\n- enables:: [[Tokenization]]\n- enables:: [[Automated Market Maker]]\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from research\n- **References**: 8 pages reference this concept",
   "backlinks": [
     "Digital Asset Lending",
-    "BC 0116 total supply",
     "Enterprise Blockchain",
     "Digital Real Estate",
     "Customer Rewards",
@@ -13,7 +12,6 @@
     "Multi Party Royalties",
     "RGB and Client Side Validation",
     "Bitcoin Value Proposition",
-    "Account Model",
     "Blockchain Application",
     "Digital Economy",
     "Digital Goods",
@@ -21,9 +19,7 @@
     "Digital Signatures",
     "Shared Ownership Model",
     "Digital Ownership",
-    "BC 0112 inflationary token",
     "Cashu",
-    "Coin",
     "ETSI Domain Virtual Society",
     "Digital Rights Management",
     "Revenue Sharing",
@@ -44,16 +40,16 @@
     "Decentralized Finance"
   ],
   "wiki_links": [
-    "Blockchain",
-    "Cryptographic Hash Function",
     "Distributed Systems",
-    "Decentralized Application",
-    "Ethereum",
+    "Digital Signature",
     "Tokenization",
     "Distributed Computing",
+    "Ethereum",
+    "Cryptographic Hash Function",
     "Decentralized Finance",
+    "Decentralized Application",
     "Automated Market Maker",
-    "Digital Signature"
+    "Blockchain"
   ],
   "ontology": {
     "term_id": "BC-7013",
@@ -74,7 +70,7 @@
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "bc:SmartContracts",
-    "owl_physicality": "ConceptualEntity",
+    "owl_physicality": null,
     "owl_role": "Process",
     "owl_inferred_class": null,
     "is_subclass_of": [],
@@ -98,6 +94,7 @@
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
         "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }

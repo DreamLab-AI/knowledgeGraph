@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[SMPTE ST 2117]]
 	- owl:class:: mv:VirtualProductionVolume
-	- owl:physicality:: PhysicalEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:PhysicalObject
 	- owl:functional-syntax:: true

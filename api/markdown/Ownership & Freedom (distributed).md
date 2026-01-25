@@ -2,17 +2,15 @@
   id:: ownership-&-freedom-(distributed)-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20054
-	- preferred-term:: Ownership & Freedom (distributed)
+	- term-id:: MV-20054
+	- preferred-term:: Ownership and Freedom Distributed
 	- source-domain:: mv
 	- status:: draft
-- public-access:: true
+	- public-access:: true
 	- definition:: principle of distributing control and governance of assets or data rather than centralising it in a single authority.
-maturity:: 3
-source:: [[Metaverse 101]]
 	- maturity:: draft
-	- owl:class:: mv:Ownership&Freedom(distributed)
-	- owl:physicality:: ConceptualEntity
+	- source:: [[Metaverse 101]]
+	- owl:class:: mv:OwnershipFreedomDistributed
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

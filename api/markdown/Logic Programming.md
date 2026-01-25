@@ -11,7 +11,6 @@
 	- source:: [[Academic AI Research]], [[Prolog]]
 	- maturity:: mature
 	- owl:class:: ai:LogicProgramming
-	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- isSubclassOf:: [[Symbolic AI]]

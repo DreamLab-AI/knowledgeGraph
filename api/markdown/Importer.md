@@ -2,7 +2,7 @@
   id:: importer-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247936
+	- term-id:: MV-3015
 	- preferred-term:: Importer
 	- source-domain:: mv
 	- status:: draft
@@ -278,7 +278,6 @@ Importer customises imported AI for EU market.
 - Market Surveillance Regulation (EU) 2019/1020
 	- maturity:: draft
 	- owl:class:: mv:Importer
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Importer

@@ -89,7 +89,6 @@ Gemini represents Google's approach to multimodal AI, training models from scrat
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:Gemini
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Gemini

@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[W3C PROV-O]], [[ETSI GR ARF 010]]
 	- owl:class:: mv:DataProvenance
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

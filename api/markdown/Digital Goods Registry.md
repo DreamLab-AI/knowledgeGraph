@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ETSI ARF 010]], [[OMA3 Media WG]]
 	- owl:class:: mv:DigitalGoodsRegistry
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

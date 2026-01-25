@@ -19,10 +19,9 @@
     - authority-score:: 0.98
 
   - **Semantic Classification**
-    - owl:class:: aigo:UNESCORecommendationEthicsAI
-    - owl:physicality:: VirtualEntity
+    - owl:class:: ai:UNESCORecommendationEthicsAI
     - owl:role:: Process
-    - owl:inferred-class:: aigo:VirtualProcess
+    - owl:inferred-class:: ai:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 

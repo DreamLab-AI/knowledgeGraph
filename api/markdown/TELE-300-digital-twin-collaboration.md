@@ -10,7 +10,6 @@
 	- public-access:: true
 	- definition:: "The use of shared virtual replicas of physical assets, processes, or environments as collaborative workspaces where geographically distributed teams simultaneously inspect, analyse, simulate, and modify digital representations synchronised with real-world counterparts through sensor data streams, enabling remote collaboration on physical systems."
 	- maturity:: developing
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- #### Relationships
 	  id:: digital-twin-collaboration-relationships

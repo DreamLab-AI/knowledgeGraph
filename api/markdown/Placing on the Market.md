@@ -2,7 +2,7 @@
   id:: placing-on-the-market-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247952
+	- term-id:: MV-3005
 	- preferred-term:: Placing on the Market
 	- source-domain:: mv
 	- status:: draft
@@ -207,7 +207,6 @@ Providers must retain evidence of when placing occurred:
 - Blue Guide on Product Rules 2022/C 247/01 (EU product safety guidance)
 	- maturity:: draft
 	- owl:class:: mv:PlacingontheMarket
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Placing on the Market

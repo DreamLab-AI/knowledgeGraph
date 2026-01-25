@@ -11,7 +11,6 @@
 	- maturity:: reviewed
 	- belongsToDomain:: [[Automation]]
 	- owl:class:: rb:Robotics
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 
 ## Market Overview (2025)

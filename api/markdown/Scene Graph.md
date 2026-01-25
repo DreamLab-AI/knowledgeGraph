@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[Web3D]], [[ISO/IEC 19775-2]]
 	- owl:class:: mv:SceneGraph
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

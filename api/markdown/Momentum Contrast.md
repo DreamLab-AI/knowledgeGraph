@@ -52,7 +52,6 @@ Momentum Contrast (MoCo) addresses the challenge of maintaining many high-qualit
 **Verification Status**: Verified against MoCo literature
 	- maturity:: draft
 	- owl:class:: mv:MomentumContrast
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Momentum Contrast

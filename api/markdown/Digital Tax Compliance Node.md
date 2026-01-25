@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[OECD Digital Tax Framework]], [[EU DAC7]]
 	- owl:class:: mv:DigitalTaxComplianceNode
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

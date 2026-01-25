@@ -309,7 +309,6 @@ Where RMSE measures dispersion around predictions, standard deviation measures d
 - [[RMSLE]]
 	- maturity:: draft
 	- owl:class:: mv:RootMeanSquareError
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

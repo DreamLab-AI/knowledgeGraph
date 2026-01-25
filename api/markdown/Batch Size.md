@@ -4,16 +4,15 @@
 	- ontology:: true
 	- term-id:: AI-0050
 	- preferred-term:: Batch Size
-	- source-domain:: artificial-intelligence
+	- source-domain:: ai
 	- status:: draft
 - public-access:: true
 	- definition:: ### Primary Definition
 **Batch Size** is the number of training examples processed together before updating model parameters. It is a critical hyperparameter affecting training speed, memory usage, and model convergence behaviour.
 	- maturity:: draft
 	- owl:class:: ai:BatchSize
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 - ## About Batch Size
 	- ### Primary Definition
 **Batch Size** is the number of training examples processed together before updating model parameters. It is a critical hyperparameter affecting training speed, memory usage, and model convergence behaviour.

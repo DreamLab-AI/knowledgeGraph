@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[IEEE P2048-3]], [[ETSI ENI 008]]
 	- owl:class:: mv:EdgeOrchestration
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

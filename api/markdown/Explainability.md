@@ -429,7 +429,6 @@ class ExplainableAI:
 *This definition reflects current best practices in AI explainability and aligns with international regulatory requirements.*
 	- maturity:: draft
 	- owl:class:: mv:Explainability
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

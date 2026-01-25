@@ -1,7 +1,7 @@
 {
   "id": "Cloud Infrastructure",
   "title": "Cloud Infrastructure",
-  "content": "- ### OntologyBlock\n  id:: cloud-infrastructure-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7032\n\t- preferred-term:: Cloud Infrastructure\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Cloud infrastructure is a computing model that provides on-demand access to virtualized computing resources including servers, storage, networking, and platform services delivered over the internet. It enables organizations to provision and scale IT resources dynamically without managing physical hardware, typically through service models such as IaaS, PaaS, and SaaS.\n\t- maturity:: reviewed\n\t- belongsToDomain:: [[InfrastructureDomain]], [[Technology Domain]], [[ETSI_Domain_Infrastructure]]\n\t- owl:class:: ngm:CloudInfrastructure\n\t- owl:physicality:: ConceptualEntity\n\t- owl:role:: Infrastructure\n\n## Relationships\n- relatedTo:: [[Computing Infrastructure]], [[Distributed Computing]], [[Database System]]\n- enables:: [[Scalability]], [[Elasticity]], [[Self-Service Provisioning]]\n- implementedBy:: [[AWS]], [[Microsoft Azure]], [[Google Cloud Platform]]\n- supports:: [[Microservices Architecture]], [[Container Orchestration]]\n- dependsOn:: [[Network Protocol]], [[Virtualization Technology]]\n\n## Cloud Service Models\n\n### Infrastructure as a Service (IaaS)\nProvides on-demand access to computing resources: servers, storage, networking, and virtualization. Customers manage applications, runtime, OS, middleware, and data while providers manage servers, storage, and networking.\n\n**Key Characteristics:**\n- Fully self-service for accessing computing resources\n- Scalable and automated compute resources\n- Pay-as-you-go pricing model\n- Complete control over infrastructure through APIs/dashboards\n\n**Examples:** AWS EC2, Azure Virtual Machines, Google Compute Engine\n\n### Platform as a Service (PaaS)\nProvides a complete on-demand cloud platform for developing, running, and managing applications. The provider hosts servers, networks, storage, OS, databases, and development tools.\n\n**Key Characteristics:**\n- Developers write code and manage data/applications\n- Platform management handled by provider\n- Faster development and deployment cycles\n- Built-in scaling and load balancing\n\n**Examples:** Heroku, Google App Engine, Azure App Service\n\n### Software as a Service (SaaS)\nDelivers fully functional applications over the internet on a subscription basis. Providers manage all aspects of the application infrastructure.\n\n**Examples:** Salesforce, Microsoft 365, Google Workspace\n\n## Cloud Architecture Components\n\n### Building Blocks\n- Compute instances (VMs, containers)\n- Storage services (block, object, file)\n- Networking (VPCs, load balancers, CDN)\n- Identity and access management\n- Monitoring and logging services\n\n### Deployment Models\n| Model | Description |\n|-------|-------------|\n| Public Cloud | Resources shared among multiple tenants |\n| Private Cloud | Dedicated infrastructure for single organization |\n| Hybrid Cloud | Combination of public, private, and on-premises |\n| Multi-Cloud | Services from multiple cloud providers |\n\n## Market Growth\n- 2024 global market: $752.44 billion\n- Projected 2030 market: $2,390.18 billion\n- CAGR: 20.4% (2025-2030)\n\n## Major Providers\n- Amazon Web Services (AWS)\n- Microsoft Azure\n- Google Cloud Platform\n- IBM Cloud\n- Oracle Cloud\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched with technical content\n- **References**: 5 pages reference this concept",
+  "content": "- ### OntologyBlock\n  id:: cloud-infrastructure-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7032\n\t- preferred-term:: Cloud Infrastructure\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Cloud infrastructure is a computing model that provides on-demand access to virtualized computing resources including servers, storage, networking, and platform services delivered over the internet. It enables organizations to provision and scale IT resources dynamically without managing physical hardware, typically through service models such as IaaS, PaaS, and SaaS.\n\t- maturity:: reviewed\n\t- belongsToDomain:: [[InfrastructureDomain]], [[Technology Domain]], [[ETSI_Domain_Infrastructure]]\n\t- owl:class:: ngm:CloudInfrastructure\n\t- owl:role:: Infrastructure\n\n## Relationships\n- relatedTo:: [[Computing Infrastructure]], [[Distributed Computing]], [[Database System]]\n- enables:: [[Scalability]], [[Elasticity]], [[Self-Service Provisioning]]\n- implementedBy:: [[AWS]], [[Microsoft Azure]], [[Google Cloud Platform]]\n- supports:: [[Microservices Architecture]], [[Container Orchestration]]\n- dependsOn:: [[Network Protocol]], [[Virtualization Technology]]\n\n## Cloud Service Models\n\n### Infrastructure as a Service (IaaS)\nProvides on-demand access to computing resources: servers, storage, networking, and virtualization. Customers manage applications, runtime, OS, middleware, and data while providers manage servers, storage, and networking.\n\n**Key Characteristics:**\n- Fully self-service for accessing computing resources\n- Scalable and automated compute resources\n- Pay-as-you-go pricing model\n- Complete control over infrastructure through APIs/dashboards\n\n**Examples:** AWS EC2, Azure Virtual Machines, Google Compute Engine\n\n### Platform as a Service (PaaS)\nProvides a complete on-demand cloud platform for developing, running, and managing applications. The provider hosts servers, networks, storage, OS, databases, and development tools.\n\n**Key Characteristics:**\n- Developers write code and manage data/applications\n- Platform management handled by provider\n- Faster development and deployment cycles\n- Built-in scaling and load balancing\n\n**Examples:** Heroku, Google App Engine, Azure App Service\n\n### Software as a Service (SaaS)\nDelivers fully functional applications over the internet on a subscription basis. Providers manage all aspects of the application infrastructure.\n\n**Examples:** Salesforce, Microsoft 365, Google Workspace\n\n## Cloud Architecture Components\n\n### Building Blocks\n- Compute instances (VMs, containers)\n- Storage services (block, object, file)\n- Networking (VPCs, load balancers, CDN)\n- Identity and access management\n- Monitoring and logging services\n\n### Deployment Models\n| Model | Description |\n|-------|-------------|\n| Public Cloud | Resources shared among multiple tenants |\n| Private Cloud | Dedicated infrastructure for single organization |\n| Hybrid Cloud | Combination of public, private, and on-premises |\n| Multi-Cloud | Services from multiple cloud providers |\n\n## Market Growth\n- 2024 global market: $752.44 billion\n- Projected 2030 market: $2,390.18 billion\n- CAGR: 20.4% (2025-2030)\n\n## Major Providers\n- Amazon Web Services (AWS)\n- Microsoft Azure\n- Google Cloud Platform\n- IBM Cloud\n- Oracle Cloud\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched with technical content\n- **References**: 5 pages reference this concept",
   "backlinks": [
     "Digital Twin",
     "Database System",
@@ -12,22 +12,22 @@
     "Digital Twin of Society (DToS)"
   ],
   "wiki_links": [
-    "Microservices Architecture",
-    "AWS",
     "Google Cloud Platform",
-    "Virtualization Technology",
-    "Self-Service Provisioning",
-    "Network Protocol",
-    "Database System",
-    "InfrastructureDomain",
-    "Technology Domain",
     "Distributed Computing",
-    "Scalability",
     "Container Orchestration",
-    "Computing Infrastructure",
-    "Elasticity",
+    "Virtualization Technology",
+    "Database System",
     "Microsoft Azure",
-    "ETSI_Domain_Infrastructure"
+    "Network Protocol",
+    "ETSI_Domain_Infrastructure",
+    "Scalability",
+    "Microservices Architecture",
+    "Computing Infrastructure",
+    "AWS",
+    "InfrastructureDomain",
+    "Elasticity",
+    "Technology Domain",
+    "Self-Service Provisioning"
   ],
   "ontology": {
     "term_id": "NGM-7032",
@@ -48,7 +48,7 @@
     "quality_score": null,
     "cross_domain_links": null,
     "owl_class": "ngm:CloudInfrastructure",
-    "owl_physicality": "ConceptualEntity",
+    "owl_physicality": null,
     "owl_role": "Infrastructure",
     "owl_inferred_class": null,
     "is_subclass_of": [],
@@ -72,6 +72,7 @@
       "is_valid": false,
       "errors": [
         "Missing required property: last-updated",
+        "Missing required property: owl:physicality",
         "Missing required property: is-subclass-of (at least one parent class)"
       ]
     }

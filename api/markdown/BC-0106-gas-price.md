@@ -20,7 +20,6 @@
 
   - **Semantic Classification**
     - owl:class:: bc:GasPrice
-    - owl:physicality:: VirtualEntity
     - owl:role:: Object
     - owl:inferred-class:: bc:VirtualObject
     - belongsToDomain:: [[TokenEconomicsDomain]]
@@ -115,3 +114,9 @@ Ontology(<http://metaverse-ontology.org/blockchain/BC-0106>
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
   -
 
+
+
+<!-- Merged from BC 0106 gas price.md: MetaverseDomain -->
+
+
+<!-- Merged from Gas Price.md: Blockchain, Transaction Fee -->

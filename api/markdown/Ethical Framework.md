@@ -19,8 +19,7 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:EthicalFramework
-    - owl:physicality:: ConceptualEntity
+    - owl:class:: ai:EthicalFramework
     - owl:role:: Concept
     - owl:inferred-class:: ConceptualConcept
     - belongsToDomain:: [[AIEthicsDomain]]
@@ -35,7 +34,7 @@
     collapsed:: true
     - ```clojure
       Prefix(:=<http://metaverse-ontology.org/ai-governance#>)
-Prefix(aigo:=<http://metaverse-ontology.org/ai-governance#>)
+Prefix(ai:=<http://metaverse-ontology.org/ai-governance#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -49,98 +48,98 @@ Ontology(<http://metaverse-ontology.org/ai-governance/PC-0011>
   Import(<http://metaverse-ontology.org/ai-governance/PC-0010>)
 
   ## Class Declaration
-  Declaration(Class(aigo:EthicalFramework))
+  Declaration(Class(ai:EthicalFramework))
 
   ## Subclass Relationships
-  SubClassOf(aigo:EthicalFramework aigo:AIGovernancePrinciple)
+  SubClassOf(ai:EthicalFramework ai:AIGovernancePrinciple)
 
   ## Essential Ethical Properties
-  SubClassOf(aigo:EthicalFramework
-    (DataHasValue aigo:isMorallyGrounded "true"^^xsd:boolean))
+  SubClassOf(ai:EthicalFramework
+    (DataHasValue ai:isMorallyGrounded "true"^^xsd:boolean))
 
-  SubClassOf(aigo:EthicalFramework
-    (ObjectSomeValuesFrom aigo:embodiesValue aigo:MoralValue))
+  SubClassOf(ai:EthicalFramework
+    (ObjectSomeValuesFrom ai:embodiesValue ai:MoralValue))
 
-  SubClassOf(aigo:EthicalFramework
-    (ObjectSomeValuesFrom aigo:appliesReasoningMethod aigo:EthicalReasoningMethod))
+  SubClassOf(ai:EthicalFramework
+    (ObjectSomeValuesFrom ai:appliesReasoningMethod ai:EthicalReasoningMethod))
 
   ## Core Ethical Concerns
-  SubClassOf(aigo:EthicalFramework
-    (DataSomeValuesFrom aigo:addressesFairness xsd:boolean))
+  SubClassOf(ai:EthicalFramework
+    (DataSomeValuesFrom ai:addressesFairness xsd:boolean))
 
-  SubClassOf(aigo:EthicalFramework
-    (DataSomeValuesFrom aigo:addressesTransparency xsd:boolean))
+  SubClassOf(ai:EthicalFramework
+    (DataSomeValuesFrom ai:addressesTransparency xsd:boolean))
 
-  SubClassOf(aigo:EthicalFramework
-    (DataSomeValuesFrom aigo:addressesAccountability xsd:boolean))
+  SubClassOf(ai:EthicalFramework
+    (DataSomeValuesFrom ai:addressesAccountability xsd:boolean))
 
-  SubClassOf(aigo:EthicalFramework
-    (DataSomeValuesFrom aigo:respectsHumanDignity xsd:boolean))
+  SubClassOf(ai:EthicalFramework
+    (DataSomeValuesFrom ai:respectsHumanDignity xsd:boolean))
 
-  SubClassOf(aigo:EthicalFramework
-    (DataSomeValuesFrom aigo:promotesWellbeing xsd:boolean))
+  SubClassOf(ai:EthicalFramework
+    (DataSomeValuesFrom ai:promotesWellbeing xsd:boolean))
 
   ## Harm Prevention
-  SubClassOf(aigo:EthicalFramework
-    (ObjectSomeValuesFrom aigo:preventsHarm aigo:PotentialHarm))
+  SubClassOf(ai:EthicalFramework
+    (ObjectSomeValuesFrom ai:preventsHarm ai:PotentialHarm))
 
-  SubClassOf(aigo:EthicalFramework
-    (ObjectSomeValuesFrom aigo:protectsRight aigo:HumanRight))
+  SubClassOf(ai:EthicalFramework
+    (ObjectSomeValuesFrom ai:protectsRight ai:HumanRight))
 
   ## Data Properties
-  DataPropertyAssertion(aigo:hasEthicalTradition aigo:EthicalFramework xsd:string)
-  DataPropertyAssertion(aigo:hasApplicationDomain aigo:EthicalFramework xsd:string)
-  DataPropertyAssertion(aigo:hasPrescriptiveLevel aigo:EthicalFramework xsd:string)
-  DataPropertyAssertion(aigo:addressesAutonomy aigo:EthicalFramework xsd:boolean)
-  DataPropertyAssertion(aigo:addressesBeneficence aigo:EthicalFramework xsd:boolean)
-  DataPropertyAssertion(aigo:addressesNonMaleficence aigo:EthicalFramework xsd:boolean)
-  DataPropertyAssertion(aigo:addressesJustice aigo:EthicalFramework xsd:boolean)
+  DataPropertyAssertion(ai:hasEthicalTradition ai:EthicalFramework xsd:string)
+  DataPropertyAssertion(ai:hasApplicationDomain ai:EthicalFramework xsd:string)
+  DataPropertyAssertion(ai:hasPrescriptiveLevel ai:EthicalFramework xsd:string)
+  DataPropertyAssertion(ai:addressesAutonomy ai:EthicalFramework xsd:boolean)
+  DataPropertyAssertion(ai:addressesBeneficence ai:EthicalFramework xsd:boolean)
+  DataPropertyAssertion(ai:addressesNonMaleficence ai:EthicalFramework xsd:boolean)
+  DataPropertyAssertion(ai:addressesJustice ai:EthicalFramework xsd:boolean)
 
   ## Object Properties
-  ObjectPropertyAssertion(aigo:embodiesValue aigo:EthicalFramework aigo:MoralValue)
-  ObjectPropertyAssertion(aigo:appliesReasoningMethod aigo:EthicalFramework aigo:EthicalReasoningMethod)
-  ObjectPropertyAssertion(aigo:preventsHarm aigo:EthicalFramework aigo:PotentialHarm)
-  ObjectPropertyAssertion(aigo:protectsRight aigo:EthicalFramework aigo:HumanRight)
-  ObjectPropertyAssertion(aigo:guidesDecision aigo:EthicalFramework aigo:EthicalDecision)
-  ObjectPropertyAssertion(aigo:resolvesConflict aigo:EthicalFramework aigo:EthicalDilemma)
+  ObjectPropertyAssertion(ai:embodiesValue ai:EthicalFramework ai:MoralValue)
+  ObjectPropertyAssertion(ai:appliesReasoningMethod ai:EthicalFramework ai:EthicalReasoningMethod)
+  ObjectPropertyAssertion(ai:preventsHarm ai:EthicalFramework ai:PotentialHarm)
+  ObjectPropertyAssertion(ai:protectsRight ai:EthicalFramework ai:HumanRight)
+  ObjectPropertyAssertion(ai:guidesDecision ai:EthicalFramework ai:EthicalDecision)
+  ObjectPropertyAssertion(ai:resolvesConflict ai:EthicalFramework ai:EthicalDilemma)
 
   ## Property Characteristics
-  ObjectPropertyDomain(aigo:embodiesValue aigo:EthicalFramework)
-  ObjectPropertyRange(aigo:embodiesValue aigo:MoralValue)
+  ObjectPropertyDomain(ai:embodiesValue ai:EthicalFramework)
+  ObjectPropertyRange(ai:embodiesValue ai:MoralValue)
 
-  ObjectPropertyDomain(aigo:appliesReasoningMethod aigo:EthicalFramework)
-  ObjectPropertyRange(aigo:appliesReasoningMethod aigo:EthicalReasoningMethod)
+  ObjectPropertyDomain(ai:appliesReasoningMethod ai:EthicalFramework)
+  ObjectPropertyRange(ai:appliesReasoningMethod ai:EthicalReasoningMethod)
 
   ## Annotations
-  AnnotationAssertion(rdfs:label aigo:EthicalFramework "Ethical Framework"@en)
-  AnnotationAssertion(rdfs:comment aigo:EthicalFramework
+  AnnotationAssertion(rdfs:label ai:EthicalFramework "Ethical Framework"@en)
+  AnnotationAssertion(rdfs:comment ai:EthicalFramework
     "Structured set of moral principles guiding responsible AI development"@en)
-  AnnotationAssertion(dct:description aigo:EthicalFramework
+  AnnotationAssertion(dct:description ai:EthicalFramework
     "Moral reasoning framework ensuring AI systems respect human dignity and promote well-being"@en)
-  AnnotationAssertion(aigo:termID aigo:EthicalFramework "PC-0011")
-  AnnotationAssertion(aigo:authorityScore aigo:EthicalFramework "0.95"^^xsd:decimal)
-  AnnotationAssertion(dct:created aigo:EthicalFramework "2025-11-08"^^xsd:date)
-  AnnotationAssertion(skos:definition aigo:EthicalFramework
+  AnnotationAssertion(ai:termID ai:EthicalFramework "PC-0011")
+  AnnotationAssertion(ai:authorityScore ai:EthicalFramework "0.95"^^xsd:decimal)
+  AnnotationAssertion(dct:created ai:EthicalFramework "2025-11-08"^^xsd:date)
+  AnnotationAssertion(skos:definition ai:EthicalFramework
     "Structured moral principles and reasoning methods guiding ethical AI development and deployment"@en)
 
   ## Ethical Tradition Enumeration
-  SubClassOf(aigo:EthicalFramework
-    (DataHasValue aigo:hasEthicalTradition
+  SubClassOf(ai:EthicalFramework
+    (DataHasValue ai:hasEthicalTradition
       (DataOneOf("consequentialist" "deontological" "virtue-ethics" "care-ethics" "rights-based" "pluralistic"))))
 
   ## Bioethical Principles (applied to AI)
   ## All ethical frameworks should address the four principles
-  SubClassOf(aigo:EthicalFramework
-    (DataMinCardinality 1 aigo:addressesAutonomy))
+  SubClassOf(ai:EthicalFramework
+    (DataMinCardinality 1 ai:addressesAutonomy))
 
-  SubClassOf(aigo:EthicalFramework
-    (DataMinCardinality 1 aigo:addressesBeneficence))
+  SubClassOf(ai:EthicalFramework
+    (DataMinCardinality 1 ai:addressesBeneficence))
 
-  SubClassOf(aigo:EthicalFramework
-    (DataMinCardinality 1 aigo:addressesNonMaleficence))
+  SubClassOf(ai:EthicalFramework
+    (DataMinCardinality 1 ai:addressesNonMaleficence))
 
-  SubClassOf(aigo:EthicalFramework
-    (DataMinCardinality 1 aigo:addressesJustice))
+  SubClassOf(ai:EthicalFramework
+    (DataMinCardinality 1 ai:addressesJustice))
 )
       ```
 

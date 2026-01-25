@@ -2,7 +2,7 @@
   id:: blockchain-core-concepts-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247980
+	- term-id:: MV-3067
 	- preferred-term:: blockchain core concepts
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:blockchaincoreconcepts
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

@@ -19,10 +19,9 @@
     - authority-score:: 0.95
 
   - **Semantic Classification**
-    - owl:class:: aigo:GDPRArticle22Compliance
-    - owl:physicality:: VirtualEntity
+    - owl:class:: ai:GDPRArticle22Compliance
     - owl:role:: Process
-    - owl:inferred-class:: aigo:VirtualProcess
+    - owl:inferred-class:: ai:VirtualProcess
     - belongsToDomain:: [[AIEthicsDomain]]
     - implementedInLayer:: [[ConceptualLayer]]
 
@@ -122,3 +121,6 @@
   -
   
 
+
+
+<!-- Merged from GDPR Article 22 Compliance.md: Death of the Internet -->

@@ -11,7 +11,6 @@
 An **Immersive Experience** is a deeply engaging virtual environment or interaction that creates a strong sense of presence, sensory richness, and emotional engagement, making users feel as though they are truly "inside" the experience rather than merely observing it. It combines multi-sensory stimulation, responsive interaction, narrative engagement, and spatial awareness to induce flow states and suspend disbelief.
 	- maturity:: draft
 	- owl:class:: mv:ImmersiveExperience
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Immersive Experience

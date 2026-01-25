@@ -13,7 +13,6 @@
 	- definition:: **Feedback Control** - Feedback Control in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:FeedbackControl
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0047 feedback control

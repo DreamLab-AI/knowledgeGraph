@@ -212,7 +212,6 @@ Task-specific heads enable the fundamental transfer learning paradigm where a si
 **Verification Status**: Verified against BERT and transfer learning literature
 	- maturity:: draft
 	- owl:class:: mv:TaskSpecificHead
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Task Specific Head

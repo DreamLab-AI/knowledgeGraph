@@ -591,7 +591,6 @@ if __name__ == "__main__":
 - **Standards**: HL7 FHIR, CDS Hooks
 	- maturity:: draft
 	- owl:class:: mv:ClinicalDecisionSupport
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

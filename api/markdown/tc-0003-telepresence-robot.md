@@ -10,7 +10,6 @@
 	- definition:: **Telepresence Robot** - Mobile robotic platform with audio-visual and manipulation capabilities enabling a remote operator to have a physical embodied presence, interact with environments, and perform tasks at a distance while maintaining situational awareness through real-time sensory feedback.
 	- maturity:: emerging
 	- owl:class:: tc:TelepresenceRobot
-	- owl:physicality:: HybridEntity
 	- owl:role:: Agent
 	- belongsToDomain:: [[TelecollaborationDomain]], [[RoboticsDomain]]
 	- belongsToSubDomain:: [[Telepresence]], [[Remote Work]], [[Healthcare]]

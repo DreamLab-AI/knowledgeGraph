@@ -19,7 +19,6 @@
 
 - **Semantic Classification**
   - owl:class:: rb:ForwardKinematics
-  - owl:physicality:: Abstract
   - owl:role:: Method
   - belongsToDomain:: [[Robotics]], [[Kinematics]]
 
@@ -95,3 +94,6 @@
   - authority-score:: 0.98
   - completeness:: 0.95
   - accuracy:: 0.97
+
+
+<!-- Merged from Forward Kinematics.md: RoboticsDomain -->

@@ -2,7 +2,7 @@
   id:: displaymetrology-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20156
+	- term-id:: MV-20156
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ETSI GR ARF 010]]
 	- owl:class:: mv:DisplayMetrology
-	- owl:physicality:: PhysicalEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:PhysicalObject
 	- owl:functional-syntax:: true

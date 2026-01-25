@@ -2,7 +2,7 @@
   id:: algorithmicframework-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: AI-1006
+	- term-id:: AI-4006
 	- source-domain:: ai
 	- preferred-term:: AlgorithmicFramework
 	- status:: complete

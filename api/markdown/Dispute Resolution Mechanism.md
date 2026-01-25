@@ -2,7 +2,7 @@
   id:: dispute-resolution-mechanism-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20223
+	- term-id:: MV-4004
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[UNCITRAL ODR Rules]]
 	- owl:class:: mv:DisputeResolutionMechanism
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

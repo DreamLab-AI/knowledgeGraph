@@ -2,7 +2,7 @@
   id:: narrative-design-ontology-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20303
+	- term-id:: MV-20303
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[Dramatis Personae Ontology]], [[Story Ontology]], [[Narrative Schema.org]]
 	- owl:class:: mv:NarrativeDesignOntology
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

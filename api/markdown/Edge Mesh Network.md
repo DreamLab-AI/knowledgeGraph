@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[IEEE P2048-3]], [[ETSI ARF 010]]
 	- owl:class:: mv:EdgeMeshNetwork
-	- owl:physicality:: HybridEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:HybridObject
 	- owl:functional-syntax:: true

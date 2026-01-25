@@ -24,7 +24,7 @@ id:: 65cbd03a-f9a8-4ed4-83d5-fcd7b6855282
   - domain-prefix:: AI
   - sequence-number:: UPSCALE-001
   - preferred-term:: AI Upscaling and Super-Resolution
-  - source-domain:: ai-ml
+  - source-domain:: ai
   - status:: complete
   - belongsToDomain:: [[AIDomain]], [[ComputerVisionDomain]]
   - qualityScore:: 0.93

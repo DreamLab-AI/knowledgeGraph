@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[ETSI GS MEC]]
 	- owl:class:: mv:TourismMetaverse
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

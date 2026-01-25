@@ -8,15 +8,15 @@
     "Tensor Processing Unit"
   ],
   "wiki_links": [
-    "Real-Time AI",
+    "GPU",
+    "Tensor Processing Unit",
+    "Model Deployment",
     "AI Hardware",
+    "Edge Computing",
     "Neuromorphic Chips",
     "FPGA",
-    "Training Hardware",
-    "Tensor Processing Unit",
-    "Edge Computing",
-    "Model Deployment",
-    "GPU"
+    "Real-Time AI",
+    "Training Hardware"
   ],
   "ontology": {
     "term_id": "AI-1023",

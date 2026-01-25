@@ -2,7 +2,7 @@
   id:: hapticfeedback-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247930
+	- term-id:: MV-3055
 	- preferred-term:: HapticFeedback
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:HapticFeedback
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

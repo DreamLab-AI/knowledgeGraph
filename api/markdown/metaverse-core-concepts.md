@@ -2,7 +2,7 @@
   id:: metaverse-core-concepts-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: mv-1761742247981
+	- term-id:: MV-3026
 	- preferred-term:: metaverse core concepts
 	- source-domain:: mv
 	- status:: draft
@@ -10,7 +10,6 @@
 	- definition:: A component of the metaverse ecosystem.
 	- maturity:: draft
 	- owl:class:: mv:metaversecoreconcepts
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 

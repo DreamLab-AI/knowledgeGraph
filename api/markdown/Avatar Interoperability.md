@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[MSF DG (Interoperable Avatars)]]
 	- owl:class:: mv:AvatarInteroperability
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

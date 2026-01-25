@@ -265,7 +265,6 @@ Modern AI systems create increasingly complex user relationships: users may simu
 - [[Informed Consent]]
 	- maturity:: draft
 	- owl:class:: mv:AIUser
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

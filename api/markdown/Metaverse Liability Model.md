@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[EU Digital Services Act]], [[Section 230 CDA]], [[Product Liability Directive]]
 	- owl:class:: mv:MetaverseLiabilityModel
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Object
 	- owl:inferred-class:: mv:VirtualObject
 	- owl:functional-syntax:: true

@@ -11,7 +11,6 @@
 	- maturity:: draft
 	- source:: [[SEC]] [[MiCA]] [[FINRA]]
 	- owl:class:: mv:VirtualSecuritiesOffering
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

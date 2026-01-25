@@ -71,7 +71,6 @@
 - **Maturity**: Rapid commercial adoption
 	- maturity:: draft
 	- owl:class:: mv:ImageGeneration
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 	- #### Relationships

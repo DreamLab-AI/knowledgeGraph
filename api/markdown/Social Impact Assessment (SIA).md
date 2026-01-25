@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO 26000]], [[UN SDG Toolkit]]
 	- owl:class:: mv:SocialImpactAssessment
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

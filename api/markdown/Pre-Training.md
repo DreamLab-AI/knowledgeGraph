@@ -107,7 +107,6 @@ Pre-training fundamentally changed AI development by enabling knowledge reuse ac
 **Verification Status**: Verified against BERT and GPT foundational papers
 	- maturity:: draft
 	- owl:class:: mv:PreTraining
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Pre Training

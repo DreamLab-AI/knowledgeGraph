@@ -11,7 +11,6 @@
 	- source:: [[Swarm Robotics]]
 	- maturity:: emerging
 	- owl:class:: rb:DecentralizedSwarmControl
-	- owl:physicality:: Abstract
 	- owl:role:: Process
 	- belongsToDomain:: [[RoboticsDomain]]
 	- is-subclass-of:: [[Robotics]]

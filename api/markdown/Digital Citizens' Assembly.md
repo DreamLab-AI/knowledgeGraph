@@ -2,16 +2,15 @@
   id:: digital-citizens-assembly-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20233
+	- term-id:: MV-20233
 	- source-domain:: mv
 	- status:: draft
-- public-access:: true
+	- public-access:: true
 	- preferred-term:: Digital Citizens' Assembly
 	- definition:: Structured deliberation process using XR spaces for policy co-creation through multi-agent democratic decision-making.
-	- maturity:: mature
+	- maturity:: production-ready
 	- source:: [[UN Habitat Digital Civics]]
 	- owl:class:: mv:DigitalCitizensAssembly
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Agent
 	- owl:inferred-class:: mv:VirtualAgent
 	- owl:functional-syntax:: true

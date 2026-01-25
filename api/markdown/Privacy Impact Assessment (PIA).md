@@ -2,7 +2,7 @@
   id:: privacyimpactassessment-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: 20227
+	- term-id:: MV-20227
 	- source-domain:: mv
 	- status:: draft
 - public-access:: true
@@ -11,7 +11,6 @@
 	- maturity:: mature
 	- source:: [[ISO 29134]]
 	- owl:class:: mv:PrivacyImpactAssessment
-	- owl:physicality:: VirtualEntity
 	- owl:role:: Process
 	- owl:inferred-class:: mv:VirtualProcess
 	- owl:functional-syntax:: true

@@ -8,7 +8,7 @@
     - filename-history:: ["AI-0870-emotionalintelligence.md"]
     - public-access:: true
     - ontology:: true
-    - term-id:: AI-0870
+    - term-id:: AI-4016
     - preferred-term:: Emotional Intelligence
     - source-domain:: ai
     - status:: complete

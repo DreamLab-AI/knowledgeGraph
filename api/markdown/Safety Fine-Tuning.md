@@ -53,7 +53,6 @@ Safety fine-tuning represents a critical stage in responsible AI deployment, add
 **Verification Status**: Verified against safety and alignment literature
 	- maturity:: draft
 	- owl:class:: mv:SafetyFineTuning
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Safety Fine Tuning

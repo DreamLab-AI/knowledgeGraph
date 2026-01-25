@@ -2,7 +2,7 @@
   id:: liverpool-smart-cities-ontology
   collapsed:: true
 	- ontology:: true
-	- term-id:: UK-001
+	- term-id:: NGM-1003
 	- preferred-term:: Liverpool Smart Cities
 	- source-domain:: uk-regional
 	- status:: active
@@ -11,8 +11,7 @@
 	- maturity:: established
 	- region:: Merseyside
 	- focus-areas:: Smart Cities, IoT, Urban Tech
-	- owl:class:: uk:LiverpoolSmartCities
-	- owl:physicality:: ConceptualEntity
+	- owl:class:: ngm:LiverpoolSmartCities
 	- owl:role:: RegionalEcosystem
 	- belongsToDomain:: [[UKTechEcosystem]]
 

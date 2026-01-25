@@ -13,7 +13,6 @@
 	- definition:: **Robot Safety** - Robot Safety in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:RobotSafety
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0086 robot safety

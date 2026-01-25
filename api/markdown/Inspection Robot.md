@@ -13,7 +13,6 @@
 	- definition:: **Inspection Robot** - Inspection Robot in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:InspectionRobot
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0018 inspection robot

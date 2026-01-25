@@ -7,14 +7,13 @@
 	- sequence-number:: 0014
 	- filename-history:: ["rb-0014-surgical-robot.md"]
 	- preferred-term:: Surgical Robot
-	- source-domain:: robotics
+	- source-domain:: rb
 	- status:: draft
     - public-access:: true
 	- definition:: ### Primary Definition
 **Surgical Robot** - Surgical Robot in robotics systems
 	- maturity:: draft
 	- owl:class:: rb:rb0014surgicalrobot
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[RoboticsDomain]]
 - ## About rb 0014 surgical robot

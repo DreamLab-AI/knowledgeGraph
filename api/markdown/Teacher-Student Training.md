@@ -53,7 +53,6 @@ Teacher-student training provides a framework for knowledge transfer and model c
 **Verification Status**: Verified against distillation literature
 	- maturity:: draft
 	- owl:class:: mv:TeacherStudentTraining
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Teacher Student Training

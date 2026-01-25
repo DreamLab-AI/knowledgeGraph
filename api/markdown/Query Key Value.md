@@ -100,7 +100,6 @@ In self-attention, Q, K, and V are all derived from the same input through diffe
 *UK English Spelling Standards Applied*
 	- maturity:: draft
 	- owl:class:: mv:QueryKeyValue
-	- owl:physicality:: ConceptualEntity
 	- owl:role:: Concept
 	- belongsToDomain:: [[MetaverseDomain]]
 - ## About Query Key Value

@@ -11,7 +11,6 @@
 	- source:: [[Edge Computing]], [[AI Hardware]]
 	- maturity:: emerging
 	- owl:class:: ai:EdgeAIAccelerator
-	- owl:physicality:: Physical
 	- owl:role:: Object
 	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
 	- isSubclassOf:: [[AI Hardware]]
