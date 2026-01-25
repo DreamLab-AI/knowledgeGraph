@@ -4,14 +4,14 @@
   "content": "- ### OntologyBlock\n  id:: attention-aware-interaction-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9781\n\t- source-domain:: mv\n\t- preferred-term:: Attention Aware Interaction\n\t- status:: active\n\t- definition:: Attention Aware Interaction refers to human-computer interaction techniques that leverage eye tracking, gaze detection, and attention modeling to understand user focus and adapt interfaces accordingly, enabling foveated rendering, gaze-based selection, and contextual content presentation in VR, AR, and metaverse environments.\n\t- owl:class:: mv:AttentionAwareInteraction\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Human-Computer Interaction]]\n\t- enables:: [[Foveated Rendering]], [[Gaze-Based Selection]], [[Adaptive Interfaces]]\n\t- requires:: [[Eye Tracking Hardware]], [[Gaze Detection Algorithms]], [[Attention Modeling]]\n\t- #### Relationships\n\t  id:: attention-aware-interaction-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Eye Tracking**: Cameras and sensors detecting eye position, pupil dilation, and gaze direction\n- **Gaze-Based Interfaces**: UI systems responding to where users look, enabling hands-free interaction\n- **Foveated Rendering**: High-detail rendering only where user is looking to optimize GPU resources\n- **Dwell Time Activation**: Using gaze duration as an interaction trigger\n\n### UX Considerations\n- **Midas Touch Problem**: Avoiding unintended activations during natural looking behavior\n- **Multimodal Integration**: Combining gaze with voice, gestures, or controllers for robust interaction\n- **Social Presence**: Enabling realistic eye contact in virtual avatars\n\n### Hardware Implementation\nMeta Quest Pro, Apple Vision Pro, and other headsets incorporate eye tracking. Tobii and Pupil Labs provide dedicated eye tracking solutions.",
   "backlinks": [],
   "wiki_links": [
-    "metaverse",
+    "Gaze-Based Selection",
+    "Adaptive Interfaces",
+    "Foveated Rendering",
     "Human-Computer Interaction",
-    "Eye Tracking Hardware",
+    "metaverse",
     "Gaze Detection Algorithms",
     "Attention Modeling",
-    "Foveated Rendering",
-    "Gaze-Based Selection",
-    "Adaptive Interfaces"
+    "Eye Tracking Hardware"
   ],
   "ontology": {
     "term_id": "MV-9781",

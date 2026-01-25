@@ -9,16 +9,16 @@
   ],
   "wiki_links": [
     "Settlement Systems",
+    "Price Discovery",
+    "Order Matching",
+    "Exchange Platform",
+    "Algorithmic Trading",
+    "DEX Trading",
     "metaverse",
     "Liquidity Provision",
-    "DEX Trading",
+    "Market Making",
     "Derivatives Market",
-    "Algorithmic Trading",
-    "Order Matching",
-    "Price Discovery",
-    "Exchange Platform",
-    "Financial Trading",
-    "Market Making"
+    "Financial Trading"
   ],
   "ontology": {
     "term_id": "MV-9851",

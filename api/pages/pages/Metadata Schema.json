@@ -13,16 +13,16 @@
   ],
   "wiki_links": [
     "Data Standard",
-    "Dublin Core",
-    "FAIR Data Principles",
-    "Data Governance",
-    "Data Discovery",
-    "Data Catalogue",
-    "Semantic Web",
-    "Ontology",
     "Knowledge Graph",
+    "Data Governance",
+    "Data Catalogue",
     "Data Interoperability",
+    "Dublin Core",
+    "Data Discovery",
+    "Ontology",
+    "FAIR Data Principles",
     "Schema.org",
+    "Semantic Web",
     "JSON-LD"
   ],
   "ontology": {

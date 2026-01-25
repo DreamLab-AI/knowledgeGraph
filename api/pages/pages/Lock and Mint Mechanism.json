@@ -5,11 +5,11 @@
   "backlinks": [],
   "wiki_links": [
     "Wrapped Token",
-    "Cross-Chain Bridge",
-    "Smart Contract",
     "Oracle",
-    "Atomic Swap",
-    "Blockchain"
+    "Cross-Chain Bridge",
+    "Blockchain",
+    "Smart Contract",
+    "Atomic Swap"
   ],
   "ontology": {
     "term_id": "BC-8011",

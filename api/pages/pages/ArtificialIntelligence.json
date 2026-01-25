@@ -13,12 +13,12 @@
     "RoboticsDomain"
   ],
   "wiki_links": [
-    "Metaverse Technology",
     "Robotics Systems",
-    "Blockchain Technology",
-    "Artificial Intelligence",
+    "Metaverse Technology",
     "Telecollaboration",
-    "Technology Domain"
+    "Technology Domain",
+    "Blockchain Technology",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "NGM-7000",

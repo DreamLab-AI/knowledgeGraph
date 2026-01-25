@@ -7,11 +7,11 @@
     "AI Ethics Checklist"
   ],
   "wiki_links": [
-    "metaverse",
     "Transparent Governance",
-    "Governance",
     "Accountability",
-    "Open Data"
+    "Open Data",
+    "Governance",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10085",

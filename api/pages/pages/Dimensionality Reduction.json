@@ -7,13 +7,13 @@
     "Feature Importance"
   ],
   "wiki_links": [
-    "Data Visualization",
     "Feature Selection",
-    "Curse of Dimensionality",
     "Machine Learning",
-    "Feature Engineering",
+    "Unsupervised Learning",
+    "Data Visualization",
     "Computational Efficiency",
-    "Unsupervised Learning"
+    "Feature Engineering",
+    "Curse of Dimensionality"
   ],
   "ontology": {
     "term_id": "AI-1021",

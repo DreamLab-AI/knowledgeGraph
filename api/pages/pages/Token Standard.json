@@ -23,11 +23,11 @@
   ],
   "wiki_links": [
     "NFT",
-    "Smart Contract",
     "Decentralized Exchange",
-    "Fungibility",
     "DeFi",
-    "Blockchain"
+    "Fungibility",
+    "Blockchain",
+    "Smart Contract"
   ],
   "ontology": {
     "term_id": "BC-7005",

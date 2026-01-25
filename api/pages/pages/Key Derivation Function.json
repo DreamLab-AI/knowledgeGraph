@@ -10,13 +10,13 @@
     "Cryptographic Keys"
   ],
   "wiki_links": [
-    "Cryptography",
     "Hash Function",
-    "Private Key",
     "Asymmetric Encryption",
-    "Password Hashing",
     "Hierarchical Deterministic Wallet",
+    "Cryptography",
+    "Password Hashing",
     "Mnemonic Phrase",
+    "Private Key",
     "Blockchain"
   ],
   "ontology": {

@@ -5,15 +5,15 @@
   "backlinks": [],
   "wiki_links": [
     "Blockchain Analytics",
-    "Know Your Customer",
-    "Anti-Money Laundering",
-    "Regulatory Compliance",
     "Institutional Adoption",
-    "Decentralized Identity",
-    "Financial Regulation",
-    "Identity Verification",
+    "Know Your Customer",
+    "Regulatory Compliance",
+    "Anti-Money Laundering",
     "Regulatory Technology",
-    "Blockchain"
+    "Financial Regulation",
+    "Decentralized Identity",
+    "Blockchain",
+    "Identity Verification"
   ],
   "ontology": {
     "term_id": "BC-7001",

@@ -6,11 +6,11 @@
     "Generative Design Tool"
   ],
   "wiki_links": [
-    "metaverse",
+    "Computing Infrastructure",
     "Cloud Computing",
-    "GPU Computing",
     "Scalable AI Training",
-    "Computing Infrastructure"
+    "GPU Computing",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9950",

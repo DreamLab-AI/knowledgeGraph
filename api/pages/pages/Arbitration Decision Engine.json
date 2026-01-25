@@ -8,12 +8,12 @@
   "wiki_links": [
     "Blockchain Integration",
     "Automated Dispute Resolution",
-    "metaverse",
-    "Rule Encoding",
-    "Decentralized Arbitration",
-    "Evidence Authentication",
     "Self-Enforcing Awards",
-    "Smart Contract Resolution"
+    "Evidence Authentication",
+    "Rule Encoding",
+    "metaverse",
+    "Smart Contract Resolution",
+    "Decentralized Arbitration"
   ],
   "ontology": {
     "term_id": "MV-9773",

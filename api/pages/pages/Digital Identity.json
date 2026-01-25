@@ -22,16 +22,16 @@
     "Digital Jurisdiction"
   ],
   "wiki_links": [
-    "Credential Storage",
     "Avatar",
-    "Authorization",
-    "Identity",
-    "metaverse",
-    "Digital Presence",
-    "Self-Sovereign Identity",
-    "Decentralized Identifiers",
-    "Authentication",
+    "Credential Storage",
     "Privacy Controls",
+    "Identity",
+    "Digital Presence",
+    "Authentication",
+    "Decentralized Identifiers",
+    "metaverse",
+    "Authorization",
+    "Self-Sovereign Identity",
     "Identity Verification"
   ],
   "ontology": {

@@ -6,12 +6,12 @@
     "Project BroBots"
   ],
   "wiki_links": [
-    "Distributed Identity",
-    "Distributed Computing",
-    "Bitcoin",
-    "Nostr protocol",
     "Melvin Carvalho",
     "Agents",
-    "Projects"
+    "Distributed Computing",
+    "Projects",
+    "Nostr protocol",
+    "Bitcoin",
+    "Distributed Identity"
   ]
 }

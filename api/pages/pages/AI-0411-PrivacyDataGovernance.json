@@ -5,11 +5,11 @@
   "backlinks": [],
   "wiki_links": [
     "GDPR",
-    "ISO/IEC 27701",
-    "EDPB Opinion 28/2024",
-    "AIEthicsDomain",
     "EU AI Act",
-    "ConceptualLayer"
+    "EDPB Opinion 28/2024",
+    "ConceptualLayer",
+    "ISO/IEC 27701",
+    "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "AI-0411",

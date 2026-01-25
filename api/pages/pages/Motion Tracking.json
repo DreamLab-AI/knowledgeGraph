@@ -15,19 +15,19 @@
     "Human Capture & Recognition"
   ],
   "wiki_links": [
-    "Metaverse",
-    "Embodied Presence",
     "Hand Controllers",
-    "Motion Capture Systems",
-    "User Identification",
+    "Augmented Reality",
+    "Gesture Control",
+    "Embodied Presence",
     "Pose Estimation",
+    "Motion Capture Systems",
     "XR Input Technologies",
-    "Eye Tracking",
+    "User Identification",
+    "Virtual Reality",
     "Head-Mounted Displays",
     "Avatar Animation",
-    "Gesture Control",
-    "Augmented Reality",
-    "Virtual Reality"
+    "Eye Tracking",
+    "Metaverse"
   ],
   "ontology": {
     "term_id": "NGM-7036",

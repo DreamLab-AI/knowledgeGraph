@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "ISO/IEC 23894:2023",
-    "ISO 31000",
-    "AIEthicsDomain",
     "EU AI Act",
-    "ConceptualLayer"
+    "ConceptualLayer",
+    "ISO 31000",
+    "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "AI-0394",
