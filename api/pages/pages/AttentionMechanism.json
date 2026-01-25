@@ -6,18 +6,18 @@
     "NaturalLanguageProcessing"
   ],
   "wiki_links": [
+    "Deep Learning",
     "Large language models",
     "Contextual Embeddings",
-    "Deep Learning",
+    "Self-Attention",
+    "Transformer Architecture",
+    "Artificial Intelligence",
     "BERT",
     "DALL-E",
-    "Self-Attention",
-    "GPT",
-    "Transformer Architecture",
+    "Multi-Head Attention",
     "Stable Diffusion",
-    "Artificial Intelligence",
-    "NaturalLanguageProcessing",
-    "Multi-Head Attention"
+    "GPT",
+    "NaturalLanguageProcessing"
   ],
   "ontology": {
     "term_id": "NGM-7006",

@@ -8,23 +8,23 @@
     "RB-1007-trajectory-generation"
   ],
   "wiki_links": [
+    "Linear Quadratic Regulator",
+    "Optimization Theory",
+    "Spacecraft Control",
     "RB-1007-trajectory-generation",
-    "Optimization",
+    "RB-1002-closed-loop-control",
     "RB-1004-adaptive-control",
     "Machine Learning",
+    "Optimization",
     "System Dynamics Model",
-    "Autonomous Vehicles",
-    "Model Predictive Control",
     "Optimization Algorithm",
-    "Optimization Theory",
-    "Robotics",
     "Optimality",
     "Cost Function",
+    "Model Predictive Control",
+    "Autonomous Vehicles",
     "Efficiency",
-    "Spacecraft Control",
-    "Control Theory",
-    "RB-1002-closed-loop-control",
-    "Linear Quadratic Regulator"
+    "Robotics",
+    "Control Theory"
   ],
   "ontology": {
     "term_id": "RB-1003",

@@ -6,10 +6,10 @@
     "Etsi Metaverse Domain Taxonomy"
   ],
   "wiki_links": [
-    "Metaverse Architecture",
-    "Metaverse Reference Architecture",
     "Domain Model",
-    "Etsi Domain Immersive"
+    "Etsi Domain Immersive",
+    "Metaverse Architecture",
+    "Metaverse Reference Architecture"
   ],
   "ontology": {
     "term_id": "MV-9897",

@@ -75,13 +75,13 @@
     "AIDomain"
   ],
   "wiki_links": [
-    "Telecollaboration",
-    "AIDomain",
-    "Metaverse Technology",
-    "Robotics Systems",
     "Technology Domain",
-    "Blockchain Technology",
-    "Artificial Intelligence"
+    "AIDomain",
+    "Artificial Intelligence",
+    "Telecollaboration",
+    "Robotics Systems",
+    "Metaverse Technology",
+    "Blockchain Technology"
   ],
   "ontology": {
     "term_id": "AI-7007",

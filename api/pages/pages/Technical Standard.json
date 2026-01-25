@@ -14,16 +14,16 @@
     "Avatar Standard"
   ],
   "wiki_links": [
+    "Governance Framework",
+    "Compliance",
     "Best Practices",
+    "Technical Requirements",
+    "Quality Assurance",
     "Specification",
     "Safety",
-    "Core Technology",
-    "Quality Assurance",
-    "Technical Requirements",
+    "Interoperability",
     "System Interoperability",
-    "Compliance",
-    "Governance Framework",
-    "Interoperability"
+    "Core Technology"
   ],
   "ontology": {
     "term_id": "NGM-7019",

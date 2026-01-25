@@ -7,13 +7,13 @@
   ],
   "wiki_links": [
     "Situational Understanding",
-    "Notification Systems",
-    "Social Computing",
-    "State Synchronization",
     "Presence Detection",
     "Social Interaction",
     "metaverse",
-    "Collaborative Presence"
+    "Notification Systems",
+    "Collaborative Presence",
+    "Social Computing",
+    "State Synchronization"
   ],
   "ontology": {
     "term_id": "MV-9793",

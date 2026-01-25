@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "Data Availability",
-    "Fault Tolerance",
-    "Distributed Database",
-    "Network Infrastructure",
-    "Consistency Guarantees",
-    "Storage Systems",
-    "Distributed Systems",
-    "metaverse",
     "Consensus Algorithm",
+    "Distributed Systems",
+    "Fault Tolerance",
+    "metaverse",
+    "Storage Systems",
+    "Consistency Guarantees",
     "Blockchain Consensus",
-    "Edge Computing"
+    "Distributed Database",
+    "Edge Computing",
+    "Network Infrastructure"
   ],
   "ontology": {
     "term_id": "MV-9840",

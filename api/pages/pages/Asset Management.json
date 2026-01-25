@@ -16,15 +16,15 @@
     "Storage Layer"
   ],
   "wiki_links": [
-    "Financial Services",
     "Decentralized Finance",
-    "Portfolio Management",
+    "Risk Management",
     "Tokenization",
-    "Financial Technology",
+    "Financial Services",
     "Custody",
     "Traditional Finance",
-    "Risk Management",
-    "Institutional Investment"
+    "Portfolio Management",
+    "Institutional Investment",
+    "Financial Technology"
   ],
   "ontology": {
     "term_id": "NGM-7014",

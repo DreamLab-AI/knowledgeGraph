@@ -10,11 +10,11 @@
   ],
   "wiki_links": [
     "Schema Evolution",
-    "Event Streaming",
-    "Data Management",
-    "Data Governance",
+    "API Contracts",
     "metaverse",
-    "API Contracts"
+    "Data Governance",
+    "Event Streaming",
+    "Data Management"
   ],
   "ontology": {
     "term_id": "MV-10028",

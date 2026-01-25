@@ -8,12 +8,12 @@
   ],
   "wiki_links": [
     "Search Algorithms",
-    "Optimization",
     "Resource Management",
-    "Constraint Satisfaction",
+    "Optimization",
     "STRIPS",
-    "Robotics",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
+    "Constraint Satisfaction",
+    "Robotics"
   ],
   "ontology": {
     "term_id": "AI-1007",

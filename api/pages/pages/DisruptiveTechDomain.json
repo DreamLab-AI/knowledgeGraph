@@ -6,13 +6,13 @@
   "wiki_links": [
     "Technology Forecasting",
     "RoboticsDomain",
-    "BlockchainDomain",
-    "ConceptualLayer",
-    "Domain",
-    "MetaverseDomain",
-    "AIApplicationsDomain",
     "Innovation Tracking",
-    "CoreOntology"
+    "ConceptualLayer",
+    "AIApplicationsDomain",
+    "CoreOntology",
+    "BlockchainDomain",
+    "MetaverseDomain",
+    "Domain"
   ],
   "ontology": {
     "term_id": "NGM-0020",

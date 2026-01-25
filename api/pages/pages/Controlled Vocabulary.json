@@ -8,17 +8,17 @@
     "Digital Taxonomy Registry"
   ],
   "wiki_links": [
-    "Metadata Schema",
     "Maintenance Process",
-    "Content Discovery",
-    "Accurate Retrieval",
+    "Controlled Vocabularies",
     "Term Governance",
+    "Accurate Retrieval",
     "metaverse",
     "Information Architecture",
-    "Domain Expertise",
-    "Data Standardization",
     "Semantic Web",
-    "Controlled Vocabularies"
+    "Content Discovery",
+    "Domain Expertise",
+    "Metadata Schema",
+    "Data Standardization"
   ],
   "ontology": {
     "term_id": "MV-9833",

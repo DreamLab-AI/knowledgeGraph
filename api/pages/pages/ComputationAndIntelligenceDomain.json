@@ -41,11 +41,11 @@
   ],
   "wiki_links": [
     "Philosophy of Mind",
-    "ArtificialIntelligenceDomain",
     "Machine Learning",
+    "Cognitive Science",
+    "ArtificialIntelligenceDomain",
     "Artificial Intelligence",
-    "Theoretical Computer Science",
-    "Cognitive Science"
+    "Theoretical Computer Science"
   ],
   "ontology": {
     "term_id": "AI-7008",

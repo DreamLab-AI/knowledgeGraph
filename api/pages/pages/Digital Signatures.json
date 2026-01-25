@@ -9,17 +9,17 @@
     "Post-Quantum Cryptography"
   ],
   "wiki_links": [
-    "Hash Function",
-    "Blockchain Security",
-    "Data Integrity",
+    "Non-Repudiation",
+    "metaverse",
     "Cryptography",
+    "Private Key",
     "Public Key Infrastructure",
+    "Signature Algorithm",
+    "Blockchain Security",
+    "Hash Function",
     "Smart Contracts",
     "Authentication",
-    "Private Key",
-    "metaverse",
-    "Non-Repudiation",
-    "Signature Algorithm"
+    "Data Integrity"
   ],
   "ontology": {
     "term_id": "MV-9872",

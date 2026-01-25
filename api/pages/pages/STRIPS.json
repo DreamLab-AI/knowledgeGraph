@@ -7,11 +7,11 @@
     "Automated Planning"
   ],
   "wiki_links": [
+    "Knowledge Representation",
     "PDDL",
-    "Automated Planning",
     "Planning Languages",
     "Logic Programming",
-    "Knowledge Representation"
+    "Automated Planning"
   ],
   "ontology": {
     "term_id": "AI-1009",
