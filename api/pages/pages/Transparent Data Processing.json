@@ -7,10 +7,10 @@
   ],
   "wiki_links": [
     "metaverse",
-    "Privacy By Design",
-    "Data Processing",
     "Data Governance",
-    "GDPR"
+    "Data Processing",
+    "GDPR",
+    "Privacy By Design"
   ],
   "ontology": {
     "term_id": "MV-10087",

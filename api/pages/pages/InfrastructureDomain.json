@@ -83,23 +83,23 @@
     "ETSI_Domain_Data_Mgmt___AI"
   ],
   "wiki_links": [
-    "ServerComponent",
-    "StorageComponent",
+    "InfrastructureAsCode",
     "TechnologyDomain",
+    "Networkcomponent",
     "ConfigurationManagement",
+    "DataCenterInfrastructure",
     "NetworkTopology",
-    "ContainerOrchestration",
+    "CloudInfrastructure",
+    "StorageComponent",
+    "ServerComponent",
     "SecurityInfrastructure",
     "ServerInfrastructure",
-    "Virtualization",
-    "DataCenterInfrastructure",
-    "CloudInfrastructure",
-    "InfrastructureAsCode",
-    "CriticalInfrastructure",
     "DatabaseComponent",
+    "ContainerOrchestration",
     "ITServiceManagement",
     "NetworkInfrastructure",
-    "Networkcomponent"
+    "CriticalInfrastructure",
+    "Virtualization"
   ],
   "ontology": {
     "term_id": "AI-7002",

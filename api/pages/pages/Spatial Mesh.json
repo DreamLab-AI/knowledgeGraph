@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "metaverse",
+    "Spatial Mapping",
+    "AR Occlusion",
     "Point Cloud",
     "3D Reconstruction",
-    "Depth Sensing",
-    "Spatial Mapping",
-    "AR Occlusion"
+    "Depth Sensing"
   ],
   "ontology": {
     "term_id": "MV-10061",

@@ -10,11 +10,11 @@
     "tc-0003-telepresence-robot"
   ],
   "wiki_links": [
-    "Collaborative Editing",
     "Virtual Meeting",
-    "Shared Workspace",
+    "Real-Time Collaboration",
+    "Collaborative Editing",
     "Telecollaboration",
-    "Real-Time Collaboration"
+    "Shared Workspace"
   ],
   "ontology": {
     "term_id": "TC-0603",

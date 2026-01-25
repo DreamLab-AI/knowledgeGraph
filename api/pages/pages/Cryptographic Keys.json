@@ -15,9 +15,9 @@
   ],
   "wiki_links": [
     "Random Number Generation",
-    "Asymmetric Encryption",
     "Symmetric Encryption",
     "Cryptographic Key Management",
+    "Asymmetric Encryption",
     "Digital Signature",
     "Key Derivation Function",
     "Cryptography"

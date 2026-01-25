@@ -8,18 +8,18 @@
     "AttentionMechanism"
   ],
   "wiki_links": [
-    "Text Classification",
-    "Computational Linguistics",
-    "Sentiment Analysis",
-    "Tokenization",
-    "Transformer Architecture",
     "Word Embeddings",
-    "AttentionMechanism",
-    "Large language models",
-    "Question Answering",
-    "Machine Translation",
     "Artificial Intelligence",
-    "Deep Learning"
+    "Question Answering",
+    "Text Classification",
+    "Deep Learning",
+    "Computational Linguistics",
+    "Transformer Architecture",
+    "Tokenization",
+    "Large language models",
+    "AttentionMechanism",
+    "Sentiment Analysis",
+    "Machine Translation"
   ],
   "ontology": {
     "term_id": "NGM-7017",

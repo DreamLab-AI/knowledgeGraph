@@ -6,11 +6,11 @@
     "Haptics"
   ],
   "wiki_links": [
-    "metaverse",
     "System Software",
+    "metaverse",
+    "Hardware Acceleration",
     "Extended Reality Xr",
-    "Immersive Interface",
-    "Hardware Acceleration"
+    "Immersive Interface"
   ],
   "ontology": {
     "term_id": "MV-9886",

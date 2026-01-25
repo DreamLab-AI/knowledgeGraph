@@ -16,7 +16,7 @@
 # Multi-Domain Ontology - OWL2 DL Turtle Format
 # ==============================================================================
 #
-# Generated: 2026-01-25T19:50:50.093736
+# Generated: 2026-01-25T20:17:40.864533
 # Total Terms: 1900
 #
 # Domain Distribution:
@@ -30144,7 +30144,7 @@ bc:HashFunction a owl:Class ;
     rdf:type owl:ObjectClass .
 
 # SHA-256
-bc:Sha-256 a owl:Class ;
+bc:Sha256 a owl:Class ;
     rdfs:subClassOf bc:BlockchainEntity ;
     rdfs:subClassOf bc:CryptographicPrimitive ;
     rdfs:label "SHA-256"@en ;
@@ -30183,7 +30183,7 @@ bc:DigitalSignature a owl:Class ;
     rdf:type owl:ObjectClass .
 
 # Public-Key Cryptography
-bc:Public-keyCryptography a owl:Class ;
+bc:PublickeyCryptography a owl:Class ;
     rdfs:subClassOf bc:BlockchainEntity ;
     rdfs:subClassOf bc:CryptographicPrimitive ;
     rdfs:label "Public-Key Cryptography"@en ;
@@ -30209,7 +30209,7 @@ bc:EllipticCurveCryptography a owl:Class ;
     rdf:type owl:ObjectClass .
 
 # Zero-Knowledge Proof
-bc:Zero-knowledgeProof a owl:Class ;
+bc:ZeroknowledgeProof a owl:Class ;
     rdfs:subClassOf bc:BlockchainEntity ;
     rdfs:subClassOf bc:CryptographicPrimitive ;
     rdfs:label "Zero-Knowledge Proof"@en ;
@@ -30547,7 +30547,7 @@ bc:SchnorrSignature a owl:Class ;
     rdf:type owl:ObjectClass .
 
 # Keccak-256
-bc:Keccak-256 a owl:Class ;
+bc:Keccak256 a owl:Class ;
     rdfs:subClassOf bc:BlockchainEntity ;
     rdfs:subClassOf bc:CryptographicPrimitive ;
     rdfs:label "Keccak-256"@en ;
@@ -30962,7 +30962,7 @@ bc:LightNode a owl:Class ;
     rdf:type owl:ObjectClass .
 
 # Peer-to-Peer Network
-bc:Peer-to-peerNetwork a owl:Class ;
+bc:PeertopeerNetwork a owl:Class ;
     rdfs:subClassOf bc:BlockchainEntity ;
     rdfs:subClassOf bc:NetworkComponent ;
     rdfs:label "Peer-to-Peer Network"@en ;
@@ -34901,7 +34901,7 @@ mv:IndustryCloudPlatforms a owl:Class ;
     rdf:type owl:ConceptClass .
 
 # Cloud-Native Applications
-mv:Cloud-NativeApplications a owl:Class ;
+mv:CloudNativeApplications a owl:Class ;
     rdfs:label "Cloud-Native Applications"@en ;
     rdfs:comment "[Generated from Gartner emerging tech analysis]"@en ;
     skos:prefLabel "Cloud-Native Applications"@en ;
@@ -35108,7 +35108,7 @@ mv:DataManagement rdfs:subClassOf [
 ] .
 
 # AI-Augmented Software Engineering
-mv:AI-AugmentedSoftwareEngineering a owl:Class ;
+mv:AIAugmentedSoftwareEngineering a owl:Class ;
     rdfs:subClassOf ai:ArtificialIntelligence ;
     rdfs:label "AI-Augmented Software Engineering"@en ;
     rdfs:comment "[Generated from Gartner emerging tech analysis]"@en ;
@@ -45957,7 +45957,7 @@ mv:XRAccessibilityGuideline rdfs:subClassOf [
 ] .
 
 # Digital Citizens’ Assembly
-mv:DigitalCitizens’Assembly a owl:Class ;
+mv:DigitalCitizensAssembly a owl:Class ;
     rdfs:label "Digital Citizens’ Assembly"@en ;
     rdfs:comment "structured deliberation process using XR spaces for policy co-creation."@en ;
     skos:prefLabel "Digital Citizens’ Assembly"@en ;

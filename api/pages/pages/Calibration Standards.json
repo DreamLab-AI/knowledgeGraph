@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "metaverse",
-    "Technical Standard",
     "Measurement Accuracy",
     "Calibration Target",
-    "Validation Procedures",
-    "Camera Parameters",
-    "Traceability Chain",
-    "Device Alignment",
-    "Quality Assurance",
     "Display Testing",
-    "Reference Materials"
+    "Quality Assurance",
+    "Reference Materials",
+    "Traceability Chain",
+    "Camera Parameters",
+    "Technical Standard",
+    "Validation Procedures",
+    "Device Alignment"
   ],
   "ontology": {
     "term_id": "MV-9804",

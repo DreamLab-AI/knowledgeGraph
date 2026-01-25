@@ -7,13 +7,13 @@
   ],
   "wiki_links": [
     "AI Hardware",
-    "Low-Latency Inference",
-    "Reconfigurable Computing",
-    "ASIC",
     "Edge Computing",
+    "Hardware Acceleration",
     "Inference Hardware",
+    "Reconfigurable Computing",
     "Custom Neural Architectures",
-    "Hardware Acceleration"
+    "ASIC",
+    "Low-Latency Inference"
   ],
   "ontology": {
     "term_id": "AI-1026",

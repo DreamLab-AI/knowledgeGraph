@@ -8,12 +8,12 @@
     "Reference Architecture"
   ],
   "wiki_links": [
-    "System Design",
+    "Microservices",
     "metaverse",
-    "Design Patterns",
     "System Scalability",
     "Modular Software Systems",
-    "Microservices"
+    "System Design",
+    "Design Patterns"
   ],
   "ontology": {
     "term_id": "MV-10047",

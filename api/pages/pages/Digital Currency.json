@@ -14,17 +14,17 @@
     "Value Transfer"
   ],
   "wiki_links": [
-    "Virtual Transactions",
     "metaverse",
-    "Digital Wallet",
-    "Transaction Network",
-    "CBDC",
-    "Programmable Money",
-    "Stablecoin",
-    "Cryptocurrency",
-    "Financial Technology",
     "Security Infrastructure",
-    "Digital Payments"
+    "CBDC",
+    "Digital Payments",
+    "Stablecoin",
+    "Transaction Network",
+    "Programmable Money",
+    "Digital Wallet",
+    "Virtual Transactions",
+    "Cryptocurrency",
+    "Financial Technology"
   ],
   "ontology": {
     "term_id": "MV-9855",

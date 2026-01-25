@@ -12,13 +12,13 @@
     "tc-0003-telepresence-robot"
   ],
   "wiki_links": [
-    "TC-0001-telecollaboration-domain",
-    "AI Domain",
     "RB Domain",
-    "Telecollaboration",
+    "AI Domain",
     "BC Domain",
+    "Technology Domain",
     "MV Domain",
-    "Technology Domain"
+    "Telecollaboration",
+    "TC-0001-telecollaboration-domain"
   ],
   "ontology": {
     "term_id": "AI-7016",

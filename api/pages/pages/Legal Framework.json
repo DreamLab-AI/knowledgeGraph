@@ -18,15 +18,15 @@
   ],
   "wiki_links": [
     "Governance Framework",
-    "Security Obligations",
-    "Data Protection",
-    "Rights Protection",
-    "Compliance",
-    "Privacy Requirements",
-    "Legal Compliance",
     "Regulatory Framework",
-    "Accountability",
-    "Core Technology"
+    "Rights Protection",
+    "Core Technology",
+    "Data Protection",
+    "Compliance",
+    "Legal Compliance",
+    "Privacy Requirements",
+    "Security Obligations",
+    "Accountability"
   ],
   "ontology": {
     "term_id": "NGM-7024",

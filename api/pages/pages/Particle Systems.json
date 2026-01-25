@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "metaverse",
-    "Particle System",
     "Game Engine",
-    "Visual Effects Pipeline",
     "Real Time VFX",
-    "VFX Tools"
+    "Visual Effects Pipeline",
+    "VFX Tools",
+    "Particle System"
   ],
   "ontology": {
     "term_id": "MV-10001",

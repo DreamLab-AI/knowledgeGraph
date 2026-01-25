@@ -7,17 +7,17 @@
     "Neural 3D Generation"
   ],
   "wiki_links": [
-    "NVIDIA Omniverse",
     "metaverse",
-    "Computer Vision",
     "Rapid Prototyping",
-    "Mass Digitization",
-    "Machine Learning",
-    "Automated Modeling",
+    "Synthetic Data",
     "AI Training",
+    "NVIDIA Omniverse",
+    "Automated Modeling",
+    "Machine Learning",
+    "Mass Digitization",
     "3D Capture",
     "Generative AI",
-    "Synthetic Data"
+    "Computer Vision"
   ],
   "ontology": {
     "term_id": "MV-9879",

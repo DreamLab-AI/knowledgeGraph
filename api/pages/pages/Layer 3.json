@@ -8,18 +8,18 @@
     "Bitcoin As Money"
   ],
   "wiki_links": [
-    "Layer 2",
     "Immutable X",
-    "Rollup",
+    "Custom Execution Environment",
+    "Blockchain",
+    "Layer 1",
     "Arbitrum Orbit",
     "Application-Specific Blockchain",
-    "Layer 1",
-    "Blockchain",
-    "Custom Execution Environment",
-    "dYdX v4",
     "General-Purpose Smart Contract Platform",
-    "State Channel",
-    "Scalability Solutions"
+    "Rollup",
+    "Scalability Solutions",
+    "dYdX v4",
+    "Layer 2",
+    "State Channel"
   ],
   "ontology": {
     "term_id": "BC-8009",

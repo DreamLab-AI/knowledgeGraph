@@ -16,23 +16,23 @@
     "Performance Optimization"
   ],
   "wiki_links": [
-    "Data Transmission",
-    "Network Hardware",
-    "TCP/IP Stack",
     "Cloud Infrastructure",
-    "ISO",
     "IETF",
-    "Operating Systems",
+    "Interoperability",
+    "Network Hardware",
+    "ETSI_Domain_Interoperability",
     "Computing Infrastructure",
-    "Network Communication",
-    "Distributed Computing",
+    "ISO",
     "IEEE",
     "OSI Model",
+    "TCP/IP Stack",
+    "InfrastructureDomain",
     "Technology Domain",
-    "ETSI_Domain_Interoperability",
-    "Interoperability",
+    "Distributed Computing",
+    "Operating Systems",
+    "Data Transmission",
     "Internet Protocol Suite",
-    "InfrastructureDomain"
+    "Network Communication"
   ],
   "ontology": {
     "term_id": "TC-7001",

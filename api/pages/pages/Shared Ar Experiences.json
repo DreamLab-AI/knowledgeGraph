@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: shared-ar-experiences-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10040\n\t- source-domain:: mv\n\t- preferred-term:: Shared Ar Experiences\n\t- status:: active\n\t- definition:: Collaborative augmented reality interactions enabling multiple users to simultaneously view and interact with digital content overlaid on shared physical environments, supporting real-time synchronization of virtual objects across devices for social connection and joint activities.\n\t- owl:class:: mv:SharedArExperiences\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: shared-ar-experiences-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Augmented Reality]]\n\t\t- related-to:: [[Collaborative Mixed Reality]]\n\t\t- related-to:: [[Spatial Anchors]]\n\t\t- related-to:: [[Multi User Experience]]\n\t\t- enables:: [[Social AR Interaction]]\n\t- #### Key Technologies\n\t  collapsed:: true\n\t\t- Cloud-based spatial anchor services\n\t\t- Cross-platform AR synchronization\n\t\t- Real-time object state sharing\n\t\t- Multi-device coordinate alignment\n\t\t- Shared world understanding\n\t- #### Applications\n\t  collapsed:: true\n\t\t- Virtual meetings and collaborative workspaces\n\t\t- Multiplayer AR gaming experiences\n\t\t- Educational group simulations\n\t\t- Design review and visualization\n\t\t- Social entertainment and events",
   "backlinks": [],
   "wiki_links": [
-    "Augmented Reality",
-    "metaverse",
-    "Spatial Anchors",
     "Social AR Interaction",
+    "metaverse",
+    "Multi User Experience",
     "Collaborative Mixed Reality",
-    "Multi User Experience"
+    "Spatial Anchors",
+    "Augmented Reality"
   ],
   "ontology": {
     "term_id": "MV-10040",

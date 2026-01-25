@@ -11,11 +11,11 @@
     "ManipulatorArm"
   ],
   "wiki_links": [
-    "ComputerVisionTask",
-    "MachineLearning",
-    "NeuralNetworkArchitecture",
     "Artificial Intelligence",
-    "Deep Learning"
+    "ComputerVisionTask",
+    "Deep Learning",
+    "MachineLearning",
+    "NeuralNetworkArchitecture"
   ],
   "ontology": {
     "term_id": "NGM-7011",

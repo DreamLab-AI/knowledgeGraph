@@ -9,11 +9,11 @@
   ],
   "wiki_links": [
     "metaverse",
-    "Human Computer Interaction",
-    "Gesture Recognition",
-    "Eye Tracking",
     "Spatial Computing",
-    "Immersive User Experience"
+    "Human Computer Interaction",
+    "Immersive User Experience",
+    "Eye Tracking",
+    "Gesture Recognition"
   ],
   "ontology": {
     "term_id": "MV-10059",

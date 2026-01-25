@@ -12,11 +12,11 @@
   ],
   "wiki_links": [
     "metaverse",
-    "Ontology Engineering",
-    "Web Standards",
-    "Knowledge Representation",
     "Data Interoperability",
-    "Linked Data"
+    "Ontology Engineering",
+    "Linked Data",
+    "Knowledge Representation",
+    "Web Standards"
   ],
   "ontology": {
     "term_id": "MV-10037",

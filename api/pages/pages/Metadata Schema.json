@@ -12,17 +12,17 @@
     "Cultural Provenance Record"
   ],
   "wiki_links": [
-    "JSON-LD",
-    "Schema.org",
-    "Data Discovery",
-    "Ontology",
-    "Data Standard",
-    "Data Governance",
     "Semantic Web",
+    "Data Interoperability",
+    "Data Governance",
+    "Ontology",
     "FAIR Data Principles",
     "Data Catalogue",
-    "Data Interoperability",
+    "Data Discovery",
     "Dublin Core",
+    "JSON-LD",
+    "Schema.org",
+    "Data Standard",
     "Knowledge Graph"
   ],
   "ontology": {

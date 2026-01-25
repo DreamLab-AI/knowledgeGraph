@@ -22,17 +22,17 @@
     "Digital Jurisdiction"
   ],
   "wiki_links": [
-    "Technical Standard",
-    "Risk Management",
     "Legal Framework",
-    "Organisational Framework",
-    "Compliance",
-    "Decision Rights",
     "Strategic Alignment",
-    "Policy Enforcement",
-    "Accountability",
+    "Performance Management",
     "Core Technology",
-    "Performance Management"
+    "Risk Management",
+    "Decision Rights",
+    "Policy Enforcement",
+    "Compliance",
+    "Technical Standard",
+    "Organisational Framework",
+    "Accountability"
   ],
   "ontology": {
     "term_id": "NGM-7023",

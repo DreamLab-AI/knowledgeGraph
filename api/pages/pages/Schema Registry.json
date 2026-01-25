@@ -9,12 +9,12 @@
     "Digital Taxonomy Registry"
   ],
   "wiki_links": [
-    "API Contracts",
     "metaverse",
-    "Schema Evolution",
+    "Data Management",
     "Data Governance",
+    "Schema Evolution",
     "Event Streaming",
-    "Data Management"
+    "API Contracts"
   ],
   "ontology": {
     "term_id": "MV-10028",

@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "metaverse",
-    "Digital Infrastructure",
-    "Exchange Technology",
-    "Cryptographic Systems",
-    "Key Management",
-    "Wallet Infrastructure",
-    "Security Hardware",
-    "Storage Solutions",
     "Node Network",
+    "Wallet Infrastructure",
+    "Digital Infrastructure",
+    "Cryptographic Systems",
+    "Storage Solutions",
+    "Exchange Technology",
+    "Key Management",
     "Asset Custody",
-    "Transaction Processing"
+    "Transaction Processing",
+    "Security Hardware"
   ],
   "ontology": {
     "term_id": "MV-9848",

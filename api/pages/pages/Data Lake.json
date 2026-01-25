@@ -7,10 +7,10 @@
     "Data Fabric Architecture"
   ],
   "wiki_links": [
-    "ArtificialIntelligenceDomain",
-    "Data Engineering",
     "Big Data",
-    "Artificial Intelligence"
+    "ArtificialIntelligenceDomain",
+    "Artificial Intelligence",
+    "Data Engineering"
   ],
   "ontology": {
     "term_id": "AI-9009",

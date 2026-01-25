@@ -13,14 +13,14 @@
     "Decentralized Finance"
   ],
   "wiki_links": [
-    "DeFi Ecosystem",
-    "Proposer-Builder Separation",
-    "BlockchainDomain",
-    "Transaction Ordering",
-    "Mempool",
     "Blockchain",
+    "Proposer-Builder Separation",
+    "Transaction Ordering",
     "Consensus Security",
-    "Front-Running"
+    "DeFi Ecosystem",
+    "Front-Running",
+    "Mempool",
+    "BlockchainDomain"
   ],
   "ontology": {
     "term_id": "BC-8012",

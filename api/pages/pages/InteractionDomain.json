@@ -38,22 +38,22 @@
     "Human Interface Layer (HIL)"
   ],
   "wiki_links": [
-    "UXON",
-    "GestureRecognition",
+    "HumanComputerInteraction",
     "TechnologyDomain",
     "UserModeling",
-    "NaturalLanguageInterface",
     "UserInterfaceDesign",
-    "HumanComputerInteraction",
-    "HapticInteraction",
-    "AccessibilityDomain",
-    "HCIO",
-    "HCI-ON",
     "InteractionPatterns",
-    "VoiceInteraction",
-    "UserExperience",
     "PervasiveComputing",
-    "AdaptiveInterfaces"
+    "GestureRecognition",
+    "HCIO",
+    "UXON",
+    "HCI-ON",
+    "UserExperience",
+    "NaturalLanguageInterface",
+    "HapticInteraction",
+    "AdaptiveInterfaces",
+    "VoiceInteraction",
+    "AccessibilityDomain"
   ],
   "ontology": {
     "term_id": "AI-7010",

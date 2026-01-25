@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "Barocas et al. (2019)",
-    "ConceptualLayer",
-    "Dwork et al. (2012)",
     "Hardt et al. (2016)",
-    "AIEthicsDomain"
+    "Dwork et al. (2012)",
+    "AIEthicsDomain",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "AI-0383",

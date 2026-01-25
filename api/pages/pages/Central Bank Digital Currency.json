@@ -10,17 +10,17 @@
     "Value Transfer"
   ],
   "wiki_links": [
-    "metaverse",
-    "Digital Currency",
-    "Central Bank Infrastructure",
-    "Digital Identity",
     "Digital Money",
-    "Payment Network",
-    "Financial Inclusion",
-    "Monetary Policy Transmission",
-    "CBDC Frameworks",
+    "metaverse",
+    "Digital Identity",
     "Digital Payments",
-    "Payment System"
+    "Financial Inclusion",
+    "CBDC Frameworks",
+    "Digital Currency",
+    "Monetary Policy Transmission",
+    "Central Bank Infrastructure",
+    "Payment System",
+    "Payment Network"
   ],
   "ontology": {
     "term_id": "MV-9817",

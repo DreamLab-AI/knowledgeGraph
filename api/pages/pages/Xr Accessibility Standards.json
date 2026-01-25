@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: xr-accessibility-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9002\n\t- source-domain:: mv\n\t- preferred-term:: XR Accessibility Standards\n\t- status:: active\n\t- definition:: Guidelines, best practices, and technical specifications for making extended reality experiences accessible to users with disabilities, addressing visual, auditory, motor, cognitive, and vestibular impairments through inclusive design principles and assistive technology compatibility.\n\t- owl:class:: mv:XrAccessibilityStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Accessibility]]\n\t\t- related-to:: [[Virtual Reality VR]]\n\t\t- related-to:: [[Augmented Reality]]\n\t\t- related-to:: [[Standards]]\n\t  id:: xr-accessibility-standards-relationships\n\t  collapsed:: true\n- ## Overview\n\t- XR accessibility standards address the unique challenges of making immersive technologies usable for people with disabilities. The W3C's XR Accessibility User Requirements (XAUR) is published by the Research Questions Task Force and acknowledged by the European Committee for Standardisation as an appropriate starting point. WCAG 3.0 expands to address XR technologies, though mapping traditional WCAG to XR interfaces presents challenges.\n- ## Technical Details\n\t- ### Key Standards\n\t\t- **W3C XAUR**: XR Accessibility User Requirements from APA Working Group\n\t\t- **WCAG 3.0**: Expanded accessibility guidelines including XR\n\t\t- **EN 301 549**: European standard for ICT accessibility\n\t\t- **ISO 9241-171**: Guidance on software accessibility\n\t- ### Accessibility Considerations\n\t\t- **Input Flexibility**: Multiple input methods beyond motion controllers\n\t\t- **Physical Position**: Not requiring standing or specific body positions\n\t\t- **Visual Alternatives**: Audio descriptions and haptic feedback\n\t\t- **Cognitive Support**: Safe learning environments for social skills\n\t- ### Assistive Technologies\n\t\t- **WalkinVR Driver**: Adapts VR to user motion capabilities\n\t\t- **Screen Readers**: For menu and UI accessibility\n\t\t- **Eye Tracking**: Gaze-based selection alternatives\n\t\t- **Adaptive Controllers**: Support for alternative input devices\n- ## Applications\n\t- Accessible VR game development\n\t- Inclusive metaverse platform design\n\t- Enterprise XR training accessibility\n\t- Therapeutic VR for cognitive disabilities\n\t- Educational VR accessibility compliance",
   "backlinks": [],
   "wiki_links": [
-    "Augmented Reality",
     "metaverse",
-    "Accessibility",
+    "Standards",
     "Virtual Reality VR",
-    "Standards"
+    "Accessibility",
+    "Augmented Reality"
   ],
   "ontology": {
     "term_id": "MV-9002",
