@@ -9,11 +9,11 @@
   ],
   "wiki_links": [
     "Database System",
-    "OGC Standards",
     "GIS Technology",
+    "OGC Standards",
     "Geospatial Data Management",
-    "metaverse",
-    "PostGIS"
+    "PostGIS",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10058",

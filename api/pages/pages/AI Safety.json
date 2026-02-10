@@ -10,12 +10,12 @@
     "AI Risks"
   ],
   "wiki_links": [
-    "Interpretability",
     "Adversarial Robustness",
-    "Value Alignment",
-    "Artificial Intelligence",
     "AI Governance",
-    "AI Alignment"
+    "AI Alignment",
+    "Interpretability",
+    "Value Alignment",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-4009",

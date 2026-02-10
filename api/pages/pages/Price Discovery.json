@@ -12,18 +12,18 @@
     "Decentralized Exchange (DEX)"
   ],
   "wiki_links": [
-    "DEX",
-    "MEV",
-    "Order Book",
-    "FinancialDomain",
-    "Liquidity",
     "Arbitrage",
+    "Liquidity",
+    "Spot Markets",
+    "DEX",
     "Market Maker",
     "Market Efficiency",
-    "Price Transparency",
-    "Spot Markets",
+    "MEV",
+    "Order Book",
     "Futures Markets",
     "Market Microstructure",
+    "FinancialDomain",
+    "Price Transparency",
     "Fair Valuation"
   ],
   "ontology": {

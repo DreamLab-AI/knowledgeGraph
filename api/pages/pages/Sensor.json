@@ -8,10 +8,10 @@
   ],
   "wiki_links": [
     "Robotics Systems",
-    "IMU",
     "Force Torque Sensor",
-    "Camera",
+    "IMU",
     "Sensor Fusion",
+    "Camera",
     "LiDAR"
   ],
   "ontology": {

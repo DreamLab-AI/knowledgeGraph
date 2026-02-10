@@ -6,17 +6,17 @@
     "Trust Framework Policy"
   ],
   "wiki_links": [
-    "Technical Standards",
     "Credential Exchange",
-    "Identity Interoperability",
     "Protocol Specifications",
     "Verifiable Credentials",
+    "Identity Interoperability",
+    "Standards Bodies",
     "ISO Standards",
-    "W3C DID",
-    "metaverse",
     "Trust Frameworks",
     "Conformance Testing",
-    "Standards Bodies"
+    "metaverse",
+    "W3C DID",
+    "Technical Standards"
   ],
   "ontology": {
     "term_id": "MV-9859",

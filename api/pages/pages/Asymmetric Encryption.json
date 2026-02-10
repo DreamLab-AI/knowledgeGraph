@@ -10,15 +10,15 @@
     "Cryptographic Keys"
   ],
   "wiki_links": [
-    "Key Derivation Function",
-    "Information Security",
-    "Public Key Infrastructure",
     "Cryptography",
-    "Blockchain",
     "Digital Signature",
+    "Information Security",
+    "Symmetric Encryption",
+    "Public Key Infrastructure",
     "Elliptic Curve Cryptography",
-    "Hash Function",
-    "Symmetric Encryption"
+    "Key Derivation Function",
+    "Blockchain",
+    "Hash Function"
   ],
   "ontology": {
     "term_id": "BC-8001",

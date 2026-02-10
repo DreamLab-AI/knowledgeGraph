@@ -5,13 +5,13 @@
   "backlinks": [],
   "wiki_links": [
     "Algorithmic Accountability",
-    "Equitable AI Systems",
-    "Artificial Intelligence",
-    "Machine Learning",
-    "AIGovernance",
-    "AI Ethics",
     "Responsible AI",
-    "Trustworthy AI"
+    "Trustworthy AI",
+    "Equitable AI Systems",
+    "AIGovernance",
+    "Machine Learning",
+    "AI Ethics",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-7014",

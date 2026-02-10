@@ -7,11 +7,11 @@
     "Generative AI"
   ],
   "wiki_links": [
-    "AI Model Development",
     "Neural Network",
+    "System Architecture",
     "Deep Learning",
-    "metaverse",
-    "System Architecture"
+    "AI Model Development",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9968",

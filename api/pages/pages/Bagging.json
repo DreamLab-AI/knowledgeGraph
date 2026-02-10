@@ -5,11 +5,11 @@
   "backlinks": [],
   "wiki_links": [
     "Variance",
-    "Bootstrap Sampling",
-    "Machine Learning",
-    "Ensemble Methods",
-    "Parallel Training",
     "Random Forest",
+    "Machine Learning",
+    "Parallel Training",
+    "Bootstrap Sampling",
+    "Ensemble Methods",
     "Overfitting"
   ],
   "ontology": {

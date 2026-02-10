@@ -7,12 +7,12 @@
     "Secure Multi Party Computation"
   ],
   "wiki_links": [
-    "Secure Multi Party Computation",
     "Data Sharing",
-    "Federated Learning",
-    "metaverse",
     "Collaborative Analytics",
-    "Differential Privacy"
+    "metaverse",
+    "Federated Learning",
+    "Differential Privacy",
+    "Secure Multi Party Computation"
   ],
   "ontology": {
     "term_id": "MV-10011",

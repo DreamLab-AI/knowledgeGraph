@@ -4,15 +4,15 @@
   "content": "- ### OntologyBlock\n  id:: disruptive-tech-domain-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-0020\n\t- source-domain:: ngm\n\t- preferred-term:: Disruptive Technology Domain\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A cross-cutting classification domain identifying technologies with transformative potential that significantly alter markets, industries, or societal practices. This domain spans AI, Blockchain, Metaverse, Robotics, and Telecollaboration, tagging concepts that represent paradigm shifts, emerging capabilities, or technologies displacing established approaches. Used for strategic analysis, trend identification, and innovation portfolio management.\n\t- maturity:: stable\n\t- owl:class:: ngm:DisruptiveTechDomain\n\t- owl:role:: Domain\n\t- owl:inferred-class:: ngm:ConceptualDomain\n\t- belongsToDomain:: [[CoreOntology]]\n\t- implementedInLayer:: [[ConceptualLayer]]\n\t- #### Relationships\n\t  id:: disruptive-tech-domain-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Domain]]\n\t\t- has-part:: [[AIApplicationsDomain]]\n\t\t- has-part:: [[BlockchainDomain]]\n\t\t- has-part:: [[MetaverseDomain]]\n\t\t- has-part:: [[RoboticsDomain]]\n\t\t- enables:: [[Innovation Tracking]]\n\t\t- enables:: [[Technology Forecasting]]\n\n## Academic Context\n\n- Disruptive technology as a concept originates from Clayton Christensen's work on disruptive innovation\n  - Characterised by technologies that initially underperform established solutions but eventually displace them\n  - Distinguished from sustaining innovations that improve existing products incrementally\n  - Cross-domain perspective essential as disruption often occurs at technology intersections\n\n## Current Landscape (2025)\n\n- **Cross-cutting technologies**\n  - Generative AI disrupting content creation, software development, and knowledge work\n  - Blockchain enabling new models of ownership, governance, and value transfer\n  - Spatial computing and metaverse technologies transforming collaboration and commerce\n  - Autonomous systems disrupting transportation, logistics, and manufacturing\n\n- **UK and North England context**\n  - Manchester, Leeds, Sheffield emerging as innovation clusters\n  - University spinouts commercialising disruptive technologies\n  - Government initiatives supporting deep tech and emerging technology sectors\n\n## Technical Details\n\n- **Domain Prefix**: NGM\n- **Sequence Number**: 0020\n- **Cross-cutting scope**: AI, Blockchain, Metaverse, Robotics, Telecollaboration\n\n## Metadata\n\n- **Last Updated**: 2025-12-28\n- **Review Status**: Domain definition\n- **Purpose**: Cross-cutting classification for disruptive technologies",
   "backlinks": [],
   "wiki_links": [
-    "RoboticsDomain",
-    "MetaverseDomain",
-    "Domain",
+    "BlockchainDomain",
     "AIApplicationsDomain",
     "CoreOntology",
+    "Technology Forecasting",
+    "Domain",
     "Innovation Tracking",
-    "BlockchainDomain",
-    "ConceptualLayer",
-    "Technology Forecasting"
+    "MetaverseDomain",
+    "RoboticsDomain",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "NGM-0020",

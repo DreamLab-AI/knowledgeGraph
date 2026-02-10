@@ -8,11 +8,11 @@
     "Reference Architecture"
   ],
   "wiki_links": [
-    "Enterprise Metaverse",
-    "metaverse",
-    "Digital Transformation",
+    "System Architecture",
     "Digital Twin",
-    "System Architecture"
+    "Digital Transformation",
+    "metaverse",
+    "Enterprise Metaverse"
   ],
   "ontology": {
     "term_id": "MV-9893",

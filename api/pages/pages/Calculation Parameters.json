@@ -8,15 +8,15 @@
   "wiki_links": [
     "Computational Model",
     "Performance Tuning",
-    "metaverse",
-    "Sensitivity Analysis",
-    "Simulation Control",
-    "Parameter Definition",
     "Simulation Parameters",
     "Model Calibration",
-    "Validation Rules",
+    "Parameter Definition",
     "Configuration Setting",
-    "Solver Configuration"
+    "Sensitivity Analysis",
+    "Solver Configuration",
+    "Validation Rules",
+    "metaverse",
+    "Simulation Control"
   ],
   "ontology": {
     "term_id": "MV-9803",

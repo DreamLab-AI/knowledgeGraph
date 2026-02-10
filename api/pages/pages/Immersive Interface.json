@@ -8,11 +8,11 @@
     "Inclusive Xr Design"
   ],
   "wiki_links": [
-    "Natural VR Interaction",
     "Hardware Acceleration",
-    "Gesture Recognition",
     "metaverse",
-    "Human-Computer Interface"
+    "Gesture Recognition",
+    "Human-Computer Interface",
+    "Natural VR Interaction"
   ],
   "ontology": {
     "term_id": "MV-9925",

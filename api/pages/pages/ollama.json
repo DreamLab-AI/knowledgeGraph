@@ -5,13 +5,13 @@
   "backlinks": [],
   "wiki_links": [
     "Knowledge Graphing",
+    "Agents",
+    "Llama",
     "Python and PyTorch",
-    "Open Webui and Pipelines",
+    "Prompt Engineering",
     "ComfyUI",
     "Ollama",
-    "Llama",
     "Function Calling",
-    "Prompt Engineering",
-    "Agents"
+    "Open Webui and Pipelines"
   ]
 }

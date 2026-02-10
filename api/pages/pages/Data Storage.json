@@ -12,16 +12,16 @@
     "Reputation Data"
   ],
   "wiki_links": [
-    "Infrastructure Component",
-    "Data Redundancy",
+    "Backup and Recovery",
+    "System Architecture",
     "Data Protection",
     "Storage Architecture",
-    "Data Persistence",
+    "Data Redundancy",
     "Information Retrieval",
+    "Data Persistence",
+    "Infrastructure Component",
     "Data Management",
-    "Backup and Recovery",
-    "Core Technology",
-    "System Architecture"
+    "Core Technology"
   ],
   "ontology": {
     "term_id": "NGM-7021",

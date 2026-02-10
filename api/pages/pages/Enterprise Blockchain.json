@@ -7,13 +7,13 @@
     "Proof Of Authority"
   ],
   "wiki_links": [
+    "Permissioned Networks",
+    "Regulatory Compliance",
+    "Hyperledger Fabric",
     "Smart Contracts",
     "Blockchain",
-    "Business Process Automation",
     "Supply Chain Blockchain",
-    "Permissioned Networks",
-    "Hyperledger Fabric",
-    "Regulatory Compliance"
+    "Business Process Automation"
   ],
   "ontology": {
     "term_id": "BC-7007",

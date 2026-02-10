@@ -322,22 +322,22 @@
     "Privacy"
   ],
   "wiki_links": [
-    "TechnologyDomain",
-    "ArtificialIntelligence",
-    "ExtendedRealityXR",
     "WebXR",
-    "CloudComputing",
-    "AugmentedReality",
-    "SpatialComputing",
     "VirtualEconomies",
-    "Interoperability",
-    "ExtendedReality",
-    "AvatarSystems",
+    "ArtificialIntelligence",
     "DecentralizedTechnologies",
-    "HapticFeedback",
+    "ExtendedReality",
+    "CloudComputing",
+    "TechnologyDomain",
+    "Interoperability",
     "VirtualReality",
     "BlockchainTechnology",
-    "DigitalTwin"
+    "AvatarSystems",
+    "HapticFeedback",
+    "SpatialComputing",
+    "AugmentedReality",
+    "DigitalTwin",
+    "ExtendedRealityXR"
   ],
   "ontology": {
     "term_id": "MV-7000",

@@ -6,14 +6,14 @@
     "Procedural Audio Generator"
   ],
   "wiki_links": [
-    "Spatial Sound Rendering",
-    "HRTF Data",
-    "Environmental Modeling",
-    "Telepresence",
     "Immersive Audio",
-    "metaverse",
     "Audio Engine",
-    "Audio Configuration"
+    "Environmental Modeling",
+    "metaverse",
+    "Spatial Sound Rendering",
+    "Audio Configuration",
+    "Telepresence",
+    "HRTF Data"
   ],
   "ontology": {
     "term_id": "MV-9783",

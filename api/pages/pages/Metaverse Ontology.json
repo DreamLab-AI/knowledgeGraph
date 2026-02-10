@@ -13,18 +13,18 @@
     "Pre-Training"
   ],
   "wiki_links": [
-    "Gemini",
     "Lightning and Similar L2",
-    "Ontology conversation with AIs",
-    "RGB and Client Side Validation",
     "Knowledge Graphing",
+    "Ontology conversation with AIs",
+    "Large language models",
     "Cashu",
+    "Logseq",
     "Some legacy Linked-JSON",
     "ChatGPT",
-    "Large language models",
-    "Agentic Mycelia",
-    "Logseq",
     "Anthropic Claude",
-    "Bitcoin"
+    "Bitcoin",
+    "Gemini",
+    "Agentic Mycelia",
+    "RGB and Client Side Validation"
   ]
 }
