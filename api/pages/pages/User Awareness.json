@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: user-awareness-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10095\n\t- source-domain:: mv\n\t- preferred-term:: User Awareness\n\t- status:: active\n\t- definition:: The understanding and knowledge that users possess about digital systems, privacy practices, security risks, and their rights when interacting with metaverse platforms and virtual environments.\n\t- owl:class:: mv:UserAwareness\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[User Education]]\n\t\t- related-to:: [[Privacy]]\n\t\t- related-to:: [[Security]]\n\t\t- related-to:: [[User Rights]]\n\t  id:: user-awareness-relationships\n\t  collapsed:: true\n- ## Overview\n\t- User awareness encompasses the knowledge users need to safely and effectively participate in digital environments. This includes understanding data collection practices, security risks, platform policies, and mechanisms for exercising their rights.\n- ## Technical Details\n\t- ### Awareness Categories\n\t\t- **Privacy Awareness**: Understanding data collection and usage\n\t\t- **Security Awareness**: Recognizing threats and protective measures\n\t\t- **Rights Awareness**: Knowledge of user rights and remedies\n\t\t- **Platform Literacy**: Understanding platform rules and features\n\t- ### Education Mechanisms\n\t\t- Onboarding tutorials and walkthroughs\n\t\t- Just-in-time contextual guidance\n\t\t- Interactive privacy dashboards\n\t\t- Risk visualization tools\n\t- ### Metaverse-Specific Concerns\n\t\t- Biometric data collection awareness\n\t\t- Virtual harassment and safety\n\t\t- Digital asset security\n\t\t- Cross-platform data sharing\n- ## Applications\n\t- Platform onboarding experiences\n\t- Security training for VR environments\n\t- Privacy preference management\n\t- Parental controls and child safety\n\t- Accessibility feature discovery",
   "backlinks": [],
   "wiki_links": [
+    "metaverse",
     "Privacy",
     "User Education",
-    "metaverse",
-    "User Rights",
-    "Security"
+    "Security",
+    "User Rights"
   ],
   "ontology": {
     "term_id": "MV-10095",

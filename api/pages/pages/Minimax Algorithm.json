@@ -6,12 +6,12 @@
     "Monte Carlo Tree Search"
   ],
   "wiki_links": [
-    "Game Playing AI",
     "Alpha-Beta Pruning",
-    "Search Algorithms",
     "Decision Tree",
     "Adversarial Search",
-    "Game Theory"
+    "Game Theory",
+    "Game Playing AI",
+    "Search Algorithms"
   ],
   "ontology": {
     "term_id": "AI-1005",

@@ -5,11 +5,11 @@
   "backlinks": [],
   "wiki_links": [
     "Knowledge Organization System",
-    "Ontology Design",
-    "RDF Vocabulary",
-    "Semantic Web Standards",
+    "Linked Vocabulary Publishing",
     "metaverse",
-    "Linked Vocabulary Publishing"
+    "Semantic Web Standards",
+    "RDF Vocabulary",
+    "Ontology Design"
   ],
   "ontology": {
     "term_id": "MV-10045",

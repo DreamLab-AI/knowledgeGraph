@@ -9,9 +9,9 @@
   "wiki_links": [
     "NeuralNetworkArchitecture",
     "MachineLearning",
-    "Model Training",
-    "DPO",
     "Artificial Intelligence",
+    "DPO",
+    "Model Training",
     "ModelArchitecture"
   ],
   "ontology": {

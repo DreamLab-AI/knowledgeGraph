@@ -40,12 +40,12 @@
     "Generative AI"
   ],
   "wiki_links": [
-    "Theoretical Computer Science",
-    "Philosophy of Mind",
     "Machine Learning",
     "Artificial Intelligence",
-    "Cognitive Science",
-    "ArtificialIntelligenceDomain"
+    "Philosophy of Mind",
+    "Theoretical Computer Science",
+    "ArtificialIntelligenceDomain",
+    "Cognitive Science"
   ],
   "ontology": {
     "term_id": "AI-7008",

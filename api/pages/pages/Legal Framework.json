@@ -17,16 +17,16 @@
     "Trust Framework Policy"
   ],
   "wiki_links": [
+    "Core Technology",
     "Privacy Requirements",
-    "Accountability",
-    "Data Protection",
-    "Legal Compliance",
-    "Regulatory Framework",
-    "Compliance",
     "Governance Framework",
-    "Security Obligations",
+    "Regulatory Framework",
     "Rights Protection",
-    "Core Technology"
+    "Legal Compliance",
+    "Data Protection",
+    "Compliance",
+    "Security Obligations",
+    "Accountability"
   ],
   "ontology": {
     "term_id": "NGM-7024",

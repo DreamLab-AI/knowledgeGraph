@@ -8,11 +8,11 @@
     "Digital Taxonomy Registry"
   ],
   "wiki_links": [
-    "Data Discovery",
-    "Metadata Management",
     "metaverse",
     "Data Management",
-    "Data Catalog"
+    "Data Catalog",
+    "Data Discovery",
+    "Metadata Management"
   ],
   "ontology": {
     "term_id": "MV-9961",

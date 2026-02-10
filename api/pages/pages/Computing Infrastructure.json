@@ -16,19 +16,19 @@
     "Digital Twin Infrastructure"
   ],
   "wiki_links": [
+    "Edge Computing Facilities",
+    "Real-Time Rendering",
+    "Database System",
+    "Distributed Computing",
+    "Infrastructure Management Systems",
+    "Data Centers",
     "InfrastructureDomain",
     "Server Hardware",
-    "Database System",
-    "Power Supply",
-    "Network Protocol",
-    "Real-Time Rendering",
-    "Data Centers",
-    "Cloud Infrastructure",
     "Technology Domain",
-    "Infrastructure Management Systems",
     "Performance Optimization",
-    "Distributed Computing",
-    "Edge Computing Facilities"
+    "Cloud Infrastructure",
+    "Power Supply",
+    "Network Protocol"
   ],
   "ontology": {
     "term_id": "NGM-7033",

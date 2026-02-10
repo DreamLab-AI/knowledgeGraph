@@ -7,12 +7,12 @@
     "Spatial Index"
   ],
   "wiki_links": [
-    "Similarity Search",
-    "Search Algorithm",
-    "Semantic Search",
     "Vector Database",
     "Machine Learning",
-    "metaverse"
+    "metaverse",
+    "Similarity Search",
+    "Search Algorithm",
+    "Semantic Search"
   ],
   "ontology": {
     "term_id": "MV-9981",

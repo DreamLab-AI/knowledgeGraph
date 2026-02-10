@@ -16,11 +16,11 @@
     "Intelligent Virtual Entity"
   ],
   "wiki_links": [
-    "Knowledge Graph",
+    "Semantic Web",
     "Reasoning Systems",
     "Ontology",
-    "Semantic Web",
-    "owl:Thing"
+    "owl:Thing",
+    "Knowledge Graph"
   ],
   "ontology": {
     "term_id": "AI-9019",

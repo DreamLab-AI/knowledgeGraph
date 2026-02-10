@@ -8,12 +8,12 @@
     "Physics Engine"
   ],
   "wiki_links": [
-    "Real Time Rendering",
-    "Physics Simulation",
-    "metaverse",
     "Computer Graphics",
+    "metaverse",
+    "Visual Effects",
+    "Physics Simulation",
     "Dynamic Visual Effects",
-    "Visual Effects"
+    "Real Time Rendering"
   ],
   "ontology": {
     "term_id": "MV-10000",
