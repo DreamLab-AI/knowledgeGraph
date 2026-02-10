@@ -16,14 +16,14 @@
 # Multi-Domain Ontology - OWL2 DL Turtle Format
 # ==============================================================================
 #
-# Generated: 2026-01-25T21:35:21.844918
-# Total Terms: 2241
+# Generated: 2026-02-10T16:26:29.096826
+# Total Terms: 2240
 #
 # Domain Distribution:
 #   Artificial Intelligence: 340 terms
 #   Blockchain: 341 terms
 #   Robotics: 251 terms
-#   Metaverse: 1178 terms
+#   Metaverse: 1177 terms
 #   Telecollaboration: 80 terms
 #   Disruptive Technologies: 1 terms
 #   Narrative Gold Mine Core: 44 terms
@@ -38,7 +38,7 @@
     rdfs:label "Multi-Domain Knowledge Ontology"@en ;
     rdfs:comment "Comprehensive ontology covering AI, Blockchain, Robotics, Metaverse, Telecollaboration, and Disruptive Technologies."@en ;
     owl:versionInfo "1.0.0" ;
-    dcterms:created "2026-01-25"^^xsd:date ;
+    dcterms:created "2026-02-10"^^xsd:date ;
     dcterms:creator "Logseq Ontology Tools" .
 
 # ==============================================================================
@@ -56748,39 +56748,6 @@ mv:NarrativeContent rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty ngm:relatedTo ;
     owl:someValuesFrom mv:NarrativeArc
-] .
-
-# Narrative Theme
-mv:NarrativeTheme a owl:Class ;
-    rdfs:subClassOf mv:NarrativeStructure ;
-    rdfs:label "Narrative Theme"@en ;
-    rdfs:comment "The underlying message, central idea, or motif that pervades a story and shapes public perception, constructed through selective framing, language choices, and emphasis on particular details to guide audience interpretation of events, characters, and meaning."@en ;
-    skos:prefLabel "Narrative Theme"@en ;
-    dcterms:identifier "MV-9980" ;
-    dcterms:subject "mv" .
-
-mv:NarrativeTheme rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:enables ;
-    owl:someValuesFrom mv:Storytelling
-] .
-
-mv:NarrativeTheme rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:relatedTo ;
-    owl:someValuesFrom mv:NarrativeArc
-] .
-
-mv:NarrativeTheme rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:relatedTo ;
-    owl:someValuesFrom mv:NarrativeContent
-] .
-
-mv:NarrativeTheme rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty ngm:relatedTo ;
-    owl:someValuesFrom mv:MediaAnalysis
 ] .
 
 # Nearest Neighbor Search

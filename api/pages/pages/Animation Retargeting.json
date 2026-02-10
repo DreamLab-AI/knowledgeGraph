@@ -6,14 +6,14 @@
     "Motion Capture Rig"
   ],
   "wiki_links": [
+    "Avatar Animation",
     "Pose Matching",
     "Motion Capture Workflows",
-    "Character Animation Reuse",
+    "Animation Technology",
     "metaverse",
-    "Inverse Kinematics",
+    "Character Animation Reuse",
     "Skeleton Mapping",
-    "Avatar Animation",
-    "Animation Technology"
+    "Inverse Kinematics"
   ],
   "ontology": {
     "term_id": "MV-9766",

@@ -7,16 +7,16 @@
     "3D Scene Exchange Protocol (SXP)"
   ],
   "wiki_links": [
-    "Schema Definition",
-    "Network Transmission",
-    "Encoding Rules",
-    "Protocol Buffers",
     "Data Serialization",
     "Data Format",
+    "Encoding Rules",
+    "Schema Definition",
     "Efficient Storage",
-    "Parser Implementation",
     "metaverse",
-    "MessagePack"
+    "Parser Implementation",
+    "Protocol Buffers",
+    "MessagePack",
+    "Network Transmission"
   ],
   "ontology": {
     "term_id": "MV-9800",

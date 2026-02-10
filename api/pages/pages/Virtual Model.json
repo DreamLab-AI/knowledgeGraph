@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: virtual-model-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10130\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Model\n\t- status:: active\n\t- definition:: A digital 3D representation of objects, characters, environments, or systems created using computer graphics software for use in metaverse platforms, simulations, games, and virtual production, including static assets, animated models, and procedurally generated content.\n\t- owl:class:: mv:VirtualModel\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[3D Asset]]\n\t\t- related-to:: [[3D Modeling]]\n\t\t- related-to:: [[Digital Twin]]\n\t\t- related-to:: [[Virtual Objects]]\n\t  id:: virtual-model-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual models are 3D digital assets used across metaverse platforms, gaming, simulation, and entertainment. They range from static environmental elements to complex animated characters. Models can be created manually using 3D software, generated procedurally, or produced through photogrammetry and 3D scanning.\n- ## Technical Details\n\t- ### Model Categories\n\t\t- **Static Models**: Non-animated scenery, buildings, props\n\t\t- **Dynamic Models**: Animated characters, vehicles, interactive objects\n\t\t- **Parametric Models**: Procedurally adjustable assets\n\t\t- **Scanned Models**: Photogrammetry-captured real-world objects\n\t- ### Creation Tools\n\t\t- Blender, Maya, 3DS Max for modeling\n\t\t- ZBrush for sculpting\n\t\t- Substance Painter for texturing\n\t\t- Marvelous Designer for clothing\n\t- ### File Formats\n\t\t- glTF/GLB for web and game engines\n\t\t- FBX for animation exchange\n\t\t- USD for scene composition\n\t\t- OBJ for static geometry\n- ## Applications\n\t- Game and metaverse asset creation\n\t- Virtual production set design\n\t- Product visualization and prototyping\n\t- Architectural visualization\n\t- NFT and digital collectible creation",
   "backlinks": [],
   "wiki_links": [
-    "Digital Twin",
-    "3D Modeling",
     "Virtual Objects",
     "metaverse",
-    "3D Asset"
+    "3D Asset",
+    "Digital Twin",
+    "3D Modeling"
   ],
   "ontology": {
     "term_id": "MV-10130",

@@ -7,17 +7,17 @@
     "Enterprise Architecture"
   ],
   "wiki_links": [
-    "Digital Twin",
-    "Enterprise Metaverse",
-    "Change Management",
     "Cloud Computing",
-    "Industry 4.0",
     "Customer Experience",
-    "Data Analytics",
-    "Organizational Change",
-    "metaverse",
+    "Enterprise Metaverse",
     "Operational Efficiency",
-    "Business Innovation"
+    "metaverse",
+    "Change Management",
+    "Organizational Change",
+    "Data Analytics",
+    "Business Innovation",
+    "Digital Twin",
+    "Industry 4.0"
   ],
   "ontology": {
     "term_id": "MV-9873",

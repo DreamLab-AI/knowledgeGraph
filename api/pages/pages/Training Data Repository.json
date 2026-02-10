@@ -7,10 +7,10 @@
   ],
   "wiki_links": [
     "Data Governance",
-    "Data Management",
-    "Machine Learning",
     "Artificial Intelligence",
-    "metaverse"
+    "metaverse",
+    "Machine Learning",
+    "Data Management"
   ],
   "ontology": {
     "term_id": "MV-10083",

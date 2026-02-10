@@ -8,14 +8,14 @@
     "Context Awareness System"
   ],
   "wiki_links": [
-    "Digital Twin",
+    "Predictive Maintenance",
     "Industrial Automation",
-    "Internet of Things",
     "Smart Cities",
-    "5G Networks",
+    "Internet of Things",
     "Edge Computing",
+    "5G Networks",
     "Smart Manufacturing",
-    "Predictive Maintenance"
+    "Digital Twin"
   ],
   "ontology": {
     "term_id": "RB-7002",

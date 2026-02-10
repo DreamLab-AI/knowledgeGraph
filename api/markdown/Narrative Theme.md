@@ -1,6 +1,5 @@
-- ### OntologyBlock
-  id:: narrative-theme-ontology
-  collapsed:: true
+### OntologyBlock
+id:: narrative-theme-ontology
 	- ontology:: true
 	- public-access:: true
 	- term-id:: MV-9980
@@ -14,6 +13,7 @@
 	  id:: narrative-theme-relationships
 	  collapsed:: true
 		- is-subclass-of:: [[Narrative Structure]]
+		  collapsed:: true
 		- related-to:: [[Narrative Arc]]
 		- related-to:: [[Narrative Content]]
 		- related-to:: [[Media Analysis]]
@@ -32,4 +32,3 @@
 		- Thematic analysis determines motifs and story types present
 		- Dialogic/performance analysis studies narrative delivery
 		- NLP research enables automated theme extraction and interpretation
-

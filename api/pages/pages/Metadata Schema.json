@@ -12,18 +12,18 @@
     "Cultural Provenance Record"
   ],
   "wiki_links": [
-    "Data Governance",
-    "JSON-LD",
-    "Schema.org",
+    "Data Interoperability",
     "Ontology",
     "FAIR Data Principles",
-    "Knowledge Graph",
-    "Dublin Core",
-    "Data Discovery",
+    "Data Standard",
+    "Data Governance",
     "Data Catalogue",
+    "JSON-LD",
     "Semantic Web",
-    "Data Interoperability",
-    "Data Standard"
+    "Schema.org",
+    "Data Discovery",
+    "Dublin Core",
+    "Knowledge Graph"
   ],
   "ontology": {
     "term_id": "NGM-8001",

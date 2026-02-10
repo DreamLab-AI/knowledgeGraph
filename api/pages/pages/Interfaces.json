@@ -6,13 +6,13 @@
     "Interfaces"
   ],
   "wiki_links": [
-    "Hardware and Edge",
     "Infrastructure",
-    "Stable Diffusion",
-    "Node based visual interfaces",
-    "Agents",
     "Langflow",
+    "Stable Diffusion",
+    "Interfaces",
     "Large language models",
-    "Interfaces"
+    "Hardware and Edge",
+    "Agents",
+    "Node based visual interfaces"
   ]
 }

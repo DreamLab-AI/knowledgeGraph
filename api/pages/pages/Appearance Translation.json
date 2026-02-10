@@ -7,13 +7,13 @@
   ],
   "wiki_links": [
     "Style Representations",
-    "Artistic Stylization",
+    "Content Preservation",
     "Domain Adaptation",
-    "Visual Content Transformation",
     "metaverse",
-    "Convolutional Neural Networks",
+    "Artistic Stylization",
     "Neural Image Processing",
-    "Content Preservation"
+    "Visual Content Transformation",
+    "Convolutional Neural Networks"
   ],
   "ontology": {
     "term_id": "MV-9768",

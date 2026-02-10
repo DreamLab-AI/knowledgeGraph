@@ -20,12 +20,12 @@
   ],
   "wiki_links": [
     "Regulatory Framework",
-    "Smart Contracts",
-    "Identity Management",
-    "EU MiCA Regulation",
     "Transaction Monitoring",
+    "Smart Contracts",
     "Blockchain",
-    "KYC/AML Requirements"
+    "KYC/AML Requirements",
+    "EU MiCA Regulation",
+    "Identity Management"
   ],
   "ontology": {
     "term_id": "NGM-7004",

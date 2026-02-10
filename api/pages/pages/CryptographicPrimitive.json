@@ -30,12 +30,12 @@
   ],
   "wiki_links": [
     "Cryptography",
+    "Blockchain",
     "Digital Signature",
-    "Symmetric Encryption",
-    "Hash Function",
-    "Asymmetric Encryption",
     "Cryptographic Protocol",
-    "Blockchain"
+    "Hash Function",
+    "Symmetric Encryption",
+    "Asymmetric Encryption"
   ],
   "ontology": {
     "term_id": "BC-7004",

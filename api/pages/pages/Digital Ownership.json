@@ -11,17 +11,17 @@
     "Digital Asset Ecosystem"
   ],
   "wiki_links": [
-    "Blockchain Network",
-    "Smart Contracts",
-    "metaverse",
-    "Token Standards",
-    "Creator Royalties",
-    "Virtual Real Estate",
-    "NFT",
-    "Property Rights",
     "Asset Transfer",
+    "Virtual Real Estate",
+    "Smart Contracts",
+    "NFT",
     "Provenance Tracking",
-    "Digital Wallet"
+    "Blockchain Network",
+    "Creator Royalties",
+    "Property Rights",
+    "metaverse",
+    "Digital Wallet",
+    "Token Standards"
   ],
   "ontology": {
     "term_id": "MV-9863",

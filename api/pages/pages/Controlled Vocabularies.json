@@ -8,17 +8,17 @@
     "Category Hierarchies"
   ],
   "wiki_links": [
-    "Metadata Standards",
-    "Ontology",
-    "Information Retrieval",
-    "Thesaurus",
-    "metaverse",
     "Taxonomy",
-    "Governance Process",
+    "Ontology",
     "Consistent Indexing",
-    "Semantic Interoperability",
+    "Metadata Standards",
+    "Knowledge Organization",
+    "Governance Process",
+    "Information Retrieval",
+    "metaverse",
     "Taxonomy Development",
-    "Knowledge Organization"
+    "Thesaurus",
+    "Semantic Interoperability"
   ],
   "ontology": {
     "term_id": "MV-9832",

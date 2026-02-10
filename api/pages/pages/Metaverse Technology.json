@@ -14,21 +14,21 @@
     "AIDomain"
   ],
   "wiki_links": [
-    "Robotics Systems",
-    "Telecollaboration",
     "Metaverse Infrastructure",
-    "Augmented Reality",
-    "Avatar System",
-    "Immersive Experience",
-    "Artificial Intelligence",
-    "Digital Asset",
-    "Metaverse Technology",
-    "Virtual Economy",
+    "Metaverse",
     "Blockchain Technology",
+    "Digital Asset",
     "Spatial Computing",
     "Virtual World",
-    "Metaverse",
-    "Technology Domain"
+    "Artificial Intelligence",
+    "Avatar System",
+    "Robotics Systems",
+    "Technology Domain",
+    "Telecollaboration",
+    "Virtual Economy",
+    "Augmented Reality",
+    "Metaverse Technology",
+    "Immersive Experience"
   ],
   "ontology": {
     "term_id": "MV-0001",

@@ -5,11 +5,11 @@
   "backlinks": [],
   "wiki_links": [
     "Model Cards (Mitchell et al.)",
+    "AIEthicsDomain",
+    "Datasheets (Gebru et al.)",
     "EU AI Act",
     "ConceptualLayer",
-    "Datasheets (Gebru et al.)",
-    "ISO/IEC 23053",
-    "AIEthicsDomain"
+    "ISO/IEC 23053"
   ],
   "ontology": {
     "term_id": "AI-0392",

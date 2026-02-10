@@ -9,12 +9,12 @@
     "Cryptographic Key Management"
   ],
   "wiki_links": [
+    "Secure Systems",
     "Threat Detection",
-    "Identity Management",
-    "metaverse",
-    "System Architecture",
     "Zero Trust Security",
-    "Secure Systems"
+    "metaverse",
+    "Identity Management",
+    "System Architecture"
   ],
   "ontology": {
     "term_id": "MV-10036",

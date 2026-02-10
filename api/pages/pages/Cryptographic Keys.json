@@ -14,13 +14,13 @@
     "Data Protection"
   ],
   "wiki_links": [
+    "Key Derivation Function",
     "Cryptography",
     "Digital Signature",
-    "Symmetric Encryption",
     "Random Number Generation",
-    "Asymmetric Encryption",
-    "Key Derivation Function",
-    "Cryptographic Key Management"
+    "Cryptographic Key Management",
+    "Symmetric Encryption",
+    "Asymmetric Encryption"
   ],
   "ontology": {
     "term_id": "BC-7006",

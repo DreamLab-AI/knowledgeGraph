@@ -1,74 +1,17 @@
 {
   "id": "Narrative Theme",
   "title": "Narrative Theme",
-  "content": "- ### OntologyBlock\n  id:: narrative-theme-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9980\n\t- source-domain:: mv\n\t- preferred-term:: Narrative Theme\n\t- status:: active\n\t- definition:: The underlying message, central idea, or motif that pervades a story and shapes public perception, constructed through selective framing, language choices, and emphasis on particular details to guide audience interpretation of events, characters, and meaning.\n\t- owl:class:: mv:NarrativeTheme\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: narrative-theme-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Narrative Structure]]\n\t\t- related-to:: [[Narrative Arc]]\n\t\t- related-to:: [[Narrative Content]]\n\t\t- related-to:: [[Media Analysis]]\n\t\t- enables:: [[Storytelling]]\n\t- #### Common Themes\n\t  collapsed:: true\n\t\t- Conflict and Resolution: Central struggles and their outcomes\n\t\t- Identity and Self-Discovery: Characters understanding themselves\n\t\t- Power and Corruption: Dynamics of authority and its abuse\n\t\t- Love and Relationships: Complexities of human connections\n\t\t- Good versus Evil: Moral and ethical dilemmas\n\t- #### Analysis Methods\n\t  collapsed:: true\n\t\t- Structural analysis examines plot elements and story characteristics\n\t\t- Functional analysis identifies purposes of storytelling moments\n\t\t- Thematic analysis determines motifs and story types present\n\t\t- Dialogic/performance analysis studies narrative delivery\n\t\t- NLP research enables automated theme extraction and interpretation",
+  "content": "### OntologyBlock\nid:: narrative-theme-ontology\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9980\n\t- source-domain:: mv\n\t- preferred-term:: Narrative Theme\n\t- status:: active\n\t- definition:: The underlying message, central idea, or motif that pervades a story and shapes public perception, constructed through selective framing, language choices, and emphasis on particular details to guide audience interpretation of events, characters, and meaning.\n\t- owl:class:: mv:NarrativeTheme\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: narrative-theme-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Narrative Structure]]\n\t\t  collapsed:: true\n\t\t- related-to:: [[Narrative Arc]]\n\t\t- related-to:: [[Narrative Content]]\n\t\t- related-to:: [[Media Analysis]]\n\t\t- enables:: [[Storytelling]]\n\t- #### Common Themes\n\t  collapsed:: true\n\t\t- Conflict and Resolution: Central struggles and their outcomes\n\t\t- Identity and Self-Discovery: Characters understanding themselves\n\t\t- Power and Corruption: Dynamics of authority and its abuse\n\t\t- Love and Relationships: Complexities of human connections\n\t\t- Good versus Evil: Moral and ethical dilemmas\n\t- #### Analysis Methods\n\t  collapsed:: true\n\t\t- Structural analysis examines plot elements and story characteristics\n\t\t- Functional analysis identifies purposes of storytelling moments\n\t\t- Thematic analysis determines motifs and story types present\n\t\t- Dialogic/performance analysis studies narrative delivery\n\t\t- NLP research enables automated theme extraction and interpretation",
   "backlinks": [
     "Narrative Arc",
     "Narrative Design Ontology"
   ],
   "wiki_links": [
-    "Narrative Structure",
-    "Storytelling",
-    "Narrative Content",
-    "metaverse",
     "Media Analysis",
-    "Narrative Arc"
-  ],
-  "ontology": {
-    "term_id": "MV-9980",
-    "preferred_term": "Narrative Theme",
-    "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#NarrativeTheme",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
-    "definition": "The underlying message, central idea, or motif that pervades a story and shapes public perception, constructed through selective framing, language choices, and emphasis on particular details to guide audience interpretation of events, characters, and meaning.",
-    "scope_note": null,
-    "status": "active",
-    "maturity": null,
-    "version": null,
-    "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:NarrativeTheme",
-    "owl_physicality": null,
-    "owl_role": null,
-    "owl_inferred_class": null,
-    "is_subclass_of": [
-      "Narrative Structure"
-    ],
-    "has_part": [],
-    "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [
-      "Storytelling"
-    ],
-    "relates_to": [],
-    "bridges_to": [],
-    "bridges_from": [],
-    "domain_extensions": {},
-    "belongs_to_domain": [
-      "metaverse"
-    ],
-    "implemented_in_layer": [],
-    "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Narrative Arc",
-        "Narrative Content",
-        "Media Analysis"
-      ]
-    },
-    "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
-    }
-  }
+    "Narrative Content",
+    "Narrative Arc",
+    "metaverse",
+    "Storytelling",
+    "Narrative Structure"
+  ]
 }
