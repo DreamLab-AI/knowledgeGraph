@@ -5,11 +5,11 @@
   "backlinks": [],
   "wiki_links": [
     "Blockchain Entity",
-    "Voting Mechanism",
-    "Blockchain Technology",
-    "On-Chain Governance",
     "Token Economics",
-    "DAO Governance"
+    "Blockchain Technology",
+    "DAO Governance",
+    "Voting Mechanism",
+    "On-Chain Governance"
   ],
   "ontology": {
     "term_id": "BC-0603",

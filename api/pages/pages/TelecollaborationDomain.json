@@ -3,22 +3,22 @@
   "title": "TelecollaborationDomain",
   "content": "- ### OntologyBlock\n  id:: telecollaborationdomain-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-7016\n\t- preferred-term:: TelecollaborationDomain\n\t- source-domain:: ai\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A CamelCase variant reference for the Telecollaboration domain, classifying technology-mediated distributed collaboration concepts including telepresence, remote teamwork, synchronous and asynchronous cooperation platforms, and virtual workspace systems. See [[TC-0001-telecollaboration-domain]] for the canonical entry.\n\t- maturity:: stable\n\t- owl:class:: ai:TelecollaborationDomain\n\t- owl:role:: Domain\n\t- belongsToDomain:: [[Telecollaboration]]\n\t- #### Relationships\n\t  id:: telecollaborationdomain-relationships\n\t  collapsed:: true\n\t\t- owl:sameAs:: [[TC-0001-telecollaboration-domain]]\n\t\t- is-subclass-of:: [[Technology Domain]]\n\t\t  collapsed:: true\n\t\t  - #### Subdomains (Inferred by Reasoner)\n\t\t    - Synchronous Collaboration is-subdomain-of TelecollaborationDomain\n\t\t    - Asynchronous Collaboration is-subdomain-of TelecollaborationDomain\n\t\t    - Telepresence Systems is-subdomain-of TelecollaborationDomain\n\t\t    - Collaboration Platforms is-subdomain-of TelecollaborationDomain\n\t\t    - Virtual Workspaces is-subdomain-of TelecollaborationDomain\n\t\t- bridges-to:: [[AI Domain]] (via AI-enhanced collaboration)\n\t\t- bridges-to:: [[BC Domain]] (via blockchain coordination)\n\t\t- bridges-to:: [[MV Domain]] (via virtual environments)\n\t\t- bridges-to:: [[RB Domain]] (via robotic telepresence)\n\n## Definition\n\n**TelecollaborationDomain** is the CamelCase variant reference for the Telecollaboration technology domain. This entry supports ontology systems preferring single-token identifiers and maintains semantic equivalence with the canonical [[TC-0001-telecollaboration-domain]] entry.\n\n## Canonical Reference\n\nFor the complete definition, scope, subdomain structure, and relationships, see:\n- [[TC-0001-telecollaboration-domain]] (canonical entry)\n- [[Telecollaboration]] (domain root)\n\n## Domain Scope Summary\n\nThe Telecollaboration domain encompasses:\n1. **Synchronous Collaboration**: Real-time video, co-editing, pair programming\n2. **Asynchronous Collaboration**: Version control, shared documents, project management\n3. **Telepresence Systems**: VR/AR telepresence, robotic telepresence, holographic projection\n4. **Collaboration Platforms**: Unified communications, virtual offices\n5. **Team Coordination**: Workflow automation, smart contract coordination, DAO governance\n\n## AI Integration Points\n\nThis domain intersects with AI through:\n- AI meeting assistants and transcription\n- Real-time language translation\n- Intelligent scheduling and coordination\n- AI avatars and synthetic presence\n- Gesture synthesis and expression analysis\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from stub\n- **Authority Score**: 0.88\n- **References**: 8 pages reference this concept\n- **Canonical Entry**: [[TC-0001-telecollaboration-domain]]",
   "backlinks": [
+    "Voice Memo",
     "Threaded Messaging",
     "Video Async",
-    "Voice Memo",
-    "Social Presence",
+    "tc-0003-telepresence-robot",
     "Self Presence",
-    "tc-0002-collaborative-document-editing",
-    "tc-0003-telepresence-robot"
+    "Social Presence",
+    "tc-0002-collaborative-document-editing"
   ],
   "wiki_links": [
-    "AI Domain",
-    "Technology Domain",
-    "BC Domain",
     "Telecollaboration",
-    "MV Domain",
     "TC-0001-telecollaboration-domain",
-    "RB Domain"
+    "Technology Domain",
+    "MV Domain",
+    "RB Domain",
+    "BC Domain",
+    "AI Domain"
   ],
   "ontology": {
     "term_id": "AI-7016",

@@ -6,14 +6,14 @@
     "Inference Hardware"
   ],
   "wiki_links": [
+    "Brain-Inspired Computing",
+    "Ultra-Low-Power AI",
+    "AI Hardware",
     "Event-Driven Computing",
     "Inference Hardware",
-    "AI Hardware",
     "Spiking Neural Networks",
-    "Brain-Inspired Computing",
-    "Edge AI",
     "Neuroscience",
-    "Ultra-Low-Power AI"
+    "Edge AI"
   ],
   "ontology": {
     "term_id": "AI-1024",

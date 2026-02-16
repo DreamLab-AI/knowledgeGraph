@@ -3,18 +3,18 @@
   "title": "Virtual Tourism",
   "content": "- ### OntologyBlock\n  id:: virtual-tourism-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10150\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Tourism\n\t- status:: active\n\t- definition:: The use of VR, AR, and metaverse technologies to explore travel destinations remotely, enabling users to experience locations, hotels, and attractions virtually before booking or as an alternative to physical travel, particularly for those with physical, economic, or accessibility constraints.\n\t- owl:class:: mv:VirtualTourism\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Tourism Industry]]\n\t\t- related-to:: [[Virtual Reality VR]]\n\t\t- related-to:: [[Metaverse]]\n\t\t- related-to:: [[Travel Technology]]\n\t  id:: virtual-tourism-relationships\n\t  collapsed:: true\n- ## Overview\n\t- The Global Metaverse for Travel Market is expected to reach $276.41 billion by 2034, from $8.41 billion in 2024, growing at 41.8% CAGR. Virtual Tours held 48.3% market share in 2024, with VR Headsets at 41.8%. North America leads with 43.8% share. Surveys show 44% of travelers have used VR to explore destinations pre-trip, and 43% say VR influences travel choices. Thomas Cook saw 180% booking boost from VR helicopter tour previews.\n- ## Technical Details\n\t- ### Experience Types\n\t\t- **Pre-Trip Inspiration**: Virtual destination exploration before booking\n\t\t- **Virtual Events**: Remote participation in destination activities\n\t\t- **Digital Twins**: High-resolution recreations of landmarks\n\t\t- **Time Travel Tourism**: Historical epoch reconstructions\n\t- ### Industry Examples\n\t\t- Qatar Airways QVerse for cabin and airport previews\n\t\t- Marriott Hotels VR property tours\n\t\t- Saudi Arabia AlUla digital twins for remote exploration\n\t\t- Thomas Cook VR helicopter tours of Manhattan\n\t- ### Benefits\n\t\t- **Accessibility**: Experience destinations regardless of physical ability\n\t\t- **Trip Planning**: Better informed booking decisions\n\t\t- **Marketing**: Powerful destination promotion tool\n\t\t- **Sustainability**: Reduced carbon footprint alternative\n\t- ### Technology Requirements\n\t\t- VR headsets for immersive experiences\n\t\t- 3D modeling and photogrammetry\n\t\t- Real-time rendering engines\n\t\t- Cross-platform accessibility\n- ## Applications\n\t- Pre-travel destination research\n\t- Accessible tourism for disabled travelers\n\t- Heritage site virtual preservation\n\t- Hotel and resort previews\n\t- Adventure experience sampling\n\t- Hybrid travel event participation",
   "backlinks": [
-    "Virtual Destination",
-    "Destination Marketing",
     "Tourism Metaverse",
     "Virtual Reality (VR)",
+    "Virtual Destination",
+    "Destination Marketing",
     "Archaeological Site Reconstruction"
   ],
   "wiki_links": [
-    "Metaverse",
-    "metaverse",
-    "Travel Technology",
     "Tourism Industry",
-    "Virtual Reality VR"
+    "metaverse",
+    "Virtual Reality VR",
+    "Metaverse",
+    "Travel Technology"
   ],
   "ontology": {
     "term_id": "MV-10150",

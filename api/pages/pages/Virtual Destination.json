@@ -3,15 +3,15 @@
   "title": "Virtual Destination",
   "content": "- ### OntologyBlock\n  id:: virtual-destination-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10116\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Destination\n\t- status:: active\n\t- definition:: A digital location or space within virtual environments that serves as a point of interest or travel objective, including virtual recreations of real-world landmarks, fantasy worlds, themed experiences, and interactive attractions accessible through metaverse platforms.\n\t- owl:class:: mv:VirtualDestination\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Virtual Environment]]\n\t\t- related-to:: [[Virtual Tourism]]\n\t\t- related-to:: [[Virtual World]]\n\t\t- related-to:: [[Digital Twin]]\n\t  id:: virtual-destination-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual destinations are digital locations within metaverse platforms that users can explore and experience. These range from faithful recreations of real-world landmarks to entirely fantastical worlds. As virtual tourism grows, destinations serve as key attractions for social gatherings, educational experiences, and entertainment.\n- ## Technical Details\n\t- ### Destination Types\n\t\t- **Heritage Sites**: Digital twins of historical landmarks\n\t\t- **Fantasy Worlds**: Original immersive environments\n\t\t- **Brand Experiences**: Corporate virtual spaces\n\t\t- **Event Venues**: Concert halls, stadiums, exhibition spaces\n\t- ### Creation Technologies\n\t\t- Photogrammetry for realistic reconstruction\n\t\t- Procedural generation for large-scale worlds\n\t\t- 3D modeling and environment design\n\t\t- Real-time rendering engines\n\t- ### Access Methods\n\t\t- VR headset immersive exploration\n\t\t- Desktop and mobile browser access\n\t\t- Gaming platform integration\n\t\t- AR location-based overlays\n- ## Applications\n\t- Virtual tourism and exploration\n\t- Cultural heritage preservation\n\t- Educational field trips\n\t- Brand marketing experiences\n\t- Social gathering spaces",
   "backlinks": [
-    "Virtual Location",
-    "Tourism Metaverse"
+    "Tourism Metaverse",
+    "Virtual Location"
   ],
   "wiki_links": [
-    "metaverse",
-    "Virtual World",
-    "Virtual Tourism",
     "Virtual Environment",
-    "Digital Twin"
+    "metaverse",
+    "Digital Twin",
+    "Virtual World",
+    "Virtual Tourism"
   ],
   "ontology": {
     "term_id": "MV-10116",

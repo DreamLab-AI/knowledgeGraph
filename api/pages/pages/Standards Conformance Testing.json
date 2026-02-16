@@ -4,15 +4,15 @@
   "content": "- ### OntologyBlock\n  id:: standards-conformance-testing-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10072\n\t- source-domain:: mv\n\t- preferred-term:: Standards Conformance Testing\n\t- status:: active\n\t- definition:: Testing or verification activities that determine whether a process, product, or service complies with the requirements of a specification, technical standard, contract, or regulation, verifying that implementations faithfully meet specified requirements.\n\t- owl:class:: mv:StandardsConformanceTesting\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Standards]]\n\t\t- related-to:: [[Standards Conformance]]\n\t\t- related-to:: [[Standards Validation]]\n\t\t- related-to:: [[Interoperability]]\n\t  id:: standards-conformance-testing-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Conformance testing, also known as compliance testing or type testing, is an element of conformity assessment that ensures implementations correctly meet standard requirements. The fundamental components include having a defined standard or specification, a conformance clause or test method, and mechanisms for testing such as test suites or testing tools.\n- ## Technical Details\n\t- ### Core Requirements\n\t\t- A standard or specification defining requirements\n\t\t- A conformance clause that defines what compliance means\n\t\t- Test suites or testing tools for verification\n\t\t- Development of test suites is often the most costly part of conformity assessment\n\t- ### Key Standards\n\t\t- **ISO/IEC/IEEE 29119**: International standard for software testing defining vocabulary, processes, documentation, and techniques\n\t\t- **ISO/IEC 27001**: IT security compliance standard\n\t\t- **NIST Cybersecurity Framework**: Security testing framework\n\t\t- **IEC 60870-6, 61850, DLMS**: Protocol conformance testing standards\n- ## Applications\n\t- Software product verification against specifications\n\t- Protocol conformance testing for interoperability\n\t- IT security compliance verification\n\t- Compiler testing against language standards\n\t- Portability and interoperability assurance",
   "backlinks": [
     "Standards Conformance",
-    "Compatibility Process",
-    "Standards Validation"
+    "Standards Validation",
+    "Compatibility Process"
   ],
   "wiki_links": [
+    "Standards Conformance",
     "Standards Validation",
     "metaverse",
-    "Standards Conformance",
-    "Standards",
-    "Interoperability"
+    "Interoperability",
+    "Standards"
   ],
   "ontology": {
     "term_id": "MV-10072",

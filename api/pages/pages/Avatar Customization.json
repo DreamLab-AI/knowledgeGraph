@@ -7,13 +7,13 @@
     "ETSI_Domain_Creative_Media"
   ],
   "wiki_links": [
-    "Self-Expression",
-    "Digital Personalization",
     "Social Distinction",
-    "Asset Libraries",
-    "Customization Tools",
+    "Self-Expression",
     "Identity Representation",
-    "Real-Time Preview"
+    "Real-Time Preview",
+    "Digital Personalization",
+    "Asset Libraries",
+    "Customization Tools"
   ],
   "ontology": {
     "term_id": "MV-9789",

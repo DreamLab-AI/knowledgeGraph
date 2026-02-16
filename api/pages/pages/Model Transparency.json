@@ -3,18 +3,18 @@
   "title": "Model Transparency",
   "content": "- ### OntologyBlock\n  id:: model-transparency-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9969\n\t- source-domain:: ai\n\t- preferred-term:: Model Transparency\n\t- status:: active\n\t- owl:class:: ai:ModelTransparency\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: The capability to understand, explain, and interpret the decision-making processes within AI and machine learning models, encompassing explainability, interpretability, and accountability requirements essential for responsible AI deployment.\n\t- #### Relationships\n\t  id:: model-transparency-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AI Ethics]]\n\t\t- related-to:: [[Explainable AI]]\n\t\t- related-to:: [[AI Governance]]\n\t\t- enables:: [[Trustworthy AI Systems]]\n\n## Core Concepts\n\n### Key Requirements\n- Explainability\n- Interpretability\n- Accountability\n- Auditability\n- Reproducibility\n\n### Definitions\n\n#### Interpretability\n- Understanding model logic\n- Decision process clarity\n- Human comprehension\n- Internal mechanics\n- Feature importance\n\n#### Explainability\n- Post-decision reasoning\n- Clear justifications\n- Understandable outputs\n- Stakeholder communication\n- Decision rationale\n\n## The Black Box Challenge\n\n### Complex Models\n- Deep neural networks\n- Ensemble methods\n- Large language models\n- Generative AI\n- Multi-modal systems\n\n### Transparency Issues\n- Hidden decision paths\n- Opaque reasoning\n- Bias potential\n- Unpredictable behaviour\n- Audit difficulty\n\n## XAI Techniques\n\n### LIME\n- Local explanations\n- Model-agnostic\n- Feature perturbation\n- Interpretable approximations\n- Instance-level analysis\n\n### SHAP\n- Shapley values\n- Feature attribution\n- Consistent explanations\n- Global and local\n- Mathematical foundation\n\n### Saliency Maps\n- Visual representation\n- Input influence\n- Attention visualisation\n- Neural network focus\n- Image analysis\n\n### Counterfactual Explanations\n- Alternative scenarios\n- What-if analysis\n- Decision boundaries\n- Minimal changes\n- Actionable insights\n\n## Regulatory Compliance\n\n### GDPR Requirements\n- Right to explanation\n- Automated decisions\n- Human oversight\n- Data subject rights\n- Accountability proof\n\n### Industry Standards\n- Finance regulations\n- Healthcare requirements\n- Critical infrastructure\n- Government mandates\n- Ethical guidelines\n\n## Business Benefits\n\n### Trust Building\n- Stakeholder confidence\n- Customer acceptance\n- Regulatory approval\n- Risk mitigation\n- Brand reputation\n\n### Operational Value\n- Debugging support\n- Model improvement\n- Bias detection\n- Performance validation\n- Quality assurance\n\n## Implementation Approach\n\n### Multi-disciplinary Teams\n- Data scientists\n- Domain experts\n- Legal advisors\n- Ethics specialists\n- End users\n\n### Best Practices\n- Documentation standards\n- Testing protocols\n- Audit trails\n- Version control\n- Continuous monitoring\n\n## Future Directions\n\n### Evolving Technologies\n- Advanced interpretability tools\n- Real-time auditing\n- Continuous monitoring\n- Automated explanations\n- Regulatory automation\n\n### Emerging Standards\n- Industry frameworks\n- Certification programmes\n- Benchmark datasets\n- Evaluation metrics\n- Compliance tools\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
+    "Intrinsic Interpretability",
+    "Model Interpretability",
     "AI Model Card",
     "Interpretable AI",
-    "Global Explanation",
-    "Model Interpretability",
-    "Intrinsic Interpretability"
+    "Global Explanation"
   ],
   "wiki_links": [
-    "Trustworthy AI Systems",
     "metaverse",
     "AI Governance",
-    "AI Ethics",
-    "Explainable AI"
+    "Explainable AI",
+    "Trustworthy AI Systems",
+    "AI Ethics"
   ],
   "ontology": {
     "term_id": "MV-9969",

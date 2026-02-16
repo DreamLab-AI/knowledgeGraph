@@ -4,21 +4,21 @@
   "content": "- ### OntologyBlock\n  id:: digital-money-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9862\n\t- source-domain:: mv\n\t- preferred-term:: Digital Money\n\t- definition:: Any form of monetary value existing purely in electronic format, encompassing e-money, central bank digital currencies, cryptocurrencies, and stablecoins, that can be stored, transferred, and transacted electronically across payment networks, metaverse economies, and blockchain systems.\n\t- status:: active\n\t- owl:class:: mv:DigitalMoney\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-money-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Financial Instruments]]\n\t\t- enables:: [[Electronic Payments]], [[Programmable Money]], [[Instant Settlement]]\n\t\t- requires:: [[Digital Wallet]], [[Payment Network]], [[Security Infrastructure]]\n\t\t- related-to:: [[Stablecoin]], [[CBDC]], [[Cryptocurrency]]\n- ## Technical Details\n\t- **Forms of Digital Money**:\n\t\t- E-money: Centralized, regulated digital value\n\t\t- CBDCs: Central bank issued digital currency\n\t\t- Cryptocurrencies: Decentralized, blockchain-based\n\t\t- Stablecoins: Value-pegged digital assets\n\t- **Stablecoin Market (2024-2025)**:\n\t\t- $23 trillion trading volume in 2024 (90% increase)\n\t\t- $255 billion market cap (June 2025)\n\t\t- 99% pegged to US dollar\n\t\t- Projected $2 trillion cap by 2028\n\t- **Technology Foundation**:\n\t\t- Distributed ledger technology (DLT)\n\t\t- Smart contracts for programmability\n\t\t- Cryptographic security\n\t\t- Instant 24/7 settlement capability\n\t- **Regulatory Landscape**: EU MiCAR June 2024, global CBDC exploration\n- ## Applications\n\t- Cross-border remittances\n\t- Metaverse transactions\n\t- Micropayments\n\t- Financial inclusion\n\t- Programmable finance",
   "backlinks": [
     "Central Bank Digital Currency",
-    "Money",
-    "Bitcoin As Money"
+    "Bitcoin As Money",
+    "Money"
   ],
   "wiki_links": [
-    "Payment Network",
-    "Cryptocurrency",
     "Instant Settlement",
-    "Digital Wallet",
     "metaverse",
-    "Security Infrastructure",
     "Stablecoin",
-    "Programmable Money",
+    "Security Infrastructure",
     "CBDC",
     "Electronic Payments",
-    "Financial Instruments"
+    "Financial Instruments",
+    "Digital Wallet",
+    "Cryptocurrency",
+    "Payment Network",
+    "Programmable Money"
   ],
   "ontology": {
     "term_id": "MV-9862",

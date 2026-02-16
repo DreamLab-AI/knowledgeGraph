@@ -3,16 +3,16 @@
   "title": "Immersive Interface",
   "content": "- ### OntologyBlock\n  id:: immersive-interface-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9925\n\t- source-domain:: mv\n\t- preferred-term:: Immersive Interface\n\t- status:: active\n\t- owl:class:: mv:ImmersiveInterface\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: User interaction systems for VR, AR, and metaverse applications encompassing spatial user interfaces, haptic feedback devices, gesture recognition, voice control, and multimodal input methods that enable natural, intuitive engagement with virtual environments.\n\t- #### Relationships\n\t  id:: immersive-interface-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Human-Computer Interface]]\n\t\t- related-to:: [[Hardware Acceleration]]\n\t\t- related-to:: [[Gesture Recognition]]\n\t\t- enables:: [[Natural VR Interaction]]\n\n## Haptic Interfaces\n\n### Core Requirements\n- Fast response time\n- Lightweight design\n- Multi-modality (temperature, pressure)\n- Tactile feedback (texture)\n- Kinesthetic feedback (movement)\n\n### Research Trends (2024)\n- Wearable haptic systems\n- Soft interface actuation\n- Enhanced feedback richness\n- Improved wearability\n\n## Haptic Technology Types\n\n### Force Feedback\n- Haptic actuators and motors\n- Pressure and motion sensation\n- Physical interaction realism\n- Controller integration\n\n### Ultrasound Haptics\n- Ultrasonic wave technology\n- Contactless tactile sensation\n- Mid-air feedback\n- Gesture-based interaction\n\n### Thermal Haptics\n- Temperature change simulation\n- Environmental realism\n- Material sensation\n- Comfort considerations\n\n## Spatial User Interfaces\n\n### Design Principles\n- 3D space information conveyance\n- Natural human behaviour alignment\n- Spatial cognition consideration\n- Intuitive experience creation\n\n### Enhancement Techniques\n- Spatial audio integration\n- Haptic feedback systems\n- Realistic physics simulation\n- Dynamic environment response\n\n## Input Methods\n\n### Motion-to-Tactile Frameworks\n- Performer motion translation\n- Haptic intensity parameters\n- 3D upper-body feedback\n- Vibrotactile rendering\n\n### Advanced Input\n- Eye tracking control\n- Brain-computer interfaces\n- Voice recognition systems\n- Adaptive controllers\n\n## Interface Innovations (2024)\n\n### 3D Menu Design\n- Hexa-ring menu innovation\n- Three-dimensional approach\n- Enhanced user immersion\n- Traditional 2D improvement\n\n### Pseudo-Haptic Features\n- Simulated button feedback\n- VR environment enhancement\n- User satisfaction improvement\n- No physical hardware required\n\n## Accessibility Integration\n\n### Adaptive Controls\n- PlayStation VR2 button remapping\n- Sensitivity adjustment\n- Xbox Adaptive Controller compatibility\n- Meta Quest integration\n\n### Alternative Input\n- Voice navigation\n- Eye-based control\n- Keyboard alternatives\n- Multiple method support\n\n## Multimodal Interfaces\n\n### Skin-Integrated Systems\n- Multi-dimensional tactile signals\n- Direct skin delivery\n- City University of Hong Kong research\n- Enhanced virtual touch\n\n### Active Haptic Devices\n- Curved origami technology\n- Variable stiffness perception\n- Human-triggered feedback\n- First-person experience\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
-    "Driver Software",
     "Experience Layer",
-    "Inclusive Xr Design"
+    "Inclusive Xr Design",
+    "Driver Software"
   ],
   "wiki_links": [
-    "Gesture Recognition",
+    "Human-Computer Interface",
     "metaverse",
+    "Gesture Recognition",
     "Natural VR Interaction",
-    "Hardware Acceleration",
-    "Human-Computer Interface"
+    "Hardware Acceleration"
   ],
   "ontology": {
     "term_id": "MV-9925",

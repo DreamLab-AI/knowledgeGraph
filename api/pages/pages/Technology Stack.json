@@ -3,8 +3,8 @@
   "title": "Technology Stack",
   "content": "- ### OntologyBlock\n  id:: mv9709-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9709\n\t- preferred-term:: Technology Stack\n\t- source-domain:: mv\n\t- owl:class:: mv:TechnologyStack\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Technology Stack is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nTechnology Stack represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Metaverse Stack",
-    "Metaverse Architecture"
+    "Metaverse Architecture",
+    "Metaverse Stack"
   ],
   "wiki_links": [
     "owl:Thing"

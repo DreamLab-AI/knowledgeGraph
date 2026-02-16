@@ -6,12 +6,12 @@
     "Privacy Preserving Data Sharing"
   ],
   "wiki_links": [
-    "Zero Knowledge Proofs",
+    "Cryptographic Protocol",
     "metaverse",
     "Privacy Preserving Data Sharing",
+    "Zero Knowledge Proofs",
     "Private Computation",
-    "Federated Learning",
-    "Cryptographic Protocol"
+    "Federated Learning"
   ],
   "ontology": {
     "term_id": "MV-10035",

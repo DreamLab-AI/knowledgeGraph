@@ -3,12 +3,12 @@
   "title": "User Interface",
   "content": "- ### OntologyBlock\n  id:: mv9716-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9716\n\t- preferred-term:: User Interface\n\t- source-domain:: mv\n\t- owl:class:: mv:UserInterface\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: User Interface is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nUser Interface represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Discovery Layer",
-    "Accessibility Standard",
-    "Consent Management",
-    "XR Accessibility Guideline",
-    "Digital Art Application",
     "Search Interface",
+    "Digital Art Application",
+    "Discovery Layer",
+    "Consent Management",
+    "Accessibility Standard",
+    "XR Accessibility Guideline",
     "Communication Software"
   ],
   "wiki_links": [

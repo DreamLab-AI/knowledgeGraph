@@ -3,24 +3,24 @@
   "title": "Central Bank Digital Currency",
   "content": "- ### OntologyBlock\n  id:: central-bank-digital-currency-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9817\n\t- source-domain:: mv\n\t- preferred-term:: Central Bank Digital Currency\n\t- definition:: A digital form of sovereign fiat money issued directly by a nation's central bank, representing a liability of the monetary authority that can serve as legal tender for retail payments or wholesale settlement, distinct from commercial bank deposits and decentralized cryptocurrencies.\n\t- status:: active\n\t- owl:class:: mv:CentralBankDigitalCurrency\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: central-bank-digital-currency-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Currency]]\n\t\t- enables:: [[Digital Payments]], [[Financial Inclusion]], [[Monetary Policy Transmission]]\n\t\t- requires:: [[Central Bank Infrastructure]], [[Digital Identity]], [[Payment Network]]\n\t\t- related-to:: [[CBDC Frameworks]], [[Digital Money]], [[Payment System]]\n- ## Technical Details\n\t- **Global Status** (2024): 134 countries (98% of world GDP) researching CBDCs; Bahamas, Jamaica, Nigeria have launched; China's digital RMB first major economy issuance\n\t- **Types**:\n\t\t- **Retail CBDC**: For households and businesses, everyday transactions\n\t\t- **Wholesale CBDC**: For financial institutions, similar to reserves\n\t- **Monetary Policy Implications**:\n\t\t- Can strengthen policy transmission if appropriately designed\n\t\t- May increase competition for bank deposits\n\t\t- Non-remunerated CBDC could harden zero lower bound\n\t\t- Affects reserve management and liquidity forecasting\n\t- **Design Considerations**:\n\t\t- Privacy vs. AML/CFT compliance\n\t\t- Token-based vs. account-based\n\t\t- Anonymity limitations for illicit activity prevention\n\t- **US Position** (2025): Executive Order 14178 prohibits federal agencies from establishing or promoting CBDC\n- ## Applications\n\t- Retail payment modernization\n\t- Financial inclusion for unbanked populations\n\t- Cross-border payment efficiency\n\t- Monetary policy implementation\n\t- Government benefit distribution",
   "backlinks": [
-    "Micropayment",
+    "Value Transfer",
     "Money",
     "Stablecoin",
-    "Monetary Sovereignty",
-    "Value Transfer"
+    "Micropayment",
+    "Monetary Sovereignty"
   ],
   "wiki_links": [
+    "Digital Payments",
+    "Monetary Policy Transmission",
+    "CBDC Frameworks",
+    "Central Bank Infrastructure",
+    "metaverse",
+    "Payment System",
+    "Digital Money",
+    "Digital Currency",
     "Payment Network",
     "Digital Identity",
-    "metaverse",
-    "CBDC Frameworks",
-    "Digital Payments",
-    "Central Bank Infrastructure",
-    "Digital Money",
-    "Payment System",
-    "Financial Inclusion",
-    "Monetary Policy Transmission",
-    "Digital Currency"
+    "Financial Inclusion"
   ],
   "ontology": {
     "term_id": "MV-9817",

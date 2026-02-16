@@ -3,11 +3,11 @@
   "title": "Generative Ai",
   "content": "- ### OntologyBlock\n  id:: ai9509-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9509\n\t- preferred-term:: Generative Ai\n\t- source-domain:: ai\n\t- owl:class:: ai:GenerativeAi\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Generative Ai is a concept within the ai domain. Further enrichment pending.\n\n## Overview\n\nGenerative Ai represents an abstract concept in the ai ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Text To3d",
-    "Code Generation",
     "Documentation Generation",
     "Ai Engineering",
-    "Text To Image"
+    "Text To3d",
+    "Text To Image",
+    "Code Generation"
   ],
   "wiki_links": [
     "owl:Thing"

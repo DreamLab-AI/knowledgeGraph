@@ -3,17 +3,17 @@
   "title": "Documentation Standards",
   "content": "- ### OntologyBlock\n  id:: documentation-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9885\n\t- source-domain:: mv\n\t- preferred-term:: Documentation Standards\n\t- status:: active\n\t- owl:class:: mv:DocumentationStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Formal specifications and technical guidelines established by standards bodies to ensure interoperability, consistency, and quality across metaverse platforms, encompassing terminology, data formats, interfaces, and ethical considerations for immersive technology development.\n\t- #### Relationships\n\t  id:: documentation-standards-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Technical Standards]]\n\t\t- related-to:: [[Interoperability Standard]]\n\t\t- related-to:: [[Interface Standards]]\n\t\t- governed-by:: [[Metaverse Standards Forum]]\n\n## Key Standards Organisations\n\n### Metaverse Standards Forum (MSF)\n- Founded June 2022 to foster interoperability standards development\n- 1,800+ members including Google, Meta, Microsoft, Nvidia, Adobe, Autodesk, Epic Games\n- Provides venue for cooperation between standards organisations and companies\n- Focus on pragmatic, action-based projects for open and inclusive metaverse\n\n### IEEE Standards\n- **IEEE 7014-2024**: Standard for Ethical Considerations in Emulated Empathy in Autonomous and Intelligent Systems\n- **IEEE 3079-2020**: Standard for Head Mounted Display Based VR Sickness Reduction Technology\n- **IEEE 2048.101-2023**: Standard for Augmented Reality on Mobile Devices\n- **IEEE P2048**: Standard for Metaverse Terminology, Definitions, and Taxonomy\n- **IEEE P7016**: Ethically Aligned Design and Operation of Metaverse Systems\n\n### ISO/IEC Standards\n- **ISO/IEC 18039:2019**: Defines scope and key concepts of mixed and augmented reality, including terms, definitions, and generalised system architecture\n\n### ITU Focus Group\n- Established late 2022 with first meeting March 2023\n- Develops roadmap for technical standards ensuring metaverse service interoperability\n- Focus on high-quality user experience, security, and personal data protection\n\n## Technical Scope\n\n### Coverage Areas\n- Terminology and taxonomy definitions\n- Data format specifications\n- Interface protocols\n- Ethical design guidelines\n- Accessibility requirements\n- Security and privacy standards\n\n## Market Projections\n\n- Estimated 1.7 billion mobile AR user devices worldwide by 2024\n- AR market estimated to exceed $50 billion in 2024\n- Interoperability identified as bedrock requirement for open metaverse\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
-    "AI Model Card",
-    "Ai Transparency Framework",
     "Etsi Domain Immersive",
-    "Algorithmic Transparency Index"
+    "Algorithmic Transparency Index",
+    "Ai Transparency Framework",
+    "AI Model Card"
   ],
   "wiki_links": [
     "metaverse",
-    "Technical Standards",
     "Metaverse Standards Forum",
-    "Interoperability Standard",
-    "Interface Standards"
+    "Technical Standards",
+    "Interface Standards",
+    "Interoperability Standard"
   ],
   "ontology": {
     "term_id": "MV-9885",

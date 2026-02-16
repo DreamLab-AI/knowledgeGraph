@@ -3,9 +3,9 @@
   "title": "Coordinate System",
   "content": "- ### OntologyBlock\n  id:: mv9540-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9540\n\t- preferred-term:: Coordinate System\n\t- source-domain:: mv\n\t- owl:class:: mv:CoordinateSystem\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Coordinate System is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nCoordinate System represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
+    "Spatial Index",
     "Scene Graph",
     "Spatial Anchor",
-    "Spatial Index",
     "Spatial Coordinates"
   ],
   "wiki_links": [

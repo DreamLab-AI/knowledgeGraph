@@ -3,16 +3,16 @@
   "title": "Data Governance",
   "content": "- ### OntologyBlock\n  id:: mv9551-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9551\n\t- preferred-term:: Data Governance\n\t- source-domain:: mv\n\t- owl:class:: mv:DataGovernance\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Data Governance is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nData Governance represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Data Integration Interface",
-    "Data Provenance",
-    "Metadata Registry",
-    "Schema Registry",
-    "Training Data Repository",
     "Privacy-Enhancing Computation (PEC)",
-    "Transparent Data Processing",
+    "Schema Registry",
     "Data Anonymization Pipeline",
+    "Metadata Registry",
     "Digital Taxonomy Registry",
-    "Metadata Schema"
+    "Training Data Repository",
+    "Transparent Data Processing",
+    "Metadata Schema",
+    "Data Provenance",
+    "Data Integration Interface"
   ],
   "wiki_links": [
     "owl:Thing"

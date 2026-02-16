@@ -4,19 +4,19 @@
   "content": "- ### OntologyBlock\n  id:: spatial-anchors-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10051\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Anchors\n\t- status:: active\n\t- definition:: Virtual reference points that bind digital content to specific physical locations in augmented reality environments, using sensor fusion from cameras, GPS, and accelerometers to maintain persistent positioning and orientation of virtual objects relative to real-world spaces.\n\t- owl:class:: mv:SpatialAnchors\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: spatial-anchors-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AR Technology]]\n\t\t- related-to:: [[Augmented Reality]]\n\t\t- related-to:: [[Location Based Services]]\n\t\t- related-to:: [[SLAM]]\n\t\t- enables:: [[Persistent AR Placement]]\n\t- #### Technologies\n\t  collapsed:: true\n\t\t- Apple ARKit with ObjectTrackingProvider (June 2024)\n\t\t- Vuforia for indoor environments\n\t\t- World Locking Tools (WLTs)\n\t\t- LiDAR scanner for rapid object placement\n\t\t- GPS and accelerometer sensor fusion\n\t- #### Applications\n\t  collapsed:: true\n\t\t- Location-based gaming with virtual characters\n\t\t- Architectural visualization on construction sites\n\t\t- Industrial maintenance with AR overlays\n\t\t- Wayfinding in hospitals and campuses\n\t\t- Remote collaboration on shared virtual content",
   "backlinks": [
     "Spatial Computing Layer",
-    "Shared Ar Experiences",
     "Spatial Computing",
-    "ETSI Domain Virtual Society",
+    "Physical Virtual Registration",
     "Persistent Ar Placement",
-    "Physical Virtual Registration"
+    "ETSI Domain Virtual Society",
+    "Shared Ar Experiences"
   ],
   "wiki_links": [
-    "Persistent AR Placement",
-    "AR Technology",
     "metaverse",
-    "Location Based Services",
+    "Augmented Reality",
+    "Persistent AR Placement",
     "SLAM",
-    "Augmented Reality"
+    "Location Based Services",
+    "AR Technology"
   ],
   "ontology": {
     "term_id": "MV-10051",

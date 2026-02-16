@@ -3,8 +3,8 @@
   "title": "Kinematics",
   "content": "- ### OntologyBlock\n  id:: rb9516-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9516\n\t- preferred-term:: Kinematics\n\t- source-domain:: rb\n\t- owl:class:: rb:Kinematics\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Kinematics is a concept within the robotics domain. Further enrichment pending.\n\n## Overview\n\nKinematics represents an abstract concept in the robotics ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "RB-1006-inverse-kinematics",
-    "RB-1005-forward-kinematics"
+    "RB-1005-forward-kinematics",
+    "RB-1006-inverse-kinematics"
   ],
   "wiki_links": [
     "owl:Thing"

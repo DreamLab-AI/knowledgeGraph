@@ -4,21 +4,21 @@
   "content": "- ### OntologyBlock\n  id:: platform-governance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7037\n\t- preferred-term:: Platform Governance\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Platform governance encompasses the formal and informal rules, decision-making processes, and control mechanisms that determine how blockchain and decentralised platforms operate, evolve, and distribute power among stakeholders. It includes on-chain mechanisms such as token-weighted voting and smart contract-executed decisions, as well as off-chain processes including community discussions, improvement proposals, and delegated representation structures.\n\t- maturity:: reviewed\n\t- owl:class:: ngm:PlatformGovernance\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[Blockchain]]\n\n### Relationships\n\t- relatedTo:: [[DAO Governance]]\n\t- relatedTo:: [[Token Economy]]\n\t- relatedTo:: [[Smart Contracts]]\n\t- relatedTo:: [[Consensus Mechanisms]]\n\t- enables:: [[Decentralised Decision-Making]]\n\t- implementedBy:: [[Voting Mechanisms]]\n\n## Overview\n\nPlatform governance in blockchain contexts fundamentally differs from traditional corporate governance by enabling ecosystems where participants directly shape the rules governing the platform. Unlike conventional systems where a central authority dictates decisions, blockchain-based platforms allow users to voice preferences on key governance matters, including resource allocation and control mechanisms.\n\n## Governance Mechanism Types\n\n### On-Chain Governance\n- Stakeholders vote with native tokens to make changes to the blockchain directly\n- Proposals are executed automatically via smart contracts upon approval\n- Provides transparency and immutability of governance decisions\n- Examples include protocol parameter changes and treasury allocations\n\n### Off-Chain Governance\n- Includes public discussion forums and improvement proposal processes\n- Community-driven deliberation and consensus building\n- Requires trusted parties to verify votes and implement proposed on-chain changes\n- Platforms such as Snapshot facilitate gasless voting with on-chain execution\n\n### Hybrid Approaches\n- Token-based, reputation-based, and hybrid governance mechanisms\n- Quadratic voting reduces whale influence whilst empowering smaller holders\n- Soulbound Tokens provide non-transferable credentials for governance participation\n- Delegated Representatives (DReps) enable representative democracy within blockchain ecosystems\n\n## Key Components\n\n### Decision-Making Processes\n- Protocol upgrades and parameter modifications\n- Treasury management and grant allocation\n- Validator selection and staking requirements\n- Emergency response and security incident handling\n\n### Accountability Mechanisms\n- Transparent voting records on-chain\n- Proposal tracking and outcome documentation\n- Delegate performance metrics\n- Community oversight and veto capabilities\n\n## Challenges\n\n### Centralisation Risks\n- Large token holders (whales) can dominate governance decisions\n- Voter participation rates remain low across most platforms\n- In Decentraland, average voter participation per proposal was 0.79%, with median participation at 0.16%\n- Across 30,000 DAOs analysed, 53% were inactive with no proposals in six months\n\n### Coordination Problems\n- Voter apathy affects all governance systems\n- Token holders often prefer passive holding over active participation\n- Quorum requirements may impede timely decision-making\n- Vote-buying and collusion remain ongoing concerns\n\n## 2025 Trends\n\n- Increased focus on stakeholder voting and community participation\n- Formalisation of governance processes and tooling\n- Growing diversity of developer participation in governance\n- Enhanced delegation mechanisms with accountability frameworks\n- Integration of reputation systems alongside token-based voting\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Comprehensive review completed\n- **References**: 5 pages reference this concept",
   "backlinks": [
     "Participant Protection",
-    "Community Standards",
-    "Content Moderation Standards",
-    "Governance Architecture",
-    "DAO Governance",
+    "Digital Jurisdiction",
     "Governance Model",
-    "Digital Jurisdiction"
+    "DAO Governance",
+    "Community Standards",
+    "Governance Architecture",
+    "Content Moderation Standards"
   ],
   "wiki_links": [
     "Token Economy",
-    "Smart Contracts",
     "Blockchain",
-    "Consensus Mechanisms",
-    "Decentralised Decision-Making",
     "DAO Governance",
-    "Voting Mechanisms"
+    "Smart Contracts",
+    "Decentralised Decision-Making",
+    "Voting Mechanisms",
+    "Consensus Mechanisms"
   ],
   "ontology": {
     "term_id": "NGM-7037",

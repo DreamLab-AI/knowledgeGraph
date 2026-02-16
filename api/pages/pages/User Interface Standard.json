@@ -6,11 +6,11 @@
     "Accessibility Standard"
   ],
   "wiki_links": [
-    "metaverse",
-    "Standards",
-    "Accessibility",
     "User Experience",
-    "User Interface Architecture"
+    "User Interface Architecture",
+    "Accessibility",
+    "metaverse",
+    "Standards"
   ],
   "ontology": {
     "term_id": "MV-10098",

@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "metaverse",
-    "Public Key Infrastructure",
-    "Blockchain Authentication",
-    "Secure Communication",
-    "Identity Verification",
     "Digital Security",
-    "Trust Establishment",
-    "Verifiable Credentials",
+    "Cryptographic Keys",
     "SSL Certificates",
     "Certificate Authority",
-    "Cryptographic Keys"
+    "Identity Verification",
+    "Trust Establishment",
+    "Blockchain Authentication",
+    "Secure Communication",
+    "Public Key Infrastructure",
+    "Verifiable Credentials"
   ],
   "ontology": {
     "term_id": "MV-9852",

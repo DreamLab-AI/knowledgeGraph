@@ -4,9 +4,9 @@
   "content": "- ### OntologyBlock\n  id:: ai9505-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9505\n\t- preferred-term:: Cybersecurity\n\t- source-domain:: ai\n\t- owl:class:: ai:Cybersecurity\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Cybersecurity is a concept within the ai domain. Further enrichment pending.\n\n## Overview\n\nCybersecurity represents an abstract concept in the ai ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
     "AISecurity",
+    "AI Risks",
     "Digital Objects",
-    "Digital Forensics Framework",
-    "AI Risks"
+    "Digital Forensics Framework"
   ],
   "wiki_links": [
     "owl:Thing"

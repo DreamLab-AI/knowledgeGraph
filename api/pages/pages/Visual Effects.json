@@ -3,10 +3,10 @@
   "title": "Visual Effects",
   "content": "- ### OntologyBlock\n  id:: mv9726-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9726\n\t- preferred-term:: Visual Effects\n\t- source-domain:: mv\n\t- owl:class:: mv:VisualEffects\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Visual Effects is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nVisual Effects represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Animation Software",
-    "Virtual Performance Space",
+    "Particle System",
     "3D Scene Exchange Protocol (SXP)",
-    "Particle System"
+    "Virtual Performance Space",
+    "Animation Software"
   ],
   "wiki_links": [
     "owl:Thing"

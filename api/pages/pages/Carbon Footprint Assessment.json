@@ -3,22 +3,22 @@
   "title": "Carbon Footprint Assessment",
   "content": "- ### OntologyBlock\n  id:: carbon-footprint-assessment-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9809\n\t- source-domain:: mv\n\t- preferred-term:: Carbon Footprint Assessment\n\t- definition:: A comprehensive evaluation methodology that quantifies total greenhouse gas emissions associated with a product, service, or organization across its entire lifecycle using Life Cycle Assessment principles, expressed in CO2 equivalent units to identify emission hotspots and reduction opportunities.\n\t- status:: active\n\t- owl:class:: mv:CarbonFootprintAssessment\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: carbon-footprint-assessment-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Environmental Assessment]]\n\t\t- enables:: [[Impact Quantification]], [[Hotspot Identification]], [[Reduction Strategy]]\n\t\t- requires:: [[Lifecycle Data]], [[Emission Factors]], [[Boundary Definition]]\n\t\t- related-to:: [[Life Cycle Assessment]], [[Carbon Accounting]], [[Product Carbon Footprint]]\n- ## Technical Details\n\t- **Governing Standards**:\n\t\t- **ISO 14040/14044**: LCA principles and framework\n\t\t- **ISO 14067**: Product carbon footprint quantification\n\t\t- **PAS 2050**: Product emissions specification\n\t\t- **GHG Protocol Product Standard**: Value chain emissions\n\t- **LCA Phases**:\n\t\t- Goal and Scope Definition\n\t\t- Life Cycle Inventory (LCI) - inputs and outputs\n\t\t- Impact Assessment (LCIA)\n\t\t- Interpretation\n\t- **Lifecycle Stages**:\n\t\t- Raw material extraction\n\t\t- Manufacturing/production\n\t\t- Transportation/distribution\n\t\t- Use phase\n\t\t- End-of-life disposal/recycling\n\t- **Key Findings**: Supply chain typically accounts for 80%+ of environmental impact; renewable technologies 400-1,000 g CO2eq/kWh lower than fossil fuels\n- ## Applications\n\t- Product carbon footprint labeling\n\t- Corporate sustainability reporting\n\t- Supply chain optimization\n\t- Comparative product analysis\n\t- Regulatory compliance documentation",
   "backlinks": [
-    "Carbon Calculator",
+    "Environmental Sustainability Label",
     "Carbon Accounting",
-    "Environmental Sustainability Label"
+    "Carbon Calculator"
   ],
   "wiki_links": [
-    "Emission Factors",
-    "Carbon Accounting",
-    "metaverse",
-    "Lifecycle Data",
-    "Hotspot Identification",
-    "Environmental Assessment",
-    "Reduction Strategy",
-    "Impact Quantification",
     "Boundary Definition",
+    "Hotspot Identification",
+    "metaverse",
+    "Reduction Strategy",
+    "Emission Factors",
+    "Impact Quantification",
+    "Lifecycle Data",
+    "Life Cycle Assessment",
     "Product Carbon Footprint",
-    "Life Cycle Assessment"
+    "Carbon Accounting",
+    "Environmental Assessment"
   ],
   "ontology": {
     "term_id": "MV-9809",

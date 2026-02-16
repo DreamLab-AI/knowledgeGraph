@@ -3,18 +3,18 @@
   "title": "State Estimation",
   "content": "- ### OntologyBlock\n  id:: state-estimation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0604\n\t- preferred-term:: State Estimation\n\t- source-domain:: rb\n\t- status:: active\n\t- public-access:: true\n\t- definition:: State Estimation encompasses the algorithms and techniques used to infer the internal state of a robotic system from noisy sensor measurements. Key approaches include Kalman filtering, particle filters, and Bayesian estimation methods that enable robots to maintain accurate representations of position, velocity, and other dynamic state variables.\n\t- owl:class:: rb:StateEstimation\n\t- belongsToDomain:: [[Robotics Systems]]\n\t- #### Relationships\n\t  id:: state-estimation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Robotics Systems]]\n\t\t- is-parent-of:: [[Kalman Filter]]\n\t\t- is-parent-of:: [[Particle Filter]]\n\t\t- is-parent-of:: [[Bayes Filter]]\n\t\t- related-to:: [[Localization]]\n\t\t- related-to:: [[Sensor Fusion]]",
   "backlinks": [
-    "RB-1013-localization",
     "RB-1015-kalman-filter",
+    "RB-1008-odometry",
     "Perception System",
-    "RB-1008-odometry"
+    "RB-1013-localization"
   ],
   "wiki_links": [
+    "Localization",
+    "Bayes Filter",
     "Particle Filter",
-    "Kalman Filter",
     "Sensor Fusion",
     "Robotics Systems",
-    "Localization",
-    "Bayes Filter"
+    "Kalman Filter"
   ],
   "ontology": {
     "term_id": "RB-0604",

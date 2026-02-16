@@ -5,18 +5,18 @@
   "backlinks": [
     "Knowhere",
     "Segmentation and Identification",
-    "Object Detection and Tracking",
     "Model Width",
     "Text Summarisation",
+    "Object Detection and Tracking",
     "Flux"
   ],
   "wiki_links": [
-    "Segmentation and Identification",
-    "Human tracking and SLAM capture",
-    "Hardware and Edge",
-    "WebDev and Consumer Tooling",
     "Image Generation",
     "Product Design",
-    "AI Video"
+    "Segmentation and Identification",
+    "Hardware and Edge",
+    "AI Video",
+    "Human tracking and SLAM capture",
+    "WebDev and Consumer Tooling"
   ]
 }

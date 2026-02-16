@@ -3,14 +3,14 @@
   "title": "Etsi Domain Immersive",
   "content": "- ### OntologyBlock\n  id:: Etsi Domain Immersive\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9896\n  - preferred-term:: Etsi Domain Immersive\n  - source-domain:: mv\n  - owl:class:: mv:EtsiDomainImmersive\n  - status:: active\n  - definition:: The ETSI (European Telecommunications Standards Institute) technical domain addressing standardisation of immersive technologies including virtual reality, augmented reality, and mixed reality systems, encompassing network requirements, quality of experience metrics, and interoperability specifications for XR applications.\n\n### Relationships\n- is-subclass-of:: [[ETSI Standards]]\n- related-to:: [[Extended Reality Xr]]\n- related-to:: [[Documentation Standards]]\n- governs:: [[Immersive Technology Standards]]\n\n## ETSI Overview\n\n### Organisation\n- European Telecommunications Standards Institute\n- Develops globally applicable ICT standards\n- Headquarters in Sophia Antipolis, France\n- Industry-driven standardisation body\n\n### Immersive Technology Focus\n- Extended Reality (XR) specifications\n- Network requirements for immersive services\n- Quality of Experience (QoE) frameworks\n- Interoperability standards\n\n## Technical Scope\n\n### Network Requirements\n- Ultra-low latency specifications (sub-20ms for immersive)\n- High bandwidth requirements for volumetric data\n- Edge computing integration standards\n- 5G/6G network slicing for XR\n\n### Quality Metrics\n- Visual quality assessment frameworks\n- Audio-visual synchronisation standards\n- Motion-to-photon latency specifications\n- Cybersickness prevention guidelines\n\n### Device Standards\n- Head-mounted display specifications\n- Tracking system requirements\n- Controller interface standards\n- Haptic feedback specifications\n\n## Industry Specification Groups\n\n### XR-Related ISGs\n- Focus on emerging immersive technology requirements\n- Cross-industry collaboration frameworks\n- Implementation guidelines\n- Conformance testing specifications\n\n### Collaboration Areas\n- Telecommunications operators\n- Device manufacturers\n- Content providers\n- Platform developers\n\n## Applications\n\n### Telecommunications\n- Network slicing for XR services\n- Edge computing deployment\n- Quality of service guarantees\n- Roaming specifications\n\n### Enterprise\n- Training and simulation standards\n- Remote collaboration specifications\n- Digital twin integration\n- Industrial XR applications\n\n### Consumer\n- Gaming and entertainment\n- Social VR platforms\n- Educational applications\n- Healthcare and therapy\n\n## Related Standards Bodies\n\n### Coordination\n- ITU Focus Group on Metaverse\n- Metaverse Standards Forum\n- IEEE XR standards\n- ISO/IEC immersive technology standards\n\n## Metadata\n\n- **Migration Status**: Enriched via domain knowledge 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
-    "Etsi Metaverse Domain Taxonomy",
-    "Etsi Metaverse Domain Model"
+    "Etsi Metaverse Domain Model",
+    "Etsi Metaverse Domain Taxonomy"
   ],
   "wiki_links": [
+    "ETSI Standards",
     "Immersive Technology Standards",
-    "Extended Reality Xr",
     "Documentation Standards",
-    "ETSI Standards"
+    "Extended Reality Xr"
   ],
   "ontology": {
     "term_id": "MV-9896",

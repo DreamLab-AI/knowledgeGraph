@@ -3,21 +3,21 @@
   "title": "Digital Twin Generation",
   "content": "- ### OntologyBlock\n  id:: digital-twin-generation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9879\n\t- source-domain:: mv\n\t- preferred-term:: Digital Twin Generation\n\t- definition:: The automated or semi-automated process of creating digital twin models using AI, machine learning, and advanced 3D capture technologies, enabling rapid production of virtual replicas with reduced manual effort and accelerated deployment timelines for industrial and enterprise applications.\n\t- status:: active\n\t- owl:class:: mv:DigitalTwinGeneration\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-twin-generation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Automated Modeling]]\n\t\t- enables:: [[Rapid Prototyping]], [[Mass Digitization]], [[AI Training]]\n\t\t- requires:: [[Generative AI]], [[3D Capture]], [[Machine Learning]]\n\t\t- related-to:: [[NVIDIA Omniverse]], [[Computer Vision]], [[Synthetic Data]]\n- ## Technical Details\n\t- **AI-Powered Platforms**:\n\t\t- NVIDIA Omniverse: USD-based real-time 3D workflows with AI\n\t\t- Ansys TwinAI: Physics models integrated with real-world data\n\t\t- Blackshark.AI: Satellite imagery to 3D globe reconstruction\n\t- **Automated Generation Approaches**:\n\t\t- Deep reinforcement learning for smart manufacturing\n\t\t- Gaussian splats for reduced image requirements\n\t\t- AI-based semantic segmentation and labeling\n\t\t- Photogrammetric 3D reconstruction automation\n\t- **Generative AI Synergies**:\n\t\t- Gen AI structures inputs and synthesizes outputs\n\t\t- Digital twins provide test-and-learn environments for AI\n\t\t- Combined approach reduces costs and accelerates deployment\n\t- **Auto Digital Twins Project**: AI and Big Data for accurate industrial models, solving 3D labeling cost bottleneck\n- ## Applications\n\t- Automated factory floor digitization\n\t- Globe-scale 3D model creation\n\t- AI training data generation\n\t- Industrial asset inventory\n\t- Real-time simulation model updates",
   "backlinks": [
-    "Human Capture & Recognition",
-    "Neural 3D Generation"
+    "Neural 3D Generation",
+    "Human Capture & Recognition"
   ],
   "wiki_links": [
     "Rapid Prototyping",
-    "Machine Learning",
-    "metaverse",
-    "Automated Modeling",
-    "NVIDIA Omniverse",
-    "Computer Vision",
-    "3D Capture",
     "Generative AI",
-    "Mass Digitization",
+    "Automated Modeling",
+    "Computer Vision",
+    "AI Training",
+    "metaverse",
+    "NVIDIA Omniverse",
+    "3D Capture",
+    "Machine Learning",
     "Synthetic Data",
-    "AI Training"
+    "Mass Digitization"
   ],
   "ontology": {
     "term_id": "MV-9879",

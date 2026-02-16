@@ -10,10 +10,10 @@
   ],
   "wiki_links": [
     "MachineLearning",
+    "TrainingMethod",
     "Deep Learning",
-    "Artificial Intelligence",
     "ModelArchitecture",
-    "TrainingMethod"
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-7013",

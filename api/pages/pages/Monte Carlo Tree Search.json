@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1006\n  - preferred-term:: Monte Carlo Tree Search\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:MonteCarloTreeSearch\n\n### Relationships\n- is-subclass-of:: [[Search Algorithms]]\n- skos:related:: [[Reinforcement Learning]]\n- skos:related:: [[Minimax Algorithm]]\n- uses:: [[Random Sampling]]\n- used-in:: [[AlphaGo]]\n- enables:: [[Game Playing AI]]\n\n### Definition\nMonte Carlo Tree Search (MCTS) is a heuristic search algorithm that makes optimal decisions in game trees by building a search tree incrementally through random simulations. It balances exploration of new possibilities with exploitation of known good moves using the Upper Confidence Bound (UCB) formula, making it particularly effective for games with large branching factors.\n\n### Four-Phase Algorithm\n**1. Selection:**\n- Traverse tree using UCB1 policy\n- Balance exploration vs exploitation\n\n**2. Expansion:**\n- Add new node(s) to tree\n- Extend search frontier\n\n**3. Simulation (Rollout):**\n- Play out randomly to terminal state\n- Quick evaluation of position\n\n**4. Backpropagation:**\n- Update statistics along path\n- Propagate win/loss information\n\n### UCB1 Formula\n- UCB1 = (wins/visits) + C * sqrt(ln(parent_visits)/visits)\n- C: Exploration constant\n- Balances winning rate with uncertainty\n\n### Advantages\n- No evaluation function required\n- Handles large state spaces\n- Anytime algorithm (improves with time)\n- Asymmetrically grows tree toward promising regions\n\n### Notable Applications\n- AlphaGo (defeating world Go champion)\n- Computer Go programs\n- General game playing\n- Planning under uncertainty\n- Automated theorem proving\n\n### Variants\n- UCT (Upper Confidence bounds applied to Trees)\n- RAVE (Rapid Action Value Estimation)\n- PUCT (Predictor + UCT, used in AlphaZero)",
   "backlinks": [],
   "wiki_links": [
-    "Random Sampling",
-    "AlphaGo",
-    "Minimax Algorithm",
-    "Reinforcement Learning",
     "Game Playing AI",
-    "Search Algorithms"
+    "Reinforcement Learning",
+    "Random Sampling",
+    "Search Algorithms",
+    "AlphaGo",
+    "Minimax Algorithm"
   ],
   "ontology": {
     "term_id": "AI-1006",

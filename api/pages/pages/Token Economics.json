@@ -4,16 +4,16 @@
   "content": "- ### OntologyBlock\n  id:: token-economics-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0601\n\t- preferred-term:: Token Economics\n\t- source-domain:: bc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Token Economics (Tokenomics) is the study and design of economic models and incentive mechanisms surrounding digital tokens on blockchain networks. It encompasses token supply dynamics, distribution mechanisms, staking rewards, governance rights, and the economic incentives that drive participant behaviour within decentralised ecosystems.\n\t- owl:class:: bc:TokenEconomics\n\t- belongsToDomain:: [[Blockchain Technology]]\n\t- #### Relationships\n\t  id:: token-economics-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Entity]]\n\t\t- is-parent-of:: [[Token]]\n\t\t- is-parent-of:: [[Staking Rewards]]\n\t\t- is-parent-of:: [[Governance Token]]\n\t\t- related-to:: [[Decentralized Finance]]",
   "backlinks": [
     "Digital Economy",
-    "Blockchain Governance",
-    "Loyalty Token"
+    "Loyalty Token",
+    "Blockchain Governance"
   ],
   "wiki_links": [
     "Blockchain Entity",
-    "Staking Rewards",
     "Blockchain Technology",
     "Token",
+    "Decentralized Finance",
     "Governance Token",
-    "Decentralized Finance"
+    "Staking Rewards"
   ],
   "ontology": {
     "term_id": "BC-0601",

@@ -3,24 +3,24 @@
   "title": "Cryptographic Keys",
   "content": "- ### OntologyBlock\n  id:: cryptographic-keys-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-7006\n\t- preferred-term:: Cryptographic Keys\n\t- source-domain:: bc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Strings of data used in cryptographic algorithms to encrypt, decrypt, sign, or verify data, serving as the secret parameters that transform plaintext to ciphertext and vice versa. Keys can be symmetric (single shared key) or asymmetric (public-private key pairs), with security depending on key length, randomness, and proper management.\n\t- maturity:: reviewed\n\t- owl:class:: bc:CryptographicKeys\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[Cryptography]]\n\n## Definition\n\nA cryptographic key is a string of data used to encrypt data (to keep the data secret), decrypt data (to perform the reverse operation), sign data (to ensure authenticity), or verify a signature. The security of any cryptographic system fundamentally depends on the secrecy, randomness, and proper management of its keys.\n\n## Key Types\n\n### By Encryption Method\n\n#### Symmetric Keys\n- Single key used for both encryption and decryption\n- Must be shared securely between all parties\n- Faster and more efficient for bulk data encryption\n- Common algorithms: AES, ChaCha20, 3DES\n- Typical sizes: 128, 192, or 256 bits\n\n#### Asymmetric Keys (Public-Key Pairs)\n- Mathematically related pair: public key and private key\n- Public key encrypts data or verifies signatures\n- Private key decrypts data or creates signatures\n- No need to share private key, reducing exposure risk\n- Common algorithms: RSA, ECC, Ed25519\n- Typical sizes: 2048-4096 bits (RSA), 256-384 bits (ECC)\n\n### By Function\n\n- **Encryption Keys**: Transform plaintext to ciphertext\n- **Decryption Keys**: Reverse the encryption process\n- **Signing Keys**: Create digital signatures (typically private keys)\n- **Verification Keys**: Verify digital signatures (typically public keys)\n- **Master Keys**: Root keys from which other keys are derived\n- **Session Keys**: Temporary keys for single communication session\n- **Key Encryption Keys (KEK)**: Keys used to encrypt other keys\n\n## Security Properties\n\n| Property | Symmetric Keys | Asymmetric Keys |\n|----------|---------------|-----------------|\n| Key Size for Equivalent Security | 128-bit | 2048-bit (RSA) |\n| Speed | Very fast | Slower |\n| Key Distribution | Challenging | Easier (public key shareable) |\n| Use Case | Bulk encryption | Key exchange, signatures |\n\n## Blockchain Applications\n\n- **Private Keys**: Control access to blockchain addresses and funds\n- **Public Keys**: Derive addresses and verify transaction signatures\n- **HD Wallet Keys**: Hierarchically derived from master seed\n- **Multi-sig Keys**: Multiple keys required for transaction authorization\n\n## Key Generation Requirements\n\n- High-entropy random number source (CSPRNG)\n- Sufficient key length for target security level\n- Algorithm-specific generation procedures\n- Protection against side-channel leakage during generation\n\n## Hybrid Encryption\n\nModern systems often combine both key types:\n1. Asymmetric encryption exchanges a symmetric session key\n2. Symmetric encryption handles bulk data (faster)\n3. Example: TLS/SSL in HTTPS communications\n\n## Relationships\n- managed-by:: [[Cryptographic Key Management]]\n- generated-by:: [[Random Number Generation]]\n- derived-by:: [[Key Derivation Function]]\n- used-in:: [[Symmetric Encryption]]\n- used-in:: [[Asymmetric Encryption]]\n- enables:: [[Digital Signature]]\n- is-subclass-of:: [[Cryptography]]\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched with key type details\n- **References**: 9 pages reference this concept\n\n#cryptography #keys #encryption #public-key #private-key #blockchain-security",
   "backlinks": [
-    "Digital Certificate",
-    "Decentralized Identity (DID)",
-    "NFT Wrapping",
-    "Cryptographic Key Management",
-    "Identity Graph",
     "Federated Credential Exchange",
+    "Decentralized Identity (DID)",
+    "Cryptographic Key Management",
     "Tokenization",
     "Digital Identity Management",
-    "Data Protection"
+    "Digital Certificate",
+    "Data Protection",
+    "NFT Wrapping",
+    "Identity Graph"
   ],
   "wiki_links": [
     "Asymmetric Encryption",
-    "Cryptography",
     "Random Number Generation",
-    "Key Derivation Function",
     "Cryptographic Key Management",
+    "Key Derivation Function",
     "Digital Signature",
-    "Symmetric Encryption"
+    "Symmetric Encryption",
+    "Cryptography"
   ],
   "ontology": {
     "term_id": "BC-7006",

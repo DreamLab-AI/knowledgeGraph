@@ -3,17 +3,17 @@
   "title": "Virtual Objects",
   "content": "- ### OntologyBlock\n  id:: virtual-objects-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10135\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Objects\n\t- status:: active\n\t- definition:: Digital 3D assets existing within virtual environments that users can interact with, own, trade, and customize, including avatars, wearables, furniture, vehicles, and environmental elements, often represented as NFTs for verifiable ownership in blockchain-based metaverses.\n\t- owl:class:: mv:VirtualObjects\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Digital Asset]]\n\t\t- related-to:: [[NFT]]\n\t\t- related-to:: [[3D Asset]]\n\t\t- related-to:: [[Virtual Economy]]\n\t  id:: virtual-objects-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual objects are 3D digital assets in metaverse environments that can be owned, traded, and interacted with. NFT technology enables verifiable ownership of unique items. Asset types include avatars, wearables, environmental props, and virtual real estate decorations. The convergence of spatial computing with blockchain creates new opportunities for digital asset markets.\n- ## Technical Details\n\t- ### Object Categories\n\t\t- **Avatars**: Customizable user representations\n\t\t- **Wearables**: Virtual clothing and accessories\n\t\t- **Environmental Assets**: Scenery, props, and decorations\n\t\t- **Functional Objects**: Interactive tools and vehicles\n\t- ### Ownership Technologies\n\t\t- NFT smart contracts for provenance\n\t\t- Blockchain-recorded transaction history\n\t\t- Cross-platform asset portability\n\t\t- Interoperable standards (glTF, VRM)\n\t- ### Creation Methods\n\t\t- Manual 3D modeling and texturing\n\t\t- 3D scanning and photogrammetry\n\t\t- AI-generated content\n\t\t- User-created in-platform tools\n- ## Applications\n\t- Avatar customization and personalization\n\t- Virtual space decoration\n\t- Gaming items and equipment\n\t- Digital collectibles and art\n\t- Brand merchandise and promotional items",
   "backlinks": [
-    "Virtual Model",
-    "Symbolic Object Library",
     "Mixed Reality (MR)",
-    "Virtual Object Pose"
+    "Virtual Object Pose",
+    "Virtual Model",
+    "Symbolic Object Library"
   ],
   "wiki_links": [
+    "3D Asset",
+    "Digital Asset",
     "metaverse",
     "Virtual Economy",
-    "3D Asset",
-    "NFT",
-    "Digital Asset"
+    "NFT"
   ],
   "ontology": {
     "term_id": "MV-10135",

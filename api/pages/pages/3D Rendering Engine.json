@@ -3,27 +3,27 @@
   "title": "3D Rendering Engine",
   "content": "- ### OntologyBlock\n  id:: 3d-rendering-engine-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7009\n\t- preferred-term:: 3D Rendering Engine\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A 3D rendering engine is software that converts three-dimensional geometric data into two-dimensional images through processes including lighting calculation, texture mapping, and rasterisation. In the context of metaverse and XR technologies, rendering engines power real-time visualisation of immersive virtual environments, enabling stereoscopic displays, spatial audio integration, and motion-to-photon latency optimisation essential for presence and embodiment in virtual spaces.\n\t- maturity:: active\n\t- owl:class:: ngm:3dRenderingEngine\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[Metaverse]]\n\n### Relationships\n- is-subclass-of:: [[Computer Graphics]]\n- related-to:: [[Virtual Reality]], [[Augmented Reality]], [[Game Development]], [[Digital Twin]]\n- enables:: [[Immersive Experiences]], [[Real-time Visualisation]], [[XR Applications]]\n- used-by:: [[Unity]], [[Unreal Engine]], [[Blender]]\n\n## Features\n- **Real-time Rendering**: Processes geometry, lighting, and textures at frame rates suitable for interactive VR/AR (90Hz+)\n- **Stereoscopic Output**: Generates separate views for left and right eyes to create depth perception\n- **Foveated Rendering**: Optimises performance by rendering highest detail only where the user is looking\n- **Physics Integration**: Couples with physics engines for realistic object behaviour and collision detection\n- **Shader Systems**: Programmable graphics pipelines for materials, effects, and post-processing\n- **Level of Detail (LOD)**: Dynamically adjusts geometric complexity based on viewing distance\n- **Motion-to-Photon Latency**: Minimises delay between user movement and visual update (target <20ms)\n\n## Use Cases\n- **Metaverse Environments**: Rendering persistent virtual worlds for social interaction and commerce\n- **VR Gaming**: Powering immersive game experiences with high visual fidelity\n- **Industrial Digital Twins**: Visualising manufacturing processes and equipment in real-time\n- **Architectural Visualisation**: Creating walkthrough experiences of building designs\n- **Training Simulations**: Rendering realistic scenarios for education and skills development\n- **AR Overlays**: Compositing 3D content onto real-world camera feeds\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from stub with 2025 research\n- **References**: 8 pages reference this concept",
   "backlinks": [
-    "Cultural Heritage XR Experience",
-    "Virtual World",
-    "Virtual Performance Space",
-    "Avatar System",
     "Education Metaverse",
     "Tourism Metaverse",
-    "Avatar"
+    "Virtual World",
+    "Avatar System",
+    "Avatar",
+    "Cultural Heritage XR Experience",
+    "Virtual Performance Space"
   ],
   "wiki_links": [
-    "Metaverse",
-    "Immersive Experiences",
-    "Blender",
-    "Computer Graphics",
-    "Unreal Engine",
-    "Virtual Reality",
-    "Real-time Visualisation",
-    "XR Applications",
-    "Digital Twin",
-    "Unity",
     "Game Development",
-    "Augmented Reality"
+    "Immersive Experiences",
+    "XR Applications",
+    "Blender",
+    "Unreal Engine",
+    "Augmented Reality",
+    "Digital Twin",
+    "Real-time Visualisation",
+    "Computer Graphics",
+    "Unity",
+    "Metaverse",
+    "Virtual Reality"
   ],
   "ontology": {
     "term_id": "NGM-7009",

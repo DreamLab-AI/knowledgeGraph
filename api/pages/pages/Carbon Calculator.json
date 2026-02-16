@@ -3,21 +3,21 @@
   "title": "Carbon Calculator",
   "content": "- ### OntologyBlock\n  id:: carbon-calculator-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9808\n\t- source-domain:: mv\n\t- preferred-term:: Carbon Calculator\n\t- definition:: A digital tool or software application that estimates greenhouse gas emissions from activities such as energy consumption, transportation, and production by applying standardized emission factors to user-provided data, enabling individuals and organizations to quantify and understand their carbon footprint.\n\t- status:: active\n\t- owl:class:: mv:CarbonCalculator\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: carbon-calculator-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Sustainability Tool]]\n\t\t- enables:: [[Emissions Estimation]], [[Footprint Awareness]], [[Reduction Planning]]\n\t\t- requires:: [[Emission Factors]], [[Activity Data]], [[Calculation Methodology]]\n\t\t- related-to:: [[Carbon Accounting]], [[Carbon Footprint Assessment]], [[GHG Protocol]]\n- ## Technical Details\n\t- **Calculation Categories**:\n\t\t- Home energy (electricity, heating, cooling)\n\t\t- Transportation (vehicles, flights, public transit)\n\t\t- Waste and recycling\n\t\t- Product lifecycle emissions\n\t\t- Supply chain activities\n\t- **Data Sources**:\n\t\t- UK DESNZ emission factors (2024 factors)\n\t\t- EPA emission data\n\t\t- GHG Protocol databases\n\t\t- 80+ validated scientific sources\n\t- **Platform Types**:\n\t\t- **Individual Calculators**: EPA, CarbonFootprint.com, Conservation.org\n\t\t- **Enterprise APIs**: Climatiq (2024 \"Cool Vendor\"), Workiva Carbon\n\t\t- **Sector-Specific**: Cool Farm Tool (agriculture), CHSB (hospitality)\n\t\t- **Template-Based**: FIRA calculator with 2024 emission factors\n\t- **Output Standards**: All results expressed in CO2e, compliant with GHG Protocol\n- ## Applications\n\t- Personal carbon footprint awareness\n\t- Corporate Scope 1+2+3 calculations\n\t- Travel emissions estimation\n\t- Product carbon footprint assessment\n\t- Offset requirement determination",
   "backlinks": [
-    "Environmental Impact Metric",
-    "Carbon Accounting"
+    "Carbon Accounting",
+    "Environmental Impact Metric"
   ],
   "wiki_links": [
-    "Sustainability Tool",
-    "Emission Factors",
     "Footprint Awareness",
-    "GHG Protocol",
-    "Carbon Accounting",
     "metaverse",
-    "Reduction Planning",
-    "Emissions Estimation",
-    "Activity Data",
     "Calculation Methodology",
-    "Carbon Footprint Assessment"
+    "Emission Factors",
+    "GHG Protocol",
+    "Sustainability Tool",
+    "Carbon Footprint Assessment",
+    "Emissions Estimation",
+    "Reduction Planning",
+    "Carbon Accounting",
+    "Activity Data"
   ],
   "ontology": {
     "term_id": "MV-9808",

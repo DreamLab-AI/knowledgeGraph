@@ -3,8 +3,8 @@
   "title": "Revenue Distribution",
   "content": "- ### OntologyBlock\n  id:: mv9678-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9678\n\t- preferred-term:: Revenue Distribution\n\t- source-domain:: mv\n\t- owl:class:: mv:RevenueDistribution\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Revenue Distribution is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nRevenue Distribution represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Transparent Revenue Sharing",
-    "Digital Rights Management (Extended)"
+    "Digital Rights Management (Extended)",
+    "Transparent Revenue Sharing"
   ],
   "wiki_links": [
     "owl:Thing"

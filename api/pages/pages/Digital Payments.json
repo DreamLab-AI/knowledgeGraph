@@ -5,21 +5,21 @@
   "backlinks": [
     "Central Bank Digital Currency",
     "Digital Economy",
-    "Central Bank Digital Currency (CBDC)",
-    "Digital Currency"
+    "Digital Currency",
+    "Central Bank Digital Currency (CBDC)"
   ],
   "wiki_links": [
-    "Cryptocurrency",
-    "Payment Processor",
-    "Digital Wallet",
-    "metaverse",
-    "Network Infrastructure",
-    "Cross-Border Transfer",
     "E-Commerce",
     "Virtual Purchases",
-    "CBDC",
+    "Network Infrastructure",
+    "metaverse",
+    "Cross-Border Transfer",
+    "Financial Transactions",
     "Mobile Payments",
-    "Financial Transactions"
+    "CBDC",
+    "Digital Wallet",
+    "Cryptocurrency",
+    "Payment Processor"
   ],
   "ontology": {
     "term_id": "MV-9865",

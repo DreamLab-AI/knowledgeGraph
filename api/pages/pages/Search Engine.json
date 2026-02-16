@@ -3,18 +3,18 @@
   "title": "Search Engine",
   "content": "- ### OntologyBlock\n  id:: search-engine-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10030\n\t- source-domain:: mv\n\t- preferred-term:: Search Engine\n\t- status:: active\n\t- definition:: Software systems that crawl, index, and retrieve digital content based on user queries, using algorithms for relevance ranking, natural language processing, and increasingly semantic understanding to connect users with metaverse assets and experiences.\n\t- owl:class:: mv:SearchEngine\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: search-engine-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Information Retrieval]]\n\t\t- related-to:: [[Search Index]]\n\t\t- related-to:: [[Ranking Algorithms]]\n\t\t- related-to:: [[Web Crawling]]\n\t\t- enables:: [[Content Discovery]]\n\t- #### Core Components\n\t  collapsed:: true\n\t\t- Web crawler for content collection\n\t\t- Inverted index data structure\n\t\t- Query processing and parsing\n\t\t- Relevance ranking algorithms\n\t\t- Results presentation interface\n\t- #### Modern Technologies\n\t  collapsed:: true\n\t\t- Elasticsearch distributed search\n\t\t- Vector search for semantic matching\n\t\t- Large language model integration\n\t\t- Retrieval-augmented generation (RAG)\n\t\t- Real-time search capabilities",
   "backlinks": [
+    "Search Interface",
+    "Collective Memory Archive",
     "Discovery Layer",
     "Search Index",
-    "Collective Memory Archive",
-    "Search Interface",
     "Search Discovery"
   ],
   "wiki_links": [
-    "Search Index",
     "metaverse",
-    "Web Crawling",
+    "Search Index",
     "Information Retrieval",
     "Ranking Algorithms",
+    "Web Crawling",
     "Content Discovery"
   ],
   "ontology": {

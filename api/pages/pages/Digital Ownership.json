@@ -3,25 +3,25 @@
   "title": "Digital Ownership",
   "content": "- ### OntologyBlock\n  id:: digital-ownership-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9863\n\t- source-domain:: mv\n\t- preferred-term:: Digital Ownership\n\t- definition:: The cryptographically verified right to possess, control, and transfer digital assets including NFTs, virtual real estate, in-game items, and tokenized content, established through blockchain technology and smart contracts that provide immutable proof of authenticity and provenance within metaverse economies.\n\t- status:: active\n\t- owl:class:: mv:DigitalOwnership\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-ownership-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Property Rights]]\n\t\t- enables:: [[Asset Transfer]], [[Provenance Tracking]], [[Creator Royalties]]\n\t\t- requires:: [[Blockchain Network]], [[Smart Contracts]], [[Digital Wallet]]\n\t\t- related-to:: [[NFT]], [[Token Standards]], [[Virtual Real Estate]]\n- ## Technical Details\n\t- **Ownership Mechanisms**:\n\t\t- NFTs: Unique, indivisible tokens representing ownership\n\t\t- Smart contracts: Self-executing ownership transfer rules\n\t\t- Token standards: ERC-721, ERC-1155 for asset representation\n\t\t- Immutable ledger: Permanent transaction history\n\t- **Asset Types**:\n\t\t- Digital art and collectibles\n\t\t- Virtual real estate and land parcels\n\t\t- In-game items, avatars, and accessories\n\t\t- Tokenized real-world assets (RWAs)\n\t- **2024-2025 Developments**:\n\t\t- December 2024: $877M NFT sales (fifth-best month of year)\n\t\t- RWA NFTs enabling fractional real estate ownership\n\t\t- Industrial digital twins minted as NFTs for lifecycle tracking\n\t\t- Cross-platform asset interoperability improving\n\t- **Legal Considerations**: NFT ownership does not inherently grant copyright or IP rights over associated content\n- ## Applications\n\t- Metaverse virtual property ownership\n\t- Gaming asset marketplaces\n\t- Creator royalty automation\n\t- Supply chain provenance\n\t- Fractional investment platforms",
   "backlinks": [
-    "Non-Fungible Token (NFT)",
     "Crypto Token",
     "Virtual Property Right",
+    "Digital Asset Ecosystem",
+    "Non-Fungible Token (NFT)",
     "Metaverse",
-    "Digital Asset",
-    "Digital Asset Ecosystem"
+    "Digital Asset"
   ],
   "wiki_links": [
-    "Smart Contracts",
+    "Provenance Tracking",
     "Asset Transfer",
     "Creator Royalties",
-    "Digital Wallet",
     "metaverse",
-    "Blockchain Network",
-    "Provenance Tracking",
-    "Property Rights",
-    "Token Standards",
+    "Smart Contracts",
     "Virtual Real Estate",
-    "NFT"
+    "Digital Wallet",
+    "Property Rights",
+    "NFT",
+    "Blockchain Network",
+    "Token Standards"
   ],
   "ontology": {
     "term_id": "MV-9863",

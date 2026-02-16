@@ -3,19 +3,19 @@
   "title": "ComputerVision",
   "content": "- ### OntologyBlock\n  id:: computervision-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7011\n\t- preferred-term:: ComputerVision\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Computer vision is a subfield of artificial intelligence that enables machines to interpret and understand visual information from images and videos, using machine learning and neural networks to perform tasks like object detection, image classification, and scene analysis that replicate human visual perception. The field encompasses techniques for processing grid-like data through convolutional neural networks and vision transformers, with applications spanning autonomous vehicles, medical imaging, retail automation, and agricultural monitoring.\n\t- maturity:: reviewed\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- owl:class:: ngm:Computervision\n\t- owl:role:: Concept\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]\n- has-subclass:: [[ComputerVisionTask]]\n- related-to:: [[MachineLearning]]\n- related-to:: [[NeuralNetworkArchitecture]]\n- related-to:: [[Deep Learning]]\n\n### Key Technologies\n- **Vision Transformers (ViTs)**: Market projected to grow from USD 280.75 million (2024) to USD 2,783.66 million by 2032\n- **Self-Supervised Learning**: Addresses challenges in acquiring labeled datasets\n- **Edge Computing**: Moving data processing closer to source, market projected at USD 110.6 billion by 2029\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from stub with technical definition\n- **References**: 8 pages reference this concept",
   "backlinks": [
-    "robotics-core-concepts",
-    "RobotLearning",
-    "AutonomousRobot",
-    "ComputerVisionTask",
     "RoboticsDomain",
-    "ManipulatorArm"
+    "RobotLearning",
+    "robotics-core-concepts",
+    "AutonomousRobot",
+    "ManipulatorArm",
+    "ComputerVisionTask"
   ],
   "wiki_links": [
     "NeuralNetworkArchitecture",
     "MachineLearning",
+    "ComputerVisionTask",
     "Deep Learning",
-    "Artificial Intelligence",
-    "ComputerVisionTask"
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "NGM-7011",

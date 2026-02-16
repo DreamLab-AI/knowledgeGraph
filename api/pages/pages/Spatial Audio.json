@@ -3,24 +3,24 @@
   "title": "Spatial Audio",
   "content": "- ### OntologyBlock\n  id:: spatial-audio-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10054\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Audio\n\t- status:: active\n\t- definition:: Three-dimensional sound technology that uses head-related transfer functions (HRTF) and object-based mixing to position audio sources in 3D space around the listener, creating immersive auditory experiences that replicate natural sound perception.\n\t- owl:class:: mv:SpatialAudio\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: spatial-audio-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Audio Technology]]\n\t\t- related-to:: [[Immersive Audio]]\n\t\t- related-to:: [[Binaural Audio]]\n\t\t- related-to:: [[VR Audio]]\n\t\t- enables:: [[Immersive Experiences]]\n\t- #### Formats and Standards\n\t  collapsed:: true\n\t\t- Dolby Atmos for cinema and music\n\t\t- DTS:X for surround sound\n\t\t- Sony 360 Reality Audio\n\t\t- MPEG-H audio standard\n\t\t- IVAS codec launched June 2024 by 3GPP\n\t- #### Applications\n\t  collapsed:: true\n\t\t- Music production with 3D instrument placement\n\t\t- Film and cinema immersive sound design\n\t\t- Gaming for enemy location and atmosphere\n\t\t- Virtual reality presence enhancement\n\t\t- Integration with Logic Pro and Ableton Live",
   "backlinks": [
-    "Spatial Computing Layer",
-    "Feedback Mechanism",
-    "Virtual Performance Space",
-    "Spatial Computing",
-    "XR Accessibility Guideline",
     "Education Metaverse",
-    "Digital Signal Processing",
     "Tourism Metaverse",
+    "Spatial Computing Layer",
+    "Spatial Computing",
+    "Feedback Mechanism",
+    "Digital Signal Processing",
     "Immersive Communication",
-    "Procedural Audio Generator"
+    "Procedural Audio Generator",
+    "XR Accessibility Guideline",
+    "Virtual Performance Space"
   ],
   "wiki_links": [
-    "Immersive Experiences",
-    "Binaural Audio",
-    "metaverse",
-    "Audio Technology",
     "VR Audio",
-    "Immersive Audio"
+    "Binaural Audio",
+    "Immersive Experiences",
+    "metaverse",
+    "Immersive Audio",
+    "Audio Technology"
   ],
   "ontology": {
     "term_id": "MV-10054",

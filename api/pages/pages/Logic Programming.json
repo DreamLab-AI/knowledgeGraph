@@ -3,15 +3,15 @@
   "title": "Logic Programming",
   "content": "- ### OntologyBlock\n  id:: AI-9003\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9003\n\t- source-domain:: ai\n\t- preferred-term:: Logic Programming\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Programming paradigm based on formal logic, where programs are expressed as sets of logical statements and inference rules.\n\t- source:: [[Academic AI Research]], [[Prolog]]\n\t- maturity:: mature\n\t- owl:class:: ai:LogicProgramming\n\t- owl:role:: Process\n\t- belongsToDomain:: [[ArtificialIntelligenceDomain]]\n\t- isSubclassOf:: [[Symbolic AI]]\n\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]",
   "backlinks": [
-    "STRIPS",
-    "Symbolic AI"
+    "Symbolic AI",
+    "STRIPS"
   ],
   "wiki_links": [
-    "Prolog",
-    "Symbolic AI",
-    "Artificial Intelligence",
+    "ArtificialIntelligenceDomain",
     "Academic AI Research",
-    "ArtificialIntelligenceDomain"
+    "Symbolic AI",
+    "Prolog",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-9003",
