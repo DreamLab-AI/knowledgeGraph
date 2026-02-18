@@ -7,12 +7,12 @@
   ],
   "wiki_links": [
     "STRIPS",
-    "Knowledge Representation",
-    "Planning and Scheduling",
     "Formal Methods",
+    "Autonomous Systems",
+    "Knowledge Representation",
     "Artificial Intelligence",
-    "Search Algorithms",
-    "Autonomous Systems"
+    "Planning and Scheduling",
+    "Search Algorithms"
   ],
   "ontology": {
     "term_id": "AI-1008",

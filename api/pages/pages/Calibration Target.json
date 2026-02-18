@@ -8,16 +8,16 @@
     "Camera Parameters"
   ],
   "wiki_links": [
-    "Flatness Control",
-    "Color Accuracy",
     "Lens Distortion Correction",
-    "Camera Parameters",
+    "Flatness Control",
+    "Camera Calibration",
+    "Photogrammetry",
     "Computer Vision",
     "metaverse",
-    "Pattern Definition",
-    "Photogrammetry",
     "Reference Standard",
-    "Camera Calibration",
+    "Color Accuracy",
+    "Camera Parameters",
+    "Pattern Definition",
     "Precision Manufacturing"
   ],
   "ontology": {

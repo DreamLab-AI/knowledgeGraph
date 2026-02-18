@@ -6,11 +6,11 @@
     "User Consent Token"
   ],
   "wiki_links": [
-    "metaverse",
     "Privacy Framework",
-    "User Data Autonomy",
     "Data Protection Regulation",
-    "Gdpr Article45"
+    "Gdpr Article45",
+    "metaverse",
+    "User Data Autonomy"
   ],
   "ontology": {
     "term_id": "MV-9912",

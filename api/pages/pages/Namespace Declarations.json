@@ -8,10 +8,10 @@
   "wiki_links": [
     "Semantic Web",
     "Semantic Web Standards",
-    "metaverse",
-    "RDF",
     "Ontology Interoperability",
-    "XML"
+    "XML",
+    "metaverse",
+    "RDF"
   ],
   "ontology": {
     "term_id": "MV-9977",

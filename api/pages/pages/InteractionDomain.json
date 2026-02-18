@@ -38,22 +38,22 @@
     "XR Accessibility Guideline"
   ],
   "wiki_links": [
-    "VoiceInteraction",
-    "HumanComputerInteraction",
-    "GestureRecognition",
     "NaturalLanguageInterface",
-    "HCIO",
-    "UserInterfaceDesign",
-    "AdaptiveInterfaces",
     "HapticInteraction",
+    "GestureRecognition",
+    "VoiceInteraction",
+    "UserExperience",
+    "HumanComputerInteraction",
     "HCI-ON",
-    "UserModeling",
-    "TechnologyDomain",
+    "HCIO",
     "UXON",
     "PervasiveComputing",
-    "UserExperience",
+    "UserModeling",
     "AccessibilityDomain",
-    "InteractionPatterns"
+    "TechnologyDomain",
+    "AdaptiveInterfaces",
+    "InteractionPatterns",
+    "UserInterfaceDesign"
   ],
   "ontology": {
     "term_id": "AI-7010",

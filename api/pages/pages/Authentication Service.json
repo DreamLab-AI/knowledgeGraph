@@ -15,15 +15,15 @@
     "Digital Ontology Repository"
   ],
   "wiki_links": [
-    "Single Sign-On",
+    "Access Control",
     "Authorisation",
     "Session Management",
-    "Cross-Platform Identity",
-    "Access Control",
     "Credential Validation",
+    "Cross-Platform Identity",
     "Core Technology",
     "Identity Management",
     "Identity Verification",
+    "Single Sign-On",
     "Security Service"
   ],
   "ontology": {

@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: vrm-format-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10164\n\t- source-domain:: mv\n\t- preferred-term:: VRM Format\n\t- status:: active\n\t- definition:: An open file format standard for 3D humanoid avatars built on glTF, designed for cross-platform interoperability in VR, AR, and metaverse applications, incorporating standardized rigging, facial expressions, gaze controls, and licensing metadata to enable seamless avatar use across different virtual environments.\n\t- owl:class:: mv:VRMFormat\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[3D File Format]]\n\t\t- related-to:: [[Avatar]]\n\t\t- related-to:: [[glTF]]\n\t\t- related-to:: [[Interoperability]]\n\t  id:: vrm-format-relationships\n\t  collapsed:: true\n- ## Overview\n\t- VRM is a platform-independent 3D avatar standard proposed by the VRM Consortium for metaverse interoperability. In October 2024, the VRM Consortium and Khronos Group announced collaboration to advance VRM as official glTF extensions. First released in Japan in 2018, VRM supports applications including VirtualCast, VRoid Studio, and cluster. Platforms like Decentraland, Hyperfy, and OnCyber have adopted VRM for avatar portability.\n- ## Technical Details\n\t- ### Format Specifications\n\t\t- **Base Format**: glTF with humanoid avatar extensions\n\t\t- **Facial Expressions**: Standardized blend shapes and controls\n\t\t- **Gaze Settings**: First-person avatar control information\n\t\t- **Rigging**: Consistent bone structure across platforms\n\t- ### Metadata Support\n\t\t- Title and author attribution\n\t\t- Creative Commons licensing options\n\t\t- Modification and redistribution rules\n\t\t- Character usage permissions\n\t- ### Khronos Collaboration (2024)\n\t\t- Proposal of VRM as official glTF extensions\n\t\t- International standardization advancement\n\t\t- Industry-wide adoption potential\n\t\t- Global metaverse ecosystem integration\n\t- ### Platform Adoption\n\t\t- VirtualCast metaverse communication\n\t\t- VRoid Studio character creation\n\t\t- cluster metaverse platform\n\t\t- Decentraland, Hyperfy, OnCyber\n- ## Applications\n\t- Cross-platform avatar portability\n\t- VTuber and streaming avatars\n\t- Metaverse identity representation\n\t- VR/AR application characters\n\t- Social VR platform avatars",
   "backlinks": [],
   "wiki_links": [
-    "3D File Format",
-    "metaverse",
-    "Avatar",
     "glTF",
-    "Interoperability"
+    "Interoperability",
+    "metaverse",
+    "3D File Format",
+    "Avatar"
   ],
   "ontology": {
     "term_id": "MV-10164",

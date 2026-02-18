@@ -16,11 +16,11 @@
     "Admittance Control"
   ],
   "wiki_links": [
-    "Performance Metrics",
-    "ArtificialIntelligenceDomain",
-    "Theoretical AI",
     "Empirical Evaluation",
-    "Artificial Intelligence"
+    "Theoretical AI",
+    "Artificial Intelligence",
+    "ArtificialIntelligenceDomain",
+    "Performance Metrics"
   ],
   "ontology": {
     "term_id": "AI-7021",

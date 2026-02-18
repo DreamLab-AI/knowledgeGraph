@@ -5,11 +5,11 @@
   "backlinks": [],
   "wiki_links": [
     "AIGovernancePrinciple",
-    "EthicalFramework",
-    "RegulatoryCompliance",
-    "IEEE P2863",
     "AIEthicsDomain",
-    "ConceptualLayer"
+    "IEEE P2863",
+    "ConceptualLayer",
+    "EthicalFramework",
+    "RegulatoryCompliance"
   ],
   "ontology": {
     "term_id": "AI-0376",

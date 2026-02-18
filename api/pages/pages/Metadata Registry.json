@@ -9,11 +9,11 @@
     "Data Integration Interface"
   ],
   "wiki_links": [
-    "metaverse",
-    "Metadata Standards",
     "Data Governance",
-    "Data Cataloguing",
-    "Enterprise Data Consistency"
+    "Enterprise Data Consistency",
+    "Metadata Standards",
+    "metaverse",
+    "Data Cataloguing"
   ],
   "ontology": {
     "term_id": "MV-9960",

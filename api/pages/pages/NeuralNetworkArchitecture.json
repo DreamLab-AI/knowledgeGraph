@@ -9,10 +9,10 @@
     "ComputerVisionTask"
   ],
   "wiki_links": [
-    "MachineLearning",
     "TrainingMethod",
-    "Deep Learning",
     "ModelArchitecture",
+    "MachineLearning",
+    "Deep Learning",
     "Artificial Intelligence"
   ],
   "ontology": {

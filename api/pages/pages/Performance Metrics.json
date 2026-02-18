@@ -14,11 +14,11 @@
   "wiki_links": [
     "F1 Score",
     "AUC",
-    "Recall",
+    "Precision",
+    "Artificial Intelligence",
     "Accuracy",
     "Machine Learning",
-    "Precision",
-    "Artificial Intelligence"
+    "Recall"
   ],
   "ontology": {
     "term_id": "AI-0602",

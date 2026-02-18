@@ -6,14 +6,14 @@
     "Cultural Heritage XR Experience"
   ],
   "wiki_links": [
-    "metaverse",
-    "Historical Research",
-    "Educational Experiences",
-    "Virtual Tourism",
     "Digital Heritage",
+    "Virtual Tourism",
     "3D Modeling",
-    "Heritage Preservation",
-    "Photogrammetry"
+    "Photogrammetry",
+    "Historical Research",
+    "metaverse",
+    "Educational Experiences",
+    "Heritage Preservation"
   ],
   "ontology": {
     "term_id": "MV-9776",
