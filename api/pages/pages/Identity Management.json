@@ -34,12 +34,12 @@
     "User Agreement Compliance"
   ],
   "wiki_links": [
-    "Self-Sovereign Identity",
-    "Cryptography",
-    "Privacy",
     "Verifiable Credentials",
-    "Blockchain",
+    "Cryptography",
+    "Self-Sovereign Identity",
     "KYC/AML Requirements",
+    "Privacy",
+    "Blockchain",
     "Compliance Verification"
   ],
   "ontology": {

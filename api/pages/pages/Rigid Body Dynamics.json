@@ -7,11 +7,11 @@
     "Physics-Based Animation"
   ],
   "wiki_links": [
-    "Physics Engine",
-    "Physics Simulation",
-    "MetaverseDomain",
     "Game Physics",
-    "Metaverse"
+    "Physics Simulation",
+    "Physics Engine",
+    "Metaverse",
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "MV-9004",

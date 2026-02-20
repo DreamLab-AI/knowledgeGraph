@@ -7,12 +7,12 @@
     "Social Vr"
   ],
   "wiki_links": [
-    "VR Meeting",
     "Telecollaboration",
     "Telepresence",
+    "Spatial Computing",
     "Spatial Audio",
-    "AR Collaboration",
-    "Spatial Computing"
+    "VR Meeting",
+    "AR Collaboration"
   ],
   "ontology": {
     "term_id": "TC-0605",

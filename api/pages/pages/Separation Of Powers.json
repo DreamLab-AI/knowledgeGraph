@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: separation-of-powers-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10038\n\t- source-domain:: mv\n\t- preferred-term:: Separation Of Powers\n\t- status:: active\n\t- definition:: Governance design patterns in decentralized autonomous organizations that distribute authority across distinct functional roles, preventing concentration of control through checks and balances between proposal creation, voting, execution, and oversight functions.\n\t- owl:class:: mv:SeparationOfPowers\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: separation-of-powers-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[DAO Governance]]\n\t\t- related-to:: [[Checks And Balances]]\n\t\t- related-to:: [[Multi Sig Governance]]\n\t\t- related-to:: [[Governance Token]]\n\t\t- enables:: [[Decentralized Control]]\n\t- #### Governance Roles\n\t  collapsed:: true\n\t\t- Proposal creators (legislative function)\n\t\t- Token voters (decision function)\n\t\t- Multi-sig executors (executive function)\n\t\t- Guardian councils (oversight function)\n\t\t- Treasury managers (financial function)\n\t- #### Implementation Patterns\n\t  collapsed:: true\n\t\t- Time-locked execution delays\n\t\t- Multi-sig approval requirements\n\t\t- Veto mechanisms for guardians\n\t\t- Emergency pause capabilities\n\t\t- Transparent audit trails",
   "backlinks": [],
   "wiki_links": [
-    "metaverse",
     "Decentralized Control",
-    "Checks And Balances",
+    "metaverse",
     "Governance Token",
     "Multi Sig Governance",
+    "Checks And Balances",
     "DAO Governance"
   ],
   "ontology": {

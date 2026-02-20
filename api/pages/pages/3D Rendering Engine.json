@@ -12,18 +12,18 @@
     "Avatar"
   ],
   "wiki_links": [
-    "Digital Twin",
-    "Game Development",
-    "Augmented Reality",
     "Virtual Reality",
-    "Immersive Experiences",
-    "Unity",
     "Unreal Engine",
-    "Blender",
-    "XR Applications",
-    "Real-time Visualisation",
+    "Computer Graphics",
+    "Digital Twin",
     "Metaverse",
-    "Computer Graphics"
+    "Real-time Visualisation",
+    "XR Applications",
+    "Game Development",
+    "Blender",
+    "Immersive Experiences",
+    "Augmented Reality",
+    "Unity"
   ],
   "ontology": {
     "term_id": "NGM-7009",

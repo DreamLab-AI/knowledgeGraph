@@ -8,17 +8,17 @@
     "Neural 3D Generation"
   ],
   "wiki_links": [
+    "3D Reconstruction",
+    "Computer Vision",
+    "SLAM",
+    "Imaging Parameters",
     "Calibration Target",
     "metaverse",
-    "Optimization Algorithm",
-    "SLAM",
-    "3D Reconstruction",
-    "Imaging Parameters",
     "Photogrammetry",
-    "Computer Vision",
     "Object Measurement",
     "Camera Calibration",
-    "Scene Localization"
+    "Scene Localization",
+    "Optimization Algorithm"
   ],
   "ontology": {
     "term_id": "MV-9806",

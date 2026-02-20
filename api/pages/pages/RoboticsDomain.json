@@ -72,20 +72,20 @@
     "Rescue Robot"
   ],
   "wiki_links": [
+    "MachineLearning",
+    "HumanRobotInteraction",
+    "SensorFusion",
     "AutonomousRobotics",
     "EmbeddedSystems",
     "MotionPlanning",
-    "ControlSystems",
-    "SensorFusion",
-    "MachineLearning",
-    "IEEE1872",
     "IndustrialAutomation",
-    "RobotPerception",
-    "TechnologyDomain",
-    "ArtificialIntelligence",
-    "ComputerVision",
     "IEEE1872.2",
-    "HumanRobotInteraction"
+    "ArtificialIntelligence",
+    "RobotPerception",
+    "IEEE1872",
+    "ControlSystems",
+    "TechnologyDomain",
+    "ComputerVision"
   ],
   "ontology": {
     "term_id": "RB-7001",

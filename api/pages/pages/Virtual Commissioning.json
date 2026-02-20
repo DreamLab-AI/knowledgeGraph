@@ -8,11 +8,11 @@
     "Industrial Metaverse"
   ],
   "wiki_links": [
-    "metaverse",
-    "Manufacturing Simulation",
     "Digital Twin",
+    "metaverse",
     "Industrial Automation",
-    "PLC Programming"
+    "PLC Programming",
+    "Manufacturing Simulation"
   ],
   "ontology": {
     "term_id": "MV-10111",

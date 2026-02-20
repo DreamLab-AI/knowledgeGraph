@@ -21,17 +21,17 @@
     "Digital Goods Registry"
   ],
   "wiki_links": [
-    "Peer-to-Peer Network",
-    "Cryptography",
     "Smart Contracts",
-    "Blockchain Node",
-    "Web3 Infrastructure",
-    "Cross-Chain Bridge",
     "Blockchain Application",
+    "Blockchain Node",
+    "Cryptography",
     "Distributed Systems Infrastructure",
-    "Consensus Mechanism",
+    "Layer 2 Scaling",
+    "Cross-Chain Bridge",
+    "Web3 Infrastructure",
+    "Peer-to-Peer Network",
     "Blockchain",
-    "Layer 2 Scaling"
+    "Consensus Mechanism"
   ],
   "ontology": {
     "term_id": "BC-7003",

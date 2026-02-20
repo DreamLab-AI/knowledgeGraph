@@ -10,10 +10,10 @@
     "Minimax Algorithm"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "Planning and Scheduling",
-    "Pathfinding",
     "Graph Theory",
+    "Planning and Scheduling",
+    "Artificial Intelligence",
+    "Pathfinding",
     "Optimization"
   ],
   "ontology": {

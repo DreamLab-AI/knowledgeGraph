@@ -31,14 +31,14 @@
   ],
   "wiki_links": [
     "Self-Custody",
-    "Cryptographic Security",
-    "Blockchain Network",
-    "Hardware Wallet",
+    "Transaction Signing",
     "Private Key",
+    "Cryptographic Security",
     "DeFi Access",
     "Asset Management",
+    "Hardware Wallet",
     "Web3",
-    "Transaction Signing",
+    "Blockchain Network",
     "Cryptocurrency Storage"
   ],
   "ontology": {
