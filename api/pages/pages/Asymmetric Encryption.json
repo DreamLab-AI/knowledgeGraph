@@ -3,21 +3,21 @@
   "title": "Asymmetric Encryption",
   "content": "- ### OntologyBlock\n  id:: asymmetric-encryption-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- source-domain:: bc\n\t- term-id:: BC-8001\n\t- preferred-term:: Asymmetric Encryption\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A cryptographic system using mathematically related public-private key pairs where the public key encrypts data that only the corresponding private key can decrypt. Asymmetric encryption provides the foundational cryptographic primitive for blockchain identity, digital signatures, and secure communication, enabling trustless verification without pre-shared secrets.\n\t- maturity:: reviewed\n\t- owl:class:: bc:AsymmetricEncryption\n\t- belongsToDomain:: [[Cryptography]]\n\t- belongsToDomain:: [[Blockchain]]\n\t- belongsToDomain:: [[Information Security]]\n\n---\nid: BC-1006\ntitle: Asymmetric Encryption\ntype: ConceptNode\ndomain: Blockchain\ncreated: 2025-11-24\nstatus: active\n---\n\n# Asymmetric Encryption\n\n## Definition\n- Cryptographic system using mathematically related public and private key pairs\n- Public key encrypts data that only corresponding private key can decrypt\n- Foundational primitive for blockchain identity, signatures, and secure communication\n\n## Core Components\n- **Public Key**: Openly shared identifier for encryption and signature verification\n- **Private Key**: Secret value for decryption and signature generation\n- **Key Generation**: Algorithm producing mathematically related key pair\n- **Trapdoor Function**: Easy to compute forward, hard to reverse without private key\n\n## Technical Characteristics\n- **Computational Asymmetry**: Encryption easy, decryption requires secret key\n- **Non-Repudiation**: Private key holder cannot deny signed message\n- **Key Distribution**: Public keys shared openly without secure channel\n- **Mathematical Foundation**: Number theory, elliptic curves, lattices\n\n## Common Algorithms\n- **RSA**: Integer factorization-based, 2048-4096 bit keys\n- **ECDSA**: Elliptic Curve Digital Signature Algorithm\n- **EdDSA**: Twisted Edwards curve signatures (Ed25519)\n- **BLS**: Boneh-Lynn-Shacham signature aggregation\n- **Post-Quantum**: Lattice-based, hash-based for quantum resistance\n\n## Blockchain Applications\n- Wallet address derivation from public keys\n- Transaction signing and verification\n- Multi-signature schemes\n- Threshold cryptography\n- Zero-knowledge proof generation\n\n## Key Curves in Blockchain\n- **secp256k1**: Bitcoin, Ethereum signature curve\n- **Ed25519**: High-performance Edwards curve\n- **BLS12-381**: Pairing-friendly curve for advanced protocols\n- **Curve25519**: Key agreement protocol\n\n## Relationships\n- contrasts-with:: [[Symmetric Encryption]]\n- enables:: [[Digital Signature]]\n- uses:: [[Hash Function]]\n- component-of:: [[Public Key Infrastructure]]\n- implements:: [[Elliptic Curve Cryptography]]\n\n## Security Properties\n- **Confidentiality**: Only recipient decrypts\n- **Authentication**: Verify sender identity\n- **Integrity**: Detect message tampering\n- **Non-Repudiation**: Cryptographic proof of authorship\n\n## Performance Characteristics\n- Slower than symmetric encryption (10-1000x)\n- Key operations: signing, verification, key exchange\n- Hardware acceleration (e.g., specialized elliptic curve processors)\n- Trade-off: security vs computational cost\n\n## Blockchain-Specific Considerations\n- Deterministic key derivation (BIP32/BIP44)\n- Address format and checksum schemes\n- Signature malleability prevention\n- Multi-signature coordination\n- Threshold signature schemes\n\n## Key Management\n- Hierarchical deterministic (HD) wallets\n- Mnemonic seed phrase backup (BIP39)\n- Hardware wallet private key isolation\n- Secure enclave storage on mobile devices\n\n## Advantages\n- No pre-shared secret required\n- Enables digital signatures\n- Scalable key distribution\n- Foundation for trustless systems\n\n## Limitations\n- Computationally expensive\n- Larger key sizes than symmetric\n- Vulnerable to quantum attacks (RSA, ECDSA)\n- Complex key management requirements\n\n## Quantum Resistance\n- Current blockchain algorithms vulnerable\n- Migration path to post-quantum cryptography\n- Lattice-based alternatives (CRYSTALS-Dilithium)\n- Hash-based signatures (SPHINCS+)\n\n## Related Concepts\n- [[Digital Signature]]\n- [[Elliptic Curve Cryptography]]\n- [[Hash Function]]\n- [[Key Derivation Function]]\n\n#cryptography #asymmetric-encryption #public-key #blockchain-security\n\n### Relationships\n- is-subclass-of:: [[Blockchain]]",
   "backlinks": [
-    "Key Derivation Function",
-    "Cryptographic Keys",
-    "CryptographicPrimitive",
     "Random Number Generation",
-    "Symmetric Encryption"
+    "Symmetric Encryption",
+    "Key Derivation Function",
+    "CryptographicPrimitive",
+    "Cryptographic Keys"
   ],
   "wiki_links": [
-    "Public Key Infrastructure",
-    "Hash Function",
-    "Information Security",
-    "Digital Signature",
-    "Blockchain",
     "Symmetric Encryption",
     "Cryptography",
+    "Information Security",
+    "Digital Signature",
     "Key Derivation Function",
+    "Hash Function",
+    "Public Key Infrastructure",
+    "Blockchain",
     "Elliptic Curve Cryptography"
   ],
   "ontology": {

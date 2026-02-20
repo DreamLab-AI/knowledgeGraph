@@ -4,20 +4,20 @@
   "content": "- ### OntologyBlock\n  id:: camera-parameters-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9806\n\t- source-domain:: mv\n\t- preferred-term:: Camera Parameters\n\t- definition:: The intrinsic and extrinsic mathematical values that define a camera's optical characteristics and spatial positioning, comprising focal length, optical center, distortion coefficients (intrinsic) and rotation/translation relative to world coordinates (extrinsic), essential for 3D reconstruction and photogrammetry.\n\t- status:: active\n\t- owl:class:: mv:CameraParameters\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: camera-parameters-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Imaging Parameters]]\n\t\t- enables:: [[3D Reconstruction]], [[Object Measurement]], [[Scene Localization]]\n\t\t- requires:: [[Camera Calibration]], [[Calibration Target]], [[Optimization Algorithm]]\n\t\t- related-to:: [[Photogrammetry]], [[Computer Vision]], [[SLAM]]\n- ## Technical Details\n\t- **Intrinsic Parameters** (3x3 Matrix K):\n\t\t- fx, fy: Focal lengths in pixel units\n\t\t- cx, cy: Principal point (optical center) coordinates\n\t\t- s: Skew coefficient (usually zero)\n\t\t- Maps 3D camera coordinates to 2D image coordinates\n\t- **Extrinsic Parameters** (4x4 Matrix):\n\t\t- R: 3x3 rotation matrix\n\t\t- t: 3x1 translation vector\n\t\t- Transforms world coordinates to camera coordinates\n\t- **Camera Matrix**: M = K[R | -RT] combines both for complete projection\n\t- **Lens Distortion** (nonlinear):\n\t\t- Radial distortion: Light bends more at lens edges\n\t\t- Tangential distortion: Lens not perfectly parallel to sensor\n\t- **Calibration Methods**:\n\t\t- Zhang's method (checkerboard patterns)\n\t\t- Homography-based estimation\n\t\t- Bundle adjustment optimization\n- ## Applications\n\t- Autonomous vehicle perception\n\t- Augmented reality overlay alignment\n\t- Robotic vision and navigation\n\t- 3D scanning and reconstruction\n\t- Machine vision inspection systems",
   "backlinks": [
     "Calibration Standards",
-    "Neural 3D Generation",
-    "Calibration Target"
+    "Calibration Target",
+    "Neural 3D Generation"
   ],
   "wiki_links": [
     "Calibration Target",
-    "Imaging Parameters",
+    "metaverse",
     "Optimization Algorithm",
     "SLAM",
-    "Camera Calibration",
+    "3D Reconstruction",
+    "Imaging Parameters",
     "Photogrammetry",
     "Computer Vision",
-    "metaverse",
     "Object Measurement",
-    "3D Reconstruction",
+    "Camera Calibration",
     "Scene Localization"
   ],
   "ontology": {

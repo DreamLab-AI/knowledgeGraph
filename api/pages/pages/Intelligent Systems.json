@@ -3,8 +3,8 @@
   "title": "Intelligent Systems",
   "content": "- ### OntologyBlock\n  id:: mv9638-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9638\n\t- preferred-term:: Intelligent Systems\n\t- source-domain:: mv\n\t- owl:class:: mv:IntelligentSystems\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Intelligent Systems is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nIntelligent Systems represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Context Awareness System",
-    "Context Awareness"
+    "Context Awareness",
+    "Context Awareness System"
   ],
   "wiki_links": [
     "owl:Thing"

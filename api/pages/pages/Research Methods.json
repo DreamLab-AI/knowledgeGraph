@@ -3,8 +3,8 @@
   "title": "Research Methods",
   "content": "- ### OntologyBlock\n  id:: mv9677-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9677\n\t- preferred-term:: Research Methods\n\t- source-domain:: mv\n\t- owl:class:: mv:ResearchMethods\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Research Methods is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nResearch Methods represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "User Research",
-    "Psychological Research"
+    "Psychological Research",
+    "User Research"
   ],
   "wiki_links": [
     "owl:Thing"

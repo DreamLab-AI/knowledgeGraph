@@ -3,18 +3,18 @@
   "title": "Remote Collaboration",
   "content": "- ### OntologyBlock\n  id:: remote-collaboration-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-0603\n\t- preferred-term:: Remote Collaboration\n\t- source-domain:: tc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Remote Collaboration encompasses the tools, platforms, and methodologies that enable distributed teams to work together effectively across geographic distances. This includes collaborative editing systems, shared workspaces, real-time co-creation tools, and asynchronous collaboration platforms that facilitate productive teamwork without physical co-location.\n\t- owl:class:: tc:RemoteCollaboration\n\t- belongsToDomain:: [[Telecollaboration]]\n\t- #### Relationships\n\t  id:: remote-collaboration-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Telecollaboration]]\n\t\t- is-parent-of:: [[Collaborative Editing]]\n\t\t- is-parent-of:: [[Shared Workspace]]\n\t\t- is-parent-of:: [[Real-Time Collaboration]]\n\t\t- related-to:: [[Virtual Meeting]]",
   "backlinks": [
-    "RB-1010-telepresence",
-    "tc-0003-telepresence-robot",
     "Virtual Meeting",
+    "RB-1010-telepresence",
     "Collaborative Learning",
-    "tc-0002-collaborative-document-editing"
+    "tc-0002-collaborative-document-editing",
+    "tc-0003-telepresence-robot"
   ],
   "wiki_links": [
-    "Shared Workspace",
-    "Collaborative Editing",
     "Real-Time Collaboration",
     "Telecollaboration",
-    "Virtual Meeting"
+    "Virtual Meeting",
+    "Collaborative Editing",
+    "Shared Workspace"
   ],
   "ontology": {
     "term_id": "TC-0603",

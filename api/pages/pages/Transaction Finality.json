@@ -7,14 +7,14 @@
     "Probabilistic Finality"
   ],
   "wiki_links": [
-    "Transaction Confirmation Time",
-    "Blockchain",
-    "Probabilistic Finality",
-    "Deterministic Finality",
-    "Consensus Mechanism",
-    "Settlement",
     "Transaction Confirmation",
-    "Transaction"
+    "Deterministic Finality",
+    "Probabilistic Finality",
+    "Transaction Confirmation Time",
+    "Transaction",
+    "Consensus Mechanism",
+    "Blockchain",
+    "Settlement"
   ],
   "ontology": {
     "term_id": "BC-8021",

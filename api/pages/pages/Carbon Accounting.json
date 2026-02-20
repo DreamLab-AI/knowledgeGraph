@@ -3,25 +3,25 @@
   "title": "Carbon Accounting",
   "content": "- ### OntologyBlock\n  id:: carbon-accounting-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9807\n\t- source-domain:: mv\n\t- preferred-term:: Carbon Accounting\n\t- definition:: The systematic process of measuring, recording, and reporting an organization's greenhouse gas emissions across direct operations (Scope 1), purchased energy (Scope 2), and value chain activities (Scope 3), expressed in CO2 equivalent units to quantify climate impact and enable reduction strategies.\n\t- status:: active\n\t- owl:class:: mv:CarbonAccounting\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: carbon-accounting-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Environmental Accounting]]\n\t\t- enables:: [[Emissions Reporting]], [[Climate Action Planning]], [[Regulatory Compliance]]\n\t\t- requires:: [[Data Collection]], [[Emission Factors]], [[Verification Process]]\n\t\t- related-to:: [[Carbon Footprint Assessment]], [[Carbon Calculator]], [[GHG Protocol]]\n- ## Technical Details\n\t- **Emissions Scopes**:\n\t\t- **Scope 1**: Direct emissions from owned sources (vehicles, on-site combustion)\n\t\t- **Scope 2**: Indirect emissions from purchased electricity, steam, heating, cooling\n\t\t- **Scope 3**: Value chain emissions (suppliers, business travel, product use) - typically 80%+ of total\n\t- **Key Standards**:\n\t\t- **GHG Protocol**: Used by 97% of disclosing S&P 500 companies\n\t\t- **ISO 14064**: International GHG accounting standard\n\t\t- **ISSB IFRS S2**: Voluntary reporting standard (mandatory in some countries)\n\t- **Regulatory Landscape (2024)**:\n\t\t- EU CSRD: Mandatory for 50,000+ companies starting 2025\n\t\t- SEC Climate Rule: Scope 1 and 2 disclosure for large US companies (2026)\n\t\t- California SB 253: State-level emissions tracking requirements\n\t- **Measurement Unit**: CO2e (carbon dioxide equivalent) - converts all GHGs using global warming potential\n- ## Applications\n\t- Corporate sustainability reporting\n\t- Regulatory compliance documentation\n\t- Climate target setting and tracking\n\t- Supply chain emissions management\n\t- ESG investor disclosures",
   "backlinks": [
+    "Carbon Calculator",
     "Carbon Footprint Indicator",
-    "Carbon Footprint Assessment",
-    "Carbon Neutrality Verification",
     "Environmental Sustainability Label",
     "Carbon Neutrality Planning",
-    "Carbon Calculator"
+    "Carbon Neutrality Verification",
+    "Carbon Footprint Assessment"
   ],
   "wiki_links": [
-    "Carbon Footprint Assessment",
-    "Verification Process",
-    "Regulatory Compliance",
-    "GHG Protocol",
-    "Environmental Accounting",
-    "Carbon Calculator",
-    "metaverse",
-    "Climate Action Planning",
     "Data Collection",
+    "metaverse",
+    "Carbon Footprint Assessment",
+    "Environmental Accounting",
+    "Emission Factors",
+    "Regulatory Compliance",
     "Emissions Reporting",
-    "Emission Factors"
+    "Verification Process",
+    "GHG Protocol",
+    "Climate Action Planning",
+    "Carbon Calculator"
   ],
   "ontology": {
     "term_id": "MV-9807",

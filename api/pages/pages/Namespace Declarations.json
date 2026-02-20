@@ -6,12 +6,12 @@
     "Metaverse Ontology Schema"
   ],
   "wiki_links": [
-    "Semantic Web",
-    "Semantic Web Standards",
-    "Ontology Interoperability",
-    "XML",
     "metaverse",
-    "RDF"
+    "Semantic Web",
+    "RDF",
+    "XML",
+    "Ontology Interoperability",
+    "Semantic Web Standards"
   ],
   "ontology": {
     "term_id": "MV-9977",

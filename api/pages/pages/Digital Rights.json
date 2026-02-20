@@ -4,22 +4,22 @@
   "content": "- ### OntologyBlock\n  id:: digital-rights-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9868\n\t- source-domain:: mv\n\t- preferred-term:: Digital Rights\n\t- definition:: The human rights and freedoms applicable to digital contexts including privacy, data protection, freedom of expression, access to information, and digital ownership within virtual environments, metaverse platforms, and online spaces, increasingly codified through international frameworks and national legislation.\n\t- status:: active\n\t- owl:class:: mv:DigitalRights\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-rights-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Human Rights]]\n\t\t- enables:: [[Privacy Protection]], [[Data Sovereignty]], [[Digital Freedom]]\n\t\t- requires:: [[Legal Framework]], [[Technical Safeguards]], [[Enforcement Mechanisms]]\n\t\t- related-to:: [[GDPR]], [[Digital Services Act]], [[Data Protection]]\n- ## Technical Details\n\t- **Core Digital Rights**:\n\t\t- Privacy and data protection\n\t\t- Freedom of expression online\n\t\t- Access to digital services\n\t\t- Digital identity ownership\n\t\t- Fair algorithmic treatment\n\t- **Regulatory Frameworks**:\n\t\t- EU GDPR: Personal data protection\n\t\t- Digital Services Act: Platform accountability\n\t\t- AI Act: Algorithmic transparency\n\t\t- eIDAS: Digital identity standards\n\t- **Metaverse Considerations**:\n\t\t- Avatar and identity rights\n\t\t- Virtual property ownership\n\t\t- Immersive content regulation\n\t\t- Cross-platform data portability\n\t- **Enforcement Challenges**: Jurisdictional complexity, anonymity, decentralized platforms\n- ## Applications\n\t- Privacy-preserving technologies\n\t- Content moderation policies\n\t- Digital identity protection\n\t- Algorithmic accountability\n\t- Metaverse governance frameworks",
   "backlinks": [
     "Human Rights",
-    "AI Risks",
     "ETSI_Domain_Ethics_&_Law",
-    "Digital Citizenship"
+    "Digital Citizenship",
+    "AI Risks"
   ],
   "wiki_links": [
-    "Privacy Protection",
-    "Human Rights",
-    "Enforcement Mechanisms",
-    "Data Protection",
-    "Data Sovereignty",
-    "Digital Services Act",
     "metaverse",
+    "Digital Services Act",
+    "Data Sovereignty",
+    "Human Rights",
     "Technical Safeguards",
     "Digital Freedom",
+    "Enforcement Mechanisms",
     "GDPR",
-    "Legal Framework"
+    "Legal Framework",
+    "Data Protection",
+    "Privacy Protection"
   ],
   "ontology": {
     "term_id": "MV-9868",

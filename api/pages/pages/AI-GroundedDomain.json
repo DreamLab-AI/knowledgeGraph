@@ -3,24 +3,24 @@
   "title": "AI-GroundedDomain",
   "content": "- ### OntologyBlock\n  id:: ai-groundeddomain-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-7021\n\t- preferred-term:: AI-GroundedDomain\n\t- source-domain:: ai\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A meta-classification domain for AI concepts that are empirically grounded in operational systems, validated through real-world deployment, and supported by measurable performance data rather than purely theoretical constructs.\n\t- maturity:: stable\n\t- owl:class:: ai:AiGroundedDomain\n\t- owl:role:: Domain\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: ai-groundeddomain-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[ArtificialIntelligenceDomain]]\n\t\t  collapsed:: true\n\t\t  - #### Member Concepts (Inferred by Reasoner)\n\t\t    - Deployed AI System is-member-of AI-GroundedDomain\n\t\t    - Production ML Model is-member-of AI-GroundedDomain\n\t\t    - Validated AI Application is-member-of AI-GroundedDomain\n\t\t    - Benchmarked Algorithm is-member-of AI-GroundedDomain\n\t\t- distinguishes-from:: [[Theoretical AI]] (speculative concepts)\n\t\t- validates-through:: [[Empirical Evaluation]]\n\t\t- requires:: [[Performance Metrics]]\n\n## Definition\n\nThe **AI-Grounded Domain** represents a meta-level classification distinguishing AI concepts that have been empirically validated through real-world implementation from purely theoretical or speculative AI constructs. This domain classification ensures ontological rigour by requiring:\n\n1. **Operational Evidence**: Concepts must be instantiated in functioning systems\n2. **Measurable Performance**: Quantifiable metrics demonstrating capability\n3. **Reproducible Results**: Independent verification of claimed properties\n4. **Deployment History**: Track record in production environments\n\n## Ontological Purpose\n\nThis domain classification serves to:\n- Separate implemented AI capabilities from research aspirations\n- Ground knowledge claims in empirical evidence\n- Enable reasoners to distinguish validated from theoretical concepts\n- Support trust assessment in AI capability claims\n\n## Member Concept Criteria\n\nConcepts classified under AI-GroundedDomain must demonstrate:\n- Deployment in at least one production system\n- Published performance benchmarks\n- Reproducible evaluation methodology\n- Clear operational constraints and limitations\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from stub\n- **Authority Score**: 0.85\n- **References**: 5 pages reference this concept",
   "backlinks": [
+    "AI Game Agent",
+    "Technology Adoption",
     "Active Learning",
+    "Deep Learning",
+    "Admittance Control",
+    "A-Star Algorithm",
     "AI Agent System",
     "Value Transfer",
-    "AI Game Agent",
-    "A-Star Algorithm",
-    "Neural 3D Generation",
-    "Deep Learning",
     "Large language models",
-    "Generative AI",
-    "Technology Adoption",
-    "Admittance Control"
+    "Neural 3D Generation",
+    "Generative AI"
   ],
   "wiki_links": [
+    "Artificial Intelligence",
     "Empirical Evaluation",
     "Theoretical AI",
-    "Artificial Intelligence",
-    "ArtificialIntelligenceDomain",
-    "Performance Metrics"
+    "Performance Metrics",
+    "ArtificialIntelligenceDomain"
   ],
   "ontology": {
     "term_id": "AI-7021",

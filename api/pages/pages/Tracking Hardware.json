@@ -3,9 +3,9 @@
   "title": "Tracking Hardware",
   "content": "- ### OntologyBlock\n  id:: mv9714-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9714\n\t- preferred-term:: Tracking Hardware\n\t- source-domain:: mv\n\t- owl:class:: mv:TrackingHardware\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Tracking Hardware is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nTracking Hardware represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Infrared Light Source",
     "Infrared Camera",
-    "Infrared Illuminator"
+    "Infrared Illuminator",
+    "Infrared Light Source"
   ],
   "wiki_links": [
     "owl:Thing"

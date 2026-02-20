@@ -3,16 +3,16 @@
   "title": "Infrared Illuminator",
   "content": "- ### OntologyBlock\n  id:: infrared-illuminator-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9929\n\t- source-domain:: mv\n\t- preferred-term:: Infrared Illuminator\n\t- status:: active\n\t- owl:class:: mv:InfraredIlluminator\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Light-emitting devices that project infrared wavelengths to enable VR/AR tracking sensors to function in low-light or dark environments, enhancing hand tracking accuracy, controller detection, and spatial awareness for immersive experiences.\n\t- #### Relationships\n\t  id:: infrared-illuminator-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Tracking Hardware]]\n\t\t- related-to:: [[Infrared Camera]]\n\t\t- related-to:: [[Hand Tracking System]]\n\t\t- enables:: [[Dark Environment VR]]\n\n## Technology Overview\n\n### Purpose\n- Provides illumination for tracking sensors\n- Enables VR in low-light conditions\n- Improves hand tracking consistency\n- Enhances controller sensitivity\n- Expands play area capabilities\n\n### How IR Technology Works\n- Infrared light invisible to human eye\n- VR sensors detect IR wavelengths\n- Illuminates tracking markers and hands\n- Enables accurate movement detection\n- 850nm or 940nm wavelength options\n\n## Consumer Products\n\n### ZyberVR 3W U-Shaped IR Light\n- Two brightness levels available\n- 1.5W for 210-430 ft² rooms\n- 3W for 430-540 ft² rooms\n- Compatible with Quest 3, Quest 2\n- Pico 4 and other headsets supported\n\n### KKCOBVR I2 IR Illuminator\n- Weighs only 6 grams\n- 120° field of view coverage\n- Non-destructive contact design\n- Quest 3/3s dedicated adapter\n- Minimal weight balance impact\n\n### NVNV VR IR Light\n- 120° field of view\n- Independent power source\n- 2,000mAh battery capacity\n- Type-C charging port\n- 4 hours operation per charge\n\n## Apple Vision Pro Integration\n\n### Vrvana Technology Heritage\n- IR illuminators built into device\n- Infrared cameras for spatial tracking\n- Hand tracking enhancement\n- Optic ID iris scanner basis\n- LED-based eye tracking system\n\n## Key Benefits\n\n### Tracking Enhancement\n- Accurate movement translation\n- Smoother hand tracking\n- Consistent gesture recognition\n- Reduced tracking glitches\n- Dark environment compatibility\n\n### Play Area Expansion\n- Clear object visibility in dark\n- Larger play area enablement\n- No room lighting dependency\n- Flexible gaming environments\n- Night-time VR capability\n\n## Technical Specifications\n\n### Wavelength Options\n- 850nm semi-covert IR\n- 940nm fully covert IR\n- Matches sensor spectral sensitivity\n- Invisible to naked eye\n- Camera sensor optimised\n\n### Coverage Considerations\n- Field of view angles\n- Room size compatibility\n- Power output requirements\n- Mounting options available\n- Battery vs wired operation\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
-    "Infrared Camera",
     "Infrared Led Illuminator",
+    "Infrared Camera",
     "Biometric Binding Mechanism"
   ],
   "wiki_links": [
     "Tracking Hardware",
-    "Hand Tracking System",
     "metaverse",
     "Infrared Camera",
-    "Dark Environment VR"
+    "Dark Environment VR",
+    "Hand Tracking System"
   ],
   "ontology": {
     "term_id": "MV-9929",

@@ -3,8 +3,8 @@
   "title": "Data Interoperability",
   "content": "- ### OntologyBlock\n  id:: mv9553-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9553\n\t- preferred-term:: Data Interoperability\n\t- source-domain:: mv\n\t- owl:class:: mv:DataInteroperability\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Data Interoperability is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nData Interoperability represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Semantic Web Standards",
     "Standard Format Support",
+    "Semantic Web Standards",
     "Metadata Schema"
   ],
   "wiki_links": [

@@ -3,17 +3,17 @@
   "title": "Spatial Presence",
   "content": "- ### OntologyBlock\n  id:: spatial-presence-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10063\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Presence\n\t- status:: active\n\t- definition:: The psychological state of feeling physically located within a virtual environment, experiencing the sense of \"being there\" despite technological mediation, influenced by place illusion (perceived location), plausibility illusion (believable events), and temporal presence (immediacy of experience).\n\t- owl:class:: mv:SpatialPresence\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: spatial-presence-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[VR Psychology]]\n\t\t- related-to:: [[Immersion]]\n\t\t- related-to:: [[Place Illusion]]\n\t\t- related-to:: [[Plausibility Illusion]]\n\t\t- enables:: [[Immersive Experience]]\n\t- #### Contributing Factors\n\t  collapsed:: true\n\t\t- High-quality visual graphics\n\t\t- Accurate motion tracking\n\t\t- Spatial audio environment matching\n\t\t- Responsive real-time interactions\n\t\t- Compelling narrative engagement\n\t- #### Research Dimensions\n\t  collapsed:: true\n\t\t- Spatial presence (being there)\n\t\t- Temporal presence (happening now)\n\t\t- Social presence (being together)\n\t\t- Plausibility (trueness)\n\t\t- Believability (genuineness)",
   "backlinks": [
-    "Presence",
+    "Immersive Audio System",
     "tc-0003-telepresence-robot",
-    "Immersive Audio System"
+    "Presence"
   ],
   "wiki_links": [
-    "Plausibility Illusion",
-    "Place Illusion",
-    "Immersion",
     "metaverse",
-    "VR Psychology",
-    "Immersive Experience"
+    "Immersion",
+    "Place Illusion",
+    "Plausibility Illusion",
+    "Immersive Experience",
+    "VR Psychology"
   ],
   "ontology": {
     "term_id": "MV-10063",

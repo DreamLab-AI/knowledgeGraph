@@ -3,24 +3,24 @@
   "title": "Digital Services Act",
   "content": "- ### OntologyBlock\n  id:: digital-services-act-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9869\n\t- source-domain:: mv\n\t- preferred-term:: Digital Services Act\n\t- definition:: A comprehensive EU regulation establishing legal framework for digital services accountability, content moderation requirements, platform transparency obligations, and user protection measures across online intermediaries, marketplaces, and social platforms, with implications for metaverse and virtual world governance.\n\t- status:: active\n\t- owl:class:: mv:DigitalServicesAct\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-services-act-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Regulation]]\n\t\t- enables:: [[Platform Accountability]], [[User Protection]], [[Content Transparency]]\n\t\t- requires:: [[Compliance Systems]], [[Moderation Infrastructure]], [[Reporting Mechanisms]]\n\t\t- related-to:: [[Digital Markets Act]], [[GDPR]], [[AI Act]]\n- ## Technical Details\n\t- **Key Provisions**:\n\t\t- Graduated obligations based on service size\n\t\t- Content moderation transparency\n\t\t- Algorithmic recommendation controls\n\t\t- Minor protection and advertising restrictions\n\t- **Platform Categories**:\n\t\t- Intermediary services (hosting, ISPs)\n\t\t- Online platforms (social networks, marketplaces)\n\t\t- Very Large Online Platforms (VLOPs: 45M+ EU users)\n\t\t- Search engines\n\t- **Timeline**:\n\t\t- Entered force: 2022\n\t\t- Bulk obligations effective: February 17, 2024\n\t\t- VLOP designations: Shein, Temu (April-May 2024)\n\t- **Metaverse Implications**: Most metaverse products in scope; content-specific regulations still developing\n- ## Applications\n\t- Platform content moderation\n\t- Algorithmic transparency reporting\n\t- Minor protection enforcement\n\t- Illegal content removal\n\t- Virtual world governance",
   "backlinks": [
-    "Regulatory Standards",
-    "Metaverse Safety Protocol",
-    "Digital Rights",
     "Compliance Standards",
-    "ETSI_Domain_Ethics_&_Law"
+    "Digital Rights",
+    "Metaverse Safety Protocol",
+    "ETSI_Domain_Ethics_&_Law",
+    "Regulatory Standards"
   ],
   "wiki_links": [
-    "Reporting Mechanisms",
-    "Digital Markets Act",
-    "Content Transparency",
-    "AI Act",
     "metaverse",
     "User Protection",
-    "Digital Regulation",
-    "Platform Accountability",
-    "Moderation Infrastructure",
+    "Content Transparency",
+    "Digital Markets Act",
+    "Compliance Systems",
     "GDPR",
-    "Compliance Systems"
+    "Platform Accountability",
+    "Digital Regulation",
+    "Reporting Mechanisms",
+    "AI Act",
+    "Moderation Infrastructure"
   ],
   "ontology": {
     "term_id": "MV-9869",

@@ -7,17 +7,17 @@
     "Asset Archive"
   ],
   "wiki_links": [
-    "Storage Infrastructure",
-    "Institutional Repository",
-    "IPFS",
-    "Digital Preservation",
-    "Content Access",
-    "Metadata Standards",
     "metaverse",
+    "Institutional Repository",
+    "Access Controls",
+    "Metadata Management",
     "Data Management",
     "Digital Archive",
-    "Access Controls",
-    "Metadata Management"
+    "IPFS",
+    "Storage Infrastructure",
+    "Content Access",
+    "Metadata Standards",
+    "Digital Preservation"
   ],
   "ontology": {
     "term_id": "MV-9866",

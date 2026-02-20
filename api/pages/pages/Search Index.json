@@ -3,16 +3,16 @@
   "title": "Search Index",
   "content": "- ### OntologyBlock\n  id:: search-index-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10031\n\t- source-domain:: mv\n\t- preferred-term:: Search Index\n\t- status:: active\n\t- definition:: A data structure that maps terms, embeddings, or attributes to document locations, enabling rapid retrieval of relevant content from large metaverse asset catalogues through inverted indexes, vector indexes, or hybrid approaches.\n\t- owl:class:: mv:SearchIndex\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: search-index-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Data Structure]]\n\t\t- related-to:: [[Search Engine]]\n\t\t- related-to:: [[Database Indexing]]\n\t\t- related-to:: [[Information Retrieval]]\n\t\t- enables:: [[Fast Query Response]]\n\t- #### Index Types\n\t  collapsed:: true\n\t\t- Inverted index for text search\n\t\t- Vector index for semantic similarity\n\t\t- B-tree for range queries\n\t\t- Geospatial index for location search\n\t\t- Graph index for relationship traversal\n\t- #### Technologies\n\t  collapsed:: true\n\t\t- Apache Lucene indexing library\n\t\t- HNSW for approximate nearest neighbour\n\t\t- FAISS for vector similarity\n\t\t- Pinecone managed vector database\n\t\t- Milvus open source vector search",
   "backlinks": [
-    "Digital Goods Registry",
-    "Search Engine"
+    "Search Engine",
+    "Digital Goods Registry"
   ],
   "wiki_links": [
-    "Database Indexing",
     "metaverse",
-    "Data Structure",
     "Search Engine",
-    "Fast Query Response",
-    "Information Retrieval"
+    "Information Retrieval",
+    "Data Structure",
+    "Database Indexing",
+    "Fast Query Response"
   ],
   "ontology": {
     "term_id": "MV-10031",

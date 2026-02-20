@@ -3,13 +3,13 @@
   "title": "Information Retrieval",
   "content": "- ### OntologyBlock\n  id:: mv9637-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9637\n\t- preferred-term:: Information Retrieval\n\t- source-domain:: mv\n\t- owl:class:: mv:InformationRetrieval\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Information Retrieval is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nInformation Retrieval represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Search Engine",
-    "Deep Learning",
-    "Search Index",
-    "Question Answering",
-    "Controlled Vocabularies",
     "Data Storage",
-    "Search Discovery"
+    "Search Index",
+    "Deep Learning",
+    "Search Engine",
+    "Controlled Vocabularies",
+    "Search Discovery",
+    "Question Answering"
   ],
   "wiki_links": [
     "owl:Thing"

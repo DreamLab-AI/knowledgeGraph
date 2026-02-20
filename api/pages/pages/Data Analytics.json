@@ -4,13 +4,13 @@
   "content": "- ### OntologyBlock\n  id:: mv9549-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9549\n\t- preferred-term:: Data Analytics\n\t- source-domain:: mv\n\t- owl:class:: mv:DataAnalytics\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Data Analytics is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nData Analytics represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
     "Virtual Interaction Logging",
-    "Digital Transformation",
-    "Healthcare Analytics",
-    "ETSI_Domain_Data_Management",
-    "Context Awareness System",
     "Database System",
+    "ETSI_Domain_Data_Management",
+    "Digital Transformation",
     "ETSI_Domain_Data",
-    "Data Storage Layer"
+    "Data Storage Layer",
+    "Context Awareness System",
+    "Healthcare Analytics"
   ],
   "wiki_links": [
     "owl:Thing"

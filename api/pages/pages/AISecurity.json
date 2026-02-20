@@ -3,17 +3,17 @@
   "title": "AI Security",
   "content": "- ### OntologyBlock\n  id:: aisecurity-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: AI-7015\n\t- preferred-term:: AI Security\n\t- source-domain:: ai\n\t- status:: active\n\t- definition:: AI Security is the field of protecting artificial intelligence systems and their components from security threats and vulnerabilities, including adversarial attacks, data poisoning, model theft, and unauthorized access to ensure systems perform as intended. It encompasses defending AI models, algorithms, training data, and infrastructure from manipulation, misuse, and exploitation throughout the AI lifecycle.\n\t- maturity:: mature\n\t- owl:class:: ai:AiSecurity\n\t- owl:role:: Domain\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: aisecurity-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Cybersecurity]]\n\t\t- related-to:: [[AIRisk]]\n\t\t- related-to:: [[AIGovernance]]\n\t\t- related-to:: [[Machine Learning]]\n\t\t- related-to:: [[Adversarial Machine Learning]]\n\t\t- enables:: [[Trustworthy AI]]\n\t\t- enables:: [[Secure AI Deployment]]\n\t- #### Key Threat Categories\n\t  collapsed:: true\n\t\t- **Adversarial Examples**: Specially crafted inputs causing misclassification or manipulation\n\t\t- **Data Poisoning**: Manipulation of training data to compromise model integrity or create backdoors\n\t\t- **Model Inversion**: Extracting sensitive training data through repeated model queries\n\t\t- **Prompt Injection**: Bypassing LLM security restrictions through crafted prompts (PLeak, DAN)\n\t\t- **Transfer Learning Attacks**: Injecting backdoors into pre-trained models that survive fine-tuning\n\t\t- **Model Extraction**: Stealing proprietary models through query-based reconstruction\n\t- #### 2025 Threat Landscape\n\t  collapsed:: true\n\t\t- 93% of security leaders expect daily AI-driven attacks\n\t\t- 66% anticipate AI having most significant cybersecurity impact\n\t\t- Approximately 2,200 cyberattacks globally each day\n\t\t- Machine-versus-machine warfare emerging in real-time\n\t\t- AI used as force multiplier by both defenders and attackers\n\t- #### Defense Measures\n\t  collapsed:: true\n\t\t- **Access Controls**: Multi-layered security with encryption and granular permissions\n\t\t- **Input Validation**: Strict filtering to detect adversarial inputs\n\t\t- **Inference Monitoring**: Tracking model queries for anomalous patterns\n\t\t- **Output Filtering**: Ensuring appropriate responses and refusal of harmful queries\n\t\t- **Red Teaming**: Regular adversarial testing to identify vulnerabilities\n\t\t- **Adversarial Training**: Strengthening models against known attack vectors\n\t- #### Government Guidance (2025)\n\t  collapsed:: true\n\t\t- **Five Eyes AI Data Security**: Joint FBI, NSA, CISA, Australia, New Zealand, UK guidance\n\t\t- **NIST Adversarial ML Taxonomy**: Attacks and mitigations classification\n\t\t- **NIST Cybersecurity Framework Profile for AI**: Integration of AI security with CSF 2.0\n\t- #### Applications\n\t  collapsed:: true\n\t\t- Enterprise AI system hardening\n\t\t- Secure LLM deployment\n\t\t- AI-powered threat detection\n\t\t- Autonomous system protection\n\t\t- Healthcare AI security\n\t\t- Financial services AI protection\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched with 2025 threat intelligence\n- **Verification**: Security research sources verified\n- **Regional Context**: Global cybersecurity landscape",
   "backlinks": [
-    "AIRiskManagement",
-    "AIRisk"
+    "AIRisk",
+    "AIRiskManagement"
   ],
   "wiki_links": [
-    "Trustworthy AI",
-    "Cybersecurity",
-    "Secure AI Deployment",
-    "AIRisk",
     "Artificial Intelligence",
-    "Machine Learning",
+    "Cybersecurity",
     "AIGovernance",
+    "Machine Learning",
+    "AIRisk",
+    "Trustworthy AI",
+    "Secure AI Deployment",
     "Adversarial Machine Learning"
   ],
   "ontology": {

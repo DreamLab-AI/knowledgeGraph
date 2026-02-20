@@ -3,21 +3,21 @@
   "title": "Random Number Generation",
   "content": "- ### OntologyBlock\n  id:: random-number-generation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- source-domain:: bc\n\t- term-id:: BC-8014\n\t- preferred-term:: Random Number Generation\n\t- status:: active\n\t- public-access:: true\n\t- maturity:: reviewed\n\t- owl:class:: bc:RandomNumberGeneration\n\t- belongsToDomain:: [[Cryptography]]\n\t- definition:: The process of generating unpredictable and statistically random values for cryptographic operations, serving as a critical security primitive for key generation, nonces, and protocol initialization, distinguishing between true randomness from physical entropy sources and pseudo-randomness from deterministic algorithms seeded with entropy.\n\n---\nid: BC-1008\ntitle: Random Number Generation\ntype: ConceptNode\ndomain: Blockchain\ncreated: 2025-11-24\nstatus: active\n---\n\n# Random Number Generation\n\n## Definition\n- Process of generating unpredictable and statistically random values for cryptographic operations\n- Critical security primitive for key generation, nonces, and protocol initialization\n- Distinguishes between true randomness (entropy sources) and pseudo-randomness (deterministic algorithms)\n\n## Core Components\n- **Entropy Source**: Physical phenomena providing true randomness\n- **CSPRNG**: Cryptographically Secure Pseudo-Random Number Generator\n- **Seed Material**: High-entropy input initializing PRNG\n- **Extraction Function**: Converts raw entropy into uniform randomness\n\n## Technical Characteristics\n- **Unpredictability**: Cannot predict future outputs from past observations\n- **Uniform Distribution**: Equal probability for all possible values\n- **Statistical Independence**: No correlation between successive outputs\n- **Non-Reproducibility**: True RNG cannot be replicated; PRNG requires seed\n\n## Types of RNGs\n### True Random Number Generators (TRNG)\n- Hardware entropy sources: thermal noise, radioactive decay\n- OS entropy pools: /dev/random (Linux)\n- Slower but non-deterministic\n\n### Cryptographically Secure PRNGs (CSPRNG)\n- **ChaCha20**: Stream cipher-based PRNG\n- **AES-CTR-DRBG**: AES in counter mode\n- **Hash_DRBG**: Hash function-based deterministic RNG\n- **HMAC_DRBG**: HMAC-based DRBG\n\n## Blockchain Applications\n- Private key generation\n- Transaction nonce generation\n- Proof-of-Work mining nonce\n- Zero-knowledge proof randomness\n- Consensus leader election (VRF)\n- Commitment scheme blinding factors\n\n## Entropy Sources\n- OS cryptographic API (CryptoAPI, /dev/urandom)\n- Hardware RNG (Intel RDRAND, TPM)\n- Environmental noise (mouse movement, timing)\n- Blockchain state (block hashes)\n- User input combined with system entropy\n\n## Verifiable Random Functions (VRF)\n- Provides publicly verifiable randomness\n- Used in blockchain consensus (Algorand, Cardano)\n- Combines randomness with proof of correct generation\n- Prevents manipulation while proving unpredictability\n\n## Relationships\n- enables:: [[Asymmetric Encryption]]\n  collapsed:: true\n  - #### Inverse Relationships (Inferred by Reasoner)\n    - Private Key requires Random Number Generation\n- component-of:: [[Cryptographic Protocol]]\n- uses:: [[Hash Function]]\n- implements:: [[Verifiable Random Function]]\n\n## Security Considerations\n- Weak RNG leads to predictable keys\n- Historical attacks on blockchain wallets with poor entropy\n- Importance of seeding from multiple sources\n- Regular reseeding from entropy pool\n- Side-channel attack resistance\n\n## On-Chain Randomness Challenges\n- Block hash manipulation by miners\n- Difficulty of trustless random generation\n- VRF-based solutions (Chainlink VRF)\n- Commit-reveal schemes\n- Multi-party randomness beacons\n\n## Deterministic vs Non-Deterministic\n| Aspect | TRNG | CSPRNG |\n|--------|------|---------|\n| Source | Physical entropy | Algorithmic |\n| Speed | Slower | Very fast |\n| Reproducibility | No | Yes (with seed) |\n| Use Case | Seed generation | Bulk randomness |\n\n## Best Practices\n- Use OS-provided cryptographic RNG (/dev/urandom)\n- Never implement custom RNG for security\n- Properly seed PRNGs with high-entropy source\n- Regular reseeding from entropy pool\n- Hardware RNG for high-security key generation\n\n## Common Pitfalls\n- Using timestamp as sole entropy source\n- Predictable PRNG seeds (e.g., block number)\n- Insufficient entropy during boot (embedded systems)\n- Language standard library non-cryptographic RNGs\n\n## Testing and Validation\n- Statistical test suites (NIST SP 800-22)\n- Entropy estimation tools\n- Continuous monitoring of entropy sources\n- Side-channel analysis for hardware RNG\n\n## Related Concepts\n- [[Key Derivation Function]]\n- [[Verifiable Random Function]]\n- [[Commitment Scheme]]\n- [[Zero-Knowledge Proof]]\n\n#cryptography #random-number-generation #entropy #blockchain-security\n\n### Relationships\n- is-subclass-of:: [[Blockchain]]",
   "backlinks": [
-    "Post-Quantum Cryptography",
+    "Symmetric Encryption",
     "Cryptographic Key Management",
-    "Cryptographic Keys",
-    "Symmetric Encryption"
+    "Post-Quantum Cryptography",
+    "Cryptographic Keys"
   ],
   "wiki_links": [
+    "Cryptography",
+    "Cryptographic Protocol",
+    "Verifiable Random Function",
+    "Asymmetric Encryption",
+    "Key Derivation Function",
     "Hash Function",
     "Commitment Scheme",
-    "Zero-Knowledge Proof",
-    "Cryptographic Protocol",
     "Blockchain",
-    "Key Derivation Function",
-    "Cryptography",
-    "Asymmetric Encryption",
-    "Verifiable Random Function"
+    "Zero-Knowledge Proof"
   ],
   "ontology": {
     "term_id": "BC-8014",

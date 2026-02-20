@@ -3,19 +3,19 @@
   "title": "Virtual Commerce",
   "content": "- ### OntologyBlock\n  id:: virtual-commerce-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10110\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Commerce\n\t- status:: active\n\t- definition:: An emerging form of e-commerce (V-commerce) that enables buying and selling of goods and services within virtual reality environments, including virtual storefronts, enhanced product visualization, social shopping experiences, and immersive customer-product interactions in metaverse platforms.\n\t- owl:class:: mv:VirtualCommerce\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Virtual Economy]]\n\t\t- related-to:: [[NFT Marketplace]]\n\t\t- related-to:: [[Cryptocurrency]]\n\t\t- related-to:: [[Digital Asset]]\n\t  id:: virtual-commerce-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual commerce (V-commerce) redefines shopping experiences by enabling immersive customer-product interactions within metaverse platforms. The market was valued at USD 12.63 billion in 2023 and is projected to reach USD 368.73 billion by 2032, growing at 44.32% CAGR. McKinsey estimates the metaverse could drive $5 trillion in value creation by 2030 as consumers increasingly seek immersive purchasing experiences.\n- ## Technical Details\n\t- ### Key Technologies\n\t\t- **Augmented Reality (AR)**: Virtual try-ons and product visualization\n\t\t- **Virtual Reality (VR)**: Immersive shopping environments\n\t\t- **Blockchain**: Secure transactions and digital asset ownership\n\t\t- **AI Personalization**: Intelligent shopping assistants and recommendations\n\t- ### Commerce Models\n\t\t- Virtual storefronts in platforms like Decentraland and Roblox\n\t\t- NFT-based digital collectibles and fashion items\n\t\t- Social commerce with collaborative shopping\n\t\t- Hybrid physical-digital product offerings\n\t- ### 2024 Developments\n\t\t- Meta AI-powered virtual shopping assistants (February 2024)\n\t\t- Amazon blockchain-based virtual store expansion (March 2024)\n\t\t- Microsoft metaverse retail solutions launch (April 2024)\n- ## Applications\n\t- Virtual try-ons for fashion and cosmetics\n\t- 3D product visualization and home staging\n\t- Brand experiences and exclusive virtual events\n\t- NFT marketplace transactions\n\t- Social shopping with friends and influencers",
   "backlinks": [
-    "Digital Economy",
-    "Stablecoin",
-    "Metaverse",
-    "Cross Metaverse Commerce",
     "Digital Real Estate",
-    "Digital Goods"
+    "Cross Metaverse Commerce",
+    "Digital Economy",
+    "Digital Goods",
+    "Metaverse",
+    "Stablecoin"
   ],
   "wiki_links": [
+    "metaverse",
     "Virtual Economy",
-    "NFT Marketplace",
-    "Digital Asset",
     "Cryptocurrency",
-    "metaverse"
+    "NFT Marketplace",
+    "Digital Asset"
   ],
   "ontology": {
     "term_id": "MV-10110",

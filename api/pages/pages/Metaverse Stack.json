@@ -3,16 +3,16 @@
   "title": "Metaverse Stack",
   "content": "- ### OntologyBlock\n  id:: metaverse-stack-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9965\n\t- source-domain:: mv\n\t- preferred-term:: Metaverse Stack\n\t- status:: active\n\t- owl:class:: mv:MetaverseStack\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: The comprehensive layered technology framework encompassing hardware, network infrastructure, spatial computing, decentralisation, creator economy, discovery, and experience layers that together enable the creation and operation of persistent virtual world environments.\n\t- #### Relationships\n\t  id:: metaverse-stack-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Technology Stack]]\n\t\t- related-to:: [[Metaverse Architecture]]\n\t\t- related-to:: [[Spatial Computing]]\n\t\t- enables:: [[Virtual World Operation]]\n\n## Core Technology Layers\n\n### Experience Layer\n- User interactions\n- 2D and 3D experiences\n- Intuitive environments\n- Interactive design\n- Physical constraint removal\n\n### Discovery Layer\n- User engagement mechanisms\n- Inbound discovery\n- Outbound discovery\n- Community content\n- Real-time presence\n\n### Creator Economy Layer\n- Creation tools\n- Monetisation platforms\n- No-code capability\n- Content empowerment\n- User-generated content\n\n### Spatial Computing Layer\n- 3D engines\n- VR/AR systems\n- Gesture recognition\n- Spatial mapping\n- Object recognition\n\n### Decentralisation Layer\n- Blockchain networks\n- Edge computing\n- Distributed systems\n- Ownership rights\n- Economic protocols\n\n### Human Interface Layer\n- VR headsets\n- AR glasses\n- Haptic devices\n- Motion tracking\n- Brain-computer interfaces\n\n### Infrastructure Layer\n- Network connectivity\n- Computing resources\n- Cloud systems\n- Hardware foundation\n- Data centres\n\n## Enabling Technologies\n\n### Core Components\n- Cloud computing\n- IoT integration\n- AI/ML systems\n- Blockchain ledger\n- Digital twins\n- AR/VR platforms\n\n### Development Platforms\n- Unity engine\n- Unreal Engine\n- WebXR frameworks\n- ReactVR\n- A-Frame\n- Babylon.js\n\n## Backend Architecture\n\n### Data Management\n- User authentication\n- Data storage\n- Application logic\n- Real-time communication\n- Scalability support\n\n### Security Requirements\n- Encryption protocols\n- Access control\n- Identity management\n- Transaction security\n- Privacy protection\n\n## Network Requirements\n\n### Connectivity\n- 5G networks\n- Low latency\n- High bandwidth\n- Global reach\n- Edge computing\n\n### Performance\n- Real-time rendering\n- Synchronisation\n- Load balancing\n- Fault tolerance\n- Quality of service\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
-    "Compute Layer",
+    "Application Layer",
     "Data Storage Layer",
-    "Application Layer"
+    "Compute Layer"
   ],
   "wiki_links": [
-    "Metaverse Architecture",
+    "metaverse",
     "Technology Stack",
     "Spatial Computing",
     "Virtual World Operation",
-    "metaverse"
+    "Metaverse Architecture"
   ],
   "ontology": {
     "term_id": "MV-9965",

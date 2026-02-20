@@ -3,15 +3,15 @@
   "title": "Infrastructure Architecture",
   "content": "- ### OntologyBlock\n  id:: infrastructure-architecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9932\n\t- source-domain:: mv\n\t- preferred-term:: Infrastructure Architecture\n\t- status:: active\n\t- owl:class:: mv:InfrastructureArchitecture\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: The foundational technical framework supporting metaverse platforms, comprising cloud computing, edge networks, distributed systems, and computing power networks that enable scalable, low-latency delivery of immersive virtual experiences.\n\t- #### Relationships\n\t  id:: infrastructure-architecture-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Technical Architecture]]\n\t\t- related-to:: [[Cloud Computing]]\n\t\t- related-to:: [[Edge Computing]]\n\t\t- enables:: [[Metaverse Platform]]\n\n## Core Components\n\n### The \"Holy Trinity\"\n- Cloud computing backbone\n- Edge network distribution\n- Distributed systems coordination\n- Scalable infrastructure foundation\n- Dynamic workload adaptation\n\n### Cloud Platform Role\n- AWS and Azure maturation\n- Digital infrastructure backbone\n- Complex simulation hosting\n- Virtual world support\n- Interactive experience delivery\n\n## NVIDIA Omniverse Architecture\n\n### Cloud Computer System\n- NVIDIA OVX for graphics\n- Physics simulation capability\n- NVIDIA HGX for AI workloads\n- Graphics Delivery Network (GDN)\n- Global distributed data centres\n\n### Edge Delivery\n- Low-latency graphics delivery\n- Metaverse graphics at edge\n- High-performance streaming\n- Global scale distribution\n- Real-time rendering support\n\n## Computing Power Network\n\n### Three-Layer Architecture\n- Infrastructure layer (base)\n- Orchestration management layer\n- Operation service layer\n- Flexible computing services\n- Low-cost power delivery\n\n### Digital Economy Role\n- Early metaverse development support\n- Vertical industry applications\n- Computing resource distribution\n- Service scalability\n- Digital economy driver\n\n## Intel Three-Layer Model\n\n### Meta Intelligence Layer\n- Unified programming model\n- Open software tools\n- Development standardisation\n- Cross-platform compatibility\n- Developer ecosystem support\n\n### Meta Ops Layer\n- Infrastructure layer\n- Compute delivery beyond local\n- User resource extension\n- Network optimisation\n- Service orchestration\n\n### Meta Compute Layer\n- Raw computing horsepower\n- Experience powering\n- Processing capacity\n- GPU and CPU resources\n- Hardware acceleration\n\n## Computing Power Requirements\n\n### Scale Challenge\n- 1,000x current computing needed\n- Collective power increase\n- Distributed architecture requirement\n- Decentralised compute placement\n- Current architecture limitations\n\n### Edge Computing Necessity\n- Digital infrastructure at edge\n- Bridge virtual/physical worlds\n- User proximity deployment\n- Large data set management\n- Latency reduction critical\n\n## Security Architecture (2024)\n\n### High Availability Design\n- Data encryption in transit\n- Storage encryption\n- ML for log analysis\n- VPC flow log monitoring\n- Data visualisation tools\n\n### Multi-Cloud Setup\n- Dual cloud architecture\n- Data centre redundancy\n- Multiple cloud operation\n- High security standards\n- Resilience assurance\n\n## Network Technologies\n\n### Interconnectivity\n- Diverse wireless networks\n- Wired network integration\n- Cloud/edge/end computing synergy\n- Full potential operation\n- Multi-technology convergence\n\n### Software-Defined Networking\n- Control and data plane separation\n- Adaptable network management\n- Centralised control\n- Greater scalability\n- Demand responsiveness\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
-    "Platform Layer",
-    "Networking Layer"
+    "Networking Layer",
+    "Platform Layer"
   ],
   "wiki_links": [
-    "Cloud Computing",
-    "Metaverse Platform",
-    "Edge Computing",
     "metaverse",
-    "Technical Architecture"
+    "Technical Architecture",
+    "Edge Computing",
+    "Cloud Computing",
+    "Metaverse Platform"
   ],
   "ontology": {
     "term_id": "MV-9932",

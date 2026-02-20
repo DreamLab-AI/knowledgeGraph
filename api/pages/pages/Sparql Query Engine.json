@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: sparql-query-engine-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10049\n\t- source-domain:: mv\n\t- preferred-term:: Sparql Query Engine\n\t- status:: active\n\t- definition:: A processor implementing the SPARQL Protocol and RDF Query Language (W3C standard) for retrieving, manipulating, and joining data stored in Resource Description Framework graphs, enabling semantic web queries through pattern matching of subject-predicate-object triples with support for filtering, aggregation, and federated queries.\n\t- owl:class:: mv:SparqlQueryEngine\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: sparql-query-engine-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Query Processor]]\n\t\t- related-to:: [[RDF Database]]\n\t\t- related-to:: [[Semantic Web Standards]]\n\t\t- related-to:: [[Knowledge Graph]]\n\t\t- enables:: [[Semantic Data Retrieval]]\n\t- #### Key Implementations\n\t  collapsed:: true\n\t\t- Apache Jena ARQ engine\n\t\t- AllegroGraph triple store\n\t\t- Ontotext GraphDB\n\t\t- Oxford Semantic RDFox\n\t\t- Comunica modular engine\n\t- #### Query Capabilities\n\t  collapsed:: true\n\t\t- Triple pattern matching\n\t\t- Optional and negation queries\n\t\t- Aggregation and grouping functions\n\t\t- Federated queries across endpoints\n\t\t- SPARQL Update for data modification",
   "backlinks": [],
   "wiki_links": [
-    "RDF Database",
-    "Query Processor",
-    "Semantic Web Standards",
-    "Knowledge Graph",
     "metaverse",
+    "Knowledge Graph",
+    "Query Processor",
+    "RDF Database",
+    "Semantic Web Standards",
     "Semantic Data Retrieval"
   ],
   "ontology": {

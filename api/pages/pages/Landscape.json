@@ -3,10 +3,10 @@
   "title": "Landscape",
   "content": "- #Public page\n\t - automatically published\n- ## AI landscape\n- a16z market analysis [[Landscape]] [market analysis](https://a16z.com/2023/05/25/ai-canon/)\n- Cowboy ventures [[Landscape]] [AI stack overview](https://medium.com/cowboy-ventures/the-new-infra-stack-for-generative-ai-9db8f294dc3f)",
   "backlinks": [
-    "Image Classification",
-    "Landscape",
+    "Sentiment Analysis",
     "Proprietary Image Generation",
-    "Sentiment Analysis"
+    "Landscape",
+    "Image Classification"
   ],
   "wiki_links": [
     "Landscape"

@@ -3,8 +3,8 @@
   "title": "Data Sharing",
   "content": "- ### OntologyBlock\n  id:: mv9558-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9558\n\t- preferred-term:: Data Sharing\n\t- source-domain:: mv\n\t- owl:class:: mv:DataSharing\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Data Sharing is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nData Sharing represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Privacy Preserving Data Sharing",
-    "System Interoperability"
+    "System Interoperability",
+    "Privacy Preserving Data Sharing"
   ],
   "wiki_links": [
     "owl:Thing"

@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "Sound Synthesis",
-    "Signal Processing",
-    "Audio System",
-    "Audio Effects",
     "metaverse",
-    "Dynamic Sound Design"
+    "Audio Effects",
+    "Signal Processing",
+    "Dynamic Sound Design",
+    "Audio System"
   ],
   "ontology": {
     "term_id": "MV-9990",

@@ -3,21 +3,21 @@
   "title": "Bounding Volume Hierarchy",
   "content": "- ### OntologyBlock\n  id:: bounding-volume-hierarchy-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9801\n\t- source-domain:: mv\n\t- preferred-term:: Bounding Volume Hierarchy\n\t- definition:: A tree-structured acceleration data structure that recursively organizes geometric objects within nested bounding volumes, enabling efficient spatial queries, collision detection, and ray-scene intersection testing by rapidly culling large portions of geometry that cannot intersect with a query.\n\t- status:: active\n\t- owl:class:: mv:BoundingVolumeHierarchy\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: bounding-volume-hierarchy-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Spatial Data Structure]]\n\t\t- enables:: [[Ray Tracing]], [[Collision Detection]], [[Frustum Culling]]\n\t\t- requires:: [[Bounding Volume]], [[Tree Construction]], [[Traversal Algorithm]]\n\t\t- related-to:: [[Kd-Tree]], [[Octree]], [[Scene Graph]]\n- ## Technical Details\n\t- **Structure**: Tree where leaf nodes contain geometric primitives wrapped in bounding volumes (boxes or spheres), grouped recursively into larger enclosing volumes up to a single root\n\t- **Acceleration Principle**: Ray intersection testing skips entire subtrees when rays miss parent bounding volumes, reducing millions of polygon tests to logarithmic tree traversals\n\t- **Design Properties**:\n\t\t- Contained nodes should be spatially proximate\n\t\t- Bounding volumes should have minimal volume\n\t\t- Sibling node overlap should be minimized\n\t\t- Tree should be balanced for depth and content\n\t- **Comparison with KD-Trees**: BVH is faster to build and more numerically robust; kd-trees offer slightly faster ray intersection but longer build times\n\t- **2024 Advances (N-BVH)**: Neural BVH uses adaptive probing with multi-resolution hash grids for 10x+ compression while maintaining accurate ray queries for visibility, depth, and appearance\n- ## Applications\n\t- Real-time ray tracing in games and visualization\n\t- Physics engine collision detection\n\t- Virtual reality rendering optimization\n\t- Global illumination computation\n\t- Large-scale scene management",
   "backlinks": [
-    "Spatial Index",
-    "Scene Graph"
+    "Scene Graph",
+    "Spatial Index"
   ],
   "wiki_links": [
-    "Tree Construction",
-    "Spatial Data Structure",
-    "Bounding Volume",
-    "Scene Graph",
-    "Traversal Algorithm",
-    "Kd-Tree",
-    "Frustum Culling",
-    "Collision Detection",
-    "Ray Tracing",
     "metaverse",
-    "Octree"
+    "Frustum Culling",
+    "Bounding Volume",
+    "Ray Tracing",
+    "Spatial Data Structure",
+    "Octree",
+    "Collision Detection",
+    "Traversal Algorithm",
+    "Scene Graph",
+    "Kd-Tree",
+    "Tree Construction"
   ],
   "ontology": {
     "term_id": "MV-9801",

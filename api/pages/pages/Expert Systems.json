@@ -3,17 +3,17 @@
   "title": "Expert Systems",
   "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1002\n  - preferred-term:: Expert Systems\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:ExpertSystems\n\n### Relationships\n- is-subclass-of:: [[Knowledge Representation]]\n- is-subclass-of:: [[Artificial Intelligence]]\n- uses:: [[Inference Engine]]\n- uses:: [[Knowledge Base]]\n- skos:related:: [[Fuzzy Logic]]\n- skos:related:: [[Rule-Based Systems]]\n- enables:: [[Decision Support]]\n\n### Definition\nExpert systems are computer programs that emulate the decision-making ability of human experts in specific domains. They consist of a knowledge base containing domain-specific information and an inference engine that applies logical rules to derive conclusions, make recommendations, or solve complex problems within their specialized area of expertise.\n\n### Architecture Components\n- Knowledge base (facts and rules)\n- Inference engine (reasoning mechanism)\n- User interface\n- Explanation facility\n- Knowledge acquisition module\n\n### Historical Significance\n- MYCIN (medical diagnosis)\n- DENDRAL (chemical analysis)\n- XCON (computer configuration)\n- Peak popularity in 1980s-1990s\n\n### Modern Applications\n- Medical diagnosis support\n- Financial planning\n- Quality control\n- Fault diagnosis\n- Configuration systems",
   "backlinks": [
-    "Symbolic AI",
-    "Fuzzy Logic"
+    "Fuzzy Logic",
+    "Symbolic AI"
   ],
   "wiki_links": [
+    "Artificial Intelligence",
     "Decision Support",
-    "Rule-Based Systems",
-    "Knowledge Base",
     "Inference Engine",
-    "Knowledge Representation",
+    "Rule-Based Systems",
     "Fuzzy Logic",
-    "Artificial Intelligence"
+    "Knowledge Representation",
+    "Knowledge Base"
   ],
   "ontology": {
     "term_id": "AI-1002",

@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: mv9594-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9594\n\t- preferred-term:: Distributed Systems\n\t- source-domain:: mv\n\t- owl:class:: mv:DistributedSystems\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Distributed Systems is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nDistributed Systems represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
     "Smart Contracts",
-    "Synchronous Execution",
-    "Data Replication",
     "Mesh Routing Software",
     "ETSI_Domain_Data_Management",
-    "Scalable Architecture",
-    "Distributeddatastructure"
+    "Distributeddatastructure",
+    "Data Replication",
+    "Synchronous Execution",
+    "Scalable Architecture"
   ],
   "wiki_links": [
     "owl:Thing"

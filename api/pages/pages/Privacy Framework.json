@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: mv9666-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9666\n\t- preferred-term:: Privacy Framework\n\t- source-domain:: mv\n\t- owl:class:: mv:PrivacyFramework\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Privacy Framework is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nPrivacy Framework represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
     "Granular Consent Control",
-    "Metaverse Psychology Profile",
-    "Gdpr Article45"
+    "Gdpr Article45",
+    "Metaverse Psychology Profile"
   ],
   "wiki_links": [
     "owl:Thing"

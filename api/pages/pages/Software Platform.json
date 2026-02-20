@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "metaverse",
-    "Platform Engineering",
+    "Container Orchestration",
     "Technology Infrastructure",
-    "Cloud Native Development",
     "Application Development",
-    "Container Orchestration"
+    "Platform Engineering",
+    "Cloud Native Development"
   ],
   "ontology": {
     "term_id": "MV-10048",

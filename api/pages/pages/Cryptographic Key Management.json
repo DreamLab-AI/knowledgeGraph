@@ -3,20 +3,20 @@
   "title": "Cryptographic Key Management",
   "content": "- ### OntologyBlock\n  id:: cryptographic-key-management-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-7011\n\t- preferred-term:: Cryptographic Key Management\n\t- source-domain:: bc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: The administration of cryptographic keys throughout their lifecycle, including generation, storage, distribution, rotation, backup, recovery, and destruction, ensuring the security and availability of keying material while preventing unauthorized access or compromise. Governed by standards such as NIST SP 800-57.\n\t- maturity:: reviewed\n\t- owl:class:: bc:CryptographicKeyManagement\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[Cryptography]]\n\n## Definition\n\nCryptographic key management encompasses the policies, procedures, and technical mechanisms for managing cryptographic keys throughout their entire lifecycle. According to NIST SP 800-57, the security of information protected by cryptography directly depends on the strength of the keys, the effectiveness of mechanisms and protocols associated with keys, and the protection afforded to those keys. Poor key management can easily compromise even the strongest cryptographic algorithms.\n\n## Key Management Lifecycle Phases\n\n### Pre-Operational Phase\n- Keying material not yet available for normal cryptographic operations\n- Keys may not be generated or are in pre-activation state\n- System and enterprise attributes established\n\n### Operational Phase\n- Keying material available and in normal use\n- Keys in active or suspended state\n- Active keys may be designated protect-only, process-only, or both\n\n### Post-Operational Phase\n- Keys no longer in active use but may be needed for processing previously protected data\n- Archived keys for decryption or signature verification\n\n### Destroyed Phase\n- Keys permanently removed from service\n- Secure destruction ensures no recovery possible\n\n## Core Functions\n\n- **Key Generation**: Creating cryptographically strong keys using approved random number generators\n- **Key Distribution**: Secure delivery of keys to authorized parties\n- **Key Storage**: Protected storage using hardware security modules (HSMs) or secure enclaves\n- **Key Rotation**: Periodic replacement of keys to limit exposure window\n- **Key Backup**: Secure backup mechanisms for recovery scenarios\n- **Key Recovery**: Procedures for recovering lost or corrupted keys\n- **Key Revocation**: Invalidation of compromised or expired keys\n- **Key Destruction**: Secure erasure preventing any reconstruction\n\n## NIST Standards\n\n- **SP 800-57 Part 1**: General guidance and best practices for key management\n- **SP 800-57 Part 2**: Best practices for key management organizations\n- **SP 800-57 Part 3**: Application-specific key management guidance\n- **SP 800-130**: Framework for designing cryptographic key management systems\n- **FIPS 140-3**: Security requirements for cryptographic modules\n\n## Blockchain Applications\n\n- Hierarchical Deterministic (HD) wallet key derivation\n- Multi-signature key coordination\n- Cold storage and hot wallet management\n- Hardware wallet integration\n- Key ceremony procedures for consensus participants\n\n## Security Considerations\n\n- Defense against side-channel attacks\n- Protection against key extraction from memory\n- Compliance with regulatory requirements\n- Audit logging of all key operations\n- Separation of duties in key management roles\n\n## Relationships\n- manages:: [[Cryptographic Keys]]\n- uses:: [[Key Derivation Function]]\n- requires:: [[Random Number Generation]]\n- protects:: [[Private Key]]\n- enables:: [[Digital Signature]]\n- component-of:: [[Security Architecture]]\n- is-subclass-of:: [[Cryptography]]\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched with NIST standards\n- **References**: 5 pages reference this concept\n\n#cryptography #key-management #security #NIST #blockchain-security",
   "backlinks": [
-    "Post-Quantum Cryptography",
     "Digital Rights Management (Extended)",
-    "Cryptographic Keys",
+    "Transaction Standard",
+    "Post-Quantum Cryptography",
     "Token Custody Service",
-    "Transaction Standard"
+    "Cryptographic Keys"
   ],
   "wiki_links": [
-    "Random Number Generation",
-    "Private Key",
-    "Security Architecture",
-    "Digital Signature",
-    "Key Derivation Function",
     "Cryptography",
-    "Cryptographic Keys"
+    "Security Architecture",
+    "Key Derivation Function",
+    "Digital Signature",
+    "Private Key",
+    "Cryptographic Keys",
+    "Random Number Generation"
   ],
   "ontology": {
     "term_id": "BC-7011",

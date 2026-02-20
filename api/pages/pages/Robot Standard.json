@@ -3,10 +3,10 @@
   "title": "Robot Standard",
   "content": "- ### OntologyBlock\n  id:: rb9529-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9529\n\t- preferred-term:: Robot Standard\n\t- source-domain:: rb\n\t- owl:class:: rb:RobotStandard\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Robot Standard is a concept within the robotics domain. Further enrichment pending.\n\n## Overview\n\nRobot Standard represents an abstract concept in the robotics ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Performance Standard",
-    "Emc Standard",
     "Quality Standard",
-    "Cybersecurity Standard"
+    "Emc Standard",
+    "Cybersecurity Standard",
+    "Performance Standard"
   ],
   "wiki_links": [
     "owl:Thing"

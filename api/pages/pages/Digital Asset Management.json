@@ -3,26 +3,26 @@
   "title": "Digital Asset Management",
   "content": "- ### OntologyBlock\n  id:: digital-asset-management-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9850\n\t- source-domain:: mv\n\t- preferred-term:: Digital Asset Management\n\t- definition:: The professional oversight and administration of cryptocurrency portfolios, tokenized assets, and blockchain-based investments through systematic strategies, risk management frameworks, and fiduciary practices to optimize returns and preserve capital for individuals and institutions.\n\t- status:: active\n\t- owl:class:: mv:DigitalAssetManagement\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-asset-management-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Investment Management]]\n\t\t- enables:: [[Portfolio Optimization]], [[Risk Management]], [[Asset Allocation]]\n\t\t- requires:: [[Custody Solutions]], [[Analytics Tools]], [[Compliance Systems]]\n\t\t- related-to:: [[Crypto Funds]], [[Index Products]], [[Wealth Management]]\n- ## Technical Details\n\t- **Management Approaches**:\n\t\t- Active management: Discretionary trading strategies\n\t\t- Passive management: Index tracking and rebalancing\n\t\t- Quantitative: Algorithmic and systematic strategies\n\t\t- Hybrid: Combining active and passive elements\n\t- **Product Types**:\n\t\t- Hedge funds: Grayscale, Pantera, Galaxy Digital\n\t\t- ETFs: BlackRock iShares Bitcoin Trust (IBIT)\n\t\t- Index funds: Bitwise, 21Shares\n\t\t- Separately managed accounts (SMAs)\n\t- **2024 Institutional Growth**:\n\t\t- Bitcoin ETF approvals driving mainstream access\n\t\t- $50+ billion AUM in crypto investment products\n\t\t- Pension fund and endowment allocations increasing\n\t\t- Multi-asset digital portfolios emerging\n\t- **Key Metrics**: Sharpe ratio, max drawdown, tracking error, liquidity coverage\n- ## Applications\n\t- Institutional portfolio management\n\t- Family office crypto allocations\n\t- Retirement account diversification\n\t- Corporate treasury optimization\n\t- High-net-worth wealth planning",
   "backlinks": [
-    "Tokenization",
-    "Shared Ownership Model",
-    "Digital Goods Registry",
+    "Metadata Standards",
     "Digital Curation Platform",
     "Media Library",
+    "Shared Ownership Model",
+    "Tokenization",
     "Temporary Asset Access",
-    "Metadata Standards"
+    "Digital Goods Registry"
   ],
   "wiki_links": [
+    "metaverse",
+    "Risk Management",
+    "Portfolio Optimization",
     "Custody Solutions",
     "Investment Management",
-    "Risk Management",
-    "metaverse",
-    "Wealth Management",
-    "Index Products",
     "Analytics Tools",
-    "Asset Allocation",
-    "Portfolio Optimization",
+    "Compliance Systems",
     "Crypto Funds",
-    "Compliance Systems"
+    "Asset Allocation",
+    "Index Products",
+    "Wealth Management"
   ],
   "ontology": {
     "term_id": "MV-9850",

@@ -3,24 +3,24 @@
   "title": "Forward Kinematics",
   "content": "- ### OntologyBlock\n  id:: forward-kinematics-ontology\n  collapsed:: true\n  - ontology:: true\n  - term-id:: RB-1005\n  - preferred-term:: Forward Kinematics\n  - alternate-terms:: Direct Kinematics\n  - source-domain:: rb\n  - status:: complete\n  - public-access:: true\n  - version:: 1.0.0\n  - last-updated:: 2025-11-24\n\n- **Definition**\n  - definition:: The process of determining the position and orientation of a robot's end-effector in Cartesian space given the joint parameters (angles or displacements). It maps from joint space to task space using geometric and trigonometric relationships.\n  - maturity:: mature\n  - source:: [[Robotics]], [[Kinematics]]\n  - authority-score:: 0.98\n\n- **Semantic Classification**\n  - owl:class:: rb:ForwardKinematics\n  - owl:role:: Method\n  - belongsToDomain:: [[Robotics]], [[Kinematics]]\n\n- #### OWL Restrictions\n  - is-subclass-of:: [[Kinematics]]\n  - requires:: [[Joint Parameters]]\n  - requires:: [[Kinematic Model]]\n  - computes:: [[End-Effector Pose]]\n  - uses:: [[Denavit-Hartenberg Parameters]]\n  - hasInput some JointConfiguration\n  - hasOutput some CartesianPose\n  - characterizedBy:: [[Uniqueness]], [[Computability]]\n\n- #### Relationships\n  id:: rb-1005-relationships\n  - is-subclass-of:: [[Kinematics]]\n  - inverse-of:: [[RB-1006-inverse-kinematics]]\n  - uses:: [[Transformation Matrix]], [[Homogeneous Coordinates]]\n  - enables:: [[Robot Simulation]], [[Motion Visualization]]\n  collapsed:: true\n  - #### Inverse Relationships (Inferred by Reasoner)\n    - RB-1007-trajectory-generation requires Forward Kinematics\n  - applied-to:: [[RB-0003-manipulator]]\n\n- **Mathematical Foundation**\n  - Denavit-Hartenberg (D-H) Convention\n  - Homogeneous Transformation Matrices\n  - Rotation Matrices\n  - Translation Vectors\n  - Frame-to-Frame Transformations\n\n- **D-H Parameters**\n  - Link Length (a)\n  - Link Twist (α)\n  - Link Offset (d)\n  - Joint Angle (θ)\n\n- **Computation Steps**\n  1. Define coordinate frames for each joint\n  2. Establish D-H parameters\n  3. Compute individual transformation matrices\n  4. Multiply matrices sequentially\n  5. Extract position and orientation from final matrix\n\n- **Properties**\n  - Unique solution (one-to-one mapping)\n  - Computationally efficient\n  - Always solvable\n  - Closed-form solution available\n  - Non-iterative calculation\n\n- **Applications**\n  - Robot arm simulation\n  - End-effector position calculation\n  - Workspace analysis\n  - Collision detection\n  - Robot programming and verification\n  - Virtual reality robot visualization\n\n- **Implementation Considerations**\n  - Choice of D-H convention (classic vs modified)\n  - Frame assignment consistency\n  - Numerical precision\n  - Computational efficiency for real-time systems\n\n- **Related Concepts**\n  - Workspace (reachable space)\n  - Singularities (loss of degrees of freedom)\n  - Jacobian matrix (velocity kinematics)\n  - Configuration space\n\n- **Quality Metrics**\n  - authority-score:: 0.98\n  - completeness:: 0.95\n  - accuracy:: 0.97\n\n\n<!-- Merged from Forward Kinematics.md: RoboticsDomain -->",
   "backlinks": [
-    "RB-1007-trajectory-generation",
-    "RB-1006-inverse-kinematics"
+    "RB-1006-inverse-kinematics",
+    "RB-1007-trajectory-generation"
   ],
   "wiki_links": [
-    "Robotics",
-    "RB-0003-manipulator",
-    "Computability",
-    "Homogeneous Coordinates",
-    "Kinematics",
-    "Transformation Matrix",
-    "Kinematic Model",
-    "Joint Parameters",
-    "Uniqueness",
-    "RB-1006-inverse-kinematics",
-    "Robot Simulation",
-    "Denavit-Hartenberg Parameters",
     "Motion Visualization",
-    "End-Effector Pose"
+    "Kinematic Model",
+    "Robot Simulation",
+    "RB-1006-inverse-kinematics",
+    "Kinematics",
+    "Computability",
+    "End-Effector Pose",
+    "RB-0003-manipulator",
+    "Robotics",
+    "Joint Parameters",
+    "Homogeneous Coordinates",
+    "Uniqueness",
+    "Denavit-Hartenberg Parameters",
+    "Transformation Matrix"
   ],
   "ontology": {
     "term_id": "RB-1005",

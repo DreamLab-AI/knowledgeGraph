@@ -3,17 +3,17 @@
   "title": "AI Framework",
   "content": "- ### OntologyBlock\n  id:: ai9005-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9005\n\t- preferred-term:: AI Framework\n\t- source-domain:: ai\n- definition:: AI Framework denotes a comprehensive software architecture that provides reusable code, design patterns, and infrastructure for developing artificial intelligence applications. These frameworks abstract low-level computational details, offering high-level interfaces for model construction, training, and inference. Popular frameworks include TensorFlow, PyTorch, scikit-learn, Keras, and JAX, each optimized for different use cases ranging from research prototyping to production deployment. Modern AI frameworks support automatic differentiation, distributed training, model serving, and integration with cloud infrastructure.\n\n- public-access:: true\n- is-subclass-of:: [[owl:Thing]]\n\n## Overview\n\nAI Framework denotes a comprehensive software architecture that provides reusable code, design patterns, and infrastructure for developing artificial intelligence applications. These frameworks abstract low-level computational details, offering high-level interfaces for model construction, training, and inference. Popular frameworks include TensorFlow, PyTorch, scikit-learn, Keras, and JAX, each optimized for different use cases ranging from research prototyping to production deployment. Modern AI frameworks support automatic differentiation, distributed training, model serving, and integration with cloud infrastructure.\n\n## Key Characteristics\n\n- Provides declarative and imperative programming paradigms\n- Supports multiple hardware accelerators (GPU, TPU, NPU)\n- Offers extensive pre-built model architectures and layers\n- Enables seamless transition from research to production\n- Includes tools for model optimization and quantization\n\n## Related Concepts\n\n- [[Deep Learning Framework]]\n- [[Neural Network Library]]\n- [[AutoML]]\n- [[Model Optimization]]\n\n## References\n\n- Chen, T. et al. (2015). MXNet: A Flexible and Efficient Machine Learning Library for Heterogeneous Distributed Systems. NIPS 2015 Workshop.\n- Bradbury, J. et al. (2018). JAX: Composable transformations of Python+NumPy programs. GitHub repository.\n- Pedregosa, F. et al. (2011). Scikit-learn: Machine Learning in Python. JMLR 12, 2825-2830.",
   "backlinks": [
-    "AlgorithmicFramework",
+    "Game Engine",
     "Autonomous Agent",
-    "Intelligent Virtual Entity",
-    "Game Engine"
+    "AlgorithmicFramework",
+    "Intelligent Virtual Entity"
   ],
   "wiki_links": [
-    "AutoML",
-    "owl:Thing",
+    "Neural Network Library",
     "Deep Learning Framework",
+    "AutoML",
     "Model Optimization",
-    "Neural Network Library"
+    "owl:Thing"
   ],
   "ontology": {
     "term_id": "AI-9005",
