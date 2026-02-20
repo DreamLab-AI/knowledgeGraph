@@ -6,12 +6,12 @@
     "Proof Of Authority"
   ],
   "wiki_links": [
-    "Provenance",
     "Blockchain Technology",
     "Traceability",
-    "Blockchain Entity",
+    "Smart Contract",
     "Supply Chain Transparency",
-    "Smart Contract"
+    "Blockchain Entity",
+    "Provenance"
   ],
   "ontology": {
     "term_id": "BC-0605",

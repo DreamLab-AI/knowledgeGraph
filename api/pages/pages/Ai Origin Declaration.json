@@ -4,14 +4,14 @@
   "content": "- ### OntologyBlock\n  id:: ai-origin-declaration-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9763\n\t- source-domain:: mv\n\t- preferred-term:: Ai Origin Declaration\n\t- status:: active\n\t- definition:: AI Origin Declaration refers to technical standards and regulatory requirements for disclosing when digital content has been generated or substantially modified by artificial intelligence, encompassing watermarking, metadata embedding, and provenance tracking systems that enable verification of content authenticity and origin.\n\t- owl:class:: mv:AiOriginDeclaration\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Content Authenticity]]\n\t- enables:: [[Deepfake Detection]], [[Content Verification]], [[Trust Infrastructure]]\n\t- requires:: [[Digital Watermarking]], [[Metadata Standards]], [[Cryptographic Signing]]\n\t- #### Relationships\n\t  id:: ai-origin-declaration-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **AI Watermarking**: Invisible markers embedded for identification and origin tracing\n- **Content Provenance**: Metadata encoding source of origin and alteration history\n- **C2PA Standard**: Coalition for Content Provenance and Authenticity open technical specification\n- **Tamper-Evident Records**: Blockchain and PKI ensuring alteration attempts are detectable\n\n### Regulatory Framework\n- **EU AI Act (2024)**: Article 50 requires AI outputs marked in machine-readable format\n- **California Provenance Act**: From February 2025, requires imperceptible watermarks in synthetic content",
   "backlinks": [],
   "wiki_links": [
-    "Metadata Standards",
-    "Trust Infrastructure",
-    "Content Verification",
-    "Digital Watermarking",
-    "metaverse",
     "Content Authenticity",
+    "Content Verification",
+    "Trust Infrastructure",
+    "metaverse",
+    "Deepfake Detection",
     "Cryptographic Signing",
-    "Deepfake Detection"
+    "Digital Watermarking",
+    "Metadata Standards"
   ],
   "ontology": {
     "term_id": "MV-9763",

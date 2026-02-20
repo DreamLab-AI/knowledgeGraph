@@ -8,11 +8,11 @@
   ],
   "wiki_links": [
     "STRIPS",
-    "Constraint Satisfaction",
+    "Optimization",
+    "Resource Management",
     "Robotics",
     "Artificial Intelligence",
-    "Resource Management",
-    "Optimization",
+    "Constraint Satisfaction",
     "Search Algorithms"
   ],
   "ontology": {

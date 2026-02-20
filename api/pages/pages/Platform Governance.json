@@ -12,13 +12,13 @@
     "Digital Jurisdiction"
   ],
   "wiki_links": [
-    "Smart Contracts",
-    "Consensus Mechanisms",
-    "Token Economy",
-    "Voting Mechanisms",
+    "DAO Governance",
     "Decentralised Decision-Making",
+    "Smart Contracts",
     "Blockchain",
-    "DAO Governance"
+    "Voting Mechanisms",
+    "Consensus Mechanisms",
+    "Token Economy"
   ],
   "ontology": {
     "term_id": "NGM-7037",

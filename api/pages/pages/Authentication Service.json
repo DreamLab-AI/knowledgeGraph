@@ -15,16 +15,16 @@
     "Security Layer"
   ],
   "wiki_links": [
-    "Identity Management",
-    "Authorisation",
-    "Credential Validation",
-    "Identity Verification",
-    "Security Service",
     "Core Technology",
-    "Cross-Platform Identity",
-    "Single Sign-On",
+    "Identity Verification",
+    "Access Control",
+    "Credential Validation",
+    "Identity Management",
     "Session Management",
-    "Access Control"
+    "Single Sign-On",
+    "Security Service",
+    "Authorisation",
+    "Cross-Platform Identity"
   ],
   "ontology": {
     "term_id": "NGM-7010",

@@ -22,17 +22,17 @@
     "Digital Jurisdiction"
   ],
   "wiki_links": [
+    "Privacy Controls",
+    "Digital Presence",
     "Identity",
-    "Credential Storage",
     "Identity Verification",
     "Avatar",
-    "Privacy Controls",
-    "metaverse",
-    "Self-Sovereign Identity",
+    "Credential Storage",
     "Decentralized Identifiers",
-    "Authorization",
+    "metaverse",
     "Authentication",
-    "Digital Presence"
+    "Self-Sovereign Identity",
+    "Authorization"
   ],
   "ontology": {
     "term_id": "MV-9860",

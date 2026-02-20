@@ -14,11 +14,11 @@
   ],
   "wiki_links": [
     "Light Client",
-    "Relayer",
     "Cross-Chain Bridge",
-    "Layer 0",
     "Next Generation Mobile",
-    "DeFi"
+    "Layer 0",
+    "DeFi",
+    "Relayer"
   ],
   "ontology": {
     "term_id": "NGM-7015",

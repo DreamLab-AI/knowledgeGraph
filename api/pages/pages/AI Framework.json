@@ -9,11 +9,11 @@
     "Intelligent Virtual Entity"
   ],
   "wiki_links": [
-    "owl:Thing",
     "Neural Network Library",
-    "AutoML",
+    "Model Optimization",
     "Deep Learning Framework",
-    "Model Optimization"
+    "AutoML",
+    "owl:Thing"
   ],
   "ontology": {
     "term_id": "AI-9005",

@@ -73,23 +73,23 @@
     "Trust Framework Policy"
   ],
   "wiki_links": [
-    "Provenance",
-    "RegulatoryCompliance",
-    "StakeholderOversight",
-    "DynamicCompliance",
     "DataGovernance",
+    "AuditTrail",
+    "RegulatoryCompliance",
     "AIGovernance",
     "EthicalByDesign",
-    "DecisionTraceability",
-    "ContinuousAssurance",
+    "Transparency",
     "ExplainableAI",
     "RiskManagement",
-    "AuditTrail",
+    "DynamicCompliance",
+    "DecisionTraceability",
+    "ContinuousAssurance",
+    "StakeholderOversight",
     "IdentityGovernance",
     "Accountability",
-    "TrustManagement",
     "TechnologyDomain",
-    "Transparency"
+    "TrustManagement",
+    "Provenance"
   ],
   "ontology": {
     "term_id": "AI-7004",

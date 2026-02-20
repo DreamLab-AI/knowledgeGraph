@@ -4,9 +4,9 @@
   "content": "- ### OntologyBlock\n  id:: MV-9001\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-4008\n\t- source-domain:: mv\n\t- preferred-term:: Land Scarcity\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Economic principle in virtual worlds where digital land parcels are artificially limited to create value and drive virtual real estate markets.\n\t- source:: [[Virtual Economics]], [[Metaverse]]\n\t- maturity:: emerging\n\t- owl:class:: mv:LandScarcity\n\t- owl:role:: Process\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- isSubclassOf:: [[Virtual Economy]]\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]",
   "backlinks": [],
   "wiki_links": [
-    "Metaverse",
     "MetaverseDomain",
     "Virtual Economics",
+    "Metaverse",
     "Virtual Economy"
   ],
   "ontology": {

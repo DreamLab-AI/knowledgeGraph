@@ -9,10 +9,10 @@
   "wiki_links": [
     "Database Indexing",
     "Search Engine",
-    "metaverse",
-    "Data Structure",
     "Information Retrieval",
-    "Fast Query Response"
+    "Data Structure",
+    "Fast Query Response",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10031",

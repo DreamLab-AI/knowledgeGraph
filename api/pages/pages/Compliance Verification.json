@@ -19,13 +19,13 @@
     "Compliance Audit Trail"
   ],
   "wiki_links": [
+    "Regulatory Framework",
     "Smart Contracts",
+    "EU MiCA Regulation",
+    "Blockchain",
     "Transaction Monitoring",
     "Identity Management",
-    "Regulatory Framework",
-    "EU MiCA Regulation",
-    "KYC/AML Requirements",
-    "Blockchain"
+    "KYC/AML Requirements"
   ],
   "ontology": {
     "term_id": "NGM-7004",

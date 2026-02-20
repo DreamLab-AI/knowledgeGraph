@@ -7,12 +7,12 @@
     "ETSI_Domain_Immersive___Reality_Capture"
   ],
   "wiki_links": [
-    "SLAM",
-    "metaverse",
-    "Motion Tracking",
     "Immersive VR",
+    "Motion Tracking",
     "Inside Out Tracking",
-    "6DoF Tracking"
+    "6DoF Tracking",
+    "metaverse",
+    "SLAM"
   ],
   "ontology": {
     "term_id": "MV-10066",

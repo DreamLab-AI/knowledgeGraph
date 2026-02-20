@@ -15,12 +15,12 @@
   ],
   "wiki_links": [
     "Random Number Generation",
-    "Digital Signature",
+    "Cryptographic Key Management",
     "Cryptography",
-    "Symmetric Encryption",
     "Key Derivation Function",
     "Asymmetric Encryption",
-    "Cryptographic Key Management"
+    "Digital Signature",
+    "Symmetric Encryption"
   ],
   "ontology": {
     "term_id": "BC-7006",

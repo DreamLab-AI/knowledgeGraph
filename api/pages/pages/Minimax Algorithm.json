@@ -8,9 +8,9 @@
   "wiki_links": [
     "Decision Tree",
     "Alpha-Beta Pruning",
-    "Adversarial Search",
     "Game Playing AI",
     "Game Theory",
+    "Adversarial Search",
     "Search Algorithms"
   ],
   "ontology": {

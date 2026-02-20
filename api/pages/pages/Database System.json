@@ -15,23 +15,23 @@
     "Performance Optimization"
   ],
   "wiki_links": [
-    "NoSQL Database",
+    "ACID Transactions",
     "BASE Consistency",
-    "ETSI_Domain_Data_Management",
-    "Relational Database",
-    "Transaction Management",
+    "InfrastructureDomain",
     "Data Analytics",
     "Machine Learning",
-    "Distributed Computing",
-    "Query Processing",
+    "NoSQL Database",
+    "Data Persistence",
     "Graph Database",
-    "InfrastructureDomain",
-    "ACID Transactions",
-    "Computing Infrastructure",
+    "Transaction Management",
     "Application Development",
     "Technology Domain",
+    "Computing Infrastructure",
     "Cloud Infrastructure",
-    "Data Persistence"
+    "ETSI_Domain_Data_Management",
+    "Relational Database",
+    "Query Processing",
+    "Distributed Computing"
   ],
   "ontology": {
     "term_id": "NGM-7022",

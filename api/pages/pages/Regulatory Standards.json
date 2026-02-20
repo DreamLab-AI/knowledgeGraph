@@ -7,12 +7,12 @@
     "ETSI_Domain_Governance_&_Compliance"
   ],
   "wiki_links": [
-    "GDPR",
-    "User Protection",
-    "metaverse",
     "Digital Services Act",
-    "EU AI Act",
-    "Compliance Framework"
+    "User Protection",
+    "GDPR",
+    "Compliance Framework",
+    "metaverse",
+    "EU AI Act"
   ],
   "ontology": {
     "term_id": "MV-10020",

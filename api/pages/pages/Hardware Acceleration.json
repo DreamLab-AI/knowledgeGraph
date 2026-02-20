@@ -12,10 +12,10 @@
   ],
   "wiki_links": [
     "GPU Rendering",
-    "Hardware Resources",
     "metaverse",
-    "Computing Infrastructure",
-    "Real-Time VR Performance"
+    "Real-Time VR Performance",
+    "Hardware Resources",
+    "Computing Infrastructure"
   ],
   "ontology": {
     "term_id": "MV-9914",

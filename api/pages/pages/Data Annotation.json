@@ -6,11 +6,11 @@
     "Deep Learning"
   ],
   "wiki_links": [
-    "Data Engineering",
-    "Machine Learning Pipeline",
-    "Supervised Learning",
     "Active Learning",
     "Training Data",
+    "Machine Learning Pipeline",
+    "Supervised Learning",
+    "Data Engineering",
     "Human-in-the-Loop"
   ],
   "ontology": {

@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "NIST AI RMF",
-    "EU HLEG AI",
-    "ConceptualLayer",
     "AIEthicsDomain",
-    "EU AI Act Article 15"
+    "ConceptualLayer",
+    "EU AI Act Article 15",
+    "EU HLEG AI"
   ],
   "ontology": {
     "term_id": "AI-0410",

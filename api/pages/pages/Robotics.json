@@ -129,15 +129,15 @@
   ],
   "wiki_links": [
     "Industrial Robots",
-    "Automation",
     "Digital Twin",
     "Smart Manufacturing",
     "Machine Vision",
-    "Industrial Automation",
-    "Collaborative Robotics",
+    "Automation",
     "Artificial Intelligence",
+    "Humanoid Robots",
+    "Collaborative Robotics",
     "IoT Sensors",
-    "Humanoid Robots"
+    "Industrial Automation"
   ],
   "ontology": {
     "term_id": "RB-7000",

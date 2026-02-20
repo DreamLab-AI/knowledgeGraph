@@ -32,14 +32,14 @@
   "wiki_links": [
     "Self-Custody",
     "Transaction Signing",
-    "Private Key",
     "Cryptographic Security",
-    "DeFi Access",
-    "Asset Management",
+    "Private Key",
     "Hardware Wallet",
-    "Web3",
+    "Cryptocurrency Storage",
     "Blockchain Network",
-    "Cryptocurrency Storage"
+    "DeFi Access",
+    "Web3",
+    "Asset Management"
   ],
   "ontology": {
     "term_id": "MV-9881",
