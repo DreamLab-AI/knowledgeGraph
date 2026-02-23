@@ -10,11 +10,11 @@
     "Intrinsic Interpretability"
   ],
   "wiki_links": [
-    "AI Governance",
-    "AI Ethics",
     "Trustworthy AI Systems",
+    "AI Ethics",
     "metaverse",
-    "Explainable AI"
+    "Explainable AI",
+    "AI Governance"
   ],
   "ontology": {
     "term_id": "MV-9969",

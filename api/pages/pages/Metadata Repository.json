@@ -9,10 +9,10 @@
   ],
   "wiki_links": [
     "Metadata Management",
-    "Data Discovery",
     "Data Catalog",
     "Data Management",
-    "metaverse"
+    "metaverse",
+    "Data Discovery"
   ],
   "ontology": {
     "term_id": "MV-9961",

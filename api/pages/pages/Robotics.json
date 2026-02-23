@@ -128,16 +128,16 @@
     "Pneumatic Cylinder"
   ],
   "wiki_links": [
-    "Industrial Robots",
-    "Digital Twin",
     "Smart Manufacturing",
-    "Machine Vision",
-    "Automation",
-    "Artificial Intelligence",
-    "Humanoid Robots",
-    "Collaborative Robotics",
     "IoT Sensors",
-    "Industrial Automation"
+    "Collaborative Robotics",
+    "Humanoid Robots",
+    "Digital Twin",
+    "Industrial Robots",
+    "Industrial Automation",
+    "Artificial Intelligence",
+    "Machine Vision",
+    "Automation"
   ],
   "ontology": {
     "term_id": "RB-7000",

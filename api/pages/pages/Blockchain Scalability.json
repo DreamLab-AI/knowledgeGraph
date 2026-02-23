@@ -8,13 +8,13 @@
     "Proof Of Authority"
   ],
   "wiki_links": [
-    "Blockchain Technology",
     "Sharding",
-    "Blockchain Entity",
-    "Rollup",
-    "Layer 2",
     "State Channel",
-    "Blockchain Network"
+    "Rollup",
+    "Blockchain Network",
+    "Blockchain Technology",
+    "Blockchain Entity",
+    "Layer 2"
   ],
   "ontology": {
     "term_id": "BC-0602",

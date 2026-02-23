@@ -7,11 +7,11 @@
     "Gltf Standard"
   ],
   "wiki_links": [
-    "3D Asset Pipeline",
     "Data Processing",
     "metaverse",
-    "Interoperability Standard",
-    "Cross-Platform Content"
+    "Cross-Platform Content",
+    "3D Asset Pipeline",
+    "Interoperability Standard"
   ],
   "ontology": {
     "term_id": "MV-9902",

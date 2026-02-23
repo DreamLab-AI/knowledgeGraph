@@ -12,13 +12,13 @@
   ],
   "wiki_links": [
     "Token Swaps",
-    "Liquidity Provision",
-    "Liquidity Pools",
-    "Smart Contracts",
+    "Permissionless Trading",
     "DeFi Protocol",
     "Pricing Algorithms",
-    "Permissionless Trading",
-    "metaverse"
+    "metaverse",
+    "Liquidity Pools",
+    "Smart Contracts",
+    "Liquidity Provision"
   ],
   "ontology": {
     "term_id": "MV-9786",

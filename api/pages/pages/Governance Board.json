@@ -6,11 +6,11 @@
     "ETSI_Domain_Governance_&_Ethics"
   ],
   "wiki_links": [
-    "DAO Governance",
-    "Collective Decision Making",
-    "Governance Architecture",
     "Governance Token",
-    "metaverse"
+    "metaverse",
+    "Collective Decision Making",
+    "DAO Governance",
+    "Governance Architecture"
   ],
   "ontology": {
     "term_id": "MV-9910",

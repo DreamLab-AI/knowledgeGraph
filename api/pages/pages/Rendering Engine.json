@@ -16,13 +16,13 @@
   ],
   "wiki_links": [
     "Computer Graphics",
-    "NVIDIA",
-    "Gaussian splatting and Similar",
-    "Ray Tracing",
     "Virtual Reality",
     "Film Production",
+    "Ray Tracing",
+    "Game Development",
     "Metaverse",
-    "Game Development"
+    "Gaussian splatting and Similar",
+    "NVIDIA"
   ],
   "ontology": {
     "term_id": "NGM-7018",

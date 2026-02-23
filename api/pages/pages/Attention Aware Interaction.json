@@ -5,13 +5,13 @@
   "backlinks": [],
   "wiki_links": [
     "Adaptive Interfaces",
-    "Eye Tracking Hardware",
-    "Human-Computer Interaction",
-    "Gaze Detection Algorithms",
     "Attention Modeling",
+    "Foveated Rendering",
     "metaverse",
     "Gaze-Based Selection",
-    "Foveated Rendering"
+    "Human-Computer Interaction",
+    "Gaze Detection Algorithms",
+    "Eye Tracking Hardware"
   ],
   "ontology": {
     "term_id": "MV-9781",

@@ -7,15 +7,15 @@
   ],
   "wiki_links": [
     "Technical Standards",
-    "Protocol Specifications",
-    "Verifiable Credentials",
-    "ISO Standards",
-    "Identity Interoperability",
-    "Conformance Testing",
     "W3C DID",
-    "metaverse",
-    "Trust Frameworks",
     "Standards Bodies",
+    "metaverse",
+    "Identity Interoperability",
+    "Verifiable Credentials",
+    "Trust Frameworks",
+    "Conformance Testing",
+    "Protocol Specifications",
+    "ISO Standards",
     "Credential Exchange"
   ],
   "ontology": {

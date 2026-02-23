@@ -4,8 +4,8 @@
   "content": "- ### OntologyBlock\n  id:: trainingdatasetmetadata-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-1001\n\t- source-domain:: ai\n\t- preferred-term:: TrainingDatasetMetadata\n\t- status:: complete\n\t- public-access:: true\n\t- definition:: A training dataset metadata component in the Artificial Intelligence domain that required by AiModelCard.\n\t- source:: Generated from bridge validation\n\t- maturity:: emerging\n\t- owl:class:: ai:TrainingDatasetMetadata\n\t- #### Relationships\n- is-subclass-of:: [[ModelArchitecture]]\n\t  id:: trainingdatasetmetadata-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AI Metadata]]",
   "backlinks": [],
   "wiki_links": [
-    "ModelArchitecture",
-    "AI Metadata"
+    "AI Metadata",
+    "ModelArchitecture"
   ],
   "ontology": {
     "term_id": "AI-1001",

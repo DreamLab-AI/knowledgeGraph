@@ -10,10 +10,10 @@
   ],
   "wiki_links": [
     "Neural Network Library",
-    "Model Optimization",
-    "Deep Learning Framework",
+    "owl:Thing",
     "AutoML",
-    "owl:Thing"
+    "Deep Learning Framework",
+    "Model Optimization"
   ],
   "ontology": {
     "term_id": "AI-9005",

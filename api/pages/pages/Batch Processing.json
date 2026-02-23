@@ -6,20 +6,20 @@
     "Real-time Processing"
   ],
   "wiki_links": [
-    "Event",
+    "Output",
     "Core Technology",
-    "Schedule",
+    "ETL",
     "Process",
+    "Event",
+    "Cross-Domain Meta-Structure",
+    "Scheduled Processing",
     "Dataset",
     "Data Collection",
-    "Output",
-    "Processing Model",
-    "Real-time Processing",
-    "Cross-Domain Meta-Structure",
-    "ETL",
     "Data Volume",
+    "Real-time Processing",
     "Temporal Concept",
-    "Scheduled Processing",
+    "Schedule",
+    "Processing Model",
     "Bulk Processing"
   ],
   "ontology": {

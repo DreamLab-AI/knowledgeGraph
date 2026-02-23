@@ -15,16 +15,16 @@
   ],
   "wiki_links": [
     "Financial Technology",
-    "Programmable Money",
-    "Transaction Network",
-    "Virtual Transactions",
-    "Digital Wallet",
-    "Cryptocurrency",
-    "metaverse",
     "Security Infrastructure",
     "CBDC",
+    "Cryptocurrency",
     "Stablecoin",
-    "Digital Payments"
+    "Transaction Network",
+    "Digital Wallet",
+    "Digital Payments",
+    "Programmable Money",
+    "Virtual Transactions",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9855",

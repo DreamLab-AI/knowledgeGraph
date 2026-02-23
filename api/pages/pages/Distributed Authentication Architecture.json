@@ -6,11 +6,11 @@
     "Identity Federation"
   ],
   "wiki_links": [
-    "Blockchain Technology",
-    "Cross-Platform Interoperability",
-    "Identity Management",
     "metaverse",
-    "Self-Sovereign Identity"
+    "Self-Sovereign Identity",
+    "Identity Management",
+    "Blockchain Technology",
+    "Cross-Platform Interoperability"
   ],
   "ontology": {
     "term_id": "MV-9883",

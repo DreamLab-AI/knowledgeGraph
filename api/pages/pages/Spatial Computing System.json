@@ -6,12 +6,12 @@
     "Spatial Anchor"
   ],
   "wiki_links": [
-    "Mixed Reality Platform",
-    "Eye Tracking",
     "Hand Gesture Recognition",
-    "metaverse",
+    "Eye Tracking",
     "Spatial Interface",
-    "Apple Vision Pro"
+    "Apple Vision Pro",
+    "metaverse",
+    "Mixed Reality Platform"
   ],
   "ontology": {
     "term_id": "MV-10056",
