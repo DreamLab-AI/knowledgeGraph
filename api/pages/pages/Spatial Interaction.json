@@ -8,12 +8,12 @@
     "ETSI_Domain_Immersive___Reality_Capture"
   ],
   "wiki_links": [
-    "Eye Tracking",
-    "Gesture Recognition",
-    "metaverse",
     "Human Computer Interaction",
+    "Gesture Recognition",
     "Immersive User Experience",
-    "Spatial Computing"
+    "metaverse",
+    "Spatial Computing",
+    "Eye Tracking"
   ],
   "ontology": {
     "term_id": "MV-10059",

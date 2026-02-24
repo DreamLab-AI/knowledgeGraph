@@ -7,12 +7,12 @@
     "Extended Reality (XR)"
   ],
   "wiki_links": [
-    "metaverse",
     "6DOF Tracking",
-    "Visual SLAM",
     "Motion Tracking",
     "IMU Sensors",
-    "Precise Spatial Positioning"
+    "Precise Spatial Positioning",
+    "Visual SLAM",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10065",

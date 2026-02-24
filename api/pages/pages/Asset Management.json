@@ -17,14 +17,14 @@
   ],
   "wiki_links": [
     "Financial Technology",
-    "Custody",
-    "Institutional Investment",
-    "Portfolio Management",
-    "Financial Services",
-    "Traditional Finance",
     "Decentralized Finance",
+    "Institutional Investment",
     "Tokenization",
-    "Risk Management"
+    "Traditional Finance",
+    "Portfolio Management",
+    "Risk Management",
+    "Custody",
+    "Financial Services"
   ],
   "ontology": {
     "term_id": "NGM-7014",

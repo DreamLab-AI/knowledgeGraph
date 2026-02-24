@@ -7,11 +7,11 @@
     "Carbon Neutrality Verification"
   ],
   "wiki_links": [
-    "Digital Identity",
     "Standards",
-    "metaverse",
     "Verifiable Credentials",
-    "Authentication"
+    "Authentication",
+    "metaverse",
+    "Digital Identity"
   ],
   "ontology": {
     "term_id": "MV-10102",

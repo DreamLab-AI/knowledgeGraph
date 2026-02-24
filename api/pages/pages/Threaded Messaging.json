@@ -6,9 +6,9 @@
   "wiki_links": [
     "Slack",
     "Collaboration Tools",
-    "Discord",
     "Asynchronous Collaboration",
-    "TelecollaborationDomain"
+    "TelecollaborationDomain",
+    "Discord"
   ],
   "ontology": {
     "term_id": "TC-9001",

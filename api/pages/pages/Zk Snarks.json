@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: zk-snarks-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10175\n\t- source-domain:: mv\n\t- preferred-term:: ZK-SNARKs\n\t- status:: active\n\t- definition:: Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge - a cryptographic proof system enabling one party to prove possession of information without revealing the information itself, characterized by small proof sizes, fast verification, and no interaction required between prover and verifier, though requiring a trusted setup ceremony.\n\t- owl:class:: mv:ZKSNARKs\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Zero Knowledge Proof]]\n\t\t- related-to:: [[Blockchain Privacy]]\n\t\t- related-to:: [[Layer 2 Scaling]]\n\t\t- related-to:: [[Cryptography]]\n\t  id:: zk-snarks-relationships\n\t  collapsed:: true\n- ## Overview\n\t- ZK-SNARKs enable cryptographic proofs that verify information without revealing it. The concept originated from Goldwasser, Micali, and Rackoff's 1989 paper on interactive proof systems. A 2012 paper demonstrated SNARKs as a blockchain privacy mechanism. Zcash was the first widespread application, enabling shielded transactions. ZK-SNARKs power Layer 2 solutions including zkSync, Polygon zkEVM, and Linea.\n- ## Technical Details\n\t- ### Key Properties\n\t\t- **Succinct**: Very small proof sizes for blockchain efficiency\n\t\t- **Non-Interactive**: Single message from prover to verifier\n\t\t- **Zero-Knowledge**: No private input information revealed\n\t\t- **Arguments of Knowledge**: Proves knowledge possession\n\t- ### Blockchain Applications\n\t\t- **Privacy Transactions**: Zcash shielded transfers\n\t\t- **ZK-Rollups**: Layer 2 scaling for Ethereum\n\t\t- **Identity Verification**: Private credential proofs\n\t\t- **Compliance**: Regulatory proofs without data exposure\n\t- ### Technical Requirements\n\t\t- Trusted setup ceremony for parameter generation\n\t\t- Elliptic curve cryptography foundations\n\t\t- Circuit-based computation representation\n\t\t- Proof generation and verification algorithms\n\t- ### Comparison to ZK-STARKs\n\t\t- Smaller proof sizes than STARKs\n\t\t- Faster on-chain verification\n\t\t- Requires trusted setup (vulnerability)\n\t\t- Not quantum-resistant\n- ## Applications\n\t- Privacy-preserving cryptocurrency transactions\n\t- Blockchain scaling through rollups\n\t- Private smart contract execution\n\t- Identity and credential verification\n\t- Confidential voting systems",
   "backlinks": [],
   "wiki_links": [
-    "Zero Knowledge Proof",
     "Blockchain Privacy",
+    "Zero Knowledge Proof",
+    "Layer 2 Scaling",
     "metaverse",
-    "Cryptography",
-    "Layer 2 Scaling"
+    "Cryptography"
   ],
   "ontology": {
     "term_id": "MV-10175",

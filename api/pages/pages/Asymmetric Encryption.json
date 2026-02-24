@@ -10,14 +10,14 @@
     "Cryptographic Keys"
   ],
   "wiki_links": [
-    "Hash Function",
-    "Key Derivation Function",
-    "Digital Signature",
-    "Symmetric Encryption",
-    "Public Key Infrastructure",
     "Elliptic Curve Cryptography",
-    "Information Security",
     "Blockchain",
+    "Symmetric Encryption",
+    "Information Security",
+    "Key Derivation Function",
+    "Public Key Infrastructure",
+    "Hash Function",
+    "Digital Signature",
     "Cryptography"
   ],
   "ontology": {

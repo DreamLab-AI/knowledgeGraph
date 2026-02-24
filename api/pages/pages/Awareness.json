@@ -6,14 +6,14 @@
     "Technology Adoption"
   ],
   "wiki_links": [
-    "Social Computing",
-    "Notification Systems",
     "Collaborative Presence",
-    "Situational Understanding",
-    "metaverse",
-    "Presence Detection",
+    "Social Computing",
     "State Synchronization",
-    "Social Interaction"
+    "Notification Systems",
+    "Social Interaction",
+    "Presence Detection",
+    "metaverse",
+    "Situational Understanding"
   ],
   "ontology": {
     "term_id": "MV-9793",

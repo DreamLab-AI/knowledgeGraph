@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "Quality Assurance",
+    "Measurement Methodology",
+    "Performance Comparison",
     "Performance Metrics",
+    "Technical Standard",
+    "Reference Implementation",
     "Testing Framework",
     "System Evaluation",
-    "metaverse",
     "Industry Standards",
-    "Performance Comparison",
-    "Measurement Methodology",
-    "Reference Implementation",
-    "Validation Process",
-    "Technical Standard"
+    "metaverse",
+    "Validation Process"
   ],
   "ontology": {
     "term_id": "MV-9796",

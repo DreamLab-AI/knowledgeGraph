@@ -30,16 +30,16 @@
     "Token Custody Service"
   ],
   "wiki_links": [
-    "Cryptocurrency Storage",
-    "DeFi Access",
-    "Cryptographic Security",
-    "Transaction Signing",
-    "Self-Custody",
     "Blockchain Network",
-    "Hardware Wallet",
-    "Web3",
+    "Self-Custody",
     "Private Key",
-    "Asset Management"
+    "Cryptographic Security",
+    "DeFi Access",
+    "Cryptocurrency Storage",
+    "Web3",
+    "Transaction Signing",
+    "Asset Management",
+    "Hardware Wallet"
   ],
   "ontology": {
     "term_id": "MV-9881",

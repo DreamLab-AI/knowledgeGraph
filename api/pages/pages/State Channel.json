@@ -8,19 +8,19 @@
     "Sidechain"
   ],
   "wiki_links": [
-    "Lightning Network",
-    "BlockchainDomain",
-    "Off-Chain Scaling",
+    "Layer 2",
     "Digital Signature",
+    "Blockchain",
+    "Rollup",
+    "Lightning Network",
+    "Connext",
+    "BlockchainDomain",
     "Micropayments",
     "Perun",
-    "Optimistic Rollup",
-    "Rollup",
-    "Payment Channel",
-    "Connext",
+    "Off-Chain Scaling",
     "Raiden Network",
-    "Blockchain",
-    "Layer 2"
+    "Optimistic Rollup",
+    "Payment Channel"
   ],
   "ontology": {
     "term_id": "BC-8017",

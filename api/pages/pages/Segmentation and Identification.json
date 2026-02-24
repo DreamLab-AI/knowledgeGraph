@@ -11,12 +11,12 @@
     "Flux"
   ],
   "wiki_links": [
-    "Product Design",
     "Segmentation and Identification",
-    "AI Video",
+    "Human tracking and SLAM capture",
+    "Image Generation",
+    "Product Design",
     "WebDev and Consumer Tooling",
     "Hardware and Edge",
-    "Human tracking and SLAM capture",
-    "Image Generation"
+    "AI Video"
   ]
 }

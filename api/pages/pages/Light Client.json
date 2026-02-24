@@ -7,14 +7,14 @@
     "Relayer"
   ],
   "wiki_links": [
-    "State Proof",
-    "Cross-Chain Bridge",
-    "SPV (Simplified Payment Verification)",
-    "Interoperability Protocol",
     "Blockchain",
+    "Cross-Chain Bridge",
+    "Full Node",
+    "State Proof",
     "Relayer",
+    "SPV (Simplified Payment Verification)",
     "Merkle Tree",
-    "Full Node"
+    "Interoperability Protocol"
   ],
   "ontology": {
     "term_id": "BC-8010",
