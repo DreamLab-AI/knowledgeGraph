@@ -1,0 +1,41 @@
+/* Force dark theme for published SPA */
+html, html[data-theme="light"] {
+  --ls-primary-background-color: #002b36;
+  --ls-secondary-background-color: #073642;
+  --ls-tertiary-background-color: #0a3d4a;
+  --ls-quaternary-background-color: #073642;
+  --ls-primary-text-color: #93a1a1;
+  --ls-secondary-text-color: #839496;
+  --ls-title-text-color: #eee8d5;
+  --ls-link-text-color: #268bd2;
+  --ls-link-ref-text-color: #2aa198;
+  --ls-link-ref-text-hover-color: #93a1a1;
+  --ls-alink-color: #268bd2;
+  --ls-block-highlight-color: rgba(7, 54, 66, 0.8);
+  --ls-page-properties-background-color: #073642;
+  --ls-page-inline-code-bg-color: #073642;
+  --ls-page-inline-code-color: #b58900;
+  --ls-page-blockquote-bg-color: #073642;
+  --ls-page-blockquote-border-color: #586e75;
+  --ls-border-color: #586e75;
+  --ls-scrollbar-foreground-color: #586e75;
+  --ls-scrollbar-background-color: #002b36;
+  --ls-head-text-color: #fdf6e3;
+  --color-level-1: #002b36;
+  --color-level-2: #073642;
+  --color-level-3: #0a3d4a;
+}
+html { color-scheme: dark; }
+body { background-color: #002b36 !important; color: #93a1a1 !important; }
+.left-sidebar-inner { background-color: #002b36 !important; }
+.cp__header { background-color: #002b36 !important; }
+#main-content-container { background-color: #002b36 !important; }
+.dark-theme, .white-theme { --ls-primary-background-color: #002b36; }
+
+/* Hide mermaid source code blocks after kroki renders them */
+.kroki-diagram + .extensions__code,
+.kroki-diagram + .ls-block .extensions__code {
+  display: none !important;
+}
+/* Hide {{renderer code_diagram,mermaid}} macro text */
+[data-macro-name="renderer"] { display: none; }

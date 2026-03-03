@@ -49,6 +49,25 @@
     });
   }
 
+  function hideRendererText() {
+    // Hide {{renderer code_diagram,mermaid}} text that shows as plain text
+    var blocks = document.querySelectorAll('.block-content');
+    blocks.forEach(function(block) {
+      if (block.dataset.krokiChecked) return;
+      block.dataset.krokiChecked = 'true';
+      var text = block.textContent || '';
+      if (text.indexOf('renderer code_diagram,mermaid') !== -1) {
+        // Hide just the text node, keep children (the rendered diagram)
+        var spans = block.querySelectorAll('span, .inline');
+        spans.forEach(function(span) {
+          if ((span.textContent || '').indexOf('renderer code_diagram') !== -1) {
+            span.style.display = 'none';
+          }
+        });
+      }
+    });
+  }
+
   function renderMermaidBlocks() {
     // Strategy 1: Logseq extensions__code with language label
     var langLabels = document.querySelectorAll('.extensions__code-lang');
@@ -71,6 +90,9 @@
       pre.dataset.krokiProcessed = 'true';
       renderViaKroki(codeEl.textContent, pre, pre);
     });
+
+    // Also hide renderer macro text
+    hideRendererText();
   }
 
   // Initial render after DOM settles
