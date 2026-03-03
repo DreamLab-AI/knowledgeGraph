@@ -1,7 +1,7 @@
 /* Gunmetal Blue-Gray theme for published SPA.
-   Must match or exceed Logseq's built-in selector specificity
-   (html[data-theme=dark][data-color=logseq]) so our values win. */
-html[data-theme="dark"][data-color="logseq"],
+   Uses data-color="gunmetal" to avoid clashing with any
+   built-in Logseq colour theme (logseq, blue, cyan, etc.). */
+html[data-theme="dark"][data-color="gunmetal"],
 html[data-theme="dark"],
 html[data-theme="light"],
 html {
@@ -59,7 +59,41 @@ body { background-color: #1b2128 !important; color: #c5cdd8 !important; }
 .dark-theme, .white-theme, .light-theme {
   --ls-primary-background-color: #1b2128 !important;
   --ls-secondary-background-color: #242b35 !important;
+  --ls-tertiary-background-color: #2e3642 !important;
+  --ls-quaternary-background-color: #242b35 !important;
   --ls-primary-text-color: #c5cdd8 !important;
+  --ls-secondary-text-color: #8891a0 !important;
+  --ls-title-text-color: #e2e8f0 !important;
+  --ls-link-text-color: #5b9bd5 !important;
+  --ls-border-color: #3d4555 !important;
+}
+/* Override Logseq's inline background-color on html element */
+html[data-theme="dark"] {
+  background-color: #1b2128 !important;
+}
+/* Neutralise any residual built-in colour scheme vars */
+html[data-theme="dark"][data-color] {
+  --ls-primary-background-color: #1b2128 !important;
+  --ls-secondary-background-color: #242b35 !important;
+  --ls-tertiary-background-color: #2e3642 !important;
+  --ls-quaternary-background-color: #242b35 !important;
+  --ls-primary-text-color: #c5cdd8 !important;
+  --ls-secondary-text-color: #8891a0 !important;
+  --ls-title-text-color: #e2e8f0 !important;
+  --ls-link-text-color: #5b9bd5 !important;
+  --ls-link-ref-text-color: #4ec9b0 !important;
+  --ls-border-color: #3d4555 !important;
+  --ls-secondary-border-color: #3d4555 !important;
+  --ls-block-highlight-color: rgba(46, 54, 66, 0.8) !important;
+  --ls-page-properties-background-color: #242b35 !important;
+  --ls-page-inline-code-bg-color: #242b35 !important;
+  --ls-page-inline-code-color: #d19a66 !important;
+  --ls-scrollbar-foreground-color: #3d4555 !important;
+  --ls-scrollbar-background-color: #1b2128 !important;
+  --ls-block-bullet-border-color: #3d4555 !important;
+  --ls-block-bullet-color: #5a6270 !important;
+  --ls-guideline-color: #3d4555 !important;
+  background-color: #1b2128 !important;
 }
 
 /* Hide mermaid source code blocks after kroki renders them */
