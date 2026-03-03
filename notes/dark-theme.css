@@ -1,65 +1,65 @@
-/* Gunmetal / Solarized Dark theme for published SPA.
+/* Gunmetal Blue-Gray theme for published SPA.
    Must match or exceed Logseq's built-in selector specificity
    (html[data-theme=dark][data-color=logseq]) so our values win. */
 html[data-theme="dark"][data-color="logseq"],
 html[data-theme="dark"],
 html[data-theme="light"],
 html {
-  --ls-primary-background-color: #002b36 !important;
-  --ls-secondary-background-color: #073642 !important;
-  --ls-tertiary-background-color: #0a3d4a !important;
-  --ls-quaternary-background-color: #073642 !important;
-  --ls-primary-text-color: #93a1a1 !important;
-  --ls-secondary-text-color: #839496 !important;
-  --ls-title-text-color: #eee8d5 !important;
-  --ls-link-text-color: #268bd2 !important;
-  --ls-link-ref-text-color: #2aa198 !important;
-  --ls-link-ref-text-hover-color: #93a1a1 !important;
-  --ls-link-text-hover-color: #93a1a1 !important;
-  --ls-alink-color: #268bd2 !important;
-  --ls-block-highlight-color: rgba(7, 54, 66, 0.8) !important;
-  --ls-page-properties-background-color: #073642 !important;
-  --ls-page-inline-code-bg-color: #073642 !important;
-  --ls-page-inline-code-color: #b58900 !important;
-  --ls-page-blockquote-bg-color: #073642 !important;
-  --ls-page-blockquote-border-color: #586e75 !important;
-  --ls-page-blockquote-color: #93a1a1 !important;
-  --ls-border-color: #586e75 !important;
-  --ls-secondary-border-color: #586e75 !important;
-  --ls-scrollbar-foreground-color: #586e75 !important;
-  --ls-scrollbar-background-color: #002b36 !important;
-  --ls-head-text-color: #fdf6e3 !important;
-  --ls-active-primary-color: #2aa198 !important;
-  --ls-active-secondary-color: #93a1a1 !important;
-  --ls-block-properties-background-color: #073642 !important;
-  --ls-block-ref-link-text-color: #2aa198 !important;
-  --ls-guideline-color: #586e75 !important;
-  --ls-menu-hover-color: #073642 !important;
-  --ls-tag-text-color: #2aa198 !important;
-  --ls-tag-text-hover-color: #93a1a1 !important;
-  --ls-slide-background-color: #002b36 !important;
-  --ls-block-bullet-border-color: #586e75 !important;
-  --ls-block-bullet-color: #657b83 !important;
-  --ls-selection-background-color: #073642 !important;
-  --ls-selection-text-color: #eee8d5 !important;
-  --ls-page-checkbox-color: #2aa198 !important;
-  --ls-page-mark-bg-color: #b58900 !important;
-  --ls-page-mark-color: #002b36 !important;
-  --ls-table-tr-even-background-color: #073642 !important;
-  --color-level-1: #002b36;
-  --color-level-2: #073642;
-  --color-level-3: #0a3d4a;
+  --ls-primary-background-color: #1b2128 !important;
+  --ls-secondary-background-color: #242b35 !important;
+  --ls-tertiary-background-color: #2e3642 !important;
+  --ls-quaternary-background-color: #242b35 !important;
+  --ls-primary-text-color: #c5cdd8 !important;
+  --ls-secondary-text-color: #8891a0 !important;
+  --ls-title-text-color: #e2e8f0 !important;
+  --ls-link-text-color: #5b9bd5 !important;
+  --ls-link-ref-text-color: #4ec9b0 !important;
+  --ls-link-ref-text-hover-color: #c5cdd8 !important;
+  --ls-link-text-hover-color: #c5cdd8 !important;
+  --ls-alink-color: #5b9bd5 !important;
+  --ls-block-highlight-color: rgba(46, 54, 66, 0.8) !important;
+  --ls-page-properties-background-color: #242b35 !important;
+  --ls-page-inline-code-bg-color: #242b35 !important;
+  --ls-page-inline-code-color: #d19a66 !important;
+  --ls-page-blockquote-bg-color: #242b35 !important;
+  --ls-page-blockquote-border-color: #3d4555 !important;
+  --ls-page-blockquote-color: #c5cdd8 !important;
+  --ls-border-color: #3d4555 !important;
+  --ls-secondary-border-color: #3d4555 !important;
+  --ls-scrollbar-foreground-color: #3d4555 !important;
+  --ls-scrollbar-background-color: #1b2128 !important;
+  --ls-head-text-color: #e2e8f0 !important;
+  --ls-active-primary-color: #4ec9b0 !important;
+  --ls-active-secondary-color: #c5cdd8 !important;
+  --ls-block-properties-background-color: #242b35 !important;
+  --ls-block-ref-link-text-color: #4ec9b0 !important;
+  --ls-guideline-color: #3d4555 !important;
+  --ls-menu-hover-color: #242b35 !important;
+  --ls-tag-text-color: #4ec9b0 !important;
+  --ls-tag-text-hover-color: #c5cdd8 !important;
+  --ls-slide-background-color: #1b2128 !important;
+  --ls-block-bullet-border-color: #3d4555 !important;
+  --ls-block-bullet-color: #5a6270 !important;
+  --ls-selection-background-color: #2e3642 !important;
+  --ls-selection-text-color: #e2e8f0 !important;
+  --ls-page-checkbox-color: #4ec9b0 !important;
+  --ls-page-mark-bg-color: #d19a66 !important;
+  --ls-page-mark-color: #1b2128 !important;
+  --ls-table-tr-even-background-color: #242b35 !important;
+  --color-level-1: #1b2128;
+  --color-level-2: #242b35;
+  --color-level-3: #2e3642;
 }
 html { color-scheme: dark; }
-body { background-color: #002b36 !important; color: #93a1a1 !important; }
-.left-sidebar-inner { background-color: #002b36 !important; }
-.cp__header { background-color: #002b36 !important; }
-#main-content-container { background-color: #002b36 !important; }
+body { background-color: #1b2128 !important; color: #c5cdd8 !important; }
+.left-sidebar-inner { background-color: #1b2128 !important; }
+.cp__header { background-color: #1b2128 !important; }
+#main-content-container { background-color: #1b2128 !important; }
 /* Catch-all for any theme class Logseq applies */
 .dark-theme, .white-theme, .light-theme {
-  --ls-primary-background-color: #002b36 !important;
-  --ls-secondary-background-color: #073642 !important;
-  --ls-primary-text-color: #93a1a1 !important;
+  --ls-primary-background-color: #1b2128 !important;
+  --ls-secondary-background-color: #242b35 !important;
+  --ls-primary-text-color: #c5cdd8 !important;
 }
 
 /* Hide mermaid source code blocks after kroki renders them */
