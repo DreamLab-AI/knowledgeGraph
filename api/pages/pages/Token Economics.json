@@ -8,12 +8,12 @@
     "Blockchain Governance"
   ],
   "wiki_links": [
-    "Token",
-    "Blockchain Entity",
     "Blockchain Technology",
     "Governance Token",
+    "Blockchain Entity",
     "Staking Rewards",
-    "Decentralized Finance"
+    "Decentralized Finance",
+    "Token"
   ],
   "ontology": {
     "term_id": "BC-0601",

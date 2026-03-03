@@ -8,11 +8,11 @@
   "wiki_links": [
     "Langflow",
     "Node based visual interfaces",
-    "Stable Diffusion",
-    "Agents",
     "Interfaces",
     "Large language models",
+    "Hardware and Edge",
+    "Stable Diffusion",
     "Infrastructure",
-    "Hardware and Edge"
+    "Agents"
   ]
 }

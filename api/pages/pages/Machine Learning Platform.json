@@ -6,11 +6,11 @@
     "Intelligent Virtual Entity"
   ],
   "wiki_links": [
-    "Enterprise AI Adoption",
     "Cloud Computing",
-    "metaverse",
     "MLOps",
-    "AI Development"
+    "metaverse",
+    "AI Development",
+    "Enterprise AI Adoption"
   ],
   "ontology": {
     "term_id": "MV-9954",

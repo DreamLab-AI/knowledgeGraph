@@ -13,15 +13,15 @@
     "Interoperability Framework"
   ],
   "wiki_links": [
-    "Cross-Platform Identity",
-    "System Capability",
     "Enterprise Connectivity",
     "Data Sharing",
-    "Standard Protocols",
-    "Common Data Formats",
+    "System Capability",
+    "Core Technology",
     "Data Exchange",
     "System Integration",
-    "Core Technology",
+    "Common Data Formats",
+    "Cross-Platform Identity",
+    "Standard Protocols",
     "Technical Standard"
   ],
   "ontology": {

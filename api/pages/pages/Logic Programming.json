@@ -9,9 +9,9 @@
   "wiki_links": [
     "Artificial Intelligence",
     "Symbolic AI",
-    "ArtificialIntelligenceDomain",
     "Prolog",
-    "Academic AI Research"
+    "Academic AI Research",
+    "ArtificialIntelligenceDomain"
   ],
   "ontology": {
     "term_id": "AI-9003",

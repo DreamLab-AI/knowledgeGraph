@@ -7,13 +7,13 @@
     "Cross-Platform Interoperability"
   ],
   "wiki_links": [
-    "Interoperability Protocol",
-    "Blockchain",
-    "Interoperability",
-    "Message Passing",
     "Light Client",
-    "Oracle",
-    "Cross-Chain Bridge"
+    "Cross-Chain Bridge",
+    "Interoperability",
+    "Interoperability Protocol",
+    "Message Passing",
+    "Blockchain",
+    "Oracle"
   ],
   "ontology": {
     "term_id": "BC-8015",

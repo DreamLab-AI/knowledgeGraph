@@ -6,11 +6,11 @@
     "Privacy Impact Assessment (PIA)"
   ],
   "wiki_links": [
-    "metaverse",
     "Privacy By Design",
-    "GDPR",
     "Data Governance",
-    "Data Processing"
+    "Data Processing",
+    "metaverse",
+    "GDPR"
   ],
   "ontology": {
     "term_id": "MV-10087",

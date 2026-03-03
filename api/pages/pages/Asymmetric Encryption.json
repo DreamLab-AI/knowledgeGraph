@@ -10,14 +10,14 @@
     "Symmetric Encryption"
   ],
   "wiki_links": [
+    "Information Security",
+    "Hash Function",
+    "Key Derivation Function",
     "Digital Signature",
     "Symmetric Encryption",
-    "Public Key Infrastructure",
-    "Hash Function",
-    "Information Security",
-    "Blockchain",
-    "Key Derivation Function",
     "Cryptography",
+    "Blockchain",
+    "Public Key Infrastructure",
     "Elliptic Curve Cryptography"
   ],
   "ontology": {

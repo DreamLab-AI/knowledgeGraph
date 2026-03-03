@@ -7,12 +7,12 @@
   ],
   "wiki_links": [
     "Product Traceability",
-    "Provenance Verification",
-    "Blockchain",
     "Hyperledger Fabric",
-    "Enterprise Blockchain",
+    "Provenance Verification",
     "IoT Integration",
-    "Smart Contracts"
+    "Blockchain",
+    "Smart Contracts",
+    "Enterprise Blockchain"
   ],
   "ontology": {
     "term_id": "BC-7002",

@@ -7,13 +7,13 @@
   ],
   "wiki_links": [
     "Skeleton Mapping",
-    "metaverse",
     "Character Animation Reuse",
-    "Motion Capture Workflows",
+    "Avatar Animation",
     "Inverse Kinematics",
+    "metaverse",
     "Animation Technology",
-    "Pose Matching",
-    "Avatar Animation"
+    "Motion Capture Workflows",
+    "Pose Matching"
   ],
   "ontology": {
     "term_id": "MV-9766",

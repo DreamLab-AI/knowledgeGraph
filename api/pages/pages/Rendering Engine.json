@@ -15,13 +15,13 @@
     "Eye Tracking"
   ],
   "wiki_links": [
-    "NVIDIA",
-    "Gaussian splatting and Similar",
-    "Virtual Reality",
-    "Metaverse",
-    "Film Production",
-    "Ray Tracing",
     "Game Development",
+    "Gaussian splatting and Similar",
+    "Ray Tracing",
+    "Virtual Reality",
+    "NVIDIA",
+    "Film Production",
+    "Metaverse",
     "Computer Graphics"
   ],
   "ontology": {

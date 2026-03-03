@@ -15,16 +15,16 @@
     "Digital Ontology Repository"
   ],
   "wiki_links": [
-    "Cross-Platform Identity",
-    "Credential Validation",
-    "Single Sign-On",
-    "Access Control",
+    "Session Management",
     "Authorisation",
-    "Security Service",
     "Identity Verification",
     "Core Technology",
     "Identity Management",
-    "Session Management"
+    "Security Service",
+    "Access Control",
+    "Credential Validation",
+    "Cross-Platform Identity",
+    "Single Sign-On"
   ],
   "ontology": {
     "term_id": "NGM-7010",
