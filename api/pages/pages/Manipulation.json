@@ -3,16 +3,16 @@
   "title": "Manipulation",
   "content": "- ### OntologyBlock\n  id:: manipulation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-0602\n\t- preferred-term:: Manipulation\n\t- source-domain:: rb\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Manipulation in robotics refers to the ability of robotic systems to physically interact with and control objects in their environment. This encompasses grasping, object handling, dexterous manipulation, and the end effectors and planning algorithms that enable robots to perform precise physical tasks.\n\t- owl:class:: rb:Manipulation\n\t- belongsToDomain:: [[Robotics Systems]]\n\t- #### Relationships\n\t  id:: manipulation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Robotics Systems]]\n\t\t- is-parent-of:: [[Gripper]]\n\t\t- is-parent-of:: [[End Effector]]\n\t\t- is-parent-of:: [[Grasp Planning]]\n\t\t- related-to:: [[Motion Planning]]\n\t\t- related-to:: [[Robot Kinematics]]",
   "backlinks": [
-    "RobotLearning",
-    "tc-0003-telepresence-robot"
+    "tc-0003-telepresence-robot",
+    "RobotLearning"
   ],
   "wiki_links": [
-    "Grasp Planning",
+    "End Effector",
     "Robotics Systems",
-    "Motion Planning",
+    "Grasp Planning",
     "Gripper",
     "Robot Kinematics",
-    "End Effector"
+    "Motion Planning"
   ],
   "ontology": {
     "term_id": "RB-0602",

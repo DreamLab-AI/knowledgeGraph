@@ -3,18 +3,18 @@
   "title": "Security Architecture",
   "content": "- ### OntologyBlock\n  id:: security-architecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10036\n\t- source-domain:: mv\n\t- preferred-term:: Security Architecture\n\t- status:: active\n\t- definition:: A comprehensive framework defining security controls, policies, and technologies protecting metaverse infrastructure, user data, and digital assets through defence-in-depth strategies including authentication, encryption, access control, and threat monitoring.\n\t- owl:class:: mv:SecurityArchitecture\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: security-architecture-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[System Architecture]]\n\t\t- related-to:: [[Zero Trust Security]]\n\t\t- related-to:: [[Identity Management]]\n\t\t- related-to:: [[Threat Detection]]\n\t\t- enables:: [[Secure Systems]]\n\t- #### Security Layers\n\t  collapsed:: true\n\t\t- Network perimeter security\n\t\t- Identity and access management\n\t\t- Application security controls\n\t\t- Data protection and encryption\n\t\t- Endpoint security\n\t- #### Key Principles\n\t  collapsed:: true\n\t\t- Zero trust network architecture\n\t\t- Defence in depth strategy\n\t\t- Least privilege access\n\t\t- Security by design\n\t\t- Continuous monitoring",
   "backlinks": [
-    "Zero-Trust Architecture (ZTA)",
-    "Trust Architecture",
     "Threat Surface Map",
-    "Cryptographic Key Management"
+    "Cryptographic Key Management",
+    "Zero-Trust Architecture (ZTA)",
+    "Trust Architecture"
   ],
   "wiki_links": [
-    "Identity Management",
+    "Threat Detection",
     "Zero Trust Security",
     "Secure Systems",
     "metaverse",
     "System Architecture",
-    "Threat Detection"
+    "Identity Management"
   ],
   "ontology": {
     "term_id": "MV-10036",

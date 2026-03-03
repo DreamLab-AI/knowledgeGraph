@@ -7,15 +7,15 @@
   ],
   "wiki_links": [
     "Blockchain Authentication",
-    "Verifiable Credentials",
-    "Identity Verification",
-    "Trust Establishment",
-    "Secure Communication",
-    "Public Key Infrastructure",
-    "Certificate Authority",
     "Cryptographic Keys",
+    "Identity Verification",
     "Digital Security",
+    "Public Key Infrastructure",
+    "Secure Communication",
+    "Verifiable Credentials",
     "metaverse",
+    "Certificate Authority",
+    "Trust Establishment",
     "SSL Certificates"
   ],
   "ontology": {

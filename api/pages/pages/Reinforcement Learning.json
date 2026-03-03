@@ -3,18 +3,18 @@
   "title": "Reinforcement Learning",
   "content": "- ### OntologyBlock\n  id:: mv9675-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9675\n\t- preferred-term:: Reinforcement Learning\n\t- source-domain:: mv\n\t- owl:class:: mv:ReinforcementLearning\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Reinforcement Learning is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nReinforcement Learning represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "AI Game Agent",
+    "Behavioural Feedback Loop",
     "Active Learning",
-    "Autonomous Agent",
-    "Deep Learning",
-    "Monte Carlo Tree Search",
-    "Transformers",
-    "Reinforcement Learning Algorithm",
     "AI Agent System",
     "Training Methods",
+    "AI Game Agent",
+    "Autonomous Agent",
+    "Online Learning",
+    "Deep Learning",
+    "Transformers",
     "Reward Function",
-    "Behavioural Feedback Loop",
-    "Online Learning"
+    "Monte Carlo Tree Search",
+    "Reinforcement Learning Algorithm"
   ],
   "wiki_links": [
     "owl:Thing"

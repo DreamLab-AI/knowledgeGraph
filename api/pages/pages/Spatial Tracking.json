@@ -3,15 +3,15 @@
   "title": "Spatial Tracking",
   "content": "- ### OntologyBlock\n  id:: spatial-tracking-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10066\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Tracking\n\t- status:: active\n\t- definition:: Technology that determines the position and orientation of objects in three-dimensional space using six degrees of freedom (6DoF), enabling precise tracking of headsets, controllers, and body movements through inside-out or outside-in sensor configurations.\n\t- owl:class:: mv:SpatialTracking\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: spatial-tracking-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Motion Tracking]]\n\t\t- related-to:: [[6DoF Tracking]]\n\t\t- related-to:: [[SLAM]]\n\t\t- related-to:: [[Inside Out Tracking]]\n\t\t- enables:: [[Immersive VR]]\n\t- #### Tracking Methods\n\t  collapsed:: true\n\t\t- Inside-out tracking via embedded sensors\n\t\t- Outside-in tracking with external sensors\n\t\t- IMU for rotational measurement\n\t\t- Camera-based visual tracking\n\t\t- Marker-based positioning systems\n\t- #### Market Context\n\t  collapsed:: true\n\t\t- Spatial computing market $124B in 2023\n\t\t- Projected growth to $620B by 2032\n\t\t- Meta Quest 3 starting at $299\n\t\t- Apple Vision Pro as premium option\n\t\t- 18.3% annual growth rate",
   "backlinks": [
-    "Extended Reality (XR)",
-    "ETSI_Domain_Immersive___Reality_Capture"
+    "ETSI_Domain_Immersive___Reality_Capture",
+    "Extended Reality (XR)"
   ],
   "wiki_links": [
-    "Motion Tracking",
-    "SLAM",
-    "6DoF Tracking",
     "Inside Out Tracking",
     "Immersive VR",
+    "SLAM",
+    "Motion Tracking",
+    "6DoF Tracking",
     "metaverse"
   ],
   "ontology": {

@@ -6,12 +6,12 @@
     "Metaverse Psychology Profile"
   ],
   "wiki_links": [
-    "Evidence Based VR Treatment",
-    "VR Therapy",
     "Mental Health",
-    "Digital Therapeutics",
     "Research Methods",
-    "metaverse"
+    "Digital Therapeutics",
+    "metaverse",
+    "VR Therapy",
+    "Evidence Based VR Treatment"
   ],
   "ontology": {
     "term_id": "MV-10015",

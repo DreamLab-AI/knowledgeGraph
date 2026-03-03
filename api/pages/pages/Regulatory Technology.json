@@ -3,9 +3,9 @@
   "title": "Regulatory Technology",
   "content": "- ### OntologyBlock\n  id:: mv9674-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9674\n\t- preferred-term:: Regulatory Technology\n\t- source-domain:: mv\n\t- owl:class:: mv:RegulatoryTechnology\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Regulatory Technology is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nRegulatory Technology represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Blockchain Compliance",
     "Compliance Dashboard",
-    "AI Risks"
+    "AI Risks",
+    "Blockchain Compliance"
   ],
   "wiki_links": [
     "owl:Thing"

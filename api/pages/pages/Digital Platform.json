@@ -3,8 +3,8 @@
   "title": "Digital Platform",
   "content": "- ### OntologyBlock\n  id:: mv9585-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9585\n\t- preferred-term:: Digital Platform\n\t- source-domain:: mv\n\t- owl:class:: mv:DigitalPlatform\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Digital Platform is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nDigital Platform represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Civic Participation",
-    "Virtual World Platform"
+    "Virtual World Platform",
+    "Civic Participation"
   ],
   "wiki_links": [
     "owl:Thing"

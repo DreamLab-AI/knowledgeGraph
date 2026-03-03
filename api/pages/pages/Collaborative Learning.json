@@ -3,21 +3,21 @@
   "title": "Collaborative Learning",
   "content": "- ### OntologyBlock\n  id:: collaborative-learning-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9822\n\t- source-domain:: mv\n\t- preferred-term:: Collaborative Learning\n\t- definition:: An educational approach where learners work together in virtual environments, metaverse platforms, or VR spaces to achieve shared learning goals through social interaction, knowledge co-construction, and collective problem-solving enabled by immersive and embodied digital experiences.\n\t- status:: active\n\t- owl:class:: mv:CollaborativeLearning\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: collaborative-learning-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Educational Methodology]]\n\t\t- enables:: [[Social Learning]], [[Knowledge Co-Construction]], [[Remote Collaboration]]\n\t\t- requires:: [[Virtual Environment]], [[Communication Tools]], [[Shared Workspace]]\n\t\t- related-to:: [[VR Education]], [[Metaverse Learning]], [[Distance Education]]\n- ## Technical Details\n\t- **Metaverse Benefits**:\n\t\t- Full-body avatars provide natural classroom-like interactions\n\t\t- VR heightens empathy and emotional involvement\n\t\t- Experiential learning through virtual field trips\n\t\t- Global collaboration without physical travel\n\t- **Research Frameworks**:\n\t\t- Meta-MILE: Multi-layered Immersive Learning Environment integrating personalization, social collaboration, and advanced assessment\n\t- **Platforms**: ENGAGE XR, Meta Horizon Workrooms, Spatial.io\n\t- **Outcomes**:\n\t\t- Purdue: 10-15% increase in nursing exam results\n\t\t- University of Glasgow: Transformed teaching approaches\n\t\t- NYU Dentistry: 1,200 dental students trained via VR\n\t- **Challenges**: Device accessibility, network stability, specialized pedagogy, digital divide concerns\n- ## Applications\n\t- International collaborative courses\n\t- Virtual science experiments\n\t- Historical site exploration\n\t- Professional skills training\n\t- Team-based problem solving",
   "backlinks": [
-    "Collective Learning",
-    "Education Metaverse"
+    "Education Metaverse",
+    "Collective Learning"
   ],
   "wiki_links": [
-    "Social Learning",
-    "Metaverse Learning",
-    "Knowledge Co-Construction",
-    "Virtual Environment",
-    "Communication Tools",
     "Remote Collaboration",
+    "Virtual Environment",
+    "Metaverse Learning",
+    "Communication Tools",
+    "Knowledge Co-Construction",
+    "Shared Workspace",
     "Educational Methodology",
-    "VR Education",
-    "Distance Education",
+    "Social Learning",
     "metaverse",
-    "Shared Workspace"
+    "Distance Education",
+    "VR Education"
   ],
   "ontology": {
     "term_id": "MV-9822",

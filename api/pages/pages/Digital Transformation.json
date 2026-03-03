@@ -3,21 +3,21 @@
   "title": "Digital Transformation",
   "content": "- ### OntologyBlock\n  id:: digital-transformation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9873\n\t- source-domain:: mv\n\t- preferred-term:: Digital Transformation\n\t- definition:: The comprehensive integration of digital technologies across all areas of business and society, fundamentally changing how organizations operate, deliver value, and engage with customers through technologies such as AI, cloud computing, IoT, and immersive platforms including the metaverse.\n\t- status:: active\n\t- owl:class:: mv:DigitalTransformation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-transformation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Organizational Change]]\n\t\t- enables:: [[Business Innovation]], [[Operational Efficiency]], [[Customer Experience]]\n\t\t- requires:: [[Cloud Computing]], [[Data Analytics]], [[Change Management]]\n\t\t- related-to:: [[Enterprise Metaverse]], [[Digital Twin]], [[Industry 4.0]]\n- ## Technical Details\n\t- **Enterprise Metaverse Applications**:\n\t\t- Training and simulation: Most prevalent enterprise use case\n\t\t- Digital twins: Real-time asset replication and simulation\n\t\t- Collaboration tools: Microsoft Mesh for Teams (GA January 2024)\n\t\t- Virtual environments for professional use\n\t- **Market Size (2024)**:\n\t\t- Enterprise metaverse: $340M (projected $860M by 2032, CAGR 12.3%)\n\t\t- 62% of Fortune 500 companies have initiated metaverse pilots\n\t\t- $18B+ invested in immersive technologies in US enterprises\n\t- **Key Technologies**:\n\t\t- AI and generative AI for content creation\n\t\t- Blockchain and robotics integration\n\t\t- AR/VR/MR immersive interfaces\n\t\t- 5G hyperconnected networks\n\t\t- Cloud computing for processing and storage\n\t- **Challenges**: Metaverse development stalled as focus shifted to generative AI; $45B+ Meta Reality Labs losses (2020-2024)\n- ## Applications\n\t- Employee training and onboarding\n\t- Virtual collaboration and meetings\n\t- Digital twin operations and simulation\n\t- Customer engagement in virtual environments\n\t- Smart manufacturing and Industry 4.0",
   "backlinks": [
-    "Technology Adoption",
-    "Enterprise Architecture"
+    "Enterprise Architecture",
+    "Technology Adoption"
   ],
   "wiki_links": [
-    "Operational Efficiency",
-    "Enterprise Metaverse",
-    "Business Innovation",
-    "Data Analytics",
-    "Cloud Computing",
-    "Industry 4.0",
     "Change Management",
-    "Digital Twin",
-    "Organizational Change",
     "Customer Experience",
-    "metaverse"
+    "Organizational Change",
+    "Digital Twin",
+    "metaverse",
+    "Enterprise Metaverse",
+    "Data Analytics",
+    "Business Innovation",
+    "Industry 4.0",
+    "Cloud Computing",
+    "Operational Efficiency"
   ],
   "ontology": {
     "term_id": "MV-9873",

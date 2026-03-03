@@ -7,14 +7,14 @@
     "Tensor Processing Unit"
   ],
   "wiki_links": [
-    "AI Hardware",
     "GPU",
-    "Neural Network Training",
-    "Distributed Training",
-    "Deep Learning",
     "Large Language Models",
+    "Distributed Training",
     "High-Performance Computing",
-    "Tensor Processing Unit"
+    "Tensor Processing Unit",
+    "Neural Network Training",
+    "Deep Learning",
+    "AI Hardware"
   ],
   "ontology": {
     "term_id": "AI-1022",

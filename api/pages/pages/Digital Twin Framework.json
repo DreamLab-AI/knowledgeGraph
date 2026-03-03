@@ -6,17 +6,17 @@
     "Digital Twin Interop Protocol"
   ],
   "wiki_links": [
-    "Scalable Deployment",
-    "System Interoperability",
-    "Enterprise Architecture",
-    "Reference Architecture",
     "Integration Standards",
+    "Scalable Deployment",
+    "IEEE Standards",
+    "System Interoperability",
     "Industrial IoT",
     "Standards Compliance",
-    "Data Models",
     "RAMI 4.0",
+    "Reference Architecture",
+    "Enterprise Architecture",
     "metaverse",
-    "IEEE Standards"
+    "Data Models"
   ],
   "ontology": {
     "term_id": "MV-9878",

@@ -3,20 +3,20 @@
   "title": "Interoperability Standard",
   "content": "- ### OntologyBlock\n  id:: interoperability-standard-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9935\n\t- source-domain:: mv\n\t- preferred-term:: Interoperability Standard\n\t- status:: active\n\t- owl:class:: mv:InteroperabilityStandard\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Formal specifications and protocols that enable different metaverse platforms, XR devices, and virtual environments to exchange data and operate together seamlessly, including OpenXR, glTF, USD, and emerging standards from the Metaverse Standards Forum.\n\t- #### Relationships\n\t  id:: interoperability-standard-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Technical Standard]]\n\t\t- related-to:: [[OpenXR Standard]]\n\t\t- related-to:: [[Interface Standards]]\n\t\t- enables:: [[Cross-Platform Compatibility]]\n\n## OpenXR Standard\n\n### Version 1.1 Release (April 2024)\n- Khronos Group announcement\n- Immediate specification availability\n- Cross-platform VR/AR/MR access\n- API extension consolidation\n- Fragmentation reduction\n\n### New Functionality\n- Core specification updates\n- Development streamlining\n- More powerful applications\n- Efficient XR development\n- Widely used extensions integrated\n\n### Industry Adoption\n- Acer conformant implementation\n- ByteDance support\n- Canon integration\n- HTC implementation\n- Magic Leap conformance\n\n### Major Supporters\n- Meta platform support\n- Microsoft Windows integration\n- Sony PlayStation VR\n- XREAL glasses\n- Qualcomm chipset support\n\n### Additional Players\n- Valve Steam VR\n- Varjo enterprise\n- Collabora Monado runtime\n- Open source availability\n- Cross-vendor compatibility\n\n## Khronos Group\n\n### Organisation Profile\n- Open non-profit consortium\n- Over 180 member companies\n- Industry-leading participation\n- Royalty-free standards\n- Advanced interoperability focus\n\n### Standard Areas\n- 3D graphics\n- Metaverse technologies\n- AR and VR standards\n- Parallel programming\n- Vision acceleration\n\n## Metaverse Standards Forum\n\n### Foundation\n- June 2022 launch\n- Khronos Group driven\n- Neil Trevett leadership\n- Patrick Cozzi (Cesium)\n- Marc Petit (Epic Games)\n\n### Growth\n- 2,400+ members (2024)\n- Multiple working groups\n- Exploratory groups active\n- Governance established\n- Financial independence\n\n### Mission\n- Open metaverse building\n- Inclusive standards\n- XR industry cooperation\n- Interoperability advancement\n- Foundational standards\n\n## Google Adoption (December 2024)\n\n### Significance\n- OpenXR standard adoption\n- AndroidXR empowerment\n- Robust content ecosystem\n- Broader audience access\n- Milestone achievement\n\n### Developer Benefits\n- Significantly larger audience\n- Cross-platform development\n- Reduced fragmentation\n- Standard API access\n- Simplified porting\n\n## OpenXR Purpose\n\n### Core Function\n- Royalty-free open standard\n- Common API set\n- XR application development\n- Wide device coverage\n- AR and VR support\n\n### Benefits\n- Reduced development time\n- Lower adaptation costs\n- Individual platform avoidance\n- Larger application market\n- Manufacturer adoption incentive\n\n## Participating Companies\n\n### Platform Holders\n- Meta Platforms\n- Microsoft Windows\n- Sony Interactive\n- Apple (Vision Pro)\n- Google (AndroidXR)\n\n### Hardware Makers\n- HTC Vive\n- Valve Index\n- Varjo Enterprise\n- Magic Leap\n- XREAL Air\n\n### Chipset Providers\n- Qualcomm Snapdragon\n- MediaTek integration\n- NVIDIA support\n- AMD compatibility\n- Intel development\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
-    "Interoperability Architecture",
-    "Iso Standards",
-    "Interface Standards",
     "Documentation Standards",
-    "Global Metaverse Operations",
     "Format Parser",
+    "Gltf Standard",
+    "Interoperability Architecture",
+    "Interface Standards",
+    "Iso Standards",
     "Multiverse",
-    "Gltf Standard"
+    "Global Metaverse Operations"
   ],
   "wiki_links": [
-    "Technical Standard",
     "Interface Standards",
     "Cross-Platform Compatibility",
     "metaverse",
+    "Technical Standard",
     "OpenXR Standard"
   ],
   "ontology": {

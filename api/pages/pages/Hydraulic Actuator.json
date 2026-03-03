@@ -3,8 +3,8 @@
   "title": "Hydraulic Actuator",
   "content": "- ### OntologyBlock\n  id:: rb9513-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9513\n\t- preferred-term:: Hydraulic Actuator\n\t- source-domain:: rb\n\t- owl:class:: rb:HydraulicActuator\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Hydraulic Actuator is a concept within the robotics domain. Further enrichment pending.\n\n## Overview\n\nHydraulic Actuator represents an abstract concept in the robotics ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Hydraulic Cylinder",
-    "Hydraulic Motor"
+    "Hydraulic Motor",
+    "Hydraulic Cylinder"
   ],
   "wiki_links": [
     "owl:Thing"

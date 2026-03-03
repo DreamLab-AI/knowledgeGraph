@@ -4,16 +4,16 @@
   "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1014\n  - preferred-term:: Ensemble Methods\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:EnsembleMethods\n\n### Relationships\n- is-subclass-of:: [[Machine Learning]]\n  collapsed:: true\n  - #### Inverse Relationships (Inferred by Reasoner)\n    - Boosting is-subclass-of Ensemble Methods\n    - Bagging is-subclass-of Ensemble Methods\n    - Stacking is-subclass-of Ensemble Methods\n- skos:related:: [[Random Forest]]\n- skos:related:: [[Gradient Boosting]]\n- enables:: [[Model Combination]]\n- improves:: [[Generalization]]\n\n### Definition\nEnsemble methods are machine learning techniques that combine multiple models (weak learners) to create a stronger, more accurate predictor. By aggregating predictions from diverse models, ensembles reduce variance, bias, or improve predictions through the wisdom of crowds principle, often achieving better performance than any single model alone.\n\n### Core Principles\n**Diversity:**\n- Models make different errors\n- Created through:\n  - Different algorithms\n  - Different training data subsets\n  - Different feature subsets\n  - Different hyperparameters\n\n**Aggregation:**\n- Combine predictions to make final decision\n- Methods: voting, averaging, weighted combination\n\n**Bias-Variance Tradeoff:**\n- Bagging reduces variance\n- Boosting reduces bias\n- Stacking can reduce both\n\n### Major Ensemble Types\n**Parallel Ensembles:**\n- Train models independently\n- Aggregate predictions\n- Examples: Bagging, Random Forest\n- Reduces variance\n\n**Sequential Ensembles:**\n- Train models iteratively\n- Each model corrects previous errors\n- Examples: Boosting (AdaBoost, Gradient Boosting)\n- Reduces bias\n\n**Hierarchical Ensembles:**\n- Multiple levels of models\n- Examples: Stacking, cascading\n- Can reduce both bias and variance\n\n### Combination Methods\n**Classification:**\n- Majority voting\n- Weighted voting\n- Soft voting (average probabilities)\n\n**Regression:**\n- Simple averaging\n- Weighted averaging\n- Median (robust to outliers)\n\n**Meta-Learning:**\n- Train meta-model on base model outputs\n- Stacking approach\n\n### Theoretical Foundation\n- Condorcet's jury theorem\n- Bias-variance decomposition\n- PAC (Probably Approximately Correct) learning\n- Margin theory\n\n### Advantages\n- Improved accuracy and robustness\n- Reduced overfitting\n- Better generalization\n- Handles complex patterns\n- Often wins competitions (Kaggle)\n\n### Disadvantages\n- Increased computational cost\n- Less interpretable (black box)\n- More complex to deploy\n- Diminishing returns with too many models\n- Risk of overfitting if not careful\n\n### Notable Implementations\n- Random Forest (Bagging + feature randomness)\n- XGBoost (Gradient Boosting)\n- LightGBM (Fast gradient boosting)\n- CatBoost (Categorical boosting)\n- Voting Classifier (sklearn)\n\n### Applications\n- Kaggle competitions (dominant approach)\n- Credit scoring\n- Fraud detection\n- Medical diagnosis\n- Stock price prediction\n- Customer churn prediction\n- Image and text classification\n\n### Best Practices\n- Ensure base model diversity\n- Use cross-validation for training\n- Don't combine too many weak models\n- Balance complexity vs. performance\n- Consider computational constraints",
   "backlinks": [
     "Active Learning",
+    "Bagging",
     "Stacking",
-    "Boosting",
-    "Bagging"
+    "Boosting"
   ],
   "wiki_links": [
-    "Random Forest",
-    "Model Combination",
-    "Gradient Boosting",
     "Generalization",
-    "Machine Learning"
+    "Model Combination",
+    "Machine Learning",
+    "Gradient Boosting",
+    "Random Forest"
   ],
   "ontology": {
     "term_id": "AI-1014",

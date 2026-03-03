@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "Blockchain Privacy",
-    "Zero Knowledge Proof",
-    "Layer 2 Scaling",
     "metaverse",
-    "Cryptography"
+    "Cryptography",
+    "Layer 2 Scaling",
+    "Zero Knowledge Proof"
   ],
   "ontology": {
     "term_id": "MV-10175",

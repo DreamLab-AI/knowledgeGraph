@@ -3,22 +3,22 @@
   "title": "Community Standards",
   "content": "- ### OntologyBlock\n  id:: community-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9825\n\t- source-domain:: mv\n\t- preferred-term:: Community Standards\n\t- definition:: The rules, guidelines, and behavioral norms established for virtual environments and metaverse platforms that govern user conduct, content creation, and social interactions, often enforced through technical standards, governance frameworks, and moderation systems to ensure safety, inclusivity, and positive user experiences.\n\t- status:: active\n\t- owl:class:: mv:CommunityStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: community-standards-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Platform Governance]]\n\t\t- enables:: [[User Safety]], [[Content Moderation]], [[Trust Building]]\n\t\t- requires:: [[Governance Framework]], [[Moderation Tools]], [[Reporting Mechanisms]]\n\t\t- related-to:: [[Content Moderation Standards]], [[Digital Ethics]], [[Platform Policy]]\n- ## Technical Details\n\t- **Standards Organizations**:\n\t\t- Metaverse Standards Forum: 2,600+ member organizations promoting interoperability and inclusivity\n\t\t- IEEE Standards: P2048 Metaverse Terminology, P7016 Ethically Aligned Design\n\t\t- World Economic Forum \"Defining and Building the Metaverse\" initiative\n\t- **Key Principles**:\n\t\t- Plurality, inclusivity, openness, transparency, decision-making by consensus\n\t\t- Decentralized platforms based on community protocols via blockchain\n\t\t- Technical standards enabling compatibility and security across platforms\n\t- **Human Rights Considerations**:\n\t\t- Virtual environments enable free expression but risk bullying, harassment, and hate speech\n\t\t- Behavioral moderation needed in addition to content moderation\n\t\t- Immersive nature intensifies perception of threats and psychological effects\n\t- **Regulatory Frameworks**: GDPR, Digital Services Act, EU AI Act, Global Digital Compact (2024)\n- ## Applications\n\t- Virtual world governance policies\n\t- User behavior guidelines enforcement\n\t- Content creation standards\n\t- Community safety protocols\n\t- Cross-platform interoperability standards",
   "backlinks": [
-    "Content Moderation",
     "Digital Ritual",
+    "Content Moderation",
     "Content Moderation Standards"
   ],
   "wiki_links": [
-    "Platform Governance",
-    "Governance Framework",
-    "Reporting Mechanisms",
-    "Platform Policy",
-    "User Safety",
-    "Content Moderation Standards",
+    "Moderation Tools",
     "Trust Building",
+    "User Safety",
+    "Governance Framework",
+    "Platform Governance",
+    "Content Moderation Standards",
+    "Reporting Mechanisms",
+    "metaverse",
     "Digital Ethics",
     "Content Moderation",
-    "metaverse",
-    "Moderation Tools"
+    "Platform Policy"
   ],
   "ontology": {
     "term_id": "MV-9825",

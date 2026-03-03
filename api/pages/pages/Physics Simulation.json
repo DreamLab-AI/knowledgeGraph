@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: mv9662-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9662\n\t- preferred-term:: Physics Simulation\n\t- source-domain:: mv\n\t- owl:class:: mv:PhysicsSimulation\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Physics Simulation is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nPhysics Simulation represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
     "Virtual Physical Collision",
-    "Open World",
-    "Rigid Body Dynamics",
     "Particle System",
+    "Soft Body Dynamics",
+    "Rigid Body Dynamics",
     "Compute Layer",
     "Fluid Simulation",
-    "Soft Body Dynamics",
+    "Open World",
     "Motion Solver Software"
   ],
   "wiki_links": [

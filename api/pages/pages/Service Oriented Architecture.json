@@ -6,11 +6,11 @@
     "Metaverse Architecture Stack"
   ],
   "wiki_links": [
-    "Software Architecture",
-    "Enterprise Service Bus",
     "System Interoperability",
+    "Software Architecture",
     "API Design",
     "Microservices",
+    "Enterprise Service Bus",
     "metaverse"
   ],
   "ontology": {

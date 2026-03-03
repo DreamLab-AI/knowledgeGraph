@@ -5,16 +5,16 @@
   "backlinks": [],
   "wiki_links": [
     "NeuralNetwork",
-    "ReinforcementLearning",
     "FederatedLearning",
-    "MachineLearning",
-    "MetaverseDomain",
-    "AIGovernance",
-    "DataPipeline",
     "AIEthics",
-    "GenerativeModel",
+    "ReinforcementLearning",
     "AISystem",
-    "ExplainableAI"
+    "AIGovernance",
+    "MachineLearning",
+    "GenerativeModel",
+    "ExplainableAI",
+    "DataPipeline",
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "MV-3058",

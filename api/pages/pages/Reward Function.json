@@ -6,12 +6,12 @@
     "AI Agent System"
   ],
   "wiki_links": [
-    "NPC Behaviour",
     "Autonomous Agent Learning",
-    "AI Training",
-    "metaverse",
+    "Game AI",
     "Reinforcement Learning",
-    "Game AI"
+    "metaverse",
+    "AI Training",
+    "NPC Behaviour"
   ],
   "ontology": {
     "term_id": "MV-10024",

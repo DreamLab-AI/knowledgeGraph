@@ -4,25 +4,25 @@
   "content": "- ### OntologyBlock\n  id:: rendering-engine-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7018\n\t- preferred-term:: Rendering Engine\n\t- source-domain:: ngm\n\t- definition:: A rendering engine is software that generates 2D images or animations from 3D scene descriptions through rasterisation, ray tracing, or hybrid approaches. Modern real-time engines like Unreal Engine 5 and Unity employ advanced techniques including global illumination (Lumen), virtualised geometry (Nanite), neural rendering with RTX Tensor Cores, and DLSS upscaling to achieve cinematic-quality visuals at interactive frame rates.\n\t- status:: active\n\t- maturity:: reviewed\n\t- public-access:: true\n\t- belongsToDomain:: [[Metaverse]]\n\t- owl:class:: ngm:RenderingEngine\n\t- owl:role:: Concept\n\n## Major Real-Time Engines (2025)\n\n### Unreal Engine 5\n- **Lumen** - Global illumination and reflections system\n- **Nanite** - Virtualised geometry enabling film-quality assets\n- **MegaLights** - Stochastic direct lighting for orders of magnitude more dynamic lights\n- **Virtual Shadow Maps** - High-resolution shadows without pre-computation\n- **DLSS 4 Plugin** - Available for UE 5.2-5.6\n- Real-time ray tracing with NVIDIA RTX integration\n\n### Unity 6.1\n- Variable Rate Shading support\n- Deferred+ rendering path in Universal Render Pipeline\n- OctaneRender integration for GPU path tracing\n- Unity 7 roadmap includes generative AI for 3D skyboxes and models\n\n### NVIDIA RTX Neural Rendering\n- **Neural Shaders** - Tiny neural networks within shaders for texture compression\n- **RTX Mega Geometry** - Accelerated BVH builds for full-quality Nanite ray tracing\n- **ReSTIR PT** - Path tracing with infinite lights and improved reflections\n- **Cooperative Vectors** - DirectX 12 access to Tensor Cores from shaders\n\n## SIGGRAPH 2025\n\nThe [Advances in Real-Time Rendering](https://advances.realtimerendering.com/s2025/index.html) course celebrates 20 years with presentations from Activision, Ubisoft, Epic Games, id Software, and NVIDIA on cutting-edge techniques.\n\n### Relationships\n- is-subclass-of:: [[Computer Graphics]]\n- relatedTo:: [[Ray Tracing]]\n- relatedTo:: [[Gaussian splatting and Similar]]\n- usedIn:: [[Game Development]]\n- usedIn:: [[Virtual Reality]]\n- usedIn:: [[Film Production]]\n- enabledBy:: [[NVIDIA]]\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Research agent enrichment with 2025 context\n- **Verification**: NVIDIA developer documentation and SIGGRAPH proceedings verified\n- **References**: 7 pages reference this concept",
   "backlinks": [
     "Spatial Audio Scene Description",
-    "Scene Graph",
     "Feedback Mechanism",
-    "Visualization Layer",
-    "Eye Tracking",
-    "Digital Content Layer",
-    "Experience Layer",
-    "Compute Layer",
+    "Scene Graph",
     "Human Interface Layer (HIL)",
-    "Neural 3D Generation"
+    "Experience Layer",
+    "Neural 3D Generation",
+    "Compute Layer",
+    "Digital Content Layer",
+    "Visualization Layer",
+    "Eye Tracking"
   ],
   "wiki_links": [
-    "Virtual Reality",
-    "Metaverse",
-    "Ray Tracing",
-    "Computer Graphics",
-    "Gaussian splatting and Similar",
-    "Film Production",
     "NVIDIA",
-    "Game Development"
+    "Gaussian splatting and Similar",
+    "Game Development",
+    "Film Production",
+    "Ray Tracing",
+    "Metaverse",
+    "Computer Graphics",
+    "Virtual Reality"
   ],
   "ontology": {
     "term_id": "NGM-7018",

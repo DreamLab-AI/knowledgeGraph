@@ -3,16 +3,16 @@
   "title": "Adversarial Attacks",
   "content": "- ### OntologyBlock\n  id:: adversarial-attacks-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9760\n\t- source-domain:: mv\n\t- preferred-term:: Adversarial Attacks\n\t- status:: active\n\t- definition:: Adversarial Attacks are malicious techniques that exploit vulnerabilities in machine learning models by deliberately crafting deceptive input data to cause incorrect predictions, misclassifications, or unintended behaviors, often through subtle perturbations imperceptible to humans but significant to AI systems.\n\t- owl:class:: mv:AdversarialAttacks\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[AI Security Threats]]\n\t- enables:: [[Model Evasion]], [[System Manipulation]]\n\t- requires:: [[Knowledge of Target Model]], [[Crafted Perturbations]]\n\t- #### Relationships\n\t  id:: adversarial-attacks-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Adversarial Examples**: Inputs manipulated to cause incorrect outputs while appearing normal to humans\n- **Evasion Attacks**: Subtle modifications fooling trained models without triggering detection\n- **Poisoning Attacks**: Corruption of training data to embed exploitable vulnerabilities\n- **Prompt Injections**: Instructions hidden in data causing generative AI to bypass security protocols\n\n### NIST Taxonomy (2024)\nNIST AI 100-2 establishes taxonomy of AML concepts including ML lifecycle attack stages, attacker goals, and mitigation approaches.\n\n### Defense Strategies\nAdversarial training, ensemble methods, input validation, continuous model validation, and multi-layered defense approaches.",
   "backlinks": [
-    "Transformers",
     "Model Extraction",
+    "Transformers",
     "Perception System"
   ],
   "wiki_links": [
-    "System Manipulation",
-    "Crafted Perturbations",
-    "Knowledge of Target Model",
     "Model Evasion",
+    "Knowledge of Target Model",
+    "Crafted Perturbations",
     "metaverse",
+    "System Manipulation",
     "AI Security Threats"
   ],
   "ontology": {

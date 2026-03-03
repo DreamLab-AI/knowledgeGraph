@@ -7,10 +7,10 @@
   ],
   "wiki_links": [
     "Network Infrastructure",
-    "IoT Connectivity",
-    "Distributed Systems",
     "Decentralised Networks",
-    "metaverse"
+    "metaverse",
+    "IoT Connectivity",
+    "Distributed Systems"
   ],
   "ontology": {
     "term_id": "MV-9959",

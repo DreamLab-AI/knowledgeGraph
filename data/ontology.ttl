@@ -16,7 +16,7 @@
 # Multi-Domain Ontology - OWL2 DL Turtle Format
 # ==============================================================================
 #
-# Generated: 2026-02-24T17:50:10.465970
+# Generated: 2026-03-03T19:30:07.559005
 # Total Terms: 2240
 #
 # Domain Distribution:
@@ -38,7 +38,7 @@
     rdfs:label "Multi-Domain Knowledge Ontology"@en ;
     rdfs:comment "Comprehensive ontology covering AI, Blockchain, Robotics, Metaverse, Telecollaboration, and Disruptive Technologies."@en ;
     owl:versionInfo "1.0.0" ;
-    dcterms:created "2026-02-24"^^xsd:date ;
+    dcterms:created "2026-03-03"^^xsd:date ;
     dcterms:creator "Logseq Ontology Tools" .
 
 # ==============================================================================

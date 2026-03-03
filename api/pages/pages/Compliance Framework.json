@@ -3,11 +3,11 @@
   "title": "Compliance Framework",
   "content": "- ### OntologyBlock\n  id:: mv9529-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9529\n\t- preferred-term:: Compliance Framework\n\t- source-domain:: mv\n\t- owl:class:: mv:ComplianceFramework\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Compliance Framework is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nCompliance Framework represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Audit Trail",
     "Accessibility Audit Tool",
-    "Ethics & Law Layer",
-    "ETSI_Domain_Ethics_&_Law",
     "Regulatory Standards",
+    "Ethics & Law Layer",
+    "Audit Trail",
+    "ETSI_Domain_Ethics_&_Law",
     "Data Anonymization Pipeline",
     "Digital Taxonomy Registry",
     "Token Custody Service"

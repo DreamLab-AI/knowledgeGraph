@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "Implementation Libraries",
-    "Compatibility Standards",
+    "Cross-Platform Exchange",
     "3D Asset Interoperability",
+    "Content Portability",
+    "Compatibility Standards",
+    "Validation Tools",
+    "metaverse",
+    "Metaverse Interoperability",
     "Technical Standards",
     "Digital Asset Standards",
-    "Validation Tools",
-    "Content Portability",
-    "Standards Body",
-    "Metaverse Interoperability",
-    "Cross-Platform Exchange",
-    "metaverse"
+    "Standards Body"
   ],
   "ontology": {
     "term_id": "MV-9838",

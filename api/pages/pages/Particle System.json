@@ -3,17 +3,17 @@
   "title": "Particle System",
   "content": "- ### OntologyBlock\n  id:: particle-system-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10000\n\t- source-domain:: mv\n\t- preferred-term:: Particle System\n\t- status:: active\n\t- definition:: A computer graphics technique that simulates fuzzy, chaotic, or fluid phenomena by managing large numbers of small graphical objects with properties like position, velocity, color, and lifetime, controlled by emitters and affected by forces to create effects like fire, smoke, water, and magical effects.\n\t- owl:class:: mv:ParticleSystem\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: particle-system-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Visual Effects]]\n\t\t- related-to:: [[Computer Graphics]]\n\t\t- related-to:: [[Real Time Rendering]]\n\t\t- related-to:: [[Physics Simulation]]\n\t\t- enables:: [[Dynamic Visual Effects]]\n\t- #### Common Effects\n\t  collapsed:: true\n\t\t- Fire, flames, and explosions\n\t\t- Smoke, fog, and atmospheric effects\n\t\t- Water splashes, rain, and mist\n\t\t- Snow and weather phenomena\n\t\t- Debris and destruction effects\n\t- #### Technical Components\n\t  collapsed:: true\n\t\t- Emitters define spawn rate and initial properties\n\t\t- Particle properties include position, velocity, lifetime\n\t\t- Forces like gravity, wind, and turbulence\n\t\t- Rendering via billboard sprites or mesh particles\n\t\t- GPU acceleration for millions of particles",
   "backlinks": [
-    "Game Engine",
     "Particle Systems",
-    "Physics Engine"
+    "Physics Engine",
+    "Game Engine"
   ],
   "wiki_links": [
     "Real Time Rendering",
-    "Computer Graphics",
-    "Visual Effects",
     "Physics Simulation",
+    "Dynamic Visual Effects",
+    "Visual Effects",
     "metaverse",
-    "Dynamic Visual Effects"
+    "Computer Graphics"
   ],
   "ontology": {
     "term_id": "MV-10000",

@@ -3,21 +3,21 @@
   "title": "Key Derivation Function",
   "content": "- ### OntologyBlock\n  id:: key-derivation-function-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- source-domain:: bc\n\t- term-id:: BC-8007\n\t- preferred-term:: Key Derivation Function\n\t- status:: active\n\t- public-access:: true\n\t- maturity:: reviewed\n\t- owl:class:: bc:KeyDerivationFunction\n\t- belongsToDomain:: [[Cryptography]]\n\t- definition:: A cryptographic algorithm that derives one or more secret keys from a master secret using a pseudo-random function, transforming human-readable passwords or seed phrases into cryptographically secure key material while enabling hierarchical key generation and deterministic wallet recovery in blockchain systems.\n\n---\nid: BC-1007\ntitle: Key Derivation Function\ntype: ConceptNode\ndomain: Blockchain\ncreated: 2025-11-24\nstatus: active\n---\n\n# Key Derivation Function\n\n## Definition\n- Cryptographic algorithm deriving one or more secret keys from master secret using pseudo-random function\n- Transforms human-readable passwords or seed phrases into cryptographically secure key material\n- Enables hierarchical key generation and deterministic wallet recovery in blockchain systems\n\n## Core Components\n- **Master Secret**: High-entropy source (seed, password, private key)\n- **Derivation Function**: One-way transformation algorithm\n- **Salt**: Random value preventing rainbow table attacks\n- **Iteration Count**: Computational cost parameter for brute-force resistance\n- **Derived Keys**: Output cryptographic key material\n\n## Technical Characteristics\n- **Deterministic**: Same input always produces same output\n- **One-Way**: Computationally infeasible to reverse\n- **Avalanche Effect**: Small input change drastically alters output\n- **Configurable Cost**: Adjustable computational difficulty\n\n## Common Algorithms\n- **PBKDF2**: Password-Based Key Derivation Function 2\n- **scrypt**: Memory-hard function resisting hardware attacks\n- **Argon2**: Winner of Password Hashing Competition\n- **HKDF**: HMAC-based Extract-and-Expand KDF\n- **bcrypt**: Adaptive hash function with work factor\n\n## Blockchain-Specific KDFs\n- **BIP32**: Hierarchical Deterministic (HD) wallet key derivation\n- **BIP39**: Mnemonic seed phrase to master key conversion\n- **BIP44**: Multi-account hierarchy standard\n- **SLIP-0010**: Ed25519 and other curve support\n\n## Hierarchical Derivation\n```\nMaster Seed\n  ├─ Purpose (BIP44: m/44')\n  │   └─ Coin Type (m/44'/0' for Bitcoin)\n  │       └─ Account (m/44'/0'/0')\n  │           ├─ External Chain (m/44'/0'/0'/0)\n  │           └─ Internal Chain (m/44'/0'/0'/1)\n```\n\n## Blockchain Applications\n- Wallet seed phrase to private key conversion\n- Deterministic address generation\n- Multi-account wallet management\n- Child key derivation without exposing parent\n- Secure backup and recovery mechanisms\n\n## Relationships\n- uses:: [[Hash Function]]\n- enables:: [[Asymmetric Encryption]]\n- component-of:: [[Hierarchical Deterministic Wallet]]\n- implements:: [[Password Hashing]]\n- protects:: [[Private Key]]\n\n## Security Parameters\n- **Salt Length**: Typically 128+ bits\n- **Iteration Count**: 100,000+ for PBKDF2, tuned for hardware\n- **Memory Cost**: Gigabytes for scrypt/Argon2\n- **Output Length**: Matches target key size (256+ bits)\n\n## Use Cases\n- Password-based wallet encryption\n- Mnemonic phrase to master key\n- Deriving signing keys from master seed\n- Cross-chain key generation from single seed\n- Hardware wallet key derivation\n\n## BIP32 Hardened Derivation\n- **Normal Derivation**: Uses public key (allows extended public key)\n- **Hardened Derivation**: Uses private key (more secure, denoted with ')\n- Prevents child private key from revealing parent\n\n## Performance Considerations\n- Intentionally slow to resist brute-force\n- Memory-hardness prevents GPU/ASIC acceleration\n- Trade-off: security vs user experience\n- Hardware wallet optimization challenges\n\n## Best Practices\n- Use high-entropy source (256+ bits)\n- Apply sufficient iterations for time period\n- Use cryptographic random salt\n- Store salt with derived key\n- Regular algorithm updates as hardware advances\n\n## Advantages\n- Single master secret generates unlimited keys\n- Deterministic wallet recovery\n- Hierarchical organization\n- No need to back up each key individually\n\n## Limitations\n- Compromise of master seed compromises all derived keys\n- Computational cost for derivation\n- Implementation complexity\n- Side-channel attack considerations\n\n## Related Concepts\n- [[Hash Function]]\n- [[Hierarchical Deterministic Wallet]]\n- [[Mnemonic Phrase]]\n- [[Password Hashing]]\n\n#cryptography #key-derivation #wallet #blockchain-security\n\n### Relationships\n- is-subclass-of:: [[Blockchain]]",
   "backlinks": [
-    "Random Number Generation",
-    "Symmetric Encryption",
     "Cryptographic Key Management",
     "Asymmetric Encryption",
-    "Cryptographic Keys"
+    "Cryptographic Keys",
+    "Random Number Generation",
+    "Symmetric Encryption"
   ],
   "wiki_links": [
-    "Password Hashing",
-    "Blockchain",
-    "Private Key",
-    "Hierarchical Deterministic Wallet",
-    "Mnemonic Phrase",
     "Asymmetric Encryption",
     "Hash Function",
-    "Cryptography"
+    "Blockchain",
+    "Mnemonic Phrase",
+    "Password Hashing",
+    "Private Key",
+    "Cryptography",
+    "Hierarchical Deterministic Wallet"
   ],
   "ontology": {
     "term_id": "BC-8007",

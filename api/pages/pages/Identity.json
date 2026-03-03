@@ -3,9 +3,9 @@
   "title": "Identity",
   "content": "- ### OntologyBlock\n  id:: mv9630-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9630\n\t- preferred-term:: Identity\n\t- source-domain:: mv\n\t- owl:class:: mv:Identity\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Identity is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nIdentity represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
+    "Smart Contract Platform",
     "Digital Identity",
-    "Nostr protocol",
-    "Smart Contract Platform"
+    "Nostr protocol"
   ],
   "wiki_links": [
     "owl:Thing"

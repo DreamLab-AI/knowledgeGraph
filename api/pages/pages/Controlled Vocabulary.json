@@ -3,22 +3,22 @@
   "title": "Controlled Vocabulary",
   "content": "- ### OntologyBlock\n  id:: controlled-vocabulary-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9833\n\t- source-domain:: mv\n\t- preferred-term:: Controlled Vocabulary\n\t- definition:: A restricted list of standardized terms or phrases used within a specific domain for consistent cataloging, tagging, and indexing, where users may only apply terms from the approved list to ensure uniform description and enable reliable information retrieval across systems and platforms.\n\t- status:: active\n\t- owl:class:: mv:ControlledVocabulary\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: controlled-vocabulary-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Information Architecture]]\n\t\t- enables:: [[Accurate Retrieval]], [[Content Discovery]], [[Data Standardization]]\n\t\t- requires:: [[Term Governance]], [[Domain Expertise]], [[Maintenance Process]]\n\t\t- related-to:: [[Controlled Vocabularies]], [[Metadata Schema]], [[Semantic Web]]\n- ## Technical Details\n\t- **Definition**: A controlled vocabulary is a restricted list of words or terms used for descriptive cataloging, tagging, or indexing, where only approved terms may be applied\n\t- **Related Terms**:\n\t\t- Often used interchangeably with \"ontology\" or \"taxonomy\"\n\t\t- Each has slightly different technical definitions\n\t- **Purpose in Classification**:\n\t\t- Classification is the logical arranging of information for quick retrieval\n\t\t- Structure represented as taxonomy; item information as metadata\n\t\t- Enables systematic knowledge retrieval and streamlined access\n\t- **Implementation Considerations**:\n\t\t- Balance between human expertise and AI automation\n\t\t- Consistent terminology establishment critical for KM excellence\n\t\t- Requires investment in systematic taxonomy management\n- ## Applications\n\t- Library cataloging systems\n\t- Document management tagging\n\t- Scientific data description\n\t- E-commerce product attributes\n\t- Research database indexing",
   "backlinks": [
+    "Digital Taxonomy Registry",
     "Metadata Standard",
-    "Glossary Index",
-    "Digital Taxonomy Registry"
+    "Glossary Index"
   ],
   "wiki_links": [
+    "Semantic Web",
+    "Metadata Schema",
     "Domain Expertise",
     "Accurate Retrieval",
-    "Data Standardization",
-    "Information Architecture",
-    "Maintenance Process",
-    "Semantic Web",
-    "Controlled Vocabularies",
-    "metaverse",
     "Content Discovery",
-    "Metadata Schema",
-    "Term Governance"
+    "Information Architecture",
+    "Term Governance",
+    "metaverse",
+    "Controlled Vocabularies",
+    "Data Standardization",
+    "Maintenance Process"
   ],
   "ontology": {
     "term_id": "MV-9833",

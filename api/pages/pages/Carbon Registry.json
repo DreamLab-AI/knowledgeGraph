@@ -3,22 +3,22 @@
   "title": "Carbon Registry",
   "content": "- ### OntologyBlock\n  id:: carbon-registry-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9815\n\t- source-domain:: mv\n\t- preferred-term:: Carbon Registry\n\t- definition:: A centralized database system that tracks the issuance, ownership, transfer, and retirement of carbon credits, assigning unique serial numbers to each credit for full lifecycle traceability and preventing double-counting across voluntary and compliance carbon markets.\n\t- status:: active\n\t- owl:class:: mv:CarbonRegistry\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: carbon-registry-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Environmental Registry]]\n\t\t- enables:: [[Credit Tracking]], [[Double Counting Prevention]], [[Market Transparency]]\n\t\t- requires:: [[Database Infrastructure]], [[Verification Process]], [[Unique Identifiers]]\n\t\t- related-to:: [[Carbon Credit Tracking]], [[Verified Carbon Standard]], [[Gold Standard]]\n- ## Technical Details\n\t- **Major Voluntary Market Registries**:\n\t\t- **Verra (VCS)**: World's most widely used, 2,300+ projects, 1.3B credits issued\n\t\t- **Gold Standard**: WWF-founded, emphasis on sustainable development\n\t\t- **American Carbon Registry (ACR)**: Oldest voluntary program\n\t\t- **Climate Action Reserve (CAR)**: North America focused\n\t\t- **Architecture for REDD+ Transactions (ART)**: REDD+ jurisdictional programs\n\t- **Registry Functions**:\n\t\t- Project registration and documentation\n\t\t- Credit issuance with unique serial numbers\n\t\t- Ownership tracking and transfer recording\n\t\t- Retirement (permanent removal from circulation)\n\t\t- Public transparency and auditability\n\t- **Research Resources**: Berkeley Carbon Trading Project database aggregates all five major registries for research and transparency\n\t- **Quality Standards**: ICVCM approval, CORSIA eligibility verification\n- ## Applications\n\t- Carbon credit lifecycle management\n\t- Project documentation and verification\n\t- Market transparency and research\n\t- Regulatory compliance tracking\n\t- Double-counting prevention",
   "backlinks": [
-    "Carbon Offset Trading",
+    "Carbon Credit Token",
     "Carbon Offset Certificate",
-    "Carbon Credit Token"
+    "Carbon Offset Trading"
   ],
   "wiki_links": [
-    "Carbon Credit Tracking",
-    "Database Infrastructure",
-    "Market Transparency",
-    "Verification Process",
-    "Credit Tracking",
-    "Unique Identifiers",
     "Double Counting Prevention",
     "Verified Carbon Standard",
+    "Database Infrastructure",
+    "Unique Identifiers",
+    "Verification Process",
+    "Carbon Credit Tracking",
+    "Market Transparency",
+    "Environmental Registry",
     "Gold Standard",
-    "metaverse",
-    "Environmental Registry"
+    "Credit Tracking",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9815",

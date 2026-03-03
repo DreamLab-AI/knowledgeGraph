@@ -3,15 +3,15 @@
   "title": "Economic Participation",
   "content": "- ### OntologyBlock\n  id:: economic-participation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9889\n\t- source-domain:: mv\n\t- preferred-term:: Economic Participation\n\t- status:: active\n\t- owl:class:: mv:EconomicParticipation\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: The mechanisms and opportunities enabling users to engage in economic activities within metaverse environments, including earning, spending, trading, and governance participation through cryptocurrency, NFTs, and decentralised autonomous organisation (DAO) structures.\n\t- #### Relationships\n\t  id:: economic-participation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Virtual Economy]]\n\t\t- related-to:: [[Economic Parameters]]\n\t\t- related-to:: [[Governance Token]]\n\t\t- enables:: [[Play-to-Earn]]\n\n## Participation Mechanisms\n\n### Entry Requirements\n- Fixed costs for participation (e.g., VR headset purchase)\n- Net gain calculation: VR experience utility expansion minus fixed costs\n- Platform-specific access requirements\n\n### Governance Participation\n- **DeFi**: Financial transactions without conventional institutions\n- **NFTs**: Sovereignty and uniqueness of virtual goods/services\n- **DAOs**: Democratic participation of virtual economic agents\n- **Token Voting**: Influence on platform roadmaps, feature prioritisation, content policies\n\n### Economic Activities\n- Virtual real estate development and trading\n- Gaming and play-to-earn mechanics\n- Social experiences and content creation\n- Service provision and skill-based work\n\n## Platform Examples\n\n### The Sandbox (SAND Token)\n- Holders participate in governance via DAO structure\n- Voting rights on platform roadmap and feature prioritisation\n- Creator-driven content and game development\n\n### Play-to-Earn Gaming\n- Blockchain-based games offering asset ownership\n- Players earn cryptocurrencies and NFTs through gameplay\n- Decentralised economies with player-owned assets\n\n## Market Scale\n\n### Current Market\n- 2024 global metaverse market: USD 105.4 billion\n- Gaming industry as key driver of metaverse economy\n\n### Projected Growth\n- US GDP contribution potential: USD 402-760 billion by 2035\n\n## Accessibility Challenges\n\n### Technical Barriers\n- Internet connectivity requirements\n- Device compatibility constraints\n- Complex user interface learning curves\n\n### Social Equity\n- Digital divide implications\n- Inclusive design requirements\n- Economic access across diverse backgrounds and abilities\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
-    "Economic Parameters",
-    "Play-to-Earn (P2E)"
+    "Play-to-Earn (P2E)",
+    "Economic Parameters"
   ],
   "wiki_links": [
-    "Play-to-Earn",
-    "Virtual Economy",
     "Economic Parameters",
+    "metaverse",
     "Governance Token",
-    "metaverse"
+    "Virtual Economy",
+    "Play-to-Earn"
   ],
   "ontology": {
     "term_id": "MV-9889",

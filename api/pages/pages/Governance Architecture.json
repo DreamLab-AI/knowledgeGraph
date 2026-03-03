@@ -3,16 +3,16 @@
   "title": "Governance Architecture",
   "content": "- ### OntologyBlock\n  id:: governance-architecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9909\n\t- source-domain:: mv\n\t- preferred-term:: Governance Architecture\n\t- status:: active\n\t- owl:class:: mv:GovernanceArchitecture\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: The structural framework defining decision-making processes, authority distribution, and rule enforcement mechanisms within metaverse platforms, encompassing both centralised corporate governance models and decentralised blockchain-based systems using DAOs and smart contracts for community-driven management.\n\t- #### Relationships\n\t  id:: governance-architecture-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Platform Governance]]\n\t\t- related-to:: [[Governance Token]]\n\t\t- related-to:: [[Smart Contract]]\n\t\t- enables:: [[Decentralised Decision Making]]\n\n## Governance Models\n\n### Centralised Architecture\n- Single entity or corporate management\n- Central server operations\n- Traditional corporate governance structures\n- Conventional online platform model\n\n### Decentralised Architecture\n- Blockchain technology foundation\n- Distributed management\n- User asset ownership\n- Transparent self-governance\n\n## Technical Components\n\n### DAO Integration\n- Self-executing smart contracts\n- Encoded governance rules\n- Community collective decision-making\n- Automated rule enforcement\n\n### Blockchain Foundation\n- Digital asset management (NFTs, cryptocurrencies)\n- Smart contract execution\n- Decentralised marketplace operation\n- Peer-to-peer transaction facilitation\n\n## Governance Challenges\n\n### Centralisation Risks\n- Concentrated voting power\n- Whale token holder influence\n- Dependency creation\n- Rent extraction behaviour\n\n### Decentralisation Limitations\n- Blockchain governance necessary but insufficient\n- Open standards required\n- Community participation challenges\n- Decision paralysis risks\n\n## Standards and Interoperability\n\n### Technical Standards\n- Image rendering specifications\n- Asset format import/export\n- Forward compatibility protocols\n- Information management systems\n\n### Identity Management\n- Self-Sovereign Identity (SSI)\n- Offline governance protocols\n- Avatar interoperability\n- Data privacy portability\n\n## Regulatory Considerations\n\n### Legal Challenges\n- Immutability conflicts with consumer protection\n- Borderlessness complicates jurisdiction\n- Automation reduces accountability\n- Decentralisation limits enforcement\n\n### Evolving Framework\n- Cross-jurisdiction complexity\n- Platform-specific governance requirements\n- Controller and processor matrix\n- Overlapping regulatory requirements\n\n## Applications\n\n### Platform Types\n- Decentraland DAO governance\n- The Sandbox decision hierarchies\n- Corporate metaverse platforms\n- Hybrid governance models\n\n### Sector Implementation\n- Gaming metaverses\n- Enterprise virtual environments\n- Social virtual worlds\n- Educational platforms\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
-    "Governance Board",
     "Ethics & Law Layer",
-    "Jurisdictional Boundary"
+    "Jurisdictional Boundary",
+    "Governance Board"
   ],
   "wiki_links": [
     "Platform Governance",
     "Decentralised Decision Making",
-    "Smart Contract",
+    "metaverse",
     "Governance Token",
-    "metaverse"
+    "Smart Contract"
   ],
   "ontology": {
     "term_id": "MV-9909",

@@ -6,9 +6,9 @@
   "wiki_links": [
     "Canada AIA",
     "AIEthicsDomain",
-    "ConceptualLayer",
     "EU AI Act",
-    "ISO/IEC 23894:2023"
+    "ISO/IEC 23894:2023",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "AI-0390",

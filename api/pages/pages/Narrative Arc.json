@@ -4,15 +4,15 @@
   "content": "- ### OntologyBlock\n  id:: narrative-arc-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9978\n\t- source-domain:: mv\n\t- preferred-term:: Narrative Arc\n\t- status:: active\n\t- definition:: The structural framework of a story that charts the progression through exposition, rising action, climax, falling action, and resolution, creating peaks and plateaus of dramatic tension that engage audiences and shape their emotional journey through the narrative.\n\t- owl:class:: mv:NarrativeArc\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: narrative-arc-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Storytelling Structure]]\n\t\t- related-to:: [[Narrative Content]]\n\t\t- related-to:: [[Narrative Theme]]\n\t\t- related-to:: [[Interactive Storytelling]]\n\t\t- enables:: [[Non Linear Narrative]]\n\t- #### Freytag's Five Stages\n\t  collapsed:: true\n\t\t- Exposition: Introduction to characters, setting, and circumstances\n\t\t- Rising Action: Tension and conflicts escalate building suspense\n\t\t- Climax: Highest point of tension where subplots converge\n\t\t- Falling Action: Conflict resolution as loose ends tie up\n\t\t- Resolution: Story closes showing how events changed characters\n\t- #### Technical Analysis\n\t  collapsed:: true\n\t\t- Computer-based language analysis reveals three primary processes\n\t\t- Staging establishes narrative foundation\n\t\t- Plot progression drives story forward\n\t\t- Cognitive tension builds and releases psychological engagement\n\t\t- LIWC-22 can map and score narrativity patterns",
   "backlinks": [
     "Narrative Content",
-    "Narrative Design Ontology",
-    "Narrative Theme"
+    "Narrative Theme",
+    "Narrative Design Ontology"
   ],
   "wiki_links": [
-    "Interactive Storytelling",
-    "Non Linear Narrative",
-    "Narrative Theme",
-    "Storytelling Structure",
     "metaverse",
+    "Storytelling Structure",
+    "Narrative Theme",
+    "Non Linear Narrative",
+    "Interactive Storytelling",
     "Narrative Content"
   ],
   "ontology": {

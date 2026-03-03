@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "Asset Digitization",
-    "3D Content Pipeline",
-    "LiDAR",
-    "Computer Vision",
     "Photogrammetry",
     "CAD Integration",
-    "Point Cloud Processing",
-    "Real-Time Monitoring",
+    "Computer Vision",
     "metaverse",
+    "3D Content Pipeline",
+    "Virtual Replica Creation",
+    "Real-Time Monitoring",
+    "Point Cloud Processing",
     "3D Scanning",
-    "Virtual Replica Creation"
+    "LiDAR"
   ],
   "ontology": {
     "term_id": "MV-9875",

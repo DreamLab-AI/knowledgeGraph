@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "Identity Systems",
-    "Credential Storage",
-    "Verifiable Credentials",
-    "Cross-Platform Identity",
-    "Self-Sovereign Identity",
-    "Decentralized Identifiers",
-    "Privacy Control",
     "Cryptographic Keys",
-    "metaverse",
     "Identity Providers",
-    "User Authentication"
+    "Cross-Platform Identity",
+    "User Authentication",
+    "Credential Storage",
+    "Self-Sovereign Identity",
+    "Verifiable Credentials",
+    "metaverse",
+    "Privacy Control",
+    "Decentralized Identifiers"
   ],
   "ontology": {
     "term_id": "MV-9858",

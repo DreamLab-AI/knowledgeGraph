@@ -3,9 +3,9 @@
   "title": "Data Format",
   "content": "- ### OntologyBlock\n  id:: mv9550-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9550\n\t- preferred-term:: Data Format\n\t- source-domain:: mv\n\t- owl:class:: mv:DataFormat\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Data Format is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nData Format represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Binary Encoding",
     "Middleware",
-    "3D Scene Exchange Protocol (SXP)"
+    "3D Scene Exchange Protocol (SXP)",
+    "Binary Encoding"
   ],
   "wiki_links": [
     "owl:Thing"
