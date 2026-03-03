@@ -96,6 +96,33 @@ html[data-theme="dark"][data-color] {
   background-color: #1b2128 !important;
 }
 
+/* Force gunmetal on block/page embeds (.color-level nesting) */
+.color-level {
+  background-color: #242b35 !important;
+}
+.color-level .color-level {
+  background-color: #2e3642 !important;
+}
+.color-level .color-level .color-level {
+  background-color: #353e4d !important;
+}
+.embed-page, .embed-block, .embed {
+  background-color: #242b35 !important;
+  border-color: #3d4555 !important;
+}
+/* Override Logseq rx-gray fallbacks that cause white panels */
+:root, html {
+  --rx-gray-01: #1b2128 !important;
+  --rx-gray-02: #242b35 !important;
+  --rx-gray-03: #2e3642 !important;
+  --rx-gray-04: #353e4d !important;
+  --rx-gray-05: #3d4555 !important;
+  --rx-gray-06: #4a5568 !important;
+  --lx-gray-01: #1b2128 !important;
+  --lx-gray-02: #242b35 !important;
+  --lx-gray-03: #2e3642 !important;
+}
+
 /* Hide mermaid source code blocks after kroki renders them */
 .kroki-diagram + .extensions__code,
 .kroki-diagram + .ls-block .extensions__code {
