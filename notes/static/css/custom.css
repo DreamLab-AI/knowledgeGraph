@@ -1,0 +1,6 @@
+/* Hide mermaid source code under rendered diagrams.
+   The :not(:has(..)) prevents cascade to ancestor blocks -
+   only the innermost ls-block owning .dac-container matches. */
+.ls-block:has(.dac-container):not(:has(.block-children .dac-container)) .block-children .extensions__code {
+  display: none !important;
+}
