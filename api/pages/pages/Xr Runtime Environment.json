@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: xr-runtime-environment-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10173\n\t- source-domain:: mv\n\t- preferred-term:: XR Runtime Environment\n\t- status:: active\n\t- definition:: The software infrastructure layer that manages extended reality hardware and provides standardized APIs for XR applications, handling device abstraction, tracking systems, rendering pipelines, input processing, and compositor services to enable cross-platform XR development.\n\t- owl:class:: mv:XrRuntimeEnvironment\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Runtime Environment]]\n\t\t- related-to:: [[OpenXR]]\n\t\t- related-to:: [[WebXR]]\n\t\t- related-to:: [[XR Hardware]]\n\t  id:: xr-runtime-environment-relationships\n\t  collapsed:: true\n- ## Overview\n\t- XR runtime environments abstract hardware complexity, enabling applications to run across different XR devices through standardized interfaces. OpenXR, the Khronos Group standard, provides vendor-neutral access to VR and AR platforms. WebXR enables browser-based XR experiences with Safari adding support in 2024. Runtimes manage tracking, input, and compositor services critical for immersive experiences.\n- ## Technical Details\n\t- ### Runtime Standards\n\t\t- **OpenXR**: Khronos Group cross-platform XR API standard\n\t\t- **WebXR Device API**: W3C specification for browser-based XR\n\t\t- **Oculus Runtime**: Meta's proprietary Quest runtime\n\t\t- **SteamVR**: Valve's PC VR runtime environment\n\t- ### Runtime Services\n\t\t- **Device Abstraction**: Unified API across different hardware\n\t\t- **Tracking Services**: Position and orientation data management\n\t\t- **Input Processing**: Controller, hand, and eye tracking handling\n\t\t- **Compositor**: Final frame composition and lens correction\n\t- ### Key Features\n\t\t- Extension system for vendor-specific capabilities\n\t\t- Session management for XR application lifecycle\n\t\t- Reference space handling for tracking origins\n\t\t- Action-based input for cross-device compatibility\n- ## Applications\n\t- Cross-platform XR application development\n\t- Enterprise XR deployment management\n\t- Browser-based metaverse experiences\n\t- XR plugin development for game engines\n\t- Research platform standardization",
   "backlinks": [],
   "wiki_links": [
-    "WebXR",
+    "OpenXR",
+    "metaverse",
     "XR Hardware",
     "Runtime Environment",
-    "metaverse",
-    "OpenXR"
+    "WebXR"
   ],
   "ontology": {
     "term_id": "MV-10173",

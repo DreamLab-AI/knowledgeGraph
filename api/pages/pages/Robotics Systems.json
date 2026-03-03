@@ -15,21 +15,21 @@
     "ArtificialIntelligence"
   ],
   "wiki_links": [
+    "Robotics Systems",
+    "Technology Domain",
+    "Collaborative Robot",
+    "HumanRobotInteraction",
+    "Manipulator",
     "Telecollaboration",
     "Mobile Robot",
     "SwarmRobotics",
-    "Robot Control",
-    "Robot Sensor",
-    "Robotics Systems",
-    "Humanoid Robot",
-    "Collaborative Robot",
-    "Metaverse Technology",
-    "HumanRobotInteraction",
-    "Artificial Intelligence",
     "Robot Kinematics",
-    "Manipulator",
-    "Motion Planning",
-    "Technology Domain"
+    "Humanoid Robot",
+    "Metaverse Technology",
+    "Robot Sensor",
+    "Artificial Intelligence",
+    "Robot Control",
+    "Motion Planning"
   ],
   "ontology": {
     "term_id": "RB-4001",

@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: xr-meeting-space-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10172\n\t- source-domain:: mv\n\t- preferred-term:: XR Meeting Space\n\t- status:: active\n\t- definition:: Virtual collaboration environments accessed through extended reality devices that enable remote participants to interact as avatars or volumetric representations in shared 3D spaces, supporting meetings, presentations, design reviews, and team collaboration with spatial audio and gesture-based communication.\n\t- owl:class:: mv:XrMeetingSpace\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Virtual Collaboration]]\n\t\t- related-to:: [[Avatar]]\n\t\t- related-to:: [[Virtual Reality VR]]\n\t\t- related-to:: [[Remote Work]]\n\t  id:: xr-meeting-space-relationships\n\t  collapsed:: true\n- ## Overview\n\t- XR meeting spaces transform remote collaboration by enabling presence-rich interactions in shared virtual environments. VR social platforms like Meta Horizon Workrooms and Microsoft Mesh provide immersive meeting experiences. Spatial computing platforms like Apple Vision Pro introduce new paradigms for virtual collaboration with personas and spatial windows. Enterprise adoption accelerates as organizations seek engagement beyond traditional video conferencing.\n- ## Technical Details\n\t- ### Platform Features\n\t\t- **Avatar Representation**: Photorealistic or stylized virtual presence\n\t\t- **Spatial Audio**: Directional sound based on avatar positions\n\t\t- **Gesture Communication**: Hand tracking for natural interaction\n\t\t- **Screen Sharing**: Virtual displays and document collaboration\n\t- ### Major Platforms\n\t\t- **Meta Horizon Workrooms**: Quest-based enterprise meetings\n\t\t- **Microsoft Mesh**: Teams integration with mixed reality\n\t\t- **Apple Vision Pro**: Spatial personas for FaceTime\n\t\t- **Spatial**: Cross-platform virtual meeting rooms\n\t- ### Technical Requirements\n\t\t- Low-latency networking for real-time interaction\n\t\t- Avatar synchronization across participants\n\t\t- Virtual whiteboard and annotation tools\n\t\t- Recording and replay capabilities\n- ## Applications\n\t- Remote team meetings and standups\n\t- Design review and 3D model collaboration\n\t- Virtual training and onboarding\n\t- Conference presentations and keynotes\n\t- International business negotiations",
   "backlinks": [],
   "wiki_links": [
-    "Virtual Reality VR",
     "Virtual Collaboration",
-    "Remote Work",
+    "metaverse",
     "Avatar",
-    "metaverse"
+    "Virtual Reality VR",
+    "Remote Work"
   ],
   "ontology": {
     "term_id": "MV-10172",

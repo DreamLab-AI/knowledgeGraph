@@ -13,12 +13,12 @@
     "Compatibility Process"
   ],
   "wiki_links": [
-    "DeFi",
-    "Next Generation Mobile",
-    "Relayer",
-    "Cross-Chain Bridge",
     "Light Client",
-    "Layer 0"
+    "DeFi",
+    "Relayer",
+    "Layer 0",
+    "Next Generation Mobile",
+    "Cross-Chain Bridge"
   ],
   "ontology": {
     "term_id": "NGM-7015",

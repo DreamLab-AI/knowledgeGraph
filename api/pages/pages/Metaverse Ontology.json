@@ -13,18 +13,18 @@
     "Definitions and frameworks for Metaverse"
   ],
   "wiki_links": [
-    "RGB and Client Side Validation",
-    "Cashu",
-    "Logseq",
-    "Agentic Mycelia",
-    "Knowledge Graphing",
     "Bitcoin",
-    "Lightning and Similar L2",
-    "ChatGPT",
-    "Gemini",
-    "Some legacy Linked-JSON",
-    "Large language models",
     "Ontology conversation with AIs",
-    "Anthropic Claude"
+    "Lightning and Similar L2",
+    "Cashu",
+    "Some legacy Linked-JSON",
+    "Knowledge Graphing",
+    "Large language models",
+    "ChatGPT",
+    "Agentic Mycelia",
+    "Anthropic Claude",
+    "Logseq",
+    "RGB and Client Side Validation",
+    "Gemini"
   ]
 }

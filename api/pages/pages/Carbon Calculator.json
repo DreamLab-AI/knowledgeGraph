@@ -7,17 +7,17 @@
     "Environmental Impact Metric"
   ],
   "wiki_links": [
-    "GHG Protocol",
-    "Reduction Planning",
-    "Emissions Estimation",
-    "Activity Data",
-    "Footprint Awareness",
-    "Sustainability Tool",
-    "metaverse",
-    "Calculation Methodology",
     "Carbon Accounting",
+    "Calculation Methodology",
+    "Reduction Planning",
+    "metaverse",
+    "Sustainability Tool",
+    "Activity Data",
+    "Emission Factors",
+    "GHG Protocol",
+    "Emissions Estimation",
     "Carbon Footprint Assessment",
-    "Emission Factors"
+    "Footprint Awareness"
   ],
   "ontology": {
     "term_id": "MV-9808",

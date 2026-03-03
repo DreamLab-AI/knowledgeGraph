@@ -7,12 +7,12 @@
     "Infrastructure Layer"
   ],
   "wiki_links": [
-    "VR Headsets",
-    "Haptic Devices",
     "Hardware",
+    "metaverse",
+    "Haptic Devices",
+    "VR Headsets",
     "Immersive Experiences",
-    "Motion Controllers",
-    "metaverse"
+    "Motion Controllers"
   ],
   "ontology": {
     "term_id": "MV-10005",

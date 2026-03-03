@@ -19,13 +19,13 @@
     "Cross-Border Data Transfer Rule"
   ],
   "wiki_links": [
-    "Blockchain",
-    "Transaction Monitoring",
     "EU MiCA Regulation",
+    "Blockchain",
     "KYC/AML Requirements",
-    "Smart Contracts",
+    "Transaction Monitoring",
+    "Identity Management",
     "Regulatory Framework",
-    "Identity Management"
+    "Smart Contracts"
   ],
   "ontology": {
     "term_id": "NGM-7004",

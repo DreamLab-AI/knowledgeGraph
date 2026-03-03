@@ -40,12 +40,12 @@
     "ETSI_Domain_AI"
   ],
   "wiki_links": [
-    "Theoretical Computer Science",
     "Machine Learning",
+    "Theoretical Computer Science",
+    "Philosophy of Mind",
     "ArtificialIntelligenceDomain",
     "Cognitive Science",
-    "Artificial Intelligence",
-    "Philosophy of Mind"
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-7008",

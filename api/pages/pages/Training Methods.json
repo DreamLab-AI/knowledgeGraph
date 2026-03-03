@@ -6,10 +6,10 @@
   "wiki_links": [
     "Curriculum Learning",
     "Machine Learning",
-    "Fine-Tuning",
-    "Artificial Intelligence",
+    "Reinforcement Learning",
     "Transfer Learning",
-    "Reinforcement Learning"
+    "Fine-Tuning",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0601",

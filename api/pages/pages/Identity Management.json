@@ -34,11 +34,11 @@
     "ecash"
   ],
   "wiki_links": [
-    "Blockchain",
-    "Privacy",
-    "KYC/AML Requirements",
     "Self-Sovereign Identity",
     "Verifiable Credentials",
+    "Privacy",
+    "Blockchain",
+    "KYC/AML Requirements",
     "Compliance Verification",
     "Cryptography"
   ],

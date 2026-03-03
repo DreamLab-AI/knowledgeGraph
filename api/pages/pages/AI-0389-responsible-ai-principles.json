@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "UNESCO Recommendation on AI Ethics",
-    "OECD AI Principles",
-    "AIEthicsDomain",
     "EU HLEG AI",
-    "ConceptualLayer"
+    "AIEthicsDomain",
+    "ConceptualLayer",
+    "OECD AI Principles"
   ],
   "ontology": {
     "term_id": "AI-0389",
