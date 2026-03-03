@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "Data Engineering",
-    "Machine Learning Pipeline",
-    "Active Learning",
-    "Supervised Learning",
     "Training Data",
-    "Human-in-the-Loop"
+    "Supervised Learning",
+    "Human-in-the-Loop",
+    "Active Learning",
+    "Machine Learning Pipeline"
   ],
   "ontology": {
     "term_id": "AI-1020",

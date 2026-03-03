@@ -9,23 +9,23 @@
     "Process"
   ],
   "wiki_links": [
-    "Process",
-    "Data",
-    "Cross-Domain Meta-Structure",
-    "Thread",
     "Resource",
     "Asynchronous Execution",
-    "Database Operations",
-    "Real-time Processing",
-    "Sequential Processing",
     "API Request-Response",
+    "Real-time Processing",
     "Distributed Systems",
+    "Thread",
     "Temporal Concept",
+    "Database Operations",
+    "Thread Management",
+    "Process",
     "Blocking Operation",
+    "Sequential Processing",
     "Transaction Processing",
-    "Execution Model",
     "Operation",
-    "Thread Management"
+    "Execution Model",
+    "Cross-Domain Meta-Structure",
+    "Data"
   ],
   "ontology": {
     "term_id": "BC-8019",

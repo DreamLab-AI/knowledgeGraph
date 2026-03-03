@@ -31,11 +31,11 @@
   "wiki_links": [
     "Hash Function",
     "Digital Signature",
-    "Symmetric Encryption",
-    "Cryptography",
-    "Cryptographic Protocol",
     "Blockchain",
-    "Asymmetric Encryption"
+    "Cryptographic Protocol",
+    "Asymmetric Encryption",
+    "Symmetric Encryption",
+    "Cryptography"
   ],
   "ontology": {
     "term_id": "BC-7004",

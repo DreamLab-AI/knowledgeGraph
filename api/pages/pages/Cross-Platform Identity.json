@@ -14,16 +14,16 @@
     "Authentication Service"
   ],
   "wiki_links": [
+    "User Experience",
     "System Interoperability",
-    "Federated Access",
-    "Core Technology",
-    "Identity Management",
     "Trust Relationships",
+    "Core Technology",
     "Access Control",
     "Authentication Service",
-    "User Experience",
-    "Identity Federation",
-    "Single Sign-On"
+    "Federated Access",
+    "Identity Management",
+    "Single Sign-On",
+    "Identity Federation"
   ],
   "ontology": {
     "term_id": "NGM-7020",

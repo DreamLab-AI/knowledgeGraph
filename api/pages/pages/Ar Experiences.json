@@ -4,14 +4,14 @@
   "content": "- ### OntologyBlock\n  id:: ar-experiences-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9770\n\t- source-domain:: mv\n\t- preferred-term:: Ar Experiences\n\t- status:: active\n\t- definition:: AR Experiences are interactive augmented reality applications that overlay digital content onto the physical world in real-time through smartphones, tablets, or AR headsets, enabling enhanced visualization, contextual information display, and immersive interaction with virtual objects anchored in real environments.\n\t- owl:class:: mv:ArExperiences\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Immersive Technology Applications]]\n\t- enables:: [[Enhanced Visualization]], [[Contextual Information]], [[Interactive Learning]]\n\t- requires:: [[AR Display Devices]], [[Computer Vision]], [[Spatial Mapping]]\n\t- #### Relationships\n\t  id:: ar-experiences-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Environment Capture**: Cameras and sensors compiling real-world surrounding data\n- **Computer Vision**: AI analyzing captured data to understand physical space and position\n- **Object Recognition**: Identifying physical triggers like QR codes or image markers\n- **Content Overlay**: Rendering images and video onto real-world view via device screen or headset\n\n### Experience Types\n- **Marker-Based AR**: Digital content triggered by physical markers (QR codes, images)\n- **Marker-less AR**: Using GPS, accelerometers, and cameras for spontaneous experiences\n- **Hand/Eye Tracking**: Natural gesture and gaze-based interaction (HoloLens 2)\n\n### Market Context\nAR user penetration reached 81% in 2024, expected to rise to 83.3% by 2029.\n\n### Industry Applications\nManufacturing visualization, healthcare training, retail product preview, navigation, and Industry 4.0 interactive environments.",
   "backlinks": [],
   "wiki_links": [
-    "Enhanced Visualization",
     "Computer Vision",
-    "metaverse",
     "AR Display Devices",
-    "Contextual Information",
     "Immersive Technology Applications",
     "Spatial Mapping",
-    "Interactive Learning"
+    "Enhanced Visualization",
+    "Interactive Learning",
+    "Contextual Information",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9770",

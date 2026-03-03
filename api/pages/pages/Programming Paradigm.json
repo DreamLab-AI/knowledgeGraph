@@ -5,9 +5,9 @@
   "backlinks": [],
   "wiki_links": [
     "owl:Thing",
-    "Software Engineering",
-    "Functional Programming",
     "Differentiable Programming",
+    "Functional Programming",
+    "Software Engineering",
     "Symbolic AI"
   ],
   "ontology": {

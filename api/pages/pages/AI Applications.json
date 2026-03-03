@@ -5,11 +5,11 @@
   "backlinks": [],
   "wiki_links": [
     "Medical AI",
-    "Autonomous Vehicles",
-    "Artificial Intelligence",
-    "AI Deployment",
     "AI Assistant",
-    "Industrial AI"
+    "AI Deployment",
+    "Industrial AI",
+    "Autonomous Vehicles",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0604",

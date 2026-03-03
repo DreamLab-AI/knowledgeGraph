@@ -6,11 +6,11 @@
     "Virtual Lighting Model"
   ],
   "wiki_links": [
-    "Visual Realism",
-    "Rendering Technology",
-    "metaverse",
+    "Global Illumination",
     "Physically Based Rendering",
-    "Global Illumination"
+    "Rendering Technology",
+    "Visual Realism",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9947",

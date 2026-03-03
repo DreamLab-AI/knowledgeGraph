@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "Game Playing AI",
-    "Search Algorithms",
-    "Random Sampling",
     "AlphaGo",
     "Minimax Algorithm",
+    "Random Sampling",
+    "Search Algorithms",
     "Reinforcement Learning"
   ],
   "ontology": {

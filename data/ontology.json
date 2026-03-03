@@ -323,11 +323,11 @@
       "type": "owl:Class"
     },
     {
-      "id": "ai-airiskmanagement",
+      "id": "airiskmanagement",
       "type": "owl:Class"
     },
     {
-      "id": "aisecurity",
+      "id": "ai-aisecurity",
       "type": "owl:Class"
     },
     {
@@ -2423,11 +2423,11 @@
       "type": "owl:Class"
     },
     {
-      "id": "bc-nftstandard",
+      "id": "nftstandard",
       "type": "owl:Class"
     },
     {
-      "id": "nftstandards",
+      "id": "bc-nftstandards",
       "type": "owl:Class"
     },
     {
@@ -3163,7 +3163,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-aiorigindeclaration",
+      "id": "aiorigindeclaration",
       "type": "owl:Class"
     },
     {
@@ -3175,7 +3175,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-analogtodigitalconverter",
+      "id": "analogtodigitalconverter",
       "type": "owl:Class"
     },
     {
@@ -3203,7 +3203,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-ardisplaydevice",
+      "id": "ardisplaydevice",
       "type": "owl:Class"
     },
     {
@@ -3215,7 +3215,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "arscenegraph",
+      "id": "mv-arscenegraph",
       "type": "owl:Class"
     },
     {
@@ -4787,7 +4787,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "etsidomainimmersive",
+      "id": "mv-etsidomainimmersive",
       "type": "owl:Class"
     },
     {
@@ -4795,7 +4795,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-etsimetaversedomaintaxonomy",
+      "id": "etsimetaversedomaintaxonomy",
       "type": "owl:Class"
     },
     {
@@ -4831,7 +4831,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-extendedrealityxr",
+      "id": "extendedrealityxr",
       "type": "owl:Class"
     },
     {
@@ -4995,7 +4995,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "gltfstandard",
+      "id": "mv-gltfstandard",
       "type": "owl:Class"
     },
     {
@@ -5211,7 +5211,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-ieeep2733standards",
+      "id": "ieeep2733standards",
       "type": "owl:Class"
     },
     {
@@ -6043,7 +6043,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "persistentarplacement",
+      "id": "mv-persistentarplacement",
       "type": "owl:Class"
     },
     {
@@ -6099,7 +6099,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "playtoearn",
+      "id": "mv-playtoearn",
       "type": "owl:Class"
     },
     {
@@ -6591,7 +6591,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "separationofpowers",
+      "id": "mv-separationofpowers",
       "type": "owl:Class"
     },
     {
@@ -7031,7 +7031,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "therapeuticvr",
+      "id": "mv-therapeuticvr",
       "type": "owl:Class"
     },
     {
@@ -7639,7 +7639,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "xrdevice",
+      "id": "mv-xrdevice",
       "type": "owl:Class"
     },
     {
@@ -7647,19 +7647,19 @@
       "type": "owl:Class"
     },
     {
-      "id": "xrheadset",
+      "id": "mv-xrheadset",
       "type": "owl:Class"
     },
     {
-      "id": "xrmeetingspace",
+      "id": "mv-xrmeetingspace",
       "type": "owl:Class"
     },
     {
-      "id": "xrruntimeenvironment",
+      "id": "mv-xrruntimeenvironment",
       "type": "owl:Class"
     },
     {
-      "id": "mv-xrtestinginfrastructure",
+      "id": "xrtestinginfrastructure",
       "type": "owl:Class"
     },
     {
@@ -7667,7 +7667,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "mv-zkstarks",
+      "id": "zkstarks",
       "type": "owl:Class"
     },
     {
@@ -8531,7 +8531,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "rb-roboticsdomain",
+      "id": "roboticsdomain",
       "type": "owl:Class"
     },
     {
@@ -9959,7 +9959,7 @@
       }
     },
     {
-      "id": "ai-airiskmanagement",
+      "id": "airiskmanagement",
       "iri": "http://narrativegoldmine.com/ai#AiRiskManagement",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -9976,7 +9976,7 @@
       }
     },
     {
-      "id": "aisecurity",
+      "id": "ai-aisecurity",
       "iri": "http://narrativegoldmine.com/ai#AiSecurity",
       "baseIri": "http://narrativegoldmine.com/ai",
       "attributes": [
@@ -18729,7 +18729,7 @@
       }
     },
     {
-      "id": "bc-nftstandard",
+      "id": "nftstandard",
       "iri": "http://narrativegoldmine.com/blockchain#NftStandard",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -18746,7 +18746,7 @@
       }
     },
     {
-      "id": "nftstandards",
+      "id": "bc-nftstandards",
       "iri": "http://narrativegoldmine.com/blockchain#NftStandards",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -21843,7 +21843,7 @@
       }
     },
     {
-      "id": "mv-aiorigindeclaration",
+      "id": "aiorigindeclaration",
       "iri": "http://narrativegoldmine.com/metaverse#AiOriginDeclaration",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -21894,7 +21894,7 @@
       }
     },
     {
-      "id": "mv-analogtodigitalconverter",
+      "id": "analogtodigitalconverter",
       "iri": "http://narrativegoldmine.com/metaverse#AnalogToDigitalConverter",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -22013,7 +22013,7 @@
       }
     },
     {
-      "id": "mv-ardisplaydevice",
+      "id": "ardisplaydevice",
       "iri": "http://narrativegoldmine.com/metaverse#ArDisplayDevice",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -22064,7 +22064,7 @@
       }
     },
     {
-      "id": "arscenegraph",
+      "id": "mv-arscenegraph",
       "iri": "http://narrativegoldmine.com/metaverse#ArSceneGraph",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -28717,7 +28717,7 @@
       }
     },
     {
-      "id": "etsidomainimmersive",
+      "id": "mv-etsidomainimmersive",
       "iri": "http://narrativegoldmine.com/metaverse#EtsiDomainImmersive",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -28751,7 +28751,7 @@
       }
     },
     {
-      "id": "mv-etsimetaversedomaintaxonomy",
+      "id": "etsimetaversedomaintaxonomy",
       "iri": "http://narrativegoldmine.com/metaverse#EtsiMetaverseDomainTaxonomy",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -28904,7 +28904,7 @@
       }
     },
     {
-      "id": "mv-extendedrealityxr",
+      "id": "extendedrealityxr",
       "iri": "http://narrativegoldmine.com/metaverse#ExtendedRealityXr",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -29601,7 +29601,7 @@
       }
     },
     {
-      "id": "gltfstandard",
+      "id": "mv-gltfstandard",
       "iri": "http://narrativegoldmine.com/metaverse#GltfStandard",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -30507,7 +30507,7 @@
       }
     },
     {
-      "id": "mv-ieeep2733standards",
+      "id": "ieeep2733standards",
       "iri": "http://narrativegoldmine.com/metaverse#IeeeP2733Standards",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -34023,7 +34023,7 @@
       }
     },
     {
-      "id": "persistentarplacement",
+      "id": "mv-persistentarplacement",
       "iri": "http://narrativegoldmine.com/metaverse#PersistentArPlacement",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -34257,7 +34257,7 @@
       }
     },
     {
-      "id": "playtoearn",
+      "id": "mv-playtoearn",
       "iri": "http://narrativegoldmine.com/metaverse#PlayToEarn",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -36340,7 +36340,7 @@
       }
     },
     {
-      "id": "separationofpowers",
+      "id": "mv-separationofpowers",
       "iri": "http://narrativegoldmine.com/metaverse#SeparationOfPowers",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -38190,7 +38190,7 @@
       }
     },
     {
-      "id": "therapeuticvr",
+      "id": "mv-therapeuticvr",
       "iri": "http://narrativegoldmine.com/metaverse#TherapeuticVr",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -40774,7 +40774,7 @@
       }
     },
     {
-      "id": "xrdevice",
+      "id": "mv-xrdevice",
       "iri": "http://narrativegoldmine.com/metaverse#XrDevice",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -40808,7 +40808,7 @@
       }
     },
     {
-      "id": "xrheadset",
+      "id": "mv-xrheadset",
       "iri": "http://narrativegoldmine.com/metaverse#XrHeadset",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -40825,7 +40825,7 @@
       }
     },
     {
-      "id": "xrmeetingspace",
+      "id": "mv-xrmeetingspace",
       "iri": "http://narrativegoldmine.com/metaverse#XrMeetingSpace",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -40842,7 +40842,7 @@
       }
     },
     {
-      "id": "xrruntimeenvironment",
+      "id": "mv-xrruntimeenvironment",
       "iri": "http://narrativegoldmine.com/metaverse#XrRuntimeEnvironment",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -40859,7 +40859,7 @@
       }
     },
     {
-      "id": "mv-xrtestinginfrastructure",
+      "id": "xrtestinginfrastructure",
       "iri": "http://narrativegoldmine.com/metaverse#XrTestingInfrastructure",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -40893,7 +40893,7 @@
       }
     },
     {
-      "id": "mv-zkstarks",
+      "id": "zkstarks",
       "iri": "http://narrativegoldmine.com/metaverse#ZKSTARKs",
       "baseIri": "http://narrativegoldmine.com/metaverse",
       "attributes": [
@@ -44582,7 +44582,7 @@
       }
     },
     {
-      "id": "rb-roboticsdomain",
+      "id": "roboticsdomain",
       "iri": "http://narrativegoldmine.com/robotics#Roboticsdomain",
       "baseIri": "http://narrativegoldmine.com/robotics",
       "attributes": [
@@ -47612,7 +47612,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-ai-airiskmanagement-ai-riskmanagement",
+      "id": "subclassof-airiskmanagement-ai-riskmanagement",
       "type": "rdfs:subClassOf"
     },
     {
@@ -48088,7 +48088,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-aisecurity-ai-cybersecurity",
+      "id": "subclassof-ai-aisecurity-ai-cybersecurity",
       "type": "rdfs:subClassOf"
     },
     {
@@ -49324,7 +49324,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-persistentarplacement-augmentedreality",
+      "id": "subclassof-mv-persistentarplacement-augmentedreality",
       "type": "rdfs:subClassOf"
     },
     {
@@ -49568,7 +49568,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-separationofpowers-mv-daogovernance",
+      "id": "subclassof-mv-separationofpowers-mv-daogovernance",
       "type": "rdfs:subClassOf"
     },
     {
@@ -49808,7 +49808,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-therapeuticvr-virtualrealityapplications",
+      "id": "subclassof-mv-therapeuticvr-virtualrealityapplications",
       "type": "rdfs:subClassOf"
     },
     {
@@ -50132,11 +50132,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-xrdevice-mv-xrhardware",
+      "id": "subclassof-mv-xrdevice-mv-xrhardware",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-xrheadset-mv-xrhardware",
+      "id": "subclassof-mv-xrheadset-mv-xrhardware",
       "type": "rdfs:subClassOf"
     },
     {
@@ -50164,15 +50164,15 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-xrmeetingspace-virtualcollaboration",
+      "id": "subclassof-mv-xrmeetingspace-virtualcollaboration",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-xrruntimeenvironment-runtimeenvironment",
+      "id": "subclassof-mv-xrruntimeenvironment-runtimeenvironment",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-xrtestinginfrastructure-testinginfrastructure",
+      "id": "subclassof-xrtestinginfrastructure-testinginfrastructure",
       "type": "rdfs:subClassOf"
     },
     {
@@ -50180,7 +50180,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-zkstarks-mv-zeroknowledgeproof",
+      "id": "subclassof-zkstarks-mv-zeroknowledgeproof",
       "type": "rdfs:subClassOf"
     },
     {
@@ -50604,7 +50604,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-gltfstandard-3dassetstandard",
+      "id": "subclassof-mv-gltfstandard-3dassetstandard",
       "type": "rdfs:subClassOf"
     },
     {
@@ -50628,7 +50628,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-mv-ieeep2733standards-xrtechnicalstandard",
+      "id": "subclassof-ieeep2733standards-xrtechnicalstandard",
       "type": "rdfs:subClassOf"
     },
     {
@@ -51423,8 +51423,8 @@
       ]
     },
     {
-      "id": "subclassof-ai-airiskmanagement-ai-riskmanagement",
-      "domain": "ai-airiskmanagement",
+      "id": "subclassof-airiskmanagement-ai-riskmanagement",
+      "domain": "airiskmanagement",
       "range": "ai-riskmanagement",
       "attributes": [
         "anonymous",
@@ -52494,8 +52494,8 @@
       ]
     },
     {
-      "id": "subclassof-aisecurity-ai-cybersecurity",
-      "domain": "aisecurity",
+      "id": "subclassof-ai-aisecurity-ai-cybersecurity",
+      "domain": "ai-aisecurity",
       "range": "ai-cybersecurity",
       "attributes": [
         "anonymous",
@@ -55275,8 +55275,8 @@
       ]
     },
     {
-      "id": "subclassof-persistentarplacement-augmentedreality",
-      "domain": "persistentarplacement",
+      "id": "subclassof-mv-persistentarplacement-augmentedreality",
+      "domain": "mv-persistentarplacement",
       "range": "augmentedreality",
       "attributes": [
         "anonymous",
@@ -55824,8 +55824,8 @@
       ]
     },
     {
-      "id": "subclassof-separationofpowers-mv-daogovernance",
-      "domain": "separationofpowers",
+      "id": "subclassof-mv-separationofpowers-mv-daogovernance",
+      "domain": "mv-separationofpowers",
       "range": "mv-daogovernance",
       "attributes": [
         "anonymous",
@@ -56364,8 +56364,8 @@
       ]
     },
     {
-      "id": "subclassof-therapeuticvr-virtualrealityapplications",
-      "domain": "therapeuticvr",
+      "id": "subclassof-mv-therapeuticvr-virtualrealityapplications",
+      "domain": "mv-therapeuticvr",
       "range": "virtualrealityapplications",
       "attributes": [
         "anonymous",
@@ -57093,8 +57093,8 @@
       ]
     },
     {
-      "id": "subclassof-xrdevice-mv-xrhardware",
-      "domain": "xrdevice",
+      "id": "subclassof-mv-xrdevice-mv-xrhardware",
+      "domain": "mv-xrdevice",
       "range": "mv-xrhardware",
       "attributes": [
         "anonymous",
@@ -57102,8 +57102,8 @@
       ]
     },
     {
-      "id": "subclassof-xrheadset-mv-xrhardware",
-      "domain": "xrheadset",
+      "id": "subclassof-mv-xrheadset-mv-xrhardware",
+      "domain": "mv-xrheadset",
       "range": "mv-xrhardware",
       "attributes": [
         "anonymous",
@@ -57165,8 +57165,8 @@
       ]
     },
     {
-      "id": "subclassof-xrmeetingspace-virtualcollaboration",
-      "domain": "xrmeetingspace",
+      "id": "subclassof-mv-xrmeetingspace-virtualcollaboration",
+      "domain": "mv-xrmeetingspace",
       "range": "virtualcollaboration",
       "attributes": [
         "anonymous",
@@ -57174,8 +57174,8 @@
       ]
     },
     {
-      "id": "subclassof-xrruntimeenvironment-runtimeenvironment",
-      "domain": "xrruntimeenvironment",
+      "id": "subclassof-mv-xrruntimeenvironment-runtimeenvironment",
+      "domain": "mv-xrruntimeenvironment",
       "range": "runtimeenvironment",
       "attributes": [
         "anonymous",
@@ -57183,8 +57183,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-xrtestinginfrastructure-testinginfrastructure",
-      "domain": "mv-xrtestinginfrastructure",
+      "id": "subclassof-xrtestinginfrastructure-testinginfrastructure",
+      "domain": "xrtestinginfrastructure",
       "range": "testinginfrastructure",
       "attributes": [
         "anonymous",
@@ -57201,8 +57201,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-zkstarks-mv-zeroknowledgeproof",
-      "domain": "mv-zkstarks",
+      "id": "subclassof-zkstarks-mv-zeroknowledgeproof",
+      "domain": "zkstarks",
       "range": "mv-zeroknowledgeproof",
       "attributes": [
         "anonymous",
@@ -58155,8 +58155,8 @@
       ]
     },
     {
-      "id": "subclassof-gltfstandard-3dassetstandard",
-      "domain": "gltfstandard",
+      "id": "subclassof-mv-gltfstandard-3dassetstandard",
+      "domain": "mv-gltfstandard",
       "range": "3dassetstandard",
       "attributes": [
         "anonymous",
@@ -58209,8 +58209,8 @@
       ]
     },
     {
-      "id": "subclassof-mv-ieeep2733standards-xrtechnicalstandard",
-      "domain": "mv-ieeep2733standards",
+      "id": "subclassof-ieeep2733standards-xrtechnicalstandard",
+      "domain": "ieeep2733standards",
       "range": "xrtechnicalstandard",
       "attributes": [
         "anonymous",

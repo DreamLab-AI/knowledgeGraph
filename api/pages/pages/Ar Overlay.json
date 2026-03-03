@@ -4,14 +4,14 @@
   "content": "- ### OntologyBlock\n  id:: ar-overlay-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9771\n\t- source-domain:: mv\n\t- preferred-term:: Ar Overlay\n\t- status:: active\n\t- definition:: AR Overlay refers to the digital layer of virtual elements including holograms, data visualizations, animations, and 3D objects that are spatially anchored and rendered over the user's view of the physical world in augmented reality systems, creating a seamless blend of virtual and real content.\n\t- owl:class:: mv:ArOverlay\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Digital Display Layer]]\n\t- enables:: [[Information Augmentation]], [[Spatial Annotation]], [[Virtual Object Placement]]\n\t- requires:: [[Spatial Anchoring]], [[Real-Time Rendering]], [[Environmental Understanding]]\n\t- #### Relationships\n\t  id:: ar-overlay-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Digital Overlay**: Virtual elements from simple text to complex animated 3D objects added to user's view\n- **Spatial Anchoring**: Anchoring virtual objects to specific real-world locations\n- **Environmental Understanding**: Recognition of physical surfaces, lighting conditions, and spatial relationships\n- **Real-Time Interaction**: Dynamic response to user inputs and environmental changes\n\n### Relationship to Spatial Computing\nAR overlay is described as \"the immersive, interactive layer of digital content overlaid and anchored onto our physical world, perceived through a sophisticated lens or display.\" AR is a subset of spatial computing (XR) enabling human-computer interaction in three-dimensional spaces.\n\n### 2024 Developments\nApple Vision Pro and Meta Orion demonstrate advanced spatial overlay capabilities for mixed reality experiences.",
   "backlinks": [],
   "wiki_links": [
-    "Information Augmentation",
     "Spatial Annotation",
     "Digital Display Layer",
-    "Virtual Object Placement",
     "Spatial Anchoring",
-    "metaverse",
+    "Environmental Understanding",
+    "Virtual Object Placement",
     "Real-Time Rendering",
-    "Environmental Understanding"
+    "Information Augmentation",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9771",

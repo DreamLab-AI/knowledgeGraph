@@ -21,11 +21,11 @@
     "Data Integration Interface"
   ],
   "wiki_links": [
-    "3D Data Format",
-    "Metadata Management",
     "Asset Management",
     "Standards",
-    "Metaverse Technology"
+    "Metaverse Technology",
+    "Metadata Management",
+    "3D Data Format"
   ],
   "ontology": {
     "term_id": "MV-0603",

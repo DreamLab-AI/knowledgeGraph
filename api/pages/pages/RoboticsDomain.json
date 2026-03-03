@@ -72,20 +72,20 @@
     "Collaborative Robot"
   ],
   "wiki_links": [
-    "AutonomousRobotics",
-    "SensorFusion",
-    "ComputerVision",
-    "EmbeddedSystems",
-    "MachineLearning",
     "ControlSystems",
-    "IndustrialAutomation",
-    "IEEE1872.2",
-    "TechnologyDomain",
-    "ArtificialIntelligence",
-    "MotionPlanning",
+    "EmbeddedSystems",
     "IEEE1872",
+    "HumanRobotInteraction",
+    "TechnologyDomain",
+    "ComputerVision",
+    "IEEE1872.2",
     "RobotPerception",
-    "HumanRobotInteraction"
+    "MachineLearning",
+    "MotionPlanning",
+    "SensorFusion",
+    "AutonomousRobotics",
+    "ArtificialIntelligence",
+    "IndustrialAutomation"
   ],
   "ontology": {
     "term_id": "RB-7001",

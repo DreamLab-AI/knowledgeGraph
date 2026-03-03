@@ -7,10 +7,10 @@
   ],
   "wiki_links": [
     "GPU Computing",
-    "Edge AI",
-    "Artificial Intelligence",
     "AI Deployment",
-    "Cloud AI"
+    "Edge AI",
+    "Cloud AI",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0603",

@@ -7,15 +7,15 @@
     "Deterministic Finality"
   ],
   "wiki_links": [
-    "51% Attack",
-    "Longest Chain Rule",
-    "Consensus Mechanism",
     "BlockchainDomain",
-    "Transaction Confirmation",
+    "Proof of Work",
+    "Transaction Finality",
     "Blockchain",
     "Deterministic Finality",
-    "Proof of Work",
-    "Transaction Finality"
+    "51% Attack",
+    "Transaction Confirmation",
+    "Consensus Mechanism",
+    "Longest Chain Rule"
   ],
   "ontology": {
     "term_id": "BC-8013",

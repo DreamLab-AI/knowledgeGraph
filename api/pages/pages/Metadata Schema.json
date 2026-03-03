@@ -12,18 +12,18 @@
     "Data Provenance"
   ],
   "wiki_links": [
-    "Data Catalogue",
-    "Data Governance",
-    "Semantic Web",
     "Data Standard",
-    "Data Discovery",
-    "Data Interoperability",
-    "Ontology",
+    "Dublin Core",
+    "Data Governance",
     "FAIR Data Principles",
-    "Schema.org",
-    "Knowledge Graph",
+    "Ontology",
+    "Semantic Web",
+    "Data Interoperability",
+    "Data Catalogue",
+    "Data Discovery",
     "JSON-LD",
-    "Dublin Core"
+    "Schema.org",
+    "Knowledge Graph"
   ],
   "ontology": {
     "term_id": "NGM-8001",

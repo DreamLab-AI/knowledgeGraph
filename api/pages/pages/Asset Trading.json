@@ -11,15 +11,15 @@
   ],
   "wiki_links": [
     "Liquidity Pool",
-    "Market Making",
-    "Price Discovery",
-    "Decentralized Exchange",
-    "Financial Technology",
-    "Cryptocurrency",
     "Asset Management",
-    "Smart Contract",
+    "Market Making",
+    "Cryptocurrency",
     "Decentralized Finance",
-    "Financial Services"
+    "Financial Technology",
+    "Price Discovery",
+    "Financial Services",
+    "Decentralized Exchange",
+    "Smart Contract"
   ],
   "ontology": {
     "term_id": "NGM-7030",

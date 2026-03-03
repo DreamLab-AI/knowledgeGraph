@@ -7,10 +7,10 @@
   ],
   "wiki_links": [
     "Data Engineering",
-    "MLOps",
-    "Artificial Intelligence",
     "DVC",
-    "ArtificialIntelligenceDomain"
+    "MLOps",
+    "ArtificialIntelligenceDomain",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-9011",

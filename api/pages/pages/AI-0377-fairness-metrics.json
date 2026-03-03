@@ -6,9 +6,9 @@
   "wiki_links": [
     "AIEthicsDomain",
     "ISO/IEC TR 24027",
+    "IEEE P7003-2021",
     "NIST SP 1270",
-    "ConceptualLayer",
-    "IEEE P7003-2021"
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "AI-0377",

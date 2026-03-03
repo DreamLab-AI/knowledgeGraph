@@ -6,15 +6,15 @@
     "AIRisk"
   ],
   "wiki_links": [
-    "AI Compliance",
-    "AIRisk",
-    "AIGovernance",
-    "AISecurity",
     "AI Safety",
-    "Artificial Intelligence",
-    "Risk Management",
+    "AIRisk",
+    "AISecurity",
+    "AI Compliance",
     "Trustworthy AI",
-    "Enterprise Risk Management"
+    "Enterprise Risk Management",
+    "AIGovernance",
+    "Risk Management",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-7019",

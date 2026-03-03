@@ -6,11 +6,11 @@
     "Semantic Metadata Registry"
   ],
   "wiki_links": [
-    "Knowledge Management",
     "Interoperability",
-    "metaverse",
     "Ontology",
-    "Vocabulary Governance"
+    "Knowledge Management",
+    "Vocabulary Governance",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10161",

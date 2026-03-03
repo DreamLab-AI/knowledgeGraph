@@ -6,14 +6,14 @@
     "Cultural Provenance Record"
   ],
   "wiki_links": [
-    "Metadata Standards",
-    "Documentation Practices",
-    "Provenance Verification",
-    "metaverse",
-    "Digital Metadata",
-    "Blockchain Recording",
     "Authenticity Tracking",
-    "Cultural Preservation"
+    "Metadata Standards",
+    "Blockchain Recording",
+    "Documentation Practices",
+    "Cultural Preservation",
+    "Digital Metadata",
+    "Provenance Verification",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9778",

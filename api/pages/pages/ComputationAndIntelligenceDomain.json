@@ -43,9 +43,9 @@
     "Theoretical Computer Science",
     "Philosophy of Mind",
     "Machine Learning",
-    "Artificial Intelligence",
     "Cognitive Science",
-    "ArtificialIntelligenceDomain"
+    "ArtificialIntelligenceDomain",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-7008",

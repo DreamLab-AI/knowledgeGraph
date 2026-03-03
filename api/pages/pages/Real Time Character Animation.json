@@ -6,12 +6,12 @@
     "Motion Solver Software"
   ],
   "wiki_links": [
-    "Motion Capture",
-    "metaverse",
-    "3D Animation",
-    "Interactive Experiences",
     "Character Rigging",
-    "Procedural Animation"
+    "3D Animation",
+    "Procedural Animation",
+    "Interactive Experiences",
+    "Motion Capture",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10016",

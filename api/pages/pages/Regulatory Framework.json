@@ -13,13 +13,13 @@
     "Central Bank Digital Currency (CBDC)"
   ],
   "wiki_links": [
-    "KYC/AML Requirements",
-    "Identity Management",
-    "EU MiCA Regulation",
     "Compliance Verification",
+    "Market Integrity",
+    "EU MiCA Regulation",
     "Blockchain",
     "Cryptoasset Service Providers",
-    "Market Integrity"
+    "KYC/AML Requirements",
+    "Identity Management"
   ],
   "ontology": {
     "term_id": "NGM-7028",

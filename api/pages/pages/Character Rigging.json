@@ -8,17 +8,17 @@
     "Character Model"
   ],
   "wiki_links": [
-    "Motion Capture Retargeting",
     "Character Animation",
     "Inverse Kinematics",
-    "metaverse",
-    "Animation Technique",
+    "Character Model",
     "Bone Structure",
     "Animation Controller",
-    "Character Model",
+    "Animation Technique",
+    "Motion Capture Retargeting",
+    "Skinning",
     "Skeletal Animation",
     "Weight Painting",
-    "Skinning"
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9820",

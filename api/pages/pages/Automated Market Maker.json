@@ -11,14 +11,14 @@
     "BC-0096-token"
   ],
   "wiki_links": [
-    "DeFi Protocol",
-    "Liquidity Pools",
+    "Permissionless Trading",
     "Token Swaps",
-    "metaverse",
+    "Liquidity Pools",
     "Pricing Algorithms",
-    "Liquidity Provision",
+    "metaverse",
     "Smart Contracts",
-    "Permissionless Trading"
+    "Liquidity Provision",
+    "DeFi Protocol"
   ],
   "ontology": {
     "term_id": "MV-9786",

@@ -14,17 +14,17 @@
     "Transaction Standard"
   ],
   "wiki_links": [
-    "Stablecoin",
-    "Virtual Transactions",
-    "Transaction Network",
-    "Digital Payments",
-    "Security Infrastructure",
-    "Financial Technology",
-    "metaverse",
-    "Cryptocurrency",
     "CBDC",
+    "Cryptocurrency",
+    "Digital Payments",
+    "Virtual Transactions",
+    "Digital Wallet",
+    "Financial Technology",
+    "Transaction Network",
     "Programmable Money",
-    "Digital Wallet"
+    "Security Infrastructure",
+    "Stablecoin",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9855",
