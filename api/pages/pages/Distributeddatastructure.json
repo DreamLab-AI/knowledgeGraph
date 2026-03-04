@@ -4,18 +4,18 @@
   "content": "- ### OntologyBlock\n  id:: distributeddatastructure-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-8002\n\t- preferred-term:: Distributed Data Structure\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A data structure designed to operate across multiple networked nodes, providing coordinated storage, retrieval, and manipulation of data while maintaining consistency, availability, and partition tolerance. These structures enable scalable, fault-tolerant data management through mechanisms such as replication, sharding, and consensus protocols.\n\t- maturity:: reviewed\n\t- owl:class:: ngm:DistributedDataStructure\n\t- owl:role:: ComputationalPattern\n\t- belongsToDomain:: [[Distributed Systems]]\n\n### Relationships\n- is-subclass-of:: [[Data Structure]]\n- related-to:: [[Consensus Algorithm]], [[Replication]], [[Peer-to-Peer Network]], [[CAP Theorem]]\n- enables:: [[Horizontal Scalability]], [[Fault Tolerance]], [[Eventual Consistency]]\n- has-variant:: [[Distributed Hash Table]], [[CRDT]], [[Merkle Tree]]\n\n## Definition\n\nA **Distributed Data Structure** is a data organisation pattern that spans multiple computing nodes, providing coordinated access to shared data while handling network partitions, node failures, and concurrent modifications. These structures form the foundation of distributed databases, peer-to-peer systems, and cloud-scale applications.\n\n## Core Types\n\n### Distributed Hash Tables (DHT)\n- **Definition**: Decentralised lookup service mapping keys to values across participating nodes\n- **Key Protocols**: Chord, Kademlia, Pastry, CAN\n- **Applications**: BitTorrent, IPFS, Ethereum, DNS alternatives\n- **Properties**: O(log n) lookup complexity, self-organising, fault-tolerant\n\n### Conflict-free Replicated Data Types (CRDT)\n- **Definition**: Data structures enabling concurrent updates across replicas with automatic conflict resolution\n- **Types**: Counters (G-Counter, PN-Counter), Sets (G-Set, OR-Set), Registers (LWW, MV)\n- **Guarantee**: Strong eventual consistency without coordination\n- **Applications**: Collaborative editing, offline-first applications, distributed databases\n\n### Merkle Trees\n- **Definition**: Hash trees enabling efficient verification of data integrity across distributed systems\n- **Properties**: Tamper-evident, efficient synchronisation, incremental updates\n- **Applications**: Git, blockchain, certificate transparency\n\n## Design Considerations\n\n### CAP Theorem Trade-offs\n- **Consistency**: All nodes see same data simultaneously\n- **Availability**: Every request receives a response\n- **Partition Tolerance**: System operates despite network splits\n\n### Consistency Models\n1. **Strong Consistency**: Linearisable operations\n2. **Sequential Consistency**: Global operation ordering\n3. **Causal Consistency**: Cause-effect ordering preserved\n4. **Eventual Consistency**: Convergence over time\n\n## Implementation Patterns\n\n### Replication Strategies\n- **Leader-Follower**: Single write node, multiple read replicas\n- **Multi-Leader**: Multiple write nodes with conflict resolution\n- **Leaderless**: Quorum-based reads and writes\n\n### Partitioning Schemes\n- **Hash Partitioning**: Consistent hashing for key distribution\n- **Range Partitioning**: Ordered key ranges per node\n- **Directory-Based**: Centralised partition mapping\n\n## References\n- [Distributed Hash Table - Wikipedia](https://en.wikipedia.org/wiki/Distributed_hash_table)\n- [About CRDTs](https://crdt.tech/)\n- [Distributed Data Structures - GeeksforGeeks](https://www.geeksforgeeks.org/system-design/distributed-data-structures-for-real-time-event-processing/)\n\n## Metadata\n- **Last Updated**: 2025-12-29\n- **Review Status**: Reviewed\n- **References**: 26 pages reference this concept",
   "backlinks": [],
   "wiki_links": [
-    "Distributed Systems",
-    "CRDT",
     "Peer-to-Peer Network",
-    "Consensus Algorithm",
-    "Distributed Hash Table",
-    "Data Structure",
-    "Fault Tolerance",
-    "CAP Theorem",
-    "Horizontal Scalability",
-    "Eventual Consistency",
+    "Distributed Systems",
     "Replication",
-    "Merkle Tree"
+    "Horizontal Scalability",
+    "Distributed Hash Table",
+    "CRDT",
+    "Eventual Consistency",
+    "Data Structure",
+    "CAP Theorem",
+    "Consensus Algorithm",
+    "Merkle Tree",
+    "Fault Tolerance"
   ],
   "ontology": {
     "term_id": "NGM-8002",

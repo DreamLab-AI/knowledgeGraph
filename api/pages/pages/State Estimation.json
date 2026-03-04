@@ -9,11 +9,11 @@
     "RB-1013-localization"
   ],
   "wiki_links": [
-    "Kalman Filter",
     "Particle Filter",
-    "Bayes Filter",
-    "Localization",
+    "Kalman Filter",
     "Robotics Systems",
+    "Localization",
+    "Bayes Filter",
     "Sensor Fusion"
   ],
   "ontology": {

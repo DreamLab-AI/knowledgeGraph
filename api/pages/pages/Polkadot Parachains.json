@@ -5,11 +5,11 @@
   "backlinks": [],
   "wiki_links": [
     "Blockchain",
-    "Web3 Foundation",
-    "Polkadot",
-    "BlockchainDomain",
     "Interoperability Protocol",
-    "Layer 0 Protocol"
+    "Layer 0 Protocol",
+    "BlockchainDomain",
+    "Polkadot",
+    "Web3 Foundation"
   ],
   "ontology": {
     "term_id": "BC-9002",

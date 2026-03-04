@@ -7,11 +7,11 @@
     "Immersive Experience Pipeline"
   ],
   "wiki_links": [
-    "Cross-Platform 3D Content",
-    "3D Asset Standard",
+    "Format Parser",
     "metaverse",
     "Interoperability Standard",
-    "Format Parser"
+    "3D Asset Standard",
+    "Cross-Platform 3D Content"
   ],
   "ontology": {
     "term_id": "MV-9908",

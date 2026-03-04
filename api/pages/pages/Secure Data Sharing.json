@@ -8,12 +8,12 @@
     "Data Protection"
   ],
   "wiki_links": [
-    "Access Control",
-    "metaverse",
     "Data Security",
+    "metaverse",
     "Encryption",
+    "Privacy Preserving Data Sharing",
     "Confidential Collaboration",
-    "Privacy Preserving Data Sharing"
+    "Access Control"
   ],
   "ontology": {
     "term_id": "MV-10034",

@@ -14,13 +14,13 @@
     "Identity Graph"
   ],
   "wiki_links": [
-    "Cryptographic Key Management",
-    "Symmetric Encryption",
-    "Asymmetric Encryption",
+    "Random Number Generation",
     "Key Derivation Function",
-    "Digital Signature",
     "Cryptography",
-    "Random Number Generation"
+    "Cryptographic Key Management",
+    "Digital Signature",
+    "Symmetric Encryption",
+    "Asymmetric Encryption"
   ],
   "ontology": {
     "term_id": "BC-7006",

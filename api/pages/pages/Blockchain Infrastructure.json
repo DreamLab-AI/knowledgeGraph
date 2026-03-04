@@ -21,17 +21,17 @@
     "Digital Marketplace"
   ],
   "wiki_links": [
-    "Cross-Chain Bridge",
-    "Smart Contracts",
-    "Blockchain Application",
-    "Peer-to-Peer Network",
-    "Web3 Infrastructure",
     "Blockchain",
-    "Layer 2 Scaling",
-    "Consensus Mechanism",
-    "Distributed Systems Infrastructure",
+    "Blockchain Node",
+    "Peer-to-Peer Network",
     "Cryptography",
-    "Blockchain Node"
+    "Web3 Infrastructure",
+    "Consensus Mechanism",
+    "Smart Contracts",
+    "Distributed Systems Infrastructure",
+    "Layer 2 Scaling",
+    "Cross-Chain Bridge",
+    "Blockchain Application"
   ],
   "ontology": {
     "term_id": "BC-7003",

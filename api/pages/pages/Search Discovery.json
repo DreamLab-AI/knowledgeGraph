@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: search-discovery-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10029\n\t- source-domain:: mv\n\t- preferred-term:: Search Discovery\n\t- status:: active\n\t- definition:: Systems and interfaces that enable users to find relevant content, assets, experiences, and other users within metaverse platforms through keyword search, semantic queries, recommendations, and spatial exploration mechanisms.\n\t- owl:class:: mv:SearchDiscovery\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: search-discovery-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Information Retrieval]]\n\t\t- related-to:: [[Search Engine]]\n\t\t- related-to:: [[Recommendation Systems]]\n\t\t- related-to:: [[Content Discovery]]\n\t\t- enables:: [[User Navigation]]\n\t- #### Discovery Methods\n\t  collapsed:: true\n\t\t- Keyword-based search queries\n\t\t- Semantic and natural language search\n\t\t- Collaborative filtering recommendations\n\t\t- Spatial proximity browsing\n\t\t- Social graph exploration\n\t- #### Technologies\n\t  collapsed:: true\n\t\t- Vector similarity search\n\t\t- Knowledge graph traversal\n\t\t- Machine learning recommendations\n\t\t- Faceted navigation interfaces\n\t\t- Real-time indexing pipelines",
   "backlinks": [],
   "wiki_links": [
-    "Recommendation Systems",
-    "User Navigation",
-    "metaverse",
-    "Information Retrieval",
     "Search Engine",
-    "Content Discovery"
+    "metaverse",
+    "Content Discovery",
+    "User Navigation",
+    "Recommendation Systems",
+    "Information Retrieval"
   ],
   "ontology": {
     "term_id": "MV-10029",

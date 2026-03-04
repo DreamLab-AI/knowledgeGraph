@@ -8,10 +8,10 @@
   "wiki_links": [
     "Traceability",
     "Provenance",
-    "Smart Contract",
-    "Supply Chain Transparency",
     "Blockchain Technology",
-    "Blockchain Entity"
+    "Smart Contract",
+    "Blockchain Entity",
+    "Supply Chain Transparency"
   ],
   "ontology": {
     "term_id": "BC-0605",
