@@ -9,17 +9,17 @@
     "Digital Signature Verification"
   ],
   "wiki_links": [
-    "Public Key Infrastructure",
-    "Non-Repudiation",
-    "Cryptography",
-    "Blockchain Security",
     "Smart Contracts",
-    "Authentication",
-    "metaverse",
-    "Signature Algorithm",
-    "Hash Function",
     "Private Key",
-    "Data Integrity"
+    "Hash Function",
+    "metaverse",
+    "Data Integrity",
+    "Public Key Infrastructure",
+    "Blockchain Security",
+    "Authentication",
+    "Cryptography",
+    "Non-Repudiation",
+    "Signature Algorithm"
   ],
   "ontology": {
     "term_id": "MV-9872",

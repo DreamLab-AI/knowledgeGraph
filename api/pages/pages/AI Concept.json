@@ -6,10 +6,10 @@
     "ModelProperty"
   ],
   "wiki_links": [
-    "owl:Thing",
-    "Machine Learning",
     "Cognitive Architecture",
     "Artificial Intelligence",
+    "owl:Thing",
+    "Machine Learning",
     "Knowledge Representation"
   ],
   "ontology": {

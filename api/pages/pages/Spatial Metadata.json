@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "ISO 19115 Standard",
-    "3D Content Metadata",
-    "Spatial Data Discovery",
-    "Geospatial Information",
+    "GIS Data Management",
     "metaverse",
-    "GIS Data Management"
+    "Geospatial Information",
+    "3D Content Metadata",
+    "Spatial Data Discovery"
   ],
   "ontology": {
     "term_id": "MV-10062",

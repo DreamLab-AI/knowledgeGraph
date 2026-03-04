@@ -7,12 +7,12 @@
     "RB-1017-rrt-algorithm"
   ],
   "wiki_links": [
-    "metaverse",
-    "Machine Learning",
-    "Semantic Search",
-    "Similarity Search",
     "Search Algorithm",
-    "Vector Database"
+    "Vector Database",
+    "metaverse",
+    "Semantic Search",
+    "Machine Learning",
+    "Similarity Search"
   ],
   "ontology": {
     "term_id": "MV-9981",

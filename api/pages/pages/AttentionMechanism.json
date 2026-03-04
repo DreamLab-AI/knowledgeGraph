@@ -4,18 +4,18 @@
   "content": "- ### OntologyBlock\n  id:: attentionmechanism-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7006\n\t- preferred-term:: AttentionMechanism\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A machine learning technique that enables deep learning models to dynamically focus on the most relevant parts of input data by computing attention weights that reflect the relative importance of each element in a sequence. Central to the Transformer architecture introduced in the seminal 2017 paper \"Attention Is All You Need,\" attention mechanisms replaced recurrence with parallel self-attention layers, revolutionizing natural language processing and enabling modern large language models.\n\t- maturity:: complete\n\t- owl:class:: ngm:Attentionmechanism\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\n### Relationships\n- is-subclass-of:: [[Deep Learning]]\n- related-to:: [[Transformer Architecture]], [[NaturalLanguageProcessing]], [[Large language models]]\n- enables:: [[Self-Attention]], [[Multi-Head Attention]], [[Contextual Embeddings]]\n- used-by:: [[GPT]], [[BERT]], [[Stable Diffusion]], [[DALL-E]]\n\n## Technical Details\n\n### Self-Attention Mechanism\nSelf-attention enables a model to attend to different positions within its own input sequence to compute a representation. Each element computes query, key, and value vectors, with attention weights determined by the dot product of queries and keys. This allows the model to capture global dependencies regardless of distance between tokens.\n\n### Multi-Head Attention\nMulti-head attention runs multiple self-attention operations in parallel, each with separate learned query, key, and value matrices. This enables the model to attend to information from different representation subspaces at different positions, capturing richer semantic relationships. The outputs are concatenated and linearly transformed.\n\n### Scaled Dot-Product Attention\nThe core computation: Attention(Q,K,V) = softmax(QK^T / sqrt(d_k)) * V, where scaling by sqrt(d_k) prevents softmax saturation for large dimension values.\n\n### Advantages Over RNNs\n- No sequential dependencies enabling full parallelization\n- Equal access to any position in the sequence (no information decay)\n- Reduced training time compared to LSTMs\n- Better capture of long-range dependencies\n\n## Applications\n\n- **Large Language Models**: GPT-4, Claude, Gemini, LLaMA all use transformer attention\n- **Image Generation**: DALL-E, Stable Diffusion 3, Sora use attention for visual understanding\n- **Speech Recognition**: Whisper and modern ASR systems\n- **Computer Vision**: Vision Transformers (ViT) apply attention to image patches\n- **Multimodal AI**: Cross-attention enables fusion of text, image, and audio modalities\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from research\n- **References**: 9 pages reference this concept\n- **Sources**: [IBM](https://www.ibm.com/think/topics/attention-mechanism), [Wikipedia](https://en.wikipedia.org/wiki/Attention_(machine_learning)), [Sebastian Raschka](https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html)",
   "backlinks": [],
   "wiki_links": [
-    "GPT",
-    "Deep Learning",
     "Stable Diffusion",
-    "NaturalLanguageProcessing",
     "DALL-E",
-    "Contextual Embeddings",
-    "Multi-Head Attention",
+    "Transformer Architecture",
     "Self-Attention",
-    "BERT",
     "Artificial Intelligence",
+    "Multi-Head Attention",
+    "NaturalLanguageProcessing",
+    "BERT",
+    "Contextual Embeddings",
+    "Deep Learning",
     "Large language models",
-    "Transformer Architecture"
+    "GPT"
   ],
   "ontology": {
     "term_id": "NGM-7006",

@@ -34,13 +34,13 @@
     "ecash"
   ],
   "wiki_links": [
-    "Privacy",
-    "Compliance Verification",
-    "Cryptography",
-    "Blockchain",
+    "Self-Sovereign Identity",
     "KYC/AML Requirements",
-    "Verifiable Credentials",
-    "Self-Sovereign Identity"
+    "Blockchain",
+    "Cryptography",
+    "Compliance Verification",
+    "Privacy",
+    "Verifiable Credentials"
   ],
   "ontology": {
     "term_id": "NGM-7002",

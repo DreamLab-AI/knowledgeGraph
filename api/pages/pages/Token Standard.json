@@ -22,12 +22,12 @@
     "Digital Asset"
   ],
   "wiki_links": [
-    "Blockchain",
-    "DeFi",
-    "Fungibility",
-    "Smart Contract",
     "NFT",
-    "Decentralized Exchange"
+    "Blockchain",
+    "Fungibility",
+    "Decentralized Exchange",
+    "DeFi",
+    "Smart Contract"
   ],
   "ontology": {
     "term_id": "BC-7005",

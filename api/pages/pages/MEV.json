@@ -14,13 +14,13 @@
   ],
   "wiki_links": [
     "Front-Running",
+    "Mempool",
     "Blockchain",
-    "Proposer-Builder Separation",
     "Consensus Security",
     "DeFi Ecosystem",
-    "BlockchainDomain",
-    "Mempool",
-    "Transaction Ordering"
+    "Proposer-Builder Separation",
+    "Transaction Ordering",
+    "BlockchainDomain"
   ],
   "ontology": {
     "term_id": "BC-8012",

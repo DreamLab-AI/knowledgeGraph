@@ -9,11 +9,11 @@
     "ComputerVisionTask"
   ],
   "wiki_links": [
-    "Deep Learning",
-    "MachineLearning",
-    "TrainingMethod",
     "ModelArchitecture",
-    "Artificial Intelligence"
+    "TrainingMethod",
+    "Artificial Intelligence",
+    "Deep Learning",
+    "MachineLearning"
   ],
   "ontology": {
     "term_id": "AI-7013",

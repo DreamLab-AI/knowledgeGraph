@@ -5,11 +5,11 @@
   "backlinks": [],
   "wiki_links": [
     "metaverse",
-    "Accurate AR Overlay",
-    "Spatial Computing",
     "Computer Vision",
     "SLAM",
-    "Spatial Anchors"
+    "Spatial Anchors",
+    "Accurate AR Overlay",
+    "Spatial Computing"
   ],
   "ontology": {
     "term_id": "MV-10007",

@@ -4,14 +4,14 @@
   "content": "- ### OntologyBlock\n  id:: aifairness-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: AI-7014\n\t- preferred-term:: AI Fairness\n\t- source-domain:: ai\n\t- status:: active\n\t- definition:: AI Fairness refers to the principle and practice of ensuring artificial intelligence systems produce equitable outcomes without bias or discrimination based on protected characteristics such as race, gender, age, or socioeconomic status. It encompasses methodologies for detecting, measuring, and mitigating algorithmic bias throughout the AI development lifecycle to prevent disproportionate harm to specific demographic groups.\n\t- maturity:: mature\n\t- owl:class:: ai:AiFairness\n\t- owl:role:: Principle\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: aifairness-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[AI Ethics]]\n\t\t- related-to:: [[Responsible AI]]\n\t\t- related-to:: [[AIGovernance]]\n\t\t- related-to:: [[Algorithmic Accountability]]\n\t\t- related-to:: [[Machine Learning]]\n\t\t- enables:: [[Trustworthy AI]]\n\t\t- enables:: [[Equitable AI Systems]]\n\t- #### Key Components\n\t  collapsed:: true\n\t\t- **Bias Detection**: Statistical methods to identify disparities in AI model outputs across demographic groups\n\t\t- **Fairness Metrics**: Quantitative measures including demographic parity, equalized odds, and calibration metrics\n\t\t- **Bias Mitigation**: Techniques applied pre-processing, in-processing, or post-processing to reduce discrimination\n\t\t- **Fairness Auditing**: Regular assessment of AI systems for discriminatory patterns and outcomes\n\t\t- **Intersectional Analysis**: Examining fairness across multiple overlapping protected characteristics\n\t- #### Fairness Definitions\n\t  collapsed:: true\n\t\t- **Demographic Parity**: Equal outcome rates across demographic groups\n\t\t- **Equalized Odds**: Equal false positive and false negative rates across groups\n\t\t- **Calibration**: Predicted probabilities reflect true outcomes equally across groups\n\t\t- **Individual Fairness**: Similar individuals receive similar predictions\n\t\t- **Counterfactual Fairness**: Outcomes unchanged if protected attributes were different\n\t- #### Key Tools (2025)\n\t  collapsed:: true\n\t\t- **AI Fairness 360 (AIF360)**: IBM's toolkit with 70+ fairness metrics and 10+ bias mitigation algorithms\n\t\t- **Fairlearn**: Microsoft's library for assessing and improving model fairness\n\t\t- **TensorFlow Responsible AI**: Google's integrated fairness and interpretability tools\n\t\t- **What-If Tool**: Google's interactive fairness analysis interface\n\t\t- **Aequitas**: Open-source bias and fairness audit toolkit\n\t- #### Applications\n\t  collapsed:: true\n\t\t- Fair hiring and recruitment systems\n\t\t- Equitable credit scoring and lending decisions\n\t\t- Unbiased healthcare risk assessment\n\t\t- Fair criminal justice risk prediction\n\t\t- Inclusive content moderation and recommendation\n\t\t- Accessible AI assistants and services\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched with current fairness frameworks\n- **Verification**: Academic and industry sources verified\n- **Regional Context**: Global with regulatory considerations",
   "backlinks": [],
   "wiki_links": [
+    "Responsible AI",
+    "AIGovernance",
     "Trustworthy AI",
+    "Equitable AI Systems",
+    "Artificial Intelligence",
     "Algorithmic Accountability",
     "AI Ethics",
-    "AIGovernance",
-    "Equitable AI Systems",
-    "Machine Learning",
-    "Responsible AI",
-    "Artificial Intelligence"
+    "Machine Learning"
   ],
   "ontology": {
     "term_id": "AI-7014",

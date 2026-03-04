@@ -6,14 +6,14 @@
     "Federated Credential Exchange"
   ],
   "wiki_links": [
-    "Credential Verification",
-    "Identity Management",
+    "Decentralized Identifiers",
+    "Cross-Platform Identity",
+    "Selective Disclosure",
     "metaverse",
     "Blockchain Anchoring",
-    "Selective Disclosure",
-    "Decentralized Identifiers",
+    "Credential Verification",
     "Verifiable Credentials",
-    "Cross-Platform Identity"
+    "Identity Management"
   ],
   "ontology": {
     "term_id": "MV-9782",
