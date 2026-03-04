@@ -1,7 +1,7 @@
 /* ================================================================
    Logseq Presentation Mode — lightweight slide engine
-   Trigger: Ctrl+Shift+P  or  toolbar ▶ button
-   Nav:     ← → ↑ ↓  Space/n  p  Home  End
+   Trigger: F5  or  toolbar play button
+   Nav:     left/right  Space/n  p  Home  End
    Exit:    Esc / q
    Blackout: b
    ================================================================ */
@@ -12,7 +12,6 @@
 
   /* ── find top-level blocks ─────────────────────────────── */
   function getSlides() {
-    /* try multiple selectors — Logseq OG DOM varies by version */
     var blocks = [];
     var selectors = [
       '.page-blocks-inner > .ls-block',
@@ -29,7 +28,7 @@
         return !b.parentElement.classList.contains('block-children');
       });
     }
-    /* filter out empty / hr-only blocks */
+    /* filter out empty / hr-only / property-only blocks */
     return blocks.filter(function (block) {
       var c = block.querySelector('.block-content');
       if (!c) return false;
@@ -37,8 +36,38 @@
       if (!t || t === '---' || t === '***' || t === '___') return false;
       /* single <hr> child */
       if (c.children.length === 1 && c.children[0] && c.children[0].tagName === 'HR') return false;
+      /* skip property-only blocks (e.g. "public:: true") */
+      if (/^[a-z-]+::\s/.test(t) && t.indexOf('\n') === -1) return false;
+      /* skip blocks that are just page properties rendered */
+      if (c.querySelector('.page-properties') || c.querySelector('.block-properties')) {
+        if (!c.querySelector('h1, h2, h3, img, video, table, iframe')) return false;
+      }
       return true;
     });
+  }
+
+  /* ── force lazy blocks to render by scrolling ──────────── */
+  function forceRenderAll(callback) {
+    var container = document.querySelector('.cp__sidebar-main-content') ||
+                    document.querySelector('#main-content-container') ||
+                    document.documentElement;
+    var origScroll = container.scrollTop;
+    var maxScroll = container.scrollHeight;
+    var step = 0;
+    var stepSize = window.innerHeight;
+
+    function scrollStep() {
+      if (step * stepSize < maxScroll + stepSize) {
+        container.scrollTop = step * stepSize;
+        step++;
+        requestAnimationFrame(scrollStep);
+      } else {
+        /* scroll back to top and proceed */
+        container.scrollTop = origScroll;
+        setTimeout(callback, 100);
+      }
+    }
+    scrollStep();
   }
 
   /* ── controls overlay ──────────────────────────────────── */
@@ -47,8 +76,8 @@
     el.id = 'ls-pres-controls';
     el.innerHTML =
       '<span id="ls-pres-counter">1 / 1</span>' +
-      '<button id="ls-pres-prev" title="Previous  ←">&#8249;</button>' +
-      '<button id="ls-pres-next" title="Next  →">&#8250;</button>' +
+      '<button id="ls-pres-prev" title="Previous  left">&#8249;</button>' +
+      '<button id="ls-pres-next" title="Next  right">&#8250;</button>' +
       '<button id="ls-pres-exit" title="Exit  Esc">&#10005;</button>';
     document.body.appendChild(el);
     document.getElementById('ls-pres-prev').onclick = prev;
@@ -76,13 +105,16 @@
 
   /* ── enter / exit ──────────────────────────────────────── */
   function enter() {
-    state.slides = getSlides();
-    if (!state.slides.length) return;
-    state.active = true;
-    state.idx = 0;
-    document.documentElement.classList.add('ls-pres-mode');
-    createControls();
-    showSlide(0);
+    /* force all lazy blocks to render first */
+    forceRenderAll(function () {
+      state.slides = getSlides();
+      if (!state.slides.length) return;
+      state.active = true;
+      state.idx = 0;
+      document.documentElement.classList.add('ls-pres-mode');
+      createControls();
+      showSlide(0);
+    });
   }
 
   function exit() {
@@ -99,7 +131,7 @@
   /* ── keyboard ──────────────────────────────────────────── */
   document.addEventListener('keydown', function (e) {
     if (!state.active) {
-      if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'p') { e.preventDefault(); enter(); }
+      if (e.key === 'F5') { e.preventDefault(); e.stopPropagation(); enter(); }
       return;
     }
     switch (e.key) {
@@ -123,13 +155,11 @@
   /* ── prevent editor activation while presenting ────────── */
   document.addEventListener('mousedown', function (e) {
     if (!state.active) return;
-    /* allow controls and interactive elements */
     if (e.target.closest('#ls-pres-controls, a, iframe, video, audio, button, input, select')) return;
     e.preventDefault();
     e.stopPropagation();
   }, true);
 
-  /* ── click anywhere on slide to advance (except controls) */
   document.addEventListener('click', function (e) {
     if (!state.active) return;
     if (e.target.closest('#ls-pres-controls, a, iframe, video, audio, button, input, select')) return;
@@ -140,7 +170,6 @@
   /* ── toolbar button ────────────────────────────────────── */
   function injectButton() {
     if (document.getElementById('ls-pres-btn')) return;
-    /* try common header locations */
     var target =
       document.querySelector('.cp__header > .r') ||
       document.querySelector('.cp__header .r') ||
@@ -148,7 +177,7 @@
     if (!target) return;
     var btn = document.createElement('button');
     btn.id = 'ls-pres-btn';
-    btn.title = 'Present (Ctrl+Shift+P)';
+    btn.title = 'Present (F5)';
     btn.textContent = '\u25B6';
     btn.setAttribute('style',
       'margin-right:8px;font-size:14px;cursor:pointer;' +

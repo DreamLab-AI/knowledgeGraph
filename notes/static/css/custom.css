@@ -67,7 +67,32 @@ html.ls-pres-mode .ls-block.ls-pres-active {
 html.ls-pres-mode .ls-pres-active .bullet-container,
 html.ls-pres-mode .ls-pres-active .block-children-left-border,
 html.ls-pres-mode .ls-pres-active .block-properties,
-html.ls-pres-mode .ls-pres-active .collapsed-indicator {
+html.ls-pres-mode .ls-pres-active .collapsed-indicator,
+html.ls-pres-mode .ls-pres-active .block-control,
+html.ls-pres-mode .ls-pres-active .page-property-key,
+html.ls-pres-mode .ls-pres-active .page-properties {
+  display: none !important;
+}
+
+/* Hide collapsed sections entirely in slides */
+html.ls-pres-mode .ls-pres-active .ls-block[data-collapsed="true"] > .block-children,
+html.ls-pres-mode .ls-pres-active .ls-block.collapsed > .block-children {
+  display: none !important;
+}
+
+/* Hide the collapsed block header text (the title of collapsed sections) */
+html.ls-pres-mode .ls-pres-active .ls-block[data-collapsed="true"] > .flex-row > .flex-1 > .block-content,
+html.ls-pres-mode .ls-pres-active .ls-block.collapsed > .flex-row > .flex-1 > .block-content {
+  display: none !important;
+}
+
+/* Also hide any block whose content is just a collapsed:: true property */
+html.ls-pres-mode .ls-pres-active .block-content-wrapper:has(> .block-properties-inner) {
+  display: none !important;
+}
+
+/* Hide Logseq page-ref brackets in slides */
+html.ls-pres-mode .ls-pres-active .bracket {
   display: none !important;
 }
 
