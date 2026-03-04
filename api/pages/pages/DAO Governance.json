@@ -14,13 +14,13 @@
     "Governance Board"
   ],
   "wiki_links": [
-    "Blockchain",
-    "Decentralised Governance",
-    "Platform Governance",
     "Token Economy",
     "Voting Mechanisms",
     "Decentralised Decision-Making",
-    "Smart Contracts"
+    "Platform Governance",
+    "Smart Contracts",
+    "Blockchain",
+    "Decentralised Governance"
   ],
   "ontology": {
     "term_id": "NGM-7016",

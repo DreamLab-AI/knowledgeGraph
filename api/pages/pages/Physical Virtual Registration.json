@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: physical-virtual-registration-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10007\n\t- source-domain:: mv\n\t- preferred-term:: Physical Virtual Registration\n\t- status:: active\n\t- definition:: The process of aligning and synchronizing virtual content with physical world coordinates using spatial tracking, computer vision, and sensor fusion to ensure accurate overlay of digital objects in augmented reality environments.\n\t- owl:class:: mv:PhysicalVirtualRegistration\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: physical-virtual-registration-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Spatial Computing]]\n\t\t- related-to:: [[Spatial Anchors]]\n\t\t- related-to:: [[Computer Vision]]\n\t\t- related-to:: [[SLAM]]\n\t\t- enables:: [[Accurate AR Overlay]]\n\t- #### Technologies\n\t  collapsed:: true\n\t\t- Visual-inertial odometry for pose estimation\n\t\t- Simultaneous Localization and Mapping (SLAM)\n\t\t- Marker-based registration using fiducials\n\t\t- Markerless registration using feature detection\n\t\t- Depth sensors for environment understanding\n\t- #### Challenges\n\t  collapsed:: true\n\t\t- Drift correction over extended sessions\n\t\t- Dynamic environment handling\n\t\t- Low-light and featureless surface tracking\n\t\t- Multi-user coordinate system alignment",
   "backlinks": [],
   "wiki_links": [
+    "Spatial Computing",
     "Accurate AR Overlay",
-    "Computer Vision",
     "Spatial Anchors",
     "SLAM",
-    "metaverse",
-    "Spatial Computing"
+    "Computer Vision",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10007",

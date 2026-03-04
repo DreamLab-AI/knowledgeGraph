@@ -7,10 +7,10 @@
     "ETSI_Domain_Data_Management"
   ],
   "wiki_links": [
-    "ArtificialIntelligenceDomain",
     "Artificial Intelligence",
-    "Big Data",
-    "Data Engineering"
+    "Data Engineering",
+    "ArtificialIntelligenceDomain",
+    "Big Data"
   ],
   "ontology": {
     "term_id": "AI-9009",

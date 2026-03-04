@@ -10,17 +10,17 @@
     "ETSI_Domain_Ethics_&_Law"
   ],
   "wiki_links": [
-    "Moderation Infrastructure",
-    "Platform Accountability",
+    "GDPR",
+    "User Protection",
+    "AI Act",
+    "Content Transparency",
+    "metaverse",
     "Compliance Systems",
-    "Reporting Mechanisms",
     "Digital Markets Act",
     "Digital Regulation",
-    "User Protection",
-    "Content Transparency",
-    "AI Act",
-    "metaverse",
-    "GDPR"
+    "Moderation Infrastructure",
+    "Reporting Mechanisms",
+    "Platform Accountability"
   ],
   "ontology": {
     "term_id": "MV-9869",

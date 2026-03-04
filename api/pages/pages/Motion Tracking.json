@@ -15,19 +15,19 @@
     "Xr Device"
   ],
   "wiki_links": [
-    "Head-Mounted Displays",
-    "Metaverse",
-    "Avatar Animation",
-    "Virtual Reality",
-    "XR Input Technologies",
-    "Motion Capture Systems",
     "Eye Tracking",
-    "User Identification",
     "Augmented Reality",
-    "Pose Estimation",
+    "Virtual Reality",
+    "Motion Capture Systems",
+    "User Identification",
+    "Avatar Animation",
     "Hand Controllers",
+    "Pose Estimation",
+    "XR Input Technologies",
     "Embodied Presence",
-    "Gesture Control"
+    "Metaverse",
+    "Gesture Control",
+    "Head-Mounted Displays"
   ],
   "ontology": {
     "term_id": "NGM-7036",

@@ -6,11 +6,11 @@
     "Feedback Mechanism"
   ],
   "wiki_links": [
-    "3D Asset Pipeline",
+    "Gltf Standard",
     "Content Production Workflow",
-    "XR Content Delivery",
     "metaverse",
-    "Gltf Standard"
+    "3D Asset Pipeline",
+    "XR Content Delivery"
   ],
   "ontology": {
     "term_id": "MV-9922",

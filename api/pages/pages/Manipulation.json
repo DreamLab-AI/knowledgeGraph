@@ -7,12 +7,12 @@
     "RobotLearning"
   ],
   "wiki_links": [
+    "Robot Kinematics",
     "Gripper",
-    "Grasp Planning",
-    "End Effector",
     "Robotics Systems",
-    "Motion Planning",
-    "Robot Kinematics"
+    "End Effector",
+    "Grasp Planning",
+    "Motion Planning"
   ],
   "ontology": {
     "term_id": "RB-0602",

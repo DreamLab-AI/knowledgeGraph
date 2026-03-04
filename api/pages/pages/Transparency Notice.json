@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: transparency-notice-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10086\n\t- source-domain:: mv\n\t- preferred-term:: Transparency Notice\n\t- status:: active\n\t- definition:: A formal disclosure document or notification that informs users about data collection practices, processing purposes, privacy policies, and their rights regarding personal information handling in digital platforms and metaverse environments.\n\t- owl:class:: mv:TransparencyNotice\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Privacy Disclosure]]\n\t\t- related-to:: [[GDPR]]\n\t\t- related-to:: [[Data Privacy]]\n\t\t- related-to:: [[User Rights]]\n\t  id:: transparency-notice-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Transparency notices are required disclosures that inform users about how their data is collected, processed, and used. Under GDPR and similar regulations, organizations must provide clear, accessible information about data practices before processing personal data.\n- ## Technical Details\n\t- ### Required Elements (GDPR)\n\t\t- Identity of data controller\n\t\t- Purpose of data processing\n\t\t- Legal basis for processing\n\t\t- Data retention periods\n\t\t- User rights and how to exercise them\n\t\t- Third-party data sharing details\n\t- ### Delivery Methods\n\t\t- **Just-in-Time Notices**: Displayed at point of data collection\n\t\t- **Layered Notices**: Summary with links to detailed information\n\t\t- **Privacy Dashboards**: Interactive interfaces for viewing practices\n\t\t- **Machine-Readable Formats**: Structured data for automated processing\n\t- ### Metaverse-Specific Considerations\n\t\t- Biometric data collection disclosure\n\t\t- Behavioral tracking in virtual environments\n\t\t- Cross-platform data sharing\n\t\t- AI-driven profiling transparency\n- ## Applications\n\t- Metaverse platform onboarding flows\n\t- VR/AR app privacy disclosures\n\t- Smart contract interaction warnings\n\t- Cookie consent mechanisms\n\t- Third-party integration notifications",
   "backlinks": [],
   "wiki_links": [
-    "Data Privacy",
-    "User Rights",
+    "GDPR",
     "Privacy Disclosure",
+    "User Rights",
     "metaverse",
-    "GDPR"
+    "Data Privacy"
   ],
   "ontology": {
     "term_id": "MV-10086",

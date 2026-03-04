@@ -6,16 +6,16 @@
     "Trust Score Metric"
   ],
   "wiki_links": [
-    "Sensitivity Analysis",
-    "Performance Tuning",
-    "Simulation Parameters",
-    "Computational Model",
-    "Validation Rules",
-    "Simulation Control",
-    "Configuration Setting",
     "Parameter Definition",
+    "Validation Rules",
+    "Simulation Parameters",
+    "Configuration Setting",
+    "Simulation Control",
     "Model Calibration",
     "metaverse",
+    "Sensitivity Analysis",
+    "Computational Model",
+    "Performance Tuning",
     "Solver Configuration"
   ],
   "ontology": {

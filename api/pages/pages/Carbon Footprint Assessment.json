@@ -8,17 +8,17 @@
     "Carbon Calculator"
   ],
   "wiki_links": [
-    "Impact Quantification",
-    "Hotspot Identification",
-    "Environmental Assessment",
-    "Life Cycle Assessment",
-    "Carbon Accounting",
     "Boundary Definition",
     "Lifecycle Data",
-    "Product Carbon Footprint",
-    "Emission Factors",
+    "Hotspot Identification",
+    "Environmental Assessment",
+    "Reduction Strategy",
+    "Carbon Accounting",
     "metaverse",
-    "Reduction Strategy"
+    "Life Cycle Assessment",
+    "Impact Quantification",
+    "Emission Factors",
+    "Product Carbon Footprint"
   ],
   "ontology": {
     "term_id": "MV-9809",

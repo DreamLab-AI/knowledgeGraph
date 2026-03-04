@@ -6,17 +6,17 @@
     "Token Custody Service"
   ],
   "wiki_links": [
-    "Key Management",
-    "Asset Custody",
-    "Transaction Processing",
-    "Exchange Technology",
-    "Storage Solutions",
-    "Cryptographic Systems",
-    "Digital Infrastructure",
-    "Security Hardware",
     "Node Network",
+    "Digital Infrastructure",
+    "Cryptographic Systems",
+    "Key Management",
+    "Transaction Processing",
     "metaverse",
-    "Wallet Infrastructure"
+    "Storage Solutions",
+    "Exchange Technology",
+    "Wallet Infrastructure",
+    "Asset Custody",
+    "Security Hardware"
   ],
   "ontology": {
     "term_id": "MV-9848",

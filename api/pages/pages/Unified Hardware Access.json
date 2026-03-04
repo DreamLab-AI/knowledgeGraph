@@ -7,10 +7,10 @@
   ],
   "wiki_links": [
     "XR Device",
-    "Interoperability",
-    "Hardware Abstraction",
     "WebXR",
-    "metaverse"
+    "Hardware Abstraction",
+    "metaverse",
+    "Interoperability"
   ],
   "ontology": {
     "term_id": "MV-10092",

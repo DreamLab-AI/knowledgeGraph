@@ -9,23 +9,23 @@
     "RB-1003-optimal-control"
   ],
   "wiki_links": [
-    "RB-1001-open-loop-control",
-    "Control System",
     "Accuracy",
-    "ISO 8373:2021",
-    "RB-1007-trajectory-generation",
-    "Adaptability",
     "RB-1004-adaptive-control",
-    "Robotics",
-    "RB-1015-kalman-filter",
-    "Controller",
-    "PID Control",
     "Sensor System",
+    "ISO 8373:2021",
+    "Controller",
+    "Adaptability",
+    "PID Control",
+    "RB-1007-trajectory-generation",
     "Actuator",
+    "Robotics",
     "Control Theory",
+    "Stability",
+    "Control System",
+    "RB-1015-kalman-filter",
     "RB-1013-localization",
     "Feedback Mechanism",
-    "Stability"
+    "RB-1001-open-loop-control"
   ],
   "ontology": {
     "term_id": "RB-1002",
