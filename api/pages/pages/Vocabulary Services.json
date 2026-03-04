@@ -7,10 +7,10 @@
   ],
   "wiki_links": [
     "Interoperability",
-    "Knowledge Management",
-    "Vocabulary Governance",
     "Ontology",
-    "metaverse"
+    "Vocabulary Governance",
+    "metaverse",
+    "Knowledge Management"
   ],
   "ontology": {
     "term_id": "MV-10161",

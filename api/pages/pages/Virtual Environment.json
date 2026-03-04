@@ -23,12 +23,12 @@
     "Virtual Environment Specification"
   ],
   "wiki_links": [
-    "3D Models",
-    "Metaverse",
-    "Virtual Reality",
     "Augmented Reality",
-    "Digital Twin",
-    "metaverse"
+    "Metaverse",
+    "metaverse",
+    "Virtual Reality",
+    "3D Models",
+    "Digital Twin"
   ],
   "ontology": {
     "term_id": "MV-10122",

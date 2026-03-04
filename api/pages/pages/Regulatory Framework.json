@@ -14,12 +14,12 @@
   ],
   "wiki_links": [
     "KYC/AML Requirements",
+    "Blockchain",
+    "Identity Management",
+    "Market Integrity",
     "Cryptoasset Service Providers",
     "Compliance Verification",
-    "Market Integrity",
-    "Blockchain",
-    "EU MiCA Regulation",
-    "Identity Management"
+    "EU MiCA Regulation"
   ],
   "ontology": {
     "term_id": "NGM-7028",

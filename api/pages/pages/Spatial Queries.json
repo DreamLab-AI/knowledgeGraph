@@ -6,12 +6,12 @@
     "Scene Graph"
   ],
   "wiki_links": [
-    "Location Based Search",
+    "GIS Analysis",
     "Spatial Database",
-    "Database Query",
-    "R-Tree Indexing",
     "metaverse",
-    "GIS Analysis"
+    "R-Tree Indexing",
+    "Location Based Search",
+    "Database Query"
   ],
   "ontology": {
     "term_id": "MV-10064",

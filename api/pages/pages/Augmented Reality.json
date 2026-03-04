@@ -25,18 +25,18 @@
     "User Consent Token"
   ],
   "wiki_links": [
-    "Microsoft HoloLens",
-    "Contextual Information Display",
-    "Meta Ray-Ban Smart Glasses",
-    "Apple Vision Pro",
-    "Metaverse",
-    "Virtual Reality",
     "Computer Vision",
-    "Mixed Reality",
-    "Remote Assistance",
     "Immersive Experiences",
+    "Mixed Reality",
+    "Metaverse",
+    "Contextual Information Display",
+    "Apple Vision Pro",
+    "Microsoft HoloLens",
+    "Meta Ray-Ban Smart Glasses",
     "Extended Reality",
-    "Spatial Computing"
+    "Spatial Computing",
+    "Remote Assistance",
+    "Virtual Reality"
   ],
   "ontology": {
     "term_id": "NGM-7031",

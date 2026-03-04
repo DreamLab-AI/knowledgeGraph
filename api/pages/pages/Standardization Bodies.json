@@ -8,11 +8,11 @@
   ],
   "wiki_links": [
     "Technology Interoperability",
-    "IEEE Standards",
-    "ISO Standards",
     "Standards Organization",
     "W3C Recommendations",
-    "metaverse"
+    "metaverse",
+    "IEEE Standards",
+    "ISO Standards"
   ],
   "ontology": {
     "term_id": "MV-10069",

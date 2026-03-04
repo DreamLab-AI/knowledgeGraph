@@ -6,12 +6,12 @@
     "Procedural Audio Generator"
   ],
   "wiki_links": [
-    "Sound Synthesis",
-    "Audio System",
+    "Signal Processing",
     "Dynamic Sound Design",
     "Audio Effects",
-    "Signal Processing",
-    "metaverse"
+    "metaverse",
+    "Audio System",
+    "Sound Synthesis"
   ],
   "ontology": {
     "term_id": "MV-9990",

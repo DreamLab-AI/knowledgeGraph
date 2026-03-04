@@ -6,11 +6,11 @@
     "Digital Twin of Society (DToS)"
   ],
   "wiki_links": [
-    "3D Models",
-    "Urban Planning",
     "Digital Twin",
     "GIS",
-    "metaverse"
+    "metaverse",
+    "3D Models",
+    "Urban Planning"
   ],
   "ontology": {
     "term_id": "MV-10106",

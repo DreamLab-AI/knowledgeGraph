@@ -4,14 +4,14 @@
   "content": "- ### OntologyBlock\n  id:: ar-display-device-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9769\n\t- source-domain:: mv\n\t- preferred-term:: Ar Display Device\n\t- status:: active\n\t- definition:: AR Display Device encompasses hardware systems including smart glasses, headsets, and head-mounted displays that superimpose computer-generated imagery onto the user's view of the real world through optical technologies such as waveguides, birdbath optics, holographic displays, and metasurfaces.\n\t- owl:class:: mv:ArDisplayDevice\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Display Hardware]]\n\t- enables:: [[Augmented Reality Experiences]], [[Mixed Reality Interaction]], [[Spatial Computing]]\n\t- requires:: [[Optical Systems]], [[Pose Tracking]], [[Display Technology]]\n\t- #### Relationships\n\t  id:: ar-display-device-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Waveguide Displays**: Nanometer-scale patterns etched on lenses bouncing light to the eye\n- **Birdbath Optics**: Downward-positioned displays reflecting visuals near the eye with micro OLED\n- **Metasurfaces**: Nanophotonics bending light to enable holographic AR without bulky optics\n- **Pose Tracking**: Sensors determining device position for accurate digital overlay alignment\n\n### 2024 Developments\n- **Meta Orion**: Largest field of view in smallest AR glasses form factor with transparent lenses\n- **Stanford Holographic AR**: Full-color 3D moving images in ordinary glasses form factor\n- **Snap Spectacles 5**: Fifth generation with digital graphics overlaid on physical world\n\n### Market Outlook\nAR market expected to cross $97 billion by 2028, with AR glasses becoming commonplace within 5-10 years.",
   "backlinks": [],
   "wiki_links": [
-    "Augmented Reality Experiences",
+    "Optical Systems",
+    "Display Hardware",
     "Pose Tracking",
     "Display Technology",
-    "Display Hardware",
-    "Mixed Reality Interaction",
     "metaverse",
-    "Optical Systems",
-    "Spatial Computing"
+    "Spatial Computing",
+    "Augmented Reality Experiences",
+    "Mixed Reality Interaction"
   ],
   "ontology": {
     "term_id": "MV-9769",

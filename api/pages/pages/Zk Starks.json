@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: zk-starks-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10176\n\t- source-domain:: mv\n\t- preferred-term:: ZK-STARKs\n\t- status:: active\n\t- definition:: Zero-Knowledge Scalable Transparent Arguments of Knowledge - a cryptographic proof system that enables verification of computations without revealing underlying data, featuring transparency through no trusted setup requirement, quantum resistance, and efficient scalability for large witness sizes, making it ideal for blockchain Layer 2 scaling solutions.\n\t- owl:class:: mv:ZKSTARKs\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Zero Knowledge Proof]]\n\t\t- related-to:: [[Blockchain Scalability]]\n\t\t- related-to:: [[Layer 2]]\n\t\t- related-to:: [[StarkNet]]\n\t  id:: zk-starks-relationships\n\t  collapsed:: true\n- ## Overview\n\t- ZK-STARKs provide zero-knowledge proofs without trusted setup requirements, offering transparency and quantum resistance. StarkWare pioneered STARK technology powering StarkEx and Starknet, a permissionless Ethereum validity rollup. The zero-knowledge proof market was valued at $1.28 billion in 2024, projected to reach $7.59 billion by 2033. Over $28 billion sits in ZK-based rollups, with Starknet processing over 10 million transactions monthly.\n- ## Technical Details\n\t- ### Key Properties\n\t\t- **Scalable**: Off-chain computation with exponential verification cost reduction\n\t\t- **Transparent**: No trusted setup or cryptographic toxic waste\n\t\t- **Quantum-Resistant**: Secure against quantum computing attacks\n\t\t- **Large Witness Efficiency**: Cost-effective for big data proofs\n\t- ### StarkWare Ecosystem\n\t\t- **StarkEx**: Scaling solution for specific applications\n\t\t- **Starknet**: Permissionless validity rollup on Ethereum\n\t\t- **Cairo**: Programming language for STARK-based computation\n\t\t- **Graphics Delivery Network**: Proof generation infrastructure\n\t- ### Comparison to ZK-SNARKs\n\t\t- No trusted setup required (more transparent)\n\t\t- Larger proof sizes than SNARKs\n\t\t- Higher verification overhead\n\t\t- Better scalability for large witnesses\n\t- ### Layer 2 Applications\n\t\t- Transaction batching and rollup validation\n\t\t- Reduced Ethereum mainnet gas costs\n\t\t- Faster transaction finality\n\t\t- Maintained security of settlement layer\n- ## Applications\n\t- Ethereum Layer 2 scaling (Starknet)\n\t- Decentralized exchange infrastructure (dYdX)\n\t- Gaming and NFT platform scaling\n\t- Enterprise blockchain solutions\n\t- Privacy-preserving data verification",
   "backlinks": [],
   "wiki_links": [
-    "Layer 2",
     "Zero Knowledge Proof",
-    "Blockchain Scalability",
     "StarkNet",
-    "metaverse"
+    "metaverse",
+    "Layer 2",
+    "Blockchain Scalability"
   ],
   "ontology": {
     "term_id": "MV-10176",

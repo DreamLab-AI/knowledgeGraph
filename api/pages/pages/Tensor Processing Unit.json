@@ -7,12 +7,12 @@
     "Inference Hardware"
   ],
   "wiki_links": [
-    "ASIC",
-    "GPU",
-    "Large Language Models",
-    "Training Hardware",
     "TensorFlow",
     "Deep Learning",
+    "GPU",
+    "ASIC",
+    "Large Language Models",
+    "Training Hardware",
     "Inference Hardware",
     "AI Hardware"
   ],

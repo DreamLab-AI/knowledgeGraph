@@ -9,15 +9,15 @@
   ],
   "wiki_links": [
     "Computer Vision",
-    "Pattern Definition",
-    "Color Accuracy",
-    "Reference Standard",
     "Precision Manufacturing",
-    "Lens Distortion Correction",
-    "Camera Parameters",
-    "Photogrammetry",
     "Flatness Control",
+    "Reference Standard",
+    "Photogrammetry",
+    "Camera Parameters",
+    "Color Accuracy",
+    "Pattern Definition",
     "metaverse",
+    "Lens Distortion Correction",
     "Camera Calibration"
   ],
   "ontology": {

@@ -7,17 +7,17 @@
     "Micropayment"
   ],
   "wiki_links": [
-    "DeFi",
-    "Financial Infrastructure",
-    "Digital Wallet",
-    "Cryptocurrency",
-    "Blockchain Network",
     "Payment Gateway",
+    "DeFi",
+    "Cryptocurrency",
+    "Financial Infrastructure",
+    "Virtual Transactions",
     "Cross-Border Payments",
+    "Digital Wallet",
     "Micropayments",
-    "metaverse",
     "Stablecoin",
-    "Virtual Transactions"
+    "metaverse",
+    "Blockchain Network"
   ],
   "ontology": {
     "term_id": "MV-9864",

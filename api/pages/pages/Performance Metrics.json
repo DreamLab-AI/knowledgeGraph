@@ -12,11 +12,11 @@
     "Telemetry & Analytics"
   ],
   "wiki_links": [
-    "Accuracy",
-    "Precision",
-    "AUC",
-    "Artificial Intelligence",
     "Machine Learning",
+    "Artificial Intelligence",
+    "AUC",
+    "Precision",
+    "Accuracy",
     "Recall",
     "F1 Score"
   ],

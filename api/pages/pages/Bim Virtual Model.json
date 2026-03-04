@@ -4,17 +4,17 @@
   "content": "- ### OntologyBlock\n  id:: bim-virtual-model-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9798\n\t- source-domain:: mv\n\t- preferred-term:: BIM Virtual Model\n\t- definition:: A comprehensive 3D digital representation of a building or infrastructure asset created through Building Information Modeling, containing geometric data, material specifications, and functional characteristics that enable visualization, simulation, quantity take-offs, and clash detection throughout the construction lifecycle.\n\t- status:: active\n\t- owl:class:: mv:BimVirtualModel\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: bim-virtual-model-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[3D Model]]\n\t\t- enables:: [[Design Visualization]], [[Construction Simulation]], [[Clash Detection]]\n\t\t- requires:: [[BIM Software]], [[Design Data]], [[Modeling Standards]]\n\t\t- related-to:: [[Digital Twin]], [[Virtual Construction]], [[Building Design]]\n- ## Technical Details\n\t- **Model Characteristics**:\n\t\t- Parametric 3D geometry with embedded information\n\t\t- Material and component specifications\n\t\t- Spatial relationships and constraints\n\t\t- Scheduling and cost data integration\n\t- **Distinction from Digital Twin**:\n\t\t- BIM models: Static design and construction visualization\n\t\t- Digital twins: Real-time bi-directional data connection with physical asset\n\t- **Integration Technologies**:\n\t\t- CAD drawing import/export\n\t\t- Photogrammetry for existing conditions capture\n\t\t- IoT sensor integration for operational phase\n\t\t- VR/AR for immersive visualization\n\t\t- 3D Gaussian Splatting for enhanced scanning\n- ## Standards\n\t- **ISO 19650**: Information management framework for BIM\n\t- **OpenBIM**: Open standards for cross-platform data exchange\n\t- **IFC (Industry Foundation Classes)**: Neutral file format for model sharing\n- ## Applications\n\t- Pre-construction site visualization\n\t- Stakeholder coordination and communication\n\t- Construction sequencing simulation\n\t- Facility management and operations\n\t- Metaverse integration for extended building interaction",
   "backlinks": [],
   "wiki_links": [
-    "Design Visualization",
     "Modeling Standards",
-    "Clash Detection",
+    "BIM Software",
     "3D Model",
     "Design Data",
-    "Construction Simulation",
-    "Virtual Construction",
+    "metaverse",
+    "Clash Detection",
     "Building Design",
-    "Digital Twin",
-    "BIM Software",
-    "metaverse"
+    "Virtual Construction",
+    "Design Visualization",
+    "Construction Simulation",
+    "Digital Twin"
   ],
   "ontology": {
     "term_id": "MV-9798",

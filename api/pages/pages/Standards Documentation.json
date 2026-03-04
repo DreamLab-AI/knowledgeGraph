@@ -7,10 +7,10 @@
     "Digital Taxonomy Registry"
   ],
   "wiki_links": [
-    "metaverse",
     "Interoperability",
-    "Standards",
-    "Technical Standards"
+    "Technical Standards",
+    "metaverse",
+    "Standards"
   ],
   "ontology": {
     "term_id": "MV-10074",

@@ -8,14 +8,14 @@
     "Digital Twin Construction"
   ],
   "wiki_links": [
-    "Smart Manufacturing",
-    "Smart Cities",
-    "Internet of Things",
-    "Digital Twin",
     "Industrial Automation",
-    "Predictive Maintenance",
     "Edge Computing",
-    "5G Networks"
+    "Predictive Maintenance",
+    "Smart Cities",
+    "Smart Manufacturing",
+    "Internet of Things",
+    "5G Networks",
+    "Digital Twin"
   ],
   "ontology": {
     "term_id": "RB-7002",

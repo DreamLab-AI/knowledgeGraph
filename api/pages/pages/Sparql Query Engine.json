@@ -5,11 +5,11 @@
   "backlinks": [],
   "wiki_links": [
     "RDF Database",
-    "Knowledge Graph",
     "Query Processor",
-    "Semantic Data Retrieval",
     "Semantic Web Standards",
-    "metaverse"
+    "metaverse",
+    "Knowledge Graph",
+    "Semantic Data Retrieval"
   ],
   "ontology": {
     "term_id": "MV-10049",

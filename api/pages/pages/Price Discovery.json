@@ -12,19 +12,19 @@
     "Asset Trading"
   ],
   "wiki_links": [
-    "MEV",
-    "Price Transparency",
-    "Order Book",
-    "Spot Markets",
-    "DEX",
-    "Market Microstructure",
-    "Market Efficiency",
-    "Futures Markets",
-    "Fair Valuation",
     "Arbitrage",
+    "Fair Valuation",
+    "Price Transparency",
+    "Futures Markets",
     "FinancialDomain",
-    "Liquidity",
-    "Market Maker"
+    "DEX",
+    "Market Efficiency",
+    "Spot Markets",
+    "Market Maker",
+    "Market Microstructure",
+    "MEV",
+    "Order Book",
+    "Liquidity"
   ],
   "ontology": {
     "term_id": "NGM-7038",
