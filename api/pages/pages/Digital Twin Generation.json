@@ -7,17 +7,17 @@
     "Human Capture & Recognition"
   ],
   "wiki_links": [
-    "Machine Learning",
-    "Rapid Prototyping",
     "AI Training",
-    "Automated Modeling",
-    "Synthetic Data",
-    "Mass Digitization",
-    "Computer Vision",
-    "metaverse",
     "Generative AI",
+    "Automated Modeling",
+    "Rapid Prototyping",
+    "Mass Digitization",
+    "Machine Learning",
     "3D Capture",
-    "NVIDIA Omniverse"
+    "Synthetic Data",
+    "NVIDIA Omniverse",
+    "metaverse",
+    "Computer Vision"
   ],
   "ontology": {
     "term_id": "MV-9879",

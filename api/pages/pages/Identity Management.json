@@ -35,11 +35,11 @@
   ],
   "wiki_links": [
     "Privacy",
-    "Verifiable Credentials",
-    "Compliance Verification",
-    "KYC/AML Requirements",
     "Self-Sovereign Identity",
     "Blockchain",
+    "Compliance Verification",
+    "Verifiable Credentials",
+    "KYC/AML Requirements",
     "Cryptography"
   ],
   "ontology": {

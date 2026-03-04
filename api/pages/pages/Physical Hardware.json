@@ -9,10 +9,10 @@
   "wiki_links": [
     "Immersive Experiences",
     "Hardware",
-    "Haptic Devices",
-    "VR Headsets",
     "Motion Controllers",
-    "metaverse"
+    "Haptic Devices",
+    "metaverse",
+    "VR Headsets"
   ],
   "ontology": {
     "term_id": "MV-10005",

@@ -15,14 +15,14 @@
   ],
   "wiki_links": [
     "High-Performance Computing",
+    "Computer Hardware",
+    "AI Infrastructure",
     "Machine Learning",
+    "Deep Learning",
+    "Large Language Models",
     "AI Training",
     "Neural Networks",
-    "Large Language Models",
-    "Computer Hardware",
-    "Artificial Intelligence",
-    "AI Infrastructure",
-    "Deep Learning"
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-7020",

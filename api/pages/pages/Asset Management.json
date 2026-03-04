@@ -16,15 +16,15 @@
     "Data Management"
   ],
   "wiki_links": [
-    "Tokenization",
-    "Risk Management",
-    "Traditional Finance",
-    "Portfolio Management",
-    "Decentralized Finance",
     "Financial Services",
+    "Tokenization",
+    "Institutional Investment",
+    "Traditional Finance",
+    "Decentralized Finance",
+    "Risk Management",
+    "Portfolio Management",
     "Financial Technology",
-    "Custody",
-    "Institutional Investment"
+    "Custody"
   ],
   "ontology": {
     "term_id": "NGM-7014",

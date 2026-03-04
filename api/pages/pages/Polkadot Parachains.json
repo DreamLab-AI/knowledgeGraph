@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: BC-9002\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-9002\n\t- source-domain:: bc\n\t- preferred-term:: Polkadot Parachains\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Application-specific blockchains that connect to and are secured by the Polkadot Relay Chain, enabling interoperability and shared security across heterogeneous blockchain networks.\n\t- source:: [[Polkadot]], [[Web3 Foundation]]\n\t- maturity:: emerging\n\t- owl:class:: bc:PolkadotParachains\n\t- owl:role:: Process\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- isSubclassOf:: [[Layer 0 Protocol]], [[Interoperability Protocol]]\n\n### Relationships\n- is-subclass-of:: [[Blockchain]]",
   "backlinks": [],
   "wiki_links": [
-    "Polkadot",
-    "Layer 0 Protocol",
     "BlockchainDomain",
+    "Blockchain",
+    "Layer 0 Protocol",
+    "Polkadot",
     "Interoperability Protocol",
-    "Web3 Foundation",
-    "Blockchain"
+    "Web3 Foundation"
   ],
   "ontology": {
     "term_id": "BC-9002",

@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: reality-virtuality-continuum-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10018\n\t- source-domain:: mv\n\t- preferred-term:: Reality Virtuality Continuum\n\t- status:: active\n\t- definition:: A theoretical framework introduced by Milgram and Kishino in 1994 describing the continuous spectrum between purely physical reality and fully virtual environments, with augmented reality and augmented virtuality as intermediate mixed reality states along this scale.\n\t- owl:class:: mv:RealityVirtualityContinuum\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: reality-virtuality-continuum-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[XR Framework]]\n\t\t- related-to:: [[Mixed Reality]]\n\t\t- related-to:: [[Augmented Reality]]\n\t\t- related-to:: [[Virtual Reality]]\n\t\t- enables:: [[Cross Reality Experiences]]\n\t- #### Continuum Stages\n\t  collapsed:: true\n\t\t- Real Environment at one extreme\n\t\t- Augmented Reality adding digital overlays\n\t\t- Augmented Virtuality with real elements in virtual\n\t\t- Virtual Reality at the other extreme\n\t\t- Cross-reality (CR) transitions between stages\n\t- #### 2024 Context\n\t  collapsed:: true\n\t\t- Video passthrough HMDs enable full continuum\n\t\t- Meta Quest, Apple Vision Pro, Varjo devices\n\t\t- Extended Reality (XR) encompasses full spectrum\n\t\t- Military training primary application area",
   "backlinks": [],
   "wiki_links": [
+    "Cross Reality Experiences",
     "Augmented Reality",
     "Virtual Reality",
-    "Mixed Reality",
-    "Cross Reality Experiences",
+    "XR Framework",
     "metaverse",
-    "XR Framework"
+    "Mixed Reality"
   ],
   "ontology": {
     "term_id": "MV-10018",

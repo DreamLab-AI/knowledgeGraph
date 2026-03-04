@@ -6,17 +6,17 @@
     "Value Transfer"
   ],
   "wiki_links": [
-    "Matching Algorithm",
-    "Digital Currency",
-    "Smart Contracts",
     "Exchange Mechanism",
     "Asset Exchange",
-    "Peer-to-Peer Trading",
     "Trust Mechanism",
-    "metaverse",
     "Blockchain",
-    "Virtual Economy",
-    "Decentralized Exchange"
+    "Peer-to-Peer Trading",
+    "Digital Currency",
+    "Decentralized Exchange",
+    "Smart Contracts",
+    "metaverse",
+    "Matching Algorithm",
+    "Virtual Economy"
   ],
   "ontology": {
     "term_id": "MV-9794",

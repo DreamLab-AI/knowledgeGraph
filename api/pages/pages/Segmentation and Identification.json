@@ -12,11 +12,11 @@
   ],
   "wiki_links": [
     "WebDev and Consumer Tooling",
-    "AI Video",
-    "Segmentation and Identification",
     "Hardware and Edge",
     "Image Generation",
+    "Human tracking and SLAM capture",
     "Product Design",
-    "Human tracking and SLAM capture"
+    "AI Video",
+    "Segmentation and Identification"
   ]
 }

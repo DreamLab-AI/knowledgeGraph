@@ -8,12 +8,12 @@
     "Perception System"
   ],
   "wiki_links": [
-    "Model Evasion",
-    "AI Security Threats",
-    "Knowledge of Target Model",
+    "Crafted Perturbations",
     "System Manipulation",
+    "Knowledge of Target Model",
+    "Model Evasion",
     "metaverse",
-    "Crafted Perturbations"
+    "AI Security Threats"
   ],
   "ontology": {
     "term_id": "MV-9760",

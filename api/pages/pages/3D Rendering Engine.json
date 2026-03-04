@@ -12,18 +12,18 @@
     "Virtual Performance Space"
   ],
   "wiki_links": [
-    "Immersive Experiences",
-    "Augmented Reality",
-    "Unreal Engine",
-    "Game Development",
-    "Virtual Reality",
-    "Real-time Visualisation",
     "Unity",
-    "XR Applications",
-    "Computer Graphics",
+    "Augmented Reality",
+    "Game Development",
+    "Blender",
+    "Immersive Experiences",
     "Metaverse",
+    "Virtual Reality",
+    "Unreal Engine",
+    "XR Applications",
     "Digital Twin",
-    "Blender"
+    "Real-time Visualisation",
+    "Computer Graphics"
   ],
   "ontology": {
     "term_id": "NGM-7009",

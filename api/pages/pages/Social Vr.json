@@ -6,12 +6,12 @@
     "TELE-CONV-001-metaverse-telepresence-bridge"
   ],
   "wiki_links": [
-    "Immersive Communication",
     "Virtual Social Presence",
-    "Virtual Reality Platform",
-    "metaverse",
     "Avatar System",
-    "Virtual Community"
+    "Virtual Community",
+    "metaverse",
+    "Immersive Communication",
+    "Virtual Reality Platform"
   ],
   "ontology": {
     "term_id": "MV-10046",

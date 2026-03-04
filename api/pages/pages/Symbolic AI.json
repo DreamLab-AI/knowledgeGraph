@@ -7,13 +7,13 @@
     "Programming Paradigm"
   ],
   "wiki_links": [
-    "AAAI",
-    "Expert Systems",
+    "Knowledge Representation",
+    "Logic Programming",
+    "Artificial Intelligence",
     "Academic AI Research",
     "ArtificialIntelligenceDomain",
-    "Knowledge Representation",
-    "Artificial Intelligence",
-    "Logic Programming"
+    "AAAI",
+    "Expert Systems"
   ],
   "ontology": {
     "term_id": "AI-9001",

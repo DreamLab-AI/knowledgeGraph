@@ -5,12 +5,12 @@
   "backlinks": [],
   "wiki_links": [
     "Variance",
-    "Machine Learning",
-    "Parallel Training",
     "Ensemble Methods",
-    "Bootstrap Sampling",
+    "Parallel Training",
+    "Machine Learning",
+    "Random Forest",
     "Overfitting",
-    "Random Forest"
+    "Bootstrap Sampling"
   ],
   "ontology": {
     "term_id": "AI-1016",

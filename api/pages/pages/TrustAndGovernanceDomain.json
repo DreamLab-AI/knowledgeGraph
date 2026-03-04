@@ -73,23 +73,23 @@
     "Identity Graph"
   ],
   "wiki_links": [
-    "IdentityGovernance",
-    "RegulatoryCompliance",
-    "Provenance",
-    "DynamicCompliance",
-    "TechnologyDomain",
+    "TrustManagement",
     "DataGovernance",
+    "Provenance",
     "RiskManagement",
     "AIGovernance",
-    "AuditTrail",
-    "Accountability",
+    "EthicalByDesign",
+    "RegulatoryCompliance",
     "ContinuousAssurance",
     "DecisionTraceability",
+    "TechnologyDomain",
+    "Accountability",
     "ExplainableAI",
-    "StakeholderOversight",
-    "TrustManagement",
     "Transparency",
-    "EthicalByDesign"
+    "IdentityGovernance",
+    "AuditTrail",
+    "StakeholderOversight",
+    "DynamicCompliance"
   ],
   "ontology": {
     "term_id": "AI-7004",

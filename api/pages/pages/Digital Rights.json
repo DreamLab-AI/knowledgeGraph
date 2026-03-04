@@ -9,17 +9,17 @@
     "Digital Citizenship"
   ],
   "wiki_links": [
-    "Digital Freedom",
-    "GDPR",
-    "Data Sovereignty",
     "Legal Framework",
-    "Digital Services Act",
-    "Human Rights",
-    "Privacy Protection",
-    "metaverse",
     "Technical Safeguards",
+    "Data Protection",
+    "Digital Services Act",
+    "GDPR",
+    "Privacy Protection",
+    "Digital Freedom",
+    "Human Rights",
     "Enforcement Mechanisms",
-    "Data Protection"
+    "metaverse",
+    "Data Sovereignty"
   ],
   "ontology": {
     "term_id": "MV-9868",

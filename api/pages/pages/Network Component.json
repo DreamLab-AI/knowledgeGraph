@@ -5,12 +5,12 @@
   "backlinks": [],
   "wiki_links": [
     "Validator Node",
+    "Blockchain Network",
     "Full Node",
     "Bootstrap Node",
+    "Light Node",
     "Blockchain Technology",
-    "Blockchain Network",
-    "Blockchain Entity",
-    "Light Node"
+    "Blockchain Entity"
   ],
   "ontology": {
     "term_id": "BC-0604",

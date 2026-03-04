@@ -7,13 +7,13 @@
   ],
   "wiki_links": [
     "Storage Infrastructure",
-    "Content Authenticity",
-    "Format Migration",
+    "Preservation Standards",
     "Metadata Management",
-    "Long-Term Preservation",
-    "metaverse",
     "Preservation Planning",
-    "Preservation Standards"
+    "metaverse",
+    "Format Migration",
+    "Long-Term Preservation",
+    "Content Authenticity"
   ],
   "ontology": {
     "term_id": "MV-9777",
