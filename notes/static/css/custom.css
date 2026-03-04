@@ -83,8 +83,8 @@ html.ls-pres-mode .ls-pres-active .page-properties {
   padding: 0 !important;
 }
 
-/* Hide collapsed sections — both children and header blocks */
-html.ls-pres-mode .ls-pres-active .ls-block[data-collapsed="true"],
+/* Hide collapsed sections — SPA sets data-collapsed to a DB-id, not "true" */
+html.ls-pres-mode .ls-pres-active .ls-block[data-collapsed],
 html.ls-pres-mode .ls-pres-active .ls-block.collapsed {
   display: none !important;
 }
