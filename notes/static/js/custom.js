@@ -117,22 +117,19 @@
   /* ── hide collapsed section headers within a slide ─────── */
   function hideCollapsedBlocks(slideEl) {
     slideEl.querySelectorAll('.ls-block').forEach(function (block) {
-      /* Method 1: data attribute or class set by Logseq */
-      if (block.getAttribute('data-collapsed') === 'true' || block.classList.contains('collapsed')) {
+      /* Method 1: SPA sets data-collapsed to a DB-id string (not "true").
+         Any truthy value means the block is collapsed. */
+      if (block.hasAttribute('data-collapsed') || block.classList.contains('collapsed')) {
         block.classList.add('ls-pres-hidden');
         return;
       }
-      /* Method 2: detect collapsed-section-header pattern.
-         These are short text blocks whose .block-children exist
-         but have zero visible height (i.e. content is collapsed). */
       var bc = block.querySelector('.block-content');
       if (!bc) return;
       /* keep blocks with headings or media */
       if (bc.querySelector('h1, h2, h3, h4, h5, h6, img, video, table, iframe')) return;
       var text = bc.textContent.trim();
-      /* short text (collapsed label), not empty */
       if (text.length === 0 || text.length > 120) return;
-      /* has "collapsed" in its own text (SPA may render the property inline) */
+      /* has "collapsed" in text (fallback for other renderings) */
       if (/collapsed/i.test(text)) {
         block.classList.add('ls-pres-hidden');
         return;
