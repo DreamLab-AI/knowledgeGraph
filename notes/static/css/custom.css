@@ -4,3 +4,259 @@
 .ls-block:has(.dac-container):not(:has(.block-children .dac-container)) .block-children .extensions__code {
   display: none !important;
 }
+
+/* ============================================================
+   PRESENTATION MODE — reveal.js overrides
+   Logseq uses reveal.js; each top-level bullet = one slide.
+   All rules scoped under .reveal so normal editing is untouched.
+   ============================================================ */
+
+/* --- Global slide layout ----------------------------------- */
+.reveal .slides {
+  text-align: left !important;
+}
+
+.reveal .slides section {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  padding: 1.5em 2em !important;
+  height: 100% !important;
+  box-sizing: border-box !important;
+  overflow-y: auto !important;     /* allow scroll on dense slides */
+}
+
+/* --- Typography -------------------------------------------- */
+.reveal h1 {
+  font-size: 2.2em !important;
+  margin-bottom: 0.4em !important;
+  border-bottom: 2px solid rgba(255,255,255,0.15);
+  padding-bottom: 0.3em;
+}
+
+.reveal h2 {
+  font-size: 1.6em !important;
+  margin-bottom: 0.35em !important;
+}
+
+.reveal h3 {
+  font-size: 1.25em !important;
+  margin-bottom: 0.3em !important;
+}
+
+.reveal p,
+.reveal li,
+.reveal td,
+.reveal th {
+  font-size: 0.78em !important;
+  line-height: 1.5 !important;
+}
+
+/* Tighten bullet spacing so more fits on a slide */
+.reveal ul,
+.reveal ol {
+  margin: 0.2em 0 !important;
+}
+
+.reveal li {
+  margin-bottom: 0.15em !important;
+}
+
+/* Hierarchical list markers (from the forum patch) */
+.reveal ol ol {
+  list-style-type: upper-roman;
+}
+
+.reveal ol ol ol {
+  list-style-type: lower-latin;
+}
+
+.reveal ul ul {
+  list-style-type: circle;
+}
+
+.reveal ul ul ul {
+  list-style-type: square;
+}
+
+/* Bold and emphasis — make them pop on projected screens */
+.reveal strong {
+  color: #ffcc80;
+}
+
+.reveal em {
+  color: #b3e5fc;
+}
+
+/* --- Embedded content ({{embed}}) -------------------------- */
+.reveal .embedded {
+  aspect-ratio: 16 / 9;
+  height: auto !important;
+  max-height: 60vh !important;
+  overflow: hidden;
+}
+
+/* --- Images ------------------------------------------------ */
+.reveal img {
+  max-height: 55vh !important;
+  max-width: 90% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block;
+  margin: 0.5em auto !important;
+  border-radius: 6px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+/* --- Videos ------------------------------------------------ */
+.reveal video,
+.reveal .video-container video {
+  max-height: 55vh !important;
+  max-width: 90% !important;
+  width: auto !important;
+  display: block;
+  margin: 0.5em auto !important;
+  border-radius: 6px;
+}
+
+/* --- iframes (live demos, external sites) ------------------ */
+.reveal iframe {
+  width: 100% !important;
+  height: 50vh !important;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px;
+  margin: 0.5em 0 !important;
+}
+
+/* --- Tables ------------------------------------------------ */
+.reveal table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  font-size: 0.7em !important;
+  margin: 0.5em 0 !important;
+}
+
+.reveal th {
+  background: rgba(255,255,255,0.08) !important;
+  font-weight: 700 !important;
+  text-align: left !important;
+  padding: 0.4em 0.6em !important;
+  border-bottom: 2px solid rgba(255,255,255,0.2) !important;
+}
+
+.reveal td {
+  padding: 0.3em 0.6em !important;
+  border-bottom: 1px solid rgba(255,255,255,0.06) !important;
+}
+
+.reveal tr:hover td {
+  background: rgba(255,255,255,0.03);
+}
+
+/* --- Code blocks ------------------------------------------- */
+.reveal pre {
+  width: 100% !important;
+  max-height: 45vh !important;
+  overflow: auto !important;
+  font-size: 0.6em !important;
+  line-height: 1.45 !important;
+  border-radius: 6px !important;
+  padding: 0.8em !important;
+  margin: 0.4em 0 !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+
+.reveal code {
+  font-size: 0.85em !important;
+  background: rgba(255,255,255,0.06);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+.reveal pre code {
+  background: transparent;
+  padding: 0;
+}
+
+/* --- Block quotes / long citations ------------------------- */
+.reveal blockquote {
+  border-left: 4px solid #ffcc80 !important;
+  padding: 0.5em 1em !important;
+  margin: 0.5em 0 !important;
+  font-style: italic;
+  background: rgba(255,204,128,0.05);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.75em !important;
+}
+
+/* --- Horizontal rules (your --- slide breaks) -------------- */
+.reveal hr {
+  border: none !important;
+  height: 2px !important;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.2) 20%,
+    rgba(255,255,255,0.2) 80%,
+    transparent
+  ) !important;
+  margin: 1em 0 !important;
+}
+
+/* --- Links ------------------------------------------------- */
+.reveal a {
+  color: #82b1ff !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+
+/* --- Mermaid diagrams in slides ---------------------------- */
+.reveal .mermaid,
+.reveal .dac-container {
+  max-height: 55vh !important;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.reveal .mermaid svg {
+  max-height: 50vh !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* --- Slide progress bar colour ----------------------------- */
+.reveal .progress span {
+  background: #ffcc80 !important;
+}
+
+/* --- Navigation arrows ------------------------------------- */
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-down {
+  color: rgba(255,255,255,0.5) !important;
+}
+
+/* --- Slide number ------------------------------------------ */
+.reveal .slide-number {
+  font-size: 0.6em !important;
+  color: rgba(255,255,255,0.4) !important;
+}
+
+/* --- PDF / property lines — hide in slides ----------------- */
+.reveal .block-properties,
+.reveal .page-properties {
+  display: none !important;
+}
+
+/* --- Collapsed block indicator — hide in slides ------------ */
+.reveal .collapsed-indicator {
+  display: none !important;
+}
+
+/* --- "hidden children" message — suppress ------------------- */
+.reveal .ls-block .block-children-container[style*="display: none"] + .block-children-left-border {
+  display: none !important;
+}
