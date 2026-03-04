@@ -28,7 +28,7 @@
         return !b.parentElement.classList.contains('block-children');
       });
     }
-    /* filter out empty / hr-only / property-only blocks */
+    /* filter out non-slide blocks */
     return blocks.filter(function (block) {
       var c = block.querySelector('.block-content');
       if (!c) return false;
@@ -36,12 +36,16 @@
       if (!t || t === '---' || t === '***' || t === '___') return false;
       /* single <hr> child */
       if (c.children.length === 1 && c.children[0] && c.children[0].tagName === 'HR') return false;
-      /* skip property-only blocks (e.g. "public:: true") */
-      if (/^[a-z-]+::\s/.test(t) && t.indexOf('\n') === -1) return false;
+      /* skip property-only blocks (SPA renders "public:: true" as "public:true") */
+      if (/^[a-z-]+:{1,2}\s*/i.test(t) && t.length < 80 && !c.querySelector('h1')) return false;
       /* skip blocks that are just page properties rendered */
       if (c.querySelector('.page-properties') || c.querySelector('.block-properties')) {
         if (!c.querySelector('h1, h2, h3, img, video, table, iframe')) return false;
       }
+      /* KEY: only include blocks whose own content has an H1 heading.
+         Each slide starts with # Heading in the markdown. Blocks without
+         H1 are property blocks, embedded content, or child expansions. */
+      if (!c.querySelector('h1')) return false;
       return true;
     });
   }
@@ -52,22 +56,66 @@
                     document.querySelector('#main-content-container') ||
                     document.documentElement;
     var origScroll = container.scrollTop;
-    var maxScroll = container.scrollHeight;
-    var step = 0;
-    var stepSize = window.innerHeight;
+    var stepSize = Math.floor(window.innerHeight * 0.8);
+    var pass = 0;
 
-    function scrollStep() {
-      if (step * stepSize < maxScroll + stepSize) {
-        container.scrollTop = step * stepSize;
-        step++;
-        requestAnimationFrame(scrollStep);
-      } else {
-        /* scroll back to top and proceed */
-        container.scrollTop = origScroll;
-        setTimeout(callback, 100);
+    function doPass() {
+      var maxScroll = container.scrollHeight;
+      var positions = [];
+      for (var p = 0; p <= maxScroll; p += stepSize) positions.push(p);
+      positions.push(maxScroll);
+      var i = 0;
+
+      function step() {
+        if (i < positions.length) {
+          container.scrollTop = positions[i];
+          i++;
+          setTimeout(step, 80);
+        } else {
+          pass++;
+          /* if scroll height grew, new content loaded — do another pass (max 3) */
+          if (pass < 3 && container.scrollHeight > maxScroll + stepSize) {
+            setTimeout(doPass, 200);
+          } else {
+            container.scrollTop = origScroll;
+            setTimeout(callback, 200);
+          }
+        }
       }
+      step();
     }
-    scrollStep();
+    doPass();
+  }
+
+  /* ── hide collapsed section headers within a slide ─────── */
+  function hideCollapsedBlocks(slideEl) {
+    slideEl.querySelectorAll('.ls-block').forEach(function (block) {
+      /* Method 1: data attribute or class set by Logseq */
+      if (block.getAttribute('data-collapsed') === 'true' || block.classList.contains('collapsed')) {
+        block.classList.add('ls-pres-hidden');
+        return;
+      }
+      /* Method 2: detect collapsed-section-header pattern.
+         These are short text blocks whose .block-children exist
+         but have zero visible height (i.e. content is collapsed). */
+      var bc = block.querySelector('.block-content');
+      if (!bc) return;
+      /* keep blocks with headings or media */
+      if (bc.querySelector('h1, h2, h3, h4, h5, h6, img, video, table, iframe')) return;
+      var text = bc.textContent.trim();
+      /* short text (collapsed label), not empty */
+      if (text.length === 0 || text.length > 120) return;
+      /* has "collapsed" in its own text (SPA may render the property inline) */
+      if (/collapsed/i.test(text)) {
+        block.classList.add('ls-pres-hidden');
+        return;
+      }
+      /* has block-children that are hidden (height ≈ 0 but DOM present) */
+      var children = block.querySelector('.block-children');
+      if (children && children.children.length > 0 && children.offsetHeight < 5) {
+        block.classList.add('ls-pres-hidden');
+      }
+    });
   }
 
   /* ── controls overlay ──────────────────────────────────── */
@@ -98,6 +146,7 @@
     state.idx = n;
     updateCounter();
     state.slides[n].scrollTop = 0;
+    hideCollapsedBlocks(state.slides[n]);
   }
 
   function next() { showSlide(state.idx + 1); }
@@ -121,7 +170,13 @@
     state.active = false;
     document.documentElement.classList.remove('ls-pres-mode');
     document.documentElement.classList.remove('ls-pres-blackout');
-    state.slides.forEach(function (s) { s.classList.remove('ls-pres-active'); });
+    state.slides.forEach(function (s) {
+      s.classList.remove('ls-pres-active');
+      /* clean up hidden markers */
+      s.querySelectorAll('.ls-pres-hidden').forEach(function (h) {
+        h.classList.remove('ls-pres-hidden');
+      });
+    });
     var c = document.getElementById('ls-pres-controls');
     if (c) c.remove();
   }
