@@ -10,11 +10,11 @@
     "Compatibility Process"
   ],
   "wiki_links": [
-    "Interoperability",
-    "Standards",
-    "Standards Conformance Testing",
     "Standards Compliance",
-    "metaverse"
+    "metaverse",
+    "Standards Conformance Testing",
+    "Standards",
+    "Interoperability"
   ],
   "ontology": {
     "term_id": "MV-10073",

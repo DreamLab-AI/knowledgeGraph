@@ -12,13 +12,13 @@
     "tc-0002-collaborative-document-editing"
   ],
   "wiki_links": [
-    "Technology Domain",
-    "MV Domain",
-    "AI Domain",
     "TC-0001-telecollaboration-domain",
-    "Telecollaboration",
+    "RB Domain",
+    "MV Domain",
     "BC Domain",
-    "RB Domain"
+    "AI Domain",
+    "Telecollaboration",
+    "Technology Domain"
   ],
   "ontology": {
     "term_id": "AI-7016",

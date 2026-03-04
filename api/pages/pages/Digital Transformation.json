@@ -7,17 +7,17 @@
     "Technology Adoption"
   ],
   "wiki_links": [
-    "Data Analytics",
-    "Cloud Computing",
-    "Enterprise Metaverse",
     "Organizational Change",
-    "Business Innovation",
-    "Digital Twin",
-    "Operational Efficiency",
+    "Data Analytics",
     "Change Management",
-    "Customer Experience",
+    "metaverse",
     "Industry 4.0",
-    "metaverse"
+    "Operational Efficiency",
+    "Customer Experience",
+    "Business Innovation",
+    "Enterprise Metaverse",
+    "Digital Twin",
+    "Cloud Computing"
   ],
   "ontology": {
     "term_id": "MV-9873",

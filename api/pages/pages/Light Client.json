@@ -7,14 +7,14 @@
     "Cross-Platform Interoperability"
   ],
   "wiki_links": [
-    "State Proof",
-    "Interoperability Protocol",
-    "Cross-Chain Bridge",
-    "Blockchain",
     "Relayer",
-    "Full Node",
+    "Interoperability Protocol",
+    "Blockchain",
+    "State Proof",
     "SPV (Simplified Payment Verification)",
-    "Merkle Tree"
+    "Full Node",
+    "Merkle Tree",
+    "Cross-Chain Bridge"
   ],
   "ontology": {
     "term_id": "BC-8010",

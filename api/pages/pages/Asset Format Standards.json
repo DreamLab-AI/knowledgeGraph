@@ -7,13 +7,13 @@
   ],
   "wiki_links": [
     "Conversion Tools",
-    "Tool Interoperability",
-    "Format Compliance",
-    "Content Portability",
-    "Technical Standards",
-    "Cross-Platform Assets",
     "Validation Systems",
-    "metaverse"
+    "Tool Interoperability",
+    "metaverse",
+    "Technical Standards",
+    "Format Compliance",
+    "Cross-Platform Assets",
+    "Content Portability"
   ],
   "ontology": {
     "term_id": "MV-9780",

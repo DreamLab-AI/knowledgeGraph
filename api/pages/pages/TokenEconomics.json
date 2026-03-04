@@ -6,20 +6,20 @@
     "BC-0502-climate-action-dao"
   ],
   "wiki_links": [
-    "Governance Token",
-    "Staking",
-    "BlockchainDomain",
-    "Decentralised Governance",
-    "Cryptocurrency",
-    "Network Incentives",
-    "DeFi",
     "Smart Contract",
+    "Decentralised Governance",
     "Game Theory",
-    "Value Capture",
+    "Staking",
     "MEV",
-    "Behavioural Economics",
+    "Governance Token",
     "Monetary Policy",
-    "Blockchain Economics"
+    "BlockchainDomain",
+    "Blockchain Economics",
+    "Behavioural Economics",
+    "Network Incentives",
+    "Cryptocurrency",
+    "Value Capture",
+    "DeFi"
   ],
   "ontology": {
     "term_id": "BC-7009",

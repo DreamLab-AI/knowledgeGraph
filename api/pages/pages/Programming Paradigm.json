@@ -6,9 +6,9 @@
   "wiki_links": [
     "owl:Thing",
     "Differentiable Programming",
+    "Symbolic AI",
     "Functional Programming",
-    "Software Engineering",
-    "Symbolic AI"
+    "Software Engineering"
   ],
   "ontology": {
     "term_id": "AI-9026",

@@ -5,17 +5,17 @@
   "backlinks": [],
   "wiki_links": [
     "Multi-Head Attention",
-    "Deep Learning",
-    "Stable Diffusion",
+    "Artificial Intelligence",
     "Self-Attention",
+    "Deep Learning",
     "BERT",
+    "Stable Diffusion",
     "DALL-E",
-    "Contextual Embeddings",
+    "GPT",
+    "Large language models",
     "Transformer Architecture",
     "NaturalLanguageProcessing",
-    "Large language models",
-    "GPT",
-    "Artificial Intelligence"
+    "Contextual Embeddings"
   ],
   "ontology": {
     "term_id": "NGM-7006",

@@ -6,17 +6,17 @@
     "Carbon Credit Token"
   ],
   "wiki_links": [
-    "Carbon Registry",
-    "Climate Finance",
-    "Carbon Credit Tracking",
-    "Emissions Trading",
-    "Market Infrastructure",
-    "Voluntary Carbon Market",
     "Environmental Trading",
-    "Offset Liquidity",
-    "Trading Platform",
+    "Emissions Trading",
     "Carbon Price Discovery",
-    "metaverse"
+    "Climate Finance",
+    "metaverse",
+    "Offset Liquidity",
+    "Carbon Registry",
+    "Market Infrastructure",
+    "Carbon Credit Tracking",
+    "Trading Platform",
+    "Voluntary Carbon Market"
   ],
   "ontology": {
     "term_id": "MV-9814",

@@ -40,16 +40,16 @@
     "ecash"
   ],
   "wiki_links": [
-    "Cryptographic Hash Function",
     "Distributed Systems",
-    "Distributed Computing",
-    "Digital Signature",
-    "Blockchain",
-    "Decentralized Application",
     "Decentralized Finance",
+    "Cryptographic Hash Function",
+    "Blockchain",
     "Tokenization",
     "Ethereum",
-    "Automated Market Maker"
+    "Decentralized Application",
+    "Automated Market Maker",
+    "Digital Signature",
+    "Distributed Computing"
   ],
   "ontology": {
     "term_id": "BC-7013",

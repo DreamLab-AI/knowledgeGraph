@@ -28,15 +28,15 @@
     "Authentication Service"
   ],
   "wiki_links": [
-    "System Security",
     "Core Technology",
-    "Security Policy",
-    "Authentication Service",
     "Authorisation",
-    "Data Protection",
     "Identity Management",
+    "Data Protection",
+    "Authentication Service",
+    "Security Policy",
     "Permission Management",
     "Security Mechanism",
+    "System Security",
     "Compliance"
   ],
   "ontology": {

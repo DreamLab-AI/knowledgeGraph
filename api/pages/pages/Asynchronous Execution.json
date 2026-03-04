@@ -9,23 +9,23 @@
     "Process"
   ],
   "wiki_links": [
-    "Synchronous Execution",
-    "Concurrent Processing",
-    "Callback",
-    "Non-blocking Operation",
-    "Real-time Processing",
-    "Parallel Processing",
     "Core Technology",
     "Event",
+    "Parallel Processing",
+    "Synchronous Execution",
     "Temporal Concept",
-    "Event-Driven",
     "Process",
+    "Real-time Processing",
+    "Execution Model",
+    "Non-blocking Operation",
+    "Operation",
     "Message",
     "Result",
-    "Operation",
-    "Execution Model",
+    "Error",
+    "Concurrent Processing",
     "Cross-Domain Meta-Structure",
-    "Error"
+    "Event-Driven",
+    "Callback"
   ],
   "ontology": {
     "term_id": "AI-8011",

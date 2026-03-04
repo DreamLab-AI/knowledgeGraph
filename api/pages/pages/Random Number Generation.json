@@ -10,14 +10,14 @@
   ],
   "wiki_links": [
     "Hash Function",
-    "Blockchain",
-    "Zero-Knowledge Proof",
-    "Cryptographic Protocol",
-    "Key Derivation Function",
     "Asymmetric Encryption",
-    "Verifiable Random Function",
+    "Commitment Scheme",
     "Cryptography",
-    "Commitment Scheme"
+    "Blockchain",
+    "Verifiable Random Function",
+    "Key Derivation Function",
+    "Zero-Knowledge Proof",
+    "Cryptographic Protocol"
   ],
   "ontology": {
     "term_id": "BC-8014",
