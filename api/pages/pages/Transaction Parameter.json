@@ -4,10 +4,10 @@
   "content": "- ### OntologyBlock\n  id:: Transaction Parameter\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10084\n\t- preferred-term:: Transaction Parameter\n\t- source-domain:: bc\n\t- owl:class:: bc:TransactionParameter\n\t- status:: active\n\t- definition:: Configuration values that define the execution characteristics of a blockchain transaction, including gas limit, gas price, nonce, and other parameters that determine transaction priority, cost, and computational resources allocated.\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Blockchain Transaction]]\n\t\t- related-to:: [[Gas]]\n\t\t- related-to:: [[Smart Contract]]\n\t\t- related-to:: [[Transaction Fee]]\n- ## Overview\n\t- Every blockchain transaction must be configured with parameters before execution. The gas limit defines maximum computational resources, while gas price determines the transaction fee. In 2024, the Dencun/Cancun upgrades reduced Layer 2 fees by 90%, with average Ethereum fees dropping to $3.78.\n- ## Technical Details\n\t- ### Core Parameters\n\t\t- **Gas Limit**: Maximum gas units allowed for transaction execution\n\t\t- **Gas Price**: Fee per unit of gas (in gwei for Ethereum)\n\t\t- **Nonce**: Transaction sequence number for the sender\n\t\t- **Value**: Amount of cryptocurrency to transfer\n\t\t- **Data**: Smart contract function call data\n\t- ### Gas Cost Structure\n\t\t- **Intrinsic Gas**: Minimum 21,000 gas for all transactions\n\t\t- **Storage Costs**: 20,000 gas for zero-to-non-zero storage writes, 5,000 for modifications\n\t\t- **Cold vs Warm**: Higher costs for first access to accounts/storage slots\n\t\t- **EVM Opcodes**: Variable costs based on computational complexity\n\t- ### Optimization Strategies\n\t\t- Use `calldata` instead of `memory` for function parameters\n\t\t- Prefer `view` functions to avoid transaction overhead\n\t\t- Batch multiple operations in single transactions\n\t\t- Use Layer 2 solutions for lower fees\n- ## Applications\n\t- DeFi transaction cost optimization\n\t- Smart contract gas efficiency\n\t- MEV (Maximal Extractable Value) strategies\n\t- Layer 2 rollup transaction batching\n\t- High-frequency trading on blockchain",
   "backlinks": [],
   "wiki_links": [
+    "Blockchain Transaction",
     "Transaction Fee",
-    "Smart Contract",
     "Gas",
-    "Blockchain Transaction"
+    "Smart Contract"
   ],
   "ontology": {
     "term_id": "MV-10084",

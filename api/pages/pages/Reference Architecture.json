@@ -9,12 +9,12 @@
     "Interoperability Framework"
   ],
   "wiki_links": [
-    "Software Architecture",
-    "Enterprise Architecture",
     "Design Patterns",
-    "Scalable Systems",
+    "Enterprise Architecture",
+    "Software Architecture",
+    "TOGAF",
     "metaverse",
-    "TOGAF"
+    "Scalable Systems"
   ],
   "ontology": {
     "term_id": "MV-10019",

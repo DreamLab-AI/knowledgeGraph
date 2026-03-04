@@ -13,16 +13,16 @@
     "Interoperability Framework"
   ],
   "wiki_links": [
-    "Data Sharing",
-    "System Capability",
-    "Enterprise Connectivity",
-    "Core Technology",
-    "System Integration",
-    "Technical Standard",
-    "Data Exchange",
     "Cross-Platform Identity",
+    "Core Technology",
+    "Technical Standard",
+    "System Integration",
+    "Enterprise Connectivity",
+    "System Capability",
     "Standard Protocols",
-    "Common Data Formats"
+    "Data Sharing",
+    "Common Data Formats",
+    "Data Exchange"
   ],
   "ontology": {
     "term_id": "NGM-7039",

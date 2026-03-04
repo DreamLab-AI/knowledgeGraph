@@ -8,16 +8,16 @@
   ],
   "wiki_links": [
     "Digital Modeling",
-    "Predictive Analytics",
-    "3D Modeling",
-    "Real-Time Monitoring",
-    "Virtual Prototype",
-    "IoT Integration",
-    "metaverse",
-    "Simulation",
-    "Lifecycle Management",
     "Asset Management",
-    "Sensor Data"
+    "Predictive Analytics",
+    "Lifecycle Management",
+    "3D Modeling",
+    "Virtual Prototype",
+    "Sensor Data",
+    "Simulation",
+    "metaverse",
+    "Real-Time Monitoring",
+    "IoT Integration"
   ],
   "ontology": {
     "term_id": "MV-9876",

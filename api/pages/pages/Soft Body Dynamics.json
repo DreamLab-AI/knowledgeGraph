@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: MV-9005\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9005\n\t- source-domain:: mv\n\t- preferred-term:: Soft Body Dynamics\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Physics simulation of deformable objects like cloth, flesh, or elastic materials, modeling realistic deformation and dynamic behavior in virtual environments.\n\t- source:: [[Physics Engine]], [[Game Physics]]\n\t- maturity:: emerging\n\t- owl:class:: mv:SoftBodyDynamics\n\t- owl:role:: Process\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- isSubclassOf:: [[Physics Simulation]]\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]",
   "backlinks": [],
   "wiki_links": [
-    "Physics Simulation",
-    "MetaverseDomain",
-    "Game Physics",
+    "Physics Engine",
     "Metaverse",
-    "Physics Engine"
+    "MetaverseDomain",
+    "Physics Simulation",
+    "Game Physics"
   ],
   "ontology": {
     "term_id": "MV-9005",

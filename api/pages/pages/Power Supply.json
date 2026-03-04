@@ -12,19 +12,19 @@
     "Computing Infrastructure"
   ],
   "wiki_links": [
-    "Continuous Operation",
-    "Storage Devices",
-    "Computer Systems",
-    "InfrastructureDomain",
-    "Server Hardware",
-    "System Reliability",
-    "Computing Infrastructure",
-    "80 PLUS Certification",
-    "Energy Efficiency Standards",
     "Graphics Cards",
+    "Computer Systems",
+    "Storage Devices",
+    "Technology Domain",
+    "Continuous Operation",
+    "Computing Infrastructure",
+    "InfrastructureDomain",
+    "System Reliability",
+    "Energy Efficiency Standards",
     "Data Center Infrastructure",
-    "Motherboard",
-    "Technology Domain"
+    "Server Hardware",
+    "80 PLUS Certification",
+    "Motherboard"
   ],
   "ontology": {
     "term_id": "NGM-7026",

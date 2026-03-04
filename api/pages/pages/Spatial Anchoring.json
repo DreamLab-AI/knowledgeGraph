@@ -7,12 +7,12 @@
     "Augmented Reality (AR)"
   ],
   "wiki_links": [
-    "Persistent AR Content",
     "SLAM Technology",
+    "Location Based AR",
+    "World Locking",
     "Spatial Computing",
     "metaverse",
-    "Location Based AR",
-    "World Locking"
+    "Persistent AR Content"
   ],
   "ontology": {
     "term_id": "MV-10050",

@@ -8,17 +8,17 @@
     "Money"
   ],
   "wiki_links": [
-    "Cryptocurrency",
-    "Programmable Money",
-    "Digital Wallet",
-    "Electronic Payments",
-    "CBDC",
-    "metaverse",
-    "Financial Instruments",
     "Payment Network",
     "Security Infrastructure",
-    "Instant Settlement",
-    "Stablecoin"
+    "Cryptocurrency",
+    "Electronic Payments",
+    "Digital Wallet",
+    "Stablecoin",
+    "metaverse",
+    "Financial Instruments",
+    "Programmable Money",
+    "CBDC",
+    "Instant Settlement"
   ],
   "ontology": {
     "term_id": "MV-9862",

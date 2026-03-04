@@ -6,12 +6,12 @@
     "Spatial Audio Scene Description"
   ],
   "wiki_links": [
-    "ISO 19115 Standard",
-    "Spatial Data Discovery",
-    "GIS Data Management",
     "Geospatial Information",
+    "3D Content Metadata",
+    "GIS Data Management",
+    "ISO 19115 Standard",
     "metaverse",
-    "3D Content Metadata"
+    "Spatial Data Discovery"
   ],
   "ontology": {
     "term_id": "MV-10062",

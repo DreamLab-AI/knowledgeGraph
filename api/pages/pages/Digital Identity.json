@@ -22,16 +22,16 @@
     "User Consent Token"
   ],
   "wiki_links": [
-    "Avatar",
-    "Digital Presence",
-    "Privacy Controls",
-    "Credential Storage",
     "Decentralized Identifiers",
-    "Self-Sovereign Identity",
-    "Identity Verification",
-    "Identity",
-    "metaverse",
+    "Credential Storage",
+    "Digital Presence",
     "Authorization",
+    "Privacy Controls",
+    "Identity Verification",
+    "metaverse",
+    "Avatar",
+    "Self-Sovereign Identity",
+    "Identity",
     "Authentication"
   ],
   "ontology": {

@@ -7,10 +7,10 @@
   ],
   "wiki_links": [
     "Technical Standards",
-    "Interoperability",
     "OpenXR",
-    "Virtual Environment",
-    "metaverse"
+    "metaverse",
+    "Interoperability",
+    "Virtual Environment"
   ],
   "ontology": {
     "term_id": "MV-10121",

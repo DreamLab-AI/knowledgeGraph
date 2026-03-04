@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "5G Networks",
-    "Edge Computing",
-    "Network Infrastructure",
     "Low Latency Connectivity",
+    "Network Infrastructure",
+    "Network Function Virtualization",
     "metaverse",
-    "Network Function Virtualization"
+    "Edge Computing"
   ],
   "ontology": {
     "term_id": "MV-10006",

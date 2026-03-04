@@ -6,12 +6,12 @@
     "Procedural Content Generation"
   ],
   "wiki_links": [
-    "Procedural Generation",
-    "Procedural Content",
     "Terrain Generation",
-    "Texture Synthesis",
+    "Procedural Generation",
+    "Graphics Library",
     "metaverse",
-    "Graphics Library"
+    "Procedural Content",
+    "Texture Synthesis"
   ],
   "ontology": {
     "term_id": "MV-9984",

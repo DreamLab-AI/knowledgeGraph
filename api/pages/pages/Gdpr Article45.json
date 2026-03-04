@@ -6,11 +6,11 @@
     "Granular Consent Control"
   ],
   "wiki_links": [
-    "Cross-Border Metaverse Operations",
-    "International Data Transfer",
-    "Data Protection Regulation",
     "Privacy Framework",
-    "metaverse"
+    "International Data Transfer",
+    "metaverse",
+    "Data Protection Regulation",
+    "Cross-Border Metaverse Operations"
   ],
   "ontology": {
     "term_id": "MV-9905",

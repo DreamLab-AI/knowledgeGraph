@@ -29,15 +29,15 @@
   ],
   "wiki_links": [
     "Authorisation",
-    "Permission Management",
-    "Compliance",
-    "Core Technology",
-    "Security Policy",
-    "Security Mechanism",
     "System Security",
+    "Security Mechanism",
+    "Core Technology",
     "Identity Management",
+    "Permission Management",
     "Data Protection",
-    "Authentication Service"
+    "Compliance",
+    "Authentication Service",
+    "Security Policy"
   ],
   "ontology": {
     "term_id": "NGM-7003",

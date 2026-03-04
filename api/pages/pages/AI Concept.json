@@ -8,9 +8,9 @@
   "wiki_links": [
     "Cognitive Architecture",
     "Artificial Intelligence",
-    "Machine Learning",
+    "owl:Thing",
     "Knowledge Representation",
-    "owl:Thing"
+    "Machine Learning"
   ],
   "ontology": {
     "term_id": "AI-9002",

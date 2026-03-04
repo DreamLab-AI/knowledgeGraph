@@ -13,13 +13,13 @@
     "Price Discovery"
   ],
   "wiki_links": [
-    "DeFi Ecosystem",
     "Consensus Security",
-    "Mempool",
     "Proposer-Builder Separation",
+    "DeFi Ecosystem",
+    "Transaction Ordering",
+    "Mempool",
     "Front-Running",
     "Blockchain",
-    "Transaction Ordering",
     "BlockchainDomain"
   ],
   "ontology": {

@@ -6,9 +6,9 @@
   "wiki_links": [
     "IEEE P7003-2021",
     "ConceptualLayer",
-    "AIEthicsDomain",
     "Buolamwini and Gebru (2018)",
-    "Crenshaw (1989)"
+    "Crenshaw (1989)",
+    "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "AI-0384",

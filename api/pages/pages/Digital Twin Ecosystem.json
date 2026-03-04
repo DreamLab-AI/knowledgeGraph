@@ -6,17 +6,17 @@
     "Digital Twin"
   ],
   "wiki_links": [
-    "Data Standards",
     "Cloud Platform",
-    "Industry 4.0",
     "System Integration",
     "IoT Infrastructure",
-    "Cross-Platform Analytics",
-    "Industrial Metaverse",
-    "metaverse",
+    "Industry 4.0",
     "Technology Ecosystem",
-    "Enterprise Digital Twins",
-    "Smart City"
+    "Data Standards",
+    "Industrial Metaverse",
+    "Smart City",
+    "Cross-Platform Analytics",
+    "metaverse",
+    "Enterprise Digital Twins"
   ],
   "ontology": {
     "term_id": "MV-9877",

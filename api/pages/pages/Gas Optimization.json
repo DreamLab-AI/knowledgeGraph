@@ -6,14 +6,14 @@
     "Smart Contract Platform"
   ],
   "wiki_links": [
-    "BlockchainDomain",
-    "EVM (Ethereum Virtual Machine)",
     "Smart Contract Development",
-    "Transaction Fee",
     "Scalability Solutions",
+    "EVM (Ethereum Virtual Machine)",
     "Blockchain",
+    "Smart Contract",
+    "Transaction Fee",
     "Gas",
-    "Smart Contract"
+    "BlockchainDomain"
   ],
   "ontology": {
     "term_id": "BC-8006",

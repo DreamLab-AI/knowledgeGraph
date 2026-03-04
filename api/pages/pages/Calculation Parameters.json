@@ -6,17 +6,17 @@
     "Trust Score Metric"
   ],
   "wiki_links": [
+    "Configuration Setting",
+    "Model Calibration",
     "Sensitivity Analysis",
     "Solver Configuration",
-    "Model Calibration",
-    "Parameter Definition",
     "Validation Rules",
-    "Simulation Parameters",
-    "metaverse",
     "Performance Tuning",
-    "Configuration Setting",
-    "Simulation Control",
-    "Computational Model"
+    "Computational Model",
+    "metaverse",
+    "Parameter Definition",
+    "Simulation Parameters",
+    "Simulation Control"
   ],
   "ontology": {
     "term_id": "MV-9803",
