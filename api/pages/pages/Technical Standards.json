@@ -17,11 +17,11 @@
     "Virtual Environment Specification"
   ],
   "wiki_links": [
-    "metaverse",
-    "Standards Conformance",
     "Interoperability",
     "Standards Compliance",
-    "Standards"
+    "Standards",
+    "Standards Conformance",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10079",

@@ -131,13 +131,13 @@
     "Automation",
     "Smart Manufacturing",
     "Humanoid Robots",
-    "IoT Sensors",
+    "Artificial Intelligence",
     "Machine Vision",
-    "Industrial Automation",
-    "Industrial Robots",
     "Digital Twin",
+    "Industrial Automation",
     "Collaborative Robotics",
-    "Artificial Intelligence"
+    "IoT Sensors",
+    "Industrial Robots"
   ],
   "ontology": {
     "term_id": "RB-7000",

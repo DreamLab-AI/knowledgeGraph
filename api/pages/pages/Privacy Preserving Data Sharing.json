@@ -8,10 +8,10 @@
   ],
   "wiki_links": [
     "Data Sharing",
-    "metaverse",
     "Collaborative Analytics",
-    "Secure Multi Party Computation",
     "Differential Privacy",
+    "Secure Multi Party Computation",
+    "metaverse",
     "Federated Learning"
   ],
   "ontology": {

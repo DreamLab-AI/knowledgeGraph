@@ -22,17 +22,17 @@
     "User Consent Token"
   ],
   "wiki_links": [
-    "Avatar",
-    "Credential Storage",
-    "Digital Presence",
-    "Identity",
-    "Privacy Controls",
-    "metaverse",
-    "Decentralized Identifiers",
-    "Authentication",
     "Identity Verification",
+    "Digital Presence",
+    "Avatar",
     "Self-Sovereign Identity",
-    "Authorization"
+    "Authentication",
+    "Credential Storage",
+    "Decentralized Identifiers",
+    "Identity",
+    "Authorization",
+    "Privacy Controls",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9860",

@@ -6,12 +6,12 @@
     "Game Engine"
   ],
   "wiki_links": [
+    "Application Development",
+    "Cloud Native Development",
+    "Platform Engineering",
     "Container Orchestration",
     "metaverse",
-    "Platform Engineering",
-    "Technology Infrastructure",
-    "Application Development",
-    "Cloud Native Development"
+    "Technology Infrastructure"
   ],
   "ontology": {
     "term_id": "MV-10048",

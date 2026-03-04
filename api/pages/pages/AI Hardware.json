@@ -14,15 +14,15 @@
     "NPU"
   ],
   "wiki_links": [
-    "Machine Learning",
-    "AI Infrastructure",
-    "Computer Hardware",
-    "High-Performance Computing",
     "AI Training",
-    "Deep Learning",
+    "Computer Hardware",
+    "AI Infrastructure",
+    "Artificial Intelligence",
     "Large Language Models",
-    "Neural Networks",
-    "Artificial Intelligence"
+    "Machine Learning",
+    "Deep Learning",
+    "High-Performance Computing",
+    "Neural Networks"
   ],
   "ontology": {
     "term_id": "AI-7020",

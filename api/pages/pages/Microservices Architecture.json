@@ -8,11 +8,11 @@
     "Distributed Architecture"
   ],
   "wiki_links": [
-    "metaverse",
-    "System Architecture",
-    "Container Technology",
+    "API Design",
     "Scalable Applications",
-    "API Design"
+    "Container Technology",
+    "metaverse",
+    "System Architecture"
   ],
   "ontology": {
     "term_id": "MV-9967",

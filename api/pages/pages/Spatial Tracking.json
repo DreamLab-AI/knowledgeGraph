@@ -7,12 +7,12 @@
     "Extended Reality (XR)"
   ],
   "wiki_links": [
-    "6DoF Tracking",
-    "Immersive VR",
     "Inside Out Tracking",
-    "metaverse",
+    "Immersive VR",
+    "6DoF Tracking",
     "SLAM",
-    "Motion Tracking"
+    "Motion Tracking",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10066",

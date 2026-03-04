@@ -6,11 +6,11 @@
     "ETSI_Domain_Data_Mgmt___AI"
   ],
   "wiki_links": [
-    "DVC",
-    "Data Engineering",
     "ArtificialIntelligenceDomain",
+    "Data Engineering",
+    "Artificial Intelligence",
     "MLOps",
-    "Artificial Intelligence"
+    "DVC"
   ],
   "ontology": {
     "term_id": "AI-9011",

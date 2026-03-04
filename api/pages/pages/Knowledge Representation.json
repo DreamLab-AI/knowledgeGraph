@@ -16,10 +16,10 @@
     "Fuzzy Logic"
   ],
   "wiki_links": [
-    "Ontology",
-    "Knowledge Graph",
-    "Reasoning Systems",
     "owl:Thing",
+    "Knowledge Graph",
+    "Ontology",
+    "Reasoning Systems",
     "Semantic Web"
   ],
   "ontology": {

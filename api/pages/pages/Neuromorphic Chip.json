@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: AI-9006\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9006\n\t- source-domain:: ai\n\t- preferred-term:: Neuromorphic Chip\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Computer chips designed to mimic the structure and function of biological neural networks, using analog circuits to emulate neuronal behavior for energy-efficient AI processing.\n\t- source:: [[AI Hardware]], [[Intel Loihi]], [[IBM TrueNorth]]\n\t- maturity:: emerging\n\t- owl:class:: ai:NeuromorphicChip\n\t- owl:role:: Object\n\t- belongsToDomain:: [[ArtificialIntelligenceDomain]]\n\t- isSubclassOf:: [[AI Hardware]]\n\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]",
   "backlinks": [],
   "wiki_links": [
-    "IBM TrueNorth",
     "ArtificialIntelligenceDomain",
-    "AI Hardware",
     "Intel Loihi",
-    "Artificial Intelligence"
+    "IBM TrueNorth",
+    "Artificial Intelligence",
+    "AI Hardware"
   ],
   "ontology": {
     "term_id": "AI-9006",
