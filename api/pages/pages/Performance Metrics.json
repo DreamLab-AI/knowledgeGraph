@@ -12,13 +12,13 @@
     "Telemetry & Analytics"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "Accuracy",
-    "Machine Learning",
-    "Precision",
-    "F1 Score",
     "AUC",
-    "Recall"
+    "F1 Score",
+    "Precision",
+    "Machine Learning",
+    "Recall",
+    "Accuracy",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-0602",

@@ -6,9 +6,9 @@
   "wiki_links": [
     "Physics Simulation",
     "Metaverse",
-    "MetaverseDomain",
     "CFD",
-    "Physics Engine"
+    "Physics Engine",
+    "MetaverseDomain"
   ],
   "ontology": {
     "term_id": "MV-9006",

@@ -12,15 +12,15 @@
     "Telemetry & Analytics"
   ],
   "wiki_links": [
-    "Core Technology",
-    "Infrastructure Component",
-    "Storage Architecture",
-    "Data Management",
-    "Data Redundancy",
-    "Data Persistence",
-    "Data Protection",
-    "System Architecture",
     "Information Retrieval",
+    "Data Protection",
+    "Data Management",
+    "Core Technology",
+    "Storage Architecture",
+    "Data Redundancy",
+    "System Architecture",
+    "Infrastructure Component",
+    "Data Persistence",
     "Backup and Recovery"
   ],
   "ontology": {

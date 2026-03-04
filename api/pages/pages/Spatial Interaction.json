@@ -8,12 +8,12 @@
     "Extended Reality (XR)"
   ],
   "wiki_links": [
-    "Human Computer Interaction",
-    "Eye Tracking",
+    "Spatial Computing",
     "metaverse",
-    "Gesture Recognition",
     "Immersive User Experience",
-    "Spatial Computing"
+    "Human Computer Interaction",
+    "Gesture Recognition",
+    "Eye Tracking"
   ],
   "ontology": {
     "term_id": "MV-10059",

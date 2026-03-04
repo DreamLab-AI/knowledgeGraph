@@ -17,18 +17,18 @@
   ],
   "wiki_links": [
     "Power Supply",
-    "Edge Computing Facilities",
     "Server Hardware",
-    "Cloud Infrastructure",
-    "InfrastructureDomain",
-    "Performance Optimization",
-    "Infrastructure Management Systems",
-    "Data Centers",
-    "Distributed Computing",
-    "Network Protocol",
-    "Real-Time Rendering",
     "Technology Domain",
-    "Database System"
+    "Distributed Computing",
+    "Performance Optimization",
+    "InfrastructureDomain",
+    "Edge Computing Facilities",
+    "Infrastructure Management Systems",
+    "Real-Time Rendering",
+    "Database System",
+    "Network Protocol",
+    "Cloud Infrastructure",
+    "Data Centers"
   ],
   "ontology": {
     "term_id": "NGM-7033",

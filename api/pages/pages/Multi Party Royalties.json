@@ -4,9 +4,9 @@
   "content": "- ### OntologyBlock\n  id:: multi-party-royalties-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9975\n\t- source-domain:: mv\n\t- preferred-term:: Multi Party Royalties\n\t- status:: active\n\t- definition:: A blockchain-based revenue distribution mechanism that uses smart contracts to automatically split and distribute royalty payments among multiple stakeholders including creators, collaborators, developers, and brands based on predefined ownership percentages.\n\t- owl:class:: mv:MultiPartyRoyalties\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: multi-party-royalties-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Revenue Sharing]]\n\t\t- related-to:: [[NFT Royalties]]\n\t\t- related-to:: [[Smart Contracts]]\n\t\t- enables:: [[Creator Economy]]\n\t- #### Technical Details\n\t  collapsed:: true\n\t\t- Implemented through split contracts that execute automatic distribution\n\t\t- Uses ERC-2981 royalty standard for marketplace compatibility\n\t\t- Supports platforms including Ethereum, Solana, and Polygon\n\t\t- Typical royalty rates range from 2.5% to 10% on secondary sales\n\t\t- Tracks sales figures, calculates fees, and monitors compliance\n\t- #### Challenges\n\t  collapsed:: true\n\t\t- Lack of universal royalty enforcement across marketplaces\n\t\t- Some platforms have moved to royalty-optional models\n\t\t- Cross-platform royalty parameter inconsistency\n\t\t- Interoperability issues when NFTs transfer between platforms",
   "backlinks": [],
   "wiki_links": [
-    "Creator Economy",
-    "metaverse",
     "Smart Contracts",
+    "metaverse",
+    "Creator Economy",
     "Revenue Sharing",
     "NFT Royalties"
   ],

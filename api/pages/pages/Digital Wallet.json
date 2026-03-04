@@ -30,16 +30,16 @@
     "Digital Goods"
   ],
   "wiki_links": [
-    "Cryptocurrency Storage",
-    "Transaction Signing",
+    "Hardware Wallet",
     "Cryptographic Security",
     "Self-Custody",
-    "Private Key",
-    "Hardware Wallet",
-    "Asset Management",
-    "Web3",
     "DeFi Access",
-    "Blockchain Network"
+    "Blockchain Network",
+    "Asset Management",
+    "Transaction Signing",
+    "Web3",
+    "Private Key",
+    "Cryptocurrency Storage"
   ],
   "ontology": {
     "term_id": "MV-9881",

@@ -7,17 +7,17 @@
     "Scene Graph"
   ],
   "wiki_links": [
-    "Octree",
-    "Scene Graph",
-    "Frustum Culling",
-    "metaverse",
-    "Collision Detection",
-    "Kd-Tree",
-    "Spatial Data Structure",
-    "Tree Construction",
     "Traversal Algorithm",
+    "Scene Graph",
+    "Kd-Tree",
+    "metaverse",
     "Ray Tracing",
-    "Bounding Volume"
+    "Frustum Culling",
+    "Bounding Volume",
+    "Octree",
+    "Tree Construction",
+    "Collision Detection",
+    "Spatial Data Structure"
   ],
   "ontology": {
     "term_id": "MV-9801",

@@ -7,12 +7,12 @@
     "Search Engine"
   ],
   "wiki_links": [
-    "Data Structure",
-    "metaverse",
-    "Database Indexing",
-    "Fast Query Response",
+    "Search Engine",
     "Information Retrieval",
-    "Search Engine"
+    "Data Structure",
+    "Fast Query Response",
+    "metaverse",
+    "Database Indexing"
   ],
   "ontology": {
     "term_id": "MV-10031",

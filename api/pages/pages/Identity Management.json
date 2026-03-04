@@ -36,11 +36,11 @@
   "wiki_links": [
     "Privacy",
     "Cryptography",
-    "Blockchain",
     "Self-Sovereign Identity",
     "Compliance Verification",
-    "Verifiable Credentials",
-    "KYC/AML Requirements"
+    "Blockchain",
+    "KYC/AML Requirements",
+    "Verifiable Credentials"
   ],
   "ontology": {
     "term_id": "NGM-7002",

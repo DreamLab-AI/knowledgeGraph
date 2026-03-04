@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "Model Configuration",
-    "Reproducibility",
     "metaverse",
-    "System Settings",
+    "Configuration",
     "Presets",
-    "Configuration"
+    "System Settings",
+    "Reproducibility"
   ],
   "ontology": {
     "term_id": "MV-9991",

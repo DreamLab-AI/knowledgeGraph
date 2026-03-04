@@ -8,17 +8,17 @@
     "Calibration Target"
   ],
   "wiki_links": [
-    "Calibration Target",
-    "Computer Vision",
-    "Imaging Parameters",
-    "SLAM",
-    "metaverse",
     "Camera Calibration",
-    "Object Measurement",
+    "metaverse",
     "Optimization Algorithm",
+    "SLAM",
     "Photogrammetry",
+    "Object Measurement",
+    "Computer Vision",
     "3D Reconstruction",
-    "Scene Localization"
+    "Scene Localization",
+    "Calibration Target",
+    "Imaging Parameters"
   ],
   "ontology": {
     "term_id": "MV-9806",
