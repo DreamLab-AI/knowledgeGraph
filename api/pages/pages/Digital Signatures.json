@@ -10,16 +10,16 @@
   ],
   "wiki_links": [
     "Data Integrity",
-    "Hash Function",
-    "Blockchain Security",
-    "Authentication",
-    "Signature Algorithm",
-    "Private Key",
-    "Non-Repudiation",
-    "Smart Contracts",
-    "metaverse",
     "Public Key Infrastructure",
-    "Cryptography"
+    "Smart Contracts",
+    "Cryptography",
+    "Signature Algorithm",
+    "metaverse",
+    "Blockchain Security",
+    "Non-Repudiation",
+    "Private Key",
+    "Hash Function",
+    "Authentication"
   ],
   "ontology": {
     "term_id": "MV-9872",

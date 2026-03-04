@@ -6,17 +6,17 @@
     "Digital Citizenship"
   ],
   "wiki_links": [
-    "Public Deliberation",
-    "Accessibility",
-    "E-Voting",
-    "Democratic Engagement",
-    "DAO Governance",
-    "Deliberative Democracy",
     "Digital Platform",
-    "Digital Democracy",
+    "DAO Governance",
+    "Democratic Engagement",
     "metaverse",
     "Collective Governance",
-    "Trust Infrastructure"
+    "Trust Infrastructure",
+    "Digital Democracy",
+    "Deliberative Democracy",
+    "Accessibility",
+    "Public Deliberation",
+    "E-Voting"
   ],
   "ontology": {
     "term_id": "MV-9821",

@@ -6,14 +6,14 @@
     "Immersion"
   ],
   "wiki_links": [
-    "Immersive Audio",
+    "HRTF Filters",
+    "Binaural Rendering",
+    "Sound Localization",
     "3D Sound Perception",
     "Spatial Audio Technology",
-    "Sound Localization",
-    "Binaural Rendering",
-    "HRTF Filters",
+    "metaverse",
     "Head Tracking",
-    "metaverse"
+    "Immersive Audio"
   ],
   "ontology": {
     "term_id": "MV-9784",

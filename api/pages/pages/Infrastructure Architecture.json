@@ -7,11 +7,11 @@
     "Networking Layer"
   ],
   "wiki_links": [
-    "Cloud Computing",
-    "Edge Computing",
-    "Technical Architecture",
     "Metaverse Platform",
-    "metaverse"
+    "Technical Architecture",
+    "metaverse",
+    "Cloud Computing",
+    "Edge Computing"
   ],
   "ontology": {
     "term_id": "MV-9932",

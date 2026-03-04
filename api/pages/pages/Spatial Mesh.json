@@ -6,12 +6,12 @@
     "Mixed Reality (MR)"
   ],
   "wiki_links": [
-    "3D Reconstruction",
-    "Depth Sensing",
     "AR Occlusion",
-    "Point Cloud",
     "Spatial Mapping",
-    "metaverse"
+    "metaverse",
+    "Depth Sensing",
+    "Point Cloud",
+    "3D Reconstruction"
   ],
   "ontology": {
     "term_id": "MV-10061",

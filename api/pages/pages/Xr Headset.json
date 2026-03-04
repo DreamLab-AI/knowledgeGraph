@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: xr-headset-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10171\n\t- source-domain:: mv\n\t- preferred-term:: XR Headset\n\t- status:: active\n\t- definition:: A head-mounted display device that delivers immersive visual and audio experiences for virtual reality, augmented reality, or mixed reality applications, featuring integrated displays, tracking sensors, audio systems, and processing capabilities for rendering digital content in the user's field of view.\n\t- owl:class:: mv:XrHeadset\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[XR Hardware]]\n\t\t- related-to:: [[Virtual Reality VR]]\n\t\t- related-to:: [[Augmented Reality]]\n\t\t- related-to:: [[VR Controllers]]\n\t  id:: xr-headset-relationships\n\t  collapsed:: true\n- ## Overview\n\t- XR headsets serve as primary interfaces for immersive metaverse experiences. Meta Quest dominates with 64% market share, Apple Vision Pro holds 16%, and PICO has 7% as of Q1 2024. The Meta Quest 3 ($499) offers 30% resolution increase over Quest 2 with mixed reality capabilities. Apple Vision Pro ($3,499) features dual 4K micro-OLED displays with 23 million pixels total, released globally throughout 2024.\n- ## Technical Details\n\t- ### Leading Headsets (2024)\n\t\t- **Meta Quest 3**: 2064x2208 per eye, 120Hz, Snapdragon XR2 Gen 2\n\t\t- **Meta Quest 3S**: $299 entry point, October 2024 release\n\t\t- **Apple Vision Pro**: Micro-OLED, M2+R1 chips, spatial computing\n\t\t- **PlayStation VR2**: 2000x2040 per eye, eye tracking, haptic feedback\n\t- ### Display Specifications\n\t\t- **Resolution**: 2000-4000 pixels per eye\n\t\t- **Refresh Rate**: 90-120Hz standard\n\t\t- **Field of View**: 100-120 degrees horizontal\n\t\t- **Pixel Density**: 23+ PPD (pixels per degree) for clarity\n\t- ### Interaction Methods\n\t\t- **Spatial Input**: Hand and eye tracking (Vision Pro)\n\t\t- **Controllers**: Motion-tracked handhelds (Quest, PSVR2)\n\t\t- **Voice Commands**: Speech recognition integration\n\t\t- **Passthrough**: Mixed reality camera views\n- ## Applications\n\t- Metaverse platform access\n\t- VR gaming and entertainment\n\t- Enterprise training and collaboration\n\t- Spatial computing productivity\n\t- Therapeutic and medical applications",
   "backlinks": [],
   "wiki_links": [
-    "XR Hardware",
-    "Augmented Reality",
-    "Virtual Reality VR",
     "VR Controllers",
-    "metaverse"
+    "Virtual Reality VR",
+    "Augmented Reality",
+    "metaverse",
+    "XR Hardware"
   ],
   "ontology": {
     "term_id": "MV-10171",

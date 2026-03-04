@@ -10,16 +10,16 @@
     "Digital Goods"
   ],
   "wiki_links": [
-    "Financial Services",
-    "Smart Contract",
-    "Asset Management",
     "Cryptocurrency",
-    "Decentralized Finance",
-    "Decentralized Exchange",
     "Market Making",
+    "Liquidity Pool",
     "Financial Technology",
+    "Financial Services",
+    "Decentralized Exchange",
+    "Decentralized Finance",
     "Price Discovery",
-    "Liquidity Pool"
+    "Asset Management",
+    "Smart Contract"
   ],
   "ontology": {
     "term_id": "NGM-7030",

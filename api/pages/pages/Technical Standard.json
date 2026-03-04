@@ -15,15 +15,15 @@
   ],
   "wiki_links": [
     "Interoperability",
-    "Quality Assurance",
-    "Technical Requirements",
-    "Best Practices",
-    "Governance Framework",
-    "Safety",
-    "Specification",
     "Compliance",
+    "Core Technology",
+    "Safety",
+    "Best Practices",
+    "Quality Assurance",
+    "Specification",
+    "Governance Framework",
     "System Interoperability",
-    "Core Technology"
+    "Technical Requirements"
   ],
   "ontology": {
     "term_id": "NGM-7019",

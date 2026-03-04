@@ -6,12 +6,12 @@
     "AI Model Card"
   ],
   "wiki_links": [
-    "Performance Optimization",
-    "Quality Assurance",
-    "Software Testing",
     "Performance Testing",
+    "Software Testing",
+    "Quality Assurance",
     "metaverse",
-    "System Evaluation"
+    "System Evaluation",
+    "Performance Optimization"
   ],
   "ontology": {
     "term_id": "MV-10002",

@@ -11,12 +11,12 @@
     "Skos Vocabulary"
   ],
   "wiki_links": [
-    "Web Standards",
     "Ontology Engineering",
-    "Linked Data",
-    "Knowledge Representation",
     "Data Interoperability",
-    "metaverse"
+    "Knowledge Representation",
+    "metaverse",
+    "Web Standards",
+    "Linked Data"
   ],
   "ontology": {
     "term_id": "MV-10037",

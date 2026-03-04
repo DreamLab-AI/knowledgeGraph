@@ -13,14 +13,14 @@
     "Price Discovery"
   ],
   "wiki_links": [
-    "BlockchainDomain",
+    "DeFi Ecosystem",
+    "Consensus Security",
+    "Mempool",
+    "Proposer-Builder Separation",
+    "Front-Running",
     "Blockchain",
     "Transaction Ordering",
-    "DeFi Ecosystem",
-    "Front-Running",
-    "Proposer-Builder Separation",
-    "Mempool",
-    "Consensus Security"
+    "BlockchainDomain"
   ],
   "ontology": {
     "term_id": "BC-8012",

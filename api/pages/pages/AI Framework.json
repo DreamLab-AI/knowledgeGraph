@@ -9,10 +9,10 @@
     "Game Engine"
   ],
   "wiki_links": [
-    "Model Optimization",
-    "Neural Network Library",
-    "owl:Thing",
     "AutoML",
+    "Model Optimization",
+    "owl:Thing",
+    "Neural Network Library",
     "Deep Learning Framework"
   ],
   "ontology": {

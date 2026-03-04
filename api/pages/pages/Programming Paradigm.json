@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: ai9026-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9026\n\t- preferred-term:: Programming Paradigm\n\t- source-domain:: ai\n- definition:: Programming Paradigms in AI represent fundamental styles and approaches to structuring code for artificial intelligence systems. Key paradigms include imperative (procedural, object-oriented), declarative (functional, logic-based), and differentiable programming. Functional programming (Haskell, Lisp) emphasizes immutability and higher-order functions, suited for mathematical ML algorithms. Differentiable programming treats entire programs as differentiable functions, enabling end-to-end gradient-based optimization. Modern AI development combines paradigms: object-oriented for software engineering, functional for mathematical rigor, and differentiable for learning.\n\n- public-access:: true\n- is-subclass-of:: [[owl:Thing]]\n\n## Overview\n\nProgramming Paradigms in AI represent fundamental styles and approaches to structuring code for artificial intelligence systems. Key paradigms include imperative (procedural, object-oriented), declarative (functional, logic-based), and differentiable programming. Functional programming (Haskell, Lisp) emphasizes immutability and higher-order functions, suited for mathematical ML algorithms. Differentiable programming treats entire programs as differentiable functions, enabling end-to-end gradient-based optimization. Modern AI development combines paradigms: object-oriented for software engineering, functional for mathematical rigor, and differentiable for learning.\n\n## Key Characteristics\n\n- Supports functional composition and immutability\n- Enables declarative model specification\n- Facilitates automatic differentiation throughout programs\n- Encourages modular and reusable code structures\n- Integrates symbolic and numeric computation\n\n## Related Concepts\n\n- [[Functional Programming]]\n- [[Differentiable Programming]]\n- [[Symbolic AI]]\n- [[Software Engineering]]\n\n## References\n\n- Innes, M. (2018). Don't Unroll Adjoint: Differentiating SSA-Form Programs. arXiv:1810.07951.\n- Van Roy, P. & Haridi, S. (2004). Concepts, Techniques, and Models of Computer Programming. MIT Press.\n- Baydin, A. et al. (2018). Automatic differentiation in machine learning: a survey. JMLR 18(153), 1-43.",
   "backlinks": [],
   "wiki_links": [
-    "Differentiable Programming",
     "Software Engineering",
-    "owl:Thing",
+    "Symbolic AI",
     "Functional Programming",
-    "Symbolic AI"
+    "Differentiable Programming",
+    "owl:Thing"
   ],
   "ontology": {
     "term_id": "AI-9026",
