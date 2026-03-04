@@ -52,15 +52,40 @@
 
   /* ── force lazy blocks to render by scrolling ──────────── */
   function forceRenderAll(callback) {
-    var container = document.querySelector('.cp__sidebar-main-content') ||
-                    document.querySelector('#main-content-container') ||
-                    document.documentElement;
-    var origScroll = container.scrollTop;
-    var stepSize = Math.floor(window.innerHeight * 0.8);
+    /* Collect every scrollable ancestor the SPA might use */
+    var containers = [
+      document.querySelector('.cp__sidebar-main-content'),
+      document.querySelector('#main-content-container'),
+      document.querySelector('#app-container'),
+      document.querySelector('.page'),
+      document.body,
+      document.documentElement,
+    ].filter(Boolean);
+
+    var primary = containers[0];
+    var origScroll = primary.scrollTop;
+    var stepSize = Math.floor(window.innerHeight * 0.4); /* small steps */
     var pass = 0;
+    var maxPasses = 6;
+
+    function scrollAll(pos) {
+      for (var j = 0; j < containers.length; j++) containers[j].scrollTop = pos;
+      window.scrollTo(0, pos);
+      /* fire scroll event so IntersectionObservers see the change */
+      try { window.dispatchEvent(new Event('scroll')); } catch (_) {}
+      try { primary.dispatchEvent(new Event('scroll', { bubbles: true })); } catch (_) {}
+    }
+
+    function getMaxScroll() {
+      return Math.max(
+        primary.scrollHeight || 0,
+        document.body.scrollHeight || 0,
+        document.documentElement.scrollHeight || 0
+      );
+    }
 
     function doPass() {
-      var maxScroll = container.scrollHeight;
+      var maxScroll = getMaxScroll();
       var positions = [];
       for (var p = 0; p <= maxScroll; p += stepSize) positions.push(p);
       positions.push(maxScroll);
@@ -68,17 +93,19 @@
 
       function step() {
         if (i < positions.length) {
-          container.scrollTop = positions[i];
+          scrollAll(positions[i]);
           i++;
-          setTimeout(step, 80);
+          setTimeout(step, 120);
         } else {
           pass++;
-          /* if scroll height grew, new content loaded — do another pass (max 3) */
-          if (pass < 3 && container.scrollHeight > maxScroll + stepSize) {
-            setTimeout(doPass, 200);
+          var newMax = getMaxScroll();
+          /* keep going while new content loads (or do min 2 passes) */
+          if (pass < maxPasses && (newMax > maxScroll + 100 || pass < 2)) {
+            setTimeout(doPass, 300);
           } else {
-            container.scrollTop = origScroll;
-            setTimeout(callback, 200);
+            scrollAll(0);
+            primary.scrollTop = origScroll;
+            setTimeout(callback, 300);
           }
         }
       }
