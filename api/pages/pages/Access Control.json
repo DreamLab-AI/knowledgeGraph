@@ -29,14 +29,14 @@
   ],
   "wiki_links": [
     "Core Technology",
-    "Data Protection",
-    "Security Mechanism",
-    "Identity Management",
-    "Authorisation",
-    "System Security",
-    "Compliance",
-    "Authentication Service",
     "Permission Management",
+    "Authentication Service",
+    "System Security",
+    "Authorisation",
+    "Security Mechanism",
+    "Data Protection",
+    "Compliance",
+    "Identity Management",
     "Security Policy"
   ],
   "ontology": {

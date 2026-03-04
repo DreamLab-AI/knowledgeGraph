@@ -16,11 +16,11 @@
     "Fuzzy Logic"
   ],
   "wiki_links": [
-    "Reasoning Systems",
-    "Ontology",
-    "Semantic Web",
+    "owl:Thing",
     "Knowledge Graph",
-    "owl:Thing"
+    "Ontology",
+    "Reasoning Systems",
+    "Semantic Web"
   ],
   "ontology": {
     "term_id": "AI-9019",

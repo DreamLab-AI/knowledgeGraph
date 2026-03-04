@@ -7,10 +7,10 @@
   ],
   "wiki_links": [
     "Blockchain Technology",
-    "Cross-Platform Interoperability",
-    "Identity Management",
     "Self-Sovereign Identity",
-    "metaverse"
+    "Identity Management",
+    "metaverse",
+    "Cross-Platform Interoperability"
   ],
   "ontology": {
     "term_id": "MV-9883",

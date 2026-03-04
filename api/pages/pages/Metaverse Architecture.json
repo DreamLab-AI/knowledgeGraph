@@ -10,11 +10,11 @@
     "Interoperability Framework"
   ],
   "wiki_links": [
-    "System Architecture",
-    "Virtual World Operation",
-    "metaverse",
+    "Infrastructure Layer",
     "Technology Stack",
-    "Infrastructure Layer"
+    "metaverse",
+    "System Architecture",
+    "Virtual World Operation"
   ],
   "ontology": {
     "term_id": "MV-9003",

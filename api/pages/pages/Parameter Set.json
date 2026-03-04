@@ -8,10 +8,10 @@
   "wiki_links": [
     "Configuration",
     "Presets",
-    "System Settings",
-    "metaverse",
     "Reproducibility",
-    "Model Configuration"
+    "System Settings",
+    "Model Configuration",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9991",

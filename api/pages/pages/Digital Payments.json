@@ -9,17 +9,17 @@
     "Central Bank Digital Currency (CBDC)"
   ],
   "wiki_links": [
-    "Cross-Border Transfer",
+    "Mobile Payments",
     "CBDC",
+    "Network Infrastructure",
+    "Digital Wallet",
+    "Payment Processor",
     "Cryptocurrency",
     "Financial Transactions",
-    "Virtual Purchases",
-    "Payment Processor",
-    "Digital Wallet",
-    "metaverse",
     "E-Commerce",
-    "Mobile Payments",
-    "Network Infrastructure"
+    "Virtual Purchases",
+    "metaverse",
+    "Cross-Border Transfer"
   ],
   "ontology": {
     "term_id": "MV-9865",

@@ -8,18 +8,18 @@
     "RGB and Client Side Validation"
   ],
   "wiki_links": [
-    "Immutable X",
-    "Rollup",
-    "dYdX v4",
-    "Custom Execution Environment",
+    "Scalability Solutions",
     "Blockchain",
+    "dYdX v4",
     "Layer 1",
     "General-Purpose Smart Contract Platform",
-    "Scalability Solutions",
-    "State Channel",
     "Layer 2",
+    "State Channel",
+    "Custom Execution Environment",
     "Application-Specific Blockchain",
-    "Arbitrum Orbit"
+    "Arbitrum Orbit",
+    "Immutable X",
+    "Rollup"
   ],
   "ontology": {
     "term_id": "BC-8009",

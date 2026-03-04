@@ -14,16 +14,16 @@
     "System Interoperability"
   ],
   "wiki_links": [
-    "Safety",
-    "Core Technology",
     "Governance Framework",
-    "Specification",
     "Interoperability",
+    "Best Practices",
+    "Core Technology",
     "System Interoperability",
     "Quality Assurance",
+    "Safety",
+    "Specification",
     "Technical Requirements",
-    "Compliance",
-    "Best Practices"
+    "Compliance"
   ],
   "ontology": {
     "term_id": "NGM-7019",

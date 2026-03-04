@@ -4,14 +4,14 @@
   "content": "- ### OntologyBlock\n  id:: ai-machine-learning-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9762\n\t- source-domain:: mv\n\t- preferred-term:: Ai Machine Learning\n\t- status:: active\n\t- definition:: AI Machine Learning in the metaverse context refers to the application of artificial intelligence algorithms, neural networks, and deep learning architectures that enable intelligent virtual environments through natural language processing, computer vision, procedural content generation, and adaptive user experiences.\n\t- owl:class:: mv:AiMachineLearning\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Artificial Intelligence]]\n\t- enables:: [[Smart Virtual Environments]], [[Adaptive NPCs]], [[Personalized Experiences]], [[Content Generation]]\n\t- requires:: [[Training Data]], [[Computational Infrastructure]], [[Neural Network Architectures]]\n\t- #### Relationships\n\t  id:: ai-machine-learning-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Deep Learning**: Neural network architectures for image recognition, speech processing, and decision-making\n- **Natural Language Processing (NLP)**: Enabling intelligent virtual assistants and NPC dialogue systems\n- **Computer Vision**: Powering avatar interactions, gesture recognition, and environmental understanding\n- **Generative AI (AIGC)**: Autonomous creation of images, text, music, and video content\n\n### Market Context\nThe metaverse market is projected to reach $1.3 trillion by 2030 with a 48% CAGR, driven by AI and ML capabilities.",
   "backlinks": [],
   "wiki_links": [
-    "Artificial Intelligence",
-    "Adaptive NPCs",
     "Content Generation",
-    "Smart Virtual Environments",
     "Training Data",
-    "metaverse",
+    "Smart Virtual Environments",
     "Neural Network Architectures",
+    "Adaptive NPCs",
+    "Artificial Intelligence",
     "Computational Infrastructure",
+    "metaverse",
     "Personalized Experiences"
   ],
   "ontology": {

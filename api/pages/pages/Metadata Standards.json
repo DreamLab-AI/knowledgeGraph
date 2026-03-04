@@ -15,11 +15,11 @@
     "Digital Repository"
   ],
   "wiki_links": [
-    "Data Standards",
     "Interoperability",
-    "Cross-System Data Exchange",
     "Digital Asset Management",
-    "metaverse"
+    "Cross-System Data Exchange",
+    "metaverse",
+    "Data Standards"
   ],
   "ontology": {
     "term_id": "MV-9962",

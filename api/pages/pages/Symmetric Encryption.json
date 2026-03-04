@@ -9,14 +9,14 @@
   ],
   "wiki_links": [
     "Confidential Transactions",
-    "Random Number Generation",
-    "Digital Signature",
-    "Key Derivation Function",
-    "Blockchain",
-    "Hybrid Encryption",
-    "Cryptography",
     "Asymmetric Encryption",
-    "Hash Function"
+    "Blockchain",
+    "Key Derivation Function",
+    "Hybrid Encryption",
+    "Hash Function",
+    "Cryptography",
+    "Digital Signature",
+    "Random Number Generation"
   ],
   "ontology": {
     "term_id": "BC-8018",

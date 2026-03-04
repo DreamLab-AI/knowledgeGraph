@@ -9,16 +9,16 @@
   ],
   "wiki_links": [
     "Impact Quantification",
-    "Environmental Assessment",
     "Hotspot Identification",
-    "Lifecycle Data",
-    "Reduction Strategy",
+    "Environmental Assessment",
     "Life Cycle Assessment",
-    "metaverse",
-    "Boundary Definition",
-    "Emission Factors",
     "Carbon Accounting",
-    "Product Carbon Footprint"
+    "Boundary Definition",
+    "Lifecycle Data",
+    "Product Carbon Footprint",
+    "Emission Factors",
+    "metaverse",
+    "Reduction Strategy"
   ],
   "ontology": {
     "term_id": "MV-9809",

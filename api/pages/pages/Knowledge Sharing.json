@@ -6,11 +6,11 @@
     "Digital Ontology Repository"
   ],
   "wiki_links": [
-    "Collaborative Technology",
-    "Virtual Collaboration",
     "Distributed Team Collaboration",
-    "Immersive Learning",
-    "metaverse"
+    "Virtual Collaboration",
+    "Collaborative Technology",
+    "metaverse",
+    "Immersive Learning"
   ],
   "ontology": {
     "term_id": "MV-9938",

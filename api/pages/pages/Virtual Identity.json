@@ -6,11 +6,11 @@
     "Human Capture & Recognition"
   ],
   "wiki_links": [
-    "Digital Identity",
     "Self-Sovereign Identity",
+    "Decentralized Identity",
+    "Digital Identity",
     "Avatar",
-    "metaverse",
-    "Decentralized Identity"
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10126",

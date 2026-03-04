@@ -7,11 +7,11 @@
     "User Interface Standard"
   ],
   "wiki_links": [
-    "System Architecture",
     "User Experience",
     "Accessibility",
     "Interaction Design",
-    "metaverse"
+    "metaverse",
+    "System Architecture"
   ],
   "ontology": {
     "term_id": "MV-10097",

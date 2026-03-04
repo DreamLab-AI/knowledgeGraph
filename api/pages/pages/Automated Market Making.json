@@ -8,12 +8,12 @@
   "wiki_links": [
     "Token Accessibility",
     "Smart Contract Deployment",
-    "Liquidity Provision",
-    "Liquidity Mining",
-    "Decentralized Trading",
-    "metaverse",
     "Price Oracle Integration",
-    "DeFi Operations"
+    "DeFi Operations",
+    "Liquidity Mining",
+    "metaverse",
+    "Decentralized Trading",
+    "Liquidity Provision"
   ],
   "ontology": {
     "term_id": "MV-9787",

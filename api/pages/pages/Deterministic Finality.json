@@ -7,14 +7,14 @@
     "Probabilistic Finality"
   ],
   "wiki_links": [
-    "Probabilistic Finality",
-    "Consensus Mechanism",
-    "Validator",
-    "Absolute Transaction Guarantee",
-    "Blockchain",
     "Transaction Finality",
+    "Probabilistic Finality",
+    "Blockchain",
+    "Absolute Transaction Guarantee",
+    "Consensus Mechanism",
     "Validator Set",
-    "Byzantine Fault Tolerance"
+    "Byzantine Fault Tolerance",
+    "Validator"
   ],
   "ontology": {
     "term_id": "BC-8004",
