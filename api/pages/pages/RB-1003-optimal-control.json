@@ -8,23 +8,23 @@
     "RB-1016-path-planning"
   ],
   "wiki_links": [
-    "RB-1002-closed-loop-control",
-    "Robotics",
-    "Optimization Theory",
     "Optimization",
-    "Efficiency",
-    "Cost Function",
-    "Model Predictive Control",
-    "Optimization Algorithm",
-    "Linear Quadratic Regulator",
     "Autonomous Vehicles",
+    "Control Theory",
     "System Dynamics Model",
     "Optimality",
+    "Linear Quadratic Regulator",
     "Spacecraft Control",
     "Machine Learning",
-    "Control Theory",
+    "RB-1002-closed-loop-control",
+    "Optimization Algorithm",
     "RB-1004-adaptive-control",
-    "RB-1007-trajectory-generation"
+    "RB-1007-trajectory-generation",
+    "Cost Function",
+    "Robotics",
+    "Model Predictive Control",
+    "Efficiency",
+    "Optimization Theory"
   ],
   "ontology": {
     "term_id": "RB-1003",

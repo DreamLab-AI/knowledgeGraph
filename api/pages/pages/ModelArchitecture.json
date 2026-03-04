@@ -10,11 +10,11 @@
     "TrainingDatasetMetadata"
   ],
   "wiki_links": [
-    "TrainingMethod",
-    "MachineLearning",
-    "Deep Learning",
     "Artificial Intelligence",
-    "NeuralNetworkArchitecture"
+    "TrainingMethod",
+    "Deep Learning",
+    "NeuralNetworkArchitecture",
+    "MachineLearning"
   ],
   "ontology": {
     "term_id": "AI-7000",

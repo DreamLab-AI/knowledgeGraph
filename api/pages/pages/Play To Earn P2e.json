@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: play-to-earn-p2e-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10009\n\t- source-domain:: mv\n\t- preferred-term:: Play To Earn (P2E)\n\t- status:: active\n\t- definition:: A blockchain gaming model where players earn cryptocurrency tokens or NFT assets with real-world value through gameplay activities, combining entertainment with financial incentives through decentralized ownership of in-game items and characters.\n\t- owl:class:: mv:PlayToEarnP2e\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: play-to-earn-p2e-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Gaming]]\n\t\t- related-to:: [[NFT]]\n\t\t- related-to:: [[GameFi]]\n\t\t- related-to:: [[Cryptocurrency]]\n\t\t- enables:: [[Digital Asset Ownership]]\n\t- #### Economic Model\n\t  collapsed:: true\n\t\t- Players earn tokens through gameplay activities\n\t\t- NFT ownership of characters, items, and land\n\t\t- Decentralized marketplaces for trading assets\n\t\t- Staking mechanisms for passive income\n\t\t- Integration with DeFi protocols\n\t- #### Market Context\n\t  collapsed:: true\n\t\t- Market projected at $8.8B by 2028\n\t\t- Q2 2024 investments reached $1.1B (314% increase)\n\t\t- Top games: Axie Infinity, The Sandbox, Decentraland\n\t\t- Strong adoption in Southeast Asia and Latin America",
   "backlinks": [],
   "wiki_links": [
-    "NFT",
-    "Cryptocurrency",
     "Digital Asset Ownership",
-    "Blockchain Gaming",
+    "Cryptocurrency",
     "GameFi",
-    "metaverse"
+    "metaverse",
+    "NFT",
+    "Blockchain Gaming"
   ],
   "ontology": {
     "term_id": "MV-10009",

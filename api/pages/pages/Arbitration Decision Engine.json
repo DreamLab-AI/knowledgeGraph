@@ -6,14 +6,14 @@
     "E-Contract Arbitration"
   ],
   "wiki_links": [
-    "Blockchain Integration",
+    "Rule Encoding",
+    "Evidence Authentication",
     "Decentralized Arbitration",
     "Smart Contract Resolution",
-    "Evidence Authentication",
-    "metaverse",
     "Automated Dispute Resolution",
-    "Rule Encoding",
-    "Self-Enforcing Awards"
+    "Blockchain Integration",
+    "Self-Enforcing Awards",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9773",

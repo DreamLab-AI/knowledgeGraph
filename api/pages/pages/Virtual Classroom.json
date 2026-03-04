@@ -8,11 +8,11 @@
     "ETSI_Domain_Application___Education"
   ],
   "wiki_links": [
-    "Educational Technology",
-    "Learning Management System",
     "Distance Learning",
-    "metaverse",
-    "Virtual Environment"
+    "Learning Management System",
+    "Educational Technology",
+    "Virtual Environment",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10107",

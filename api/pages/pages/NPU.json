@@ -4,10 +4,10 @@
   "content": "- ### OntologyBlock\n  id:: AI-9005\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9005\n\t- source-domain:: ai\n\t- preferred-term:: NPU\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Neural Processing Unit, specialized hardware accelerators designed specifically for artificial neural network computations, optimized for AI inference and training.\n\t- source:: [[AI Hardware]], [[Edge Computing]]\n\t- maturity:: emerging\n\t- owl:class:: ai:NPU\n\t- owl:role:: Object\n\t- belongsToDomain:: [[ArtificialIntelligenceDomain]]\n\t- isSubclassOf:: [[AI Hardware]]\n\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]",
   "backlinks": [],
   "wiki_links": [
-    "Edge Computing",
-    "AI Hardware",
     "Artificial Intelligence",
-    "ArtificialIntelligenceDomain"
+    "ArtificialIntelligenceDomain",
+    "Edge Computing",
+    "AI Hardware"
   ],
   "ontology": {
     "term_id": "AI-9005",

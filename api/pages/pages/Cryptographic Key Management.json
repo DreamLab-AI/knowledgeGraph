@@ -10,13 +10,13 @@
     "Transaction Standard"
   ],
   "wiki_links": [
-    "Cryptographic Keys",
-    "Key Derivation Function",
-    "Private Key",
-    "Security Architecture",
     "Digital Signature",
+    "Private Key",
     "Random Number Generation",
-    "Cryptography"
+    "Cryptography",
+    "Cryptographic Keys",
+    "Security Architecture",
+    "Key Derivation Function"
   ],
   "ontology": {
     "term_id": "BC-7011",

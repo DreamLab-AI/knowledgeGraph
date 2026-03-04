@@ -6,12 +6,12 @@
     "Multiverse"
   ],
   "wiki_links": [
-    "Data Interoperability",
-    "glTF Format",
     "Universal Scene Description",
+    "glTF Format",
     "Cross Platform Asset Exchange",
-    "metaverse",
-    "Metaverse Standards Forum"
+    "Metaverse Standards Forum",
+    "Data Interoperability",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10068",

@@ -9,17 +9,17 @@
   ],
   "wiki_links": [
     "Layer 2",
-    "Custom Execution Environment",
-    "Scalability Solutions",
-    "State Channel",
-    "Layer 1",
-    "Rollup",
-    "Application-Specific Blockchain",
-    "Blockchain",
-    "General-Purpose Smart Contract Platform",
     "Immutable X",
     "Arbitrum Orbit",
-    "dYdX v4"
+    "Layer 1",
+    "State Channel",
+    "Blockchain",
+    "Scalability Solutions",
+    "Custom Execution Environment",
+    "Rollup",
+    "General-Purpose Smart Contract Platform",
+    "dYdX v4",
+    "Application-Specific Blockchain"
   ],
   "ontology": {
     "term_id": "BC-8009",

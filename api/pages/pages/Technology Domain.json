@@ -20,12 +20,12 @@
   ],
   "wiki_links": [
     "Artificial Intelligence",
-    "owl:Thing",
-    "Blockchain Technology",
-    "Metaverse Technology",
     "Robotics Systems",
+    "Telecollaboration",
+    "Metaverse Technology",
+    "Blockchain Technology",
     "Narrative Gold Mine",
-    "Telecollaboration"
+    "owl:Thing"
   ],
   "ontology": {
     "term_id": "NGM-0001",

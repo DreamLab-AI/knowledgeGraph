@@ -6,12 +6,12 @@
     "Deep Learning"
   ],
   "wiki_links": [
-    "Data Engineering",
-    "Supervised Learning",
+    "Human-in-the-Loop",
     "Training Data",
+    "Supervised Learning",
     "Machine Learning Pipeline",
     "Active Learning",
-    "Human-in-the-Loop"
+    "Data Engineering"
   ],
   "ontology": {
     "term_id": "AI-1020",

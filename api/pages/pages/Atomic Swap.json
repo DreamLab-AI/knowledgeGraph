@@ -6,19 +6,19 @@
     "Lock and Mint Mechanism"
   ],
   "wiki_links": [
-    "Payment Channel",
-    "Bitcoin",
-    "Hash Function",
-    "Hash Time-Locked Contract",
     "Litecoin",
-    "Lightning Network",
+    "Hash Time-Locked Contract",
     "Cross-Chain Interoperability",
-    "Decentralized Exchange",
-    "ERC-20 Token",
+    "Payment Channel",
     "Blockchain",
+    "Hash Function",
     "Ethereum",
+    "ERC-20 Token",
+    "Decentralized Exchange",
+    "Cross-Chain Bridge",
+    "Bitcoin",
     "Polkadot",
-    "Cross-Chain Bridge"
+    "Lightning Network"
   ],
   "ontology": {
     "term_id": "BC-8002",

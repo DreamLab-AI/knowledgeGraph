@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "Building Lifecycle Management",
-    "Construction Metaverse",
-    "Cloud Platform",
-    "IoT Sensors",
-    "Facility Management",
-    "metaverse",
-    "Digital Twin",
     "Predictive Maintenance",
     "Construction Optimization",
-    "BIM",
-    "Smart Building"
+    "IoT Sensors",
+    "Digital Twin",
+    "Construction Metaverse",
+    "Facility Management",
+    "Cloud Platform",
+    "Smart Building",
+    "metaverse",
+    "BIM"
   ],
   "ontology": {
     "term_id": "MV-9874",

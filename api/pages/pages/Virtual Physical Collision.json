@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: virtual-physical-collision-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10136\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Physical Collision\n\t- status:: active\n\t- definition:: The detection and simulation of contact between virtual objects and real-world elements in mixed reality environments, enabling realistic interactions, haptic feedback, and safety boundaries that prevent users from colliding with physical obstacles while immersed in virtual experiences.\n\t- owl:class:: mv:VirtualPhysicalCollision\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Physics Simulation]]\n\t\t- related-to:: [[Mixed Reality]]\n\t\t- related-to:: [[Haptic Feedback]]\n\t\t- related-to:: [[Safety Systems]]\n\t  id:: virtual-physical-collision-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual physical collision systems detect and manage interactions between digital content and real-world objects. In VR, guardian/chaperone systems warn users of physical boundaries. In AR, collision detection enables virtual objects to interact realistically with real surfaces. Haptic feedback enhances immersion by simulating touch sensations.\n- ## Technical Details\n\t- ### Detection Methods\n\t\t- **Depth Sensing**: LiDAR, structured light, stereo cameras\n\t\t- **Room Mapping**: Guardian/chaperone boundary systems\n\t\t- **Object Recognition**: ML-based surface detection\n\t\t- **Hand Tracking**: Collision with virtual objects\n\t- ### Response Types\n\t\t- Visual boundary warnings\n\t\t- Haptic feedback through controllers\n\t\t- Audio cues and alerts\n\t\t- Object physics reactions\n\t- ### Safety Features\n\t\t- Passthrough camera activation\n\t\t- Boundary proximity warnings\n\t\t- Automatic pause on collision\n\t\t- Guardian boundary customization\n- ## Applications\n\t- VR play space safety\n\t- AR object placement realism\n\t- Haptic interaction design\n\t- Industrial training safety\n\t- Mixed reality gaming",
   "backlinks": [],
   "wiki_links": [
-    "Safety Systems",
-    "metaverse",
     "Physics Simulation",
+    "Safety Systems",
+    "Mixed Reality",
     "Haptic Feedback",
-    "Mixed Reality"
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10136",

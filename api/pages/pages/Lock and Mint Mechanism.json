@@ -7,9 +7,9 @@
     "Wrapped Token",
     "Atomic Swap",
     "Blockchain",
-    "Smart Contract",
     "Oracle",
-    "Cross-Chain Bridge"
+    "Cross-Chain Bridge",
+    "Smart Contract"
   ],
   "ontology": {
     "term_id": "BC-8011",

@@ -11,11 +11,11 @@
     "ComputerVisionTask"
   ],
   "wiki_links": [
-    "MachineLearning",
-    "Deep Learning",
     "Artificial Intelligence",
-    "ComputerVisionTask",
-    "NeuralNetworkArchitecture"
+    "Deep Learning",
+    "NeuralNetworkArchitecture",
+    "MachineLearning",
+    "ComputerVisionTask"
   ],
   "ontology": {
     "term_id": "NGM-7011",
