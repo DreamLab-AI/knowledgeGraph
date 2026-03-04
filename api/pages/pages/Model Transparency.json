@@ -10,11 +10,11 @@
     "Global Explanation"
   ],
   "wiki_links": [
-    "AI Ethics",
     "Trustworthy AI Systems",
+    "Explainable AI",
+    "AI Ethics",
     "metaverse",
-    "AI Governance",
-    "Explainable AI"
+    "AI Governance"
   ],
   "ontology": {
     "term_id": "MV-9969",

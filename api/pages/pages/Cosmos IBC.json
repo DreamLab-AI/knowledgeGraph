@@ -8,11 +8,11 @@
   ],
   "wiki_links": [
     "Cosmos Network",
-    "IBC Protocol",
-    "BlockchainDomain",
     "Blockchain",
+    "IBC Protocol",
+    "Interoperability Protocol",
     "Layer 0 Protocol",
-    "Interoperability Protocol"
+    "BlockchainDomain"
   ],
   "ontology": {
     "term_id": "BC-9001",

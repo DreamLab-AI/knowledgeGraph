@@ -16,13 +16,13 @@
     "Virtual Performance Space"
   ],
   "wiki_links": [
-    "Virtual Character System",
-    "Embodied Presence",
     "User Representation",
-    "Input Processing",
     "Social Interaction",
     "3D Rendering Engine",
-    "Animation Controller"
+    "Virtual Character System",
+    "Animation Controller",
+    "Embodied Presence",
+    "Input Processing"
   ],
   "ontology": {
     "term_id": "MV-9792",

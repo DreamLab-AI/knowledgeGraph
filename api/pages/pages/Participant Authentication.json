@@ -8,10 +8,10 @@
   "wiki_links": [
     "Identity Management",
     "metaverse",
-    "Access Control",
     "Secure Virtual Events",
-    "Digital Identity",
-    "Biometric Authentication"
+    "Access Control",
+    "Biometric Authentication",
+    "Digital Identity"
   ],
   "ontology": {
     "term_id": "MV-9994",

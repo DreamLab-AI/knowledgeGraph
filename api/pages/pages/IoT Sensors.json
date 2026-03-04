@@ -10,12 +10,12 @@
   "wiki_links": [
     "Smart Manufacturing",
     "Edge Computing",
-    "Predictive Maintenance",
-    "Industrial Automation",
     "5G Networks",
+    "Industrial Automation",
     "Digital Twin",
-    "Smart Cities",
-    "Internet of Things"
+    "Internet of Things",
+    "Predictive Maintenance",
+    "Smart Cities"
   ],
   "ontology": {
     "term_id": "RB-7002",

@@ -7,12 +7,12 @@
     "Interoperability Framework"
   ],
   "wiki_links": [
-    "ISO Standards",
-    "W3C Recommendations",
-    "metaverse",
-    "IEEE Standards",
     "Standards Organization",
-    "Technology Interoperability"
+    "W3C Recommendations",
+    "Technology Interoperability",
+    "ISO Standards",
+    "metaverse",
+    "IEEE Standards"
   ],
   "ontology": {
     "term_id": "MV-10069",

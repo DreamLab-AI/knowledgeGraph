@@ -6,17 +6,17 @@
     "Display Metrology"
   ],
   "wiki_links": [
-    "Quality Assurance",
-    "Device Alignment",
-    "Technical Standard",
+    "Display Testing",
+    "metaverse",
+    "Reference Materials",
+    "Validation Procedures",
     "Calibration Target",
     "Camera Parameters",
-    "metaverse",
-    "Traceability Chain",
+    "Quality Assurance",
     "Measurement Accuracy",
-    "Validation Procedures",
-    "Reference Materials",
-    "Display Testing"
+    "Traceability Chain",
+    "Device Alignment",
+    "Technical Standard"
   ],
   "ontology": {
     "term_id": "MV-9804",

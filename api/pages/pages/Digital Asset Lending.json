@@ -6,17 +6,17 @@
     "NFT Renting"
   ],
   "wiki_links": [
-    "Credit Protocols",
-    "Yield Generation",
-    "Leverage Trading",
-    "Liquidity Provision",
-    "metaverse",
     "Collateral Management",
     "Smart Contracts",
-    "DeFi Services",
+    "metaverse",
     "Liquidation Systems",
+    "Credit Protocols",
+    "Leverage Trading",
+    "Liquidity Provision",
+    "DeFi Services",
+    "Yield Farming",
     "Flash Loans",
-    "Yield Farming"
+    "Yield Generation"
   ],
   "ontology": {
     "term_id": "MV-9849",

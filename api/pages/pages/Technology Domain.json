@@ -19,13 +19,13 @@
     "TelecollaborationDomain"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
+    "owl:Thing",
     "Metaverse Technology",
-    "Blockchain Technology",
-    "Narrative Gold Mine",
-    "Telecollaboration",
     "Robotics Systems",
-    "owl:Thing"
+    "Telecollaboration",
+    "Blockchain Technology",
+    "Artificial Intelligence",
+    "Narrative Gold Mine"
   ],
   "ontology": {
     "term_id": "NGM-0001",

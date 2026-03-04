@@ -6,11 +6,11 @@
     "Game Engine"
   ],
   "wiki_links": [
-    "metaverse",
     "Digital Content Creation",
-    "Terrain Generation",
     "Game Engine",
-    "Procedural Generation"
+    "metaverse",
+    "Procedural Generation",
+    "Terrain Generation"
   ],
   "ontology": {
     "term_id": "MV-10154",

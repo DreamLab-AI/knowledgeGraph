@@ -7,14 +7,14 @@
     "AIRisk"
   ],
   "wiki_links": [
-    "Machine Learning",
-    "Secure AI Deployment",
-    "Artificial Intelligence",
     "Trustworthy AI",
     "Cybersecurity",
+    "Secure AI Deployment",
     "AIGovernance",
+    "Machine Learning",
     "AIRisk",
-    "Adversarial Machine Learning"
+    "Adversarial Machine Learning",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-7015",

@@ -10,11 +10,11 @@
     "Automated Planning"
   ],
   "wiki_links": [
-    "Planning and Scheduling",
-    "Artificial Intelligence",
     "Graph Theory",
+    "Optimization",
     "Pathfinding",
-    "Optimization"
+    "Planning and Scheduling",
+    "Artificial Intelligence"
   ],
   "ontology": {
     "term_id": "AI-4000",

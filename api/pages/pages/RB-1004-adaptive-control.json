@@ -8,22 +8,22 @@
     "RB-1003-optimal-control"
   ],
   "wiki_links": [
-    "Robotics",
-    "Self-Tuning",
-    "Machine Learning",
-    "Parameter Estimation",
-    "Self-Tuning Systems",
     "System Identification",
-    "RB-1002-closed-loop-control",
+    "Parameter Estimation",
+    "Adaptive Systems",
     "Learning",
     "RB-1003-optimal-control",
-    "Robust Control",
-    "Parameter Adaptation Mechanism",
+    "Machine Learning",
     "Autonomous Systems",
-    "Adaptive Systems",
     "RB-1011-cobot-safety-levels",
+    "Parameter Adaptation Mechanism",
+    "Control Theory",
+    "RB-1002-closed-loop-control",
+    "Robotics",
     "Robustness",
-    "Control Theory"
+    "Self-Tuning",
+    "Robust Control",
+    "Self-Tuning Systems"
   ],
   "ontology": {
     "term_id": "RB-1004",

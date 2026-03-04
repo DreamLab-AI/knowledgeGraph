@@ -10,13 +10,13 @@
     "Symmetric Encryption"
   ],
   "wiki_links": [
-    "Hash Function",
-    "Cryptography",
     "Public Key Infrastructure",
-    "Information Security",
-    "Key Derivation Function",
+    "Cryptography",
     "Digital Signature",
     "Blockchain",
+    "Key Derivation Function",
+    "Hash Function",
+    "Information Security",
     "Elliptic Curve Cryptography",
     "Symmetric Encryption"
   ],

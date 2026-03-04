@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: vr-rendering-engine-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10163\n\t- source-domain:: mv\n\t- preferred-term:: VR Rendering Engine\n\t- status:: active\n\t- definition:: Specialized real-time graphics software that generates stereoscopic imagery for virtual reality headsets, optimizing frame rates, latency, and visual fidelity while managing the unique requirements of immersive display including foveated rendering, reprojection, and lens distortion correction.\n\t- owl:class:: mv:VrRenderingEngine\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Game Engine]]\n\t\t- related-to:: [[Virtual Reality VR]]\n\t\t- related-to:: [[Real-Time Rendering]]\n\t\t- related-to:: [[XR Hardware]]\n\t  id:: vr-rendering-engine-relationships\n\t  collapsed:: true\n- ## Overview\n\t- VR rendering engines power immersive experiences by generating real-time stereoscopic graphics at 90Hz or higher refresh rates. Unreal Engine 5 leads with photorealistic rendering through Lumen and Nanite technologies, while Unity dominates the Meta Quest platform with approximately 70% of games. Both engines support major VR hardware including Oculus, HTC Vive, Valve Index, and PlayStation VR.\n- ## Technical Details\n\t- ### Leading Engines\n\t\t- **Unreal Engine 5**: Lumen global illumination, Nanite virtualized geometry, Blueprint visual scripting\n\t\t- **Unity**: Universal Render Pipeline (URP), High Definition Render Pipeline (HDRP), extensive XR toolkit\n\t\t- **CryEngine**: Advanced rendering for realistic simulations\n\t\t- **Godot**: Open-source alternative gaining traction\n\t- ### VR-Specific Features\n\t\t- **Stereoscopic Rendering**: Dual-view generation for depth perception\n\t\t- **Foveated Rendering**: High detail at gaze point, reduced elsewhere\n\t\t- **Asynchronous Reprojection**: Frame interpolation for smooth motion\n\t\t- **Lens Distortion Correction**: Compensating for headset optics\n\t- ### Performance Requirements\n\t\t- Minimum 90 FPS for comfortable VR experience\n\t\t- Sub-20ms motion-to-photon latency\n\t\t- Support for variable refresh rates\n\t\t- Efficient LOD management for consistent performance\n- ## Applications\n\t- AAA VR gaming development\n\t- Architectural visualization\n\t- Virtual production and filmmaking\n\t- Training and simulation\n\t- Metaverse platform development",
   "backlinks": [],
   "wiki_links": [
-    "Real-Time Rendering",
-    "XR Hardware",
+    "Game Engine",
     "metaverse",
-    "Virtual Reality VR",
-    "Game Engine"
+    "XR Hardware",
+    "Real-Time Rendering",
+    "Virtual Reality VR"
   ],
   "ontology": {
     "term_id": "MV-10163",

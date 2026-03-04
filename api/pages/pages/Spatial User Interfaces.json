@@ -6,12 +6,12 @@
     "Spatial Computing"
   ],
   "wiki_links": [
-    "3D User Interface",
-    "Immersive Interaction",
-    "Gaze Tracking",
-    "Gesture Recognition",
     "metaverse",
-    "Voice Interaction"
+    "Voice Interaction",
+    "Gaze Tracking",
+    "Immersive Interaction",
+    "Gesture Recognition",
+    "3D User Interface"
   ],
   "ontology": {
     "term_id": "MV-10067",

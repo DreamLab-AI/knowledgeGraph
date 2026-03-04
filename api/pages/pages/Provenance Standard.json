@@ -6,12 +6,12 @@
     "Audit Trail"
   ],
   "wiki_links": [
-    "Blockchain Authentication",
-    "NFT Verification",
     "Digital Asset Standards",
     "metaverse",
-    "Ownership Tracking",
-    "Asset Authenticity"
+    "Asset Authenticity",
+    "NFT Verification",
+    "Blockchain Authentication",
+    "Ownership Tracking"
   ],
   "ontology": {
     "term_id": "MV-10013",

@@ -4,17 +4,17 @@
   "content": "- ### OntologyBlock\n  id:: Cross Metaverse Commerce\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9835\n\t- preferred-term:: Cross Metaverse Commerce\n\t- source-domain:: mv\n\t- owl:class:: mv:CrossMetaverseCommerce\n\t- status:: active\n\t- definition:: Economic activities and transactions that span multiple metaverse platforms and virtual worlds, enabled by interoperability standards, blockchain-based digital assets, and unified digital identity systems that allow users to buy, sell, trade, and transfer value seamlessly across different virtual environments.\n\t- belongsToDomain:: [[metaverse]]\n- ### Relationships\n\t- is-subclass-of:: [[Virtual Economy]]\n\t- enables:: [[Asset Portability]], [[Cross-Platform Trading]], [[Virtual Market Integration]]\n\t- requires:: [[Interoperability Standards]], [[Digital Wallet]], [[Blockchain Infrastructure]]\n\t- related-to:: [[NFT Marketplace]], [[Virtual Commerce]], [[Digital Asset Trading]]\n- ## Technical Details\n\t- **Market Projections**: Metaverse market to reach $861.77B by 2030 (2024 report)\n\t- **Enabling Technologies**:\n\t\t- Blockchain for decentralized virtual economies and NFT ownership\n\t\t- Cryptocurrencies for seamless cross-platform transactions\n\t\t- Digital wallets for secure asset management\n\t\t- Interoperable digital identity systems\n\t- **Interoperability Benefits**:\n\t\t- Users move identity, preferences, digital assets across platforms\n\t\t- Cross-chain NFT transactions via interoperability networks\n\t\t- DMA regulation as test case for digital commerce governance\n\t- **Challenges**:\n\t\t- Data interoperability across wide range of formats\n\t\t- Universal data standards development\n\t\t- Security, scalability, and regulation concerns\n- ## Applications\n\t- Virtual real estate transactions\n\t- Cross-platform NFT trading\n\t- Virtual goods marketplaces\n\t- Digital fashion and wearables\n\t- Gaming asset exchanges",
   "backlinks": [],
   "wiki_links": [
-    "Cross-Platform Trading",
-    "Virtual Commerce",
-    "Digital Wallet",
     "Blockchain Infrastructure",
-    "Digital Asset Trading",
+    "Virtual Economy",
     "metaverse",
+    "Cross-Platform Trading",
     "Virtual Market Integration",
     "Interoperability Standards",
-    "Asset Portability",
-    "Virtual Economy",
-    "NFT Marketplace"
+    "Virtual Commerce",
+    "Digital Asset Trading",
+    "Digital Wallet",
+    "NFT Marketplace",
+    "Asset Portability"
   ],
   "ontology": {
     "term_id": "MV-9835",
