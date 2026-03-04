@@ -1,6 +1,6 @@
 /* ================================================================
    Logseq Presentation Mode — lightweight slide engine
-   Trigger: Alt+P  or  toolbar ▶ button
+   Trigger: Ctrl+Shift+P  or  toolbar ▶ button
    Nav:     ← → ↑ ↓  Space/n  p  Home  End
    Exit:    Esc / q
    Blackout: b
@@ -99,7 +99,7 @@
   /* ── keyboard ──────────────────────────────────────────── */
   document.addEventListener('keydown', function (e) {
     if (!state.active) {
-      if (e.altKey && e.key.toLowerCase() === 'p') { e.preventDefault(); enter(); }
+      if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'p') { e.preventDefault(); enter(); }
       return;
     }
     switch (e.key) {
@@ -148,7 +148,7 @@
     if (!target) return;
     var btn = document.createElement('button');
     btn.id = 'ls-pres-btn';
-    btn.title = 'Present (Alt+P)';
+    btn.title = 'Present (Ctrl+Shift+P)';
     btn.textContent = '\u25B6';
     btn.setAttribute('style',
       'margin-right:8px;font-size:14px;cursor:pointer;' +
