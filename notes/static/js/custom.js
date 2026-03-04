@@ -162,6 +162,23 @@
     if (el) el.textContent = (state.idx + 1) + ' / ' + state.slides.length;
   }
 
+  /* ── detect hero slides (image/video-dominant) ────────── */
+  function detectHero(slideEl) {
+    var media = slideEl.querySelectorAll('.block-content img, .block-content video');
+    if (!media.length) { slideEl.classList.remove('ls-pres-hero'); return; }
+    /* count text-heavy blocks (>60 chars, no heading/media) */
+    var heavy = 0;
+    slideEl.querySelectorAll('.block-content').forEach(function (bc) {
+      if (bc.querySelector('h1, h2, h3, img, video, table, iframe')) return;
+      if (bc.textContent.trim().length > 60) heavy++;
+    });
+    if (heavy <= 1) {
+      slideEl.classList.add('ls-pres-hero');
+    } else {
+      slideEl.classList.remove('ls-pres-hero');
+    }
+  }
+
   /* ── navigation ────────────────────────────────────────── */
   function showSlide(n) {
     n = Math.max(0, Math.min(n, state.slides.length - 1));
@@ -171,6 +188,7 @@
     updateCounter();
     state.slides[n].scrollTop = 0;
     hideCollapsedBlocks(state.slides[n]);
+    detectHero(state.slides[n]);
   }
 
   function next() { showSlide(state.idx + 1); }
@@ -196,6 +214,7 @@
     document.documentElement.classList.remove('ls-pres-blackout');
     state.slides.forEach(function (s) {
       s.classList.remove('ls-pres-active');
+      s.classList.remove('ls-pres-hero');
       /* clean up hidden markers */
       s.querySelectorAll('.ls-pres-hidden').forEach(function (h) {
         h.classList.remove('ls-pres-hidden');

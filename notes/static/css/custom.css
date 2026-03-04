@@ -194,6 +194,17 @@ html.ls-pres-mode .ls-pres-active img {
   box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
 
+/* Hero slides (JS-detected): image/video fills available space */
+html.ls-pres-mode .ls-pres-active.ls-pres-hero img {
+  max-height: 80vh !important;
+  max-width: 98% !important;
+}
+
+html.ls-pres-mode .ls-pres-active.ls-pres-hero video {
+  max-height: 80vh !important;
+  max-width: 98% !important;
+}
+
 /* ---- Videos ----------------------------------------------- */
 html.ls-pres-mode .ls-pres-active video {
   max-height: 55vh !important;
