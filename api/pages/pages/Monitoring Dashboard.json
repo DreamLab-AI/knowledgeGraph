@@ -7,10 +7,10 @@
   ],
   "wiki_links": [
     "System Monitoring",
-    "Data Visualisation",
     "Observability Platform",
-    "Operational Intelligence",
-    "metaverse"
+    "Data Visualisation",
+    "metaverse",
+    "Operational Intelligence"
   ],
   "ontology": {
     "term_id": "MV-9972",

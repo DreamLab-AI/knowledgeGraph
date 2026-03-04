@@ -7,12 +7,12 @@
     "Physical Network Hardware"
   ],
   "wiki_links": [
-    "Software Defined Networking",
-    "Network Architecture",
-    "Cloud Computing",
     "G Network Slice",
+    "Network Architecture",
     "metaverse",
-    "Network Scalability"
+    "Network Scalability",
+    "Cloud Computing",
+    "Software Defined Networking"
   ],
   "ontology": {
     "term_id": "MV-9982",

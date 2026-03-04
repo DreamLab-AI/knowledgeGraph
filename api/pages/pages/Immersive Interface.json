@@ -8,11 +8,11 @@
     "Driver Software"
   ],
   "wiki_links": [
-    "Hardware Acceleration",
-    "Natural VR Interaction",
-    "Gesture Recognition",
     "Human-Computer Interface",
-    "metaverse"
+    "Gesture Recognition",
+    "Natural VR Interaction",
+    "metaverse",
+    "Hardware Acceleration"
   ],
   "ontology": {
     "term_id": "MV-9925",

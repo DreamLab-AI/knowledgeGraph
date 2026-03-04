@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "Interactive Experiences",
-    "Character Rigging",
-    "3D Animation",
-    "Procedural Animation",
     "Motion Capture",
-    "metaverse"
+    "metaverse",
+    "Character Rigging",
+    "Procedural Animation",
+    "3D Animation"
   ],
   "ontology": {
     "term_id": "MV-10016",

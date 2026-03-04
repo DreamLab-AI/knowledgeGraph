@@ -10,11 +10,11 @@
     "Compatibility Process"
   ],
   "wiki_links": [
-    "Standards Conformance",
-    "Interoperability",
-    "Technical Standards",
     "Standards",
-    "metaverse"
+    "Technical Standards",
+    "metaverse",
+    "Standards Conformance",
+    "Interoperability"
   ],
   "ontology": {
     "term_id": "MV-10071",

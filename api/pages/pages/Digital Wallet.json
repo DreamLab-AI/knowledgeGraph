@@ -31,15 +31,15 @@
   ],
   "wiki_links": [
     "Blockchain Network",
+    "Self-Custody",
+    "Hardware Wallet",
+    "Private Key",
+    "Asset Management",
     "DeFi Access",
     "Cryptocurrency Storage",
-    "Private Key",
-    "Self-Custody",
-    "Asset Management",
-    "Hardware Wallet",
-    "Web3",
     "Transaction Signing",
-    "Cryptographic Security"
+    "Cryptographic Security",
+    "Web3"
   ],
   "ontology": {
     "term_id": "MV-9881",

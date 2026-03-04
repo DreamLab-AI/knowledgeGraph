@@ -8,14 +8,14 @@
     "Neuromorphic Chips"
   ],
   "wiki_links": [
-    "FPGA",
-    "Neuromorphic Chips",
     "Training Hardware",
     "Real-Time AI",
-    "Edge Computing",
     "Tensor Processing Unit",
-    "AI Hardware",
+    "Neuromorphic Chips",
+    "Edge Computing",
     "GPU",
+    "AI Hardware",
+    "FPGA",
     "Model Deployment"
   ],
   "ontology": {

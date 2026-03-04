@@ -6,12 +6,12 @@
     "Digital Curation Platform"
   ],
   "wiki_links": [
+    "metaverse",
     "Voice Search",
-    "User Query Experience",
     "User Interface",
     "Search Engine",
-    "metaverse",
-    "Gesture Input"
+    "Gesture Input",
+    "User Query Experience"
   ],
   "ontology": {
     "term_id": "MV-10032",

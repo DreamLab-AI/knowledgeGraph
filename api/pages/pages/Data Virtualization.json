@@ -6,17 +6,17 @@
     "Data Fabric Architecture"
   ],
   "wiki_links": [
-    "Real-Time Data Access",
-    "Unified Data View",
     "Metadata Management",
-    "Query Engine",
-    "Data Warehouse",
-    "Data Integration",
-    "Data Connectors",
-    "Data Fabric",
     "Data Federation",
+    "Query Engine",
+    "Real-Time Data Access",
+    "metaverse",
+    "Data Integration",
+    "Data Fabric",
+    "Data Warehouse",
+    "Unified Data View",
     "ETL",
-    "metaverse"
+    "Data Connectors"
   ],
   "ontology": {
     "term_id": "MV-9841",

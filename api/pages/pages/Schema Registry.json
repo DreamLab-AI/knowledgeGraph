@@ -9,12 +9,12 @@
     "Digital Ontology Repository"
   ],
   "wiki_links": [
+    "Schema Evolution",
+    "metaverse",
+    "Data Governance",
     "API Contracts",
     "Event Streaming",
-    "Data Governance",
-    "Data Management",
-    "Schema Evolution",
-    "metaverse"
+    "Data Management"
   ],
   "ontology": {
     "term_id": "MV-10028",

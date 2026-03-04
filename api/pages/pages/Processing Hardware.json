@@ -6,12 +6,12 @@
     "Compute Layer"
   ],
   "wiki_links": [
-    "GPU Computing",
-    "AI Acceleration",
-    "High Performance Computing",
-    "Physical Hardware",
     "Real Time Rendering",
-    "metaverse"
+    "High Performance Computing",
+    "GPU Computing",
+    "metaverse",
+    "Physical Hardware",
+    "AI Acceleration"
   ],
   "ontology": {
     "term_id": "MV-10012",

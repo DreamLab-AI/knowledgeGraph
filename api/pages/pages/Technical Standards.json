@@ -18,10 +18,10 @@
   ],
   "wiki_links": [
     "Standards Compliance",
-    "Standards Conformance",
-    "Interoperability",
     "Standards",
-    "metaverse"
+    "metaverse",
+    "Standards Conformance",
+    "Interoperability"
   ],
   "ontology": {
     "term_id": "MV-10079",

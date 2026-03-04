@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "Machine Learning",
-    "Variance",
     "Model Combination",
-    "Ensemble Methods",
     "Meta-Learning",
+    "Variance",
+    "Ensemble Methods",
     "Cross-Validation",
     "Bias"
   ],

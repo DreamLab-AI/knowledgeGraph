@@ -13,12 +13,12 @@
     "PrivateBlockchain"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "Robotics Systems",
-    "Telecollaboration",
-    "Metaverse Technology",
     "Blockchain Technology",
-    "Technology Domain"
+    "Artificial Intelligence",
+    "Metaverse Technology",
+    "Technology Domain",
+    "Telecollaboration",
+    "Robotics Systems"
   ],
   "ontology": {
     "term_id": "NGM-7000",

@@ -8,12 +8,12 @@
   "wiki_links": [
     "Metadata Management",
     "Cross-Platform Interoperability",
-    "Storage Infrastructure",
-    "Asset Preservation",
-    "Digital Repository",
     "Standardized Formats",
-    "Content Reuse",
-    "metaverse"
+    "Storage Infrastructure",
+    "metaverse",
+    "Digital Repository",
+    "Asset Preservation",
+    "Content Reuse"
   ],
   "ontology": {
     "term_id": "MV-9779",

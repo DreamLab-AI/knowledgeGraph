@@ -12,17 +12,17 @@
     "Digital Goods"
   ],
   "wiki_links": [
-    "Smart Contracts",
-    "Royalty Distribution",
-    "Content Protection",
-    "Copyright Protection",
-    "NFT Licensing",
     "Piracy Prevention",
-    "Encryption",
-    "License Management",
+    "Copyright Protection",
+    "Royalty Distribution",
     "metaverse",
+    "Smart Contracts",
+    "Access Control",
+    "License Management",
     "Content Monetization",
-    "Access Control"
+    "Content Protection",
+    "NFT Licensing",
+    "Encryption"
   ],
   "ontology": {
     "term_id": "MV-9867",

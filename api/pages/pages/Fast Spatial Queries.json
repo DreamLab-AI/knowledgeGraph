@@ -8,10 +8,10 @@
   ],
   "wiki_links": [
     "Real-Time Metaverse Interactions",
-    "Geospatial Engine",
-    "3D Rendering",
     "Spatial Computing",
-    "metaverse"
+    "metaverse",
+    "3D Rendering",
+    "Geospatial Engine"
   ],
   "ontology": {
     "term_id": "MV-9901",

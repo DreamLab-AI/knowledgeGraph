@@ -17,10 +17,10 @@
   ],
   "wiki_links": [
     "Semantic Web",
-    "Knowledge Graph",
     "Reasoning Systems",
-    "owl:Thing",
-    "Ontology"
+    "Ontology",
+    "Knowledge Graph",
+    "owl:Thing"
   ],
   "ontology": {
     "term_id": "AI-9019",

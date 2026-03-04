@@ -6,12 +6,12 @@
     "Metaverse Safety Protocol"
   ],
   "wiki_links": [
-    "User Safety",
-    "Responsible XR Design",
     "Content Moderation",
     "Parental Controls",
+    "VR Comfort Settings",
     "metaverse",
-    "VR Comfort Settings"
+    "Responsible XR Design",
+    "User Safety"
   ],
   "ontology": {
     "term_id": "MV-10026",
