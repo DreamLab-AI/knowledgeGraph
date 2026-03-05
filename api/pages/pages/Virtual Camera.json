@@ -7,11 +7,11 @@
     "Virtual Production"
   ],
   "wiki_links": [
-    "metaverse",
     "Real-Time Rendering",
-    "Motion Capture",
     "LED Volume",
-    "Virtual Production"
+    "Motion Capture",
+    "Virtual Production",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10105",

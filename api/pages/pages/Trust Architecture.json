@@ -6,11 +6,11 @@
     "Digital Identity Framework"
   ],
   "wiki_links": [
-    "metaverse",
+    "Verifiable Credentials",
+    "Zero Trust",
     "Security Architecture",
     "Decentralized Identity",
-    "Zero Trust",
-    "Verifiable Credentials"
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10091",

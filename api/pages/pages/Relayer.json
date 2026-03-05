@@ -9,11 +9,11 @@
   "wiki_links": [
     "Interoperability",
     "Blockchain",
-    "Oracle",
-    "Interoperability Protocol",
     "Message Passing",
+    "Oracle",
+    "Cross-Chain Bridge",
     "Light Client",
-    "Cross-Chain Bridge"
+    "Interoperability Protocol"
   ],
   "ontology": {
     "term_id": "BC-8015",

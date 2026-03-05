@@ -6,11 +6,11 @@
     "ModelProperty"
   ],
   "wiki_links": [
-    "owl:Thing",
-    "Artificial Intelligence",
-    "Cognitive Architecture",
     "Machine Learning",
-    "Knowledge Representation"
+    "Cognitive Architecture",
+    "Artificial Intelligence",
+    "Knowledge Representation",
+    "owl:Thing"
   ],
   "ontology": {
     "term_id": "AI-9002",

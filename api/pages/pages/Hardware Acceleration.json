@@ -11,11 +11,11 @@
     "Driver Software"
   ],
   "wiki_links": [
-    "metaverse",
-    "Real-Time VR Performance",
-    "Hardware Resources",
     "Computing Infrastructure",
-    "GPU Rendering"
+    "Real-Time VR Performance",
+    "metaverse",
+    "GPU Rendering",
+    "Hardware Resources"
   ],
   "ontology": {
     "term_id": "MV-9914",

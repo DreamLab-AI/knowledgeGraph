@@ -8,17 +8,17 @@
     "Digital Repository"
   ],
   "wiki_links": [
-    "metaverse",
-    "Access Control",
-    "Digital Library",
-    "Metadata Standards",
     "IPFS Storage",
+    "Metadata Standards",
+    "Digital Preservation",
     "Cultural Heritage Access",
-    "NFT Collections",
-    "Storage Infrastructure",
-    "Historical Research",
     "Knowledge Preservation",
-    "Digital Preservation"
+    "Historical Research",
+    "Storage Infrastructure",
+    "Digital Library",
+    "Access Control",
+    "metaverse",
+    "NFT Collections"
   ],
   "ontology": {
     "term_id": "MV-9845",

@@ -4,10 +4,10 @@
   "content": "- ### OntologyBlock\n  id:: AI-9004\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9004\n\t- source-domain:: ai\n\t- preferred-term:: TPU\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Tensor Processing Unit, Google's custom-developed application-specific integrated circuit (ASIC) optimized for neural network machine learning workloads.\n\t- source:: [[Google Cloud]], [[AI Hardware]]\n\t- maturity:: mature\n\t- owl:class:: ai:TPU\n\t- owl:role:: Object\n\t- belongsToDomain:: [[ArtificialIntelligenceDomain]]\n\t- isSubclassOf:: [[AI Hardware]]\n\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]",
   "backlinks": [],
   "wiki_links": [
-    "AI Hardware",
     "Google Cloud",
     "Artificial Intelligence",
-    "ArtificialIntelligenceDomain"
+    "ArtificialIntelligenceDomain",
+    "AI Hardware"
   ],
   "ontology": {
     "term_id": "AI-9004",

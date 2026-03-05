@@ -6,11 +6,11 @@
     "Transparent Governance"
   ],
   "wiki_links": [
-    "metaverse",
-    "On-Chain Voting",
-    "Tokenomics Governance",
     "DAO",
-    "Governance"
+    "Tokenomics Governance",
+    "Governance",
+    "metaverse",
+    "On-Chain Voting"
   ],
   "ontology": {
     "term_id": "MV-10088",

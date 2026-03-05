@@ -11,12 +11,12 @@
     "Shared Ar Experiences"
   ],
   "wiki_links": [
-    "metaverse",
     "Persistent AR Placement",
-    "AR Technology",
-    "Augmented Reality",
     "Location Based Services",
-    "SLAM"
+    "AR Technology",
+    "SLAM",
+    "metaverse",
+    "Augmented Reality"
   ],
   "ontology": {
     "term_id": "MV-10051",

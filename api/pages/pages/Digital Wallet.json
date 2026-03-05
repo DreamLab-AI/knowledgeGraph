@@ -30,15 +30,15 @@
     "Digital Goods"
   ],
   "wiki_links": [
-    "Hardware Wallet",
     "Web3",
-    "Transaction Signing",
-    "Cryptographic Security",
-    "Blockchain Network",
+    "Private Key",
     "Self-Custody",
+    "Cryptographic Security",
+    "Transaction Signing",
+    "Hardware Wallet",
+    "Blockchain Network",
     "Cryptocurrency Storage",
     "DeFi Access",
-    "Private Key",
     "Asset Management"
   ],
   "ontology": {

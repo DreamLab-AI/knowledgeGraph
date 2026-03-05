@@ -6,17 +6,17 @@
     "Behavioural Feedback Loop"
   ],
   "wiki_links": [
-    "Internet of Behaviors",
-    "metaverse",
-    "Pattern Recognition",
-    "User Analytics",
-    "Machine Learning",
-    "Data Collection",
     "Personalization",
+    "Machine Learning",
+    "Pattern Recognition",
     "Recommendation Systems",
-    "User Experience Optimization",
     "Predictive Analytics",
-    "Machine Learning Models"
+    "Machine Learning Models",
+    "Internet of Behaviors",
+    "Data Collection",
+    "metaverse",
+    "User Experience Optimization",
+    "User Analytics"
   ],
   "ontology": {
     "term_id": "MV-9795",

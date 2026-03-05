@@ -4,9 +4,9 @@
   "content": "- ### OntologyBlock\n  id:: TC-9003\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-9003\n\t- source-domain:: tc\n\t- preferred-term:: Video Async\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Asynchronous video communication allowing users to record, share, and view video messages at their convenience, combining visual richness with time flexibility.\n\t- source:: [[Collaboration Tools]], [[Loom]]\n\t- maturity:: emerging\n\t- owl:class:: tc:VideoAsync\n\t- owl:role:: Object\n\t- belongsToDomain:: [[TelecollaborationDomain]]\n\t- is-subclass-of:: [[Asynchronous Collaboration]]",
   "backlinks": [],
   "wiki_links": [
+    "Loom",
     "Asynchronous Collaboration",
     "TelecollaborationDomain",
-    "Loom",
     "Collaboration Tools"
   ],
   "ontology": {

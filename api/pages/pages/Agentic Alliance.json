@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "Distributed Computing",
-    "Bitcoin",
-    "Agents",
     "Projects",
     "Distributed Identity",
     "Melvin Carvalho",
-    "Nostr protocol"
+    "Nostr protocol",
+    "Agents",
+    "Bitcoin"
   ]
 }

@@ -7,9 +7,9 @@
   ],
   "wiki_links": [
     "MLOps",
-    "Data Engineering",
     "Artificial Intelligence",
-    "ArtificialIntelligenceDomain"
+    "ArtificialIntelligenceDomain",
+    "Data Engineering"
   ],
   "ontology": {
     "term_id": "AI-9008",

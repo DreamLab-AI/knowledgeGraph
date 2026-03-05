@@ -6,11 +6,11 @@
     "Edge Mesh Network"
   ],
   "wiki_links": [
-    "metaverse",
     "Distributed Systems",
-    "IoT Connectivity",
     "Decentralised Networks",
-    "Network Infrastructure"
+    "Network Infrastructure",
+    "metaverse",
+    "IoT Connectivity"
   ],
   "ontology": {
     "term_id": "MV-9959",

@@ -6,16 +6,16 @@
     "RB-1002-closed-loop-control"
   ],
   "wiki_links": [
-    "Predictability",
-    "Robotics",
-    "No Feedback",
-    "Feedback Mechanism",
-    "Actuator",
-    "Servo Control",
     "Stepper Motor Control",
-    "Forward Kinematics",
-    "Control Theory",
+    "Actuator",
     "RB-1002-closed-loop-control",
+    "Robotics",
+    "Control Theory",
+    "No Feedback",
+    "Forward Kinematics",
+    "Servo Control",
+    "Predictability",
+    "Feedback Mechanism",
     "Control System"
   ],
   "ontology": {

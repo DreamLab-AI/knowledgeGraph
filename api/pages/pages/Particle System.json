@@ -8,12 +8,12 @@
     "Game Engine"
   ],
   "wiki_links": [
-    "metaverse",
+    "Physics Simulation",
+    "Real Time Rendering",
     "Dynamic Visual Effects",
     "Visual Effects",
     "Computer Graphics",
-    "Physics Simulation",
-    "Real Time Rendering"
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10000",

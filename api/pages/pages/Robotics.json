@@ -128,16 +128,16 @@
     "RB-0002-mobile-robot"
   ],
   "wiki_links": [
+    "Collaborative Robotics",
+    "Automation",
+    "Industrial Automation",
+    "Artificial Intelligence",
     "Machine Vision",
     "Digital Twin",
-    "Artificial Intelligence",
-    "Collaborative Robotics",
-    "Industrial Automation",
-    "Industrial Robots",
-    "Humanoid Robots",
     "Smart Manufacturing",
+    "Industrial Robots",
     "IoT Sensors",
-    "Automation"
+    "Humanoid Robots"
   ],
   "ontology": {
     "term_id": "RB-7000",

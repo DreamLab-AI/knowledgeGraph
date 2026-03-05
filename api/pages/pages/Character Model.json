@@ -7,17 +7,17 @@
     "Narrative Design Ontology"
   ],
   "wiki_links": [
-    "metaverse",
-    "Character Rigging",
-    "Mesh Topology",
-    "Character Animation",
-    "Texture Mapping",
-    "Game Characters",
-    "3D Model",
-    "Virtual Avatars",
     "Topology Design",
+    "3D Modeling Software",
+    "Mesh Topology",
+    "Character Rigging",
+    "3D Model",
+    "Game Characters",
+    "Texture Mapping",
+    "Virtual Avatars",
     "Avatar System",
-    "3D Modeling Software"
+    "Character Animation",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9818",
