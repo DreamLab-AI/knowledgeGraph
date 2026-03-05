@@ -6,21 +6,21 @@
     "Real-time Processing"
   ],
   "wiki_links": [
-    "Output",
-    "Schedule",
-    "Dataset",
-    "Cross-Domain Meta-Structure",
-    "Scheduled Processing",
-    "Temporal Concept",
-    "Process",
-    "Data Volume",
-    "Real-time Processing",
-    "Processing Model",
-    "Core Technology",
     "Event",
+    "Process",
+    "Schedule",
+    "Output",
+    "Cross-Domain Meta-Structure",
+    "Temporal Concept",
+    "Data Volume",
+    "ETL",
     "Data Collection",
+    "Dataset",
+    "Real-time Processing",
+    "Core Technology",
     "Bulk Processing",
-    "ETL"
+    "Processing Model",
+    "Scheduled Processing"
   ],
   "ontology": {
     "term_id": "AI-8015",

@@ -8,11 +8,11 @@
     "Digital Ontology Repository"
   ],
   "wiki_links": [
-    "metaverse",
-    "Data Management",
+    "Data Discovery",
     "Data Catalog",
     "Metadata Management",
-    "Data Discovery"
+    "Data Management",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9961",

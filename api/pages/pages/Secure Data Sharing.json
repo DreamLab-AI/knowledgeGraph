@@ -9,11 +9,11 @@
   ],
   "wiki_links": [
     "Data Security",
-    "metaverse",
-    "Encryption",
-    "Privacy Preserving Data Sharing",
     "Confidential Collaboration",
-    "Access Control"
+    "Access Control",
+    "Privacy Preserving Data Sharing",
+    "Encryption",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10034",

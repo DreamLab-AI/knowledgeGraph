@@ -8,19 +8,19 @@
     "Blockchain Scalability"
   ],
   "wiki_links": [
-    "Blockchain",
-    "Layer 2",
-    "Micropayments",
     "Off-Chain Scaling",
-    "Rollup",
+    "Payment Channel",
+    "Lightning Network",
     "Optimistic Rollup",
     "Raiden Network",
-    "BlockchainDomain",
-    "Perun",
-    "Payment Channel",
+    "Layer 2",
     "Digital Signature",
     "Connext",
-    "Lightning Network"
+    "Blockchain",
+    "Rollup",
+    "Perun",
+    "Micropayments",
+    "BlockchainDomain"
   ],
   "ontology": {
     "term_id": "BC-8017",

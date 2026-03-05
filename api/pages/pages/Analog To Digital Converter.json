@@ -5,13 +5,13 @@
   "backlinks": [],
   "wiki_links": [
     "metaverse",
-    "Resolution Bits",
-    "Digital Audio Recording",
     "Digital Imaging",
+    "Sampling Rate",
+    "Digital Audio Recording",
     "Signal Conditioning",
     "Sensor Data Processing",
-    "Signal Processing Hardware",
-    "Sampling Rate"
+    "Resolution Bits",
+    "Signal Processing Hardware"
   ],
   "ontology": {
     "term_id": "MV-9765",

@@ -5,16 +5,16 @@
   "backlinks": [],
   "wiki_links": [
     "Peer-to-Peer Network",
-    "Distributed Systems",
     "Replication",
-    "Horizontal Scalability",
-    "Distributed Hash Table",
     "CRDT",
-    "Eventual Consistency",
-    "Data Structure",
-    "CAP Theorem",
-    "Consensus Algorithm",
     "Merkle Tree",
+    "CAP Theorem",
+    "Eventual Consistency",
+    "Distributed Systems",
+    "Consensus Algorithm",
+    "Data Structure",
+    "Distributed Hash Table",
+    "Horizontal Scalability",
     "Fault Tolerance"
   ],
   "ontology": {

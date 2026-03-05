@@ -6,12 +6,12 @@
     "Physics-Based Animation"
   ],
   "wiki_links": [
-    "VFX Tools",
-    "metaverse",
     "Real Time VFX",
+    "Visual Effects Pipeline",
     "Game Engine",
+    "VFX Tools",
     "Particle System",
-    "Visual Effects Pipeline"
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10001",

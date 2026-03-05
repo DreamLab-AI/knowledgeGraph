@@ -10,10 +10,10 @@
     "Automated Planning"
   ],
   "wiki_links": [
-    "Planning and Scheduling",
-    "Pathfinding",
-    "Graph Theory",
     "Optimization",
+    "Planning and Scheduling",
+    "Graph Theory",
+    "Pathfinding",
     "Artificial Intelligence"
   ],
   "ontology": {

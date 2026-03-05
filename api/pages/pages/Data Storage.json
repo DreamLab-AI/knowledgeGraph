@@ -12,16 +12,16 @@
     "Telemetry & Analytics"
   ],
   "wiki_links": [
+    "System Architecture",
+    "Data Protection",
+    "Infrastructure Component",
     "Data Persistence",
     "Data Management",
     "Storage Architecture",
-    "Data Protection",
-    "Data Redundancy",
-    "Core Technology",
-    "System Architecture",
     "Information Retrieval",
-    "Backup and Recovery",
-    "Infrastructure Component"
+    "Core Technology",
+    "Data Redundancy",
+    "Backup and Recovery"
   ],
   "ontology": {
     "term_id": "NGM-7021",

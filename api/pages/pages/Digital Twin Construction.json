@@ -6,17 +6,17 @@
     "Photogrammetry"
   ],
   "wiki_links": [
-    "metaverse",
-    "Cloud Platform",
-    "BIM",
+    "Building Lifecycle Management",
     "Facility Management",
+    "Construction Metaverse",
     "Predictive Maintenance",
+    "Construction Optimization",
+    "BIM",
     "Smart Building",
     "Digital Twin",
-    "Construction Metaverse",
-    "Construction Optimization",
-    "Building Lifecycle Management",
-    "IoT Sensors"
+    "metaverse",
+    "IoT Sensors",
+    "Cloud Platform"
   ],
   "ontology": {
     "term_id": "MV-9874",

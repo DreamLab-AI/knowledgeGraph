@@ -8,18 +8,18 @@
     "Proof Of Authority"
   ],
   "wiki_links": [
-    "Blockchain",
-    "Liquid Network",
-    "Polygon PoS",
-    "Rollup",
     "Layer 1",
     "State Channel",
     "Federated Byzantine Agreement",
+    "Polygon PoS",
+    "Cross-Chain Bridge",
     "Scalability Solutions",
     "Two-Way Peg",
     "Ronin",
+    "Blockchain",
+    "Rollup",
     "Gnosis Chain",
-    "Cross-Chain Bridge"
+    "Liquid Network"
   ],
   "ontology": {
     "term_id": "BC-8016",
