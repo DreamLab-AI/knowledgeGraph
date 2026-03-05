@@ -179,6 +179,24 @@
     }
   }
 
+  /* ── force lazy children to render ─────────────────────── */
+  function expandLazyChildren(slideEl) {
+    /* If a block has a expand-arrow but no .block-children in DOM,
+       click the arrow to trigger Logseq SPA to render children */
+    var arrows = slideEl.querySelectorAll('.block-control');
+    arrows.forEach(function (arrow) {
+      var parentBlock = arrow.closest('.ls-block');
+      if (!parentBlock) return;
+      var children = parentBlock.querySelector('.block-children');
+      if (!children) {
+        /* Children not rendered — click arrow twice (collapse then expand)
+           to force Logseq to create the DOM nodes */
+        arrow.click();
+        setTimeout(function () { arrow.click(); }, 100);
+      }
+    });
+  }
+
   /* ── navigation ────────────────────────────────────────── */
   function showSlide(n) {
     n = Math.max(0, Math.min(n, state.slides.length - 1));
@@ -187,8 +205,11 @@
     state.idx = n;
     updateCounter();
     state.slides[n].scrollTop = 0;
-    hideCollapsedBlocks(state.slides[n]);
-    detectHero(state.slides[n]);
+    expandLazyChildren(state.slides[n]);
+    setTimeout(function () {
+      hideCollapsedBlocks(state.slides[n]);
+      detectHero(state.slides[n]);
+    }, 250);
   }
 
   function next() { showSlide(state.idx + 1); }
@@ -200,11 +221,15 @@
     forceRenderAll(function () {
       state.slides = getSlides();
       if (!state.slides.length) return;
-      state.active = true;
-      state.idx = 0;
-      document.documentElement.classList.add('ls-pres-mode');
-      createControls();
-      showSlide(0);
+      /* pre-expand lazy children on every slide */
+      state.slides.forEach(function (s) { expandLazyChildren(s); });
+      setTimeout(function () {
+        state.active = true;
+        state.idx = 0;
+        document.documentElement.classList.add('ls-pres-mode');
+        createControls();
+        showSlide(0);
+      }, 500);
     });
   }
 
