@@ -22,17 +22,17 @@
     "Digital Identity Framework"
   ],
   "wiki_links": [
-    "Organisational Framework",
-    "Compliance",
-    "Legal Framework",
-    "Core Technology",
-    "Strategic Alignment",
     "Accountability",
-    "Risk Management",
-    "Policy Enforcement",
     "Performance Management",
+    "Policy Enforcement",
     "Technical Standard",
-    "Decision Rights"
+    "Risk Management",
+    "Compliance",
+    "Decision Rights",
+    "Core Technology",
+    "Legal Framework",
+    "Strategic Alignment",
+    "Organisational Framework"
   ],
   "ontology": {
     "term_id": "NGM-7023",

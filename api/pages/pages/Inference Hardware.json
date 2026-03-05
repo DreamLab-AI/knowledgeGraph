@@ -8,15 +8,15 @@
     "Neuromorphic Chips"
   ],
   "wiki_links": [
+    "Neuromorphic Chips",
+    "Real-Time AI",
     "Tensor Processing Unit",
     "Edge Computing",
-    "Real-Time AI",
-    "AI Hardware",
-    "Neuromorphic Chips",
-    "Model Deployment",
     "Training Hardware",
+    "FPGA",
     "GPU",
-    "FPGA"
+    "AI Hardware",
+    "Model Deployment"
   ],
   "ontology": {
     "term_id": "AI-1023",

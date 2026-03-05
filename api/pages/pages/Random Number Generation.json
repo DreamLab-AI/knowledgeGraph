@@ -9,14 +9,14 @@
     "Symmetric Encryption"
   ],
   "wiki_links": [
+    "Zero-Knowledge Proof",
     "Blockchain",
+    "Commitment Scheme",
     "Key Derivation Function",
+    "Cryptography",
     "Cryptographic Protocol",
     "Hash Function",
-    "Cryptography",
-    "Zero-Knowledge Proof",
     "Asymmetric Encryption",
-    "Commitment Scheme",
     "Verifiable Random Function"
   ],
   "ontology": {

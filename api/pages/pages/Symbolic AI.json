@@ -10,10 +10,10 @@
     "AAAI",
     "Academic AI Research",
     "Artificial Intelligence",
-    "ArtificialIntelligenceDomain",
     "Expert Systems",
-    "Knowledge Representation",
-    "Logic Programming"
+    "ArtificialIntelligenceDomain",
+    "Logic Programming",
+    "Knowledge Representation"
   ],
   "ontology": {
     "term_id": "AI-9001",

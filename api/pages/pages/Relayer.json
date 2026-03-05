@@ -7,10 +7,10 @@
     "Cross-Platform Interoperability"
   ],
   "wiki_links": [
-    "Interoperability",
     "Blockchain",
-    "Message Passing",
     "Oracle",
+    "Message Passing",
+    "Interoperability",
     "Cross-Chain Bridge",
     "Light Client",
     "Interoperability Protocol"

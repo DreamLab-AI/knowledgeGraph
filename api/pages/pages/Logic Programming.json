@@ -7,11 +7,11 @@
     "STRIPS"
   ],
   "wiki_links": [
-    "Academic AI Research",
     "Prolog",
+    "Academic AI Research",
     "Artificial Intelligence",
-    "ArtificialIntelligenceDomain",
-    "Symbolic AI"
+    "Symbolic AI",
+    "ArtificialIntelligenceDomain"
   ],
   "ontology": {
     "term_id": "AI-9003",

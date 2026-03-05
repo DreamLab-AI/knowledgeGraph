@@ -8,17 +8,17 @@
     "Glossary Index"
   ],
   "wiki_links": [
-    "Information Architecture",
-    "Domain Expertise",
-    "Controlled Vocabularies",
+    "Semantic Web",
     "Metadata Schema",
-    "Maintenance Process",
+    "Accurate Retrieval",
+    "Term Governance",
     "Data Standardization",
     "Content Discovery",
-    "Semantic Web",
-    "Term Governance",
-    "Accurate Retrieval",
-    "metaverse"
+    "Maintenance Process",
+    "metaverse",
+    "Information Architecture",
+    "Controlled Vocabularies",
+    "Domain Expertise"
   ],
   "ontology": {
     "term_id": "MV-9833",

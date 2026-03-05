@@ -8,11 +8,11 @@
   "wiki_links": [
     "Soft Computing",
     "Artificial Intelligence",
+    "Decision Making",
     "Approximate Reasoning",
     "Expert Systems",
-    "Knowledge Representation",
     "Control Systems",
-    "Decision Making"
+    "Knowledge Representation"
   ],
   "ontology": {
     "term_id": "AI-1010",

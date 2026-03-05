@@ -34,12 +34,12 @@
     "ecash"
   ],
   "wiki_links": [
-    "Verifiable Credentials",
-    "KYC/AML Requirements",
     "Compliance Verification",
+    "Verifiable Credentials",
     "Blockchain",
-    "Self-Sovereign Identity",
     "Cryptography",
+    "Self-Sovereign Identity",
+    "KYC/AML Requirements",
     "Privacy"
   ],
   "ontology": {

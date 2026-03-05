@@ -7,16 +7,16 @@
     "Suggested Reading Order"
   ],
   "wiki_links": [
-    "Education and AI",
-    "Social contract and jobs",
     "Proprietary Large Language Models",
-    "Hardware and Edge",
-    "Update Cycle",
-    "presentation",
-    "Politics, Law, Privacy",
-    "Death of the Internet",
-    "Privacy, Trust and Safety",
     "Infrastructure",
+    "Social contract and jobs",
+    "Politics, Law, Privacy",
+    "Update Cycle",
+    "Privacy, Trust and Safety",
+    "Education and AI",
+    "presentation",
+    "Hardware and Edge",
+    "Death of the Internet",
     "rework based on gpt"
   ]
 }

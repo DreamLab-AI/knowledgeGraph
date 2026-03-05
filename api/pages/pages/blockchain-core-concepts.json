@@ -5,16 +5,16 @@
   "backlinks": [],
   "wiki_links": [
     "DAO",
-    "NFT",
-    "Layer2Scaling",
-    "ZeroKnowledge",
-    "Oracle",
-    "MetaverseDomain",
     "ConsensusAlgorithm",
-    "Cryptocurrency",
+    "SmartContract",
+    "Oracle",
     "CrossChainBridge",
+    "ZeroKnowledge",
+    "MetaverseDomain",
+    "NFT",
     "DecentralizedStorage",
-    "SmartContract"
+    "Cryptocurrency",
+    "Layer2Scaling"
   ],
   "ontology": {
     "term_id": "MV-3067",

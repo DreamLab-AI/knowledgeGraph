@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "Curriculum Learning",
-    "Transfer Learning",
-    "Machine Learning",
     "Artificial Intelligence",
     "Reinforcement Learning",
+    "Machine Learning",
+    "Transfer Learning",
     "Fine-Tuning"
   ],
   "ontology": {

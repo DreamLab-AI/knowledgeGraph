@@ -6,12 +6,12 @@
     "Eye Tracking"
   ],
   "wiki_links": [
-    "Camera Calibration",
-    "Optical System Accuracy",
     "Image Quality Testing",
     "Color Calibration",
-    "Calibration Equipment",
-    "metaverse"
+    "Optical System Accuracy",
+    "metaverse",
+    "Camera Calibration",
+    "Calibration Equipment"
   ],
   "ontology": {
     "term_id": "MV-9988",

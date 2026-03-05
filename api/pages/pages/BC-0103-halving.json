@@ -5,12 +5,12 @@
   "backlinks": [],
   "wiki_links": [
     "IEEE 2418.1",
-    "TokenEconomicsDomain",
-    "NIST NISTIR",
-    "EconomicLayer",
     "Blockchain Entity",
+    "EconomicMechanism",
+    "EconomicLayer",
+    "TokenEconomicsDomain",
     "ISO/IEC 23257:2021",
-    "EconomicMechanism"
+    "NIST NISTIR"
   ],
   "ontology": {
     "term_id": "BC-0103",

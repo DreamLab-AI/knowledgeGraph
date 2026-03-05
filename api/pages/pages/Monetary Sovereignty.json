@@ -7,11 +7,11 @@
     "Bitcoin"
   ],
   "wiki_links": [
-    "Economic Governance",
-    "Digital Currency",
     "Central Bank Digital Currency",
+    "Digital Currency",
     "National Financial Control",
-    "metaverse"
+    "metaverse",
+    "Economic Governance"
   ],
   "ontology": {
     "term_id": "MV-9970",

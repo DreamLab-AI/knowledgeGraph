@@ -6,17 +6,17 @@
     "Augmented Reality (AR)"
   ],
   "wiki_links": [
-    "Spatial Computing",
     "Camera Systems",
-    "Mixed Reality",
-    "AR Markers",
-    "SLAM Technology",
-    "Interactive Guidance",
+    "Augmented Reality",
     "Information Display",
-    "Spatial Annotation",
+    "Mixed Reality",
+    "Interactive Guidance",
+    "AR Markers",
     "Display Hardware",
+    "Spatial Computing",
     "metaverse",
-    "Augmented Reality"
+    "SLAM Technology",
+    "Spatial Annotation"
   ],
   "ontology": {
     "term_id": "MV-9854",

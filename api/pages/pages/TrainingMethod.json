@@ -7,11 +7,11 @@
     "NeuralNetworkArchitecture"
   ],
   "wiki_links": [
-    "MachineLearning",
-    "Model Training",
-    "Artificial Intelligence",
     "NeuralNetworkArchitecture",
     "ModelArchitecture",
+    "Artificial Intelligence",
+    "Model Training",
+    "MachineLearning",
     "DPO"
   ],
   "ontology": {

@@ -14,15 +14,15 @@
   ],
   "wiki_links": [
     "Standard Protocols",
-    "Cross-Platform Identity",
-    "Data Sharing",
     "System Integration",
+    "Technical Standard",
     "Data Exchange",
-    "Core Technology",
+    "Cross-Platform Identity",
     "Common Data Formats",
     "System Capability",
-    "Enterprise Connectivity",
-    "Technical Standard"
+    "Core Technology",
+    "Data Sharing",
+    "Enterprise Connectivity"
   ],
   "ontology": {
     "term_id": "NGM-7039",

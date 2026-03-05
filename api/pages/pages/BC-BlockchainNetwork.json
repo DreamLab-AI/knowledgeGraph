@@ -5,18 +5,18 @@
   "backlinks": [],
   "wiki_links": [
     "BlockchainDomain",
-    "Practical Byzantine Fault Tolerance Castro Liskov 1999",
+    "Ethereum Network Statistics",
     "Kadanlia Maymounkov Mazières 2002",
     "NetworkingDomain",
-    "DistributedSystemsDomain",
-    "Hyperledger Fabric Documentation",
-    "UCL Blockchain Research",
     "Cambridge Centre for Alternative Finance",
-    "Ethereum Network Statistics",
-    "Bitcoin Network Statistics",
+    "Practical Byzantine Fault Tolerance Castro Liskov 1999",
+    "UCL Blockchain Research",
+    "Ethereum Yellow Paper Buterin 2014",
+    "Hyperledger Fabric Documentation",
     "Imperial College Cryptocurrency Research",
+    "DistributedSystemsDomain",
     "Bitcoin Whitepaper Nakamoto 2008",
-    "Ethereum Yellow Paper Buterin 2014"
+    "Bitcoin Network Statistics"
   ],
   "ontology": {
     "term_id": "BC-0071",

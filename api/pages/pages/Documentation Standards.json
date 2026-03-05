@@ -9,11 +9,11 @@
     "AI Model Card"
   ],
   "wiki_links": [
-    "Technical Standards",
-    "Interface Standards",
     "Metaverse Standards Forum",
+    "Interface Standards",
+    "metaverse",
     "Interoperability Standard",
-    "metaverse"
+    "Technical Standards"
   ],
   "ontology": {
     "term_id": "MV-9885",

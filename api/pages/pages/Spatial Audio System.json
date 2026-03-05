@@ -8,12 +8,12 @@
     "Virtual Performance Space"
   ],
   "wiki_links": [
-    "3D Audio Rendering",
-    "Immersive Audio Technology",
     "Immersive Sound Experience",
-    "Ambisonics",
+    "Immersive Audio Technology",
     "VR Audio",
-    "metaverse"
+    "metaverse",
+    "Ambisonics",
+    "3D Audio Rendering"
   ],
   "ontology": {
     "term_id": "MV-10053",

@@ -7,10 +7,10 @@
   ],
   "wiki_links": [
     "Cloud Computing",
-    "Edge Computing",
-    "Digital Infrastructure",
     "Network Architecture",
-    "metaverse"
+    "Edge Computing",
+    "metaverse",
+    "Digital Infrastructure"
   ],
   "ontology": {
     "term_id": "MV-10155",

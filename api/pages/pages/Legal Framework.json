@@ -17,16 +17,16 @@
     "Digital Constitution"
   ],
   "wiki_links": [
-    "Regulatory Framework",
-    "Rights Protection",
-    "Compliance",
-    "Core Technology",
-    "Legal Compliance",
-    "Governance Framework",
     "Accountability",
+    "Regulatory Framework",
     "Data Protection",
+    "Legal Compliance",
+    "Rights Protection",
+    "Governance Framework",
+    "Privacy Requirements",
+    "Compliance",
     "Security Obligations",
-    "Privacy Requirements"
+    "Core Technology"
   ],
   "ontology": {
     "term_id": "NGM-7024",

@@ -15,16 +15,16 @@
     "Market Microstructure",
     "Market Efficiency",
     "Market Maker",
-    "Order Book",
-    "Arbitrage",
+    "FinancialDomain",
+    "Spot Markets",
     "Price Transparency",
+    "Arbitrage",
+    "Fair Valuation",
     "MEV",
     "DEX",
-    "Futures Markets",
-    "Fair Valuation",
-    "Spot Markets",
-    "FinancialDomain",
-    "Liquidity"
+    "Liquidity",
+    "Order Book",
+    "Futures Markets"
   ],
   "ontology": {
     "term_id": "NGM-7038",

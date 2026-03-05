@@ -5,12 +5,12 @@
   "backlinks": [],
   "wiki_links": [
     "Ensemble Methods",
-    "Model Combination",
-    "Machine Learning",
+    "Bias",
     "Meta-Learning",
+    "Model Combination",
     "Cross-Validation",
     "Variance",
-    "Bias"
+    "Machine Learning"
   ],
   "ontology": {
     "term_id": "AI-1017",
